@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/11-idf.md`
 
-Одиниць твердження: **112**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **114**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -1088,12 +1088,12 @@
 
 ---
 
-<!-- fc id:T-11-073 sha:0d4ca96a src:manual/11-idf.md:192 klas:F -->
+<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 klas:F -->
 ### T-11-073 · tablycya · рядок 192
 
 **Книга каже, дослівно:**
 
-> | Що | Де приблизно |
+> | Що | Де саме |
 
 **Доказ**
 
@@ -1101,7 +1101,7 @@
 
 ---
 
-<!-- fc id:T-11-074 sha:57a55a93 src:manual/11-idf.md:194 klas:F -->
+<!-- fc id:T-11-074 sha:57a55a93 src:manual/11-idf.md:194 klas:A -->
 ### T-11-074 · tablycya · рядок 194
 
 **Книга каже, дослівно:**
@@ -1110,63 +1110,175 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+- **Дослівно з джерела:**
+  > (Kconfig — корінь)
+  > mainmenu "Espressif IoT Development Framework Configuration"
+  >     menu "Build type"
+  >     menu "Compiler options"
+  >     menu "Component config"
+  > 
+  > (Kconfig.projbuild — потрапляють у корінь)
+  > esptool_py:        menu "Serial flasher config"
+  > partition_table:   menu "Partition Table"
+  > bootloader:        menu "Bootloader config"
+  > 
+  > (Kconfig — потрапляють у Component config)
+  > esp_system:  menu "ESP System Settings"
+  > espcoredump: menu "Core dump"
+  > esp_psram:   menu "ESP PSRAM"
+  > log:         menu "Log"
+  > bt:          menu "Bluetooth"
+  > freertos:    menu "FreeRTOS"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі, а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component config`.
+- **Прохід:** pass-11-menuconfig
 
 ---
 
-<!-- fc id:T-11-075 sha:21b7e481 src:manual/11-idf.md:195 klas:F -->
+<!-- fc id:T-11-075 sha:033562ec src:manual/11-idf.md:195 klas:A -->
 ### T-11-075 · tablycya · рядок 195
 
 **Книга каже, дослівно:**
 
-> | Рівень логування | `Log output` |
+> | Рівень логування | `Component config` → `Log` → `Log Level` |
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig та .../components/log/Kconfig.level
+- **Дослівно з джерела:**
+  > (log/Kconfig)
+  > menu "Log"
+  >     …
+  >     rsource "./Kconfig.level"
+  > 
+  > (log/Kconfig.level)
+  > menu "Log Level"
+  >     choice LOG_DEFAULT_LEVEL
+  >         bool "Default log verbosity"
+  >         default LOG_DEFAULT_LEVEL_INFO
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення у двох місцях (розділи 11 і 25). Меню зветься `Log`, і рівні лежать не в ньому безпосередньо, а в підменю `Log Level`. Назва `Log output` — від старіших версій ESP-IDF.
+Сам пункт `Default log verbosity` існує дослівно, і типове значення справді `Info` — це книга стверджувала правильно.
+- **Прохід:** pass-11-menuconfig
 
 ---
 
-<!-- fc id:T-11-076 sha:47ea3671 src:manual/11-idf.md:196 klas:F -->
+<!-- fc id:T-11-076 sha:f28a9ac4 src:manual/11-idf.md:196 klas:A -->
 ### T-11-076 · tablycya · рядок 196
 
 **Книга каже, дослівно:**
 
-> | Частота ядра | `ESP System Settings` → `CPU frequency` |
+> | Частота ядра | `Component config` → `ESP System Settings` → `CPU frequency` |
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+- **Дослівно з джерела:**
+  > (Kconfig — корінь)
+  > mainmenu "Espressif IoT Development Framework Configuration"
+  >     menu "Build type"
+  >     menu "Compiler options"
+  >     menu "Component config"
+  > 
+  > (Kconfig.projbuild — потрапляють у корінь)
+  > esptool_py:        menu "Serial flasher config"
+  > partition_table:   menu "Partition Table"
+  > bootloader:        menu "Bootloader config"
+  > 
+  > (Kconfig — потрапляють у Component config)
+  > esp_system:  menu "ESP System Settings"
+  > espcoredump: menu "Core dump"
+  > esp_psram:   menu "ESP PSRAM"
+  > log:         menu "Log"
+  > bt:          menu "Bluetooth"
+  > freertos:    menu "FreeRTOS"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі, а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component config`.
+- **Прохід:** pass-11-menuconfig
 
 ---
 
-<!-- fc id:T-11-077 sha:eae016f6 src:manual/11-idf.md:197 klas:F -->
+<!-- fc id:T-11-077 sha:059c90a8 src:manual/11-idf.md:197 klas:A -->
 ### T-11-077 · tablycya · рядок 197
 
 **Книга каже, дослівно:**
 
-> | Watchdog і його таймаути | `ESP System Settings` |
+> | Watchdog і його таймаути | `Component config` → `ESP System Settings` |
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+- **Дослівно з джерела:**
+  > (Kconfig — корінь)
+  > mainmenu "Espressif IoT Development Framework Configuration"
+  >     menu "Build type"
+  >     menu "Compiler options"
+  >     menu "Component config"
+  > 
+  > (Kconfig.projbuild — потрапляють у корінь)
+  > esptool_py:        menu "Serial flasher config"
+  > partition_table:   menu "Partition Table"
+  > bootloader:        menu "Bootloader config"
+  > 
+  > (Kconfig — потрапляють у Component config)
+  > esp_system:  menu "ESP System Settings"
+  > espcoredump: menu "Core dump"
+  > esp_psram:   menu "ESP PSRAM"
+  > log:         menu "Log"
+  > bt:          menu "Bluetooth"
+  > freertos:    menu "FreeRTOS"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі, а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component config`.
+- **Прохід:** pass-11-menuconfig
 
 ---
 
-<!-- fc id:T-11-078 sha:52af7776 src:manual/11-idf.md:198 klas:F -->
+<!-- fc id:T-11-078 sha:0e5b79ed src:manual/11-idf.md:198 klas:A -->
 ### T-11-078 · tablycya · рядок 198
 
 **Книга каже, дослівно:**
 
-> | Coredump | `Core dump` |
+> | Coredump | `Component config` → `Core dump` |
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+- **Дослівно з джерела:**
+  > (Kconfig — корінь)
+  > mainmenu "Espressif IoT Development Framework Configuration"
+  >     menu "Build type"
+  >     menu "Compiler options"
+  >     menu "Component config"
+  > 
+  > (Kconfig.projbuild — потрапляють у корінь)
+  > esptool_py:        menu "Serial flasher config"
+  > partition_table:   menu "Partition Table"
+  > bootloader:        menu "Bootloader config"
+  > 
+  > (Kconfig — потрапляють у Component config)
+  > esp_system:  menu "ESP System Settings"
+  > espcoredump: menu "Core dump"
+  > esp_psram:   menu "ESP PSRAM"
+  > log:         menu "Log"
+  > bt:          menu "Bluetooth"
+  > freertos:    menu "FreeRTOS"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі, а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component config`.
+- **Прохід:** pass-11-menuconfig
 
 ---
 
-<!-- fc id:T-11-079 sha:d697a4b5 src:manual/11-idf.md:199 klas:F -->
+<!-- fc id:T-11-079 sha:d697a4b5 src:manual/11-idf.md:199 klas:A -->
 ### T-11-079 · tablycya · рядок 199
 
 **Книга каже, дослівно:**
@@ -1175,16 +1287,108 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+- **Дослівно з джерела:**
+  > (Kconfig — корінь)
+  > mainmenu "Espressif IoT Development Framework Configuration"
+  >     menu "Build type"
+  >     menu "Compiler options"
+  >     menu "Component config"
+  > 
+  > (Kconfig.projbuild — потрапляють у корінь)
+  > esptool_py:        menu "Serial flasher config"
+  > partition_table:   menu "Partition Table"
+  > bootloader:        menu "Bootloader config"
+  > 
+  > (Kconfig — потрапляють у Component config)
+  > esp_system:  menu "ESP System Settings"
+  > espcoredump: menu "Core dump"
+  > esp_psram:   menu "ESP PSRAM"
+  > log:         menu "Log"
+  > bt:          menu "Bluetooth"
+  > freertos:    menu "FreeRTOS"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі, а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component config`.
+- **Прохід:** pass-11-menuconfig
 
 ---
 
-<!-- fc id:T-11-080 sha:0fe3c0bd src:manual/11-idf.md:200 klas:F -->
+<!-- fc id:T-11-080 sha:24eabbac src:manual/11-idf.md:200 klas:A -->
 ### T-11-080 · tablycya · рядок 200
 
 **Книга каже, дослівно:**
 
-> | Оптимізація за розміром | `Compiler options` → `-Os` |
+> | Оптимізація за розміром | `Compiler options` → `Optimization Level` → `Optimize for size` |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig
+- **Дослівно з джерела:**
+  > menu "Compiler options"
+  >     choice COMPILER_OPTIMIZATION
+  >         prompt "Optimization Level"
+  >         default COMPILER_OPTIMIZATION_DEBUG
+  >         config COMPILER_OPTIMIZATION_DEBUG
+  >             bool "Debug (-Og)"
+  >         config COMPILER_OPTIMIZATION_SIZE
+  >             bool "Optimize for size (-Os with GCC, -Oz with Clang)"
+  >         config COMPILER_OPTIMIZATION_PERF
+  >             bool "Optimize for performance (-O2)"
+  >         config COMPILER_OPTIMIZATION_NONE
+  >             bool "Debug without optimization (-O0)"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Розділ 27 підтверджено дослівно, включно з твердженням, що `Debug (-Og)` — це і є значення за замовчуванням (`default COMPILER_OPTIMIZATION_DEBUG`).
+У таблиці розділу 11 рядок був скорочений до `Compiler options` → `-Os`, тобто пропускав рівень `Optimization Level`; уточнено.
+- **Прохід:** pass-11-menuconfig
+
+---
+
+<!-- fc id:T-11-081 sha:a0fbdfcd src:manual/11-idf.md:202 klas:A -->
+### T-11-081 · proza · рядок 202
+
+**Книга каже, дослівно:**
+
+> Три перші пункти меню — `Serial flasher config`, `Partition Table` і `Bootloader config` — лежать у корені, решта всередині `Component config`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+- **Дослівно з джерела:**
+  > (Kconfig — корінь)
+  > mainmenu "Espressif IoT Development Framework Configuration"
+  >     menu "Build type"
+  >     menu "Compiler options"
+  >     menu "Component config"
+  > 
+  > (Kconfig.projbuild — потрапляють у корінь)
+  > esptool_py:        menu "Serial flasher config"
+  > partition_table:   menu "Partition Table"
+  > bootloader:        menu "Bootloader config"
+  > 
+  > (Kconfig — потрапляють у Component config)
+  > esp_system:  menu "ESP System Settings"
+  > espcoredump: menu "Core dump"
+  > esp_psram:   menu "ESP PSRAM"
+  > log:         menu "Log"
+  > bt:          menu "Bluetooth"
+  > freertos:    menu "FreeRTOS"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі, а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component config`.
+- **Прохід:** pass-11-menuconfig
+
+---
+
+<!-- fc id:T-11-082 sha:a1afae4e src:manual/11-idf.md:202 klas:F -->
+### T-11-082 · proza · рядок 202
+
+**Книга каже, дослівно:**
+
+> Це не косметика: у корені живе те, що стосується самої збірки й прошивки, а не окремого компонента.
 
 **Доказ**
 
@@ -1192,8 +1396,8 @@
 
 ---
 
-<!-- fc id:T-11-081 sha:551e3e47 src:manual/11-idf.md:202 klas:F -->
-### T-11-081 · proza · рядок 202
+<!-- fc id:T-11-083 sha:551e3e47 src:manual/11-idf.md:207 klas:F -->
+### T-11-083 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1205,8 +1409,8 @@
 
 ---
 
-<!-- fc id:T-11-082 sha:798e784d src:manual/11-idf.md:202 klas:F -->
-### T-11-082 · proza · рядок 202
+<!-- fc id:T-11-084 sha:798e784d src:manual/11-idf.md:207 klas:F -->
+### T-11-084 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1218,8 +1422,8 @@
 
 ---
 
-<!-- fc id:T-11-083 sha:980f9ca8 src:manual/11-idf.md:208 klas:F -->
-### T-11-083 · proza · рядок 208
+<!-- fc id:T-11-085 sha:980f9ca8 src:manual/11-idf.md:213 klas:F -->
+### T-11-085 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1231,8 +1435,8 @@
 
 ---
 
-<!-- fc id:T-11-084 sha:c0f7fc7a src:manual/11-idf.md:210 klas:A -->
-### T-11-084 · kod · рядок 210
+<!-- fc id:T-11-086 sha:c0f7fc7a src:manual/11-idf.md:215 klas:A -->
+### T-11-086 · kod · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1268,8 +1472,8 @@
 
 ---
 
-<!-- fc id:T-11-085 sha:4f76e0f2 src:manual/11-idf.md:211 klas:A -->
-### T-11-085 · kod-ryadok · рядок 211
+<!-- fc id:T-11-087 sha:4f76e0f2 src:manual/11-idf.md:216 klas:A -->
+### T-11-087 · kod-ryadok · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1303,8 +1507,8 @@
 
 ---
 
-<!-- fc id:T-11-086 sha:40bd7292 src:manual/11-idf.md:214 klas:F -->
-### T-11-086 · proza · рядок 214
+<!-- fc id:T-11-088 sha:40bd7292 src:manual/11-idf.md:219 klas:F -->
+### T-11-088 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1316,8 +1520,8 @@
 
 ---
 
-<!-- fc id:T-11-087 sha:ee2d2f1b src:manual/11-idf.md:214 klas:F -->
-### T-11-087 · proza · рядок 214
+<!-- fc id:T-11-089 sha:ee2d2f1b src:manual/11-idf.md:219 klas:F -->
+### T-11-089 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1329,8 +1533,8 @@
 
 ---
 
-<!-- fc id:T-11-088 sha:aca0806c src:manual/11-idf.md:217 klas:F -->
-### T-11-088 · proza · рядок 217
+<!-- fc id:T-11-090 sha:aca0806c src:manual/11-idf.md:222 klas:F -->
+### T-11-090 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1342,8 +1546,8 @@
 
 ---
 
-<!-- fc id:T-11-089 sha:30483f3f src:manual/11-idf.md:217 klas:F -->
-### T-11-089 · proza · рядок 217
+<!-- fc id:T-11-091 sha:30483f3f src:manual/11-idf.md:222 klas:F -->
+### T-11-091 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1355,8 +1559,8 @@
 
 ---
 
-<!-- fc id:T-11-090 sha:9322693e src:manual/11-idf.md:223 klas:F -->
-### T-11-090 · proza · рядок 223
+<!-- fc id:T-11-092 sha:9322693e src:manual/11-idf.md:228 klas:F -->
+### T-11-092 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1368,8 +1572,8 @@
 
 ---
 
-<!-- fc id:T-11-091 sha:153c053d src:manual/11-idf.md:228 klas:F -->
-### T-11-091 · proza · рядок 228
+<!-- fc id:T-11-093 sha:153c053d src:manual/11-idf.md:233 klas:F -->
+### T-11-093 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1381,8 +1585,8 @@
 
 ---
 
-<!-- fc id:T-11-092 sha:445bb076 src:manual/11-idf.md:231 klas:F -->
-### T-11-092 · proza · рядок 231
+<!-- fc id:T-11-094 sha:445bb076 src:manual/11-idf.md:236 klas:F -->
+### T-11-094 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1394,8 +1598,8 @@
 
 ---
 
-<!-- fc id:T-11-093 sha:7f37de94 src:manual/11-idf.md:231 klas:F -->
-### T-11-093 · proza · рядок 231
+<!-- fc id:T-11-095 sha:7f37de94 src:manual/11-idf.md:236 klas:F -->
+### T-11-095 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1407,8 +1611,8 @@
 
 ---
 
-<!-- fc id:T-11-094 sha:36ad5706 src:manual/11-idf.md:237 klas:F -->
-### T-11-094 · proza · рядок 237
+<!-- fc id:T-11-096 sha:36ad5706 src:manual/11-idf.md:242 klas:F -->
+### T-11-096 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1420,8 +1624,8 @@
 
 ---
 
-<!-- fc id:T-11-095 sha:4d081911 src:manual/11-idf.md:239 klas:F -->
-### T-11-095 · proza · рядок 239
+<!-- fc id:T-11-097 sha:4d081911 src:manual/11-idf.md:244 klas:F -->
+### T-11-097 · proza · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -1433,8 +1637,8 @@
 
 ---
 
-<!-- fc id:T-11-096 sha:f32cde1d src:manual/11-idf.md:246 klas:F -->
-### T-11-096 · proza · рядок 246
+<!-- fc id:T-11-098 sha:f32cde1d src:manual/11-idf.md:251 klas:F -->
+### T-11-098 · proza · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -1446,8 +1650,8 @@
 
 ---
 
-<!-- fc id:T-11-097 sha:009c5309 src:manual/11-idf.md:246 klas:F -->
-### T-11-097 · proza · рядок 246
+<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:251 klas:F -->
+### T-11-099 · proza · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -1459,8 +1663,8 @@
 
 ---
 
-<!-- fc id:T-11-098 sha:04ac6509 src:manual/11-idf.md:246 klas:F -->
-### T-11-098 · proza · рядок 246
+<!-- fc id:T-11-100 sha:04ac6509 src:manual/11-idf.md:251 klas:F -->
+### T-11-100 · proza · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -1472,8 +1676,8 @@
 
 ---
 
-<!-- fc id:T-11-099 sha:5075d2bd src:manual/11-idf.md:255 klas:F -->
-### T-11-099 · proza · рядок 255
+<!-- fc id:T-11-101 sha:5075d2bd src:manual/11-idf.md:260 klas:F -->
+### T-11-101 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -1485,8 +1689,8 @@
 
 ---
 
-<!-- fc id:T-11-100 sha:b2bd2d4d src:manual/11-idf.md:255 klas:F -->
-### T-11-100 · proza · рядок 255
+<!-- fc id:T-11-102 sha:b2bd2d4d src:manual/11-idf.md:260 klas:F -->
+### T-11-102 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -1498,8 +1702,8 @@
 
 ---
 
-<!-- fc id:T-11-101 sha:31020c6e src:manual/11-idf.md:258 klas:F -->
-### T-11-101 · proza · рядок 258
+<!-- fc id:T-11-103 sha:31020c6e src:manual/11-idf.md:263 klas:F -->
+### T-11-103 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -1511,8 +1715,8 @@
 
 ---
 
-<!-- fc id:T-11-102 sha:570bdca4 src:manual/11-idf.md:261 klas:F -->
-### T-11-102 · proza · рядок 261
+<!-- fc id:T-11-104 sha:570bdca4 src:manual/11-idf.md:266 klas:F -->
+### T-11-104 · proza · рядок 266
 
 **Книга каже, дослівно:**
 
@@ -1524,8 +1728,8 @@
 
 ---
 
-<!-- fc id:T-11-103 sha:812e0ce8 src:manual/11-idf.md:264 klas:A -->
-### T-11-103 · proza · рядок 264
+<!-- fc id:T-11-105 sha:812e0ce8 src:manual/11-idf.md:269 klas:A -->
+### T-11-105 · proza · рядок 269
 
 **Книга каже, дослівно:**
 
@@ -1547,8 +1751,8 @@
 
 ---
 
-<!-- fc id:T-11-104 sha:7f64c2fd src:manual/11-idf.md:267 klas:F -->
-### T-11-104 · proza · рядок 267
+<!-- fc id:T-11-106 sha:7f64c2fd src:manual/11-idf.md:272 klas:F -->
+### T-11-106 · proza · рядок 272
 
 **Книга каже, дослівно:**
 
@@ -1560,8 +1764,8 @@
 
 ---
 
-<!-- fc id:T-11-105 sha:c803dfc0 src:manual/11-idf.md:267 klas:F -->
-### T-11-105 · proza · рядок 267
+<!-- fc id:T-11-107 sha:c803dfc0 src:manual/11-idf.md:272 klas:F -->
+### T-11-107 · proza · рядок 272
 
 **Книга каже, дослівно:**
 
@@ -1573,8 +1777,8 @@
 
 ---
 
-<!-- fc id:T-11-106 sha:fb1ad6c4 src:manual/11-idf.md:271 klas:F -->
-### T-11-106 · proza · рядок 271
+<!-- fc id:T-11-108 sha:fb1ad6c4 src:manual/11-idf.md:276 klas:F -->
+### T-11-108 · proza · рядок 276
 
 **Книга каже, дослівно:**
 
@@ -1586,8 +1790,8 @@
 
 ---
 
-<!-- fc id:T-11-107 sha:0a1fc86c src:manual/11-idf.md:276 klas:F -->
-### T-11-107 · proza · рядок 276
+<!-- fc id:T-11-109 sha:0a1fc86c src:manual/11-idf.md:281 klas:F -->
+### T-11-109 · proza · рядок 281
 
 **Книга каже, дослівно:**
 
@@ -1599,8 +1803,8 @@
 
 ---
 
-<!-- fc id:T-11-108 sha:07a06fdd src:manual/11-idf.md:279 klas:F -->
-### T-11-108 · proza · рядок 279
+<!-- fc id:T-11-110 sha:07a06fdd src:manual/11-idf.md:284 klas:F -->
+### T-11-110 · proza · рядок 284
 
 **Книга каже, дослівно:**
 
@@ -1612,8 +1816,8 @@
 
 ---
 
-<!-- fc id:T-11-109 sha:80e99395 src:manual/11-idf.md:279 klas:A -->
-### T-11-109 · proza · рядок 279
+<!-- fc id:T-11-111 sha:80e99395 src:manual/11-idf.md:284 klas:A -->
+### T-11-111 · proza · рядок 284
 
 **Книга каже, дослівно:**
 
@@ -1636,8 +1840,8 @@
 
 ---
 
-<!-- fc id:T-11-110 sha:c323842e src:manual/11-idf.md:283 klas:F -->
-### T-11-110 · proza · рядок 283
+<!-- fc id:T-11-112 sha:c323842e src:manual/11-idf.md:288 klas:F -->
+### T-11-112 · proza · рядок 288
 
 **Книга каже, дослівно:**
 
@@ -1649,8 +1853,8 @@
 
 ---
 
-<!-- fc id:T-11-111 sha:c78ccc1b src:manual/11-idf.md:285 klas:F -->
-### T-11-111 · proza · рядок 285
+<!-- fc id:T-11-113 sha:c78ccc1b src:manual/11-idf.md:290 klas:F -->
+### T-11-113 · proza · рядок 290
 
 **Книга каже, дослівно:**
 
@@ -1662,8 +1866,8 @@
 
 ---
 
-<!-- fc id:T-11-112 sha:d0259d8b src:manual/11-idf.md:287 klas:F -->
-### T-11-112 · proza · рядок 287
+<!-- fc id:T-11-114 sha:d0259d8b src:manual/11-idf.md:292 klas:F -->
+### T-11-114 · proza · рядок 292
 
 **Книга каже, дослівно:**
 

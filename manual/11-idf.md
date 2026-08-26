@@ -189,15 +189,20 @@ idf_component_register(
 `idf.py menuconfig` — текстове меню налаштувань фреймворку. Розділів
 сотні; знати всі не треба, але кілька місць варто відвідати свідомо:
 
-| Що | Де приблизно |
+| Що | Де саме |
 |---|---|
 | Розмір флешу і розбивка | `Serial flasher config`, `Partition Table` |
-| Рівень логування | `Log output` |
-| Частота ядра | `ESP System Settings` → `CPU frequency` |
-| Watchdog і його таймаути | `ESP System Settings` |
-| Coredump | `Core dump` |
+| Рівень логування | `Component config` → `Log` → `Log Level` |
+| Частота ядра | `Component config` → `ESP System Settings` → `CPU frequency` |
+| Watchdog і його таймаути | `Component config` → `ESP System Settings` |
+| Coredump | `Component config` → `Core dump` |
 | Підтримка PSRAM | `Component config` → `ESP PSRAM` |
-| Оптимізація за розміром | `Compiler options` → `-Os` |
+| Оптимізація за розміром | `Compiler options` → `Optimization Level` → `Optimize for size` |
+
+Три перші пункти меню — `Serial flasher config`, `Partition Table` і
+`Bootloader config` — лежать у корені, решта всередині
+`Component config`. Це не косметика: у корені живе те, що стосується
+самої збірки й прошивки, а не окремого компонента.
 
 Пошук усередині `menuconfig` — клавіша `/`. Це найкорисніша клавіша в
 усьому інтерфейсі: назви параметрів здебільшого відомі з документації, а

@@ -591,7 +591,7 @@
 
 ---
 
-<!-- fc id:T-41-046 sha:c9bf4f76 src:manual/41-ble.md:89 klas:F -->
+<!-- fc id:T-41-046 sha:c9bf4f76 src:manual/41-ble.md:89 klas:A -->
 ### T-41-046 · proza · рядок 89
 
 **Книга каже, дослівно:**
@@ -600,7 +600,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig та .../components/bt/Kconfig
+- **Дослівно з джерела:**
+  > (freertos/Kconfig)
+  > menu "FreeRTOS"
+  >     menu "Kernel"
+  >         choice FREERTOS_CHECK_STACKOVERFLOW
+  >             prompt "configCHECK_FOR_STACK_OVERFLOW"
+  >             default FREERTOS_CHECK_STACKOVERFLOW_CANARY
+  >                 bool "Check using canary bytes (Method 2)"
+  > 
+  > (bt/Kconfig)
+  > menu "Bluetooth"
+  >     choice BT_HOST
+  >         prompt "Host"
+  >             bool "Bluedroid - Dual-mode"
+  >             bool "NimBLE - BLE only"
+  >             bool "Disabled"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Без розбіжностей. Розділ 41 називає `Component config` → `Bluetooth` → `Host`, і саме так меню й влаштоване; назви варіантів (`Bluedroid - Dual-mode`, `NimBLE - BLE only`) підтверджують і те, що книга каже про призначення кожного.
+Шлях до `configCHECK_FOR_STACK_OVERFLOW` у розділі 30 теж перевірено цим проходом і теж без розбіжностей — але доказ на нього вже стояв із проходу 6, тож реєстр залишає сильніший наявний. Витяг наведено тут як другу, незалежну звірку того самого місця.
+- **Прохід:** pass-11-menuconfig
 
 ---
 

@@ -678,7 +678,7 @@
 
 ---
 
-<!-- fc id:T-18-043 sha:801f2aae src:manual/18-rozdily-fleshu.md:81 klas:F -->
+<!-- fc id:T-18-043 sha:801f2aae src:manual/18-rozdily-fleshu.md:81 klas:A -->
 ### T-18-043 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -687,7 +687,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+- **Дослівно з джерела:**
+  > (Kconfig — корінь)
+  > mainmenu "Espressif IoT Development Framework Configuration"
+  >     menu "Build type"
+  >     menu "Compiler options"
+  >     menu "Component config"
+  > 
+  > (Kconfig.projbuild — потрапляють у корінь)
+  > esptool_py:        menu "Serial flasher config"
+  > partition_table:   menu "Partition Table"
+  > bootloader:        menu "Bootloader config"
+  > 
+  > (Kconfig — потрапляють у Component config)
+  > esp_system:  menu "ESP System Settings"
+  > espcoredump: menu "Core dump"
+  > esp_psram:   menu "ESP PSRAM"
+  > log:         menu "Log"
+  > bt:          menu "Bluetooth"
+  > freertos:    menu "FreeRTOS"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі, а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component config`.
+- **Прохід:** pass-11-menuconfig
 
 ---
 

@@ -69,7 +69,8 @@ OTA оновлює лише образ застосунку — таблиця �
 недосяжний. Наступне OTA до нього вже не дійде.
 
 Від цього є механізм відкату (rollback). Вмикається в `menuconfig`:
-`Bootloader config` → `App rollback support`.
+`Bootloader config` → `Application Rollback` → `Enable app rollback
+support`.
 
 Логіка така. Після оновлення новий образ позначається як «випробувальний»
 (`ESP_OTA_IMG_PENDING_VERIFY`). Прошивка мусить сама, у процесі роботи,

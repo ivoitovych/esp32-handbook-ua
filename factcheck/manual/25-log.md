@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/25-log.md`
 
-Одиниць твердження: **89**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **102**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -614,16 +614,32 @@
 
 ---
 
-<!-- fc id:T-25-047 sha:14258ec1 src:manual/25-log.md:90 klas:F -->
+<!-- fc id:T-25-047 sha:82ad763f src:manual/25-log.md:90 klas:A -->
 ### T-25-047 · proza · рядок 90
 
 **Книга каже, дослівно:**
 
-> Глобальна межа задається в `menuconfig`: `Log output` → `Default log verbosity`.
+> Глобальна межа задається в `menuconfig`: `Component config` → `Log` → `Log Level` → `Default log verbosity`.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig та .../components/log/Kconfig.level
+- **Дослівно з джерела:**
+  > (log/Kconfig)
+  > menu "Log"
+  >     …
+  >     rsource "./Kconfig.level"
+  > 
+  > (log/Kconfig.level)
+  > menu "Log Level"
+  >     choice LOG_DEFAULT_LEVEL
+  >         bool "Default log verbosity"
+  >         default LOG_DEFAULT_LEVEL_INFO
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення у двох місцях (розділи 11 і 25). Меню зветься `Log`, і рівні лежать не в ньому безпосередньо, а в підменю `Log Level`. Назва `Log output` — від старіших версій ESP-IDF.
+Сам пункт `Default log verbosity` існує дослівно, і типове значення справді `Info` — це книга стверджувала правильно.
+- **Прохід:** pass-11-menuconfig
 
 ---
 
@@ -786,12 +802,12 @@
 
 ---
 
-<!-- fc id:T-25-055 sha:3224b246 src:manual/25-log.md:107 klas:F -->
+<!-- fc id:T-25-055 sha:e2e30228 src:manual/25-log.md:107 klas:F -->
 ### T-25-055 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
-> Працює лише для тих рівнів, що не вирізані при компіляції: щоб `LOGD` з'явився в runtime, збирати треба з `Debug`.
+> Працює лише для тих рівнів, що не вирізані при компіляції.
 
 **Доказ**
 
@@ -799,8 +815,318 @@
 
 ---
 
-<!-- fc id:T-25-056 sha:97601d07 src:manual/25-log.md:112 klas:F -->
-### T-25-056 · proza · рядок 112
+<!-- fc id:T-25-056 sha:e5dbdf55 src:manual/25-log.md:110 klas:A -->
+### T-25-056 · proza · рядок 110
+
+**Книга каже, дослівно:**
+
+> **Найчастіша пастка з логуванням: `esp_log_level_set` мовчки не робить нічого.**
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-25-057 sha:231d958d src:manual/25-log.md:113 klas:A -->
+### T-25-057 · proza · рядок 113
+
+**Книга каже, дослівно:**
+
+> Виглядає так: у коді `esp_log_level_set("PUMP", ESP_LOG_DEBUG)`, у `ESP_LOGD` нічого не з'являється, помилки теж немає.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-25-058 sha:e4bc7e54 src:manual/25-log.md:113 klas:F -->
+### T-25-058 · proza · рядок 113
+
+**Книга каже, дослівно:**
+
+> Причина не в тегу і не в порядку викликів — рядка просто немає у прошивці.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-25-059 sha:c9c08515 src:manual/25-log.md:117 klas:F -->
+### T-25-059 · proza · рядок 117
+
+**Книга каже, дослівно:**
+
+> Наївне лікування — зібрати все з `Debug` — псує головне: пристрій починає сипати налагоджувальним логом постійно, і в полі це і повільно, і незручно.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-25-060 sha:4df2e4b4 src:manual/25-log.md:121 klas:A -->
+### T-25-060 · proza · рядок 121
+
+**Книга каже, дослівно:**
+
+> Правильний спосіб — сусідній пункт того самого меню, **`Maximum log verbosity`**.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level та .../components/log/Kconfig.level_settings
+- **Дослівно з джерела:**
+  > choice LOG_DEFAULT_LEVEL
+  >     bool "Default log verbosity"
+  >     help
+  >         By default, this setting limits which log statements
+  >         are compiled into the program. For example, selecting
+  >         "Warning" would mean that changing log level to "Debug"
+  >         at runtime will not be possible. To allow increasing log
+  >         level above the default at runtime, see the next option.
+  > 
+  > choice LOG_MAXIMUM_LEVEL
+  >     bool "Maximum log verbosity"
+  >     default LOG_MAXIMUM_EQUALS_DEFAULT
+  >     help
+  >         This config option sets the highest log verbosity that it's possible to select
+  >         at runtime by calling esp_log_level_set(). This level may be higher than
+  >         the default verbosity level which is set when the app starts up.
+  >     config LOG_MAXIMUM_EQUALS_DEFAULT
+  >         bool "Same as default"
+  > 
+  > (Kconfig.level_settings)
+  > config LOG_DYNAMIC_LEVEL_CONTROL
+  >     bool "Enable dynamic log level changes at runtime"
+  >     default y
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і воно закриває реальну пастку. Книга правильно писала, що підняти рівень у runtime можна лише для того, що не вирізане при компіляції, — але єдиним виходом називала «збирати з `Debug`». Це псує головне: пристрій починає сипати логом постійно.
+`Maximum log verbosity` розводить два різні поняття: `Default` — з чим прошивка стартує, `Maximum` — до чого її можна підняти на ходу. Пара `Default = Info`, `Maximum = Debug` дає рівно те, чого хоче розділ 25: тихий пристрій, який на команду піднімає детальність окремої підсистеми без перезбирання.
+Важлива подробиця, теж із джерела: типове значення `Maximum` — `Same as default`, тобто запасу за замовчуванням немає й вмикати його треба свідомо. Саме тому пастка й трапляється.
+`esp_log_level_set` при цьому працює типово: `LOG_DYNAMIC_LEVEL_CONTROL` має `default y`.
+- **Прохід:** pass-11-menuconfig
+
+---
+
+<!-- fc id:T-25-061 sha:00a93e51 src:manual/25-log.md:121 klas:F -->
+### T-25-061 · proza · рядок 121
+
+**Книга каже, дослівно:**
+
+> Він задає стелю того, що **компілюється**, окремо від того, що друкується за замовчуванням:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-25-062 sha:6526e058 src:manual/25-log.md:125 klas:F -->
+### T-25-062 · tablycya · рядок 125
+
+**Книга каже, дослівно:**
+
+> | Параметр | Що робить |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-25-063 sha:c92e7fce src:manual/25-log.md:127 klas:F -->
+### T-25-063 · tablycya · рядок 127
+
+**Книга каже, дослівно:**
+
+> | `Default log verbosity` | рівень, з яким прошивка стартує |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-25-064 sha:cd8f6248 src:manual/25-log.md:128 klas:A -->
+### T-25-064 · tablycya · рядок 128
+
+**Книга каже, дослівно:**
+
+> | `Maximum log verbosity` | до чого можна підняти в runtime |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level та .../components/log/Kconfig.level_settings
+- **Дослівно з джерела:**
+  > choice LOG_DEFAULT_LEVEL
+  >     bool "Default log verbosity"
+  >     help
+  >         By default, this setting limits which log statements
+  >         are compiled into the program. For example, selecting
+  >         "Warning" would mean that changing log level to "Debug"
+  >         at runtime will not be possible. To allow increasing log
+  >         level above the default at runtime, see the next option.
+  > 
+  > choice LOG_MAXIMUM_LEVEL
+  >     bool "Maximum log verbosity"
+  >     default LOG_MAXIMUM_EQUALS_DEFAULT
+  >     help
+  >         This config option sets the highest log verbosity that it's possible to select
+  >         at runtime by calling esp_log_level_set(). This level may be higher than
+  >         the default verbosity level which is set when the app starts up.
+  >     config LOG_MAXIMUM_EQUALS_DEFAULT
+  >         bool "Same as default"
+  > 
+  > (Kconfig.level_settings)
+  > config LOG_DYNAMIC_LEVEL_CONTROL
+  >     bool "Enable dynamic log level changes at runtime"
+  >     default y
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і воно закриває реальну пастку. Книга правильно писала, що підняти рівень у runtime можна лише для того, що не вирізане при компіляції, — але єдиним виходом називала «збирати з `Debug`». Це псує головне: пристрій починає сипати логом постійно.
+`Maximum log verbosity` розводить два різні поняття: `Default` — з чим прошивка стартує, `Maximum` — до чого її можна підняти на ходу. Пара `Default = Info`, `Maximum = Debug` дає рівно те, чого хоче розділ 25: тихий пристрій, який на команду піднімає детальність окремої підсистеми без перезбирання.
+Важлива подробиця, теж із джерела: типове значення `Maximum` — `Same as default`, тобто запасу за замовчуванням немає й вмикати його треба свідомо. Саме тому пастка й трапляється.
+`esp_log_level_set` при цьому працює типово: `LOG_DYNAMIC_LEVEL_CONTROL` має `default y`.
+- **Прохід:** pass-11-menuconfig
+
+---
+
+<!-- fc id:T-25-065 sha:93f3b782 src:manual/25-log.md:130 klas:F -->
+### T-25-065 · proza · рядок 130
+
+**Книга каже, дослівно:**
+
+> Отже `Default = Info`, `Maximum = Debug` дає рівно те, чого хочеться: тихий пристрій, який на команду піднімає детальність потрібної підсистеми без перезбирання.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-25-066 sha:03730232 src:manual/25-log.md:130 klas:F -->
+### T-25-066 · proza · рядок 130
+
+**Книга каже, дослівно:**
+
+> Ціна — трохи більший образ, бо рядки `ESP_LOGD` лишаються у флеші.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-25-067 sha:17777964 src:manual/25-log.md:135 klas:A -->
+### T-25-067 · proza · рядок 135
+
+**Книга каже, дослівно:**
+
+> Типове значення `Maximum` — `Same as default`; тобто за замовчуванням запас не передбачено, і його треба ввімкнути свідомо.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level та .../components/log/Kconfig.level_settings
+- **Дослівно з джерела:**
+  > choice LOG_DEFAULT_LEVEL
+  >     bool "Default log verbosity"
+  >     help
+  >         By default, this setting limits which log statements
+  >         are compiled into the program. For example, selecting
+  >         "Warning" would mean that changing log level to "Debug"
+  >         at runtime will not be possible. To allow increasing log
+  >         level above the default at runtime, see the next option.
+  > 
+  > choice LOG_MAXIMUM_LEVEL
+  >     bool "Maximum log verbosity"
+  >     default LOG_MAXIMUM_EQUALS_DEFAULT
+  >     help
+  >         This config option sets the highest log verbosity that it's possible to select
+  >         at runtime by calling esp_log_level_set(). This level may be higher than
+  >         the default verbosity level which is set when the app starts up.
+  >     config LOG_MAXIMUM_EQUALS_DEFAULT
+  >         bool "Same as default"
+  > 
+  > (Kconfig.level_settings)
+  > config LOG_DYNAMIC_LEVEL_CONTROL
+  >     bool "Enable dynamic log level changes at runtime"
+  >     default y
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і воно закриває реальну пастку. Книга правильно писала, що підняти рівень у runtime можна лише для того, що не вирізане при компіляції, — але єдиним виходом називала «збирати з `Debug`». Це псує головне: пристрій починає сипати логом постійно.
+`Maximum log verbosity` розводить два різні поняття: `Default` — з чим прошивка стартує, `Maximum` — до чого її можна підняти на ходу. Пара `Default = Info`, `Maximum = Debug` дає рівно те, чого хоче розділ 25: тихий пристрій, який на команду піднімає детальність окремої підсистеми без перезбирання.
+Важлива подробиця, теж із джерела: типове значення `Maximum` — `Same as default`, тобто запасу за замовчуванням немає й вмикати його треба свідомо. Саме тому пастка й трапляється.
+`esp_log_level_set` при цьому працює типово: `LOG_DYNAMIC_LEVEL_CONTROL` має `default y`.
+- **Прохід:** pass-11-menuconfig
+
+---
+
+<!-- fc id:T-25-068 sha:01b4d819 src:manual/25-log.md:138 klas:A -->
+### T-25-068 · proza · рядок 138
+
+**Книга каже, дослівно:**
+
+> Сам `esp_log_level_set` при цьому має працювати: за це відповідає `Enable dynamic log level changes at runtime`, і воно ввімкнене типово.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-25-069 sha:97601d07 src:manual/25-log.md:144 klas:F -->
+### T-25-069 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -812,8 +1138,8 @@
 
 ---
 
-<!-- fc id:T-25-057 sha:93607112 src:manual/25-log.md:115 klas:F -->
-### T-25-057 · proza · рядок 115
+<!-- fc id:T-25-070 sha:93607112 src:manual/25-log.md:147 klas:F -->
+### T-25-070 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -825,8 +1151,8 @@
 
 ---
 
-<!-- fc id:T-25-058 sha:0b0a4a6e src:manual/25-log.md:115 klas:F -->
-### T-25-058 · proza · рядок 115
+<!-- fc id:T-25-071 sha:0b0a4a6e src:manual/25-log.md:147 klas:F -->
+### T-25-071 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -838,8 +1164,8 @@
 
 ---
 
-<!-- fc id:T-25-059 sha:c06dfd4d src:manual/25-log.md:119 klas:F -->
-### T-25-059 · proza · рядок 119
+<!-- fc id:T-25-072 sha:c06dfd4d src:manual/25-log.md:151 klas:F -->
+### T-25-072 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -851,8 +1177,8 @@
 
 ---
 
-<!-- fc id:T-25-060 sha:13e1711b src:manual/25-log.md:119 klas:F -->
-### T-25-060 · proza · рядок 119
+<!-- fc id:T-25-073 sha:13e1711b src:manual/25-log.md:151 klas:F -->
+### T-25-073 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -864,8 +1190,8 @@
 
 ---
 
-<!-- fc id:T-25-061 sha:8bf9cd05 src:manual/25-log.md:123 klas:F -->
-### T-25-061 · proza · рядок 123
+<!-- fc id:T-25-074 sha:8bf9cd05 src:manual/25-log.md:155 klas:F -->
+### T-25-074 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -877,8 +1203,8 @@
 
 ---
 
-<!-- fc id:T-25-062 sha:a2ae1f36 src:manual/25-log.md:125 klas:A -->
-### T-25-062 · kod · рядок 125
+<!-- fc id:T-25-075 sha:a2ae1f36 src:manual/25-log.md:157 klas:A -->
+### T-25-075 · kod · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -912,8 +1238,8 @@
 
 ---
 
-<!-- fc id:T-25-063 sha:a6714f03 src:manual/25-log.md:129 klas:A -->
-### T-25-063 · kod-ryadok · рядок 129
+<!-- fc id:T-25-076 sha:a6714f03 src:manual/25-log.md:161 klas:A -->
+### T-25-076 · kod-ryadok · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -941,8 +1267,8 @@
 
 ---
 
-<!-- fc id:T-25-064 sha:a6a2089a src:manual/25-log.md:133 klas:A -->
-### T-25-064 · proza · рядок 133
+<!-- fc id:T-25-077 sha:a6a2089a src:manual/25-log.md:165 klas:A -->
+### T-25-077 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -970,8 +1296,8 @@
 
 ---
 
-<!-- fc id:T-25-065 sha:f3392a90 src:manual/25-log.md:133 klas:F -->
-### T-25-065 · proza · рядок 133
+<!-- fc id:T-25-078 sha:f3392a90 src:manual/25-log.md:165 klas:F -->
+### T-25-078 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -983,8 +1309,8 @@
 
 ---
 
-<!-- fc id:T-25-066 sha:5bc3cbf9 src:manual/25-log.md:136 klas:D -->
-### T-25-066 · proza · рядок 136
+<!-- fc id:T-25-079 sha:5bc3cbf9 src:manual/25-log.md:168 klas:D -->
+### T-25-079 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -1026,8 +1352,8 @@
 
 ---
 
-<!-- fc id:T-25-067 sha:cb8955b8 src:manual/25-log.md:136 klas:F -->
-### T-25-067 · proza · рядок 136
+<!-- fc id:T-25-080 sha:cb8955b8 src:manual/25-log.md:168 klas:F -->
+### T-25-080 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -1039,8 +1365,8 @@
 
 ---
 
-<!-- fc id:T-25-068 sha:5543d25b src:manual/25-log.md:142 klas:F -->
-### T-25-068 · proza · рядок 142
+<!-- fc id:T-25-081 sha:5543d25b src:manual/25-log.md:174 klas:F -->
+### T-25-081 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1052,8 +1378,8 @@
 
 ---
 
-<!-- fc id:T-25-069 sha:a01be02a src:manual/25-log.md:142 klas:F -->
-### T-25-069 · proza · рядок 142
+<!-- fc id:T-25-082 sha:a01be02a src:manual/25-log.md:174 klas:F -->
+### T-25-082 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1065,8 +1391,8 @@
 
 ---
 
-<!-- fc id:T-25-070 sha:f06e8d96 src:manual/25-log.md:142 klas:F -->
-### T-25-070 · proza · рядок 142
+<!-- fc id:T-25-083 sha:f06e8d96 src:manual/25-log.md:174 klas:F -->
+### T-25-083 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1078,8 +1404,8 @@
 
 ---
 
-<!-- fc id:T-25-071 sha:583d19b2 src:manual/25-log.md:150 klas:F -->
-### T-25-071 · proza · рядок 150
+<!-- fc id:T-25-084 sha:583d19b2 src:manual/25-log.md:182 klas:F -->
+### T-25-084 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -1091,8 +1417,8 @@
 
 ---
 
-<!-- fc id:T-25-072 sha:f94270a6 src:manual/25-log.md:152 klas:F -->
-### T-25-072 · proza · рядок 152
+<!-- fc id:T-25-085 sha:f94270a6 src:manual/25-log.md:184 klas:F -->
+### T-25-085 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1104,8 +1430,8 @@
 
 ---
 
-<!-- fc id:T-25-073 sha:af8c64bb src:manual/25-log.md:152 klas:F -->
-### T-25-073 · proza · рядок 152
+<!-- fc id:T-25-086 sha:af8c64bb src:manual/25-log.md:184 klas:F -->
+### T-25-086 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1117,8 +1443,8 @@
 
 ---
 
-<!-- fc id:T-25-074 sha:adabfc36 src:manual/25-log.md:152 klas:F -->
-### T-25-074 · proza · рядок 152
+<!-- fc id:T-25-087 sha:adabfc36 src:manual/25-log.md:184 klas:F -->
+### T-25-087 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1130,8 +1456,8 @@
 
 ---
 
-<!-- fc id:T-25-075 sha:f67c8423 src:manual/25-log.md:157 klas:F -->
-### T-25-075 · proza · рядок 157
+<!-- fc id:T-25-088 sha:f67c8423 src:manual/25-log.md:189 klas:F -->
+### T-25-088 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1143,8 +1469,8 @@
 
 ---
 
-<!-- fc id:T-25-076 sha:ad82eb4f src:manual/25-log.md:157 klas:F -->
-### T-25-076 · proza · рядок 157
+<!-- fc id:T-25-089 sha:ad82eb4f src:manual/25-log.md:189 klas:F -->
+### T-25-089 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1156,8 +1482,8 @@
 
 ---
 
-<!-- fc id:T-25-077 sha:dea56f2b src:manual/25-log.md:161 klas:F -->
-### T-25-077 · proza · рядок 161
+<!-- fc id:T-25-090 sha:dea56f2b src:manual/25-log.md:193 klas:F -->
+### T-25-090 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -1169,8 +1495,8 @@
 
 ---
 
-<!-- fc id:T-25-078 sha:c2157590 src:manual/25-log.md:161 klas:F -->
-### T-25-078 · proza · рядок 161
+<!-- fc id:T-25-091 sha:c2157590 src:manual/25-log.md:193 klas:F -->
+### T-25-091 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -1182,8 +1508,8 @@
 
 ---
 
-<!-- fc id:T-25-079 sha:e1b1ec54 src:manual/25-log.md:165 klas:F -->
-### T-25-079 · proza · рядок 165
+<!-- fc id:T-25-092 sha:e1b1ec54 src:manual/25-log.md:197 klas:F -->
+### T-25-092 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1195,8 +1521,8 @@
 
 ---
 
-<!-- fc id:T-25-080 sha:7c031f71 src:manual/25-log.md:165 klas:F -->
-### T-25-080 · proza · рядок 165
+<!-- fc id:T-25-093 sha:7c031f71 src:manual/25-log.md:197 klas:F -->
+### T-25-093 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1208,8 +1534,8 @@
 
 ---
 
-<!-- fc id:T-25-081 sha:a32f7f3c src:manual/25-log.md:168 klas:F -->
-### T-25-081 · proza · рядок 168
+<!-- fc id:T-25-094 sha:a32f7f3c src:manual/25-log.md:200 klas:F -->
+### T-25-094 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1221,8 +1547,8 @@
 
 ---
 
-<!-- fc id:T-25-082 sha:02006711 src:manual/25-log.md:174 klas:F -->
-### T-25-082 · proza · рядок 174
+<!-- fc id:T-25-095 sha:02006711 src:manual/25-log.md:206 klas:F -->
+### T-25-095 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1234,8 +1560,8 @@
 
 ---
 
-<!-- fc id:T-25-083 sha:3488ab7d src:manual/25-log.md:178 klas:F -->
-### T-25-083 · proza · рядок 178
+<!-- fc id:T-25-096 sha:3488ab7d src:manual/25-log.md:210 klas:F -->
+### T-25-096 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1247,8 +1573,8 @@
 
 ---
 
-<!-- fc id:T-25-084 sha:c6e2b5ba src:manual/25-log.md:178 klas:F -->
-### T-25-084 · proza · рядок 178
+<!-- fc id:T-25-097 sha:c6e2b5ba src:manual/25-log.md:210 klas:F -->
+### T-25-097 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1260,8 +1586,8 @@
 
 ---
 
-<!-- fc id:T-25-085 sha:ce4ac3ed src:manual/25-log.md:185 klas:F -->
-### T-25-085 · proza · рядок 185
+<!-- fc id:T-25-098 sha:ce4ac3ed src:manual/25-log.md:217 klas:F -->
+### T-25-098 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1273,8 +1599,8 @@
 
 ---
 
-<!-- fc id:T-25-086 sha:4c9ba62b src:manual/25-log.md:187 klas:F -->
-### T-25-086 · proza · рядок 187
+<!-- fc id:T-25-099 sha:4c9ba62b src:manual/25-log.md:219 klas:F -->
+### T-25-099 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1286,8 +1612,8 @@
 
 ---
 
-<!-- fc id:T-25-087 sha:88f9dde2 src:manual/25-log.md:189 klas:F -->
-### T-25-087 · proza · рядок 189
+<!-- fc id:T-25-100 sha:88f9dde2 src:manual/25-log.md:221 klas:F -->
+### T-25-100 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1299,8 +1625,8 @@
 
 ---
 
-<!-- fc id:T-25-088 sha:5c718d5d src:manual/25-log.md:191 klas:F -->
-### T-25-088 · proza · рядок 191
+<!-- fc id:T-25-101 sha:5c718d5d src:manual/25-log.md:223 klas:F -->
+### T-25-101 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -1312,8 +1638,8 @@
 
 ---
 
-<!-- fc id:T-25-089 sha:66a09de4 src:manual/25-log.md:194 klas:F -->
-### T-25-089 · proza · рядок 194
+<!-- fc id:T-25-102 sha:66a09de4 src:manual/25-log.md:226 klas:F -->
+### T-25-102 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
