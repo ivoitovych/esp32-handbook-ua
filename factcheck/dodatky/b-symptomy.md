@@ -1192,7 +1192,7 @@
 
 ---
 
-<!-- fc id:T-B-044 sha:a4b78d54 src:dodatky/b-symptomy.md:36 klas:F -->
+<!-- fc id:T-B-044 sha:a4b78d54 src:dodatky/b-symptomy.md:36 klas:A -->
 ### T-B-044 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -1201,7 +1201,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -3615,7 +3635,7 @@
 
 ---
 
-<!-- fc id:T-B-200 sha:ee2e0a0d src:dodatky/b-symptomy.md:107 klas:F -->
+<!-- fc id:T-B-200 sha:ee2e0a0d src:dodatky/b-symptomy.md:107 klas:A -->
 ### T-B-200 · komirka · рядок 107
 
 **Книга каже, дослівно:**
@@ -3624,7 +3644,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
+- **Дослівно з джерела:**
+  > typedef int esp_err_t;
+  > #define ESP_OK          0    /*!< esp_err_t value indicating success */
+  > #define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure */
+  > 
+  > /**
+  >  * Macro which can be used to check the error code…
+  >  * Disabled if assertions are disabled.
+  >  */
+  > #ifdef NDEBUG
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         (void) sizeof(err_rc_);                 \
+  >     } while(0)
+  > #elif defined(CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT)
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         if (unlikely(err_rc_ != ESP_OK)) {      \
+  >             abort();                            \
+  >         }                                       \
+  >     } while(0)
+  > #else
+  > … _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)
+  > #endif
+  > 
+  > /**
+  >  * … In comparison with ESP_ERROR_CHECK(), this prints the same error
+  >  * message but isn't terminating the program.
+  >  */
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
+Тобто книга має рацію двічі. Вона правильно каже, що макрос перезавантажує чип замість обробляти помилку, — і правильно радить прибирати його звідти, де помилка можлива в роботі, бо з вимкненими assert він не обробить її й поготів.
+`esp_err_t` = `int`, `ESP_OK` = 0 — обидва дослівно.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 

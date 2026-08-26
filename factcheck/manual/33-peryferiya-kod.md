@@ -550,7 +550,7 @@
 
 ---
 
-<!-- fc id:T-33-028 sha:ad224fe1 src:manual/33-peryferiya-kod.md:70 klas:F -->
+<!-- fc id:T-33-028 sha:ad224fe1 src:manual/33-peryferiya-kod.md:70 klas:A -->
 ### T-33-028 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -559,7 +559,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/esp_timer.rst
+- **Дослівно з джерела:**
+  > - Time resolution: one microsecond
+  > 
+  > - Dispatches timer callbacks from a single high-priority ESP Timer
+  >   task (esp_timer task (notified by ISR) > callback).
+  > 
+  > The execution of callbacks in the ESP Timer task is serialized. Thus,
+  > when multiple timeouts occur simultaneously, the execution time of one
+  > callback will delay the execution of subsequent callbacks. For this
+  > reason, it is recommended to keep the callbacks short.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидва твердження розділу 33 дослівні, і друге навіть сильніше в джерелі, ніж у книзі: не просто «довгий обробник затримує решту», а виконання серіалізоване, тобто затримка гарантована, а не ймовірна.
+Джерело додає й пораду, якої в книзі немає: довгу роботу з обробника виносити в задачу нижчого пріоритету через чергу чи семафор. Книга цю саму думку проводить у розділі 31 щодо ISR, тож окремо не дублюю — але зв'язок варто мати на увазі при наступній редакції.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -641,7 +656,7 @@
 
 ---
 
-<!-- fc id:T-33-032 sha:92cb7370 src:manual/33-peryferiya-kod.md:82 klas:F -->
+<!-- fc id:T-33-032 sha:92cb7370 src:manual/33-peryferiya-kod.md:82 klas:A -->
 ### T-33-032 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -650,7 +665,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/esp_timer.rst
+- **Дослівно з джерела:**
+  > - Time resolution: one microsecond
+  > 
+  > - Dispatches timer callbacks from a single high-priority ESP Timer
+  >   task (esp_timer task (notified by ISR) > callback).
+  > 
+  > The execution of callbacks in the ESP Timer task is serialized. Thus,
+  > when multiple timeouts occur simultaneously, the execution time of one
+  > callback will delay the execution of subsequent callbacks. For this
+  > reason, it is recommended to keep the callbacks short.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидва твердження розділу 33 дослівні, і друге навіть сильніше в джерелі, ніж у книзі: не просто «довгий обробник затримує решту», а виконання серіалізоване, тобто затримка гарантована, а не ймовірна.
+Джерело додає й пораду, якої в книзі немає: довгу роботу з обробника виносити в задачу нижчого пріоритету через чергу чи семафор. Книга цю саму думку проводить у розділі 31 щодо ISR, тож окремо не дублюю — але зв'язок варто мати на увазі при наступній редакції.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -2238,7 +2268,7 @@
 
 ---
 
-<!-- fc id:T-33-122 sha:fb9fa4e3 src:manual/33-peryferiya-kod.md:276 klas:F -->
+<!-- fc id:T-33-122 sha:fb9fa4e3 src:manual/33-peryferiya-kod.md:276 klas:A -->
 ### T-33-122 · proza · рядок 276
 
 **Книга каже, дослівно:**
@@ -2247,7 +2277,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
+- **Дослівно з джерела:**
+  > (esp_ota_ops.h)
+  > #define ESP_ERR_OTA_BASE                       0x1500
+  > #define ESP_ERR_OTA_PARTITION_CONFLICT         (ESP_ERR_OTA_BASE + 0x02)
+  > #define ESP_ERR_OTA_VALIDATE_FAILED            (ESP_ERR_OTA_BASE + 0x04)
+  > 
+  > (esp_err.h)
+  > #define ESP_ERR_INVALID_ARG         0x102
+  > 
+  > (wear-levelling.rst)
+  > The wear levelling component … distributes wear across the whole
+  > partition, and is used together with the FAT filesystem via
+  > esp_vfs_fat_spiflash_mount_rw_wl.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Усі названі книгою константи існують дослівно. Прохід 7 звіряв виклики; ці — коди повернення, і вони живуть у тих самих заголовках.
+Твердження розділу 18 про `wear_levelling` підтверджується від протилежного: у документації FAT монтується через `esp_vfs_fat_spiflash_mount_rw_wl`, тобто саме через шар вирівнювання зносу, — отже сама FAT його не робить, як книга й пише.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 

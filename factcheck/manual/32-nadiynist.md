@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-32-005 sha:8602b51d src:manual/32-nadiynist.md:12 klas:F -->
+<!-- fc id:T-32-005 sha:8602b51d src:manual/32-nadiynist.md:12 klas:A -->
 ### T-32-005 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -67,7 +67,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
+- **Дослівно з джерела:**
+  > typedef int esp_err_t;
+  > #define ESP_OK          0    /*!< esp_err_t value indicating success */
+  > #define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure */
+  > 
+  > /**
+  >  * Macro which can be used to check the error code…
+  >  * Disabled if assertions are disabled.
+  >  */
+  > #ifdef NDEBUG
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         (void) sizeof(err_rc_);                 \
+  >     } while(0)
+  > #elif defined(CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT)
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         if (unlikely(err_rc_ != ESP_OK)) {      \
+  >             abort();                            \
+  >         }                                       \
+  >     } while(0)
+  > #else
+  > … _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)
+  > #endif
+  > 
+  > /**
+  >  * … In comparison with ESP_ERROR_CHECK(), this prints the same error
+  >  * message but isn't terminating the program.
+  >  */
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
+Тобто книга має рацію двічі. Вона правильно каже, що макрос перезавантажує чип замість обробляти помилку, — і правильно радить прибирати його звідти, де помилка можлива в роботі, бо з вимкненими assert він не обробить її й поготів.
+`esp_err_t` = `int`, `ESP_OK` = 0 — обидва дослівно.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -209,7 +244,7 @@
 
 ---
 
-<!-- fc id:T-32-011 sha:aecb477b src:manual/32-nadiynist.md:33 klas:F -->
+<!-- fc id:T-32-011 sha:aecb477b src:manual/32-nadiynist.md:33 klas:A -->
 ### T-32-011 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -218,11 +253,46 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
+- **Дослівно з джерела:**
+  > typedef int esp_err_t;
+  > #define ESP_OK          0    /*!< esp_err_t value indicating success */
+  > #define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure */
+  > 
+  > /**
+  >  * Macro which can be used to check the error code…
+  >  * Disabled if assertions are disabled.
+  >  */
+  > #ifdef NDEBUG
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         (void) sizeof(err_rc_);                 \
+  >     } while(0)
+  > #elif defined(CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT)
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         if (unlikely(err_rc_ != ESP_OK)) {      \
+  >             abort();                            \
+  >         }                                       \
+  >     } while(0)
+  > #else
+  > … _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)
+  > #endif
+  > 
+  > /**
+  >  * … In comparison with ESP_ERROR_CHECK(), this prints the same error
+  >  * message but isn't terminating the program.
+  >  */
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
+Тобто книга має рацію двічі. Вона правильно каже, що макрос перезавантажує чип замість обробляти помилку, — і правильно радить прибирати його звідти, де помилка можлива в роботі, бо з вимкненими assert він не обробить її й поготів.
+`esp_err_t` = `int`, `ESP_OK` = 0 — обидва дослівно.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
-<!-- fc id:T-32-012 sha:d2f31301 src:manual/32-nadiynist.md:37 klas:F -->
+<!-- fc id:T-32-012 sha:d2f31301 src:manual/32-nadiynist.md:37 klas:A -->
 ### T-32-012 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -231,7 +301,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
+- **Дослівно з джерела:**
+  > typedef int esp_err_t;
+  > #define ESP_OK          0    /*!< esp_err_t value indicating success */
+  > #define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure */
+  > 
+  > /**
+  >  * Macro which can be used to check the error code…
+  >  * Disabled if assertions are disabled.
+  >  */
+  > #ifdef NDEBUG
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         (void) sizeof(err_rc_);                 \
+  >     } while(0)
+  > #elif defined(CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT)
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         if (unlikely(err_rc_ != ESP_OK)) {      \
+  >             abort();                            \
+  >         }                                       \
+  >     } while(0)
+  > #else
+  > … _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)
+  > #endif
+  > 
+  > /**
+  >  * … In comparison with ESP_ERROR_CHECK(), this prints the same error
+  >  * message but isn't terminating the program.
+  >  */
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
+Тобто книга має рацію двічі. Вона правильно каже, що макрос перезавантажує чип замість обробляти помилку, — і правильно радить прибирати його звідти, де помилка можлива в роботі, бо з вимкненими assert він не обробить її й поготів.
+`esp_err_t` = `int`, `ESP_OK` = 0 — обидва дослівно.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -248,7 +353,7 @@
 
 ---
 
-<!-- fc id:T-32-014 sha:f5ebe116 src:manual/32-nadiynist.md:41 klas:F -->
+<!-- fc id:T-32-014 sha:f5ebe116 src:manual/32-nadiynist.md:41 klas:A -->
 ### T-32-014 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -257,7 +362,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
+- **Дослівно з джерела:**
+  > typedef int esp_err_t;
+  > #define ESP_OK          0    /*!< esp_err_t value indicating success */
+  > #define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure */
+  > 
+  > /**
+  >  * Macro which can be used to check the error code…
+  >  * Disabled if assertions are disabled.
+  >  */
+  > #ifdef NDEBUG
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         (void) sizeof(err_rc_);                 \
+  >     } while(0)
+  > #elif defined(CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT)
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         if (unlikely(err_rc_ != ESP_OK)) {      \
+  >             abort();                            \
+  >         }                                       \
+  >     } while(0)
+  > #else
+  > … _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)
+  > #endif
+  > 
+  > /**
+  >  * … In comparison with ESP_ERROR_CHECK(), this prints the same error
+  >  * message but isn't terminating the program.
+  >  */
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
+Тобто книга має рацію двічі. Вона правильно каже, що макрос перезавантажує чип замість обробляти помилку, — і правильно радить прибирати його звідти, де помилка можлива в роботі, бо з вимкненими assert він не обробить її й поготів.
+`esp_err_t` = `int`, `ESP_OK` = 0 — обидва дослівно.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -300,7 +440,7 @@
 
 ---
 
-<!-- fc id:T-32-018 sha:e7a3ff2c src:manual/32-nadiynist.md:46 klas:F -->
+<!-- fc id:T-32-018 sha:e7a3ff2c src:manual/32-nadiynist.md:46 klas:A -->
 ### T-32-018 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -309,7 +449,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
+- **Дослівно з джерела:**
+  > typedef int esp_err_t;
+  > #define ESP_OK          0    /*!< esp_err_t value indicating success */
+  > #define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure */
+  > 
+  > /**
+  >  * Macro which can be used to check the error code…
+  >  * Disabled if assertions are disabled.
+  >  */
+  > #ifdef NDEBUG
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         (void) sizeof(err_rc_);                 \
+  >     } while(0)
+  > #elif defined(CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT)
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         if (unlikely(err_rc_ != ESP_OK)) {      \
+  >             abort();                            \
+  >         }                                       \
+  >     } while(0)
+  > #else
+  > … _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)
+  > #endif
+  > 
+  > /**
+  >  * … In comparison with ESP_ERROR_CHECK(), this prints the same error
+  >  * message but isn't terminating the program.
+  >  */
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
+Тобто книга має рацію двічі. Вона правильно каже, що макрос перезавантажує чип замість обробляти помилку, — і правильно радить прибирати його звідти, де помилка можлива в роботі, бо з вимкненими assert він не обробить її й поготів.
+`esp_err_t` = `int`, `ESP_OK` = 0 — обидва дослівно.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -1255,7 +1430,7 @@
 
 ---
 
-<!-- fc id:T-32-083 sha:fac227b0 src:manual/32-nadiynist.md:213 klas:F -->
+<!-- fc id:T-32-083 sha:fac227b0 src:manual/32-nadiynist.md:213 klas:A -->
 ### T-32-083 · proza · рядок 213
 
 **Книга каже, дослівно:**
@@ -1264,7 +1439,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
+- **Дослівно з джерела:**
+  > typedef int esp_err_t;
+  > #define ESP_OK          0    /*!< esp_err_t value indicating success */
+  > #define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure */
+  > 
+  > /**
+  >  * Macro which can be used to check the error code…
+  >  * Disabled if assertions are disabled.
+  >  */
+  > #ifdef NDEBUG
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         (void) sizeof(err_rc_);                 \
+  >     } while(0)
+  > #elif defined(CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT)
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         if (unlikely(err_rc_ != ESP_OK)) {      \
+  >             abort();                            \
+  >         }                                       \
+  >     } while(0)
+  > #else
+  > … _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)
+  > #endif
+  > 
+  > /**
+  >  * … In comparison with ESP_ERROR_CHECK(), this prints the same error
+  >  * message but isn't terminating the program.
+  >  */
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
+Тобто книга має рацію двічі. Вона правильно каже, що макрос перезавантажує чип замість обробляти помилку, — і правильно радить прибирати його звідти, де помилка можлива в роботі, бо з вимкненими assert він не обробить її й поготів.
+`esp_err_t` = `int`, `ESP_OK` = 0 — обидва дослівно.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 

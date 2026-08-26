@@ -2388,7 +2388,7 @@
 
 ---
 
-<!-- fc id:T-C-103 sha:03becf94 src:dodatky/c-komandy.md:196 klas:F -->
+<!-- fc id:T-C-103 sha:03becf94 src:dodatky/c-komandy.md:196 klas:A -->
 ### T-C-103 · komirka · рядок 196
 
 **Книга каже, дослівно:**
@@ -2397,7 +2397,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -2414,7 +2434,7 @@
 
 ---
 
-<!-- fc id:T-C-105 sha:ddb10a79 src:dodatky/c-komandy.md:196 klas:F -->
+<!-- fc id:T-C-105 sha:ddb10a79 src:dodatky/c-komandy.md:196 klas:A -->
 ### T-C-105 · komirka · рядок 196
 
 **Книга каже, дослівно:**
@@ -2423,7 +2443,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -2493,7 +2533,7 @@
 
 ---
 
-<!-- fc id:T-C-109 sha:55b5b58b src:dodatky/c-komandy.md:198 klas:F -->
+<!-- fc id:T-C-109 sha:55b5b58b src:dodatky/c-komandy.md:198 klas:A -->
 ### T-C-109 · komirka · рядок 198
 
 **Книга каже, дослівно:**
@@ -2502,11 +2542,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
-<!-- fc id:T-C-110 sha:55a122c0 src:dodatky/c-komandy.md:198 klas:F -->
+<!-- fc id:T-C-110 sha:55a122c0 src:dodatky/c-komandy.md:198 klas:A -->
 ### T-C-110 · komirka · рядок 198
 
 **Книга каже, дослівно:**
@@ -2515,11 +2575,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
-<!-- fc id:T-C-111 sha:eb3f0062 src:dodatky/c-komandy.md:198 klas:F -->
+<!-- fc id:T-C-111 sha:eb3f0062 src:dodatky/c-komandy.md:198 klas:A -->
 ### T-C-111 · komirka · рядок 198
 
 **Книга каже, дослівно:**
@@ -2528,11 +2608,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
-<!-- fc id:T-C-112 sha:96022a5e src:dodatky/c-komandy.md:199 klas:F -->
+<!-- fc id:T-C-112 sha:96022a5e src:dodatky/c-komandy.md:199 klas:A -->
 ### T-C-112 · komirka · рядок 199
 
 **Книга каже, дослівно:**
@@ -2541,11 +2641,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
-<!-- fc id:T-C-113 sha:906f56bc src:dodatky/c-komandy.md:199 klas:F -->
+<!-- fc id:T-C-113 sha:906f56bc src:dodatky/c-komandy.md:199 klas:A -->
 ### T-C-113 · komirka · рядок 199
 
 **Книга каже, дослівно:**
@@ -2554,11 +2674,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
-<!-- fc id:T-C-114 sha:5efc2dcb src:dodatky/c-komandy.md:199 klas:F -->
+<!-- fc id:T-C-114 sha:5efc2dcb src:dodatky/c-komandy.md:199 klas:A -->
 ### T-C-114 · komirka · рядок 199
 
 **Книга каже, дослівно:**
@@ -2567,7 +2707,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 

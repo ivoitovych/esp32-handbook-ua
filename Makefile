@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil budgets arytmetyka check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh budgets arytmetyka check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -66,6 +66,10 @@ zvyazok:
 podil:
 	@$(PY) tools/podil.py
 
+# Кеш зовнішніх джерел: звірити sha256 наявних файлів із маніфестом.
+kesh:
+	@$(PY) tools/kesh.py --check
+
 # Зібрати й покласти у release/ те, що бачить читач на GitHub.
 release:
 	@$(PY) tools/build.py --strict
@@ -86,6 +90,7 @@ release-check:
 	@$(PY) tools/arytmetyka.py >/dev/null && echo "arytmetyka: збіглося"
 	@echo "── листування (строго: відкрите питання зупиняє випуск)"
 	@$(PY) tools/zvyazok.py --suvoro
+	@$(PY) tools/kesh.py --check
 	@echo "── рецензійні перевірки (строго)"
 	@$(PY) tools/review.py --strict >/dev/null && echo "review: 0 знахідок"
 	@echo "── реєстр фактчекінгу"
@@ -100,7 +105,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok budgets arytmetyka check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh budgets arytmetyka check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py

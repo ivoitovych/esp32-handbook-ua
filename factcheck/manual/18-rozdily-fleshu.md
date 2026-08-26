@@ -1239,7 +1239,7 @@
 
 ---
 
-<!-- fc id:T-18-072 sha:6a505c3a src:manual/18-rozdily-fleshu.md:135 klas:F -->
+<!-- fc id:T-18-072 sha:6a505c3a src:manual/18-rozdily-fleshu.md:135 klas:A -->
 ### T-18-072 · komirka · рядок 135
 
 **Книга каже, дослівно:**
@@ -1248,7 +1248,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
+- **Дослівно з джерела:**
+  > (esp_ota_ops.h)
+  > #define ESP_ERR_OTA_BASE                       0x1500
+  > #define ESP_ERR_OTA_PARTITION_CONFLICT         (ESP_ERR_OTA_BASE + 0x02)
+  > #define ESP_ERR_OTA_VALIDATE_FAILED            (ESP_ERR_OTA_BASE + 0x04)
+  > 
+  > (esp_err.h)
+  > #define ESP_ERR_INVALID_ARG         0x102
+  > 
+  > (wear-levelling.rst)
+  > The wear levelling component … distributes wear across the whole
+  > partition, and is used together with the FAT filesystem via
+  > esp_vfs_fat_spiflash_mount_rw_wl.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Усі названі книгою константи існують дослівно. Прохід 7 звіряв виклики; ці — коди повернення, і вони живуть у тих самих заголовках.
+Твердження розділу 18 про `wear_levelling` підтверджується від протилежного: у документації FAT монтується через `esp_vfs_fat_spiflash_mount_rw_wl`, тобто саме через шар вирівнювання зносу, — отже сама FAT його не робить, як книга й пише.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -1532,7 +1550,7 @@
 
 ---
 
-<!-- fc id:T-18-091 sha:2dd189cd src:manual/18-rozdily-fleshu.md:160 klas:F -->
+<!-- fc id:T-18-091 sha:2dd189cd src:manual/18-rozdily-fleshu.md:160 klas:A -->
 ### T-18-091 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -1541,7 +1559,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
+- **Дослівно з джерела:**
+  > (esp_ota_ops.h)
+  > #define ESP_ERR_OTA_BASE                       0x1500
+  > #define ESP_ERR_OTA_PARTITION_CONFLICT         (ESP_ERR_OTA_BASE + 0x02)
+  > #define ESP_ERR_OTA_VALIDATE_FAILED            (ESP_ERR_OTA_BASE + 0x04)
+  > 
+  > (esp_err.h)
+  > #define ESP_ERR_INVALID_ARG         0x102
+  > 
+  > (wear-levelling.rst)
+  > The wear levelling component … distributes wear across the whole
+  > partition, and is used together with the FAT filesystem via
+  > esp_vfs_fat_spiflash_mount_rw_wl.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Усі названі книгою константи існують дослівно. Прохід 7 звіряв виклики; ці — коди повернення, і вони живуть у тих самих заголовках.
+Твердження розділу 18 про `wear_levelling` підтверджується від протилежного: у документації FAT монтується через `esp_vfs_fat_spiflash_mount_rw_wl`, тобто саме через шар вирівнювання зносу, — отже сама FAT його не робить, як книга й пише.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 

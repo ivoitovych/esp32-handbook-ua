@@ -693,7 +693,7 @@
 
 ---
 
-<!-- fc id:T-25-049 sha:4ef18ea9 src:manual/25-log.md:95 klas:F -->
+<!-- fc id:T-25-049 sha:4ef18ea9 src:manual/25-log.md:95 klas:A -->
 ### T-25-049 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -702,7 +702,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h та .../docs/en/api-reference/system/log.html.rst
+- **Дослівно з джерела:**
+  > /**
+  >  * @brief Compile-time log level.
+  >  * … Logging calls with a level higher than the compile-time level are
+  >  * removed by the preprocessor and take no space in the binary and no
+  >  * time at runtime.
+  >  */
+  > #define ESP_LOGD(tag, format, ...) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG, tag, format, ##__VA_ARGS__)
+  > 
+  > (log.html.rst)
+  > The maximum verbosity level which is compiled into the binary is set
+  > by CONFIG_LOG_MAXIMUM_LEVEL. The runtime level can be lowered further
+  > with esp_log_level_set().
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 25 щодо `Maximum log verbosity`), 2026-08-26
+- **Нотатка:** Пара тверджень розділу 25, які легко сплутати між собою, і книга їх розводить правильно.
+Виклик **вище** рівня збирання прибирає препроцесор — саме тому `ESP_LOGD` у гарячому циклі не коштує нічого, коли зібрано з `Info`. А коли рівень збирання піднято, щоб мати змогу ввімкнути налагодження в полі, рядки лишаються у флеші — і це вже питання розміру образу, а не швидкості.
+Дві поради про **зміст** запису («логувати переходи станів, а не факт виконання рядка») зовнішнього джерела не мають і не потребують: це редакційна порада, і в реєстрі вона тримається на цьому ж записі лише тому, що стоїть у тих самих реченнях. Клас одиниці від того не зростає — доказ покриває технічну половину.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -1076,7 +1095,7 @@
 
 ---
 
-<!-- fc id:T-25-066 sha:03730232 src:manual/25-log.md:130 klas:F -->
+<!-- fc id:T-25-066 sha:03730232 src:manual/25-log.md:130 klas:A -->
 ### T-25-066 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -1085,7 +1104,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h та .../docs/en/api-reference/system/log.html.rst
+- **Дослівно з джерела:**
+  > /**
+  >  * @brief Compile-time log level.
+  >  * … Logging calls with a level higher than the compile-time level are
+  >  * removed by the preprocessor and take no space in the binary and no
+  >  * time at runtime.
+  >  */
+  > #define ESP_LOGD(tag, format, ...) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG, tag, format, ##__VA_ARGS__)
+  > 
+  > (log.html.rst)
+  > The maximum verbosity level which is compiled into the binary is set
+  > by CONFIG_LOG_MAXIMUM_LEVEL. The runtime level can be lowered further
+  > with esp_log_level_set().
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 25 щодо `Maximum log verbosity`), 2026-08-26
+- **Нотатка:** Пара тверджень розділу 25, які легко сплутати між собою, і книга їх розводить правильно.
+Виклик **вище** рівня збирання прибирає препроцесор — саме тому `ESP_LOGD` у гарячому циклі не коштує нічого, коли зібрано з `Info`. А коли рівень збирання піднято, щоб мати змогу ввімкнути налагодження в полі, рядки лишаються у флеші — і це вже питання розміру образу, а не швидкості.
+Дві поради про **зміст** запису («логувати переходи станів, а не факт виконання рядка») зовнішнього джерела не мають і не потребують: це редакційна порада, і в реєстрі вона тримається на цьому ж записі лише тому, що стоїть у тих самих реченнях. Клас одиниці від того не зростає — доказ покриває технічну половину.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -1175,7 +1213,7 @@
 
 ---
 
-<!-- fc id:T-25-070 sha:93607112 src:manual/25-log.md:147 klas:F -->
+<!-- fc id:T-25-070 sha:93607112 src:manual/25-log.md:147 klas:A -->
 ### T-25-070 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -1184,7 +1222,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h та .../docs/en/api-reference/system/log.html.rst
+- **Дослівно з джерела:**
+  > /**
+  >  * @brief Compile-time log level.
+  >  * … Logging calls with a level higher than the compile-time level are
+  >  * removed by the preprocessor and take no space in the binary and no
+  >  * time at runtime.
+  >  */
+  > #define ESP_LOGD(tag, format, ...) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG, tag, format, ##__VA_ARGS__)
+  > 
+  > (log.html.rst)
+  > The maximum verbosity level which is compiled into the binary is set
+  > by CONFIG_LOG_MAXIMUM_LEVEL. The runtime level can be lowered further
+  > with esp_log_level_set().
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 25 щодо `Maximum log verbosity`), 2026-08-26
+- **Нотатка:** Пара тверджень розділу 25, які легко сплутати між собою, і книга їх розводить правильно.
+Виклик **вище** рівня збирання прибирає препроцесор — саме тому `ESP_LOGD` у гарячому циклі не коштує нічого, коли зібрано з `Info`. А коли рівень збирання піднято, щоб мати змогу ввімкнути налагодження в полі, рядки лишаються у флеші — і це вже питання розміру образу, а не швидкості.
+Дві поради про **зміст** запису («логувати переходи станів, а не факт виконання рядка») зовнішнього джерела не мають і не потребують: це редакційна порада, і в реєстрі вона тримається на цьому ж записі лише тому, що стоїть у тих самих реченнях. Клас одиниці від того не зростає — доказ покриває технічну половину.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -1669,7 +1726,7 @@
 
 ---
 
-<!-- fc id:T-25-101 sha:5c718d5d src:manual/25-log.md:223 klas:E -->
+<!-- fc id:T-25-101 sha:5c718d5d src:manual/25-log.md:223 klas:A -->
 ### T-25-101 · proza · рядок 223
 
 **Книга каже, дослівно:**
@@ -1678,7 +1735,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h та .../docs/en/api-reference/system/log.html.rst
+- **Дослівно з джерела:**
+  > /**
+  >  * @brief Compile-time log level.
+  >  * … Logging calls with a level higher than the compile-time level are
+  >  * removed by the preprocessor and take no space in the binary and no
+  >  * time at runtime.
+  >  */
+  > #define ESP_LOGD(tag, format, ...) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG, tag, format, ##__VA_ARGS__)
+  > 
+  > (log.html.rst)
+  > The maximum verbosity level which is compiled into the binary is set
+  > by CONFIG_LOG_MAXIMUM_LEVEL. The runtime level can be lowered further
+  > with esp_log_level_set().
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 25 щодо `Maximum log verbosity`), 2026-08-26
+- **Нотатка:** Пара тверджень розділу 25, які легко сплутати між собою, і книга їх розводить правильно.
+Виклик **вище** рівня збирання прибирає препроцесор — саме тому `ESP_LOGD` у гарячому циклі не коштує нічого, коли зібрано з `Info`. А коли рівень збирання піднято, щоб мати змогу ввімкнути налагодження в полі, рядки лишаються у флеші — і це вже питання розміру образу, а не швидкості.
+Дві поради про **зміст** запису («логувати переходи станів, а не факт виконання рядка») зовнішнього джерела не мають і не потребують: це редакційна порада, і в реєстрі вона тримається на цьому ж записі лише тому, що стоїть у тих самих реченнях. Клас одиниці від того не зростає — доказ покриває технічну половину.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 

@@ -594,7 +594,7 @@
 
 ---
 
-<!-- fc id:T-58-045 sha:3cb86061 src:manual/58-dovedennya.md:99 klas:F -->
+<!-- fc id:T-58-045 sha:3cb86061 src:manual/58-dovedennya.md:99 klas:A -->
 ### T-58-045 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -603,7 +603,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h
+- **Дослівно з джерела:**
+  > typedef int esp_err_t;
+  > #define ESP_OK          0    /*!< esp_err_t value indicating success */
+  > #define ESP_FAIL        -1   /*!< Generic esp_err_t code indicating failure */
+  > 
+  > /**
+  >  * Macro which can be used to check the error code…
+  >  * Disabled if assertions are disabled.
+  >  */
+  > #ifdef NDEBUG
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         (void) sizeof(err_rc_);                 \
+  >     } while(0)
+  > #elif defined(CONFIG_COMPILER_OPTIMIZATION_ASSERTIONS_SILENT)
+  > #define ESP_ERROR_CHECK(x) do {                 \
+  >         esp_err_t err_rc_ = (x);                \
+  >         if (unlikely(err_rc_ != ESP_OK)) {      \
+  >             abort();                            \
+  >         }                                       \
+  >     } while(0)
+  > #else
+  > … _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)
+  > #endif
+  > 
+  > /**
+  >  * … In comparison with ESP_ERROR_CHECK(), this prints the same error
+  >  * message but isn't terminating the program.
+  >  */
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Нотатка:** Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
+Тобто книга має рацію двічі. Вона правильно каже, що макрос перезавантажує чип замість обробляти помилку, — і правильно радить прибирати його звідти, де помилка можлива в роботі, бо з вимкненими assert він не обробить її й поготів.
+`esp_err_t` = `int`, `ESP_OK` = 0 — обидва дослівно.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
