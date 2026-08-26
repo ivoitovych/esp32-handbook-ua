@@ -26,15 +26,31 @@
 
 Тому насіння тут **не** береться з годинника.
 
+## Чому тут є довірчий проміжок, а в штурмі його немає
+
+Бо тут він означає щось. Вибірка випадкова, отже відсоток із неї —
+оцінка відсотка в усій популяції, і в цієї оцінки є похибка, яку можна
+порахувати. Назвати частку без похибки означало б видати 160 одиниць за
+3892.
+
+У штурмі проміжку немає не тому, що ліньки, а тому, що там він був би
+брехнею: похибка вибіркового середнього нічого не каже про вибірку,
+відібрану за досліджуваною ознакою.
+
     tools/vybirka.py E 150          наряд на 150 одиниць класу E
     tools/vybirka.py E 150 --nasinnya 7   інше насіння, явно назване
+    tools/vybirka.py --zvit <каталог>     звести вивантаження в міру
 """
 from __future__ import annotations
 
+import collections
+import math
 import random
 import re
 import sys
 from pathlib import Path
+
+import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 GRUPY = ("manual", "kartky", "dodatky", "inserts")
@@ -113,7 +129,125 @@ ZAHOLOVOK = """# Наряд: випадкова вибірка класу `{klas
 """
 
 
+ZVIT = ROOT / "factcheck" / "MIRA-E.md"
+
+
+def zvesty(katalog: Path) -> int:
+    """Звести вивантаження випадкової вибірки в міру з похибкою."""
+    zap: list[dict] = []
+    bidy: list[str] = []
+    for f in sorted(katalog.glob("*.yaml")):
+        try:
+            recs = yaml.safe_load(f.read_text(encoding="utf-8")) or []
+        except yaml.YAMLError:
+            bidy.append(f.name)
+            continue
+        for z in recs:
+            if isinstance(z, dict):
+                z["_hto"] = f.stem.split("-")[0]
+                zap.append(z)
+
+    n = len(zap)
+    if not n:
+        print("vybirka: вивантажень не знайдено")
+        return 1
+    c = collections.Counter(str(z.get("verdykt", "?")) for z in zap)
+    maye_referenta = c["znayshov"] + c["ideya"]
+
+    def promizhok(k: int) -> tuple[float, float]:
+        """Вілсонів проміжок 95%. Для часток біля 0 нормальний бреше."""
+        p, z = k / n, 1.96
+        seredyna = (p + z * z / (2 * n)) / (1 + z * z / n)
+        pivshyryna = (z / (1 + z * z / n)) * math.sqrt(
+            p * (1 - p) / n + z * z / (4 * n * n))
+        return (max(0.0, seredyna - pivshyryna),
+                min(1.0, seredyna + pivshyryna))
+
+    nyz, verh = promizhok(maye_referenta)
+
+    # Розкид між помічниками. Це не косметика: якщо різні судді на тих
+    # самих даних дають різні частки, справжня похибка більша за
+    # вибіркову, і Вілсонів проміжок нижче — оптимістичний.
+    po_hto: dict[str, list[int]] = collections.defaultdict(lambda: [0, 0])
+    for z in zap:
+        hto = str(z.get("_hto"))
+        po_hto[hto][1] += 1
+        if str(z.get("verdykt")) in ("znayshov", "ideya"):
+            po_hto[hto][0] += 1
+    chastky = [k / v for k, v in po_hto.values() if v]
+
+    r = [f"""# Міра класу `E`
+
+**Генерується** `tools/vybirka.py --zvit`. Наряд —
+`factcheck/NARYAD-vybirka.md`, там же насіння добору.
+
+Питання: **яка частка класу `E` має зовнішній референт**, тобто
+поставлена надто щедро. Вибірка **випадкова**, тому відсоток звідси
+можна переносити на весь клас — на відміну від `factcheck/SHTURM-E.md`,
+де вибірку відібрано рукою під відповідь.
+
+## Результат
+
+Одиниць у вибірці: **{n}**.
+
+| Вердикт | Скільки | Частка |
+|---|---|---|
+| `znayshov` — джерело здобуто | {c['znayshov']} | {c['znayshov'] / n:.0%} |
+| `ideya` — джерело назване, не здобуте | {c['ideya']} | {c['ideya'] / n:.0%} |
+| `spravdi-e` — референта справді немає | {c['spravdi-e']} | {c['spravdi-e'] / n:.0%} |
+
+**Має зовнішній референт: {maye_referenta} з {n} = {maye_referenta / n:.0%}**
+(95% Вілсон: {nyz:.0%}–{verh:.0%}).
+
+Тобто приблизно **{round(maye_referenta / n * 3892):d}** одиниць класу
+`E` — з 3892 — насправді перевірювані, і присуд «поза зовнішньою
+звіркою» на них не мав би стояти.
+
+## Чому цей проміжок оптимістичний
+
+Вілсонів проміжок рахує лише похибку добору — він припускає, що в
+кожної одиниці є одна правильна відповідь, яку будь-який суддя дав би
+однаково. Тут це не так.
+
+Частки «має референта» по помічниках: {', '.join(f'{x:.0%}' for x in sorted(chastky))}.
+
+Розкид між суддями **більший за вибіркову похибку**. Отже головне
+джерело невизначеності — не те, що одиниць 160 замість 3892, а те, що
+межа між «порада автора» і «твердження про світ» проводиться
+по-різному. Звужувати проміжок довшою вибіркою марно, доки межа не
+описана точніше.
+
+Це не привід відкинути міру. Порядок величини вона встановлює твердо:
+йдеться про **сотні** хибно віднесених одиниць, не про десяток.
+"""]
+    if bidy:
+        r.append("\nНе розібралися й пропущені: "
+                 + ", ".join(f"`{b}`" for b in bidy) + ".\n")
+
+    r.append("\n## Одиниці, у яких референт є\n")
+    r.append("| Одиниця | Вердикт | Де шукати або що знайдено |")
+    r.append("|---|---|---|")
+    for z in zap:
+        v = str(z.get("verdykt"))
+        if v not in ("znayshov", "ideya"):
+            continue
+        shcho = str(z.get("propozyciya") or z.get("komentar") or "").strip()
+        r.append(f"| `{z.get('odynycya','?')}` | {v} | {shcho[:140]} |")
+
+    ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
+    print(f"vybirka: вибірка {n}, має референта {maye_referenta} "
+          f"({maye_referenta / n:.0%}, 95% {nyz:.0%}–{verh:.0%}) "
+          f"→ {ZVIT.relative_to(ROOT)}")
+    return 0
+
+
 def main() -> int:
+    if "--zvit" in sys.argv:
+        i = sys.argv.index("--zvit")
+        if i + 1 >= len(sys.argv):
+            print("vybirka: --zvit потребує каталогу вивантажень")
+            return 2
+        return zvesty(Path(sys.argv[i + 1]))
     if len(sys.argv) < 3:
         print(__doc__)
         return 2
