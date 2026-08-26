@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Наряд помічникам на 50 цитат, яких немає в джерелі.
+"""Наряд помічникам на цитати, яких немає в джерелі.
 
 ## Що це за робота і чому вона не та, яку зробив третій шар
 
@@ -43,8 +43,9 @@
 запис, на який ніхто не відповів, друкує окремим розділом. Нестача —
 теж результат, і найнебезпечніший: вона виглядає як згода.
 
-    tools/naryad.py           зібрати factcheck/NARYAD-cytaty.md
-    tools/naryad.py --zvit <каталог>  звести відповіді помічників
+    tools/naryad.py                    зібрати factcheck/NARYAD-cytaty.md
+    tools/naryad.py --krim <каталог>   лише ті, на які ще не відповіли
+    tools/naryad.py --zvit <каталог>   звести відповіді помічників
 """
 from __future__ import annotations
 
@@ -59,7 +60,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 CIL = ROOT / "factcheck" / "NARYAD-cytaty.md"
 NA_PAKET = 5
 
-ZAHOLOVOK = """# Наряд: 50 цитат, яких немає в джерелі
+ZAHOLOVOK = """# Наряд: {skilky} цитат, яких немає в джерелі
 
 **Генерується** `tools/naryad.py`. Питання **не** про цитату.
 
@@ -177,7 +178,7 @@ def zvesty(katalog: Path) -> int:
                       if str(vidpovidi.get(n, {}).get("verdykt"))
                       == "sperechayetsya"]
 
-    r = [f"""# Книга проти джерел: 50 розбіжних цитат
+    r = [f"""# Книга проти джерел: {len(ochikuvano)} розбіжних цитат
 
 **Генерується** `tools/naryad.py --zvit`. Наряд —
 `factcheck/NARYAD-cytaty.md`.
@@ -263,6 +264,15 @@ def main() -> int:
     naslidky, _ = citaty.perevirka(False)
     bidy = [n for n in naslidky if n.get("stan") == "ne_znaydeno"]
 
+    vidpovidzheni: set[str] = set()
+    if "--krim" in sys.argv:
+        import vyvantazh
+        katalog = Path(sys.argv[sys.argv.index("--krim") + 1])
+        zap, _, _ = vyvantazh.chytaty(katalog)
+        vidpovidzheni = {str(z.get("nazva", "")).strip() for z in zap}
+        bidy = [n for n in bidy
+                if str(n.get("nazva", "")).strip() not in vidpovidzheni]
+
     if "--zvit" in sys.argv:
         i = sys.argv.index("--zvit")
         if i + 1 >= len(sys.argv):
@@ -272,7 +282,10 @@ def main() -> int:
 
     rec = zapysy()
 
-    r = [ZAHOLOVOK.rstrip("\n")]
+    # `.replace`, а не `.format`: у тексті наряду стоять справжні
+    # фігурні дужки ESP-IDF (`{IDF_TARGET_...}`), і `format` на них
+    # падає з KeyError.
+    r = [ZAHOLOVOK.replace("{skilky}", str(len(bidy))).rstrip("\n")]
     for i, n in enumerate(bidy):
         if i % NA_PAKET == 0:
             r.append(f"\n## Пакет {i // NA_PAKET + 1}\n")
