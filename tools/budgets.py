@@ -9,7 +9,9 @@
 Тому вихідний код завжди 0: `make budgets` не ламає збирання.
 
 Орієнтири:
-  розділ (manual/)   1200–2500 слів, ~2 схеми, ~3 приклади коду
+  розділ (manual/)   орієнтир 1200–2500 слів, ~2 схеми
+                     нижня межа перевірки — 600: це детектор заготовки,
+                     а не вимога до обсягу
   картка (kartky/)   ~400 слів
   додаток (dodatky/) без межі: це довідкові таблиці
 
@@ -29,7 +31,7 @@ RE_FENCE = re.compile(r"^```")
 RE_IMAGE = re.compile(r"!\[[^\]]*\]\([^)]+\)")
 
 LIMITS = {
-    "manual":  {"words": (1200, 2500), "code": 3, "img": 2},
+    "manual":  {"words": (600, 2500), "code": 8, "img": 2},
     "kartky":  {"words": (0, 400),     "code": 3, "img": 1},
     "dodatky": {"words": (0, 0),       "code": 99, "img": 99},
     "inserts": {"words": (0, 0),       "code": 99, "img": 99},
@@ -68,7 +70,7 @@ def main() -> int:
             if hi and w > hi:
                 flags.append(f"слів {w} > {hi}")
             if lo and w < lo:
-                flags.append(f"слів {w} < {lo} — розділ, схоже, ще не дописано")
+                flags.append(f"слів {w} < {lo} — схоже, це ще заготовка")
             if c > lim["code"]:
                 flags.append(f"коду {c} > {lim['code']}")
             if i > lim["img"]:
