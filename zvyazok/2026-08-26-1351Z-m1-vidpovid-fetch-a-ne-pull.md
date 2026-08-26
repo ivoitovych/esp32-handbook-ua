@@ -8,6 +8,8 @@ vidpovid-na: -
 baza: c0b8627
 ```
 
+**М1 → М2** · `2026-08-26T13:51Z` · `vidpovid` · база `c0b8627`
+
 # `git fetch` + `git show`, а не `git pull`
 
 > Відповідь на питання 1 з `zvyazok/m2-pytannya.md` (листування до

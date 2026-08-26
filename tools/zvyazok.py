@@ -35,8 +35,12 @@ IMYA = re.compile(
     r"^(?P<data>\d{4}-\d{2}-\d{2})-(?P<chas>\d{4})Z"
     r"-(?P<vid>m1|m2)-(?P<vyd>[a-z]+)-(?P<slug>[a-z0-9-]+)\.md$")
 
-VYDY = {"pytannya", "vidpovid", "zvit", "znakhidka", "rishennya"}
-POTREBUYUT_VIDPOVIDI = {"pytannya", "znakhidka"}
+VYDY = {"zavdannya", "pryynyato", "zvit",
+        "pytannya", "vidpovid", "znakhidka", "rishennya"}
+# Доручення без прийняття — те саме, що знахідка без реакції: видане й
+# невідомо, чи дійшло. Прийняття тут не ввічливість, а єдине місце, де
+# видно, що доручення зрозуміли так само, як його писали.
+POTREBUYUT_VIDPOVIDI = {"zavdannya", "pytannya", "znakhidka"}
 OBOVYAZKOVI = ("vid", "komu", "koly", "vyd", "tema", "baza")
 AVTOR = {"m1": "М1", "m2": "М2"}
 
@@ -91,11 +95,31 @@ def zibraty() -> tuple[list[dict], list[str]]:
                 f"{f.name}: вид `{z['vyd']}` невідомий; "
                 f"є {', '.join(sorted(VYDY))}")
 
+        # Видимий відбиток дублює заголовок навмисне: заголовок читає
+        # машина, відбиток — людина. Звіряємо, щоб вони не розійшлися.
+        vidb = f"**{z['vid']} → {z['komu']}**"
+        tilo = f.read_text(encoding="utf-8")
+        ryadok = next((r for r in tilo.splitlines() if r.startswith(vidb)), None)
+        if ryadok is None:
+            bidy.append(
+                f"{f.name}: немає видимого відбитка — рядка, що починається "
+                f"з `{vidb}`")
+        elif z["koly"] not in ryadok or z["vyd"] not in ryadok:
+            bidy.append(
+                f"{f.name}: видимий відбиток розійшовся із заголовком "
+                f"({z['koly']}, {z['vyd']})")
+
+        zmin = z.get("zminyuye", "-").strip() or "-"
+        if zmin != "-" and z["vyd"] != "zavdannya":
+            bidy.append(
+                f"{f.name}: `zminyuye` має сенс лише для `zavdannya`")
+
         povidomlennya.append({
             "imya": f.stem, "fayl": f.name, "koly": ochik,
             "vid": z["vid"], "vyd": z["vyd"], "tema": z["tema"],
             "baza": z["baza"],
             "na": z.get("vidpovid-na", "-").strip() or "-",
+            "zminyuye": zmin,
         })
     return povidomlennya, bidy
 
@@ -119,6 +143,12 @@ def perevirka(suvoro: bool) -> int:
                 f"{p['fayl']}: відповідь ({p['koly']}) раніша за те, "
                 f"на що відповідає ({chasy[p['na']]})")
         vidpovidi.setdefault(p["na"], []).append(p)
+
+    for p in povid:
+        if p["zminyuye"] != "-" and p["zminyuye"] not in imena:
+            bidy.append(
+                f"{p['fayl']}: `zminyuye: {p['zminyuye']}` — такого "
+                "повідомлення немає")
 
     vidkryti = [p for p in povid
                 if p["vyd"] in POTREBUYUT_VIDPOVIDI and p["imya"] not in vidpovidi]
