@@ -42,6 +42,8 @@ URL не підмінили.
 | `ch341.c` | `42dfb2e94a8e8a82cedc464a71e41f721caa36917d31d81dd792cb5ea4c03f2f` | 23133 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/ch341.c> |
 | `cp2102.pdf` | `f025d9c738e4906544bbae493d5ff4a8d9746df247c92a329f4ed94799220e59` | 2172800 | 2026-08-26 | <https://www.silabs.com/documents/public/data-sheets/cp2102-9.pdf> |
 | `cp210x.c` | `8aa7d881db52ae9a7ff1b2d4e854474aae75542aec0abeded40cc69fd9cd2eb9` | 66727 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/cp210x.c> |
+| `dht11.pdf` | `2bf1a5eff6ebfc16e296eaf5d276cdc8a19439b436d1c6c8642aaf647aadc3df` | 693777 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/DHT11-chinese.pdf> |
+| `dht22.pdf` | `17702d6042bc4916080064e849da8842b6ec21d56fcab73071aee471bda1505d` | 918398 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/DHT22.pdf> |
 | `ds18b20.pdf` | `39d191cd1fb657e43eac061f605bbd375d3c42dc40e7839c17fa0675bb0404d8` | 261896 | 2026-08-26 | — |
 | `dw01.pdf` | `0f01ee674b66a5f92abe08bf9bd337b3a47484de49e97c77542e7b0a7cbbc0b7` | 616224 | 2026-08-26 | <http://www.ic-fortune.com/upload/Download/DW01A-DS-12_EN.pdf> |
 | `esp32-datasheet.pdf` | `a7917e6b47528c9dcab06837a49d452e582751335797db879f1cf2d17cd29adf` | 989523 | 2026-08-26 | — |
@@ -54,6 +56,7 @@ URL не підмінили.
 | `ina226.pdf` | `c9b67f886d4a5241a5e070723f7b61867409eeb27eed768b9cdd9cb17e03ca2d` | 1516957 | 2026-08-26 | <https://www.ti.com/lit/ds/symlink/ina226.pdf> |
 | `irf540.pdf` | `7002a04312724c95d050a716f5979ccd4f7dc42aed1b097d2685cd2df4327768` | 132342 | 2026-08-26 | <https://www.vishay.com/docs/91021/irf540.pdf> |
 | `irlz44.pdf` | `8dd82ac7164a38ee0019e0a289c7ae5e0db234c8c0c5bb8a406300b47a3e9c54` | 878484 | 2026-08-26 | <https://www.vishay.com/docs/91328/irlz44.pdf> |
+| `l298n.pdf` | `b499461614cbbec95227bc79e1da4bf21f0e0121d9f7f931b462cbe66fced4b3` | 611634 | 2026-08-26 | <https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf> |
 | `led-blue-wp7113qbc.pdf` | `ff6fcadbd0c1616d3a2db19c43754dd22731ae50bc7efdc9c3c531c13487eca5` | 554587 | 2026-08-26 | <https://www.kingbrightusa.com/images/catalog/SPEC/WP7113QBC-D.pdf> |
 | `led-red-wp7113id.pdf` | `b5bb33f69c13fd92ab6d47a8fd71168b6e7ee685139c8f381957aeea9286c9da` | 362307 | 2026-08-26 | <https://www.kingbrightusa.com/images/catalog/SPEC/WP7113ID.pdf> |
 | `lghg2.pdf` | `13a74b9690c20f28f6ac36e12b06f8cce7b944d57c78682ff92131292f303b4f` | 345290 | 2026-08-26 | <https://www.batteryspace.com/prod-specs/9989.specs.pdf> |
