@@ -978,7 +978,7 @@
 
 ---
 
-<!-- fc id:T-D-064 sha:932a0e72 src:dodatky/d-panik.md:57 klas:F -->
+<!-- fc id:T-D-064 sha:932a0e72 src:dodatky/d-panik.md:57 klas:A -->
 ### T-D-064 · tablycya · рядок 57
 
 **Книга каже, дослівно:**
@@ -987,7 +987,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as represented
+  > in the `GPIO_STRAP register <…/components/soc/{IDF_TARGET_PATH_NAME}/include/soc/gpio_reg.h>`__.
+  > 
+  > The individual bit values are as follows:
+  > 
+  > .. only:: esp32
+  > 
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і найцінніше за всі вісім. Книга друкувала `boot:0x13` у кожному прикладі логу й пояснювала лише текст у дужках, ніби число службове. Насправді це прямий вимір: які рівні чип зафіксував на strapping-пінах у момент скидання.
+Практичний наслідок великий. Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої, і радить її знімати — методом здогадки. Тепер це читається з логу: виставлений біт `0x20` означає `GPIO12` високий, тобто флеш на 1.8 В і мовчазна плата. Перевірка коштує нуль і не потребує приладів.
+Арифметика сходиться на обох типових значеннях: `0x13` = 0x01+0x02+0x10 (GPIO5, GPIO15, GPIO0 високі) — норма; `0x3` = 0x01+0x02, тобто те саме без `GPIO0` — download mode.
+Додано розгорнуто в додаток D і стисло на картку К6.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -1061,7 +1082,7 @@
 
 ---
 
-<!-- fc id:T-D-069 sha:91d5ab98 src:dodatky/d-panik.md:64 klas:F -->
+<!-- fc id:T-D-069 sha:91d5ab98 src:dodatky/d-panik.md:64 klas:A -->
 ### T-D-069 · proza · рядок 64
 
 **Книга каже, дослівно:**
@@ -1070,11 +1091,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as represented
+  > in the `GPIO_STRAP register <…/components/soc/{IDF_TARGET_PATH_NAME}/include/soc/gpio_reg.h>`__.
+  > 
+  > The individual bit values are as follows:
+  > 
+  > .. only:: esp32
+  > 
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і найцінніше за всі вісім. Книга друкувала `boot:0x13` у кожному прикладі логу й пояснювала лише текст у дужках, ніби число службове. Насправді це прямий вимір: які рівні чип зафіксував на strapping-пінах у момент скидання.
+Практичний наслідок великий. Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої, і радить її знімати — методом здогадки. Тепер це читається з логу: виставлений біт `0x20` означає `GPIO12` високий, тобто флеш на 1.8 В і мовчазна плата. Перевірка коштує нуль і не потребує приладів.
+Арифметика сходиться на обох типових значеннях: `0x13` = 0x01+0x02+0x10 (GPIO5, GPIO15, GPIO0 високі) — норма; `0x3` = 0x01+0x02, тобто те саме без `GPIO0` — download mode.
+Додано розгорнуто в додаток D і стисло на картку К6.
+- **Прохід:** pass-08-strapping
 
 ---
 
-<!-- fc id:T-D-070 sha:b8b5cfd0 src:dodatky/d-panik.md:67 klas:F -->
+<!-- fc id:T-D-070 sha:b8b5cfd0 src:dodatky/d-panik.md:67 klas:A -->
 ### T-D-070 · proza · рядок 67
 
 **Книга каже, дослівно:**
@@ -1083,7 +1125,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as represented
+  > in the `GPIO_STRAP register <…/components/soc/{IDF_TARGET_PATH_NAME}/include/soc/gpio_reg.h>`__.
+  > 
+  > The individual bit values are as follows:
+  > 
+  > .. only:: esp32
+  > 
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і найцінніше за всі вісім. Книга друкувала `boot:0x13` у кожному прикладі логу й пояснювала лише текст у дужках, ніби число службове. Насправді це прямий вимір: які рівні чип зафіксував на strapping-пінах у момент скидання.
+Практичний наслідок великий. Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої, і радить її знімати — методом здогадки. Тепер це читається з логу: виставлений біт `0x20` означає `GPIO12` високий, тобто флеш на 1.8 В і мовчазна плата. Перевірка коштує нуль і не потребує приладів.
+Арифметика сходиться на обох типових значеннях: `0x13` = 0x01+0x02+0x10 (GPIO5, GPIO15, GPIO0 високі) — норма; `0x3` = 0x01+0x02, тобто те саме без `GPIO0` — download mode.
+Додано розгорнуто в додаток D і стисло на картку К6.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -1130,7 +1193,7 @@
 
 ---
 
-<!-- fc id:T-D-074 sha:babcdf0b src:dodatky/d-panik.md:75 klas:F -->
+<!-- fc id:T-D-074 sha:babcdf0b src:dodatky/d-panik.md:75 klas:A -->
 ### T-D-074 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -1139,7 +1202,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > :esp32: -  VDDSDIO has been enabled at 1.8V (due to MTDI/GPIO12, see above),
+  >         but this flash chip requires 3.3V so it's browning out.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Дослівне підтвердження механізму, доданого в розділ 07 у проході 6 за Kconfig бутлоадера. Тут те саме сказано з боку симптому: не «плата не стартує», а «флеш вимагає 3.3 В і провалюється по живленню». Формулювання книги («на переважній більшості модулів флеш тривольтовий») тепер спирається на джерело, а не лише на висновок.
+Це рідкісний випадок, коли два незалежні першоджерела Espressif — Kconfig ESP-IDF і документація esptool — описують ту саму пастку з різних боків, і обидва доступні звідси.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -1169,7 +1240,7 @@
 
 ---
 
-<!-- fc id:T-D-077 sha:f52ac6ce src:dodatky/d-panik.md:79 klas:F -->
+<!-- fc id:T-D-077 sha:f52ac6ce src:dodatky/d-panik.md:79 klas:A -->
 ### T-D-077 · proza · рядок 79
 
 **Книга каже, дослівно:**
@@ -1178,7 +1249,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as represented
+  > in the `GPIO_STRAP register <…/components/soc/{IDF_TARGET_PATH_NAME}/include/soc/gpio_reg.h>`__.
+  > 
+  > The individual bit values are as follows:
+  > 
+  > .. only:: esp32
+  > 
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і найцінніше за всі вісім. Книга друкувала `boot:0x13` у кожному прикладі логу й пояснювала лише текст у дужках, ніби число службове. Насправді це прямий вимір: які рівні чип зафіксував на strapping-пінах у момент скидання.
+Практичний наслідок великий. Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої, і радить її знімати — методом здогадки. Тепер це читається з логу: виставлений біт `0x20` означає `GPIO12` високий, тобто флеш на 1.8 В і мовчазна плата. Перевірка коштує нуль і не потребує приладів.
+Арифметика сходиться на обох типових значеннях: `0x13` = 0x01+0x02+0x10 (GPIO5, GPIO15, GPIO0 високі) — норма; `0x3` = 0x01+0x02, тобто те саме без `GPIO0` — download mode.
+Додано розгорнуто в додаток D і стисло на картку К6.
+- **Прохід:** pass-08-strapping
 
 ---
 

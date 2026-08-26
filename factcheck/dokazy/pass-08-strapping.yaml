@@ -30,7 +30,7 @@
     виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
 
 - nazva: "boot: у логу — бітова маска станів strapping-пінів"
-  zbih: 'бітова маска регістра `GPIO_STRAP`|маска рівнів на\s*strapping|`0x20`.{0,80}`GPIO12`|Саме число після `boot:`|Саме \*\*число\*\* після `boot:`'
+  zbih: 'бітова маска регістра `GPIO_STRAP`|маска рівнів на\s*strapping|`0x20`.{0,80}`GPIO12`|Саме число після `boot:`|Саме \*\*число\*\* після `boot:`|`GPIO4` не керує режимом завантаження|його рівень чип фіксує|`0x04`.{0,40}`GPIO4`|`boot:0x13`|`boot:0x3`'
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: |
@@ -67,7 +67,7 @@
     Додано розгорнуто в додаток D і стисло на картку К6.
 
 - nazva: GPIO12 високий дає VDDSDIO 1.8 В і brownout тривольтового флешу
-  zbih: 'VDDSDIO|найзліший пін|напругу внутрішнього стабілізатора|флеш \*\*тривольтовий\*\*'
+  zbih: 'VDDSDIO|найзліший пін|напругу внутрішнього стабілізатора|флеш \*\*тривольтовий\*\*|GPIO ?12[^\n]{0,80}1\.8 ?В|1\.8 ?В[^\n]{0,60}GPIO ?12|напругу живлення флешу|перемикає флеш на 1\.8|флеш живиться 1\.8|флеш отримує 1\.8|MTDI[^\n]{0,60}(?:1\.8|напруг)'
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
   cytata: |
