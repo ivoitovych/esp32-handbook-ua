@@ -666,7 +666,7 @@
 
 ---
 
-<!-- fc id:T-25-051 sha:4700c6f9 src:manual/25-log.md:101 klas:F -->
+<!-- fc id:T-25-051 sha:4700c6f9 src:manual/25-log.md:101 klas:A -->
 ### T-25-051 · kod · рядок 101
 
 **Книга каже, дослівно:**
@@ -679,11 +679,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-25-052 sha:4e8979ab src:manual/25-log.md:102 klas:F -->
+<!-- fc id:T-25-052 sha:4e8979ab src:manual/25-log.md:102 klas:A -->
 ### T-25-052 · kod-ryadok · рядок 102
 
 **Книга каже, дослівно:**
@@ -692,11 +708,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-25-053 sha:cb64ef9b src:manual/25-log.md:103 klas:F -->
+<!-- fc id:T-25-053 sha:cb64ef9b src:manual/25-log.md:103 klas:A -->
 ### T-25-053 · kod-ryadok · рядок 103
 
 **Книга каже, дослівно:**
@@ -705,11 +737,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-25-054 sha:93cfe011 src:manual/25-log.md:104 klas:F -->
+<!-- fc id:T-25-054 sha:93cfe011 src:manual/25-log.md:104 klas:A -->
 ### T-25-054 · kod-ryadok · рядок 104
 
 **Книга каже, дослівно:**
@@ -718,7 +766,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -813,7 +877,7 @@
 
 ---
 
-<!-- fc id:T-25-062 sha:a2ae1f36 src:manual/25-log.md:125 klas:F -->
+<!-- fc id:T-25-062 sha:a2ae1f36 src:manual/25-log.md:125 klas:A -->
 ### T-25-062 · kod · рядок 125
 
 **Книга каже, дослівно:**
@@ -828,11 +892,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-25-063 sha:a6714f03 src:manual/25-log.md:129 klas:F -->
+<!-- fc id:T-25-063 sha:a6714f03 src:manual/25-log.md:129 klas:A -->
 ### T-25-063 · kod-ryadok · рядок 129
 
 **Книга каже, дослівно:**
@@ -841,11 +921,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-25-064 sha:a6a2089a src:manual/25-log.md:133 klas:F -->
+<!-- fc id:T-25-064 sha:a6a2089a src:manual/25-log.md:133 klas:A -->
 ### T-25-064 · proza · рядок 133
 
 **Книга каже, дослівно:**
@@ -854,7 +950,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/31-freertos.md`
 
-Одиниць твердження: **92**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **93**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-31-005 sha:5a356c1a src:manual/31-freertos.md:16 klas:F -->
+<!-- fc id:T-31-005 sha:5a356c1a src:manual/31-freertos.md:16 klas:A -->
 ### T-31-005 · kod · рядок 16
 
 **Книга каже, дослівно:**
@@ -82,7 +82,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -99,7 +109,7 @@
 
 ---
 
-<!-- fc id:T-31-007 sha:4d0c7e33 src:manual/31-freertos.md:21 klas:F -->
+<!-- fc id:T-31-007 sha:4d0c7e33 src:manual/31-freertos.md:21 klas:A -->
 ### T-31-007 · kod-ryadok · рядок 21
 
 **Книга каже, дослівно:**
@@ -108,7 +118,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -164,7 +184,7 @@
 
 ---
 
-<!-- fc id:T-31-012 sha:2bf361b9 src:manual/31-freertos.md:42 klas:F -->
+<!-- fc id:T-31-012 sha:2bf361b9 src:manual/31-freertos.md:42 klas:A -->
 ### T-31-012 · kod · рядок 42
 
 **Книга каже, дослівно:**
@@ -178,7 +198,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -195,7 +225,7 @@
 
 ---
 
-<!-- fc id:T-31-014 sha:b6da3c56 src:manual/31-freertos.md:49 klas:F -->
+<!-- fc id:T-31-014 sha:b6da3c56 src:manual/31-freertos.md:49 klas:A -->
 ### T-31-014 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -204,11 +234,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-015 sha:4f3a3b23 src:manual/31-freertos.md:53 klas:F -->
+<!-- fc id:T-31-015 sha:4f3a3b23 src:manual/31-freertos.md:53 klas:A -->
 ### T-31-015 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -217,7 +257,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -260,8 +310,27 @@
 
 ---
 
-<!-- fc id:T-31-019 sha:685aa109 src:manual/31-freertos.md:63 klas:F -->
+<!-- fc id:T-31-019 sha:a794bed6 src:manual/31-freertos.md:63 klas:A -->
 ### T-31-019 · proza · рядок 63
+
+**Книга каже, дослівно:**
+
+> В ESP-IDF `configMAX_PRIORITIES` дорівнює **25**, тобто найвищий доступний пріоритет — 24.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/config/include/freertos/FreeRTOSConfig.h
+- **Дослівно з джерела:**
+  > #define configMAX_PRIORITIES                         ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу. Розділ 31 писав «від 0 до `configMAX_PRIORITIES - 1`», не називаючи числа, і давав у таблиці відкритий рядок «18+». Тепер названо стелю (24) і рядок закрито як «18–24». Різниця практична: «18+» читається як «і вище скільки завгодно», і задача з пріоритетом 30 мовчки не створиться.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:63 klas:F -->
+### T-31-020 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -273,8 +342,8 @@
 
 ---
 
-<!-- fc id:T-31-020 sha:ad41371f src:manual/31-freertos.md:68 klas:F -->
-### T-31-020 · tablycya · рядок 68
+<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 klas:F -->
+### T-31-021 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -286,8 +355,8 @@
 
 ---
 
-<!-- fc id:T-31-021 sha:4c18e8a7 src:manual/31-freertos.md:70 klas:F -->
-### T-31-021 · tablycya · рядок 70
+<!-- fc id:T-31-022 sha:4c18e8a7 src:manual/31-freertos.md:72 klas:F -->
+### T-31-022 · tablycya · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -299,8 +368,8 @@
 
 ---
 
-<!-- fc id:T-31-022 sha:419ad673 src:manual/31-freertos.md:71 klas:F -->
-### T-31-022 · tablycya · рядок 71
+<!-- fc id:T-31-023 sha:419ad673 src:manual/31-freertos.md:73 klas:F -->
+### T-31-023 · tablycya · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -312,8 +381,8 @@
 
 ---
 
-<!-- fc id:T-31-023 sha:3ce093d4 src:manual/31-freertos.md:72 klas:F -->
-### T-31-023 · tablycya · рядок 72
+<!-- fc id:T-31-024 sha:3ce093d4 src:manual/31-freertos.md:74 klas:F -->
+### T-31-024 · tablycya · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -325,21 +394,27 @@
 
 ---
 
-<!-- fc id:T-31-024 sha:6e609100 src:manual/31-freertos.md:73 klas:F -->
-### T-31-024 · tablycya · рядок 73
+<!-- fc id:T-31-025 sha:7f7e9d58 src:manual/31-freertos.md:75 klas:A -->
+### T-31-025 · tablycya · рядок 75
 
 **Книга каже, дослівно:**
 
-> | 18+ | системні задачі; сюди краще не лізти |
+> | 18–24 | системні задачі; сюди краще не лізти |
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/config/include/freertos/FreeRTOSConfig.h
+- **Дослівно з джерела:**
+  > #define configMAX_PRIORITIES                         ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу. Розділ 31 писав «від 0 до `configMAX_PRIORITIES - 1`», не називаючи числа, і давав у таблиці відкритий рядок «18+». Тепер названо стелю (24) і рядок закрито як «18–24». Різниця практична: «18+» читається як «і вище скільки завгодно», і задача з пріоритетом 30 мовчки не створиться.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-025 sha:59804003 src:manual/31-freertos.md:76 klas:F -->
-### T-31-025 · proza · рядок 76
+<!-- fc id:T-31-026 sha:59804003 src:manual/31-freertos.md:78 klas:F -->
+### T-31-026 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -351,8 +426,8 @@
 
 ---
 
-<!-- fc id:T-31-026 sha:f4d5df38 src:manual/31-freertos.md:76 klas:F -->
-### T-31-026 · proza · рядок 76
+<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:78 klas:F -->
+### T-31-027 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -364,8 +439,8 @@
 
 ---
 
-<!-- fc id:T-31-027 sha:27037fe9 src:manual/31-freertos.md:79 klas:F -->
-### T-31-027 · proza · рядок 79
+<!-- fc id:T-31-028 sha:27037fe9 src:manual/31-freertos.md:81 klas:F -->
+### T-31-028 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -377,8 +452,8 @@
 
 ---
 
-<!-- fc id:T-31-028 sha:b6b1a89f src:manual/31-freertos.md:83 klas:F -->
-### T-31-028 · proza · рядок 83
+<!-- fc id:T-31-029 sha:b6b1a89f src:manual/31-freertos.md:85 klas:F -->
+### T-31-029 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -390,8 +465,8 @@
 
 ---
 
-<!-- fc id:T-31-029 sha:aae2b632 src:manual/31-freertos.md:89 klas:F -->
-### T-31-029 · proza · рядок 89
+<!-- fc id:T-31-030 sha:aae2b632 src:manual/31-freertos.md:91 klas:F -->
+### T-31-030 · proza · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -403,8 +478,8 @@
 
 ---
 
-<!-- fc id:T-31-030 sha:8ff92472 src:manual/31-freertos.md:92 klas:F -->
-### T-31-030 · proza · рядок 92
+<!-- fc id:T-31-031 sha:8ff92472 src:manual/31-freertos.md:94 klas:F -->
+### T-31-031 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -416,8 +491,8 @@
 
 ---
 
-<!-- fc id:T-31-031 sha:71a27a71 src:manual/31-freertos.md:94 klas:F -->
-### T-31-031 · kod · рядок 94
+<!-- fc id:T-31-032 sha:71a27a71 src:manual/31-freertos.md:96 klas:A -->
+### T-31-032 · kod · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -428,12 +503,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-032 sha:6ab242cb src:manual/31-freertos.md:95 klas:F -->
-### T-31-032 · kod-ryadok · рядок 95
+<!-- fc id:T-31-033 sha:6ab242cb src:manual/31-freertos.md:97 klas:A -->
+### T-31-033 · kod-ryadok · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -441,12 +526,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-033 sha:b67ba81b src:manual/31-freertos.md:99 klas:F -->
-### T-31-033 · proza · рядок 99
+<!-- fc id:T-31-034 sha:b67ba81b src:manual/31-freertos.md:101 klas:F -->
+### T-31-034 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -458,8 +553,8 @@
 
 ---
 
-<!-- fc id:T-31-034 sha:7b9b18a5 src:manual/31-freertos.md:99 klas:F -->
-### T-31-034 · proza · рядок 99
+<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:101 klas:F -->
+### T-31-035 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -471,8 +566,8 @@
 
 ---
 
-<!-- fc id:T-31-035 sha:6c48d623 src:manual/31-freertos.md:103 klas:F -->
-### T-31-035 · proza · рядок 103
+<!-- fc id:T-31-036 sha:6c48d623 src:manual/31-freertos.md:105 klas:F -->
+### T-31-036 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -484,8 +579,8 @@
 
 ---
 
-<!-- fc id:T-31-036 sha:5c5bd338 src:manual/31-freertos.md:103 klas:F -->
-### T-31-036 · proza · рядок 103
+<!-- fc id:T-31-037 sha:5c5bd338 src:manual/31-freertos.md:105 klas:F -->
+### T-31-037 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -497,8 +592,8 @@
 
 ---
 
-<!-- fc id:T-31-037 sha:7f269ba1 src:manual/31-freertos.md:103 klas:F -->
-### T-31-037 · proza · рядок 103
+<!-- fc id:T-31-038 sha:7f269ba1 src:manual/31-freertos.md:105 klas:F -->
+### T-31-038 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -510,8 +605,8 @@
 
 ---
 
-<!-- fc id:T-31-038 sha:a7fe16fa src:manual/31-freertos.md:108 klas:F -->
-### T-31-038 · proza · рядок 108
+<!-- fc id:T-31-039 sha:a7fe16fa src:manual/31-freertos.md:110 klas:F -->
+### T-31-039 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -523,8 +618,8 @@
 
 ---
 
-<!-- fc id:T-31-039 sha:a10d6bfa src:manual/31-freertos.md:108 klas:F -->
-### T-31-039 · proza · рядок 108
+<!-- fc id:T-31-040 sha:a10d6bfa src:manual/31-freertos.md:110 klas:F -->
+### T-31-040 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -536,8 +631,8 @@
 
 ---
 
-<!-- fc id:T-31-040 sha:6d53b9e1 src:manual/31-freertos.md:115 klas:F -->
-### T-31-040 · proza · рядок 115
+<!-- fc id:T-31-041 sha:6d53b9e1 src:manual/31-freertos.md:117 klas:F -->
+### T-31-041 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -549,8 +644,8 @@
 
 ---
 
-<!-- fc id:T-31-041 sha:47149383 src:manual/31-freertos.md:115 klas:F -->
-### T-31-041 · proza · рядок 115
+<!-- fc id:T-31-042 sha:47149383 src:manual/31-freertos.md:117 klas:F -->
+### T-31-042 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -562,8 +657,8 @@
 
 ---
 
-<!-- fc id:T-31-042 sha:a0c48145 src:manual/31-freertos.md:119 klas:F -->
-### T-31-042 · kod · рядок 119
+<!-- fc id:T-31-043 sha:a0c48145 src:manual/31-freertos.md:121 klas:A -->
+### T-31-043 · kod · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -583,12 +678,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-043 sha:c7d11746 src:manual/31-freertos.md:124 klas:F -->
-### T-31-043 · kod-ryadok · рядок 124
+<!-- fc id:T-31-044 sha:c7d11746 src:manual/31-freertos.md:126 klas:A -->
+### T-31-044 · kod-ryadok · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -596,12 +707,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-044 sha:6bcb2659 src:manual/31-freertos.md:129 klas:F -->
-### T-31-044 · kod-ryadok · рядок 129
+<!-- fc id:T-31-045 sha:6bcb2659 src:manual/31-freertos.md:131 klas:F -->
+### T-31-045 · kod-ryadok · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -613,8 +734,8 @@
 
 ---
 
-<!-- fc id:T-31-045 sha:4f254aea src:manual/31-freertos.md:133 klas:F -->
-### T-31-045 · proza · рядок 133
+<!-- fc id:T-31-046 sha:4f254aea src:manual/31-freertos.md:135 klas:F -->
+### T-31-046 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -626,8 +747,8 @@
 
 ---
 
-<!-- fc id:T-31-046 sha:e441359d src:manual/31-freertos.md:135 klas:F -->
-### T-31-046 · proza · рядок 135
+<!-- fc id:T-31-047 sha:e441359d src:manual/31-freertos.md:137 klas:A -->
+### T-31-047 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -635,12 +756,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-047 sha:048ae5ce src:manual/31-freertos.md:141 klas:F -->
-### T-31-047 · proza · рядок 141
+<!-- fc id:T-31-048 sha:048ae5ce src:manual/31-freertos.md:143 klas:A -->
+### T-31-048 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -648,12 +779,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-048 sha:4f5ff1ce src:manual/31-freertos.md:141 klas:F -->
-### T-31-048 · proza · рядок 141
+<!-- fc id:T-31-049 sha:4f5ff1ce src:manual/31-freertos.md:143 klas:F -->
+### T-31-049 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -665,8 +806,8 @@
 
 ---
 
-<!-- fc id:T-31-049 sha:0f318c6e src:manual/31-freertos.md:146 klas:F -->
-### T-31-049 · proza · рядок 146
+<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 klas:F -->
+### T-31-050 · proza · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -678,8 +819,8 @@
 
 ---
 
-<!-- fc id:T-31-050 sha:c4ecc699 src:manual/31-freertos.md:149 klas:F -->
-### T-31-050 · kod · рядок 149
+<!-- fc id:T-31-051 sha:c4ecc699 src:manual/31-freertos.md:151 klas:A -->
+### T-31-051 · kod · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -694,12 +835,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-051 sha:05942241 src:manual/31-freertos.md:154 klas:F -->
-### T-31-051 · kod-ryadok · рядок 154
+<!-- fc id:T-31-052 sha:05942241 src:manual/31-freertos.md:156 klas:A -->
+### T-31-052 · kod-ryadok · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -707,12 +858,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-052 sha:b49e2c99 src:manual/31-freertos.md:158 klas:F -->
-### T-31-052 · proza · рядок 158
+<!-- fc id:T-31-053 sha:b49e2c99 src:manual/31-freertos.md:160 klas:A -->
+### T-31-053 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -720,12 +881,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-053 sha:a7fe8978 src:manual/31-freertos.md:161 klas:F -->
-### T-31-053 · proza · рядок 161
+<!-- fc id:T-31-054 sha:a7fe8978 src:manual/31-freertos.md:163 klas:F -->
+### T-31-054 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -737,8 +908,8 @@
 
 ---
 
-<!-- fc id:T-31-054 sha:c73b142f src:manual/31-freertos.md:166 klas:F -->
-### T-31-054 · proza · рядок 166
+<!-- fc id:T-31-055 sha:c73b142f src:manual/31-freertos.md:168 klas:F -->
+### T-31-055 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -750,8 +921,8 @@
 
 ---
 
-<!-- fc id:T-31-055 sha:1e95ef1f src:manual/31-freertos.md:166 klas:F -->
-### T-31-055 · proza · рядок 166
+<!-- fc id:T-31-056 sha:1e95ef1f src:manual/31-freertos.md:168 klas:F -->
+### T-31-056 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -763,8 +934,8 @@
 
 ---
 
-<!-- fc id:T-31-056 sha:eec8ea19 src:manual/31-freertos.md:169 klas:F -->
-### T-31-056 · proza · рядок 169
+<!-- fc id:T-31-057 sha:eec8ea19 src:manual/31-freertos.md:171 klas:F -->
+### T-31-057 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -776,8 +947,8 @@
 
 ---
 
-<!-- fc id:T-31-057 sha:1b8c1efa src:manual/31-freertos.md:171 klas:F -->
-### T-31-057 · proza · рядок 171
+<!-- fc id:T-31-058 sha:1b8c1efa src:manual/31-freertos.md:173 klas:F -->
+### T-31-058 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -789,8 +960,8 @@
 
 ---
 
-<!-- fc id:T-31-058 sha:599ea25d src:manual/31-freertos.md:171 klas:F -->
-### T-31-058 · proza · рядок 171
+<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 klas:F -->
+### T-31-059 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -802,8 +973,8 @@
 
 ---
 
-<!-- fc id:T-31-059 sha:1096706d src:manual/31-freertos.md:174 klas:F -->
-### T-31-059 · kod · рядок 174
+<!-- fc id:T-31-060 sha:1096706d src:manual/31-freertos.md:176 klas:A -->
+### T-31-060 · kod · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -818,12 +989,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-060 sha:52eaa3fa src:manual/31-freertos.md:176 klas:F -->
-### T-31-060 · kod-ryadok · рядок 176
+<!-- fc id:T-31-061 sha:52eaa3fa src:manual/31-freertos.md:178 klas:F -->
+### T-31-061 · kod-ryadok · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -835,8 +1016,8 @@
 
 ---
 
-<!-- fc id:T-31-061 sha:efe06e13 src:manual/31-freertos.md:177 klas:F -->
-### T-31-061 · kod-ryadok · рядок 177
+<!-- fc id:T-31-062 sha:efe06e13 src:manual/31-freertos.md:179 klas:F -->
+### T-31-062 · kod-ryadok · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -848,8 +1029,8 @@
 
 ---
 
-<!-- fc id:T-31-062 sha:c27bfc67 src:manual/31-freertos.md:186 klas:F -->
-### T-31-062 · proza · рядок 186
+<!-- fc id:T-31-063 sha:c27bfc67 src:manual/31-freertos.md:188 klas:F -->
+### T-31-063 · proza · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -861,8 +1042,8 @@
 
 ---
 
-<!-- fc id:T-31-063 sha:ceb5364e src:manual/31-freertos.md:189 klas:F -->
-### T-31-063 · proza · рядок 189
+<!-- fc id:T-31-064 sha:ceb5364e src:manual/31-freertos.md:191 klas:F -->
+### T-31-064 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -874,8 +1055,8 @@
 
 ---
 
-<!-- fc id:T-31-064 sha:f2ff5615 src:manual/31-freertos.md:192 klas:F -->
-### T-31-064 · proza · рядок 192
+<!-- fc id:T-31-065 sha:f2ff5615 src:manual/31-freertos.md:194 klas:F -->
+### T-31-065 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -887,8 +1068,8 @@
 
 ---
 
-<!-- fc id:T-31-065 sha:87a953a3 src:manual/31-freertos.md:198 klas:F -->
-### T-31-065 · kod · рядок 198
+<!-- fc id:T-31-066 sha:87a953a3 src:manual/31-freertos.md:200 klas:A -->
+### T-31-066 · kod · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -903,12 +1084,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-066 sha:9cd7f34f src:manual/31-freertos.md:202 klas:F -->
-### T-31-066 · kod-ryadok · рядок 202
+<!-- fc id:T-31-067 sha:9cd7f34f src:manual/31-freertos.md:204 klas:A -->
+### T-31-067 · kod-ryadok · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -916,12 +1107,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-067 sha:ac8daf50 src:manual/31-freertos.md:203 klas:F -->
-### T-31-067 · kod-ryadok · рядок 203
+<!-- fc id:T-31-068 sha:ac8daf50 src:manual/31-freertos.md:205 klas:A -->
+### T-31-068 · kod-ryadok · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -929,12 +1130,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-068 sha:48075782 src:manual/31-freertos.md:207 klas:F -->
-### T-31-068 · proza · рядок 207
+<!-- fc id:T-31-069 sha:48075782 src:manual/31-freertos.md:209 klas:A -->
+### T-31-069 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -942,12 +1153,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-069 sha:1b28ad63 src:manual/31-freertos.md:207 klas:F -->
-### T-31-069 · proza · рядок 207
+<!-- fc id:T-31-070 sha:1b28ad63 src:manual/31-freertos.md:209 klas:F -->
+### T-31-070 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -959,8 +1180,8 @@
 
 ---
 
-<!-- fc id:T-31-070 sha:11cc8e46 src:manual/31-freertos.md:207 klas:F -->
-### T-31-070 · proza · рядок 207
+<!-- fc id:T-31-071 sha:11cc8e46 src:manual/31-freertos.md:209 klas:A -->
+### T-31-071 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -968,12 +1189,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-071 sha:aa96715a src:manual/31-freertos.md:213 klas:F -->
-### T-31-071 · proza · рядок 213
+<!-- fc id:T-31-072 sha:aa96715a src:manual/31-freertos.md:215 klas:F -->
+### T-31-072 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -985,8 +1216,8 @@
 
 ---
 
-<!-- fc id:T-31-072 sha:77b3e0ed src:manual/31-freertos.md:213 klas:F -->
-### T-31-072 · proza · рядок 213
+<!-- fc id:T-31-073 sha:77b3e0ed src:manual/31-freertos.md:215 klas:F -->
+### T-31-073 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -998,8 +1229,8 @@
 
 ---
 
-<!-- fc id:T-31-073 sha:2dd64dec src:manual/31-freertos.md:217 klas:F -->
-### T-31-073 · proza · рядок 217
+<!-- fc id:T-31-074 sha:2dd64dec src:manual/31-freertos.md:219 klas:F -->
+### T-31-074 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1011,8 +1242,8 @@
 
 ---
 
-<!-- fc id:T-31-074 sha:cb41e800 src:manual/31-freertos.md:217 klas:F -->
-### T-31-074 · proza · рядок 217
+<!-- fc id:T-31-075 sha:cb41e800 src:manual/31-freertos.md:219 klas:F -->
+### T-31-075 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1024,8 +1255,8 @@
 
 ---
 
-<!-- fc id:T-31-075 sha:1bed70d5 src:manual/31-freertos.md:223 klas:F -->
-### T-31-075 · proza · рядок 223
+<!-- fc id:T-31-076 sha:1bed70d5 src:manual/31-freertos.md:225 klas:F -->
+### T-31-076 · proza · рядок 225
 
 **Книга каже, дослівно:**
 
@@ -1037,8 +1268,8 @@
 
 ---
 
-<!-- fc id:T-31-076 sha:1da805d2 src:manual/31-freertos.md:225 klas:F -->
-### T-31-076 · kod · рядок 225
+<!-- fc id:T-31-077 sha:1da805d2 src:manual/31-freertos.md:227 klas:A -->
+### T-31-077 · kod · рядок 227
 
 **Книга каже, дослівно:**
 
@@ -1050,12 +1281,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-077 sha:13c28b77 src:manual/31-freertos.md:228 klas:F -->
-### T-31-077 · kod-ryadok · рядок 228
+<!-- fc id:T-31-078 sha:13c28b77 src:manual/31-freertos.md:230 klas:F -->
+### T-31-078 · kod-ryadok · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -1067,8 +1308,8 @@
 
 ---
 
-<!-- fc id:T-31-078 sha:2bdfbaae src:manual/31-freertos.md:231 klas:F -->
-### T-31-078 · proza · рядок 231
+<!-- fc id:T-31-079 sha:2bdfbaae src:manual/31-freertos.md:233 klas:F -->
+### T-31-079 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1080,8 +1321,8 @@
 
 ---
 
-<!-- fc id:T-31-079 sha:163f52fe src:manual/31-freertos.md:231 klas:F -->
-### T-31-079 · proza · рядок 231
+<!-- fc id:T-31-080 sha:163f52fe src:manual/31-freertos.md:233 klas:F -->
+### T-31-080 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1093,8 +1334,8 @@
 
 ---
 
-<!-- fc id:T-31-080 sha:0573d901 src:manual/31-freertos.md:237 klas:F -->
-### T-31-080 · proza · рядок 237
+<!-- fc id:T-31-081 sha:0573d901 src:manual/31-freertos.md:239 klas:F -->
+### T-31-081 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -1106,8 +1347,8 @@
 
 ---
 
-<!-- fc id:T-31-081 sha:5adc071c src:manual/31-freertos.md:239 klas:F -->
-### T-31-081 · proza · рядок 239
+<!-- fc id:T-31-082 sha:5adc071c src:manual/31-freertos.md:241 klas:F -->
+### T-31-082 · proza · рядок 241
 
 **Книга каже, дослівно:**
 
@@ -1119,8 +1360,8 @@
 
 ---
 
-<!-- fc id:T-31-082 sha:3635e455 src:manual/31-freertos.md:241 klas:F -->
-### T-31-082 · proza · рядок 241
+<!-- fc id:T-31-083 sha:3635e455 src:manual/31-freertos.md:243 klas:F -->
+### T-31-083 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -1132,8 +1373,8 @@
 
 ---
 
-<!-- fc id:T-31-083 sha:71179c5d src:manual/31-freertos.md:244 klas:F -->
-### T-31-083 · proza · рядок 244
+<!-- fc id:T-31-084 sha:71179c5d src:manual/31-freertos.md:246 klas:F -->
+### T-31-084 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -1145,8 +1386,8 @@
 
 ---
 
-<!-- fc id:T-31-084 sha:b83b5cb4 src:manual/31-freertos.md:246 klas:F -->
-### T-31-084 · proza · рядок 246
+<!-- fc id:T-31-085 sha:b83b5cb4 src:manual/31-freertos.md:248 klas:F -->
+### T-31-085 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1158,8 +1399,8 @@
 
 ---
 
-<!-- fc id:T-31-085 sha:8922c4eb src:manual/31-freertos.md:248 klas:F -->
-### T-31-085 · proza · рядок 248
+<!-- fc id:T-31-086 sha:8922c4eb src:manual/31-freertos.md:250 klas:F -->
+### T-31-086 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1171,8 +1412,8 @@
 
 ---
 
-<!-- fc id:T-31-086 sha:f02a263f src:manual/31-freertos.md:251 klas:F -->
-### T-31-086 · proza · рядок 251
+<!-- fc id:T-31-087 sha:f02a263f src:manual/31-freertos.md:253 klas:A -->
+### T-31-087 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -1180,12 +1421,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Дослівно з джерела:**
+  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
+  > Макроси:
+  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
+  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
+  >   #define configMAX_PRIORITIES ( 25 )
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-31-087 sha:272c94c9 src:manual/31-freertos.md:256 klas:F -->
-### T-31-087 · proza · рядок 256
+<!-- fc id:T-31-088 sha:272c94c9 src:manual/31-freertos.md:258 klas:F -->
+### T-31-088 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1197,8 +1448,8 @@
 
 ---
 
-<!-- fc id:T-31-088 sha:caf51e23 src:manual/31-freertos.md:258 klas:F -->
-### T-31-088 · proza · рядок 258
+<!-- fc id:T-31-089 sha:caf51e23 src:manual/31-freertos.md:260 klas:F -->
+### T-31-089 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -1210,8 +1461,8 @@
 
 ---
 
-<!-- fc id:T-31-089 sha:845c22bb src:manual/31-freertos.md:260 klas:F -->
-### T-31-089 · proza · рядок 260
+<!-- fc id:T-31-090 sha:845c22bb src:manual/31-freertos.md:262 klas:F -->
+### T-31-090 · proza · рядок 262
 
 **Книга каже, дослівно:**
 
@@ -1223,8 +1474,8 @@
 
 ---
 
-<!-- fc id:T-31-090 sha:058ed39f src:manual/31-freertos.md:262 klas:F -->
-### T-31-090 · proza · рядок 262
+<!-- fc id:T-31-091 sha:058ed39f src:manual/31-freertos.md:264 klas:F -->
+### T-31-091 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -1236,8 +1487,8 @@
 
 ---
 
-<!-- fc id:T-31-091 sha:72e699d5 src:manual/31-freertos.md:262 klas:F -->
-### T-31-091 · proza · рядок 262
+<!-- fc id:T-31-092 sha:72e699d5 src:manual/31-freertos.md:264 klas:F -->
+### T-31-092 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -1249,8 +1500,8 @@
 
 ---
 
-<!-- fc id:T-31-092 sha:5878c064 src:manual/31-freertos.md:264 klas:F -->
-### T-31-092 · proza · рядок 264
+<!-- fc id:T-31-093 sha:5878c064 src:manual/31-freertos.md:266 klas:F -->
+### T-31-093 · proza · рядок 266
 
 **Книга каже, дослівно:**
 

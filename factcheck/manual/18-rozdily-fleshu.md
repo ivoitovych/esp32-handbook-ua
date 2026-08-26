@@ -197,7 +197,7 @@
 
 ---
 
-<!-- fc id:T-18-015 sha:fc7a2431 src:manual/18-rozdily-fleshu.md:23 klas:F -->
+<!-- fc id:T-18-015 sha:fc7a2431 src:manual/18-rozdily-fleshu.md:23 klas:A -->
 ### T-18-015 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -206,7 +206,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv та .../components/partition_table/gen_esp32part.py
+- **Дослівно з джерела:**
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     ,        0x6000,
+  > phy_init, data, phy,     ,        0x1000,
+  > factory,  app,  factory, ,        1M,
+  > 
+  > (gen_esp32part.py)
+  > ALIGNMENT = {
+  >     APP_TYPE: 0x10000,
+  >     DATA_TYPE: 0x1000,
+  >     BOOTLOADER_TYPE: 0x1000,
+  >     PARTITION_TABLE_TYPE: 0x1000,
+  > }
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує таблицю розділу 18 повністю: `nvs` розміром `0x6000`, `phy_init` розміром `0x1000`, `factory` 1 МБ — і, головне, вирівнювання: розділи типу `app` на 64 КБ, типу `data` на 4 КБ. Саме ці два числа книга називає вимогою апаратного відображення пам'яті.
+Окремо зафіксовано для наступних ревізій: у розбивці з OTA (`partitions_two_ota.csv`) `nvs` уже `0x4000`, і додається `otadata` розміром `0x2000`. Книга цієї розбивки таблицею не подає, тож розбіжності немає, але сума службових областей до `0x10000` сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -249,7 +267,7 @@
 
 ---
 
-<!-- fc id:T-18-019 sha:9df43b5f src:manual/18-rozdily-fleshu.md:24 klas:F -->
+<!-- fc id:T-18-019 sha:9df43b5f src:manual/18-rozdily-fleshu.md:24 klas:A -->
 ### T-18-019 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -258,11 +276,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv та .../components/partition_table/gen_esp32part.py
+- **Дослівно з джерела:**
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     ,        0x6000,
+  > phy_init, data, phy,     ,        0x1000,
+  > factory,  app,  factory, ,        1M,
+  > 
+  > (gen_esp32part.py)
+  > ALIGNMENT = {
+  >     APP_TYPE: 0x10000,
+  >     DATA_TYPE: 0x1000,
+  >     BOOTLOADER_TYPE: 0x1000,
+  >     PARTITION_TABLE_TYPE: 0x1000,
+  > }
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує таблицю розділу 18 повністю: `nvs` розміром `0x6000`, `phy_init` розміром `0x1000`, `factory` 1 МБ — і, головне, вирівнювання: розділи типу `app` на 64 КБ, типу `data` на 4 КБ. Саме ці два числа книга називає вимогою апаратного відображення пам'яті.
+Окремо зафіксовано для наступних ревізій: у розбивці з OTA (`partitions_two_ota.csv`) `nvs` уже `0x4000`, і додається `otadata` розміром `0x2000`. Книга цієї розбивки таблицею не подає, тож розбіжності немає, але сума службових областей до `0x10000` сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-18-020 sha:59fff70d src:manual/18-rozdily-fleshu.md:24 klas:F -->
+<!-- fc id:T-18-020 sha:59fff70d src:manual/18-rozdily-fleshu.md:24 klas:A -->
 ### T-18-020 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -271,7 +307,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv та .../components/partition_table/gen_esp32part.py
+- **Дослівно з джерела:**
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     ,        0x6000,
+  > phy_init, data, phy,     ,        0x1000,
+  > factory,  app,  factory, ,        1M,
+  > 
+  > (gen_esp32part.py)
+  > ALIGNMENT = {
+  >     APP_TYPE: 0x10000,
+  >     DATA_TYPE: 0x1000,
+  >     BOOTLOADER_TYPE: 0x1000,
+  >     PARTITION_TABLE_TYPE: 0x1000,
+  > }
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує таблицю розділу 18 повністю: `nvs` розміром `0x6000`, `phy_init` розміром `0x1000`, `factory` 1 МБ — і, головне, вирівнювання: розділи типу `app` на 64 КБ, типу `data` на 4 КБ. Саме ці два числа книга називає вимогою апаратного відображення пам'яті.
+Окремо зафіксовано для наступних ревізій: у розбивці з OTA (`partitions_two_ota.csv`) `nvs` уже `0x4000`, і додається `otadata` розміром `0x2000`. Книга цієї розбивки таблицею не подає, тож розбіжності немає, але сума службових областей до `0x10000` сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -486,7 +540,7 @@
 
 ---
 
-<!-- fc id:T-18-037 sha:8348b7b2 src:manual/18-rozdily-fleshu.md:60 klas:F -->
+<!-- fc id:T-18-037 sha:8348b7b2 src:manual/18-rozdily-fleshu.md:60 klas:A -->
 ### T-18-037 · kod · рядок 60
 
 **Книга каже, дослівно:**
@@ -501,7 +555,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv та .../components/partition_table/gen_esp32part.py
+- **Дослівно з джерела:**
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     ,        0x6000,
+  > phy_init, data, phy,     ,        0x1000,
+  > factory,  app,  factory, ,        1M,
+  > 
+  > (gen_esp32part.py)
+  > ALIGNMENT = {
+  >     APP_TYPE: 0x10000,
+  >     DATA_TYPE: 0x1000,
+  >     BOOTLOADER_TYPE: 0x1000,
+  >     PARTITION_TABLE_TYPE: 0x1000,
+  > }
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує таблицю розділу 18 повністю: `nvs` розміром `0x6000`, `phy_init` розміром `0x1000`, `factory` 1 МБ — і, головне, вирівнювання: розділи типу `app` на 64 КБ, типу `data` на 4 КБ. Саме ці два числа книга називає вимогою апаратного відображення пам'яті.
+Окремо зафіксовано для наступних ревізій: у розбивці з OTA (`partitions_two_ota.csv`) `nvs` уже `0x4000`, і додається `otadata` розміром `0x2000`. Книга цієї розбивки таблицею не подає, тож розбіжності немає, але сума службових областей до `0x10000` сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -531,7 +603,7 @@
 
 ---
 
-<!-- fc id:T-18-040 sha:d8851079 src:manual/18-rozdily-fleshu.md:75 klas:F -->
+<!-- fc id:T-18-040 sha:d8851079 src:manual/18-rozdily-fleshu.md:75 klas:A -->
 ### T-18-040 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -540,11 +612,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv та .../components/partition_table/gen_esp32part.py
+- **Дослівно з джерела:**
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     ,        0x6000,
+  > phy_init, data, phy,     ,        0x1000,
+  > factory,  app,  factory, ,        1M,
+  > 
+  > (gen_esp32part.py)
+  > ALIGNMENT = {
+  >     APP_TYPE: 0x10000,
+  >     DATA_TYPE: 0x1000,
+  >     BOOTLOADER_TYPE: 0x1000,
+  >     PARTITION_TABLE_TYPE: 0x1000,
+  > }
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує таблицю розділу 18 повністю: `nvs` розміром `0x6000`, `phy_init` розміром `0x1000`, `factory` 1 МБ — і, головне, вирівнювання: розділи типу `app` на 64 КБ, типу `data` на 4 КБ. Саме ці два числа книга називає вимогою апаратного відображення пам'яті.
+Окремо зафіксовано для наступних ревізій: у розбивці з OTA (`partitions_two_ota.csv`) `nvs` уже `0x4000`, і додається `otadata` розміром `0x2000`. Книга цієї розбивки таблицею не подає, тож розбіжності немає, але сума службових областей до `0x10000` сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-18-041 sha:2cfd4562 src:manual/18-rozdily-fleshu.md:75 klas:F -->
+<!-- fc id:T-18-041 sha:2cfd4562 src:manual/18-rozdily-fleshu.md:75 klas:A -->
 ### T-18-041 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -553,7 +643,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv та .../components/partition_table/gen_esp32part.py
+- **Дослівно з джерела:**
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     ,        0x6000,
+  > phy_init, data, phy,     ,        0x1000,
+  > factory,  app,  factory, ,        1M,
+  > 
+  > (gen_esp32part.py)
+  > ALIGNMENT = {
+  >     APP_TYPE: 0x10000,
+  >     DATA_TYPE: 0x1000,
+  >     BOOTLOADER_TYPE: 0x1000,
+  >     PARTITION_TABLE_TYPE: 0x1000,
+  > }
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує таблицю розділу 18 повністю: `nvs` розміром `0x6000`, `phy_init` розміром `0x1000`, `factory` 1 МБ — і, головне, вирівнювання: розділи типу `app` на 64 КБ, типу `data` на 4 КБ. Саме ці два числа книга називає вимогою апаратного відображення пам'яті.
+Окремо зафіксовано для наступних ревізій: у розбивці з OTA (`partitions_two_ota.csv`) `nvs` уже `0x4000`, і додається `otadata` розміром `0x2000`. Книга цієї розбивки таблицею не подає, тож розбіжності немає, але сума службових областей до `0x10000` сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -674,7 +782,7 @@
 
 ---
 
-<!-- fc id:T-18-051 sha:9eef63be src:manual/18-rozdily-fleshu.md:97 klas:F -->
+<!-- fc id:T-18-051 sha:9eef63be src:manual/18-rozdily-fleshu.md:97 klas:A -->
 ### T-18-051 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -683,7 +791,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -713,7 +837,7 @@
 
 ---
 
-<!-- fc id:T-18-054 sha:bdb800c3 src:manual/18-rozdily-fleshu.md:105 klas:F -->
+<!-- fc id:T-18-054 sha:bdb800c3 src:manual/18-rozdily-fleshu.md:105 klas:A -->
 ### T-18-054 · kod · рядок 105
 
 **Книга каже, дослівно:**
@@ -730,11 +854,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-18-055 sha:f3349b99 src:manual/18-rozdily-fleshu.md:109 klas:F -->
+<!-- fc id:T-18-055 sha:f3349b99 src:manual/18-rozdily-fleshu.md:109 klas:A -->
 ### T-18-055 · kod-ryadok · рядок 109
 
 **Книга каже, дослівно:**
@@ -743,7 +883,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -760,7 +916,7 @@
 
 ---
 
-<!-- fc id:T-18-057 sha:201bdc14 src:manual/18-rozdily-fleshu.md:116 klas:F -->
+<!-- fc id:T-18-057 sha:201bdc14 src:manual/18-rozdily-fleshu.md:116 klas:A -->
 ### T-18-057 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -769,7 +925,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 

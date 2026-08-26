@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/29-symptomy.md`
 
-Одиниць твердження: **99**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **106**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -847,8 +847,173 @@
 
 ---
 
-<!-- fc id:T-29-065 sha:7bbf2674 src:manual/29-symptomy.md:161 klas:F -->
-### T-29-065 · proza · рядок 161
+<!-- fc id:T-29-065 sha:e988e007 src:manual/29-symptomy.md:160 klas:A -->
+### T-29-065 · proza · рядок 160
+
+**Книга каже, дослівно:**
+
+> Перш ніж гадати, що з піном не так, **спитайте в чипа**.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
+  > current configurations of IOs, such as pull-up/pull-down, input/output enable, pin mapping, etc.
+  > 
+  >     gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18) | (1ULL << 26));
+  > 
+  > ================IO DUMP Start================
+  > IO[4] -
+  >   Pullup: 1, Pulldown: 0, DriveCap: 2
+  >   InputEn: 1, OutputEn: 0, OpenDrain: 0
+  >   FuncSel: 1 (GPIO)
+  >   GPIO Matrix SigIn ID: (simple GPIO input)
+  > …
+  > IO[26] **RESERVED** -
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і воно точно в жанрі книги. Розділ 29 розбирає «GPIO поводиться дивно» через здогадки — strapping, флеш, тільки-вхідний. Ця функція дає пряму відповідь: що зараз у регістрах, хто тримає пін (`FuncSel`, `GPIO Matrix SigIn/SigOut ID`) і чи він зарезервований системою. Додано в розділ 29 блоком уваги.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-29-066 sha:e860b038 src:manual/29-symptomy.md:160 klas:F -->
+### T-29-066 · proza · рядок 160
+
+**Книга каже, дослівно:**
+
+> ESP-IDF має функцію, яка друкує реальну конфігурацію піна — не ту, яку ви задавали, а ту, що зараз у регістрах:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-29-067 sha:6af58709 src:manual/29-symptomy.md:164 klas:A -->
+### T-29-067 · kod · рядок 164
+
+**Книга каже, дослівно:**
+
+> ```c
+> gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
+  > current configurations of IOs, such as pull-up/pull-down, input/output enable, pin mapping, etc.
+  > 
+  >     gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18) | (1ULL << 26));
+  > 
+  > ================IO DUMP Start================
+  > IO[4] -
+  >   Pullup: 1, Pulldown: 0, DriveCap: 2
+  >   InputEn: 1, OutputEn: 0, OpenDrain: 0
+  >   FuncSel: 1 (GPIO)
+  >   GPIO Matrix SigIn ID: (simple GPIO input)
+  > …
+  > IO[26] **RESERVED** -
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і воно точно в жанрі книги. Розділ 29 розбирає «GPIO поводиться дивно» через здогадки — strapping, флеш, тільки-вхідний. Ця функція дає пряму відповідь: що зараз у регістрах, хто тримає пін (`FuncSel`, `GPIO Matrix SigIn/SigOut ID`) і чи він зарезервований системою. Додано в розділ 29 блоком уваги.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-29-068 sha:d5c82469 src:manual/29-symptomy.md:165 klas:A -->
+### T-29-068 · kod-ryadok · рядок 165
+
+**Книга каже, дослівно:**
+
+> gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18));
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
+  > current configurations of IOs, such as pull-up/pull-down, input/output enable, pin mapping, etc.
+  > 
+  >     gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18) | (1ULL << 26));
+  > 
+  > ================IO DUMP Start================
+  > IO[4] -
+  >   Pullup: 1, Pulldown: 0, DriveCap: 2
+  >   InputEn: 1, OutputEn: 0, OpenDrain: 0
+  >   FuncSel: 1 (GPIO)
+  >   GPIO Matrix SigIn ID: (simple GPIO input)
+  > …
+  > IO[26] **RESERVED** -
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і воно точно в жанрі книги. Розділ 29 розбирає «GPIO поводиться дивно» через здогадки — strapping, флеш, тільки-вхідний. Ця функція дає пряму відповідь: що зараз у регістрах, хто тримає пін (`FuncSel`, `GPIO Matrix SigIn/SigOut ID`) і чи він зарезервований системою. Додано в розділ 29 блоком уваги.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-29-069 sha:889f654a src:manual/29-symptomy.md:168 klas:A -->
+### T-29-069 · proza · рядок 168
+
+**Книга каже, дослівно:**
+
+> У виводі видно підтягування, напрямок, open-drain, силу драйвера і — що найцінніше — **хто саме тримає пін**: `FuncSel` показує, чи пін працює як GPIO, чи його забрала периферія через IOMUX, а рядки `GPIO Matrix SigIn/SigOut ID` називають сигнал, на який його перепризначили.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
+  > current configurations of IOs, such as pull-up/pull-down, input/output enable, pin mapping, etc.
+  > 
+  >     gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18) | (1ULL << 26));
+  > 
+  > ================IO DUMP Start================
+  > IO[4] -
+  >   Pullup: 1, Pulldown: 0, DriveCap: 2
+  >   InputEn: 1, OutputEn: 0, OpenDrain: 0
+  >   FuncSel: 1 (GPIO)
+  >   GPIO Matrix SigIn ID: (simple GPIO input)
+  > …
+  > IO[26] **RESERVED** -
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і воно точно в жанрі книги. Розділ 29 розбирає «GPIO поводиться дивно» через здогадки — strapping, флеш, тільки-вхідний. Ця функція дає пряму відповідь: що зараз у регістрах, хто тримає пін (`FuncSel`, `GPIO Matrix SigIn/SigOut ID`) і чи він зарезервований системою. Додано в розділ 29 блоком уваги.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-29-070 sha:644cb002 src:manual/29-symptomy.md:174 klas:F -->
+### T-29-070 · proza · рядок 174
+
+**Книга каже, дослівно:**
+
+> Це закриває цілий клас питань «я ж налаштував його на вихід» за секунду: частина драйверів переналаштовує піни під себе, і побачити це інакше можна лише читанням регістрів руками.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-29-071 sha:6cd2047b src:manual/29-symptomy.md:174 klas:F -->
+### T-29-071 · proza · рядок 174
+
+**Книга каже, дослівно:**
+
+> Піни, зайняті системою, у виводі позначені як `**RESERVED**`.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-29-072 sha:7bbf2674 src:manual/29-symptomy.md:182 klas:F -->
+### T-29-072 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -860,8 +1025,8 @@
 
 ---
 
-<!-- fc id:T-29-066 sha:3dfc251e src:manual/29-symptomy.md:163 klas:F -->
-### T-29-066 · proza · рядок 163
+<!-- fc id:T-29-073 sha:3dfc251e src:manual/29-symptomy.md:184 klas:F -->
+### T-29-073 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -873,8 +1038,8 @@
 
 ---
 
-<!-- fc id:T-29-067 sha:11eaec1e src:manual/29-symptomy.md:163 klas:F -->
-### T-29-067 · proza · рядок 163
+<!-- fc id:T-29-074 sha:11eaec1e src:manual/29-symptomy.md:184 klas:F -->
+### T-29-074 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -886,8 +1051,8 @@
 
 ---
 
-<!-- fc id:T-29-068 sha:7c9939fe src:manual/29-symptomy.md:166 klas:F -->
-### T-29-068 · proza · рядок 166
+<!-- fc id:T-29-075 sha:7c9939fe src:manual/29-symptomy.md:187 klas:F -->
+### T-29-075 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -899,8 +1064,8 @@
 
 ---
 
-<!-- fc id:T-29-069 sha:7c7d0f3b src:manual/29-symptomy.md:166 klas:F -->
-### T-29-069 · proza · рядок 166
+<!-- fc id:T-29-076 sha:7c7d0f3b src:manual/29-symptomy.md:187 klas:F -->
+### T-29-076 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -912,8 +1077,8 @@
 
 ---
 
-<!-- fc id:T-29-070 sha:362e3619 src:manual/29-symptomy.md:171 klas:F -->
-### T-29-070 · proza · рядок 171
+<!-- fc id:T-29-077 sha:362e3619 src:manual/29-symptomy.md:192 klas:F -->
+### T-29-077 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -925,8 +1090,8 @@
 
 ---
 
-<!-- fc id:T-29-071 sha:df97ab76 src:manual/29-symptomy.md:171 klas:F -->
-### T-29-071 · proza · рядок 171
+<!-- fc id:T-29-078 sha:df97ab76 src:manual/29-symptomy.md:192 klas:F -->
+### T-29-078 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -938,8 +1103,8 @@
 
 ---
 
-<!-- fc id:T-29-072 sha:647aae7e src:manual/29-symptomy.md:175 klas:F -->
-### T-29-072 · proza · рядок 175
+<!-- fc id:T-29-079 sha:647aae7e src:manual/29-symptomy.md:196 klas:F -->
+### T-29-079 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -951,8 +1116,8 @@
 
 ---
 
-<!-- fc id:T-29-073 sha:fb14fcb0 src:manual/29-symptomy.md:177 klas:F -->
-### T-29-073 · proza · рядок 177
+<!-- fc id:T-29-080 sha:fb14fcb0 src:manual/29-symptomy.md:198 klas:F -->
+### T-29-080 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -964,8 +1129,8 @@
 
 ---
 
-<!-- fc id:T-29-074 sha:65c17fae src:manual/29-symptomy.md:182 klas:F -->
-### T-29-074 · proza · рядок 182
+<!-- fc id:T-29-081 sha:65c17fae src:manual/29-symptomy.md:203 klas:F -->
+### T-29-081 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -977,8 +1142,8 @@
 
 ---
 
-<!-- fc id:T-29-075 sha:38329652 src:manual/29-symptomy.md:185 klas:F -->
-### T-29-075 · proza · рядок 185
+<!-- fc id:T-29-082 sha:38329652 src:manual/29-symptomy.md:206 klas:F -->
+### T-29-082 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -990,8 +1155,8 @@
 
 ---
 
-<!-- fc id:T-29-076 sha:74dd739e src:manual/29-symptomy.md:185 klas:F -->
-### T-29-076 · proza · рядок 185
+<!-- fc id:T-29-083 sha:74dd739e src:manual/29-symptomy.md:206 klas:F -->
+### T-29-083 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1003,8 +1168,8 @@
 
 ---
 
-<!-- fc id:T-29-077 sha:b64c810d src:manual/29-symptomy.md:188 klas:F -->
-### T-29-077 · proza · рядок 188
+<!-- fc id:T-29-084 sha:b64c810d src:manual/29-symptomy.md:209 klas:F -->
+### T-29-084 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -1016,8 +1181,8 @@
 
 ---
 
-<!-- fc id:T-29-078 sha:d6ebb180 src:manual/29-symptomy.md:188 klas:F -->
-### T-29-078 · proza · рядок 188
+<!-- fc id:T-29-085 sha:d6ebb180 src:manual/29-symptomy.md:209 klas:F -->
+### T-29-085 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -1029,8 +1194,8 @@
 
 ---
 
-<!-- fc id:T-29-079 sha:038e86bd src:manual/29-symptomy.md:191 klas:F -->
-### T-29-079 · proza · рядок 191
+<!-- fc id:T-29-086 sha:038e86bd src:manual/29-symptomy.md:212 klas:F -->
+### T-29-086 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1042,8 +1207,8 @@
 
 ---
 
-<!-- fc id:T-29-080 sha:b76bf4b9 src:manual/29-symptomy.md:196 klas:F -->
-### T-29-080 · proza · рядок 196
+<!-- fc id:T-29-087 sha:b76bf4b9 src:manual/29-symptomy.md:217 klas:F -->
+### T-29-087 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1055,8 +1220,8 @@
 
 ---
 
-<!-- fc id:T-29-081 sha:c415d2f1 src:manual/29-symptomy.md:198 klas:F -->
-### T-29-081 · proza · рядок 198
+<!-- fc id:T-29-088 sha:c415d2f1 src:manual/29-symptomy.md:219 klas:F -->
+### T-29-088 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1068,8 +1233,8 @@
 
 ---
 
-<!-- fc id:T-29-082 sha:6479534f src:manual/29-symptomy.md:201 klas:F -->
-### T-29-082 · proza · рядок 201
+<!-- fc id:T-29-089 sha:6479534f src:manual/29-symptomy.md:222 klas:A -->
+### T-29-089 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1077,12 +1242,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-29-083 sha:fd445aa5 src:manual/29-symptomy.md:207 klas:F -->
-### T-29-083 · proza · рядок 207
+<!-- fc id:T-29-090 sha:fd445aa5 src:manual/29-symptomy.md:228 klas:F -->
+### T-29-090 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1094,8 +1275,8 @@
 
 ---
 
-<!-- fc id:T-29-084 sha:b75fa0b1 src:manual/29-symptomy.md:207 klas:F -->
-### T-29-084 · proza · рядок 207
+<!-- fc id:T-29-091 sha:b75fa0b1 src:manual/29-symptomy.md:228 klas:F -->
+### T-29-091 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1107,8 +1288,8 @@
 
 ---
 
-<!-- fc id:T-29-085 sha:f9885aac src:manual/29-symptomy.md:207 klas:F -->
-### T-29-085 · proza · рядок 207
+<!-- fc id:T-29-092 sha:f9885aac src:manual/29-symptomy.md:228 klas:F -->
+### T-29-092 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1120,8 +1301,8 @@
 
 ---
 
-<!-- fc id:T-29-086 sha:6a07b4bf src:manual/29-symptomy.md:207 klas:F -->
-### T-29-086 · proza · рядок 207
+<!-- fc id:T-29-093 sha:6a07b4bf src:manual/29-symptomy.md:228 klas:F -->
+### T-29-093 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1133,8 +1314,8 @@
 
 ---
 
-<!-- fc id:T-29-087 sha:82023775 src:manual/29-symptomy.md:215 klas:F -->
-### T-29-087 · proza · рядок 215
+<!-- fc id:T-29-094 sha:82023775 src:manual/29-symptomy.md:236 klas:F -->
+### T-29-094 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1146,8 +1327,8 @@
 
 ---
 
-<!-- fc id:T-29-088 sha:8ff3407f src:manual/29-symptomy.md:217 klas:F -->
-### T-29-088 · proza · рядок 217
+<!-- fc id:T-29-095 sha:8ff3407f src:manual/29-symptomy.md:238 klas:F -->
+### T-29-095 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1159,8 +1340,8 @@
 
 ---
 
-<!-- fc id:T-29-089 sha:712446cc src:manual/29-symptomy.md:217 klas:F -->
-### T-29-089 · proza · рядок 217
+<!-- fc id:T-29-096 sha:712446cc src:manual/29-symptomy.md:238 klas:F -->
+### T-29-096 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1172,8 +1353,8 @@
 
 ---
 
-<!-- fc id:T-29-090 sha:9f96c68b src:manual/29-symptomy.md:217 klas:F -->
-### T-29-090 · proza · рядок 217
+<!-- fc id:T-29-097 sha:9f96c68b src:manual/29-symptomy.md:238 klas:F -->
+### T-29-097 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1185,8 +1366,8 @@
 
 ---
 
-<!-- fc id:T-29-091 sha:cb58afb6 src:manual/29-symptomy.md:221 klas:F -->
-### T-29-091 · proza · рядок 221
+<!-- fc id:T-29-098 sha:cb58afb6 src:manual/29-symptomy.md:242 klas:F -->
+### T-29-098 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1198,8 +1379,8 @@
 
 ---
 
-<!-- fc id:T-29-092 sha:874691f4 src:manual/29-symptomy.md:221 klas:F -->
-### T-29-092 · proza · рядок 221
+<!-- fc id:T-29-099 sha:874691f4 src:manual/29-symptomy.md:242 klas:F -->
+### T-29-099 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1211,8 +1392,8 @@
 
 ---
 
-<!-- fc id:T-29-093 sha:2815af55 src:manual/29-symptomy.md:224 klas:F -->
-### T-29-093 · proza · рядок 224
+<!-- fc id:T-29-100 sha:2815af55 src:manual/29-symptomy.md:245 klas:F -->
+### T-29-100 · proza · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -1224,8 +1405,8 @@
 
 ---
 
-<!-- fc id:T-29-094 sha:0804c764 src:manual/29-symptomy.md:224 klas:F -->
-### T-29-094 · proza · рядок 224
+<!-- fc id:T-29-101 sha:0804c764 src:manual/29-symptomy.md:245 klas:F -->
+### T-29-101 · proza · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -1237,8 +1418,8 @@
 
 ---
 
-<!-- fc id:T-29-095 sha:164090d7 src:manual/29-symptomy.md:229 klas:F -->
-### T-29-095 · proza · рядок 229
+<!-- fc id:T-29-102 sha:164090d7 src:manual/29-symptomy.md:250 klas:F -->
+### T-29-102 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1250,8 +1431,8 @@
 
 ---
 
-<!-- fc id:T-29-096 sha:06b05129 src:manual/29-symptomy.md:231 klas:F -->
-### T-29-096 · proza · рядок 231
+<!-- fc id:T-29-103 sha:06b05129 src:manual/29-symptomy.md:252 klas:F -->
+### T-29-103 · proza · рядок 252
 
 **Книга каже, дослівно:**
 
@@ -1263,8 +1444,8 @@
 
 ---
 
-<!-- fc id:T-29-097 sha:78a30ad7 src:manual/29-symptomy.md:233 klas:F -->
-### T-29-097 · proza · рядок 233
+<!-- fc id:T-29-104 sha:78a30ad7 src:manual/29-symptomy.md:254 klas:F -->
+### T-29-104 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -1276,8 +1457,8 @@
 
 ---
 
-<!-- fc id:T-29-098 sha:18e8f307 src:manual/29-symptomy.md:235 klas:F -->
-### T-29-098 · proza · рядок 235
+<!-- fc id:T-29-105 sha:18e8f307 src:manual/29-symptomy.md:256 klas:F -->
+### T-29-105 · proza · рядок 256
 
 **Книга каже, дослівно:**
 
@@ -1289,8 +1470,8 @@
 
 ---
 
-<!-- fc id:T-29-099 sha:19973f35 src:manual/29-symptomy.md:237 klas:F -->
-### T-29-099 · proza · рядок 237
+<!-- fc id:T-29-106 sha:19973f35 src:manual/29-symptomy.md:258 klas:F -->
+### T-29-106 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
