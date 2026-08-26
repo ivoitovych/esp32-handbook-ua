@@ -523,7 +523,7 @@
 
 ---
 
-<!-- fc id:T-A-037 sha:4ad5886e src:dodatky/a-pinouty.md:26 klas:F -->
+<!-- fc id:T-A-037 sha:4ad5886e src:dodatky/a-pinouty.md:26 klas:A -->
 ### T-A-037 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -532,7 +532,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > | 12 (MTDI)   | If driven High, flash voltage (VDD_SDIO) is 1.8V not default 3.3V…
+  > | 15 (MTDO)   | If driven Low, silences boot messages printed by the ROM bootloader…
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Половина таблиці JTAG розділу 27 закривається дослівно, і закривається джерелом із зовсім іншої теми: документація esptool називає `GPIO12` саме як `MTDI`, а `GPIO15` — як `MTDO`.
+Це водночас підтверджує головне попередження розділу 27: обидва піни JTAG на classic — strapping-піни. `MTDI` високий при старті означає флеш на 1.8 В, а `MTDO` низький глушить boot-лог. Тобто під'єднаний адаптер може і не дати платі стартувати, і забрати лог, яким це діагностують.
+- **Прохід:** pass-20-jtag-obvyazka
 
 ---
 
