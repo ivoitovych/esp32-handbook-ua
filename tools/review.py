@@ -35,6 +35,7 @@ KLASY = {"zhyvlennya", "uvaha", "hrabli", "zakupivlya", "nezvorotne"}
 # Пари «неправильно → правильно», що вже траплялися в тексті.
 ODRUKY = [
     (r"психічн\w*\s+пам", "псевдостатична пам'ять (PSRAM)"),
+    (r"\bшпаруват\w*", "коефіцієнт заповнення (це обернена величина; додаток G)"),
     (r"\bна протязі\b", "протягом"),
     (r"\bв залежності\b", "залежно"),
     (r"\bпо замовчуванню\b", "за замовчуванням"),
@@ -50,6 +51,11 @@ ODRUKY = [
     (r"\bмісцезнаходження\b", "розташування"),
     (r"\bвиключення\b(?!\s+живлення)", "виняток"),
 ]
+
+# Файли, у яких слово вживається свідомо — бо саме там воно й пояснюється.
+VYNYATKY = {
+    r"\bшпаруват\w*": {"dodatky/g-glosariy.md"},
+}
 
 
 def fajly() -> list[Path]:
@@ -186,6 +192,8 @@ def perevirka_movy(fs: list[Path]) -> list[str]:
         t = bez_kodu(f.read_text(encoding="utf-8"))
         rel = str(f.relative_to(ROOT))
         for pat, zamina in ODRUKY:
+            if rel in VYNYATKY.get(pat, ()):
+                continue
             for m in re.finditer(pat, t, re.I):
                 kontekst = t[max(0, m.start() - 30):m.end() + 30].replace("\n", " ")
                 znaxidky.append(f"{rel}: «{m.group(0)}» → {zamina}   …{kontekst}…")

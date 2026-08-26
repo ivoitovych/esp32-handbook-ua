@@ -22,6 +22,12 @@
 [`docs/zmist.md`](docs/zmist.md). Це джерело істини для складу книги;
 відхилення від нього фіксуються в [`docs/DESIGN.md`](docs/DESIGN.md).
 
+Що звірено з першоджерелом, звідки й коли — у
+[`docs/fakty.md`](docs/fakty.md). Аудит покриття тем перед freeze
+ревізії — [`docs/coverage-checklist.md`](docs/coverage-checklist.md)
+(Р14). Звіти сесій рецензування — каталог
+[`reviews/`](reviews/README.md).
+
 ## Збирання
 
 ```sh
