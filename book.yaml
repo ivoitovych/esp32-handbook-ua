@@ -10,6 +10,7 @@ meta:
   author-full: "Ярослав Войтович"
   edition: "Видання перше"
   revision: "2026-08-26"
+  year: "2026"
   contact: "github.com/ivoitovych/esp32-handbook-ua"
 
 targets:
