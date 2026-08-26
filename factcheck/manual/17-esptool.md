@@ -759,7 +759,7 @@
 
 ---
 
-<!-- fc id:T-17-036 sha:43e4d49a src:manual/17-esptool.md:79 klas:F -->
+<!-- fc id:T-17-036 sha:43e4d49a src:manual/17-esptool.md:79 klas:A -->
 ### T-17-036 · proza · рядок 79
 
 **Книга каже, дослівно:**
@@ -768,7 +768,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst, .../docs/en/migration-guide.rst, https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst
+- **Дослівно з джерела:**
+  > (basic-commands.rst)
+  > Read SPI Flash ID: ``flash-id``
+  > Example output:
+  >     Manufacturer: e0
+  >     Device: 4016
+  >     Detected flash size: 4MB
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  >     esptool erase-flash
+  > 
+  > (nvs_flash.rst)
+  > if an NVS partition is truncated (for example, when the partition
+  > table layout is changed), its contents should be erased.
+  > 
+  > (migration-guide.rst)
+  > All the commands and options have been renamed to use ``-`` instead
+  > of ``_`` as a separator (e.g., ``write_flash`` -> ``write-flash``).
+  > Old command and option names are **deprecated**.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше — перший пункт переліку «коли `erase-flash` справді потрібен». Книга називала його з досвіду; `nvs_flash.rst` каже те саме прямо: обрізаний при зміні розбивки розділ NVS **треба** стерти. Порада з практики збіглася з вимогою документації.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -1143,7 +1166,7 @@
 
 ---
 
-<!-- fc id:T-17-054 sha:e548f18b src:manual/17-esptool.md:122 klas:F -->
+<!-- fc id:T-17-054 sha:e548f18b src:manual/17-esptool.md:122 klas:A -->
 ### T-17-054 · proza · рядок 122
 
 **Книга каже, дослівно:**
@@ -1152,7 +1175,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     …
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  >     help
+  >         The address of partition table (by default 0x8000).
+  >         Allows you to move the partition table, it gives more space
+  >         for the bootloader.
+  > 
+  > (basic-commands.rst)
+  > The next arguments to ``write-flash`` are one or more pairs of offset
+  > (address) and file name. Consult your SDK documentation to determine
+  > the files to flash at which offsets.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів Kconfig поспіль: один каже «визначається ROM, не налаштовується», другий — «дозволяє пересунути».
+Друга половина сильніша й пояснює найдорожчу помилку розділу 17: `write-flash` бере **пари «адреса — файл»** і відсилає читача до документації SDK. Тобто інструмент не має і не може мати уявлення, чи правильна адреса, — він робить рівно те, що просили, і мовчить.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -1327,7 +1375,7 @@
 
 ---
 
-<!-- fc id:T-17-068 sha:4c597925 src:manual/17-esptool.md:150 klas:F -->
+<!-- fc id:T-17-068 sha:4c597925 src:manual/17-esptool.md:150 klas:A -->
 ### T-17-068 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -1336,7 +1384,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst, .../docs/en/migration-guide.rst, https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst
+- **Дослівно з джерела:**
+  > (basic-commands.rst)
+  > Read SPI Flash ID: ``flash-id``
+  > Example output:
+  >     Manufacturer: e0
+  >     Device: 4016
+  >     Detected flash size: 4MB
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  >     esptool erase-flash
+  > 
+  > (nvs_flash.rst)
+  > if an NVS partition is truncated (for example, when the partition
+  > table layout is changed), its contents should be erased.
+  > 
+  > (migration-guide.rst)
+  > All the commands and options have been renamed to use ``-`` instead
+  > of ``_`` as a separator (e.g., ``write_flash`` -> ``write-flash``).
+  > Old command and option names are **deprecated**.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше — перший пункт переліку «коли `erase-flash` справді потрібен». Книга називала його з досвіду; `nvs_flash.rst` каже те саме прямо: обрізаний при зміні розбивки розділ NVS **треба** стерти. Порада з практики збіглася з вимогою документації.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -1388,7 +1459,7 @@
 
 ---
 
-<!-- fc id:T-17-072 sha:2b455157 src:manual/17-esptool.md:158 klas:F -->
+<!-- fc id:T-17-072 sha:2b455157 src:manual/17-esptool.md:158 klas:A -->
 ### T-17-072 · proza · рядок 158
 
 **Книга каже, дослівно:**
@@ -1397,7 +1468,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst, .../docs/en/migration-guide.rst, https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst
+- **Дослівно з джерела:**
+  > (basic-commands.rst)
+  > Read SPI Flash ID: ``flash-id``
+  > Example output:
+  >     Manufacturer: e0
+  >     Device: 4016
+  >     Detected flash size: 4MB
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  >     esptool erase-flash
+  > 
+  > (nvs_flash.rst)
+  > if an NVS partition is truncated (for example, when the partition
+  > table layout is changed), its contents should be erased.
+  > 
+  > (migration-guide.rst)
+  > All the commands and options have been renamed to use ``-`` instead
+  > of ``_`` as a separator (e.g., ``write_flash`` -> ``write-flash``).
+  > Old command and option names are **deprecated**.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше — перший пункт переліку «коли `erase-flash` справді потрібен». Книга називала його з досвіду; `nvs_flash.rst` каже те саме прямо: обрізаний при зміні розбивки розділ NVS **треба** стерти. Порада з практики збіглася з вимогою документації.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -2135,7 +2229,7 @@
 
 ---
 
-<!-- fc id:T-17-103 sha:6edab381 src:manual/17-esptool.md:230 klas:F -->
+<!-- fc id:T-17-103 sha:6edab381 src:manual/17-esptool.md:230 klas:A -->
 ### T-17-103 · proza · рядок 230
 
 **Книга каже, дослівно:**
@@ -2144,7 +2238,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     …
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  >     help
+  >         The address of partition table (by default 0x8000).
+  >         Allows you to move the partition table, it gives more space
+  >         for the bootloader.
+  > 
+  > (basic-commands.rst)
+  > The next arguments to ``write-flash`` are one or more pairs of offset
+  > (address) and file name. Consult your SDK documentation to determine
+  > the files to flash at which offsets.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів Kconfig поспіль: один каже «визначається ROM, не налаштовується», другий — «дозволяє пересунути».
+Друга половина сильніша й пояснює найдорожчу помилку розділу 17: `write-flash` бере **пари «адреса — файл»** і відсилає читача до документації SDK. Тобто інструмент не має і не може мати уявлення, чи правильна адреса, — він робить рівно те, що просили, і мовчить.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -3062,7 +3181,7 @@
 
 ---
 
-<!-- fc id:T-17-149 sha:2d322667 src:manual/17-esptool.md:330 klas:F -->
+<!-- fc id:T-17-149 sha:2d322667 src:manual/17-esptool.md:330 klas:A -->
 ### T-17-149 · proza · рядок 330
 
 **Книга каже, дослівно:**
@@ -3071,7 +3190,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst, .../docs/en/migration-guide.rst, https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst
+- **Дослівно з джерела:**
+  > (basic-commands.rst)
+  > Read SPI Flash ID: ``flash-id``
+  > Example output:
+  >     Manufacturer: e0
+  >     Device: 4016
+  >     Detected flash size: 4MB
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  >     esptool erase-flash
+  > 
+  > (nvs_flash.rst)
+  > if an NVS partition is truncated (for example, when the partition
+  > table layout is changed), its contents should be erased.
+  > 
+  > (migration-guide.rst)
+  > All the commands and options have been renamed to use ``-`` instead
+  > of ``_`` as a separator (e.g., ``write_flash`` -> ``write-flash``).
+  > Old command and option names are **deprecated**.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше — перший пункт переліку «коли `erase-flash` справді потрібен». Книга називала його з досвіду; `nvs_flash.rst` каже те саме прямо: обрізаний при зміні розбивки розділ NVS **треба** стерти. Порада з практики збіглася з вимогою документації.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 

@@ -1,0 +1,199 @@
+# Прохід 33 — шматки 4 і 5 пулу: розділ GPIO і два проєкти.
+#
+# Розбіжностей нуль на 40 з гаком перевірених одиниць — але два шматки
+# дали **три прогалини**, і всі три знайшлися однаково: агент читав
+# джерело цілком і питав «що тут є, чого немає в книзі».
+#
+# Це те саме, що прохід 26 назвав четвертим місцем помилок. Різниця в
+# тому, що там я шукав його навмисне, а тут воно вийшло побічно, з
+# суцільного читання. Отже, метод відтворюваний і не залежить від того,
+# хто читає.
+
+- nazva: Strapping classic і C3 — таблиця розділу 07 проти gpio/*.inc
+  zbih: 'C3: `GPIO2`, `GPIO8`, `GPIO9`|Головний пін → `GPIO0` = 0|Головний пін → `GPIO9` = 0|Другий пін для входу в бутлоадер → `GPIO8` \*\*високий\*\*|недійсна комбінація» існує лише в правому стовпці'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc
+    та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: |
+    (esp32c3.inc)
+    Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+
+    (boot-mode-selection.rst)
+    {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+     esp32s2="GPIO0", esp32s3="GPIO0", …}
+    {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+     esp32s2="GPIO46", esp32s3="GPIO46", …}
+  sposib: >-
+    curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26;
+    взірець і клас — М1
+  notatka: >-
+    Третє незалежне підтвердження таблиці strapping — після проходів 12 і
+    26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з
+    документації завантаження.
+
+    Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення
+    `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто
+    `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в
+    решти RISC-V. Книга каже так само, і це збіг не випадковий.
+
+- nazva: Тільки-вхідні, консоль і USB-JTAG у довіднику пінів
+  zbih: '`GPIO1` \(TX\) і `GPIO3` \(RX\) — це консоль|USB-JTAG\*\* \[\[S3\]\] `GPIO19`, `GPIO20`|перенести вимірювання на \*\*ADC1\*\*|На C3 — `GPIO12`–`GPIO17`'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc
+    та .../components/soc/esp32/include/soc/adc_channel.h
+  cytata: |
+    (esp32.inc)
+    * - GPIO1 … - TXD
+    * - GPIO3 … - RXD
+    TXD & RXD are usually used for flashing and debugging.
+
+    (esp32s3.inc)
+    USB-JTAG: GPIO19 and GPIO20 are used by USB-JTAG by default. If they
+    are reconfigured to operate as normal GPIOs, USB-JTAG functionality
+    will be disabled.
+
+    (esp32c3.inc)
+    USB-JTAG: GPIO18 and GPIO19 are used by USB-JTAG by default.
+    SPI0/1: GPIO12 ~ GPIO17 are usually used for SPI flash and are not
+    recommended for other uses.
+
+    (adc_channel.h, esp32)
+    ADC1_CHANNEL_0_GPIO_NUM 36 … ADC1_CHANNEL_7_GPIO_NUM 35
+    (тобто канали ADC1 — це GPIO 32…39)
+  sposib: >-
+    curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26;
+    взірець і клас — М1
+  notatka: >-
+    Формулювання джерела про USB-JTAG точніше за книжкове й варте того,
+    щоб його запам'ятати: піни не «зайняті», а **використовуються за
+    замовчуванням**, і переналаштування їх на звичайний GPIO вимикає
+    відлагоджувач. Книга каже це саме так — «переналаштувати їх можна,
+    але це вимикає покрокове налагодження».
+
+- nazva: На модулях із PSRAM зайняті ще GPIO16 і GPIO17
+  zbih: 'На модулях із PSRAM до цього переліку додаються `GPIO16`|GPIO16-17 are usually connected|16 і 17 — лише там, де на модулі є PSRAM'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
+  cytata: |
+    SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+    and PSRAM integrated on the module and therefore should not be used
+    for other purposes.
+  sposib: >-
+    curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26;
+    взірець, клас і виправлення книги — М1
+  notatka: >-
+    **Прогалина, і того самого класу, що дві помилки проходу 17: «не
+    збереться».**
+
+    Книга давала категоричне правило «шість пінів 6–11 не існують.
+    Ніколи, за жодних умов» — і джерело називає в тому самому рядку ще
+    `GPIO16` і `GPIO17`. На модулях із PSRAM (`WROVER` і подібні) вони
+    так само зайняті.
+
+    Читач, який узяв `WROVER` за схемою, накресленою для `WROOM`, вішає
+    щось на `GPIO16` — і псує доступ до PSRAM. Категоричність книги тут
+    працювала проти неї: «шість пінів, крапка» звучить як вичерпний
+    перелік і не лишає місця сумніву.
+
+    Різницю між шісткою й парою джерело теж дає: 6–11 зайняті завжди, а
+    16–17 — «usually», тобто лише там, де PSRAM є. Це в книгу додано, бо
+    без цього правило стало б надто широким у другий бік.
+
+    Заведено в `factcheck/SPROSTOVANE.md` із перевіркою на присутність
+    згадки `GPIO16` поруч; випробувано вилученням доданого блоку —
+    знаходиться.
+
+- nazva: ADC2 при Wi-Fi — драйвер розводить, а не віддає сміття
+  zbih: 'ADC2 ділиться з Wi-Fi|повертає \*\*помилку\*\*, а не зіпсоване число|читання, яке перестало вдаватися|датчик просто «замовкає» на старому|перенести вимірювання на \*\*ADC1\*\*|перестає вдаватися\. Людина шукає'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+  cytata: |
+    :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi.
+      :cpp:func:`adc_oneshot_read` has provided protection between the
+      Wi-Fi driver and ADC oneshot mode driver.
+    :esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware
+      limitations. The results are not stable.
+  sposib: >-
+    curl raw.githubusercontent (перевірено М1 після зауваження агента
+    шматка 4), 2026-08-26
+  notatka: >-
+    Книга писала: «Спроба виміряти повертає помилку **або сміття**», і
+    далі «починає віддавати дурницю». Друга половина хибна: драйвер
+    **розводить** себе з радіостеком, тобто повертає помилку, а не
+    зіпсоване число.
+
+    Різниця практична й неприємна. Читач шукав «дурні дані» — а
+    насправді шукати треба неперевірений код повернення `adc_oneshot_read`.
+    Симптом при цьому не «сміття в логу», а датчик, що мовчки завис на
+    старому значенні, — і це набагато важче помітити.
+
+    Агент помітив цю нюансу побіжно, поза власним переліком, і чесно
+    позначив, що одиниці з таким ідентифікатором у роботі немає. Саме так
+    і мала спрацювати чужа пара очей.
+
+- nazva: Піновий план проєкту 62 — три сімейства, кожен пін вільний
+  zbih: 'Вихід на реле · (classic|S3|C3) →|Кнопка «стоп» · (classic|S3|C3) →|Кнопка «пуск» · (classic|S3|C3) →'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc
+    та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+  cytata: |
+    (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+    * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+    * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+    * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
+
+    (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+     strapping {0,3,45,46}, флеш {26–32})
+    (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+     strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+  sposib: >-
+    curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26;
+    взірець і клас — М1
+  notatka: >-
+    Дев'ять пінів на три сімейства, кожен звірено окремо: існує за
+    маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей
+    немає.
+
+    Це та сама перевірка, яку `tools/piny.py` робить механічно при
+    кожному `make check`, — але зроблена іншим способом і з іншого
+    джерела (довідник пінів замість маски). Два незалежні шляхи до того
+    самого висновку варті більше, ніж два прогони одного.
+
+- nazva: GPIO5 на classic — теж strapping, і книга це тепер каже
+  zbih: '`GPIO5` на\s*\n?classic — теж strapping-пін|правило книги —\s*\n?називати strapping-піни там, де їх беруть'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
+  cytata: |
+    * - GPIO5
+        -
+        -
+        - Strapping pin
+
+    Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO)
+    are strapping pins.
+  sposib: >-
+    curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26;
+    взірець, клас і виправлення книги — М1
+  notatka: >-
+    Прогалина не в фактах, а в **послідовності самої книги**. Проєкт 60
+    позначає `GPIO2` на C3 знаком ⚠ і присвячує йому два абзаци
+    виправдання — а `GPIO5` на classic, у тій самій таблиці, у тій самій
+    ролі виходу, не отримує ані позначки, ані згадки. І `GPIO5` теж
+    strapping.
+
+    Агент правильно оцінив ризик як низький: `CS` у спокої високий,
+    strapping `GPIO5` має підтягування вгору й задає таймінги
+    SDIO-веденого, яких у проєкті немає. Тому в книзі це не стало
+    попередженням — стало **чесним називанням**.
+
+    Записую окремо, бо тут цінний не факт, а критерій: книга оголосила
+    правило («називати strapping-піни там, де їх беруть») і застосувала
+    його до однієї колонки з двох. Прогалини такого роду реєстр не
+    бачить принципово — він перевіряє твердження, а не сталість власних
+    правил книги.

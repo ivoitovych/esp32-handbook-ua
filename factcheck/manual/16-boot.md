@@ -797,7 +797,7 @@
 
 ---
 
-<!-- fc id:T-16-039 sha:7780ccef src:manual/16-boot.md:89 klas:F -->
+<!-- fc id:T-16-039 sha:7780ccef src:manual/16-boot.md:89 klas:A -->
 ### T-16-039 · proza · рядок 89
 
 **Книга каже, дослівно:**
@@ -806,7 +806,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     …
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  >     help
+  >         The address of partition table (by default 0x8000).
+  >         Allows you to move the partition table, it gives more space
+  >         for the bootloader.
+  > 
+  > (basic-commands.rst)
+  > The next arguments to ``write-flash`` are one or more pairs of offset
+  > (address) and file name. Consult your SDK documentation to determine
+  > the files to flash at which offsets.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів Kconfig поспіль: один каже «визначається ROM, не налаштовується», другий — «дозволяє пересунути».
+Друга половина сильніша й пояснює найдорожчу помилку розділу 17: `write-flash` бере **пари «адреса — файл»** і відсилає читача до документації SDK. Тобто інструмент не має і не може мати уявлення, чи правильна адреса, — він робить рівно те, що просили, і мовчить.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -856,7 +881,7 @@
 
 ---
 
-<!-- fc id:T-16-042 sha:a123154f src:manual/16-boot.md:95 klas:F -->
+<!-- fc id:T-16-042 sha:a123154f src:manual/16-boot.md:95 klas:A -->
 ### T-16-042 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -865,7 +890,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     …
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  >     help
+  >         The address of partition table (by default 0x8000).
+  >         Allows you to move the partition table, it gives more space
+  >         for the bootloader.
+  > 
+  > (basic-commands.rst)
+  > The next arguments to ``write-flash`` are one or more pairs of offset
+  > (address) and file name. Consult your SDK documentation to determine
+  > the files to flash at which offsets.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів Kconfig поспіль: один каже «визначається ROM, не налаштовується», другий — «дозволяє пересунути».
+Друга половина сильніша й пояснює найдорожчу помилку розділу 17: `write-flash` бере **пари «адреса — файл»** і відсилає читача до документації SDK. Тобто інструмент не має і не може мати уявлення, чи правильна адреса, — він робить рівно те, що просили, і мовчить.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -943,7 +993,7 @@
 
 ---
 
-<!-- fc id:T-16-047 sha:ed9083b2 src:manual/16-boot.md:107 klas:F -->
+<!-- fc id:T-16-047 sha:ed9083b2 src:manual/16-boot.md:107 klas:A -->
 ### T-16-047 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -952,7 +1002,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     …
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  >     help
+  >         The address of partition table (by default 0x8000).
+  >         Allows you to move the partition table, it gives more space
+  >         for the bootloader.
+  > 
+  > (basic-commands.rst)
+  > The next arguments to ``write-flash`` are one or more pairs of offset
+  > (address) and file name. Consult your SDK documentation to determine
+  > the files to flash at which offsets.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів Kconfig поспіль: один каже «визначається ROM, не налаштовується», другий — «дозволяє пересунути».
+Друга половина сильніша й пояснює найдорожчу помилку розділу 17: `write-flash` бере **пари «адреса — файл»** і відсилає читача до документації SDK. Тобто інструмент не має і не може мати уявлення, чи правильна адреса, — він робить рівно те, що просили, і мовчить.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -1683,7 +1758,7 @@
 
 ---
 
-<!-- fc id:T-16-082 sha:64b7ef66 src:manual/16-boot.md:203 klas:F -->
+<!-- fc id:T-16-082 sha:64b7ef66 src:manual/16-boot.md:203 klas:A -->
 ### T-16-082 · proza · рядок 203
 
 **Книга каже, дослівно:**
@@ -1692,7 +1767,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > esptool is not able to reset your hardware automatically in the
+  > following cases:
+  > - Your hardware does not have the ``DTR`` and ``RTS`` lines connected
+  >   to ``{IDF_TARGET_STRAP_BOOT_GPIO}`` and ``EN`` (``CHIP_PU``)
+  > - The ``DTR`` and ``RTS`` lines are configured differently
+  > - There are no such serial control lines at all
+  > 
+  > (troubleshooting.rst)
+  > If you have connected other devices to GPIO pins, try removing them
+  > and see if esptool starts working.
+  > Check the chip is receiving 3.3V from a stable power source.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Чотири з п'яти причин книги підтверджено дослівно. **П'ята — ні**, і це варте запису: «драйвер мосту не керує `DTR`/`RTS` (трапляється на CH9102 у Windows)».
+Агент шукав `CH9102` у `troubleshooting.rst`, `boot-mode-selection.rst` і `reset.py` — немає ніде. Твердження не спростоване, воно **непідтверджене**: поведінка драйвера під Windows у документації esptool не описана й описана бути не може.
+Лишаю в книзі як є, але позначаю тут: якщо колись знадобиться клас `A` на цей рядок, джерелом буде не esptool, а сам драйвер WCH або відтворення на живій машині. Це не наряд для М2 — це чесна межа того, що взагалі можна процитувати.
+Побічно варте уваги: `troubleshooting.rst` радить те саме, що книга, у двох інших рядках — зняти сторонні пристрої з GPIO і перевірити стабільність 3.3 В. Тобто перелік книги не лише правильний, а й впорядкований так само, як у джерелі.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 

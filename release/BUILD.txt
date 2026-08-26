@@ -1,2 +1,2 @@
-7ea4de7bf852806c
+9dedd2a996c347ea
 pandoc 3.1.3; typst 0.15.0

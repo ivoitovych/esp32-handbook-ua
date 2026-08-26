@@ -131,6 +131,31 @@
   prokhid: 24
   vynyatky: [factcheck/, reviews/]
 
+- shcho: ADC2 при Wi-Fi нібито віддає сміття
+  zbih: 'ADC2 не працює, коли увімкнено Wi-Fi|повертає помилку або сміття|починає віддавати дурницю'
+  chomu: >-
+    `adc_oneshot.rst`: «ADC2 is also used by Wi-Fi. `adc_oneshot_read()`
+    has provided protection between the Wi-Fi driver and ADC oneshot mode
+    driver». Драйвер розводить себе з радіо й повертає помилку, а не
+    зіпсоване число. Різниця практична: шукати треба неперевірений код
+    повернення, а не «дурні» дані.
+  zamist: >-
+    ADC2 ділиться з Wi-Fi; при зайнятому ADC2 читання повертає помилку,
+    і датчик «замовкає» на старому значенні
+  prokhid: 33
+  vynyatky: [factcheck/, reviews/, zvyazok/]
+
+- shcho: Піни флешу classic вичерпуються шісткою 6-11
+  zbih: 'шість пінів 6–11 не існують(?![\s\S]{0,500}GPIO16)'
+  chomu: >-
+    `gpio/esp32.inc` називає в одному рядку з 6-11 ще `GPIO16` і
+    `GPIO17`: «usually connected to the SPI flash and PSRAM integrated on
+    the module». На модулях із PSRAM (WROVER) вони теж зайняті.
+  zamist: >-
+    6-11 завжди; 16 і 17 додатково на модулях із PSRAM
+  prokhid: 33
+  vynyatky: [factcheck/, reviews/, zvyazok/]
+
 - shcho: 40 мА як абсолютна межа на пін
   zbih: '40 мА — абсолютна межа|40 мА[^.\n]{0,40}абсолютн[уао]|абсолютн[ауо][^.\n]{0,20}меж[уаі][^.\n]{0,30}40 мА|20 мА за замовчуванням'
   chomu: >-

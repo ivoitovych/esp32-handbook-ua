@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/07-gpio.md`
 
-Одиниць твердження: **128**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **135**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -838,7 +838,7 @@
 
 ---
 
-<!-- fc id:T-07-041 sha:13e25920 src:manual/07-gpio.md:76 klas:F -->
+<!-- fc id:T-07-041 sha:13e25920 src:manual/07-gpio.md:76 klas:A -->
 ### T-07-041 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -847,7 +847,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -963,7 +977,7 @@
 
 ---
 
-<!-- fc id:T-07-046 sha:a23fd859 src:manual/07-gpio.md:85 klas:F -->
+<!-- fc id:T-07-046 sha:a23fd859 src:manual/07-gpio.md:85 klas:A -->
 ### T-07-046 · komirka · рядок 85
 
 **Книга каже, дослівно:**
@@ -972,7 +986,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -1010,7 +1038,7 @@
 
 ---
 
-<!-- fc id:T-07-048 sha:4e3150be src:manual/07-gpio.md:86 klas:F -->
+<!-- fc id:T-07-048 sha:4e3150be src:manual/07-gpio.md:86 klas:A -->
 ### T-07-048 · komirka · рядок 86
 
 **Книга каже, дослівно:**
@@ -1019,7 +1047,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -1048,7 +1090,7 @@
 
 ---
 
-<!-- fc id:T-07-050 sha:197dffaa src:manual/07-gpio.md:87 klas:F -->
+<!-- fc id:T-07-050 sha:197dffaa src:manual/07-gpio.md:87 klas:A -->
 ### T-07-050 · komirka · рядок 87
 
 **Книга каже, дослівно:**
@@ -1057,11 +1099,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-051 sha:2e5908b5 src:manual/07-gpio.md:87 klas:F -->
+<!-- fc id:T-07-051 sha:2e5908b5 src:manual/07-gpio.md:87 klas:A -->
 ### T-07-051 · komirka · рядок 87
 
 **Книга каже, дослівно:**
@@ -1070,11 +1126,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-052 sha:cd5ba6b2 src:manual/07-gpio.md:90 klas:F -->
+<!-- fc id:T-07-052 sha:cd5ba6b2 src:manual/07-gpio.md:90 klas:A -->
 ### T-07-052 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -1083,7 +1153,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -1335,8 +1419,110 @@
 
 ---
 
-<!-- fc id:T-07-068 sha:c9a2eeb3 src:manual/07-gpio.md:131 klas:A -->
-### T-07-068 · proza · рядок 131
+<!-- fc id:T-07-068 sha:ec10e19e src:manual/07-gpio.md:132 klas:A -->
+### T-07-068 · proza · рядок 132
+
+**Книга каже, дослівно:**
+
+> [[classic]] **На модулях із PSRAM до цього переліку додаються `GPIO16` і `GPIO17`.** Документація ESP-IDF називає їх в одному рядку з 6–11: «GPIO 6-11 and GPIO16-17 are usually connected to the SPI flash and PSRAM integrated on the module».
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець, клас і виправлення книги — М1
+- **Нотатка:** **Прогалина, і того самого класу, що дві помилки проходу 17: «не збереться».**
+Книга давала категоричне правило «шість пінів 6–11 не існують. Ніколи, за жодних умов» — і джерело називає в тому самому рядку ще `GPIO16` і `GPIO17`. На модулях із PSRAM (`WROVER` і подібні) вони так само зайняті.
+Читач, який узяв `WROVER` за схемою, накресленою для `WROOM`, вішає щось на `GPIO16` — і псує доступ до PSRAM. Категоричність книги тут працювала проти неї: «шість пінів, крапка» звучить як вичерпний перелік і не лишає місця сумніву.
+Різницю між шісткою й парою джерело теж дає: 6–11 зайняті завжди, а 16–17 — «usually», тобто лише там, де PSRAM є. Це в книгу додано, бо без цього правило стало б надто широким у другий бік.
+Заведено в `factcheck/SPROSTOVANE.md` із перевіркою на присутність згадки `GPIO16` поруч; випробувано вилученням доданого блоку — знаходиться.
+- **Прохід:** pass-33-pul-shmatky-4-5
+
+---
+
+<!-- fc id:T-07-069 sha:f4840dbc src:manual/07-gpio.md:137 klas:E -->
+### T-07-069 · proza · рядок 137
+
+**Книга каже, дослівно:**
+
+> Різниця між шісткою й цією парою — у слові «usually».
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-07-070 sha:32397664 src:manual/07-gpio.md:137 klas:A -->
+### T-07-070 · proza · рядок 137
+
+**Книга каже, дослівно:**
+
+> Піни 6–11 зайняті завжди; 16 і 17 — лише там, де на модулі є PSRAM, тобто на `WROVER` і подібних.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець, клас і виправлення книги — М1
+- **Нотатка:** **Прогалина, і того самого класу, що дві помилки проходу 17: «не збереться».**
+Книга давала категоричне правило «шість пінів 6–11 не існують. Ніколи, за жодних умов» — і джерело називає в тому самому рядку ще `GPIO16` і `GPIO17`. На модулях із PSRAM (`WROVER` і подібні) вони так само зайняті.
+Читач, який узяв `WROVER` за схемою, накресленою для `WROOM`, вішає щось на `GPIO16` — і псує доступ до PSRAM. Категоричність книги тут працювала проти неї: «шість пінів, крапка» звучить як вичерпний перелік і не лишає місця сумніву.
+Різницю між шісткою й парою джерело теж дає: 6–11 зайняті завжди, а 16–17 — «usually», тобто лише там, де PSRAM є. Це в книгу додано, бо без цього правило стало б надто широким у другий бік.
+Заведено в `factcheck/SPROSTOVANE.md` із перевіркою на присутність згадки `GPIO16` поруч; випробувано вилученням доданого блоку — знаходиться.
+- **Прохід:** pass-33-pul-shmatky-4-5
+
+---
+
+<!-- fc id:T-07-071 sha:e55b2180 src:manual/07-gpio.md:137 klas:F -->
+### T-07-071 · proza · рядок 137
+
+**Книга каже, дослівно:**
+
+> На голому `WROOM-32` вони вільні.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-07-072 sha:11f8e1b0 src:manual/07-gpio.md:141 klas:E -->
+### T-07-072 · proza · рядок 141
+
+**Книга каже, дослівно:**
+
+> Практично це означає, що правило «шість пінів» безпечне лише доти, доки ви знаєте, який модуль тримаєте.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-07-073 sha:cd5972bc src:manual/07-gpio.md:141 klas:F -->
+### T-07-073 · proza · рядок 141
+
+**Книга каже, дослівно:**
+
+> Взяли `WROVER` за схемою, накресленою для `WROOM`, — і `GPIO16` уже нічий.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-07-074 sha:c9a2eeb3 src:manual/07-gpio.md:146 klas:A -->
+### T-07-074 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -1371,8 +1557,8 @@
 
 ---
 
-<!-- fc id:T-07-069 sha:405c002f src:manual/07-gpio.md:134 klas:F -->
-### T-07-069 · proza · рядок 134
+<!-- fc id:T-07-075 sha:405c002f src:manual/07-gpio.md:149 klas:A -->
+### T-07-075 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -1380,12 +1566,35 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/esp32/include/soc/adc_channel.h
+- **Дослівно з джерела:**
+  > (esp32.inc)
+  > * - GPIO1 … - TXD
+  > * - GPIO3 … - RXD
+  > TXD & RXD are usually used for flashing and debugging.
+  > 
+  > (esp32s3.inc)
+  > USB-JTAG: GPIO19 and GPIO20 are used by USB-JTAG by default. If they
+  > are reconfigured to operate as normal GPIOs, USB-JTAG functionality
+  > will be disabled.
+  > 
+  > (esp32c3.inc)
+  > USB-JTAG: GPIO18 and GPIO19 are used by USB-JTAG by default.
+  > SPI0/1: GPIO12 ~ GPIO17 are usually used for SPI flash and are not
+  > recommended for other uses.
+  > 
+  > (adc_channel.h, esp32)
+  > ADC1_CHANNEL_0_GPIO_NUM 36 … ADC1_CHANNEL_7_GPIO_NUM 35
+  > (тобто канали ADC1 — це GPIO 32…39)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Формулювання джерела про USB-JTAG точніше за книжкове й варте того, щоб його запам'ятати: піни не «зайняті», а **використовуються за замовчуванням**, і переналаштування їх на звичайний GPIO вимикає відлагоджувач. Книга каже це саме так — «переналаштувати їх можна, але це вимикає покрокове налагодження».
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-070 sha:9a2e525e src:manual/07-gpio.md:137 klas:F -->
-### T-07-070 · proza · рядок 137
+<!-- fc id:T-07-076 sha:9a2e525e src:manual/07-gpio.md:152 klas:F -->
+### T-07-076 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1397,8 +1606,8 @@
 
 ---
 
-<!-- fc id:T-07-071 sha:5638f14b src:manual/07-gpio.md:137 klas:A -->
-### T-07-071 · proza · рядок 137
+<!-- fc id:T-07-077 sha:5638f14b src:manual/07-gpio.md:152 klas:A -->
+### T-07-077 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1433,8 +1642,8 @@
 
 ---
 
-<!-- fc id:T-07-072 sha:f1266858 src:manual/07-gpio.md:141 klas:F -->
-### T-07-072 · proza · рядок 141
+<!-- fc id:T-07-078 sha:f1266858 src:manual/07-gpio.md:156 klas:F -->
+### T-07-078 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1446,8 +1655,8 @@
 
 ---
 
-<!-- fc id:T-07-073 sha:6a801047 src:manual/07-gpio.md:147 klas:B -->
-### T-07-073 · proza · рядок 147
+<!-- fc id:T-07-079 sha:6a801047 src:manual/07-gpio.md:162 klas:B -->
+### T-07-079 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1474,8 +1683,8 @@
 
 ---
 
-<!-- fc id:T-07-074 sha:2b119dd6 src:manual/07-gpio.md:149 klas:E -->
-### T-07-074 · proza · рядок 149
+<!-- fc id:T-07-080 sha:2b119dd6 src:manual/07-gpio.md:164 klas:E -->
+### T-07-080 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1487,8 +1696,8 @@
 
 ---
 
-<!-- fc id:T-07-075 sha:2dbf225d src:manual/07-gpio.md:152 klas:E -->
-### T-07-075 · proza · рядок 152
+<!-- fc id:T-07-081 sha:2dbf225d src:manual/07-gpio.md:167 klas:E -->
+### T-07-081 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1500,8 +1709,8 @@
 
 ---
 
-<!-- fc id:T-07-076 sha:9b7ec34b src:manual/07-gpio.md:152 klas:B -->
-### T-07-076 · proza · рядок 152
+<!-- fc id:T-07-082 sha:9b7ec34b src:manual/07-gpio.md:167 klas:B -->
+### T-07-082 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1528,8 +1737,8 @@
 
 ---
 
-<!-- fc id:T-07-077 sha:1d981589 src:manual/07-gpio.md:152 klas:E -->
-### T-07-077 · proza · рядок 152
+<!-- fc id:T-07-083 sha:1d981589 src:manual/07-gpio.md:167 klas:E -->
+### T-07-083 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1541,8 +1750,8 @@
 
 ---
 
-<!-- fc id:T-07-078 sha:7997d730 src:manual/07-gpio.md:156 klas:E -->
-### T-07-078 · proza · рядок 156
+<!-- fc id:T-07-084 sha:7997d730 src:manual/07-gpio.md:171 klas:E -->
+### T-07-084 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -1554,8 +1763,8 @@
 
 ---
 
-<!-- fc id:T-07-079 sha:dc856329 src:manual/07-gpio.md:158 klas:F -->
-### T-07-079 · proza · рядок 158
+<!-- fc id:T-07-085 sha:dc856329 src:manual/07-gpio.md:173 klas:F -->
+### T-07-085 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1567,8 +1776,8 @@
 
 ---
 
-<!-- fc id:T-07-080 sha:4d958fd4 src:manual/07-gpio.md:163 klas:F -->
-### T-07-080 · proza · рядок 163
+<!-- fc id:T-07-086 sha:4d958fd4 src:manual/07-gpio.md:178 klas:F -->
+### T-07-086 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1580,45 +1789,12 @@
 
 ---
 
-<!-- fc id:T-07-081 sha:dc867a33 src:manual/07-gpio.md:167 klas:A -->
-### T-07-081 · proza · рядок 167
+<!-- fc id:T-07-087 sha:213a514e src:manual/07-gpio.md:182 klas:A -->
+### T-07-087 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
-> [[classic]] [[S2]] [[S3]] **ADC2 не працює, коли увімкнено Wi-Fi.** Радіостек використовує його для власних потреб і має пріоритет.
-
-**Доказ**
-
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
-- **Дослівно з джерела:**
-  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
-  > provided protection between the Wi-Fi driver and ADC oneshot mode driver.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише classic), тоді як документація прямо називає три цілі, включно з S3. Для S3 це важить окремо: його рекомендують як вибір за замовчуванням для нового проєкту, тобто найімовірніше саме на ньому читач і розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи 04, 07 (двічі), 29, 33 (двічі), 45 і картка К8.
-- **Прохід:** pass-02-povedinka
-
----
-
-<!-- fc id:T-07-082 sha:6f673a7c src:manual/07-gpio.md:167 klas:E -->
-### T-07-082 · proza · рядок 167
-
-**Книга каже, дослівно:**
-
-> Спроба виміряти повертає помилку або сміття.
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-07-083 sha:08b4151a src:manual/07-gpio.md:171 klas:A -->
-### T-07-083 · proza · рядок 171
-
-**Книга каже, дослівно:**
-
-> Симптом: датчик читається правильно, доки не викликано `esp_wifi_start`, після чого починає віддавати дурницю.
+> [[classic]] [[S2]] [[S3]] **ADC2 ділиться з Wi-Fi, і радіо має пріоритет.** Драйвер це передбачає: `adc_oneshot_read` розводить себе з драйвером Wi-Fi і при зайнятому ADC2 повертає **помилку**, а не зіпсоване число.
 
 **Доказ**
 
@@ -1642,8 +1818,87 @@
 
 ---
 
-<!-- fc id:T-07-084 sha:cf5a8129 src:manual/07-gpio.md:171 klas:E -->
-### T-07-084 · proza · рядок 171
+<!-- fc id:T-07-088 sha:0038f55f src:manual/07-gpio.md:186 klas:A -->
+### T-07-088 · proza · рядок 186
+
+**Книга каже, дослівно:**
+
+> Тобто зіпсованих даних чекати не варто — варто чекати читання, яке перестало вдаватися.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+- **Дослівно з джерела:**
+  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi.
+  >   :cpp:func:`adc_oneshot_read` has provided protection between the
+  >   Wi-Fi driver and ADC oneshot mode driver.
+  > :esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware
+  >   limitations. The results are not stable.
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 4), 2026-08-26
+- **Нотатка:** Книга писала: «Спроба виміряти повертає помилку **або сміття**», і далі «починає віддавати дурницю». Друга половина хибна: драйвер **розводить** себе з радіостеком, тобто повертає помилку, а не зіпсоване число.
+Різниця практична й неприємна. Читач шукав «дурні дані» — а насправді шукати треба неперевірений код повернення `adc_oneshot_read`. Симптом при цьому не «сміття в логу», а датчик, що мовчки завис на старому значенні, — і це набагато важче помітити.
+Агент помітив цю нюансу побіжно, поза власним переліком, і чесно позначив, що одиниці з таким ідентифікатором у роботі немає. Саме так і мала спрацювати чужа пара очей.
+- **Прохід:** pass-33-pul-shmatky-4-5
+
+---
+
+<!-- fc id:T-07-089 sha:97c124bb src:manual/07-gpio.md:186 klas:A -->
+### T-07-089 · proza · рядок 186
+
+**Книга каже, дослівно:**
+
+> Що гірше для того, хто не перевіряє код повернення: датчик просто «замовкає» на старому значенні.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+- **Дослівно з джерела:**
+  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi.
+  >   :cpp:func:`adc_oneshot_read` has provided protection between the
+  >   Wi-Fi driver and ADC oneshot mode driver.
+  > :esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware
+  >   limitations. The results are not stable.
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 4), 2026-08-26
+- **Нотатка:** Книга писала: «Спроба виміряти повертає помилку **або сміття**», і далі «починає віддавати дурницю». Друга половина хибна: драйвер **розводить** себе з радіостеком, тобто повертає помилку, а не зіпсоване число.
+Різниця практична й неприємна. Читач шукав «дурні дані» — а насправді шукати треба неперевірений код повернення `adc_oneshot_read`. Симптом при цьому не «сміття в логу», а датчик, що мовчки завис на старому значенні, — і це набагато важче помітити.
+Агент помітив цю нюансу побіжно, поза власним переліком, і чесно позначив, що одиниці з таким ідентифікатором у роботі немає. Саме так і мала спрацювати чужа пара очей.
+- **Прохід:** pass-33-pul-shmatky-4-5
+
+---
+
+<!-- fc id:T-07-090 sha:4fe5b2b1 src:manual/07-gpio.md:190 klas:A -->
+### T-07-090 · proza · рядок 190
+
+**Книга каже, дослівно:**
+
+> Симптом: датчик читається правильно, доки не викликано `esp_wifi_start`, після чого читання перестає вдаватися.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-07-091 sha:cf5a8129 src:manual/07-gpio.md:190 klas:E -->
+### T-07-091 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1655,8 +1910,8 @@
 
 ---
 
-<!-- fc id:T-07-085 sha:4abe4c19 src:manual/07-gpio.md:175 klas:F -->
-### T-07-085 · proza · рядок 175
+<!-- fc id:T-07-092 sha:4abe4c19 src:manual/07-gpio.md:194 klas:A -->
+### T-07-092 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1664,12 +1919,35 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/esp32/include/soc/adc_channel.h
+- **Дослівно з джерела:**
+  > (esp32.inc)
+  > * - GPIO1 … - TXD
+  > * - GPIO3 … - RXD
+  > TXD & RXD are usually used for flashing and debugging.
+  > 
+  > (esp32s3.inc)
+  > USB-JTAG: GPIO19 and GPIO20 are used by USB-JTAG by default. If they
+  > are reconfigured to operate as normal GPIOs, USB-JTAG functionality
+  > will be disabled.
+  > 
+  > (esp32c3.inc)
+  > USB-JTAG: GPIO18 and GPIO19 are used by USB-JTAG by default.
+  > SPI0/1: GPIO12 ~ GPIO17 are usually used for SPI flash and are not
+  > recommended for other uses.
+  > 
+  > (adc_channel.h, esp32)
+  > ADC1_CHANNEL_0_GPIO_NUM 36 … ADC1_CHANNEL_7_GPIO_NUM 35
+  > (тобто канали ADC1 — це GPIO 32…39)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Формулювання джерела про USB-JTAG точніше за книжкове й варте того, щоб його запам'ятати: піни не «зайняті», а **використовуються за замовчуванням**, і переналаштування їх на звичайний GPIO вимикає відлагоджувач. Книга каже це саме так — «переналаштувати їх можна, але це вимикає покрокове налагодження».
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-086 sha:e9ad2932 src:manual/07-gpio.md:179 klas:A -->
-### T-07-086 · proza · рядок 179
+<!-- fc id:T-07-093 sha:e9ad2932 src:manual/07-gpio.md:198 klas:A -->
+### T-07-093 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1700,8 +1978,8 @@
 
 ---
 
-<!-- fc id:T-07-087 sha:48af3317 src:manual/07-gpio.md:182 klas:F -->
-### T-07-087 · tablycya-shapka · рядок 182
+<!-- fc id:T-07-094 sha:48af3317 src:manual/07-gpio.md:201 klas:F -->
+### T-07-094 · tablycya-shapka · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1713,8 +1991,8 @@
 
 ---
 
-<!-- fc id:T-07-088 sha:2d6128fe src:manual/07-gpio.md:183 klas:A -->
-### T-07-088 · komirka · рядок 183
+<!-- fc id:T-07-095 sha:2d6128fe src:manual/07-gpio.md:202 klas:A -->
+### T-07-095 · komirka · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1752,8 +2030,8 @@
 
 ---
 
-<!-- fc id:T-07-089 sha:7d1d509e src:manual/07-gpio.md:183 klas:A -->
-### T-07-089 · komirka · рядок 183
+<!-- fc id:T-07-096 sha:7d1d509e src:manual/07-gpio.md:202 klas:A -->
+### T-07-096 · komirka · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1791,8 +2069,8 @@
 
 ---
 
-<!-- fc id:T-07-090 sha:7afccfc4 src:manual/07-gpio.md:184 klas:A -->
-### T-07-090 · komirka · рядок 184
+<!-- fc id:T-07-097 sha:7afccfc4 src:manual/07-gpio.md:203 klas:A -->
+### T-07-097 · komirka · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1830,8 +2108,8 @@
 
 ---
 
-<!-- fc id:T-07-091 sha:69208de8 src:manual/07-gpio.md:184 klas:A -->
-### T-07-091 · komirka · рядок 184
+<!-- fc id:T-07-098 sha:69208de8 src:manual/07-gpio.md:203 klas:A -->
+### T-07-098 · komirka · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1869,8 +2147,8 @@
 
 ---
 
-<!-- fc id:T-07-092 sha:8435c691 src:manual/07-gpio.md:187 klas:F -->
-### T-07-092 · proza · рядок 187
+<!-- fc id:T-07-099 sha:8435c691 src:manual/07-gpio.md:206 klas:F -->
+### T-07-099 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1882,8 +2160,8 @@
 
 ---
 
-<!-- fc id:T-07-093 sha:21828d34 src:manual/07-gpio.md:189 klas:A -->
-### T-07-093 · proza · рядок 189
+<!-- fc id:T-07-100 sha:21828d34 src:manual/07-gpio.md:208 klas:A -->
+### T-07-100 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1915,8 +2193,8 @@
 
 ---
 
-<!-- fc id:T-07-094 sha:4838050a src:manual/07-gpio.md:192 klas:F -->
-### T-07-094 · proza · рядок 192
+<!-- fc id:T-07-101 sha:4838050a src:manual/07-gpio.md:211 klas:F -->
+### T-07-101 · proza · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -1928,8 +2206,8 @@
 
 ---
 
-<!-- fc id:T-07-095 sha:e9e0e554 src:manual/07-gpio.md:195 klas:F -->
-### T-07-095 · proza · рядок 195
+<!-- fc id:T-07-102 sha:e9e0e554 src:manual/07-gpio.md:214 klas:F -->
+### T-07-102 · proza · рядок 214
 
 **Книга каже, дослівно:**
 
@@ -1941,8 +2219,8 @@
 
 ---
 
-<!-- fc id:T-07-096 sha:89f377b7 src:manual/07-gpio.md:200 klas:F -->
-### T-07-096 · proza · рядок 200
+<!-- fc id:T-07-103 sha:89f377b7 src:manual/07-gpio.md:219 klas:A -->
+### T-07-103 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1950,12 +2228,35 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/esp32/include/soc/adc_channel.h
+- **Дослівно з джерела:**
+  > (esp32.inc)
+  > * - GPIO1 … - TXD
+  > * - GPIO3 … - RXD
+  > TXD & RXD are usually used for flashing and debugging.
+  > 
+  > (esp32s3.inc)
+  > USB-JTAG: GPIO19 and GPIO20 are used by USB-JTAG by default. If they
+  > are reconfigured to operate as normal GPIOs, USB-JTAG functionality
+  > will be disabled.
+  > 
+  > (esp32c3.inc)
+  > USB-JTAG: GPIO18 and GPIO19 are used by USB-JTAG by default.
+  > SPI0/1: GPIO12 ~ GPIO17 are usually used for SPI flash and are not
+  > recommended for other uses.
+  > 
+  > (adc_channel.h, esp32)
+  > ADC1_CHANNEL_0_GPIO_NUM 36 … ADC1_CHANNEL_7_GPIO_NUM 35
+  > (тобто канали ADC1 — це GPIO 32…39)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Формулювання джерела про USB-JTAG точніше за книжкове й варте того, щоб його запам'ятати: піни не «зайняті», а **використовуються за замовчуванням**, і переналаштування їх на звичайний GPIO вимикає відлагоджувач. Книга каже це саме так — «переналаштувати їх можна, але це вимикає покрокове налагодження».
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-097 sha:08617839 src:manual/07-gpio.md:200 klas:E -->
-### T-07-097 · proza · рядок 200
+<!-- fc id:T-07-104 sha:08617839 src:manual/07-gpio.md:219 klas:E -->
+### T-07-104 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1967,8 +2268,8 @@
 
 ---
 
-<!-- fc id:T-07-098 sha:99a46388 src:manual/07-gpio.md:200 klas:E -->
-### T-07-098 · proza · рядок 200
+<!-- fc id:T-07-105 sha:99a46388 src:manual/07-gpio.md:219 klas:E -->
+### T-07-105 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1980,8 +2281,8 @@
 
 ---
 
-<!-- fc id:T-07-099 sha:7af574ff src:manual/07-gpio.md:205 klas:F -->
-### T-07-099 · proza · рядок 205
+<!-- fc id:T-07-106 sha:7af574ff src:manual/07-gpio.md:224 klas:F -->
+### T-07-106 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1993,8 +2294,8 @@
 
 ---
 
-<!-- fc id:T-07-100 sha:6d5fd871 src:manual/07-gpio.md:207 klas:A -->
-### T-07-100 · proza · рядок 207
+<!-- fc id:T-07-107 sha:6d5fd871 src:manual/07-gpio.md:226 klas:A -->
+### T-07-107 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -2019,8 +2320,8 @@
 
 ---
 
-<!-- fc id:T-07-101 sha:6f074d3a src:manual/07-gpio.md:207 klas:E -->
-### T-07-101 · proza · рядок 207
+<!-- fc id:T-07-108 sha:6f074d3a src:manual/07-gpio.md:226 klas:E -->
+### T-07-108 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -2032,8 +2333,8 @@
 
 ---
 
-<!-- fc id:T-07-102 sha:16fc615f src:manual/07-gpio.md:213 klas:E -->
-### T-07-102 · proza · рядок 213
+<!-- fc id:T-07-109 sha:16fc615f src:manual/07-gpio.md:232 klas:E -->
+### T-07-109 · proza · рядок 232
 
 **Книга каже, дослівно:**
 
@@ -2045,8 +2346,8 @@
 
 ---
 
-<!-- fc id:T-07-103 sha:1c767126 src:manual/07-gpio.md:216 klas:F -->
-### T-07-103 · proza · рядок 216
+<!-- fc id:T-07-110 sha:1c767126 src:manual/07-gpio.md:235 klas:F -->
+### T-07-110 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -2058,8 +2359,8 @@
 
 ---
 
-<!-- fc id:T-07-104 sha:dae5d714 src:manual/07-gpio.md:220 klas:F -->
-### T-07-104 · proza · рядок 220
+<!-- fc id:T-07-111 sha:dae5d714 src:manual/07-gpio.md:239 klas:F -->
+### T-07-111 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -2071,8 +2372,8 @@
 
 ---
 
-<!-- fc id:T-07-105 sha:2e6e5ae0 src:manual/07-gpio.md:223 klas:F -->
-### T-07-105 · proza · рядок 223
+<!-- fc id:T-07-112 sha:2e6e5ae0 src:manual/07-gpio.md:242 klas:F -->
+### T-07-112 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -2084,8 +2385,8 @@
 
 ---
 
-<!-- fc id:T-07-106 sha:d3fff0e3 src:manual/07-gpio.md:223 klas:E -->
-### T-07-106 · proza · рядок 223
+<!-- fc id:T-07-113 sha:d3fff0e3 src:manual/07-gpio.md:242 klas:E -->
+### T-07-113 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -2097,8 +2398,8 @@
 
 ---
 
-<!-- fc id:T-07-107 sha:bbf00d41 src:manual/07-gpio.md:228 klas:E -->
-### T-07-107 · proza · рядок 228
+<!-- fc id:T-07-114 sha:bbf00d41 src:manual/07-gpio.md:247 klas:E -->
+### T-07-114 · proza · рядок 247
 
 **Книга каже, дослівно:**
 
@@ -2110,8 +2411,8 @@
 
 ---
 
-<!-- fc id:T-07-108 sha:be7c4eb1 src:manual/07-gpio.md:230 klas:F -->
-### T-07-108 · proza · рядок 230
+<!-- fc id:T-07-115 sha:be7c4eb1 src:manual/07-gpio.md:249 klas:F -->
+### T-07-115 · proza · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -2123,8 +2424,8 @@
 
 ---
 
-<!-- fc id:T-07-109 sha:8f937bea src:manual/07-gpio.md:230 klas:E -->
-### T-07-109 · proza · рядок 230
+<!-- fc id:T-07-116 sha:8f937bea src:manual/07-gpio.md:249 klas:E -->
+### T-07-116 · proza · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -2136,8 +2437,8 @@
 
 ---
 
-<!-- fc id:T-07-110 sha:34181297 src:manual/07-gpio.md:234 klas:F -->
-### T-07-110 · proza · рядок 234
+<!-- fc id:T-07-117 sha:34181297 src:manual/07-gpio.md:253 klas:F -->
+### T-07-117 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -2149,8 +2450,8 @@
 
 ---
 
-<!-- fc id:T-07-111 sha:28de41c4 src:manual/07-gpio.md:237 klas:F -->
-### T-07-111 · proza · рядок 237
+<!-- fc id:T-07-118 sha:28de41c4 src:manual/07-gpio.md:256 klas:F -->
+### T-07-118 · proza · рядок 256
 
 **Книга каже, дослівно:**
 
@@ -2162,8 +2463,8 @@
 
 ---
 
-<!-- fc id:T-07-112 sha:61a59398 src:manual/07-gpio.md:240 klas:F -->
-### T-07-112 · proza · рядок 240
+<!-- fc id:T-07-119 sha:61a59398 src:manual/07-gpio.md:259 klas:F -->
+### T-07-119 · proza · рядок 259
 
 **Книга каже, дослівно:**
 
@@ -2175,8 +2476,8 @@
 
 ---
 
-<!-- fc id:T-07-113 sha:ae8000cc src:manual/07-gpio.md:242 klas:E -->
-### T-07-113 · proza · рядок 242
+<!-- fc id:T-07-120 sha:ae8000cc src:manual/07-gpio.md:261 klas:E -->
+### T-07-120 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -2188,8 +2489,8 @@
 
 ---
 
-<!-- fc id:T-07-114 sha:035a38f6 src:manual/07-gpio.md:248 klas:E -->
-### T-07-114 · proza · рядок 248
+<!-- fc id:T-07-121 sha:035a38f6 src:manual/07-gpio.md:267 klas:E -->
+### T-07-121 · proza · рядок 267
 
 **Книга каже, дослівно:**
 
@@ -2201,8 +2502,8 @@
 
 ---
 
-<!-- fc id:T-07-115 sha:e43399df src:manual/07-gpio.md:250 klas:F -->
-### T-07-115 · proza · рядок 250
+<!-- fc id:T-07-122 sha:e43399df src:manual/07-gpio.md:269 klas:F -->
+### T-07-122 · proza · рядок 269
 
 **Книга каже, дослівно:**
 
@@ -2214,8 +2515,8 @@
 
 ---
 
-<!-- fc id:T-07-116 sha:9e2b2c79 src:manual/07-gpio.md:254 klas:E -->
-### T-07-116 · proza · рядок 254
+<!-- fc id:T-07-123 sha:9e2b2c79 src:manual/07-gpio.md:273 klas:E -->
+### T-07-123 · proza · рядок 273
 
 **Книга каже, дослівно:**
 
@@ -2227,8 +2528,8 @@
 
 ---
 
-<!-- fc id:T-07-117 sha:a06a92ec src:manual/07-gpio.md:258 klas:E -->
-### T-07-117 · proza · рядок 258
+<!-- fc id:T-07-124 sha:a06a92ec src:manual/07-gpio.md:277 klas:E -->
+### T-07-124 · proza · рядок 277
 
 **Книга каже, дослівно:**
 
@@ -2240,8 +2541,8 @@
 
 ---
 
-<!-- fc id:T-07-118 sha:38f59818 src:manual/07-gpio.md:258 klas:F -->
-### T-07-118 · proza · рядок 258
+<!-- fc id:T-07-125 sha:38f59818 src:manual/07-gpio.md:277 klas:F -->
+### T-07-125 · proza · рядок 277
 
 **Книга каже, дослівно:**
 
@@ -2253,8 +2554,8 @@
 
 ---
 
-<!-- fc id:T-07-119 sha:b0fde932 src:manual/07-gpio.md:258 klas:E -->
-### T-07-119 · proza · рядок 258
+<!-- fc id:T-07-126 sha:b0fde932 src:manual/07-gpio.md:277 klas:E -->
+### T-07-126 · proza · рядок 277
 
 **Книга каже, дослівно:**
 
@@ -2266,8 +2567,8 @@
 
 ---
 
-<!-- fc id:T-07-120 sha:909499e7 src:manual/07-gpio.md:263 klas:E -->
-### T-07-120 · proza · рядок 263
+<!-- fc id:T-07-127 sha:909499e7 src:manual/07-gpio.md:282 klas:E -->
+### T-07-127 · proza · рядок 282
 
 **Книга каже, дослівно:**
 
@@ -2279,8 +2580,8 @@
 
 ---
 
-<!-- fc id:T-07-121 sha:4006ed63 src:manual/07-gpio.md:263 klas:E -->
-### T-07-121 · proza · рядок 263
+<!-- fc id:T-07-128 sha:4006ed63 src:manual/07-gpio.md:282 klas:E -->
+### T-07-128 · proza · рядок 282
 
 **Книга каже, дослівно:**
 
@@ -2292,8 +2593,8 @@
 
 ---
 
-<!-- fc id:T-07-122 sha:00d10011 src:manual/07-gpio.md:269 klas:B -->
-### T-07-122 · proza · рядок 269
+<!-- fc id:T-07-129 sha:00d10011 src:manual/07-gpio.md:288 klas:B -->
+### T-07-129 · proza · рядок 288
 
 **Книга каже, дослівно:**
 
@@ -2320,8 +2621,8 @@
 
 ---
 
-<!-- fc id:T-07-123 sha:8252205d src:manual/07-gpio.md:271 klas:A -->
-### T-07-123 · proza · рядок 271
+<!-- fc id:T-07-130 sha:8252205d src:manual/07-gpio.md:290 klas:A -->
+### T-07-130 · proza · рядок 290
 
 **Книга каже, дослівно:**
 
@@ -2341,8 +2642,8 @@
 
 ---
 
-<!-- fc id:T-07-124 sha:6af50605 src:manual/07-gpio.md:271 klas:E -->
-### T-07-124 · proza · рядок 271
+<!-- fc id:T-07-131 sha:6af50605 src:manual/07-gpio.md:290 klas:E -->
+### T-07-131 · proza · рядок 290
 
 **Книга каже, дослівно:**
 
@@ -2354,8 +2655,8 @@
 
 ---
 
-<!-- fc id:T-07-125 sha:eca754e3 src:manual/07-gpio.md:275 klas:B -->
-### T-07-125 · proza · рядок 275
+<!-- fc id:T-07-132 sha:eca754e3 src:manual/07-gpio.md:294 klas:B -->
+### T-07-132 · proza · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -2382,8 +2683,8 @@
 
 ---
 
-<!-- fc id:T-07-126 sha:2accc23f src:manual/07-gpio.md:277 klas:A -->
-### T-07-126 · proza · рядок 277
+<!-- fc id:T-07-133 sha:2accc23f src:manual/07-gpio.md:296 klas:A -->
+### T-07-133 · proza · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -2402,8 +2703,8 @@
 
 ---
 
-<!-- fc id:T-07-127 sha:101667fc src:manual/07-gpio.md:280 klas:E -->
-### T-07-127 · proza · рядок 280
+<!-- fc id:T-07-134 sha:101667fc src:manual/07-gpio.md:299 klas:E -->
+### T-07-134 · proza · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -2415,8 +2716,8 @@
 
 ---
 
-<!-- fc id:T-07-128 sha:3521c982 src:manual/07-gpio.md:283 klas:E -->
-### T-07-128 · proza · рядок 283
+<!-- fc id:T-07-135 sha:3521c982 src:manual/07-gpio.md:302 klas:E -->
+### T-07-135 · proza · рядок 302
 
 **Книга каже, дослівно:**
 

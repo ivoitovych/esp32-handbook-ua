@@ -303,7 +303,7 @@
 
 ---
 
-<!-- fc id:T-K04-016 sha:689b217f src:kartky/k04-boot.md:40 klas:B -->
+<!-- fc id:T-K04-016 sha:689b217f src:kartky/k04-boot.md:40 klas:A -->
 ### T-K04-016 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -312,25 +312,26 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../docs/en/troubleshooting.rst
 - **Дослівно з джерела:**
-  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
-  > held low on reset. Otherwise it will run the program in flash.
+  > esptool is not able to reset your hardware automatically in the
+  > following cases:
+  > - Your hardware does not have the ``DTR`` and ``RTS`` lines connected
+  >   to ``{IDF_TARGET_STRAP_BOOT_GPIO}`` and ``EN`` (``CHIP_PU``)
+  > - The ``DTR`` and ``RTS`` lines are configured differently
+  > - There are no such serial control lines at all
   > 
-  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-  > unconnected then it will pull high.
-  > 
-  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
-  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
-  > 
-  > esptool can automatically reset the board into bootloader mode … using
-  > the DTR and RTS lines.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
-- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
-Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
-Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
-- **Прохід:** pass-30-piny-suciljno
+  > (troubleshooting.rst)
+  > If you have connected other devices to GPIO pins, try removing them
+  > and see if esptool starts working.
+  > Check the chip is receiving 3.3V from a stable power source.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Чотири з п'яти причин книги підтверджено дослівно. **П'ята — ні**, і це варте запису: «драйвер мосту не керує `DTR`/`RTS` (трапляється на CH9102 у Windows)».
+Агент шукав `CH9102` у `troubleshooting.rst`, `boot-mode-selection.rst` і `reset.py` — немає ніде. Твердження не спростоване, воно **непідтверджене**: поведінка драйвера під Windows у документації esptool не описана й описана бути не може.
+Лишаю в книзі як є, але позначаю тут: якщо колись знадобиться клас `A` на цей рядок, джерелом буде не esptool, а сам драйвер WCH або відтворення на живій машині. Це не наряд для М2 — це чесна межа того, що взагалі можна процитувати.
+Побічно варте уваги: `troubleshooting.rst` радить те саме, що книга, у двох інших рядках — зняти сторонні пристрої з GPIO і перевірити стабільність 3.3 В. Тобто перелік книги не лише правильний, а й впорядкований так само, як у джерелі.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
@@ -347,7 +348,7 @@
 
 ---
 
-<!-- fc id:T-K04-018 sha:73f5ce2b src:kartky/k04-boot.md:43 klas:F -->
+<!-- fc id:T-K04-018 sha:73f5ce2b src:kartky/k04-boot.md:43 klas:A -->
 ### T-K04-018 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -356,7 +357,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > esptool is not able to reset your hardware automatically in the
+  > following cases:
+  > - Your hardware does not have the ``DTR`` and ``RTS`` lines connected
+  >   to ``{IDF_TARGET_STRAP_BOOT_GPIO}`` and ``EN`` (``CHIP_PU``)
+  > - The ``DTR`` and ``RTS`` lines are configured differently
+  > - There are no such serial control lines at all
+  > 
+  > (troubleshooting.rst)
+  > If you have connected other devices to GPIO pins, try removing them
+  > and see if esptool starts working.
+  > Check the chip is receiving 3.3V from a stable power source.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Чотири з п'яти причин книги підтверджено дослівно. **П'ята — ні**, і це варте запису: «драйвер мосту не керує `DTR`/`RTS` (трапляється на CH9102 у Windows)».
+Агент шукав `CH9102` у `troubleshooting.rst`, `boot-mode-selection.rst` і `reset.py` — немає ніде. Твердження не спростоване, воно **непідтверджене**: поведінка драйвера під Windows у документації esptool не описана й описана бути не може.
+Лишаю в книзі як є, але позначаю тут: якщо колись знадобиться клас `A` на цей рядок, джерелом буде не esptool, а сам драйвер WCH або відтворення на живій машині. Це не наряд для М2 — це чесна межа того, що взагалі можна процитувати.
+Побічно варте уваги: `troubleshooting.rst` радить те саме, що книга, у двох інших рядках — зняти сторонні пристрої з GPIO і перевірити стабільність 3.3 В. Тобто перелік книги не лише правильний, а й впорядкований так само, як у джерелі.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 

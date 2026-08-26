@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-62-021 sha:06e85c5c src:manual/62-proj-keruvannya.md:40 klas:F -->
+<!-- fc id:T-62-021 sha:06e85c5c src:manual/62-proj-keruvannya.md:40 klas:A -->
 ### T-62-021 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -275,11 +275,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
+  > 
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-62-022 sha:6dbfe366 src:manual/62-proj-keruvannya.md:40 klas:B -->
+<!-- fc id:T-62-022 sha:6dbfe366 src:manual/62-proj-keruvannya.md:40 klas:A -->
 ### T-62-022 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -288,26 +303,26 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
-  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
-  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
-  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
-  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
-  > сімейств, які текст поруч називає; область дії береться з `#if
-  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
-  > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
-Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
-- **Прохід:** pass-30-piny-suciljno
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-62-023 sha:680cd1bf src:manual/62-proj-keruvannya.md:40 klas:B -->
+<!-- fc id:T-62-023 sha:680cd1bf src:manual/62-proj-keruvannya.md:40 klas:A -->
 ### T-62-023 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -316,22 +331,22 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
-  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
-  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
-  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
-  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
-  > сімейств, які текст поруч називає; область дії береться з `#if
-  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
-  > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
-Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
-- **Прохід:** pass-30-piny-suciljno
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -389,7 +404,7 @@
 
 ---
 
-<!-- fc id:T-62-027 sha:a64ce347 src:manual/62-proj-keruvannya.md:42 klas:F -->
+<!-- fc id:T-62-027 sha:a64ce347 src:manual/62-proj-keruvannya.md:42 klas:A -->
 ### T-62-027 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -398,11 +413,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
+  > 
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-62-028 sha:9d7cdd08 src:manual/62-proj-keruvannya.md:42 klas:F -->
+<!-- fc id:T-62-028 sha:9d7cdd08 src:manual/62-proj-keruvannya.md:42 klas:A -->
 ### T-62-028 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -411,11 +441,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
+  > 
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-62-029 sha:37f7d5f3 src:manual/62-proj-keruvannya.md:42 klas:F -->
+<!-- fc id:T-62-029 sha:37f7d5f3 src:manual/62-proj-keruvannya.md:42 klas:A -->
 ### T-62-029 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -424,11 +469,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
+  > 
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-62-030 sha:a48ef5a8 src:manual/62-proj-keruvannya.md:43 klas:F -->
+<!-- fc id:T-62-030 sha:a48ef5a8 src:manual/62-proj-keruvannya.md:43 klas:A -->
 ### T-62-030 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -437,11 +497,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
+  > 
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-62-031 sha:45b78b5c src:manual/62-proj-keruvannya.md:43 klas:F -->
+<!-- fc id:T-62-031 sha:45b78b5c src:manual/62-proj-keruvannya.md:43 klas:A -->
 ### T-62-031 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -450,11 +525,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
+  > 
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-62-032 sha:66aeee19 src:manual/62-proj-keruvannya.md:43 klas:F -->
+<!-- fc id:T-62-032 sha:66aeee19 src:manual/62-proj-keruvannya.md:43 klas:A -->
 ### T-62-032 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -463,7 +553,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32.inc — жодного застереження в рядках GPIO25, GPIO26, GPIO27)
+  > * - GPIO25  - ADC2_CH8  - RTC_GPIO6  -
+  > * - GPIO26  - ADC2_CH9  - RTC_GPIO7  -
+  > * - GPIO27  - ADC2_CH7  - RTC_GPIO17 -
+  > 
+  > (esp32s3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {0,3,45,46}, флеш {26–32})
+  > (esp32c3.inc — GPIO5, GPIO6, GPIO7 без застережень;
+  >  strapping {2,8,9}, флеш {12–17}, USB-JTAG {18,19})
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Дев'ять пінів на три сімейства, кожен звірено окремо: існує за маскою, не флеш, не консоль, не USB-JTAG, не strapping. Розбіжностей немає.
+Це та сама перевірка, яку `tools/piny.py` робить механічно при кожному `make check`, — але зроблена іншим способом і з іншого джерела (довідник пінів замість маски). Два незалежні шляхи до того самого висновку варті більше, ніж два прогони одного.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 

@@ -1034,7 +1034,7 @@
 
 ---
 
-<!-- fc id:T-20-067 sha:9223fa74 src:manual/20-bekap.md:144 klas:F -->
+<!-- fc id:T-20-067 sha:9223fa74 src:manual/20-bekap.md:144 klas:A -->
 ### T-20-067 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -1043,7 +1043,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst, .../docs/en/migration-guide.rst, https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst
+- **Дослівно з джерела:**
+  > (basic-commands.rst)
+  > Read SPI Flash ID: ``flash-id``
+  > Example output:
+  >     Manufacturer: e0
+  >     Device: 4016
+  >     Detected flash size: 4MB
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  >     esptool erase-flash
+  > 
+  > (nvs_flash.rst)
+  > if an NVS partition is truncated (for example, when the partition
+  > table layout is changed), its contents should be erased.
+  > 
+  > (migration-guide.rst)
+  > All the commands and options have been renamed to use ``-`` instead
+  > of ``_`` as a separator (e.g., ``write_flash`` -> ``write-flash``).
+  > Old command and option names are **deprecated**.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше — перший пункт переліку «коли `erase-flash` справді потрібен». Книга називала його з досвіду; `nvs_flash.rst` каже те саме прямо: обрізаний при зміні розбивки розділ NVS **треба** стерти. Порада з практики збіглася з вимогою документації.
+- **Прохід:** pass-34-pul-shmatok-6
 
 ---
 
