@@ -1,0 +1,347 @@
+#!/usr/bin/env python3
+"""Каркас реєстру фактчекінгу: паралельна структура до тіла книги.
+
+Ідея. Рецензія читає розділ і питає «чи це узгоджено». Фактчекінг бере
+**окреме твердження** і питає «звідки це відомо». Друге питання не
+масштабується в голові: у книзі тисячі тверджень, і жодне читання не
+гарантує, що жодне з них не пропущене.
+
+Тому реєстр будується механічно й **повний за побудовою**: інструмент
+розкладає кожен файл книги на одиниці тверджень і створює паралельний
+документ, у якому кожна одиниця має свій запис. Далі проходи заповнюють
+записи доказами. Одиниця без доказу — видима порожнеча, а не забутий
+рядок.
+
+    tools/factcheck.py sketch     створити або досинхронізувати каркас
+    tools/factcheck.py status     зведення за класами доказів
+    tools/factcheck.py stale      твердження, текст яких змінився в книзі
+    tools/factcheck.py blocked    перелік недоступних джерел на винос
+
+Синхронізація. У кожному записі лежить хеш дослівного тексту книги. Якщо
+текст у книзі змінили, запис позначається як застарілий: доказ міг
+стосуватися попереднього формулювання. Це те, що відрізняє живий реєстр
+від знімка, який тихо розходиться з книгою.
+"""
+
+import hashlib
+import re
+import sys
+from collections import Counter
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+GRUPY = ("kartky", "manual", "dodatky", "inserts")
+FC = ROOT / "factcheck"
+
+# Класи доказу. Порядок = спадання сили.
+KLASY = {
+    "A": "первинне дослівне — витяг із першоджерела отримано й процитовано",
+    "B": "первинне похідне — першоджерело отримано, твердження випливає однозначно",
+    "C": "вторинне — джерело не дістається звідси; URL записано, цитати немає",
+    "D": "обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне",
+    "E": "поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу",
+    "F": "не звірено",
+    "G": "спростовано або потребує правки",
+}
+ZNAK = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "🔴", "G": "⚠"}
+
+RE_ZAPYS = re.compile(
+    r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
+    r"\s+src:(?P<src>[^\s]+)\s+klas:(?P<klas>[A-G])\s*-->"
+)
+
+
+def sha(text: str) -> str:
+    return hashlib.sha256(" ".join(text.split()).encode("utf-8")).hexdigest()[:8]
+
+
+def rozbyty(text: str) -> list[tuple[str, str, int]]:
+    """Файл → перелік (вид, дослівний текст, номер рядка).
+
+    Види одиниць:
+      proza    речення поза кодом і таблицями
+      tablycya рядок таблиці (кожен рядок — окреме твердження)
+      kod      блок коду цілком (перевіряється як одне: чи компілюється,
+               чи існують виклики, чи правильні одиниці аргументів)
+
+    Заголовки, порожні рядки й розмітку блоків пропускаємо: вони нічого
+    не стверджують про світ.
+    """
+    odynyci: list[tuple[str, str, int]] = []
+    ryadky = text.split("\n")
+    i, n = 0, len(ryadky)
+    buf: list[str] = []
+    buf_vid = 0
+
+    def zlyty_prozu():
+        nonlocal buf, buf_vid
+        if not buf:
+            return
+        blok = " ".join(x.strip() for x in buf if x.strip())
+        buf = []
+        if not blok:
+            return
+        # Речення. Крапка в «0x1000.» або «v5.5» не завершує речення, тому
+        # ділимо лише там, де за розділовим знаком іде велика літера або тире.
+        chastyny = re.split(r"(?<=[.!?])\s+(?=[«»А-ЯЇІЄҐA-Z\[`*—-])", blok)
+        for c in chastyny:
+            c = c.strip()
+            if len(c) >= 25:
+                odynyci.append(("proza", c, buf_vid))
+
+    while i < n:
+        r = ryadky[i]
+        if r.lstrip().startswith("```"):
+            zlyty_prozu()
+            start = i
+            i += 1
+            while i < n and not ryadky[i].lstrip().startswith("```"):
+                i += 1
+            blok = "\n".join(ryadky[start:i + 1])
+            odynyci.append(("kod", blok, start + 1))
+            i += 1
+            continue
+        if r.startswith("|"):
+            zlyty_prozu()
+            if not re.match(r"^\|[\s:|-]+\|$", r):
+                odynyci.append(("tablycya", r.strip(), i + 1))
+            i += 1
+            continue
+        if r.startswith("#") or r.startswith(":::") or not r.strip():
+            zlyty_prozu()
+            i += 1
+            continue
+        if not buf:
+            buf_vid = i + 1
+        buf.append(r)
+        i += 1
+    zlyty_prozu()
+    return odynyci
+
+
+def shlyakh_reyestru(f: Path) -> Path:
+    return FC / f.relative_to(ROOT)
+
+
+def prefiks(f: Path) -> str:
+    """Стабільний префікс ідентифікатора: 06 з manual/06-zhyvlennya.md."""
+    m = re.match(r"([a-z]?\d+|[a-z])-", f.stem)
+    return (m.group(1) if m else f.stem[:3]).upper()
+
+
+def zbir_isnuyuchykh(p: Path) -> dict[str, dict]:
+    """Наявні записи реєстру за id, разом із доказовою частиною."""
+    if not p.exists():
+        return {}
+    t = p.read_text(encoding="utf-8")
+    shmatky = re.split(r"(?=<!--\s*fc\s)", t)
+    out = {}
+    for sh in shmatky:
+        m = RE_ZAPYS.search(sh)
+        if m:
+            out[m.group("id")] = {"sha": m.group("sha"), "klas": m.group("klas"),
+                                  "tilo": sh}
+    return out
+
+
+def dokazova_chastyna(tilo: str) -> str:
+    """Усе після рядка «**Доказ**» — те, що написала людина, а не машина."""
+    j = tilo.find("**Доказ**")
+    return tilo[j:] if j >= 0 else ""
+
+
+SHABLON_DOKAZU = """**Доказ**
+
+- **Клас:** F — не звірено
+- **Джерело:**
+- **Дослівно з джерела:**
+- **Спосіб і дата:**
+- **Нотатка:**
+"""
+
+
+def sketch() -> int:
+    FC.mkdir(exist_ok=True)
+    vsjogo = novykh = zberezheno = zastarilykh = 0
+    for g in GRUPY:
+        for f in sorted((ROOT / g).glob("*.md")):
+            odynyci = rozbyty(f.read_text(encoding="utf-8"))
+            cil = shlyakh_reyestru(f)
+            cil.parent.mkdir(parents=True, exist_ok=True)
+            stari = zbir_isnuyuchykh(cil)
+            pre = prefiks(f)
+            chastyny = [
+                f"# Фактчекінг: `{f.relative_to(ROOT)}`\n",
+                f"Одиниць твердження: **{len(odynyci)}**. "
+                "Клас доказу й формат запису — `factcheck/SCHEMA.md`.\n",
+                "---\n",
+            ]
+            for k, (vyd, txt, ln) in enumerate(odynyci, 1):
+                ident = f"T-{pre}-{k:03d}"
+                h = sha(txt)
+                st = stari.get(ident)
+                klas = st["klas"] if st else "F"
+                if st and st["sha"] != h:
+                    klas = "F"          # текст книги змінився — доказ під сумнівом
+                    zastarilykh += 1
+                dokaz = dokazova_chastyna(st["tilo"]) if st and st["sha"] == h \
+                    else SHABLON_DOKAZU
+                if st and st["sha"] == h:
+                    zberezheno += 1
+                elif not st:
+                    novykh += 1
+                cyt = "\n".join("> " + x for x in txt.split("\n"))
+                chastyny.append(
+                    f"<!-- fc id:{ident} sha:{h} "
+                    f"src:{f.relative_to(ROOT)}:{ln} klas:{klas} -->\n"
+                    f"### {ident} · {vyd} · рядок {ln}\n\n"
+                    f"**Книга каже, дослівно:**\n\n{cyt}\n\n"
+                    f"{dokaz}\n---\n"
+                )
+                vsjogo += 1
+            cil.write_text("\n".join(chastyny), encoding="utf-8")
+    print(f"файлів реєстру: {sum(1 for _ in FC.rglob('*.md')) }")
+    print(f"одиниць твердження: {vsjogo}")
+    print(f"  нових: {novykh}; збережено з доказом: {zberezheno}; "
+          f"застаріло через зміну тексту: {zastarilykh}")
+    return 0
+
+
+def zbir_usikh() -> list[dict]:
+    out = []
+    for p in sorted(FC.rglob("*.md")):
+        if p.name in ("README.md", "SCHEMA.md", "STATUS.md", "dzherela.md"):
+            continue
+        t = p.read_text(encoding="utf-8")
+        for sh in re.split(r"(?=<!--\s*fc\s)", t):
+            m = RE_ZAPYS.search(sh)
+            if m:
+                d = m.groupdict()
+                d["fajl"] = str(p.relative_to(FC))
+                d["tilo"] = sh
+                out.append(d)
+    return out
+
+
+def status() -> int:
+    zapysy = zbir_usikh()
+    c = Counter(z["klas"] for z in zapysy)
+    vsjogo = len(zapysy)
+    print(f"\nодиниць твердження: {vsjogo}\n")
+    zvireno = sum(c[k] for k in "ABD")
+    for k in "ABCDEFG":
+        n = c.get(k, 0)
+        if not n:
+            continue
+        print(f"  {ZNAK[k]} {k}  {n:>5}  {n*100/vsjogo:5.1f}%   {KLASY[k]}")
+    print(f"\n  звірено з джерелом або обчисленням (A+B+D): "
+          f"{zvireno} ({zvireno*100/vsjogo:.1f}%)")
+    print(f"  закрито як рішення (E): {c.get('E',0)}")
+    print(f"  лишається (C+F+G): {c.get('C',0)+c.get('F',0)+c.get('G',0)}")
+    # за файлами: де найбільше незакритого
+    per = Counter()
+    for z in zapysy:
+        if z["klas"] in "CFG":
+            per[z["fajl"]] += 1
+    if per:
+        print("\n  найбільше незакритого:")
+        for f, n in per.most_common(8):
+            print(f"    {n:>4}  {f}")
+    return 0
+
+
+def stale() -> int:
+    """Записи, чий текст у книзі змінився після останнього доказу."""
+    n = 0
+    for z in zbir_usikh():
+        src, ln = z["src"].rsplit(":", 1)
+        p = ROOT / src
+        if not p.exists():
+            print(f"  ⚠ {z['id']}: файл {src} зник")
+            n += 1
+    print(f"розбіжностей: {n}" if n else "розбіжностей немає")
+    return 0
+
+
+def blocked() -> int:
+    """Джерела класу C — те, що має закрити людина з відкритим доступом."""
+    dzherela = Counter()
+    for z in zbir_usikh():
+        if z["klas"] != "C":
+            continue
+        m = re.search(r"\*\*Джерело:\*\*\s*(\S+)", z["tilo"])
+        if m:
+            dzherela[m.group(1)] += 1
+    if not dzherela:
+        print("записів класу C немає")
+        return 0
+    print(f"\nджерел, недоступних із цього середовища: {len(dzherela)}\n")
+    for u, n in dzherela.most_common():
+        print(f"  {n:>4} тверджень   {u}")
+    return 0
+
+
+# Ознаки, за якими твердження взагалі можна звірити із зовнішнім джерелом.
+# Вага = наскільки дорого коштує помилка саме в цій ознаці.
+SYGNALY = [
+    (re.compile(r"0x[0-9A-Fa-f]{3,8}"), 5, "адреса"),
+    (re.compile(r"GPIO\s?\d{1,2}"), 5, "пін"),
+    (re.compile(r"\b(?:eFuse|strapping|Secure Boot|Flash Encryption)\b", re.I), 4, "незворотне"),
+    (re.compile(r"\b[a-z_]+_[a-z_]+\("), 4, "виклик API"),
+    (re.compile(r"\bCONFIG_[A-Z0-9_]+|menuconfig"), 4, "налаштування"),
+    (re.compile(r"\d+(?:[.,]\d+)?\s*(?:мкА|мА|А|В|мВ|Ом|кОм|МОм|Гц|кГц|МГц|ГГц|"
+                r"мкс|мс|с|год|КБ|МБ|ГБ|біт|бод|нФ|мкФ|°C|мм|см|м|Вт)\b"), 3, "число"),
+    (re.compile(r"\b(?:esptool|idf\.py|espefuse|nvs_partition_gen|pio)\b"), 3, "команда"),
+    (re.compile(r"\b(?:ESP32-[A-Z0-9]+|WROOM|WROVER|BME280|DS18B20|MAX\d+|"
+                r"SN65HVD230|TP4056|SSD1306|HC-SR04|A4988|L298N)\b"), 3, "позиція"),
+    (re.compile(r"\b(?:ADC|DAC|PWM|LEDC|MCPWM|RMT|PCNT|TWAI|I²C|SPI|UART|I²S|"
+                r"NVS|OTA|PSRAM|IRAM|DMA)\b"), 2, "блок"),
+]
+
+
+def vaga(txt: str) -> tuple[int, list[str]]:
+    v, chym = 0, []
+    for rex, w, nazva in SYGNALY:
+        if rex.search(txt):
+            v += w
+            chym.append(nazva)
+    return v, chym
+
+
+def cherga() -> int:
+    """Незакриті твердження, найдорожчі першими.
+
+    Прохід не має йти по книзі підряд: одиниця «Якщо в цій книзі є один
+    розділ» і одиниця «GPIO 6–11 з'єднані з флешем» коштують різного.
+    Черга ставить попереду те, де помилка коштує плати.
+    """
+    mezha = int(sys.argv[2]) if len(sys.argv) > 2 else 40
+    poz = []
+    for z in zbir_usikh():
+        if z["klas"] not in "CFG":
+            continue
+        m = re.search(r"\*\*Книга каже, дослівно:\*\*\n\n(.+?)\n\n\*\*Доказ",
+                      z["tilo"], re.S)
+        if not m:
+            continue
+        txt = m.group(1)
+        v, chym = vaga(txt)
+        if v:
+            poz.append((v, z["id"], z["fajl"], ",".join(chym),
+                        " ".join(txt.replace("> ", "").split())[:100]))
+    poz.sort(key=lambda x: (-x[0], x[1]))
+    print(f"\nнезакритих зі звірюваними ознаками: {len(poz)}"
+          f"  (показано {min(mezha, len(poz))})\n")
+    for v, ident, fajl, chym, txt in poz[:mezha]:
+        print(f"  [{v:>2}] {ident:<12} {chym:<28} {txt}")
+    return 0
+
+
+def main() -> int:
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
+    return {"sketch": sketch, "status": status, "stale": stale,
+            "blocked": blocked, "cherga": cherga}.get(cmd, status)()
+
+
+if __name__ == "__main__":
+    sys.exit(main())
