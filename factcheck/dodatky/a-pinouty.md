@@ -34,7 +34,7 @@
 
 ---
 
-<!-- fc id:T-A-002 sha:3a0c7d75 src:dodatky/a-pinouty.md:3 klas:F -->
+<!-- fc id:T-A-002 sha:3a0c7d75 src:dodatky/a-pinouty.md:3 klas:E -->
 ### T-A-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -60,7 +60,7 @@
 
 ---
 
-<!-- fc id:T-A-004 sha:2015cd18 src:dodatky/a-pinouty.md:7 klas:F -->
+<!-- fc id:T-A-004 sha:2015cd18 src:dodatky/a-pinouty.md:7 klas:E -->
 ### T-A-004 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -128,7 +128,7 @@
 
 ---
 
-<!-- fc id:T-A-008 sha:092e56b9 src:dodatky/a-pinouty.md:16 klas:F -->
+<!-- fc id:T-A-008 sha:092e56b9 src:dodatky/a-pinouty.md:16 klas:E -->
 ### T-A-008 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -167,7 +167,7 @@
 
 ---
 
-<!-- fc id:T-A-011 sha:b06bf589 src:dodatky/a-pinouty.md:17 klas:F -->
+<!-- fc id:T-A-011 sha:b06bf589 src:dodatky/a-pinouty.md:17 klas:E -->
 ### T-A-011 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -206,7 +206,7 @@
 
 ---
 
-<!-- fc id:T-A-014 sha:9b9041b5 src:dodatky/a-pinouty.md:18 klas:F -->
+<!-- fc id:T-A-014 sha:9b9041b5 src:dodatky/a-pinouty.md:18 klas:E -->
 ### T-A-014 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -219,7 +219,7 @@
 
 ---
 
-<!-- fc id:T-A-015 sha:cf70cbf0 src:dodatky/a-pinouty.md:18 klas:F -->
+<!-- fc id:T-A-015 sha:cf70cbf0 src:dodatky/a-pinouty.md:18 klas:E -->
 ### T-A-015 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -245,7 +245,7 @@
 
 ---
 
-<!-- fc id:T-A-017 sha:ed43aba0 src:dodatky/a-pinouty.md:19 klas:F -->
+<!-- fc id:T-A-017 sha:ed43aba0 src:dodatky/a-pinouty.md:19 klas:E -->
 ### T-A-017 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -271,7 +271,7 @@
 
 ---
 
-<!-- fc id:T-A-019 sha:05bb8e87 src:dodatky/a-pinouty.md:20 klas:F -->
+<!-- fc id:T-A-019 sha:05bb8e87 src:dodatky/a-pinouty.md:20 klas:E -->
 ### T-A-019 · komirka · рядок 20
 
 **Книга каже, дослівно:**
@@ -284,7 +284,7 @@
 
 ---
 
-<!-- fc id:T-A-020 sha:4d0bd90a src:dodatky/a-pinouty.md:20 klas:F -->
+<!-- fc id:T-A-020 sha:4d0bd90a src:dodatky/a-pinouty.md:20 klas:E -->
 ### T-A-020 · komirka · рядок 20
 
 **Книга каже, дослівно:**
@@ -323,7 +323,7 @@
 
 ---
 
-<!-- fc id:T-A-023 sha:c20d762c src:dodatky/a-pinouty.md:22 klas:F -->
+<!-- fc id:T-A-023 sha:c20d762c src:dodatky/a-pinouty.md:22 klas:E -->
 ### T-A-023 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -336,7 +336,7 @@
 
 ---
 
-<!-- fc id:T-A-024 sha:87ce2d39 src:dodatky/a-pinouty.md:22 klas:F -->
+<!-- fc id:T-A-024 sha:87ce2d39 src:dodatky/a-pinouty.md:22 klas:E -->
 ### T-A-024 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -393,7 +393,7 @@
 
 ---
 
-<!-- fc id:T-A-027 sha:3ec06bb0 src:dodatky/a-pinouty.md:23 klas:F -->
+<!-- fc id:T-A-027 sha:3ec06bb0 src:dodatky/a-pinouty.md:23 klas:E -->
 ### T-A-027 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -406,7 +406,7 @@
 
 ---
 
-<!-- fc id:T-A-028 sha:a4683015 src:dodatky/a-pinouty.md:23 klas:F -->
+<!-- fc id:T-A-028 sha:a4683015 src:dodatky/a-pinouty.md:23 klas:E -->
 ### T-A-028 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -445,7 +445,7 @@
 
 ---
 
-<!-- fc id:T-A-031 sha:fdd88742 src:dodatky/a-pinouty.md:24 klas:F -->
+<!-- fc id:T-A-031 sha:fdd88742 src:dodatky/a-pinouty.md:24 klas:E -->
 ### T-A-031 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -458,7 +458,7 @@
 
 ---
 
-<!-- fc id:T-A-032 sha:82afe384 src:dodatky/a-pinouty.md:24 klas:F -->
+<!-- fc id:T-A-032 sha:82afe384 src:dodatky/a-pinouty.md:24 klas:E -->
 ### T-A-032 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -497,7 +497,7 @@
 
 ---
 
-<!-- fc id:T-A-035 sha:590ac959 src:dodatky/a-pinouty.md:25 klas:F -->
+<!-- fc id:T-A-035 sha:590ac959 src:dodatky/a-pinouty.md:25 klas:E -->
 ### T-A-035 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -510,7 +510,7 @@
 
 ---
 
-<!-- fc id:T-A-036 sha:cba43828 src:dodatky/a-pinouty.md:25 klas:F -->
+<!-- fc id:T-A-036 sha:cba43828 src:dodatky/a-pinouty.md:25 klas:E -->
 ### T-A-036 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -557,7 +557,7 @@
 
 ---
 
-<!-- fc id:T-A-039 sha:edc7c97b src:dodatky/a-pinouty.md:26 klas:F -->
+<!-- fc id:T-A-039 sha:edc7c97b src:dodatky/a-pinouty.md:26 klas:E -->
 ### T-A-039 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -570,7 +570,7 @@
 
 ---
 
-<!-- fc id:T-A-040 sha:ca9296f3 src:dodatky/a-pinouty.md:26 klas:F -->
+<!-- fc id:T-A-040 sha:ca9296f3 src:dodatky/a-pinouty.md:26 klas:E -->
 ### T-A-040 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -716,7 +716,7 @@
 
 ---
 
-<!-- fc id:T-A-050 sha:60266760 src:dodatky/a-pinouty.md:33 klas:F -->
+<!-- fc id:T-A-050 sha:60266760 src:dodatky/a-pinouty.md:33 klas:E -->
 ### T-A-050 · komirka · рядок 33
 
 **Книга каже, дослівно:**
@@ -800,7 +800,7 @@
 
 ---
 
-<!-- fc id:T-A-054 sha:486e3929 src:dodatky/a-pinouty.md:35 klas:F -->
+<!-- fc id:T-A-054 sha:486e3929 src:dodatky/a-pinouty.md:35 klas:E -->
 ### T-A-054 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -826,7 +826,7 @@
 
 ---
 
-<!-- fc id:T-A-056 sha:b5b763e8 src:dodatky/a-pinouty.md:38 klas:F -->
+<!-- fc id:T-A-056 sha:b5b763e8 src:dodatky/a-pinouty.md:38 klas:E -->
 ### T-A-056 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -955,7 +955,7 @@
 
 ---
 
-<!-- fc id:T-A-064 sha:72fbec74 src:dodatky/a-pinouty.md:49 klas:F -->
+<!-- fc id:T-A-064 sha:72fbec74 src:dodatky/a-pinouty.md:49 klas:E -->
 ### T-A-064 · komirka · рядок 49
 
 **Книга каже, дослівно:**
@@ -981,7 +981,7 @@
 
 ---
 
-<!-- fc id:T-A-066 sha:cbb51688 src:dodatky/a-pinouty.md:50 klas:F -->
+<!-- fc id:T-A-066 sha:cbb51688 src:dodatky/a-pinouty.md:50 klas:E -->
 ### T-A-066 · komirka · рядок 50
 
 **Книга каже, дослівно:**
@@ -1155,7 +1155,7 @@
 
 ---
 
-<!-- fc id:T-A-076 sha:1f79377a src:dodatky/a-pinouty.md:60 klas:F -->
+<!-- fc id:T-A-076 sha:1f79377a src:dodatky/a-pinouty.md:60 klas:E -->
 ### T-A-076 · proza · рядок 60
 
 **Книга каже, дослівно:**
@@ -1207,7 +1207,7 @@
 
 ---
 
-<!-- fc id:T-A-080 sha:93f4a490 src:dodatky/a-pinouty.md:69 klas:F -->
+<!-- fc id:T-A-080 sha:93f4a490 src:dodatky/a-pinouty.md:69 klas:E -->
 ### T-A-080 · komirka · рядок 69
 
 **Книга каже, дослівно:**
@@ -1233,7 +1233,7 @@
 
 ---
 
-<!-- fc id:T-A-082 sha:354711b9 src:dodatky/a-pinouty.md:70 klas:F -->
+<!-- fc id:T-A-082 sha:354711b9 src:dodatky/a-pinouty.md:70 klas:E -->
 ### T-A-082 · komirka · рядок 70
 
 **Книга каже, дослівно:**
@@ -1246,7 +1246,7 @@
 
 ---
 
-<!-- fc id:T-A-083 sha:decb25b1 src:dodatky/a-pinouty.md:71 klas:F -->
+<!-- fc id:T-A-083 sha:decb25b1 src:dodatky/a-pinouty.md:71 klas:E -->
 ### T-A-083 · komirka · рядок 71
 
 **Книга каже, дослівно:**
@@ -1259,7 +1259,7 @@
 
 ---
 
-<!-- fc id:T-A-084 sha:d87ed22f src:dodatky/a-pinouty.md:71 klas:F -->
+<!-- fc id:T-A-084 sha:d87ed22f src:dodatky/a-pinouty.md:71 klas:E -->
 ### T-A-084 · komirka · рядок 71
 
 **Книга каже, дослівно:**
@@ -1294,7 +1294,7 @@
 
 ---
 
-<!-- fc id:T-A-086 sha:2fcf634e src:dodatky/a-pinouty.md:72 klas:F -->
+<!-- fc id:T-A-086 sha:2fcf634e src:dodatky/a-pinouty.md:72 klas:E -->
 ### T-A-086 · komirka · рядок 72
 
 **Книга каже, дослівно:**
@@ -1690,7 +1690,7 @@
 
 ---
 
-<!-- fc id:T-A-107 sha:2dfd20e4 src:dodatky/a-pinouty.md:110 klas:E -->
+<!-- fc id:T-A-107 sha:2dfd20e4 src:dodatky/a-pinouty.md:110 klas:F -->
 ### T-A-107 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -1703,7 +1703,7 @@
 
 ---
 
-<!-- fc id:T-A-108 sha:4b8831ab src:dodatky/a-pinouty.md:110 klas:E -->
+<!-- fc id:T-A-108 sha:4b8831ab src:dodatky/a-pinouty.md:110 klas:F -->
 ### T-A-108 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -1910,7 +1910,7 @@
 
 ---
 
-<!-- fc id:T-A-121 sha:6d13423d src:dodatky/a-pinouty.md:140 klas:E -->
+<!-- fc id:T-A-121 sha:6d13423d src:dodatky/a-pinouty.md:140 klas:F -->
 ### T-A-121 · proza · рядок 140
 
 **Книга каже, дослівно:**

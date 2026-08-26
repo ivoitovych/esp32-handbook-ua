@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-K11-004 sha:0a6903d1 src:kartky/k11-nikoly.md:7 klas:E -->
+<!-- fc id:T-K11-004 sha:0a6903d1 src:kartky/k11-nikoly.md:7 klas:F -->
 ### T-K11-004 · proza · рядок 7
 
 **Книга каже, дослівно:**

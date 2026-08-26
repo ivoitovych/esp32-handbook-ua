@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-11-001 sha:c439acee src:manual/11-idf.md:3 klas:E -->
+<!-- fc id:T-11-001 sha:c439acee src:manual/11-idf.md:3 klas:F -->
 ### T-11-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-11-002 sha:a6a27a96 src:manual/11-idf.md:3 klas:F -->
+<!-- fc id:T-11-002 sha:a6a27a96 src:manual/11-idf.md:3 klas:E -->
 ### T-11-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-11-005 sha:6ca25b1b src:manual/11-idf.md:8 klas:E -->
+<!-- fc id:T-11-005 sha:6ca25b1b src:manual/11-idf.md:8 klas:F -->
 ### T-11-005 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-11-006 sha:7a0f5fb1 src:manual/11-idf.md:14 klas:E -->
+<!-- fc id:T-11-006 sha:7a0f5fb1 src:manual/11-idf.md:14 klas:F -->
 ### T-11-006 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-11-008 sha:5b336bce src:manual/11-idf.md:16 klas:F -->
+<!-- fc id:T-11-008 sha:5b336bce src:manual/11-idf.md:16 klas:E -->
 ### T-11-008 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-11-009 sha:01b9ad9c src:manual/11-idf.md:19 klas:E -->
+<!-- fc id:T-11-009 sha:01b9ad9c src:manual/11-idf.md:19 klas:F -->
 ### T-11-009 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-11-013 sha:1c7d2f6d src:manual/11-idf.md:29 klas:E -->
+<!-- fc id:T-11-013 sha:1c7d2f6d src:manual/11-idf.md:29 klas:F -->
 ### T-11-013 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -520,7 +520,7 @@
 
 ---
 
-<!-- fc id:T-11-034 sha:78e5f719 src:manual/11-idf.md:90 klas:F -->
+<!-- fc id:T-11-034 sha:78e5f719 src:manual/11-idf.md:90 klas:E -->
 ### T-11-034 · komirka · рядок 90
 
 **Книга каже, дослівно:**
@@ -533,7 +533,7 @@
 
 ---
 
-<!-- fc id:T-11-035 sha:46f331f8 src:manual/11-idf.md:90 klas:F -->
+<!-- fc id:T-11-035 sha:46f331f8 src:manual/11-idf.md:90 klas:E -->
 ### T-11-035 · komirka · рядок 90
 
 **Книга каже, дослівно:**
@@ -546,7 +546,7 @@
 
 ---
 
-<!-- fc id:T-11-036 sha:47dc3778 src:manual/11-idf.md:91 klas:F -->
+<!-- fc id:T-11-036 sha:47dc3778 src:manual/11-idf.md:91 klas:E -->
 ### T-11-036 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -559,7 +559,7 @@
 
 ---
 
-<!-- fc id:T-11-037 sha:2b4cd2d7 src:manual/11-idf.md:91 klas:F -->
+<!-- fc id:T-11-037 sha:2b4cd2d7 src:manual/11-idf.md:91 klas:E -->
 ### T-11-037 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -635,7 +635,7 @@
 
 ---
 
-<!-- fc id:T-11-042 sha:69692866 src:manual/11-idf.md:106 klas:E -->
+<!-- fc id:T-11-042 sha:69692866 src:manual/11-idf.md:106 klas:F -->
 ### T-11-042 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -860,7 +860,7 @@
 
 ---
 
-<!-- fc id:T-11-052 sha:4190b6cd src:manual/11-idf.md:131 klas:F -->
+<!-- fc id:T-11-052 sha:4190b6cd src:manual/11-idf.md:131 klas:E -->
 ### T-11-052 · tablycya · рядок 131
 
 **Книга каже, дослівно:**
@@ -1306,7 +1306,7 @@
 
 ---
 
-<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 klas:F -->
+<!-- fc id:T-11-073 sha:0158929d src:manual/11-idf.md:192 klas:E -->
 ### T-11-073 · tablycya · рядок 192
 
 **Книга каже, дослівно:**
@@ -1751,7 +1751,7 @@
 
 ---
 
-<!-- fc id:T-11-090 sha:aca0806c src:manual/11-idf.md:222 klas:F -->
+<!-- fc id:T-11-090 sha:aca0806c src:manual/11-idf.md:222 klas:E -->
 ### T-11-090 · proza · рядок 222
 
 **Книга каже, дослівно:**
@@ -1820,7 +1820,7 @@
 
 ---
 
-<!-- fc id:T-11-094 sha:445bb076 src:manual/11-idf.md:236 klas:E -->
+<!-- fc id:T-11-094 sha:445bb076 src:manual/11-idf.md:236 klas:F -->
 ### T-11-094 · proza · рядок 236
 
 **Книга каже, дослівно:**
@@ -1885,7 +1885,7 @@
 
 ---
 
-<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:251 klas:E -->
+<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:251 klas:F -->
 ### T-11-099 · proza · рядок 251
 
 **Книга каже, дослівно:**
@@ -1911,7 +1911,7 @@
 
 ---
 
-<!-- fc id:T-11-101 sha:5075d2bd src:manual/11-idf.md:260 klas:E -->
+<!-- fc id:T-11-101 sha:5075d2bd src:manual/11-idf.md:260 klas:F -->
 ### T-11-101 · proza · рядок 260
 
 **Книга каже, дослівно:**

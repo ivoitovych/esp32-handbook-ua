@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 klas:F -->
+<!-- fc id:T-31-021 sha:ad41371f src:manual/31-freertos.md:70 klas:E -->
 ### T-31-021 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
@@ -355,7 +355,7 @@
 
 ---
 
-<!-- fc id:T-31-022 sha:4c18e8a7 src:manual/31-freertos.md:72 klas:F -->
+<!-- fc id:T-31-022 sha:4c18e8a7 src:manual/31-freertos.md:72 klas:E -->
 ### T-31-022 · tablycya · рядок 72
 
 **Книга каже, дослівно:**
@@ -368,7 +368,7 @@
 
 ---
 
-<!-- fc id:T-31-023 sha:419ad673 src:manual/31-freertos.md:73 klas:F -->
+<!-- fc id:T-31-023 sha:419ad673 src:manual/31-freertos.md:73 klas:E -->
 ### T-31-023 · tablycya · рядок 73
 
 **Книга каже, дослівно:**
@@ -381,7 +381,7 @@
 
 ---
 
-<!-- fc id:T-31-024 sha:3ce093d4 src:manual/31-freertos.md:74 klas:F -->
+<!-- fc id:T-31-024 sha:3ce093d4 src:manual/31-freertos.md:74 klas:E -->
 ### T-31-024 · tablycya · рядок 74
 
 **Книга каже, дослівно:**
@@ -540,7 +540,7 @@
 
 ---
 
-<!-- fc id:T-31-034 sha:b67ba81b src:manual/31-freertos.md:101 klas:F -->
+<!-- fc id:T-31-034 sha:b67ba81b src:manual/31-freertos.md:101 klas:E -->
 ### T-31-034 · proza · рядок 101
 
 **Книга каже, дослівно:**
@@ -553,7 +553,7 @@
 
 ---
 
-<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:101 klas:F -->
+<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:101 klas:E -->
 ### T-31-035 · proza · рядок 101
 
 **Книга каже, дослівно:**
@@ -806,7 +806,7 @@
 
 ---
 
-<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 klas:E -->
+<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 klas:F -->
 ### T-31-050 · proza · рядок 148
 
 **Книга каже, дослівно:**
@@ -960,7 +960,7 @@
 
 ---
 
-<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 klas:E -->
+<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 klas:F -->
 ### T-31-059 · proza · рядок 173
 
 **Книга каже, дослівно:**
@@ -1360,7 +1360,7 @@
 
 ---
 
-<!-- fc id:T-31-083 sha:3635e455 src:manual/31-freertos.md:243 klas:F -->
+<!-- fc id:T-31-083 sha:3635e455 src:manual/31-freertos.md:243 klas:E -->
 ### T-31-083 · proza · рядок 243
 
 **Книга каже, дослівно:**

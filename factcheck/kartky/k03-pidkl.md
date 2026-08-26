@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:16 klas:E -->
+<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:16 klas:F -->
 ### T-K03-007 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:28 klas:F -->
+<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:28 klas:E -->
 ### T-K03-017 · komirka · рядок 28
 
 **Книга каже, дослівно:**

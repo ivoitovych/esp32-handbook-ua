@@ -122,7 +122,7 @@
 
 ---
 
-<!-- fc id:T-K13-008 sha:f284f799 src:kartky/k13-zhyvlennya.md:21 klas:F -->
+<!-- fc id:T-K13-008 sha:f284f799 src:kartky/k13-zhyvlennya.md:21 klas:E -->
 ### T-K13-008 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -135,7 +135,7 @@
 
 ---
 
-<!-- fc id:T-K13-009 sha:46ec6e5b src:kartky/k13-zhyvlennya.md:21 klas:F -->
+<!-- fc id:T-K13-009 sha:46ec6e5b src:kartky/k13-zhyvlennya.md:21 klas:E -->
 ### T-K13-009 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -148,7 +148,7 @@
 
 ---
 
-<!-- fc id:T-K13-010 sha:65f37454 src:kartky/k13-zhyvlennya.md:22 klas:F -->
+<!-- fc id:T-K13-010 sha:65f37454 src:kartky/k13-zhyvlennya.md:22 klas:E -->
 ### T-K13-010 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -174,7 +174,7 @@
 
 ---
 
-<!-- fc id:T-K13-012 sha:dd53d506 src:kartky/k13-zhyvlennya.md:22 klas:F -->
+<!-- fc id:T-K13-012 sha:dd53d506 src:kartky/k13-zhyvlennya.md:22 klas:E -->
 ### T-K13-012 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -213,7 +213,7 @@
 
 ---
 
-<!-- fc id:T-K13-015 sha:0e199821 src:kartky/k13-zhyvlennya.md:23 klas:F -->
+<!-- fc id:T-K13-015 sha:0e199821 src:kartky/k13-zhyvlennya.md:23 klas:E -->
 ### T-K13-015 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -252,7 +252,7 @@
 
 ---
 
-<!-- fc id:T-K13-018 sha:a9bcbe70 src:kartky/k13-zhyvlennya.md:24 klas:F -->
+<!-- fc id:T-K13-018 sha:a9bcbe70 src:kartky/k13-zhyvlennya.md:24 klas:E -->
 ### T-K13-018 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-K13-022 sha:6d4c6b24 src:kartky/k13-zhyvlennya.md:32 klas:F -->
+<!-- fc id:T-K13-022 sha:6d4c6b24 src:kartky/k13-zhyvlennya.md:32 klas:E -->
 ### T-K13-022 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -330,7 +330,7 @@
 
 ---
 
-<!-- fc id:T-K13-024 sha:52672d62 src:kartky/k13-zhyvlennya.md:32 klas:F -->
+<!-- fc id:T-K13-024 sha:52672d62 src:kartky/k13-zhyvlennya.md:32 klas:E -->
 ### T-K13-024 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -356,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-K13-026 sha:8824a145 src:kartky/k13-zhyvlennya.md:32 klas:F -->
+<!-- fc id:T-K13-026 sha:8824a145 src:kartky/k13-zhyvlennya.md:32 klas:E -->
 ### T-K13-026 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -473,7 +473,7 @@
 
 ---
 
-<!-- fc id:T-K13-035 sha:0f20ca15 src:kartky/k13-zhyvlennya.md:52 klas:E -->
+<!-- fc id:T-K13-035 sha:0f20ca15 src:kartky/k13-zhyvlennya.md:52 klas:F -->
 ### T-K13-035 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-K13-038 sha:eafbf8b1 src:kartky/k13-zhyvlennya.md:70 klas:F -->
+<!-- fc id:T-K13-038 sha:eafbf8b1 src:kartky/k13-zhyvlennya.md:70 klas:E -->
 ### T-K13-038 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
@@ -555,7 +555,7 @@
 
 ---
 
-<!-- fc id:T-K13-041 sha:2b1a685d src:kartky/k13-zhyvlennya.md:74 klas:F -->
+<!-- fc id:T-K13-041 sha:2b1a685d src:kartky/k13-zhyvlennya.md:74 klas:E -->
 ### T-K13-041 · tablycya · рядок 74
 
 **Книга каже, дослівно:**
@@ -568,7 +568,7 @@
 
 ---
 
-<!-- fc id:T-K13-042 sha:4f6059ae src:kartky/k13-zhyvlennya.md:75 klas:F -->
+<!-- fc id:T-K13-042 sha:4f6059ae src:kartky/k13-zhyvlennya.md:75 klas:E -->
 ### T-K13-042 · tablycya · рядок 75
 
 **Книга каже, дослівно:**

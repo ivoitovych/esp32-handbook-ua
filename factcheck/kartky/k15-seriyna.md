@@ -99,7 +99,7 @@
 
 ---
 
-<!-- fc id:T-K15-006 sha:4fb5c876 src:kartky/k15-seriyna.md:26 klas:F -->
+<!-- fc id:T-K15-006 sha:4fb5c876 src:kartky/k15-seriyna.md:26 klas:E -->
 ### T-K15-006 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-K15-008 sha:b6338e2f src:kartky/k15-seriyna.md:27 klas:F -->
+<!-- fc id:T-K15-008 sha:b6338e2f src:kartky/k15-seriyna.md:27 klas:E -->
 ### T-K15-008 · komirka · рядок 27
 
 **Книга каже, дослівно:**
@@ -193,7 +193,7 @@
 
 ---
 
-<!-- fc id:T-K15-010 sha:f91fb570 src:kartky/k15-seriyna.md:28 klas:F -->
+<!-- fc id:T-K15-010 sha:f91fb570 src:kartky/k15-seriyna.md:28 klas:E -->
 ### T-K15-010 · komirka · рядок 28
 
 **Книга каже, дослівно:**
@@ -219,7 +219,7 @@
 
 ---
 
-<!-- fc id:T-K15-012 sha:d7deee82 src:kartky/k15-seriyna.md:29 klas:F -->
+<!-- fc id:T-K15-012 sha:d7deee82 src:kartky/k15-seriyna.md:29 klas:E -->
 ### T-K15-012 · komirka · рядок 29
 
 **Книга каже, дослівно:**
@@ -232,7 +232,7 @@
 
 ---
 
-<!-- fc id:T-K15-013 sha:27735e3c src:kartky/k15-seriyna.md:29 klas:F -->
+<!-- fc id:T-K15-013 sha:27735e3c src:kartky/k15-seriyna.md:29 klas:E -->
 ### T-K15-013 · komirka · рядок 29
 
 **Книга каже, дослівно:**
@@ -245,7 +245,7 @@
 
 ---
 
-<!-- fc id:T-K15-014 sha:fa0d7841 src:kartky/k15-seriyna.md:30 klas:F -->
+<!-- fc id:T-K15-014 sha:fa0d7841 src:kartky/k15-seriyna.md:30 klas:E -->
 ### T-K15-014 · komirka · рядок 30
 
 **Книга каже, дослівно:**
@@ -258,7 +258,7 @@
 
 ---
 
-<!-- fc id:T-K15-015 sha:c289cc01 src:kartky/k15-seriyna.md:30 klas:F -->
+<!-- fc id:T-K15-015 sha:c289cc01 src:kartky/k15-seriyna.md:30 klas:E -->
 ### T-K15-015 · komirka · рядок 30
 
 **Книга каже, дослівно:**
@@ -271,7 +271,7 @@
 
 ---
 
-<!-- fc id:T-K15-016 sha:935c8ea3 src:kartky/k15-seriyna.md:31 klas:F -->
+<!-- fc id:T-K15-016 sha:935c8ea3 src:kartky/k15-seriyna.md:31 klas:E -->
 ### T-K15-016 · komirka · рядок 31
 
 **Книга каже, дослівно:**
@@ -284,7 +284,7 @@
 
 ---
 
-<!-- fc id:T-K15-017 sha:1455628b src:kartky/k15-seriyna.md:31 klas:F -->
+<!-- fc id:T-K15-017 sha:1455628b src:kartky/k15-seriyna.md:31 klas:E -->
 ### T-K15-017 · komirka · рядок 31
 
 **Книга каже, дослівно:**
@@ -297,7 +297,7 @@
 
 ---
 
-<!-- fc id:T-K15-018 sha:324b565a src:kartky/k15-seriyna.md:32 klas:F -->
+<!-- fc id:T-K15-018 sha:324b565a src:kartky/k15-seriyna.md:32 klas:E -->
 ### T-K15-018 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -310,7 +310,7 @@
 
 ---
 
-<!-- fc id:T-K15-019 sha:4253d18a src:kartky/k15-seriyna.md:32 klas:F -->
+<!-- fc id:T-K15-019 sha:4253d18a src:kartky/k15-seriyna.md:32 klas:E -->
 ### T-K15-019 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -323,7 +323,7 @@
 
 ---
 
-<!-- fc id:T-K15-020 sha:b24d7bca src:kartky/k15-seriyna.md:33 klas:F -->
+<!-- fc id:T-K15-020 sha:b24d7bca src:kartky/k15-seriyna.md:33 klas:E -->
 ### T-K15-020 · komirka · рядок 33
 
 **Книга каже, дослівно:**
@@ -336,7 +336,7 @@
 
 ---
 
-<!-- fc id:T-K15-021 sha:cf346d2a src:kartky/k15-seriyna.md:36 klas:F -->
+<!-- fc id:T-K15-021 sha:cf346d2a src:kartky/k15-seriyna.md:36 klas:E -->
 ### T-K15-021 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -349,7 +349,7 @@
 
 ---
 
-<!-- fc id:T-K15-022 sha:ea9b0c14 src:kartky/k15-seriyna.md:36 klas:F -->
+<!-- fc id:T-K15-022 sha:ea9b0c14 src:kartky/k15-seriyna.md:36 klas:E -->
 ### T-K15-022 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -401,7 +401,7 @@
 
 ---
 
-<!-- fc id:T-K15-026 sha:e4e73586 src:kartky/k15-seriyna.md:42 klas:F -->
+<!-- fc id:T-K15-026 sha:e4e73586 src:kartky/k15-seriyna.md:42 klas:E -->
 ### T-K15-026 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -414,7 +414,7 @@
 
 ---
 
-<!-- fc id:T-K15-027 sha:29d3900f src:kartky/k15-seriyna.md:42 klas:F -->
+<!-- fc id:T-K15-027 sha:29d3900f src:kartky/k15-seriyna.md:42 klas:E -->
 ### T-K15-027 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -453,7 +453,7 @@
 
 ---
 
-<!-- fc id:T-K15-030 sha:a6590e77 src:kartky/k15-seriyna.md:43 klas:F -->
+<!-- fc id:T-K15-030 sha:a6590e77 src:kartky/k15-seriyna.md:43 klas:E -->
 ### T-K15-030 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -466,7 +466,7 @@
 
 ---
 
-<!-- fc id:T-K15-031 sha:37c1710c src:kartky/k15-seriyna.md:43 klas:F -->
+<!-- fc id:T-K15-031 sha:37c1710c src:kartky/k15-seriyna.md:43 klas:E -->
 ### T-K15-031 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -479,7 +479,7 @@
 
 ---
 
-<!-- fc id:T-K15-032 sha:0554d11b src:kartky/k15-seriyna.md:43 klas:F -->
+<!-- fc id:T-K15-032 sha:0554d11b src:kartky/k15-seriyna.md:43 klas:E -->
 ### T-K15-032 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -505,7 +505,7 @@
 
 ---
 
-<!-- fc id:T-K15-034 sha:9149b7e4 src:kartky/k15-seriyna.md:51 klas:E -->
+<!-- fc id:T-K15-034 sha:9149b7e4 src:kartky/k15-seriyna.md:51 klas:F -->
 ### T-K15-034 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -678,7 +678,7 @@
 
 ---
 
-<!-- fc id:T-K15-043 sha:28cc3b5c src:kartky/k15-seriyna.md:76 klas:F -->
+<!-- fc id:T-K15-043 sha:28cc3b5c src:kartky/k15-seriyna.md:76 klas:E -->
 ### T-K15-043 · proza · рядок 76
 
 **Книга каже, дослівно:**

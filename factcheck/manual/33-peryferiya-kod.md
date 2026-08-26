@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-33-001 sha:6801c405 src:manual/33-peryferiya-kod.md:3 klas:F -->
+<!-- fc id:T-33-001 sha:6801c405 src:manual/33-peryferiya-kod.md:3 klas:E -->
 ### T-33-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -353,7 +353,7 @@
 
 ---
 
-<!-- fc id:T-33-019 sha:e26a0015 src:manual/33-peryferiya-kod.md:41 klas:F -->
+<!-- fc id:T-33-019 sha:e26a0015 src:manual/33-peryferiya-kod.md:41 klas:E -->
 ### T-33-019 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -1132,7 +1132,7 @@
 
 ---
 
-<!-- fc id:T-33-058 sha:b1601e7b src:manual/33-peryferiya-kod.md:137 klas:F -->
+<!-- fc id:T-33-058 sha:b1601e7b src:manual/33-peryferiya-kod.md:137 klas:E -->
 ### T-33-058 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -1171,7 +1171,7 @@
 
 ---
 
-<!-- fc id:T-33-061 sha:db2ade05 src:manual/33-peryferiya-kod.md:151 klas:F -->
+<!-- fc id:T-33-061 sha:db2ade05 src:manual/33-peryferiya-kod.md:151 klas:E -->
 ### T-33-061 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -1184,7 +1184,7 @@
 
 ---
 
-<!-- fc id:T-33-062 sha:9bc36e29 src:manual/33-peryferiya-kod.md:156 klas:E -->
+<!-- fc id:T-33-062 sha:9bc36e29 src:manual/33-peryferiya-kod.md:156 klas:F -->
 ### T-33-062 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1236,7 +1236,7 @@
 
 ---
 
-<!-- fc id:T-33-066 sha:3f89b4eb src:manual/33-peryferiya-kod.md:164 klas:E -->
+<!-- fc id:T-33-066 sha:3f89b4eb src:manual/33-peryferiya-kod.md:164 klas:F -->
 ### T-33-066 · proza · рядок 164
 
 **Книга каже, дослівно:**
@@ -1373,7 +1373,7 @@
 
 ---
 
-<!-- fc id:T-33-071 sha:0a072e63 src:manual/33-peryferiya-kod.md:176 klas:F -->
+<!-- fc id:T-33-071 sha:0a072e63 src:manual/33-peryferiya-kod.md:176 klas:E -->
 ### T-33-071 · proza · рядок 176
 
 **Книга каже, дослівно:**
@@ -1420,7 +1420,7 @@
 
 ---
 
-<!-- fc id:T-33-074 sha:be56e056 src:manual/33-peryferiya-kod.md:182 klas:E -->
+<!-- fc id:T-33-074 sha:be56e056 src:manual/33-peryferiya-kod.md:182 klas:F -->
 ### T-33-074 · proza · рядок 182
 
 **Книга каже, дослівно:**
@@ -1917,7 +1917,7 @@
 
 ---
 
-<!-- fc id:T-33-100 sha:b338b2c7 src:manual/33-peryferiya-kod.md:240 klas:E -->
+<!-- fc id:T-33-100 sha:b338b2c7 src:manual/33-peryferiya-kod.md:240 klas:F -->
 ### T-33-100 · proza · рядок 240
 
 **Книга каже, дослівно:**
@@ -1943,7 +1943,7 @@
 
 ---
 
-<!-- fc id:T-33-102 sha:d9cb78d8 src:manual/33-peryferiya-kod.md:245 klas:F -->
+<!-- fc id:T-33-102 sha:d9cb78d8 src:manual/33-peryferiya-kod.md:245 klas:E -->
 ### T-33-102 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -1956,7 +1956,7 @@
 
 ---
 
-<!-- fc id:T-33-103 sha:836b0a38 src:manual/33-peryferiya-kod.md:245 klas:F -->
+<!-- fc id:T-33-103 sha:836b0a38 src:manual/33-peryferiya-kod.md:245 klas:E -->
 ### T-33-103 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -1982,7 +1982,7 @@
 
 ---
 
-<!-- fc id:T-33-105 sha:f3f157b6 src:manual/33-peryferiya-kod.md:245 klas:F -->
+<!-- fc id:T-33-105 sha:f3f157b6 src:manual/33-peryferiya-kod.md:245 klas:E -->
 ### T-33-105 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -1995,7 +1995,7 @@
 
 ---
 
-<!-- fc id:T-33-106 sha:0ad8b2a1 src:manual/33-peryferiya-kod.md:245 klas:F -->
+<!-- fc id:T-33-106 sha:0ad8b2a1 src:manual/33-peryferiya-kod.md:245 klas:E -->
 ### T-33-106 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -2008,7 +2008,7 @@
 
 ---
 
-<!-- fc id:T-33-107 sha:7f1a82b2 src:manual/33-peryferiya-kod.md:245 klas:E -->
+<!-- fc id:T-33-107 sha:7f1a82b2 src:manual/33-peryferiya-kod.md:245 klas:F -->
 ### T-33-107 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -2064,7 +2064,7 @@
 
 ---
 
-<!-- fc id:T-33-111 sha:227a685f src:manual/33-peryferiya-kod.md:258 klas:F -->
+<!-- fc id:T-33-111 sha:227a685f src:manual/33-peryferiya-kod.md:258 klas:E -->
 ### T-33-111 · proza · рядок 258
 
 **Книга каже, дослівно:**
@@ -2181,7 +2181,7 @@
 
 ---
 
-<!-- fc id:T-33-120 sha:c7206801 src:manual/33-peryferiya-kod.md:272 klas:E -->
+<!-- fc id:T-33-120 sha:c7206801 src:manual/33-peryferiya-kod.md:272 klas:F -->
 ### T-33-120 · proza · рядок 272
 
 **Книга каже, дослівно:**

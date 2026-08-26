@@ -756,7 +756,7 @@
 
 ---
 
-<!-- fc id:T-C-029 sha:36969ccb src:dodatky/c-komandy.md:62 klas:F -->
+<!-- fc id:T-C-029 sha:36969ccb src:dodatky/c-komandy.md:62 klas:E -->
 ### T-C-029 · tablycya · рядок 62
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-34-001 sha:405cf1a7 src:manual/34-uart.md:3 klas:E -->
+<!-- fc id:T-34-001 sha:405cf1a7 src:manual/34-uart.md:3 klas:F -->
 ### T-34-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -470,7 +470,7 @@
 
 ---
 
-<!-- fc id:T-34-024 sha:31504aa6 src:manual/34-uart.md:56 klas:F -->
+<!-- fc id:T-34-024 sha:31504aa6 src:manual/34-uart.md:56 klas:E -->
 ### T-34-024 · proza · рядок 56
 
 **Книга каже, дослівно:**
@@ -509,7 +509,7 @@
 
 ---
 
-<!-- fc id:T-34-027 sha:c9627eb4 src:manual/34-uart.md:62 klas:F -->
+<!-- fc id:T-34-027 sha:c9627eb4 src:manual/34-uart.md:62 klas:E -->
 ### T-34-027 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -548,7 +548,7 @@
 
 ---
 
-<!-- fc id:T-34-030 sha:39244fe0 src:manual/34-uart.md:72 klas:E -->
+<!-- fc id:T-34-030 sha:39244fe0 src:manual/34-uart.md:72 klas:F -->
 ### T-34-030 · proza · рядок 72
 
 **Книга каже, дослівно:**
@@ -898,7 +898,7 @@
 
 ---
 
-<!-- fc id:T-34-051 sha:fef35fc5 src:manual/34-uart.md:117 klas:F -->
+<!-- fc id:T-34-051 sha:fef35fc5 src:manual/34-uart.md:117 klas:E -->
 ### T-34-051 · proza · рядок 117
 
 **Книга каже, дослівно:**

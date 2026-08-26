@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-08-001 sha:22ea6da8 src:manual/08-platy.md:3 klas:F -->
+<!-- fc id:T-08-001 sha:22ea6da8 src:manual/08-platy.md:3 klas:E -->
 ### T-08-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-08-019 sha:d3461c86 src:manual/08-platy.md:25 klas:E -->
+<!-- fc id:T-08-019 sha:d3461c86 src:manual/08-platy.md:25 klas:F -->
 ### T-08-019 · proza · рядок 25
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-08-023 sha:aa53e478 src:manual/08-platy.md:35 klas:F -->
+<!-- fc id:T-08-023 sha:aa53e478 src:manual/08-platy.md:35 klas:E -->
 ### T-08-023 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-08-024 sha:5d826b5c src:manual/08-platy.md:38 klas:E -->
+<!-- fc id:T-08-024 sha:5d826b5c src:manual/08-platy.md:38 klas:F -->
 ### T-08-024 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-08-029 sha:7b4e6a6d src:manual/08-platy.md:42 klas:F -->
+<!-- fc id:T-08-029 sha:7b4e6a6d src:manual/08-platy.md:42 klas:E -->
 ### T-08-029 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -396,7 +396,7 @@
 
 ---
 
-<!-- fc id:T-08-031 sha:182f9fe3 src:manual/08-platy.md:49 klas:E -->
+<!-- fc id:T-08-031 sha:182f9fe3 src:manual/08-platy.md:49 klas:F -->
 ### T-08-031 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -409,7 +409,7 @@
 
 ---
 
-<!-- fc id:T-08-032 sha:0f3b9241 src:manual/08-platy.md:49 klas:E -->
+<!-- fc id:T-08-032 sha:0f3b9241 src:manual/08-platy.md:49 klas:F -->
 ### T-08-032 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -461,7 +461,7 @@
 
 ---
 
-<!-- fc id:T-08-036 sha:3bf2a720 src:manual/08-platy.md:58 klas:F -->
+<!-- fc id:T-08-036 sha:3bf2a720 src:manual/08-platy.md:58 klas:E -->
 ### T-08-036 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -669,7 +669,7 @@
 
 ---
 
-<!-- fc id:T-08-052 sha:c0710a6e src:manual/08-platy.md:84 klas:F -->
+<!-- fc id:T-08-052 sha:c0710a6e src:manual/08-platy.md:84 klas:E -->
 ### T-08-052 · proza · рядок 84
 
 **Книга каже, дослівно:**
@@ -786,7 +786,7 @@
 
 ---
 
-<!-- fc id:T-08-061 sha:2dd8e001 src:manual/08-platy.md:108 klas:F -->
+<!-- fc id:T-08-061 sha:2dd8e001 src:manual/08-platy.md:108 klas:E -->
 ### T-08-061 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -954,7 +954,7 @@
 
 ---
 
-<!-- fc id:T-08-072 sha:6c916b95 src:manual/08-platy.md:128 klas:F -->
+<!-- fc id:T-08-072 sha:6c916b95 src:manual/08-platy.md:128 klas:E -->
 ### T-08-072 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -967,7 +967,7 @@
 
 ---
 
-<!-- fc id:T-08-073 sha:119ae233 src:manual/08-platy.md:134 klas:F -->
+<!-- fc id:T-08-073 sha:119ae233 src:manual/08-platy.md:134 klas:E -->
 ### T-08-073 · proza · рядок 134
 
 **Книга каже, дослівно:**
@@ -1019,7 +1019,7 @@
 
 ---
 
-<!-- fc id:T-08-077 sha:a53f6a11 src:manual/08-platy.md:148 klas:E -->
+<!-- fc id:T-08-077 sha:a53f6a11 src:manual/08-platy.md:148 klas:F -->
 ### T-08-077 · proza · рядок 148
 
 **Книга каже, дослівно:**
@@ -1058,7 +1058,7 @@
 
 ---
 
-<!-- fc id:T-08-080 sha:f1ef2e49 src:manual/08-platy.md:154 klas:F -->
+<!-- fc id:T-08-080 sha:f1ef2e49 src:manual/08-platy.md:154 klas:E -->
 ### T-08-080 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -1149,7 +1149,7 @@
 
 ---
 
-<!-- fc id:T-08-087 sha:0902248e src:manual/08-platy.md:166 klas:F -->
+<!-- fc id:T-08-087 sha:0902248e src:manual/08-platy.md:166 klas:E -->
 ### T-08-087 · proza · рядок 166
 
 **Книга каже, дослівно:**
@@ -1175,7 +1175,7 @@
 
 ---
 
-<!-- fc id:T-08-089 sha:06f6271a src:manual/08-platy.md:178 klas:F -->
+<!-- fc id:T-08-089 sha:06f6271a src:manual/08-platy.md:178 klas:E -->
 ### T-08-089 · proza · рядок 178
 
 **Книга каже, дослівно:**

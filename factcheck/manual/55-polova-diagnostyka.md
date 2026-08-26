@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-55-010 sha:1ffb6ffb src:manual/55-polova-diagnostyka.md:25 klas:F -->
+<!-- fc id:T-55-010 sha:1ffb6ffb src:manual/55-polova-diagnostyka.md:25 klas:E -->
 ### T-55-010 · proza · рядок 25
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-55-011 sha:44dc73e8 src:manual/55-polova-diagnostyka.md:30 klas:F -->
+<!-- fc id:T-55-011 sha:44dc73e8 src:manual/55-polova-diagnostyka.md:30 klas:E -->
 ### T-55-011 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-55-026 sha:8c7bdf36 src:manual/55-polova-diagnostyka.md:63 klas:E -->
+<!-- fc id:T-55-026 sha:8c7bdf36 src:manual/55-polova-diagnostyka.md:63 klas:F -->
 ### T-55-026 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-55-029 sha:61748fcf src:manual/55-polova-diagnostyka.md:67 klas:F -->
+<!-- fc id:T-55-029 sha:61748fcf src:manual/55-polova-diagnostyka.md:67 klas:E -->
 ### T-55-029 · proza · рядок 67
 
 **Книга каже, дослівно:**
@@ -448,7 +448,7 @@
 
 ---
 
-<!-- fc id:T-55-035 sha:6008879f src:manual/55-polova-diagnostyka.md:76 klas:F -->
+<!-- fc id:T-55-035 sha:6008879f src:manual/55-polova-diagnostyka.md:76 klas:E -->
 ### T-55-035 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -535,7 +535,7 @@
 
 ---
 
-<!-- fc id:T-55-040 sha:53b082c5 src:manual/55-polova-diagnostyka.md:85 klas:E -->
+<!-- fc id:T-55-040 sha:53b082c5 src:manual/55-polova-diagnostyka.md:85 klas:F -->
 ### T-55-040 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -574,7 +574,7 @@
 
 ---
 
-<!-- fc id:T-55-043 sha:9d71d6cc src:manual/55-polova-diagnostyka.md:91 klas:F -->
+<!-- fc id:T-55-043 sha:9d71d6cc src:manual/55-polova-diagnostyka.md:91 klas:E -->
 ### T-55-043 · tablycya · рядок 91
 
 **Книга каже, дослівно:**
@@ -587,7 +587,7 @@
 
 ---
 
-<!-- fc id:T-55-044 sha:acf76dee src:manual/55-polova-diagnostyka.md:93 klas:F -->
+<!-- fc id:T-55-044 sha:acf76dee src:manual/55-polova-diagnostyka.md:93 klas:E -->
 ### T-55-044 · tablycya · рядок 93
 
 **Книга каже, дослівно:**
@@ -613,7 +613,7 @@
 
 ---
 
-<!-- fc id:T-55-046 sha:b583b23a src:manual/55-polova-diagnostyka.md:95 klas:F -->
+<!-- fc id:T-55-046 sha:b583b23a src:manual/55-polova-diagnostyka.md:95 klas:E -->
 ### T-55-046 · tablycya · рядок 95
 
 **Книга каже, дослівно:**
@@ -626,7 +626,7 @@
 
 ---
 
-<!-- fc id:T-55-047 sha:f1ec0675 src:manual/55-polova-diagnostyka.md:96 klas:F -->
+<!-- fc id:T-55-047 sha:f1ec0675 src:manual/55-polova-diagnostyka.md:96 klas:E -->
 ### T-55-047 · tablycya · рядок 96
 
 **Книга каже, дослівно:**
@@ -639,7 +639,7 @@
 
 ---
 
-<!-- fc id:T-55-048 sha:7c0a7a6b src:manual/55-polova-diagnostyka.md:97 klas:F -->
+<!-- fc id:T-55-048 sha:7c0a7a6b src:manual/55-polova-diagnostyka.md:97 klas:E -->
 ### T-55-048 · tablycya · рядок 97
 
 **Книга каже, дослівно:**
@@ -652,7 +652,7 @@
 
 ---
 
-<!-- fc id:T-55-049 sha:337b28e2 src:manual/55-polova-diagnostyka.md:98 klas:F -->
+<!-- fc id:T-55-049 sha:337b28e2 src:manual/55-polova-diagnostyka.md:98 klas:E -->
 ### T-55-049 · tablycya · рядок 98
 
 **Книга каже, дослівно:**
@@ -665,7 +665,7 @@
 
 ---
 
-<!-- fc id:T-55-050 sha:7625f589 src:manual/55-polova-diagnostyka.md:99 klas:F -->
+<!-- fc id:T-55-050 sha:7625f589 src:manual/55-polova-diagnostyka.md:99 klas:E -->
 ### T-55-050 · tablycya · рядок 99
 
 **Книга каже, дослівно:**
@@ -691,7 +691,7 @@
 
 ---
 
-<!-- fc id:T-55-052 sha:39b6bdf2 src:manual/55-polova-diagnostyka.md:101 klas:F -->
+<!-- fc id:T-55-052 sha:39b6bdf2 src:manual/55-polova-diagnostyka.md:101 klas:E -->
 ### T-55-052 · tablycya · рядок 101
 
 **Книга каже, дослівно:**
@@ -782,7 +782,7 @@
 
 ---
 
-<!-- fc id:T-55-059 sha:b7e6bda4 src:manual/55-polova-diagnostyka.md:118 klas:F -->
+<!-- fc id:T-55-059 sha:b7e6bda4 src:manual/55-polova-diagnostyka.md:118 klas:E -->
 ### T-55-059 · proza · рядок 118
 
 **Книга каже, дослівно:**
@@ -834,7 +834,7 @@
 
 ---
 
-<!-- fc id:T-55-063 sha:e5da36f2 src:manual/55-polova-diagnostyka.md:126 klas:F -->
+<!-- fc id:T-55-063 sha:e5da36f2 src:manual/55-polova-diagnostyka.md:126 klas:E -->
 ### T-55-063 · proza · рядок 126
 
 **Книга каже, дослівно:**
@@ -899,7 +899,7 @@
 
 ---
 
-<!-- fc id:T-55-068 sha:8538ac00 src:manual/55-polova-diagnostyka.md:139 klas:F -->
+<!-- fc id:T-55-068 sha:8538ac00 src:manual/55-polova-diagnostyka.md:139 klas:E -->
 ### T-55-068 · proza · рядок 139
 
 **Книга каже, дослівно:**
@@ -912,7 +912,7 @@
 
 ---
 
-<!-- fc id:T-55-069 sha:c18a0cb3 src:manual/55-polova-diagnostyka.md:145 klas:F -->
+<!-- fc id:T-55-069 sha:c18a0cb3 src:manual/55-polova-diagnostyka.md:145 klas:E -->
 ### T-55-069 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -1003,7 +1003,7 @@
 
 ---
 
-<!-- fc id:T-55-076 sha:0bb27eae src:manual/55-polova-diagnostyka.md:159 klas:F -->
+<!-- fc id:T-55-076 sha:0bb27eae src:manual/55-polova-diagnostyka.md:159 klas:E -->
 ### T-55-076 · proza · рядок 159
 
 **Книга каже, дослівно:**
@@ -1081,7 +1081,7 @@
 
 ---
 
-<!-- fc id:T-55-082 sha:45ec5617 src:manual/55-polova-diagnostyka.md:176 klas:F -->
+<!-- fc id:T-55-082 sha:45ec5617 src:manual/55-polova-diagnostyka.md:176 klas:E -->
 ### T-55-082 · proza · рядок 176
 
 **Книга каже, дослівно:**
@@ -1094,7 +1094,7 @@
 
 ---
 
-<!-- fc id:T-55-083 sha:bf92c313 src:manual/55-polova-diagnostyka.md:176 klas:E -->
+<!-- fc id:T-55-083 sha:bf92c313 src:manual/55-polova-diagnostyka.md:176 klas:F -->
 ### T-55-083 · proza · рядок 176
 
 **Книга каже, дослівно:**

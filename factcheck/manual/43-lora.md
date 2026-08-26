@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-43-001 sha:f73ad92e src:manual/43-lora.md:3 klas:E -->
+<!-- fc id:T-43-001 sha:f73ad92e src:manual/43-lora.md:3 klas:F -->
 ### T-43-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-43-002 sha:b58ad392 src:manual/43-lora.md:3 klas:E -->
+<!-- fc id:T-43-002 sha:b58ad392 src:manual/43-lora.md:3 klas:F -->
 ### T-43-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-43-017 sha:757cce3e src:manual/43-lora.md:25 klas:E -->
+<!-- fc id:T-43-017 sha:757cce3e src:manual/43-lora.md:25 klas:F -->
 ### T-43-017 · proza · рядок 25
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-43-019 sha:fd1a0dbe src:manual/43-lora.md:29 klas:E -->
+<!-- fc id:T-43-019 sha:fd1a0dbe src:manual/43-lora.md:29 klas:F -->
 ### T-43-019 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-43-020 sha:5f61f552 src:manual/43-lora.md:29 klas:E -->
+<!-- fc id:T-43-020 sha:5f61f552 src:manual/43-lora.md:29 klas:F -->
 ### T-43-020 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -369,7 +369,7 @@
 
 ---
 
-<!-- fc id:T-43-028 sha:7d748e30 src:manual/43-lora.md:52 klas:E -->
+<!-- fc id:T-43-028 sha:7d748e30 src:manual/43-lora.md:52 klas:F -->
 ### T-43-028 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -525,7 +525,7 @@
 
 ---
 
-<!-- fc id:T-43-040 sha:30daa2e8 src:manual/43-lora.md:82 klas:F -->
+<!-- fc id:T-43-040 sha:30daa2e8 src:manual/43-lora.md:82 klas:E -->
 ### T-43-040 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -577,7 +577,7 @@
 
 ---
 
-<!-- fc id:T-43-044 sha:66492356 src:manual/43-lora.md:91 klas:F -->
+<!-- fc id:T-43-044 sha:66492356 src:manual/43-lora.md:91 klas:E -->
 ### T-43-044 · proza · рядок 91
 
 **Книга каже, дослівно:**
@@ -629,7 +629,7 @@
 
 ---
 
-<!-- fc id:T-43-048 sha:47016a61 src:manual/43-lora.md:104 klas:E -->
+<!-- fc id:T-43-048 sha:47016a61 src:manual/43-lora.md:104 klas:F -->
 ### T-43-048 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -668,7 +668,7 @@
 
 ---
 
-<!-- fc id:T-43-051 sha:d1be272e src:manual/43-lora.md:109 klas:E -->
+<!-- fc id:T-43-051 sha:d1be272e src:manual/43-lora.md:109 klas:F -->
 ### T-43-051 · proza · рядок 109
 
 **Книга каже, дослівно:**
@@ -707,7 +707,7 @@
 
 ---
 
-<!-- fc id:T-43-054 sha:7b026d05 src:manual/43-lora.md:112 klas:F -->
+<!-- fc id:T-43-054 sha:7b026d05 src:manual/43-lora.md:112 klas:E -->
 ### T-43-054 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -902,7 +902,7 @@
 
 ---
 
-<!-- fc id:T-43-067 sha:6a4d56bf src:manual/43-lora.md:154 klas:E -->
+<!-- fc id:T-43-067 sha:6a4d56bf src:manual/43-lora.md:154 klas:F -->
 ### T-43-067 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -1008,7 +1008,7 @@
 
 ---
 
-<!-- fc id:T-43-074 sha:a4143a88 src:manual/43-lora.md:172 klas:F -->
+<!-- fc id:T-43-074 sha:a4143a88 src:manual/43-lora.md:172 klas:E -->
 ### T-43-074 · proza · рядок 172
 
 **Книга каже, дослівно:**
@@ -1021,7 +1021,7 @@
 
 ---
 
-<!-- fc id:T-43-075 sha:bf09864a src:manual/43-lora.md:175 klas:E -->
+<!-- fc id:T-43-075 sha:bf09864a src:manual/43-lora.md:175 klas:F -->
 ### T-43-075 · proza · рядок 175
 
 **Книга каже, дослівно:**
@@ -1047,7 +1047,7 @@
 
 ---
 
-<!-- fc id:T-43-077 sha:071a36e9 src:manual/43-lora.md:178 klas:E -->
+<!-- fc id:T-43-077 sha:071a36e9 src:manual/43-lora.md:178 klas:F -->
 ### T-43-077 · proza · рядок 178
 
 **Книга каже, дослівно:**
@@ -1073,7 +1073,7 @@
 
 ---
 
-<!-- fc id:T-43-079 sha:ca0a48aa src:manual/43-lora.md:187 klas:F -->
+<!-- fc id:T-43-079 sha:ca0a48aa src:manual/43-lora.md:187 klas:E -->
 ### T-43-079 · tablycya · рядок 187
 
 **Книга каже, дослівно:**
@@ -1151,7 +1151,7 @@
 
 ---
 
-<!-- fc id:T-43-085 sha:b8abf1d6 src:manual/43-lora.md:194 klas:F -->
+<!-- fc id:T-43-085 sha:b8abf1d6 src:manual/43-lora.md:194 klas:E -->
 ### T-43-085 · tablycya · рядок 194
 
 **Книга каже, дослівно:**
@@ -1164,7 +1164,7 @@
 
 ---
 
-<!-- fc id:T-43-086 sha:63cc0139 src:manual/43-lora.md:198 klas:E -->
+<!-- fc id:T-43-086 sha:63cc0139 src:manual/43-lora.md:198 klas:F -->
 ### T-43-086 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1216,7 +1216,7 @@
 
 ---
 
-<!-- fc id:T-43-090 sha:c7c95fc5 src:manual/43-lora.md:208 klas:E -->
+<!-- fc id:T-43-090 sha:c7c95fc5 src:manual/43-lora.md:208 klas:F -->
 ### T-43-090 · proza · рядок 208
 
 **Книга каже, дослівно:**

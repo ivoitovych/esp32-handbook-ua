@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-01-002 sha:f95e0db9 src:manual/01-platforma.md:3 klas:E -->
+<!-- fc id:T-01-002 sha:f95e0db9 src:manual/01-platforma.md:3 klas:F -->
 ### T-01-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-01-013 sha:7cff272c src:manual/01-platforma.md:30 klas:F -->
+<!-- fc id:T-01-013 sha:7cff272c src:manual/01-platforma.md:30 klas:E -->
 ### T-01-013 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-01-017 sha:11f6dd7b src:manual/01-platforma.md:42 klas:E -->
+<!-- fc id:T-01-017 sha:11f6dd7b src:manual/01-platforma.md:42 klas:F -->
 ### T-01-017 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-01-020 sha:8cedc349 src:manual/01-platforma.md:45 klas:E -->
+<!-- fc id:T-01-020 sha:8cedc349 src:manual/01-platforma.md:45 klas:F -->
 ### T-01-020 · proza · рядок 45
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-01-022 sha:7456d1c4 src:manual/01-platforma.md:53 klas:E -->
+<!-- fc id:T-01-022 sha:7456d1c4 src:manual/01-platforma.md:53 klas:F -->
 ### T-01-022 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-01-024 sha:181574a9 src:manual/01-platforma.md:57 klas:F -->
+<!-- fc id:T-01-024 sha:181574a9 src:manual/01-platforma.md:57 klas:E -->
 ### T-01-024 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -400,7 +400,7 @@
 
 ---
 
-<!-- fc id:T-01-031 sha:062e0342 src:manual/01-platforma.md:75 klas:E -->
+<!-- fc id:T-01-031 sha:062e0342 src:manual/01-platforma.md:75 klas:F -->
 ### T-01-031 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -1210,7 +1210,7 @@
 
 ---
 
-<!-- fc id:T-01-079 sha:736bafa5 src:manual/01-platforma.md:102 klas:E -->
+<!-- fc id:T-01-079 sha:736bafa5 src:manual/01-platforma.md:102 klas:F -->
 ### T-01-079 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -1444,7 +1444,7 @@
 
 ---
 
-<!-- fc id:T-01-095 sha:f8fc9e01 src:manual/01-platforma.md:146 klas:F -->
+<!-- fc id:T-01-095 sha:f8fc9e01 src:manual/01-platforma.md:146 klas:E -->
 ### T-01-095 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -1457,7 +1457,7 @@
 
 ---
 
-<!-- fc id:T-01-096 sha:2c4b59ad src:manual/01-platforma.md:151 klas:E -->
+<!-- fc id:T-01-096 sha:2c4b59ad src:manual/01-platforma.md:151 klas:F -->
 ### T-01-096 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -1470,7 +1470,7 @@
 
 ---
 
-<!-- fc id:T-01-097 sha:e53f71f9 src:manual/01-platforma.md:151 klas:F -->
+<!-- fc id:T-01-097 sha:e53f71f9 src:manual/01-platforma.md:151 klas:E -->
 ### T-01-097 · proza · рядок 151
 
 **Книга каже, дослівно:**

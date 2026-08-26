@@ -153,7 +153,7 @@
 
 ---
 
-<!-- fc id:T-41-010 sha:55309baf src:manual/41-ble.md:27 klas:F -->
+<!-- fc id:T-41-010 sha:55309baf src:manual/41-ble.md:27 klas:E -->
 ### T-41-010 · komirka · рядок 27
 
 **Книга каже, дослівно:**
@@ -179,7 +179,7 @@
 
 ---
 
-<!-- fc id:T-41-012 sha:dadfcd93 src:manual/41-ble.md:28 klas:F -->
+<!-- fc id:T-41-012 sha:dadfcd93 src:manual/41-ble.md:28 klas:E -->
 ### T-41-012 · komirka · рядок 28
 
 **Книга каже, дослівно:**
@@ -205,7 +205,7 @@
 
 ---
 
-<!-- fc id:T-41-014 sha:48639305 src:manual/41-ble.md:29 klas:F -->
+<!-- fc id:T-41-014 sha:48639305 src:manual/41-ble.md:29 klas:E -->
 ### T-41-014 · komirka · рядок 29
 
 **Книга каже, дослівно:**
@@ -231,7 +231,7 @@
 
 ---
 
-<!-- fc id:T-41-016 sha:3acb9138 src:manual/41-ble.md:30 klas:F -->
+<!-- fc id:T-41-016 sha:3acb9138 src:manual/41-ble.md:30 klas:E -->
 ### T-41-016 · komirka · рядок 30
 
 **Книга каже, дослівно:**
@@ -257,7 +257,7 @@
 
 ---
 
-<!-- fc id:T-41-018 sha:087229f4 src:manual/41-ble.md:31 klas:F -->
+<!-- fc id:T-41-018 sha:087229f4 src:manual/41-ble.md:31 klas:E -->
 ### T-41-018 · komirka · рядок 31
 
 **Книга каже, дослівно:**
@@ -283,7 +283,7 @@
 
 ---
 
-<!-- fc id:T-41-020 sha:fe2aada0 src:manual/41-ble.md:32 klas:F -->
+<!-- fc id:T-41-020 sha:fe2aada0 src:manual/41-ble.md:32 klas:E -->
 ### T-41-020 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -309,7 +309,7 @@
 
 ---
 
-<!-- fc id:T-41-022 sha:5a5441a8 src:manual/41-ble.md:33 klas:F -->
+<!-- fc id:T-41-022 sha:5a5441a8 src:manual/41-ble.md:33 klas:E -->
 ### T-41-022 · komirka · рядок 33
 
 **Книга каже, дослівно:**
@@ -348,7 +348,7 @@
 
 ---
 
-<!-- fc id:T-41-025 sha:e26940e5 src:manual/41-ble.md:39 klas:E -->
+<!-- fc id:T-41-025 sha:e26940e5 src:manual/41-ble.md:39 klas:F -->
 ### T-41-025 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -465,7 +465,7 @@
 
 ---
 
-<!-- fc id:T-41-034 sha:dce1a60e src:manual/41-ble.md:56 klas:F -->
+<!-- fc id:T-41-034 sha:dce1a60e src:manual/41-ble.md:56 klas:E -->
 ### T-41-034 · proza · рядок 56
 
 **Книга каже, дослівно:**
@@ -478,7 +478,7 @@
 
 ---
 
-<!-- fc id:T-41-035 sha:8af20e65 src:manual/41-ble.md:61 klas:E -->
+<!-- fc id:T-41-035 sha:8af20e65 src:manual/41-ble.md:61 klas:F -->
 ### T-41-035 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -491,7 +491,7 @@
 
 ---
 
-<!-- fc id:T-41-036 sha:5619b766 src:manual/41-ble.md:61 klas:E -->
+<!-- fc id:T-41-036 sha:5619b766 src:manual/41-ble.md:61 klas:F -->
 ### T-41-036 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -517,7 +517,7 @@
 
 ---
 
-<!-- fc id:T-41-038 sha:32a9ba20 src:manual/41-ble.md:65 klas:E -->
+<!-- fc id:T-41-038 sha:32a9ba20 src:manual/41-ble.md:65 klas:F -->
 ### T-41-038 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -543,7 +543,7 @@
 
 ---
 
-<!-- fc id:T-41-040 sha:f1921f7b src:manual/41-ble.md:74 klas:E -->
+<!-- fc id:T-41-040 sha:f1921f7b src:manual/41-ble.md:74 klas:F -->
 ### T-41-040 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -556,7 +556,7 @@
 
 ---
 
-<!-- fc id:T-41-041 sha:be3db6f9 src:manual/41-ble.md:76 klas:E -->
+<!-- fc id:T-41-041 sha:be3db6f9 src:manual/41-ble.md:76 klas:F -->
 ### T-41-041 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -582,7 +582,7 @@
 
 ---
 
-<!-- fc id:T-41-043 sha:3aa1db4f src:manual/41-ble.md:79 klas:E -->
+<!-- fc id:T-41-043 sha:3aa1db4f src:manual/41-ble.md:79 klas:F -->
 ### T-41-043 · proza · рядок 79
 
 **Книга каже, дослівно:**
@@ -655,7 +655,7 @@
 
 ---
 
-<!-- fc id:T-41-047 sha:76516abc src:manual/41-ble.md:95 klas:E -->
+<!-- fc id:T-41-047 sha:76516abc src:manual/41-ble.md:95 klas:F -->
 ### T-41-047 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -668,7 +668,7 @@
 
 ---
 
-<!-- fc id:T-41-048 sha:7611ba9c src:manual/41-ble.md:95 klas:E -->
+<!-- fc id:T-41-048 sha:7611ba9c src:manual/41-ble.md:95 klas:F -->
 ### T-41-048 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -681,7 +681,7 @@
 
 ---
 
-<!-- fc id:T-41-049 sha:642e02fc src:manual/41-ble.md:100 klas:E -->
+<!-- fc id:T-41-049 sha:642e02fc src:manual/41-ble.md:100 klas:F -->
 ### T-41-049 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -707,7 +707,7 @@
 
 ---
 
-<!-- fc id:T-41-051 sha:340f962d src:manual/41-ble.md:100 klas:F -->
+<!-- fc id:T-41-051 sha:340f962d src:manual/41-ble.md:100 klas:E -->
 ### T-41-051 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -733,7 +733,7 @@
 
 ---
 
-<!-- fc id:T-41-053 sha:667124ed src:manual/41-ble.md:108 klas:E -->
+<!-- fc id:T-41-053 sha:667124ed src:manual/41-ble.md:108 klas:F -->
 ### T-41-053 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -746,7 +746,7 @@
 
 ---
 
-<!-- fc id:T-41-054 sha:881b2151 src:manual/41-ble.md:114 klas:E -->
+<!-- fc id:T-41-054 sha:881b2151 src:manual/41-ble.md:114 klas:F -->
 ### T-41-054 · proza · рядок 114
 
 **Книга каже, дослівно:**
@@ -837,7 +837,7 @@
 
 ---
 
-<!-- fc id:T-41-061 sha:b4d73a01 src:manual/41-ble.md:131 klas:E -->
+<!-- fc id:T-41-061 sha:b4d73a01 src:manual/41-ble.md:131 klas:F -->
 ### T-41-061 · proza · рядок 131
 
 **Книга каже, дослівно:**
@@ -915,7 +915,7 @@
 
 ---
 
-<!-- fc id:T-41-067 sha:0d6116bf src:manual/41-ble.md:146 klas:F -->
+<!-- fc id:T-41-067 sha:0d6116bf src:manual/41-ble.md:146 klas:E -->
 ### T-41-067 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -941,7 +941,7 @@
 
 ---
 
-<!-- fc id:T-41-069 sha:6c9574e5 src:manual/41-ble.md:154 klas:E -->
+<!-- fc id:T-41-069 sha:6c9574e5 src:manual/41-ble.md:154 klas:F -->
 ### T-41-069 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -1099,7 +1099,7 @@
 
 ---
 
-<!-- fc id:T-41-079 sha:dd5da72d src:manual/41-ble.md:179 klas:E -->
+<!-- fc id:T-41-079 sha:dd5da72d src:manual/41-ble.md:179 klas:F -->
 ### T-41-079 · proza · рядок 179
 
 **Книга каже, дослівно:**

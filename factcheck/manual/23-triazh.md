@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-23-003 sha:dcd4b7ce src:manual/23-triazh.md:7 klas:F -->
+<!-- fc id:T-23-003 sha:dcd4b7ce src:manual/23-triazh.md:7 klas:E -->
 ### T-23-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-23-005 sha:f5dd14db src:manual/23-triazh.md:10 klas:F -->
+<!-- fc id:T-23-005 sha:f5dd14db src:manual/23-triazh.md:10 klas:E -->
 ### T-23-005 · proza · рядок 10
 
 **Книга каже, дослівно:**
@@ -502,7 +502,7 @@
 
 ---
 
-<!-- fc id:T-23-033 sha:7400e128 src:manual/23-triazh.md:59 klas:E -->
+<!-- fc id:T-23-033 sha:7400e128 src:manual/23-triazh.md:59 klas:F -->
 ### T-23-033 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -515,7 +515,7 @@
 
 ---
 
-<!-- fc id:T-23-034 sha:8f3fb1ea src:manual/23-triazh.md:65 klas:F -->
+<!-- fc id:T-23-034 sha:8f3fb1ea src:manual/23-triazh.md:65 klas:E -->
 ### T-23-034 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -645,7 +645,7 @@
 
 ---
 
-<!-- fc id:T-23-044 sha:236a2c98 src:manual/23-triazh.md:86 klas:F -->
+<!-- fc id:T-23-044 sha:236a2c98 src:manual/23-triazh.md:86 klas:E -->
 ### T-23-044 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -671,7 +671,7 @@
 
 ---
 
-<!-- fc id:T-23-046 sha:6c28adfe src:manual/23-triazh.md:90 klas:E -->
+<!-- fc id:T-23-046 sha:6c28adfe src:manual/23-triazh.md:90 klas:F -->
 ### T-23-046 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -697,7 +697,7 @@
 
 ---
 
-<!-- fc id:T-23-048 sha:096c7af0 src:manual/23-triazh.md:93 klas:F -->
+<!-- fc id:T-23-048 sha:096c7af0 src:manual/23-triazh.md:93 klas:E -->
 ### T-23-048 · proza · рядок 93
 
 **Книга каже, дослівно:**
@@ -865,7 +865,7 @@
 
 ---
 
-<!-- fc id:T-23-059 sha:044a0a3f src:manual/23-triazh.md:116 klas:F -->
+<!-- fc id:T-23-059 sha:044a0a3f src:manual/23-triazh.md:116 klas:E -->
 ### T-23-059 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -878,7 +878,7 @@
 
 ---
 
-<!-- fc id:T-23-060 sha:e016560a src:manual/23-triazh.md:116 klas:F -->
+<!-- fc id:T-23-060 sha:e016560a src:manual/23-triazh.md:116 klas:E -->
 ### T-23-060 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -956,7 +956,7 @@
 
 ---
 
-<!-- fc id:T-23-066 sha:d2aa7bff src:manual/23-triazh.md:127 klas:F -->
+<!-- fc id:T-23-066 sha:d2aa7bff src:manual/23-triazh.md:127 klas:E -->
 ### T-23-066 · proza · рядок 127
 
 **Книга каже, дослівно:**
@@ -969,7 +969,7 @@
 
 ---
 
-<!-- fc id:T-23-067 sha:fdca5085 src:manual/23-triazh.md:130 klas:E -->
+<!-- fc id:T-23-067 sha:fdca5085 src:manual/23-triazh.md:130 klas:F -->
 ### T-23-067 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -982,7 +982,7 @@
 
 ---
 
-<!-- fc id:T-23-068 sha:11c9cef8 src:manual/23-triazh.md:130 klas:E -->
+<!-- fc id:T-23-068 sha:11c9cef8 src:manual/23-triazh.md:130 klas:F -->
 ### T-23-068 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -1034,7 +1034,7 @@
 
 ---
 
-<!-- fc id:T-23-072 sha:96ba5b49 src:manual/23-triazh.md:142 klas:E -->
+<!-- fc id:T-23-072 sha:96ba5b49 src:manual/23-triazh.md:142 klas:F -->
 ### T-23-072 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -1112,7 +1112,7 @@
 
 ---
 
-<!-- fc id:T-23-078 sha:e949c09e src:manual/23-triazh.md:158 klas:F -->
+<!-- fc id:T-23-078 sha:e949c09e src:manual/23-triazh.md:158 klas:E -->
 ### T-23-078 · komirka · рядок 158
 
 **Книга каже, дослівно:**
@@ -1125,7 +1125,7 @@
 
 ---
 
-<!-- fc id:T-23-079 sha:6ae1bc07 src:manual/23-triazh.md:158 klas:F -->
+<!-- fc id:T-23-079 sha:6ae1bc07 src:manual/23-triazh.md:158 klas:E -->
 ### T-23-079 · komirka · рядок 158
 
 **Книга каже, дослівно:**
@@ -1138,7 +1138,7 @@
 
 ---
 
-<!-- fc id:T-23-080 sha:2641f94f src:manual/23-triazh.md:159 klas:F -->
+<!-- fc id:T-23-080 sha:2641f94f src:manual/23-triazh.md:159 klas:E -->
 ### T-23-080 · komirka · рядок 159
 
 **Книга каже, дослівно:**
@@ -1151,7 +1151,7 @@
 
 ---
 
-<!-- fc id:T-23-081 sha:3831e6a7 src:manual/23-triazh.md:159 klas:F -->
+<!-- fc id:T-23-081 sha:3831e6a7 src:manual/23-triazh.md:159 klas:E -->
 ### T-23-081 · komirka · рядок 159
 
 **Книга каже, дослівно:**
@@ -1164,7 +1164,7 @@
 
 ---
 
-<!-- fc id:T-23-082 sha:84245083 src:manual/23-triazh.md:160 klas:F -->
+<!-- fc id:T-23-082 sha:84245083 src:manual/23-triazh.md:160 klas:E -->
 ### T-23-082 · komirka · рядок 160
 
 **Книга каже, дослівно:**
@@ -1177,7 +1177,7 @@
 
 ---
 
-<!-- fc id:T-23-083 sha:91a76143 src:manual/23-triazh.md:160 klas:F -->
+<!-- fc id:T-23-083 sha:91a76143 src:manual/23-triazh.md:160 klas:E -->
 ### T-23-083 · komirka · рядок 160
 
 **Книга каже, дослівно:**
@@ -1216,7 +1216,7 @@
 
 ---
 
-<!-- fc id:T-23-086 sha:7e5e8bc8 src:manual/23-triazh.md:162 klas:F -->
+<!-- fc id:T-23-086 sha:7e5e8bc8 src:manual/23-triazh.md:162 klas:E -->
 ### T-23-086 · komirka · рядок 162
 
 **Книга каже, дослівно:**
@@ -1229,7 +1229,7 @@
 
 ---
 
-<!-- fc id:T-23-087 sha:c95de38f src:manual/23-triazh.md:162 klas:F -->
+<!-- fc id:T-23-087 sha:c95de38f src:manual/23-triazh.md:162 klas:E -->
 ### T-23-087 · komirka · рядок 162
 
 **Книга каже, дослівно:**
@@ -1242,7 +1242,7 @@
 
 ---
 
-<!-- fc id:T-23-088 sha:f93dfb64 src:manual/23-triazh.md:163 klas:F -->
+<!-- fc id:T-23-088 sha:f93dfb64 src:manual/23-triazh.md:163 klas:E -->
 ### T-23-088 · komirka · рядок 163
 
 **Книга каже, дослівно:**
@@ -1255,7 +1255,7 @@
 
 ---
 
-<!-- fc id:T-23-089 sha:2c0adf58 src:manual/23-triazh.md:163 klas:F -->
+<!-- fc id:T-23-089 sha:2c0adf58 src:manual/23-triazh.md:163 klas:E -->
 ### T-23-089 · komirka · рядок 163
 
 **Книга каже, дослівно:**
@@ -1268,7 +1268,7 @@
 
 ---
 
-<!-- fc id:T-23-090 sha:313a187d src:manual/23-triazh.md:164 klas:F -->
+<!-- fc id:T-23-090 sha:313a187d src:manual/23-triazh.md:164 klas:E -->
 ### T-23-090 · komirka · рядок 164
 
 **Книга каже, дослівно:**
@@ -1281,7 +1281,7 @@
 
 ---
 
-<!-- fc id:T-23-091 sha:3594c70a src:manual/23-triazh.md:164 klas:F -->
+<!-- fc id:T-23-091 sha:3594c70a src:manual/23-triazh.md:164 klas:E -->
 ### T-23-091 · komirka · рядок 164
 
 **Книга каже, дослівно:**
@@ -1346,7 +1346,7 @@
 
 ---
 
-<!-- fc id:T-23-096 sha:875088d7 src:manual/23-triazh.md:170 klas:F -->
+<!-- fc id:T-23-096 sha:875088d7 src:manual/23-triazh.md:170 klas:E -->
 ### T-23-096 · proza · рядок 170
 
 **Книга каже, дослівно:**

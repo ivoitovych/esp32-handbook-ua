@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-04-001 sha:cc72d811 src:manual/04-peryferiya.md:3 klas:E -->
+<!-- fc id:T-04-001 sha:cc72d811 src:manual/04-peryferiya.md:3 klas:F -->
 ### T-04-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-04-004 sha:3dda7bf1 src:manual/04-peryferiya.md:7 klas:F -->
+<!-- fc id:T-04-004 sha:3dda7bf1 src:manual/04-peryferiya.md:7 klas:E -->
 ### T-04-004 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-04-010 sha:ff204556 src:manual/04-peryferiya.md:31 klas:E -->
+<!-- fc id:T-04-010 sha:ff204556 src:manual/04-peryferiya.md:31 klas:F -->
 ### T-04-010 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -164,7 +164,7 @@
 
 ---
 
-<!-- fc id:T-04-012 sha:a3ccd8fd src:manual/04-peryferiya.md:31 klas:E -->
+<!-- fc id:T-04-012 sha:a3ccd8fd src:manual/04-peryferiya.md:31 klas:F -->
 ### T-04-012 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -229,7 +229,7 @@
 
 ---
 
-<!-- fc id:T-04-017 sha:cf430c5b src:manual/04-peryferiya.md:42 klas:F -->
+<!-- fc id:T-04-017 sha:cf430c5b src:manual/04-peryferiya.md:42 klas:E -->
 ### T-04-017 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -585,7 +585,7 @@
 
 ---
 
-<!-- fc id:T-04-043 sha:20f2f218 src:manual/04-peryferiya.md:68 klas:F -->
+<!-- fc id:T-04-043 sha:20f2f218 src:manual/04-peryferiya.md:68 klas:E -->
 ### T-04-043 · komirka · рядок 68
 
 **Книга каже, дослівно:**
@@ -598,7 +598,7 @@
 
 ---
 
-<!-- fc id:T-04-044 sha:e6046b59 src:manual/04-peryferiya.md:68 klas:F -->
+<!-- fc id:T-04-044 sha:e6046b59 src:manual/04-peryferiya.md:68 klas:E -->
 ### T-04-044 · komirka · рядок 68
 
 **Книга каже, дослівно:**
@@ -611,7 +611,7 @@
 
 ---
 
-<!-- fc id:T-04-045 sha:0339aa31 src:manual/04-peryferiya.md:69 klas:F -->
+<!-- fc id:T-04-045 sha:0339aa31 src:manual/04-peryferiya.md:69 klas:E -->
 ### T-04-045 · komirka · рядок 69
 
 **Книга каже, дослівно:**
@@ -624,7 +624,7 @@
 
 ---
 
-<!-- fc id:T-04-046 sha:b285d77f src:manual/04-peryferiya.md:69 klas:F -->
+<!-- fc id:T-04-046 sha:b285d77f src:manual/04-peryferiya.md:69 klas:E -->
 ### T-04-046 · komirka · рядок 69
 
 **Книга каже, дослівно:**
@@ -702,7 +702,7 @@
 
 ---
 
-<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:77 klas:F -->
+<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:77 klas:E -->
 ### T-04-052 · komirka · рядок 77
 
 **Книга каже, дослівно:**
@@ -715,7 +715,7 @@
 
 ---
 
-<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:77 klas:F -->
+<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:77 klas:E -->
 ### T-04-053 · komirka · рядок 77
 
 **Книга каже, дослівно:**
@@ -728,7 +728,7 @@
 
 ---
 
-<!-- fc id:T-04-054 sha:6b77ee59 src:manual/04-peryferiya.md:82 klas:E -->
+<!-- fc id:T-04-054 sha:6b77ee59 src:manual/04-peryferiya.md:82 klas:F -->
 ### T-04-054 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -741,7 +741,7 @@
 
 ---
 
-<!-- fc id:T-04-055 sha:4ba300f4 src:manual/04-peryferiya.md:87 klas:E -->
+<!-- fc id:T-04-055 sha:4ba300f4 src:manual/04-peryferiya.md:87 klas:F -->
 ### T-04-055 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -832,7 +832,7 @@
 
 ---
 
-<!-- fc id:T-04-062 sha:0bbc6793 src:manual/04-peryferiya.md:98 klas:E -->
+<!-- fc id:T-04-062 sha:0bbc6793 src:manual/04-peryferiya.md:98 klas:F -->
 ### T-04-062 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -858,7 +858,7 @@
 
 ---
 
-<!-- fc id:T-04-064 sha:70bda4e1 src:manual/04-peryferiya.md:104 klas:F -->
+<!-- fc id:T-04-064 sha:70bda4e1 src:manual/04-peryferiya.md:104 klas:E -->
 ### T-04-064 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -871,7 +871,7 @@
 
 ---
 
-<!-- fc id:T-04-065 sha:fec794dc src:manual/04-peryferiya.md:108 klas:E -->
+<!-- fc id:T-04-065 sha:fec794dc src:manual/04-peryferiya.md:108 klas:F -->
 ### T-04-065 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -1692,7 +1692,7 @@
 
 ---
 
-<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:121 klas:F -->
+<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:121 klas:E -->
 ### T-04-110 · komirka · рядок 121
 
 **Книга каже, дослівно:**
@@ -2048,7 +2048,7 @@
 
 ---
 
-<!-- fc id:T-04-133 sha:c93861a4 src:manual/04-peryferiya.md:150 klas:E -->
+<!-- fc id:T-04-133 sha:c93861a4 src:manual/04-peryferiya.md:150 klas:F -->
 ### T-04-133 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -2126,7 +2126,7 @@
 
 ---
 
-<!-- fc id:T-04-139 sha:1c59341c src:manual/04-peryferiya.md:166 klas:E -->
+<!-- fc id:T-04-139 sha:1c59341c src:manual/04-peryferiya.md:166 klas:F -->
 ### T-04-139 · proza · рядок 166
 
 **Книга каже, дослівно:**
@@ -2191,7 +2191,7 @@
 
 ---
 
-<!-- fc id:T-04-144 sha:38202477 src:manual/04-peryferiya.md:181 klas:E -->
+<!-- fc id:T-04-144 sha:38202477 src:manual/04-peryferiya.md:181 klas:F -->
 ### T-04-144 · proza · рядок 181
 
 **Книга каже, дослівно:**
@@ -2261,7 +2261,7 @@
 
 ---
 
-<!-- fc id:T-04-148 sha:a1f5c1d5 src:manual/04-peryferiya.md:195 klas:E -->
+<!-- fc id:T-04-148 sha:a1f5c1d5 src:manual/04-peryferiya.md:195 klas:F -->
 ### T-04-148 · proza · рядок 195
 
 **Книга каже, дослівно:**
@@ -2274,7 +2274,7 @@
 
 ---
 
-<!-- fc id:T-04-149 sha:9ee3c94f src:manual/04-peryferiya.md:198 klas:E -->
+<!-- fc id:T-04-149 sha:9ee3c94f src:manual/04-peryferiya.md:198 klas:F -->
 ### T-04-149 · proza · рядок 198
 
 **Книга каже, дослівно:**

@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-F-002 sha:41af133d src:dodatky/f-oflayn.md:3 klas:F -->
+<!-- fc id:T-F-002 sha:41af133d src:dodatky/f-oflayn.md:3 klas:E -->
 ### T-F-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-F-005 sha:773e202f src:dodatky/f-oflayn.md:11 klas:E -->
+<!-- fc id:T-F-005 sha:773e202f src:dodatky/f-oflayn.md:11 klas:F -->
 ### T-F-005 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-F-007 sha:977a7391 src:dodatky/f-oflayn.md:21 klas:E -->
+<!-- fc id:T-F-007 sha:977a7391 src:dodatky/f-oflayn.md:21 klas:F -->
 ### T-F-007 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-F-010 sha:8a5c571c src:dodatky/f-oflayn.md:31 klas:F -->
+<!-- fc id:T-F-010 sha:8a5c571c src:dodatky/f-oflayn.md:31 klas:E -->
 ### T-F-010 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-F-013 sha:4ec254e1 src:dodatky/f-oflayn.md:53 klas:F -->
+<!-- fc id:T-F-013 sha:4ec254e1 src:dodatky/f-oflayn.md:53 klas:E -->
 ### T-F-013 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-F-015 sha:576d4fa7 src:dodatky/f-oflayn.md:68 klas:F -->
+<!-- fc id:T-F-015 sha:576d4fa7 src:dodatky/f-oflayn.md:68 klas:E -->
 ### T-F-015 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-F-022 sha:5776100f src:dodatky/f-oflayn.md:99 klas:F -->
+<!-- fc id:T-F-022 sha:5776100f src:dodatky/f-oflayn.md:99 klas:E -->
 ### T-F-022 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -327,7 +327,7 @@
 
 ---
 
-<!-- fc id:T-F-024 sha:de0d6323 src:dodatky/f-oflayn.md:99 klas:F -->
+<!-- fc id:T-F-024 sha:de0d6323 src:dodatky/f-oflayn.md:99 klas:E -->
 ### T-F-024 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -340,7 +340,7 @@
 
 ---
 
-<!-- fc id:T-F-025 sha:c5e8dc8a src:dodatky/f-oflayn.md:99 klas:F -->
+<!-- fc id:T-F-025 sha:c5e8dc8a src:dodatky/f-oflayn.md:99 klas:E -->
 ### T-F-025 · proza · рядок 99
 
 **Книга каже, дослівно:**

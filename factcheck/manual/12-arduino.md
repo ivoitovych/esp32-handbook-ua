@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-12-001 sha:5f8c5848 src:manual/12-arduino.md:3 klas:E -->
+<!-- fc id:T-12-001 sha:5f8c5848 src:manual/12-arduino.md:3 klas:F -->
 ### T-12-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-12-002 sha:fc7a0c3b src:manual/12-arduino.md:3 klas:E -->
+<!-- fc id:T-12-002 sha:fc7a0c3b src:manual/12-arduino.md:3 klas:F -->
 ### T-12-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-12-003 sha:289c5c64 src:manual/12-arduino.md:7 klas:E -->
+<!-- fc id:T-12-003 sha:289c5c64 src:manual/12-arduino.md:7 klas:F -->
 ### T-12-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-12-014 sha:afe776c2 src:manual/12-arduino.md:42 klas:E -->
+<!-- fc id:T-12-014 sha:afe776c2 src:manual/12-arduino.md:42 klas:F -->
 ### T-12-014 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-12-016 sha:1251a958 src:manual/12-arduino.md:48 klas:E -->
+<!-- fc id:T-12-016 sha:1251a958 src:manual/12-arduino.md:48 klas:F -->
 ### T-12-016 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-12-018 sha:af7b81a8 src:manual/12-arduino.md:52 klas:E -->
+<!-- fc id:T-12-018 sha:af7b81a8 src:manual/12-arduino.md:52 klas:F -->
 ### T-12-018 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-12-020 sha:9ed0b502 src:manual/12-arduino.md:58 klas:E -->
+<!-- fc id:T-12-020 sha:9ed0b502 src:manual/12-arduino.md:58 klas:F -->
 ### T-12-020 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-12-021 sha:2afff519 src:manual/12-arduino.md:61 klas:E -->
+<!-- fc id:T-12-021 sha:2afff519 src:manual/12-arduino.md:61 klas:F -->
 ### T-12-021 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -328,7 +328,7 @@
 
 ---
 
-<!-- fc id:T-12-024 sha:1bce55a8 src:manual/12-arduino.md:74 klas:E -->
+<!-- fc id:T-12-024 sha:1bce55a8 src:manual/12-arduino.md:74 klas:F -->
 ### T-12-024 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -432,7 +432,7 @@
 
 ---
 
-<!-- fc id:T-12-032 sha:cc30c267 src:manual/12-arduino.md:92 klas:E -->
+<!-- fc id:T-12-032 sha:cc30c267 src:manual/12-arduino.md:92 klas:F -->
 ### T-12-032 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -471,7 +471,7 @@
 
 ---
 
-<!-- fc id:T-12-035 sha:e16d2016 src:manual/12-arduino.md:103 klas:E -->
+<!-- fc id:T-12-035 sha:e16d2016 src:manual/12-arduino.md:103 klas:F -->
 ### T-12-035 · proza · рядок 103
 
 **Книга каже, дослівно:**
@@ -497,7 +497,7 @@
 
 ---
 
-<!-- fc id:T-12-037 sha:5a80dfbb src:manual/12-arduino.md:106 klas:F -->
+<!-- fc id:T-12-037 sha:5a80dfbb src:manual/12-arduino.md:106 klas:E -->
 ### T-12-037 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -588,7 +588,7 @@
 
 ---
 
-<!-- fc id:T-12-044 sha:6a64568c src:manual/12-arduino.md:124 klas:E -->
+<!-- fc id:T-12-044 sha:6a64568c src:manual/12-arduino.md:124 klas:F -->
 ### T-12-044 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -640,7 +640,7 @@
 
 ---
 
-<!-- fc id:T-12-048 sha:09499ed7 src:manual/12-arduino.md:132 klas:E -->
+<!-- fc id:T-12-048 sha:09499ed7 src:manual/12-arduino.md:132 klas:F -->
 ### T-12-048 · proza · рядок 132
 
 **Книга каже, дослівно:**
@@ -666,7 +666,7 @@
 
 ---
 
-<!-- fc id:T-12-050 sha:dad68612 src:manual/12-arduino.md:137 klas:E -->
+<!-- fc id:T-12-050 sha:dad68612 src:manual/12-arduino.md:137 klas:F -->
 ### T-12-050 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -679,7 +679,7 @@
 
 ---
 
-<!-- fc id:T-12-051 sha:f12c5e0a src:manual/12-arduino.md:143 klas:F -->
+<!-- fc id:T-12-051 sha:f12c5e0a src:manual/12-arduino.md:143 klas:E -->
 ### T-12-051 · tablycya · рядок 143
 
 **Книга каже, дослівно:**
@@ -796,7 +796,7 @@
 
 ---
 
-<!-- fc id:T-12-060 sha:ae15ae1f src:manual/12-arduino.md:156 klas:E -->
+<!-- fc id:T-12-060 sha:ae15ae1f src:manual/12-arduino.md:156 klas:F -->
 ### T-12-060 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -822,7 +822,7 @@
 
 ---
 
-<!-- fc id:T-12-062 sha:6ee061fa src:manual/12-arduino.md:161 klas:E -->
+<!-- fc id:T-12-062 sha:6ee061fa src:manual/12-arduino.md:161 klas:F -->
 ### T-12-062 · proza · рядок 161
 
 **Книга каже, дослівно:**
@@ -835,7 +835,7 @@
 
 ---
 
-<!-- fc id:T-12-063 sha:aa0ffa0f src:manual/12-arduino.md:164 klas:F -->
+<!-- fc id:T-12-063 sha:aa0ffa0f src:manual/12-arduino.md:164 klas:E -->
 ### T-12-063 · proza · рядок 164
 
 **Книга каже, дослівно:**
@@ -848,7 +848,7 @@
 
 ---
 
-<!-- fc id:T-12-064 sha:65d1b9a1 src:manual/12-arduino.md:167 klas:E -->
+<!-- fc id:T-12-064 sha:65d1b9a1 src:manual/12-arduino.md:167 klas:F -->
 ### T-12-064 · proza · рядок 167
 
 **Книга каже, дослівно:**

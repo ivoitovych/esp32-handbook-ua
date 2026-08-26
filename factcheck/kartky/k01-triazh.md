@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-K01-016 sha:735b1c96 src:kartky/k01-triazh.md:18 klas:E -->
+<!-- fc id:T-K01-016 sha:735b1c96 src:kartky/k01-triazh.md:18 klas:F -->
 ### T-K01-016 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-K01-018 sha:12a04661 src:kartky/k01-triazh.md:24 klas:E -->
+<!-- fc id:T-K01-018 sha:12a04661 src:kartky/k01-triazh.md:24 klas:F -->
 ### T-K01-018 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-K01-022 sha:648833a9 src:kartky/k01-triazh.md:35 klas:E -->
+<!-- fc id:T-K01-022 sha:648833a9 src:kartky/k01-triazh.md:35 klas:F -->
 ### T-K01-022 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -512,7 +512,7 @@
 
 ---
 
-<!-- fc id:T-K01-038 sha:e8fd95bd src:kartky/k01-triazh.md:68 klas:F -->
+<!-- fc id:T-K01-038 sha:e8fd95bd src:kartky/k01-triazh.md:68 klas:E -->
 ### T-K01-038 · tablycya · рядок 68
 
 **Книга каже, дослівно:**
@@ -525,7 +525,7 @@
 
 ---
 
-<!-- fc id:T-K01-039 sha:201f9419 src:kartky/k01-triazh.md:70 klas:F -->
+<!-- fc id:T-K01-039 sha:201f9419 src:kartky/k01-triazh.md:70 klas:E -->
 ### T-K01-039 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
@@ -538,7 +538,7 @@
 
 ---
 
-<!-- fc id:T-K01-040 sha:017fe3de src:kartky/k01-triazh.md:71 klas:F -->
+<!-- fc id:T-K01-040 sha:017fe3de src:kartky/k01-triazh.md:71 klas:E -->
 ### T-K01-040 · tablycya · рядок 71
 
 **Книга каже, дослівно:**
@@ -551,7 +551,7 @@
 
 ---
 
-<!-- fc id:T-K01-041 sha:64bb37ea src:kartky/k01-triazh.md:72 klas:F -->
+<!-- fc id:T-K01-041 sha:64bb37ea src:kartky/k01-triazh.md:72 klas:E -->
 ### T-K01-041 · tablycya · рядок 72
 
 **Книга каже, дослівно:**
@@ -564,7 +564,7 @@
 
 ---
 
-<!-- fc id:T-K01-042 sha:07ca066d src:kartky/k01-triazh.md:73 klas:F -->
+<!-- fc id:T-K01-042 sha:07ca066d src:kartky/k01-triazh.md:73 klas:E -->
 ### T-K01-042 · tablycya · рядок 73
 
 **Книга каже, дослівно:**
@@ -577,7 +577,7 @@
 
 ---
 
-<!-- fc id:T-K01-043 sha:564e5a63 src:kartky/k01-triazh.md:74 klas:F -->
+<!-- fc id:T-K01-043 sha:564e5a63 src:kartky/k01-triazh.md:74 klas:E -->
 ### T-K01-043 · tablycya · рядок 74
 
 **Книга каже, дослівно:**
@@ -590,7 +590,7 @@
 
 ---
 
-<!-- fc id:T-K01-044 sha:d4503abd src:kartky/k01-triazh.md:75 klas:F -->
+<!-- fc id:T-K01-044 sha:d4503abd src:kartky/k01-triazh.md:75 klas:E -->
 ### T-K01-044 · tablycya · рядок 75
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-53-001 sha:a6fc1280 src:manual/53-akum.md:3 klas:F -->
+<!-- fc id:T-53-001 sha:a6fc1280 src:manual/53-akum.md:3 klas:E -->
 ### T-53-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -685,7 +685,7 @@
 
 ---
 
-<!-- fc id:T-53-052 sha:6e227269 src:manual/53-akum.md:143 klas:F -->
+<!-- fc id:T-53-052 sha:6e227269 src:manual/53-akum.md:143 klas:E -->
 ### T-53-052 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -737,7 +737,7 @@
 
 ---
 
-<!-- fc id:T-53-056 sha:b0df9cc0 src:manual/53-akum.md:149 klas:E -->
+<!-- fc id:T-53-056 sha:b0df9cc0 src:manual/53-akum.md:149 klas:F -->
 ### T-53-056 · proza · рядок 149
 
 **Книга каже, дослівно:**

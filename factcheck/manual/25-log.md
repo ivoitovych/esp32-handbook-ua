@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-25-002 sha:6bf63e85 src:manual/25-log.md:3 klas:E -->
+<!-- fc id:T-25-002 sha:6bf63e85 src:manual/25-log.md:3 klas:F -->
 ### T-25-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-25-018 sha:61c4e333 src:manual/25-log.md:23 klas:F -->
+<!-- fc id:T-25-018 sha:61c4e333 src:manual/25-log.md:23 klas:E -->
 ### T-25-018 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-25-019 sha:9a237f54 src:manual/25-log.md:23 klas:F -->
+<!-- fc id:T-25-019 sha:9a237f54 src:manual/25-log.md:23 klas:E -->
 ### T-25-019 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-25-023 sha:14867314 src:manual/25-log.md:36 klas:F -->
+<!-- fc id:T-25-023 sha:14867314 src:manual/25-log.md:36 klas:E -->
 ### T-25-023 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-25-027 sha:3a787d13 src:manual/25-log.md:43 klas:F -->
+<!-- fc id:T-25-027 sha:3a787d13 src:manual/25-log.md:43 klas:E -->
 ### T-25-027 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -396,7 +396,7 @@
 
 ---
 
-<!-- fc id:T-25-031 sha:3ff45934 src:manual/25-log.md:50 klas:F -->
+<!-- fc id:T-25-031 sha:3ff45934 src:manual/25-log.md:50 klas:E -->
 ### T-25-031 · proza · рядок 50
 
 **Книга каже, дослівно:**
@@ -528,7 +528,7 @@
 
 ---
 
-<!-- fc id:T-25-041 sha:37e35320 src:manual/25-log.md:74 klas:E -->
+<!-- fc id:T-25-041 sha:37e35320 src:manual/25-log.md:74 klas:F -->
 ### T-25-041 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -956,7 +956,7 @@
 
 ---
 
-<!-- fc id:T-25-062 sha:6526e058 src:manual/25-log.md:125 klas:F -->
+<!-- fc id:T-25-062 sha:6526e058 src:manual/25-log.md:125 klas:E -->
 ### T-25-062 · tablycya · рядок 125
 
 **Книга каже, дослівно:**
@@ -1398,7 +1398,7 @@
 
 ---
 
-<!-- fc id:T-25-083 sha:f06e8d96 src:manual/25-log.md:174 klas:F -->
+<!-- fc id:T-25-083 sha:f06e8d96 src:manual/25-log.md:174 klas:E -->
 ### T-25-083 · proza · рядок 174
 
 **Книга каже, дослівно:**
@@ -1411,7 +1411,7 @@
 
 ---
 
-<!-- fc id:T-25-084 sha:583d19b2 src:manual/25-log.md:182 klas:E -->
+<!-- fc id:T-25-084 sha:583d19b2 src:manual/25-log.md:182 klas:F -->
 ### T-25-084 · proza · рядок 182
 
 **Книга каже, дослівно:**
@@ -1424,7 +1424,7 @@
 
 ---
 
-<!-- fc id:T-25-085 sha:f94270a6 src:manual/25-log.md:184 klas:E -->
+<!-- fc id:T-25-085 sha:f94270a6 src:manual/25-log.md:184 klas:F -->
 ### T-25-085 · proza · рядок 184
 
 **Книга каже, дослівно:**
@@ -1450,7 +1450,7 @@
 
 ---
 
-<!-- fc id:T-25-087 sha:adabfc36 src:manual/25-log.md:184 klas:E -->
+<!-- fc id:T-25-087 sha:adabfc36 src:manual/25-log.md:184 klas:F -->
 ### T-25-087 · proza · рядок 184
 
 **Книга каже, дослівно:**
@@ -1476,7 +1476,7 @@
 
 ---
 
-<!-- fc id:T-25-089 sha:ad82eb4f src:manual/25-log.md:189 klas:F -->
+<!-- fc id:T-25-089 sha:ad82eb4f src:manual/25-log.md:189 klas:E -->
 ### T-25-089 · proza · рядок 189
 
 **Книга каже, дослівно:**
@@ -1489,7 +1489,7 @@
 
 ---
 
-<!-- fc id:T-25-090 sha:dea56f2b src:manual/25-log.md:193 klas:E -->
+<!-- fc id:T-25-090 sha:dea56f2b src:manual/25-log.md:193 klas:F -->
 ### T-25-090 · proza · рядок 193
 
 **Книга каже, дослівно:**
@@ -1515,7 +1515,7 @@
 
 ---
 
-<!-- fc id:T-25-092 sha:e1b1ec54 src:manual/25-log.md:197 klas:F -->
+<!-- fc id:T-25-092 sha:e1b1ec54 src:manual/25-log.md:197 klas:E -->
 ### T-25-092 · proza · рядок 197
 
 **Книга каже, дослівно:**
@@ -1541,7 +1541,7 @@
 
 ---
 
-<!-- fc id:T-25-094 sha:a32f7f3c src:manual/25-log.md:200 klas:E -->
+<!-- fc id:T-25-094 sha:a32f7f3c src:manual/25-log.md:200 klas:F -->
 ### T-25-094 · proza · рядок 200
 
 **Книга каже, дослівно:**
@@ -1593,7 +1593,7 @@
 
 ---
 
-<!-- fc id:T-25-098 sha:ce4ac3ed src:manual/25-log.md:217 klas:F -->
+<!-- fc id:T-25-098 sha:ce4ac3ed src:manual/25-log.md:217 klas:E -->
 ### T-25-098 · proza · рядок 217
 
 **Книга каже, дослівно:**

@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-42-004 sha:bdf974c6 src:manual/42-espnow.md:11 klas:E -->
+<!-- fc id:T-42-004 sha:bdf974c6 src:manual/42-espnow.md:11 klas:F -->
 ### T-42-004 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-42-005 sha:63289213 src:manual/42-espnow.md:11 klas:F -->
+<!-- fc id:T-42-005 sha:63289213 src:manual/42-espnow.md:11 klas:E -->
 ### T-42-005 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-42-006 sha:9eee4e7d src:manual/42-espnow.md:16 klas:E -->
+<!-- fc id:T-42-006 sha:9eee4e7d src:manual/42-espnow.md:16 klas:F -->
 ### T-42-006 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-42-008 sha:ea18b432 src:manual/42-espnow.md:19 klas:F -->
+<!-- fc id:T-42-008 sha:ea18b432 src:manual/42-espnow.md:19 klas:E -->
 ### T-42-008 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-42-027 sha:3b9efbae src:manual/42-espnow.md:62 klas:E -->
+<!-- fc id:T-42-027 sha:3b9efbae src:manual/42-espnow.md:62 klas:F -->
 ### T-42-027 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-42-028 sha:96cc2aa7 src:manual/42-espnow.md:65 klas:F -->
+<!-- fc id:T-42-028 sha:96cc2aa7 src:manual/42-espnow.md:65 klas:E -->
 ### T-42-028 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -754,7 +754,7 @@
 
 ---
 
-<!-- fc id:T-42-045 sha:3ccbedcd src:manual/42-espnow.md:112 klas:E -->
+<!-- fc id:T-42-045 sha:3ccbedcd src:manual/42-espnow.md:112 klas:F -->
 ### T-42-045 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -813,7 +813,7 @@
 
 ---
 
-<!-- fc id:T-42-048 sha:5e201060 src:manual/42-espnow.md:121 klas:E -->
+<!-- fc id:T-42-048 sha:5e201060 src:manual/42-espnow.md:121 klas:F -->
 ### T-42-048 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -865,7 +865,7 @@
 
 ---
 
-<!-- fc id:T-42-052 sha:1cbf3006 src:manual/42-espnow.md:124 klas:F -->
+<!-- fc id:T-42-052 sha:1cbf3006 src:manual/42-espnow.md:124 klas:E -->
 ### T-42-052 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -878,7 +878,7 @@
 
 ---
 
-<!-- fc id:T-42-053 sha:b8699f11 src:manual/42-espnow.md:128 klas:F -->
+<!-- fc id:T-42-053 sha:b8699f11 src:manual/42-espnow.md:128 klas:E -->
 ### T-42-053 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -917,7 +917,7 @@
 
 ---
 
-<!-- fc id:T-42-056 sha:48c74bdb src:manual/42-espnow.md:135 klas:E -->
+<!-- fc id:T-42-056 sha:48c74bdb src:manual/42-espnow.md:135 klas:F -->
 ### T-42-056 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -943,7 +943,7 @@
 
 ---
 
-<!-- fc id:T-42-058 sha:4248c371 src:manual/42-espnow.md:138 klas:E -->
+<!-- fc id:T-42-058 sha:4248c371 src:manual/42-espnow.md:138 klas:F -->
 ### T-42-058 · proza · рядок 138
 
 **Книга каже, дослівно:**
@@ -956,7 +956,7 @@
 
 ---
 
-<!-- fc id:T-42-059 sha:350ec4ac src:manual/42-espnow.md:144 klas:E -->
+<!-- fc id:T-42-059 sha:350ec4ac src:manual/42-espnow.md:144 klas:F -->
 ### T-42-059 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -969,7 +969,7 @@
 
 ---
 
-<!-- fc id:T-42-060 sha:1dda21f6 src:manual/42-espnow.md:144 klas:E -->
+<!-- fc id:T-42-060 sha:1dda21f6 src:manual/42-espnow.md:144 klas:F -->
 ### T-42-060 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -995,7 +995,7 @@
 
 ---
 
-<!-- fc id:T-42-062 sha:8a44357a src:manual/42-espnow.md:147 klas:E -->
+<!-- fc id:T-42-062 sha:8a44357a src:manual/42-espnow.md:147 klas:F -->
 ### T-42-062 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -1008,7 +1008,7 @@
 
 ---
 
-<!-- fc id:T-42-063 sha:7ff46ce5 src:manual/42-espnow.md:147 klas:E -->
+<!-- fc id:T-42-063 sha:7ff46ce5 src:manual/42-espnow.md:147 klas:F -->
 ### T-42-063 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -1021,7 +1021,7 @@
 
 ---
 
-<!-- fc id:T-42-064 sha:1e516a9c src:manual/42-espnow.md:152 klas:E -->
+<!-- fc id:T-42-064 sha:1e516a9c src:manual/42-espnow.md:152 klas:F -->
 ### T-42-064 · proza · рядок 152
 
 **Книга каже, дослівно:**
@@ -1047,7 +1047,7 @@
 
 ---
 
-<!-- fc id:T-42-066 sha:9c93f60d src:manual/42-espnow.md:156 klas:E -->
+<!-- fc id:T-42-066 sha:9c93f60d src:manual/42-espnow.md:156 klas:F -->
 ### T-42-066 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1086,7 +1086,7 @@
 
 ---
 
-<!-- fc id:T-42-069 sha:f4029737 src:manual/42-espnow.md:167 klas:E -->
+<!-- fc id:T-42-069 sha:f4029737 src:manual/42-espnow.md:167 klas:F -->
 ### T-42-069 · proza · рядок 167
 
 **Книга каже, дослівно:**
@@ -1165,7 +1165,7 @@
 
 ---
 
-<!-- fc id:T-42-074 sha:159e1c45 src:manual/42-espnow.md:187 klas:F -->
+<!-- fc id:T-42-074 sha:159e1c45 src:manual/42-espnow.md:187 klas:E -->
 ### T-42-074 · proza · рядок 187
 
 **Книга каже, дослівно:**
@@ -1216,7 +1216,7 @@
 
 ---
 
-<!-- fc id:T-42-077 sha:b6848d71 src:manual/42-espnow.md:198 klas:E -->
+<!-- fc id:T-42-077 sha:b6848d71 src:manual/42-espnow.md:198 klas:F -->
 ### T-42-077 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1306,7 +1306,7 @@
 
 ---
 
-<!-- fc id:T-42-083 sha:574fb8ff src:manual/42-espnow.md:214 klas:E -->
+<!-- fc id:T-42-083 sha:574fb8ff src:manual/42-espnow.md:214 klas:F -->
 ### T-42-083 · proza · рядок 214
 
 **Книга каже, дослівно:**
@@ -1332,7 +1332,7 @@
 
 ---
 
-<!-- fc id:T-42-085 sha:797fdb03 src:manual/42-espnow.md:219 klas:E -->
+<!-- fc id:T-42-085 sha:797fdb03 src:manual/42-espnow.md:219 klas:F -->
 ### T-42-085 · proza · рядок 219
 
 **Книга каже, дослівно:**

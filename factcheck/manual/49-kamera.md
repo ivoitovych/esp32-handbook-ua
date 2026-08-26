@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-49-005 sha:2040970b src:manual/49-kamera.md:13 klas:E -->
+<!-- fc id:T-49-005 sha:2040970b src:manual/49-kamera.md:13 klas:F -->
 ### T-49-005 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-49-007 sha:6394ed75 src:manual/49-kamera.md:16 klas:E -->
+<!-- fc id:T-49-007 sha:6394ed75 src:manual/49-kamera.md:16 klas:F -->
 ### T-49-007 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-49-008 sha:384fa742 src:manual/49-kamera.md:16 klas:E -->
+<!-- fc id:T-49-008 sha:384fa742 src:manual/49-kamera.md:16 klas:F -->
 ### T-49-008 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-49-016 sha:0ba2d1d6 src:manual/49-kamera.md:45 klas:F -->
+<!-- fc id:T-49-016 sha:0ba2d1d6 src:manual/49-kamera.md:45 klas:E -->
 ### T-49-016 · proza · рядок 45
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-49-017 sha:7f0fdcec src:manual/49-kamera.md:49 klas:E -->
+<!-- fc id:T-49-017 sha:7f0fdcec src:manual/49-kamera.md:49 klas:F -->
 ### T-49-017 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-49-023 sha:313897c2 src:manual/49-kamera.md:66 klas:F -->
+<!-- fc id:T-49-023 sha:313897c2 src:manual/49-kamera.md:66 klas:E -->
 ### T-49-023 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -350,7 +350,7 @@
 
 ---
 
-<!-- fc id:T-49-027 sha:a5fb91e6 src:manual/49-kamera.md:82 klas:E -->
+<!-- fc id:T-49-027 sha:a5fb91e6 src:manual/49-kamera.md:82 klas:F -->
 ### T-49-027 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -389,7 +389,7 @@
 
 ---
 
-<!-- fc id:T-49-030 sha:6db4ff4b src:manual/49-kamera.md:87 klas:F -->
+<!-- fc id:T-49-030 sha:6db4ff4b src:manual/49-kamera.md:87 klas:E -->
 ### T-49-030 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -402,7 +402,7 @@
 
 ---
 
-<!-- fc id:T-49-031 sha:12e348b2 src:manual/49-kamera.md:90 klas:E -->
+<!-- fc id:T-49-031 sha:12e348b2 src:manual/49-kamera.md:90 klas:F -->
 ### T-49-031 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -480,7 +480,7 @@
 
 ---
 
-<!-- fc id:T-49-037 sha:b88844b8 src:manual/49-kamera.md:100 klas:E -->
+<!-- fc id:T-49-037 sha:b88844b8 src:manual/49-kamera.md:100 klas:F -->
 ### T-49-037 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -727,7 +727,7 @@
 
 ---
 
-<!-- fc id:T-49-056 sha:f50fdaf3 src:manual/49-kamera.md:148 klas:F -->
+<!-- fc id:T-49-056 sha:f50fdaf3 src:manual/49-kamera.md:148 klas:E -->
 ### T-49-056 · proza · рядок 148
 
 **Книга каже, дослівно:**
@@ -740,7 +740,7 @@
 
 ---
 
-<!-- fc id:T-49-057 sha:53443cd2 src:manual/49-kamera.md:152 klas:E -->
+<!-- fc id:T-49-057 sha:53443cd2 src:manual/49-kamera.md:152 klas:F -->
 ### T-49-057 · proza · рядок 152
 
 **Книга каже, дослівно:**
@@ -778,7 +778,7 @@
 
 ---
 
-<!-- fc id:T-49-059 sha:a741b382 src:manual/49-kamera.md:156 klas:E -->
+<!-- fc id:T-49-059 sha:a741b382 src:manual/49-kamera.md:156 klas:F -->
 ### T-49-059 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -865,7 +865,7 @@
 
 ---
 
-<!-- fc id:T-49-064 sha:13a79f5c src:manual/49-kamera.md:170 klas:E -->
+<!-- fc id:T-49-064 sha:13a79f5c src:manual/49-kamera.md:170 klas:F -->
 ### T-49-064 · proza · рядок 170
 
 **Книга каже, дослівно:**
@@ -891,7 +891,7 @@
 
 ---
 
-<!-- fc id:T-49-066 sha:55456e53 src:manual/49-kamera.md:174 klas:E -->
+<!-- fc id:T-49-066 sha:55456e53 src:manual/49-kamera.md:174 klas:F -->
 ### T-49-066 · proza · рядок 174
 
 **Книга каже, дослівно:**
@@ -904,7 +904,7 @@
 
 ---
 
-<!-- fc id:T-49-067 sha:50ae9786 src:manual/49-kamera.md:176 klas:E -->
+<!-- fc id:T-49-067 sha:50ae9786 src:manual/49-kamera.md:176 klas:F -->
 ### T-49-067 · proza · рядок 176
 
 **Книга каже, дослівно:**

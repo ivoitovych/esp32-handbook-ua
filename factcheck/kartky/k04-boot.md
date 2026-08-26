@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-K04-004 sha:3285d7ba src:kartky/k04-boot.md:8 klas:E -->
+<!-- fc id:T-K04-004 sha:3285d7ba src:kartky/k04-boot.md:8 klas:F -->
 ### T-K04-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-K04-023 sha:93250c1f src:kartky/k04-boot.md:62 klas:E -->
+<!-- fc id:T-K04-023 sha:93250c1f src:kartky/k04-boot.md:62 klas:F -->
 ### T-K04-023 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -317,7 +317,7 @@
 
 ---
 
-<!-- fc id:T-K04-024 sha:58a20250 src:kartky/k04-boot.md:62 klas:E -->
+<!-- fc id:T-K04-024 sha:58a20250 src:kartky/k04-boot.md:62 klas:F -->
 ### T-K04-024 · proza · рядок 62
 
 **Книга каже, дослівно:**

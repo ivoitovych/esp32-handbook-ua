@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-37-001 sha:2981e606 src:manual/37-onewire.md:3 klas:F -->
+<!-- fc id:T-37-001 sha:2981e606 src:manual/37-onewire.md:3 klas:E -->
 ### T-37-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -135,7 +135,7 @@
 
 ---
 
-<!-- fc id:T-37-010 sha:6c9e6bb6 src:manual/37-onewire.md:28 klas:F -->
+<!-- fc id:T-37-010 sha:6c9e6bb6 src:manual/37-onewire.md:28 klas:E -->
 ### T-37-010 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -247,7 +247,7 @@
 
 ---
 
-<!-- fc id:T-37-018 sha:905f60b4 src:manual/37-onewire.md:51 klas:F -->
+<!-- fc id:T-37-018 sha:905f60b4 src:manual/37-onewire.md:51 klas:E -->
 ### T-37-018 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -394,7 +394,7 @@
 
 ---
 
-<!-- fc id:T-37-027 sha:95658256 src:manual/37-onewire.md:75 klas:F -->
+<!-- fc id:T-37-027 sha:95658256 src:manual/37-onewire.md:75 klas:E -->
 ### T-37-027 · proza · рядок 75
 
 **Книга каже, дослівно:**

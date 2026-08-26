@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-B-001 sha:567c1904 src:dodatky/b-symptomy.md:3 klas:F -->
+<!-- fc id:T-B-001 sha:567c1904 src:dodatky/b-symptomy.md:3 klas:E -->
 ### T-B-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-B-002 sha:018b7421 src:dodatky/b-symptomy.md:8 klas:F -->
+<!-- fc id:T-B-002 sha:018b7421 src:dodatky/b-symptomy.md:8 klas:E -->
 ### T-B-002 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-B-004 sha:d4044ec8 src:dodatky/b-symptomy.md:13 klas:F -->
+<!-- fc id:T-B-004 sha:d4044ec8 src:dodatky/b-symptomy.md:13 klas:E -->
 ### T-B-004 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -873,7 +873,7 @@
 
 ---
 
-<!-- fc id:T-B-043 sha:d7c330de src:dodatky/b-symptomy.md:36 klas:F -->
+<!-- fc id:T-B-043 sha:d7c330de src:dodatky/b-symptomy.md:36 klas:E -->
 ### T-B-043 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -899,7 +899,7 @@
 
 ---
 
-<!-- fc id:T-B-045 sha:895a3335 src:dodatky/b-symptomy.md:36 klas:F -->
+<!-- fc id:T-B-045 sha:895a3335 src:dodatky/b-symptomy.md:36 klas:E -->
 ### T-B-045 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -1234,7 +1234,7 @@
 
 ---
 
-<!-- fc id:T-B-059 sha:c212a182 src:dodatky/b-symptomy.md:41 klas:F -->
+<!-- fc id:T-B-059 sha:c212a182 src:dodatky/b-symptomy.md:41 klas:E -->
 ### T-B-059 · komirka · рядок 41
 
 **Книга каже, дослівно:**
@@ -1247,7 +1247,7 @@
 
 ---
 
-<!-- fc id:T-B-060 sha:d8990451 src:dodatky/b-symptomy.md:41 klas:F -->
+<!-- fc id:T-B-060 sha:d8990451 src:dodatky/b-symptomy.md:41 klas:E -->
 ### T-B-060 · komirka · рядок 41
 
 **Книга каже, дослівно:**
@@ -1260,7 +1260,7 @@
 
 ---
 
-<!-- fc id:T-B-061 sha:533acea2 src:dodatky/b-symptomy.md:42 klas:F -->
+<!-- fc id:T-B-061 sha:533acea2 src:dodatky/b-symptomy.md:42 klas:E -->
 ### T-B-061 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -1273,7 +1273,7 @@
 
 ---
 
-<!-- fc id:T-B-062 sha:0729da19 src:dodatky/b-symptomy.md:42 klas:F -->
+<!-- fc id:T-B-062 sha:0729da19 src:dodatky/b-symptomy.md:42 klas:E -->
 ### T-B-062 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -1286,7 +1286,7 @@
 
 ---
 
-<!-- fc id:T-B-063 sha:7ee6b4ec src:dodatky/b-symptomy.md:42 klas:F -->
+<!-- fc id:T-B-063 sha:7ee6b4ec src:dodatky/b-symptomy.md:42 klas:E -->
 ### T-B-063 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -1312,7 +1312,7 @@
 
 ---
 
-<!-- fc id:T-B-065 sha:728bc926 src:dodatky/b-symptomy.md:43 klas:F -->
+<!-- fc id:T-B-065 sha:728bc926 src:dodatky/b-symptomy.md:43 klas:E -->
 ### T-B-065 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -1325,7 +1325,7 @@
 
 ---
 
-<!-- fc id:T-B-066 sha:a8cbcc9e src:dodatky/b-symptomy.md:43 klas:F -->
+<!-- fc id:T-B-066 sha:a8cbcc9e src:dodatky/b-symptomy.md:43 klas:E -->
 ### T-B-066 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -1338,7 +1338,7 @@
 
 ---
 
-<!-- fc id:T-B-067 sha:b41d5996 src:dodatky/b-symptomy.md:44 klas:F -->
+<!-- fc id:T-B-067 sha:b41d5996 src:dodatky/b-symptomy.md:44 klas:E -->
 ### T-B-067 · komirka · рядок 44
 
 **Книга каже, дослівно:**
@@ -1351,7 +1351,7 @@
 
 ---
 
-<!-- fc id:T-B-068 sha:65bb1cb8 src:dodatky/b-symptomy.md:44 klas:F -->
+<!-- fc id:T-B-068 sha:65bb1cb8 src:dodatky/b-symptomy.md:44 klas:E -->
 ### T-B-068 · komirka · рядок 44
 
 **Книга каже, дослівно:**
@@ -1364,7 +1364,7 @@
 
 ---
 
-<!-- fc id:T-B-069 sha:bc0ceaeb src:dodatky/b-symptomy.md:44 klas:F -->
+<!-- fc id:T-B-069 sha:bc0ceaeb src:dodatky/b-symptomy.md:44 klas:E -->
 ### T-B-069 · komirka · рядок 44
 
 **Книга каже, дослівно:**
@@ -1468,7 +1468,7 @@
 
 ---
 
-<!-- fc id:T-B-077 sha:3da42b98 src:dodatky/b-symptomy.md:52 klas:F -->
+<!-- fc id:T-B-077 sha:3da42b98 src:dodatky/b-symptomy.md:52 klas:E -->
 ### T-B-077 · komirka · рядок 52
 
 **Книга каже, дослівно:**
@@ -1481,7 +1481,7 @@
 
 ---
 
-<!-- fc id:T-B-078 sha:a4c8b43e src:dodatky/b-symptomy.md:52 klas:F -->
+<!-- fc id:T-B-078 sha:a4c8b43e src:dodatky/b-symptomy.md:52 klas:E -->
 ### T-B-078 · komirka · рядок 52
 
 **Книга каже, дослівно:**
@@ -1494,7 +1494,7 @@
 
 ---
 
-<!-- fc id:T-B-079 sha:b3b3593b src:dodatky/b-symptomy.md:52 klas:F -->
+<!-- fc id:T-B-079 sha:b3b3593b src:dodatky/b-symptomy.md:52 klas:E -->
 ### T-B-079 · komirka · рядок 52
 
 **Книга каже, дослівно:**
@@ -1546,7 +1546,7 @@
 
 ---
 
-<!-- fc id:T-B-083 sha:0963bdc4 src:dodatky/b-symptomy.md:54 klas:F -->
+<!-- fc id:T-B-083 sha:0963bdc4 src:dodatky/b-symptomy.md:54 klas:E -->
 ### T-B-083 · komirka · рядок 54
 
 **Книга каже, дослівно:**
@@ -1572,7 +1572,7 @@
 
 ---
 
-<!-- fc id:T-B-085 sha:4d555332 src:dodatky/b-symptomy.md:54 klas:F -->
+<!-- fc id:T-B-085 sha:4d555332 src:dodatky/b-symptomy.md:54 klas:E -->
 ### T-B-085 · komirka · рядок 54
 
 **Книга каже, дослівно:**
@@ -1636,7 +1636,7 @@
 
 ---
 
-<!-- fc id:T-B-089 sha:5f9bba1f src:dodatky/b-symptomy.md:56 klas:F -->
+<!-- fc id:T-B-089 sha:5f9bba1f src:dodatky/b-symptomy.md:56 klas:E -->
 ### T-B-089 · komirka · рядок 56
 
 **Книга каже, дослівно:**
@@ -1649,7 +1649,7 @@
 
 ---
 
-<!-- fc id:T-B-090 sha:f66a44b6 src:dodatky/b-symptomy.md:56 klas:F -->
+<!-- fc id:T-B-090 sha:f66a44b6 src:dodatky/b-symptomy.md:56 klas:E -->
 ### T-B-090 · komirka · рядок 56
 
 **Книга каже, дослівно:**
@@ -1662,7 +1662,7 @@
 
 ---
 
-<!-- fc id:T-B-091 sha:b8a0c318 src:dodatky/b-symptomy.md:56 klas:F -->
+<!-- fc id:T-B-091 sha:b8a0c318 src:dodatky/b-symptomy.md:56 klas:E -->
 ### T-B-091 · komirka · рядок 56
 
 **Книга каже, дослівно:**
@@ -2637,7 +2637,7 @@
 
 ---
 
-<!-- fc id:T-B-160 sha:60900874 src:dodatky/b-symptomy.md:89 klas:F -->
+<!-- fc id:T-B-160 sha:60900874 src:dodatky/b-symptomy.md:89 klas:E -->
 ### T-B-160 · komirka · рядок 89
 
 **Книга каже, дослівно:**
@@ -2663,7 +2663,7 @@
 
 ---
 
-<!-- fc id:T-B-162 sha:b03c98f2 src:dodatky/b-symptomy.md:89 klas:F -->
+<!-- fc id:T-B-162 sha:b03c98f2 src:dodatky/b-symptomy.md:89 klas:E -->
 ### T-B-162 · komirka · рядок 89
 
 **Книга каже, дослівно:**
@@ -2702,7 +2702,7 @@
 
 ---
 
-<!-- fc id:T-B-165 sha:c436aab7 src:dodatky/b-symptomy.md:90 klas:F -->
+<!-- fc id:T-B-165 sha:c436aab7 src:dodatky/b-symptomy.md:90 klas:E -->
 ### T-B-165 · komirka · рядок 90
 
 **Книга каже, дослівно:**
@@ -2715,7 +2715,7 @@
 
 ---
 
-<!-- fc id:T-B-166 sha:9e5a021d src:dodatky/b-symptomy.md:91 klas:F -->
+<!-- fc id:T-B-166 sha:9e5a021d src:dodatky/b-symptomy.md:91 klas:E -->
 ### T-B-166 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -2728,7 +2728,7 @@
 
 ---
 
-<!-- fc id:T-B-167 sha:c55732e1 src:dodatky/b-symptomy.md:91 klas:F -->
+<!-- fc id:T-B-167 sha:c55732e1 src:dodatky/b-symptomy.md:91 klas:E -->
 ### T-B-167 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -2741,7 +2741,7 @@
 
 ---
 
-<!-- fc id:T-B-168 sha:04d6097b src:dodatky/b-symptomy.md:91 klas:F -->
+<!-- fc id:T-B-168 sha:04d6097b src:dodatky/b-symptomy.md:91 klas:E -->
 ### T-B-168 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -2754,7 +2754,7 @@
 
 ---
 
-<!-- fc id:T-B-169 sha:ad2804fa src:dodatky/b-symptomy.md:92 klas:F -->
+<!-- fc id:T-B-169 sha:ad2804fa src:dodatky/b-symptomy.md:92 klas:E -->
 ### T-B-169 · komirka · рядок 92
 
 **Книга каже, дослівно:**
@@ -2767,7 +2767,7 @@
 
 ---
 
-<!-- fc id:T-B-170 sha:35d7d17e src:dodatky/b-symptomy.md:92 klas:F -->
+<!-- fc id:T-B-170 sha:35d7d17e src:dodatky/b-symptomy.md:92 klas:E -->
 ### T-B-170 · komirka · рядок 92
 
 **Книга каже, дослівно:**
@@ -2780,7 +2780,7 @@
 
 ---
 
-<!-- fc id:T-B-171 sha:9ed2bd2c src:dodatky/b-symptomy.md:92 klas:F -->
+<!-- fc id:T-B-171 sha:9ed2bd2c src:dodatky/b-symptomy.md:92 klas:E -->
 ### T-B-171 · komirka · рядок 92
 
 **Книга каже, дослівно:**
@@ -2820,7 +2820,7 @@
 
 ---
 
-<!-- fc id:T-B-173 sha:522f4b8b src:dodatky/b-symptomy.md:93 klas:F -->
+<!-- fc id:T-B-173 sha:522f4b8b src:dodatky/b-symptomy.md:93 klas:E -->
 ### T-B-173 · komirka · рядок 93
 
 **Книга каже, дослівно:**
@@ -2833,7 +2833,7 @@
 
 ---
 
-<!-- fc id:T-B-174 sha:77a543d6 src:dodatky/b-symptomy.md:93 klas:F -->
+<!-- fc id:T-B-174 sha:77a543d6 src:dodatky/b-symptomy.md:93 klas:E -->
 ### T-B-174 · komirka · рядок 93
 
 **Книга каже, дослівно:**
@@ -2846,7 +2846,7 @@
 
 ---
 
-<!-- fc id:T-B-175 sha:ce426656 src:dodatky/b-symptomy.md:94 klas:F -->
+<!-- fc id:T-B-175 sha:ce426656 src:dodatky/b-symptomy.md:94 klas:E -->
 ### T-B-175 · komirka · рядок 94
 
 **Книга каже, дослівно:**
@@ -2859,7 +2859,7 @@
 
 ---
 
-<!-- fc id:T-B-176 sha:5c1a88db src:dodatky/b-symptomy.md:94 klas:F -->
+<!-- fc id:T-B-176 sha:5c1a88db src:dodatky/b-symptomy.md:94 klas:E -->
 ### T-B-176 · komirka · рядок 94
 
 **Книга каже, дослівно:**
@@ -2872,7 +2872,7 @@
 
 ---
 
-<!-- fc id:T-B-177 sha:ebfecd76 src:dodatky/b-symptomy.md:94 klas:F -->
+<!-- fc id:T-B-177 sha:ebfecd76 src:dodatky/b-symptomy.md:94 klas:E -->
 ### T-B-177 · komirka · рядок 94
 
 **Книга каже, дослівно:**
@@ -2898,7 +2898,7 @@
 
 ---
 
-<!-- fc id:T-B-179 sha:b9e08822 src:dodatky/b-symptomy.md:95 klas:F -->
+<!-- fc id:T-B-179 sha:b9e08822 src:dodatky/b-symptomy.md:95 klas:E -->
 ### T-B-179 · komirka · рядок 95
 
 **Книга каже, дослівно:**
@@ -2911,7 +2911,7 @@
 
 ---
 
-<!-- fc id:T-B-180 sha:0c75375e src:dodatky/b-symptomy.md:95 klas:F -->
+<!-- fc id:T-B-180 sha:0c75375e src:dodatky/b-symptomy.md:95 klas:E -->
 ### T-B-180 · komirka · рядок 95
 
 **Книга каже, дослівно:**
@@ -2924,7 +2924,7 @@
 
 ---
 
-<!-- fc id:T-B-181 sha:fe46043f src:dodatky/b-symptomy.md:96 klas:F -->
+<!-- fc id:T-B-181 sha:fe46043f src:dodatky/b-symptomy.md:96 klas:E -->
 ### T-B-181 · komirka · рядок 96
 
 **Книга каже, дослівно:**
@@ -2937,7 +2937,7 @@
 
 ---
 
-<!-- fc id:T-B-182 sha:fb5ef80c src:dodatky/b-symptomy.md:96 klas:F -->
+<!-- fc id:T-B-182 sha:fb5ef80c src:dodatky/b-symptomy.md:96 klas:E -->
 ### T-B-182 · komirka · рядок 96
 
 **Книга каже, дослівно:**
@@ -2950,7 +2950,7 @@
 
 ---
 
-<!-- fc id:T-B-183 sha:da576685 src:dodatky/b-symptomy.md:96 klas:F -->
+<!-- fc id:T-B-183 sha:da576685 src:dodatky/b-symptomy.md:96 klas:E -->
 ### T-B-183 · komirka · рядок 96
 
 **Книга каже, дослівно:**
@@ -3033,7 +3033,7 @@
 
 ---
 
-<!-- fc id:T-B-188 sha:b3c47737 src:dodatky/b-symptomy.md:103 klas:F -->
+<!-- fc id:T-B-188 sha:b3c47737 src:dodatky/b-symptomy.md:103 klas:E -->
 ### T-B-188 · komirka · рядок 103
 
 **Книга каже, дослівно:**
@@ -3059,7 +3059,7 @@
 
 ---
 
-<!-- fc id:T-B-190 sha:56140876 src:dodatky/b-symptomy.md:103 klas:F -->
+<!-- fc id:T-B-190 sha:56140876 src:dodatky/b-symptomy.md:103 klas:E -->
 ### T-B-190 · komirka · рядок 103
 
 **Книга каже, дослівно:**
@@ -3085,7 +3085,7 @@
 
 ---
 
-<!-- fc id:T-B-192 sha:ffa97f65 src:dodatky/b-symptomy.md:104 klas:F -->
+<!-- fc id:T-B-192 sha:ffa97f65 src:dodatky/b-symptomy.md:104 klas:E -->
 ### T-B-192 · komirka · рядок 104
 
 **Книга каже, дослівно:**
@@ -3098,7 +3098,7 @@
 
 ---
 
-<!-- fc id:T-B-193 sha:6f861a1d src:dodatky/b-symptomy.md:104 klas:F -->
+<!-- fc id:T-B-193 sha:6f861a1d src:dodatky/b-symptomy.md:104 klas:E -->
 ### T-B-193 · komirka · рядок 104
 
 **Книга каже, дослівно:**
@@ -3111,7 +3111,7 @@
 
 ---
 
-<!-- fc id:T-B-194 sha:1890e8b0 src:dodatky/b-symptomy.md:105 klas:F -->
+<!-- fc id:T-B-194 sha:1890e8b0 src:dodatky/b-symptomy.md:105 klas:E -->
 ### T-B-194 · komirka · рядок 105
 
 **Книга каже, дослівно:**
@@ -3124,7 +3124,7 @@
 
 ---
 
-<!-- fc id:T-B-195 sha:6ff78fce src:dodatky/b-symptomy.md:105 klas:F -->
+<!-- fc id:T-B-195 sha:6ff78fce src:dodatky/b-symptomy.md:105 klas:E -->
 ### T-B-195 · komirka · рядок 105
 
 **Книга каже, дослівно:**
@@ -3137,7 +3137,7 @@
 
 ---
 
-<!-- fc id:T-B-196 sha:153e04ac src:dodatky/b-symptomy.md:105 klas:F -->
+<!-- fc id:T-B-196 sha:153e04ac src:dodatky/b-symptomy.md:105 klas:E -->
 ### T-B-196 · komirka · рядок 105
 
 **Книга каже, дослівно:**
@@ -3202,7 +3202,7 @@
 
 ---
 
-<!-- fc id:T-B-201 sha:1f885b10 src:dodatky/b-symptomy.md:107 klas:F -->
+<!-- fc id:T-B-201 sha:1f885b10 src:dodatky/b-symptomy.md:107 klas:E -->
 ### T-B-201 · komirka · рядок 107
 
 **Книга каже, дослівно:**
@@ -3215,7 +3215,7 @@
 
 ---
 
-<!-- fc id:T-B-202 sha:0e6d6dc2 src:dodatky/b-symptomy.md:107 klas:F -->
+<!-- fc id:T-B-202 sha:0e6d6dc2 src:dodatky/b-symptomy.md:107 klas:E -->
 ### T-B-202 · komirka · рядок 107
 
 **Книга каже, дослівно:**
@@ -3228,7 +3228,7 @@
 
 ---
 
-<!-- fc id:T-B-203 sha:bf20564d src:dodatky/b-symptomy.md:108 klas:F -->
+<!-- fc id:T-B-203 sha:bf20564d src:dodatky/b-symptomy.md:108 klas:E -->
 ### T-B-203 · komirka · рядок 108
 
 **Книга каже, дослівно:**
@@ -3241,7 +3241,7 @@
 
 ---
 
-<!-- fc id:T-B-204 sha:844e5b3c src:dodatky/b-symptomy.md:108 klas:F -->
+<!-- fc id:T-B-204 sha:844e5b3c src:dodatky/b-symptomy.md:108 klas:E -->
 ### T-B-204 · komirka · рядок 108
 
 **Книга каже, дослівно:**
@@ -3254,7 +3254,7 @@
 
 ---
 
-<!-- fc id:T-B-205 sha:e56a94c5 src:dodatky/b-symptomy.md:108 klas:F -->
+<!-- fc id:T-B-205 sha:e56a94c5 src:dodatky/b-symptomy.md:108 klas:E -->
 ### T-B-205 · komirka · рядок 108
 
 **Книга каже, дослівно:**
@@ -3571,7 +3571,7 @@
 
 ---
 
-<!-- fc id:T-B-225 sha:56b88433 src:dodatky/b-symptomy.md:120 klas:F -->
+<!-- fc id:T-B-225 sha:56b88433 src:dodatky/b-symptomy.md:120 klas:E -->
 ### T-B-225 · komirka · рядок 120
 
 **Книга каже, дослівно:**
@@ -3584,7 +3584,7 @@
 
 ---
 
-<!-- fc id:T-B-226 sha:e3d6d102 src:dodatky/b-symptomy.md:120 klas:F -->
+<!-- fc id:T-B-226 sha:e3d6d102 src:dodatky/b-symptomy.md:120 klas:E -->
 ### T-B-226 · komirka · рядок 120
 
 **Книга каже, дослівно:**
@@ -3597,7 +3597,7 @@
 
 ---
 
-<!-- fc id:T-B-227 sha:d8a49a7b src:dodatky/b-symptomy.md:120 klas:F -->
+<!-- fc id:T-B-227 sha:d8a49a7b src:dodatky/b-symptomy.md:120 klas:E -->
 ### T-B-227 · komirka · рядок 120
 
 **Книга каже, дослівно:**
@@ -3610,7 +3610,7 @@
 
 ---
 
-<!-- fc id:T-B-228 sha:962ab34d src:dodatky/b-symptomy.md:121 klas:F -->
+<!-- fc id:T-B-228 sha:962ab34d src:dodatky/b-symptomy.md:121 klas:E -->
 ### T-B-228 · komirka · рядок 121
 
 **Книга каже, дослівно:**
@@ -3623,7 +3623,7 @@
 
 ---
 
-<!-- fc id:T-B-229 sha:4aa7bc42 src:dodatky/b-symptomy.md:121 klas:F -->
+<!-- fc id:T-B-229 sha:4aa7bc42 src:dodatky/b-symptomy.md:121 klas:E -->
 ### T-B-229 · komirka · рядок 121
 
 **Книга каже, дослівно:**
@@ -3636,7 +3636,7 @@
 
 ---
 
-<!-- fc id:T-B-230 sha:345141ce src:dodatky/b-symptomy.md:121 klas:F -->
+<!-- fc id:T-B-230 sha:345141ce src:dodatky/b-symptomy.md:121 klas:E -->
 ### T-B-230 · komirka · рядок 121
 
 **Книга каже, дослівно:**
@@ -3817,7 +3817,7 @@
 
 ---
 
-<!-- fc id:T-B-237 sha:6d0abcdc src:dodatky/b-symptomy.md:124 klas:F -->
+<!-- fc id:T-B-237 sha:6d0abcdc src:dodatky/b-symptomy.md:124 klas:E -->
 ### T-B-237 · komirka · рядок 124
 
 **Книга каже, дослівно:**
@@ -3853,7 +3853,7 @@
 
 ---
 
-<!-- fc id:T-B-239 sha:13104249 src:dodatky/b-symptomy.md:124 klas:F -->
+<!-- fc id:T-B-239 sha:13104249 src:dodatky/b-symptomy.md:124 klas:E -->
 ### T-B-239 · komirka · рядок 124
 
 **Книга каже, дослівно:**
@@ -3866,7 +3866,7 @@
 
 ---
 
-<!-- fc id:T-B-240 sha:b9f68376 src:dodatky/b-symptomy.md:125 klas:F -->
+<!-- fc id:T-B-240 sha:b9f68376 src:dodatky/b-symptomy.md:125 klas:E -->
 ### T-B-240 · komirka · рядок 125
 
 **Книга каже, дослівно:**
@@ -3879,7 +3879,7 @@
 
 ---
 
-<!-- fc id:T-B-241 sha:fc0e937d src:dodatky/b-symptomy.md:125 klas:F -->
+<!-- fc id:T-B-241 sha:fc0e937d src:dodatky/b-symptomy.md:125 klas:E -->
 ### T-B-241 · komirka · рядок 125
 
 **Книга каже, дослівно:**
@@ -3892,7 +3892,7 @@
 
 ---
 
-<!-- fc id:T-B-242 sha:54b06376 src:dodatky/b-symptomy.md:125 klas:F -->
+<!-- fc id:T-B-242 sha:54b06376 src:dodatky/b-symptomy.md:125 klas:E -->
 ### T-B-242 · komirka · рядок 125
 
 **Книга каже, дослівно:**
@@ -3905,7 +3905,7 @@
 
 ---
 
-<!-- fc id:T-B-243 sha:735bca0f src:dodatky/b-symptomy.md:126 klas:F -->
+<!-- fc id:T-B-243 sha:735bca0f src:dodatky/b-symptomy.md:126 klas:E -->
 ### T-B-243 · komirka · рядок 126
 
 **Книга каже, дослівно:**
@@ -3918,7 +3918,7 @@
 
 ---
 
-<!-- fc id:T-B-244 sha:2cc14ea6 src:dodatky/b-symptomy.md:126 klas:F -->
+<!-- fc id:T-B-244 sha:2cc14ea6 src:dodatky/b-symptomy.md:126 klas:E -->
 ### T-B-244 · komirka · рядок 126
 
 **Книга каже, дослівно:**
@@ -3931,7 +3931,7 @@
 
 ---
 
-<!-- fc id:T-B-245 sha:0e15746b src:dodatky/b-symptomy.md:126 klas:F -->
+<!-- fc id:T-B-245 sha:0e15746b src:dodatky/b-symptomy.md:126 klas:E -->
 ### T-B-245 · komirka · рядок 126
 
 **Книга каже, дослівно:**
@@ -3944,7 +3944,7 @@
 
 ---
 
-<!-- fc id:T-B-246 sha:5464bc24 src:dodatky/b-symptomy.md:127 klas:F -->
+<!-- fc id:T-B-246 sha:5464bc24 src:dodatky/b-symptomy.md:127 klas:E -->
 ### T-B-246 · komirka · рядок 127
 
 **Книга каже, дослівно:**
@@ -3957,7 +3957,7 @@
 
 ---
 
-<!-- fc id:T-B-247 sha:051322d4 src:dodatky/b-symptomy.md:127 klas:F -->
+<!-- fc id:T-B-247 sha:051322d4 src:dodatky/b-symptomy.md:127 klas:E -->
 ### T-B-247 · komirka · рядок 127
 
 **Книга каже, дослівно:**
@@ -3970,7 +3970,7 @@
 
 ---
 
-<!-- fc id:T-B-248 sha:9416c78b src:dodatky/b-symptomy.md:127 klas:F -->
+<!-- fc id:T-B-248 sha:9416c78b src:dodatky/b-symptomy.md:127 klas:E -->
 ### T-B-248 · komirka · рядок 127
 
 **Книга каже, дослівно:**
@@ -3996,7 +3996,7 @@
 
 ---
 
-<!-- fc id:T-B-250 sha:668b2f3a src:dodatky/b-symptomy.md:133 klas:F -->
+<!-- fc id:T-B-250 sha:668b2f3a src:dodatky/b-symptomy.md:133 klas:E -->
 ### T-B-250 · komirka · рядок 133
 
 **Книга каже, дослівно:**
@@ -4009,7 +4009,7 @@
 
 ---
 
-<!-- fc id:T-B-251 sha:484b056e src:dodatky/b-symptomy.md:133 klas:F -->
+<!-- fc id:T-B-251 sha:484b056e src:dodatky/b-symptomy.md:133 klas:E -->
 ### T-B-251 · komirka · рядок 133
 
 **Книга каже, дослівно:**
@@ -4022,7 +4022,7 @@
 
 ---
 
-<!-- fc id:T-B-252 sha:1dbefcae src:dodatky/b-symptomy.md:133 klas:F -->
+<!-- fc id:T-B-252 sha:1dbefcae src:dodatky/b-symptomy.md:133 klas:E -->
 ### T-B-252 · komirka · рядок 133
 
 **Книга каже, дослівно:**
@@ -4035,7 +4035,7 @@
 
 ---
 
-<!-- fc id:T-B-253 sha:d5dba67b src:dodatky/b-symptomy.md:134 klas:F -->
+<!-- fc id:T-B-253 sha:d5dba67b src:dodatky/b-symptomy.md:134 klas:E -->
 ### T-B-253 · komirka · рядок 134
 
 **Книга каже, дослівно:**
@@ -4048,7 +4048,7 @@
 
 ---
 
-<!-- fc id:T-B-254 sha:ee489cf0 src:dodatky/b-symptomy.md:134 klas:F -->
+<!-- fc id:T-B-254 sha:ee489cf0 src:dodatky/b-symptomy.md:134 klas:E -->
 ### T-B-254 · komirka · рядок 134
 
 **Книга каже, дослівно:**
@@ -4061,7 +4061,7 @@
 
 ---
 
-<!-- fc id:T-B-255 sha:b987e276 src:dodatky/b-symptomy.md:134 klas:F -->
+<!-- fc id:T-B-255 sha:b987e276 src:dodatky/b-symptomy.md:134 klas:E -->
 ### T-B-255 · komirka · рядок 134
 
 **Книга каже, дослівно:**
@@ -4074,7 +4074,7 @@
 
 ---
 
-<!-- fc id:T-B-256 sha:806f210b src:dodatky/b-symptomy.md:135 klas:F -->
+<!-- fc id:T-B-256 sha:806f210b src:dodatky/b-symptomy.md:135 klas:E -->
 ### T-B-256 · komirka · рядок 135
 
 **Книга каже, дослівно:**
@@ -4087,7 +4087,7 @@
 
 ---
 
-<!-- fc id:T-B-257 sha:76b833a9 src:dodatky/b-symptomy.md:135 klas:F -->
+<!-- fc id:T-B-257 sha:76b833a9 src:dodatky/b-symptomy.md:135 klas:E -->
 ### T-B-257 · komirka · рядок 135
 
 **Книга каже, дослівно:**
@@ -4100,7 +4100,7 @@
 
 ---
 
-<!-- fc id:T-B-258 sha:53c80222 src:dodatky/b-symptomy.md:135 klas:F -->
+<!-- fc id:T-B-258 sha:53c80222 src:dodatky/b-symptomy.md:135 klas:E -->
 ### T-B-258 · komirka · рядок 135
 
 **Книга каже, дослівно:**
@@ -4113,7 +4113,7 @@
 
 ---
 
-<!-- fc id:T-B-259 sha:6889ccbc src:dodatky/b-symptomy.md:136 klas:F -->
+<!-- fc id:T-B-259 sha:6889ccbc src:dodatky/b-symptomy.md:136 klas:E -->
 ### T-B-259 · komirka · рядок 136
 
 **Книга каже, дослівно:**
@@ -4126,7 +4126,7 @@
 
 ---
 
-<!-- fc id:T-B-260 sha:a99802d5 src:dodatky/b-symptomy.md:136 klas:F -->
+<!-- fc id:T-B-260 sha:a99802d5 src:dodatky/b-symptomy.md:136 klas:E -->
 ### T-B-260 · komirka · рядок 136
 
 **Книга каже, дослівно:**
@@ -4139,7 +4139,7 @@
 
 ---
 
-<!-- fc id:T-B-261 sha:4b549068 src:dodatky/b-symptomy.md:136 klas:F -->
+<!-- fc id:T-B-261 sha:4b549068 src:dodatky/b-symptomy.md:136 klas:E -->
 ### T-B-261 · komirka · рядок 136
 
 **Книга каже, дослівно:**
@@ -4300,7 +4300,7 @@
 
 ---
 
-<!-- fc id:T-B-269 sha:9b7591b2 src:dodatky/b-symptomy.md:150 klas:F -->
+<!-- fc id:T-B-269 sha:9b7591b2 src:dodatky/b-symptomy.md:150 klas:E -->
 ### T-B-269 · proza · рядок 150
 
 **Книга каже, дослівно:**

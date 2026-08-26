@@ -602,7 +602,7 @@
 
 ---
 
-<!-- fc id:T-32-037 sha:919d7db5 src:manual/32-nadiynist.md:102 klas:F -->
+<!-- fc id:T-32-037 sha:919d7db5 src:manual/32-nadiynist.md:102 klas:E -->
 ### T-32-037 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -765,7 +765,7 @@
 
 ---
 
-<!-- fc id:T-32-047 sha:3feb66a4 src:manual/32-nadiynist.md:126 klas:E -->
+<!-- fc id:T-32-047 sha:3feb66a4 src:manual/32-nadiynist.md:126 klas:F -->
 ### T-32-047 · proza · рядок 126
 
 **Книга каже, дослівно:**
@@ -916,7 +916,7 @@
 
 ---
 
-<!-- fc id:T-32-058 sha:dfd3b03c src:manual/32-nadiynist.md:149 klas:F -->
+<!-- fc id:T-32-058 sha:dfd3b03c src:manual/32-nadiynist.md:149 klas:E -->
 ### T-32-058 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -968,7 +968,7 @@
 
 ---
 
-<!-- fc id:T-32-062 sha:9d2c6e43 src:manual/32-nadiynist.md:160 klas:F -->
+<!-- fc id:T-32-062 sha:9d2c6e43 src:manual/32-nadiynist.md:160 klas:E -->
 ### T-32-062 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -981,7 +981,7 @@
 
 ---
 
-<!-- fc id:T-32-063 sha:83119fbb src:manual/32-nadiynist.md:163 klas:E -->
+<!-- fc id:T-32-063 sha:83119fbb src:manual/32-nadiynist.md:163 klas:F -->
 ### T-32-063 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -1046,7 +1046,7 @@
 
 ---
 
-<!-- fc id:T-32-068 sha:c1d67a99 src:manual/32-nadiynist.md:174 klas:F -->
+<!-- fc id:T-32-068 sha:c1d67a99 src:manual/32-nadiynist.md:174 klas:E -->
 ### T-32-068 · tablycya · рядок 174
 
 **Книга каже, дослівно:**
@@ -1082,7 +1082,7 @@
 
 ---
 
-<!-- fc id:T-32-070 sha:2fe46684 src:manual/32-nadiynist.md:177 klas:F -->
+<!-- fc id:T-32-070 sha:2fe46684 src:manual/32-nadiynist.md:177 klas:E -->
 ### T-32-070 · tablycya · рядок 177
 
 **Книга каже, дослівно:**
@@ -1095,7 +1095,7 @@
 
 ---
 
-<!-- fc id:T-32-071 sha:a28eac67 src:manual/32-nadiynist.md:178 klas:F -->
+<!-- fc id:T-32-071 sha:a28eac67 src:manual/32-nadiynist.md:178 klas:E -->
 ### T-32-071 · tablycya · рядок 178
 
 **Книга каже, дослівно:**
@@ -1121,7 +1121,7 @@
 
 ---
 
-<!-- fc id:T-32-073 sha:5dee921d src:manual/32-nadiynist.md:180 klas:F -->
+<!-- fc id:T-32-073 sha:5dee921d src:manual/32-nadiynist.md:180 klas:E -->
 ### T-32-073 · tablycya · рядок 180
 
 **Книга каже, дослівно:**
@@ -1203,7 +1203,7 @@
 
 ---
 
-<!-- fc id:T-32-079 sha:a9f0f3fc src:manual/32-nadiynist.md:189 klas:F -->
+<!-- fc id:T-32-079 sha:a9f0f3fc src:manual/32-nadiynist.md:189 klas:E -->
 ### T-32-079 · proza · рядок 189
 
 **Книга каже, дослівно:**

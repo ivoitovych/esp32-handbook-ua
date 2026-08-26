@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-19-001 sha:609f0617 src:manual/19-ota.md:3 klas:E -->
+<!-- fc id:T-19-001 sha:609f0617 src:manual/19-ota.md:3 klas:F -->
 ### T-19-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-19-005 sha:76464490 src:manual/19-ota.md:13 klas:E -->
+<!-- fc id:T-19-005 sha:76464490 src:manual/19-ota.md:13 klas:F -->
 ### T-19-005 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-19-021 sha:b2d52dd0 src:manual/19-ota.md:33 klas:F -->
+<!-- fc id:T-19-021 sha:b2d52dd0 src:manual/19-ota.md:33 klas:E -->
 ### T-19-021 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-19-024 sha:9fb277d5 src:manual/19-ota.md:41 klas:E -->
+<!-- fc id:T-19-024 sha:9fb277d5 src:manual/19-ota.md:41 klas:F -->
 ### T-19-024 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -387,7 +387,7 @@
 
 ---
 
-<!-- fc id:T-19-028 sha:65252f58 src:manual/19-ota.md:51 klas:E -->
+<!-- fc id:T-19-028 sha:65252f58 src:manual/19-ota.md:51 klas:F -->
 ### T-19-028 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -400,7 +400,7 @@
 
 ---
 
-<!-- fc id:T-19-029 sha:7678b715 src:manual/19-ota.md:51 klas:E -->
+<!-- fc id:T-19-029 sha:7678b715 src:manual/19-ota.md:51 klas:F -->
 ### T-19-029 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -426,7 +426,7 @@
 
 ---
 
-<!-- fc id:T-19-031 sha:039b7725 src:manual/19-ota.md:57 klas:E -->
+<!-- fc id:T-19-031 sha:039b7725 src:manual/19-ota.md:57 klas:F -->
 ### T-19-031 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -439,7 +439,7 @@
 
 ---
 
-<!-- fc id:T-19-032 sha:c6f7a0a0 src:manual/19-ota.md:57 klas:F -->
+<!-- fc id:T-19-032 sha:c6f7a0a0 src:manual/19-ota.md:57 klas:E -->
 ### T-19-032 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -491,7 +491,7 @@
 
 ---
 
-<!-- fc id:T-19-036 sha:e66102fe src:manual/19-ota.md:65 klas:E -->
+<!-- fc id:T-19-036 sha:e66102fe src:manual/19-ota.md:65 klas:F -->
 ### T-19-036 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -712,7 +712,7 @@
 
 ---
 
-<!-- fc id:T-19-049 sha:d7e1846e src:manual/19-ota.md:100 klas:E -->
+<!-- fc id:T-19-049 sha:d7e1846e src:manual/19-ota.md:100 klas:F -->
 ### T-19-049 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -725,7 +725,7 @@
 
 ---
 
-<!-- fc id:T-19-050 sha:037e1f7f src:manual/19-ota.md:100 klas:F -->
+<!-- fc id:T-19-050 sha:037e1f7f src:manual/19-ota.md:100 klas:E -->
 ### T-19-050 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -962,7 +962,7 @@
 
 ---
 
-<!-- fc id:T-19-061 sha:3282d948 src:manual/19-ota.md:129 klas:E -->
+<!-- fc id:T-19-061 sha:3282d948 src:manual/19-ota.md:129 klas:F -->
 ### T-19-061 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -975,7 +975,7 @@
 
 ---
 
-<!-- fc id:T-19-062 sha:588b1000 src:manual/19-ota.md:135 klas:E -->
+<!-- fc id:T-19-062 sha:588b1000 src:manual/19-ota.md:135 klas:F -->
 ### T-19-062 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -1001,7 +1001,7 @@
 
 ---
 
-<!-- fc id:T-19-064 sha:91d63b18 src:manual/19-ota.md:135 klas:E -->
+<!-- fc id:T-19-064 sha:91d63b18 src:manual/19-ota.md:135 klas:F -->
 ### T-19-064 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -1027,7 +1027,7 @@
 
 ---
 
-<!-- fc id:T-19-066 sha:f314a81b src:manual/19-ota.md:135 klas:F -->
+<!-- fc id:T-19-066 sha:f314a81b src:manual/19-ota.md:135 klas:E -->
 ### T-19-066 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -1040,7 +1040,7 @@
 
 ---
 
-<!-- fc id:T-19-067 sha:8d089849 src:manual/19-ota.md:146 klas:E -->
+<!-- fc id:T-19-067 sha:8d089849 src:manual/19-ota.md:146 klas:F -->
 ### T-19-067 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -1066,7 +1066,7 @@
 
 ---
 
-<!-- fc id:T-19-069 sha:f53c326f src:manual/19-ota.md:150 klas:E -->
+<!-- fc id:T-19-069 sha:f53c326f src:manual/19-ota.md:150 klas:F -->
 ### T-19-069 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -1131,7 +1131,7 @@
 
 ---
 
-<!-- fc id:T-19-074 sha:7dec3564 src:manual/19-ota.md:159 klas:F -->
+<!-- fc id:T-19-074 sha:7dec3564 src:manual/19-ota.md:159 klas:E -->
 ### T-19-074 · proza · рядок 159
 
 **Книга каже, дослівно:**
@@ -1144,7 +1144,7 @@
 
 ---
 
-<!-- fc id:T-19-075 sha:d80aa0f3 src:manual/19-ota.md:166 klas:E -->
+<!-- fc id:T-19-075 sha:d80aa0f3 src:manual/19-ota.md:166 klas:F -->
 ### T-19-075 · proza · рядок 166
 
 **Книга каже, дослівно:**
@@ -1287,7 +1287,7 @@
 
 ---
 
-<!-- fc id:T-19-086 sha:e0ec9d02 src:manual/19-ota.md:186 klas:E -->
+<!-- fc id:T-19-086 sha:e0ec9d02 src:manual/19-ota.md:186 klas:F -->
 ### T-19-086 · proza · рядок 186
 
 **Книга каже, дослівно:**
@@ -1352,7 +1352,7 @@
 
 ---
 
-<!-- fc id:T-19-091 sha:ee73eb3a src:manual/19-ota.md:197 klas:E -->
+<!-- fc id:T-19-091 sha:ee73eb3a src:manual/19-ota.md:197 klas:F -->
 ### T-19-091 · proza · рядок 197
 
 **Книга каже, дослівно:**
@@ -1365,7 +1365,7 @@
 
 ---
 
-<!-- fc id:T-19-092 sha:ab6808e1 src:manual/19-ota.md:197 klas:E -->
+<!-- fc id:T-19-092 sha:ab6808e1 src:manual/19-ota.md:197 klas:F -->
 ### T-19-092 · proza · рядок 197
 
 **Книга каже, дослівно:**
@@ -1391,7 +1391,7 @@
 
 ---
 
-<!-- fc id:T-19-094 sha:cf623451 src:manual/19-ota.md:202 klas:F -->
+<!-- fc id:T-19-094 sha:cf623451 src:manual/19-ota.md:202 klas:E -->
 ### T-19-094 · proza · рядок 202
 
 **Книга каже, дослівно:**
@@ -1443,7 +1443,7 @@
 
 ---
 
-<!-- fc id:T-19-098 sha:726f7ae8 src:manual/19-ota.md:215 klas:E -->
+<!-- fc id:T-19-098 sha:726f7ae8 src:manual/19-ota.md:215 klas:F -->
 ### T-19-098 · proza · рядок 215
 
 **Книга каже, дослівно:**
@@ -1469,7 +1469,7 @@
 
 ---
 
-<!-- fc id:T-19-100 sha:5b1f4451 src:manual/19-ota.md:218 klas:E -->
+<!-- fc id:T-19-100 sha:5b1f4451 src:manual/19-ota.md:218 klas:F -->
 ### T-19-100 · proza · рядок 218
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-REG-001 sha:1c4aba2e src:inserts/regulatory-2026-08.md:3 klas:F -->
+<!-- fc id:T-REG-001 sha:1c4aba2e src:inserts/regulatory-2026-08.md:3 klas:E -->
 ### T-REG-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-REG-003 sha:1e9d97d5 src:inserts/regulatory-2026-08.md:6 klas:F -->
+<!-- fc id:T-REG-003 sha:1e9d97d5 src:inserts/regulatory-2026-08.md:6 klas:E -->
 ### T-REG-003 · proza · рядок 6
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-REG-012 sha:32835962 src:inserts/regulatory-2026-08.md:28 klas:F -->
+<!-- fc id:T-REG-012 sha:32835962 src:inserts/regulatory-2026-08.md:28 klas:E -->
 ### T-REG-012 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-REG-014 sha:b0a58b02 src:inserts/regulatory-2026-08.md:38 klas:F -->
+<!-- fc id:T-REG-014 sha:b0a58b02 src:inserts/regulatory-2026-08.md:38 klas:E -->
 ### T-REG-014 · tablycya · рядок 38
 
 **Книга каже, дослівно:**
@@ -281,7 +281,7 @@
 
 ---
 
-<!-- fc id:T-REG-021 sha:33ea9b78 src:inserts/regulatory-2026-08.md:48 klas:E -->
+<!-- fc id:T-REG-021 sha:33ea9b78 src:inserts/regulatory-2026-08.md:48 klas:F -->
 ### T-REG-021 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -320,7 +320,7 @@
 
 ---
 
-<!-- fc id:T-REG-024 sha:4f70d03f src:inserts/regulatory-2026-08.md:57 klas:E -->
+<!-- fc id:T-REG-024 sha:4f70d03f src:inserts/regulatory-2026-08.md:57 klas:F -->
 ### T-REG-024 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -346,7 +346,7 @@
 
 ---
 
-<!-- fc id:T-REG-026 sha:33af890c src:inserts/regulatory-2026-08.md:61 klas:F -->
+<!-- fc id:T-REG-026 sha:33af890c src:inserts/regulatory-2026-08.md:61 klas:E -->
 ### T-REG-026 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -424,7 +424,7 @@
 
 ---
 
-<!-- fc id:T-REG-032 sha:738aa5d2 src:inserts/regulatory-2026-08.md:90 klas:F -->
+<!-- fc id:T-REG-032 sha:738aa5d2 src:inserts/regulatory-2026-08.md:90 klas:E -->
 ### T-REG-032 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -437,7 +437,7 @@
 
 ---
 
-<!-- fc id:T-REG-033 sha:cce6d241 src:inserts/regulatory-2026-08.md:95 klas:F -->
+<!-- fc id:T-REG-033 sha:cce6d241 src:inserts/regulatory-2026-08.md:95 klas:E -->
 ### T-REG-033 · proza · рядок 95
 
 **Книга каже, дослівно:**

@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-K12-003 sha:657b4a4a src:kartky/k12-komplekt.md:8 klas:F -->
+<!-- fc id:T-K12-003 sha:657b4a4a src:kartky/k12-komplekt.md:8 klas:E -->
 ### T-K12-003 · tablycya · рядок 8
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-K12-006 sha:4c3647dc src:kartky/k12-komplekt.md:12 klas:F -->
+<!-- fc id:T-K12-006 sha:4c3647dc src:kartky/k12-komplekt.md:12 klas:E -->
 ### T-K12-006 · tablycya · рядок 12
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-K12-009 sha:a9460077 src:kartky/k12-komplekt.md:15 klas:F -->
+<!-- fc id:T-K12-009 sha:a9460077 src:kartky/k12-komplekt.md:15 klas:E -->
 ### T-K12-009 · tablycya · рядок 15
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-K12-011 sha:c17398d2 src:kartky/k12-komplekt.md:20 klas:F -->
+<!-- fc id:T-K12-011 sha:c17398d2 src:kartky/k12-komplekt.md:20 klas:E -->
 ### T-K12-011 · tablycya · рядок 20
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-K12-013 sha:0d1862f5 src:kartky/k12-komplekt.md:23 klas:F -->
+<!-- fc id:T-K12-013 sha:0d1862f5 src:kartky/k12-komplekt.md:23 klas:E -->
 ### T-K12-013 · tablycya · рядок 23
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-K12-015 sha:8b45e4ee src:kartky/k12-komplekt.md:25 klas:F -->
+<!-- fc id:T-K12-015 sha:8b45e4ee src:kartky/k12-komplekt.md:25 klas:E -->
 ### T-K12-015 · tablycya · рядок 25
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-K12-016 sha:48827a35 src:kartky/k12-komplekt.md:26 klas:F -->
+<!-- fc id:T-K12-016 sha:48827a35 src:kartky/k12-komplekt.md:26 klas:E -->
 ### T-K12-016 · tablycya · рядок 26
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-K12-024 sha:d1d78dad src:kartky/k12-komplekt.md:46 klas:F -->
+<!-- fc id:T-K12-024 sha:d1d78dad src:kartky/k12-komplekt.md:46 klas:E -->
 ### T-K12-024 · proza · рядок 46
 
 **Книга каже, дослівно:**

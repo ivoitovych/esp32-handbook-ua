@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-38-001 sha:43cfd5fe src:manual/38-can.md:3 klas:E -->
+<!-- fc id:T-38-001 sha:43cfd5fe src:manual/38-can.md:3 klas:F -->
 ### T-38-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-38-011 sha:b3af54e7 src:manual/38-can.md:30 klas:E -->
+<!-- fc id:T-38-011 sha:b3af54e7 src:manual/38-can.md:30 klas:F -->
 ### T-38-011 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -452,7 +452,7 @@
 
 ---
 
-<!-- fc id:T-38-030 sha:ec1fc8f4 src:manual/38-can.md:70 klas:F -->
+<!-- fc id:T-38-030 sha:ec1fc8f4 src:manual/38-can.md:70 klas:E -->
 ### T-38-030 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
@@ -465,7 +465,7 @@
 
 ---
 
-<!-- fc id:T-38-031 sha:b8b18ae3 src:manual/38-can.md:72 klas:F -->
+<!-- fc id:T-38-031 sha:b8b18ae3 src:manual/38-can.md:72 klas:E -->
 ### T-38-031 · tablycya · рядок 72
 
 **Книга каже, дослівно:**
@@ -478,7 +478,7 @@
 
 ---
 
-<!-- fc id:T-38-032 sha:676479fe src:manual/38-can.md:73 klas:F -->
+<!-- fc id:T-38-032 sha:676479fe src:manual/38-can.md:73 klas:E -->
 ### T-38-032 · tablycya · рядок 73
 
 **Книга каже, дослівно:**
@@ -491,7 +491,7 @@
 
 ---
 
-<!-- fc id:T-38-033 sha:100b4dd7 src:manual/38-can.md:74 klas:F -->
+<!-- fc id:T-38-033 sha:100b4dd7 src:manual/38-can.md:74 klas:E -->
 ### T-38-033 · tablycya · рядок 74
 
 **Книга каже, дослівно:**
@@ -504,7 +504,7 @@
 
 ---
 
-<!-- fc id:T-38-034 sha:6d56a81b src:manual/38-can.md:75 klas:F -->
+<!-- fc id:T-38-034 sha:6d56a81b src:manual/38-can.md:75 klas:E -->
 ### T-38-034 · tablycya · рядок 75
 
 **Книга каже, дослівно:**
@@ -790,7 +790,7 @@
 
 ---
 
-<!-- fc id:T-38-049 sha:ae4d2dd0 src:manual/38-can.md:114 klas:E -->
+<!-- fc id:T-38-049 sha:ae4d2dd0 src:manual/38-can.md:114 klas:F -->
 ### T-38-049 · proza · рядок 114
 
 **Книга каже, дослівно:**
@@ -914,7 +914,7 @@
 
 ---
 
-<!-- fc id:T-38-058 sha:c4f27b74 src:manual/38-can.md:136 klas:F -->
+<!-- fc id:T-38-058 sha:c4f27b74 src:manual/38-can.md:136 klas:E -->
 ### T-38-058 · proza · рядок 136
 
 **Книга каже, дослівно:**
@@ -927,7 +927,7 @@
 
 ---
 
-<!-- fc id:T-38-059 sha:43fb7ee2 src:manual/38-can.md:143 klas:E -->
+<!-- fc id:T-38-059 sha:43fb7ee2 src:manual/38-can.md:143 klas:F -->
 ### T-38-059 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -1071,7 +1071,7 @@
 
 ---
 
-<!-- fc id:T-38-066 sha:09a82db5 src:manual/38-can.md:159 klas:E -->
+<!-- fc id:T-38-066 sha:09a82db5 src:manual/38-can.md:159 klas:F -->
 ### T-38-066 · proza · рядок 159
 
 **Книга каже, дослівно:**
@@ -1188,7 +1188,7 @@
 
 ---
 
-<!-- fc id:T-38-075 sha:b6945f61 src:manual/38-can.md:178 klas:F -->
+<!-- fc id:T-38-075 sha:b6945f61 src:manual/38-can.md:178 klas:E -->
 ### T-38-075 · proza · рядок 178
 
 **Книга каже, дослівно:**

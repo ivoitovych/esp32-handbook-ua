@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-36-001 sha:e479f00b src:manual/36-spi.md:3 klas:E -->
+<!-- fc id:T-36-001 sha:e479f00b src:manual/36-spi.md:3 klas:F -->
 ### T-36-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-36-012 sha:d7b624ac src:manual/36-spi.md:16 klas:F -->
+<!-- fc id:T-36-012 sha:d7b624ac src:manual/36-spi.md:16 klas:E -->
 ### T-36-012 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-36-020 sha:6ba33956 src:manual/36-spi.md:35 klas:F -->
+<!-- fc id:T-36-020 sha:6ba33956 src:manual/36-spi.md:35 klas:E -->
 ### T-36-020 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-36-021 sha:64e344a1 src:manual/36-spi.md:35 klas:F -->
+<!-- fc id:T-36-021 sha:64e344a1 src:manual/36-spi.md:35 klas:E -->
 ### T-36-021 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-36-022 sha:2123aca4 src:manual/36-spi.md:35 klas:F -->
+<!-- fc id:T-36-022 sha:2123aca4 src:manual/36-spi.md:35 klas:E -->
 ### T-36-022 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -324,7 +324,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-024 sha:223a3e23 src:manual/36-spi.md:35 klas:F -->
+<!-- fc id:T-36-024 sha:223a3e23 src:manual/36-spi.md:35 klas:E -->
 ### T-36-024 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -337,7 +337,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-025 sha:aa8cad3b src:manual/36-spi.md:36 klas:F -->
+<!-- fc id:T-36-025 sha:aa8cad3b src:manual/36-spi.md:36 klas:E -->
 ### T-36-025 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -350,7 +350,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-026 sha:bdd9609f src:manual/36-spi.md:36 klas:F -->
+<!-- fc id:T-36-026 sha:bdd9609f src:manual/36-spi.md:36 klas:E -->
 ### T-36-026 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -363,7 +363,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-027 sha:b3cf1ed6 src:manual/36-spi.md:36 klas:F -->
+<!-- fc id:T-36-027 sha:b3cf1ed6 src:manual/36-spi.md:36 klas:E -->
 ### T-36-027 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -408,7 +408,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-029 sha:bba396cb src:manual/36-spi.md:36 klas:F -->
+<!-- fc id:T-36-029 sha:bba396cb src:manual/36-spi.md:36 klas:E -->
 ### T-36-029 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -421,7 +421,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-030 sha:2555e825 src:manual/36-spi.md:37 klas:F -->
+<!-- fc id:T-36-030 sha:2555e825 src:manual/36-spi.md:37 klas:E -->
 ### T-36-030 · komirka · рядок 37
 
 **Книга каже, дослівно:**
@@ -434,7 +434,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-031 sha:5ab027b6 src:manual/36-spi.md:37 klas:F -->
+<!-- fc id:T-36-031 sha:5ab027b6 src:manual/36-spi.md:37 klas:E -->
 ### T-36-031 · komirka · рядок 37
 
 **Книга каже, дослівно:**
@@ -447,7 +447,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-032 sha:144757db src:manual/36-spi.md:37 klas:F -->
+<!-- fc id:T-36-032 sha:144757db src:manual/36-spi.md:37 klas:E -->
 ### T-36-032 · komirka · рядок 37
 
 **Книга каже, дослівно:**
@@ -460,7 +460,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-033 sha:af086205 src:manual/36-spi.md:37 klas:F -->
+<!-- fc id:T-36-033 sha:af086205 src:manual/36-spi.md:37 klas:E -->
 ### T-36-033 · komirka · рядок 37
 
 **Книга каже, дослівно:**
@@ -473,7 +473,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-034 sha:660e22ea src:manual/36-spi.md:37 klas:F -->
+<!-- fc id:T-36-034 sha:660e22ea src:manual/36-spi.md:37 klas:E -->
 ### T-36-034 · komirka · рядок 37
 
 **Книга каже, дослівно:**
@@ -486,7 +486,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-035 sha:5126ad31 src:manual/36-spi.md:38 klas:F -->
+<!-- fc id:T-36-035 sha:5126ad31 src:manual/36-spi.md:38 klas:E -->
 ### T-36-035 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -499,7 +499,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-036 sha:9cdc1493 src:manual/36-spi.md:38 klas:F -->
+<!-- fc id:T-36-036 sha:9cdc1493 src:manual/36-spi.md:38 klas:E -->
 ### T-36-036 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -512,7 +512,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-037 sha:68e27934 src:manual/36-spi.md:38 klas:F -->
+<!-- fc id:T-36-037 sha:68e27934 src:manual/36-spi.md:38 klas:E -->
 ### T-36-037 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -557,7 +557,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-039 sha:b7269d9d src:manual/36-spi.md:38 klas:F -->
+<!-- fc id:T-36-039 sha:b7269d9d src:manual/36-spi.md:38 klas:E -->
 ### T-36-039 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -570,7 +570,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-040 sha:f774ed83 src:manual/36-spi.md:41 klas:F -->
+<!-- fc id:T-36-040 sha:f774ed83 src:manual/36-spi.md:41 klas:E -->
 ### T-36-040 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -628,7 +628,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-043 sha:59c865c4 src:manual/36-spi.md:46 klas:F -->
+<!-- fc id:T-36-043 sha:59c865c4 src:manual/36-spi.md:46 klas:E -->
 ### T-36-043 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -686,7 +686,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-046 sha:2f08dd98 src:manual/36-spi.md:51 klas:F -->
+<!-- fc id:T-36-046 sha:2f08dd98 src:manual/36-spi.md:51 klas:E -->
 ### T-36-046 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -731,7 +731,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-048 sha:17c8e178 src:manual/36-spi.md:60 klas:F -->
+<!-- fc id:T-36-048 sha:17c8e178 src:manual/36-spi.md:60 klas:E -->
 ### T-36-048 · proza · рядок 60
 
 **Книга каже, дослівно:**
@@ -744,7 +744,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-049 sha:88b02250 src:manual/36-spi.md:60 klas:F -->
+<!-- fc id:T-36-049 sha:88b02250 src:manual/36-spi.md:60 klas:E -->
 ### T-36-049 · proza · рядок 60
 
 **Книга каже, дослівно:**
@@ -783,7 +783,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-052 sha:566c2e3d src:manual/36-spi.md:68 klas:F -->
+<!-- fc id:T-36-052 sha:566c2e3d src:manual/36-spi.md:68 klas:E -->
 ### T-36-052 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -841,7 +841,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-055 sha:cb1460f8 src:manual/36-spi.md:78 klas:E -->
+<!-- fc id:T-36-055 sha:cb1460f8 src:manual/36-spi.md:78 klas:F -->
 ### T-36-055 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -1449,7 +1449,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-084 sha:45437be3 src:manual/36-spi.md:136 klas:E -->
+<!-- fc id:T-36-084 sha:45437be3 src:manual/36-spi.md:136 klas:F -->
 ### T-36-084 · proza · рядок 136
 
 **Книга каже, дослівно:**
@@ -1831,7 +1831,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-112 sha:e8553070 src:manual/36-spi.md:183 klas:E -->
+<!-- fc id:T-36-112 sha:e8553070 src:manual/36-spi.md:183 klas:F -->
 ### T-36-112 · proza · рядок 183
 
 **Книга каже, дослівно:**
@@ -1844,7 +1844,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-113 sha:9af4ac10 src:manual/36-spi.md:186 klas:E -->
+<!-- fc id:T-36-113 sha:9af4ac10 src:manual/36-spi.md:186 klas:F -->
 ### T-36-113 · proza · рядок 186
 
 **Книга каже, дослівно:**
@@ -1883,7 +1883,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-116 sha:4701845c src:manual/36-spi.md:195 klas:F -->
+<!-- fc id:T-36-116 sha:4701845c src:manual/36-spi.md:195 klas:E -->
 ### T-36-116 · proza · рядок 195
 
 **Книга каже, дослівно:**
@@ -1922,7 +1922,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-119 sha:35b028da src:manual/36-spi.md:195 klas:F -->
+<!-- fc id:T-36-119 sha:35b028da src:manual/36-spi.md:195 klas:E -->
 ### T-36-119 · proza · рядок 195
 
 **Книга каже, дослівно:**
@@ -1974,7 +1974,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-123 sha:b875f588 src:manual/36-spi.md:206 klas:E -->
+<!-- fc id:T-36-123 sha:b875f588 src:manual/36-spi.md:206 klas:F -->
 ### T-36-123 · proza · рядок 206
 
 **Книга каже, дослівно:**

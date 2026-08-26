@@ -41,7 +41,7 @@
 
 ---
 
-<!-- fc id:T-16-003 sha:11330d7e src:manual/16-boot.md:8 klas:F -->
+<!-- fc id:T-16-003 sha:11330d7e src:manual/16-boot.md:8 klas:E -->
 ### T-16-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -93,7 +93,7 @@
 
 ---
 
-<!-- fc id:T-16-007 sha:d51c3c70 src:manual/16-boot.md:18 klas:E -->
+<!-- fc id:T-16-007 sha:d51c3c70 src:manual/16-boot.md:18 klas:F -->
 ### T-16-007 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-16-011 sha:b8f3d5d1 src:manual/16-boot.md:29 klas:F -->
+<!-- fc id:T-16-011 sha:b8f3d5d1 src:manual/16-boot.md:29 klas:E -->
 ### T-16-011 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -158,7 +158,7 @@
 
 ---
 
-<!-- fc id:T-16-012 sha:719a564d src:manual/16-boot.md:35 klas:E -->
+<!-- fc id:T-16-012 sha:719a564d src:manual/16-boot.md:35 klas:F -->
 ### T-16-012 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -210,7 +210,7 @@
 
 ---
 
-<!-- fc id:T-16-016 sha:93a3f980 src:manual/16-boot.md:43 klas:F -->
+<!-- fc id:T-16-016 sha:93a3f980 src:manual/16-boot.md:43 klas:E -->
 ### T-16-016 · tablycya · рядок 43
 
 **Книга каже, дослівно:**
@@ -274,7 +274,7 @@
 
 ---
 
-<!-- fc id:T-16-020 sha:3a71c61e src:manual/16-boot.md:53 klas:E -->
+<!-- fc id:T-16-020 sha:3a71c61e src:manual/16-boot.md:53 klas:F -->
 ### T-16-020 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -849,7 +849,7 @@
 
 ---
 
-<!-- fc id:T-16-043 sha:b57ee9e2 src:manual/16-boot.md:95 klas:F -->
+<!-- fc id:T-16-043 sha:b57ee9e2 src:manual/16-boot.md:95 klas:E -->
 ### T-16-043 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -910,7 +910,7 @@
 
 ---
 
-<!-- fc id:T-16-046 sha:c95b1a3f src:manual/16-boot.md:102 klas:F -->
+<!-- fc id:T-16-046 sha:c95b1a3f src:manual/16-boot.md:102 klas:E -->
 ### T-16-046 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -1151,7 +1151,7 @@
 
 ---
 
-<!-- fc id:T-16-057 sha:6f9388d2 src:manual/16-boot.md:135 klas:F -->
+<!-- fc id:T-16-057 sha:6f9388d2 src:manual/16-boot.md:135 klas:E -->
 ### T-16-057 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -1577,7 +1577,7 @@
 
 ---
 
-<!-- fc id:T-16-078 sha:e41e916a src:manual/16-boot.md:190 klas:F -->
+<!-- fc id:T-16-078 sha:e41e916a src:manual/16-boot.md:190 klas:E -->
 ### T-16-078 · proza · рядок 190
 
 **Книга каже, дослівно:**
@@ -1642,7 +1642,7 @@
 
 ---
 
-<!-- fc id:T-16-083 sha:5b9eaf66 src:manual/16-boot.md:210 klas:F -->
+<!-- fc id:T-16-083 sha:5b9eaf66 src:manual/16-boot.md:210 klas:E -->
 ### T-16-083 · proza · рядок 210
 
 **Книга каже, дослівно:**
@@ -1720,7 +1720,7 @@
 
 ---
 
-<!-- fc id:T-16-089 sha:7c8641d9 src:manual/16-boot.md:222 klas:F -->
+<!-- fc id:T-16-089 sha:7c8641d9 src:manual/16-boot.md:222 klas:E -->
 ### T-16-089 · proza · рядок 222
 
 **Книга каже, дослівно:**
@@ -1781,7 +1781,7 @@
 
 ---
 
-<!-- fc id:T-16-093 sha:d25421b7 src:manual/16-boot.md:238 klas:E -->
+<!-- fc id:T-16-093 sha:d25421b7 src:manual/16-boot.md:238 klas:F -->
 ### T-16-093 · proza · рядок 238
 
 **Книга каже, дослівно:**

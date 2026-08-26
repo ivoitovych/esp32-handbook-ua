@@ -77,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-K08-005 sha:b8037477 src:kartky/k08-symptomy.md:7 klas:F -->
+<!-- fc id:T-K08-005 sha:b8037477 src:kartky/k08-symptomy.md:7 klas:E -->
 ### T-K08-005 · komirka · рядок 7
 
 **Книга каже, дослівно:**
@@ -90,7 +90,7 @@
 
 ---
 
-<!-- fc id:T-K08-006 sha:35b60d44 src:kartky/k08-symptomy.md:7 klas:F -->
+<!-- fc id:T-K08-006 sha:35b60d44 src:kartky/k08-symptomy.md:7 klas:E -->
 ### T-K08-006 · komirka · рядок 7
 
 **Книга каже, дослівно:**
@@ -103,7 +103,7 @@
 
 ---
 
-<!-- fc id:T-K08-007 sha:85d11a32 src:kartky/k08-symptomy.md:8 klas:F -->
+<!-- fc id:T-K08-007 sha:85d11a32 src:kartky/k08-symptomy.md:8 klas:E -->
 ### T-K08-007 · komirka · рядок 8
 
 **Книга каже, дослівно:**
@@ -116,7 +116,7 @@
 
 ---
 
-<!-- fc id:T-K08-008 sha:8b27f14c src:kartky/k08-symptomy.md:8 klas:F -->
+<!-- fc id:T-K08-008 sha:8b27f14c src:kartky/k08-symptomy.md:8 klas:E -->
 ### T-K08-008 · komirka · рядок 8
 
 **Книга каже, дослівно:**
@@ -142,7 +142,7 @@
 
 ---
 
-<!-- fc id:T-K08-010 sha:d0d561c3 src:kartky/k08-symptomy.md:9 klas:F -->
+<!-- fc id:T-K08-010 sha:d0d561c3 src:kartky/k08-symptomy.md:9 klas:E -->
 ### T-K08-010 · komirka · рядок 9
 
 **Книга каже, дослівно:**
@@ -155,7 +155,7 @@
 
 ---
 
-<!-- fc id:T-K08-011 sha:4812427e src:kartky/k08-symptomy.md:9 klas:F -->
+<!-- fc id:T-K08-011 sha:4812427e src:kartky/k08-symptomy.md:9 klas:E -->
 ### T-K08-011 · komirka · рядок 9
 
 **Книга каже, дослівно:**
@@ -168,7 +168,7 @@
 
 ---
 
-<!-- fc id:T-K08-012 sha:9b07ee56 src:kartky/k08-symptomy.md:9 klas:F -->
+<!-- fc id:T-K08-012 sha:9b07ee56 src:kartky/k08-symptomy.md:9 klas:E -->
 ### T-K08-012 · komirka · рядок 9
 
 **Книга каже, дослівно:**
@@ -207,7 +207,7 @@
 
 ---
 
-<!-- fc id:T-K08-015 sha:3a14096f src:kartky/k08-symptomy.md:10 klas:F -->
+<!-- fc id:T-K08-015 sha:3a14096f src:kartky/k08-symptomy.md:10 klas:E -->
 ### T-K08-015 · komirka · рядок 10
 
 **Книга каже, дослівно:**
@@ -233,7 +233,7 @@
 
 ---
 
-<!-- fc id:T-K08-017 sha:b67db29d src:kartky/k08-symptomy.md:11 klas:F -->
+<!-- fc id:T-K08-017 sha:b67db29d src:kartky/k08-symptomy.md:11 klas:E -->
 ### T-K08-017 · komirka · рядок 11
 
 **Книга каже, дослівно:**
@@ -259,7 +259,7 @@
 
 ---
 
-<!-- fc id:T-K08-019 sha:f7f26129 src:kartky/k08-symptomy.md:12 klas:F -->
+<!-- fc id:T-K08-019 sha:f7f26129 src:kartky/k08-symptomy.md:12 klas:E -->
 ### T-K08-019 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -272,7 +272,7 @@
 
 ---
 
-<!-- fc id:T-K08-020 sha:f3d170d8 src:kartky/k08-symptomy.md:12 klas:F -->
+<!-- fc id:T-K08-020 sha:f3d170d8 src:kartky/k08-symptomy.md:12 klas:E -->
 ### T-K08-020 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -285,7 +285,7 @@
 
 ---
 
-<!-- fc id:T-K08-021 sha:9f98b9cf src:kartky/k08-symptomy.md:12 klas:F -->
+<!-- fc id:T-K08-021 sha:9f98b9cf src:kartky/k08-symptomy.md:12 klas:E -->
 ### T-K08-021 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -330,7 +330,7 @@
 
 ---
 
-<!-- fc id:T-K08-023 sha:ee0058b7 src:kartky/k08-symptomy.md:13 klas:F -->
+<!-- fc id:T-K08-023 sha:ee0058b7 src:kartky/k08-symptomy.md:13 klas:E -->
 ### T-K08-023 · komirka · рядок 13
 
 **Книга каже, дослівно:**
@@ -369,7 +369,7 @@
 
 ---
 
-<!-- fc id:T-K08-026 sha:dceae9d7 src:kartky/k08-symptomy.md:14 klas:F -->
+<!-- fc id:T-K08-026 sha:dceae9d7 src:kartky/k08-symptomy.md:14 klas:E -->
 ### T-K08-026 · komirka · рядок 14
 
 **Книга каже, дослівно:**
@@ -467,7 +467,7 @@
 
 ---
 
-<!-- fc id:T-K08-033 sha:d7725899 src:kartky/k08-symptomy.md:16 klas:F -->
+<!-- fc id:T-K08-033 sha:d7725899 src:kartky/k08-symptomy.md:16 klas:E -->
 ### T-K08-033 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -493,7 +493,7 @@
 
 ---
 
-<!-- fc id:T-K08-035 sha:f2b297be src:kartky/k08-symptomy.md:17 klas:F -->
+<!-- fc id:T-K08-035 sha:f2b297be src:kartky/k08-symptomy.md:17 klas:E -->
 ### T-K08-035 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -506,7 +506,7 @@
 
 ---
 
-<!-- fc id:T-K08-036 sha:30984d01 src:kartky/k08-symptomy.md:17 klas:F -->
+<!-- fc id:T-K08-036 sha:30984d01 src:kartky/k08-symptomy.md:17 klas:E -->
 ### T-K08-036 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -532,7 +532,7 @@
 
 ---
 
-<!-- fc id:T-K08-038 sha:b728f979 src:kartky/k08-symptomy.md:18 klas:F -->
+<!-- fc id:T-K08-038 sha:b728f979 src:kartky/k08-symptomy.md:18 klas:E -->
 ### T-K08-038 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -545,7 +545,7 @@
 
 ---
 
-<!-- fc id:T-K08-039 sha:654148ac src:kartky/k08-symptomy.md:18 klas:F -->
+<!-- fc id:T-K08-039 sha:654148ac src:kartky/k08-symptomy.md:18 klas:E -->
 ### T-K08-039 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -558,7 +558,7 @@
 
 ---
 
-<!-- fc id:T-K08-040 sha:a9dae2dd src:kartky/k08-symptomy.md:19 klas:F -->
+<!-- fc id:T-K08-040 sha:a9dae2dd src:kartky/k08-symptomy.md:19 klas:E -->
 ### T-K08-040 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -584,7 +584,7 @@
 
 ---
 
-<!-- fc id:T-K08-042 sha:9f004233 src:kartky/k08-symptomy.md:19 klas:F -->
+<!-- fc id:T-K08-042 sha:9f004233 src:kartky/k08-symptomy.md:19 klas:E -->
 ### T-K08-042 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -662,7 +662,7 @@
 
 ---
 
-<!-- fc id:T-K08-048 sha:18c32713 src:kartky/k08-symptomy.md:21 klas:F -->
+<!-- fc id:T-K08-048 sha:18c32713 src:kartky/k08-symptomy.md:21 klas:E -->
 ### T-K08-048 · komirka · рядок 21
 
 **Книга каже, дослівно:**

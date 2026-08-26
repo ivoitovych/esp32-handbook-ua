@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok budgets arytmetyka check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil budgets arytmetyka check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -61,6 +61,10 @@ polya:
 # Листування супровідників: форма, зв'язність, перелік відкритого.
 zvyazok:
 	@$(PY) tools/zvyazok.py
+
+# Поділ незвіреного між супровідниками за досяжністю джерела.
+podil:
+	@$(PY) tools/podil.py
 
 # Зібрати й покласти у release/ те, що бачить читач на GitHub.
 release:

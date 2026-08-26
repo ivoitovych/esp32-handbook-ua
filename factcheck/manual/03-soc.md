@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-03-002 sha:b113984f src:manual/03-soc.md:3 klas:E -->
+<!-- fc id:T-03-002 sha:b113984f src:manual/03-soc.md:3 klas:F -->
 ### T-03-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-03-004 sha:8ed6fe72 src:manual/03-soc.md:10 klas:F -->
+<!-- fc id:T-03-004 sha:8ed6fe72 src:manual/03-soc.md:10 klas:E -->
 ### T-03-004 · proza · рядок 10
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-03-009 sha:65a050e8 src:manual/03-soc.md:23 klas:F -->
+<!-- fc id:T-03-009 sha:65a050e8 src:manual/03-soc.md:23 klas:E -->
 ### T-03-009 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-03-010 sha:6c80c4de src:manual/03-soc.md:23 klas:F -->
+<!-- fc id:T-03-010 sha:6c80c4de src:manual/03-soc.md:23 klas:E -->
 ### T-03-010 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-03-021 sha:9d8da4da src:manual/03-soc.md:47 klas:E -->
+<!-- fc id:T-03-021 sha:9d8da4da src:manual/03-soc.md:47 klas:F -->
 ### T-03-021 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -352,7 +352,7 @@
 
 ---
 
-<!-- fc id:T-03-027 sha:5ffa26da src:manual/03-soc.md:54 klas:F -->
+<!-- fc id:T-03-027 sha:5ffa26da src:manual/03-soc.md:54 klas:E -->
 ### T-03-027 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -417,7 +417,7 @@
 
 ---
 
-<!-- fc id:T-03-032 sha:0d142738 src:manual/03-soc.md:61 klas:E -->
+<!-- fc id:T-03-032 sha:0d142738 src:manual/03-soc.md:61 klas:F -->
 ### T-03-032 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -469,7 +469,7 @@
 
 ---
 
-<!-- fc id:T-03-036 sha:680850ac src:manual/03-soc.md:73 klas:E -->
+<!-- fc id:T-03-036 sha:680850ac src:manual/03-soc.md:73 klas:F -->
 ### T-03-036 · proza · рядок 73
 
 **Книга каже, дослівно:**
@@ -696,7 +696,7 @@
 
 ---
 
-<!-- fc id:T-03-045 sha:628ed161 src:manual/03-soc.md:92 klas:E -->
+<!-- fc id:T-03-045 sha:628ed161 src:manual/03-soc.md:92 klas:F -->
 ### T-03-045 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -933,7 +933,7 @@
 
 ---
 
-<!-- fc id:T-03-060 sha:769a9fbb src:manual/03-soc.md:144 klas:E -->
+<!-- fc id:T-03-060 sha:769a9fbb src:manual/03-soc.md:144 klas:F -->
 ### T-03-060 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -959,7 +959,7 @@
 
 ---
 
-<!-- fc id:T-03-062 sha:62262d38 src:manual/03-soc.md:147 klas:E -->
+<!-- fc id:T-03-062 sha:62262d38 src:manual/03-soc.md:147 klas:F -->
 ### T-03-062 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -972,7 +972,7 @@
 
 ---
 
-<!-- fc id:T-03-063 sha:49a8a31e src:manual/03-soc.md:147 klas:F -->
+<!-- fc id:T-03-063 sha:49a8a31e src:manual/03-soc.md:147 klas:E -->
 ### T-03-063 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -985,7 +985,7 @@
 
 ---
 
-<!-- fc id:T-03-064 sha:dd0ef344 src:manual/03-soc.md:152 klas:E -->
+<!-- fc id:T-03-064 sha:dd0ef344 src:manual/03-soc.md:152 klas:F -->
 ### T-03-064 · proza · рядок 152
 
 **Книга каже, дослівно:**
@@ -1110,7 +1110,7 @@
 
 ---
 
-<!-- fc id:T-03-071 sha:a0d41ca6 src:manual/03-soc.md:176 klas:F -->
+<!-- fc id:T-03-071 sha:a0d41ca6 src:manual/03-soc.md:176 klas:E -->
 ### T-03-071 · proza · рядок 176
 
 **Книга каже, дослівно:**

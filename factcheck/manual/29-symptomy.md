@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-29-003 sha:f3041f69 src:manual/29-symptomy.md:6 klas:F -->
+<!-- fc id:T-29-003 sha:f3041f69 src:manual/29-symptomy.md:6 klas:E -->
 ### T-29-003 · proza · рядок 6
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-29-006 sha:9dc31a69 src:manual/29-symptomy.md:11 klas:F -->
+<!-- fc id:T-29-006 sha:9dc31a69 src:manual/29-symptomy.md:11 klas:E -->
 ### T-29-006 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-29-008 sha:e64e9cb1 src:manual/29-symptomy.md:17 klas:F -->
+<!-- fc id:T-29-008 sha:e64e9cb1 src:manual/29-symptomy.md:17 klas:E -->
 ### T-29-008 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -181,7 +181,7 @@
 
 ---
 
-<!-- fc id:T-29-013 sha:f21f3796 src:manual/29-symptomy.md:27 klas:E -->
+<!-- fc id:T-29-013 sha:f21f3796 src:manual/29-symptomy.md:27 klas:F -->
 ### T-29-013 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -207,7 +207,7 @@
 
 ---
 
-<!-- fc id:T-29-015 sha:3d87fec5 src:manual/29-symptomy.md:32 klas:E -->
+<!-- fc id:T-29-015 sha:3d87fec5 src:manual/29-symptomy.md:32 klas:F -->
 ### T-29-015 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -220,7 +220,7 @@
 
 ---
 
-<!-- fc id:T-29-016 sha:8d18fdd6 src:manual/29-symptomy.md:32 klas:F -->
+<!-- fc id:T-29-016 sha:8d18fdd6 src:manual/29-symptomy.md:32 klas:E -->
 ### T-29-016 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-29-032 sha:0dd9497f src:manual/29-symptomy.md:82 klas:F -->
+<!-- fc id:T-29-032 sha:0dd9497f src:manual/29-symptomy.md:82 klas:E -->
 ### T-29-032 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -503,7 +503,7 @@
 
 ---
 
-<!-- fc id:T-29-034 sha:2aa50ba1 src:manual/29-symptomy.md:88 klas:E -->
+<!-- fc id:T-29-034 sha:2aa50ba1 src:manual/29-symptomy.md:88 klas:F -->
 ### T-29-034 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -555,7 +555,7 @@
 
 ---
 
-<!-- fc id:T-29-038 sha:4697f0b8 src:manual/29-symptomy.md:98 klas:F -->
+<!-- fc id:T-29-038 sha:4697f0b8 src:manual/29-symptomy.md:98 klas:E -->
 ### T-29-038 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -594,7 +594,7 @@
 
 ---
 
-<!-- fc id:T-29-041 sha:0bd2c14d src:manual/29-symptomy.md:105 klas:F -->
+<!-- fc id:T-29-041 sha:0bd2c14d src:manual/29-symptomy.md:105 klas:E -->
 ### T-29-041 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-29-045 sha:98c6ab36 src:manual/29-symptomy.md:117 klas:F -->
+<!-- fc id:T-29-045 sha:98c6ab36 src:manual/29-symptomy.md:117 klas:E -->
 ### T-29-045 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -724,7 +724,7 @@
 
 ---
 
-<!-- fc id:T-29-051 sha:c5d58551 src:manual/29-symptomy.md:128 klas:F -->
+<!-- fc id:T-29-051 sha:c5d58551 src:manual/29-symptomy.md:128 klas:E -->
 ### T-29-051 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -822,7 +822,7 @@
 
 ---
 
-<!-- fc id:T-29-058 sha:2e4460f3 src:manual/29-symptomy.md:145 klas:F -->
+<!-- fc id:T-29-058 sha:2e4460f3 src:manual/29-symptomy.md:145 klas:E -->
 ### T-29-058 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -835,7 +835,7 @@
 
 ---
 
-<!-- fc id:T-29-059 sha:7296ca89 src:manual/29-symptomy.md:150 klas:E -->
+<!-- fc id:T-29-059 sha:7296ca89 src:manual/29-symptomy.md:150 klas:F -->
 ### T-29-059 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -848,7 +848,7 @@
 
 ---
 
-<!-- fc id:T-29-060 sha:39d897e6 src:manual/29-symptomy.md:150 klas:F -->
+<!-- fc id:T-29-060 sha:39d897e6 src:manual/29-symptomy.md:150 klas:E -->
 ### T-29-060 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -944,7 +944,7 @@
 
 ---
 
-<!-- fc id:T-29-066 sha:e860b038 src:manual/29-symptomy.md:160 klas:E -->
+<!-- fc id:T-29-066 sha:e860b038 src:manual/29-symptomy.md:160 klas:F -->
 ### T-29-066 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -1156,7 +1156,7 @@
 
 ---
 
-<!-- fc id:T-29-078 sha:df97ab76 src:manual/29-symptomy.md:192 klas:F -->
+<!-- fc id:T-29-078 sha:df97ab76 src:manual/29-symptomy.md:192 klas:E -->
 ### T-29-078 · proza · рядок 192
 
 **Книга каже, дослівно:**
@@ -1169,7 +1169,7 @@
 
 ---
 
-<!-- fc id:T-29-079 sha:647aae7e src:manual/29-symptomy.md:196 klas:F -->
+<!-- fc id:T-29-079 sha:647aae7e src:manual/29-symptomy.md:196 klas:E -->
 ### T-29-079 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1195,7 +1195,7 @@
 
 ---
 
-<!-- fc id:T-29-081 sha:65c17fae src:manual/29-symptomy.md:203 klas:F -->
+<!-- fc id:T-29-081 sha:65c17fae src:manual/29-symptomy.md:203 klas:E -->
 ### T-29-081 · proza · рядок 203
 
 **Книга каже, дослівно:**
@@ -1221,7 +1221,7 @@
 
 ---
 
-<!-- fc id:T-29-083 sha:74dd739e src:manual/29-symptomy.md:206 klas:F -->
+<!-- fc id:T-29-083 sha:74dd739e src:manual/29-symptomy.md:206 klas:E -->
 ### T-29-083 · proza · рядок 206
 
 **Книга каже, дослівно:**
@@ -1247,7 +1247,7 @@
 
 ---
 
-<!-- fc id:T-29-085 sha:d6ebb180 src:manual/29-symptomy.md:209 klas:F -->
+<!-- fc id:T-29-085 sha:d6ebb180 src:manual/29-symptomy.md:209 klas:E -->
 ### T-29-085 · proza · рядок 209
 
 **Книга каже, дослівно:**
@@ -1260,7 +1260,7 @@
 
 ---
 
-<!-- fc id:T-29-086 sha:038e86bd src:manual/29-symptomy.md:212 klas:F -->
+<!-- fc id:T-29-086 sha:038e86bd src:manual/29-symptomy.md:212 klas:E -->
 ### T-29-086 · proza · рядок 212
 
 **Книга каже, дослівно:**
@@ -1419,7 +1419,7 @@
 
 ---
 
-<!-- fc id:T-29-097 sha:9f96c68b src:manual/29-symptomy.md:238 klas:F -->
+<!-- fc id:T-29-097 sha:9f96c68b src:manual/29-symptomy.md:238 klas:E -->
 ### T-29-097 · proza · рядок 238
 
 **Книга каже, дослівно:**

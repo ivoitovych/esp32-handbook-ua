@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-50-006 sha:0b0e8d20 src:manual/50-bezpeka.md:15 klas:E -->
+<!-- fc id:T-50-006 sha:0b0e8d20 src:manual/50-bezpeka.md:15 klas:F -->
 ### T-50-006 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-50-011 sha:06497578 src:manual/50-bezpeka.md:22 klas:F -->
+<!-- fc id:T-50-011 sha:06497578 src:manual/50-bezpeka.md:22 klas:E -->
 ### T-50-011 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-50-016 sha:c439ffb5 src:manual/50-bezpeka.md:37 klas:E -->
+<!-- fc id:T-50-016 sha:c439ffb5 src:manual/50-bezpeka.md:37 klas:F -->
 ### T-50-016 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-50-022 sha:2ef51254 src:manual/50-bezpeka.md:60 klas:E -->
+<!-- fc id:T-50-022 sha:2ef51254 src:manual/50-bezpeka.md:60 klas:F -->
 ### T-50-022 · proza · рядок 60
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-50-024 sha:1fe602ad src:manual/50-bezpeka.md:63 klas:E -->
+<!-- fc id:T-50-024 sha:1fe602ad src:manual/50-bezpeka.md:63 klas:F -->
 ### T-50-024 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-50-026 sha:ecb77fc0 src:manual/50-bezpeka.md:66 klas:E -->
+<!-- fc id:T-50-026 sha:ecb77fc0 src:manual/50-bezpeka.md:66 klas:F -->
 ### T-50-026 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-50-027 sha:5548418d src:manual/50-bezpeka.md:66 klas:E -->
+<!-- fc id:T-50-027 sha:5548418d src:manual/50-bezpeka.md:66 klas:F -->
 ### T-50-027 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -357,7 +357,7 @@
 
 ---
 
-<!-- fc id:T-50-028 sha:083a3041 src:manual/50-bezpeka.md:71 klas:F -->
+<!-- fc id:T-50-028 sha:083a3041 src:manual/50-bezpeka.md:71 klas:E -->
 ### T-50-028 · proza · рядок 71
 
 **Книга каже, дослівно:**
@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-50-029 sha:27c4495d src:manual/50-bezpeka.md:73 klas:E -->
+<!-- fc id:T-50-029 sha:27c4495d src:manual/50-bezpeka.md:73 klas:F -->
 ### T-50-029 · proza · рядок 73
 
 **Книга каже, дослівно:**
@@ -448,7 +448,7 @@
 
 ---
 
-<!-- fc id:T-50-035 sha:f237a1db src:manual/50-bezpeka.md:83 klas:E -->
+<!-- fc id:T-50-035 sha:f237a1db src:manual/50-bezpeka.md:83 klas:F -->
 ### T-50-035 · proza · рядок 83
 
 **Книга каже, дослівно:**
@@ -461,7 +461,7 @@
 
 ---
 
-<!-- fc id:T-50-036 sha:5da2fab6 src:manual/50-bezpeka.md:89 klas:E -->
+<!-- fc id:T-50-036 sha:5da2fab6 src:manual/50-bezpeka.md:89 klas:F -->
 ### T-50-036 · proza · рядок 89
 
 **Книга каже, дослівно:**
@@ -474,7 +474,7 @@
 
 ---
 
-<!-- fc id:T-50-037 sha:fe635607 src:manual/50-bezpeka.md:89 klas:E -->
+<!-- fc id:T-50-037 sha:fe635607 src:manual/50-bezpeka.md:89 klas:F -->
 ### T-50-037 · proza · рядок 89
 
 **Книга каже, дослівно:**
@@ -513,7 +513,7 @@
 
 ---
 
-<!-- fc id:T-50-040 sha:b0734346 src:manual/50-bezpeka.md:99 klas:F -->
+<!-- fc id:T-50-040 sha:b0734346 src:manual/50-bezpeka.md:99 klas:E -->
 ### T-50-040 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -578,7 +578,7 @@
 
 ---
 
-<!-- fc id:T-50-045 sha:ff39a4a9 src:manual/50-bezpeka.md:108 klas:E -->
+<!-- fc id:T-50-045 sha:ff39a4a9 src:manual/50-bezpeka.md:108 klas:F -->
 ### T-50-045 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -604,7 +604,7 @@
 
 ---
 
-<!-- fc id:T-50-047 sha:4a5fe347 src:manual/50-bezpeka.md:113 klas:E -->
+<!-- fc id:T-50-047 sha:4a5fe347 src:manual/50-bezpeka.md:113 klas:F -->
 ### T-50-047 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -708,7 +708,7 @@
 
 ---
 
-<!-- fc id:T-50-055 sha:9e2d277b src:manual/50-bezpeka.md:139 klas:F -->
+<!-- fc id:T-50-055 sha:9e2d277b src:manual/50-bezpeka.md:139 klas:E -->
 ### T-50-055 · proza · рядок 139
 
 **Книга каже, дослівно:**
@@ -786,7 +786,7 @@
 
 ---
 
-<!-- fc id:T-50-061 sha:493791ce src:manual/50-bezpeka.md:161 klas:F -->
+<!-- fc id:T-50-061 sha:493791ce src:manual/50-bezpeka.md:161 klas:E -->
 ### T-50-061 · proza · рядок 161
 
 **Книга каже, дослівно:**
@@ -838,7 +838,7 @@
 
 ---
 
-<!-- fc id:T-50-065 sha:655b279a src:manual/50-bezpeka.md:168 klas:F -->
+<!-- fc id:T-50-065 sha:655b279a src:manual/50-bezpeka.md:168 klas:E -->
 ### T-50-065 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -864,7 +864,7 @@
 
 ---
 
-<!-- fc id:T-50-067 sha:b662f0eb src:manual/50-bezpeka.md:176 klas:E -->
+<!-- fc id:T-50-067 sha:b662f0eb src:manual/50-bezpeka.md:176 klas:F -->
 ### T-50-067 · proza · рядок 176
 
 **Книга каже, дослівно:**
@@ -877,7 +877,7 @@
 
 ---
 
-<!-- fc id:T-50-068 sha:5538db22 src:manual/50-bezpeka.md:189 klas:E -->
+<!-- fc id:T-50-068 sha:5538db22 src:manual/50-bezpeka.md:189 klas:F -->
 ### T-50-068 · proza · рядок 189
 
 **Книга каже, дослівно:**
@@ -903,7 +903,7 @@
 
 ---
 
-<!-- fc id:T-50-070 sha:65dd6c5b src:manual/50-bezpeka.md:194 klas:E -->
+<!-- fc id:T-50-070 sha:65dd6c5b src:manual/50-bezpeka.md:194 klas:F -->
 ### T-50-070 · proza · рядок 194
 
 **Книга каже, дослівно:**

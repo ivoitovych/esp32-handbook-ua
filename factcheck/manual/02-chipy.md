@@ -1321,7 +1321,7 @@
 
 ---
 
-<!-- fc id:T-02-077 sha:b137b862 src:manual/02-chipy.md:52 klas:E -->
+<!-- fc id:T-02-077 sha:b137b862 src:manual/02-chipy.md:52 klas:F -->
 ### T-02-077 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -1566,7 +1566,7 @@
 
 ---
 
-<!-- fc id:T-02-090 sha:20383220 src:manual/02-chipy.md:92 klas:E -->
+<!-- fc id:T-02-090 sha:20383220 src:manual/02-chipy.md:92 klas:F -->
 ### T-02-090 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -1644,7 +1644,7 @@
 
 ---
 
-<!-- fc id:T-02-096 sha:c17dc940 src:manual/02-chipy.md:121 klas:E -->
+<!-- fc id:T-02-096 sha:c17dc940 src:manual/02-chipy.md:121 klas:F -->
 ### T-02-096 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -1683,7 +1683,7 @@
 
 ---
 
-<!-- fc id:T-02-099 sha:ce0f3606 src:manual/02-chipy.md:131 klas:E -->
+<!-- fc id:T-02-099 sha:ce0f3606 src:manual/02-chipy.md:131 klas:F -->
 ### T-02-099 · proza · рядок 131
 
 **Книга каже, дослівно:**
@@ -1939,7 +1939,7 @@
 
 ---
 
-<!-- fc id:T-02-114 sha:7734fd03 src:manual/02-chipy.md:162 klas:E -->
+<!-- fc id:T-02-114 sha:7734fd03 src:manual/02-chipy.md:162 klas:F -->
 ### T-02-114 · proza · рядок 162
 
 **Книга каже, дослівно:**
@@ -1978,7 +1978,7 @@
 
 ---
 
-<!-- fc id:T-02-117 sha:85436893 src:manual/02-chipy.md:167 klas:F -->
+<!-- fc id:T-02-117 sha:85436893 src:manual/02-chipy.md:167 klas:E -->
 ### T-02-117 · proza · рядок 167
 
 **Книга каже, дослівно:**
@@ -2004,7 +2004,7 @@
 
 ---
 
-<!-- fc id:T-02-119 sha:aafacce0 src:manual/02-chipy.md:174 klas:F -->
+<!-- fc id:T-02-119 sha:aafacce0 src:manual/02-chipy.md:174 klas:E -->
 ### T-02-119 · komirka · рядок 174
 
 **Книга каже, дослівно:**
@@ -2017,7 +2017,7 @@
 
 ---
 
-<!-- fc id:T-02-120 sha:31913840 src:manual/02-chipy.md:174 klas:F -->
+<!-- fc id:T-02-120 sha:31913840 src:manual/02-chipy.md:174 klas:E -->
 ### T-02-120 · komirka · рядок 174
 
 **Книга каже, дослівно:**
@@ -2082,7 +2082,7 @@
 
 ---
 
-<!-- fc id:T-02-125 sha:ae41dea8 src:manual/02-chipy.md:177 klas:F -->
+<!-- fc id:T-02-125 sha:ae41dea8 src:manual/02-chipy.md:177 klas:E -->
 ### T-02-125 · komirka · рядок 177
 
 **Книга каже, дослівно:**
@@ -2095,7 +2095,7 @@
 
 ---
 
-<!-- fc id:T-02-126 sha:4020ac33 src:manual/02-chipy.md:177 klas:F -->
+<!-- fc id:T-02-126 sha:4020ac33 src:manual/02-chipy.md:177 klas:E -->
 ### T-02-126 · komirka · рядок 177
 
 **Книга каже, дослівно:**
@@ -2121,7 +2121,7 @@
 
 ---
 
-<!-- fc id:T-02-128 sha:c8184cfc src:manual/02-chipy.md:178 klas:F -->
+<!-- fc id:T-02-128 sha:c8184cfc src:manual/02-chipy.md:178 klas:E -->
 ### T-02-128 · komirka · рядок 178
 
 **Книга каже, дослівно:**
@@ -2270,7 +2270,7 @@
 
 ---
 
-<!-- fc id:T-02-136 sha:7f0446d0 src:manual/02-chipy.md:182 klas:F -->
+<!-- fc id:T-02-136 sha:7f0446d0 src:manual/02-chipy.md:182 klas:E -->
 ### T-02-136 · komirka · рядок 182
 
 **Книга каже, дослівно:**

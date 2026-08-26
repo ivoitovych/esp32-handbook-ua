@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-48-005 sha:aba5fa3f src:manual/48-motory.md:15 klas:F -->
+<!-- fc id:T-48-005 sha:aba5fa3f src:manual/48-motory.md:15 klas:E -->
 ### T-48-005 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-48-014 sha:8d181d35 src:manual/48-motory.md:38 klas:F -->
+<!-- fc id:T-48-014 sha:8d181d35 src:manual/48-motory.md:38 klas:E -->
 ### T-48-014 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-48-015 sha:784f4b61 src:manual/48-motory.md:41 klas:F -->
+<!-- fc id:T-48-015 sha:784f4b61 src:manual/48-motory.md:41 klas:E -->
 ### T-48-015 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-48-019 sha:00d5ea08 src:manual/48-motory.md:49 klas:F -->
+<!-- fc id:T-48-019 sha:00d5ea08 src:manual/48-motory.md:49 klas:E -->
 ### T-48-019 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -461,7 +461,7 @@
 
 ---
 
-<!-- fc id:T-48-036 sha:706f9be7 src:manual/48-motory.md:92 klas:F -->
+<!-- fc id:T-48-036 sha:706f9be7 src:manual/48-motory.md:92 klas:E -->
 ### T-48-036 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -601,7 +601,7 @@
 
 ---
 
-<!-- fc id:T-48-046 sha:466a0ad6 src:manual/48-motory.md:113 klas:F -->
+<!-- fc id:T-48-046 sha:466a0ad6 src:manual/48-motory.md:113 klas:E -->
 ### T-48-046 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -783,7 +783,7 @@
 
 ---
 
-<!-- fc id:T-48-060 sha:48819a5f src:manual/48-motory.md:146 klas:F -->
+<!-- fc id:T-48-060 sha:48819a5f src:manual/48-motory.md:146 klas:E -->
 ### T-48-060 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -822,7 +822,7 @@
 
 ---
 
-<!-- fc id:T-48-063 sha:14d2cc1b src:manual/48-motory.md:157 klas:F -->
+<!-- fc id:T-48-063 sha:14d2cc1b src:manual/48-motory.md:157 klas:E -->
 ### T-48-063 · proza · рядок 157
 
 **Книга каже, дослівно:**
@@ -861,7 +861,7 @@
 
 ---
 
-<!-- fc id:T-48-066 sha:118944b6 src:manual/48-motory.md:163 klas:E -->
+<!-- fc id:T-48-066 sha:118944b6 src:manual/48-motory.md:163 klas:F -->
 ### T-48-066 · proza · рядок 163
 
 **Книга каже, дослівно:**

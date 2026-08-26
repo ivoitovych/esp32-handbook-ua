@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-G-002 sha:4b7414f2 src:dodatky/g-glosariy.md:3 klas:F -->
+<!-- fc id:T-G-002 sha:4b7414f2 src:dodatky/g-glosariy.md:3 klas:E -->
 ### T-G-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-G-004 sha:5afcab96 src:dodatky/g-glosariy.md:11 klas:F -->
+<!-- fc id:T-G-004 sha:5afcab96 src:dodatky/g-glosariy.md:11 klas:E -->
 ### T-G-004 · tablycya · рядок 11
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-G-010 sha:9574692b src:dodatky/g-glosariy.md:18 klas:F -->
+<!-- fc id:T-G-010 sha:9574692b src:dodatky/g-glosariy.md:18 klas:E -->
 ### T-G-010 · tablycya · рядок 18
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-G-011 sha:8948dd99 src:dodatky/g-glosariy.md:19 klas:F -->
+<!-- fc id:T-G-011 sha:8948dd99 src:dodatky/g-glosariy.md:19 klas:E -->
 ### T-G-011 · tablycya · рядок 19
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-G-012 sha:a0b83b3c src:dodatky/g-glosariy.md:20 klas:F -->
+<!-- fc id:T-G-012 sha:a0b83b3c src:dodatky/g-glosariy.md:20 klas:E -->
 ### T-G-012 · tablycya · рядок 20
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-G-013 sha:126a103f src:dodatky/g-glosariy.md:21 klas:F -->
+<!-- fc id:T-G-013 sha:126a103f src:dodatky/g-glosariy.md:21 klas:E -->
 ### T-G-013 · tablycya · рядок 21
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-G-014 sha:ae7b5506 src:dodatky/g-glosariy.md:22 klas:F -->
+<!-- fc id:T-G-014 sha:ae7b5506 src:dodatky/g-glosariy.md:22 klas:E -->
 ### T-G-014 · tablycya · рядок 22
 
 **Книга каже, дослівно:**
@@ -205,7 +205,7 @@
 
 ---
 
-<!-- fc id:T-G-016 sha:074c03e7 src:dodatky/g-glosariy.md:24 klas:F -->
+<!-- fc id:T-G-016 sha:074c03e7 src:dodatky/g-glosariy.md:24 klas:E -->
 ### T-G-016 · tablycya · рядок 24
 
 **Книга каже, дослівно:**
@@ -218,7 +218,7 @@
 
 ---
 
-<!-- fc id:T-G-017 sha:507f8fb0 src:dodatky/g-glosariy.md:25 klas:F -->
+<!-- fc id:T-G-017 sha:507f8fb0 src:dodatky/g-glosariy.md:25 klas:E -->
 ### T-G-017 · tablycya · рядок 25
 
 **Книга каже, дослівно:**
@@ -244,7 +244,7 @@
 
 ---
 
-<!-- fc id:T-G-019 sha:e0936b3c src:dodatky/g-glosariy.md:27 klas:F -->
+<!-- fc id:T-G-019 sha:e0936b3c src:dodatky/g-glosariy.md:27 klas:E -->
 ### T-G-019 · tablycya · рядок 27
 
 **Книга каже, дослівно:**
@@ -257,7 +257,7 @@
 
 ---
 
-<!-- fc id:T-G-020 sha:649329e1 src:dodatky/g-glosariy.md:28 klas:F -->
+<!-- fc id:T-G-020 sha:649329e1 src:dodatky/g-glosariy.md:28 klas:E -->
 ### T-G-020 · tablycya · рядок 28
 
 **Книга каже, дослівно:**
@@ -270,7 +270,7 @@
 
 ---
 
-<!-- fc id:T-G-021 sha:9ce910e6 src:dodatky/g-glosariy.md:29 klas:F -->
+<!-- fc id:T-G-021 sha:9ce910e6 src:dodatky/g-glosariy.md:29 klas:E -->
 ### T-G-021 · tablycya · рядок 29
 
 **Книга каже, дослівно:**
@@ -283,7 +283,7 @@
 
 ---
 
-<!-- fc id:T-G-022 sha:1be9070b src:dodatky/g-glosariy.md:30 klas:F -->
+<!-- fc id:T-G-022 sha:1be9070b src:dodatky/g-glosariy.md:30 klas:E -->
 ### T-G-022 · tablycya · рядок 30
 
 **Книга каже, дослівно:**
@@ -296,7 +296,7 @@
 
 ---
 
-<!-- fc id:T-G-023 sha:223d0269 src:dodatky/g-glosariy.md:31 klas:F -->
+<!-- fc id:T-G-023 sha:223d0269 src:dodatky/g-glosariy.md:31 klas:E -->
 ### T-G-023 · tablycya · рядок 31
 
 **Книга каже, дослівно:**
@@ -309,7 +309,7 @@
 
 ---
 
-<!-- fc id:T-G-024 sha:ed9d6f40 src:dodatky/g-glosariy.md:37 klas:F -->
+<!-- fc id:T-G-024 sha:ed9d6f40 src:dodatky/g-glosariy.md:37 klas:E -->
 ### T-G-024 · tablycya · рядок 37
 
 **Книга каже, дослівно:**
@@ -322,7 +322,7 @@
 
 ---
 
-<!-- fc id:T-G-025 sha:c8145da9 src:dodatky/g-glosariy.md:39 klas:F -->
+<!-- fc id:T-G-025 sha:c8145da9 src:dodatky/g-glosariy.md:39 klas:E -->
 ### T-G-025 · tablycya · рядок 39
 
 **Книга каже, дослівно:**
@@ -335,7 +335,7 @@
 
 ---
 
-<!-- fc id:T-G-026 sha:85a4eb20 src:dodatky/g-glosariy.md:40 klas:F -->
+<!-- fc id:T-G-026 sha:85a4eb20 src:dodatky/g-glosariy.md:40 klas:E -->
 ### T-G-026 · tablycya · рядок 40
 
 **Книга каже, дослівно:**
@@ -348,7 +348,7 @@
 
 ---
 
-<!-- fc id:T-G-027 sha:2e5ec78e src:dodatky/g-glosariy.md:41 klas:F -->
+<!-- fc id:T-G-027 sha:2e5ec78e src:dodatky/g-glosariy.md:41 klas:E -->
 ### T-G-027 · tablycya · рядок 41
 
 **Книга каже, дослівно:**
@@ -361,7 +361,7 @@
 
 ---
 
-<!-- fc id:T-G-028 sha:9c8c694b src:dodatky/g-glosariy.md:42 klas:F -->
+<!-- fc id:T-G-028 sha:9c8c694b src:dodatky/g-glosariy.md:42 klas:E -->
 ### T-G-028 · tablycya · рядок 42
 
 **Книга каже, дослівно:**
@@ -374,7 +374,7 @@
 
 ---
 
-<!-- fc id:T-G-029 sha:24414511 src:dodatky/g-glosariy.md:43 klas:F -->
+<!-- fc id:T-G-029 sha:24414511 src:dodatky/g-glosariy.md:43 klas:E -->
 ### T-G-029 · tablycya · рядок 43
 
 **Книга каже, дослівно:**
@@ -387,7 +387,7 @@
 
 ---
 
-<!-- fc id:T-G-030 sha:dd551675 src:dodatky/g-glosariy.md:44 klas:F -->
+<!-- fc id:T-G-030 sha:dd551675 src:dodatky/g-glosariy.md:44 klas:E -->
 ### T-G-030 · tablycya · рядок 44
 
 **Книга каже, дослівно:**
@@ -400,7 +400,7 @@
 
 ---
 
-<!-- fc id:T-G-031 sha:670f88d3 src:dodatky/g-glosariy.md:45 klas:F -->
+<!-- fc id:T-G-031 sha:670f88d3 src:dodatky/g-glosariy.md:45 klas:E -->
 ### T-G-031 · tablycya · рядок 45
 
 **Книга каже, дослівно:**
@@ -413,7 +413,7 @@
 
 ---
 
-<!-- fc id:T-G-032 sha:61fc09d0 src:dodatky/g-glosariy.md:46 klas:F -->
+<!-- fc id:T-G-032 sha:61fc09d0 src:dodatky/g-glosariy.md:46 klas:E -->
 ### T-G-032 · tablycya · рядок 46
 
 **Книга каже, дослівно:**
@@ -426,7 +426,7 @@
 
 ---
 
-<!-- fc id:T-G-033 sha:722dc70f src:dodatky/g-glosariy.md:47 klas:F -->
+<!-- fc id:T-G-033 sha:722dc70f src:dodatky/g-glosariy.md:47 klas:E -->
 ### T-G-033 · tablycya · рядок 47
 
 **Книга каже, дослівно:**
@@ -439,7 +439,7 @@
 
 ---
 
-<!-- fc id:T-G-034 sha:544c97d0 src:dodatky/g-glosariy.md:48 klas:F -->
+<!-- fc id:T-G-034 sha:544c97d0 src:dodatky/g-glosariy.md:48 klas:E -->
 ### T-G-034 · tablycya · рядок 48
 
 **Книга каже, дослівно:**
@@ -452,7 +452,7 @@
 
 ---
 
-<!-- fc id:T-G-035 sha:ab90e283 src:dodatky/g-glosariy.md:49 klas:F -->
+<!-- fc id:T-G-035 sha:ab90e283 src:dodatky/g-glosariy.md:49 klas:E -->
 ### T-G-035 · tablycya · рядок 49
 
 **Книга каже, дослівно:**
@@ -465,7 +465,7 @@
 
 ---
 
-<!-- fc id:T-G-036 sha:146faf22 src:dodatky/g-glosariy.md:50 klas:F -->
+<!-- fc id:T-G-036 sha:146faf22 src:dodatky/g-glosariy.md:50 klas:E -->
 ### T-G-036 · tablycya · рядок 50
 
 **Книга каже, дослівно:**
@@ -478,7 +478,7 @@
 
 ---
 
-<!-- fc id:T-G-037 sha:1ae2965a src:dodatky/g-glosariy.md:51 klas:F -->
+<!-- fc id:T-G-037 sha:1ae2965a src:dodatky/g-glosariy.md:51 klas:E -->
 ### T-G-037 · tablycya · рядок 51
 
 **Книга каже, дослівно:**
@@ -491,7 +491,7 @@
 
 ---
 
-<!-- fc id:T-G-038 sha:19fa4a26 src:dodatky/g-glosariy.md:52 klas:F -->
+<!-- fc id:T-G-038 sha:19fa4a26 src:dodatky/g-glosariy.md:52 klas:E -->
 ### T-G-038 · tablycya · рядок 52
 
 **Книга каже, дослівно:**
@@ -504,7 +504,7 @@
 
 ---
 
-<!-- fc id:T-G-039 sha:c45a56ec src:dodatky/g-glosariy.md:53 klas:F -->
+<!-- fc id:T-G-039 sha:c45a56ec src:dodatky/g-glosariy.md:53 klas:E -->
 ### T-G-039 · tablycya · рядок 53
 
 **Книга каже, дослівно:**
@@ -517,7 +517,7 @@
 
 ---
 
-<!-- fc id:T-G-040 sha:eea5d5d1 src:dodatky/g-glosariy.md:54 klas:F -->
+<!-- fc id:T-G-040 sha:eea5d5d1 src:dodatky/g-glosariy.md:54 klas:E -->
 ### T-G-040 · tablycya · рядок 54
 
 **Книга каже, дослівно:**
@@ -530,7 +530,7 @@
 
 ---
 
-<!-- fc id:T-G-041 sha:029c08df src:dodatky/g-glosariy.md:55 klas:F -->
+<!-- fc id:T-G-041 sha:029c08df src:dodatky/g-glosariy.md:55 klas:E -->
 ### T-G-041 · tablycya · рядок 55
 
 **Книга каже, дослівно:**
@@ -543,7 +543,7 @@
 
 ---
 
-<!-- fc id:T-G-042 sha:c535a64f src:dodatky/g-glosariy.md:56 klas:F -->
+<!-- fc id:T-G-042 sha:c535a64f src:dodatky/g-glosariy.md:56 klas:E -->
 ### T-G-042 · tablycya · рядок 56
 
 **Книга каже, дослівно:**
@@ -556,7 +556,7 @@
 
 ---
 
-<!-- fc id:T-G-043 sha:05d77115 src:dodatky/g-glosariy.md:57 klas:F -->
+<!-- fc id:T-G-043 sha:05d77115 src:dodatky/g-glosariy.md:57 klas:E -->
 ### T-G-043 · tablycya · рядок 57
 
 **Книга каже, дослівно:**
@@ -569,7 +569,7 @@
 
 ---
 
-<!-- fc id:T-G-044 sha:2cd14ba5 src:dodatky/g-glosariy.md:58 klas:F -->
+<!-- fc id:T-G-044 sha:2cd14ba5 src:dodatky/g-glosariy.md:58 klas:E -->
 ### T-G-044 · tablycya · рядок 58
 
 **Книга каже, дослівно:**
@@ -582,7 +582,7 @@
 
 ---
 
-<!-- fc id:T-G-045 sha:d198ef2a src:dodatky/g-glosariy.md:59 klas:F -->
+<!-- fc id:T-G-045 sha:d198ef2a src:dodatky/g-glosariy.md:59 klas:E -->
 ### T-G-045 · tablycya · рядок 59
 
 **Книга каже, дослівно:**
@@ -595,7 +595,7 @@
 
 ---
 
-<!-- fc id:T-G-046 sha:343f90a3 src:dodatky/g-glosariy.md:60 klas:F -->
+<!-- fc id:T-G-046 sha:343f90a3 src:dodatky/g-glosariy.md:60 klas:E -->
 ### T-G-046 · tablycya · рядок 60
 
 **Книга каже, дослівно:**
@@ -608,7 +608,7 @@
 
 ---
 
-<!-- fc id:T-G-047 sha:6314ef2a src:dodatky/g-glosariy.md:61 klas:F -->
+<!-- fc id:T-G-047 sha:6314ef2a src:dodatky/g-glosariy.md:61 klas:E -->
 ### T-G-047 · tablycya · рядок 61
 
 **Книга каже, дослівно:**
@@ -621,7 +621,7 @@
 
 ---
 
-<!-- fc id:T-G-048 sha:c2919446 src:dodatky/g-glosariy.md:62 klas:F -->
+<!-- fc id:T-G-048 sha:c2919446 src:dodatky/g-glosariy.md:62 klas:E -->
 ### T-G-048 · tablycya · рядок 62
 
 **Книга каже, дослівно:**
@@ -634,7 +634,7 @@
 
 ---
 
-<!-- fc id:T-G-049 sha:6a64a4fa src:dodatky/g-glosariy.md:63 klas:F -->
+<!-- fc id:T-G-049 sha:6a64a4fa src:dodatky/g-glosariy.md:63 klas:E -->
 ### T-G-049 · tablycya · рядок 63
 
 **Книга каже, дослівно:**
@@ -647,7 +647,7 @@
 
 ---
 
-<!-- fc id:T-G-050 sha:7c0ec3a3 src:dodatky/g-glosariy.md:64 klas:F -->
+<!-- fc id:T-G-050 sha:7c0ec3a3 src:dodatky/g-glosariy.md:64 klas:E -->
 ### T-G-050 · tablycya · рядок 64
 
 **Книга каже, дослівно:**
@@ -660,7 +660,7 @@
 
 ---
 
-<!-- fc id:T-G-051 sha:ed66d256 src:dodatky/g-glosariy.md:65 klas:F -->
+<!-- fc id:T-G-051 sha:ed66d256 src:dodatky/g-glosariy.md:65 klas:E -->
 ### T-G-051 · tablycya · рядок 65
 
 **Книга каже, дослівно:**
@@ -673,7 +673,7 @@
 
 ---
 
-<!-- fc id:T-G-052 sha:0c2c2590 src:dodatky/g-glosariy.md:66 klas:F -->
+<!-- fc id:T-G-052 sha:0c2c2590 src:dodatky/g-glosariy.md:66 klas:E -->
 ### T-G-052 · tablycya · рядок 66
 
 **Книга каже, дослівно:**
@@ -686,7 +686,7 @@
 
 ---
 
-<!-- fc id:T-G-053 sha:ed9d6f40 src:dodatky/g-glosariy.md:70 klas:F -->
+<!-- fc id:T-G-053 sha:ed9d6f40 src:dodatky/g-glosariy.md:70 klas:E -->
 ### T-G-053 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
@@ -699,7 +699,7 @@
 
 ---
 
-<!-- fc id:T-G-054 sha:20ddcdd5 src:dodatky/g-glosariy.md:72 klas:F -->
+<!-- fc id:T-G-054 sha:20ddcdd5 src:dodatky/g-glosariy.md:72 klas:E -->
 ### T-G-054 · tablycya · рядок 72
 
 **Книга каже, дослівно:**
@@ -712,7 +712,7 @@
 
 ---
 
-<!-- fc id:T-G-055 sha:f55addda src:dodatky/g-glosariy.md:73 klas:F -->
+<!-- fc id:T-G-055 sha:f55addda src:dodatky/g-glosariy.md:73 klas:E -->
 ### T-G-055 · tablycya · рядок 73
 
 **Книга каже, дослівно:**
@@ -725,7 +725,7 @@
 
 ---
 
-<!-- fc id:T-G-056 sha:6fc38c15 src:dodatky/g-glosariy.md:74 klas:F -->
+<!-- fc id:T-G-056 sha:6fc38c15 src:dodatky/g-glosariy.md:74 klas:E -->
 ### T-G-056 · tablycya · рядок 74
 
 **Книга каже, дослівно:**
@@ -738,7 +738,7 @@
 
 ---
 
-<!-- fc id:T-G-057 sha:ef4ea3a7 src:dodatky/g-glosariy.md:75 klas:F -->
+<!-- fc id:T-G-057 sha:ef4ea3a7 src:dodatky/g-glosariy.md:75 klas:E -->
 ### T-G-057 · tablycya · рядок 75
 
 **Книга каже, дослівно:**
@@ -751,7 +751,7 @@
 
 ---
 
-<!-- fc id:T-G-058 sha:752bd5f0 src:dodatky/g-glosariy.md:76 klas:F -->
+<!-- fc id:T-G-058 sha:752bd5f0 src:dodatky/g-glosariy.md:76 klas:E -->
 ### T-G-058 · tablycya · рядок 76
 
 **Книга каже, дослівно:**
@@ -764,7 +764,7 @@
 
 ---
 
-<!-- fc id:T-G-059 sha:3cf94432 src:dodatky/g-glosariy.md:77 klas:F -->
+<!-- fc id:T-G-059 sha:3cf94432 src:dodatky/g-glosariy.md:77 klas:E -->
 ### T-G-059 · tablycya · рядок 77
 
 **Книга каже, дослівно:**
@@ -777,7 +777,7 @@
 
 ---
 
-<!-- fc id:T-G-060 sha:0a691e32 src:dodatky/g-glosariy.md:78 klas:F -->
+<!-- fc id:T-G-060 sha:0a691e32 src:dodatky/g-glosariy.md:78 klas:E -->
 ### T-G-060 · tablycya · рядок 78
 
 **Книга каже, дослівно:**
@@ -790,7 +790,7 @@
 
 ---
 
-<!-- fc id:T-G-061 sha:bb807264 src:dodatky/g-glosariy.md:79 klas:F -->
+<!-- fc id:T-G-061 sha:bb807264 src:dodatky/g-glosariy.md:79 klas:E -->
 ### T-G-061 · tablycya · рядок 79
 
 **Книга каже, дослівно:**
@@ -803,7 +803,7 @@
 
 ---
 
-<!-- fc id:T-G-062 sha:80b8bb3a src:dodatky/g-glosariy.md:80 klas:F -->
+<!-- fc id:T-G-062 sha:80b8bb3a src:dodatky/g-glosariy.md:80 klas:E -->
 ### T-G-062 · tablycya · рядок 80
 
 **Книга каже, дослівно:**
@@ -816,7 +816,7 @@
 
 ---
 
-<!-- fc id:T-G-063 sha:274527f7 src:dodatky/g-glosariy.md:81 klas:F -->
+<!-- fc id:T-G-063 sha:274527f7 src:dodatky/g-glosariy.md:81 klas:E -->
 ### T-G-063 · tablycya · рядок 81
 
 **Книга каже, дослівно:**
@@ -829,7 +829,7 @@
 
 ---
 
-<!-- fc id:T-G-064 sha:2e8ce884 src:dodatky/g-glosariy.md:82 klas:F -->
+<!-- fc id:T-G-064 sha:2e8ce884 src:dodatky/g-glosariy.md:82 klas:E -->
 ### T-G-064 · tablycya · рядок 82
 
 **Книга каже, дослівно:**
@@ -842,7 +842,7 @@
 
 ---
 
-<!-- fc id:T-G-065 sha:23345d26 src:dodatky/g-glosariy.md:83 klas:F -->
+<!-- fc id:T-G-065 sha:23345d26 src:dodatky/g-glosariy.md:83 klas:E -->
 ### T-G-065 · tablycya · рядок 83
 
 **Книга каже, дослівно:**
@@ -855,7 +855,7 @@
 
 ---
 
-<!-- fc id:T-G-066 sha:e7bdf88a src:dodatky/g-glosariy.md:84 klas:F -->
+<!-- fc id:T-G-066 sha:e7bdf88a src:dodatky/g-glosariy.md:84 klas:E -->
 ### T-G-066 · tablycya · рядок 84
 
 **Книга каже, дослівно:**
@@ -868,7 +868,7 @@
 
 ---
 
-<!-- fc id:T-G-067 sha:e76d92ed src:dodatky/g-glosariy.md:85 klas:F -->
+<!-- fc id:T-G-067 sha:e76d92ed src:dodatky/g-glosariy.md:85 klas:E -->
 ### T-G-067 · tablycya · рядок 85
 
 **Книга каже, дослівно:**
@@ -881,7 +881,7 @@
 
 ---
 
-<!-- fc id:T-G-068 sha:b381190a src:dodatky/g-glosariy.md:86 klas:F -->
+<!-- fc id:T-G-068 sha:b381190a src:dodatky/g-glosariy.md:86 klas:E -->
 ### T-G-068 · tablycya · рядок 86
 
 **Книга каже, дослівно:**
@@ -894,7 +894,7 @@
 
 ---
 
-<!-- fc id:T-G-069 sha:b7608490 src:dodatky/g-glosariy.md:87 klas:F -->
+<!-- fc id:T-G-069 sha:b7608490 src:dodatky/g-glosariy.md:87 klas:E -->
 ### T-G-069 · tablycya · рядок 87
 
 **Книга каже, дослівно:**
@@ -907,7 +907,7 @@
 
 ---
 
-<!-- fc id:T-G-070 sha:551f703b src:dodatky/g-glosariy.md:88 klas:F -->
+<!-- fc id:T-G-070 sha:551f703b src:dodatky/g-glosariy.md:88 klas:E -->
 ### T-G-070 · tablycya · рядок 88
 
 **Книга каже, дослівно:**
@@ -920,7 +920,7 @@
 
 ---
 
-<!-- fc id:T-G-071 sha:959a0501 src:dodatky/g-glosariy.md:89 klas:F -->
+<!-- fc id:T-G-071 sha:959a0501 src:dodatky/g-glosariy.md:89 klas:E -->
 ### T-G-071 · tablycya · рядок 89
 
 **Книга каже, дослівно:**
@@ -933,7 +933,7 @@
 
 ---
 
-<!-- fc id:T-G-072 sha:3b37a582 src:dodatky/g-glosariy.md:90 klas:F -->
+<!-- fc id:T-G-072 sha:3b37a582 src:dodatky/g-glosariy.md:90 klas:E -->
 ### T-G-072 · tablycya · рядок 90
 
 **Книга каже, дослівно:**
@@ -946,7 +946,7 @@
 
 ---
 
-<!-- fc id:T-G-073 sha:9e63d65a src:dodatky/g-glosariy.md:91 klas:F -->
+<!-- fc id:T-G-073 sha:9e63d65a src:dodatky/g-glosariy.md:91 klas:E -->
 ### T-G-073 · tablycya · рядок 91
 
 **Книга каже, дослівно:**
@@ -959,7 +959,7 @@
 
 ---
 
-<!-- fc id:T-G-074 sha:22c3b24f src:dodatky/g-glosariy.md:92 klas:F -->
+<!-- fc id:T-G-074 sha:22c3b24f src:dodatky/g-glosariy.md:92 klas:E -->
 ### T-G-074 · tablycya · рядок 92
 
 **Книга каже, дослівно:**
@@ -972,7 +972,7 @@
 
 ---
 
-<!-- fc id:T-G-075 sha:7b0ed631 src:dodatky/g-glosariy.md:93 klas:F -->
+<!-- fc id:T-G-075 sha:7b0ed631 src:dodatky/g-glosariy.md:93 klas:E -->
 ### T-G-075 · tablycya · рядок 93
 
 **Книга каже, дослівно:**
@@ -985,7 +985,7 @@
 
 ---
 
-<!-- fc id:T-G-076 sha:154baa32 src:dodatky/g-glosariy.md:94 klas:F -->
+<!-- fc id:T-G-076 sha:154baa32 src:dodatky/g-glosariy.md:94 klas:E -->
 ### T-G-076 · tablycya · рядок 94
 
 **Книга каже, дослівно:**
@@ -998,7 +998,7 @@
 
 ---
 
-<!-- fc id:T-G-077 sha:a6609781 src:dodatky/g-glosariy.md:95 klas:F -->
+<!-- fc id:T-G-077 sha:a6609781 src:dodatky/g-glosariy.md:95 klas:E -->
 ### T-G-077 · tablycya · рядок 95
 
 **Книга каже, дослівно:**
@@ -1011,7 +1011,7 @@
 
 ---
 
-<!-- fc id:T-G-078 sha:147df72c src:dodatky/g-glosariy.md:96 klas:F -->
+<!-- fc id:T-G-078 sha:147df72c src:dodatky/g-glosariy.md:96 klas:E -->
 ### T-G-078 · tablycya · рядок 96
 
 **Книга каже, дослівно:**
@@ -1024,7 +1024,7 @@
 
 ---
 
-<!-- fc id:T-G-079 sha:90e146c5 src:dodatky/g-glosariy.md:97 klas:F -->
+<!-- fc id:T-G-079 sha:90e146c5 src:dodatky/g-glosariy.md:97 klas:E -->
 ### T-G-079 · tablycya · рядок 97
 
 **Книга каже, дослівно:**
@@ -1037,7 +1037,7 @@
 
 ---
 
-<!-- fc id:T-G-080 sha:7d7fd99e src:dodatky/g-glosariy.md:98 klas:F -->
+<!-- fc id:T-G-080 sha:7d7fd99e src:dodatky/g-glosariy.md:98 klas:E -->
 ### T-G-080 · tablycya · рядок 98
 
 **Книга каже, дослівно:**
@@ -1050,7 +1050,7 @@
 
 ---
 
-<!-- fc id:T-G-081 sha:81c90646 src:dodatky/g-glosariy.md:99 klas:F -->
+<!-- fc id:T-G-081 sha:81c90646 src:dodatky/g-glosariy.md:99 klas:E -->
 ### T-G-081 · tablycya · рядок 99
 
 **Книга каже, дослівно:**
@@ -1063,7 +1063,7 @@
 
 ---
 
-<!-- fc id:T-G-082 sha:67de37ec src:dodatky/g-glosariy.md:100 klas:F -->
+<!-- fc id:T-G-082 sha:67de37ec src:dodatky/g-glosariy.md:100 klas:E -->
 ### T-G-082 · tablycya · рядок 100
 
 **Книга каже, дослівно:**
@@ -1076,7 +1076,7 @@
 
 ---
 
-<!-- fc id:T-G-083 sha:c218441d src:dodatky/g-glosariy.md:101 klas:F -->
+<!-- fc id:T-G-083 sha:c218441d src:dodatky/g-glosariy.md:101 klas:E -->
 ### T-G-083 · tablycya · рядок 101
 
 **Книга каже, дослівно:**
@@ -1089,7 +1089,7 @@
 
 ---
 
-<!-- fc id:T-G-084 sha:661a7e02 src:dodatky/g-glosariy.md:102 klas:F -->
+<!-- fc id:T-G-084 sha:661a7e02 src:dodatky/g-glosariy.md:102 klas:E -->
 ### T-G-084 · tablycya · рядок 102
 
 **Книга каже, дослівно:**
@@ -1102,7 +1102,7 @@
 
 ---
 
-<!-- fc id:T-G-085 sha:1711b8b0 src:dodatky/g-glosariy.md:103 klas:F -->
+<!-- fc id:T-G-085 sha:1711b8b0 src:dodatky/g-glosariy.md:103 klas:E -->
 ### T-G-085 · tablycya · рядок 103
 
 **Книга каже, дослівно:**
@@ -1115,7 +1115,7 @@
 
 ---
 
-<!-- fc id:T-G-086 sha:188313db src:dodatky/g-glosariy.md:104 klas:F -->
+<!-- fc id:T-G-086 sha:188313db src:dodatky/g-glosariy.md:104 klas:E -->
 ### T-G-086 · tablycya · рядок 104
 
 **Книга каже, дослівно:**
@@ -1128,7 +1128,7 @@
 
 ---
 
-<!-- fc id:T-G-087 sha:ed9d6f40 src:dodatky/g-glosariy.md:108 klas:F -->
+<!-- fc id:T-G-087 sha:ed9d6f40 src:dodatky/g-glosariy.md:108 klas:E -->
 ### T-G-087 · tablycya · рядок 108
 
 **Книга каже, дослівно:**
@@ -1141,7 +1141,7 @@
 
 ---
 
-<!-- fc id:T-G-088 sha:8ac2c754 src:dodatky/g-glosariy.md:110 klas:F -->
+<!-- fc id:T-G-088 sha:8ac2c754 src:dodatky/g-glosariy.md:110 klas:E -->
 ### T-G-088 · tablycya · рядок 110
 
 **Книга каже, дослівно:**
@@ -1154,7 +1154,7 @@
 
 ---
 
-<!-- fc id:T-G-089 sha:5f552a6d src:dodatky/g-glosariy.md:111 klas:F -->
+<!-- fc id:T-G-089 sha:5f552a6d src:dodatky/g-glosariy.md:111 klas:E -->
 ### T-G-089 · tablycya · рядок 111
 
 **Книга каже, дослівно:**
@@ -1167,7 +1167,7 @@
 
 ---
 
-<!-- fc id:T-G-090 sha:8f3df2fa src:dodatky/g-glosariy.md:112 klas:F -->
+<!-- fc id:T-G-090 sha:8f3df2fa src:dodatky/g-glosariy.md:112 klas:E -->
 ### T-G-090 · tablycya · рядок 112
 
 **Книга каже, дослівно:**
@@ -1180,7 +1180,7 @@
 
 ---
 
-<!-- fc id:T-G-091 sha:565d48c2 src:dodatky/g-glosariy.md:113 klas:F -->
+<!-- fc id:T-G-091 sha:565d48c2 src:dodatky/g-glosariy.md:113 klas:E -->
 ### T-G-091 · tablycya · рядок 113
 
 **Книга каже, дослівно:**
@@ -1193,7 +1193,7 @@
 
 ---
 
-<!-- fc id:T-G-092 sha:422851f9 src:dodatky/g-glosariy.md:114 klas:F -->
+<!-- fc id:T-G-092 sha:422851f9 src:dodatky/g-glosariy.md:114 klas:E -->
 ### T-G-092 · tablycya · рядок 114
 
 **Книга каже, дослівно:**
@@ -1206,7 +1206,7 @@
 
 ---
 
-<!-- fc id:T-G-093 sha:f272ef20 src:dodatky/g-glosariy.md:115 klas:F -->
+<!-- fc id:T-G-093 sha:f272ef20 src:dodatky/g-glosariy.md:115 klas:E -->
 ### T-G-093 · tablycya · рядок 115
 
 **Книга каже, дослівно:**
@@ -1219,7 +1219,7 @@
 
 ---
 
-<!-- fc id:T-G-094 sha:b892bd1e src:dodatky/g-glosariy.md:116 klas:F -->
+<!-- fc id:T-G-094 sha:b892bd1e src:dodatky/g-glosariy.md:116 klas:E -->
 ### T-G-094 · tablycya · рядок 116
 
 **Книга каже, дослівно:**
@@ -1232,7 +1232,7 @@
 
 ---
 
-<!-- fc id:T-G-095 sha:5fedc62c src:dodatky/g-glosariy.md:117 klas:F -->
+<!-- fc id:T-G-095 sha:5fedc62c src:dodatky/g-glosariy.md:117 klas:E -->
 ### T-G-095 · tablycya · рядок 117
 
 **Книга каже, дослівно:**
@@ -1245,7 +1245,7 @@
 
 ---
 
-<!-- fc id:T-G-096 sha:46f675bf src:dodatky/g-glosariy.md:118 klas:F -->
+<!-- fc id:T-G-096 sha:46f675bf src:dodatky/g-glosariy.md:118 klas:E -->
 ### T-G-096 · tablycya · рядок 118
 
 **Книга каже, дослівно:**
@@ -1258,7 +1258,7 @@
 
 ---
 
-<!-- fc id:T-G-097 sha:e9cab881 src:dodatky/g-glosariy.md:119 klas:F -->
+<!-- fc id:T-G-097 sha:e9cab881 src:dodatky/g-glosariy.md:119 klas:E -->
 ### T-G-097 · tablycya · рядок 119
 
 **Книга каже, дослівно:**
@@ -1271,7 +1271,7 @@
 
 ---
 
-<!-- fc id:T-G-098 sha:6dfcdfba src:dodatky/g-glosariy.md:120 klas:F -->
+<!-- fc id:T-G-098 sha:6dfcdfba src:dodatky/g-glosariy.md:120 klas:E -->
 ### T-G-098 · tablycya · рядок 120
 
 **Книга каже, дослівно:**
@@ -1284,7 +1284,7 @@
 
 ---
 
-<!-- fc id:T-G-099 sha:3dac51ed src:dodatky/g-glosariy.md:121 klas:F -->
+<!-- fc id:T-G-099 sha:3dac51ed src:dodatky/g-glosariy.md:121 klas:E -->
 ### T-G-099 · tablycya · рядок 121
 
 **Книга каже, дослівно:**
@@ -1297,7 +1297,7 @@
 
 ---
 
-<!-- fc id:T-G-100 sha:f5029421 src:dodatky/g-glosariy.md:122 klas:F -->
+<!-- fc id:T-G-100 sha:f5029421 src:dodatky/g-glosariy.md:122 klas:E -->
 ### T-G-100 · tablycya · рядок 122
 
 **Книга каже, дослівно:**
@@ -1310,7 +1310,7 @@
 
 ---
 
-<!-- fc id:T-G-101 sha:0383b98e src:dodatky/g-glosariy.md:123 klas:F -->
+<!-- fc id:T-G-101 sha:0383b98e src:dodatky/g-glosariy.md:123 klas:E -->
 ### T-G-101 · tablycya · рядок 123
 
 **Книга каже, дослівно:**
@@ -1323,7 +1323,7 @@
 
 ---
 
-<!-- fc id:T-G-102 sha:1b7c5a94 src:dodatky/g-glosariy.md:124 klas:F -->
+<!-- fc id:T-G-102 sha:1b7c5a94 src:dodatky/g-glosariy.md:124 klas:E -->
 ### T-G-102 · tablycya · рядок 124
 
 **Книга каже, дослівно:**
@@ -1336,7 +1336,7 @@
 
 ---
 
-<!-- fc id:T-G-103 sha:db3539cb src:dodatky/g-glosariy.md:125 klas:F -->
+<!-- fc id:T-G-103 sha:db3539cb src:dodatky/g-glosariy.md:125 klas:E -->
 ### T-G-103 · tablycya · рядок 125
 
 **Книга каже, дослівно:**
@@ -1349,7 +1349,7 @@
 
 ---
 
-<!-- fc id:T-G-104 sha:b535fc91 src:dodatky/g-glosariy.md:126 klas:F -->
+<!-- fc id:T-G-104 sha:b535fc91 src:dodatky/g-glosariy.md:126 klas:E -->
 ### T-G-104 · tablycya · рядок 126
 
 **Книга каже, дослівно:**
@@ -1362,7 +1362,7 @@
 
 ---
 
-<!-- fc id:T-G-105 sha:e3c11759 src:dodatky/g-glosariy.md:127 klas:F -->
+<!-- fc id:T-G-105 sha:e3c11759 src:dodatky/g-glosariy.md:127 klas:E -->
 ### T-G-105 · tablycya · рядок 127
 
 **Книга каже, дослівно:**
@@ -1375,7 +1375,7 @@
 
 ---
 
-<!-- fc id:T-G-106 sha:64962ef3 src:dodatky/g-glosariy.md:128 klas:F -->
+<!-- fc id:T-G-106 sha:64962ef3 src:dodatky/g-glosariy.md:128 klas:E -->
 ### T-G-106 · tablycya · рядок 128
 
 **Книга каже, дослівно:**
@@ -1388,7 +1388,7 @@
 
 ---
 
-<!-- fc id:T-G-107 sha:ed9d6f40 src:dodatky/g-glosariy.md:132 klas:F -->
+<!-- fc id:T-G-107 sha:ed9d6f40 src:dodatky/g-glosariy.md:132 klas:E -->
 ### T-G-107 · tablycya · рядок 132
 
 **Книга каже, дослівно:**
@@ -1401,7 +1401,7 @@
 
 ---
 
-<!-- fc id:T-G-108 sha:68f2064c src:dodatky/g-glosariy.md:134 klas:F -->
+<!-- fc id:T-G-108 sha:68f2064c src:dodatky/g-glosariy.md:134 klas:E -->
 ### T-G-108 · tablycya · рядок 134
 
 **Книга каже, дослівно:**
@@ -1414,7 +1414,7 @@
 
 ---
 
-<!-- fc id:T-G-109 sha:28523d7f src:dodatky/g-glosariy.md:135 klas:F -->
+<!-- fc id:T-G-109 sha:28523d7f src:dodatky/g-glosariy.md:135 klas:E -->
 ### T-G-109 · tablycya · рядок 135
 
 **Книга каже, дослівно:**
@@ -1427,7 +1427,7 @@
 
 ---
 
-<!-- fc id:T-G-110 sha:e77a36cc src:dodatky/g-glosariy.md:136 klas:F -->
+<!-- fc id:T-G-110 sha:e77a36cc src:dodatky/g-glosariy.md:136 klas:E -->
 ### T-G-110 · tablycya · рядок 136
 
 **Книга каже, дослівно:**
@@ -1440,7 +1440,7 @@
 
 ---
 
-<!-- fc id:T-G-111 sha:737f4aed src:dodatky/g-glosariy.md:137 klas:F -->
+<!-- fc id:T-G-111 sha:737f4aed src:dodatky/g-glosariy.md:137 klas:E -->
 ### T-G-111 · tablycya · рядок 137
 
 **Книга каже, дослівно:**
@@ -1453,7 +1453,7 @@
 
 ---
 
-<!-- fc id:T-G-112 sha:764966f8 src:dodatky/g-glosariy.md:138 klas:F -->
+<!-- fc id:T-G-112 sha:764966f8 src:dodatky/g-glosariy.md:138 klas:E -->
 ### T-G-112 · tablycya · рядок 138
 
 **Книга каже, дослівно:**
@@ -1466,7 +1466,7 @@
 
 ---
 
-<!-- fc id:T-G-113 sha:b5110e52 src:dodatky/g-glosariy.md:139 klas:F -->
+<!-- fc id:T-G-113 sha:b5110e52 src:dodatky/g-glosariy.md:139 klas:E -->
 ### T-G-113 · tablycya · рядок 139
 
 **Книга каже, дослівно:**
@@ -1479,7 +1479,7 @@
 
 ---
 
-<!-- fc id:T-G-114 sha:bdf4f185 src:dodatky/g-glosariy.md:140 klas:F -->
+<!-- fc id:T-G-114 sha:bdf4f185 src:dodatky/g-glosariy.md:140 klas:E -->
 ### T-G-114 · tablycya · рядок 140
 
 **Книга каже, дослівно:**
@@ -1492,7 +1492,7 @@
 
 ---
 
-<!-- fc id:T-G-115 sha:3fd82a44 src:dodatky/g-glosariy.md:141 klas:F -->
+<!-- fc id:T-G-115 sha:3fd82a44 src:dodatky/g-glosariy.md:141 klas:E -->
 ### T-G-115 · tablycya · рядок 141
 
 **Книга каже, дослівно:**
@@ -1505,7 +1505,7 @@
 
 ---
 
-<!-- fc id:T-G-116 sha:705e4498 src:dodatky/g-glosariy.md:142 klas:F -->
+<!-- fc id:T-G-116 sha:705e4498 src:dodatky/g-glosariy.md:142 klas:E -->
 ### T-G-116 · tablycya · рядок 142
 
 **Книга каже, дослівно:**
@@ -1518,7 +1518,7 @@
 
 ---
 
-<!-- fc id:T-G-117 sha:d39addb6 src:dodatky/g-glosariy.md:143 klas:F -->
+<!-- fc id:T-G-117 sha:d39addb6 src:dodatky/g-glosariy.md:143 klas:E -->
 ### T-G-117 · tablycya · рядок 143
 
 **Книга каже, дослівно:**
@@ -1531,7 +1531,7 @@
 
 ---
 
-<!-- fc id:T-G-118 sha:585a554e src:dodatky/g-glosariy.md:144 klas:F -->
+<!-- fc id:T-G-118 sha:585a554e src:dodatky/g-glosariy.md:144 klas:E -->
 ### T-G-118 · tablycya · рядок 144
 
 **Книга каже, дослівно:**
@@ -1544,7 +1544,7 @@
 
 ---
 
-<!-- fc id:T-G-119 sha:a2434656 src:dodatky/g-glosariy.md:145 klas:F -->
+<!-- fc id:T-G-119 sha:a2434656 src:dodatky/g-glosariy.md:145 klas:E -->
 ### T-G-119 · tablycya · рядок 145
 
 **Книга каже, дослівно:**
@@ -1557,7 +1557,7 @@
 
 ---
 
-<!-- fc id:T-G-120 sha:ca2d006a src:dodatky/g-glosariy.md:146 klas:F -->
+<!-- fc id:T-G-120 sha:ca2d006a src:dodatky/g-glosariy.md:146 klas:E -->
 ### T-G-120 · tablycya · рядок 146
 
 **Книга каже, дослівно:**
@@ -1570,7 +1570,7 @@
 
 ---
 
-<!-- fc id:T-G-121 sha:24facb96 src:dodatky/g-glosariy.md:147 klas:F -->
+<!-- fc id:T-G-121 sha:24facb96 src:dodatky/g-glosariy.md:147 klas:E -->
 ### T-G-121 · tablycya · рядок 147
 
 **Книга каже, дослівно:**
@@ -1583,7 +1583,7 @@
 
 ---
 
-<!-- fc id:T-G-122 sha:642d03b7 src:dodatky/g-glosariy.md:148 klas:F -->
+<!-- fc id:T-G-122 sha:642d03b7 src:dodatky/g-glosariy.md:148 klas:E -->
 ### T-G-122 · tablycya · рядок 148
 
 **Книга каже, дослівно:**
@@ -1596,7 +1596,7 @@
 
 ---
 
-<!-- fc id:T-G-123 sha:952f61d2 src:dodatky/g-glosariy.md:149 klas:F -->
+<!-- fc id:T-G-123 sha:952f61d2 src:dodatky/g-glosariy.md:149 klas:E -->
 ### T-G-123 · tablycya · рядок 149
 
 **Книга каже, дослівно:**
@@ -1609,7 +1609,7 @@
 
 ---
 
-<!-- fc id:T-G-124 sha:8c0e0166 src:dodatky/g-glosariy.md:150 klas:F -->
+<!-- fc id:T-G-124 sha:8c0e0166 src:dodatky/g-glosariy.md:150 klas:E -->
 ### T-G-124 · tablycya · рядок 150
 
 **Книга каже, дослівно:**
@@ -1622,7 +1622,7 @@
 
 ---
 
-<!-- fc id:T-G-125 sha:c477103c src:dodatky/g-glosariy.md:151 klas:F -->
+<!-- fc id:T-G-125 sha:c477103c src:dodatky/g-glosariy.md:151 klas:E -->
 ### T-G-125 · tablycya · рядок 151
 
 **Книга каже, дослівно:**
@@ -1635,7 +1635,7 @@
 
 ---
 
-<!-- fc id:T-G-126 sha:ed9d6f40 src:dodatky/g-glosariy.md:155 klas:F -->
+<!-- fc id:T-G-126 sha:ed9d6f40 src:dodatky/g-glosariy.md:155 klas:E -->
 ### T-G-126 · tablycya · рядок 155
 
 **Книга каже, дослівно:**
@@ -1648,7 +1648,7 @@
 
 ---
 
-<!-- fc id:T-G-127 sha:aac8e2f7 src:dodatky/g-glosariy.md:157 klas:F -->
+<!-- fc id:T-G-127 sha:aac8e2f7 src:dodatky/g-glosariy.md:157 klas:E -->
 ### T-G-127 · tablycya · рядок 157
 
 **Книга каже, дослівно:**
@@ -1661,7 +1661,7 @@
 
 ---
 
-<!-- fc id:T-G-128 sha:7a3d2f57 src:dodatky/g-glosariy.md:158 klas:F -->
+<!-- fc id:T-G-128 sha:7a3d2f57 src:dodatky/g-glosariy.md:158 klas:E -->
 ### T-G-128 · tablycya · рядок 158
 
 **Книга каже, дослівно:**
@@ -1674,7 +1674,7 @@
 
 ---
 
-<!-- fc id:T-G-129 sha:cd7f396f src:dodatky/g-glosariy.md:159 klas:F -->
+<!-- fc id:T-G-129 sha:cd7f396f src:dodatky/g-glosariy.md:159 klas:E -->
 ### T-G-129 · tablycya · рядок 159
 
 **Книга каже, дослівно:**
@@ -1687,7 +1687,7 @@
 
 ---
 
-<!-- fc id:T-G-130 sha:c691f10d src:dodatky/g-glosariy.md:160 klas:F -->
+<!-- fc id:T-G-130 sha:c691f10d src:dodatky/g-glosariy.md:160 klas:E -->
 ### T-G-130 · tablycya · рядок 160
 
 **Книга каже, дослівно:**
@@ -1700,7 +1700,7 @@
 
 ---
 
-<!-- fc id:T-G-131 sha:de393be7 src:dodatky/g-glosariy.md:161 klas:F -->
+<!-- fc id:T-G-131 sha:de393be7 src:dodatky/g-glosariy.md:161 klas:E -->
 ### T-G-131 · tablycya · рядок 161
 
 **Книга каже, дослівно:**
@@ -1713,7 +1713,7 @@
 
 ---
 
-<!-- fc id:T-G-132 sha:0d4462e2 src:dodatky/g-glosariy.md:162 klas:F -->
+<!-- fc id:T-G-132 sha:0d4462e2 src:dodatky/g-glosariy.md:162 klas:E -->
 ### T-G-132 · tablycya · рядок 162
 
 **Книга каже, дослівно:**
@@ -1726,7 +1726,7 @@
 
 ---
 
-<!-- fc id:T-G-133 sha:3c751fbb src:dodatky/g-glosariy.md:163 klas:F -->
+<!-- fc id:T-G-133 sha:3c751fbb src:dodatky/g-glosariy.md:163 klas:E -->
 ### T-G-133 · tablycya · рядок 163
 
 **Книга каже, дослівно:**
@@ -1739,7 +1739,7 @@
 
 ---
 
-<!-- fc id:T-G-134 sha:f6c71ba7 src:dodatky/g-glosariy.md:164 klas:F -->
+<!-- fc id:T-G-134 sha:f6c71ba7 src:dodatky/g-glosariy.md:164 klas:E -->
 ### T-G-134 · tablycya · рядок 164
 
 **Книга каже, дослівно:**
@@ -1752,7 +1752,7 @@
 
 ---
 
-<!-- fc id:T-G-135 sha:4ed5ef1a src:dodatky/g-glosariy.md:165 klas:F -->
+<!-- fc id:T-G-135 sha:4ed5ef1a src:dodatky/g-glosariy.md:165 klas:E -->
 ### T-G-135 · tablycya · рядок 165
 
 **Книга каже, дослівно:**
@@ -1765,7 +1765,7 @@
 
 ---
 
-<!-- fc id:T-G-136 sha:8e37f679 src:dodatky/g-glosariy.md:166 klas:F -->
+<!-- fc id:T-G-136 sha:8e37f679 src:dodatky/g-glosariy.md:166 klas:E -->
 ### T-G-136 · tablycya · рядок 166
 
 **Книга каже, дослівно:**
@@ -1778,7 +1778,7 @@
 
 ---
 
-<!-- fc id:T-G-137 sha:beb59dd7 src:dodatky/g-glosariy.md:167 klas:F -->
+<!-- fc id:T-G-137 sha:beb59dd7 src:dodatky/g-glosariy.md:167 klas:E -->
 ### T-G-137 · tablycya · рядок 167
 
 **Книга каже, дослівно:**
@@ -1791,7 +1791,7 @@
 
 ---
 
-<!-- fc id:T-G-138 sha:324e903a src:dodatky/g-glosariy.md:168 klas:F -->
+<!-- fc id:T-G-138 sha:324e903a src:dodatky/g-glosariy.md:168 klas:E -->
 ### T-G-138 · tablycya · рядок 168
 
 **Книга каже, дослівно:**
@@ -1804,7 +1804,7 @@
 
 ---
 
-<!-- fc id:T-G-139 sha:51221672 src:dodatky/g-glosariy.md:172 klas:F -->
+<!-- fc id:T-G-139 sha:51221672 src:dodatky/g-glosariy.md:172 klas:E -->
 ### T-G-139 · tablycya · рядок 172
 
 **Книга каже, дослівно:**
@@ -1817,7 +1817,7 @@
 
 ---
 
-<!-- fc id:T-G-140 sha:280d61b2 src:dodatky/g-glosariy.md:174 klas:F -->
+<!-- fc id:T-G-140 sha:280d61b2 src:dodatky/g-glosariy.md:174 klas:E -->
 ### T-G-140 · tablycya · рядок 174
 
 **Книга каже, дослівно:**
@@ -1830,7 +1830,7 @@
 
 ---
 
-<!-- fc id:T-G-141 sha:76955507 src:dodatky/g-glosariy.md:175 klas:F -->
+<!-- fc id:T-G-141 sha:76955507 src:dodatky/g-glosariy.md:175 klas:E -->
 ### T-G-141 · tablycya · рядок 175
 
 **Книга каже, дослівно:**
@@ -1843,7 +1843,7 @@
 
 ---
 
-<!-- fc id:T-G-142 sha:cb6ba9e9 src:dodatky/g-glosariy.md:176 klas:F -->
+<!-- fc id:T-G-142 sha:cb6ba9e9 src:dodatky/g-glosariy.md:176 klas:E -->
 ### T-G-142 · tablycya · рядок 176
 
 **Книга каже, дослівно:**
@@ -1856,7 +1856,7 @@
 
 ---
 
-<!-- fc id:T-G-143 sha:1c6ed020 src:dodatky/g-glosariy.md:177 klas:F -->
+<!-- fc id:T-G-143 sha:1c6ed020 src:dodatky/g-glosariy.md:177 klas:E -->
 ### T-G-143 · tablycya · рядок 177
 
 **Книга каже, дослівно:**
@@ -2034,7 +2034,7 @@
 
 ---
 
-<!-- fc id:T-G-156 sha:18536c4a src:dodatky/g-glosariy.md:190 klas:F -->
+<!-- fc id:T-G-156 sha:18536c4a src:dodatky/g-glosariy.md:190 klas:E -->
 ### T-G-156 · tablycya · рядок 190
 
 **Книга каже, дослівно:**
@@ -2047,7 +2047,7 @@
 
 ---
 
-<!-- fc id:T-G-157 sha:57dae4db src:dodatky/g-glosariy.md:191 klas:F -->
+<!-- fc id:T-G-157 sha:57dae4db src:dodatky/g-glosariy.md:191 klas:E -->
 ### T-G-157 · tablycya · рядок 191
 
 **Книга каже, дослівно:**
@@ -2060,7 +2060,7 @@
 
 ---
 
-<!-- fc id:T-G-158 sha:3f980c2e src:dodatky/g-glosariy.md:192 klas:F -->
+<!-- fc id:T-G-158 sha:3f980c2e src:dodatky/g-glosariy.md:192 klas:E -->
 ### T-G-158 · tablycya · рядок 192
 
 **Книга каже, дослівно:**
@@ -2086,7 +2086,7 @@
 
 ---
 
-<!-- fc id:T-G-160 sha:0dbd81db src:dodatky/g-glosariy.md:194 klas:F -->
+<!-- fc id:T-G-160 sha:0dbd81db src:dodatky/g-glosariy.md:194 klas:E -->
 ### T-G-160 · tablycya · рядок 194
 
 **Книга каже, дослівно:**
@@ -2125,7 +2125,7 @@
 
 ---
 
-<!-- fc id:T-G-163 sha:9860ee2c src:dodatky/g-glosariy.md:197 klas:F -->
+<!-- fc id:T-G-163 sha:9860ee2c src:dodatky/g-glosariy.md:197 klas:E -->
 ### T-G-163 · tablycya · рядок 197
 
 **Книга каже, дослівно:**
@@ -2138,7 +2138,7 @@
 
 ---
 
-<!-- fc id:T-G-164 sha:4b2c1726 src:dodatky/g-glosariy.md:198 klas:F -->
+<!-- fc id:T-G-164 sha:4b2c1726 src:dodatky/g-glosariy.md:198 klas:E -->
 ### T-G-164 · tablycya · рядок 198
 
 **Книга каже, дослівно:**
@@ -2178,7 +2178,7 @@
 
 ---
 
-<!-- fc id:T-G-166 sha:72f6f9b1 src:dodatky/g-glosariy.md:200 klas:F -->
+<!-- fc id:T-G-166 sha:72f6f9b1 src:dodatky/g-glosariy.md:200 klas:E -->
 ### T-G-166 · tablycya · рядок 200
 
 **Книга каже, дослівно:**
@@ -2191,7 +2191,7 @@
 
 ---
 
-<!-- fc id:T-G-167 sha:18a229df src:dodatky/g-glosariy.md:201 klas:F -->
+<!-- fc id:T-G-167 sha:18a229df src:dodatky/g-glosariy.md:201 klas:E -->
 ### T-G-167 · tablycya · рядок 201
 
 **Книга каже, дослівно:**
@@ -2204,7 +2204,7 @@
 
 ---
 
-<!-- fc id:T-G-168 sha:419dd880 src:dodatky/g-glosariy.md:202 klas:F -->
+<!-- fc id:T-G-168 sha:419dd880 src:dodatky/g-glosariy.md:202 klas:E -->
 ### T-G-168 · tablycya · рядок 202
 
 **Книга каже, дослівно:**
@@ -2217,7 +2217,7 @@
 
 ---
 
-<!-- fc id:T-G-169 sha:fbdd8206 src:dodatky/g-glosariy.md:203 klas:F -->
+<!-- fc id:T-G-169 sha:fbdd8206 src:dodatky/g-glosariy.md:203 klas:E -->
 ### T-G-169 · tablycya · рядок 203
 
 **Книга каже, дослівно:**

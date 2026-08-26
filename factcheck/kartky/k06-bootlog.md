@@ -585,7 +585,7 @@
 
 ---
 
-<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:39 klas:E -->
+<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:39 klas:F -->
 ### T-K06-031 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -682,7 +682,7 @@
 
 ---
 
-<!-- fc id:T-K06-037 sha:f219b8f9 src:kartky/k06-bootlog.md:63 klas:F -->
+<!-- fc id:T-K06-037 sha:f219b8f9 src:kartky/k06-bootlog.md:63 klas:E -->
 ### T-K06-037 · tablycya · рядок 63
 
 **Книга каже, дослівно:**
@@ -708,7 +708,7 @@
 
 ---
 
-<!-- fc id:T-K06-039 sha:e108d7f6 src:kartky/k06-bootlog.md:66 klas:F -->
+<!-- fc id:T-K06-039 sha:e108d7f6 src:kartky/k06-bootlog.md:66 klas:E -->
 ### T-K06-039 · tablycya · рядок 66
 
 **Книга каже, дослівно:**
@@ -721,7 +721,7 @@
 
 ---
 
-<!-- fc id:T-K06-040 sha:dd7a6d62 src:kartky/k06-bootlog.md:67 klas:F -->
+<!-- fc id:T-K06-040 sha:dd7a6d62 src:kartky/k06-bootlog.md:67 klas:E -->
 ### T-K06-040 · tablycya · рядок 67
 
 **Книга каже, дослівно:**
@@ -771,7 +771,7 @@
 
 ---
 
-<!-- fc id:T-K06-043 sha:8f7a2ab6 src:kartky/k06-bootlog.md:72 klas:F -->
+<!-- fc id:T-K06-043 sha:8f7a2ab6 src:kartky/k06-bootlog.md:72 klas:E -->
 ### T-K06-043 · proza · рядок 72
 
 **Книга каже, дослівно:**
