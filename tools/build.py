@@ -34,6 +34,7 @@ NOTE_CLASSES = {
     "zakupivlya": "zakupivlya",
     "nezvorotne": "nezvorotne",
     "prysvyata": "prysvyata",
+    "pokazhchyk": "pokazhchyk",
 }
 
 RE_HEADING = re.compile(r"^(#{1,5})(\s)")
@@ -377,6 +378,15 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
                 ")",
                 "",
             ]
+        if part.get("generated") == "notatky":
+            seq += 1
+            frag = tdir / f"{seq:03d}-notatky.typ"
+            frag.write_text(IMPORT + "\n\n#notatky("
+                            + str(int(part.get("storinok", 4))) + ")\n",
+                            encoding="utf-8")
+            frags.append(frag)
+            root.append(f'#include "{frag.name}"')
+
         if part.get("generated") == "toolchain":
             seq += 1
             frag = tdir / f"{seq:03d}-toolchain.typ"

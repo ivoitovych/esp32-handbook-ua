@@ -182,6 +182,15 @@ targets:
           - dodatky/f-oflayn.md
           - dodatky/g-glosariy.md
           - dodatky/h-dzherela.md
+          - dodatky/z-pokazhchyk.md
+      # Догін до кратності 16: аркуш друкарні має шістнадцять
+      # сторінок, зайві будуть однаково. Число підбирається під
+      # поточний обсяг — `pdf-smoke` стежить, щоб кратність трималася.
+      - title: "Нотатки"
+        silent: true
+        generated: notatky
+        storinok: 22
+        files: []
       - title: "Вкладиші"
         blurb: >-
           Швидкопсувне: ринок, компоненти, радіочастотні норми. Мають власні

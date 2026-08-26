@@ -496,12 +496,24 @@ def perevirka(kachaty: bool,
             if not isinstance(z, dict):
                 continue
             nazva = str(z.get("nazva", "?"))
-            klas = str(z.get("klas") or "F").strip().upper()
+            # **Відсутність класу — не те саме, що клас `F`.**
+            #
+            # У реєстрі клас є завжди. У вивантаженні помічника його
+            # немає й не має бути: клас присвоює супровідник, і саме на
+            # цьому тримається правило «чуже слово не потрапляє в реєстр
+            # неперевіреним».
+            #
+            # Перша редакція цих воріт підставляла `F` там, де поля
+            # просто немає, і валила **всю** хвилю помічника як «хибні
+            # записи» — не перевіривши жодної цитати. Тобто ворота, що
+            # мали ловити брак, приховали роботу.
+            maye_klas = "klas" in z
+            klas = str(z.get("klas") or "").strip().upper()
 
             # Клас `F` — це «не звірено», типовий стан **відсутності**
             # доказу. Запис доказу з класом `F` не означає нічого й
             # трапляється лише як помилка помічника (знахідка М2).
-            if klas == "F":
+            if maye_klas and klas == "F":
                 pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="pomylka",
@@ -510,7 +522,7 @@ def perevirka(kachaty: bool,
 
             # Вигадане джерело: клас каже «звірено», а в полі джерела
             # стоїть міркування. Див. RE_SCHOS_SCHO_MOZHE_BUTY_DOKUMENTOM.
-            if klas in ("A", "B") and not dzherelo_rozvyazne(z):
+            if maye_klas and klas in ("A", "B") and not dzherelo_rozvyazne(z):
                 pidsumok["vygadane"] = pidsumok.get("vygadane", 0) + 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="vygadane",
