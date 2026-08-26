@@ -66,6 +66,10 @@ def main() -> int:
         for f in sorted((ROOT / group).glob("*.md")):
             w, c, i = measure(f)
             lo, hi = lim["words"]
+            # Проєкти ярусу 2 — це переважно код із поясненнями,
+            # тому орієнтир на прозу до них не застосовується (Р9-а).
+            if "-proj-" in f.name:
+                lo, hi, lim = 0, 0, {"code": 99, "img": 99}
             flags = []
             if hi and w > hi:
                 flags.append(f"слів {w} > {hi}")
