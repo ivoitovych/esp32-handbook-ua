@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/d-panik.md`
 
-Одиниць твердження: **169**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **184**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -845,7 +845,7 @@
 
 ---
 
-<!-- fc id:T-D-056 sha:8e00aaa2 src:dodatky/d-panik.md:42 klas:F -->
+<!-- fc id:T-D-056 sha:8e00aaa2 src:dodatky/d-panik.md:42 klas:A -->
 ### T-D-056 · tablycya · рядок 42
 
 **Книга каже, дослівно:**
@@ -854,11 +854,45 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-D-057 sha:bb0d0fd7 src:dodatky/d-panik.md:43 klas:F -->
+<!-- fc id:T-D-057 sha:bb0d0fd7 src:dodatky/d-panik.md:43 klas:A -->
 ### T-D-057 · tablycya · рядок 43
 
 **Книга каже, дослівно:**
@@ -867,12 +901,191 @@
 
 **Доказ**
 
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
+
+---
+
+<!-- fc id:T-D-058 sha:d69814c1 src:dodatky/d-panik.md:44 klas:A -->
+### T-D-058 · tablycya · рядок 44
+
+**Книга каже, дослівно:**
+
+> | `DOWNLOAD(USB/UART0)` | те саме на чипах із власним USB |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
+
+---
+
+<!-- fc id:T-D-059 sha:d38efa56 src:dodatky/d-panik.md:45 klas:A -->
+### T-D-059 · tablycya · рядок 45
+
+**Книга каже, дослівно:**
+
+> | `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` | **обрано непідтримуваний режим** |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
+
+---
+
+<!-- fc id:T-D-060 sha:010a7dfa src:dodatky/d-panik.md:47 klas:E -->
+### T-D-060 · proza · рядок 47
+
+**Книга каже, дослівно:**
+
+> Останній рядок трапляється рідко, і саме тому спантеличує: плата стартувала кудись, чого читач не шукав у жодній інструкції.
+
+**Доказ**
+
 - **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-D-058 sha:37e0f86d src:dodatky/d-panik.md:47 klas:E -->
-### T-D-058 · proza · рядок 47
+<!-- fc id:T-D-061 sha:3e300ed0 src:dodatky/d-panik.md:47 klas:A -->
+### T-D-061 · proza · рядок 47
+
+**Книга каже, дослівно:**
+
+> Причина в переважній більшості випадків одна — **другий strapping-пін високий, коли головний низький**: [[classic]] `GPIO2` високий при низькому `GPIO0`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
+  >  esp32h21="GPIO14", esp32h4="GPIO14"}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
+  >  esp32h4="GPIO13"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
+Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
+- **Прохід:** pass-08-strapping
+
+---
+
+<!-- fc id:T-D-062 sha:f2710f9f src:dodatky/d-panik.md:47 klas:F -->
+### T-D-062 · proza · рядок 47
+
+**Книга каже, дослівно:**
+
+> Тобто це не поломка, а комбінація, і лікується вона зняттям обв'язки з другого піна (розділ 07).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-063 sha:37e0f86d src:dodatky/d-panik.md:56 klas:E -->
+### T-D-063 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -884,8 +1097,8 @@
 
 ---
 
-<!-- fc id:T-D-059 sha:757a0843 src:dodatky/d-panik.md:47 klas:A -->
-### T-D-059 · proza · рядок 47
+<!-- fc id:T-D-064 sha:757a0843 src:dodatky/d-panik.md:56 klas:A -->
+### T-D-064 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -918,8 +1131,8 @@
 
 ---
 
-<!-- fc id:T-D-060 sha:7c7d8833 src:dodatky/d-panik.md:51 klas:F -->
-### T-D-060 · proza · рядок 51
+<!-- fc id:T-D-065 sha:7c7d8833 src:dodatky/d-panik.md:60 klas:F -->
+### T-D-065 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -931,8 +1144,8 @@
 
 ---
 
-<!-- fc id:T-D-061 sha:7431ff81 src:dodatky/d-panik.md:53 klas:F -->
-### T-D-061 · tablycya · рядок 53
+<!-- fc id:T-D-066 sha:7431ff81 src:dodatky/d-panik.md:62 klas:F -->
+### T-D-066 · tablycya · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -944,8 +1157,8 @@
 
 ---
 
-<!-- fc id:T-D-062 sha:714c2e09 src:dodatky/d-panik.md:55 klas:F -->
-### T-D-062 · tablycya · рядок 55
+<!-- fc id:T-D-067 sha:714c2e09 src:dodatky/d-panik.md:64 klas:A -->
+### T-D-067 · tablycya · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -953,12 +1166,46 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-D-063 sha:681a141a src:dodatky/d-panik.md:56 klas:A -->
-### T-D-063 · tablycya · рядок 56
+<!-- fc id:T-D-068 sha:681a141a src:dodatky/d-panik.md:65 klas:A -->
+### T-D-068 · tablycya · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -978,8 +1225,8 @@
 
 ---
 
-<!-- fc id:T-D-064 sha:932a0e72 src:dodatky/d-panik.md:57 klas:A -->
-### T-D-064 · tablycya · рядок 57
+<!-- fc id:T-D-069 sha:932a0e72 src:dodatky/d-panik.md:66 klas:A -->
+### T-D-069 · tablycya · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -1012,8 +1259,8 @@
 
 ---
 
-<!-- fc id:T-D-065 sha:ad51eef3 src:dodatky/d-panik.md:58 klas:F -->
-### T-D-065 · tablycya · рядок 58
+<!-- fc id:T-D-070 sha:ad51eef3 src:dodatky/d-panik.md:67 klas:A -->
+### T-D-070 · tablycya · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -1021,12 +1268,46 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-D-066 sha:64f2d662 src:dodatky/d-panik.md:59 klas:F -->
-### T-D-066 · tablycya · рядок 59
+<!-- fc id:T-D-071 sha:64f2d662 src:dodatky/d-panik.md:68 klas:A -->
+### T-D-071 · tablycya · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -1034,12 +1315,46 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-D-067 sha:4456ba75 src:dodatky/d-panik.md:60 klas:A -->
-### T-D-067 · tablycya · рядок 60
+<!-- fc id:T-D-072 sha:4456ba75 src:dodatky/d-panik.md:69 klas:A -->
+### T-D-072 · tablycya · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -1069,8 +1384,8 @@
 
 ---
 
-<!-- fc id:T-D-068 sha:b26aad81 src:dodatky/d-panik.md:62 klas:E -->
-### T-D-068 · proza · рядок 62
+<!-- fc id:T-D-073 sha:b26aad81 src:dodatky/d-panik.md:71 klas:E -->
+### T-D-073 · proza · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -1082,8 +1397,8 @@
 
 ---
 
-<!-- fc id:T-D-069 sha:91d5ab98 src:dodatky/d-panik.md:64 klas:A -->
-### T-D-069 · proza · рядок 64
+<!-- fc id:T-D-074 sha:91d5ab98 src:dodatky/d-panik.md:73 klas:A -->
+### T-D-074 · proza · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -1116,8 +1431,8 @@
 
 ---
 
-<!-- fc id:T-D-070 sha:b8b5cfd0 src:dodatky/d-panik.md:67 klas:A -->
-### T-D-070 · proza · рядок 67
+<!-- fc id:T-D-075 sha:b8b5cfd0 src:dodatky/d-panik.md:76 klas:A -->
+### T-D-075 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -1150,8 +1465,8 @@
 
 ---
 
-<!-- fc id:T-D-071 sha:bbfc62c6 src:dodatky/d-panik.md:71 klas:E -->
-### T-D-071 · proza · рядок 71
+<!-- fc id:T-D-076 sha:bbfc62c6 src:dodatky/d-panik.md:80 klas:E -->
+### T-D-076 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -1163,8 +1478,8 @@
 
 ---
 
-<!-- fc id:T-D-072 sha:fcc6bd37 src:dodatky/d-panik.md:71 klas:F -->
-### T-D-072 · proza · рядок 71
+<!-- fc id:T-D-077 sha:fcc6bd37 src:dodatky/d-panik.md:80 klas:F -->
+### T-D-077 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -1176,8 +1491,8 @@
 
 ---
 
-<!-- fc id:T-D-073 sha:16e19586 src:dodatky/d-panik.md:75 klas:C -->
-### T-D-073 · proza · рядок 75
+<!-- fc id:T-D-078 sha:16e19586 src:dodatky/d-panik.md:84 klas:A -->
+### T-D-078 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -1185,16 +1500,46 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-D-074 sha:babcdf0b src:dodatky/d-panik.md:75 klas:A -->
-### T-D-074 · proza · рядок 75
+<!-- fc id:T-D-079 sha:babcdf0b src:dodatky/d-panik.md:84 klas:A -->
+### T-D-079 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -1214,8 +1559,8 @@
 
 ---
 
-<!-- fc id:T-D-075 sha:7e109f92 src:dodatky/d-panik.md:75 klas:F -->
-### T-D-075 · proza · рядок 75
+<!-- fc id:T-D-080 sha:7e109f92 src:dodatky/d-panik.md:84 klas:F -->
+### T-D-080 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -1227,8 +1572,8 @@
 
 ---
 
-<!-- fc id:T-D-076 sha:82e1a535 src:dodatky/d-panik.md:79 klas:F -->
-### T-D-076 · proza · рядок 79
+<!-- fc id:T-D-081 sha:82e1a535 src:dodatky/d-panik.md:88 klas:F -->
+### T-D-081 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -1240,8 +1585,8 @@
 
 ---
 
-<!-- fc id:T-D-077 sha:f52ac6ce src:dodatky/d-panik.md:79 klas:A -->
-### T-D-077 · proza · рядок 79
+<!-- fc id:T-D-082 sha:f52ac6ce src:dodatky/d-panik.md:88 klas:A -->
+### T-D-082 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -1274,8 +1619,8 @@
 
 ---
 
-<!-- fc id:T-D-078 sha:75285290 src:dodatky/d-panik.md:79 klas:E -->
-### T-D-078 · proza · рядок 79
+<!-- fc id:T-D-083 sha:75285290 src:dodatky/d-panik.md:88 klas:E -->
+### T-D-083 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -1287,8 +1632,184 @@
 
 ---
 
-<!-- fc id:T-D-079 sha:d39312ec src:dodatky/d-panik.md:87 klas:K -->
-### T-D-079 · kod · рядок 87
+<!-- fc id:T-D-084 sha:227db658 src:dodatky/d-panik.md:94 klas:A -->
+### T-D-084 · proza · рядок 94
+
+**Книга каже, дослівно:**
+
+> [[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і вони позначають ту саму пару, що вирішує режим:
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
+  > represented in the GPIO_STRAP register.
+  > 
+  > .. only:: esp32
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+  > 
+  > .. only:: not esp32
+  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
+  > 
+  > If the pin was high on reset, the bit value will be set. If it was low
+  > on reset, the bit will be cleared.
+  > 
+  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
+  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
+  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
+  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
+  >    mode has been selected. Consult the strapping pins shown above (in
+  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
+  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+Два доповнення.
+**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
+**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
+- **Прохід:** pass-26-strapping
+
+---
+
+<!-- fc id:T-D-085 sha:57d15832 src:dodatky/d-panik.md:97 klas:F -->
+### T-D-085 · tablycya-shapka · рядок 97
+
+**Книга каже, дослівно:**
+
+> | Біт | [[classic]] | [[S3]] | [[C3]] |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-086 sha:d8657519 src:dodatky/d-panik.md:98 klas:A -->
+### T-D-086 · komirka · рядок 98
+
+**Книга каже, дослівно:**
+
+> `0x04` · [[S3]] → `GPIO46`
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
+  >  esp32h21="GPIO14", esp32h4="GPIO14"}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
+  >  esp32h4="GPIO13"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
+Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
+- **Прохід:** pass-08-strapping
+
+---
+
+<!-- fc id:T-D-087 sha:90b801d8 src:dodatky/d-panik.md:98 klas:F -->
+### T-D-087 · komirka · рядок 98
+
+**Книга каже, дослівно:**
+
+> `0x04` · [[C3]] → `GPIO8`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-088 sha:4c9431b7 src:dodatky/d-panik.md:99 klas:F -->
+### T-D-088 · komirka · рядок 99
+
+**Книга каже, дослівно:**
+
+> `0x08` · [[S3]] → `GPIO0`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-089 sha:2e453577 src:dodatky/d-panik.md:99 klas:F -->
+### T-D-089 · komirka · рядок 99
+
+**Книга каже, дослівно:**
+
+> `0x08` · [[C3]] → `GPIO9`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-090 sha:435efe85 src:dodatky/d-panik.md:102 klas:E -->
+### T-D-090 · proza · рядок 102
+
+**Книга каже, дослівно:**
+
+> Читається так само: біт виставлений — пін був високим.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-091 sha:074ec9b4 src:dodatky/d-panik.md:102 klas:F -->
+### T-D-091 · proza · рядок 102
+
+**Книга каже, дослівно:**
+
+> Тобто на C3 `boot:0xc` — обидва високі, звичайний старт; `boot:0x4` — `GPIO9` низький при високому `GPIO8`, тобто коректний вхід у download mode.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-092 sha:37911804 src:dodatky/d-panik.md:106 klas:F -->
+### T-D-092 · proza · рядок 106
+
+**Книга каже, дослівно:**
+
+> А `boot:0x0` на C3 варто впізнавати окремо: обидва піни низькі — це та сама **недійсна комбінація**, про яку попереджає розділ 07.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-093 sha:87d3ccb4 src:dodatky/d-panik.md:106 klas:F -->
+### T-D-093 · proza · рядок 106
+
+**Книга каже, дослівно:**
+
+> Поведінка після неї непередбачувана, і шукати причину треба не в прошивці, а в тому, що тримає `GPIO8` унизу.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-094 sha:d39312ec src:dodatky/d-panik.md:113 klas:K -->
+### T-D-094 · kod · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -1337,8 +1858,8 @@
 
 ---
 
-<!-- fc id:T-D-080 sha:490ee98b src:dodatky/d-panik.md:88 klas:A -->
-### T-D-080 · kod-ryadok · рядок 88
+<!-- fc id:T-D-095 sha:490ee98b src:dodatky/d-panik.md:114 klas:A -->
+### T-D-095 · kod-ryadok · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -1373,8 +1894,8 @@
 
 ---
 
-<!-- fc id:T-D-081 sha:825633b5 src:dodatky/d-panik.md:103 klas:F -->
-### T-D-081 · proza · рядок 103
+<!-- fc id:T-D-096 sha:825633b5 src:dodatky/d-panik.md:129 klas:F -->
+### T-D-096 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -1386,8 +1907,8 @@
 
 ---
 
-<!-- fc id:T-D-082 sha:0ebdcddf src:dodatky/d-panik.md:107 klas:E -->
-### T-D-082 · proza · рядок 107
+<!-- fc id:T-D-097 sha:0ebdcddf src:dodatky/d-panik.md:133 klas:E -->
+### T-D-097 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -1399,8 +1920,8 @@
 
 ---
 
-<!-- fc id:T-D-083 sha:3d92627f src:dodatky/d-panik.md:107 klas:E -->
-### T-D-083 · proza · рядок 107
+<!-- fc id:T-D-098 sha:3d92627f src:dodatky/d-panik.md:133 klas:E -->
+### T-D-098 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -1412,8 +1933,8 @@
 
 ---
 
-<!-- fc id:T-D-084 sha:0590c64d src:dodatky/d-panik.md:112 klas:F -->
-### T-D-084 · proza · рядок 112
+<!-- fc id:T-D-099 sha:0590c64d src:dodatky/d-panik.md:138 klas:F -->
+### T-D-099 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -1425,8 +1946,8 @@
 
 ---
 
-<!-- fc id:T-D-085 sha:fbdc8285 src:dodatky/d-panik.md:114 klas:F -->
-### T-D-085 · tablycya-shapka · рядок 114
+<!-- fc id:T-D-100 sha:fbdc8285 src:dodatky/d-panik.md:140 klas:F -->
+### T-D-100 · tablycya-shapka · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -1438,8 +1959,8 @@
 
 ---
 
-<!-- fc id:T-D-086 sha:a63a39c2 src:dodatky/d-panik.md:115 klas:A -->
-### T-D-086 · komirka · рядок 115
+<!-- fc id:T-D-101 sha:a63a39c2 src:dodatky/d-panik.md:141 klas:A -->
+### T-D-101 · komirka · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1464,8 +1985,8 @@
 
 ---
 
-<!-- fc id:T-D-087 sha:ad4c17ec src:dodatky/d-panik.md:115 klas:A -->
-### T-D-087 · komirka · рядок 115
+<!-- fc id:T-D-102 sha:ad4c17ec src:dodatky/d-panik.md:141 klas:A -->
+### T-D-102 · komirka · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1490,8 +2011,8 @@
 
 ---
 
-<!-- fc id:T-D-088 sha:0164e3bb src:dodatky/d-panik.md:116 klas:A -->
-### T-D-088 · komirka · рядок 116
+<!-- fc id:T-D-103 sha:0164e3bb src:dodatky/d-panik.md:142 klas:A -->
+### T-D-103 · komirka · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -1516,8 +2037,8 @@
 
 ---
 
-<!-- fc id:T-D-089 sha:2d07f5b7 src:dodatky/d-panik.md:116 klas:A -->
-### T-D-089 · komirka · рядок 116
+<!-- fc id:T-D-104 sha:2d07f5b7 src:dodatky/d-panik.md:142 klas:A -->
+### T-D-104 · komirka · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -1542,8 +2063,8 @@
 
 ---
 
-<!-- fc id:T-D-090 sha:2bc6cd2b src:dodatky/d-panik.md:117 klas:A -->
-### T-D-090 · komirka · рядок 117
+<!-- fc id:T-D-105 sha:2bc6cd2b src:dodatky/d-panik.md:143 klas:A -->
+### T-D-105 · komirka · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1568,8 +2089,8 @@
 
 ---
 
-<!-- fc id:T-D-091 sha:b805a263 src:dodatky/d-panik.md:117 klas:A -->
-### T-D-091 · komirka · рядок 117
+<!-- fc id:T-D-106 sha:b805a263 src:dodatky/d-panik.md:143 klas:A -->
+### T-D-106 · komirka · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1594,8 +2115,8 @@
 
 ---
 
-<!-- fc id:T-D-092 sha:47044db6 src:dodatky/d-panik.md:118 klas:A -->
-### T-D-092 · komirka · рядок 118
+<!-- fc id:T-D-107 sha:47044db6 src:dodatky/d-panik.md:144 klas:A -->
+### T-D-107 · komirka · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -1620,8 +2141,8 @@
 
 ---
 
-<!-- fc id:T-D-093 sha:6a21db9c src:dodatky/d-panik.md:118 klas:A -->
-### T-D-093 · komirka · рядок 118
+<!-- fc id:T-D-108 sha:6a21db9c src:dodatky/d-panik.md:144 klas:A -->
+### T-D-108 · komirka · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -1646,8 +2167,8 @@
 
 ---
 
-<!-- fc id:T-D-094 sha:168149c9 src:dodatky/d-panik.md:119 klas:A -->
-### T-D-094 · komirka · рядок 119
+<!-- fc id:T-D-109 sha:168149c9 src:dodatky/d-panik.md:145 klas:A -->
+### T-D-109 · komirka · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -1672,8 +2193,8 @@
 
 ---
 
-<!-- fc id:T-D-095 sha:e514eca1 src:dodatky/d-panik.md:119 klas:A -->
-### T-D-095 · komirka · рядок 119
+<!-- fc id:T-D-110 sha:e514eca1 src:dodatky/d-panik.md:145 klas:A -->
+### T-D-110 · komirka · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -1698,8 +2219,8 @@
 
 ---
 
-<!-- fc id:T-D-096 sha:2f309750 src:dodatky/d-panik.md:120 klas:A -->
-### T-D-096 · komirka · рядок 120
+<!-- fc id:T-D-111 sha:2f309750 src:dodatky/d-panik.md:146 klas:A -->
+### T-D-111 · komirka · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -1724,8 +2245,8 @@
 
 ---
 
-<!-- fc id:T-D-097 sha:e82565ff src:dodatky/d-panik.md:120 klas:A -->
-### T-D-097 · komirka · рядок 120
+<!-- fc id:T-D-112 sha:e82565ff src:dodatky/d-panik.md:146 klas:A -->
+### T-D-112 · komirka · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -1750,8 +2271,8 @@
 
 ---
 
-<!-- fc id:T-D-098 sha:c946c98e src:dodatky/d-panik.md:121 klas:A -->
-### T-D-098 · komirka · рядок 121
+<!-- fc id:T-D-113 sha:c946c98e src:dodatky/d-panik.md:147 klas:A -->
+### T-D-113 · komirka · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -1774,8 +2295,8 @@
 
 ---
 
-<!-- fc id:T-D-099 sha:4adb2806 src:dodatky/d-panik.md:121 klas:A -->
-### T-D-099 · komirka · рядок 121
+<!-- fc id:T-D-114 sha:4adb2806 src:dodatky/d-panik.md:147 klas:A -->
+### T-D-114 · komirka · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -1798,8 +2319,8 @@
 
 ---
 
-<!-- fc id:T-D-100 sha:45fbc80e src:dodatky/d-panik.md:122 klas:A -->
-### T-D-100 · komirka · рядок 122
+<!-- fc id:T-D-115 sha:45fbc80e src:dodatky/d-panik.md:148 klas:A -->
+### T-D-115 · komirka · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -1822,8 +2343,8 @@
 
 ---
 
-<!-- fc id:T-D-101 sha:f25a0f20 src:dodatky/d-panik.md:122 klas:A -->
-### T-D-101 · komirka · рядок 122
+<!-- fc id:T-D-116 sha:f25a0f20 src:dodatky/d-panik.md:148 klas:A -->
+### T-D-116 · komirka · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -1846,8 +2367,8 @@
 
 ---
 
-<!-- fc id:T-D-102 sha:930379a1 src:dodatky/d-panik.md:126 klas:E -->
-### T-D-102 · proza · рядок 126
+<!-- fc id:T-D-117 sha:930379a1 src:dodatky/d-panik.md:152 klas:E -->
+### T-D-117 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1859,8 +2380,8 @@
 
 ---
 
-<!-- fc id:T-D-103 sha:6a177d47 src:dodatky/d-panik.md:128 klas:A -->
-### T-D-103 · proza · рядок 128
+<!-- fc id:T-D-118 sha:6a177d47 src:dodatky/d-panik.md:154 klas:A -->
+### T-D-118 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1883,8 +2404,8 @@
 
 ---
 
-<!-- fc id:T-D-104 sha:3a4f06b3 src:dodatky/d-panik.md:131 klas:E -->
-### T-D-104 · proza · рядок 131
+<!-- fc id:T-D-119 sha:3a4f06b3 src:dodatky/d-panik.md:157 klas:E -->
+### T-D-119 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1896,8 +2417,8 @@
 
 ---
 
-<!-- fc id:T-D-105 sha:898ac6ac src:dodatky/d-panik.md:131 klas:F -->
-### T-D-105 · proza · рядок 131
+<!-- fc id:T-D-120 sha:898ac6ac src:dodatky/d-panik.md:157 klas:F -->
+### T-D-120 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1909,8 +2430,8 @@
 
 ---
 
-<!-- fc id:T-D-106 sha:ea9dc162 src:dodatky/d-panik.md:138 klas:F -->
-### T-D-106 · tablycya-shapka · рядок 138
+<!-- fc id:T-D-121 sha:ea9dc162 src:dodatky/d-panik.md:164 klas:F -->
+### T-D-121 · tablycya-shapka · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1922,8 +2443,8 @@
 
 ---
 
-<!-- fc id:T-D-107 sha:3f7f05f2 src:dodatky/d-panik.md:139 klas:A -->
-### T-D-107 · komirka · рядок 139
+<!-- fc id:T-D-122 sha:3f7f05f2 src:dodatky/d-panik.md:165 klas:A -->
+### T-D-122 · komirka · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1965,8 +2486,8 @@
 
 ---
 
-<!-- fc id:T-D-108 sha:e1369196 src:dodatky/d-panik.md:139 klas:A -->
-### T-D-108 · komirka · рядок 139
+<!-- fc id:T-D-123 sha:e1369196 src:dodatky/d-panik.md:165 klas:A -->
+### T-D-123 · komirka · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -2008,8 +2529,8 @@
 
 ---
 
-<!-- fc id:T-D-109 sha:8bc4f39c src:dodatky/d-panik.md:140 klas:A -->
-### T-D-109 · komirka · рядок 140
+<!-- fc id:T-D-124 sha:8bc4f39c src:dodatky/d-panik.md:166 klas:A -->
+### T-D-124 · komirka · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -2051,8 +2572,8 @@
 
 ---
 
-<!-- fc id:T-D-110 sha:28cc86f2 src:dodatky/d-panik.md:140 klas:A -->
-### T-D-110 · komirka · рядок 140
+<!-- fc id:T-D-125 sha:28cc86f2 src:dodatky/d-panik.md:166 klas:A -->
+### T-D-125 · komirka · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -2094,8 +2615,8 @@
 
 ---
 
-<!-- fc id:T-D-111 sha:65e5b66a src:dodatky/d-panik.md:141 klas:A -->
-### T-D-111 · komirka · рядок 141
+<!-- fc id:T-D-126 sha:65e5b66a src:dodatky/d-panik.md:167 klas:A -->
+### T-D-126 · komirka · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -2137,8 +2658,8 @@
 
 ---
 
-<!-- fc id:T-D-112 sha:89d4b0ed src:dodatky/d-panik.md:141 klas:A -->
-### T-D-112 · komirka · рядок 141
+<!-- fc id:T-D-127 sha:89d4b0ed src:dodatky/d-panik.md:167 klas:A -->
+### T-D-127 · komirka · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -2180,8 +2701,8 @@
 
 ---
 
-<!-- fc id:T-D-113 sha:0e5b84a2 src:dodatky/d-panik.md:142 klas:A -->
-### T-D-113 · komirka · рядок 142
+<!-- fc id:T-D-128 sha:0e5b84a2 src:dodatky/d-panik.md:168 klas:A -->
+### T-D-128 · komirka · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -2223,8 +2744,8 @@
 
 ---
 
-<!-- fc id:T-D-114 sha:b8918b59 src:dodatky/d-panik.md:142 klas:A -->
-### T-D-114 · komirka · рядок 142
+<!-- fc id:T-D-129 sha:b8918b59 src:dodatky/d-panik.md:168 klas:A -->
+### T-D-129 · komirka · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -2266,8 +2787,8 @@
 
 ---
 
-<!-- fc id:T-D-115 sha:c4d149ff src:dodatky/d-panik.md:143 klas:A -->
-### T-D-115 · komirka · рядок 143
+<!-- fc id:T-D-130 sha:c4d149ff src:dodatky/d-panik.md:169 klas:A -->
+### T-D-130 · komirka · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -2309,8 +2830,8 @@
 
 ---
 
-<!-- fc id:T-D-116 sha:46508737 src:dodatky/d-panik.md:143 klas:A -->
-### T-D-116 · komirka · рядок 143
+<!-- fc id:T-D-131 sha:46508737 src:dodatky/d-panik.md:169 klas:A -->
+### T-D-131 · komirka · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -2352,8 +2873,8 @@
 
 ---
 
-<!-- fc id:T-D-117 sha:d96111a7 src:dodatky/d-panik.md:144 klas:A -->
-### T-D-117 · komirka · рядок 144
+<!-- fc id:T-D-132 sha:d96111a7 src:dodatky/d-panik.md:170 klas:A -->
+### T-D-132 · komirka · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -2395,8 +2916,8 @@
 
 ---
 
-<!-- fc id:T-D-118 sha:439a9b98 src:dodatky/d-panik.md:144 klas:A -->
-### T-D-118 · komirka · рядок 144
+<!-- fc id:T-D-133 sha:439a9b98 src:dodatky/d-panik.md:170 klas:A -->
+### T-D-133 · komirka · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -2438,8 +2959,8 @@
 
 ---
 
-<!-- fc id:T-D-119 sha:7c359228 src:dodatky/d-panik.md:145 klas:F -->
-### T-D-119 · komirka · рядок 145
+<!-- fc id:T-D-134 sha:7c359228 src:dodatky/d-panik.md:171 klas:F -->
+### T-D-134 · komirka · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -2451,8 +2972,8 @@
 
 ---
 
-<!-- fc id:T-D-120 sha:4c606b3e src:dodatky/d-panik.md:145 klas:F -->
-### T-D-120 · komirka · рядок 145
+<!-- fc id:T-D-135 sha:4c606b3e src:dodatky/d-panik.md:171 klas:F -->
+### T-D-135 · komirka · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -2464,8 +2985,8 @@
 
 ---
 
-<!-- fc id:T-D-121 sha:8712f714 src:dodatky/d-panik.md:146 klas:A -->
-### T-D-121 · komirka · рядок 146
+<!-- fc id:T-D-136 sha:8712f714 src:dodatky/d-panik.md:172 klas:A -->
+### T-D-136 · komirka · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -2507,8 +3028,8 @@
 
 ---
 
-<!-- fc id:T-D-122 sha:4e40193e src:dodatky/d-panik.md:146 klas:A -->
-### T-D-122 · komirka · рядок 146
+<!-- fc id:T-D-137 sha:4e40193e src:dodatky/d-panik.md:172 klas:A -->
+### T-D-137 · komirka · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -2530,8 +3051,8 @@
 
 ---
 
-<!-- fc id:T-D-123 sha:a66ac160 src:dodatky/d-panik.md:151 klas:F -->
-### T-D-123 · tablycya · рядок 151
+<!-- fc id:T-D-138 sha:a66ac160 src:dodatky/d-panik.md:177 klas:F -->
+### T-D-138 · tablycya · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -2543,8 +3064,8 @@
 
 ---
 
-<!-- fc id:T-D-124 sha:9e0b8e4a src:dodatky/d-panik.md:153 klas:F -->
-### T-D-124 · tablycya · рядок 153
+<!-- fc id:T-D-139 sha:9e0b8e4a src:dodatky/d-panik.md:179 klas:F -->
+### T-D-139 · tablycya · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -2556,8 +3077,8 @@
 
 ---
 
-<!-- fc id:T-D-125 sha:f82d7189 src:dodatky/d-panik.md:154 klas:F -->
-### T-D-125 · tablycya · рядок 154
+<!-- fc id:T-D-140 sha:f82d7189 src:dodatky/d-panik.md:180 klas:F -->
+### T-D-140 · tablycya · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -2569,8 +3090,8 @@
 
 ---
 
-<!-- fc id:T-D-126 sha:74974165 src:dodatky/d-panik.md:155 klas:F -->
-### T-D-126 · tablycya · рядок 155
+<!-- fc id:T-D-141 sha:74974165 src:dodatky/d-panik.md:181 klas:F -->
+### T-D-141 · tablycya · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -2582,8 +3103,8 @@
 
 ---
 
-<!-- fc id:T-D-127 sha:b89ae2bf src:dodatky/d-panik.md:156 klas:F -->
-### T-D-127 · tablycya · рядок 156
+<!-- fc id:T-D-142 sha:b89ae2bf src:dodatky/d-panik.md:182 klas:F -->
+### T-D-142 · tablycya · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -2595,8 +3116,8 @@
 
 ---
 
-<!-- fc id:T-D-128 sha:6ef4b75c src:dodatky/d-panik.md:159 klas:F -->
-### T-D-128 · proza · рядок 159
+<!-- fc id:T-D-143 sha:6ef4b75c src:dodatky/d-panik.md:185 klas:F -->
+### T-D-143 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -2608,8 +3129,8 @@
 
 ---
 
-<!-- fc id:T-D-129 sha:f710df6f src:dodatky/d-panik.md:161 klas:C -->
-### T-D-129 · proza · рядок 161
+<!-- fc id:T-D-144 sha:f710df6f src:dodatky/d-panik.md:187 klas:C -->
+### T-D-144 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -2625,8 +3146,8 @@
 
 ---
 
-<!-- fc id:T-D-130 sha:4c0a3cc5 src:dodatky/d-panik.md:161 klas:A -->
-### T-D-130 · proza · рядок 161
+<!-- fc id:T-D-145 sha:4c0a3cc5 src:dodatky/d-panik.md:187 klas:A -->
+### T-D-145 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -2668,8 +3189,8 @@
 
 ---
 
-<!-- fc id:T-D-131 sha:7ff566f8 src:dodatky/d-panik.md:164 klas:E -->
-### T-D-131 · proza · рядок 164
+<!-- fc id:T-D-146 sha:7ff566f8 src:dodatky/d-panik.md:190 klas:E -->
+### T-D-146 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -2681,8 +3202,8 @@
 
 ---
 
-<!-- fc id:T-D-132 sha:d09dfd9d src:dodatky/d-panik.md:170 klas:E -->
-### T-D-132 · proza · рядок 170
+<!-- fc id:T-D-147 sha:d09dfd9d src:dodatky/d-panik.md:196 klas:E -->
+### T-D-147 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -2694,8 +3215,8 @@
 
 ---
 
-<!-- fc id:T-D-133 sha:655ff0e7 src:dodatky/d-panik.md:172 klas:K -->
-### T-D-133 · kod · рядок 172
+<!-- fc id:T-D-148 sha:655ff0e7 src:dodatky/d-panik.md:198 klas:K -->
+### T-D-148 · kod · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -2728,8 +3249,8 @@
 
 ---
 
-<!-- fc id:T-D-134 sha:a1afa6b3 src:dodatky/d-panik.md:175 klas:F -->
-### T-D-134 · kod-ryadok · рядок 175
+<!-- fc id:T-D-149 sha:a1afa6b3 src:dodatky/d-panik.md:201 klas:F -->
+### T-D-149 · kod-ryadok · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -2741,8 +3262,8 @@
 
 ---
 
-<!-- fc id:T-D-135 sha:b8253fd9 src:dodatky/d-panik.md:180 klas:A -->
-### T-D-135 · proza · рядок 180
+<!-- fc id:T-D-150 sha:b8253fd9 src:dodatky/d-panik.md:206 klas:A -->
+### T-D-150 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -2769,8 +3290,8 @@
 
 ---
 
-<!-- fc id:T-D-136 sha:d413fc69 src:dodatky/d-panik.md:180 klas:A -->
-### T-D-136 · proza · рядок 180
+<!-- fc id:T-D-151 sha:d413fc69 src:dodatky/d-panik.md:206 klas:A -->
+### T-D-151 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -2797,8 +3318,8 @@
 
 ---
 
-<!-- fc id:T-D-137 sha:15a9044c src:dodatky/d-panik.md:180 klas:A -->
-### T-D-137 · proza · рядок 180
+<!-- fc id:T-D-152 sha:15a9044c src:dodatky/d-panik.md:206 klas:A -->
+### T-D-152 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -2825,8 +3346,8 @@
 
 ---
 
-<!-- fc id:T-D-138 sha:12db62c5 src:dodatky/d-panik.md:185 klas:E -->
-### T-D-138 · proza · рядок 185
+<!-- fc id:T-D-153 sha:12db62c5 src:dodatky/d-panik.md:211 klas:E -->
+### T-D-153 · proza · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -2838,8 +3359,8 @@
 
 ---
 
-<!-- fc id:T-D-139 sha:77e4f2d7 src:dodatky/d-panik.md:187 klas:E -->
-### T-D-139 · proza · рядок 187
+<!-- fc id:T-D-154 sha:77e4f2d7 src:dodatky/d-panik.md:213 klas:E -->
+### T-D-154 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -2851,8 +3372,8 @@
 
 ---
 
-<!-- fc id:T-D-140 sha:113645cd src:dodatky/d-panik.md:189 klas:K -->
-### T-D-140 · kod · рядок 189
+<!-- fc id:T-D-155 sha:113645cd src:dodatky/d-panik.md:215 klas:K -->
+### T-D-155 · kod · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -2896,8 +3417,8 @@
 
 ---
 
-<!-- fc id:T-D-141 sha:61ffbc10 src:dodatky/d-panik.md:193 klas:F -->
-### T-D-141 · proza · рядок 193
+<!-- fc id:T-D-156 sha:61ffbc10 src:dodatky/d-panik.md:219 klas:F -->
+### T-D-156 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -2909,8 +3430,8 @@
 
 ---
 
-<!-- fc id:T-D-142 sha:ef04690f src:dodatky/d-panik.md:198 klas:F -->
-### T-D-142 · tablycya · рядок 198
+<!-- fc id:T-D-157 sha:ef04690f src:dodatky/d-panik.md:224 klas:F -->
+### T-D-157 · tablycya · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -2922,8 +3443,8 @@
 
 ---
 
-<!-- fc id:T-D-143 sha:200e947a src:dodatky/d-panik.md:200 klas:A -->
-### T-D-143 · tablycya · рядок 200
+<!-- fc id:T-D-158 sha:200e947a src:dodatky/d-panik.md:226 klas:A -->
+### T-D-158 · tablycya · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -2947,8 +3468,8 @@
 
 ---
 
-<!-- fc id:T-D-144 sha:6747d938 src:dodatky/d-panik.md:201 klas:A -->
-### T-D-144 · tablycya · рядок 201
+<!-- fc id:T-D-159 sha:6747d938 src:dodatky/d-panik.md:227 klas:A -->
+### T-D-159 · tablycya · рядок 227
 
 **Книга каже, дослівно:**
 
@@ -2972,8 +3493,8 @@
 
 ---
 
-<!-- fc id:T-D-145 sha:0e926220 src:dodatky/d-panik.md:202 klas:A -->
-### T-D-145 · tablycya · рядок 202
+<!-- fc id:T-D-160 sha:0e926220 src:dodatky/d-panik.md:228 klas:A -->
+### T-D-160 · tablycya · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -2997,8 +3518,8 @@
 
 ---
 
-<!-- fc id:T-D-146 sha:c629c9be src:dodatky/d-panik.md:203 klas:A -->
-### T-D-146 · tablycya · рядок 203
+<!-- fc id:T-D-161 sha:c629c9be src:dodatky/d-panik.md:229 klas:A -->
+### T-D-161 · tablycya · рядок 229
 
 **Книга каже, дослівно:**
 
@@ -3040,8 +3561,8 @@
 
 ---
 
-<!-- fc id:T-D-147 sha:69aa2c68 src:dodatky/d-panik.md:204 klas:F -->
-### T-D-147 · tablycya · рядок 204
+<!-- fc id:T-D-162 sha:69aa2c68 src:dodatky/d-panik.md:230 klas:F -->
+### T-D-162 · tablycya · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -3053,8 +3574,8 @@
 
 ---
 
-<!-- fc id:T-D-148 sha:4dc00872 src:dodatky/d-panik.md:205 klas:A -->
-### T-D-148 · tablycya · рядок 205
+<!-- fc id:T-D-163 sha:4dc00872 src:dodatky/d-panik.md:231 klas:A -->
+### T-D-163 · tablycya · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -3082,8 +3603,8 @@
 
 ---
 
-<!-- fc id:T-D-149 sha:1e8945f3 src:dodatky/d-panik.md:208 klas:A -->
-### T-D-149 · proza · рядок 208
+<!-- fc id:T-D-164 sha:1e8945f3 src:dodatky/d-panik.md:234 klas:A -->
+### T-D-164 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -3107,8 +3628,8 @@
 
 ---
 
-<!-- fc id:T-D-150 sha:7076a5df src:dodatky/d-panik.md:208 klas:A -->
-### T-D-150 · proza · рядок 208
+<!-- fc id:T-D-165 sha:7076a5df src:dodatky/d-panik.md:234 klas:A -->
+### T-D-165 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -3132,8 +3653,8 @@
 
 ---
 
-<!-- fc id:T-D-151 sha:dbf57f9c src:dodatky/d-panik.md:212 klas:A -->
-### T-D-151 · proza · рядок 212
+<!-- fc id:T-D-166 sha:dbf57f9c src:dodatky/d-panik.md:238 klas:A -->
+### T-D-166 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -3157,8 +3678,8 @@
 
 ---
 
-<!-- fc id:T-D-152 sha:68e01a8c src:dodatky/d-panik.md:212 klas:F -->
-### T-D-152 · proza · рядок 212
+<!-- fc id:T-D-167 sha:68e01a8c src:dodatky/d-panik.md:238 klas:F -->
+### T-D-167 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -3170,8 +3691,8 @@
 
 ---
 
-<!-- fc id:T-D-153 sha:123d0b6e src:dodatky/d-panik.md:215 klas:A -->
-### T-D-153 · proza · рядок 215
+<!-- fc id:T-D-168 sha:123d0b6e src:dodatky/d-panik.md:241 klas:A -->
+### T-D-168 · proza · рядок 241
 
 **Книга каже, дослівно:**
 
@@ -3195,8 +3716,8 @@
 
 ---
 
-<!-- fc id:T-D-154 sha:290e2e50 src:dodatky/d-panik.md:215 klas:E -->
-### T-D-154 · proza · рядок 215
+<!-- fc id:T-D-169 sha:290e2e50 src:dodatky/d-panik.md:241 klas:E -->
+### T-D-169 · proza · рядок 241
 
 **Книга каже, дослівно:**
 
@@ -3208,8 +3729,8 @@
 
 ---
 
-<!-- fc id:T-D-155 sha:0140364c src:dodatky/d-panik.md:219 klas:A -->
-### T-D-155 · proza · рядок 219
+<!-- fc id:T-D-170 sha:0140364c src:dodatky/d-panik.md:245 klas:A -->
+### T-D-170 · proza · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -3233,8 +3754,8 @@
 
 ---
 
-<!-- fc id:T-D-156 sha:a135e9c8 src:dodatky/d-panik.md:219 klas:F -->
-### T-D-156 · proza · рядок 219
+<!-- fc id:T-D-171 sha:a135e9c8 src:dodatky/d-panik.md:245 klas:F -->
+### T-D-171 · proza · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -3246,8 +3767,8 @@
 
 ---
 
-<!-- fc id:T-D-157 sha:760e202b src:dodatky/d-panik.md:223 klas:A -->
-### T-D-157 · proza · рядок 223
+<!-- fc id:T-D-172 sha:760e202b src:dodatky/d-panik.md:249 klas:A -->
+### T-D-172 · proza · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -3275,8 +3796,8 @@
 
 ---
 
-<!-- fc id:T-D-158 sha:cbdc8d7f src:dodatky/d-panik.md:228 klas:F -->
-### T-D-158 · proza · рядок 228
+<!-- fc id:T-D-173 sha:cbdc8d7f src:dodatky/d-panik.md:254 klas:F -->
+### T-D-173 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -3288,8 +3809,8 @@
 
 ---
 
-<!-- fc id:T-D-159 sha:61db3e19 src:dodatky/d-panik.md:228 klas:F -->
-### T-D-159 · proza · рядок 228
+<!-- fc id:T-D-174 sha:61db3e19 src:dodatky/d-panik.md:254 klas:F -->
+### T-D-174 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -3301,8 +3822,8 @@
 
 ---
 
-<!-- fc id:T-D-160 sha:8d7da41f src:dodatky/d-panik.md:228 klas:F -->
-### T-D-160 · proza · рядок 228
+<!-- fc id:T-D-175 sha:8d7da41f src:dodatky/d-panik.md:254 klas:F -->
+### T-D-175 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -3314,8 +3835,8 @@
 
 ---
 
-<!-- fc id:T-D-161 sha:223bf487 src:dodatky/d-panik.md:228 klas:F -->
-### T-D-161 · proza · рядок 228
+<!-- fc id:T-D-176 sha:223bf487 src:dodatky/d-panik.md:254 klas:F -->
+### T-D-176 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -3327,8 +3848,8 @@
 
 ---
 
-<!-- fc id:T-D-162 sha:6a7c80ec src:dodatky/d-panik.md:228 klas:E -->
-### T-D-162 · proza · рядок 228
+<!-- fc id:T-D-177 sha:6a7c80ec src:dodatky/d-panik.md:254 klas:E -->
+### T-D-177 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -3340,8 +3861,8 @@
 
 ---
 
-<!-- fc id:T-D-163 sha:4304fde6 src:dodatky/d-panik.md:236 klas:F -->
-### T-D-163 · proza · рядок 236
+<!-- fc id:T-D-178 sha:4304fde6 src:dodatky/d-panik.md:262 klas:F -->
+### T-D-178 · proza · рядок 262
 
 **Книга каже, дослівно:**
 
@@ -3353,8 +3874,8 @@
 
 ---
 
-<!-- fc id:T-D-164 sha:91a1f9a6 src:dodatky/d-panik.md:236 klas:E -->
-### T-D-164 · proza · рядок 236
+<!-- fc id:T-D-179 sha:91a1f9a6 src:dodatky/d-panik.md:262 klas:E -->
+### T-D-179 · proza · рядок 262
 
 **Книга каже, дослівно:**
 
@@ -3366,8 +3887,8 @@
 
 ---
 
-<!-- fc id:T-D-165 sha:00df861d src:dodatky/d-panik.md:240 klas:F -->
-### T-D-165 · proza · рядок 240
+<!-- fc id:T-D-180 sha:00df861d src:dodatky/d-panik.md:266 klas:F -->
+### T-D-180 · proza · рядок 266
 
 **Книга каже, дослівно:**
 
@@ -3379,8 +3900,8 @@
 
 ---
 
-<!-- fc id:T-D-166 sha:9a6f1773 src:dodatky/d-panik.md:245 klas:E -->
-### T-D-166 · proza · рядок 245
+<!-- fc id:T-D-181 sha:9a6f1773 src:dodatky/d-panik.md:271 klas:E -->
+### T-D-181 · proza · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -3392,8 +3913,8 @@
 
 ---
 
-<!-- fc id:T-D-167 sha:c50282dd src:dodatky/d-panik.md:245 klas:E -->
-### T-D-167 · proza · рядок 245
+<!-- fc id:T-D-182 sha:c50282dd src:dodatky/d-panik.md:271 klas:E -->
+### T-D-182 · proza · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -3405,8 +3926,8 @@
 
 ---
 
-<!-- fc id:T-D-168 sha:71f2dcf5 src:dodatky/d-panik.md:248 klas:F -->
-### T-D-168 · proza · рядок 248
+<!-- fc id:T-D-183 sha:71f2dcf5 src:dodatky/d-panik.md:274 klas:F -->
+### T-D-183 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -3418,8 +3939,8 @@
 
 ---
 
-<!-- fc id:T-D-169 sha:d8b5c935 src:dodatky/d-panik.md:248 klas:F -->
-### T-D-169 · proza · рядок 248
+<!-- fc id:T-D-184 sha:d8b5c935 src:dodatky/d-panik.md:274 klas:F -->
+### T-D-184 · proza · рядок 274
 
 **Книга каже, дослівно:**
 

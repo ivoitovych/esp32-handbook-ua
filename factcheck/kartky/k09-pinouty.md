@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-K09-033 sha:4b043722 src:kartky/k09-pinouty.md:54 klas:F -->
+<!-- fc id:T-K09-033 sha:4b043722 src:kartky/k09-pinouty.md:54 klas:A -->
 ### T-K09-033 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -535,7 +535,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+  > 
+  > .. only:: esp32 or esp32s2 or esp32s3
+  >    {STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,
+  >    or driven Low, in order to enter the serial bootloader.
+  > 
+  > .. only:: esp32c3 or esp32c2 or esp32h2 or esp32c6 or …
+  >    {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  >    serial bootloader reliably. The strapping combination of
+  >    {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and
+  >    will trigger unexpected behavior.
+  > 
+  > In normal boot mode ({STRAP_BOOT_GPIO} high), {STRAP_BOOT_2_GPIO}
+  > is ignored.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Таблиця розділу 07 «Другий strapping-пін працює на S3 і C3 у протилежні боки» звірена цілком, рядок за рядком, і збіглася вся — включно з найтоншим: поняття «недійсна комбінація» існує лише для RISC-V сімейств, а на classic і S3 неправильний рівень другого піна просто не пускає в download mode.
+Директиви `.. only::` тут кращі за будь-який переказ: вони прямо перелічують, до яких чипів яке правило належить, і книга поділила сімейства саме так.
+Підтверджено й твердження «у звичайному режимі другий пін ігнорується взагалі — на всіх сімействах»: у джерелі це окреме речення, поза обома `.. only::`.
+- **Прохід:** pass-26-strapping
 
 ---
 
