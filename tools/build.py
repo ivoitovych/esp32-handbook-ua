@@ -91,7 +91,7 @@ def md_to_typst(src: Path) -> str:
     proc = subprocess.run(
         ["pandoc", "-f",
          "markdown+fenced_divs+pipe_tables+header_attributes+raw_attribute"
-         "+backtick_code_blocks+auto_identifiers-smart",
+         "+backtick_code_blocks-auto_identifiers-smart",
          "-t", "typst", "--wrap=preserve"],
         input=md, capture_output=True, text=True,
     )
@@ -105,6 +105,9 @@ def strip_table_centering(typ: str) -> str:
 
     У книзі таблиця стоїть по лівому краю смуги набору, як і решта тексту;
     центрування створює зайвий вертикальний відступ перед таблицею.
+
+    Дужки рахуються лише поза raw-фрагментами: комірка виду [`Ctrl+]`]
+    цілком законна, і дужка всередині коду не має закривати блок.
     """
     out, i, marker = [], 0, "#align(center)[#table("
     while True:
@@ -114,20 +117,65 @@ def strip_table_centering(typ: str) -> str:
             return "".join(out)
         out.append(typ[i:j])
         start = j + len("#align(center)[")
-        depth, end = 1, start
-        for end in range(start, len(typ)):
-            if typ[end] == "[":
-                depth += 1
-            elif typ[end] == "]":
-                depth -= 1
-                if depth == 0:
-                    break
+        end = _match_bracket(typ, start)
         out.append(typ[start:end])
         i = end + 1
 
 
+def _match_bracket(typ: str, start: int) -> int:
+    """Індекс «]», що закриває «[» перед start. Пропускає raw-фрагменти."""
+    depth, k, n = 1, start, len(typ)
+    while k < n:
+        c = typ[k]
+        if c == "\\":                      # екранований символ
+            k += 2
+            continue
+        if c == "`":                       # raw: пропустити до парного руна
+            run = len(typ[k:]) - len(typ[k:].lstrip("`"))
+            close = typ.find("`" * run, k + run)
+            k = n if close < 0 else close + run
+            continue
+        if c == "[":
+            depth += 1
+        elif c == "]":
+            depth -= 1
+            if depth == 0:
+                return k
+        k += 1
+    return n - 1
+
+
 def esc(s: str) -> str:
     return s.replace("\\", "\\\\").replace('"', '\\"')
+
+
+RE_LABEL_DEF = re.compile(r"^<([^<>\s]+)>\s*$", re.M)
+RE_LINK_REF = re.compile(r"#link\(<([^<>()]+)>\)")
+
+
+def resolve_links(frags: list[Path]) -> set[str]:
+    """Знімає посилання на якорі, яких у цьому PDF немає.
+
+    Книга мусить збиратися на будь-якому етапі написання, тому посилання
+    на ще не написаний розділ не може ламати збирання. Typst відмовляється
+    компілювати #link на неоголошену мітку — такі посилання перетворюємо
+    на звичайний текст, зберігаючи підпис. Перелік друкується при збиранні,
+    щоб жодне з них не лишилося непоміченим у готовій книзі.
+    """
+    texts = [f.read_text(encoding="utf-8") for f in frags]
+    defined = {m for t in texts for m in RE_LABEL_DEF.findall(t)}
+    dangling: set[str] = set()
+
+    for f, t in zip(frags, texts):
+        refs = set(RE_LINK_REF.findall(t))
+        gone = refs - defined
+        if not gone:
+            continue
+        dangling |= gone
+        for a in gone:
+            t = t.replace(f"#link(<{a}>)", "")
+        f.write_text(t, encoding="utf-8")
+    return dangling
 
 
 def build(name: str, cfg: dict, meta: dict) -> Path:
@@ -149,7 +197,7 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
         root.append(f'  "{k}": "{esc(str(v))}",')
     root += [")", "", f"#show: {cfg['template']}.with(meta)", ""]
 
-    missing, seq = [], 0
+    missing, seq, frags = [], 0, []
     for part in cfg.get("parts") or []:
         files = part.get("files") or []
         if not part.get("silent") and part.get("title"):
@@ -168,9 +216,17 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
             seq += 1
             frag = tdir / f"{seq:03d}-{Path(rel).stem}.typ"
             frag.write_text(IMPORT + "\n\n" + md_to_typst(src), encoding="utf-8")
+            frags.append(frag)
             root.append(f'#include "{frag.name}"')
     if cfg.get("back_matter", True):
         root += ["", "#back-matter(meta)", ""]
+
+    dangling = resolve_links(frags)
+    if dangling:
+        top = ", ".join(f"#{a}" for a in sorted(dangling)[:5])
+        extra = f" … і ще {len(dangling) - 5}" if len(dangling) > 5 else ""
+        print(f"  · посилання вперед, знято до звичайного тексту "
+              f"({len(dangling)}): {top}{extra}")
 
     if missing:
         head = ", ".join(missing[:4])
