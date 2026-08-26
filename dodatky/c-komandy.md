@@ -115,7 +115,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 ### Компоненти
 
 ```
-idf.py add-dependency "espressif/led_strip^2.5.0"
+idf.py add-dependency "espressif/led_strip^3.0.3"
 idf.py reconfigure
 ```
 

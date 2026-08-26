@@ -28,7 +28,7 @@ idf.py -p /dev/ttyUSB0 flash        # залити
 idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
 idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
 idf.py fullclean                    # коли збирання поводиться незрозуміло
-idf.py size                         # скільки зайнято flash і RAM
+idf.py size                         # скільки зайнято флешу і RAM
 idf.py coredump-info                # розбір coredump із флешу
 ```
 
