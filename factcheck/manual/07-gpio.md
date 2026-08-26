@@ -2411,7 +2411,7 @@
 
 ---
 
-<!-- fc id:T-07-115 sha:be7c4eb1 src:manual/07-gpio.md:249 klas:F -->
+<!-- fc id:T-07-115 sha:be7c4eb1 src:manual/07-gpio.md:249 klas:A -->
 ### T-07-115 · proza · рядок 249
 
 **Книга каже, дослівно:**
@@ -2420,7 +2420,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Texas Instruments, PCF8574 Remote 8-Bit I/O Expander for I2C Bus (SCPS068), розділи «Features» і «Description»
+- **Дослівно з джерела:**
+  > PCF8574 Remote 8-Bit I/O Expander for I2C Bus
+  > 
+  > Features
+  > • I2C to parallel-port expander
+  > • Low standby-current consumption of 10 µA max
+  > • Open-drain interrupt output
+- **Спосіб і дата:** PDF TI, кеш `pcf8574.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Розрядність у самій назві документа: вісім ліній, і саме по I²C. Побічне, вартого розділу 07: вихід переривання **з відкритим стоком**, тобто на нього теж потрібне підтягування — а книга про це не згадує, хоч радить PCF8574 як вихід із браку пінів.
+- **Прохід:** m2-08-dyspleyi-rozshyryuvachi
 
 ---
 

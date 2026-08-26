@@ -328,6 +328,68 @@ def klyuch(z: dict) -> tuple[str, str]:
     return (str(z.get("_prokhid", "?")), str(z.get("nazva", "?")))
 
 
+def rozbyty_alternatyvy(vzirets: str) -> list[str]:
+    """Розібрати `zbih` по `|` **верхнього рівня**.
+
+    Потрібне для аудиту окремих альтернатив. Знахідка М2 від 15:47Z:
+    `sketch -v` бачить мертвий доказ, але не бачить мертву альтернативу
+    в живому доказі. Перша альтернатива спрацювала — запис виглядає
+    здоровим, і те, що друга не збіглася з жодним рядком, не видно
+    ніде: ані в переліку покриття, ані в жодному чеку.
+
+    Це важить саме тому, що альтернативи ми **нарощуємо**: доказ
+    тягнеться з розділу на картки й додатки додаванням гілок, і кожна
+    додана гілка — окрема нагода мовчки промахнутися.
+
+    Рахуємо дужки і не ріжемо всередині `[...]`; `\|` — літерал.
+    """
+    chastyny: list[str] = []
+    tek: list[str] = []
+    hlyb = 0
+    u_klasi = False
+    i = 0
+    while i < len(vzirets):
+        c = vzirets[i]
+        if c == "\\" and i + 1 < len(vzirets):
+            tek.append(vzirets[i:i + 2])
+            i += 2
+            continue
+        if u_klasi:
+            tek.append(c)
+            if c == "]":
+                u_klasi = False
+        elif c == "[":
+            u_klasi = True
+            tek.append(c)
+        elif c == "(":
+            hlyb += 1
+            tek.append(c)
+        elif c == ")":
+            hlyb -= 1
+            tek.append(c)
+        elif c == "|" and hlyb == 0:
+            chastyny.append("".join(tek))
+            tek = []
+        else:
+            tek.append(c)
+        i += 1
+    chastyny.append("".join(tek))
+    return [x for x in chastyny if x]
+
+
+# Друга форма тихої брехні взірця (знахідка М2 від 16:39Z): альтернатива
+# з самої лише назви предмета. `RP2040` збігається з **кожною** коміркою
+# колонки RP2040 — зокрема з «Ціна плати → низька», яку доказ позначив
+# класом B на підставі заголовка з адресами пам'яті.
+#
+# Ловити це за формою слова не вийде: `RP2040` і `264 КБ` обидва містять
+# цифри, а `Raspberry Pi` і `40 мА` обидва мають пробіл. Ловиться це за
+# **наслідком**: широка альтернатива зачіпає багато одиниць, а доказ
+# говорить про одну. Тому аудит не судить про форму, а друкує число
+# збігів кожної альтернативи окремо — і рішення лишає людині, яка бачить
+# цитату поруч.
+SHYROKA_ALTERNATYVA = 4
+
 def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
     """Усі докази, що взагалі підпадають під це твердження.
 
@@ -383,6 +445,9 @@ def sketch() -> int:
     # переліків нижче, і доказ із хибним взірцем лишався невидимим.
     pokryttya: dict[tuple[str, str], list[str]] = {}
     zachepleni: set[tuple[str, str]] = set()
+    # Тексти всіх одиниць — для окремого аудиту кожної альтернативи
+    # взірця. Тримати їх коштує пам'яті, але дешевше, ніж другий обхід.
+    usi_teksty: list[str] = []
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
             odynyci = rozbyty(f.read_text(encoding="utf-8"))
@@ -400,6 +465,7 @@ def sketch() -> int:
             for k, (vyd, txt, ln) in enumerate(odynyci, 1):
                 ident = f"T-{pre}-{k:03d}"
                 h = sha(txt)
+                usi_teksty.append(txt)
                 kandydaty = vsi_kandydaty(dokazy, h, txt)
                 for k_z in kandydaty:
                     zachepleni.add(klyuch(k_z))
@@ -468,6 +534,49 @@ def sketch() -> int:
         for z in perekryti:
             print(f"    {z.get('nazva','?')}  "
                   f"({z.get('_prokhid')}, клас {z.get('klas','?')})")
+
+    # Аудит окремих альтернатив. Дві вади, невидимі вище:
+    #
+    #   мертва   — альтернатива не зачепила нічого, але сусідня
+    #              спрацювала, тож доказ виглядає здоровим;
+    #   широка   — альтернатива зачепила більше одиниць, ніж доказ
+    #              узагалі стверджує.
+    #
+    # Обидві занижують або завищують покриття мовчки, і жоден чек на них
+    # не падає. Тому це звіт, а не ворота: судити, чи 12 збігів широкі,
+    # може лише той, хто бачить цитату.
+    mertvi: list[tuple[dict, str]] = []
+    shyroki: list[tuple[dict, str, int]] = []
+    for z in dokazy:
+        vz = z.get("zbih")
+        if not vz:
+            continue
+        chastyny = rozbyty_alternatyvy(vz)
+        if len(chastyny) < 2:
+            continue
+        for ch in chastyny:
+            try:
+                r = re.compile(ch, re.S)
+            except re.error:
+                # Альтернатива, вирвана з контексту, може бути
+                # недійсним взірцем сама по собі — це не вада доказу.
+                continue
+            n = sum(1 for x in usi_teksty if r.search(x))
+            if n == 0:
+                mertvi.append((z, ch))
+            elif n >= SHYROKA_ALTERNATYVA:
+                shyroki.append((z, ch, n))
+    if mertvi:
+        print(f"\n⚠ альтернатив без жодного збігу: {len(mertvi)}")
+        for z, ch in mertvi:
+            print(f"    {z.get('nazva','?')}  ({z.get('_prokhid')})"
+                  f"\n        ↳ {ch}")
+    if shyroki and "-v" in sys.argv:
+        print(f"\nальтернатив від {SHYROKA_ALTERNATYVA} збігів: "
+              f"{len(shyroki)}")
+        for z, ch, n in sorted(shyroki, key=lambda x: -x[2]):
+            print(f"  {n:>3}×  {z.get('nazva','?')}  ({z.get('_prokhid')})"
+                  f"\n        ↳ {ch}")
     return 0
 
 

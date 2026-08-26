@@ -169,7 +169,7 @@
 
 ---
 
-<!-- fc id:T-E-010 sha:11669d9f src:dodatky/e-interfeysy.md:13 klas:E -->
+<!-- fc id:T-E-010 sha:11669d9f src:dodatky/e-interfeysy.md:13 klas:A -->
 ### T-E-010 · komirka · рядок 13
 
 **Книга каже, дослівно:**
@@ -178,7 +178,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Sensirion, Datasheet SHT3x-DIS (Humidity and Temperature Sensor) і Datasheet SHT4x (4th Gen. Relative Humidity and Temperature Sensor), розділи «Key features»/«Highlights» на титульній сторінці кожного
+- **Дослівно з джерела:**
+  > (SHT3x-DIS)
+  > Datasheet SHT3x-DIS
+  > Humidity and Temperature Sensor
+  > ▪ Typical accuracy of ±1.5 %RH and ±0.1 °C for
+  >   SHT35
+  > 
+  > (SHT4x)
+  > Datasheet – SHT4x
+  > 4th Gen. Relative Humidity and Temperature Sensor
+  > Highlights
+  > • Accuracies ΔRH = ±1.0 %RH, ΔT = ±0.1 °C
+- **Спосіб і дата:** PDF Sensirion, кеш `sht3x.pdf` і `sht4x.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26. У витягу з `sht3x.pdf` символ «±» pdftotext віддає як приватний гліф шрифту (байти `ef 82 b1`, невидимі в терміналі) — відновлено як «±» після звірки з рештою документа, де той самий символ у слові «ΔT»/градусах передається коректно.
+- **Нотатка:** «Точна вологість» підтверджено дослівно числами точності — це не маркетингове прикметникове слово, а конкретний допуск: ±1.5 %RH у топовій лінійці SHT3x (SHT35) і ±1.0 %RH у SHT4x. Для контексту (не змінює висновок, книга цього рядка не деталізує): SHT4x у таблиці «Device Overview» власного datasheet показує третю можливу I²C-адресу `0x46` на додачу до `0x44`/`0x45`, які вже підтверджені класом A в pass-16-interfeysy — рядок книги називає лише дві з трьох, але це найпоширеніший варіант (SHT40-xD1B), тож не помилка, а неповнота, вартого уваги наступного проходу з адресами.
+- **Прохід:** m2-16-datchyky-dodatok-e
 
 ---
 
@@ -191,7 +207,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — назва «Sensirion» тут це вказівка «шукай офіційну бібліотеку виробника», а не характеристика самої мікросхеми. Datasheet SHT3x/SHT4x про існування чи назву бібліотеки для Arduino/ESP-IDF не пише і писати не повинен.
+- **Нотатка:** Той самий випадок, що й «Бібліотека IDE» для інших рядків додатка E і «Ціна плати Arduino Uno» в m2-10: клас C (недосяжне джерело) тут невірний, бо джерело не недосяжне — воно просто не про це. Клас E, редакційна вказівка, а не факт із datasheet.
+- **Прохід:** m2-16-datchyky-dodatok-e
 
 ---
 
@@ -330,7 +352,7 @@
 
 ---
 
-<!-- fc id:T-E-016 sha:450710eb src:dodatky/e-interfeysy.md:15 klas:F -->
+<!-- fc id:T-E-016 sha:450710eb src:dodatky/e-interfeysy.md:15 klas:C -->
 ### T-E-016 · komirka · рядок 15
 
 **Книга каже, дослівно:**
@@ -339,7 +361,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet Maxim Integrated (нині Analog Devices) — https://www.analog.com/en/products/ds3231.html
+- **Що шукати в джерелі:** точність ходу (± ppm за температурою), струм від резервної батареї в режимі підтримки, діапазон живлення VBAT і адреса на шині I²C (очікується 0x68). Окремо — чи є в datasheet згадка про тип батареї: у книзі стоїть CR2032, але це властивість **модуля**, а не мікросхеми
+- **Нотатка:** Чесний `C`. `analog.com` відмовляє **цій мережі** на рівні Akamai — «Access Denied» із посиланням `errors.edgesuite.net`, і не лише `curl`, а й справжньому Chrome. Це не фільтр на інструмент, а рішення видавця; обійти його я не можу й не пробував.
+Перевірено чотири дзеркала (Mouser, DigiKey, SparkFun, rcscomponents) — жодне не віддало PDF. Те саме з BH1750 (ROHM).
+Межа, що повторюється з кроку 4: `CR2032` у книзі — властивість модуля, а не DS3231. Datasheet мікросхеми її не підтвердить ніколи, хоч би він і відкрився.
+- **Прохід:** m2-09-hc-sr04
 
 ---
 
@@ -388,7 +416,7 @@
 
 ---
 
-<!-- fc id:T-E-019 sha:d5040300 src:dodatky/e-interfeysy.md:16 klas:F -->
+<!-- fc id:T-E-019 sha:d5040300 src:dodatky/e-interfeysy.md:16 klas:A -->
 ### T-E-019 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -397,11 +425,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** TDK InvenSense, MPU-6000/MPU-6050 Register Map and Descriptions, Revision 4.0 (RM-MPU-6000A-00), розділ 2 «Purpose and Scope»
+- **Дослівно з джерела:**
+  > 2   Purpose and Scope
+  > This document provides preliminary information regarding the register map and descriptions for the Motion
+  > Processing Units™ MPU-6000™ and MPU-6050™, collectively called the MPU-60X0™ or MPU™.
+  > The MPU devices provide the world's first integrated 6-axis motion processor solution that eliminates the
+  > package-level gyroscope and accelerometer cross-axis misalignment associated with discrete solutions. The
+  > devices combine a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die together with an
+  > onboard Digital Motion Processor™ (DMP™) capable of processing complex 9-axis sensor fusion algorithms
+  > using the field-proven and proprietary MotionFusion™ engine.
+- **Спосіб і дата:** PDF TDK InvenSense (мзеркало cdn.sparkfun.com, оригінальний домен invensense.tdk.com віддає 404 на всі перевірені шляхи документа), кеш `mpu6050.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** «Акселерометр, гіроскоп» — точний опис: документ прямо називає MPU-6050 6-осьовим (3-осьовий гіроскоп + 3-осьовий акселерометр на одному кристалі). Побічне, вартого уваги: той самий абзац пояснює, чим MPU-6050 відрізняється від MPU-6000 — MPU-6050 має лише I²C, а MPU-6000 додає ще й SPI. Це узгоджено з тим, що книга ставить MPU6050 лише в I²C-таблицю додатка E, а не в SPI-таблицю поруч — рядка книга не помиляється, хоча цієї деталі й не проговорює.
+- **Прохід:** m2-16-datchyky-dodatok-e
 
 ---
 
-<!-- fc id:T-E-020 sha:6181e702 src:dodatky/e-interfeysy.md:16 klas:F -->
+<!-- fc id:T-E-020 sha:6181e702 src:dodatky/e-interfeysy.md:16 klas:E -->
 ### T-E-020 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -410,7 +451,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — назва бібліотеки Arduino не є характеристикою кристала. Register map MPU-6050 про сторонні програмні бібліотеки не згадує.
+- **Нотатка:** Той самий випадок, що й попередній запис для SHT3x/SHT4x. Клас E.
+- **Прохід:** m2-16-datchyky-dodatok-e
 
 ---
 
@@ -671,7 +718,7 @@
 
 ---
 
-<!-- fc id:T-E-034 sha:84958947 src:dodatky/e-interfeysy.md:21 klas:F -->
+<!-- fc id:T-E-034 sha:84958947 src:dodatky/e-interfeysy.md:21 klas:A -->
 ### T-E-034 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -680,7 +727,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Texas Instruments, PCF8574 Remote 8-Bit I/O Expander for I2C Bus (SCPS068), розділи «Features» і «Description»
+- **Дослівно з джерела:**
+  > PCF8574 Remote 8-Bit I/O Expander for I2C Bus
+  > 
+  > Features
+  > • I2C to parallel-port expander
+  > • Low standby-current consumption of 10 µA max
+  > • Open-drain interrupt output
+- **Спосіб і дата:** PDF TI, кеш `pcf8574.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Розрядність у самій назві документа: вісім ліній, і саме по I²C. Побічне, вартого розділу 07: вихід переривання **з відкритим стоком**, тобто на нього теж потрібне підтягування — а книга про це не згадує, хоч радить PCF8574 як вихід із браку пінів.
+- **Прохід:** m2-08-dyspleyi-rozshyryuvachi
 
 ---
 
@@ -729,7 +787,7 @@
 
 ---
 
-<!-- fc id:T-E-037 sha:55153a86 src:dodatky/e-interfeysy.md:22 klas:F -->
+<!-- fc id:T-E-037 sha:55153a86 src:dodatky/e-interfeysy.md:22 klas:A -->
 ### T-E-037 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -738,7 +796,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features»
+- **Дослівно з джерела:**
+  > MCP23017/MCP23S17
+  > 16-Bit I/O Expander with Serial Interface
+  > 
+  > Features
+  > • 16-Bit Remote Bidirectional I/O Port:
+  >   - I/O pins default to input
+- **Спосіб і дата:** PDF Microchip, кеш `mcp23017.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Шістнадцять ліній підтверджено. Варте уваги при читанні додатка E: `MCP23017` і `MCP23S17` — той самий кристал із різними шинами, I²C і SPI відповідно. Книга називає лише перший, і для розділу 07 це правильно, але в переліку замінників різниця в одній літері означає іншу шину.
+- **Прохід:** m2-08-dyspleyi-rozshyryuvachi
 
 ---
 

@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-01-029 sha:f55cd7ac src:manual/01-platforma.md:67 klas:C -->
+<!-- fc id:T-01-029 sha:f55cd7ac src:manual/01-platforma.md:67 klas:F -->
 ### T-01-029 · proza · рядок 67
 
 **Книга каже, дослівно:**
@@ -379,11 +379,7 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
@@ -478,7 +474,7 @@
 
 ---
 
-<!-- fc id:T-01-037 sha:64bfb49d src:manual/01-platforma.md:89 klas:B -->
+<!-- fc id:T-01-037 sha:64bfb49d src:manual/01-platforma.md:89 klas:F -->
 ### T-01-037 · tablycya-shapka · рядок 89
 
 **Книга каже, дослівно:**
@@ -487,17 +483,7 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
@@ -514,7 +500,7 @@
 
 ---
 
-<!-- fc id:T-01-039 sha:6ddf4773 src:manual/01-platforma.md:90 klas:C -->
+<!-- fc id:T-01-039 sha:6ddf4773 src:manual/01-platforma.md:90 klas:B -->
 ### T-01-039 · komirka · рядок 90
 
 **Книга каже, дослівно:**
@@ -523,15 +509,22 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features» — «Peripheral Features» і «Special Microcontroller Features»
+- **Дослівно з джерела:**
+  > The ATmega48A/PA/88A/PA/168A/PA/328/P provides the following features: 4K/8Kbytes of In-System
+  > Programmable Flash with Read-While-Write capabilities, 256/512/512/1Kbytes EEPROM, 512/1K/1K/2Kbytes
+  > SRAM, 23 general purpose I/O lines, 32 general purpose working registers, three flexible Timer/Counters with
+  > compare modes, internal and external interrupts, a serial programmable USART, a byte-oriented 2-wire Serial
+  > Interface, an SPI serial port, a 6-channel 10-bit ADC (8 channels in TQFP and VQFN packages), a
+  > programmable Watchdog Timer with internal Oscillator, and five software selectable power saving modes.
+- **Спосіб і дата:** PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Вступ datasheet перелічує периферію вичерпно (це той самий перелік, що дублюється розбито по пунктах у «Features»: USART, 2-wire (I²C), SPI, ADC, Watchdog, компаратор, лічильники) — радіо чи будь-якого бездротового інтерфейсу серед них немає. Висновок «ні» випливає з повноти переліку, а не з прямої фрази «немає радіо», тому клас B, а не A — той самий патерн, що й приклад із SCHEMA.md про `SOC_UART_NUM 3`.
+- **Прохід:** m2-10-rp2040-atmega
 
 ---
 
-<!-- fc id:T-01-040 sha:4ebc55ec src:manual/01-platforma.md:90 klas:C -->
+<!-- fc id:T-01-040 sha:4ebc55ec src:manual/01-platforma.md:90 klas:F -->
 ### T-01-040 · komirka · рядок 90
 
 **Книга каже, дослівно:**
@@ -540,15 +533,11 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-041 sha:1881d193 src:manual/01-platforma.md:90 klas:B -->
+<!-- fc id:T-01-041 sha:1881d193 src:manual/01-platforma.md:90 klas:F -->
 ### T-01-041 · komirka · рядок 90
 
 **Книга каже, дослівно:**
@@ -557,21 +546,11 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-042 sha:441d4329 src:manual/01-platforma.md:90 klas:C -->
+<!-- fc id:T-01-042 sha:441d4329 src:manual/01-platforma.md:90 klas:A -->
 ### T-01-042 · komirka · рядок 90
 
 **Книга каже, дослівно:**
@@ -580,11 +559,15 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.2 «Interfaces»
+- **Дослівно з джерела:**
+  > 2.2    Interfaces
+  >       • 802.11 b/g/n/ac Wireless LAN
+  >       • Bluetooth 5.0 with BLE
+- **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf`, завантажено `vzyaty.sh` з datasheets.raspberrypi.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Той самий факт для Pi 5 (product brief, розділ «Specification»): «Dual-band 802.11ac Wi-Fi®» і «Bluetooth 5.0 / Bluetooth Low Energy (BLE)» — покоління різні, висновок «так» той самий для обох.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -601,7 +584,7 @@
 
 ---
 
-<!-- fc id:T-01-044 sha:dc034963 src:manual/01-platforma.md:91 klas:C -->
+<!-- fc id:T-01-044 sha:dc034963 src:manual/01-platforma.md:91 klas:A -->
 ### T-01-044 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -610,32 +593,34 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades»
+- **Дослівно з джерела:**
+  > Table 20-7.         Examples of UBRRn Settings for Commonly Used Oscillator Frequencies (Continued)
+  >                           fosc = 16.0000MHz                      fosc = 18.4320MHz                      fosc = 20.0000MHz
+  > 
+  > Speed Grade:
+  >                     ̶           0 - 4MHz@1.8 - 5.5V, 0 - 10MHz@2.7 - 5.5.V, 0 - 20MHz @ 4.5 - 5.5V
+- **Спосіб і дата:** PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** 16 МГц — не максимум кристала (максимум за Speed Grade — 20 МГц при 4.5–5.5 В), а один із «типових» («Commonly Used») тактових частот, прямо названих у таблиці налаштувань USART — саме ту, яку обрала плата Arduino Uno для зовнішнього резонатора. Сам зовнішній кварц 16 МГц — властивість плати Arduino Uno, а не кристала; це datasheet ATmega328P підтверджує лише опосередковано (частота підтримується і є «типовою»), а не як специфікацію конкретної плати. Прямого підтвердження, що саме на Arduino Uno стоїть резонатор 16 МГц, треба шукати у схемі плати (Arduino Uno Rev3), а не в datasheet кристала — вона в цій сесії не звірялася.
+- **Прохід:** m2-10-rp2040-atmega
 
 ---
 
-<!-- fc id:T-01-045 sha:a1c9315d src:manual/01-platforma.md:91 klas:C -->
+<!-- fc id:T-01-045 sha:40c8ea93 src:manual/01-platforma.md:91 klas:F -->
 ### T-01-045 · komirka · рядок 91
 
 **Книга каже, дослівно:**
 
-> Частота · STM32 → 24–550 МГц
+> Частота · STM32 → 24 МГц – сотні МГц
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-046 sha:0970fe3e src:manual/01-platforma.md:91 klas:B -->
+<!-- fc id:T-01-046 sha:0970fe3e src:manual/01-platforma.md:91 klas:F -->
 ### T-01-046 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -644,21 +629,11 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-047 sha:69fa3921 src:manual/01-platforma.md:91 klas:C -->
+<!-- fc id:T-01-047 sha:69fa3921 src:manual/01-platforma.md:91 klas:A -->
 ### T-01-047 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -667,11 +642,14 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.1 «Hardware»
+- **Дослівно з джерела:**
+  > 2.1    Hardware
+  >       • Quad core 64-bit ARM-Cortex A72 running at 1.5GHz
+- **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** 1.5 ГГц > 1 ГГц — з запасом, і це найповільніша з підтримуваних книгою плат: Pi 5 (product brief) іде ще вище — «64-bit quad-core Arm Cortex-A76 processor running at 2.4GHz». Обидва підтверджують «понад 1 ГГц», Pi 5 із більшим запасом.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -688,7 +666,7 @@
 
 ---
 
-<!-- fc id:T-01-049 sha:1f2ed711 src:manual/01-platforma.md:92 klas:C -->
+<!-- fc id:T-01-049 sha:1f2ed711 src:manual/01-platforma.md:92 klas:A -->
 ### T-01-049 · komirka · рядок 92
 
 **Книга каже, дослівно:**
@@ -697,15 +675,20 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features» → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory»
+- **Дослівно з джерела:**
+  > High Endurance Non-volatile Memory Segments
+  >             ̶               4/8/16/32KBytes of In-System Self-Programmable Flash program memory
+  >             ̶               256/512/512/1KBytes EEPROM
+  >             ̶               512/1K/1K/2KBytes Internal SRAM
+- **Спосіб і дата:** PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Чотири числа в кожному рядку йдуть у порядку назви документа — ATmega48A/PA, 88A/PA, 168A/PA, 328/P — тобто SRAM саме для 328/P останнє в ряду: 2 КБайти. Підтверджено ще раз у розділі 8.3, де для 328/P пряма адресація SRAM дає «512/1024/1024/2048 bytes of internal data SRAM» — 2048 байт = 2 КБ.
+- **Прохід:** m2-10-rp2040-atmega
 
 ---
 
-<!-- fc id:T-01-050 sha:8ea80e06 src:manual/01-platforma.md:92 klas:C -->
+<!-- fc id:T-01-050 sha:8ea80e06 src:manual/01-platforma.md:92 klas:F -->
 ### T-01-050 · komirka · рядок 92
 
 **Книга каже, дослівно:**
@@ -714,11 +697,7 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
@@ -745,7 +724,7 @@
 
 ---
 
-<!-- fc id:T-01-052 sha:8ca74b4d src:manual/01-platforma.md:92 klas:C -->
+<!-- fc id:T-01-052 sha:8ca74b4d src:manual/01-platforma.md:92 klas:A -->
 ### T-01-052 · komirka · рядок 92
 
 **Книга каже, дослівно:**
@@ -754,11 +733,13 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 1 «Introduction»
+- **Дослівно з джерела:**
+  > The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
+- **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Pi 5 (product brief) іде далі — «LPDDR4X-4267 SDRAM (options for 1GB, 2GB, 4GB, 8GB and 16GB)» — теж гігабайти, більший максимум.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -775,7 +756,7 @@
 
 ---
 
-<!-- fc id:T-01-054 sha:473cce38 src:manual/01-platforma.md:93 klas:C -->
+<!-- fc id:T-01-054 sha:473cce38 src:manual/01-platforma.md:93 klas:B -->
 ### T-01-054 · komirka · рядок 93
 
 **Книга каже, дослівно:**
@@ -784,15 +765,24 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ «Features» → «Special Microcontroller Features»
+- **Дослівно з джерела:**
+  > The ATmega48A/PA/88A/PA/168A/PA/328/P is a low power, CMOS 8-bit microcontrollers based on the
+  > AVR® enhanced RISC architecture.
+  > 
+  > Special Microcontroller Features
+  >                     ̶           Power-on Reset and Programmable Brown-out Detection
+  >                 ̶               Internal Calibrated Oscillator
+  >                 ̶               External and Internal Interrupt Sources
+  >                 ̶               Six Sleep Modes: Idle, ADC Noise Reduction, Power-save, Power-down, Standby, and Extended Standby
+- **Спосіб і дата:** PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Datasheet прямо не пише «операційної системи немає» — про софт датащит узагалі не говорить, це нормально для нього. Висновок B випливає з архітектури: чип описаний як «8-bit microcontroller» без блоку керування пам'яттю, привілейованих рівнів чи планувальника, а весь перелік «Special Microcontroller Features» вичерпується скиданням, генератором, перериваннями й режимами сну — жодного системного/ядерного примітиву. Разом з обсягом SRAM (2 КБ, попередній запис) цього достатньо, щоб «немає ОС» було прямим наслідком архітектури, а не голослівним твердженням.
+- **Прохід:** m2-10-rp2040-atmega
 
 ---
 
-<!-- fc id:T-01-055 sha:d7ff5a9d src:manual/01-platforma.md:93 klas:C -->
+<!-- fc id:T-01-055 sha:d7ff5a9d src:manual/01-platforma.md:93 klas:F -->
 ### T-01-055 · komirka · рядок 93
 
 **Книга каже, дослівно:**
@@ -801,15 +791,11 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-056 sha:cbef6e16 src:manual/01-platforma.md:93 klas:B -->
+<!-- fc id:T-01-056 sha:cbef6e16 src:manual/01-platforma.md:93 klas:F -->
 ### T-01-056 · komirka · рядок 93
 
 **Книга каже, дослівно:**
@@ -818,21 +804,11 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-057 sha:4c88e4a1 src:manual/01-platforma.md:93 klas:C -->
+<!-- fc id:T-01-057 sha:4c88e4a1 src:manual/01-platforma.md:93 klas:A -->
 ### T-01-057 · komirka · рядок 93
 
 **Книга каже, дослівно:**
@@ -841,11 +817,19 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.3 «Software»
+- **Дослівно з джерела:**
+  > 2.3    Software
+  >       • ARMv8 Instruction Set
+  >       • Mature Linux software stack
+  >       • Actively developed and maintained
+  >           – Recent Linux kernel support
+  >           – Many drivers upstreamed
+  >           – Stable and well supported userland
+- **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Датащит прямо називає ОС — Linux, і саме «зрілий» стек, а не RTOS чи bare-metal. Найпряміший запис у всій цій групі.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -862,7 +846,7 @@
 
 ---
 
-<!-- fc id:T-01-059 sha:3c8a5c9e src:manual/01-platforma.md:94 klas:C -->
+<!-- fc id:T-01-059 sha:3c8a5c9e src:manual/01-platforma.md:94 klas:B -->
 ### T-01-059 · komirka · рядок 94
 
 **Книга каже, дослівно:**
@@ -871,15 +855,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up Times for the Full Swing Crystal Oscillator Clock Selection»
+- **Дослівно з джерела:**
+  > Table 9-6.        Start-up Times for the Full Swing Crystal Oscillator Clock Selection
+  >                                    Start-up Time from          Additional Delay
+  >  Oscillator Source /                Power-down and               from Reset
+  >  Power Conditions                     Power-save                 (VCC = 5.0V)        CKSEL0         SUT1...0
+  >  Ceramic resonator, fast
+  >                                         258 CK                 14CK + 4.1ms(1)           0            00
+  >  rising power
+  >  Ceramic resonator, slowly
+  >                                         258 CK                 14CK + 65ms(1)            0            01
+  >  rising power
+- **Спосіб і дата:** PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Найгірший випадок у таблиці — 65 мс (повільно наростаюче живлення, керамічний резонатор); з боку живлення поза скиданням (з Power-down/Power-save) — лише 258 тактів годинника, тобто долі мікросекунди на 16 МГц. В обох випадках це на три-чотири порядки швидше за «десятки секунд» Raspberry Pi з таблиці того ж розділу, тому «миттєво» — розумний висновок з таблиці, хоч дослівно слова «миттєво» в datasheet немає.
+- **Прохід:** m2-10-rp2040-atmega
 
 ---
 
-<!-- fc id:T-01-060 sha:152a62b0 src:manual/01-platforma.md:94 klas:C -->
+<!-- fc id:T-01-060 sha:152a62b0 src:manual/01-platforma.md:94 klas:F -->
 ### T-01-060 · komirka · рядок 94
 
 **Книга каже, дослівно:**
@@ -888,15 +883,11 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-061 sha:763ce585 src:manual/01-platforma.md:94 klas:B -->
+<!-- fc id:T-01-061 sha:763ce585 src:manual/01-platforma.md:94 klas:F -->
 ### T-01-061 · komirka · рядок 94
 
 **Книга каже, дослівно:**
@@ -905,21 +896,11 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-062 sha:4b7ada41 src:manual/01-platforma.md:94 klas:C -->
+<!-- fc id:T-01-062 sha:4b7ada41 src:manual/01-platforma.md:94 klas:E -->
 ### T-01-062 · komirka · рядок 94
 
 **Книга каже, дослівно:**
@@ -928,11 +909,13 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено пошуком слова «boot» в обох витягнутих текстах: збігів немає.
+- **Нотатка:** Ні datasheet Pi 4, ні product brief Pi 5 жодного разу не згадують час завантаження — і це очікувано: старт до робочого стану залежить від дистрибутива Raspberry Pi OS, швидкості SD-карти й того, які служби він піднімає, а не від самої плати. Це не «недоступне джерело» (клас C) — канонічного документа з такою цифрою від Raspberry Pi Ltd просто не існує, це спостережуваний факт про клас пристроїв. Тому клас E, як і «Ціна плати» для AVR у попередньому кроці.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -949,7 +932,7 @@
 
 ---
 
-<!-- fc id:T-01-064 sha:3adfd1fa src:manual/01-platforma.md:95 klas:C -->
+<!-- fc id:T-01-064 sha:3adfd1fa src:manual/01-platforma.md:95 klas:A -->
 ### T-01-064 · komirka · рядок 95
 
 **Книга каже, дослівно:**
@@ -958,15 +941,23 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 29-8 «ATmega328P DC characteristics», рядок «Power-down mode»
+- **Дослівно з джерела:**
+  > Table 29-8.      ATmega328P DC characteristics - TA = -40C to 85C, VCC = 1.8V to 5.5V (unless otherwise noted)
+  >  Symbol       Parameter                              Condition                                      Min.       Typ.(2)      Max.       Units
+  >                                                      WDT enabled, VCC = 3V                                      4.2             8
+  >                                        (3)
+  >               Power-down mode
+  >                                                      WDT disabled, VCC = 3V                                     0.1             2
+  > Notes:   ...  µA
+- **Спосіб і дата:** PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Одиниці виміру для цього рядка таблиці — µA (позначено в колонці «Units» одразу під рядками Power-save/Power-down режимів): від 0.1 мкА (WDT вимкнено) до 8 мкА (WDT увімкнено, максимум). Це буквально підтверджує саме слово «мкА» з таблиці розділу 01.
+- **Прохід:** m2-10-rp2040-atmega
 
 ---
 
-<!-- fc id:T-01-065 sha:98fae680 src:manual/01-platforma.md:95 klas:C -->
+<!-- fc id:T-01-065 sha:98fae680 src:manual/01-platforma.md:95 klas:F -->
 ### T-01-065 · komirka · рядок 95
 
 **Книга каже, дослівно:**
@@ -975,15 +966,11 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-066 sha:033f0589 src:manual/01-platforma.md:95 klas:B -->
+<!-- fc id:T-01-066 sha:033f0589 src:manual/01-platforma.md:95 klas:F -->
 ### T-01-066 · komirka · рядок 95
 
 **Книга каже, дослівно:**
@@ -992,21 +979,11 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-067 sha:3d704f3b src:manual/01-platforma.md:95 klas:C -->
+<!-- fc id:T-01-067 sha:3d704f3b src:manual/01-platforma.md:95 klas:B -->
 ### T-01-067 · komirka · рядок 95
 
 **Книга каже, дослівно:**
@@ -1015,11 +992,15 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»; Raspberry Pi 5 Product Brief, розділ «Specification»
+- **Дослівно з джерела:**
+  > 4.1     Power Requirements
+  > The Pi4B requires a good quality USB-C power supply capable of delivering 5V at 3A. If attached
+  > downstream USB devices consume less than 500mA, a 5V, 2.5A supply may be used.
+- **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено пошуком слів «sleep», «suspend», «standby», «hibernate», «shutdown», «low-power» в обох витягнутих текстах: збігів немає в жодному з двох документів.
+- **Нотатка:** На відміну від AVR і RP2040, чиї datasheet присвячують окремі розділи й таблиці режимам сну з мікроамперними цифрами, обидва документи Raspberry Pi говорять про живлення тільки в термінах вимог до блока живлення (розділ 4.1 у Pi 4) і не мають жодного розділу про режим сну чи низькоспоживчий стан. Відсутність у документах, які інакше детально покривають живлення, — не пряма цитата, тому клас B, а не A, той самий патерн, що й «Радіо → ні» для AVR у попередньому кроці.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -1036,7 +1017,7 @@
 
 ---
 
-<!-- fc id:T-01-069 sha:ef545e2e src:manual/01-platforma.md:96 klas:C -->
+<!-- fc id:T-01-069 sha:ef545e2e src:manual/01-platforma.md:96 klas:B -->
 ### T-01-069 · komirka · рядок 96
 
 **Книга каже, дослівно:**
@@ -1045,15 +1026,19 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt Response Time»
+- **Дослівно з джерела:**
+  > 7.7.1   Interrupt Response Time
+  >         The interrupt execution response for all the enabled AVR interrupts is four clock cycles minimum. After four
+  >         clock cycles the program vector address for the actual interrupt handling routine is executed.
+- **Спосіб і дата:** PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Фіксована затримка в чотири такти без операційної системи й без змагання за шину (одне ядро, немає радіостека, який міг би перехопити керування) — це те, що зазвичай називають «добре» для реального часу. Клас B, бо datasheet не оцінює себе словом «добре»: оцінка порівняльна (гірше за «дуже добре» STM32 з NVIC-пріоритетами, які тут не звірялися — це поза межами цього кроку) і лишається редакторським рішенням автора книги, а не прямим фактом із джерела.
+- **Прохід:** m2-10-rp2040-atmega
 
 ---
 
-<!-- fc id:T-01-070 sha:353d9bb6 src:manual/01-platforma.md:96 klas:C -->
+<!-- fc id:T-01-070 sha:353d9bb6 src:manual/01-platforma.md:96 klas:F -->
 ### T-01-070 · komirka · рядок 96
 
 **Книга каже, дослівно:**
@@ -1062,15 +1047,11 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-071 sha:902211e6 src:manual/01-platforma.md:96 klas:B -->
+<!-- fc id:T-01-071 sha:902211e6 src:manual/01-platforma.md:96 klas:F -->
 ### T-01-071 · komirka · рядок 96
 
 **Книга каже, дослівно:**
@@ -1079,21 +1060,11 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-072 sha:3f88d5a2 src:manual/01-platforma.md:96 klas:C -->
+<!-- fc id:T-01-072 sha:3f88d5a2 src:manual/01-platforma.md:96 klas:E -->
 ### T-01-072 · komirka · рядок 96
 
 **Книга каже, дослівно:**
@@ -1102,11 +1073,13 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено пошуком «real-time», «realtime», «deterministic», «RTOS», «scheduler»: збігів немає (крім «Real-time clock (RTC)» у Pi 5 — див. нотатку).
+- **Нотатка:** Єдина згадка «real-time» в обох документах — «Real-time clock (RTC), powered from external battery» у специфікації Pi 5. Це годинник реального часу (мікросхема, що рахує дату й час, а не процесорний час), а не властивість детермінованості виконання — не плутати одне з одним, це пастка термінології, а не доказ. Жодних даних про латентність переривань, планувальник чи детермінізм ні один із документів не наводить: Raspberry Pi Ltd просто не публікує такого для одноплатного комп'ютера із загальним Linux, на відміну від Microchip і Raspberry Pi для RP2040, які прямо документують час реакції на переривання. Оцінка «погано» — порівняльне редакційне судження автора книги про клас пристрою (загальна ОС проти голого заліза), не цифра з джерела. Клас E.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -1123,7 +1096,7 @@
 
 ---
 
-<!-- fc id:T-01-074 sha:2a48b436 src:manual/01-platforma.md:97 klas:C -->
+<!-- fc id:T-01-074 sha:2a48b436 src:manual/01-platforma.md:97 klas:E -->
 ### T-01-074 · komirka · рядок 97
 
 **Книга каже, дослівно:**
@@ -1132,15 +1105,17 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26 — перевірено, що в документі немає розділу про ціну.
+- **Нотатка:** Datasheet кристала описує сам кристал, а не ринкову ціну готової плати Arduino Uno чи її клонів — про ціни там немає жодного слова, і не повинно бути: це не той рівень документа (розділ 01 сам розрізняє кристал/модуль/плату, і ціна належить рівню плати). Тому це не недосяжне джерело (клас C), а твердження поза межами того, що datasheet у принципі покриває, — редакційна економічна оцінка автора книги. Клас E.
+- **Прохід:** m2-10-rp2040-atmega
 
 ---
 
-<!-- fc id:T-01-075 sha:6f6e3a4d src:manual/01-platforma.md:97 klas:C -->
+<!-- fc id:T-01-075 sha:6f6e3a4d src:manual/01-platforma.md:97 klas:F -->
 ### T-01-075 · komirka · рядок 97
 
 **Книга каже, дослівно:**
@@ -1149,15 +1124,11 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-076 sha:00065c12 src:manual/01-platforma.md:97 klas:B -->
+<!-- fc id:T-01-076 sha:00065c12 src:manual/01-platforma.md:97 klas:F -->
 ### T-01-076 · komirka · рядок 97
 
 **Книга каже, дослівно:**
@@ -1166,21 +1137,11 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-077 sha:7959a945 src:manual/01-platforma.md:97 klas:C -->
+<!-- fc id:T-01-077 sha:7959a945 src:manual/01-platforma.md:97 klas:A -->
 ### T-01-077 · komirka · рядок 97
 
 **Книга каже, дослівно:**
@@ -1189,11 +1150,18 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Raspberry Pi Ltd, Raspberry Pi 5 Product Brief (Published April 2026), розділ «Specification» → «List price»
+- **Дослівно з джерела:**
+  > List price:
+  >             1GB  $45
+  >             2GB  $65
+  >             4GB  $110
+  >             8GB  $175
+  >             16GB $305
+- **Спосіб і дата:** PDF з кешу `rpi5-datasheet.pdf`, завантажено `vzyaty.sh` з datasheets.raspberrypi.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** На відміну від кристалів (RP2040, ATmega328P), де ціни в datasheet немає в принципі, офіційний product brief готової плати Pi 5 таки публікує прайс-лист — і це рідкісний випадок класу A саме для «ціни». $45–305 за саму плату — це на порядок вище за Arduino Uno (~$25) чи Pi Pico на RP2040 (~$4–5) з тієї ж таблиці, що й підтверджує «висока» відносно решти рядка. Модель Pi 4 в її власному datasheet (Release 1.1) ціни не наводить — прайс-лист є тільки в новішому форматі документа Pi 5, тому саме він і використаний як джерело.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -1223,7 +1191,7 @@
 
 ---
 
-<!-- fc id:T-01-080 sha:8af66f8c src:manual/01-platforma.md:106 klas:C -->
+<!-- fc id:T-01-080 sha:8af66f8c src:manual/01-platforma.md:106 klas:F -->
 ### T-01-080 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -1232,11 +1200,7 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
@@ -1253,7 +1217,7 @@
 
 ---
 
-<!-- fc id:T-01-082 sha:3e250117 src:manual/01-platforma.md:106 klas:C -->
+<!-- fc id:T-01-082 sha:3e250117 src:manual/01-platforma.md:106 klas:F -->
 ### T-01-082 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -1262,15 +1226,11 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-01-083 sha:017c1aef src:manual/01-platforma.md:112 klas:B -->
+<!-- fc id:T-01-083 sha:017c1aef src:manual/01-platforma.md:112 klas:F -->
 ### T-01-083 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -1279,17 +1239,7 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-- **Дослівно з джерела:**
-  > #define SRAM_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_BASE _u(0x20000000)
-  > #define SRAM_STRIPED_END _u(0x20040000)
-  > #define SRAM4_BASE _u(0x20040000)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** 0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ, як у порівняльній таблиці розділу 01.
-Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK задає типову системну частоту 125 МГц (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить 133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої межі 133 МГц потребує datasheet RP2040 і лишається в наряді.
-- **Прохід:** pass-04-obkhidni
+- **Клас:** F — не звірено
 
 ---
 
@@ -1306,7 +1256,7 @@
 
 ---
 
-<!-- fc id:T-01-085 sha:4b3d1dce src:manual/01-platforma.md:116 klas:C -->
+<!-- fc id:T-01-085 sha:4b3d1dce src:manual/01-platforma.md:116 klas:E -->
 ### T-01-085 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -1315,11 +1265,13 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — див. нотатку.
+- **Нотатка:** Речення відкриває підрозділ порівняння й саме по собі не несе перевірного технічного факту (жодного числа, жодної конкретної характеристики) — це редакційна теза, після якої йдуть уже конкретні порівняння (файлова система, час завантаження, споживання), розбиті на окремі одиниці. «Різні класи пристроїв» — категоріальне судження автора, а не щось, що підтверджує чи спростовує datasheet. Клас E, як «Ціна плати» для AVR у попередньому кроці.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 
@@ -1349,7 +1301,7 @@
 
 ---
 
-<!-- fc id:T-01-088 sha:3ab19ea0 src:manual/01-platforma.md:122 klas:C -->
+<!-- fc id:T-01-088 sha:3ab19ea0 src:manual/01-platforma.md:122 klas:E -->
 ### T-01-088 · proza · рядок 122
 
 **Книга каже, дослівно:**
@@ -1358,11 +1310,13 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — див. нотатку.
+- **Нотатка:** Твердження про те, яка помилка найчастіша серед читачів, — не факт про залізо чи ПЗ, який можна звірити з datasheet: жоден виробник не публікує статистику помилок вибору платформи. Це практична порада автора з досвіду читання питань і форумів, редакційна за визначенням SCHEMA.md. Клас E.
+- **Прохід:** m2-14-raspberry-pi
 
 ---
 

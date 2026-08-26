@@ -62,7 +62,7 @@
 
 ---
 
-<!-- fc id:T-46-005 sha:b834ae0e src:manual/46-dyspleyi.md:10 klas:C -->
+<!-- fc id:T-46-005 sha:b834ae0e src:manual/46-dyspleyi.md:10 klas:A -->
 ### T-46-005 · komirka · рядок 10
 
 **Книга каже, дослівно:**
@@ -71,15 +71,32 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділи 1 «General Description» і 2 «Features»
+- **Дослівно з джерела:**
+  > 1     GENERAL DESCRIPTION
+  >      SSD1306 is a single-chip CMOS OLED/PLED driver with controller for organic / polymer light emitting
+  >      diode dot-matrix graphic display system. It consists of 128 segments and 64commons. This IC is
+  >      designed for Common Cathode type OLED panel.
+  > 
+  >      The SSD1306 embeds with contrast control, display RAM and oscillator, which reduces the number of
+  >      external components and power consumption. It has 256-step brightness control. Data/Commands are
+  >      sent from general MCU through the hardware selectable 6800/8000 series compatible Parallel Interface,
+  >      I2C interface or Serial Peripheral Interface.
+  > 
+  > 2     FEATURES
+  >         •   Pin selectable MCU Interfaces:
+  >                 o 8-bit 6800/8080-series parallel interface
+  >                 o 3 /4 wire Serial Peripheral Interface
+  >                 o I2C Interface
+- **Спосіб і дата:** PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Обидва інтерфейси підтверджені дослівно й напряму з кристала — книга точна. Побічне, вартого уваги: обидва режими «пін-вибіркові» (перемикаються рівнем на пінах BS1/BS2 при монтажі), тобто це не властивість, яку можна змінити в рантаймі — читач бере модуль уже розпаяний під один режим. І інтерфейси нерівноцінні за кількістю ліній: I²C — це справді два дроти (SDA, SCL) плюс живлення, а SPI-режим (розділ 8.1.5 датащита) додає щонайменше CS#, D/C#, RES#, тобто щонайменше п'ять ліній замість двох — рядок таблиці цю різницю не показує.
+Окремо, для звірки з уже закритим у реєстрі рядком додатка E: сам датащит (розділ 8.1.5 «MCU I2C Interface») дає адресу прямим текстом — байт `0 1 1 1 1 0 SA0 R/W#`, де «Either “0111100” or “0111101”, can be selected as the slave address of SSD1306», тобто `0x3C`/`0x3D` вибираються станом піна SA0 (в I²C-режимі це D/C#), а не залежать від роздільності панелі. Це підтверджує вже наявний доказ T-E-030 ще твердіше, ніж коментар у джерелі U8g2, на який той спирався, — але юніт уже клас A, тож нового запису тут не заводжу.
+- **Прохід:** m2-12-oled-ssd1306
 
 ---
 
-<!-- fc id:T-46-006 sha:30fa5a62 src:manual/46-dyspleyi.md:10 klas:C -->
+<!-- fc id:T-46-006 sha:30fa5a62 src:manual/46-dyspleyi.md:10 klas:A -->
 ### T-46-006 · komirka · рядок 10
 
 **Книга каже, дослівно:**
@@ -88,11 +105,16 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділ 8.7 «Graphic Display Data RAM (GDDRAM)»
+- **Дослівно з джерела:**
+  > 8.7    Graphic Display Data RAM (GDDRAM)
+  > The GDDRAM is a bit mapped static RAM holding the bit pattern to be displayed. The size of the RAM is
+  > 128 x 64 bits and the RAM is divided into eight pages, from PAGE0 to PAGE7, which are used for
+  > monochrome 128x64 dot matrix display, as shown in Figure 8-13.
+- **Спосіб і дата:** PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** «Монохромний» підтверджено дослівно словом «monochrome» в описі самого кадрового буфера, а не лише випливає з назви OLED-панелі. Побічне: розмір GDDRAM — рівно 128×64 біт, один біт на піксель, що й відповідає роздільності 128×64, яку книга в розділі 46 і додатку E не називає числом (хоча вона корисніша за розмір у дюймах — саме вона визначає, що кадровий буфер SSD1306 займає лише 1 КБ проти 150 КБ в кольорового TFT такого ж класу, розділ 46 книги про це не згадує). У самій книзі числової роздільності немає, тож окремої одиниці для неї в реєстрі не існує.
+- **Прохід:** m2-12-oled-ssd1306
 
 ---
 
@@ -286,7 +308,7 @@
 
 ---
 
-<!-- fc id:T-46-017 sha:a31fa981 src:manual/46-dyspleyi.md:13 klas:F -->
+<!-- fc id:T-46-017 sha:a31fa981 src:manual/46-dyspleyi.md:13 klas:A -->
 ### T-46-017 · komirka · рядок 13
 
 **Книга каже, дослівно:**
@@ -295,7 +317,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color, Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface»
+- **Дослівно з джерела:**
+  > ILI9341
+  > a-Si TFT LCD Single Chip Driver
+  > 240RGBx320 Resolution and 262K color
+  > 
+  > 7.6.1. 3-line Serial Interface
+  > 7.6.2. 4-line Serial Interface
+- **Спосіб і дата:** PDF ILI Technology, кеш `ili9341.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Послідовний інтерфейс у контролері справді є, у двох різновидах — трипровідний і чотирипровідний. Модулі, які трапляються читачеві, майже завжди чотирипровідні (з окремою лінією `D/C`), і саме їх книга має на увазі.
+Роздільність 240×320 підтверджено з титулу. У книзі її немає — а вона корисніша за діагональ, бо саме вона визначає обсяг кадрового буфера: 240×320×2 байти це 150 КБ, що більше за вільну DRAM classic. Тому бібліотеки малюють смугами, і читач, який спробує тримати кадр цілком, упреться в пам'ять.
+- **Прохід:** m2-08-dyspleyi-rozshyryuvachi
 
 ---
 

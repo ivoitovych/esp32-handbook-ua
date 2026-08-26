@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/43-lora.md`
 
-Одиниць твердження: **91**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **100**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -283,12 +283,12 @@
 
 ---
 
-<!-- fc id:T-43-022 sha:b0060456 src:manual/43-lora.md:37 klas:C -->
-### T-43-022 · proza · рядок 37
+<!-- fc id:T-43-022 sha:ce4cb811 src:manual/43-lora.md:35 klas:C -->
+### T-43-022 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
-> **SX1262 / RFM69HCW** — новіші, ефективніші, менше споживають.
+> `RFM95` — це модуль на чипі `SX1276`, тому в бібліотеках вони взаємозамінні.
 
 **Доказ**
 
@@ -300,8 +300,40 @@
 
 ---
 
-<!-- fc id:T-43-023 sha:28e9de32 src:manual/43-lora.md:39 klas:C -->
-### T-43-023 · proza · рядок 39
+<!-- fc id:T-43-023 sha:781d2389 src:manual/43-lora.md:38 klas:C -->
+### T-43-023 · proza · рядок 38
+
+**Книга каже, дослівно:**
+
+> **SX1262** — новіше покоління Semtech: те саме LoRa, менше споживання.
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** SX1261/SX1262 Datasheet (Semtech), файл у порталі — 60852689.DS_SX1261_2 V2-2.pdf, 100 с. Сторінка виробу: https://www.semtech.com/products/wireless-rf/lora-connect/sx1262
+- **Що шукати в джерелі:** таблиця споживання (Rx та Tx) SX1262 проти таблиці споживання SX1276 з DS_SX1276-7-8-9_W_APP_V7: очікується помітно менший струм прийому в SX1262. Потрібні обидва числа з їхніми умовами вимірювання
+- **Нотатка:** Чесний `C`, а не натягнутий `A`. Порівняльні числа не отримано: semtech.com віддає datasheet лише через портал Salesforce, який вимагає натиснути «Download» у браузері; дзеркал саме на SX1261-2 не знайшлося, тоді як SX1276 знайшовся одразу.
+Твердження майже напевно правильне — SX126x і подають як ефективніше покоління, — але «майже напевно» це не клас `A`. Те, що я тримав у руках datasheet сусіднього чипа, підстави не додає.
+Це стосується й `T-COM-053` («ефективніший за SX1276») у `inserts/components-2026-08.md` — файл М1, тому там лишається як є.
+- **Прохід:** m2-03-semtech-lora
+
+---
+
+<!-- fc id:T-43-024 sha:056d48aa src:manual/43-lora.md:38 klas:E -->
+### T-43-024 · proza · рядок 38
+
+**Книга каже, дослівно:**
+
+> Готові плати останніх років ідуть переважно на ньому.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-43-025 sha:28e9de32 src:manual/43-lora.md:41 klas:C -->
+### T-43-025 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -317,8 +349,8 @@
 
 ---
 
-<!-- fc id:T-43-024 sha:5fde84fe src:manual/43-lora.md:39 klas:E -->
-### T-43-024 · proza · рядок 39
+<!-- fc id:T-43-026 sha:5fde84fe src:manual/43-lora.md:41 klas:E -->
+### T-43-026 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -330,8 +362,123 @@
 
 ---
 
-<!-- fc id:T-43-025 sha:64c83985 src:manual/43-lora.md:42 klas:F -->
-### T-43-025 · proza · рядок 42
+<!-- fc id:T-43-027 sha:76d2e8c4 src:manual/43-lora.md:45 klas:A -->
+### T-43-027 · proza · рядок 45
+
+**Книга каже, дослівно:**
+
+> **RFM69 — це не LoRa.** `RFM69HCW` і `RFM69W` схожі на `RFM95` назвою, ціною й виглядом, продаються в тих самих крамницях поруч на полиці — а модуляція в них інша: FSK, GFSK, MSK, GMSK і OOK.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product Features»; для порівняння — SX1276/77/78/79 Datasheet Rev. 4, «Key Product Features»
+- **Дослівно з джерела:**
+  > RFM69HCW — KEY PRODUCT FEATURES
+  >   FSK Bit rates up to 300 kb/s
+  >   FSK, GFSK, MSK, GMSK and OOK modulations
+  > 
+  > (слово «LoRa» у документі RFM69HCW не трапляється жодного разу)
+  > 
+  > SX1276/77/78/79 — KEY PRODUCT FEATURES
+  >   LoRa(TM) Modem
+  >   168 dB maximum link budget
+- **Спосіб і дата:** PDF HopeRF через cdn-shop.adafruit.com; PDF Semtech там само; pdftotext -layout, 2026-08-26
+- **Нотатка:** Виправлення помилки роду, а не числа. Стара редакція розділу подавала «**SX1262 / RFM69HCW**» одним рядком переліку LoRa-модулів — тобто ставила поруч чип, що вміє LoRa, і модуль, що не вміє її взагалі.
+Ціна помилки для читача висока й підступна. RFM69 коштує приблизно як RFM95, називається схоже, продається поруч. Купивши його за цим рядком, читач не зв'яжеться з жодним LoRa-вузлом — а симптом буде той самий, що в двох інших несправностей, які розділ уже описує: тиша при різних SF і тиша при несправній антені. Бібліотека теж не підкаже: RadioLib підтримує і SX127x/SX126x, і RF69, тож код збереться й запуститься.
+Заведено у `factcheck/SPROSTOVANE-m2.md` зі взірцем.
+- **Прохід:** m2-03-semtech-lora
+
+---
+
+<!-- fc id:T-43-028 sha:abef9779 src:manual/43-lora.md:45 klas:F -->
+### T-43-028 · proza · рядок 45
+
+**Книга каже, дослівно:**
+
+> Слова «LoRa» в документації RFM69 немає жодного разу.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-43-029 sha:bb2d7c5c src:manual/43-lora.md:50 klas:C -->
+### T-43-029 · proza · рядок 50
+
+**Книга каже, дослівно:**
+
+> З `RFM95` чи `SX1262` він не зв'яжеться ніколи.
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** https://www.semtech.com/ (SX1276/SX1262 Datasheet)
+- **Що шукати в джерелі:** діапазон Spreading Factor (7…12) і його вплив на час передачі й чутливість; допустимі значення Bandwidth і Coding Rate; вимога узгодженого навантаження на виході передавача.
+- **Нотатка:** Твердження «ніколи не вмикати передавач без антени» в розділі 43 подано як категоричне, і воно таким і лишається — але підстава для нього має бути в datasheet, а не в фольклорі.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-43-030 sha:e8f098e4 src:manual/43-lora.md:50 klas:E -->
+### T-43-030 · proza · рядок 50
+
+**Книга каже, дослівно:**
+
+> Симптом при цьому буде рівно той самий, що при різних SF або несправній антені, — тиша.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-43-031 sha:cc2726cb src:manual/43-lora.md:50 klas:E -->
+### T-43-031 · proza · рядок 50
+
+**Книга каже, дослівно:**
+
+> І бібліотека не підкаже: RadioLib підтримує обидва сімейства, тож код збереться й запуститься.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-43-032 sha:4cf74e8d src:manual/43-lora.md:55 klas:C -->
+### T-43-032 · proza · рядок 55
+
+**Книга каже, дослівно:**
+
+> Ознака для крамниці: у LoRa-модулів HopeRF номер починається з `RFM9` (`RFM95`, `RFM96`, `RFM98`).
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** https://www.semtech.com/ (SX1276/SX1262 Datasheet)
+- **Що шукати в джерелі:** діапазон Spreading Factor (7…12) і його вплив на час передачі й чутливість; допустимі значення Bandwidth і Coding Rate; вимога узгодженого навантаження на виході передавача.
+- **Нотатка:** Твердження «ніколи не вмикати передавач без антени» в розділі 43 подано як категоричне, і воно таким і лишається — але підстава для нього має бути в datasheet, а не в фольклорі.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-43-033 sha:228134c6 src:manual/43-lora.md:55 klas:F -->
+### T-43-033 · proza · рядок 55
+
+**Книга каже, дослівно:**
+
+> `RFM69` — сусіднє сімейство для вузькосмугового FSK, і воно теж корисне, але для інших задач і без дальності LoRa.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-43-034 sha:64c83985 src:manual/43-lora.md:60 klas:F -->
+### T-43-034 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -343,8 +490,8 @@
 
 ---
 
-<!-- fc id:T-43-026 sha:54c3209c src:manual/43-lora.md:42 klas:E -->
-### T-43-026 · proza · рядок 42
+<!-- fc id:T-43-035 sha:54c3209c src:manual/43-lora.md:60 klas:E -->
+### T-43-035 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -356,8 +503,8 @@
 
 ---
 
-<!-- fc id:T-43-027 sha:cf056bbd src:manual/43-lora.md:46 klas:F -->
-### T-43-027 · proza · рядок 46
+<!-- fc id:T-43-036 sha:cf056bbd src:manual/43-lora.md:64 klas:F -->
+### T-43-036 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -369,8 +516,8 @@
 
 ---
 
-<!-- fc id:T-43-028 sha:7d748e30 src:manual/43-lora.md:52 klas:F -->
-### T-43-028 · proza · рядок 52
+<!-- fc id:T-43-037 sha:7d748e30 src:manual/43-lora.md:70 klas:F -->
+### T-43-037 · proza · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -382,8 +529,8 @@
 
 ---
 
-<!-- fc id:T-43-029 sha:8a9a7e01 src:manual/43-lora.md:55 klas:E -->
-### T-43-029 · proza · рядок 55
+<!-- fc id:T-43-038 sha:8a9a7e01 src:manual/43-lora.md:73 klas:E -->
+### T-43-038 · proza · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -395,8 +542,8 @@
 
 ---
 
-<!-- fc id:T-43-030 sha:c5cc11cc src:manual/43-lora.md:55 klas:E -->
-### T-43-030 · proza · рядок 55
+<!-- fc id:T-43-039 sha:c5cc11cc src:manual/43-lora.md:73 klas:E -->
+### T-43-039 · proza · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -408,8 +555,8 @@
 
 ---
 
-<!-- fc id:T-43-031 sha:03f378a1 src:manual/43-lora.md:58 klas:E -->
-### T-43-031 · proza · рядок 58
+<!-- fc id:T-43-040 sha:03f378a1 src:manual/43-lora.md:76 klas:E -->
+### T-43-040 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -421,8 +568,8 @@
 
 ---
 
-<!-- fc id:T-43-032 sha:4c04319c src:manual/43-lora.md:62 klas:E -->
-### T-43-032 · proza · рядок 62
+<!-- fc id:T-43-041 sha:4c04319c src:manual/43-lora.md:80 klas:E -->
+### T-43-041 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -434,8 +581,8 @@
 
 ---
 
-<!-- fc id:T-43-033 sha:e96fc5e1 src:manual/43-lora.md:62 klas:F -->
-### T-43-033 · proza · рядок 62
+<!-- fc id:T-43-042 sha:e96fc5e1 src:manual/43-lora.md:80 klas:F -->
+### T-43-042 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -447,8 +594,8 @@
 
 ---
 
-<!-- fc id:T-43-034 sha:5d70026e src:manual/43-lora.md:67 klas:E -->
-### T-43-034 · proza · рядок 67
+<!-- fc id:T-43-043 sha:5d70026e src:manual/43-lora.md:85 klas:E -->
+### T-43-043 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -460,8 +607,8 @@
 
 ---
 
-<!-- fc id:T-43-035 sha:be21140a src:manual/43-lora.md:67 klas:E -->
-### T-43-035 · proza · рядок 67
+<!-- fc id:T-43-044 sha:be21140a src:manual/43-lora.md:85 klas:E -->
+### T-43-044 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -473,8 +620,8 @@
 
 ---
 
-<!-- fc id:T-43-036 sha:7e7ea4c1 src:manual/43-lora.md:74 klas:E -->
-### T-43-036 · proza · рядок 74
+<!-- fc id:T-43-045 sha:7e7ea4c1 src:manual/43-lora.md:92 klas:E -->
+### T-43-045 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -486,8 +633,8 @@
 
 ---
 
-<!-- fc id:T-43-037 sha:45d32912 src:manual/43-lora.md:74 klas:E -->
-### T-43-037 · proza · рядок 74
+<!-- fc id:T-43-046 sha:45d32912 src:manual/43-lora.md:92 klas:E -->
+### T-43-046 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -499,8 +646,8 @@
 
 ---
 
-<!-- fc id:T-43-038 sha:27c38d70 src:manual/43-lora.md:78 klas:E -->
-### T-43-038 · proza · рядок 78
+<!-- fc id:T-43-047 sha:27c38d70 src:manual/43-lora.md:96 klas:E -->
+### T-43-047 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -512,8 +659,8 @@
 
 ---
 
-<!-- fc id:T-43-039 sha:a00a479f src:manual/43-lora.md:78 klas:F -->
-### T-43-039 · proza · рядок 78
+<!-- fc id:T-43-048 sha:a00a479f src:manual/43-lora.md:96 klas:F -->
+### T-43-048 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -525,8 +672,8 @@
 
 ---
 
-<!-- fc id:T-43-040 sha:30daa2e8 src:manual/43-lora.md:82 klas:E -->
-### T-43-040 · proza · рядок 82
+<!-- fc id:T-43-049 sha:30daa2e8 src:manual/43-lora.md:100 klas:E -->
+### T-43-049 · proza · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -538,8 +685,8 @@
 
 ---
 
-<!-- fc id:T-43-041 sha:128a415d src:manual/43-lora.md:82 klas:E -->
-### T-43-041 · proza · рядок 82
+<!-- fc id:T-43-050 sha:128a415d src:manual/43-lora.md:100 klas:E -->
+### T-43-050 · proza · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -551,8 +698,8 @@
 
 ---
 
-<!-- fc id:T-43-042 sha:4a478854 src:manual/43-lora.md:87 klas:E -->
-### T-43-042 · proza · рядок 87
+<!-- fc id:T-43-051 sha:4a478854 src:manual/43-lora.md:105 klas:E -->
+### T-43-051 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -564,8 +711,8 @@
 
 ---
 
-<!-- fc id:T-43-043 sha:bc1eb0f8 src:manual/43-lora.md:91 klas:E -->
-### T-43-043 · proza · рядок 91
+<!-- fc id:T-43-052 sha:bc1eb0f8 src:manual/43-lora.md:109 klas:E -->
+### T-43-052 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -577,8 +724,8 @@
 
 ---
 
-<!-- fc id:T-43-044 sha:66492356 src:manual/43-lora.md:91 klas:E -->
-### T-43-044 · proza · рядок 91
+<!-- fc id:T-43-053 sha:66492356 src:manual/43-lora.md:109 klas:E -->
+### T-43-053 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -590,8 +737,8 @@
 
 ---
 
-<!-- fc id:T-43-045 sha:64b37223 src:manual/43-lora.md:98 klas:E -->
-### T-43-045 · proza · рядок 98
+<!-- fc id:T-43-054 sha:64b37223 src:manual/43-lora.md:116 klas:E -->
+### T-43-054 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -603,8 +750,8 @@
 
 ---
 
-<!-- fc id:T-43-046 sha:34b7d7bc src:manual/43-lora.md:101 klas:E -->
-### T-43-046 · proza · рядок 101
+<!-- fc id:T-43-055 sha:34b7d7bc src:manual/43-lora.md:119 klas:E -->
+### T-43-055 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -616,8 +763,8 @@
 
 ---
 
-<!-- fc id:T-43-047 sha:460052f4 src:manual/43-lora.md:101 klas:E -->
-### T-43-047 · proza · рядок 101
+<!-- fc id:T-43-056 sha:460052f4 src:manual/43-lora.md:119 klas:E -->
+### T-43-056 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -629,8 +776,8 @@
 
 ---
 
-<!-- fc id:T-43-048 sha:47016a61 src:manual/43-lora.md:104 klas:F -->
-### T-43-048 · proza · рядок 104
+<!-- fc id:T-43-057 sha:47016a61 src:manual/43-lora.md:122 klas:F -->
+### T-43-057 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -642,8 +789,8 @@
 
 ---
 
-<!-- fc id:T-43-049 sha:e3e00ff0 src:manual/43-lora.md:106 klas:E -->
-### T-43-049 · proza · рядок 106
+<!-- fc id:T-43-058 sha:e3e00ff0 src:manual/43-lora.md:124 klas:E -->
+### T-43-058 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -655,8 +802,8 @@
 
 ---
 
-<!-- fc id:T-43-050 sha:8123dbce src:manual/43-lora.md:106 klas:E -->
-### T-43-050 · proza · рядок 106
+<!-- fc id:T-43-059 sha:8123dbce src:manual/43-lora.md:124 klas:E -->
+### T-43-059 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -668,8 +815,8 @@
 
 ---
 
-<!-- fc id:T-43-051 sha:d1be272e src:manual/43-lora.md:109 klas:F -->
-### T-43-051 · proza · рядок 109
+<!-- fc id:T-43-060 sha:d1be272e src:manual/43-lora.md:127 klas:F -->
+### T-43-060 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -681,8 +828,8 @@
 
 ---
 
-<!-- fc id:T-43-052 sha:c7115f7e src:manual/43-lora.md:109 klas:E -->
-### T-43-052 · proza · рядок 109
+<!-- fc id:T-43-061 sha:c7115f7e src:manual/43-lora.md:127 klas:E -->
+### T-43-061 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -694,8 +841,8 @@
 
 ---
 
-<!-- fc id:T-43-053 sha:9eefdaa3 src:manual/43-lora.md:112 klas:E -->
-### T-43-053 · proza · рядок 112
+<!-- fc id:T-43-062 sha:9eefdaa3 src:manual/43-lora.md:130 klas:E -->
+### T-43-062 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -707,8 +854,8 @@
 
 ---
 
-<!-- fc id:T-43-054 sha:7b026d05 src:manual/43-lora.md:112 klas:E -->
-### T-43-054 · proza · рядок 112
+<!-- fc id:T-43-063 sha:7b026d05 src:manual/43-lora.md:130 klas:E -->
+### T-43-063 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -720,8 +867,8 @@
 
 ---
 
-<!-- fc id:T-43-055 sha:c43a8eee src:manual/43-lora.md:116 klas:E -->
-### T-43-055 · proza · рядок 116
+<!-- fc id:T-43-064 sha:c43a8eee src:manual/43-lora.md:134 klas:E -->
+### T-43-064 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -733,8 +880,8 @@
 
 ---
 
-<!-- fc id:T-43-056 sha:324c4174 src:manual/43-lora.md:121 klas:E -->
-### T-43-056 · proza · рядок 121
+<!-- fc id:T-43-065 sha:324c4174 src:manual/43-lora.md:139 klas:E -->
+### T-43-065 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -746,8 +893,8 @@
 
 ---
 
-<!-- fc id:T-43-057 sha:230cce92 src:manual/43-lora.md:123 klas:A -->
-### T-43-057 · proza · рядок 123
+<!-- fc id:T-43-066 sha:230cce92 src:manual/43-lora.md:141 klas:A -->
+### T-43-066 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -785,8 +932,8 @@
 
 ---
 
-<!-- fc id:T-43-058 sha:7e0e3e67 src:manual/43-lora.md:123 klas:E -->
-### T-43-058 · proza · рядок 123
+<!-- fc id:T-43-067 sha:7e0e3e67 src:manual/43-lora.md:141 klas:E -->
+### T-43-067 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -798,8 +945,8 @@
 
 ---
 
-<!-- fc id:T-43-059 sha:63479ee2 src:manual/43-lora.md:127 klas:A -->
-### T-43-059 · proza · рядок 127
+<!-- fc id:T-43-068 sha:63479ee2 src:manual/43-lora.md:145 klas:A -->
+### T-43-068 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -837,8 +984,8 @@
 
 ---
 
-<!-- fc id:T-43-060 sha:4270d73b src:manual/43-lora.md:127 klas:E -->
-### T-43-060 · proza · рядок 127
+<!-- fc id:T-43-069 sha:4270d73b src:manual/43-lora.md:145 klas:E -->
+### T-43-069 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -850,8 +997,8 @@
 
 ---
 
-<!-- fc id:T-43-061 sha:5abc82aa src:manual/43-lora.md:133 klas:A -->
-### T-43-061 · proza · рядок 133
+<!-- fc id:T-43-070 sha:5abc82aa src:manual/43-lora.md:151 klas:A -->
+### T-43-070 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -880,8 +1027,8 @@
 
 ---
 
-<!-- fc id:T-43-062 sha:041620a5 src:manual/43-lora.md:135 klas:E -->
-### T-43-062 · proza · рядок 135
+<!-- fc id:T-43-071 sha:041620a5 src:manual/43-lora.md:153 klas:E -->
+### T-43-071 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -893,8 +1040,8 @@
 
 ---
 
-<!-- fc id:T-43-063 sha:20b7abc8 src:manual/43-lora.md:138 klas:E -->
-### T-43-063 · proza · рядок 138
+<!-- fc id:T-43-072 sha:20b7abc8 src:manual/43-lora.md:156 klas:E -->
+### T-43-072 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -906,8 +1053,8 @@
 
 ---
 
-<!-- fc id:T-43-064 sha:300cc0f1 src:manual/43-lora.md:138 klas:E -->
-### T-43-064 · proza · рядок 138
+<!-- fc id:T-43-073 sha:300cc0f1 src:manual/43-lora.md:156 klas:E -->
+### T-43-073 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -919,8 +1066,8 @@
 
 ---
 
-<!-- fc id:T-43-065 sha:68440a60 src:manual/43-lora.md:143 klas:E -->
-### T-43-065 · proza · рядок 143
+<!-- fc id:T-43-074 sha:68440a60 src:manual/43-lora.md:161 klas:E -->
+### T-43-074 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -932,8 +1079,8 @@
 
 ---
 
-<!-- fc id:T-43-066 sha:86aef237 src:manual/43-lora.md:148 klas:E -->
-### T-43-066 · proza · рядок 148
+<!-- fc id:T-43-075 sha:86aef237 src:manual/43-lora.md:166 klas:E -->
+### T-43-075 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -945,8 +1092,8 @@
 
 ---
 
-<!-- fc id:T-43-067 sha:6a4d56bf src:manual/43-lora.md:154 klas:F -->
-### T-43-067 · proza · рядок 154
+<!-- fc id:T-43-076 sha:6a4d56bf src:manual/43-lora.md:172 klas:F -->
+### T-43-076 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -958,8 +1105,8 @@
 
 ---
 
-<!-- fc id:T-43-068 sha:2dfcf729 src:manual/43-lora.md:157 klas:E -->
-### T-43-068 · proza · рядок 157
+<!-- fc id:T-43-077 sha:2dfcf729 src:manual/43-lora.md:175 klas:E -->
+### T-43-077 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -971,8 +1118,8 @@
 
 ---
 
-<!-- fc id:T-43-069 sha:217d698b src:manual/43-lora.md:161 klas:E -->
-### T-43-069 · proza · рядок 161
+<!-- fc id:T-43-078 sha:217d698b src:manual/43-lora.md:179 klas:E -->
+### T-43-078 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -984,8 +1131,8 @@
 
 ---
 
-<!-- fc id:T-43-070 sha:2fbc9497 src:manual/43-lora.md:161 klas:E -->
-### T-43-070 · proza · рядок 161
+<!-- fc id:T-43-079 sha:2fbc9497 src:manual/43-lora.md:179 klas:E -->
+### T-43-079 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -997,8 +1144,8 @@
 
 ---
 
-<!-- fc id:T-43-071 sha:cb4f2ef8 src:manual/43-lora.md:166 klas:A -->
-### T-43-071 · proza · рядок 166
+<!-- fc id:T-43-080 sha:cb4f2ef8 src:manual/43-lora.md:184 klas:A -->
+### T-43-080 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1025,8 +1172,8 @@
 
 ---
 
-<!-- fc id:T-43-072 sha:452b9e31 src:manual/43-lora.md:166 klas:E -->
-### T-43-072 · proza · рядок 166
+<!-- fc id:T-43-081 sha:452b9e31 src:manual/43-lora.md:184 klas:E -->
+### T-43-081 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1038,8 +1185,8 @@
 
 ---
 
-<!-- fc id:T-43-073 sha:c94649c6 src:manual/43-lora.md:169 klas:E -->
-### T-43-073 · proza · рядок 169
+<!-- fc id:T-43-082 sha:c94649c6 src:manual/43-lora.md:187 klas:E -->
+### T-43-082 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1051,8 +1198,8 @@
 
 ---
 
-<!-- fc id:T-43-074 sha:a4143a88 src:manual/43-lora.md:172 klas:E -->
-### T-43-074 · proza · рядок 172
+<!-- fc id:T-43-083 sha:a4143a88 src:manual/43-lora.md:190 klas:E -->
+### T-43-083 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1064,8 +1211,8 @@
 
 ---
 
-<!-- fc id:T-43-075 sha:bf09864a src:manual/43-lora.md:175 klas:F -->
-### T-43-075 · proza · рядок 175
+<!-- fc id:T-43-084 sha:bf09864a src:manual/43-lora.md:193 klas:F -->
+### T-43-084 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -1077,8 +1224,8 @@
 
 ---
 
-<!-- fc id:T-43-076 sha:41e89842 src:manual/43-lora.md:178 klas:E -->
-### T-43-076 · proza · рядок 178
+<!-- fc id:T-43-085 sha:41e89842 src:manual/43-lora.md:196 klas:E -->
+### T-43-085 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1090,8 +1237,8 @@
 
 ---
 
-<!-- fc id:T-43-077 sha:071a36e9 src:manual/43-lora.md:178 klas:F -->
-### T-43-077 · proza · рядок 178
+<!-- fc id:T-43-086 sha:071a36e9 src:manual/43-lora.md:196 klas:F -->
+### T-43-086 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1103,8 +1250,8 @@
 
 ---
 
-<!-- fc id:T-43-078 sha:699575b1 src:manual/43-lora.md:183 klas:F -->
-### T-43-078 · proza · рядок 183
+<!-- fc id:T-43-087 sha:699575b1 src:manual/43-lora.md:201 klas:F -->
+### T-43-087 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1116,8 +1263,8 @@
 
 ---
 
-<!-- fc id:T-43-079 sha:ca0a48aa src:manual/43-lora.md:187 klas:E -->
-### T-43-079 · tablycya · рядок 187
+<!-- fc id:T-43-088 sha:ca0a48aa src:manual/43-lora.md:205 klas:E -->
+### T-43-088 · tablycya · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1129,8 +1276,8 @@
 
 ---
 
-<!-- fc id:T-43-080 sha:a011819e src:manual/43-lora.md:189 klas:F -->
-### T-43-080 · tablycya · рядок 189
+<!-- fc id:T-43-089 sha:a011819e src:manual/43-lora.md:207 klas:F -->
+### T-43-089 · tablycya · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1142,8 +1289,8 @@
 
 ---
 
-<!-- fc id:T-43-081 sha:c641e486 src:manual/43-lora.md:190 klas:F -->
-### T-43-081 · tablycya · рядок 190
+<!-- fc id:T-43-090 sha:c641e486 src:manual/43-lora.md:208 klas:F -->
+### T-43-090 · tablycya · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1155,8 +1302,8 @@
 
 ---
 
-<!-- fc id:T-43-082 sha:5eac3037 src:manual/43-lora.md:191 klas:F -->
-### T-43-082 · tablycya · рядок 191
+<!-- fc id:T-43-091 sha:5eac3037 src:manual/43-lora.md:209 klas:F -->
+### T-43-091 · tablycya · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -1168,8 +1315,8 @@
 
 ---
 
-<!-- fc id:T-43-083 sha:80e86cbb src:manual/43-lora.md:192 klas:F -->
-### T-43-083 · tablycya · рядок 192
+<!-- fc id:T-43-092 sha:80e86cbb src:manual/43-lora.md:210 klas:F -->
+### T-43-092 · tablycya · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1181,8 +1328,8 @@
 
 ---
 
-<!-- fc id:T-43-084 sha:3b734785 src:manual/43-lora.md:193 klas:F -->
-### T-43-084 · tablycya · рядок 193
+<!-- fc id:T-43-093 sha:3b734785 src:manual/43-lora.md:211 klas:F -->
+### T-43-093 · tablycya · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -1194,8 +1341,8 @@
 
 ---
 
-<!-- fc id:T-43-085 sha:b8abf1d6 src:manual/43-lora.md:194 klas:E -->
-### T-43-085 · tablycya · рядок 194
+<!-- fc id:T-43-094 sha:b8abf1d6 src:manual/43-lora.md:212 klas:E -->
+### T-43-094 · tablycya · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1207,8 +1354,8 @@
 
 ---
 
-<!-- fc id:T-43-086 sha:63cc0139 src:manual/43-lora.md:198 klas:F -->
-### T-43-086 · proza · рядок 198
+<!-- fc id:T-43-095 sha:63cc0139 src:manual/43-lora.md:216 klas:F -->
+### T-43-095 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1220,8 +1367,8 @@
 
 ---
 
-<!-- fc id:T-43-087 sha:a57df511 src:manual/43-lora.md:201 klas:E -->
-### T-43-087 · proza · рядок 201
+<!-- fc id:T-43-096 sha:a57df511 src:manual/43-lora.md:219 klas:E -->
+### T-43-096 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1233,8 +1380,8 @@
 
 ---
 
-<!-- fc id:T-43-088 sha:70a2111e src:manual/43-lora.md:203 klas:E -->
-### T-43-088 · proza · рядок 203
+<!-- fc id:T-43-097 sha:70a2111e src:manual/43-lora.md:221 klas:E -->
+### T-43-097 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1246,8 +1393,8 @@
 
 ---
 
-<!-- fc id:T-43-089 sha:3ee07d64 src:manual/43-lora.md:206 klas:E -->
-### T-43-089 · proza · рядок 206
+<!-- fc id:T-43-098 sha:3ee07d64 src:manual/43-lora.md:224 klas:E -->
+### T-43-098 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1259,8 +1406,8 @@
 
 ---
 
-<!-- fc id:T-43-090 sha:c7c95fc5 src:manual/43-lora.md:208 klas:F -->
-### T-43-090 · proza · рядок 208
+<!-- fc id:T-43-099 sha:c7c95fc5 src:manual/43-lora.md:226 klas:F -->
+### T-43-099 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1272,8 +1419,8 @@
 
 ---
 
-<!-- fc id:T-43-091 sha:fa1fed4b src:manual/43-lora.md:211 klas:E -->
-### T-43-091 · proza · рядок 211
+<!-- fc id:T-43-100 sha:fa1fed4b src:manual/43-lora.md:229 klas:E -->
+### T-43-100 · proza · рядок 229
 
 **Книга каже, дослівно:**
 

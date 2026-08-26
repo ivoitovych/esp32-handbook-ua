@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/54-korpus.md`
 
-Одиниць твердження: **77**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **86**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -774,12 +774,12 @@
 
 ---
 
-<!-- fc id:T-54-057 sha:11b043fe src:manual/54-korpus.md:124 klas:C -->
+<!-- fc id:T-54-057 sha:6449d486 src:manual/54-korpus.md:124 klas:C -->
 ### T-54-057 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
-> Промисловий діапазон більшості модулів — приблизно від −40 до +85 °C, але це діапазон **чипа**, а не пристрою.
+> Промисловий діапазон більшості модулів — від −40 до +85 °C.
 
 **Доказ**
 
@@ -791,8 +791,176 @@
 
 ---
 
-<!-- fc id:T-54-058 sha:5c9c5c08 src:manual/54-korpus.md:129 klas:F -->
-### T-54-058 · proza · рядок 129
+<!-- fc id:T-54-058 sha:bbb5bd48 src:manual/54-korpus.md:124 klas:E -->
+### T-54-058 · proza · рядок 124
+
+**Книга каже, дослівно:**
+
+> Але це діапазон **модуля**, а не чипа й не пристрою, і плутанина коштує дорого в обидва боки.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-059 sha:520ca2fc src:manual/54-korpus.md:128 klas:A -->
+### T-54-059 · proza · рядок 128
+
+**Книга каже, дослівно:**
+
+> Чип витримує більше: −40…+125 °C.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с. 51, разом із приміткою 3
+- **Дослівно з джерела:**
+  > T (note 3)   Operating temperature   Min –40   Max 125   °C
+  > 
+  > 3. The operating temperature of ESP32-U4WDH and ESP32-D0WDRH2-V3 ranges
+  >    from –40 °C to 85 °C, due to the in-package flash or PSRAM. For other
+  >    chips that have no in-package flash or PSRAM, their operating
+  >    temperature is –40 °C ~ 125 °C.
+- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Примітка 3 називає причину, і причина — це і є суть виправлення розділу 54: стелю знижує флеш у корпусі, а не кремній. Там, де флеш у корпусі чипа (`U4WDH`, `D0WDRH2-V3`), стеля 85 °C; де його немає — 125 °C.
+- **Прохід:** m2-02-esp32-datasheet
+
+---
+
+<!-- fc id:T-54-060 sha:c22e2426 src:manual/54-korpus.md:128 klas:F -->
+### T-54-060 · proza · рядок 128
+
+**Книга каже, дослівно:**
+
+> Стелю модуля знижує не кремній ESP32, а флеш-кристал під тим самим екраном.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-061 sha:d8a8ecdb src:manual/54-korpus.md:128 klas:F -->
+### T-54-061 · proza · рядок 128
+
+**Книга каже, дослівно:**
+
+> Тому «ESP32 витримує 125» — правда про чип і неправда про те, що ви припаяєте на плату.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-062 sha:dea3564a src:manual/54-korpus.md:132 klas:A -->
+### T-54-062 · proza · рядок 132
+
+**Книга каже, дослівно:**
+
+> Угору запас теж є: у ряду WROOM поруч зі звичайними `-N4` і `-N8` стоять версії `-H4` і `-H8` на +105 °C.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf — ESP32-WROOM-32E & ESP32-WROOM-32UE Datasheet, Table 1 «Series Comparison» (с. 8) і Table 14 «Recommended Operating Conditions»
+- **Дослівно з джерела:**
+  > Table 1: ESP32-WROOM-32E Series Comparison
+  > Part Number              Flash              PSRAM            Ambient Temp. (°C)
+  > ESP32-WROOM-32E-N4       4 MB (Quad SPI)    —                –40 ~ 85
+  > ESP32-WROOM-32E-N8       8 MB (Quad SPI)    —                –40 ~ 85
+  > ESP32-WROOM-32E-N16     16 MB (Quad SPI)    —                –40 ~ 85
+  > ESP32-WROOM-32E-H4       4 MB (Quad SPI)    —                –40 ~ 105
+  > ESP32-WROOM-32E-H8       8 MB (Quad SPI)    —                –40 ~ 105
+  > 
+  > 3 Ambient temperature specifies the recommended temperature range of the
+  >   environment immediately outside the Espressif module.
+  > 
+  > Table 14: Recommended Operating Conditions
+  > T   Operating ambient temperature   –40  …  85 (85 °C version) / 105 (105 °C version)  °C
+- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Джерело виправлення розділу 54. Дає три речі, яких у книзі не було.
+Перша: 85 °C — діапазон **модуля**, а не чипа. Друга: примітка 3 означує його як температуру середовища **одразу за межами модуля**, тобто всередині корпусу виробу, а не надворі — саме та відстань, яку розділ 54 і має пояснювати. Третя: версії `-H` на 105 °C існують, і це дешевший хід, ніж перероблення корпусу.
+Стара редакція («це діапазон чипа, а не пристрою») хибна двічі: цифра належить модулю, а чип витримує більше. Заведено у `factcheck/SPROSTOVANE-m2.md`.
+- **Прохід:** m2-02-esp32-datasheet
+
+---
+
+<!-- fc id:T-54-063 sha:a1ec7429 src:manual/54-korpus.md:132 klas:E -->
+### T-54-063 · proza · рядок 132
+
+**Книга каже, дослівно:**
+
+> Якщо виріб гріється, це дешевший хід, ніж перероблення корпусу.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-064 sha:76aa39e2 src:manual/54-korpus.md:136 klas:A -->
+### T-54-064 · proza · рядок 136
+
+**Книга каже, дослівно:**
+
+> І головне, чого не видно з самої цифри: **85 °C міряються одразу за межами модуля** — так це означує його datasheet.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf — ESP32-WROOM-32E & ESP32-WROOM-32UE Datasheet, Table 1 «Series Comparison» (с. 8) і Table 14 «Recommended Operating Conditions»
+- **Дослівно з джерела:**
+  > Table 1: ESP32-WROOM-32E Series Comparison
+  > Part Number              Flash              PSRAM            Ambient Temp. (°C)
+  > ESP32-WROOM-32E-N4       4 MB (Quad SPI)    —                –40 ~ 85
+  > ESP32-WROOM-32E-N8       8 MB (Quad SPI)    —                –40 ~ 85
+  > ESP32-WROOM-32E-N16     16 MB (Quad SPI)    —                –40 ~ 85
+  > ESP32-WROOM-32E-H4       4 MB (Quad SPI)    —                –40 ~ 105
+  > ESP32-WROOM-32E-H8       8 MB (Quad SPI)    —                –40 ~ 105
+  > 
+  > 3 Ambient temperature specifies the recommended temperature range of the
+  >   environment immediately outside the Espressif module.
+  > 
+  > Table 14: Recommended Operating Conditions
+  > T   Operating ambient temperature   –40  …  85 (85 °C version) / 105 (105 °C version)  °C
+- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Джерело виправлення розділу 54. Дає три речі, яких у книзі не було.
+Перша: 85 °C — діапазон **модуля**, а не чипа. Друга: примітка 3 означує його як температуру середовища **одразу за межами модуля**, тобто всередині корпусу виробу, а не надворі — саме та відстань, яку розділ 54 і має пояснювати. Третя: версії `-H` на 105 °C існують, і це дешевший хід, ніж перероблення корпусу.
+Стара редакція («це діапазон чипа, а не пристрою») хибна двічі: цифра належить модулю, а чип витримує більше. Заведено у `factcheck/SPROSTOVANE-m2.md`.
+- **Прохід:** m2-02-esp32-datasheet
+
+---
+
+<!-- fc id:T-54-065 sha:27a316d1 src:manual/54-korpus.md:136 klas:E -->
+### T-54-065 · proza · рядок 136
+
+**Книга каже, дослівно:**
+
+> Тобто не надворі, а всередині вашого корпусу, поруч зі стабілізатором і власним нагрівом плати.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-066 sha:fcc027c9 src:manual/54-korpus.md:136 klas:E -->
+### T-54-066 · proza · рядок 136
+
+**Книга каже, дослівно:**
+
+> Діапазон модуля не є діапазоном пристрою, і різницю задає корпус, а не Espressif.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-067 sha:5c9c5c08 src:manual/54-korpus.md:144 klas:F -->
+### T-54-067 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -804,8 +972,8 @@
 
 ---
 
-<!-- fc id:T-54-059 sha:ad01f8ff src:manual/54-korpus.md:132 klas:E -->
-### T-54-059 · proza · рядок 132
+<!-- fc id:T-54-068 sha:ad01f8ff src:manual/54-korpus.md:147 klas:E -->
+### T-54-068 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -817,8 +985,8 @@
 
 ---
 
-<!-- fc id:T-54-060 sha:63206d8e src:manual/54-korpus.md:135 klas:E -->
-### T-54-060 · proza · рядок 135
+<!-- fc id:T-54-069 sha:63206d8e src:manual/54-korpus.md:150 klas:E -->
+### T-54-069 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -830,8 +998,8 @@
 
 ---
 
-<!-- fc id:T-54-061 sha:52f8657e src:manual/54-korpus.md:138 klas:E -->
-### T-54-061 · proza · рядок 138
+<!-- fc id:T-54-070 sha:52f8657e src:manual/54-korpus.md:153 klas:E -->
+### T-54-070 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -843,8 +1011,8 @@
 
 ---
 
-<!-- fc id:T-54-062 sha:c2329a6c src:manual/54-korpus.md:142 klas:E -->
-### T-54-062 · proza · рядок 142
+<!-- fc id:T-54-071 sha:c2329a6c src:manual/54-korpus.md:157 klas:E -->
+### T-54-071 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -856,8 +1024,8 @@
 
 ---
 
-<!-- fc id:T-54-063 sha:896386b0 src:manual/54-korpus.md:142 klas:F -->
-### T-54-063 · proza · рядок 142
+<!-- fc id:T-54-072 sha:896386b0 src:manual/54-korpus.md:157 klas:F -->
+### T-54-072 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -869,8 +1037,8 @@
 
 ---
 
-<!-- fc id:T-54-064 sha:8410b7ef src:manual/54-korpus.md:146 klas:E -->
-### T-54-064 · proza · рядок 146
+<!-- fc id:T-54-073 sha:8410b7ef src:manual/54-korpus.md:161 klas:E -->
+### T-54-073 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -882,8 +1050,8 @@
 
 ---
 
-<!-- fc id:T-54-065 sha:189f9506 src:manual/54-korpus.md:148 klas:E -->
-### T-54-065 · proza · рядок 148
+<!-- fc id:T-54-074 sha:189f9506 src:manual/54-korpus.md:163 klas:E -->
+### T-54-074 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -895,8 +1063,8 @@
 
 ---
 
-<!-- fc id:T-54-066 sha:3e08e6cd src:manual/54-korpus.md:155 klas:E -->
-### T-54-066 · proza · рядок 155
+<!-- fc id:T-54-075 sha:3e08e6cd src:manual/54-korpus.md:170 klas:E -->
+### T-54-075 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -908,8 +1076,8 @@
 
 ---
 
-<!-- fc id:T-54-067 sha:8a70fe73 src:manual/54-korpus.md:157 klas:E -->
-### T-54-067 · proza · рядок 157
+<!-- fc id:T-54-076 sha:8a70fe73 src:manual/54-korpus.md:172 klas:E -->
+### T-54-076 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -921,8 +1089,8 @@
 
 ---
 
-<!-- fc id:T-54-068 sha:e900fdb4 src:manual/54-korpus.md:160 klas:E -->
-### T-54-068 · proza · рядок 160
+<!-- fc id:T-54-077 sha:e900fdb4 src:manual/54-korpus.md:175 klas:E -->
+### T-54-077 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -934,8 +1102,8 @@
 
 ---
 
-<!-- fc id:T-54-069 sha:4eda0d7f src:manual/54-korpus.md:160 klas:E -->
-### T-54-069 · proza · рядок 160
+<!-- fc id:T-54-078 sha:4eda0d7f src:manual/54-korpus.md:175 klas:E -->
+### T-54-078 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -947,8 +1115,8 @@
 
 ---
 
-<!-- fc id:T-54-070 sha:3c5ec6fc src:manual/54-korpus.md:164 klas:E -->
-### T-54-070 · proza · рядок 164
+<!-- fc id:T-54-079 sha:3c5ec6fc src:manual/54-korpus.md:179 klas:E -->
+### T-54-079 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -960,8 +1128,8 @@
 
 ---
 
-<!-- fc id:T-54-071 sha:d618df70 src:manual/54-korpus.md:164 klas:E -->
-### T-54-071 · proza · рядок 164
+<!-- fc id:T-54-080 sha:d618df70 src:manual/54-korpus.md:179 klas:E -->
+### T-54-080 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -973,8 +1141,8 @@
 
 ---
 
-<!-- fc id:T-54-072 sha:0df1b9d0 src:manual/54-korpus.md:170 klas:E -->
-### T-54-072 · proza · рядок 170
+<!-- fc id:T-54-081 sha:0df1b9d0 src:manual/54-korpus.md:185 klas:E -->
+### T-54-081 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -986,8 +1154,8 @@
 
 ---
 
-<!-- fc id:T-54-073 sha:75b48215 src:manual/54-korpus.md:172 klas:E -->
-### T-54-073 · proza · рядок 172
+<!-- fc id:T-54-082 sha:75b48215 src:manual/54-korpus.md:187 klas:E -->
+### T-54-082 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -999,8 +1167,8 @@
 
 ---
 
-<!-- fc id:T-54-074 sha:b3ead5ba src:manual/54-korpus.md:174 klas:E -->
-### T-54-074 · proza · рядок 174
+<!-- fc id:T-54-083 sha:b3ead5ba src:manual/54-korpus.md:189 klas:E -->
+### T-54-083 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1012,8 +1180,8 @@
 
 ---
 
-<!-- fc id:T-54-075 sha:c17999f5 src:manual/54-korpus.md:176 klas:E -->
-### T-54-075 · proza · рядок 176
+<!-- fc id:T-54-084 sha:c17999f5 src:manual/54-korpus.md:191 klas:E -->
+### T-54-084 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -1025,8 +1193,8 @@
 
 ---
 
-<!-- fc id:T-54-076 sha:b355ea75 src:manual/54-korpus.md:179 klas:E -->
-### T-54-076 · proza · рядок 179
+<!-- fc id:T-54-085 sha:b355ea75 src:manual/54-korpus.md:194 klas:E -->
+### T-54-085 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1038,8 +1206,8 @@
 
 ---
 
-<!-- fc id:T-54-077 sha:4f4766e0 src:manual/54-korpus.md:181 klas:E -->
-### T-54-077 · proza · рядок 181
+<!-- fc id:T-54-086 sha:4f4766e0 src:manual/54-korpus.md:196 klas:E -->
+### T-54-086 · proza · рядок 196
 
 **Книга каже, дослівно:**
 

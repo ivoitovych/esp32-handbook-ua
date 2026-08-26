@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/53-akum.md`
 
-Одиниць твердження: **78**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **87**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -32,12 +32,99 @@
 
 ---
 
-<!-- fc id:T-53-003 sha:68bc85df src:manual/53-akum.md:11 klas:C -->
+<!-- fc id:T-53-003 sha:8d671166 src:manual/53-akum.md:11 klas:A -->
 ### T-53-003 · proza · рядок 11
 
 **Книга каже, дослівно:**
 
-> Напруга: 4.2 В повністю заряджений, приблизно 3.7 В номінальна, 2.5–3.0 В розряджений.
+> Напруга: 4.2 В повністю заряджений, **3.6 В номінальна**, 2.5 В — межа розряду за паспортом.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** TP4056 1A Standalone Linear Li-Ion Battery Charger with Thermal Regulation, datasheet NanJing Top Power ASIC Corp — «DESCRIPTION», «FEATURES», «ELECTRICAL CHARACTERISTICS»
+- **Дослівно з джерела:**
+  > The charge voltage is fixed at 4.2V, and the charge current can be
+  > programmed externally with a single resistor.
+  > 
+  > · Preset 4.2V Charge Voltage with 1.5% Accuracy
+  > 
+  > Regulated Output (Float) Voltage   0℃≤TA≤85℃，IBAT=40mA
+  >   MIN 4.137   TYP 4.2   MAX 4.263   V
+- **Спосіб і дата:** PDF NanJing Top Power ASIC, кеш `tp4056.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Взірець навмисно вузький — лише підрядок «Напруга: 4.2 В повністю заряджений». Решта речення книги («приблизно 3.7 В номінальна, 2.5–3.0 В розряджений») — властивість елемента 18650, а не TP4056 чи DW01; ці два datasheet цього не підтверджують і не спростовують. T-53-003 лишається під ширшим класом `C` із `pass-03-nedostupni.yaml` для решти речення.
+- **Прохід:** m2-11-akumulyator
+
+---
+
+<!-- fc id:T-53-004 sha:522b1796 src:manual/53-akum.md:11 klas:A -->
+### T-53-004 · proza · рядок 11
+
+**Книга каже, дослівно:**
+
+> Ємність ходових елементів — від 2500 до 3500 мА·год.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Специфікації елементів: Samsung SDI INR18650-25R і -30Q, Panasonic NCR18650B, LG Chem INR18650-MJ1, Murata US18650VTC6
+- **Дослівно з джерела:**
+  > Samsung INR18650-25R:   Typical Capacity 2500mAh
+  > Samsung INR18650-30Q:   Typical Capacity 3000mAh
+  > Murata US18650VTC6:     Nominal Capacity* 3120 mAh
+  > Panasonic NCR18650B:    Rated capacity Min. 3200mAh
+  > LG INR18650 MJ1:        Lithium Ion INR18650 MJ1 3500mAh
+- **Спосіб і дата:** PDF виробників із дзеркал, кеш `samsung25r.pdf`, `samsung30q.pdf`, `ncr18650b.pdf`, `lgmj1.pdf`, `vtc6.pdf`; реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Виправлення попереднього формулювання. Книга казала «типово 2000-3000 мА·год», і верхня межа була занижена: три дуже поширені елементи її перевищують — NCR18650B (3200 мін.), VTC6 (3120), MJ1 (3500).
+Нижню межу теж підняв: 2000 мА·год серед ходових елементів не трапилося в жодній із шести перевірених специфікацій. Найменший — Samsung 25R на 2500, і він узятий саме як струмовий, а не ємнісний.
+Діапазон 2500-3500 покривають п'ять специфікацій із п'яти, тож клас `A`, а не `B`.
+- **Прохід:** m2-15-element-18650
+
+---
+
+<!-- fc id:T-53-005 sha:8d16756b src:manual/53-akum.md:15 klas:E -->
+### T-53-005 · proza · рядок 15
+
+**Книга каже, дослівно:**
+
+> Два уточнення, які варто знати, бо вони розходяться з тим, що переказують у мережі.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-53-006 sha:3c2d1324 src:manual/53-akum.md:18 klas:A -->
+### T-53-006 · proza · рядок 18
+
+**Книга каже, дослівно:**
+
+> **Номінальна — 3.6 В, а не 3.7.** Так її подають усі виробники: Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Специфікації Samsung SDI INR18650-25R і -30Q, LG Chem INR18650-MJ1 і HG2, Murata US18650VTC6
+- **Дослівно з джерела:**
+  > Samsung INR18650-25R:  Nominal Voltage (V)  3.6 / 3.64
+  > Samsung INR18650-30Q:  Nominal Voltage (V)  3.60 / 3.61
+  > LG INR18650 HG2:       Nominal Voltage      3.60V
+  > LG INR18650 MJ1:       Nominal Voltage Average 3.635V
+  > Murata US18650VTC6:    Nominal Voltage      3.6 V
+- **Спосіб і дата:** PDF виробників із дзеркал, кеш `samsung25r.pdf`, `samsung30q.pdf`, `lghg2.pdf`, `lgmj1.pdf`, `vtc6.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** П'ять специфікацій із п'яти дають 3.6 В (або 3.60-3.64), жодна не дає 3.7. «3.7 В» — округлення, що прижилося в обігу; книга його повторювала.
+Похибка мала й практично нешкідлива, але вона накопичується там, де номінал множать: розрахунок запасу енергії в мА·год × В дає на 3 % більше, ніж є.
+- **Прохід:** m2-15-element-18650
+
+---
+
+<!-- fc id:T-53-007 sha:e46f3d6e src:manual/53-akum.md:18 klas:C -->
+### T-53-007 · proza · рядок 18
+
+**Книга каже, дослівно:**
+
+> «3.7 В» — округлення, яке прижилося в обігу.
 
 **Доказ**
 
@@ -49,12 +136,12 @@
 
 ---
 
-<!-- fc id:T-53-004 sha:058377c3 src:manual/53-akum.md:11 klas:F -->
-### T-53-004 · proza · рядок 11
+<!-- fc id:T-53-008 sha:9fb8f6cb src:manual/53-akum.md:18 klas:E -->
+### T-53-008 · proza · рядок 18
 
 **Книга каже, дослівно:**
 
-> Ємність — типово 2000–3000 мА·год для чесного елемента.
+> Різниця мала, але якщо ви рахуєте запас енергії за номіналом, беріть 3.6.
 
 **Доказ**
 
@@ -62,8 +149,55 @@
 
 ---
 
-<!-- fc id:T-53-005 sha:6665dd9e src:manual/53-akum.md:16 klas:E -->
-### T-53-005 · proza · рядок 16
+<!-- fc id:T-53-009 sha:27fc99b3 src:manual/53-akum.md:23 klas:A -->
+### T-53-009 · proza · рядок 23
+
+**Книга каже, дослівно:**
+
+> **Схема зупиняється раніше за елемент.** Паспортна межа розряду — 2.5 В, а в частини елементів 2.0 В.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Специфікації Samsung SDI INR18650-25R, Panasonic NCR18650B, Murata US18650VTC6
+- **Дослівно з джерела:**
+  > Murata US18650VTC6:  Discharge: 0.2 ItA (600 mA), 2.0 V cutoff at 23deg.C
+  > Samsung INR18650-25R / Panasonic NCR18650B: End voltage (cut off) 2.5V
+- **Спосіб і дата:** PDF виробників із дзеркал, кеш `samsung25r.pdf`, `ncr18650b.pdf`, `vtc6.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Стара редакція книги казала «2.5-3.0 В розряджений» і «акумулятор дає від 4.2 до 3.0 В». Друге твердження неточне: 3.0 В — це де зупиняється **перетворювач**, а не елемент. Сам елемент за паспортом іде до 2.5 В, а VTC6 і HG2 — до 2.0 В.
+Різниця має практичний бік, тому переписано з поясненням, а не просто числом: між 3.0 і 2.5 В лишається невикористаний залишок. Він невеликий за енергією, бо крива внизу крута, і платиться за нього ресурсом елемента — тож правильна порада не «вибирати до кінця», а знати, що межа схеми й межа елемента різні.
+- **Прохід:** m2-15-element-18650
+
+---
+
+<!-- fc id:T-53-010 sha:f5c064b9 src:manual/53-akum.md:23 klas:F -->
+### T-53-010 · proza · рядок 23
+
+**Книга каже, дослівно:**
+
+> Практично ж перетворювач припиняє роботу близько 3.0 В, і саме цю цифру ви побачите у своєму пристрої.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-53-011 sha:454bc737 src:manual/53-akum.md:23 klas:F -->
+### T-53-011 · proza · рядок 23
+
+**Книга каже, дослівно:**
+
+> Різниця між 3.0 і 2.5 В — невикористаний залишок; він невеликий за енергією (крива внизу дуже крута) і платиться за нього ресурсом елемента, тож вибирати його до кінця не варто.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-53-012 sha:6665dd9e src:manual/53-akum.md:31 klas:E -->
+### T-53-012 · proza · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -75,8 +209,8 @@
 
 ---
 
-<!-- fc id:T-53-006 sha:00b327a9 src:manual/53-akum.md:20 klas:E -->
-### T-53-006 · proza · рядок 20
+<!-- fc id:T-53-013 sha:00b327a9 src:manual/53-akum.md:35 klas:E -->
+### T-53-013 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -88,8 +222,8 @@
 
 ---
 
-<!-- fc id:T-53-007 sha:b33069fe src:manual/53-akum.md:22 klas:E -->
-### T-53-007 · proza · рядок 22
+<!-- fc id:T-53-014 sha:b33069fe src:manual/53-akum.md:37 klas:E -->
+### T-53-014 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -101,8 +235,8 @@
 
 ---
 
-<!-- fc id:T-53-008 sha:79b3a8f3 src:manual/53-akum.md:22 klas:E -->
-### T-53-008 · proza · рядок 22
+<!-- fc id:T-53-015 sha:79b3a8f3 src:manual/53-akum.md:37 klas:E -->
+### T-53-015 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -114,8 +248,8 @@
 
 ---
 
-<!-- fc id:T-53-009 sha:cdd8452b src:manual/53-akum.md:26 klas:F -->
-### T-53-009 · proza · рядок 26
+<!-- fc id:T-53-016 sha:cdd8452b src:manual/53-akum.md:41 klas:A -->
+### T-53-016 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -123,12 +257,57 @@
 
 **Доказ**
 
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Panasonic NCR18650B, датшит SANYO/Panasonic — розділ «Specifications», рядок «Temperature»; LG INR18650MJ1, специфікація LG Chem — розділ «Precautions», рядок «Battery must be charged at operating temperature range»
+- **Дослівно з джерела:**
+  > [NCR18650B]
+  > Temperature   Charge*: 0 to +45°C
+  >               Discharge: -20 to +60°C
+  >               Storage: -20 to +50°C
+  > * At temperatures below 10°C, charge at a 0.25C rate.
+  > 
+  > [INR18650MJ1]
+  > Battery must be charged at operating temperature range 0 ~ 45℃.
+  > Battery must be discharged at operating temperature range -20 ~ 60℃.
+- **Спосіб і дата:** PDF Panasonic/SANYO, кеш `ncr18650b.pdf` (batteryspace.com), і PDF LG Chem, кеш `lgmj1.pdf` (enerpower.de), pdftotext -layout, 2026-08-26
+- **Нотатка:** Клас `A`: нижня межа заряджання «0 °C» — дослівна цифра з двох незалежних виробників, а не округлення. NCR18650B додає нюанс, якого немає в книзі: нижче +10 °C заряджати треба зменшеним струмом (0.25C), а не просто «можна/не можна» по один бік нуля.
+**Одне джерело суперечить:** LG INR18650HG2 (кеш `lghg2.pdf`, той самий каталог batteryspace.com) у розділі «Precautions» дає інше число: `Battery must be charged at operating temperature range -5 ~ 50℃`. За специфікацією виробника цей конкретний елемент можна заряджати аж до −5 °C. Це не робить правило книги небезпечним — «0 °C» лишається консервативнішим і безпечним порогом для будь-якого з трьох елементів, — але означає, що «0 °C» не універсальна фізична межа літію, а безпечний спільний знаменник, підтверджений двома джерелами з трьох.
+- **Прохід:** m2-15-element-18650
+
+---
+
+<!-- fc id:T-53-017 sha:86b9bf87 src:manual/53-akum.md:41 klas:C -->
+### T-53-017 · proza · рядок 41
+
+**Книга каже, дослівно:**
+
+> Паспорти більшості елементів нормують заряджання від 0 до +45 °C — саме так у Panasonic NCR18650B і LG MJ1.
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
+- **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
+- **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-53-018 sha:dd6fcc93 src:manual/53-akum.md:41 klas:F -->
+### T-53-018 · proza · рядок 41
+
+**Книга каже, дослівно:**
+
+> Окремі елементи дозволяють нижче (LG HG2 — від −5 °C), але 0 °C лишається правильним правилом для схеми, яка не знає, який елемент у неї вставлять.
+
+**Доказ**
+
 - **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-53-010 sha:7e714149 src:manual/53-akum.md:29 klas:E -->
-### T-53-010 · proza · рядок 29
+<!-- fc id:T-53-019 sha:7e714149 src:manual/53-akum.md:48 klas:E -->
+### T-53-019 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -140,8 +319,8 @@
 
 ---
 
-<!-- fc id:T-53-011 sha:31904ae2 src:manual/53-akum.md:32 klas:E -->
-### T-53-011 · proza · рядок 32
+<!-- fc id:T-53-020 sha:31904ae2 src:manual/53-akum.md:51 klas:E -->
+### T-53-020 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -153,8 +332,8 @@
 
 ---
 
-<!-- fc id:T-53-012 sha:a7c25c07 src:manual/53-akum.md:35 klas:E -->
-### T-53-012 · proza · рядок 35
+<!-- fc id:T-53-021 sha:a7c25c07 src:manual/53-akum.md:54 klas:E -->
+### T-53-021 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -166,8 +345,8 @@
 
 ---
 
-<!-- fc id:T-53-013 sha:f101420b src:manual/53-akum.md:35 klas:E -->
-### T-53-013 · proza · рядок 35
+<!-- fc id:T-53-022 sha:f101420b src:manual/53-akum.md:54 klas:E -->
+### T-53-022 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -179,8 +358,8 @@
 
 ---
 
-<!-- fc id:T-53-014 sha:adda5440 src:manual/53-akum.md:42 klas:E -->
-### T-53-014 · proza · рядок 42
+<!-- fc id:T-53-023 sha:adda5440 src:manual/53-akum.md:61 klas:E -->
+### T-53-023 · proza · рядок 61
 
 **Книга каже, дослівно:**
 
@@ -192,8 +371,8 @@
 
 ---
 
-<!-- fc id:T-53-015 sha:54d55b5c src:manual/53-akum.md:42 klas:E -->
-### T-53-015 · proza · рядок 42
+<!-- fc id:T-53-024 sha:54d55b5c src:manual/53-akum.md:61 klas:E -->
+### T-53-024 · proza · рядок 61
 
 **Книга каже, дослівно:**
 
@@ -205,8 +384,8 @@
 
 ---
 
-<!-- fc id:T-53-016 sha:6497d8ce src:manual/53-akum.md:45 klas:C -->
-### T-53-016 · proza · рядок 45
+<!-- fc id:T-53-025 sha:6497d8ce src:manual/53-akum.md:64 klas:B -->
+### T-53-025 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -214,16 +393,28 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
-- **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
-- **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** DW01A — One Cell Lithium-ion/Polymer Battery Protection IC, datasheet Fortune Semiconductor Corp — «Pin Configuration», «Typical Application Circuit», «Description of Operation»
+- **Дослівно з джерела:**
+  > Pin No.  Symbol   Description
+  >   1        OD     MOSFET gate connection pin for discharge control
+  >   3        OC     MOSFET gate connection pin for charge control
+  > 
+  > 8. Typical Application Circuit
+  >   ... R1, C1, DW01A, R2, M1, M2 ...  (M1 і M2 — два MOSFET,
+  >   під'єднані між CS/OD/OC мікросхеми й BATT-)
+  > 
+  > 11. Description of Operation — Normal Condition
+  >   If VODP<VCC<VOCP and VCH<VCS<VOI1, M1 and M2 are both turned on.
+  >   The charging and discharging processes can be operated normally.
+- **Спосіб і дата:** PDF Fortune Semiconductor (офіційний сайт ic-fortune.com), кеш `dw01.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Клас `B`, не `A`: datasheet DW01A ніде не пише фразою «на платі стоять два транзистори» — це малюнок типової схеми (позначки `M1`, `M2`) і опис двох виводів керування затвором (`OD` — розряд, `OC` — заряд), з яких висновок «два транзистори» випливає однозначно, але не дослівно. DW01A сам по собі — лише компаратор напруги/струму; силові ключі зовнішні, і схема виробника показує їх саме парою. Книжкове «додаткова мікросхема DW01 і два транзистори» — точний опис цієї типової схеми.
+- **Прохід:** m2-11-akumulyator
 
 ---
 
-<!-- fc id:T-53-017 sha:a84fa432 src:manual/53-akum.md:48 klas:E -->
-### T-53-017 · proza · рядок 48
+<!-- fc id:T-53-026 sha:a84fa432 src:manual/53-akum.md:67 klas:E -->
+### T-53-026 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -235,8 +426,8 @@
 
 ---
 
-<!-- fc id:T-53-018 sha:ea88a78a src:manual/53-akum.md:52 klas:E -->
-### T-53-018 · proza · рядок 52
+<!-- fc id:T-53-027 sha:ea88a78a src:manual/53-akum.md:71 klas:E -->
+### T-53-027 · proza · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -248,8 +439,8 @@
 
 ---
 
-<!-- fc id:T-53-019 sha:aeacae03 src:manual/53-akum.md:56 klas:F -->
-### T-53-019 · proza · рядок 56
+<!-- fc id:T-53-028 sha:aeacae03 src:manual/53-akum.md:75 klas:A -->
+### T-53-028 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -257,12 +448,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** TP4056 datasheet NanJing Top Power ASIC Corp — опис виводу PROG (Pin 2) і таблиця «Rprog Current Setting»
+- **Дослівно з джерела:**
+  > PROG(Pin 2): Constant Charge Current Setting and Charge Current
+  > Monitor Pin charge current is set by connecting a resistor RISET
+  > from this pin to GND. ... In all modes during charging, the voltage
+  > on ISET pin can be used to measure the charge current as follows:
+  >   IBAT = (VPROG / RPROG) × 1200   (VPROG=1V)
+  > 
+  > Rprog Current Setting
+  >   RPROG (k)   IBAT (mA)
+  >   10          130
+  >   5           250
+  >   4           300
+  >   3           400
+  >   2           580
+  >   1.66        690
+  >   1.5         780
+  >   1.33        900
+  >   1.2         1000
+- **Спосіб і дата:** PDF NanJing Top Power ASIC, кеш `tp4056.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Пряме влучання: і механізм («задається резистором»), і число («типово 1 А») підтверджені окремо — резистор `RPROG=1.2 кОм`, який стоїть на типовому модулі TP4056, у власній таблиці виробника дає рівно `IBAT=1000 мА`. Клас `A`, бо цитата дослівна й формула, і таблиця.
+- **Прохід:** m2-11-akumulyator
 
 ---
 
-<!-- fc id:T-53-020 sha:a0fb7a46 src:manual/53-akum.md:56 klas:E -->
-### T-53-020 · proza · рядок 56
+<!-- fc id:T-53-029 sha:a0fb7a46 src:manual/53-akum.md:75 klas:E -->
+### T-53-029 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -274,8 +487,8 @@
 
 ---
 
-<!-- fc id:T-53-021 sha:7a91e33d src:manual/53-akum.md:59 klas:C -->
-### T-53-021 · proza · рядок 59
+<!-- fc id:T-53-030 sha:7a91e33d src:manual/53-akum.md:78 klas:B -->
+### T-53-030 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -283,16 +496,24 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
-- **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
-- **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** TP4056 datasheet NanJing Top Power ASIC Corp — «DESCRIPTION» і опис виводу BAT (Pin 5)
+- **Дослівно з джерела:**
+  > The TP4056 automatically terminates the charge cycle when the
+  > charge current drops to 1/10th the programmed value after the final
+  > float voltage is reached.
+  > 
+  > BAT(Pin5): Battery Connection Pin. Connect the positive terminal of
+  > the battery to BAT pin. ... BAT pin provides charge current to the
+  > battery and provides regulation voltage of 4.2V.
+- **Спосіб і дата:** PDF NanJing Top Power ASIC, кеш `tp4056.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Клас `B`: datasheet не описує сценарій «навантаження паралельно акумулятору» явно, але механізм термінації випливає з нього однозначно. TP4056 завершує заряд, коли струм на виводі `BAT` падає до 1/10 запрограмованого значення. `BAT` — спільний вузол з акумулятором і навантаженням: якщо навантаження весь час забирає частину струму, повний струм через `BAT` не опускається до порогу навіть після заповнення елемента, і чип не бачить завершення заряду. Це прямий наслідок описаного механізму термінації, а не цитата про сам сценарій.
+- **Прохід:** m2-11-akumulyator
 
 ---
 
-<!-- fc id:T-53-022 sha:d85d0771 src:manual/53-akum.md:64 klas:E -->
-### T-53-022 · proza · рядок 64
+<!-- fc id:T-53-031 sha:d85d0771 src:manual/53-akum.md:83 klas:E -->
+### T-53-031 · proza · рядок 83
 
 **Книга каже, дослівно:**
 
@@ -304,8 +525,8 @@
 
 ---
 
-<!-- fc id:T-53-023 sha:b54bf970 src:manual/53-akum.md:69 klas:E -->
-### T-53-023 · proza · рядок 69
+<!-- fc id:T-53-032 sha:b54bf970 src:manual/53-akum.md:88 klas:E -->
+### T-53-032 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -317,8 +538,8 @@
 
 ---
 
-<!-- fc id:T-53-024 sha:83ee8868 src:manual/53-akum.md:72 klas:E -->
-### T-53-024 · proza · рядок 72
+<!-- fc id:T-53-033 sha:83ee8868 src:manual/53-akum.md:91 klas:E -->
+### T-53-033 · proza · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -330,8 +551,8 @@
 
 ---
 
-<!-- fc id:T-53-025 sha:cde8c78b src:manual/53-akum.md:75 klas:E -->
-### T-53-025 · proza · рядок 75
+<!-- fc id:T-53-034 sha:cde8c78b src:manual/53-akum.md:94 klas:E -->
+### T-53-034 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -343,21 +564,25 @@
 
 ---
 
-<!-- fc id:T-53-026 sha:22ceca17 src:manual/53-akum.md:79 klas:F -->
-### T-53-026 · proza · рядок 79
+<!-- fc id:T-53-035 sha:4b4fcf4f src:manual/53-akum.md:98 klas:C -->
+### T-53-035 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
-> Акумулятор дає від 4.2 до 3.0 В; ESP32 потребує стабільних 3.3 В.
+> Акумулятор дає від 4.2 В до межі, на якій зупиниться ваш перетворювач — практично близько 3.0 В; ESP32 потребує стабільних 3.3 В.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
+- **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
+- **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
+- **Прохід:** pass-03-nedostupni
 
 ---
 
-<!-- fc id:T-53-027 sha:869d5d46 src:manual/53-akum.md:82 klas:E -->
-### T-53-027 · proza · рядок 82
+<!-- fc id:T-53-036 sha:869d5d46 src:manual/53-akum.md:101 klas:E -->
+### T-53-036 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -369,8 +594,8 @@
 
 ---
 
-<!-- fc id:T-53-028 sha:0fdb8f16 src:manual/53-akum.md:82 klas:E -->
-### T-53-028 · proza · рядок 82
+<!-- fc id:T-53-037 sha:0fdb8f16 src:manual/53-akum.md:101 klas:E -->
+### T-53-037 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -382,8 +607,8 @@
 
 ---
 
-<!-- fc id:T-53-029 sha:8387da56 src:manual/53-akum.md:82 klas:F -->
-### T-53-029 · proza · рядок 82
+<!-- fc id:T-53-038 sha:8387da56 src:manual/53-akum.md:101 klas:F -->
+### T-53-038 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -395,8 +620,8 @@
 
 ---
 
-<!-- fc id:T-53-030 sha:c52722fc src:manual/53-akum.md:87 klas:F -->
-### T-53-030 · proza · рядок 87
+<!-- fc id:T-53-039 sha:c52722fc src:manual/53-akum.md:106 klas:F -->
+### T-53-039 · proza · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -408,8 +633,8 @@
 
 ---
 
-<!-- fc id:T-53-031 sha:fd3cdd43 src:manual/53-akum.md:90 klas:F -->
-### T-53-031 · proza · рядок 90
+<!-- fc id:T-53-040 sha:fd3cdd43 src:manual/53-akum.md:109 klas:F -->
+### T-53-040 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -421,8 +646,8 @@
 
 ---
 
-<!-- fc id:T-53-032 sha:7aeb4568 src:manual/53-akum.md:90 klas:F -->
-### T-53-032 · proza · рядок 90
+<!-- fc id:T-53-041 sha:7aeb4568 src:manual/53-akum.md:109 klas:F -->
+### T-53-041 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -434,8 +659,8 @@
 
 ---
 
-<!-- fc id:T-53-033 sha:fc929c77 src:manual/53-akum.md:94 klas:E -->
-### T-53-033 · proza · рядок 94
+<!-- fc id:T-53-042 sha:fc929c77 src:manual/53-akum.md:113 klas:E -->
+### T-53-042 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -447,8 +672,8 @@
 
 ---
 
-<!-- fc id:T-53-034 sha:02af4967 src:manual/53-akum.md:94 klas:F -->
-### T-53-034 · proza · рядок 94
+<!-- fc id:T-53-043 sha:02af4967 src:manual/53-akum.md:113 klas:F -->
+### T-53-043 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -460,8 +685,8 @@
 
 ---
 
-<!-- fc id:T-53-035 sha:a1909bb0 src:manual/53-akum.md:99 klas:E -->
-### T-53-035 · proza · рядок 99
+<!-- fc id:T-53-044 sha:a1909bb0 src:manual/53-akum.md:118 klas:E -->
+### T-53-044 · proza · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -473,8 +698,8 @@
 
 ---
 
-<!-- fc id:T-53-036 sha:e7998d7b src:manual/53-akum.md:102 klas:C -->
-### T-53-036 · proza · рядок 102
+<!-- fc id:T-53-045 sha:e7998d7b src:manual/53-akum.md:121 klas:C -->
+### T-53-045 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -490,8 +715,8 @@
 
 ---
 
-<!-- fc id:T-53-037 sha:b3d80b33 src:manual/53-akum.md:102 klas:E -->
-### T-53-037 · proza · рядок 102
+<!-- fc id:T-53-046 sha:b3d80b33 src:manual/53-akum.md:121 klas:E -->
+### T-53-046 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -503,8 +728,8 @@
 
 ---
 
-<!-- fc id:T-53-038 sha:fd7b399f src:manual/53-akum.md:105 klas:E -->
-### T-53-038 · proza · рядок 105
+<!-- fc id:T-53-047 sha:fd7b399f src:manual/53-akum.md:124 klas:E -->
+### T-53-047 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -516,8 +741,8 @@
 
 ---
 
-<!-- fc id:T-53-039 sha:3ca17d86 src:manual/53-akum.md:111 klas:F -->
-### T-53-039 · proza · рядок 111
+<!-- fc id:T-53-048 sha:3ca17d86 src:manual/53-akum.md:130 klas:F -->
+### T-53-048 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -529,8 +754,8 @@
 
 ---
 
-<!-- fc id:T-53-040 sha:f39d20b1 src:manual/53-akum.md:114 klas:E -->
-### T-53-040 · proza · рядок 114
+<!-- fc id:T-53-049 sha:f39d20b1 src:manual/53-akum.md:133 klas:E -->
+### T-53-049 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -542,8 +767,8 @@
 
 ---
 
-<!-- fc id:T-53-041 sha:d9afe2c0 src:manual/53-akum.md:116 klas:E -->
-### T-53-041 · proza · рядок 116
+<!-- fc id:T-53-050 sha:d9afe2c0 src:manual/53-akum.md:135 klas:E -->
+### T-53-050 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -555,8 +780,8 @@
 
 ---
 
-<!-- fc id:T-53-042 sha:929fd4d3 src:manual/53-akum.md:119 klas:E -->
-### T-53-042 · proza · рядок 119
+<!-- fc id:T-53-051 sha:929fd4d3 src:manual/53-akum.md:138 klas:E -->
+### T-53-051 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -568,8 +793,8 @@
 
 ---
 
-<!-- fc id:T-53-043 sha:11e23280 src:manual/53-akum.md:122 klas:E -->
-### T-53-043 · proza · рядок 122
+<!-- fc id:T-53-052 sha:11e23280 src:manual/53-akum.md:141 klas:E -->
+### T-53-052 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -581,8 +806,8 @@
 
 ---
 
-<!-- fc id:T-53-044 sha:c36c9c05 src:manual/53-akum.md:126 klas:E -->
-### T-53-044 · proza · рядок 126
+<!-- fc id:T-53-053 sha:c36c9c05 src:manual/53-akum.md:145 klas:E -->
+### T-53-053 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -594,8 +819,8 @@
 
 ---
 
-<!-- fc id:T-53-045 sha:ec4e685a src:manual/53-akum.md:129 klas:F -->
-### T-53-045 · proza · рядок 129
+<!-- fc id:T-53-054 sha:ec4e685a src:manual/53-akum.md:148 klas:F -->
+### T-53-054 · proza · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -607,8 +832,8 @@
 
 ---
 
-<!-- fc id:T-53-046 sha:da38c45c src:manual/53-akum.md:129 klas:E -->
-### T-53-046 · proza · рядок 129
+<!-- fc id:T-53-055 sha:da38c45c src:manual/53-akum.md:148 klas:E -->
+### T-53-055 · proza · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -620,8 +845,8 @@
 
 ---
 
-<!-- fc id:T-53-047 sha:55b3d19f src:manual/53-akum.md:132 klas:E -->
-### T-53-047 · proza · рядок 132
+<!-- fc id:T-53-056 sha:55b3d19f src:manual/53-akum.md:151 klas:E -->
+### T-53-056 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -633,8 +858,8 @@
 
 ---
 
-<!-- fc id:T-53-048 sha:9b1aa343 src:manual/53-akum.md:132 klas:E -->
-### T-53-048 · proza · рядок 132
+<!-- fc id:T-53-057 sha:9b1aa343 src:manual/53-akum.md:151 klas:E -->
+### T-53-057 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -646,8 +871,8 @@
 
 ---
 
-<!-- fc id:T-53-049 sha:8e84f395 src:manual/53-akum.md:135 klas:E -->
-### T-53-049 · proza · рядок 135
+<!-- fc id:T-53-058 sha:8e84f395 src:manual/53-akum.md:154 klas:E -->
+### T-53-058 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -659,8 +884,8 @@
 
 ---
 
-<!-- fc id:T-53-050 sha:5c21a0ca src:manual/53-akum.md:135 klas:E -->
-### T-53-050 · proza · рядок 135
+<!-- fc id:T-53-059 sha:5c21a0ca src:manual/53-akum.md:154 klas:E -->
+### T-53-059 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -672,8 +897,8 @@
 
 ---
 
-<!-- fc id:T-53-051 sha:0a723160 src:manual/53-akum.md:140 klas:F -->
-### T-53-051 · proza · рядок 140
+<!-- fc id:T-53-060 sha:0a723160 src:manual/53-akum.md:159 klas:F -->
+### T-53-060 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -685,8 +910,8 @@
 
 ---
 
-<!-- fc id:T-53-052 sha:6e227269 src:manual/53-akum.md:143 klas:E -->
-### T-53-052 · proza · рядок 143
+<!-- fc id:T-53-061 sha:6e227269 src:manual/53-akum.md:162 klas:E -->
+### T-53-061 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -698,8 +923,8 @@
 
 ---
 
-<!-- fc id:T-53-053 sha:ecaf97b6 src:manual/53-akum.md:143 klas:E -->
-### T-53-053 · proza · рядок 143
+<!-- fc id:T-53-062 sha:ecaf97b6 src:manual/53-akum.md:162 klas:E -->
+### T-53-062 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -711,8 +936,8 @@
 
 ---
 
-<!-- fc id:T-53-054 sha:0fc290ee src:manual/53-akum.md:146 klas:E -->
-### T-53-054 · proza · рядок 146
+<!-- fc id:T-53-063 sha:0fc290ee src:manual/53-akum.md:165 klas:E -->
+### T-53-063 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -724,8 +949,8 @@
 
 ---
 
-<!-- fc id:T-53-055 sha:ce4a5ac3 src:manual/53-akum.md:146 klas:E -->
-### T-53-055 · proza · рядок 146
+<!-- fc id:T-53-064 sha:ce4a5ac3 src:manual/53-akum.md:165 klas:E -->
+### T-53-064 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -737,8 +962,8 @@
 
 ---
 
-<!-- fc id:T-53-056 sha:b0df9cc0 src:manual/53-akum.md:149 klas:F -->
-### T-53-056 · proza · рядок 149
+<!-- fc id:T-53-065 sha:b0df9cc0 src:manual/53-akum.md:168 klas:F -->
+### T-53-065 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -750,8 +975,8 @@
 
 ---
 
-<!-- fc id:T-53-057 sha:9f6cb259 src:manual/53-akum.md:154 klas:F -->
-### T-53-057 · proza · рядок 154
+<!-- fc id:T-53-066 sha:9f6cb259 src:manual/53-akum.md:173 klas:F -->
+### T-53-066 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -763,8 +988,8 @@
 
 ---
 
-<!-- fc id:T-53-058 sha:1d8fdaf1 src:manual/53-akum.md:154 klas:E -->
-### T-53-058 · proza · рядок 154
+<!-- fc id:T-53-067 sha:1d8fdaf1 src:manual/53-akum.md:173 klas:E -->
+### T-53-067 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -776,8 +1001,8 @@
 
 ---
 
-<!-- fc id:T-53-059 sha:da7090c4 src:manual/53-akum.md:160 klas:E -->
-### T-53-059 · proza · рядок 160
+<!-- fc id:T-53-068 sha:da7090c4 src:manual/53-akum.md:179 klas:E -->
+### T-53-068 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -789,8 +1014,8 @@
 
 ---
 
-<!-- fc id:T-53-060 sha:47763fcd src:manual/53-akum.md:167 klas:C -->
-### T-53-060 · proza · рядок 167
+<!-- fc id:T-53-069 sha:47763fcd src:manual/53-akum.md:186 klas:C -->
+### T-53-069 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -806,8 +1031,8 @@
 
 ---
 
-<!-- fc id:T-53-061 sha:0027b5b8 src:manual/53-akum.md:167 klas:E -->
-### T-53-061 · proza · рядок 167
+<!-- fc id:T-53-070 sha:0027b5b8 src:manual/53-akum.md:186 klas:E -->
+### T-53-070 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -819,8 +1044,8 @@
 
 ---
 
-<!-- fc id:T-53-062 sha:19717178 src:manual/53-akum.md:172 klas:C -->
-### T-53-062 · proza · рядок 172
+<!-- fc id:T-53-071 sha:19717178 src:manual/53-akum.md:191 klas:C -->
+### T-53-071 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -836,8 +1061,8 @@
 
 ---
 
-<!-- fc id:T-53-063 sha:1beb0891 src:manual/53-akum.md:172 klas:E -->
-### T-53-063 · proza · рядок 172
+<!-- fc id:T-53-072 sha:1beb0891 src:manual/53-akum.md:191 klas:E -->
+### T-53-072 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -849,8 +1074,8 @@
 
 ---
 
-<!-- fc id:T-53-064 sha:bfcd7699 src:manual/53-akum.md:172 klas:E -->
-### T-53-064 · proza · рядок 172
+<!-- fc id:T-53-073 sha:bfcd7699 src:manual/53-akum.md:191 klas:E -->
+### T-53-073 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -862,8 +1087,8 @@
 
 ---
 
-<!-- fc id:T-53-065 sha:09c15b93 src:manual/53-akum.md:179 klas:E -->
-### T-53-065 · proza · рядок 179
+<!-- fc id:T-53-074 sha:09c15b93 src:manual/53-akum.md:198 klas:E -->
+### T-53-074 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -875,8 +1100,8 @@
 
 ---
 
-<!-- fc id:T-53-066 sha:c2a53018 src:manual/53-akum.md:179 klas:C -->
-### T-53-066 · proza · рядок 179
+<!-- fc id:T-53-075 sha:c2a53018 src:manual/53-akum.md:198 klas:C -->
+### T-53-075 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -892,8 +1117,8 @@
 
 ---
 
-<!-- fc id:T-53-067 sha:efd5754e src:manual/53-akum.md:185 klas:E -->
-### T-53-067 · proza · рядок 185
+<!-- fc id:T-53-076 sha:efd5754e src:manual/53-akum.md:204 klas:E -->
+### T-53-076 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -905,8 +1130,8 @@
 
 ---
 
-<!-- fc id:T-53-068 sha:27c4ff2e src:manual/53-akum.md:188 klas:E -->
-### T-53-068 · proza · рядок 188
+<!-- fc id:T-53-077 sha:27c4ff2e src:manual/53-akum.md:207 klas:E -->
+### T-53-077 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -918,8 +1143,8 @@
 
 ---
 
-<!-- fc id:T-53-069 sha:d6ef9b93 src:manual/53-akum.md:190 klas:F -->
-### T-53-069 · proza · рядок 190
+<!-- fc id:T-53-078 sha:d6ef9b93 src:manual/53-akum.md:209 klas:F -->
+### T-53-078 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -931,8 +1156,8 @@
 
 ---
 
-<!-- fc id:T-53-070 sha:776692fb src:manual/53-akum.md:199 klas:C -->
-### T-53-070 · proza · рядок 199
+<!-- fc id:T-53-079 sha:776692fb src:manual/53-akum.md:218 klas:C -->
+### T-53-079 · proza · рядок 218
 
 **Книга каже, дослівно:**
 
@@ -948,8 +1173,8 @@
 
 ---
 
-<!-- fc id:T-53-071 sha:1905c881 src:manual/53-akum.md:202 klas:E -->
-### T-53-071 · proza · рядок 202
+<!-- fc id:T-53-080 sha:1905c881 src:manual/53-akum.md:221 klas:E -->
+### T-53-080 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -961,8 +1186,8 @@
 
 ---
 
-<!-- fc id:T-53-072 sha:4c8e0fd1 src:manual/53-akum.md:208 klas:C -->
-### T-53-072 · proza · рядок 208
+<!-- fc id:T-53-081 sha:4c8e0fd1 src:manual/53-akum.md:227 klas:C -->
+### T-53-081 · proza · рядок 227
 
 **Книга каже, дослівно:**
 
@@ -978,8 +1203,8 @@
 
 ---
 
-<!-- fc id:T-53-073 sha:8a11b5a3 src:manual/53-akum.md:210 klas:E -->
-### T-53-073 · proza · рядок 210
+<!-- fc id:T-53-082 sha:8a11b5a3 src:manual/53-akum.md:229 klas:E -->
+### T-53-082 · proza · рядок 229
 
 **Книга каже, дослівно:**
 
@@ -991,8 +1216,8 @@
 
 ---
 
-<!-- fc id:T-53-074 sha:50b17776 src:manual/53-akum.md:212 klas:E -->
-### T-53-074 · proza · рядок 212
+<!-- fc id:T-53-083 sha:50b17776 src:manual/53-akum.md:231 klas:E -->
+### T-53-083 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -1004,8 +1229,8 @@
 
 ---
 
-<!-- fc id:T-53-075 sha:93b288da src:manual/53-akum.md:215 klas:E -->
-### T-53-075 · proza · рядок 215
+<!-- fc id:T-53-084 sha:93b288da src:manual/53-akum.md:234 klas:E -->
+### T-53-084 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -1017,8 +1242,8 @@
 
 ---
 
-<!-- fc id:T-53-076 sha:f860d0f4 src:manual/53-akum.md:217 klas:E -->
-### T-53-076 · proza · рядок 217
+<!-- fc id:T-53-085 sha:f860d0f4 src:manual/53-akum.md:236 klas:E -->
+### T-53-085 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1030,8 +1255,8 @@
 
 ---
 
-<!-- fc id:T-53-077 sha:10453ec8 src:manual/53-akum.md:219 klas:E -->
-### T-53-077 · proza · рядок 219
+<!-- fc id:T-53-086 sha:10453ec8 src:manual/53-akum.md:238 klas:E -->
+### T-53-086 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1268,8 @@
 
 ---
 
-<!-- fc id:T-53-078 sha:44f49a98 src:manual/53-akum.md:221 klas:E -->
-### T-53-078 · proza · рядок 221
+<!-- fc id:T-53-087 sha:44f49a98 src:manual/53-akum.md:240 klas:E -->
+### T-53-087 · proza · рядок 240
 
 **Книга каже, дослівно:**
 

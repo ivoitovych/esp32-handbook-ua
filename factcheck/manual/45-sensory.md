@@ -368,7 +368,7 @@
 
 ---
 
-<!-- fc id:T-45-025 sha:964d1872 src:manual/45-sensory.md:59 klas:F -->
+<!-- fc id:T-45-025 sha:964d1872 src:manual/45-sensory.md:59 klas:A -->
 ### T-45-025 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -377,11 +377,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — розділи «Product features» і «Electric Parameter»
+- **Дослівно з джерела:**
+  > Ultrasonic ranging module HC-SR04 provides 2cm - 400cm non-contact
+  > measurement function, the ranging accuracy can reach to 3mm.
+  > 
+  > Electric Parameter
+  >   Working Voltage      DC 5 V
+  >   Working Current      15mA
+  >   Working Frequency    40 kHz
+  >   Max Range            4m
+  >   Min Range            2cm
+  >   Measuring Angle      15 degree
+  >   Trigger Input Signal 10uS TTL pulse
+- **Спосіб і дата:** PDF ElecFreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Діапазон збігається дослівно. Джерело дає й точність — 3 мм, — якої в книзі немає, і кут огляду 15°.
+- **Прохід:** m2-09-hc-sr04
 
 ---
 
-<!-- fc id:T-45-026 sha:9bd63589 src:manual/45-sensory.md:62 klas:F -->
+<!-- fc id:T-45-026 sha:9bd63589 src:manual/45-sensory.md:62 klas:B -->
 ### T-45-026 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -390,7 +406,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — «Electric Parameter» і «Wire connecting»
+- **Дослівно з джерела:**
+  > Wire connecting direct as following:
+  >   5V Supply
+  >   Trigger Pulse Input
+  >   Echo Pulse Output
+  >   0V Ground
+  > 
+  > Electric Parameter
+  >   Working Voltage        DC 5 V
+  >   Echo Output Signal     Input TTL lever signal and the range in proportion
+- **Спосіб і дата:** PDF ElecFreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і різницю варто назвати чесно: datasheet **не пише** «5 В на ECHO» дослівно. Він пише два факти — живлення `DC 5 V` і що `ECHO` є `TTL lever signal`. Логіка TTL від п'ятивольтового живлення дає високий рівень близько 5 В; висновок однозначний, але це висновок.
+Для книги різниці немає: дільник потрібен у будь-якому разі, бо абсолютний максимум входу ESP32 — 3.6 В (доказ `m2-06-napruga-mezhi`). Але реєстр має показувати `B`, а не вдавати цитату, якої немає.
+- **Прохід:** m2-09-hc-sr04
 
 ---
 
@@ -1055,7 +1086,7 @@
 
 ---
 
-<!-- fc id:T-45-076 sha:0f871e08 src:manual/45-sensory.md:186 klas:F -->
+<!-- fc id:T-45-076 sha:0f871e08 src:manual/45-sensory.md:186 klas:B -->
 ### T-45-076 · proza · рядок 186
 
 **Книга каже, дослівно:**
@@ -1064,7 +1095,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — «Electric Parameter» і «Wire connecting»
+- **Дослівно з джерела:**
+  > Wire connecting direct as following:
+  >   5V Supply
+  >   Trigger Pulse Input
+  >   Echo Pulse Output
+  >   0V Ground
+  > 
+  > Electric Parameter
+  >   Working Voltage        DC 5 V
+  >   Echo Output Signal     Input TTL lever signal and the range in proportion
+- **Спосіб і дата:** PDF ElecFreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і різницю варто назвати чесно: datasheet **не пише** «5 В на ECHO» дослівно. Він пише два факти — живлення `DC 5 V` і що `ECHO` є `TTL lever signal`. Логіка TTL від п'ятивольтового живлення дає високий рівень близько 5 В; висновок однозначний, але це висновок.
+Для книги різниці немає: дільник потрібен у будь-якому разі, бо абсолютний максимум входу ESP32 — 3.6 В (доказ `m2-06-napruga-mezhi`). Але реєстр має показувати `B`, а не вдавати цитату, якої немає.
+- **Прохід:** m2-09-hc-sr04
 
 ---
 
