@@ -135,6 +135,67 @@ def tekst_dzherela(p: Path) -> str | None:
         return None
 
 
+# Поле `dzherelo`, у якому стоїть не документ, а **міркування**. Знахідка
+# М2 від 19:40Z, і найдорожча з усіх: помічник на Haiku, не знайшовши
+# документа, не пише клас `C` — він **вигадує правдоподібну назву
+# джерела**. «Властивості логіки CMOS», «фундаментальне правило
+# електроніки», «типова побудова модульних плат».
+#
+# Це найгірший можливий наслідок з усіх: хибний клас `A` оголошує
+# твердження звіреним, прибирає його з кожної черги, і більше його не
+# перевіряє ніхто ніколи.
+#
+# Шар 3 таке бачив як «джерела немає в кеші» — сигнал є, тривоги немає.
+# Тепер для класів `A` і `B` це помилка. Класи `C` і `E` під правило не
+# підпадають: у них джерела або немає, або воно недосяжне за задумом.
+# Що вважається названим документом. Перший підхід був завузький і
+# позначив вигаданими чотирнадцять записів, з яких тринадцять — чесні
+# посилання М2 на PDF, у якого немає сталої адреси: «Texas Instruments,
+# PCF8574 Remote 8-Bit I/O Expander for I2C Bus (SCPS068), розділ
+# Features». Це повноцінна цитата, просто не URL.
+#
+# Різниця між нею й вигаданим джерелом не в наявності адреси, а в тому,
+# **чи названо документ**: видавця, заголовок, номер редакції. Вигадане
+# джерело описує не документ, а властивість світу — «властивості логіки
+# CMOS», «загальновідома електромеханіка реле».
+RE_ADRESA = re.compile(
+    r"https?://|\b[\w-]+\.(?:com|org|net|io|dev)/"
+    r"|\.pdf\b|\.h\b|\.c\b|\.py\b|\.rst\b|\.inc\b|\.csv\b"
+    r"|components/|tools/|docs/|Kconfig", re.I)
+# Дві поспіль великі латинські лексеми — назва видавця або заголовок
+# документа: `Texas Instruments`, `Product Brief`, `Register Map`.
+RE_NAZVA_DOKUMENTA = re.compile(r"\b[A-Z][A-Za-z0-9-]+ [A-Z][A-Za-z0-9-]+")
+# Ідентифікатор документа: `SCPS068`, `DS40002061B`, `RM-MPU-6000A-00`,
+# `Rev 1.1`, `UM10204`, `IEC 61190-1-3`.
+RE_ID_DOKUMENTA = re.compile(
+    r"\b[A-Z]{2,}[0-9][\w-]*\b|\bRev\.?\s*\d|\b(?:IEC|ISO|EN|UL)\s*\d",
+    re.I)
+
+
+def dzherelo_rozvyazne(z: dict) -> bool:
+    """Чи в полі `dzherelo` названо документ, а не властивість світу."""
+    d = str(z.get("dzherelo") or "")
+    return bool(RE_ADRESA.search(d)
+                or RE_ID_DOKUMENTA.search(d)
+                or RE_NAZVA_DOKUMENTA.search(d))
+
+
+# Сторінка-заглушка, віддана з кодом 200. Знахідка М2: `semtech.com`
+# віддає HTML рівно того самого розміру на **будь-яку** адресу в
+# `/uploads/documents/`, і `curl --fail` завершується успішно. Без цієї
+# перевірки заглушка лягає в кеш як документ, а клас `A` ставиться за
+# те, чого ніхто не бачив.
+def pidmineno_zaglushkoyu(p: Path) -> bool:
+    if p.suffix.lower() != ".pdf":
+        return False
+    try:
+        with p.open("rb") as f:
+            pochatok = f.read(1024)
+    except OSError:
+        return True
+    return not pochatok.startswith(b"%PDF")
+
+
 def plaskyy(s: str) -> str:
     """Один пробіл між словами, решта як є.
 
@@ -172,7 +233,48 @@ def uryvky(cytata: str) -> list[list[str]]:
     return [g for g in grupy if g]
 
 
-def znayty(grupa: list[str], teksty: list[str]) -> list[str]:
+VIKNO_TABLYCI = 4000
+RE_LEKSEMA = re.compile(r"[\w.°±×/+-]{2,}")
+
+
+def u_tablyci(ryadok: str, tekst: str) -> bool:
+    """Чи є рядок **читанням таблиці**, розкиданої по документу.
+
+    Узято з `factcheck/perevirka-tsytat-m2.py`, функція `znayty_ryadok`
+    (М2, знахідка 19:40Z). Проста перевірка підрядком дала їм **27
+    хибних тривог із 45**, і жодна не була провиною цитати.
+
+    Причина: `pdftotext` розкладає стовпці так, що назва параметра,
+    умова й значення опиняються на різних рядках. У datasheet DS18B20:
+
+        tERR                                    °C      3
+      Error        -55°C to +125°C              ±2
+
+    Рядка «Thermometer Error tERR -55°C to +125°C ±2 °C» у документі
+    немає й бути не може, хоч цитата точна.
+
+    Тому: всі змістовні лексеми мусять бути в документі **і лежати
+    компактно**. Це свідоме послаблення — ловить вигадану цитату
+    (лексем не буде взагалі), не ловить перестановку слів у межах
+    таблиці, де перестановка змісту не міняє.
+
+    Вживається **лише як запасний хід** і лише для PDF: для коду й RST
+    порядок слів значущий, і послаблювати його там нема причин.
+    """
+    leksemy = RE_LEKSEMA.findall(ryadok)
+    if len(leksemy) < 3:
+        return False
+    poz = []
+    for l in leksemy:
+        i = tekst.find(l)
+        if i < 0:
+            return False
+        poz.append(i)
+    return (max(poz) - min(poz)) < VIKNO_TABLYCI
+
+
+def znayty(grupa: list[str], teksty: list[str],
+           tablychni: bool = False) -> list[str]:
     """Які рядки групи не знайшлися в жодному з джерел.
 
     Два способи, і потрібні обидва, бо ми цитуємо двома способами.
@@ -191,8 +293,12 @@ def znayty(grupa: list[str], teksty: list[str]) -> list[str]:
     ciline = plaskyy(" ".join(grupa))
     if any(ciline in t for t in teksty):
         return []
-    return [r for r in grupa
-            if not any(plaskyy(r) in t for t in teksty)]
+    promakhy = [r for r in grupa
+                if not any(plaskyy(r) in t for t in teksty)]
+    if tablychni:
+        promakhy = [r for r in promakhy
+                    if not any(u_tablyci(plaskyy(r), t) for t in teksty)]
+    return promakhy
 
 
 RE_SKOROCHENNYA = re.compile(r"(?<![\w/])\.\.\./(\S+)")
@@ -257,7 +363,8 @@ def perevirka(kachaty: bool,
     слово потрапляє в `factcheck/dokazy/`, а не після.
     """
     naslidky: list[dict] = []
-    pidsumok = {"ok": 0, "ne_znaydeno": 0, "nedosyazhne": 0, "nichoho": 0}
+    pidsumok = {"ok": 0, "ne_znaydeno": 0, "nedosyazhne": 0, "nichoho": 0,
+                "vygadane": 0, "zaglushka": 0, "okom": 0, "pomylka": 0}
     kesh_tekstu: dict[str, str | None] = {}
 
     for f in (fayly if fayly is not None else sorted(DOKAZY.glob("*.yaml"))):
@@ -271,6 +378,40 @@ def perevirka(kachaty: bool,
             if not isinstance(z, dict):
                 continue
             nazva = str(z.get("nazva", "?"))
+            klas = str(z.get("klas") or "F").strip().upper()
+
+            # Клас `F` — це «не звірено», типовий стан **відсутності**
+            # доказу. Запис доказу з класом `F` не означає нічого й
+            # трапляється лише як помилка помічника (знахідка М2).
+            if klas == "F":
+                pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
+                naslidky.append(dict(
+                    fayl=f.stem, nazva=nazva, stan="pomylka",
+                    detali="доказ класу F — F означає відсутність доказу"))
+                continue
+
+            # Вигадане джерело: клас каже «звірено», а в полі джерела
+            # стоїть міркування. Див. RE_SCHOS_SCHO_MOZHE_BUTY_DOKUMENTOM.
+            if klas in ("A", "B") and not dzherelo_rozvyazne(z):
+                pidsumok["vygadane"] = pidsumok.get("vygadane", 0) + 1
+                naslidky.append(dict(
+                    fayl=f.stem, nazva=nazva, stan="vygadane",
+                    detali=f"клас {klas}, а джерело — не документ: "
+                           f"«{str(z.get('dzherelo') or '')[:60]}»"))
+                continue
+
+            # Цитата, яку супровідник звірив очима там, де витягання
+            # тексту руйнує структуру. Знахідка М2: без цього стану шар 3
+            # б'є на сполох на **правильних** цитатах, і за тиждень його
+            # перестають читати. Позначку ставить людина і лише разом із
+            # поясненням, чому машина тут безсила.
+            if z.get("perevireno-okom"):
+                pidsumok["okom"] = pidsumok.get("okom", 0) + 1
+                naslidky.append(dict(
+                    fayl=f.stem, nazva=nazva, stan="okom",
+                    detali=str(z.get("perevireno-okom"))[:90]))
+                continue
+
             frahmenty = uryvky(str(z.get("cytata") or ""))
             urly = dzherela_zapysu(z)
             if not frahmenty or not urly:
@@ -283,17 +424,35 @@ def perevirka(kachaty: bool,
 
             teksty: list[str] = []
             nedosyazhni: list[str] = []
+            zaglushky: list[str] = []
+            tablychni = False
             for u in urly:
                 if u not in kesh_tekstu:
                     cil = KESH / imya_dlya(u)
                     if not cil.exists() and kachaty:
                         zavantazhyty(u, cil)
-                    kesh_tekstu[u] = (plaskyy(tekst_dzherela(cil) or "")
-                                      if cil.exists() else None) or None
+                    if cil.exists() and pidmineno_zaglushkoyu(cil):
+                        kesh_tekstu[u] = None
+                        zaglushky.append(u)
+                    else:
+                        kesh_tekstu[u] = (plaskyy(tekst_dzherela(cil) or "")
+                                          if cil.exists() else None) or None
+                if u.lower().endswith(".pdf"):
+                    tablychni = True
                 if kesh_tekstu[u]:
                     teksty.append(kesh_tekstu[u])
+                elif u in zaglushky:
+                    pass
                 else:
                     nedosyazhni.append(u)
+
+            if zaglushky and not teksty:
+                pidsumok["zaglushka"] = pidsumok.get("zaglushka", 0) + 1
+                naslidky.append(dict(
+                    fayl=f.stem, nazva=nazva, stan="zaglushka",
+                    detali=f"{len(zaglushky)}: у кеші не PDF, а сторінка "
+                           f"з кодом 200"))
+                continue
 
             if not teksty:
                 pidsumok["nedosyazhne"] += 1
@@ -305,7 +464,7 @@ def perevirka(kachaty: bool,
             vsjogo_ryadkiv = sum(len(g) for g in frahmenty)
             promakhy: list[str] = []
             for grupa in frahmenty:
-                promakhy += znayty(grupa, teksty)
+                promakhy += znayty(grupa, teksty, tablychni=tablychni)
             if promakhy:
                 pidsumok["ne_znaydeno"] += 1
                 naslidky.append(dict(
@@ -334,6 +493,9 @@ ZAHOLOVOK_ZVITU = """# Третій шар: цитати проти джерел
 | `не знайдено` | уривка в джерелі немає — переказ, помилка адреси або джерело змінилося |
 | `джерело не в кеші` | нема з чим звіряти: `--kachaty`, або егрес не пускає |
 | `нема чого звіряти` | доказ без URL або без дослівного уривка (клас `C`, `E`, `K`) |
+| `джерело вигадане` | клас `A` чи `B`, а в полі джерела — міркування, не документ |
+| `у кеші заглушка` | сервер віддав HTML із кодом 200 замість PDF |
+| `звірено очима` | витягання тексту руйнує структуру; звірив супровідник, причина названа |
 
 """
 
@@ -341,7 +503,11 @@ ZAHOLOVOK_ZVITU = """# Третій шар: цитати проти джерел
 def zvit(naslidky: list[dict], pidsumok: dict[str, int]) -> None:
     pidpysy = {"ok": "звірено", "ne_znaydeno": "**не знайдено**",
                "nedosyazhne": "джерело не в кеші",
-               "nichoho": "нема чого звіряти", "pomylka": "**файл не читається**"}
+               "nichoho": "нема чого звіряти",
+               "vygadane": "**джерело вигадане**",
+               "zaglushka": "**у кеші заглушка, не документ**",
+               "okom": "звірено очима",
+               "pomylka": "**хибний запис**"}
     r = [ZAHOLOVOK_ZVITU.rstrip("\n"), ""]
     r.append(f"Записів доказів: **{sum(pidsumok.values())}**. "
              f"Звірено дослівно: **{pidsumok['ok']}**. "
@@ -349,7 +515,8 @@ def zvit(naslidky: list[dict], pidsumok: dict[str, int]) -> None:
              f"Джерело не в кеші: **{pidsumok['nedosyazhne']}**. "
              f"Нема чого звіряти: **{pidsumok['nichoho']}**.\n")
     r.append(f"Станом на {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC.\n")
-    for stan in ("pomylka", "ne_znaydeno", "nedosyazhne", "ok", "nichoho"):
+    for stan in ("vygadane", "zaglushka", "pomylka", "ne_znaydeno",
+                 "nedosyazhne", "okom", "ok", "nichoho"):
         grupa = [n for n in naslidky if n["stan"] == stan]
         if not grupa:
             continue
@@ -384,11 +551,19 @@ def main() -> int:
           f"звірено {pidsumok['ok']}; "
           f"не знайдено {pidsumok['ne_znaydeno']}; "
           f"не в кеші {pidsumok['nedosyazhne']}; "
-          f"без цитати {pidsumok['nichoho']}")
+          f"без цитати {pidsumok['nichoho']}; "
+          f"звірено очима {pidsumok['okom']}")
+    if pidsumok["vygadane"] or pidsumok["zaglushka"] or pidsumok["pomylka"]:
+        print(f"   ⚠ вигаданих джерел {pidsumok['vygadane']}; "
+              f"заглушок у кеші {pidsumok['zaglushka']}; "
+              f"хибних записів {pidsumok['pomylka']}")
 
-    bidy = pidsumok["ne_znaydeno"]
+    # Вигадане джерело, заглушка й доказ класу F — це **ворота**, а не
+    # звіт. Розбіжність цитати вимагає розгляду й може бути хибною
+    # тривогою; ці три не можуть бути нічим, крім помилки.
+    bidy = pidsumok["vygadane"] + pidsumok["zaglushka"] + pidsumok["pomylka"]
     if "--suvoro" in a:
-        bidy += pidsumok["nedosyazhne"]
+        bidy += pidsumok["ne_znaydeno"] + pidsumok["nedosyazhne"]
     return 1 if bidy else 0
 
 

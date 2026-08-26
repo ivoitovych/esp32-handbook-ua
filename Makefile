@@ -63,10 +63,13 @@ zvyazok:
 	@$(PY) tools/zvyazok.py
 
 # Третій шар фактчекінгу: чи стоїть цитата за названою адресою.
-# Поки **звіт**, не ворота: 57 записів не сходяться, і кожен треба
-# розібрати окремо. Стане `check`, коли черга спорожніє.
+#
+# Ворота вибіркові й свідомо. Розбіжність цитати може бути хибною
+# тривогою (переніс рядка, таблиця в PDF), тому вона лишається звітом:
+# 51 запис у черзі. А вигадане джерело, заглушка в кеші й доказ класу
+# `F` не можуть бути нічим, крім помилки, — і на них скрипт падає.
 citaty:
-	@$(PY) tools/citaty.py --zvit || true
+	@$(PY) tools/citaty.py --zvit
 
 # Поділ незвіреного між супровідниками за досяжністю джерела.
 podil:
@@ -116,7 +119,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh budgets arytmetyka check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty budgets arytmetyka check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
