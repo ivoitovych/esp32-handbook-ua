@@ -40,6 +40,7 @@ URL не підмінили.
 | `cp2102.pdf` | `f025d9c738e4906544bbae493d5ff4a8d9746df247c92a329f4ed94799220e59` | 2172800 | 2026-08-26 | <https://www.silabs.com/documents/public/data-sheets/cp2102-9.pdf> |
 | `cp210x.c` | `8aa7d881db52ae9a7ff1b2d4e854474aae75542aec0abeded40cc69fd9cd2eb9` | 66727 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/cp210x.c> |
 | `ds18b20.pdf` | `39d191cd1fb657e43eac061f605bbd375d3c42dc40e7839c17fa0675bb0404d8` | 261896 | 2026-08-26 | — |
+| `dw01.pdf` | `0f01ee674b66a5f92abe08bf9bd337b3a47484de49e97c77542e7b0a7cbbc0b7` | 616224 | 2026-08-26 | <http://www.ic-fortune.com/upload/Download/DW01A-DS-12_EN.pdf> |
 | `esp32-datasheet.pdf` | `a7917e6b47528c9dcab06837a49d452e582751335797db879f1cf2d17cd29adf` | 989523 | 2026-08-26 | — |
 | `esp32-wroom-32e.pdf` | `4c7a345d1c1bfec34c38665639e39a7f43b79a35a12f6adcc2c7c0f83850f8b8` | 1230114 | 2026-08-26 | — |
 | `ftdi_sio_ids.h` | `eb445be64a4e96745c996d8481fb772ba0f8f2c9668f8adcf09c3be1ec9edbf7` | 62099 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/ftdi_sio_ids.h> |
@@ -53,3 +54,4 @@ URL не підмінили.
 | `rp2040.pdf` | `be56fbb75ba0ae9e26558a73c93ac3e75c2ad4e6878d3b6703de2a76d886ea8c` | 5301205 | 2026-08-26 | <https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf> |
 | `ssd1306.pdf` | `d55f875357de96d8c0e92153a389acc57e8bab4db7a0687f2e0bd3362f0036f6` | 1876686 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf> |
 | `sx1276.pdf` | `6c24c19ee54309633d4a9057bb8663d1aacdb7f456bebcc6973728a07bd7854e` | 3268248 | 2026-08-26 | — |
+| `tp4056.pdf` | `cdafa22618e7221fa93b8d432237cafb246a515606eef2672f50230d5ae205ce` | 60920 | 2026-08-26 | <https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf> |

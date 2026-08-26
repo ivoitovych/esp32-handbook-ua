@@ -1,0 +1,42 @@
+# М2, крок 6 (частина) — STM32 у порівняльній таблиці розділу 01.
+#
+# RP2040 і ATmega328P звіряються окремо. Тут лише STM32, бо джерело інше:
+# st.com не береться `curl` (відбиток TLS), але **відкривається справжнім
+# Chrome із тієї самої машини**. Тобто це не мережевий блок, а фільтр
+# проти інструмента — розрізнення описано в `factcheck/MEREZHA-m2.md`.
+
+- nazva: Нижня межа частот STM32 — 24 МГц у Value line
+  zbih: 'Частота · STM32 → 24–550 МГц'
+  klas: B
+  dzherelo: >-
+    STMicroelectronics, сторінка лінійки STM32F100 Value line —
+    https://www.st.com/en/microcontrollers-microprocessors/stm32f100-value-line.html
+    (нижня межа); сторінка STM32 High Performance MCUs —
+    https://www.st.com/en/microcontrollers-microprocessors/stm32-high-performance-mcus.html
+    (верхня)
+  cytata: |
+    STM32F100 Value line:
+    "Based on the Arm® Cortex®-M3 core running at up to 24 MHz, the STM32
+     Value line offers an excellent cost-performance-…"
+
+    STM32 High Performance MCUs:
+    "The STM32H7RS is a bootflash-based MCU powered by a Cortex®-M7 core
+     running up to 600 MHz, with 64 KB of user flash and 620 KB of
+     flexible SRAM."
+  sposib: >-
+    Chrome із цієї машини, st.com, 2026-08-26 (curl отримує тайм-аут через
+    відбиток TLS; Chrome проходить)
+  notatka: >-
+    **Нижня межа збігається дослівно:** 24 МГц — це STM32F100 Value line
+    на Cortex-M3, і ST називає її на власній сторінці лінійки.
+
+    **Верхня межа застаріла.** Книга каже 550 МГц; станом на звірку ST
+    подає STM32H7RS на Cortex-M7 із частотою **до 600 МГц**. 550 МГц —
+    це стеля ліній STM32H72x/H73x, тобто попереднє покоління.
+
+    Клас `B`, а не `A`: обидві цитати дослівні, але твердження книги —
+    про **діапазон лінійки загалом**, і воно складене з двох сторінок, а
+    не взяте з однієї. Крім того, верхня половина не збігається, тож
+    дослівним підтвердженням це не є.
+
+    Розбіжність винесено окремою знахідкою: розділ 01 за М1.
