@@ -13,13 +13,14 @@ esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
 esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
 esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
 esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
-esptool merge-bin -o all.bin --flash-mode dio 0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin
+esptool merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # 0x1000 → classic; S3/C3: 0x0
 ```
 
 ## idf.py
 
 ```
-idf.py create-project ім'я          # новий проєкт
+idf.py create-project my-project    # новий проєкт (назва латиницею)
 idf.py set-target esp32s3           # ⚠ стирає sdkconfig
 idf.py menuconfig                   # налаштування
 idf.py build                        # зібрати

@@ -33,7 +33,7 @@
 
 ```
 esptool --port /dev/ttyUSB0 flash-id
-esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-YYYYMMDD.bin
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 ```
 
 `ALL` читає рівно стільки, скільки є на чипі. Якщо `esptool` цього не

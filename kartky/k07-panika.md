@@ -20,7 +20,10 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 | `IllegalInstruction` | виконання не-коду | пошкоджений стек, переповнення |
 | `LoadStoreAlignment` | невирівняний доступ | читання 32 біт з непарної адреси |
 | `Interrupt wdt timeout` | ISR або critical section триває задовго | код у перериванні |
-| `Task watchdog got triggered` | задача не віддає керування | цикл без затримки |
+
+`Task watchdog got triggered` — **не паніка**: це окреме повідомлення, і
+система при ньому лишається живою. Воно саме називає винуватця в рядку
+`Tasks currently running`. Причина майже завжди — цикл без `vTaskDelay`.
 
 Найчастіші дві — `LoadProhibited` і `StoreProhibited`, і обидві майже
 завжди означають одне: **розіменування покажчика, який не той, що ви
@@ -38,7 +41,9 @@ Backtrace — це ланцюжок адрес. Сам по собі він не
 xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
 ```
 
-Для [[C3]] та інших RISC-V — `riscv32-esp-elf-addr2line`.
+Інструмент **свій для кожної архітектури**: [[S3]] —
+`xtensa-esp32s3-elf-addr2line`, [[C3]] та інші RISC-V —
+`riscv32-esp-elf-addr2line`.
 
 Читати **знизу вгору**: нижні кадри — хто викликав, верхній — де впало.
 
