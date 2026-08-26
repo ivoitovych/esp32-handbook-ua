@@ -1,0 +1,99 @@
+# Прохід 15 — версії тулчейну й компонентів.
+#
+# Найшвидкопсувніші факти книги. Решта тверджень старіє роками, ці —
+# місяцями, і саме за ними читач судить, чи довіряти решті: номер версії,
+# який видно неправильним із першого погляду, знецінює сусідні сторінки.
+#
+# Метод простий і повний: у сховищі є теґ — версія існує; наступного
+# теґа немає — версія найновіша. Обидва боки перевіряються кодом
+# відповіді, без здогадок.
+
+- nazva: Версії тулчейну — усі чотири найновіші на дату ревізії
+  zbih: 'v?6\.0\.2(?!\d)|v?5\.3\.1(?!\d)|3\.3\.11(?!\d)|55\.03\.311|5\.5\.x|2\.2\.0(?!\d)'
+  klas: A
+  dzherelo: >-
+    raw.githubusercontent.com — наявність теґів і файли версій:
+    espressif/esp-idf (components/esp_common/include/esp_idf_version.h),
+    espressif/esptool (esptool/__init__.py),
+    espressif/arduino-esp32 (platform.txt),
+    pioarduino/platform-espressif32 (platform.json)
+  cytata: |
+    esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
+    esp-idf v5.5.5  → 200,  v5.5.6 → 404
+    esptool v5.3.1  → 200,  v5.3.2 → 404      __init__.py: __version__ = "5.3.1"
+    arduino-esp32 3.3.11 → 200, 3.3.12 → 404  platform.txt: version=3.3.11
+    pioarduino 55.03.311 → 200, 55.03.312 → 404
+        platform.json: "version": "55.03.311"
+        і в ньому ж: .../arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+  sposib: curl raw.githubusercontent, коди відповіді + файли версій, 2026-08-26
+  notatka: >-
+    Нуль розбіжностей. Кожна з чотирьох версій підтверджена двічі:
+    існуванням теґа й номером усередині самого репозиторію на цьому теґу.
+    Наступного теґа немає в жодного — тобто це справді найновіші, а не
+    просто наявні.
+
+    Окремо цінне спостереження: `platform.json` pioarduino 55.03.311
+    тягне саме `esp32-core-3.3.11`. Тобто два рядки таблиці версій книги
+    узгоджені між собою не за збігом, а за побудовою — форк
+    PlatformIO пінує рівно ту версію Arduino core, яку книга називає
+    поточною.
+
+    `toolchain-baseline.yaml` уже мав `status: verified` на всіх
+    чотирьох; цей прохід перевірив, що позначка відповідає дійсності, а
+    не лишилася від попередньої ревізії.
+
+- nazva: Політика підтримки ESP-IDF — 30 місяців, без окремого LTS
+  zbih: 'Окремого статусу LTS не існує|30 місяців підтримки має кожен major|Service-періоді|Maintenance бекпортують'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/SUPPORT_POLICY.md
+  cytata: |
+    Each ESP-IDF major and minor release (V4.1, V4.2, etc) is supported for
+    30 months after the initial stable release date.
+
+    | Period      | Duration     | Recommended for new projects?         |
+    | Service     | 12 months    | Yes                                   |
+    | Maintenance | 18 months    | No                                    |
+
+    During the Maintenance period, the version is still supported but only
+    bugfixes for high severity issues or security issues will be applied.
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Повторна звірка того, що прохід 1 уже закрив, — і вона дала те саме.
+    Важливо саме як повторення: політика підтримки належить до тих
+    тверджень, які змінюються без попередження, і формулювання «окремого
+    LTS не існує» суперечить поширеній думці в мережі.
+
+    Розкладка 12 + 18 = 30 підтверджена таблицею дослівно.
+
+    Дата закінчення підтримки гілки v6.0 (2028-09-20) у
+    `toolchain-baseline.yaml` виводиться з дати первинного релізу v6.0,
+    якої в доступних звідси джерелах немає. Лишається як похідне
+    твердження й у наряді.
+
+- nazva: Компонент led_strip версії 3.0.3 і межа ^ у менеджері
+  zbih: 'espressif/led_strip\^3\.0\.3|\^3\.0\.3` не візьме 4\.x'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/idf-extra-components/master/led_strip/{idf_component.yml,CHANGELOG.md}
+  cytata: |
+    (idf_component.yml)
+    version: "3.0.3"
+    description: Driver for Addressable LED Strip (WS2812, etc)
+    dependencies:
+      idf: ">=5.0"
+
+    (CHANGELOG.md)
+    ## 3.0.3
+    - Support WS2816 with 16-bit color
+    ## 3.0.0
+    - Discontinued support for ESP-IDF v4.x
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Версія в книзі збігається з поточною в реєстрі дослівно, і приклад
+    `idf.py add-dependency "espressif/led_strip^3.0.3"` робочий.
+
+    Заразом підтвердилося пояснення розділу 11 про `^`: сам компонент
+    оголошує `idf: ">=5.0"`, а його CHANGELOG прямо каже, що 3.0.0
+    припинив підтримку ESP-IDF v4.x. Тобто мажорна межа в цьому
+    компоненті справді несе зміну сумісності — саме те, заради чого
+    книга радить `^`.

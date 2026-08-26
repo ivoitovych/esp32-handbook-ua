@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-11-016 sha:42462c79 src:manual/11-idf.md:35 klas:F -->
+<!-- fc id:T-11-016 sha:42462c79 src:manual/11-idf.md:35 klas:A -->
 ### T-11-016 · kod · рядок 35
 
 **Книга каже, дослівно:**
@@ -215,7 +215,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
+- **Дослівно з джерела:**
+  > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
+  > esp-idf v5.5.5  → 200,  v5.5.6 → 404
+  > esptool v5.3.1  → 200,  v5.3.2 → 404      __init__.py: __version__ = "5.3.1"
+  > arduino-esp32 3.3.11 → 200, 3.3.12 → 404  platform.txt: version=3.3.11
+  > pioarduino 55.03.311 → 200, 55.03.312 → 404
+  >     platform.json: "version": "55.03.311"
+  >     і в ньому ж: .../arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, коди відповіді + файли версій, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Кожна з чотирьох версій підтверджена двічі: існуванням теґа й номером усередині самого репозиторію на цьому теґу. Наступного теґа немає в жодного — тобто це справді найновіші, а не просто наявні.
+Окремо цінне спостереження: `platform.json` pioarduino 55.03.311 тягне саме `esp32-core-3.3.11`. Тобто два рядки таблиці версій книги узгоджені між собою не за збігом, а за побудовою — форк PlatformIO пінує рівно ту версію Arduino core, яку книга називає поточною.
+`toolchain-baseline.yaml` уже мав `status: verified` на всіх чотирьох; цей прохід перевірив, що позначка відповідає дійсності, а не лишилася від попередньої ревізії.
+- **Прохід:** pass-15-versiyi
 
 ---
 
@@ -284,7 +298,7 @@
 
 ---
 
-<!-- fc id:T-11-022 sha:18cc1794 src:manual/11-idf.md:53 klas:F -->
+<!-- fc id:T-11-022 sha:18cc1794 src:manual/11-idf.md:53 klas:A -->
 ### T-11-022 · kod · рядок 53
 
 **Книга каже, дослівно:**
@@ -295,7 +309,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
+- **Дослівно з джерела:**
+  > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
+  > esp-idf v5.5.5  → 200,  v5.5.6 → 404
+  > esptool v5.3.1  → 200,  v5.3.2 → 404      __init__.py: __version__ = "5.3.1"
+  > arduino-esp32 3.3.11 → 200, 3.3.12 → 404  platform.txt: version=3.3.11
+  > pioarduino 55.03.311 → 200, 55.03.312 → 404
+  >     platform.json: "version": "55.03.311"
+  >     і в ньому ж: .../arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, коди відповіді + файли версій, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Кожна з чотирьох версій підтверджена двічі: існуванням теґа й номером усередині самого репозиторію на цьому теґу. Наступного теґа немає в жодного — тобто це справді найновіші, а не просто наявні.
+Окремо цінне спостереження: `platform.json` pioarduino 55.03.311 тягне саме `esp32-core-3.3.11`. Тобто два рядки таблиці версій книги узгоджені між собою не за збігом, а за побудовою — форк PlatformIO пінує рівно ту версію Arduino core, яку книга називає поточною.
+`toolchain-baseline.yaml` уже мав `status: verified` на всіх чотирьох; цей прохід перевірив, що позначка відповідає дійсності, а не лишилася від попередньої ревізії.
+- **Прохід:** pass-15-versiyi
 
 ---
 
@@ -351,7 +379,7 @@
 
 ---
 
-<!-- fc id:T-11-027 sha:00ed8f72 src:manual/11-idf.md:68 klas:F -->
+<!-- fc id:T-11-027 sha:00ed8f72 src:manual/11-idf.md:68 klas:A -->
 ### T-11-027 · kod · рядок 68
 
 **Книга каже, дослівно:**
@@ -363,7 +391,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
+- **Дослівно з джерела:**
+  > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
+  > esp-idf v5.5.5  → 200,  v5.5.6 → 404
+  > esptool v5.3.1  → 200,  v5.3.2 → 404      __init__.py: __version__ = "5.3.1"
+  > arduino-esp32 3.3.11 → 200, 3.3.12 → 404  platform.txt: version=3.3.11
+  > pioarduino 55.03.311 → 200, 55.03.312 → 404
+  >     platform.json: "version": "55.03.311"
+  >     і в ньому ж: .../arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, коди відповіді + файли версій, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Кожна з чотирьох версій підтверджена двічі: існуванням теґа й номером усередині самого репозиторію на цьому теґу. Наступного теґа немає в жодного — тобто це справді найновіші, а не просто наявні.
+Окремо цінне спостереження: `platform.json` pioarduino 55.03.311 тягне саме `esp32-core-3.3.11`. Тобто два рядки таблиці версій книги узгоджені між собою не за збігом, а за побудовою — форк PlatformIO пінує рівно ту версію Arduino core, яку книга називає поточною.
+`toolchain-baseline.yaml` уже мав `status: verified` на всіх чотирьох; цей прохід перевірив, що позначка відповідає дійсності, а не лишилася від попередньої ревізії.
+- **Прохід:** pass-15-versiyi
 
 ---
 
@@ -1546,7 +1588,7 @@
 
 ---
 
-<!-- fc id:T-11-091 sha:30483f3f src:manual/11-idf.md:222 klas:F -->
+<!-- fc id:T-11-091 sha:30483f3f src:manual/11-idf.md:222 klas:A -->
 ### T-11-091 · proza · рядок 222
 
 **Книга каже, дослівно:**
@@ -1555,7 +1597,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/idf-extra-components/master/led_strip/{idf_component.yml,CHANGELOG.md}
+- **Дослівно з джерела:**
+  > (idf_component.yml)
+  > version: "3.0.3"
+  > description: Driver for Addressable LED Strip (WS2812, etc)
+  > dependencies:
+  >   idf: ">=5.0"
+  > 
+  > (CHANGELOG.md)
+  > ## 3.0.3
+  > - Support WS2816 with 16-bit color
+  > ## 3.0.0
+  > - Discontinued support for ESP-IDF v4.x
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Версія в книзі збігається з поточною в реєстрі дослівно, і приклад `idf.py add-dependency "espressif/led_strip^3.0.3"` робочий.
+Заразом підтвердилося пояснення розділу 11 про `^`: сам компонент оголошує `idf: ">=5.0"`, а його CHANGELOG прямо каже, що 3.0.0 припинив підтримку ESP-IDF v4.x. Тобто мажорна межа в цьому компоненті справді несе зміну сумісності — саме те, заради чого книга радить `^`.
+- **Прохід:** pass-15-versiyi
 
 ---
 
