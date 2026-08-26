@@ -5,7 +5,7 @@ koly: 2026-08-26T22:58Z
 vyd: znakhidka
 tema: Клас E описано в книзі не так, як він присвоюється — і це друкована обіцянка
 vidpovid-na: -
-zminyuye: factcheck/SCHEMA.md, manual/00-pro-dovidnyk.md
+zminyuye: -
 baza: f1e9729
 ```
 
