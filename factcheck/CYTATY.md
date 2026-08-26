@@ -16,18 +16,10 @@
 | `у кеші заглушка` | сервер віддав HTML із кодом 200 замість PDF |
 | `звірено очима` | витягання тексту руйнує структуру; звірив супровідник, причина названа |
 
-Записів доказів: **469**. Звірено дослівно: **68**. Не знайдено: **51**. Джерело не в кеші: **41**. Нема чого звіряти: **274**.
+Записів доказів: **469**. Звірено дослівно: **73**. Не знайдено: **50**. Джерело не в кеші: **40**. Нема чого звіряти: **274**.
 
-Станом на 2026-08-26 22:36 UTC.
+Станом на 2026-08-26 22:44 UTC.
 
-
-## **файл є, витягти текст нічим** — 3
-
-| Доказ | Файл | Деталі |
-|---|---|---|
-| Maximum log verbosity — стеля компіляції окремо від типового рівня | `pass-11-menuconfig` | 1: файл у кеші є, витягти текст нічим |
-| Відкат вмикається в підменю Application Rollback | `pass-11-menuconfig` | 1: файл у кеші є, витягти текст нічим |
-| PSRAM вимкнена типово, а винесення в неї — навпаки, ввімкнене | `pass-25-psram` | 3: файл у кеші є, витягти текст нічим |
 
 ## клас E на твердженні з числом — перевірити — 32
 
@@ -66,7 +58,7 @@
 | Wi-Fi відвалюється: подивитися RSSI гірше за −80 дБм | `m2-48-symptomy-29` | клас E, а в назві число з одиницею |
 | T-K12-007: Паяльник повинен мати терморегулятор, потужність 60 Вт, жало «скіс» 2–3 мм | `m2-50-kartky` | клас E, а в назві число з одиницею |
 
-## **не знайдено** — 51
+## **не знайдено** — 50
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -79,7 +71,6 @@
 | Помилки купи розрізняють бік переповнення | `pass-10-povidomlennya` | 2 з 2 рядків: «#define ERR_STR1 "***ERROR*** A stack overflow in task "…»; «#define ERR_STR2 " has been detected."…» |
 | Тексти помилок esptool змінилися між версіями | `pass-10-povidomlennya` | 6 з 8 рядків: «msg = ("Serial data stream stopped: Possible serial noise or corruptio…»; «if successful_slip else "No serial data received.")…»; «raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wro…» |
 | Дерево menuconfig — корінь і Component config | `pass-11-menuconfig` | 9 з 13 рядків: «esptool_py:        menu "Serial flasher config"…»; «partition_table:   menu "Partition Table"…»; «bootloader:        menu "Bootloader config"…» |
-| Меню логування зветься Log, а не Log output | `pass-11-menuconfig` | 4 з 5 рядків: «menu "Log Level"…»; «choice LOG_DEFAULT_LEVEL…»; «bool "Default log verbosity"…» |
 | GPIO15 низький глушить boot-лог ROM | `pass-12-piny` | 2 з 3 рядків: «|            | bootloader. Has an internal pull-up, so unconnected = H…»; «|            | normal output.…» |
 | Режими SPI — CPHA задає номер фронту, не напрямок | `pass-16-interfeysy` | 1 з 3 рядків: «@param  mode   SPI data mode; one of SPI_MODE0, SPI_MODE1, SPI_MODE2…» |
 | pioarduino, а не офіційна платформа PlatformIO | `pass-17-simeystva-proektiv` | 1 з 5 рядків: «"version": "55.03.311"…» |
@@ -109,7 +100,7 @@
 | Коди помилок OTA і NVS, які книга називає поіменно | `pass-31-adresy-i-api` | 2 з 6 рядків: «partition, and is used together with the FAT filesystem via…»; «esp_vfs_fat_spiflash_mount_rw_wl.…» |
 | DAC, ADC-затухання й обв'язка входу — розділ 33 | `pass-32-pul-shmatky-1-3` | 8 з 11 рядків: «Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input…»; «voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,…»; «the attenuation of ADC is set to 11 dB, and input voltage higher than…» |
 | LISTEN_ONLY і NO_ACK — режими TWAI дослівно | `pass-32-pul-shmatky-1-3` | 2 з 7 рядків: «The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.…»; «Therefore, an external transceiver is required to connect to a TWAI…» |
-| Рівні логу, esp_err_to_name і монітор — розділ 25 | `pass-32-pul-shmatky-1-3` | 7 з 10 рядків: «choice LOG_DEFAULT_LEVEL…»; «bool "Default log verbosity"…»; «default LOG_DEFAULT_LEVEL_INFO…» |
+| Рівні логу, esp_err_to_name і монітор — розділ 25 | `pass-32-pul-shmatky-1-3` | 4 з 10 рядків: «*        with specific address you gave.…»; «Whenever the chip outputs a hexadecimal address that points to…»; «executable code, IDF monitor looks up the location in the source code…» |
 | Типова розбивка флешу — зсуви, розміри й суфікси | `pass-32-pul-shmatky-1-3` | 3 з 11 рядків: «ESP_LOGI(TAG, "Partition Table:");…»; «ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Len…»; «ESP_LOGI(TAG, "End of partition table");…» |
 | Буфер у PSRAM без MALLOC_CAP_SPIRAM — і що це коштує | `pass-32-pul-shmatky-1-3` | 5 з 11 рядків: «// Forces data into DRAM instead of flash…»; «#define DRAM_ATTR _SECTION_ATTR_IMPL(".dram1", __COUNTER__)…»; «config FREERTOS_CHECK_STACKOVERFLOW_NONE…» |
 | Strapping classic і C3 — таблиця розділу 07 проти gpio/*.inc | `pass-33-pul-shmatky-4-5` | 1 з 3 рядків: «{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",…» |
@@ -122,7 +113,7 @@
 | ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR | `pass-38-pul-shmatky-9-11` | 2 з 5 рядків: «* interrupts are disabled or inside an ISR.…»; «* when absolutely essential.…» |
 | На RISC-V рядка Backtrace немає — його будує монітор | `pass-38-pul-shmatky-9-11` | 2 з 12 рядків: «Moreover, IDF Monitor is also capable of generating and printing a…»; «IDF Monitor. Thus, in order to generate and print a backtrace while…» |
 
-## джерело не в кеші — 41
+## джерело не в кеші — 40
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -162,13 +153,12 @@
 | Проєкт 62 свідомо на classic через тільки-вхідний GPIO34 | `pass-18-schemy` | 1 джерел не в кеші |
 | Поля конфігураційних структур збігаються із заголовками ESP-IDF | `pass-21-polya-struktur` | 1 джерел не в кеші |
 | DAC на S2 — GPIO17 і GPIO18; розділ 07 виправлено | `pass-23-dac-propahaciya` | 1 джерел не в кеші |
-| Octal PSRAM треба зазначити — типово стоїть Quad | `pass-25-psram` | 1 джерел не в кеші |
 | Мілісекунди в дужках у рядку логу | `pass-29-log-i-reshta-komand` | 1 джерел не в кеші |
 | Номери GPIO книги дійсні для сімейств, яким приписані | `pass-30-piny-suciljno` | 1 джерел не в кеші |
 | Тільки-вхідні, консоль і USB-JTAG у довіднику пінів | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
 | Піновий план проєкту 62 — три сімейства, кожен пін вільний | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
 
-## звірено — 68
+## звірено — 73
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -209,6 +199,9 @@
 | Формат паніки Guru Meditation і назви винятків | `pass-10-povidomlennya` | 14 рядків |
 | Дамп Task WDT — два різні переліки | `pass-10-povidomlennya` | 4 рядків |
 | Camera probe failed — повний вигляд рядка | `pass-10-povidomlennya` | 1 рядків |
+| Меню логування зветься Log, а не Log output | `pass-11-menuconfig` | 5 рядків |
+| Maximum log verbosity — стеля компіляції окремо від типового рівня | `pass-11-menuconfig` | 17 рядків |
+| Відкат вмикається в підменю Application Rollback | `pass-11-menuconfig` | 4 рядків |
 | Рівні оптимізації компілятора | `pass-11-menuconfig` | 12 рядків |
 | Хост Bluetooth і перевірка переповнення стека | `pass-11-menuconfig` | 12 рядків |
 | Номери ліній USB-Serial-JTAG | `pass-12-piny` | 4 рядків |
@@ -219,6 +212,8 @@
 | JTAG-піни classic — усі чотири з таблиці IOMUX | `pass-24-zsuvy-i-matrycya` | 9 рядків |
 | Матриця GPIO і SPI — 40 проти 80 МГц, і коли різниці немає | `pass-24-zsuvy-i-matrycya` | 11 рядків |
 | MSPI на S3 — GPIO26–32 під флеш, GPIO33–37 під восьмилінійний режим | `pass-25-psram` | 14 рядків |
+| PSRAM вимкнена типово, а винесення в неї — навпаки, ввімкнене | `pass-25-psram` | 23 рядків |
+| Octal PSRAM треба зазначити — типово стоїть Quad | `pass-25-psram` | 7 рядків |
 | Внутрішнє підтягування strapping — 45 кОм, кнопці треба 10 кОм | `pass-26-strapping` | 5 рядків |
 | GPIO12 має внутрішнє підтягування вниз — безпечний за замовчуванням | `pass-26-strapping` | 5 рядків |
 | idf.py monitor — вихід Ctrl+], скидання через Ctrl+T | `pass-28-komandy-suciljno` | 12 рядків |

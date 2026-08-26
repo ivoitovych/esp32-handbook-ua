@@ -215,14 +215,35 @@ def tekst_pdf(p: Path) -> str | None:
 
 
 def tekst_dzherela(p: Path) -> str | None:
+    """Текст файлу — за **вмістом**, а не за розширенням.
+
+    Перша редакція мала перелік дозволених розширень, і він одразу
+    відстав: `library.properties` кожної бібліотеки Arduino — звичайний
+    текст, але в переліку його не було, і шар 3 оголошував такий файл
+    нечитним. Тобто ціла категорія джерел випадала мовчки.
+
+    Переліки розширень відстають завжди. Тому питаємо файл: якщо він
+    декодується як UTF-8 і в ньому майже немає керівних байтів — це
+    текст, хай як він називається.
+    """
     if p.suffix.lower() == ".pdf":
         return tekst_pdf(p)
-    if p.suffix.lower() not in TEKSTOVI:
-        return None
     try:
-        return p.read_text(encoding="utf-8", errors="replace")
+        syri = p.read_bytes()
     except OSError:
         return None
+    if syri.startswith((b"%PDF", b"\x89PNG", b"\xff\xd8\xff", b"PK\x03\x04",
+                        b"\x7fELF", b"GIF8")):
+        return None
+    try:
+        tekst = syri.decode("utf-8")
+    except UnicodeDecodeError:
+        return None
+    proba = tekst[:4096]
+    keruvni = sum(1 for c in proba if ord(c) < 32 and c not in "\t\n\r")
+    if proba and keruvni / len(proba) > 0.01:
+        return None
+    return tekst
 
 
 # Поле `dzherelo`, у якому стоїть не документ, а **міркування**. Знахідка
