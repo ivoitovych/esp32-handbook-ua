@@ -129,81 +129,132 @@ def prefiks(f: Path) -> str:
     return (m.group(1) if m else f.stem[:3]).upper()
 
 
-def zbir_isnuyuchykh(p: Path) -> dict[str, dict]:
-    """Наявні записи реєстру за id, разом із доказовою частиною."""
-    if not p.exists():
-        return {}
-    t = p.read_text(encoding="utf-8")
-    shmatky = re.split(r"(?=<!--\s*fc\s)", t)
-    out = {}
-    for sh in shmatky:
-        m = RE_ZAPYS.search(sh)
-        if m:
-            out[m.group("id")] = {"sha": m.group("sha"), "klas": m.group("klas"),
-                                  "tilo": sh}
+DOKAZY = FC / "dokazy"
+
+
+def zavantazhyty_dokazy() -> list[dict]:
+    """Докази з `factcheck/dokazy/*.yaml` — перелік записів.
+
+    Запис прив'язується до тверджень двома способами.
+
+    **`sha:`** — точний хеш дослівного тексту. Ключем узято хеш, а не
+    ідентифікатор, бо ідентифікатор — це порядковий номер у файлі, і
+    вставлене вище речення зсуває всі наступні. Хеш прив'язаний до самого
+    твердження, тож доказ їде за ним при перевпорядкуванні — і навпаки,
+    **відв'язується сам**, щойно формулювання змінили. Друге не менш
+    важливе за перше: доказ стосувався тих слів, а не цих.
+
+    **`zbih:`** — взірець. Одне й те саме твердження живе в книзі в
+    кількох місцях (розділ, картка, додаток), і доводиться воно один раз.
+    Взірець покриває всі входження, а `sketch` друкує, що саме покрив, —
+    щоб зіставлення лишалося перевірюваним, а не магічним.
+    """
+    import yaml
+    out: list[dict] = []
+    if not DOKAZY.exists():
+        return out
+    for p in sorted(DOKAZY.glob("*.yaml")):
+        for z in (yaml.safe_load(p.read_text(encoding="utf-8")) or []):
+            z["_prokhid"] = p.stem
+            out.append(z)
     return out
 
 
-def dokazova_chastyna(tilo: str) -> str:
-    """Усе після рядка «**Доказ**» — те, що написала людина, а не машина."""
-    j = tilo.find("**Доказ**")
-    return tilo[j:] if j >= 0 else ""
+def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
+    """Доказ для конкретного твердження: спершу точний хеш, потім взірець."""
+    for z in zapysy:
+        if h in [str(x) for x in (z.get("sha") or [])]:
+            return z
+    for z in zapysy:
+        v = z.get("zbih")
+        if v and re.search(v, txt, re.S):
+            return z
+    return None
 
 
 SHABLON_DOKAZU = """**Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 """
+
+
+def formatuvaty_dokaz(z: dict | None) -> str:
+    if not z:
+        return SHABLON_DOKAZU
+    klas = z.get("klas", "F")
+    ch = [f"**Доказ**\n", f"- **Клас:** {ZNAK.get(klas,'')} {klas} — {KLASY.get(klas,'')}"]
+    if z.get("dzherelo"):
+        ch.append(f"- **Джерело:** {z['dzherelo']}")
+    if z.get("cytata"):
+        tilo = "\n".join("  > " + x for x in str(z["cytata"]).rstrip().split("\n"))
+        ch.append(f"- **Дослівно з джерела:**\n{tilo}")
+    if z.get("rozrakhunok"):
+        tilo = "\n".join("  " + x for x in str(z["rozrakhunok"]).rstrip().split("\n"))
+        ch.append(f"- **Розрахунок:**\n{tilo}")
+    if z.get("sposib"):
+        ch.append(f"- **Спосіб і дата:** {z['sposib']}")
+    if z.get("shukaty"):
+        ch.append(f"- **Що шукати в джерелі:** {z['shukaty']}")
+    if z.get("notatka"):
+        ch.append(f"- **Нотатка:** {z['notatka']}")
+    ch.append(f"- **Прохід:** {z.get('_prokhid','—')}")
+    return "\n".join(ch) + "\n"
 
 
 def sketch() -> int:
     FC.mkdir(exist_ok=True)
-    vsjogo = novykh = zberezheno = zastarilykh = 0
+    dokazy = zavantazhyty_dokazy()
+    vsjogo = z_dokazom = 0
+    vzhyti: set[str] = set()
+    pokryttya: dict[str, list[str]] = {}
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
             odynyci = rozbyty(f.read_text(encoding="utf-8"))
             cil = shlyakh_reyestru(f)
             cil.parent.mkdir(parents=True, exist_ok=True)
-            stari = zbir_isnuyuchykh(cil)
             pre = prefiks(f)
             chastyny = [
                 f"# Фактчекінг: `{f.relative_to(ROOT)}`\n",
                 f"Одиниць твердження: **{len(odynyci)}**. "
                 "Клас доказу й формат запису — `factcheck/SCHEMA.md`.\n",
+                "Цей файл **генерується**: текст книги береться з джерела, "
+                "докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.\n",
                 "---\n",
             ]
             for k, (vyd, txt, ln) in enumerate(odynyci, 1):
                 ident = f"T-{pre}-{k:03d}"
                 h = sha(txt)
-                st = stari.get(ident)
-                klas = st["klas"] if st else "F"
-                if st and st["sha"] != h:
-                    klas = "F"          # текст книги змінився — доказ під сумнівом
-                    zastarilykh += 1
-                dokaz = dokazova_chastyna(st["tilo"]) if st and st["sha"] == h \
-                    else SHABLON_DOKAZU
-                if st and st["sha"] == h:
-                    zberezheno += 1
-                elif not st:
-                    novykh += 1
+                z = pidibraty(dokazy, h, txt)
+                if z:
+                    vzhyti.add(h)
+                    z_dokazom += 1
+                    pokryttya.setdefault(z.get("nazva", "?"), []).append(ident)
+                klas = z.get("klas", "F") if z else "F"
                 cyt = "\n".join("> " + x for x in txt.split("\n"))
                 chastyny.append(
                     f"<!-- fc id:{ident} sha:{h} "
                     f"src:{f.relative_to(ROOT)}:{ln} klas:{klas} -->\n"
                     f"### {ident} · {vyd} · рядок {ln}\n\n"
                     f"**Книга каже, дослівно:**\n\n{cyt}\n\n"
-                    f"{dokaz}\n---\n"
+                    f"{formatuvaty_dokaz(z)}\n---\n"
                 )
                 vsjogo += 1
             cil.write_text("\n".join(chastyny), encoding="utf-8")
-    print(f"файлів реєстру: {sum(1 for _ in FC.rglob('*.md')) }")
-    print(f"одиниць твердження: {vsjogo}")
-    print(f"  нових: {novykh}; збережено з доказом: {zberezheno}; "
-          f"застаріло через зміну тексту: {zastarilykh}")
+    print(f"файлів реєстру: {sum(1 for _ in FC.rglob('*.md'))}")
+    print(f"одиниць твердження: {vsjogo}; із доказом: {z_dokazom}")
+    if "-v" in sys.argv:
+        print("\nщо покрив кожен доказ:")
+        for nazva, ids in sorted(pokryttya.items()):
+            print(f"  {len(ids):>3}×  {nazva}\n        {', '.join(ids)}")
+    # Доказ, який нічого не покрив, — це або застаріле формулювання в
+    # книзі, або помилка у взірці. Мовчати про це не можна: реєстр почне
+    # обіцяти звіреність, якої немає.
+    holosti = [z for z in dokazy
+               if not any(z.get("nazva") == n for n in pokryttya)]
+    if holosti:
+        print(f"\n⚠ доказів, що нічого не покрили: {len(holosti)}")
+        for z in holosti:
+            print(f"    {z.get('nazva','?')}  ({z.get('_prokhid')})")
     return 0
 
 
@@ -337,10 +388,40 @@ def cherga() -> int:
     return 0
 
 
+def shukaty() -> int:
+    """`factcheck.py shukaty <підрядок>` → sha і текст твердження.
+
+    Ключ доказу — хеш, а хеш у голові не тримають. Ця команда — місток
+    між «пам'ятаю формулювання» і «знаю, під яким ключем його записати».
+    """
+    if len(sys.argv) < 3:
+        print("вкажіть підрядок")
+        return 1
+    goloka = " ".join(sys.argv[2:]).lower()
+    n = 0
+    for z in zbir_usikh():
+        m = re.search(r"\*\*Книга каже, дослівно:\*\*\n\n(.+?)\n\n\*\*Доказ",
+                      z["tilo"], re.S)
+        if not m:
+            continue
+        txt = " ".join(m.group(1).replace("> ", "").split())
+        if goloka in txt.lower():
+            print(f"  {z['sha']}  {ZNAK[z['klas']]}{z['klas']}  {z['id']:<12} "
+                  f"{z['src']}\n      {txt[:150]}")
+            n += 1
+            if n >= 30:
+                print("  …")
+                break
+    if not n:
+        print("не знайдено")
+    return 0
+
+
 def main() -> int:
     cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
     return {"sketch": sketch, "status": status, "stale": stale,
-            "blocked": blocked, "cherga": cherga}.get(cmd, status)()
+            "blocked": blocked, "cherga": cherga,
+            "shukaty": shukaty}.get(cmd, status)()
 
 
 if __name__ == "__main__":

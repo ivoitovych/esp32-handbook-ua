@@ -2,6 +2,8 @@
 
 Одиниць твердження: **33**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+
 ---
 
 <!-- fc id:T-K06-001 sha:3b9e12c2 src:kartky/k06-bootlog.md:3 klas:F -->
@@ -14,10 +16,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -31,14 +29,10 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
-<!-- fc id:T-K06-003 sha:7419d2c5 src:kartky/k06-bootlog.md:8 klas:F -->
+<!-- fc id:T-K06-003 sha:7419d2c5 src:kartky/k06-bootlog.md:8 klas:A -->
 ### T-K06-003 · kod · рядок 8
 
 **Книга каже, дослівно:**
@@ -49,11 +43,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
-- **Джерело:**
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
 - **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
 
 ---
 
@@ -67,10 +80,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -84,10 +93,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -101,14 +106,10 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
-<!-- fc id:T-K06-007 sha:00924920 src:kartky/k06-bootlog.md:17 klas:F -->
+<!-- fc id:T-K06-007 sha:00924920 src:kartky/k06-bootlog.md:17 klas:A -->
 ### T-K06-007 · tablycya · рядок 17
 
 **Книга каже, дослівно:**
@@ -117,11 +118,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
-- **Джерело:**
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
 - **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
 
 ---
 
@@ -135,10 +155,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -152,14 +168,10 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
-<!-- fc id:T-K06-010 sha:24c48fe7 src:kartky/k06-bootlog.md:20 klas:F -->
+<!-- fc id:T-K06-010 sha:24c48fe7 src:kartky/k06-bootlog.md:20 klas:A -->
 ### T-K06-010 · tablycya · рядок 20
 
 **Книга каже, дослівно:**
@@ -168,11 +180,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
-- **Джерело:**
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
 - **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
 
 ---
 
@@ -186,10 +217,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -203,14 +230,10 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
-<!-- fc id:T-K06-013 sha:3572ce3a src:kartky/k06-bootlog.md:23 klas:F -->
+<!-- fc id:T-K06-013 sha:3572ce3a src:kartky/k06-bootlog.md:23 klas:A -->
 ### T-K06-013 · tablycya · рядок 23
 
 **Книга каже, дослівно:**
@@ -219,15 +242,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
-- **Джерело:**
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
 - **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
 
 ---
 
-<!-- fc id:T-K06-014 sha:da6937ef src:kartky/k06-bootlog.md:24 klas:F -->
+<!-- fc id:T-K06-014 sha:da6937ef src:kartky/k06-bootlog.md:24 klas:A -->
 ### T-K06-014 · tablycya · рядок 24
 
 **Книга каже, дослівно:**
@@ -236,11 +278,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
-- **Джерело:**
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
 - **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
 
 ---
 
@@ -254,10 +315,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -271,10 +328,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -288,10 +341,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -305,10 +354,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -322,10 +367,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -344,10 +385,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -361,10 +398,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -378,10 +411,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -395,10 +424,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -412,10 +437,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -429,10 +450,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -446,10 +463,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -463,10 +476,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -480,10 +489,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -497,10 +502,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -514,10 +515,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -531,10 +528,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -548,10 +541,6 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---
 
@@ -565,9 +554,5 @@
 **Доказ**
 
 - **Клас:** F — не звірено
-- **Джерело:**
-- **Дослівно з джерела:**
-- **Спосіб і дата:**
-- **Нотатка:**
 
 ---

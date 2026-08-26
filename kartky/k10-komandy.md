@@ -14,7 +14,7 @@ esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
 esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
 esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
 esptool merge-bin -o all.bin --flash-mode dio \
-  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # 0x1000 → classic; S3/C3: 0x0
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # 0x1000 → classic/S2; інші чипи — див. таблицю
 ```
 
 ## idf.py
@@ -56,9 +56,9 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ## Адреси
 
-| Що | classic / S2 | S3 / C3+ |
-|---|---|---|
-| bootloader | `0x1000` | `0x0` |
-| partition table | `0x8000` | `0x8000` |
-| застосунок | `0x10000` | `0x10000` |
-| зібраний `merge-bin` | `0x0` | `0x0` |
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |

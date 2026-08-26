@@ -1,0 +1,235 @@
+# Прохід 1 — тверде ядро.
+#
+# Твердження, у яких помилка коштує плати, і для яких першоджерело
+# ДІСТАЄТЬСЯ з цього середовища: дерево ESP-IDF на raw.githubusercontent.
+# Тому переважна частина проходу — клас A: витяг отримано й процитовано.
+#
+# Формат опису — factcheck/SCHEMA.md. Прив'язка: `sha` (точний хеш тексту)
+# або `zbih` (взірець на всі входження твердження в книзі).
+#
+# Правило, яке тут дотримано без винятків: у полі `cytata` стоїть лише те,
+# що справді витягнуто в цій сесії командою, зазначеною в `sposib`.
+
+- nazva: Адреса другого бутлоадера задається ROM і має три значення
+  zbih: 'бутлоадер.{0,40}(лежить за адресою|іде не на)|BOOTLOADER_OFFSET_IN_FLASH|«що новіше, то ближче до нуля»'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+  cytata: |
+    config BOOTLOADER_OFFSET_IN_FLASH
+        hex
+        default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+        # the first 2 sectors are reserved for the key manager with AES-XTS (flash encryption) purpose
+        default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+        default 0x0
+        help
+            Offset address that 2nd bootloader will be flashed to.
+            The value is determined by the ROM bootloader.
+            It's not configurable in ESP-IDF.
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Знахідка проходу. Перша редакція давала двовипадкове правило
+    «classic і S2 → 0x1000, S3, C3 і новіші → 0x0». Третій випадок
+    (P4, C5, H4 → 0x2000) робив формулювання «і новіші» хибним, причому
+    саме для тих чипів, які найновіші. Виправлено в розділах 16, 17, 21,
+    29, картках К5 і К10, додатку C. Довідка Kconfig дала й формулювання
+    для правила: значення визначає ROM, воно не налаштовується.
+
+- nazva: Таблиця розділів лежить на 0x8000, застосунок на 0x10000
+  zbih: 'таблиц\w+ розділів.{0,60}`0x8000`|`0x8000`.{0,40}однакова на всіх'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
+  cytata: |
+    For this reason a partition table is flashed to
+    (:ref:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash.
+    …
+    In both cases the factory app is flashed at offset 0x10000.
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Вихідний .rst документації ESP-IDF — те, з чого зроблено
+    docs.espressif.com, який із цього середовища не дістається.
+
+- nazva: Коди причин скидання (RESET_REASON)
+  zbih: 'RTCWDT_BROWN_OUT_RESET|POWERON_RESET|TG0WDT_SYS_RESET|SW_CPU_RESET'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  cytata: |
+    typedef enum {
+        NO_MEAN                =  0,
+        POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+        SW_RESET               =  3,    /**<3, Software reset digital core*/
+        OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+        DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+        SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+        TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+        TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+        RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+        INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+        TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+        SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+        RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+        EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+        RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+        RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+    } RESET_REASON;
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20,
+    26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти
+    рядків enum — розбіжностей немає. Зокрема 0xf = 15 =
+    RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable»,
+    що дослівно підтверджує головну тезу книги про rst:0xf.
+
+- nazva: Кількість блоків периферії за сімействами
+  zbih: 'Кількості звірені з заголовками можливостей самого ESP-IDF'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/<ціль>/include/soc/soc_caps.h
+  cytata: |
+    esp32     SOC_UART_NUM (3)   SOC_I2C_NUM (2U)  SOC_SPI_PERIPH_NUM 3  SOC_I2S_NUM (2U)  SOC_TWAI_CONTROLLER_NUM 1U  SOC_DAC_CHAN_NUM 2
+    esp32s2   SOC_UART_NUM (2)   SOC_I2C_NUM (2U)  SOC_SPI_PERIPH_NUM 3  SOC_I2S_NUM (1U)  SOC_TWAI_CONTROLLER_NUM 1U  SOC_DAC_CHAN_NUM 2
+    esp32s3   SOC_UART_NUM (3)   SOC_I2C_NUM (2U)  SOC_SPI_PERIPH_NUM 3  SOC_I2S_NUM (2U)  SOC_TWAI_CONTROLLER_NUM 1U
+    esp32c3   SOC_UART_NUM (2)   SOC_I2C_NUM (1U)  SOC_SPI_PERIPH_NUM 2  SOC_I2S_NUM (1U)  SOC_TWAI_CONTROLLER_NUM 1U
+    esp32c6   SOC_UART_NUM (3)   SOC_I2C_NUM (2U)  SOC_SPI_PERIPH_NUM 2  SOC_I2S_NUM (1U)  SOC_TWAI_CONTROLLER_NUM 2
+    esp32h2   SOC_UART_NUM (2)   SOC_I2C_NUM (2U)  SOC_SPI_PERIPH_NUM 2  SOC_I2S_NUM (1U)  SOC_TWAI_CONTROLLER_NUM 1U
+  sposib: curl raw.githubusercontent для шести цілей, 2026-08-26
+  notatka: >-
+    Знахідка проходу. Усі рядки таблиці розділу 04 збіглися, крім I²C для
+    C6: книга давала 1, soc_caps дає 2. Розбір показав, що обидва
+    по-своєму праві — і що правильна відповідь корисніша за обидві.
+
+- nazva: C6 має два I²C, другий низькоспоживчий
+  zbih: 'низькоспоживчий.{0,200}LP-домені|1 \+ 1 LP'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c6/include/soc/soc_caps.h
+  cytata: |
+    #define SOC_I2C_NUM                 (2U) // I2C_NUM = HP_I2C + LP_I2C
+    #define SOC_HP_I2C_NUM              (1U)
+    #define SOC_LP_I2C_NUM              (1U)
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Коментар у самому заголовку пояснює розбіжність: підсумкове число
+    складається з високо- і низькоспоживчого контролерів. Для C6 — чипа,
+    який беруть саме заради низького споживання, — це не подробиця, а
+    можливість опитувати датчик, поки основна система спить. Таблицю
+    розділу 04 виправлено на «1 + 1 LP» з поясненням.
+
+- nazva: Придатних каналів Touch на S2 і S3 — чотирнадцять, а не п'ятнадцять
+  zbih: 'нульовий канал зайнятий внутрішнім каналом|Touch.{0,80}чотирнадцять'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/soc_caps.h
+  cytata: |
+    #define SOC_TOUCH_SENSOR_NUM                        (15) /*!< 15 Touch channels */
+    #define SOC_TOUCH_MIN_CHAN_ID                       (1U)  /*!< Touch minimum channel number, (0 is internal denoise channel) */
+    #define SOC_TOUCH_MAX_CHAN_ID                       (14) /*!< Touch maximum channel number */
+  sposib: curl raw.githubusercontent (esp32s2 і esp32s3), 2026-08-26
+  notatka: >-
+    Канали 1…14 — саме чотирнадцять. Число 14 у книзі було правильним із
+    попередньої сесії, але без причини; тепер причина процитована
+    дослівно. Для classic ті самі константи дають 0…9, тобто десять.
+
+- nazva: Термін підтримки ESP-IDF — 30 місяців, із них 12 Service
+  zbih: '30 місяців|LTS в ESP-IDF|Service-періоді|Maintenance бекпортують'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/SUPPORT_POLICY.md
+  cytata: |
+    Each ESP-IDF major and minor release (V4.1, V4.2, etc) is supported for
+    30 months after the initial stable release date.
+    …
+    | Period      | Duration     | Recommended for new projects?         |
+    | Service     | 12 months    | Yes                                   |
+    | Maintenance | 18 months    | No                                    |
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Підтверджує і термін, і відсутність окремого статусу LTS: політика
+    однакова для всіх major і minor релізів.
+
+- nazva: Межі ESP-NOW і сигнатури зворотних викликів
+  zbih: 'ESP_NOW_MAX|250 байт|20 усього, з них не більше 6|esp_now_send_info_t|esp_now_recv_info_t'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
+  cytata: |
+    #define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address */
+    #define ESP_NOW_MAX_TOTAL_PEER_NUM   20        /*!< Maximum number of ESPNOW total peers */
+    #define ESP_NOW_MAX_ENCRYPT_PEER_NUM 6         /*!< Maximum number of ESPNOW encrypted peers */
+    #define ESP_NOW_MAX_DATA_LEN  ESP_NOW_MAX_IE_DATA_LEN   /**< Maximum length of data sent in each ESPNOW transmission for v1.0 */
+    #define ESP_NOW_MAX_DATA_LEN_V2      1470      /**< Maximum length of data sent in each ESPNOW transmission for v2.0 */
+    typedef void (*esp_now_recv_cb_t)(const esp_now_recv_info_t * esp_now_info, const uint8_t *data, int data_len);
+    typedef void (*esp_now_send_cb_t)(const esp_now_send_info_t *tx_info, esp_now_send_status_t status);
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Обидві сигнатури використані в розділах 42 і 61; стару сигнатуру
+    `on_sent` виправлено в сесії рецензування 05 за цим самим джерелом.
+
+- nazva: Перевірка переповнення стека і розмір стека app_main
+  zbih: 'configCHECK_FOR_STACK_OVERFLOW|canary|3\.5 КБ|3584'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig
+  cytata: |
+    choice FREERTOS_CHECK_STACKOVERFLOW
+        prompt "configCHECK_FOR_STACK_OVERFLOW"
+        default FREERTOS_CHECK_STACKOVERFLOW_CANARY
+        …
+        config FREERTOS_CHECK_STACKOVERFLOW_CANARY
+            bool "Check using canary bytes (Method 2)"
+    ---
+    (components/esp_system/Kconfig)
+    config ESP_MAIN_TASK_STACK_SIZE
+        int "Main task stack size"
+        default 3584
+  sposib: curl raw.githubusercontent (два Kconfig), 2026-08-26
+  notatka: >-
+    Доводить обидва твердження розділу 30: перевірка ввімкнена за
+    замовчуванням методом контрольних байтів, і типовий стек app_main —
+    3584 байти, тобто 3.5 КБ.
+
+- nazva: Рівні оптимізації в menuconfig
+  zbih: 'Debug without optimization|COMPILER_OPTIMIZATION|-Og|-O0'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig
+  cytata: |
+    choice COMPILER_OPTIMIZATION
+        prompt "Optimization Level"
+        default COMPILER_OPTIMIZATION_DEBUG
+        …
+        config COMPILER_OPTIMIZATION_DEBUG
+            bool "Debug (-Og)"
+        config COMPILER_OPTIMIZATION_SIZE
+            bool "Optimize for size (-Os with GCC, -Oz with Clang)"
+        config COMPILER_OPTIMIZATION_PERF
+            bool "Optimize for performance (-O2)"
+        config COMPILER_OPTIMIZATION_NONE
+            bool "Debug without optimization (-O0)"
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Джерело правки розділу 27 у сесії рецензування 03: пункт `Debug` дає
+    -Og, тобто типове значення, а не -O0.
+
+- nazva: Апаратні піни IOMUX для UART0 і SPI
+  zbih: 'uart_pins\.h|spi_pins\.h|Апаратні піни \(IOMUX\)'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/<ціль>/include/soc/{uart_pins,spi_pins}.h
+  cytata: |
+    esp32/uart_pins.h    U0RXD_GPIO_NUM 3    U0TXD_GPIO_NUM 1
+    esp32s3/uart_pins.h  U0RXD_GPIO_NUM 44   U0TXD_GPIO_NUM 43
+    esp32c3/uart_pins.h  U0RXD_GPIO_NUM 20   U0TXD_GPIO_NUM 21
+    esp32/spi_pins.h     SPI2 (HSPI) MOSI 13 MISO 12 CLK 14 CS 15;  SPI3 (VSPI) MOSI 23 MISO 19 CLK 18 CS 5
+    esp32s3/spi_pins.h   SPI2 MOSI 11 MISO 13 CLK 12 CS 10
+    esp32c3/spi_pins.h   SPI2 MOSI 7  MISO 2  CLK 6  CS 10
+  sposib: curl raw.githubusercontent для трьох цілей, 2026-08-26
+  notatka: >-
+    Покриває таблицю апаратних пінів у додатку A. Помилку в пінах SPI
+    для C3 (було 6/2/4/7) виправлено за цим джерелом ще на етапі
+    написання; тут зафіксовано доказ.
+
+- nazva: Типові піни I²C і бортового світлодіода в Arduino
+  zbih: 'pins_arduino\.h|типові для Arduino `SDA`|PIN_RGB_LED|DevKit\w*[^.]{0,40}`GPIO\d+`'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+  cytata: |
+    variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+    variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+    variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6,
+    таких значень немає в жодному варіанті. Те саме джерело підтверджує
+    номери бортових світлодіодів, ужиті в розділі 33.
