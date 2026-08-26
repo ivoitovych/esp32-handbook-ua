@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/33-peryferiya-kod.md`
 
-Одиниць твердження: **121**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **129**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -1933,12 +1933,12 @@
 
 ---
 
-<!-- fc id:T-33-112 sha:a7c26dcb src:manual/33-peryferiya-kod.md:264 klas:F -->
+<!-- fc id:T-33-112 sha:06cbcff5 src:manual/33-peryferiya-kod.md:264 klas:F -->
 ### T-33-112 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
-> [[classic]] [[S2]] Справжній аналоговий вихід, 8 розрядів, на `GPIO25` і `GPIO26`.
+> Справжній аналоговий вихід, 8 розрядів, два канали.
 
 **Доказ**
 
@@ -1946,12 +1946,12 @@
 
 ---
 
-<!-- fc id:T-33-113 sha:a73f83e1 src:manual/33-peryferiya-kod.md:264 klas:F -->
+<!-- fc id:T-33-113 sha:6b87ca03 src:manual/33-peryferiya-kod.md:264 klas:F -->
 ### T-33-113 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
-> Більше ніде в лінійці його немає (розділ 04).
+> Піни **різні** за сімействами:
 
 **Доказ**
 
@@ -1959,8 +1959,86 @@
 
 ---
 
-<!-- fc id:T-33-114 sha:c7206801 src:manual/33-peryferiya-kod.md:264 klas:F -->
-### T-33-114 · proza · рядок 264
+<!-- fc id:T-33-114 sha:48af3317 src:manual/33-peryferiya-kod.md:267 klas:F -->
+### T-33-114 · tablycya-shapka · рядок 267
+
+**Книга каже, дослівно:**
+
+> | | Канал 1 | Канал 2 |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-33-115 sha:2d6128fe src:manual/33-peryferiya-kod.md:268 klas:F -->
+### T-33-115 · komirka · рядок 268
+
+**Книга каже, дослівно:**
+
+> [[classic]] · Канал 1 → `GPIO25`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-33-116 sha:7d1d509e src:manual/33-peryferiya-kod.md:268 klas:F -->
+### T-33-116 · komirka · рядок 268
+
+**Книга каже, дослівно:**
+
+> [[classic]] · Канал 2 → `GPIO26`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-33-117 sha:7afccfc4 src:manual/33-peryferiya-kod.md:269 klas:F -->
+### T-33-117 · komirka · рядок 269
+
+**Книга каже, дослівно:**
+
+> [[S2]] · Канал 1 → `GPIO17`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-33-118 sha:69208de8 src:manual/33-peryferiya-kod.md:269 klas:F -->
+### T-33-118 · komirka · рядок 269
+
+**Книга каже, дослівно:**
+
+> [[S2]] · Канал 2 → `GPIO18`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-33-119 sha:580c0d2a src:manual/33-peryferiya-kod.md:272 klas:F -->
+### T-33-119 · proza · рядок 272
+
+**Книга каже, дослівно:**
+
+> Більше ніде в лінійці DAC немає (розділ 04).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-33-120 sha:c7206801 src:manual/33-peryferiya-kod.md:272 klas:F -->
+### T-33-120 · proza · рядок 272
 
 **Книга каже, дослівно:**
 
@@ -1972,8 +2050,48 @@
 
 ---
 
-<!-- fc id:T-33-115 sha:89f289a2 src:manual/33-peryferiya-kod.md:270 klas:F -->
-### T-33-115 · proza · рядок 270
+<!-- fc id:T-33-121 sha:d7aa1bdc src:manual/33-peryferiya-kod.md:276 klas:A -->
+### T-33-121 · proza · рядок 276
+
+**Книга каже, дослівно:**
+
+> `GPIO25` і `GPIO26` на S2 **не існують узагалі**: у нього немає пінів 22–25.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2}/include/soc/dac_channel.h
+- **Дослівно з джерела:**
+  > (esp32/dac_channel.h)
+  > #define DAC_CHAN0_GPIO_NUM      25
+  > #define DAC_CHAN1_GPIO_NUM      26
+  > 
+  > (esp32s2/dac_channel.h)
+  > #define DAC_CHAN0_GPIO_NUM      17
+  > #define DAC_CHAN1_GPIO_NUM      18
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка не рецензента, а нового інструмента `tools/piny.py`, який зробили за його зауваженням. Перший же запуск позначив рядок розділу 33: «[[classic]] [[S2]] … на `GPIO25` і `GPIO26`».
+Для classic це правда, для S2 — ні двічі: DAC там на `GPIO17`/`GPIO18`, а `GPIO25` у S2 взагалі не існує (маска вирізає 22–25).
+Показово, що ця помилка тієї самої природи, що знайдені рецензентом: твердження про два сімейства, вірне для одного. Тобто інструмент ловить саме клас, а не окремий випадок.
+- **Прохід:** pass-17-simeystva-proektiv
+
+---
+
+<!-- fc id:T-33-122 sha:fb9fa4e3 src:manual/33-peryferiya-kod.md:276 klas:F -->
+### T-33-122 · proza · рядок 276
+
+**Книга каже, дослівно:**
+
+> Тобто помилитися тут не «майже те саме», а неробочий код і `ESP_ERR_INVALID_ARG` при налаштуванні.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-33-123 sha:89f289a2 src:manual/33-peryferiya-kod.md:283 klas:F -->
+### T-33-123 · proza · рядок 283
 
 **Книга каже, дослівно:**
 
@@ -1985,8 +2103,8 @@
 
 ---
 
-<!-- fc id:T-33-116 sha:3b0d82f6 src:manual/33-peryferiya-kod.md:272 klas:F -->
-### T-33-116 · proza · рядок 272
+<!-- fc id:T-33-124 sha:3b0d82f6 src:manual/33-peryferiya-kod.md:285 klas:F -->
+### T-33-124 · proza · рядок 285
 
 **Книга каже, дослівно:**
 
@@ -1998,8 +2116,8 @@
 
 ---
 
-<!-- fc id:T-33-117 sha:d229616c src:manual/33-peryferiya-kod.md:274 klas:F -->
-### T-33-117 · proza · рядок 274
+<!-- fc id:T-33-125 sha:d229616c src:manual/33-peryferiya-kod.md:287 klas:F -->
+### T-33-125 · proza · рядок 287
 
 **Книга каже, дослівно:**
 
@@ -2011,8 +2129,8 @@
 
 ---
 
-<!-- fc id:T-33-118 sha:c9c22960 src:manual/33-peryferiya-kod.md:276 klas:F -->
-### T-33-118 · proza · рядок 276
+<!-- fc id:T-33-126 sha:c9c22960 src:manual/33-peryferiya-kod.md:289 klas:F -->
+### T-33-126 · proza · рядок 289
 
 **Книга каже, дослівно:**
 
@@ -2024,8 +2142,8 @@
 
 ---
 
-<!-- fc id:T-33-119 sha:93141a0c src:manual/33-peryferiya-kod.md:278 klas:F -->
-### T-33-119 · proza · рядок 278
+<!-- fc id:T-33-127 sha:93141a0c src:manual/33-peryferiya-kod.md:291 klas:F -->
+### T-33-127 · proza · рядок 291
 
 **Книга каже, дослівно:**
 
@@ -2037,8 +2155,8 @@
 
 ---
 
-<!-- fc id:T-33-120 sha:171ad095 src:manual/33-peryferiya-kod.md:280 klas:A -->
-### T-33-120 · proza · рядок 280
+<!-- fc id:T-33-128 sha:171ad095 src:manual/33-peryferiya-kod.md:293 klas:A -->
+### T-33-128 · proza · рядок 293
 
 **Книга каже, дослівно:**
 
@@ -2057,8 +2175,8 @@
 
 ---
 
-<!-- fc id:T-33-121 sha:679df6b2 src:manual/33-peryferiya-kod.md:283 klas:F -->
-### T-33-121 · proza · рядок 283
+<!-- fc id:T-33-129 sha:679df6b2 src:manual/33-peryferiya-kod.md:296 klas:F -->
+### T-33-129 · proza · рядок 296
 
 **Книга каже, дослівно:**
 

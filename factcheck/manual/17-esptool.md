@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/17-esptool.md`
 
-Одиниць твердження: **151**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **154**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -1099,12 +1099,12 @@
 
 ---
 
-<!-- fc id:T-17-057 sha:4c1213b5 src:manual/17-esptool.md:129 klas:F -->
+<!-- fc id:T-17-057 sha:8627aec2 src:manual/17-esptool.md:129 klas:F -->
 ### T-17-057 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
-> `-z` вмикає стиснення при передачі — швидше і, як не дивно, надійніше на довгих кабелях: менше байтів пройшло, менше нагод зіпсуватися.
+> `-z` вмикає стиснення при передачі.
 
 **Доказ**
 
@@ -1112,8 +1112,47 @@
 
 ---
 
-<!-- fc id:T-17-058 sha:12ca7f51 src:manual/17-esptool.md:132 klas:F -->
-### T-17-058 · proza · рядок 132
+<!-- fc id:T-17-058 sha:85b9b718 src:manual/17-esptool.md:129 klas:F -->
+### T-17-058 · proza · рядок 129
+
+**Книга каже, дослівно:**
+
+> Воно **вже ввімкнене** за замовчуванням, тож у звичайній команді прапорець нічого не змінює.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-059 sha:f86910b1 src:manual/17-esptool.md:129 klas:F -->
+### T-17-059 · proza · рядок 129
+
+**Книга каже, дослівно:**
+
+> Сенс він має лише разом із `--no-stub`, де стиснення типово вимкнене — а це саме той випадок із клонами, який розібрано нижче.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-060 sha:dafa4e9c src:manual/17-esptool.md:129 klas:F -->
+### T-17-060 · proza · рядок 129
+
+**Книга каже, дослівно:**
+
+> Користь від стиснення там подвійна: менше байтів пройшло довгим кабелем — менше нагод зіпсуватися.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-061 sha:12ca7f51 src:manual/17-esptool.md:136 klas:F -->
+### T-17-061 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -1125,8 +1164,8 @@
 
 ---
 
-<!-- fc id:T-17-059 sha:2711187e src:manual/17-esptool.md:132 klas:F -->
-### T-17-059 · proza · рядок 132
+<!-- fc id:T-17-062 sha:2711187e src:manual/17-esptool.md:136 klas:F -->
+### T-17-062 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -1138,8 +1177,8 @@
 
 ---
 
-<!-- fc id:T-17-060 sha:d5bda61e src:manual/17-esptool.md:132 klas:F -->
-### T-17-060 · proza · рядок 132
+<!-- fc id:T-17-063 sha:d5bda61e src:manual/17-esptool.md:136 klas:F -->
+### T-17-063 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -1151,8 +1190,8 @@
 
 ---
 
-<!-- fc id:T-17-061 sha:c7be6edf src:manual/17-esptool.md:136 klas:F -->
-### T-17-061 · proza · рядок 136
+<!-- fc id:T-17-064 sha:c7be6edf src:manual/17-esptool.md:140 klas:F -->
+### T-17-064 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -1164,8 +1203,8 @@
 
 ---
 
-<!-- fc id:T-17-062 sha:6cc1d835 src:manual/17-esptool.md:136 klas:F -->
-### T-17-062 · proza · рядок 136
+<!-- fc id:T-17-065 sha:6cc1d835 src:manual/17-esptool.md:140 klas:F -->
+### T-17-065 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -1177,8 +1216,8 @@
 
 ---
 
-<!-- fc id:T-17-063 sha:1edaa56d src:manual/17-esptool.md:141 klas:F -->
-### T-17-063 · kod · рядок 141
+<!-- fc id:T-17-066 sha:1edaa56d src:manual/17-esptool.md:145 klas:F -->
+### T-17-066 · kod · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -1192,8 +1231,8 @@
 
 ---
 
-<!-- fc id:T-17-064 sha:7a96df73 src:manual/17-esptool.md:142 klas:F -->
-### T-17-064 · kod-ryadok · рядок 142
+<!-- fc id:T-17-067 sha:7a96df73 src:manual/17-esptool.md:146 klas:F -->
+### T-17-067 · kod-ryadok · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -1205,8 +1244,8 @@
 
 ---
 
-<!-- fc id:T-17-065 sha:4c597925 src:manual/17-esptool.md:146 klas:F -->
-### T-17-065 · proza · рядок 146
+<!-- fc id:T-17-068 sha:4c597925 src:manual/17-esptool.md:150 klas:F -->
+### T-17-068 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -1218,8 +1257,8 @@
 
 ---
 
-<!-- fc id:T-17-066 sha:675172ea src:manual/17-esptool.md:146 klas:F -->
-### T-17-066 · proza · рядок 146
+<!-- fc id:T-17-069 sha:675172ea src:manual/17-esptool.md:150 klas:F -->
+### T-17-069 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -1231,8 +1270,8 @@
 
 ---
 
-<!-- fc id:T-17-067 sha:02d4467f src:manual/17-esptool.md:146 klas:F -->
-### T-17-067 · proza · рядок 146
+<!-- fc id:T-17-070 sha:02d4467f src:manual/17-esptool.md:150 klas:F -->
+### T-17-070 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -1244,8 +1283,8 @@
 
 ---
 
-<!-- fc id:T-17-068 sha:501abb75 src:manual/17-esptool.md:151 klas:F -->
-### T-17-068 · proza · рядок 151
+<!-- fc id:T-17-071 sha:501abb75 src:manual/17-esptool.md:155 klas:F -->
+### T-17-071 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -1257,8 +1296,8 @@
 
 ---
 
-<!-- fc id:T-17-069 sha:2b455157 src:manual/17-esptool.md:154 klas:F -->
-### T-17-069 · proza · рядок 154
+<!-- fc id:T-17-072 sha:2b455157 src:manual/17-esptool.md:158 klas:F -->
+### T-17-072 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -1270,8 +1309,8 @@
 
 ---
 
-<!-- fc id:T-17-070 sha:d9b8c3fc src:manual/17-esptool.md:158 klas:F -->
-### T-17-070 · proza · рядок 158
+<!-- fc id:T-17-073 sha:d9b8c3fc src:manual/17-esptool.md:162 klas:F -->
+### T-17-073 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1283,8 +1322,8 @@
 
 ---
 
-<!-- fc id:T-17-071 sha:72b6debe src:manual/17-esptool.md:158 klas:A -->
-### T-17-071 · proza · рядок 158
+<!-- fc id:T-17-074 sha:72b6debe src:manual/17-esptool.md:162 klas:A -->
+### T-17-074 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1316,8 +1355,8 @@
 
 ---
 
-<!-- fc id:T-17-072 sha:6361b41c src:manual/17-esptool.md:161 klas:F -->
-### T-17-072 · proza · рядок 161
+<!-- fc id:T-17-075 sha:6361b41c src:manual/17-esptool.md:165 klas:F -->
+### T-17-075 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1329,8 +1368,8 @@
 
 ---
 
-<!-- fc id:T-17-073 sha:5a1c829e src:manual/17-esptool.md:163 klas:A -->
-### T-17-073 · kod · рядок 163
+<!-- fc id:T-17-076 sha:5a1c829e src:manual/17-esptool.md:167 klas:A -->
+### T-17-076 · kod · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1366,8 +1405,8 @@
 
 ---
 
-<!-- fc id:T-17-074 sha:b3a989e0 src:manual/17-esptool.md:164 klas:A -->
-### T-17-074 · kod-ryadok · рядок 164
+<!-- fc id:T-17-077 sha:b3a989e0 src:manual/17-esptool.md:168 klas:A -->
+### T-17-077 · kod-ryadok · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -1401,8 +1440,8 @@
 
 ---
 
-<!-- fc id:T-17-075 sha:31d5a3a2 src:manual/17-esptool.md:169 klas:A -->
-### T-17-075 · kod · рядок 169
+<!-- fc id:T-17-078 sha:31d5a3a2 src:manual/17-esptool.md:173 klas:A -->
+### T-17-078 · kod · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1438,8 +1477,8 @@
 
 ---
 
-<!-- fc id:T-17-076 sha:c93ce3ef src:manual/17-esptool.md:170 klas:A -->
-### T-17-076 · kod-ryadok · рядок 170
+<!-- fc id:T-17-079 sha:c93ce3ef src:manual/17-esptool.md:174 klas:A -->
+### T-17-079 · kod-ryadok · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1473,8 +1512,8 @@
 
 ---
 
-<!-- fc id:T-17-077 sha:61989c98 src:manual/17-esptool.md:173 klas:F -->
-### T-17-077 · proza · рядок 173
+<!-- fc id:T-17-080 sha:61989c98 src:manual/17-esptool.md:177 klas:F -->
+### T-17-080 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1486,8 +1525,8 @@
 
 ---
 
-<!-- fc id:T-17-078 sha:6337a912 src:manual/17-esptool.md:173 klas:A -->
-### T-17-078 · proza · рядок 173
+<!-- fc id:T-17-081 sha:6337a912 src:manual/17-esptool.md:177 klas:A -->
+### T-17-081 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1521,8 +1560,8 @@
 
 ---
 
-<!-- fc id:T-17-079 sha:306c9a4d src:manual/17-esptool.md:173 klas:F -->
-### T-17-079 · proza · рядок 173
+<!-- fc id:T-17-082 sha:306c9a4d src:manual/17-esptool.md:177 klas:F -->
+### T-17-082 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1534,8 +1573,8 @@
 
 ---
 
-<!-- fc id:T-17-080 sha:3f578024 src:manual/17-esptool.md:179 klas:F -->
-### T-17-080 · proza · рядок 179
+<!-- fc id:T-17-083 sha:3f578024 src:manual/17-esptool.md:183 klas:F -->
+### T-17-083 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1547,8 +1586,8 @@
 
 ---
 
-<!-- fc id:T-17-081 sha:fc4482af src:manual/17-esptool.md:179 klas:F -->
-### T-17-081 · proza · рядок 179
+<!-- fc id:T-17-084 sha:fc4482af src:manual/17-esptool.md:183 klas:F -->
+### T-17-084 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1560,8 +1599,8 @@
 
 ---
 
-<!-- fc id:T-17-082 sha:c1d44c0d src:manual/17-esptool.md:183 klas:A -->
-### T-17-082 · kod · рядок 183
+<!-- fc id:T-17-085 sha:c1d44c0d src:manual/17-esptool.md:187 klas:A -->
+### T-17-085 · kod · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1595,8 +1634,8 @@
 
 ---
 
-<!-- fc id:T-17-083 sha:86df9991 src:manual/17-esptool.md:184 klas:A -->
-### T-17-083 · kod-ryadok · рядок 184
+<!-- fc id:T-17-086 sha:86df9991 src:manual/17-esptool.md:188 klas:A -->
+### T-17-086 · kod-ryadok · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -1625,8 +1664,8 @@
 
 ---
 
-<!-- fc id:T-17-084 sha:265e633f src:manual/17-esptool.md:190 klas:A -->
-### T-17-084 · proza · рядок 190
+<!-- fc id:T-17-087 sha:265e633f src:manual/17-esptool.md:194 klas:A -->
+### T-17-087 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1655,8 +1694,8 @@
 
 ---
 
-<!-- fc id:T-17-085 sha:6579e87b src:manual/17-esptool.md:190 klas:F -->
-### T-17-085 · proza · рядок 190
+<!-- fc id:T-17-088 sha:6579e87b src:manual/17-esptool.md:194 klas:F -->
+### T-17-088 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1668,8 +1707,8 @@
 
 ---
 
-<!-- fc id:T-17-086 sha:7acf702f src:manual/17-esptool.md:190 klas:A -->
-### T-17-086 · proza · рядок 190
+<!-- fc id:T-17-089 sha:7acf702f src:manual/17-esptool.md:194 klas:A -->
+### T-17-089 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1698,8 +1737,8 @@
 
 ---
 
-<!-- fc id:T-17-087 sha:2431f38a src:manual/17-esptool.md:195 klas:F -->
-### T-17-087 · proza · рядок 195
+<!-- fc id:T-17-090 sha:2431f38a src:manual/17-esptool.md:199 klas:F -->
+### T-17-090 · proza · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -1711,8 +1750,8 @@
 
 ---
 
-<!-- fc id:T-17-088 sha:66ee792a src:manual/17-esptool.md:195 klas:F -->
-### T-17-088 · proza · рядок 195
+<!-- fc id:T-17-091 sha:66ee792a src:manual/17-esptool.md:199 klas:F -->
+### T-17-091 · proza · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -1724,8 +1763,8 @@
 
 ---
 
-<!-- fc id:T-17-089 sha:a8ba7c8e src:manual/17-esptool.md:200 klas:F -->
-### T-17-089 · proza · рядок 200
+<!-- fc id:T-17-092 sha:a8ba7c8e src:manual/17-esptool.md:204 klas:F -->
+### T-17-092 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1737,8 +1776,8 @@
 
 ---
 
-<!-- fc id:T-17-090 sha:ba49e524 src:manual/17-esptool.md:203 klas:A -->
-### T-17-090 · kod · рядок 203
+<!-- fc id:T-17-093 sha:ba49e524 src:manual/17-esptool.md:207 klas:A -->
+### T-17-093 · kod · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1772,8 +1811,8 @@
 
 ---
 
-<!-- fc id:T-17-091 sha:f1947da9 src:manual/17-esptool.md:204 klas:A -->
-### T-17-091 · kod-ryadok · рядок 204
+<!-- fc id:T-17-094 sha:f1947da9 src:manual/17-esptool.md:208 klas:A -->
+### T-17-094 · kod-ryadok · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1805,8 +1844,8 @@
 
 ---
 
-<!-- fc id:T-17-092 sha:d53fd3ce src:manual/17-esptool.md:207 klas:F -->
-### T-17-092 · proza · рядок 207
+<!-- fc id:T-17-095 sha:d53fd3ce src:manual/17-esptool.md:211 klas:F -->
+### T-17-095 · proza · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -1818,8 +1857,8 @@
 
 ---
 
-<!-- fc id:T-17-093 sha:a0822607 src:manual/17-esptool.md:207 klas:F -->
-### T-17-093 · proza · рядок 207
+<!-- fc id:T-17-096 sha:a0822607 src:manual/17-esptool.md:211 klas:F -->
+### T-17-096 · proza · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -1831,8 +1870,8 @@
 
 ---
 
-<!-- fc id:T-17-094 sha:0c354cb5 src:manual/17-esptool.md:213 klas:F -->
-### T-17-094 · proza · рядок 213
+<!-- fc id:T-17-097 sha:0c354cb5 src:manual/17-esptool.md:217 klas:F -->
+### T-17-097 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1844,8 +1883,8 @@
 
 ---
 
-<!-- fc id:T-17-095 sha:ed62f710 src:manual/17-esptool.md:213 klas:F -->
-### T-17-095 · proza · рядок 213
+<!-- fc id:T-17-098 sha:ed62f710 src:manual/17-esptool.md:217 klas:F -->
+### T-17-098 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1857,8 +1896,8 @@
 
 ---
 
-<!-- fc id:T-17-096 sha:aa4bc88d src:manual/17-esptool.md:216 klas:A -->
-### T-17-096 · kod · рядок 216
+<!-- fc id:T-17-099 sha:aa4bc88d src:manual/17-esptool.md:220 klas:A -->
+### T-17-099 · kod · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -1885,8 +1924,8 @@
 
 ---
 
-<!-- fc id:T-17-097 sha:8d510e99 src:manual/17-esptool.md:217 klas:A -->
-### T-17-097 · kod-ryadok · рядок 217
+<!-- fc id:T-17-100 sha:8d510e99 src:manual/17-esptool.md:221 klas:A -->
+### T-17-100 · kod-ryadok · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1911,8 +1950,8 @@
 
 ---
 
-<!-- fc id:T-17-098 sha:85f58bc1 src:manual/17-esptool.md:220 klas:F -->
-### T-17-098 · proza · рядок 220
+<!-- fc id:T-17-101 sha:85f58bc1 src:manual/17-esptool.md:224 klas:F -->
+### T-17-101 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1924,8 +1963,8 @@
 
 ---
 
-<!-- fc id:T-17-099 sha:06b69d9f src:manual/17-esptool.md:220 klas:A -->
-### T-17-099 · proza · рядок 220
+<!-- fc id:T-17-102 sha:06b69d9f src:manual/17-esptool.md:224 klas:A -->
+### T-17-102 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1950,8 +1989,8 @@
 
 ---
 
-<!-- fc id:T-17-100 sha:6edab381 src:manual/17-esptool.md:226 klas:F -->
-### T-17-100 · proza · рядок 226
+<!-- fc id:T-17-103 sha:6edab381 src:manual/17-esptool.md:230 klas:F -->
+### T-17-103 · proza · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -1963,8 +2002,8 @@
 
 ---
 
-<!-- fc id:T-17-101 sha:c0359df7 src:manual/17-esptool.md:230 klas:A -->
-### T-17-101 · proza · рядок 230
+<!-- fc id:T-17-104 sha:c0359df7 src:manual/17-esptool.md:234 klas:A -->
+### T-17-104 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -1989,8 +2028,8 @@
 
 ---
 
-<!-- fc id:T-17-102 sha:5a1fb7e0 src:manual/17-esptool.md:233 klas:A -->
-### T-17-102 · proza · рядок 233
+<!-- fc id:T-17-105 sha:5a1fb7e0 src:manual/17-esptool.md:237 klas:A -->
+### T-17-105 · proza · рядок 237
 
 **Книга каже, дослівно:**
 
@@ -2015,8 +2054,8 @@
 
 ---
 
-<!-- fc id:T-17-103 sha:36e4678e src:manual/17-esptool.md:239 klas:A -->
-### T-17-103 · proza · рядок 239
+<!-- fc id:T-17-106 sha:36e4678e src:manual/17-esptool.md:243 klas:A -->
+### T-17-106 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -2053,8 +2092,8 @@
 
 ---
 
-<!-- fc id:T-17-104 sha:046e97d7 src:manual/17-esptool.md:242 klas:F -->
-### T-17-104 · proza · рядок 242
+<!-- fc id:T-17-107 sha:046e97d7 src:manual/17-esptool.md:246 klas:F -->
+### T-17-107 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -2066,8 +2105,8 @@
 
 ---
 
-<!-- fc id:T-17-105 sha:7eae188f src:manual/17-esptool.md:246 klas:F -->
-### T-17-105 · proza · рядок 246
+<!-- fc id:T-17-108 sha:7eae188f src:manual/17-esptool.md:250 klas:F -->
+### T-17-108 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -2079,8 +2118,8 @@
 
 ---
 
-<!-- fc id:T-17-106 sha:a9001ab8 src:manual/17-esptool.md:246 klas:A -->
-### T-17-106 · proza · рядок 246
+<!-- fc id:T-17-109 sha:a9001ab8 src:manual/17-esptool.md:250 klas:A -->
+### T-17-109 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -2117,8 +2156,8 @@
 
 ---
 
-<!-- fc id:T-17-107 sha:2936ba3a src:manual/17-esptool.md:246 klas:F -->
-### T-17-107 · proza · рядок 246
+<!-- fc id:T-17-110 sha:2936ba3a src:manual/17-esptool.md:250 klas:F -->
+### T-17-110 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -2130,8 +2169,8 @@
 
 ---
 
-<!-- fc id:T-17-108 sha:81eb3b69 src:manual/17-esptool.md:252 klas:F -->
-### T-17-108 · proza · рядок 252
+<!-- fc id:T-17-111 sha:81eb3b69 src:manual/17-esptool.md:256 klas:F -->
+### T-17-111 · proza · рядок 256
 
 **Книга каже, дослівно:**
 
@@ -2143,8 +2182,8 @@
 
 ---
 
-<!-- fc id:T-17-109 sha:c018ab70 src:manual/17-esptool.md:254 klas:F -->
-### T-17-109 · proza · рядок 254
+<!-- fc id:T-17-112 sha:c018ab70 src:manual/17-esptool.md:258 klas:F -->
+### T-17-112 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -2156,8 +2195,8 @@
 
 ---
 
-<!-- fc id:T-17-110 sha:1070199a src:manual/17-esptool.md:254 klas:F -->
-### T-17-110 · proza · рядок 254
+<!-- fc id:T-17-113 sha:1070199a src:manual/17-esptool.md:258 klas:F -->
+### T-17-113 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -2169,8 +2208,8 @@
 
 ---
 
-<!-- fc id:T-17-111 sha:7c5d9fa9 src:manual/17-esptool.md:257 klas:F -->
-### T-17-111 · proza · рядок 257
+<!-- fc id:T-17-114 sha:7c5d9fa9 src:manual/17-esptool.md:261 klas:F -->
+### T-17-114 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -2182,8 +2221,8 @@
 
 ---
 
-<!-- fc id:T-17-112 sha:d0ad404c src:manual/17-esptool.md:259 klas:F -->
-### T-17-112 · proza · рядок 259
+<!-- fc id:T-17-115 sha:d0ad404c src:manual/17-esptool.md:263 klas:F -->
+### T-17-115 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -2195,8 +2234,8 @@
 
 ---
 
-<!-- fc id:T-17-113 sha:cf4197d0 src:manual/17-esptool.md:259 klas:F -->
-### T-17-113 · proza · рядок 259
+<!-- fc id:T-17-116 sha:cf4197d0 src:manual/17-esptool.md:263 klas:F -->
+### T-17-116 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -2208,8 +2247,8 @@
 
 ---
 
-<!-- fc id:T-17-114 sha:e7619250 src:manual/17-esptool.md:262 klas:A -->
-### T-17-114 · proza · рядок 262
+<!-- fc id:T-17-117 sha:e7619250 src:manual/17-esptool.md:266 klas:A -->
+### T-17-117 · proza · рядок 266
 
 **Книга каже, дослівно:**
 
@@ -2246,8 +2285,8 @@
 
 ---
 
-<!-- fc id:T-17-115 sha:c6ae817f src:manual/17-esptool.md:264 klas:F -->
-### T-17-115 · proza · рядок 264
+<!-- fc id:T-17-118 sha:c6ae817f src:manual/17-esptool.md:268 klas:F -->
+### T-17-118 · proza · рядок 268
 
 **Книга каже, дослівно:**
 
@@ -2259,8 +2298,8 @@
 
 ---
 
-<!-- fc id:T-17-116 sha:dc7b5a5b src:manual/17-esptool.md:264 klas:F -->
-### T-17-116 · proza · рядок 264
+<!-- fc id:T-17-119 sha:dc7b5a5b src:manual/17-esptool.md:268 klas:F -->
+### T-17-119 · proza · рядок 268
 
 **Книга каже, дослівно:**
 
@@ -2272,8 +2311,8 @@
 
 ---
 
-<!-- fc id:T-17-117 sha:ea00dd94 src:manual/17-esptool.md:264 klas:F -->
-### T-17-117 · proza · рядок 264
+<!-- fc id:T-17-120 sha:ea00dd94 src:manual/17-esptool.md:268 klas:F -->
+### T-17-120 · proza · рядок 268
 
 **Книга каже, дослівно:**
 
@@ -2285,8 +2324,8 @@
 
 ---
 
-<!-- fc id:T-17-118 sha:acad2592 src:manual/17-esptool.md:264 klas:F -->
-### T-17-118 · proza · рядок 264
+<!-- fc id:T-17-121 sha:acad2592 src:manual/17-esptool.md:268 klas:F -->
+### T-17-121 · proza · рядок 268
 
 **Книга каже, дослівно:**
 
@@ -2298,8 +2337,8 @@
 
 ---
 
-<!-- fc id:T-17-119 sha:ec91ebc5 src:manual/17-esptool.md:269 klas:F -->
-### T-17-119 · proza · рядок 269
+<!-- fc id:T-17-122 sha:ec91ebc5 src:manual/17-esptool.md:273 klas:F -->
+### T-17-122 · proza · рядок 273
 
 **Книга каже, дослівно:**
 
@@ -2311,8 +2350,8 @@
 
 ---
 
-<!-- fc id:T-17-120 sha:290a4865 src:manual/17-esptool.md:271 klas:F -->
-### T-17-120 · proza · рядок 271
+<!-- fc id:T-17-123 sha:290a4865 src:manual/17-esptool.md:275 klas:F -->
+### T-17-123 · proza · рядок 275
 
 **Книга каже, дослівно:**
 
@@ -2324,8 +2363,8 @@
 
 ---
 
-<!-- fc id:T-17-121 sha:5e738a7f src:manual/17-esptool.md:271 klas:F -->
-### T-17-121 · proza · рядок 271
+<!-- fc id:T-17-124 sha:5e738a7f src:manual/17-esptool.md:275 klas:F -->
+### T-17-124 · proza · рядок 275
 
 **Книга каже, дослівно:**
 
@@ -2337,8 +2376,8 @@
 
 ---
 
-<!-- fc id:T-17-122 sha:c0befa74 src:manual/17-esptool.md:271 klas:F -->
-### T-17-122 · proza · рядок 271
+<!-- fc id:T-17-125 sha:c0befa74 src:manual/17-esptool.md:275 klas:F -->
+### T-17-125 · proza · рядок 275
 
 **Книга каже, дослівно:**
 
@@ -2350,8 +2389,8 @@
 
 ---
 
-<!-- fc id:T-17-123 sha:c229b138 src:manual/17-esptool.md:275 klas:A -->
-### T-17-123 · proza · рядок 275
+<!-- fc id:T-17-126 sha:c229b138 src:manual/17-esptool.md:279 klas:A -->
+### T-17-126 · proza · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -2388,8 +2427,8 @@
 
 ---
 
-<!-- fc id:T-17-124 sha:2d9087c4 src:manual/17-esptool.md:277 klas:F -->
-### T-17-124 · proza · рядок 277
+<!-- fc id:T-17-127 sha:2d9087c4 src:manual/17-esptool.md:281 klas:F -->
+### T-17-127 · proza · рядок 281
 
 **Книга каже, дослівно:**
 
@@ -2401,8 +2440,8 @@
 
 ---
 
-<!-- fc id:T-17-125 sha:efdb570a src:manual/17-esptool.md:277 klas:F -->
-### T-17-125 · proza · рядок 277
+<!-- fc id:T-17-128 sha:efdb570a src:manual/17-esptool.md:281 klas:F -->
+### T-17-128 · proza · рядок 281
 
 **Книга каже, дослівно:**
 
@@ -2414,8 +2453,8 @@
 
 ---
 
-<!-- fc id:T-17-126 sha:8a18dd3e src:manual/17-esptool.md:280 klas:F -->
-### T-17-126 · proza · рядок 280
+<!-- fc id:T-17-129 sha:8a18dd3e src:manual/17-esptool.md:284 klas:F -->
+### T-17-129 · proza · рядок 284
 
 **Книга каже, дослівно:**
 
@@ -2427,8 +2466,8 @@
 
 ---
 
-<!-- fc id:T-17-127 sha:f7560ce0 src:manual/17-esptool.md:282 klas:F -->
-### T-17-127 · proza · рядок 282
+<!-- fc id:T-17-130 sha:f7560ce0 src:manual/17-esptool.md:286 klas:F -->
+### T-17-130 · proza · рядок 286
 
 **Книга каже, дослівно:**
 
@@ -2440,8 +2479,8 @@
 
 ---
 
-<!-- fc id:T-17-128 sha:567f0570 src:manual/17-esptool.md:282 klas:A -->
-### T-17-128 · proza · рядок 282
+<!-- fc id:T-17-131 sha:567f0570 src:manual/17-esptool.md:286 klas:A -->
+### T-17-131 · proza · рядок 286
 
 **Книга каже, дослівно:**
 
@@ -2466,8 +2505,8 @@
 
 ---
 
-<!-- fc id:T-17-129 sha:f93a70ab src:manual/17-esptool.md:287 klas:F -->
-### T-17-129 · proza · рядок 287
+<!-- fc id:T-17-132 sha:f93a70ab src:manual/17-esptool.md:291 klas:F -->
+### T-17-132 · proza · рядок 291
 
 **Книга каже, дослівно:**
 
@@ -2479,8 +2518,8 @@
 
 ---
 
-<!-- fc id:T-17-130 sha:c2ed87c0 src:manual/17-esptool.md:289 klas:A -->
-### T-17-130 · kod · рядок 289
+<!-- fc id:T-17-133 sha:c2ed87c0 src:manual/17-esptool.md:293 klas:A -->
+### T-17-133 · kod · рядок 293
 
 **Книга каже, дослівно:**
 
@@ -2514,8 +2553,8 @@
 
 ---
 
-<!-- fc id:T-17-131 sha:e196de7b src:manual/17-esptool.md:290 klas:A -->
-### T-17-131 · kod-ryadok · рядок 290
+<!-- fc id:T-17-134 sha:e196de7b src:manual/17-esptool.md:294 klas:A -->
+### T-17-134 · kod-ryadok · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -2547,8 +2586,8 @@
 
 ---
 
-<!-- fc id:T-17-132 sha:10d41f6e src:manual/17-esptool.md:293 klas:A -->
-### T-17-132 · proza · рядок 293
+<!-- fc id:T-17-135 sha:10d41f6e src:manual/17-esptool.md:297 klas:A -->
+### T-17-135 · proza · рядок 297
 
 **Книга каже, дослівно:**
 
@@ -2573,8 +2612,8 @@
 
 ---
 
-<!-- fc id:T-17-133 sha:6ac44b20 src:manual/17-esptool.md:293 klas:F -->
-### T-17-133 · proza · рядок 293
+<!-- fc id:T-17-136 sha:6ac44b20 src:manual/17-esptool.md:297 klas:F -->
+### T-17-136 · proza · рядок 297
 
 **Книга каже, дослівно:**
 
@@ -2586,8 +2625,8 @@
 
 ---
 
-<!-- fc id:T-17-134 sha:59239464 src:manual/17-esptool.md:297 klas:F -->
-### T-17-134 · proza · рядок 297
+<!-- fc id:T-17-137 sha:59239464 src:manual/17-esptool.md:301 klas:F -->
+### T-17-137 · proza · рядок 301
 
 **Книга каже, дослівно:**
 
@@ -2599,8 +2638,8 @@
 
 ---
 
-<!-- fc id:T-17-135 sha:391b6f3d src:manual/17-esptool.md:300 klas:A -->
-### T-17-135 · proza · рядок 300
+<!-- fc id:T-17-138 sha:391b6f3d src:manual/17-esptool.md:304 klas:A -->
+### T-17-138 · proza · рядок 304
 
 **Книга каже, дослівно:**
 
@@ -2637,8 +2676,8 @@
 
 ---
 
-<!-- fc id:T-17-136 sha:2d2315ba src:manual/17-esptool.md:300 klas:F -->
-### T-17-136 · proza · рядок 300
+<!-- fc id:T-17-139 sha:2d2315ba src:manual/17-esptool.md:304 klas:F -->
+### T-17-139 · proza · рядок 304
 
 **Книга каже, дослівно:**
 
@@ -2650,8 +2689,8 @@
 
 ---
 
-<!-- fc id:T-17-137 sha:6f4d2986 src:manual/17-esptool.md:302 klas:F -->
-### T-17-137 · proza · рядок 302
+<!-- fc id:T-17-140 sha:6f4d2986 src:manual/17-esptool.md:306 klas:F -->
+### T-17-140 · proza · рядок 306
 
 **Книга каже, дослівно:**
 
@@ -2663,8 +2702,8 @@
 
 ---
 
-<!-- fc id:T-17-138 sha:4a61aa2a src:manual/17-esptool.md:302 klas:F -->
-### T-17-138 · proza · рядок 302
+<!-- fc id:T-17-141 sha:4a61aa2a src:manual/17-esptool.md:306 klas:F -->
+### T-17-141 · proza · рядок 306
 
 **Книга каже, дослівно:**
 
@@ -2676,8 +2715,8 @@
 
 ---
 
-<!-- fc id:T-17-139 sha:6c0640de src:manual/17-esptool.md:302 klas:F -->
-### T-17-139 · proza · рядок 302
+<!-- fc id:T-17-142 sha:6c0640de src:manual/17-esptool.md:306 klas:F -->
+### T-17-142 · proza · рядок 306
 
 **Книга каже, дослівно:**
 
@@ -2689,8 +2728,8 @@
 
 ---
 
-<!-- fc id:T-17-140 sha:0df8e570 src:manual/17-esptool.md:306 klas:A -->
-### T-17-140 · proza · рядок 306
+<!-- fc id:T-17-143 sha:0df8e570 src:manual/17-esptool.md:310 klas:A -->
+### T-17-143 · proza · рядок 310
 
 **Книга каже, дослівно:**
 
@@ -2727,8 +2766,8 @@
 
 ---
 
-<!-- fc id:T-17-141 sha:d286f7b3 src:manual/17-esptool.md:310 klas:F -->
-### T-17-141 · proza · рядок 310
+<!-- fc id:T-17-144 sha:d286f7b3 src:manual/17-esptool.md:314 klas:F -->
+### T-17-144 · proza · рядок 314
 
 **Книга каже, дослівно:**
 
@@ -2740,8 +2779,8 @@
 
 ---
 
-<!-- fc id:T-17-142 sha:2a9519b0 src:manual/17-esptool.md:315 klas:F -->
-### T-17-142 · proza · рядок 315
+<!-- fc id:T-17-145 sha:2a9519b0 src:manual/17-esptool.md:319 klas:F -->
+### T-17-145 · proza · рядок 319
 
 **Книга каже, дослівно:**
 
@@ -2753,8 +2792,8 @@
 
 ---
 
-<!-- fc id:T-17-143 sha:918d6503 src:manual/17-esptool.md:315 klas:F -->
-### T-17-143 · proza · рядок 315
+<!-- fc id:T-17-146 sha:918d6503 src:manual/17-esptool.md:319 klas:F -->
+### T-17-146 · proza · рядок 319
 
 **Книга каже, дослівно:**
 
@@ -2766,8 +2805,8 @@
 
 ---
 
-<!-- fc id:T-17-144 sha:313ef396 src:manual/17-esptool.md:319 klas:F -->
-### T-17-144 · proza · рядок 319
+<!-- fc id:T-17-147 sha:313ef396 src:manual/17-esptool.md:323 klas:F -->
+### T-17-147 · proza · рядок 323
 
 **Книга каже, дослівно:**
 
@@ -2779,8 +2818,8 @@
 
 ---
 
-<!-- fc id:T-17-145 sha:e977c57d src:manual/17-esptool.md:319 klas:F -->
-### T-17-145 · proza · рядок 319
+<!-- fc id:T-17-148 sha:e977c57d src:manual/17-esptool.md:323 klas:F -->
+### T-17-148 · proza · рядок 323
 
 **Книга каже, дослівно:**
 
@@ -2792,8 +2831,8 @@
 
 ---
 
-<!-- fc id:T-17-146 sha:2d322667 src:manual/17-esptool.md:326 klas:F -->
-### T-17-146 · proza · рядок 326
+<!-- fc id:T-17-149 sha:2d322667 src:manual/17-esptool.md:330 klas:F -->
+### T-17-149 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2805,8 +2844,8 @@
 
 ---
 
-<!-- fc id:T-17-147 sha:8eda1231 src:manual/17-esptool.md:328 klas:F -->
-### T-17-147 · proza · рядок 328
+<!-- fc id:T-17-150 sha:8eda1231 src:manual/17-esptool.md:332 klas:F -->
+### T-17-150 · proza · рядок 332
 
 **Книга каже, дослівно:**
 
@@ -2818,8 +2857,8 @@
 
 ---
 
-<!-- fc id:T-17-148 sha:a7f08f37 src:manual/17-esptool.md:330 klas:F -->
-### T-17-148 · proza · рядок 330
+<!-- fc id:T-17-151 sha:a7f08f37 src:manual/17-esptool.md:334 klas:F -->
+### T-17-151 · proza · рядок 334
 
 **Книга каже, дослівно:**
 
@@ -2831,8 +2870,8 @@
 
 ---
 
-<!-- fc id:T-17-149 sha:0de9cf8b src:manual/17-esptool.md:330 klas:F -->
-### T-17-149 · proza · рядок 330
+<!-- fc id:T-17-152 sha:0de9cf8b src:manual/17-esptool.md:334 klas:F -->
+### T-17-152 · proza · рядок 334
 
 **Книга каже, дослівно:**
 
@@ -2844,8 +2883,8 @@
 
 ---
 
-<!-- fc id:T-17-150 sha:42368b26 src:manual/17-esptool.md:333 klas:A -->
-### T-17-150 · proza · рядок 333
+<!-- fc id:T-17-153 sha:42368b26 src:manual/17-esptool.md:337 klas:A -->
+### T-17-153 · proza · рядок 337
 
 **Книга каже, дослівно:**
 
@@ -2879,8 +2918,8 @@
 
 ---
 
-<!-- fc id:T-17-151 sha:33a8f7c8 src:manual/17-esptool.md:335 klas:F -->
-### T-17-151 · proza · рядок 335
+<!-- fc id:T-17-154 sha:33a8f7c8 src:manual/17-esptool.md:339 klas:F -->
+### T-17-154 · proza · рядок 339
 
 **Книга каже, дослівно:**
 

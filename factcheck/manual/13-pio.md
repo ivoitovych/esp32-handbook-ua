@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/13-pio.md`
 
-Одиниць твердження: **62**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **72**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -266,14 +266,14 @@
 
 ---
 
-<!-- fc id:T-13-021 sha:10e67bfe src:manual/13-pio.md:56 klas:C -->
+<!-- fc id:T-13-021 sha:9cc8c88c src:manual/13-pio.md:56 klas:A -->
 ### T-13-021 · kod · рядок 56
 
 **Книга каже, дослівно:**
 
 > ```ini
 > [env:esp32dev]
-> platform = espressif32 @ 6.5.0
+> platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
 > board = esp32dev
 > framework = arduino
 > monitor_speed = 115200
@@ -287,16 +287,161 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md та .../55.03.311/platform.json
+- **Дослівно з джерела:**
+  > ### Stable Arduino
+  > currently espressif Arduino 3.3.11 and IDF v5.5.5.
+  > 
+  > [env:stable]
+  > platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+  > board = ...
+  > 
+  > (platform.json теґа 55.03.311)
+  > "version": "55.03.311"
+  > …/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення за рецензією. Розділ 13 правильно пояснював, що для Arduino 3.x і нових чипів потрібен `pioarduino`, — і давав для копіювання `platform = espressif32 @ 6.5.0`, тобто офіційну платформу епохи Arduino 2.x. Причому й у прикладі для S3.
+Розбіжність між тим, що книга радить, і тим, що читач може скопіювати, гірша за просто застарілий приклад: копіюють частіше, ніж читають.
+Усі приклади переведено на `pioarduino`. Рядок `platform` у розділі про кілька середовищ винесено в спільну секцію `[env]` — дві плати мусять збиратися однією платформою.
+Пінування показано тегом релізу (`55.03.311`), а сам номер відсилає до таблиці версій частини IV, як вимагає Р4.
+Підтверджено й те, що робить пораду несуперечливою: README форка називає ті самі Arduino 3.3.11 та IDF 5.5.5, що стоять у `toolchain-baseline.yaml`.
+- **Прохід:** pass-17-simeystva-proektiv
 
 ---
 
-<!-- fc id:T-13-022 sha:941bc495 src:manual/13-pio.md:70 klas:F -->
-### T-13-022 · proza · рядок 70
+<!-- fc id:T-13-022 sha:f9f47141 src:manual/13-pio.md:71 klas:A -->
+### T-13-022 · proza · рядок 71
+
+**Книга каже, дослівно:**
+
+> **Чому в рядку `platform` посилання, а не звичне `espressif32 @ 6.5.0`.**
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md та .../55.03.311/platform.json
+- **Дослівно з джерела:**
+  > ### Stable Arduino
+  > currently espressif Arduino 3.3.11 and IDF v5.5.5.
+  > 
+  > [env:stable]
+  > platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+  > board = ...
+  > 
+  > (platform.json теґа 55.03.311)
+  > "version": "55.03.311"
+  > …/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення за рецензією. Розділ 13 правильно пояснював, що для Arduino 3.x і нових чипів потрібен `pioarduino`, — і давав для копіювання `platform = espressif32 @ 6.5.0`, тобто офіційну платформу епохи Arduino 2.x. Причому й у прикладі для S3.
+Розбіжність між тим, що книга радить, і тим, що читач може скопіювати, гірша за просто застарілий приклад: копіюють частіше, ніж читають.
+Усі приклади переведено на `pioarduino`. Рядок `platform` у розділі про кілька середовищ винесено в спільну секцію `[env]` — дві плати мусять збиратися однією платформою.
+Пінування показано тегом релізу (`55.03.311`), а сам номер відсилає до таблиці версій частини IV, як вимагає Р4.
+Підтверджено й те, що робить пораду несуперечливою: README форка називає ті самі Arduino 3.3.11 та IDF 5.5.5, що стоять у `toolchain-baseline.yaml`.
+- **Прохід:** pass-17-simeystva-proektiv
+
+---
+
+<!-- fc id:T-13-023 sha:60ff61c5 src:manual/13-pio.md:73 klas:A -->
+### T-13-023 · proza · рядок 73
+
+**Книга каже, дослівно:**
+
+> Офіційна платформа PlatformIO лишилася на Arduino 2.x.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md та .../55.03.311/platform.json
+- **Дослівно з джерела:**
+  > ### Stable Arduino
+  > currently espressif Arduino 3.3.11 and IDF v5.5.5.
+  > 
+  > [env:stable]
+  > platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+  > board = ...
+  > 
+  > (platform.json теґа 55.03.311)
+  > "version": "55.03.311"
+  > …/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення за рецензією. Розділ 13 правильно пояснював, що для Arduino 3.x і нових чипів потрібен `pioarduino`, — і давав для копіювання `platform = espressif32 @ 6.5.0`, тобто офіційну платформу епохи Arduino 2.x. Причому й у прикладі для S3.
+Розбіжність між тим, що книга радить, і тим, що читач може скопіювати, гірша за просто застарілий приклад: копіюють частіше, ніж читають.
+Усі приклади переведено на `pioarduino`. Рядок `platform` у розділі про кілька середовищ винесено в спільну секцію `[env]` — дві плати мусять збиратися однією платформою.
+Пінування показано тегом релізу (`55.03.311`), а сам номер відсилає до таблиці версій частини IV, як вимагає Р4.
+Підтверджено й те, що робить пораду несуперечливою: README форка називає ті самі Arduino 3.3.11 та IDF 5.5.5, що стоять у `toolchain-baseline.yaml`.
+- **Прохід:** pass-17-simeystva-proektiv
+
+---
+
+<!-- fc id:T-13-024 sha:bd308fc1 src:manual/13-pio.md:73 klas:F -->
+### T-13-024 · proza · рядок 73
+
+**Книга каже, дослівно:**
+
+> Запис `espressif32 @ 6.5.0` збереться — і дасть Arduino 2.x, тобто не те, про що написано в розділі 12, і без підтримки нових чипів.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-025 sha:749a3756 src:manual/13-pio.md:77 klas:F -->
+### T-13-025 · proza · рядок 77
+
+**Книга каже, дослівно:**
+
+> `pioarduino` розповсюджується не через реєстр PlatformIO, а архівом релізу, тому й рядок такий довгий.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-026 sha:a8551e95 src:manual/13-pio.md:77 klas:A -->
+### T-13-026 · proza · рядок 77
+
+**Книга каже, дослівно:**
+
+> Мітка `stable` завжди вказує на поточний стабільний реліз форка — на момент цієї ревізії це Arduino 3.3.11 і ESP-IDF 5.5.5 (таблиця версій у частині IV).
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
+- **Дослівно з джерела:**
+  > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
+  > esp-idf v5.5.5  → 200,  v5.5.6 → 404
+  > esptool v5.3.1  → 200,  v5.3.2 → 404      __init__.py: __version__ = "5.3.1"
+  > arduino-esp32 3.3.11 → 200, 3.3.12 → 404  platform.txt: version=3.3.11
+  > pioarduino 55.03.311 → 200, 55.03.312 → 404
+  >     platform.json: "version": "55.03.311"
+  >     і в ньому ж: .../arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, коди відповіді + файли версій, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Кожна з чотирьох версій підтверджена двічі: існуванням теґа й номером усередині самого репозиторію на цьому теґу. Наступного теґа немає в жодного — тобто це справді найновіші, а не просто наявні.
+Окремо цінне спостереження: `platform.json` pioarduino 55.03.311 тягне саме `esp32-core-3.3.11`. Тобто два рядки таблиці версій книги узгоджені між собою не за збігом, а за побудовою — форк PlatformIO пінує рівно ту версію Arduino core, яку книга називає поточною.
+`toolchain-baseline.yaml` уже мав `status: verified` на всіх чотирьох; цей прохід перевірив, що позначка відповідає дійсності, а не лишилася від попередньої ревізії.
+- **Прохід:** pass-15-versiyi
+
+---
+
+<!-- fc id:T-13-027 sha:47baf400 src:manual/13-pio.md:82 klas:F -->
+### T-13-027 · proza · рядок 82
+
+**Книга каже, дослівно:**
+
+> Старий запис лишається доречним рівно в одному випадку: проєкт свідомо живе на Arduino 2.x і переносити його нікуди.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-028 sha:941bc495 src:manual/13-pio.md:86 klas:F -->
+### T-13-028 · proza · рядок 86
 
 **Книга каже, дослівно:**
 
@@ -308,12 +453,12 @@
 
 ---
 
-<!-- fc id:T-13-023 sha:e90c97f6 src:manual/13-pio.md:72 klas:F -->
-### T-13-023 · proza · рядок 72
+<!-- fc id:T-13-029 sha:a126aa2c src:manual/13-pio.md:88 klas:F -->
+### T-13-029 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
-> **`platform` із версією.** Тут `@ 6.5.0` — конкретна версія платформи.
+> **`platform`.** Тут — джерело платформи, а не лише її версія.
 
 **Доказ**
 
@@ -321,8 +466,8 @@
 
 ---
 
-<!-- fc id:T-13-024 sha:ae130aac src:manual/13-pio.md:75 klas:F -->
-### T-13-024 · proza · рядок 75
+<!-- fc id:T-13-030 sha:ae130aac src:manual/13-pio.md:91 klas:F -->
+### T-13-030 · proza · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -334,8 +479,8 @@
 
 ---
 
-<!-- fc id:T-13-025 sha:be464ff9 src:manual/13-pio.md:80 klas:F -->
-### T-13-025 · proza · рядок 80
+<!-- fc id:T-13-031 sha:be464ff9 src:manual/13-pio.md:96 klas:F -->
+### T-13-031 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -347,12 +492,12 @@
 
 ---
 
-<!-- fc id:T-13-026 sha:a6c66358 src:manual/13-pio.md:83 klas:F -->
-### T-13-026 · proza · рядок 83
+<!-- fc id:T-13-032 sha:d5d76327 src:manual/13-pio.md:99 klas:F -->
+### T-13-032 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
-> Для pioarduino рядок `platform` вказує на репозиторій форка з конкретним тегом — точний формат дивіться в його документації, він змінювався.
+> Для `pioarduino` пінування — це заміна мітки `stable` на **тег релізу**:
 
 **Доказ**
 
@@ -360,8 +505,50 @@
 
 ---
 
-<!-- fc id:T-13-027 sha:2343936e src:manual/13-pio.md:87 klas:F -->
-### T-13-027 · proza · рядок 87
+<!-- fc id:T-13-033 sha:827612bd src:manual/13-pio.md:101 klas:A -->
+### T-13-033 · kod · рядок 101
+
+**Книга каже, дослівно:**
+
+> ```ini
+> platform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
+- **Дослівно з джерела:**
+  > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
+  > esp-idf v5.5.5  → 200,  v5.5.6 → 404
+  > esptool v5.3.1  → 200,  v5.3.2 → 404      __init__.py: __version__ = "5.3.1"
+  > arduino-esp32 3.3.11 → 200, 3.3.12 → 404  platform.txt: version=3.3.11
+  > pioarduino 55.03.311 → 200, 55.03.312 → 404
+  >     platform.json: "version": "55.03.311"
+  >     і в ньому ж: .../arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, коди відповіді + файли версій, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Кожна з чотирьох версій підтверджена двічі: існуванням теґа й номером усередині самого репозиторію на цьому теґу. Наступного теґа немає в жодного — тобто це справді найновіші, а не просто наявні.
+Окремо цінне спостереження: `platform.json` pioarduino 55.03.311 тягне саме `esp32-core-3.3.11`. Тобто два рядки таблиці версій книги узгоджені між собою не за збігом, а за побудовою — форк PlatformIO пінує рівно ту версію Arduino core, яку книга називає поточною.
+`toolchain-baseline.yaml` уже мав `status: verified` на всіх чотирьох; цей прохід перевірив, що позначка відповідає дійсності, а не лишилася від попередньої ревізії.
+- **Прохід:** pass-15-versiyi
+
+---
+
+<!-- fc id:T-13-034 sha:fd412be3 src:manual/13-pio.md:105 klas:F -->
+### T-13-034 · proza · рядок 105
+
+**Книга каже, дослівно:**
+
+> Номер тегу — з таблиці версій у частині IV; вона єдине місце в книзі, де версії живуть, і оновлюється окремо від тексту (Р4).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-035 sha:2343936e src:manual/13-pio.md:109 klas:F -->
+### T-13-035 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -373,8 +560,8 @@
 
 ---
 
-<!-- fc id:T-13-028 sha:c8f4d86f src:manual/13-pio.md:87 klas:F -->
-### T-13-028 · proza · рядок 87
+<!-- fc id:T-13-036 sha:c8f4d86f src:manual/13-pio.md:109 klas:F -->
+### T-13-036 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -386,8 +573,8 @@
 
 ---
 
-<!-- fc id:T-13-029 sha:7934e141 src:manual/13-pio.md:87 klas:F -->
-### T-13-029 · proza · рядок 87
+<!-- fc id:T-13-037 sha:7934e141 src:manual/13-pio.md:109 klas:F -->
+### T-13-037 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -399,8 +586,8 @@
 
 ---
 
-<!-- fc id:T-13-030 sha:18fbe0ff src:manual/13-pio.md:91 klas:F -->
-### T-13-030 · proza · рядок 91
+<!-- fc id:T-13-038 sha:18fbe0ff src:manual/13-pio.md:113 klas:F -->
+### T-13-038 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -412,8 +599,8 @@
 
 ---
 
-<!-- fc id:T-13-031 sha:79d6fd32 src:manual/13-pio.md:93 klas:F -->
-### T-13-031 · proza · рядок 93
+<!-- fc id:T-13-039 sha:79d6fd32 src:manual/13-pio.md:115 klas:F -->
+### T-13-039 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -425,8 +612,8 @@
 
 ---
 
-<!-- fc id:T-13-032 sha:33af8147 src:manual/13-pio.md:93 klas:F -->
-### T-13-032 · proza · рядок 93
+<!-- fc id:T-13-040 sha:33af8147 src:manual/13-pio.md:115 klas:F -->
+### T-13-040 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -438,8 +625,8 @@
 
 ---
 
-<!-- fc id:T-13-033 sha:7b36f4c5 src:manual/13-pio.md:96 klas:F -->
-### T-13-033 · proza · рядок 96
+<!-- fc id:T-13-041 sha:7b36f4c5 src:manual/13-pio.md:118 klas:F -->
+### T-13-041 · proza · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -451,8 +638,8 @@
 
 ---
 
-<!-- fc id:T-13-034 sha:4b5106dd src:manual/13-pio.md:96 klas:F -->
-### T-13-034 · proza · рядок 96
+<!-- fc id:T-13-042 sha:4b5106dd src:manual/13-pio.md:118 klas:F -->
+### T-13-042 · proza · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -464,8 +651,8 @@
 
 ---
 
-<!-- fc id:T-13-035 sha:6a3b8741 src:manual/13-pio.md:101 klas:F -->
-### T-13-035 · proza · рядок 101
+<!-- fc id:T-13-043 sha:6a3b8741 src:manual/13-pio.md:123 klas:F -->
+### T-13-043 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -477,8 +664,8 @@
 
 ---
 
-<!-- fc id:T-13-036 sha:06da8a1a src:manual/13-pio.md:103 klas:C -->
-### T-13-036 · kod · рядок 103
+<!-- fc id:T-13-044 sha:527078ef src:manual/13-pio.md:125 klas:A -->
+### T-13-044 · kod · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -488,28 +675,70 @@
 > monitor_speed = 115200
 > lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2
 > 
+> [env]
+> platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+> 
 > [env:classic]
-> platform = espressif32 @ 6.5.0
 > board = esp32dev
 > 
 > [env:s3]
-> platform = espressif32 @ 6.5.0
 > board = esp32-s3-devkitc-1
 > build_flags = -DHAS_PSRAM
 > ```
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/pioarduino/platform-espressif32/main/README.md та .../55.03.311/platform.json
+- **Дослівно з джерела:**
+  > ### Stable Arduino
+  > currently espressif Arduino 3.3.11 and IDF v5.5.5.
+  > 
+  > [env:stable]
+  > platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+  > board = ...
+  > 
+  > (platform.json теґа 55.03.311)
+  > "version": "55.03.311"
+  > …/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення за рецензією. Розділ 13 правильно пояснював, що для Arduino 3.x і нових чипів потрібен `pioarduino`, — і давав для копіювання `platform = espressif32 @ 6.5.0`, тобто офіційну платформу епохи Arduino 2.x. Причому й у прикладі для S3.
+Розбіжність між тим, що книга радить, і тим, що читач може скопіювати, гірша за просто застарілий приклад: копіюють частіше, ніж читають.
+Усі приклади переведено на `pioarduino`. Рядок `platform` у розділі про кілька середовищ винесено в спільну секцію `[env]` — дві плати мусять збиратися однією платформою.
+Пінування показано тегом релізу (`55.03.311`), а сам номер відсилає до таблиці версій частини IV, як вимагає Р4.
+Підтверджено й те, що робить пораду несуперечливою: README форка називає ті самі Arduino 3.3.11 та IDF 5.5.5, що стоять у `toolchain-baseline.yaml`.
+- **Прохід:** pass-17-simeystva-proektiv
 
 ---
 
-<!-- fc id:T-13-037 sha:f476ea82 src:manual/13-pio.md:119 klas:F -->
-### T-13-037 · proza · рядок 119
+<!-- fc id:T-13-045 sha:262212b8 src:manual/13-pio.md:142 klas:F -->
+### T-13-045 · proza · рядок 142
+
+**Книга каже, дослівно:**
+
+> Рядок `platform` винесено в спільну секцію навмисно: дві плати мають збиратися **однією** платформою, інакше різниця між середовищами перестає бути різницею плат.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-046 sha:6c4a7027 src:manual/13-pio.md:142 klas:F -->
+### T-13-046 · proza · рядок 142
+
+**Книга каже, дослівно:**
+
+> Для S3 це не косметика — офіційна платформа його новіші ревізії просто не знає.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-047 sha:f476ea82 src:manual/13-pio.md:147 klas:F -->
+### T-13-047 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -521,8 +750,8 @@
 
 ---
 
-<!-- fc id:T-13-038 sha:407ecd76 src:manual/13-pio.md:119 klas:F -->
-### T-13-038 · proza · рядок 119
+<!-- fc id:T-13-048 sha:407ecd76 src:manual/13-pio.md:147 klas:F -->
+### T-13-048 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -534,8 +763,8 @@
 
 ---
 
-<!-- fc id:T-13-039 sha:47b4dc2c src:manual/13-pio.md:122 klas:F -->
-### T-13-039 · proza · рядок 122
+<!-- fc id:T-13-049 sha:47b4dc2c src:manual/13-pio.md:150 klas:F -->
+### T-13-049 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -547,8 +776,8 @@
 
 ---
 
-<!-- fc id:T-13-040 sha:7c1dad7e src:manual/13-pio.md:128 klas:F -->
-### T-13-040 · proza · рядок 128
+<!-- fc id:T-13-050 sha:7c1dad7e src:manual/13-pio.md:156 klas:F -->
+### T-13-050 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -560,8 +789,8 @@
 
 ---
 
-<!-- fc id:T-13-041 sha:36a4b4be src:manual/13-pio.md:128 klas:F -->
-### T-13-041 · proza · рядок 128
+<!-- fc id:T-13-051 sha:36a4b4be src:manual/13-pio.md:156 klas:F -->
+### T-13-051 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -573,8 +802,8 @@
 
 ---
 
-<!-- fc id:T-13-042 sha:830b1a26 src:manual/13-pio.md:133 klas:F -->
-### T-13-042 · proza · рядок 133
+<!-- fc id:T-13-052 sha:830b1a26 src:manual/13-pio.md:161 klas:F -->
+### T-13-052 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -586,8 +815,8 @@
 
 ---
 
-<!-- fc id:T-13-043 sha:2b4c7e4e src:manual/13-pio.md:137 klas:F -->
-### T-13-043 · proza · рядок 137
+<!-- fc id:T-13-053 sha:2b4c7e4e src:manual/13-pio.md:165 klas:F -->
+### T-13-053 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -599,8 +828,8 @@
 
 ---
 
-<!-- fc id:T-13-044 sha:f0918098 src:manual/13-pio.md:141 klas:F -->
-### T-13-044 · proza · рядок 141
+<!-- fc id:T-13-054 sha:f0918098 src:manual/13-pio.md:169 klas:F -->
+### T-13-054 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -612,8 +841,8 @@
 
 ---
 
-<!-- fc id:T-13-045 sha:f8ccc59c src:manual/13-pio.md:144 klas:C -->
-### T-13-045 · proza · рядок 144
+<!-- fc id:T-13-055 sha:f8ccc59c src:manual/13-pio.md:172 klas:C -->
+### T-13-055 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -629,8 +858,8 @@
 
 ---
 
-<!-- fc id:T-13-046 sha:f1f3a5b4 src:manual/13-pio.md:148 klas:F -->
-### T-13-046 · proza · рядок 148
+<!-- fc id:T-13-056 sha:f1f3a5b4 src:manual/13-pio.md:176 klas:F -->
+### T-13-056 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -642,8 +871,8 @@
 
 ---
 
-<!-- fc id:T-13-047 sha:6ef65336 src:manual/13-pio.md:151 klas:F -->
-### T-13-047 · proza · рядок 151
+<!-- fc id:T-13-057 sha:6ef65336 src:manual/13-pio.md:179 klas:F -->
+### T-13-057 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -655,8 +884,8 @@
 
 ---
 
-<!-- fc id:T-13-048 sha:24b7726c src:manual/13-pio.md:151 klas:F -->
-### T-13-048 · proza · рядок 151
+<!-- fc id:T-13-058 sha:24b7726c src:manual/13-pio.md:179 klas:F -->
+### T-13-058 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -668,8 +897,8 @@
 
 ---
 
-<!-- fc id:T-13-049 sha:71f8b903 src:manual/13-pio.md:151 klas:F -->
-### T-13-049 · proza · рядок 151
+<!-- fc id:T-13-059 sha:71f8b903 src:manual/13-pio.md:179 klas:F -->
+### T-13-059 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -681,8 +910,8 @@
 
 ---
 
-<!-- fc id:T-13-050 sha:e09bc506 src:manual/13-pio.md:155 klas:F -->
-### T-13-050 · proza · рядок 155
+<!-- fc id:T-13-060 sha:e09bc506 src:manual/13-pio.md:183 klas:F -->
+### T-13-060 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -694,8 +923,8 @@
 
 ---
 
-<!-- fc id:T-13-051 sha:f12c5e0a src:manual/13-pio.md:160 klas:F -->
-### T-13-051 · tablycya · рядок 160
+<!-- fc id:T-13-061 sha:f12c5e0a src:manual/13-pio.md:188 klas:F -->
+### T-13-061 · tablycya · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -707,8 +936,8 @@
 
 ---
 
-<!-- fc id:T-13-052 sha:a2387335 src:manual/13-pio.md:162 klas:F -->
-### T-13-052 · tablycya · рядок 162
+<!-- fc id:T-13-062 sha:a2387335 src:manual/13-pio.md:190 klas:F -->
+### T-13-062 · tablycya · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -720,8 +949,8 @@
 
 ---
 
-<!-- fc id:T-13-053 sha:7ebd085f src:manual/13-pio.md:163 klas:F -->
-### T-13-053 · tablycya · рядок 163
+<!-- fc id:T-13-063 sha:7ebd085f src:manual/13-pio.md:191 klas:F -->
+### T-13-063 · tablycya · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -733,8 +962,8 @@
 
 ---
 
-<!-- fc id:T-13-054 sha:41c63667 src:manual/13-pio.md:164 klas:F -->
-### T-13-054 · tablycya · рядок 164
+<!-- fc id:T-13-064 sha:41c63667 src:manual/13-pio.md:192 klas:F -->
+### T-13-064 · tablycya · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -746,8 +975,8 @@
 
 ---
 
-<!-- fc id:T-13-055 sha:911cb2bf src:manual/13-pio.md:165 klas:F -->
-### T-13-055 · tablycya · рядок 165
+<!-- fc id:T-13-065 sha:911cb2bf src:manual/13-pio.md:193 klas:F -->
+### T-13-065 · tablycya · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -759,8 +988,8 @@
 
 ---
 
-<!-- fc id:T-13-056 sha:90f5ca53 src:manual/13-pio.md:166 klas:F -->
-### T-13-056 · tablycya · рядок 166
+<!-- fc id:T-13-066 sha:90f5ca53 src:manual/13-pio.md:194 klas:F -->
+### T-13-066 · tablycya · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -772,8 +1001,8 @@
 
 ---
 
-<!-- fc id:T-13-057 sha:ee36c4b3 src:manual/13-pio.md:170 klas:F -->
-### T-13-057 · proza · рядок 170
+<!-- fc id:T-13-067 sha:ee36c4b3 src:manual/13-pio.md:198 klas:F -->
+### T-13-067 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -785,8 +1014,8 @@
 
 ---
 
-<!-- fc id:T-13-058 sha:03240a6a src:manual/13-pio.md:170 klas:F -->
-### T-13-058 · proza · рядок 170
+<!-- fc id:T-13-068 sha:03240a6a src:manual/13-pio.md:198 klas:F -->
+### T-13-068 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -798,8 +1027,8 @@
 
 ---
 
-<!-- fc id:T-13-059 sha:16ba4163 src:manual/13-pio.md:174 klas:F -->
-### T-13-059 · proza · рядок 174
+<!-- fc id:T-13-069 sha:16ba4163 src:manual/13-pio.md:202 klas:F -->
+### T-13-069 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -811,8 +1040,8 @@
 
 ---
 
-<!-- fc id:T-13-060 sha:b81ae778 src:manual/13-pio.md:174 klas:F -->
-### T-13-060 · proza · рядок 174
+<!-- fc id:T-13-070 sha:b81ae778 src:manual/13-pio.md:202 klas:F -->
+### T-13-070 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -824,8 +1053,8 @@
 
 ---
 
-<!-- fc id:T-13-061 sha:a1620013 src:manual/13-pio.md:177 klas:F -->
-### T-13-061 · proza · рядок 177
+<!-- fc id:T-13-071 sha:a1620013 src:manual/13-pio.md:205 klas:F -->
+### T-13-071 · proza · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -837,8 +1066,8 @@
 
 ---
 
-<!-- fc id:T-13-062 sha:07b465b5 src:manual/13-pio.md:179 klas:F -->
-### T-13-062 · proza · рядок 179
+<!-- fc id:T-13-072 sha:07b465b5 src:manual/13-pio.md:207 klas:F -->
+### T-13-072 · proza · рядок 207
 
 **Книга каже, дослівно:**
 

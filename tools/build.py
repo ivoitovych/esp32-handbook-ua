@@ -406,7 +406,14 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
     if missing:
         head = ", ".join(missing[:4])
         tail = f" … і ще {len(missing) - 4}" if len(missing) > 4 else ""
-        print(f"  · ще не написано ({len(missing)}): {head}{tail}")
+        # Під час писання відсутній файл — норма: маніфест іде попереду
+        # тексту. Для випуску це протилежне: книга, зібрана без розділу,
+        # виглядає повною і мовчить про діру (Р-VYPUSK).
+        if "--strict" in sys.argv:
+            print(f"  ✗ немає файлів маніфесту ({len(missing)}): {head}{tail}")
+            VIDSUTNI.extend(missing)
+        else:
+            print(f"  · ще не написано ({len(missing)}): {head}{tail}")
 
     root_typ = tdir / "root.typ"
     root_typ.write_text("\n".join(root), encoding="utf-8")
@@ -448,12 +455,39 @@ def perevirka_odna_storinka(root_typ: Path, pdf: Path,
 
 
 PERELYVY: list[str] = []
+VIDSUTNI: list[str] = []
+
+
+def vidbytok() -> str:
+    """Відбиток джерел книги: з чого зібрано цей PDF.
+
+    Потрібен рівно для одного питання, на яке інакше немає відповіді:
+    **чи опублікований PDF зібрано з поточних джерел?** Порівнювати самі
+    файли PDF не можна — Typst вписує в них час збирання, і два збирання
+    того самого тексту дають різні байти.
+
+    Тому порівнюємо не результат, а вхід: хеш усіх джерел книги, шаблонів
+    і маніфесту. Він лягає поруч із PDF у `release/`, і `pdf-smoke.py`
+    звіряє його з поточним станом дерева.
+    """
+    import hashlib
+    h = hashlib.sha256()
+    fajly = []
+    for g in ("kartky", "manual", "dodatky", "inserts"):
+        fajly += sorted((ROOT / g).glob("*.md"))
+    fajly += sorted((ROOT / "typst").glob("*.typ"))
+    fajly += [ROOT / "book.yaml", ROOT / "toolchain-baseline.yaml"]
+    for f in fajly:
+        if f.exists():
+            h.update(str(f.relative_to(ROOT)).encode())
+            h.update(f.read_bytes())
+    return h.hexdigest()[:16]
 
 
 def main() -> None:
     cfg = yaml.safe_load((ROOT / "book.yaml").read_text(encoding="utf-8"))
     meta = cfg["meta"]
-    wanted = sys.argv[1:] or list(cfg["targets"])
+    wanted = [a for a in sys.argv[1:] if not a.startswith("-")] or list(cfg["targets"])
 
     BUILD.mkdir(exist_ok=True)
     for name in wanted:
@@ -463,8 +497,13 @@ def main() -> None:
         out = build(name, cfg["targets"][name], meta)
         print(f"  ✓ {out.relative_to(ROOT)}  ({out.stat().st_size // 1024} КБ)")
 
+    (BUILD / "BUILD.txt").write_text(vidbytok() + "\n", encoding="utf-8")
+
+    if VIDSUTNI:
+        print(f"\nвідсутніх файлів маніфесту: {len(set(VIDSUTNI))}")
     if PERELYVY:
         print(f"\nкарток, що не влізли в сторінку: {len(PERELYVY)}")
+    if PERELYVY or VIDSUTNI:
         sys.exit(1)
 
 

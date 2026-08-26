@@ -25,9 +25,9 @@
 | `T-H-027` | `dodatky/h-dzherela.md:70` | **Документація на конкретні мікросхеми** — сайти виробників: Bosch Sensortec (BME280), Sensirion (SHT3x), Semtech (SX127x/SX126x), Texas Instruments (драйвери,  |
 | `T-COM-018` | `inserts/components-2026-08.md:26` | DHT11, DHT22 · Беріть → **BME280** або SHT3x |
 | `T-COM-030` | `inserts/components-2026-08.md:34` | **Лишаються добрим вибором:** DS18B20 (довгий дріт, герметичний зонд, кілька на лінії), BMP280 (тиск без вологості, дешевше за BME280), PIR HC-SR501 (простий ру |
-| `T-13-021` | `manual/13-pio.md:56` | ```ini [env:esp32dev] platform = espressif32 @ 6.5.0 board = esp32dev framework = arduino monitor_speed = 115200 upload_speed = 460800 build_flags = -DCORE_DEBU |
-| `T-13-036` | `manual/13-pio.md:103` | ```ini [env] framework = arduino monitor_speed = 115200 lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2 [env:classic] platform = espressif32 @ 6.5.0 board = |
-| `T-13-045` | `manual/13-pio.md:144` | **Бібліотека не знаходиться.** Ім'я в `lib_deps` має точно відповідати реєстру, разом з іменем автора: `adafruit/Adafruit BME280 Library`, а не просто назва. |
+| `T-13-021` | `manual/13-pio.md:56` | ```ini [env:esp32dev] platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip board = esp32dev framework |
+| `T-13-044` | `manual/13-pio.md:125` | ```ini [env] framework = arduino monitor_speed = 115200 lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2 [env] platform = https://github.com/pioarduino/platf |
+| `T-13-055` | `manual/13-pio.md:172` | **Бібліотека не знаходиться.** Ім'я в `lib_deps` має точно відповідати реєстру, разом з іменем автора: `adafruit/Adafruit BME280 Library`, а не просто назва. |
 | `T-35-036` | `manual/35-i2c.md:89` | BME280 — `0x76` або `0x77`, залежно від рівня на піні `SDO`. |
 | `T-44-005` | `manual/44-neznayomyy-modul.md:11` | `BME280`, `SSD1306`, `MAX485`, `A4988`. |
 | `T-44-054` | `manual/44-neznayomyy-modul.md:97` | Для SPI — прочитати регістр ідентифікації, який є майже в кожної мікросхеми (в BME280 це `0xD0`, що має повернути `0x60`). |
@@ -40,17 +40,17 @@
 | `T-59-009` | `manual/59-proj-monitor.md:23` | ``` BME280 ──I²C──ESP32 ──Wi-Fi──роутер ──браузер (0x76) [кільцевий буфер (teplytsia.local) на 720 записів] ``` |
 | `T-59-013` | `manual/59-proj-monitor.md:33` | BME280, модуль I²C · Кількість → 1 |
 | `T-59-014` | `manual/59-proj-monitor.md:33` | BME280, модуль I²C · Примітка → звірити адресу: `0x76` або `0x77` |
-| `T-59-020` | `manual/59-proj-monitor.md:43` | ``` ESP32 BME280 3V3 ─────────── VCC GND ─────────── GND GPIO21 ──┬─────── SDA └─[4.7к]─ 3V3 GPIO22 ──┬─────── SCL └─[4.7к]─ 3V3 ``` |
-| `T-59-022` | `manual/59-proj-monitor.md:53` | Багато модулів BME280 мають власні резистори — тоді зовнішні не ставити. |
-| `T-59-042` | `manual/59-proj-monitor.md:109` | ESP_LOGE(TAG, "чужий пристрій: id 0x%02x, очікували 0x60", id); |
-| `T-59-045` | `manual/59-proj-monitor.md:135` | ESP_LOGI(TAG, "BME280 знайдено і налаштовано"); |
-| `T-59-049` | `manual/59-proj-monitor.md:149` | Порядок трьох записів не довільний: за datasheet зміна `ctrl_hum` набуває чинності **лише після запису в `ctrl_meas`**, тому `ctrl_meas` завжди останній. |
-| `T-59-113` | `manual/59-proj-monitor.md:379` | У лозі — `BME280 знайдено і налаштовано`. |
+| `T-59-032` | `manual/59-proj-monitor.md:67` | ``` ESP32 BME280 3V3 ─────────── VCC GND ─────────── GND SDA ──┬──────── SDA classic: GPIO21 S3: GPIO8 └─[4.7к]─ 3V3 SCL ──┬──────── SCL classic: GPIO22 S3: GPI |
+| `T-59-034` | `manual/59-proj-monitor.md:77` | Багато модулів BME280 мають власні резистори — тоді зовнішні не ставити. |
+| `T-59-057` | `manual/59-proj-monitor.md:150` | ESP_LOGE(TAG, "чужий пристрій: id 0x%02x, очікували 0x60", id); |
+| `T-59-060` | `manual/59-proj-monitor.md:176` | ESP_LOGI(TAG, "BME280 знайдено і налаштовано"); |
+| `T-59-064` | `manual/59-proj-monitor.md:190` | Порядок трьох записів не довільний: за datasheet зміна `ctrl_hum` набуває чинності **лише після запису в `ctrl_meas`**, тому `ctrl_meas` завжди останній. |
+| `T-59-128` | `manual/59-proj-monitor.md:420` | У лозі — `BME280 знайдено і налаштовано`. |
 | `T-60-004` | `manual/60-proj-loger.md:11` | **Вхід:** BME280 (I²C) і DS18B20 (1-Wire) для виносного вимірювання. |
 | `T-60-012` | `manual/60-proj-loger.md:29` | BME280 · Кількість → 1 |
 | `T-60-013` | `manual/60-proj-loger.md:29` | BME280 · Примітка → I²C |
-| `T-60-030` | `manual/60-proj-loger.md:42` | ``` 18650 ──[захист]──[TP4056]──┬── buck-boost 3.3 В ── ESP32 + периферія │ └──[MOSFET]──[100к]──┬── ADC (GPIO34) [100к]─┘ GND I²C (GPIO21/22): BME280 + DS3231, |
-| `T-60-067` | `manual/60-proj-loger.md:198` | **Живлення периферії вмикається ключем.** Модуль microSD, BME280 і RTC споживають уві сні — разом це можуть бути мілі-, а не мікроампери. |
+| `T-60-054` | `manual/60-proj-loger.md:81` | ``` 18650 ──[захист]──[TP4056]──┬── buck-boost 3.3 В ── ESP32 + периферія │ └──[MOSFET]──[100к]──┬── ADC classic 34 / C3 3 [100к]─┘ GND I²C SDA/SCL: BME280 + DS |
+| `T-60-098` | `manual/60-proj-loger.md:280` | **Живлення периферії вмикається ключем.** Модуль microSD, BME280 і RTC споживають уві сні — разом це можуть бути мілі-, а не мікроампери. |
 
 ---
 
@@ -184,8 +184,8 @@
 | `T-47-001` | `manual/47-klyuchi.md:3` | Пін ESP32 віддає близько 20 мА за замовчуванням і 40 мА як абсолютну межу (розділ 05). |
 | `T-53-070` | `manual/53-akum.md:199` | **Плата розробки не годиться для вимірювання реального споживання уві сні.** 20 мА замість 20 мкА — це світлодіод і міст, а не чип. |
 | `T-54-057` | `manual/54-korpus.md:124` | Промисловий діапазон більшості модулів — приблизно від −40 до +85 °C, але це діапазон **чипа**, а не пристрою. |
-| `T-60-073` | `manual/60-proj-loger.md:212` | Пробудження й ініціалізація · Струм → 40 мА |
-| `T-60-092` | `manual/60-proj-loger.md:237` | **Плата розробки для фінальної версії не годиться**: USB-міст, стабілізатор і світлодіод споживають уві сні на порядки більше за чип. 20 мА замість 30 мкА перет |
+| `T-60-104` | `manual/60-proj-loger.md:294` | Пробудження й ініціалізація · Струм → 40 мА |
+| `T-60-123` | `manual/60-proj-loger.md:319` | **Плата розробки для фінальної версії не годиться**: USB-міст, стабілізатор і світлодіод споживають уві сні на порядки більше за чип. 20 мА замість 30 мкА перет |
 
 ---
 
@@ -211,7 +211,7 @@
 | `T-45-013` | `manual/45-sensory.md:31` | **DS18B20** — тільки температура, але на довгому дроті, у герметичному зонді, кілька на одній лінії (розділ 37). |
 | `T-56-010` | `manual/56-pasport.md:22` | ``` GPIO4 → датчик DS18B20, лінія DATA (підтяжка 4.7 кОм до 3V3) GPIO21 → дисплей SSD1306, SDA GPIO22 → дисплей SSD1306, SCL GPIO25 → реле насоса, ключ на MOSFE |
 | `T-56-021` | `manual/56-pasport.md:55` | **Перелік компонентів** із конкретними позначеннями: не «датчик температури», а `DS18B20 у герметичному зонді, 3 м кабель`. |
-| `T-59-120` | `manual/59-proj-monitor.md:392` | - **MQTT** замість або разом із веб-інтерфейсом (розділ 40); - **другий датчик** — DS18B20 на вулиці (розділ 37); - **OTA** — розбивку вже закладено (розділ 19) |
+| `T-59-135` | `manual/59-proj-monitor.md:433` | - **MQTT** замість або разом із веб-інтерфейсом (розділ 40); - **другий датчик** — DS18B20 на вулиці (розділ 37); - **OTA** — розбивку вже закладено (розділ 19) |
 | `T-60-014` | `manual/60-proj-loger.md:30` | DS18B20 у зонді · Кількість → 1 |
 | `T-60-015` | `manual/60-proj-loger.md:30` | DS18B20 у зонді · Примітка → 1-Wire, резистор 4.7 кОм |
 

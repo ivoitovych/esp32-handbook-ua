@@ -55,7 +55,7 @@ S3, налагоджувальна й робоча збірка, дві різн
 
 ```ini
 [env:esp32dev]
-platform = espressif32 @ 6.5.0
+platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
 board = esp32dev
 framework = arduino
 monitor_speed = 115200
@@ -67,9 +67,25 @@ lib_deps =
     adafruit/Adafruit BME280 Library @ ^2.2.2
 ```
 
+::: uvaha
+**Чому в рядку `platform` посилання, а не звичне `espressif32 @ 6.5.0`.**
+
+Офіційна платформа PlatformIO лишилася на Arduino 2.x. Запис
+`espressif32 @ 6.5.0` збереться — і дасть Arduino 2.x, тобто не те, про
+що написано в розділі 12, і без підтримки нових чипів.
+
+`pioarduino` розповсюджується не через реєстр PlatformIO, а архівом
+релізу, тому й рядок такий довгий. Мітка `stable` завжди вказує на
+поточний стабільний реліз форка — на момент цієї ревізії це Arduino
+3.3.11 і ESP-IDF 5.5.5 (таблиця версій у частині IV).
+
+Старий запис лишається доречним рівно в одному випадку: проєкт свідомо
+живе на Arduino 2.x і переносити його нікуди.
+:::
+
 Розбір рядків, що мають значення.
 
-**`platform` із версією.** Тут `@ 6.5.0` — конкретна версія платформи.
+**`platform`.** Тут — джерело платформи, а не лише її версія.
 
 ::: nezvorotne
 **Версію платформи треба пінити завжди.** Запис без версії означає «бери
@@ -80,8 +96,14 @@ lib_deps =
 Це та помилка, що виявляється в найгірший момент: коли треба терміново
 перезібрати прошивку для виробу в полі.
 
-Для pioarduino рядок `platform` вказує на репозиторій форка з конкретним
-тегом — точний формат дивіться в його документації, він змінювався.
+Для `pioarduino` пінування — це заміна мітки `stable` на **тег релізу**:
+
+```ini
+platform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip
+```
+
+Номер тегу — з таблиці версій у частині IV; вона єдине місце в книзі, де
+версії живуть, і оновлюється окремо від тексту (Р4).
 :::
 
 **`board`** — ідентифікатор плати з переліку PlatformIO. Він задає чип,
@@ -106,15 +128,21 @@ framework = arduino
 monitor_speed = 115200
 lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2
 
+[env]
+platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+
 [env:classic]
-platform = espressif32 @ 6.5.0
 board = esp32dev
 
 [env:s3]
-platform = espressif32 @ 6.5.0
 board = esp32-s3-devkitc-1
 build_flags = -DHAS_PSRAM
 ```
+
+Рядок `platform` винесено в спільну секцію навмисно: дві плати мають
+збиратися **однією** платформою, інакше різниця між середовищами
+перестає бути різницею плат. Для S3 це не косметика — офіційна
+платформа його новіші ревізії просто не знає.
 
 Секція `[env]` — спільне для всіх. Збирання конкретного середовища —
 вибором у панелі PlatformIO або `pio run -e s3`.

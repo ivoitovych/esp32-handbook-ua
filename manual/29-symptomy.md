@@ -39,7 +39,7 @@
 ## Порт є, але «Failed to connect»
 
 ```
-A fatal error occurred: Failed to connect to ESP32: Timed out waiting for packet header
+A fatal error occurred: Failed to connect to ESP32: No serial data received.
 ```
 
 Чип не в download mode.

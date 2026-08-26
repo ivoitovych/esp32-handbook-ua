@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya budgets arytmetyka check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane budgets arytmetyka check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -49,10 +49,44 @@ linkcheck:
 posylannya:
 	@$(PY) tools/posylannya.py
 
+piny:
+	@$(PY) tools/piny.py
+
+sprostovane:
+	@$(PY) tools/sprostovane.py
+
+# Зібрати й покласти у release/ те, що бачить читач на GitHub.
+release:
+	@$(PY) tools/build.py --strict
+	@cp build/esp32-*.pdf build/BUILD.txt release/
+	@echo "release: оновлено з відбитком джерел"
+
+# Випускні ворота (Р-VYPUSK). Відрізняються від `check` не суворістю
+# правил, а тим, що попередження стають помилками: під час писання
+# відсутній розділ і знахідка рецензента — робочий стан, у випуску —
+# зупинка. Ціль має завершуватися нулем перед кожним тегом релізу.
+release-check:
+	@echo "── маніфест, посилання, піни, арифметика"
+	@$(PY) tools/linkcheck.py
+	@$(PY) tools/posylannya.py
+	@$(PY) tools/piny.py
+	@$(PY) tools/sprostovane.py
+	@$(PY) tools/arytmetyka.py >/dev/null && echo "arytmetyka: збіглося"
+	@echo "── рецензійні перевірки (строго)"
+	@$(PY) tools/review.py --strict >/dev/null && echo "review: 0 знахідок"
+	@echo "── реєстр фактчекінгу"
+	@$(PY) tools/factcheck.py vorota
+	@echo "── повне збирання без пропусків"
+	@$(PY) tools/build.py --strict
+	@echo "── авторство"
+	@$(MAKE) --no-print-directory check-attribution
+	@$(PY) tools/pdf-smoke.py
+	@echo "release-check: усе пройдено"
+
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya budgets arytmetyka check-attribution
+check: linkcheck posylannya piny sprostovane budgets arytmetyka check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py

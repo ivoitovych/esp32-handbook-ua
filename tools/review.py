@@ -263,6 +263,10 @@ def main() -> int:
             print(f"   … і ще {len(z) - 60}")
 
     print(f"\nфайлів перевірено: {len(fs)}; знахідок: {vsjogo}")
+    # Під час писання знахідка — привід подумати, і код виходу нульовий.
+    # У випускній перевірці вона привід зупинитися: --strict (Р-VYPUSK).
+    if "--strict" in sys.argv and vsjogo:
+        return 1
     return 0
 
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/59-proj-monitor.md`
 
-Одиниць твердження: **120**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **135**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -273,8 +273,216 @@
 
 ---
 
-<!-- fc id:T-59-020 sha:727227f3 src:manual/59-proj-monitor.md:43 klas:C -->
-### T-59-020 · kod · рядок 43
+<!-- fc id:T-59-020 sha:cd64831e src:manual/59-proj-monitor.md:43 klas:F -->
+### T-59-020 · proza · рядок 43
+
+**Книга каже, дослівно:**
+
+> Проєкт розрахований на дві плати, і **піни в них різні**.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-021 sha:ad6dd003 src:manual/59-proj-monitor.md:43 klas:F -->
+### T-59-021 · proza · рядок 43
+
+**Книга каже, дослівно:**
+
+> Спочатку оберіть рядок, далі читайте схему з ним.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-022 sha:ada77d18 src:manual/59-proj-monitor.md:46 klas:F -->
+### T-59-022 · tablycya-shapka · рядок 46
+
+**Книга каже, дослівно:**
+
+> | Сигнал | classic DevKitC | S3-DevKitC-1 |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-023 sha:0459c3fe src:manual/59-proj-monitor.md:47 klas:A -->
+### T-59-023 · komirka · рядок 47
+
+**Книга каже, дослівно:**
+
+> `SDA` · classic DevKitC → `GPIO21`
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+- **Дослівно з джерела:**
+  > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+  > variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+  > variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6, таких значень немає в жодному варіанті. Те саме джерело підтверджує номери бортових світлодіодів, ужиті в розділі 33.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-59-024 sha:634585b7 src:manual/59-proj-monitor.md:47 klas:A -->
+### T-59-024 · komirka · рядок 47
+
+**Книга каже, дослівно:**
+
+> `SDA` · S3-DevKitC-1 → `GPIO8`
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+- **Дослівно з джерела:**
+  > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+  > variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+  > variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6, таких значень немає в жодному варіанті. Те саме джерело підтверджує номери бортових світлодіодів, ужиті в розділі 33.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-59-025 sha:31ee2c1e src:manual/59-proj-monitor.md:48 klas:A -->
+### T-59-025 · komirka · рядок 48
+
+**Книга каже, дослівно:**
+
+> `SCL` · classic DevKitC → `GPIO22`
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+- **Дослівно з джерела:**
+  > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+  > variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+  > variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6, таких значень немає в жодному варіанті. Те саме джерело підтверджує номери бортових світлодіодів, ужиті в розділі 33.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-59-026 sha:9a5bea62 src:manual/59-proj-monitor.md:48 klas:A -->
+### T-59-026 · komirka · рядок 48
+
+**Книга каже, дослівно:**
+
+> `SCL` · S3-DevKitC-1 → `GPIO9`
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/{esp32,esp32s3,esp32c3}/pins_arduino.h
+- **Дослівно з джерела:**
+  > variants/esp32/pins_arduino.h     static const uint8_t SDA = 21;  static const uint8_t SCL = 22;
+  > variants/esp32s3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 48
+  > variants/esp32c3/pins_arduino.h   static const uint8_t SDA = 8;   static const uint8_t SCL = 9;   #define PIN_RGB_LED 8
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Джерело правки додатка A в сесії рецензування 06: для C3 стояло 5/6, таких значень немає в жодному варіанті. Те саме джерело підтверджує номери бортових світлодіодів, ужиті в розділі 33.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-59-027 sha:8f81248e src:manual/59-proj-monitor.md:52 klas:A -->
+### T-59-027 · proza · рядок 52
+
+**Книга каже, дослівно:**
+
+> [[S3]] **`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це видно прямо в ESP-IDF, де маска дійсних пінів їх вирізає.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_PIN_COUNT 40
+  >          SOC_GPIO_VALID_GPIO_MASK (0xFFFFFFFFFFULL & ~(BIT24|BIT28|BIT29|BIT30|BIT31))
+  >          SOC_GPIO_VALID_OUTPUT_GPIO_MASK (… & ~(BIT34…BIT39))
+  > esp32s2: SOC_GPIO_PIN_COUNT 47
+  >          SOC_GPIO_VALID_GPIO_MASK (0x7FFFFFFFFFFFULL & ~(BIT22|BIT23|BIT24|BIT25))
+  > esp32s3: SOC_GPIO_PIN_COUNT 49
+  >          SOC_GPIO_VALID_GPIO_MASK (0x1FFFFFFFFFFFFULL & ~(BIT22|BIT23|BIT24|BIT25))
+  > esp32c3: SOC_GPIO_PIN_COUNT 22
+  >          SOC_GPIO_VALID_GPIO_MASK ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+  > esp32c6: SOC_GPIO_PIN_COUNT 31
+  > esp32h2: SOC_GPIO_PIN_COUNT 28
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Два виправлення рівня «не збереться».
+Проєкт 59 радив S3 першим рядком складових і давав `GPIO21`/`GPIO22` для I²C. У S3 пінів 22–25 **немає взагалі** — маска вирізає їх явно. Читач із S3-DevKitC-1 отримав би `ESP_ERR_INVALID_ARG` і німу шину.
+Проєкт 60 радив C3 і давав `GPIO21/22` (I²C), `GPIO18/19/23` (SPI) і `GPIO34` (ADC). У C3 рівно 22 піни, `GPIO0`–`GPIO21`; з трьох підсистем не існує жодної цілком.
+Виправлено не заміною чисел, а введенням **таблиці пінів за платами** в кожен із проєктів, із винесенням розпіновки в один блок `#if CONFIG_IDF_TARGET_*` нагорі коду. Тепер перенесення на інший чип — одна правка в одному місці, а не пошук чисел по всьому розділу.
+Заразом з'ясувалося, що на C3 проєкт 60 вичерпує всі вільні піни й потребує ще одного: вісім безумовно вільних (`0`,`1`,`3`,`4`,`5`, `6`,`7`,`10`) проти дев'яти потрібних. Дев'ятим узято strapping-пін `GPIO2` — виключно як вихід. Це записано в книгу прямо, бо саме такі межі й вирішують вибір чипа на етапі схеми.
+- **Прохід:** pass-17-simeystva-proektiv
+
+---
+
+<!-- fc id:T-59-028 sha:c0f5ef3a src:manual/59-proj-monitor.md:52 klas:F -->
+### T-59-028 · proza · рядок 52
+
+**Книга каже, дослівно:**
+
+> Схема з `GPIO22`, перенесена з classic, не запрацює й помилки не дасть: виклик конфігурації просто поверне `ESP_ERR_INVALID_ARG`, а шина лишиться німою.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-029 sha:d228a3f3 src:manual/59-proj-monitor.md:58 klas:F -->
+### T-59-029 · proza · рядок 58
+
+**Книга каже, дослівно:**
+
+> Це загальне правило для всіх проєктів цієї частини: **BOM із двома сімействами означає дві розпіновки**, і жодну з них не можна отримати з іншої заміною одного числа (додаток A).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-030 sha:90a056ff src:manual/59-proj-monitor.md:65 klas:F -->
+### T-59-030 · proza · рядок 65
+
+**Книга каже, дослівно:**
+
+> Нижче — варіант для classic.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-031 sha:6cd93a26 src:manual/59-proj-monitor.md:65 klas:F -->
+### T-59-031 · proza · рядок 65
+
+**Книга каже, дослівно:**
+
+> Для S3 підставте піни з таблиці вище.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-032 sha:92b2c9ca src:manual/59-proj-monitor.md:67 klas:C -->
+### T-59-032 · kod · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -282,10 +490,10 @@
 > ESP32              BME280
 > 3V3   ───────────  VCC
 > GND   ───────────  GND
-> GPIO21 ──┬───────  SDA
->          └─[4.7к]─ 3V3
-> GPIO22 ──┬───────  SCL
->          └─[4.7к]─ 3V3
+> SDA   ──┬────────  SDA        classic: GPIO21   S3: GPIO8
+>         └─[4.7к]─ 3V3
+> SCL   ──┬────────  SCL        classic: GPIO22   S3: GPIO9
+>         └─[4.7к]─ 3V3
 > ```
 
 **Доказ**
@@ -298,8 +506,8 @@
 
 ---
 
-<!-- fc id:T-59-021 sha:d3c9dd2a src:manual/59-proj-monitor.md:53 klas:F -->
-### T-59-021 · proza · рядок 53
+<!-- fc id:T-59-033 sha:d3c9dd2a src:manual/59-proj-monitor.md:77 klas:F -->
+### T-59-033 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -311,8 +519,8 @@
 
 ---
 
-<!-- fc id:T-59-022 sha:4899bc0a src:manual/59-proj-monitor.md:53 klas:C -->
-### T-59-022 · proza · рядок 53
+<!-- fc id:T-59-034 sha:4899bc0a src:manual/59-proj-monitor.md:77 klas:C -->
+### T-59-034 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -328,8 +536,8 @@
 
 ---
 
-<!-- fc id:T-59-023 sha:db95e0e2 src:manual/59-proj-monitor.md:58 klas:F -->
-### T-59-023 · proza · рядок 58
+<!-- fc id:T-59-035 sha:db95e0e2 src:manual/59-proj-monitor.md:82 klas:F -->
+### T-59-035 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -341,8 +549,56 @@
 
 ---
 
-<!-- fc id:T-59-024 sha:ef9c9e98 src:manual/59-proj-monitor.md:63 klas:A -->
-### T-59-024 · kod · рядок 63
+<!-- fc id:T-59-036 sha:6ac5d50a src:manual/59-proj-monitor.md:87 klas:F -->
+### T-59-036 · proza · рядок 87
+
+**Книга каже, дослівно:**
+
+> Піни винесені в одне місце нагорі — так їх видно й так вони не розповзаються по коду:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-037 sha:123dd847 src:manual/59-proj-monitor.md:90 klas:F -->
+### T-59-037 · kod · рядок 90
+
+**Книга каже, дослівно:**
+
+> ```c
+> // Піни за платою. Одне місце на весь проєкт.
+> #if CONFIG_IDF_TARGET_ESP32S3
+> #  define PIN_SDA  GPIO_NUM_8
+> #  define PIN_SCL  GPIO_NUM_9
+> #else                       // ESP32 classic
+> #  define PIN_SDA  GPIO_NUM_21
+> #  define PIN_SCL  GPIO_NUM_22
+> #endif
+> ```
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-038 sha:cbdb1b53 src:manual/59-proj-monitor.md:101 klas:F -->
+### T-59-038 · proza · рядок 101
+
+**Книга каже, дослівно:**
+
+> `CONFIG_IDF_TARGET_*` виставляє сама збірка після `idf.py set-target`, тож перемикання плати не потребує правок у коді (розділ 11).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-039 sha:ef9c9e98 src:manual/59-proj-monitor.md:104 klas:A -->
+### T-59-039 · kod · рядок 104
 
 **Книга каже, дослівно:**
 
@@ -445,8 +701,8 @@
 
 ---
 
-<!-- fc id:T-59-025 sha:b887153b src:manual/59-proj-monitor.md:64 klas:F -->
-### T-59-025 · kod-ryadok · рядок 64
+<!-- fc id:T-59-040 sha:b887153b src:manual/59-proj-monitor.md:105 klas:F -->
+### T-59-040 · kod-ryadok · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -458,8 +714,8 @@
 
 ---
 
-<!-- fc id:T-59-026 sha:14f48f1e src:manual/59-proj-monitor.md:65 klas:F -->
-### T-59-026 · kod-ryadok · рядок 65
+<!-- fc id:T-59-041 sha:14f48f1e src:manual/59-proj-monitor.md:106 klas:F -->
+### T-59-041 · kod-ryadok · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -471,8 +727,8 @@
 
 ---
 
-<!-- fc id:T-59-027 sha:e627b88d src:manual/59-proj-monitor.md:67 klas:B -->
-### T-59-027 · kod-ryadok · рядок 67
+<!-- fc id:T-59-042 sha:e627b88d src:manual/59-proj-monitor.md:108 klas:B -->
+### T-59-042 · kod-ryadok · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -500,8 +756,8 @@
 
 ---
 
-<!-- fc id:T-59-028 sha:8f633bc7 src:manual/59-proj-monitor.md:68 klas:B -->
-### T-59-028 · kod-ryadok · рядок 68
+<!-- fc id:T-59-043 sha:8f633bc7 src:manual/59-proj-monitor.md:109 klas:B -->
+### T-59-043 · kod-ryadok · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -529,8 +785,8 @@
 
 ---
 
-<!-- fc id:T-59-029 sha:ccdaaa21 src:manual/59-proj-monitor.md:69 klas:F -->
-### T-59-029 · kod-ryadok · рядок 69
+<!-- fc id:T-59-044 sha:ccdaaa21 src:manual/59-proj-monitor.md:110 klas:F -->
+### T-59-044 · kod-ryadok · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -542,8 +798,8 @@
 
 ---
 
-<!-- fc id:T-59-030 sha:0263b9cf src:manual/59-proj-monitor.md:70 klas:B -->
-### T-59-030 · kod-ryadok · рядок 70
+<!-- fc id:T-59-045 sha:0263b9cf src:manual/59-proj-monitor.md:111 klas:B -->
+### T-59-045 · kod-ryadok · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -571,8 +827,8 @@
 
 ---
 
-<!-- fc id:T-59-031 sha:41e596ad src:manual/59-proj-monitor.md:71 klas:B -->
-### T-59-031 · kod-ryadok · рядок 71
+<!-- fc id:T-59-046 sha:41e596ad src:manual/59-proj-monitor.md:112 klas:B -->
+### T-59-046 · kod-ryadok · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -600,8 +856,8 @@
 
 ---
 
-<!-- fc id:T-59-032 sha:35c7c342 src:manual/59-proj-monitor.md:72 klas:B -->
-### T-59-032 · kod-ryadok · рядок 72
+<!-- fc id:T-59-047 sha:35c7c342 src:manual/59-proj-monitor.md:113 klas:B -->
+### T-59-047 · kod-ryadok · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -629,8 +885,8 @@
 
 ---
 
-<!-- fc id:T-59-033 sha:2e56e3a4 src:manual/59-proj-monitor.md:73 klas:B -->
-### T-59-033 · kod-ryadok · рядок 73
+<!-- fc id:T-59-048 sha:2e56e3a4 src:manual/59-proj-monitor.md:114 klas:B -->
+### T-59-048 · kod-ryadok · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -658,8 +914,8 @@
 
 ---
 
-<!-- fc id:T-59-034 sha:4ad3a8c3 src:manual/59-proj-monitor.md:74 klas:B -->
-### T-59-034 · kod-ryadok · рядок 74
+<!-- fc id:T-59-049 sha:4ad3a8c3 src:manual/59-proj-monitor.md:115 klas:B -->
+### T-59-049 · kod-ryadok · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -687,8 +943,8 @@
 
 ---
 
-<!-- fc id:T-59-035 sha:584d2b44 src:manual/59-proj-monitor.md:75 klas:B -->
-### T-59-035 · kod-ryadok · рядок 75
+<!-- fc id:T-59-050 sha:584d2b44 src:manual/59-proj-monitor.md:116 klas:B -->
+### T-59-050 · kod-ryadok · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -716,8 +972,8 @@
 
 ---
 
-<!-- fc id:T-59-036 sha:64196cae src:manual/59-proj-monitor.md:88 klas:A -->
-### T-59-036 · kod-ryadok · рядок 88
+<!-- fc id:T-59-051 sha:64196cae src:manual/59-proj-monitor.md:129 klas:A -->
+### T-59-051 · kod-ryadok · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -739,8 +995,8 @@
 
 ---
 
-<!-- fc id:T-59-037 sha:b49aeb96 src:manual/59-proj-monitor.md:98 klas:F -->
-### T-59-037 · kod-ryadok · рядок 98
+<!-- fc id:T-59-052 sha:b49aeb96 src:manual/59-proj-monitor.md:139 klas:F -->
+### T-59-052 · kod-ryadok · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -752,8 +1008,8 @@
 
 ---
 
-<!-- fc id:T-59-038 sha:7b9b8843 src:manual/59-proj-monitor.md:99 klas:B -->
-### T-59-038 · kod-ryadok · рядок 99
+<!-- fc id:T-59-053 sha:7b9b8843 src:manual/59-proj-monitor.md:140 klas:B -->
+### T-59-053 · kod-ryadok · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -781,8 +1037,8 @@
 
 ---
 
-<!-- fc id:T-59-039 sha:bab2ac7a src:manual/59-proj-monitor.md:100 klas:F -->
-### T-59-039 · kod-ryadok · рядок 100
+<!-- fc id:T-59-054 sha:bab2ac7a src:manual/59-proj-monitor.md:141 klas:F -->
+### T-59-054 · kod-ryadok · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -794,8 +1050,8 @@
 
 ---
 
-<!-- fc id:T-59-040 sha:e8502537 src:manual/59-proj-monitor.md:102 klas:A -->
-### T-59-040 · kod-ryadok · рядок 102
+<!-- fc id:T-59-055 sha:e8502537 src:manual/59-proj-monitor.md:143 klas:A -->
+### T-59-055 · kod-ryadok · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -823,8 +1079,8 @@
 
 ---
 
-<!-- fc id:T-59-041 sha:41f585b1 src:manual/59-proj-monitor.md:107 klas:B -->
-### T-59-041 · kod-ryadok · рядок 107
+<!-- fc id:T-59-056 sha:41f585b1 src:manual/59-proj-monitor.md:148 klas:B -->
+### T-59-056 · kod-ryadok · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -852,8 +1108,8 @@
 
 ---
 
-<!-- fc id:T-59-042 sha:73bf40aa src:manual/59-proj-monitor.md:109 klas:C -->
-### T-59-042 · kod-ryadok · рядок 109
+<!-- fc id:T-59-057 sha:73bf40aa src:manual/59-proj-monitor.md:150 klas:C -->
+### T-59-057 · kod-ryadok · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -869,8 +1125,8 @@
 
 ---
 
-<!-- fc id:T-59-043 sha:1b551a44 src:manual/59-proj-monitor.md:114 klas:B -->
-### T-59-043 · kod-ryadok · рядок 114
+<!-- fc id:T-59-058 sha:1b551a44 src:manual/59-proj-monitor.md:155 klas:B -->
+### T-59-058 · kod-ryadok · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -898,8 +1154,8 @@
 
 ---
 
-<!-- fc id:T-59-044 sha:ae86aa1b src:manual/59-proj-monitor.md:124 klas:B -->
-### T-59-044 · kod-ryadok · рядок 124
+<!-- fc id:T-59-059 sha:ae86aa1b src:manual/59-proj-monitor.md:165 klas:B -->
+### T-59-059 · kod-ryadok · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -927,8 +1183,8 @@
 
 ---
 
-<!-- fc id:T-59-045 sha:636dc01a src:manual/59-proj-monitor.md:135 klas:C -->
-### T-59-045 · kod-ryadok · рядок 135
+<!-- fc id:T-59-060 sha:636dc01a src:manual/59-proj-monitor.md:176 klas:C -->
+### T-59-060 · kod-ryadok · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -944,8 +1200,8 @@
 
 ---
 
-<!-- fc id:T-59-046 sha:7100ace9 src:manual/59-proj-monitor.md:141 klas:F -->
-### T-59-046 · proza · рядок 141
+<!-- fc id:T-59-061 sha:7100ace9 src:manual/59-proj-monitor.md:182 klas:F -->
+### T-59-061 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -957,8 +1213,8 @@
 
 ---
 
-<!-- fc id:T-59-047 sha:0ea0eacb src:manual/59-proj-monitor.md:141 klas:F -->
-### T-59-047 · proza · рядок 141
+<!-- fc id:T-59-062 sha:0ea0eacb src:manual/59-proj-monitor.md:182 klas:F -->
+### T-59-062 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -970,8 +1226,8 @@
 
 ---
 
-<!-- fc id:T-59-048 sha:d91d9459 src:manual/59-proj-monitor.md:145 klas:F -->
-### T-59-048 · proza · рядок 145
+<!-- fc id:T-59-063 sha:d91d9459 src:manual/59-proj-monitor.md:186 klas:F -->
+### T-59-063 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -983,8 +1239,8 @@
 
 ---
 
-<!-- fc id:T-59-049 sha:29da9177 src:manual/59-proj-monitor.md:149 klas:C -->
-### T-59-049 · proza · рядок 149
+<!-- fc id:T-59-064 sha:29da9177 src:manual/59-proj-monitor.md:190 klas:C -->
+### T-59-064 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1000,8 +1256,8 @@
 
 ---
 
-<!-- fc id:T-59-050 sha:49eb3151 src:manual/59-proj-monitor.md:149 klas:F -->
-### T-59-050 · proza · рядок 149
+<!-- fc id:T-59-065 sha:49eb3151 src:manual/59-proj-monitor.md:190 klas:F -->
+### T-59-065 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1013,8 +1269,8 @@
 
 ---
 
-<!-- fc id:T-59-051 sha:5b1b364a src:manual/59-proj-monitor.md:155 klas:B -->
-### T-59-051 · proza · рядок 155
+<!-- fc id:T-59-066 sha:5b1b364a src:manual/59-proj-monitor.md:196 klas:B -->
+### T-59-066 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1040,8 +1296,8 @@
 
 ---
 
-<!-- fc id:T-59-052 sha:4f81f74f src:manual/59-proj-monitor.md:155 klas:B -->
-### T-59-052 · proza · рядок 155
+<!-- fc id:T-59-067 sha:4f81f74f src:manual/59-proj-monitor.md:196 klas:B -->
+### T-59-067 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1067,8 +1323,8 @@
 
 ---
 
-<!-- fc id:T-59-053 sha:537a2c04 src:manual/59-proj-monitor.md:155 klas:F -->
-### T-59-053 · proza · рядок 155
+<!-- fc id:T-59-068 sha:537a2c04 src:manual/59-proj-monitor.md:196 klas:F -->
+### T-59-068 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1080,8 +1336,8 @@
 
 ---
 
-<!-- fc id:T-59-054 sha:2e06244b src:manual/59-proj-monitor.md:162 klas:F -->
-### T-59-054 · proza · рядок 162
+<!-- fc id:T-59-069 sha:2e06244b src:manual/59-proj-monitor.md:203 klas:F -->
+### T-59-069 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1093,8 +1349,8 @@
 
 ---
 
-<!-- fc id:T-59-055 sha:ae5f2fa1 src:manual/59-proj-monitor.md:167 klas:F -->
-### T-59-055 · proza · рядок 167
+<!-- fc id:T-59-070 sha:ae5f2fa1 src:manual/59-proj-monitor.md:208 klas:F -->
+### T-59-070 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1106,8 +1362,8 @@
 
 ---
 
-<!-- fc id:T-59-056 sha:88a09b36 src:manual/59-proj-monitor.md:167 klas:F -->
-### T-59-056 · proza · рядок 167
+<!-- fc id:T-59-071 sha:88a09b36 src:manual/59-proj-monitor.md:208 klas:F -->
+### T-59-071 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1119,8 +1375,8 @@
 
 ---
 
-<!-- fc id:T-59-057 sha:7bf92ad8 src:manual/59-proj-monitor.md:171 klas:B -->
-### T-59-057 · kod · рядок 171
+<!-- fc id:T-59-072 sha:7bf92ad8 src:manual/59-proj-monitor.md:212 klas:B -->
+### T-59-072 · kod · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1186,8 +1442,8 @@
 
 ---
 
-<!-- fc id:T-59-058 sha:ffffb2b5 src:manual/59-proj-monitor.md:174 klas:B -->
-### T-59-058 · kod-ryadok · рядок 174
+<!-- fc id:T-59-073 sha:ffffb2b5 src:manual/59-proj-monitor.md:215 klas:B -->
+### T-59-073 · kod-ryadok · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1215,8 +1471,8 @@
 
 ---
 
-<!-- fc id:T-59-059 sha:10e4d48d src:manual/59-proj-monitor.md:213 klas:A -->
-### T-59-059 · kod · рядок 213
+<!-- fc id:T-59-074 sha:10e4d48d src:manual/59-proj-monitor.md:254 klas:A -->
+### T-59-074 · kod · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -1264,8 +1520,8 @@
 
 ---
 
-<!-- fc id:T-59-060 sha:59d72679 src:manual/59-proj-monitor.md:214 klas:F -->
-### T-59-060 · kod-ryadok · рядок 214
+<!-- fc id:T-59-075 sha:59d72679 src:manual/59-proj-monitor.md:255 klas:F -->
+### T-59-075 · kod-ryadok · рядок 255
 
 **Книга каже, дослівно:**
 
@@ -1277,8 +1533,8 @@
 
 ---
 
-<!-- fc id:T-59-061 sha:da52f140 src:manual/59-proj-monitor.md:227 klas:A -->
-### T-59-061 · kod-ryadok · рядок 227
+<!-- fc id:T-59-076 sha:da52f140 src:manual/59-proj-monitor.md:268 klas:A -->
+### T-59-076 · kod-ryadok · рядок 268
 
 **Книга каже, дослівно:**
 
@@ -1300,8 +1556,8 @@
 
 ---
 
-<!-- fc id:T-59-062 sha:05942241 src:manual/59-proj-monitor.md:231 klas:A -->
-### T-59-062 · kod-ryadok · рядок 231
+<!-- fc id:T-59-077 sha:05942241 src:manual/59-proj-monitor.md:272 klas:A -->
+### T-59-077 · kod-ryadok · рядок 272
 
 **Книга каже, дослівно:**
 
@@ -1323,8 +1579,8 @@
 
 ---
 
-<!-- fc id:T-59-063 sha:7c65034e src:manual/59-proj-monitor.md:235 klas:F -->
-### T-59-063 · proza · рядок 235
+<!-- fc id:T-59-078 sha:7c65034e src:manual/59-proj-monitor.md:276 klas:F -->
+### T-59-078 · proza · рядок 276
 
 **Книга каже, дослівно:**
 
@@ -1336,8 +1592,8 @@
 
 ---
 
-<!-- fc id:T-59-064 sha:2eaae5f5 src:manual/59-proj-monitor.md:235 klas:F -->
-### T-59-064 · proza · рядок 235
+<!-- fc id:T-59-079 sha:2eaae5f5 src:manual/59-proj-monitor.md:276 klas:F -->
+### T-59-079 · proza · рядок 276
 
 **Книга каже, дослівно:**
 
@@ -1349,8 +1605,8 @@
 
 ---
 
-<!-- fc id:T-59-065 sha:0c21042b src:manual/59-proj-monitor.md:240 klas:A -->
-### T-59-065 · kod · рядок 240
+<!-- fc id:T-59-080 sha:0c21042b src:manual/59-proj-monitor.md:281 klas:A -->
+### T-59-080 · kod · рядок 281
 
 **Книга каже, дослівно:**
 
@@ -1400,8 +1656,8 @@
 
 ---
 
-<!-- fc id:T-59-066 sha:461edfca src:manual/59-proj-monitor.md:248 klas:F -->
-### T-59-066 · kod-ryadok · рядок 248
+<!-- fc id:T-59-081 sha:461edfca src:manual/59-proj-monitor.md:289 klas:F -->
+### T-59-081 · kod-ryadok · рядок 289
 
 **Книга каже, дослівно:**
 
@@ -1413,8 +1669,8 @@
 
 ---
 
-<!-- fc id:T-59-067 sha:9e8becce src:manual/59-proj-monitor.md:249 klas:F -->
-### T-59-067 · kod-ryadok · рядок 249
+<!-- fc id:T-59-082 sha:9e8becce src:manual/59-proj-monitor.md:290 klas:F -->
+### T-59-082 · kod-ryadok · рядок 290
 
 **Книга каже, дослівно:**
 
@@ -1426,8 +1682,8 @@
 
 ---
 
-<!-- fc id:T-59-068 sha:29f9a0e7 src:manual/59-proj-monitor.md:252 klas:F -->
-### T-59-068 · kod-ryadok · рядок 252
+<!-- fc id:T-59-083 sha:29f9a0e7 src:manual/59-proj-monitor.md:293 klas:F -->
+### T-59-083 · kod-ryadok · рядок 293
 
 **Книга каже, дослівно:**
 
@@ -1439,8 +1695,8 @@
 
 ---
 
-<!-- fc id:T-59-069 sha:b5ca5c99 src:manual/59-proj-monitor.md:258 klas:F -->
-### T-59-069 · kod-ryadok · рядок 258
+<!-- fc id:T-59-084 sha:b5ca5c99 src:manual/59-proj-monitor.md:299 klas:F -->
+### T-59-084 · kod-ryadok · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -1452,8 +1708,8 @@
 
 ---
 
-<!-- fc id:T-59-070 sha:d4678ca1 src:manual/59-proj-monitor.md:259 klas:A -->
-### T-59-070 · kod-ryadok · рядок 259
+<!-- fc id:T-59-085 sha:d4678ca1 src:manual/59-proj-monitor.md:300 klas:A -->
+### T-59-085 · kod-ryadok · рядок 300
 
 **Книга каже, дослівно:**
 
@@ -1475,8 +1731,8 @@
 
 ---
 
-<!-- fc id:T-59-071 sha:7f8d2007 src:manual/59-proj-monitor.md:264 klas:F -->
-### T-59-071 · proza · рядок 264
+<!-- fc id:T-59-086 sha:7f8d2007 src:manual/59-proj-monitor.md:305 klas:F -->
+### T-59-086 · proza · рядок 305
 
 **Книга каже, дослівно:**
 
@@ -1488,8 +1744,8 @@
 
 ---
 
-<!-- fc id:T-59-072 sha:2ab58c0c src:manual/59-proj-monitor.md:264 klas:F -->
-### T-59-072 · proza · рядок 264
+<!-- fc id:T-59-087 sha:2ab58c0c src:manual/59-proj-monitor.md:305 klas:F -->
+### T-59-087 · proza · рядок 305
 
 **Книга каже, дослівно:**
 
@@ -1501,8 +1757,8 @@
 
 ---
 
-<!-- fc id:T-59-073 sha:4b754f95 src:manual/59-proj-monitor.md:269 klas:A -->
-### T-59-073 · kod · рядок 269
+<!-- fc id:T-59-088 sha:4b754f95 src:manual/59-proj-monitor.md:310 klas:A -->
+### T-59-088 · kod · рядок 310
 
 **Книга каже, дослівно:**
 
@@ -1556,8 +1812,8 @@
 
 ---
 
-<!-- fc id:T-59-074 sha:9e097e90 src:manual/59-proj-monitor.md:272 klas:A -->
-### T-59-074 · kod-ryadok · рядок 272
+<!-- fc id:T-59-089 sha:9e097e90 src:manual/59-proj-monitor.md:313 klas:A -->
+### T-59-089 · kod-ryadok · рядок 313
 
 **Книга каже, дослівно:**
 
@@ -1585,8 +1841,8 @@
 
 ---
 
-<!-- fc id:T-59-075 sha:da52f140 src:manual/59-proj-monitor.md:274 klas:A -->
-### T-59-075 · kod-ryadok · рядок 274
+<!-- fc id:T-59-090 sha:da52f140 src:manual/59-proj-monitor.md:315 klas:A -->
+### T-59-090 · kod-ryadok · рядок 315
 
 **Книга каже, дослівно:**
 
@@ -1608,8 +1864,8 @@
 
 ---
 
-<!-- fc id:T-59-076 sha:05942241 src:manual/59-proj-monitor.md:287 klas:A -->
-### T-59-076 · kod-ryadok · рядок 287
+<!-- fc id:T-59-091 sha:05942241 src:manual/59-proj-monitor.md:328 klas:A -->
+### T-59-091 · kod-ryadok · рядок 328
 
 **Книга каже, дослівно:**
 
@@ -1631,8 +1887,8 @@
 
 ---
 
-<!-- fc id:T-59-077 sha:aa40708d src:manual/59-proj-monitor.md:288 klas:F -->
-### T-59-077 · kod-ryadok · рядок 288
+<!-- fc id:T-59-092 sha:aa40708d src:manual/59-proj-monitor.md:329 klas:F -->
+### T-59-092 · kod-ryadok · рядок 329
 
 **Книга каже, дослівно:**
 
@@ -1644,8 +1900,8 @@
 
 ---
 
-<!-- fc id:T-59-078 sha:1305725a src:manual/59-proj-monitor.md:290 klas:A -->
-### T-59-078 · kod-ryadok · рядок 290
+<!-- fc id:T-59-093 sha:1305725a src:manual/59-proj-monitor.md:331 klas:A -->
+### T-59-093 · kod-ryadok · рядок 331
 
 **Книга каже, дослівно:**
 
@@ -1673,8 +1929,8 @@
 
 ---
 
-<!-- fc id:T-59-079 sha:780361e1 src:manual/59-proj-monitor.md:292 klas:F -->
-### T-59-079 · kod-ryadok · рядок 292
+<!-- fc id:T-59-094 sha:780361e1 src:manual/59-proj-monitor.md:333 klas:F -->
+### T-59-094 · kod-ryadok · рядок 333
 
 **Книга каже, дослівно:**
 
@@ -1686,8 +1942,8 @@
 
 ---
 
-<!-- fc id:T-59-080 sha:87adb72b src:manual/59-proj-monitor.md:298 klas:F -->
-### T-59-080 · proza · рядок 298
+<!-- fc id:T-59-095 sha:87adb72b src:manual/59-proj-monitor.md:339 klas:F -->
+### T-59-095 · proza · рядок 339
 
 **Книга каже, дослівно:**
 
@@ -1699,8 +1955,8 @@
 
 ---
 
-<!-- fc id:T-59-081 sha:d11cc6fe src:manual/59-proj-monitor.md:298 klas:F -->
-### T-59-081 · proza · рядок 298
+<!-- fc id:T-59-096 sha:d11cc6fe src:manual/59-proj-monitor.md:339 klas:F -->
+### T-59-096 · proza · рядок 339
 
 **Книга каже, дослівно:**
 
@@ -1712,8 +1968,8 @@
 
 ---
 
-<!-- fc id:T-59-082 sha:02b440af src:manual/59-proj-monitor.md:298 klas:F -->
-### T-59-082 · proza · рядок 298
+<!-- fc id:T-59-097 sha:02b440af src:manual/59-proj-monitor.md:339 klas:F -->
+### T-59-097 · proza · рядок 339
 
 **Книга каже, дослівно:**
 
@@ -1725,8 +1981,8 @@
 
 ---
 
-<!-- fc id:T-59-083 sha:0fa06472 src:manual/59-proj-monitor.md:304 klas:F -->
-### T-59-083 · proza · рядок 304
+<!-- fc id:T-59-098 sha:0fa06472 src:manual/59-proj-monitor.md:345 klas:F -->
+### T-59-098 · proza · рядок 345
 
 **Книга каже, дослівно:**
 
@@ -1738,8 +1994,8 @@
 
 ---
 
-<!-- fc id:T-59-084 sha:046ce956 src:manual/59-proj-monitor.md:304 klas:F -->
-### T-59-084 · proza · рядок 304
+<!-- fc id:T-59-099 sha:046ce956 src:manual/59-proj-monitor.md:345 klas:F -->
+### T-59-099 · proza · рядок 345
 
 **Книга каже, дослівно:**
 
@@ -1751,8 +2007,8 @@
 
 ---
 
-<!-- fc id:T-59-085 sha:8e1c5456 src:manual/59-proj-monitor.md:310 klas:F -->
-### T-59-085 · proza · рядок 310
+<!-- fc id:T-59-100 sha:8e1c5456 src:manual/59-proj-monitor.md:351 klas:F -->
+### T-59-100 · proza · рядок 351
 
 **Книга каже, дослівно:**
 
@@ -1764,8 +2020,8 @@
 
 ---
 
-<!-- fc id:T-59-086 sha:daa45c95 src:manual/59-proj-monitor.md:310 klas:F -->
-### T-59-086 · proza · рядок 310
+<!-- fc id:T-59-101 sha:daa45c95 src:manual/59-proj-monitor.md:351 klas:F -->
+### T-59-101 · proza · рядок 351
 
 **Книга каже, дослівно:**
 
@@ -1777,8 +2033,8 @@
 
 ---
 
-<!-- fc id:T-59-087 sha:ffa66d5d src:manual/59-proj-monitor.md:314 klas:F -->
-### T-59-087 · proza · рядок 314
+<!-- fc id:T-59-102 sha:ffa66d5d src:manual/59-proj-monitor.md:355 klas:F -->
+### T-59-102 · proza · рядок 355
 
 **Книга каже, дослівно:**
 
@@ -1790,8 +2046,8 @@
 
 ---
 
-<!-- fc id:T-59-088 sha:99584848 src:manual/59-proj-monitor.md:314 klas:F -->
-### T-59-088 · proza · рядок 314
+<!-- fc id:T-59-103 sha:99584848 src:manual/59-proj-monitor.md:355 klas:F -->
+### T-59-103 · proza · рядок 355
 
 **Книга каже, дослівно:**
 
@@ -1803,8 +2059,8 @@
 
 ---
 
-<!-- fc id:T-59-089 sha:0df2fce9 src:manual/59-proj-monitor.md:321 klas:A -->
-### T-59-089 · kod · рядок 321
+<!-- fc id:T-59-104 sha:60fa11ed src:manual/59-proj-monitor.md:362 klas:A -->
+### T-59-104 · kod · рядок 362
 
 **Книга каже, дослівно:**
 
@@ -1823,8 +2079,8 @@
 > 
 >     i2c_master_bus_config_t bus_cfg = {
 >         .i2c_port = I2C_NUM_0,
->         .sda_io_num = GPIO_NUM_21,
->         .scl_io_num = GPIO_NUM_22,
+>         .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
+>         .scl_io_num = PIN_SCL,   // classic 22 / S3 9
 >         .clk_source = I2C_CLK_SRC_DEFAULT,
 >         .glitch_ignore_cnt = 7,
 >     };
@@ -1868,8 +2124,8 @@
 
 ---
 
-<!-- fc id:T-59-090 sha:f018579e src:manual/59-proj-monitor.md:323 klas:A -->
-### T-59-090 · kod-ryadok · рядок 323
+<!-- fc id:T-59-105 sha:f018579e src:manual/59-proj-monitor.md:364 klas:A -->
+### T-59-105 · kod-ryadok · рядок 364
 
 **Книга каже, дослівно:**
 
@@ -1897,8 +2153,8 @@
 
 ---
 
-<!-- fc id:T-59-091 sha:f3349b99 src:manual/59-proj-monitor.md:327 klas:A -->
-### T-59-091 · kod-ryadok · рядок 327
+<!-- fc id:T-59-106 sha:f3349b99 src:manual/59-proj-monitor.md:368 klas:A -->
+### T-59-106 · kod-ryadok · рядок 368
 
 **Книга каже, дослівно:**
 
@@ -1926,8 +2182,8 @@
 
 ---
 
-<!-- fc id:T-59-092 sha:601ab80f src:manual/59-proj-monitor.md:330 klas:F -->
-### T-59-092 · kod-ryadok · рядок 330
+<!-- fc id:T-59-107 sha:601ab80f src:manual/59-proj-monitor.md:371 klas:F -->
+### T-59-107 · kod-ryadok · рядок 371
 
 **Книга каже, дослівно:**
 
@@ -1939,8 +2195,8 @@
 
 ---
 
-<!-- fc id:T-59-093 sha:8137e868 src:manual/59-proj-monitor.md:335 klas:F -->
-### T-59-093 · kod-ryadok · рядок 335
+<!-- fc id:T-59-108 sha:8137e868 src:manual/59-proj-monitor.md:376 klas:F -->
+### T-59-108 · kod-ryadok · рядок 376
 
 **Книга каже, дослівно:**
 
@@ -1952,12 +2208,12 @@
 
 ---
 
-<!-- fc id:T-59-094 sha:b23a13d7 src:manual/59-proj-monitor.md:336 klas:F -->
-### T-59-094 · kod-ryadok · рядок 336
+<!-- fc id:T-59-109 sha:3ad25a63 src:manual/59-proj-monitor.md:377 klas:F -->
+### T-59-109 · kod-ryadok · рядок 377
 
 **Книга каже, дослівно:**
 
-> .sda_io_num = GPIO_NUM_21,
+> .sda_io_num = PIN_SDA,   // classic 21 / S3 8 — див. таблицю пінів
 
 **Доказ**
 
@@ -1965,12 +2221,12 @@
 
 ---
 
-<!-- fc id:T-59-095 sha:1599c26e src:manual/59-proj-monitor.md:337 klas:F -->
-### T-59-095 · kod-ryadok · рядок 337
+<!-- fc id:T-59-110 sha:aca549c6 src:manual/59-proj-monitor.md:378 klas:F -->
+### T-59-110 · kod-ryadok · рядок 378
 
 **Книга каже, дослівно:**
 
-> .scl_io_num = GPIO_NUM_22,
+> .scl_io_num = PIN_SCL,   // classic 22 / S3 9
 
 **Доказ**
 
@@ -1978,8 +2234,8 @@
 
 ---
 
-<!-- fc id:T-59-096 sha:ad69c01f src:manual/59-proj-monitor.md:338 klas:F -->
-### T-59-096 · kod-ryadok · рядок 338
+<!-- fc id:T-59-111 sha:ad69c01f src:manual/59-proj-monitor.md:379 klas:F -->
+### T-59-111 · kod-ryadok · рядок 379
 
 **Книга каже, дослівно:**
 
@@ -1991,8 +2247,8 @@
 
 ---
 
-<!-- fc id:T-59-097 sha:be777622 src:manual/59-proj-monitor.md:339 klas:F -->
-### T-59-097 · kod-ryadok · рядок 339
+<!-- fc id:T-59-112 sha:be777622 src:manual/59-proj-monitor.md:380 klas:F -->
+### T-59-112 · kod-ryadok · рядок 380
 
 **Книга каже, дослівно:**
 
@@ -2004,8 +2260,8 @@
 
 ---
 
-<!-- fc id:T-59-098 sha:6abf9538 src:manual/59-proj-monitor.md:342 klas:F -->
-### T-59-098 · kod-ryadok · рядок 342
+<!-- fc id:T-59-113 sha:6abf9538 src:manual/59-proj-monitor.md:383 klas:F -->
+### T-59-113 · kod-ryadok · рядок 383
 
 **Книга каже, дослівно:**
 
@@ -2017,8 +2273,8 @@
 
 ---
 
-<!-- fc id:T-59-099 sha:ea63146b src:manual/59-proj-monitor.md:345 klas:F -->
-### T-59-099 · kod-ryadok · рядок 345
+<!-- fc id:T-59-114 sha:ea63146b src:manual/59-proj-monitor.md:386 klas:F -->
+### T-59-114 · kod-ryadok · рядок 386
 
 **Книга каже, дослівно:**
 
@@ -2030,8 +2286,8 @@
 
 ---
 
-<!-- fc id:T-59-100 sha:f15667d5 src:manual/59-proj-monitor.md:350 klas:A -->
-### T-59-100 · kod-ryadok · рядок 350
+<!-- fc id:T-59-115 sha:f15667d5 src:manual/59-proj-monitor.md:391 klas:A -->
+### T-59-115 · kod-ryadok · рядок 391
 
 **Книга каже, дослівно:**
 
@@ -2059,8 +2315,8 @@
 
 ---
 
-<!-- fc id:T-59-101 sha:cb6701a7 src:manual/59-proj-monitor.md:351 klas:A -->
-### T-59-101 · kod-ryadok · рядок 351
+<!-- fc id:T-59-116 sha:cb6701a7 src:manual/59-proj-monitor.md:392 klas:A -->
+### T-59-116 · kod-ryadok · рядок 392
 
 **Книга каже, дослівно:**
 
@@ -2088,8 +2344,8 @@
 
 ---
 
-<!-- fc id:T-59-102 sha:1e052b00 src:manual/59-proj-monitor.md:352 klas:A -->
-### T-59-102 · kod-ryadok · рядок 352
+<!-- fc id:T-59-117 sha:1e052b00 src:manual/59-proj-monitor.md:393 klas:A -->
+### T-59-117 · kod-ryadok · рядок 393
 
 **Книга каже, дослівно:**
 
@@ -2117,8 +2373,8 @@
 
 ---
 
-<!-- fc id:T-59-103 sha:faf13c15 src:manual/59-proj-monitor.md:354 klas:F -->
-### T-59-103 · kod-ryadok · рядок 354
+<!-- fc id:T-59-118 sha:faf13c15 src:manual/59-proj-monitor.md:395 klas:F -->
+### T-59-118 · kod-ryadok · рядок 395
 
 **Книга каже, дослівно:**
 
@@ -2130,8 +2386,8 @@
 
 ---
 
-<!-- fc id:T-59-104 sha:59d6968b src:manual/59-proj-monitor.md:355 klas:A -->
-### T-59-104 · kod-ryadok · рядок 355
+<!-- fc id:T-59-119 sha:59d6968b src:manual/59-proj-monitor.md:396 klas:A -->
+### T-59-119 · kod-ryadok · рядок 396
 
 **Книга каже, дослівно:**
 
@@ -2153,8 +2409,8 @@
 
 ---
 
-<!-- fc id:T-59-105 sha:c136ab2b src:manual/59-proj-monitor.md:360 klas:F -->
-### T-59-105 · proza · рядок 360
+<!-- fc id:T-59-120 sha:c136ab2b src:manual/59-proj-monitor.md:401 klas:F -->
+### T-59-120 · proza · рядок 401
 
 **Книга каже, дослівно:**
 
@@ -2166,8 +2422,8 @@
 
 ---
 
-<!-- fc id:T-59-106 sha:30cbfc2f src:manual/59-proj-monitor.md:363 klas:F -->
-### T-59-106 · proza · рядок 363
+<!-- fc id:T-59-121 sha:30cbfc2f src:manual/59-proj-monitor.md:404 klas:F -->
+### T-59-121 · proza · рядок 404
 
 **Книга каже, дослівно:**
 
@@ -2179,8 +2435,8 @@
 
 ---
 
-<!-- fc id:T-59-107 sha:2351e0dd src:manual/59-proj-monitor.md:363 klas:F -->
-### T-59-107 · proza · рядок 363
+<!-- fc id:T-59-122 sha:2351e0dd src:manual/59-proj-monitor.md:404 klas:F -->
+### T-59-122 · proza · рядок 404
 
 **Книга каже, дослівно:**
 
@@ -2192,8 +2448,8 @@
 
 ---
 
-<!-- fc id:T-59-108 sha:366e3229 src:manual/59-proj-monitor.md:370 klas:F -->
-### T-59-108 · kod · рядок 370
+<!-- fc id:T-59-123 sha:366e3229 src:manual/59-proj-monitor.md:411 klas:F -->
+### T-59-123 · kod · рядок 411
 
 **Книга каже, дослівно:**
 
@@ -2210,8 +2466,8 @@
 
 ---
 
-<!-- fc id:T-59-109 sha:6aa9cf42 src:manual/59-proj-monitor.md:371 klas:F -->
-### T-59-109 · kod-ryadok · рядок 371
+<!-- fc id:T-59-124 sha:6aa9cf42 src:manual/59-proj-monitor.md:412 klas:F -->
+### T-59-124 · kod-ryadok · рядок 412
 
 **Книга каже, дослівно:**
 
@@ -2223,8 +2479,8 @@
 
 ---
 
-<!-- fc id:T-59-110 sha:4f160d06 src:manual/59-proj-monitor.md:372 klas:F -->
-### T-59-110 · kod-ryadok · рядок 372
+<!-- fc id:T-59-125 sha:4f160d06 src:manual/59-proj-monitor.md:413 klas:F -->
+### T-59-125 · kod-ryadok · рядок 413
 
 **Книга каже, дослівно:**
 
@@ -2236,8 +2492,8 @@
 
 ---
 
-<!-- fc id:T-59-111 sha:343d9bab src:manual/59-proj-monitor.md:373 klas:F -->
-### T-59-111 · kod-ryadok · рядок 373
+<!-- fc id:T-59-126 sha:343d9bab src:manual/59-proj-monitor.md:414 klas:F -->
+### T-59-126 · kod-ryadok · рядок 414
 
 **Книга каже, дослівно:**
 
@@ -2249,8 +2505,8 @@
 
 ---
 
-<!-- fc id:T-59-112 sha:e801663f src:manual/59-proj-monitor.md:374 klas:F -->
-### T-59-112 · kod-ryadok · рядок 374
+<!-- fc id:T-59-127 sha:e801663f src:manual/59-proj-monitor.md:415 klas:F -->
+### T-59-127 · kod-ryadok · рядок 415
 
 **Книга каже, дослівно:**
 
@@ -2262,8 +2518,8 @@
 
 ---
 
-<!-- fc id:T-59-113 sha:b3a83074 src:manual/59-proj-monitor.md:379 klas:C -->
-### T-59-113 · proza · рядок 379
+<!-- fc id:T-59-128 sha:b3a83074 src:manual/59-proj-monitor.md:420 klas:C -->
+### T-59-128 · proza · рядок 420
 
 **Книга каже, дослівно:**
 
@@ -2279,8 +2535,8 @@
 
 ---
 
-<!-- fc id:T-59-114 sha:fda6a9fd src:manual/59-proj-monitor.md:379 klas:F -->
-### T-59-114 · proza · рядок 379
+<!-- fc id:T-59-129 sha:fda6a9fd src:manual/59-proj-monitor.md:420 klas:F -->
+### T-59-129 · proza · рядок 420
 
 **Книга каже, дослівно:**
 
@@ -2292,8 +2548,8 @@
 
 ---
 
-<!-- fc id:T-59-115 sha:98a85158 src:manual/59-proj-monitor.md:379 klas:F -->
-### T-59-115 · proza · рядок 379
+<!-- fc id:T-59-130 sha:98a85158 src:manual/59-proj-monitor.md:420 klas:F -->
+### T-59-130 · proza · рядок 420
 
 **Книга каже, дослівно:**
 
@@ -2305,8 +2561,8 @@
 
 ---
 
-<!-- fc id:T-59-116 sha:98b2d431 src:manual/59-proj-monitor.md:379 klas:F -->
-### T-59-116 · proza · рядок 379
+<!-- fc id:T-59-131 sha:98b2d431 src:manual/59-proj-monitor.md:420 klas:F -->
+### T-59-131 · proza · рядок 420
 
 **Книга каже, дослівно:**
 
@@ -2318,8 +2574,8 @@
 
 ---
 
-<!-- fc id:T-59-117 sha:3ec3a7c7 src:manual/59-proj-monitor.md:379 klas:F -->
-### T-59-117 · proza · рядок 379
+<!-- fc id:T-59-132 sha:3ec3a7c7 src:manual/59-proj-monitor.md:420 klas:F -->
+### T-59-132 · proza · рядок 420
 
 **Книга каже, дослівно:**
 
@@ -2331,8 +2587,8 @@
 
 ---
 
-<!-- fc id:T-59-118 sha:f2cb8e81 src:manual/59-proj-monitor.md:379 klas:F -->
-### T-59-118 · proza · рядок 379
+<!-- fc id:T-59-133 sha:f2cb8e81 src:manual/59-proj-monitor.md:420 klas:F -->
+### T-59-133 · proza · рядок 420
 
 **Книга каже, дослівно:**
 
@@ -2344,8 +2600,8 @@
 
 ---
 
-<!-- fc id:T-59-119 sha:cab8cb32 src:manual/59-proj-monitor.md:379 klas:F -->
-### T-59-119 · proza · рядок 379
+<!-- fc id:T-59-134 sha:cab8cb32 src:manual/59-proj-monitor.md:420 klas:F -->
+### T-59-134 · proza · рядок 420
 
 **Книга каже, дослівно:**
 
@@ -2357,8 +2613,8 @@
 
 ---
 
-<!-- fc id:T-59-120 sha:26ecb42f src:manual/59-proj-monitor.md:392 klas:C -->
-### T-59-120 · proza · рядок 392
+<!-- fc id:T-59-135 sha:26ecb42f src:manual/59-proj-monitor.md:433 klas:C -->
+### T-59-135 · proza · рядок 433
 
 **Книга каже, дослівно:**
 

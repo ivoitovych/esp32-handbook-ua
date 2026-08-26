@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k05-proshyvka.md`
 
-Одиниць твердження: **38**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **39**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -365,12 +365,12 @@
 
 ---
 
-<!-- fc id:T-K05-024 sha:a5f80c6b src:kartky/k05-proshyvka.md:35 klas:F -->
+<!-- fc id:T-K05-024 sha:5c4fd9cd src:kartky/k05-proshyvka.md:35 klas:F -->
 ### T-K05-024 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
-> `-z` вмикає стиснення — швидше і безпечніше для довгих кабелів.
+> `-z` — стиснення при передачі.
 
 **Доказ**
 
@@ -378,8 +378,21 @@
 
 ---
 
-<!-- fc id:T-K05-025 sha:ca260535 src:kartky/k05-proshyvka.md:35 klas:F -->
+<!-- fc id:T-K05-025 sha:b73347cd src:kartky/k05-proshyvka.md:35 klas:F -->
 ### T-K05-025 · proza · рядок 35
+
+**Книга каже, дослівно:**
+
+> Уже ввімкнене; писати треба лише разом із `--no-stub`, де воно типово вимкнене.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-026 sha:ca260535 src:kartky/k05-proshyvka.md:35 klas:F -->
+### T-K05-026 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -391,8 +404,8 @@
 
 ---
 
-<!-- fc id:T-K05-026 sha:18bb88d3 src:kartky/k05-proshyvka.md:38 klas:F -->
-### T-K05-026 · proza · рядок 38
+<!-- fc id:T-K05-027 sha:18bb88d3 src:kartky/k05-proshyvka.md:39 klas:F -->
+### T-K05-027 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -404,8 +417,8 @@
 
 ---
 
-<!-- fc id:T-K05-027 sha:1df68ffb src:kartky/k05-proshyvka.md:41 klas:A -->
-### T-K05-027 · kod · рядок 41
+<!-- fc id:T-K05-028 sha:1df68ffb src:kartky/k05-proshyvka.md:42 klas:A -->
+### T-K05-028 · kod · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -439,8 +452,8 @@
 
 ---
 
-<!-- fc id:T-K05-028 sha:9a611ded src:kartky/k05-proshyvka.md:42 klas:A -->
-### T-K05-028 · kod-ryadok · рядок 42
+<!-- fc id:T-K05-029 sha:9a611ded src:kartky/k05-proshyvka.md:43 klas:A -->
+### T-K05-029 · kod-ryadok · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -472,8 +485,8 @@
 
 ---
 
-<!-- fc id:T-K05-029 sha:953c7797 src:kartky/k05-proshyvka.md:47 klas:A -->
-### T-K05-029 · proza · рядок 47
+<!-- fc id:T-K05-030 sha:953c7797 src:kartky/k05-proshyvka.md:48 klas:A -->
+### T-K05-030 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -505,8 +518,8 @@
 
 ---
 
-<!-- fc id:T-K05-030 sha:d4137943 src:kartky/k05-proshyvka.md:47 klas:F -->
-### T-K05-030 · proza · рядок 47
+<!-- fc id:T-K05-031 sha:d4137943 src:kartky/k05-proshyvka.md:48 klas:F -->
+### T-K05-031 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -518,8 +531,8 @@
 
 ---
 
-<!-- fc id:T-K05-031 sha:09ccdb8d src:kartky/k05-proshyvka.md:50 klas:A -->
-### T-K05-031 · kod · рядок 50
+<!-- fc id:T-K05-032 sha:09ccdb8d src:kartky/k05-proshyvka.md:51 klas:A -->
+### T-K05-032 · kod · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -553,8 +566,8 @@
 
 ---
 
-<!-- fc id:T-K05-032 sha:b9fc11f0 src:kartky/k05-proshyvka.md:51 klas:A -->
-### T-K05-032 · kod-ryadok · рядок 51
+<!-- fc id:T-K05-033 sha:b9fc11f0 src:kartky/k05-proshyvka.md:52 klas:A -->
+### T-K05-033 · kod-ryadok · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -586,8 +599,8 @@
 
 ---
 
-<!-- fc id:T-K05-033 sha:9b34572c src:kartky/k05-proshyvka.md:54 klas:F -->
-### T-K05-033 · proza · рядок 54
+<!-- fc id:T-K05-034 sha:9b34572c src:kartky/k05-proshyvka.md:55 klas:F -->
+### T-K05-034 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -599,8 +612,8 @@
 
 ---
 
-<!-- fc id:T-K05-034 sha:ba1c09bd src:kartky/k05-proshyvka.md:58 klas:F -->
-### T-K05-034 · proza · рядок 58
+<!-- fc id:T-K05-035 sha:ba1c09bd src:kartky/k05-proshyvka.md:59 klas:F -->
+### T-K05-035 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -612,8 +625,8 @@
 
 ---
 
-<!-- fc id:T-K05-035 sha:f9a95e16 src:kartky/k05-proshyvka.md:60 klas:A -->
-### T-K05-035 · proza · рядок 60
+<!-- fc id:T-K05-036 sha:f9a95e16 src:kartky/k05-proshyvka.md:61 klas:A -->
+### T-K05-036 · proza · рядок 61
 
 **Книга каже, дослівно:**
 
@@ -647,8 +660,8 @@
 
 ---
 
-<!-- fc id:T-K05-036 sha:ae4eb4e6 src:kartky/k05-proshyvka.md:65 klas:F -->
-### T-K05-036 · proza · рядок 65
+<!-- fc id:T-K05-037 sha:ae4eb4e6 src:kartky/k05-proshyvka.md:66 klas:F -->
+### T-K05-037 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -660,8 +673,8 @@
 
 ---
 
-<!-- fc id:T-K05-037 sha:631e8856 src:kartky/k05-proshyvka.md:68 klas:F -->
-### T-K05-037 · proza · рядок 68
+<!-- fc id:T-K05-038 sha:631e8856 src:kartky/k05-proshyvka.md:69 klas:F -->
+### T-K05-038 · proza · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -673,8 +686,8 @@
 
 ---
 
-<!-- fc id:T-K05-038 sha:f5bd92cd src:kartky/k05-proshyvka.md:68 klas:A -->
-### T-K05-038 · proza · рядок 68
+<!-- fc id:T-K05-039 sha:f5bd92cd src:kartky/k05-proshyvka.md:69 klas:A -->
+### T-K05-039 · proza · рядок 69
 
 **Книга каже, дослівно:**
 
