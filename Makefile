@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty pravopys budgets arytmetyka check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -71,6 +71,11 @@ zvyazok:
 citaty:
 	@$(PY) tools/citaty.py --zvit
 
+# Кальки з російської. Ворота, а не звіт: перелік короткий і містить
+# лише однозначні заміни, тож знахідка тут — завжди помилка.
+kalky:
+	@$(PY) tools/kalky.py
+
 # Поділ незвіреного між супровідниками за досяжністю джерела.
 podil:
 	@$(PY) tools/podil.py
@@ -119,7 +124,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty budgets arytmetyka check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty kalky budgets arytmetyka check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
