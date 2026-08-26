@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-H-001 sha:58f3cef2 src:dodatky/h-dzherela.md:3 klas:F -->
+<!-- fc id:T-H-001 sha:58f3cef2 src:dodatky/h-dzherela.md:3 klas:E -->
 ### T-H-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-H-002 sha:7cfb288e src:dodatky/h-dzherela.md:7 klas:F -->
+<!-- fc id:T-H-002 sha:7cfb288e src:dodatky/h-dzherela.md:7 klas:E -->
 ### T-H-002 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-H-004 sha:3adcb79c src:dodatky/h-dzherela.md:11 klas:F -->
+<!-- fc id:T-H-004 sha:3adcb79c src:dodatky/h-dzherela.md:11 klas:E -->
 ### T-H-004 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-H-005 sha:2c4b59ad src:dodatky/h-dzherela.md:18 klas:F -->
+<!-- fc id:T-H-005 sha:2c4b59ad src:dodatky/h-dzherela.md:18 klas:E -->
 ### T-H-005 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-H-007 sha:b46ca574 src:dodatky/h-dzherela.md:21 klas:F -->
+<!-- fc id:T-H-007 sha:b46ca574 src:dodatky/h-dzherela.md:21 klas:E -->
 ### T-H-007 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-H-008 sha:963b9a8b src:dodatky/h-dzherela.md:25 klas:F -->
+<!-- fc id:T-H-008 sha:963b9a8b src:dodatky/h-dzherela.md:25 klas:E -->
 ### T-H-008 · proza · рядок 25
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-H-009 sha:97520e07 src:dodatky/h-dzherela.md:25 klas:F -->
+<!-- fc id:T-H-009 sha:97520e07 src:dodatky/h-dzherela.md:25 klas:E -->
 ### T-H-009 · proza · рядок 25
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-H-011 sha:e538c76d src:dodatky/h-dzherela.md:29 klas:F -->
+<!-- fc id:T-H-011 sha:e538c76d src:dodatky/h-dzherela.md:29 klas:E -->
 ### T-H-011 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-H-012 sha:706ec1e9 src:dodatky/h-dzherela.md:29 klas:F -->
+<!-- fc id:T-H-012 sha:706ec1e9 src:dodatky/h-dzherela.md:29 klas:E -->
 ### T-H-012 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-H-014 sha:9c449739 src:dodatky/h-dzherela.md:33 klas:F -->
+<!-- fc id:T-H-014 sha:9c449739 src:dodatky/h-dzherela.md:33 klas:E -->
 ### T-H-014 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-H-015 sha:635dc4f6 src:dodatky/h-dzherela.md:37 klas:F -->
+<!-- fc id:T-H-015 sha:635dc4f6 src:dodatky/h-dzherela.md:37 klas:E -->
 ### T-H-015 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-H-018 sha:3101f6ff src:dodatky/h-dzherela.md:43 klas:F -->
+<!-- fc id:T-H-018 sha:3101f6ff src:dodatky/h-dzherela.md:43 klas:E -->
 ### T-H-018 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -383,7 +383,7 @@
 
 ---
 
-<!-- fc id:T-H-028 sha:8c0c5ef0 src:dodatky/h-dzherela.md:77 klas:F -->
+<!-- fc id:T-H-028 sha:8c0c5ef0 src:dodatky/h-dzherela.md:77 klas:E -->
 ### T-H-028 · proza · рядок 77
 
 **Книга каже, дослівно:**
@@ -461,7 +461,7 @@
 
 ---
 
-<!-- fc id:T-H-034 sha:f29f5462 src:dodatky/h-dzherela.md:79 klas:F -->
+<!-- fc id:T-H-034 sha:f29f5462 src:dodatky/h-dzherela.md:79 klas:E -->
 ### T-H-034 · proza · рядок 79
 
 **Книга каже, дослівно:**
@@ -500,7 +500,7 @@
 
 ---
 
-<!-- fc id:T-H-037 sha:b24df478 src:dodatky/h-dzherela.md:88 klas:F -->
+<!-- fc id:T-H-037 sha:b24df478 src:dodatky/h-dzherela.md:88 klas:E -->
 ### T-H-037 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-H-039 sha:8e57e2c5 src:dodatky/h-dzherela.md:98 klas:F -->
+<!-- fc id:T-H-039 sha:8e57e2c5 src:dodatky/h-dzherela.md:98 klas:E -->
 ### T-H-039 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -539,7 +539,7 @@
 
 ---
 
-<!-- fc id:T-H-040 sha:4e7c3e7c src:dodatky/h-dzherela.md:100 klas:F -->
+<!-- fc id:T-H-040 sha:4e7c3e7c src:dodatky/h-dzherela.md:100 klas:E -->
 ### T-H-040 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -552,7 +552,7 @@
 
 ---
 
-<!-- fc id:T-H-041 sha:38f042ae src:dodatky/h-dzherela.md:100 klas:F -->
+<!-- fc id:T-H-041 sha:38f042ae src:dodatky/h-dzherela.md:100 klas:E -->
 ### T-H-041 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -565,7 +565,7 @@
 
 ---
 
-<!-- fc id:T-H-042 sha:7f1281ce src:dodatky/h-dzherela.md:104 klas:F -->
+<!-- fc id:T-H-042 sha:7f1281ce src:dodatky/h-dzherela.md:104 klas:E -->
 ### T-H-042 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -578,7 +578,7 @@
 
 ---
 
-<!-- fc id:T-H-043 sha:af2e654b src:dodatky/h-dzherela.md:108 klas:F -->
+<!-- fc id:T-H-043 sha:af2e654b src:dodatky/h-dzherela.md:108 klas:E -->
 ### T-H-043 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -591,7 +591,7 @@
 
 ---
 
-<!-- fc id:T-H-044 sha:c95feec0 src:dodatky/h-dzherela.md:108 klas:F -->
+<!-- fc id:T-H-044 sha:c95feec0 src:dodatky/h-dzherela.md:108 klas:E -->
 ### T-H-044 · proza · рядок 108
 
 **Книга каже, дослівно:**

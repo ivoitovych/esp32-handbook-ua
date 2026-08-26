@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-13-001 sha:1fdbb66e src:manual/13-pio.md:3 klas:F -->
+<!-- fc id:T-13-001 sha:1fdbb66e src:manual/13-pio.md:3 klas:E -->
 ### T-13-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-13-003 sha:7528b989 src:manual/13-pio.md:8 klas:F -->
+<!-- fc id:T-13-003 sha:7528b989 src:manual/13-pio.md:8 klas:E -->
 ### T-13-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-13-006 sha:1dabb487 src:manual/13-pio.md:18 klas:F -->
+<!-- fc id:T-13-006 sha:1dabb487 src:manual/13-pio.md:18 klas:E -->
 ### T-13-006 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-13-007 sha:4ec26d12 src:manual/13-pio.md:18 klas:F -->
+<!-- fc id:T-13-007 sha:4ec26d12 src:manual/13-pio.md:18 klas:E -->
 ### T-13-007 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-13-008 sha:63df3a47 src:manual/13-pio.md:21 klas:F -->
+<!-- fc id:T-13-008 sha:63df3a47 src:manual/13-pio.md:21 klas:E -->
 ### T-13-008 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-13-010 sha:4d0842b5 src:manual/13-pio.md:27 klas:F -->
+<!-- fc id:T-13-010 sha:4d0842b5 src:manual/13-pio.md:27 klas:E -->
 ### T-13-010 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-13-011 sha:87c9dff3 src:manual/13-pio.md:27 klas:F -->
+<!-- fc id:T-13-011 sha:87c9dff3 src:manual/13-pio.md:27 klas:E -->
 ### T-13-011 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-13-012 sha:e78e3416 src:manual/13-pio.md:31 klas:F -->
+<!-- fc id:T-13-012 sha:e78e3416 src:manual/13-pio.md:31 klas:E -->
 ### T-13-012 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-13-013 sha:5c49975c src:manual/13-pio.md:31 klas:F -->
+<!-- fc id:T-13-013 sha:5c49975c src:manual/13-pio.md:31 klas:E -->
 ### T-13-013 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-13-014 sha:5a0c92c3 src:manual/13-pio.md:39 klas:F -->
+<!-- fc id:T-13-014 sha:5a0c92c3 src:manual/13-pio.md:39 klas:E -->
 ### T-13-014 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-13-016 sha:6e6ff0ea src:manual/13-pio.md:39 klas:F -->
+<!-- fc id:T-13-016 sha:6e6ff0ea src:manual/13-pio.md:39 klas:E -->
 ### T-13-016 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-13-018 sha:a99e783d src:manual/13-pio.md:46 klas:F -->
+<!-- fc id:T-13-018 sha:a99e783d src:manual/13-pio.md:46 klas:E -->
 ### T-13-018 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-13-019 sha:297f0eb6 src:manual/13-pio.md:49 klas:F -->
+<!-- fc id:T-13-019 sha:297f0eb6 src:manual/13-pio.md:49 klas:E -->
 ### T-13-019 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-13-020 sha:aec08e40 src:manual/13-pio.md:54 klas:F -->
+<!-- fc id:T-13-020 sha:aec08e40 src:manual/13-pio.md:54 klas:E -->
 ### T-13-020 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -440,7 +440,7 @@
 
 ---
 
-<!-- fc id:T-13-028 sha:941bc495 src:manual/13-pio.md:86 klas:F -->
+<!-- fc id:T-13-028 sha:941bc495 src:manual/13-pio.md:86 klas:E -->
 ### T-13-028 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -466,7 +466,7 @@
 
 ---
 
-<!-- fc id:T-13-030 sha:ae130aac src:manual/13-pio.md:91 klas:F -->
+<!-- fc id:T-13-030 sha:ae130aac src:manual/13-pio.md:91 klas:E -->
 ### T-13-030 · proza · рядок 91
 
 **Книга каже, дослівно:**
@@ -479,7 +479,7 @@
 
 ---
 
-<!-- fc id:T-13-031 sha:be464ff9 src:manual/13-pio.md:96 klas:F -->
+<!-- fc id:T-13-031 sha:be464ff9 src:manual/13-pio.md:96 klas:E -->
 ### T-13-031 · proza · рядок 96
 
 **Книга каже, дослівно:**
@@ -560,7 +560,7 @@
 
 ---
 
-<!-- fc id:T-13-036 sha:c8f4d86f src:manual/13-pio.md:109 klas:F -->
+<!-- fc id:T-13-036 sha:c8f4d86f src:manual/13-pio.md:109 klas:E -->
 ### T-13-036 · proza · рядок 109
 
 **Книга каже, дослівно:**
@@ -573,7 +573,7 @@
 
 ---
 
-<!-- fc id:T-13-037 sha:7934e141 src:manual/13-pio.md:109 klas:F -->
+<!-- fc id:T-13-037 sha:7934e141 src:manual/13-pio.md:109 klas:E -->
 ### T-13-037 · proza · рядок 109
 
 **Книга каже, дослівно:**
@@ -612,7 +612,7 @@
 
 ---
 
-<!-- fc id:T-13-040 sha:33af8147 src:manual/13-pio.md:115 klas:F -->
+<!-- fc id:T-13-040 sha:33af8147 src:manual/13-pio.md:115 klas:E -->
 ### T-13-040 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -651,7 +651,7 @@
 
 ---
 
-<!-- fc id:T-13-043 sha:6a3b8741 src:manual/13-pio.md:123 klas:F -->
+<!-- fc id:T-13-043 sha:6a3b8741 src:manual/13-pio.md:123 klas:E -->
 ### T-13-043 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -763,7 +763,7 @@
 
 ---
 
-<!-- fc id:T-13-049 sha:47b4dc2c src:manual/13-pio.md:150 klas:F -->
+<!-- fc id:T-13-049 sha:47b4dc2c src:manual/13-pio.md:150 klas:E -->
 ### T-13-049 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -789,7 +789,7 @@
 
 ---
 
-<!-- fc id:T-13-051 sha:36a4b4be src:manual/13-pio.md:156 klas:F -->
+<!-- fc id:T-13-051 sha:36a4b4be src:manual/13-pio.md:156 klas:E -->
 ### T-13-051 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -815,7 +815,7 @@
 
 ---
 
-<!-- fc id:T-13-053 sha:2b4c7e4e src:manual/13-pio.md:165 klas:F -->
+<!-- fc id:T-13-053 sha:2b4c7e4e src:manual/13-pio.md:165 klas:E -->
 ### T-13-053 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -828,7 +828,7 @@
 
 ---
 
-<!-- fc id:T-13-054 sha:f0918098 src:manual/13-pio.md:169 klas:F -->
+<!-- fc id:T-13-054 sha:f0918098 src:manual/13-pio.md:169 klas:E -->
 ### T-13-054 · proza · рядок 169
 
 **Книга каже, дослівно:**
@@ -871,7 +871,7 @@
 
 ---
 
-<!-- fc id:T-13-057 sha:6ef65336 src:manual/13-pio.md:179 klas:F -->
+<!-- fc id:T-13-057 sha:6ef65336 src:manual/13-pio.md:179 klas:E -->
 ### T-13-057 · proza · рядок 179
 
 **Книга каже, дослівно:**
@@ -897,7 +897,7 @@
 
 ---
 
-<!-- fc id:T-13-059 sha:71f8b903 src:manual/13-pio.md:179 klas:F -->
+<!-- fc id:T-13-059 sha:71f8b903 src:manual/13-pio.md:179 klas:E -->
 ### T-13-059 · proza · рядок 179
 
 **Книга каже, дослівно:**
@@ -1001,7 +1001,7 @@
 
 ---
 
-<!-- fc id:T-13-067 sha:ee36c4b3 src:manual/13-pio.md:198 klas:F -->
+<!-- fc id:T-13-067 sha:ee36c4b3 src:manual/13-pio.md:198 klas:E -->
 ### T-13-067 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1014,7 +1014,7 @@
 
 ---
 
-<!-- fc id:T-13-068 sha:03240a6a src:manual/13-pio.md:198 klas:F -->
+<!-- fc id:T-13-068 sha:03240a6a src:manual/13-pio.md:198 klas:E -->
 ### T-13-068 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1027,7 +1027,7 @@
 
 ---
 
-<!-- fc id:T-13-069 sha:16ba4163 src:manual/13-pio.md:202 klas:F -->
+<!-- fc id:T-13-069 sha:16ba4163 src:manual/13-pio.md:202 klas:E -->
 ### T-13-069 · proza · рядок 202
 
 **Книга каже, дослівно:**
@@ -1040,7 +1040,7 @@
 
 ---
 
-<!-- fc id:T-13-070 sha:b81ae778 src:manual/13-pio.md:202 klas:F -->
+<!-- fc id:T-13-070 sha:b81ae778 src:manual/13-pio.md:202 klas:E -->
 ### T-13-070 · proza · рядок 202
 
 **Книга каже, дослівно:**
@@ -1066,7 +1066,7 @@
 
 ---
 
-<!-- fc id:T-13-072 sha:07b465b5 src:manual/13-pio.md:207 klas:F -->
+<!-- fc id:T-13-072 sha:07b465b5 src:manual/13-pio.md:207 klas:E -->
 ### T-13-072 · proza · рядок 207
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-F-001 sha:c0c77540 src:dodatky/f-oflayn.md:3 klas:F -->
+<!-- fc id:T-F-001 sha:c0c77540 src:dodatky/f-oflayn.md:3 klas:E -->
 ### T-F-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-F-003 sha:abb242bb src:dodatky/f-oflayn.md:6 klas:F -->
+<!-- fc id:T-F-003 sha:abb242bb src:dodatky/f-oflayn.md:6 klas:E -->
 ### T-F-003 · proza · рядок 6
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-F-004 sha:c85a7ca9 src:dodatky/f-oflayn.md:6 klas:F -->
+<!-- fc id:T-F-004 sha:c85a7ca9 src:dodatky/f-oflayn.md:6 klas:E -->
 ### T-F-004 · proza · рядок 6
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-F-005 sha:773e202f src:dodatky/f-oflayn.md:11 klas:F -->
+<!-- fc id:T-F-005 sha:773e202f src:dodatky/f-oflayn.md:11 klas:E -->
 ### T-F-005 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-F-007 sha:977a7391 src:dodatky/f-oflayn.md:21 klas:F -->
+<!-- fc id:T-F-007 sha:977a7391 src:dodatky/f-oflayn.md:21 klas:E -->
 ### T-F-007 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-F-009 sha:fb3f94ae src:dodatky/f-oflayn.md:31 klas:F -->
+<!-- fc id:T-F-009 sha:fb3f94ae src:dodatky/f-oflayn.md:31 klas:E -->
 ### T-F-009 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-F-017 sha:4b75c150 src:dodatky/f-oflayn.md:86 klas:F -->
+<!-- fc id:T-F-017 sha:4b75c150 src:dodatky/f-oflayn.md:86 klas:E -->
 ### T-F-017 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-F-018 sha:7391fd9d src:dodatky/f-oflayn.md:88 klas:F -->
+<!-- fc id:T-F-018 sha:7391fd9d src:dodatky/f-oflayn.md:88 klas:E -->
 ### T-F-018 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-F-019 sha:643ef37d src:dodatky/f-oflayn.md:88 klas:F -->
+<!-- fc id:T-F-019 sha:643ef37d src:dodatky/f-oflayn.md:88 klas:E -->
 ### T-F-019 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-F-020 sha:75449381 src:dodatky/f-oflayn.md:91 klas:F -->
+<!-- fc id:T-F-020 sha:75449381 src:dodatky/f-oflayn.md:91 klas:E -->
 ### T-F-020 · proza · рядок 91
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-F-021 sha:f04861a1 src:dodatky/f-oflayn.md:97 klas:F -->
+<!-- fc id:T-F-021 sha:f04861a1 src:dodatky/f-oflayn.md:97 klas:E -->
 ### T-F-021 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-F-026 sha:6cb1e4d3 src:dodatky/f-oflayn.md:99 klas:F -->
+<!-- fc id:T-F-026 sha:6cb1e4d3 src:dodatky/f-oflayn.md:99 klas:E -->
 ### T-F-026 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-F-027 sha:acfc2b18 src:dodatky/f-oflayn.md:106 klas:F -->
+<!-- fc id:T-F-027 sha:acfc2b18 src:dodatky/f-oflayn.md:106 klas:E -->
 ### T-F-027 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -357,7 +357,7 @@
 
 ---
 
-<!-- fc id:T-F-028 sha:84821e99 src:dodatky/f-oflayn.md:106 klas:F -->
+<!-- fc id:T-F-028 sha:84821e99 src:dodatky/f-oflayn.md:106 klas:E -->
 ### T-F-028 · proza · рядок 106
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-06-001 sha:c058fc32 src:manual/06-zhyvlennya.md:3 klas:F -->
+<!-- fc id:T-06-001 sha:c058fc32 src:manual/06-zhyvlennya.md:3 klas:E -->
 ### T-06-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-06-002 sha:f8132c00 src:manual/06-zhyvlennya.md:3 klas:F -->
+<!-- fc id:T-06-002 sha:f8132c00 src:manual/06-zhyvlennya.md:3 klas:E -->
 ### T-06-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-06-003 sha:5665f4b7 src:manual/06-zhyvlennya.md:7 klas:F -->
+<!-- fc id:T-06-003 sha:5665f4b7 src:manual/06-zhyvlennya.md:7 klas:E -->
 ### T-06-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-06-004 sha:a645236e src:manual/06-zhyvlennya.md:7 klas:F -->
+<!-- fc id:T-06-004 sha:a645236e src:manual/06-zhyvlennya.md:7 klas:E -->
 ### T-06-004 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-06-005 sha:0adea61e src:manual/06-zhyvlennya.md:7 klas:F -->
+<!-- fc id:T-06-005 sha:0adea61e src:manual/06-zhyvlennya.md:7 klas:E -->
 ### T-06-005 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-06-006 sha:31146bd5 src:manual/06-zhyvlennya.md:14 klas:F -->
+<!-- fc id:T-06-006 sha:31146bd5 src:manual/06-zhyvlennya.md:14 klas:E -->
 ### T-06-006 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-06-008 sha:4d49c485 src:manual/06-zhyvlennya.md:16 klas:F -->
+<!-- fc id:T-06-008 sha:4d49c485 src:manual/06-zhyvlennya.md:16 klas:E -->
 ### T-06-008 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-06-014 sha:843ba99e src:manual/06-zhyvlennya.md:27 klas:F -->
+<!-- fc id:T-06-014 sha:843ba99e src:manual/06-zhyvlennya.md:27 klas:E -->
 ### T-06-014 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-06-016 sha:8535b66a src:manual/06-zhyvlennya.md:37 klas:F -->
+<!-- fc id:T-06-016 sha:8535b66a src:manual/06-zhyvlennya.md:37 klas:E -->
 ### T-06-016 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-06-017 sha:ab0f8eca src:manual/06-zhyvlennya.md:37 klas:F -->
+<!-- fc id:T-06-017 sha:ab0f8eca src:manual/06-zhyvlennya.md:37 klas:E -->
 ### T-06-017 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -313,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-06-024 sha:9bf83737 src:manual/06-zhyvlennya.md:49 klas:F -->
+<!-- fc id:T-06-024 sha:9bf83737 src:manual/06-zhyvlennya.md:49 klas:E -->
 ### T-06-024 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -339,7 +339,7 @@
 
 ---
 
-<!-- fc id:T-06-026 sha:6aeca8c1 src:manual/06-zhyvlennya.md:49 klas:F -->
+<!-- fc id:T-06-026 sha:6aeca8c1 src:manual/06-zhyvlennya.md:49 klas:E -->
 ### T-06-026 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -365,7 +365,7 @@
 
 ---
 
-<!-- fc id:T-06-028 sha:9406252e src:manual/06-zhyvlennya.md:55 klas:F -->
+<!-- fc id:T-06-028 sha:9406252e src:manual/06-zhyvlennya.md:55 klas:E -->
 ### T-06-028 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -391,7 +391,7 @@
 
 ---
 
-<!-- fc id:T-06-030 sha:fbf46d93 src:manual/06-zhyvlennya.md:66 klas:F -->
+<!-- fc id:T-06-030 sha:fbf46d93 src:manual/06-zhyvlennya.md:66 klas:E -->
 ### T-06-030 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -404,7 +404,7 @@
 
 ---
 
-<!-- fc id:T-06-031 sha:efb5691a src:manual/06-zhyvlennya.md:66 klas:F -->
+<!-- fc id:T-06-031 sha:efb5691a src:manual/06-zhyvlennya.md:66 klas:E -->
 ### T-06-031 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -417,7 +417,7 @@
 
 ---
 
-<!-- fc id:T-06-032 sha:33ed5780 src:manual/06-zhyvlennya.md:70 klas:F -->
+<!-- fc id:T-06-032 sha:33ed5780 src:manual/06-zhyvlennya.md:70 klas:E -->
 ### T-06-032 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -545,7 +545,7 @@
 
 ---
 
-<!-- fc id:T-06-038 sha:42e729f4 src:manual/06-zhyvlennya.md:87 klas:F -->
+<!-- fc id:T-06-038 sha:42e729f4 src:manual/06-zhyvlennya.md:87 klas:E -->
 ### T-06-038 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -623,7 +623,7 @@
 
 ---
 
-<!-- fc id:T-06-044 sha:86b3ba98 src:manual/06-zhyvlennya.md:87 klas:F -->
+<!-- fc id:T-06-044 sha:86b3ba98 src:manual/06-zhyvlennya.md:87 klas:E -->
 ### T-06-044 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -636,7 +636,7 @@
 
 ---
 
-<!-- fc id:T-06-045 sha:f1d7003f src:manual/06-zhyvlennya.md:95 klas:F -->
+<!-- fc id:T-06-045 sha:f1d7003f src:manual/06-zhyvlennya.md:95 klas:E -->
 ### T-06-045 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -649,7 +649,7 @@
 
 ---
 
-<!-- fc id:T-06-046 sha:65171072 src:manual/06-zhyvlennya.md:97 klas:F -->
+<!-- fc id:T-06-046 sha:65171072 src:manual/06-zhyvlennya.md:97 klas:E -->
 ### T-06-046 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -675,7 +675,7 @@
 
 ---
 
-<!-- fc id:T-06-048 sha:1143ca4f src:manual/06-zhyvlennya.md:97 klas:F -->
+<!-- fc id:T-06-048 sha:1143ca4f src:manual/06-zhyvlennya.md:97 klas:E -->
 ### T-06-048 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -714,7 +714,7 @@
 
 ---
 
-<!-- fc id:T-06-051 sha:db6086a7 src:manual/06-zhyvlennya.md:108 klas:F -->
+<!-- fc id:T-06-051 sha:db6086a7 src:manual/06-zhyvlennya.md:108 klas:E -->
 ### T-06-051 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -727,7 +727,7 @@
 
 ---
 
-<!-- fc id:T-06-052 sha:5f5afbdc src:manual/06-zhyvlennya.md:108 klas:F -->
+<!-- fc id:T-06-052 sha:5f5afbdc src:manual/06-zhyvlennya.md:108 klas:E -->
 ### T-06-052 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -740,7 +740,7 @@
 
 ---
 
-<!-- fc id:T-06-053 sha:fa7e6407 src:manual/06-zhyvlennya.md:113 klas:F -->
+<!-- fc id:T-06-053 sha:fa7e6407 src:manual/06-zhyvlennya.md:113 klas:E -->
 ### T-06-053 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -753,7 +753,7 @@
 
 ---
 
-<!-- fc id:T-06-054 sha:999e517d src:manual/06-zhyvlennya.md:113 klas:F -->
+<!-- fc id:T-06-054 sha:999e517d src:manual/06-zhyvlennya.md:113 klas:E -->
 ### T-06-054 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -766,7 +766,7 @@
 
 ---
 
-<!-- fc id:T-06-055 sha:6fc37438 src:manual/06-zhyvlennya.md:119 klas:F -->
+<!-- fc id:T-06-055 sha:6fc37438 src:manual/06-zhyvlennya.md:119 klas:E -->
 ### T-06-055 · proza · рядок 119
 
 **Книга каже, дослівно:**
@@ -779,7 +779,7 @@
 
 ---
 
-<!-- fc id:T-06-056 sha:fb316456 src:manual/06-zhyvlennya.md:119 klas:F -->
+<!-- fc id:T-06-056 sha:fb316456 src:manual/06-zhyvlennya.md:119 klas:E -->
 ### T-06-056 · proza · рядок 119
 
 **Книга каже, дослівно:**
@@ -792,7 +792,7 @@
 
 ---
 
-<!-- fc id:T-06-057 sha:c5a1ea76 src:manual/06-zhyvlennya.md:121 klas:F -->
+<!-- fc id:T-06-057 sha:c5a1ea76 src:manual/06-zhyvlennya.md:121 klas:E -->
 ### T-06-057 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -805,7 +805,7 @@
 
 ---
 
-<!-- fc id:T-06-058 sha:05cbea1e src:manual/06-zhyvlennya.md:121 klas:F -->
+<!-- fc id:T-06-058 sha:05cbea1e src:manual/06-zhyvlennya.md:121 klas:E -->
 ### T-06-058 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -818,7 +818,7 @@
 
 ---
 
-<!-- fc id:T-06-059 sha:d576dbdb src:manual/06-zhyvlennya.md:121 klas:F -->
+<!-- fc id:T-06-059 sha:d576dbdb src:manual/06-zhyvlennya.md:121 klas:E -->
 ### T-06-059 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -831,7 +831,7 @@
 
 ---
 
-<!-- fc id:T-06-060 sha:03cea31f src:manual/06-zhyvlennya.md:125 klas:F -->
+<!-- fc id:T-06-060 sha:03cea31f src:manual/06-zhyvlennya.md:125 klas:E -->
 ### T-06-060 · proza · рядок 125
 
 **Книга каже, дослівно:**
@@ -844,7 +844,7 @@
 
 ---
 
-<!-- fc id:T-06-061 sha:a97d7964 src:manual/06-zhyvlennya.md:125 klas:F -->
+<!-- fc id:T-06-061 sha:a97d7964 src:manual/06-zhyvlennya.md:125 klas:E -->
 ### T-06-061 · proza · рядок 125
 
 **Книга каже, дослівно:**
@@ -857,7 +857,7 @@
 
 ---
 
-<!-- fc id:T-06-062 sha:7d1e7818 src:manual/06-zhyvlennya.md:125 klas:F -->
+<!-- fc id:T-06-062 sha:7d1e7818 src:manual/06-zhyvlennya.md:125 klas:E -->
 ### T-06-062 · proza · рядок 125
 
 **Книга каже, дослівно:**
@@ -870,7 +870,7 @@
 
 ---
 
-<!-- fc id:T-06-063 sha:70530b53 src:manual/06-zhyvlennya.md:129 klas:F -->
+<!-- fc id:T-06-063 sha:70530b53 src:manual/06-zhyvlennya.md:129 klas:E -->
 ### T-06-063 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -904,7 +904,7 @@
 
 ---
 
-<!-- fc id:T-06-065 sha:270264d5 src:manual/06-zhyvlennya.md:129 klas:F -->
+<!-- fc id:T-06-065 sha:270264d5 src:manual/06-zhyvlennya.md:129 klas:E -->
 ### T-06-065 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -930,7 +930,7 @@
 
 ---
 
-<!-- fc id:T-06-067 sha:14731677 src:manual/06-zhyvlennya.md:137 klas:F -->
+<!-- fc id:T-06-067 sha:14731677 src:manual/06-zhyvlennya.md:137 klas:E -->
 ### T-06-067 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -1000,7 +1000,7 @@
 
 ---
 
-<!-- fc id:T-06-071 sha:fad422b8 src:manual/06-zhyvlennya.md:145 klas:F -->
+<!-- fc id:T-06-071 sha:fad422b8 src:manual/06-zhyvlennya.md:145 klas:E -->
 ### T-06-071 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -1079,7 +1079,7 @@
 
 ---
 
-<!-- fc id:T-06-075 sha:808d179c src:manual/06-zhyvlennya.md:156 klas:F -->
+<!-- fc id:T-06-075 sha:808d179c src:manual/06-zhyvlennya.md:156 klas:E -->
 ### T-06-075 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1092,7 +1092,7 @@
 
 ---
 
-<!-- fc id:T-06-076 sha:a6b410ac src:manual/06-zhyvlennya.md:160 klas:F -->
+<!-- fc id:T-06-076 sha:a6b410ac src:manual/06-zhyvlennya.md:160 klas:E -->
 ### T-06-076 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -1135,7 +1135,7 @@
 
 ---
 
-<!-- fc id:T-06-079 sha:7484ddec src:manual/06-zhyvlennya.md:165 klas:F -->
+<!-- fc id:T-06-079 sha:7484ddec src:manual/06-zhyvlennya.md:165 klas:E -->
 ### T-06-079 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -1148,7 +1148,7 @@
 
 ---
 
-<!-- fc id:T-06-080 sha:2d5ba434 src:manual/06-zhyvlennya.md:165 klas:F -->
+<!-- fc id:T-06-080 sha:2d5ba434 src:manual/06-zhyvlennya.md:165 klas:E -->
 ### T-06-080 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -1277,7 +1277,7 @@
 
 ---
 
-<!-- fc id:T-06-085 sha:c7d5e1c8 src:manual/06-zhyvlennya.md:178 klas:F -->
+<!-- fc id:T-06-085 sha:c7d5e1c8 src:manual/06-zhyvlennya.md:178 klas:E -->
 ### T-06-085 · proza · рядок 178
 
 **Книга каже, дослівно:**
@@ -1290,7 +1290,7 @@
 
 ---
 
-<!-- fc id:T-06-086 sha:556d645b src:manual/06-zhyvlennya.md:178 klas:F -->
+<!-- fc id:T-06-086 sha:556d645b src:manual/06-zhyvlennya.md:178 klas:E -->
 ### T-06-086 · proza · рядок 178
 
 **Книга каже, дослівно:**
@@ -1303,7 +1303,7 @@
 
 ---
 
-<!-- fc id:T-06-087 sha:c349b673 src:manual/06-zhyvlennya.md:178 klas:F -->
+<!-- fc id:T-06-087 sha:c349b673 src:manual/06-zhyvlennya.md:178 klas:E -->
 ### T-06-087 · proza · рядок 178
 
 **Книга каже, дослівно:**
@@ -1329,7 +1329,7 @@
 
 ---
 
-<!-- fc id:T-06-089 sha:12e008fa src:manual/06-zhyvlennya.md:184 klas:F -->
+<!-- fc id:T-06-089 sha:12e008fa src:manual/06-zhyvlennya.md:184 klas:E -->
 ### T-06-089 · proza · рядок 184
 
 **Книга каже, дослівно:**
@@ -1342,7 +1342,7 @@
 
 ---
 
-<!-- fc id:T-06-090 sha:c87cb774 src:manual/06-zhyvlennya.md:189 klas:F -->
+<!-- fc id:T-06-090 sha:c87cb774 src:manual/06-zhyvlennya.md:189 klas:E -->
 ### T-06-090 · proza · рядок 189
 
 **Книга каже, дослівно:**
@@ -1368,7 +1368,7 @@
 
 ---
 
-<!-- fc id:T-06-092 sha:8d0045df src:manual/06-zhyvlennya.md:194 klas:F -->
+<!-- fc id:T-06-092 sha:8d0045df src:manual/06-zhyvlennya.md:194 klas:E -->
 ### T-06-092 · proza · рядок 194
 
 **Книга каже, дослівно:**
@@ -1381,7 +1381,7 @@
 
 ---
 
-<!-- fc id:T-06-093 sha:f21b420b src:manual/06-zhyvlennya.md:194 klas:F -->
+<!-- fc id:T-06-093 sha:f21b420b src:manual/06-zhyvlennya.md:194 klas:E -->
 ### T-06-093 · proza · рядок 194
 
 **Книга каже, дослівно:**
@@ -1394,7 +1394,7 @@
 
 ---
 
-<!-- fc id:T-06-094 sha:8e69b815 src:manual/06-zhyvlennya.md:194 klas:F -->
+<!-- fc id:T-06-094 sha:8e69b815 src:manual/06-zhyvlennya.md:194 klas:E -->
 ### T-06-094 · proza · рядок 194
 
 **Книга каже, дослівно:**
@@ -1407,7 +1407,7 @@
 
 ---
 
-<!-- fc id:T-06-095 sha:5f7bb179 src:manual/06-zhyvlennya.md:198 klas:F -->
+<!-- fc id:T-06-095 sha:5f7bb179 src:manual/06-zhyvlennya.md:198 klas:E -->
 ### T-06-095 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1420,7 +1420,7 @@
 
 ---
 
-<!-- fc id:T-06-096 sha:be6c0719 src:manual/06-zhyvlennya.md:198 klas:F -->
+<!-- fc id:T-06-096 sha:be6c0719 src:manual/06-zhyvlennya.md:198 klas:E -->
 ### T-06-096 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1446,7 +1446,7 @@
 
 ---
 
-<!-- fc id:T-06-098 sha:1e3be1de src:manual/06-zhyvlennya.md:202 klas:F -->
+<!-- fc id:T-06-098 sha:1e3be1de src:manual/06-zhyvlennya.md:202 klas:E -->
 ### T-06-098 · proza · рядок 202
 
 **Книга каже, дослівно:**
@@ -1459,7 +1459,7 @@
 
 ---
 
-<!-- fc id:T-06-099 sha:8febff09 src:manual/06-zhyvlennya.md:207 klas:F -->
+<!-- fc id:T-06-099 sha:8febff09 src:manual/06-zhyvlennya.md:207 klas:E -->
 ### T-06-099 · proza · рядок 207
 
 **Книга каже, дослівно:**
@@ -1472,7 +1472,7 @@
 
 ---
 
-<!-- fc id:T-06-100 sha:f320b6cc src:manual/06-zhyvlennya.md:207 klas:F -->
+<!-- fc id:T-06-100 sha:f320b6cc src:manual/06-zhyvlennya.md:207 klas:E -->
 ### T-06-100 · proza · рядок 207
 
 **Книга каже, дослівно:**
@@ -1485,7 +1485,7 @@
 
 ---
 
-<!-- fc id:T-06-101 sha:4f3df3b5 src:manual/06-zhyvlennya.md:212 klas:F -->
+<!-- fc id:T-06-101 sha:4f3df3b5 src:manual/06-zhyvlennya.md:212 klas:E -->
 ### T-06-101 · proza · рядок 212
 
 **Книга каже, дослівно:**
@@ -1541,7 +1541,7 @@
 
 ---
 
-<!-- fc id:T-06-105 sha:430b10da src:manual/06-zhyvlennya.md:224 klas:F -->
+<!-- fc id:T-06-105 sha:430b10da src:manual/06-zhyvlennya.md:224 klas:E -->
 ### T-06-105 · proza · рядок 224
 
 **Книга каже, дослівно:**
@@ -1554,7 +1554,7 @@
 
 ---
 
-<!-- fc id:T-06-106 sha:974911e6 src:manual/06-zhyvlennya.md:224 klas:F -->
+<!-- fc id:T-06-106 sha:974911e6 src:manual/06-zhyvlennya.md:224 klas:E -->
 ### T-06-106 · proza · рядок 224
 
 **Книга каже, дослівно:**
@@ -1580,7 +1580,7 @@
 
 ---
 
-<!-- fc id:T-06-108 sha:3dc81fc0 src:manual/06-zhyvlennya.md:224 klas:F -->
+<!-- fc id:T-06-108 sha:3dc81fc0 src:manual/06-zhyvlennya.md:224 klas:E -->
 ### T-06-108 · proza · рядок 224
 
 **Книга каже, дослівно:**
@@ -1606,7 +1606,7 @@
 
 ---
 
-<!-- fc id:T-06-110 sha:dd8abc67 src:manual/06-zhyvlennya.md:229 klas:F -->
+<!-- fc id:T-06-110 sha:dd8abc67 src:manual/06-zhyvlennya.md:229 klas:E -->
 ### T-06-110 · proza · рядок 229
 
 **Книга каже, дослівно:**
@@ -1632,7 +1632,7 @@
 
 ---
 
-<!-- fc id:T-06-112 sha:c8c42ac2 src:manual/06-zhyvlennya.md:234 klas:F -->
+<!-- fc id:T-06-112 sha:c8c42ac2 src:manual/06-zhyvlennya.md:234 klas:E -->
 ### T-06-112 · proza · рядок 234
 
 **Книга каже, дослівно:**
@@ -1645,7 +1645,7 @@
 
 ---
 
-<!-- fc id:T-06-113 sha:cb757722 src:manual/06-zhyvlennya.md:234 klas:F -->
+<!-- fc id:T-06-113 sha:cb757722 src:manual/06-zhyvlennya.md:234 klas:E -->
 ### T-06-113 · proza · рядок 234
 
 **Книга каже, дослівно:**
@@ -1684,7 +1684,7 @@
 
 ---
 
-<!-- fc id:T-06-116 sha:339581bb src:manual/06-zhyvlennya.md:244 klas:F -->
+<!-- fc id:T-06-116 sha:339581bb src:manual/06-zhyvlennya.md:244 klas:E -->
 ### T-06-116 · proza · рядок 244
 
 **Книга каже, дослівно:**
@@ -1723,7 +1723,7 @@
 
 ---
 
-<!-- fc id:T-06-119 sha:34b338b0 src:manual/06-zhyvlennya.md:252 klas:F -->
+<!-- fc id:T-06-119 sha:34b338b0 src:manual/06-zhyvlennya.md:252 klas:E -->
 ### T-06-119 · proza · рядок 252
 
 **Книга каже, дослівно:**
@@ -1757,7 +1757,7 @@
 
 ---
 
-<!-- fc id:T-06-121 sha:077725ef src:manual/06-zhyvlennya.md:256 klas:F -->
+<!-- fc id:T-06-121 sha:077725ef src:manual/06-zhyvlennya.md:256 klas:E -->
 ### T-06-121 · proza · рядок 256
 
 **Книга каже, дослівно:**

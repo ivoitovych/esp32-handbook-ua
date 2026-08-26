@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-57-001 sha:c0ccca8b src:manual/57-vid-zadachi.md:3 klas:F -->
+<!-- fc id:T-57-001 sha:c0ccca8b src:manual/57-vid-zadachi.md:3 klas:E -->
 ### T-57-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-57-002 sha:0cc51754 src:manual/57-vid-zadachi.md:3 klas:F -->
+<!-- fc id:T-57-002 sha:0cc51754 src:manual/57-vid-zadachi.md:3 klas:E -->
 ### T-57-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-57-003 sha:0c742150 src:manual/57-vid-zadachi.md:7 klas:F -->
+<!-- fc id:T-57-003 sha:0c742150 src:manual/57-vid-zadachi.md:7 klas:E -->
 ### T-57-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-57-004 sha:b375783a src:manual/57-vid-zadachi.md:11 klas:F -->
+<!-- fc id:T-57-004 sha:b375783a src:manual/57-vid-zadachi.md:11 klas:E -->
 ### T-57-004 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-57-005 sha:0efc8e92 src:manual/57-vid-zadachi.md:14 klas:F -->
+<!-- fc id:T-57-005 sha:0efc8e92 src:manual/57-vid-zadachi.md:14 klas:E -->
 ### T-57-005 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-57-008 sha:ec4cd8b5 src:manual/57-vid-zadachi.md:23 klas:F -->
+<!-- fc id:T-57-008 sha:ec4cd8b5 src:manual/57-vid-zadachi.md:23 klas:E -->
 ### T-57-008 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-57-011 sha:3492328d src:manual/57-vid-zadachi.md:29 klas:F -->
+<!-- fc id:T-57-011 sha:3492328d src:manual/57-vid-zadachi.md:29 klas:E -->
 ### T-57-011 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-57-012 sha:84cf1991 src:manual/57-vid-zadachi.md:33 klas:F -->
+<!-- fc id:T-57-012 sha:84cf1991 src:manual/57-vid-zadachi.md:33 klas:E -->
 ### T-57-012 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-57-013 sha:1c26e3aa src:manual/57-vid-zadachi.md:36 klas:F -->
+<!-- fc id:T-57-013 sha:1c26e3aa src:manual/57-vid-zadachi.md:36 klas:E -->
 ### T-57-013 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-57-024 sha:14244677 src:manual/57-vid-zadachi.md:56 klas:F -->
+<!-- fc id:T-57-024 sha:14244677 src:manual/57-vid-zadachi.md:56 klas:E -->
 ### T-57-024 · proza · рядок 56
 
 **Книга каже, дослівно:**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-57-025 sha:023d1247 src:manual/57-vid-zadachi.md:62 klas:F -->
+<!-- fc id:T-57-025 sha:023d1247 src:manual/57-vid-zadachi.md:62 klas:E -->
 ### T-57-025 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-57-026 sha:e1174740 src:manual/57-vid-zadachi.md:62 klas:F -->
+<!-- fc id:T-57-026 sha:e1174740 src:manual/57-vid-zadachi.md:62 klas:E -->
 ### T-57-026 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -357,7 +357,7 @@
 
 ---
 
-<!-- fc id:T-57-028 sha:1dfdafe6 src:manual/57-vid-zadachi.md:73 klas:F -->
+<!-- fc id:T-57-028 sha:1dfdafe6 src:manual/57-vid-zadachi.md:73 klas:E -->
 ### T-57-028 · proza · рядок 73
 
 **Книга каже, дослівно:**
@@ -383,7 +383,7 @@
 
 ---
 
-<!-- fc id:T-57-030 sha:3039ee2e src:manual/57-vid-zadachi.md:80 klas:F -->
+<!-- fc id:T-57-030 sha:3039ee2e src:manual/57-vid-zadachi.md:80 klas:E -->
 ### T-57-030 · proza · рядок 80
 
 **Книга каже, дослівно:**
@@ -422,7 +422,7 @@
 
 ---
 
-<!-- fc id:T-57-033 sha:3ac14073 src:manual/57-vid-zadachi.md:86 klas:F -->
+<!-- fc id:T-57-033 sha:3ac14073 src:manual/57-vid-zadachi.md:86 klas:E -->
 ### T-57-033 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -448,7 +448,7 @@
 
 ---
 
-<!-- fc id:T-57-035 sha:36783cb5 src:manual/57-vid-zadachi.md:97 klas:F -->
+<!-- fc id:T-57-035 sha:36783cb5 src:manual/57-vid-zadachi.md:97 klas:E -->
 ### T-57-035 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -539,7 +539,7 @@
 
 ---
 
-<!-- fc id:T-57-042 sha:80f3e2cf src:manual/57-vid-zadachi.md:107 klas:F -->
+<!-- fc id:T-57-042 sha:80f3e2cf src:manual/57-vid-zadachi.md:107 klas:E -->
 ### T-57-042 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -565,7 +565,7 @@
 
 ---
 
-<!-- fc id:T-57-044 sha:df5bc233 src:manual/57-vid-zadachi.md:113 klas:F -->
+<!-- fc id:T-57-044 sha:df5bc233 src:manual/57-vid-zadachi.md:113 klas:E -->
 ### T-57-044 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -591,7 +591,7 @@
 
 ---
 
-<!-- fc id:T-57-046 sha:d3145827 src:manual/57-vid-zadachi.md:120 klas:F -->
+<!-- fc id:T-57-046 sha:d3145827 src:manual/57-vid-zadachi.md:120 klas:E -->
 ### T-57-046 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -604,7 +604,7 @@
 
 ---
 
-<!-- fc id:T-57-047 sha:8977dd81 src:manual/57-vid-zadachi.md:123 klas:F -->
+<!-- fc id:T-57-047 sha:8977dd81 src:manual/57-vid-zadachi.md:123 klas:E -->
 ### T-57-047 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -630,7 +630,7 @@
 
 ---
 
-<!-- fc id:T-57-049 sha:b99f689f src:manual/57-vid-zadachi.md:129 klas:F -->
+<!-- fc id:T-57-049 sha:b99f689f src:manual/57-vid-zadachi.md:129 klas:E -->
 ### T-57-049 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -643,7 +643,7 @@
 
 ---
 
-<!-- fc id:T-57-050 sha:9f3caa95 src:manual/57-vid-zadachi.md:129 klas:F -->
+<!-- fc id:T-57-050 sha:9f3caa95 src:manual/57-vid-zadachi.md:129 klas:E -->
 ### T-57-050 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -656,7 +656,7 @@
 
 ---
 
-<!-- fc id:T-57-051 sha:757b514f src:manual/57-vid-zadachi.md:134 klas:F -->
+<!-- fc id:T-57-051 sha:757b514f src:manual/57-vid-zadachi.md:134 klas:E -->
 ### T-57-051 · proza · рядок 134
 
 **Книга каже, дослівно:**
@@ -682,7 +682,7 @@
 
 ---
 
-<!-- fc id:T-57-053 sha:4f502c27 src:manual/57-vid-zadachi.md:148 klas:F -->
+<!-- fc id:T-57-053 sha:4f502c27 src:manual/57-vid-zadachi.md:148 klas:E -->
 ### T-57-053 · proza · рядок 148
 
 **Книга каже, дослівно:**
@@ -695,7 +695,7 @@
 
 ---
 
-<!-- fc id:T-57-054 sha:97122e62 src:manual/57-vid-zadachi.md:148 klas:F -->
+<!-- fc id:T-57-054 sha:97122e62 src:manual/57-vid-zadachi.md:148 klas:E -->
 ### T-57-054 · proza · рядок 148
 
 **Книга каже, дослівно:**
@@ -721,7 +721,7 @@
 
 ---
 
-<!-- fc id:T-57-056 sha:9e3f339f src:manual/57-vid-zadachi.md:155 klas:F -->
+<!-- fc id:T-57-056 sha:9e3f339f src:manual/57-vid-zadachi.md:155 klas:E -->
 ### T-57-056 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -734,7 +734,7 @@
 
 ---
 
-<!-- fc id:T-57-057 sha:459c579a src:manual/57-vid-zadachi.md:161 klas:F -->
+<!-- fc id:T-57-057 sha:459c579a src:manual/57-vid-zadachi.md:161 klas:E -->
 ### T-57-057 · proza · рядок 161
 
 **Книга каже, дослівно:**
@@ -812,7 +812,7 @@
 
 ---
 
-<!-- fc id:T-57-063 sha:95c14bfb src:manual/57-vid-zadachi.md:173 klas:F -->
+<!-- fc id:T-57-063 sha:95c14bfb src:manual/57-vid-zadachi.md:173 klas:E -->
 ### T-57-063 · proza · рядок 173
 
 **Книга каже, дослівно:**
@@ -825,7 +825,7 @@
 
 ---
 
-<!-- fc id:T-57-064 sha:13680e83 src:manual/57-vid-zadachi.md:177 klas:F -->
+<!-- fc id:T-57-064 sha:13680e83 src:manual/57-vid-zadachi.md:177 klas:E -->
 ### T-57-064 · proza · рядок 177
 
 **Книга каже, дослівно:**
@@ -838,7 +838,7 @@
 
 ---
 
-<!-- fc id:T-57-065 sha:de6e347c src:manual/57-vid-zadachi.md:179 klas:F -->
+<!-- fc id:T-57-065 sha:de6e347c src:manual/57-vid-zadachi.md:179 klas:E -->
 ### T-57-065 · proza · рядок 179
 
 **Книга каже, дослівно:**
@@ -864,7 +864,7 @@
 
 ---
 
-<!-- fc id:T-57-067 sha:2037eee4 src:manual/57-vid-zadachi.md:184 klas:F -->
+<!-- fc id:T-57-067 sha:2037eee4 src:manual/57-vid-zadachi.md:184 klas:E -->
 ### T-57-067 · proza · рядок 184
 
 **Книга каже, дослівно:**
@@ -877,7 +877,7 @@
 
 ---
 
-<!-- fc id:T-57-068 sha:60f54059 src:manual/57-vid-zadachi.md:186 klas:F -->
+<!-- fc id:T-57-068 sha:60f54059 src:manual/57-vid-zadachi.md:186 klas:E -->
 ### T-57-068 · proza · рядок 186
 
 **Книга каже, дослівно:**
@@ -890,7 +890,7 @@
 
 ---
 
-<!-- fc id:T-57-069 sha:c70a4d01 src:manual/57-vid-zadachi.md:188 klas:F -->
+<!-- fc id:T-57-069 sha:c70a4d01 src:manual/57-vid-zadachi.md:188 klas:E -->
 ### T-57-069 · proza · рядок 188
 
 **Книга каже, дослівно:**

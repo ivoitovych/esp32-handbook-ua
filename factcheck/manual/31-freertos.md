@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-31-002 sha:6ced381a src:manual/31-freertos.md:3 klas:F -->
+<!-- fc id:T-31-002 sha:6ced381a src:manual/31-freertos.md:3 klas:E -->
 ### T-31-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-31-003 sha:e3e405f1 src:manual/31-freertos.md:7 klas:F -->
+<!-- fc id:T-31-003 sha:e3e405f1 src:manual/31-freertos.md:7 klas:E -->
 ### T-31-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-31-004 sha:b9ccfde4 src:manual/31-freertos.md:14 klas:F -->
+<!-- fc id:T-31-004 sha:b9ccfde4 src:manual/31-freertos.md:14 klas:E -->
 ### T-31-004 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -132,7 +132,7 @@
 
 ---
 
-<!-- fc id:T-31-008 sha:4c313f1e src:manual/31-freertos.md:33 klas:F -->
+<!-- fc id:T-31-008 sha:4c313f1e src:manual/31-freertos.md:33 klas:E -->
 ### T-31-008 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-31-009 sha:92f32b03 src:manual/31-freertos.md:35 klas:F -->
+<!-- fc id:T-31-009 sha:92f32b03 src:manual/31-freertos.md:35 klas:E -->
 ### T-31-009 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -271,7 +271,7 @@
 
 ---
 
-<!-- fc id:T-31-016 sha:afe4ddd9 src:manual/31-freertos.md:53 klas:F -->
+<!-- fc id:T-31-016 sha:afe4ddd9 src:manual/31-freertos.md:53 klas:E -->
 ### T-31-016 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -284,7 +284,7 @@
 
 ---
 
-<!-- fc id:T-31-017 sha:5e42d726 src:manual/31-freertos.md:57 klas:F -->
+<!-- fc id:T-31-017 sha:5e42d726 src:manual/31-freertos.md:57 klas:E -->
 ### T-31-017 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:63 klas:F -->
+<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:63 klas:E -->
 ### T-31-020 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -413,7 +413,7 @@
 
 ---
 
-<!-- fc id:T-31-026 sha:59804003 src:manual/31-freertos.md:78 klas:F -->
+<!-- fc id:T-31-026 sha:59804003 src:manual/31-freertos.md:78 klas:E -->
 ### T-31-026 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -426,7 +426,7 @@
 
 ---
 
-<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:78 klas:F -->
+<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:78 klas:E -->
 ### T-31-027 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -452,7 +452,7 @@
 
 ---
 
-<!-- fc id:T-31-029 sha:b6b1a89f src:manual/31-freertos.md:85 klas:F -->
+<!-- fc id:T-31-029 sha:b6b1a89f src:manual/31-freertos.md:85 klas:E -->
 ### T-31-029 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -478,7 +478,7 @@
 
 ---
 
-<!-- fc id:T-31-031 sha:8ff92472 src:manual/31-freertos.md:94 klas:F -->
+<!-- fc id:T-31-031 sha:8ff92472 src:manual/31-freertos.md:94 klas:E -->
 ### T-31-031 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -566,7 +566,7 @@
 
 ---
 
-<!-- fc id:T-31-036 sha:6c48d623 src:manual/31-freertos.md:105 klas:F -->
+<!-- fc id:T-31-036 sha:6c48d623 src:manual/31-freertos.md:105 klas:E -->
 ### T-31-036 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -579,7 +579,7 @@
 
 ---
 
-<!-- fc id:T-31-037 sha:5c5bd338 src:manual/31-freertos.md:105 klas:F -->
+<!-- fc id:T-31-037 sha:5c5bd338 src:manual/31-freertos.md:105 klas:E -->
 ### T-31-037 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -592,7 +592,7 @@
 
 ---
 
-<!-- fc id:T-31-038 sha:7f269ba1 src:manual/31-freertos.md:105 klas:F -->
+<!-- fc id:T-31-038 sha:7f269ba1 src:manual/31-freertos.md:105 klas:E -->
 ### T-31-038 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -605,7 +605,7 @@
 
 ---
 
-<!-- fc id:T-31-039 sha:a7fe16fa src:manual/31-freertos.md:110 klas:F -->
+<!-- fc id:T-31-039 sha:a7fe16fa src:manual/31-freertos.md:110 klas:E -->
 ### T-31-039 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -618,7 +618,7 @@
 
 ---
 
-<!-- fc id:T-31-040 sha:a10d6bfa src:manual/31-freertos.md:110 klas:F -->
+<!-- fc id:T-31-040 sha:a10d6bfa src:manual/31-freertos.md:110 klas:E -->
 ### T-31-040 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -631,7 +631,7 @@
 
 ---
 
-<!-- fc id:T-31-041 sha:6d53b9e1 src:manual/31-freertos.md:117 klas:F -->
+<!-- fc id:T-31-041 sha:6d53b9e1 src:manual/31-freertos.md:117 klas:E -->
 ### T-31-041 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -644,7 +644,7 @@
 
 ---
 
-<!-- fc id:T-31-042 sha:47149383 src:manual/31-freertos.md:117 klas:F -->
+<!-- fc id:T-31-042 sha:47149383 src:manual/31-freertos.md:117 klas:E -->
 ### T-31-042 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -734,7 +734,7 @@
 
 ---
 
-<!-- fc id:T-31-046 sha:4f254aea src:manual/31-freertos.md:135 klas:F -->
+<!-- fc id:T-31-046 sha:4f254aea src:manual/31-freertos.md:135 klas:E -->
 ### T-31-046 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -793,7 +793,7 @@
 
 ---
 
-<!-- fc id:T-31-049 sha:4f5ff1ce src:manual/31-freertos.md:143 klas:F -->
+<!-- fc id:T-31-049 sha:4f5ff1ce src:manual/31-freertos.md:143 klas:E -->
 ### T-31-049 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -806,7 +806,7 @@
 
 ---
 
-<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 klas:F -->
+<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 klas:E -->
 ### T-31-050 · proza · рядок 148
 
 **Книга каже, дослівно:**
@@ -908,7 +908,7 @@
 
 ---
 
-<!-- fc id:T-31-055 sha:c73b142f src:manual/31-freertos.md:168 klas:F -->
+<!-- fc id:T-31-055 sha:c73b142f src:manual/31-freertos.md:168 klas:E -->
 ### T-31-055 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -921,7 +921,7 @@
 
 ---
 
-<!-- fc id:T-31-056 sha:1e95ef1f src:manual/31-freertos.md:168 klas:F -->
+<!-- fc id:T-31-056 sha:1e95ef1f src:manual/31-freertos.md:168 klas:E -->
 ### T-31-056 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -934,7 +934,7 @@
 
 ---
 
-<!-- fc id:T-31-057 sha:eec8ea19 src:manual/31-freertos.md:171 klas:F -->
+<!-- fc id:T-31-057 sha:eec8ea19 src:manual/31-freertos.md:171 klas:E -->
 ### T-31-057 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -947,7 +947,7 @@
 
 ---
 
-<!-- fc id:T-31-058 sha:1b8c1efa src:manual/31-freertos.md:173 klas:F -->
+<!-- fc id:T-31-058 sha:1b8c1efa src:manual/31-freertos.md:173 klas:E -->
 ### T-31-058 · proza · рядок 173
 
 **Книга каже, дослівно:**
@@ -960,7 +960,7 @@
 
 ---
 
-<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 klas:F -->
+<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 klas:E -->
 ### T-31-059 · proza · рядок 173
 
 **Книга каже, дослівно:**
@@ -1029,7 +1029,7 @@
 
 ---
 
-<!-- fc id:T-31-063 sha:c27bfc67 src:manual/31-freertos.md:188 klas:F -->
+<!-- fc id:T-31-063 sha:c27bfc67 src:manual/31-freertos.md:188 klas:E -->
 ### T-31-063 · proza · рядок 188
 
 **Книга каже, дослівно:**
@@ -1203,7 +1203,7 @@
 
 ---
 
-<!-- fc id:T-31-072 sha:aa96715a src:manual/31-freertos.md:215 klas:F -->
+<!-- fc id:T-31-072 sha:aa96715a src:manual/31-freertos.md:215 klas:E -->
 ### T-31-072 · proza · рядок 215
 
 **Книга каже, дослівно:**
@@ -1216,7 +1216,7 @@
 
 ---
 
-<!-- fc id:T-31-073 sha:77b3e0ed src:manual/31-freertos.md:215 klas:F -->
+<!-- fc id:T-31-073 sha:77b3e0ed src:manual/31-freertos.md:215 klas:E -->
 ### T-31-073 · proza · рядок 215
 
 **Книга каже, дослівно:**
@@ -1255,7 +1255,7 @@
 
 ---
 
-<!-- fc id:T-31-076 sha:1bed70d5 src:manual/31-freertos.md:225 klas:F -->
+<!-- fc id:T-31-076 sha:1bed70d5 src:manual/31-freertos.md:225 klas:E -->
 ### T-31-076 · proza · рядок 225
 
 **Книга каже, дослівно:**
@@ -1308,7 +1308,7 @@
 
 ---
 
-<!-- fc id:T-31-079 sha:2bdfbaae src:manual/31-freertos.md:233 klas:F -->
+<!-- fc id:T-31-079 sha:2bdfbaae src:manual/31-freertos.md:233 klas:D -->
 ### T-31-079 · proza · рядок 233
 
 **Книга каже, дослівно:**
@@ -1317,11 +1317,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
 
 ---
 
-<!-- fc id:T-31-080 sha:163f52fe src:manual/31-freertos.md:233 klas:F -->
+<!-- fc id:T-31-080 sha:163f52fe src:manual/31-freertos.md:233 klas:E -->
 ### T-31-080 · proza · рядок 233
 
 **Книга каже, дослівно:**
@@ -1334,7 +1347,7 @@
 
 ---
 
-<!-- fc id:T-31-081 sha:0573d901 src:manual/31-freertos.md:239 klas:F -->
+<!-- fc id:T-31-081 sha:0573d901 src:manual/31-freertos.md:239 klas:E -->
 ### T-31-081 · proza · рядок 239
 
 **Книга каже, дослівно:**
@@ -1347,7 +1360,7 @@
 
 ---
 
-<!-- fc id:T-31-082 sha:5adc071c src:manual/31-freertos.md:241 klas:F -->
+<!-- fc id:T-31-082 sha:5adc071c src:manual/31-freertos.md:241 klas:E -->
 ### T-31-082 · proza · рядок 241
 
 **Книга каже, дослівно:**
@@ -1373,7 +1386,7 @@
 
 ---
 
-<!-- fc id:T-31-084 sha:71179c5d src:manual/31-freertos.md:246 klas:F -->
+<!-- fc id:T-31-084 sha:71179c5d src:manual/31-freertos.md:246 klas:E -->
 ### T-31-084 · proza · рядок 246
 
 **Книга каже, дослівно:**
@@ -1386,7 +1399,7 @@
 
 ---
 
-<!-- fc id:T-31-085 sha:b83b5cb4 src:manual/31-freertos.md:248 klas:F -->
+<!-- fc id:T-31-085 sha:b83b5cb4 src:manual/31-freertos.md:248 klas:E -->
 ### T-31-085 · proza · рядок 248
 
 **Книга каже, дослівно:**
@@ -1399,7 +1412,7 @@
 
 ---
 
-<!-- fc id:T-31-086 sha:8922c4eb src:manual/31-freertos.md:250 klas:F -->
+<!-- fc id:T-31-086 sha:8922c4eb src:manual/31-freertos.md:250 klas:E -->
 ### T-31-086 · proza · рядок 250
 
 **Книга каже, дослівно:**
@@ -1435,7 +1448,7 @@
 
 ---
 
-<!-- fc id:T-31-088 sha:272c94c9 src:manual/31-freertos.md:258 klas:F -->
+<!-- fc id:T-31-088 sha:272c94c9 src:manual/31-freertos.md:258 klas:E -->
 ### T-31-088 · proza · рядок 258
 
 **Книга каже, дослівно:**
@@ -1448,7 +1461,7 @@
 
 ---
 
-<!-- fc id:T-31-089 sha:caf51e23 src:manual/31-freertos.md:260 klas:F -->
+<!-- fc id:T-31-089 sha:caf51e23 src:manual/31-freertos.md:260 klas:E -->
 ### T-31-089 · proza · рядок 260
 
 **Книга каже, дослівно:**
@@ -1461,7 +1474,7 @@
 
 ---
 
-<!-- fc id:T-31-090 sha:845c22bb src:manual/31-freertos.md:262 klas:F -->
+<!-- fc id:T-31-090 sha:845c22bb src:manual/31-freertos.md:262 klas:E -->
 ### T-31-090 · proza · рядок 262
 
 **Книга каже, дослівно:**
@@ -1474,7 +1487,7 @@
 
 ---
 
-<!-- fc id:T-31-091 sha:058ed39f src:manual/31-freertos.md:264 klas:F -->
+<!-- fc id:T-31-091 sha:058ed39f src:manual/31-freertos.md:264 klas:E -->
 ### T-31-091 · proza · рядок 264
 
 **Книга каже, дослівно:**
@@ -1487,7 +1500,7 @@
 
 ---
 
-<!-- fc id:T-31-092 sha:72e699d5 src:manual/31-freertos.md:264 klas:F -->
+<!-- fc id:T-31-092 sha:72e699d5 src:manual/31-freertos.md:264 klas:E -->
 ### T-31-092 · proza · рядок 264
 
 **Книга каже, дослівно:**
@@ -1500,7 +1513,7 @@
 
 ---
 
-<!-- fc id:T-31-093 sha:5878c064 src:manual/31-freertos.md:266 klas:F -->
+<!-- fc id:T-31-093 sha:5878c064 src:manual/31-freertos.md:266 klas:E -->
 ### T-31-093 · proza · рядок 266
 
 **Книга каже, дослівно:**

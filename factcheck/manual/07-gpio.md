@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-07-002 sha:65b80860 src:manual/07-gpio.md:3 klas:F -->
+<!-- fc id:T-07-002 sha:65b80860 src:manual/07-gpio.md:3 klas:E -->
 ### T-07-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-07-004 sha:497cb464 src:manual/07-gpio.md:8 klas:F -->
+<!-- fc id:T-07-004 sha:497cb464 src:manual/07-gpio.md:8 klas:E -->
 ### T-07-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-07-005 sha:cc3571ac src:manual/07-gpio.md:13 klas:F -->
+<!-- fc id:T-07-005 sha:cc3571ac src:manual/07-gpio.md:13 klas:E -->
 ### T-07-005 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-07-007 sha:2d4ea1d4 src:manual/07-gpio.md:13 klas:F -->
+<!-- fc id:T-07-007 sha:2d4ea1d4 src:manual/07-gpio.md:13 klas:E -->
 ### T-07-007 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -313,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-07-022 sha:13378f7b src:manual/07-gpio.md:31 klas:F -->
+<!-- fc id:T-07-022 sha:13378f7b src:manual/07-gpio.md:31 klas:E -->
 ### T-07-022 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -326,7 +326,7 @@
 
 ---
 
-<!-- fc id:T-07-023 sha:f88217d7 src:manual/07-gpio.md:35 klas:F -->
+<!-- fc id:T-07-023 sha:f88217d7 src:manual/07-gpio.md:35 klas:E -->
 ### T-07-023 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -352,7 +352,7 @@
 
 ---
 
-<!-- fc id:T-07-025 sha:4c72b57c src:manual/07-gpio.md:35 klas:F -->
+<!-- fc id:T-07-025 sha:4c72b57c src:manual/07-gpio.md:35 klas:E -->
 ### T-07-025 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -487,7 +487,7 @@
 
 ---
 
-<!-- fc id:T-07-032 sha:f1f40880 src:manual/07-gpio.md:54 klas:F -->
+<!-- fc id:T-07-032 sha:f1f40880 src:manual/07-gpio.md:54 klas:E -->
 ### T-07-032 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -500,7 +500,7 @@
 
 ---
 
-<!-- fc id:T-07-033 sha:ec498771 src:manual/07-gpio.md:59 klas:F -->
+<!-- fc id:T-07-033 sha:ec498771 src:manual/07-gpio.md:59 klas:E -->
 ### T-07-033 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -849,7 +849,7 @@
 
 ---
 
-<!-- fc id:T-07-052 sha:d28dc959 src:manual/07-gpio.md:90 klas:F -->
+<!-- fc id:T-07-052 sha:d28dc959 src:manual/07-gpio.md:90 klas:E -->
 ### T-07-052 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -862,7 +862,7 @@
 
 ---
 
-<!-- fc id:T-07-053 sha:8fc6eaa5 src:manual/07-gpio.md:94 klas:F -->
+<!-- fc id:T-07-053 sha:8fc6eaa5 src:manual/07-gpio.md:94 klas:E -->
 ### T-07-053 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -875,7 +875,7 @@
 
 ---
 
-<!-- fc id:T-07-054 sha:8dc5f04a src:manual/07-gpio.md:94 klas:F -->
+<!-- fc id:T-07-054 sha:8dc5f04a src:manual/07-gpio.md:94 klas:E -->
 ### T-07-054 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -901,7 +901,7 @@
 
 ---
 
-<!-- fc id:T-07-056 sha:d8a73a0f src:manual/07-gpio.md:104 klas:F -->
+<!-- fc id:T-07-056 sha:d8a73a0f src:manual/07-gpio.md:104 klas:E -->
 ### T-07-056 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -914,7 +914,7 @@
 
 ---
 
-<!-- fc id:T-07-057 sha:6964fc01 src:manual/07-gpio.md:104 klas:F -->
+<!-- fc id:T-07-057 sha:6964fc01 src:manual/07-gpio.md:104 klas:E -->
 ### T-07-057 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -940,7 +940,7 @@
 
 ---
 
-<!-- fc id:T-07-059 sha:25039e68 src:manual/07-gpio.md:108 klas:F -->
+<!-- fc id:T-07-059 sha:25039e68 src:manual/07-gpio.md:108 klas:E -->
 ### T-07-059 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -992,7 +992,7 @@
 
 ---
 
-<!-- fc id:T-07-063 sha:5638f14b src:manual/07-gpio.md:117 klas:F -->
+<!-- fc id:T-07-063 sha:5638f14b src:manual/07-gpio.md:117 klas:E -->
 ### T-07-063 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -1031,7 +1031,7 @@
 
 ---
 
-<!-- fc id:T-07-066 sha:2b119dd6 src:manual/07-gpio.md:129 klas:F -->
+<!-- fc id:T-07-066 sha:2b119dd6 src:manual/07-gpio.md:129 klas:E -->
 ### T-07-066 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -1044,7 +1044,7 @@
 
 ---
 
-<!-- fc id:T-07-067 sha:2dbf225d src:manual/07-gpio.md:132 klas:F -->
+<!-- fc id:T-07-067 sha:2dbf225d src:manual/07-gpio.md:132 klas:E -->
 ### T-07-067 · proza · рядок 132
 
 **Книга каже, дослівно:**
@@ -1070,7 +1070,7 @@
 
 ---
 
-<!-- fc id:T-07-069 sha:1d981589 src:manual/07-gpio.md:132 klas:F -->
+<!-- fc id:T-07-069 sha:1d981589 src:manual/07-gpio.md:132 klas:E -->
 ### T-07-069 · proza · рядок 132
 
 **Книга каже, дослівно:**
@@ -1083,7 +1083,7 @@
 
 ---
 
-<!-- fc id:T-07-070 sha:7997d730 src:manual/07-gpio.md:136 klas:F -->
+<!-- fc id:T-07-070 sha:7997d730 src:manual/07-gpio.md:136 klas:E -->
 ### T-07-070 · proza · рядок 136
 
 **Книга каже, дослівно:**
@@ -1142,7 +1142,7 @@
 
 ---
 
-<!-- fc id:T-07-074 sha:6f673a7c src:manual/07-gpio.md:147 klas:F -->
+<!-- fc id:T-07-074 sha:6f673a7c src:manual/07-gpio.md:147 klas:E -->
 ### T-07-074 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -1184,7 +1184,7 @@
 
 ---
 
-<!-- fc id:T-07-076 sha:cf5a8129 src:manual/07-gpio.md:151 klas:F -->
+<!-- fc id:T-07-076 sha:cf5a8129 src:manual/07-gpio.md:151 klas:E -->
 ### T-07-076 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -1249,7 +1249,7 @@
 
 ---
 
-<!-- fc id:T-07-081 sha:e9e0e554 src:manual/07-gpio.md:165 klas:F -->
+<!-- fc id:T-07-081 sha:e9e0e554 src:manual/07-gpio.md:165 klas:E -->
 ### T-07-081 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -1275,7 +1275,7 @@
 
 ---
 
-<!-- fc id:T-07-083 sha:08617839 src:manual/07-gpio.md:170 klas:F -->
+<!-- fc id:T-07-083 sha:08617839 src:manual/07-gpio.md:170 klas:E -->
 ### T-07-083 · proza · рядок 170
 
 **Книга каже, дослівно:**
@@ -1288,7 +1288,7 @@
 
 ---
 
-<!-- fc id:T-07-084 sha:99a46388 src:manual/07-gpio.md:170 klas:F -->
+<!-- fc id:T-07-084 sha:99a46388 src:manual/07-gpio.md:170 klas:E -->
 ### T-07-084 · proza · рядок 170
 
 **Книга каже, дослівно:**
@@ -1392,7 +1392,7 @@
 
 ---
 
-<!-- fc id:T-07-092 sha:d3fff0e3 src:manual/07-gpio.md:193 klas:F -->
+<!-- fc id:T-07-092 sha:d3fff0e3 src:manual/07-gpio.md:193 klas:E -->
 ### T-07-092 · proza · рядок 193
 
 **Книга каже, дослівно:**
@@ -1405,7 +1405,7 @@
 
 ---
 
-<!-- fc id:T-07-093 sha:bbf00d41 src:manual/07-gpio.md:198 klas:F -->
+<!-- fc id:T-07-093 sha:bbf00d41 src:manual/07-gpio.md:198 klas:E -->
 ### T-07-093 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1431,7 +1431,7 @@
 
 ---
 
-<!-- fc id:T-07-095 sha:8f937bea src:manual/07-gpio.md:200 klas:F -->
+<!-- fc id:T-07-095 sha:8f937bea src:manual/07-gpio.md:200 klas:E -->
 ### T-07-095 · proza · рядок 200
 
 **Книга каже, дослівно:**
@@ -1496,7 +1496,7 @@
 
 ---
 
-<!-- fc id:T-07-100 sha:035a38f6 src:manual/07-gpio.md:218 klas:F -->
+<!-- fc id:T-07-100 sha:035a38f6 src:manual/07-gpio.md:218 klas:E -->
 ### T-07-100 · proza · рядок 218
 
 **Книга каже, дослівно:**
@@ -1522,7 +1522,7 @@
 
 ---
 
-<!-- fc id:T-07-102 sha:9e2b2c79 src:manual/07-gpio.md:224 klas:F -->
+<!-- fc id:T-07-102 sha:9e2b2c79 src:manual/07-gpio.md:224 klas:E -->
 ### T-07-102 · proza · рядок 224
 
 **Книга каже, дослівно:**
@@ -1535,7 +1535,7 @@
 
 ---
 
-<!-- fc id:T-07-103 sha:a06a92ec src:manual/07-gpio.md:228 klas:F -->
+<!-- fc id:T-07-103 sha:a06a92ec src:manual/07-gpio.md:228 klas:E -->
 ### T-07-103 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -1561,7 +1561,7 @@
 
 ---
 
-<!-- fc id:T-07-105 sha:b0fde932 src:manual/07-gpio.md:228 klas:F -->
+<!-- fc id:T-07-105 sha:b0fde932 src:manual/07-gpio.md:228 klas:E -->
 ### T-07-105 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -1574,7 +1574,7 @@
 
 ---
 
-<!-- fc id:T-07-106 sha:909499e7 src:manual/07-gpio.md:233 klas:F -->
+<!-- fc id:T-07-106 sha:909499e7 src:manual/07-gpio.md:233 klas:E -->
 ### T-07-106 · proza · рядок 233
 
 **Книга каже, дослівно:**
@@ -1626,7 +1626,7 @@
 
 ---
 
-<!-- fc id:T-07-110 sha:6af50605 src:manual/07-gpio.md:241 klas:F -->
+<!-- fc id:T-07-110 sha:6af50605 src:manual/07-gpio.md:241 klas:E -->
 ### T-07-110 · proza · рядок 241
 
 **Книга каже, дослівно:**
@@ -1672,7 +1672,7 @@
 
 ---
 
-<!-- fc id:T-07-113 sha:101667fc src:manual/07-gpio.md:250 klas:F -->
+<!-- fc id:T-07-113 sha:101667fc src:manual/07-gpio.md:250 klas:E -->
 ### T-07-113 · proza · рядок 250
 
 **Книга каже, дослівно:**
@@ -1685,7 +1685,7 @@
 
 ---
 
-<!-- fc id:T-07-114 sha:3521c982 src:manual/07-gpio.md:253 klas:F -->
+<!-- fc id:T-07-114 sha:3521c982 src:manual/07-gpio.md:253 klas:E -->
 ### T-07-114 · proza · рядок 253
 
 **Книга каже, дослівно:**

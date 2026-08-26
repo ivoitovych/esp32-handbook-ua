@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-15-001 sha:8ced3496 src:manual/15-oflayn.md:3 klas:F -->
+<!-- fc id:T-15-001 sha:8ced3496 src:manual/15-oflayn.md:3 klas:E -->
 ### T-15-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-15-021 sha:c42f7072 src:manual/15-oflayn.md:21 klas:F -->
+<!-- fc id:T-15-021 sha:c42f7072 src:manual/15-oflayn.md:21 klas:E -->
 ### T-15-021 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -307,7 +307,7 @@
 
 ---
 
-<!-- fc id:T-15-023 sha:0aa8ad75 src:manual/15-oflayn.md:26 klas:F -->
+<!-- fc id:T-15-023 sha:0aa8ad75 src:manual/15-oflayn.md:26 klas:E -->
 ### T-15-023 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -320,7 +320,7 @@
 
 ---
 
-<!-- fc id:T-15-024 sha:ad7adf56 src:manual/15-oflayn.md:29 klas:F -->
+<!-- fc id:T-15-024 sha:ad7adf56 src:manual/15-oflayn.md:29 klas:E -->
 ### T-15-024 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -333,7 +333,7 @@
 
 ---
 
-<!-- fc id:T-15-025 sha:923f4494 src:manual/15-oflayn.md:29 klas:F -->
+<!-- fc id:T-15-025 sha:923f4494 src:manual/15-oflayn.md:29 klas:E -->
 ### T-15-025 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -346,7 +346,7 @@
 
 ---
 
-<!-- fc id:T-15-026 sha:d740dcb4 src:manual/15-oflayn.md:33 klas:F -->
+<!-- fc id:T-15-026 sha:d740dcb4 src:manual/15-oflayn.md:33 klas:E -->
 ### T-15-026 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -359,7 +359,7 @@
 
 ---
 
-<!-- fc id:T-15-027 sha:c4a52815 src:manual/15-oflayn.md:33 klas:F -->
+<!-- fc id:T-15-027 sha:c4a52815 src:manual/15-oflayn.md:33 klas:E -->
 ### T-15-027 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -398,7 +398,7 @@
 
 ---
 
-<!-- fc id:T-15-030 sha:18dd011b src:manual/15-oflayn.md:42 klas:F -->
+<!-- fc id:T-15-030 sha:18dd011b src:manual/15-oflayn.md:42 klas:E -->
 ### T-15-030 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -411,7 +411,7 @@
 
 ---
 
-<!-- fc id:T-15-031 sha:96de1f9d src:manual/15-oflayn.md:42 klas:F -->
+<!-- fc id:T-15-031 sha:96de1f9d src:manual/15-oflayn.md:42 klas:E -->
 ### T-15-031 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -437,7 +437,7 @@
 
 ---
 
-<!-- fc id:T-15-033 sha:80e38aa6 src:manual/15-oflayn.md:49 klas:F -->
+<!-- fc id:T-15-033 sha:80e38aa6 src:manual/15-oflayn.md:49 klas:E -->
 ### T-15-033 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -450,7 +450,7 @@
 
 ---
 
-<!-- fc id:T-15-034 sha:a2320dcb src:manual/15-oflayn.md:49 klas:F -->
+<!-- fc id:T-15-034 sha:a2320dcb src:manual/15-oflayn.md:49 klas:E -->
 ### T-15-034 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -463,7 +463,7 @@
 
 ---
 
-<!-- fc id:T-15-035 sha:519cfb81 src:manual/15-oflayn.md:54 klas:F -->
+<!-- fc id:T-15-035 sha:519cfb81 src:manual/15-oflayn.md:54 klas:E -->
 ### T-15-035 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -476,7 +476,7 @@
 
 ---
 
-<!-- fc id:T-15-036 sha:66a408da src:manual/15-oflayn.md:54 klas:F -->
+<!-- fc id:T-15-036 sha:66a408da src:manual/15-oflayn.md:54 klas:E -->
 ### T-15-036 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -489,7 +489,7 @@
 
 ---
 
-<!-- fc id:T-15-037 sha:acf72c50 src:manual/15-oflayn.md:59 klas:F -->
+<!-- fc id:T-15-037 sha:acf72c50 src:manual/15-oflayn.md:59 klas:E -->
 ### T-15-037 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -502,7 +502,7 @@
 
 ---
 
-<!-- fc id:T-15-038 sha:ff0dd7de src:manual/15-oflayn.md:59 klas:F -->
+<!-- fc id:T-15-038 sha:ff0dd7de src:manual/15-oflayn.md:59 klas:E -->
 ### T-15-038 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -515,7 +515,7 @@
 
 ---
 
-<!-- fc id:T-15-039 sha:a45f5d56 src:manual/15-oflayn.md:65 klas:F -->
+<!-- fc id:T-15-039 sha:a45f5d56 src:manual/15-oflayn.md:65 klas:E -->
 ### T-15-039 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -528,7 +528,7 @@
 
 ---
 
-<!-- fc id:T-15-040 sha:7647a250 src:manual/15-oflayn.md:65 klas:F -->
+<!-- fc id:T-15-040 sha:7647a250 src:manual/15-oflayn.md:65 klas:E -->
 ### T-15-040 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -541,7 +541,7 @@
 
 ---
 
-<!-- fc id:T-15-041 sha:fdfff973 src:manual/15-oflayn.md:69 klas:F -->
+<!-- fc id:T-15-041 sha:fdfff973 src:manual/15-oflayn.md:69 klas:E -->
 ### T-15-041 · proza · рядок 69
 
 **Книга каже, дослівно:**
@@ -554,7 +554,7 @@
 
 ---
 
-<!-- fc id:T-15-042 sha:b97e3616 src:manual/15-oflayn.md:71 klas:F -->
+<!-- fc id:T-15-042 sha:b97e3616 src:manual/15-oflayn.md:71 klas:E -->
 ### T-15-042 · proza · рядок 71
 
 **Книга каже, дослівно:**
@@ -567,7 +567,7 @@
 
 ---
 
-<!-- fc id:T-15-043 sha:4969e576 src:manual/15-oflayn.md:71 klas:F -->
+<!-- fc id:T-15-043 sha:4969e576 src:manual/15-oflayn.md:71 klas:E -->
 ### T-15-043 · proza · рядок 71
 
 **Книга каже, дослівно:**
@@ -580,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-15-044 sha:83d6a87c src:manual/15-oflayn.md:75 klas:F -->
+<!-- fc id:T-15-044 sha:83d6a87c src:manual/15-oflayn.md:75 klas:E -->
 ### T-15-044 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -593,7 +593,7 @@
 
 ---
 
-<!-- fc id:T-15-045 sha:b95e4141 src:manual/15-oflayn.md:75 klas:F -->
+<!-- fc id:T-15-045 sha:b95e4141 src:manual/15-oflayn.md:75 klas:E -->
 ### T-15-045 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -606,7 +606,7 @@
 
 ---
 
-<!-- fc id:T-15-046 sha:642c2c2c src:manual/15-oflayn.md:75 klas:F -->
+<!-- fc id:T-15-046 sha:642c2c2c src:manual/15-oflayn.md:75 klas:E -->
 ### T-15-046 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -619,7 +619,7 @@
 
 ---
 
-<!-- fc id:T-15-047 sha:319c1649 src:manual/15-oflayn.md:78 klas:F -->
+<!-- fc id:T-15-047 sha:319c1649 src:manual/15-oflayn.md:78 klas:E -->
 ### T-15-047 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -632,7 +632,7 @@
 
 ---
 
-<!-- fc id:T-15-048 sha:f133393f src:manual/15-oflayn.md:78 klas:F -->
+<!-- fc id:T-15-048 sha:f133393f src:manual/15-oflayn.md:78 klas:E -->
 ### T-15-048 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -645,7 +645,7 @@
 
 ---
 
-<!-- fc id:T-15-049 sha:7bd40fae src:manual/15-oflayn.md:82 klas:F -->
+<!-- fc id:T-15-049 sha:7bd40fae src:manual/15-oflayn.md:82 klas:E -->
 ### T-15-049 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -658,7 +658,7 @@
 
 ---
 
-<!-- fc id:T-15-050 sha:75916fca src:manual/15-oflayn.md:82 klas:F -->
+<!-- fc id:T-15-050 sha:75916fca src:manual/15-oflayn.md:82 klas:E -->
 ### T-15-050 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -671,7 +671,7 @@
 
 ---
 
-<!-- fc id:T-15-051 sha:840799a9 src:manual/15-oflayn.md:87 klas:F -->
+<!-- fc id:T-15-051 sha:840799a9 src:manual/15-oflayn.md:87 klas:E -->
 ### T-15-051 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -684,7 +684,7 @@
 
 ---
 
-<!-- fc id:T-15-052 sha:09d28a92 src:manual/15-oflayn.md:90 klas:F -->
+<!-- fc id:T-15-052 sha:09d28a92 src:manual/15-oflayn.md:90 klas:E -->
 ### T-15-052 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -697,7 +697,7 @@
 
 ---
 
-<!-- fc id:T-15-053 sha:4a533353 src:manual/15-oflayn.md:92 klas:F -->
+<!-- fc id:T-15-053 sha:4a533353 src:manual/15-oflayn.md:92 klas:E -->
 ### T-15-053 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -710,7 +710,7 @@
 
 ---
 
-<!-- fc id:T-15-054 sha:fe8fbb7b src:manual/15-oflayn.md:92 klas:F -->
+<!-- fc id:T-15-054 sha:fe8fbb7b src:manual/15-oflayn.md:92 klas:E -->
 ### T-15-054 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -723,7 +723,7 @@
 
 ---
 
-<!-- fc id:T-15-055 sha:d64dbfb9 src:manual/15-oflayn.md:97 klas:F -->
+<!-- fc id:T-15-055 sha:d64dbfb9 src:manual/15-oflayn.md:97 klas:E -->
 ### T-15-055 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -749,7 +749,7 @@
 
 ---
 
-<!-- fc id:T-15-057 sha:5f5e9b35 src:manual/15-oflayn.md:103 klas:F -->
+<!-- fc id:T-15-057 sha:5f5e9b35 src:manual/15-oflayn.md:103 klas:E -->
 ### T-15-057 · proza · рядок 103
 
 **Книга каже, дослівно:**
@@ -762,7 +762,7 @@
 
 ---
 
-<!-- fc id:T-15-058 sha:c0f69cf1 src:manual/15-oflayn.md:103 klas:F -->
+<!-- fc id:T-15-058 sha:c0f69cf1 src:manual/15-oflayn.md:103 klas:E -->
 ### T-15-058 · proza · рядок 103
 
 **Книга каже, дослівно:**
@@ -788,7 +788,7 @@
 
 ---
 
-<!-- fc id:T-15-060 sha:2ad344ae src:manual/15-oflayn.md:106 klas:F -->
+<!-- fc id:T-15-060 sha:2ad344ae src:manual/15-oflayn.md:106 klas:E -->
 ### T-15-060 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -814,7 +814,7 @@
 
 ---
 
-<!-- fc id:T-15-062 sha:272edb6c src:manual/15-oflayn.md:112 klas:F -->
+<!-- fc id:T-15-062 sha:272edb6c src:manual/15-oflayn.md:112 klas:E -->
 ### T-15-062 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -840,7 +840,7 @@
 
 ---
 
-<!-- fc id:T-15-064 sha:11f190cc src:manual/15-oflayn.md:115 klas:F -->
+<!-- fc id:T-15-064 sha:11f190cc src:manual/15-oflayn.md:115 klas:E -->
 ### T-15-064 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -853,7 +853,7 @@
 
 ---
 
-<!-- fc id:T-15-065 sha:924a7126 src:manual/15-oflayn.md:117 klas:F -->
+<!-- fc id:T-15-065 sha:924a7126 src:manual/15-oflayn.md:117 klas:E -->
 ### T-15-065 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -866,7 +866,7 @@
 
 ---
 
-<!-- fc id:T-15-066 sha:41ad9df0 src:manual/15-oflayn.md:120 klas:F -->
+<!-- fc id:T-15-066 sha:41ad9df0 src:manual/15-oflayn.md:120 klas:E -->
 ### T-15-066 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -879,7 +879,7 @@
 
 ---
 
-<!-- fc id:T-15-067 sha:00effd47 src:manual/15-oflayn.md:120 klas:F -->
+<!-- fc id:T-15-067 sha:00effd47 src:manual/15-oflayn.md:120 klas:E -->
 ### T-15-067 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -892,7 +892,7 @@
 
 ---
 
-<!-- fc id:T-15-068 sha:eb883ba2 src:manual/15-oflayn.md:127 klas:F -->
+<!-- fc id:T-15-068 sha:eb883ba2 src:manual/15-oflayn.md:127 klas:E -->
 ### T-15-068 · proza · рядок 127
 
 **Книга каже, дослівно:**
@@ -905,7 +905,7 @@
 
 ---
 
-<!-- fc id:T-15-069 sha:c15fc73f src:manual/15-oflayn.md:127 klas:F -->
+<!-- fc id:T-15-069 sha:c15fc73f src:manual/15-oflayn.md:127 klas:E -->
 ### T-15-069 · proza · рядок 127
 
 **Книга каже, дослівно:**
@@ -918,7 +918,7 @@
 
 ---
 
-<!-- fc id:T-15-070 sha:d84aa063 src:manual/15-oflayn.md:130 klas:F -->
+<!-- fc id:T-15-070 sha:d84aa063 src:manual/15-oflayn.md:130 klas:E -->
 ### T-15-070 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -931,7 +931,7 @@
 
 ---
 
-<!-- fc id:T-15-071 sha:202fc6e4 src:manual/15-oflayn.md:133 klas:F -->
+<!-- fc id:T-15-071 sha:202fc6e4 src:manual/15-oflayn.md:133 klas:E -->
 ### T-15-071 · proza · рядок 133
 
 **Книга каже, дослівно:**
@@ -944,7 +944,7 @@
 
 ---
 
-<!-- fc id:T-15-072 sha:9d46023e src:manual/15-oflayn.md:135 klas:F -->
+<!-- fc id:T-15-072 sha:9d46023e src:manual/15-oflayn.md:135 klas:E -->
 ### T-15-072 · proza · рядок 135
 
 **Книга каже, дослівно:**

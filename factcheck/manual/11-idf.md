@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-11-001 sha:c439acee src:manual/11-idf.md:3 klas:F -->
+<!-- fc id:T-11-001 sha:c439acee src:manual/11-idf.md:3 klas:E -->
 ### T-11-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-11-003 sha:2d573128 src:manual/11-idf.md:3 klas:F -->
+<!-- fc id:T-11-003 sha:2d573128 src:manual/11-idf.md:3 klas:E -->
 ### T-11-003 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-11-004 sha:aca5e141 src:manual/11-idf.md:8 klas:F -->
+<!-- fc id:T-11-004 sha:aca5e141 src:manual/11-idf.md:8 klas:E -->
 ### T-11-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-11-005 sha:6ca25b1b src:manual/11-idf.md:8 klas:F -->
+<!-- fc id:T-11-005 sha:6ca25b1b src:manual/11-idf.md:8 klas:E -->
 ### T-11-005 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-11-006 sha:7a0f5fb1 src:manual/11-idf.md:14 klas:F -->
+<!-- fc id:T-11-006 sha:7a0f5fb1 src:manual/11-idf.md:14 klas:E -->
 ### T-11-006 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-11-007 sha:98e3184f src:manual/11-idf.md:14 klas:F -->
+<!-- fc id:T-11-007 sha:98e3184f src:manual/11-idf.md:14 klas:E -->
 ### T-11-007 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-11-009 sha:01b9ad9c src:manual/11-idf.md:19 klas:F -->
+<!-- fc id:T-11-009 sha:01b9ad9c src:manual/11-idf.md:19 klas:E -->
 ### T-11-009 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-11-011 sha:6f1fde55 src:manual/11-idf.md:24 klas:F -->
+<!-- fc id:T-11-011 sha:6f1fde55 src:manual/11-idf.md:24 klas:E -->
 ### T-11-011 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-11-012 sha:9fc56b73 src:manual/11-idf.md:24 klas:F -->
+<!-- fc id:T-11-012 sha:9fc56b73 src:manual/11-idf.md:24 klas:E -->
 ### T-11-012 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-11-013 sha:1c7d2f6d src:manual/11-idf.md:29 klas:F -->
+<!-- fc id:T-11-013 sha:1c7d2f6d src:manual/11-idf.md:29 klas:E -->
 ### T-11-013 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-11-014 sha:232edefc src:manual/11-idf.md:29 klas:F -->
+<!-- fc id:T-11-014 sha:232edefc src:manual/11-idf.md:29 klas:E -->
 ### T-11-014 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-11-015 sha:693d11db src:manual/11-idf.md:33 klas:F -->
+<!-- fc id:T-11-015 sha:693d11db src:manual/11-idf.md:33 klas:E -->
 ### T-11-015 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -259,7 +259,7 @@
 
 ---
 
-<!-- fc id:T-11-019 sha:e93e5118 src:manual/11-idf.md:42 klas:F -->
+<!-- fc id:T-11-019 sha:e93e5118 src:manual/11-idf.md:42 klas:E -->
 ### T-11-019 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -285,7 +285,7 @@
 
 ---
 
-<!-- fc id:T-11-021 sha:888536e2 src:manual/11-idf.md:51 klas:F -->
+<!-- fc id:T-11-021 sha:888536e2 src:manual/11-idf.md:51 klas:E -->
 ### T-11-021 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -366,7 +366,7 @@
 
 ---
 
-<!-- fc id:T-11-026 sha:7f434299 src:manual/11-idf.md:66 klas:F -->
+<!-- fc id:T-11-026 sha:7f434299 src:manual/11-idf.md:66 klas:E -->
 ### T-11-026 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -422,7 +422,7 @@
 
 ---
 
-<!-- fc id:T-11-029 sha:22686ee3 src:manual/11-idf.md:76 klas:F -->
+<!-- fc id:T-11-029 sha:22686ee3 src:manual/11-idf.md:76 klas:E -->
 ### T-11-029 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -596,7 +596,7 @@
 
 ---
 
-<!-- fc id:T-11-039 sha:a90e26a1 src:manual/11-idf.md:94 klas:F -->
+<!-- fc id:T-11-039 sha:a90e26a1 src:manual/11-idf.md:94 klas:E -->
 ### T-11-039 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -622,7 +622,7 @@
 
 ---
 
-<!-- fc id:T-11-041 sha:42e78ff8 src:manual/11-idf.md:102 klas:F -->
+<!-- fc id:T-11-041 sha:42e78ff8 src:manual/11-idf.md:102 klas:E -->
 ### T-11-041 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -635,7 +635,7 @@
 
 ---
 
-<!-- fc id:T-11-042 sha:69692866 src:manual/11-idf.md:106 klas:F -->
+<!-- fc id:T-11-042 sha:69692866 src:manual/11-idf.md:106 klas:E -->
 ### T-11-042 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -648,7 +648,7 @@
 
 ---
 
-<!-- fc id:T-11-043 sha:eabaabfc src:manual/11-idf.md:109 klas:F -->
+<!-- fc id:T-11-043 sha:eabaabfc src:manual/11-idf.md:109 klas:E -->
 ### T-11-043 · proza · рядок 109
 
 **Книга каже, дослівно:**
@@ -759,7 +759,7 @@
 
 ---
 
-<!-- fc id:T-11-051 sha:e5fd373d src:manual/11-idf.md:126 klas:F -->
+<!-- fc id:T-11-051 sha:e5fd373d src:manual/11-idf.md:126 klas:E -->
 ### T-11-051 · proza · рядок 126
 
 **Книга каже, дослівно:**
@@ -1117,7 +1117,7 @@
 
 ---
 
-<!-- fc id:T-11-072 sha:fbe4ac5b src:manual/11-idf.md:189 klas:F -->
+<!-- fc id:T-11-072 sha:fbe4ac5b src:manual/11-idf.md:189 klas:E -->
 ### T-11-072 · proza · рядок 189
 
 **Книга каже, дослівно:**
@@ -1425,7 +1425,7 @@
 
 ---
 
-<!-- fc id:T-11-082 sha:a1afae4e src:manual/11-idf.md:202 klas:F -->
+<!-- fc id:T-11-082 sha:a1afae4e src:manual/11-idf.md:202 klas:E -->
 ### T-11-082 · proza · рядок 202
 
 **Книга каже, дослівно:**
@@ -1451,7 +1451,7 @@
 
 ---
 
-<!-- fc id:T-11-084 sha:798e784d src:manual/11-idf.md:207 klas:F -->
+<!-- fc id:T-11-084 sha:798e784d src:manual/11-idf.md:207 klas:E -->
 ### T-11-084 · proza · рядок 207
 
 **Книга каже, дослівно:**
@@ -1464,7 +1464,7 @@
 
 ---
 
-<!-- fc id:T-11-085 sha:980f9ca8 src:manual/11-idf.md:213 klas:F -->
+<!-- fc id:T-11-085 sha:980f9ca8 src:manual/11-idf.md:213 klas:E -->
 ### T-11-085 · proza · рядок 213
 
 **Книга каже, дослівно:**
@@ -1562,7 +1562,7 @@
 
 ---
 
-<!-- fc id:T-11-089 sha:ee2d2f1b src:manual/11-idf.md:219 klas:F -->
+<!-- fc id:T-11-089 sha:ee2d2f1b src:manual/11-idf.md:219 klas:E -->
 ### T-11-089 · proza · рядок 219
 
 **Книга каже, дослівно:**
@@ -1644,7 +1644,7 @@
 
 ---
 
-<!-- fc id:T-11-094 sha:445bb076 src:manual/11-idf.md:236 klas:F -->
+<!-- fc id:T-11-094 sha:445bb076 src:manual/11-idf.md:236 klas:E -->
 ### T-11-094 · proza · рядок 236
 
 **Книга каже, дослівно:**
@@ -1657,7 +1657,7 @@
 
 ---
 
-<!-- fc id:T-11-095 sha:7f37de94 src:manual/11-idf.md:236 klas:F -->
+<!-- fc id:T-11-095 sha:7f37de94 src:manual/11-idf.md:236 klas:E -->
 ### T-11-095 · proza · рядок 236
 
 **Книга каже, дослівно:**
@@ -1670,7 +1670,7 @@
 
 ---
 
-<!-- fc id:T-11-096 sha:36ad5706 src:manual/11-idf.md:242 klas:F -->
+<!-- fc id:T-11-096 sha:36ad5706 src:manual/11-idf.md:242 klas:E -->
 ### T-11-096 · proza · рядок 242
 
 **Книга каже, дослівно:**
@@ -1696,7 +1696,7 @@
 
 ---
 
-<!-- fc id:T-11-098 sha:f32cde1d src:manual/11-idf.md:251 klas:F -->
+<!-- fc id:T-11-098 sha:f32cde1d src:manual/11-idf.md:251 klas:E -->
 ### T-11-098 · proza · рядок 251
 
 **Книга каже, дослівно:**
@@ -1709,7 +1709,7 @@
 
 ---
 
-<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:251 klas:F -->
+<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:251 klas:E -->
 ### T-11-099 · proza · рядок 251
 
 **Книга каже, дослівно:**
@@ -1735,7 +1735,7 @@
 
 ---
 
-<!-- fc id:T-11-101 sha:5075d2bd src:manual/11-idf.md:260 klas:F -->
+<!-- fc id:T-11-101 sha:5075d2bd src:manual/11-idf.md:260 klas:E -->
 ### T-11-101 · proza · рядок 260
 
 **Книга каже, дослівно:**
@@ -1748,7 +1748,7 @@
 
 ---
 
-<!-- fc id:T-11-102 sha:b2bd2d4d src:manual/11-idf.md:260 klas:F -->
+<!-- fc id:T-11-102 sha:b2bd2d4d src:manual/11-idf.md:260 klas:E -->
 ### T-11-102 · proza · рядок 260
 
 **Книга каже, дослівно:**
@@ -1823,7 +1823,7 @@
 
 ---
 
-<!-- fc id:T-11-107 sha:c803dfc0 src:manual/11-idf.md:272 klas:F -->
+<!-- fc id:T-11-107 sha:c803dfc0 src:manual/11-idf.md:272 klas:E -->
 ### T-11-107 · proza · рядок 272
 
 **Книга каже, дослівно:**
@@ -1862,7 +1862,7 @@
 
 ---
 
-<!-- fc id:T-11-110 sha:07a06fdd src:manual/11-idf.md:284 klas:F -->
+<!-- fc id:T-11-110 sha:07a06fdd src:manual/11-idf.md:284 klas:E -->
 ### T-11-110 · proza · рядок 284
 
 **Книга каже, дослівно:**

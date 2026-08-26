@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-46-001 sha:7390028a src:manual/46-dyspleyi.md:3 klas:F -->
+<!-- fc id:T-46-001 sha:7390028a src:manual/46-dyspleyi.md:3 klas:E -->
 ### T-46-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-46-002 sha:0b69e977 src:manual/46-dyspleyi.md:3 klas:F -->
+<!-- fc id:T-46-002 sha:0b69e977 src:manual/46-dyspleyi.md:3 klas:E -->
 ### T-46-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -377,7 +377,7 @@
 
 ---
 
-<!-- fc id:T-46-024 sha:46236625 src:manual/46-dyspleyi.md:17 klas:C -->
+<!-- fc id:T-46-024 sha:46236625 src:manual/46-dyspleyi.md:17 klas:D -->
 ### T-46-024 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -386,15 +386,24 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
 
 ---
 
-<!-- fc id:T-46-025 sha:5436d6ff src:manual/46-dyspleyi.md:17 klas:F -->
+<!-- fc id:T-46-025 sha:5436d6ff src:manual/46-dyspleyi.md:17 klas:E -->
 ### T-46-025 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -461,7 +470,7 @@
 
 ---
 
-<!-- fc id:T-46-028 sha:ecb09442 src:manual/46-dyspleyi.md:25 klas:F -->
+<!-- fc id:T-46-028 sha:ecb09442 src:manual/46-dyspleyi.md:25 klas:E -->
 ### T-46-028 · proza · рядок 25
 
 **Книга каже, дослівно:**
@@ -474,7 +483,7 @@
 
 ---
 
-<!-- fc id:T-46-029 sha:9bf55437 src:manual/46-dyspleyi.md:29 klas:F -->
+<!-- fc id:T-46-029 sha:9bf55437 src:manual/46-dyspleyi.md:29 klas:E -->
 ### T-46-029 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -487,7 +496,7 @@
 
 ---
 
-<!-- fc id:T-46-030 sha:db78ce45 src:manual/46-dyspleyi.md:29 klas:F -->
+<!-- fc id:T-46-030 sha:db78ce45 src:manual/46-dyspleyi.md:29 klas:E -->
 ### T-46-030 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -500,7 +509,7 @@
 
 ---
 
-<!-- fc id:T-46-031 sha:068ff34b src:manual/46-dyspleyi.md:34 klas:F -->
+<!-- fc id:T-46-031 sha:068ff34b src:manual/46-dyspleyi.md:34 klas:E -->
 ### T-46-031 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -565,7 +574,7 @@
 
 ---
 
-<!-- fc id:T-46-036 sha:0da7ac6e src:manual/46-dyspleyi.md:51 klas:F -->
+<!-- fc id:T-46-036 sha:0da7ac6e src:manual/46-dyspleyi.md:51 klas:E -->
 ### T-46-036 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -578,7 +587,7 @@
 
 ---
 
-<!-- fc id:T-46-037 sha:17bcb9f3 src:manual/46-dyspleyi.md:51 klas:F -->
+<!-- fc id:T-46-037 sha:17bcb9f3 src:manual/46-dyspleyi.md:51 klas:E -->
 ### T-46-037 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -591,7 +600,7 @@
 
 ---
 
-<!-- fc id:T-46-038 sha:267484c5 src:manual/46-dyspleyi.md:54 klas:F -->
+<!-- fc id:T-46-038 sha:267484c5 src:manual/46-dyspleyi.md:54 klas:E -->
 ### T-46-038 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -604,7 +613,7 @@
 
 ---
 
-<!-- fc id:T-46-039 sha:63930b45 src:manual/46-dyspleyi.md:54 klas:F -->
+<!-- fc id:T-46-039 sha:63930b45 src:manual/46-dyspleyi.md:54 klas:E -->
 ### T-46-039 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -617,7 +626,7 @@
 
 ---
 
-<!-- fc id:T-46-040 sha:1164678b src:manual/46-dyspleyi.md:54 klas:F -->
+<!-- fc id:T-46-040 sha:1164678b src:manual/46-dyspleyi.md:54 klas:E -->
 ### T-46-040 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -630,7 +639,7 @@
 
 ---
 
-<!-- fc id:T-46-041 sha:5a052aca src:manual/46-dyspleyi.md:60 klas:F -->
+<!-- fc id:T-46-041 sha:5a052aca src:manual/46-dyspleyi.md:60 klas:E -->
 ### T-46-041 · proza · рядок 60
 
 **Книга каже, дослівно:**
@@ -643,7 +652,7 @@
 
 ---
 
-<!-- fc id:T-46-042 sha:99de20dc src:manual/46-dyspleyi.md:63 klas:F -->
+<!-- fc id:T-46-042 sha:99de20dc src:manual/46-dyspleyi.md:63 klas:E -->
 ### T-46-042 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -656,7 +665,7 @@
 
 ---
 
-<!-- fc id:T-46-043 sha:d8cdd72c src:manual/46-dyspleyi.md:67 klas:F -->
+<!-- fc id:T-46-043 sha:d8cdd72c src:manual/46-dyspleyi.md:67 klas:E -->
 ### T-46-043 · proza · рядок 67
 
 **Книга каже, дослівно:**
@@ -751,7 +760,7 @@
 
 ---
 
-<!-- fc id:T-46-048 sha:f082b2eb src:manual/46-dyspleyi.md:82 klas:F -->
+<!-- fc id:T-46-048 sha:f082b2eb src:manual/46-dyspleyi.md:82 klas:E -->
 ### T-46-048 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -764,7 +773,7 @@
 
 ---
 
-<!-- fc id:T-46-049 sha:d9a18b0b src:manual/46-dyspleyi.md:82 klas:F -->
+<!-- fc id:T-46-049 sha:d9a18b0b src:manual/46-dyspleyi.md:82 klas:E -->
 ### T-46-049 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -790,7 +799,7 @@
 
 ---
 
-<!-- fc id:T-46-051 sha:69e02e27 src:manual/46-dyspleyi.md:90 klas:F -->
+<!-- fc id:T-46-051 sha:69e02e27 src:manual/46-dyspleyi.md:90 klas:E -->
 ### T-46-051 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -816,7 +825,7 @@
 
 ---
 
-<!-- fc id:T-46-053 sha:2f2ae56c src:manual/46-dyspleyi.md:93 klas:F -->
+<!-- fc id:T-46-053 sha:2f2ae56c src:manual/46-dyspleyi.md:93 klas:E -->
 ### T-46-053 · proza · рядок 93
 
 **Книга каже, дослівно:**
@@ -842,7 +851,7 @@
 
 ---
 
-<!-- fc id:T-46-055 sha:bf726169 src:manual/46-dyspleyi.md:102 klas:F -->
+<!-- fc id:T-46-055 sha:bf726169 src:manual/46-dyspleyi.md:102 klas:E -->
 ### T-46-055 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -868,7 +877,7 @@
 
 ---
 
-<!-- fc id:T-46-057 sha:d537fafe src:manual/46-dyspleyi.md:106 klas:F -->
+<!-- fc id:T-46-057 sha:d537fafe src:manual/46-dyspleyi.md:106 klas:E -->
 ### T-46-057 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -881,7 +890,7 @@
 
 ---
 
-<!-- fc id:T-46-058 sha:ffcc7b25 src:manual/46-dyspleyi.md:108 klas:F -->
+<!-- fc id:T-46-058 sha:ffcc7b25 src:manual/46-dyspleyi.md:108 klas:E -->
 ### T-46-058 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -894,7 +903,7 @@
 
 ---
 
-<!-- fc id:T-46-059 sha:8cd553b1 src:manual/46-dyspleyi.md:108 klas:F -->
+<!-- fc id:T-46-059 sha:8cd553b1 src:manual/46-dyspleyi.md:108 klas:D -->
 ### T-46-059 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -903,7 +912,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
 
 ---
 
@@ -920,7 +942,7 @@
 
 ---
 
-<!-- fc id:T-46-061 sha:4d06ad8a src:manual/46-dyspleyi.md:111 klas:F -->
+<!-- fc id:T-46-061 sha:4d06ad8a src:manual/46-dyspleyi.md:111 klas:E -->
 ### T-46-061 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -959,7 +981,7 @@
 
 ---
 
-<!-- fc id:T-46-064 sha:99fe0fae src:manual/46-dyspleyi.md:119 klas:F -->
+<!-- fc id:T-46-064 sha:99fe0fae src:manual/46-dyspleyi.md:119 klas:E -->
 ### T-46-064 · proza · рядок 119
 
 **Книга каже, дослівно:**
@@ -985,7 +1007,7 @@
 
 ---
 
-<!-- fc id:T-46-066 sha:6c925664 src:manual/46-dyspleyi.md:122 klas:F -->
+<!-- fc id:T-46-066 sha:6c925664 src:manual/46-dyspleyi.md:122 klas:E -->
 ### T-46-066 · proza · рядок 122
 
 **Книга каже, дослівно:**
@@ -998,7 +1020,7 @@
 
 ---
 
-<!-- fc id:T-46-067 sha:93eaca22 src:manual/46-dyspleyi.md:126 klas:F -->
+<!-- fc id:T-46-067 sha:93eaca22 src:manual/46-dyspleyi.md:126 klas:E -->
 ### T-46-067 · proza · рядок 126
 
 **Книга каже, дослівно:**
@@ -1050,7 +1072,7 @@
 
 ---
 
-<!-- fc id:T-46-071 sha:ab7d677a src:manual/46-dyspleyi.md:139 klas:F -->
+<!-- fc id:T-46-071 sha:ab7d677a src:manual/46-dyspleyi.md:139 klas:E -->
 ### T-46-071 · proza · рядок 139
 
 **Книга каже, дослівно:**
@@ -1063,7 +1085,7 @@
 
 ---
 
-<!-- fc id:T-46-072 sha:a789af84 src:manual/46-dyspleyi.md:139 klas:F -->
+<!-- fc id:T-46-072 sha:a789af84 src:manual/46-dyspleyi.md:139 klas:E -->
 ### T-46-072 · proza · рядок 139
 
 **Книга каже, дослівно:**
@@ -1076,7 +1098,7 @@
 
 ---
 
-<!-- fc id:T-46-073 sha:d9634ea9 src:manual/46-dyspleyi.md:146 klas:F -->
+<!-- fc id:T-46-073 sha:d9634ea9 src:manual/46-dyspleyi.md:146 klas:E -->
 ### T-46-073 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -1102,7 +1124,7 @@
 
 ---
 
-<!-- fc id:T-46-075 sha:3524415f src:manual/46-dyspleyi.md:149 klas:F -->
+<!-- fc id:T-46-075 sha:3524415f src:manual/46-dyspleyi.md:149 klas:E -->
 ### T-46-075 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -1128,7 +1150,7 @@
 
 ---
 
-<!-- fc id:T-46-077 sha:31c8fd19 src:manual/46-dyspleyi.md:153 klas:F -->
+<!-- fc id:T-46-077 sha:31c8fd19 src:manual/46-dyspleyi.md:153 klas:E -->
 ### T-46-077 · proza · рядок 153
 
 **Книга каже, дослівно:**
@@ -1141,7 +1163,7 @@
 
 ---
 
-<!-- fc id:T-46-078 sha:4cde5d29 src:manual/46-dyspleyi.md:153 klas:F -->
+<!-- fc id:T-46-078 sha:4cde5d29 src:manual/46-dyspleyi.md:153 klas:E -->
 ### T-46-078 · proza · рядок 153
 
 **Книга каже, дослівно:**
@@ -1181,7 +1203,7 @@
 
 ---
 
-<!-- fc id:T-46-080 sha:2695515d src:manual/46-dyspleyi.md:160 klas:F -->
+<!-- fc id:T-46-080 sha:2695515d src:manual/46-dyspleyi.md:160 klas:E -->
 ### T-46-080 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -1233,7 +1255,7 @@
 
 ---
 
-<!-- fc id:T-46-084 sha:ca818cd6 src:manual/46-dyspleyi.md:169 klas:F -->
+<!-- fc id:T-46-084 sha:ca818cd6 src:manual/46-dyspleyi.md:169 klas:E -->
 ### T-46-084 · proza · рядок 169
 
 **Книга каже, дослівно:**
@@ -1246,7 +1268,7 @@
 
 ---
 
-<!-- fc id:T-46-085 sha:fdb0c400 src:manual/46-dyspleyi.md:171 klas:F -->
+<!-- fc id:T-46-085 sha:fdb0c400 src:manual/46-dyspleyi.md:171 klas:E -->
 ### T-46-085 · proza · рядок 171
 
 **Книга каже, дослівно:**

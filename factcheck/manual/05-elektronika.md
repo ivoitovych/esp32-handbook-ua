@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-05-001 sha:a527012e src:manual/05-elektronika.md:3 klas:F -->
+<!-- fc id:T-05-001 sha:a527012e src:manual/05-elektronika.md:3 klas:E -->
 ### T-05-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-05-002 sha:459f2bf4 src:manual/05-elektronika.md:3 klas:F -->
+<!-- fc id:T-05-002 sha:459f2bf4 src:manual/05-elektronika.md:3 klas:E -->
 ### T-05-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-05-004 sha:3c958429 src:manual/05-elektronika.md:11 klas:F -->
+<!-- fc id:T-05-004 sha:3c958429 src:manual/05-elektronika.md:11 klas:E -->
 ### T-05-004 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-05-006 sha:787eecd6 src:manual/05-elektronika.md:11 klas:F -->
+<!-- fc id:T-05-006 sha:787eecd6 src:manual/05-elektronika.md:11 klas:E -->
 ### T-05-006 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-05-007 sha:3d63bf99 src:manual/05-elektronika.md:15 klas:F -->
+<!-- fc id:T-05-007 sha:3d63bf99 src:manual/05-elektronika.md:15 klas:E -->
 ### T-05-007 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-05-008 sha:fa600bbb src:manual/05-elektronika.md:15 klas:F -->
+<!-- fc id:T-05-008 sha:fa600bbb src:manual/05-elektronika.md:15 klas:E -->
 ### T-05-008 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-05-009 sha:a5cbf740 src:manual/05-elektronika.md:19 klas:F -->
+<!-- fc id:T-05-009 sha:a5cbf740 src:manual/05-elektronika.md:19 klas:E -->
 ### T-05-009 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-05-011 sha:644c4a63 src:manual/05-elektronika.md:21 klas:F -->
+<!-- fc id:T-05-011 sha:644c4a63 src:manual/05-elektronika.md:21 klas:E -->
 ### T-05-011 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-05-013 sha:a0e7adb2 src:manual/05-elektronika.md:28 klas:F -->
+<!-- fc id:T-05-013 sha:a0e7adb2 src:manual/05-elektronika.md:28 klas:E -->
 ### T-05-013 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-05-014 sha:ecd3c4f7 src:manual/05-elektronika.md:28 klas:F -->
+<!-- fc id:T-05-014 sha:ecd3c4f7 src:manual/05-elektronika.md:28 klas:E -->
 ### T-05-014 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-05-015 sha:40305cbb src:manual/05-elektronika.md:28 klas:F -->
+<!-- fc id:T-05-015 sha:40305cbb src:manual/05-elektronika.md:28 klas:E -->
 ### T-05-015 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-05-016 sha:f0d107b2 src:manual/05-elektronika.md:28 klas:F -->
+<!-- fc id:T-05-016 sha:f0d107b2 src:manual/05-elektronika.md:28 klas:E -->
 ### T-05-016 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-05-017 sha:c41ff4fb src:manual/05-elektronika.md:38 klas:F -->
+<!-- fc id:T-05-017 sha:c41ff4fb src:manual/05-elektronika.md:38 klas:E -->
 ### T-05-017 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -391,7 +391,7 @@
 
 ---
 
-<!-- fc id:T-05-027 sha:600d0676 src:manual/05-elektronika.md:66 klas:F -->
+<!-- fc id:T-05-027 sha:600d0676 src:manual/05-elektronika.md:66 klas:E -->
 ### T-05-027 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -430,7 +430,7 @@
 
 ---
 
-<!-- fc id:T-05-030 sha:dabef299 src:manual/05-elektronika.md:69 klas:F -->
+<!-- fc id:T-05-030 sha:dabef299 src:manual/05-elektronika.md:69 klas:E -->
 ### T-05-030 · proza · рядок 69
 
 **Книга каже, дослівно:**
@@ -495,7 +495,7 @@
 
 ---
 
-<!-- fc id:T-05-035 sha:f2f03438 src:manual/05-elektronika.md:85 klas:F -->
+<!-- fc id:T-05-035 sha:f2f03438 src:manual/05-elektronika.md:85 klas:E -->
 ### T-05-035 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -521,7 +521,7 @@
 
 ---
 
-<!-- fc id:T-05-037 sha:ae5a164b src:manual/05-elektronika.md:87 klas:F -->
+<!-- fc id:T-05-037 sha:ae5a164b src:manual/05-elektronika.md:87 klas:E -->
 ### T-05-037 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -547,7 +547,7 @@
 
 ---
 
-<!-- fc id:T-05-039 sha:e243525c src:manual/05-elektronika.md:93 klas:F -->
+<!-- fc id:T-05-039 sha:e243525c src:manual/05-elektronika.md:93 klas:E -->
 ### T-05-039 · proza · рядок 93
 
 **Книга каже, дослівно:**
@@ -560,7 +560,7 @@
 
 ---
 
-<!-- fc id:T-05-040 sha:62990d8f src:manual/05-elektronika.md:93 klas:F -->
+<!-- fc id:T-05-040 sha:62990d8f src:manual/05-elektronika.md:93 klas:E -->
 ### T-05-040 · proza · рядок 93
 
 **Книга каже, дослівно:**
@@ -616,7 +616,7 @@
 
 ---
 
-<!-- fc id:T-05-044 sha:41b0d402 src:manual/05-elektronika.md:102 klas:F -->
+<!-- fc id:T-05-044 sha:41b0d402 src:manual/05-elektronika.md:102 klas:E -->
 ### T-05-044 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -629,7 +629,7 @@
 
 ---
 
-<!-- fc id:T-05-045 sha:2266e7f9 src:manual/05-elektronika.md:102 klas:F -->
+<!-- fc id:T-05-045 sha:2266e7f9 src:manual/05-elektronika.md:102 klas:E -->
 ### T-05-045 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -642,7 +642,7 @@
 
 ---
 
-<!-- fc id:T-05-046 sha:b6bfee7e src:manual/05-elektronika.md:106 klas:F -->
+<!-- fc id:T-05-046 sha:b6bfee7e src:manual/05-elektronika.md:106 klas:E -->
 ### T-05-046 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -655,7 +655,7 @@
 
 ---
 
-<!-- fc id:T-05-047 sha:780a6082 src:manual/05-elektronika.md:106 klas:F -->
+<!-- fc id:T-05-047 sha:780a6082 src:manual/05-elektronika.md:106 klas:E -->
 ### T-05-047 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -681,7 +681,7 @@
 
 ---
 
-<!-- fc id:T-05-049 sha:dda82b52 src:manual/05-elektronika.md:112 klas:F -->
+<!-- fc id:T-05-049 sha:dda82b52 src:manual/05-elektronika.md:112 klas:E -->
 ### T-05-049 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -694,7 +694,7 @@
 
 ---
 
-<!-- fc id:T-05-050 sha:df0ff32f src:manual/05-elektronika.md:112 klas:F -->
+<!-- fc id:T-05-050 sha:df0ff32f src:manual/05-elektronika.md:112 klas:E -->
 ### T-05-050 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -707,7 +707,7 @@
 
 ---
 
-<!-- fc id:T-05-051 sha:4c6586d6 src:manual/05-elektronika.md:115 klas:F -->
+<!-- fc id:T-05-051 sha:4c6586d6 src:manual/05-elektronika.md:115 klas:E -->
 ### T-05-051 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -720,7 +720,7 @@
 
 ---
 
-<!-- fc id:T-05-052 sha:6b039db6 src:manual/05-elektronika.md:115 klas:F -->
+<!-- fc id:T-05-052 sha:6b039db6 src:manual/05-elektronika.md:115 klas:E -->
 ### T-05-052 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -746,7 +746,7 @@
 
 ---
 
-<!-- fc id:T-05-054 sha:0cef94d9 src:manual/05-elektronika.md:118 klas:F -->
+<!-- fc id:T-05-054 sha:0cef94d9 src:manual/05-elektronika.md:118 klas:E -->
 ### T-05-054 · proza · рядок 118
 
 **Книга каже, дослівно:**
@@ -759,7 +759,7 @@
 
 ---
 
-<!-- fc id:T-05-055 sha:c543e99e src:manual/05-elektronika.md:121 klas:F -->
+<!-- fc id:T-05-055 sha:c543e99e src:manual/05-elektronika.md:121 klas:E -->
 ### T-05-055 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -870,7 +870,7 @@
 
 ---
 
-<!-- fc id:T-05-063 sha:1ef21188 src:manual/05-elektronika.md:136 klas:F -->
+<!-- fc id:T-05-063 sha:1ef21188 src:manual/05-elektronika.md:136 klas:E -->
 ### T-05-063 · proza · рядок 136
 
 **Книга каже, дослівно:**
@@ -909,7 +909,7 @@
 
 ---
 
-<!-- fc id:T-05-066 sha:5362dd9e src:manual/05-elektronika.md:147 klas:F -->
+<!-- fc id:T-05-066 sha:5362dd9e src:manual/05-elektronika.md:147 klas:E -->
 ### T-05-066 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -922,7 +922,7 @@
 
 ---
 
-<!-- fc id:T-05-067 sha:be2e01ed src:manual/05-elektronika.md:147 klas:F -->
+<!-- fc id:T-05-067 sha:be2e01ed src:manual/05-elektronika.md:147 klas:E -->
 ### T-05-067 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -935,7 +935,7 @@
 
 ---
 
-<!-- fc id:T-05-068 sha:15ecaa84 src:manual/05-elektronika.md:150 klas:F -->
+<!-- fc id:T-05-068 sha:15ecaa84 src:manual/05-elektronika.md:150 klas:E -->
 ### T-05-068 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -948,7 +948,7 @@
 
 ---
 
-<!-- fc id:T-05-069 sha:8339aba6 src:manual/05-elektronika.md:150 klas:F -->
+<!-- fc id:T-05-069 sha:8339aba6 src:manual/05-elektronika.md:150 klas:E -->
 ### T-05-069 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -961,7 +961,7 @@
 
 ---
 
-<!-- fc id:T-05-070 sha:aba70f21 src:manual/05-elektronika.md:150 klas:F -->
+<!-- fc id:T-05-070 sha:aba70f21 src:manual/05-elektronika.md:150 klas:E -->
 ### T-05-070 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -987,7 +987,7 @@
 
 ---
 
-<!-- fc id:T-05-072 sha:2f224adc src:manual/05-elektronika.md:155 klas:F -->
+<!-- fc id:T-05-072 sha:2f224adc src:manual/05-elektronika.md:155 klas:E -->
 ### T-05-072 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -1013,7 +1013,7 @@
 
 ---
 
-<!-- fc id:T-05-074 sha:40f9d078 src:manual/05-elektronika.md:163 klas:F -->
+<!-- fc id:T-05-074 sha:40f9d078 src:manual/05-elektronika.md:163 klas:E -->
 ### T-05-074 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -1026,7 +1026,7 @@
 
 ---
 
-<!-- fc id:T-05-075 sha:a4e3ab64 src:manual/05-elektronika.md:163 klas:F -->
+<!-- fc id:T-05-075 sha:a4e3ab64 src:manual/05-elektronika.md:163 klas:E -->
 ### T-05-075 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -1052,7 +1052,7 @@
 
 ---
 
-<!-- fc id:T-05-077 sha:5c6d3703 src:manual/05-elektronika.md:171 klas:F -->
+<!-- fc id:T-05-077 sha:5c6d3703 src:manual/05-elektronika.md:171 klas:E -->
 ### T-05-077 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -1065,7 +1065,7 @@
 
 ---
 
-<!-- fc id:T-05-078 sha:a4b3f884 src:manual/05-elektronika.md:171 klas:F -->
+<!-- fc id:T-05-078 sha:a4b3f884 src:manual/05-elektronika.md:171 klas:E -->
 ### T-05-078 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -1104,7 +1104,7 @@
 
 ---
 
-<!-- fc id:T-05-081 sha:fc6fd2c0 src:manual/05-elektronika.md:178 klas:F -->
+<!-- fc id:T-05-081 sha:fc6fd2c0 src:manual/05-elektronika.md:178 klas:E -->
 ### T-05-081 · proza · рядок 178
 
 **Книга каже, дослівно:**
@@ -1130,7 +1130,7 @@
 
 ---
 
-<!-- fc id:T-05-083 sha:436783c6 src:manual/05-elektronika.md:180 klas:F -->
+<!-- fc id:T-05-083 sha:436783c6 src:manual/05-elektronika.md:180 klas:E -->
 ### T-05-083 · proza · рядок 180
 
 **Книга каже, дослівно:**
@@ -1143,7 +1143,7 @@
 
 ---
 
-<!-- fc id:T-05-084 sha:2d46818c src:manual/05-elektronika.md:180 klas:F -->
+<!-- fc id:T-05-084 sha:2d46818c src:manual/05-elektronika.md:180 klas:E -->
 ### T-05-084 · proza · рядок 180
 
 **Книга каже, дослівно:**
@@ -1169,7 +1169,7 @@
 
 ---
 
-<!-- fc id:T-05-086 sha:73ed1b63 src:manual/05-elektronika.md:183 klas:F -->
+<!-- fc id:T-05-086 sha:73ed1b63 src:manual/05-elektronika.md:183 klas:E -->
 ### T-05-086 · proza · рядок 183
 
 **Книга каже, дослівно:**
@@ -1195,7 +1195,7 @@
 
 ---
 
-<!-- fc id:T-05-088 sha:a677e285 src:manual/05-elektronika.md:188 klas:F -->
+<!-- fc id:T-05-088 sha:a677e285 src:manual/05-elektronika.md:188 klas:E -->
 ### T-05-088 · proza · рядок 188
 
 **Книга каже, дослівно:**
@@ -1208,7 +1208,7 @@
 
 ---
 
-<!-- fc id:T-05-089 sha:acde736a src:manual/05-elektronika.md:192 klas:F -->
+<!-- fc id:T-05-089 sha:acde736a src:manual/05-elektronika.md:192 klas:E -->
 ### T-05-089 · proza · рядок 192
 
 **Книга каже, дослівно:**
@@ -1221,7 +1221,7 @@
 
 ---
 
-<!-- fc id:T-05-090 sha:ccc0d4af src:manual/05-elektronika.md:192 klas:F -->
+<!-- fc id:T-05-090 sha:ccc0d4af src:manual/05-elektronika.md:192 klas:E -->
 ### T-05-090 · proza · рядок 192
 
 **Книга каже, дослівно:**
@@ -1234,7 +1234,7 @@
 
 ---
 
-<!-- fc id:T-05-091 sha:d73987ab src:manual/05-elektronika.md:198 klas:F -->
+<!-- fc id:T-05-091 sha:d73987ab src:manual/05-elektronika.md:198 klas:E -->
 ### T-05-091 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1247,7 +1247,7 @@
 
 ---
 
-<!-- fc id:T-05-092 sha:b6b8b69c src:manual/05-elektronika.md:201 klas:F -->
+<!-- fc id:T-05-092 sha:b6b8b69c src:manual/05-elektronika.md:201 klas:E -->
 ### T-05-092 · proza · рядок 201
 
 **Книга каже, дослівно:**
@@ -1299,7 +1299,7 @@
 
 ---
 
-<!-- fc id:T-05-096 sha:d07e0231 src:manual/05-elektronika.md:210 klas:F -->
+<!-- fc id:T-05-096 sha:d07e0231 src:manual/05-elektronika.md:210 klas:E -->
 ### T-05-096 · proza · рядок 210
 
 **Книга каже, дослівно:**
@@ -1312,7 +1312,7 @@
 
 ---
 
-<!-- fc id:T-05-097 sha:3ee0cbd0 src:manual/05-elektronika.md:210 klas:F -->
+<!-- fc id:T-05-097 sha:3ee0cbd0 src:manual/05-elektronika.md:210 klas:E -->
 ### T-05-097 · proza · рядок 210
 
 **Книга каже, дослівно:**
@@ -1325,7 +1325,7 @@
 
 ---
 
-<!-- fc id:T-05-098 sha:42f989f6 src:manual/05-elektronika.md:210 klas:F -->
+<!-- fc id:T-05-098 sha:42f989f6 src:manual/05-elektronika.md:210 klas:E -->
 ### T-05-098 · proza · рядок 210
 
 **Книга каже, дослівно:**
@@ -1338,7 +1338,7 @@
 
 ---
 
-<!-- fc id:T-05-099 sha:b8655fbc src:manual/05-elektronika.md:218 klas:F -->
+<!-- fc id:T-05-099 sha:b8655fbc src:manual/05-elektronika.md:218 klas:E -->
 ### T-05-099 · proza · рядок 218
 
 **Книга каже, дослівно:**
@@ -1351,7 +1351,7 @@
 
 ---
 
-<!-- fc id:T-05-100 sha:4e34e88d src:manual/05-elektronika.md:218 klas:F -->
+<!-- fc id:T-05-100 sha:4e34e88d src:manual/05-elektronika.md:218 klas:E -->
 ### T-05-100 · proza · рядок 218
 
 **Книга каже, дослівно:**
@@ -1377,7 +1377,7 @@
 
 ---
 
-<!-- fc id:T-05-102 sha:42dcedb0 src:manual/05-elektronika.md:222 klas:F -->
+<!-- fc id:T-05-102 sha:42dcedb0 src:manual/05-elektronika.md:222 klas:E -->
 ### T-05-102 · proza · рядок 222
 
 **Книга каже, дослівно:**
@@ -1390,7 +1390,7 @@
 
 ---
 
-<!-- fc id:T-05-103 sha:c3ba8594 src:manual/05-elektronika.md:226 klas:F -->
+<!-- fc id:T-05-103 sha:c3ba8594 src:manual/05-elektronika.md:226 klas:E -->
 ### T-05-103 · proza · рядок 226
 
 **Книга каже, дослівно:**
@@ -1416,7 +1416,7 @@
 
 ---
 
-<!-- fc id:T-05-105 sha:7a5c08e4 src:manual/05-elektronika.md:231 klas:F -->
+<!-- fc id:T-05-105 sha:7a5c08e4 src:manual/05-elektronika.md:231 klas:E -->
 ### T-05-105 · proza · рядок 231
 
 **Книга каже, дослівно:**
@@ -1429,7 +1429,7 @@
 
 ---
 
-<!-- fc id:T-05-106 sha:9c97bb50 src:manual/05-elektronika.md:231 klas:F -->
+<!-- fc id:T-05-106 sha:9c97bb50 src:manual/05-elektronika.md:231 klas:E -->
 ### T-05-106 · proza · рядок 231
 
 **Книга каже, дослівно:**
@@ -1442,7 +1442,7 @@
 
 ---
 
-<!-- fc id:T-05-107 sha:f6207072 src:manual/05-elektronika.md:231 klas:F -->
+<!-- fc id:T-05-107 sha:f6207072 src:manual/05-elektronika.md:231 klas:E -->
 ### T-05-107 · proza · рядок 231
 
 **Книга каже, дослівно:**
@@ -1520,7 +1520,7 @@
 
 ---
 
-<!-- fc id:T-05-113 sha:6d2f0ac4 src:manual/05-elektronika.md:237 klas:F -->
+<!-- fc id:T-05-113 sha:6d2f0ac4 src:manual/05-elektronika.md:237 klas:E -->
 ### T-05-113 · proza · рядок 237
 
 **Книга каже, дослівно:**
@@ -1533,7 +1533,7 @@
 
 ---
 
-<!-- fc id:T-05-114 sha:3de3220d src:manual/05-elektronika.md:245 klas:F -->
+<!-- fc id:T-05-114 sha:3de3220d src:manual/05-elektronika.md:245 klas:E -->
 ### T-05-114 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -1559,7 +1559,7 @@
 
 ---
 
-<!-- fc id:T-05-116 sha:ac05920e src:manual/05-elektronika.md:254 klas:F -->
+<!-- fc id:T-05-116 sha:ac05920e src:manual/05-elektronika.md:254 klas:E -->
 ### T-05-116 · proza · рядок 254
 
 **Книга каже, дослівно:**
@@ -1585,7 +1585,7 @@
 
 ---
 
-<!-- fc id:T-05-118 sha:6eb95c8a src:manual/05-elektronika.md:258 klas:F -->
+<!-- fc id:T-05-118 sha:6eb95c8a src:manual/05-elektronika.md:258 klas:E -->
 ### T-05-118 · proza · рядок 258
 
 **Книга каже, дослівно:**
@@ -1624,7 +1624,7 @@
 
 ---
 
-<!-- fc id:T-05-121 sha:81d57c04 src:manual/05-elektronika.md:264 klas:F -->
+<!-- fc id:T-05-121 sha:81d57c04 src:manual/05-elektronika.md:264 klas:E -->
 ### T-05-121 · proza · рядок 264
 
 **Книга каже, дослівно:**
@@ -1637,7 +1637,7 @@
 
 ---
 
-<!-- fc id:T-05-122 sha:494efa74 src:manual/05-elektronika.md:264 klas:F -->
+<!-- fc id:T-05-122 sha:494efa74 src:manual/05-elektronika.md:264 klas:E -->
 ### T-05-122 · proza · рядок 264
 
 **Книга каже, дослівно:**

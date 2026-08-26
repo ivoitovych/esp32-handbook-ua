@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-32-001 sha:5cdb9c78 src:manual/32-nadiynist.md:3 klas:F -->
+<!-- fc id:T-32-001 sha:5cdb9c78 src:manual/32-nadiynist.md:3 klas:E -->
 ### T-32-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-32-002 sha:d84b0c34 src:manual/32-nadiynist.md:3 klas:F -->
+<!-- fc id:T-32-002 sha:d84b0c34 src:manual/32-nadiynist.md:3 klas:E -->
 ### T-32-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-32-003 sha:f0c15395 src:manual/32-nadiynist.md:3 klas:F -->
+<!-- fc id:T-32-003 sha:f0c15395 src:manual/32-nadiynist.md:3 klas:E -->
 ### T-32-003 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-32-004 sha:fe447c34 src:manual/32-nadiynist.md:7 klas:F -->
+<!-- fc id:T-32-004 sha:fe447c34 src:manual/32-nadiynist.md:7 klas:E -->
 ### T-32-004 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -235,7 +235,7 @@
 
 ---
 
-<!-- fc id:T-32-013 sha:be2cecf9 src:manual/32-nadiynist.md:37 klas:F -->
+<!-- fc id:T-32-013 sha:be2cecf9 src:manual/32-nadiynist.md:37 klas:E -->
 ### T-32-013 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -261,7 +261,7 @@
 
 ---
 
-<!-- fc id:T-32-015 sha:5384a5fd src:manual/32-nadiynist.md:41 klas:F -->
+<!-- fc id:T-32-015 sha:5384a5fd src:manual/32-nadiynist.md:41 klas:E -->
 ### T-32-015 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -274,7 +274,7 @@
 
 ---
 
-<!-- fc id:T-32-016 sha:362f55a3 src:manual/32-nadiynist.md:41 klas:F -->
+<!-- fc id:T-32-016 sha:362f55a3 src:manual/32-nadiynist.md:41 klas:E -->
 ### T-32-016 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -287,7 +287,7 @@
 
 ---
 
-<!-- fc id:T-32-017 sha:98deef4c src:manual/32-nadiynist.md:41 klas:F -->
+<!-- fc id:T-32-017 sha:98deef4c src:manual/32-nadiynist.md:41 klas:E -->
 ### T-32-017 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -313,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-32-019 sha:40973338 src:manual/32-nadiynist.md:46 klas:F -->
+<!-- fc id:T-32-019 sha:40973338 src:manual/32-nadiynist.md:46 klas:E -->
 ### T-32-019 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -326,7 +326,7 @@
 
 ---
 
-<!-- fc id:T-32-020 sha:82a3115c src:manual/32-nadiynist.md:54 klas:F -->
+<!-- fc id:T-32-020 sha:82a3115c src:manual/32-nadiynist.md:54 klas:E -->
 ### T-32-020 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -339,7 +339,7 @@
 
 ---
 
-<!-- fc id:T-32-021 sha:edfaafb0 src:manual/32-nadiynist.md:54 klas:F -->
+<!-- fc id:T-32-021 sha:edfaafb0 src:manual/32-nadiynist.md:54 klas:E -->
 ### T-32-021 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -352,7 +352,7 @@
 
 ---
 
-<!-- fc id:T-32-022 sha:3e7fd545 src:manual/32-nadiynist.md:57 klas:F -->
+<!-- fc id:T-32-022 sha:3e7fd545 src:manual/32-nadiynist.md:57 klas:E -->
 ### T-32-022 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -365,7 +365,7 @@
 
 ---
 
-<!-- fc id:T-32-023 sha:aa6ff3e5 src:manual/32-nadiynist.md:57 klas:F -->
+<!-- fc id:T-32-023 sha:aa6ff3e5 src:manual/32-nadiynist.md:57 klas:E -->
 ### T-32-023 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -472,7 +472,7 @@
 
 ---
 
-<!-- fc id:T-32-027 sha:692da8a9 src:manual/32-nadiynist.md:76 klas:F -->
+<!-- fc id:T-32-027 sha:692da8a9 src:manual/32-nadiynist.md:76 klas:E -->
 ### T-32-027 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -485,7 +485,7 @@
 
 ---
 
-<!-- fc id:T-32-028 sha:fd9ab150 src:manual/32-nadiynist.md:76 klas:F -->
+<!-- fc id:T-32-028 sha:fd9ab150 src:manual/32-nadiynist.md:76 klas:E -->
 ### T-32-028 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -498,7 +498,7 @@
 
 ---
 
-<!-- fc id:T-32-029 sha:b4778720 src:manual/32-nadiynist.md:76 klas:F -->
+<!-- fc id:T-32-029 sha:b4778720 src:manual/32-nadiynist.md:76 klas:E -->
 ### T-32-029 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -511,7 +511,7 @@
 
 ---
 
-<!-- fc id:T-32-030 sha:5b563204 src:manual/32-nadiynist.md:80 klas:F -->
+<!-- fc id:T-32-030 sha:5b563204 src:manual/32-nadiynist.md:80 klas:E -->
 ### T-32-030 · proza · рядок 80
 
 **Книга каже, дослівно:**
@@ -524,7 +524,7 @@
 
 ---
 
-<!-- fc id:T-32-031 sha:8348d3a1 src:manual/32-nadiynist.md:80 klas:F -->
+<!-- fc id:T-32-031 sha:8348d3a1 src:manual/32-nadiynist.md:80 klas:E -->
 ### T-32-031 · proza · рядок 80
 
 **Книга каже, дослівно:**
@@ -537,7 +537,7 @@
 
 ---
 
-<!-- fc id:T-32-032 sha:5ff6aed5 src:manual/32-nadiynist.md:83 klas:F -->
+<!-- fc id:T-32-032 sha:5ff6aed5 src:manual/32-nadiynist.md:83 klas:E -->
 ### T-32-032 · proza · рядок 83
 
 **Книга каже, дослівно:**
@@ -550,7 +550,7 @@
 
 ---
 
-<!-- fc id:T-32-033 sha:0f75e2d2 src:manual/32-nadiynist.md:87 klas:F -->
+<!-- fc id:T-32-033 sha:0f75e2d2 src:manual/32-nadiynist.md:87 klas:E -->
 ### T-32-033 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -576,7 +576,7 @@
 
 ---
 
-<!-- fc id:T-32-035 sha:45700409 src:manual/32-nadiynist.md:90 klas:F -->
+<!-- fc id:T-32-035 sha:45700409 src:manual/32-nadiynist.md:90 klas:E -->
 ### T-32-035 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -589,7 +589,7 @@
 
 ---
 
-<!-- fc id:T-32-036 sha:63083761 src:manual/32-nadiynist.md:95 klas:F -->
+<!-- fc id:T-32-036 sha:63083761 src:manual/32-nadiynist.md:95 klas:E -->
 ### T-32-036 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -615,7 +615,7 @@
 
 ---
 
-<!-- fc id:T-32-038 sha:02b1a3ee src:manual/32-nadiynist.md:102 klas:F -->
+<!-- fc id:T-32-038 sha:02b1a3ee src:manual/32-nadiynist.md:102 klas:E -->
 ### T-32-038 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -628,7 +628,7 @@
 
 ---
 
-<!-- fc id:T-32-039 sha:c2daf488 src:manual/32-nadiynist.md:106 klas:F -->
+<!-- fc id:T-32-039 sha:c2daf488 src:manual/32-nadiynist.md:106 klas:E -->
 ### T-32-039 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -641,7 +641,7 @@
 
 ---
 
-<!-- fc id:T-32-040 sha:60f40e6c src:manual/32-nadiynist.md:106 klas:F -->
+<!-- fc id:T-32-040 sha:60f40e6c src:manual/32-nadiynist.md:106 klas:E -->
 ### T-32-040 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -726,7 +726,7 @@
 
 ---
 
-<!-- fc id:T-32-044 sha:a2c863e7 src:manual/32-nadiynist.md:118 klas:F -->
+<!-- fc id:T-32-044 sha:a2c863e7 src:manual/32-nadiynist.md:118 klas:E -->
 ### T-32-044 · proza · рядок 118
 
 **Книга каже, дослівно:**
@@ -739,7 +739,7 @@
 
 ---
 
-<!-- fc id:T-32-045 sha:303cc593 src:manual/32-nadiynist.md:118 klas:F -->
+<!-- fc id:T-32-045 sha:303cc593 src:manual/32-nadiynist.md:118 klas:E -->
 ### T-32-045 · proza · рядок 118
 
 **Книга каже, дослівно:**
@@ -752,7 +752,7 @@
 
 ---
 
-<!-- fc id:T-32-046 sha:5bc8582a src:manual/32-nadiynist.md:123 klas:F -->
+<!-- fc id:T-32-046 sha:5bc8582a src:manual/32-nadiynist.md:123 klas:E -->
 ### T-32-046 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -765,7 +765,7 @@
 
 ---
 
-<!-- fc id:T-32-047 sha:3feb66a4 src:manual/32-nadiynist.md:126 klas:F -->
+<!-- fc id:T-32-047 sha:3feb66a4 src:manual/32-nadiynist.md:126 klas:E -->
 ### T-32-047 · proza · рядок 126
 
 **Книга каже, дослівно:**
@@ -778,7 +778,7 @@
 
 ---
 
-<!-- fc id:T-32-048 sha:ddc062e5 src:manual/32-nadiynist.md:126 klas:F -->
+<!-- fc id:T-32-048 sha:ddc062e5 src:manual/32-nadiynist.md:126 klas:E -->
 ### T-32-048 · proza · рядок 126
 
 **Книга каже, дослівно:**
@@ -804,7 +804,7 @@
 
 ---
 
-<!-- fc id:T-32-050 sha:1b966467 src:manual/32-nadiynist.md:137 klas:F -->
+<!-- fc id:T-32-050 sha:1b966467 src:manual/32-nadiynist.md:137 klas:E -->
 ### T-32-050 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -817,7 +817,7 @@
 
 ---
 
-<!-- fc id:T-32-051 sha:d0b209d0 src:manual/32-nadiynist.md:137 klas:F -->
+<!-- fc id:T-32-051 sha:d0b209d0 src:manual/32-nadiynist.md:137 klas:E -->
 ### T-32-051 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -843,7 +843,7 @@
 
 ---
 
-<!-- fc id:T-32-053 sha:1d97acc0 src:manual/32-nadiynist.md:140 klas:F -->
+<!-- fc id:T-32-053 sha:1d97acc0 src:manual/32-nadiynist.md:140 klas:E -->
 ### T-32-053 · proza · рядок 140
 
 **Книга каже, дослівно:**
@@ -856,7 +856,7 @@
 
 ---
 
-<!-- fc id:T-32-054 sha:cfa44b68 src:manual/32-nadiynist.md:144 klas:F -->
+<!-- fc id:T-32-054 sha:cfa44b68 src:manual/32-nadiynist.md:144 klas:E -->
 ### T-32-054 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -890,7 +890,7 @@
 
 ---
 
-<!-- fc id:T-32-056 sha:f0b19de7 src:manual/32-nadiynist.md:146 klas:F -->
+<!-- fc id:T-32-056 sha:f0b19de7 src:manual/32-nadiynist.md:146 klas:E -->
 ### T-32-056 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -903,7 +903,7 @@
 
 ---
 
-<!-- fc id:T-32-057 sha:fd7e884c src:manual/32-nadiynist.md:149 klas:F -->
+<!-- fc id:T-32-057 sha:fd7e884c src:manual/32-nadiynist.md:149 klas:E -->
 ### T-32-057 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -929,7 +929,7 @@
 
 ---
 
-<!-- fc id:T-32-059 sha:60d133a1 src:manual/32-nadiynist.md:149 klas:F -->
+<!-- fc id:T-32-059 sha:60d133a1 src:manual/32-nadiynist.md:149 klas:E -->
 ### T-32-059 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -955,7 +955,7 @@
 
 ---
 
-<!-- fc id:T-32-061 sha:64340e81 src:manual/32-nadiynist.md:157 klas:F -->
+<!-- fc id:T-32-061 sha:64340e81 src:manual/32-nadiynist.md:157 klas:E -->
 ### T-32-061 · proza · рядок 157
 
 **Книга каже, дослівно:**
@@ -981,7 +981,7 @@
 
 ---
 
-<!-- fc id:T-32-063 sha:83119fbb src:manual/32-nadiynist.md:163 klas:F -->
+<!-- fc id:T-32-063 sha:83119fbb src:manual/32-nadiynist.md:163 klas:E -->
 ### T-32-063 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -994,7 +994,7 @@
 
 ---
 
-<!-- fc id:T-32-064 sha:df83f4e9 src:manual/32-nadiynist.md:163 klas:F -->
+<!-- fc id:T-32-064 sha:df83f4e9 src:manual/32-nadiynist.md:163 klas:E -->
 ### T-32-064 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -1020,7 +1020,7 @@
 
 ---
 
-<!-- fc id:T-32-066 sha:bf1e7d3e src:manual/32-nadiynist.md:169 klas:F -->
+<!-- fc id:T-32-066 sha:bf1e7d3e src:manual/32-nadiynist.md:169 klas:E -->
 ### T-32-066 · proza · рядок 169
 
 **Книга каже, дослівно:**
@@ -1033,7 +1033,7 @@
 
 ---
 
-<!-- fc id:T-32-067 sha:0590c490 src:manual/32-nadiynist.md:171 klas:F -->
+<!-- fc id:T-32-067 sha:0590c490 src:manual/32-nadiynist.md:171 klas:E -->
 ### T-32-067 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -1134,7 +1134,7 @@
 
 ---
 
-<!-- fc id:T-32-074 sha:20692047 src:manual/32-nadiynist.md:183 klas:F -->
+<!-- fc id:T-32-074 sha:20692047 src:manual/32-nadiynist.md:183 klas:E -->
 ### T-32-074 · proza · рядок 183
 
 **Книга каже, дослівно:**
@@ -1177,7 +1177,7 @@
 
 ---
 
-<!-- fc id:T-32-077 sha:b2c1ae60 src:manual/32-nadiynist.md:189 klas:F -->
+<!-- fc id:T-32-077 sha:b2c1ae60 src:manual/32-nadiynist.md:189 klas:E -->
 ### T-32-077 · proza · рядок 189
 
 **Книга каже, дослівно:**
@@ -1216,7 +1216,7 @@
 
 ---
 
-<!-- fc id:T-32-080 sha:0f4691b1 src:manual/32-nadiynist.md:196 klas:F -->
+<!-- fc id:T-32-080 sha:0f4691b1 src:manual/32-nadiynist.md:196 klas:E -->
 ### T-32-080 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1242,7 +1242,7 @@
 
 ---
 
-<!-- fc id:T-32-082 sha:9e04f85e src:manual/32-nadiynist.md:208 klas:F -->
+<!-- fc id:T-32-082 sha:9e04f85e src:manual/32-nadiynist.md:208 klas:E -->
 ### T-32-082 · proza · рядок 208
 
 **Книга каже, дослівно:**
@@ -1268,7 +1268,7 @@
 
 ---
 
-<!-- fc id:T-32-084 sha:e0150223 src:manual/32-nadiynist.md:213 klas:F -->
+<!-- fc id:T-32-084 sha:e0150223 src:manual/32-nadiynist.md:213 klas:E -->
 ### T-32-084 · proza · рядок 213
 
 **Книга каже, дослівно:**
@@ -1281,7 +1281,7 @@
 
 ---
 
-<!-- fc id:T-32-085 sha:62924b7e src:manual/32-nadiynist.md:216 klas:F -->
+<!-- fc id:T-32-085 sha:62924b7e src:manual/32-nadiynist.md:216 klas:E -->
 ### T-32-085 · proza · рядок 216
 
 **Книга каже, дослівно:**
@@ -1294,7 +1294,7 @@
 
 ---
 
-<!-- fc id:T-32-086 sha:10555fe8 src:manual/32-nadiynist.md:216 klas:F -->
+<!-- fc id:T-32-086 sha:10555fe8 src:manual/32-nadiynist.md:216 klas:E -->
 ### T-32-086 · proza · рядок 216
 
 **Книга каже, дослівно:**
@@ -1307,7 +1307,7 @@
 
 ---
 
-<!-- fc id:T-32-087 sha:322756f4 src:manual/32-nadiynist.md:219 klas:F -->
+<!-- fc id:T-32-087 sha:322756f4 src:manual/32-nadiynist.md:219 klas:E -->
 ### T-32-087 · proza · рядок 219
 
 **Книга каже, дослівно:**
@@ -1320,7 +1320,7 @@
 
 ---
 
-<!-- fc id:T-32-088 sha:105ed1b7 src:manual/32-nadiynist.md:219 klas:F -->
+<!-- fc id:T-32-088 sha:105ed1b7 src:manual/32-nadiynist.md:219 klas:E -->
 ### T-32-088 · proza · рядок 219
 
 **Книга каже, дослівно:**
@@ -1333,7 +1333,7 @@
 
 ---
 
-<!-- fc id:T-32-089 sha:d9826450 src:manual/32-nadiynist.md:222 klas:F -->
+<!-- fc id:T-32-089 sha:d9826450 src:manual/32-nadiynist.md:222 klas:E -->
 ### T-32-089 · proza · рядок 222
 
 **Книга каже, дослівно:**
@@ -1346,7 +1346,7 @@
 
 ---
 
-<!-- fc id:T-32-090 sha:a4a80472 src:manual/32-nadiynist.md:225 klas:F -->
+<!-- fc id:T-32-090 sha:a4a80472 src:manual/32-nadiynist.md:225 klas:E -->
 ### T-32-090 · proza · рядок 225
 
 **Книга каже, дослівно:**

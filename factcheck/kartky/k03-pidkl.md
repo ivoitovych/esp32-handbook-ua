@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K03-001 sha:2d0f5a79 src:kartky/k03-pidkl.md:3 klas:F -->
+<!-- fc id:T-K03-001 sha:2d0f5a79 src:kartky/k03-pidkl.md:3 klas:E -->
 ### T-K03-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K03-002 sha:83b4b42c src:kartky/k03-pidkl.md:8 klas:F -->
+<!-- fc id:T-K03-002 sha:83b4b42c src:kartky/k03-pidkl.md:8 klas:E -->
 ### T-K03-002 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-K03-003 sha:77681536 src:kartky/k03-pidkl.md:11 klas:F -->
+<!-- fc id:T-K03-003 sha:77681536 src:kartky/k03-pidkl.md:11 klas:E -->
 ### T-K03-003 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-K03-004 sha:896f61c4 src:kartky/k03-pidkl.md:11 klas:F -->
+<!-- fc id:T-K03-004 sha:896f61c4 src:kartky/k03-pidkl.md:11 klas:E -->
 ### T-K03-004 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-K03-005 sha:77c7b26a src:kartky/k03-pidkl.md:16 klas:F -->
+<!-- fc id:T-K03-005 sha:77c7b26a src:kartky/k03-pidkl.md:16 klas:E -->
 ### T-K03-005 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-K03-006 sha:c12094c4 src:kartky/k03-pidkl.md:16 klas:F -->
+<!-- fc id:T-K03-006 sha:c12094c4 src:kartky/k03-pidkl.md:16 klas:E -->
 ### T-K03-006 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:16 klas:F -->
+<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:16 klas:E -->
 ### T-K03-007 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-K03-008 sha:938b247e src:kartky/k03-pidkl.md:22 klas:F -->
+<!-- fc id:T-K03-008 sha:938b247e src:kartky/k03-pidkl.md:22 klas:E -->
 ### T-K03-008 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -294,7 +294,7 @@
 
 ---
 
-<!-- fc id:T-K03-023 sha:5eb954e4 src:kartky/k03-pidkl.md:44 klas:F -->
+<!-- fc id:T-K03-023 sha:5eb954e4 src:kartky/k03-pidkl.md:44 klas:E -->
 ### T-K03-023 · proza · рядок 44
 
 **Книга каже, дослівно:**
@@ -307,7 +307,7 @@
 
 ---
 
-<!-- fc id:T-K03-024 sha:b25b1a1b src:kartky/k03-pidkl.md:44 klas:F -->
+<!-- fc id:T-K03-024 sha:b25b1a1b src:kartky/k03-pidkl.md:44 klas:E -->
 ### T-K03-024 · proza · рядок 44
 
 **Книга каже, дослівно:**
@@ -333,7 +333,7 @@
 
 ---
 
-<!-- fc id:T-K03-026 sha:fcf18876 src:kartky/k03-pidkl.md:48 klas:F -->
+<!-- fc id:T-K03-026 sha:fcf18876 src:kartky/k03-pidkl.md:48 klas:E -->
 ### T-K03-026 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -359,7 +359,7 @@
 
 ---
 
-<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:55 klas:F -->
+<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:55 klas:E -->
 ### T-K03-028 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -372,7 +372,7 @@
 
 ---
 
-<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:55 klas:F -->
+<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:55 klas:E -->
 ### T-K03-029 · proza · рядок 55
 
 **Книга каже, дослівно:**

@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-COM-002 sha:7458d947 src:inserts/components-2026-08.md:5 klas:F -->
+<!-- fc id:T-COM-002 sha:7458d947 src:inserts/components-2026-08.md:5 klas:E -->
 ### T-COM-002 · proza · рядок 5
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-COM-004 sha:6cb094db src:inserts/components-2026-08.md:9 klas:F -->
+<!-- fc id:T-COM-004 sha:6cb094db src:inserts/components-2026-08.md:9 klas:E -->
 ### T-COM-004 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-COM-005 sha:d369d06f src:inserts/components-2026-08.md:9 klas:F -->
+<!-- fc id:T-COM-005 sha:d369d06f src:inserts/components-2026-08.md:9 klas:E -->
 ### T-COM-005 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -1226,7 +1226,7 @@
 
 ---
 
-<!-- fc id:T-COM-087 sha:47861098 src:inserts/components-2026-08.md:104 klas:F -->
+<!-- fc id:T-COM-087 sha:47861098 src:inserts/components-2026-08.md:104 klas:E -->
 ### T-COM-087 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -1239,7 +1239,7 @@
 
 ---
 
-<!-- fc id:T-COM-088 sha:75617667 src:inserts/components-2026-08.md:107 klas:F -->
+<!-- fc id:T-COM-088 sha:75617667 src:inserts/components-2026-08.md:107 klas:E -->
 ### T-COM-088 · proza · рядок 107
 
 **Книга каже, дослівно:**

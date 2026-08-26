@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-14-001 sha:ad34177f src:manual/14-shvydki-shlyakhy.md:3 klas:F -->
+<!-- fc id:T-14-001 sha:ad34177f src:manual/14-shvydki-shlyakhy.md:3 klas:E -->
 ### T-14-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-14-002 sha:6a3a2202 src:manual/14-shvydki-shlyakhy.md:3 klas:F -->
+<!-- fc id:T-14-002 sha:6a3a2202 src:manual/14-shvydki-shlyakhy.md:3 klas:E -->
 ### T-14-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-14-003 sha:e18ace7b src:manual/14-shvydki-shlyakhy.md:7 klas:F -->
+<!-- fc id:T-14-003 sha:e18ace7b src:manual/14-shvydki-shlyakhy.md:7 klas:E -->
 ### T-14-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-14-004 sha:17b87182 src:manual/14-shvydki-shlyakhy.md:12 klas:F -->
+<!-- fc id:T-14-004 sha:17b87182 src:manual/14-shvydki-shlyakhy.md:12 klas:E -->
 ### T-14-004 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-14-005 sha:46d93393 src:manual/14-shvydki-shlyakhy.md:12 klas:F -->
+<!-- fc id:T-14-005 sha:46d93393 src:manual/14-shvydki-shlyakhy.md:12 klas:E -->
 ### T-14-005 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -118,7 +118,7 @@
 
 ---
 
-<!-- fc id:T-14-009 sha:3ad408bc src:manual/14-shvydki-shlyakhy.md:26 klas:F -->
+<!-- fc id:T-14-009 sha:3ad408bc src:manual/14-shvydki-shlyakhy.md:26 klas:E -->
 ### T-14-009 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -131,7 +131,7 @@
 
 ---
 
-<!-- fc id:T-14-010 sha:caec47f2 src:manual/14-shvydki-shlyakhy.md:26 klas:F -->
+<!-- fc id:T-14-010 sha:caec47f2 src:manual/14-shvydki-shlyakhy.md:26 klas:E -->
 ### T-14-010 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -144,7 +144,7 @@
 
 ---
 
-<!-- fc id:T-14-011 sha:c0862edf src:manual/14-shvydki-shlyakhy.md:26 klas:F -->
+<!-- fc id:T-14-011 sha:c0862edf src:manual/14-shvydki-shlyakhy.md:26 klas:E -->
 ### T-14-011 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -157,7 +157,7 @@
 
 ---
 
-<!-- fc id:T-14-012 sha:6d27dec2 src:manual/14-shvydki-shlyakhy.md:32 klas:F -->
+<!-- fc id:T-14-012 sha:6d27dec2 src:manual/14-shvydki-shlyakhy.md:32 klas:E -->
 ### T-14-012 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -183,7 +183,7 @@
 
 ---
 
-<!-- fc id:T-14-014 sha:33e4f83b src:manual/14-shvydki-shlyakhy.md:32 klas:F -->
+<!-- fc id:T-14-014 sha:33e4f83b src:manual/14-shvydki-shlyakhy.md:32 klas:E -->
 ### T-14-014 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -196,7 +196,7 @@
 
 ---
 
-<!-- fc id:T-14-015 sha:6efff622 src:manual/14-shvydki-shlyakhy.md:32 klas:F -->
+<!-- fc id:T-14-015 sha:6efff622 src:manual/14-shvydki-shlyakhy.md:32 klas:E -->
 ### T-14-015 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -209,7 +209,7 @@
 
 ---
 
-<!-- fc id:T-14-016 sha:d53cd436 src:manual/14-shvydki-shlyakhy.md:38 klas:F -->
+<!-- fc id:T-14-016 sha:d53cd436 src:manual/14-shvydki-shlyakhy.md:38 klas:E -->
 ### T-14-016 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -222,7 +222,7 @@
 
 ---
 
-<!-- fc id:T-14-017 sha:7f9a1d85 src:manual/14-shvydki-shlyakhy.md:43 klas:F -->
+<!-- fc id:T-14-017 sha:7f9a1d85 src:manual/14-shvydki-shlyakhy.md:43 klas:E -->
 ### T-14-017 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -248,7 +248,7 @@
 
 ---
 
-<!-- fc id:T-14-019 sha:71e3e394 src:manual/14-shvydki-shlyakhy.md:51 klas:F -->
+<!-- fc id:T-14-019 sha:71e3e394 src:manual/14-shvydki-shlyakhy.md:51 klas:E -->
 ### T-14-019 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -261,7 +261,7 @@
 
 ---
 
-<!-- fc id:T-14-020 sha:69d25754 src:manual/14-shvydki-shlyakhy.md:51 klas:F -->
+<!-- fc id:T-14-020 sha:69d25754 src:manual/14-shvydki-shlyakhy.md:51 klas:E -->
 ### T-14-020 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -316,7 +316,7 @@
 
 ---
 
-<!-- fc id:T-14-022 sha:2923fcd0 src:manual/14-shvydki-shlyakhy.md:75 klas:F -->
+<!-- fc id:T-14-022 sha:2923fcd0 src:manual/14-shvydki-shlyakhy.md:75 klas:E -->
 ### T-14-022 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-14-023 sha:b782166d src:manual/14-shvydki-shlyakhy.md:78 klas:F -->
+<!-- fc id:T-14-023 sha:b782166d src:manual/14-shvydki-shlyakhy.md:78 klas:E -->
 ### T-14-023 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-14-024 sha:8cb0966b src:manual/14-shvydki-shlyakhy.md:78 klas:F -->
+<!-- fc id:T-14-024 sha:8cb0966b src:manual/14-shvydki-shlyakhy.md:78 klas:E -->
 ### T-14-024 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -355,7 +355,7 @@
 
 ---
 
-<!-- fc id:T-14-025 sha:685d749e src:manual/14-shvydki-shlyakhy.md:78 klas:F -->
+<!-- fc id:T-14-025 sha:685d749e src:manual/14-shvydki-shlyakhy.md:78 klas:E -->
 ### T-14-025 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -368,7 +368,7 @@
 
 ---
 
-<!-- fc id:T-14-026 sha:de8345e4 src:manual/14-shvydki-shlyakhy.md:83 klas:F -->
+<!-- fc id:T-14-026 sha:de8345e4 src:manual/14-shvydki-shlyakhy.md:83 klas:E -->
 ### T-14-026 · proza · рядок 83
 
 **Книга каже, дослівно:**
@@ -381,7 +381,7 @@
 
 ---
 
-<!-- fc id:T-14-027 sha:47ba3a6b src:manual/14-shvydki-shlyakhy.md:83 klas:F -->
+<!-- fc id:T-14-027 sha:47ba3a6b src:manual/14-shvydki-shlyakhy.md:83 klas:E -->
 ### T-14-027 · proza · рядок 83
 
 **Книга каже, дослівно:**
@@ -394,7 +394,7 @@
 
 ---
 
-<!-- fc id:T-14-028 sha:71b7eb27 src:manual/14-shvydki-shlyakhy.md:83 klas:F -->
+<!-- fc id:T-14-028 sha:71b7eb27 src:manual/14-shvydki-shlyakhy.md:83 klas:E -->
 ### T-14-028 · proza · рядок 83
 
 **Книга каже, дослівно:**
@@ -407,7 +407,7 @@
 
 ---
 
-<!-- fc id:T-14-029 sha:653cdf1d src:manual/14-shvydki-shlyakhy.md:88 klas:F -->
+<!-- fc id:T-14-029 sha:653cdf1d src:manual/14-shvydki-shlyakhy.md:88 klas:E -->
 ### T-14-029 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -420,7 +420,7 @@
 
 ---
 
-<!-- fc id:T-14-030 sha:a435a48e src:manual/14-shvydki-shlyakhy.md:88 klas:F -->
+<!-- fc id:T-14-030 sha:a435a48e src:manual/14-shvydki-shlyakhy.md:88 klas:E -->
 ### T-14-030 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -433,7 +433,7 @@
 
 ---
 
-<!-- fc id:T-14-031 sha:7abc757d src:manual/14-shvydki-shlyakhy.md:88 klas:F -->
+<!-- fc id:T-14-031 sha:7abc757d src:manual/14-shvydki-shlyakhy.md:88 klas:E -->
 ### T-14-031 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -446,7 +446,7 @@
 
 ---
 
-<!-- fc id:T-14-032 sha:9ab8dfb9 src:manual/14-shvydki-shlyakhy.md:94 klas:F -->
+<!-- fc id:T-14-032 sha:9ab8dfb9 src:manual/14-shvydki-shlyakhy.md:94 klas:E -->
 ### T-14-032 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -459,7 +459,7 @@
 
 ---
 
-<!-- fc id:T-14-033 sha:b894f3d8 src:manual/14-shvydki-shlyakhy.md:94 klas:F -->
+<!-- fc id:T-14-033 sha:b894f3d8 src:manual/14-shvydki-shlyakhy.md:94 klas:E -->
 ### T-14-033 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -472,7 +472,7 @@
 
 ---
 
-<!-- fc id:T-14-034 sha:e47c8be6 src:manual/14-shvydki-shlyakhy.md:94 klas:F -->
+<!-- fc id:T-14-034 sha:e47c8be6 src:manual/14-shvydki-shlyakhy.md:94 klas:E -->
 ### T-14-034 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -485,7 +485,7 @@
 
 ---
 
-<!-- fc id:T-14-035 sha:63afc27e src:manual/14-shvydki-shlyakhy.md:99 klas:F -->
+<!-- fc id:T-14-035 sha:63afc27e src:manual/14-shvydki-shlyakhy.md:99 klas:E -->
 ### T-14-035 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -511,7 +511,7 @@
 
 ---
 
-<!-- fc id:T-14-037 sha:543d1e62 src:manual/14-shvydki-shlyakhy.md:105 klas:F -->
+<!-- fc id:T-14-037 sha:543d1e62 src:manual/14-shvydki-shlyakhy.md:105 klas:E -->
 ### T-14-037 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -524,7 +524,7 @@
 
 ---
 
-<!-- fc id:T-14-038 sha:2d9faacb src:manual/14-shvydki-shlyakhy.md:108 klas:F -->
+<!-- fc id:T-14-038 sha:2d9faacb src:manual/14-shvydki-shlyakhy.md:108 klas:E -->
 ### T-14-038 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -537,7 +537,7 @@
 
 ---
 
-<!-- fc id:T-14-039 sha:19c5de9b src:manual/14-shvydki-shlyakhy.md:108 klas:F -->
+<!-- fc id:T-14-039 sha:19c5de9b src:manual/14-shvydki-shlyakhy.md:108 klas:E -->
 ### T-14-039 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -550,7 +550,7 @@
 
 ---
 
-<!-- fc id:T-14-040 sha:9bd19f82 src:manual/14-shvydki-shlyakhy.md:108 klas:F -->
+<!-- fc id:T-14-040 sha:9bd19f82 src:manual/14-shvydki-shlyakhy.md:108 klas:E -->
 ### T-14-040 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -563,7 +563,7 @@
 
 ---
 
-<!-- fc id:T-14-041 sha:d1722e82 src:manual/14-shvydki-shlyakhy.md:108 klas:F -->
+<!-- fc id:T-14-041 sha:d1722e82 src:manual/14-shvydki-shlyakhy.md:108 klas:E -->
 ### T-14-041 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -576,7 +576,7 @@
 
 ---
 
-<!-- fc id:T-14-042 sha:cc4a8b83 src:manual/14-shvydki-shlyakhy.md:113 klas:F -->
+<!-- fc id:T-14-042 sha:cc4a8b83 src:manual/14-shvydki-shlyakhy.md:113 klas:E -->
 ### T-14-042 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -589,7 +589,7 @@
 
 ---
 
-<!-- fc id:T-14-043 sha:ff01882e src:manual/14-shvydki-shlyakhy.md:113 klas:F -->
+<!-- fc id:T-14-043 sha:ff01882e src:manual/14-shvydki-shlyakhy.md:113 klas:E -->
 ### T-14-043 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -602,7 +602,7 @@
 
 ---
 
-<!-- fc id:T-14-044 sha:5b441989 src:manual/14-shvydki-shlyakhy.md:113 klas:F -->
+<!-- fc id:T-14-044 sha:5b441989 src:manual/14-shvydki-shlyakhy.md:113 klas:E -->
 ### T-14-044 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -615,7 +615,7 @@
 
 ---
 
-<!-- fc id:T-14-045 sha:52c7bb5d src:manual/14-shvydki-shlyakhy.md:119 klas:F -->
+<!-- fc id:T-14-045 sha:52c7bb5d src:manual/14-shvydki-shlyakhy.md:119 klas:E -->
 ### T-14-045 · proza · рядок 119
 
 **Книга каже, дослівно:**
@@ -628,7 +628,7 @@
 
 ---
 
-<!-- fc id:T-14-046 sha:52f75b48 src:manual/14-shvydki-shlyakhy.md:123 klas:F -->
+<!-- fc id:T-14-046 sha:52f75b48 src:manual/14-shvydki-shlyakhy.md:123 klas:E -->
 ### T-14-046 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -641,7 +641,7 @@
 
 ---
 
-<!-- fc id:T-14-047 sha:dc4f1230 src:manual/14-shvydki-shlyakhy.md:123 klas:F -->
+<!-- fc id:T-14-047 sha:dc4f1230 src:manual/14-shvydki-shlyakhy.md:123 klas:E -->
 ### T-14-047 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -654,7 +654,7 @@
 
 ---
 
-<!-- fc id:T-14-048 sha:c2a7e7c2 src:manual/14-shvydki-shlyakhy.md:127 klas:F -->
+<!-- fc id:T-14-048 sha:c2a7e7c2 src:manual/14-shvydki-shlyakhy.md:127 klas:E -->
 ### T-14-048 · proza · рядок 127
 
 **Книга каже, дослівно:**
@@ -940,7 +940,7 @@
 
 ---
 
-<!-- fc id:T-14-070 sha:d741a614 src:manual/14-shvydki-shlyakhy.md:144 klas:F -->
+<!-- fc id:T-14-070 sha:d741a614 src:manual/14-shvydki-shlyakhy.md:144 klas:E -->
 ### T-14-070 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -953,7 +953,7 @@
 
 ---
 
-<!-- fc id:T-14-071 sha:cdbeaffd src:manual/14-shvydki-shlyakhy.md:147 klas:F -->
+<!-- fc id:T-14-071 sha:cdbeaffd src:manual/14-shvydki-shlyakhy.md:147 klas:E -->
 ### T-14-071 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -966,7 +966,7 @@
 
 ---
 
-<!-- fc id:T-14-072 sha:30956955 src:manual/14-shvydki-shlyakhy.md:150 klas:F -->
+<!-- fc id:T-14-072 sha:30956955 src:manual/14-shvydki-shlyakhy.md:150 klas:E -->
 ### T-14-072 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -979,7 +979,7 @@
 
 ---
 
-<!-- fc id:T-14-073 sha:685ce660 src:manual/14-shvydki-shlyakhy.md:153 klas:F -->
+<!-- fc id:T-14-073 sha:685ce660 src:manual/14-shvydki-shlyakhy.md:153 klas:E -->
 ### T-14-073 · proza · рядок 153
 
 **Книга каже, дослівно:**
@@ -1005,7 +1005,7 @@
 
 ---
 
-<!-- fc id:T-14-075 sha:6e8bb449 src:manual/14-shvydki-shlyakhy.md:159 klas:F -->
+<!-- fc id:T-14-075 sha:6e8bb449 src:manual/14-shvydki-shlyakhy.md:159 klas:E -->
 ### T-14-075 · proza · рядок 159
 
 **Книга каже, дослівно:**
@@ -1018,7 +1018,7 @@
 
 ---
 
-<!-- fc id:T-14-076 sha:c0760850 src:manual/14-shvydki-shlyakhy.md:165 klas:F -->
+<!-- fc id:T-14-076 sha:c0760850 src:manual/14-shvydki-shlyakhy.md:165 klas:E -->
 ### T-14-076 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -1031,7 +1031,7 @@
 
 ---
 
-<!-- fc id:T-14-077 sha:b61fa59d src:manual/14-shvydki-shlyakhy.md:168 klas:F -->
+<!-- fc id:T-14-077 sha:b61fa59d src:manual/14-shvydki-shlyakhy.md:168 klas:E -->
 ### T-14-077 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -1044,7 +1044,7 @@
 
 ---
 
-<!-- fc id:T-14-078 sha:9f505a28 src:manual/14-shvydki-shlyakhy.md:171 klas:F -->
+<!-- fc id:T-14-078 sha:9f505a28 src:manual/14-shvydki-shlyakhy.md:171 klas:E -->
 ### T-14-078 · proza · рядок 171
 
 **Книга каже, дослівно:**

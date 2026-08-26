@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-00-001 sha:b1f67539 src:manual/00-pro-dovidnyk.md:3 klas:F -->
+<!-- fc id:T-00-001 sha:b1f67539 src:manual/00-pro-dovidnyk.md:3 klas:E -->
 ### T-00-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-00-002 sha:ca6e373b src:manual/00-pro-dovidnyk.md:3 klas:F -->
+<!-- fc id:T-00-002 sha:ca6e373b src:manual/00-pro-dovidnyk.md:3 klas:E -->
 ### T-00-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-00-003 sha:6358ff5f src:manual/00-pro-dovidnyk.md:8 klas:F -->
+<!-- fc id:T-00-003 sha:6358ff5f src:manual/00-pro-dovidnyk.md:8 klas:E -->
 ### T-00-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-00-004 sha:f1353432 src:manual/00-pro-dovidnyk.md:8 klas:F -->
+<!-- fc id:T-00-004 sha:f1353432 src:manual/00-pro-dovidnyk.md:8 klas:E -->
 ### T-00-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-00-005 sha:0d93dcde src:manual/00-pro-dovidnyk.md:14 klas:F -->
+<!-- fc id:T-00-005 sha:0d93dcde src:manual/00-pro-dovidnyk.md:14 klas:E -->
 ### T-00-005 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-00-006 sha:55725df7 src:manual/00-pro-dovidnyk.md:14 klas:F -->
+<!-- fc id:T-00-006 sha:55725df7 src:manual/00-pro-dovidnyk.md:14 klas:E -->
 ### T-00-006 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-00-007 sha:c5d4a28a src:manual/00-pro-dovidnyk.md:14 klas:F -->
+<!-- fc id:T-00-007 sha:c5d4a28a src:manual/00-pro-dovidnyk.md:14 klas:E -->
 ### T-00-007 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-00-008 sha:e583abf8 src:manual/00-pro-dovidnyk.md:18 klas:F -->
+<!-- fc id:T-00-008 sha:e583abf8 src:manual/00-pro-dovidnyk.md:18 klas:E -->
 ### T-00-008 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-00-009 sha:fff0d660 src:manual/00-pro-dovidnyk.md:18 klas:F -->
+<!-- fc id:T-00-009 sha:fff0d660 src:manual/00-pro-dovidnyk.md:18 klas:E -->
 ### T-00-009 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-00-010 sha:ba9b0c68 src:manual/00-pro-dovidnyk.md:24 klas:F -->
+<!-- fc id:T-00-010 sha:ba9b0c68 src:manual/00-pro-dovidnyk.md:24 klas:E -->
 ### T-00-010 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-00-012 sha:c2c7b492 src:manual/00-pro-dovidnyk.md:31 klas:F -->
+<!-- fc id:T-00-012 sha:c2c7b492 src:manual/00-pro-dovidnyk.md:31 klas:E -->
 ### T-00-012 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-00-013 sha:2c1532b4 src:manual/00-pro-dovidnyk.md:31 klas:F -->
+<!-- fc id:T-00-013 sha:2c1532b4 src:manual/00-pro-dovidnyk.md:31 klas:E -->
 ### T-00-013 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-00-014 sha:71bc4286 src:manual/00-pro-dovidnyk.md:36 klas:F -->
+<!-- fc id:T-00-014 sha:71bc4286 src:manual/00-pro-dovidnyk.md:36 klas:E -->
 ### T-00-014 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-00-015 sha:b8f57d7d src:manual/00-pro-dovidnyk.md:36 klas:F -->
+<!-- fc id:T-00-015 sha:b8f57d7d src:manual/00-pro-dovidnyk.md:36 klas:E -->
 ### T-00-015 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-00-016 sha:7a88a7cf src:manual/00-pro-dovidnyk.md:41 klas:F -->
+<!-- fc id:T-00-016 sha:7a88a7cf src:manual/00-pro-dovidnyk.md:41 klas:E -->
 ### T-00-016 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-00-017 sha:d360f996 src:manual/00-pro-dovidnyk.md:41 klas:F -->
+<!-- fc id:T-00-017 sha:d360f996 src:manual/00-pro-dovidnyk.md:41 klas:E -->
 ### T-00-017 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-00-018 sha:7c922b00 src:manual/00-pro-dovidnyk.md:46 klas:F -->
+<!-- fc id:T-00-018 sha:7c922b00 src:manual/00-pro-dovidnyk.md:46 klas:E -->
 ### T-00-018 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-00-019 sha:001a355e src:manual/00-pro-dovidnyk.md:51 klas:F -->
+<!-- fc id:T-00-019 sha:001a355e src:manual/00-pro-dovidnyk.md:51 klas:E -->
 ### T-00-019 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-00-022 sha:cacc6d3d src:manual/00-pro-dovidnyk.md:55 klas:F -->
+<!-- fc id:T-00-022 sha:cacc6d3d src:manual/00-pro-dovidnyk.md:55 klas:E -->
 ### T-00-022 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-00-023 sha:4e52735b src:manual/00-pro-dovidnyk.md:62 klas:F -->
+<!-- fc id:T-00-023 sha:4e52735b src:manual/00-pro-dovidnyk.md:62 klas:E -->
 ### T-00-023 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-00-024 sha:a48b4e78 src:manual/00-pro-dovidnyk.md:62 klas:F -->
+<!-- fc id:T-00-024 sha:a48b4e78 src:manual/00-pro-dovidnyk.md:62 klas:E -->
 ### T-00-024 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-00-027 sha:2cce9b69 src:manual/00-pro-dovidnyk.md:68 klas:F -->
+<!-- fc id:T-00-027 sha:2cce9b69 src:manual/00-pro-dovidnyk.md:68 klas:E -->
 ### T-00-027 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -422,7 +422,7 @@
 
 ---
 
-<!-- fc id:T-00-033 sha:b1afe5fc src:manual/00-pro-dovidnyk.md:91 klas:F -->
+<!-- fc id:T-00-033 sha:b1afe5fc src:manual/00-pro-dovidnyk.md:91 klas:E -->
 ### T-00-033 · proza · рядок 91
 
 **Книга каже, дослівно:**
@@ -435,7 +435,7 @@
 
 ---
 
-<!-- fc id:T-00-034 sha:8a71991a src:manual/00-pro-dovidnyk.md:91 klas:F -->
+<!-- fc id:T-00-034 sha:8a71991a src:manual/00-pro-dovidnyk.md:91 klas:E -->
 ### T-00-034 · proza · рядок 91
 
 **Книга каже, дослівно:**
@@ -448,7 +448,7 @@
 
 ---
 
-<!-- fc id:T-00-035 sha:aa1d8846 src:manual/00-pro-dovidnyk.md:96 klas:F -->
+<!-- fc id:T-00-035 sha:aa1d8846 src:manual/00-pro-dovidnyk.md:96 klas:E -->
 ### T-00-035 · proza · рядок 96
 
 **Книга каже, дослівно:**
@@ -461,7 +461,7 @@
 
 ---
 
-<!-- fc id:T-00-036 sha:2eaeb63c src:manual/00-pro-dovidnyk.md:96 klas:F -->
+<!-- fc id:T-00-036 sha:2eaeb63c src:manual/00-pro-dovidnyk.md:96 klas:E -->
 ### T-00-036 · proza · рядок 96
 
 **Книга каже, дослівно:**
@@ -487,7 +487,7 @@
 
 ---
 
-<!-- fc id:T-00-038 sha:446584df src:manual/00-pro-dovidnyk.md:105 klas:F -->
+<!-- fc id:T-00-038 sha:446584df src:manual/00-pro-dovidnyk.md:105 klas:E -->
 ### T-00-038 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -513,7 +513,7 @@
 
 ---
 
-<!-- fc id:T-00-040 sha:9cb2e638 src:manual/00-pro-dovidnyk.md:105 klas:F -->
+<!-- fc id:T-00-040 sha:9cb2e638 src:manual/00-pro-dovidnyk.md:105 klas:E -->
 ### T-00-040 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-00-041 sha:32f9d316 src:manual/00-pro-dovidnyk.md:110 klas:F -->
+<!-- fc id:T-00-041 sha:32f9d316 src:manual/00-pro-dovidnyk.md:110 klas:E -->
 ### T-00-041 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -539,7 +539,7 @@
 
 ---
 
-<!-- fc id:T-00-042 sha:555bfede src:manual/00-pro-dovidnyk.md:110 klas:F -->
+<!-- fc id:T-00-042 sha:555bfede src:manual/00-pro-dovidnyk.md:110 klas:E -->
 ### T-00-042 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -552,7 +552,7 @@
 
 ---
 
-<!-- fc id:T-00-043 sha:44a84293 src:manual/00-pro-dovidnyk.md:116 klas:F -->
+<!-- fc id:T-00-043 sha:44a84293 src:manual/00-pro-dovidnyk.md:116 klas:E -->
 ### T-00-043 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -565,7 +565,7 @@
 
 ---
 
-<!-- fc id:T-00-044 sha:dfcedfb2 src:manual/00-pro-dovidnyk.md:116 klas:F -->
+<!-- fc id:T-00-044 sha:dfcedfb2 src:manual/00-pro-dovidnyk.md:116 klas:E -->
 ### T-00-044 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -578,7 +578,7 @@
 
 ---
 
-<!-- fc id:T-00-045 sha:4671eee4 src:manual/00-pro-dovidnyk.md:116 klas:F -->
+<!-- fc id:T-00-045 sha:4671eee4 src:manual/00-pro-dovidnyk.md:116 klas:E -->
 ### T-00-045 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -604,7 +604,7 @@
 
 ---
 
-<!-- fc id:T-00-047 sha:629dbdc0 src:manual/00-pro-dovidnyk.md:123 klas:F -->
+<!-- fc id:T-00-047 sha:629dbdc0 src:manual/00-pro-dovidnyk.md:123 klas:E -->
 ### T-00-047 · proza · рядок 123
 
 **Книга каже, дослівно:**

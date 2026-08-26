@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-51-001 sha:545f2e11 src:manual/51-payannya.md:3 klas:F -->
+<!-- fc id:T-51-001 sha:545f2e11 src:manual/51-payannya.md:3 klas:E -->
 ### T-51-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-51-002 sha:56e55cae src:manual/51-payannya.md:3 klas:F -->
+<!-- fc id:T-51-002 sha:56e55cae src:manual/51-payannya.md:3 klas:E -->
 ### T-51-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-51-003 sha:1ac116d5 src:manual/51-payannya.md:7 klas:F -->
+<!-- fc id:T-51-003 sha:1ac116d5 src:manual/51-payannya.md:7 klas:E -->
 ### T-51-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-51-004 sha:3f026f5a src:manual/51-payannya.md:11 klas:F -->
+<!-- fc id:T-51-004 sha:3f026f5a src:manual/51-payannya.md:11 klas:E -->
 ### T-51-004 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-51-005 sha:96d7324f src:manual/51-payannya.md:14 klas:F -->
+<!-- fc id:T-51-005 sha:96d7324f src:manual/51-payannya.md:14 klas:E -->
 ### T-51-005 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-51-006 sha:58920972 src:manual/51-payannya.md:14 klas:F -->
+<!-- fc id:T-51-006 sha:58920972 src:manual/51-payannya.md:14 klas:E -->
 ### T-51-006 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-51-007 sha:873ed0a6 src:manual/51-payannya.md:17 klas:F -->
+<!-- fc id:T-51-007 sha:873ed0a6 src:manual/51-payannya.md:17 klas:E -->
 ### T-51-007 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-51-008 sha:b0ea3b13 src:manual/51-payannya.md:17 klas:F -->
+<!-- fc id:T-51-008 sha:b0ea3b13 src:manual/51-payannya.md:17 klas:E -->
 ### T-51-008 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-51-009 sha:45335f7d src:manual/51-payannya.md:17 klas:F -->
+<!-- fc id:T-51-009 sha:45335f7d src:manual/51-payannya.md:17 klas:E -->
 ### T-51-009 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-51-010 sha:e59d3acc src:manual/51-payannya.md:21 klas:F -->
+<!-- fc id:T-51-010 sha:e59d3acc src:manual/51-payannya.md:21 klas:E -->
 ### T-51-010 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-51-011 sha:098c97a6 src:manual/51-payannya.md:21 klas:F -->
+<!-- fc id:T-51-011 sha:098c97a6 src:manual/51-payannya.md:21 klas:E -->
 ### T-51-011 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-51-012 sha:edbedb64 src:manual/51-payannya.md:26 klas:F -->
+<!-- fc id:T-51-012 sha:edbedb64 src:manual/51-payannya.md:26 klas:E -->
 ### T-51-012 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-51-015 sha:847526e9 src:manual/51-payannya.md:26 klas:F -->
+<!-- fc id:T-51-015 sha:847526e9 src:manual/51-payannya.md:26 klas:E -->
 ### T-51-015 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-51-017 sha:0cc01e35 src:manual/51-payannya.md:26 klas:F -->
+<!-- fc id:T-51-017 sha:0cc01e35 src:manual/51-payannya.md:26 klas:E -->
 ### T-51-017 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-51-023 sha:300959c0 src:manual/51-payannya.md:42 klas:F -->
+<!-- fc id:T-51-023 sha:300959c0 src:manual/51-payannya.md:42 klas:E -->
 ### T-51-023 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-51-024 sha:ab2dcb15 src:manual/51-payannya.md:42 klas:F -->
+<!-- fc id:T-51-024 sha:ab2dcb15 src:manual/51-payannya.md:42 klas:E -->
 ### T-51-024 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-51-025 sha:2b5ae902 src:manual/51-payannya.md:46 klas:F -->
+<!-- fc id:T-51-025 sha:2b5ae902 src:manual/51-payannya.md:46 klas:E -->
 ### T-51-025 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -360,7 +360,7 @@
 
 ---
 
-<!-- fc id:T-51-028 sha:2dd17603 src:manual/51-payannya.md:54 klas:F -->
+<!-- fc id:T-51-028 sha:2dd17603 src:manual/51-payannya.md:54 klas:E -->
 ### T-51-028 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -373,7 +373,7 @@
 
 ---
 
-<!-- fc id:T-51-029 sha:02bad26a src:manual/51-payannya.md:54 klas:F -->
+<!-- fc id:T-51-029 sha:02bad26a src:manual/51-payannya.md:54 klas:E -->
 ### T-51-029 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -386,7 +386,7 @@
 
 ---
 
-<!-- fc id:T-51-030 sha:29e074d8 src:manual/51-payannya.md:59 klas:F -->
+<!-- fc id:T-51-030 sha:29e074d8 src:manual/51-payannya.md:59 klas:E -->
 ### T-51-030 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -412,7 +412,7 @@
 
 ---
 
-<!-- fc id:T-51-032 sha:df279c01 src:manual/51-payannya.md:63 klas:F -->
+<!-- fc id:T-51-032 sha:df279c01 src:manual/51-payannya.md:63 klas:E -->
 ### T-51-032 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -425,7 +425,7 @@
 
 ---
 
-<!-- fc id:T-51-033 sha:51371de7 src:manual/51-payannya.md:63 klas:F -->
+<!-- fc id:T-51-033 sha:51371de7 src:manual/51-payannya.md:63 klas:E -->
 ### T-51-033 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -438,7 +438,7 @@
 
 ---
 
-<!-- fc id:T-51-034 sha:c7ea64f2 src:manual/51-payannya.md:63 klas:F -->
+<!-- fc id:T-51-034 sha:c7ea64f2 src:manual/51-payannya.md:63 klas:E -->
 ### T-51-034 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -451,7 +451,7 @@
 
 ---
 
-<!-- fc id:T-51-035 sha:55d6b384 src:manual/51-payannya.md:70 klas:F -->
+<!-- fc id:T-51-035 sha:55d6b384 src:manual/51-payannya.md:70 klas:E -->
 ### T-51-035 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-51-036 sha:2b081f3a src:manual/51-payannya.md:72 klas:F -->
+<!-- fc id:T-51-036 sha:2b081f3a src:manual/51-payannya.md:72 klas:E -->
 ### T-51-036 · proza · рядок 72
 
 **Книга каже, дослівно:**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-51-037 sha:718917ca src:manual/51-payannya.md:72 klas:F -->
+<!-- fc id:T-51-037 sha:718917ca src:manual/51-payannya.md:72 klas:E -->
 ### T-51-037 · proza · рядок 72
 
 **Книга каже, дослівно:**
@@ -490,7 +490,7 @@
 
 ---
 
-<!-- fc id:T-51-038 sha:ee674608 src:manual/51-payannya.md:76 klas:F -->
+<!-- fc id:T-51-038 sha:ee674608 src:manual/51-payannya.md:76 klas:E -->
 ### T-51-038 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -503,7 +503,7 @@
 
 ---
 
-<!-- fc id:T-51-039 sha:3869ca66 src:manual/51-payannya.md:76 klas:F -->
+<!-- fc id:T-51-039 sha:3869ca66 src:manual/51-payannya.md:76 klas:E -->
 ### T-51-039 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-51-040 sha:bbb5c1dd src:manual/51-payannya.md:81 klas:F -->
+<!-- fc id:T-51-040 sha:bbb5c1dd src:manual/51-payannya.md:81 klas:E -->
 ### T-51-040 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -529,7 +529,7 @@
 
 ---
 
-<!-- fc id:T-51-041 sha:7cc5883a src:manual/51-payannya.md:85 klas:F -->
+<!-- fc id:T-51-041 sha:7cc5883a src:manual/51-payannya.md:85 klas:E -->
 ### T-51-041 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -542,7 +542,7 @@
 
 ---
 
-<!-- fc id:T-51-042 sha:c2f21bc7 src:manual/51-payannya.md:87 klas:F -->
+<!-- fc id:T-51-042 sha:c2f21bc7 src:manual/51-payannya.md:87 klas:E -->
 ### T-51-042 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -555,7 +555,7 @@
 
 ---
 
-<!-- fc id:T-51-043 sha:15dfc03d src:manual/51-payannya.md:87 klas:F -->
+<!-- fc id:T-51-043 sha:15dfc03d src:manual/51-payannya.md:87 klas:E -->
 ### T-51-043 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -568,7 +568,7 @@
 
 ---
 
-<!-- fc id:T-51-044 sha:8fc744c7 src:manual/51-payannya.md:90 klas:F -->
+<!-- fc id:T-51-044 sha:8fc744c7 src:manual/51-payannya.md:90 klas:E -->
 ### T-51-044 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -581,7 +581,7 @@
 
 ---
 
-<!-- fc id:T-51-045 sha:33de50f9 src:manual/51-payannya.md:95 klas:F -->
+<!-- fc id:T-51-045 sha:33de50f9 src:manual/51-payannya.md:95 klas:E -->
 ### T-51-045 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-51-047 sha:991834a5 src:manual/51-payannya.md:97 klas:F -->
+<!-- fc id:T-51-047 sha:991834a5 src:manual/51-payannya.md:97 klas:E -->
 ### T-51-047 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -620,7 +620,7 @@
 
 ---
 
-<!-- fc id:T-51-048 sha:c2a78ec4 src:manual/51-payannya.md:100 klas:F -->
+<!-- fc id:T-51-048 sha:c2a78ec4 src:manual/51-payannya.md:100 klas:E -->
 ### T-51-048 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -633,7 +633,7 @@
 
 ---
 
-<!-- fc id:T-51-049 sha:e5a620bb src:manual/51-payannya.md:100 klas:F -->
+<!-- fc id:T-51-049 sha:e5a620bb src:manual/51-payannya.md:100 klas:E -->
 ### T-51-049 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-51-050 sha:9bbdc3e4 src:manual/51-payannya.md:105 klas:F -->
+<!-- fc id:T-51-050 sha:9bbdc3e4 src:manual/51-payannya.md:105 klas:E -->
 ### T-51-050 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -659,7 +659,7 @@
 
 ---
 
-<!-- fc id:T-51-051 sha:eb7e31f3 src:manual/51-payannya.md:109 klas:F -->
+<!-- fc id:T-51-051 sha:eb7e31f3 src:manual/51-payannya.md:109 klas:E -->
 ### T-51-051 · proza · рядок 109
 
 **Книга каже, дослівно:**
@@ -841,7 +841,7 @@
 
 ---
 
-<!-- fc id:T-51-065 sha:0c0d8553 src:manual/51-payannya.md:123 klas:F -->
+<!-- fc id:T-51-065 sha:0c0d8553 src:manual/51-payannya.md:123 klas:E -->
 ### T-51-065 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -854,7 +854,7 @@
 
 ---
 
-<!-- fc id:T-51-066 sha:efb55461 src:manual/51-payannya.md:128 klas:F -->
+<!-- fc id:T-51-066 sha:efb55461 src:manual/51-payannya.md:128 klas:E -->
 ### T-51-066 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -867,7 +867,7 @@
 
 ---
 
-<!-- fc id:T-51-067 sha:b4ec3e88 src:manual/51-payannya.md:128 klas:F -->
+<!-- fc id:T-51-067 sha:b4ec3e88 src:manual/51-payannya.md:128 klas:E -->
 ### T-51-067 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -880,7 +880,7 @@
 
 ---
 
-<!-- fc id:T-51-068 sha:030bce21 src:manual/51-payannya.md:131 klas:F -->
+<!-- fc id:T-51-068 sha:030bce21 src:manual/51-payannya.md:131 klas:E -->
 ### T-51-068 · proza · рядок 131
 
 **Книга каже, дослівно:**
@@ -919,7 +919,7 @@
 
 ---
 
-<!-- fc id:T-51-071 sha:8399e47f src:manual/51-payannya.md:138 klas:F -->
+<!-- fc id:T-51-071 sha:8399e47f src:manual/51-payannya.md:138 klas:E -->
 ### T-51-071 · proza · рядок 138
 
 **Книга каже, дослівно:**
@@ -932,7 +932,7 @@
 
 ---
 
-<!-- fc id:T-51-072 sha:a1b84a49 src:manual/51-payannya.md:141 klas:F -->
+<!-- fc id:T-51-072 sha:a1b84a49 src:manual/51-payannya.md:141 klas:E -->
 ### T-51-072 · proza · рядок 141
 
 **Книга каже, дослівно:**
@@ -945,7 +945,7 @@
 
 ---
 
-<!-- fc id:T-51-073 sha:c7b14e4a src:manual/51-payannya.md:143 klas:F -->
+<!-- fc id:T-51-073 sha:c7b14e4a src:manual/51-payannya.md:143 klas:E -->
 ### T-51-073 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -971,7 +971,7 @@
 
 ---
 
-<!-- fc id:T-51-075 sha:0d57eba9 src:manual/51-payannya.md:151 klas:F -->
+<!-- fc id:T-51-075 sha:0d57eba9 src:manual/51-payannya.md:151 klas:E -->
 ### T-51-075 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -984,7 +984,7 @@
 
 ---
 
-<!-- fc id:T-51-076 sha:042ce29b src:manual/51-payannya.md:151 klas:F -->
+<!-- fc id:T-51-076 sha:042ce29b src:manual/51-payannya.md:151 klas:E -->
 ### T-51-076 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -997,7 +997,7 @@
 
 ---
 
-<!-- fc id:T-51-077 sha:67717e8e src:manual/51-payannya.md:155 klas:F -->
+<!-- fc id:T-51-077 sha:67717e8e src:manual/51-payannya.md:155 klas:E -->
 ### T-51-077 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -1010,7 +1010,7 @@
 
 ---
 
-<!-- fc id:T-51-078 sha:66f2828d src:manual/51-payannya.md:159 klas:F -->
+<!-- fc id:T-51-078 sha:66f2828d src:manual/51-payannya.md:159 klas:E -->
 ### T-51-078 · proza · рядок 159
 
 **Книга каже, дослівно:**
@@ -1023,7 +1023,7 @@
 
 ---
 
-<!-- fc id:T-51-079 sha:817f6342 src:manual/51-payannya.md:162 klas:F -->
+<!-- fc id:T-51-079 sha:817f6342 src:manual/51-payannya.md:162 klas:E -->
 ### T-51-079 · proza · рядок 162
 
 **Книга каже, дослівно:**
@@ -1036,7 +1036,7 @@
 
 ---
 
-<!-- fc id:T-51-080 sha:70aa433e src:manual/51-payannya.md:164 klas:F -->
+<!-- fc id:T-51-080 sha:70aa433e src:manual/51-payannya.md:164 klas:E -->
 ### T-51-080 · proza · рядок 164
 
 **Книга каже, дослівно:**
@@ -1049,7 +1049,7 @@
 
 ---
 
-<!-- fc id:T-51-081 sha:fb12e78e src:manual/51-payannya.md:166 klas:F -->
+<!-- fc id:T-51-081 sha:fb12e78e src:manual/51-payannya.md:166 klas:E -->
 ### T-51-081 · proza · рядок 166
 
 **Книга каже, дослівно:**
@@ -1062,7 +1062,7 @@
 
 ---
 
-<!-- fc id:T-51-082 sha:d785db07 src:manual/51-payannya.md:168 klas:F -->
+<!-- fc id:T-51-082 sha:d785db07 src:manual/51-payannya.md:168 klas:E -->
 ### T-51-082 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -1075,7 +1075,7 @@
 
 ---
 
-<!-- fc id:T-51-083 sha:07ceb369 src:manual/51-payannya.md:172 klas:F -->
+<!-- fc id:T-51-083 sha:07ceb369 src:manual/51-payannya.md:172 klas:E -->
 ### T-51-083 · proza · рядок 172
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-G-001 sha:d1b49281 src:dodatky/g-glosariy.md:3 klas:F -->
+<!-- fc id:T-G-001 sha:d1b49281 src:dodatky/g-glosariy.md:3 klas:E -->
 ### T-G-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-G-003 sha:9765df77 src:dodatky/g-glosariy.md:9 klas:F -->
+<!-- fc id:T-G-003 sha:9765df77 src:dodatky/g-glosariy.md:9 klas:E -->
 ### T-G-003 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -2230,7 +2230,7 @@
 
 ---
 
-<!-- fc id:T-G-170 sha:47e553c0 src:dodatky/g-glosariy.md:207 klas:F -->
+<!-- fc id:T-G-170 sha:47e553c0 src:dodatky/g-glosariy.md:207 klas:E -->
 ### T-G-170 · proza · рядок 207
 
 **Книга каже, дослівно:**
@@ -2256,7 +2256,7 @@
 
 ---
 
-<!-- fc id:T-G-172 sha:572ed4c7 src:dodatky/g-glosariy.md:213 klas:F -->
+<!-- fc id:T-G-172 sha:572ed4c7 src:dodatky/g-glosariy.md:213 klas:E -->
 ### T-G-172 · proza · рядок 213
 
 **Книга каже, дослівно:**
@@ -2305,7 +2305,7 @@
 
 ---
 
-<!-- fc id:T-G-175 sha:57e2644a src:dodatky/g-glosariy.md:216 klas:F -->
+<!-- fc id:T-G-175 sha:57e2644a src:dodatky/g-glosariy.md:216 klas:E -->
 ### T-G-175 · proza · рядок 216
 
 **Книга каже, дослівно:**

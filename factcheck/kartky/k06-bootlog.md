@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K06-002 sha:82c2748d src:kartky/k06-bootlog.md:3 klas:F -->
+<!-- fc id:T-K06-002 sha:82c2748d src:kartky/k06-bootlog.md:3 klas:E -->
 ### T-K06-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-K06-006 sha:545fffe2 src:kartky/k06-bootlog.md:12 klas:F -->
+<!-- fc id:T-K06-006 sha:545fffe2 src:kartky/k06-bootlog.md:12 klas:E -->
 ### T-K06-006 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -572,7 +572,7 @@
 
 ---
 
-<!-- fc id:T-K06-030 sha:b25bdbfb src:kartky/k06-bootlog.md:39 klas:F -->
+<!-- fc id:T-K06-030 sha:b25bdbfb src:kartky/k06-bootlog.md:39 klas:E -->
 ### T-K06-030 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -585,7 +585,7 @@
 
 ---
 
-<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:39 klas:F -->
+<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:39 klas:E -->
 ### T-K06-031 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -630,7 +630,7 @@
 
 ---
 
-<!-- fc id:T-K06-033 sha:f0278c3a src:kartky/k06-bootlog.md:53 klas:F -->
+<!-- fc id:T-K06-033 sha:f0278c3a src:kartky/k06-bootlog.md:53 klas:E -->
 ### T-K06-033 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -643,7 +643,7 @@
 
 ---
 
-<!-- fc id:T-K06-034 sha:e6a1f09c src:kartky/k06-bootlog.md:53 klas:F -->
+<!-- fc id:T-K06-034 sha:e6a1f09c src:kartky/k06-bootlog.md:53 klas:E -->
 ### T-K06-034 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -656,7 +656,7 @@
 
 ---
 
-<!-- fc id:T-K06-035 sha:0ebdcddf src:kartky/k06-bootlog.md:58 klas:F -->
+<!-- fc id:T-K06-035 sha:0ebdcddf src:kartky/k06-bootlog.md:58 klas:E -->
 ### T-K06-035 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -669,7 +669,7 @@
 
 ---
 
-<!-- fc id:T-K06-036 sha:f043d2b4 src:kartky/k06-bootlog.md:58 klas:F -->
+<!-- fc id:T-K06-036 sha:f043d2b4 src:kartky/k06-bootlog.md:58 klas:E -->
 ### T-K06-036 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -784,7 +784,7 @@
 
 ---
 
-<!-- fc id:T-K06-044 sha:ae375117 src:kartky/k06-bootlog.md:72 klas:F -->
+<!-- fc id:T-K06-044 sha:ae375117 src:kartky/k06-bootlog.md:72 klas:E -->
 ### T-K06-044 · proza · рядок 72
 
 **Книга каже, дослівно:**

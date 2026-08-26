@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-28-001 sha:93ad80c9 src:manual/28-analizator.md:3 klas:F -->
+<!-- fc id:T-28-001 sha:93ad80c9 src:manual/28-analizator.md:3 klas:E -->
 ### T-28-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-28-002 sha:0e346129 src:manual/28-analizator.md:3 klas:F -->
+<!-- fc id:T-28-002 sha:0e346129 src:manual/28-analizator.md:3 klas:E -->
 ### T-28-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-28-003 sha:1733a810 src:manual/28-analizator.md:8 klas:F -->
+<!-- fc id:T-28-003 sha:1733a810 src:manual/28-analizator.md:8 klas:E -->
 ### T-28-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-28-011 sha:e84a0f56 src:manual/28-analizator.md:18 klas:F -->
+<!-- fc id:T-28-011 sha:e84a0f56 src:manual/28-analizator.md:18 klas:E -->
 ### T-28-011 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-28-012 sha:ec49cd0b src:manual/28-analizator.md:18 klas:F -->
+<!-- fc id:T-28-012 sha:ec49cd0b src:manual/28-analizator.md:18 klas:E -->
 ### T-28-012 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-28-013 sha:4bee51a0 src:manual/28-analizator.md:23 klas:F -->
+<!-- fc id:T-28-013 sha:4bee51a0 src:manual/28-analizator.md:23 klas:E -->
 ### T-28-013 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-28-016 sha:3f2c927c src:manual/28-analizator.md:27 klas:F -->
+<!-- fc id:T-28-016 sha:3f2c927c src:manual/28-analizator.md:27 klas:E -->
 ### T-28-016 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-28-018 sha:86218d2b src:manual/28-analizator.md:27 klas:F -->
+<!-- fc id:T-28-018 sha:86218d2b src:manual/28-analizator.md:27 klas:E -->
 ### T-28-018 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-28-020 sha:f0c8ae5e src:manual/28-analizator.md:31 klas:F -->
+<!-- fc id:T-28-020 sha:f0c8ae5e src:manual/28-analizator.md:31 klas:E -->
 ### T-28-020 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-28-021 sha:753aca12 src:manual/28-analizator.md:35 klas:F -->
+<!-- fc id:T-28-021 sha:753aca12 src:manual/28-analizator.md:35 klas:E -->
 ### T-28-021 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-28-022 sha:55af010e src:manual/28-analizator.md:35 klas:F -->
+<!-- fc id:T-28-022 sha:55af010e src:manual/28-analizator.md:35 klas:E -->
 ### T-28-022 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-28-023 sha:ef2bec82 src:manual/28-analizator.md:39 klas:F -->
+<!-- fc id:T-28-023 sha:ef2bec82 src:manual/28-analizator.md:39 klas:E -->
 ### T-28-023 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-28-025 sha:9837b888 src:manual/28-analizator.md:39 klas:F -->
+<!-- fc id:T-28-025 sha:9837b888 src:manual/28-analizator.md:39 klas:E -->
 ### T-28-025 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-28-026 sha:030eadbf src:manual/28-analizator.md:39 klas:F -->
+<!-- fc id:T-28-026 sha:030eadbf src:manual/28-analizator.md:39 klas:E -->
 ### T-28-026 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-28-027 sha:ee91b24b src:manual/28-analizator.md:47 klas:F -->
+<!-- fc id:T-28-027 sha:ee91b24b src:manual/28-analizator.md:47 klas:E -->
 ### T-28-027 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-28-029 sha:9c819e40 src:manual/28-analizator.md:51 klas:F -->
+<!-- fc id:T-28-029 sha:9c819e40 src:manual/28-analizator.md:51 klas:E -->
 ### T-28-029 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -383,7 +383,7 @@
 
 ---
 
-<!-- fc id:T-28-030 sha:556ede47 src:manual/28-analizator.md:51 klas:F -->
+<!-- fc id:T-28-030 sha:556ede47 src:manual/28-analizator.md:51 klas:E -->
 ### T-28-030 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -396,7 +396,7 @@
 
 ---
 
-<!-- fc id:T-28-031 sha:732f013d src:manual/28-analizator.md:54 klas:F -->
+<!-- fc id:T-28-031 sha:732f013d src:manual/28-analizator.md:54 klas:E -->
 ### T-28-031 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -409,7 +409,7 @@
 
 ---
 
-<!-- fc id:T-28-032 sha:0eded61d src:manual/28-analizator.md:54 klas:F -->
+<!-- fc id:T-28-032 sha:0eded61d src:manual/28-analizator.md:54 klas:E -->
 ### T-28-032 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -435,7 +435,7 @@
 
 ---
 
-<!-- fc id:T-28-034 sha:c5c38c8f src:manual/28-analizator.md:60 klas:F -->
+<!-- fc id:T-28-034 sha:c5c38c8f src:manual/28-analizator.md:60 klas:E -->
 ### T-28-034 · proza · рядок 60
 
 **Книга каже, дослівно:**
@@ -448,7 +448,7 @@
 
 ---
 
-<!-- fc id:T-28-035 sha:10070f20 src:manual/28-analizator.md:63 klas:F -->
+<!-- fc id:T-28-035 sha:10070f20 src:manual/28-analizator.md:63 klas:E -->
 ### T-28-035 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -552,7 +552,7 @@
 
 ---
 
-<!-- fc id:T-28-043 sha:5e8348e4 src:manual/28-analizator.md:74 klas:F -->
+<!-- fc id:T-28-043 sha:5e8348e4 src:manual/28-analizator.md:74 klas:E -->
 ### T-28-043 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -565,7 +565,7 @@
 
 ---
 
-<!-- fc id:T-28-044 sha:8422558d src:manual/28-analizator.md:74 klas:F -->
+<!-- fc id:T-28-044 sha:8422558d src:manual/28-analizator.md:74 klas:E -->
 ### T-28-044 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -578,7 +578,7 @@
 
 ---
 
-<!-- fc id:T-28-045 sha:40e4f1aa src:manual/28-analizator.md:79 klas:F -->
+<!-- fc id:T-28-045 sha:40e4f1aa src:manual/28-analizator.md:79 klas:E -->
 ### T-28-045 · proza · рядок 79
 
 **Книга каже, дослівно:**
@@ -630,7 +630,7 @@
 
 ---
 
-<!-- fc id:T-28-049 sha:0d68b935 src:manual/28-analizator.md:89 klas:F -->
+<!-- fc id:T-28-049 sha:0d68b935 src:manual/28-analizator.md:89 klas:E -->
 ### T-28-049 · proza · рядок 89
 
 **Книга каже, дослівно:**
@@ -669,7 +669,7 @@
 
 ---
 
-<!-- fc id:T-28-052 sha:794f82f0 src:manual/28-analizator.md:97 klas:F -->
+<!-- fc id:T-28-052 sha:794f82f0 src:manual/28-analizator.md:97 klas:E -->
 ### T-28-052 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -682,7 +682,7 @@
 
 ---
 
-<!-- fc id:T-28-053 sha:41b94091 src:manual/28-analizator.md:97 klas:F -->
+<!-- fc id:T-28-053 sha:41b94091 src:manual/28-analizator.md:97 klas:E -->
 ### T-28-053 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -695,7 +695,7 @@
 
 ---
 
-<!-- fc id:T-28-054 sha:d849ea17 src:manual/28-analizator.md:100 klas:F -->
+<!-- fc id:T-28-054 sha:d849ea17 src:manual/28-analizator.md:100 klas:E -->
 ### T-28-054 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -725,7 +725,7 @@
 
 ---
 
-<!-- fc id:T-28-056 sha:360766bc src:manual/28-analizator.md:111 klas:F -->
+<!-- fc id:T-28-056 sha:360766bc src:manual/28-analizator.md:111 klas:E -->
 ### T-28-056 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -738,7 +738,7 @@
 
 ---
 
-<!-- fc id:T-28-057 sha:2f170fd1 src:manual/28-analizator.md:111 klas:F -->
+<!-- fc id:T-28-057 sha:2f170fd1 src:manual/28-analizator.md:111 klas:E -->
 ### T-28-057 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -751,7 +751,7 @@
 
 ---
 
-<!-- fc id:T-28-058 sha:1edfadda src:manual/28-analizator.md:111 klas:F -->
+<!-- fc id:T-28-058 sha:1edfadda src:manual/28-analizator.md:111 klas:E -->
 ### T-28-058 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -764,7 +764,7 @@
 
 ---
 
-<!-- fc id:T-28-059 sha:64c34fff src:manual/28-analizator.md:116 klas:F -->
+<!-- fc id:T-28-059 sha:64c34fff src:manual/28-analizator.md:116 klas:E -->
 ### T-28-059 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -777,7 +777,7 @@
 
 ---
 
-<!-- fc id:T-28-060 sha:58bfd5e4 src:manual/28-analizator.md:122 klas:F -->
+<!-- fc id:T-28-060 sha:58bfd5e4 src:manual/28-analizator.md:122 klas:E -->
 ### T-28-060 · proza · рядок 122
 
 **Книга каже, дослівно:**
@@ -855,7 +855,7 @@
 
 ---
 
-<!-- fc id:T-28-066 sha:92935c28 src:manual/28-analizator.md:124 klas:F -->
+<!-- fc id:T-28-066 sha:92935c28 src:manual/28-analizator.md:124 klas:E -->
 ### T-28-066 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -881,7 +881,7 @@
 
 ---
 
-<!-- fc id:T-28-068 sha:c433f764 src:manual/28-analizator.md:131 klas:F -->
+<!-- fc id:T-28-068 sha:c433f764 src:manual/28-analizator.md:131 klas:E -->
 ### T-28-068 · proza · рядок 131
 
 **Книга каже, дослівно:**
@@ -894,7 +894,7 @@
 
 ---
 
-<!-- fc id:T-28-069 sha:b7dfdf72 src:manual/28-analizator.md:136 klas:F -->
+<!-- fc id:T-28-069 sha:b7dfdf72 src:manual/28-analizator.md:136 klas:E -->
 ### T-28-069 · proza · рядок 136
 
 **Книга каже, дослівно:**
@@ -933,7 +933,7 @@
 
 ---
 
-<!-- fc id:T-28-072 sha:0d498c62 src:manual/28-analizator.md:139 klas:F -->
+<!-- fc id:T-28-072 sha:0d498c62 src:manual/28-analizator.md:139 klas:E -->
 ### T-28-072 · proza · рядок 139
 
 **Книга каже, дослівно:**
@@ -959,7 +959,7 @@
 
 ---
 
-<!-- fc id:T-28-074 sha:fa76bea4 src:manual/28-analizator.md:143 klas:F -->
+<!-- fc id:T-28-074 sha:fa76bea4 src:manual/28-analizator.md:143 klas:E -->
 ### T-28-074 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -972,7 +972,7 @@
 
 ---
 
-<!-- fc id:T-28-075 sha:92330b8e src:manual/28-analizator.md:146 klas:F -->
+<!-- fc id:T-28-075 sha:92330b8e src:manual/28-analizator.md:146 klas:E -->
 ### T-28-075 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -985,7 +985,7 @@
 
 ---
 
-<!-- fc id:T-28-076 sha:59fba2af src:manual/28-analizator.md:149 klas:F -->
+<!-- fc id:T-28-076 sha:59fba2af src:manual/28-analizator.md:149 klas:E -->
 ### T-28-076 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -998,7 +998,7 @@
 
 ---
 
-<!-- fc id:T-28-077 sha:5837ce0a src:manual/28-analizator.md:149 klas:F -->
+<!-- fc id:T-28-077 sha:5837ce0a src:manual/28-analizator.md:149 klas:E -->
 ### T-28-077 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -1011,7 +1011,7 @@
 
 ---
 
-<!-- fc id:T-28-078 sha:e3659d7b src:manual/28-analizator.md:155 klas:F -->
+<!-- fc id:T-28-078 sha:e3659d7b src:manual/28-analizator.md:155 klas:E -->
 ### T-28-078 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -1024,7 +1024,7 @@
 
 ---
 
-<!-- fc id:T-28-079 sha:1890a47c src:manual/28-analizator.md:155 klas:F -->
+<!-- fc id:T-28-079 sha:1890a47c src:manual/28-analizator.md:155 klas:E -->
 ### T-28-079 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -1037,7 +1037,7 @@
 
 ---
 
-<!-- fc id:T-28-080 sha:b5b49cf6 src:manual/28-analizator.md:158 klas:F -->
+<!-- fc id:T-28-080 sha:b5b49cf6 src:manual/28-analizator.md:158 klas:E -->
 ### T-28-080 · proza · рядок 158
 
 **Книга каже, дослівно:**
@@ -1050,7 +1050,7 @@
 
 ---
 
-<!-- fc id:T-28-081 sha:fb070e04 src:manual/28-analizator.md:158 klas:F -->
+<!-- fc id:T-28-081 sha:fb070e04 src:manual/28-analizator.md:158 klas:E -->
 ### T-28-081 · proza · рядок 158
 
 **Книга каже, дослівно:**
@@ -1063,7 +1063,7 @@
 
 ---
 
-<!-- fc id:T-28-082 sha:1dc84078 src:manual/28-analizator.md:162 klas:F -->
+<!-- fc id:T-28-082 sha:1dc84078 src:manual/28-analizator.md:162 klas:E -->
 ### T-28-082 · proza · рядок 162
 
 **Книга каже, дослівно:**
@@ -1076,7 +1076,7 @@
 
 ---
 
-<!-- fc id:T-28-083 sha:8f265272 src:manual/28-analizator.md:165 klas:F -->
+<!-- fc id:T-28-083 sha:8f265272 src:manual/28-analizator.md:165 klas:E -->
 ### T-28-083 · proza · рядок 165
 
 **Книга каже, дослівно:**

@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-UA--003 sha:b67e9cde src:inserts/ua-market-2026-08.md:9 klas:F -->
+<!-- fc id:T-UA--003 sha:b67e9cde src:inserts/ua-market-2026-08.md:9 klas:E -->
 ### T-UA--003 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-UA--004 sha:a6ef9ad1 src:inserts/ua-market-2026-08.md:9 klas:F -->
+<!-- fc id:T-UA--004 sha:a6ef9ad1 src:inserts/ua-market-2026-08.md:9 klas:E -->
 ### T-UA--004 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-UA--005 sha:3788bf3b src:inserts/ua-market-2026-08.md:13 klas:F -->
+<!-- fc id:T-UA--005 sha:3788bf3b src:inserts/ua-market-2026-08.md:13 klas:E -->
 ### T-UA--005 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-UA--006 sha:64a8baef src:inserts/ua-market-2026-08.md:20 klas:F -->
+<!-- fc id:T-UA--006 sha:64a8baef src:inserts/ua-market-2026-08.md:20 klas:E -->
 ### T-UA--006 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-UA--007 sha:14c55fa6 src:inserts/ua-market-2026-08.md:20 klas:F -->
+<!-- fc id:T-UA--007 sha:14c55fa6 src:inserts/ua-market-2026-08.md:20 klas:E -->
 ### T-UA--007 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-UA--008 sha:f8397932 src:inserts/ua-market-2026-08.md:23 klas:F -->
+<!-- fc id:T-UA--008 sha:f8397932 src:inserts/ua-market-2026-08.md:23 klas:E -->
 ### T-UA--008 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-UA--009 sha:a7a7cd04 src:inserts/ua-market-2026-08.md:23 klas:F -->
+<!-- fc id:T-UA--009 sha:a7a7cd04 src:inserts/ua-market-2026-08.md:23 klas:E -->
 ### T-UA--009 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-UA--010 sha:f6a5dd4b src:inserts/ua-market-2026-08.md:26 klas:F -->
+<!-- fc id:T-UA--010 sha:f6a5dd4b src:inserts/ua-market-2026-08.md:26 klas:E -->
 ### T-UA--010 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-UA--011 sha:19d7c10a src:inserts/ua-market-2026-08.md:26 klas:F -->
+<!-- fc id:T-UA--011 sha:19d7c10a src:inserts/ua-market-2026-08.md:26 klas:E -->
 ### T-UA--011 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-UA--012 sha:1030d1d5 src:inserts/ua-market-2026-08.md:29 klas:F -->
+<!-- fc id:T-UA--012 sha:1030d1d5 src:inserts/ua-market-2026-08.md:29 klas:E -->
 ### T-UA--012 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-UA--013 sha:4db1369a src:inserts/ua-market-2026-08.md:35 klas:F -->
+<!-- fc id:T-UA--013 sha:4db1369a src:inserts/ua-market-2026-08.md:35 klas:E -->
 ### T-UA--013 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-UA--016 sha:e46bfa0f src:inserts/ua-market-2026-08.md:42 klas:F -->
+<!-- fc id:T-UA--016 sha:e46bfa0f src:inserts/ua-market-2026-08.md:42 klas:E -->
 ### T-UA--016 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-UA--017 sha:cfc9a295 src:inserts/ua-market-2026-08.md:44 klas:F -->
+<!-- fc id:T-UA--017 sha:cfc9a295 src:inserts/ua-market-2026-08.md:44 klas:E -->
 ### T-UA--017 · proza · рядок 44
 
 **Книга каже, дослівно:**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-UA--031 sha:c706887e src:inserts/ua-market-2026-08.md:70 klas:F -->
+<!-- fc id:T-UA--031 sha:c706887e src:inserts/ua-market-2026-08.md:70 klas:E -->
 ### T-UA--031 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -503,7 +503,7 @@
 
 ---
 
-<!-- fc id:T-UA--033 sha:6dd417b9 src:inserts/ua-market-2026-08.md:77 klas:F -->
+<!-- fc id:T-UA--033 sha:6dd417b9 src:inserts/ua-market-2026-08.md:77 klas:E -->
 ### T-UA--033 · proza · рядок 77
 
 **Книга каже, дослівно:**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-UA--034 sha:9b8eb581 src:inserts/ua-market-2026-08.md:77 klas:F -->
+<!-- fc id:T-UA--034 sha:9b8eb581 src:inserts/ua-market-2026-08.md:77 klas:E -->
 ### T-UA--034 · proza · рядок 77
 
 **Книга каже, дослівно:**
@@ -529,7 +529,7 @@
 
 ---
 
-<!-- fc id:T-UA--035 sha:512b4a1a src:inserts/ua-market-2026-08.md:80 klas:F -->
+<!-- fc id:T-UA--035 sha:512b4a1a src:inserts/ua-market-2026-08.md:80 klas:E -->
 ### T-UA--035 · proza · рядок 80
 
 **Книга каже, дослівно:**
@@ -542,7 +542,7 @@
 
 ---
 
-<!-- fc id:T-UA--036 sha:de674e32 src:inserts/ua-market-2026-08.md:80 klas:F -->
+<!-- fc id:T-UA--036 sha:de674e32 src:inserts/ua-market-2026-08.md:80 klas:E -->
 ### T-UA--036 · proza · рядок 80
 
 **Книга каже, дослівно:**
@@ -555,7 +555,7 @@
 
 ---
 
-<!-- fc id:T-UA--037 sha:61c6ef6c src:inserts/ua-market-2026-08.md:86 klas:F -->
+<!-- fc id:T-UA--037 sha:61c6ef6c src:inserts/ua-market-2026-08.md:86 klas:E -->
 ### T-UA--037 · proza · рядок 86
 
 **Книга каже, дослівно:**

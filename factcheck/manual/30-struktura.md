@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-30-002 sha:4be46a6c src:manual/30-struktura.md:3 klas:F -->
+<!-- fc id:T-30-002 sha:4be46a6c src:manual/30-struktura.md:3 klas:E -->
 ### T-30-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-30-005 sha:a2b4ff96 src:manual/30-struktura.md:14 klas:F -->
+<!-- fc id:T-30-005 sha:a2b4ff96 src:manual/30-struktura.md:14 klas:E -->
 ### T-30-005 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -139,7 +139,7 @@
 
 ---
 
-<!-- fc id:T-30-010 sha:86755f61 src:manual/30-struktura.md:26 klas:F -->
+<!-- fc id:T-30-010 sha:86755f61 src:manual/30-struktura.md:26 klas:E -->
 ### T-30-010 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -278,7 +278,7 @@
 
 ---
 
-<!-- fc id:T-30-017 sha:ac26dc25 src:manual/30-struktura.md:46 klas:F -->
+<!-- fc id:T-30-017 sha:ac26dc25 src:manual/30-struktura.md:46 klas:E -->
 ### T-30-017 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -291,7 +291,7 @@
 
 ---
 
-<!-- fc id:T-30-018 sha:bf09e3f0 src:manual/30-struktura.md:49 klas:F -->
+<!-- fc id:T-30-018 sha:bf09e3f0 src:manual/30-struktura.md:49 klas:E -->
 ### T-30-018 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-30-019 sha:130d7820 src:manual/30-struktura.md:49 klas:F -->
+<!-- fc id:T-30-019 sha:130d7820 src:manual/30-struktura.md:49 klas:E -->
 ### T-30-019 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -317,7 +317,7 @@
 
 ---
 
-<!-- fc id:T-30-020 sha:1f3c5167 src:manual/30-struktura.md:49 klas:F -->
+<!-- fc id:T-30-020 sha:1f3c5167 src:manual/30-struktura.md:49 klas:E -->
 ### T-30-020 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -343,7 +343,7 @@
 
 ---
 
-<!-- fc id:T-30-022 sha:68e21b65 src:manual/30-struktura.md:52 klas:F -->
+<!-- fc id:T-30-022 sha:68e21b65 src:manual/30-struktura.md:52 klas:E -->
 ### T-30-022 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -356,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-30-023 sha:c6d7d762 src:manual/30-struktura.md:57 klas:F -->
+<!-- fc id:T-30-023 sha:c6d7d762 src:manual/30-struktura.md:57 klas:E -->
 ### T-30-023 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -418,7 +418,7 @@
 
 ---
 
-<!-- fc id:T-30-026 sha:f7a5daed src:manual/30-struktura.md:66 klas:F -->
+<!-- fc id:T-30-026 sha:f7a5daed src:manual/30-struktura.md:66 klas:E -->
 ### T-30-026 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -431,7 +431,7 @@
 
 ---
 
-<!-- fc id:T-30-027 sha:86458de5 src:manual/30-struktura.md:66 klas:F -->
+<!-- fc id:T-30-027 sha:86458de5 src:manual/30-struktura.md:66 klas:E -->
 ### T-30-027 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -487,7 +487,7 @@
 
 ---
 
-<!-- fc id:T-30-029 sha:578a495b src:manual/30-struktura.md:71 klas:F -->
+<!-- fc id:T-30-029 sha:578a495b src:manual/30-struktura.md:71 klas:E -->
 ### T-30-029 · proza · рядок 71
 
 **Книга каже, дослівно:**
@@ -500,7 +500,7 @@
 
 ---
 
-<!-- fc id:T-30-030 sha:62f76bc8 src:manual/30-struktura.md:75 klas:F -->
+<!-- fc id:T-30-030 sha:62f76bc8 src:manual/30-struktura.md:75 klas:E -->
 ### T-30-030 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -578,7 +578,7 @@
 
 ---
 
-<!-- fc id:T-30-035 sha:e1760d27 src:manual/30-struktura.md:95 klas:F -->
+<!-- fc id:T-30-035 sha:e1760d27 src:manual/30-struktura.md:95 klas:E -->
 ### T-30-035 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -591,7 +591,7 @@
 
 ---
 
-<!-- fc id:T-30-036 sha:d865d284 src:manual/30-struktura.md:95 klas:F -->
+<!-- fc id:T-30-036 sha:d865d284 src:manual/30-struktura.md:95 klas:E -->
 ### T-30-036 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -633,7 +633,7 @@
 
 ---
 
-<!-- fc id:T-30-038 sha:6be9a1e8 src:manual/30-struktura.md:104 klas:F -->
+<!-- fc id:T-30-038 sha:6be9a1e8 src:manual/30-struktura.md:104 klas:E -->
 ### T-30-038 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-30-039 sha:b404ec41 src:manual/30-struktura.md:104 klas:F -->
+<!-- fc id:T-30-039 sha:b404ec41 src:manual/30-struktura.md:104 klas:E -->
 ### T-30-039 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -685,7 +685,7 @@
 
 ---
 
-<!-- fc id:T-30-042 sha:5de8b7f1 src:manual/30-struktura.md:115 klas:F -->
+<!-- fc id:T-30-042 sha:5de8b7f1 src:manual/30-struktura.md:115 klas:E -->
 ### T-30-042 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -698,7 +698,7 @@
 
 ---
 
-<!-- fc id:T-30-043 sha:498cc7fb src:manual/30-struktura.md:115 klas:F -->
+<!-- fc id:T-30-043 sha:498cc7fb src:manual/30-struktura.md:115 klas:E -->
 ### T-30-043 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -711,7 +711,7 @@
 
 ---
 
-<!-- fc id:T-30-044 sha:4378dd7f src:manual/30-struktura.md:120 klas:F -->
+<!-- fc id:T-30-044 sha:4378dd7f src:manual/30-struktura.md:120 klas:E -->
 ### T-30-044 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -724,7 +724,7 @@
 
 ---
 
-<!-- fc id:T-30-045 sha:dec60fd7 src:manual/30-struktura.md:123 klas:F -->
+<!-- fc id:T-30-045 sha:dec60fd7 src:manual/30-struktura.md:123 klas:E -->
 ### T-30-045 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -737,7 +737,7 @@
 
 ---
 
-<!-- fc id:T-30-046 sha:4bb61c41 src:manual/30-struktura.md:123 klas:F -->
+<!-- fc id:T-30-046 sha:4bb61c41 src:manual/30-struktura.md:123 klas:E -->
 ### T-30-046 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -763,7 +763,7 @@
 
 ---
 
-<!-- fc id:T-30-048 sha:d09dab4a src:manual/30-struktura.md:129 klas:F -->
+<!-- fc id:T-30-048 sha:d09dab4a src:manual/30-struktura.md:129 klas:E -->
 ### T-30-048 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -834,7 +834,7 @@
 
 ---
 
-<!-- fc id:T-30-052 sha:6c89b51c src:manual/30-struktura.md:143 klas:F -->
+<!-- fc id:T-30-052 sha:6c89b51c src:manual/30-struktura.md:143 klas:E -->
 ### T-30-052 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -938,7 +938,7 @@
 
 ---
 
-<!-- fc id:T-30-056 sha:cc69ac87 src:manual/30-struktura.md:151 klas:F -->
+<!-- fc id:T-30-056 sha:cc69ac87 src:manual/30-struktura.md:151 klas:E -->
 ### T-30-056 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -1039,7 +1039,7 @@
 
 ---
 
-<!-- fc id:T-30-061 sha:2c139180 src:manual/30-struktura.md:168 klas:F -->
+<!-- fc id:T-30-061 sha:2c139180 src:manual/30-struktura.md:168 klas:E -->
 ### T-30-061 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -1052,7 +1052,7 @@
 
 ---
 
-<!-- fc id:T-30-062 sha:283e1395 src:manual/30-struktura.md:168 klas:F -->
+<!-- fc id:T-30-062 sha:283e1395 src:manual/30-struktura.md:168 klas:D -->
 ### T-30-062 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -1061,11 +1061,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
 
 ---
 
-<!-- fc id:T-30-063 sha:a8346dff src:manual/30-struktura.md:172 klas:F -->
+<!-- fc id:T-30-063 sha:a8346dff src:manual/30-struktura.md:172 klas:E -->
 ### T-30-063 · proza · рядок 172
 
 **Книга каже, дослівно:**
@@ -1116,7 +1129,7 @@
 
 ---
 
-<!-- fc id:T-30-066 sha:274d7cce src:manual/30-struktura.md:182 klas:F -->
+<!-- fc id:T-30-066 sha:274d7cce src:manual/30-struktura.md:182 klas:E -->
 ### T-30-066 · proza · рядок 182
 
 **Книга каже, дослівно:**
@@ -1165,7 +1178,7 @@
 
 ---
 
-<!-- fc id:T-30-069 sha:53abed90 src:manual/30-struktura.md:188 klas:F -->
+<!-- fc id:T-30-069 sha:53abed90 src:manual/30-struktura.md:188 klas:E -->
 ### T-30-069 · proza · рядок 188
 
 **Книга каже, дослівно:**
@@ -1191,7 +1204,7 @@
 
 ---
 
-<!-- fc id:T-30-071 sha:30161603 src:manual/30-struktura.md:192 klas:F -->
+<!-- fc id:T-30-071 sha:30161603 src:manual/30-struktura.md:192 klas:E -->
 ### T-30-071 · proza · рядок 192
 
 **Книга каже, дослівно:**
@@ -1221,7 +1234,7 @@
 
 ---
 
-<!-- fc id:T-30-073 sha:f8388e6b src:manual/30-struktura.md:201 klas:F -->
+<!-- fc id:T-30-073 sha:f8388e6b src:manual/30-struktura.md:201 klas:E -->
 ### T-30-073 · proza · рядок 201
 
 **Книга каже, дослівно:**
@@ -1273,7 +1286,7 @@
 
 ---
 
-<!-- fc id:T-30-077 sha:42e5df0c src:manual/30-struktura.md:206 klas:F -->
+<!-- fc id:T-30-077 sha:42e5df0c src:manual/30-struktura.md:206 klas:E -->
 ### T-30-077 · proza · рядок 206
 
 **Книга каже, дослівно:**
@@ -1449,7 +1462,7 @@
 
 ---
 
-<!-- fc id:T-30-085 sha:ccc7ed3c src:manual/30-struktura.md:228 klas:F -->
+<!-- fc id:T-30-085 sha:ccc7ed3c src:manual/30-struktura.md:228 klas:E -->
 ### T-30-085 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -1475,7 +1488,7 @@
 
 ---
 
-<!-- fc id:T-30-087 sha:6d579e42 src:manual/30-struktura.md:236 klas:F -->
+<!-- fc id:T-30-087 sha:6d579e42 src:manual/30-struktura.md:236 klas:E -->
 ### T-30-087 · proza · рядок 236
 
 **Книга каже, дослівно:**
@@ -1488,7 +1501,7 @@
 
 ---
 
-<!-- fc id:T-30-088 sha:d8584f81 src:manual/30-struktura.md:236 klas:F -->
+<!-- fc id:T-30-088 sha:d8584f81 src:manual/30-struktura.md:236 klas:E -->
 ### T-30-088 · proza · рядок 236
 
 **Книга каже, дослівно:**
@@ -1501,7 +1514,7 @@
 
 ---
 
-<!-- fc id:T-30-089 sha:e8ebea85 src:manual/30-struktura.md:239 klas:F -->
+<!-- fc id:T-30-089 sha:e8ebea85 src:manual/30-struktura.md:239 klas:E -->
 ### T-30-089 · proza · рядок 239
 
 **Книга каже, дослівно:**
@@ -1514,7 +1527,7 @@
 
 ---
 
-<!-- fc id:T-30-090 sha:9243b822 src:manual/30-struktura.md:242 klas:F -->
+<!-- fc id:T-30-090 sha:9243b822 src:manual/30-struktura.md:242 klas:E -->
 ### T-30-090 · proza · рядок 242
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K01-001 sha:5df181eb src:kartky/k01-triazh.md:3 klas:F -->
+<!-- fc id:T-K01-001 sha:5df181eb src:kartky/k01-triazh.md:3 klas:E -->
 ### T-K01-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K01-002 sha:eece1e05 src:kartky/k01-triazh.md:3 klas:F -->
+<!-- fc id:T-K01-002 sha:eece1e05 src:kartky/k01-triazh.md:3 klas:E -->
 ### T-K01-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-K01-003 sha:428eb419 src:kartky/k01-triazh.md:3 klas:F -->
+<!-- fc id:T-K01-003 sha:428eb419 src:kartky/k01-triazh.md:3 klas:E -->
 ### T-K01-003 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-K01-004 sha:3a942e6e src:kartky/k01-triazh.md:8 klas:F -->
+<!-- fc id:T-K01-004 sha:3a942e6e src:kartky/k01-triazh.md:8 klas:E -->
 ### T-K01-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-K01-016 sha:735b1c96 src:kartky/k01-triazh.md:18 klas:F -->
+<!-- fc id:T-K01-016 sha:735b1c96 src:kartky/k01-triazh.md:18 klas:E -->
 ### T-K01-016 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-K01-018 sha:12a04661 src:kartky/k01-triazh.md:24 klas:F -->
+<!-- fc id:T-K01-018 sha:12a04661 src:kartky/k01-triazh.md:24 klas:E -->
 ### T-K01-018 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-K01-021 sha:5e734fa8 src:kartky/k01-triazh.md:29 klas:F -->
+<!-- fc id:T-K01-021 sha:5e734fa8 src:kartky/k01-triazh.md:29 klas:E -->
 ### T-K01-021 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-K01-022 sha:648833a9 src:kartky/k01-triazh.md:35 klas:F -->
+<!-- fc id:T-K01-022 sha:648833a9 src:kartky/k01-triazh.md:35 klas:E -->
 ### T-K01-022 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-K01-024 sha:08e99d29 src:kartky/k01-triazh.md:38 klas:F -->
+<!-- fc id:T-K01-024 sha:08e99d29 src:kartky/k01-triazh.md:38 klas:E -->
 ### T-K01-024 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-K01-025 sha:77cc1bbf src:kartky/k01-triazh.md:38 klas:F -->
+<!-- fc id:T-K01-025 sha:77cc1bbf src:kartky/k01-triazh.md:38 klas:E -->
 ### T-K01-025 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-K01-027 sha:68f8ba27 src:kartky/k01-triazh.md:38 klas:F -->
+<!-- fc id:T-K01-027 sha:68f8ba27 src:kartky/k01-triazh.md:38 klas:E -->
 ### T-K01-027 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -357,7 +357,7 @@
 
 ---
 
-<!-- fc id:T-K01-028 sha:36d5b847 src:kartky/k01-triazh.md:38 klas:F -->
+<!-- fc id:T-K01-028 sha:36d5b847 src:kartky/k01-triazh.md:38 klas:E -->
 ### T-K01-028 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -486,7 +486,7 @@
 
 ---
 
-<!-- fc id:T-K01-036 sha:819f6c86 src:kartky/k01-triazh.md:62 klas:F -->
+<!-- fc id:T-K01-036 sha:819f6c86 src:kartky/k01-triazh.md:62 klas:E -->
 ### T-K01-036 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -499,7 +499,7 @@
 
 ---
 
-<!-- fc id:T-K01-037 sha:0ed28b48 src:kartky/k01-triazh.md:62 klas:F -->
+<!-- fc id:T-K01-037 sha:0ed28b48 src:kartky/k01-triazh.md:62 klas:E -->
 ### T-K01-037 · proza · рядок 62
 
 **Книга каже, дослівно:**

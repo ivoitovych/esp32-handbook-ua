@@ -55,7 +55,7 @@
 
 ---
 
-<!-- fc id:T-K07-002 sha:e4f265e4 src:kartky/k07-panika.md:11 klas:F -->
+<!-- fc id:T-K07-002 sha:e4f265e4 src:kartky/k07-panika.md:11 klas:E -->
 ### T-K07-002 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -657,7 +657,7 @@
 
 ---
 
-<!-- fc id:T-K07-021 sha:db4c2e3d src:kartky/k07-panika.md:34 klas:F -->
+<!-- fc id:T-K07-021 sha:db4c2e3d src:kartky/k07-panika.md:34 klas:E -->
 ### T-K07-021 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -670,7 +670,7 @@
 
 ---
 
-<!-- fc id:T-K07-022 sha:ce22291b src:kartky/k07-panika.md:34 klas:F -->
+<!-- fc id:T-K07-022 sha:ce22291b src:kartky/k07-panika.md:34 klas:E -->
 ### T-K07-022 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -750,7 +750,7 @@
 
 ---
 
-<!-- fc id:T-K07-028 sha:691fefcb src:kartky/k07-panika.md:48 klas:F -->
+<!-- fc id:T-K07-028 sha:691fefcb src:kartky/k07-panika.md:48 klas:E -->
 ### T-K07-028 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -815,7 +815,7 @@
 
 ---
 
-<!-- fc id:T-K07-033 sha:0c9a59fb src:kartky/k07-panika.md:57 klas:F -->
+<!-- fc id:T-K07-033 sha:0c9a59fb src:kartky/k07-panika.md:57 klas:E -->
 ### T-K07-033 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -841,7 +841,7 @@
 
 ---
 
-<!-- fc id:T-K07-035 sha:fc205c28 src:kartky/k07-panika.md:64 klas:F -->
+<!-- fc id:T-K07-035 sha:fc205c28 src:kartky/k07-panika.md:64 klas:E -->
 ### T-K07-035 · proza · рядок 64
 
 **Книга каже, дослівно:**
@@ -854,7 +854,7 @@
 
 ---
 
-<!-- fc id:T-K07-036 sha:95c093b4 src:kartky/k07-panika.md:64 klas:F -->
+<!-- fc id:T-K07-036 sha:95c093b4 src:kartky/k07-panika.md:64 klas:E -->
 ### T-K07-036 · proza · рядок 64
 
 **Книга каже, дослівно:**

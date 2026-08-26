@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-10-001 sha:50ff4318 src:manual/10-instrumenty.md:3 klas:F -->
+<!-- fc id:T-10-001 sha:50ff4318 src:manual/10-instrumenty.md:3 klas:E -->
 ### T-10-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-10-003 sha:03107403 src:manual/10-instrumenty.md:7 klas:F -->
+<!-- fc id:T-10-003 sha:03107403 src:manual/10-instrumenty.md:7 klas:E -->
 ### T-10-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-10-004 sha:e3b66309 src:manual/10-instrumenty.md:12 klas:F -->
+<!-- fc id:T-10-004 sha:e3b66309 src:manual/10-instrumenty.md:12 klas:E -->
 ### T-10-004 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-10-005 sha:fbfc443a src:manual/10-instrumenty.md:12 klas:F -->
+<!-- fc id:T-10-005 sha:fbfc443a src:manual/10-instrumenty.md:12 klas:E -->
 ### T-10-005 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-10-006 sha:12833870 src:manual/10-instrumenty.md:12 klas:F -->
+<!-- fc id:T-10-006 sha:12833870 src:manual/10-instrumenty.md:12 klas:E -->
 ### T-10-006 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-10-007 sha:4946bb0b src:manual/10-instrumenty.md:17 klas:F -->
+<!-- fc id:T-10-007 sha:4946bb0b src:manual/10-instrumenty.md:17 klas:E -->
 ### T-10-007 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-10-008 sha:b3a4817e src:manual/10-instrumenty.md:17 klas:F -->
+<!-- fc id:T-10-008 sha:b3a4817e src:manual/10-instrumenty.md:17 klas:E -->
 ### T-10-008 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-10-009 sha:e3157577 src:manual/10-instrumenty.md:17 klas:F -->
+<!-- fc id:T-10-009 sha:e3157577 src:manual/10-instrumenty.md:17 klas:E -->
 ### T-10-009 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-10-010 sha:6e42cfde src:manual/10-instrumenty.md:23 klas:F -->
+<!-- fc id:T-10-010 sha:6e42cfde src:manual/10-instrumenty.md:23 klas:E -->
 ### T-10-010 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-10-011 sha:86c64c99 src:manual/10-instrumenty.md:23 klas:F -->
+<!-- fc id:T-10-011 sha:86c64c99 src:manual/10-instrumenty.md:23 klas:E -->
 ### T-10-011 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -191,7 +191,7 @@
 
 ---
 
-<!-- fc id:T-10-015 sha:349dff6e src:manual/10-instrumenty.md:31 klas:F -->
+<!-- fc id:T-10-015 sha:349dff6e src:manual/10-instrumenty.md:31 klas:E -->
 ### T-10-015 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -204,7 +204,7 @@
 
 ---
 
-<!-- fc id:T-10-016 sha:18c50252 src:manual/10-instrumenty.md:36 klas:F -->
+<!-- fc id:T-10-016 sha:18c50252 src:manual/10-instrumenty.md:36 klas:E -->
 ### T-10-016 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -230,7 +230,7 @@
 
 ---
 
-<!-- fc id:T-10-018 sha:f9d0c52e src:manual/10-instrumenty.md:40 klas:F -->
+<!-- fc id:T-10-018 sha:f9d0c52e src:manual/10-instrumenty.md:40 klas:E -->
 ### T-10-018 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -243,7 +243,7 @@
 
 ---
 
-<!-- fc id:T-10-019 sha:5f3675d9 src:manual/10-instrumenty.md:40 klas:F -->
+<!-- fc id:T-10-019 sha:5f3675d9 src:manual/10-instrumenty.md:40 klas:E -->
 ### T-10-019 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -256,7 +256,7 @@
 
 ---
 
-<!-- fc id:T-10-020 sha:b2c56266 src:manual/10-instrumenty.md:43 klas:F -->
+<!-- fc id:T-10-020 sha:b2c56266 src:manual/10-instrumenty.md:43 klas:E -->
 ### T-10-020 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -321,7 +321,7 @@
 
 ---
 
-<!-- fc id:T-10-025 sha:1c927c1e src:manual/10-instrumenty.md:57 klas:F -->
+<!-- fc id:T-10-025 sha:1c927c1e src:manual/10-instrumenty.md:57 klas:E -->
 ### T-10-025 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -347,7 +347,7 @@
 
 ---
 
-<!-- fc id:T-10-027 sha:86692d8e src:manual/10-instrumenty.md:62 klas:F -->
+<!-- fc id:T-10-027 sha:86692d8e src:manual/10-instrumenty.md:62 klas:E -->
 ### T-10-027 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -360,7 +360,7 @@
 
 ---
 
-<!-- fc id:T-10-028 sha:aae454ae src:manual/10-instrumenty.md:65 klas:F -->
+<!-- fc id:T-10-028 sha:aae454ae src:manual/10-instrumenty.md:65 klas:E -->
 ### T-10-028 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -373,7 +373,7 @@
 
 ---
 
-<!-- fc id:T-10-029 sha:e03c1d55 src:manual/10-instrumenty.md:65 klas:F -->
+<!-- fc id:T-10-029 sha:e03c1d55 src:manual/10-instrumenty.md:65 klas:E -->
 ### T-10-029 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -386,7 +386,7 @@
 
 ---
 
-<!-- fc id:T-10-030 sha:75d0d748 src:manual/10-instrumenty.md:65 klas:F -->
+<!-- fc id:T-10-030 sha:75d0d748 src:manual/10-instrumenty.md:65 klas:E -->
 ### T-10-030 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -399,7 +399,7 @@
 
 ---
 
-<!-- fc id:T-10-031 sha:3f4a995a src:manual/10-instrumenty.md:70 klas:F -->
+<!-- fc id:T-10-031 sha:3f4a995a src:manual/10-instrumenty.md:70 klas:E -->
 ### T-10-031 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -425,7 +425,7 @@
 
 ---
 
-<!-- fc id:T-10-033 sha:4e477844 src:manual/10-instrumenty.md:73 klas:F -->
+<!-- fc id:T-10-033 sha:4e477844 src:manual/10-instrumenty.md:73 klas:E -->
 ### T-10-033 · proza · рядок 73
 
 **Книга каже, дослівно:**
@@ -438,7 +438,7 @@
 
 ---
 
-<!-- fc id:T-10-034 sha:7f0e0e88 src:manual/10-instrumenty.md:73 klas:F -->
+<!-- fc id:T-10-034 sha:7f0e0e88 src:manual/10-instrumenty.md:73 klas:E -->
 ### T-10-034 · proza · рядок 73
 
 **Книга каже, дослівно:**
@@ -451,7 +451,7 @@
 
 ---
 
-<!-- fc id:T-10-035 sha:d6b0c6a5 src:manual/10-instrumenty.md:77 klas:F -->
+<!-- fc id:T-10-035 sha:d6b0c6a5 src:manual/10-instrumenty.md:77 klas:E -->
 ### T-10-035 · proza · рядок 77
 
 **Книга каже, дослівно:**
@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-10-036 sha:b861d8f2 src:manual/10-instrumenty.md:77 klas:F -->
+<!-- fc id:T-10-036 sha:b861d8f2 src:manual/10-instrumenty.md:77 klas:E -->
 ### T-10-036 · proza · рядок 77
 
 **Книга каже, дослівно:**
@@ -490,7 +490,7 @@
 
 ---
 
-<!-- fc id:T-10-038 sha:ef7cea43 src:manual/10-instrumenty.md:81 klas:F -->
+<!-- fc id:T-10-038 sha:ef7cea43 src:manual/10-instrumenty.md:81 klas:E -->
 ### T-10-038 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-10-040 sha:f0735dc4 src:manual/10-instrumenty.md:92 klas:F -->
+<!-- fc id:T-10-040 sha:f0735dc4 src:manual/10-instrumenty.md:92 klas:E -->
 ### T-10-040 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -542,7 +542,7 @@
 
 ---
 
-<!-- fc id:T-10-042 sha:982d97a2 src:manual/10-instrumenty.md:92 klas:F -->
+<!-- fc id:T-10-042 sha:982d97a2 src:manual/10-instrumenty.md:92 klas:E -->
 ### T-10-042 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -555,7 +555,7 @@
 
 ---
 
-<!-- fc id:T-10-043 sha:8b93e2d5 src:manual/10-instrumenty.md:99 klas:F -->
+<!-- fc id:T-10-043 sha:8b93e2d5 src:manual/10-instrumenty.md:99 klas:E -->
 ### T-10-043 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -568,7 +568,7 @@
 
 ---
 
-<!-- fc id:T-10-044 sha:fb6456a9 src:manual/10-instrumenty.md:101 klas:F -->
+<!-- fc id:T-10-044 sha:fb6456a9 src:manual/10-instrumenty.md:101 klas:E -->
 ### T-10-044 · proza · рядок 101
 
 **Книга каже, дослівно:**
@@ -581,7 +581,7 @@
 
 ---
 
-<!-- fc id:T-10-045 sha:31055719 src:manual/10-instrumenty.md:105 klas:F -->
+<!-- fc id:T-10-045 sha:31055719 src:manual/10-instrumenty.md:105 klas:E -->
 ### T-10-045 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -594,7 +594,7 @@
 
 ---
 
-<!-- fc id:T-10-046 sha:48638861 src:manual/10-instrumenty.md:105 klas:F -->
+<!-- fc id:T-10-046 sha:48638861 src:manual/10-instrumenty.md:105 klas:E -->
 ### T-10-046 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-10-047 sha:20c5aaf3 src:manual/10-instrumenty.md:110 klas:F -->
+<!-- fc id:T-10-047 sha:20c5aaf3 src:manual/10-instrumenty.md:110 klas:E -->
 ### T-10-047 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -620,7 +620,7 @@
 
 ---
 
-<!-- fc id:T-10-048 sha:9b298bf8 src:manual/10-instrumenty.md:112 klas:F -->
+<!-- fc id:T-10-048 sha:9b298bf8 src:manual/10-instrumenty.md:112 klas:E -->
 ### T-10-048 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -633,7 +633,7 @@
 
 ---
 
-<!-- fc id:T-10-049 sha:e6672b11 src:manual/10-instrumenty.md:112 klas:F -->
+<!-- fc id:T-10-049 sha:e6672b11 src:manual/10-instrumenty.md:112 klas:E -->
 ### T-10-049 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-10-050 sha:ae1915bb src:manual/10-instrumenty.md:115 klas:F -->
+<!-- fc id:T-10-050 sha:ae1915bb src:manual/10-instrumenty.md:115 klas:E -->
 ### T-10-050 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -672,7 +672,7 @@
 
 ---
 
-<!-- fc id:T-10-052 sha:adad7b48 src:manual/10-instrumenty.md:121 klas:F -->
+<!-- fc id:T-10-052 sha:adad7b48 src:manual/10-instrumenty.md:121 klas:E -->
 ### T-10-052 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -685,7 +685,7 @@
 
 ---
 
-<!-- fc id:T-10-053 sha:b93f827c src:manual/10-instrumenty.md:125 klas:F -->
+<!-- fc id:T-10-053 sha:b93f827c src:manual/10-instrumenty.md:125 klas:E -->
 ### T-10-053 · proza · рядок 125
 
 **Книга каже, дослівно:**
@@ -711,7 +711,7 @@
 
 ---
 
-<!-- fc id:T-10-055 sha:abe1a3bd src:manual/10-instrumenty.md:131 klas:F -->
+<!-- fc id:T-10-055 sha:abe1a3bd src:manual/10-instrumenty.md:131 klas:E -->
 ### T-10-055 · proza · рядок 131
 
 **Книга каже, дослівно:**
@@ -750,7 +750,7 @@
 
 ---
 
-<!-- fc id:T-10-058 sha:281c031d src:manual/10-instrumenty.md:139 klas:F -->
+<!-- fc id:T-10-058 sha:281c031d src:manual/10-instrumenty.md:139 klas:E -->
 ### T-10-058 · proza · рядок 139
 
 **Книга каже, дослівно:**
@@ -776,7 +776,7 @@
 
 ---
 
-<!-- fc id:T-10-060 sha:9a82771a src:manual/10-instrumenty.md:145 klas:F -->
+<!-- fc id:T-10-060 sha:9a82771a src:manual/10-instrumenty.md:145 klas:E -->
 ### T-10-060 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -789,7 +789,7 @@
 
 ---
 
-<!-- fc id:T-10-061 sha:4a0a5c73 src:manual/10-instrumenty.md:145 klas:F -->
+<!-- fc id:T-10-061 sha:4a0a5c73 src:manual/10-instrumenty.md:145 klas:E -->
 ### T-10-061 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -802,7 +802,7 @@
 
 ---
 
-<!-- fc id:T-10-062 sha:b4eb27ba src:manual/10-instrumenty.md:145 klas:F -->
+<!-- fc id:T-10-062 sha:b4eb27ba src:manual/10-instrumenty.md:145 klas:E -->
 ### T-10-062 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -815,7 +815,7 @@
 
 ---
 
-<!-- fc id:T-10-063 sha:7b129f18 src:manual/10-instrumenty.md:154 klas:F -->
+<!-- fc id:T-10-063 sha:7b129f18 src:manual/10-instrumenty.md:154 klas:E -->
 ### T-10-063 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -828,7 +828,7 @@
 
 ---
 
-<!-- fc id:T-10-064 sha:e19e50ef src:manual/10-instrumenty.md:157 klas:F -->
+<!-- fc id:T-10-064 sha:e19e50ef src:manual/10-instrumenty.md:157 klas:E -->
 ### T-10-064 · proza · рядок 157
 
 **Книга каже, дослівно:**
@@ -841,7 +841,7 @@
 
 ---
 
-<!-- fc id:T-10-065 sha:f231d421 src:manual/10-instrumenty.md:160 klas:F -->
+<!-- fc id:T-10-065 sha:f231d421 src:manual/10-instrumenty.md:160 klas:E -->
 ### T-10-065 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -854,7 +854,7 @@
 
 ---
 
-<!-- fc id:T-10-066 sha:d631d2e8 src:manual/10-instrumenty.md:162 klas:F -->
+<!-- fc id:T-10-066 sha:d631d2e8 src:manual/10-instrumenty.md:162 klas:E -->
 ### T-10-066 · proza · рядок 162
 
 **Книга каже, дослівно:**
@@ -867,7 +867,7 @@
 
 ---
 
-<!-- fc id:T-10-067 sha:05146364 src:manual/10-instrumenty.md:164 klas:F -->
+<!-- fc id:T-10-067 sha:05146364 src:manual/10-instrumenty.md:164 klas:E -->
 ### T-10-067 · proza · рядок 164
 
 **Книга каже, дослівно:**

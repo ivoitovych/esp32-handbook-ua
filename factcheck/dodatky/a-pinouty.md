@@ -47,7 +47,7 @@
 
 ---
 
-<!-- fc id:T-A-003 sha:20376379 src:dodatky/a-pinouty.md:7 klas:F -->
+<!-- fc id:T-A-003 sha:20376379 src:dodatky/a-pinouty.md:7 klas:E -->
 ### T-A-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -1098,7 +1098,7 @@
 
 ---
 
-<!-- fc id:T-A-074 sha:ce399c4d src:dodatky/a-pinouty.md:57 klas:F -->
+<!-- fc id:T-A-074 sha:ce399c4d src:dodatky/a-pinouty.md:57 klas:E -->
 ### T-A-074 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -1357,7 +1357,7 @@
 
 ---
 
-<!-- fc id:T-A-092 sha:4afef0e1 src:dodatky/a-pinouty.md:80 klas:F -->
+<!-- fc id:T-A-092 sha:4afef0e1 src:dodatky/a-pinouty.md:80 klas:E -->
 ### T-A-092 · proza · рядок 80
 
 **Книга каже, дослівно:**
@@ -1383,7 +1383,7 @@
 
 ---
 
-<!-- fc id:T-A-094 sha:8e250d60 src:dodatky/a-pinouty.md:86 klas:F -->
+<!-- fc id:T-A-094 sha:8e250d60 src:dodatky/a-pinouty.md:86 klas:E -->
 ### T-A-094 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -1396,7 +1396,7 @@
 
 ---
 
-<!-- fc id:T-A-095 sha:40ed1cdb src:dodatky/a-pinouty.md:95 klas:F -->
+<!-- fc id:T-A-095 sha:40ed1cdb src:dodatky/a-pinouty.md:95 klas:E -->
 ### T-A-095 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -1659,7 +1659,7 @@
 
 ---
 
-<!-- fc id:T-A-107 sha:2dfd20e4 src:dodatky/a-pinouty.md:110 klas:F -->
+<!-- fc id:T-A-107 sha:2dfd20e4 src:dodatky/a-pinouty.md:110 klas:E -->
 ### T-A-107 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -1672,7 +1672,7 @@
 
 ---
 
-<!-- fc id:T-A-108 sha:4b8831ab src:dodatky/a-pinouty.md:110 klas:F -->
+<!-- fc id:T-A-108 sha:4b8831ab src:dodatky/a-pinouty.md:110 klas:E -->
 ### T-A-108 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -1758,7 +1758,7 @@
 
 ---
 
-<!-- fc id:T-A-114 sha:6fd3a16a src:dodatky/a-pinouty.md:122 klas:F -->
+<!-- fc id:T-A-114 sha:6fd3a16a src:dodatky/a-pinouty.md:122 klas:E -->
 ### T-A-114 · proza · рядок 122
 
 **Книга каже, дослівно:**
@@ -1797,7 +1797,7 @@
 
 ---
 
-<!-- fc id:T-A-117 sha:2d8ff849 src:dodatky/a-pinouty.md:129 klas:F -->
+<!-- fc id:T-A-117 sha:2d8ff849 src:dodatky/a-pinouty.md:129 klas:E -->
 ### T-A-117 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -1879,7 +1879,7 @@
 
 ---
 
-<!-- fc id:T-A-121 sha:6d13423d src:dodatky/a-pinouty.md:140 klas:F -->
+<!-- fc id:T-A-121 sha:6d13423d src:dodatky/a-pinouty.md:140 klas:E -->
 ### T-A-121 · proza · рядок 140
 
 **Книга каже, дослівно:**

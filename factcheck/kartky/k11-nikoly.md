@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K11-001 sha:9236f6d0 src:kartky/k11-nikoly.md:3 klas:F -->
+<!-- fc id:T-K11-001 sha:9236f6d0 src:kartky/k11-nikoly.md:3 klas:E -->
 ### T-K11-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K11-002 sha:02a70226 src:kartky/k11-nikoly.md:3 klas:F -->
+<!-- fc id:T-K11-002 sha:02a70226 src:kartky/k11-nikoly.md:3 klas:E -->
 ### T-K11-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-K11-004 sha:0a6903d1 src:kartky/k11-nikoly.md:7 klas:F -->
+<!-- fc id:T-K11-004 sha:0a6903d1 src:kartky/k11-nikoly.md:7 klas:E -->
 ### T-K11-004 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-K11-006 sha:410af712 src:kartky/k11-nikoly.md:14 klas:F -->
+<!-- fc id:T-K11-006 sha:410af712 src:kartky/k11-nikoly.md:14 klas:E -->
 ### T-K11-006 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-K11-007 sha:27686b7b src:kartky/k11-nikoly.md:14 klas:F -->
+<!-- fc id:T-K11-007 sha:27686b7b src:kartky/k11-nikoly.md:14 klas:E -->
 ### T-K11-007 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-K11-008 sha:4dcbf84d src:kartky/k11-nikoly.md:14 klas:F -->
+<!-- fc id:T-K11-008 sha:4dcbf84d src:kartky/k11-nikoly.md:14 klas:E -->
 ### T-K11-008 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-K11-010 sha:34e89cce src:kartky/k11-nikoly.md:22 klas:F -->
+<!-- fc id:T-K11-010 sha:34e89cce src:kartky/k11-nikoly.md:22 klas:E -->
 ### T-K11-010 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-K11-012 sha:415c2703 src:kartky/k11-nikoly.md:29 klas:F -->
+<!-- fc id:T-K11-012 sha:415c2703 src:kartky/k11-nikoly.md:29 klas:E -->
 ### T-K11-012 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-K11-014 sha:94045e56 src:kartky/k11-nikoly.md:29 klas:F -->
+<!-- fc id:T-K11-014 sha:94045e56 src:kartky/k11-nikoly.md:29 klas:E -->
 ### T-K11-014 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-K11-017 sha:44b30bed src:kartky/k11-nikoly.md:38 klas:F -->
+<!-- fc id:T-K11-017 sha:44b30bed src:kartky/k11-nikoly.md:38 klas:E -->
 ### T-K11-017 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-K11-018 sha:925d49ec src:kartky/k11-nikoly.md:38 klas:F -->
+<!-- fc id:T-K11-018 sha:925d49ec src:kartky/k11-nikoly.md:38 klas:E -->
 ### T-K11-018 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-K11-019 sha:db52595d src:kartky/k11-nikoly.md:46 klas:F -->
+<!-- fc id:T-K11-019 sha:db52595d src:kartky/k11-nikoly.md:46 klas:E -->
 ### T-K11-019 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-K11-020 sha:8399e47f src:kartky/k11-nikoly.md:46 klas:F -->
+<!-- fc id:T-K11-020 sha:8399e47f src:kartky/k11-nikoly.md:46 klas:E -->
 ### T-K11-020 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-K11-021 sha:649513c1 src:kartky/k11-nikoly.md:50 klas:F -->
+<!-- fc id:T-K11-021 sha:649513c1 src:kartky/k11-nikoly.md:50 klas:E -->
 ### T-K11-021 · proza · рядок 50
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-K11-022 sha:e3a0462c src:kartky/k11-nikoly.md:50 klas:F -->
+<!-- fc id:T-K11-022 sha:e3a0462c src:kartky/k11-nikoly.md:50 klas:E -->
 ### T-K11-022 · proza · рядок 50
 
 **Книга каже, дослівно:**
@@ -330,7 +330,7 @@
 
 ---
 
-<!-- fc id:T-K11-025 sha:f44cff79 src:kartky/k11-nikoly.md:59 klas:F -->
+<!-- fc id:T-K11-025 sha:f44cff79 src:kartky/k11-nikoly.md:59 klas:E -->
 ### T-K11-025 · proza · рядок 59
 
 **Книга каже, дослівно:**

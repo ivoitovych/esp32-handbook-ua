@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K15-001 sha:c84dcf0a src:kartky/k15-seriyna.md:3 klas:F -->
+<!-- fc id:T-K15-001 sha:c84dcf0a src:kartky/k15-seriyna.md:3 klas:E -->
 ### T-K15-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -492,7 +492,7 @@
 
 ---
 
-<!-- fc id:T-K15-033 sha:2fd35e3c src:kartky/k15-seriyna.md:49 klas:F -->
+<!-- fc id:T-K15-033 sha:2fd35e3c src:kartky/k15-seriyna.md:49 klas:E -->
 ### T-K15-033 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -505,7 +505,7 @@
 
 ---
 
-<!-- fc id:T-K15-034 sha:9149b7e4 src:kartky/k15-seriyna.md:51 klas:F -->
+<!-- fc id:T-K15-034 sha:9149b7e4 src:kartky/k15-seriyna.md:51 klas:E -->
 ### T-K15-034 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -518,7 +518,7 @@
 
 ---
 
-<!-- fc id:T-K15-035 sha:8ae34cb3 src:kartky/k15-seriyna.md:51 klas:F -->
+<!-- fc id:T-K15-035 sha:8ae34cb3 src:kartky/k15-seriyna.md:51 klas:E -->
 ### T-K15-035 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -531,7 +531,7 @@
 
 ---
 
-<!-- fc id:T-K15-036 sha:49dd7b20 src:kartky/k15-seriyna.md:56 klas:F -->
+<!-- fc id:T-K15-036 sha:49dd7b20 src:kartky/k15-seriyna.md:56 klas:E -->
 ### T-K15-036 · proza · рядок 56
 
 **Книга каже, дослівно:**
@@ -544,7 +544,7 @@
 
 ---
 
-<!-- fc id:T-K15-037 sha:60d02320 src:kartky/k15-seriyna.md:58 klas:F -->
+<!-- fc id:T-K15-037 sha:60d02320 src:kartky/k15-seriyna.md:58 klas:E -->
 ### T-K15-037 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -639,7 +639,7 @@
 
 ---
 
-<!-- fc id:T-K15-041 sha:306c0a40 src:kartky/k15-seriyna.md:69 klas:F -->
+<!-- fc id:T-K15-041 sha:306c0a40 src:kartky/k15-seriyna.md:69 klas:E -->
 ### T-K15-041 · proza · рядок 69
 
 **Книга каже, дослівно:**
@@ -652,7 +652,7 @@
 
 ---
 
-<!-- fc id:T-K15-042 sha:f7220973 src:kartky/k15-seriyna.md:71 klas:F -->
+<!-- fc id:T-K15-042 sha:f7220973 src:kartky/k15-seriyna.md:71 klas:E -->
 ### T-K15-042 · proza · рядок 71
 
 **Книга каже, дослівно:**
@@ -678,7 +678,7 @@
 
 ---
 
-<!-- fc id:T-K15-044 sha:db835ae1 src:kartky/k15-seriyna.md:76 klas:F -->
+<!-- fc id:T-K15-044 sha:db835ae1 src:kartky/k15-seriyna.md:76 klas:E -->
 ### T-K15-044 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -717,7 +717,7 @@
 
 ---
 
-<!-- fc id:T-K15-047 sha:a5422053 src:kartky/k15-seriyna.md:88 klas:F -->
+<!-- fc id:T-K15-047 sha:a5422053 src:kartky/k15-seriyna.md:88 klas:E -->
 ### T-K15-047 · proza · рядок 88
 
 **Книга каже, дослівно:**

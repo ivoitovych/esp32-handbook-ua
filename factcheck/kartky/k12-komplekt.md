@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K12-001 sha:b7ac1f6f src:kartky/k12-komplekt.md:3 klas:F -->
+<!-- fc id:T-K12-001 sha:b7ac1f6f src:kartky/k12-komplekt.md:3 klas:E -->
 ### T-K12-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K12-002 sha:80786acd src:kartky/k12-komplekt.md:3 klas:F -->
+<!-- fc id:T-K12-002 sha:80786acd src:kartky/k12-komplekt.md:3 klas:E -->
 ### T-K12-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-K12-019 sha:12400d92 src:kartky/k12-komplekt.md:36 klas:F -->
+<!-- fc id:T-K12-019 sha:12400d92 src:kartky/k12-komplekt.md:36 klas:E -->
 ### T-K12-019 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-K12-020 sha:1b0b7fbc src:kartky/k12-komplekt.md:36 klas:F -->
+<!-- fc id:T-K12-020 sha:1b0b7fbc src:kartky/k12-komplekt.md:36 klas:E -->
 ### T-K12-020 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-K12-021 sha:ca8103ea src:kartky/k12-komplekt.md:36 klas:F -->
+<!-- fc id:T-K12-021 sha:ca8103ea src:kartky/k12-komplekt.md:36 klas:E -->
 ### T-K12-021 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-K12-022 sha:82a0ccd2 src:kartky/k12-komplekt.md:40 klas:F -->
+<!-- fc id:T-K12-022 sha:82a0ccd2 src:kartky/k12-komplekt.md:40 klas:E -->
 ### T-K12-022 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-K12-023 sha:03e71077 src:kartky/k12-komplekt.md:40 klas:F -->
+<!-- fc id:T-K12-023 sha:03e71077 src:kartky/k12-komplekt.md:40 klas:E -->
 ### T-K12-023 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-K12-025 sha:fe2d70c5 src:kartky/k12-komplekt.md:50 klas:F -->
+<!-- fc id:T-K12-025 sha:fe2d70c5 src:kartky/k12-komplekt.md:50 klas:E -->
 ### T-K12-025 · proza · рядок 50
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-K12-026 sha:bdd9d08f src:kartky/k12-komplekt.md:50 klas:F -->
+<!-- fc id:T-K12-026 sha:bdd9d08f src:kartky/k12-komplekt.md:50 klas:E -->
 ### T-K12-026 · proza · рядок 50
 
 **Книга каже, дослівно:**

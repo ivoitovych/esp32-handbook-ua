@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-52-001 sha:66b803bb src:manual/52-montazh.md:3 klas:F -->
+<!-- fc id:T-52-001 sha:66b803bb src:manual/52-montazh.md:3 klas:E -->
 ### T-52-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-52-002 sha:1e54107d src:manual/52-montazh.md:3 klas:F -->
+<!-- fc id:T-52-002 sha:1e54107d src:manual/52-montazh.md:3 klas:E -->
 ### T-52-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-52-003 sha:01fb4336 src:manual/52-montazh.md:9 klas:F -->
+<!-- fc id:T-52-003 sha:01fb4336 src:manual/52-montazh.md:9 klas:E -->
 ### T-52-003 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-52-004 sha:7740931a src:manual/52-montazh.md:14 klas:F -->
+<!-- fc id:T-52-004 sha:7740931a src:manual/52-montazh.md:14 klas:E -->
 ### T-52-004 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-52-005 sha:1f9a2ab4 src:manual/52-montazh.md:17 klas:F -->
+<!-- fc id:T-52-005 sha:1f9a2ab4 src:manual/52-montazh.md:17 klas:E -->
 ### T-52-005 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-52-006 sha:802a8f60 src:manual/52-montazh.md:20 klas:F -->
+<!-- fc id:T-52-006 sha:802a8f60 src:manual/52-montazh.md:20 klas:E -->
 ### T-52-006 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-52-007 sha:8d0ed342 src:manual/52-montazh.md:20 klas:F -->
+<!-- fc id:T-52-007 sha:8d0ed342 src:manual/52-montazh.md:20 klas:E -->
 ### T-52-007 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-52-008 sha:0c2bddda src:manual/52-montazh.md:23 klas:F -->
+<!-- fc id:T-52-008 sha:0c2bddda src:manual/52-montazh.md:23 klas:E -->
 ### T-52-008 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-52-009 sha:5a84ee0d src:manual/52-montazh.md:23 klas:F -->
+<!-- fc id:T-52-009 sha:5a84ee0d src:manual/52-montazh.md:23 klas:E -->
 ### T-52-009 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-52-010 sha:5ad4add9 src:manual/52-montazh.md:27 klas:F -->
+<!-- fc id:T-52-010 sha:5ad4add9 src:manual/52-montazh.md:27 klas:E -->
 ### T-52-010 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-52-011 sha:10786ee6 src:manual/52-montazh.md:27 klas:F -->
+<!-- fc id:T-52-011 sha:10786ee6 src:manual/52-montazh.md:27 klas:E -->
 ### T-52-011 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-52-012 sha:82e5dda2 src:manual/52-montazh.md:31 klas:F -->
+<!-- fc id:T-52-012 sha:82e5dda2 src:manual/52-montazh.md:31 klas:E -->
 ### T-52-012 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-52-013 sha:35d3d697 src:manual/52-montazh.md:31 klas:F -->
+<!-- fc id:T-52-013 sha:35d3d697 src:manual/52-montazh.md:31 klas:E -->
 ### T-52-013 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-52-014 sha:7f003483 src:manual/52-montazh.md:36 klas:F -->
+<!-- fc id:T-52-014 sha:7f003483 src:manual/52-montazh.md:36 klas:E -->
 ### T-52-014 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-52-015 sha:d0036309 src:manual/52-montazh.md:36 klas:F -->
+<!-- fc id:T-52-015 sha:d0036309 src:manual/52-montazh.md:36 klas:E -->
 ### T-52-015 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-52-016 sha:9cdd86a8 src:manual/52-montazh.md:36 klas:F -->
+<!-- fc id:T-52-016 sha:9cdd86a8 src:manual/52-montazh.md:36 klas:E -->
 ### T-52-016 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-52-017 sha:7d057ea6 src:manual/52-montazh.md:42 klas:F -->
+<!-- fc id:T-52-017 sha:7d057ea6 src:manual/52-montazh.md:42 klas:E -->
 ### T-52-017 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-52-018 sha:d18fd616 src:manual/52-montazh.md:42 klas:F -->
+<!-- fc id:T-52-018 sha:d18fd616 src:manual/52-montazh.md:42 klas:E -->
 ### T-52-018 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-52-019 sha:2728d212 src:manual/52-montazh.md:46 klas:F -->
+<!-- fc id:T-52-019 sha:2728d212 src:manual/52-montazh.md:46 klas:E -->
 ### T-52-019 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-52-020 sha:f9b42706 src:manual/52-montazh.md:51 klas:F -->
+<!-- fc id:T-52-020 sha:f9b42706 src:manual/52-montazh.md:51 klas:E -->
 ### T-52-020 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-52-021 sha:10ae697e src:manual/52-montazh.md:51 klas:F -->
+<!-- fc id:T-52-021 sha:10ae697e src:manual/52-montazh.md:51 klas:E -->
 ### T-52-021 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-52-023 sha:6ca9fb95 src:manual/52-montazh.md:57 klas:F -->
+<!-- fc id:T-52-023 sha:6ca9fb95 src:manual/52-montazh.md:57 klas:E -->
 ### T-52-023 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-52-024 sha:5fa0acfd src:manual/52-montazh.md:60 klas:F -->
+<!-- fc id:T-52-024 sha:5fa0acfd src:manual/52-montazh.md:60 klas:E -->
 ### T-52-024 · proza · рядок 60
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-52-026 sha:eefc31ce src:manual/52-montazh.md:64 klas:F -->
+<!-- fc id:T-52-026 sha:eefc31ce src:manual/52-montazh.md:64 klas:E -->
 ### T-52-026 · proza · рядок 64
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-52-027 sha:22f79559 src:manual/52-montazh.md:68 klas:F -->
+<!-- fc id:T-52-027 sha:22f79559 src:manual/52-montazh.md:68 klas:E -->
 ### T-52-027 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -357,7 +357,7 @@
 
 ---
 
-<!-- fc id:T-52-028 sha:21825d7d src:manual/52-montazh.md:71 klas:F -->
+<!-- fc id:T-52-028 sha:21825d7d src:manual/52-montazh.md:71 klas:E -->
 ### T-52-028 · proza · рядок 71
 
 **Книга каже, дослівно:**
@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-52-029 sha:12f8b3e7 src:manual/52-montazh.md:71 klas:F -->
+<!-- fc id:T-52-029 sha:12f8b3e7 src:manual/52-montazh.md:71 klas:E -->
 ### T-52-029 · proza · рядок 71
 
 **Книга каже, дослівно:**
@@ -383,7 +383,7 @@
 
 ---
 
-<!-- fc id:T-52-030 sha:b46a2c32 src:manual/52-montazh.md:78 klas:F -->
+<!-- fc id:T-52-030 sha:b46a2c32 src:manual/52-montazh.md:78 klas:E -->
 ### T-52-030 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -409,7 +409,7 @@
 
 ---
 
-<!-- fc id:T-52-032 sha:5ba0dcbe src:manual/52-montazh.md:82 klas:F -->
+<!-- fc id:T-52-032 sha:5ba0dcbe src:manual/52-montazh.md:82 klas:E -->
 ### T-52-032 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -422,7 +422,7 @@
 
 ---
 
-<!-- fc id:T-52-033 sha:58a16491 src:manual/52-montazh.md:85 klas:F -->
+<!-- fc id:T-52-033 sha:58a16491 src:manual/52-montazh.md:85 klas:E -->
 ### T-52-033 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -448,7 +448,7 @@
 
 ---
 
-<!-- fc id:T-52-035 sha:38d6047c src:manual/52-montazh.md:91 klas:F -->
+<!-- fc id:T-52-035 sha:38d6047c src:manual/52-montazh.md:91 klas:E -->
 ### T-52-035 · proza · рядок 91
 
 **Книга каже, дослівно:**
@@ -461,7 +461,7 @@
 
 ---
 
-<!-- fc id:T-52-036 sha:579cebaa src:manual/52-montazh.md:93 klas:F -->
+<!-- fc id:T-52-036 sha:579cebaa src:manual/52-montazh.md:93 klas:E -->
 ### T-52-036 · proza · рядок 93
 
 **Книга каже, дослівно:**
@@ -474,7 +474,7 @@
 
 ---
 
-<!-- fc id:T-52-037 sha:4e388a78 src:manual/52-montazh.md:99 klas:F -->
+<!-- fc id:T-52-037 sha:4e388a78 src:manual/52-montazh.md:99 klas:E -->
 ### T-52-037 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -487,7 +487,7 @@
 
 ---
 
-<!-- fc id:T-52-038 sha:99446944 src:manual/52-montazh.md:99 klas:F -->
+<!-- fc id:T-52-038 sha:99446944 src:manual/52-montazh.md:99 klas:E -->
 ### T-52-038 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -500,7 +500,7 @@
 
 ---
 
-<!-- fc id:T-52-039 sha:9cfc24db src:manual/52-montazh.md:102 klas:F -->
+<!-- fc id:T-52-039 sha:9cfc24db src:manual/52-montazh.md:102 klas:E -->
 ### T-52-039 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-52-041 sha:7b21a66b src:manual/52-montazh.md:105 klas:F -->
+<!-- fc id:T-52-041 sha:7b21a66b src:manual/52-montazh.md:105 klas:E -->
 ### T-52-041 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -539,7 +539,7 @@
 
 ---
 
-<!-- fc id:T-52-042 sha:e1c5ef30 src:manual/52-montazh.md:108 klas:F -->
+<!-- fc id:T-52-042 sha:e1c5ef30 src:manual/52-montazh.md:108 klas:E -->
 ### T-52-042 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -552,7 +552,7 @@
 
 ---
 
-<!-- fc id:T-52-043 sha:5d065fa5 src:manual/52-montazh.md:110 klas:F -->
+<!-- fc id:T-52-043 sha:5d065fa5 src:manual/52-montazh.md:110 klas:E -->
 ### T-52-043 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -565,7 +565,7 @@
 
 ---
 
-<!-- fc id:T-52-044 sha:97f5bda7 src:manual/52-montazh.md:110 klas:F -->
+<!-- fc id:T-52-044 sha:97f5bda7 src:manual/52-montazh.md:110 klas:E -->
 ### T-52-044 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -578,7 +578,7 @@
 
 ---
 
-<!-- fc id:T-52-045 sha:27932900 src:manual/52-montazh.md:113 klas:F -->
+<!-- fc id:T-52-045 sha:27932900 src:manual/52-montazh.md:113 klas:E -->
 ### T-52-045 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -591,7 +591,7 @@
 
 ---
 
-<!-- fc id:T-52-046 sha:2bbc872f src:manual/52-montazh.md:116 klas:F -->
+<!-- fc id:T-52-046 sha:2bbc872f src:manual/52-montazh.md:116 klas:E -->
 ### T-52-046 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -604,7 +604,7 @@
 
 ---
 
-<!-- fc id:T-52-047 sha:8d6da62f src:manual/52-montazh.md:119 klas:F -->
+<!-- fc id:T-52-047 sha:8d6da62f src:manual/52-montazh.md:119 klas:E -->
 ### T-52-047 · proza · рядок 119
 
 **Книга каже, дослівно:**
@@ -630,7 +630,7 @@
 
 ---
 
-<!-- fc id:T-52-049 sha:5be8a65b src:manual/52-montazh.md:123 klas:F -->
+<!-- fc id:T-52-049 sha:5be8a65b src:manual/52-montazh.md:123 klas:E -->
 ### T-52-049 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -643,7 +643,7 @@
 
 ---
 
-<!-- fc id:T-52-050 sha:02e7de00 src:manual/52-montazh.md:125 klas:F -->
+<!-- fc id:T-52-050 sha:02e7de00 src:manual/52-montazh.md:125 klas:E -->
 ### T-52-050 · proza · рядок 125
 
 **Книга каже, дослівно:**
@@ -656,7 +656,7 @@
 
 ---
 
-<!-- fc id:T-52-051 sha:6fd50da3 src:manual/52-montazh.md:127 klas:F -->
+<!-- fc id:T-52-051 sha:6fd50da3 src:manual/52-montazh.md:127 klas:E -->
 ### T-52-051 · proza · рядок 127
 
 **Книга каже, дослівно:**
@@ -695,7 +695,7 @@
 
 ---
 
-<!-- fc id:T-52-054 sha:0aaeab2f src:manual/52-montazh.md:135 klas:F -->
+<!-- fc id:T-52-054 sha:0aaeab2f src:manual/52-montazh.md:135 klas:E -->
 ### T-52-054 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -721,7 +721,7 @@
 
 ---
 
-<!-- fc id:T-52-056 sha:05560c94 src:manual/52-montazh.md:135 klas:F -->
+<!-- fc id:T-52-056 sha:05560c94 src:manual/52-montazh.md:135 klas:E -->
 ### T-52-056 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -734,7 +734,7 @@
 
 ---
 
-<!-- fc id:T-52-057 sha:f33380a9 src:manual/52-montazh.md:142 klas:F -->
+<!-- fc id:T-52-057 sha:f33380a9 src:manual/52-montazh.md:142 klas:E -->
 ### T-52-057 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -747,7 +747,7 @@
 
 ---
 
-<!-- fc id:T-52-058 sha:4b3fcbef src:manual/52-montazh.md:145 klas:F -->
+<!-- fc id:T-52-058 sha:4b3fcbef src:manual/52-montazh.md:145 klas:E -->
 ### T-52-058 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -760,7 +760,7 @@
 
 ---
 
-<!-- fc id:T-52-059 sha:8dbdd6b2 src:manual/52-montazh.md:145 klas:F -->
+<!-- fc id:T-52-059 sha:8dbdd6b2 src:manual/52-montazh.md:145 klas:E -->
 ### T-52-059 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -773,7 +773,7 @@
 
 ---
 
-<!-- fc id:T-52-060 sha:dbbd205e src:manual/52-montazh.md:151 klas:F -->
+<!-- fc id:T-52-060 sha:dbbd205e src:manual/52-montazh.md:151 klas:E -->
 ### T-52-060 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -786,7 +786,7 @@
 
 ---
 
-<!-- fc id:T-52-061 sha:fa9b9169 src:manual/52-montazh.md:153 klas:F -->
+<!-- fc id:T-52-061 sha:fa9b9169 src:manual/52-montazh.md:153 klas:E -->
 ### T-52-061 · proza · рядок 153
 
 **Книга каже, дослівно:**
@@ -799,7 +799,7 @@
 
 ---
 
-<!-- fc id:T-52-062 sha:aeca420d src:manual/52-montazh.md:155 klas:F -->
+<!-- fc id:T-52-062 sha:aeca420d src:manual/52-montazh.md:155 klas:E -->
 ### T-52-062 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -812,7 +812,7 @@
 
 ---
 
-<!-- fc id:T-52-063 sha:28cc2b11 src:manual/52-montazh.md:157 klas:F -->
+<!-- fc id:T-52-063 sha:28cc2b11 src:manual/52-montazh.md:157 klas:E -->
 ### T-52-063 · proza · рядок 157
 
 **Книга каже, дослівно:**
@@ -825,7 +825,7 @@
 
 ---
 
-<!-- fc id:T-52-064 sha:63a20f5e src:manual/52-montazh.md:160 klas:F -->
+<!-- fc id:T-52-064 sha:63a20f5e src:manual/52-montazh.md:160 klas:E -->
 ### T-52-064 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -838,7 +838,7 @@
 
 ---
 
-<!-- fc id:T-52-065 sha:63b5c6f3 src:manual/52-montazh.md:162 klas:F -->
+<!-- fc id:T-52-065 sha:63b5c6f3 src:manual/52-montazh.md:162 klas:E -->
 ### T-52-065 · proza · рядок 162
 
 **Книга каже, дослівно:**

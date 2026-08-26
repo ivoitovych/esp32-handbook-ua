@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-58-001 sha:0c478bbc src:manual/58-dovedennya.md:3 klas:F -->
+<!-- fc id:T-58-001 sha:0c478bbc src:manual/58-dovedennya.md:3 klas:E -->
 ### T-58-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-58-002 sha:3e59eb3a src:manual/58-dovedennya.md:8 klas:F -->
+<!-- fc id:T-58-002 sha:3e59eb3a src:manual/58-dovedennya.md:8 klas:E -->
 ### T-58-002 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-58-003 sha:36cec863 src:manual/58-dovedennya.md:8 klas:F -->
+<!-- fc id:T-58-003 sha:36cec863 src:manual/58-dovedennya.md:8 klas:E -->
 ### T-58-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-58-004 sha:eb495ce7 src:manual/58-dovedennya.md:8 klas:F -->
+<!-- fc id:T-58-004 sha:eb495ce7 src:manual/58-dovedennya.md:8 klas:E -->
 ### T-58-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-58-005 sha:ea7569d8 src:manual/58-dovedennya.md:11 klas:F -->
+<!-- fc id:T-58-005 sha:ea7569d8 src:manual/58-dovedennya.md:11 klas:E -->
 ### T-58-005 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-58-006 sha:73f5f650 src:manual/58-dovedennya.md:11 klas:F -->
+<!-- fc id:T-58-006 sha:73f5f650 src:manual/58-dovedennya.md:11 klas:E -->
 ### T-58-006 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-58-007 sha:53c1e544 src:manual/58-dovedennya.md:14 klas:F -->
+<!-- fc id:T-58-007 sha:53c1e544 src:manual/58-dovedennya.md:14 klas:E -->
 ### T-58-007 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-58-008 sha:8a6d1295 src:manual/58-dovedennya.md:17 klas:F -->
+<!-- fc id:T-58-008 sha:8a6d1295 src:manual/58-dovedennya.md:17 klas:E -->
 ### T-58-008 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-58-009 sha:d9c03599 src:manual/58-dovedennya.md:17 klas:F -->
+<!-- fc id:T-58-009 sha:d9c03599 src:manual/58-dovedennya.md:17 klas:E -->
 ### T-58-009 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-58-010 sha:afaf4451 src:manual/58-dovedennya.md:23 klas:F -->
+<!-- fc id:T-58-010 sha:afaf4451 src:manual/58-dovedennya.md:23 klas:E -->
 ### T-58-010 · proza · рядок 23
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-58-011 sha:170be86c src:manual/58-dovedennya.md:25 klas:F -->
+<!-- fc id:T-58-011 sha:170be86c src:manual/58-dovedennya.md:25 klas:E -->
 ### T-58-011 · proza · рядок 25
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-58-012 sha:0394a4b6 src:manual/58-dovedennya.md:28 klas:F -->
+<!-- fc id:T-58-012 sha:0394a4b6 src:manual/58-dovedennya.md:28 klas:E -->
 ### T-58-012 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-58-013 sha:c4584f4a src:manual/58-dovedennya.md:28 klas:F -->
+<!-- fc id:T-58-013 sha:c4584f4a src:manual/58-dovedennya.md:28 klas:E -->
 ### T-58-013 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-58-014 sha:510d5fc7 src:manual/58-dovedennya.md:33 klas:F -->
+<!-- fc id:T-58-014 sha:510d5fc7 src:manual/58-dovedennya.md:33 klas:E -->
 ### T-58-014 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-58-015 sha:32fe58d7 src:manual/58-dovedennya.md:35 klas:F -->
+<!-- fc id:T-58-015 sha:32fe58d7 src:manual/58-dovedennya.md:35 klas:E -->
 ### T-58-015 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-58-016 sha:71b7da0f src:manual/58-dovedennya.md:35 klas:F -->
+<!-- fc id:T-58-016 sha:71b7da0f src:manual/58-dovedennya.md:35 klas:E -->
 ### T-58-016 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-58-019 sha:2d92e20d src:manual/58-dovedennya.md:48 klas:F -->
+<!-- fc id:T-58-019 sha:2d92e20d src:manual/58-dovedennya.md:48 klas:E -->
 ### T-58-019 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-58-022 sha:73a5af38 src:manual/58-dovedennya.md:53 klas:F -->
+<!-- fc id:T-58-022 sha:73a5af38 src:manual/58-dovedennya.md:53 klas:E -->
 ### T-58-022 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-58-024 sha:df42a19f src:manual/58-dovedennya.md:56 klas:F -->
+<!-- fc id:T-58-024 sha:df42a19f src:manual/58-dovedennya.md:56 klas:E -->
 ### T-58-024 · proza · рядок 56
 
 **Книга каже, дослівно:**
@@ -386,7 +386,7 @@
 
 ---
 
-<!-- fc id:T-58-029 sha:ca535c7e src:manual/58-dovedennya.md:68 klas:F -->
+<!-- fc id:T-58-029 sha:ca535c7e src:manual/58-dovedennya.md:68 klas:E -->
 ### T-58-029 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -399,7 +399,7 @@
 
 ---
 
-<!-- fc id:T-58-030 sha:7b9e6b52 src:manual/58-dovedennya.md:70 klas:F -->
+<!-- fc id:T-58-030 sha:7b9e6b52 src:manual/58-dovedennya.md:70 klas:E -->
 ### T-58-030 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -412,7 +412,7 @@
 
 ---
 
-<!-- fc id:T-58-031 sha:a63fb429 src:manual/58-dovedennya.md:70 klas:F -->
+<!-- fc id:T-58-031 sha:a63fb429 src:manual/58-dovedennya.md:70 klas:E -->
 ### T-58-031 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -425,7 +425,7 @@
 
 ---
 
-<!-- fc id:T-58-032 sha:f7733647 src:manual/58-dovedennya.md:74 klas:F -->
+<!-- fc id:T-58-032 sha:f7733647 src:manual/58-dovedennya.md:74 klas:E -->
 ### T-58-032 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -438,7 +438,7 @@
 
 ---
 
-<!-- fc id:T-58-033 sha:4efddeef src:manual/58-dovedennya.md:74 klas:F -->
+<!-- fc id:T-58-033 sha:4efddeef src:manual/58-dovedennya.md:74 klas:E -->
 ### T-58-033 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -451,7 +451,7 @@
 
 ---
 
-<!-- fc id:T-58-034 sha:ce3a7012 src:manual/58-dovedennya.md:74 klas:F -->
+<!-- fc id:T-58-034 sha:ce3a7012 src:manual/58-dovedennya.md:74 klas:E -->
 ### T-58-034 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-58-035 sha:7e680b2b src:manual/58-dovedennya.md:78 klas:F -->
+<!-- fc id:T-58-035 sha:7e680b2b src:manual/58-dovedennya.md:78 klas:E -->
 ### T-58-035 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-58-036 sha:53736210 src:manual/58-dovedennya.md:81 klas:F -->
+<!-- fc id:T-58-036 sha:53736210 src:manual/58-dovedennya.md:81 klas:E -->
 ### T-58-036 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -490,7 +490,7 @@
 
 ---
 
-<!-- fc id:T-58-037 sha:83dfd7d3 src:manual/58-dovedennya.md:81 klas:F -->
+<!-- fc id:T-58-037 sha:83dfd7d3 src:manual/58-dovedennya.md:81 klas:E -->
 ### T-58-037 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -503,7 +503,7 @@
 
 ---
 
-<!-- fc id:T-58-038 sha:1050876e src:manual/58-dovedennya.md:85 klas:F -->
+<!-- fc id:T-58-038 sha:1050876e src:manual/58-dovedennya.md:85 klas:E -->
 ### T-58-038 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-58-039 sha:8c4c684c src:manual/58-dovedennya.md:87 klas:F -->
+<!-- fc id:T-58-039 sha:8c4c684c src:manual/58-dovedennya.md:87 klas:E -->
 ### T-58-039 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -529,7 +529,7 @@
 
 ---
 
-<!-- fc id:T-58-040 sha:2dd219cc src:manual/58-dovedennya.md:87 klas:F -->
+<!-- fc id:T-58-040 sha:2dd219cc src:manual/58-dovedennya.md:87 klas:E -->
 ### T-58-040 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -542,7 +542,7 @@
 
 ---
 
-<!-- fc id:T-58-041 sha:fc4a1d78 src:manual/58-dovedennya.md:91 klas:F -->
+<!-- fc id:T-58-041 sha:fc4a1d78 src:manual/58-dovedennya.md:91 klas:E -->
 ### T-58-041 · proza · рядок 91
 
 **Книга каже, дослівно:**
@@ -568,7 +568,7 @@
 
 ---
 
-<!-- fc id:T-58-043 sha:7dc13e80 src:manual/58-dovedennya.md:97 klas:F -->
+<!-- fc id:T-58-043 sha:7dc13e80 src:manual/58-dovedennya.md:97 klas:E -->
 ### T-58-043 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -581,7 +581,7 @@
 
 ---
 
-<!-- fc id:T-58-044 sha:1552bda7 src:manual/58-dovedennya.md:97 klas:F -->
+<!-- fc id:T-58-044 sha:1552bda7 src:manual/58-dovedennya.md:97 klas:E -->
 ### T-58-044 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -659,7 +659,7 @@
 
 ---
 
-<!-- fc id:T-58-050 sha:66283cb7 src:manual/58-dovedennya.md:111 klas:F -->
+<!-- fc id:T-58-050 sha:66283cb7 src:manual/58-dovedennya.md:111 klas:E -->
 ### T-58-050 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -854,7 +854,7 @@
 
 ---
 
-<!-- fc id:T-58-065 sha:49247935 src:manual/58-dovedennya.md:142 klas:F -->
+<!-- fc id:T-58-065 sha:49247935 src:manual/58-dovedennya.md:142 klas:E -->
 ### T-58-065 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -893,7 +893,7 @@
 
 ---
 
-<!-- fc id:T-58-068 sha:da4d45b4 src:manual/58-dovedennya.md:154 klas:F -->
+<!-- fc id:T-58-068 sha:da4d45b4 src:manual/58-dovedennya.md:154 klas:E -->
 ### T-58-068 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -906,7 +906,7 @@
 
 ---
 
-<!-- fc id:T-58-069 sha:1d3a7447 src:manual/58-dovedennya.md:154 klas:F -->
+<!-- fc id:T-58-069 sha:1d3a7447 src:manual/58-dovedennya.md:154 klas:E -->
 ### T-58-069 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -932,7 +932,7 @@
 
 ---
 
-<!-- fc id:T-58-071 sha:9827dcc6 src:manual/58-dovedennya.md:162 klas:F -->
+<!-- fc id:T-58-071 sha:9827dcc6 src:manual/58-dovedennya.md:162 klas:E -->
 ### T-58-071 · proza · рядок 162
 
 **Книга каже, дослівно:**
@@ -945,7 +945,7 @@
 
 ---
 
-<!-- fc id:T-58-072 sha:64202006 src:manual/58-dovedennya.md:162 klas:F -->
+<!-- fc id:T-58-072 sha:64202006 src:manual/58-dovedennya.md:162 klas:E -->
 ### T-58-072 · proza · рядок 162
 
 **Книга каже, дослівно:**
@@ -958,7 +958,7 @@
 
 ---
 
-<!-- fc id:T-58-073 sha:0a508c9e src:manual/58-dovedennya.md:165 klas:F -->
+<!-- fc id:T-58-073 sha:0a508c9e src:manual/58-dovedennya.md:165 klas:E -->
 ### T-58-073 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -971,7 +971,7 @@
 
 ---
 
-<!-- fc id:T-58-074 sha:bd1c3e6c src:manual/58-dovedennya.md:165 klas:F -->
+<!-- fc id:T-58-074 sha:bd1c3e6c src:manual/58-dovedennya.md:165 klas:E -->
 ### T-58-074 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -984,7 +984,7 @@
 
 ---
 
-<!-- fc id:T-58-075 sha:3b981ebc src:manual/58-dovedennya.md:171 klas:F -->
+<!-- fc id:T-58-075 sha:3b981ebc src:manual/58-dovedennya.md:171 klas:E -->
 ### T-58-075 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -997,7 +997,7 @@
 
 ---
 
-<!-- fc id:T-58-076 sha:200056a3 src:manual/58-dovedennya.md:174 klas:F -->
+<!-- fc id:T-58-076 sha:200056a3 src:manual/58-dovedennya.md:174 klas:E -->
 ### T-58-076 · proza · рядок 174
 
 **Книга каже, дослівно:**
@@ -1010,7 +1010,7 @@
 
 ---
 
-<!-- fc id:T-58-077 sha:6205590d src:manual/58-dovedennya.md:176 klas:F -->
+<!-- fc id:T-58-077 sha:6205590d src:manual/58-dovedennya.md:176 klas:E -->
 ### T-58-077 · proza · рядок 176
 
 **Книга каже, дослівно:**
@@ -1023,7 +1023,7 @@
 
 ---
 
-<!-- fc id:T-58-078 sha:cc233a56 src:manual/58-dovedennya.md:179 klas:F -->
+<!-- fc id:T-58-078 sha:cc233a56 src:manual/58-dovedennya.md:179 klas:E -->
 ### T-58-078 · proza · рядок 179
 
 **Книга каже, дослівно:**
@@ -1036,7 +1036,7 @@
 
 ---
 
-<!-- fc id:T-58-079 sha:4c36fe5f src:manual/58-dovedennya.md:181 klas:F -->
+<!-- fc id:T-58-079 sha:4c36fe5f src:manual/58-dovedennya.md:181 klas:E -->
 ### T-58-079 · proza · рядок 181
 
 **Книга каже, дослівно:**
@@ -1049,7 +1049,7 @@
 
 ---
 
-<!-- fc id:T-58-080 sha:e9382e4d src:manual/58-dovedennya.md:183 klas:F -->
+<!-- fc id:T-58-080 sha:e9382e4d src:manual/58-dovedennya.md:183 klas:E -->
 ### T-58-080 · proza · рядок 183
 
 **Книга каже, дослівно:**
@@ -1062,7 +1062,7 @@
 
 ---
 
-<!-- fc id:T-58-081 sha:c6294b8e src:manual/58-dovedennya.md:185 klas:F -->
+<!-- fc id:T-58-081 sha:c6294b8e src:manual/58-dovedennya.md:185 klas:E -->
 ### T-58-081 · proza · рядок 185
 
 **Книга каже, дослівно:**

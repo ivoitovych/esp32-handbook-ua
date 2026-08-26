@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K09-001 sha:2f50ba45 src:kartky/k09-pinouty.md:3 klas:F -->
+<!-- fc id:T-K09-001 sha:2f50ba45 src:kartky/k09-pinouty.md:3 klas:E -->
 ### T-K09-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K09-002 sha:3606dbb0 src:kartky/k09-pinouty.md:3 klas:F -->
+<!-- fc id:T-K09-002 sha:3606dbb0 src:kartky/k09-pinouty.md:3 klas:E -->
 ### T-K09-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -193,7 +193,7 @@
 
 ---
 
-<!-- fc id:T-K09-014 sha:03772305 src:kartky/k09-pinouty.md:22 klas:F -->
+<!-- fc id:T-K09-014 sha:03772305 src:kartky/k09-pinouty.md:22 klas:E -->
 ### T-K09-014 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -372,7 +372,7 @@
 
 ---
 
-<!-- fc id:T-K09-024 sha:178f9f43 src:kartky/k09-pinouty.md:37 klas:F -->
+<!-- fc id:T-K09-024 sha:178f9f43 src:kartky/k09-pinouty.md:37 klas:E -->
 ### T-K09-024 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -539,7 +539,7 @@
 
 ---
 
-<!-- fc id:T-K09-034 sha:e2174a8b src:kartky/k09-pinouty.md:59 klas:F -->
+<!-- fc id:T-K09-034 sha:e2174a8b src:kartky/k09-pinouty.md:59 klas:E -->
 ### T-K09-034 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -552,7 +552,7 @@
 
 ---
 
-<!-- fc id:T-K09-035 sha:9ae3a634 src:kartky/k09-pinouty.md:59 klas:F -->
+<!-- fc id:T-K09-035 sha:9ae3a634 src:kartky/k09-pinouty.md:59 klas:E -->
 ### T-K09-035 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -565,7 +565,7 @@
 
 ---
 
-<!-- fc id:T-K09-036 sha:35f319d4 src:kartky/k09-pinouty.md:65 klas:F -->
+<!-- fc id:T-K09-036 sha:35f319d4 src:kartky/k09-pinouty.md:65 klas:E -->
 ### T-K09-036 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -578,7 +578,7 @@
 
 ---
 
-<!-- fc id:T-K09-037 sha:b255deb9 src:kartky/k09-pinouty.md:65 klas:F -->
+<!-- fc id:T-K09-037 sha:b255deb9 src:kartky/k09-pinouty.md:65 klas:E -->
 ### T-K09-037 · proza · рядок 65
 
 **Книга каже, дослівно:**

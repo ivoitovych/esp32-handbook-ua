@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K02-001 sha:cf25c148 src:kartky/k02-stan.md:3 klas:F -->
+<!-- fc id:T-K02-001 sha:cf25c148 src:kartky/k02-stan.md:3 klas:E -->
 ### T-K02-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-K02-003 sha:51fe5eb0 src:kartky/k02-stan.md:3 klas:F -->
+<!-- fc id:T-K02-003 sha:51fe5eb0 src:kartky/k02-stan.md:3 klas:E -->
 ### T-K02-003 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-K02-004 sha:b7fbee6e src:kartky/k02-stan.md:9 klas:F -->
+<!-- fc id:T-K02-004 sha:b7fbee6e src:kartky/k02-stan.md:9 klas:E -->
 ### T-K02-004 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-K02-005 sha:14ded059 src:kartky/k02-stan.md:9 klas:F -->
+<!-- fc id:T-K02-005 sha:14ded059 src:kartky/k02-stan.md:9 klas:E -->
 ### T-K02-005 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-K02-006 sha:37acf5b5 src:kartky/k02-stan.md:9 klas:F -->
+<!-- fc id:T-K02-006 sha:37acf5b5 src:kartky/k02-stan.md:9 klas:E -->
 ### T-K02-006 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-K02-007 sha:744c7e76 src:kartky/k02-stan.md:13 klas:F -->
+<!-- fc id:T-K02-007 sha:744c7e76 src:kartky/k02-stan.md:13 klas:E -->
 ### T-K02-007 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-K02-008 sha:96b3f7de src:kartky/k02-stan.md:18 klas:F -->
+<!-- fc id:T-K02-008 sha:96b3f7de src:kartky/k02-stan.md:18 klas:E -->
 ### T-K02-008 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-K02-010 sha:4aa28ce1 src:kartky/k02-stan.md:18 klas:F -->
+<!-- fc id:T-K02-010 sha:4aa28ce1 src:kartky/k02-stan.md:18 klas:E -->
 ### T-K02-010 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-K02-012 sha:98e1e8ff src:kartky/k02-stan.md:24 klas:F -->
+<!-- fc id:T-K02-012 sha:98e1e8ff src:kartky/k02-stan.md:24 klas:E -->
 ### T-K02-012 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-K02-014 sha:c30c0717 src:kartky/k02-stan.md:27 klas:F -->
+<!-- fc id:T-K02-014 sha:c30c0717 src:kartky/k02-stan.md:27 klas:E -->
 ### T-K02-014 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-K02-015 sha:ed7fc644 src:kartky/k02-stan.md:32 klas:F -->
+<!-- fc id:T-K02-015 sha:ed7fc644 src:kartky/k02-stan.md:32 klas:E -->
 ### T-K02-015 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -307,7 +307,7 @@
 
 ---
 
-<!-- fc id:T-K02-020 sha:3eb44454 src:kartky/k02-stan.md:39 klas:F -->
+<!-- fc id:T-K02-020 sha:3eb44454 src:kartky/k02-stan.md:39 klas:D -->
 ### T-K02-020 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -316,11 +316,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py — перерахунок при кожній перевірці
+- **Дослівно з джерела:**
+  > 0x400000  / 1024 / 1024 =  4 МБ
+  > 0x800000  / 1024 / 1024 =  8 МБ
+  > 0x1000000 / 1024 / 1024 = 16 МБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Книга друкує ці три числа в розділі 17, додатку C і на картці К2 як явну заміну для `ALL`. Зовнішнього джерела тут не потрібно — це перерахунок, і він тепер постійний: змінене число завалить `make arytmetyka`.
+Практична вага більша, ніж здається. `read-flash 0 0x400000` на восьмимегабайтному чипі дає рівно половину дампа, і файл при цьому цілком «правильного» вигляду. Книга тому й вимагає звіряти розмір файлу з обсягом флешу — тепер обидва числа перевірені.
+- **Прохід:** pass-19-adresy-flesh
 
 ---
 
-<!-- fc id:T-K02-021 sha:f9d252b0 src:kartky/k02-stan.md:42 klas:F -->
+<!-- fc id:T-K02-021 sha:f9d252b0 src:kartky/k02-stan.md:42 klas:E -->
 ### T-K02-021 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -333,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-K02-022 sha:de849d8b src:kartky/k02-stan.md:42 klas:F -->
+<!-- fc id:T-K02-022 sha:de849d8b src:kartky/k02-stan.md:42 klas:E -->
 ### T-K02-022 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -346,7 +355,7 @@
 
 ---
 
-<!-- fc id:T-K02-023 sha:33c5d9b5 src:kartky/k02-stan.md:47 klas:F -->
+<!-- fc id:T-K02-023 sha:33c5d9b5 src:kartky/k02-stan.md:47 klas:E -->
 ### T-K02-023 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -359,7 +368,7 @@
 
 ---
 
-<!-- fc id:T-K02-024 sha:744e6463 src:kartky/k02-stan.md:47 klas:F -->
+<!-- fc id:T-K02-024 sha:744e6463 src:kartky/k02-stan.md:47 klas:E -->
 ### T-K02-024 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -372,7 +381,7 @@
 
 ---
 
-<!-- fc id:T-K02-025 sha:79fb5b6b src:kartky/k02-stan.md:47 klas:F -->
+<!-- fc id:T-K02-025 sha:79fb5b6b src:kartky/k02-stan.md:47 klas:E -->
 ### T-K02-025 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -385,7 +394,7 @@
 
 ---
 
-<!-- fc id:T-K02-026 sha:943e89a5 src:kartky/k02-stan.md:51 klas:F -->
+<!-- fc id:T-K02-026 sha:943e89a5 src:kartky/k02-stan.md:51 klas:E -->
 ### T-K02-026 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -398,7 +407,7 @@
 
 ---
 
-<!-- fc id:T-K02-027 sha:d3533a61 src:kartky/k02-stan.md:51 klas:F -->
+<!-- fc id:T-K02-027 sha:d3533a61 src:kartky/k02-stan.md:51 klas:E -->
 ### T-K02-027 · proza · рядок 51
 
 **Книга каже, дослівно:**

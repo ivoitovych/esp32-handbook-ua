@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-39-002 sha:3aff629d src:manual/39-wifi.md:3 klas:F -->
+<!-- fc id:T-39-002 sha:3aff629d src:manual/39-wifi.md:3 klas:E -->
 ### T-39-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-39-003 sha:98c2c909 src:manual/39-wifi.md:9 klas:F -->
+<!-- fc id:T-39-003 sha:98c2c909 src:manual/39-wifi.md:9 klas:E -->
 ### T-39-003 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-39-004 sha:b5f036fa src:manual/39-wifi.md:12 klas:F -->
+<!-- fc id:T-39-004 sha:b5f036fa src:manual/39-wifi.md:12 klas:E -->
 ### T-39-004 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-39-005 sha:eba40df8 src:manual/39-wifi.md:12 klas:F -->
+<!-- fc id:T-39-005 sha:eba40df8 src:manual/39-wifi.md:12 klas:E -->
 ### T-39-005 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-39-006 sha:d73265e5 src:manual/39-wifi.md:15 klas:F -->
+<!-- fc id:T-39-006 sha:d73265e5 src:manual/39-wifi.md:15 klas:E -->
 ### T-39-006 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-39-007 sha:288e4353 src:manual/39-wifi.md:15 klas:F -->
+<!-- fc id:T-39-007 sha:288e4353 src:manual/39-wifi.md:15 klas:E -->
 ### T-39-007 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-39-008 sha:677e343d src:manual/39-wifi.md:19 klas:F -->
+<!-- fc id:T-39-008 sha:677e343d src:manual/39-wifi.md:19 klas:E -->
 ### T-39-008 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-39-010 sha:77f9a14e src:manual/39-wifi.md:24 klas:F -->
+<!-- fc id:T-39-010 sha:77f9a14e src:manual/39-wifi.md:24 klas:E -->
 ### T-39-010 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-39-011 sha:58a6de24 src:manual/39-wifi.md:24 klas:F -->
+<!-- fc id:T-39-011 sha:58a6de24 src:manual/39-wifi.md:24 klas:E -->
 ### T-39-011 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-39-013 sha:08e495f0 src:manual/39-wifi.md:35 klas:F -->
+<!-- fc id:T-39-013 sha:08e495f0 src:manual/39-wifi.md:35 klas:E -->
 ### T-39-013 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-39-015 sha:012074a2 src:manual/39-wifi.md:35 klas:F -->
+<!-- fc id:T-39-015 sha:012074a2 src:manual/39-wifi.md:35 klas:E -->
 ### T-39-015 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-39-016 sha:63b1804b src:manual/39-wifi.md:39 klas:F -->
+<!-- fc id:T-39-016 sha:63b1804b src:manual/39-wifi.md:39 klas:E -->
 ### T-39-016 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-39-017 sha:1784c130 src:manual/39-wifi.md:43 klas:F -->
+<!-- fc id:T-39-017 sha:1784c130 src:manual/39-wifi.md:43 klas:E -->
 ### T-39-017 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-39-022 sha:bb97bef3 src:manual/39-wifi.md:51 klas:F -->
+<!-- fc id:T-39-022 sha:bb97bef3 src:manual/39-wifi.md:51 klas:E -->
 ### T-39-022 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -575,7 +575,7 @@
 
 ---
 
-<!-- fc id:T-39-035 sha:01c85b3e src:manual/39-wifi.md:81 klas:F -->
+<!-- fc id:T-39-035 sha:01c85b3e src:manual/39-wifi.md:81 klas:E -->
 ### T-39-035 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -601,7 +601,7 @@
 
 ---
 
-<!-- fc id:T-39-037 sha:e3f3983a src:manual/39-wifi.md:85 klas:F -->
+<!-- fc id:T-39-037 sha:e3f3983a src:manual/39-wifi.md:85 klas:E -->
 ### T-39-037 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -614,7 +614,7 @@
 
 ---
 
-<!-- fc id:T-39-038 sha:3d8a470e src:manual/39-wifi.md:92 klas:F -->
+<!-- fc id:T-39-038 sha:3d8a470e src:manual/39-wifi.md:92 klas:E -->
 ### T-39-038 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -627,7 +627,7 @@
 
 ---
 
-<!-- fc id:T-39-039 sha:8faf2cea src:manual/39-wifi.md:92 klas:F -->
+<!-- fc id:T-39-039 sha:8faf2cea src:manual/39-wifi.md:92 klas:E -->
 ### T-39-039 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -640,7 +640,7 @@
 
 ---
 
-<!-- fc id:T-39-040 sha:aff69a48 src:manual/39-wifi.md:96 klas:F -->
+<!-- fc id:T-39-040 sha:aff69a48 src:manual/39-wifi.md:96 klas:E -->
 ### T-39-040 · proza · рядок 96
 
 **Книга каже, дослівно:**
@@ -666,7 +666,7 @@
 
 ---
 
-<!-- fc id:T-39-042 sha:012f895e src:manual/39-wifi.md:98 klas:F -->
+<!-- fc id:T-39-042 sha:012f895e src:manual/39-wifi.md:98 klas:E -->
 ### T-39-042 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -708,7 +708,7 @@
 
 ---
 
-<!-- fc id:T-39-044 sha:60427d96 src:manual/39-wifi.md:102 klas:F -->
+<!-- fc id:T-39-044 sha:60427d96 src:manual/39-wifi.md:102 klas:E -->
 ### T-39-044 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -721,7 +721,7 @@
 
 ---
 
-<!-- fc id:T-39-045 sha:9998d5ee src:manual/39-wifi.md:107 klas:F -->
+<!-- fc id:T-39-045 sha:9998d5ee src:manual/39-wifi.md:107 klas:E -->
 ### T-39-045 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -817,7 +817,7 @@
 
 ---
 
-<!-- fc id:T-39-049 sha:8865171a src:manual/39-wifi.md:124 klas:F -->
+<!-- fc id:T-39-049 sha:8865171a src:manual/39-wifi.md:124 klas:E -->
 ### T-39-049 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -830,7 +830,7 @@
 
 ---
 
-<!-- fc id:T-39-050 sha:8c40823e src:manual/39-wifi.md:124 klas:F -->
+<!-- fc id:T-39-050 sha:8c40823e src:manual/39-wifi.md:124 klas:E -->
 ### T-39-050 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -843,7 +843,7 @@
 
 ---
 
-<!-- fc id:T-39-051 sha:2f3ef63a src:manual/39-wifi.md:130 klas:F -->
+<!-- fc id:T-39-051 sha:2f3ef63a src:manual/39-wifi.md:130 klas:E -->
 ### T-39-051 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -895,7 +895,7 @@
 
 ---
 
-<!-- fc id:T-39-055 sha:70603347 src:manual/39-wifi.md:143 klas:F -->
+<!-- fc id:T-39-055 sha:70603347 src:manual/39-wifi.md:143 klas:E -->
 ### T-39-055 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -908,7 +908,7 @@
 
 ---
 
-<!-- fc id:T-39-056 sha:147d1fd8 src:manual/39-wifi.md:143 klas:F -->
+<!-- fc id:T-39-056 sha:147d1fd8 src:manual/39-wifi.md:143 klas:E -->
 ### T-39-056 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -921,7 +921,7 @@
 
 ---
 
-<!-- fc id:T-39-057 sha:224e143c src:manual/39-wifi.md:147 klas:F -->
+<!-- fc id:T-39-057 sha:224e143c src:manual/39-wifi.md:147 klas:E -->
 ### T-39-057 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -934,7 +934,7 @@
 
 ---
 
-<!-- fc id:T-39-058 sha:c32014fa src:manual/39-wifi.md:150 klas:F -->
+<!-- fc id:T-39-058 sha:c32014fa src:manual/39-wifi.md:150 klas:E -->
 ### T-39-058 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -947,7 +947,7 @@
 
 ---
 
-<!-- fc id:T-39-059 sha:12d67035 src:manual/39-wifi.md:150 klas:F -->
+<!-- fc id:T-39-059 sha:12d67035 src:manual/39-wifi.md:150 klas:E -->
 ### T-39-059 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -960,7 +960,7 @@
 
 ---
 
-<!-- fc id:T-39-060 sha:31d618f5 src:manual/39-wifi.md:155 klas:F -->
+<!-- fc id:T-39-060 sha:31d618f5 src:manual/39-wifi.md:155 klas:E -->
 ### T-39-060 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -973,7 +973,7 @@
 
 ---
 
-<!-- fc id:T-39-061 sha:76c8944b src:manual/39-wifi.md:155 klas:F -->
+<!-- fc id:T-39-061 sha:76c8944b src:manual/39-wifi.md:155 klas:E -->
 ### T-39-061 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -1139,7 +1139,7 @@
 
 ---
 
-<!-- fc id:T-39-071 sha:f8743fc8 src:manual/39-wifi.md:178 klas:F -->
+<!-- fc id:T-39-071 sha:f8743fc8 src:manual/39-wifi.md:178 klas:E -->
 ### T-39-071 · proza · рядок 178
 
 **Книга каже, дослівно:**
@@ -1165,7 +1165,7 @@
 
 ---
 
-<!-- fc id:T-39-073 sha:ba8a29ad src:manual/39-wifi.md:183 klas:F -->
+<!-- fc id:T-39-073 sha:ba8a29ad src:manual/39-wifi.md:183 klas:E -->
 ### T-39-073 · proza · рядок 183
 
 **Книга каже, дослівно:**
@@ -1178,7 +1178,7 @@
 
 ---
 
-<!-- fc id:T-39-074 sha:585c5615 src:manual/39-wifi.md:187 klas:F -->
+<!-- fc id:T-39-074 sha:585c5615 src:manual/39-wifi.md:187 klas:E -->
 ### T-39-074 · proza · рядок 187
 
 **Книга каже, дослівно:**
@@ -1191,7 +1191,7 @@
 
 ---
 
-<!-- fc id:T-39-075 sha:58575e4a src:manual/39-wifi.md:187 klas:F -->
+<!-- fc id:T-39-075 sha:58575e4a src:manual/39-wifi.md:187 klas:E -->
 ### T-39-075 · proza · рядок 187
 
 **Книга каже, дослівно:**
@@ -1217,7 +1217,7 @@
 
 ---
 
-<!-- fc id:T-39-077 sha:16a37415 src:manual/39-wifi.md:193 klas:F -->
+<!-- fc id:T-39-077 sha:16a37415 src:manual/39-wifi.md:193 klas:E -->
 ### T-39-077 · proza · рядок 193
 
 **Книга каже, дослівно:**
@@ -1243,7 +1243,7 @@
 
 ---
 
-<!-- fc id:T-39-079 sha:82ba0557 src:manual/39-wifi.md:196 klas:F -->
+<!-- fc id:T-39-079 sha:82ba0557 src:manual/39-wifi.md:196 klas:E -->
 ### T-39-079 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1256,7 +1256,7 @@
 
 ---
 
-<!-- fc id:T-39-080 sha:ac6419a1 src:manual/39-wifi.md:201 klas:F -->
+<!-- fc id:T-39-080 sha:ac6419a1 src:manual/39-wifi.md:201 klas:E -->
 ### T-39-080 · proza · рядок 201
 
 **Книга каже, дослівно:**
@@ -1269,7 +1269,7 @@
 
 ---
 
-<!-- fc id:T-39-081 sha:e6c7a8da src:manual/39-wifi.md:201 klas:F -->
+<!-- fc id:T-39-081 sha:e6c7a8da src:manual/39-wifi.md:201 klas:E -->
 ### T-39-081 · proza · рядок 201
 
 **Книга каже, дослівно:**
@@ -1282,7 +1282,7 @@
 
 ---
 
-<!-- fc id:T-39-082 sha:091d26d9 src:manual/39-wifi.md:205 klas:F -->
+<!-- fc id:T-39-082 sha:091d26d9 src:manual/39-wifi.md:205 klas:E -->
 ### T-39-082 · proza · рядок 205
 
 **Книга каже, дослівно:**
@@ -1308,7 +1308,7 @@
 
 ---
 
-<!-- fc id:T-39-084 sha:dfe7ec73 src:manual/39-wifi.md:209 klas:F -->
+<!-- fc id:T-39-084 sha:dfe7ec73 src:manual/39-wifi.md:209 klas:E -->
 ### T-39-084 · proza · рядок 209
 
 **Книга каже, дослівно:**
@@ -1321,7 +1321,7 @@
 
 ---
 
-<!-- fc id:T-39-085 sha:89e35e9a src:manual/39-wifi.md:211 klas:F -->
+<!-- fc id:T-39-085 sha:89e35e9a src:manual/39-wifi.md:211 klas:E -->
 ### T-39-085 · proza · рядок 211
 
 **Книга каже, дослівно:**
@@ -1347,7 +1347,7 @@
 
 ---
 
-<!-- fc id:T-39-087 sha:ecc7ebf3 src:manual/39-wifi.md:221 klas:F -->
+<!-- fc id:T-39-087 sha:ecc7ebf3 src:manual/39-wifi.md:221 klas:E -->
 ### T-39-087 · proza · рядок 221
 
 **Книга каже, дослівно:**
@@ -1360,7 +1360,7 @@
 
 ---
 
-<!-- fc id:T-39-088 sha:b1ab339c src:manual/39-wifi.md:221 klas:F -->
+<!-- fc id:T-39-088 sha:b1ab339c src:manual/39-wifi.md:221 klas:E -->
 ### T-39-088 · proza · рядок 221
 
 **Книга каже, дослівно:**
@@ -1373,7 +1373,7 @@
 
 ---
 
-<!-- fc id:T-39-089 sha:cd21abf9 src:manual/39-wifi.md:224 klas:F -->
+<!-- fc id:T-39-089 sha:cd21abf9 src:manual/39-wifi.md:224 klas:E -->
 ### T-39-089 · proza · рядок 224
 
 **Книга каже, дослівно:**
@@ -1386,7 +1386,7 @@
 
 ---
 
-<!-- fc id:T-39-090 sha:2ca43215 src:manual/39-wifi.md:224 klas:F -->
+<!-- fc id:T-39-090 sha:2ca43215 src:manual/39-wifi.md:224 klas:E -->
 ### T-39-090 · proza · рядок 224
 
 **Книга каже, дослівно:**
@@ -1454,7 +1454,7 @@
 
 ---
 
-<!-- fc id:T-39-094 sha:7e746de3 src:manual/39-wifi.md:238 klas:F -->
+<!-- fc id:T-39-094 sha:7e746de3 src:manual/39-wifi.md:238 klas:E -->
 ### T-39-094 · proza · рядок 238
 
 **Книга каже, дослівно:**
@@ -1480,7 +1480,7 @@
 
 ---
 
-<!-- fc id:T-39-096 sha:a2407ba9 src:manual/39-wifi.md:243 klas:F -->
+<!-- fc id:T-39-096 sha:a2407ba9 src:manual/39-wifi.md:243 klas:E -->
 ### T-39-096 · proza · рядок 243
 
 **Книга каже, дослівно:**
@@ -1493,7 +1493,7 @@
 
 ---
 
-<!-- fc id:T-39-097 sha:7c4c6970 src:manual/39-wifi.md:245 klas:F -->
+<!-- fc id:T-39-097 sha:7c4c6970 src:manual/39-wifi.md:245 klas:E -->
 ### T-39-097 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -1506,7 +1506,7 @@
 
 ---
 
-<!-- fc id:T-39-098 sha:faaf9a0e src:manual/39-wifi.md:247 klas:F -->
+<!-- fc id:T-39-098 sha:faaf9a0e src:manual/39-wifi.md:247 klas:E -->
 ### T-39-098 · proza · рядок 247
 
 **Книга каже, дослівно:**
@@ -1519,7 +1519,7 @@
 
 ---
 
-<!-- fc id:T-39-099 sha:9a3683e7 src:manual/39-wifi.md:249 klas:F -->
+<!-- fc id:T-39-099 sha:9a3683e7 src:manual/39-wifi.md:249 klas:E -->
 ### T-39-099 · proza · рядок 249
 
 **Книга каже, дослівно:**

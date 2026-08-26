@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-B-003 sha:2ba627c3 src:dodatky/b-symptomy.md:11 klas:F -->
+<!-- fc id:T-B-003 sha:2ba627c3 src:dodatky/b-symptomy.md:11 klas:E -->
 ### T-B-003 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -4248,7 +4248,7 @@
 
 ---
 
-<!-- fc id:T-B-265 sha:b76bf4b9 src:dodatky/b-symptomy.md:142 klas:F -->
+<!-- fc id:T-B-265 sha:b76bf4b9 src:dodatky/b-symptomy.md:142 klas:E -->
 ### T-B-265 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -4261,7 +4261,7 @@
 
 ---
 
-<!-- fc id:T-B-266 sha:488aeda0 src:dodatky/b-symptomy.md:142 klas:F -->
+<!-- fc id:T-B-266 sha:488aeda0 src:dodatky/b-symptomy.md:142 klas:E -->
 ### T-B-266 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -4274,7 +4274,7 @@
 
 ---
 
-<!-- fc id:T-B-267 sha:68afb39c src:dodatky/b-symptomy.md:144 klas:F -->
+<!-- fc id:T-B-267 sha:68afb39c src:dodatky/b-symptomy.md:144 klas:E -->
 ### T-B-267 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -4287,7 +4287,7 @@
 
 ---
 
-<!-- fc id:T-B-268 sha:ec2b3a25 src:dodatky/b-symptomy.md:147 klas:F -->
+<!-- fc id:T-B-268 sha:ec2b3a25 src:dodatky/b-symptomy.md:147 klas:E -->
 ### T-B-268 · proza · рядок 147
 
 **Книга каже, дослівно:**

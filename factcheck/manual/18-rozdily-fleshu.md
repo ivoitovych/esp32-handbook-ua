@@ -41,7 +41,7 @@
 
 ---
 
-<!-- fc id:T-18-003 sha:ea68963b src:manual/18-rozdily-fleshu.md:8 klas:F -->
+<!-- fc id:T-18-003 sha:ea68963b src:manual/18-rozdily-fleshu.md:8 klas:E -->
 ### T-18-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-18-004 sha:9c606f2f src:manual/18-rozdily-fleshu.md:8 klas:F -->
+<!-- fc id:T-18-004 sha:9c606f2f src:manual/18-rozdily-fleshu.md:8 klas:E -->
 ### T-18-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -67,7 +67,7 @@
 
 ---
 
-<!-- fc id:T-18-005 sha:4a659ad6 src:manual/18-rozdily-fleshu.md:15 klas:F -->
+<!-- fc id:T-18-005 sha:4a659ad6 src:manual/18-rozdily-fleshu.md:15 klas:E -->
 ### T-18-005 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -93,7 +93,7 @@
 
 ---
 
-<!-- fc id:T-18-007 sha:cc195a29 src:manual/18-rozdily-fleshu.md:19 klas:F -->
+<!-- fc id:T-18-007 sha:cc195a29 src:manual/18-rozdily-fleshu.md:19 klas:E -->
 ### T-18-007 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-18-021 sha:0923797f src:manual/18-rozdily-fleshu.md:27 klas:F -->
+<!-- fc id:T-18-021 sha:0923797f src:manual/18-rozdily-fleshu.md:27 klas:E -->
 ### T-18-021 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-18-022 sha:50b4dd7d src:manual/18-rozdily-fleshu.md:29 klas:F -->
+<!-- fc id:T-18-022 sha:50b4dd7d src:manual/18-rozdily-fleshu.md:29 klas:D -->
 ### T-18-022 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -351,7 +351,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
 
 ---
 
@@ -407,7 +420,7 @@
 
 ---
 
-<!-- fc id:T-18-027 sha:76acd34b src:manual/18-rozdily-fleshu.md:37 klas:F -->
+<!-- fc id:T-18-027 sha:76acd34b src:manual/18-rozdily-fleshu.md:37 klas:E -->
 ### T-18-027 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -433,7 +446,7 @@
 
 ---
 
-<!-- fc id:T-18-029 sha:f936f28f src:manual/18-rozdily-fleshu.md:42 klas:F -->
+<!-- fc id:T-18-029 sha:f936f28f src:manual/18-rozdily-fleshu.md:42 klas:E -->
 ### T-18-029 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -446,7 +459,7 @@
 
 ---
 
-<!-- fc id:T-18-030 sha:12c0dae9 src:manual/18-rozdily-fleshu.md:46 klas:F -->
+<!-- fc id:T-18-030 sha:12c0dae9 src:manual/18-rozdily-fleshu.md:46 klas:E -->
 ### T-18-030 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -471,11 +484,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
 
 ---
 
-<!-- fc id:T-18-032 sha:5793a2bb src:manual/18-rozdily-fleshu.md:49 klas:F -->
+<!-- fc id:T-18-032 sha:5793a2bb src:manual/18-rozdily-fleshu.md:49 klas:D -->
 ### T-18-032 · kod-ryadok · рядок 49
 
 **Книга каже, дослівно:**
@@ -484,7 +510,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
 
 ---
 
@@ -501,7 +540,7 @@
 
 ---
 
-<!-- fc id:T-18-034 sha:9c3fadfd src:manual/18-rozdily-fleshu.md:53 klas:F -->
+<!-- fc id:T-18-034 sha:9c3fadfd src:manual/18-rozdily-fleshu.md:53 klas:E -->
 ### T-18-034 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -527,7 +566,7 @@
 
 ---
 
-<!-- fc id:T-18-036 sha:efe25d4b src:manual/18-rozdily-fleshu.md:58 klas:F -->
+<!-- fc id:T-18-036 sha:efe25d4b src:manual/18-rozdily-fleshu.md:58 klas:E -->
 ### T-18-036 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -665,7 +704,7 @@
 
 ---
 
-<!-- fc id:T-18-042 sha:14b13bf4 src:manual/18-rozdily-fleshu.md:75 klas:F -->
+<!-- fc id:T-18-042 sha:14b13bf4 src:manual/18-rozdily-fleshu.md:75 klas:E -->
 ### T-18-042 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -728,7 +767,7 @@
 
 ---
 
-<!-- fc id:T-18-045 sha:d288675c src:manual/18-rozdily-fleshu.md:81 klas:F -->
+<!-- fc id:T-18-045 sha:d288675c src:manual/18-rozdily-fleshu.md:81 klas:E -->
 ### T-18-045 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -741,7 +780,7 @@
 
 ---
 
-<!-- fc id:T-18-046 sha:25ea8296 src:manual/18-rozdily-fleshu.md:88 klas:F -->
+<!-- fc id:T-18-046 sha:25ea8296 src:manual/18-rozdily-fleshu.md:88 klas:E -->
 ### T-18-046 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -754,7 +793,7 @@
 
 ---
 
-<!-- fc id:T-18-047 sha:52530cd3 src:manual/18-rozdily-fleshu.md:88 klas:F -->
+<!-- fc id:T-18-047 sha:52530cd3 src:manual/18-rozdily-fleshu.md:88 klas:E -->
 ### T-18-047 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -767,7 +806,7 @@
 
 ---
 
-<!-- fc id:T-18-048 sha:4935de88 src:manual/18-rozdily-fleshu.md:93 klas:F -->
+<!-- fc id:T-18-048 sha:4935de88 src:manual/18-rozdily-fleshu.md:93 klas:E -->
 ### T-18-048 · proza · рядок 93
 
 **Книга каже, дослівно:**
@@ -793,7 +832,7 @@
 
 ---
 
-<!-- fc id:T-18-050 sha:77e191f6 src:manual/18-rozdily-fleshu.md:97 klas:F -->
+<!-- fc id:T-18-050 sha:77e191f6 src:manual/18-rozdily-fleshu.md:97 klas:E -->
 ### T-18-050 · proza · рядок 97
 
 **Книга каже, дослівно:**
@@ -835,7 +874,7 @@
 
 ---
 
-<!-- fc id:T-18-052 sha:7d517b9b src:manual/18-rozdily-fleshu.md:102 klas:F -->
+<!-- fc id:T-18-052 sha:7d517b9b src:manual/18-rozdily-fleshu.md:102 klas:E -->
 ### T-18-052 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -848,7 +887,7 @@
 
 ---
 
-<!-- fc id:T-18-053 sha:4b78fd12 src:manual/18-rozdily-fleshu.md:102 klas:F -->
+<!-- fc id:T-18-053 sha:4b78fd12 src:manual/18-rozdily-fleshu.md:102 klas:E -->
 ### T-18-053 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -969,7 +1008,7 @@
 
 ---
 
-<!-- fc id:T-18-058 sha:e101ea2e src:manual/18-rozdily-fleshu.md:116 klas:F -->
+<!-- fc id:T-18-058 sha:e101ea2e src:manual/18-rozdily-fleshu.md:116 klas:E -->
 ### T-18-058 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -1255,7 +1294,7 @@
 
 ---
 
-<!-- fc id:T-18-080 sha:b5482ecd src:manual/18-rozdily-fleshu.md:137 klas:F -->
+<!-- fc id:T-18-080 sha:b5482ecd src:manual/18-rozdily-fleshu.md:137 klas:E -->
 ### T-18-080 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -1268,7 +1307,7 @@
 
 ---
 
-<!-- fc id:T-18-081 sha:c6ab43f6 src:manual/18-rozdily-fleshu.md:137 klas:F -->
+<!-- fc id:T-18-081 sha:c6ab43f6 src:manual/18-rozdily-fleshu.md:137 klas:E -->
 ### T-18-081 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -1294,7 +1333,7 @@
 
 ---
 
-<!-- fc id:T-18-083 sha:784039ff src:manual/18-rozdily-fleshu.md:143 klas:F -->
+<!-- fc id:T-18-083 sha:784039ff src:manual/18-rozdily-fleshu.md:143 klas:E -->
 ### T-18-083 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -1392,7 +1431,7 @@
 
 ---
 
-<!-- fc id:T-18-087 sha:bb45cfb1 src:manual/18-rozdily-fleshu.md:151 klas:F -->
+<!-- fc id:T-18-087 sha:bb45cfb1 src:manual/18-rozdily-fleshu.md:151 klas:E -->
 ### T-18-087 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -1405,7 +1444,7 @@
 
 ---
 
-<!-- fc id:T-18-088 sha:62ee5911 src:manual/18-rozdily-fleshu.md:156 klas:F -->
+<!-- fc id:T-18-088 sha:62ee5911 src:manual/18-rozdily-fleshu.md:156 klas:E -->
 ### T-18-088 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1431,7 +1470,7 @@
 
 ---
 
-<!-- fc id:T-18-090 sha:3408b516 src:manual/18-rozdily-fleshu.md:156 klas:F -->
+<!-- fc id:T-18-090 sha:3408b516 src:manual/18-rozdily-fleshu.md:156 klas:E -->
 ### T-18-090 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1457,7 +1496,7 @@
 
 ---
 
-<!-- fc id:T-18-092 sha:38b96c9d src:manual/18-rozdily-fleshu.md:165 klas:F -->
+<!-- fc id:T-18-092 sha:38b96c9d src:manual/18-rozdily-fleshu.md:165 klas:E -->
 ### T-18-092 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -1470,7 +1509,7 @@
 
 ---
 
-<!-- fc id:T-18-093 sha:0e9d20cb src:manual/18-rozdily-fleshu.md:165 klas:F -->
+<!-- fc id:T-18-093 sha:0e9d20cb src:manual/18-rozdily-fleshu.md:165 klas:E -->
 ### T-18-093 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -1496,7 +1535,7 @@
 
 ---
 
-<!-- fc id:T-18-095 sha:f48a238f src:manual/18-rozdily-fleshu.md:174 klas:F -->
+<!-- fc id:T-18-095 sha:f48a238f src:manual/18-rozdily-fleshu.md:174 klas:E -->
 ### T-18-095 · proza · рядок 174
 
 **Книга каже, дослівно:**
@@ -1509,7 +1548,7 @@
 
 ---
 
-<!-- fc id:T-18-096 sha:231194c9 src:manual/18-rozdily-fleshu.md:174 klas:F -->
+<!-- fc id:T-18-096 sha:231194c9 src:manual/18-rozdily-fleshu.md:174 klas:E -->
 ### T-18-096 · proza · рядок 174
 
 **Книга каже, дослівно:**
@@ -1537,7 +1576,7 @@
 
 ---
 
-<!-- fc id:T-18-098 sha:bc634816 src:manual/18-rozdily-fleshu.md:181 klas:F -->
+<!-- fc id:T-18-098 sha:bc634816 src:manual/18-rozdily-fleshu.md:181 klas:E -->
 ### T-18-098 · proza · рядок 181
 
 **Книга каже, дослівно:**
@@ -1589,7 +1628,7 @@
 
 ---
 
-<!-- fc id:T-18-102 sha:6364cfd3 src:manual/18-rozdily-fleshu.md:183 klas:F -->
+<!-- fc id:T-18-102 sha:6364cfd3 src:manual/18-rozdily-fleshu.md:183 klas:E -->
 ### T-18-102 · proza · рядок 183
 
 **Книга каже, дослівно:**
@@ -1602,7 +1641,7 @@
 
 ---
 
-<!-- fc id:T-18-103 sha:85fee83d src:manual/18-rozdily-fleshu.md:191 klas:F -->
+<!-- fc id:T-18-103 sha:85fee83d src:manual/18-rozdily-fleshu.md:191 klas:E -->
 ### T-18-103 · proza · рядок 191
 
 **Книга каже, дослівно:**
@@ -1615,7 +1654,7 @@
 
 ---
 
-<!-- fc id:T-18-104 sha:18b9a9fd src:manual/18-rozdily-fleshu.md:191 klas:F -->
+<!-- fc id:T-18-104 sha:18b9a9fd src:manual/18-rozdily-fleshu.md:191 klas:E -->
 ### T-18-104 · proza · рядок 191
 
 **Книга каже, дослівно:**
@@ -1628,7 +1667,7 @@
 
 ---
 
-<!-- fc id:T-18-105 sha:9eebc20f src:manual/18-rozdily-fleshu.md:196 klas:F -->
+<!-- fc id:T-18-105 sha:9eebc20f src:manual/18-rozdily-fleshu.md:196 klas:E -->
 ### T-18-105 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1641,7 +1680,7 @@
 
 ---
 
-<!-- fc id:T-18-106 sha:e6335668 src:manual/18-rozdily-fleshu.md:196 klas:F -->
+<!-- fc id:T-18-106 sha:e6335668 src:manual/18-rozdily-fleshu.md:196 klas:E -->
 ### T-18-106 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1654,7 +1693,7 @@
 
 ---
 
-<!-- fc id:T-18-107 sha:40d6c1dc src:manual/18-rozdily-fleshu.md:202 klas:F -->
+<!-- fc id:T-18-107 sha:40d6c1dc src:manual/18-rozdily-fleshu.md:202 klas:E -->
 ### T-18-107 · proza · рядок 202
 
 **Книга каже, дослівно:**
@@ -1792,7 +1831,7 @@
 
 ---
 
-<!-- fc id:T-18-113 sha:5b4060f0 src:manual/18-rozdily-fleshu.md:211 klas:F -->
+<!-- fc id:T-18-113 sha:5b4060f0 src:manual/18-rozdily-fleshu.md:211 klas:E -->
 ### T-18-113 · proza · рядок 211
 
 **Книга каже, дослівно:**
@@ -1805,7 +1844,7 @@
 
 ---
 
-<!-- fc id:T-18-114 sha:b8548325 src:manual/18-rozdily-fleshu.md:211 klas:F -->
+<!-- fc id:T-18-114 sha:b8548325 src:manual/18-rozdily-fleshu.md:211 klas:E -->
 ### T-18-114 · proza · рядок 211
 
 **Книга каже, дослівно:**
@@ -1857,7 +1896,7 @@
 
 ---
 
-<!-- fc id:T-18-118 sha:a369ddd0 src:manual/18-rozdily-fleshu.md:219 klas:F -->
+<!-- fc id:T-18-118 sha:a369ddd0 src:manual/18-rozdily-fleshu.md:219 klas:E -->
 ### T-18-118 · proza · рядок 219
 
 **Книга каже, дослівно:**
@@ -1883,7 +1922,7 @@
 
 ---
 
-<!-- fc id:T-18-120 sha:1a134448 src:manual/18-rozdily-fleshu.md:232 klas:F -->
+<!-- fc id:T-18-120 sha:1a134448 src:manual/18-rozdily-fleshu.md:232 klas:E -->
 ### T-18-120 · proza · рядок 232
 
 **Книга каже, дослівно:**
@@ -1909,7 +1948,7 @@
 
 ---
 
-<!-- fc id:T-18-122 sha:b3601380 src:manual/18-rozdily-fleshu.md:235 klas:F -->
+<!-- fc id:T-18-122 sha:b3601380 src:manual/18-rozdily-fleshu.md:235 klas:E -->
 ### T-18-122 · proza · рядок 235
 
 **Книга каже, дослівно:**
@@ -1922,7 +1961,7 @@
 
 ---
 
-<!-- fc id:T-18-123 sha:68676e42 src:manual/18-rozdily-fleshu.md:237 klas:F -->
+<!-- fc id:T-18-123 sha:68676e42 src:manual/18-rozdily-fleshu.md:237 klas:E -->
 ### T-18-123 · proza · рядок 237
 
 **Книга каже, дослівно:**

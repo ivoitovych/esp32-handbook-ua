@@ -36,7 +36,7 @@
 
 ---
 
-<!-- fc id:T-37-003 sha:2ad42c7a src:manual/37-onewire.md:9 klas:F -->
+<!-- fc id:T-37-003 sha:2ad42c7a src:manual/37-onewire.md:9 klas:E -->
 ### T-37-003 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -96,7 +96,7 @@
 
 ---
 
-<!-- fc id:T-37-007 sha:4f6b4698 src:manual/37-onewire.md:22 klas:F -->
+<!-- fc id:T-37-007 sha:4f6b4698 src:manual/37-onewire.md:22 klas:E -->
 ### T-37-007 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -148,7 +148,7 @@
 
 ---
 
-<!-- fc id:T-37-011 sha:31406861 src:manual/37-onewire.md:28 klas:F -->
+<!-- fc id:T-37-011 sha:31406861 src:manual/37-onewire.md:28 klas:E -->
 ### T-37-011 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -195,7 +195,7 @@
 
 ---
 
-<!-- fc id:T-37-014 sha:7a685f2d src:manual/37-onewire.md:37 klas:F -->
+<!-- fc id:T-37-014 sha:7a685f2d src:manual/37-onewire.md:37 klas:E -->
 ### T-37-014 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -208,7 +208,7 @@
 
 ---
 
-<!-- fc id:T-37-015 sha:5b8b2ddf src:manual/37-onewire.md:41 klas:F -->
+<!-- fc id:T-37-015 sha:5b8b2ddf src:manual/37-onewire.md:41 klas:E -->
 ### T-37-015 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -260,7 +260,7 @@
 
 ---
 
-<!-- fc id:T-37-019 sha:52d774b6 src:manual/37-onewire.md:55 klas:F -->
+<!-- fc id:T-37-019 sha:52d774b6 src:manual/37-onewire.md:55 klas:E -->
 ### T-37-019 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -273,7 +273,7 @@
 
 ---
 
-<!-- fc id:T-37-020 sha:dbda2c65 src:manual/37-onewire.md:55 klas:F -->
+<!-- fc id:T-37-020 sha:dbda2c65 src:manual/37-onewire.md:55 klas:E -->
 ### T-37-020 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -286,7 +286,7 @@
 
 ---
 
-<!-- fc id:T-37-021 sha:439d058a src:manual/37-onewire.md:59 klas:F -->
+<!-- fc id:T-37-021 sha:439d058a src:manual/37-onewire.md:59 klas:E -->
 ### T-37-021 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-37-023 sha:2b72374b src:manual/37-onewire.md:67 klas:F -->
+<!-- fc id:T-37-023 sha:2b72374b src:manual/37-onewire.md:67 klas:E -->
 ### T-37-023 · proza · рядок 67
 
 **Книга каже, дослівно:**
@@ -355,7 +355,7 @@
 
 ---
 
-<!-- fc id:T-37-024 sha:bff3bd48 src:manual/37-onewire.md:67 klas:F -->
+<!-- fc id:T-37-024 sha:bff3bd48 src:manual/37-onewire.md:67 klas:E -->
 ### T-37-024 · proza · рядок 67
 
 **Книга каже, дослівно:**
@@ -368,7 +368,7 @@
 
 ---
 
-<!-- fc id:T-37-025 sha:d444d7fb src:manual/37-onewire.md:70 klas:F -->
+<!-- fc id:T-37-025 sha:d444d7fb src:manual/37-onewire.md:70 klas:E -->
 ### T-37-025 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -381,7 +381,7 @@
 
 ---
 
-<!-- fc id:T-37-026 sha:9514a597 src:manual/37-onewire.md:70 klas:F -->
+<!-- fc id:T-37-026 sha:9514a597 src:manual/37-onewire.md:70 klas:E -->
 ### T-37-026 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -407,7 +407,7 @@
 
 ---
 
-<!-- fc id:T-37-028 sha:b617c9ae src:manual/37-onewire.md:75 klas:F -->
+<!-- fc id:T-37-028 sha:b617c9ae src:manual/37-onewire.md:75 klas:E -->
 ### T-37-028 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -420,7 +420,7 @@
 
 ---
 
-<!-- fc id:T-37-029 sha:af4c7362 src:manual/37-onewire.md:78 klas:F -->
+<!-- fc id:T-37-029 sha:af4c7362 src:manual/37-onewire.md:78 klas:E -->
 ### T-37-029 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -456,7 +456,7 @@
 
 ---
 
-<!-- fc id:T-37-031 sha:dd15fc57 src:manual/37-onewire.md:84 klas:F -->
+<!-- fc id:T-37-031 sha:dd15fc57 src:manual/37-onewire.md:84 klas:E -->
 ### T-37-031 · proza · рядок 84
 
 **Книга каже, дослівно:**
@@ -482,7 +482,7 @@
 
 ---
 
-<!-- fc id:T-37-033 sha:54ad4cb3 src:manual/37-onewire.md:87 klas:F -->
+<!-- fc id:T-37-033 sha:54ad4cb3 src:manual/37-onewire.md:87 klas:E -->
 ### T-37-033 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -495,7 +495,7 @@
 
 ---
 
-<!-- fc id:T-37-034 sha:dcb81a59 src:manual/37-onewire.md:87 klas:F -->
+<!-- fc id:T-37-034 sha:dcb81a59 src:manual/37-onewire.md:87 klas:E -->
 ### T-37-034 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -571,7 +571,7 @@
 
 ---
 
-<!-- fc id:T-37-038 sha:590ee85b src:manual/37-onewire.md:103 klas:F -->
+<!-- fc id:T-37-038 sha:590ee85b src:manual/37-onewire.md:103 klas:E -->
 ### T-37-038 · proza · рядок 103
 
 **Книга каже, дослівно:**
@@ -597,7 +597,7 @@
 
 ---
 
-<!-- fc id:T-37-040 sha:1fed688f src:manual/37-onewire.md:105 klas:F -->
+<!-- fc id:T-37-040 sha:1fed688f src:manual/37-onewire.md:105 klas:E -->
 ### T-37-040 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -610,7 +610,7 @@
 
 ---
 
-<!-- fc id:T-37-041 sha:b7cb5442 src:manual/37-onewire.md:105 klas:F -->
+<!-- fc id:T-37-041 sha:b7cb5442 src:manual/37-onewire.md:105 klas:E -->
 ### T-37-041 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -636,7 +636,7 @@
 
 ---
 
-<!-- fc id:T-37-043 sha:9cdb9b5a src:manual/37-onewire.md:105 klas:F -->
+<!-- fc id:T-37-043 sha:9cdb9b5a src:manual/37-onewire.md:105 klas:E -->
 ### T-37-043 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -662,7 +662,7 @@
 
 ---
 
-<!-- fc id:T-37-045 sha:3181dab4 src:manual/37-onewire.md:114 klas:F -->
+<!-- fc id:T-37-045 sha:3181dab4 src:manual/37-onewire.md:114 klas:E -->
 ### T-37-045 · proza · рядок 114
 
 **Книга каже, дослівно:**
@@ -724,7 +724,7 @@
 
 ---
 
-<!-- fc id:T-37-049 sha:43798002 src:manual/37-onewire.md:127 klas:F -->
+<!-- fc id:T-37-049 sha:43798002 src:manual/37-onewire.md:127 klas:E -->
 ### T-37-049 · proza · рядок 127
 
 **Книга каже, дослівно:**
@@ -737,7 +737,7 @@
 
 ---
 
-<!-- fc id:T-37-050 sha:c5899889 src:manual/37-onewire.md:130 klas:F -->
+<!-- fc id:T-37-050 sha:c5899889 src:manual/37-onewire.md:130 klas:E -->
 ### T-37-050 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -773,7 +773,7 @@
 
 ---
 
-<!-- fc id:T-37-052 sha:15eec295 src:manual/37-onewire.md:134 klas:F -->
+<!-- fc id:T-37-052 sha:15eec295 src:manual/37-onewire.md:134 klas:E -->
 ### T-37-052 · proza · рядок 134
 
 **Книга каже, дослівно:**

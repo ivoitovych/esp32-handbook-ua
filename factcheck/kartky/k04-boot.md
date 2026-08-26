@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K04-001 sha:d392369e src:kartky/k04-boot.md:3 klas:F -->
+<!-- fc id:T-K04-001 sha:d392369e src:kartky/k04-boot.md:3 klas:E -->
 ### T-K04-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K04-002 sha:8324cf6d src:kartky/k04-boot.md:3 klas:F -->
+<!-- fc id:T-K04-002 sha:8324cf6d src:kartky/k04-boot.md:3 klas:E -->
 ### T-K04-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-K04-003 sha:957a85b7 src:kartky/k04-boot.md:8 klas:F -->
+<!-- fc id:T-K04-003 sha:957a85b7 src:kartky/k04-boot.md:8 klas:E -->
 ### T-K04-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-K04-004 sha:3285d7ba src:kartky/k04-boot.md:8 klas:F -->
+<!-- fc id:T-K04-004 sha:3285d7ba src:kartky/k04-boot.md:8 klas:E -->
 ### T-K04-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -200,7 +200,7 @@
 
 ---
 
-<!-- fc id:T-K04-015 sha:b14933d1 src:kartky/k04-boot.md:34 klas:F -->
+<!-- fc id:T-K04-015 sha:b14933d1 src:kartky/k04-boot.md:34 klas:E -->
 ### T-K04-015 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -226,7 +226,7 @@
 
 ---
 
-<!-- fc id:T-K04-017 sha:e439e3fc src:kartky/k04-boot.md:40 klas:F -->
+<!-- fc id:T-K04-017 sha:e439e3fc src:kartky/k04-boot.md:40 klas:E -->
 ### T-K04-017 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -278,7 +278,7 @@
 
 ---
 
-<!-- fc id:T-K04-021 sha:3535f9d1 src:kartky/k04-boot.md:55 klas:F -->
+<!-- fc id:T-K04-021 sha:3535f9d1 src:kartky/k04-boot.md:55 klas:E -->
 ### T-K04-021 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-K04-023 sha:93250c1f src:kartky/k04-boot.md:62 klas:F -->
+<!-- fc id:T-K04-023 sha:93250c1f src:kartky/k04-boot.md:62 klas:E -->
 ### T-K04-023 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -317,7 +317,7 @@
 
 ---
 
-<!-- fc id:T-K04-024 sha:58a20250 src:kartky/k04-boot.md:62 klas:F -->
+<!-- fc id:T-K04-024 sha:58a20250 src:kartky/k04-boot.md:62 klas:E -->
 ### T-K04-024 · proza · рядок 62
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-27-001 sha:645b5e0a src:manual/27-jtag.md:3 klas:F -->
+<!-- fc id:T-27-001 sha:645b5e0a src:manual/27-jtag.md:3 klas:E -->
 ### T-27-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-27-002 sha:4a1f164f src:manual/27-jtag.md:3 klas:F -->
+<!-- fc id:T-27-002 sha:4a1f164f src:manual/27-jtag.md:3 klas:E -->
 ### T-27-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-27-003 sha:e74c3b73 src:manual/27-jtag.md:8 klas:F -->
+<!-- fc id:T-27-003 sha:e74c3b73 src:manual/27-jtag.md:8 klas:E -->
 ### T-27-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-27-004 sha:3e48a062 src:manual/27-jtag.md:8 klas:F -->
+<!-- fc id:T-27-004 sha:3e48a062 src:manual/27-jtag.md:8 klas:E -->
 ### T-27-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -93,7 +93,7 @@
 
 ---
 
-<!-- fc id:T-27-007 sha:bb960822 src:manual/27-jtag.md:16 klas:F -->
+<!-- fc id:T-27-007 sha:bb960822 src:manual/27-jtag.md:16 klas:E -->
 ### T-27-007 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -106,7 +106,7 @@
 
 ---
 
-<!-- fc id:T-27-008 sha:8eb55e39 src:manual/27-jtag.md:16 klas:F -->
+<!-- fc id:T-27-008 sha:8eb55e39 src:manual/27-jtag.md:16 klas:E -->
 ### T-27-008 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -119,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-27-009 sha:bfead197 src:manual/27-jtag.md:20 klas:F -->
+<!-- fc id:T-27-009 sha:bfead197 src:manual/27-jtag.md:20 klas:E -->
 ### T-27-009 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -132,7 +132,7 @@
 
 ---
 
-<!-- fc id:T-27-010 sha:ac62756c src:manual/27-jtag.md:20 klas:F -->
+<!-- fc id:T-27-010 sha:ac62756c src:manual/27-jtag.md:20 klas:E -->
 ### T-27-010 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -173,7 +173,7 @@
 
 ---
 
-<!-- fc id:T-27-013 sha:ef2da886 src:manual/27-jtag.md:28 klas:F -->
+<!-- fc id:T-27-013 sha:ef2da886 src:manual/27-jtag.md:28 klas:E -->
 ### T-27-013 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-27-016 sha:e0210e92 src:manual/27-jtag.md:34 klas:F -->
+<!-- fc id:T-27-016 sha:e0210e92 src:manual/27-jtag.md:34 klas:E -->
 ### T-27-016 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -268,7 +268,7 @@
 
 ---
 
-<!-- fc id:T-27-020 sha:829374ea src:manual/27-jtag.md:41 klas:F -->
+<!-- fc id:T-27-020 sha:829374ea src:manual/27-jtag.md:41 klas:E -->
 ### T-27-020 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -281,7 +281,7 @@
 
 ---
 
-<!-- fc id:T-27-021 sha:f95f9576 src:manual/27-jtag.md:46 klas:F -->
+<!-- fc id:T-27-021 sha:f95f9576 src:manual/27-jtag.md:46 klas:E -->
 ### T-27-021 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -294,7 +294,7 @@
 
 ---
 
-<!-- fc id:T-27-022 sha:9fa47b90 src:manual/27-jtag.md:52 klas:F -->
+<!-- fc id:T-27-022 sha:9fa47b90 src:manual/27-jtag.md:52 klas:E -->
 ### T-27-022 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -307,7 +307,7 @@
 
 ---
 
-<!-- fc id:T-27-023 sha:cbf1c9e1 src:manual/27-jtag.md:52 klas:F -->
+<!-- fc id:T-27-023 sha:cbf1c9e1 src:manual/27-jtag.md:52 klas:E -->
 ### T-27-023 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -320,7 +320,7 @@
 
 ---
 
-<!-- fc id:T-27-024 sha:33dcb4a2 src:manual/27-jtag.md:57 klas:F -->
+<!-- fc id:T-27-024 sha:33dcb4a2 src:manual/27-jtag.md:57 klas:E -->
 ### T-27-024 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -333,7 +333,7 @@
 
 ---
 
-<!-- fc id:T-27-025 sha:4ca67fae src:manual/27-jtag.md:59 klas:F -->
+<!-- fc id:T-27-025 sha:4ca67fae src:manual/27-jtag.md:59 klas:E -->
 ### T-27-025 · proza · рядок 59
 
 **Книга каже, дослівно:**
@@ -346,7 +346,7 @@
 
 ---
 
-<!-- fc id:T-27-026 sha:179e4db5 src:manual/27-jtag.md:65 klas:F -->
+<!-- fc id:T-27-026 sha:179e4db5 src:manual/27-jtag.md:65 klas:E -->
 ### T-27-026 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -359,7 +359,7 @@
 
 ---
 
-<!-- fc id:T-27-027 sha:30b28d08 src:manual/27-jtag.md:71 klas:F -->
+<!-- fc id:T-27-027 sha:30b28d08 src:manual/27-jtag.md:71 klas:E -->
 ### T-27-027 · proza · рядок 71
 
 **Книга каже, дослівно:**
@@ -385,7 +385,7 @@
 
 ---
 
-<!-- fc id:T-27-029 sha:c329bc54 src:manual/27-jtag.md:74 klas:F -->
+<!-- fc id:T-27-029 sha:c329bc54 src:manual/27-jtag.md:74 klas:E -->
 ### T-27-029 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -502,7 +502,7 @@
 
 ---
 
-<!-- fc id:T-27-038 sha:aeafecac src:manual/27-jtag.md:85 klas:F -->
+<!-- fc id:T-27-038 sha:aeafecac src:manual/27-jtag.md:85 klas:E -->
 ### T-27-038 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -515,7 +515,7 @@
 
 ---
 
-<!-- fc id:T-27-039 sha:63a5eefe src:manual/27-jtag.md:91 klas:F -->
+<!-- fc id:T-27-039 sha:63a5eefe src:manual/27-jtag.md:91 klas:E -->
 ### T-27-039 · proza · рядок 91
 
 **Книга каже, дослівно:**
@@ -541,7 +541,7 @@
 
 ---
 
-<!-- fc id:T-27-041 sha:5a1ece8c src:manual/27-jtag.md:95 klas:F -->
+<!-- fc id:T-27-041 sha:5a1ece8c src:manual/27-jtag.md:95 klas:E -->
 ### T-27-041 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -554,7 +554,7 @@
 
 ---
 
-<!-- fc id:T-27-042 sha:cc45d10e src:manual/27-jtag.md:95 klas:F -->
+<!-- fc id:T-27-042 sha:cc45d10e src:manual/27-jtag.md:95 klas:E -->
 ### T-27-042 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -580,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-27-044 sha:b13e9226 src:manual/27-jtag.md:100 klas:F -->
+<!-- fc id:T-27-044 sha:b13e9226 src:manual/27-jtag.md:100 klas:E -->
 ### T-27-044 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -606,7 +606,7 @@
 
 ---
 
-<!-- fc id:T-27-046 sha:f44b2d8b src:manual/27-jtag.md:109 klas:F -->
+<!-- fc id:T-27-046 sha:f44b2d8b src:manual/27-jtag.md:109 klas:E -->
 ### T-27-046 · proza · рядок 109
 
 **Книга каже, дослівно:**
@@ -619,7 +619,7 @@
 
 ---
 
-<!-- fc id:T-27-047 sha:4f4b7090 src:manual/27-jtag.md:113 klas:F -->
+<!-- fc id:T-27-047 sha:4f4b7090 src:manual/27-jtag.md:113 klas:E -->
 ### T-27-047 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -645,7 +645,7 @@
 
 ---
 
-<!-- fc id:T-27-049 sha:84f694ee src:manual/27-jtag.md:117 klas:F -->
+<!-- fc id:T-27-049 sha:84f694ee src:manual/27-jtag.md:117 klas:E -->
 ### T-27-049 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -791,7 +791,7 @@
 
 ---
 
-<!-- fc id:T-27-055 sha:6833eee7 src:manual/27-jtag.md:130 klas:F -->
+<!-- fc id:T-27-055 sha:6833eee7 src:manual/27-jtag.md:130 klas:E -->
 ### T-27-055 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -804,7 +804,7 @@
 
 ---
 
-<!-- fc id:T-27-056 sha:f37cad84 src:manual/27-jtag.md:130 klas:F -->
+<!-- fc id:T-27-056 sha:f37cad84 src:manual/27-jtag.md:130 klas:E -->
 ### T-27-056 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -817,7 +817,7 @@
 
 ---
 
-<!-- fc id:T-27-057 sha:c6d692df src:manual/27-jtag.md:137 klas:F -->
+<!-- fc id:T-27-057 sha:c6d692df src:manual/27-jtag.md:137 klas:E -->
 ### T-27-057 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -921,7 +921,7 @@
 
 ---
 
-<!-- fc id:T-27-065 sha:d2dd6389 src:manual/27-jtag.md:153 klas:F -->
+<!-- fc id:T-27-065 sha:d2dd6389 src:manual/27-jtag.md:153 klas:E -->
 ### T-27-065 · proza · рядок 153
 
 **Книга каже, дослівно:**
@@ -986,7 +986,7 @@
 
 ---
 
-<!-- fc id:T-27-070 sha:52ec59e7 src:manual/27-jtag.md:160 klas:F -->
+<!-- fc id:T-27-070 sha:52ec59e7 src:manual/27-jtag.md:160 klas:E -->
 ### T-27-070 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -999,7 +999,7 @@
 
 ---
 
-<!-- fc id:T-27-071 sha:eb17bd67 src:manual/27-jtag.md:160 klas:F -->
+<!-- fc id:T-27-071 sha:eb17bd67 src:manual/27-jtag.md:160 klas:E -->
 ### T-27-071 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -1038,7 +1038,7 @@
 
 ---
 
-<!-- fc id:T-27-074 sha:0a72836e src:manual/27-jtag.md:171 klas:F -->
+<!-- fc id:T-27-074 sha:0a72836e src:manual/27-jtag.md:171 klas:E -->
 ### T-27-074 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -1051,7 +1051,7 @@
 
 ---
 
-<!-- fc id:T-27-075 sha:6e5142c0 src:manual/27-jtag.md:174 klas:F -->
+<!-- fc id:T-27-075 sha:6e5142c0 src:manual/27-jtag.md:174 klas:E -->
 ### T-27-075 · proza · рядок 174
 
 **Книга каже, дослівно:**

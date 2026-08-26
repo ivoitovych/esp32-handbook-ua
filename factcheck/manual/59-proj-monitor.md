@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-59-001 sha:027cf49b src:manual/59-proj-monitor.md:3 klas:F -->
+<!-- fc id:T-59-001 sha:027cf49b src:manual/59-proj-monitor.md:3 klas:E -->
 ### T-59-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-59-002 sha:622435fa src:manual/59-proj-monitor.md:3 klas:F -->
+<!-- fc id:T-59-002 sha:622435fa src:manual/59-proj-monitor.md:3 klas:E -->
 ### T-59-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-59-003 sha:62e72694 src:manual/59-proj-monitor.md:6 klas:F -->
+<!-- fc id:T-59-003 sha:62e72694 src:manual/59-proj-monitor.md:6 klas:E -->
 ### T-59-003 · proza · рядок 6
 
 **Книга каже, дослівно:**
@@ -62,7 +62,7 @@
 
 ---
 
-<!-- fc id:T-59-005 sha:9363613b src:manual/59-proj-monitor.md:13 klas:F -->
+<!-- fc id:T-59-005 sha:9363613b src:manual/59-proj-monitor.md:13 klas:E -->
 ### T-59-005 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-59-006 sha:cc87583a src:manual/59-proj-monitor.md:16 klas:F -->
+<!-- fc id:T-59-006 sha:cc87583a src:manual/59-proj-monitor.md:16 klas:E -->
 ### T-59-006 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -88,7 +88,7 @@
 
 ---
 
-<!-- fc id:T-59-007 sha:71b33275 src:manual/59-proj-monitor.md:16 klas:F -->
+<!-- fc id:T-59-007 sha:71b33275 src:manual/59-proj-monitor.md:16 klas:E -->
 ### T-59-007 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -101,7 +101,7 @@
 
 ---
 
-<!-- fc id:T-59-008 sha:5451c890 src:manual/59-proj-monitor.md:18 klas:F -->
+<!-- fc id:T-59-008 sha:5451c890 src:manual/59-proj-monitor.md:18 klas:E -->
 ### T-59-008 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -302,7 +302,7 @@
 
 ---
 
-<!-- fc id:T-59-021 sha:cd64831e src:manual/59-proj-monitor.md:43 klas:F -->
+<!-- fc id:T-59-021 sha:cd64831e src:manual/59-proj-monitor.md:43 klas:E -->
 ### T-59-021 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -315,7 +315,7 @@
 
 ---
 
-<!-- fc id:T-59-022 sha:ad6dd003 src:manual/59-proj-monitor.md:43 klas:F -->
+<!-- fc id:T-59-022 sha:ad6dd003 src:manual/59-proj-monitor.md:43 klas:E -->
 ### T-59-022 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -471,7 +471,7 @@
 
 ---
 
-<!-- fc id:T-59-030 sha:d228a3f3 src:manual/59-proj-monitor.md:58 klas:F -->
+<!-- fc id:T-59-030 sha:d228a3f3 src:manual/59-proj-monitor.md:58 klas:E -->
 ### T-59-030 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -484,7 +484,7 @@
 
 ---
 
-<!-- fc id:T-59-031 sha:90a056ff src:manual/59-proj-monitor.md:65 klas:F -->
+<!-- fc id:T-59-031 sha:90a056ff src:manual/59-proj-monitor.md:65 klas:E -->
 ### T-59-031 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -656,7 +656,7 @@
 
 ---
 
-<!-- fc id:T-59-043 sha:6ac5d50a src:manual/59-proj-monitor.md:87 klas:F -->
+<!-- fc id:T-59-043 sha:6ac5d50a src:manual/59-proj-monitor.md:87 klas:E -->
 ### T-59-043 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -1301,7 +1301,7 @@
 
 ---
 
-<!-- fc id:T-59-068 sha:7100ace9 src:manual/59-proj-monitor.md:182 klas:F -->
+<!-- fc id:T-59-068 sha:7100ace9 src:manual/59-proj-monitor.md:182 klas:E -->
 ### T-59-068 · proza · рядок 182
 
 **Книга каже, дослівно:**
@@ -1327,7 +1327,7 @@
 
 ---
 
-<!-- fc id:T-59-070 sha:d91d9459 src:manual/59-proj-monitor.md:186 klas:F -->
+<!-- fc id:T-59-070 sha:d91d9459 src:manual/59-proj-monitor.md:186 klas:E -->
 ### T-59-070 · proza · рядок 186
 
 **Книга каже, дослівно:**
@@ -1357,7 +1357,7 @@
 
 ---
 
-<!-- fc id:T-59-072 sha:49eb3151 src:manual/59-proj-monitor.md:190 klas:F -->
+<!-- fc id:T-59-072 sha:49eb3151 src:manual/59-proj-monitor.md:190 klas:E -->
 ### T-59-072 · proza · рядок 190
 
 **Книга каже, дослівно:**
@@ -1424,7 +1424,7 @@
 
 ---
 
-<!-- fc id:T-59-075 sha:537a2c04 src:manual/59-proj-monitor.md:196 klas:F -->
+<!-- fc id:T-59-075 sha:537a2c04 src:manual/59-proj-monitor.md:196 klas:E -->
 ### T-59-075 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1437,7 +1437,7 @@
 
 ---
 
-<!-- fc id:T-59-076 sha:2e06244b src:manual/59-proj-monitor.md:203 klas:F -->
+<!-- fc id:T-59-076 sha:2e06244b src:manual/59-proj-monitor.md:203 klas:E -->
 ### T-59-076 · proza · рядок 203
 
 **Книга каже, дослівно:**
@@ -1450,7 +1450,7 @@
 
 ---
 
-<!-- fc id:T-59-077 sha:ae5f2fa1 src:manual/59-proj-monitor.md:208 klas:F -->
+<!-- fc id:T-59-077 sha:ae5f2fa1 src:manual/59-proj-monitor.md:208 klas:E -->
 ### T-59-077 · proza · рядок 208
 
 **Книга каже, дослівно:**
@@ -1463,7 +1463,7 @@
 
 ---
 
-<!-- fc id:T-59-078 sha:88a09b36 src:manual/59-proj-monitor.md:208 klas:F -->
+<!-- fc id:T-59-078 sha:88a09b36 src:manual/59-proj-monitor.md:208 klas:E -->
 ### T-59-078 · proza · рядок 208
 
 **Книга каже, дослівно:**
@@ -1680,7 +1680,7 @@
 
 ---
 
-<!-- fc id:T-59-085 sha:7c65034e src:manual/59-proj-monitor.md:276 klas:F -->
+<!-- fc id:T-59-085 sha:7c65034e src:manual/59-proj-monitor.md:276 klas:E -->
 ### T-59-085 · proza · рядок 276
 
 **Книга каже, дослівно:**
@@ -1832,7 +1832,7 @@
 
 ---
 
-<!-- fc id:T-59-093 sha:7f8d2007 src:manual/59-proj-monitor.md:305 klas:F -->
+<!-- fc id:T-59-093 sha:7f8d2007 src:manual/59-proj-monitor.md:305 klas:E -->
 ### T-59-093 · proza · рядок 305
 
 **Книга каже, дослівно:**
@@ -1845,7 +1845,7 @@
 
 ---
 
-<!-- fc id:T-59-094 sha:2ab58c0c src:manual/59-proj-monitor.md:305 klas:F -->
+<!-- fc id:T-59-094 sha:2ab58c0c src:manual/59-proj-monitor.md:305 klas:E -->
 ### T-59-094 · proza · рядок 305
 
 **Книга каже, дослівно:**
@@ -2082,7 +2082,7 @@
 
 ---
 
-<!-- fc id:T-59-105 sha:0fa06472 src:manual/59-proj-monitor.md:345 klas:F -->
+<!-- fc id:T-59-105 sha:0fa06472 src:manual/59-proj-monitor.md:345 klas:E -->
 ### T-59-105 · proza · рядок 345
 
 **Книга каже, дослівно:**
@@ -2095,7 +2095,7 @@
 
 ---
 
-<!-- fc id:T-59-106 sha:046ce956 src:manual/59-proj-monitor.md:345 klas:F -->
+<!-- fc id:T-59-106 sha:046ce956 src:manual/59-proj-monitor.md:345 klas:E -->
 ### T-59-106 · proza · рядок 345
 
 **Книга каже, дослівно:**
@@ -2108,7 +2108,7 @@
 
 ---
 
-<!-- fc id:T-59-107 sha:8e1c5456 src:manual/59-proj-monitor.md:351 klas:F -->
+<!-- fc id:T-59-107 sha:8e1c5456 src:manual/59-proj-monitor.md:351 klas:E -->
 ### T-59-107 · proza · рядок 351
 
 **Книга каже, дослівно:**
@@ -2134,7 +2134,7 @@
 
 ---
 
-<!-- fc id:T-59-109 sha:ffa66d5d src:manual/59-proj-monitor.md:355 klas:F -->
+<!-- fc id:T-59-109 sha:ffa66d5d src:manual/59-proj-monitor.md:355 klas:E -->
 ### T-59-109 · proza · рядок 355
 
 **Книга каже, дослівно:**
@@ -2523,7 +2523,7 @@
 
 ---
 
-<!-- fc id:T-59-128 sha:30cbfc2f src:manual/59-proj-monitor.md:404 klas:F -->
+<!-- fc id:T-59-128 sha:30cbfc2f src:manual/59-proj-monitor.md:404 klas:E -->
 ### T-59-128 · proza · рядок 404
 
 **Книга каже, дослівно:**

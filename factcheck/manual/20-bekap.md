@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-20-001 sha:a8c773ce src:manual/20-bekap.md:3 klas:F -->
+<!-- fc id:T-20-001 sha:a8c773ce src:manual/20-bekap.md:3 klas:E -->
 ### T-20-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-20-002 sha:59154f75 src:manual/20-bekap.md:5 klas:F -->
+<!-- fc id:T-20-002 sha:59154f75 src:manual/20-bekap.md:5 klas:E -->
 ### T-20-002 · proza · рядок 5
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-20-003 sha:874825bd src:manual/20-bekap.md:5 klas:F -->
+<!-- fc id:T-20-003 sha:874825bd src:manual/20-bekap.md:5 klas:E -->
 ### T-20-003 · proza · рядок 5
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-20-004 sha:9e2c2e52 src:manual/20-bekap.md:5 klas:F -->
+<!-- fc id:T-20-004 sha:9e2c2e52 src:manual/20-bekap.md:5 klas:E -->
 ### T-20-004 · proza · рядок 5
 
 **Книга каже, дослівно:**
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-20-005 sha:6b268f8b src:manual/20-bekap.md:5 klas:F -->
+<!-- fc id:T-20-005 sha:6b268f8b src:manual/20-bekap.md:5 klas:E -->
 ### T-20-005 · proza · рядок 5
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-20-006 sha:90482c65 src:manual/20-bekap.md:9 klas:F -->
+<!-- fc id:T-20-006 sha:90482c65 src:manual/20-bekap.md:9 klas:E -->
 ### T-20-006 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-20-007 sha:8f177ddb src:manual/20-bekap.md:13 klas:F -->
+<!-- fc id:T-20-007 sha:8f177ddb src:manual/20-bekap.md:13 klas:E -->
 ### T-20-007 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-20-008 sha:922b2ef5 src:manual/20-bekap.md:13 klas:F -->
+<!-- fc id:T-20-008 sha:922b2ef5 src:manual/20-bekap.md:13 klas:E -->
 ### T-20-008 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-20-009 sha:68d8d515 src:manual/20-bekap.md:16 klas:F -->
+<!-- fc id:T-20-009 sha:68d8d515 src:manual/20-bekap.md:16 klas:E -->
 ### T-20-009 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-20-011 sha:f432e1c7 src:manual/20-bekap.md:22 klas:F -->
+<!-- fc id:T-20-011 sha:f432e1c7 src:manual/20-bekap.md:22 klas:E -->
 ### T-20-011 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-20-014 sha:40e6e1b3 src:manual/20-bekap.md:33 klas:F -->
+<!-- fc id:T-20-014 sha:40e6e1b3 src:manual/20-bekap.md:33 klas:E -->
 ### T-20-014 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-20-015 sha:a546a11c src:manual/20-bekap.md:33 klas:F -->
+<!-- fc id:T-20-015 sha:a546a11c src:manual/20-bekap.md:33 klas:E -->
 ### T-20-015 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-20-016 sha:316b59ef src:manual/20-bekap.md:37 klas:F -->
+<!-- fc id:T-20-016 sha:316b59ef src:manual/20-bekap.md:37 klas:E -->
 ### T-20-016 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-20-019 sha:4ea01b87 src:manual/20-bekap.md:47 klas:F -->
+<!-- fc id:T-20-019 sha:4ea01b87 src:manual/20-bekap.md:47 klas:E -->
 ### T-20-019 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-20-020 sha:5d0cb418 src:manual/20-bekap.md:47 klas:F -->
+<!-- fc id:T-20-020 sha:5d0cb418 src:manual/20-bekap.md:47 klas:E -->
 ### T-20-020 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-20-021 sha:4ca4dee1 src:manual/20-bekap.md:52 klas:F -->
+<!-- fc id:T-20-021 sha:4ca4dee1 src:manual/20-bekap.md:52 klas:E -->
 ### T-20-021 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-20-022 sha:ff67ae9e src:manual/20-bekap.md:52 klas:F -->
+<!-- fc id:T-20-022 sha:ff67ae9e src:manual/20-bekap.md:52 klas:E -->
 ### T-20-022 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-20-023 sha:575e3434 src:manual/20-bekap.md:52 klas:F -->
+<!-- fc id:T-20-023 sha:575e3434 src:manual/20-bekap.md:52 klas:E -->
 ### T-20-023 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-20-026 sha:3342698e src:manual/20-bekap.md:63 klas:F -->
+<!-- fc id:T-20-026 sha:3342698e src:manual/20-bekap.md:63 klas:E -->
 ### T-20-026 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-20-027 sha:c26209bc src:manual/20-bekap.md:63 klas:F -->
+<!-- fc id:T-20-027 sha:c26209bc src:manual/20-bekap.md:63 klas:E -->
 ### T-20-027 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -446,7 +446,7 @@
 
 ---
 
-<!-- fc id:T-20-032 sha:7a003e66 src:manual/20-bekap.md:75 klas:F -->
+<!-- fc id:T-20-032 sha:7a003e66 src:manual/20-bekap.md:75 klas:E -->
 ### T-20-032 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -459,7 +459,7 @@
 
 ---
 
-<!-- fc id:T-20-033 sha:4261e304 src:manual/20-bekap.md:75 klas:F -->
+<!-- fc id:T-20-033 sha:4261e304 src:manual/20-bekap.md:75 klas:E -->
 ### T-20-033 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -566,7 +566,7 @@
 
 ---
 
-<!-- fc id:T-20-038 sha:f99c46b0 src:manual/20-bekap.md:89 klas:F -->
+<!-- fc id:T-20-038 sha:f99c46b0 src:manual/20-bekap.md:89 klas:E -->
 ### T-20-038 · proza · рядок 89
 
 **Книга каже, дослівно:**
@@ -579,7 +579,7 @@
 
 ---
 
-<!-- fc id:T-20-039 sha:3befad65 src:manual/20-bekap.md:89 klas:F -->
+<!-- fc id:T-20-039 sha:3befad65 src:manual/20-bekap.md:89 klas:E -->
 ### T-20-039 · proza · рядок 89
 
 **Книга каже, дослівно:**
@@ -592,7 +592,7 @@
 
 ---
 
-<!-- fc id:T-20-040 sha:f4d76b97 src:manual/20-bekap.md:92 klas:F -->
+<!-- fc id:T-20-040 sha:f4d76b97 src:manual/20-bekap.md:92 klas:E -->
 ### T-20-040 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -605,7 +605,7 @@
 
 ---
 
-<!-- fc id:T-20-041 sha:d03e0e0b src:manual/20-bekap.md:92 klas:F -->
+<!-- fc id:T-20-041 sha:d03e0e0b src:manual/20-bekap.md:92 klas:E -->
 ### T-20-041 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -631,7 +631,7 @@
 
 ---
 
-<!-- fc id:T-20-043 sha:49ca9e02 src:manual/20-bekap.md:98 klas:F -->
+<!-- fc id:T-20-043 sha:49ca9e02 src:manual/20-bekap.md:98 klas:E -->
 ### T-20-043 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -644,7 +644,7 @@
 
 ---
 
-<!-- fc id:T-20-044 sha:2e9c77d2 src:manual/20-bekap.md:98 klas:F -->
+<!-- fc id:T-20-044 sha:2e9c77d2 src:manual/20-bekap.md:98 klas:E -->
 ### T-20-044 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -670,7 +670,7 @@
 
 ---
 
-<!-- fc id:T-20-046 sha:cb005c7d src:manual/20-bekap.md:102 klas:F -->
+<!-- fc id:T-20-046 sha:cb005c7d src:manual/20-bekap.md:102 klas:E -->
 ### T-20-046 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -683,7 +683,7 @@
 
 ---
 
-<!-- fc id:T-20-047 sha:249c316f src:manual/20-bekap.md:107 klas:F -->
+<!-- fc id:T-20-047 sha:249c316f src:manual/20-bekap.md:107 klas:E -->
 ### T-20-047 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -722,7 +722,7 @@
 
 ---
 
-<!-- fc id:T-20-050 sha:d2833e86 src:manual/20-bekap.md:114 klas:F -->
+<!-- fc id:T-20-050 sha:d2833e86 src:manual/20-bekap.md:114 klas:E -->
 ### T-20-050 · proza · рядок 114
 
 **Книга каже, дослівно:**
@@ -735,7 +735,7 @@
 
 ---
 
-<!-- fc id:T-20-051 sha:f2e1a3ee src:manual/20-bekap.md:114 klas:F -->
+<!-- fc id:T-20-051 sha:f2e1a3ee src:manual/20-bekap.md:114 klas:E -->
 ### T-20-051 · proza · рядок 114
 
 **Книга каже, дослівно:**
@@ -748,7 +748,7 @@
 
 ---
 
-<!-- fc id:T-20-052 sha:35fcef12 src:manual/20-bekap.md:117 klas:F -->
+<!-- fc id:T-20-052 sha:35fcef12 src:manual/20-bekap.md:117 klas:E -->
 ### T-20-052 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -761,7 +761,7 @@
 
 ---
 
-<!-- fc id:T-20-053 sha:99a45bff src:manual/20-bekap.md:117 klas:F -->
+<!-- fc id:T-20-053 sha:99a45bff src:manual/20-bekap.md:117 klas:E -->
 ### T-20-053 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -787,7 +787,7 @@
 
 ---
 
-<!-- fc id:T-20-055 sha:fb860e32 src:manual/20-bekap.md:121 klas:F -->
+<!-- fc id:T-20-055 sha:fb860e32 src:manual/20-bekap.md:121 klas:E -->
 ### T-20-055 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -813,7 +813,7 @@
 
 ---
 
-<!-- fc id:T-20-057 sha:73ae018c src:manual/20-bekap.md:124 klas:F -->
+<!-- fc id:T-20-057 sha:73ae018c src:manual/20-bekap.md:124 klas:E -->
 ### T-20-057 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -888,7 +888,7 @@
 
 ---
 
-<!-- fc id:T-20-061 sha:fb47796b src:manual/20-bekap.md:132 klas:F -->
+<!-- fc id:T-20-061 sha:fb47796b src:manual/20-bekap.md:132 klas:E -->
 ### T-20-061 · proza · рядок 132
 
 **Книга каже, дослівно:**
@@ -927,7 +927,7 @@
 
 ---
 
-<!-- fc id:T-20-064 sha:85ddb155 src:manual/20-bekap.md:136 klas:F -->
+<!-- fc id:T-20-064 sha:85ddb155 src:manual/20-bekap.md:136 klas:E -->
 ### T-20-064 · proza · рядок 136
 
 **Книга каже, дослівно:**
@@ -940,7 +940,7 @@
 
 ---
 
-<!-- fc id:T-20-065 sha:7a5feabf src:manual/20-bekap.md:136 klas:F -->
+<!-- fc id:T-20-065 sha:7a5feabf src:manual/20-bekap.md:136 klas:E -->
 ### T-20-065 · proza · рядок 136
 
 **Книга каже, дослівно:**
@@ -953,7 +953,7 @@
 
 ---
 
-<!-- fc id:T-20-066 sha:9fe25aaa src:manual/20-bekap.md:140 klas:F -->
+<!-- fc id:T-20-066 sha:9fe25aaa src:manual/20-bekap.md:140 klas:E -->
 ### T-20-066 · proza · рядок 140
 
 **Книга каже, дослівно:**
@@ -966,7 +966,7 @@
 
 ---
 
-<!-- fc id:T-20-067 sha:9223fa74 src:manual/20-bekap.md:144 klas:F -->
+<!-- fc id:T-20-067 sha:9223fa74 src:manual/20-bekap.md:144 klas:E -->
 ### T-20-067 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -979,7 +979,7 @@
 
 ---
 
-<!-- fc id:T-20-068 sha:e3962cae src:manual/20-bekap.md:149 klas:F -->
+<!-- fc id:T-20-068 sha:e3962cae src:manual/20-bekap.md:149 klas:E -->
 ### T-20-068 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -992,7 +992,7 @@
 
 ---
 
-<!-- fc id:T-20-069 sha:7673d49a src:manual/20-bekap.md:149 klas:F -->
+<!-- fc id:T-20-069 sha:7673d49a src:manual/20-bekap.md:149 klas:E -->
 ### T-20-069 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -1018,7 +1018,7 @@
 
 ---
 
-<!-- fc id:T-20-071 sha:02d4467f src:manual/20-bekap.md:149 klas:F -->
+<!-- fc id:T-20-071 sha:02d4467f src:manual/20-bekap.md:149 klas:E -->
 ### T-20-071 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -1031,7 +1031,7 @@
 
 ---
 
-<!-- fc id:T-20-072 sha:96861ea9 src:manual/20-bekap.md:153 klas:F -->
+<!-- fc id:T-20-072 sha:96861ea9 src:manual/20-bekap.md:153 klas:E -->
 ### T-20-072 · proza · рядок 153
 
 **Книга каже, дослівно:**
@@ -1044,7 +1044,7 @@
 
 ---
 
-<!-- fc id:T-20-073 sha:24a0b5a7 src:manual/20-bekap.md:157 klas:F -->
+<!-- fc id:T-20-073 sha:24a0b5a7 src:manual/20-bekap.md:157 klas:E -->
 ### T-20-073 · proza · рядок 157
 
 **Книга каже, дослівно:**
@@ -1129,7 +1129,7 @@
 
 ---
 
-<!-- fc id:T-20-076 sha:7e0a3e99 src:manual/20-bekap.md:165 klas:F -->
+<!-- fc id:T-20-076 sha:7e0a3e99 src:manual/20-bekap.md:165 klas:E -->
 ### T-20-076 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -1181,7 +1181,7 @@
 
 ---
 
-<!-- fc id:T-20-080 sha:9d5b76c9 src:manual/20-bekap.md:167 klas:F -->
+<!-- fc id:T-20-080 sha:9d5b76c9 src:manual/20-bekap.md:167 klas:E -->
 ### T-20-080 · proza · рядок 167
 
 **Книга каже, дослівно:**
@@ -1219,7 +1219,7 @@
 
 ---
 
-<!-- fc id:T-20-082 sha:51203b99 src:manual/20-bekap.md:167 klas:F -->
+<!-- fc id:T-20-082 sha:51203b99 src:manual/20-bekap.md:167 klas:E -->
 ### T-20-082 · proza · рядок 167
 
 **Книга каже, дослівно:**
@@ -1296,7 +1296,7 @@
 
 ---
 
-<!-- fc id:T-20-086 sha:f84cf2d7 src:manual/20-bekap.md:167 klas:F -->
+<!-- fc id:T-20-086 sha:f84cf2d7 src:manual/20-bekap.md:167 klas:E -->
 ### T-20-086 · proza · рядок 167
 
 **Книга каже, дослівно:**
@@ -1322,7 +1322,7 @@
 
 ---
 
-<!-- fc id:T-20-088 sha:17e4c2ab src:manual/20-bekap.md:185 klas:F -->
+<!-- fc id:T-20-088 sha:17e4c2ab src:manual/20-bekap.md:185 klas:E -->
 ### T-20-088 · proza · рядок 185
 
 **Книга каже, дослівно:**
@@ -1348,7 +1348,7 @@
 
 ---
 
-<!-- fc id:T-20-090 sha:ac74408e src:manual/20-bekap.md:188 klas:F -->
+<!-- fc id:T-20-090 sha:ac74408e src:manual/20-bekap.md:188 klas:E -->
 ### T-20-090 · proza · рядок 188
 
 **Книга каже, дослівно:**
@@ -1361,7 +1361,7 @@
 
 ---
 
-<!-- fc id:T-20-091 sha:cda8d684 src:manual/20-bekap.md:188 klas:F -->
+<!-- fc id:T-20-091 sha:cda8d684 src:manual/20-bekap.md:188 klas:E -->
 ### T-20-091 · proza · рядок 188
 
 **Книга каже, дослівно:**
@@ -1387,7 +1387,7 @@
 
 ---
 
-<!-- fc id:T-20-093 sha:e31a2ddc src:manual/20-bekap.md:194 klas:F -->
+<!-- fc id:T-20-093 sha:e31a2ddc src:manual/20-bekap.md:194 klas:E -->
 ### T-20-093 · proza · рядок 194
 
 **Книга каже, дослівно:**

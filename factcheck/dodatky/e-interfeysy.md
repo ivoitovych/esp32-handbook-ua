@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-E-001 sha:c1b34d94 src:dodatky/e-interfeysy.md:3 klas:F -->
+<!-- fc id:T-E-001 sha:c1b34d94 src:dodatky/e-interfeysy.md:3 klas:E -->
 ### T-E-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-E-003 sha:e208995d src:dodatky/e-interfeysy.md:8 klas:F -->
+<!-- fc id:T-E-003 sha:e208995d src:dodatky/e-interfeysy.md:8 klas:E -->
 ### T-E-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -1388,7 +1388,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-080 sha:508da6ef src:dodatky/e-interfeysy.md:51 klas:F -->
+<!-- fc id:T-E-080 sha:508da6ef src:dodatky/e-interfeysy.md:51 klas:E -->
 ### T-E-080 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -2311,7 +2311,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-146 sha:dcd5dd7e src:dodatky/e-interfeysy.md:134 klas:F -->
+<!-- fc id:T-E-146 sha:dcd5dd7e src:dodatky/e-interfeysy.md:134 klas:E -->
 ### T-E-146 · proza · рядок 134
 
 **Книга каже, дослівно:**
@@ -2350,7 +2350,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-149 sha:abdd0a3f src:dodatky/e-interfeysy.md:137 klas:F -->
+<!-- fc id:T-E-149 sha:abdd0a3f src:dodatky/e-interfeysy.md:137 klas:E -->
 ### T-E-149 · proza · рядок 137
 
 **Книга каже, дослівно:**

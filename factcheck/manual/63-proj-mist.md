@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-63-003 sha:9d3eb30c src:manual/63-proj-mist.md:11 klas:F -->
+<!-- fc id:T-63-003 sha:9d3eb30c src:manual/63-proj-mist.md:11 klas:E -->
 ### T-63-003 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-63-004 sha:03f842f5 src:manual/63-proj-mist.md:15 klas:F -->
+<!-- fc id:T-63-004 sha:03f842f5 src:manual/63-proj-mist.md:15 klas:E -->
 ### T-63-004 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-63-014 sha:e9aec07f src:manual/63-proj-mist.md:24 klas:F -->
+<!-- fc id:T-63-014 sha:e9aec07f src:manual/63-proj-mist.md:24 klas:E -->
 ### T-63-014 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-63-015 sha:6adf159f src:manual/63-proj-mist.md:30 klas:F -->
+<!-- fc id:T-63-015 sha:6adf159f src:manual/63-proj-mist.md:30 klas:E -->
 ### T-63-015 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-63-016 sha:fd256b9b src:manual/63-proj-mist.md:30 klas:F -->
+<!-- fc id:T-63-016 sha:fd256b9b src:manual/63-proj-mist.md:30 klas:E -->
 ### T-63-016 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -293,7 +293,7 @@
 
 ---
 
-<!-- fc id:T-63-022 sha:f5dcbd4f src:manual/63-proj-mist.md:52 klas:F -->
+<!-- fc id:T-63-022 sha:f5dcbd4f src:manual/63-proj-mist.md:52 klas:E -->
 ### T-63-022 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -421,7 +421,7 @@
 
 ---
 
-<!-- fc id:T-63-028 sha:bb7614e8 src:manual/63-proj-mist.md:79 klas:F -->
+<!-- fc id:T-63-028 sha:bb7614e8 src:manual/63-proj-mist.md:79 klas:E -->
 ### T-63-028 · proza · рядок 79
 
 **Книга каже, дослівно:**
@@ -630,7 +630,7 @@
 
 ---
 
-<!-- fc id:T-63-036 sha:24664874 src:manual/63-proj-mist.md:106 klas:F -->
+<!-- fc id:T-63-036 sha:24664874 src:manual/63-proj-mist.md:106 klas:E -->
 ### T-63-036 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -829,7 +829,7 @@
 
 ---
 
-<!-- fc id:T-63-047 sha:4dd09020 src:manual/63-proj-mist.md:143 klas:F -->
+<!-- fc id:T-63-047 sha:4dd09020 src:manual/63-proj-mist.md:143 klas:E -->
 ### T-63-047 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -842,7 +842,7 @@
 
 ---
 
-<!-- fc id:T-63-048 sha:e867d143 src:manual/63-proj-mist.md:147 klas:F -->
+<!-- fc id:T-63-048 sha:e867d143 src:manual/63-proj-mist.md:147 klas:E -->
 ### T-63-048 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -855,7 +855,7 @@
 
 ---
 
-<!-- fc id:T-63-049 sha:392d6692 src:manual/63-proj-mist.md:147 klas:F -->
+<!-- fc id:T-63-049 sha:392d6692 src:manual/63-proj-mist.md:147 klas:E -->
 ### T-63-049 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -868,7 +868,7 @@
 
 ---
 
-<!-- fc id:T-63-050 sha:b5609df0 src:manual/63-proj-mist.md:151 klas:F -->
+<!-- fc id:T-63-050 sha:b5609df0 src:manual/63-proj-mist.md:151 klas:E -->
 ### T-63-050 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -881,7 +881,7 @@
 
 ---
 
-<!-- fc id:T-63-051 sha:201a16b4 src:manual/63-proj-mist.md:151 klas:F -->
+<!-- fc id:T-63-051 sha:201a16b4 src:manual/63-proj-mist.md:151 klas:E -->
 ### T-63-051 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -894,7 +894,7 @@
 
 ---
 
-<!-- fc id:T-63-052 sha:be351eec src:manual/63-proj-mist.md:151 klas:F -->
+<!-- fc id:T-63-052 sha:be351eec src:manual/63-proj-mist.md:151 klas:E -->
 ### T-63-052 · proza · рядок 151
 
 **Книга каже, дослівно:**
@@ -907,7 +907,7 @@
 
 ---
 
-<!-- fc id:T-63-053 sha:12f1694d src:manual/63-proj-mist.md:157 klas:F -->
+<!-- fc id:T-63-053 sha:12f1694d src:manual/63-proj-mist.md:157 klas:E -->
 ### T-63-053 · proza · рядок 157
 
 **Книга каже, дослівно:**
@@ -1051,7 +1051,7 @@
 
 ---
 
-<!-- fc id:T-63-060 sha:582d7e98 src:manual/63-proj-mist.md:196 klas:F -->
+<!-- fc id:T-63-060 sha:582d7e98 src:manual/63-proj-mist.md:196 klas:E -->
 ### T-63-060 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1077,7 +1077,7 @@
 
 ---
 
-<!-- fc id:T-63-062 sha:cba16aff src:manual/63-proj-mist.md:204 klas:F -->
+<!-- fc id:T-63-062 sha:cba16aff src:manual/63-proj-mist.md:204 klas:E -->
 ### T-63-062 · proza · рядок 204
 
 **Книга каже, дослівно:**
@@ -1090,7 +1090,7 @@
 
 ---
 
-<!-- fc id:T-63-063 sha:631e3a04 src:manual/63-proj-mist.md:204 klas:F -->
+<!-- fc id:T-63-063 sha:631e3a04 src:manual/63-proj-mist.md:204 klas:E -->
 ### T-63-063 · proza · рядок 204
 
 **Книга каже, дослівно:**
@@ -1103,7 +1103,7 @@
 
 ---
 
-<!-- fc id:T-63-064 sha:a4aa8b3c src:manual/63-proj-mist.md:208 klas:F -->
+<!-- fc id:T-63-064 sha:a4aa8b3c src:manual/63-proj-mist.md:208 klas:E -->
 ### T-63-064 · proza · рядок 208
 
 **Книга каже, дослівно:**
@@ -1116,7 +1116,7 @@
 
 ---
 
-<!-- fc id:T-63-065 sha:72c8c00f src:manual/63-proj-mist.md:214 klas:F -->
+<!-- fc id:T-63-065 sha:72c8c00f src:manual/63-proj-mist.md:214 klas:E -->
 ### T-63-065 · proza · рядок 214
 
 **Книга каже, дослівно:**
@@ -1129,7 +1129,7 @@
 
 ---
 
-<!-- fc id:T-63-066 sha:9018335a src:manual/63-proj-mist.md:214 klas:F -->
+<!-- fc id:T-63-066 sha:9018335a src:manual/63-proj-mist.md:214 klas:E -->
 ### T-63-066 · proza · рядок 214
 
 **Книга каже, дослівно:**
@@ -1163,7 +1163,7 @@
 
 ---
 
-<!-- fc id:T-63-068 sha:c5ba6a52 src:manual/63-proj-mist.md:227 klas:F -->
+<!-- fc id:T-63-068 sha:c5ba6a52 src:manual/63-proj-mist.md:227 klas:E -->
 ### T-63-068 · proza · рядок 227
 
 **Книга каже, дослівно:**
@@ -1176,7 +1176,7 @@
 
 ---
 
-<!-- fc id:T-63-069 sha:af328f59 src:manual/63-proj-mist.md:227 klas:F -->
+<!-- fc id:T-63-069 sha:af328f59 src:manual/63-proj-mist.md:227 klas:E -->
 ### T-63-069 · proza · рядок 227
 
 **Книга каже, дослівно:**
@@ -1189,7 +1189,7 @@
 
 ---
 
-<!-- fc id:T-63-070 sha:8a0f6cc7 src:manual/63-proj-mist.md:227 klas:F -->
+<!-- fc id:T-63-070 sha:8a0f6cc7 src:manual/63-proj-mist.md:227 klas:E -->
 ### T-63-070 · proza · рядок 227
 
 **Книга каже, дослівно:**
@@ -1280,7 +1280,7 @@
 
 ---
 
-<!-- fc id:T-63-077 sha:eb7a0411 src:manual/63-proj-mist.md:237 klas:F -->
+<!-- fc id:T-63-077 sha:eb7a0411 src:manual/63-proj-mist.md:237 klas:E -->
 ### T-63-077 · proza · рядок 237
 
 **Книга каже, дослівно:**

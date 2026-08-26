@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-48-001 sha:1d016ec8 src:manual/48-motory.md:3 klas:F -->
+<!-- fc id:T-48-001 sha:1d016ec8 src:manual/48-motory.md:3 klas:E -->
 ### T-48-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-48-002 sha:ff31f5e4 src:manual/48-motory.md:3 klas:F -->
+<!-- fc id:T-48-002 sha:ff31f5e4 src:manual/48-motory.md:3 klas:E -->
 ### T-48-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-48-006 sha:1b28c542 src:manual/48-motory.md:18 klas:F -->
+<!-- fc id:T-48-006 sha:1b28c542 src:manual/48-motory.md:18 klas:E -->
 ### T-48-006 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-48-007 sha:97f48046 src:manual/48-motory.md:18 klas:F -->
+<!-- fc id:T-48-007 sha:97f48046 src:manual/48-motory.md:18 klas:E -->
 ### T-48-007 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-48-008 sha:c99f5934 src:manual/48-motory.md:22 klas:F -->
+<!-- fc id:T-48-008 sha:c99f5934 src:manual/48-motory.md:22 klas:E -->
 ### T-48-008 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-48-009 sha:1304b18d src:manual/48-motory.md:27 klas:F -->
+<!-- fc id:T-48-009 sha:1304b18d src:manual/48-motory.md:27 klas:E -->
 ### T-48-009 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-48-010 sha:fedd0acb src:manual/48-motory.md:30 klas:F -->
+<!-- fc id:T-48-010 sha:fedd0acb src:manual/48-motory.md:30 klas:E -->
 ### T-48-010 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-48-012 sha:fa6f8347 src:manual/48-motory.md:32 klas:F -->
+<!-- fc id:T-48-012 sha:fa6f8347 src:manual/48-motory.md:32 klas:E -->
 ### T-48-012 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-48-017 sha:d8eb78a5 src:manual/48-motory.md:46 klas:F -->
+<!-- fc id:T-48-017 sha:d8eb78a5 src:manual/48-motory.md:46 klas:E -->
 ### T-48-017 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-48-021 sha:138f68f6 src:manual/48-motory.md:54 klas:F -->
+<!-- fc id:T-48-021 sha:138f68f6 src:manual/48-motory.md:54 klas:E -->
 ### T-48-021 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -292,7 +292,7 @@
 
 ---
 
-<!-- fc id:T-48-023 sha:1d7daf10 src:manual/48-motory.md:54 klas:F -->
+<!-- fc id:T-48-023 sha:1d7daf10 src:manual/48-motory.md:54 klas:E -->
 ### T-48-023 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-48-024 sha:bd321b31 src:manual/48-motory.md:61 klas:F -->
+<!-- fc id:T-48-024 sha:bd321b31 src:manual/48-motory.md:61 klas:E -->
 ### T-48-024 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-48-025 sha:5ee800ed src:manual/48-motory.md:61 klas:F -->
+<!-- fc id:T-48-025 sha:5ee800ed src:manual/48-motory.md:61 klas:E -->
 ### T-48-025 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-48-026 sha:12ac6245 src:manual/48-motory.md:69 klas:F -->
+<!-- fc id:T-48-026 sha:12ac6245 src:manual/48-motory.md:69 klas:E -->
 ### T-48-026 · proza · рядок 69
 
 **Книга каже, дослівно:**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-48-027 sha:9e5b5ed9 src:manual/48-motory.md:69 klas:F -->
+<!-- fc id:T-48-027 sha:9e5b5ed9 src:manual/48-motory.md:69 klas:E -->
 ### T-48-027 · proza · рядок 69
 
 **Книга каже, дослівно:**
@@ -383,7 +383,7 @@
 
 ---
 
-<!-- fc id:T-48-030 sha:21320f28 src:manual/48-motory.md:77 klas:F -->
+<!-- fc id:T-48-030 sha:21320f28 src:manual/48-motory.md:77 klas:E -->
 ### T-48-030 · proza · рядок 77
 
 **Книга каже, дослівно:**
@@ -396,7 +396,7 @@
 
 ---
 
-<!-- fc id:T-48-031 sha:63b5805c src:manual/48-motory.md:81 klas:F -->
+<!-- fc id:T-48-031 sha:63b5805c src:manual/48-motory.md:81 klas:E -->
 ### T-48-031 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -409,7 +409,7 @@
 
 ---
 
-<!-- fc id:T-48-032 sha:639119ca src:manual/48-motory.md:81 klas:F -->
+<!-- fc id:T-48-032 sha:639119ca src:manual/48-motory.md:81 klas:E -->
 ### T-48-032 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -422,7 +422,7 @@
 
 ---
 
-<!-- fc id:T-48-033 sha:85f8c244 src:manual/48-motory.md:81 klas:F -->
+<!-- fc id:T-48-033 sha:85f8c244 src:manual/48-motory.md:81 klas:E -->
 ### T-48-033 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -435,7 +435,7 @@
 
 ---
 
-<!-- fc id:T-48-034 sha:854242ee src:manual/48-motory.md:84 klas:F -->
+<!-- fc id:T-48-034 sha:854242ee src:manual/48-motory.md:84 klas:E -->
 ### T-48-034 · proza · рядок 84
 
 **Книга каже, дослівно:**
@@ -448,7 +448,7 @@
 
 ---
 
-<!-- fc id:T-48-035 sha:752e2233 src:manual/48-motory.md:88 klas:F -->
+<!-- fc id:T-48-035 sha:752e2233 src:manual/48-motory.md:88 klas:E -->
 ### T-48-035 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -474,7 +474,7 @@
 
 ---
 
-<!-- fc id:T-48-037 sha:965ecaef src:manual/48-motory.md:92 klas:F -->
+<!-- fc id:T-48-037 sha:965ecaef src:manual/48-motory.md:92 klas:E -->
 ### T-48-037 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -500,7 +500,7 @@
 
 ---
 
-<!-- fc id:T-48-039 sha:248f1f7c src:manual/48-motory.md:95 klas:F -->
+<!-- fc id:T-48-039 sha:248f1f7c src:manual/48-motory.md:95 klas:E -->
 ### T-48-039 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -513,7 +513,7 @@
 
 ---
 
-<!-- fc id:T-48-040 sha:6c18de87 src:manual/48-motory.md:95 klas:F -->
+<!-- fc id:T-48-040 sha:6c18de87 src:manual/48-motory.md:95 klas:E -->
 ### T-48-040 · proza · рядок 95
 
 **Книга каже, дослівно:**
@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-48-041 sha:2306e4bd src:manual/48-motory.md:100 klas:F -->
+<!-- fc id:T-48-041 sha:2306e4bd src:manual/48-motory.md:100 klas:E -->
 ### T-48-041 · proza · рядок 100
 
 **Книга каже, дослівно:**
@@ -627,7 +627,7 @@
 
 ---
 
-<!-- fc id:T-48-048 sha:f8205a42 src:manual/48-motory.md:118 klas:F -->
+<!-- fc id:T-48-048 sha:f8205a42 src:manual/48-motory.md:118 klas:E -->
 ### T-48-048 · proza · рядок 118
 
 **Книга каже, дослівно:**
@@ -666,7 +666,7 @@
 
 ---
 
-<!-- fc id:T-48-051 sha:674c7127 src:manual/48-motory.md:125 klas:F -->
+<!-- fc id:T-48-051 sha:674c7127 src:manual/48-motory.md:125 klas:E -->
 ### T-48-051 · proza · рядок 125
 
 **Книга каже, дослівно:**
@@ -679,7 +679,7 @@
 
 ---
 
-<!-- fc id:T-48-052 sha:95ed148f src:manual/48-motory.md:129 klas:F -->
+<!-- fc id:T-48-052 sha:95ed148f src:manual/48-motory.md:129 klas:E -->
 ### T-48-052 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -692,7 +692,7 @@
 
 ---
 
-<!-- fc id:T-48-053 sha:e97953d6 src:manual/48-motory.md:129 klas:F -->
+<!-- fc id:T-48-053 sha:e97953d6 src:manual/48-motory.md:129 klas:E -->
 ### T-48-053 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -705,7 +705,7 @@
 
 ---
 
-<!-- fc id:T-48-054 sha:6cc765ce src:manual/48-motory.md:133 klas:F -->
+<!-- fc id:T-48-054 sha:6cc765ce src:manual/48-motory.md:133 klas:E -->
 ### T-48-054 · proza · рядок 133
 
 **Книга каже, дослівно:**
@@ -718,7 +718,7 @@
 
 ---
 
-<!-- fc id:T-48-055 sha:ddfc4d2c src:manual/48-motory.md:133 klas:F -->
+<!-- fc id:T-48-055 sha:ddfc4d2c src:manual/48-motory.md:133 klas:E -->
 ### T-48-055 · proza · рядок 133
 
 **Книга каже, дослівно:**
@@ -731,7 +731,7 @@
 
 ---
 
-<!-- fc id:T-48-056 sha:2a223890 src:manual/48-motory.md:138 klas:F -->
+<!-- fc id:T-48-056 sha:2a223890 src:manual/48-motory.md:138 klas:E -->
 ### T-48-056 · proza · рядок 138
 
 **Книга каже, дослівно:**
@@ -757,7 +757,7 @@
 
 ---
 
-<!-- fc id:T-48-058 sha:9f9f7392 src:manual/48-motory.md:142 klas:F -->
+<!-- fc id:T-48-058 sha:9f9f7392 src:manual/48-motory.md:142 klas:E -->
 ### T-48-058 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -770,7 +770,7 @@
 
 ---
 
-<!-- fc id:T-48-059 sha:f1ab7bcf src:manual/48-motory.md:142 klas:F -->
+<!-- fc id:T-48-059 sha:f1ab7bcf src:manual/48-motory.md:142 klas:E -->
 ### T-48-059 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -796,7 +796,7 @@
 
 ---
 
-<!-- fc id:T-48-061 sha:9778153a src:manual/48-motory.md:154 klas:F -->
+<!-- fc id:T-48-061 sha:9778153a src:manual/48-motory.md:154 klas:E -->
 ### T-48-061 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -809,7 +809,7 @@
 
 ---
 
-<!-- fc id:T-48-062 sha:085be07d src:manual/48-motory.md:154 klas:F -->
+<!-- fc id:T-48-062 sha:085be07d src:manual/48-motory.md:154 klas:E -->
 ### T-48-062 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -835,7 +835,7 @@
 
 ---
 
-<!-- fc id:T-48-064 sha:90a4b095 src:manual/48-motory.md:157 klas:F -->
+<!-- fc id:T-48-064 sha:90a4b095 src:manual/48-motory.md:157 klas:E -->
 ### T-48-064 · proza · рядок 157
 
 **Книга каже, дослівно:**
@@ -848,7 +848,7 @@
 
 ---
 
-<!-- fc id:T-48-065 sha:41655149 src:manual/48-motory.md:163 klas:F -->
+<!-- fc id:T-48-065 sha:41655149 src:manual/48-motory.md:163 klas:E -->
 ### T-48-065 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -861,7 +861,7 @@
 
 ---
 
-<!-- fc id:T-48-066 sha:118944b6 src:manual/48-motory.md:163 klas:F -->
+<!-- fc id:T-48-066 sha:118944b6 src:manual/48-motory.md:163 klas:E -->
 ### T-48-066 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -887,7 +887,7 @@
 
 ---
 
-<!-- fc id:T-48-068 sha:0414d9da src:manual/48-motory.md:178 klas:F -->
+<!-- fc id:T-48-068 sha:0414d9da src:manual/48-motory.md:178 klas:E -->
 ### T-48-068 · proza · рядок 178
 
 **Книга каже, дослівно:**
@@ -913,7 +913,7 @@
 
 ---
 
-<!-- fc id:T-48-070 sha:61270839 src:manual/48-motory.md:184 klas:F -->
+<!-- fc id:T-48-070 sha:61270839 src:manual/48-motory.md:184 klas:E -->
 ### T-48-070 · proza · рядок 184
 
 **Книга каже, дослівно:**
@@ -926,7 +926,7 @@
 
 ---
 
-<!-- fc id:T-48-071 sha:9a72ba0d src:manual/48-motory.md:187 klas:F -->
+<!-- fc id:T-48-071 sha:9a72ba0d src:manual/48-motory.md:187 klas:E -->
 ### T-48-071 · proza · рядок 187
 
 **Книга каже, дослівно:**
@@ -939,7 +939,7 @@
 
 ---
 
-<!-- fc id:T-48-072 sha:eb9d31db src:manual/48-motory.md:189 klas:F -->
+<!-- fc id:T-48-072 sha:eb9d31db src:manual/48-motory.md:189 klas:E -->
 ### T-48-072 · proza · рядок 189
 
 **Книга каже, дослівно:**
@@ -952,7 +952,7 @@
 
 ---
 
-<!-- fc id:T-48-073 sha:a970a34d src:manual/48-motory.md:191 klas:F -->
+<!-- fc id:T-48-073 sha:a970a34d src:manual/48-motory.md:191 klas:E -->
 ### T-48-073 · proza · рядок 191
 
 **Книга каже, дослівно:**
@@ -965,7 +965,7 @@
 
 ---
 
-<!-- fc id:T-48-074 sha:7703b9e4 src:manual/48-motory.md:193 klas:F -->
+<!-- fc id:T-48-074 sha:7703b9e4 src:manual/48-motory.md:193 klas:E -->
 ### T-48-074 · proza · рядок 193
 
 **Книга каже, дослівно:**

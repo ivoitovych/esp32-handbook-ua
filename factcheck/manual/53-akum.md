@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-53-002 sha:d7193eec src:manual/53-akum.md:9 klas:F -->
+<!-- fc id:T-53-002 sha:d7193eec src:manual/53-akum.md:9 klas:E -->
 ### T-53-002 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -62,7 +62,7 @@
 
 ---
 
-<!-- fc id:T-53-005 sha:6665dd9e src:manual/53-akum.md:16 klas:F -->
+<!-- fc id:T-53-005 sha:6665dd9e src:manual/53-akum.md:16 klas:E -->
 ### T-53-005 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -75,7 +75,7 @@
 
 ---
 
-<!-- fc id:T-53-006 sha:00b327a9 src:manual/53-akum.md:20 klas:F -->
+<!-- fc id:T-53-006 sha:00b327a9 src:manual/53-akum.md:20 klas:E -->
 ### T-53-006 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -88,7 +88,7 @@
 
 ---
 
-<!-- fc id:T-53-007 sha:b33069fe src:manual/53-akum.md:22 klas:F -->
+<!-- fc id:T-53-007 sha:b33069fe src:manual/53-akum.md:22 klas:E -->
 ### T-53-007 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -101,7 +101,7 @@
 
 ---
 
-<!-- fc id:T-53-008 sha:79b3a8f3 src:manual/53-akum.md:22 klas:F -->
+<!-- fc id:T-53-008 sha:79b3a8f3 src:manual/53-akum.md:22 klas:E -->
 ### T-53-008 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -127,7 +127,7 @@
 
 ---
 
-<!-- fc id:T-53-010 sha:7e714149 src:manual/53-akum.md:29 klas:F -->
+<!-- fc id:T-53-010 sha:7e714149 src:manual/53-akum.md:29 klas:E -->
 ### T-53-010 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -140,7 +140,7 @@
 
 ---
 
-<!-- fc id:T-53-011 sha:31904ae2 src:manual/53-akum.md:32 klas:F -->
+<!-- fc id:T-53-011 sha:31904ae2 src:manual/53-akum.md:32 klas:E -->
 ### T-53-011 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -153,7 +153,7 @@
 
 ---
 
-<!-- fc id:T-53-012 sha:a7c25c07 src:manual/53-akum.md:35 klas:F -->
+<!-- fc id:T-53-012 sha:a7c25c07 src:manual/53-akum.md:35 klas:E -->
 ### T-53-012 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -166,7 +166,7 @@
 
 ---
 
-<!-- fc id:T-53-013 sha:f101420b src:manual/53-akum.md:35 klas:F -->
+<!-- fc id:T-53-013 sha:f101420b src:manual/53-akum.md:35 klas:E -->
 ### T-53-013 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -179,7 +179,7 @@
 
 ---
 
-<!-- fc id:T-53-014 sha:adda5440 src:manual/53-akum.md:42 klas:F -->
+<!-- fc id:T-53-014 sha:adda5440 src:manual/53-akum.md:42 klas:E -->
 ### T-53-014 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -192,7 +192,7 @@
 
 ---
 
-<!-- fc id:T-53-015 sha:54d55b5c src:manual/53-akum.md:42 klas:F -->
+<!-- fc id:T-53-015 sha:54d55b5c src:manual/53-akum.md:42 klas:E -->
 ### T-53-015 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -222,7 +222,7 @@
 
 ---
 
-<!-- fc id:T-53-017 sha:a84fa432 src:manual/53-akum.md:48 klas:F -->
+<!-- fc id:T-53-017 sha:a84fa432 src:manual/53-akum.md:48 klas:E -->
 ### T-53-017 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -235,7 +235,7 @@
 
 ---
 
-<!-- fc id:T-53-018 sha:ea88a78a src:manual/53-akum.md:52 klas:F -->
+<!-- fc id:T-53-018 sha:ea88a78a src:manual/53-akum.md:52 klas:E -->
 ### T-53-018 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -261,7 +261,7 @@
 
 ---
 
-<!-- fc id:T-53-020 sha:a0fb7a46 src:manual/53-akum.md:56 klas:F -->
+<!-- fc id:T-53-020 sha:a0fb7a46 src:manual/53-akum.md:56 klas:E -->
 ### T-53-020 · proza · рядок 56
 
 **Книга каже, дослівно:**
@@ -291,7 +291,7 @@
 
 ---
 
-<!-- fc id:T-53-022 sha:d85d0771 src:manual/53-akum.md:64 klas:F -->
+<!-- fc id:T-53-022 sha:d85d0771 src:manual/53-akum.md:64 klas:E -->
 ### T-53-022 · proza · рядок 64
 
 **Книга каже, дослівно:**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-53-023 sha:b54bf970 src:manual/53-akum.md:69 klas:F -->
+<!-- fc id:T-53-023 sha:b54bf970 src:manual/53-akum.md:69 klas:E -->
 ### T-53-023 · proza · рядок 69
 
 **Книга каже, дослівно:**
@@ -317,7 +317,7 @@
 
 ---
 
-<!-- fc id:T-53-024 sha:83ee8868 src:manual/53-akum.md:72 klas:F -->
+<!-- fc id:T-53-024 sha:83ee8868 src:manual/53-akum.md:72 klas:E -->
 ### T-53-024 · proza · рядок 72
 
 **Книга каже, дослівно:**
@@ -330,7 +330,7 @@
 
 ---
 
-<!-- fc id:T-53-025 sha:cde8c78b src:manual/53-akum.md:75 klas:F -->
+<!-- fc id:T-53-025 sha:cde8c78b src:manual/53-akum.md:75 klas:E -->
 ### T-53-025 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -356,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-53-027 sha:869d5d46 src:manual/53-akum.md:82 klas:F -->
+<!-- fc id:T-53-027 sha:869d5d46 src:manual/53-akum.md:82 klas:E -->
 ### T-53-027 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -369,7 +369,7 @@
 
 ---
 
-<!-- fc id:T-53-028 sha:0fdb8f16 src:manual/53-akum.md:82 klas:F -->
+<!-- fc id:T-53-028 sha:0fdb8f16 src:manual/53-akum.md:82 klas:E -->
 ### T-53-028 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -434,7 +434,7 @@
 
 ---
 
-<!-- fc id:T-53-033 sha:fc929c77 src:manual/53-akum.md:94 klas:F -->
+<!-- fc id:T-53-033 sha:fc929c77 src:manual/53-akum.md:94 klas:E -->
 ### T-53-033 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -460,7 +460,7 @@
 
 ---
 
-<!-- fc id:T-53-035 sha:a1909bb0 src:manual/53-akum.md:99 klas:F -->
+<!-- fc id:T-53-035 sha:a1909bb0 src:manual/53-akum.md:99 klas:E -->
 ### T-53-035 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -490,7 +490,7 @@
 
 ---
 
-<!-- fc id:T-53-037 sha:b3d80b33 src:manual/53-akum.md:102 klas:F -->
+<!-- fc id:T-53-037 sha:b3d80b33 src:manual/53-akum.md:102 klas:E -->
 ### T-53-037 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -503,7 +503,7 @@
 
 ---
 
-<!-- fc id:T-53-038 sha:fd7b399f src:manual/53-akum.md:105 klas:F -->
+<!-- fc id:T-53-038 sha:fd7b399f src:manual/53-akum.md:105 klas:E -->
 ### T-53-038 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -529,7 +529,7 @@
 
 ---
 
-<!-- fc id:T-53-040 sha:f39d20b1 src:manual/53-akum.md:114 klas:F -->
+<!-- fc id:T-53-040 sha:f39d20b1 src:manual/53-akum.md:114 klas:E -->
 ### T-53-040 · proza · рядок 114
 
 **Книга каже, дослівно:**
@@ -542,7 +542,7 @@
 
 ---
 
-<!-- fc id:T-53-041 sha:d9afe2c0 src:manual/53-akum.md:116 klas:F -->
+<!-- fc id:T-53-041 sha:d9afe2c0 src:manual/53-akum.md:116 klas:E -->
 ### T-53-041 · proza · рядок 116
 
 **Книга каже, дослівно:**
@@ -555,7 +555,7 @@
 
 ---
 
-<!-- fc id:T-53-042 sha:929fd4d3 src:manual/53-akum.md:119 klas:F -->
+<!-- fc id:T-53-042 sha:929fd4d3 src:manual/53-akum.md:119 klas:E -->
 ### T-53-042 · proza · рядок 119
 
 **Книга каже, дослівно:**
@@ -568,7 +568,7 @@
 
 ---
 
-<!-- fc id:T-53-043 sha:11e23280 src:manual/53-akum.md:122 klas:F -->
+<!-- fc id:T-53-043 sha:11e23280 src:manual/53-akum.md:122 klas:E -->
 ### T-53-043 · proza · рядок 122
 
 **Книга каже, дослівно:**
@@ -581,7 +581,7 @@
 
 ---
 
-<!-- fc id:T-53-044 sha:c36c9c05 src:manual/53-akum.md:126 klas:F -->
+<!-- fc id:T-53-044 sha:c36c9c05 src:manual/53-akum.md:126 klas:E -->
 ### T-53-044 · proza · рядок 126
 
 **Книга каже, дослівно:**
@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-53-046 sha:da38c45c src:manual/53-akum.md:129 klas:F -->
+<!-- fc id:T-53-046 sha:da38c45c src:manual/53-akum.md:129 klas:E -->
 ### T-53-046 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -620,7 +620,7 @@
 
 ---
 
-<!-- fc id:T-53-047 sha:55b3d19f src:manual/53-akum.md:132 klas:F -->
+<!-- fc id:T-53-047 sha:55b3d19f src:manual/53-akum.md:132 klas:E -->
 ### T-53-047 · proza · рядок 132
 
 **Книга каже, дослівно:**
@@ -633,7 +633,7 @@
 
 ---
 
-<!-- fc id:T-53-048 sha:9b1aa343 src:manual/53-akum.md:132 klas:F -->
+<!-- fc id:T-53-048 sha:9b1aa343 src:manual/53-akum.md:132 klas:E -->
 ### T-53-048 · proza · рядок 132
 
 **Книга каже, дослівно:**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-53-049 sha:8e84f395 src:manual/53-akum.md:135 klas:F -->
+<!-- fc id:T-53-049 sha:8e84f395 src:manual/53-akum.md:135 klas:E -->
 ### T-53-049 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -659,7 +659,7 @@
 
 ---
 
-<!-- fc id:T-53-050 sha:5c21a0ca src:manual/53-akum.md:135 klas:F -->
+<!-- fc id:T-53-050 sha:5c21a0ca src:manual/53-akum.md:135 klas:E -->
 ### T-53-050 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -698,7 +698,7 @@
 
 ---
 
-<!-- fc id:T-53-053 sha:ecaf97b6 src:manual/53-akum.md:143 klas:F -->
+<!-- fc id:T-53-053 sha:ecaf97b6 src:manual/53-akum.md:143 klas:E -->
 ### T-53-053 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -711,7 +711,7 @@
 
 ---
 
-<!-- fc id:T-53-054 sha:0fc290ee src:manual/53-akum.md:146 klas:F -->
+<!-- fc id:T-53-054 sha:0fc290ee src:manual/53-akum.md:146 klas:E -->
 ### T-53-054 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -724,7 +724,7 @@
 
 ---
 
-<!-- fc id:T-53-055 sha:ce4a5ac3 src:manual/53-akum.md:146 klas:F -->
+<!-- fc id:T-53-055 sha:ce4a5ac3 src:manual/53-akum.md:146 klas:E -->
 ### T-53-055 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -737,7 +737,7 @@
 
 ---
 
-<!-- fc id:T-53-056 sha:b0df9cc0 src:manual/53-akum.md:149 klas:F -->
+<!-- fc id:T-53-056 sha:b0df9cc0 src:manual/53-akum.md:149 klas:E -->
 ### T-53-056 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -763,7 +763,7 @@
 
 ---
 
-<!-- fc id:T-53-058 sha:1d8fdaf1 src:manual/53-akum.md:154 klas:F -->
+<!-- fc id:T-53-058 sha:1d8fdaf1 src:manual/53-akum.md:154 klas:E -->
 ### T-53-058 · proza · рядок 154
 
 **Книга каже, дослівно:**
@@ -776,7 +776,7 @@
 
 ---
 
-<!-- fc id:T-53-059 sha:da7090c4 src:manual/53-akum.md:160 klas:F -->
+<!-- fc id:T-53-059 sha:da7090c4 src:manual/53-akum.md:160 klas:E -->
 ### T-53-059 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -806,7 +806,7 @@
 
 ---
 
-<!-- fc id:T-53-061 sha:0027b5b8 src:manual/53-akum.md:167 klas:F -->
+<!-- fc id:T-53-061 sha:0027b5b8 src:manual/53-akum.md:167 klas:E -->
 ### T-53-061 · proza · рядок 167
 
 **Книга каже, дослівно:**
@@ -836,7 +836,7 @@
 
 ---
 
-<!-- fc id:T-53-063 sha:1beb0891 src:manual/53-akum.md:172 klas:F -->
+<!-- fc id:T-53-063 sha:1beb0891 src:manual/53-akum.md:172 klas:E -->
 ### T-53-063 · proza · рядок 172
 
 **Книга каже, дослівно:**
@@ -849,7 +849,7 @@
 
 ---
 
-<!-- fc id:T-53-064 sha:bfcd7699 src:manual/53-akum.md:172 klas:F -->
+<!-- fc id:T-53-064 sha:bfcd7699 src:manual/53-akum.md:172 klas:E -->
 ### T-53-064 · proza · рядок 172
 
 **Книга каже, дослівно:**
@@ -862,7 +862,7 @@
 
 ---
 
-<!-- fc id:T-53-065 sha:09c15b93 src:manual/53-akum.md:179 klas:F -->
+<!-- fc id:T-53-065 sha:09c15b93 src:manual/53-akum.md:179 klas:E -->
 ### T-53-065 · proza · рядок 179
 
 **Книга каже, дослівно:**
@@ -892,7 +892,7 @@
 
 ---
 
-<!-- fc id:T-53-067 sha:efd5754e src:manual/53-akum.md:185 klas:F -->
+<!-- fc id:T-53-067 sha:efd5754e src:manual/53-akum.md:185 klas:E -->
 ### T-53-067 · proza · рядок 185
 
 **Книга каже, дослівно:**
@@ -905,7 +905,7 @@
 
 ---
 
-<!-- fc id:T-53-068 sha:27c4ff2e src:manual/53-akum.md:188 klas:F -->
+<!-- fc id:T-53-068 sha:27c4ff2e src:manual/53-akum.md:188 klas:E -->
 ### T-53-068 · proza · рядок 188
 
 **Книга каже, дослівно:**
@@ -948,7 +948,7 @@
 
 ---
 
-<!-- fc id:T-53-071 sha:1905c881 src:manual/53-akum.md:202 klas:F -->
+<!-- fc id:T-53-071 sha:1905c881 src:manual/53-akum.md:202 klas:E -->
 ### T-53-071 · proza · рядок 202
 
 **Книга каже, дослівно:**
@@ -978,7 +978,7 @@
 
 ---
 
-<!-- fc id:T-53-073 sha:8a11b5a3 src:manual/53-akum.md:210 klas:F -->
+<!-- fc id:T-53-073 sha:8a11b5a3 src:manual/53-akum.md:210 klas:E -->
 ### T-53-073 · proza · рядок 210
 
 **Книга каже, дослівно:**
@@ -991,7 +991,7 @@
 
 ---
 
-<!-- fc id:T-53-074 sha:50b17776 src:manual/53-akum.md:212 klas:F -->
+<!-- fc id:T-53-074 sha:50b17776 src:manual/53-akum.md:212 klas:E -->
 ### T-53-074 · proza · рядок 212
 
 **Книга каже, дослівно:**
@@ -1004,7 +1004,7 @@
 
 ---
 
-<!-- fc id:T-53-075 sha:93b288da src:manual/53-akum.md:215 klas:F -->
+<!-- fc id:T-53-075 sha:93b288da src:manual/53-akum.md:215 klas:E -->
 ### T-53-075 · proza · рядок 215
 
 **Книга каже, дослівно:**
@@ -1017,7 +1017,7 @@
 
 ---
 
-<!-- fc id:T-53-076 sha:f860d0f4 src:manual/53-akum.md:217 klas:F -->
+<!-- fc id:T-53-076 sha:f860d0f4 src:manual/53-akum.md:217 klas:E -->
 ### T-53-076 · proza · рядок 217
 
 **Книга каже, дослівно:**
@@ -1030,7 +1030,7 @@
 
 ---
 
-<!-- fc id:T-53-077 sha:10453ec8 src:manual/53-akum.md:219 klas:F -->
+<!-- fc id:T-53-077 sha:10453ec8 src:manual/53-akum.md:219 klas:E -->
 ### T-53-077 · proza · рядок 219
 
 **Книга каже, дослівно:**
@@ -1043,7 +1043,7 @@
 
 ---
 
-<!-- fc id:T-53-078 sha:44f49a98 src:manual/53-akum.md:221 klas:F -->
+<!-- fc id:T-53-078 sha:44f49a98 src:manual/53-akum.md:221 klas:E -->
 ### T-53-078 · proza · рядок 221
 
 **Книга каже, дослівно:**
