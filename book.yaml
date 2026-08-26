@@ -1,6 +1,7 @@
 # Маніфест збирання. Джерело істини для складу кожного PDF.
 # Порядок файлів тут = порядок сторінок у книзі.
-# Додали розділ — додайте рядок сюди, інакше він не потрапить у друк.
+# Файл, якого ще немає на диску, пропускається з попередженням —
+# так структура книги видима цілком, ще поки текст пишеться.
 
 meta:
   title: "ESP32: практичний довідник"
@@ -20,9 +21,11 @@ targets:
     parts:
       - title: "Вступ"
         silent: true
-        files: [manual/00-pro-dovidnyk.md]
+        files:
+          - manual/00-pro-dovidnyk.md
       - title: "Ярус 0. Картки"
-        blurb: "Дванадцять сторінок, які мають бути в руках, а не в файлі. Друкуються окремо, ламінуються, їдуть у поле."
+        blurb: >-
+          Дванадцять сторінок, які мають бути в руках, а не у файлі. Друкуються окремо на A4, ламінуються, їдуть у поле. Решта книги пояснює, чому там написано саме це.
         files:
           - kartky/k01-triazh.md
           - kartky/k02-stan.md
@@ -37,7 +40,147 @@ targets:
           - kartky/k11-nikoly.md
           - kartky/k12-komplekt.md
       - title: "Частина I. Платформа"
-        files: []
+        blurb: >-
+          Що це за кремній, чим сімейства різняться і коли ESP32 — не той вибір.
+        files:
+          - manual/01-platforma.md
+          - manual/02-chipy.md
+          - manual/03-soc.md
+          - manual/04-peryferiya.md
+      - title: "Частина II. Електроніка для програміста"
+        blurb: >-
+          Рівно стільки заліза, скільки треба, щоб не спалити плату і зрозуміти, чому вона поводиться дивно.
+        files:
+          - manual/05-elektronika.md
+          - manual/06-zhyvlennya.md
+          - manual/07-gpio.md
+      - title: "Частина III. Плати й підключення"
+        blurb: >-
+          Від кристала до того, що лежить на столі: модулі, плати, клони, кабелі, інструмент.
+        files:
+          - manual/08-platy.md
+          - manual/09-pidklyuchennya.md
+          - manual/10-instrumenty.md
+      - title: "Частина IV. Інструментарій"
+        blurb: >-
+          ESP-IDF як нормативне ядро, Arduino як швидкий шлях, і чесна межа між ними.
+        files:
+          - manual/11-idf.md
+          - manual/12-arduino.md
+          - manual/13-pio.md
+          - manual/14-shvydki-shlyakhy.md
+          - manual/15-oflayn.md
+      - title: "Частина V. Прошивка"
+        blurb: >-
+          Як воно завантажується, як туди потрапляє код, і що робити, коли потрапило не те.
+        files:
+          - manual/16-boot.md
+          - manual/17-esptool.md
+          - manual/18-rozdily-fleshu.md
+          - manual/19-ota.md
+          - manual/20-bekap.md
+          - manual/21-seriyna.md
+      - title: "Частина VI. Невідомий пристрій"
+        blurb: >-
+          Плата чи виріб без документації: зберегти стан, визначити, зрозуміти чужу прошивку.
+        files:
+          - manual/22-zberezhennya-stanu.md
+          - manual/23-triazh.md
+          - manual/24-chuzha-proshyvka.md
+      - title: "Частина VII. Налагодження і діагностика"
+        blurb: >-
+          Від логу до логічного аналізатора: як довідатися, що саме сталося, замість того, щоб здогадуватися.
+        files:
+          - manual/25-log.md
+          - manual/26-zboyi.md
+          - manual/27-jtag.md
+          - manual/28-analizator.md
+          - manual/29-symptomy.md
+      - title: "Частина VIII. Програмування"
+        blurb: >-
+          Модель пам'яті, FreeRTOS, надійність і периферія з коду.
+        files:
+          - manual/30-struktura.md
+          - manual/31-freertos.md
+          - manual/32-nadiynist.md
+          - manual/33-peryferiya-kod.md
+      - title: "Частина IX. Дротові інтерфейси"
+        blurb: >-
+          UART, I²C, SPI, 1-Wire, CAN.
+        files:
+          - manual/34-uart.md
+          - manual/35-i2c.md
+          - manual/36-spi.md
+          - manual/37-onewire.md
+          - manual/38-can.md
+      - title: "Частина X. Бездротовий зв'язок"
+        blurb: >-
+          Wi-Fi, мережеві протоколи, BLE, ESP-NOW, LoRa.
+        files:
+          - manual/39-wifi.md
+          - manual/40-merezha.md
+          - manual/41-ble.md
+          - manual/42-espnow.md
+          - manual/43-lora.md
+      - title: "Частина XI. Периферія"
+        blurb: >-
+          Як підключити те, чого ви раніше не бачили, і що саме варто підключати.
+        files:
+          - manual/44-neznayomyy-modul.md
+          - manual/45-sensory.md
+          - manual/46-dyspleyi.md
+          - manual/47-klyuchi.md
+          - manual/48-motory.md
+          - manual/49-kamera.md
+      - title: "Частина XII. Безпека"
+        files:
+          - manual/50-bezpeka.md
+      - title: "Частина XIII. Збирання і супровід"
+        blurb: >-
+          Паяння, монтаж, живлення, корпус, польовий ремонт і передача виробу іншій людині.
+        files:
+          - manual/51-payannya.md
+          - manual/52-montazh.md
+          - manual/53-akum.md
+          - manual/54-korpus.md
+          - manual/55-polova-diagnostyka.md
+          - manual/56-pasport.md
+      - title: "Частина XIV. Від задачі до пристрою"
+        blurb: >-
+          Інженерний процес: постановка, прототип, доведення до надійного вузла.
+        files:
+          - manual/57-vid-zadachi.md
+          - manual/58-dovedennya.md
+      - title: "Частина XV. Проєкти"
+        blurb: >-
+          П'ять наскрізних прикладів: постановка, схема, BOM, повний код, збирання, тест, розвиток.
+        files:
+          - manual/59-proj-monitor.md
+          - manual/60-proj-loger.md
+          - manual/61-proj-kanal.md
+          - manual/62-proj-keruvannya.md
+          - manual/63-proj-mist.md
+      - title: "Додатки"
+        blurb: >-
+          Кожен додаток — розгорнута версія відповідних карток з тих самих
+          джерел (Р10): картка — польова верхівка, додаток — повна таблиця.
+        files:
+          - dodatky/a-pinouty.md
+          - dodatky/b-symptomy.md
+          - dodatky/c-komandy.md
+          - dodatky/d-panik.md
+          - dodatky/e-interfeysy.md
+          - dodatky/f-oflayn.md
+          - dodatky/g-glosariy.md
+          - dodatky/h-dzherela.md
+      - title: "Вкладиші"
+        blurb: >-
+          Швидкопсувне: ринок, компоненти, радіочастотні норми. Мають власні
+          дати ревізій і перевидаються, не зачіпаючи нумерації книги (Р5).
+        files:
+          - inserts/ua-market-2026-08.md
+          - inserts/components-2026-08.md
+          - inserts/regulatory-2026-08.md
 
   # Допоміжна ціль: картки окремо, A4, під ламінування.
   kartky:
@@ -68,4 +211,9 @@ targets:
     parts:
       - title: "Проєкти"
         silent: true
-        files: []
+        files:
+          - manual/59-proj-monitor.md
+          - manual/60-proj-loger.md
+          - manual/61-proj-kanal.md
+          - manual/62-proj-keruvannya.md
+          - manual/63-proj-mist.md

@@ -173,7 +173,9 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
         root += ["", "#back-matter(meta)", ""]
 
     if missing:
-        print(f"  ! пропущено (немає файлу): {', '.join(missing)}")
+        head = ", ".join(missing[:4])
+        tail = f" … і ще {len(missing) - 4}" if len(missing) > 4 else ""
+        print(f"  · ще не написано ({len(missing)}): {head}{tail}")
 
     root_typ = tdir / "root.typ"
     root_typ.write_text("\n".join(root), encoding="utf-8")
