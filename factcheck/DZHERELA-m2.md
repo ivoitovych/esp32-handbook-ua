@@ -34,11 +34,15 @@ URL не підмінили.
 | Файл | sha256 | Байтів | Коли | URL |
 |---|---|---|---|---|
 | `atmega328p.pdf` | `b9b9d83cda56a95d999ea8d54fe5a540748ae9020e5e7ae19b913d384ba9320e` | 33319446 | 2026-08-26 | <https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf> |
+| `cdc-acm.c` | `0c9bca8f51278dcb87a952889cbd23f459cf0ea8d2a3d84cd2b8a2d08a941029` | 61131 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/class/cdc-acm.c> |
 | `ch340.pdf` | `04c805e8242885fd1cf21f05dbfd9d16b9fa38f0439ce0d3c6d7f74ebe4cf4af` | 147893 | 2026-08-26 | <https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF> |
+| `ch341.c` | `42dfb2e94a8e8a82cedc464a71e41f721caa36917d31d81dd792cb5ea4c03f2f` | 23133 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/ch341.c> |
 | `cp2102.pdf` | `f025d9c738e4906544bbae493d5ff4a8d9746df247c92a329f4ed94799220e59` | 2172800 | 2026-08-26 | <https://www.silabs.com/documents/public/data-sheets/cp2102-9.pdf> |
+| `cp210x.c` | `8aa7d881db52ae9a7ff1b2d4e854474aae75542aec0abeded40cc69fd9cd2eb9` | 66727 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/cp210x.c> |
 | `ds18b20.pdf` | `39d191cd1fb657e43eac061f605bbd375d3c42dc40e7839c17fa0675bb0404d8` | 261896 | 2026-08-26 | — |
 | `esp32-datasheet.pdf` | `a7917e6b47528c9dcab06837a49d452e582751335797db879f1cf2d17cd29adf` | 989523 | 2026-08-26 | — |
 | `esp32-wroom-32e.pdf` | `4c7a345d1c1bfec34c38665639e39a7f43b79a35a12f6adcc2c7c0f83850f8b8` | 1230114 | 2026-08-26 | — |
+| `ftdi_sio_ids.h` | `eb445be64a4e96745c996d8481fb772ba0f8f2c9668f8adcf09c3be1ec9edbf7` | 62099 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/ftdi_sio_ids.h> |
 | `hc-sr04.pdf` | `4ebdc3e1f70d84a1ca856d8fcd7f8b1f9e548a94e4012cd86d14ca0b30543b06` | 80625 | 2026-08-26 | <https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf> |
 | `i2c-um10204.pdf` | `dc91f00f65584e06ef36e26c93bf9d91a95fb3c8a1830a9223e53caf678b36af` | 750958 | 2026-08-26 | <https://www.pololu.com/file/0J435/UM10204.pdf> |
 | `ili9341.pdf` | `a9bbfdf6d078f54a6aca7a56cba91246905358d3a4ed738817bfd3f582b5741c` | 3667641 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf> |
