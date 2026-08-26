@@ -8,6 +8,7 @@
 . "$(dirname "$0")/attribution-lib.sh"
 
 Z40=0000000000000000000000000000000000000000
+scan_flag=$(mktemp)
 fail=0
 checked=0
 
@@ -37,7 +38,7 @@ while read -r local_ref local_sha remote_ref remote_sha; do
 done
 
 # Вміст: жодних згадок інструментів-асистентів у тексті, що піде в друк.
-for p in $FORBIDDEN_CONTENT_PATTERNS; do
+printf '%s\n' "$FORBIDDEN_CONTENT_PATTERNS" | while IFS= read -r p; do
 	[ -z "$p" ] && continue
 	hits=$(git grep -inE -- "$p" -- \
 		'*.md' '*.typ' '*.yaml' '*.yml' '*.txt' '*.c' '*.h' '*.py' 'Makefile' \
@@ -45,9 +46,11 @@ for p in $FORBIDDEN_CONTENT_PATTERNS; do
 	if [ -n "$hits" ]; then
 		echo "✗ вміст містить заборонений патерн «$p»:" >&2
 		printf '%s\n' "$hits" | head -20 >&2
-		fail=1
+		echo "CONTENT_FAIL" >> "$scan_flag"
 	fi
 done
+[ -s "$scan_flag" ] && fail=1
+rm -f "$scan_flag"
 
 if [ "$fail" -ne 0 ]; then
 	echo "" >&2

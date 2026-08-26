@@ -14,10 +14,11 @@ hook_dir=$(dirname "$0")
 : "${EXPECTED_EMAIL:?identity.conf: EXPECTED_EMAIL не задано}"
 
 # Заборонені рядки у повідомленнях комітів.
-# -i: без урахування регістру. Кожен рядок — окремий ERE-патерн.
+# Кожен РЯДОК — окремий ERE-патерн; порівняння без урахування регістру.
+# Патерни містять пробіли, тому обхід — через for_each_pattern, а не
+# через $(...) з розбиттям на слова.
 FORBIDDEN_MSG_PATTERNS='
-co-authored-by:
-co-authored by
+co-authored
 assisted-by:
 generated with
 claude
@@ -44,18 +45,31 @@ llm-generated
 🤖
 '
 
+# for_each_pattern <список> <команда…> — викликає команду для кожного
+# непорожнього рядка списку, передаючи патерн першим аргументом.
+for_each_pattern() {
+	_list=$1
+	shift
+	printf '%s\n' "$_list" | while IFS= read -r _p; do
+		[ -z "$_p" ] && continue
+		"$@" "$_p"
+	done
+}
+
 # check_message <файл-або-->  : 0 якщо чисто, 1 якщо знайдено заборонене
 check_message() {
 	_msg=$(cat "$1")
-	_hit=0
-	for _p in $FORBIDDEN_MSG_PATTERNS; do
+	_found=$(printf '%s\n' "$FORBIDDEN_MSG_PATTERNS" | while IFS= read -r _p; do
 		[ -z "$_p" ] && continue
 		if printf '%s\n' "$_msg" | grep -qiE -- "$_p"; then
-			echo "  ✗ повідомлення коміту містить заборонений патерн: $_p" >&2
-			_hit=1
+			echo "  ✗ повідомлення коміту містить заборонений патерн: $_p"
 		fi
-	done
-	return $_hit
+	done)
+	if [ -n "$_found" ]; then
+		printf '%s\n' "$_found" >&2
+		return 1
+	fi
+	return 0
 }
 
 # check_identity <sha> : 0 якщо author і committer збігаються з очікуваними
@@ -76,13 +90,16 @@ check_identity() {
 # check_commit_message <sha>
 check_commit_message() {
 	_sha=$1
-	_hit=0
-	for _p in $FORBIDDEN_MSG_PATTERNS; do
+	_body=$(git log -1 --format='%B' "$_sha")
+	_found=$(printf '%s\n' "$FORBIDDEN_MSG_PATTERNS" | while IFS= read -r _p; do
 		[ -z "$_p" ] && continue
-		if git log -1 --format='%B' "$_sha" | grep -qiE -- "$_p"; then
-			echo "  ✗ повідомлення містить заборонений патерн: $_p" >&2
-			_hit=1
+		if printf '%s\n' "$_body" | grep -qiE -- "$_p"; then
+			echo "  ✗ повідомлення містить заборонений патерн: $_p"
 		fi
-	done
-	return $_hit
+	done)
+	if [ -n "$_found" ]; then
+		printf '%s\n' "$_found" >&2
+		return 1
+	fi
+	return 0
 }
