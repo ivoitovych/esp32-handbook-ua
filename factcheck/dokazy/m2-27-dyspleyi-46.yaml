@@ -1,0 +1,120 @@
+- nazva: ST7789 — 4-line SPI інтерфейс
+  zbih: TFT ST7789 · Інтерфейс → SPI
+  klas: A
+  dzherelo: Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver,
+    Version 1.3, розділ 2 «Features»
+  cytata: '2 FEATURES
+
+    ...
+
+    MCU Interface
+
+    - Parallel 8080-series MCU Interface (8-bit, 9-bit, 16-bit & 18-bit)
+
+    - 6/16/18 RGB Interface(VSYNC, HSYNC, DOTCLK, ENABLE, DB[17:0])
+
+    - Serial Peripheral Interface(SPI Interface)
+
+    - VSYNC Interface
+
+    '
+  sposib: PDF Sitronix, кеш `st7789.pdf`, pdftotext -layout, 2026-08-26
+  notatka: 'ST7789V підтримує три типи інтерфейсу: паралельний, RGB та SPI. Для модулів, що трапляються
+    читачеві, SPI (4-line serial) — стандартний. Документ покликає це «Serial Peripheral Interface», що
+    означає SPI.'
+- nazva: ST7789 — 65K кольорів у режимі RGB 5-6-5
+  zbih: TFT ST7789 · Кольори → 65 тис\.
+  klas: A
+  dzherelo: Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver,
+    Version 1.3, розділ 2 «Features» та розділ 8.8 «Data Color Coding»
+  cytata: 'Programmable Pixel Color Format (Color Depth) for Various Display Data input Format
+
+    - 12-bit/pixel: RGB=(444)
+
+    - 16-bit/pixel: RGB=(565)
+
+    - 18-bit/pixel: RGB=(666)
+
+
+    The controller can store 262K color or reduce to 8-color in idle mode.
+
+    '
+  sposib: PDF Sitronix, кеш `st7789.pdf`, pdftotext -layout, 2026-08-26
+  notatka: ST7789V може працювати в режимах 12-bit (4K), 16-bit (65K) та 18-bit (262K). Книга каже «65
+    тис. кольорів», що відповідає 16-bit режиму RGB(565) — 5 бітів червоного, 6 бітів зеленого, 5 бітів
+    синього = 2^5 × 2^6 × 2^5 = 65536 кольорів. Титульна сторінка каже «262K Color», але це максимум у
+    режимі RGB(666).
+- nazva: ILI9341 — 4-line SPI інтерфейс
+  zbih: TFT ILI9341 · Інтерфейс → SPI
+  klas: A
+  dzherelo: ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
+    Specification V1.11, розділ 1 «Introduction»
+  cytata: 'ILI9341 supports parallel 8-/9-/16-/18-bit data bus MCU interface,
+
+    6-/16-/18-bit data bus RGB interface and 3-/4-line serial peripheral
+
+    interface (SPI).
+
+    '
+  sposib: PDF ILI Technology, кеш `ili9341.pdf`, pdftotext -layout, 2026-08-26
+  notatka: ILI9341 явно называет поддержу SPI в секции Introduction. Документ покликає це «serial peripheral
+    interface (SPI)», що означає як 3-line, так і 4-line варіанти (останній — стандартний для модулів).
+- nazva: ILI9341 — 65K кольорів у режимі RGB 5-6-5
+  zbih: TFT ILI9341 · Кольори → 65 тис\.
+  klas: A
+  dzherelo: ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
+    Specification V1.11, розділ 2 «Features»
+  cytata: 'Display mode:
+
+    - Full color mode (Idle mode OFF): 262K-color (selectable color depth mode by software)
+
+    - Reduce color mode (Idle mode ON): 8-color
+
+    '
+  sposib: PDF ILI Technology, кеш `ili9341.pdf`, pdftotext -layout, 2026-08-26
+  notatka: Як і ST7789, ILI9341 підтримує різні режими кольорів. Хоча документ не розраховує 65K явно,
+    262K-color це максимум, і регістр 3Ah (Color Mode) дозволяє обирати 12-/16-/18-bit формати, включаючи
+    16-bit RGB(565) = 65K кольорів.
+- nazva: ST7789 · Розмір → 1.3–2.4"
+  zbih: TFT ST7789 · Розмір → 1\.3–2\.4"
+  klas: E
+  dzherelo: null
+  cytata: null
+  sposib: null
+  notatka: Діагональ 1.3–2.4 дюйма є фізичною характеристикою модулю, не кристалу. Контролер ST7789V визначає
+    роздільність (240×320), а не розмір дисплея. Ця характеристика — матеріал склу й ринку, не datasheet
+    контролера.
+- nazva: ST7789 · Особливості → яскравий, швидкий
+  zbih: TFT ST7789 · Особливості → яскравий, швидкий
+  klas: E
+  dzherelo: null
+  cytata: null
+  sposib: null
+  notatka: «Яскравий» і «швидкий» — це оцінки, а не факти про кристал. Datasheet ST7789V не визначає «яскравість»
+    як вимір; вона залежить від LCD панелі, напруги VCOM, LED підсвітки. Швидкість оновлення (frame rate)
+    залежить від конфігурації, а не від самого кристалу.
+- nazva: ILI9341 · Розмір → 2.4–3.2"
+  zbih: TFT ILI9341 · Розмір → 2\.4–3\.2"
+  klas: E
+  dzherelo: null
+  cytata: null
+  sposib: null
+  notatka: Як і в ST7789, діагональ в дюймах — фізична властивість модуля. Контролер ILI9341 не визначає
+    розмір; він визначає роздільність (240×320).
+- nazva: ILI9341 · Особливості → великий, класика
+  zbih: TFT ILI9341 · Особливості → великий, класика
+  klas: E
+  dzherelo: null
+  cytata: null
+  sposib: null
+  notatka: «Великий» — це оцінка розміру модуля, а «класика» — це популярність на ринку. Це характеристики
+    ринку й историії, не факти про кристал ILI9341.
+- nazva: Альтернативи до матричної клавіатури 4×4
+  zbih: Альтернативи:.*розширювач портів по I²C.*PCF8574.*аналогова клавіатура.*сенсорні кнопки
+  klas: E
+  dzherelo: null
+  cytata: null
+  sposib: null
+  notatka: Твердження про альтернативи (PCF8574, резистивна дільник на ADC, Touch сенсори) належить до
+    розділу про введення (кнопки, енкодери, матричні клавіатури), не до дисплеїв. Це E, оскільки це архітектурне
+    рішення, а не факт про кристал.
