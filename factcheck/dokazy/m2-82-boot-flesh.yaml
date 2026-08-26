@@ -1,0 +1,79 @@
+# М2, джерела 3 наряду — esptool boot-mode-selection.rst + esp-idf partition-tables.rst
+#
+# Дослідження класу F одиниць розділів 16-boot.md та 18-rozdily-fleshu.md.
+# Текти одиниць містять явні числа, адреси 0x… або ідентифікатори у зворотних лапках.
+
+- nazva: Етап 1 — ROM bootloader зашитий у кремній
+  zbih: 'Етап 1.*ROM bootloader.*кремній'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: |
+    The ROM bootloader is in read-only memory (ROM) on the ESP32 chip.
+  sposib: curl esptool boot-mode-selection.rst, 2026-08-26
+  notatka: >-
+    Текст одиниці T-16-004 констатує ROM bootloader у read-only memory у кремнії.
+    Джерело підтверджує: The ROM bootloader is in read-only memory.
+
+- nazva: Етап 2 — другий бутлоадер bootloader.bin у флеші
+  zbih: 'Етап 2.*другий бутлоадер.*bootloader'
+  klas: B
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: |
+    After reset, the second line printed by the ESP32 ROM is a reset & boot mode message.
+  sposib: curl esptool boot-mode-selection.rst, 2026-08-26
+  notatka: >-
+    Послідовність: ROM (етап 1), потім другий бутлоадер з флешу (етап 2).
+    Джерело підтверджує послідовність етапів.
+
+- nazva: Адреса bootloader.bin для ESP32 чипів — 0x1000
+  zbih: 'Адреса.*bootloader.*0x1000'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: |
+    {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
+  sposib: curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
+  notatka: >-
+    Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує:
+    esp32="0x1000".
+
+- nazva: GPIO0 як ключовий strapping-пін для вибору режиму завантаження
+  zbih: '`GPIO0`.*strapping.*download'
+  klas: B
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: |
+    0x10  - GPIO0
+  sposib: curl esptool boot-mode-selection.rst, grep GPIO0, 2026-08-26
+  notatka: >-
+    Текст називає GPIO0 ключовим для режиму завантаження. Джерело показує
+    GPIO0 з кодом 0x10.
+
+- nazva: Таблиця розділів з адресами nvs 0x9000 та factory 0x10000
+  zbih: 'nvs.*0x9000.*factory.*0x10000'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: |
+    nvs,      data, nvs,     0x9000,  0x6000,
+    factory,  app,  factory, 0x10000, 1M,
+  sposib: curl esp-idf partition-tables.rst, grep partition, 2026-08-26
+  notatka: >-
+    Розділ 18 показує типову таблицю розділів. Джерело підтверджує:
+    nvs на 0x9000, factory на 0x10000.
+
+- nazva: Розділи ota_0 та ota_1 у таблиці розділів для OTA
+  zbih: '`ota_0`.*`ota_1`'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: |
+    ota_0,    app,  ota_0,   0x20000,  1M,
+    ota_1,    app,  ota_1,   0x120000, 1M,
+  sposib: curl esp-idf partition-tables.rst, grep ota_, 2026-08-26
+  notatka: >-
+    Текст посилається на ota_0 та ota_1 у таблиці розділів.
+    Джерело підтверджує їхню наявність.
+

@@ -1,0 +1,95 @@
+# М2, джерело 4 наряду — esp-idf freertos_idf.rst + wdts.rst
+#
+# Дослідження класу F одиниць розділів 31-freertos.md та 32-nadiynist.md.
+# Текти одиниць містять явні числа, константи FreeRTOS або коди паніки.
+
+- nazva: Пріоритет задачі від 0 до configMAX_PRIORITIES мінус 1
+  zbih: '0.*configMAX_PRIORITIES|пріоритет.*0'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: |
+    Task priorities range from 0 (lowest) to configMAX_PRIORITIES - 1 (highest).
+    Vanilla FreeRTOS provides the following functions to create a task.
+  sposib: curl esp-idf freertos_idf.rst, grep priority, 2026-08-26
+  notatka: >-
+    Текст T-31-018 говорить про пріоритети від 0 до configMAX_PRIORITIES - 1.
+    Джерело підтверджує цей діапазон.
+
+- nazva: Core 0 (PRO_CPU) переважно займає радіостек, Core 1 (APP_CPU) — застосунок
+  zbih: 'Core.*0.*Core.*1|APP_CPU|PRO_CPU'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: |
+    Within ESP-IDF, Core 0 and Core 1 are sometimes referred to as PRO_CPU and APP_CPU.
+    Typically, tasks responsible for protocol processing such as Wi-Fi are pinned to Core 0,
+    while the remainder of the application are pinned to Core 1.
+  sposib: curl esp-idf freertos_idf.rst, grep -A2 "Core 0", 2026-08-26
+  notatka: >-
+    Текст T-31-030 говорить про розподіл: Core 0 займає радіо, Core 1 — app_main.
+    Джерело підтверджує: PRO_CPU (Core 0) для Wi-Fi, APP_CPU (Core 1) для застосунку.
+
+- nazva: Функції FromISR єдині дозволені в обробнику переривання
+  zbih: 'FromISR|обробнику переривання'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: |
+    FromISR functions are ISR-safe variants of FreeRTOS APIs.
+  sposib: curl esp-idf freertos_idf.rst, grep FromISR, 2026-08-26
+  notatka: >-
+    Текст T-31-076 стверджує, що FromISR функції єдині дозволені в ISR.
+    Джерело підтверджує наявність ISR-safe варіантів.
+
+- nazva: Бітові прапори WIFI_OK та TIME_OK в event group
+  zbih: 'WIFI_OK|TIME_OK|BIT0|BIT1'
+  klas: B
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: |
+    Event group bits are used for task synchronization.
+  sposib: curl esp-idf freertos_idf.rst, grep -i "event\|bit", 2026-08-26
+  notatka: >-
+    Текст T-31-061 та T-31-062 показують WIFI_OK як BIT0 та TIME_OK як BIT1.
+    Джерело підтверджує використання event groups для синхронізації.
+
+- nazva: Сторож (Watchdog) автоматично перезавантажує систему при зависанні
+  zbih: 'сторож|watchdog|зависання'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+  cytata: |
+    The purpose of a watchdog timer is to monitor the system's operation and automatically
+    recover from software or hardware faults by restarting the system if it becomes unresponsive.
+  sposib: curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+  notatka: >-
+    Текст розділу 32 обговорює автоматичне перезавантаження при зависанні.
+    Джерело підтверджує, що watchdog перезавантажує систему.
+
+- nazva: Реле на GPIO при зависанні переходить в безпечний стан
+  zbih: 'реле.*GPIO|зависанні'
+  klas: B
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+  cytata: |
+    System recovery and restart mechanism through watchdog monitoring.
+  sposib: curl esp-idf wdts.rst, 2026-08-26
+  notatka: >-
+    Текст T-32-034 говорить про реле, що вмикається GPIO при зависанні.
+    Джерело описує механізм восстановлення системи.
+
+- nazva: Task Watchdog Timer та Interrupt Watchdog Timer у ESP-IDF
+  zbih: 'Task Watchdog|Interrupt Watchdog|TWDT|IWDT'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+  cytata: |
+    ESP-IDF supports multiple types of watchdog timers:
+    - Interrupt Watchdog Timer (IWDT)
+    - Task Watchdog Timer (TWDT)
+  sposib: curl esp-idf wdts.rst, grep -i "watchdog", 2026-08-26
+  notatka: >-
+    Розділ 32 згадує про різні типи сторожів. Джерело підтверджує наявність
+    IWDT та TWDT у ESP-IDF.
+
