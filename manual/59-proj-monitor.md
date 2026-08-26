@@ -128,9 +128,9 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
     H5 = (h[5] << 4) | (h[4] >> 4);
     H6 = h[6];
 
-    bme_write(REG_CTRL_H, 0x01);  // вологість ×1
-    bme_write(REG_CONFIG, 0xA0);  // фільтр
-    bme_write(REG_CTRL_M, 0x27);  // T×1, P×1, режим normal
+    bme_write(REG_CTRL_H, 0x01);  // osrs_h = ×1
+    bme_write(REG_CONFIG, 0xA8);  // t_sb 1000 мс, фільтр ×4
+    bme_write(REG_CTRL_M, 0x27);  // osrs_t ×1, osrs_p ×1, режим normal
     ESP_LOGI(TAG, "BME280 знайдено і налаштовано");
     return ESP_OK;
 }
@@ -144,6 +144,11 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 Без цієї перевірки несправна шина дає нулі, які виглядають як
 правдоподібні дані.
 :::
+
+Порядок трьох записів не довільний: за datasheet зміна `ctrl_hum`
+набуває чинності **лише після запису в `ctrl_meas`**, тому `ctrl_meas`
+завжди останній. Записаний першим, він лишив би вологість невиміряною —
+і датчик віддавав би нулі, схожі на дані.
 
 Перетворення сирих відліків — за формулами з datasheet. Без
 калібрувальних коефіцієнтів значення виглядають правдоподібно і є
@@ -255,12 +260,15 @@ static esp_err_t json_handler(httpd_req_t *req) {
     xSemaphoreTake(mutex, portMAX_DELAY);
     int n = snprintf(buf, 16384, "{\"zapysiv\":%u,\"dani\":[", kilkist);
     size_t start = (kilkist == ISTORIYA) ? idx : 0;
+    bool pershyy = true;                       // ← не «i == 0», див. нижче
     for (size_t i = 0; i < kilkist && n < 16000; i++) {
         zapys_t *z = &istoriya[(start + i) % ISTORIYA];
         if (!z->valid) continue;
         n += snprintf(buf + n, 16384 - n,
                       "%s{\"t\":%lld,\"temp\":%.2f,\"hum\":%.1f,\"pres\":%.1f}",
-                      i ? "," : "", z->chas / 1000000, z->temp, z->hum, z->pres);
+                      pershyy ? "" : ",",
+                      z->chas / 1000000, z->temp, z->hum, z->pres);
+        pershyy = false;
     }
     xSemaphoreGive(mutex);
     snprintf(buf + n, 16384 - n, "]}");
@@ -271,6 +279,18 @@ static esp_err_t json_handler(httpd_req_t *req) {
     return r;
 }
 ```
+
+::: uvaha
+Окремий прапорець `pershyy` замість перевірки `i == 0` — не педантизм.
+Записи зі збоєм пропускаються через `continue`, тож індекс циклу і номер
+**виведеного** елемента розходяться. Варіант `i ? "," : ""` при першому
+ж збійному запису на початку історії поставить кому перед першим
+елементом, і JSON стане несинтаксичним: `"dani":[,{…}]`.
+
+Ламається це рівно тоді, коли датчик відмовив, — тобто саме тоді, коли на
+графік дивляться. Це типова форма помилки в цій книзі: код правильний для
+щасливого шляху й невірний для того, заради якого писався.
+:::
 
 ::: uvaha
 Буфер тут виділяється з купи й одразу звільняється — це **не** цикл

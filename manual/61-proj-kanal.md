@@ -82,7 +82,8 @@ RTC_DATA_ATTR static uint8_t  u_buferi = 0;
 
 static volatile bool dostavleno = false;
 
-static void on_sent(const uint8_t *mac, esp_now_send_status_t status) {
+static void on_sent(const esp_now_send_info_t *info,
+                    esp_now_send_status_t status) {
     dostavleno = (status == ESP_NOW_SEND_SUCCESS);
 }
 
@@ -131,6 +132,11 @@ void app_main(void) {
 
 Це та сама помилка, що з `uart_wait_tx_done` у RS-485 (розділ 34), і
 проявляється так само: «інколи не доходить».
+
+Сигнатура зворотного виклику змінилася: до ESP-IDF 5.4 першим аргументом
+був `const uint8_t *mac_addr`, тепер — `const esp_now_send_info_t *`.
+Приклади з інтернету старшого віку не зберуться, і повідомлення
+компілятора вкаже на тип, а не на причину.
 :::
 
 ## Шифрування
@@ -177,11 +183,11 @@ static QueueHandle_t cherga;
 
 static void on_recv(const esp_now_recv_info_t *info,
                     const uint8_t *data, int len) {
-    // виконується в контексті Wi-Fi: скопіювати й вийти (розділ 42)
+    // виконується в контексті задачі Wi-Fi: скопіювати й вийти (розділ 42)
     if (len != sizeof(paket_t)) return;
     paket_t p;
     memcpy(&p, data, sizeof(p));
-    xQueueSendFromISR(cherga, &p, NULL);
+    xQueueSend(cherga, &p, 0);      // не FromISR: це задача, а не переривання
 }
 
 static void task_obrobka(void *arg) {
