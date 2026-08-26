@@ -52,6 +52,10 @@ URL не підмінили.
 | `ili9341.pdf` | `a9bbfdf6d078f54a6aca7a56cba91246905358d3a4ed738817bfd3f582b5741c` | 3667641 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf> |
 | `ina219.pdf` | `58004eda854d07478e6fc6f4398c114f60a3bcf18d4877471c7c1a306d1fa1cb` | 892731 | 2026-08-26 | <https://www.ti.com/lit/ds/symlink/ina219.pdf> |
 | `ina226.pdf` | `c9b67f886d4a5241a5e070723f7b61867409eeb27eed768b9cdd9cb17e03ca2d` | 1516957 | 2026-08-26 | <https://www.ti.com/lit/ds/symlink/ina226.pdf> |
+| `irf540.pdf` | `7002a04312724c95d050a716f5979ccd4f7dc42aed1b097d2685cd2df4327768` | 132342 | 2026-08-26 | <https://www.vishay.com/docs/91021/irf540.pdf> |
+| `irlz44.pdf` | `8dd82ac7164a38ee0019e0a289c7ae5e0db234c8c0c5bb8a406300b47a3e9c54` | 878484 | 2026-08-26 | <https://www.vishay.com/docs/91328/irlz44.pdf> |
+| `led-blue-wp7113qbc.pdf` | `ff6fcadbd0c1616d3a2db19c43754dd22731ae50bc7efdc9c3c531c13487eca5` | 554587 | 2026-08-26 | <https://www.kingbrightusa.com/images/catalog/SPEC/WP7113QBC-D.pdf> |
+| `led-red-wp7113id.pdf` | `b5bb33f69c13fd92ab6d47a8fd71168b6e7ee685139c8f381957aeea9286c9da` | 362307 | 2026-08-26 | <https://www.kingbrightusa.com/images/catalog/SPEC/WP7113ID.pdf> |
 | `lghg2.pdf` | `13a74b9690c20f28f6ac36e12b06f8cce7b944d57c78682ff92131292f303b4f` | 345290 | 2026-08-26 | <https://www.batteryspace.com/prod-specs/9989.specs.pdf> |
 | `lgmj1.pdf` | `c43a6ba93862318906a7fe8f2e34593890b1aa340ee59ff87e81bcfd8f1e8fc7` | 334905 | 2026-08-26 | <https://enerpower.de/wp-content/uploads/2016/03/Specification_INR18650MJ1.pdf> |
 | `max31855.pdf` | `45904b81e79c46af49fd5c880df7ec04678c8599be9df73cea8422d241ceb7a2` | 1015656 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/MAX31855.pdf> |
