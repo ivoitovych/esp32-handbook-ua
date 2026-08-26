@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+"""Перевірка обсягів (Р9).
+
+Обсяг — бюджет, а не обіцянка. Розділ, що виріс удвічі, не став удвічі
+кориснішим: він став таким, який не читають у полі. Перевірка не забороняє
+перевищення — вона робить його видимим і свідомим.
+
+Бюджети:
+  розділ (manual/)   1200–2500 слів, ≤2 схеми, ≤3 приклади коду
+  картка (kartky/)   ≤400 слів, ≤1 схема, строго одна сторінка A4
+  додаток (dodatky/) без верхньої межі: це довідкові таблиці
+
+Одна сторінка картки перевіряється по-справжньому — збиранням цілі kartky
+і підрахунком сторінок у PDF (--pages).
+"""
+
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+
+RE_FENCE = re.compile(r"^```")
+RE_IMAGE = re.compile(r"!\[[^\]]*\]\([^)]+\)")
+
+LIMITS = {
+    "manual":  {"words": (1200, 2500), "code": 3, "img": 2},
+    "kartky":  {"words": (0, 400),     "code": 3, "img": 1},
+    "dodatky": {"words": (0, 0),       "code": 99, "img": 99},
+    "inserts": {"words": (0, 0),       "code": 99, "img": 99},
+}
+
+
+def measure(path: Path) -> tuple[int, int, int]:
+    """→ (слів у прозі, блоків коду, зображень). Код у слова не рахується."""
+    words = code = images = 0
+    in_fence = False
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if RE_FENCE.match(line.lstrip()):
+            in_fence = not in_fence
+            if in_fence:
+                code += 1
+            continue
+        if in_fence:
+            continue
+        images += len(RE_IMAGE.findall(line))
+        line = re.sub(r"`[^`]*`", "", line)
+        line = re.sub(r"\{#[a-z0-9-]+\}", "", line)
+        if line.strip().startswith(":::"):
+            continue
+        words += len([w for w in re.split(r"\s+", line.strip()) if w])
+    return words, code, images
+
+
+def main() -> int:
+    over = 0
+    rows = []
+    for group, lim in LIMITS.items():
+        for f in sorted((ROOT / group).glob("*.md")):
+            w, c, i = measure(f)
+            lo, hi = lim["words"]
+            flags = []
+            if hi and w > hi:
+                flags.append(f"слів {w} > {hi}")
+            if lo and w < lo:
+                flags.append(f"слів {w} < {lo}")
+            if c > lim["code"]:
+                flags.append(f"коду {c} > {lim['code']}")
+            if i > lim["img"]:
+                flags.append(f"схем {i} > {lim['img']}")
+            rows.append((str(f.relative_to(ROOT)), w, c, i, flags))
+            if flags:
+                over += 1
+
+    width = max((len(r[0]) for r in rows), default=10)
+    for name, w, c, i, flags in rows:
+        mark = "✗" if flags else "·"
+        note = ("  " + "; ".join(flags)) if flags else ""
+        print(f"  {mark} {name:<{width}}  слів {w:>5}  код {c}  схем {i}{note}")
+
+    print(f"budgets: файлів {len(rows)}, поза бюджетом {over}")
+    return 1 if over else 0
+
+
+def check_card_pages() -> int:
+    """Картка мусить вміщатися в одну сторінку A4 — рахуємо по зібраному PDF."""
+    import yaml
+    cfg = yaml.safe_load((ROOT / "book.yaml").read_text(encoding="utf-8"))
+    files = [rel for part in cfg["targets"]["kartky"]["parts"]
+             for rel in (part.get("files") or [])]
+    pdf = ROOT / "build" / cfg["targets"]["kartky"]["output"]
+    if not pdf.exists():
+        print("  · PDF карток не зібрано — пропускаю перевірку сторінок")
+        return 0
+    data = pdf.read_bytes()
+    pages = data.count(b"/Type /Page") - data.count(b"/Type /Pages")
+    if pages <= 0:
+        pages = len(re.findall(rb"/Type\s*/Page[^s]", data))
+    extra = pages - len(files)
+    status = "✗" if extra > 0 else "·"
+    print(f"  {status} карток {len(files)}, сторінок у PDF {pages}"
+          + (f" — перевищення на {extra}" if extra > 0 else ""))
+    return 1 if extra > 0 else 0
+
+
+if __name__ == "__main__":
+    rc = main()
+    if "--pages" in sys.argv:
+        rc |= check_card_pages()
+    sys.exit(rc)

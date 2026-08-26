@@ -1,0 +1,37 @@
+# Версії тулчейну — джерело істини для таблиці в частині IV (Р4).
+# Таблиця друкується з цього файлу під час збирання; у тексті розділів
+# номери версій не дублюються.
+#
+# status: verified   — звірено з першоджерелом, дата у полі checked
+#         UNVERIFIED — не звірено; друкується з видимою позначкою
+
+revision: 2026-08-26
+
+esp_idf:
+  version: "6.0.2"
+  status: UNVERIFIED
+  note: "поточний stable; підтримка v6.0 до 2028-09; v6.1 — ще rc, не беремо"
+
+esp_idf_fallback:
+  version: "5.5.x"
+  status: UNVERIFIED
+  note: >-
+    обслуговується до 2028-01; лише якщо вимагає стороння бібліотека.
+    Окремого статусу LTS не існує — 30 місяців має кожен major/minor
+
+arduino_esp32:
+  version: "3.3.11"
+  status: UNVERIFIED
+  note: "на ESP-IDF 5.5.5; гілка 4.0.0-alpha на IDF 6.x — альфа, не для нас"
+
+vscode_extension:
+  version: "поточна"
+  status: UNVERIFIED
+
+esptool:
+  version: "?"
+  status: UNVERIFIED
+
+platformio_pioarduino:
+  version: "?"
+  status: UNVERIFIED

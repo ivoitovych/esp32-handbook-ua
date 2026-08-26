@@ -1,0 +1,63 @@
+#!/bin/sh
+# Остаточна перевірка перед виходом на remote: жоден коміт не потрапляє
+# у публічну історію, доки не звірені author, committer і повідомлення,
+# а текст довідника не очищений від згадок інструментів-асистентів.
+#
+# Аргументи: $1 = ім'я remote, $2 = URL. На stdin — рядки:
+#   <local-ref> <local-sha> <remote-ref> <remote-sha>
+. "$(dirname "$0")/attribution-lib.sh"
+
+Z40=0000000000000000000000000000000000000000
+fail=0
+checked=0
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+	[ "$local_sha" = "$Z40" ] && continue          # видалення гілки — нічого перевіряти
+
+	if [ "$remote_sha" = "$Z40" ]; then
+		# нова гілка на remote: перевіряємо все, чого ще немає на жодному remote-ref
+		range=$(git rev-list "$local_sha" --not --remotes)
+	else
+		range=$(git rev-list "$remote_sha..$local_sha")
+	fi
+
+	for sha in $range; do
+		checked=$((checked + 1))
+		short=$(git rev-parse --short "$sha")
+		subject=$(git log -1 --format='%s' "$sha")
+		bad=0
+		check_identity "$sha"       || bad=1
+		check_commit_message "$sha" || bad=1
+		if [ "$bad" -ne 0 ]; then
+			echo "  ↑ у коміті $short «$subject»" >&2
+			echo "" >&2
+			fail=1
+		fi
+	done
+done
+
+# Вміст: жодних згадок інструментів-асистентів у тексті, що піде в друк.
+for p in $FORBIDDEN_CONTENT_PATTERNS; do
+	[ -z "$p" ] && continue
+	hits=$(git grep -inE -- "$p" -- \
+		'*.md' '*.typ' '*.yaml' '*.yml' '*.txt' '*.c' '*.h' '*.py' 'Makefile' \
+		':(exclude).githooks/*' ':(exclude)docs/POLITYKA-avtorstva.md' 2>/dev/null)
+	if [ -n "$hits" ]; then
+		echo "✗ вміст містить заборонений патерн «$p»:" >&2
+		printf '%s\n' "$hits" | head -20 >&2
+		fail=1
+	fi
+done
+
+if [ "$fail" -ne 0 ]; then
+	echo "" >&2
+	echo "PUSH ВІДХИЛЕНО: політика авторства (.githooks/pre-push)" >&2
+	echo "Виправлення author/committer для верхнього коміту:" >&2
+	echo "  git commit --amend --no-edit --reset-author" >&2
+	echo "Для діапазону:" >&2
+	echo "  git rebase --exec 'git commit --amend --no-edit --reset-author' <base>" >&2
+	exit 1
+fi
+
+echo "✓ політика авторства: перевірено комітів — $checked; зауважень немає"
+exit 0

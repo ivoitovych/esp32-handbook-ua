@@ -1,0 +1,48 @@
+# Маніфест збирання. Джерело істини для складу кожного PDF.
+# Порядок файлів тут = порядок сторінок у книзі.
+# Додали розділ — додайте рядок сюди, інакше він не потрапить у друк.
+
+meta:
+  title: "ESP32: практичний довідник"
+  subtitle: "Польовий довідник з розробки, прошивки, діагностики й ремонту"
+  author: "Ярослав Войтович"
+  author-full: "Ярослав Войтович"
+  edition: "Видання перше"
+  revision: "2026-08-26"
+  contact: "github.com/ivoitovych/esp32-handbook-ua"
+
+targets:
+
+  # Основна ціль: одна книга, один PDF — усе, що йде в друк.
+  dovidnyk:
+    template: dovidnyk
+    output: esp32-dovidnyk.pdf
+    parts:
+      - title: "Вступ"
+        silent: true
+        files: [manual/00-pro-dovidnyk.md]
+      - title: "Ярус 0. Картки"
+        blurb: "Дванадцять сторінок, які мають бути в руках, а не в файлі. Друкуються окремо, ламінуються, їдуть у поле."
+        files:
+          - kartky/k01-triazh.md
+      - title: "Частина I. Платформа"
+        files: []
+
+  # Допоміжна ціль: картки окремо, A4, під ламінування.
+  kartky:
+    template: kartky
+    output: esp32-kartky.pdf
+    parts:
+      - title: ""
+        silent: true
+        files:
+          - kartky/k01-triazh.md
+
+  # Допоміжна ціль: проєкти ярусу 2, A4.
+  proekty:
+    template: proekty
+    output: esp32-proekty.pdf
+    parts:
+      - title: "Проєкти"
+        silent: true
+        files: []
