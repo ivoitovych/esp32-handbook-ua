@@ -1,5 +1,5 @@
 - nazva: I²C потребує підтягувальних резисторів
-  zbih: Без підтягувальних резисторів I²C не працює взагалі
+  zbih: 'Без підтягувальних резисторів I.C не працює взагалі'
   klas: B
   dzherelo: NXP UM10204 I2C-bus specification, розділ 7.1 Pull-up resistor
   cytata: '7.1 Pull-up resistor sizing
