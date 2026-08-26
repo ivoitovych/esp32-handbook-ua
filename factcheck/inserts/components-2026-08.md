@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-COM-014 sha:0aa192e8 src:inserts/components-2026-08.md:19 klas:F -->
+<!-- fc id:T-COM-014 sha:0aa192e8 src:inserts/components-2026-08.md:19 klas:A -->
 ### T-COM-014 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -184,7 +184,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > SOC_SPIRAM_SUPPORTED присутній:
+  >   esp32    — так
+  >   esp32s2  — так
+  >   esp32s3  — так
+  >   esp32c3  — немає
+  >   esp32c6  — немає
+  >   esp32h2  — немає
+- **Спосіб і дата:** curl raw.githubusercontent + grep -c SOC_SPIRAM_SUPPORTED по шести заголовках, 2026-08-26
+- **Нотатка:** Механічна перевірка, що закриває рядок зведеної таблиці розділу 02 і повторення того самого твердження в розділах 49 і 57 та в переліку плат. Наявність або відсутність макроса в `soc_caps.h` — саме те визначення підтримки, яким користується сам ESP-IDF.
+- **Прохід:** pass-25-psram
 
 ---
 

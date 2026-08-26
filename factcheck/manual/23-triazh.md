@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/23-triazh.md`
 
-Одиниць твердження: **100**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **104**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-23-024 sha:2151d0d3 src:manual/23-triazh.md:32 klas:F -->
+<!-- fc id:T-23-024 sha:2151d0d3 src:manual/23-triazh.md:32 klas:A -->
 ### T-23-024 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -314,12 +314,144 @@
 
 **Доказ**
 
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h та .../components/soc/esp32s3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define MSPI_IOMUX_PIN_NUM_CS1      26
+  > #define MSPI_IOMUX_PIN_NUM_HD       27
+  > #define MSPI_IOMUX_PIN_NUM_WP       28
+  > #define MSPI_IOMUX_PIN_NUM_CS0      29
+  > #define MSPI_IOMUX_PIN_NUM_CLK      30
+  > #define MSPI_IOMUX_PIN_NUM_MISO     31
+  > #define MSPI_IOMUX_PIN_NUM_MOSI     32
+  > #define MSPI_IOMUX_PIN_NUM_D4       33
+  > #define MSPI_IOMUX_PIN_NUM_D5       34
+  > #define MSPI_IOMUX_PIN_NUM_D6       35
+  > #define MSPI_IOMUX_PIN_NUM_D7       36
+  > #define MSPI_IOMUX_PIN_NUM_DQS      37
+  > 
+  > (soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 49
+  > #define SOC_SPIRAM_SUPPORTED            1
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено без розбіжностей, і збіг тут точніший, ніж очікувалося: сім пінів MSPI — це рівно `GPIO26`–`GPIO32`, як пише книга, а чотири лінії даних `D4`–`D7` плюс `DQS` — рівно `GPIO33`–`GPIO37`.
+Підтвердилося й число: «октальна PSRAM з'їдає **п'ять** додаткових пінів» — 33, 34, 35, 36, 37, тобто п'ять і є.
+Твердження живе в чотирьох місцях (розділи 07 і 23, додаток A, картка К9) і скрізь однакове — рідкісний випадок, коли пропагація спрацювала сама.
+- **Прохід:** pass-25-psram
+
+---
+
+<!-- fc id:T-23-025 sha:5c35bc61 src:manual/23-triazh.md:38 klas:A -->
+### T-23-025 · proza · рядок 38
+
+**Книга каже, дослівно:**
+
+> [[S3]] **Octal PSRAM треба зазначити в конфігурації — типово стоїть Quad.** У ESP-IDF `SPIRAM_MODE` за замовчуванням `SPIRAM_MODE_QUAD` на всіх сімействах, тож модуль `N16R8` із восьмилінійною PSRAM без правки менюконфігу поводиться як плата без PSRAM узагалі.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/esp32s3/Kconfig.spiram
+- **Дослівно з джерела:**
+  > choice SPIRAM_MODE
+  >     prompt "Mode (QUAD/OCT) of SPI RAM chip in use"
+  >     default SPIRAM_MODE_QUAD
+  > 
+  >     config SPIRAM_MODE_QUAD
+  >         bool "Quad Mode PSRAM"
+  > 
+  >     config SPIRAM_MODE_OCT
+  >         bool "Octal Mode PSRAM"
+  > endchoice
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Не виправлення, а прогалина: книга називала `N16R8` і згадувала, що октальна PSRAM з'їдає піни, але ніде не казала, що **режим треба обрати руками**.
+Пастка чиста: типове значення `SPIRAM_MODE_QUAD` на всіх сімействах, тож модуль з восьмилінійною PSRAM без правки менюконфігу поводиться як плата без PSRAM узагалі. Симптом — `heap_caps_get_free_size(MALLOC_CAP_SPIRAM)` повертає нуль на платі, за яку заплачено саме через ті 8 МБ, — виглядає як несправність, а не як налаштування.
+Додано в розділ 23 (тріаж модуля) блоком «увага», зі шляхом у менюконфігу, звіреним у проході 11.
+- **Прохід:** pass-25-psram
+
+---
+
+<!-- fc id:T-23-026 sha:800725c5 src:manual/23-triazh.md:43 klas:A -->
+### T-23-026 · proza · рядок 43
+
+**Книга каже, дослівно:**
+
+> Симптом характерний: `heap_caps_get_free_size(MALLOC_CAP_SPIRAM)` повертає нуль на платі, за яку заплачено саме через ті 8 МБ.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-23-027 sha:76cf98d3 src:manual/23-triazh.md:43 klas:E -->
+### T-23-027 · proza · рядок 43
+
+**Книга каже, дослівно:**
+
+> Шукати при цьому починають несправність, а не налаштування.
+
+**Доказ**
+
 - **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-23-025 sha:31434f9e src:manual/23-triazh.md:37 klas:E -->
-### T-23-025 · proza · рядок 37
+<!-- fc id:T-23-028 sha:641e0049 src:manual/23-triazh.md:47 klas:A -->
+### T-23-028 · proza · рядок 47
+
+**Книга каже, дослівно:**
+
+> `Component config` → `ESP PSRAM` → `Mode (QUAD/OCT) of SPI RAM chip in use` (розділ 11).
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild, components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+- **Дослівно з джерела:**
+  > (Kconfig — корінь)
+  > mainmenu "Espressif IoT Development Framework Configuration"
+  >     menu "Build type"
+  >     menu "Compiler options"
+  >     menu "Component config"
+  > 
+  > (Kconfig.projbuild — потрапляють у корінь)
+  > esptool_py:        menu "Serial flasher config"
+  > partition_table:   menu "Partition Table"
+  > bootloader:        menu "Bootloader config"
+  > 
+  > (Kconfig — потрапляють у Component config)
+  > esp_system:  menu "ESP System Settings"
+  > espcoredump: menu "Core dump"
+  > esp_psram:   menu "ESP PSRAM"
+  > log:         menu "Log"
+  > bt:          menu "Bluetooth"
+  > freertos:    menu "FreeRTOS"
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі, а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component config`.
+- **Прохід:** pass-11-menuconfig
+
+---
+
+<!-- fc id:T-23-029 sha:31434f9e src:manual/23-triazh.md:51 klas:E -->
+### T-23-029 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -331,8 +463,8 @@
 
 ---
 
-<!-- fc id:T-23-026 sha:6331ef4a src:manual/23-triazh.md:37 klas:F -->
-### T-23-026 · proza · рядок 37
+<!-- fc id:T-23-030 sha:6331ef4a src:manual/23-triazh.md:51 klas:F -->
+### T-23-030 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -344,8 +476,8 @@
 
 ---
 
-<!-- fc id:T-23-027 sha:5e1ddf25 src:manual/23-triazh.md:37 klas:E -->
-### T-23-027 · proza · рядок 37
+<!-- fc id:T-23-031 sha:5e1ddf25 src:manual/23-triazh.md:51 klas:E -->
+### T-23-031 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -357,8 +489,8 @@
 
 ---
 
-<!-- fc id:T-23-028 sha:618d049b src:manual/23-triazh.md:43 klas:E -->
-### T-23-028 · proza · рядок 43
+<!-- fc id:T-23-032 sha:618d049b src:manual/23-triazh.md:57 klas:E -->
+### T-23-032 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -370,8 +502,8 @@
 
 ---
 
-<!-- fc id:T-23-029 sha:7400e128 src:manual/23-triazh.md:45 klas:E -->
-### T-23-029 · proza · рядок 45
+<!-- fc id:T-23-033 sha:7400e128 src:manual/23-triazh.md:59 klas:E -->
+### T-23-033 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -383,8 +515,8 @@
 
 ---
 
-<!-- fc id:T-23-030 sha:8f3fb1ea src:manual/23-triazh.md:51 klas:F -->
-### T-23-030 · proza · рядок 51
+<!-- fc id:T-23-034 sha:8f3fb1ea src:manual/23-triazh.md:65 klas:F -->
+### T-23-034 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -396,8 +528,8 @@
 
 ---
 
-<!-- fc id:T-23-031 sha:69e21065 src:manual/23-triazh.md:51 klas:E -->
-### T-23-031 · proza · рядок 51
+<!-- fc id:T-23-035 sha:69e21065 src:manual/23-triazh.md:65 klas:E -->
+### T-23-035 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -409,8 +541,8 @@
 
 ---
 
-<!-- fc id:T-23-032 sha:07a9069e src:manual/23-triazh.md:57 klas:E -->
-### T-23-032 · proza · рядок 57
+<!-- fc id:T-23-036 sha:07a9069e src:manual/23-triazh.md:71 klas:E -->
+### T-23-036 · proza · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -422,8 +554,8 @@
 
 ---
 
-<!-- fc id:T-23-033 sha:df7b49a9 src:manual/23-triazh.md:59 klas:F -->
-### T-23-033 · proza · рядок 59
+<!-- fc id:T-23-037 sha:df7b49a9 src:manual/23-triazh.md:73 klas:F -->
+### T-23-037 · proza · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -435,8 +567,8 @@
 
 ---
 
-<!-- fc id:T-23-034 sha:94db6086 src:manual/23-triazh.md:59 klas:F -->
-### T-23-034 · proza · рядок 59
+<!-- fc id:T-23-038 sha:94db6086 src:manual/23-triazh.md:73 klas:F -->
+### T-23-038 · proza · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -448,8 +580,8 @@
 
 ---
 
-<!-- fc id:T-23-035 sha:e4be64c2 src:manual/23-triazh.md:59 klas:E -->
-### T-23-035 · proza · рядок 59
+<!-- fc id:T-23-039 sha:e4be64c2 src:manual/23-triazh.md:73 klas:E -->
+### T-23-039 · proza · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -461,8 +593,8 @@
 
 ---
 
-<!-- fc id:T-23-036 sha:27868d1b src:manual/23-triazh.md:63 klas:F -->
-### T-23-036 · proza · рядок 63
+<!-- fc id:T-23-040 sha:27868d1b src:manual/23-triazh.md:77 klas:F -->
+### T-23-040 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -474,8 +606,8 @@
 
 ---
 
-<!-- fc id:T-23-037 sha:5c1b3b82 src:manual/23-triazh.md:63 klas:F -->
-### T-23-037 · proza · рядок 63
+<!-- fc id:T-23-041 sha:5c1b3b82 src:manual/23-triazh.md:77 klas:F -->
+### T-23-041 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -487,8 +619,8 @@
 
 ---
 
-<!-- fc id:T-23-038 sha:d374186c src:manual/23-triazh.md:66 klas:E -->
-### T-23-038 · proza · рядок 66
+<!-- fc id:T-23-042 sha:d374186c src:manual/23-triazh.md:80 klas:E -->
+### T-23-042 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -500,8 +632,8 @@
 
 ---
 
-<!-- fc id:T-23-039 sha:8a2be631 src:manual/23-triazh.md:66 klas:E -->
-### T-23-039 · proza · рядок 66
+<!-- fc id:T-23-043 sha:8a2be631 src:manual/23-triazh.md:80 klas:E -->
+### T-23-043 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -513,8 +645,8 @@
 
 ---
 
-<!-- fc id:T-23-040 sha:236a2c98 src:manual/23-triazh.md:72 klas:F -->
-### T-23-040 · proza · рядок 72
+<!-- fc id:T-23-044 sha:236a2c98 src:manual/23-triazh.md:86 klas:F -->
+### T-23-044 · proza · рядок 86
 
 **Книга каже, дослівно:**
 
@@ -526,8 +658,8 @@
 
 ---
 
-<!-- fc id:T-23-041 sha:551d5df7 src:manual/23-triazh.md:72 klas:F -->
-### T-23-041 · proza · рядок 72
+<!-- fc id:T-23-045 sha:551d5df7 src:manual/23-triazh.md:86 klas:F -->
+### T-23-045 · proza · рядок 86
 
 **Книга каже, дослівно:**
 
@@ -539,8 +671,8 @@
 
 ---
 
-<!-- fc id:T-23-042 sha:6c28adfe src:manual/23-triazh.md:76 klas:E -->
-### T-23-042 · proza · рядок 76
+<!-- fc id:T-23-046 sha:6c28adfe src:manual/23-triazh.md:90 klas:E -->
+### T-23-046 · proza · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -552,8 +684,8 @@
 
 ---
 
-<!-- fc id:T-23-043 sha:ba78726c src:manual/23-triazh.md:79 klas:F -->
-### T-23-043 · proza · рядок 79
+<!-- fc id:T-23-047 sha:ba78726c src:manual/23-triazh.md:93 klas:F -->
+### T-23-047 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -565,8 +697,8 @@
 
 ---
 
-<!-- fc id:T-23-044 sha:096c7af0 src:manual/23-triazh.md:79 klas:F -->
-### T-23-044 · proza · рядок 79
+<!-- fc id:T-23-048 sha:096c7af0 src:manual/23-triazh.md:93 klas:F -->
+### T-23-048 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -578,8 +710,8 @@
 
 ---
 
-<!-- fc id:T-23-045 sha:8ced5b42 src:manual/23-triazh.md:84 klas:F -->
-### T-23-045 · proza · рядок 84
+<!-- fc id:T-23-049 sha:8ced5b42 src:manual/23-triazh.md:98 klas:F -->
+### T-23-049 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -591,8 +723,8 @@
 
 ---
 
-<!-- fc id:T-23-046 sha:0272d30f src:manual/23-triazh.md:86 klas:K -->
-### T-23-046 · kod · рядок 86
+<!-- fc id:T-23-050 sha:0272d30f src:manual/23-triazh.md:100 klas:K -->
+### T-23-050 · kod · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -629,8 +761,8 @@
 
 ---
 
-<!-- fc id:T-23-047 sha:32416a21 src:manual/23-triazh.md:87 klas:F -->
-### T-23-047 · kod-ryadok · рядок 87
+<!-- fc id:T-23-051 sha:32416a21 src:manual/23-triazh.md:101 klas:F -->
+### T-23-051 · kod-ryadok · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -642,8 +774,8 @@
 
 ---
 
-<!-- fc id:T-23-048 sha:4c5a16ee src:manual/23-triazh.md:88 klas:F -->
-### T-23-048 · kod-ryadok · рядок 88
+<!-- fc id:T-23-052 sha:4c5a16ee src:manual/23-triazh.md:102 klas:F -->
+### T-23-052 · kod-ryadok · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -655,8 +787,8 @@
 
 ---
 
-<!-- fc id:T-23-049 sha:c36d5d81 src:manual/23-triazh.md:91 klas:F -->
-### T-23-049 · proza · рядок 91
+<!-- fc id:T-23-053 sha:c36d5d81 src:manual/23-triazh.md:105 klas:F -->
+### T-23-053 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -668,8 +800,8 @@
 
 ---
 
-<!-- fc id:T-23-050 sha:54de3ee1 src:manual/23-triazh.md:91 klas:E -->
-### T-23-050 · proza · рядок 91
+<!-- fc id:T-23-054 sha:54de3ee1 src:manual/23-triazh.md:105 klas:E -->
+### T-23-054 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -681,8 +813,8 @@
 
 ---
 
-<!-- fc id:T-23-051 sha:6f2e3d3c src:manual/23-triazh.md:96 klas:F -->
-### T-23-051 · proza · рядок 96
+<!-- fc id:T-23-055 sha:6f2e3d3c src:manual/23-triazh.md:110 klas:F -->
+### T-23-055 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -694,8 +826,8 @@
 
 ---
 
-<!-- fc id:T-23-052 sha:35c326be src:manual/23-triazh.md:96 klas:E -->
-### T-23-052 · proza · рядок 96
+<!-- fc id:T-23-056 sha:35c326be src:manual/23-triazh.md:110 klas:E -->
+### T-23-056 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -707,8 +839,8 @@
 
 ---
 
-<!-- fc id:T-23-053 sha:12500377 src:manual/23-triazh.md:96 klas:F -->
-### T-23-053 · proza · рядок 96
+<!-- fc id:T-23-057 sha:12500377 src:manual/23-triazh.md:110 klas:F -->
+### T-23-057 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -720,8 +852,8 @@
 
 ---
 
-<!-- fc id:T-23-054 sha:ce47154f src:manual/23-triazh.md:100 klas:E -->
-### T-23-054 · proza · рядок 100
+<!-- fc id:T-23-058 sha:ce47154f src:manual/23-triazh.md:114 klas:E -->
+### T-23-058 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -733,8 +865,8 @@
 
 ---
 
-<!-- fc id:T-23-055 sha:044a0a3f src:manual/23-triazh.md:102 klas:F -->
-### T-23-055 · proza · рядок 102
+<!-- fc id:T-23-059 sha:044a0a3f src:manual/23-triazh.md:116 klas:F -->
+### T-23-059 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -746,8 +878,8 @@
 
 ---
 
-<!-- fc id:T-23-056 sha:e016560a src:manual/23-triazh.md:102 klas:F -->
-### T-23-056 · proza · рядок 102
+<!-- fc id:T-23-060 sha:e016560a src:manual/23-triazh.md:116 klas:F -->
+### T-23-060 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -759,8 +891,8 @@
 
 ---
 
-<!-- fc id:T-23-057 sha:f81147b0 src:manual/23-triazh.md:102 klas:F -->
-### T-23-057 · proza · рядок 102
+<!-- fc id:T-23-061 sha:f81147b0 src:manual/23-triazh.md:116 klas:F -->
+### T-23-061 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -772,8 +904,8 @@
 
 ---
 
-<!-- fc id:T-23-058 sha:4ae3b5cc src:manual/23-triazh.md:102 klas:F -->
-### T-23-058 · proza · рядок 102
+<!-- fc id:T-23-062 sha:4ae3b5cc src:manual/23-triazh.md:116 klas:F -->
+### T-23-062 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -785,8 +917,8 @@
 
 ---
 
-<!-- fc id:T-23-059 sha:42741d61 src:manual/23-triazh.md:102 klas:E -->
-### T-23-059 · proza · рядок 102
+<!-- fc id:T-23-063 sha:42741d61 src:manual/23-triazh.md:116 klas:E -->
+### T-23-063 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -798,8 +930,8 @@
 
 ---
 
-<!-- fc id:T-23-060 sha:45ab00ad src:manual/23-triazh.md:108 klas:F -->
-### T-23-060 · proza · рядок 108
+<!-- fc id:T-23-064 sha:45ab00ad src:manual/23-triazh.md:122 klas:F -->
+### T-23-064 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -811,8 +943,8 @@
 
 ---
 
-<!-- fc id:T-23-061 sha:0bac57f5 src:manual/23-triazh.md:113 klas:F -->
-### T-23-061 · proza · рядок 113
+<!-- fc id:T-23-065 sha:0bac57f5 src:manual/23-triazh.md:127 klas:F -->
+### T-23-065 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -824,8 +956,8 @@
 
 ---
 
-<!-- fc id:T-23-062 sha:d2aa7bff src:manual/23-triazh.md:113 klas:F -->
-### T-23-062 · proza · рядок 113
+<!-- fc id:T-23-066 sha:d2aa7bff src:manual/23-triazh.md:127 klas:F -->
+### T-23-066 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -837,8 +969,8 @@
 
 ---
 
-<!-- fc id:T-23-063 sha:fdca5085 src:manual/23-triazh.md:116 klas:E -->
-### T-23-063 · proza · рядок 116
+<!-- fc id:T-23-067 sha:fdca5085 src:manual/23-triazh.md:130 klas:E -->
+### T-23-067 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -850,8 +982,8 @@
 
 ---
 
-<!-- fc id:T-23-064 sha:11c9cef8 src:manual/23-triazh.md:116 klas:E -->
-### T-23-064 · proza · рядок 116
+<!-- fc id:T-23-068 sha:11c9cef8 src:manual/23-triazh.md:130 klas:E -->
+### T-23-068 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -863,8 +995,8 @@
 
 ---
 
-<!-- fc id:T-23-065 sha:438b1f19 src:manual/23-triazh.md:121 klas:E -->
-### T-23-065 · proza · рядок 121
+<!-- fc id:T-23-069 sha:438b1f19 src:manual/23-triazh.md:135 klas:E -->
+### T-23-069 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -876,8 +1008,8 @@
 
 ---
 
-<!-- fc id:T-23-066 sha:bf78d515 src:manual/23-triazh.md:125 klas:E -->
-### T-23-066 · proza · рядок 125
+<!-- fc id:T-23-070 sha:bf78d515 src:manual/23-triazh.md:139 klas:E -->
+### T-23-070 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -889,8 +1021,8 @@
 
 ---
 
-<!-- fc id:T-23-067 sha:0459efb6 src:manual/23-triazh.md:128 klas:E -->
-### T-23-067 · proza · рядок 128
+<!-- fc id:T-23-071 sha:0459efb6 src:manual/23-triazh.md:142 klas:E -->
+### T-23-071 · proza · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -902,8 +1034,8 @@
 
 ---
 
-<!-- fc id:T-23-068 sha:96ba5b49 src:manual/23-triazh.md:128 klas:E -->
-### T-23-068 · proza · рядок 128
+<!-- fc id:T-23-072 sha:96ba5b49 src:manual/23-triazh.md:142 klas:E -->
+### T-23-072 · proza · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -915,8 +1047,8 @@
 
 ---
 
-<!-- fc id:T-23-069 sha:c30fa18d src:manual/23-triazh.md:132 klas:F -->
-### T-23-069 · proza · рядок 132
+<!-- fc id:T-23-073 sha:c30fa18d src:manual/23-triazh.md:146 klas:F -->
+### T-23-073 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -928,8 +1060,8 @@
 
 ---
 
-<!-- fc id:T-23-070 sha:6aa96d1d src:manual/23-triazh.md:132 klas:E -->
-### T-23-070 · proza · рядок 132
+<!-- fc id:T-23-074 sha:6aa96d1d src:manual/23-triazh.md:146 klas:E -->
+### T-23-074 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -941,8 +1073,8 @@
 
 ---
 
-<!-- fc id:T-23-071 sha:988143b7 src:manual/23-triazh.md:136 klas:E -->
-### T-23-071 · proza · рядок 136
+<!-- fc id:T-23-075 sha:988143b7 src:manual/23-triazh.md:150 klas:E -->
+### T-23-075 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -954,8 +1086,8 @@
 
 ---
 
-<!-- fc id:T-23-072 sha:12bcb691 src:manual/23-triazh.md:136 klas:E -->
-### T-23-072 · proza · рядок 136
+<!-- fc id:T-23-076 sha:12bcb691 src:manual/23-triazh.md:150 klas:E -->
+### T-23-076 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -967,8 +1099,8 @@
 
 ---
 
-<!-- fc id:T-23-073 sha:281d3db1 src:manual/23-triazh.md:143 klas:F -->
-### T-23-073 · tablycya-shapka · рядок 143
+<!-- fc id:T-23-077 sha:281d3db1 src:manual/23-triazh.md:157 klas:F -->
+### T-23-077 · tablycya-shapka · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -980,8 +1112,8 @@
 
 ---
 
-<!-- fc id:T-23-074 sha:e949c09e src:manual/23-triazh.md:144 klas:F -->
-### T-23-074 · komirka · рядок 144
+<!-- fc id:T-23-078 sha:e949c09e src:manual/23-triazh.md:158 klas:F -->
+### T-23-078 · komirka · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -993,8 +1125,8 @@
 
 ---
 
-<!-- fc id:T-23-075 sha:6ae1bc07 src:manual/23-triazh.md:144 klas:F -->
-### T-23-075 · komirka · рядок 144
+<!-- fc id:T-23-079 sha:6ae1bc07 src:manual/23-triazh.md:158 klas:F -->
+### T-23-079 · komirka · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -1006,8 +1138,8 @@
 
 ---
 
-<!-- fc id:T-23-076 sha:2641f94f src:manual/23-triazh.md:145 klas:F -->
-### T-23-076 · komirka · рядок 145
+<!-- fc id:T-23-080 sha:2641f94f src:manual/23-triazh.md:159 klas:F -->
+### T-23-080 · komirka · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -1019,8 +1151,8 @@
 
 ---
 
-<!-- fc id:T-23-077 sha:3831e6a7 src:manual/23-triazh.md:145 klas:F -->
-### T-23-077 · komirka · рядок 145
+<!-- fc id:T-23-081 sha:3831e6a7 src:manual/23-triazh.md:159 klas:F -->
+### T-23-081 · komirka · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -1032,8 +1164,8 @@
 
 ---
 
-<!-- fc id:T-23-078 sha:84245083 src:manual/23-triazh.md:146 klas:F -->
-### T-23-078 · komirka · рядок 146
+<!-- fc id:T-23-082 sha:84245083 src:manual/23-triazh.md:160 klas:F -->
+### T-23-082 · komirka · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1045,8 +1177,8 @@
 
 ---
 
-<!-- fc id:T-23-079 sha:91a76143 src:manual/23-triazh.md:146 klas:F -->
-### T-23-079 · komirka · рядок 146
+<!-- fc id:T-23-083 sha:91a76143 src:manual/23-triazh.md:160 klas:F -->
+### T-23-083 · komirka · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1058,8 +1190,8 @@
 
 ---
 
-<!-- fc id:T-23-080 sha:4e6f1515 src:manual/23-triazh.md:147 klas:F -->
-### T-23-080 · komirka · рядок 147
+<!-- fc id:T-23-084 sha:4e6f1515 src:manual/23-triazh.md:161 klas:F -->
+### T-23-084 · komirka · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1071,8 +1203,8 @@
 
 ---
 
-<!-- fc id:T-23-081 sha:5b42e84c src:manual/23-triazh.md:147 klas:F -->
-### T-23-081 · komirka · рядок 147
+<!-- fc id:T-23-085 sha:5b42e84c src:manual/23-triazh.md:161 klas:F -->
+### T-23-085 · komirka · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1084,8 +1216,8 @@
 
 ---
 
-<!-- fc id:T-23-082 sha:7e5e8bc8 src:manual/23-triazh.md:148 klas:F -->
-### T-23-082 · komirka · рядок 148
+<!-- fc id:T-23-086 sha:7e5e8bc8 src:manual/23-triazh.md:162 klas:F -->
+### T-23-086 · komirka · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1097,8 +1229,8 @@
 
 ---
 
-<!-- fc id:T-23-083 sha:c95de38f src:manual/23-triazh.md:148 klas:F -->
-### T-23-083 · komirka · рядок 148
+<!-- fc id:T-23-087 sha:c95de38f src:manual/23-triazh.md:162 klas:F -->
+### T-23-087 · komirka · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1110,8 +1242,8 @@
 
 ---
 
-<!-- fc id:T-23-084 sha:f93dfb64 src:manual/23-triazh.md:149 klas:F -->
-### T-23-084 · komirka · рядок 149
+<!-- fc id:T-23-088 sha:f93dfb64 src:manual/23-triazh.md:163 klas:F -->
+### T-23-088 · komirka · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -1123,8 +1255,8 @@
 
 ---
 
-<!-- fc id:T-23-085 sha:2c0adf58 src:manual/23-triazh.md:149 klas:F -->
-### T-23-085 · komirka · рядок 149
+<!-- fc id:T-23-089 sha:2c0adf58 src:manual/23-triazh.md:163 klas:F -->
+### T-23-089 · komirka · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -1136,8 +1268,8 @@
 
 ---
 
-<!-- fc id:T-23-086 sha:313a187d src:manual/23-triazh.md:150 klas:F -->
-### T-23-086 · komirka · рядок 150
+<!-- fc id:T-23-090 sha:313a187d src:manual/23-triazh.md:164 klas:F -->
+### T-23-090 · komirka · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1149,8 +1281,8 @@
 
 ---
 
-<!-- fc id:T-23-087 sha:3594c70a src:manual/23-triazh.md:150 klas:F -->
-### T-23-087 · komirka · рядок 150
+<!-- fc id:T-23-091 sha:3594c70a src:manual/23-triazh.md:164 klas:F -->
+### T-23-091 · komirka · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1162,8 +1294,8 @@
 
 ---
 
-<!-- fc id:T-23-088 sha:4a629d22 src:manual/23-triazh.md:151 klas:F -->
-### T-23-088 · komirka · рядок 151
+<!-- fc id:T-23-092 sha:4a629d22 src:manual/23-triazh.md:165 klas:F -->
+### T-23-092 · komirka · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1175,8 +1307,8 @@
 
 ---
 
-<!-- fc id:T-23-089 sha:ce352f8c src:manual/23-triazh.md:151 klas:F -->
-### T-23-089 · komirka · рядок 151
+<!-- fc id:T-23-093 sha:ce352f8c src:manual/23-triazh.md:165 klas:F -->
+### T-23-093 · komirka · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1188,8 +1320,8 @@
 
 ---
 
-<!-- fc id:T-23-090 sha:bf2f6dda src:manual/23-triazh.md:156 klas:E -->
-### T-23-090 · proza · рядок 156
+<!-- fc id:T-23-094 sha:bf2f6dda src:manual/23-triazh.md:170 klas:E -->
+### T-23-094 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1201,8 +1333,8 @@
 
 ---
 
-<!-- fc id:T-23-091 sha:388ec067 src:manual/23-triazh.md:156 klas:E -->
-### T-23-091 · proza · рядок 156
+<!-- fc id:T-23-095 sha:388ec067 src:manual/23-triazh.md:170 klas:E -->
+### T-23-095 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1214,8 +1346,8 @@
 
 ---
 
-<!-- fc id:T-23-092 sha:875088d7 src:manual/23-triazh.md:156 klas:F -->
-### T-23-092 · proza · рядок 156
+<!-- fc id:T-23-096 sha:875088d7 src:manual/23-triazh.md:170 klas:F -->
+### T-23-096 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1227,8 +1359,8 @@
 
 ---
 
-<!-- fc id:T-23-093 sha:abe9397d src:manual/23-triazh.md:160 klas:E -->
-### T-23-093 · proza · рядок 160
+<!-- fc id:T-23-097 sha:abe9397d src:manual/23-triazh.md:174 klas:E -->
+### T-23-097 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1240,8 +1372,8 @@
 
 ---
 
-<!-- fc id:T-23-094 sha:5648cf08 src:manual/23-triazh.md:160 klas:E -->
-### T-23-094 · proza · рядок 160
+<!-- fc id:T-23-098 sha:5648cf08 src:manual/23-triazh.md:174 klas:E -->
+### T-23-098 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1253,8 +1385,8 @@
 
 ---
 
-<!-- fc id:T-23-095 sha:31fbfe10 src:manual/23-triazh.md:160 klas:E -->
-### T-23-095 · proza · рядок 160
+<!-- fc id:T-23-099 sha:31fbfe10 src:manual/23-triazh.md:174 klas:E -->
+### T-23-099 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1266,8 +1398,8 @@
 
 ---
 
-<!-- fc id:T-23-096 sha:28c6794d src:manual/23-triazh.md:167 klas:E -->
-### T-23-096 · proza · рядок 167
+<!-- fc id:T-23-100 sha:28c6794d src:manual/23-triazh.md:181 klas:E -->
+### T-23-100 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -1279,8 +1411,8 @@
 
 ---
 
-<!-- fc id:T-23-097 sha:712b8c7a src:manual/23-triazh.md:170 klas:F -->
-### T-23-097 · proza · рядок 170
+<!-- fc id:T-23-101 sha:712b8c7a src:manual/23-triazh.md:184 klas:F -->
+### T-23-101 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1292,8 +1424,8 @@
 
 ---
 
-<!-- fc id:T-23-098 sha:178ba747 src:manual/23-triazh.md:170 klas:E -->
-### T-23-098 · proza · рядок 170
+<!-- fc id:T-23-102 sha:178ba747 src:manual/23-triazh.md:184 klas:E -->
+### T-23-102 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1305,8 +1437,8 @@
 
 ---
 
-<!-- fc id:T-23-099 sha:7b4a0968 src:manual/23-triazh.md:173 klas:E -->
-### T-23-099 · proza · рядок 173
+<!-- fc id:T-23-103 sha:7b4a0968 src:manual/23-triazh.md:187 klas:E -->
+### T-23-103 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1318,8 +1450,8 @@
 
 ---
 
-<!-- fc id:T-23-100 sha:c6803f93 src:manual/23-triazh.md:175 klas:E -->
-### T-23-100 · proza · рядок 175
+<!-- fc id:T-23-104 sha:c6803f93 src:manual/23-triazh.md:189 klas:E -->
+### T-23-104 · proza · рядок 189
 
 **Книга каже, дослівно:**
 

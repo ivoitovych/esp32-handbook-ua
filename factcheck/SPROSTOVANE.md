@@ -131,6 +131,19 @@
   prokhid: 24
   vynyatky: [factcheck/, reviews/]
 
+- shcho: Автоматичне винесення в PSRAM нібито треба вмикати
+  zbih: 'ввімкнути[^.]{0,60}автоматичне винесення|об великі буфери йшли в\s+PSRAM, це треба ввімкнути|автоматичне винесення великих виділень'
+  chomu: >-
+    Коли `CONFIG_SPIRAM` увімкнено, `SPIRAM_USE` типово має значення
+    `SPIRAM_USE_MALLOC`, а `SPIRAM_MALLOC_ALWAYSINTERNAL` типово 16384.
+    Тобто виділення від 16 КБ ідуть у PSRAM самі. Вмикати треба саму
+    підтримку PSRAM, а не винесення.
+  zamist: >-
+    вмикається `CONFIG_SPIRAM`; далі malloc виносить у PSRAM усе від
+    16 КБ, поріг — `CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL`
+  prokhid: 25
+  vynyatky: [factcheck/, reviews/]
+
 - shcho: 0x7000 як ліміт розміру таблиці розділів
   zbih: '0x7000[^.\n]{0,60}(таблиц|табли́ц)|(ліміт|розмір)[^.\n]{0,40}таблиц[^.\n]{0,40}0x7000'
   chomu: >-

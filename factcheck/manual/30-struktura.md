@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/30-struktura.md`
 
-Одиниць твердження: **92**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **102**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -808,12 +808,12 @@
 
 ---
 
-<!-- fc id:T-30-050 sha:a64b5a15 src:manual/30-struktura.md:138 klas:F -->
+<!-- fc id:T-30-050 sha:e8467fbc src:manual/30-struktura.md:138 klas:E -->
 ### T-30-050 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
-> **PSRAM є, але не використовується.** Навіть коли PSRAM встановлена і ввімкнена, `malloc` за замовчуванням бере з внутрішньої SRAM.
+> **PSRAM є, але поводиться не так, як гадають.** Тут два поширені непорозуміння, і вони протилежні.
 
 **Доказ**
 
@@ -821,12 +821,64 @@
 
 ---
 
-<!-- fc id:T-30-051 sha:62999b4c src:manual/30-struktura.md:138 klas:F -->
-### T-30-051 · proza · рядок 138
+<!-- fc id:T-30-051 sha:b9c24e83 src:manual/30-struktura.md:141 klas:A -->
+### T-30-051 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
-> Великі буфери треба просити явно (`MALLOC_CAP_SPIRAM`) або ввімкнути в `menuconfig` автоматичне винесення великих виділень у PSRAM.
+> Перше: підтримку PSRAM треба **ввімкнути** — `CONFIG_SPIRAM` типово вимкнена, і плата з розпаяною мікросхемою без цього просто її не бачить.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
+- **Дослівно з джерела:**
+  > (esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)
+  > config SPIRAM
+  >     bool "Support for external, SPI-connected RAM"
+  >     default "n"
+  > 
+  > (Kconfig.spiram.common)
+  > choice SPIRAM_USE
+  >     prompt "SPI RAM access method"
+  >     default SPIRAM_USE_MALLOC
+  >     config SPIRAM_USE_MEMMAP
+  >         bool "Integrate RAM into memory map"
+  >     config SPIRAM_USE_CAPS_ALLOC
+  >         bool "Add RAM to heap_caps allocator (malloc() stays internal by default)"
+  >     config SPIRAM_USE_MALLOC
+  >         bool "Make RAM allocatable using malloc() as well"
+  > endchoice
+  > 
+  > config SPIRAM_MALLOC_ALWAYSINTERNAL
+  >     int "Maximum malloc() size, in bytes, to always put in internal memory"
+  >     depends on SPIRAM_USE_MALLOC
+  >     default 16384
+  >     range 0 131072
+  >     help
+  >         If malloc() is capable of also allocating SPI-connected ram, its
+  >         allocation strategy will prefer to allocate chunks less than this
+  >         size in internal memory, while allocations larger than this will be
+  >         done from external RAM. If allocation from the preferred region
+  >         fails, an attempt is made to allocate from the non-preferred region
+  >         instead, so malloc() will not suddenly fail when either internal or
+  >         external memory is full.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Головна знахідка проходу, і вона поведінкова.
+Книга писала в двох місцях (розділи 03 і 30): «щоб великі буфери йшли в PSRAM, це треба ввімкнути й попросити явно». Половина вірна — `CONFIG_SPIRAM` справді типово `n`, і плата з розпаяною мікросхемою без цього її не бачить.
+Друга половина хибна, і саме її читач застосовує. Коли PSRAM увімкнено, `SPIRAM_USE` типово `SPIRAM_USE_MALLOC`, а `SPIRAM_MALLOC_ALWAYSINTERNAL` типово `16384`. Тобто **виділення від 16 КБ ідуть у PSRAM самі**, без жодного `MALLOC_CAP_SPIRAM`.
+Ціна помилки не в тому, що читач шукатиме в менюконфігу перемикач, який уже стоїть. Вона в тому, що його буфер на 64 КБ **уже** в зовнішній пам'яті — повільнішій і не завжди придатній для DMA, — а він упевнений, що у внутрішній. Помилку такого роду не видно доти, доки не почнеш міряти.
+Виправлено в обох місцях. У розділі 30 замість абзацу — таблиця порогу, згадка про м'якість переваги (якщо в бажаній області немає місця, береться інша, тож `malloc` не почне раптово віддавати `NULL`) і другий бік `heap_caps_malloc`: `MALLOC_CAP_INTERNAL`, щоб лишити буфер у SRAM свідомо. Формулювання заведено в `factcheck/SPROSTOVANE.md`, випробувано впровадженням у розділ 04 — обидва варіанти знаходяться.
+- **Прохід:** pass-25-psram
+
+---
+
+<!-- fc id:T-30-052 sha:ace55095 src:manual/30-struktura.md:144 klas:F -->
+### T-30-052 · proza · рядок 144
+
+**Книга каже, дослівно:**
+
+> Друге, і саме воно частіше: коли PSRAM увімкнено, `malloc` **уже** вміє віддавати з неї.
 
 **Доказ**
 
@@ -834,8 +886,238 @@
 
 ---
 
-<!-- fc id:T-30-052 sha:6c89b51c src:manual/30-struktura.md:143 klas:E -->
-### T-30-052 · proza · рядок 143
+<!-- fc id:T-30-053 sha:ec81bc57 src:manual/30-struktura.md:144 klas:E -->
+### T-30-053 · proza · рядок 144
+
+**Книга каже, дослівно:**
+
+> Автоматичне винесення не треба вмикати — воно за замовчуванням, і має поріг:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-30-054 sha:01bca69f src:manual/30-struktura.md:148 klas:F -->
+### T-30-054 · tablycya · рядок 148
+
+**Книга каже, дослівно:**
+
+> | Розмір виділення | Куди піде |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-30-055 sha:7620c6e3 src:manual/30-struktura.md:150 klas:A -->
+### T-30-055 · tablycya · рядок 150
+
+**Книга каже, дослівно:**
+
+> | менше 16 КБ | внутрішня SRAM |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
+- **Дослівно з джерела:**
+  > (esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)
+  > config SPIRAM
+  >     bool "Support for external, SPI-connected RAM"
+  >     default "n"
+  > 
+  > (Kconfig.spiram.common)
+  > choice SPIRAM_USE
+  >     prompt "SPI RAM access method"
+  >     default SPIRAM_USE_MALLOC
+  >     config SPIRAM_USE_MEMMAP
+  >         bool "Integrate RAM into memory map"
+  >     config SPIRAM_USE_CAPS_ALLOC
+  >         bool "Add RAM to heap_caps allocator (malloc() stays internal by default)"
+  >     config SPIRAM_USE_MALLOC
+  >         bool "Make RAM allocatable using malloc() as well"
+  > endchoice
+  > 
+  > config SPIRAM_MALLOC_ALWAYSINTERNAL
+  >     int "Maximum malloc() size, in bytes, to always put in internal memory"
+  >     depends on SPIRAM_USE_MALLOC
+  >     default 16384
+  >     range 0 131072
+  >     help
+  >         If malloc() is capable of also allocating SPI-connected ram, its
+  >         allocation strategy will prefer to allocate chunks less than this
+  >         size in internal memory, while allocations larger than this will be
+  >         done from external RAM. If allocation from the preferred region
+  >         fails, an attempt is made to allocate from the non-preferred region
+  >         instead, so malloc() will not suddenly fail when either internal or
+  >         external memory is full.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Головна знахідка проходу, і вона поведінкова.
+Книга писала в двох місцях (розділи 03 і 30): «щоб великі буфери йшли в PSRAM, це треба ввімкнути й попросити явно». Половина вірна — `CONFIG_SPIRAM` справді типово `n`, і плата з розпаяною мікросхемою без цього її не бачить.
+Друга половина хибна, і саме її читач застосовує. Коли PSRAM увімкнено, `SPIRAM_USE` типово `SPIRAM_USE_MALLOC`, а `SPIRAM_MALLOC_ALWAYSINTERNAL` типово `16384`. Тобто **виділення від 16 КБ ідуть у PSRAM самі**, без жодного `MALLOC_CAP_SPIRAM`.
+Ціна помилки не в тому, що читач шукатиме в менюконфігу перемикач, який уже стоїть. Вона в тому, що його буфер на 64 КБ **уже** в зовнішній пам'яті — повільнішій і не завжди придатній для DMA, — а він упевнений, що у внутрішній. Помилку такого роду не видно доти, доки не почнеш міряти.
+Виправлено в обох місцях. У розділі 30 замість абзацу — таблиця порогу, згадка про м'якість переваги (якщо в бажаній області немає місця, береться інша, тож `malloc` не почне раптово віддавати `NULL`) і другий бік `heap_caps_malloc`: `MALLOC_CAP_INTERNAL`, щоб лишити буфер у SRAM свідомо. Формулювання заведено в `factcheck/SPROSTOVANE.md`, випробувано впровадженням у розділ 04 — обидва варіанти знаходяться.
+- **Прохід:** pass-25-psram
+
+---
+
+<!-- fc id:T-30-056 sha:4e3c946d src:manual/30-struktura.md:151 klas:F -->
+### T-30-056 · tablycya · рядок 151
+
+**Книга каже, дослівно:**
+
+> | 16 КБ і більше | PSRAM |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-30-057 sha:00fc3a0d src:manual/30-struktura.md:153 klas:A -->
+### T-30-057 · proza · рядок 153
+
+**Книга каже, дослівно:**
+
+> Поріг — `CONFIG_SPIRAM_MALLOC_ALWAYSINTERNAL`, типово 16384, від 0 до 131072.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
+- **Дослівно з джерела:**
+  > (esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)
+  > config SPIRAM
+  >     bool "Support for external, SPI-connected RAM"
+  >     default "n"
+  > 
+  > (Kconfig.spiram.common)
+  > choice SPIRAM_USE
+  >     prompt "SPI RAM access method"
+  >     default SPIRAM_USE_MALLOC
+  >     config SPIRAM_USE_MEMMAP
+  >         bool "Integrate RAM into memory map"
+  >     config SPIRAM_USE_CAPS_ALLOC
+  >         bool "Add RAM to heap_caps allocator (malloc() stays internal by default)"
+  >     config SPIRAM_USE_MALLOC
+  >         bool "Make RAM allocatable using malloc() as well"
+  > endchoice
+  > 
+  > config SPIRAM_MALLOC_ALWAYSINTERNAL
+  >     int "Maximum malloc() size, in bytes, to always put in internal memory"
+  >     depends on SPIRAM_USE_MALLOC
+  >     default 16384
+  >     range 0 131072
+  >     help
+  >         If malloc() is capable of also allocating SPI-connected ram, its
+  >         allocation strategy will prefer to allocate chunks less than this
+  >         size in internal memory, while allocations larger than this will be
+  >         done from external RAM. If allocation from the preferred region
+  >         fails, an attempt is made to allocate from the non-preferred region
+  >         instead, so malloc() will not suddenly fail when either internal or
+  >         external memory is full.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Головна знахідка проходу, і вона поведінкова.
+Книга писала в двох місцях (розділи 03 і 30): «щоб великі буфери йшли в PSRAM, це треба ввімкнути й попросити явно». Половина вірна — `CONFIG_SPIRAM` справді типово `n`, і плата з розпаяною мікросхемою без цього її не бачить.
+Друга половина хибна, і саме її читач застосовує. Коли PSRAM увімкнено, `SPIRAM_USE` типово `SPIRAM_USE_MALLOC`, а `SPIRAM_MALLOC_ALWAYSINTERNAL` типово `16384`. Тобто **виділення від 16 КБ ідуть у PSRAM самі**, без жодного `MALLOC_CAP_SPIRAM`.
+Ціна помилки не в тому, що читач шукатиме в менюконфігу перемикач, який уже стоїть. Вона в тому, що його буфер на 64 КБ **уже** в зовнішній пам'яті — повільнішій і не завжди придатній для DMA, — а він упевнений, що у внутрішній. Помилку такого роду не видно доти, доки не почнеш міряти.
+Виправлено в обох місцях. У розділі 30 замість абзацу — таблиця порогу, згадка про м'якість переваги (якщо в бажаній області немає місця, береться інша, тож `malloc` не почне раптово віддавати `NULL`) і другий бік `heap_caps_malloc`: `MALLOC_CAP_INTERNAL`, щоб лишити буфер у SRAM свідомо. Формулювання заведено в `factcheck/SPROSTOVANE.md`, випробувано впровадженням у розділ 04 — обидва варіанти знаходяться.
+- **Прохід:** pass-25-psram
+
+---
+
+<!-- fc id:T-30-058 sha:ffbb3b29 src:manual/30-struktura.md:153 klas:F -->
+### T-30-058 · proza · рядок 153
+
+**Книга каже, дослівно:**
+
+> Перевага м'яка: якщо в бажаній області місця немає, береться інша, тож `malloc` не почне раптово повертати `NULL` при вільній пам'яті поруч.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-30-059 sha:1c4a684c src:manual/30-struktura.md:158 klas:F -->
+### T-30-059 · proza · рядок 158
+
+**Книга каже, дослівно:**
+
+> Практичний наслідок: буфер на 64 КБ опиниться в PSRAM **без** жодного `MALLOC_CAP_SPIRAM`, а разом із тим і без гарантій щодо DMA та зі швидкістю зовнішньої шини.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-30-060 sha:0ede65d0 src:manual/30-struktura.md:158 klas:A -->
+### T-30-060 · proza · рядок 158
+
+**Книга каже, дослівно:**
+
+> `heap_caps_malloc` потрібен не щоб потрапити в PSRAM, а щоб керувати цим свідомо — і в обидва боки:
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-30-061 sha:07790fd1 src:manual/30-struktura.md:163 klas:K -->
+### T-30-061 · kod · рядок 163
+
+**Книга каже, дослівно:**
+
+> ```c
+> uint8_t *big  = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);   // напевно в PSRAM
+> uint8_t *fast = heap_caps_malloc(65536, MALLOC_CAP_INTERNAL); // напевно в SRAM
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Дослівно з джерела:**
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
+
+---
+
+<!-- fc id:T-30-062 sha:6c89b51c src:manual/30-struktura.md:168 klas:E -->
+### T-30-062 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -847,8 +1129,8 @@
 
 ---
 
-<!-- fc id:T-30-053 sha:7d8168b3 src:manual/30-struktura.md:145 klas:K -->
-### T-30-053 · kod · рядок 145
+<!-- fc id:T-30-063 sha:7d8168b3 src:manual/30-struktura.md:170 klas:K -->
+### T-30-063 · kod · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -880,8 +1162,8 @@
 
 ---
 
-<!-- fc id:T-30-054 sha:6234b56e src:manual/30-struktura.md:147 klas:A -->
-### T-30-054 · kod-ryadok · рядок 147
+<!-- fc id:T-30-064 sha:6234b56e src:manual/30-struktura.md:172 klas:A -->
+### T-30-064 · kod-ryadok · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -909,8 +1191,8 @@
 
 ---
 
-<!-- fc id:T-30-055 sha:ad1f39e3 src:manual/30-struktura.md:148 klas:A -->
-### T-30-055 · kod-ryadok · рядок 148
+<!-- fc id:T-30-065 sha:ad1f39e3 src:manual/30-struktura.md:173 klas:A -->
+### T-30-065 · kod-ryadok · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -938,8 +1220,8 @@
 
 ---
 
-<!-- fc id:T-30-056 sha:cc69ac87 src:manual/30-struktura.md:151 klas:E -->
-### T-30-056 · proza · рядок 151
+<!-- fc id:T-30-066 sha:cc69ac87 src:manual/30-struktura.md:176 klas:E -->
+### T-30-066 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -951,8 +1233,8 @@
 
 ---
 
-<!-- fc id:T-30-057 sha:d52f1ea5 src:manual/30-struktura.md:151 klas:F -->
-### T-30-057 · proza · рядок 151
+<!-- fc id:T-30-067 sha:d52f1ea5 src:manual/30-struktura.md:176 klas:F -->
+### T-30-067 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -964,8 +1246,8 @@
 
 ---
 
-<!-- fc id:T-30-058 sha:83aff946 src:manual/30-struktura.md:154 klas:A -->
-### T-30-058 · proza · рядок 154
+<!-- fc id:T-30-068 sha:83aff946 src:manual/30-struktura.md:179 klas:A -->
+### T-30-068 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1007,8 +1289,8 @@
 
 ---
 
-<!-- fc id:T-30-059 sha:54537a63 src:manual/30-struktura.md:158 klas:K -->
-### T-30-059 · kod · рядок 158
+<!-- fc id:T-30-069 sha:54537a63 src:manual/30-struktura.md:183 klas:K -->
+### T-30-069 · kod · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1026,8 +1308,8 @@
 
 ---
 
-<!-- fc id:T-30-060 sha:960e650b src:manual/30-struktura.md:161 klas:F -->
-### T-30-060 · kod-ryadok · рядок 161
+<!-- fc id:T-30-070 sha:960e650b src:manual/30-struktura.md:186 klas:F -->
+### T-30-070 · kod-ryadok · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1039,8 +1321,8 @@
 
 ---
 
-<!-- fc id:T-30-061 sha:2c139180 src:manual/30-struktura.md:168 klas:E -->
-### T-30-061 · proza · рядок 168
+<!-- fc id:T-30-071 sha:2c139180 src:manual/30-struktura.md:193 klas:E -->
+### T-30-071 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -1052,8 +1334,8 @@
 
 ---
 
-<!-- fc id:T-30-062 sha:283e1395 src:manual/30-struktura.md:168 klas:F -->
-### T-30-062 · proza · рядок 168
+<!-- fc id:T-30-072 sha:283e1395 src:manual/30-struktura.md:193 klas:F -->
+### T-30-072 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -1065,8 +1347,8 @@
 
 ---
 
-<!-- fc id:T-30-063 sha:a8346dff src:manual/30-struktura.md:172 klas:E -->
-### T-30-063 · proza · рядок 172
+<!-- fc id:T-30-073 sha:a8346dff src:manual/30-struktura.md:197 klas:E -->
+### T-30-073 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1078,8 +1360,8 @@
 
 ---
 
-<!-- fc id:T-30-064 sha:e4e95770 src:manual/30-struktura.md:175 klas:K -->
-### T-30-064 · kod · рядок 175
+<!-- fc id:T-30-074 sha:e4e95770 src:manual/30-struktura.md:200 klas:K -->
+### T-30-074 · kod · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1103,8 +1385,8 @@
 
 ---
 
-<!-- fc id:T-30-065 sha:bd569017 src:manual/30-struktura.md:179 klas:F -->
-### T-30-065 · proza · рядок 179
+<!-- fc id:T-30-075 sha:bd569017 src:manual/30-struktura.md:204 klas:F -->
+### T-30-075 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1116,8 +1398,8 @@
 
 ---
 
-<!-- fc id:T-30-066 sha:274d7cce src:manual/30-struktura.md:182 klas:E -->
-### T-30-066 · proza · рядок 182
+<!-- fc id:T-30-076 sha:274d7cce src:manual/30-struktura.md:207 klas:E -->
+### T-30-076 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1129,8 +1411,8 @@
 
 ---
 
-<!-- fc id:T-30-067 sha:ef960cbf src:manual/30-struktura.md:182 klas:A -->
-### T-30-067 · proza · рядок 182
+<!-- fc id:T-30-077 sha:ef960cbf src:manual/30-struktura.md:207 klas:A -->
+### T-30-077 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1152,8 +1434,8 @@
 
 ---
 
-<!-- fc id:T-30-068 sha:3ff21391 src:manual/30-struktura.md:188 klas:F -->
-### T-30-068 · proza · рядок 188
+<!-- fc id:T-30-078 sha:3ff21391 src:manual/30-struktura.md:213 klas:F -->
+### T-30-078 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1165,8 +1447,8 @@
 
 ---
 
-<!-- fc id:T-30-069 sha:53abed90 src:manual/30-struktura.md:188 klas:E -->
-### T-30-069 · proza · рядок 188
+<!-- fc id:T-30-079 sha:53abed90 src:manual/30-struktura.md:213 klas:E -->
+### T-30-079 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1178,8 +1460,8 @@
 
 ---
 
-<!-- fc id:T-30-070 sha:61539d28 src:manual/30-struktura.md:192 klas:F -->
-### T-30-070 · proza · рядок 192
+<!-- fc id:T-30-080 sha:61539d28 src:manual/30-struktura.md:217 klas:F -->
+### T-30-080 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1191,8 +1473,8 @@
 
 ---
 
-<!-- fc id:T-30-071 sha:30161603 src:manual/30-struktura.md:192 klas:E -->
-### T-30-071 · proza · рядок 192
+<!-- fc id:T-30-081 sha:30161603 src:manual/30-struktura.md:217 klas:E -->
+### T-30-081 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1204,8 +1486,8 @@
 
 ---
 
-<!-- fc id:T-30-072 sha:5503aeaf src:manual/30-struktura.md:195 klas:K -->
-### T-30-072 · kod · рядок 195
+<!-- fc id:T-30-082 sha:5503aeaf src:manual/30-struktura.md:220 klas:K -->
+### T-30-082 · kod · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -1221,8 +1503,8 @@
 
 ---
 
-<!-- fc id:T-30-073 sha:f8388e6b src:manual/30-struktura.md:201 klas:E -->
-### T-30-073 · proza · рядок 201
+<!-- fc id:T-30-083 sha:f8388e6b src:manual/30-struktura.md:226 klas:E -->
+### T-30-083 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1234,8 +1516,8 @@
 
 ---
 
-<!-- fc id:T-30-074 sha:c2dcc926 src:manual/30-struktura.md:201 klas:F -->
-### T-30-074 · proza · рядок 201
+<!-- fc id:T-30-084 sha:c2dcc926 src:manual/30-struktura.md:226 klas:F -->
+### T-30-084 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1247,8 +1529,8 @@
 
 ---
 
-<!-- fc id:T-30-075 sha:5bcfe49a src:manual/30-struktura.md:206 klas:F -->
-### T-30-075 · proza · рядок 206
+<!-- fc id:T-30-085 sha:5bcfe49a src:manual/30-struktura.md:231 klas:F -->
+### T-30-085 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -1260,8 +1542,8 @@
 
 ---
 
-<!-- fc id:T-30-076 sha:38e10f93 src:manual/30-struktura.md:206 klas:F -->
-### T-30-076 · proza · рядок 206
+<!-- fc id:T-30-086 sha:38e10f93 src:manual/30-struktura.md:231 klas:F -->
+### T-30-086 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -1273,8 +1555,8 @@
 
 ---
 
-<!-- fc id:T-30-077 sha:42e5df0c src:manual/30-struktura.md:206 klas:E -->
-### T-30-077 · proza · рядок 206
+<!-- fc id:T-30-087 sha:42e5df0c src:manual/30-struktura.md:231 klas:E -->
+### T-30-087 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -1286,8 +1568,8 @@
 
 ---
 
-<!-- fc id:T-30-078 sha:66cbb212 src:manual/30-struktura.md:212 klas:K -->
-### T-30-078 · kod · рядок 212
+<!-- fc id:T-30-088 sha:66cbb212 src:manual/30-struktura.md:237 klas:K -->
+### T-30-088 · kod · рядок 237
 
 **Книга каже, дослівно:**
 
@@ -1324,8 +1606,8 @@
 
 ---
 
-<!-- fc id:T-30-079 sha:30366121 src:manual/30-struktura.md:213 klas:A -->
-### T-30-079 · kod-ryadok · рядок 213
+<!-- fc id:T-30-089 sha:30366121 src:manual/30-struktura.md:238 klas:A -->
+### T-30-089 · kod-ryadok · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1359,8 +1641,8 @@
 
 ---
 
-<!-- fc id:T-30-080 sha:6c692b14 src:manual/30-struktura.md:214 klas:A -->
-### T-30-080 · kod-ryadok · рядок 214
+<!-- fc id:T-30-090 sha:6c692b14 src:manual/30-struktura.md:239 klas:A -->
+### T-30-090 · kod-ryadok · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -1394,8 +1676,8 @@
 
 ---
 
-<!-- fc id:T-30-081 sha:d2a9a595 src:manual/30-struktura.md:217 klas:A -->
-### T-30-081 · proza · рядок 217
+<!-- fc id:T-30-091 sha:d2a9a595 src:manual/30-struktura.md:242 klas:A -->
+### T-30-091 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1429,8 +1711,8 @@
 
 ---
 
-<!-- fc id:T-30-082 sha:23020636 src:manual/30-struktura.md:223 klas:K -->
-### T-30-082 · kod · рядок 223
+<!-- fc id:T-30-092 sha:23020636 src:manual/30-struktura.md:248 klas:K -->
+### T-30-092 · kod · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1445,8 +1727,8 @@
 
 ---
 
-<!-- fc id:T-30-083 sha:2e66a826 src:manual/30-struktura.md:224 klas:F -->
-### T-30-083 · kod-ryadok · рядок 224
+<!-- fc id:T-30-093 sha:2e66a826 src:manual/30-struktura.md:249 klas:F -->
+### T-30-093 · kod-ryadok · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -1458,8 +1740,8 @@
 
 ---
 
-<!-- fc id:T-30-084 sha:991d1932 src:manual/30-struktura.md:225 klas:F -->
-### T-30-084 · kod-ryadok · рядок 225
+<!-- fc id:T-30-094 sha:991d1932 src:manual/30-struktura.md:250 klas:F -->
+### T-30-094 · kod-ryadok · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1471,8 +1753,8 @@
 
 ---
 
-<!-- fc id:T-30-085 sha:ccc7ed3c src:manual/30-struktura.md:228 klas:E -->
-### T-30-085 · proza · рядок 228
+<!-- fc id:T-30-095 sha:ccc7ed3c src:manual/30-struktura.md:253 klas:E -->
+### T-30-095 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -1484,8 +1766,8 @@
 
 ---
 
-<!-- fc id:T-30-086 sha:8b57246a src:manual/30-struktura.md:233 klas:F -->
-### T-30-086 · proza · рядок 233
+<!-- fc id:T-30-096 sha:8b57246a src:manual/30-struktura.md:258 klas:F -->
+### T-30-096 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1497,8 +1779,8 @@
 
 ---
 
-<!-- fc id:T-30-087 sha:6d579e42 src:manual/30-struktura.md:236 klas:E -->
-### T-30-087 · proza · рядок 236
+<!-- fc id:T-30-097 sha:6d579e42 src:manual/30-struktura.md:261 klas:E -->
+### T-30-097 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -1510,8 +1792,8 @@
 
 ---
 
-<!-- fc id:T-30-088 sha:d8584f81 src:manual/30-struktura.md:236 klas:E -->
-### T-30-088 · proza · рядок 236
+<!-- fc id:T-30-098 sha:d8584f81 src:manual/30-struktura.md:261 klas:E -->
+### T-30-098 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -1523,8 +1805,8 @@
 
 ---
 
-<!-- fc id:T-30-089 sha:e8ebea85 src:manual/30-struktura.md:239 klas:E -->
-### T-30-089 · proza · рядок 239
+<!-- fc id:T-30-099 sha:e8ebea85 src:manual/30-struktura.md:264 klas:E -->
+### T-30-099 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -1536,8 +1818,8 @@
 
 ---
 
-<!-- fc id:T-30-090 sha:9243b822 src:manual/30-struktura.md:242 klas:E -->
-### T-30-090 · proza · рядок 242
+<!-- fc id:T-30-100 sha:9243b822 src:manual/30-struktura.md:267 klas:E -->
+### T-30-100 · proza · рядок 267
 
 **Книга каже, дослівно:**
 
@@ -1549,8 +1831,8 @@
 
 ---
 
-<!-- fc id:T-30-091 sha:21874c85 src:manual/30-struktura.md:244 klas:F -->
-### T-30-091 · proza · рядок 244
+<!-- fc id:T-30-101 sha:21874c85 src:manual/30-struktura.md:269 klas:F -->
+### T-30-101 · proza · рядок 269
 
 **Книга каже, дослівно:**
 
@@ -1562,8 +1844,8 @@
 
 ---
 
-<!-- fc id:T-30-092 sha:b09b18e3 src:manual/30-struktura.md:246 klas:F -->
-### T-30-092 · proza · рядок 246
+<!-- fc id:T-30-102 sha:b09b18e3 src:manual/30-struktura.md:271 klas:F -->
+### T-30-102 · proza · рядок 271
 
 **Книга каже, дослівно:**
 

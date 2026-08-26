@@ -969,7 +969,7 @@
 
 ---
 
-<!-- fc id:T-07-060 sha:c9a2eeb3 src:manual/07-gpio.md:111 klas:F -->
+<!-- fc id:T-07-060 sha:c9a2eeb3 src:manual/07-gpio.md:111 klas:A -->
 ### T-07-060 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -978,7 +978,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h та .../components/soc/esp32s3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define MSPI_IOMUX_PIN_NUM_CS1      26
+  > #define MSPI_IOMUX_PIN_NUM_HD       27
+  > #define MSPI_IOMUX_PIN_NUM_WP       28
+  > #define MSPI_IOMUX_PIN_NUM_CS0      29
+  > #define MSPI_IOMUX_PIN_NUM_CLK      30
+  > #define MSPI_IOMUX_PIN_NUM_MISO     31
+  > #define MSPI_IOMUX_PIN_NUM_MOSI     32
+  > #define MSPI_IOMUX_PIN_NUM_D4       33
+  > #define MSPI_IOMUX_PIN_NUM_D5       34
+  > #define MSPI_IOMUX_PIN_NUM_D6       35
+  > #define MSPI_IOMUX_PIN_NUM_D7       36
+  > #define MSPI_IOMUX_PIN_NUM_DQS      37
+  > 
+  > (soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 49
+  > #define SOC_SPIRAM_SUPPORTED            1
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено без розбіжностей, і збіг тут точніший, ніж очікувалося: сім пінів MSPI — це рівно `GPIO26`–`GPIO32`, як пише книга, а чотири лінії даних `D4`–`D7` плюс `DQS` — рівно `GPIO33`–`GPIO37`.
+Підтвердилося й число: «октальна PSRAM з'їдає **п'ять** додаткових пінів» — 33, 34, 35, 36, 37, тобто п'ять і є.
+Твердження живе в чотирьох місцях (розділи 07 і 23, додаток A, картка К9) і скрізь однакове — рідкісний випадок, коли пропагація спрацювала сама.
+- **Прохід:** pass-25-psram
 
 ---
 
@@ -1008,7 +1031,7 @@
 
 ---
 
-<!-- fc id:T-07-063 sha:5638f14b src:manual/07-gpio.md:117 klas:E -->
+<!-- fc id:T-07-063 sha:5638f14b src:manual/07-gpio.md:117 klas:A -->
 ### T-07-063 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -1017,7 +1040,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h та .../components/soc/esp32s3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define MSPI_IOMUX_PIN_NUM_CS1      26
+  > #define MSPI_IOMUX_PIN_NUM_HD       27
+  > #define MSPI_IOMUX_PIN_NUM_WP       28
+  > #define MSPI_IOMUX_PIN_NUM_CS0      29
+  > #define MSPI_IOMUX_PIN_NUM_CLK      30
+  > #define MSPI_IOMUX_PIN_NUM_MISO     31
+  > #define MSPI_IOMUX_PIN_NUM_MOSI     32
+  > #define MSPI_IOMUX_PIN_NUM_D4       33
+  > #define MSPI_IOMUX_PIN_NUM_D5       34
+  > #define MSPI_IOMUX_PIN_NUM_D6       35
+  > #define MSPI_IOMUX_PIN_NUM_D7       36
+  > #define MSPI_IOMUX_PIN_NUM_DQS      37
+  > 
+  > (soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 49
+  > #define SOC_SPIRAM_SUPPORTED            1
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено без розбіжностей, і збіг тут точніший, ніж очікувалося: сім пінів MSPI — це рівно `GPIO26`–`GPIO32`, як пише книга, а чотири лінії даних `D4`–`D7` плюс `DQS` — рівно `GPIO33`–`GPIO37`.
+Підтвердилося й число: «октальна PSRAM з'їдає **п'ять** додаткових пінів» — 33, 34, 35, 36, 37, тобто п'ять і є.
+Твердження живе в чотирьох місцях (розділи 07 і 23, додаток A, картка К9) і скрізь однакове — рідкісний випадок, коли пропагація спрацювала сама.
+- **Прохід:** pass-25-psram
 
 ---
 

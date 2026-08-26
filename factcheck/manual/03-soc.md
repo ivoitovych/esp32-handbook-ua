@@ -511,34 +511,112 @@
 
 ---
 
-<!-- fc id:T-03-038 sha:59af62e1 src:manual/03-soc.md:78 klas:F -->
+<!-- fc id:T-03-038 sha:9a6731c9 src:manual/03-soc.md:78 klas:A -->
 ### T-03-038 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
-> *PSRAM не увімкнено або не використовується.* Навіть коли PSRAM є, за замовчуванням `malloc` бере з внутрішньої SRAM.
+> *PSRAM не увімкнено.* `CONFIG_SPIRAM` типово вимкнена, і плата з розпаяною мікросхемою без цього її не бачить.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
+- **Дослівно з джерела:**
+  > (esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)
+  > config SPIRAM
+  >     bool "Support for external, SPI-connected RAM"
+  >     default "n"
+  > 
+  > (Kconfig.spiram.common)
+  > choice SPIRAM_USE
+  >     prompt "SPI RAM access method"
+  >     default SPIRAM_USE_MALLOC
+  >     config SPIRAM_USE_MEMMAP
+  >         bool "Integrate RAM into memory map"
+  >     config SPIRAM_USE_CAPS_ALLOC
+  >         bool "Add RAM to heap_caps allocator (malloc() stays internal by default)"
+  >     config SPIRAM_USE_MALLOC
+  >         bool "Make RAM allocatable using malloc() as well"
+  > endchoice
+  > 
+  > config SPIRAM_MALLOC_ALWAYSINTERNAL
+  >     int "Maximum malloc() size, in bytes, to always put in internal memory"
+  >     depends on SPIRAM_USE_MALLOC
+  >     default 16384
+  >     range 0 131072
+  >     help
+  >         If malloc() is capable of also allocating SPI-connected ram, its
+  >         allocation strategy will prefer to allocate chunks less than this
+  >         size in internal memory, while allocations larger than this will be
+  >         done from external RAM. If allocation from the preferred region
+  >         fails, an attempt is made to allocate from the non-preferred region
+  >         instead, so malloc() will not suddenly fail when either internal or
+  >         external memory is full.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Головна знахідка проходу, і вона поведінкова.
+Книга писала в двох місцях (розділи 03 і 30): «щоб великі буфери йшли в PSRAM, це треба ввімкнути й попросити явно». Половина вірна — `CONFIG_SPIRAM` справді типово `n`, і плата з розпаяною мікросхемою без цього її не бачить.
+Друга половина хибна, і саме її читач застосовує. Коли PSRAM увімкнено, `SPIRAM_USE` типово `SPIRAM_USE_MALLOC`, а `SPIRAM_MALLOC_ALWAYSINTERNAL` типово `16384`. Тобто **виділення від 16 КБ ідуть у PSRAM самі**, без жодного `MALLOC_CAP_SPIRAM`.
+Ціна помилки не в тому, що читач шукатиме в менюконфігу перемикач, який уже стоїть. Вона в тому, що його буфер на 64 КБ **уже** в зовнішній пам'яті — повільнішій і не завжди придатній для DMA, — а він упевнений, що у внутрішній. Помилку такого роду не видно доти, доки не почнеш міряти.
+Виправлено в обох місцях. У розділі 30 замість абзацу — таблиця порогу, згадка про м'якість переваги (якщо в бажаній області немає місця, береться інша, тож `malloc` не почне раптово віддавати `NULL`) і другий бік `heap_caps_malloc`: `MALLOC_CAP_INTERNAL`, щоб лишити буфер у SRAM свідомо. Формулювання заведено в `factcheck/SPROSTOVANE.md`, випробувано впровадженням у розділ 04 — обидва варіанти знаходяться.
+- **Прохід:** pass-25-psram
 
 ---
 
-<!-- fc id:T-03-039 sha:3c5f18d3 src:manual/03-soc.md:78 klas:E -->
+<!-- fc id:T-03-039 sha:87756b0a src:manual/03-soc.md:78 klas:A -->
 ### T-03-039 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
-> Щоб великі буфери йшли в PSRAM, це треба ввімкнути й попросити явно.
+> А от коли ввімкнено, `malloc` уже сам виносить у PSRAM усе від 16 КБ — вмикати це окремо не треба (розділ 30).
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
+- **Дослівно з джерела:**
+  > (esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)
+  > config SPIRAM
+  >     bool "Support for external, SPI-connected RAM"
+  >     default "n"
+  > 
+  > (Kconfig.spiram.common)
+  > choice SPIRAM_USE
+  >     prompt "SPI RAM access method"
+  >     default SPIRAM_USE_MALLOC
+  >     config SPIRAM_USE_MEMMAP
+  >         bool "Integrate RAM into memory map"
+  >     config SPIRAM_USE_CAPS_ALLOC
+  >         bool "Add RAM to heap_caps allocator (malloc() stays internal by default)"
+  >     config SPIRAM_USE_MALLOC
+  >         bool "Make RAM allocatable using malloc() as well"
+  > endchoice
+  > 
+  > config SPIRAM_MALLOC_ALWAYSINTERNAL
+  >     int "Maximum malloc() size, in bytes, to always put in internal memory"
+  >     depends on SPIRAM_USE_MALLOC
+  >     default 16384
+  >     range 0 131072
+  >     help
+  >         If malloc() is capable of also allocating SPI-connected ram, its
+  >         allocation strategy will prefer to allocate chunks less than this
+  >         size in internal memory, while allocations larger than this will be
+  >         done from external RAM. If allocation from the preferred region
+  >         fails, an attempt is made to allocate from the non-preferred region
+  >         instead, so malloc() will not suddenly fail when either internal or
+  >         external memory is full.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Головна знахідка проходу, і вона поведінкова.
+Книга писала в двох місцях (розділи 03 і 30): «щоб великі буфери йшли в PSRAM, це треба ввімкнути й попросити явно». Половина вірна — `CONFIG_SPIRAM` справді типово `n`, і плата з розпаяною мікросхемою без цього її не бачить.
+Друга половина хибна, і саме її читач застосовує. Коли PSRAM увімкнено, `SPIRAM_USE` типово `SPIRAM_USE_MALLOC`, а `SPIRAM_MALLOC_ALWAYSINTERNAL` типово `16384`. Тобто **виділення від 16 КБ ідуть у PSRAM самі**, без жодного `MALLOC_CAP_SPIRAM`.
+Ціна помилки не в тому, що читач шукатиме в менюконфігу перемикач, який уже стоїть. Вона в тому, що його буфер на 64 КБ **уже** в зовнішній пам'яті — повільнішій і не завжди придатній для DMA, — а він упевнений, що у внутрішній. Помилку такого роду не видно доти, доки не почнеш міряти.
+Виправлено в обох місцях. У розділі 30 замість абзацу — таблиця порогу, згадка про м'якість переваги (якщо в бажаній області немає місця, береться інша, тож `malloc` не почне раптово віддавати `NULL`) і другий бік `heap_caps_malloc`: `MALLOC_CAP_INTERNAL`, щоб лишити буфер у SRAM свідомо. Формулювання заведено в `factcheck/SPROSTOVANE.md`, випробувано впровадженням у розділ 04 — обидва варіанти знаходяться.
+- **Прохід:** pass-25-psram
 
 ---
 
-<!-- fc id:T-03-040 sha:e1bf5cd3 src:manual/03-soc.md:82 klas:A -->
-### T-03-040 · proza · рядок 82
+<!-- fc id:T-03-040 sha:e1bf5cd3 src:manual/03-soc.md:83 klas:A -->
+### T-03-040 · proza · рядок 83
 
 **Книга каже, дослівно:**
 
@@ -566,8 +644,8 @@
 
 ---
 
-<!-- fc id:T-03-041 sha:6d0a35b4 src:manual/03-soc.md:88 klas:E -->
-### T-03-041 · proza · рядок 88
+<!-- fc id:T-03-041 sha:6d0a35b4 src:manual/03-soc.md:89 klas:E -->
+### T-03-041 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -579,8 +657,8 @@
 
 ---
 
-<!-- fc id:T-03-042 sha:f310a685 src:manual/03-soc.md:88 klas:E -->
-### T-03-042 · proza · рядок 88
+<!-- fc id:T-03-042 sha:f310a685 src:manual/03-soc.md:89 klas:E -->
+### T-03-042 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -592,8 +670,8 @@
 
 ---
 
-<!-- fc id:T-03-043 sha:cf1f101a src:manual/03-soc.md:88 klas:E -->
-### T-03-043 · proza · рядок 88
+<!-- fc id:T-03-043 sha:cf1f101a src:manual/03-soc.md:89 klas:E -->
+### T-03-043 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -605,8 +683,8 @@
 
 ---
 
-<!-- fc id:T-03-044 sha:c82a89c3 src:manual/03-soc.md:91 klas:E -->
-### T-03-044 · proza · рядок 91
+<!-- fc id:T-03-044 sha:c82a89c3 src:manual/03-soc.md:92 klas:E -->
+### T-03-044 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -618,8 +696,8 @@
 
 ---
 
-<!-- fc id:T-03-045 sha:628ed161 src:manual/03-soc.md:91 klas:E -->
-### T-03-045 · proza · рядок 91
+<!-- fc id:T-03-045 sha:628ed161 src:manual/03-soc.md:92 klas:E -->
+### T-03-045 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -631,8 +709,8 @@
 
 ---
 
-<!-- fc id:T-03-046 sha:94ffa5a7 src:manual/03-soc.md:96 klas:E -->
-### T-03-046 · proza · рядок 96
+<!-- fc id:T-03-046 sha:94ffa5a7 src:manual/03-soc.md:97 klas:E -->
+### T-03-046 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -644,8 +722,8 @@
 
 ---
 
-<!-- fc id:T-03-047 sha:80711892 src:manual/03-soc.md:96 klas:A -->
-### T-03-047 · proza · рядок 96
+<!-- fc id:T-03-047 sha:80711892 src:manual/03-soc.md:97 klas:A -->
+### T-03-047 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -667,8 +745,8 @@
 
 ---
 
-<!-- fc id:T-03-048 sha:56f50edc src:manual/03-soc.md:100 klas:K -->
-### T-03-048 · kod · рядок 100
+<!-- fc id:T-03-048 sha:56f50edc src:manual/03-soc.md:101 klas:K -->
+### T-03-048 · kod · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -694,8 +772,8 @@
 
 ---
 
-<!-- fc id:T-03-049 sha:478c1d83 src:manual/03-soc.md:106 klas:A -->
-### T-03-049 · proza · рядок 106
+<!-- fc id:T-03-049 sha:478c1d83 src:manual/03-soc.md:107 klas:A -->
+### T-03-049 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -717,8 +795,8 @@
 
 ---
 
-<!-- fc id:T-03-050 sha:fcb7d541 src:manual/03-soc.md:111 klas:F -->
-### T-03-050 · proza · рядок 111
+<!-- fc id:T-03-050 sha:fcb7d541 src:manual/03-soc.md:112 klas:F -->
+### T-03-050 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -730,8 +808,8 @@
 
 ---
 
-<!-- fc id:T-03-051 sha:20d9bd0f src:manual/03-soc.md:111 klas:E -->
-### T-03-051 · proza · рядок 111
+<!-- fc id:T-03-051 sha:20d9bd0f src:manual/03-soc.md:112 klas:E -->
+### T-03-051 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -743,8 +821,8 @@
 
 ---
 
-<!-- fc id:T-03-052 sha:1ecf96c3 src:manual/03-soc.md:114 klas:E -->
-### T-03-052 · proza · рядок 114
+<!-- fc id:T-03-052 sha:1ecf96c3 src:manual/03-soc.md:115 klas:E -->
+### T-03-052 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -756,8 +834,8 @@
 
 ---
 
-<!-- fc id:T-03-053 sha:4cbe3890 src:manual/03-soc.md:116 klas:F -->
-### T-03-053 · proza · рядок 116
+<!-- fc id:T-03-053 sha:4cbe3890 src:manual/03-soc.md:117 klas:F -->
+### T-03-053 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -769,8 +847,8 @@
 
 ---
 
-<!-- fc id:T-03-054 sha:9f706283 src:manual/03-soc.md:122 klas:E -->
-### T-03-054 · proza · рядок 122
+<!-- fc id:T-03-054 sha:9f706283 src:manual/03-soc.md:123 klas:E -->
+### T-03-054 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -782,8 +860,8 @@
 
 ---
 
-<!-- fc id:T-03-055 sha:3486d9c6 src:manual/03-soc.md:122 klas:F -->
-### T-03-055 · proza · рядок 122
+<!-- fc id:T-03-055 sha:3486d9c6 src:manual/03-soc.md:123 klas:F -->
+### T-03-055 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -795,8 +873,8 @@
 
 ---
 
-<!-- fc id:T-03-056 sha:cbfc1f81 src:manual/03-soc.md:128 klas:E -->
-### T-03-056 · proza · рядок 128
+<!-- fc id:T-03-056 sha:cbfc1f81 src:manual/03-soc.md:129 klas:E -->
+### T-03-056 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -808,8 +886,8 @@
 
 ---
 
-<!-- fc id:T-03-057 sha:a717ac57 src:manual/03-soc.md:128 klas:F -->
-### T-03-057 · proza · рядок 128
+<!-- fc id:T-03-057 sha:a717ac57 src:manual/03-soc.md:129 klas:F -->
+### T-03-057 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -821,8 +899,8 @@
 
 ---
 
-<!-- fc id:T-03-058 sha:4d9cc263 src:manual/03-soc.md:135 klas:E -->
-### T-03-058 · proza · рядок 135
+<!-- fc id:T-03-058 sha:4d9cc263 src:manual/03-soc.md:136 klas:E -->
+### T-03-058 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -834,8 +912,8 @@
 
 ---
 
-<!-- fc id:T-03-059 sha:dc78d229 src:manual/03-soc.md:137 klas:A -->
-### T-03-059 · proza · рядок 137
+<!-- fc id:T-03-059 sha:dc78d229 src:manual/03-soc.md:138 klas:A -->
+### T-03-059 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -855,8 +933,8 @@
 
 ---
 
-<!-- fc id:T-03-060 sha:769a9fbb src:manual/03-soc.md:143 klas:E -->
-### T-03-060 · proza · рядок 143
+<!-- fc id:T-03-060 sha:769a9fbb src:manual/03-soc.md:144 klas:E -->
+### T-03-060 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -868,8 +946,8 @@
 
 ---
 
-<!-- fc id:T-03-061 sha:d7dc237e src:manual/03-soc.md:143 klas:E -->
-### T-03-061 · proza · рядок 143
+<!-- fc id:T-03-061 sha:d7dc237e src:manual/03-soc.md:144 klas:E -->
+### T-03-061 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -881,8 +959,8 @@
 
 ---
 
-<!-- fc id:T-03-062 sha:62262d38 src:manual/03-soc.md:146 klas:E -->
-### T-03-062 · proza · рядок 146
+<!-- fc id:T-03-062 sha:62262d38 src:manual/03-soc.md:147 klas:E -->
+### T-03-062 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -894,8 +972,8 @@
 
 ---
 
-<!-- fc id:T-03-063 sha:49a8a31e src:manual/03-soc.md:146 klas:F -->
-### T-03-063 · proza · рядок 146
+<!-- fc id:T-03-063 sha:49a8a31e src:manual/03-soc.md:147 klas:F -->
+### T-03-063 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -907,8 +985,8 @@
 
 ---
 
-<!-- fc id:T-03-064 sha:dd0ef344 src:manual/03-soc.md:151 klas:E -->
-### T-03-064 · proza · рядок 151
+<!-- fc id:T-03-064 sha:dd0ef344 src:manual/03-soc.md:152 klas:E -->
+### T-03-064 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -920,8 +998,8 @@
 
 ---
 
-<!-- fc id:T-03-065 sha:639ff99e src:manual/03-soc.md:151 klas:E -->
-### T-03-065 · proza · рядок 151
+<!-- fc id:T-03-065 sha:639ff99e src:manual/03-soc.md:152 klas:E -->
+### T-03-065 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -933,8 +1011,8 @@
 
 ---
 
-<!-- fc id:T-03-066 sha:9f63ca99 src:manual/03-soc.md:158 klas:E -->
-### T-03-066 · proza · рядок 158
+<!-- fc id:T-03-066 sha:9f63ca99 src:manual/03-soc.md:159 klas:E -->
+### T-03-066 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -946,8 +1024,8 @@
 
 ---
 
-<!-- fc id:T-03-067 sha:897d0e0d src:manual/03-soc.md:158 klas:E -->
-### T-03-067 · proza · рядок 158
+<!-- fc id:T-03-067 sha:897d0e0d src:manual/03-soc.md:159 klas:E -->
+### T-03-067 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -959,8 +1037,8 @@
 
 ---
 
-<!-- fc id:T-03-068 sha:5b04c8be src:manual/03-soc.md:162 klas:E -->
-### T-03-068 · proza · рядок 162
+<!-- fc id:T-03-068 sha:5b04c8be src:manual/03-soc.md:163 klas:E -->
+### T-03-068 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -972,8 +1050,8 @@
 
 ---
 
-<!-- fc id:T-03-069 sha:1a0f9aa5 src:manual/03-soc.md:164 klas:C -->
-### T-03-069 · proza · рядок 164
+<!-- fc id:T-03-069 sha:1a0f9aa5 src:manual/03-soc.md:165 klas:C -->
+### T-03-069 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -989,8 +1067,8 @@
 
 ---
 
-<!-- fc id:T-03-070 sha:cbfa3e79 src:manual/03-soc.md:170 klas:A -->
-### T-03-070 · proza · рядок 170
+<!-- fc id:T-03-070 sha:cbfa3e79 src:manual/03-soc.md:171 klas:A -->
+### T-03-070 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -1032,8 +1110,8 @@
 
 ---
 
-<!-- fc id:T-03-071 sha:a0d41ca6 src:manual/03-soc.md:175 klas:F -->
-### T-03-071 · proza · рядок 175
+<!-- fc id:T-03-071 sha:a0d41ca6 src:manual/03-soc.md:176 klas:F -->
+### T-03-071 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -1045,8 +1123,8 @@
 
 ---
 
-<!-- fc id:T-03-072 sha:862d3a8c src:manual/03-soc.md:175 klas:E -->
-### T-03-072 · proza · рядок 175
+<!-- fc id:T-03-072 sha:862d3a8c src:manual/03-soc.md:176 klas:E -->
+### T-03-072 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -1058,8 +1136,8 @@
 
 ---
 
-<!-- fc id:T-03-073 sha:02d793b1 src:manual/03-soc.md:178 klas:F -->
-### T-03-073 · proza · рядок 178
+<!-- fc id:T-03-073 sha:02d793b1 src:manual/03-soc.md:179 klas:F -->
+### T-03-073 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1071,8 +1149,8 @@
 
 ---
 
-<!-- fc id:T-03-074 sha:30a396cf src:manual/03-soc.md:182 klas:A -->
-### T-03-074 · proza · рядок 182
+<!-- fc id:T-03-074 sha:30a396cf src:manual/03-soc.md:183 klas:A -->
+### T-03-074 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1094,8 +1172,8 @@
 
 ---
 
-<!-- fc id:T-03-075 sha:ece55389 src:manual/03-soc.md:185 klas:A -->
-### T-03-075 · proza · рядок 185
+<!-- fc id:T-03-075 sha:ece55389 src:manual/03-soc.md:186 klas:A -->
+### T-03-075 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1115,8 +1193,8 @@
 
 ---
 
-<!-- fc id:T-03-076 sha:296c8efd src:manual/03-soc.md:187 klas:E -->
-### T-03-076 · proza · рядок 187
+<!-- fc id:T-03-076 sha:296c8efd src:manual/03-soc.md:188 klas:E -->
+### T-03-076 · proza · рядок 188
 
 **Книга каже, дослівно:**
 

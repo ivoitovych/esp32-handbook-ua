@@ -461,7 +461,7 @@
 
 ---
 
-<!-- fc id:T-02-036 sha:bd5f8f54 src:manual/02-chipy.md:35 klas:F -->
+<!-- fc id:T-02-036 sha:bd5f8f54 src:manual/02-chipy.md:35 klas:A -->
 ### T-02-036 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -470,11 +470,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > SOC_SPIRAM_SUPPORTED присутній:
+  >   esp32    — так
+  >   esp32s2  — так
+  >   esp32s3  — так
+  >   esp32c3  — немає
+  >   esp32c6  — немає
+  >   esp32h2  — немає
+- **Спосіб і дата:** curl raw.githubusercontent + grep -c SOC_SPIRAM_SUPPORTED по шести заголовках, 2026-08-26
+- **Нотатка:** Механічна перевірка, що закриває рядок зведеної таблиці розділу 02 і повторення того самого твердження в розділах 49 і 57 та в переліку плат. Наявність або відсутність макроса в `soc_caps.h` — саме те визначення підтримки, яким користується сам ESP-IDF.
+- **Прохід:** pass-25-psram
 
 ---
 
-<!-- fc id:T-02-037 sha:62d6b631 src:manual/02-chipy.md:35 klas:F -->
+<!-- fc id:T-02-037 sha:62d6b631 src:manual/02-chipy.md:35 klas:A -->
 ### T-02-037 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -483,11 +495,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > SOC_SPIRAM_SUPPORTED присутній:
+  >   esp32    — так
+  >   esp32s2  — так
+  >   esp32s3  — так
+  >   esp32c3  — немає
+  >   esp32c6  — немає
+  >   esp32h2  — немає
+- **Спосіб і дата:** curl raw.githubusercontent + grep -c SOC_SPIRAM_SUPPORTED по шести заголовках, 2026-08-26
+- **Нотатка:** Механічна перевірка, що закриває рядок зведеної таблиці розділу 02 і повторення того самого твердження в розділах 49 і 57 та в переліку плат. Наявність або відсутність макроса в `soc_caps.h` — саме те визначення підтримки, яким користується сам ESP-IDF.
+- **Прохід:** pass-25-psram
 
 ---
 
-<!-- fc id:T-02-038 sha:1b466931 src:manual/02-chipy.md:35 klas:F -->
+<!-- fc id:T-02-038 sha:1b466931 src:manual/02-chipy.md:35 klas:A -->
 ### T-02-038 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -496,11 +520,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > SOC_SPIRAM_SUPPORTED присутній:
+  >   esp32    — так
+  >   esp32s2  — так
+  >   esp32s3  — так
+  >   esp32c3  — немає
+  >   esp32c6  — немає
+  >   esp32h2  — немає
+- **Спосіб і дата:** curl raw.githubusercontent + grep -c SOC_SPIRAM_SUPPORTED по шести заголовках, 2026-08-26
+- **Нотатка:** Механічна перевірка, що закриває рядок зведеної таблиці розділу 02 і повторення того самого твердження в розділах 49 і 57 та в переліку плат. Наявність або відсутність макроса в `soc_caps.h` — саме те визначення підтримки, яким користується сам ESP-IDF.
+- **Прохід:** pass-25-psram
 
 ---
 
-<!-- fc id:T-02-039 sha:2ace6257 src:manual/02-chipy.md:35 klas:F -->
+<!-- fc id:T-02-039 sha:2ace6257 src:manual/02-chipy.md:35 klas:A -->
 ### T-02-039 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -509,11 +545,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > SOC_SPIRAM_SUPPORTED присутній:
+  >   esp32    — так
+  >   esp32s2  — так
+  >   esp32s3  — так
+  >   esp32c3  — немає
+  >   esp32c6  — немає
+  >   esp32h2  — немає
+- **Спосіб і дата:** curl raw.githubusercontent + grep -c SOC_SPIRAM_SUPPORTED по шести заголовках, 2026-08-26
+- **Нотатка:** Механічна перевірка, що закриває рядок зведеної таблиці розділу 02 і повторення того самого твердження в розділах 49 і 57 та в переліку плат. Наявність або відсутність макроса в `soc_caps.h` — саме те визначення підтримки, яким користується сам ESP-IDF.
+- **Прохід:** pass-25-psram
 
 ---
 
-<!-- fc id:T-02-040 sha:328f15ff src:manual/02-chipy.md:35 klas:F -->
+<!-- fc id:T-02-040 sha:328f15ff src:manual/02-chipy.md:35 klas:A -->
 ### T-02-040 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -522,11 +570,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > SOC_SPIRAM_SUPPORTED присутній:
+  >   esp32    — так
+  >   esp32s2  — так
+  >   esp32s3  — так
+  >   esp32c3  — немає
+  >   esp32c6  — немає
+  >   esp32h2  — немає
+- **Спосіб і дата:** curl raw.githubusercontent + grep -c SOC_SPIRAM_SUPPORTED по шести заголовках, 2026-08-26
+- **Нотатка:** Механічна перевірка, що закриває рядок зведеної таблиці розділу 02 і повторення того самого твердження в розділах 49 і 57 та в переліку плат. Наявність або відсутність макроса в `soc_caps.h` — саме те визначення підтримки, яким користується сам ESP-IDF.
+- **Прохід:** pass-25-psram
 
 ---
 
-<!-- fc id:T-02-041 sha:0da97b7e src:manual/02-chipy.md:35 klas:F -->
+<!-- fc id:T-02-041 sha:0da97b7e src:manual/02-chipy.md:35 klas:A -->
 ### T-02-041 · komirka · рядок 35
 
 **Книга каже, дослівно:**
@@ -535,7 +595,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > SOC_SPIRAM_SUPPORTED присутній:
+  >   esp32    — так
+  >   esp32s2  — так
+  >   esp32s3  — так
+  >   esp32c3  — немає
+  >   esp32c6  — немає
+  >   esp32h2  — немає
+- **Спосіб і дата:** curl raw.githubusercontent + grep -c SOC_SPIRAM_SUPPORTED по шести заголовках, 2026-08-26
+- **Нотатка:** Механічна перевірка, що закриває рядок зведеної таблиці розділу 02 і повторення того самого твердження в розділах 49 і 57 та в переліку плат. Наявність або відсутність макроса в `soc_caps.h` — саме те визначення підтримки, яким користується сам ESP-IDF.
+- **Прохід:** pass-25-psram
 
 ---
 

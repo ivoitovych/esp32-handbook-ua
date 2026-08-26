@@ -1,0 +1,164 @@
+# Прохід 25 — PSRAM: які піни вона з'їдає і як насправді розподіляється.
+#
+# Прохід підтвердив пінові твердження дослівно й спростував **поведінкове**:
+# книга писала, що автоматичне винесення великих виділень у PSRAM треба
+# вмикати. Воно ввімкнене за замовчуванням, і має поріг 16 КБ.
+#
+# Це продовження того, що показав прохід 24: числа книги міцні, а
+# твердження про поведінку — ні. Різниця в тому, що поведінкову помилку
+# читач не помічає навіть тоді, коли вона вже вплинула на його програму.
+
+- nazva: MSPI на S3 — GPIO26–32 під флеш, GPIO33–37 під восьмилінійний режим
+  zbih: 'GPIO26`–`GPIO32`|GPIO33`–`GPIO37`|GPIO 33–37|з.їдає п.ять додаткових пінів'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h
+    та .../components/soc/esp32s3/include/soc/soc_caps.h
+  cytata: |
+    #define MSPI_IOMUX_PIN_NUM_CS1      26
+    #define MSPI_IOMUX_PIN_NUM_HD       27
+    #define MSPI_IOMUX_PIN_NUM_WP       28
+    #define MSPI_IOMUX_PIN_NUM_CS0      29
+    #define MSPI_IOMUX_PIN_NUM_CLK      30
+    #define MSPI_IOMUX_PIN_NUM_MISO     31
+    #define MSPI_IOMUX_PIN_NUM_MOSI     32
+    #define MSPI_IOMUX_PIN_NUM_D4       33
+    #define MSPI_IOMUX_PIN_NUM_D5       34
+    #define MSPI_IOMUX_PIN_NUM_D6       35
+    #define MSPI_IOMUX_PIN_NUM_D7       36
+    #define MSPI_IOMUX_PIN_NUM_DQS      37
+
+    (soc_caps.h)
+    #define SOC_GPIO_PIN_COUNT                 49
+    #define SOC_SPIRAM_SUPPORTED            1
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Звірено без розбіжностей, і збіг тут точніший, ніж очікувалося:
+    сім пінів MSPI — це рівно `GPIO26`–`GPIO32`, як пише книга, а
+    чотири лінії даних `D4`–`D7` плюс `DQS` — рівно `GPIO33`–`GPIO37`.
+
+    Підтвердилося й число: «октальна PSRAM з'їдає **п'ять** додаткових
+    пінів» — 33, 34, 35, 36, 37, тобто п'ять і є.
+
+    Твердження живе в чотирьох місцях (розділи 07 і 23, додаток A,
+    картка К9) і скрізь однакове — рідкісний випадок, коли пропагація
+    спрацювала сама.
+
+- nazva: PSRAM підтримують лише classic, S2 і S3
+  zbih: 'PSRAM · (ESP32|S2|S3|C3|C6|H2) →|PSRAM підтримують лише classic, S2 і S3|PSRAM немає|Чипи без PSRAM — C3, C6, H2'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+  cytata: |
+    SOC_SPIRAM_SUPPORTED присутній:
+      esp32    — так
+      esp32s2  — так
+      esp32s3  — так
+      esp32c3  — немає
+      esp32c6  — немає
+      esp32h2  — немає
+  sposib: >-
+    curl raw.githubusercontent + grep -c SOC_SPIRAM_SUPPORTED по шести
+    заголовках, 2026-08-26
+  notatka: >-
+    Механічна перевірка, що закриває рядок зведеної таблиці розділу 02 і
+    повторення того самого твердження в розділах 49 і 57 та в переліку
+    плат. Наявність або відсутність макроса в `soc_caps.h` — саме те
+    визначення підтримки, яким користується сам ESP-IDF.
+
+- nazva: PSRAM вимкнена типово, а винесення в неї — навпаки, ввімкнене
+  zbih: '`CONFIG_SPIRAM` типово вимкнена|менше 16 КБ \| внутрішня SRAM|SPIRAM_MALLOC_ALWAYSINTERNAL|malloc виносить у PSRAM усе від\s*\n?16 КБ|уже сам виносить у PSRAM усе від 16 КБ'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common
+    та .../components/esp_psram/{esp32,esp32s3}/Kconfig.spiram
+  cytata: |
+    (esp32/Kconfig.spiram і esp32s3/Kconfig.spiram)
+    config SPIRAM
+        bool "Support for external, SPI-connected RAM"
+        default "n"
+
+    (Kconfig.spiram.common)
+    choice SPIRAM_USE
+        prompt "SPI RAM access method"
+        default SPIRAM_USE_MALLOC
+        config SPIRAM_USE_MEMMAP
+            bool "Integrate RAM into memory map"
+        config SPIRAM_USE_CAPS_ALLOC
+            bool "Add RAM to heap_caps allocator (malloc() stays internal by default)"
+        config SPIRAM_USE_MALLOC
+            bool "Make RAM allocatable using malloc() as well"
+    endchoice
+
+    config SPIRAM_MALLOC_ALWAYSINTERNAL
+        int "Maximum malloc() size, in bytes, to always put in internal memory"
+        depends on SPIRAM_USE_MALLOC
+        default 16384
+        range 0 131072
+        help
+            If malloc() is capable of also allocating SPI-connected ram, its
+            allocation strategy will prefer to allocate chunks less than this
+            size in internal memory, while allocations larger than this will be
+            done from external RAM. If allocation from the preferred region
+            fails, an attempt is made to allocate from the non-preferred region
+            instead, so malloc() will not suddenly fail when either internal or
+            external memory is full.
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Головна знахідка проходу, і вона поведінкова.
+
+    Книга писала в двох місцях (розділи 03 і 30): «щоб великі буфери йшли
+    в PSRAM, це треба ввімкнути й попросити явно». Половина вірна —
+    `CONFIG_SPIRAM` справді типово `n`, і плата з розпаяною мікросхемою
+    без цього її не бачить.
+
+    Друга половина хибна, і саме її читач застосовує. Коли PSRAM
+    увімкнено, `SPIRAM_USE` типово `SPIRAM_USE_MALLOC`, а
+    `SPIRAM_MALLOC_ALWAYSINTERNAL` типово `16384`. Тобто **виділення від
+    16 КБ ідуть у PSRAM самі**, без жодного `MALLOC_CAP_SPIRAM`.
+
+    Ціна помилки не в тому, що читач шукатиме в менюконфігу перемикач,
+    який уже стоїть. Вона в тому, що його буфер на 64 КБ **уже** в
+    зовнішній пам'яті — повільнішій і не завжди придатній для DMA, — а
+    він упевнений, що у внутрішній. Помилку такого роду не видно доти,
+    доки не почнеш міряти.
+
+    Виправлено в обох місцях. У розділі 30 замість абзацу — таблиця
+    порогу, згадка про м'якість переваги (якщо в бажаній області немає
+    місця, береться інша, тож `malloc` не почне раптово віддавати `NULL`)
+    і другий бік `heap_caps_malloc`: `MALLOC_CAP_INTERNAL`, щоб лишити
+    буфер у SRAM свідомо. Формулювання заведено в
+    `factcheck/SPROSTOVANE.md`, випробувано впровадженням у розділ 04 —
+    обидва варіанти знаходяться.
+
+- nazva: Octal PSRAM треба зазначити — типово стоїть Quad
+  zbih: 'Octal PSRAM треба зазначити|типово стоїть\s*\n?\*\*Quad|SPIRAM_MODE_QUAD|Mode \(QUAD/OCT\) of SPI RAM chip'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/esp32s3/Kconfig.spiram
+  cytata: |
+    choice SPIRAM_MODE
+        prompt "Mode (QUAD/OCT) of SPI RAM chip in use"
+        default SPIRAM_MODE_QUAD
+
+        config SPIRAM_MODE_QUAD
+            bool "Quad Mode PSRAM"
+
+        config SPIRAM_MODE_OCT
+            bool "Octal Mode PSRAM"
+    endchoice
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Не виправлення, а прогалина: книга називала `N16R8` і згадувала, що
+    октальна PSRAM з'їдає піни, але ніде не казала, що **режим треба
+    обрати руками**.
+
+    Пастка чиста: типове значення `SPIRAM_MODE_QUAD` на всіх сімействах,
+    тож модуль з восьмилінійною PSRAM без правки менюконфігу поводиться
+    як плата без PSRAM узагалі. Симптом —
+    `heap_caps_get_free_size(MALLOC_CAP_SPIRAM)` повертає нуль на платі,
+    за яку заплачено саме через ті 8 МБ, — виглядає як несправність, а не
+    як налаштування.
+
+    Додано в розділ 23 (тріаж модуля) блоком «увага», зі шляхом у
+    менюконфігу, звіреним у проході 11.
