@@ -915,7 +915,7 @@
 
 ---
 
-<!-- fc id:T-44-070 sha:0db4e411 src:manual/44-neznayomyy-modul.md:141 klas:F -->
+<!-- fc id:T-44-070 sha:0db4e411 src:manual/44-neznayomyy-modul.md:141 klas:B -->
 ### T-44-070 · kod · рядок 141
 
 **Книга каже, дослівно:**
@@ -932,7 +932,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 

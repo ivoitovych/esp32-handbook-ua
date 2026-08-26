@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/59-proj-monitor.md`
 
-Одиниць твердження: **116**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **120**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -341,7 +341,7 @@
 
 ---
 
-<!-- fc id:T-59-024 sha:360842c7 src:manual/59-proj-monitor.md:63 klas:C -->
+<!-- fc id:T-59-024 sha:ef9c9e98 src:manual/59-proj-monitor.md:63 klas:B -->
 ### T-59-024 · kod · рядок 63
 
 **Книга каже, дослівно:**
@@ -410,9 +410,10 @@
 >     ESP_RETURN_ON_ERROR(bme_read(REG_CALIB2, h, 7), TAG, "калібрування H");
 >     H2 = h[0] | (h[1] << 8);
 >     H3 = h[2];
->     H4 = (h[3] << 4) | (h[4] & 0x0F);
->     H5 = (h[5] << 4) | (h[4] >> 4);
->     H6 = h[6];
+>     // старший байт H4 і H5 знаковий — розширення знака обов'язкове
+>     H4 = ((int16_t)(int8_t)h[3] * 16) | (h[4] & 0x0F);
+>     H5 = ((int16_t)(int8_t)h[5] * 16) | (h[4] >> 4);
+>     H6 = (int8_t)h[6];
 > 
 >     bme_write(REG_CTRL_H, 0x01);  // osrs_h = ×1
 >     bme_write(REG_CONFIG, 0xA8);  // t_sb 1000 мс, фільтр ×4
@@ -424,11 +425,23 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
@@ -458,7 +471,7 @@
 
 ---
 
-<!-- fc id:T-59-027 sha:e627b88d src:manual/59-proj-monitor.md:67 klas:F -->
+<!-- fc id:T-59-027 sha:e627b88d src:manual/59-proj-monitor.md:67 klas:B -->
 ### T-59-027 · kod-ryadok · рядок 67
 
 **Книга каже, дослівно:**
@@ -467,11 +480,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-028 sha:8f633bc7 src:manual/59-proj-monitor.md:68 klas:C -->
+<!-- fc id:T-59-028 sha:8f633bc7 src:manual/59-proj-monitor.md:68 klas:B -->
 ### T-59-028 · kod-ryadok · рядок 68
 
 **Книга каже, дослівно:**
@@ -480,11 +509,23 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
@@ -501,7 +542,7 @@
 
 ---
 
-<!-- fc id:T-59-030 sha:0263b9cf src:manual/59-proj-monitor.md:70 klas:C -->
+<!-- fc id:T-59-030 sha:0263b9cf src:manual/59-proj-monitor.md:70 klas:B -->
 ### T-59-030 · kod-ryadok · рядок 70
 
 **Книга каже, дослівно:**
@@ -510,15 +551,27 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-031 sha:41e596ad src:manual/59-proj-monitor.md:71 klas:C -->
+<!-- fc id:T-59-031 sha:41e596ad src:manual/59-proj-monitor.md:71 klas:B -->
 ### T-59-031 · kod-ryadok · рядок 71
 
 **Книга каже, дослівно:**
@@ -527,15 +580,27 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-032 sha:35c7c342 src:manual/59-proj-monitor.md:72 klas:C -->
+<!-- fc id:T-59-032 sha:35c7c342 src:manual/59-proj-monitor.md:72 klas:B -->
 ### T-59-032 · kod-ryadok · рядок 72
 
 **Книга каже, дослівно:**
@@ -544,15 +609,27 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-033 sha:2e56e3a4 src:manual/59-proj-monitor.md:73 klas:F -->
+<!-- fc id:T-59-033 sha:2e56e3a4 src:manual/59-proj-monitor.md:73 klas:B -->
 ### T-59-033 · kod-ryadok · рядок 73
 
 **Книга каже, дослівно:**
@@ -561,11 +638,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-034 sha:4ad3a8c3 src:manual/59-proj-monitor.md:74 klas:C -->
+<!-- fc id:T-59-034 sha:4ad3a8c3 src:manual/59-proj-monitor.md:74 klas:B -->
 ### T-59-034 · kod-ryadok · рядок 74
 
 **Книга каже, дослівно:**
@@ -574,15 +667,27 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-035 sha:584d2b44 src:manual/59-proj-monitor.md:75 klas:C -->
+<!-- fc id:T-59-035 sha:584d2b44 src:manual/59-proj-monitor.md:75 klas:B -->
 ### T-59-035 · kod-ryadok · рядок 75
 
 **Книга каже, дослівно:**
@@ -591,11 +696,23 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
@@ -625,7 +742,7 @@
 
 ---
 
-<!-- fc id:T-59-038 sha:7b9b8843 src:manual/59-proj-monitor.md:99 klas:F -->
+<!-- fc id:T-59-038 sha:7b9b8843 src:manual/59-proj-monitor.md:99 klas:B -->
 ### T-59-038 · kod-ryadok · рядок 99
 
 **Книга каже, дослівно:**
@@ -634,7 +751,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
@@ -664,7 +797,7 @@
 
 ---
 
-<!-- fc id:T-59-041 sha:41f585b1 src:manual/59-proj-monitor.md:107 klas:F -->
+<!-- fc id:T-59-041 sha:41f585b1 src:manual/59-proj-monitor.md:107 klas:B -->
 ### T-59-041 · kod-ryadok · рядок 107
 
 **Книга каже, дослівно:**
@@ -673,7 +806,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
@@ -694,7 +843,7 @@
 
 ---
 
-<!-- fc id:T-59-043 sha:1b551a44 src:manual/59-proj-monitor.md:114 klas:C -->
+<!-- fc id:T-59-043 sha:1b551a44 src:manual/59-proj-monitor.md:114 klas:B -->
 ### T-59-043 · kod-ryadok · рядок 114
 
 **Книга каже, дослівно:**
@@ -703,15 +852,27 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-044 sha:ae86aa1b src:manual/59-proj-monitor.md:124 klas:C -->
+<!-- fc id:T-59-044 sha:ae86aa1b src:manual/59-proj-monitor.md:124 klas:B -->
 ### T-59-044 · kod-ryadok · рядок 124
 
 **Книга каже, дослівно:**
@@ -720,16 +881,28 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-045 sha:636dc01a src:manual/59-proj-monitor.md:134 klas:C -->
-### T-59-045 · kod-ryadok · рядок 134
+<!-- fc id:T-59-045 sha:636dc01a src:manual/59-proj-monitor.md:135 klas:C -->
+### T-59-045 · kod-ryadok · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -745,8 +918,8 @@
 
 ---
 
-<!-- fc id:T-59-046 sha:7100ace9 src:manual/59-proj-monitor.md:140 klas:F -->
-### T-59-046 · proza · рядок 140
+<!-- fc id:T-59-046 sha:7100ace9 src:manual/59-proj-monitor.md:141 klas:F -->
+### T-59-046 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -758,8 +931,8 @@
 
 ---
 
-<!-- fc id:T-59-047 sha:0ea0eacb src:manual/59-proj-monitor.md:140 klas:F -->
-### T-59-047 · proza · рядок 140
+<!-- fc id:T-59-047 sha:0ea0eacb src:manual/59-proj-monitor.md:141 klas:F -->
+### T-59-047 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -771,8 +944,8 @@
 
 ---
 
-<!-- fc id:T-59-048 sha:d91d9459 src:manual/59-proj-monitor.md:144 klas:F -->
-### T-59-048 · proza · рядок 144
+<!-- fc id:T-59-048 sha:d91d9459 src:manual/59-proj-monitor.md:145 klas:F -->
+### T-59-048 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -784,8 +957,8 @@
 
 ---
 
-<!-- fc id:T-59-049 sha:29da9177 src:manual/59-proj-monitor.md:148 klas:C -->
-### T-59-049 · proza · рядок 148
+<!-- fc id:T-59-049 sha:29da9177 src:manual/59-proj-monitor.md:149 klas:C -->
+### T-59-049 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -801,8 +974,8 @@
 
 ---
 
-<!-- fc id:T-59-050 sha:49eb3151 src:manual/59-proj-monitor.md:148 klas:F -->
-### T-59-050 · proza · рядок 148
+<!-- fc id:T-59-050 sha:49eb3151 src:manual/59-proj-monitor.md:149 klas:F -->
+### T-59-050 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -814,8 +987,88 @@
 
 ---
 
-<!-- fc id:T-59-051 sha:ae5f2fa1 src:manual/59-proj-monitor.md:153 klas:F -->
-### T-59-051 · proza · рядок 153
+<!-- fc id:T-59-051 sha:5b1b364a src:manual/59-proj-monitor.md:155 klas:B -->
+### T-59-051 · proza · рядок 155
+
+**Книга каже, дослівно:**
+
+> Два зсуви в розборі калібрування виглядають однаково і такими не є.
+
+**Доказ**
+
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
+- **Дослівно з джерела:**
+  > calib_data->dig_h2 = (int16_t)BME280_CONCAT_BYTES(reg_data[1], reg_data[0]);
+  > calib_data->dig_h3 = reg_data[2];
+  > dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
+  > dig_h4_lsb = (int16_t)(reg_data[4] & 0x0F);
+  > calib_data->dig_h4 = dig_h4_msb | dig_h4_lsb;
+  > dig_h5_msb = (int16_t)(int8_t)reg_data[5] * 16;
+  > dig_h5_lsb = (int16_t)(reg_data[4] >> 4);
+  > calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
+  > calib_data->dig_h6 = (int8_t)reg_data[6];
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу, і вона в коді. Книга розбирала калібрування як `H4 = (h[3] << 4) | (h[4] & 0x0F)`, тобто **без розширення знака** старшого байта. Bosch явно приводить його до `int8_t` перед множенням: `dig_H4` і `dig_H5` — знакові величини. Розбіжність проявляється лише на екземплярах, де в старшому байті виставлено сьомий біт, і виглядає як стабільно неправильна вологість при правильних температурі й тиску — тобто як несправний датчик. Виправлено в проєкті 59, додано блок уваги з поясненням, чому два однакові на вигляд зсуви різні.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-052 sha:4f81f74f src:manual/59-proj-monitor.md:155 klas:B -->
+### T-59-052 · proza · рядок 155
+
+**Книга каже, дослівно:**
+
+> `H4` і `H5` — **знакові** 16-бітові величини, і старший байт кожної береться зі знаком: `(int16_t)(int8_t)h[3] * 16`, а не `h[3] << 4`.
+
+**Доказ**
+
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
+- **Дослівно з джерела:**
+  > calib_data->dig_h2 = (int16_t)BME280_CONCAT_BYTES(reg_data[1], reg_data[0]);
+  > calib_data->dig_h3 = reg_data[2];
+  > dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
+  > dig_h4_lsb = (int16_t)(reg_data[4] & 0x0F);
+  > calib_data->dig_h4 = dig_h4_msb | dig_h4_lsb;
+  > dig_h5_msb = (int16_t)(int8_t)reg_data[5] * 16;
+  > dig_h5_lsb = (int16_t)(reg_data[4] >> 4);
+  > calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
+  > calib_data->dig_h6 = (int8_t)reg_data[6];
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу, і вона в коді. Книга розбирала калібрування як `H4 = (h[3] << 4) | (h[4] & 0x0F)`, тобто **без розширення знака** старшого байта. Bosch явно приводить його до `int8_t` перед множенням: `dig_H4` і `dig_H5` — знакові величини. Розбіжність проявляється лише на екземплярах, де в старшому байті виставлено сьомий біт, і виглядає як стабільно неправильна вологість при правильних температурі й тиску — тобто як несправний датчик. Виправлено в проєкті 59, додано блок уваги з поясненням, чому два однакові на вигляд зсуви різні.
+- **Прохід:** pass-04-obkhidni
+
+---
+
+<!-- fc id:T-59-053 sha:537a2c04 src:manual/59-proj-monitor.md:155 klas:F -->
+### T-59-053 · proza · рядок 155
+
+**Книга каже, дослівно:**
+
+> Різниця виникає лише тоді, коли в старшому байті виставлено сьомий біт, тобто на частині екземплярів датчика — і виявляється як стабільно неправильна вологість при правильних температурі й тиску.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-054 sha:2e06244b src:manual/59-proj-monitor.md:162 klas:F -->
+### T-59-054 · proza · рядок 162
+
+**Книга каже, дослівно:**
+
+> Це те місце, де варто звірятися з референсною реалізацією виробника, а не з чужим прикладом: у прикладах в інтернеті ця помилка трапляється частіше, ніж правильний варіант.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-59-055 sha:ae5f2fa1 src:manual/59-proj-monitor.md:167 klas:F -->
+### T-59-055 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -827,8 +1080,8 @@
 
 ---
 
-<!-- fc id:T-59-052 sha:88a09b36 src:manual/59-proj-monitor.md:153 klas:F -->
-### T-59-052 · proza · рядок 153
+<!-- fc id:T-59-056 sha:88a09b36 src:manual/59-proj-monitor.md:167 klas:F -->
+### T-59-056 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -840,8 +1093,8 @@
 
 ---
 
-<!-- fc id:T-59-053 sha:7bf92ad8 src:manual/59-proj-monitor.md:157 klas:F -->
-### T-59-053 · kod · рядок 157
+<!-- fc id:T-59-057 sha:7bf92ad8 src:manual/59-proj-monitor.md:171 klas:B -->
+### T-59-057 · kod · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -887,12 +1140,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-054 sha:ffffb2b5 src:manual/59-proj-monitor.md:160 klas:F -->
-### T-59-054 · kod-ryadok · рядок 160
+<!-- fc id:T-59-058 sha:ffffb2b5 src:manual/59-proj-monitor.md:174 klas:B -->
+### T-59-058 · kod-ryadok · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -900,12 +1169,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID                            UINT8_C(0x60)
+  > #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+  > #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+  > #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+  > #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+  > #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+  > #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+  > #define BME280_REG_DATA                           UINT8_C(0xF7)
+  > #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+  > #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+  > #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті, що в коді книги. Клас B, а не A, бо первинним для цих значень є datasheet; але автор той самий, і код відкритий.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-59-055 sha:10e4d48d src:manual/59-proj-monitor.md:199 klas:F -->
-### T-59-055 · kod · рядок 199
+<!-- fc id:T-59-059 sha:10e4d48d src:manual/59-proj-monitor.md:213 klas:F -->
+### T-59-059 · kod · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -937,8 +1222,8 @@
 
 ---
 
-<!-- fc id:T-59-056 sha:59d72679 src:manual/59-proj-monitor.md:200 klas:F -->
-### T-59-056 · kod-ryadok · рядок 200
+<!-- fc id:T-59-060 sha:59d72679 src:manual/59-proj-monitor.md:214 klas:F -->
+### T-59-060 · kod-ryadok · рядок 214
 
 **Книга каже, дослівно:**
 
@@ -950,8 +1235,8 @@
 
 ---
 
-<!-- fc id:T-59-057 sha:da52f140 src:manual/59-proj-monitor.md:213 klas:F -->
-### T-59-057 · kod-ryadok · рядок 213
+<!-- fc id:T-59-061 sha:da52f140 src:manual/59-proj-monitor.md:227 klas:F -->
+### T-59-061 · kod-ryadok · рядок 227
 
 **Книга каже, дослівно:**
 
@@ -963,8 +1248,8 @@
 
 ---
 
-<!-- fc id:T-59-058 sha:05942241 src:manual/59-proj-monitor.md:217 klas:F -->
-### T-59-058 · kod-ryadok · рядок 217
+<!-- fc id:T-59-062 sha:05942241 src:manual/59-proj-monitor.md:231 klas:F -->
+### T-59-062 · kod-ryadok · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -976,8 +1261,8 @@
 
 ---
 
-<!-- fc id:T-59-059 sha:7c65034e src:manual/59-proj-monitor.md:221 klas:F -->
-### T-59-059 · proza · рядок 221
+<!-- fc id:T-59-063 sha:7c65034e src:manual/59-proj-monitor.md:235 klas:F -->
+### T-59-063 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -989,8 +1274,8 @@
 
 ---
 
-<!-- fc id:T-59-060 sha:2eaae5f5 src:manual/59-proj-monitor.md:221 klas:F -->
-### T-59-060 · proza · рядок 221
+<!-- fc id:T-59-064 sha:2eaae5f5 src:manual/59-proj-monitor.md:235 klas:F -->
+### T-59-064 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -1002,8 +1287,8 @@
 
 ---
 
-<!-- fc id:T-59-061 sha:0c21042b src:manual/59-proj-monitor.md:226 klas:F -->
-### T-59-061 · kod · рядок 226
+<!-- fc id:T-59-065 sha:0c21042b src:manual/59-proj-monitor.md:240 klas:F -->
+### T-59-065 · kod · рядок 240
 
 **Книга каже, дослівно:**
 
@@ -1037,8 +1322,8 @@
 
 ---
 
-<!-- fc id:T-59-062 sha:461edfca src:manual/59-proj-monitor.md:234 klas:F -->
-### T-59-062 · kod-ryadok · рядок 234
+<!-- fc id:T-59-066 sha:461edfca src:manual/59-proj-monitor.md:248 klas:F -->
+### T-59-066 · kod-ryadok · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1050,8 +1335,8 @@
 
 ---
 
-<!-- fc id:T-59-063 sha:9e8becce src:manual/59-proj-monitor.md:235 klas:F -->
-### T-59-063 · kod-ryadok · рядок 235
+<!-- fc id:T-59-067 sha:9e8becce src:manual/59-proj-monitor.md:249 klas:F -->
+### T-59-067 · kod-ryadok · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -1063,8 +1348,8 @@
 
 ---
 
-<!-- fc id:T-59-064 sha:29f9a0e7 src:manual/59-proj-monitor.md:238 klas:F -->
-### T-59-064 · kod-ryadok · рядок 238
+<!-- fc id:T-59-068 sha:29f9a0e7 src:manual/59-proj-monitor.md:252 klas:F -->
+### T-59-068 · kod-ryadok · рядок 252
 
 **Книга каже, дослівно:**
 
@@ -1076,8 +1361,8 @@
 
 ---
 
-<!-- fc id:T-59-065 sha:b5ca5c99 src:manual/59-proj-monitor.md:244 klas:F -->
-### T-59-065 · kod-ryadok · рядок 244
+<!-- fc id:T-59-069 sha:b5ca5c99 src:manual/59-proj-monitor.md:258 klas:F -->
+### T-59-069 · kod-ryadok · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1089,8 +1374,8 @@
 
 ---
 
-<!-- fc id:T-59-066 sha:d4678ca1 src:manual/59-proj-monitor.md:245 klas:F -->
-### T-59-066 · kod-ryadok · рядок 245
+<!-- fc id:T-59-070 sha:d4678ca1 src:manual/59-proj-monitor.md:259 klas:F -->
+### T-59-070 · kod-ryadok · рядок 259
 
 **Книга каже, дослівно:**
 
@@ -1102,8 +1387,8 @@
 
 ---
 
-<!-- fc id:T-59-067 sha:7f8d2007 src:manual/59-proj-monitor.md:250 klas:F -->
-### T-59-067 · proza · рядок 250
+<!-- fc id:T-59-071 sha:7f8d2007 src:manual/59-proj-monitor.md:264 klas:F -->
+### T-59-071 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -1115,8 +1400,8 @@
 
 ---
 
-<!-- fc id:T-59-068 sha:2ab58c0c src:manual/59-proj-monitor.md:250 klas:F -->
-### T-59-068 · proza · рядок 250
+<!-- fc id:T-59-072 sha:2ab58c0c src:manual/59-proj-monitor.md:264 klas:F -->
+### T-59-072 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -1128,8 +1413,8 @@
 
 ---
 
-<!-- fc id:T-59-069 sha:4b754f95 src:manual/59-proj-monitor.md:255 klas:F -->
-### T-59-069 · kod · рядок 255
+<!-- fc id:T-59-073 sha:4b754f95 src:manual/59-proj-monitor.md:269 klas:F -->
+### T-59-073 · kod · рядок 269
 
 **Книга каже, дослівно:**
 
@@ -1167,8 +1452,8 @@
 
 ---
 
-<!-- fc id:T-59-070 sha:9e097e90 src:manual/59-proj-monitor.md:258 klas:F -->
-### T-59-070 · kod-ryadok · рядок 258
+<!-- fc id:T-59-074 sha:9e097e90 src:manual/59-proj-monitor.md:272 klas:F -->
+### T-59-074 · kod-ryadok · рядок 272
 
 **Книга каже, дослівно:**
 
@@ -1180,8 +1465,8 @@
 
 ---
 
-<!-- fc id:T-59-071 sha:da52f140 src:manual/59-proj-monitor.md:260 klas:F -->
-### T-59-071 · kod-ryadok · рядок 260
+<!-- fc id:T-59-075 sha:da52f140 src:manual/59-proj-monitor.md:274 klas:F -->
+### T-59-075 · kod-ryadok · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -1193,8 +1478,8 @@
 
 ---
 
-<!-- fc id:T-59-072 sha:05942241 src:manual/59-proj-monitor.md:273 klas:F -->
-### T-59-072 · kod-ryadok · рядок 273
+<!-- fc id:T-59-076 sha:05942241 src:manual/59-proj-monitor.md:287 klas:F -->
+### T-59-076 · kod-ryadok · рядок 287
 
 **Книга каже, дослівно:**
 
@@ -1206,8 +1491,8 @@
 
 ---
 
-<!-- fc id:T-59-073 sha:aa40708d src:manual/59-proj-monitor.md:274 klas:F -->
-### T-59-073 · kod-ryadok · рядок 274
+<!-- fc id:T-59-077 sha:aa40708d src:manual/59-proj-monitor.md:288 klas:F -->
+### T-59-077 · kod-ryadok · рядок 288
 
 **Книга каже, дослівно:**
 
@@ -1219,8 +1504,8 @@
 
 ---
 
-<!-- fc id:T-59-074 sha:1305725a src:manual/59-proj-monitor.md:276 klas:F -->
-### T-59-074 · kod-ryadok · рядок 276
+<!-- fc id:T-59-078 sha:1305725a src:manual/59-proj-monitor.md:290 klas:F -->
+### T-59-078 · kod-ryadok · рядок 290
 
 **Книга каже, дослівно:**
 
@@ -1232,8 +1517,8 @@
 
 ---
 
-<!-- fc id:T-59-075 sha:780361e1 src:manual/59-proj-monitor.md:278 klas:F -->
-### T-59-075 · kod-ryadok · рядок 278
+<!-- fc id:T-59-079 sha:780361e1 src:manual/59-proj-monitor.md:292 klas:F -->
+### T-59-079 · kod-ryadok · рядок 292
 
 **Книга каже, дослівно:**
 
@@ -1245,8 +1530,8 @@
 
 ---
 
-<!-- fc id:T-59-076 sha:87adb72b src:manual/59-proj-monitor.md:284 klas:F -->
-### T-59-076 · proza · рядок 284
+<!-- fc id:T-59-080 sha:87adb72b src:manual/59-proj-monitor.md:298 klas:F -->
+### T-59-080 · proza · рядок 298
 
 **Книга каже, дослівно:**
 
@@ -1258,8 +1543,8 @@
 
 ---
 
-<!-- fc id:T-59-077 sha:d11cc6fe src:manual/59-proj-monitor.md:284 klas:F -->
-### T-59-077 · proza · рядок 284
+<!-- fc id:T-59-081 sha:d11cc6fe src:manual/59-proj-monitor.md:298 klas:F -->
+### T-59-081 · proza · рядок 298
 
 **Книга каже, дослівно:**
 
@@ -1271,8 +1556,8 @@
 
 ---
 
-<!-- fc id:T-59-078 sha:02b440af src:manual/59-proj-monitor.md:284 klas:F -->
-### T-59-078 · proza · рядок 284
+<!-- fc id:T-59-082 sha:02b440af src:manual/59-proj-monitor.md:298 klas:F -->
+### T-59-082 · proza · рядок 298
 
 **Книга каже, дослівно:**
 
@@ -1284,8 +1569,8 @@
 
 ---
 
-<!-- fc id:T-59-079 sha:0fa06472 src:manual/59-proj-monitor.md:290 klas:F -->
-### T-59-079 · proza · рядок 290
+<!-- fc id:T-59-083 sha:0fa06472 src:manual/59-proj-monitor.md:304 klas:F -->
+### T-59-083 · proza · рядок 304
 
 **Книга каже, дослівно:**
 
@@ -1297,8 +1582,8 @@
 
 ---
 
-<!-- fc id:T-59-080 sha:046ce956 src:manual/59-proj-monitor.md:290 klas:F -->
-### T-59-080 · proza · рядок 290
+<!-- fc id:T-59-084 sha:046ce956 src:manual/59-proj-monitor.md:304 klas:F -->
+### T-59-084 · proza · рядок 304
 
 **Книга каже, дослівно:**
 
@@ -1310,8 +1595,8 @@
 
 ---
 
-<!-- fc id:T-59-081 sha:8e1c5456 src:manual/59-proj-monitor.md:296 klas:F -->
-### T-59-081 · proza · рядок 296
+<!-- fc id:T-59-085 sha:8e1c5456 src:manual/59-proj-monitor.md:310 klas:F -->
+### T-59-085 · proza · рядок 310
 
 **Книга каже, дослівно:**
 
@@ -1323,8 +1608,8 @@
 
 ---
 
-<!-- fc id:T-59-082 sha:daa45c95 src:manual/59-proj-monitor.md:296 klas:F -->
-### T-59-082 · proza · рядок 296
+<!-- fc id:T-59-086 sha:daa45c95 src:manual/59-proj-monitor.md:310 klas:F -->
+### T-59-086 · proza · рядок 310
 
 **Книга каже, дослівно:**
 
@@ -1336,8 +1621,8 @@
 
 ---
 
-<!-- fc id:T-59-083 sha:ffa66d5d src:manual/59-proj-monitor.md:300 klas:F -->
-### T-59-083 · proza · рядок 300
+<!-- fc id:T-59-087 sha:ffa66d5d src:manual/59-proj-monitor.md:314 klas:F -->
+### T-59-087 · proza · рядок 314
 
 **Книга каже, дослівно:**
 
@@ -1349,8 +1634,8 @@
 
 ---
 
-<!-- fc id:T-59-084 sha:99584848 src:manual/59-proj-monitor.md:300 klas:F -->
-### T-59-084 · proza · рядок 300
+<!-- fc id:T-59-088 sha:99584848 src:manual/59-proj-monitor.md:314 klas:F -->
+### T-59-088 · proza · рядок 314
 
 **Книга каже, дослівно:**
 
@@ -1362,8 +1647,8 @@
 
 ---
 
-<!-- fc id:T-59-085 sha:0df2fce9 src:manual/59-proj-monitor.md:307 klas:F -->
-### T-59-085 · kod · рядок 307
+<!-- fc id:T-59-089 sha:0df2fce9 src:manual/59-proj-monitor.md:321 klas:F -->
+### T-59-089 · kod · рядок 321
 
 **Книга каже, дослівно:**
 
@@ -1411,8 +1696,8 @@
 
 ---
 
-<!-- fc id:T-59-086 sha:f018579e src:manual/59-proj-monitor.md:309 klas:F -->
-### T-59-086 · kod-ryadok · рядок 309
+<!-- fc id:T-59-090 sha:f018579e src:manual/59-proj-monitor.md:323 klas:F -->
+### T-59-090 · kod-ryadok · рядок 323
 
 **Книга каже, дослівно:**
 
@@ -1424,8 +1709,8 @@
 
 ---
 
-<!-- fc id:T-59-087 sha:f3349b99 src:manual/59-proj-monitor.md:313 klas:F -->
-### T-59-087 · kod-ryadok · рядок 313
+<!-- fc id:T-59-091 sha:f3349b99 src:manual/59-proj-monitor.md:327 klas:F -->
+### T-59-091 · kod-ryadok · рядок 327
 
 **Книга каже, дослівно:**
 
@@ -1437,8 +1722,8 @@
 
 ---
 
-<!-- fc id:T-59-088 sha:601ab80f src:manual/59-proj-monitor.md:316 klas:F -->
-### T-59-088 · kod-ryadok · рядок 316
+<!-- fc id:T-59-092 sha:601ab80f src:manual/59-proj-monitor.md:330 klas:F -->
+### T-59-092 · kod-ryadok · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -1450,8 +1735,8 @@
 
 ---
 
-<!-- fc id:T-59-089 sha:8137e868 src:manual/59-proj-monitor.md:321 klas:F -->
-### T-59-089 · kod-ryadok · рядок 321
+<!-- fc id:T-59-093 sha:8137e868 src:manual/59-proj-monitor.md:335 klas:F -->
+### T-59-093 · kod-ryadok · рядок 335
 
 **Книга каже, дослівно:**
 
@@ -1463,8 +1748,8 @@
 
 ---
 
-<!-- fc id:T-59-090 sha:b23a13d7 src:manual/59-proj-monitor.md:322 klas:F -->
-### T-59-090 · kod-ryadok · рядок 322
+<!-- fc id:T-59-094 sha:b23a13d7 src:manual/59-proj-monitor.md:336 klas:F -->
+### T-59-094 · kod-ryadok · рядок 336
 
 **Книга каже, дослівно:**
 
@@ -1476,8 +1761,8 @@
 
 ---
 
-<!-- fc id:T-59-091 sha:1599c26e src:manual/59-proj-monitor.md:323 klas:F -->
-### T-59-091 · kod-ryadok · рядок 323
+<!-- fc id:T-59-095 sha:1599c26e src:manual/59-proj-monitor.md:337 klas:F -->
+### T-59-095 · kod-ryadok · рядок 337
 
 **Книга каже, дослівно:**
 
@@ -1489,8 +1774,8 @@
 
 ---
 
-<!-- fc id:T-59-092 sha:ad69c01f src:manual/59-proj-monitor.md:324 klas:F -->
-### T-59-092 · kod-ryadok · рядок 324
+<!-- fc id:T-59-096 sha:ad69c01f src:manual/59-proj-monitor.md:338 klas:F -->
+### T-59-096 · kod-ryadok · рядок 338
 
 **Книга каже, дослівно:**
 
@@ -1502,8 +1787,8 @@
 
 ---
 
-<!-- fc id:T-59-093 sha:be777622 src:manual/59-proj-monitor.md:325 klas:F -->
-### T-59-093 · kod-ryadok · рядок 325
+<!-- fc id:T-59-097 sha:be777622 src:manual/59-proj-monitor.md:339 klas:F -->
+### T-59-097 · kod-ryadok · рядок 339
 
 **Книга каже, дослівно:**
 
@@ -1515,8 +1800,8 @@
 
 ---
 
-<!-- fc id:T-59-094 sha:6abf9538 src:manual/59-proj-monitor.md:328 klas:F -->
-### T-59-094 · kod-ryadok · рядок 328
+<!-- fc id:T-59-098 sha:6abf9538 src:manual/59-proj-monitor.md:342 klas:F -->
+### T-59-098 · kod-ryadok · рядок 342
 
 **Книга каже, дослівно:**
 
@@ -1528,8 +1813,8 @@
 
 ---
 
-<!-- fc id:T-59-095 sha:ea63146b src:manual/59-proj-monitor.md:331 klas:F -->
-### T-59-095 · kod-ryadok · рядок 331
+<!-- fc id:T-59-099 sha:ea63146b src:manual/59-proj-monitor.md:345 klas:F -->
+### T-59-099 · kod-ryadok · рядок 345
 
 **Книга каже, дослівно:**
 
@@ -1541,8 +1826,8 @@
 
 ---
 
-<!-- fc id:T-59-096 sha:f15667d5 src:manual/59-proj-monitor.md:336 klas:F -->
-### T-59-096 · kod-ryadok · рядок 336
+<!-- fc id:T-59-100 sha:f15667d5 src:manual/59-proj-monitor.md:350 klas:F -->
+### T-59-100 · kod-ryadok · рядок 350
 
 **Книга каже, дослівно:**
 
@@ -1554,8 +1839,8 @@
 
 ---
 
-<!-- fc id:T-59-097 sha:cb6701a7 src:manual/59-proj-monitor.md:337 klas:F -->
-### T-59-097 · kod-ryadok · рядок 337
+<!-- fc id:T-59-101 sha:cb6701a7 src:manual/59-proj-monitor.md:351 klas:F -->
+### T-59-101 · kod-ryadok · рядок 351
 
 **Книга каже, дослівно:**
 
@@ -1567,8 +1852,8 @@
 
 ---
 
-<!-- fc id:T-59-098 sha:1e052b00 src:manual/59-proj-monitor.md:338 klas:F -->
-### T-59-098 · kod-ryadok · рядок 338
+<!-- fc id:T-59-102 sha:1e052b00 src:manual/59-proj-monitor.md:352 klas:F -->
+### T-59-102 · kod-ryadok · рядок 352
 
 **Книга каже, дослівно:**
 
@@ -1580,8 +1865,8 @@
 
 ---
 
-<!-- fc id:T-59-099 sha:faf13c15 src:manual/59-proj-monitor.md:340 klas:F -->
-### T-59-099 · kod-ryadok · рядок 340
+<!-- fc id:T-59-103 sha:faf13c15 src:manual/59-proj-monitor.md:354 klas:F -->
+### T-59-103 · kod-ryadok · рядок 354
 
 **Книга каже, дослівно:**
 
@@ -1593,8 +1878,8 @@
 
 ---
 
-<!-- fc id:T-59-100 sha:59d6968b src:manual/59-proj-monitor.md:341 klas:F -->
-### T-59-100 · kod-ryadok · рядок 341
+<!-- fc id:T-59-104 sha:59d6968b src:manual/59-proj-monitor.md:355 klas:F -->
+### T-59-104 · kod-ryadok · рядок 355
 
 **Книга каже, дослівно:**
 
@@ -1606,8 +1891,8 @@
 
 ---
 
-<!-- fc id:T-59-101 sha:c136ab2b src:manual/59-proj-monitor.md:346 klas:F -->
-### T-59-101 · proza · рядок 346
+<!-- fc id:T-59-105 sha:c136ab2b src:manual/59-proj-monitor.md:360 klas:F -->
+### T-59-105 · proza · рядок 360
 
 **Книга каже, дослівно:**
 
@@ -1619,8 +1904,8 @@
 
 ---
 
-<!-- fc id:T-59-102 sha:30cbfc2f src:manual/59-proj-monitor.md:349 klas:F -->
-### T-59-102 · proza · рядок 349
+<!-- fc id:T-59-106 sha:30cbfc2f src:manual/59-proj-monitor.md:363 klas:F -->
+### T-59-106 · proza · рядок 363
 
 **Книга каже, дослівно:**
 
@@ -1632,8 +1917,8 @@
 
 ---
 
-<!-- fc id:T-59-103 sha:2351e0dd src:manual/59-proj-monitor.md:349 klas:F -->
-### T-59-103 · proza · рядок 349
+<!-- fc id:T-59-107 sha:2351e0dd src:manual/59-proj-monitor.md:363 klas:F -->
+### T-59-107 · proza · рядок 363
 
 **Книга каже, дослівно:**
 
@@ -1645,8 +1930,8 @@
 
 ---
 
-<!-- fc id:T-59-104 sha:366e3229 src:manual/59-proj-monitor.md:356 klas:F -->
-### T-59-104 · kod · рядок 356
+<!-- fc id:T-59-108 sha:366e3229 src:manual/59-proj-monitor.md:370 klas:F -->
+### T-59-108 · kod · рядок 370
 
 **Книга каже, дослівно:**
 
@@ -1663,8 +1948,8 @@
 
 ---
 
-<!-- fc id:T-59-105 sha:6aa9cf42 src:manual/59-proj-monitor.md:357 klas:F -->
-### T-59-105 · kod-ryadok · рядок 357
+<!-- fc id:T-59-109 sha:6aa9cf42 src:manual/59-proj-monitor.md:371 klas:F -->
+### T-59-109 · kod-ryadok · рядок 371
 
 **Книга каже, дослівно:**
 
@@ -1676,8 +1961,8 @@
 
 ---
 
-<!-- fc id:T-59-106 sha:4f160d06 src:manual/59-proj-monitor.md:358 klas:F -->
-### T-59-106 · kod-ryadok · рядок 358
+<!-- fc id:T-59-110 sha:4f160d06 src:manual/59-proj-monitor.md:372 klas:F -->
+### T-59-110 · kod-ryadok · рядок 372
 
 **Книга каже, дослівно:**
 
@@ -1689,8 +1974,8 @@
 
 ---
 
-<!-- fc id:T-59-107 sha:343d9bab src:manual/59-proj-monitor.md:359 klas:F -->
-### T-59-107 · kod-ryadok · рядок 359
+<!-- fc id:T-59-111 sha:343d9bab src:manual/59-proj-monitor.md:373 klas:F -->
+### T-59-111 · kod-ryadok · рядок 373
 
 **Книга каже, дослівно:**
 
@@ -1702,8 +1987,8 @@
 
 ---
 
-<!-- fc id:T-59-108 sha:e801663f src:manual/59-proj-monitor.md:360 klas:F -->
-### T-59-108 · kod-ryadok · рядок 360
+<!-- fc id:T-59-112 sha:e801663f src:manual/59-proj-monitor.md:374 klas:F -->
+### T-59-112 · kod-ryadok · рядок 374
 
 **Книга каже, дослівно:**
 
@@ -1715,8 +2000,8 @@
 
 ---
 
-<!-- fc id:T-59-109 sha:b3a83074 src:manual/59-proj-monitor.md:365 klas:C -->
-### T-59-109 · proza · рядок 365
+<!-- fc id:T-59-113 sha:b3a83074 src:manual/59-proj-monitor.md:379 klas:C -->
+### T-59-113 · proza · рядок 379
 
 **Книга каже, дослівно:**
 
@@ -1732,8 +2017,8 @@
 
 ---
 
-<!-- fc id:T-59-110 sha:fda6a9fd src:manual/59-proj-monitor.md:365 klas:F -->
-### T-59-110 · proza · рядок 365
+<!-- fc id:T-59-114 sha:fda6a9fd src:manual/59-proj-monitor.md:379 klas:F -->
+### T-59-114 · proza · рядок 379
 
 **Книга каже, дослівно:**
 
@@ -1745,8 +2030,8 @@
 
 ---
 
-<!-- fc id:T-59-111 sha:98a85158 src:manual/59-proj-monitor.md:365 klas:F -->
-### T-59-111 · proza · рядок 365
+<!-- fc id:T-59-115 sha:98a85158 src:manual/59-proj-monitor.md:379 klas:F -->
+### T-59-115 · proza · рядок 379
 
 **Книга каже, дослівно:**
 
@@ -1758,8 +2043,8 @@
 
 ---
 
-<!-- fc id:T-59-112 sha:98b2d431 src:manual/59-proj-monitor.md:365 klas:F -->
-### T-59-112 · proza · рядок 365
+<!-- fc id:T-59-116 sha:98b2d431 src:manual/59-proj-monitor.md:379 klas:F -->
+### T-59-116 · proza · рядок 379
 
 **Книга каже, дослівно:**
 
@@ -1771,8 +2056,8 @@
 
 ---
 
-<!-- fc id:T-59-113 sha:3ec3a7c7 src:manual/59-proj-monitor.md:365 klas:F -->
-### T-59-113 · proza · рядок 365
+<!-- fc id:T-59-117 sha:3ec3a7c7 src:manual/59-proj-monitor.md:379 klas:F -->
+### T-59-117 · proza · рядок 379
 
 **Книга каже, дослівно:**
 
@@ -1784,8 +2069,8 @@
 
 ---
 
-<!-- fc id:T-59-114 sha:f2cb8e81 src:manual/59-proj-monitor.md:365 klas:F -->
-### T-59-114 · proza · рядок 365
+<!-- fc id:T-59-118 sha:f2cb8e81 src:manual/59-proj-monitor.md:379 klas:F -->
+### T-59-118 · proza · рядок 379
 
 **Книга каже, дослівно:**
 
@@ -1797,8 +2082,8 @@
 
 ---
 
-<!-- fc id:T-59-115 sha:cab8cb32 src:manual/59-proj-monitor.md:365 klas:F -->
-### T-59-115 · proza · рядок 365
+<!-- fc id:T-59-119 sha:cab8cb32 src:manual/59-proj-monitor.md:379 klas:F -->
+### T-59-119 · proza · рядок 379
 
 **Книга каже, дослівно:**
 
@@ -1810,8 +2095,8 @@
 
 ---
 
-<!-- fc id:T-59-116 sha:26ecb42f src:manual/59-proj-monitor.md:378 klas:C -->
-### T-59-116 · proza · рядок 378
+<!-- fc id:T-59-120 sha:26ecb42f src:manual/59-proj-monitor.md:392 klas:C -->
+### T-59-120 · proza · рядок 392
 
 **Книга каже, дослівно:**
 

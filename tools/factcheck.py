@@ -217,15 +217,26 @@ def zavantazhyty_dokazy() -> list[dict]:
     return out
 
 
+# Сила класу доказу. Менше — сильніше.
+SYLA = {"A": 0, "B": 1, "D": 2, "C": 3, "E": 4, "G": 5, "F": 6}
+
+
 def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
-    """Доказ для конкретного твердження: спершу точний хеш, потім взірець."""
-    for z in zapysy:
-        if h in [str(x) for x in (z.get("sha") or [])]:
-            return z
-    for z in zapysy:
-        v = z.get("zbih")
-        if v and re.search(v, txt, re.S):
-            return z
+    """Доказ для твердження: точний хеш має перевагу, далі — найсильніший.
+
+    Одне твердження може підпадати під кілька доказів: прохід записав
+    його в наряд як недосяжне, наступний знайшов обхідний шлях. Брати
+    треба **найсильніший**, а не той, що трапився першим, — інакше
+    порядок файлів у каталозі мовчки визначав би результат, і закриті
+    пункти лишалися б у наряді назавжди.
+    """
+    tochni = [z for z in zapysy if h in [str(x) for x in (z.get("sha") or [])]]
+    if tochni:
+        return min(tochni, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
+    zbihy = [z for z in zapysy
+             if z.get("zbih") and re.search(z["zbih"], txt, re.S)]
+    if zbihy:
+        return min(zbihy, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
     return None
 
 

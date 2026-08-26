@@ -1,0 +1,165 @@
+# Прохід 4 — обхідні шляхи до недосяжних джерел.
+#
+# Ідея проходу: datasheet із домену виробника не дістається, але сам
+# виробник часто публікує **той самий факт** у відкритому репозиторії —
+# як референсний драйвер, як заголовок із константами, як SDK. Це
+# першоджерело того самого автора, отримане й процитоване, отже клас A
+# або B, а не C.
+#
+# Прохід перевів у клас B п'ять груп, які прохід 3 записав у наряд, і дав
+# дві знахідки — одну в коді проєкту 59.
+
+- nazva: BME280 — карта регістрів і довжини блоків калібрування
+  zbih: 'REG_ID|REG_CTRL_H|REG_CTRL_M|REG_CONFIG|REG_CALIB|REG_DATA|BME_ADDR|id != 0x60|uint8_t c\[26\]|uint8_t h\[7\]|uint8_t d\[8\]'
+  klas: B
+  dzherelo: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+  cytata: |
+    #define BME280_CHIP_ID                            UINT8_C(0x60)
+    #define BME280_REG_CHIP_ID                        UINT8_C(0xD0)
+    #define BME280_REG_TEMP_PRESS_CALIB_DATA          UINT8_C(0x88)
+    #define BME280_REG_HUMIDITY_CALIB_DATA            UINT8_C(0xE1)
+    #define BME280_REG_CTRL_HUM                       UINT8_C(0xF2)
+    #define BME280_REG_CTRL_MEAS                      UINT8_C(0xF4)
+    #define BME280_REG_CONFIG                         UINT8_C(0xF5)
+    #define BME280_REG_DATA                           UINT8_C(0xF7)
+    #define BME280_LEN_TEMP_PRESS_CALIB_DATA          UINT8_C(26)
+    #define BME280_LEN_HUMIDITY_CALIB_DATA            UINT8_C(7)
+    #define BME280_LEN_P_T_H_DATA                     UINT8_C(8)
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Офіційний Sensor API самого Bosch. Підтверджує кожну адресу, ужиту в
+    драйвері проєкту 59, і всі три довжини буферів (26, 7, 8) — саме ті,
+    що в коді книги. Клас B, а не A, бо первинним для цих значень є
+    datasheet; але автор той самий, і код відкритий.
+
+- nazva: BME280 — старший байт dig_H4 і dig_H5 знаковий
+  zbih: 'старший байт H4 і H5 знаковий|розширення знака обов|int16_t\)\(int8_t\)h\[|Два зсуви в розборі калібрування'
+  klas: B
+  dzherelo: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
+  cytata: |
+    calib_data->dig_h2 = (int16_t)BME280_CONCAT_BYTES(reg_data[1], reg_data[0]);
+    calib_data->dig_h3 = reg_data[2];
+    dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
+    dig_h4_lsb = (int16_t)(reg_data[4] & 0x0F);
+    calib_data->dig_h4 = dig_h4_msb | dig_h4_lsb;
+    dig_h5_msb = (int16_t)(int8_t)reg_data[5] * 16;
+    dig_h5_lsb = (int16_t)(reg_data[4] >> 4);
+    calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
+    calib_data->dig_h6 = (int8_t)reg_data[6];
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Знахідка проходу, і вона в коді. Книга розбирала калібрування як
+    `H4 = (h[3] << 4) | (h[4] & 0x0F)`, тобто **без розширення знака**
+    старшого байта. Bosch явно приводить його до `int8_t` перед
+    множенням: `dig_H4` і `dig_H5` — знакові величини. Розбіжність
+    проявляється лише на екземплярах, де в старшому байті виставлено
+    сьомий біт, і виглядає як стабільно неправильна вологість при
+    правильних температурі й тиску — тобто як несправний датчик.
+    Виправлено в проєкті 59, додано блок уваги з поясненням, чому два
+    однакові на вигляд зсуви різні.
+
+- nazva: DS18B20 — −127 °C як код помилки і межа 750 мс
+  zbih: '−127|750 мс|DEVICE_DISCONNECTED'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
+  cytata: |
+    #define DEVICE_DISCONNECTED_C -127
+    #define DEVICE_DISCONNECTED_F -196.6
+    #define DEVICE_DISCONNECTED_RAW -7040
+    …
+    #define MAX_CONVERSION_TIMEOUT 750
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Закриває пункт, який прохід 3 записав у наряд із приміткою, що −127
+    у datasheet відсутнє. Так і є: це домовленість бібліотеки
+    `DallasTemperature`, і саме її бачить читач. Тепер підтверджено
+    дослівно, разом із межею перетворення 750 мс.
+
+- nazva: Типовий ATT MTU дорівнює 23 байтам в обох стеках
+  zbih: 'ATT MTU|23\s*байт|20 байтів|MTU'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bt/host/bluedroid/stack/include/stack/gatt_api.h
+    та https://raw.githubusercontent.com/apache/mynewt-nimble/master/nimble/host/include/host/ble_att.h
+  cytata: |
+    (Bluedroid, у складі ESP-IDF)
+    #define GATT_DEF_BLE_MTU_SIZE               23
+    #define GATT_MAX_MTU_SIZE                   517
+
+    (NimBLE, apache/mynewt-nimble)
+    #define BLE_ATT_MTU_DFLT                    23
+    #define BLE_ATT_MTU_MAX                     527
+     * The specified MTU must be within the following range: [23, BLE_ATT_MTU_MAX].
+     * 23 is a minimum imposed by the Bluetooth specification;
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Закриває пункт наряду, який спирався на платну специфікацію
+    Bluetooth Core. Обидва стеки, між якими вибирає розділ 41, дають те
+    саме число, а коментар NimBLE прямо посилається на специфікацію як на
+    джерело мінімуму. Клас A: цитати з обох стеків отримано.
+
+- nazva: SH1106 зсунуто на два пікселі відносно SSD1306
+  zbih: 'SH1106|зсунут\w+ на два пікселі|зсув на 2 пікселі'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/olikraus/u8g2/master/csrc/u8x8_d_ssd1306_128x64_noname.c
+  cytata: |
+    (SSD1306 128x64)
+      /* default_x_offset = */ 0,
+      /* flipmode_x_offset = */ 0,
+      /* pixel_width = */ 128,
+
+    (SH1106 128x64)
+      /* default_x_offset = */ 2,
+      /* flipmode_x_offset = */ 2,
+      /* pixel_width = */ 128,
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Закриває пункт наряду. Бібліотека, яку книга рекомендує в розділі 46,
+    сама тримає різницю як два різні описи дисплея з різним зсувом — саме
+    ті два пікселі, про які йдеться. Це і є той «окремий режим у
+    бібліотеці», який книга радить увімкнути.
+
+- nazva: LoRa — апаратний діапазон SF починається з шістки
+  zbih: 'Spreading Factor|робочий діапазон \*\*7…12\*\*|SF6'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/jgromes/RadioLib/master/src/modules/SX127x/SX1278.cpp
+  cytata: |
+    // check allowed spreading factor values
+    switch(sf) {
+      case 6:  newSpreadingFactor = RADIOLIB_SX127X_SF_6;  break;
+      case 7:  newSpreadingFactor = RADIOLIB_SX127X_SF_7;  break;
+      …
+      case 12: newSpreadingFactor = RADIOLIB_SX127X_SF_12; break;
+      default: return(RADIOLIB_ERR_INVALID_SPREADING_FACTOR);
+    }
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Знахідка проходу. Книга давала діапазон «від 7 до 12»; апаратура й
+    бібліотека приймають від 6. SF6 справді особливий — лише з неявним
+    заголовком і з власними налаштуваннями детектування, — тож
+    формулювання виправлено на «робочий діапазон 7…12» з окремим абзацом
+    про те, що SF6 існує і чому його не беруть. Це точніше за обидва
+    попередні варіанти: і не приховує апаратну можливість, і не радить
+    її як звичайну.
+
+- nazva: RP2040 — обсяг SRAM 264 КБ
+  zbih: 'RP2040|264 КБ'
+  klas: B
+  dzherelo: https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+  cytata: |
+    #define SRAM_BASE _u(0x20000000)
+    #define SRAM_STRIPED_BASE _u(0x20000000)
+    #define SRAM_STRIPED_END _u(0x20040000)
+    #define SRAM4_BASE _u(0x20040000)
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    0x20040000 − 0x20000000 = 0x40000 = 256 КБ основної смугованої
+    пам'яті, плюс два окремі банки SRAM4 і SRAM5 по 4 КБ — разом 264 КБ,
+    як у порівняльній таблиці розділу 01.
+
+    Окремо зафіксовано розбіжність, яка **не є** помилкою книги: SDK
+    задає типову системну частоту 125 МГц
+    (`SYS_CLK_HZ … default=125000000`), тоді як таблиця наводить
+    133 МГц — гранично специфіковану. Це узгоджено з тим, як у тій самій
+    таблиці подано ESP32 (160–240 МГц, теж межа). Підтвердження самої
+    межі 133 МГц потребує datasheet RP2040 і лишається в наряді.

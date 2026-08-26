@@ -916,7 +916,7 @@
 
 ---
 
-<!-- fc id:T-41-071 sha:8225efdc src:manual/41-ble.md:161 klas:C -->
+<!-- fc id:T-41-071 sha:8225efdc src:manual/41-ble.md:161 klas:A -->
 ### T-41-071 · proza · рядок 161
 
 **Книга каже, дослівно:**
@@ -925,15 +925,25 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bluetooth.com/specifications/specs/ (Core Specification, Vol. 3, Part F — ATT)
-- **Що шукати в джерелі:** визначення ATT_MTU за замовчуванням для LE (23 байти) і розмір заголовка операції запису/сповіщення (3 байти), звідки 20 байтів корисних даних; процедура Exchange MTU.
-- **Нотатка:** Проміжний шлях до класу B: константи стеків NimBLE й Bluedroid у самому ESP-IDF, які дістаються. Наступний прохід спробує саме це.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bt/host/bluedroid/stack/include/stack/gatt_api.h та https://raw.githubusercontent.com/apache/mynewt-nimble/master/nimble/host/include/host/ble_att.h
+- **Дослівно з джерела:**
+  > (Bluedroid, у складі ESP-IDF)
+  > #define GATT_DEF_BLE_MTU_SIZE               23
+  > #define GATT_MAX_MTU_SIZE                   517
+  > 
+  > (NimBLE, apache/mynewt-nimble)
+  > #define BLE_ATT_MTU_DFLT                    23
+  > #define BLE_ATT_MTU_MAX                     527
+  >  * The specified MTU must be within the following range: [23, BLE_ATT_MTU_MAX].
+  >  * 23 is a minimum imposed by the Bluetooth specification;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Закриває пункт наряду, який спирався на платну специфікацію Bluetooth Core. Обидва стеки, між якими вибирає розділ 41, дають те саме число, а коментар NimBLE прямо посилається на специфікацію як на джерело мінімуму. Клас A: цитати з обох стеків отримано.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
-<!-- fc id:T-41-072 sha:f484e4a2 src:manual/41-ble.md:161 klas:F -->
+<!-- fc id:T-41-072 sha:f484e4a2 src:manual/41-ble.md:161 klas:A -->
 ### T-41-072 · proza · рядок 161
 
 **Книга каже, дослівно:**
@@ -942,7 +952,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bt/host/bluedroid/stack/include/stack/gatt_api.h та https://raw.githubusercontent.com/apache/mynewt-nimble/master/nimble/host/include/host/ble_att.h
+- **Дослівно з джерела:**
+  > (Bluedroid, у складі ESP-IDF)
+  > #define GATT_DEF_BLE_MTU_SIZE               23
+  > #define GATT_MAX_MTU_SIZE                   517
+  > 
+  > (NimBLE, apache/mynewt-nimble)
+  > #define BLE_ATT_MTU_DFLT                    23
+  > #define BLE_ATT_MTU_MAX                     527
+  >  * The specified MTU must be within the following range: [23, BLE_ATT_MTU_MAX].
+  >  * 23 is a minimum imposed by the Bluetooth specification;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Закриває пункт наряду, який спирався на платну специфікацію Bluetooth Core. Обидва стеки, між якими вибирає розділ 41, дають те саме число, а коментар NimBLE прямо посилається на специфікацію як на джерело мінімуму. Клас A: цитати з обох стеків отримано.
+- **Прохід:** pass-04-obkhidni
 
 ---
 
