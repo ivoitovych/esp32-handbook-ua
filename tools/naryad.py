@@ -32,10 +32,23 @@
 Обидві половини потрібні разом. Сама перша дає вигадані знахідки, сама
 друга — мовчазне «все гаразд».
 
-    tools/naryad.py    зібрати factcheck/NARYAD-cytaty.md
+## Чому зведення рахує нестачу, а не лише вердикти
+
+Помічник звітує числами, і числа сходяться самі з собою: «сім
+підтверджено, помилок нема». Але в наряді було десять. Три записи
+просто не згадані — не спростовані, не відкладені, а **зниклі**, і в
+звіті помічника цього не видно ніяк.
+
+Тому зведення бере перелік із наряду, а не з вивантажень, і кожен
+запис, на який ніхто не відповів, друкує окремим розділом. Нестача —
+теж результат, і найнебезпечніший: вона виглядає як згода.
+
+    tools/naryad.py           зібрати factcheck/NARYAD-cytaty.md
+    tools/naryad.py --zvit <каталог>  звести відповіді помічників
 """
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -109,11 +122,154 @@ def zapysy() -> dict[tuple[str, str], dict]:
     return rec
 
 
+ZVIT = ROOT / "factcheck" / "KNYHA-PROTY-DZHEREL.md"
+
+PIDPYSY = {
+    "pidtverdzheno": "Книга підтверджена",
+    "sperechayetsya": "Джерело сперечається з книгою",
+    "ne_vyrishyv": "Не вирішено",
+}
+
+
+RE_ZAPYS = re.compile(r"^\*\*`([\w-]+)`\*\* · (.+)$", re.M)
+
+
+def z_naryadu() -> list[str]:
+    """Назви записів **із виданого наряду**, а не з поточного стану.
+
+    Різниця не теоретична. Наряд роздали на 50 записів; поки помічники
+    працювали, злиття роботи М2 додало ще 19 розбіжних цитат. Якби
+    зведення бралося з поточного переліку, 19 записів, яких помічники
+    ніколи не бачили, лягли б у графу «без відповіді» — і виглядали б
+    як недбалість помічників.
+
+    Наряд — це домовленість. Питати з помічника можна рівно те, що в
+    ньому стояло.
+    """
+    if not CIL.exists():
+        return []
+    return [m.group(2).strip() for m in RE_ZAPYS.finditer(
+        CIL.read_text(encoding="utf-8"))]
+
+
+def zvesty(katalog: Path) -> int:
+    import vyvantazh
+
+    zap, polagodzheni, zlamani = vyvantazh.chytaty(katalog)
+
+    # Ключ — назва запису доказу. Помічники пишуть `zapys` і `nazva`;
+    # звіряємо за назвою, бо саме вона стоїть у наряді.
+    vidpovidi: dict[str, dict] = {}
+    for z in zap:
+        klyuch = str(z.get("nazva", "")).strip()
+        if klyuch:
+            vidpovidi[klyuch] = z
+
+    ochikuvano = z_naryadu()
+    znykli = [n for n in ochikuvano if n not in vidpovidi]
+
+    c: dict[str, int] = {}
+    for n in ochikuvano:
+        v = str(vidpovidi.get(n, {}).get("verdykt", "—"))
+        c[v] = c.get(v, 0) + 1
+
+    sperechayutsya = [n for n in ochikuvano
+                      if str(vidpovidi.get(n, {}).get("verdykt"))
+                      == "sperechayetsya"]
+
+    r = [f"""# Книга проти джерел: 50 розбіжних цитат
+
+**Генерується** `tools/naryad.py --zvit`. Наряд —
+`factcheck/NARYAD-cytaty.md`.
+
+Третій шар сказав, що цих цитат немає за названою адресою. Питання тут
+інше: **чи правильне те, що написано в книзі.**
+
+Причина розбіжностей відома й нецікава — супровідник причепурив цитату:
+скоротив `{{IDF_TARGET_STRAP_BOOT_2_GPIO}}` до `{{STRAP_BOOT_2_GPIO}}`,
+зібрав рядок таблиці рукою. Це брак реєстру, не книги. Небезпечний лише
+той випадок, коли за причесаною цитатою джерело каже **інше**.
+
+## Результат
+
+Записів у наряді: **{len(ochikuvano)}**. Відповідей: **{len(ochikuvano) - len(znykli)}**.
+
+| Вердикт | Скільки |
+|---|---|"""]
+    for k in ("pidtverdzheno", "sperechayetsya", "ne_vyrishyv"):
+        r.append(f"| {PIDPYSY[k]} | {c.get(k, 0)} |")
+    if znykli:
+        r.append(f"| **Без відповіді** | {len(znykli)} |")
+    r.append("")
+
+    if sperechayutsya:
+        r.append("\n## Джерело сперечається з книгою\n")
+        r.append("**Це знахідки.** Кожну звіряє супровідник особисто "
+                 "перед тим, як щось правити в книзі.\n")
+        for n in sperechayutsya:
+            z = vidpovidi[n]
+            r.append(f"### {n}\n")
+            r.append(f"- джерело: {str(z.get('dzherelo', '?')).strip()}")
+            r.append(f"- каже: {str(z.get('komentar', '')).strip()}\n")
+            r.append("```")
+            r.append(str(z.get("cytata", "")).strip()[:600])
+            r.append("```\n")
+    else:
+        r.append("\n## Спростувань немає\n")
+        r.append("Жодне джерело не заперечило книзі. Це **не** означає, "
+                 "що книга правильна — означає, що на цих п'ятдесяти "
+                 "місцях причесана цитата стояла над правильним фактом. "
+                 "Брак тут у реєстрі, і виправляти його — реєстрові.\n")
+
+    if znykli:
+        r.append("\n## Без відповіді\n")
+        r.append("Записи з наряду, яких немає в жодному вивантаженні. "
+                 "**Не підтверджені й не спростовані — просто зниклі.** "
+                 "Помічник звітує власними числами, і в них нестача "
+                 "невидима: сім із десяти виглядають як сім із семи.\n")
+        for n in znykli:
+            r.append(f"- {n}")
+        r.append("")
+
+    if polagodzheni:
+        r.append("\nПолагоджено механічно (значення взято в лапки): "
+                 + ", ".join(f"`{b}`" for b in polagodzheni) + ".\n")
+    if zlamani:
+        r.append("\nНе розібралися й пропущені: "
+                 + ", ".join(f"`{b}`" for b in zlamani) + ".\n")
+
+    r.append("\n## Усі відповіді\n")
+    r.append("| Запис | Вердикт | Що каже джерело |")
+    r.append("|---|---|---|")
+    for n in ochikuvano:
+        z = vidpovidi.get(n)
+        if z is None:
+            r.append(f"| {n[:70]} | **без відповіді** | — |")
+            continue
+        r.append(f"| {n[:70]} | {z.get('verdykt', '?')} "
+                 f"| {str(z.get('komentar', '')).strip()[:110]} |")
+
+    ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
+    print(f"naryad: очікувано {len(ochikuvano)}, відповідей "
+          f"{len(ochikuvano) - len(znykli)}, спростувань "
+          f"{len(sperechayutsya)}, без відповіді {len(znykli)} "
+          f"→ {ZVIT.relative_to(ROOT)}")
+    return 0
+
+
 def main() -> int:
     import citaty
 
     naslidky, _ = citaty.perevirka(False)
     bidy = [n for n in naslidky if n.get("stan") == "ne_znaydeno"]
+
+    if "--zvit" in sys.argv:
+        i = sys.argv.index("--zvit")
+        if i + 1 >= len(sys.argv):
+            print("naryad: --zvit потребує каталогу вивантажень")
+            return 2
+        return zvesty(Path(sys.argv[i + 1]))
+
     rec = zapysy()
 
     r = [ZAHOLOVOK.rstrip("\n")]
