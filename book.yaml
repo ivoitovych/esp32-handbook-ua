@@ -189,7 +189,7 @@ targets:
       - title: "Нотатки"
         silent: true
         generated: notatky
-        storinok: 22
+        storinok: 21
         files: []
       - title: "Вкладиші"
         blurb: >-
