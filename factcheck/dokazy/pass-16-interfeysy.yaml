@@ -1,0 +1,91 @@
+# Прохід 16 — довідник інтерфейсів: адреси I²C і режими SPI.
+#
+# Додаток E — таблиця, за якою читач діє напряму: побачив адресу, вписав
+# у код. Помилка тут не спричиняє роздумів, вона спричиняє «пристрій не
+# відповідає» без жодної підказки, у чому річ.
+#
+# Джерела дістаються добре: адреси й режими лежать у драйверах на GitHub
+# (Adafruit, Sensirion, claws/BH1750, RadioLib), і це первинніше за
+# перекази в статтях.
+
+- nazva: Адреси I²C у додатку E — усі тринадцять рядків
+  zbih: '`0x76`, `0x77`|`0x44`, `0x45`|`0x23`, `0x5C`|`0x68`, `0x69`|`0x28`, `0x29`|`0x3C`, `0x3D`|`0x20`–`0x27`|`0x70`–`0x77`|`0x50`–`0x57`|DS3231 і MPU6050 мають однакову адресу'
+  klas: A
+  dzherelo: >-
+    raw.githubusercontent.com — заголовки драйверів:
+    adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31,
+    claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp),
+    adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055,
+    adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X,
+    adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+  cytata: |
+    #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+    #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+    #define SHT31_DEFAULT_ADDR        0x44
+    BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+    #define DS3231_ADDRESS            0x68
+    #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+    #define BNO055_ADDRESS_A         (0x28)
+    #define BNO055_ADDRESS_B         (0x29)
+    #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+    #define VL53L0X_I2C_ADDR          0x29
+    #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+    #define MCP23XXX_ADDR             0x20    // Default I2C Address
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до
+    використання таблиця книги: читач бере адресу й вписує в код, тож
+    помилка тут коштувала б годин без жодної підказки, у чому річ.
+
+    Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR`
+    = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі;
+    те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+
+    Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і
+    `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка
+    `AD0` дає MPU6050 адресу `0x69`.
+
+- nazva: Режими SPI — CPHA задає номер фронту, не напрямок
+  zbih: 'по \*\*першому\*\* фронту|по \*\*другому\*\*|котрому за ліком|режими 0 і 3 читають по\s*одному й тому самому фронту|режими 1 і 2|починати треба з пари 0 і 3|0 або 3'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/adafruit/Adafruit-ST7735-Library/master/Adafruit_ST7789.h
+    та .../Adafruit_ST7789.cpp, https://raw.githubusercontent.com/jgromes/RadioLib/master/src/BuildOpt.h
+  cytata: |
+    (Adafruit_ST7789.h)
+    void init(uint16_t width, uint16_t height, uint8_t spiMode = SPI_MODE0);
+
+    (Adafruit_ST7789.cpp)
+    @param  mode   SPI data mode; one of SPI_MODE0, SPI_MODE1, SPI_MODE2
+                   or SPI_MODE3 (do NOT pass the numbers 0,1,2 or 3 …)
+
+    (RadioLib BuildOpt.h)
+    #define RADIOLIB_DEFAULT_SPI_SETTINGS  SPISettings(2000000, MSBFIRST, SPI_MODE0)
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Виправлення, і воно про однозначність формулювання, а не про число.
+
+    Таблиця режимів у розділі 36 описувала режими 2 і 3 як «читання по
+    передньому фронту» і «по задньому». «Передній фронт» у побутовому
+    читанні — наростаючий, і при такому читанні рядки 2 і 3 виявляються
+    переставленими: насправді режим 2 читає по спадному, а режим 3 — по
+    наростаючому.
+
+    Правильне пояснення інше: `CPHA` каже, по **котрому за ліком**
+    фронту читаються дані, а напрямок виходить із поєднання з `CPOL`.
+    Таблицю перероблено на п'ять стовпців, де номер фронту й напрямок
+    стоять окремо.
+
+    З цього вийшло доповнення, яке економить час у полі: **режими 0 і 3
+    читають по одному й тому самому фронту**, наростаючому, і
+    відрізняються лише рівнем тактування в спокої. Тому перебирати варто
+    не всі чотири, а спершу пару 0 і 3, потім 1 і 2.
+
+    Це ж пояснює розбіжність, знайдену в додатку E: книга давала ST7789
+    режим 3, а бібліотека Adafruit за замовчуванням ставить `SPI_MODE0`
+    і пропонує третій як опцію. Обидва працюють — і тепер у таблиці
+    стоїть «0 або 3» із поясненням, чому це не невизначеність.
+
+    RadioLib для SX1276 і SX1262 підтверджує режим 0 дослівно
+    (`RADIOLIB_DEFAULT_SPI_SETTINGS`), тобто рядки LoRa в додатку E
+    точні.

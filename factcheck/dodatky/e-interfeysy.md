@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/e-interfeysy.md`
 
-Одиниць твердження: **149**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **151**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-E-006 sha:dcae0ce9 src:dodatky/e-interfeysy.md:12 klas:C -->
+<!-- fc id:T-E-006 sha:dcae0ce9 src:dodatky/e-interfeysy.md:12 klas:A -->
 ### T-E-006 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -80,11 +80,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -122,7 +137,7 @@
 
 ---
 
-<!-- fc id:T-E-009 sha:5f4e30c5 src:dodatky/e-interfeysy.md:13 klas:C -->
+<!-- fc id:T-E-009 sha:5f4e30c5 src:dodatky/e-interfeysy.md:13 klas:A -->
 ### T-E-009 · komirka · рядок 13
 
 **Книга каже, дослівно:**
@@ -131,11 +146,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -165,7 +195,7 @@
 
 ---
 
-<!-- fc id:T-E-012 sha:3a822c76 src:dodatky/e-interfeysy.md:14 klas:D -->
+<!-- fc id:T-E-012 sha:3a822c76 src:dodatky/e-interfeysy.md:14 klas:A -->
 ### T-E-012 · komirka · рядок 14
 
 **Книга каже, дослівно:**
@@ -174,37 +204,26 @@
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arytmetyka.py
-- **Розрахунок:**
-  30 перевірок, усі збіглися. Найважливіші:
-    (3.3 − 2) / 0.007            = 185.7 Ом      → книга: 185, беремо 220
-    5 × 20 / (10 + 20)           = 3.33 В        → дільник HC-SR04
-    0.2 × 40 + 2 × 150           = 308 мА·с      → 308/3600 = 0.0856 мА·год
-    2000 / 0.106                 = 18 868 год    → «понад два роки»
-    0x6000 / 1024                = 24 КБ         → розділ nvs
-    (4×1024 − 64) / 1024         = 3.94 МБ       → «приблизно 3.9»
-    115200 / 10                  = 11 520 Б/с    → «близько 11 КБ/с»
-    256 / 11520                  = 22.2 мс       → «частіше ніж кожні 22»
-    65536 × 1.0 / 20             = 3277          → duty серво, 16 біт
-    65536 × 1.5 / 20             = 4915
-    65536 × 2.0 / 20             = 6554
-    3.7 / 200 000                = 18.5 мкА      → дільник вимірювання
-    4700 / 3                     = 1567 Ом       → «близько 1.6 кОм»
-    128 − 16                     = 112           → придатних адрес I²C
-    750 / 8                      = 93.75 мс      → DS18B20 при 9 розрядах
-    120 / 2                      = 60 Ом         → два термінатори
-    320 × 240 × 2 / 1024         = 150 КБ        → кадровий буфер
-    320 × 240 × 2 × 8 / 40e6     = 30.7 мс       → той самий кадр по SPI
-    12 + 36 + 32 + 27            = 107 мА·с      → цикл логера
-    899 × 0.030                  = 26.97 мА·с    → фаза сну
-    96 × 107 / 3600              = 2.85 мА·год   → за добу
-    1750 / 2.85                  = 614 діб
-    2500 × 0.7                   = 1750 мА·год
-    (0x20040000 − 0x20000000)/1024 = 256 КБ; +4+4 = 264 КБ → RP2040
-- **Спосіб і дата:** python3 tools/arytmetyka.py, 2026-08-26
-- **Нотатка:** Перевірку внесено в `make check` окремою ціллю `arytmetyka`. Це відповідь на те, як у книгу колись потрапили значення `duty` для серво від іншої роздільності: абзац із неправильним добутком внутрішньо несуперечливий і зовнішнього джерела не потребує, тож ні читання, ні звірка з першоджерелом його не ловлять. Ловить лише калькулятор — і тепер він запускається сам.
-- **Прохід:** pass-05-obchyslennya
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -337,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-E-018 sha:274457e9 src:dodatky/e-interfeysy.md:16 klas:C -->
+<!-- fc id:T-E-018 sha:274457e9 src:dodatky/e-interfeysy.md:16 klas:A -->
 ### T-E-018 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -346,11 +365,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -380,7 +414,7 @@
 
 ---
 
-<!-- fc id:T-E-021 sha:04902e5b src:dodatky/e-interfeysy.md:17 klas:C -->
+<!-- fc id:T-E-021 sha:04902e5b src:dodatky/e-interfeysy.md:17 klas:A -->
 ### T-E-021 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -389,11 +423,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -590,7 +639,7 @@
 
 ---
 
-<!-- fc id:T-E-033 sha:af561b9a src:dodatky/e-interfeysy.md:21 klas:C -->
+<!-- fc id:T-E-033 sha:af561b9a src:dodatky/e-interfeysy.md:21 klas:A -->
 ### T-E-033 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -599,11 +648,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -633,7 +697,7 @@
 
 ---
 
-<!-- fc id:T-E-036 sha:9ec27075 src:dodatky/e-interfeysy.md:22 klas:C -->
+<!-- fc id:T-E-036 sha:9ec27075 src:dodatky/e-interfeysy.md:22 klas:A -->
 ### T-E-036 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -642,11 +706,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -676,7 +755,7 @@
 
 ---
 
-<!-- fc id:T-E-039 sha:7d4b5654 src:dodatky/e-interfeysy.md:23 klas:C -->
+<!-- fc id:T-E-039 sha:7d4b5654 src:dodatky/e-interfeysy.md:23 klas:A -->
 ### T-E-039 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -685,11 +764,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -719,7 +813,7 @@
 
 ---
 
-<!-- fc id:T-E-042 sha:ed48c80e src:dodatky/e-interfeysy.md:24 klas:C -->
+<!-- fc id:T-E-042 sha:ed48c80e src:dodatky/e-interfeysy.md:24 klas:A -->
 ### T-E-042 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -728,11 +822,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -749,7 +858,7 @@
 
 ---
 
-<!-- fc id:T-E-044 sha:9f46567b src:dodatky/e-interfeysy.md:28 klas:C -->
+<!-- fc id:T-E-044 sha:9f46567b src:dodatky/e-interfeysy.md:28 klas:A -->
 ### T-E-044 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -758,11 +867,26 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
-- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
-- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -805,16 +929,35 @@
 
 ---
 
-<!-- fc id:T-E-048 sha:1315fbd8 src:dodatky/e-interfeysy.md:38 klas:F -->
+<!-- fc id:T-E-048 sha:6f5fce38 src:dodatky/e-interfeysy.md:38 klas:A -->
 ### T-E-048 · komirka · рядок 38
 
 **Книга каже, дослівно:**
 
-> ST7789 · Режим → 3
+> ST7789 · Режим → 0 або 3
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/adafruit/Adafruit-ST7735-Library/master/Adafruit_ST7789.h та .../Adafruit_ST7789.cpp, https://raw.githubusercontent.com/jgromes/RadioLib/master/src/BuildOpt.h
+- **Дослівно з джерела:**
+  > (Adafruit_ST7789.h)
+  > void init(uint16_t width, uint16_t height, uint8_t spiMode = SPI_MODE0);
+  > 
+  > (Adafruit_ST7789.cpp)
+  > @param  mode   SPI data mode; one of SPI_MODE0, SPI_MODE1, SPI_MODE2
+  >                or SPI_MODE3 (do NOT pass the numbers 0,1,2 or 3 …)
+  > 
+  > (RadioLib BuildOpt.h)
+  > #define RADIOLIB_DEFAULT_SPI_SETTINGS  SPISettings(2000000, MSBFIRST, SPI_MODE0)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення, і воно про однозначність формулювання, а не про число.
+Таблиця режимів у розділі 36 описувала режими 2 і 3 як «читання по передньому фронту» і «по задньому». «Передній фронт» у побутовому читанні — наростаючий, і при такому читанні рядки 2 і 3 виявляються переставленими: насправді режим 2 читає по спадному, а режим 3 — по наростаючому.
+Правильне пояснення інше: `CPHA` каже, по **котрому за ліком** фронту читаються дані, а напрямок виходить із поєднання з `CPOL`. Таблицю перероблено на п'ять стовпців, де номер фронту й напрямок стоять окремо.
+З цього вийшло доповнення, яке економить час у полі: **режими 0 і 3 читають по одному й тому самому фронту**, наростаючому, і відрізняються лише рівнем тактування в спокої. Тому перебирати варто не всі чотири, а спершу пару 0 і 3, потім 1 і 2.
+Це ж пояснює розбіжність, знайдену в додатку E: книга давала ST7789 режим 3, а бібліотека Adafruit за замовчуванням ставить `SPI_MODE0` і пропонує третій як опцію. Обидва працюють — і тепер у таблиці стоїть «0 або 3» із поясненням, чому це не невизначеність.
+RadioLib для SX1276 і SX1262 підтверджує режим 0 дослівно (`RADIOLIB_DEFAULT_SPI_SETTINGS`), тобто рядки LoRa в додатку E точні.
+- **Прохід:** pass-16-interfeysy
 
 ---
 
@@ -1258,8 +1401,53 @@
 
 ---
 
-<!-- fc id:T-E-081 sha:2584d17b src:dodatky/e-interfeysy.md:55 klas:F -->
-### T-E-081 · proza · рядок 55
+<!-- fc id:T-E-081 sha:e5d00b74 src:dodatky/e-interfeysy.md:53 klas:A -->
+### T-E-081 · proza · рядок 53
+
+**Книга каже, дослівно:**
+
+> Запис «0 або 3» не невизначеність: обидва режими читають по наростаючому фронту й відрізняються лише рівнем тактування в спокої, тож ST7789 працює в обох.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/adafruit/Adafruit-ST7735-Library/master/Adafruit_ST7789.h та .../Adafruit_ST7789.cpp, https://raw.githubusercontent.com/jgromes/RadioLib/master/src/BuildOpt.h
+- **Дослівно з джерела:**
+  > (Adafruit_ST7789.h)
+  > void init(uint16_t width, uint16_t height, uint8_t spiMode = SPI_MODE0);
+  > 
+  > (Adafruit_ST7789.cpp)
+  > @param  mode   SPI data mode; one of SPI_MODE0, SPI_MODE1, SPI_MODE2
+  >                or SPI_MODE3 (do NOT pass the numbers 0,1,2 or 3 …)
+  > 
+  > (RadioLib BuildOpt.h)
+  > #define RADIOLIB_DEFAULT_SPI_SETTINGS  SPISettings(2000000, MSBFIRST, SPI_MODE0)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення, і воно про однозначність формулювання, а не про число.
+Таблиця режимів у розділі 36 описувала режими 2 і 3 як «читання по передньому фронту» і «по задньому». «Передній фронт» у побутовому читанні — наростаючий, і при такому читанні рядки 2 і 3 виявляються переставленими: насправді режим 2 читає по спадному, а режим 3 — по наростаючому.
+Правильне пояснення інше: `CPHA` каже, по **котрому за ліком** фронту читаються дані, а напрямок виходить із поєднання з `CPOL`. Таблицю перероблено на п'ять стовпців, де номер фронту й напрямок стоять окремо.
+З цього вийшло доповнення, яке економить час у полі: **режими 0 і 3 читають по одному й тому самому фронту**, наростаючому, і відрізняються лише рівнем тактування в спокої. Тому перебирати варто не всі чотири, а спершу пару 0 і 3, потім 1 і 2.
+Це ж пояснює розбіжність, знайдену в додатку E: книга давала ST7789 режим 3, а бібліотека Adafruit за замовчуванням ставить `SPI_MODE0` і пропонує третій як опцію. Обидва працюють — і тепер у таблиці стоїть «0 або 3» із поясненням, чому це не невизначеність.
+RadioLib для SX1276 і SX1262 підтверджує режим 0 дослівно (`RADIOLIB_DEFAULT_SPI_SETTINGS`), тобто рядки LoRa в додатку E точні.
+- **Прохід:** pass-16-interfeysy
+
+---
+
+<!-- fc id:T-E-082 sha:2ec41b36 src:dodatky/e-interfeysy.md:53 klas:F -->
+### T-E-082 · proza · рядок 53
+
+**Книга каже, дослівно:**
+
+> Adafruit за замовчуванням ставить `SPI_MODE0`, частина інших бібліотек — третій (розділ 36).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-083 sha:2584d17b src:dodatky/e-interfeysy.md:60 klas:F -->
+### T-E-083 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -1271,8 +1459,8 @@
 
 ---
 
-<!-- fc id:T-E-082 sha:58e2d28c src:dodatky/e-interfeysy.md:57 klas:F -->
-### T-E-082 · tablycya-shapka · рядок 57
+<!-- fc id:T-E-084 sha:58e2d28c src:dodatky/e-interfeysy.md:62 klas:F -->
+### T-E-084 · tablycya-shapka · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -1284,8 +1472,8 @@
 
 ---
 
-<!-- fc id:T-E-083 sha:94d7dcf5 src:dodatky/e-interfeysy.md:58 klas:F -->
-### T-E-083 · komirka · рядок 58
+<!-- fc id:T-E-085 sha:94d7dcf5 src:dodatky/e-interfeysy.md:63 klas:F -->
+### T-E-085 · komirka · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -1297,8 +1485,8 @@
 
 ---
 
-<!-- fc id:T-E-084 sha:2aae51ca src:dodatky/e-interfeysy.md:58 klas:F -->
-### T-E-084 · komirka · рядок 58
+<!-- fc id:T-E-086 sha:2aae51ca src:dodatky/e-interfeysy.md:63 klas:F -->
+### T-E-086 · komirka · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -1310,8 +1498,8 @@
 
 ---
 
-<!-- fc id:T-E-085 sha:855aa221 src:dodatky/e-interfeysy.md:59 klas:C -->
-### T-E-085 · komirka · рядок 59
+<!-- fc id:T-E-087 sha:855aa221 src:dodatky/e-interfeysy.md:64 klas:C -->
+### T-E-087 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -1327,8 +1515,8 @@
 
 ---
 
-<!-- fc id:T-E-086 sha:c547b848 src:dodatky/e-interfeysy.md:59 klas:C -->
-### T-E-086 · komirka · рядок 59
+<!-- fc id:T-E-088 sha:c547b848 src:dodatky/e-interfeysy.md:64 klas:C -->
+### T-E-088 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -1344,8 +1532,8 @@
 
 ---
 
-<!-- fc id:T-E-087 sha:3f504a93 src:dodatky/e-interfeysy.md:60 klas:F -->
-### T-E-087 · komirka · рядок 60
+<!-- fc id:T-E-089 sha:3f504a93 src:dodatky/e-interfeysy.md:65 klas:F -->
+### T-E-089 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -1357,8 +1545,8 @@
 
 ---
 
-<!-- fc id:T-E-088 sha:0612861d src:dodatky/e-interfeysy.md:60 klas:F -->
-### T-E-088 · komirka · рядок 60
+<!-- fc id:T-E-090 sha:0612861d src:dodatky/e-interfeysy.md:65 klas:F -->
+### T-E-090 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -1370,8 +1558,8 @@
 
 ---
 
-<!-- fc id:T-E-089 sha:b8877b39 src:dodatky/e-interfeysy.md:61 klas:F -->
-### T-E-089 · komirka · рядок 61
+<!-- fc id:T-E-091 sha:b8877b39 src:dodatky/e-interfeysy.md:66 klas:F -->
+### T-E-091 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -1383,8 +1571,8 @@
 
 ---
 
-<!-- fc id:T-E-090 sha:053289b4 src:dodatky/e-interfeysy.md:61 klas:F -->
-### T-E-090 · komirka · рядок 61
+<!-- fc id:T-E-092 sha:053289b4 src:dodatky/e-interfeysy.md:66 klas:F -->
+### T-E-092 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -1396,8 +1584,8 @@
 
 ---
 
-<!-- fc id:T-E-091 sha:5b51dcfb src:dodatky/e-interfeysy.md:62 klas:F -->
-### T-E-091 · komirka · рядок 62
+<!-- fc id:T-E-093 sha:5b51dcfb src:dodatky/e-interfeysy.md:67 klas:F -->
+### T-E-093 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -1409,8 +1597,8 @@
 
 ---
 
-<!-- fc id:T-E-092 sha:896f6358 src:dodatky/e-interfeysy.md:62 klas:F -->
-### T-E-092 · komirka · рядок 62
+<!-- fc id:T-E-094 sha:896f6358 src:dodatky/e-interfeysy.md:67 klas:F -->
+### T-E-094 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -1422,8 +1610,8 @@
 
 ---
 
-<!-- fc id:T-E-093 sha:cac54e4e src:dodatky/e-interfeysy.md:63 klas:F -->
-### T-E-093 · komirka · рядок 63
+<!-- fc id:T-E-095 sha:cac54e4e src:dodatky/e-interfeysy.md:68 klas:F -->
+### T-E-095 · komirka · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -1435,8 +1623,8 @@
 
 ---
 
-<!-- fc id:T-E-094 sha:48ea03d4 src:dodatky/e-interfeysy.md:63 klas:F -->
-### T-E-094 · komirka · рядок 63
+<!-- fc id:T-E-096 sha:48ea03d4 src:dodatky/e-interfeysy.md:68 klas:F -->
+### T-E-096 · komirka · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -1448,8 +1636,8 @@
 
 ---
 
-<!-- fc id:T-E-095 sha:5155a527 src:dodatky/e-interfeysy.md:64 klas:F -->
-### T-E-095 · komirka · рядок 64
+<!-- fc id:T-E-097 sha:5155a527 src:dodatky/e-interfeysy.md:69 klas:F -->
+### T-E-097 · komirka · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -1461,8 +1649,8 @@
 
 ---
 
-<!-- fc id:T-E-096 sha:e2c081b0 src:dodatky/e-interfeysy.md:64 klas:F -->
-### T-E-096 · komirka · рядок 64
+<!-- fc id:T-E-098 sha:e2c081b0 src:dodatky/e-interfeysy.md:69 klas:F -->
+### T-E-098 · komirka · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -1474,8 +1662,8 @@
 
 ---
 
-<!-- fc id:T-E-097 sha:e19753d0 src:dodatky/e-interfeysy.md:69 klas:F -->
-### T-E-097 · proza · рядок 69
+<!-- fc id:T-E-099 sha:e19753d0 src:dodatky/e-interfeysy.md:74 klas:F -->
+### T-E-099 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -1487,8 +1675,8 @@
 
 ---
 
-<!-- fc id:T-E-098 sha:929d7feb src:dodatky/e-interfeysy.md:71 klas:F -->
-### T-E-098 · tablycya-shapka · рядок 71
+<!-- fc id:T-E-100 sha:929d7feb src:dodatky/e-interfeysy.md:76 klas:F -->
+### T-E-100 · tablycya-shapka · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -1500,8 +1688,8 @@
 
 ---
 
-<!-- fc id:T-E-099 sha:63e06b9b src:dodatky/e-interfeysy.md:72 klas:C -->
-### T-E-099 · komirka · рядок 72
+<!-- fc id:T-E-101 sha:63e06b9b src:dodatky/e-interfeysy.md:77 klas:C -->
+### T-E-101 · komirka · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -1517,8 +1705,8 @@
 
 ---
 
-<!-- fc id:T-E-100 sha:8665749b src:dodatky/e-interfeysy.md:72 klas:C -->
-### T-E-100 · komirka · рядок 72
+<!-- fc id:T-E-102 sha:8665749b src:dodatky/e-interfeysy.md:77 klas:C -->
+### T-E-102 · komirka · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -1534,8 +1722,8 @@
 
 ---
 
-<!-- fc id:T-E-101 sha:a1c587ef src:dodatky/e-interfeysy.md:73 klas:F -->
-### T-E-101 · komirka · рядок 73
+<!-- fc id:T-E-103 sha:a1c587ef src:dodatky/e-interfeysy.md:78 klas:F -->
+### T-E-103 · komirka · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -1547,8 +1735,8 @@
 
 ---
 
-<!-- fc id:T-E-102 sha:dfa3ce29 src:dodatky/e-interfeysy.md:78 klas:F -->
-### T-E-102 · proza · рядок 78
+<!-- fc id:T-E-104 sha:dfa3ce29 src:dodatky/e-interfeysy.md:83 klas:F -->
+### T-E-104 · proza · рядок 83
 
 **Книга каже, дослівно:**
 
@@ -1560,8 +1748,8 @@
 
 ---
 
-<!-- fc id:T-E-103 sha:7371b723 src:dodatky/e-interfeysy.md:80 klas:F -->
-### T-E-103 · tablycya · рядок 80
+<!-- fc id:T-E-105 sha:7371b723 src:dodatky/e-interfeysy.md:85 klas:F -->
+### T-E-105 · tablycya · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -1573,8 +1761,8 @@
 
 ---
 
-<!-- fc id:T-E-104 sha:31ba3159 src:dodatky/e-interfeysy.md:82 klas:C -->
-### T-E-104 · tablycya · рядок 82
+<!-- fc id:T-E-106 sha:31ba3159 src:dodatky/e-interfeysy.md:87 klas:C -->
+### T-E-106 · tablycya · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -1590,8 +1778,8 @@
 
 ---
 
-<!-- fc id:T-E-105 sha:e1da2f4a src:dodatky/e-interfeysy.md:83 klas:C -->
-### T-E-105 · tablycya · рядок 83
+<!-- fc id:T-E-107 sha:e1da2f4a src:dodatky/e-interfeysy.md:88 klas:C -->
+### T-E-107 · tablycya · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -1607,8 +1795,8 @@
 
 ---
 
-<!-- fc id:T-E-106 sha:e67a29db src:dodatky/e-interfeysy.md:84 klas:F -->
-### T-E-106 · tablycya · рядок 84
+<!-- fc id:T-E-108 sha:e67a29db src:dodatky/e-interfeysy.md:89 klas:F -->
+### T-E-108 · tablycya · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -1620,8 +1808,8 @@
 
 ---
 
-<!-- fc id:T-E-107 sha:8929fec1 src:dodatky/e-interfeysy.md:85 klas:F -->
-### T-E-107 · tablycya · рядок 85
+<!-- fc id:T-E-109 sha:8929fec1 src:dodatky/e-interfeysy.md:90 klas:F -->
+### T-E-109 · tablycya · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -1633,8 +1821,8 @@
 
 ---
 
-<!-- fc id:T-E-108 sha:d063a502 src:dodatky/e-interfeysy.md:86 klas:F -->
-### T-E-108 · tablycya · рядок 86
+<!-- fc id:T-E-110 sha:d063a502 src:dodatky/e-interfeysy.md:91 klas:F -->
+### T-E-110 · tablycya · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -1646,8 +1834,8 @@
 
 ---
 
-<!-- fc id:T-E-109 sha:754f537d src:dodatky/e-interfeysy.md:90 klas:F -->
-### T-E-109 · proza · рядок 90
+<!-- fc id:T-E-111 sha:754f537d src:dodatky/e-interfeysy.md:95 klas:F -->
+### T-E-111 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -1659,8 +1847,8 @@
 
 ---
 
-<!-- fc id:T-E-110 sha:d058b8f8 src:dodatky/e-interfeysy.md:92 klas:F -->
-### T-E-110 · tablycya-shapka · рядок 92
+<!-- fc id:T-E-112 sha:d058b8f8 src:dodatky/e-interfeysy.md:97 klas:F -->
+### T-E-112 · tablycya-shapka · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -1672,8 +1860,8 @@
 
 ---
 
-<!-- fc id:T-E-111 sha:c6e013aa src:dodatky/e-interfeysy.md:93 klas:F -->
-### T-E-111 · komirka · рядок 93
+<!-- fc id:T-E-113 sha:c6e013aa src:dodatky/e-interfeysy.md:98 klas:F -->
+### T-E-113 · komirka · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -1685,8 +1873,8 @@
 
 ---
 
-<!-- fc id:T-E-112 sha:68634053 src:dodatky/e-interfeysy.md:93 klas:F -->
-### T-E-112 · komirka · рядок 93
+<!-- fc id:T-E-114 sha:68634053 src:dodatky/e-interfeysy.md:98 klas:F -->
+### T-E-114 · komirka · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -1698,8 +1886,8 @@
 
 ---
 
-<!-- fc id:T-E-113 sha:e83535cc src:dodatky/e-interfeysy.md:94 klas:F -->
-### T-E-113 · komirka · рядок 94
+<!-- fc id:T-E-115 sha:e83535cc src:dodatky/e-interfeysy.md:99 klas:F -->
+### T-E-115 · komirka · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -1711,8 +1899,8 @@
 
 ---
 
-<!-- fc id:T-E-114 sha:b327d32d src:dodatky/e-interfeysy.md:94 klas:F -->
-### T-E-114 · komirka · рядок 94
+<!-- fc id:T-E-116 sha:b327d32d src:dodatky/e-interfeysy.md:99 klas:F -->
+### T-E-116 · komirka · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -1724,8 +1912,8 @@
 
 ---
 
-<!-- fc id:T-E-115 sha:2aedf206 src:dodatky/e-interfeysy.md:95 klas:F -->
-### T-E-115 · komirka · рядок 95
+<!-- fc id:T-E-117 sha:2aedf206 src:dodatky/e-interfeysy.md:100 klas:F -->
+### T-E-117 · komirka · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -1737,8 +1925,8 @@
 
 ---
 
-<!-- fc id:T-E-116 sha:06d56aa5 src:dodatky/e-interfeysy.md:100 klas:F -->
-### T-E-116 · tablycya-shapka · рядок 100
+<!-- fc id:T-E-118 sha:06d56aa5 src:dodatky/e-interfeysy.md:105 klas:F -->
+### T-E-118 · tablycya-shapka · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -1750,8 +1938,8 @@
 
 ---
 
-<!-- fc id:T-E-117 sha:5a46b695 src:dodatky/e-interfeysy.md:101 klas:F -->
-### T-E-117 · komirka · рядок 101
+<!-- fc id:T-E-119 sha:5a46b695 src:dodatky/e-interfeysy.md:106 klas:F -->
+### T-E-119 · komirka · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -1763,8 +1951,8 @@
 
 ---
 
-<!-- fc id:T-E-118 sha:2a40ffab src:dodatky/e-interfeysy.md:101 klas:F -->
-### T-E-118 · komirka · рядок 101
+<!-- fc id:T-E-120 sha:2a40ffab src:dodatky/e-interfeysy.md:106 klas:F -->
+### T-E-120 · komirka · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -1776,8 +1964,8 @@
 
 ---
 
-<!-- fc id:T-E-119 sha:70c43f02 src:dodatky/e-interfeysy.md:102 klas:F -->
-### T-E-119 · komirka · рядок 102
+<!-- fc id:T-E-121 sha:70c43f02 src:dodatky/e-interfeysy.md:107 klas:F -->
+### T-E-121 · komirka · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -1789,8 +1977,8 @@
 
 ---
 
-<!-- fc id:T-E-120 sha:92e46f9c src:dodatky/e-interfeysy.md:102 klas:F -->
-### T-E-120 · komirka · рядок 102
+<!-- fc id:T-E-122 sha:92e46f9c src:dodatky/e-interfeysy.md:107 klas:F -->
+### T-E-122 · komirka · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -1802,8 +1990,8 @@
 
 ---
 
-<!-- fc id:T-E-121 sha:c29a7095 src:dodatky/e-interfeysy.md:103 klas:F -->
-### T-E-121 · komirka · рядок 103
+<!-- fc id:T-E-123 sha:c29a7095 src:dodatky/e-interfeysy.md:108 klas:F -->
+### T-E-123 · komirka · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -1815,8 +2003,8 @@
 
 ---
 
-<!-- fc id:T-E-122 sha:2edcffe2 src:dodatky/e-interfeysy.md:103 klas:F -->
-### T-E-122 · komirka · рядок 103
+<!-- fc id:T-E-124 sha:2edcffe2 src:dodatky/e-interfeysy.md:108 klas:F -->
+### T-E-124 · komirka · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -1828,8 +2016,8 @@
 
 ---
 
-<!-- fc id:T-E-123 sha:25d38211 src:dodatky/e-interfeysy.md:104 klas:F -->
-### T-E-123 · komirka · рядок 104
+<!-- fc id:T-E-125 sha:25d38211 src:dodatky/e-interfeysy.md:109 klas:F -->
+### T-E-125 · komirka · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -1841,8 +2029,8 @@
 
 ---
 
-<!-- fc id:T-E-124 sha:7a8a7c1e src:dodatky/e-interfeysy.md:104 klas:F -->
-### T-E-124 · komirka · рядок 104
+<!-- fc id:T-E-126 sha:7a8a7c1e src:dodatky/e-interfeysy.md:109 klas:F -->
+### T-E-126 · komirka · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -1854,8 +2042,8 @@
 
 ---
 
-<!-- fc id:T-E-125 sha:af56f9d9 src:dodatky/e-interfeysy.md:105 klas:F -->
-### T-E-125 · komirka · рядок 105
+<!-- fc id:T-E-127 sha:af56f9d9 src:dodatky/e-interfeysy.md:110 klas:F -->
+### T-E-127 · komirka · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -1867,8 +2055,8 @@
 
 ---
 
-<!-- fc id:T-E-126 sha:54d7c2be src:dodatky/e-interfeysy.md:105 klas:F -->
-### T-E-126 · komirka · рядок 105
+<!-- fc id:T-E-128 sha:54d7c2be src:dodatky/e-interfeysy.md:110 klas:F -->
+### T-E-128 · komirka · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -1880,8 +2068,8 @@
 
 ---
 
-<!-- fc id:T-E-127 sha:6718e2ac src:dodatky/e-interfeysy.md:106 klas:F -->
-### T-E-127 · komirka · рядок 106
+<!-- fc id:T-E-129 sha:6718e2ac src:dodatky/e-interfeysy.md:111 klas:F -->
+### T-E-129 · komirka · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -1893,8 +2081,8 @@
 
 ---
 
-<!-- fc id:T-E-128 sha:b7388bb6 src:dodatky/e-interfeysy.md:106 klas:F -->
-### T-E-128 · komirka · рядок 106
+<!-- fc id:T-E-130 sha:b7388bb6 src:dodatky/e-interfeysy.md:111 klas:F -->
+### T-E-130 · komirka · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -1906,8 +2094,8 @@
 
 ---
 
-<!-- fc id:T-E-129 sha:a6161f9a src:dodatky/e-interfeysy.md:107 klas:F -->
-### T-E-129 · komirka · рядок 107
+<!-- fc id:T-E-131 sha:a6161f9a src:dodatky/e-interfeysy.md:112 klas:F -->
+### T-E-131 · komirka · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -1919,8 +2107,8 @@
 
 ---
 
-<!-- fc id:T-E-130 sha:32214f7d src:dodatky/e-interfeysy.md:107 klas:F -->
-### T-E-130 · komirka · рядок 107
+<!-- fc id:T-E-132 sha:32214f7d src:dodatky/e-interfeysy.md:112 klas:F -->
+### T-E-132 · komirka · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -1932,8 +2120,8 @@
 
 ---
 
-<!-- fc id:T-E-131 sha:909ea86e src:dodatky/e-interfeysy.md:108 klas:F -->
-### T-E-131 · komirka · рядок 108
+<!-- fc id:T-E-133 sha:909ea86e src:dodatky/e-interfeysy.md:113 klas:F -->
+### T-E-133 · komirka · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -1945,8 +2133,8 @@
 
 ---
 
-<!-- fc id:T-E-132 sha:dc6772ec src:dodatky/e-interfeysy.md:108 klas:F -->
-### T-E-132 · komirka · рядок 108
+<!-- fc id:T-E-134 sha:dc6772ec src:dodatky/e-interfeysy.md:113 klas:F -->
+### T-E-134 · komirka · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -1958,8 +2146,8 @@
 
 ---
 
-<!-- fc id:T-E-133 sha:70d1ab2b src:dodatky/e-interfeysy.md:109 klas:F -->
-### T-E-133 · komirka · рядок 109
+<!-- fc id:T-E-135 sha:70d1ab2b src:dodatky/e-interfeysy.md:114 klas:F -->
+### T-E-135 · komirka · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -1971,8 +2159,8 @@
 
 ---
 
-<!-- fc id:T-E-134 sha:82b294d2 src:dodatky/e-interfeysy.md:109 klas:F -->
-### T-E-134 · komirka · рядок 109
+<!-- fc id:T-E-136 sha:82b294d2 src:dodatky/e-interfeysy.md:114 klas:F -->
+### T-E-136 · komirka · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -1984,8 +2172,8 @@
 
 ---
 
-<!-- fc id:T-E-135 sha:b65fc0a5 src:dodatky/e-interfeysy.md:114 klas:F -->
-### T-E-135 · proza · рядок 114
+<!-- fc id:T-E-137 sha:b65fc0a5 src:dodatky/e-interfeysy.md:119 klas:F -->
+### T-E-137 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -1997,8 +2185,8 @@
 
 ---
 
-<!-- fc id:T-E-136 sha:8d32b02f src:dodatky/e-interfeysy.md:116 klas:F -->
-### T-E-136 · tablycya · рядок 116
+<!-- fc id:T-E-138 sha:8d32b02f src:dodatky/e-interfeysy.md:121 klas:F -->
+### T-E-138 · tablycya · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -2010,8 +2198,8 @@
 
 ---
 
-<!-- fc id:T-E-137 sha:c8c1f60e src:dodatky/e-interfeysy.md:118 klas:F -->
-### T-E-137 · tablycya · рядок 118
+<!-- fc id:T-E-139 sha:c8c1f60e src:dodatky/e-interfeysy.md:123 klas:F -->
+### T-E-139 · tablycya · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -2023,8 +2211,8 @@
 
 ---
 
-<!-- fc id:T-E-138 sha:d6e27376 src:dodatky/e-interfeysy.md:119 klas:F -->
-### T-E-138 · tablycya · рядок 119
+<!-- fc id:T-E-140 sha:d6e27376 src:dodatky/e-interfeysy.md:124 klas:F -->
+### T-E-140 · tablycya · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -2036,8 +2224,8 @@
 
 ---
 
-<!-- fc id:T-E-139 sha:17f8b064 src:dodatky/e-interfeysy.md:120 klas:F -->
-### T-E-139 · tablycya · рядок 120
+<!-- fc id:T-E-141 sha:17f8b064 src:dodatky/e-interfeysy.md:125 klas:F -->
+### T-E-141 · tablycya · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -2049,8 +2237,8 @@
 
 ---
 
-<!-- fc id:T-E-140 sha:fcd63e03 src:dodatky/e-interfeysy.md:121 klas:F -->
-### T-E-140 · tablycya · рядок 121
+<!-- fc id:T-E-142 sha:fcd63e03 src:dodatky/e-interfeysy.md:126 klas:F -->
+### T-E-142 · tablycya · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -2062,8 +2250,8 @@
 
 ---
 
-<!-- fc id:T-E-141 sha:fb2090c8 src:dodatky/e-interfeysy.md:122 klas:F -->
-### T-E-141 · tablycya · рядок 122
+<!-- fc id:T-E-143 sha:fb2090c8 src:dodatky/e-interfeysy.md:127 klas:F -->
+### T-E-143 · tablycya · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -2075,8 +2263,8 @@
 
 ---
 
-<!-- fc id:T-E-142 sha:06362e64 src:dodatky/e-interfeysy.md:126 klas:A -->
-### T-E-142 · proza · рядок 126
+<!-- fc id:T-E-144 sha:06362e64 src:dodatky/e-interfeysy.md:131 klas:A -->
+### T-E-144 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -2110,8 +2298,8 @@
 
 ---
 
-<!-- fc id:T-E-143 sha:66b89da4 src:dodatky/e-interfeysy.md:126 klas:F -->
-### T-E-143 · proza · рядок 126
+<!-- fc id:T-E-145 sha:66b89da4 src:dodatky/e-interfeysy.md:131 klas:F -->
+### T-E-145 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -2123,8 +2311,8 @@
 
 ---
 
-<!-- fc id:T-E-144 sha:dcd5dd7e src:dodatky/e-interfeysy.md:129 klas:F -->
-### T-E-144 · proza · рядок 129
+<!-- fc id:T-E-146 sha:dcd5dd7e src:dodatky/e-interfeysy.md:134 klas:F -->
+### T-E-146 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -2136,8 +2324,8 @@
 
 ---
 
-<!-- fc id:T-E-145 sha:4bb5ebd8 src:dodatky/e-interfeysy.md:129 klas:F -->
-### T-E-145 · proza · рядок 129
+<!-- fc id:T-E-147 sha:4bb5ebd8 src:dodatky/e-interfeysy.md:134 klas:F -->
+### T-E-147 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -2149,8 +2337,8 @@
 
 ---
 
-<!-- fc id:T-E-146 sha:107a64bc src:dodatky/e-interfeysy.md:132 klas:F -->
-### T-E-146 · proza · рядок 132
+<!-- fc id:T-E-148 sha:107a64bc src:dodatky/e-interfeysy.md:137 klas:F -->
+### T-E-148 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -2162,8 +2350,8 @@
 
 ---
 
-<!-- fc id:T-E-147 sha:abdd0a3f src:dodatky/e-interfeysy.md:132 klas:F -->
-### T-E-147 · proza · рядок 132
+<!-- fc id:T-E-149 sha:abdd0a3f src:dodatky/e-interfeysy.md:137 klas:F -->
+### T-E-149 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -2175,8 +2363,8 @@
 
 ---
 
-<!-- fc id:T-E-148 sha:b357ccb9 src:dodatky/e-interfeysy.md:135 klas:F -->
-### T-E-148 · proza · рядок 135
+<!-- fc id:T-E-150 sha:b357ccb9 src:dodatky/e-interfeysy.md:140 klas:F -->
+### T-E-150 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -2188,8 +2376,8 @@
 
 ---
 
-<!-- fc id:T-E-149 sha:f5b849f3 src:dodatky/e-interfeysy.md:139 klas:F -->
-### T-E-149 · proza · рядок 139
+<!-- fc id:T-E-151 sha:f5b849f3 src:dodatky/e-interfeysy.md:144 klas:F -->
+### T-E-151 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
