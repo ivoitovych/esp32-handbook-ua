@@ -67,7 +67,7 @@ esp_err_t sprobuvaty(int max_sprob) {
         ESP_LOGW(TAG, "спроба %d/%d: %s", i + 1, max_sprob,
                  esp_err_to_name(err));
         vTaskDelay(pdMS_TO_TICKS(pauza));
-        pauza = pauza < 5000 ? pauza * 2 : 5000;
+        pauza = pauza * 2 > 5000 ? 5000 : pauza * 2;
     }
     return ESP_FAIL;
 }
