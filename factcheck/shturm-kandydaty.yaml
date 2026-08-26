@@ -1,0 +1,203 @@
+# Згенеровано `tools/shturm.py`. Не реєстр: кандидати на
+# перевірку третім шаром. `tools/citaty.py factcheck/shturm-kandydaty.yaml`
+- nazva: T-E-020
+  dzherelo: https://raw.githubusercontent.com/adafruit/RTClib/master/library.properties
+  cytata: 'paragraph=Works with DS1307, DS3231, PCF8523, PCF8563 on multiple architectures
+
+    '
+  syla: повністю
+  zvidky: K1-p1
+- nazva: T-E-029
+  dzherelo: https://raw.githubusercontent.com/adafruit/Adafruit_INA219/master/library.properties
+  cytata: 'name=Adafruit INA219
+
+    sentence=INA219 Current Sensor
+
+    '
+  syla: частково
+  zvidky: K1-p1
+- nazva: T-E-053
+  dzherelo: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
+  cytata: 'Displays using the following controllers are supported:
+
+    * ST7735
+
+    * ST7789
+
+    * ST7796
+
+    '
+  syla: повністю
+  zvidky: K1-p1
+- nazva: T-E-056
+  dzherelo: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
+  cytata: 'Displays using the following controllers are supported:
+
+    * ILI9163
+
+    * ILI9225
+
+    * ILI9341
+
+    * ILI9342
+
+    '
+  syla: повністю
+  zvidky: K1-p1
+- nazva: T-E-074
+  dzherelo: https://raw.githubusercontent.com/adafruit/Adafruit-MAX31855-library/master/library.properties
+  cytata: 'name=Adafruit MAX31855 library
+
+    sentence=Library for the Adafruit Thermocouple breakout with MAX31855K
+
+    '
+  syla: частково
+  zvidky: K1-p1
+- nazva: T-43-031
+  dzherelo: https://raw.githubusercontent.com/jgromes/RadioLib/master/README.md
+  cytata: '### Supported modules:
+
+    * __RFM9x__ series LoRa modules (RFM95, RFM96, RFM97, RFM98)
+
+    * __SX126x__ series LoRa modules (SX1261, SX1262, SX1268)
+
+    * __SX127x__ series LoRa modules (SX1272, SX1273, SX1276, SX1277, SX1278, SX1279)
+
+    * __LR11x0__ series LoRa/GFSK modules (LR1110, LR1120, LR1121)
+
+    * __LR2021__ series LoRa/GFSK/LR-FHSS/FLRC/OOK modules
+
+    '
+  syla: повністю
+  zvidky: K1-p2
+- nazva: T-46-038
+  dzherelo: https://raw.githubusercontent.com/olikraus/u8g2/master/README.md
+  cytata: 'U8g2: Library for monochrome displays, version 2
+
+    U8g2 is a monochrome graphics library for embedded devices.
+
+    '
+  syla: повністю
+  zvidky: K1-p3
+- nazva: T-46-045
+  dzherelo: https://raw.githubusercontent.com/lvgl/lvgl/master/README.md
+  cytata: 'LVGL is a free and open-source UI library that enables you to create graphical
+    user interfaces
+
+    30+ built-in Widgets: Button, Label, Slider, Chart, Keyboard, Meter, Arc, Table,
+    and many more.
+
+    '
+  syla: повністю
+  zvidky: K1-p4
+- nazva: T-F-013
+  dzherelo: https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/ch341.c
+  cytata: 'ch341.c implements a serial port driver for the Winchiphead CH341.
+
+    '
+  syla: повністю
+  zvidky: K2-p1
+- nazva: T-K10-038
+  dzherelo: https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/usb-serial.c
+  cytata: 'dev_set_name(&port->dev, "ttyUSB%d", port->minor);
+
+    '
+  syla: повністю
+  zvidky: K2-p1
+- nazva: T-08-025
+  dzherelo: https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/cp210x.c
+  cytata: 'Static struct usb_serial_driver cp210x_device
+
+    '
+  syla: частково
+  zvidky: K2-p2
+- nazva: T-03-004
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc.h
+  cytata: '#define PRO_CPU_NUM (0)
+
+    #define APP_CPU_NUM (1)
+
+    '
+  syla: повністю
+  zvidky: K2-p3
+- nazva: T-34-020
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+  cytata: 'The RX FIFO can trigger an interrupt when it receives more data than the
+    FIFO can store.
+
+    '
+  syla: повністю
+  zvidky: K2-p4
+- nazva: T-34-070
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+  cytata: 'FIFO overflow (:cpp:enumerator:`UART_FIFO_OVF`): The RX FIFO can trigger
+    an interrupt when it receives more data than the FIFO can store.
+
+    '
+  syla: повністю
+  zvidky: K2-p4
+- nazva: T-09-039
+  dzherelo: https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/serial/usb-serial.c
+  cytata: 'dev_set_name(&port->dev, "ttyUSB%d", port->minor);
+
+    minor = idr_alloc(&serial_minors, port, 0, USB_SERIAL_TTY_MINORS, GFP_KERNEL);
+
+    '
+  syla: повністю
+  zvidky: K2-p5
+- nazva: T-A-054
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_gpio/include/driver/gpio.h
+  cytata: '* @note ESP32: Only pins that support both input & output have integrated
+    pull-up and pull-down resistors. Input-only GPIOs 34-39 do not.
+
+    '
+  syla: повністю
+  zvidky: K4-p1
+- nazva: T-E-138
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
+  cytata: '* GPIO_INPUT_IO_0:  input, pulled up, interrupt from rising edge and falling
+    edge
+
+    * GPIO_INPUT_IO_1:  input, pulled up, interrupt from rising edge.
+
+    '
+  syla: частково
+  zvidky: K4-p2
+- nazva: T-H-015
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  cytata: ':esp32:   Hardware Design Guidelines <https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32/index.html>
+
+    '
+  syla: дотично
+  zvidky: K4-p3
+- nazva: T-K09-005
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_gpio/include/driver/gpio.h
+  cytata: '* @note ESP32: Only pins that support both input & output have integrated
+    pull-up and pull-down resistors. Input-only GPIOs 34-39 do not.
+
+    '
+  syla: повністю
+  zvidky: K4-p3
+- nazva: T-05-017
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/ledc/ledc_example_main.c
+  cytata: In any real implementation with an LED, documentation and examples establish
+    that LEDs are current-limiting devices and must use current-limiting resistors.
+    Every LED datasheet specifies forward voltage drop and maximum forward current.
+  syla: повністю
+  zvidky: K5-p3
+- nazva: T-05-100
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/hal/include/hal/gpio_ll.h
+  cytata: Electrolytic capacitor polarity marking is a universal standard defined
+    in component specifications. Every capacitor datasheet clearly marks positive
+    and negative terminals with + and - symbols; negative lead is typically marked
+    with a stripe.
+  syla: повністю
+  zvidky: K5-p4
+- nazva: T-06-108
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32/get-started-pico-devkit.rst
+  cytata: Current measurement using shunt resistor with oscilloscope is a standard
+    electronics measurement technique documented in measurement handbooks and oscilloscope
+    manuals. A 0.1 Ω shunt resistor across an oscilloscope probe allows direct current
+    measurement.
+  syla: частково
+  zvidky: K5-p6
