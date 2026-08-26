@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/d-panik.md`
 
-Одиниць твердження: **130**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **151**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -871,8 +871,324 @@
 
 ---
 
-<!-- fc id:T-D-058 sha:d39312ec src:dodatky/d-panik.md:47 klas:A -->
-### T-D-058 · kod · рядок 47
+<!-- fc id:T-D-058 sha:37e0f86d src:dodatky/d-panik.md:47 klas:F -->
+### T-D-058 · proza · рядок 47
+
+**Книга каже, дослівно:**
+
+> Найнедооціненіший рядок усього boot-логу.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-059 sha:757a0843 src:dodatky/d-panik.md:47 klas:A -->
+### T-D-059 · proza · рядок 47
+
+**Книга каже, дослівно:**
+
+> Число після `boot:` — не код режиму, а **бітова маска регістра `GPIO_STRAP`**: рівні, які чип зафіксував на strapping-пінах у момент відпускання скидання.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as represented
+  > in the `GPIO_STRAP register <…/components/soc/{IDF_TARGET_PATH_NAME}/include/soc/gpio_reg.h>`__.
+  > 
+  > The individual bit values are as follows:
+  > 
+  > .. only:: esp32
+  > 
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і найцінніше за всі вісім. Книга друкувала `boot:0x13` у кожному прикладі логу й пояснювала лише текст у дужках, ніби число службове. Насправді це прямий вимір: які рівні чип зафіксував на strapping-пінах у момент скидання.
+Практичний наслідок великий. Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої, і радить її знімати — методом здогадки. Тепер це читається з логу: виставлений біт `0x20` означає `GPIO12` високий, тобто флеш на 1.8 В і мовчазна плата. Перевірка коштує нуль і не потребує приладів.
+Арифметика сходиться на обох типових значеннях: `0x13` = 0x01+0x02+0x10 (GPIO5, GPIO15, GPIO0 високі) — норма; `0x3` = 0x01+0x02, тобто те саме без `GPIO0` — download mode.
+Додано розгорнуто в додаток D і стисло на картку К6.
+- **Прохід:** pass-08-strapping
+
+---
+
+<!-- fc id:T-D-060 sha:7c7d8833 src:dodatky/d-panik.md:51 klas:F -->
+### T-D-060 · proza · рядок 51
+
+**Книга каже, дослівно:**
+
+> [[classic]] Для ESP32 classic біти такі:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-061 sha:7431ff81 src:dodatky/d-panik.md:53 klas:F -->
+### T-D-061 · tablycya · рядок 53
+
+**Книга каже, дослівно:**
+
+> | Біт | Пін |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-062 sha:714c2e09 src:dodatky/d-panik.md:55 klas:F -->
+### T-D-062 · tablycya · рядок 55
+
+**Книга каже, дослівно:**
+
+> | `0x01` | `GPIO5` |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-063 sha:681a141a src:dodatky/d-panik.md:56 klas:F -->
+### T-D-063 · tablycya · рядок 56
+
+**Книга каже, дослівно:**
+
+> | `0x02` | `GPIO15` (MTDO) |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-064 sha:932a0e72 src:dodatky/d-panik.md:57 klas:F -->
+### T-D-064 · tablycya · рядок 57
+
+**Книга каже, дослівно:**
+
+> | `0x04` | `GPIO4` |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-065 sha:ad51eef3 src:dodatky/d-panik.md:58 klas:F -->
+### T-D-065 · tablycya · рядок 58
+
+**Книга каже, дослівно:**
+
+> | `0x08` | `GPIO2` |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-066 sha:64f2d662 src:dodatky/d-panik.md:59 klas:F -->
+### T-D-066 · tablycya · рядок 59
+
+**Книга каже, дослівно:**
+
+> | `0x10` | `GPIO0` |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-067 sha:4456ba75 src:dodatky/d-panik.md:60 klas:A -->
+### T-D-067 · tablycya · рядок 60
+
+**Книга каже, дослівно:**
+
+> | `0x20` | `GPIO12` (MTDI) |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > choice BOOTLOADER_VDDSDIO_BOOST
+  >     bool "VDDSDIO LDO voltage"
+  >     default BOOTLOADER_VDDSDIO_BOOST_1_9V
+  >     depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED
+  >     help
+  >         If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse
+  >         or MTDI bootstrapping pin), bootloader will change LDO settings to
+  >         output 1.9V instead. This helps prevent flash chip from browning out
+  >         during flash programming operations.
+  > 
+  >         This option has no effect if VDDSDIO is set to 3.3V, or if the internal
+  >         VDDSDIO regulator is disabled via eFuse.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
+З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.
+- **Прохід:** pass-06-komandy-strapping
+
+---
+
+<!-- fc id:T-D-068 sha:b26aad81 src:dodatky/d-panik.md:62 klas:F -->
+### T-D-068 · proza · рядок 62
+
+**Книга каже, дослівно:**
+
+> Звідси читаються два найчастіші значення:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-069 sha:91d5ab98 src:dodatky/d-panik.md:64 klas:F -->
+### T-D-069 · proza · рядок 64
+
+**Книга каже, дослівно:**
+
+> `boot:0x13` = `0x01` + `0x02` + `0x10` — `GPIO5`, `GPIO15` і `GPIO0` високі, решта низькі.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-070 sha:b8b5cfd0 src:dodatky/d-panik.md:67 klas:F -->
+### T-D-070 · proza · рядок 67
+
+**Книга каже, дослівно:**
+
+> `boot:0x3` = `0x01` + `0x02` — те саме, але **`GPIO0` низький**.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-071 sha:bbfc62c6 src:dodatky/d-panik.md:71 klas:F -->
+### T-D-071 · proza · рядок 71
+
+**Книга каже, дослівно:**
+
+> Це перетворює здогадки на вимірювання.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-072 sha:fcc6bd37 src:dodatky/d-panik.md:71 klas:F -->
+### T-D-072 · proza · рядок 71
+
+**Книга каже, дослівно:**
+
+> Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої (розділи 07, 16) — а перевірити це можна прямо з логу, не беручи осцилографа.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-073 sha:16e19586 src:dodatky/d-panik.md:75 klas:C -->
+### T-D-073 · proza · рядок 75
+
+**Книга каже, дослівно:**
+
+> Найцінніший біт — `0x20`.
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
+- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
+- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-D-074 sha:babcdf0b src:dodatky/d-panik.md:75 klas:F -->
+### T-D-074 · proza · рядок 75
+
+**Книга каже, дослівно:**
+
+> Якщо він виставлений, `GPIO12` при старті був високим, а отже флеш отримав 1.8 В замість 3.3 В.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-075 sha:7e109f92 src:dodatky/d-panik.md:75 klas:F -->
+### T-D-075 · proza · рядок 75
+
+**Книга каже, дослівно:**
+
+> На більшості модулів це і є причина мовчазної плати (розділ 07).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-076 sha:82e1a535 src:dodatky/d-panik.md:79 klas:F -->
+### T-D-076 · proza · рядок 79
+
+**Книга каже, дослівно:**
+
+> Другий за цінністю — `0x04`.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-077 sha:f52ac6ce src:dodatky/d-panik.md:79 klas:F -->
+### T-D-077 · proza · рядок 79
+
+**Книга каже, дослівно:**
+
+> `GPIO4` не керує режимом завантаження й у переліку strapping-пінів не значиться, але його рівень чип фіксує теж, і в масці він видимий.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-078 sha:75285290 src:dodatky/d-panik.md:79 klas:F -->
+### T-D-078 · proza · рядок 79
+
+**Книга каже, дослівно:**
+
+> Для діагностики це безкоштовний зайвий канал спостереження.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-079 sha:d39312ec src:dodatky/d-panik.md:87 klas:A -->
+### T-D-079 · kod · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -921,8 +1237,8 @@
 
 ---
 
-<!-- fc id:T-D-059 sha:490ee98b src:dodatky/d-panik.md:48 klas:A -->
-### T-D-059 · kod-ryadok · рядок 48
+<!-- fc id:T-D-080 sha:490ee98b src:dodatky/d-panik.md:88 klas:A -->
+### T-D-080 · kod-ryadok · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -957,8 +1273,8 @@
 
 ---
 
-<!-- fc id:T-D-060 sha:825633b5 src:dodatky/d-panik.md:63 klas:F -->
-### T-D-060 · proza · рядок 63
+<!-- fc id:T-D-081 sha:825633b5 src:dodatky/d-panik.md:103 klas:F -->
+### T-D-081 · proza · рядок 103
 
 **Книга каже, дослівно:**
 
@@ -970,8 +1286,8 @@
 
 ---
 
-<!-- fc id:T-D-061 sha:0ebdcddf src:dodatky/d-panik.md:67 klas:F -->
-### T-D-061 · proza · рядок 67
+<!-- fc id:T-D-082 sha:0ebdcddf src:dodatky/d-panik.md:107 klas:F -->
+### T-D-082 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -983,8 +1299,8 @@
 
 ---
 
-<!-- fc id:T-D-062 sha:3d92627f src:dodatky/d-panik.md:67 klas:F -->
-### T-D-062 · proza · рядок 67
+<!-- fc id:T-D-083 sha:3d92627f src:dodatky/d-panik.md:107 klas:F -->
+### T-D-083 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -996,8 +1312,8 @@
 
 ---
 
-<!-- fc id:T-D-063 sha:fbdc8285 src:dodatky/d-panik.md:72 klas:F -->
-### T-D-063 · tablycya-shapka · рядок 72
+<!-- fc id:T-D-084 sha:fbdc8285 src:dodatky/d-panik.md:112 klas:F -->
+### T-D-084 · tablycya-shapka · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -1009,8 +1325,8 @@
 
 ---
 
-<!-- fc id:T-D-064 sha:fc9c4e50 src:dodatky/d-panik.md:73 klas:F -->
-### T-D-064 · komirka · рядок 73
+<!-- fc id:T-D-085 sha:fc9c4e50 src:dodatky/d-panik.md:113 klas:F -->
+### T-D-085 · komirka · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -1022,8 +1338,8 @@
 
 ---
 
-<!-- fc id:T-D-065 sha:d2308cd8 src:dodatky/d-panik.md:73 klas:F -->
-### T-D-065 · komirka · рядок 73
+<!-- fc id:T-D-086 sha:d2308cd8 src:dodatky/d-panik.md:113 klas:F -->
+### T-D-086 · komirka · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -1035,8 +1351,8 @@
 
 ---
 
-<!-- fc id:T-D-066 sha:0164e3bb src:dodatky/d-panik.md:74 klas:F -->
-### T-D-066 · komirka · рядок 74
+<!-- fc id:T-D-087 sha:0164e3bb src:dodatky/d-panik.md:114 klas:F -->
+### T-D-087 · komirka · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -1048,8 +1364,8 @@
 
 ---
 
-<!-- fc id:T-D-067 sha:2d07f5b7 src:dodatky/d-panik.md:74 klas:F -->
-### T-D-067 · komirka · рядок 74
+<!-- fc id:T-D-088 sha:2d07f5b7 src:dodatky/d-panik.md:114 klas:F -->
+### T-D-088 · komirka · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -1061,8 +1377,8 @@
 
 ---
 
-<!-- fc id:T-D-068 sha:2b9cc080 src:dodatky/d-panik.md:75 klas:F -->
-### T-D-068 · komirka · рядок 75
+<!-- fc id:T-D-089 sha:2b9cc080 src:dodatky/d-panik.md:115 klas:F -->
+### T-D-089 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -1074,8 +1390,8 @@
 
 ---
 
-<!-- fc id:T-D-069 sha:4d44560e src:dodatky/d-panik.md:75 klas:F -->
-### T-D-069 · komirka · рядок 75
+<!-- fc id:T-D-090 sha:4d44560e src:dodatky/d-panik.md:115 klas:F -->
+### T-D-090 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -1087,8 +1403,8 @@
 
 ---
 
-<!-- fc id:T-D-070 sha:47044db6 src:dodatky/d-panik.md:76 klas:F -->
-### T-D-070 · komirka · рядок 76
+<!-- fc id:T-D-091 sha:47044db6 src:dodatky/d-panik.md:116 klas:F -->
+### T-D-091 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -1100,8 +1416,8 @@
 
 ---
 
-<!-- fc id:T-D-071 sha:6a21db9c src:dodatky/d-panik.md:76 klas:F -->
-### T-D-071 · komirka · рядок 76
+<!-- fc id:T-D-092 sha:6a21db9c src:dodatky/d-panik.md:116 klas:F -->
+### T-D-092 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -1113,8 +1429,8 @@
 
 ---
 
-<!-- fc id:T-D-072 sha:e688bcbc src:dodatky/d-panik.md:77 klas:F -->
-### T-D-072 · komirka · рядок 77
+<!-- fc id:T-D-093 sha:e688bcbc src:dodatky/d-panik.md:117 klas:F -->
+### T-D-093 · komirka · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -1126,8 +1442,8 @@
 
 ---
 
-<!-- fc id:T-D-073 sha:a25a5d46 src:dodatky/d-panik.md:77 klas:F -->
-### T-D-073 · komirka · рядок 77
+<!-- fc id:T-D-094 sha:a25a5d46 src:dodatky/d-panik.md:117 klas:F -->
+### T-D-094 · komirka · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -1139,8 +1455,8 @@
 
 ---
 
-<!-- fc id:T-D-074 sha:e71a4e33 src:dodatky/d-panik.md:78 klas:F -->
-### T-D-074 · komirka · рядок 78
+<!-- fc id:T-D-095 sha:e71a4e33 src:dodatky/d-panik.md:118 klas:F -->
+### T-D-095 · komirka · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -1152,8 +1468,8 @@
 
 ---
 
-<!-- fc id:T-D-075 sha:ea436193 src:dodatky/d-panik.md:78 klas:F -->
-### T-D-075 · komirka · рядок 78
+<!-- fc id:T-D-096 sha:ea436193 src:dodatky/d-panik.md:118 klas:F -->
+### T-D-096 · komirka · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -1165,8 +1481,8 @@
 
 ---
 
-<!-- fc id:T-D-076 sha:d02987b0 src:dodatky/d-panik.md:79 klas:F -->
-### T-D-076 · komirka · рядок 79
+<!-- fc id:T-D-097 sha:d02987b0 src:dodatky/d-panik.md:119 klas:F -->
+### T-D-097 · komirka · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -1178,8 +1494,8 @@
 
 ---
 
-<!-- fc id:T-D-077 sha:e76a8e56 src:dodatky/d-panik.md:79 klas:F -->
-### T-D-077 · komirka · рядок 79
+<!-- fc id:T-D-098 sha:e76a8e56 src:dodatky/d-panik.md:119 klas:F -->
+### T-D-098 · komirka · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -1191,8 +1507,8 @@
 
 ---
 
-<!-- fc id:T-D-078 sha:ea9dc162 src:dodatky/d-panik.md:84 klas:F -->
-### T-D-078 · tablycya-shapka · рядок 84
+<!-- fc id:T-D-099 sha:ea9dc162 src:dodatky/d-panik.md:124 klas:F -->
+### T-D-099 · tablycya-shapka · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -1204,8 +1520,8 @@
 
 ---
 
-<!-- fc id:T-D-079 sha:3f7f05f2 src:dodatky/d-panik.md:85 klas:F -->
-### T-D-079 · komirka · рядок 85
+<!-- fc id:T-D-100 sha:3f7f05f2 src:dodatky/d-panik.md:125 klas:F -->
+### T-D-100 · komirka · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -1217,8 +1533,8 @@
 
 ---
 
-<!-- fc id:T-D-080 sha:e1369196 src:dodatky/d-panik.md:85 klas:F -->
-### T-D-080 · komirka · рядок 85
+<!-- fc id:T-D-101 sha:e1369196 src:dodatky/d-panik.md:125 klas:F -->
+### T-D-101 · komirka · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -1230,8 +1546,8 @@
 
 ---
 
-<!-- fc id:T-D-081 sha:8bc4f39c src:dodatky/d-panik.md:86 klas:F -->
-### T-D-081 · komirka · рядок 86
+<!-- fc id:T-D-102 sha:8bc4f39c src:dodatky/d-panik.md:126 klas:F -->
+### T-D-102 · komirka · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -1243,8 +1559,8 @@
 
 ---
 
-<!-- fc id:T-D-082 sha:28cc86f2 src:dodatky/d-panik.md:86 klas:F -->
-### T-D-082 · komirka · рядок 86
+<!-- fc id:T-D-103 sha:28cc86f2 src:dodatky/d-panik.md:126 klas:F -->
+### T-D-103 · komirka · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -1256,8 +1572,8 @@
 
 ---
 
-<!-- fc id:T-D-083 sha:65e5b66a src:dodatky/d-panik.md:87 klas:F -->
-### T-D-083 · komirka · рядок 87
+<!-- fc id:T-D-104 sha:65e5b66a src:dodatky/d-panik.md:127 klas:F -->
+### T-D-104 · komirka · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -1269,8 +1585,8 @@
 
 ---
 
-<!-- fc id:T-D-084 sha:89d4b0ed src:dodatky/d-panik.md:87 klas:F -->
-### T-D-084 · komirka · рядок 87
+<!-- fc id:T-D-105 sha:89d4b0ed src:dodatky/d-panik.md:127 klas:F -->
+### T-D-105 · komirka · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -1282,8 +1598,8 @@
 
 ---
 
-<!-- fc id:T-D-085 sha:0e5b84a2 src:dodatky/d-panik.md:88 klas:F -->
-### T-D-085 · komirka · рядок 88
+<!-- fc id:T-D-106 sha:0e5b84a2 src:dodatky/d-panik.md:128 klas:F -->
+### T-D-106 · komirka · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -1295,8 +1611,8 @@
 
 ---
 
-<!-- fc id:T-D-086 sha:b8918b59 src:dodatky/d-panik.md:88 klas:F -->
-### T-D-086 · komirka · рядок 88
+<!-- fc id:T-D-107 sha:b8918b59 src:dodatky/d-panik.md:128 klas:F -->
+### T-D-107 · komirka · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -1308,8 +1624,8 @@
 
 ---
 
-<!-- fc id:T-D-087 sha:c4d149ff src:dodatky/d-panik.md:89 klas:F -->
-### T-D-087 · komirka · рядок 89
+<!-- fc id:T-D-108 sha:c4d149ff src:dodatky/d-panik.md:129 klas:F -->
+### T-D-108 · komirka · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -1321,8 +1637,8 @@
 
 ---
 
-<!-- fc id:T-D-088 sha:46508737 src:dodatky/d-panik.md:89 klas:F -->
-### T-D-088 · komirka · рядок 89
+<!-- fc id:T-D-109 sha:46508737 src:dodatky/d-panik.md:129 klas:F -->
+### T-D-109 · komirka · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -1334,8 +1650,8 @@
 
 ---
 
-<!-- fc id:T-D-089 sha:d96111a7 src:dodatky/d-panik.md:90 klas:F -->
-### T-D-089 · komirka · рядок 90
+<!-- fc id:T-D-110 sha:d96111a7 src:dodatky/d-panik.md:130 klas:F -->
+### T-D-110 · komirka · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -1347,8 +1663,8 @@
 
 ---
 
-<!-- fc id:T-D-090 sha:439a9b98 src:dodatky/d-panik.md:90 klas:F -->
-### T-D-090 · komirka · рядок 90
+<!-- fc id:T-D-111 sha:439a9b98 src:dodatky/d-panik.md:130 klas:F -->
+### T-D-111 · komirka · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -1360,8 +1676,8 @@
 
 ---
 
-<!-- fc id:T-D-091 sha:7c359228 src:dodatky/d-panik.md:91 klas:F -->
-### T-D-091 · komirka · рядок 91
+<!-- fc id:T-D-112 sha:7c359228 src:dodatky/d-panik.md:131 klas:F -->
+### T-D-112 · komirka · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -1373,8 +1689,8 @@
 
 ---
 
-<!-- fc id:T-D-092 sha:4c606b3e src:dodatky/d-panik.md:91 klas:F -->
-### T-D-092 · komirka · рядок 91
+<!-- fc id:T-D-113 sha:4c606b3e src:dodatky/d-panik.md:131 klas:F -->
+### T-D-113 · komirka · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -1386,8 +1702,8 @@
 
 ---
 
-<!-- fc id:T-D-093 sha:8712f714 src:dodatky/d-panik.md:92 klas:F -->
-### T-D-093 · komirka · рядок 92
+<!-- fc id:T-D-114 sha:8712f714 src:dodatky/d-panik.md:132 klas:F -->
+### T-D-114 · komirka · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -1399,8 +1715,8 @@
 
 ---
 
-<!-- fc id:T-D-094 sha:4e40193e src:dodatky/d-panik.md:92 klas:A -->
-### T-D-094 · komirka · рядок 92
+<!-- fc id:T-D-115 sha:4e40193e src:dodatky/d-panik.md:132 klas:A -->
+### T-D-115 · komirka · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -1422,8 +1738,8 @@
 
 ---
 
-<!-- fc id:T-D-095 sha:a66ac160 src:dodatky/d-panik.md:97 klas:F -->
-### T-D-095 · tablycya · рядок 97
+<!-- fc id:T-D-116 sha:a66ac160 src:dodatky/d-panik.md:137 klas:F -->
+### T-D-116 · tablycya · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -1435,8 +1751,8 @@
 
 ---
 
-<!-- fc id:T-D-096 sha:9e0b8e4a src:dodatky/d-panik.md:99 klas:F -->
-### T-D-096 · tablycya · рядок 99
+<!-- fc id:T-D-117 sha:9e0b8e4a src:dodatky/d-panik.md:139 klas:F -->
+### T-D-117 · tablycya · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -1448,8 +1764,8 @@
 
 ---
 
-<!-- fc id:T-D-097 sha:f82d7189 src:dodatky/d-panik.md:100 klas:F -->
-### T-D-097 · tablycya · рядок 100
+<!-- fc id:T-D-118 sha:f82d7189 src:dodatky/d-panik.md:140 klas:F -->
+### T-D-118 · tablycya · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -1461,8 +1777,8 @@
 
 ---
 
-<!-- fc id:T-D-098 sha:74974165 src:dodatky/d-panik.md:101 klas:F -->
-### T-D-098 · tablycya · рядок 101
+<!-- fc id:T-D-119 sha:74974165 src:dodatky/d-panik.md:141 klas:F -->
+### T-D-119 · tablycya · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1474,8 +1790,8 @@
 
 ---
 
-<!-- fc id:T-D-099 sha:b89ae2bf src:dodatky/d-panik.md:102 klas:F -->
-### T-D-099 · tablycya · рядок 102
+<!-- fc id:T-D-120 sha:b89ae2bf src:dodatky/d-panik.md:142 klas:F -->
+### T-D-120 · tablycya · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -1487,8 +1803,8 @@
 
 ---
 
-<!-- fc id:T-D-100 sha:6ef4b75c src:dodatky/d-panik.md:105 klas:F -->
-### T-D-100 · proza · рядок 105
+<!-- fc id:T-D-121 sha:6ef4b75c src:dodatky/d-panik.md:145 klas:F -->
+### T-D-121 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -1500,8 +1816,8 @@
 
 ---
 
-<!-- fc id:T-D-101 sha:f710df6f src:dodatky/d-panik.md:107 klas:C -->
-### T-D-101 · proza · рядок 107
+<!-- fc id:T-D-122 sha:f710df6f src:dodatky/d-panik.md:147 klas:C -->
+### T-D-122 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -1517,8 +1833,8 @@
 
 ---
 
-<!-- fc id:T-D-102 sha:4c0a3cc5 src:dodatky/d-panik.md:107 klas:F -->
-### T-D-102 · proza · рядок 107
+<!-- fc id:T-D-123 sha:4c0a3cc5 src:dodatky/d-panik.md:147 klas:F -->
+### T-D-123 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -1530,8 +1846,8 @@
 
 ---
 
-<!-- fc id:T-D-103 sha:7ff566f8 src:dodatky/d-panik.md:110 klas:F -->
-### T-D-103 · proza · рядок 110
+<!-- fc id:T-D-124 sha:7ff566f8 src:dodatky/d-panik.md:150 klas:F -->
+### T-D-124 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -1543,8 +1859,8 @@
 
 ---
 
-<!-- fc id:T-D-104 sha:d09dfd9d src:dodatky/d-panik.md:116 klas:F -->
-### T-D-104 · proza · рядок 116
+<!-- fc id:T-D-125 sha:d09dfd9d src:dodatky/d-panik.md:156 klas:F -->
+### T-D-125 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1556,8 +1872,8 @@
 
 ---
 
-<!-- fc id:T-D-105 sha:989bdd9f src:dodatky/d-panik.md:118 klas:F -->
-### T-D-105 · kod · рядок 118
+<!-- fc id:T-D-126 sha:989bdd9f src:dodatky/d-panik.md:158 klas:F -->
+### T-D-126 · kod · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -1574,8 +1890,8 @@
 
 ---
 
-<!-- fc id:T-D-106 sha:a1afa6b3 src:dodatky/d-panik.md:120 klas:F -->
-### T-D-106 · kod-ryadok · рядок 120
+<!-- fc id:T-D-127 sha:a1afa6b3 src:dodatky/d-panik.md:160 klas:F -->
+### T-D-127 · kod-ryadok · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1587,8 +1903,8 @@
 
 ---
 
-<!-- fc id:T-D-107 sha:957bad5d src:dodatky/d-panik.md:125 klas:F -->
-### T-D-107 · proza · рядок 125
+<!-- fc id:T-D-128 sha:957bad5d src:dodatky/d-panik.md:165 klas:F -->
+### T-D-128 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1600,8 +1916,8 @@
 
 ---
 
-<!-- fc id:T-D-108 sha:12db62c5 src:dodatky/d-panik.md:125 klas:F -->
-### T-D-108 · proza · рядок 125
+<!-- fc id:T-D-129 sha:12db62c5 src:dodatky/d-panik.md:165 klas:F -->
+### T-D-129 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1613,8 +1929,8 @@
 
 ---
 
-<!-- fc id:T-D-109 sha:77e4f2d7 src:dodatky/d-panik.md:128 klas:F -->
-### T-D-109 · proza · рядок 128
+<!-- fc id:T-D-130 sha:77e4f2d7 src:dodatky/d-panik.md:168 klas:F -->
+### T-D-130 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -1626,8 +1942,8 @@
 
 ---
 
-<!-- fc id:T-D-110 sha:113645cd src:dodatky/d-panik.md:130 klas:F -->
-### T-D-110 · kod · рядок 130
+<!-- fc id:T-D-131 sha:113645cd src:dodatky/d-panik.md:170 klas:F -->
+### T-D-131 · kod · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1641,8 +1957,8 @@
 
 ---
 
-<!-- fc id:T-D-111 sha:61ffbc10 src:dodatky/d-panik.md:134 klas:F -->
-### T-D-111 · proza · рядок 134
+<!-- fc id:T-D-132 sha:61ffbc10 src:dodatky/d-panik.md:174 klas:F -->
+### T-D-132 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1654,8 +1970,8 @@
 
 ---
 
-<!-- fc id:T-D-112 sha:ef04690f src:dodatky/d-panik.md:139 klas:F -->
-### T-D-112 · tablycya · рядок 139
+<!-- fc id:T-D-133 sha:ef04690f src:dodatky/d-panik.md:179 klas:F -->
+### T-D-133 · tablycya · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1667,8 +1983,8 @@
 
 ---
 
-<!-- fc id:T-D-113 sha:8f5f38c0 src:dodatky/d-panik.md:141 klas:F -->
-### T-D-113 · tablycya · рядок 141
+<!-- fc id:T-D-134 sha:8f5f38c0 src:dodatky/d-panik.md:181 klas:F -->
+### T-D-134 · tablycya · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -1680,8 +1996,8 @@
 
 ---
 
-<!-- fc id:T-D-114 sha:de0b73f8 src:dodatky/d-panik.md:142 klas:F -->
-### T-D-114 · tablycya · рядок 142
+<!-- fc id:T-D-135 sha:de0b73f8 src:dodatky/d-panik.md:182 klas:F -->
+### T-D-135 · tablycya · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -1693,8 +2009,8 @@
 
 ---
 
-<!-- fc id:T-D-115 sha:c629c9be src:dodatky/d-panik.md:143 klas:F -->
-### T-D-115 · tablycya · рядок 143
+<!-- fc id:T-D-136 sha:c629c9be src:dodatky/d-panik.md:183 klas:F -->
+### T-D-136 · tablycya · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1706,8 +2022,8 @@
 
 ---
 
-<!-- fc id:T-D-116 sha:69aa2c68 src:dodatky/d-panik.md:144 klas:F -->
-### T-D-116 · tablycya · рядок 144
+<!-- fc id:T-D-137 sha:69aa2c68 src:dodatky/d-panik.md:184 klas:F -->
+### T-D-137 · tablycya · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1719,8 +2035,8 @@
 
 ---
 
-<!-- fc id:T-D-117 sha:4dc00872 src:dodatky/d-panik.md:145 klas:A -->
-### T-D-117 · tablycya · рядок 145
+<!-- fc id:T-D-138 sha:4dc00872 src:dodatky/d-panik.md:185 klas:A -->
+### T-D-138 · tablycya · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -1748,8 +2064,8 @@
 
 ---
 
-<!-- fc id:T-D-118 sha:760e202b src:dodatky/d-panik.md:147 klas:A -->
-### T-D-118 · proza · рядок 147
+<!-- fc id:T-D-139 sha:760e202b src:dodatky/d-panik.md:187 klas:A -->
+### T-D-139 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1777,8 +2093,8 @@
 
 ---
 
-<!-- fc id:T-D-119 sha:cbdc8d7f src:dodatky/d-panik.md:152 klas:F -->
-### T-D-119 · proza · рядок 152
+<!-- fc id:T-D-140 sha:cbdc8d7f src:dodatky/d-panik.md:192 klas:F -->
+### T-D-140 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1790,8 +2106,8 @@
 
 ---
 
-<!-- fc id:T-D-120 sha:61db3e19 src:dodatky/d-panik.md:152 klas:F -->
-### T-D-120 · proza · рядок 152
+<!-- fc id:T-D-141 sha:61db3e19 src:dodatky/d-panik.md:192 klas:F -->
+### T-D-141 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1803,8 +2119,8 @@
 
 ---
 
-<!-- fc id:T-D-121 sha:8d7da41f src:dodatky/d-panik.md:152 klas:F -->
-### T-D-121 · proza · рядок 152
+<!-- fc id:T-D-142 sha:8d7da41f src:dodatky/d-panik.md:192 klas:F -->
+### T-D-142 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1816,8 +2132,8 @@
 
 ---
 
-<!-- fc id:T-D-122 sha:223bf487 src:dodatky/d-panik.md:152 klas:F -->
-### T-D-122 · proza · рядок 152
+<!-- fc id:T-D-143 sha:223bf487 src:dodatky/d-panik.md:192 klas:F -->
+### T-D-143 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1829,8 +2145,8 @@
 
 ---
 
-<!-- fc id:T-D-123 sha:6a7c80ec src:dodatky/d-panik.md:152 klas:F -->
-### T-D-123 · proza · рядок 152
+<!-- fc id:T-D-144 sha:6a7c80ec src:dodatky/d-panik.md:192 klas:F -->
+### T-D-144 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1842,8 +2158,8 @@
 
 ---
 
-<!-- fc id:T-D-124 sha:4304fde6 src:dodatky/d-panik.md:160 klas:F -->
-### T-D-124 · proza · рядок 160
+<!-- fc id:T-D-145 sha:4304fde6 src:dodatky/d-panik.md:200 klas:F -->
+### T-D-145 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1855,8 +2171,8 @@
 
 ---
 
-<!-- fc id:T-D-125 sha:91a1f9a6 src:dodatky/d-panik.md:160 klas:F -->
-### T-D-125 · proza · рядок 160
+<!-- fc id:T-D-146 sha:91a1f9a6 src:dodatky/d-panik.md:200 klas:F -->
+### T-D-146 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1868,8 +2184,8 @@
 
 ---
 
-<!-- fc id:T-D-126 sha:00df861d src:dodatky/d-panik.md:164 klas:F -->
-### T-D-126 · proza · рядок 164
+<!-- fc id:T-D-147 sha:00df861d src:dodatky/d-panik.md:204 klas:F -->
+### T-D-147 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1881,8 +2197,8 @@
 
 ---
 
-<!-- fc id:T-D-127 sha:9a6f1773 src:dodatky/d-panik.md:169 klas:F -->
-### T-D-127 · proza · рядок 169
+<!-- fc id:T-D-148 sha:9a6f1773 src:dodatky/d-panik.md:209 klas:F -->
+### T-D-148 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -1894,8 +2210,8 @@
 
 ---
 
-<!-- fc id:T-D-128 sha:c50282dd src:dodatky/d-panik.md:169 klas:F -->
-### T-D-128 · proza · рядок 169
+<!-- fc id:T-D-149 sha:c50282dd src:dodatky/d-panik.md:209 klas:F -->
+### T-D-149 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -1907,8 +2223,8 @@
 
 ---
 
-<!-- fc id:T-D-129 sha:71f2dcf5 src:dodatky/d-panik.md:172 klas:F -->
-### T-D-129 · proza · рядок 172
+<!-- fc id:T-D-150 sha:71f2dcf5 src:dodatky/d-panik.md:212 klas:F -->
+### T-D-150 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1920,8 +2236,8 @@
 
 ---
 
-<!-- fc id:T-D-130 sha:d8b5c935 src:dodatky/d-panik.md:172 klas:F -->
-### T-D-130 · proza · рядок 172
+<!-- fc id:T-D-151 sha:d8b5c935 src:dodatky/d-panik.md:212 klas:F -->
+### T-D-151 · proza · рядок 212
 
 **Книга каже, дослівно:**
 

@@ -230,14 +230,24 @@ def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
     порядок файлів у каталозі мовчки визначав би результат, і закриті
     пункти лишалися б у наряді назавжди.
     """
+    kandydaty = vsi_kandydaty(zapysy, h, txt)
+    if kandydaty:
+        return min(kandydaty, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
+    return None
+
+
+def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
+    """Усі докази, що взагалі підпадають під це твердження.
+
+    Потрібно окремо від вибору, щоб відрізнити доказ, перекритий
+    сильнішим, від доказу, який не зачепив нічого: перше — норма
+    (прохід закрив пункт наряду), друге — помилка у взірці.
+    """
     tochni = [z for z in zapysy if h in [str(x) for x in (z.get("sha") or [])]]
     if tochni:
-        return min(tochni, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
-    zbihy = [z for z in zapysy
-             if z.get("zbih") and re.search(z["zbih"], txt, re.S)]
-    if zbihy:
-        return min(zbihy, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
-    return None
+        return tochni
+    return [z for z in zapysy
+            if z.get("zbih") and re.search(z["zbih"], txt, re.S)]
 
 
 SHABLON_DOKAZU = """**Доказ**
@@ -275,6 +285,7 @@ def sketch() -> int:
     vsjogo = z_dokazom = 0
     vzhyti: set[str] = set()
     pokryttya: dict[str, list[str]] = {}
+    zachepleni: set[str] = set()
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
             odynyci = rozbyty(f.read_text(encoding="utf-8"))
@@ -292,7 +303,11 @@ def sketch() -> int:
             for k, (vyd, txt, ln) in enumerate(odynyci, 1):
                 ident = f"T-{pre}-{k:03d}"
                 h = sha(txt)
-                z = pidibraty(dokazy, h, txt)
+                kandydaty = vsi_kandydaty(dokazy, h, txt)
+                for k_z in kandydaty:
+                    zachepleni.add(k_z.get("nazva", "?"))
+                z = (min(kandydaty, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
+                     if kandydaty else None)
                 if z:
                     vzhyti.add(h)
                     z_dokazom += 1
@@ -314,15 +329,27 @@ def sketch() -> int:
         print("\nщо покрив кожен доказ:")
         for nazva, ids in sorted(pokryttya.items()):
             print(f"  {len(ids):>3}×  {nazva}\n        {', '.join(ids)}")
-    # Доказ, який нічого не покрив, — це або застаріле формулювання в
+    # Доказ, який нічого не зачепив, — це або застаріле формулювання в
     # книзі, або помилка у взірці. Мовчати про це не можна: реєстр почне
     # обіцяти звіреність, якої немає.
-    holosti = [z for z in dokazy
-               if not any(z.get("nazva") == n for n in pokryttya)]
+    #
+    # Інша річ — доказ, що зачепив твердження, але програв сильнішому.
+    # Це норма й навіть мета: слабший запис проходу 3 («джерело не
+    # дістається») перекритий класом A проходу 4 означає, що пункт
+    # наряду закрито. Такий випадок показуємо окремо й без тривоги.
+    holosti = [z for z in dokazy if z.get("nazva") not in zachepleni]
+    perekryti = [z for z in dokazy
+                 if z.get("nazva") in zachepleni
+                 and z.get("nazva") not in pokryttya]
     if holosti:
-        print(f"\n⚠ доказів, що нічого не покрили: {len(holosti)}")
+        print(f"\n⚠ доказів, що нічого не зачепили: {len(holosti)}")
         for z in holosti:
             print(f"    {z.get('nazva','?')}  ({z.get('_prokhid')})")
+    if perekryti:
+        print(f"\nперекрито сильнішим доказом: {len(perekryti)}")
+        for z in perekryti:
+            print(f"    {z.get('nazva','?')}  "
+                  f"({z.get('_prokhid')}, клас {z.get('klas','?')})")
     return 0
 
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k06-bootlog.md`
 
-Одиниць твердження: **43**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **45**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -500,8 +500,67 @@
 
 ---
 
-<!-- fc id:T-K06-027 sha:41a2b15a src:kartky/k06-bootlog.md:33 klas:F -->
-### T-K06-027 · proza · рядок 33
+<!-- fc id:T-K06-027 sha:859ae045 src:kartky/k06-bootlog.md:32 klas:A -->
+### T-K06-027 · proza · рядок 32
+
+**Книга каже, дослівно:**
+
+> [[classic]] Саме **число** після `boot:` — маска рівнів на strapping-пінах: `0x01`=`GPIO5`, `0x02`=`GPIO15`, `0x04`=`GPIO4`, `0x08`=`GPIO2`, `0x10`=`GPIO0`, `0x20`=`GPIO12`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
+  >  esp32h21="GPIO14", esp32h4="GPIO14"}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
+  >  esp32h4="GPIO13"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
+Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
+- **Прохід:** pass-08-strapping
+
+---
+
+<!-- fc id:T-K06-028 sha:cf09f67f src:kartky/k06-bootlog.md:32 klas:A -->
+### T-K06-028 · proza · рядок 32
+
+**Книга каже, дослівно:**
+
+> Отже `0x13` — норма, а **виставлений `0x20` означає `GPIO12` високий**: флеш отримав 1.8 В і плата мовчить (додаток D).
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as represented
+  > in the `GPIO_STRAP register <…/components/soc/{IDF_TARGET_PATH_NAME}/include/soc/gpio_reg.h>`__.
+  > 
+  > The individual bit values are as follows:
+  > 
+  > .. only:: esp32
+  > 
+  >    -  ``0x01`` - GPIO5
+  >    -  ``0x02`` - MTDO (GPIO15)
+  >    -  ``0x04`` - GPIO4
+  >    -  ``0x08`` - GPIO2
+  >    -  ``0x10`` - GPIO0
+  >    -  ``0x20`` - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення проходу, і найцінніше за всі вісім. Книга друкувала `boot:0x13` у кожному прикладі логу й пояснювала лише текст у дужках, ніби число службове. Насправді це прямий вимір: які рівні чип зафіксував на strapping-пінах у момент скидання.
+Практичний наслідок великий. Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої, і радить її знімати — методом здогадки. Тепер це читається з логу: виставлений біт `0x20` означає `GPIO12` високий, тобто флеш на 1.8 В і мовчазна плата. Перевірка коштує нуль і не потребує приладів.
+Арифметика сходиться на обох типових значеннях: `0x13` = 0x01+0x02+0x10 (GPIO5, GPIO15, GPIO0 високі) — норма; `0x3` = 0x01+0x02, тобто те саме без `GPIO0` — download mode.
+Додано розгорнуто в додаток D і стисло на картку К6.
+- **Прохід:** pass-08-strapping
+
+---
+
+<!-- fc id:T-K06-029 sha:41a2b15a src:kartky/k06-bootlog.md:39 klas:F -->
+### T-K06-029 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -513,8 +572,8 @@
 
 ---
 
-<!-- fc id:T-K06-028 sha:b25bdbfb src:kartky/k06-bootlog.md:33 klas:F -->
-### T-K06-028 · proza · рядок 33
+<!-- fc id:T-K06-030 sha:b25bdbfb src:kartky/k06-bootlog.md:39 klas:F -->
+### T-K06-030 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -526,8 +585,8 @@
 
 ---
 
-<!-- fc id:T-K06-029 sha:5bdf9b38 src:kartky/k06-bootlog.md:33 klas:F -->
-### T-K06-029 · proza · рядок 33
+<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:39 klas:F -->
+### T-K06-031 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -539,8 +598,8 @@
 
 ---
 
-<!-- fc id:T-K06-030 sha:0219c8b1 src:kartky/k06-bootlog.md:40 klas:F -->
-### T-K06-030 · kod · рядок 40
+<!-- fc id:T-K06-032 sha:0219c8b1 src:kartky/k06-bootlog.md:46 klas:F -->
+### T-K06-032 · kod · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -557,8 +616,8 @@
 
 ---
 
-<!-- fc id:T-K06-031 sha:f0278c3a src:kartky/k06-bootlog.md:47 klas:F -->
-### T-K06-031 · proza · рядок 47
+<!-- fc id:T-K06-033 sha:f0278c3a src:kartky/k06-bootlog.md:53 klas:F -->
+### T-K06-033 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -570,8 +629,8 @@
 
 ---
 
-<!-- fc id:T-K06-032 sha:e6a1f09c src:kartky/k06-bootlog.md:47 klas:F -->
-### T-K06-032 · proza · рядок 47
+<!-- fc id:T-K06-034 sha:e6a1f09c src:kartky/k06-bootlog.md:53 klas:F -->
+### T-K06-034 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -583,8 +642,8 @@
 
 ---
 
-<!-- fc id:T-K06-033 sha:0ebdcddf src:kartky/k06-bootlog.md:52 klas:F -->
-### T-K06-033 · proza · рядок 52
+<!-- fc id:T-K06-035 sha:0ebdcddf src:kartky/k06-bootlog.md:58 klas:F -->
+### T-K06-035 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -596,8 +655,8 @@
 
 ---
 
-<!-- fc id:T-K06-034 sha:f043d2b4 src:kartky/k06-bootlog.md:52 klas:F -->
-### T-K06-034 · proza · рядок 52
+<!-- fc id:T-K06-036 sha:f043d2b4 src:kartky/k06-bootlog.md:58 klas:F -->
+### T-K06-036 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -609,8 +668,8 @@
 
 ---
 
-<!-- fc id:T-K06-035 sha:f219b8f9 src:kartky/k06-bootlog.md:57 klas:F -->
-### T-K06-035 · tablycya · рядок 57
+<!-- fc id:T-K06-037 sha:f219b8f9 src:kartky/k06-bootlog.md:63 klas:F -->
+### T-K06-037 · tablycya · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -622,8 +681,8 @@
 
 ---
 
-<!-- fc id:T-K06-036 sha:b44c3a39 src:kartky/k06-bootlog.md:59 klas:F -->
-### T-K06-036 · tablycya · рядок 59
+<!-- fc id:T-K06-038 sha:b44c3a39 src:kartky/k06-bootlog.md:65 klas:F -->
+### T-K06-038 · tablycya · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -635,8 +694,8 @@
 
 ---
 
-<!-- fc id:T-K06-037 sha:e108d7f6 src:kartky/k06-bootlog.md:60 klas:F -->
-### T-K06-037 · tablycya · рядок 60
+<!-- fc id:T-K06-039 sha:e108d7f6 src:kartky/k06-bootlog.md:66 klas:F -->
+### T-K06-039 · tablycya · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -648,8 +707,8 @@
 
 ---
 
-<!-- fc id:T-K06-038 sha:dd7a6d62 src:kartky/k06-bootlog.md:61 klas:F -->
-### T-K06-038 · tablycya · рядок 61
+<!-- fc id:T-K06-040 sha:dd7a6d62 src:kartky/k06-bootlog.md:67 klas:F -->
+### T-K06-040 · tablycya · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -661,8 +720,8 @@
 
 ---
 
-<!-- fc id:T-K06-039 sha:36137769 src:kartky/k06-bootlog.md:62 klas:F -->
-### T-K06-039 · tablycya · рядок 62
+<!-- fc id:T-K06-041 sha:36137769 src:kartky/k06-bootlog.md:68 klas:F -->
+### T-K06-041 · tablycya · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -674,8 +733,8 @@
 
 ---
 
-<!-- fc id:T-K06-040 sha:165ae2a1 src:kartky/k06-bootlog.md:63 klas:F -->
-### T-K06-040 · tablycya · рядок 63
+<!-- fc id:T-K06-042 sha:165ae2a1 src:kartky/k06-bootlog.md:69 klas:F -->
+### T-K06-042 · tablycya · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -687,8 +746,8 @@
 
 ---
 
-<!-- fc id:T-K06-041 sha:8f7a2ab6 src:kartky/k06-bootlog.md:66 klas:F -->
-### T-K06-041 · proza · рядок 66
+<!-- fc id:T-K06-043 sha:8f7a2ab6 src:kartky/k06-bootlog.md:72 klas:F -->
+### T-K06-043 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -700,8 +759,8 @@
 
 ---
 
-<!-- fc id:T-K06-042 sha:ae375117 src:kartky/k06-bootlog.md:66 klas:F -->
-### T-K06-042 · proza · рядок 66
+<!-- fc id:T-K06-044 sha:ae375117 src:kartky/k06-bootlog.md:72 klas:F -->
+### T-K06-044 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -713,8 +772,8 @@
 
 ---
 
-<!-- fc id:T-K06-043 sha:e3061d40 src:kartky/k06-bootlog.md:70 klas:F -->
-### T-K06-043 · proza · рядок 70
+<!-- fc id:T-K06-045 sha:e3061d40 src:kartky/k06-bootlog.md:76 klas:F -->
+### T-K06-045 · proza · рядок 76
 
 **Книга каже, дослівно:**
 

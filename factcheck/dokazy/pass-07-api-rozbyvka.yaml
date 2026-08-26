@@ -109,7 +109,7 @@
     сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
 
 - nazva: Сила драйвера GPIO налаштовується, типова — середня
-  zbih: 'gpio_set_drive_capability|Сила драйвера налаштовується'
+  zbih: 'gpio_set_drive_capability|драйвер налаштований приблизно на 20 мА|силу драйвера'
   klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/gpio_types.h
   cytata: |

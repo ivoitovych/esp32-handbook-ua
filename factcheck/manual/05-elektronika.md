@@ -339,7 +339,7 @@
 
 ---
 
-<!-- fc id:T-05-024 sha:1ad464fd src:manual/05-elektronika.md:53 klas:C -->
+<!-- fc id:T-05-024 sha:1ad464fd src:manual/05-elektronika.md:53 klas:B -->
 ### T-05-024 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -348,11 +348,16 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
-- **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
-- **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/gpio_types.h
+- **Дослівно з джерела:**
+  > GPIO_DRIVE_CAP_2       = 2,    /*!< Pad drive capability: medium */
+  > GPIO_DRIVE_CAP_DEFAULT = 2,    /*!< Pad drive capability: medium */
+  > GPIO_DRIVE_CAP_3       = 3,    /*!< Pad drive capability: strongest     */
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Закриває **половину** твердження розділу 05: сила драйвера справді налаштовується, рівнів чотири, типовий — середній.
+Друга половина — конкретні 20 мА і 40 мА — у заголовках і документації ESP-IDF **відсутня**: це datasheet, і він лишається в наряді. Так і зафіксовано, замість того щоб видати наявне за повне.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
