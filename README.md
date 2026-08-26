@@ -35,7 +35,7 @@
 
 | Файл | Що це |
 |---|---|
-| [`release/esp32-dovidnyk.pdf`](release/esp32-dovidnyk.pdf) | **основна книга**, A5, 398 стор. |
+| [`release/esp32-dovidnyk.pdf`](release/esp32-dovidnyk.pdf) | **основна книга**, A5, 400 стор. |
 | [`release/esp32-kartky.pdf`](release/esp32-kartky.pdf) | картки К1–К15 під друк на A4 і ламінування |
 | [`release/esp32-proekty.pdf`](release/esp32-proekty.pdf) | проєкти 59–63 окремо |
 

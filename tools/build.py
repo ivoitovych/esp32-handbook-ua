@@ -163,7 +163,33 @@ def md_to_typst(src: Path) -> str:
     )
     if proc.returncode != 0:
         sys.exit(f"pandoc не впорався з {src}:\n{proc.stderr}")
-    return strip_table_centering(proc.stdout)
+    return povtoryty_shapku(strip_table_centering(proc.stdout))
+
+
+RE_TABLE_HEAD = re.compile(
+    r"(#table\(\n(?:  [a-z_]+:[^\n]*\n)+)(  \[.*\],\n)"
+)
+
+
+def povtoryty_shapku(typ: str) -> str:
+    """Загортає перший рядок таблиці в `table.header(…)`.
+
+    Typst повторює шапку на кожній сторінці лише тоді, коли вона позначена
+    як шапка. Pandoc такої позначки не ставить — і таблиця, що переїхала
+    через розрив сторінки, продовжується голими даними без назв колонок.
+    У довіднику, де таблиці читають вибірково, це робить продовження
+    нечитним: «кабель, міст, GPIO0» без колонки «що бачимо» не означає
+    нічого.
+
+    Спирається на форму виводу pandoc: комірки шапки завжди на одному
+    рядку, комірки решти рядків — кожна на своєму. Перевірено на всіх
+    таблицях книги; якщо pandoc колись змінить форму, перевірка нижче
+    просто перестане знаходити шапку, і таблиці лишаться як були.
+    """
+    return RE_TABLE_HEAD.sub(
+        lambda m: f"{m.group(1)}  table.header(\n  {m.group(2).strip()}\n  ),\n",
+        typ,
+    )
 
 
 def strip_table_centering(typ: str) -> str:
