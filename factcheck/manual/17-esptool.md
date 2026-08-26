@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/17-esptool.md`
 
-Одиниць твердження: **122**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **124**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -125,7 +125,7 @@
 
 ---
 
-<!-- fc id:T-17-010 sha:790431ab src:manual/17-esptool.md:20 klas:F -->
+<!-- fc id:T-17-010 sha:790431ab src:manual/17-esptool.md:20 klas:A -->
 ### T-17-010 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -134,11 +134,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-011 sha:332e0818 src:manual/17-esptool.md:26 klas:F -->
+<!-- fc id:T-17-011 sha:332e0818 src:manual/17-esptool.md:26 klas:A -->
 ### T-17-011 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -147,7 +167,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -164,7 +204,7 @@
 
 ---
 
-<!-- fc id:T-17-013 sha:e59d8c4e src:manual/17-esptool.md:30 klas:F -->
+<!-- fc id:T-17-013 sha:e59d8c4e src:manual/17-esptool.md:30 klas:A -->
 ### T-17-013 · komirka · рядок 30
 
 **Книга каже, дослівно:**
@@ -173,7 +213,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -190,7 +250,7 @@
 
 ---
 
-<!-- fc id:T-17-015 sha:f36c79a8 src:manual/17-esptool.md:31 klas:F -->
+<!-- fc id:T-17-015 sha:f36c79a8 src:manual/17-esptool.md:31 klas:A -->
 ### T-17-015 · komirka · рядок 31
 
 **Книга каже, дослівно:**
@@ -199,11 +259,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-016 sha:4fe690f3 src:manual/17-esptool.md:31 klas:F -->
+<!-- fc id:T-17-016 sha:4fe690f3 src:manual/17-esptool.md:31 klas:A -->
 ### T-17-016 · komirka · рядок 31
 
 **Книга каже, дослівно:**
@@ -212,16 +292,36 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-017 sha:5fa025ab src:manual/17-esptool.md:34 klas:F -->
+<!-- fc id:T-17-017 sha:c2641f27 src:manual/17-esptool.md:34 klas:F -->
 ### T-17-017 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
-> Переважна більшість інструкцій, статей і відповідей на форумах написана під v4.
+> Переважна більшість інструкцій, статей і відповідей на форумах написана під v4, і напрямки несиметричні.
 
 **Доказ**
 
@@ -229,12 +329,12 @@
 
 ---
 
-<!-- fc id:T-17-018 sha:d802caa6 src:manual/17-esptool.md:34 klas:F -->
-### T-17-018 · proza · рядок 34
+<!-- fc id:T-17-018 sha:5b950f2b src:manual/17-esptool.md:37 klas:F -->
+### T-17-018 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
-> Дослівно на v5 вони не працюють, і навпаки.
+> **Стара команда на новій версії поки що працює.** У v5 старі імена позначені як застарілі: виконуються з попередженням і будуть прибрані в наступному major-релізі.
 
 **Доказ**
 
@@ -242,21 +342,107 @@
 
 ---
 
-<!-- fc id:T-17-019 sha:41c53e1e src:manual/17-esptool.md:34 klas:F -->
-### T-17-019 · proza · рядок 34
+<!-- fc id:T-17-019 sha:2b706815 src:manual/17-esptool.md:37 klas:A -->
+### T-17-019 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
-> Помилка при цьому виглядає як «невідома команда», що збиває з пантелику: команда відома, просто пишеться інакше.
+> Тобто `write_flash` на v5 спрацює — і тим неприємніше буде, коли одного дня перестане.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-020 sha:8254cee9 src:manual/17-esptool.md:39 klas:F -->
-### T-17-020 · proza · рядок 39
+<!-- fc id:T-17-020 sha:424c39d1 src:manual/17-esptool.md:42 klas:A -->
+### T-17-020 · proza · рядок 42
+
+**Книга каже, дослівно:**
+
+> **Нова команда на старій версії не працює.** `write-flash` на v4 дає «невідома команда», і це збиває з пантелику: команда відома, просто пишеться інакше.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
+
+---
+
+<!-- fc id:T-17-021 sha:2058f23b src:manual/17-esptool.md:46 klas:A -->
+### T-17-021 · proza · рядок 46
+
+**Книга каже, дослівно:**
+
+> Перейменування торкнулося не лише команд, а й **опцій**: `--flash_size`, `--flash_mode`, `--flash_freq`, а також значень `--before` і `--after`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
+
+---
+
+<!-- fc id:T-17-022 sha:8254cee9 src:manual/17-esptool.md:49 klas:A -->
+### T-17-022 · proza · рядок 49
 
 **Книга каже, дослівно:**
 
@@ -264,12 +450,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-021 sha:9063d84c src:manual/17-esptool.md:43 klas:F -->
-### T-17-021 · proza · рядок 43
+<!-- fc id:T-17-023 sha:9063d84c src:manual/17-esptool.md:53 klas:F -->
+### T-17-023 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -281,8 +487,8 @@
 
 ---
 
-<!-- fc id:T-17-022 sha:a5e9385a src:manual/17-esptool.md:43 klas:F -->
-### T-17-022 · proza · рядок 43
+<!-- fc id:T-17-024 sha:a5e9385a src:manual/17-esptool.md:53 klas:F -->
+### T-17-024 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -294,8 +500,8 @@
 
 ---
 
-<!-- fc id:T-17-023 sha:5d432647 src:manual/17-esptool.md:43 klas:F -->
-### T-17-023 · proza · рядок 43
+<!-- fc id:T-17-025 sha:5d432647 src:manual/17-esptool.md:53 klas:F -->
+### T-17-025 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -307,8 +513,8 @@
 
 ---
 
-<!-- fc id:T-17-024 sha:8e12e7bb src:manual/17-esptool.md:43 klas:F -->
-### T-17-024 · proza · рядок 43
+<!-- fc id:T-17-026 sha:8e12e7bb src:manual/17-esptool.md:53 klas:A -->
+### T-17-026 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -316,12 +522,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-025 sha:85f599cb src:manual/17-esptool.md:52 klas:F -->
-### T-17-025 · kod · рядок 52
+<!-- fc id:T-17-027 sha:85f599cb src:manual/17-esptool.md:62 klas:F -->
+### T-17-027 · kod · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -335,8 +561,8 @@
 
 ---
 
-<!-- fc id:T-17-026 sha:32416a21 src:manual/17-esptool.md:53 klas:F -->
-### T-17-026 · kod-ryadok · рядок 53
+<!-- fc id:T-17-028 sha:32416a21 src:manual/17-esptool.md:63 klas:F -->
+### T-17-028 · kod-ryadok · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -348,8 +574,8 @@
 
 ---
 
-<!-- fc id:T-17-027 sha:286e1ec5 src:manual/17-esptool.md:56 klas:F -->
-### T-17-027 · proza · рядок 56
+<!-- fc id:T-17-029 sha:286e1ec5 src:manual/17-esptool.md:66 klas:F -->
+### T-17-029 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -361,8 +587,8 @@
 
 ---
 
-<!-- fc id:T-17-028 sha:5d3f09ae src:manual/17-esptool.md:56 klas:F -->
-### T-17-028 · proza · рядок 56
+<!-- fc id:T-17-030 sha:5d3f09ae src:manual/17-esptool.md:66 klas:F -->
+### T-17-030 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -374,8 +600,8 @@
 
 ---
 
-<!-- fc id:T-17-029 sha:e66c9553 src:manual/17-esptool.md:60 klas:F -->
-### T-17-029 · kod · рядок 60
+<!-- fc id:T-17-031 sha:e66c9553 src:manual/17-esptool.md:70 klas:F -->
+### T-17-031 · kod · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -389,8 +615,8 @@
 
 ---
 
-<!-- fc id:T-17-030 sha:4c5a16ee src:manual/17-esptool.md:61 klas:F -->
-### T-17-030 · kod-ryadok · рядок 61
+<!-- fc id:T-17-032 sha:4c5a16ee src:manual/17-esptool.md:71 klas:F -->
+### T-17-032 · kod-ryadok · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -402,8 +628,8 @@
 
 ---
 
-<!-- fc id:T-17-031 sha:337e3191 src:manual/17-esptool.md:64 klas:F -->
-### T-17-031 · proza · рядок 64
+<!-- fc id:T-17-033 sha:337e3191 src:manual/17-esptool.md:74 klas:F -->
+### T-17-033 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -415,8 +641,8 @@
 
 ---
 
-<!-- fc id:T-17-032 sha:50a21c79 src:manual/17-esptool.md:64 klas:F -->
-### T-17-032 · proza · рядок 64
+<!-- fc id:T-17-034 sha:50a21c79 src:manual/17-esptool.md:74 klas:F -->
+### T-17-034 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -428,8 +654,8 @@
 
 ---
 
-<!-- fc id:T-17-033 sha:3d4176e9 src:manual/17-esptool.md:64 klas:F -->
-### T-17-033 · proza · рядок 64
+<!-- fc id:T-17-035 sha:3d4176e9 src:manual/17-esptool.md:74 klas:F -->
+### T-17-035 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -441,8 +667,8 @@
 
 ---
 
-<!-- fc id:T-17-034 sha:43e4d49a src:manual/17-esptool.md:69 klas:F -->
-### T-17-034 · proza · рядок 69
+<!-- fc id:T-17-036 sha:43e4d49a src:manual/17-esptool.md:79 klas:F -->
+### T-17-036 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -454,8 +680,8 @@
 
 ---
 
-<!-- fc id:T-17-035 sha:724102a6 src:manual/17-esptool.md:69 klas:F -->
-### T-17-035 · proza · рядок 69
+<!-- fc id:T-17-037 sha:724102a6 src:manual/17-esptool.md:79 klas:F -->
+### T-17-037 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -467,8 +693,8 @@
 
 ---
 
-<!-- fc id:T-17-036 sha:a5d0e23b src:manual/17-esptool.md:69 klas:F -->
-### T-17-036 · proza · рядок 69
+<!-- fc id:T-17-038 sha:a5d0e23b src:manual/17-esptool.md:79 klas:F -->
+### T-17-038 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -480,8 +706,8 @@
 
 ---
 
-<!-- fc id:T-17-037 sha:c1db89f4 src:manual/17-esptool.md:78 klas:F -->
-### T-17-037 · proza · рядок 78
+<!-- fc id:T-17-039 sha:c1db89f4 src:manual/17-esptool.md:88 klas:F -->
+### T-17-039 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -493,8 +719,8 @@
 
 ---
 
-<!-- fc id:T-17-038 sha:8b4f4b75 src:manual/17-esptool.md:81 klas:F -->
-### T-17-038 · kod · рядок 81
+<!-- fc id:T-17-040 sha:8b4f4b75 src:manual/17-esptool.md:91 klas:A -->
+### T-17-040 · kod · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -504,12 +730,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > The read-flash command allows reading back the contents of flash. The arguments to the
+  > command are an address, a size, and a file path to output to. For example, to read a full
+  > 2MB of attached flash:
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin
+  > 
+  > Size can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in
+  > example can be replaced with ``2M``.
+  > 
+  > It is also possible to autodetect flash size by using ``ALL`` as size.
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-039 sha:213017c0 src:manual/17-esptool.md:82 klas:F -->
-### T-17-039 · kod-ryadok · рядок 82
+<!-- fc id:T-17-041 sha:213017c0 src:manual/17-esptool.md:92 klas:A -->
+### T-17-041 · kod-ryadok · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -517,12 +760,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > The read-flash command allows reading back the contents of flash. The arguments to the
+  > command are an address, a size, and a file path to output to. For example, to read a full
+  > 2MB of attached flash:
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin
+  > 
+  > Size can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in
+  > example can be replaced with ``2M``.
+  > 
+  > It is also possible to autodetect flash size by using ``ALL`` as size.
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-040 sha:1856248d src:manual/17-esptool.md:85 klas:F -->
-### T-17-040 · proza · рядок 85
+<!-- fc id:T-17-042 sha:1856248d src:manual/17-esptool.md:95 klas:A -->
+### T-17-042 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -530,12 +790,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > The read-flash command allows reading back the contents of flash. The arguments to the
+  > command are an address, a size, and a file path to output to. For example, to read a full
+  > 2MB of attached flash:
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin
+  > 
+  > Size can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in
+  > example can be replaced with ``2M``.
+  > 
+  > It is also possible to autodetect flash size by using ``ALL`` as size.
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-041 sha:dd810cb6 src:manual/17-esptool.md:85 klas:F -->
-### T-17-041 · proza · рядок 85
+<!-- fc id:T-17-043 sha:dd810cb6 src:manual/17-esptool.md:95 klas:F -->
+### T-17-043 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -547,8 +824,8 @@
 
 ---
 
-<!-- fc id:T-17-042 sha:a3ccf901 src:manual/17-esptool.md:89 klas:F -->
-### T-17-042 · proza · рядок 89
+<!-- fc id:T-17-044 sha:a3ccf901 src:manual/17-esptool.md:99 klas:F -->
+### T-17-044 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -560,8 +837,8 @@
 
 ---
 
-<!-- fc id:T-17-043 sha:1b2d4902 src:manual/17-esptool.md:89 klas:F -->
-### T-17-043 · proza · рядок 89
+<!-- fc id:T-17-045 sha:1b2d4902 src:manual/17-esptool.md:99 klas:F -->
+### T-17-045 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -573,8 +850,8 @@
 
 ---
 
-<!-- fc id:T-17-044 sha:4cbc54f8 src:manual/17-esptool.md:89 klas:F -->
-### T-17-044 · proza · рядок 89
+<!-- fc id:T-17-046 sha:4cbc54f8 src:manual/17-esptool.md:99 klas:F -->
+### T-17-046 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -586,8 +863,8 @@
 
 ---
 
-<!-- fc id:T-17-045 sha:eada110b src:manual/17-esptool.md:95 klas:F -->
-### T-17-045 · proza · рядок 95
+<!-- fc id:T-17-047 sha:eada110b src:manual/17-esptool.md:105 klas:F -->
+### T-17-047 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -599,8 +876,8 @@
 
 ---
 
-<!-- fc id:T-17-046 sha:0615bf62 src:manual/17-esptool.md:97 klas:F -->
-### T-17-046 · kod · рядок 97
+<!-- fc id:T-17-048 sha:0615bf62 src:manual/17-esptool.md:107 klas:F -->
+### T-17-048 · kod · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -614,8 +891,8 @@
 
 ---
 
-<!-- fc id:T-17-047 sha:fe1f802d src:manual/17-esptool.md:98 klas:F -->
-### T-17-047 · kod-ryadok · рядок 98
+<!-- fc id:T-17-049 sha:fe1f802d src:manual/17-esptool.md:108 klas:F -->
+### T-17-049 · kod-ryadok · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -627,8 +904,8 @@
 
 ---
 
-<!-- fc id:T-17-048 sha:b46fc5e5 src:manual/17-esptool.md:103 klas:F -->
-### T-17-048 · proza · рядок 103
+<!-- fc id:T-17-050 sha:b46fc5e5 src:manual/17-esptool.md:113 klas:F -->
+### T-17-050 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -640,8 +917,8 @@
 
 ---
 
-<!-- fc id:T-17-049 sha:911de04d src:manual/17-esptool.md:105 klas:F -->
-### T-17-049 · kod · рядок 105
+<!-- fc id:T-17-051 sha:911de04d src:manual/17-esptool.md:115 klas:A -->
+### T-17-051 · kod · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -654,12 +931,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-050 sha:bdd61138 src:manual/17-esptool.md:106 klas:F -->
-### T-17-050 · kod-ryadok · рядок 106
+<!-- fc id:T-17-052 sha:bdd61138 src:manual/17-esptool.md:116 klas:A -->
+### T-17-052 · kod-ryadok · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -667,12 +964,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-051 sha:add669dc src:manual/17-esptool.md:112 klas:A -->
-### T-17-051 · proza · рядок 112
+<!-- fc id:T-17-053 sha:add669dc src:manual/17-esptool.md:122 klas:A -->
+### T-17-053 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -699,8 +1016,8 @@
 
 ---
 
-<!-- fc id:T-17-052 sha:e548f18b src:manual/17-esptool.md:112 klas:F -->
-### T-17-052 · proza · рядок 112
+<!-- fc id:T-17-054 sha:e548f18b src:manual/17-esptool.md:122 klas:F -->
+### T-17-054 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -712,8 +1029,8 @@
 
 ---
 
-<!-- fc id:T-17-053 sha:782ec293 src:manual/17-esptool.md:117 klas:F -->
-### T-17-053 · proza · рядок 117
+<!-- fc id:T-17-055 sha:782ec293 src:manual/17-esptool.md:127 klas:F -->
+### T-17-055 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -725,8 +1042,8 @@
 
 ---
 
-<!-- fc id:T-17-054 sha:cb74d03e src:manual/17-esptool.md:117 klas:F -->
-### T-17-054 · proza · рядок 117
+<!-- fc id:T-17-056 sha:cb74d03e src:manual/17-esptool.md:127 klas:F -->
+### T-17-056 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -738,8 +1055,8 @@
 
 ---
 
-<!-- fc id:T-17-055 sha:4c1213b5 src:manual/17-esptool.md:119 klas:F -->
-### T-17-055 · proza · рядок 119
+<!-- fc id:T-17-057 sha:4c1213b5 src:manual/17-esptool.md:129 klas:F -->
+### T-17-057 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -751,8 +1068,8 @@
 
 ---
 
-<!-- fc id:T-17-056 sha:12ca7f51 src:manual/17-esptool.md:122 klas:F -->
-### T-17-056 · proza · рядок 122
+<!-- fc id:T-17-058 sha:12ca7f51 src:manual/17-esptool.md:132 klas:F -->
+### T-17-058 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -764,8 +1081,8 @@
 
 ---
 
-<!-- fc id:T-17-057 sha:2711187e src:manual/17-esptool.md:122 klas:F -->
-### T-17-057 · proza · рядок 122
+<!-- fc id:T-17-059 sha:2711187e src:manual/17-esptool.md:132 klas:F -->
+### T-17-059 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -777,8 +1094,8 @@
 
 ---
 
-<!-- fc id:T-17-058 sha:d5bda61e src:manual/17-esptool.md:122 klas:F -->
-### T-17-058 · proza · рядок 122
+<!-- fc id:T-17-060 sha:d5bda61e src:manual/17-esptool.md:132 klas:F -->
+### T-17-060 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -790,8 +1107,8 @@
 
 ---
 
-<!-- fc id:T-17-059 sha:c7be6edf src:manual/17-esptool.md:126 klas:F -->
-### T-17-059 · proza · рядок 126
+<!-- fc id:T-17-061 sha:c7be6edf src:manual/17-esptool.md:136 klas:F -->
+### T-17-061 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -803,8 +1120,8 @@
 
 ---
 
-<!-- fc id:T-17-060 sha:6cc1d835 src:manual/17-esptool.md:126 klas:F -->
-### T-17-060 · proza · рядок 126
+<!-- fc id:T-17-062 sha:6cc1d835 src:manual/17-esptool.md:136 klas:F -->
+### T-17-062 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -816,8 +1133,8 @@
 
 ---
 
-<!-- fc id:T-17-061 sha:1edaa56d src:manual/17-esptool.md:131 klas:F -->
-### T-17-061 · kod · рядок 131
+<!-- fc id:T-17-063 sha:1edaa56d src:manual/17-esptool.md:141 klas:F -->
+### T-17-063 · kod · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -831,8 +1148,8 @@
 
 ---
 
-<!-- fc id:T-17-062 sha:7a96df73 src:manual/17-esptool.md:132 klas:F -->
-### T-17-062 · kod-ryadok · рядок 132
+<!-- fc id:T-17-064 sha:7a96df73 src:manual/17-esptool.md:142 klas:F -->
+### T-17-064 · kod-ryadok · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -844,8 +1161,8 @@
 
 ---
 
-<!-- fc id:T-17-063 sha:4c597925 src:manual/17-esptool.md:136 klas:F -->
-### T-17-063 · proza · рядок 136
+<!-- fc id:T-17-065 sha:4c597925 src:manual/17-esptool.md:146 klas:F -->
+### T-17-065 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -857,8 +1174,8 @@
 
 ---
 
-<!-- fc id:T-17-064 sha:675172ea src:manual/17-esptool.md:136 klas:F -->
-### T-17-064 · proza · рядок 136
+<!-- fc id:T-17-066 sha:675172ea src:manual/17-esptool.md:146 klas:F -->
+### T-17-066 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -870,8 +1187,8 @@
 
 ---
 
-<!-- fc id:T-17-065 sha:02d4467f src:manual/17-esptool.md:136 klas:F -->
-### T-17-065 · proza · рядок 136
+<!-- fc id:T-17-067 sha:02d4467f src:manual/17-esptool.md:146 klas:F -->
+### T-17-067 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -883,8 +1200,8 @@
 
 ---
 
-<!-- fc id:T-17-066 sha:501abb75 src:manual/17-esptool.md:141 klas:F -->
-### T-17-066 · proza · рядок 141
+<!-- fc id:T-17-068 sha:501abb75 src:manual/17-esptool.md:151 klas:F -->
+### T-17-068 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -896,8 +1213,8 @@
 
 ---
 
-<!-- fc id:T-17-067 sha:2b455157 src:manual/17-esptool.md:144 klas:F -->
-### T-17-067 · proza · рядок 144
+<!-- fc id:T-17-069 sha:2b455157 src:manual/17-esptool.md:154 klas:F -->
+### T-17-069 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -909,8 +1226,8 @@
 
 ---
 
-<!-- fc id:T-17-068 sha:d9b8c3fc src:manual/17-esptool.md:148 klas:F -->
-### T-17-068 · proza · рядок 148
+<!-- fc id:T-17-070 sha:d9b8c3fc src:manual/17-esptool.md:158 klas:F -->
+### T-17-070 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -922,8 +1239,8 @@
 
 ---
 
-<!-- fc id:T-17-069 sha:72b6debe src:manual/17-esptool.md:148 klas:F -->
-### T-17-069 · proza · рядок 148
+<!-- fc id:T-17-071 sha:72b6debe src:manual/17-esptool.md:158 klas:A -->
+### T-17-071 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -931,12 +1248,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-070 sha:6361b41c src:manual/17-esptool.md:151 klas:F -->
-### T-17-070 · proza · рядок 151
+<!-- fc id:T-17-072 sha:6361b41c src:manual/17-esptool.md:161 klas:F -->
+### T-17-072 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -948,8 +1285,8 @@
 
 ---
 
-<!-- fc id:T-17-071 sha:5a1c829e src:manual/17-esptool.md:153 klas:F -->
-### T-17-071 · kod · рядок 153
+<!-- fc id:T-17-073 sha:5a1c829e src:manual/17-esptool.md:163 klas:F -->
+### T-17-073 · kod · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -963,8 +1300,8 @@
 
 ---
 
-<!-- fc id:T-17-072 sha:b3a989e0 src:manual/17-esptool.md:154 klas:F -->
-### T-17-072 · kod-ryadok · рядок 154
+<!-- fc id:T-17-074 sha:b3a989e0 src:manual/17-esptool.md:164 klas:F -->
+### T-17-074 · kod-ryadok · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -976,8 +1313,8 @@
 
 ---
 
-<!-- fc id:T-17-073 sha:31d5a3a2 src:manual/17-esptool.md:159 klas:F -->
-### T-17-073 · kod · рядок 159
+<!-- fc id:T-17-075 sha:31d5a3a2 src:manual/17-esptool.md:169 klas:F -->
+### T-17-075 · kod · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -991,8 +1328,8 @@
 
 ---
 
-<!-- fc id:T-17-074 sha:c93ce3ef src:manual/17-esptool.md:160 klas:F -->
-### T-17-074 · kod-ryadok · рядок 160
+<!-- fc id:T-17-076 sha:c93ce3ef src:manual/17-esptool.md:170 klas:F -->
+### T-17-076 · kod-ryadok · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1004,8 +1341,8 @@
 
 ---
 
-<!-- fc id:T-17-075 sha:61989c98 src:manual/17-esptool.md:163 klas:F -->
-### T-17-075 · proza · рядок 163
+<!-- fc id:T-17-077 sha:61989c98 src:manual/17-esptool.md:173 klas:F -->
+### T-17-077 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1017,8 +1354,8 @@
 
 ---
 
-<!-- fc id:T-17-076 sha:6337a912 src:manual/17-esptool.md:163 klas:F -->
-### T-17-076 · proza · рядок 163
+<!-- fc id:T-17-078 sha:6337a912 src:manual/17-esptool.md:173 klas:F -->
+### T-17-078 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1030,8 +1367,8 @@
 
 ---
 
-<!-- fc id:T-17-077 sha:306c9a4d src:manual/17-esptool.md:163 klas:F -->
-### T-17-077 · proza · рядок 163
+<!-- fc id:T-17-079 sha:306c9a4d src:manual/17-esptool.md:173 klas:F -->
+### T-17-079 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1380,8 @@
 
 ---
 
-<!-- fc id:T-17-078 sha:3f578024 src:manual/17-esptool.md:169 klas:F -->
-### T-17-078 · proza · рядок 169
+<!-- fc id:T-17-080 sha:3f578024 src:manual/17-esptool.md:179 klas:F -->
+### T-17-080 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1056,8 +1393,8 @@
 
 ---
 
-<!-- fc id:T-17-079 sha:fc4482af src:manual/17-esptool.md:169 klas:F -->
-### T-17-079 · proza · рядок 169
+<!-- fc id:T-17-081 sha:fc4482af src:manual/17-esptool.md:179 klas:F -->
+### T-17-081 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1069,8 +1406,8 @@
 
 ---
 
-<!-- fc id:T-17-080 sha:4d50070b src:manual/17-esptool.md:173 klas:F -->
-### T-17-080 · kod · рядок 173
+<!-- fc id:T-17-082 sha:4d50070b src:manual/17-esptool.md:183 klas:F -->
+### T-17-082 · kod · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1087,8 +1424,8 @@
 
 ---
 
-<!-- fc id:T-17-081 sha:69fc8ec7 src:manual/17-esptool.md:174 klas:F -->
-### T-17-081 · kod-ryadok · рядок 174
+<!-- fc id:T-17-083 sha:69fc8ec7 src:manual/17-esptool.md:184 klas:F -->
+### T-17-083 · kod-ryadok · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1100,8 +1437,8 @@
 
 ---
 
-<!-- fc id:T-17-082 sha:23924ebe src:manual/17-esptool.md:180 klas:F -->
-### T-17-082 · proza · рядок 180
+<!-- fc id:T-17-084 sha:23924ebe src:manual/17-esptool.md:190 klas:F -->
+### T-17-084 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1113,8 +1450,8 @@
 
 ---
 
-<!-- fc id:T-17-083 sha:66ee792a src:manual/17-esptool.md:180 klas:F -->
-### T-17-083 · proza · рядок 180
+<!-- fc id:T-17-085 sha:66ee792a src:manual/17-esptool.md:190 klas:F -->
+### T-17-085 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1126,8 +1463,8 @@
 
 ---
 
-<!-- fc id:T-17-084 sha:a8ba7c8e src:manual/17-esptool.md:184 klas:F -->
-### T-17-084 · proza · рядок 184
+<!-- fc id:T-17-086 sha:a8ba7c8e src:manual/17-esptool.md:194 klas:F -->
+### T-17-086 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1139,8 +1476,8 @@
 
 ---
 
-<!-- fc id:T-17-085 sha:ba49e524 src:manual/17-esptool.md:187 klas:F -->
-### T-17-085 · kod · рядок 187
+<!-- fc id:T-17-087 sha:ba49e524 src:manual/17-esptool.md:197 klas:A -->
+### T-17-087 · kod · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1150,12 +1487,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-086 sha:f1947da9 src:manual/17-esptool.md:188 klas:F -->
-### T-17-086 · kod-ryadok · рядок 188
+<!-- fc id:T-17-088 sha:f1947da9 src:manual/17-esptool.md:198 klas:A -->
+### T-17-088 · kod-ryadok · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1163,12 +1520,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-17-087 sha:d53fd3ce src:manual/17-esptool.md:191 klas:F -->
-### T-17-087 · proza · рядок 191
+<!-- fc id:T-17-089 sha:d53fd3ce src:manual/17-esptool.md:201 klas:F -->
+### T-17-089 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1180,8 +1557,8 @@
 
 ---
 
-<!-- fc id:T-17-088 sha:a0822607 src:manual/17-esptool.md:191 klas:F -->
-### T-17-088 · proza · рядок 191
+<!-- fc id:T-17-090 sha:a0822607 src:manual/17-esptool.md:201 klas:F -->
+### T-17-090 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1193,8 +1570,8 @@
 
 ---
 
-<!-- fc id:T-17-089 sha:30d662b6 src:manual/17-esptool.md:197 klas:F -->
-### T-17-089 · proza · рядок 197
+<!-- fc id:T-17-091 sha:30d662b6 src:manual/17-esptool.md:207 klas:F -->
+### T-17-091 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1206,8 +1583,8 @@
 
 ---
 
-<!-- fc id:T-17-090 sha:046e97d7 src:manual/17-esptool.md:200 klas:F -->
-### T-17-090 · proza · рядок 200
+<!-- fc id:T-17-092 sha:046e97d7 src:manual/17-esptool.md:210 klas:F -->
+### T-17-092 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1219,8 +1596,8 @@
 
 ---
 
-<!-- fc id:T-17-091 sha:81eb3b69 src:manual/17-esptool.md:204 klas:F -->
-### T-17-091 · proza · рядок 204
+<!-- fc id:T-17-093 sha:81eb3b69 src:manual/17-esptool.md:214 klas:F -->
+### T-17-093 · proza · рядок 214
 
 **Книга каже, дослівно:**
 
@@ -1232,8 +1609,8 @@
 
 ---
 
-<!-- fc id:T-17-092 sha:c018ab70 src:manual/17-esptool.md:206 klas:F -->
-### T-17-092 · proza · рядок 206
+<!-- fc id:T-17-094 sha:c018ab70 src:manual/17-esptool.md:216 klas:F -->
+### T-17-094 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1245,8 +1622,8 @@
 
 ---
 
-<!-- fc id:T-17-093 sha:1070199a src:manual/17-esptool.md:206 klas:F -->
-### T-17-093 · proza · рядок 206
+<!-- fc id:T-17-095 sha:1070199a src:manual/17-esptool.md:216 klas:F -->
+### T-17-095 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1258,8 +1635,8 @@
 
 ---
 
-<!-- fc id:T-17-094 sha:7c5d9fa9 src:manual/17-esptool.md:209 klas:F -->
-### T-17-094 · proza · рядок 209
+<!-- fc id:T-17-096 sha:7c5d9fa9 src:manual/17-esptool.md:219 klas:F -->
+### T-17-096 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1271,8 +1648,8 @@
 
 ---
 
-<!-- fc id:T-17-095 sha:d0ad404c src:manual/17-esptool.md:211 klas:F -->
-### T-17-095 · proza · рядок 211
+<!-- fc id:T-17-097 sha:d0ad404c src:manual/17-esptool.md:221 klas:F -->
+### T-17-097 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1284,8 +1661,8 @@
 
 ---
 
-<!-- fc id:T-17-096 sha:cf4197d0 src:manual/17-esptool.md:211 klas:F -->
-### T-17-096 · proza · рядок 211
+<!-- fc id:T-17-098 sha:cf4197d0 src:manual/17-esptool.md:221 klas:F -->
+### T-17-098 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1297,8 +1674,8 @@
 
 ---
 
-<!-- fc id:T-17-097 sha:e7619250 src:manual/17-esptool.md:214 klas:F -->
-### T-17-097 · proza · рядок 214
+<!-- fc id:T-17-099 sha:e7619250 src:manual/17-esptool.md:224 klas:F -->
+### T-17-099 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1310,8 +1687,8 @@
 
 ---
 
-<!-- fc id:T-17-098 sha:c6ae817f src:manual/17-esptool.md:216 klas:F -->
-### T-17-098 · proza · рядок 216
+<!-- fc id:T-17-100 sha:c6ae817f src:manual/17-esptool.md:226 klas:F -->
+### T-17-100 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1323,8 +1700,8 @@
 
 ---
 
-<!-- fc id:T-17-099 sha:dc7b5a5b src:manual/17-esptool.md:216 klas:F -->
-### T-17-099 · proza · рядок 216
+<!-- fc id:T-17-101 sha:dc7b5a5b src:manual/17-esptool.md:226 klas:F -->
+### T-17-101 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1336,8 +1713,8 @@
 
 ---
 
-<!-- fc id:T-17-100 sha:ea00dd94 src:manual/17-esptool.md:216 klas:F -->
-### T-17-100 · proza · рядок 216
+<!-- fc id:T-17-102 sha:ea00dd94 src:manual/17-esptool.md:226 klas:F -->
+### T-17-102 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1349,8 +1726,8 @@
 
 ---
 
-<!-- fc id:T-17-101 sha:acad2592 src:manual/17-esptool.md:216 klas:F -->
-### T-17-101 · proza · рядок 216
+<!-- fc id:T-17-103 sha:acad2592 src:manual/17-esptool.md:226 klas:F -->
+### T-17-103 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1362,8 +1739,8 @@
 
 ---
 
-<!-- fc id:T-17-102 sha:ec91ebc5 src:manual/17-esptool.md:221 klas:F -->
-### T-17-102 · proza · рядок 221
+<!-- fc id:T-17-104 sha:ec91ebc5 src:manual/17-esptool.md:231 klas:F -->
+### T-17-104 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -1375,8 +1752,8 @@
 
 ---
 
-<!-- fc id:T-17-103 sha:290a4865 src:manual/17-esptool.md:223 klas:F -->
-### T-17-103 · proza · рядок 223
+<!-- fc id:T-17-105 sha:290a4865 src:manual/17-esptool.md:233 klas:F -->
+### T-17-105 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1388,8 +1765,8 @@
 
 ---
 
-<!-- fc id:T-17-104 sha:5e738a7f src:manual/17-esptool.md:223 klas:F -->
-### T-17-104 · proza · рядок 223
+<!-- fc id:T-17-106 sha:5e738a7f src:manual/17-esptool.md:233 klas:F -->
+### T-17-106 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1401,8 +1778,8 @@
 
 ---
 
-<!-- fc id:T-17-105 sha:c0befa74 src:manual/17-esptool.md:223 klas:F -->
-### T-17-105 · proza · рядок 223
+<!-- fc id:T-17-107 sha:c0befa74 src:manual/17-esptool.md:233 klas:F -->
+### T-17-107 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1414,8 +1791,8 @@
 
 ---
 
-<!-- fc id:T-17-106 sha:7d544eb3 src:manual/17-esptool.md:227 klas:F -->
-### T-17-106 · proza · рядок 227
+<!-- fc id:T-17-108 sha:7d544eb3 src:manual/17-esptool.md:237 klas:F -->
+### T-17-108 · proza · рядок 237
 
 **Книга каже, дослівно:**
 
@@ -1427,8 +1804,8 @@
 
 ---
 
-<!-- fc id:T-17-107 sha:2d9087c4 src:manual/17-esptool.md:229 klas:F -->
-### T-17-107 · proza · рядок 229
+<!-- fc id:T-17-109 sha:2d9087c4 src:manual/17-esptool.md:239 klas:F -->
+### T-17-109 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -1440,8 +1817,8 @@
 
 ---
 
-<!-- fc id:T-17-108 sha:efdb570a src:manual/17-esptool.md:229 klas:F -->
-### T-17-108 · proza · рядок 229
+<!-- fc id:T-17-110 sha:efdb570a src:manual/17-esptool.md:239 klas:F -->
+### T-17-110 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -1453,8 +1830,8 @@
 
 ---
 
-<!-- fc id:T-17-109 sha:36eba84f src:manual/17-esptool.md:232 klas:F -->
-### T-17-109 · proza · рядок 232
+<!-- fc id:T-17-111 sha:36eba84f src:manual/17-esptool.md:242 klas:F -->
+### T-17-111 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1466,8 +1843,8 @@
 
 ---
 
-<!-- fc id:T-17-110 sha:6f4d2986 src:manual/17-esptool.md:234 klas:F -->
-### T-17-110 · proza · рядок 234
+<!-- fc id:T-17-112 sha:6f4d2986 src:manual/17-esptool.md:244 klas:F -->
+### T-17-112 · proza · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -1479,8 +1856,8 @@
 
 ---
 
-<!-- fc id:T-17-111 sha:4a61aa2a src:manual/17-esptool.md:234 klas:F -->
-### T-17-111 · proza · рядок 234
+<!-- fc id:T-17-113 sha:4a61aa2a src:manual/17-esptool.md:244 klas:F -->
+### T-17-113 · proza · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -1492,8 +1869,8 @@
 
 ---
 
-<!-- fc id:T-17-112 sha:6c0640de src:manual/17-esptool.md:234 klas:F -->
-### T-17-112 · proza · рядок 234
+<!-- fc id:T-17-114 sha:6c0640de src:manual/17-esptool.md:244 klas:F -->
+### T-17-114 · proza · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -1505,8 +1882,8 @@
 
 ---
 
-<!-- fc id:T-17-113 sha:2a9519b0 src:manual/17-esptool.md:240 klas:F -->
-### T-17-113 · proza · рядок 240
+<!-- fc id:T-17-115 sha:2a9519b0 src:manual/17-esptool.md:250 klas:F -->
+### T-17-115 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1518,8 +1895,8 @@
 
 ---
 
-<!-- fc id:T-17-114 sha:918d6503 src:manual/17-esptool.md:240 klas:F -->
-### T-17-114 · proza · рядок 240
+<!-- fc id:T-17-116 sha:918d6503 src:manual/17-esptool.md:250 klas:F -->
+### T-17-116 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1531,8 +1908,8 @@
 
 ---
 
-<!-- fc id:T-17-115 sha:313ef396 src:manual/17-esptool.md:244 klas:F -->
-### T-17-115 · proza · рядок 244
+<!-- fc id:T-17-117 sha:313ef396 src:manual/17-esptool.md:254 klas:F -->
+### T-17-117 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -1544,8 +1921,8 @@
 
 ---
 
-<!-- fc id:T-17-116 sha:e977c57d src:manual/17-esptool.md:244 klas:F -->
-### T-17-116 · proza · рядок 244
+<!-- fc id:T-17-118 sha:e977c57d src:manual/17-esptool.md:254 klas:F -->
+### T-17-118 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -1557,8 +1934,8 @@
 
 ---
 
-<!-- fc id:T-17-117 sha:2d322667 src:manual/17-esptool.md:251 klas:F -->
-### T-17-117 · proza · рядок 251
+<!-- fc id:T-17-119 sha:2d322667 src:manual/17-esptool.md:261 klas:F -->
+### T-17-119 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -1570,8 +1947,8 @@
 
 ---
 
-<!-- fc id:T-17-118 sha:8eda1231 src:manual/17-esptool.md:253 klas:F -->
-### T-17-118 · proza · рядок 253
+<!-- fc id:T-17-120 sha:8eda1231 src:manual/17-esptool.md:263 klas:F -->
+### T-17-120 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -1583,8 +1960,8 @@
 
 ---
 
-<!-- fc id:T-17-119 sha:a7f08f37 src:manual/17-esptool.md:255 klas:F -->
-### T-17-119 · proza · рядок 255
+<!-- fc id:T-17-121 sha:a7f08f37 src:manual/17-esptool.md:265 klas:F -->
+### T-17-121 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -1596,8 +1973,8 @@
 
 ---
 
-<!-- fc id:T-17-120 sha:0de9cf8b src:manual/17-esptool.md:255 klas:F -->
-### T-17-120 · proza · рядок 255
+<!-- fc id:T-17-122 sha:0de9cf8b src:manual/17-esptool.md:265 klas:F -->
+### T-17-122 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -1609,8 +1986,8 @@
 
 ---
 
-<!-- fc id:T-17-121 sha:42368b26 src:manual/17-esptool.md:258 klas:F -->
-### T-17-121 · proza · рядок 258
+<!-- fc id:T-17-123 sha:42368b26 src:manual/17-esptool.md:268 klas:F -->
+### T-17-123 · proza · рядок 268
 
 **Книга каже, дослівно:**
 
@@ -1622,8 +1999,8 @@
 
 ---
 
-<!-- fc id:T-17-122 sha:33a8f7c8 src:manual/17-esptool.md:260 klas:F -->
-### T-17-122 · proza · рядок 260
+<!-- fc id:T-17-124 sha:33a8f7c8 src:manual/17-esptool.md:270 klas:F -->
+### T-17-124 · proza · рядок 270
 
 **Книга каже, дослівно:**
 

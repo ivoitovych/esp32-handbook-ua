@@ -87,7 +87,7 @@
 
 ---
 
-<!-- fc id:T-K15-007 sha:996855d9 src:kartky/k15-seriyna.md:27 klas:F -->
+<!-- fc id:T-K15-007 sha:996855d9 src:kartky/k15-seriyna.md:27 klas:A -->
 ### T-K15-007 · komirka · рядок 27
 
 **Книга каже, дослівно:**
@@ -96,7 +96,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -490,7 +510,7 @@
 
 ---
 
-<!-- fc id:T-K15-038 sha:51bbff59 src:kartky/k15-seriyna.md:63 klas:F -->
+<!-- fc id:T-K15-038 sha:51bbff59 src:kartky/k15-seriyna.md:63 klas:A -->
 ### T-K15-038 · kod · рядок 63
 
 **Книга каже, дослівно:**
@@ -502,7 +522,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -519,7 +559,7 @@
 
 ---
 
-<!-- fc id:T-K15-040 sha:8fc5b038 src:kartky/k15-seriyna.md:65 klas:F -->
+<!-- fc id:T-K15-040 sha:8fc5b038 src:kartky/k15-seriyna.md:65 klas:A -->
 ### T-K15-040 · kod-ryadok · рядок 65
 
 **Книга каже, дослівно:**
@@ -528,7 +568,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 

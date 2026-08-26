@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/07-gpio.md`
 
-Одиниць твердження: **89**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **92**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-07-018 sha:08517ba3 src:manual/07-gpio.md:28 klas:F -->
+<!-- fc id:T-07-018 sha:08517ba3 src:manual/07-gpio.md:28 klas:A -->
 ### T-07-018 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -236,29 +236,65 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > choice BOOTLOADER_VDDSDIO_BOOST
+  >     bool "VDDSDIO LDO voltage"
+  >     default BOOTLOADER_VDDSDIO_BOOST_1_9V
+  >     depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED
+  >     help
+  >         If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse
+  >         or MTDI bootstrapping pin), bootloader will change LDO settings to
+  >         output 1.9V instead. This helps prevent flash chip from browning out
+  >         during flash programming operations.
+  > 
+  >         This option has no effect if VDDSDIO is set to 3.3V, or if the internal
+  >         VDDSDIO regulator is disabled via eFuse.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
+З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-07-019 sha:fe718554 src:manual/07-gpio.md:28 klas:F -->
+<!-- fc id:T-07-019 sha:e7afa480 src:manual/07-gpio.md:28 klas:A -->
 ### T-07-019 · proza · рядок 28
 
 **Книга каже, дослівно:**
 
-> Він задає напругу, яку стабілізатор подає на мікросхему флешу.
+> Він задає напругу внутрішнього стабілізатора `VDDSDIO`, від якого живиться мікросхема флешу: високий рівень при старті означає **1.8 В**, низький — 3.3 В.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > choice BOOTLOADER_VDDSDIO_BOOST
+  >     bool "VDDSDIO LDO voltage"
+  >     default BOOTLOADER_VDDSDIO_BOOST_1_9V
+  >     depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED
+  >     help
+  >         If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse
+  >         or MTDI bootstrapping pin), bootloader will change LDO settings to
+  >         output 1.9V instead. This helps prevent flash chip from browning out
+  >         during flash programming operations.
+  > 
+  >         This option has no effect if VDDSDIO is set to 3.3V, or if the internal
+  >         VDDSDIO regulator is disabled via eFuse.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
+З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-07-020 sha:e25a1302 src:manual/07-gpio.md:28 klas:F -->
-### T-07-020 · proza · рядок 28
+<!-- fc id:T-07-020 sha:e461769b src:manual/07-gpio.md:33 klas:F -->
+### T-07-020 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
-> Підтягнутий вгору під час старту — і плата не подає ознак життя: ні логу, ні реакції, ні повідомлення про помилку.
+> Уся зловісність — у тому, що на переважній більшості модулів (`WROOM-32` і подібних) флеш **тривольтовий**.
 
 **Доказ**
 
@@ -266,8 +302,47 @@
 
 ---
 
-<!-- fc id:T-07-021 sha:ec498771 src:manual/07-gpio.md:33 klas:F -->
+<!-- fc id:T-07-021 sha:1cf32b5b src:manual/07-gpio.md:33 klas:F -->
 ### T-07-021 · proza · рядок 33
+
+**Книга каже, дослівно:**
+
+> Він отримує 1.8 В, не запускається, і плата не подає ознак життя: ні логу, ні реакції, ні повідомлення про помилку.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-07-022 sha:126e9170 src:manual/07-gpio.md:38 klas:F -->
+### T-07-022 · proza · рядок 38
+
+**Книга каже, дослівно:**
+
+> Звідси й друга половина пастки: на модулях, де флеш справді на 1.8 В, той самий високий рівень — правильне налаштування.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-07-023 sha:f1f40880 src:manual/07-gpio.md:38 klas:F -->
+### T-07-023 · proza · рядок 38
+
+**Книга каже, дослівно:**
+
+> Тобто поведінка залежить від модуля, а не лише від піна, і «у сусіда працює» тут нічого не доводить.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-07-024 sha:ec498771 src:manual/07-gpio.md:43 klas:F -->
+### T-07-024 · proza · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -279,8 +354,8 @@
 
 ---
 
-<!-- fc id:T-07-022 sha:0eefa260 src:manual/07-gpio.md:33 klas:F -->
-### T-07-022 · proza · рядок 33
+<!-- fc id:T-07-025 sha:0eefa260 src:manual/07-gpio.md:43 klas:F -->
+### T-07-025 · proza · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -292,8 +367,8 @@
 
 ---
 
-<!-- fc id:T-07-023 sha:bb7e589a src:manual/07-gpio.md:36 klas:F -->
-### T-07-023 · proza · рядок 36
+<!-- fc id:T-07-026 sha:bb7e589a src:manual/07-gpio.md:46 klas:F -->
+### T-07-026 · proza · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -305,8 +380,8 @@
 
 ---
 
-<!-- fc id:T-07-024 sha:18fd55d6 src:manual/07-gpio.md:41 klas:F -->
-### T-07-024 · proza · рядок 41
+<!-- fc id:T-07-027 sha:18fd55d6 src:manual/07-gpio.md:51 klas:F -->
+### T-07-027 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -318,8 +393,8 @@
 
 ---
 
-<!-- fc id:T-07-025 sha:fcc43110 src:manual/07-gpio.md:41 klas:F -->
-### T-07-025 · proza · рядок 41
+<!-- fc id:T-07-028 sha:fcc43110 src:manual/07-gpio.md:51 klas:F -->
+### T-07-028 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -331,8 +406,8 @@
 
 ---
 
-<!-- fc id:T-07-026 sha:13e25920 src:manual/07-gpio.md:44 klas:F -->
-### T-07-026 · proza · рядок 44
+<!-- fc id:T-07-029 sha:13e25920 src:manual/07-gpio.md:54 klas:F -->
+### T-07-029 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -344,8 +419,8 @@
 
 ---
 
-<!-- fc id:T-07-027 sha:ea35d47e src:manual/07-gpio.md:44 klas:F -->
-### T-07-027 · proza · рядок 44
+<!-- fc id:T-07-030 sha:ea35d47e src:manual/07-gpio.md:54 klas:F -->
+### T-07-030 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -357,8 +432,8 @@
 
 ---
 
-<!-- fc id:T-07-028 sha:4b043722 src:manual/07-gpio.md:44 klas:F -->
-### T-07-028 · proza · рядок 44
+<!-- fc id:T-07-031 sha:4b043722 src:manual/07-gpio.md:54 klas:F -->
+### T-07-031 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -370,8 +445,8 @@
 
 ---
 
-<!-- fc id:T-07-029 sha:8fc6eaa5 src:manual/07-gpio.md:48 klas:F -->
-### T-07-029 · proza · рядок 48
+<!-- fc id:T-07-032 sha:8fc6eaa5 src:manual/07-gpio.md:58 klas:F -->
+### T-07-032 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -383,8 +458,8 @@
 
 ---
 
-<!-- fc id:T-07-030 sha:8dc5f04a src:manual/07-gpio.md:48 klas:F -->
-### T-07-030 · proza · рядок 48
+<!-- fc id:T-07-033 sha:8dc5f04a src:manual/07-gpio.md:58 klas:F -->
+### T-07-033 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -396,8 +471,8 @@
 
 ---
 
-<!-- fc id:T-07-031 sha:c3ef5d6f src:manual/07-gpio.md:55 klas:F -->
-### T-07-031 · proza · рядок 55
+<!-- fc id:T-07-034 sha:c3ef5d6f src:manual/07-gpio.md:65 klas:F -->
+### T-07-034 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -409,8 +484,8 @@
 
 ---
 
-<!-- fc id:T-07-032 sha:d8a73a0f src:manual/07-gpio.md:58 klas:F -->
-### T-07-032 · proza · рядок 58
+<!-- fc id:T-07-035 sha:d8a73a0f src:manual/07-gpio.md:68 klas:F -->
+### T-07-035 · proza · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -422,8 +497,8 @@
 
 ---
 
-<!-- fc id:T-07-033 sha:6964fc01 src:manual/07-gpio.md:58 klas:F -->
-### T-07-033 · proza · рядок 58
+<!-- fc id:T-07-036 sha:6964fc01 src:manual/07-gpio.md:68 klas:F -->
+### T-07-036 · proza · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -435,8 +510,8 @@
 
 ---
 
-<!-- fc id:T-07-034 sha:30b73e47 src:manual/07-gpio.md:62 klas:F -->
-### T-07-034 · proza · рядок 62
+<!-- fc id:T-07-037 sha:30b73e47 src:manual/07-gpio.md:72 klas:F -->
+### T-07-037 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -448,8 +523,8 @@
 
 ---
 
-<!-- fc id:T-07-035 sha:25039e68 src:manual/07-gpio.md:62 klas:F -->
-### T-07-035 · proza · рядок 62
+<!-- fc id:T-07-038 sha:25039e68 src:manual/07-gpio.md:72 klas:F -->
+### T-07-038 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -461,8 +536,8 @@
 
 ---
 
-<!-- fc id:T-07-036 sha:c9a2eeb3 src:manual/07-gpio.md:65 klas:F -->
-### T-07-036 · proza · рядок 65
+<!-- fc id:T-07-039 sha:c9a2eeb3 src:manual/07-gpio.md:75 klas:F -->
+### T-07-039 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -474,8 +549,8 @@
 
 ---
 
-<!-- fc id:T-07-037 sha:405c002f src:manual/07-gpio.md:68 klas:F -->
-### T-07-037 · proza · рядок 68
+<!-- fc id:T-07-040 sha:405c002f src:manual/07-gpio.md:78 klas:F -->
+### T-07-040 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -487,8 +562,8 @@
 
 ---
 
-<!-- fc id:T-07-038 sha:9a2e525e src:manual/07-gpio.md:71 klas:F -->
-### T-07-038 · proza · рядок 71
+<!-- fc id:T-07-041 sha:9a2e525e src:manual/07-gpio.md:81 klas:F -->
+### T-07-041 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -500,8 +575,8 @@
 
 ---
 
-<!-- fc id:T-07-039 sha:5638f14b src:manual/07-gpio.md:71 klas:F -->
-### T-07-039 · proza · рядок 71
+<!-- fc id:T-07-042 sha:5638f14b src:manual/07-gpio.md:81 klas:F -->
+### T-07-042 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -513,8 +588,8 @@
 
 ---
 
-<!-- fc id:T-07-040 sha:f1266858 src:manual/07-gpio.md:75 klas:F -->
-### T-07-040 · proza · рядок 75
+<!-- fc id:T-07-043 sha:f1266858 src:manual/07-gpio.md:85 klas:F -->
+### T-07-043 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -526,8 +601,8 @@
 
 ---
 
-<!-- fc id:T-07-041 sha:6a801047 src:manual/07-gpio.md:81 klas:F -->
-### T-07-041 · proza · рядок 81
+<!-- fc id:T-07-044 sha:6a801047 src:manual/07-gpio.md:91 klas:F -->
+### T-07-044 · proza · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -539,8 +614,8 @@
 
 ---
 
-<!-- fc id:T-07-042 sha:2b119dd6 src:manual/07-gpio.md:83 klas:F -->
-### T-07-042 · proza · рядок 83
+<!-- fc id:T-07-045 sha:2b119dd6 src:manual/07-gpio.md:93 klas:F -->
+### T-07-045 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -552,8 +627,8 @@
 
 ---
 
-<!-- fc id:T-07-043 sha:2dbf225d src:manual/07-gpio.md:86 klas:F -->
-### T-07-043 · proza · рядок 86
+<!-- fc id:T-07-046 sha:2dbf225d src:manual/07-gpio.md:96 klas:F -->
+### T-07-046 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -565,8 +640,8 @@
 
 ---
 
-<!-- fc id:T-07-044 sha:9b7ec34b src:manual/07-gpio.md:86 klas:F -->
-### T-07-044 · proza · рядок 86
+<!-- fc id:T-07-047 sha:9b7ec34b src:manual/07-gpio.md:96 klas:F -->
+### T-07-047 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -578,8 +653,8 @@
 
 ---
 
-<!-- fc id:T-07-045 sha:1d981589 src:manual/07-gpio.md:86 klas:F -->
-### T-07-045 · proza · рядок 86
+<!-- fc id:T-07-048 sha:1d981589 src:manual/07-gpio.md:96 klas:F -->
+### T-07-048 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -591,8 +666,8 @@
 
 ---
 
-<!-- fc id:T-07-046 sha:7997d730 src:manual/07-gpio.md:90 klas:F -->
-### T-07-046 · proza · рядок 90
+<!-- fc id:T-07-049 sha:7997d730 src:manual/07-gpio.md:100 klas:F -->
+### T-07-049 · proza · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -604,8 +679,8 @@
 
 ---
 
-<!-- fc id:T-07-047 sha:dc856329 src:manual/07-gpio.md:92 klas:F -->
-### T-07-047 · proza · рядок 92
+<!-- fc id:T-07-050 sha:dc856329 src:manual/07-gpio.md:102 klas:F -->
+### T-07-050 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -617,8 +692,8 @@
 
 ---
 
-<!-- fc id:T-07-048 sha:4d958fd4 src:manual/07-gpio.md:97 klas:F -->
-### T-07-048 · proza · рядок 97
+<!-- fc id:T-07-051 sha:4d958fd4 src:manual/07-gpio.md:107 klas:F -->
+### T-07-051 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -630,8 +705,8 @@
 
 ---
 
-<!-- fc id:T-07-049 sha:dc867a33 src:manual/07-gpio.md:101 klas:A -->
-### T-07-049 · proza · рядок 101
+<!-- fc id:T-07-052 sha:dc867a33 src:manual/07-gpio.md:111 klas:A -->
+### T-07-052 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -650,8 +725,8 @@
 
 ---
 
-<!-- fc id:T-07-050 sha:6f673a7c src:manual/07-gpio.md:101 klas:F -->
-### T-07-050 · proza · рядок 101
+<!-- fc id:T-07-053 sha:6f673a7c src:manual/07-gpio.md:111 klas:F -->
+### T-07-053 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -663,8 +738,8 @@
 
 ---
 
-<!-- fc id:T-07-051 sha:08b4151a src:manual/07-gpio.md:105 klas:F -->
-### T-07-051 · proza · рядок 105
+<!-- fc id:T-07-054 sha:08b4151a src:manual/07-gpio.md:115 klas:F -->
+### T-07-054 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -676,8 +751,8 @@
 
 ---
 
-<!-- fc id:T-07-052 sha:cf5a8129 src:manual/07-gpio.md:105 klas:F -->
-### T-07-052 · proza · рядок 105
+<!-- fc id:T-07-055 sha:cf5a8129 src:manual/07-gpio.md:115 klas:F -->
+### T-07-055 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -689,8 +764,8 @@
 
 ---
 
-<!-- fc id:T-07-053 sha:4abe4c19 src:manual/07-gpio.md:109 klas:F -->
-### T-07-053 · proza · рядок 109
+<!-- fc id:T-07-056 sha:4abe4c19 src:manual/07-gpio.md:119 klas:F -->
+### T-07-056 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -702,8 +777,8 @@
 
 ---
 
-<!-- fc id:T-07-054 sha:0c63d3df src:manual/07-gpio.md:113 klas:F -->
-### T-07-054 · proza · рядок 113
+<!-- fc id:T-07-057 sha:0c63d3df src:manual/07-gpio.md:123 klas:F -->
+### T-07-057 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -715,8 +790,8 @@
 
 ---
 
-<!-- fc id:T-07-055 sha:a73f83e1 src:manual/07-gpio.md:113 klas:F -->
-### T-07-055 · proza · рядок 113
+<!-- fc id:T-07-058 sha:a73f83e1 src:manual/07-gpio.md:123 klas:F -->
+### T-07-058 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -728,8 +803,8 @@
 
 ---
 
-<!-- fc id:T-07-056 sha:4838050a src:manual/07-gpio.md:116 klas:F -->
-### T-07-056 · proza · рядок 116
+<!-- fc id:T-07-059 sha:4838050a src:manual/07-gpio.md:126 klas:F -->
+### T-07-059 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -741,8 +816,8 @@
 
 ---
 
-<!-- fc id:T-07-057 sha:e9e0e554 src:manual/07-gpio.md:119 klas:F -->
-### T-07-057 · proza · рядок 119
+<!-- fc id:T-07-060 sha:e9e0e554 src:manual/07-gpio.md:129 klas:F -->
+### T-07-060 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -754,8 +829,8 @@
 
 ---
 
-<!-- fc id:T-07-058 sha:89f377b7 src:manual/07-gpio.md:124 klas:F -->
-### T-07-058 · proza · рядок 124
+<!-- fc id:T-07-061 sha:89f377b7 src:manual/07-gpio.md:134 klas:F -->
+### T-07-061 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -767,8 +842,8 @@
 
 ---
 
-<!-- fc id:T-07-059 sha:08617839 src:manual/07-gpio.md:124 klas:F -->
-### T-07-059 · proza · рядок 124
+<!-- fc id:T-07-062 sha:08617839 src:manual/07-gpio.md:134 klas:F -->
+### T-07-062 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -780,8 +855,8 @@
 
 ---
 
-<!-- fc id:T-07-060 sha:99a46388 src:manual/07-gpio.md:124 klas:F -->
-### T-07-060 · proza · рядок 124
+<!-- fc id:T-07-063 sha:99a46388 src:manual/07-gpio.md:134 klas:F -->
+### T-07-063 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -793,8 +868,8 @@
 
 ---
 
-<!-- fc id:T-07-061 sha:7af574ff src:manual/07-gpio.md:129 klas:F -->
-### T-07-061 · proza · рядок 129
+<!-- fc id:T-07-064 sha:7af574ff src:manual/07-gpio.md:139 klas:F -->
+### T-07-064 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -806,8 +881,8 @@
 
 ---
 
-<!-- fc id:T-07-062 sha:6d5fd871 src:manual/07-gpio.md:131 klas:F -->
-### T-07-062 · proza · рядок 131
+<!-- fc id:T-07-065 sha:6d5fd871 src:manual/07-gpio.md:141 klas:F -->
+### T-07-065 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -819,8 +894,8 @@
 
 ---
 
-<!-- fc id:T-07-063 sha:6f074d3a src:manual/07-gpio.md:131 klas:F -->
-### T-07-063 · proza · рядок 131
+<!-- fc id:T-07-066 sha:6f074d3a src:manual/07-gpio.md:141 klas:F -->
+### T-07-066 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -832,8 +907,8 @@
 
 ---
 
-<!-- fc id:T-07-064 sha:16fc615f src:manual/07-gpio.md:137 klas:F -->
-### T-07-064 · proza · рядок 137
+<!-- fc id:T-07-067 sha:16fc615f src:manual/07-gpio.md:147 klas:F -->
+### T-07-067 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -845,8 +920,8 @@
 
 ---
 
-<!-- fc id:T-07-065 sha:1c767126 src:manual/07-gpio.md:140 klas:F -->
-### T-07-065 · proza · рядок 140
+<!-- fc id:T-07-068 sha:1c767126 src:manual/07-gpio.md:150 klas:F -->
+### T-07-068 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -858,8 +933,8 @@
 
 ---
 
-<!-- fc id:T-07-066 sha:dae5d714 src:manual/07-gpio.md:144 klas:F -->
-### T-07-066 · proza · рядок 144
+<!-- fc id:T-07-069 sha:dae5d714 src:manual/07-gpio.md:154 klas:F -->
+### T-07-069 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -871,8 +946,8 @@
 
 ---
 
-<!-- fc id:T-07-067 sha:2e6e5ae0 src:manual/07-gpio.md:147 klas:F -->
-### T-07-067 · proza · рядок 147
+<!-- fc id:T-07-070 sha:2e6e5ae0 src:manual/07-gpio.md:157 klas:F -->
+### T-07-070 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -884,8 +959,8 @@
 
 ---
 
-<!-- fc id:T-07-068 sha:d3fff0e3 src:manual/07-gpio.md:147 klas:F -->
-### T-07-068 · proza · рядок 147
+<!-- fc id:T-07-071 sha:d3fff0e3 src:manual/07-gpio.md:157 klas:F -->
+### T-07-071 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -897,8 +972,8 @@
 
 ---
 
-<!-- fc id:T-07-069 sha:bbf00d41 src:manual/07-gpio.md:152 klas:F -->
-### T-07-069 · proza · рядок 152
+<!-- fc id:T-07-072 sha:bbf00d41 src:manual/07-gpio.md:162 klas:F -->
+### T-07-072 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -910,8 +985,8 @@
 
 ---
 
-<!-- fc id:T-07-070 sha:be7c4eb1 src:manual/07-gpio.md:154 klas:F -->
-### T-07-070 · proza · рядок 154
+<!-- fc id:T-07-073 sha:be7c4eb1 src:manual/07-gpio.md:164 klas:F -->
+### T-07-073 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -923,8 +998,8 @@
 
 ---
 
-<!-- fc id:T-07-071 sha:8f937bea src:manual/07-gpio.md:154 klas:F -->
-### T-07-071 · proza · рядок 154
+<!-- fc id:T-07-074 sha:8f937bea src:manual/07-gpio.md:164 klas:F -->
+### T-07-074 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -936,8 +1011,8 @@
 
 ---
 
-<!-- fc id:T-07-072 sha:34181297 src:manual/07-gpio.md:158 klas:F -->
-### T-07-072 · proza · рядок 158
+<!-- fc id:T-07-075 sha:34181297 src:manual/07-gpio.md:168 klas:F -->
+### T-07-075 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -949,8 +1024,8 @@
 
 ---
 
-<!-- fc id:T-07-073 sha:28de41c4 src:manual/07-gpio.md:161 klas:F -->
-### T-07-073 · proza · рядок 161
+<!-- fc id:T-07-076 sha:28de41c4 src:manual/07-gpio.md:171 klas:F -->
+### T-07-076 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -962,8 +1037,8 @@
 
 ---
 
-<!-- fc id:T-07-074 sha:61a59398 src:manual/07-gpio.md:164 klas:F -->
-### T-07-074 · proza · рядок 164
+<!-- fc id:T-07-077 sha:61a59398 src:manual/07-gpio.md:174 klas:F -->
+### T-07-077 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -975,8 +1050,8 @@
 
 ---
 
-<!-- fc id:T-07-075 sha:ae8000cc src:manual/07-gpio.md:166 klas:F -->
-### T-07-075 · proza · рядок 166
+<!-- fc id:T-07-078 sha:ae8000cc src:manual/07-gpio.md:176 klas:F -->
+### T-07-078 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -988,8 +1063,8 @@
 
 ---
 
-<!-- fc id:T-07-076 sha:035a38f6 src:manual/07-gpio.md:172 klas:F -->
-### T-07-076 · proza · рядок 172
+<!-- fc id:T-07-079 sha:035a38f6 src:manual/07-gpio.md:182 klas:F -->
+### T-07-079 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -1001,8 +1076,8 @@
 
 ---
 
-<!-- fc id:T-07-077 sha:e43399df src:manual/07-gpio.md:174 klas:F -->
-### T-07-077 · proza · рядок 174
+<!-- fc id:T-07-080 sha:e43399df src:manual/07-gpio.md:184 klas:F -->
+### T-07-080 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1014,8 +1089,8 @@
 
 ---
 
-<!-- fc id:T-07-078 sha:9e2b2c79 src:manual/07-gpio.md:178 klas:F -->
-### T-07-078 · proza · рядок 178
+<!-- fc id:T-07-081 sha:9e2b2c79 src:manual/07-gpio.md:188 klas:F -->
+### T-07-081 · proza · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -1027,8 +1102,8 @@
 
 ---
 
-<!-- fc id:T-07-079 sha:a06a92ec src:manual/07-gpio.md:182 klas:F -->
-### T-07-079 · proza · рядок 182
+<!-- fc id:T-07-082 sha:a06a92ec src:manual/07-gpio.md:192 klas:F -->
+### T-07-082 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1040,8 +1115,8 @@
 
 ---
 
-<!-- fc id:T-07-080 sha:38f59818 src:manual/07-gpio.md:182 klas:F -->
-### T-07-080 · proza · рядок 182
+<!-- fc id:T-07-083 sha:38f59818 src:manual/07-gpio.md:192 klas:F -->
+### T-07-083 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1053,8 +1128,8 @@
 
 ---
 
-<!-- fc id:T-07-081 sha:b0fde932 src:manual/07-gpio.md:182 klas:F -->
-### T-07-081 · proza · рядок 182
+<!-- fc id:T-07-084 sha:b0fde932 src:manual/07-gpio.md:192 klas:F -->
+### T-07-084 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1066,8 +1141,8 @@
 
 ---
 
-<!-- fc id:T-07-082 sha:909499e7 src:manual/07-gpio.md:187 klas:F -->
-### T-07-082 · proza · рядок 187
+<!-- fc id:T-07-085 sha:909499e7 src:manual/07-gpio.md:197 klas:F -->
+### T-07-085 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1079,8 +1154,8 @@
 
 ---
 
-<!-- fc id:T-07-083 sha:4006ed63 src:manual/07-gpio.md:187 klas:F -->
-### T-07-083 · proza · рядок 187
+<!-- fc id:T-07-086 sha:4006ed63 src:manual/07-gpio.md:197 klas:F -->
+### T-07-086 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1092,8 +1167,8 @@
 
 ---
 
-<!-- fc id:T-07-084 sha:00d10011 src:manual/07-gpio.md:193 klas:F -->
-### T-07-084 · proza · рядок 193
+<!-- fc id:T-07-087 sha:00d10011 src:manual/07-gpio.md:203 klas:F -->
+### T-07-087 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1105,8 +1180,8 @@
 
 ---
 
-<!-- fc id:T-07-085 sha:4b2712e3 src:manual/07-gpio.md:195 klas:F -->
-### T-07-085 · proza · рядок 195
+<!-- fc id:T-07-088 sha:4b2712e3 src:manual/07-gpio.md:205 klas:F -->
+### T-07-088 · proza · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1118,8 +1193,8 @@
 
 ---
 
-<!-- fc id:T-07-086 sha:eca754e3 src:manual/07-gpio.md:198 klas:F -->
-### T-07-086 · proza · рядок 198
+<!-- fc id:T-07-089 sha:eca754e3 src:manual/07-gpio.md:208 klas:F -->
+### T-07-089 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1131,8 +1206,8 @@
 
 ---
 
-<!-- fc id:T-07-087 sha:2accc23f src:manual/07-gpio.md:200 klas:A -->
-### T-07-087 · proza · рядок 200
+<!-- fc id:T-07-090 sha:2accc23f src:manual/07-gpio.md:210 klas:A -->
+### T-07-090 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1151,8 +1226,8 @@
 
 ---
 
-<!-- fc id:T-07-088 sha:101667fc src:manual/07-gpio.md:203 klas:F -->
-### T-07-088 · proza · рядок 203
+<!-- fc id:T-07-091 sha:101667fc src:manual/07-gpio.md:213 klas:F -->
+### T-07-091 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1164,8 +1239,8 @@
 
 ---
 
-<!-- fc id:T-07-089 sha:3521c982 src:manual/07-gpio.md:206 klas:F -->
-### T-07-089 · proza · рядок 206
+<!-- fc id:T-07-092 sha:3521c982 src:manual/07-gpio.md:216 klas:F -->
+### T-07-092 · proza · рядок 216
 
 **Книга каже, дослівно:**
 

@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-K02-016 sha:d28a1a55 src:kartky/k02-stan.md:34 klas:F -->
+<!-- fc id:T-K02-016 sha:d28a1a55 src:kartky/k02-stan.md:34 klas:A -->
 ### T-K02-016 · kod · рядок 34
 
 **Книга каже, дослівно:**
@@ -213,7 +213,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > The read-flash command allows reading back the contents of flash. The arguments to the
+  > command are an address, a size, and a file path to output to. For example, to read a full
+  > 2MB of attached flash:
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin
+  > 
+  > Size can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in
+  > example can be replaced with ``2M``.
+  > 
+  > It is also possible to autodetect flash size by using ``ALL`` as size.
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -230,7 +247,7 @@
 
 ---
 
-<!-- fc id:T-K02-018 sha:213017c0 src:kartky/k02-stan.md:36 klas:F -->
+<!-- fc id:T-K02-018 sha:213017c0 src:kartky/k02-stan.md:36 klas:A -->
 ### T-K02-018 · kod-ryadok · рядок 36
 
 **Книга каже, дослівно:**
@@ -239,11 +256,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > The read-flash command allows reading back the contents of flash. The arguments to the
+  > command are an address, a size, and a file path to output to. For example, to read a full
+  > 2MB of attached flash:
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin
+  > 
+  > Size can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in
+  > example can be replaced with ``2M``.
+  > 
+  > It is also possible to autodetect flash size by using ``ALL`` as size.
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
-<!-- fc id:T-K02-019 sha:1856248d src:kartky/k02-stan.md:39 klas:F -->
+<!-- fc id:T-K02-019 sha:1856248d src:kartky/k02-stan.md:39 klas:A -->
 ### T-K02-019 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -252,7 +286,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > The read-flash command allows reading back the contents of flash. The arguments to the
+  > command are an address, a size, and a file path to output to. For example, to read a full
+  > 2MB of attached flash:
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin
+  > 
+  > Size can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in
+  > example can be replaced with ``2M``.
+  > 
+  > It is also possible to autodetect flash size by using ``ALL`` as size.
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 

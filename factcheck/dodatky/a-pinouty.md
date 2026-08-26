@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-A-025 sha:18d879e2 src:dodatky/a-pinouty.md:23 klas:F -->
+<!-- fc id:T-A-025 sha:18d879e2 src:dodatky/a-pinouty.md:23 klas:A -->
 ### T-A-025 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -327,7 +327,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > choice BOOTLOADER_VDDSDIO_BOOST
+  >     bool "VDDSDIO LDO voltage"
+  >     default BOOTLOADER_VDDSDIO_BOOST_1_9V
+  >     depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED
+  >     help
+  >         If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse
+  >         or MTDI bootstrapping pin), bootloader will change LDO settings to
+  >         output 1.9V instead. This helps prevent flash chip from browning out
+  >         during flash programming operations.
+  > 
+  >         This option has no effect if VDDSDIO is set to 3.3V, or if the internal
+  >         VDDSDIO regulator is disabled via eFuse.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
+З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
