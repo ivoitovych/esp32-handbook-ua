@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-41-002 sha:87624831 src:manual/41-ble.md:9 klas:F -->
+<!-- fc id:T-41-002 sha:87624831 src:manual/41-ble.md:9 klas:A -->
 ### T-41-002 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -28,11 +28,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
+  > esp32s2: CPU_CORES_NUM 1   WIFI 1  (BT/BLE відсутні)          SPIRAM 1  USB_OTG 1
+  > esp32s3: CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  (без BT_CLASSIC) SPIRAM 1
+  >                              USB_OTG 1  USB_SERIAL_JTAG 1
+  > esp32c3: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  (без SPIRAM)  USB_SERIAL_JTAG 1
+  > esp32c6: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG 1
+  >          #define SOC_WIFI_HE_SUPPORT (1)  /*!< Support Wi-Fi 6 */
+  > esp32h2: CPU_CORES_NUM 1   (без WIFI)  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG 1
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх шістдесяти комірках. Звірено кожен рядок: ядра, PSRAM, Wi-Fi, BT Classic, BLE, 802.15.4, USB — по шести сімействах.
+Окремо приємно закрився рядок «Wi-Fi 6» для C6: у заголовку стоїть `SOC_WIFI_HE_SUPPORT (1) /*!< Support Wi-Fi 6 */`, і цього прапорця немає в жодного іншого сімейства книги. Тобто твердження не з маркетингового опису, а з умови збирання.
+Три блоки уваги розділу 02 теж підтверджені механічно: `SOC_BT_CLASSIC_SUPPORTED` є лише в classic; у S2 немає ні `SOC_BT_SUPPORTED`, ні `SOC_BLE_SUPPORTED`; `SOC_SPIRAM_SUPPORTED` є рівно в classic, S2 і S3.
+- **Прохід:** pass-13-mozhlyvosti
 
 ---
 
-<!-- fc id:T-41-003 sha:06fa7a1a src:manual/41-ble.md:9 klas:F -->
+<!-- fc id:T-41-003 sha:06fa7a1a src:manual/41-ble.md:9 klas:A -->
 ### T-41-003 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -41,7 +56,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
+  > esp32s2: CPU_CORES_NUM 1   WIFI 1  (BT/BLE відсутні)          SPIRAM 1  USB_OTG 1
+  > esp32s3: CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  (без BT_CLASSIC) SPIRAM 1
+  >                              USB_OTG 1  USB_SERIAL_JTAG 1
+  > esp32c3: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  (без SPIRAM)  USB_SERIAL_JTAG 1
+  > esp32c6: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG 1
+  >          #define SOC_WIFI_HE_SUPPORT (1)  /*!< Support Wi-Fi 6 */
+  > esp32h2: CPU_CORES_NUM 1   (без WIFI)  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG 1
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх шістдесяти комірках. Звірено кожен рядок: ядра, PSRAM, Wi-Fi, BT Classic, BLE, 802.15.4, USB — по шести сімействах.
+Окремо приємно закрився рядок «Wi-Fi 6» для C6: у заголовку стоїть `SOC_WIFI_HE_SUPPORT (1) /*!< Support Wi-Fi 6 */`, і цього прапорця немає в жодного іншого сімейства книги. Тобто твердження не з маркетингового опису, а з умови збирання.
+Три блоки уваги розділу 02 теж підтверджені механічно: `SOC_BT_CLASSIC_SUPPORTED` є лише в classic; у S2 немає ні `SOC_BT_SUPPORTED`, ні `SOC_BLE_SUPPORTED`; `SOC_SPIRAM_SUPPORTED` є рівно в classic, S2 і S3.
+- **Прохід:** pass-13-mozhlyvosti
 
 ---
 
