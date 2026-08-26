@@ -172,12 +172,35 @@ RE_ID_DOKUMENTA = re.compile(
     re.I)
 
 
+# Джерело всередині книги. М2 звірив твердження проєкту 60 з **власним
+# кодом того самого розділу**: поріг у прозі проти порога в лістингу.
+#
+# Це не зовнішня цитата й не вигадане джерело — це третій рід, якого в
+# архітектурі не було. Саме він і є той «четвертий шар», що його бракує:
+# реєстр звіряє книгу з джерелами, але не книгу з книгою, а найгірші
+# помилки цього тижня були саме внутрішніми суперечностями (BMP280 у
+# додатку E проти розділу 45).
+#
+# Тож такий запис правомірний, і шар 3 його пропускає. Але перевірити
+# його механічно тут нічим: джерело — сама книга, і потрібен інший
+# інструмент, не цей.
+RE_DZHERELO_VSEREDYNI = re.compile(
+    r"власн\w* (?:код|твердженн|текст)|розділ[ауі]?\s*\d|"
+    r"додат\w+\s+[A-EА-Д]|картк\w+\s+К?\d|"
+    r"manual/|kartky/|dodatky/|inserts/", re.I)
+
+
+def dzherelo_vseredyni(z: dict) -> bool:
+    return bool(RE_DZHERELO_VSEREDYNI.search(str(z.get("dzherelo") or "")))
+
+
 def dzherelo_rozvyazne(z: dict) -> bool:
     """Чи в полі `dzherelo` названо документ, а не властивість світу."""
     d = str(z.get("dzherelo") or "")
     return bool(RE_ADRESA.search(d)
                 or RE_ID_DOKUMENTA.search(d)
-                or RE_NAZVA_DOKUMENTA.search(d))
+                or RE_NAZVA_DOKUMENTA.search(d)
+                or dzherelo_vseredyni(z))
 
 
 # Сторінка-заглушка, віддана з кодом 200. Знахідка М2: `semtech.com`
