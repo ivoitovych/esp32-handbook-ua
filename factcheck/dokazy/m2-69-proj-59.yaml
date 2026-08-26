@@ -1,62 +1,73 @@
-# М2, проект 1 — моніторинг: 6 тверджень класу F
-
-- nazva: "Базовий проєкт із Wi-Fi, I²C, веб-сервером, mDNS, зберіганням стану й обробкою помилок"
-  zbih: 'Це базовий проєкт.*Wi-Fi.*I²C.*веб-сервер.*mDNS'
+- nazva: Базовий проєкт із Wi-Fi, I²C, веб-сервером, mDNS, зберіганням стану й обробкою помилок
+  zbih: Це базовий проєкт.*Wi-Fi.*I²C.*веб-сервер.*mDNS
   klas: A
-  dzherelo: "manual/59-proj-monitor.md, рядок 6"
-  cytata: |
-    Це базовий проєкт: на ньому зустрічаються Wi-Fi, I²C, веб-сервер, 
-    mDNS, зберігання стану й обробка помилок.
-  sposib: "дослівна цитата"
-
-- nazva: "ESP32-S3-DevKitC-1 або classic DevKitC — одиниця в проєкті моніторингу"
-  zbih: 'ESP32-S3-DevKitC-1 або classic DevKitC.*Кількість → 1'
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 6'
+  cytata: "Це базовий проєкт: на ньому зустрічаються Wi-Fi, I²C, веб-сервер, \nmDNS, зберігання стану\
+    \ й обробка помилок.\n"
+  sposib: дослівна цитата
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: ESP32-S3-DevKitC-1 або classic DevKitC — одиниця в проєкті моніторингу
+  zbih: ESP32-S3-DevKitC-1 або classic DevKitC.*Кількість → 1
   klas: A
-  dzherelo: "manual/59-proj-monitor.md, рядок 32"
-  cytata: |
-    | ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
-  sposib: "дослівна цитата з таблиці компонентів"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 32'
+  cytata: '| ESP32-S3-DevKitC-1 або classic DevKitC | 1 | будь-який із Wi-Fi |
 
-- nazva: "Таблиця розпіновки: Сигнал | classic DevKitC | S3-DevKitC-1"
-  zbih: '\| Сигнал \| classic DevKitC \| S3-DevKitC-1 \|'
+    '
+  sposib: дослівна цитата з таблиці компонентів
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: 'Таблиця розпіновки: Сигнал | classic DevKitC | S3-DevKitC-1'
+  zbih: \| Сигнал \| classic DevKitC \| S3-DevKitC-1 \|
   klas: A
-  dzherelo: "manual/59-proj-monitor.md, рядок 46"
-  cytata: |
-    | Сигнал | classic DevKitC | S3-DevKitC-1 |
-  sposib: "дослівна цитата з таблиці розпіновки"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 46'
+  cytata: '| Сигнал | classic DevKitC | S3-DevKitC-1 |
 
-- nazva: "GPIO22 на S3 не існує; запит повертає ESP_ERR_INVALID_ARG без ESP_ERROR_CHECK"
-  zbih: 'GPIO22 на S3 не існує|i2c_new_master_bus.*ESP_ERR_INVALID_ARG|без ESP_ERROR_CHECK'
+    '
+  sposib: дослівна цитата з таблиці розпіновки
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: GPIO22 на S3 не існує; запит повертає ESP_ERR_INVALID_ARG без ESP_ERROR_CHECK
+  zbih: GPIO22 на S3 не існує|i2c_new_master_bus.*ESP_ERR_INVALID_ARG|без ESP_ERROR_CHECK
   klas: A
-  dzherelo: "manual/59-proj-monitor.md, рядки 54–65"
-  cytata: |
-    **`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядки 54–65'
+  cytata: '**`GPIO22` на S3 не існує.** У S3 немає пінів 22–25 узагалі — це
+
     видно прямо в ESP-IDF, де маска дійсних пінів їх вирізає. Схема з
+
     `GPIO22`, перенесена з classic, не запрацює: `i2c_new_master_bus`
+
     поверне `ESP_ERR_INVALID_ARG`, і шина лишиться німою.
 
+
     Драйвер при цьому **називає причину в консолі** — типово, без жодного
+
     налаштування:
+
     E (315) i2c.master: i2c_new_master_bus(1049): invalid SDA/SCL pin number
 
-    Мовчазним воно стає лише тоді, коли код повернення не перевіряють, а лог
-    гортають повз: без `ESP_ERROR_CHECK` програма спокійно йде далі до першої
-    транзакції з дескриптором, якого немає.
-  sposib: "дослівна цитата про критичну помилку розпіновки"
 
-- nazva: "Include драйвера I²C master"
+    Мовчазним воно стає лише тоді, коли код повернення не перевіряють, а лог
+
+    гортають повз: без `ESP_ERROR_CHECK` програма спокійно йде далі до першої
+
+    транзакції з дескриптором, якого немає.
+
+    '
+  sposib: дослівна цитата про критичну помилку розпіновки
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: Include драйвера I²C master
   zbih: '#include "driver/i2c_master.h"'
   klas: A
-  dzherelo: "manual/59-proj-monitor.md, рядок 116"
-  cytata: |
-    #include "driver/i2c_master.h"
-  sposib: "дослівна цитата з коду"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 116'
+  cytata: '#include "driver/i2c_master.h"
 
-- nazva: "Константа для історії: 720 записів (12 годин при вимірюванні раз на хвилину)"
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: 'Константа для історії: 720 записів (12 годин при вимірюванні раз на хвилину)'
   zbih: '#define ISTORIYA\s+720.*12 годин'
   klas: A
-  dzherelo: "manual/59-proj-monitor.md, рядок 266"
-  cytata: |
-    #define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
-  sposib: "дослівна цитата з коду"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/59-proj-monitor.md, рядок 266'
+  cytata: '#define ISTORIYA 720          // 12 годин при вимірюванні раз на хвилину
 
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
