@@ -239,7 +239,7 @@
 
 ---
 
-<!-- fc id:T-K13-017 sha:3a8775e7 src:kartky/k13-zhyvlennya.md:24 klas:F -->
+<!-- fc id:T-K13-017 sha:3a8775e7 src:kartky/k13-zhyvlennya.md:24 klas:A -->
 ### T-K13-017 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -248,7 +248,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с. 51, разом із приміткою 2
+- **Дослівно з джерела:**
+  > Table 5-2. Recommended Power Supply Characteristics
+  > Parameter                          Description                     Min       Typ   Max  Unit
+  > VDDA, VDD3P3_RTC, VDD3P3,     Voltage applied to power
+  > VDD_SDIO (3.3 V mode)         supply pins per power domain   2.3/3.0 [2]     3.3   3.6   V
+  > 
+  > [2] • Chips with a 3.3 V flash or PSRAM in-package: this minimum voltage is 3.0 V;
+  >     • Chips with no flash or PSRAM in-package: this minimum voltage is 2.3 V.
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Поріг «не нижче 3.0 В» у картці К13 збігається з нижньою межею джерела для чипів із флешем у корпусі — тобто саме для того випадку, який тримає в руках читач: модуль із флешем.
+Примітка 2 додає те, чого в книзі немає й що варте рядка: для чипів **без** флешу в корпусі нижня межа 2.3 В. Різниця не академічна — вона пояснює, чому та сама просадка на одній платі валить завантаження, а на іншій ні.
+- **Прохід:** m2-06-napruga-mezhi
 
 ---
 

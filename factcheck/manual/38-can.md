@@ -803,7 +803,7 @@
 
 ---
 
-<!-- fc id:T-38-050 sha:8b2ded9f src:manual/38-can.md:119 klas:F -->
+<!-- fc id:T-38-050 sha:8b2ded9f src:manual/38-can.md:119 klas:A -->
 ### T-38-050 · proza · рядок 119
 
 **Книга каже, дослівно:**
@@ -812,7 +812,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
+  >                               the bus (No transmissions or
+  >                               acknowledgments) but can receive
+  >                               messages */
+  > TWAI_MODE_NO_ACK,        /**< Transmission does not require
+  >                               acknowledgment. Use this mode for self
+  >                               testing */
+  > 
+  > (twai.rst)
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.
+  > Therefore, an external transceiver is required to connect to a TWAI
+  > bus.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Опис `LISTEN_ONLY` у заголовку сильніший за формулювання книги: не просто «слухає», а **не впливає на шину зовсім** — ні передачею, ні підтвердженням. Саме друге й робить режим безпечним для чужої машини: вузол, що підтверджує чужі кадри, уже втручається.
+«Трансивер обов'язковий» підтверджено. Друга половина того ж твердження — «має бути на 3.3 В, інакше спалить пін» — потребує datasheet, і агент чесно виніс її окремо. Вона в наряді М2.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -875,7 +893,7 @@
 
 ---
 
-<!-- fc id:T-38-055 sha:5b819334 src:manual/38-can.md:133 klas:F -->
+<!-- fc id:T-38-055 sha:5b819334 src:manual/38-can.md:133 klas:A -->
 ### T-38-055 · proza · рядок 133
 
 **Книга каже, дослівно:**
@@ -884,7 +902,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
+  >                               the bus (No transmissions or
+  >                               acknowledgments) but can receive
+  >                               messages */
+  > TWAI_MODE_NO_ACK,        /**< Transmission does not require
+  >                               acknowledgment. Use this mode for self
+  >                               testing */
+  > 
+  > (twai.rst)
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.
+  > Therefore, an external transceiver is required to connect to a TWAI
+  > bus.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Опис `LISTEN_ONLY` у заголовку сильніший за формулювання книги: не просто «слухає», а **не впливає на шину зовсім** — ні передачею, ні підтвердженням. Саме друге й робить режим безпечним для чужої машини: вузол, що підтверджує чужі кадри, уже втручається.
+«Трансивер обов'язковий» підтверджено. Друга половина того ж твердження — «має бути на 3.3 В, інакше спалить пін» — потребує datasheet, і агент чесно виніс її окремо. Вона в наряді М2.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1084,7 +1120,7 @@
 
 ---
 
-<!-- fc id:T-38-067 sha:823d32fa src:manual/38-can.md:163 klas:F -->
+<!-- fc id:T-38-067 sha:823d32fa src:manual/38-can.md:163 klas:A -->
 ### T-38-067 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -1093,7 +1129,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
+  >                               the bus (No transmissions or
+  >                               acknowledgments) but can receive
+  >                               messages */
+  > TWAI_MODE_NO_ACK,        /**< Transmission does not require
+  >                               acknowledgment. Use this mode for self
+  >                               testing */
+  > 
+  > (twai.rst)
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.
+  > Therefore, an external transceiver is required to connect to a TWAI
+  > bus.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Опис `LISTEN_ONLY` у заголовку сильніший за формулювання книги: не просто «слухає», а **не впливає на шину зовсім** — ні передачею, ні підтвердженням. Саме друге й робить режим безпечним для чужої машини: вузол, що підтверджує чужі кадри, уже втручається.
+«Трансивер обов'язковий» підтверджено. Друга половина того ж твердження — «має бути на 3.3 В, інакше спалить пін» — потребує datasheet, і агент чесно виніс її окремо. Вона в наряді М2.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1288,7 +1342,7 @@
 
 ---
 
-<!-- fc id:T-38-082 sha:1c9e018a src:manual/38-can.md:199 klas:F -->
+<!-- fc id:T-38-082 sha:1c9e018a src:manual/38-can.md:199 klas:A -->
 ### T-38-082 · proza · рядок 199
 
 **Книга каже, дослівно:**
@@ -1297,7 +1351,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
+  >                               the bus (No transmissions or
+  >                               acknowledgments) but can receive
+  >                               messages */
+  > TWAI_MODE_NO_ACK,        /**< Transmission does not require
+  >                               acknowledgment. Use this mode for self
+  >                               testing */
+  > 
+  > (twai.rst)
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.
+  > Therefore, an external transceiver is required to connect to a TWAI
+  > bus.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Опис `LISTEN_ONLY` у заголовку сильніший за формулювання книги: не просто «слухає», а **не впливає на шину зовсім** — ні передачею, ні підтвердженням. Саме друге й робить режим безпечним для чужої машини: вузол, що підтверджує чужі кадри, уже втручається.
+«Трансивер обов'язковий» підтверджено. Друга половина того ж твердження — «має бути на 3.3 В, інакше спалить пін» — потребує datasheet, і агент чесно виніс її окремо. Вона в наряді М2.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1370,7 +1442,7 @@
 
 ---
 
-<!-- fc id:T-38-086 sha:402c360c src:manual/38-can.md:210 klas:F -->
+<!-- fc id:T-38-086 sha:402c360c src:manual/38-can.md:210 klas:A -->
 ### T-38-086 · proza · рядок 210
 
 **Книга каже, дослівно:**
@@ -1379,7 +1451,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h та .../docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
+  >                               the bus (No transmissions or
+  >                               acknowledgments) but can receive
+  >                               messages */
+  > TWAI_MODE_NO_ACK,        /**< Transmission does not require
+  >                               acknowledgment. Use this mode for self
+  >                               testing */
+  > 
+  > (twai.rst)
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.
+  > Therefore, an external transceiver is required to connect to a TWAI
+  > bus.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Опис `LISTEN_ONLY` у заголовку сильніший за формулювання книги: не просто «слухає», а **не впливає на шину зовсім** — ні передачею, ні підтвердженням. Саме друге й робить режим безпечним для чужої машини: вузол, що підтверджує чужі кадри, уже втручається.
+«Трансивер обов'язковий» підтверджено. Друга половина того ж твердження — «має бути на 3.3 В, інакше спалить пін» — потребує datasheet, і агент чесно виніс її окремо. Вона в наряді М2.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 

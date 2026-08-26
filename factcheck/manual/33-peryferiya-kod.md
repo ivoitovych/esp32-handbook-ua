@@ -1454,7 +1454,7 @@
 
 ---
 
-<!-- fc id:T-33-073 sha:c630370e src:manual/33-peryferiya-kod.md:176 klas:F -->
+<!-- fc id:T-33-073 sha:c630370e src:manual/33-peryferiya-kod.md:176 klas:A -->
 ### T-33-073 · proza · рядок 176
 
 **Книга каже, дослівно:**
@@ -1463,7 +1463,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1775,7 +1801,7 @@
 
 ---
 
-<!-- fc id:T-33-090 sha:b512ca80 src:manual/33-peryferiya-kod.md:219 klas:F -->
+<!-- fc id:T-33-090 sha:b512ca80 src:manual/33-peryferiya-kod.md:219 klas:A -->
 ### T-33-090 · proza · рядок 219
 
 **Книга каже, дослівно:**
@@ -1784,7 +1810,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -2016,7 +2068,7 @@
 
 ---
 
-<!-- fc id:T-33-104 sha:7d1e31c2 src:manual/33-peryferiya-kod.md:245 klas:F -->
+<!-- fc id:T-33-104 sha:7d1e31c2 src:manual/33-peryferiya-kod.md:245 klas:A -->
 ### T-33-104 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -2025,7 +2077,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -2163,7 +2241,7 @@
 
 ---
 
-<!-- fc id:T-33-115 sha:2d6128fe src:manual/33-peryferiya-kod.md:268 klas:F -->
+<!-- fc id:T-33-115 sha:2d6128fe src:manual/33-peryferiya-kod.md:268 klas:A -->
 ### T-33-115 · komirka · рядок 268
 
 **Книга каже, дослівно:**
@@ -2172,11 +2250,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
-<!-- fc id:T-33-116 sha:7d1d509e src:manual/33-peryferiya-kod.md:268 klas:F -->
+<!-- fc id:T-33-116 sha:7d1d509e src:manual/33-peryferiya-kod.md:268 klas:A -->
 ### T-33-116 · komirka · рядок 268
 
 **Книга каже, дослівно:**
@@ -2185,11 +2289,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
-<!-- fc id:T-33-117 sha:7afccfc4 src:manual/33-peryferiya-kod.md:269 klas:F -->
+<!-- fc id:T-33-117 sha:7afccfc4 src:manual/33-peryferiya-kod.md:269 klas:A -->
 ### T-33-117 · komirka · рядок 269
 
 **Книга каже, дослівно:**
@@ -2198,11 +2328,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
-<!-- fc id:T-33-118 sha:69208de8 src:manual/33-peryferiya-kod.md:269 klas:F -->
+<!-- fc id:T-33-118 sha:69208de8 src:manual/33-peryferiya-kod.md:269 klas:A -->
 ### T-33-118 · komirka · рядок 269
 
 **Книга каже, дослівно:**
@@ -2211,7 +2367,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+- **Дослівно з джерела:**
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 

@@ -222,7 +222,7 @@
 
 ---
 
-<!-- fc id:T-18-013 sha:15620348 src:manual/18-rozdily-fleshu.md:26 klas:F -->
+<!-- fc id:T-18-013 sha:15620348 src:manual/18-rozdily-fleshu.md:26 klas:A -->
 ### T-18-013 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -231,11 +231,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
+- **Дослівно з джерела:**
+  > # ESP-IDF Partition Table
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     0x9000,  0x6000,
+  > phy_init, data, phy,     0xf000,  0x1000,
+  > factory,  app,  factory, 0x10000, 1M,
+  > 
+  > In both cases the factory app is flashed at offset 0x10000.
+  > 
+  > Sizes and offsets can be specified as decimal numbers, hex numbers
+  > with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+  > bytes).
+  > 
+  > (bootloader_utility.c)
+  > ESP_LOGI(TAG, "Partition Table:");
+  > ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+  > …
+  > ESP_LOGI(TAG, "End of partition table");
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, — рядок у рядок.
+Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів; тепер це підтверджено не документацією, а самою функцією, яка це друкує.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
-<!-- fc id:T-18-014 sha:8f0dd715 src:manual/18-rozdily-fleshu.md:26 klas:F -->
+<!-- fc id:T-18-014 sha:8f0dd715 src:manual/18-rozdily-fleshu.md:26 klas:A -->
 ### T-18-014 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -244,7 +267,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
+- **Дослівно з джерела:**
+  > # ESP-IDF Partition Table
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     0x9000,  0x6000,
+  > phy_init, data, phy,     0xf000,  0x1000,
+  > factory,  app,  factory, 0x10000, 1M,
+  > 
+  > In both cases the factory app is flashed at offset 0x10000.
+  > 
+  > Sizes and offsets can be specified as decimal numbers, hex numbers
+  > with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+  > bytes).
+  > 
+  > (bootloader_utility.c)
+  > ESP_LOGI(TAG, "Partition Table:");
+  > ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+  > …
+  > ESP_LOGI(TAG, "End of partition table");
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, — рядок у рядок.
+Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів; тепер це підтверджено не документацією, а самою функцією, яка це друкує.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -305,7 +351,7 @@
 
 ---
 
-<!-- fc id:T-18-018 sha:d76b708c src:manual/18-rozdily-fleshu.md:27 klas:F -->
+<!-- fc id:T-18-018 sha:d76b708c src:manual/18-rozdily-fleshu.md:27 klas:A -->
 ### T-18-018 · komirka · рядок 27
 
 **Книга каже, дослівно:**
@@ -314,7 +360,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
+- **Дослівно з джерела:**
+  > # ESP-IDF Partition Table
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     0x9000,  0x6000,
+  > phy_init, data, phy,     0xf000,  0x1000,
+  > factory,  app,  factory, 0x10000, 1M,
+  > 
+  > In both cases the factory app is flashed at offset 0x10000.
+  > 
+  > Sizes and offsets can be specified as decimal numbers, hex numbers
+  > with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+  > bytes).
+  > 
+  > (bootloader_utility.c)
+  > ESP_LOGI(TAG, "Partition Table:");
+  > ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+  > …
+  > ESP_LOGI(TAG, "End of partition table");
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, — рядок у рядок.
+Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів; тепер це підтверджено не документацією, а самою функцією, яка це друкує.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -445,7 +514,7 @@
 
 ---
 
-<!-- fc id:T-18-025 sha:6ad702cc src:manual/18-rozdily-fleshu.md:33 klas:F -->
+<!-- fc id:T-18-025 sha:6ad702cc src:manual/18-rozdily-fleshu.md:33 klas:A -->
 ### T-18-025 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -454,7 +523,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
+- **Дослівно з джерела:**
+  > # ESP-IDF Partition Table
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     0x9000,  0x6000,
+  > phy_init, data, phy,     0xf000,  0x1000,
+  > factory,  app,  factory, 0x10000, 1M,
+  > 
+  > In both cases the factory app is flashed at offset 0x10000.
+  > 
+  > Sizes and offsets can be specified as decimal numbers, hex numbers
+  > with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+  > bytes).
+  > 
+  > (bootloader_utility.c)
+  > ESP_LOGI(TAG, "Partition Table:");
+  > ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+  > …
+  > ESP_LOGI(TAG, "End of partition table");
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, — рядок у рядок.
+Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів; тепер це підтверджено не документацією, а самою функцією, яка це друкує.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -471,7 +563,7 @@
 
 ---
 
-<!-- fc id:T-18-027 sha:20700e13 src:manual/18-rozdily-fleshu.md:37 klas:F -->
+<!-- fc id:T-18-027 sha:20700e13 src:manual/18-rozdily-fleshu.md:37 klas:A -->
 ### T-18-027 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -480,7 +572,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > (partition-tables.rst)
+  > Note that updating the partition table does not erase data that may
+  > have been stored according to the old partition table. You can use
+  > ``idf.py erase-flash`` (or ``esptool.py erase_flash``) to erase the
+  > entire flash contents.
+  > 
+  > (basic-commands.rst)
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  >     esptool erase-flash
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Порада книги підтверджена з обох боків: документація прямо каже, що зміна таблиці **не стирає** даних за старою розбивкою, а `erase-flash` замінює все на `0xFF`.
+Агент чесно позначив, що «незворотний» — висновок книги, а не речення джерела. Погоджуюся й лишаю клас `A`: із «все замінюється на `0xFF`» незворотність випливає однозначно, а не правдоподібно. Межа між `A` і `B` тут саме в цьому — чи є інший можливий висновок. Тут немає.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -706,7 +813,7 @@
 
 ---
 
-<!-- fc id:T-18-041 sha:d9cb149f src:manual/18-rozdily-fleshu.md:76 klas:F -->
+<!-- fc id:T-18-041 sha:d9cb149f src:manual/18-rozdily-fleshu.md:76 klas:A -->
 ### T-18-041 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -715,7 +822,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
+- **Дослівно з джерела:**
+  > # ESP-IDF Partition Table
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     0x9000,  0x6000,
+  > phy_init, data, phy,     0xf000,  0x1000,
+  > factory,  app,  factory, 0x10000, 1M,
+  > 
+  > In both cases the factory app is flashed at offset 0x10000.
+  > 
+  > Sizes and offsets can be specified as decimal numbers, hex numbers
+  > with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+  > bytes).
+  > 
+  > (bootloader_utility.c)
+  > ESP_LOGI(TAG, "Partition Table:");
+  > ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+  > …
+  > ESP_LOGI(TAG, "End of partition table");
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, — рядок у рядок.
+Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів; тепер це підтверджено не документацією, а самою функцією, яка це друкує.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1839,7 +1969,7 @@
 
 ---
 
-<!-- fc id:T-18-110 sha:9b05e136 src:manual/18-rozdily-fleshu.md:206 klas:F -->
+<!-- fc id:T-18-110 sha:9b05e136 src:manual/18-rozdily-fleshu.md:206 klas:A -->
 ### T-18-110 · proza · рядок 206
 
 **Книга каже, дослівно:**
@@ -1848,7 +1978,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > (partition-tables.rst)
+  > Note that updating the partition table does not erase data that may
+  > have been stored according to the old partition table. You can use
+  > ``idf.py erase-flash`` (or ``esptool.py erase_flash``) to erase the
+  > entire flash contents.
+  > 
+  > (basic-commands.rst)
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  >     esptool erase-flash
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Порада книги підтверджена з обох боків: документація прямо каже, що зміна таблиці **не стирає** даних за старою розбивкою, а `erase-flash` замінює все на `0xFF`.
+Агент чесно позначив, що «незворотний» — висновок книги, а не речення джерела. Погоджуюся й лишаю клас `A`: із «все замінюється на `0xFF`» незворотність випливає однозначно, а не правдоподібно. Межа між `A` і `B` тут саме в цьому — чи є інший можливий висновок. Тут немає.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -2042,7 +2187,7 @@
 
 ---
 
-<!-- fc id:T-18-121 sha:11073fc5 src:manual/18-rozdily-fleshu.md:233 klas:F -->
+<!-- fc id:T-18-121 sha:11073fc5 src:manual/18-rozdily-fleshu.md:233 klas:A -->
 ### T-18-121 · proza · рядок 233
 
 **Книга каже, дослівно:**
@@ -2051,7 +2196,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
+- **Дослівно з джерела:**
+  > # ESP-IDF Partition Table
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     0x9000,  0x6000,
+  > phy_init, data, phy,     0xf000,  0x1000,
+  > factory,  app,  factory, 0x10000, 1M,
+  > 
+  > In both cases the factory app is flashed at offset 0x10000.
+  > 
+  > Sizes and offsets can be specified as decimal numbers, hex numbers
+  > with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+  > bytes).
+  > 
+  > (bootloader_utility.c)
+  > ESP_LOGI(TAG, "Partition Table:");
+  > ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+  > …
+  > ESP_LOGI(TAG, "End of partition table");
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, — рядок у рядок.
+Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів; тепер це підтверджено не документацією, а самою функцією, яка це друкує.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -2068,7 +2236,7 @@
 
 ---
 
-<!-- fc id:T-18-123 sha:c0b50278 src:manual/18-rozdily-fleshu.md:236 klas:F -->
+<!-- fc id:T-18-123 sha:c0b50278 src:manual/18-rozdily-fleshu.md:236 klas:A -->
 ### T-18-123 · proza · рядок 236
 
 **Книга каже, дослівно:**
@@ -2077,7 +2245,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > (partition-tables.rst)
+  > Note that updating the partition table does not erase data that may
+  > have been stored according to the old partition table. You can use
+  > ``idf.py erase-flash`` (or ``esptool.py erase_flash``) to erase the
+  > entire flash contents.
+  > 
+  > (basic-commands.rst)
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  >     esptool erase-flash
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Порада книги підтверджена з обох боків: документація прямо каже, що зміна таблиці **не стирає** даних за старою розбивкою, а `erase-flash` замінює все на `0xFF`.
+Агент чесно позначив, що «незворотний» — висновок книги, а не речення джерела. Погоджуюся й лишаю клас `A`: із «все замінюється на `0xFF`» незворотність випливає однозначно, а не правдоподібно. Межа між `A` і `B` тут саме в цьому — чи є інший можливий висновок. Тут немає.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 

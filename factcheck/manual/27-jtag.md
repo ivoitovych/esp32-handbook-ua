@@ -387,7 +387,7 @@
 
 ---
 
-<!-- fc id:T-27-019 sha:8cc98f12 src:manual/27-jtag.md:41 klas:F -->
+<!-- fc id:T-27-019 sha:8cc98f12 src:manual/27-jtag.md:41 klas:A -->
 ### T-27-019 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -396,7 +396,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst та .../docs/en/security/secure-boot-v2.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_JTAG_PIN_Dneg: … esp32c3="GPIO18", esp32s3="GPIO19", …}
+  > {IDF_TARGET_JTAG_PIN_Dpos: … esp32c3="GPIO19", esp32s3="GPIO20", …}
+  > 
+  > (secure-boot-v2.rst)
+  > By default, when Secure Boot is enabled, JTAG debugging is disabled
+  > via eFuse. The bootloader does this on the first boot, at the same
+  > time it enables Secure Boot.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Піни збіглися. Але друга половина запису важливіша: Secure Boot вимикає JTAG **сам**, при першому ж старті, без окремої команди.
+Книга писала «якщо попередній власник спалив `JTAG_DISABLE` **або** ввімкнув Secure Boot» — і це «або» тепер підтверджене джерелом, а не здогадкою. Для розділу 24 (чужа прошивка) це прямий наслідок: на пристрої з Secure Boot відлагоджувача не буде ніколи, і шукати несправність адаптера немає сенсу.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -651,7 +664,7 @@
 
 ---
 
-<!-- fc id:T-27-035 sha:ffd6b926 src:manual/27-jtag.md:85 klas:F -->
+<!-- fc id:T-27-035 sha:ffd6b926 src:manual/27-jtag.md:85 klas:A -->
 ### T-27-035 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -660,11 +673,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst та .../docs/en/api-reference/peripherals/gpio/esp32.inc, .../docs/en/api-guides/jtag-debugging/esp32.inc
+- **Дослівно з джерела:**
+  > (esp32.inc, jtag-pins)
+  > * - MTDO / GPIO15  - TDO
+  > * - MTDI / GPIO12  - TDI
+  > * - MTCK / GPIO13  - TCK
+  > * - MTMS / GPIO14  - TMS
+  > 
+  > (gpio/esp32.inc)
+  > Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO)
+  > are strapping pins.
+  > 
+  > (tips-and-quirks.rst)
+  > The MTDI pin of ESP32, being among four pins used for JTAG
+  > communication, is also one of ESP32's bootstrapping pins. On power up
+  > ESP32 is sampling binary level on MTDI to set it's internal voltage
+  > regulator used to supply power to external SPI flash chip. If binary
+  > level on MDTI pin on power up is low, the voltage regulator is set to
+  > deliver 3.3 V, if it is high, then the voltage is set to 1.8 V. …
+  > Once JTAG is connected, it overrides the pull-up or pull-down
+  > resistor that is supposed to do the bootstrapping.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше тут — останнє речення `tips-and-quirks.rst`: **під'єднаний JTAG перекриває той самий резистор, який мав зробити strapping**. Це механізм, якого книзі бракувало: вона казала «адаптер може утримувати пін високим», а джерело каже сильніше — адаптер узагалі відбирає в підтягування право голосу.
+Тобто порада розділу 27 «від'єднати адаптер і перевірити, що плата стартує без нього» — не обхідний шлях, а єдиний спосіб побачити справжній рівень strapping.
+Прохід 24 закрив ці піни з `io_mux_reg.h` (де ім'я регістра є іменем сигналу); тут вони підтверджені вдруге з документації, і додався механізм.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
-<!-- fc id:T-27-036 sha:20c682b0 src:manual/27-jtag.md:85 klas:F -->
+<!-- fc id:T-27-036 sha:20c682b0 src:manual/27-jtag.md:85 klas:A -->
 ### T-27-036 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -673,7 +712,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst та .../docs/en/api-reference/peripherals/gpio/esp32.inc, .../docs/en/api-guides/jtag-debugging/esp32.inc
+- **Дослівно з джерела:**
+  > (esp32.inc, jtag-pins)
+  > * - MTDO / GPIO15  - TDO
+  > * - MTDI / GPIO12  - TDI
+  > * - MTCK / GPIO13  - TCK
+  > * - MTMS / GPIO14  - TMS
+  > 
+  > (gpio/esp32.inc)
+  > Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO)
+  > are strapping pins.
+  > 
+  > (tips-and-quirks.rst)
+  > The MTDI pin of ESP32, being among four pins used for JTAG
+  > communication, is also one of ESP32's bootstrapping pins. On power up
+  > ESP32 is sampling binary level on MTDI to set it's internal voltage
+  > regulator used to supply power to external SPI flash chip. If binary
+  > level on MDTI pin on power up is low, the voltage regulator is set to
+  > deliver 3.3 V, if it is high, then the voltage is set to 1.8 V. …
+  > Once JTAG is connected, it overrides the pull-up or pull-down
+  > resistor that is supposed to do the bootstrapping.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше тут — останнє речення `tips-and-quirks.rst`: **під'єднаний JTAG перекриває той самий резистор, який мав зробити strapping**. Це механізм, якого книзі бракувало: вона казала «адаптер може утримувати пін високим», а джерело каже сильніше — адаптер узагалі відбирає в підтягування право голосу.
+Тобто порада розділу 27 «від'єднати адаптер і перевірити, що плата стартує без нього» — не обхідний шлях, а єдиний спосіб побачити справжній рівень strapping.
+Прохід 24 закрив ці піни з `io_mux_reg.h` (де ім'я регістра є іменем сигналу); тут вони підтверджені вдруге з документації, і додався механізм.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1086,7 +1151,7 @@
 
 ---
 
-<!-- fc id:T-27-062 sha:1ff00cfb src:manual/27-jtag.md:139 klas:F -->
+<!-- fc id:T-27-062 sha:1ff00cfb src:manual/27-jtag.md:139 klas:A -->
 ### T-27-062 · proza · рядок 139
 
 **Книга каже, дослівно:**
@@ -1095,7 +1160,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst та .../docs/en/api-reference/peripherals/gpio/esp32.inc, .../docs/en/api-guides/jtag-debugging/esp32.inc
+- **Дослівно з джерела:**
+  > (esp32.inc, jtag-pins)
+  > * - MTDO / GPIO15  - TDO
+  > * - MTDI / GPIO12  - TDI
+  > * - MTCK / GPIO13  - TCK
+  > * - MTMS / GPIO14  - TMS
+  > 
+  > (gpio/esp32.inc)
+  > Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO)
+  > are strapping pins.
+  > 
+  > (tips-and-quirks.rst)
+  > The MTDI pin of ESP32, being among four pins used for JTAG
+  > communication, is also one of ESP32's bootstrapping pins. On power up
+  > ESP32 is sampling binary level on MTDI to set it's internal voltage
+  > regulator used to supply power to external SPI flash chip. If binary
+  > level on MDTI pin on power up is low, the voltage regulator is set to
+  > deliver 3.3 V, if it is high, then the voltage is set to 1.8 V. …
+  > Once JTAG is connected, it overrides the pull-up or pull-down
+  > resistor that is supposed to do the bootstrapping.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше тут — останнє речення `tips-and-quirks.rst`: **під'єднаний JTAG перекриває той самий резистор, який мав зробити strapping**. Це механізм, якого книзі бракувало: вона казала «адаптер може утримувати пін високим», а джерело каже сильніше — адаптер узагалі відбирає в підтягування право голосу.
+Тобто порада розділу 27 «від'єднати адаптер і перевірити, що плата стартує без нього» — не обхідний шлях, а єдиний спосіб побачити справжній рівень strapping.
+Прохід 24 закрив ці піни з `io_mux_reg.h` (де ім'я регістра є іменем сигналу); тут вони підтверджені вдруге з документації, і додався механізм.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1134,7 +1225,7 @@
 
 ---
 
-<!-- fc id:T-27-064 sha:bf544428 src:manual/27-jtag.md:139 klas:F -->
+<!-- fc id:T-27-064 sha:bf544428 src:manual/27-jtag.md:139 klas:A -->
 ### T-27-064 · proza · рядок 139
 
 **Книга каже, дослівно:**
@@ -1143,7 +1234,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst та .../docs/en/security/secure-boot-v2.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_JTAG_PIN_Dneg: … esp32c3="GPIO18", esp32s3="GPIO19", …}
+  > {IDF_TARGET_JTAG_PIN_Dpos: … esp32c3="GPIO19", esp32s3="GPIO20", …}
+  > 
+  > (secure-boot-v2.rst)
+  > By default, when Secure Boot is enabled, JTAG debugging is disabled
+  > via eFuse. The bootloader does this on the first boot, at the same
+  > time it enables Secure Boot.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Піни збіглися. Але друга половина запису важливіша: Secure Boot вимикає JTAG **сам**, при першому ж старті, без окремої команди.
+Книга писала «якщо попередній власник спалив `JTAG_DISABLE` **або** ввімкнув Secure Boot» — і це «або» тепер підтверджене джерелом, а не здогадкою. Для розділу 24 (чужа прошивка) це прямий наслідок: на пристрої з Secure Boot відлагоджувача не буде ніколи, і шукати несправність адаптера немає сенсу.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1273,7 +1377,7 @@
 
 ---
 
-<!-- fc id:T-27-073 sha:81cbc7e9 src:manual/27-jtag.md:168 klas:F -->
+<!-- fc id:T-27-073 sha:81cbc7e9 src:manual/27-jtag.md:168 klas:A -->
 ### T-27-073 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -1282,7 +1386,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst та .../docs/en/api-reference/peripherals/gpio/esp32.inc, .../docs/en/api-guides/jtag-debugging/esp32.inc
+- **Дослівно з джерела:**
+  > (esp32.inc, jtag-pins)
+  > * - MTDO / GPIO15  - TDO
+  > * - MTDI / GPIO12  - TDI
+  > * - MTCK / GPIO13  - TCK
+  > * - MTMS / GPIO14  - TMS
+  > 
+  > (gpio/esp32.inc)
+  > Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO)
+  > are strapping pins.
+  > 
+  > (tips-and-quirks.rst)
+  > The MTDI pin of ESP32, being among four pins used for JTAG
+  > communication, is also one of ESP32's bootstrapping pins. On power up
+  > ESP32 is sampling binary level on MTDI to set it's internal voltage
+  > regulator used to supply power to external SPI flash chip. If binary
+  > level on MDTI pin on power up is low, the voltage regulator is set to
+  > deliver 3.3 V, if it is high, then the voltage is set to 1.8 V. …
+  > Once JTAG is connected, it overrides the pull-up or pull-down
+  > resistor that is supposed to do the bootstrapping.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Найцінніше тут — останнє речення `tips-and-quirks.rst`: **під'єднаний JTAG перекриває той самий резистор, який мав зробити strapping**. Це механізм, якого книзі бракувало: вона казала «адаптер може утримувати пін високим», а джерело каже сильніше — адаптер узагалі відбирає в підтягування право голосу.
+Тобто порада розділу 27 «від'єднати адаптер і перевірити, що плата стартує без нього» — не обхідний шлях, а єдиний спосіб побачити справжній рівень strapping.
+Прохід 24 закрив ці піни з `io_mux_reg.h` (де ім'я регістра є іменем сигналу); тут вони підтверджені вдруге з документації, і додався механізм.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 

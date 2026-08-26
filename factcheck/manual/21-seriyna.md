@@ -1048,7 +1048,7 @@
 
 ---
 
-<!-- fc id:T-21-052 sha:b0a670d8 src:manual/21-seriyna.md:120 klas:F -->
+<!-- fc id:T-21-052 sha:b0a670d8 src:manual/21-seriyna.md:120 klas:A -->
 ### T-21-052 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -1057,7 +1057,30 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
+- **Дослівно з джерела:**
+  > # ESP-IDF Partition Table
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     0x9000,  0x6000,
+  > phy_init, data, phy,     0xf000,  0x1000,
+  > factory,  app,  factory, 0x10000, 1M,
+  > 
+  > In both cases the factory app is flashed at offset 0x10000.
+  > 
+  > Sizes and offsets can be specified as decimal numbers, hex numbers
+  > with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+  > bytes).
+  > 
+  > (bootloader_utility.c)
+  > ESP_LOGI(TAG, "Partition Table:");
+  > ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+  > …
+  > ESP_LOGI(TAG, "End of partition table");
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, — рядок у рядок.
+Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів; тепер це підтверджено не документацією, а самою функцією, яка це друкує.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 

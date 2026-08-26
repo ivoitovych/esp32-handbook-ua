@@ -273,7 +273,7 @@
 
 ---
 
-<!-- fc id:T-25-020 sha:caa5c47e src:manual/25-log.md:26 klas:F -->
+<!-- fc id:T-25-020 sha:caa5c47e src:manual/25-log.md:26 klas:A -->
 ### T-25-020 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -282,7 +282,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level, .../components/esp_common/include/esp_err.h, .../components/esp_driver_i2c/include/driver/i2c_master.h, .../docs/en/api-guides/tools/idf-monitor.rst
+- **Дослівно з джерела:**
+  > (Kconfig.level)
+  > choice LOG_DEFAULT_LEVEL
+  >     bool "Default log verbosity"
+  >     default LOG_DEFAULT_LEVEL_INFO
+  > 
+  > (esp_err.h)
+  > const char *esp_err_to_name(esp_err_t code);
+  > #define ESP_ERR_NOT_FOUND           0x105
+  > 
+  > (i2c_master.h)
+  > *      - ESP_ERR_NOT_FOUND: I2C probe failed, doesn't find the device
+  > *        with specific address you gave.
+  > 
+  > (idf-monitor.rst)
+  > Whenever the chip outputs a hexadecimal address that points to
+  > executable code, IDF monitor looks up the location in the source code
+  > (file name and line number) and prints the location on the next line
+  > in yellow.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Збіг, вартий окремої згадки: книга бере `0x105` як приклад нерозшифрованого коду помилки, і `0x105` — це саме `ESP_ERR_NOT_FOUND`, який повертає `i2c_master_probe`, коли пристрою на шині немає. Тобто приклад книги випадково (чи ні) точно збігся з найчастішим випадком, у якому читач це число й побачить.
+Так само підтверджено, що монітор шукає адресу у **вихідному коді** й друкує файл і рядок — це те, що книга називає «розшифровує backtrace».
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1025,7 +1049,7 @@
 
 ---
 
-<!-- fc id:T-25-063 sha:c92e7fce src:manual/25-log.md:127 klas:F -->
+<!-- fc id:T-25-063 sha:c92e7fce src:manual/25-log.md:127 klas:A -->
 ### T-25-063 · tablycya · рядок 127
 
 **Книга каже, дослівно:**
@@ -1034,7 +1058,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level, .../components/esp_common/include/esp_err.h, .../components/esp_driver_i2c/include/driver/i2c_master.h, .../docs/en/api-guides/tools/idf-monitor.rst
+- **Дослівно з джерела:**
+  > (Kconfig.level)
+  > choice LOG_DEFAULT_LEVEL
+  >     bool "Default log verbosity"
+  >     default LOG_DEFAULT_LEVEL_INFO
+  > 
+  > (esp_err.h)
+  > const char *esp_err_to_name(esp_err_t code);
+  > #define ESP_ERR_NOT_FOUND           0x105
+  > 
+  > (i2c_master.h)
+  > *      - ESP_ERR_NOT_FOUND: I2C probe failed, doesn't find the device
+  > *        with specific address you gave.
+  > 
+  > (idf-monitor.rst)
+  > Whenever the chip outputs a hexadecimal address that points to
+  > executable code, IDF monitor looks up the location in the source code
+  > (file name and line number) and prints the location on the next line
+  > in yellow.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Збіг, вартий окремої згадки: книга бере `0x105` як приклад нерозшифрованого коду помилки, і `0x105` — це саме `ESP_ERR_NOT_FOUND`, який повертає `i2c_master_probe`, коли пристрою на шині немає. Тобто приклад книги випадково (чи ні) точно збігся з найчастішим випадком, у якому читач це число й побачить.
+Так само підтверджено, що монітор шукає адресу у **вихідному коді** й друкує файл і рядок — це те, що книга називає «розшифровує backtrace».
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1397,7 +1445,7 @@
 
 ---
 
-<!-- fc id:T-25-078 sha:f3392a90 src:manual/25-log.md:165 klas:F -->
+<!-- fc id:T-25-078 sha:f3392a90 src:manual/25-log.md:165 klas:A -->
 ### T-25-078 · proza · рядок 165
 
 **Книга каже, дослівно:**
@@ -1406,7 +1454,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level, .../components/esp_common/include/esp_err.h, .../components/esp_driver_i2c/include/driver/i2c_master.h, .../docs/en/api-guides/tools/idf-monitor.rst
+- **Дослівно з джерела:**
+  > (Kconfig.level)
+  > choice LOG_DEFAULT_LEVEL
+  >     bool "Default log verbosity"
+  >     default LOG_DEFAULT_LEVEL_INFO
+  > 
+  > (esp_err.h)
+  > const char *esp_err_to_name(esp_err_t code);
+  > #define ESP_ERR_NOT_FOUND           0x105
+  > 
+  > (i2c_master.h)
+  > *      - ESP_ERR_NOT_FOUND: I2C probe failed, doesn't find the device
+  > *        with specific address you gave.
+  > 
+  > (idf-monitor.rst)
+  > Whenever the chip outputs a hexadecimal address that points to
+  > executable code, IDF monitor looks up the location in the source code
+  > (file name and line number) and prints the location on the next line
+  > in yellow.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Збіг, вартий окремої згадки: книга бере `0x105` як приклад нерозшифрованого коду помилки, і `0x105` — це саме `ESP_ERR_NOT_FOUND`, який повертає `i2c_master_probe`, коли пристрою на шині немає. Тобто приклад книги випадково (чи ні) точно збігся з найчастішим випадком, у якому читач це число й побачить.
+Так само підтверджено, що монітор шукає адресу у **вихідному коді** й друкує файл і рядок — це те, що книга називає «розшифровує backtrace».
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 

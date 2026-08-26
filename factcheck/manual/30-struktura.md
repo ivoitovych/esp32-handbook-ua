@@ -659,7 +659,7 @@
 
 ---
 
-<!-- fc id:T-30-040 sha:a545ec1b src:manual/30-struktura.md:104 klas:F -->
+<!-- fc id:T-30-040 sha:a545ec1b src:manual/30-struktura.md:104 klas:A -->
 ### T-30-040 · proza · рядок 104
 
 **Книга каже, дослівно:**
@@ -668,7 +668,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/mem_alloc.rst, .../docs/en/api-guides/external-ram.rst, .../components/esp_common/include/esp_attr.h, .../components/freertos/Kconfig.freertos
+- **Дослівно з джерела:**
+  > (mem_alloc.rst)
+  > Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable
+  > for use with hardware DMA engines (for example SPI and I2S). This
+  > capability flag excludes any external PSRAM.
+  > 
+  > (external-ram.rst)
+  > when accessing large chunks of data (> 32 KB), the cache can be
+  > insufficient, and speeds will fall back to the access speed of the
+  > external RAM.
+  > 
+  > (esp_attr.h)
+  > // Forces data into DRAM instead of flash
+  > #define DRAM_ATTR _SECTION_ATTR_IMPL(".dram1", __COUNTER__)
+  > 
+  > (Kconfig.freertos)
+  > config FREERTOS_CHECK_STACKOVERFLOW_NONE
+  >     bool "No checking"
+  >     help
+  >         Do not check for stack overflows
+  >         (configCHECK_FOR_STACK_OVERFLOW = 0)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Обидві застороги книги про буфер у PSRAM підтверджено окремо, і кожна зі свого джерела: `MALLOC_CAP_DMA` **виключає** зовнішню пам'ять, а швидкість падає до швидкості зовнішньої шини на блоках понад 32 КБ.
+Тобто буфер на 64 КБ, який туди потрапив сам, справді втрачає обидві властивості, які автор від нього чекав. Прохід 25 знайшов саме цей механізм; тут він доведений із документації, а не лише з Kconfig.
+Агент окремо зауважив, що «погана угода» про вимкнення перевірки стека — редакційна оцінка, а не речення джерела. Це правильне зауваження, і саме тому в записі процитовано лише фактичну передумову: `No checking` справді вимикає виявлення цілком.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1042,7 +1069,7 @@
 
 ---
 
-<!-- fc id:T-30-059 sha:1c4a684c src:manual/30-struktura.md:158 klas:F -->
+<!-- fc id:T-30-059 sha:1c4a684c src:manual/30-struktura.md:158 klas:A -->
 ### T-30-059 · proza · рядок 158
 
 **Книга каже, дослівно:**
@@ -1051,7 +1078,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/mem_alloc.rst, .../docs/en/api-guides/external-ram.rst, .../components/esp_common/include/esp_attr.h, .../components/freertos/Kconfig.freertos
+- **Дослівно з джерела:**
+  > (mem_alloc.rst)
+  > Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable
+  > for use with hardware DMA engines (for example SPI and I2S). This
+  > capability flag excludes any external PSRAM.
+  > 
+  > (external-ram.rst)
+  > when accessing large chunks of data (> 32 KB), the cache can be
+  > insufficient, and speeds will fall back to the access speed of the
+  > external RAM.
+  > 
+  > (esp_attr.h)
+  > // Forces data into DRAM instead of flash
+  > #define DRAM_ATTR _SECTION_ATTR_IMPL(".dram1", __COUNTER__)
+  > 
+  > (Kconfig.freertos)
+  > config FREERTOS_CHECK_STACKOVERFLOW_NONE
+  >     bool "No checking"
+  >     help
+  >         Do not check for stack overflows
+  >         (configCHECK_FOR_STACK_OVERFLOW = 0)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Обидві застороги книги про буфер у PSRAM підтверджено окремо, і кожна зі свого джерела: `MALLOC_CAP_DMA` **виключає** зовнішню пам'ять, а швидкість падає до швидкості зовнішньої шини на блоках понад 32 КБ.
+Тобто буфер на 64 КБ, який туди потрапив сам, справді втрачає обидві властивості, які автор від нього чекав. Прохід 25 знайшов саме цей механізм; тут він доведений із документації, а не лише з Kconfig.
+Агент окремо зауважив, що «погана угода» про вимкнення перевірки стека — редакційна оцінка, а не речення джерела. Це правильне зауваження, і саме тому в записі процитовано лише фактичну передумову: `No checking` справді вимикає виявлення цілком.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1385,7 +1439,7 @@
 
 ---
 
-<!-- fc id:T-30-075 sha:bd569017 src:manual/30-struktura.md:204 klas:F -->
+<!-- fc id:T-30-075 sha:bd569017 src:manual/30-struktura.md:204 klas:A -->
 ### T-30-075 · proza · рядок 204
 
 **Книга каже, дослівно:**
@@ -1394,7 +1448,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/mem_alloc.rst, .../docs/en/api-guides/external-ram.rst, .../components/esp_common/include/esp_attr.h, .../components/freertos/Kconfig.freertos
+- **Дослівно з джерела:**
+  > (mem_alloc.rst)
+  > Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable
+  > for use with hardware DMA engines (for example SPI and I2S). This
+  > capability flag excludes any external PSRAM.
+  > 
+  > (external-ram.rst)
+  > when accessing large chunks of data (> 32 KB), the cache can be
+  > insufficient, and speeds will fall back to the access speed of the
+  > external RAM.
+  > 
+  > (esp_attr.h)
+  > // Forces data into DRAM instead of flash
+  > #define DRAM_ATTR _SECTION_ATTR_IMPL(".dram1", __COUNTER__)
+  > 
+  > (Kconfig.freertos)
+  > config FREERTOS_CHECK_STACKOVERFLOW_NONE
+  >     bool "No checking"
+  >     help
+  >         Do not check for stack overflows
+  >         (configCHECK_FOR_STACK_OVERFLOW = 0)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Обидві застороги книги про буфер у PSRAM підтверджено окремо, і кожна зі свого джерела: `MALLOC_CAP_DMA` **виключає** зовнішню пам'ять, а швидкість падає до швидкості зовнішньої шини на блоках понад 32 КБ.
+Тобто буфер на 64 КБ, який туди потрапив сам, справді втрачає обидві властивості, які автор від нього чекав. Прохід 25 знайшов саме цей механізм; тут він доведений із документації, а не лише з Kconfig.
+Агент окремо зауважив, що «погана угода» про вимкнення перевірки стека — редакційна оцінка, а не речення джерела. Це правильне зауваження, і саме тому в записі процитовано лише фактичну передумову: `No checking` справді вимикає виявлення цілком.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 

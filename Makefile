@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh budgets arytmetyka check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh pravopys budgets arytmetyka check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -69,6 +69,11 @@ podil:
 # Кеш зовнішніх джерел: звірити sha256 наявних файлів із маніфестом.
 kesh:
 	@$(PY) tools/kesh.py --check
+
+# Правопис: перелік невідомих слів. Звіт, не ворота — судити про
+# українську має людина, інструмент лише скорочує їй роботу.
+pravopys:
+	@$(PY) tools/pravopys.py
 
 # Зібрати й покласти у release/ те, що бачить читач на GitHub.
 release:

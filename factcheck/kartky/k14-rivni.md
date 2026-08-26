@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K14-001 sha:27868d1b src:kartky/k14-rivni.md:3 klas:F -->
+<!-- fc id:T-K14-001 sha:27868d1b src:kartky/k14-rivni.md:3 klas:A -->
 ### T-K14-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,7 +15,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings» і Table 5-3 «DC Characteristics», с. 51
+- **Дослівно з джерела:**
+  > Table 5-1. Absolute Maximum Ratings
+  > Parameter                                    Description              Min    Max   Unit
+  > VDDA, VDD3P3, VDD3P3_RTC,
+  > VDD3P3_CPU, VDD_SDIO                  Allowed input voltage          –0.3    3.6    V
+  > 
+  > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause
+  > permanent damage to the device.
+  > 
+  > Table 5-3. DC Characteristics (3.3 V, 25 °C)
+  > VIH   High-level input voltage    0.75 × VDD   —   VDD + 0.3   V
+  > VIL   Low-level input voltage           –0.3   —   0.25 × VDD  V
+  > 
+  > [2] Maximum VIH = VDD(max) + 0.5 V or 5.5 V, which ever is lower.
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Попередження книги дістає нарешті числову підставу, і вона сильніша за «логіка 3.3 В». Джерело нормує **абсолютний максимум** входу як 3.6 В і прямо каже, що вище — `permanent damage`. П'ять вольтів це перевищення на 1.4 В, тобто не «поза рекомендованим», а поза гранично допустимим.
+Друга половина, потрібна для картки К14: поріг високого рівня — `0.75 × VDD`, тобто близько 2.5 В при 3.3 В живлення. Тому п'ятивольтовий вихід читається як логічна одиниця й «начебто працює» — доки пін не деградує. Це пояснює найпідступніше в цій несправності: вона не миттєва.
+- **Прохід:** m2-06-napruga-mezhi
 
 ---
 

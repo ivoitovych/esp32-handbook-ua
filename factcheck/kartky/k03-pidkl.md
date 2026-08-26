@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-K03-010 sha:5a7df3f2 src:kartky/k03-pidkl.md:25 klas:F -->
+<!-- fc id:T-K03-010 sha:5a7df3f2 src:kartky/k03-pidkl.md:25 klas:A -->
 ### T-K03-010 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -132,7 +132,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Linux, `drivers/usb/serial/cp210x.c` (гілка master), таблиця `id_table`
+- **Дослівно з джерела:**
+  > { USB_DEVICE(0x10C4, 0xEA60) }, /* Silicon Labs factory default */
+- **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
+- **Нотатка:** Обидві половини рядка книги підтверджено з одного місця: вендор `0x10C4` — Silicon Labs, і драйвер `cp210x` входить у дерево ядра, тобто «у ядрі» точне.
+- **Прохід:** m2-07-mosty-usb-uart
 
 ---
 
@@ -149,7 +155,7 @@
 
 ---
 
-<!-- fc id:T-K03-012 sha:f9af5909 src:kartky/k03-pidkl.md:26 klas:F -->
+<!-- fc id:T-K03-012 sha:f9af5909 src:kartky/k03-pidkl.md:26 klas:A -->
 ### T-K03-012 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -158,7 +164,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Linux, `drivers/usb/serial/ch341.c` (гілка master), таблиця `id_table` і `MODULE_DESCRIPTION`
+- **Дослівно з джерела:**
+  > { USB_DEVICE(0x1a86, 0x5523) },
+  > { USB_DEVICE(0x1a86, 0x7522) },
+  > { USB_DEVICE(0x1a86, 0x7523) },
+  > …
+  > MODULE_DESCRIPTION("Winchiphead CH341 USB Serial driver");
+- **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
+- **Нотатка:** `0x1a86:0x7523` — це CH340, `0x1a86:0x5523` — CH341. Ім'я виробника стверджує сам опис модуля: Winchiphead, тобто WCH.
+- **Прохід:** m2-07-mosty-usb-uart
 
 ---
 
@@ -175,7 +191,7 @@
 
 ---
 
-<!-- fc id:T-K03-014 sha:78a66c0c src:kartky/k03-pidkl.md:27 klas:F -->
+<!-- fc id:T-K03-014 sha:78a66c0c src:kartky/k03-pidkl.md:27 klas:A -->
 ### T-K03-014 · komirka · рядок 27
 
 **Книга каже, дослівно:**
@@ -184,7 +200,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Linux, `drivers/usb/class/cdc-acm.c` (гілка master), таблиця `acm_ids`; для порівняння — `drivers/usb/serial/ch341.c`
+- **Дослівно з джерела:**
+  > drivers/usb/class/cdc-acm.c:
+  >   { USB_DEVICE(0x1a86, 0x55d3), .driver_info = MISSING_CAP_BRK, },
+  >   …
+  >   { USB_INTERFACE_INFO(USB_CLASS_COMM, USB_CDC_SUBCLASS_ACM,
+  >                        USB_CDC_ACM_PROTO_AT_V25TER) },
+  > 
+  > drivers/usb/serial/ch341.c — ідентифікаторів 0x55d3 / 0x55d4 немає
+- **Спосіб і дата:** raw.githubusercontent.com/torvalds/linux/master, суцільна перевірка 52 драйверів `drivers/usb/serial/`, 2026-08-26
+- **Нотатка:** «У ядрі» для CH9102 правда, але не тим драйвером, який очікує читач. Сімейство CH343/CH9102 підхоплює **клас-драйвер `cdc_acm`**: `55d3` названо в його таблиці поіменно, а `CH9102F` (`55d4`) потрапляє під загальний запис `USB_CLASS_COMM`.
+Наслідок, якого в книзі немає й який суперечить її ж правилу: порт з'являється як **`/dev/ttyACM*`**, а не `/dev/ttyUSB*`. Розділ 09 навчає, що `ttyACM` означає native USB (S3, C3). Читач із classic-платою на CH9102 побачить `ttyACM0` і зробить хибний висновок про сам чип. Винесено окремою знахідкою.
+- **Прохід:** m2-07-mosty-usb-uart
 
 ---
 

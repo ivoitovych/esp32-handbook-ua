@@ -756,19 +756,32 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/jgromes/RadioLib/master/src/modules/SX127x/SX1278.cpp
+- **Джерело:** SX1276/77/78/79 Datasheet, Rev. 4 (March 2015), розділ 4.1.1.2 «Spreading Factor», Table 13 «Range of Spreading Factors», с. 27
 - **Дослівно з джерела:**
-  > // check allowed spreading factor values
-  > switch(sf) {
-  >   case 6:  newSpreadingFactor = RADIOLIB_SX127X_SF_6;  break;
-  >   case 7:  newSpreadingFactor = RADIOLIB_SX127X_SF_7;  break;
-  >   …
-  >   case 12: newSpreadingFactor = RADIOLIB_SX127X_SF_12; break;
-  >   default: return(RADIOLIB_ERR_INVALID_SPREADING_FACTOR);
-  > }
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга давала діапазон «від 7 до 12»; апаратура й бібліотека приймають від 6. SF6 справді особливий — лише з неявним заголовком і з власними налаштуваннями детектування, — тож формулювання виправлено на «робочий діапазон 7…12» з окремим абзацом про те, що SF6 існує і чому його не беруть. Це точніше за обидва попередні варіанти: і не приховує апаратну можливість, і не радить її як звичайну.
-- **Прохід:** pass-04-obkhidni
+  > Table 13 Range of Spreading Factors
+  >   SpreadingFactor   Spreading Factor    LoRa Demodulator
+  >   (RegModulationCfg) (Chips / symbol)        SNR
+  >         6                  64               -5 dB
+  >         7                 128              -7.5 dB
+  >         8                 256               -10 dB
+  >         9                 512             -12.5 dB
+  >        10                1024               -15 dB
+  >        11                2048             -17.5 dB
+  >        12                4096               -20 dB
+  > 
+  > Spreading Factor 6
+  > SF = 6 Is a special use case for the highest data rate transmission possible
+  > with the LoRa modem. To this end several settings must be activated in the
+  > SX1276/77/78/79 registers when it is in use:
+  >   Set SpreadingFactor = 6 in RegModemConfig2
+  >   The header must be set to Implicit mode.
+  >   Set the bit field DetectionOptimize of register RegLoRaDetectOptimize to "0b101".
+  >   Write 0x0C in the register RegDetectionThreshold.
+- **Спосіб і дата:** PDF Semtech (DS_SX1276-7-8-9_W_APP_V7, 132 с.) через дзеркало cdn-shop.adafruit.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Розділ 43 звірено дослівно, включно з обґрунтуванням «чому діапазон названо від сімки»: SF6 справді вимагає неявного заголовка й власних налаштувань детектування, і справді не вмикається «просто меншим числом». Книга формулює це точніше за наряд, який просив звірити «діапазон 7…12».
+Заразом підтверджено дві сусідні тези розділу. Чутливість зростає з SF: на смузі 62.5 кГц −121 дБм при SF6 проти −139 дБм при SF12. І час ефіру росте різко: кількість чипів на символ подвоюється на кожному кроці, 64 → 4096.
+Ще одна вимога розділу — «обидва боки мусять мати однакові параметри» — стверджена джерелом прямо: «SpreadingFactor must be known in advance on both transmit and receive sides of the link as different spreading factors are orthogonal to each other».
+- **Прохід:** m2-03-semtech-lora
 
 ---
 
@@ -795,19 +808,32 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/jgromes/RadioLib/master/src/modules/SX127x/SX1278.cpp
+- **Джерело:** SX1276/77/78/79 Datasheet, Rev. 4 (March 2015), розділ 4.1.1.2 «Spreading Factor», Table 13 «Range of Spreading Factors», с. 27
 - **Дослівно з джерела:**
-  > // check allowed spreading factor values
-  > switch(sf) {
-  >   case 6:  newSpreadingFactor = RADIOLIB_SX127X_SF_6;  break;
-  >   case 7:  newSpreadingFactor = RADIOLIB_SX127X_SF_7;  break;
-  >   …
-  >   case 12: newSpreadingFactor = RADIOLIB_SX127X_SF_12; break;
-  >   default: return(RADIOLIB_ERR_INVALID_SPREADING_FACTOR);
-  > }
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга давала діапазон «від 7 до 12»; апаратура й бібліотека приймають від 6. SF6 справді особливий — лише з неявним заголовком і з власними налаштуваннями детектування, — тож формулювання виправлено на «робочий діапазон 7…12» з окремим абзацом про те, що SF6 існує і чому його не беруть. Це точніше за обидва попередні варіанти: і не приховує апаратну можливість, і не радить її як звичайну.
-- **Прохід:** pass-04-obkhidni
+  > Table 13 Range of Spreading Factors
+  >   SpreadingFactor   Spreading Factor    LoRa Demodulator
+  >   (RegModulationCfg) (Chips / symbol)        SNR
+  >         6                  64               -5 dB
+  >         7                 128              -7.5 dB
+  >         8                 256               -10 dB
+  >         9                 512             -12.5 dB
+  >        10                1024               -15 dB
+  >        11                2048             -17.5 dB
+  >        12                4096               -20 dB
+  > 
+  > Spreading Factor 6
+  > SF = 6 Is a special use case for the highest data rate transmission possible
+  > with the LoRa modem. To this end several settings must be activated in the
+  > SX1276/77/78/79 registers when it is in use:
+  >   Set SpreadingFactor = 6 in RegModemConfig2
+  >   The header must be set to Implicit mode.
+  >   Set the bit field DetectionOptimize of register RegLoRaDetectOptimize to "0b101".
+  >   Write 0x0C in the register RegDetectionThreshold.
+- **Спосіб і дата:** PDF Semtech (DS_SX1276-7-8-9_W_APP_V7, 132 с.) через дзеркало cdn-shop.adafruit.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Розділ 43 звірено дослівно, включно з обґрунтуванням «чому діапазон названо від сімки»: SF6 справді вимагає неявного заголовка й власних налаштувань детектування, і справді не вмикається «просто меншим числом». Книга формулює це точніше за наряд, який просив звірити «діапазон 7…12».
+Заразом підтверджено дві сусідні тези розділу. Чутливість зростає з SF: на смузі 62.5 кГц −121 дБм при SF6 проти −139 дБм при SF12. І час ефіру росте різко: кількість чипів на символ подвоюється на кожному кроці, 64 → 4096.
+Ще одна вимога розділу — «обидва боки мусять мати однакові параметри» — стверджена джерелом прямо: «SpreadingFactor must be known in advance on both transmit and receive sides of the link as different spreading factors are orthogonal to each other».
+- **Прохід:** m2-03-semtech-lora
 
 ---
 
@@ -824,7 +850,7 @@
 
 ---
 
-<!-- fc id:T-43-061 sha:5abc82aa src:manual/43-lora.md:133 klas:E -->
+<!-- fc id:T-43-061 sha:5abc82aa src:manual/43-lora.md:133 klas:A -->
 ### T-43-061 · proza · рядок 133
 
 **Книга каже, дослівно:**
@@ -833,7 +859,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** SX1276/77/78/79 Datasheet, Rev. 4, Table 15 «LoRa Bandwidth Options» (с. 28) і Table 8 «Receiver Specifications» (RFS_L10_HF, RFS_L62_HF)
+- **Дослівно з джерела:**
+  > Table 15 LoRa Bandwidth Options
+  >   Bandwidth (kHz)   Spreading Factor   Coding rate   Nominal Rb (bps)
+  >         7.8               12               4/5             18
+  >        15.6               12               4/5             37
+  >        62.5               12               4/5            146
+  >         125               12               4/5            293
+  >         250               12               4/5            586
+  >         500               12               4/5           1172
+  > 
+  > RF sensitivity, Long-Range Mode, 10.4 kHz bandwidth:  SF = 11   -146 dBm
+  > RF sensitivity, Long-Range Mode, 62.5 kHz bandwidth:  SF = 11   -137 dBm
+- **Спосіб і дата:** PDF Semtech через дзеркало cdn-shop.adafruit.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Обидві половини твердження мають окреме число. «Швидше» — Table 15: від 18 біт/с на 7.8 кГц до 1172 біт/с на 500 кГц при тих самих SF і швидкості коду. «Менш далеко» — таблиця чутливості: при однаковому SF11 вужча смуга дає −146 дБм, ширша −137 дБм, тобто 9 дБ програшу в бюджеті лінії.
+Джерело підтверджує й рамку розділу: керованих параметрів справді три, і воно називає ті самі — «spreading factor, modulation bandwidth and error coding rate».
+- **Прохід:** m2-03-semtech-lora
 
 ---
 
