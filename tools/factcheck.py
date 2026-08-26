@@ -286,6 +286,17 @@ def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
     return None
 
 
+def klyuch(z: dict) -> tuple[str, str]:
+    """Тотожність запису доказу для обліку покриття.
+
+    Не назва: назви беруться з формулювань наряду, тож двоє супровідників
+    природно приходять до однакових. За ключем-назвою слабший однойменний
+    запис зникав і з «нічого не зачепив», і з «перекрито сильнішим» — а
+    перший із цих переліків існує саме для того, щоб ловити хибний взірець.
+    """
+    return (str(z.get("_prokhid", "?")), str(z.get("nazva", "?")))
+
+
 def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
     """Усі докази, що взагалі підпадають під це твердження.
 
@@ -334,8 +345,13 @@ def sketch() -> int:
     dokazy = zavantazhyty_dokazy()
     vsjogo = z_dokazom = 0
     vzhyti: set[str] = set()
-    pokryttya: dict[str, list[str]] = {}
-    zachepleni: set[str] = set()
+    # Ключем обліку служить пара «файл доказів + назва», а не сама
+    # назва. Двоє супровідників беруть назви з того самого наряду, тож
+    # збіг імен у різних файлах — очікуваний стан, а не випадковість.
+    # За ключем-назвою слабший однойменний запис зникав з обох
+    # переліків нижче, і доказ із хибним взірцем лишався невидимим.
+    pokryttya: dict[tuple[str, str], list[str]] = {}
+    zachepleni: set[tuple[str, str]] = set()
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
             odynyci = rozbyty(f.read_text(encoding="utf-8"))
@@ -355,13 +371,13 @@ def sketch() -> int:
                 h = sha(txt)
                 kandydaty = vsi_kandydaty(dokazy, h, txt)
                 for k_z in kandydaty:
-                    zachepleni.add(k_z.get("nazva", "?"))
+                    zachepleni.add(klyuch(k_z))
                 z = (min(kandydaty, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
                      if kandydaty else None)
                 if z:
                     vzhyti.add(h)
                     z_dokazom += 1
-                    pokryttya.setdefault(z.get("nazva", "?"), []).append(ident)
+                    pokryttya.setdefault(klyuch(z), []).append(ident)
                 # Блок коду цілком — **контекст**, а не твердження. Він
                 # складається з рядків, у кожного з яких своє джерело, і
                 # доказ на один рядок не звіряє решту. Тому клас блоку не
@@ -391,8 +407,10 @@ def sketch() -> int:
     print(f"одиниць твердження: {vsjogo}; із доказом: {z_dokazom}")
     if "-v" in sys.argv:
         print("\nщо покрив кожен доказ:")
-        for nazva, ids in sorted(pokryttya.items()):
-            print(f"  {len(ids):>3}×  {nazva}\n        {', '.join(ids)}")
+        for (prokhid, nazva), ids in sorted(pokryttya.items(),
+                                           key=lambda kv: kv[0][1]):
+            print(f"  {len(ids):>3}×  {nazva}  ({prokhid})"
+                  f"\n        {', '.join(ids)}")
     # Доказ, який нічого не зачепив, — це або застаріле формулювання в
     # книзі, або помилка у взірці. Мовчати про це не можна: реєстр почне
     # обіцяти звіреність, якої немає.
@@ -401,10 +419,10 @@ def sketch() -> int:
     # Це норма й навіть мета: слабший запис проходу 3 («джерело не
     # дістається») перекритий класом A проходу 4 означає, що пункт
     # наряду закрито. Такий випадок показуємо окремо й без тривоги.
-    holosti = [z for z in dokazy if z.get("nazva") not in zachepleni]
+    holosti = [z for z in dokazy if klyuch(z) not in zachepleni]
     perekryti = [z for z in dokazy
-                 if z.get("nazva") in zachepleni
-                 and z.get("nazva") not in pokryttya]
+                 if klyuch(z) in zachepleni
+                 and klyuch(z) not in pokryttya]
     if holosti:
         print(f"\n⚠ доказів, що нічого не зачепили: {len(holosti)}")
         for z in holosti:
