@@ -15,7 +15,7 @@
     невідворотно пошкодить бутлоадер.
 - nazva: 'Linux: Доступ до серійного порту вимагає групи dialout'
   zbih: Linux.*dialout.*перезайти
-  klas: B
+  klas: E
   dzherelo: Linux권限 (permissions) файлів; udev rules для /dev/ttyUSB*
   cytata: '/dev/ttyUSB*, /dev/ttyACM* мають групу dialout по замовчуванню
 
