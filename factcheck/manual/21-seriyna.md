@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/21-seriyna.md`
 
-Одиниць твердження: **91**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **98**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -58,12 +58,12 @@
 
 ---
 
-<!-- fc id:T-21-005 sha:aeed64f9 src:manual/21-seriyna.md:17 klas:F -->
+<!-- fc id:T-21-005 sha:fd16eb2f src:manual/21-seriyna.md:17 klas:F -->
 ### T-21-005 · proza · рядок 17
 
 **Книга каже, дослівно:**
 
-> Складіть один образ (розділ 17); [[classic]] адреси нижче — для classic і S2, для решти чипів адреса бутлоадера інша (таблиця в розділі 16):
+> Складіть один образ (розділ 17).
 
 **Доказ**
 
@@ -71,13 +71,106 @@
 
 ---
 
-<!-- fc id:T-21-006 sha:2fec7c9d src:manual/21-seriyna.md:20 klas:F -->
-### T-21-006 · kod · рядок 20
+<!-- fc id:T-21-006 sha:169c5b39 src:manual/21-seriyna.md:17 klas:F -->
+### T-21-006 · proza · рядок 17
+
+**Книга каже, дослівно:**
+
+> Якщо проєкт ESP-IDF під рукою — цим і обмежтеся, бо адреси підставить сама збірка:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-007 sha:56d43d34 src:manual/21-seriyna.md:20 klas:A -->
+### T-21-007 · kod · рядок 20
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool merge-bin -o vyrib-v1.4.bin --flash-mode dio \
+> idf.py merge-bin -o vyrib-v1.4.bin
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-21-008 sha:4286f2a3 src:manual/21-seriyna.md:21 klas:A -->
+### T-21-008 · kod-ryadok · рядок 21
+
+**Книга каже, дослівно:**
+
+> idf.py merge-bin -o vyrib-v1.4.bin
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-21-009 sha:21613fb4 src:manual/21-seriyna.md:24 klas:F -->
+### T-21-009 · proza · рядок 24
+
+**Книга каже, дослівно:**
+
+> Для виробництва це кращий варіант за ручний: жодного числа, набраного з голови, а отже й жодної нагоди зсунути бутлоадер.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-010 sha:dc6bff36 src:manual/21-seriyna.md:27 klas:F -->
+### T-21-010 · proza · рядок 27
+
+**Книга каже, дослівно:**
+
+> Коли ж на руках лише готові `.bin`-файли — збирати доводиться вручну; [[classic]] адреси нижче для classic і S2, для решти чипів адреса бутлоадера інша (таблиця в розділі 16):
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-011 sha:fd180332 src:manual/21-seriyna.md:31 klas:A -->
+### T-21-011 · kod · рядок 31
+
+**Книга каже, дослівно:**
+
+> ```
+> esptool --chip esp32 merge-bin -o vyrib-v1.4.bin --flash-mode dio \
 >   0x1000 bootloader.bin \
 >   0x8000 partition-table.bin \
 >   0x10000 app.bin
@@ -85,25 +178,59 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-21-007 sha:d650ca01 src:manual/21-seriyna.md:21 klas:F -->
-### T-21-007 · kod-ryadok · рядок 21
+<!-- fc id:T-21-012 sha:2ded8ac2 src:manual/21-seriyna.md:32 klas:A -->
+### T-21-012 · kod-ryadok · рядок 32
 
 **Книга каже, дослівно:**
 
-> esptool merge-bin -o vyrib-v1.4.bin --flash-mode dio \
+> esptool --chip esp32 merge-bin -o vyrib-v1.4.bin --flash-mode dio \
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-21-008 sha:99dac3f2 src:manual/21-seriyna.md:27 klas:F -->
-### T-21-008 · proza · рядок 27
+<!-- fc id:T-21-013 sha:99dac3f2 src:manual/21-seriyna.md:38 klas:F -->
+### T-21-013 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -115,8 +242,8 @@
 
 ---
 
-<!-- fc id:T-21-009 sha:7c27876f src:manual/21-seriyna.md:29 klas:A -->
-### T-21-009 · kod · рядок 29
+<!-- fc id:T-21-014 sha:7c27876f src:manual/21-seriyna.md:40 klas:A -->
+### T-21-014 · kod · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -150,8 +277,8 @@
 
 ---
 
-<!-- fc id:T-21-010 sha:060d1904 src:manual/21-seriyna.md:30 klas:A -->
-### T-21-010 · kod-ryadok · рядок 30
+<!-- fc id:T-21-015 sha:060d1904 src:manual/21-seriyna.md:41 klas:A -->
+### T-21-015 · kod-ryadok · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -183,8 +310,8 @@
 
 ---
 
-<!-- fc id:T-21-011 sha:d76a9957 src:manual/21-seriyna.md:33 klas:F -->
-### T-21-011 · proza · рядок 33
+<!-- fc id:T-21-016 sha:d76a9957 src:manual/21-seriyna.md:44 klas:F -->
+### T-21-016 · proza · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -196,8 +323,34 @@
 
 ---
 
-<!-- fc id:T-21-012 sha:378d2fc5 src:manual/21-seriyna.md:37 klas:F -->
-### T-21-012 · proza · рядок 37
+<!-- fc id:T-21-017 sha:1c051eb7 src:manual/21-seriyna.md:48 klas:F -->
+### T-21-017 · proza · рядок 48
+
+**Книга каже, дослівно:**
+
+> `--chip` у `merge-bin` обов'язковий, бо порту немає й визначати чип нема звідки.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-018 sha:f1d48cb7 src:manual/21-seriyna.md:48 klas:F -->
+### T-21-018 · proza · рядок 48
+
+**Книга каже, дослівно:**
+
+> Він же задає, з якою адресою бутлоадера образ має сенс.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-019 sha:378d2fc5 src:manual/21-seriyna.md:51 klas:F -->
+### T-21-019 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -209,8 +362,8 @@
 
 ---
 
-<!-- fc id:T-21-013 sha:27deca81 src:manual/21-seriyna.md:37 klas:F -->
-### T-21-013 · proza · рядок 37
+<!-- fc id:T-21-020 sha:27deca81 src:manual/21-seriyna.md:51 klas:F -->
+### T-21-020 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -222,8 +375,8 @@
 
 ---
 
-<!-- fc id:T-21-014 sha:a6125283 src:manual/21-seriyna.md:37 klas:F -->
-### T-21-014 · proza · рядок 37
+<!-- fc id:T-21-021 sha:a6125283 src:manual/21-seriyna.md:51 klas:F -->
+### T-21-021 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -235,8 +388,8 @@
 
 ---
 
-<!-- fc id:T-21-015 sha:ac7a1ba1 src:manual/21-seriyna.md:45 klas:F -->
-### T-21-015 · proza · рядок 45
+<!-- fc id:T-21-022 sha:ac7a1ba1 src:manual/21-seriyna.md:59 klas:F -->
+### T-21-022 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -248,8 +401,8 @@
 
 ---
 
-<!-- fc id:T-21-016 sha:01a36707 src:manual/21-seriyna.md:45 klas:F -->
-### T-21-016 · proza · рядок 45
+<!-- fc id:T-21-023 sha:01a36707 src:manual/21-seriyna.md:59 klas:F -->
+### T-21-023 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -261,8 +414,8 @@
 
 ---
 
-<!-- fc id:T-21-017 sha:41cc9c7f src:manual/21-seriyna.md:48 klas:A -->
-### T-21-017 · kod · рядок 48
+<!-- fc id:T-21-024 sha:41cc9c7f src:manual/21-seriyna.md:62 klas:A -->
+### T-21-024 · kod · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -304,8 +457,8 @@
 
 ---
 
-<!-- fc id:T-21-018 sha:23224667 src:manual/21-seriyna.md:54 klas:A -->
-### T-21-018 · kod-ryadok · рядок 54
+<!-- fc id:T-21-025 sha:23224667 src:manual/21-seriyna.md:68 klas:A -->
+### T-21-025 · kod-ryadok · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -337,8 +490,8 @@
 
 ---
 
-<!-- fc id:T-21-019 sha:1442de15 src:manual/21-seriyna.md:55 klas:F -->
-### T-21-019 · kod-ryadok · рядок 55
+<!-- fc id:T-21-026 sha:1442de15 src:manual/21-seriyna.md:69 klas:A -->
+### T-21-026 · kod-ryadok · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -346,12 +499,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-21-020 sha:e7dfc363 src:manual/21-seriyna.md:56 klas:F -->
-### T-21-020 · kod-ryadok · рядок 56
+<!-- fc id:T-21-027 sha:e7dfc363 src:manual/21-seriyna.md:70 klas:A -->
+### T-21-027 · kod-ryadok · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -359,12 +534,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-21-021 sha:270a6061 src:manual/21-seriyna.md:60 klas:F -->
-### T-21-021 · proza · рядок 60
+<!-- fc id:T-21-028 sha:270a6061 src:manual/21-seriyna.md:74 klas:F -->
+### T-21-028 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -376,8 +573,8 @@
 
 ---
 
-<!-- fc id:T-21-022 sha:12bbf3c5 src:manual/21-seriyna.md:60 klas:F -->
-### T-21-022 · proza · рядок 60
+<!-- fc id:T-21-029 sha:12bbf3c5 src:manual/21-seriyna.md:74 klas:F -->
+### T-21-029 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -389,8 +586,8 @@
 
 ---
 
-<!-- fc id:T-21-023 sha:42368b26 src:manual/21-seriyna.md:60 klas:F -->
-### T-21-023 · proza · рядок 60
+<!-- fc id:T-21-030 sha:42368b26 src:manual/21-seriyna.md:74 klas:A -->
+### T-21-030 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -398,12 +595,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-21-024 sha:16350670 src:manual/21-seriyna.md:60 klas:F -->
-### T-21-024 · proza · рядок 60
+<!-- fc id:T-21-031 sha:16350670 src:manual/21-seriyna.md:74 klas:F -->
+### T-21-031 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -415,8 +634,8 @@
 
 ---
 
-<!-- fc id:T-21-025 sha:e3f39fae src:manual/21-seriyna.md:67 klas:F -->
-### T-21-025 · proza · рядок 67
+<!-- fc id:T-21-032 sha:e3f39fae src:manual/21-seriyna.md:81 klas:F -->
+### T-21-032 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -428,8 +647,8 @@
 
 ---
 
-<!-- fc id:T-21-026 sha:d1d7cedd src:manual/21-seriyna.md:67 klas:F -->
-### T-21-026 · proza · рядок 67
+<!-- fc id:T-21-033 sha:d1d7cedd src:manual/21-seriyna.md:81 klas:F -->
+### T-21-033 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -441,8 +660,8 @@
 
 ---
 
-<!-- fc id:T-21-027 sha:ddc59055 src:manual/21-seriyna.md:70 klas:F -->
-### T-21-027 · proza · рядок 70
+<!-- fc id:T-21-034 sha:ddc59055 src:manual/21-seriyna.md:84 klas:A -->
+### T-21-034 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -450,12 +669,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-21-028 sha:1d35be73 src:manual/21-seriyna.md:70 klas:F -->
-### T-21-028 · proza · рядок 70
+<!-- fc id:T-21-035 sha:1d35be73 src:manual/21-seriyna.md:84 klas:F -->
+### T-21-035 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -467,8 +708,8 @@
 
 ---
 
-<!-- fc id:T-21-029 sha:a414fea1 src:manual/21-seriyna.md:70 klas:F -->
-### T-21-029 · proza · рядок 70
+<!-- fc id:T-21-036 sha:a414fea1 src:manual/21-seriyna.md:84 klas:F -->
+### T-21-036 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -480,8 +721,8 @@
 
 ---
 
-<!-- fc id:T-21-030 sha:c6467fae src:manual/21-seriyna.md:75 klas:F -->
-### T-21-030 · proza · рядок 75
+<!-- fc id:T-21-037 sha:c6467fae src:manual/21-seriyna.md:89 klas:F -->
+### T-21-037 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -493,8 +734,8 @@
 
 ---
 
-<!-- fc id:T-21-031 sha:621d4059 src:manual/21-seriyna.md:79 klas:F -->
-### T-21-031 · proza · рядок 79
+<!-- fc id:T-21-038 sha:621d4059 src:manual/21-seriyna.md:93 klas:F -->
+### T-21-038 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -506,8 +747,8 @@
 
 ---
 
-<!-- fc id:T-21-032 sha:14a2790e src:manual/21-seriyna.md:79 klas:F -->
-### T-21-032 · proza · рядок 79
+<!-- fc id:T-21-039 sha:14a2790e src:manual/21-seriyna.md:93 klas:F -->
+### T-21-039 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -519,8 +760,8 @@
 
 ---
 
-<!-- fc id:T-21-033 sha:432b092c src:manual/21-seriyna.md:79 klas:F -->
-### T-21-033 · proza · рядок 79
+<!-- fc id:T-21-040 sha:432b092c src:manual/21-seriyna.md:93 klas:F -->
+### T-21-040 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -532,8 +773,8 @@
 
 ---
 
-<!-- fc id:T-21-034 sha:1a3a9559 src:manual/21-seriyna.md:87 klas:F -->
-### T-21-034 · proza · рядок 87
+<!-- fc id:T-21-041 sha:1a3a9559 src:manual/21-seriyna.md:101 klas:F -->
+### T-21-041 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -545,8 +786,8 @@
 
 ---
 
-<!-- fc id:T-21-035 sha:6c7e3e50 src:manual/21-seriyna.md:87 klas:F -->
-### T-21-035 · proza · рядок 87
+<!-- fc id:T-21-042 sha:6c7e3e50 src:manual/21-seriyna.md:101 klas:F -->
+### T-21-042 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -558,8 +799,8 @@
 
 ---
 
-<!-- fc id:T-21-036 sha:3140d22c src:manual/21-seriyna.md:92 klas:F -->
-### T-21-036 · proza · рядок 92
+<!-- fc id:T-21-043 sha:3140d22c src:manual/21-seriyna.md:106 klas:F -->
+### T-21-043 · proza · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -571,8 +812,8 @@
 
 ---
 
-<!-- fc id:T-21-037 sha:1cfc3ebd src:manual/21-seriyna.md:94 klas:F -->
-### T-21-037 · proza · рядок 94
+<!-- fc id:T-21-044 sha:1cfc3ebd src:manual/21-seriyna.md:108 klas:F -->
+### T-21-044 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -584,8 +825,8 @@
 
 ---
 
-<!-- fc id:T-21-038 sha:ac0e1bb8 src:manual/21-seriyna.md:94 klas:F -->
-### T-21-038 · proza · рядок 94
+<!-- fc id:T-21-045 sha:ac0e1bb8 src:manual/21-seriyna.md:108 klas:F -->
+### T-21-045 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -597,8 +838,8 @@
 
 ---
 
-<!-- fc id:T-21-039 sha:c50488dc src:manual/21-seriyna.md:96 klas:F -->
-### T-21-039 · proza · рядок 96
+<!-- fc id:T-21-046 sha:c50488dc src:manual/21-seriyna.md:110 klas:F -->
+### T-21-046 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -610,8 +851,8 @@
 
 ---
 
-<!-- fc id:T-21-040 sha:5ee74ccf src:manual/21-seriyna.md:96 klas:F -->
-### T-21-040 · proza · рядок 96
+<!-- fc id:T-21-047 sha:5ee74ccf src:manual/21-seriyna.md:110 klas:F -->
+### T-21-047 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -623,8 +864,8 @@
 
 ---
 
-<!-- fc id:T-21-041 sha:8fbe10a5 src:manual/21-seriyna.md:99 klas:F -->
-### T-21-041 · proza · рядок 99
+<!-- fc id:T-21-048 sha:8fbe10a5 src:manual/21-seriyna.md:113 klas:F -->
+### T-21-048 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -636,8 +877,8 @@
 
 ---
 
-<!-- fc id:T-21-042 sha:fc2721f0 src:manual/21-seriyna.md:101 klas:A -->
-### T-21-042 · kod · рядок 101
+<!-- fc id:T-21-049 sha:fc2721f0 src:manual/21-seriyna.md:115 klas:A -->
+### T-21-049 · kod · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -672,8 +913,8 @@
 
 ---
 
-<!-- fc id:T-21-043 sha:aa33e38e src:manual/21-seriyna.md:102 klas:F -->
-### T-21-043 · kod-ryadok · рядок 102
+<!-- fc id:T-21-050 sha:aa33e38e src:manual/21-seriyna.md:116 klas:F -->
+### T-21-050 · kod-ryadok · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -685,8 +926,8 @@
 
 ---
 
-<!-- fc id:T-21-044 sha:dab0dee5 src:manual/21-seriyna.md:103 klas:A -->
-### T-21-044 · kod-ryadok · рядок 103
+<!-- fc id:T-21-051 sha:dab0dee5 src:manual/21-seriyna.md:117 klas:A -->
+### T-21-051 · kod-ryadok · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -718,8 +959,8 @@
 
 ---
 
-<!-- fc id:T-21-045 sha:b0a670d8 src:manual/21-seriyna.md:106 klas:F -->
-### T-21-045 · proza · рядок 106
+<!-- fc id:T-21-052 sha:b0a670d8 src:manual/21-seriyna.md:120 klas:F -->
+### T-21-052 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -731,8 +972,8 @@
 
 ---
 
-<!-- fc id:T-21-046 sha:a441973a src:manual/21-seriyna.md:109 klas:F -->
-### T-21-046 · proza · рядок 109
+<!-- fc id:T-21-053 sha:a441973a src:manual/21-seriyna.md:123 klas:F -->
+### T-21-053 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -744,8 +985,8 @@
 
 ---
 
-<!-- fc id:T-21-047 sha:168c664c src:manual/21-seriyna.md:109 klas:F -->
-### T-21-047 · proza · рядок 109
+<!-- fc id:T-21-054 sha:168c664c src:manual/21-seriyna.md:123 klas:F -->
+### T-21-054 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -757,8 +998,8 @@
 
 ---
 
-<!-- fc id:T-21-048 sha:82ff65b0 src:manual/21-seriyna.md:115 klas:F -->
-### T-21-048 · proza · рядок 115
+<!-- fc id:T-21-055 sha:82ff65b0 src:manual/21-seriyna.md:129 klas:F -->
+### T-21-055 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -770,8 +1011,8 @@
 
 ---
 
-<!-- fc id:T-21-049 sha:8aa5ff33 src:manual/21-seriyna.md:115 klas:F -->
-### T-21-049 · proza · рядок 115
+<!-- fc id:T-21-056 sha:8aa5ff33 src:manual/21-seriyna.md:129 klas:F -->
+### T-21-056 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -783,8 +1024,8 @@
 
 ---
 
-<!-- fc id:T-21-050 sha:5aed5cc9 src:manual/21-seriyna.md:115 klas:F -->
-### T-21-050 · proza · рядок 115
+<!-- fc id:T-21-057 sha:5aed5cc9 src:manual/21-seriyna.md:129 klas:F -->
+### T-21-057 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -796,8 +1037,8 @@
 
 ---
 
-<!-- fc id:T-21-051 sha:7afef3b1 src:manual/21-seriyna.md:123 klas:F -->
-### T-21-051 · proza · рядок 123
+<!-- fc id:T-21-058 sha:7afef3b1 src:manual/21-seriyna.md:137 klas:F -->
+### T-21-058 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -809,8 +1050,8 @@
 
 ---
 
-<!-- fc id:T-21-052 sha:80b6708b src:manual/21-seriyna.md:123 klas:F -->
-### T-21-052 · proza · рядок 123
+<!-- fc id:T-21-059 sha:80b6708b src:manual/21-seriyna.md:137 klas:F -->
+### T-21-059 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -822,8 +1063,8 @@
 
 ---
 
-<!-- fc id:T-21-053 sha:581413be src:manual/21-seriyna.md:126 klas:F -->
-### T-21-053 · proza · рядок 126
+<!-- fc id:T-21-060 sha:581413be src:manual/21-seriyna.md:140 klas:F -->
+### T-21-060 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -835,8 +1076,8 @@
 
 ---
 
-<!-- fc id:T-21-054 sha:b8ed94db src:manual/21-seriyna.md:130 klas:F -->
-### T-21-054 · proza · рядок 130
+<!-- fc id:T-21-061 sha:b8ed94db src:manual/21-seriyna.md:144 klas:F -->
+### T-21-061 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -848,8 +1089,8 @@
 
 ---
 
-<!-- fc id:T-21-055 sha:d888373f src:manual/21-seriyna.md:130 klas:F -->
-### T-21-055 · proza · рядок 130
+<!-- fc id:T-21-062 sha:d888373f src:manual/21-seriyna.md:144 klas:F -->
+### T-21-062 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -861,8 +1102,8 @@
 
 ---
 
-<!-- fc id:T-21-056 sha:669ee36d src:manual/21-seriyna.md:135 klas:F -->
-### T-21-056 · proza · рядок 135
+<!-- fc id:T-21-063 sha:669ee36d src:manual/21-seriyna.md:149 klas:F -->
+### T-21-063 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -874,8 +1115,8 @@
 
 ---
 
-<!-- fc id:T-21-057 sha:75def2ca src:manual/21-seriyna.md:137 klas:F -->
-### T-21-057 · tablycya-shapka · рядок 137
+<!-- fc id:T-21-064 sha:75def2ca src:manual/21-seriyna.md:151 klas:F -->
+### T-21-064 · tablycya-shapka · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -887,8 +1128,8 @@
 
 ---
 
-<!-- fc id:T-21-058 sha:e706eb63 src:manual/21-seriyna.md:138 klas:F -->
-### T-21-058 · komirka · рядок 138
+<!-- fc id:T-21-065 sha:e706eb63 src:manual/21-seriyna.md:152 klas:F -->
+### T-21-065 · komirka · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -900,8 +1141,8 @@
 
 ---
 
-<!-- fc id:T-21-059 sha:a8bb95c8 src:manual/21-seriyna.md:138 klas:F -->
-### T-21-059 · komirka · рядок 138
+<!-- fc id:T-21-066 sha:a8bb95c8 src:manual/21-seriyna.md:152 klas:F -->
+### T-21-066 · komirka · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -913,8 +1154,8 @@
 
 ---
 
-<!-- fc id:T-21-060 sha:e4e73586 src:manual/21-seriyna.md:138 klas:F -->
-### T-21-060 · komirka · рядок 138
+<!-- fc id:T-21-067 sha:e4e73586 src:manual/21-seriyna.md:152 klas:F -->
+### T-21-067 · komirka · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -926,8 +1167,8 @@
 
 ---
 
-<!-- fc id:T-21-061 sha:29d3900f src:manual/21-seriyna.md:138 klas:F -->
-### T-21-061 · komirka · рядок 138
+<!-- fc id:T-21-068 sha:29d3900f src:manual/21-seriyna.md:152 klas:F -->
+### T-21-068 · komirka · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -939,8 +1180,8 @@
 
 ---
 
-<!-- fc id:T-21-062 sha:75799caf src:manual/21-seriyna.md:139 klas:F -->
-### T-21-062 · komirka · рядок 139
+<!-- fc id:T-21-069 sha:75799caf src:manual/21-seriyna.md:153 klas:F -->
+### T-21-069 · komirka · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -952,8 +1193,8 @@
 
 ---
 
-<!-- fc id:T-21-063 sha:abb9bd4b src:manual/21-seriyna.md:139 klas:F -->
-### T-21-063 · komirka · рядок 139
+<!-- fc id:T-21-070 sha:abb9bd4b src:manual/21-seriyna.md:153 klas:F -->
+### T-21-070 · komirka · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -965,8 +1206,8 @@
 
 ---
 
-<!-- fc id:T-21-064 sha:e2d0d5e3 src:manual/21-seriyna.md:139 klas:F -->
-### T-21-064 · komirka · рядок 139
+<!-- fc id:T-21-071 sha:e2d0d5e3 src:manual/21-seriyna.md:153 klas:F -->
+### T-21-071 · komirka · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -978,8 +1219,8 @@
 
 ---
 
-<!-- fc id:T-21-065 sha:f7d5d679 src:manual/21-seriyna.md:139 klas:F -->
-### T-21-065 · komirka · рядок 139
+<!-- fc id:T-21-072 sha:f7d5d679 src:manual/21-seriyna.md:153 klas:F -->
+### T-21-072 · komirka · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -991,8 +1232,8 @@
 
 ---
 
-<!-- fc id:T-21-066 sha:c5831a43 src:manual/21-seriyna.md:139 klas:F -->
-### T-21-066 · komirka · рядок 139
+<!-- fc id:T-21-073 sha:c5831a43 src:manual/21-seriyna.md:153 klas:F -->
+### T-21-073 · komirka · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -1004,8 +1245,8 @@
 
 ---
 
-<!-- fc id:T-21-067 sha:79ce9a1f src:manual/21-seriyna.md:140 klas:F -->
-### T-21-067 · komirka · рядок 140
+<!-- fc id:T-21-074 sha:79ce9a1f src:manual/21-seriyna.md:154 klas:F -->
+### T-21-074 · komirka · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1017,8 +1258,8 @@
 
 ---
 
-<!-- fc id:T-21-068 sha:9f488b42 src:manual/21-seriyna.md:140 klas:F -->
-### T-21-068 · komirka · рядок 140
+<!-- fc id:T-21-075 sha:9f488b42 src:manual/21-seriyna.md:154 klas:F -->
+### T-21-075 · komirka · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1030,8 +1271,8 @@
 
 ---
 
-<!-- fc id:T-21-069 sha:a6590e77 src:manual/21-seriyna.md:140 klas:F -->
-### T-21-069 · komirka · рядок 140
+<!-- fc id:T-21-076 sha:a6590e77 src:manual/21-seriyna.md:154 klas:F -->
+### T-21-076 · komirka · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1284,8 @@
 
 ---
 
-<!-- fc id:T-21-070 sha:37c1710c src:manual/21-seriyna.md:140 klas:F -->
-### T-21-070 · komirka · рядок 140
+<!-- fc id:T-21-077 sha:37c1710c src:manual/21-seriyna.md:154 klas:F -->
+### T-21-077 · komirka · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1056,8 +1297,8 @@
 
 ---
 
-<!-- fc id:T-21-071 sha:4688c6c2 src:manual/21-seriyna.md:140 klas:F -->
-### T-21-071 · komirka · рядок 140
+<!-- fc id:T-21-078 sha:4688c6c2 src:manual/21-seriyna.md:154 klas:F -->
+### T-21-078 · komirka · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1069,8 +1310,8 @@
 
 ---
 
-<!-- fc id:T-21-072 sha:ee027464 src:manual/21-seriyna.md:143 klas:F -->
-### T-21-072 · proza · рядок 143
+<!-- fc id:T-21-079 sha:ee027464 src:manual/21-seriyna.md:157 klas:F -->
+### T-21-079 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1082,8 +1323,8 @@
 
 ---
 
-<!-- fc id:T-21-073 sha:f8360aa5 src:manual/21-seriyna.md:147 klas:F -->
-### T-21-073 · proza · рядок 147
+<!-- fc id:T-21-080 sha:f8360aa5 src:manual/21-seriyna.md:161 klas:F -->
+### T-21-080 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1095,8 +1336,8 @@
 
 ---
 
-<!-- fc id:T-21-074 sha:2e3ee5bc src:manual/21-seriyna.md:152 klas:F -->
-### T-21-074 · proza · рядок 152
+<!-- fc id:T-21-081 sha:2e3ee5bc src:manual/21-seriyna.md:166 klas:F -->
+### T-21-081 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -1108,8 +1349,8 @@
 
 ---
 
-<!-- fc id:T-21-075 sha:6b4d2e33 src:manual/21-seriyna.md:152 klas:F -->
-### T-21-075 · proza · рядок 152
+<!-- fc id:T-21-082 sha:6b4d2e33 src:manual/21-seriyna.md:166 klas:F -->
+### T-21-082 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -1121,8 +1362,8 @@
 
 ---
 
-<!-- fc id:T-21-076 sha:775f6652 src:manual/21-seriyna.md:152 klas:F -->
-### T-21-076 · proza · рядок 152
+<!-- fc id:T-21-083 sha:775f6652 src:manual/21-seriyna.md:166 klas:F -->
+### T-21-083 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -1134,8 +1375,8 @@
 
 ---
 
-<!-- fc id:T-21-077 sha:f5a053c0 src:manual/21-seriyna.md:161 klas:F -->
-### T-21-077 · proza · рядок 161
+<!-- fc id:T-21-084 sha:f5a053c0 src:manual/21-seriyna.md:175 klas:F -->
+### T-21-084 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1147,8 +1388,8 @@
 
 ---
 
-<!-- fc id:T-21-078 sha:c5052027 src:manual/21-seriyna.md:161 klas:F -->
-### T-21-078 · proza · рядок 161
+<!-- fc id:T-21-085 sha:c5052027 src:manual/21-seriyna.md:175 klas:F -->
+### T-21-085 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1160,8 +1401,8 @@
 
 ---
 
-<!-- fc id:T-21-079 sha:7b5f5132 src:manual/21-seriyna.md:164 klas:F -->
-### T-21-079 · proza · рядок 164
+<!-- fc id:T-21-086 sha:7b5f5132 src:manual/21-seriyna.md:178 klas:F -->
+### T-21-086 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1173,8 +1414,8 @@
 
 ---
 
-<!-- fc id:T-21-080 sha:03a8a283 src:manual/21-seriyna.md:164 klas:F -->
-### T-21-080 · proza · рядок 164
+<!-- fc id:T-21-087 sha:03a8a283 src:manual/21-seriyna.md:178 klas:F -->
+### T-21-087 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1186,8 +1427,8 @@
 
 ---
 
-<!-- fc id:T-21-081 sha:73cabe58 src:manual/21-seriyna.md:164 klas:F -->
-### T-21-081 · proza · рядок 164
+<!-- fc id:T-21-088 sha:73cabe58 src:manual/21-seriyna.md:178 klas:F -->
+### T-21-088 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1199,8 +1440,8 @@
 
 ---
 
-<!-- fc id:T-21-082 sha:74a5c7c5 src:manual/21-seriyna.md:169 klas:F -->
-### T-21-082 · proza · рядок 169
+<!-- fc id:T-21-089 sha:74a5c7c5 src:manual/21-seriyna.md:183 klas:F -->
+### T-21-089 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1212,8 +1453,8 @@
 
 ---
 
-<!-- fc id:T-21-083 sha:8bcfad00 src:manual/21-seriyna.md:172 klas:F -->
-### T-21-083 · proza · рядок 172
+<!-- fc id:T-21-090 sha:8bcfad00 src:manual/21-seriyna.md:186 klas:F -->
+### T-21-090 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1225,8 +1466,8 @@
 
 ---
 
-<!-- fc id:T-21-084 sha:eecd5522 src:manual/21-seriyna.md:172 klas:F -->
-### T-21-084 · proza · рядок 172
+<!-- fc id:T-21-091 sha:eecd5522 src:manual/21-seriyna.md:186 klas:F -->
+### T-21-091 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1238,8 +1479,8 @@
 
 ---
 
-<!-- fc id:T-21-085 sha:850d2dde src:manual/21-seriyna.md:177 klas:F -->
-### T-21-085 · proza · рядок 177
+<!-- fc id:T-21-092 sha:850d2dde src:manual/21-seriyna.md:191 klas:F -->
+### T-21-092 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -1251,8 +1492,8 @@
 
 ---
 
-<!-- fc id:T-21-086 sha:69e2ed79 src:manual/21-seriyna.md:177 klas:F -->
-### T-21-086 · proza · рядок 177
+<!-- fc id:T-21-093 sha:69e2ed79 src:manual/21-seriyna.md:191 klas:F -->
+### T-21-093 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -1264,8 +1505,8 @@
 
 ---
 
-<!-- fc id:T-21-087 sha:39f098a2 src:manual/21-seriyna.md:184 klas:F -->
-### T-21-087 · proza · рядок 184
+<!-- fc id:T-21-094 sha:39f098a2 src:manual/21-seriyna.md:198 klas:F -->
+### T-21-094 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1277,8 +1518,8 @@
 
 ---
 
-<!-- fc id:T-21-088 sha:81a87405 src:manual/21-seriyna.md:186 klas:F -->
-### T-21-088 · proza · рядок 186
+<!-- fc id:T-21-095 sha:81a87405 src:manual/21-seriyna.md:200 klas:A -->
+### T-21-095 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1286,12 +1527,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-21-089 sha:26048fe4 src:manual/21-seriyna.md:188 klas:F -->
-### T-21-089 · proza · рядок 188
+<!-- fc id:T-21-096 sha:26048fe4 src:manual/21-seriyna.md:202 klas:F -->
+### T-21-096 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1303,8 +1566,8 @@
 
 ---
 
-<!-- fc id:T-21-090 sha:ade9bd68 src:manual/21-seriyna.md:188 klas:F -->
-### T-21-090 · proza · рядок 188
+<!-- fc id:T-21-097 sha:ade9bd68 src:manual/21-seriyna.md:202 klas:F -->
+### T-21-097 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1316,8 +1579,8 @@
 
 ---
 
-<!-- fc id:T-21-091 sha:fd3cdf97 src:manual/21-seriyna.md:191 klas:F -->
-### T-21-091 · proza · рядок 191
+<!-- fc id:T-21-098 sha:fd3cdf97 src:manual/21-seriyna.md:205 klas:F -->
+### T-21-098 · proza · рядок 205
 
 **Книга каже, дослівно:**
 

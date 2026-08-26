@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/17-esptool.md`
 
-Одиниць твердження: **124**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **145**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -546,7 +546,7 @@
 
 ---
 
-<!-- fc id:T-17-027 sha:85f599cb src:manual/17-esptool.md:62 klas:F -->
+<!-- fc id:T-17-027 sha:85f599cb src:manual/17-esptool.md:62 klas:A -->
 ### T-17-027 · kod · рядок 62
 
 **Книга каже, дослівно:**
@@ -557,7 +557,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -600,7 +622,7 @@
 
 ---
 
-<!-- fc id:T-17-031 sha:e66c9553 src:manual/17-esptool.md:70 klas:F -->
+<!-- fc id:T-17-031 sha:e66c9553 src:manual/17-esptool.md:70 klas:A -->
 ### T-17-031 · kod · рядок 70
 
 **Книга каже, дослівно:**
@@ -611,7 +633,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -1285,7 +1329,7 @@
 
 ---
 
-<!-- fc id:T-17-073 sha:5a1c829e src:manual/17-esptool.md:163 klas:F -->
+<!-- fc id:T-17-073 sha:5a1c829e src:manual/17-esptool.md:163 klas:A -->
 ### T-17-073 · kod · рядок 163
 
 **Книга каже, дослівно:**
@@ -1296,11 +1340,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-17-074 sha:b3a989e0 src:manual/17-esptool.md:164 klas:F -->
+<!-- fc id:T-17-074 sha:b3a989e0 src:manual/17-esptool.md:164 klas:A -->
 ### T-17-074 · kod-ryadok · рядок 164
 
 **Книга каже, дослівно:**
@@ -1309,11 +1375,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-17-075 sha:31d5a3a2 src:manual/17-esptool.md:169 klas:F -->
+<!-- fc id:T-17-075 sha:31d5a3a2 src:manual/17-esptool.md:169 klas:A -->
 ### T-17-075 · kod · рядок 169
 
 **Книга каже, дослівно:**
@@ -1324,11 +1412,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-17-076 sha:c93ce3ef src:manual/17-esptool.md:170 klas:F -->
+<!-- fc id:T-17-076 sha:c93ce3ef src:manual/17-esptool.md:170 klas:A -->
 ### T-17-076 · kod-ryadok · рядок 170
 
 **Книга каже, дослівно:**
@@ -1337,7 +1447,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -1354,7 +1486,7 @@
 
 ---
 
-<!-- fc id:T-17-078 sha:6337a912 src:manual/17-esptool.md:173 klas:F -->
+<!-- fc id:T-17-078 sha:6337a912 src:manual/17-esptool.md:173 klas:A -->
 ### T-17-078 · proza · рядок 173
 
 **Книга каже, дослівно:**
@@ -1363,7 +1495,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -1406,13 +1560,13 @@
 
 ---
 
-<!-- fc id:T-17-082 sha:4d50070b src:manual/17-esptool.md:183 klas:F -->
+<!-- fc id:T-17-082 sha:c1d44c0d src:manual/17-esptool.md:183 klas:A -->
 ### T-17-082 · kod · рядок 183
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool merge-bin -o vyrib-v1.bin --flash-mode dio \
+> esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 >   0x1000 bootloader.bin \
 >   0x8000 partition-table.bin \
 >   0x10000 app.bin
@@ -1420,29 +1574,93 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-17-083 sha:69fc8ec7 src:manual/17-esptool.md:184 klas:F -->
+<!-- fc id:T-17-083 sha:86df9991 src:manual/17-esptool.md:184 klas:A -->
 ### T-17-083 · kod-ryadok · рядок 184
 
 **Книга каже, дослівно:**
 
-> esptool merge-bin -o vyrib-v1.bin --flash-mode dio \
+> esptool --chip esp32 merge-bin -o vyrib-v1.bin --flash-mode dio \
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-17-084 sha:23924ebe src:manual/17-esptool.md:190 klas:F -->
+<!-- fc id:T-17-084 sha:265e633f src:manual/17-esptool.md:190 klas:A -->
 ### T-17-084 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
-> [[classic]] Адреса `0x1000` тут — знову classic; для інших чипів див. таблицю в розділі 16.
+> `--chip` тут **обов'язковий**, і це єдина команда розділу, де він не опція.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-085 sha:6579e87b src:manual/17-esptool.md:190 klas:F -->
+### T-17-085 · proza · рядок 190
+
+**Книга каже, дослівно:**
+
+> Решта команд працює через порт і визначає чип сама; `merge-bin` порту не має — вона складає файл офлайн.
 
 **Доказ**
 
@@ -1450,8 +1668,51 @@
 
 ---
 
-<!-- fc id:T-17-085 sha:66ee792a src:manual/17-esptool.md:190 klas:F -->
-### T-17-085 · proza · рядок 190
+<!-- fc id:T-17-086 sha:7acf702f src:manual/17-esptool.md:190 klas:A -->
+### T-17-086 · proza · рядок 190
+
+**Книга каже, дослівно:**
+
+> Без `--chip` esptool не вгадує, а зупиняється: `Specify the --chip argument`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-087 sha:2431f38a src:manual/17-esptool.md:195 klas:F -->
+### T-17-087 · proza · рядок 195
+
+**Книга каже, дослівно:**
+
+> [[classic]] Адреса `0x1000` тут — знову classic, і тепер вона узгоджена з `--chip esp32` у тому ж рядку; для інших чипів див. таблицю в розділі 16.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-088 sha:66ee792a src:manual/17-esptool.md:195 klas:F -->
+### T-17-088 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1463,8 +1724,8 @@
 
 ---
 
-<!-- fc id:T-17-086 sha:a8ba7c8e src:manual/17-esptool.md:194 klas:F -->
-### T-17-086 · proza · рядок 194
+<!-- fc id:T-17-089 sha:a8ba7c8e src:manual/17-esptool.md:200 klas:F -->
+### T-17-089 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1476,8 +1737,8 @@
 
 ---
 
-<!-- fc id:T-17-087 sha:ba49e524 src:manual/17-esptool.md:197 klas:A -->
-### T-17-087 · kod · рядок 197
+<!-- fc id:T-17-090 sha:ba49e524 src:manual/17-esptool.md:203 klas:A -->
+### T-17-090 · kod · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1511,8 +1772,8 @@
 
 ---
 
-<!-- fc id:T-17-088 sha:f1947da9 src:manual/17-esptool.md:198 klas:A -->
-### T-17-088 · kod-ryadok · рядок 198
+<!-- fc id:T-17-091 sha:f1947da9 src:manual/17-esptool.md:204 klas:A -->
+### T-17-091 · kod-ryadok · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1544,8 +1805,8 @@
 
 ---
 
-<!-- fc id:T-17-089 sha:d53fd3ce src:manual/17-esptool.md:201 klas:F -->
-### T-17-089 · proza · рядок 201
+<!-- fc id:T-17-092 sha:d53fd3ce src:manual/17-esptool.md:207 klas:F -->
+### T-17-092 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1557,8 +1818,8 @@
 
 ---
 
-<!-- fc id:T-17-090 sha:a0822607 src:manual/17-esptool.md:201 klas:F -->
-### T-17-090 · proza · рядок 201
+<!-- fc id:T-17-093 sha:a0822607 src:manual/17-esptool.md:207 klas:F -->
+### T-17-093 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1570,8 +1831,192 @@
 
 ---
 
-<!-- fc id:T-17-091 sha:30d662b6 src:manual/17-esptool.md:207 klas:F -->
-### T-17-091 · proza · рядок 207
+<!-- fc id:T-17-094 sha:0c354cb5 src:manual/17-esptool.md:213 klas:F -->
+### T-17-094 · proza · рядок 213
+
+**Книга каже, дослівно:**
+
+> Усе вище потрібне тоді, коли у вас на руках лише три `.bin`-файли.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-095 sha:ed62f710 src:manual/17-esptool.md:213 klas:F -->
+### T-17-095 · proza · рядок 213
+
+**Книга каже, дослівно:**
+
+> Якщо ж є сам проєкт ESP-IDF, є коротший і надійніший шлях:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-096 sha:aa4bc88d src:manual/17-esptool.md:216 klas:A -->
+### T-17-096 · kod · рядок 216
+
+**Книга каже, дослівно:**
+
+> ```
+> idf.py merge-bin -o vyrib-v1.bin
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-097 sha:8d510e99 src:manual/17-esptool.md:217 klas:A -->
+### T-17-097 · kod-ryadok · рядок 217
+
+**Книга каже, дослівно:**
+
+> idf.py merge-bin -o vyrib-v1.bin
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-098 sha:85f58bc1 src:manual/17-esptool.md:220 klas:F -->
+### T-17-098 · proza · рядок 220
+
+**Книга каже, дослівно:**
+
+> Ця команда бере бутлоадер, таблицю розділів, застосунок і решту розділів **за конфігурацією проєкту**: адреси, чип, режим і частота флешу підставляються самі.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-099 sha:06b69d9f src:manual/17-esptool.md:220 klas:A -->
+### T-17-099 · proza · рядок 220
+
+**Книга каже, дослівно:**
+
+> Без параметрів результат лягає у `build/merged-binary.bin`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-100 sha:6edab381 src:manual/17-esptool.md:226 klas:F -->
+### T-17-100 · proza · рядок 226
+
+**Книга каже, дослівно:**
+
+> У ручному варіанті адреса бутлоадера набирається з голови, і саме там роблять помилку: `0x1000` на S3 дає образ, який прошивається без жодної скарги і не стартує (розділ 16).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-101 sha:c0359df7 src:manual/17-esptool.md:230 klas:A -->
+### T-17-101 · proza · рядок 230
+
+**Книга каже, дослівно:**
+
+> `idf.py merge-bin` цю можливість прибирає повністю — воно читає адресу з конфігурації того самого проєкту, який ви щойно зібрали.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-102 sha:5a1fb7e0 src:manual/17-esptool.md:233 klas:A -->
+### T-17-102 · proza · рядок 233
+
+**Книга каже, дослівно:**
+
+> Правило просте: є проєкт — `idf.py merge-bin`; є тільки файли — `esptool --chip … merge-bin` з адресами з таблиці.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-103 sha:30d662b6 src:manual/17-esptool.md:239 klas:F -->
+### T-17-103 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -1583,8 +2028,8 @@
 
 ---
 
-<!-- fc id:T-17-092 sha:046e97d7 src:manual/17-esptool.md:210 klas:F -->
-### T-17-092 · proza · рядок 210
+<!-- fc id:T-17-104 sha:046e97d7 src:manual/17-esptool.md:242 klas:F -->
+### T-17-104 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1596,8 +2041,8 @@
 
 ---
 
-<!-- fc id:T-17-093 sha:81eb3b69 src:manual/17-esptool.md:214 klas:F -->
-### T-17-093 · proza · рядок 214
+<!-- fc id:T-17-105 sha:81eb3b69 src:manual/17-esptool.md:246 klas:F -->
+### T-17-105 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -1609,8 +2054,8 @@
 
 ---
 
-<!-- fc id:T-17-094 sha:c018ab70 src:manual/17-esptool.md:216 klas:F -->
-### T-17-094 · proza · рядок 216
+<!-- fc id:T-17-106 sha:c018ab70 src:manual/17-esptool.md:248 klas:F -->
+### T-17-106 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1622,8 +2067,8 @@
 
 ---
 
-<!-- fc id:T-17-095 sha:1070199a src:manual/17-esptool.md:216 klas:F -->
-### T-17-095 · proza · рядок 216
+<!-- fc id:T-17-107 sha:1070199a src:manual/17-esptool.md:248 klas:F -->
+### T-17-107 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1635,8 +2080,8 @@
 
 ---
 
-<!-- fc id:T-17-096 sha:7c5d9fa9 src:manual/17-esptool.md:219 klas:F -->
-### T-17-096 · proza · рядок 219
+<!-- fc id:T-17-108 sha:7c5d9fa9 src:manual/17-esptool.md:251 klas:F -->
+### T-17-108 · proza · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -1648,8 +2093,8 @@
 
 ---
 
-<!-- fc id:T-17-097 sha:d0ad404c src:manual/17-esptool.md:221 klas:F -->
-### T-17-097 · proza · рядок 221
+<!-- fc id:T-17-109 sha:d0ad404c src:manual/17-esptool.md:253 klas:F -->
+### T-17-109 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -1661,8 +2106,8 @@
 
 ---
 
-<!-- fc id:T-17-098 sha:cf4197d0 src:manual/17-esptool.md:221 klas:F -->
-### T-17-098 · proza · рядок 221
+<!-- fc id:T-17-110 sha:cf4197d0 src:manual/17-esptool.md:253 klas:F -->
+### T-17-110 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -1674,8 +2119,8 @@
 
 ---
 
-<!-- fc id:T-17-099 sha:e7619250 src:manual/17-esptool.md:224 klas:F -->
-### T-17-099 · proza · рядок 224
+<!-- fc id:T-17-111 sha:e7619250 src:manual/17-esptool.md:256 klas:F -->
+### T-17-111 · proza · рядок 256
 
 **Книга каже, дослівно:**
 
@@ -1687,8 +2132,8 @@
 
 ---
 
-<!-- fc id:T-17-100 sha:c6ae817f src:manual/17-esptool.md:226 klas:F -->
-### T-17-100 · proza · рядок 226
+<!-- fc id:T-17-112 sha:c6ae817f src:manual/17-esptool.md:258 klas:F -->
+### T-17-112 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1700,8 +2145,8 @@
 
 ---
 
-<!-- fc id:T-17-101 sha:dc7b5a5b src:manual/17-esptool.md:226 klas:F -->
-### T-17-101 · proza · рядок 226
+<!-- fc id:T-17-113 sha:dc7b5a5b src:manual/17-esptool.md:258 klas:F -->
+### T-17-113 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1713,8 +2158,8 @@
 
 ---
 
-<!-- fc id:T-17-102 sha:ea00dd94 src:manual/17-esptool.md:226 klas:F -->
-### T-17-102 · proza · рядок 226
+<!-- fc id:T-17-114 sha:ea00dd94 src:manual/17-esptool.md:258 klas:F -->
+### T-17-114 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1726,8 +2171,8 @@
 
 ---
 
-<!-- fc id:T-17-103 sha:acad2592 src:manual/17-esptool.md:226 klas:F -->
-### T-17-103 · proza · рядок 226
+<!-- fc id:T-17-115 sha:acad2592 src:manual/17-esptool.md:258 klas:F -->
+### T-17-115 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1739,8 +2184,8 @@
 
 ---
 
-<!-- fc id:T-17-104 sha:ec91ebc5 src:manual/17-esptool.md:231 klas:F -->
-### T-17-104 · proza · рядок 231
+<!-- fc id:T-17-116 sha:ec91ebc5 src:manual/17-esptool.md:263 klas:F -->
+### T-17-116 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -1752,8 +2197,8 @@
 
 ---
 
-<!-- fc id:T-17-105 sha:290a4865 src:manual/17-esptool.md:233 klas:F -->
-### T-17-105 · proza · рядок 233
+<!-- fc id:T-17-117 sha:290a4865 src:manual/17-esptool.md:265 klas:F -->
+### T-17-117 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -1765,8 +2210,8 @@
 
 ---
 
-<!-- fc id:T-17-106 sha:5e738a7f src:manual/17-esptool.md:233 klas:F -->
-### T-17-106 · proza · рядок 233
+<!-- fc id:T-17-118 sha:5e738a7f src:manual/17-esptool.md:265 klas:F -->
+### T-17-118 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -1778,8 +2223,8 @@
 
 ---
 
-<!-- fc id:T-17-107 sha:c0befa74 src:manual/17-esptool.md:233 klas:F -->
-### T-17-107 · proza · рядок 233
+<!-- fc id:T-17-119 sha:c0befa74 src:manual/17-esptool.md:265 klas:F -->
+### T-17-119 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -1791,8 +2236,8 @@
 
 ---
 
-<!-- fc id:T-17-108 sha:7d544eb3 src:manual/17-esptool.md:237 klas:F -->
-### T-17-108 · proza · рядок 237
+<!-- fc id:T-17-120 sha:7d544eb3 src:manual/17-esptool.md:269 klas:F -->
+### T-17-120 · proza · рядок 269
 
 **Книга каже, дослівно:**
 
@@ -1804,8 +2249,8 @@
 
 ---
 
-<!-- fc id:T-17-109 sha:2d9087c4 src:manual/17-esptool.md:239 klas:F -->
-### T-17-109 · proza · рядок 239
+<!-- fc id:T-17-121 sha:2d9087c4 src:manual/17-esptool.md:271 klas:F -->
+### T-17-121 · proza · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -1817,8 +2262,8 @@
 
 ---
 
-<!-- fc id:T-17-110 sha:efdb570a src:manual/17-esptool.md:239 klas:F -->
-### T-17-110 · proza · рядок 239
+<!-- fc id:T-17-122 sha:efdb570a src:manual/17-esptool.md:271 klas:F -->
+### T-17-122 · proza · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -1830,8 +2275,193 @@
 
 ---
 
-<!-- fc id:T-17-111 sha:36eba84f src:manual/17-esptool.md:242 klas:F -->
-### T-17-111 · proza · рядок 242
+<!-- fc id:T-17-123 sha:8a18dd3e src:manual/17-esptool.md:274 klas:F -->
+### T-17-123 · proza · рядок 274
+
+**Книга каже, дослівно:**
+
+> **Плата лишається в download mode після прошивки** [[S3]] [[C3]]
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-124 sha:f7560ce0 src:manual/17-esptool.md:276 klas:F -->
+### T-17-124 · proza · рядок 276
+
+**Книга каже, дослівно:**
+
+> Прошивка пройшла, а застосунок не стартував: чип так і сидить у завантажувачі.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-125 sha:567f0570 src:manual/17-esptool.md:276 klas:A -->
+### T-17-125 · proza · рядок 276
+
+**Книга каже, дослівно:**
+
+> На платах із native USB (картка [К3](#k-pidkl)) причина в тому, що скидання по лінії `RTS` через USB-Serial/JTAG не завжди спрацьовує — фізичної лінії там немає.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/advanced-options.rst
+- **Дослівно з джерела:**
+  > :not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4
+  >  and not esp32e22: * ``--after watchdog-reset`` hard-resets the chip by
+  >  triggering an internal watchdog reset. This is useful when the RTS control
+  >  line is not available, especially in the USB-OTG and USB-Serial/JTAG modes.
+  >  Use this if a chip is getting stuck in download mode when using the default
+  >  reset method in USB-Serial/JTAG mode. Using this may cause the port to
+  >  re-enumerate on Linux (e.g. ``/dev/ttyACM0`` -> ``/dev/ttyACM1``).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення до переліку типових помилок розділу 17. Симптом «прошилося, а застосунок не стартував, чип сидить у завантажувачі» книга не розбирала, хоча на платах S3 і C3 із native USB він звичайний: лінії `RTS` фізично немає.
+Умова застосовності взята з самої директиви, а не вгадана: режим є на S2, S3, C3, P4, C5 і новіших, і його немає на classic, C6 та H2 — саме так і записано в книзі. Побічний ефект із перелічуванням порту теж названо, бо без нього читач вирішить, що плата зникла.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-126 sha:f93a70ab src:manual/17-esptool.md:281 klas:F -->
+### T-17-126 · proza · рядок 281
+
+**Книга каже, дослівно:**
+
+> Обхід — скидання внутрішнім watchdog замість `RTS`:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-127 sha:c2ed87c0 src:manual/17-esptool.md:283 klas:A -->
+### T-17-127 · kod · рядок 283
+
+**Книга каже, дослівно:**
+
+> ```
+> esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
+
+---
+
+<!-- fc id:T-17-128 sha:e196de7b src:manual/17-esptool.md:284 klas:A -->
+### T-17-128 · kod-ryadok · рядок 284
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Дослівно з джерела:**
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
+
+---
+
+<!-- fc id:T-17-129 sha:10d41f6e src:manual/17-esptool.md:287 klas:A -->
+### T-17-129 · proza · рядок 287
+
+**Книга каже, дослівно:**
+
+> Побічний ефект, до якого треба бути готовим: порт перелічується заново, і `/dev/ttyACM0` може стати `/dev/ttyACM1`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/advanced-options.rst
+- **Дослівно з джерела:**
+  > :not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4
+  >  and not esp32e22: * ``--after watchdog-reset`` hard-resets the chip by
+  >  triggering an internal watchdog reset. This is useful when the RTS control
+  >  line is not available, especially in the USB-OTG and USB-Serial/JTAG modes.
+  >  Use this if a chip is getting stuck in download mode when using the default
+  >  reset method in USB-Serial/JTAG mode. Using this may cause the port to
+  >  re-enumerate on Linux (e.g. ``/dev/ttyACM0`` -> ``/dev/ttyACM1``).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення до переліку типових помилок розділу 17. Симптом «прошилося, а застосунок не стартував, чип сидить у завантажувачі» книга не розбирала, хоча на платах S3 і C3 із native USB він звичайний: лінії `RTS` фізично немає.
+Умова застосовності взята з самої директиви, а не вгадана: режим є на S2, S3, C3, P4, C5 і новіших, і його немає на classic, C6 та H2 — саме так і записано в книзі. Побічний ефект із перелічуванням порту теж названо, бо без нього читач вирішить, що плата зникла.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-17-130 sha:6ac44b20 src:manual/17-esptool.md:287 klas:F -->
+### T-17-130 · proza · рядок 287
+
+**Книга каже, дослівно:**
+
+> Монітор доведеться відкрити на новому імені.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-131 sha:59239464 src:manual/17-esptool.md:291 klas:F -->
+### T-17-131 · proza · рядок 291
+
+**Книга каже, дослівно:**
+
+> На ESP32 classic, C6 і H2 цього режиму немає — там працює звичайне `hard-reset` по `RTS`.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-132 sha:36eba84f src:manual/17-esptool.md:294 klas:F -->
+### T-17-132 · proza · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -1843,8 +2473,8 @@
 
 ---
 
-<!-- fc id:T-17-112 sha:6f4d2986 src:manual/17-esptool.md:244 klas:F -->
-### T-17-112 · proza · рядок 244
+<!-- fc id:T-17-133 sha:6f4d2986 src:manual/17-esptool.md:296 klas:F -->
+### T-17-133 · proza · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -1856,8 +2486,8 @@
 
 ---
 
-<!-- fc id:T-17-113 sha:4a61aa2a src:manual/17-esptool.md:244 klas:F -->
-### T-17-113 · proza · рядок 244
+<!-- fc id:T-17-134 sha:4a61aa2a src:manual/17-esptool.md:296 klas:F -->
+### T-17-134 · proza · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -1869,8 +2499,8 @@
 
 ---
 
-<!-- fc id:T-17-114 sha:6c0640de src:manual/17-esptool.md:244 klas:F -->
-### T-17-114 · proza · рядок 244
+<!-- fc id:T-17-135 sha:6c0640de src:manual/17-esptool.md:296 klas:F -->
+### T-17-135 · proza · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -1882,8 +2512,8 @@
 
 ---
 
-<!-- fc id:T-17-115 sha:2a9519b0 src:manual/17-esptool.md:250 klas:F -->
-### T-17-115 · proza · рядок 250
+<!-- fc id:T-17-136 sha:2a9519b0 src:manual/17-esptool.md:302 klas:F -->
+### T-17-136 · proza · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -1895,8 +2525,8 @@
 
 ---
 
-<!-- fc id:T-17-116 sha:918d6503 src:manual/17-esptool.md:250 klas:F -->
-### T-17-116 · proza · рядок 250
+<!-- fc id:T-17-137 sha:918d6503 src:manual/17-esptool.md:302 klas:F -->
+### T-17-137 · proza · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -1908,8 +2538,8 @@
 
 ---
 
-<!-- fc id:T-17-117 sha:313ef396 src:manual/17-esptool.md:254 klas:F -->
-### T-17-117 · proza · рядок 254
+<!-- fc id:T-17-138 sha:313ef396 src:manual/17-esptool.md:306 klas:F -->
+### T-17-138 · proza · рядок 306
 
 **Книга каже, дослівно:**
 
@@ -1921,8 +2551,8 @@
 
 ---
 
-<!-- fc id:T-17-118 sha:e977c57d src:manual/17-esptool.md:254 klas:F -->
-### T-17-118 · proza · рядок 254
+<!-- fc id:T-17-139 sha:e977c57d src:manual/17-esptool.md:306 klas:F -->
+### T-17-139 · proza · рядок 306
 
 **Книга каже, дослівно:**
 
@@ -1934,8 +2564,8 @@
 
 ---
 
-<!-- fc id:T-17-119 sha:2d322667 src:manual/17-esptool.md:261 klas:F -->
-### T-17-119 · proza · рядок 261
+<!-- fc id:T-17-140 sha:2d322667 src:manual/17-esptool.md:313 klas:F -->
+### T-17-140 · proza · рядок 313
 
 **Книга каже, дослівно:**
 
@@ -1947,8 +2577,8 @@
 
 ---
 
-<!-- fc id:T-17-120 sha:8eda1231 src:manual/17-esptool.md:263 klas:F -->
-### T-17-120 · proza · рядок 263
+<!-- fc id:T-17-141 sha:8eda1231 src:manual/17-esptool.md:315 klas:F -->
+### T-17-141 · proza · рядок 315
 
 **Книга каже, дослівно:**
 
@@ -1960,8 +2590,8 @@
 
 ---
 
-<!-- fc id:T-17-121 sha:a7f08f37 src:manual/17-esptool.md:265 klas:F -->
-### T-17-121 · proza · рядок 265
+<!-- fc id:T-17-142 sha:a7f08f37 src:manual/17-esptool.md:317 klas:F -->
+### T-17-142 · proza · рядок 317
 
 **Книга каже, дослівно:**
 
@@ -1973,8 +2603,8 @@
 
 ---
 
-<!-- fc id:T-17-122 sha:0de9cf8b src:manual/17-esptool.md:265 klas:F -->
-### T-17-122 · proza · рядок 265
+<!-- fc id:T-17-143 sha:0de9cf8b src:manual/17-esptool.md:317 klas:F -->
+### T-17-143 · proza · рядок 317
 
 **Книга каже, дослівно:**
 
@@ -1986,8 +2616,8 @@
 
 ---
 
-<!-- fc id:T-17-123 sha:42368b26 src:manual/17-esptool.md:268 klas:F -->
-### T-17-123 · proza · рядок 268
+<!-- fc id:T-17-144 sha:42368b26 src:manual/17-esptool.md:320 klas:A -->
+### T-17-144 · proza · рядок 320
 
 **Книга каже, дослівно:**
 
@@ -1995,12 +2625,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-17-124 sha:33a8f7c8 src:manual/17-esptool.md:270 klas:F -->
-### T-17-124 · proza · рядок 270
+<!-- fc id:T-17-145 sha:33a8f7c8 src:manual/17-esptool.md:322 klas:F -->
+### T-17-145 · proza · рядок 322
 
 **Книга каже, дослівно:**
 

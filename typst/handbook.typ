@@ -364,6 +364,9 @@
   // Кожна картка ярусу 0 починається з нової сторінки (Р9: одна сторінка).
   show heading.where(level: 2): it => {
     pagebreak(weak: true)
+    // Мітка для перевірки «одна картка — одна сторінка» (tools/build.py).
+    // Нічого не друкує; сторінку початку картки інакше не дістати ззовні.
+    context [#metadata(here().page()) <pochatok-kartky>]
     block(above: 0em, below: 0.7em)[
       #set text(size: 1.5em, weight: 700)
       #it.body

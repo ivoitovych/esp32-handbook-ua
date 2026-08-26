@@ -414,7 +414,40 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
     out = BUILD / cfg["output"]
     import typst
     typst.compile(str(root_typ), output=str(out), root=str(ROOT))
+    if cfg["template"] == "kartky":
+        perelyvy = perevirka_odna_storinka(root_typ, out, frags)
+        for opys in perelyvy:
+            print(f"  ✗ {opys}")
+        PERELYVY.extend(perelyvy)
     return out
+
+
+# «Одна картка — одна сторінка» — не орієнтир, а фізична умова: картка
+# ярусу 0 друкується на аркуші й ламінується (docs/DESIGN.md). Слова
+# рахує tools/budgets.py, але переливається картка не від слів, а від
+# верстки — таблиця на рядок довша дає ту саму другу сторінку при тому
+# самому обсязі. Тому перевірка тут: після справжнього збирання.
+def perevirka_odna_storinka(root_typ: Path, pdf: Path,
+                            frags: list[Path]) -> list[str]:
+    import json
+    import typst
+    pochatky = [z["value"] for z in json.loads(
+        typst.query(str(root_typ), "<pochatok-kartky>", root=str(ROOT)))]
+    storinok = len(re.findall(rb"/Type\s*/Page[^s]", pdf.read_bytes()))
+    imena = [f.stem.split("-", 1)[1] for f in frags]
+    problemy = []
+    for i, p in enumerate(pochatky):
+        nastupna = pochatky[i + 1] if i + 1 < len(pochatky) else storinok + 1
+        if nastupna - p > 1:
+            imya = imena[i] if i < len(imena) else f"картка {i + 1}"
+            problemy.append(
+                f"{imya}: {nastupna - p} сторінки — картка мусить бути "
+                f"одна. Ділити навпіл або виносити глибину в додаток "
+                f"(docs/DESIGN.md, Р10), не викидати факт")
+    return problemy
+
+
+PERELYVY: list[str] = []
 
 
 def main() -> None:
@@ -429,6 +462,10 @@ def main() -> None:
         print(f"→ {name}")
         out = build(name, cfg["targets"][name], meta)
         print(f"  ✓ {out.relative_to(ROOT)}  ({out.stat().st_size // 1024} КБ)")
+
+    if PERELYVY:
+        print(f"\nкарток, що не влізли в сторінку: {len(PERELYVY)}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":

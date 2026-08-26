@@ -13,8 +13,8 @@ esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
 esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
 esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
 esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
-esptool merge-bin -o all.bin --flash-mode dio \
-  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # 0x1000 → classic/S2; інші чипи — див. таблицю
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
 ```
 
 ## idf.py
@@ -30,7 +30,11 @@ idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
 idf.py fullclean                    # коли збирання поводиться незрозуміло
 idf.py size                         # скільки зайнято флешу і RAM
 idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
 ```
+
+Є проєкт — `idf.py merge-bin` (адрес набирати не треба). Є лише
+`.bin`-файли — `esptool --chip … merge-bin` з адресами вище.
 
 ## Монітор
 

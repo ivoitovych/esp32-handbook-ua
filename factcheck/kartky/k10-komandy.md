@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k10-komandy.md`
 
-Одиниць твердження: **49**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **52**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -65,7 +65,7 @@
 
 ---
 
-<!-- fc id:T-K10-004 sha:95237904 src:kartky/k10-komandy.md:8 klas:A -->
+<!-- fc id:T-K10-004 sha:19ad006c src:kartky/k10-komandy.md:8 klas:A -->
 ### T-K10-004 · kod · рядок 8
 
 **Книга каже, дослівно:**
@@ -78,8 +78,8 @@
 > esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
 > esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
 > esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
-> esptool merge-bin -o all.bin --flash-mode dio \
->   0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # 0x1000 → classic/S2; інші чипи — див. таблицю
+> esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+>   0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
 > ```
 
 **Доказ**
@@ -108,7 +108,7 @@
 
 ---
 
-<!-- fc id:T-K10-005 sha:df0648fe src:kartky/k10-komandy.md:9 klas:F -->
+<!-- fc id:T-K10-005 sha:df0648fe src:kartky/k10-komandy.md:9 klas:A -->
 ### T-K10-005 · kod-ryadok · рядок 9
 
 **Книга каже, дослівно:**
@@ -117,11 +117,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-K10-006 sha:8af1928d src:kartky/k10-komandy.md:10 klas:F -->
+<!-- fc id:T-K10-006 sha:8af1928d src:kartky/k10-komandy.md:10 klas:A -->
 ### T-K10-006 · kod-ryadok · рядок 10
 
 **Книга каже, дослівно:**
@@ -130,7 +152,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -197,7 +241,7 @@
 
 ---
 
-<!-- fc id:T-K10-009 sha:94bd45fa src:kartky/k10-komandy.md:13 klas:F -->
+<!-- fc id:T-K10-009 sha:94bd45fa src:kartky/k10-komandy.md:13 klas:A -->
 ### T-K10-009 · kod-ryadok · рядок 13
 
 **Книга каже, дослівно:**
@@ -206,7 +250,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -236,20 +302,37 @@
 
 ---
 
-<!-- fc id:T-K10-012 sha:aecfd191 src:kartky/k10-komandy.md:16 klas:F -->
+<!-- fc id:T-K10-012 sha:23a7fc4e src:kartky/k10-komandy.md:16 klas:A -->
 ### T-K10-012 · kod-ryadok · рядок 16
 
 **Книга каже, дослівно:**
 
-> esptool merge-bin -o all.bin --flash-mode dio \
+> esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-K10-013 sha:4dc75968 src:kartky/k10-komandy.md:22 klas:F -->
+<!-- fc id:T-K10-013 sha:b9d2934d src:kartky/k10-komandy.md:22 klas:A -->
 ### T-K10-013 · kod · рядок 22
 
 **Книга каже, дослівно:**
@@ -265,11 +348,25 @@
 > idf.py fullclean                    # коли збирання поводиться незрозуміло
 > idf.py size                         # скільки зайнято флешу і RAM
 > idf.py coredump-info                # розбір coredump із флешу
+> idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
 > ```
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -364,7 +461,7 @@
 
 ---
 
-<!-- fc id:T-K10-021 sha:21c29912 src:kartky/k10-komandy.md:30 klas:F -->
+<!-- fc id:T-K10-021 sha:21c29912 src:kartky/k10-komandy.md:30 klas:A -->
 ### T-K10-021 · kod-ryadok · рядок 30
 
 **Книга каже, дослівно:**
@@ -373,7 +470,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -390,7 +509,7 @@
 
 ---
 
-<!-- fc id:T-K10-023 sha:48df8d47 src:kartky/k10-komandy.md:32 klas:F -->
+<!-- fc id:T-K10-023 sha:48df8d47 src:kartky/k10-komandy.md:32 klas:A -->
 ### T-K10-023 · kod-ryadok · рядок 32
 
 **Книга каже, дослівно:**
@@ -399,12 +518,99 @@
 
 **Доказ**
 
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-K10-024 sha:a2ff386f src:kartky/k10-komandy.md:33 klas:A -->
+### T-K10-024 · kod-ryadok · рядок 33
+
+**Книга каже, дослівно:**
+
+> idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-K10-025 sha:0c9d449b src:kartky/k10-komandy.md:36 klas:A -->
+### T-K10-025 · proza · рядок 36
+
+**Книга каже, дослівно:**
+
+> Є проєкт — `idf.py merge-bin` (адрес набирати не треба).
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-K10-026 sha:f5cb6136 src:kartky/k10-komandy.md:36 klas:F -->
+### T-K10-026 · proza · рядок 36
+
+**Книга каже, дослівно:**
+
+> Є лише `.bin`-файли — `esptool --chip … merge-bin` з адресами вище.
+
+**Доказ**
+
 - **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-024 sha:c64c8733 src:kartky/k10-komandy.md:37 klas:F -->
-### T-K10-024 · proza · рядок 37
+<!-- fc id:T-K10-027 sha:c64c8733 src:kartky/k10-komandy.md:41 klas:F -->
+### T-K10-027 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -416,8 +622,8 @@
 
 ---
 
-<!-- fc id:T-K10-025 sha:51eec05c src:kartky/k10-komandy.md:37 klas:F -->
-### T-K10-025 · proza · рядок 37
+<!-- fc id:T-K10-028 sha:51eec05c src:kartky/k10-komandy.md:41 klas:F -->
+### T-K10-028 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -429,8 +635,8 @@
 
 ---
 
-<!-- fc id:T-K10-026 sha:ab211d67 src:kartky/k10-komandy.md:39 klas:F -->
-### T-K10-026 · kod · рядок 39
+<!-- fc id:T-K10-029 sha:ab211d67 src:kartky/k10-komandy.md:43 klas:F -->
+### T-K10-029 · kod · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -446,8 +652,8 @@
 
 ---
 
-<!-- fc id:T-K10-027 sha:746a4901 src:kartky/k10-komandy.md:40 klas:F -->
-### T-K10-027 · kod-ryadok · рядок 40
+<!-- fc id:T-K10-030 sha:746a4901 src:kartky/k10-komandy.md:44 klas:F -->
+### T-K10-030 · kod-ryadok · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -459,8 +665,8 @@
 
 ---
 
-<!-- fc id:T-K10-028 sha:d4bff93f src:kartky/k10-komandy.md:41 klas:F -->
-### T-K10-028 · kod-ryadok · рядок 41
+<!-- fc id:T-K10-031 sha:d4bff93f src:kartky/k10-komandy.md:45 klas:F -->
+### T-K10-031 · kod-ryadok · рядок 45
 
 **Книга каже, дослівно:**
 
@@ -472,8 +678,8 @@
 
 ---
 
-<!-- fc id:T-K10-029 sha:c8e23e02 src:kartky/k10-komandy.md:42 klas:F -->
-### T-K10-029 · kod-ryadok · рядок 42
+<!-- fc id:T-K10-032 sha:c8e23e02 src:kartky/k10-komandy.md:46 klas:F -->
+### T-K10-032 · kod-ryadok · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -485,8 +691,8 @@
 
 ---
 
-<!-- fc id:T-K10-030 sha:c5afa127 src:kartky/k10-komandy.md:47 klas:F -->
-### T-K10-030 · kod · рядок 47
+<!-- fc id:T-K10-033 sha:c5afa127 src:kartky/k10-komandy.md:51 klas:F -->
+### T-K10-033 · kod · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -503,8 +709,8 @@
 
 ---
 
-<!-- fc id:T-K10-031 sha:805c4c57 src:kartky/k10-komandy.md:48 klas:F -->
-### T-K10-031 · kod-ryadok · рядок 48
+<!-- fc id:T-K10-034 sha:805c4c57 src:kartky/k10-komandy.md:52 klas:F -->
+### T-K10-034 · kod-ryadok · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -516,8 +722,8 @@
 
 ---
 
-<!-- fc id:T-K10-032 sha:65b20b9d src:kartky/k10-komandy.md:49 klas:F -->
-### T-K10-032 · kod-ryadok · рядок 49
+<!-- fc id:T-K10-035 sha:65b20b9d src:kartky/k10-komandy.md:53 klas:F -->
+### T-K10-035 · kod-ryadok · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -529,8 +735,8 @@
 
 ---
 
-<!-- fc id:T-K10-033 sha:459deb70 src:kartky/k10-komandy.md:50 klas:F -->
-### T-K10-033 · kod-ryadok · рядок 50
+<!-- fc id:T-K10-036 sha:459deb70 src:kartky/k10-komandy.md:54 klas:F -->
+### T-K10-036 · kod-ryadok · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -542,8 +748,8 @@
 
 ---
 
-<!-- fc id:T-K10-034 sha:04c7f41f src:kartky/k10-komandy.md:51 klas:F -->
-### T-K10-034 · kod-ryadok · рядок 51
+<!-- fc id:T-K10-037 sha:04c7f41f src:kartky/k10-komandy.md:55 klas:F -->
+### T-K10-037 · kod-ryadok · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -555,8 +761,8 @@
 
 ---
 
-<!-- fc id:T-K10-035 sha:4ffb7aee src:kartky/k10-komandy.md:54 klas:F -->
-### T-K10-035 · proza · рядок 54
+<!-- fc id:T-K10-038 sha:4ffb7aee src:kartky/k10-komandy.md:58 klas:F -->
+### T-K10-038 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -568,8 +774,8 @@
 
 ---
 
-<!-- fc id:T-K10-036 sha:2130100e src:kartky/k10-komandy.md:54 klas:F -->
-### T-K10-036 · proza · рядок 54
+<!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:58 klas:F -->
+### T-K10-039 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -581,8 +787,8 @@
 
 ---
 
-<!-- fc id:T-K10-037 sha:3c153db1 src:kartky/k10-komandy.md:59 klas:F -->
-### T-K10-037 · tablycya-shapka · рядок 59
+<!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 klas:F -->
+### T-K10-040 · tablycya-shapka · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -594,8 +800,8 @@
 
 ---
 
-<!-- fc id:T-K10-038 sha:03becf94 src:kartky/k10-komandy.md:60 klas:F -->
-### T-K10-038 · komirka · рядок 60
+<!-- fc id:T-K10-041 sha:03becf94 src:kartky/k10-komandy.md:64 klas:F -->
+### T-K10-041 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -607,8 +813,8 @@
 
 ---
 
-<!-- fc id:T-K10-039 sha:1fe1e089 src:kartky/k10-komandy.md:60 klas:F -->
-### T-K10-039 · komirka · рядок 60
+<!-- fc id:T-K10-042 sha:1fe1e089 src:kartky/k10-komandy.md:64 klas:F -->
+### T-K10-042 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -620,8 +826,8 @@
 
 ---
 
-<!-- fc id:T-K10-040 sha:ddb10a79 src:kartky/k10-komandy.md:60 klas:F -->
-### T-K10-040 · komirka · рядок 60
+<!-- fc id:T-K10-043 sha:ddb10a79 src:kartky/k10-komandy.md:64 klas:F -->
+### T-K10-043 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -633,8 +839,8 @@
 
 ---
 
-<!-- fc id:T-K10-041 sha:4e987ef9 src:kartky/k10-komandy.md:61 klas:F -->
-### T-K10-041 · komirka · рядок 61
+<!-- fc id:T-K10-044 sha:4e987ef9 src:kartky/k10-komandy.md:65 klas:F -->
+### T-K10-044 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -646,8 +852,8 @@
 
 ---
 
-<!-- fc id:T-K10-042 sha:8c7b7a5f src:kartky/k10-komandy.md:61 klas:F -->
-### T-K10-042 · komirka · рядок 61
+<!-- fc id:T-K10-045 sha:8c7b7a5f src:kartky/k10-komandy.md:65 klas:F -->
+### T-K10-045 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -659,8 +865,8 @@
 
 ---
 
-<!-- fc id:T-K10-043 sha:cb052eb6 src:kartky/k10-komandy.md:61 klas:F -->
-### T-K10-043 · komirka · рядок 61
+<!-- fc id:T-K10-046 sha:cb052eb6 src:kartky/k10-komandy.md:65 klas:F -->
+### T-K10-046 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -672,8 +878,8 @@
 
 ---
 
-<!-- fc id:T-K10-044 sha:55b5b58b src:kartky/k10-komandy.md:62 klas:F -->
-### T-K10-044 · komirka · рядок 62
+<!-- fc id:T-K10-047 sha:55b5b58b src:kartky/k10-komandy.md:66 klas:F -->
+### T-K10-047 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -685,8 +891,8 @@
 
 ---
 
-<!-- fc id:T-K10-045 sha:55a122c0 src:kartky/k10-komandy.md:62 klas:F -->
-### T-K10-045 · komirka · рядок 62
+<!-- fc id:T-K10-048 sha:55a122c0 src:kartky/k10-komandy.md:66 klas:F -->
+### T-K10-048 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -698,8 +904,8 @@
 
 ---
 
-<!-- fc id:T-K10-046 sha:eb3f0062 src:kartky/k10-komandy.md:62 klas:F -->
-### T-K10-046 · komirka · рядок 62
+<!-- fc id:T-K10-049 sha:eb3f0062 src:kartky/k10-komandy.md:66 klas:F -->
+### T-K10-049 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -711,8 +917,8 @@
 
 ---
 
-<!-- fc id:T-K10-047 sha:ceaada41 src:kartky/k10-komandy.md:63 klas:F -->
-### T-K10-047 · komirka · рядок 63
+<!-- fc id:T-K10-050 sha:ceaada41 src:kartky/k10-komandy.md:67 klas:F -->
+### T-K10-050 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -724,8 +930,8 @@
 
 ---
 
-<!-- fc id:T-K10-048 sha:9feefdcc src:kartky/k10-komandy.md:63 klas:F -->
-### T-K10-048 · komirka · рядок 63
+<!-- fc id:T-K10-051 sha:9feefdcc src:kartky/k10-komandy.md:67 klas:F -->
+### T-K10-051 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -737,8 +943,8 @@
 
 ---
 
-<!-- fc id:T-K10-049 sha:c94bfb00 src:kartky/k10-komandy.md:63 klas:F -->
-### T-K10-049 · komirka · рядок 63
+<!-- fc id:T-K10-052 sha:c94bfb00 src:kartky/k10-komandy.md:67 klas:F -->
+### T-K10-052 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 

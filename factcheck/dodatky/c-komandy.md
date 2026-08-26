@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/c-komandy.md`
 
-Одиниць твердження: **116**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **129**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -78,7 +78,7 @@
 
 ---
 
-<!-- fc id:T-C-005 sha:b9d7b8df src:dodatky/c-komandy.md:12 klas:F -->
+<!-- fc id:T-C-005 sha:b9d7b8df src:dodatky/c-komandy.md:12 klas:A -->
 ### T-C-005 · kod · рядок 12
 
 **Книга каже, дослівно:**
@@ -92,11 +92,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-006 sha:b1a7ffe5 src:dodatky/c-komandy.md:13 klas:F -->
+<!-- fc id:T-C-006 sha:b1a7ffe5 src:dodatky/c-komandy.md:13 klas:A -->
 ### T-C-006 · kod-ryadok · рядок 13
 
 **Книга каже, дослівно:**
@@ -105,11 +127,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-007 sha:39838a17 src:dodatky/c-komandy.md:14 klas:F -->
+<!-- fc id:T-C-007 sha:39838a17 src:dodatky/c-komandy.md:14 klas:A -->
 ### T-C-007 · kod-ryadok · рядок 14
 
 **Книга каже, дослівно:**
@@ -118,7 +162,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -383,7 +449,7 @@
 
 ---
 
-<!-- fc id:T-C-020 sha:efde820e src:dodatky/c-komandy.md:38 klas:F -->
+<!-- fc id:T-C-020 sha:efde820e src:dodatky/c-komandy.md:38 klas:A -->
 ### T-C-020 · kod-ryadok · рядок 38
 
 **Книга каже, дослівно:**
@@ -392,11 +458,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-021 sha:00142e5e src:dodatky/c-komandy.md:43 klas:F -->
+<!-- fc id:T-C-021 sha:00142e5e src:dodatky/c-komandy.md:43 klas:A -->
 ### T-C-021 · kod · рядок 43
 
 **Книга каже, дослівно:**
@@ -408,7 +496,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -425,7 +535,7 @@
 
 ---
 
-<!-- fc id:T-C-023 sha:9802b297 src:dodatky/c-komandy.md:45 klas:F -->
+<!-- fc id:T-C-023 sha:9802b297 src:dodatky/c-komandy.md:45 klas:A -->
 ### T-C-023 · kod-ryadok · рядок 45
 
 **Книга каже, дослівно:**
@@ -434,32 +544,161 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-024 sha:9c10fa1f src:dodatky/c-komandy.md:50 klas:F -->
+<!-- fc id:T-C-024 sha:56d01430 src:dodatky/c-komandy.md:50 klas:A -->
 ### T-C-024 · kod · рядок 50
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
+> esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
 >   0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
 > ```
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-025 sha:d2bd4362 src:dodatky/c-komandy.md:51 klas:F -->
+<!-- fc id:T-C-025 sha:ccf461f5 src:dodatky/c-komandy.md:51 klas:A -->
 ### T-C-025 · kod-ryadok · рядок 51
 
 **Книга каже, дослівно:**
 
-> esptool merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
+> esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-026 sha:4b3d6fe1 src:dodatky/c-komandy.md:55 klas:A -->
+### T-C-026 · proza · рядок 55
+
+**Книга каже, дослівно:**
+
+> `--chip` тут **обов'язковий**: порту немає, автовизначенню нема звідки взятися.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-027 sha:2ca78c71 src:dodatky/c-komandy.md:55 klas:A -->
+### T-C-027 · proza · рядок 55
+
+**Книга каже, дослівно:**
+
+> Без нього esptool одразу відповідає `Specify the --chip argument`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-options.rst)
+  > * Binary image generation commands, such as elf2image or merge-bin,
+  >   require the chip type to be specified.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
+Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
+Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-028 sha:1bd7ba52 src:dodatky/c-komandy.md:55 klas:F -->
+### T-C-028 · proza · рядок 55
+
+**Книга каже, дослівно:**
+
+> Значення має збігатися з чипом, під який зібрано прошивку, — і з адресою бутлоадера з таблиці нижче.
 
 **Доказ**
 
@@ -467,8 +706,8 @@
 
 ---
 
-<!-- fc id:T-C-026 sha:36969ccb src:dodatky/c-komandy.md:57 klas:F -->
-### T-C-026 · tablycya · рядок 57
+<!-- fc id:T-C-029 sha:36969ccb src:dodatky/c-komandy.md:62 klas:F -->
+### T-C-029 · tablycya · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -480,8 +719,8 @@
 
 ---
 
-<!-- fc id:T-C-027 sha:1d6f7adf src:dodatky/c-komandy.md:59 klas:F -->
-### T-C-027 · tablycya · рядок 59
+<!-- fc id:T-C-030 sha:1d6f7adf src:dodatky/c-komandy.md:64 klas:F -->
+### T-C-030 · tablycya · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -493,21 +732,80 @@
 
 ---
 
-<!-- fc id:T-C-028 sha:09265f42 src:dodatky/c-komandy.md:60 klas:F -->
-### T-C-028 · tablycya · рядок 60
+<!-- fc id:T-C-031 sha:4fb5cfd6 src:dodatky/c-komandy.md:65 klas:A -->
+### T-C-031 · tablycya · рядок 65
 
 **Книга каже, дослівно:**
 
-> | `-z` | стиснення при передачі: швидше й надійніше |
+> | `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > @click.option(
+  >     "--compress",
+  >     "-z",
+  >     is_flag=True,
+  >     help="Compress data during transfer (default unless --no-stub is specified).",
+  > )
+  > @click.option(
+  >     "--no-compress",
+  >     "-u",
+  >     is_flag=True,
+  >     help="Disable data compression during transfer (default if --no-stub is specified)",
+  > )
+  > 
+  > (basic-commands.rst)
+  > By default, the serial transfer data is compressed for better performance.
+  > The ``-u/--no-compress`` option disables this behaviour.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Книга подавала `-z` як прапорець, що додається заради швидкості («швидше й надійніше»). Насправді стиснення й так увімкнене, і в звичайній команді `-z` не змінює нічого.
+Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене. А це саме той випадок, який книга розбирає окремо (клони, що не приймають stub), тож уточнення не академічне.
+Те саме стосується `--before default-reset --after hard-reset`: книга подавала їх як «керування скиданням», а це значення за замовчуванням. Таблицю прапорців замінено на ту, де перелічені значення, що справді щось міняють.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-029 sha:602ee8fd src:dodatky/c-komandy.md:61 klas:F -->
-### T-C-029 · tablycya · рядок 61
+<!-- fc id:T-C-032 sha:fd864248 src:dodatky/c-komandy.md:66 klas:A -->
+### T-C-032 · tablycya · рядок 66
+
+**Книга каже, дослівно:**
+
+> | `-u` | вимкнути стиснення |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > @click.option(
+  >     "--compress",
+  >     "-z",
+  >     is_flag=True,
+  >     help="Compress data during transfer (default unless --no-stub is specified).",
+  > )
+  > @click.option(
+  >     "--no-compress",
+  >     "-u",
+  >     is_flag=True,
+  >     help="Disable data compression during transfer (default if --no-stub is specified)",
+  > )
+  > 
+  > (basic-commands.rst)
+  > By default, the serial transfer data is compressed for better performance.
+  > The ``-u/--no-compress`` option disables this behaviour.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Книга подавала `-z` як прапорець, що додається заради швидкості («швидше й надійніше»). Насправді стиснення й так увімкнене, і в звичайній команді `-z` не змінює нічого.
+Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене. А це саме той випадок, який книга розбирає окремо (клони, що не приймають stub), тож уточнення не академічне.
+Те саме стосується `--before default-reset --after hard-reset`: книга подавала їх як «керування скиданням», а це значення за замовчуванням. Таблицю прапорців замінено на ту, де перелічені значення, що справді щось міняють.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-033 sha:602ee8fd src:dodatky/c-komandy.md:67 klas:F -->
+### T-C-033 · tablycya · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -519,12 +817,12 @@
 
 ---
 
-<!-- fc id:T-C-030 sha:ae5119de src:dodatky/c-komandy.md:62 klas:F -->
-### T-C-030 · tablycya · рядок 62
+<!-- fc id:T-C-034 sha:d2f41919 src:dodatky/c-komandy.md:68 klas:F -->
+### T-C-034 · tablycya · рядок 68
 
 **Книга каже, дослівно:**
 
-> | `--before default-reset --after hard-reset` | керування скиданням |
+> | `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
 
 **Доказ**
 
@@ -532,8 +830,47 @@
 
 ---
 
-<!-- fc id:T-C-031 sha:8e5b5b76 src:dodatky/c-komandy.md:63 klas:F -->
-### T-C-031 · tablycya · рядок 63
+<!-- fc id:T-C-035 sha:4528aa3a src:dodatky/c-komandy.md:69 klas:F -->
+### T-C-035 · tablycya · рядок 69
+
+**Книга каже, дослівно:**
+
+> | `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-C-036 sha:83305673 src:dodatky/c-komandy.md:70 klas:A -->
+### T-C-036 · tablycya · рядок 70
+
+**Книга каже, дослівно:**
+
+> | `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/advanced-options.rst
+- **Дослівно з джерела:**
+  > :not esp8266 and not esp32 and not esp32h2 and not esp32c6 and not esp32h4
+  >  and not esp32e22: * ``--after watchdog-reset`` hard-resets the chip by
+  >  triggering an internal watchdog reset. This is useful when the RTS control
+  >  line is not available, especially in the USB-OTG and USB-Serial/JTAG modes.
+  >  Use this if a chip is getting stuck in download mode when using the default
+  >  reset method in USB-Serial/JTAG mode. Using this may cause the port to
+  >  re-enumerate on Linux (e.g. ``/dev/ttyACM0`` -> ``/dev/ttyACM1``).
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення до переліку типових помилок розділу 17. Симптом «прошилося, а застосунок не стартував, чип сидить у завантажувачі» книга не розбирала, хоча на платах S3 і C3 із native USB він звичайний: лінії `RTS` фізично немає.
+Умова застосовності взята з самої директиви, а не вгадана: режим є на S2, S3, C3, P4, C5 і новіших, і його немає на classic, C6 та H2 — саме так і записано в книзі. Побічний ефект із перелічуванням порту теж названо, бо без нього читач вирішить, що плата зникла.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-037 sha:8e5b5b76 src:dodatky/c-komandy.md:71 klas:F -->
+### T-C-037 · tablycya · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -545,8 +882,83 @@
 
 ---
 
-<!-- fc id:T-C-032 sha:dbb08ae1 src:dodatky/c-komandy.md:68 klas:F -->
-### T-C-032 · proza · рядок 68
+<!-- fc id:T-C-038 sha:544b21a9 src:dodatky/c-komandy.md:73 klas:A -->
+### T-C-038 · proza · рядок 73
+
+**Книга каже, дослівно:**
+
+> Про `-z` варто знати точно: стиснення ввімкнене **за замовчуванням**, тож у звичайній команді цей прапорець нічого не змінює.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > @click.option(
+  >     "--compress",
+  >     "-z",
+  >     is_flag=True,
+  >     help="Compress data during transfer (default unless --no-stub is specified).",
+  > )
+  > @click.option(
+  >     "--no-compress",
+  >     "-u",
+  >     is_flag=True,
+  >     help="Disable data compression during transfer (default if --no-stub is specified)",
+  > )
+  > 
+  > (basic-commands.rst)
+  > By default, the serial transfer data is compressed for better performance.
+  > The ``-u/--no-compress`` option disables this behaviour.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Книга подавала `-z` як прапорець, що додається заради швидкості («швидше й надійніше»). Насправді стиснення й так увімкнене, і в звичайній команді `-z` не змінює нічого.
+Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене. А це саме той випадок, який книга розбирає окремо (клони, що не приймають stub), тож уточнення не академічне.
+Те саме стосується `--before default-reset --after hard-reset`: книга подавала їх як «керування скиданням», а це значення за замовчуванням. Таблицю прапорців замінено на ту, де перелічені значення, що справді щось міняють.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-039 sha:3fe48028 src:dodatky/c-komandy.md:73 klas:F -->
+### T-C-039 · proza · рядок 73
+
+**Книга каже, дослівно:**
+
+> Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-C-040 sha:119466dc src:dodatky/c-komandy.md:78 klas:F -->
+### T-C-040 · proza · рядок 78
+
+**Книга каже, дослівно:**
+
+> `--before default-reset` і `--after hard-reset` — теж значення за замовчуванням; писати їх, щоб «керувати скиданням», сенсу немає.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-C-041 sha:e708ae5d src:dodatky/c-komandy.md:78 klas:F -->
+### T-C-041 · proza · рядок 78
+
+**Книга каже, дослівно:**
+
+> Корисні саме інші значення, наведені в таблиці.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-C-042 sha:dbb08ae1 src:dodatky/c-komandy.md:85 klas:F -->
+### T-C-042 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -558,8 +970,8 @@
 
 ---
 
-<!-- fc id:T-C-033 sha:d25d8e19 src:dodatky/c-komandy.md:72 klas:F -->
-### T-C-033 · kod · рядок 72
+<!-- fc id:T-C-043 sha:d25d8e19 src:dodatky/c-komandy.md:89 klas:F -->
+### T-C-043 · kod · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -573,8 +985,8 @@
 
 ---
 
-<!-- fc id:T-C-034 sha:cdc968e6 src:dodatky/c-komandy.md:73 klas:F -->
-### T-C-034 · kod-ryadok · рядок 73
+<!-- fc id:T-C-044 sha:cdc968e6 src:dodatky/c-komandy.md:90 klas:F -->
+### T-C-044 · kod-ryadok · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -586,8 +998,8 @@
 
 ---
 
-<!-- fc id:T-C-035 sha:d06f73ae src:dodatky/c-komandy.md:80 klas:F -->
-### T-C-035 · kod · рядок 80
+<!-- fc id:T-C-045 sha:d06f73ae src:dodatky/c-komandy.md:97 klas:A -->
+### T-C-045 · kod · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -600,12 +1012,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-036 sha:3e0a67c9 src:dodatky/c-komandy.md:81 klas:F -->
-### T-C-036 · kod-ryadok · рядок 81
+<!-- fc id:T-C-046 sha:3e0a67c9 src:dodatky/c-komandy.md:98 klas:F -->
+### T-C-046 · kod-ryadok · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -617,8 +1051,8 @@
 
 ---
 
-<!-- fc id:T-C-037 sha:c06327b4 src:dodatky/c-komandy.md:82 klas:F -->
-### T-C-037 · kod-ryadok · рядок 82
+<!-- fc id:T-C-047 sha:c06327b4 src:dodatky/c-komandy.md:99 klas:A -->
+### T-C-047 · kod-ryadok · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -626,12 +1060,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-038 sha:bb9f7106 src:dodatky/c-komandy.md:83 klas:F -->
-### T-C-038 · kod-ryadok · рядок 83
+<!-- fc id:T-C-048 sha:bb9f7106 src:dodatky/c-komandy.md:100 klas:F -->
+### T-C-048 · kod-ryadok · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -643,8 +1099,8 @@
 
 ---
 
-<!-- fc id:T-C-039 sha:93619e04 src:dodatky/c-komandy.md:84 klas:F -->
-### T-C-039 · kod-ryadok · рядок 84
+<!-- fc id:T-C-049 sha:93619e04 src:dodatky/c-komandy.md:101 klas:F -->
+### T-C-049 · kod-ryadok · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -656,8 +1112,8 @@
 
 ---
 
-<!-- fc id:T-C-040 sha:0d79ed38 src:dodatky/c-komandy.md:89 klas:F -->
-### T-C-040 · kod · рядок 89
+<!-- fc id:T-C-050 sha:4f12da8e src:dodatky/c-komandy.md:106 klas:A -->
+### T-C-050 · kod · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -668,16 +1124,30 @@
 > idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
 > idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
 > idf.py fullclean                        # коли збирання поводиться дивно
+> idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
 > ```
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-041 sha:343d9bab src:dodatky/c-komandy.md:90 klas:F -->
-### T-C-041 · kod-ryadok · рядок 90
+<!-- fc id:T-C-051 sha:343d9bab src:dodatky/c-komandy.md:107 klas:F -->
+### T-C-051 · kod-ryadok · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -689,8 +1159,8 @@
 
 ---
 
-<!-- fc id:T-C-042 sha:aaa1cf80 src:dodatky/c-komandy.md:91 klas:F -->
-### T-C-042 · kod-ryadok · рядок 91
+<!-- fc id:T-C-052 sha:aaa1cf80 src:dodatky/c-komandy.md:108 klas:F -->
+### T-C-052 · kod-ryadok · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -702,8 +1172,8 @@
 
 ---
 
-<!-- fc id:T-C-043 sha:770cf8b9 src:dodatky/c-komandy.md:92 klas:F -->
-### T-C-043 · kod-ryadok · рядок 92
+<!-- fc id:T-C-053 sha:770cf8b9 src:dodatky/c-komandy.md:109 klas:F -->
+### T-C-053 · kod-ryadok · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -715,8 +1185,8 @@
 
 ---
 
-<!-- fc id:T-C-044 sha:7879c453 src:dodatky/c-komandy.md:93 klas:F -->
-### T-C-044 · kod-ryadok · рядок 93
+<!-- fc id:T-C-054 sha:7879c453 src:dodatky/c-komandy.md:110 klas:F -->
+### T-C-054 · kod-ryadok · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -728,8 +1198,8 @@
 
 ---
 
-<!-- fc id:T-C-045 sha:5410fc3a src:dodatky/c-komandy.md:94 klas:F -->
-### T-C-045 · kod-ryadok · рядок 94
+<!-- fc id:T-C-055 sha:5410fc3a src:dodatky/c-komandy.md:111 klas:A -->
+### T-C-055 · kod-ryadok · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -737,12 +1207,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-046 sha:345eb1d8 src:dodatky/c-komandy.md:95 klas:F -->
-### T-C-046 · kod-ryadok · рядок 95
+<!-- fc id:T-C-056 sha:345eb1d8 src:dodatky/c-komandy.md:112 klas:A -->
+### T-C-056 · kod-ryadok · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -750,12 +1242,112 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-047 sha:e06292bb src:dodatky/c-komandy.md:100 klas:F -->
-### T-C-047 · kod · рядок 100
+<!-- fc id:T-C-057 sha:42aea75b src:dodatky/c-komandy.md:113 klas:A -->
+### T-C-057 · kod-ryadok · рядок 113
+
+**Книга каже, дослівно:**
+
+> idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-058 sha:46891766 src:dodatky/c-komandy.md:116 klas:A -->
+### T-C-058 · proza · рядок 116
+
+**Книга каже, дослівно:**
+
+> `idf.py merge-bin` кращий за `esptool merge-bin` завжди, коли проєкт під рукою: адресу бутлоадера, чип, режим і частоту флешу він бере з конфігурації, а не з набраного вручну рядка.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-059 sha:850fe94c src:dodatky/c-komandy.md:116 klas:A -->
+### T-C-059 · proza · рядок 116
+
+**Книга каже, дослівно:**
+
+> Без `-o` результат — `build/merged-binary.bin`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
+
+---
+
+<!-- fc id:T-C-060 sha:e06292bb src:dodatky/c-komandy.md:123 klas:A -->
+### T-C-060 · kod · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -767,12 +1359,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-048 sha:0f34d83d src:dodatky/c-komandy.md:101 klas:F -->
-### T-C-048 · kod-ryadok · рядок 101
+<!-- fc id:T-C-061 sha:0f34d83d src:dodatky/c-komandy.md:124 klas:F -->
+### T-C-061 · kod-ryadok · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -784,8 +1398,8 @@
 
 ---
 
-<!-- fc id:T-C-049 sha:ab73f933 src:dodatky/c-komandy.md:102 klas:F -->
-### T-C-049 · kod-ryadok · рядок 102
+<!-- fc id:T-C-062 sha:ab73f933 src:dodatky/c-komandy.md:125 klas:A -->
+### T-C-062 · kod-ryadok · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -793,12 +1407,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-050 sha:9136076f src:dodatky/c-komandy.md:103 klas:F -->
-### T-C-050 · kod-ryadok · рядок 103
+<!-- fc id:T-C-063 sha:9136076f src:dodatky/c-komandy.md:126 klas:F -->
+### T-C-063 · kod-ryadok · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -810,8 +1446,8 @@
 
 ---
 
-<!-- fc id:T-C-051 sha:d3c38986 src:dodatky/c-komandy.md:108 klas:F -->
-### T-C-051 · kod · рядок 108
+<!-- fc id:T-C-064 sha:d3c38986 src:dodatky/c-komandy.md:131 klas:A -->
+### T-C-064 · kod · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -824,12 +1460,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-052 sha:48df8d47 src:dodatky/c-komandy.md:109 klas:F -->
-### T-C-052 · kod-ryadok · рядок 109
+<!-- fc id:T-C-065 sha:48df8d47 src:dodatky/c-komandy.md:132 klas:A -->
+### T-C-065 · kod-ryadok · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -837,12 +1495,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-053 sha:f88382bd src:dodatky/c-komandy.md:110 klas:F -->
-### T-C-053 · kod-ryadok · рядок 110
+<!-- fc id:T-C-066 sha:f88382bd src:dodatky/c-komandy.md:133 klas:A -->
+### T-C-066 · kod-ryadok · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -850,12 +1530,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-054 sha:b89c04ed src:dodatky/c-komandy.md:111 klas:F -->
-### T-C-054 · kod-ryadok · рядок 111
+<!-- fc id:T-C-067 sha:b89c04ed src:dodatky/c-komandy.md:134 klas:F -->
+### T-C-067 · kod-ryadok · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -867,8 +1569,8 @@
 
 ---
 
-<!-- fc id:T-C-055 sha:249fc25a src:dodatky/c-komandy.md:112 klas:F -->
-### T-C-055 · kod-ryadok · рядок 112
+<!-- fc id:T-C-068 sha:249fc25a src:dodatky/c-komandy.md:135 klas:F -->
+### T-C-068 · kod-ryadok · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -880,8 +1582,8 @@
 
 ---
 
-<!-- fc id:T-C-056 sha:f027758e src:dodatky/c-komandy.md:117 klas:F -->
-### T-C-056 · kod · рядок 117
+<!-- fc id:T-C-069 sha:f027758e src:dodatky/c-komandy.md:140 klas:A -->
+### T-C-069 · kod · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -892,12 +1594,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-057 sha:4f76e0f2 src:dodatky/c-komandy.md:118 klas:F -->
-### T-C-057 · kod-ryadok · рядок 118
+<!-- fc id:T-C-070 sha:4f76e0f2 src:dodatky/c-komandy.md:141 klas:A -->
+### T-C-070 · kod-ryadok · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -905,12 +1629,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-058 sha:bd18c568 src:dodatky/c-komandy.md:119 klas:F -->
-### T-C-058 · kod-ryadok · рядок 119
+<!-- fc id:T-C-071 sha:bd18c568 src:dodatky/c-komandy.md:142 klas:A -->
+### T-C-071 · kod-ryadok · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -918,12 +1664,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Дослівно з джерела:**
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-C-059 sha:14ee9040 src:dodatky/c-komandy.md:124 klas:F -->
-### T-C-059 · kod · рядок 124
+<!-- fc id:T-C-072 sha:14ee9040 src:dodatky/c-komandy.md:147 klas:F -->
+### T-C-072 · kod · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -939,8 +1707,8 @@
 
 ---
 
-<!-- fc id:T-C-060 sha:5f267d8c src:dodatky/c-komandy.md:125 klas:F -->
-### T-C-060 · kod-ryadok · рядок 125
+<!-- fc id:T-C-073 sha:5f267d8c src:dodatky/c-komandy.md:148 klas:F -->
+### T-C-073 · kod-ryadok · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -952,8 +1720,8 @@
 
 ---
 
-<!-- fc id:T-C-061 sha:f57b50fb src:dodatky/c-komandy.md:126 klas:F -->
-### T-C-061 · kod-ryadok · рядок 126
+<!-- fc id:T-C-074 sha:f57b50fb src:dodatky/c-komandy.md:149 klas:F -->
+### T-C-074 · kod-ryadok · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -965,8 +1733,8 @@
 
 ---
 
-<!-- fc id:T-C-062 sha:69e46646 src:dodatky/c-komandy.md:127 klas:F -->
-### T-C-062 · kod-ryadok · рядок 127
+<!-- fc id:T-C-075 sha:69e46646 src:dodatky/c-komandy.md:150 klas:F -->
+### T-C-075 · kod-ryadok · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -978,8 +1746,8 @@
 
 ---
 
-<!-- fc id:T-C-063 sha:2a969ef0 src:dodatky/c-komandy.md:130 klas:F -->
-### T-C-063 · proza · рядок 130
+<!-- fc id:T-C-076 sha:2a969ef0 src:dodatky/c-komandy.md:153 klas:F -->
+### T-C-076 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -991,8 +1759,8 @@
 
 ---
 
-<!-- fc id:T-C-064 sha:828c36b3 src:dodatky/c-komandy.md:134 klas:F -->
-### T-C-064 · tablycya-shapka · рядок 134
+<!-- fc id:T-C-077 sha:828c36b3 src:dodatky/c-komandy.md:157 klas:F -->
+### T-C-077 · tablycya-shapka · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1004,8 +1772,8 @@
 
 ---
 
-<!-- fc id:T-C-065 sha:af9c4cd0 src:dodatky/c-komandy.md:135 klas:F -->
-### T-C-065 · komirka · рядок 135
+<!-- fc id:T-C-078 sha:af9c4cd0 src:dodatky/c-komandy.md:158 klas:F -->
+### T-C-078 · komirka · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -1017,8 +1785,8 @@
 
 ---
 
-<!-- fc id:T-C-066 sha:1b645088 src:dodatky/c-komandy.md:135 klas:F -->
-### T-C-066 · komirka · рядок 135
+<!-- fc id:T-C-079 sha:1b645088 src:dodatky/c-komandy.md:158 klas:F -->
+### T-C-079 · komirka · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -1030,8 +1798,8 @@
 
 ---
 
-<!-- fc id:T-C-067 sha:e7670044 src:dodatky/c-komandy.md:136 klas:F -->
-### T-C-067 · komirka · рядок 136
+<!-- fc id:T-C-080 sha:e7670044 src:dodatky/c-komandy.md:159 klas:F -->
+### T-C-080 · komirka · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1811,8 @@
 
 ---
 
-<!-- fc id:T-C-068 sha:3e00cb93 src:dodatky/c-komandy.md:136 klas:F -->
-### T-C-068 · komirka · рядок 136
+<!-- fc id:T-C-081 sha:3e00cb93 src:dodatky/c-komandy.md:159 klas:F -->
+### T-C-081 · komirka · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -1056,8 +1824,8 @@
 
 ---
 
-<!-- fc id:T-C-069 sha:b668a28a src:dodatky/c-komandy.md:137 klas:F -->
-### T-C-069 · komirka · рядок 137
+<!-- fc id:T-C-082 sha:b668a28a src:dodatky/c-komandy.md:160 klas:F -->
+### T-C-082 · komirka · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1069,8 +1837,8 @@
 
 ---
 
-<!-- fc id:T-C-070 sha:00c75e9e src:dodatky/c-komandy.md:138 klas:F -->
-### T-C-070 · komirka · рядок 138
+<!-- fc id:T-C-083 sha:00c75e9e src:dodatky/c-komandy.md:161 klas:F -->
+### T-C-083 · komirka · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1082,8 +1850,8 @@
 
 ---
 
-<!-- fc id:T-C-071 sha:a33fb442 src:dodatky/c-komandy.md:138 klas:F -->
-### T-C-071 · komirka · рядок 138
+<!-- fc id:T-C-084 sha:a33fb442 src:dodatky/c-komandy.md:161 klas:F -->
+### T-C-084 · komirka · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1095,8 +1863,8 @@
 
 ---
 
-<!-- fc id:T-C-072 sha:03ecbe4f src:dodatky/c-komandy.md:143 klas:F -->
-### T-C-072 · kod · рядок 143
+<!-- fc id:T-C-085 sha:03ecbe4f src:dodatky/c-komandy.md:166 klas:F -->
+### T-C-085 · kod · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -1110,8 +1878,8 @@
 
 ---
 
-<!-- fc id:T-C-073 sha:999b86b5 src:dodatky/c-komandy.md:144 klas:F -->
-### T-C-073 · kod-ryadok · рядок 144
+<!-- fc id:T-C-086 sha:999b86b5 src:dodatky/c-komandy.md:167 klas:F -->
+### T-C-086 · kod-ryadok · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1123,8 +1891,8 @@
 
 ---
 
-<!-- fc id:T-C-074 sha:5bc221cd src:dodatky/c-komandy.md:149 klas:F -->
-### T-C-074 · kod · рядок 149
+<!-- fc id:T-C-087 sha:5bc221cd src:dodatky/c-komandy.md:172 klas:F -->
+### T-C-087 · kod · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -1142,8 +1910,8 @@
 
 ---
 
-<!-- fc id:T-C-075 sha:7140ef8e src:dodatky/c-komandy.md:150 klas:F -->
-### T-C-075 · kod-ryadok · рядок 150
+<!-- fc id:T-C-088 sha:7140ef8e src:dodatky/c-komandy.md:173 klas:F -->
+### T-C-088 · kod-ryadok · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1155,8 +1923,8 @@
 
 ---
 
-<!-- fc id:T-C-076 sha:583a0a4a src:dodatky/c-komandy.md:151 klas:F -->
-### T-C-076 · kod-ryadok · рядок 151
+<!-- fc id:T-C-089 sha:583a0a4a src:dodatky/c-komandy.md:174 klas:F -->
+### T-C-089 · kod-ryadok · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1168,8 +1936,8 @@
 
 ---
 
-<!-- fc id:T-C-077 sha:88976550 src:dodatky/c-komandy.md:152 klas:F -->
-### T-C-077 · kod-ryadok · рядок 152
+<!-- fc id:T-C-090 sha:88976550 src:dodatky/c-komandy.md:175 klas:F -->
+### T-C-090 · kod-ryadok · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1181,8 +1949,8 @@
 
 ---
 
-<!-- fc id:T-C-078 sha:04c7f41f src:dodatky/c-komandy.md:153 klas:F -->
-### T-C-078 · kod-ryadok · рядок 153
+<!-- fc id:T-C-091 sha:04c7f41f src:dodatky/c-komandy.md:176 klas:F -->
+### T-C-091 · kod-ryadok · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -1194,8 +1962,8 @@
 
 ---
 
-<!-- fc id:T-C-079 sha:459deb70 src:dodatky/c-komandy.md:154 klas:F -->
-### T-C-079 · kod-ryadok · рядок 154
+<!-- fc id:T-C-092 sha:459deb70 src:dodatky/c-komandy.md:177 klas:F -->
+### T-C-092 · kod-ryadok · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1207,8 +1975,8 @@
 
 ---
 
-<!-- fc id:T-C-080 sha:b97a16ef src:dodatky/c-komandy.md:157 klas:F -->
-### T-C-080 · proza · рядок 157
+<!-- fc id:T-C-093 sha:b97a16ef src:dodatky/c-komandy.md:180 klas:F -->
+### T-C-093 · proza · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1220,8 +1988,8 @@
 
 ---
 
-<!-- fc id:T-C-081 sha:2130100e src:dodatky/c-komandy.md:157 klas:F -->
-### T-C-081 · proza · рядок 157
+<!-- fc id:T-C-094 sha:2130100e src:dodatky/c-komandy.md:180 klas:F -->
+### T-C-094 · proza · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1233,8 +2001,8 @@
 
 ---
 
-<!-- fc id:T-C-082 sha:f68e2f06 src:dodatky/c-komandy.md:161 klas:F -->
-### T-C-082 · kod · рядок 161
+<!-- fc id:T-C-095 sha:f68e2f06 src:dodatky/c-komandy.md:184 klas:F -->
+### T-C-095 · kod · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1253,8 +2021,8 @@
 
 ---
 
-<!-- fc id:T-C-083 sha:0b0001c2 src:dodatky/c-komandy.md:162 klas:F -->
-### T-C-083 · kod-ryadok · рядок 162
+<!-- fc id:T-C-096 sha:0b0001c2 src:dodatky/c-komandy.md:185 klas:F -->
+### T-C-096 · kod-ryadok · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -1266,8 +2034,8 @@
 
 ---
 
-<!-- fc id:T-C-084 sha:307983fc src:dodatky/c-komandy.md:163 klas:F -->
-### T-C-084 · kod-ryadok · рядок 163
+<!-- fc id:T-C-097 sha:307983fc src:dodatky/c-komandy.md:186 klas:F -->
+### T-C-097 · kod-ryadok · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1279,8 +2047,8 @@
 
 ---
 
-<!-- fc id:T-C-085 sha:82ea1803 src:dodatky/c-komandy.md:164 klas:F -->
-### T-C-085 · kod-ryadok · рядок 164
+<!-- fc id:T-C-098 sha:82ea1803 src:dodatky/c-komandy.md:187 klas:F -->
+### T-C-098 · kod-ryadok · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1292,8 +2060,8 @@
 
 ---
 
-<!-- fc id:T-C-086 sha:364802c1 src:dodatky/c-komandy.md:165 klas:F -->
-### T-C-086 · kod-ryadok · рядок 165
+<!-- fc id:T-C-099 sha:364802c1 src:dodatky/c-komandy.md:188 klas:F -->
+### T-C-099 · kod-ryadok · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -1305,8 +2073,8 @@
 
 ---
 
-<!-- fc id:T-C-087 sha:1a074688 src:dodatky/c-komandy.md:166 klas:F -->
-### T-C-087 · kod-ryadok · рядок 166
+<!-- fc id:T-C-100 sha:1a074688 src:dodatky/c-komandy.md:189 klas:F -->
+### T-C-100 · kod-ryadok · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1318,8 +2086,8 @@
 
 ---
 
-<!-- fc id:T-C-088 sha:a092446e src:dodatky/c-komandy.md:167 klas:F -->
-### T-C-088 · kod-ryadok · рядок 167
+<!-- fc id:T-C-101 sha:a092446e src:dodatky/c-komandy.md:190 klas:F -->
+### T-C-101 · kod-ryadok · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1331,8 +2099,8 @@
 
 ---
 
-<!-- fc id:T-C-089 sha:3c153db1 src:dodatky/c-komandy.md:172 klas:F -->
-### T-C-089 · tablycya-shapka · рядок 172
+<!-- fc id:T-C-102 sha:3c153db1 src:dodatky/c-komandy.md:195 klas:F -->
+### T-C-102 · tablycya-shapka · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1344,8 +2112,8 @@
 
 ---
 
-<!-- fc id:T-C-090 sha:03becf94 src:dodatky/c-komandy.md:173 klas:F -->
-### T-C-090 · komirka · рядок 173
+<!-- fc id:T-C-103 sha:03becf94 src:dodatky/c-komandy.md:196 klas:F -->
+### T-C-103 · komirka · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1357,8 +2125,8 @@
 
 ---
 
-<!-- fc id:T-C-091 sha:1fe1e089 src:dodatky/c-komandy.md:173 klas:F -->
-### T-C-091 · komirka · рядок 173
+<!-- fc id:T-C-104 sha:1fe1e089 src:dodatky/c-komandy.md:196 klas:F -->
+### T-C-104 · komirka · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1370,8 +2138,8 @@
 
 ---
 
-<!-- fc id:T-C-092 sha:ddb10a79 src:dodatky/c-komandy.md:173 klas:F -->
-### T-C-092 · komirka · рядок 173
+<!-- fc id:T-C-105 sha:ddb10a79 src:dodatky/c-komandy.md:196 klas:F -->
+### T-C-105 · komirka · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1383,8 +2151,8 @@
 
 ---
 
-<!-- fc id:T-C-093 sha:a6442276 src:dodatky/c-komandy.md:174 klas:A -->
-### T-C-093 · komirka · рядок 174
+<!-- fc id:T-C-106 sha:a6442276 src:dodatky/c-komandy.md:197 klas:A -->
+### T-C-106 · komirka · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1405,8 +2173,8 @@
 
 ---
 
-<!-- fc id:T-C-094 sha:21c0d046 src:dodatky/c-komandy.md:174 klas:A -->
-### T-C-094 · komirka · рядок 174
+<!-- fc id:T-C-107 sha:21c0d046 src:dodatky/c-komandy.md:197 klas:A -->
+### T-C-107 · komirka · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1427,8 +2195,8 @@
 
 ---
 
-<!-- fc id:T-C-095 sha:59461729 src:dodatky/c-komandy.md:174 klas:A -->
-### T-C-095 · komirka · рядок 174
+<!-- fc id:T-C-108 sha:59461729 src:dodatky/c-komandy.md:197 klas:A -->
+### T-C-108 · komirka · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1449,8 +2217,8 @@
 
 ---
 
-<!-- fc id:T-C-096 sha:55b5b58b src:dodatky/c-komandy.md:175 klas:F -->
-### T-C-096 · komirka · рядок 175
+<!-- fc id:T-C-109 sha:55b5b58b src:dodatky/c-komandy.md:198 klas:F -->
+### T-C-109 · komirka · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1462,8 +2230,8 @@
 
 ---
 
-<!-- fc id:T-C-097 sha:55a122c0 src:dodatky/c-komandy.md:175 klas:F -->
-### T-C-097 · komirka · рядок 175
+<!-- fc id:T-C-110 sha:55a122c0 src:dodatky/c-komandy.md:198 klas:F -->
+### T-C-110 · komirka · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1475,8 +2243,8 @@
 
 ---
 
-<!-- fc id:T-C-098 sha:eb3f0062 src:dodatky/c-komandy.md:175 klas:F -->
-### T-C-098 · komirka · рядок 175
+<!-- fc id:T-C-111 sha:eb3f0062 src:dodatky/c-komandy.md:198 klas:F -->
+### T-C-111 · komirka · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1488,8 +2256,8 @@
 
 ---
 
-<!-- fc id:T-C-099 sha:96022a5e src:dodatky/c-komandy.md:176 klas:F -->
-### T-C-099 · komirka · рядок 176
+<!-- fc id:T-C-112 sha:96022a5e src:dodatky/c-komandy.md:199 klas:F -->
+### T-C-112 · komirka · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -1501,8 +2269,8 @@
 
 ---
 
-<!-- fc id:T-C-100 sha:906f56bc src:dodatky/c-komandy.md:176 klas:F -->
-### T-C-100 · komirka · рядок 176
+<!-- fc id:T-C-113 sha:906f56bc src:dodatky/c-komandy.md:199 klas:F -->
+### T-C-113 · komirka · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -1514,8 +2282,8 @@
 
 ---
 
-<!-- fc id:T-C-101 sha:5efc2dcb src:dodatky/c-komandy.md:176 klas:F -->
-### T-C-101 · komirka · рядок 176
+<!-- fc id:T-C-114 sha:5efc2dcb src:dodatky/c-komandy.md:199 klas:F -->
+### T-C-114 · komirka · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -1527,8 +2295,8 @@
 
 ---
 
-<!-- fc id:T-C-102 sha:ceaada41 src:dodatky/c-komandy.md:177 klas:F -->
-### T-C-102 · komirka · рядок 177
+<!-- fc id:T-C-115 sha:ceaada41 src:dodatky/c-komandy.md:200 klas:F -->
+### T-C-115 · komirka · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1540,8 +2308,8 @@
 
 ---
 
-<!-- fc id:T-C-103 sha:9feefdcc src:dodatky/c-komandy.md:177 klas:F -->
-### T-C-103 · komirka · рядок 177
+<!-- fc id:T-C-116 sha:9feefdcc src:dodatky/c-komandy.md:200 klas:F -->
+### T-C-116 · komirka · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1553,8 +2321,8 @@
 
 ---
 
-<!-- fc id:T-C-104 sha:c94bfb00 src:dodatky/c-komandy.md:177 klas:F -->
-### T-C-104 · komirka · рядок 177
+<!-- fc id:T-C-117 sha:c94bfb00 src:dodatky/c-komandy.md:200 klas:F -->
+### T-C-117 · komirka · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1566,8 +2334,8 @@
 
 ---
 
-<!-- fc id:T-C-105 sha:9ab6d1e4 src:dodatky/c-komandy.md:180 klas:A -->
-### T-C-105 · proza · рядок 180
+<!-- fc id:T-C-118 sha:9ab6d1e4 src:dodatky/c-komandy.md:203 klas:A -->
+### T-C-118 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1594,8 +2362,8 @@
 
 ---
 
-<!-- fc id:T-C-106 sha:aa2e7ddd src:dodatky/c-komandy.md:180 klas:A -->
-### T-C-106 · proza · рядок 180
+<!-- fc id:T-C-119 sha:aa2e7ddd src:dodatky/c-komandy.md:203 klas:A -->
+### T-C-119 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1622,8 +2390,8 @@
 
 ---
 
-<!-- fc id:T-C-107 sha:20c177db src:dodatky/c-komandy.md:187 klas:F -->
-### T-C-107 · kod · рядок 187
+<!-- fc id:T-C-120 sha:20c177db src:dodatky/c-komandy.md:210 klas:F -->
+### T-C-120 · kod · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1638,8 +2406,8 @@
 
 ---
 
-<!-- fc id:T-C-108 sha:d1458242 src:dodatky/c-komandy.md:188 klas:F -->
-### T-C-108 · kod-ryadok · рядок 188
+<!-- fc id:T-C-121 sha:d1458242 src:dodatky/c-komandy.md:211 klas:F -->
+### T-C-121 · kod-ryadok · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -1651,8 +2419,8 @@
 
 ---
 
-<!-- fc id:T-C-109 sha:4438754b src:dodatky/c-komandy.md:189 klas:F -->
-### T-C-109 · kod-ryadok · рядок 189
+<!-- fc id:T-C-122 sha:4438754b src:dodatky/c-komandy.md:212 klas:F -->
+### T-C-122 · kod-ryadok · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1664,8 +2432,8 @@
 
 ---
 
-<!-- fc id:T-C-110 sha:9fd4791b src:dodatky/c-komandy.md:194 klas:F -->
-### T-C-110 · kod · рядок 194
+<!-- fc id:T-C-123 sha:9fd4791b src:dodatky/c-komandy.md:217 klas:F -->
+### T-C-123 · kod · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1681,8 +2449,8 @@
 
 ---
 
-<!-- fc id:T-C-111 sha:3e391da0 src:dodatky/c-komandy.md:195 klas:F -->
-### T-C-111 · kod-ryadok · рядок 195
+<!-- fc id:T-C-124 sha:3e391da0 src:dodatky/c-komandy.md:218 klas:F -->
+### T-C-124 · kod-ryadok · рядок 218
 
 **Книга каже, дослівно:**
 
@@ -1694,8 +2462,8 @@
 
 ---
 
-<!-- fc id:T-C-112 sha:580bb88f src:dodatky/c-komandy.md:196 klas:F -->
-### T-C-112 · kod-ryadok · рядок 196
+<!-- fc id:T-C-125 sha:580bb88f src:dodatky/c-komandy.md:219 klas:F -->
+### T-C-125 · kod-ryadok · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1707,8 +2475,8 @@
 
 ---
 
-<!-- fc id:T-C-113 sha:f102892d src:dodatky/c-komandy.md:197 klas:F -->
-### T-C-113 · kod-ryadok · рядок 197
+<!-- fc id:T-C-126 sha:f102892d src:dodatky/c-komandy.md:220 klas:F -->
+### T-C-126 · kod-ryadok · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -1720,8 +2488,8 @@
 
 ---
 
-<!-- fc id:T-C-114 sha:51bbff59 src:dodatky/c-komandy.md:204 klas:A -->
-### T-C-114 · kod · рядок 204
+<!-- fc id:T-C-127 sha:51bbff59 src:dodatky/c-komandy.md:227 klas:A -->
+### T-C-127 · kod · рядок 227
 
 **Книга каже, дослівно:**
 
@@ -1756,8 +2524,8 @@
 
 ---
 
-<!-- fc id:T-C-115 sha:aa33e38e src:dodatky/c-komandy.md:205 klas:F -->
-### T-C-115 · kod-ryadok · рядок 205
+<!-- fc id:T-C-128 sha:aa33e38e src:dodatky/c-komandy.md:228 klas:F -->
+### T-C-128 · kod-ryadok · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1769,8 +2537,8 @@
 
 ---
 
-<!-- fc id:T-C-116 sha:8fc5b038 src:dodatky/c-komandy.md:206 klas:A -->
-### T-C-116 · kod-ryadok · рядок 206
+<!-- fc id:T-C-129 sha:8fc5b038 src:dodatky/c-komandy.md:229 klas:A -->
+### T-C-129 · kod-ryadok · рядок 229
 
 **Книга каже, дослівно:**
 
