@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-17-001 sha:760be9ee src:manual/17-esptool.md:3 klas:F -->
+<!-- fc id:T-17-001 sha:760be9ee src:manual/17-esptool.md:3 klas:B -->
 ### T-17-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,7 +15,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst та .../esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > esptool is a Python-based, open-source, platform-independent utility to
+  > communicate with the ROM bootloader in Espressif chips.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
+Решта («перші дві команди для незнайомої плати», «дамп до першої зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок дій**, який випливає з властивостей команд однозначно, але в жодному документі так не сформульований. Це рекомендація книги, побудована на звірених фактах, і чесний клас для неї — `B`.
+Записую це окремо, бо спокуса поставити `A` тут така сама, як була з JTAG-пінами в проході 20: твердження здається загальновідомим і безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -45,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-17-004 sha:9395569b src:manual/17-esptool.md:8 klas:F -->
+<!-- fc id:T-17-004 sha:9395569b src:manual/17-esptool.md:8 klas:B -->
 ### T-17-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -54,7 +63,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst та .../esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > esptool is a Python-based, open-source, platform-independent utility to
+  > communicate with the ROM bootloader in Espressif chips.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
+Решта («перші дві команди для незнайомої плати», «дамп до першої зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок дій**, який випливає з властивостей команд однозначно, але в жодному документі так не сформульований. Це рекомендація книги, побудована на звірених фактах, і чесний клас для неї — `B`.
+Записую це окремо, бо спокуса поставити `A` тут така сама, як була з JTAG-пінами в проході 20: твердження здається загальновідомим і безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -112,7 +130,7 @@
 
 ---
 
-<!-- fc id:T-17-009 sha:ea8f78cc src:manual/17-esptool.md:20 klas:F -->
+<!-- fc id:T-17-009 sha:ea8f78cc src:manual/17-esptool.md:20 klas:A -->
 ### T-17-009 · proza · рядок 20
 
 **Книга каже, дослівно:**
@@ -121,7 +139,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+- **Дослівно з джерела:**
+  > (перехід на v5)
+  > The `esptool.py` name is kept as an alias; the recommended entry point
+  > is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
+  > `erase-flash`, `merge-bin`. The underscore forms are deprecated and
+  > print a warning.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
+- **Нотатка:** Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції — у проході 6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу й таблиці: «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці «виклик · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -237,7 +265,7 @@
 
 ---
 
-<!-- fc id:T-17-014 sha:15c8ed07 src:manual/17-esptool.md:30 klas:F -->
+<!-- fc id:T-17-014 sha:15c8ed07 src:manual/17-esptool.md:30 klas:A -->
 ### T-17-014 · komirka · рядок 30
 
 **Книга каже, дослівно:**
@@ -246,7 +274,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+- **Дослівно з джерела:**
+  > (перехід на v5)
+  > The `esptool.py` name is kept as an alias; the recommended entry point
+  > is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
+  > `erase-flash`, `merge-bin`. The underscore forms are deprecated and
+  > print a warning.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
+- **Нотатка:** Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції — у проході 6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу й таблиці: «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці «виклик · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -474,7 +512,7 @@
 
 ---
 
-<!-- fc id:T-17-023 sha:9063d84c src:manual/17-esptool.md:53 klas:F -->
+<!-- fc id:T-17-023 sha:9063d84c src:manual/17-esptool.md:53 klas:A -->
 ### T-17-023 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -483,7 +521,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+- **Дослівно з джерела:**
+  > (перехід на v5)
+  > The `esptool.py` name is kept as an alias; the recommended entry point
+  > is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
+  > `erase-flash`, `merge-bin`. The underscore forms are deprecated and
+  > print a warning.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
+- **Нотатка:** Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції — у проході 6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу й таблиці: «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці «виклик · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -1318,7 +1366,7 @@
 
 ---
 
-<!-- fc id:T-17-071 sha:501abb75 src:manual/17-esptool.md:155 klas:F -->
+<!-- fc id:T-17-071 sha:501abb75 src:manual/17-esptool.md:155 klas:B -->
 ### T-17-071 · proza · рядок 155
 
 **Книга каже, дослівно:**
@@ -1327,7 +1375,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst та .../esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > esptool is a Python-based, open-source, platform-independent utility to
+  > communicate with the ROM bootloader in Espressif chips.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
+Решта («перші дві команди для незнайомої плати», «дамп до першої зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок дій**, який випливає з властивостей команд однозначно, але в жодному документі так не сформульований. Це рекомендація книги, побудована на звірених фактах, і чесний клас для неї — `B`.
+Записую це окремо, бо спокуса поставити `A` тут така сама, як була з JTAG-пінами в проході 20: твердження здається загальновідомим і безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -1621,7 +1678,7 @@
 
 ---
 
-<!-- fc id:T-17-084 sha:fc4482af src:manual/17-esptool.md:183 klas:F -->
+<!-- fc id:T-17-084 sha:fc4482af src:manual/17-esptool.md:183 klas:A -->
 ### T-17-084 · proza · рядок 183
 
 **Книга каже, дослівно:**
@@ -1630,7 +1687,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-commands.rst)
+  > The ``merge-bin`` command will merge multiple binary files … Any gaps
+  > between the input files are padded with 0xFF bytes.
+  > Options such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``
+  > are used to set the corresponding values in the image header, exactly
+  > as they would be when flashing.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда `merge-bin` без `--chip` не запускалася. Виправлення вже в тексті; цей запис доводить решту абзацу, який тоді лишився без доказу: обов'язковість `--chip` і **причина** її (порту немає, визначати чип нема звідки), і те, що прапорці флешу мають збігатися з тим, під що зібрано прошивку, бо вони йдуть у заголовок образу.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -1729,7 +1804,7 @@
 
 ---
 
-<!-- fc id:T-17-088 sha:6579e87b src:manual/17-esptool.md:194 klas:F -->
+<!-- fc id:T-17-088 sha:6579e87b src:manual/17-esptool.md:194 klas:A -->
 ### T-17-088 · proza · рядок 194
 
 **Книга каже, дослівно:**
@@ -1738,7 +1813,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-commands.rst)
+  > The ``merge-bin`` command will merge multiple binary files … Any gaps
+  > between the input files are padded with 0xFF bytes.
+  > Options such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``
+  > are used to set the corresponding values in the image header, exactly
+  > as they would be when flashing.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда `merge-bin` без `--chip` не запускалася. Виправлення вже в тексті; цей запис доводить решту абзацу, який тоді лишився без доказу: обов'язковість `--chip` і **причина** її (порту немає, визначати чип нема звідки), і те, що прапорці флешу мають збігатися з тим, під що зібрано прошивку, бо вони йдуть у заголовок образу.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -1785,7 +1878,7 @@
 
 ---
 
-<!-- fc id:T-17-091 sha:66ee792a src:manual/17-esptool.md:199 klas:F -->
+<!-- fc id:T-17-091 sha:66ee792a src:manual/17-esptool.md:199 klas:A -->
 ### T-17-091 · proza · рядок 199
 
 **Книга каже, дослівно:**
@@ -1794,7 +1887,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-commands.rst)
+  > The ``merge-bin`` command will merge multiple binary files … Any gaps
+  > between the input files are padded with 0xFF bytes.
+  > Options such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``
+  > are used to set the corresponding values in the image header, exactly
+  > as they would be when flashing.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда `merge-bin` без `--chip` не запускалася. Виправлення вже в тексті; цей запис доводить решту абзацу, який тоді лишився без доказу: обов'язковість `--chip` і **причина** її (порту немає, визначати чип нема звідки), і те, що прапорці флешу мають збігатися з тим, під що зібрано прошивку, бо вони йдуть у заголовок образу.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -2191,7 +2302,7 @@
 
 ---
 
-<!-- fc id:T-17-110 sha:2936ba3a src:manual/17-esptool.md:250 klas:F -->
+<!-- fc id:T-17-110 sha:2936ba3a src:manual/17-esptool.md:250 klas:A -->
 ### T-17-110 · proza · рядок 250
 
 **Книга каже, дослівно:**
@@ -2200,7 +2311,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -2243,7 +2371,7 @@
 
 ---
 
-<!-- fc id:T-17-114 sha:7c5d9fa9 src:manual/17-esptool.md:261 klas:F -->
+<!-- fc id:T-17-114 sha:7c5d9fa9 src:manual/17-esptool.md:261 klas:A -->
 ### T-17-114 · proza · рядок 261
 
 **Книга каже, дослівно:**
@@ -2252,7 +2380,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -2398,7 +2543,7 @@
 
 ---
 
-<!-- fc id:T-17-124 sha:5e738a7f src:manual/17-esptool.md:275 klas:F -->
+<!-- fc id:T-17-124 sha:5e738a7f src:manual/17-esptool.md:275 klas:A -->
 ### T-17-124 · proza · рядок 275
 
 **Книга каже, дослівно:**
@@ -2407,7 +2552,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst, .../advanced-topics/boot-mode-selection.rst (Automatic Bootloader)
+- **Дослівно з джерела:**
+  > (basic-options.rst)
+  > esptool has a two-stage flashing process: a small "stub" program is
+  > uploaded to RAM and run, which then performs the requested operation
+  > much faster than the ROM bootloader. ``--no-stub`` disables this.
+  > 
+  > (boot-mode-selection.rst, Automatic Bootloader)
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines of the serial connection.
+  > 
+  > (__init__.py)
+  > This chip is {detected}, not {requested}. Wrong --chip argument?
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Чотири твердження розділу 17, які досі не мали доказу, бо стояли не в блоках коду, а в поясненнях: механізм stub, автоскидання через `DTR`/`RTS`, повідомлення про розбіжність чипа і причина «застосунок пише в UART».
+Останнє варте уваги: воно пояснює `Invalid head of packet` із сусіднього запису — плата не мовчить, а говорить своє, і `esptool` бачить чуже в потоці. Дві половини одного симптому тепер обидві звірені.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -2462,7 +2624,7 @@
 
 ---
 
-<!-- fc id:T-17-127 sha:2d9087c4 src:manual/17-esptool.md:281 klas:F -->
+<!-- fc id:T-17-127 sha:2d9087c4 src:manual/17-esptool.md:281 klas:A -->
 ### T-17-127 · proza · рядок 281
 
 **Книга каже, дослівно:**
@@ -2471,7 +2633,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst, .../advanced-topics/boot-mode-selection.rst (Automatic Bootloader)
+- **Дослівно з джерела:**
+  > (basic-options.rst)
+  > esptool has a two-stage flashing process: a small "stub" program is
+  > uploaded to RAM and run, which then performs the requested operation
+  > much faster than the ROM bootloader. ``--no-stub`` disables this.
+  > 
+  > (boot-mode-selection.rst, Automatic Bootloader)
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines of the serial connection.
+  > 
+  > (__init__.py)
+  > This chip is {detected}, not {requested}. Wrong --chip argument?
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Чотири твердження розділу 17, які досі не мали доказу, бо стояли не в блоках коду, а в поясненнях: механізм stub, автоскидання через `DTR`/`RTS`, повідомлення про розбіжність чипа і причина «застосунок пише в UART».
+Останнє варте уваги: воно пояснює `Invalid head of packet` із сусіднього запису — плата не мовчить, а говорить своє, і `esptool` бачить чуже в потоці. Дві половини одного симптому тепер обидві звірені.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -2724,7 +2903,7 @@
 
 ---
 
-<!-- fc id:T-17-140 sha:6f4d2986 src:manual/17-esptool.md:306 klas:F -->
+<!-- fc id:T-17-140 sha:6f4d2986 src:manual/17-esptool.md:306 klas:A -->
 ### T-17-140 · proza · рядок 306
 
 **Книга каже, дослівно:**
@@ -2733,7 +2912,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst, .../advanced-topics/boot-mode-selection.rst (Automatic Bootloader)
+- **Дослівно з джерела:**
+  > (basic-options.rst)
+  > esptool has a two-stage flashing process: a small "stub" program is
+  > uploaded to RAM and run, which then performs the requested operation
+  > much faster than the ROM bootloader. ``--no-stub`` disables this.
+  > 
+  > (boot-mode-selection.rst, Automatic Bootloader)
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines of the serial connection.
+  > 
+  > (__init__.py)
+  > This chip is {detected}, not {requested}. Wrong --chip argument?
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Чотири твердження розділу 17, які досі не мали доказу, бо стояли не в блоках коду, а в поясненнях: механізм stub, автоскидання через `DTR`/`RTS`, повідомлення про розбіжність чипа і причина «застосунок пише в UART».
+Останнє варте уваги: воно пояснює `Invalid head of packet` із сусіднього запису — плата не мовчить, а говорить своє, і `esptool` бачить чуже в потоці. Дві половини одного симптому тепер обидві звірені.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -2879,7 +3075,7 @@
 
 ---
 
-<!-- fc id:T-17-150 sha:8eda1231 src:manual/17-esptool.md:332 klas:F -->
+<!-- fc id:T-17-150 sha:8eda1231 src:manual/17-esptool.md:332 klas:B -->
 ### T-17-150 · proza · рядок 332
 
 **Книга каже, дослівно:**
@@ -2888,11 +3084,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst та .../esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > esptool is a Python-based, open-source, platform-independent utility to
+  > communicate with the ROM bootloader in Espressif chips.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
+Решта («перші дві команди для незнайомої плати», «дамп до першої зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок дій**, який випливає з властивостей команд однозначно, але в жодному документі так не сформульований. Це рекомендація книги, побудована на звірених фактах, і чесний клас для неї — `B`.
+Записую це окремо, бо спокуса поставити `A` тут така сама, як була з JTAG-пінами в проході 20: твердження здається загальновідомим і безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-17-151 sha:a7f08f37 src:manual/17-esptool.md:334 klas:F -->
+<!-- fc id:T-17-151 sha:a7f08f37 src:manual/17-esptool.md:334 klas:B -->
 ### T-17-151 · proza · рядок 334
 
 **Книга каже, дослівно:**
@@ -2901,7 +3106,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst та .../esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > esptool is a Python-based, open-source, platform-independent utility to
+  > communicate with the ROM bootloader in Espressif chips.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
+Решта («перші дві команди для незнайомої плати», «дамп до першої зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок дій**, який випливає з властивостей команд однозначно, але в жодному документі так не сформульований. Це рекомендація книги, побудована на звірених фактах, і чесний клас для неї — `B`.
+Записую це окремо, бо спокуса поставити `A` тут така сама, як була з JTAG-пінами в проході 20: твердження здається загальновідомим і безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -2953,7 +3167,7 @@
 
 ---
 
-<!-- fc id:T-17-154 sha:33a8f7c8 src:manual/17-esptool.md:339 klas:F -->
+<!-- fc id:T-17-154 sha:33a8f7c8 src:manual/17-esptool.md:339 klas:A -->
 ### T-17-154 · proza · рядок 339
 
 **Книга каже, дослівно:**
@@ -2962,6 +3176,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-commands.rst)
+  > The ``merge-bin`` command will merge multiple binary files … Any gaps
+  > between the input files are padded with 0xFF bytes.
+  > Options such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``
+  > are used to set the corresponding values in the image header, exactly
+  > as they would be when flashing.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда `merge-bin` без `--chip` не запускалася. Виправлення вже в тексті; цей запис доводить решту абзацу, який тоді лишився без доказу: обов'язковість `--chip` і **причина** її (порту немає, визначати чип нема звідки), і те, що прапорці флешу мають збігатися з тим, під що зібрано прошивку, бо вони йдуть у заголовок образу.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---

@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K15-002 sha:1c127630 src:kartky/k15-seriyna.md:8 klas:F -->
+<!-- fc id:T-K15-002 sha:1c127630 src:kartky/k15-seriyna.md:8 klas:A -->
 ### T-K15-002 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -28,7 +28,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -717,7 +731,7 @@
 
 ---
 
-<!-- fc id:T-K15-046 sha:8082acae src:kartky/k15-seriyna.md:88 klas:F -->
+<!-- fc id:T-K15-046 sha:8082acae src:kartky/k15-seriyna.md:88 klas:A -->
 ### T-K15-046 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -726,7 +740,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+- **Дослівно з джерела:**
+  > ``espefuse`` is a tool for communicating with Espressif chips for the
+  > purpose of reading/writing ("burning") the one-time-programmable
+  > eFuses. Burning occurs only in one direction from 0 to 1 (never
+  > cleared 1->0).
+  > 
+  > .. warning::
+  >     Because eFuse is one-time-programmable, it is possible to
+  >     permanently damage or "brick" your {IDF_TARGET_NAME} using this
+  >     tool. Use it with great care.
+  > 
+  > - ``--do-not-confirm`` - Do not pause for confirmation before
+  >   permanently writing eFuses. Use with caution. If this option is not
+  >   used, a manual confirmation step is required, you need to enter the
+  >   word ``BURN`` to continue burning.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто «не скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
+Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить без питання, — а саме чужі скрипти в цій книзі розбираються окремо.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 

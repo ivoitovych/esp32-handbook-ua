@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-25-007 sha:af9c4cd0 src:manual/25-log.md:17 klas:F -->
+<!-- fc id:T-25-007 sha:af9c4cd0 src:manual/25-log.md:17 klas:A -->
 ### T-25-007 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -93,7 +93,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
+- **Дослівно з джерела:**
+  > * - Ctrl + ]
+  >   - Exit the program
+  > * - Ctrl + T
+  >   - Menu escape key
+  >   - Press and follow it by one of the keys given below.
+  > * - * Ctrl + R
+  >   - Reset target board via RTS
+  >   - Reset the target board and re-starts the application via the RTS
+  >     line (if connected).
+  > * - * Ctrl + P
+  >   - Reset target into bootloader to pause app via RTS and DTR lines
+  > 
+  > If an ESP-IDF app crashes and panics, a register dump and backtrace
+  > are produced… IDF Monitor … looks up each address in the ELF file.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено дослівно, розбіжностей немає — включно з тонкістю, яку легко записати неправильно: `Ctrl+R` не самостійна комбінація, а **друга** клавіша після `Ctrl+T`. Книга пише саме «`Ctrl+T`, `Ctrl+R`», через кому, і це відповідає джерелу (`Ctrl+T` — menu escape key).
+Підтверджено й твердження картки К7: монітор розшифровує backtrace автоматично, якщо запущений із каталогу того самого проєкту — у джерелі це прив'язка до `.elf` того збирання.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -502,7 +522,7 @@
 
 ---
 
-<!-- fc id:T-25-039 sha:225f1c70 src:manual/25-log.md:68 klas:F -->
+<!-- fc id:T-25-039 sha:225f1c70 src:manual/25-log.md:68 klas:A -->
 ### T-25-039 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -511,7 +531,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 

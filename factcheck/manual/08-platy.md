@@ -734,7 +734,7 @@
 
 ---
 
-<!-- fc id:T-08-057 sha:acde7a3f src:manual/08-platy.md:99 klas:F -->
+<!-- fc id:T-08-057 sha:acde7a3f src:manual/08-platy.md:99 klas:A -->
 ### T-08-057 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -743,11 +743,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
+- **Дослівно з джерела:**
+  > chip-id     Read Chip ID
+  > flash-id    Read SPI flash manufacturer and device ID
+  > 
+  > The flash-id command outputs the manufacturer and device ID of the
+  > flash chip, together with the detected flash size.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
+Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-08-058 sha:4557b250 src:manual/08-platy.md:102 klas:F -->
+<!-- fc id:T-08-058 sha:4557b250 src:manual/08-platy.md:102 klas:A -->
 ### T-08-058 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -756,7 +767,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
+- **Дослівно з джерела:**
+  > chip-id     Read Chip ID
+  > flash-id    Read SPI flash manufacturer and device ID
+  > 
+  > The flash-id command outputs the manufacturer and device ID of the
+  > flash chip, together with the detected flash size.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
+Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -1162,7 +1184,7 @@
 
 ---
 
-<!-- fc id:T-08-088 sha:531a4392 src:manual/08-platy.md:175 klas:F -->
+<!-- fc id:T-08-088 sha:531a4392 src:manual/08-platy.md:175 klas:A -->
 ### T-08-088 · proza · рядок 175
 
 **Книга каже, дослівно:**
@@ -1171,7 +1193,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
+- **Дослівно з джерела:**
+  > chip-id     Read Chip ID
+  > flash-id    Read SPI flash manufacturer and device ID
+  > 
+  > The flash-id command outputs the manufacturer and device ID of the
+  > flash chip, together with the detected flash size.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
+Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 

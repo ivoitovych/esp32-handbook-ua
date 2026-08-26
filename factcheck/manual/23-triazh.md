@@ -787,7 +787,7 @@
 
 ---
 
-<!-- fc id:T-23-053 sha:c36d5d81 src:manual/23-triazh.md:105 klas:F -->
+<!-- fc id:T-23-053 sha:c36d5d81 src:manual/23-triazh.md:105 klas:A -->
 ### T-23-053 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -796,7 +796,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
+- **Дослівно з джерела:**
+  > chip-id     Read Chip ID
+  > flash-id    Read SPI flash manufacturer and device ID
+  > 
+  > The flash-id command outputs the manufacturer and device ID of the
+  > flash chip, together with the detected flash size.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
+Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -813,7 +824,7 @@
 
 ---
 
-<!-- fc id:T-23-055 sha:6f2e3d3c src:manual/23-triazh.md:110 klas:F -->
+<!-- fc id:T-23-055 sha:6f2e3d3c src:manual/23-triazh.md:110 klas:A -->
 ### T-23-055 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -822,7 +833,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
+- **Дослівно з джерела:**
+  > chip-id     Read Chip ID
+  > flash-id    Read SPI flash manufacturer and device ID
+  > 
+  > The flash-id command outputs the manufacturer and device ID of the
+  > flash chip, together with the detected flash size.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
+Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -1047,7 +1069,7 @@
 
 ---
 
-<!-- fc id:T-23-073 sha:c30fa18d src:manual/23-triazh.md:146 klas:F -->
+<!-- fc id:T-23-073 sha:c30fa18d src:manual/23-triazh.md:146 klas:B -->
 ### T-23-073 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -1056,7 +1078,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > 
+  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > сімейств, які текст поруч називає; область дії береться з `#if
+  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+  > BOM проєкту.
+- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
+Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k11-nikoly.md`
 
-Одиниць твердження: **25**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **27**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -32,16 +32,36 @@
 
 ---
 
-<!-- fc id:T-K11-003 sha:a3f7d81d src:kartky/k11-nikoly.md:7 klas:F -->
+<!-- fc id:T-K11-003 sha:5e9b040f src:kartky/k11-nikoly.md:7 klas:A -->
 ### T-K11-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
 
-> **Не палити eFuse наосліп.** `espefuse` записує біти, які **фізично не скидаються назад**.
+> **Не палити eFuse наосліп.** `espefuse` записує біти лише в один бік — з 0 у 1, назад ніколи.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+- **Дослівно з джерела:**
+  > ``espefuse`` is a tool for communicating with Espressif chips for the
+  > purpose of reading/writing ("burning") the one-time-programmable
+  > eFuses. Burning occurs only in one direction from 0 to 1 (never
+  > cleared 1->0).
+  > 
+  > .. warning::
+  >     Because eFuse is one-time-programmable, it is possible to
+  >     permanently damage or "brick" your {IDF_TARGET_NAME} using this
+  >     tool. Use it with great care.
+  > 
+  > - ``--do-not-confirm`` - Do not pause for confirmation before
+  >   permanently writing eFuses. Use with caution. If this option is not
+  >   used, a manual confirmation step is required, you need to enter the
+  >   word ``BURN`` to continue burning.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто «не скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
+Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить без питання, — а саме чужі скрипти в цій книзі розбираються окремо.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -58,21 +78,107 @@
 
 ---
 
-<!-- fc id:T-K11-005 sha:0ec5570b src:kartky/k11-nikoly.md:7 klas:F -->
+<!-- fc id:T-K11-005 sha:cbb6779a src:kartky/k11-nikoly.md:7 klas:A -->
 ### T-K11-005 · proza · рядок 7
 
 **Книга каже, дослівно:**
 
-> Не запускати команду `espefuse burn-*`, поки не зрозуміло дослівно, що робить кожен її аргумент.
+> Не запускати `espefuse burn-*`, поки не зрозуміло дослівно, що робить кожен її аргумент.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+- **Дослівно з джерела:**
+  > ``espefuse`` is a tool for communicating with Espressif chips for the
+  > purpose of reading/writing ("burning") the one-time-programmable
+  > eFuses. Burning occurs only in one direction from 0 to 1 (never
+  > cleared 1->0).
+  > 
+  > .. warning::
+  >     Because eFuse is one-time-programmable, it is possible to
+  >     permanently damage or "brick" your {IDF_TARGET_NAME} using this
+  >     tool. Use it with great care.
+  > 
+  > - ``--do-not-confirm`` - Do not pause for confirmation before
+  >   permanently writing eFuses. Use with caution. If this option is not
+  >   used, a manual confirmation step is required, you need to enter the
+  >   word ``BURN`` to continue burning.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто «не скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
+Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить без питання, — а саме чужі скрипти в цій книзі розбираються окремо.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-K11-006 sha:410af712 src:kartky/k11-nikoly.md:14 klas:E -->
-### T-K11-006 · proza · рядок 14
+<!-- fc id:T-K11-006 sha:6096b254 src:kartky/k11-nikoly.md:12 klas:A -->
+### T-K11-006 · proza · рядок 12
+
+**Книга каже, дослівно:**
+
+> Остання перепона — набрати слово `BURN` у відповідь на запит.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+- **Дослівно з джерела:**
+  > ``espefuse`` is a tool for communicating with Espressif chips for the
+  > purpose of reading/writing ("burning") the one-time-programmable
+  > eFuses. Burning occurs only in one direction from 0 to 1 (never
+  > cleared 1->0).
+  > 
+  > .. warning::
+  >     Because eFuse is one-time-programmable, it is possible to
+  >     permanently damage or "brick" your {IDF_TARGET_NAME} using this
+  >     tool. Use it with great care.
+  > 
+  > - ``--do-not-confirm`` - Do not pause for confirmation before
+  >   permanently writing eFuses. Use with caution. If this option is not
+  >   used, a manual confirmation step is required, you need to enter the
+  >   word ``BURN`` to continue burning.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто «не скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
+Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить без питання, — а саме чужі скрипти в цій книзі розбираються окремо.
+- **Прохід:** pass-28-komandy-suciljno
+
+---
+
+<!-- fc id:T-K11-007 sha:c07ac4c6 src:kartky/k11-nikoly.md:12 klas:A -->
+### T-K11-007 · proza · рядок 12
+
+**Книга каже, дослівно:**
+
+> Прапорець `--do-not-confirm` її знімає; у чужому скрипті він означає, що плата згорить без питання.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+- **Дослівно з джерела:**
+  > ``espefuse`` is a tool for communicating with Espressif chips for the
+  > purpose of reading/writing ("burning") the one-time-programmable
+  > eFuses. Burning occurs only in one direction from 0 to 1 (never
+  > cleared 1->0).
+  > 
+  > .. warning::
+  >     Because eFuse is one-time-programmable, it is possible to
+  >     permanently damage or "brick" your {IDF_TARGET_NAME} using this
+  >     tool. Use it with great care.
+  > 
+  > - ``--do-not-confirm`` - Do not pause for confirmation before
+  >   permanently writing eFuses. Use with caution. If this option is not
+  >   used, a manual confirmation step is required, you need to enter the
+  >   word ``BURN`` to continue burning.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто «не скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
+Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить без питання, — а саме чужі скрипти в цій книзі розбираються окремо.
+- **Прохід:** pass-28-komandy-suciljno
+
+---
+
+<!-- fc id:T-K11-008 sha:410af712 src:kartky/k11-nikoly.md:18 klas:E -->
+### T-K11-008 · proza · рядок 18
 
 **Книга каже, дослівно:**
 
@@ -84,8 +190,8 @@
 
 ---
 
-<!-- fc id:T-K11-007 sha:27686b7b src:kartky/k11-nikoly.md:14 klas:E -->
-### T-K11-007 · proza · рядок 14
+<!-- fc id:T-K11-009 sha:27686b7b src:kartky/k11-nikoly.md:18 klas:E -->
+### T-K11-009 · proza · рядок 18
 
 **Книга каже, дослівно:**
 
@@ -97,8 +203,8 @@
 
 ---
 
-<!-- fc id:T-K11-008 sha:4dcbf84d src:kartky/k11-nikoly.md:14 klas:E -->
-### T-K11-008 · proza · рядок 14
+<!-- fc id:T-K11-010 sha:4dcbf84d src:kartky/k11-nikoly.md:18 klas:E -->
+### T-K11-010 · proza · рядок 18
 
 **Книга каже, дослівно:**
 
@@ -110,8 +216,8 @@
 
 ---
 
-<!-- fc id:T-K11-009 sha:13a6c845 src:kartky/k11-nikoly.md:22 klas:F -->
-### T-K11-009 · proza · рядок 22
+<!-- fc id:T-K11-011 sha:13a6c845 src:kartky/k11-nikoly.md:26 klas:A -->
+### T-K11-011 · proza · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -119,12 +225,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > Erase Flash: ``erase-flash`` & ``erase-region``
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  > 
+  >     esptool erase-flash
+  > 
+  > To erase a region of the flash, starting at address 0x20000 with
+  > length 16 kB (0x4000 bytes):
+  > 
+  >     esptool erase-region 0x20000 0x4000
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** «Весь чип, усе замінюється на `0xFF`» — цього досить, щоб твердження книги випливало однозначно: NVS, `phy_init` і таблиця розділів лежать у тому самому флеші, отже зникають разом з усім.
+Звідси ж і симптом розділу 16 «за адресою `0x8000` порожньо після `erase-flash` без наступної повної прошивки»: `0xFF` — це і є порожньо, і бутлоадер не знаходить таблиці.
+Розширення досяжності на картки К2, К8, К11, К15 і розділ 20, де те саме твердження живе в різних формах.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-K11-010 sha:34e89cce src:kartky/k11-nikoly.md:22 klas:E -->
-### T-K11-010 · proza · рядок 22
+<!-- fc id:T-K11-012 sha:34e89cce src:kartky/k11-nikoly.md:26 klas:E -->
+### T-K11-012 · proza · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -136,8 +259,8 @@
 
 ---
 
-<!-- fc id:T-K11-011 sha:6d6b390e src:kartky/k11-nikoly.md:29 klas:F -->
-### T-K11-011 · proza · рядок 29
+<!-- fc id:T-K11-013 sha:6d6b390e src:kartky/k11-nikoly.md:33 klas:F -->
+### T-K11-013 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -149,8 +272,8 @@
 
 ---
 
-<!-- fc id:T-K11-012 sha:415c2703 src:kartky/k11-nikoly.md:29 klas:E -->
-### T-K11-012 · proza · рядок 29
+<!-- fc id:T-K11-014 sha:415c2703 src:kartky/k11-nikoly.md:33 klas:E -->
+### T-K11-014 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -162,8 +285,8 @@
 
 ---
 
-<!-- fc id:T-K11-013 sha:a8ece2fd src:kartky/k11-nikoly.md:29 klas:F -->
-### T-K11-013 · proza · рядок 29
+<!-- fc id:T-K11-015 sha:a8ece2fd src:kartky/k11-nikoly.md:33 klas:F -->
+### T-K11-015 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -175,8 +298,8 @@
 
 ---
 
-<!-- fc id:T-K11-014 sha:94045e56 src:kartky/k11-nikoly.md:29 klas:E -->
-### T-K11-014 · proza · рядок 29
+<!-- fc id:T-K11-016 sha:94045e56 src:kartky/k11-nikoly.md:33 klas:E -->
+### T-K11-016 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -188,8 +311,8 @@
 
 ---
 
-<!-- fc id:T-K11-015 sha:bcf47c92 src:kartky/k11-nikoly.md:34 klas:F -->
-### T-K11-015 · proza · рядок 34
+<!-- fc id:T-K11-017 sha:bcf47c92 src:kartky/k11-nikoly.md:38 klas:F -->
+### T-K11-017 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -201,8 +324,8 @@
 
 ---
 
-<!-- fc id:T-K11-016 sha:9e743b56 src:kartky/k11-nikoly.md:38 klas:F -->
-### T-K11-016 · proza · рядок 38
+<!-- fc id:T-K11-018 sha:9e743b56 src:kartky/k11-nikoly.md:42 klas:A -->
+### T-K11-018 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -210,12 +333,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > (spi_pins.h — піни, якими чип говорить із флешем)
+  > MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+  > MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+  > MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+  > 
+  > (adc_channel.h — ADC1)
+  > ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+  > ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+  > 
+  > (gpio.rst)
+  > GPIO34-39 … can only be set as input mode and do not have software
+  > pullup or pulldown functions.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+- **Нотатка:** Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
+«6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із книгою точний.
+«34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом із другою половиною, на якій наполягає книга: **немає програмного** підтягування, тобто кнопка без зовнішнього резистора не працює.
+«ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h` дають рівно цей діапазон, без пропусків.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-K11-017 sha:44b30bed src:kartky/k11-nikoly.md:38 klas:E -->
-### T-K11-017 · proza · рядок 38
+<!-- fc id:T-K11-019 sha:44b30bed src:kartky/k11-nikoly.md:42 klas:E -->
+### T-K11-019 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -227,8 +370,8 @@
 
 ---
 
-<!-- fc id:T-K11-018 sha:925d49ec src:kartky/k11-nikoly.md:38 klas:E -->
-### T-K11-018 · proza · рядок 38
+<!-- fc id:T-K11-020 sha:925d49ec src:kartky/k11-nikoly.md:42 klas:E -->
+### T-K11-020 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -240,8 +383,8 @@
 
 ---
 
-<!-- fc id:T-K11-019 sha:db52595d src:kartky/k11-nikoly.md:46 klas:E -->
-### T-K11-019 · proza · рядок 46
+<!-- fc id:T-K11-021 sha:db52595d src:kartky/k11-nikoly.md:50 klas:E -->
+### T-K11-021 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -253,8 +396,8 @@
 
 ---
 
-<!-- fc id:T-K11-020 sha:8399e47f src:kartky/k11-nikoly.md:46 klas:E -->
-### T-K11-020 · proza · рядок 46
+<!-- fc id:T-K11-022 sha:8399e47f src:kartky/k11-nikoly.md:50 klas:E -->
+### T-K11-022 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -266,8 +409,8 @@
 
 ---
 
-<!-- fc id:T-K11-021 sha:649513c1 src:kartky/k11-nikoly.md:50 klas:E -->
-### T-K11-021 · proza · рядок 50
+<!-- fc id:T-K11-023 sha:649513c1 src:kartky/k11-nikoly.md:54 klas:E -->
+### T-K11-023 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -279,8 +422,8 @@
 
 ---
 
-<!-- fc id:T-K11-022 sha:e3a0462c src:kartky/k11-nikoly.md:50 klas:E -->
-### T-K11-022 · proza · рядок 50
+<!-- fc id:T-K11-024 sha:e3a0462c src:kartky/k11-nikoly.md:54 klas:E -->
+### T-K11-024 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -292,8 +435,8 @@
 
 ---
 
-<!-- fc id:T-K11-023 sha:ed255616 src:kartky/k11-nikoly.md:54 klas:A -->
-### T-K11-023 · proza · рядок 54
+<!-- fc id:T-K11-025 sha:ed255616 src:kartky/k11-nikoly.md:58 klas:A -->
+### T-K11-025 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -317,8 +460,8 @@
 
 ---
 
-<!-- fc id:T-K11-024 sha:15310ad7 src:kartky/k11-nikoly.md:54 klas:A -->
-### T-K11-024 · proza · рядок 54
+<!-- fc id:T-K11-026 sha:15310ad7 src:kartky/k11-nikoly.md:58 klas:A -->
+### T-K11-026 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -338,8 +481,8 @@
 
 ---
 
-<!-- fc id:T-K11-025 sha:f44cff79 src:kartky/k11-nikoly.md:59 klas:E -->
-### T-K11-025 · proza · рядок 59
+<!-- fc id:T-K11-027 sha:f44cff79 src:kartky/k11-nikoly.md:63 klas:E -->
+### T-K11-027 · proza · рядок 63
 
 **Книга каже, дослівно:**
 

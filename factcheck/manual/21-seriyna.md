@@ -338,7 +338,7 @@
 
 ---
 
-<!-- fc id:T-21-017 sha:1c051eb7 src:manual/21-seriyna.md:48 klas:F -->
+<!-- fc id:T-21-017 sha:1c051eb7 src:manual/21-seriyna.md:48 klas:A -->
 ### T-21-017 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -347,7 +347,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-commands.rst)
+  > The ``merge-bin`` command will merge multiple binary files … Any gaps
+  > between the input files are padded with 0xFF bytes.
+  > Options such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``
+  > are used to set the corresponding values in the image header, exactly
+  > as they would be when flashing.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда `merge-bin` без `--chip` не запускалася. Виправлення вже в тексті; цей запис доводить решту абзацу, який тоді лишився без доказу: обов'язковість `--chip` і **причина** її (порту немає, визначати чип нема звідки), і те, що прапорці флешу мають збігатися з тим, під що зібрано прошивку, бо вони йдуть у заголовок образу.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -364,7 +382,7 @@
 
 ---
 
-<!-- fc id:T-21-019 sha:378d2fc5 src:manual/21-seriyna.md:51 klas:F -->
+<!-- fc id:T-21-019 sha:378d2fc5 src:manual/21-seriyna.md:51 klas:A -->
 ### T-21-019 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -373,7 +391,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > def merge_bin_cli(ctx, addr_filename, **kwargs):
+  >     """Merge multiple raw binary files into a single flashable file."""
+  >     if ctx.obj["chip"] == "auto":
+  >         raise FatalError(
+  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+  >         )
+  > 
+  > (basic-commands.rst)
+  > The ``merge-bin`` command will merge multiple binary files … Any gaps
+  > between the input files are padded with 0xFF bytes.
+  > Options such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``
+  > are used to set the corresponding values in the image header, exactly
+  > as they would be when flashing.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда `merge-bin` без `--chip` не запускалася. Виправлення вже в тексті; цей запис доводить решту абзацу, який тоді лишився без доказу: обов'язковість `--chip` і **причина** її (порту немає, визначати чип нема звідки), і те, що прапорці флешу мають збігатися з тим, під що зібрано прошивку, бо вони йдуть у заголовок образу.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 

@@ -1,0 +1,175 @@
+# Прохід 29 — кошики `log` і решта `komandy`, суцільно.
+#
+# Продовження проходу 28 тим самим важелем: майже все тут звірено раніше
+# (проходи 9, 10, 17), але взірці писалися під те місце, де факт
+# знайшли, — блок коду або абзац розділу. Комірки таблиці симптомів,
+# пункти чеклістів і згадки в сусідніх розділах лишалися в `F`.
+#
+# Прохід не додає знань. Він додає **видимість** уже перевіреного, і
+# саме тому дешевий: жодного нового джерела.
+#
+# Взірці тут ширші за звичайні, тож аудит `sketch -v` обов'язковий і
+# зроблений: кожен запис перевірено на те, які саме одиниці він накрив.
+
+- nazva: Рядки помилок з'єднання — Failed to connect і сусіди
+  zbih: '`Failed to connect`|`Invalid head of packet`|`Device or resource busy`|`Permission denied`|шукати варто за початком рядка'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+    та .../docs/en/troubleshooting.rst
+  cytata: |
+    A fatal error occurred: Failed to connect to {chip}: {reason}
+    A fatal error occurred: Invalid head of packet (0x…)
+
+    (troubleshooting.rst)
+    The most common reason for "Failed to connect" is that the chip is not
+    in the download mode… Another cause is a running application writing
+    to the same UART.
+
+    (системні, не від esptool)
+    Permission denied: '/dev/ttyUSB0'      — права, група dialout
+    Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+  sposib: curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+  notatka: >-
+    Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише
+    розширено досяжність: та сама четвірка живе в таблиці симптомів
+    додатка B по три комірки на рядок (причина, дія, розділ), у розділах
+    09, 17 і 25.
+
+    Два з чотирьох рядків — не від `esptool`, а від операційної системи, і
+    книга це каже правильно: `Permission denied` лікується групою
+    `dialout` із перезаходом, `Device or resource busy` — закритим
+    монітором. Обидва тексти дає сам Python при відкритті порту.
+
+- nazva: Паніка, backtrace і watchdog — назви рядків у логу
+  zbih: '`Guru Meditation`|\*\*`Backtrace`\*\*|`Interrupt wdt timeout`|`Task watchdog got triggered`|дамп регістрів, слово `Guru Meditation`'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c,
+    .../components/esp_system/task_wdt/task_wdt.c,
+    .../docs/en/api-guides/fatal-errors.rst
+  cytata: |
+    (panic.c / fatal-errors.rst)
+    Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was
+    unhandled.
+    Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 …
+
+    (fatal-errors.rst, Interrupt Watchdog)
+    Interrupt wdt timeout on CPU0
+
+    (task_wdt.c)
+    E (…) task_wdt: Task watchdog got triggered. The following tasks/users
+    did not reset the watchdog in time:
+  sposib: curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+  notatka: >-
+    Рядки звірені в проході 10; тут вони стають видимими в картці К7, у
+    додатку D і в розділах 20 і 26, де книга посилає читача «шукати
+    `Guru Meditation` вище в лозі».
+
+    Найважливіше з підтвердженого — розрізнення, на якому наполягає
+    картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це
+    видно з рівня й місця: повідомлення друкує `task_wdt.c` через
+    `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation`
+    друкує обробник паніки, після якого йде перезавантаження.
+
+- nazva: Мілісекунди в дужках у рядку логу
+  zbih: 'Число в дужках у логу \(`I \(29\) boot:`\)|це мілісекунди від старту'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/log.html.rst
+    та components/log/include/esp_log.h
+  cytata: |
+    The log output format is:
+        I (12345) tag: message
+    where 12345 is the timestamp in milliseconds since boot (or since the
+    system time was set), I is the log level letter, and tag is the
+    component tag.
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Твердження розділу 16 звірено. Практичний висновок книги — «воно
+    безкоштовно показує, де саме прошивка стоїть довго» — з формату
+    випливає прямо: різниця між двома сусідніми рядками і є час між
+    ними.
+
+- nazva: esptool і stub, автоскидання, розбіжність чипа
+  zbih: 'вантажить у RAM невелику допоміжну програму|визначив чип сам і побачив розбіжність|смикає ці лінії в потрібній послідовності|застосунок, який сам щось пише в UART'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst,
+    .../advanced-topics/boot-mode-selection.rst (Automatic Bootloader)
+  cytata: |
+    (basic-options.rst)
+    esptool has a two-stage flashing process: a small "stub" program is
+    uploaded to RAM and run, which then performs the requested operation
+    much faster than the ROM bootloader. ``--no-stub`` disables this.
+
+    (boot-mode-selection.rst, Automatic Bootloader)
+    esptool can automatically reset the board into bootloader mode … using
+    the DTR and RTS lines of the serial connection.
+
+    (__init__.py)
+    This chip is {detected}, not {requested}. Wrong --chip argument?
+  sposib: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  notatka: >-
+    Чотири твердження розділу 17, які досі не мали доказу, бо стояли не в
+    блоках коду, а в поясненнях: механізм stub, автоскидання через
+    `DTR`/`RTS`, повідомлення про розбіжність чипа і причина «застосунок
+    пише в UART».
+
+    Останнє варте уваги: воно пояснює `Invalid head of packet` із
+    сусіднього запису — плата не мовчить, а говорить своє, і `esptool`
+    бачить чуже в потоці. Дві половини одного симптому тепер обидві
+    звірені.
+
+- nazva: merge-bin — прапорці флешу і призначення формату
+  zbih: '`--chip` у `merge-bin` обов.язковий|`--flash-mode`, `--flash-size` і `--flash-freq`|склеює їх в один образ, у якому зсуви вже всередині|формат передачі прошивки людині|Адреси всередині `merge-bin` мають бути ті самі|порту не має — вона складає файл офлайн'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+    (merge_bin_cli) та .../docs/en/esptool/basic-commands.rst
+  cytata: |
+    def merge_bin_cli(ctx, addr_filename, **kwargs):
+        """Merge multiple raw binary files into a single flashable file."""
+        if ctx.obj["chip"] == "auto":
+            raise FatalError(
+                f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
+            )
+
+    (basic-commands.rst)
+    The ``merge-bin`` command will merge multiple binary files … Any gaps
+    between the input files are padded with 0xFF bytes.
+    Options such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``
+    are used to set the corresponding values in the image header, exactly
+    as they would be when flashing.
+  sposib: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  notatka: >-
+    Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда
+    `merge-bin` без `--chip` не запускалася. Виправлення вже в тексті;
+    цей запис доводить решту абзацу, який тоді лишився без доказу:
+    обов'язковість `--chip` і **причина** її (порту немає, визначати чип
+    нема звідки), і те, що прапорці флешу мають збігатися з тим, під що
+    зібрано прошивку, бо вони йдуть у заголовок образу.
+
+- nazva: Роль esptool і послідовність дій із незнайомою платою
+  zbih: 'програма, що розмовляє з ROM-бутлоадером|це буде через `esptool`|`chip-id` і `flash-id` — перші дві команди|`read-flash` робиться до першої зміни|Дамп \(`read-flash`\) робиться \*\*до\*\*|доки чип відповідає на `chip-id`, він живий|`chip-id` не відповідає — це вже залізо'
+  klas: B
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst
+    та .../esptool/basic-commands.rst
+  cytata: |
+    esptool is a Python-based, open-source, platform-independent utility to
+    communicate with the ROM bootloader in Espressif chips.
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: >-
+    Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише
+    перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
+
+    Решта («перші дві команди для незнайомої плати», «дамп до першої
+    зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок
+    дій**, який випливає з властивостей команд однозначно, але в жодному
+    документі так не сформульований. Це рекомендація книги, побудована на
+    звірених фактах, і чесний клас для неї — `B`.
+
+    Записую це окремо, бо спокуса поставити `A` тут така сама, як була з
+    JTAG-пінами в проході 20: твердження здається загальновідомим і
+    безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.

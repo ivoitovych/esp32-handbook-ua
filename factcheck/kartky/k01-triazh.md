@@ -434,7 +434,7 @@
 
 ---
 
-<!-- fc id:T-K01-032 sha:0d3dd7c0 src:kartky/k01-triazh.md:51 klas:F -->
+<!-- fc id:T-K01-032 sha:0d3dd7c0 src:kartky/k01-triazh.md:51 klas:A -->
 ### T-K01-032 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -443,11 +443,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
+- **Дослівно з джерела:**
+  > chip-id     Read Chip ID
+  > flash-id    Read SPI flash manufacturer and device ID
+  > 
+  > The flash-id command outputs the manufacturer and device ID of the
+  > flash chip, together with the detected flash size.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
+Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-K01-033 sha:e687b58d src:kartky/k01-triazh.md:51 klas:F -->
+<!-- fc id:T-K01-033 sha:e687b58d src:kartky/k01-triazh.md:51 klas:A -->
 ### T-K01-033 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -456,7 +467,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
+- **Дослівно з джерела:**
+  > chip-id     Read Chip ID
+  > flash-id    Read SPI flash manufacturer and device ID
+  > 
+  > The flash-id command outputs the manufacturer and device ID of the
+  > flash chip, together with the detected flash size.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
+Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 

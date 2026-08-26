@@ -511,7 +511,7 @@
 
 ---
 
-<!-- fc id:T-K07-014 sha:23917c21 src:kartky/k07-panika.md:21 klas:F -->
+<!-- fc id:T-K07-014 sha:23917c21 src:kartky/k07-panika.md:21 klas:A -->
 ### T-K07-014 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -520,11 +520,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
+- **Дослівно з джерела:**
+  > (panic.c / fatal-errors.rst)
+  > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was
+  > unhandled.
+  > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 …
+  > 
+  > (fatal-errors.rst, Interrupt Watchdog)
+  > Interrupt wdt timeout on CPU0
+  > 
+  > (task_wdt.c)
+  > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
+  > did not reset the watchdog in time:
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
+Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-K07-015 sha:58d7dba4 src:kartky/k07-panika.md:21 klas:F -->
+<!-- fc id:T-K07-015 sha:58d7dba4 src:kartky/k07-panika.md:21 klas:A -->
 ### T-K07-015 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -533,11 +550,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
+- **Дослівно з джерела:**
+  > (panic.c / fatal-errors.rst)
+  > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was
+  > unhandled.
+  > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 …
+  > 
+  > (fatal-errors.rst, Interrupt Watchdog)
+  > Interrupt wdt timeout on CPU0
+  > 
+  > (task_wdt.c)
+  > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
+  > did not reset the watchdog in time:
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
+Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-K07-016 sha:8c383197 src:kartky/k07-panika.md:24 klas:F -->
+<!-- fc id:T-K07-016 sha:8c383197 src:kartky/k07-panika.md:24 klas:A -->
 ### T-K07-016 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -546,7 +580,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
+- **Дослівно з джерела:**
+  > (panic.c / fatal-errors.rst)
+  > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was
+  > unhandled.
+  > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 …
+  > 
+  > (fatal-errors.rst, Interrupt Watchdog)
+  > Interrupt wdt timeout on CPU0
+  > 
+  > (task_wdt.c)
+  > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
+  > did not reset the watchdog in time:
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
+Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -683,7 +734,7 @@
 
 ---
 
-<!-- fc id:T-K07-023 sha:e0cf8dca src:kartky/k07-panika.md:34 klas:F -->
+<!-- fc id:T-K07-023 sha:e0cf8dca src:kartky/k07-panika.md:34 klas:A -->
 ### T-K07-023 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -692,7 +743,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
+- **Дослівно з джерела:**
+  > * - Ctrl + ]
+  >   - Exit the program
+  > * - Ctrl + T
+  >   - Menu escape key
+  >   - Press and follow it by one of the keys given below.
+  > * - * Ctrl + R
+  >   - Reset target board via RTS
+  >   - Reset the target board and re-starts the application via the RTS
+  >     line (if connected).
+  > * - * Ctrl + P
+  >   - Reset target into bootloader to pause app via RTS and DTR lines
+  > 
+  > If an ESP-IDF app crashes and panics, a register dump and backtrace
+  > are produced… IDF Monitor … looks up each address in the ELF file.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено дослівно, розбіжностей немає — включно з тонкістю, яку легко записати неправильно: `Ctrl+R` не самостійна комбінація, а **друга** клавіша після `Ctrl+T`. Книга пише саме «`Ctrl+T`, `Ctrl+R`», через кому, і це відповідає джерелу (`Ctrl+T` — menu escape key).
+Підтверджено й твердження картки К7: монітор розшифровує backtrace автоматично, якщо запущений із каталогу того самого проєкту — у джерелі це прив'язка до `.elf` того збирання.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 

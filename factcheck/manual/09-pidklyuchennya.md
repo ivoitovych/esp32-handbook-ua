@@ -785,7 +785,7 @@
 
 ---
 
-<!-- fc id:T-09-059 sha:5571bbf3 src:manual/09-pidklyuchennya.md:109 klas:F -->
+<!-- fc id:T-09-059 sha:5571bbf3 src:manual/09-pidklyuchennya.md:109 klas:A -->
 ### T-09-059 · proza · рядок 109
 
 **Книга каже, дослівно:**
@@ -794,7 +794,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 

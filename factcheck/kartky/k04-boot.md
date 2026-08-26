@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-K04-005 sha:7fb043c1 src:kartky/k04-boot.md:12 klas:F -->
+<!-- fc id:T-K04-005 sha:7fb043c1 src:kartky/k04-boot.md:12 klas:B -->
 ### T-K04-005 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -67,11 +67,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Дослівно з джерела:**
+  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
+  > held low on reset. Otherwise it will run the program in flash.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
+  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
+  > 
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
+Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
+Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-K04-006 sha:0c221230 src:kartky/k04-boot.md:14 klas:F -->
+<!-- fc id:T-K04-006 sha:0c221230 src:kartky/k04-boot.md:14 klas:B -->
 ### T-K04-006 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -80,7 +98,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Дослівно з джерела:**
+  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
+  > held low on reset. Otherwise it will run the program in flash.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
+  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
+  > 
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
+Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
+Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -109,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-K04-008 sha:a007b94b src:kartky/k04-boot.md:17 klas:F -->
+<!-- fc id:T-K04-008 sha:a007b94b src:kartky/k04-boot.md:17 klas:B -->
 ### T-K04-008 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -118,11 +154,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Дослівно з джерела:**
+  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
+  > held low on reset. Otherwise it will run the program in flash.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
+  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
+  > 
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
+Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
+Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-K04-009 sha:055ab3de src:kartky/k04-boot.md:21 klas:F -->
+<!-- fc id:T-K04-009 sha:055ab3de src:kartky/k04-boot.md:21 klas:B -->
 ### T-K04-009 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -131,7 +185,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Дослівно з джерела:**
+  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
+  > held low on reset. Otherwise it will run the program in flash.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
+  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
+  > 
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
+Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
+Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -148,7 +220,7 @@
 
 ---
 
-<!-- fc id:T-K04-011 sha:f44d03d0 src:kartky/k04-boot.md:26 klas:F -->
+<!-- fc id:T-K04-011 sha:f44d03d0 src:kartky/k04-boot.md:26 klas:B -->
 ### T-K04-011 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -157,7 +229,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Дослівно з джерела:**
+  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
+  > held low on reset. Otherwise it will run the program in flash.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
+  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
+  > 
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
+Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
+Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -213,7 +303,7 @@
 
 ---
 
-<!-- fc id:T-K04-016 sha:689b217f src:kartky/k04-boot.md:40 klas:F -->
+<!-- fc id:T-K04-016 sha:689b217f src:kartky/k04-boot.md:40 klas:B -->
 ### T-K04-016 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -222,7 +312,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Дослівно з джерела:**
+  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
+  > held low on reset. Otherwise it will run the program in flash.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
+  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
+  > 
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
+Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
+Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -252,7 +360,7 @@
 
 ---
 
-<!-- fc id:T-K04-019 sha:af13e196 src:kartky/k04-boot.md:50 klas:F -->
+<!-- fc id:T-K04-019 sha:af13e196 src:kartky/k04-boot.md:50 klas:B -->
 ### T-K04-019 · proza · рядок 50
 
 **Книга каже, дослівно:**
@@ -261,7 +369,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Дослівно з джерела:**
+  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
+  > held low on reset. Otherwise it will run the program in flash.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
+  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
+  > 
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
+Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
+Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 

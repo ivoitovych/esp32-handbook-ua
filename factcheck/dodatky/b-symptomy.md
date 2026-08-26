@@ -359,7 +359,7 @@
 
 ---
 
-<!-- fc id:T-B-015 sha:df070e08 src:dodatky/b-symptomy.md:22 klas:F -->
+<!-- fc id:T-B-015 sha:df070e08 src:dodatky/b-symptomy.md:22 klas:A -->
 ### T-B-015 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -368,11 +368,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-016 sha:640a6b84 src:dodatky/b-symptomy.md:22 klas:F -->
+<!-- fc id:T-B-016 sha:640a6b84 src:dodatky/b-symptomy.md:22 klas:A -->
 ### T-B-016 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -381,11 +398,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-017 sha:4d4031cd src:dodatky/b-symptomy.md:22 klas:F -->
+<!-- fc id:T-B-017 sha:4d4031cd src:dodatky/b-symptomy.md:22 klas:A -->
 ### T-B-017 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -394,11 +428,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-018 sha:41ee20e3 src:dodatky/b-symptomy.md:23 klas:F -->
+<!-- fc id:T-B-018 sha:41ee20e3 src:dodatky/b-symptomy.md:23 klas:A -->
 ### T-B-018 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -407,11 +458,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-019 sha:4d83c909 src:dodatky/b-symptomy.md:23 klas:F -->
+<!-- fc id:T-B-019 sha:4d83c909 src:dodatky/b-symptomy.md:23 klas:A -->
 ### T-B-019 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -420,11 +488,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-020 sha:21296bed src:dodatky/b-symptomy.md:23 klas:F -->
+<!-- fc id:T-B-020 sha:21296bed src:dodatky/b-symptomy.md:23 klas:A -->
 ### T-B-020 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -433,11 +518,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-021 sha:950686c2 src:dodatky/b-symptomy.md:24 klas:F -->
+<!-- fc id:T-B-021 sha:950686c2 src:dodatky/b-symptomy.md:24 klas:A -->
 ### T-B-021 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -446,11 +548,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-022 sha:f2c78481 src:dodatky/b-symptomy.md:24 klas:F -->
+<!-- fc id:T-B-022 sha:f2c78481 src:dodatky/b-symptomy.md:24 klas:A -->
 ### T-B-022 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -459,11 +578,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-023 sha:004c9f40 src:dodatky/b-symptomy.md:24 klas:F -->
+<!-- fc id:T-B-023 sha:004c9f40 src:dodatky/b-symptomy.md:24 klas:A -->
 ### T-B-023 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -472,11 +608,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-024 sha:a97754cc src:dodatky/b-symptomy.md:25 klas:F -->
+<!-- fc id:T-B-024 sha:a97754cc src:dodatky/b-symptomy.md:25 klas:A -->
 ### T-B-024 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -485,11 +638,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-025 sha:00a459db src:dodatky/b-symptomy.md:25 klas:F -->
+<!-- fc id:T-B-025 sha:00a459db src:dodatky/b-symptomy.md:25 klas:A -->
 ### T-B-025 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -498,11 +668,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-026 sha:270f3bea src:dodatky/b-symptomy.md:25 klas:F -->
+<!-- fc id:T-B-026 sha:270f3bea src:dodatky/b-symptomy.md:25 klas:A -->
 ### T-B-026 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -511,11 +698,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-027 sha:f876739b src:dodatky/b-symptomy.md:26 klas:F -->
+<!-- fc id:T-B-027 sha:f876739b src:dodatky/b-symptomy.md:26 klas:A -->
 ### T-B-027 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -524,11 +728,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-028 sha:cac50c5b src:dodatky/b-symptomy.md:26 klas:F -->
+<!-- fc id:T-B-028 sha:cac50c5b src:dodatky/b-symptomy.md:26 klas:A -->
 ### T-B-028 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -537,11 +758,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-029 sha:2f75783b src:dodatky/b-symptomy.md:26 klas:F -->
+<!-- fc id:T-B-029 sha:2f75783b src:dodatky/b-symptomy.md:26 klas:A -->
 ### T-B-029 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -550,7 +788,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -668,7 +923,7 @@
 
 ---
 
-<!-- fc id:T-B-033 sha:ea00ff27 src:dodatky/b-symptomy.md:28 klas:F -->
+<!-- fc id:T-B-033 sha:ea00ff27 src:dodatky/b-symptomy.md:28 klas:A -->
 ### T-B-033 · komirka · рядок 28
 
 **Книга каже, дослівно:**
@@ -677,11 +932,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-034 sha:79f50ca7 src:dodatky/b-symptomy.md:28 klas:F -->
+<!-- fc id:T-B-034 sha:79f50ca7 src:dodatky/b-symptomy.md:28 klas:A -->
 ### T-B-034 · komirka · рядок 28
 
 **Книга каже, дослівно:**
@@ -690,11 +962,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-B-035 sha:d5a5991c src:dodatky/b-symptomy.md:28 klas:F -->
+<!-- fc id:T-B-035 sha:d5a5991c src:dodatky/b-symptomy.md:28 klas:A -->
 ### T-B-035 · komirka · рядок 28
 
 **Книга каже, дослівно:**
@@ -703,7 +992,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/troubleshooting.rst
+- **Дослівно з джерела:**
+  > A fatal error occurred: Failed to connect to {chip}: {reason}
+  > A fatal error occurred: Invalid head of packet (0x…)
+  > 
+  > (troubleshooting.rst)
+  > The most common reason for "Failed to connect" is that the chip is not
+  > in the download mode… Another cause is a running application writing
+  > to the same UART.
+  > 
+  > (системні, не від esptool)
+  > Permission denied: '/dev/ttyUSB0'      — права, група dialout
+  > Device or resource busy: '/dev/ttyUSB0' — порт зайнятий іншою програмою
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність: та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина, дія, розділ), у розділах 09, 17 і 25.
+Два з чотирьох рядків — не від `esptool`, а від операційної системи, і книга це каже правильно: `Permission denied` лікується групою `dialout` із перезаходом, `Device or resource busy` — закритим монітором. Обидва тексти дає сам Python при відкритті порту.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -2559,7 +2865,7 @@
 
 ---
 
-<!-- fc id:T-B-154 sha:f3db0ec1 src:dodatky/b-symptomy.md:87 klas:F -->
+<!-- fc id:T-B-154 sha:f3db0ec1 src:dodatky/b-symptomy.md:87 klas:A -->
 ### T-B-154 · komirka · рядок 87
 
 **Книга каже, дослівно:**
@@ -2568,11 +2874,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > (spi_pins.h — піни, якими чип говорить із флешем)
+  > MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+  > MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+  > MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+  > 
+  > (adc_channel.h — ADC1)
+  > ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+  > ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+  > 
+  > (gpio.rst)
+  > GPIO34-39 … can only be set as input mode and do not have software
+  > pullup or pulldown functions.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+- **Нотатка:** Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
+«6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із книгою точний.
+«34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом із другою половиною, на якій наполягає книга: **немає програмного** підтягування, тобто кнопка без зовнішнього резистора не працює.
+«ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h` дають рівно цей діапазон, без пропусків.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-B-155 sha:04299502 src:dodatky/b-symptomy.md:87 klas:F -->
+<!-- fc id:T-B-155 sha:04299502 src:dodatky/b-symptomy.md:87 klas:A -->
 ### T-B-155 · komirka · рядок 87
 
 **Книга каже, дослівно:**
@@ -2581,11 +2907,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > (spi_pins.h — піни, якими чип говорить із флешем)
+  > MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+  > MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+  > MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+  > 
+  > (adc_channel.h — ADC1)
+  > ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+  > ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+  > 
+  > (gpio.rst)
+  > GPIO34-39 … can only be set as input mode and do not have software
+  > pullup or pulldown functions.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+- **Нотатка:** Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
+«6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із книгою точний.
+«34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом із другою половиною, на якій наполягає книга: **немає програмного** підтягування, тобто кнопка без зовнішнього резистора не працює.
+«ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h` дають рівно цей діапазон, без пропусків.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-B-156 sha:d4620841 src:dodatky/b-symptomy.md:87 klas:F -->
+<!-- fc id:T-B-156 sha:d4620841 src:dodatky/b-symptomy.md:87 klas:A -->
 ### T-B-156 · komirka · рядок 87
 
 **Книга каже, дослівно:**
@@ -2594,11 +2940,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > (spi_pins.h — піни, якими чип говорить із флешем)
+  > MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+  > MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+  > MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+  > 
+  > (adc_channel.h — ADC1)
+  > ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+  > ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+  > 
+  > (gpio.rst)
+  > GPIO34-39 … can only be set as input mode and do not have software
+  > pullup or pulldown functions.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+- **Нотатка:** Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
+«6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із книгою точний.
+«34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом із другою половиною, на якій наполягає книга: **немає програмного** підтягування, тобто кнопка без зовнішнього резистора не працює.
+«ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h` дають рівно цей діапазон, без пропусків.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-B-157 sha:971f6ca7 src:dodatky/b-symptomy.md:88 klas:F -->
+<!-- fc id:T-B-157 sha:971f6ca7 src:dodatky/b-symptomy.md:88 klas:A -->
 ### T-B-157 · komirka · рядок 88
 
 **Книга каже, дослівно:**
@@ -2607,11 +2973,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > (spi_pins.h — піни, якими чип говорить із флешем)
+  > MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+  > MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+  > MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+  > 
+  > (adc_channel.h — ADC1)
+  > ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+  > ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+  > 
+  > (gpio.rst)
+  > GPIO34-39 … can only be set as input mode and do not have software
+  > pullup or pulldown functions.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+- **Нотатка:** Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
+«6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із книгою точний.
+«34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом із другою половиною, на якій наполягає книга: **немає програмного** підтягування, тобто кнопка без зовнішнього резистора не працює.
+«ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h` дають рівно цей діапазон, без пропусків.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-B-158 sha:61500638 src:dodatky/b-symptomy.md:88 klas:F -->
+<!-- fc id:T-B-158 sha:61500638 src:dodatky/b-symptomy.md:88 klas:A -->
 ### T-B-158 · komirka · рядок 88
 
 **Книга каже, дослівно:**
@@ -2620,11 +3006,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > (spi_pins.h — піни, якими чип говорить із флешем)
+  > MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+  > MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+  > MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+  > 
+  > (adc_channel.h — ADC1)
+  > ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+  > ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+  > 
+  > (gpio.rst)
+  > GPIO34-39 … can only be set as input mode and do not have software
+  > pullup or pulldown functions.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+- **Нотатка:** Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
+«6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із книгою точний.
+«34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом із другою половиною, на якій наполягає книга: **немає програмного** підтягування, тобто кнопка без зовнішнього резистора не працює.
+«ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h` дають рівно цей діапазон, без пропусків.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-B-159 sha:c492b81b src:dodatky/b-symptomy.md:88 klas:F -->
+<!-- fc id:T-B-159 sha:c492b81b src:dodatky/b-symptomy.md:88 klas:A -->
 ### T-B-159 · komirka · рядок 88
 
 **Книга каже, дослівно:**
@@ -2633,7 +3039,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > (spi_pins.h — піни, якими чип говорить із флешем)
+  > MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+  > MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+  > MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+  > 
+  > (adc_channel.h — ADC1)
+  > ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+  > ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+  > 
+  > (gpio.rst)
+  > GPIO34-39 … can only be set as input mode and do not have software
+  > pullup or pulldown functions.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+- **Нотатка:** Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
+«6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із книгою точний.
+«34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом із другою половиною, на якій наполягає книга: **немає програмного** підтягування, тобто кнопка без зовнішнього резистора не працює.
+«ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h` дають рівно цей діапазон, без пропусків.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 

@@ -1087,7 +1087,7 @@
 
 ---
 
-<!-- fc id:T-05-075 sha:370be364 src:manual/05-elektronika.md:159 klas:F -->
+<!-- fc id:T-05-075 sha:370be364 src:manual/05-elektronika.md:159 klas:A -->
 ### T-05-075 · proza · рядок 159
 
 **Книга каже, дослівно:**
@@ -1096,7 +1096,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > (spi_pins.h — піни, якими чип говорить із флешем)
+  > MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+  > MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+  > MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+  > 
+  > (adc_channel.h — ADC1)
+  > ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+  > ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+  > 
+  > (gpio.rst)
+  > GPIO34-39 … can only be set as input mode and do not have software
+  > pullup or pulldown functions.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+- **Нотатка:** Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
+«6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із книгою точний.
+«34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом із другою половиною, на якій наполягає книга: **немає програмного** підтягування, тобто кнопка без зовнішнього резистора не працює.
+«ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h` дають рівно цей діапазон, без пропусків.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 

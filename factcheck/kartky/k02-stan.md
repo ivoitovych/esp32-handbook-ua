@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-K02-002 sha:1b52dab8 src:kartky/k02-stan.md:3 klas:F -->
+<!-- fc id:T-K02-002 sha:1b52dab8 src:kartky/k02-stan.md:3 klas:A -->
 ### T-K02-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -28,7 +28,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > Erase Flash: ``erase-flash`` & ``erase-region``
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  > 
+  >     esptool erase-flash
+  > 
+  > To erase a region of the flash, starting at address 0x20000 with
+  > length 16 kB (0x4000 bytes):
+  > 
+  >     esptool erase-region 0x20000 0x4000
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** «Весь чип, усе замінюється на `0xFF`» — цього досить, щоб твердження книги випливало однозначно: NVS, `phy_init` і таблиця розділів лежать у тому самому флеші, отже зникають разом з усім.
+Звідси ж і симптом розділу 16 «за адресою `0x8000` порожньо після `erase-flash` без наступної повної прошивки»: `0xFF` — це і є порожньо, і бутлоадер не знаходить таблиці.
+Розширення досяжності на картки К2, К8, К11, К15 і розділ 20, де те саме твердження живе в різних формах.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 

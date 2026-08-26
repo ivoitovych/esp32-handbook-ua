@@ -2959,7 +2959,7 @@
 
 ---
 
-<!-- fc id:T-D-134 sha:7c359228 src:dodatky/d-panik.md:171 klas:F -->
+<!-- fc id:T-D-134 sha:7c359228 src:dodatky/d-panik.md:171 klas:A -->
 ### T-D-134 · komirka · рядок 171
 
 **Книга каже, дослівно:**
@@ -2968,11 +2968,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
+- **Дослівно з джерела:**
+  > (panic.c / fatal-errors.rst)
+  > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was
+  > unhandled.
+  > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 …
+  > 
+  > (fatal-errors.rst, Interrupt Watchdog)
+  > Interrupt wdt timeout on CPU0
+  > 
+  > (task_wdt.c)
+  > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
+  > did not reset the watchdog in time:
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
+Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
-<!-- fc id:T-D-135 sha:4c606b3e src:dodatky/d-panik.md:171 klas:F -->
+<!-- fc id:T-D-135 sha:4c606b3e src:dodatky/d-panik.md:171 klas:A -->
 ### T-D-135 · komirka · рядок 171
 
 **Книга каже, дослівно:**
@@ -2981,7 +2998,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
+- **Дослівно з джерела:**
+  > (panic.c / fatal-errors.rst)
+  > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was
+  > unhandled.
+  > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 …
+  > 
+  > (fatal-errors.rst, Interrupt Watchdog)
+  > Interrupt wdt timeout on CPU0
+  > 
+  > (task_wdt.c)
+  > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
+  > did not reset the watchdog in time:
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
+Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 

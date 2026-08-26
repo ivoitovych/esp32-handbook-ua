@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-K10-003 sha:6ac69acd src:kartky/k10-komandy.md:3 klas:F -->
+<!-- fc id:T-K10-003 sha:6ac69acd src:kartky/k10-komandy.md:3 klas:A -->
 ### T-K10-003 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -61,7 +61,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+- **Дослівно з джерела:**
+  > (перехід на v5)
+  > The `esptool.py` name is kept as an alias; the recommended entry point
+  > is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
+  > `erase-flash`, `merge-bin`. The underscore forms are deprecated and
+  > print a warning.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
+- **Нотатка:** Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції — у проході 6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу й таблиці: «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці «виклик · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -710,7 +720,7 @@
 
 ---
 
-<!-- fc id:T-K10-027 sha:f5cb6136 src:kartky/k10-komandy.md:36 klas:F -->
+<!-- fc id:T-K10-027 sha:f5cb6136 src:kartky/k10-komandy.md:36 klas:A -->
 ### T-K10-027 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -719,11 +729,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-K10-028 sha:c64c8733 src:kartky/k10-komandy.md:41 klas:F -->
+<!-- fc id:T-K10-028 sha:c64c8733 src:kartky/k10-komandy.md:41 klas:A -->
 ### T-K10-028 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -732,7 +756,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
+- **Дослівно з джерела:**
+  > * - Ctrl + ]
+  >   - Exit the program
+  > * - Ctrl + T
+  >   - Menu escape key
+  >   - Press and follow it by one of the keys given below.
+  > * - * Ctrl + R
+  >   - Reset target board via RTS
+  >   - Reset the target board and re-starts the application via the RTS
+  >     line (if connected).
+  > * - * Ctrl + P
+  >   - Reset target into bootloader to pause app via RTS and DTR lines
+  > 
+  > If an ESP-IDF app crashes and panics, a register dump and backtrace
+  > are produced… IDF Monitor … looks up each address in the ELF file.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено дослівно, розбіжностей немає — включно з тонкістю, яку легко записати неправильно: `Ctrl+R` не самостійна комбінація, а **друга** клавіша після `Ctrl+T`. Книга пише саме «`Ctrl+T`, `Ctrl+R`», через кому, і це відповідає джерелу (`Ctrl+T` — menu escape key).
+Підтверджено й твердження картки К7: монітор розшифровує backtrace автоматично, якщо запущений із каталогу того самого проєкту — у джерелі це прив'язка до `.elf` того збирання.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -1031,7 +1075,7 @@
 
 ---
 
-<!-- fc id:T-K10-051 sha:ceaada41 src:kartky/k10-komandy.md:67 klas:F -->
+<!-- fc id:T-K10-051 sha:ceaada41 src:kartky/k10-komandy.md:67 klas:A -->
 ### T-K10-051 · komirka · рядок 67
 
 **Книга каже, дослівно:**
@@ -1040,11 +1084,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-K10-052 sha:9feefdcc src:kartky/k10-komandy.md:67 klas:F -->
+<!-- fc id:T-K10-052 sha:9feefdcc src:kartky/k10-komandy.md:67 klas:A -->
 ### T-K10-052 · komirka · рядок 67
 
 **Книга каже, дослівно:**
@@ -1053,11 +1111,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-K10-053 sha:c94bfb00 src:kartky/k10-komandy.md:67 klas:F -->
+<!-- fc id:T-K10-053 sha:c94bfb00 src:kartky/k10-komandy.md:67 klas:A -->
 ### T-K10-053 · komirka · рядок 67
 
 **Книга каже, дослівно:**
@@ -1066,6 +1138,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---

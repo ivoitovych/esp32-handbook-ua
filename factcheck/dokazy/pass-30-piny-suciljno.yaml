@@ -1,0 +1,178 @@
+# Прохід 30 — кошик `piny` за поділом, суцільно.
+#
+# 107 одиниць, у кожній є номер GPIO. Закриваються трьома шарами, і
+# шари ці різні за силою — тому й записів тут кілька, а не один.
+#
+#   1. **Існування піна** в названому сімействі — клас B, механічно:
+#      `tools/piny.py` звіряє кожне число з масками `soc_caps.h` при
+#      кожному `make check`.
+#   2. **Функція піна** (strapping, флеш, тільки-вхідний, ADC1/ADC2,
+#      DAC, JTAG) — клас A, з проходів 12, 20, 24, 25 і 26.
+#   3. **Порядок дій** із пінами (послідовність BOOT+EN, обв'язка) —
+#      клас B: випливає з механізму, дослівно ніде не сформульований.
+#
+# Розділяти їх важливо. «GPIO34 існує в classic» і «GPIO34 не має
+# підтягування» — різні твердження з різних джерел, і доказ на перше
+# нічого не каже про друге. Саме змішування цих двох рівнів зовнішня
+# рецензія назвала системним дефектом реєстру.
+
+- nazva: Номери GPIO книги дійсні для сімейств, яким приписані
+  zbih: 'GPIO 6–11|GPIO 32–39|GPIO 34–39|`GPIO0`–`GPIO4`|GPIO 6, 7, 8, 9, 10, 11|`GPIO34`|`GPIO4`'
+  klas: B
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+    (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+  cytata: |
+    esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+    esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+    esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+    esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+
+    tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+    сімейств, які текст поруч називає; область дії береться з `#if
+    CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+    BOM проєкту.
+  sposib: python3 tools/piny.py (у складі `make check`), 2026-08-26
+  notatka: >-
+    Клас `B`, а не `A`, і межа тут проведена свідомо: маски —
+    першоджерело, отримане дослівно, але **твердження книги** з них лише
+    випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже
+    нічого про те, що книга про цей пін стверджує.
+
+    Що робить цей запис вартим існування: він **постійний**. Перевірка
+    входить у `make check`, тож нове число, вписане в книгу завтра,
+    звіряється негайно, а не чекає наступного проходу. Прохід 17 показав,
+    чого коштує зворотне: дві помилки рівня «не збереться» прожили в
+    проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+
+- nazva: Функції strapping-пінів classic — таблиця розділу 07 поштучно
+  zbih: '`GPIO0` · Що задає|`GPIO0` · Наслідок помилки|`GPIO12` · Наслідок помилки|`GPIO2` · Що задає|`GPIO2` · Наслідок помилки|`GPIO15` · Наслідок помилки|`GPIO5` · Що задає|`GPIO12` · Що задає|`GPIO15` · Що задає'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: |
+    | GPIO0 Input | Mode |
+    | Low/GND     | ROM serial bootloader for esptool |
+    | High/VCC    | Normal execution mode |
+
+    GPIO2 must also be either left unconnected/floating, or driven Low,
+    in order to enter the serial bootloader.
+
+    | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+      default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+      used … causing the flash to brownout. |
+    | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+      bootloader. |
+
+    (маска GPIO_STRAP, esp32)
+    0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+    0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+  sposib: curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+  notatka: >-
+    Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій
+    таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку
+    ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три
+    твердження, і доказ на одне не звіряє інших.
+
+    `GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої
+    джерело esptool дає лише присутність у масці, без опису функції.
+    Опис лишається в наряді за datasheet; сама присутність звірена.
+
+- nazva: Піни флешу, тільки-вхідні й ADC1 при Wi-Fi
+  zbih: 'GPIO 6–11 не працюють ·|GPIO 6–11 нічого не роблять|Не чіпати GPIO 6, 7, 8, 9, 10, 11|Піни флешу\*\* \[\[classic\]\] GPIO 6–11 зайняті фізично|Тільки-вхідні піни\*\* \[\[classic\]\] GPIO 34–39|Кнопка на GPIO34|ADC1 у classic — це саме GPIO 32–39|Лише \*\*ADC1\*\* \(GPIO 32–39\)'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h,
+    .../components/soc/esp32/include/soc/adc_channel.h,
+    .../components/soc/esp32/include/soc/soc_caps.h,
+    .../docs/en/api-reference/peripherals/gpio.rst
+  cytata: |
+    (spi_pins.h — піни, якими чип говорить із флешем)
+    MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7
+    MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9
+    MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11
+
+    (adc_channel.h — ADC1)
+    ADC1_GPIO36_CHANNEL 0 … ADC1_GPIO32_CHANNEL 4, ADC1_GPIO33_CHANNEL 5,
+    ADC1_GPIO34_CHANNEL 6, ADC1_GPIO35_CHANNEL 7
+
+    (gpio.rst)
+    GPIO34-39 … can only be set as input mode and do not have software
+    pullup or pulldown functions.
+  sposib: curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+  notatka: >-
+    Три найважливіші пінові правила classic, звірені кожне зі свого
+    джерела, а не з переказу.
+
+    «6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`:
+    саме цими шістьма чип розмовляє з мікросхемою флешу, і збіг із
+    книгою точний.
+
+    «34–39 тільки вхід і без підтягування» — дослівно з `gpio.rst`, разом
+    із другою половиною, на якій наполягає книга: **немає програмного**
+    підтягування, тобто кнопка без зовнішнього резистора не працює.
+
+    «ADC1 у classic — це саме GPIO 32–39» — вісім каналів `adc_channel.h`
+    дають рівно цей діапазон, без пропусків.
+
+- nazva: Вхід у download mode вручну — порядок і його причина
+  zbih: 'Вирішує `GPIO0`:|`GPIO0` вільний \(підтягнутий вгору\)|Кнопка `BOOT` \(іноді `IO0`, `FLASH`\)|стан `GPIO0` читається один раз|схема, що смикає `GPIO0` і `EN`|перемичкою або пінцетом замкнути `GPIO0`|Кнопка `BOOT` на платах C3 діє саме на `GPIO9`'
+  klas: B
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+    (Select Bootloader Mode, Automatic Bootloader)
+  cytata: |
+    The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
+    held low on reset. Otherwise it will run the program in flash.
+
+    {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+    unconnected then it will pull high.
+
+    Many boards use a button marked "Flash" (or "BOOT" on some Espressif
+    development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
+
+    esptool can automatically reset the board into bootloader mode … using
+    the DTR and RTS lines.
+  sposib: curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+  notatka: >-
+    Клас `B`. Джерело дає механізм повністю — рівень при скиданні,
+    внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`.
+    Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього
+    випливає однозначно, але дослівно так ніде не написаний.
+
+    Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у
+    проході 20: твердження безсумнівне, але не процитоване. Картка К4 —
+    інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
+
+    Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний
+    strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
+
+- nazva: I²C і strapping на C3 — підтяжки збігаються з потрібними рівнями
+  zbih: 'зовнішні підтягувальні резистори I²C тягнуть обидві лінії вгору|ведений, що притискає `SDA` до землі|Комбінація `GPIO8`=0 і `GPIO9`=0 недійсна|аналоговий вхід — це `GPIO0`–`GPIO4`'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+    та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
+  cytata: |
+    {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+    serial bootloader reliably. The strapping combination of
+    {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and will
+    trigger unexpected behavior.
+    (для esp32c3: STRAP_BOOT_2_GPIO = GPIO8, STRAP_BOOT_GPIO = GPIO9)
+
+    (esp32c3/adc_channel.h)
+    ADC1_GPIO0_CHANNEL 0   ADC1_GPIO1_CHANNEL 1   ADC1_GPIO2_CHANNEL 2
+    ADC1_GPIO3_CHANNEL 3   ADC1_GPIO4_CHANNEL 4
+  sposib: curl raw.githubusercontent (повторно, проходи 25 і 26), 2026-08-26
+  notatka: >-
+    Додаток A робить із двох звірених фактів висновок, і висновок
+    правильний у неочевидний бік: типова обв'язка I²C на C3 завантаженню
+    **не заважає**. Підтяжки тягнуть обидві лінії вгору, а потрібно саме
+    `GPIO8` високий; `GPIO9` високий означає звичайний старт.
+
+    Друга половина — застереження, і воно точне: ведений, що притискає
+    `SDA` до землі в момент скидання, дає `GPIO8` = 0. Разом із `GPIO9` =
+    0 (натиснута кнопка `BOOT`) це та сама недійсна комбінація.
+
+    «На C3 аналоговий вхід — це `GPIO0`–`GPIO4`, і більше нічого» —
+    п'ять каналів `adc_channel.h`, рівно цей діапазон.

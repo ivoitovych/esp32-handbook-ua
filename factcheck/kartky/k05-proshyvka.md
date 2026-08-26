@@ -404,7 +404,7 @@
 
 ---
 
-<!-- fc id:T-K05-027 sha:18bb88d3 src:kartky/k05-proshyvka.md:39 klas:F -->
+<!-- fc id:T-K05-027 sha:18bb88d3 src:kartky/k05-proshyvka.md:39 klas:A -->
 ### T-K05-027 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -413,7 +413,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -599,7 +613,7 @@
 
 ---
 
-<!-- fc id:T-K05-034 sha:9b34572c src:kartky/k05-proshyvka.md:55 klas:F -->
+<!-- fc id:T-K05-034 sha:9b34572c src:kartky/k05-proshyvka.md:55 klas:A -->
 ### T-K05-034 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -608,7 +622,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+- **Дослівно з джерела:**
+  > (перехід на v5)
+  > The `esptool.py` name is kept as an alias; the recommended entry point
+  > is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
+  > `erase-flash`, `merge-bin`. The underscore forms are deprecated and
+  > print a warning.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
+- **Нотатка:** Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції — у проході 6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу й таблиці: «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці «виклик · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 

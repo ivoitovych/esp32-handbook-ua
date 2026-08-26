@@ -1538,7 +1538,7 @@
 
 ---
 
-<!-- fc id:T-16-075 sha:4878c76b src:manual/16-boot.md:187 klas:F -->
+<!-- fc id:T-16-075 sha:4878c76b src:manual/16-boot.md:187 klas:A -->
 ### T-16-075 · proza · рядок 187
 
 **Книга каже, дослівно:**
@@ -1547,7 +1547,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > Erase Flash: ``erase-flash`` & ``erase-region``
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  > 
+  >     esptool erase-flash
+  > 
+  > To erase a region of the flash, starting at address 0x20000 with
+  > length 16 kB (0x4000 bytes):
+  > 
+  >     esptool erase-region 0x20000 0x4000
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** «Весь чип, усе замінюється на `0xFF`» — цього досить, щоб твердження книги випливало однозначно: NVS, `phy_init` і таблиця розділів лежать у тому самому флеші, отже зникають разом з усім.
+Звідси ж і симптом розділу 16 «за адресою `0x8000` порожньо після `erase-flash` без наступної повної прошивки»: `0xFF` — це і є порожньо, і бутлоадер не знаходить таблиці.
+Розширення досяжності на картки К2, К8, К11, К15 і розділ 20, де те саме твердження живе в різних формах.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -1603,7 +1620,7 @@
 
 ---
 
-<!-- fc id:T-16-080 sha:68faec6e src:manual/16-boot.md:196 klas:F -->
+<!-- fc id:T-16-080 sha:68faec6e src:manual/16-boot.md:196 klas:A -->
 ### T-16-080 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1612,7 +1629,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst, .../advanced-topics/boot-mode-selection.rst (Automatic Bootloader)
+- **Дослівно з джерела:**
+  > (basic-options.rst)
+  > esptool has a two-stage flashing process: a small "stub" program is
+  > uploaded to RAM and run, which then performs the requested operation
+  > much faster than the ROM bootloader. ``--no-stub`` disables this.
+  > 
+  > (boot-mode-selection.rst, Automatic Bootloader)
+  > esptool can automatically reset the board into bootloader mode … using
+  > the DTR and RTS lines of the serial connection.
+  > 
+  > (__init__.py)
+  > This chip is {detected}, not {requested}. Wrong --chip argument?
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Чотири твердження розділу 17, які досі не мали доказу, бо стояли не в блоках коду, а в поясненнях: механізм stub, автоскидання через `DTR`/`RTS`, повідомлення про розбіжність чипа і причина «застосунок пише в UART».
+Останнє варте уваги: воно пояснює `Invalid head of packet` із сусіднього запису — плата не мовчить, а говорить своє, і `esptool` бачить чуже в потоці. Дві половини одного симптому тепер обидві звірені.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -1681,7 +1715,7 @@
 
 ---
 
-<!-- fc id:T-16-086 sha:b34d888e src:manual/16-boot.md:215 klas:F -->
+<!-- fc id:T-16-086 sha:b34d888e src:manual/16-boot.md:215 klas:A -->
 ### T-16-086 · proza · рядок 215
 
 **Книга каже, дослівно:**
@@ -1690,7 +1724,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/log.html.rst та components/log/include/esp_log.h
+- **Дослівно з джерела:**
+  > The log output format is:
+  >     I (12345) tag: message
+  > where 12345 is the timestamp in milliseconds since boot (or since the
+  > system time was set), I is the log level letter, and tag is the
+  > component tag.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження розділу 16 звірено. Практичний висновок книги — «воно безкоштовно показує, де саме прошивка стоїть довго» — з формату випливає прямо: різниця між двома сусідніми рядками і є час між ними.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 

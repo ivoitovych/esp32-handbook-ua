@@ -162,7 +162,7 @@
 
 ---
 
-<!-- fc id:T-20-013 sha:af871939 src:manual/20-bekap.md:28 klas:F -->
+<!-- fc id:T-20-013 sha:af871939 src:manual/20-bekap.md:28 klas:B -->
 ### T-20-013 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -171,7 +171,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst та .../esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > esptool is a Python-based, open-source, platform-independent utility to
+  > communicate with the ROM bootloader in Espressif chips.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
+Решта («перші дві команди для незнайомої плати», «дамп до першої зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок дій**, який випливає з властивостей команд однозначно, але в жодному документі так не сформульований. Це рекомендація книги, побудована на звірених фактах, і чесний клас для неї — `B`.
+Записую це окремо, бо спокуса поставити `A` тут така сама, як була з JTAG-пінами в проході 20: твердження здається загальновідомим і безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -214,7 +223,7 @@
 
 ---
 
-<!-- fc id:T-20-017 sha:79cf7316 src:manual/20-bekap.md:41 klas:F -->
+<!-- fc id:T-20-017 sha:79cf7316 src:manual/20-bekap.md:41 klas:A -->
 ### T-20-017 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -223,7 +232,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+- **Дослівно з джерела:**
+  > ``espefuse`` is a tool for communicating with Espressif chips for the
+  > purpose of reading/writing ("burning") the one-time-programmable
+  > eFuses. Burning occurs only in one direction from 0 to 1 (never
+  > cleared 1->0).
+  > 
+  > .. warning::
+  >     Because eFuse is one-time-programmable, it is possible to
+  >     permanently damage or "brick" your {IDF_TARGET_NAME} using this
+  >     tool. Use it with great care.
+  > 
+  > - ``--do-not-confirm`` - Do not pause for confirmation before
+  >   permanently writing eFuses. Use with caution. If this option is not
+  >   used, a manual confirmation step is required, you need to enter the
+  >   word ``BURN`` to continue burning.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто «не скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
+Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить без питання, — а саме чужі скрипти в цій книзі розбираються окремо.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -884,7 +913,7 @@
 
 ---
 
-<!-- fc id:T-20-059 sha:0c814949 src:manual/20-bekap.md:124 klas:F -->
+<!-- fc id:T-20-059 sha:0c814949 src:manual/20-bekap.md:124 klas:A -->
 ### T-20-059 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -893,7 +922,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
+- **Дослівно з джерела:**
+  > (panic.c / fatal-errors.rst)
+  > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was
+  > unhandled.
+  > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 …
+  > 
+  > (fatal-errors.rst, Interrupt Watchdog)
+  > Interrupt wdt timeout on CPU0
+  > 
+  > (task_wdt.c)
+  > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
+  > did not reset the watchdog in time:
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
+Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -1027,7 +1073,7 @@
 
 ---
 
-<!-- fc id:T-20-070 sha:6d357cb6 src:manual/20-bekap.md:149 klas:F -->
+<!-- fc id:T-20-070 sha:6d357cb6 src:manual/20-bekap.md:149 klas:A -->
 ### T-20-070 · proza · рядок 149
 
 **Книга каже, дослівно:**
@@ -1036,7 +1082,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > Erase Flash: ``erase-flash`` & ``erase-region``
+  > 
+  > To erase the entire flash chip (all data replaced with 0xFF bytes):
+  > 
+  >     esptool erase-flash
+  > 
+  > To erase a region of the flash, starting at address 0x20000 with
+  > length 16 kB (0x4000 bytes):
+  > 
+  >     esptool erase-region 0x20000 0x4000
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** «Весь чип, усе замінюється на `0xFF`» — цього досить, щоб твердження книги випливало однозначно: NVS, `phy_init` і таблиця розділів лежать у тому самому флеші, отже зникають разом з усім.
+Звідси ж і симптом розділу 16 «за адресою `0x8000` порожньо після `erase-flash` без наступної повної прошивки»: `0xFF` — це і є порожньо, і бутлоадер не знаходить таблиці.
+Розширення досяжності на картки К2, К8, К11, К15 і розділ 20, де те саме твердження живе в різних формах.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -1353,7 +1416,7 @@
 
 ---
 
-<!-- fc id:T-20-087 sha:1002cbd5 src:manual/20-bekap.md:180 klas:F -->
+<!-- fc id:T-20-087 sha:1002cbd5 src:manual/20-bekap.md:180 klas:B -->
 ### T-20-087 · proza · рядок 180
 
 **Книга каже, дослівно:**
@@ -1362,7 +1425,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst та .../esptool/basic-commands.rst
+- **Дослівно з джерела:**
+  > esptool is a Python-based, open-source, platform-independent utility to
+  > communicate with the ROM bootloader in Espressif chips.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
+Решта («перші дві команди для незнайомої плати», «дамп до першої зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок дій**, який випливає з властивостей команд однозначно, але в жодному документі так не сформульований. Це рекомендація книги, побудована на звірених фактах, і чесний клас для неї — `B`.
+Записую це окремо, бо спокуса поставити `A` тут така сама, як була з JTAG-пінами в проході 20: твердження здається загальновідомим і безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.
+- **Прохід:** pass-29-log-i-reshta-komand
 
 ---
 
@@ -1379,7 +1451,7 @@
 
 ---
 
-<!-- fc id:T-20-089 sha:7b08890b src:manual/20-bekap.md:185 klas:F -->
+<!-- fc id:T-20-089 sha:7b08890b src:manual/20-bekap.md:185 klas:A -->
 ### T-20-089 · proza · рядок 185
 
 **Книга каже, дослівно:**
@@ -1388,7 +1460,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+- **Дослівно з джерела:**
+  > ``espefuse`` is a tool for communicating with Espressif chips for the
+  > purpose of reading/writing ("burning") the one-time-programmable
+  > eFuses. Burning occurs only in one direction from 0 to 1 (never
+  > cleared 1->0).
+  > 
+  > .. warning::
+  >     Because eFuse is one-time-programmable, it is possible to
+  >     permanently damage or "brick" your {IDF_TARGET_NAME} using this
+  >     tool. Use it with great care.
+  > 
+  > - ``--do-not-confirm`` - Do not pause for confirmation before
+  >   permanently writing eFuses. Use with caution. If this option is not
+  >   used, a manual confirmation step is required, you need to enter the
+  >   word ``BURN`` to continue burning.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто «не скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
+Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить без питання, — а саме чужі скрипти в цій книзі розбираються окремо.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 

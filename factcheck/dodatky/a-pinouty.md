@@ -1354,7 +1354,7 @@
 
 ---
 
-<!-- fc id:T-A-090 sha:9fd74c06 src:dodatky/a-pinouty.md:77 klas:F -->
+<!-- fc id:T-A-090 sha:9fd74c06 src:dodatky/a-pinouty.md:77 klas:A -->
 ### T-A-090 · proza · рядок 77
 
 **Книга каже, дослівно:**
@@ -1363,7 +1363,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
+- **Дослівно з джерела:**
+  > {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  > serial bootloader reliably. The strapping combination of
+  > {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and will
+  > trigger unexpected behavior.
+  > (для esp32c3: STRAP_BOOT_2_GPIO = GPIO8, STRAP_BOOT_GPIO = GPIO9)
+  > 
+  > (esp32c3/adc_channel.h)
+  > ADC1_GPIO0_CHANNEL 0   ADC1_GPIO1_CHANNEL 1   ADC1_GPIO2_CHANNEL 2
+  > ADC1_GPIO3_CHANNEL 3   ADC1_GPIO4_CHANNEL 4
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 25 і 26), 2026-08-26
+- **Нотатка:** Додаток A робить із двох звірених фактів висновок, і висновок правильний у неочевидний бік: типова обв'язка I²C на C3 завантаженню **не заважає**. Підтяжки тягнуть обидві лінії вгору, а потрібно саме `GPIO8` високий; `GPIO9` високий означає звичайний старт.
+Друга половина — застереження, і воно точне: ведений, що притискає `SDA` до землі в момент скидання, дає `GPIO8` = 0. Разом із `GPIO9` = 0 (натиснута кнопка `BOOT`) це та сама недійсна комбінація.
+«На C3 аналоговий вхід — це `GPIO0`–`GPIO4`, і більше нічого» — п'ять каналів `adc_channel.h`, рівно цей діапазон.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -1401,7 +1417,7 @@
 
 ---
 
-<!-- fc id:T-A-093 sha:32636b98 src:dodatky/a-pinouty.md:86 klas:F -->
+<!-- fc id:T-A-093 sha:32636b98 src:dodatky/a-pinouty.md:86 klas:A -->
 ### T-A-093 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -1410,7 +1426,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
+- **Дослівно з джерела:**
+  > {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  > serial bootloader reliably. The strapping combination of
+  > {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and will
+  > trigger unexpected behavior.
+  > (для esp32c3: STRAP_BOOT_2_GPIO = GPIO8, STRAP_BOOT_GPIO = GPIO9)
+  > 
+  > (esp32c3/adc_channel.h)
+  > ADC1_GPIO0_CHANNEL 0   ADC1_GPIO1_CHANNEL 1   ADC1_GPIO2_CHANNEL 2
+  > ADC1_GPIO3_CHANNEL 3   ADC1_GPIO4_CHANNEL 4
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 25 і 26), 2026-08-26
+- **Нотатка:** Додаток A робить із двох звірених фактів висновок, і висновок правильний у неочевидний бік: типова обв'язка I²C на C3 завантаженню **не заважає**. Підтяжки тягнуть обидві лінії вгору, а потрібно саме `GPIO8` високий; `GPIO9` високий означає звичайний старт.
+Друга половина — застереження, і воно точне: ведений, що притискає `SDA` до землі в момент скидання, дає `GPIO8` = 0. Разом із `GPIO9` = 0 (натиснута кнопка `BOOT`) це та сама недійсна комбінація.
+«На C3 аналоговий вхід — це `GPIO0`–`GPIO4`, і більше нічого» — п'ять каналів `adc_channel.h`, рівно цей діапазон.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -1802,7 +1834,7 @@
 
 ---
 
-<!-- fc id:T-A-115 sha:409b4ced src:dodatky/a-pinouty.md:122 klas:F -->
+<!-- fc id:T-A-115 sha:409b4ced src:dodatky/a-pinouty.md:122 klas:A -->
 ### T-A-115 · proza · рядок 122
 
 **Книга каже, дослівно:**
@@ -1811,11 +1843,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
+- **Дослівно з джерела:**
+  > {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  > serial bootloader reliably. The strapping combination of
+  > {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and will
+  > trigger unexpected behavior.
+  > (для esp32c3: STRAP_BOOT_2_GPIO = GPIO8, STRAP_BOOT_GPIO = GPIO9)
+  > 
+  > (esp32c3/adc_channel.h)
+  > ADC1_GPIO0_CHANNEL 0   ADC1_GPIO1_CHANNEL 1   ADC1_GPIO2_CHANNEL 2
+  > ADC1_GPIO3_CHANNEL 3   ADC1_GPIO4_CHANNEL 4
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 25 і 26), 2026-08-26
+- **Нотатка:** Додаток A робить із двох звірених фактів висновок, і висновок правильний у неочевидний бік: типова обв'язка I²C на C3 завантаженню **не заважає**. Підтяжки тягнуть обидві лінії вгору, а потрібно саме `GPIO8` високий; `GPIO9` високий означає звичайний старт.
+Друга половина — застереження, і воно точне: ведений, що притискає `SDA` до землі в момент скидання, дає `GPIO8` = 0. Разом із `GPIO9` = 0 (натиснута кнопка `BOOT`) це та сама недійсна комбінація.
+«На C3 аналоговий вхід — це `GPIO0`–`GPIO4`, і більше нічого» — п'ять каналів `adc_channel.h`, рівно цей діапазон.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-A-116 sha:8325baa5 src:dodatky/a-pinouty.md:122 klas:F -->
+<!-- fc id:T-A-116 sha:8325baa5 src:dodatky/a-pinouty.md:122 klas:A -->
 ### T-A-116 · proza · рядок 122
 
 **Книга каже, дослівно:**
@@ -1824,7 +1872,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../esp-idf/components/soc/esp32c3/include/soc/adc_channel.h
+- **Дослівно з джерела:**
+  > {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  > serial bootloader reliably. The strapping combination of
+  > {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and will
+  > trigger unexpected behavior.
+  > (для esp32c3: STRAP_BOOT_2_GPIO = GPIO8, STRAP_BOOT_GPIO = GPIO9)
+  > 
+  > (esp32c3/adc_channel.h)
+  > ADC1_GPIO0_CHANNEL 0   ADC1_GPIO1_CHANNEL 1   ADC1_GPIO2_CHANNEL 2
+  > ADC1_GPIO3_CHANNEL 3   ADC1_GPIO4_CHANNEL 4
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 25 і 26), 2026-08-26
+- **Нотатка:** Додаток A робить із двох звірених фактів висновок, і висновок правильний у неочевидний бік: типова обв'язка I²C на C3 завантаженню **не заважає**. Підтяжки тягнуть обидві лінії вгору, а потрібно саме `GPIO8` високий; `GPIO9` високий означає звичайний старт.
+Друга половина — застереження, і воно точне: ведений, що притискає `SDA` до землі в момент скидання, дає `GPIO8` = 0. Разом із `GPIO9` = 0 (натиснута кнопка `BOOT`) це та сама недійсна комбінація.
+«На C3 аналоговий вхід — це `GPIO0`–`GPIO4`, і більше нічого» — п'ять каналів `adc_channel.h`, рівно цей діапазон.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 

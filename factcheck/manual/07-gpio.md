@@ -135,7 +135,7 @@
 
 ---
 
-<!-- fc id:T-07-010 sha:1f80fd22 src:manual/07-gpio.md:21 klas:F -->
+<!-- fc id:T-07-010 sha:1f80fd22 src:manual/07-gpio.md:21 klas:A -->
 ### T-07-010 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -144,11 +144,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-07-011 sha:40fa9dc7 src:manual/07-gpio.md:21 klas:F -->
+<!-- fc id:T-07-011 sha:40fa9dc7 src:manual/07-gpio.md:21 klas:A -->
 ### T-07-011 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -157,7 +179,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -182,7 +226,7 @@
 
 ---
 
-<!-- fc id:T-07-013 sha:e1c33c77 src:manual/07-gpio.md:22 klas:F -->
+<!-- fc id:T-07-013 sha:e1c33c77 src:manual/07-gpio.md:22 klas:A -->
 ### T-07-013 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -191,11 +235,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-07-014 sha:4c5651fc src:manual/07-gpio.md:23 klas:F -->
+<!-- fc id:T-07-014 sha:4c5651fc src:manual/07-gpio.md:23 klas:A -->
 ### T-07-014 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -204,11 +270,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-07-015 sha:526ab509 src:manual/07-gpio.md:23 klas:F -->
+<!-- fc id:T-07-015 sha:526ab509 src:manual/07-gpio.md:23 klas:A -->
 ### T-07-015 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -217,7 +305,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -245,7 +355,7 @@
 
 ---
 
-<!-- fc id:T-07-017 sha:ba3c0447 src:manual/07-gpio.md:24 klas:F -->
+<!-- fc id:T-07-017 sha:ba3c0447 src:manual/07-gpio.md:24 klas:A -->
 ### T-07-017 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -254,11 +364,33 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-07-018 sha:a47a5658 src:manual/07-gpio.md:25 klas:F -->
+<!-- fc id:T-07-018 sha:a47a5658 src:manual/07-gpio.md:25 klas:A -->
 ### T-07-018 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -267,7 +399,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -1292,7 +1446,7 @@
 
 ---
 
-<!-- fc id:T-07-073 sha:6a801047 src:manual/07-gpio.md:147 klas:F -->
+<!-- fc id:T-07-073 sha:6a801047 src:manual/07-gpio.md:147 klas:B -->
 ### T-07-073 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -1301,7 +1455,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > 
+  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > сімейств, які текст поруч називає; область дії береться з `#if
+  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+  > BOM проєкту.
+- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
+Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -1331,7 +1500,7 @@
 
 ---
 
-<!-- fc id:T-07-076 sha:9b7ec34b src:manual/07-gpio.md:152 klas:F -->
+<!-- fc id:T-07-076 sha:9b7ec34b src:manual/07-gpio.md:152 klas:B -->
 ### T-07-076 · proza · рядок 152
 
 **Книга каже, дослівно:**
@@ -1340,7 +1509,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > 
+  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > сімейств, які текст поруч називає; область дії береться з `#if
+  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+  > BOM проєкту.
+- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
+Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -1991,7 +2175,7 @@
 
 ---
 
-<!-- fc id:T-07-122 sha:00d10011 src:manual/07-gpio.md:269 klas:F -->
+<!-- fc id:T-07-122 sha:00d10011 src:manual/07-gpio.md:269 klas:B -->
 ### T-07-122 · proza · рядок 269
 
 **Книга каже, дослівно:**
@@ -2000,7 +2184,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > 
+  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > сімейств, які текст поруч називає; область дії береться з `#if
+  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+  > BOM проєкту.
+- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
+Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -2038,7 +2237,7 @@
 
 ---
 
-<!-- fc id:T-07-125 sha:eca754e3 src:manual/07-gpio.md:275 klas:F -->
+<!-- fc id:T-07-125 sha:eca754e3 src:manual/07-gpio.md:275 klas:B -->
 ### T-07-125 · proza · рядок 275
 
 **Книга каже, дослівно:**
@@ -2047,7 +2246,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > 
+  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > сімейств, які текст поруч називає; область дії береться з `#if
+  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+  > BOM проєкту.
+- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
+Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
