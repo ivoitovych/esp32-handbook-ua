@@ -84,7 +84,7 @@
 
 ---
 
-<!-- fc id:T-A-007 sha:e947fae0 src:dodatky/a-pinouty.md:16 klas:F -->
+<!-- fc id:T-A-007 sha:e947fae0 src:dodatky/a-pinouty.md:16 klas:A -->
 ### T-A-007 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -93,7 +93,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)
+  > ADC1: CH0→36 CH1→37 CH2→38 CH3→39 CH4→32 CH5→33 CH6→34 CH7→35
+  > ADC2: CH0→4 CH1→0 CH2→2 CH3→15 CH4→13 CH5→12 CH6→14 CH7→27 CH8→25 CH9→26
+  > 
+  > (esp32/touch_sensor_channel.h)
+  > T0→4 T1→0 T2→2 T3→15 T4→13 T5→12 T6→14 T7→27 T8→33 T9→32
+  > 
+  > (esp32s3) ADC1: 1…10   ADC2: 11…20
+  > (esp32c3) ADC1: 0…4    ADC2: 5
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у найдрібнішому місці книги. Звірено **кожну** комірку таблиці classic: усі десять номерів каналів ADC2, усі вісім ADC1, усі десять сенсорів touch.
+Окремо звернімо увагу на рядок `32, 33 | ADC1_4/5 | T9/T8`: тут порядок навмисно різний, бо `GPIO32` — це `T9`, а `GPIO33` — `T8`. Легко було б поставити «T8/T9» і помилитися; у книзі стоїть правильно.
+Списки «ADC1 працює завжди: 32–39» і «ADC2 не працює при Wi-Fi: 0, 2, 4, 12–15, 25–27» збігаються з заголовком повністю.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -635,7 +651,7 @@
 
 ---
 
-<!-- fc id:T-A-048 sha:7ea69553 src:dodatky/a-pinouty.md:32 klas:F -->
+<!-- fc id:T-A-048 sha:7ea69553 src:dodatky/a-pinouty.md:32 klas:A -->
 ### T-A-048 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -644,7 +660,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)
+  > ADC1: CH0→36 CH1→37 CH2→38 CH3→39 CH4→32 CH5→33 CH6→34 CH7→35
+  > ADC2: CH0→4 CH1→0 CH2→2 CH3→15 CH4→13 CH5→12 CH6→14 CH7→27 CH8→25 CH9→26
+  > 
+  > (esp32/touch_sensor_channel.h)
+  > T0→4 T1→0 T2→2 T3→15 T4→13 T5→12 T6→14 T7→27 T8→33 T9→32
+  > 
+  > (esp32s3) ADC1: 1…10   ADC2: 11…20
+  > (esp32c3) ADC1: 0…4    ADC2: 5
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у найдрібнішому місці книги. Звірено **кожну** комірку таблиці classic: усі десять номерів каналів ADC2, усі вісім ADC1, усі десять сенсорів touch.
+Окремо звернімо увагу на рядок `32, 33 | ADC1_4/5 | T9/T8`: тут порядок навмисно різний, бо `GPIO32` — це `T9`, а `GPIO33` — `T8`. Легко було б поставити «T8/T9» і помилитися; у книзі стоїть правильно.
+Списки «ADC1 працює завжди: 32–39» і «ADC2 не працює при Wi-Fi: 0, 2, 4, 12–15, 25–27» збігаються з заголовком повністю.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -674,7 +706,7 @@
 
 ---
 
-<!-- fc id:T-A-051 sha:ab6a85b6 src:dodatky/a-pinouty.md:34 klas:F -->
+<!-- fc id:T-A-051 sha:ab6a85b6 src:dodatky/a-pinouty.md:34 klas:A -->
 ### T-A-051 · komirka · рядок 34
 
 **Книга каже, дослівно:**
@@ -683,11 +715,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)
+  > ADC1: CH0→36 CH1→37 CH2→38 CH3→39 CH4→32 CH5→33 CH6→34 CH7→35
+  > ADC2: CH0→4 CH1→0 CH2→2 CH3→15 CH4→13 CH5→12 CH6→14 CH7→27 CH8→25 CH9→26
+  > 
+  > (esp32/touch_sensor_channel.h)
+  > T0→4 T1→0 T2→2 T3→15 T4→13 T5→12 T6→14 T7→27 T8→33 T9→32
+  > 
+  > (esp32s3) ADC1: 1…10   ADC2: 11…20
+  > (esp32c3) ADC1: 0…4    ADC2: 5
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у найдрібнішому місці книги. Звірено **кожну** комірку таблиці classic: усі десять номерів каналів ADC2, усі вісім ADC1, усі десять сенсорів touch.
+Окремо звернімо увагу на рядок `32, 33 | ADC1_4/5 | T9/T8`: тут порядок навмисно різний, бо `GPIO32` — це `T9`, а `GPIO33` — `T8`. Легко було б поставити «T8/T9» і помилитися; у книзі стоїть правильно.
+Списки «ADC1 працює завжди: 32–39» і «ADC2 не працює при Wi-Fi: 0, 2, 4, 12–15, 25–27» збігаються з заголовком повністю.
+- **Прохід:** pass-12-piny
 
 ---
 
-<!-- fc id:T-A-052 sha:45814a6b src:dodatky/a-pinouty.md:34 klas:F -->
+<!-- fc id:T-A-052 sha:45814a6b src:dodatky/a-pinouty.md:34 klas:A -->
 ### T-A-052 · komirka · рядок 34
 
 **Книга каже, дослівно:**
@@ -696,7 +744,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)
+  > ADC1: CH0→36 CH1→37 CH2→38 CH3→39 CH4→32 CH5→33 CH6→34 CH7→35
+  > ADC2: CH0→4 CH1→0 CH2→2 CH3→15 CH4→13 CH5→12 CH6→14 CH7→27 CH8→25 CH9→26
+  > 
+  > (esp32/touch_sensor_channel.h)
+  > T0→4 T1→0 T2→2 T3→15 T4→13 T5→12 T6→14 T7→27 T8→33 T9→32
+  > 
+  > (esp32s3) ADC1: 1…10   ADC2: 11…20
+  > (esp32c3) ADC1: 0…4    ADC2: 5
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у найдрібнішому місці книги. Звірено **кожну** комірку таблиці classic: усі десять номерів каналів ADC2, усі вісім ADC1, усі десять сенсорів touch.
+Окремо звернімо увагу на рядок `32, 33 | ADC1_4/5 | T9/T8`: тут порядок навмисно різний, бо `GPIO32` — це `T9`, а `GPIO33` — `T8`. Легко було б поставити «T8/T9» і помилитися; у книзі стоїть правильно.
+Списки «ADC1 працює завжди: 32–39» і «ADC2 не працює при Wi-Fi: 0, 2, 4, 12–15, 25–27» збігаються з заголовком повністю.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -752,7 +816,7 @@
 
 ---
 
-<!-- fc id:T-A-057 sha:4c059759 src:dodatky/a-pinouty.md:41 klas:F -->
+<!-- fc id:T-A-057 sha:4c059759 src:dodatky/a-pinouty.md:41 klas:A -->
 ### T-A-057 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -761,7 +825,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)
+  > ADC1: CH0→36 CH1→37 CH2→38 CH3→39 CH4→32 CH5→33 CH6→34 CH7→35
+  > ADC2: CH0→4 CH1→0 CH2→2 CH3→15 CH4→13 CH5→12 CH6→14 CH7→27 CH8→25 CH9→26
+  > 
+  > (esp32/touch_sensor_channel.h)
+  > T0→4 T1→0 T2→2 T3→15 T4→13 T5→12 T6→14 T7→27 T8→33 T9→32
+  > 
+  > (esp32s3) ADC1: 1…10   ADC2: 11…20
+  > (esp32c3) ADC1: 0…4    ADC2: 5
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у найдрібнішому місці книги. Звірено **кожну** комірку таблиці classic: усі десять номерів каналів ADC2, усі вісім ADC1, усі десять сенсорів touch.
+Окремо звернімо увагу на рядок `32, 33 | ADC1_4/5 | T9/T8`: тут порядок навмисно різний, бо `GPIO32` — це `T9`, а `GPIO33` — `T8`. Легко було б поставити «T8/T9» і помилитися; у книзі стоїть правильно.
+Списки «ADC1 працює завжди: 32–39» і «ADC2 не працює при Wi-Fi: 0, 2, 4, 12–15, 25–27» збігаються з заголовком повністю.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -830,7 +910,7 @@
 
 ---
 
-<!-- fc id:T-A-063 sha:8d001f58 src:dodatky/a-pinouty.md:49 klas:F -->
+<!-- fc id:T-A-063 sha:8d001f58 src:dodatky/a-pinouty.md:49 klas:A -->
 ### T-A-063 · komirka · рядок 49
 
 **Книга каже, дослівно:**
@@ -839,7 +919,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
+  >  esp32c6="13", esp32h2="27", esp32p4="25/27", esp32c5="14", esp32c61="13"}
+  > {IDF_TARGET_USB_DM_GPIO:default="Not Updated!",esp32c3="18",esp32s3="19",
+  >  esp32c6="12", esp32h2="26", esp32p4="24/26", esp32c5="13", esp32c61="12"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Збігається, і навіть порядок правильний: на S3 `D−` = `GPIO19`, `D+` = `GPIO20`, тож запис «19, 20 — D−, D+» точний. На C3 пара 18/19 у тому ж порядку.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -921,16 +1010,37 @@
 
 ---
 
-<!-- fc id:T-A-070 sha:2c571396 src:dodatky/a-pinouty.md:52 klas:F -->
+<!-- fc id:T-A-070 sha:c1435f95 src:dodatky/a-pinouty.md:52 klas:A -->
 ### T-A-070 · komirka · рядок 52
 
 **Книга каже, дослівно:**
 
-> 45, 46 · Примітка → ⛔ `46`=1 разом із `0`=0 недійсна
+> 45, 46 · Примітка → ⛔ `46` мусить бути низьким або вільним, інакше download mode недосяжний
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > .. only:: esp32 or esp32s2 or esp32s3
+  > 
+  >    {IDF_TARGET_STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,
+  >    or driven Low, in order to enter the serial bootloader.
+  > 
+  > .. only:: esp32c3 or esp32c2 or esp32h2 or esp32c6 or esp32p4 or esp32c5 or esp32c61 …
+  > 
+  >    {IDF_TARGET_STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  >    serial bootloader reliably. The strapping combination of {…STRAP_BOOT_2_GPIO} = 0
+  >    and {…STRAP_BOOT_GPIO} = 0 is invalid and will trigger unexpected behavior.
+  > 
+  > In normal boot mode ({…STRAP_BOOT_GPIO} high), {…STRAP_BOOT_2_GPIO} is ignored.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення, і воно дороге. Книга у трьох місцях писала, що на S3 «комбінація `GPIO46` = 1 разом із `GPIO0` = 0 недійсна». Це правило з **C3**, механічно перенесене на S3 — разом із переверненим рівнем.
+Правда протилежна: на classic, S2 і S3 другий пін мусить бути **низьким або вільним**, щоб увійти в бутлоадер. Поняття «недійсна комбінація» існує тільки в RISC-V сімействах, де другий пін навпаки має бути високим.
+Ціна помилки — саме та, заради якої пінаути й друкують: розробник плати на S3, читаючи книгу, підтягне `GPIO46` угору «щоб уникнути недійсної комбінації» — і зробить download mode недосяжним на всій партії.
+Виправлено в розділі 07, на картці К9 і в додатку A; у розділ 07 додано таблицю на три сімейства, бо саме перенесення плати з чипа на чип і породжує цю помилку.
+Заразом зафіксовано правило, якого книга не називала: у звичайному режимі (головний пін високий) другий пін ігнорується взагалі.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -1116,7 +1226,7 @@
 
 ---
 
-<!-- fc id:T-A-085 sha:2c8c2e8f src:dodatky/a-pinouty.md:72 klas:F -->
+<!-- fc id:T-A-085 sha:2c8c2e8f src:dodatky/a-pinouty.md:72 klas:A -->
 ### T-A-085 · komirka · рядок 72
 
 **Книга каже, дослівно:**
@@ -1125,7 +1235,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
+  >  esp32c6="13", esp32h2="27", esp32p4="25/27", esp32c5="14", esp32c61="13"}
+  > {IDF_TARGET_USB_DM_GPIO:default="Not Updated!",esp32c3="18",esp32s3="19",
+  >  esp32c6="12", esp32h2="26", esp32p4="24/26", esp32c5="13", esp32c61="12"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Збігається, і навіть порядок правильний: на S3 `D−` = `GPIO19`, `D+` = `GPIO20`, тож запис «19, 20 — D−, D+» точний. На C3 пара 18/19 у тому ж порядку.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -1375,7 +1494,7 @@
 
 ---
 
-<!-- fc id:T-A-102 sha:4700ea2d src:dodatky/a-pinouty.md:103 klas:F -->
+<!-- fc id:T-A-102 sha:4700ea2d src:dodatky/a-pinouty.md:103 klas:A -->
 ### T-A-102 · komirka · рядок 103
 
 **Книга каже, дослівно:**
@@ -1384,11 +1503,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
+- **Дослівно з джерела:**
+  > esp32:   U0TXD 1, U0RXD 3
+  >          HSPI(=SPI2) MOSI 13 MISO 12 CLK 14 CS 15
+  >          VSPI(=SPI3) MOSI 23 MISO 19 CLK 18 CS 5
+  >          MSPI (флеш) CLK 6 MISO 7 MOSI 8 HD 9 WP 10 CS0 11
+  > esp32s3: U0TXD 43, U0RXD 44
+  >          SPI2 MOSI 11 MISO 13 CLK 12 CS 10
+  >          MSPI CS1 26 HD 27 WP 28 CS0 29 CLK 30 MISO 31 MOSI 32
+  >               D4 33 D5 34 D6 35 D7 36 DQS 37
+  > esp32c3: U0TXD 21, U0RXD 20
+  >          SPI2 MOSI 7 MISO 2 CLK 6 CS 10
+  >          MSPI HD 12 WP 13 CS0 14 CLK 15 MOSI 16 MISO 17
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Усі дванадцять чисел таблиці IOMUX збігаються, і ототожнення `SPI2 = HSPI`, `SPI3 = VSPI` теж стоїть у заголовку дослівно (`#define SPI2_FUNC_NUM HSPI_FUNC_NUM`).
+Заразом підтверджено діапазони пінів флешу, які книга забороняє чіпати: classic 6–11, C3 12–17, S3 26–32 плюс 33–37 на модулях з Octal PSRAM. Останнє видно прямо: `MSPI_IOMUX_PIN_NUM_D4…DQS` — це саме 33…37.
+- **Прохід:** pass-12-piny
 
 ---
 
-<!-- fc id:T-A-103 sha:390631d1 src:dodatky/a-pinouty.md:103 klas:F -->
+<!-- fc id:T-A-103 sha:390631d1 src:dodatky/a-pinouty.md:103 klas:A -->
 ### T-A-103 · komirka · рядок 103
 
 **Книга каже, дослівно:**
@@ -1397,11 +1533,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
+- **Дослівно з джерела:**
+  > esp32:   U0TXD 1, U0RXD 3
+  >          HSPI(=SPI2) MOSI 13 MISO 12 CLK 14 CS 15
+  >          VSPI(=SPI3) MOSI 23 MISO 19 CLK 18 CS 5
+  >          MSPI (флеш) CLK 6 MISO 7 MOSI 8 HD 9 WP 10 CS0 11
+  > esp32s3: U0TXD 43, U0RXD 44
+  >          SPI2 MOSI 11 MISO 13 CLK 12 CS 10
+  >          MSPI CS1 26 HD 27 WP 28 CS0 29 CLK 30 MISO 31 MOSI 32
+  >               D4 33 D5 34 D6 35 D7 36 DQS 37
+  > esp32c3: U0TXD 21, U0RXD 20
+  >          SPI2 MOSI 7 MISO 2 CLK 6 CS 10
+  >          MSPI HD 12 WP 13 CS0 14 CLK 15 MOSI 16 MISO 17
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Усі дванадцять чисел таблиці IOMUX збігаються, і ототожнення `SPI2 = HSPI`, `SPI3 = VSPI` теж стоїть у заголовку дослівно (`#define SPI2_FUNC_NUM HSPI_FUNC_NUM`).
+Заразом підтверджено діапазони пінів флешу, які книга забороняє чіпати: classic 6–11, C3 12–17, S3 26–32 плюс 33–37 на модулях з Octal PSRAM. Останнє видно прямо: `MSPI_IOMUX_PIN_NUM_D4…DQS` — це саме 33…37.
+- **Прохід:** pass-12-piny
 
 ---
 
-<!-- fc id:T-A-104 sha:f41f46f7 src:dodatky/a-pinouty.md:103 klas:F -->
+<!-- fc id:T-A-104 sha:f41f46f7 src:dodatky/a-pinouty.md:103 klas:A -->
 ### T-A-104 · komirka · рядок 103
 
 **Книга каже, дослівно:**
@@ -1410,11 +1563,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
+- **Дослівно з джерела:**
+  > esp32:   U0TXD 1, U0RXD 3
+  >          HSPI(=SPI2) MOSI 13 MISO 12 CLK 14 CS 15
+  >          VSPI(=SPI3) MOSI 23 MISO 19 CLK 18 CS 5
+  >          MSPI (флеш) CLK 6 MISO 7 MOSI 8 HD 9 WP 10 CS0 11
+  > esp32s3: U0TXD 43, U0RXD 44
+  >          SPI2 MOSI 11 MISO 13 CLK 12 CS 10
+  >          MSPI CS1 26 HD 27 WP 28 CS0 29 CLK 30 MISO 31 MOSI 32
+  >               D4 33 D5 34 D6 35 D7 36 DQS 37
+  > esp32c3: U0TXD 21, U0RXD 20
+  >          SPI2 MOSI 7 MISO 2 CLK 6 CS 10
+  >          MSPI HD 12 WP 13 CS0 14 CLK 15 MOSI 16 MISO 17
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Усі дванадцять чисел таблиці IOMUX збігаються, і ототожнення `SPI2 = HSPI`, `SPI3 = VSPI` теж стоїть у заголовку дослівно (`#define SPI2_FUNC_NUM HSPI_FUNC_NUM`).
+Заразом підтверджено діапазони пінів флешу, які книга забороняє чіпати: classic 6–11, C3 12–17, S3 26–32 плюс 33–37 на модулях з Octal PSRAM. Останнє видно прямо: `MSPI_IOMUX_PIN_NUM_D4…DQS` — це саме 33…37.
+- **Прохід:** pass-12-piny
 
 ---
 
-<!-- fc id:T-A-105 sha:b5c533a3 src:dodatky/a-pinouty.md:104 klas:F -->
+<!-- fc id:T-A-105 sha:b5c533a3 src:dodatky/a-pinouty.md:104 klas:A -->
 ### T-A-105 · komirka · рядок 104
 
 **Книга каже, дослівно:**
@@ -1423,11 +1593,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
+- **Дослівно з джерела:**
+  > esp32:   U0TXD 1, U0RXD 3
+  >          HSPI(=SPI2) MOSI 13 MISO 12 CLK 14 CS 15
+  >          VSPI(=SPI3) MOSI 23 MISO 19 CLK 18 CS 5
+  >          MSPI (флеш) CLK 6 MISO 7 MOSI 8 HD 9 WP 10 CS0 11
+  > esp32s3: U0TXD 43, U0RXD 44
+  >          SPI2 MOSI 11 MISO 13 CLK 12 CS 10
+  >          MSPI CS1 26 HD 27 WP 28 CS0 29 CLK 30 MISO 31 MOSI 32
+  >               D4 33 D5 34 D6 35 D7 36 DQS 37
+  > esp32c3: U0TXD 21, U0RXD 20
+  >          SPI2 MOSI 7 MISO 2 CLK 6 CS 10
+  >          MSPI HD 12 WP 13 CS0 14 CLK 15 MOSI 16 MISO 17
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Усі дванадцять чисел таблиці IOMUX збігаються, і ототожнення `SPI2 = HSPI`, `SPI3 = VSPI` теж стоїть у заголовку дослівно (`#define SPI2_FUNC_NUM HSPI_FUNC_NUM`).
+Заразом підтверджено діапазони пінів флешу, які книга забороняє чіпати: classic 6–11, C3 12–17, S3 26–32 плюс 33–37 на модулях з Octal PSRAM. Останнє видно прямо: `MSPI_IOMUX_PIN_NUM_D4…DQS` — це саме 33…37.
+- **Прохід:** pass-12-piny
 
 ---
 
-<!-- fc id:T-A-106 sha:071a0c5f src:dodatky/a-pinouty.md:107 klas:F -->
+<!-- fc id:T-A-106 sha:071a0c5f src:dodatky/a-pinouty.md:107 klas:A -->
 ### T-A-106 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -1436,7 +1623,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/{uart_pins.h,spi_pins.h}
+- **Дослівно з джерела:**
+  > esp32:   U0TXD 1, U0RXD 3
+  >          HSPI(=SPI2) MOSI 13 MISO 12 CLK 14 CS 15
+  >          VSPI(=SPI3) MOSI 23 MISO 19 CLK 18 CS 5
+  >          MSPI (флеш) CLK 6 MISO 7 MOSI 8 HD 9 WP 10 CS0 11
+  > esp32s3: U0TXD 43, U0RXD 44
+  >          SPI2 MOSI 11 MISO 13 CLK 12 CS 10
+  >          MSPI CS1 26 HD 27 WP 28 CS0 29 CLK 30 MISO 31 MOSI 32
+  >               D4 33 D5 34 D6 35 D7 36 DQS 37
+  > esp32c3: U0TXD 21, U0RXD 20
+  >          SPI2 MOSI 7 MISO 2 CLK 6 CS 10
+  >          MSPI HD 12 WP 13 CS0 14 CLK 15 MOSI 16 MISO 17
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Усі дванадцять чисел таблиці IOMUX збігаються, і ототожнення `SPI2 = HSPI`, `SPI3 = VSPI` теж стоїть у заголовку дослівно (`#define SPI2_FUNC_NUM HSPI_FUNC_NUM`).
+Заразом підтверджено діапазони пінів флешу, які книга забороняє чіпати: classic 6–11, C3 12–17, S3 26–32 плюс 33–37 на модулях з Octal PSRAM. Останнє видно прямо: `MSPI_IOMUX_PIN_NUM_D4…DQS` — це саме 33…37.
+- **Прохід:** pass-12-piny
 
 ---
 

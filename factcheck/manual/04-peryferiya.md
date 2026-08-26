@@ -435,7 +435,7 @@
 
 ---
 
-<!-- fc id:T-04-034 sha:67d4ed9e src:manual/04-peryferiya.md:59 klas:F -->
+<!-- fc id:T-04-034 sha:67d4ed9e src:manual/04-peryferiya.md:59 klas:A -->
 ### T-04-034 · komirka · рядок 59
 
 **Книга каже, дослівно:**
@@ -444,11 +444,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
+  >  esp32c6="13", esp32h2="27", esp32p4="25/27", esp32c5="14", esp32c61="13"}
+  > {IDF_TARGET_USB_DM_GPIO:default="Not Updated!",esp32c3="18",esp32s3="19",
+  >  esp32c6="12", esp32h2="26", esp32p4="24/26", esp32c5="13", esp32c61="12"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Збігається, і навіть порядок правильний: на S3 `D−` = `GPIO19`, `D+` = `GPIO20`, тож запис «19, 20 — D−, D+» точний. На C3 пара 18/19 у тому ж порядку.
+- **Прохід:** pass-12-piny
 
 ---
 
-<!-- fc id:T-04-035 sha:31eaa593 src:manual/04-peryferiya.md:59 klas:F -->
+<!-- fc id:T-04-035 sha:31eaa593 src:manual/04-peryferiya.md:59 klas:A -->
 ### T-04-035 · komirka · рядок 59
 
 **Книга каже, дослівно:**
@@ -457,7 +466,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/usb-serial-jtag-console.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_USB_DP_GPIO:default="Not Updated!",esp32c3="19",esp32s3="20",
+  >  esp32c6="13", esp32h2="27", esp32p4="25/27", esp32c5="14", esp32c61="13"}
+  > {IDF_TARGET_USB_DM_GPIO:default="Not Updated!",esp32c3="18",esp32s3="19",
+  >  esp32c6="12", esp32h2="26", esp32p4="24/26", esp32c5="13", esp32c61="12"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Збігається, і навіть порядок правильний: на S3 `D−` = `GPIO19`, `D+` = `GPIO20`, тож запис «19, 20 — D−, D+» точний. На C3 пара 18/19 у тому ж порядку.
+- **Прохід:** pass-12-piny
 
 ---
 
