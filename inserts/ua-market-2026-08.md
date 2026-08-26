@@ -63,7 +63,7 @@
 Хвилина на плату (розділ 08):
 
 ```
-esptool --port /dev/ttyUSB0 chip-id     # звірити з написом на модулі
+esptool --port /dev/ttyUSB0 flash-id    # звірити шапку з написом
 esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 ```
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k01-triazh.md`
 
-Одиниць твердження: **44**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **43**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -408,13 +408,12 @@
 
 ---
 
-<!-- fc id:T-K01-029 sha:0272d30f src:kartky/k01-triazh.md:46 klas:K -->
+<!-- fc id:T-K01-029 sha:e66c9553 src:kartky/k01-triazh.md:46 klas:K -->
 ### T-K01-029 · kod · рядок 46
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool --port /dev/ttyUSB0 chip-id
 > esptool --port /dev/ttyUSB0 flash-id
 > ```
 
@@ -446,21 +445,8 @@
 
 ---
 
-<!-- fc id:T-K01-030 sha:32416a21 src:kartky/k01-triazh.md:47 klas:F -->
+<!-- fc id:T-K01-030 sha:4c5a16ee src:kartky/k01-triazh.md:47 klas:F -->
 ### T-K01-030 · kod-ryadok · рядок 47
-
-**Книга каже, дослівно:**
-
-> esptool --port /dev/ttyUSB0 chip-id
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-K01-031 sha:4c5a16ee src:kartky/k01-triazh.md:48 klas:F -->
-### T-K01-031 · kod-ryadok · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -472,32 +458,21 @@
 
 ---
 
-<!-- fc id:T-K01-032 sha:0d3dd7c0 src:kartky/k01-triazh.md:51 klas:A -->
-### T-K01-032 · proza · рядок 51
+<!-- fc id:T-K01-031 sha:7b93818e src:kartky/k01-triazh.md:50 klas:E -->
+### T-K01-031 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
-> `chip-id` називає сімейство і ревізію — звірити з написом на модулі.
+> Шапка з'єднання називає сімейство і ревізію — звірити з написом на модулі.
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
-- **Дослівно з джерела:**
-  > chip-id     Read Chip ID
-  > flash-id    Read SPI flash manufacturer and device ID
-  > 
-  > The flash-id command outputs the manufacturer and device ID of the
-  > flash chip, together with the detected flash size.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
-Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
-- **Прохід:** pass-28-komandy-suciljno
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K01-033 sha:e687b58d src:kartky/k01-triazh.md:51 klas:A -->
-### T-K01-033 · proza · рядок 51
+<!-- fc id:T-K01-032 sha:e687b58d src:kartky/k01-triazh.md:50 klas:A -->
+### T-K01-032 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -514,14 +489,14 @@
   > The flash-id command outputs the manufacturer and device ID of the
   > flash chip, together with the detected flash size.
 - **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
-Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Нотатка:** `flash-id` існує і робить те, що книга обіцяє: друкує виробника, ідентифікатор і **виявлений обсяг** флешу. Розширення досяжності на розділ 08 («`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де це крок тріажу.
+Друга половина доказу — про `chip-id` — виявилася хибною; див. примітку над записом і `pass-36-chip-id.yaml`.
 - **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-K01-034 sha:76c54bbe src:kartky/k01-triazh.md:56 klas:F -->
-### T-K01-034 · proza · рядок 56
+<!-- fc id:T-K01-033 sha:76c54bbe src:kartky/k01-triazh.md:56 klas:F -->
+### T-K01-033 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -533,8 +508,8 @@
 
 ---
 
-<!-- fc id:T-K01-035 sha:87244ea5 src:kartky/k01-triazh.md:56 klas:F -->
-### T-K01-035 · proza · рядок 56
+<!-- fc id:T-K01-034 sha:87244ea5 src:kartky/k01-triazh.md:56 klas:F -->
+### T-K01-034 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -546,8 +521,8 @@
 
 ---
 
-<!-- fc id:T-K01-036 sha:819f6c86 src:kartky/k01-triazh.md:62 klas:E -->
-### T-K01-036 · proza · рядок 62
+<!-- fc id:T-K01-035 sha:819f6c86 src:kartky/k01-triazh.md:62 klas:E -->
+### T-K01-035 · proza · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -559,8 +534,8 @@
 
 ---
 
-<!-- fc id:T-K01-037 sha:0ed28b48 src:kartky/k01-triazh.md:62 klas:E -->
-### T-K01-037 · proza · рядок 62
+<!-- fc id:T-K01-036 sha:0ed28b48 src:kartky/k01-triazh.md:62 klas:E -->
+### T-K01-036 · proza · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -572,8 +547,8 @@
 
 ---
 
-<!-- fc id:T-K01-038 sha:e8fd95bd src:kartky/k01-triazh.md:68 klas:E -->
-### T-K01-038 · tablycya · рядок 68
+<!-- fc id:T-K01-037 sha:e8fd95bd src:kartky/k01-triazh.md:68 klas:E -->
+### T-K01-037 · tablycya · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -585,8 +560,8 @@
 
 ---
 
-<!-- fc id:T-K01-039 sha:201f9419 src:kartky/k01-triazh.md:70 klas:E -->
-### T-K01-039 · tablycya · рядок 70
+<!-- fc id:T-K01-038 sha:201f9419 src:kartky/k01-triazh.md:70 klas:E -->
+### T-K01-038 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -598,8 +573,8 @@
 
 ---
 
-<!-- fc id:T-K01-040 sha:017fe3de src:kartky/k01-triazh.md:71 klas:E -->
-### T-K01-040 · tablycya · рядок 71
+<!-- fc id:T-K01-039 sha:017fe3de src:kartky/k01-triazh.md:71 klas:E -->
+### T-K01-039 · tablycya · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -611,8 +586,8 @@
 
 ---
 
-<!-- fc id:T-K01-041 sha:64bb37ea src:kartky/k01-triazh.md:72 klas:E -->
-### T-K01-041 · tablycya · рядок 72
+<!-- fc id:T-K01-040 sha:64bb37ea src:kartky/k01-triazh.md:72 klas:E -->
+### T-K01-040 · tablycya · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -624,8 +599,8 @@
 
 ---
 
-<!-- fc id:T-K01-042 sha:07ca066d src:kartky/k01-triazh.md:73 klas:E -->
-### T-K01-042 · tablycya · рядок 73
+<!-- fc id:T-K01-041 sha:07ca066d src:kartky/k01-triazh.md:73 klas:E -->
+### T-K01-041 · tablycya · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -637,8 +612,8 @@
 
 ---
 
-<!-- fc id:T-K01-043 sha:564e5a63 src:kartky/k01-triazh.md:74 klas:E -->
-### T-K01-043 · tablycya · рядок 74
+<!-- fc id:T-K01-042 sha:564e5a63 src:kartky/k01-triazh.md:74 klas:E -->
+### T-K01-042 · tablycya · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -650,8 +625,8 @@
 
 ---
 
-<!-- fc id:T-K01-044 sha:d4503abd src:kartky/k01-triazh.md:75 klas:E -->
-### T-K01-044 · tablycya · рядок 75
+<!-- fc id:T-K01-043 sha:d4503abd src:kartky/k01-triazh.md:75 klas:E -->
+### T-K01-043 · tablycya · рядок 75
 
 **Книга каже, дослівно:**
 

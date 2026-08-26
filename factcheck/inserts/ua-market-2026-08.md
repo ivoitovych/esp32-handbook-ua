@@ -369,13 +369,13 @@
 
 ---
 
-<!-- fc id:T-UA--028 sha:fb533b14 src:inserts/ua-market-2026-08.md:65 klas:K -->
+<!-- fc id:T-UA--028 sha:f2a799b3 src:inserts/ua-market-2026-08.md:65 klas:K -->
 ### T-UA--028 · kod · рядок 65
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool --port /dev/ttyUSB0 chip-id     # звірити з написом на модулі
+> esptool --port /dev/ttyUSB0 flash-id    # звірити шапку з написом
 > esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 > ```
 
@@ -407,12 +407,12 @@
 
 ---
 
-<!-- fc id:T-UA--029 sha:f9ee23de src:inserts/ua-market-2026-08.md:66 klas:A -->
+<!-- fc id:T-UA--029 sha:f0bdc858 src:inserts/ua-market-2026-08.md:66 klas:A -->
 ### T-UA--029 · kod-ryadok · рядок 66
 
 **Книга каже, дослівно:**
 
-> esptool --port /dev/ttyUSB0 chip-id     # звірити з написом на модулі
+> esptool --port /dev/ttyUSB0 flash-id    # звірити шапку з написом
 
 **Доказ**
 

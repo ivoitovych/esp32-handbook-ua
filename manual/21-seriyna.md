@@ -67,7 +67,7 @@ IMAGE=vyrib-v1.4.bin
 
 esptool --port "$PORT" --baud 460800 write-flash -z 0x0 "$IMAGE"
 esptool --port "$PORT" verify-flash 0x0 "$IMAGE"
-esptool --port "$PORT" chip-id | grep -i "MAC:"
+esptool --port "$PORT" read-mac | grep -i "MAC:"
 echo "OK: $PORT"
 ```
 

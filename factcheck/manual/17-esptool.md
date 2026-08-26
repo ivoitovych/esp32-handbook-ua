@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/17-esptool.md`
 
-Одиниць твердження: **154**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **161**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -594,13 +594,13 @@
 
 ---
 
-<!-- fc id:T-17-027 sha:85f599cb src:manual/17-esptool.md:62 klas:K -->
+<!-- fc id:T-17-027 sha:e66c9553 src:manual/17-esptool.md:62 klas:K -->
 ### T-17-027 · kod · рядок 62
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool --port /dev/ttyUSB0 chip-id
+> esptool --port /dev/ttyUSB0 flash-id
 > ```
 
 **Доказ**
@@ -631,12 +631,12 @@
 
 ---
 
-<!-- fc id:T-17-028 sha:32416a21 src:manual/17-esptool.md:63 klas:F -->
+<!-- fc id:T-17-028 sha:4c5a16ee src:manual/17-esptool.md:63 klas:F -->
 ### T-17-028 · kod-ryadok · рядок 63
 
 **Книга каже, дослівно:**
 
-> esptool --port /dev/ttyUSB0 chip-id
+> esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
@@ -644,75 +644,79 @@
 
 ---
 
-<!-- fc id:T-17-029 sha:286e1ec5 src:manual/17-esptool.md:66 klas:E -->
+<!-- fc id:T-17-029 sha:8d78f5b3 src:manual/17-esptool.md:66 klas:A -->
 ### T-17-029 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
-> Відповідь називає сімейство, ревізію кремнію і MAC-адресу.
+> Перед виконанням **будь-якої** команди `esptool` встановлює зв'язок і друкує шапку з тим, що знайшов:
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+- **Дослівно з джерела:**
+  > # 2) Print the chip info
+  > ...
+  > else:
+  >     log.print(f"{'Chip type:':<20}{esp.get_chip_description()}")
+  >     log.print(f"{'Features:':<20}{', '.join(esp.get_chip_features())}")
+  >     log.print(f"{'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz")
+  >     usb_mode = esp.get_usb_mode()
+  >     if usb_mode is not None:
+  >         log.print(f"{'USB mode:':<20}{usb_mode}")
+  >     read_mac(esp)
+- **Спосіб і дата:** curl raw.githubusercontent, перевірено М1, 2026-08-26
+- **Нотатка:** Цей блок виконується **до** виклику підкоманди й не залежить від того, яка вона. Тому будь-яка команда, що взагалі під'єдналася, уже назвала сімейство, ревізію, частоту кристала й MAC.
+Практичний наслідок для книги виявився ширшим за виправлення: правило «перша команда для незнайомої плати» тепер `flash-id` не тому, що вона краще ідентифікує чип, а тому, що вона додає до безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
+Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки К1 і К10, додаток C, дві вкладки. Формулювання заведено в `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою старої фрази в розділ 23 — знаходиться.
+Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17 тепер **пояснює**, чому команди краще не вживати, і мусить цитувати її назву.
+- **Прохід:** pass-36-chip-id
 
 ---
 
-<!-- fc id:T-17-030 sha:5d3f09ae src:manual/17-esptool.md:66 klas:E -->
-### T-17-030 · proza · рядок 66
-
-**Книга каже, дослівно:**
-
-> Це перша команда для будь-якої незнайомої плати: вона одночасно перевіряє, що зв'язок є, і каже, з чим маєте справу.
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-17-031 sha:e66c9553 src:manual/17-esptool.md:70 klas:K -->
-### T-17-031 · kod · рядок 70
+<!-- fc id:T-17-030 sha:fd4dd926 src:manual/17-esptool.md:69 klas:K -->
+### T-17-030 · kod · рядок 69
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool --port /dev/ttyUSB0 flash-id
+> Chip type:          ESP32-D0WD-V3 (revision v3.1)
+> Features:           WiFi, BT, Dual Core, 240MHz, ...
+> Crystal frequency:  40MHz
+> MAC:                24:6f:28:xx:xx:xx
 > ```
 
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
 - **Дослівно з джерела:**
-  > esptool (з переліку команд у __init__.py і документації):
-  >   write-flash read-flash erase-flash erase-region read-mac flash-id
-  >   elf2image image-info merge-bin version verify-flash dump-mem
-  >   read-mem write-mem get-security-info chip-id run …
-  > 
-  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
-  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
-  >   merge-bin monitor flash erase-flash partition-table reconfigure
-  >   set-target size size-components size-files python-clean read-otadata
-  >   efuse-summary … openocd gdb coredump-info coredump-debug
-  > 
-  > idf-component-manager: add-dependency create-manifest upload-component
-  >   create-project-from-example
-  > 
-  > Приклад із документації дослівно:
-  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
-Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
-- **Прохід:** pass-09-komandy
+  > # 2) Print the chip info
+  > ...
+  > else:
+  >     log.print(f"{'Chip type:':<20}{esp.get_chip_description()}")
+  >     log.print(f"{'Features:':<20}{', '.join(esp.get_chip_features())}")
+  >     log.print(f"{'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz")
+  >     usb_mode = esp.get_usb_mode()
+  >     if usb_mode is not None:
+  >         log.print(f"{'USB mode:':<20}{usb_mode}")
+  >     read_mac(esp)
+- **Спосіб і дата:** curl raw.githubusercontent, перевірено М1, 2026-08-26
+- **Нотатка:** Цей блок виконується **до** виклику підкоманди й не залежить від того, яка вона. Тому будь-яка команда, що взагалі під'єдналася, уже назвала сімейство, ревізію, частоту кристала й MAC.
+Практичний наслідок для книги виявився ширшим за виправлення: правило «перша команда для незнайомої плати» тепер `flash-id` не тому, що вона краще ідентифікує чип, а тому, що вона додає до безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
+Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки К1 і К10, додаток C, дві вкладки. Формулювання заведено в `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою старої фрази в розділ 23 — знаходиться.
+Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17 тепер **пояснює**, чому команди краще не вживати, і мусить цитувати її назву.
+- **Прохід:** pass-36-chip-id
 
 ---
 
-<!-- fc id:T-17-032 sha:4c5a16ee src:manual/17-esptool.md:71 klas:F -->
-### T-17-032 · kod-ryadok · рядок 71
+<!-- fc id:T-17-031 sha:54872a10 src:manual/17-esptool.md:76 klas:E -->
+### T-17-031 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
-> esptool --port /dev/ttyUSB0 flash-id
+> Сімейство, ревізія кремнію і MAC — саме тут.
 
 **Доказ**
 
@@ -720,12 +724,43 @@
 
 ---
 
-<!-- fc id:T-17-033 sha:337e3191 src:manual/17-esptool.md:74 klas:E -->
-### T-17-033 · proza · рядок 74
+<!-- fc id:T-17-032 sha:b339a1c4 src:manual/17-esptool.md:76 klas:A -->
+### T-17-032 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
-> Виробник і **обсяг** флешу.
+> Це не результат команди, а **преамбула з'єднання**, спільна для всіх команд.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+- **Дослівно з джерела:**
+  > # 2) Print the chip info
+  > ...
+  > else:
+  >     log.print(f"{'Chip type:':<20}{esp.get_chip_description()}")
+  >     log.print(f"{'Features:':<20}{', '.join(esp.get_chip_features())}")
+  >     log.print(f"{'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz")
+  >     usb_mode = esp.get_usb_mode()
+  >     if usb_mode is not None:
+  >         log.print(f"{'USB mode:':<20}{usb_mode}")
+  >     read_mac(esp)
+- **Спосіб і дата:** curl raw.githubusercontent, перевірено М1, 2026-08-26
+- **Нотатка:** Цей блок виконується **до** виклику підкоманди й не залежить від того, яка вона. Тому будь-яка команда, що взагалі під'єдналася, уже назвала сімейство, ревізію, частоту кристала й MAC.
+Практичний наслідок для книги виявився ширшим за виправлення: правило «перша команда для незнайомої плати» тепер `flash-id` не тому, що вона краще ідентифікує чип, а тому, що вона додає до безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
+Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки К1 і К10, додаток C, дві вкладки. Формулювання заведено в `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою старої фрази в розділ 23 — знаходиться.
+Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17 тепер **пояснює**, чому команди краще не вживати, і мусить цитувати її назву.
+- **Прохід:** pass-36-chip-id
+
+---
+
+<!-- fc id:T-17-033 sha:ccd8cd11 src:manual/17-esptool.md:76 klas:E -->
+### T-17-033 · proza · рядок 76
+
+**Книга каже, дослівно:**
+
+> Тому будь-яка команда, що взагалі під'єдналася, вже сказала, з чим маєте справу.
 
 **Доказ**
 
@@ -733,8 +768,154 @@
 
 ---
 
-<!-- fc id:T-17-034 sha:50a21c79 src:manual/17-esptool.md:74 klas:E -->
-### T-17-034 · proza · рядок 74
+<!-- fc id:T-17-034 sha:d76dc54c src:manual/17-esptool.md:80 klas:F -->
+### T-17-034 · proza · рядок 80
+
+**Книга каже, дослівно:**
+
+> `flash-id` як перша команда зручна тим, що після шапки додає ще й те, що однаково знадобиться далі: виробник і **обсяг** флешу.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-035 sha:8528068a src:manual/17-esptool.md:84 klas:A -->
+### T-17-035 · proza · рядок 84
+
+**Книга каже, дослівно:**
+
+> **Чому не `chip-id`.** Підкоманда з такою назвою існує, але вона успадкована від ESP8266, у якого справді був окремий Chip ID в efuse.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/cmds.py, .../esptool/loader.py, .../esptool/targets/esp8266.py
+- **Дослівно з джерела:**
+  > (cmds.py)
+  > def chip_id(esp: ESPLoader) -> None:
+  >     """
+  >     Read and display the Chip ID of the ESP device if available,
+  >     otherwise fall back to displaying the MAC address.
+  >     """
+  >     try:
+  >         chipid = esp.chip_id()
+  >         log.print(f"Chip ID: {chipid:#010x}")
+  >     except NotSupportedError:
+  >         log.warn(f"{esp.CHIP_NAME} has no chip ID. "
+  >                  "Reading MAC address instead.")
+  >         read_mac(esp)
+  > 
+  > (loader.py — базовий клас ESPLoader)
+  > def chip_id(self):
+  >     raise NotSupportedError(self, "Function chip_id")
+  > 
+  > (targets/esp8266.py — єдине перевизначення в дереві)
+  > def chip_id(self):
+  >     """
+  >     Read Chip ID from efuse - the equivalent of the SDK
+  >     system_get_chip_id() func
+  >     """
+  >     id0 = self.read_reg(self.ESP_OTP_MAC0)
+  >     id1 = self.read_reg(self.ESP_OTP_MAC1)
+  >     return (id0 >> 24) | ((id1 & 0xFFFFFF) << 8)
+- **Спосіб і дата:** curl raw.githubusercontent — знахідку подав агент пулу (шматок 8), джерело перевірене М1 самостійно, 2026-08-26
+- **Нотатка:** `chip_id()` визначено рівно в двох місцях усього дерева `esptool`: у базовому класі, де він кидає `NotSupportedError`, і в `esp8266.py`, де він справді читає efuse. Жоден цільовий клас сімейства ESP32 його не перевизначає.
+Отже підкоманда — залишок від ESP8266, у якого окремий Chip ID був. На ESP32 вона друкує попередження і MAC.
+- **Прохід:** pass-36-chip-id
+
+---
+
+<!-- fc id:T-17-036 sha:6b2c3582 src:manual/17-esptool.md:84 klas:F -->
+### T-17-036 · proza · рядок 84
+
+**Книга каже, дослівно:**
+
+> У жодного чипа сімейства ESP32 його немає, і `esptool` на ньому відповідає попередженням:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-037 sha:9dc5958c src:manual/17-esptool.md:89 klas:K -->
+### T-17-037 · kod · рядок 89
+
+**Книга каже, дослівно:**
+
+> ```
+> ESP32 has no chip ID. Reading MAC address instead.
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/cmds.py, .../esptool/loader.py, .../esptool/targets/esp8266.py
+- **Дослівно з джерела:**
+  > (cmds.py)
+  > def chip_id(esp: ESPLoader) -> None:
+  >     """
+  >     Read and display the Chip ID of the ESP device if available,
+  >     otherwise fall back to displaying the MAC address.
+  >     """
+  >     try:
+  >         chipid = esp.chip_id()
+  >         log.print(f"Chip ID: {chipid:#010x}")
+  >     except NotSupportedError:
+  >         log.warn(f"{esp.CHIP_NAME} has no chip ID. "
+  >                  "Reading MAC address instead.")
+  >         read_mac(esp)
+  > 
+  > (loader.py — базовий клас ESPLoader)
+  > def chip_id(self):
+  >     raise NotSupportedError(self, "Function chip_id")
+  > 
+  > (targets/esp8266.py — єдине перевизначення в дереві)
+  > def chip_id(self):
+  >     """
+  >     Read Chip ID from efuse - the equivalent of the SDK
+  >     system_get_chip_id() func
+  >     """
+  >     id0 = self.read_reg(self.ESP_OTP_MAC0)
+  >     id1 = self.read_reg(self.ESP_OTP_MAC1)
+  >     return (id0 >> 24) | ((id1 & 0xFFFFFF) << 8)
+- **Спосіб і дата:** curl raw.githubusercontent — знахідку подав агент пулу (шматок 8), джерело перевірене М1 самостійно, 2026-08-26
+- **Нотатка:** `chip_id()` визначено рівно в двох місцях усього дерева `esptool`: у базовому класі, де він кидає `NotSupportedError`, і в `esp8266.py`, де він справді читає efuse. Жоден цільовий клас сімейства ESP32 його не перевизначає.
+Отже підкоманда — залишок від ESP8266, у якого окремий Chip ID був. На ESP32 вона друкує попередження і MAC.
+- **Прохід:** pass-36-chip-id
+
+---
+
+<!-- fc id:T-17-038 sha:a612c227 src:manual/17-esptool.md:93 klas:E -->
+### T-17-038 · proza · рядок 93
+
+**Книга каже, дослівно:**
+
+> Тобто команда не помилкова — вона просто нічого не додає до шапки, а попередження лякає на рівному місці.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-039 sha:221ef589 src:manual/17-esptool.md:93 klas:E -->
+### T-17-039 · proza · рядок 93
+
+**Книга каже, дослівно:**
+
+> Сімейство і ревізію вона не «називає»: їх назвала преамбула ще до неї.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-040 sha:50a21c79 src:manual/17-esptool.md:98 klas:E -->
+### T-17-040 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -746,8 +927,8 @@
 
 ---
 
-<!-- fc id:T-17-035 sha:3d4176e9 src:manual/17-esptool.md:74 klas:F -->
-### T-17-035 · proza · рядок 74
+<!-- fc id:T-17-041 sha:3d4176e9 src:manual/17-esptool.md:98 klas:F -->
+### T-17-041 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -759,8 +940,8 @@
 
 ---
 
-<!-- fc id:T-17-036 sha:43e4d49a src:manual/17-esptool.md:79 klas:A -->
-### T-17-036 · proza · рядок 79
+<!-- fc id:T-17-042 sha:43e4d49a src:manual/17-esptool.md:103 klas:A -->
+### T-17-042 · proza · рядок 103
 
 **Книга каже, дослівно:**
 
@@ -795,8 +976,8 @@
 
 ---
 
-<!-- fc id:T-17-037 sha:724102a6 src:manual/17-esptool.md:79 klas:E -->
-### T-17-037 · proza · рядок 79
+<!-- fc id:T-17-043 sha:724102a6 src:manual/17-esptool.md:103 klas:E -->
+### T-17-043 · proza · рядок 103
 
 **Книга каже, дослівно:**
 
@@ -808,8 +989,8 @@
 
 ---
 
-<!-- fc id:T-17-038 sha:a5d0e23b src:manual/17-esptool.md:79 klas:E -->
-### T-17-038 · proza · рядок 79
+<!-- fc id:T-17-044 sha:a5d0e23b src:manual/17-esptool.md:103 klas:E -->
+### T-17-044 · proza · рядок 103
 
 **Книга каже, дослівно:**
 
@@ -821,8 +1002,8 @@
 
 ---
 
-<!-- fc id:T-17-039 sha:c1db89f4 src:manual/17-esptool.md:88 klas:E -->
-### T-17-039 · proza · рядок 88
+<!-- fc id:T-17-045 sha:c1db89f4 src:manual/17-esptool.md:112 klas:E -->
+### T-17-045 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -834,8 +1015,8 @@
 
 ---
 
-<!-- fc id:T-17-040 sha:8b4f4b75 src:manual/17-esptool.md:91 klas:K -->
-### T-17-040 · kod · рядок 91
+<!-- fc id:T-17-046 sha:8b4f4b75 src:manual/17-esptool.md:115 klas:K -->
+### T-17-046 · kod · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -866,8 +1047,8 @@
 
 ---
 
-<!-- fc id:T-17-041 sha:213017c0 src:manual/17-esptool.md:92 klas:A -->
-### T-17-041 · kod-ryadok · рядок 92
+<!-- fc id:T-17-047 sha:213017c0 src:manual/17-esptool.md:116 klas:A -->
+### T-17-047 · kod-ryadok · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -896,8 +1077,8 @@
 
 ---
 
-<!-- fc id:T-17-042 sha:1856248d src:manual/17-esptool.md:95 klas:A -->
-### T-17-042 · proza · рядок 95
+<!-- fc id:T-17-048 sha:1856248d src:manual/17-esptool.md:119 klas:A -->
+### T-17-048 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -926,8 +1107,8 @@
 
 ---
 
-<!-- fc id:T-17-043 sha:dd810cb6 src:manual/17-esptool.md:95 klas:D -->
-### T-17-043 · proza · рядок 95
+<!-- fc id:T-17-049 sha:dd810cb6 src:manual/17-esptool.md:119 klas:D -->
+### T-17-049 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -948,8 +1129,8 @@
 
 ---
 
-<!-- fc id:T-17-044 sha:a3ccf901 src:manual/17-esptool.md:99 klas:E -->
-### T-17-044 · proza · рядок 99
+<!-- fc id:T-17-050 sha:a3ccf901 src:manual/17-esptool.md:123 klas:E -->
+### T-17-050 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -961,8 +1142,8 @@
 
 ---
 
-<!-- fc id:T-17-045 sha:1b2d4902 src:manual/17-esptool.md:99 klas:E -->
-### T-17-045 · proza · рядок 99
+<!-- fc id:T-17-051 sha:1b2d4902 src:manual/17-esptool.md:123 klas:E -->
+### T-17-051 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -974,8 +1155,8 @@
 
 ---
 
-<!-- fc id:T-17-046 sha:4cbc54f8 src:manual/17-esptool.md:99 klas:F -->
-### T-17-046 · proza · рядок 99
+<!-- fc id:T-17-052 sha:4cbc54f8 src:manual/17-esptool.md:123 klas:F -->
+### T-17-052 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -987,8 +1168,8 @@
 
 ---
 
-<!-- fc id:T-17-047 sha:eada110b src:manual/17-esptool.md:105 klas:F -->
-### T-17-047 · proza · рядок 105
+<!-- fc id:T-17-053 sha:eada110b src:manual/17-esptool.md:129 klas:F -->
+### T-17-053 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -1000,8 +1181,8 @@
 
 ---
 
-<!-- fc id:T-17-048 sha:0615bf62 src:manual/17-esptool.md:107 klas:K -->
-### T-17-048 · kod · рядок 107
+<!-- fc id:T-17-054 sha:0615bf62 src:manual/17-esptool.md:131 klas:K -->
+### T-17-054 · kod · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -1028,8 +1209,8 @@
 
 ---
 
-<!-- fc id:T-17-049 sha:fe1f802d src:manual/17-esptool.md:108 klas:D -->
-### T-17-049 · kod-ryadok · рядок 108
+<!-- fc id:T-17-055 sha:fe1f802d src:manual/17-esptool.md:132 klas:D -->
+### T-17-055 · kod-ryadok · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -1054,8 +1235,8 @@
 
 ---
 
-<!-- fc id:T-17-050 sha:b46fc5e5 src:manual/17-esptool.md:113 klas:F -->
-### T-17-050 · proza · рядок 113
+<!-- fc id:T-17-056 sha:b46fc5e5 src:manual/17-esptool.md:137 klas:F -->
+### T-17-056 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -1067,8 +1248,8 @@
 
 ---
 
-<!-- fc id:T-17-051 sha:911de04d src:manual/17-esptool.md:115 klas:K -->
-### T-17-051 · kod · рядок 115
+<!-- fc id:T-17-057 sha:911de04d src:manual/17-esptool.md:139 klas:K -->
+### T-17-057 · kod · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -1105,8 +1286,8 @@
 
 ---
 
-<!-- fc id:T-17-052 sha:bdd61138 src:manual/17-esptool.md:116 klas:A -->
-### T-17-052 · kod-ryadok · рядок 116
+<!-- fc id:T-17-058 sha:bdd61138 src:manual/17-esptool.md:140 klas:A -->
+### T-17-058 · kod-ryadok · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -1138,8 +1319,8 @@
 
 ---
 
-<!-- fc id:T-17-053 sha:add669dc src:manual/17-esptool.md:122 klas:A -->
-### T-17-053 · proza · рядок 122
+<!-- fc id:T-17-059 sha:add669dc src:manual/17-esptool.md:146 klas:A -->
+### T-17-059 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -1166,8 +1347,8 @@
 
 ---
 
-<!-- fc id:T-17-054 sha:e548f18b src:manual/17-esptool.md:122 klas:A -->
-### T-17-054 · proza · рядок 122
+<!-- fc id:T-17-060 sha:e548f18b src:manual/17-esptool.md:146 klas:A -->
+### T-17-060 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -1204,8 +1385,8 @@
 
 ---
 
-<!-- fc id:T-17-055 sha:782ec293 src:manual/17-esptool.md:127 klas:E -->
-### T-17-055 · proza · рядок 127
+<!-- fc id:T-17-061 sha:782ec293 src:manual/17-esptool.md:151 klas:E -->
+### T-17-061 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1217,8 +1398,8 @@
 
 ---
 
-<!-- fc id:T-17-056 sha:cb74d03e src:manual/17-esptool.md:127 klas:E -->
-### T-17-056 · proza · рядок 127
+<!-- fc id:T-17-062 sha:cb74d03e src:manual/17-esptool.md:151 klas:E -->
+### T-17-062 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1230,8 +1411,8 @@
 
 ---
 
-<!-- fc id:T-17-057 sha:8627aec2 src:manual/17-esptool.md:129 klas:F -->
-### T-17-057 · proza · рядок 129
+<!-- fc id:T-17-063 sha:8627aec2 src:manual/17-esptool.md:153 klas:F -->
+### T-17-063 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -1243,8 +1424,8 @@
 
 ---
 
-<!-- fc id:T-17-058 sha:85b9b718 src:manual/17-esptool.md:129 klas:E -->
-### T-17-058 · proza · рядок 129
+<!-- fc id:T-17-064 sha:85b9b718 src:manual/17-esptool.md:153 klas:E -->
+### T-17-064 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -1256,8 +1437,8 @@
 
 ---
 
-<!-- fc id:T-17-059 sha:f86910b1 src:manual/17-esptool.md:129 klas:F -->
-### T-17-059 · proza · рядок 129
+<!-- fc id:T-17-065 sha:f86910b1 src:manual/17-esptool.md:153 klas:F -->
+### T-17-065 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -1269,8 +1450,8 @@
 
 ---
 
-<!-- fc id:T-17-060 sha:dafa4e9c src:manual/17-esptool.md:129 klas:E -->
-### T-17-060 · proza · рядок 129
+<!-- fc id:T-17-066 sha:dafa4e9c src:manual/17-esptool.md:153 klas:E -->
+### T-17-066 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -1282,8 +1463,8 @@
 
 ---
 
-<!-- fc id:T-17-061 sha:12ca7f51 src:manual/17-esptool.md:136 klas:F -->
-### T-17-061 · proza · рядок 136
+<!-- fc id:T-17-067 sha:12ca7f51 src:manual/17-esptool.md:160 klas:F -->
+### T-17-067 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1295,8 +1476,8 @@
 
 ---
 
-<!-- fc id:T-17-062 sha:2711187e src:manual/17-esptool.md:136 klas:F -->
-### T-17-062 · proza · рядок 136
+<!-- fc id:T-17-068 sha:2711187e src:manual/17-esptool.md:160 klas:F -->
+### T-17-068 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1308,8 +1489,8 @@
 
 ---
 
-<!-- fc id:T-17-063 sha:d5bda61e src:manual/17-esptool.md:136 klas:E -->
-### T-17-063 · proza · рядок 136
+<!-- fc id:T-17-069 sha:d5bda61e src:manual/17-esptool.md:160 klas:E -->
+### T-17-069 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1321,8 +1502,8 @@
 
 ---
 
-<!-- fc id:T-17-064 sha:c7be6edf src:manual/17-esptool.md:140 klas:E -->
-### T-17-064 · proza · рядок 140
+<!-- fc id:T-17-070 sha:c7be6edf src:manual/17-esptool.md:164 klas:E -->
+### T-17-070 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1334,8 +1515,8 @@
 
 ---
 
-<!-- fc id:T-17-065 sha:6cc1d835 src:manual/17-esptool.md:140 klas:E -->
-### T-17-065 · proza · рядок 140
+<!-- fc id:T-17-071 sha:6cc1d835 src:manual/17-esptool.md:164 klas:E -->
+### T-17-071 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1347,8 +1528,8 @@
 
 ---
 
-<!-- fc id:T-17-066 sha:1edaa56d src:manual/17-esptool.md:145 klas:K -->
-### T-17-066 · kod · рядок 145
+<!-- fc id:T-17-072 sha:1edaa56d src:manual/17-esptool.md:169 klas:K -->
+### T-17-072 · kod · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -1362,8 +1543,8 @@
 
 ---
 
-<!-- fc id:T-17-067 sha:7a96df73 src:manual/17-esptool.md:146 klas:F -->
-### T-17-067 · kod-ryadok · рядок 146
+<!-- fc id:T-17-073 sha:7a96df73 src:manual/17-esptool.md:170 klas:F -->
+### T-17-073 · kod-ryadok · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1375,8 +1556,8 @@
 
 ---
 
-<!-- fc id:T-17-068 sha:4c597925 src:manual/17-esptool.md:150 klas:A -->
-### T-17-068 · proza · рядок 150
+<!-- fc id:T-17-074 sha:4c597925 src:manual/17-esptool.md:174 klas:A -->
+### T-17-074 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1411,8 +1592,8 @@
 
 ---
 
-<!-- fc id:T-17-069 sha:675172ea src:manual/17-esptool.md:150 klas:F -->
-### T-17-069 · proza · рядок 150
+<!-- fc id:T-17-075 sha:675172ea src:manual/17-esptool.md:174 klas:F -->
+### T-17-075 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1424,8 +1605,8 @@
 
 ---
 
-<!-- fc id:T-17-070 sha:02d4467f src:manual/17-esptool.md:150 klas:E -->
-### T-17-070 · proza · рядок 150
+<!-- fc id:T-17-076 sha:02d4467f src:manual/17-esptool.md:174 klas:E -->
+### T-17-076 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1437,8 +1618,8 @@
 
 ---
 
-<!-- fc id:T-17-071 sha:501abb75 src:manual/17-esptool.md:155 klas:B -->
-### T-17-071 · proza · рядок 155
+<!-- fc id:T-17-077 sha:501abb75 src:manual/17-esptool.md:179 klas:B -->
+### T-17-077 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1459,8 +1640,8 @@
 
 ---
 
-<!-- fc id:T-17-072 sha:2b455157 src:manual/17-esptool.md:158 klas:A -->
-### T-17-072 · proza · рядок 158
+<!-- fc id:T-17-078 sha:2b455157 src:manual/17-esptool.md:182 klas:A -->
+### T-17-078 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -1495,8 +1676,8 @@
 
 ---
 
-<!-- fc id:T-17-073 sha:d9b8c3fc src:manual/17-esptool.md:162 klas:E -->
-### T-17-073 · proza · рядок 162
+<!-- fc id:T-17-079 sha:d9b8c3fc src:manual/17-esptool.md:186 klas:E -->
+### T-17-079 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1508,8 +1689,8 @@
 
 ---
 
-<!-- fc id:T-17-074 sha:72b6debe src:manual/17-esptool.md:162 klas:A -->
-### T-17-074 · proza · рядок 162
+<!-- fc id:T-17-080 sha:72b6debe src:manual/17-esptool.md:186 klas:A -->
+### T-17-080 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1541,8 +1722,8 @@
 
 ---
 
-<!-- fc id:T-17-075 sha:6361b41c src:manual/17-esptool.md:165 klas:E -->
-### T-17-075 · proza · рядок 165
+<!-- fc id:T-17-081 sha:6361b41c src:manual/17-esptool.md:189 klas:E -->
+### T-17-081 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1554,8 +1735,8 @@
 
 ---
 
-<!-- fc id:T-17-076 sha:5a1c829e src:manual/17-esptool.md:167 klas:K -->
-### T-17-076 · kod · рядок 167
+<!-- fc id:T-17-082 sha:5a1c829e src:manual/17-esptool.md:191 klas:K -->
+### T-17-082 · kod · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -1591,8 +1772,8 @@
 
 ---
 
-<!-- fc id:T-17-077 sha:b3a989e0 src:manual/17-esptool.md:168 klas:A -->
-### T-17-077 · kod-ryadok · рядок 168
+<!-- fc id:T-17-083 sha:b3a989e0 src:manual/17-esptool.md:192 klas:A -->
+### T-17-083 · kod-ryadok · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1626,8 +1807,8 @@
 
 ---
 
-<!-- fc id:T-17-078 sha:31d5a3a2 src:manual/17-esptool.md:173 klas:K -->
-### T-17-078 · kod · рядок 173
+<!-- fc id:T-17-084 sha:31d5a3a2 src:manual/17-esptool.md:197 klas:K -->
+### T-17-084 · kod · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1663,8 +1844,8 @@
 
 ---
 
-<!-- fc id:T-17-079 sha:c93ce3ef src:manual/17-esptool.md:174 klas:A -->
-### T-17-079 · kod-ryadok · рядок 174
+<!-- fc id:T-17-085 sha:c93ce3ef src:manual/17-esptool.md:198 klas:A -->
+### T-17-085 · kod-ryadok · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1698,8 +1879,8 @@
 
 ---
 
-<!-- fc id:T-17-080 sha:61989c98 src:manual/17-esptool.md:177 klas:E -->
-### T-17-080 · proza · рядок 177
+<!-- fc id:T-17-086 sha:61989c98 src:manual/17-esptool.md:201 klas:E -->
+### T-17-086 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1711,8 +1892,8 @@
 
 ---
 
-<!-- fc id:T-17-081 sha:6337a912 src:manual/17-esptool.md:177 klas:A -->
-### T-17-081 · proza · рядок 177
+<!-- fc id:T-17-087 sha:6337a912 src:manual/17-esptool.md:201 klas:A -->
+### T-17-087 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1746,8 +1927,8 @@
 
 ---
 
-<!-- fc id:T-17-082 sha:306c9a4d src:manual/17-esptool.md:177 klas:E -->
-### T-17-082 · proza · рядок 177
+<!-- fc id:T-17-088 sha:306c9a4d src:manual/17-esptool.md:201 klas:E -->
+### T-17-088 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1759,8 +1940,8 @@
 
 ---
 
-<!-- fc id:T-17-083 sha:3f578024 src:manual/17-esptool.md:183 klas:E -->
-### T-17-083 · proza · рядок 183
+<!-- fc id:T-17-089 sha:3f578024 src:manual/17-esptool.md:207 klas:E -->
+### T-17-089 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1772,8 +1953,8 @@
 
 ---
 
-<!-- fc id:T-17-084 sha:fc4482af src:manual/17-esptool.md:183 klas:A -->
-### T-17-084 · proza · рядок 183
+<!-- fc id:T-17-090 sha:fc4482af src:manual/17-esptool.md:207 klas:A -->
+### T-17-090 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1803,8 +1984,8 @@
 
 ---
 
-<!-- fc id:T-17-085 sha:c1d44c0d src:manual/17-esptool.md:187 klas:K -->
-### T-17-085 · kod · рядок 187
+<!-- fc id:T-17-091 sha:c1d44c0d src:manual/17-esptool.md:211 klas:K -->
+### T-17-091 · kod · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -1838,8 +2019,8 @@
 
 ---
 
-<!-- fc id:T-17-086 sha:86df9991 src:manual/17-esptool.md:188 klas:A -->
-### T-17-086 · kod-ryadok · рядок 188
+<!-- fc id:T-17-092 sha:86df9991 src:manual/17-esptool.md:212 klas:A -->
+### T-17-092 · kod-ryadok · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1868,8 +2049,8 @@
 
 ---
 
-<!-- fc id:T-17-087 sha:265e633f src:manual/17-esptool.md:194 klas:A -->
-### T-17-087 · proza · рядок 194
+<!-- fc id:T-17-093 sha:265e633f src:manual/17-esptool.md:218 klas:A -->
+### T-17-093 · proza · рядок 218
 
 **Книга каже, дослівно:**
 
@@ -1898,8 +2079,8 @@
 
 ---
 
-<!-- fc id:T-17-088 sha:6579e87b src:manual/17-esptool.md:194 klas:A -->
-### T-17-088 · proza · рядок 194
+<!-- fc id:T-17-094 sha:6579e87b src:manual/17-esptool.md:218 klas:A -->
+### T-17-094 · proza · рядок 218
 
 **Книга каже, дослівно:**
 
@@ -1929,8 +2110,8 @@
 
 ---
 
-<!-- fc id:T-17-089 sha:7acf702f src:manual/17-esptool.md:194 klas:A -->
-### T-17-089 · proza · рядок 194
+<!-- fc id:T-17-095 sha:7acf702f src:manual/17-esptool.md:218 klas:A -->
+### T-17-095 · proza · рядок 218
 
 **Книга каже, дослівно:**
 
@@ -1959,8 +2140,8 @@
 
 ---
 
-<!-- fc id:T-17-090 sha:2431f38a src:manual/17-esptool.md:199 klas:F -->
-### T-17-090 · proza · рядок 199
+<!-- fc id:T-17-096 sha:2431f38a src:manual/17-esptool.md:223 klas:F -->
+### T-17-096 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -1972,8 +2153,8 @@
 
 ---
 
-<!-- fc id:T-17-091 sha:66ee792a src:manual/17-esptool.md:199 klas:A -->
-### T-17-091 · proza · рядок 199
+<!-- fc id:T-17-097 sha:66ee792a src:manual/17-esptool.md:223 klas:A -->
+### T-17-097 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -2003,8 +2184,8 @@
 
 ---
 
-<!-- fc id:T-17-092 sha:a8ba7c8e src:manual/17-esptool.md:204 klas:F -->
-### T-17-092 · proza · рядок 204
+<!-- fc id:T-17-098 sha:a8ba7c8e src:manual/17-esptool.md:228 klas:F -->
+### T-17-098 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -2016,8 +2197,8 @@
 
 ---
 
-<!-- fc id:T-17-093 sha:ba49e524 src:manual/17-esptool.md:207 klas:K -->
-### T-17-093 · kod · рядок 207
+<!-- fc id:T-17-099 sha:ba49e524 src:manual/17-esptool.md:231 klas:K -->
+### T-17-099 · kod · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -2051,8 +2232,8 @@
 
 ---
 
-<!-- fc id:T-17-094 sha:f1947da9 src:manual/17-esptool.md:208 klas:A -->
-### T-17-094 · kod-ryadok · рядок 208
+<!-- fc id:T-17-100 sha:f1947da9 src:manual/17-esptool.md:232 klas:A -->
+### T-17-100 · kod-ryadok · рядок 232
 
 **Книга каже, дослівно:**
 
@@ -2084,8 +2265,8 @@
 
 ---
 
-<!-- fc id:T-17-095 sha:d53fd3ce src:manual/17-esptool.md:211 klas:E -->
-### T-17-095 · proza · рядок 211
+<!-- fc id:T-17-101 sha:d53fd3ce src:manual/17-esptool.md:235 klas:E -->
+### T-17-101 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -2097,8 +2278,8 @@
 
 ---
 
-<!-- fc id:T-17-096 sha:a0822607 src:manual/17-esptool.md:211 klas:E -->
-### T-17-096 · proza · рядок 211
+<!-- fc id:T-17-102 sha:a0822607 src:manual/17-esptool.md:235 klas:E -->
+### T-17-102 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -2110,8 +2291,8 @@
 
 ---
 
-<!-- fc id:T-17-097 sha:0c354cb5 src:manual/17-esptool.md:217 klas:F -->
-### T-17-097 · proza · рядок 217
+<!-- fc id:T-17-103 sha:0c354cb5 src:manual/17-esptool.md:241 klas:F -->
+### T-17-103 · proza · рядок 241
 
 **Книга каже, дослівно:**
 
@@ -2123,8 +2304,8 @@
 
 ---
 
-<!-- fc id:T-17-098 sha:ed62f710 src:manual/17-esptool.md:217 klas:F -->
-### T-17-098 · proza · рядок 217
+<!-- fc id:T-17-104 sha:ed62f710 src:manual/17-esptool.md:241 klas:F -->
+### T-17-104 · proza · рядок 241
 
 **Книга каже, дослівно:**
 
@@ -2136,8 +2317,8 @@
 
 ---
 
-<!-- fc id:T-17-099 sha:aa4bc88d src:manual/17-esptool.md:220 klas:K -->
-### T-17-099 · kod · рядок 220
+<!-- fc id:T-17-105 sha:aa4bc88d src:manual/17-esptool.md:244 klas:K -->
+### T-17-105 · kod · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -2164,8 +2345,8 @@
 
 ---
 
-<!-- fc id:T-17-100 sha:8d510e99 src:manual/17-esptool.md:221 klas:A -->
-### T-17-100 · kod-ryadok · рядок 221
+<!-- fc id:T-17-106 sha:8d510e99 src:manual/17-esptool.md:245 klas:A -->
+### T-17-106 · kod-ryadok · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -2190,8 +2371,8 @@
 
 ---
 
-<!-- fc id:T-17-101 sha:85f58bc1 src:manual/17-esptool.md:224 klas:E -->
-### T-17-101 · proza · рядок 224
+<!-- fc id:T-17-107 sha:85f58bc1 src:manual/17-esptool.md:248 klas:E -->
+### T-17-107 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -2203,8 +2384,8 @@
 
 ---
 
-<!-- fc id:T-17-102 sha:06b69d9f src:manual/17-esptool.md:224 klas:A -->
-### T-17-102 · proza · рядок 224
+<!-- fc id:T-17-108 sha:06b69d9f src:manual/17-esptool.md:248 klas:A -->
+### T-17-108 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -2229,8 +2410,8 @@
 
 ---
 
-<!-- fc id:T-17-103 sha:6edab381 src:manual/17-esptool.md:230 klas:A -->
-### T-17-103 · proza · рядок 230
+<!-- fc id:T-17-109 sha:6edab381 src:manual/17-esptool.md:254 klas:A -->
+### T-17-109 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -2267,8 +2448,8 @@
 
 ---
 
-<!-- fc id:T-17-104 sha:c0359df7 src:manual/17-esptool.md:234 klas:A -->
-### T-17-104 · proza · рядок 234
+<!-- fc id:T-17-110 sha:c0359df7 src:manual/17-esptool.md:258 klas:A -->
+### T-17-110 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -2293,8 +2474,8 @@
 
 ---
 
-<!-- fc id:T-17-105 sha:5a1fb7e0 src:manual/17-esptool.md:237 klas:A -->
-### T-17-105 · proza · рядок 237
+<!-- fc id:T-17-111 sha:5a1fb7e0 src:manual/17-esptool.md:261 klas:A -->
+### T-17-111 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -2319,8 +2500,8 @@
 
 ---
 
-<!-- fc id:T-17-106 sha:36e4678e src:manual/17-esptool.md:243 klas:A -->
-### T-17-106 · proza · рядок 243
+<!-- fc id:T-17-112 sha:36e4678e src:manual/17-esptool.md:267 klas:A -->
+### T-17-112 · proza · рядок 267
 
 **Книга каже, дослівно:**
 
@@ -2357,8 +2538,8 @@
 
 ---
 
-<!-- fc id:T-17-107 sha:046e97d7 src:manual/17-esptool.md:246 klas:E -->
-### T-17-107 · proza · рядок 246
+<!-- fc id:T-17-113 sha:046e97d7 src:manual/17-esptool.md:270 klas:E -->
+### T-17-113 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -2370,8 +2551,8 @@
 
 ---
 
-<!-- fc id:T-17-108 sha:7eae188f src:manual/17-esptool.md:250 klas:E -->
-### T-17-108 · proza · рядок 250
+<!-- fc id:T-17-114 sha:7eae188f src:manual/17-esptool.md:274 klas:E -->
+### T-17-114 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -2383,8 +2564,8 @@
 
 ---
 
-<!-- fc id:T-17-109 sha:a9001ab8 src:manual/17-esptool.md:250 klas:A -->
-### T-17-109 · proza · рядок 250
+<!-- fc id:T-17-115 sha:a9001ab8 src:manual/17-esptool.md:274 klas:A -->
+### T-17-115 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -2421,8 +2602,8 @@
 
 ---
 
-<!-- fc id:T-17-110 sha:2936ba3a src:manual/17-esptool.md:250 klas:A -->
-### T-17-110 · proza · рядок 250
+<!-- fc id:T-17-116 sha:2936ba3a src:manual/17-esptool.md:274 klas:A -->
+### T-17-116 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -2451,8 +2632,8 @@
 
 ---
 
-<!-- fc id:T-17-111 sha:81eb3b69 src:manual/17-esptool.md:256 klas:F -->
-### T-17-111 · proza · рядок 256
+<!-- fc id:T-17-117 sha:81eb3b69 src:manual/17-esptool.md:280 klas:F -->
+### T-17-117 · proza · рядок 280
 
 **Книга каже, дослівно:**
 
@@ -2464,8 +2645,8 @@
 
 ---
 
-<!-- fc id:T-17-112 sha:c018ab70 src:manual/17-esptool.md:258 klas:F -->
-### T-17-112 · proza · рядок 258
+<!-- fc id:T-17-118 sha:c018ab70 src:manual/17-esptool.md:282 klas:F -->
+### T-17-118 · proza · рядок 282
 
 **Книга каже, дослівно:**
 
@@ -2477,8 +2658,8 @@
 
 ---
 
-<!-- fc id:T-17-113 sha:1070199a src:manual/17-esptool.md:258 klas:F -->
-### T-17-113 · proza · рядок 258
+<!-- fc id:T-17-119 sha:1070199a src:manual/17-esptool.md:282 klas:F -->
+### T-17-119 · proza · рядок 282
 
 **Книга каже, дослівно:**
 
@@ -2490,8 +2671,8 @@
 
 ---
 
-<!-- fc id:T-17-114 sha:7c5d9fa9 src:manual/17-esptool.md:261 klas:A -->
-### T-17-114 · proza · рядок 261
+<!-- fc id:T-17-120 sha:7c5d9fa9 src:manual/17-esptool.md:285 klas:A -->
+### T-17-120 · proza · рядок 285
 
 **Книга каже, дослівно:**
 
@@ -2520,8 +2701,8 @@
 
 ---
 
-<!-- fc id:T-17-115 sha:d0ad404c src:manual/17-esptool.md:263 klas:F -->
-### T-17-115 · proza · рядок 263
+<!-- fc id:T-17-121 sha:d0ad404c src:manual/17-esptool.md:287 klas:F -->
+### T-17-121 · proza · рядок 287
 
 **Книга каже, дослівно:**
 
@@ -2533,8 +2714,8 @@
 
 ---
 
-<!-- fc id:T-17-116 sha:cf4197d0 src:manual/17-esptool.md:263 klas:E -->
-### T-17-116 · proza · рядок 263
+<!-- fc id:T-17-122 sha:cf4197d0 src:manual/17-esptool.md:287 klas:E -->
+### T-17-122 · proza · рядок 287
 
 **Книга каже, дослівно:**
 
@@ -2546,8 +2727,8 @@
 
 ---
 
-<!-- fc id:T-17-117 sha:e7619250 src:manual/17-esptool.md:266 klas:A -->
-### T-17-117 · proza · рядок 266
+<!-- fc id:T-17-123 sha:e7619250 src:manual/17-esptool.md:290 klas:A -->
+### T-17-123 · proza · рядок 290
 
 **Книга каже, дослівно:**
 
@@ -2584,8 +2765,8 @@
 
 ---
 
-<!-- fc id:T-17-118 sha:c6ae817f src:manual/17-esptool.md:268 klas:E -->
-### T-17-118 · proza · рядок 268
+<!-- fc id:T-17-124 sha:c6ae817f src:manual/17-esptool.md:292 klas:E -->
+### T-17-124 · proza · рядок 292
 
 **Книга каже, дослівно:**
 
@@ -2597,8 +2778,8 @@
 
 ---
 
-<!-- fc id:T-17-119 sha:dc7b5a5b src:manual/17-esptool.md:268 klas:E -->
-### T-17-119 · proza · рядок 268
+<!-- fc id:T-17-125 sha:dc7b5a5b src:manual/17-esptool.md:292 klas:E -->
+### T-17-125 · proza · рядок 292
 
 **Книга каже, дослівно:**
 
@@ -2610,8 +2791,8 @@
 
 ---
 
-<!-- fc id:T-17-120 sha:ea00dd94 src:manual/17-esptool.md:268 klas:F -->
-### T-17-120 · proza · рядок 268
+<!-- fc id:T-17-126 sha:ea00dd94 src:manual/17-esptool.md:292 klas:F -->
+### T-17-126 · proza · рядок 292
 
 **Книга каже, дослівно:**
 
@@ -2623,8 +2804,8 @@
 
 ---
 
-<!-- fc id:T-17-121 sha:acad2592 src:manual/17-esptool.md:268 klas:E -->
-### T-17-121 · proza · рядок 268
+<!-- fc id:T-17-127 sha:acad2592 src:manual/17-esptool.md:292 klas:E -->
+### T-17-127 · proza · рядок 292
 
 **Книга каже, дослівно:**
 
@@ -2636,8 +2817,8 @@
 
 ---
 
-<!-- fc id:T-17-122 sha:ec91ebc5 src:manual/17-esptool.md:273 klas:F -->
-### T-17-122 · proza · рядок 273
+<!-- fc id:T-17-128 sha:ec91ebc5 src:manual/17-esptool.md:297 klas:F -->
+### T-17-128 · proza · рядок 297
 
 **Книга каже, дослівно:**
 
@@ -2649,8 +2830,8 @@
 
 ---
 
-<!-- fc id:T-17-123 sha:290a4865 src:manual/17-esptool.md:275 klas:E -->
-### T-17-123 · proza · рядок 275
+<!-- fc id:T-17-129 sha:290a4865 src:manual/17-esptool.md:299 klas:E -->
+### T-17-129 · proza · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -2662,8 +2843,8 @@
 
 ---
 
-<!-- fc id:T-17-124 sha:5e738a7f src:manual/17-esptool.md:275 klas:A -->
-### T-17-124 · proza · рядок 275
+<!-- fc id:T-17-130 sha:5e738a7f src:manual/17-esptool.md:299 klas:A -->
+### T-17-130 · proza · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -2692,8 +2873,8 @@
 
 ---
 
-<!-- fc id:T-17-125 sha:c0befa74 src:manual/17-esptool.md:275 klas:E -->
-### T-17-125 · proza · рядок 275
+<!-- fc id:T-17-131 sha:c0befa74 src:manual/17-esptool.md:299 klas:E -->
+### T-17-131 · proza · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -2705,8 +2886,8 @@
 
 ---
 
-<!-- fc id:T-17-126 sha:c229b138 src:manual/17-esptool.md:279 klas:A -->
-### T-17-126 · proza · рядок 279
+<!-- fc id:T-17-132 sha:c229b138 src:manual/17-esptool.md:303 klas:A -->
+### T-17-132 · proza · рядок 303
 
 **Книга каже, дослівно:**
 
@@ -2743,8 +2924,8 @@
 
 ---
 
-<!-- fc id:T-17-127 sha:2d9087c4 src:manual/17-esptool.md:281 klas:A -->
-### T-17-127 · proza · рядок 281
+<!-- fc id:T-17-133 sha:2d9087c4 src:manual/17-esptool.md:305 klas:A -->
+### T-17-133 · proza · рядок 305
 
 **Книга каже, дослівно:**
 
@@ -2773,8 +2954,8 @@
 
 ---
 
-<!-- fc id:T-17-128 sha:efdb570a src:manual/17-esptool.md:281 klas:F -->
-### T-17-128 · proza · рядок 281
+<!-- fc id:T-17-134 sha:efdb570a src:manual/17-esptool.md:305 klas:F -->
+### T-17-134 · proza · рядок 305
 
 **Книга каже, дослівно:**
 
@@ -2786,8 +2967,8 @@
 
 ---
 
-<!-- fc id:T-17-129 sha:8a18dd3e src:manual/17-esptool.md:284 klas:F -->
-### T-17-129 · proza · рядок 284
+<!-- fc id:T-17-135 sha:8a18dd3e src:manual/17-esptool.md:308 klas:F -->
+### T-17-135 · proza · рядок 308
 
 **Книга каже, дослівно:**
 
@@ -2799,8 +2980,8 @@
 
 ---
 
-<!-- fc id:T-17-130 sha:f7560ce0 src:manual/17-esptool.md:286 klas:E -->
-### T-17-130 · proza · рядок 286
+<!-- fc id:T-17-136 sha:f7560ce0 src:manual/17-esptool.md:310 klas:E -->
+### T-17-136 · proza · рядок 310
 
 **Книга каже, дослівно:**
 
@@ -2812,8 +2993,8 @@
 
 ---
 
-<!-- fc id:T-17-131 sha:567f0570 src:manual/17-esptool.md:286 klas:A -->
-### T-17-131 · proza · рядок 286
+<!-- fc id:T-17-137 sha:567f0570 src:manual/17-esptool.md:310 klas:A -->
+### T-17-137 · proza · рядок 310
 
 **Книга каже, дослівно:**
 
@@ -2838,8 +3019,8 @@
 
 ---
 
-<!-- fc id:T-17-132 sha:f93a70ab src:manual/17-esptool.md:291 klas:F -->
-### T-17-132 · proza · рядок 291
+<!-- fc id:T-17-138 sha:f93a70ab src:manual/17-esptool.md:315 klas:F -->
+### T-17-138 · proza · рядок 315
 
 **Книга каже, дослівно:**
 
@@ -2851,8 +3032,8 @@
 
 ---
 
-<!-- fc id:T-17-133 sha:c2ed87c0 src:manual/17-esptool.md:293 klas:K -->
-### T-17-133 · kod · рядок 293
+<!-- fc id:T-17-139 sha:c2ed87c0 src:manual/17-esptool.md:317 klas:K -->
+### T-17-139 · kod · рядок 317
 
 **Книга каже, дослівно:**
 
@@ -2886,8 +3067,8 @@
 
 ---
 
-<!-- fc id:T-17-134 sha:e196de7b src:manual/17-esptool.md:294 klas:A -->
-### T-17-134 · kod-ryadok · рядок 294
+<!-- fc id:T-17-140 sha:e196de7b src:manual/17-esptool.md:318 klas:A -->
+### T-17-140 · kod-ryadok · рядок 318
 
 **Книга каже, дослівно:**
 
@@ -2919,8 +3100,8 @@
 
 ---
 
-<!-- fc id:T-17-135 sha:10d41f6e src:manual/17-esptool.md:297 klas:A -->
-### T-17-135 · proza · рядок 297
+<!-- fc id:T-17-141 sha:10d41f6e src:manual/17-esptool.md:321 klas:A -->
+### T-17-141 · proza · рядок 321
 
 **Книга каже, дослівно:**
 
@@ -2945,8 +3126,8 @@
 
 ---
 
-<!-- fc id:T-17-136 sha:6ac44b20 src:manual/17-esptool.md:297 klas:E -->
-### T-17-136 · proza · рядок 297
+<!-- fc id:T-17-142 sha:6ac44b20 src:manual/17-esptool.md:321 klas:E -->
+### T-17-142 · proza · рядок 321
 
 **Книга каже, дослівно:**
 
@@ -2958,8 +3139,8 @@
 
 ---
 
-<!-- fc id:T-17-137 sha:59239464 src:manual/17-esptool.md:301 klas:F -->
-### T-17-137 · proza · рядок 301
+<!-- fc id:T-17-143 sha:59239464 src:manual/17-esptool.md:325 klas:F -->
+### T-17-143 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2971,8 +3152,8 @@
 
 ---
 
-<!-- fc id:T-17-138 sha:391b6f3d src:manual/17-esptool.md:304 klas:A -->
-### T-17-138 · proza · рядок 304
+<!-- fc id:T-17-144 sha:391b6f3d src:manual/17-esptool.md:328 klas:A -->
+### T-17-144 · proza · рядок 328
 
 **Книга каже, дослівно:**
 
@@ -3009,8 +3190,8 @@
 
 ---
 
-<!-- fc id:T-17-139 sha:2d2315ba src:manual/17-esptool.md:304 klas:E -->
-### T-17-139 · proza · рядок 304
+<!-- fc id:T-17-145 sha:2d2315ba src:manual/17-esptool.md:328 klas:E -->
+### T-17-145 · proza · рядок 328
 
 **Книга каже, дослівно:**
 
@@ -3022,8 +3203,8 @@
 
 ---
 
-<!-- fc id:T-17-140 sha:6f4d2986 src:manual/17-esptool.md:306 klas:A -->
-### T-17-140 · proza · рядок 306
+<!-- fc id:T-17-146 sha:6f4d2986 src:manual/17-esptool.md:330 klas:A -->
+### T-17-146 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -3052,8 +3233,8 @@
 
 ---
 
-<!-- fc id:T-17-141 sha:4a61aa2a src:manual/17-esptool.md:306 klas:E -->
-### T-17-141 · proza · рядок 306
+<!-- fc id:T-17-147 sha:4a61aa2a src:manual/17-esptool.md:330 klas:E -->
+### T-17-147 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -3065,8 +3246,8 @@
 
 ---
 
-<!-- fc id:T-17-142 sha:6c0640de src:manual/17-esptool.md:306 klas:F -->
-### T-17-142 · proza · рядок 306
+<!-- fc id:T-17-148 sha:6c0640de src:manual/17-esptool.md:330 klas:F -->
+### T-17-148 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -3078,8 +3259,8 @@
 
 ---
 
-<!-- fc id:T-17-143 sha:0df8e570 src:manual/17-esptool.md:310 klas:A -->
-### T-17-143 · proza · рядок 310
+<!-- fc id:T-17-149 sha:0df8e570 src:manual/17-esptool.md:334 klas:A -->
+### T-17-149 · proza · рядок 334
 
 **Книга каже, дослівно:**
 
@@ -3116,8 +3297,8 @@
 
 ---
 
-<!-- fc id:T-17-144 sha:d286f7b3 src:manual/17-esptool.md:314 klas:F -->
-### T-17-144 · proza · рядок 314
+<!-- fc id:T-17-150 sha:d286f7b3 src:manual/17-esptool.md:338 klas:F -->
+### T-17-150 · proza · рядок 338
 
 **Книга каже, дослівно:**
 
@@ -3129,8 +3310,8 @@
 
 ---
 
-<!-- fc id:T-17-145 sha:2a9519b0 src:manual/17-esptool.md:319 klas:E -->
-### T-17-145 · proza · рядок 319
+<!-- fc id:T-17-151 sha:2a9519b0 src:manual/17-esptool.md:343 klas:E -->
+### T-17-151 · proza · рядок 343
 
 **Книга каже, дослівно:**
 
@@ -3142,8 +3323,8 @@
 
 ---
 
-<!-- fc id:T-17-146 sha:918d6503 src:manual/17-esptool.md:319 klas:E -->
-### T-17-146 · proza · рядок 319
+<!-- fc id:T-17-152 sha:918d6503 src:manual/17-esptool.md:343 klas:E -->
+### T-17-152 · proza · рядок 343
 
 **Книга каже, дослівно:**
 
@@ -3155,8 +3336,8 @@
 
 ---
 
-<!-- fc id:T-17-147 sha:313ef396 src:manual/17-esptool.md:323 klas:F -->
-### T-17-147 · proza · рядок 323
+<!-- fc id:T-17-153 sha:313ef396 src:manual/17-esptool.md:347 klas:F -->
+### T-17-153 · proza · рядок 347
 
 **Книга каже, дослівно:**
 
@@ -3168,8 +3349,8 @@
 
 ---
 
-<!-- fc id:T-17-148 sha:e977c57d src:manual/17-esptool.md:323 klas:E -->
-### T-17-148 · proza · рядок 323
+<!-- fc id:T-17-154 sha:e977c57d src:manual/17-esptool.md:347 klas:E -->
+### T-17-154 · proza · рядок 347
 
 **Книга каже, дослівно:**
 
@@ -3181,8 +3362,8 @@
 
 ---
 
-<!-- fc id:T-17-149 sha:2d322667 src:manual/17-esptool.md:330 klas:A -->
-### T-17-149 · proza · рядок 330
+<!-- fc id:T-17-155 sha:2d322667 src:manual/17-esptool.md:354 klas:A -->
+### T-17-155 · proza · рядок 354
 
 **Книга каже, дослівно:**
 
@@ -3217,30 +3398,52 @@
 
 ---
 
-<!-- fc id:T-17-150 sha:8eda1231 src:manual/17-esptool.md:332 klas:B -->
-### T-17-150 · proza · рядок 332
+<!-- fc id:T-17-156 sha:4430be4b src:manual/17-esptool.md:356 klas:A -->
+### T-17-156 · proza · рядок 356
 
 **Книга каже, дослівно:**
 
-> `chip-id` і `flash-id` — перші дві команди для будь-якої незнайомої плати.
+> Сімейство, ревізію і MAC друкує **преамбула з'єднання**, а не окрема команда.
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst та .../esptool/basic-commands.rst
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
 - **Дослівно з джерела:**
-  > esptool is a Python-based, open-source, platform-independent utility to
-  > communicate with the ROM bootloader in Espressif chips.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і це свідомо. Дослівно з джерела випливає лише перше твердження — що `esptool` розмовляє з ROM-бутлоадером.
-Решта («перші дві команди для незнайомої плати», «дамп до першої зміни», «доки чип відповідає на `chip-id`, він живий») — **порядок дій**, який випливає з властивостей команд однозначно, але в жодному документі так не сформульований. Це рекомендація книги, побудована на звірених фактах, і чесний клас для неї — `B`.
-Записую це окремо, бо спокуса поставити `A` тут така сама, як була з JTAG-пінами в проході 20: твердження здається загальновідомим і безсумнівним. Але «безсумнівне» і «процитоване» — різні класи.
-- **Прохід:** pass-29-log-i-reshta-komand
+  > # 2) Print the chip info
+  > ...
+  > else:
+  >     log.print(f"{'Chip type:':<20}{esp.get_chip_description()}")
+  >     log.print(f"{'Features:':<20}{', '.join(esp.get_chip_features())}")
+  >     log.print(f"{'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz")
+  >     usb_mode = esp.get_usb_mode()
+  >     if usb_mode is not None:
+  >         log.print(f"{'USB mode:':<20}{usb_mode}")
+  >     read_mac(esp)
+- **Спосіб і дата:** curl raw.githubusercontent, перевірено М1, 2026-08-26
+- **Нотатка:** Цей блок виконується **до** виклику підкоманди й не залежить від того, яка вона. Тому будь-яка команда, що взагалі під'єдналася, уже назвала сімейство, ревізію, частоту кристала й MAC.
+Практичний наслідок для книги виявився ширшим за виправлення: правило «перша команда для незнайомої плати» тепер `flash-id` не тому, що вона краще ідентифікує чип, а тому, що вона додає до безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
+Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки К1 і К10, додаток C, дві вкладки. Формулювання заведено в `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою старої фрази в розділ 23 — знаходиться.
+Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17 тепер **пояснює**, чому команди краще не вживати, і мусить цитувати її назву.
+- **Прохід:** pass-36-chip-id
 
 ---
 
-<!-- fc id:T-17-151 sha:a7f08f37 src:manual/17-esptool.md:334 klas:B -->
-### T-17-151 · proza · рядок 334
+<!-- fc id:T-17-157 sha:2afe9b5f src:manual/17-esptool.md:356 klas:F -->
+### T-17-157 · proza · рядок 356
+
+**Книга каже, дослівно:**
+
+> `flash-id` — перша команда для будь-якої незнайомої плати: шапка плюс обсяг флешу.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-158 sha:a7f08f37 src:manual/17-esptool.md:360 klas:B -->
+### T-17-158 · proza · рядок 360
 
 **Книга каже, дослівно:**
 
@@ -3261,8 +3464,8 @@
 
 ---
 
-<!-- fc id:T-17-152 sha:0de9cf8b src:manual/17-esptool.md:334 klas:E -->
-### T-17-152 · proza · рядок 334
+<!-- fc id:T-17-159 sha:0de9cf8b src:manual/17-esptool.md:360 klas:E -->
+### T-17-159 · proza · рядок 360
 
 **Книга каже, дослівно:**
 
@@ -3274,8 +3477,8 @@
 
 ---
 
-<!-- fc id:T-17-153 sha:42368b26 src:manual/17-esptool.md:337 klas:A -->
-### T-17-153 · proza · рядок 337
+<!-- fc id:T-17-160 sha:42368b26 src:manual/17-esptool.md:363 klas:A -->
+### T-17-160 · proza · рядок 363
 
 **Книга каже, дослівно:**
 
@@ -3309,8 +3512,8 @@
 
 ---
 
-<!-- fc id:T-17-154 sha:33a8f7c8 src:manual/17-esptool.md:339 klas:A -->
-### T-17-154 · proza · рядок 339
+<!-- fc id:T-17-161 sha:33a8f7c8 src:manual/17-esptool.md:365 klas:A -->
+### T-17-161 · proza · рядок 365
 
 **Книга каже, дослівно:**
 

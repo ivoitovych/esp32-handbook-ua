@@ -10,7 +10,8 @@
 ### Розвідка
 
 ```
-esptool --port /dev/ttyUSB0 chip-id          # сімейство, ревізія, MAC
+# сімейство, ревізію і MAC друкує шапка з'єднання — перед будь-якою
+# командою; окремої команди для цього немає (розділ 17)
 esptool --port /dev/ttyUSB0 flash-id         # виробник і обсяг флешу
 esptool --port /dev/ttyUSB0 read-mac
 esptool version

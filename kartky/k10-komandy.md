@@ -6,7 +6,7 @@
 ## esptool
 
 ```
-esptool --port /dev/ttyUSB0 chip-id            # що за чип і ревізія
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
 esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
 esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
 esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити

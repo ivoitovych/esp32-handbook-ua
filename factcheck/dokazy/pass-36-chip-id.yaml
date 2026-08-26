@@ -1,0 +1,95 @@
+# Прохід 36 — шматок 8 пулу: `chip-id` не є командою для ESP32.
+#
+# Агент шматка 8 сам поставив цю знахідку першою за шкодою серед
+# сорока трьох перевірених. Оцінка правильна, але не з тієї причини,
+# яку він назвав: команда не «не працює». Вона працює й друкує MAC.
+# Хибне в книзі — **приписування**: сімейство і ревізію називає не
+# вона, а преамбула з'єднання, спільна для всіх підкоманд.
+#
+# Тобто читач, що виконав книжкову команду, отримував правильну
+# відповідь — плюс попередження, якого книга не пояснювала. Це та сама
+# четверта категорія з проходу 26: не число і не пояснення, а
+# **напрямок висновку**.
+
+- nazva: "chip-id на сімействі ESP32 повертає попередження, а не Chip ID"
+  zbih: 'Чому не `chip-id`|успадкована від ESP8266, у якого справді був окремий Chip ID|has no chip ID\. Reading MAC address instead|`chip_id`, `flash_id`'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/esptool/cmds.py,
+    .../esptool/loader.py, .../esptool/targets/esp8266.py
+  cytata: |
+    (cmds.py)
+    def chip_id(esp: ESPLoader) -> None:
+        """
+        Read and display the Chip ID of the ESP device if available,
+        otherwise fall back to displaying the MAC address.
+        """
+        try:
+            chipid = esp.chip_id()
+            log.print(f"Chip ID: {chipid:#010x}")
+        except NotSupportedError:
+            log.warn(f"{esp.CHIP_NAME} has no chip ID. "
+                     "Reading MAC address instead.")
+            read_mac(esp)
+
+    (loader.py — базовий клас ESPLoader)
+    def chip_id(self):
+        raise NotSupportedError(self, "Function chip_id")
+
+    (targets/esp8266.py — єдине перевизначення в дереві)
+    def chip_id(self):
+        """
+        Read Chip ID from efuse - the equivalent of the SDK
+        system_get_chip_id() func
+        """
+        id0 = self.read_reg(self.ESP_OTP_MAC0)
+        id1 = self.read_reg(self.ESP_OTP_MAC1)
+        return (id0 >> 24) | ((id1 & 0xFFFFFF) << 8)
+  sposib: >-
+    curl raw.githubusercontent — знахідку подав агент пулу (шматок 8),
+    джерело перевірене М1 самостійно, 2026-08-26
+  notatka: >-
+    `chip_id()` визначено рівно в двох місцях усього дерева `esptool`: у
+    базовому класі, де він кидає `NotSupportedError`, і в `esp8266.py`,
+    де він справді читає efuse. Жоден цільовий клас сімейства ESP32 його
+    не перевизначає.
+
+    Отже підкоманда — залишок від ESP8266, у якого окремий Chip ID був.
+    На ESP32 вона друкує попередження і MAC.
+
+- nazva: Сімейство, ревізію, кристал і MAC друкує преамбула з'єднання
+  zbih: 'преамбула з.єднання|Chip type:\s+ESP32-D0WD-V3|шапк[ауи] з.єднання|шапка `esptool`|друкує шапку з тим, що знайшов'
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  cytata: |
+    # 2) Print the chip info
+    ...
+    else:
+        log.print(f"{'Chip type:':<20}{esp.get_chip_description()}")
+        log.print(f"{'Features:':<20}{', '.join(esp.get_chip_features())}")
+        log.print(f"{'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz")
+        usb_mode = esp.get_usb_mode()
+        if usb_mode is not None:
+            log.print(f"{'USB mode:':<20}{usb_mode}")
+        read_mac(esp)
+  sposib: >-
+    curl raw.githubusercontent, перевірено М1, 2026-08-26
+  notatka: >-
+    Цей блок виконується **до** виклику підкоманди й не залежить від
+    того, яка вона. Тому будь-яка команда, що взагалі під'єдналася, уже
+    назвала сімейство, ревізію, частоту кристала й MAC.
+
+    Практичний наслідок для книги виявився ширшим за виправлення:
+    правило «перша команда для незнайомої плати» тепер `flash-id` не
+    тому, що вона краще ідентифікує чип, а тому, що вона додає до
+    безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
+
+    Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки
+    К1 і К10, додаток C, дві вкладки. Формулювання заведено в
+    `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою старої
+    фрази в розділ 23 — знаходиться.
+
+    Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17
+    тепер **пояснює**, чому команди краще не вживати, і мусить цитувати
+    її назву.

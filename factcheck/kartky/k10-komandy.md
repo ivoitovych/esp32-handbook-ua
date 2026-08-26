@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k10-komandy.md`
 
-Одиниць твердження: **53**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **52**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -75,13 +75,13 @@
 
 ---
 
-<!-- fc id:T-K10-004 sha:19ad006c src:kartky/k10-komandy.md:8 klas:K -->
+<!-- fc id:T-K10-004 sha:eec2887d src:kartky/k10-komandy.md:8 klas:K -->
 ### T-K10-004 · kod · рядок 8
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool --port /dev/ttyUSB0 chip-id            # що за чип і ревізія
+> # що за чип і ревізія — у шапці з'єднання перед будь-якою командою
 > esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
 > esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
 > esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
@@ -118,43 +118,8 @@
 
 ---
 
-<!-- fc id:T-K10-005 sha:df0648fe src:kartky/k10-komandy.md:9 klas:A -->
-### T-K10-005 · kod-ryadok · рядок 9
-
-**Книга каже, дослівно:**
-
-> esptool --port /dev/ttyUSB0 chip-id            # що за чип і ревізія
-
-**Доказ**
-
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
-- **Дослівно з джерела:**
-  > esptool (з переліку команд у __init__.py і документації):
-  >   write-flash read-flash erase-flash erase-region read-mac flash-id
-  >   elf2image image-info merge-bin version verify-flash dump-mem
-  >   read-mem write-mem get-security-info chip-id run …
-  > 
-  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
-  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
-  >   merge-bin monitor flash erase-flash partition-table reconfigure
-  >   set-target size size-components size-files python-clean read-otadata
-  >   efuse-summary … openocd gdb coredump-info coredump-debug
-  > 
-  > idf-component-manager: add-dependency create-manifest upload-component
-  >   create-project-from-example
-  > 
-  > Приклад із документації дослівно:
-  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
-Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
-- **Прохід:** pass-09-komandy
-
----
-
-<!-- fc id:T-K10-006 sha:8af1928d src:kartky/k10-komandy.md:10 klas:A -->
-### T-K10-006 · kod-ryadok · рядок 10
+<!-- fc id:T-K10-005 sha:8af1928d src:kartky/k10-komandy.md:10 klas:A -->
+### T-K10-005 · kod-ryadok · рядок 10
 
 **Книга каже, дослівно:**
 
@@ -188,8 +153,8 @@
 
 ---
 
-<!-- fc id:T-K10-007 sha:74ec190c src:kartky/k10-komandy.md:11 klas:A -->
-### T-K10-007 · kod-ryadok · рядок 11
+<!-- fc id:T-K10-006 sha:74ec190c src:kartky/k10-komandy.md:11 klas:A -->
+### T-K10-006 · kod-ryadok · рядок 11
 
 **Книга каже, дослівно:**
 
@@ -218,8 +183,8 @@
 
 ---
 
-<!-- fc id:T-K10-008 sha:a177909e src:kartky/k10-komandy.md:12 klas:A -->
-### T-K10-008 · kod-ryadok · рядок 12
+<!-- fc id:T-K10-007 sha:a177909e src:kartky/k10-komandy.md:12 klas:A -->
+### T-K10-007 · kod-ryadok · рядок 12
 
 **Книга каже, дослівно:**
 
@@ -251,8 +216,8 @@
 
 ---
 
-<!-- fc id:T-K10-009 sha:94bd45fa src:kartky/k10-komandy.md:13 klas:A -->
-### T-K10-009 · kod-ryadok · рядок 13
+<!-- fc id:T-K10-008 sha:94bd45fa src:kartky/k10-komandy.md:13 klas:A -->
+### T-K10-008 · kod-ryadok · рядок 13
 
 **Книга каже, дослівно:**
 
@@ -286,8 +251,8 @@
 
 ---
 
-<!-- fc id:T-K10-010 sha:d6945e3a src:kartky/k10-komandy.md:14 klas:F -->
-### T-K10-010 · kod-ryadok · рядок 14
+<!-- fc id:T-K10-009 sha:d6945e3a src:kartky/k10-komandy.md:14 klas:F -->
+### T-K10-009 · kod-ryadok · рядок 14
 
 **Книга каже, дослівно:**
 
@@ -299,8 +264,8 @@
 
 ---
 
-<!-- fc id:T-K10-011 sha:931ffa15 src:kartky/k10-komandy.md:15 klas:F -->
-### T-K10-011 · kod-ryadok · рядок 15
+<!-- fc id:T-K10-010 sha:931ffa15 src:kartky/k10-komandy.md:15 klas:F -->
+### T-K10-010 · kod-ryadok · рядок 15
 
 **Книга каже, дослівно:**
 
@@ -312,8 +277,8 @@
 
 ---
 
-<!-- fc id:T-K10-012 sha:23a7fc4e src:kartky/k10-komandy.md:16 klas:A -->
-### T-K10-012 · kod-ryadok · рядок 16
+<!-- fc id:T-K10-011 sha:23a7fc4e src:kartky/k10-komandy.md:16 klas:A -->
+### T-K10-011 · kod-ryadok · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -342,8 +307,8 @@
 
 ---
 
-<!-- fc id:T-K10-013 sha:0c80ad13 src:kartky/k10-komandy.md:17 klas:D -->
-### T-K10-013 · schema-zvyazok · рядок 17
+<!-- fc id:T-K10-012 sha:0c80ad13 src:kartky/k10-komandy.md:17 klas:D -->
+### T-K10-012 · schema-zvyazok · рядок 17
 
 **Книга каже, дослівно:**
 
@@ -368,8 +333,8 @@
 
 ---
 
-<!-- fc id:T-K10-014 sha:b9d2934d src:kartky/k10-komandy.md:22 klas:K -->
-### T-K10-014 · kod · рядок 22
+<!-- fc id:T-K10-013 sha:b9d2934d src:kartky/k10-komandy.md:22 klas:K -->
+### T-K10-013 · kod · рядок 22
 
 **Книга каже, дослівно:**
 
@@ -406,8 +371,8 @@
 
 ---
 
-<!-- fc id:T-K10-015 sha:c4f6cb74 src:kartky/k10-komandy.md:23 klas:A -->
-### T-K10-015 · kod-ryadok · рядок 23
+<!-- fc id:T-K10-014 sha:c4f6cb74 src:kartky/k10-komandy.md:23 klas:A -->
+### T-K10-014 · kod-ryadok · рядок 23
 
 **Книга каже, дослівно:**
 
@@ -441,8 +406,8 @@
 
 ---
 
-<!-- fc id:T-K10-016 sha:bb9f7106 src:kartky/k10-komandy.md:24 klas:A -->
-### T-K10-016 · kod-ryadok · рядок 24
+<!-- fc id:T-K10-015 sha:bb9f7106 src:kartky/k10-komandy.md:24 klas:A -->
+### T-K10-015 · kod-ryadok · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -476,8 +441,8 @@
 
 ---
 
-<!-- fc id:T-K10-017 sha:cc032d7c src:kartky/k10-komandy.md:25 klas:A -->
-### T-K10-017 · kod-ryadok · рядок 25
+<!-- fc id:T-K10-016 sha:cc032d7c src:kartky/k10-komandy.md:25 klas:A -->
+### T-K10-016 · kod-ryadok · рядок 25
 
 **Книга каже, дослівно:**
 
@@ -511,8 +476,8 @@
 
 ---
 
-<!-- fc id:T-K10-018 sha:5e640044 src:kartky/k10-komandy.md:26 klas:F -->
-### T-K10-018 · kod-ryadok · рядок 26
+<!-- fc id:T-K10-017 sha:5e640044 src:kartky/k10-komandy.md:26 klas:F -->
+### T-K10-017 · kod-ryadok · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -524,8 +489,8 @@
 
 ---
 
-<!-- fc id:T-K10-019 sha:399d8dd5 src:kartky/k10-komandy.md:27 klas:F -->
-### T-K10-019 · kod-ryadok · рядок 27
+<!-- fc id:T-K10-018 sha:399d8dd5 src:kartky/k10-komandy.md:27 klas:F -->
+### T-K10-018 · kod-ryadok · рядок 27
 
 **Книга каже, дослівно:**
 
@@ -537,8 +502,8 @@
 
 ---
 
-<!-- fc id:T-K10-020 sha:e95261df src:kartky/k10-komandy.md:28 klas:F -->
-### T-K10-020 · kod-ryadok · рядок 28
+<!-- fc id:T-K10-019 sha:e95261df src:kartky/k10-komandy.md:28 klas:F -->
+### T-K10-019 · kod-ryadok · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -550,8 +515,8 @@
 
 ---
 
-<!-- fc id:T-K10-021 sha:7879c453 src:kartky/k10-komandy.md:29 klas:F -->
-### T-K10-021 · kod-ryadok · рядок 29
+<!-- fc id:T-K10-020 sha:7879c453 src:kartky/k10-komandy.md:29 klas:F -->
+### T-K10-020 · kod-ryadok · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -563,8 +528,8 @@
 
 ---
 
-<!-- fc id:T-K10-022 sha:21c29912 src:kartky/k10-komandy.md:30 klas:A -->
-### T-K10-022 · kod-ryadok · рядок 30
+<!-- fc id:T-K10-021 sha:21c29912 src:kartky/k10-komandy.md:30 klas:A -->
+### T-K10-021 · kod-ryadok · рядок 30
 
 **Книга каже, дослівно:**
 
@@ -598,8 +563,8 @@
 
 ---
 
-<!-- fc id:T-K10-023 sha:0f34d83d src:kartky/k10-komandy.md:31 klas:A -->
-### T-K10-023 · kod-ryadok · рядок 31
+<!-- fc id:T-K10-022 sha:0f34d83d src:kartky/k10-komandy.md:31 klas:A -->
+### T-K10-022 · kod-ryadok · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -633,8 +598,8 @@
 
 ---
 
-<!-- fc id:T-K10-024 sha:48df8d47 src:kartky/k10-komandy.md:32 klas:A -->
-### T-K10-024 · kod-ryadok · рядок 32
+<!-- fc id:T-K10-023 sha:48df8d47 src:kartky/k10-komandy.md:32 klas:A -->
+### T-K10-023 · kod-ryadok · рядок 32
 
 **Книга каже, дослівно:**
 
@@ -668,8 +633,8 @@
 
 ---
 
-<!-- fc id:T-K10-025 sha:a2ff386f src:kartky/k10-komandy.md:33 klas:A -->
-### T-K10-025 · kod-ryadok · рядок 33
+<!-- fc id:T-K10-024 sha:a2ff386f src:kartky/k10-komandy.md:33 klas:A -->
+### T-K10-024 · kod-ryadok · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -694,8 +659,8 @@
 
 ---
 
-<!-- fc id:T-K10-026 sha:0c9d449b src:kartky/k10-komandy.md:36 klas:A -->
-### T-K10-026 · proza · рядок 36
+<!-- fc id:T-K10-025 sha:0c9d449b src:kartky/k10-komandy.md:36 klas:A -->
+### T-K10-025 · proza · рядок 36
 
 **Книга каже, дослівно:**
 
@@ -720,8 +685,8 @@
 
 ---
 
-<!-- fc id:T-K10-027 sha:f5cb6136 src:kartky/k10-komandy.md:36 klas:A -->
-### T-K10-027 · proza · рядок 36
+<!-- fc id:T-K10-026 sha:f5cb6136 src:kartky/k10-komandy.md:36 klas:A -->
+### T-K10-026 · proza · рядок 36
 
 **Книга каже, дослівно:**
 
@@ -747,8 +712,8 @@
 
 ---
 
-<!-- fc id:T-K10-028 sha:c64c8733 src:kartky/k10-komandy.md:41 klas:A -->
-### T-K10-028 · proza · рядок 41
+<!-- fc id:T-K10-027 sha:c64c8733 src:kartky/k10-komandy.md:41 klas:A -->
+### T-K10-027 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -780,8 +745,8 @@
 
 ---
 
-<!-- fc id:T-K10-029 sha:51eec05c src:kartky/k10-komandy.md:41 klas:F -->
-### T-K10-029 · proza · рядок 41
+<!-- fc id:T-K10-028 sha:51eec05c src:kartky/k10-komandy.md:41 klas:F -->
+### T-K10-028 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -793,8 +758,8 @@
 
 ---
 
-<!-- fc id:T-K10-030 sha:ab211d67 src:kartky/k10-komandy.md:43 klas:K -->
-### T-K10-030 · kod · рядок 43
+<!-- fc id:T-K10-029 sha:ab211d67 src:kartky/k10-komandy.md:43 klas:K -->
+### T-K10-029 · kod · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -810,8 +775,8 @@
 
 ---
 
-<!-- fc id:T-K10-031 sha:746a4901 src:kartky/k10-komandy.md:44 klas:F -->
-### T-K10-031 · kod-ryadok · рядок 44
+<!-- fc id:T-K10-030 sha:746a4901 src:kartky/k10-komandy.md:44 klas:F -->
+### T-K10-030 · kod-ryadok · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -823,8 +788,8 @@
 
 ---
 
-<!-- fc id:T-K10-032 sha:d4bff93f src:kartky/k10-komandy.md:45 klas:F -->
-### T-K10-032 · kod-ryadok · рядок 45
+<!-- fc id:T-K10-031 sha:d4bff93f src:kartky/k10-komandy.md:45 klas:F -->
+### T-K10-031 · kod-ryadok · рядок 45
 
 **Книга каже, дослівно:**
 
@@ -836,8 +801,8 @@
 
 ---
 
-<!-- fc id:T-K10-033 sha:c8e23e02 src:kartky/k10-komandy.md:46 klas:F -->
-### T-K10-033 · kod-ryadok · рядок 46
+<!-- fc id:T-K10-032 sha:c8e23e02 src:kartky/k10-komandy.md:46 klas:F -->
+### T-K10-032 · kod-ryadok · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -849,8 +814,8 @@
 
 ---
 
-<!-- fc id:T-K10-034 sha:c5afa127 src:kartky/k10-komandy.md:51 klas:K -->
-### T-K10-034 · kod · рядок 51
+<!-- fc id:T-K10-033 sha:c5afa127 src:kartky/k10-komandy.md:51 klas:K -->
+### T-K10-033 · kod · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -867,8 +832,8 @@
 
 ---
 
-<!-- fc id:T-K10-035 sha:805c4c57 src:kartky/k10-komandy.md:52 klas:F -->
-### T-K10-035 · kod-ryadok · рядок 52
+<!-- fc id:T-K10-034 sha:805c4c57 src:kartky/k10-komandy.md:52 klas:F -->
+### T-K10-034 · kod-ryadok · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -880,8 +845,8 @@
 
 ---
 
-<!-- fc id:T-K10-036 sha:65b20b9d src:kartky/k10-komandy.md:53 klas:F -->
-### T-K10-036 · kod-ryadok · рядок 53
+<!-- fc id:T-K10-035 sha:65b20b9d src:kartky/k10-komandy.md:53 klas:F -->
+### T-K10-035 · kod-ryadok · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -893,8 +858,8 @@
 
 ---
 
-<!-- fc id:T-K10-037 sha:459deb70 src:kartky/k10-komandy.md:54 klas:F -->
-### T-K10-037 · kod-ryadok · рядок 54
+<!-- fc id:T-K10-036 sha:459deb70 src:kartky/k10-komandy.md:54 klas:F -->
+### T-K10-036 · kod-ryadok · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -906,8 +871,8 @@
 
 ---
 
-<!-- fc id:T-K10-038 sha:04c7f41f src:kartky/k10-komandy.md:55 klas:F -->
-### T-K10-038 · kod-ryadok · рядок 55
+<!-- fc id:T-K10-037 sha:04c7f41f src:kartky/k10-komandy.md:55 klas:F -->
+### T-K10-037 · kod-ryadok · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -919,8 +884,8 @@
 
 ---
 
-<!-- fc id:T-K10-039 sha:4ffb7aee src:kartky/k10-komandy.md:58 klas:F -->
-### T-K10-039 · proza · рядок 58
+<!-- fc id:T-K10-038 sha:4ffb7aee src:kartky/k10-komandy.md:58 klas:F -->
+### T-K10-038 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -932,8 +897,8 @@
 
 ---
 
-<!-- fc id:T-K10-040 sha:2130100e src:kartky/k10-komandy.md:58 klas:F -->
-### T-K10-040 · proza · рядок 58
+<!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:58 klas:F -->
+### T-K10-039 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -945,8 +910,8 @@
 
 ---
 
-<!-- fc id:T-K10-041 sha:3c153db1 src:kartky/k10-komandy.md:63 klas:F -->
-### T-K10-041 · tablycya-shapka · рядок 63
+<!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 klas:F -->
+### T-K10-040 · tablycya-shapka · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -958,8 +923,8 @@
 
 ---
 
-<!-- fc id:T-K10-042 sha:03becf94 src:kartky/k10-komandy.md:64 klas:A -->
-### T-K10-042 · komirka · рядок 64
+<!-- fc id:T-K10-041 sha:03becf94 src:kartky/k10-komandy.md:64 klas:A -->
+### T-K10-041 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -991,8 +956,8 @@
 
 ---
 
-<!-- fc id:T-K10-043 sha:1fe1e089 src:kartky/k10-komandy.md:64 klas:F -->
-### T-K10-043 · komirka · рядок 64
+<!-- fc id:T-K10-042 sha:1fe1e089 src:kartky/k10-komandy.md:64 klas:F -->
+### T-K10-042 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -1004,8 +969,8 @@
 
 ---
 
-<!-- fc id:T-K10-044 sha:ddb10a79 src:kartky/k10-komandy.md:64 klas:A -->
-### T-K10-044 · komirka · рядок 64
+<!-- fc id:T-K10-043 sha:ddb10a79 src:kartky/k10-komandy.md:64 klas:A -->
+### T-K10-043 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -1037,8 +1002,8 @@
 
 ---
 
-<!-- fc id:T-K10-045 sha:4e987ef9 src:kartky/k10-komandy.md:65 klas:A -->
-### T-K10-045 · komirka · рядок 65
+<!-- fc id:T-K10-044 sha:4e987ef9 src:kartky/k10-komandy.md:65 klas:A -->
+### T-K10-044 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -1070,8 +1035,8 @@
 
 ---
 
-<!-- fc id:T-K10-046 sha:8c7b7a5f src:kartky/k10-komandy.md:65 klas:A -->
-### T-K10-046 · komirka · рядок 65
+<!-- fc id:T-K10-045 sha:8c7b7a5f src:kartky/k10-komandy.md:65 klas:A -->
+### T-K10-045 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -1103,8 +1068,8 @@
 
 ---
 
-<!-- fc id:T-K10-047 sha:cb052eb6 src:kartky/k10-komandy.md:65 klas:A -->
-### T-K10-047 · komirka · рядок 65
+<!-- fc id:T-K10-046 sha:cb052eb6 src:kartky/k10-komandy.md:65 klas:A -->
+### T-K10-046 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -1136,8 +1101,8 @@
 
 ---
 
-<!-- fc id:T-K10-048 sha:55b5b58b src:kartky/k10-komandy.md:66 klas:A -->
-### T-K10-048 · komirka · рядок 66
+<!-- fc id:T-K10-047 sha:55b5b58b src:kartky/k10-komandy.md:66 klas:A -->
+### T-K10-047 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -1169,8 +1134,8 @@
 
 ---
 
-<!-- fc id:T-K10-049 sha:55a122c0 src:kartky/k10-komandy.md:66 klas:A -->
-### T-K10-049 · komirka · рядок 66
+<!-- fc id:T-K10-048 sha:55a122c0 src:kartky/k10-komandy.md:66 klas:A -->
+### T-K10-048 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -1202,8 +1167,8 @@
 
 ---
 
-<!-- fc id:T-K10-050 sha:eb3f0062 src:kartky/k10-komandy.md:66 klas:A -->
-### T-K10-050 · komirka · рядок 66
+<!-- fc id:T-K10-049 sha:eb3f0062 src:kartky/k10-komandy.md:66 klas:A -->
+### T-K10-049 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -1235,8 +1200,8 @@
 
 ---
 
-<!-- fc id:T-K10-051 sha:ceaada41 src:kartky/k10-komandy.md:67 klas:A -->
-### T-K10-051 · komirka · рядок 67
+<!-- fc id:T-K10-050 sha:ceaada41 src:kartky/k10-komandy.md:67 klas:A -->
+### T-K10-050 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -1262,8 +1227,8 @@
 
 ---
 
-<!-- fc id:T-K10-052 sha:9feefdcc src:kartky/k10-komandy.md:67 klas:A -->
-### T-K10-052 · komirka · рядок 67
+<!-- fc id:T-K10-051 sha:9feefdcc src:kartky/k10-komandy.md:67 klas:A -->
+### T-K10-051 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -1289,8 +1254,8 @@
 
 ---
 
-<!-- fc id:T-K10-053 sha:c94bfb00 src:kartky/k10-komandy.md:67 klas:A -->
-### T-K10-053 · komirka · рядок 67
+<!-- fc id:T-K10-052 sha:c94bfb00 src:kartky/k10-komandy.md:67 klas:A -->
+### T-K10-052 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 

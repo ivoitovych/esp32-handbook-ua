@@ -734,27 +734,34 @@
 
 ---
 
-<!-- fc id:T-08-057 sha:acde7a3f src:manual/08-platy.md:99 klas:A -->
+<!-- fc id:T-08-057 sha:4bec449e src:manual/08-platy.md:99 klas:A -->
 ### T-08-057 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
-> **Перемаркований чип.** Напис на модулі каже одне, `chip-id` — інше (розділ 23).
+> **Перемаркований чип.** Напис на модулі каже одне, шапка `esptool` — інше (розділ 23).
 
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
 - **Дослівно з джерела:**
-  > chip-id     Read Chip ID
-  > flash-id    Read SPI flash manufacturer and device ID
-  > 
-  > The flash-id command outputs the manufacturer and device ID of the
-  > flash chip, together with the detected flash size.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
-Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
-- **Прохід:** pass-28-komandy-suciljno
+  > # 2) Print the chip info
+  > ...
+  > else:
+  >     log.print(f"{'Chip type:':<20}{esp.get_chip_description()}")
+  >     log.print(f"{'Features:':<20}{', '.join(esp.get_chip_features())}")
+  >     log.print(f"{'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz")
+  >     usb_mode = esp.get_usb_mode()
+  >     if usb_mode is not None:
+  >         log.print(f"{'USB mode:':<20}{usb_mode}")
+  >     read_mac(esp)
+- **Спосіб і дата:** curl raw.githubusercontent, перевірено М1, 2026-08-26
+- **Нотатка:** Цей блок виконується **до** виклику підкоманди й не залежить від того, яка вона. Тому будь-яка команда, що взагалі під'єдналася, уже назвала сімейство, ревізію, частоту кристала й MAC.
+Практичний наслідок для книги виявився ширшим за виправлення: правило «перша команда для незнайомої плати» тепер `flash-id` не тому, що вона краще ідентифікує чип, а тому, що вона додає до безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
+Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки К1 і К10, додаток C, дві вкладки. Формулювання заведено в `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою старої фрази в розділ 23 — знаходиться.
+Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17 тепер **пояснює**, чому команди краще не вживати, і мусить цитувати її назву.
+- **Прохід:** pass-36-chip-id
 
 ---
 
@@ -776,8 +783,8 @@
   > The flash-id command outputs the manufacturer and device ID of the
   > flash chip, together with the detected flash size.
 - **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
-Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
+- **Нотатка:** `flash-id` існує і робить те, що книга обіцяє: друкує виробника, ідентифікатор і **виявлений обсяг** флешу. Розширення досяжності на розділ 08 («`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де це крок тріажу.
+Друга половина доказу — про `chip-id` — виявилася хибною; див. примітку над записом і `pass-36-chip-id.yaml`.
 - **Прохід:** pass-28-komandy-suciljno
 
 ---
@@ -847,13 +854,13 @@
 
 ---
 
-<!-- fc id:T-08-064 sha:0272d30f src:manual/08-platy.md:116 klas:K -->
+<!-- fc id:T-08-064 sha:b95d61c2 src:manual/08-platy.md:116 klas:K -->
 ### T-08-064 · kod · рядок 116
 
 **Книга каже, дослівно:**
 
 > ```
-> esptool --port /dev/ttyUSB0 chip-id
+> esptool --port /dev/ttyUSB0 flash-id
 > esptool --port /dev/ttyUSB0 flash-id
 > ```
 
@@ -885,12 +892,12 @@
 
 ---
 
-<!-- fc id:T-08-065 sha:32416a21 src:manual/08-platy.md:117 klas:F -->
+<!-- fc id:T-08-065 sha:4c5a16ee src:manual/08-platy.md:117 klas:F -->
 ### T-08-065 · kod-ryadok · рядок 117
 
 **Книга каже, дослівно:**
 
-> esptool --port /dev/ttyUSB0 chip-id
+> esptool --port /dev/ttyUSB0 flash-id
 
 **Доказ**
 
@@ -1184,27 +1191,16 @@
 
 ---
 
-<!-- fc id:T-08-088 sha:531a4392 src:manual/08-platy.md:175 klas:A -->
+<!-- fc id:T-08-088 sha:ad208cee src:manual/08-platy.md:175 klas:F -->
 ### T-08-088 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
-> Модуль — джерело істини про те, що всередині; звіряти напис із `chip-id` і `flash-id`.
+> Модуль — джерело істини про те, що всередині; звіряти напис із шапкою і `flash-id`.
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
-- **Дослівно з джерела:**
-  > chip-id     Read Chip ID
-  > flash-id    Read SPI flash manufacturer and device ID
-  > 
-  > The flash-id command outputs the manufacturer and device ID of the
-  > flash chip, together with the detected flash size.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-- **Нотатка:** Команди існують і роблять те, що книга обіцяє. Розширення досяжності на розділ 08 («Напис на модулі каже одне, `chip-id` — інше», «`flash-id` показує 2 МБ там, де за написом має бути 4») і на картку К1, де вони — кроки тріажу.
-Це та сама пара команд, якою книга радить ловити клони, і тепер вона звірена в усіх місцях, де згадана, а не лише в блоці коду розділу 17.
-- **Прохід:** pass-28-komandy-suciljno
+- **Клас:** F — не звірено
 
 ---
 

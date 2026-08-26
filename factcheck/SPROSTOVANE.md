@@ -222,4 +222,18 @@
     бутлоадера
   prokhid: 24
   vynyatky: [factcheck/, reviews/, docs/fakty.md]
+
+- shcho: chip-id нібито називає сімейство і ревізію
+  zbih: '`chip-id`[^.\n]{0,40}(назива|назве)[^.\n]{0,40}сімейств|chip-id[^\n]{0,30}#[^\n]{0,40}(сімейств|що за чип)|звіряти напис із `chip-id`|`chip-id` ≠ напис'
+  chomu: >-
+    Підкоманда `chip-id` успадкована від ESP8266. У базовому класі
+    `ESPLoader.chip_id()` кидає `NotSupportedError`, і `cmds.chip_id()`
+    перехоплює його, друкує «has no chip ID. Reading MAC address
+    instead» і викликає `read_mac`. Сімейство, ревізію, кристал і MAC
+    друкує преамбула з'єднання, спільна для **всіх** підкоманд.
+  zamist: >-
+    сімейство і ревізію друкує шапка з'єднання перед будь-якою командою;
+    перша команда — `flash-id`
+  prokhid: 36
+  vynyatky: [factcheck/, reviews/, docs/fakty.md, zvyazok/, manual/17-esptool.md]
 ```
