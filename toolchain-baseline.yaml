@@ -2,36 +2,44 @@
 # Таблиця друкується з цього файлу під час збирання; у тексті розділів
 # номери версій не дублюються.
 #
-# status: verified   — звірено з першоджерелом, дата у полі checked
+# status: verified   — звірено з першоджерелом; джерело і дата в docs/fakty.md
 #         UNVERIFIED — не звірено; друкується з видимою позначкою
 
 revision: 2026-08-26
 
 esp_idf:
   version: "6.0.2"
-  status: UNVERIFIED
-  note: "поточний stable; підтримка v6.0 до 2028-09; v6.1 — ще rc, не беремо"
+  status: verified
+  checked: 2026-08-26
+  note: "поточний stable; підтримка гілки v6.0 до 2028-09-20"
 
 esp_idf_fallback:
   version: "5.5.x"
-  status: UNVERIFIED
+  status: verified
+  checked: 2026-08-26
   note: >-
-    обслуговується до 2028-01; лише якщо вимагає стороння бібліотека.
-    Окремого статусу LTS не існує — 30 місяців має кожен major/minor
+    лише якщо цього вимагає стороння бібліотека. Окремого статусу LTS не
+    існує — 30 місяців підтримки має кожен major і кожен minor однаково
+
+esptool:
+  version: "5.3.1"
+  status: verified
+  checked: 2026-08-26
+  note: >-
+    v5 перейшов на дефіси замість підкреслень (write-flash, chip-id) і
+    прибрав суфікс .py. Інструкції з мережі під v4 дослівно не працюють
 
 arduino_esp32:
   version: "3.3.11"
-  status: UNVERIFIED
-  note: "на ESP-IDF 5.5.5; гілка 4.0.0-alpha на IDF 6.x — альфа, не для нас"
+  status: verified
+  checked: 2026-08-26
+  note: "опубліковано 2026-07-22"
 
 vscode_extension:
   version: "поточна"
   status: UNVERIFIED
 
-esptool:
-  version: "?"
-  status: UNVERIFIED
-
 platformio_pioarduino:
   version: "?"
   status: UNVERIFIED
+  note: "community-форк platform-espressif32; офіційна платформа застаріла"
