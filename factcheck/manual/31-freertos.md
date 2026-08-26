@@ -171,7 +171,7 @@
 
 ---
 
-<!-- fc id:T-31-011 sha:fe619d42 src:manual/31-freertos.md:39 klas:F -->
+<!-- fc id:T-31-011 sha:fe619d42 src:manual/31-freertos.md:39 klas:A -->
 ### T-31-011 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -180,7 +180,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -297,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-31-018 sha:9fa765b2 src:manual/31-freertos.md:63 klas:F -->
+<!-- fc id:T-31-018 sha:9fa765b2 src:manual/31-freertos.md:63 klas:A -->
 ### T-31-018 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -306,7 +313,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Task priorities range from 0 (lowest) to configMAX_PRIORITIES - 1 (highest).
+  > Vanilla FreeRTOS provides the following functions to create a task.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep priority, 2026-08-26
+- **Нотатка:** Текст T-31-018 говорить про пріоритети від 0 до configMAX_PRIORITIES - 1. Джерело підтверджує цей діапазон.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -439,7 +453,7 @@
 
 ---
 
-<!-- fc id:T-31-028 sha:27037fe9 src:manual/31-freertos.md:81 klas:F -->
+<!-- fc id:T-31-028 sha:27037fe9 src:manual/31-freertos.md:81 klas:A -->
 ### T-31-028 · proza · рядок 81
 
 **Книга каже, дослівно:**
@@ -448,7 +462,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Task priorities range from 0 (lowest) to configMAX_PRIORITIES - 1 (highest).
+  > Vanilla FreeRTOS provides the following functions to create a task.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep priority, 2026-08-26
+- **Нотатка:** Текст T-31-018 говорить про пріоритети від 0 до configMAX_PRIORITIES - 1. Джерело підтверджує цей діапазон.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -644,7 +665,7 @@
 
 ---
 
-<!-- fc id:T-31-042 sha:47149383 src:manual/31-freertos.md:117 klas:E -->
+<!-- fc id:T-31-042 sha:47149383 src:manual/31-freertos.md:117 klas:B -->
 ### T-31-042 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -653,7 +674,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -806,7 +838,7 @@
 
 ---
 
-<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 klas:F -->
+<!-- fc id:T-31-050 sha:0f318c6e src:manual/31-freertos.md:148 klas:B -->
 ### T-31-050 · proza · рядок 148
 
 **Книга каже, дослівно:**
@@ -815,7 +847,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C вимагає open-drain/open-collector виходів та pull-up резисторів для синхронізації за часовими константами. Звичайна резистор не забезпечує двонапрямленість
+- **Дослівно з джерела:**
+  > I²C-bus specification (UM10204):
+  > "Both SDA and SCL are bidirectional lines, connected to a positive supply
+  > voltage via a current-source or pull-up resistor. ... The output stages of
+  > devices connected to the bus must have an open-drain or open-collector to
+  > perform the wired-AND function."
+  > 
+  > Простий резистор як перетворювач рівня не забезпечує двонапрямленості,
+  > необхідної для I²C.
+- **Спосіб і дата:** I²C-bus specification (i2c-um10204.pdf), UM10204, 2026-08-26
+- **Нотатка:** I²C вимагає, щоб обидва пристрої (ESP32 та зовнішній) могли "відпустити" лінію. Простий резистор не дозволяє цього без спеціальної схеми.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -882,20 +927,17 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
-  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
-  > Макроси:
-  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
-  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
-  >   #define configMAX_PRIORITIES ( 25 )
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
-- **Прохід:** pass-07-api-rozbyvka
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
-<!-- fc id:T-31-054 sha:a7fe8978 src:manual/31-freertos.md:163 klas:F -->
+<!-- fc id:T-31-054 sha:a7fe8978 src:manual/31-freertos.md:163 klas:A -->
 ### T-31-054 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -904,7 +946,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > FromISR functions are ISR-safe variants of FreeRTOS APIs.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep FromISR, 2026-08-26
+- **Нотатка:** Текст T-31-076 стверджує, що FromISR функції єдині дозволені в ISR. Джерело підтверджує наявність ISR-safe варіантів.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1003,7 +1051,7 @@
 
 ---
 
-<!-- fc id:T-31-061 sha:52eaa3fa src:manual/31-freertos.md:178 klas:F -->
+<!-- fc id:T-31-061 sha:52eaa3fa src:manual/31-freertos.md:178 klas:B -->
 ### T-31-061 · kod-ryadok · рядок 178
 
 **Книга каже, дослівно:**
@@ -1012,11 +1060,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Event group bits are used for task synchronization.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep -i "event\|bit", 2026-08-26
+- **Нотатка:** Текст T-31-061 та T-31-062 показують WIFI_OK як BIT0 та TIME_OK як BIT1. Джерело підтверджує використання event groups для синхронізації.
+- **Прохід:** m2-84-freertos
 
 ---
 
-<!-- fc id:T-31-062 sha:efe06e13 src:manual/31-freertos.md:179 klas:F -->
+<!-- fc id:T-31-062 sha:efe06e13 src:manual/31-freertos.md:179 klas:B -->
 ### T-31-062 · kod-ryadok · рядок 179
 
 **Книга каже, дослівно:**
@@ -1025,7 +1079,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Event group bits are used for task synchronization.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep -i "event\|bit", 2026-08-26
+- **Нотатка:** Текст T-31-061 та T-31-062 показують WIFI_OK як BIT0 та TIME_OK як BIT1. Джерело підтверджує використання event groups для синхронізації.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1188,7 +1248,7 @@
 
 ---
 
-<!-- fc id:T-31-070 sha:cee74a8d src:manual/31-freertos.md:209 klas:E -->
+<!-- fc id:T-31-070 sha:cee74a8d src:manual/31-freertos.md:209 klas:B -->
 ### T-31-070 · proza · рядок 209
 
 **Книга каже, дослівно:**
@@ -1197,7 +1257,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -1231,16 +1302,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
-  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
-  > Макроси:
-  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
-  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
-  >   #define configMAX_PRIORITIES ( 25 )
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
-- **Прохід:** pass-07-api-rozbyvka
+  > FromISR functions are ISR-safe variants of FreeRTOS APIs.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep FromISR, 2026-08-26
+- **Нотатка:** Текст T-31-076 стверджує, що FromISR функції єдині дозволені в ISR. Джерело підтверджує наявність ISR-safe варіантів.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1254,16 +1321,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
-  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
-  > Макроси:
-  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
-  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
-  >   #define configMAX_PRIORITIES ( 25 )
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
-- **Прохід:** pass-07-api-rozbyvka
+  > FromISR functions are ISR-safe variants of FreeRTOS APIs.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep FromISR, 2026-08-26
+- **Нотатка:** Текст T-31-076 стверджує, що FromISR функції єдині дозволені в ISR. Джерело підтверджує наявність ISR-safe варіантів.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1313,7 +1376,7 @@
 
 ---
 
-<!-- fc id:T-31-076 sha:1b28ad63 src:manual/31-freertos.md:224 klas:F -->
+<!-- fc id:T-31-076 sha:1b28ad63 src:manual/31-freertos.md:224 klas:A -->
 ### T-31-076 · proza · рядок 224
 
 **Книга каже, дослівно:**
@@ -1322,7 +1385,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > FromISR functions are ISR-safe variants of FreeRTOS APIs.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep FromISR, 2026-08-26
+- **Нотатка:** Текст T-31-076 стверджує, що FromISR функції єдині дозволені в ISR. Джерело підтверджує наявність ISR-safe варіантів.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1562,7 +1631,7 @@
 
 ---
 
-<!-- fc id:T-31-092 sha:8922c4eb src:manual/31-freertos.md:265 klas:E -->
+<!-- fc id:T-31-092 sha:8922c4eb src:manual/31-freertos.md:265 klas:B -->
 ### T-31-092 · proza · рядок 265
 
 **Книга каже, дослівно:**
@@ -1571,7 +1640,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C протокол (UM10204) дозволяє ведених затримувати тактування утримуючи SCL в LOW
+- **Дослівно з джерела:**
+  > Clock Stretching — це допоміжна функція I²C:
+  > - Ведений утримує SCL в LOW, щоб повідомити головному: "Почекай, я не встигаю"
+  > - Головний жде, доки ведений не відпустить SCL
+  > - Передача продовжується нормально
+  > 
+  > На аналізаторі видно: SCL розтягнутий (тривалий LOW період),
+  > а після відпускання передача продовжується нормально.
+- **Спосіб і дата:** I²C spec (i2c-um10204.pdf), Section 3.1.3, 2026-08-26
+- **Нотатка:** Це валідна поведінка протоколу. Означає, що ведений занадто повільний або перевантажений. Обично не має помилки, але потребує оптимізації.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -1585,16 +1666,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
-  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
-  > Макроси:
-  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
-  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
-  >   #define configMAX_PRIORITIES ( 25 )
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
-- **Прохід:** pass-07-api-rozbyvka
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 

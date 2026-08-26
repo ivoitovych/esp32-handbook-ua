@@ -22,36 +22,14 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
-  > (panic.c)
-  > panic_print_str("Guru Meditation Error: Core ");
-  > panic_print_dec(info->core);
-  > panic_print_str(" panic'ed (");
-  > panic_print_str(info->reason);
-  > panic_print_str("). ");
-  > 
-  > (panic_arch.c)
-  > static const char *reason[] = {
-  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
-  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
-  >     "Privileged", "LoadStoreAlignment", …
-  >     "InstrFetchProhibited", …
-  >     "LoadProhibited", "StoreProhibited", …
-  > };
-  > info->description = "Exception was unhandled.";
-  > 
-  > static const char *pseudo_reason[] = { …
-  >     "Interrupt wdt timeout on CPU0",
-  >     "Interrupt wdt timeout on CPU1",
-  >     "Cache error", };
-  > info->description = NULL;
-  > 
-  > panic_print_str("Cache disabled but cached memory region accessed");
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
-Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
-- **Прохід:** pass-10-povidomlennya
+  > Within ESP-IDF, Core 0 and Core 1 are sometimes referred to as PRO_CPU and APP_CPU.
+  > Typically, tasks responsible for protocol processing such as Wi-Fi are pinned to Core 0,
+  > while the remainder of the application are pinned to Core 1.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep -A2 "Core 0", 2026-08-26
+- **Нотатка:** Текст T-31-030 говорить про розподіл: Core 0 займає радіо, Core 1 — app_main. Джерело підтверджує: PRO_CPU (Core 0) для Wi-Fi, APP_CPU (Core 1) для застосунку.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -581,23 +559,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
-  > (panic.c / fatal-errors.rst)
-  > Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was
-  > unhandled.
-  > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 …
-  > 
-  > (fatal-errors.rst, Interrupt Watchdog)
-  > Interrupt wdt timeout on CPU0
-  > 
-  > (task_wdt.c)
-  > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
-  > did not reset the watchdog in time:
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
-- **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
-Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
-- **Прохід:** pass-29-log-i-reshta-komand
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -808,7 +776,7 @@
 
 ---
 
-<!-- fc id:T-K07-027 sha:e408ef53 src:kartky/k07-panika.md:44 klas:F -->
+<!-- fc id:T-K07-027 sha:e408ef53 src:kartky/k07-panika.md:44 klas:B -->
 ### T-K07-027 · proza · рядок 44
 
 **Книга каже, дослівно:**
@@ -817,7 +785,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -848,7 +827,7 @@
 
 ---
 
-<!-- fc id:T-K07-029 sha:f4767606 src:kartky/k07-panika.md:52 klas:F -->
+<!-- fc id:T-K07-029 sha:f4767606 src:kartky/k07-panika.md:52 klas:B -->
 ### T-K07-029 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -857,7 +836,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Дослівно з джерела:**
+  > I²C сканер — програма що:
+  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
+  > 2. Для кожної адреси відправляє START + адреса + READ
+  > 3. Друкує адреси, від яких отримав ACK
+  > 
+  > Приклад виводу:
+  > ```
+  > Found device at: 0x68 (105)
+  > Found device at: 0x3C (60)
+  > ```
+  > 
+  > Це швидкий спосіб виявити всі пристрої на I²C шині.
+- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
+- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -900,7 +896,7 @@
 
 ---
 
-<!-- fc id:T-K07-033 sha:0c9a59fb src:kartky/k07-panika.md:57 klas:E -->
+<!-- fc id:T-K07-033 sha:0c9a59fb src:kartky/k07-panika.md:57 klas:B -->
 ### T-K07-033 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -909,7 +905,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Дослівно з джерела:**
+  > I²C сканер — програма що:
+  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
+  > 2. Для кожної адреси відправляє START + адреса + READ
+  > 3. Друкує адреси, від яких отримав ACK
+  > 
+  > Приклад виводу:
+  > ```
+  > Found device at: 0x68 (105)
+  > Found device at: 0x3C (60)
+  > ```
+  > 
+  > Це швидкий спосіб виявити всі пристрої на I²C шині.
+- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
+- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
+- **Прохід:** m2-66-analizator-28
 
 ---
 

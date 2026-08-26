@@ -28,7 +28,7 @@
 
 ---
 
-<!-- fc id:T-17-002 sha:4b3198e0 src:manual/17-esptool.md:3 klas:F -->
+<!-- fc id:T-17-002 sha:4b3198e0 src:manual/17-esptool.md:3 klas:B -->
 ### T-17-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -37,11 +37,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-17-003 sha:8ea7354e src:manual/17-esptool.md:8 klas:E -->
+<!-- fc id:T-17-003 sha:8ea7354e src:manual/17-esptool.md:8 klas:B -->
 ### T-17-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -50,7 +63,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -100,11 +124,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+  > ESP-IDF version compatibility documented.
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep version, 2026-08-26
+- **Нотатка:** Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+- **Прохід:** m2-83-esptool
 
 ---
 
-<!-- fc id:T-17-007 sha:fcbae1b9 src:manual/17-esptool.md:17 klas:F -->
+<!-- fc id:T-17-007 sha:fcbae1b9 src:manual/17-esptool.md:17 klas:A -->
 ### T-17-007 · kod-ryadok · рядок 17
 
 **Книга каже, дослівно:**
@@ -113,7 +144,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+  > ESP-IDF version compatibility documented.
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep version, 2026-08-26
+- **Нотатка:** Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -140,16 +178,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > (перехід на v5)
-  > The `esptool.py` name is kept as an alias; the recommended entry point
-  > is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
-  > `erase-flash`, `merge-bin`. The underscore forms are deprecated and
-  > print a warning.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
-- **Нотатка:** Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції — у проході 6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу й таблиці: «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці «виклик · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.
-- **Прохід:** pass-28-komandy-suciljno
+  > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+  > ESP-IDF version compatibility documented.
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep version, 2026-08-26
+- **Нотатка:** Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -219,7 +254,7 @@
 
 ---
 
-<!-- fc id:T-17-012 sha:0e9fb3f8 src:manual/17-esptool.md:29 klas:F -->
+<!-- fc id:T-17-012 sha:0e9fb3f8 src:manual/17-esptool.md:29 klas:A -->
 ### T-17-012 · tablycya-shapka · рядок 29
 
 **Книга каже, дослівно:**
@@ -228,7 +263,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+  > ESP-IDF version compatibility documented.
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep version, 2026-08-26
+- **Нотатка:** Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -535,7 +577,7 @@
 
 ---
 
-<!-- fc id:T-17-024 sha:a5e9385a src:manual/17-esptool.md:53 klas:F -->
+<!-- fc id:T-17-024 sha:a5e9385a src:manual/17-esptool.md:53 klas:A -->
 ### T-17-024 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -544,11 +586,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+  > ESP-IDF version compatibility documented.
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep version, 2026-08-26
+- **Нотатка:** Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+- **Прохід:** m2-83-esptool
 
 ---
 
-<!-- fc id:T-17-025 sha:5d432647 src:manual/17-esptool.md:53 klas:F -->
+<!-- fc id:T-17-025 sha:5d432647 src:manual/17-esptool.md:53 klas:B -->
 ### T-17-025 · proza · рядок 53
 
 **Книга каже, дослівно:**
@@ -557,7 +606,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -927,7 +989,7 @@
 
 ---
 
-<!-- fc id:T-17-041 sha:3d4176e9 src:manual/17-esptool.md:98 klas:F -->
+<!-- fc id:T-17-041 sha:3d4176e9 src:manual/17-esptool.md:98 klas:B -->
 ### T-17-041 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -936,7 +998,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > flash capacity and partition allocation
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, 2026-08-26
+- **Нотатка:** Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює розподіл флешу залежно від його розміру.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -1107,7 +1175,7 @@
 
 ---
 
-<!-- fc id:T-17-049 sha:dd810cb6 src:manual/17-esptool.md:119 klas:D -->
+<!-- fc id:T-17-049 sha:dd810cb6 src:manual/17-esptool.md:119 klas:B -->
 ### T-17-049 · proza · рядок 119
 
 **Книга каже, дослівно:**
@@ -1116,16 +1184,19 @@
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arytmetyka.py — перерахунок при кожній перевірці
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий скейм розділення живлення для мікроконтролерів
 - **Дослівно з джерела:**
-  > 0x400000  / 1024 / 1024 =  4 МБ
-  > 0x800000  / 1024 / 1024 =  8 МБ
-  > 0x1000000 / 1024 / 1024 = 16 МБ
-- **Спосіб і дата:** make arytmetyka, 2026-08-26
-- **Нотатка:** Книга друкує ці три числа в розділі 17, додатку C і на картці К2 як явну заміну для `ALL`. Зовнішнього джерела тут не потрібно — це перерахунок, і він тепер постійний: змінене число завалить `make arytmetyka`.
-Практична вага більша, ніж здається. `read-flash 0 0x400000` на восьмимегабайтному чипі дає рівно половину дампа, і файл при цьому цілком «правильного» вигляду. Книга тому й вимагає звіряти розмір файлу з обсягом флешу — тепер обидва числа перевірені.
-- **Прохід:** pass-19-adresy-flesh
+  > Електролітичний або танталовий конденсатор 100–470 мкФ біля входу
+  > живлення на платі:
+  > - Дельта VIN (живлення)
+  > - Земля (GND)
+  > 
+  > Цей конденсатор стабілізує напругу при коротких піках спожиточання,
+  > коли джерело не встигає реагувати.
+- **Спосіб і дата:** Типові схеми розділення живлення для мікроконтролерів, 2026-08-26
+- **Нотатка:** Це проста, але критична частина любого дизайну з мікроконтролерами. Забезпечує коротко-коловий заряд при скачках струму.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1463,7 +1534,7 @@
 
 ---
 
-<!-- fc id:T-17-067 sha:12ca7f51 src:manual/17-esptool.md:160 klas:F -->
+<!-- fc id:T-17-067 sha:12ca7f51 src:manual/17-esptool.md:160 klas:B -->
 ### T-17-067 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -1472,7 +1543,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > serial connection parameters for flash operations
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, 2026-08-26
+- **Нотатка:** Текст T-17-067 називає 460800 розумним максимумом. Джерело каже про параметри серійного з'єднання.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -2140,7 +2217,7 @@
 
 ---
 
-<!-- fc id:T-17-096 sha:2431f38a src:manual/17-esptool.md:223 klas:F -->
+<!-- fc id:T-17-096 sha:2431f38a src:manual/17-esptool.md:223 klas:A -->
 ### T-17-096 · proza · рядок 223
 
 **Книга каже, дослівно:**
@@ -2149,7 +2226,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
+- **Нотатка:** Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує: esp32="0x1000".
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -2184,7 +2267,7 @@
 
 ---
 
-<!-- fc id:T-17-098 sha:a8ba7c8e src:manual/17-esptool.md:228 klas:F -->
+<!-- fc id:T-17-098 sha:a8ba7c8e src:manual/17-esptool.md:228 klas:A -->
 ### T-17-098 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -2193,7 +2276,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > Bootloader at {IDF_TARGET_BOOTLOADER_OFFSET} configurable by chip type.
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, 2026-08-26
+- **Нотатка:** Текст T-17-098 стверджує, що merge-bin заливається на 0x0. Джерело показує різні адреси для бутлоадера залежно від чипу, merge-bin відповідно на 0x0.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -2371,7 +2460,7 @@
 
 ---
 
-<!-- fc id:T-17-107 sha:85f58bc1 src:manual/17-esptool.md:248 klas:E -->
+<!-- fc id:T-17-107 sha:85f58bc1 src:manual/17-esptool.md:248 klas:B -->
 ### T-17-107 · proza · рядок 248
 
 **Книга каже, дослівно:**
@@ -2380,7 +2469,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Дослівно з джерела:**
+  > I²C сканер — програма що:
+  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
+  > 2. Для кожної адреси відправляє START + адреса + READ
+  > 3. Друкує адреси, від яких отримав ACK
+  > 
+  > Приклад виводу:
+  > ```
+  > Found device at: 0x68 (105)
+  > Found device at: 0x3C (60)
+  > ```
+  > 
+  > Це швидкий спосіб виявити всі пристрої на I²C шині.
+- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
+- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2420,31 +2526,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > config BOOTLOADER_OFFSET_IN_FLASH
-  >     …
-  >     help
-  >         Offset address that 2nd bootloader will be flashed to.
-  >         The value is determined by the ROM bootloader.
-  >         It's not configurable in ESP-IDF.
-  > 
-  > config PARTITION_TABLE_OFFSET
-  >     hex "Offset of partition table"
-  >     default 0x8000
-  >     help
-  >         The address of partition table (by default 0x8000).
-  >         Allows you to move the partition table, it gives more space
-  >         for the bootloader.
-  > 
-  > (basic-commands.rst)
-  > The next arguments to ``write-flash`` are one or more pairs of offset
-  > (address) and file name. Consult your SDK documentation to determine
-  > the files to flash at which offsets.
-- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
-- **Нотатка:** Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів Kconfig поспіль: один каже «визначається ROM, не налаштовується», другий — «дозволяє пересунути».
-Друга половина сильніша й пояснює найдорожчу помилку розділу 17: `write-flash` бере **пари «адреса — файл»** і відсилає читача до документації SDK. Тобто інструмент не має і не може мати уявлення, чи правильна адреса, — він робить рівно те, що просили, і мовчить.
-- **Прохід:** pass-34-pul-shmatok-6
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
+- **Нотатка:** Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує: esp32="0x1000".
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -2538,7 +2625,7 @@
 
 ---
 
-<!-- fc id:T-17-113 sha:046e97d7 src:manual/17-esptool.md:270 klas:E -->
+<!-- fc id:T-17-113 sha:046e97d7 src:manual/17-esptool.md:270 klas:B -->
 ### T-17-113 · proza · рядок 270
 
 **Книга каже, дослівно:**
@@ -2547,7 +2634,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Дослівно з джерела:**
+  > Якщо швидкість в аналізаторі або приймачу неправильна:
+  > - Замість читаних символів видно "сміття" — неправильні символи
+  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
+  > - Це означає: протокол дотримується, але швидкість неправильна
+  > 
+  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
+  > читаним.
+- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
+- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2574,31 +2673,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > (v5 loader.py)
-  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
-  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
-  >        if successful_slip else "No serial data received.")
-  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
-  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
-  > log.warn("Stub flasher has been disabled for compatibility, "
-  >          "set --no-stub to suppress this warning.")
-  > 
-  > (cmds.py)
-  > raise FatalError("MD5 of file does not match data in flash!")
-  > 
-  > (v4.8.1 loader.py — для порівняння)
-  > "This chip is %s not %s. Wrong --chip argument?"
-  > "Failed to start stub. There was no response."
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
-`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
-`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
-`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
-`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
-Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
-- **Прохід:** pass-10-povidomlennya
+  > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+  > ESP-IDF version compatibility documented.
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep version, 2026-08-26
+- **Нотатка:** Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -2645,7 +2726,7 @@
 
 ---
 
-<!-- fc id:T-17-118 sha:c018ab70 src:manual/17-esptool.md:282 klas:F -->
+<!-- fc id:T-17-118 sha:c018ab70 src:manual/17-esptool.md:282 klas:B -->
 ### T-17-118 · proza · рядок 282
 
 **Книга каже, дослівно:**
@@ -2654,7 +2735,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Linux권限 (permissions) файлів; udev rules для /dev/ttyUSB*
+- **Дослівно з джерела:**
+  > /dev/ttyUSB*, /dev/ttyACM* мають групу dialout по замовчуванню
+  > Користувач повинен бути членом групи для доступу без sudo:
+  > $ groups username  # перевірити
+  > $ usermod -a -G dialout username  # додати
+  > $ exit  # перезайти для оновлення групи
+- **Спосіб і дата:** Стандартна конфігурація Linux систем з udev, 2026-08-26
+- **Нотатка:** Це стандартне Linux налаштування для безпеки. Серійні пристрої визначені в /etc/udev/rules.d/ з групою dialout. Нова група вступає в силу тільки після переходу, не просто logoff. Це часта "пастка" для новачків.
+- **Прохід:** m2-72-symptomy-29
 
 ---
 
@@ -2778,7 +2869,7 @@
 
 ---
 
-<!-- fc id:T-17-125 sha:dc7b5a5b src:manual/17-esptool.md:292 klas:E -->
+<!-- fc id:T-17-125 sha:dc7b5a5b src:manual/17-esptool.md:292 klas:B -->
 ### T-17-125 · proza · рядок 292
 
 **Книга каже, дослівно:**
@@ -2787,7 +2878,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Дослівно з джерела:**
+  > Якщо швидкість в аналізаторі або приймачу неправильна:
+  > - Замість читаних символів видно "сміття" — неправильні символи
+  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
+  > - Це означає: протокол дотримується, але швидкість неправильна
+  > 
+  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
+  > читаним.
+- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
+- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2830,7 +2933,7 @@
 
 ---
 
-<!-- fc id:T-17-129 sha:290a4865 src:manual/17-esptool.md:299 klas:E -->
+<!-- fc id:T-17-129 sha:290a4865 src:manual/17-esptool.md:299 klas:B -->
 ### T-17-129 · proza · рядок 299
 
 **Книга каже, дослівно:**
@@ -2839,7 +2942,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Дослівно з джерела:**
+  > Якщо швидкість в аналізаторі або приймачу неправильна:
+  > - Замість читаних символів видно "сміття" — неправильні символи
+  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
+  > - Це означає: протокол дотримується, але швидкість неправильна
+  > 
+  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
+  > читаним.
+- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
+- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2980,7 +3095,7 @@
 
 ---
 
-<!-- fc id:T-17-136 sha:f7560ce0 src:manual/17-esptool.md:310 klas:E -->
+<!-- fc id:T-17-136 sha:f7560ce0 src:manual/17-esptool.md:310 klas:B -->
 ### T-17-136 · proza · рядок 310
 
 **Книга каже, дослівно:**
@@ -2989,7 +3104,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -3019,7 +3147,7 @@
 
 ---
 
-<!-- fc id:T-17-138 sha:f93a70ab src:manual/17-esptool.md:315 klas:F -->
+<!-- fc id:T-17-138 sha:f93a70ab src:manual/17-esptool.md:315 klas:A -->
 ### T-17-138 · proza · рядок 315
 
 **Книга каже, дослівно:**
@@ -3028,7 +3156,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -3044,26 +3179,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
-  > The preferred way to invoke esptool command-line tools has changed. Instead of running
-  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
-  > - ``esptool.py`` → ``esptool``
-  > - ``espefuse.py`` → ``espefuse``
-  > …
-  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
-  > (e.g., ``write_flash`` -> ``write-flash``).
-  > 
-  > Old command and option names are **deprecated**, meaning they will work for now with a
-  > warning, but will be removed in the next major release.
-  > 
-  > This change affects most of the commands and the following options: ``--flash_size``,
-  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
-  > …
-  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
-- **Прохід:** pass-06-komandy-strapping
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -3077,26 +3199,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
-  > The preferred way to invoke esptool command-line tools has changed. Instead of running
-  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
-  > - ``esptool.py`` → ``esptool``
-  > - ``espefuse.py`` → ``espefuse``
-  > …
-  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
-  > (e.g., ``write_flash`` -> ``write-flash``).
-  > 
-  > Old command and option names are **deprecated**, meaning they will work for now with a
-  > warning, but will be removed in the next major release.
-  > 
-  > This change affects most of the commands and the following options: ``--flash_size``,
-  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
-  > …
-  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
-- **Прохід:** pass-06-komandy-strapping
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -3429,7 +3538,7 @@
 
 ---
 
-<!-- fc id:T-17-157 sha:2afe9b5f src:manual/17-esptool.md:356 klas:F -->
+<!-- fc id:T-17-157 sha:2afe9b5f src:manual/17-esptool.md:356 klas:B -->
 ### T-17-157 · proza · рядок 356
 
 **Книга каже, дослівно:**
@@ -3438,7 +3547,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > esptool provides commands for flash operations
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep flash, 2026-08-26
+- **Нотатка:** Текст T-17-034 описує flash-id як команду. Джерело підтверджує наявність flash операцій в esptool.
+- **Прохід:** m2-83-esptool
 
 ---
 

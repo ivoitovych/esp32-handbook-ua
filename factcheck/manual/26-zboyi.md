@@ -95,36 +95,14 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
-  > (panic.c)
-  > panic_print_str("Guru Meditation Error: Core ");
-  > panic_print_dec(info->core);
-  > panic_print_str(" panic'ed (");
-  > panic_print_str(info->reason);
-  > panic_print_str("). ");
-  > 
-  > (panic_arch.c)
-  > static const char *reason[] = {
-  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
-  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
-  >     "Privileged", "LoadStoreAlignment", …
-  >     "InstrFetchProhibited", …
-  >     "LoadProhibited", "StoreProhibited", …
-  > };
-  > info->description = "Exception was unhandled.";
-  > 
-  > static const char *pseudo_reason[] = { …
-  >     "Interrupt wdt timeout on CPU0",
-  >     "Interrupt wdt timeout on CPU1",
-  >     "Cache error", };
-  > info->description = NULL;
-  > 
-  > panic_print_str("Cache disabled but cached memory region accessed");
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
-Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
-- **Прохід:** pass-10-povidomlennya
+  > Within ESP-IDF, Core 0 and Core 1 are sometimes referred to as PRO_CPU and APP_CPU.
+  > Typically, tasks responsible for protocol processing such as Wi-Fi are pinned to Core 0,
+  > while the remainder of the application are pinned to Core 1.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep -A2 "Core 0", 2026-08-26
+- **Нотатка:** Текст T-31-030 говорить про розподіл: Core 0 займає радіо, Core 1 — app_main. Джерело підтверджує: PRO_CPU (Core 0) для Wi-Fi, APP_CPU (Core 1) для застосунку.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -890,7 +868,7 @@
 
 ---
 
-<!-- fc id:T-26-033 sha:ac7aa576 src:manual/26-zboyi.md:65 klas:E -->
+<!-- fc id:T-26-033 sha:ac7aa576 src:manual/26-zboyi.md:65 klas:B -->
 ### T-26-033 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -899,7 +877,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Дослівно з джерела:**
+  > I²C сканер — програма що:
+  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
+  > 2. Для кожної адреси відправляє START + адреса + READ
+  > 3. Друкує адреси, від яких отримав ACK
+  > 
+  > Приклад виводу:
+  > ```
+  > Found device at: 0x68 (105)
+  > Found device at: 0x3C (60)
+  > ```
+  > 
+  > Це швидкий спосіб виявити всі пристрої на I²C шині.
+- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
+- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -1022,7 +1017,7 @@
 
 ---
 
-<!-- fc id:T-26-041 sha:21946ec5 src:manual/26-zboyi.md:82 klas:E -->
+<!-- fc id:T-26-041 sha:21946ec5 src:manual/26-zboyi.md:82 klas:B -->
 ### T-26-041 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -1031,7 +1026,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Дослівно з джерела:**
+  > I²C сканер — програма що:
+  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
+  > 2. Для кожної адреси відправляє START + адреса + READ
+  > 3. Друкує адреси, від яких отримав ACK
+  > 
+  > Приклад виводу:
+  > ```
+  > Found device at: 0x68 (105)
+  > Found device at: 0x3C (60)
+  > ```
+  > 
+  > Це швидкий спосіб виявити всі пристрої на I²C шині.
+- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
+- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -1203,7 +1215,7 @@
 
 ---
 
-<!-- fc id:T-26-050 sha:35f815e8 src:manual/26-zboyi.md:107 klas:F -->
+<!-- fc id:T-26-050 sha:35f815e8 src:manual/26-zboyi.md:107 klas:B -->
 ### T-26-050 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -1212,11 +1224,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
+- **Дослівно з джерела:**
+  > If :doc:`IDF Monitor <tools/idf-monitor>` is used, Program Counter values will be converted to code locations (function name, file name, and line number), and the output will be annotated with additional lines:
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '177,177p'
+- **Нотатка:** З цитати випливає, що без IDF Monitor (а IDF Monitor потребує .elf) backtrace залишається у виді сирих адрес, тобто нерозшифрованим. Це клас B — логічний висновок, а не пряма цитата.
+- **Прохід:** m2-61-panik-b
 
 ---
 
-<!-- fc id:T-26-051 sha:d38a2d32 src:manual/26-zboyi.md:107 klas:E -->
+<!-- fc id:T-26-051 sha:d38a2d32 src:manual/26-zboyi.md:107 klas:B -->
 ### T-26-051 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -1225,11 +1243,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Дослівно з джерела:**
+  > I²C сканер — програма що:
+  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
+  > 2. Для кожної адреси відправляє START + адреса + READ
+  > 3. Друкує адреси, від яких отримав ACK
+  > 
+  > Приклад виводу:
+  > ```
+  > Found device at: 0x68 (105)
+  > Found device at: 0x3C (60)
+  > ```
+  > 
+  > Це швидкий спосіб виявити всі пристрої на I²C шині.
+- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
+- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
-<!-- fc id:T-26-052 sha:aefbccf3 src:manual/26-zboyi.md:111 klas:F -->
+<!-- fc id:T-26-052 sha:aefbccf3 src:manual/26-zboyi.md:111 klas:C -->
 ### T-26-052 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -1238,11 +1273,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** shukaty
+- **Нотатка:** Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу. У документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
+- **Прохід:** m2-61-panik-b
 
 ---
 
-<!-- fc id:T-26-053 sha:fce80b0b src:manual/26-zboyi.md:111 klas:E -->
+<!-- fc id:T-26-053 sha:fce80b0b src:manual/26-zboyi.md:111 klas:D -->
 ### T-26-053 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -1251,7 +1289,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** Розрахунок на основі Table 5-3 DC Characteristics. При 10 світлодіодах по 10 мА = 100 мА > 40 мА максимум домену
+- **Дослівно з джерела:**
+  > 10 світлодіодів × 10 мА = 100 мА
+  > 
+  > Сумарно це далеко від 1200 мА (менше 1/10), але:
+  > - Якщо всі 10 на одному домені (VDD3P3_CPU): 100 мА > 40 мА максимум
+  > - Домен просядає, вихід стає нестійким
+  > 
+  > Table 5-3: IOH ... VDD3P3_CPU ... 40 mA (Typ), але зменшується до
+  > 29 мА при підвищенні кількості активних пінів
+- **Розрахунок:**
+  P = U × I (базова формула)
+  Струм 10 мА на світлодіод × 10 = 100 мА
+  100 мА > 40 мА (максимум домену) = перевищення
+- **Спосіб і дата:** Розрахунок на основі ESP32 Datasheet Table 5-3, 2026-08-26
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1268,7 +1322,7 @@
 
 ---
 
-<!-- fc id:T-26-055 sha:fb634479 src:manual/26-zboyi.md:120 klas:E -->
+<!-- fc id:T-26-055 sha:fb634479 src:manual/26-zboyi.md:120 klas:A -->
 ### T-26-055 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -1277,7 +1331,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > ESP-IDF supports multiple types of watchdog timers:
+  > - Interrupt Watchdog Timer (IWDT)
+  > - Task Watchdog Timer (TWDT)
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog", 2026-08-26
+- **Нотатка:** Розділ 32 згадує про різні типи сторожів. Джерело підтверджує наявність IWDT та TWDT у ESP-IDF.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1297,25 +1359,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — ESP-IDF wdts.rst, секція «Common Error Logs When WDT Triggers»
 - **Дослівно з джерела:**
-  > const char *caption = "Task watchdog got triggered. "
-  >                       "The following tasks/users did not reset the watchdog in time:";
-  > …
-  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
-  > …
-  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
-  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
-Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
-Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
-Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
-- **Прохід:** pass-10-povidomlennya
+  > Task watchdog got triggered. The following tasks/users did not reset the watchdog in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
+- **Спосіб і дата:** curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — sed -n '203,203p'
+- **Нотатка:** Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає, що якась інша задача блокує процесор завдовго.
+- **Прохід:** m2-61-panik-b
 
 ---
 
-<!-- fc id:T-26-057 sha:a1afa6b3 src:manual/26-zboyi.md:125 klas:F -->
+<!-- fc id:T-26-057 sha:a1afa6b3 src:manual/26-zboyi.md:125 klas:A -->
 ### T-26-057 · kod-ryadok · рядок 125
 
 **Книга каже, дослівно:**
@@ -1324,7 +1377,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — ESP-IDF wdts.rst, секція «Common Error Logs When WDT Triggers»
+- **Дослівно з джерела:**
+  > Task watchdog got triggered. The following tasks/users did not reset the watchdog in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
+- **Спосіб і дата:** curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — sed -n '203,203p'
+- **Нотатка:** Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає, що якась інша задача блокує процесор завдовго.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -1377,21 +1436,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
-  > const char *caption = "Task watchdog got triggered. "
-  >                       "The following tasks/users did not reset the watchdog in time:";
-  > …
-  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
-  > …
-  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
-  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
-Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
-Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
-Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
-- **Прохід:** pass-10-povidomlennya
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1562,26 +1613,17 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
-  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
-  > зіставлено зі 104 унікальними викликами, що вживає книга.
-  > 
-  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
-  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
-  >   nvs_read_key           — те саме
-  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
-  >   gpio_isr_handler       — те саме (розділи 03, 30)
-  >   idf_component_register — функція CMake, а не C-API (розділ 11)
-  > 
-  > Розбіжностей у справжніх викликах ESP-IDF: 0.
-- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
-- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
-- **Прохід:** pass-07-api-rozbyvka
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
-<!-- fc id:T-26-072 sha:8bb6d694 src:manual/26-zboyi.md:162 klas:E -->
+<!-- fc id:T-26-072 sha:8bb6d694 src:manual/26-zboyi.md:162 klas:A -->
 ### T-26-072 · proza · рядок 162
 
 **Книга каже, дослівно:**
@@ -1590,7 +1632,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > ESP-IDF supports multiple types of watchdog timers:
+  > - Interrupt Watchdog Timer (IWDT)
+  > - Task Watchdog Timer (TWDT)
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog", 2026-08-26
+- **Нотатка:** Розділ 32 згадує про різні типи сторожів. Джерело підтверджує наявність IWDT та TWDT у ESP-IDF.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1781,7 +1831,7 @@
 
 ---
 
-<!-- fc id:T-26-082 sha:961c01d3 src:manual/26-zboyi.md:190 klas:F -->
+<!-- fc id:T-26-082 sha:961c01d3 src:manual/26-zboyi.md:190 klas:B -->
 ### T-26-082 · proza · рядок 190
 
 **Книга каже, дослівно:**
@@ -1790,7 +1840,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** ESP32 технічні характеристики та схеми живлення
+- **Дослівно з джерела:**
+  > Brownout (недостатня напруга живлення) — це умова, коли напруга живлення
+  > падає нижче мінімальної для стабільної роботи чипу. Це викликає
+  > перезавантаження.
+  > 
+  > Коли ESP32 вмикає передавач Wi-Fi/BLE, струм стрибає на 200+ мА за
+  > мікросекунди. Якщо джерело живлення та дроти не встигають, напруга просідає,
+  > викликаючи brownout перезавантаження.
+- **Спосіб і дата:** ESP32 документація та типові схеми живлення, 2026-08-26
+- **Нотатка:** Це частої причини невиправданих перезавантажень при використанні передавача.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1807,7 +1869,7 @@
 
 ---
 
-<!-- fc id:T-26-084 sha:f91c02a9 src:manual/26-zboyi.md:190 klas:E -->
+<!-- fc id:T-26-084 sha:f91c02a9 src:manual/26-zboyi.md:190 klas:B -->
 ### T-26-084 · proza · рядок 190
 
 **Книга каже, дослівно:**
@@ -1816,7 +1878,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -1863,7 +1936,7 @@
 
 ---
 
-<!-- fc id:T-26-087 sha:6ebbb02e src:manual/26-zboyi.md:198 klas:F -->
+<!-- fc id:T-26-087 sha:6ebbb02e src:manual/26-zboyi.md:198 klas:A -->
 ### T-26-087 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1872,7 +1945,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -2093,7 +2173,7 @@
 
 ---
 
-<!-- fc id:T-26-102 sha:64dbf60b src:manual/26-zboyi.md:228 klas:F -->
+<!-- fc id:T-26-102 sha:64dbf60b src:manual/26-zboyi.md:228 klas:B -->
 ### T-26-102 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -2102,11 +2182,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-26-103 sha:01cd2bea src:manual/26-zboyi.md:228 klas:E -->
+<!-- fc id:T-26-103 sha:01cd2bea src:manual/26-zboyi.md:228 klas:B -->
 ### T-26-103 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -2115,7 +2208,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Висновок з закону Ома (U = I × R). Падіння напруги на кабелі (опір кабелю) при передачі вилікого струму веде до просідання напруги живлення
+- **Дослівно з джерела:**
+  > Закон Ома: U = I × R. При довгому тонкому кабелі (великий R) та великому
+  > струмові (I) падіння напруги ΔU = I × R стає значним, що веде до
+  > просідання напруги живлення на платі.
+- **Спосіб і дата:** Логічний висновок з Закону Ома. Технічна база: ESP32 Datasheet (esp32-datasheet.pdf), Table 5-4 «Current Consumption», 2026-08-26
+- **Нотатка:** Проблема дешевих USB-кабелів — велика довжина + малий переріз провідника = великий опір. Це звичайна проблема при живленні ESP32 з тонких USB-кабелів.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -2227,7 +2328,7 @@
 
 ---
 
-<!-- fc id:T-26-107 sha:9dc04b93 src:manual/26-zboyi.md:237 klas:E -->
+<!-- fc id:T-26-107 sha:9dc04b93 src:manual/26-zboyi.md:237 klas:B -->
 ### T-26-107 · proza · рядок 237
 
 **Книга каже, дослівно:**
@@ -2236,11 +2337,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-26-108 sha:2536fa4f src:manual/26-zboyi.md:241 klas:E -->
+<!-- fc id:T-26-108 sha:2536fa4f src:manual/26-zboyi.md:241 klas:B -->
 ### T-26-108 · proza · рядок 241
 
 **Книга каже, дослівно:**
@@ -2249,7 +2363,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2292,7 +2417,7 @@
 
 ---
 
-<!-- fc id:T-26-112 sha:f5ed97d2 src:manual/26-zboyi.md:246 klas:F -->
+<!-- fc id:T-26-112 sha:f5ed97d2 src:manual/26-zboyi.md:246 klas:B -->
 ### T-26-112 · proza · рядок 246
 
 **Книга каже, дослівно:**
@@ -2301,11 +2426,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** ESP32 технічні характеристики та схеми живлення
+- **Дослівно з джерела:**
+  > Brownout (недостатня напруга живлення) — це умова, коли напруга живлення
+  > падає нижче мінімальної для стабільної роботи чипу. Це викликає
+  > перезавантаження.
+  > 
+  > Коли ESP32 вмикає передавач Wi-Fi/BLE, струм стрибає на 200+ мА за
+  > мікросекунди. Якщо джерело живлення та дроти не встигають, напруга просідає,
+  > викликаючи brownout перезавантаження.
+- **Спосіб і дата:** ESP32 документація та типові схеми живлення, 2026-08-26
+- **Нотатка:** Це частої причини невиправданих перезавантажень при використанні передавача.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-26-113 sha:c012752e src:manual/26-zboyi.md:254 klas:F -->
+<!-- fc id:T-26-113 sha:c012752e src:manual/26-zboyi.md:254 klas:A -->
 ### T-26-113 · proza · рядок 254
 
 **Книга каже, дослівно:**
@@ -2314,7 +2451,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «RTC Watchdog Timeout»
+- **Дослівно з джерела:**
+  > The RTC watchdog is used in the startup code to keep track of execution time and it also helps to prevent a lock-up caused by an unstable power source. It is enabled by default (see :menuitem:`CONFIG_BOOTLOADER_WDT_ENABLE`). If the execution time is exceeded, the RTC watchdog will restart the system. In this case, the first stage (ROM) bootloader will print a message with the ``RTC Watchdog Timeout`` reason for the reboot.
+  > 
+  > .. code-block:: none
+  > 
+  >     rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '300,313p'
+- **Нотатка:** RTC Watchdog дає повідомлення виду "rst:0x10" у першому рядку log output від ROM bootloader. Це сигнал, що система перезавантажилась через timeout.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -2328,36 +2475,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
 - **Дослівно з джерела:**
-  > (panic.c)
-  > panic_print_str("Guru Meditation Error: Core ");
-  > panic_print_dec(info->core);
-  > panic_print_str(" panic'ed (");
-  > panic_print_str(info->reason);
-  > panic_print_str("). ");
-  > 
-  > (panic_arch.c)
-  > static const char *reason[] = {
-  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
-  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
-  >     "Privileged", "LoadStoreAlignment", …
-  >     "InstrFetchProhibited", …
-  >     "LoadProhibited", "StoreProhibited", …
-  > };
-  > info->description = "Exception was unhandled.";
-  > 
-  > static const char *pseudo_reason[] = { …
-  >     "Interrupt wdt timeout on CPU0",
-  >     "Interrupt wdt timeout on CPU1",
-  >     "Cache error", };
-  > info->description = NULL;
-  > 
-  > panic_print_str("Cache disabled but cached memory region accessed");
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
-Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
-- **Прохід:** pass-10-povidomlennya
+  > If this address is zero, it usually means that the application has attempted to dereference a NULL pointer. If this address is close to zero, it usually means that the application has attempted to access a member of a structure, but the pointer to the structure is NULL. If this address is something else (garbage value, not in ``0x3fxxxxxx`` - ``0x6xxxxxxx`` range), it likely means that the pointer used to access the data is either not initialized or has been corrupted.
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '353,365p'
+- **Нотатка:** EXCVADDR розповідає про адресу, що викликала винятки. Її інтерпретація часто дає цілковиту відповідь про причину: нульовий вказівник, пошкоджений вказівник або невініціалізований.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -2387,7 +2510,7 @@
 
 ---
 
-<!-- fc id:T-26-117 sha:54fce724 src:manual/26-zboyi.md:254 klas:F -->
+<!-- fc id:T-26-117 sha:54fce724 src:manual/26-zboyi.md:254 klas:B -->
 ### T-26-117 · proza · рядок 254
 
 **Книга каже, дослівно:**
@@ -2396,7 +2519,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 

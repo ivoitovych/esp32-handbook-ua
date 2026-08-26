@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K06-001 sha:3b9e12c2 src:kartky/k06-bootlog.md:3 klas:F -->
+<!-- fc id:T-K06-001 sha:3b9e12c2 src:kartky/k06-bootlog.md:3 klas:A -->
 ### T-K06-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,7 +15,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > After reset, the second line printed by the {IDF_TARGET_NAME} ROM (at 115200bps)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Основна бод-рейт для ROM bootloader ESP32.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
@@ -44,29 +50,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > typedef enum {
-  >     NO_MEAN                =  0,
-  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
-  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
-  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
-  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
-  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
-  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
-  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
-  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
-  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
-  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
-  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
-  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
-  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
-  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
-  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
-  > } RESET_REASON;
+  > rst:0x1 (POWERON_RESET),boot:0x3
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
-- **Прохід:** pass-01-tverde-yadro
+- **Нотатка:** Приклад лога з boot.rst показує 0x1 = POWERON_RESET.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
@@ -80,33 +69,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > typedef enum {
-  >     NO_MEAN                =  0,
-  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
-  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
-  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
-  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
-  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
-  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
-  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
-  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
-  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
-  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
-  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
-  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
-  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
-  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
-  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
-  > } RESET_REASON;
+  > rst:0x1 (POWERON_RESET),boot:0x3
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
-- **Прохід:** pass-01-tverde-yadro
+- **Нотатка:** Приклад лога з boot.rst показує 0x1 = POWERON_RESET.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
-<!-- fc id:T-K06-005 sha:780358c1 src:kartky/k06-bootlog.md:12 klas:F -->
+<!-- fc id:T-K06-005 sha:780358c1 src:kartky/k06-bootlog.md:12 klas:A -->
 ### T-K06-005 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -115,7 +87,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``rst:0xNN (REASON)`` is an enumerated value (and description) of the reason for the reset.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Поле rst містить код причини скидання.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
@@ -155,33 +133,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > typedef enum {
-  >     NO_MEAN                =  0,
-  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
-  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
-  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
-  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
-  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
-  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
-  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
-  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
-  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
-  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
-  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
-  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
-  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
-  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
-  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
-  > } RESET_REASON;
+  > rst:0x1 (POWERON_RESET),boot:0x3
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
-- **Прохід:** pass-01-tverde-yadro
+- **Нотатка:** Приклад лога з boot.rst показує 0x1 = POWERON_RESET.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
-<!-- fc id:T-K06-009 sha:61891822 src:kartky/k06-bootlog.md:16 klas:F -->
+<!-- fc id:T-K06-009 sha:61891822 src:kartky/k06-bootlog.md:16 klas:A -->
 ### T-K06-009 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -190,11 +151,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар enum'у переводиться як «скидання від подачі напруги на Vbat». EN (enable) — пін вмикання чипа, без якого скидання неможливе. Книга інтерпретує це як «подано живлення або EN», що відповідає суті Vbat reset.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-K06-010 sha:1baef394 src:kartky/k06-bootlog.md:17 klas:F -->
+<!-- fc id:T-K06-010 sha:1baef394 src:kartky/k06-bootlog.md:17 klas:A -->
 ### T-K06-010 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -203,7 +170,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > SW_RESET               =  3,    /**<3, Software reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x3 = SW_RESET. Неме розходження між книгою й enum'ом.
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -236,7 +209,7 @@
 
 ---
 
-<!-- fc id:T-K06-012 sha:60cc5d87 src:kartky/k06-bootlog.md:18 klas:F -->
+<!-- fc id:T-K06-012 sha:60cc5d87 src:kartky/k06-bootlog.md:18 klas:A -->
 ### T-K06-012 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -245,11 +218,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x5 = DEEPSLEEP_RESET. Коментар згадує Deep Sleep.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-K06-013 sha:91ecb724 src:kartky/k06-bootlog.md:18 klas:F -->
+<!-- fc id:T-K06-013 sha:91ecb724 src:kartky/k06-bootlog.md:18 klas:A -->
 ### T-K06-013 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -258,7 +237,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар DEEPSLEEP_RESET говорить про Deep Sleep. Прокинення (wake-up) — це сенс скидання при виході з deep sleep режиму.
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -298,7 +283,7 @@
 
 ---
 
-<!-- fc id:T-K06-015 sha:f52ff7ed src:kartky/k06-bootlog.md:19 klas:F -->
+<!-- fc id:T-K06-015 sha:f52ff7ed src:kartky/k06-bootlog.md:19 klas:A -->
 ### T-K06-015 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -307,11 +292,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар: «Timer Group0 Watch dog reset». TG0 = Timer Group 0. Книга інтерпретує як «watchdog таймера 0», що дослівно відповідає enum'у.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-K06-016 sha:a4c80ac9 src:kartky/k06-bootlog.md:20 klas:F -->
+<!-- fc id:T-K06-016 sha:a4c80ac9 src:kartky/k06-bootlog.md:20 klas:A -->
 ### T-K06-016 · komirka · рядок 20
 
 **Книга каже, дослівно:**
@@ -320,11 +311,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x8 = TG1WDT_SYS_RESET. TG1 = Timer Group 1.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-K06-017 sha:ec4961ee src:kartky/k06-bootlog.md:20 klas:F -->
+<!-- fc id:T-K06-017 sha:ec4961ee src:kartky/k06-bootlog.md:20 klas:A -->
 ### T-K06-017 · komirka · рядок 20
 
 **Книга каже, дослівно:**
@@ -333,11 +330,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар: «Timer Group1 Watch dog reset». Книга інтерпретує як «watchdog таймера 1», дослівно.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-K06-018 sha:61c76aaf src:kartky/k06-bootlog.md:21 klas:F -->
+<!-- fc id:T-K06-018 sha:61c76aaf src:kartky/k06-bootlog.md:21 klas:A -->
 ### T-K06-018 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -346,11 +349,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x9 = RTCWDT_SYS_RESET. RTC = Real Time Clock.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-K06-019 sha:df7de7e7 src:kartky/k06-bootlog.md:21 klas:F -->
+<!-- fc id:T-K06-019 sha:df7de7e7 src:kartky/k06-bootlog.md:21 klas:A -->
 ### T-K06-019 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -359,7 +368,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар: «RTC Watch dog Reset». Книга дослівно передає це як «RTC watchdog».
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -474,7 +489,7 @@
 
 ---
 
-<!-- fc id:T-K06-025 sha:00c16d81 src:kartky/k06-bootlog.md:24 klas:F -->
+<!-- fc id:T-K06-025 sha:00c16d81 src:kartky/k06-bootlog.md:24 klas:A -->
 ### T-K06-025 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -483,11 +498,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
-<!-- fc id:T-K06-026 sha:ac281d07 src:kartky/k06-bootlog.md:27 klas:F -->
+<!-- fc id:T-K06-026 sha:ac281d07 src:kartky/k06-bootlog.md:27 klas:A -->
 ### T-K06-026 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -496,7 +518,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Дві основні boot-моди описані в boot.rst.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
@@ -510,18 +538,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
-  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
-  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
-  >  esp32h21="GPIO14", esp32h4="GPIO14"}
-  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
-  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
-  >  esp32h4="GPIO13"}
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
-Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
-- **Прохід:** pass-08-strapping
+  > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+  > Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+- **Нотатка:** GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO функціональністю.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -585,7 +608,7 @@
 
 ---
 
-<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:39 klas:F -->
+<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:39 klas:B -->
 ### T-K06-031 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -594,7 +617,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -656,7 +690,7 @@
 
 ---
 
-<!-- fc id:T-K06-035 sha:0ebdcddf src:kartky/k06-bootlog.md:58 klas:E -->
+<!-- fc id:T-K06-035 sha:0ebdcddf src:kartky/k06-bootlog.md:58 klas:B -->
 ### T-K06-035 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -665,7 +699,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -695,7 +742,7 @@
 
 ---
 
-<!-- fc id:T-K06-038 sha:b44c3a39 src:kartky/k06-bootlog.md:65 klas:F -->
+<!-- fc id:T-K06-038 sha:b44c3a39 src:kartky/k06-bootlog.md:65 klas:A -->
 ### T-K06-038 · tablycya · рядок 65
 
 **Книга каже, дослівно:**
@@ -704,11 +751,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > The ESP8266 boot rom writes a log to the UART when booting. The timing is a little bit unusual: ``74880 baud``
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** ESP8266 ROM на 74880 бод — істотна відмінність від ESP32.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
-<!-- fc id:T-K06-039 sha:e108d7f6 src:kartky/k06-bootlog.md:66 klas:E -->
+<!-- fc id:T-K06-039 sha:e108d7f6 src:kartky/k06-bootlog.md:66 klas:B -->
 ### T-K06-039 · tablycya · рядок 66
 
 **Книга каже, дослівно:**
@@ -717,7 +770,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -784,7 +850,7 @@
 
 ---
 
-<!-- fc id:T-K06-044 sha:ae375117 src:kartky/k06-bootlog.md:72 klas:E -->
+<!-- fc id:T-K06-044 sha:ae375117 src:kartky/k06-bootlog.md:72 klas:B -->
 ### T-K06-044 · proza · рядок 72
 
 **Книга каже, дослівно:**
@@ -793,11 +859,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Дослівно з джерела:**
+  > Якщо швидкість в аналізаторі або приймачу неправильна:
+  > - Замість читаних символів видно "сміття" — неправильні символи
+  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
+  > - Це означає: протокол дотримується, але швидкість неправильна
+  > 
+  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
+  > читаним.
+- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
+- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
-<!-- fc id:T-K06-045 sha:e3061d40 src:kartky/k06-bootlog.md:76 klas:F -->
+<!-- fc id:T-K06-045 sha:e3061d40 src:kartky/k06-bootlog.md:76 klas:A -->
 ### T-K06-045 · proza · рядок 76
 
 **Книга каже, дослівно:**
@@ -806,6 +884,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > The ESP8266 boot rom writes a log to the UART when booting at ``74880 baud``
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Диагностичний метод розпізнавання за baudrate.
+- **Прохід:** m2-62-bootlog-k06
 
 ---

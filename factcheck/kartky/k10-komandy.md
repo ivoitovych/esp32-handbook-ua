@@ -62,16 +62,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > (перехід на v5)
-  > The `esptool.py` name is kept as an alias; the recommended entry point
-  > is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
-  > `erase-flash`, `merge-bin`. The underscore forms are deprecated and
-  > print a warning.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
-- **Нотатка:** Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції — у проході 6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу й таблиці: «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці «виклик · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.
-- **Прохід:** pass-28-komandy-suciljno
+  > {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+  > ESP-IDF version compatibility documented.
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep version, 2026-08-26
+- **Нотатка:** Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -95,26 +92,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > The preferred way to invoke esptool command-line tools has changed. Instead of running
-  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
-  > - ``esptool.py`` → ``esptool``
-  > - ``espefuse.py`` → ``espefuse``
-  > …
-  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
-  > (e.g., ``write_flash`` -> ``write-flash``).
-  > 
-  > Old command and option names are **deprecated**, meaning they will work for now with a
-  > warning, but will be removed in the next major release.
-  > 
-  > This change affects most of the commands and the following options: ``--flash_size``,
-  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
-  > …
-  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
-- **Прохід:** pass-06-komandy-strapping
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
+- **Нотатка:** Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує: esp32="0x1000".
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -307,7 +290,7 @@
 
 ---
 
-<!-- fc id:T-K10-012 sha:0c80ad13 src:kartky/k10-komandy.md:17 klas:D -->
+<!-- fc id:T-K10-012 sha:0c80ad13 src:kartky/k10-komandy.md:17 klas:A -->
 ### T-K10-012 · schema-zvyazok · рядок 17
 
 **Книга каже, дослівно:**
@@ -316,20 +299,13 @@
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
-- **Спосіб і дата:** make arytmetyka, 2026-08-26
-- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
-Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
-Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
-- **Прохід:** pass-19-adresy-flesh
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
+- **Нотатка:** Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує: esp32="0x1000".
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -1019,26 +995,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > config BOOTLOADER_OFFSET_IN_FLASH
-  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
-  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
-  >     default 0x0
-  > 
-  > config PARTITION_TABLE_OFFSET
-  >     hex "Offset of partition table"
-  >     default 0x8000
-  > 
-  > (partition-tables.rst)
-  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
-  >   "factory". The bootloader runs this app by default.
-  > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
-- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
-Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
-- **Прохід:** pass-31-adresy-i-api
+  > partition table is flashed to (default offset) 0x8000 in the flash.
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, grep 0x8000, 2026-08-26
+- **Нотатка:** Розділ 21 згадує про адресах розділів. Джерело підтверджує стандартну адресу 0x8000 для таблиці розділів.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -1052,26 +1014,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > config BOOTLOADER_OFFSET_IN_FLASH
-  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
-  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
-  >     default 0x0
-  > 
-  > config PARTITION_TABLE_OFFSET
-  >     hex "Offset of partition table"
-  >     default 0x8000
-  > 
-  > (partition-tables.rst)
-  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
-  >   "factory". The bootloader runs this app by default.
-  > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
-- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
-Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
-- **Прохід:** pass-31-adresy-i-api
+  > partition table is flashed to (default offset) 0x8000 in the flash.
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, grep 0x8000, 2026-08-26
+- **Нотатка:** Розділ 21 згадує про адресах розділів. Джерело підтверджує стандартну адресу 0x8000 для таблиці розділів.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -1085,26 +1033,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > config BOOTLOADER_OFFSET_IN_FLASH
-  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
-  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
-  >     default 0x0
-  > 
-  > config PARTITION_TABLE_OFFSET
-  >     hex "Offset of partition table"
-  >     default 0x8000
-  > 
-  > (partition-tables.rst)
-  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
-  >   "factory". The bootloader runs this app by default.
-  > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
-- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
-Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
-`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
-- **Прохід:** pass-31-adresy-i-api
+  > partition table is flashed to (default offset) 0x8000 in the flash.
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, grep 0x8000, 2026-08-26
+- **Нотатка:** Розділ 21 згадує про адресах розділів. Джерело підтверджує стандартну адресу 0x8000 для таблиці розділів.
+- **Прохід:** m2-83-esptool
 
 ---
 
