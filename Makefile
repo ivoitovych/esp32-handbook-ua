@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck budgets arytmetyka check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya budgets arytmetyka check \
         check-attribution preview clean
 
 PY := python3
@@ -46,10 +46,13 @@ dovidnyk kartky proekty:
 linkcheck:
 	@$(PY) tools/linkcheck.py
 
+posylannya:
+	@$(PY) tools/posylannya.py
+
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck budgets arytmetyka check-attribution
+check: linkcheck posylannya budgets arytmetyka check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
