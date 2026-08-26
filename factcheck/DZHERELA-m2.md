@@ -51,9 +51,13 @@ URL не підмінили.
 | `i2c-um10204.pdf` | `dc91f00f65584e06ef36e26c93bf9d91a95fb3c8a1830a9223e53caf678b36af` | 750958 | 2026-08-26 | <https://www.pololu.com/file/0J435/UM10204.pdf> |
 | `ili9341.pdf` | `a9bbfdf6d078f54a6aca7a56cba91246905358d3a4ed738817bfd3f582b5741c` | 3667641 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf> |
 | `ina219.pdf` | `58004eda854d07478e6fc6f4398c114f60a3bcf18d4877471c7c1a306d1fa1cb` | 892731 | 2026-08-26 | <https://www.ti.com/lit/ds/symlink/ina219.pdf> |
+| `ina226.pdf` | `c9b67f886d4a5241a5e070723f7b61867409eeb27eed768b9cdd9cb17e03ca2d` | 1516957 | 2026-08-26 | <https://www.ti.com/lit/ds/symlink/ina226.pdf> |
 | `lghg2.pdf` | `13a74b9690c20f28f6ac36e12b06f8cce7b944d57c78682ff92131292f303b4f` | 345290 | 2026-08-26 | <https://www.batteryspace.com/prod-specs/9989.specs.pdf> |
 | `lgmj1.pdf` | `c43a6ba93862318906a7fe8f2e34593890b1aa340ee59ff87e81bcfd8f1e8fc7` | 334905 | 2026-08-26 | <https://enerpower.de/wp-content/uploads/2016/03/Specification_INR18650MJ1.pdf> |
+| `max31855.pdf` | `45904b81e79c46af49fd5c880df7ec04678c8599be9df73cea8422d241ceb7a2` | 1015656 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/MAX31855.pdf> |
+| `max6675.pdf` | `f354adbf8b44b2b4d90840bf67c810386c717d80e943d828404f1add0c286bf9` | 133173 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/MAX6675.pdf> |
 | `mcp23017.pdf` | `14159c6f5655e943e93ed1e34947e46844f114ec893f305a889898828e4055cb` | 865289 | 2026-08-26 | <https://ww1.microchip.com/downloads/en/devicedoc/20001952c.pdf> |
+| `mcp2515.pdf` | `f2cf92a2d1ed42b285bf1e2395b859c91114f6a6774d90cf3e4ccda36b840aca` | 1164914 | 2026-08-26 | <https://ww1.microchip.com/downloads/en/DeviceDoc/MCP2515-Stand-Alone-CAN-Controller-with-SPI-20001801J.pdf> |
 | `mpu6050.pdf` | `ccaa6312b9d86a9da79e26e511101e1150dc85a48255600010a854369cf7c05d` | 665861 | 2026-08-26 | <https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf> |
 | `ncr18650b.pdf` | `b7aef4119cd1528c5eb7d584570ab0a7f33dafb274eb71047ced694202ace761` | 470950 | 2026-08-26 | <https://www.batteryspace.com/prod-specs/NCR18650B.pdf> |
 | `pcf8574.pdf` | `e632c2d07e07f559e5e13e6f55743c33522b859f5f32e8461bcda39ac33640a6` | 2808690 | 2026-08-26 | <https://www.ti.com/lit/ds/symlink/pcf8574.pdf> |
@@ -64,6 +68,7 @@ URL не підмінили.
 | `sht3x.pdf` | `095b1853e7f4328f5897c9ca6c392a7dd8b0202eda66b0a2629f9cb840dd496d` | 810136 | 2026-08-26 | <https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf> |
 | `sht4x.pdf` | `8db4a43f17149b76811cfb504caaeca4ef844ddc710cb9b45905c51c7ddfe3c2` | 1049911 | 2026-08-26 | <https://sensirion.com/media/documents/33FD6951/6A7C10A0/HT_DS_Datasheet_SHT4x_V7.3.pdf> |
 | `ssd1306.pdf` | `d55f875357de96d8c0e92153a389acc57e8bab4db7a0687f2e0bd3362f0036f6` | 1876686 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf> |
+| `st7789.pdf` | `8ecf0e438aa25554efc473a4cfe6e436f3fb33e68cd876b25041557235d04ca1` | 3203151 | 2026-08-26 | <https://newhavendisplay.com/appnotes/datasheets/LCDs/ST7789V.pdf> |
 | `sx1276.pdf` | `6c24c19ee54309633d4a9057bb8663d1aacdb7f456bebcc6973728a07bd7854e` | 3268248 | 2026-08-26 | — |
 | `tp4056.pdf` | `cdafa22618e7221fa93b8d432237cafb246a515606eef2672f50230d5ae205ce` | 60920 | 2026-08-26 | <https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf> |
 | `vtc6.pdf` | `ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08` | 275509 | 2026-08-26 | <https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx> |
