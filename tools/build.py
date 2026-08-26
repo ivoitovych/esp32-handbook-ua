@@ -469,6 +469,14 @@ def vidbytok() -> str:
     Тому порівнюємо не результат, а вхід: хеш усіх джерел книги, шаблонів
     і маніфесту. Він лягає поруч із PDF у `release/`, і `pdf-smoke.py`
     звіряє його з поточним станом дерева.
+
+    Хеш джерел доводить менше, ніж здається, і це варто назвати. Він
+    каже «зібрано з цих джерел», а не «зібрано так само»: ті самі
+    джерела на іншій версії pandoc чи typst дають інший PDF. Знахідка М2
+    від 2026-08-26 — 413 сторінок проти 407 при однаковому хеші.
+
+    Тому поруч із хешем іде **виготовлювач**: версії pandoc і typst.
+    Разом вони й відповідають на питання повністю.
     """
     import hashlib
     h = hashlib.sha256()
@@ -484,6 +492,34 @@ def vidbytok() -> str:
     return h.hexdigest()[:16]
 
 
+def vygotovlyuvach() -> str:
+    """Чим саме зібрано: версії pandoc і typst цієї машини.
+
+    Без цього рядка `BUILD.txt` доводить лише походження джерел, а не
+    відтворюваність. Для друку важливе саме друге: кількість сторінок
+    задає товщину корінця.
+    """
+    import subprocess
+
+    def versiya(cmd: list[str], vzirec: str) -> str:
+        try:
+            out = subprocess.run(cmd, capture_output=True, text=True,
+                                 timeout=20).stdout
+            m = re.search(vzirec, out)
+            return m.group(1) if m else "?"
+        except Exception:
+            return "?"
+
+    pandoc = versiya(["pandoc", "--version"], r"pandoc\s+([\d.]+)")
+    typst = "?"
+    try:
+        import importlib.metadata as md
+        typst = md.version("typst")
+    except Exception:
+        typst = versiya(["typst", "--version"], r"typst\s+([\d.]+)")
+    return f"pandoc {pandoc}; typst {typst}"
+
+
 def main() -> None:
     cfg = yaml.safe_load((ROOT / "book.yaml").read_text(encoding="utf-8"))
     meta = cfg["meta"]
@@ -497,7 +533,8 @@ def main() -> None:
         out = build(name, cfg["targets"][name], meta)
         print(f"  ✓ {out.relative_to(ROOT)}  ({out.stat().st_size // 1024} КБ)")
 
-    (BUILD / "BUILD.txt").write_text(vidbytok() + "\n", encoding="utf-8")
+    (BUILD / "BUILD.txt").write_text(
+        f"{vidbytok()}\n{vygotovlyuvach()}\n", encoding="utf-8")
 
     if VIDSUTNI:
         print(f"\nвідсутніх файлів маніфесту: {len(set(VIDSUTNI))}")

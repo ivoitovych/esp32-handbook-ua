@@ -1,0 +1,113 @@
+# М2, джерело 3 наряду — DS18B20 (Maxim / Analog Devices).
+#
+# Про спосіб, і це важливо для наряду. `analog.com` віддає «Access Denied»
+# на рівні Akamai навіть справжньому Chrome — тобто це не політика egress
+# контейнера М1, а відмова самого видавця цій мережі. Datasheet узято з
+# дзеркала Adafruit: DS18B20, 22 сторінки, той самий документ Maxim.
+#
+# Числова частина розділу 37 витримала звірку повністю. Знахідка одна, і
+# вона у вкладиші М1: поріг виявлення підробки взято тісніший за власну
+# похибку датчика.
+
+- nazva: DS18B20 — діапазон, роздільність і час перетворення
+  zbih: 'приблизно від −55 до \+125 °C, роздільність налаштовується від 9 до|перетворення при 12 розрядах займає\s+\*\*близько 750 мілісекунд\*\*|При 9 розрядах перетворення займає\s+близько 94 мс'
+  klas: A
+  dzherelo: >-
+    DS18B20 Programmable Resolution 1-Wire Digital Thermometer,
+    datasheet Maxim Integrated (нині Analog Devices), 22 с., розділи
+    «Features», «Operation—Measuring Temperature» і таблиця конфігураційного
+    регістра
+  cytata: |
+    Measures Temperatures from -55°C to +125°C
+    Thermometer Resolution is User Selectable from 9 to 12 Bits
+
+    The resolution of the temperature sensor is user-configurable to 9, 10, 11,
+    or 12 bits, corresponding to increments of 0.5°C, 0.25°C, 0.125°C, and
+    0.0625°C, respectively. The default resolution at power-up is 12-bit.
+
+    R1  R0   RESOLUTION (BITS)   MAX CONVERSION TIME
+     0   0          9              93.75ms   (tCONV/8)
+     0   1         10             187.5ms    (tCONV/4)
+     1   0         11              375ms     (tCONV/2)
+     1   1         12              750ms     (tCONV)
+
+    DC ELECTRICAL CHARACTERISTICS
+    PARAMETER          SYMBOL   CONDITIONS          MAX      UNITS
+    Thermometer Error   tERR    -10°C to +85°C     ±0.5       °C
+                                -55°C to +125°C    ±2         °C
+  sposib: >-
+    PDF Maxim через дзеркало cdn-shop.adafruit.com (analog.com віддає
+    Access Denied на рівні Akamai), pdftotext -layout, 2026-08-26
+  notatka: >-
+    Розділ 37 звірено дослівно по всіх чотирьох числах: діапазон
+    −55…+125 °C, роздільність 9…12 розрядів, 750 мс при 12 розрядах,
+    94 мс при 9 (у джерелі 93.75 мс).
+
+    Заразом підтверджується порада розділу «знизити роздільність»: час
+    перетворення справді ділиться навпіл на кожному кроці вниз, бо
+    таблиця дає рівно tCONV, tCONV/2, tCONV/4, tCONV/8.
+
+    Побічне, вартого уваги при читанні розділу: за замовчуванням датчик
+    вмикається на 12 розрядах. Тобто «повільно» — стан за замовчуванням,
+    і хто нічого не налаштовував, отримує саме 750 мс.
+
+    Окремо про «точність 0.5 °C» у тому самому реченні книги. У значенні
+    «крок при 9 розрядах» воно точне: джерело дає саме 0.5 °C як
+    increment для 9 біт. Але те саме число є в джерела й **похибкою** —
+    tERR ±0.5 °C, і лише в діапазоні −10…+85 °C; поза ним ±2 °C. Збіг
+    двох різних величин на одному числі створює пастку, у яку вкладиш М1
+    уже потрапив: поріг виявлення підробки взято рівним 0.5 °C, тобто
+    тіснішим за паспортну похибку двох справних датчиків. Знахідку
+    надіслано окремо.
+
+    І висновок, вартий самого розділу 37: при 12 розрядах крок
+    0.0625 °C при похибці ±0.5 °C. Три молодші розряди — це
+    роздільність, а не точність, і читати їх як точність не варто.
+
+- nazva: Унікальний 64-бітний код і кількість пристроїв на лінії
+  zbih: 'У кожного унікальний 64-бітний\s+адресний код, зашитий на заводі'
+  klas: A
+  dzherelo: >-
+    DS18B20 datasheet (Maxim), розділи «Features» і «Overview»
+  cytata: |
+    Each DS18B20 has a unique 64-bit serial code, which allows multiple
+    DS18B20s to function on the same 1-Wire bus.
+
+    In this bus system, the microprocessor (the master device) identifies and
+    addresses devices on the bus using each device's unique 64-bit code. Because
+    each device has a unique code, the number of devices that can be addressed
+    on one bus is virtually unlimited.
+  sposib: >-
+    PDF Maxim через дзеркало cdn-shop.adafruit.com, pdftotext -layout,
+    2026-08-26
+  notatka: >-
+    Обидві половини твердження книги підтверджено: код 64-бітний і
+    унікальний, і саме він дозволяє кільком датчикам жити на одній лінії.
+
+    Джерело додає межу, якої в книзі немає і яку варто знати: з погляду
+    **адресації** кількість пристроїв «virtually unlimited». Тобто все,
+    що обмежує реальну лінію, — електрика й топологія, а не протокол.
+    Розділ 37 називає ті самі причини відмов (підтягування, довжина,
+    паразитне живлення), тож суперечності немає — є уточнення, звідки
+    межа береться.
+
+- nazva: Підтягування 4.7 кОм на лінії 1-Wire
+  zbih: '1-Wire, резистор 4\.7 кОм'
+  klas: A
+  dzherelo: >-
+    DS18B20 datasheet (Maxim), Figure 4 «Supplying the Parasite-Powered
+    DS18B20», Figure 5 і блок-схема — номінал підтягування на DQ
+  cytata: |
+    (на схемах підключення DQ підтягнуто до VPU резистором 4.7k —
+    Figure 1 «DS18B20 Block Diagram», Figure 4, Figure 5)
+
+    The control line requires a weak pullup resistor since all devices are
+    linked to the bus via a 3-state or open-drain port (the DQ pin in the case
+    of the DS18B20).
+  sposib: >-
+    PDF Maxim через дзеркало cdn-shop.adafruit.com, pdftotext -layout,
+    2026-08-26
+  notatka: >-
+    4.7 кОм — номінал із самих схем datasheet, а не з практики спільноти.
+    Джерело водночас пояснює, **чому** підтягування взагалі потрібне:
+    вихід відкритий стік, лінію нема чому підняти.

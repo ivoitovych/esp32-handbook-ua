@@ -1,1 +1,2 @@
-834526d18229c380
+bf340e5bd9cfa5d6
+pandoc 3.1.3; typst 0.15.0

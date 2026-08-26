@@ -72,12 +72,35 @@ def main() -> int:
     rb = ROOT / "release" / "BUILD.txt"
     if not rb.exists():
         zhahy.append("release/BUILD.txt відсутній — з чого зібрано, невідомо")
-    elif rb.read_text(encoding="utf-8").strip() != teper:
-        zhahy.append(f"release/ зібрано з інших джерел: у ньому "
-                     f"{rb.read_text(encoding='utf-8').strip()}, зараз {teper}. "
-                     f"Потрібно `make release`")
     else:
-        print(f"   ✓ відбиток джерел збігається: {teper}")
+        ryadky = rb.read_text(encoding="utf-8").strip().split("\n")
+        if ryadky[0].strip() != teper:
+            zhahy.append(f"release/ зібрано з інших джерел: у ньому "
+                         f"{ryadky[0].strip()}, зараз {teper}. "
+                         f"Потрібно `make release`")
+        else:
+            print(f"   ✓ відбиток джерел збігається: {teper}")
+
+        # Виготовлювач — попередження, не помилка.
+        #
+        # Хеш джерел доводить «зібрано з цього тексту» і не доводить
+        # «зібрано так само»: ті самі джерела на іншій версії pandoc чи
+        # typst дають інший PDF. Для GitHub це дрібниця; для друку — ні,
+        # бо кількість сторінок задає товщину корінця.
+        #
+        # Розбіжність версії сама по собі ще не помилка — помилка
+        # непомічена розбіжність. Тому друкуємо, а не спиняємо.
+        zapysanyy = ryadky[1].strip() if len(ryadky) > 1 else None
+        teperishniy = build.vygotovlyuvach()
+        if zapysanyy is None:
+            print("   · виготовлювача не записано — перезберіть `make release`")
+        elif zapysanyy != teperishniy:
+            print(f"   · виготовлювач інший: у release/ «{zapysanyy}», "
+                  f"тут «{teperishniy}»")
+            print("     кількість сторінок може відрізнятися; для друку "
+                  "звірте з `toolchain-baseline.yaml`")
+        else:
+            print(f"   ✓ виготовлювач збігається: {teperishniy}")
 
     for z in zhahy:
         print(f"   ✗ {z}")
