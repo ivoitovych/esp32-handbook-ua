@@ -169,7 +169,8 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
             frag = tdir / f"{seq:03d}-{Path(rel).stem}.typ"
             frag.write_text(IMPORT + "\n\n" + md_to_typst(src), encoding="utf-8")
             root.append(f'#include "{frag.name}"')
-    root += ["", "#back-matter(meta)", ""]
+    if cfg.get("back_matter", True):
+        root += ["", "#back-matter(meta)", ""]
 
     if missing:
         print(f"  ! пропущено (немає файлу): {', '.join(missing)}")

@@ -25,6 +25,17 @@ targets:
         blurb: "Дванадцять сторінок, які мають бути в руках, а не в файлі. Друкуються окремо, ламінуються, їдуть у поле."
         files:
           - kartky/k01-triazh.md
+          - kartky/k02-stan.md
+          - kartky/k03-pidkl.md
+          - kartky/k04-boot.md
+          - kartky/k05-proshyvka.md
+          - kartky/k06-bootlog.md
+          - kartky/k07-panika.md
+          - kartky/k08-symptomy.md
+          - kartky/k09-pinouty.md
+          - kartky/k10-komandy.md
+          - kartky/k11-nikoly.md
+          - kartky/k12-komplekt.md
       - title: "Частина I. Платформа"
         files: []
 
@@ -32,11 +43,23 @@ targets:
   kartky:
     template: kartky
     output: esp32-kartky.pdf
+    back_matter: false
     parts:
       - title: ""
         silent: true
         files:
           - kartky/k01-triazh.md
+          - kartky/k02-stan.md
+          - kartky/k03-pidkl.md
+          - kartky/k04-boot.md
+          - kartky/k05-proshyvka.md
+          - kartky/k06-bootlog.md
+          - kartky/k07-panika.md
+          - kartky/k08-symptomy.md
+          - kartky/k09-pinouty.md
+          - kartky/k10-komandy.md
+          - kartky/k11-nikoly.md
+          - kartky/k12-komplekt.md
 
   # Допоміжна ціль: проєкти ярусу 2, A4.
   proekty:

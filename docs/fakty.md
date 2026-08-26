@@ -75,6 +75,52 @@ v6.0.2, розділ «ESP-IDF Versions». Звірено 2026-08-26.
 
 ---
 
+## Піни й strapping
+
+**ESP32 classic.** Флеш займає GPIO 6–11 — використовувати не можна.
+Тільки вхід (без виходу і без підтягування): GPIO 34–39.
+Strapping: GPIO 0, 2, 5, 12, 15. GPIO 12 (MTDI) підтягнутий вгору при
+старті перемикає напругу флешу і не дає платі стартувати.
+ADC2 не працює при увімкненому Wi-Fi; ADC1 (GPIO 32–39) працює завжди.
+DAC — тільки GPIO 25 і 26.
+Джерело: ESP-IDF Programming Guide, «GPIO & RTC GPIO» для esp32; datasheet
+ESP32. Звірено 2026-08-26.
+
+**ESP32-S3.** Strapping: GPIO 0, 3, 45, 46. Комбінація GPIO46 = 1 разом із
+GPIO0 = 0 недійсна і призводить до непередбачуваної поведінки.
+SPI-флеш і PSRAM зазвичай займають GPIO 26–32; на модулях з Octal flash
+або Octal PSRAM додатково GPIO 33–37 (це стосується модулів на кшталт
+N16R8). Native USB — GPIO 19 (D−) і GPIO 20 (D+).
+Джерело: ESP32-S3 Series Datasheet; ESP-IDF Programming Guide v6.0.2,
+«GPIO & RTC GPIO» для esp32s3. Звірено 2026-08-26.
+
+**ESP32-C3.** Strapping: GPIO 2, 8, 9. Вхід у серійний бутлоадер —
+GPIO9 притиснутий до землі при скиданні, GPIO8 при цьому має бути високим.
+Комбінація GPIO8 = 0 і GPIO9 = 0 недійсна.
+SPI-флеш і PSRAM — GPIO 12–17. USB-Serial-JTAG за замовчуванням займає
+GPIO 18 і 19; переналаштування їх на звичайний GPIO вимикає USB-JTAG.
+Джерело: ESP-IDF Programming Guide, «GPIO & RTC GPIO» для esp32c3;
+esptool, «Boot Mode Selection» для esp32c3. Звірено 2026-08-26.
+
+---
+
+## Причини скидання (rst: у boot-лозі)
+
+Числові коди з ROM-заголовка ESP-IDF, `RESET_REASON` для ESP32 classic:
+1 POWERON_RESET · 3 SW_RESET · 4 OWDT_RESET · 5 DEEPSLEEP_RESET ·
+6 SDIO_RESET · 7 TG0WDT_SYS_RESET · 8 TG1WDT_SYS_RESET ·
+9 RTCWDT_SYS_RESET · 10 INTRUSION_RESET · 11 TGWDT_CPU_RESET ·
+12 SW_CPU_RESET · 13 RTCWDT_CPU_RESET · 14 EXT_CPU_RESET ·
+15 RTCWDT_BROWN_OUT_RESET · 16 RTCWDT_RTC_RESET.
+
+Практично важливі: `rst:0xf` (15) — просідання живлення, тобто brownout,
+а не помилка в коді; `rst:0xc` (12) — програмне скидання ядра, типове
+після паніки.
+Джерело: `espressif/esp-idf`, `components/esp_rom/include/esp32/rom/rtc.h`,
+enum `RESET_REASON`. Звірено 2026-08-26.
+
+---
+
 ## Незвірене
 
 Перелік того, що вжито в тексті, але ще не звірено з першоджерелом.
