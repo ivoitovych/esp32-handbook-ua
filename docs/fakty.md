@@ -341,16 +341,45 @@ ESP32. Це було хибно. Виправлено в усіх п'яти мі
 
 ## Струм GPIO
 
-**40 мА — абсолютна межа струму на один пін ESP32**, за розділом
-«Recommended Operating Conditions» datasheet. Це межа, а не робоче
-значення.
+**40 мА — типова віддача на максимальній силі драйвера, а не гранична.**
+У datasheet це рядок таблиці `DC Characteristics`:
 
-Сила драйвера налаштовується: за замовчуванням приблизно 20 мА на пін,
-максимальне налаштування дає 40 мА. На віддачу (source) пін дає більше,
-ніж на прийом (sink).
+```
+IOH  High-level source current
+     (VDD = 3.3 V, VOH >= 2.64 V, output drive strength set to the maximum)
+       VDD3P3_CPU power domain    Typ 40 mA
+       VDD3P3_RTC power domain    Typ 40 mA
+       VDD_SDIO power domain      Typ 20 mA
+```
 
-Джерело: ESP32 Series Datasheet; ESP-IDF Programming Guide, «GPIO & RTC
-GPIO» (`gpio_set_drive_capability`). Звірено 2026-08-26.
+**Гранично допустиме нормується лише сумарно.** У `Absolute Maximum
+Ratings` немає жодного значення на пін; єдиний рядок про струм IO —
+`Cumulative IO output current`, максимум **1200 мА**.
+
+**І 40 мА не стала.** Примітка 2 до тієї ж таблиці: для доменів
+`VDD3P3_CPU` і `VDD3P3_RTC` віддача на пін поступово спадає з ~40 мА до
+~29 мА в міру того, як зростає кількість пінів-джерел у тому ж домені.
+
+**Сили драйвера за замовчуванням у міліамперах не існує в жодному
+першоджерелі.** ESP-IDF дає лише якісну шкалу:
+
+```c
+GPIO_DRIVE_CAP_0       = 0,    /*!< Pad drive capability: weak      */
+GPIO_DRIVE_CAP_1       = 1,    /*!< Pad drive capability: stronger  */
+GPIO_DRIVE_CAP_2       = 2,    /*!< Pad drive capability: medium    */
+GPIO_DRIVE_CAP_DEFAULT = 2,    /*!< Pad drive capability: medium    */
+GPIO_DRIVE_CAP_3       = 3,    /*!< Pad drive capability: strongest */
+```
+
+Число «20 мА за замовчуванням», що стояло тут раніше, було **висновком**
+(половина від максимуму на середній силі), а виглядало як цитата. У
+datasheet 20 мА справді є — але це `IOH` домену `VDD_SDIO`, зовсім інша
+величина з тим самим числом.
+
+Джерело: ESP32 Series Datasheet v5.3, Table 5-1 і Table 5-3 з приміткою
+2 — звірено М2 (`factcheck/dokazy/m2-01-esp32-datasheet.yaml`);
+`components/hal/include/hal/gpio_types.h` ESP-IDF `release/v5.5` —
+звірено М1. Звірено 2026-08-26.
 
 **Поправка до першої редакції розділу 05.** Було «десятки міліампер» без
 числа. Замінено на конкретну межу: читач із світлодіодом чи реле має

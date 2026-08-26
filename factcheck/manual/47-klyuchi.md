@@ -6,12 +6,12 @@
 
 ---
 
-<!-- fc id:T-47-001 sha:50fac90a src:manual/47-klyuchi.md:3 klas:C -->
+<!-- fc id:T-47-001 sha:9d2198a1 src:manual/47-klyuchi.md:3 klas:C -->
 ### T-47-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
 
-> Пін ESP32 віддає близько 20 мА за замовчуванням і 40 мА як абсолютну межу (розділ 05).
+> Пін ESP32 віддає до 40 мА на максимальній силі драйвера — і це **типове значення, а не гранично допустиме**; за замовчуванням драйвер стоїть на середній силі, тобто менше, а при кількох активних пінах домену віддача просідає приблизно до 29 мА (розділ 05).
 
 **Доказ**
 
@@ -49,8 +49,8 @@
 
 ---
 
-<!-- fc id:T-47-004 sha:20df8172 src:manual/47-klyuchi.md:9 klas:F -->
-### T-47-004 · tablycya-shapka · рядок 9
+<!-- fc id:T-47-004 sha:20df8172 src:manual/47-klyuchi.md:12 klas:F -->
+### T-47-004 · tablycya-shapka · рядок 12
 
 **Книга каже, дослівно:**
 
@@ -62,8 +62,8 @@
 
 ---
 
-<!-- fc id:T-47-005 sha:e87fd605 src:manual/47-klyuchi.md:10 klas:F -->
-### T-47-005 · komirka · рядок 10
+<!-- fc id:T-47-005 sha:e87fd605 src:manual/47-klyuchi.md:13 klas:F -->
+### T-47-005 · komirka · рядок 13
 
 **Книга каже, дослівно:**
 
@@ -75,8 +75,8 @@
 
 ---
 
-<!-- fc id:T-47-006 sha:fbed193d src:manual/47-klyuchi.md:10 klas:F -->
-### T-47-006 · komirka · рядок 10
+<!-- fc id:T-47-006 sha:fbed193d src:manual/47-klyuchi.md:13 klas:F -->
+### T-47-006 · komirka · рядок 13
 
 **Книга каже, дослівно:**
 
@@ -88,8 +88,8 @@
 
 ---
 
-<!-- fc id:T-47-007 sha:69a8e0f0 src:manual/47-klyuchi.md:11 klas:F -->
-### T-47-007 · komirka · рядок 11
+<!-- fc id:T-47-007 sha:69a8e0f0 src:manual/47-klyuchi.md:14 klas:F -->
+### T-47-007 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
@@ -101,8 +101,8 @@
 
 ---
 
-<!-- fc id:T-47-008 sha:7d8f9d5c src:manual/47-klyuchi.md:11 klas:F -->
-### T-47-008 · komirka · рядок 11
+<!-- fc id:T-47-008 sha:7d8f9d5c src:manual/47-klyuchi.md:14 klas:F -->
+### T-47-008 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
@@ -114,8 +114,8 @@
 
 ---
 
-<!-- fc id:T-47-009 sha:1ecf0c22 src:manual/47-klyuchi.md:12 klas:F -->
-### T-47-009 · komirka · рядок 12
+<!-- fc id:T-47-009 sha:1ecf0c22 src:manual/47-klyuchi.md:15 klas:F -->
+### T-47-009 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
@@ -127,8 +127,8 @@
 
 ---
 
-<!-- fc id:T-47-010 sha:f9e16d4a src:manual/47-klyuchi.md:12 klas:F -->
-### T-47-010 · komirka · рядок 12
+<!-- fc id:T-47-010 sha:f9e16d4a src:manual/47-klyuchi.md:15 klas:F -->
+### T-47-010 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
@@ -140,8 +140,8 @@
 
 ---
 
-<!-- fc id:T-47-011 sha:80bf27f5 src:manual/47-klyuchi.md:13 klas:F -->
-### T-47-011 · komirka · рядок 13
+<!-- fc id:T-47-011 sha:80bf27f5 src:manual/47-klyuchi.md:16 klas:F -->
+### T-47-011 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -153,8 +153,8 @@
 
 ---
 
-<!-- fc id:T-47-012 sha:39a2c8d5 src:manual/47-klyuchi.md:13 klas:F -->
-### T-47-012 · komirka · рядок 13
+<!-- fc id:T-47-012 sha:39a2c8d5 src:manual/47-klyuchi.md:16 klas:F -->
+### T-47-012 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -166,8 +166,8 @@
 
 ---
 
-<!-- fc id:T-47-013 sha:347ba144 src:manual/47-klyuchi.md:14 klas:F -->
-### T-47-013 · komirka · рядок 14
+<!-- fc id:T-47-013 sha:347ba144 src:manual/47-klyuchi.md:17 klas:F -->
+### T-47-013 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
@@ -179,8 +179,8 @@
 
 ---
 
-<!-- fc id:T-47-014 sha:3aeb6a4c src:manual/47-klyuchi.md:14 klas:F -->
-### T-47-014 · komirka · рядок 14
+<!-- fc id:T-47-014 sha:3aeb6a4c src:manual/47-klyuchi.md:17 klas:F -->
+### T-47-014 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
@@ -192,8 +192,8 @@
 
 ---
 
-<!-- fc id:T-47-015 sha:f158a9a3 src:manual/47-klyuchi.md:20 klas:E -->
-### T-47-015 · proza · рядок 20
+<!-- fc id:T-47-015 sha:f158a9a3 src:manual/47-klyuchi.md:23 klas:E -->
+### T-47-015 · proza · рядок 23
 
 **Книга каже, дослівно:**
 
@@ -205,8 +205,8 @@
 
 ---
 
-<!-- fc id:T-47-016 sha:30721f2b src:manual/47-klyuchi.md:20 klas:F -->
-### T-47-016 · proza · рядок 20
+<!-- fc id:T-47-016 sha:30721f2b src:manual/47-klyuchi.md:23 klas:F -->
+### T-47-016 · proza · рядок 23
 
 **Книга каже, дослівно:**
 
@@ -218,8 +218,8 @@
 
 ---
 
-<!-- fc id:T-47-017 sha:87cef1ef src:manual/47-klyuchi.md:23 klas:F -->
-### T-47-017 · proza · рядок 23
+<!-- fc id:T-47-017 sha:87cef1ef src:manual/47-klyuchi.md:26 klas:F -->
+### T-47-017 · proza · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -231,8 +231,8 @@
 
 ---
 
-<!-- fc id:T-47-018 sha:93ebe48b src:manual/47-klyuchi.md:23 klas:F -->
-### T-47-018 · proza · рядок 23
+<!-- fc id:T-47-018 sha:93ebe48b src:manual/47-klyuchi.md:26 klas:F -->
+### T-47-018 · proza · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -244,8 +244,8 @@
 
 ---
 
-<!-- fc id:T-47-019 sha:c4bacfa9 src:manual/47-klyuchi.md:27 klas:E -->
-### T-47-019 · proza · рядок 27
+<!-- fc id:T-47-019 sha:c4bacfa9 src:manual/47-klyuchi.md:30 klas:E -->
+### T-47-019 · proza · рядок 30
 
 **Книга каже, дослівно:**
 
@@ -257,8 +257,8 @@
 
 ---
 
-<!-- fc id:T-47-020 sha:0bdfee8a src:manual/47-klyuchi.md:27 klas:E -->
-### T-47-020 · proza · рядок 27
+<!-- fc id:T-47-020 sha:0bdfee8a src:manual/47-klyuchi.md:30 klas:E -->
+### T-47-020 · proza · рядок 30
 
 **Книга каже, дослівно:**
 
@@ -270,8 +270,8 @@
 
 ---
 
-<!-- fc id:T-47-021 sha:f7c31c38 src:manual/47-klyuchi.md:32 klas:E -->
-### T-47-021 · proza · рядок 32
+<!-- fc id:T-47-021 sha:f7c31c38 src:manual/47-klyuchi.md:35 klas:E -->
+### T-47-021 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -283,8 +283,8 @@
 
 ---
 
-<!-- fc id:T-47-022 sha:ba80539c src:manual/47-klyuchi.md:34 klas:K -->
-### T-47-022 · kod · рядок 34
+<!-- fc id:T-47-022 sha:ba80539c src:manual/47-klyuchi.md:37 klas:K -->
+### T-47-022 · kod · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -313,8 +313,8 @@
 
 ---
 
-<!-- fc id:T-47-023 sha:e6f1a6a7 src:manual/47-klyuchi.md:36 klas:F -->
-### T-47-023 · schema-zvyazok · рядок 36
+<!-- fc id:T-47-023 sha:e6f1a6a7 src:manual/47-klyuchi.md:39 klas:F -->
+### T-47-023 · schema-zvyazok · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -326,8 +326,8 @@
 
 ---
 
-<!-- fc id:T-47-024 sha:6e7e86f9 src:manual/47-klyuchi.md:37 klas:F -->
-### T-47-024 · schema-zvyazok · рядок 37
+<!-- fc id:T-47-024 sha:6e7e86f9 src:manual/47-klyuchi.md:40 klas:F -->
+### T-47-024 · schema-zvyazok · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -339,8 +339,8 @@
 
 ---
 
-<!-- fc id:T-47-025 sha:2e4d5ee9 src:manual/47-klyuchi.md:38 klas:F -->
-### T-47-025 · schema-zvyazok · рядок 38
+<!-- fc id:T-47-025 sha:2e4d5ee9 src:manual/47-klyuchi.md:41 klas:F -->
+### T-47-025 · schema-zvyazok · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -352,8 +352,8 @@
 
 ---
 
-<!-- fc id:T-47-026 sha:a497e7c6 src:manual/47-klyuchi.md:40 klas:F -->
-### T-47-026 · schema-zvyazok · рядок 40
+<!-- fc id:T-47-026 sha:a497e7c6 src:manual/47-klyuchi.md:43 klas:F -->
+### T-47-026 · schema-zvyazok · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -365,8 +365,8 @@
 
 ---
 
-<!-- fc id:T-47-027 sha:2e4d5ee9 src:manual/47-klyuchi.md:41 klas:F -->
-### T-47-027 · schema-zvyazok · рядок 41
+<!-- fc id:T-47-027 sha:2e4d5ee9 src:manual/47-klyuchi.md:44 klas:F -->
+### T-47-027 · schema-zvyazok · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -378,8 +378,8 @@
 
 ---
 
-<!-- fc id:T-47-028 sha:57c333f5 src:manual/47-klyuchi.md:42 klas:F -->
-### T-47-028 · schema-zvyazok · рядок 42
+<!-- fc id:T-47-028 sha:57c333f5 src:manual/47-klyuchi.md:45 klas:F -->
+### T-47-028 · schema-zvyazok · рядок 45
 
 **Книга каже, дослівно:**
 
@@ -391,8 +391,8 @@
 
 ---
 
-<!-- fc id:T-47-029 sha:e6f1a6a7 src:manual/47-klyuchi.md:43 klas:F -->
-### T-47-029 · schema-zvyazok · рядок 43
+<!-- fc id:T-47-029 sha:e6f1a6a7 src:manual/47-klyuchi.md:46 klas:F -->
+### T-47-029 · schema-zvyazok · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -404,8 +404,8 @@
 
 ---
 
-<!-- fc id:T-47-030 sha:c0985573 src:manual/47-klyuchi.md:45 klas:F -->
-### T-47-030 · schema-zvyazok · рядок 45
+<!-- fc id:T-47-030 sha:c0985573 src:manual/47-klyuchi.md:48 klas:F -->
+### T-47-030 · schema-zvyazok · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -417,8 +417,8 @@
 
 ---
 
-<!-- fc id:T-47-031 sha:820bf9a6 src:manual/47-klyuchi.md:46 klas:F -->
-### T-47-031 · schema-zvyazok · рядок 46
+<!-- fc id:T-47-031 sha:820bf9a6 src:manual/47-klyuchi.md:49 klas:F -->
+### T-47-031 · schema-zvyazok · рядок 49
 
 **Книга каже, дослівно:**
 
@@ -430,8 +430,8 @@
 
 ---
 
-<!-- fc id:T-47-032 sha:5b18f751 src:manual/47-klyuchi.md:47 klas:F -->
-### T-47-032 · schema-zvyazok · рядок 47
+<!-- fc id:T-47-032 sha:5b18f751 src:manual/47-klyuchi.md:50 klas:F -->
+### T-47-032 · schema-zvyazok · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -443,8 +443,8 @@
 
 ---
 
-<!-- fc id:T-47-033 sha:d26ef97f src:manual/47-klyuchi.md:48 klas:F -->
-### T-47-033 · schema-zvyazok · рядок 48
+<!-- fc id:T-47-033 sha:d26ef97f src:manual/47-klyuchi.md:51 klas:F -->
+### T-47-033 · schema-zvyazok · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -456,8 +456,8 @@
 
 ---
 
-<!-- fc id:T-47-034 sha:7aa98e77 src:manual/47-klyuchi.md:49 klas:F -->
-### T-47-034 · schema-zvyazok · рядок 49
+<!-- fc id:T-47-034 sha:7aa98e77 src:manual/47-klyuchi.md:52 klas:F -->
+### T-47-034 · schema-zvyazok · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -469,8 +469,8 @@
 
 ---
 
-<!-- fc id:T-47-035 sha:69228259 src:manual/47-klyuchi.md:50 klas:F -->
-### T-47-035 · schema-zvyazok · рядок 50
+<!-- fc id:T-47-035 sha:69228259 src:manual/47-klyuchi.md:53 klas:F -->
+### T-47-035 · schema-zvyazok · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -482,8 +482,8 @@
 
 ---
 
-<!-- fc id:T-47-036 sha:433703e9 src:manual/47-klyuchi.md:53 klas:F -->
-### T-47-036 · proza · рядок 53
+<!-- fc id:T-47-036 sha:433703e9 src:manual/47-klyuchi.md:56 klas:F -->
+### T-47-036 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -495,8 +495,8 @@
 
 ---
 
-<!-- fc id:T-47-037 sha:7636d202 src:manual/47-klyuchi.md:53 klas:F -->
-### T-47-037 · proza · рядок 53
+<!-- fc id:T-47-037 sha:7636d202 src:manual/47-klyuchi.md:56 klas:F -->
+### T-47-037 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -508,8 +508,8 @@
 
 ---
 
-<!-- fc id:T-47-038 sha:c359d227 src:manual/47-klyuchi.md:59 klas:E -->
-### T-47-038 · proza · рядок 59
+<!-- fc id:T-47-038 sha:c359d227 src:manual/47-klyuchi.md:62 klas:E -->
+### T-47-038 · proza · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -521,8 +521,8 @@
 
 ---
 
-<!-- fc id:T-47-039 sha:e5da603d src:manual/47-klyuchi.md:61 klas:F -->
-### T-47-039 · proza · рядок 61
+<!-- fc id:T-47-039 sha:e5da603d src:manual/47-klyuchi.md:64 klas:F -->
+### T-47-039 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -534,8 +534,8 @@
 
 ---
 
-<!-- fc id:T-47-040 sha:9e49d8ce src:manual/47-klyuchi.md:61 klas:E -->
-### T-47-040 · proza · рядок 61
+<!-- fc id:T-47-040 sha:9e49d8ce src:manual/47-klyuchi.md:64 klas:E -->
+### T-47-040 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -547,8 +547,8 @@
 
 ---
 
-<!-- fc id:T-47-041 sha:688d7b32 src:manual/47-klyuchi.md:65 klas:F -->
-### T-47-041 · proza · рядок 65
+<!-- fc id:T-47-041 sha:688d7b32 src:manual/47-klyuchi.md:68 klas:F -->
+### T-47-041 · proza · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -560,8 +560,8 @@
 
 ---
 
-<!-- fc id:T-47-042 sha:5235df0a src:manual/47-klyuchi.md:69 klas:E -->
-### T-47-042 · proza · рядок 69
+<!-- fc id:T-47-042 sha:5235df0a src:manual/47-klyuchi.md:72 klas:E -->
+### T-47-042 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -573,8 +573,8 @@
 
 ---
 
-<!-- fc id:T-47-043 sha:8e8251a6 src:manual/47-klyuchi.md:69 klas:F -->
-### T-47-043 · proza · рядок 69
+<!-- fc id:T-47-043 sha:8e8251a6 src:manual/47-klyuchi.md:72 klas:F -->
+### T-47-043 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -586,8 +586,8 @@
 
 ---
 
-<!-- fc id:T-47-044 sha:7ed23363 src:manual/47-klyuchi.md:69 klas:E -->
-### T-47-044 · proza · рядок 69
+<!-- fc id:T-47-044 sha:7ed23363 src:manual/47-klyuchi.md:72 klas:E -->
+### T-47-044 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -599,8 +599,8 @@
 
 ---
 
-<!-- fc id:T-47-045 sha:8c7a5dfa src:manual/47-klyuchi.md:73 klas:E -->
-### T-47-045 · proza · рядок 73
+<!-- fc id:T-47-045 sha:8c7a5dfa src:manual/47-klyuchi.md:76 klas:E -->
+### T-47-045 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -612,8 +612,8 @@
 
 ---
 
-<!-- fc id:T-47-046 sha:59f69049 src:manual/47-klyuchi.md:73 klas:F -->
-### T-47-046 · proza · рядок 73
+<!-- fc id:T-47-046 sha:59f69049 src:manual/47-klyuchi.md:76 klas:F -->
+### T-47-046 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -625,8 +625,8 @@
 
 ---
 
-<!-- fc id:T-47-047 sha:93152759 src:manual/47-klyuchi.md:77 klas:E -->
-### T-47-047 · proza · рядок 77
+<!-- fc id:T-47-047 sha:93152759 src:manual/47-klyuchi.md:80 klas:E -->
+### T-47-047 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -638,8 +638,8 @@
 
 ---
 
-<!-- fc id:T-47-048 sha:e587ee11 src:manual/47-klyuchi.md:81 klas:E -->
-### T-47-048 · proza · рядок 81
+<!-- fc id:T-47-048 sha:e587ee11 src:manual/47-klyuchi.md:84 klas:E -->
+### T-47-048 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -651,8 +651,8 @@
 
 ---
 
-<!-- fc id:T-47-049 sha:ebb5508e src:manual/47-klyuchi.md:81 klas:E -->
-### T-47-049 · proza · рядок 81
+<!-- fc id:T-47-049 sha:ebb5508e src:manual/47-klyuchi.md:84 klas:E -->
+### T-47-049 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -664,8 +664,8 @@
 
 ---
 
-<!-- fc id:T-47-050 sha:9170d55f src:manual/47-klyuchi.md:88 klas:E -->
-### T-47-050 · proza · рядок 88
+<!-- fc id:T-47-050 sha:9170d55f src:manual/47-klyuchi.md:91 klas:E -->
+### T-47-050 · proza · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -677,8 +677,8 @@
 
 ---
 
-<!-- fc id:T-47-051 sha:1d299621 src:manual/47-klyuchi.md:91 klas:E -->
-### T-47-051 · proza · рядок 91
+<!-- fc id:T-47-051 sha:1d299621 src:manual/47-klyuchi.md:94 klas:E -->
+### T-47-051 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -690,8 +690,8 @@
 
 ---
 
-<!-- fc id:T-47-052 sha:bf6f4377 src:manual/47-klyuchi.md:91 klas:E -->
-### T-47-052 · proza · рядок 91
+<!-- fc id:T-47-052 sha:bf6f4377 src:manual/47-klyuchi.md:94 klas:E -->
+### T-47-052 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -703,8 +703,8 @@
 
 ---
 
-<!-- fc id:T-47-053 sha:05ef0681 src:manual/47-klyuchi.md:95 klas:F -->
-### T-47-053 · proza · рядок 95
+<!-- fc id:T-47-053 sha:05ef0681 src:manual/47-klyuchi.md:98 klas:F -->
+### T-47-053 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -716,8 +716,8 @@
 
 ---
 
-<!-- fc id:T-47-054 sha:4b2fd267 src:manual/47-klyuchi.md:95 klas:E -->
-### T-47-054 · proza · рядок 95
+<!-- fc id:T-47-054 sha:4b2fd267 src:manual/47-klyuchi.md:98 klas:E -->
+### T-47-054 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -729,8 +729,8 @@
 
 ---
 
-<!-- fc id:T-47-055 sha:46456323 src:manual/47-klyuchi.md:99 klas:E -->
-### T-47-055 · proza · рядок 99
+<!-- fc id:T-47-055 sha:46456323 src:manual/47-klyuchi.md:102 klas:E -->
+### T-47-055 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -742,8 +742,8 @@
 
 ---
 
-<!-- fc id:T-47-056 sha:568a6b06 src:manual/47-klyuchi.md:99 klas:E -->
-### T-47-056 · proza · рядок 99
+<!-- fc id:T-47-056 sha:568a6b06 src:manual/47-klyuchi.md:102 klas:E -->
+### T-47-056 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -755,8 +755,8 @@
 
 ---
 
-<!-- fc id:T-47-057 sha:85f9bac1 src:manual/47-klyuchi.md:105 klas:E -->
-### T-47-057 · proza · рядок 105
+<!-- fc id:T-47-057 sha:85f9bac1 src:manual/47-klyuchi.md:108 klas:E -->
+### T-47-057 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -768,8 +768,8 @@
 
 ---
 
-<!-- fc id:T-47-058 sha:a9afb0f4 src:manual/47-klyuchi.md:105 klas:E -->
-### T-47-058 · proza · рядок 105
+<!-- fc id:T-47-058 sha:a9afb0f4 src:manual/47-klyuchi.md:108 klas:E -->
+### T-47-058 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -781,8 +781,8 @@
 
 ---
 
-<!-- fc id:T-47-059 sha:78e469f8 src:manual/47-klyuchi.md:108 klas:E -->
-### T-47-059 · proza · рядок 108
+<!-- fc id:T-47-059 sha:78e469f8 src:manual/47-klyuchi.md:111 klas:E -->
+### T-47-059 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -794,8 +794,8 @@
 
 ---
 
-<!-- fc id:T-47-060 sha:73cf5da8 src:manual/47-klyuchi.md:112 klas:E -->
-### T-47-060 · proza · рядок 112
+<!-- fc id:T-47-060 sha:73cf5da8 src:manual/47-klyuchi.md:115 klas:E -->
+### T-47-060 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -807,8 +807,8 @@
 
 ---
 
-<!-- fc id:T-47-061 sha:a6dc588b src:manual/47-klyuchi.md:112 klas:E -->
-### T-47-061 · proza · рядок 112
+<!-- fc id:T-47-061 sha:a6dc588b src:manual/47-klyuchi.md:115 klas:E -->
+### T-47-061 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -820,8 +820,8 @@
 
 ---
 
-<!-- fc id:T-47-062 sha:8a8bfefe src:manual/47-klyuchi.md:115 klas:E -->
-### T-47-062 · proza · рядок 115
+<!-- fc id:T-47-062 sha:8a8bfefe src:manual/47-klyuchi.md:118 klas:E -->
+### T-47-062 · proza · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -833,8 +833,8 @@
 
 ---
 
-<!-- fc id:T-47-063 sha:6ad8b9e4 src:manual/47-klyuchi.md:117 klas:F -->
-### T-47-063 · proza · рядок 117
+<!-- fc id:T-47-063 sha:6ad8b9e4 src:manual/47-klyuchi.md:120 klas:F -->
+### T-47-063 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -846,8 +846,8 @@
 
 ---
 
-<!-- fc id:T-47-064 sha:04470017 src:manual/47-klyuchi.md:117 klas:F -->
-### T-47-064 · proza · рядок 117
+<!-- fc id:T-47-064 sha:04470017 src:manual/47-klyuchi.md:120 klas:F -->
+### T-47-064 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -859,8 +859,8 @@
 
 ---
 
-<!-- fc id:T-47-065 sha:e8f6f603 src:manual/47-klyuchi.md:121 klas:E -->
-### T-47-065 · proza · рядок 121
+<!-- fc id:T-47-065 sha:e8f6f603 src:manual/47-klyuchi.md:124 klas:E -->
+### T-47-065 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -872,8 +872,8 @@
 
 ---
 
-<!-- fc id:T-47-066 sha:1b1c231b src:manual/47-klyuchi.md:121 klas:E -->
-### T-47-066 · proza · рядок 121
+<!-- fc id:T-47-066 sha:1b1c231b src:manual/47-klyuchi.md:124 klas:E -->
+### T-47-066 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -885,8 +885,8 @@
 
 ---
 
-<!-- fc id:T-47-067 sha:bc09e508 src:manual/47-klyuchi.md:127 klas:F -->
-### T-47-067 · proza · рядок 127
+<!-- fc id:T-47-067 sha:bc09e508 src:manual/47-klyuchi.md:130 klas:F -->
+### T-47-067 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -898,8 +898,8 @@
 
 ---
 
-<!-- fc id:T-47-068 sha:eb3a11a0 src:manual/47-klyuchi.md:127 klas:E -->
-### T-47-068 · proza · рядок 127
+<!-- fc id:T-47-068 sha:eb3a11a0 src:manual/47-klyuchi.md:130 klas:E -->
+### T-47-068 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -911,8 +911,8 @@
 
 ---
 
-<!-- fc id:T-47-069 sha:075b8351 src:manual/47-klyuchi.md:133 klas:E -->
-### T-47-069 · proza · рядок 133
+<!-- fc id:T-47-069 sha:075b8351 src:manual/47-klyuchi.md:136 klas:E -->
+### T-47-069 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -924,8 +924,8 @@
 
 ---
 
-<!-- fc id:T-47-070 sha:58592710 src:manual/47-klyuchi.md:133 klas:E -->
-### T-47-070 · proza · рядок 133
+<!-- fc id:T-47-070 sha:58592710 src:manual/47-klyuchi.md:136 klas:E -->
+### T-47-070 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -937,8 +937,8 @@
 
 ---
 
-<!-- fc id:T-47-071 sha:543ac525 src:manual/47-klyuchi.md:138 klas:F -->
-### T-47-071 · proza · рядок 138
+<!-- fc id:T-47-071 sha:543ac525 src:manual/47-klyuchi.md:141 klas:F -->
+### T-47-071 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -950,8 +950,8 @@
 
 ---
 
-<!-- fc id:T-47-072 sha:b88f4d23 src:manual/47-klyuchi.md:138 klas:E -->
-### T-47-072 · proza · рядок 138
+<!-- fc id:T-47-072 sha:b88f4d23 src:manual/47-klyuchi.md:141 klas:E -->
+### T-47-072 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -963,8 +963,8 @@
 
 ---
 
-<!-- fc id:T-47-073 sha:9eab8a9e src:manual/47-klyuchi.md:142 klas:E -->
-### T-47-073 · proza · рядок 142
+<!-- fc id:T-47-073 sha:9eab8a9e src:manual/47-klyuchi.md:145 klas:E -->
+### T-47-073 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -976,8 +976,8 @@
 
 ---
 
-<!-- fc id:T-47-074 sha:d55c3d3b src:manual/47-klyuchi.md:142 klas:E -->
-### T-47-074 · proza · рядок 142
+<!-- fc id:T-47-074 sha:d55c3d3b src:manual/47-klyuchi.md:145 klas:E -->
+### T-47-074 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -989,8 +989,8 @@
 
 ---
 
-<!-- fc id:T-47-075 sha:57acc90f src:manual/47-klyuchi.md:149 klas:F -->
-### T-47-075 · proza · рядок 149
+<!-- fc id:T-47-075 sha:57acc90f src:manual/47-klyuchi.md:152 klas:F -->
+### T-47-075 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1002,8 +1002,8 @@
 
 ---
 
-<!-- fc id:T-47-076 sha:e26cded7 src:manual/47-klyuchi.md:149 klas:E -->
-### T-47-076 · proza · рядок 149
+<!-- fc id:T-47-076 sha:e26cded7 src:manual/47-klyuchi.md:152 klas:E -->
+### T-47-076 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1015,8 +1015,8 @@
 
 ---
 
-<!-- fc id:T-47-077 sha:62ecce55 src:manual/47-klyuchi.md:155 klas:E -->
-### T-47-077 · proza · рядок 155
+<!-- fc id:T-47-077 sha:62ecce55 src:manual/47-klyuchi.md:158 klas:E -->
+### T-47-077 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -1028,8 +1028,8 @@
 
 ---
 
-<!-- fc id:T-47-078 sha:c6775bfa src:manual/47-klyuchi.md:158 klas:E -->
-### T-47-078 · proza · рядок 158
+<!-- fc id:T-47-078 sha:c6775bfa src:manual/47-klyuchi.md:161 klas:E -->
+### T-47-078 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1041,8 +1041,8 @@
 
 ---
 
-<!-- fc id:T-47-079 sha:ccbc62f6 src:manual/47-klyuchi.md:160 klas:E -->
-### T-47-079 · proza · рядок 160
+<!-- fc id:T-47-079 sha:ccbc62f6 src:manual/47-klyuchi.md:163 klas:E -->
+### T-47-079 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -1054,8 +1054,8 @@
 
 ---
 
-<!-- fc id:T-47-080 sha:5494979f src:manual/47-klyuchi.md:162 klas:E -->
-### T-47-080 · proza · рядок 162
+<!-- fc id:T-47-080 sha:5494979f src:manual/47-klyuchi.md:165 klas:E -->
+### T-47-080 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1067,8 +1067,8 @@
 
 ---
 
-<!-- fc id:T-47-081 sha:3e2419af src:manual/47-klyuchi.md:167 klas:F -->
-### T-47-081 · proza · рядок 167
+<!-- fc id:T-47-081 sha:3e2419af src:manual/47-klyuchi.md:170 klas:F -->
+### T-47-081 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1080,8 +1080,8 @@
 
 ---
 
-<!-- fc id:T-47-082 sha:10b48a7b src:manual/47-klyuchi.md:170 klas:F -->
-### T-47-082 · proza · рядок 170
+<!-- fc id:T-47-082 sha:10b48a7b src:manual/47-klyuchi.md:173 klas:F -->
+### T-47-082 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1093,8 +1093,8 @@
 
 ---
 
-<!-- fc id:T-47-083 sha:0a0ab5d7 src:manual/47-klyuchi.md:170 klas:E -->
-### T-47-083 · proza · рядок 170
+<!-- fc id:T-47-083 sha:0a0ab5d7 src:manual/47-klyuchi.md:173 klas:E -->
+### T-47-083 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1106,8 +1106,8 @@
 
 ---
 
-<!-- fc id:T-47-084 sha:1ee4543a src:manual/47-klyuchi.md:174 klas:F -->
-### T-47-084 · proza · рядок 174
+<!-- fc id:T-47-084 sha:1ee4543a src:manual/47-klyuchi.md:177 klas:F -->
+### T-47-084 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1119,8 +1119,8 @@
 
 ---
 
-<!-- fc id:T-47-085 sha:551c9eed src:manual/47-klyuchi.md:176 klas:F -->
-### T-47-085 · proza · рядок 176
+<!-- fc id:T-47-085 sha:551c9eed src:manual/47-klyuchi.md:179 klas:F -->
+### T-47-085 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1132,8 +1132,8 @@
 
 ---
 
-<!-- fc id:T-47-086 sha:83f6428e src:manual/47-klyuchi.md:176 klas:E -->
-### T-47-086 · proza · рядок 176
+<!-- fc id:T-47-086 sha:83f6428e src:manual/47-klyuchi.md:179 klas:E -->
+### T-47-086 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1145,8 +1145,8 @@
 
 ---
 
-<!-- fc id:T-47-087 sha:c53f65ad src:manual/47-klyuchi.md:176 klas:E -->
-### T-47-087 · proza · рядок 176
+<!-- fc id:T-47-087 sha:c53f65ad src:manual/47-klyuchi.md:179 klas:E -->
+### T-47-087 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1158,8 +1158,8 @@
 
 ---
 
-<!-- fc id:T-47-088 sha:4248fb8c src:manual/47-klyuchi.md:181 klas:E -->
-### T-47-088 · proza · рядок 181
+<!-- fc id:T-47-088 sha:4248fb8c src:manual/47-klyuchi.md:184 klas:E -->
+### T-47-088 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1171,8 +1171,8 @@
 
 ---
 
-<!-- fc id:T-47-089 sha:76655c31 src:manual/47-klyuchi.md:181 klas:E -->
-### T-47-089 · proza · рядок 181
+<!-- fc id:T-47-089 sha:76655c31 src:manual/47-klyuchi.md:184 klas:E -->
+### T-47-089 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1184,8 +1184,8 @@
 
 ---
 
-<!-- fc id:T-47-090 sha:90de30f1 src:manual/47-klyuchi.md:181 klas:E -->
-### T-47-090 · proza · рядок 181
+<!-- fc id:T-47-090 sha:90de30f1 src:manual/47-klyuchi.md:184 klas:E -->
+### T-47-090 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1197,8 +1197,8 @@
 
 ---
 
-<!-- fc id:T-47-091 sha:04eef0de src:manual/47-klyuchi.md:185 klas:F -->
-### T-47-091 · proza · рядок 185
+<!-- fc id:T-47-091 sha:04eef0de src:manual/47-klyuchi.md:188 klas:F -->
+### T-47-091 · proza · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -1210,8 +1210,8 @@
 
 ---
 
-<!-- fc id:T-47-092 sha:c8a3a045 src:manual/47-klyuchi.md:189 klas:E -->
-### T-47-092 · proza · рядок 189
+<!-- fc id:T-47-092 sha:c8a3a045 src:manual/47-klyuchi.md:192 klas:E -->
+### T-47-092 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1223,8 +1223,8 @@
 
 ---
 
-<!-- fc id:T-47-093 sha:fd896587 src:manual/47-klyuchi.md:189 klas:F -->
-### T-47-093 · proza · рядок 189
+<!-- fc id:T-47-093 sha:fd896587 src:manual/47-klyuchi.md:192 klas:F -->
+### T-47-093 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1236,8 +1236,8 @@
 
 ---
 
-<!-- fc id:T-47-094 sha:800776ea src:manual/47-klyuchi.md:192 klas:E -->
-### T-47-094 · proza · рядок 192
+<!-- fc id:T-47-094 sha:800776ea src:manual/47-klyuchi.md:195 klas:E -->
+### T-47-094 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1249,8 +1249,8 @@
 
 ---
 
-<!-- fc id:T-47-095 sha:c08a478e src:manual/47-klyuchi.md:199 klas:E -->
-### T-47-095 · proza · рядок 199
+<!-- fc id:T-47-095 sha:c08a478e src:manual/47-klyuchi.md:202 klas:E -->
+### T-47-095 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1262,8 +1262,8 @@
 
 ---
 
-<!-- fc id:T-47-096 sha:1dbbe37a src:manual/47-klyuchi.md:203 klas:E -->
-### T-47-096 · proza · рядок 203
+<!-- fc id:T-47-096 sha:1dbbe37a src:manual/47-klyuchi.md:206 klas:E -->
+### T-47-096 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1275,8 +1275,8 @@
 
 ---
 
-<!-- fc id:T-47-097 sha:9bdf03ad src:manual/47-klyuchi.md:203 klas:F -->
-### T-47-097 · proza · рядок 203
+<!-- fc id:T-47-097 sha:9bdf03ad src:manual/47-klyuchi.md:206 klas:F -->
+### T-47-097 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1288,8 +1288,8 @@
 
 ---
 
-<!-- fc id:T-47-098 sha:bc789717 src:manual/47-klyuchi.md:207 klas:E -->
-### T-47-098 · proza · рядок 207
+<!-- fc id:T-47-098 sha:bc789717 src:manual/47-klyuchi.md:210 klas:E -->
+### T-47-098 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1301,8 +1301,8 @@
 
 ---
 
-<!-- fc id:T-47-099 sha:a28cf2d3 src:manual/47-klyuchi.md:207 klas:E -->
-### T-47-099 · proza · рядок 207
+<!-- fc id:T-47-099 sha:a28cf2d3 src:manual/47-klyuchi.md:210 klas:E -->
+### T-47-099 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1314,8 +1314,8 @@
 
 ---
 
-<!-- fc id:T-47-100 sha:aa5535c1 src:manual/47-klyuchi.md:214 klas:E -->
-### T-47-100 · proza · рядок 214
+<!-- fc id:T-47-100 sha:aa5535c1 src:manual/47-klyuchi.md:217 klas:E -->
+### T-47-100 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1327,8 +1327,8 @@
 
 ---
 
-<!-- fc id:T-47-101 sha:fc0b01f6 src:manual/47-klyuchi.md:216 klas:F -->
-### T-47-101 · proza · рядок 216
+<!-- fc id:T-47-101 sha:fc0b01f6 src:manual/47-klyuchi.md:219 klas:F -->
+### T-47-101 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1340,8 +1340,8 @@
 
 ---
 
-<!-- fc id:T-47-102 sha:494efa74 src:manual/47-klyuchi.md:219 klas:E -->
-### T-47-102 · proza · рядок 219
+<!-- fc id:T-47-102 sha:494efa74 src:manual/47-klyuchi.md:222 klas:E -->
+### T-47-102 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1353,8 +1353,8 @@
 
 ---
 
-<!-- fc id:T-47-103 sha:25fde9c6 src:manual/47-klyuchi.md:221 klas:F -->
-### T-47-103 · proza · рядок 221
+<!-- fc id:T-47-103 sha:25fde9c6 src:manual/47-klyuchi.md:224 klas:F -->
+### T-47-103 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1366,8 +1366,8 @@
 
 ---
 
-<!-- fc id:T-47-104 sha:ee84a6f6 src:manual/47-klyuchi.md:223 klas:E -->
-### T-47-104 · proza · рядок 223
+<!-- fc id:T-47-104 sha:ee84a6f6 src:manual/47-klyuchi.md:226 klas:E -->
+### T-47-104 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1379,8 +1379,8 @@
 
 ---
 
-<!-- fc id:T-47-105 sha:08b892a3 src:manual/47-klyuchi.md:225 klas:E -->
-### T-47-105 · proza · рядок 225
+<!-- fc id:T-47-105 sha:08b892a3 src:manual/47-klyuchi.md:228 klas:E -->
+### T-47-105 · proza · рядок 228
 
 **Книга каже, дослівно:**
 

@@ -553,22 +553,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/register/soc/io_mux_reg.h
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, розділ 2.2 «Pin Overview», Table 2-1 «Pin Overview», с. 14-15
 - **Дослівно з джерела:**
-  > #define PERIPHS_IO_MUX_MTDI_U             (DR_REG_IO_MUX_BASE +0x34)
-  > #define IO_MUX_GPIO12_REG                    PERIPHS_IO_MUX_MTDI_U
-  > #define PERIPHS_IO_MUX_MTCK_U             (DR_REG_IO_MUX_BASE +0x38)
-  > #define IO_MUX_GPIO13_REG                    PERIPHS_IO_MUX_MTCK_U
-  > #define PERIPHS_IO_MUX_MTMS_U             (DR_REG_IO_MUX_BASE +0x30)
-  > #define IO_MUX_GPIO14_REG                    PERIPHS_IO_MUX_MTMS_U
-  > #define PERIPHS_IO_MUX_MTDO_U             (DR_REG_IO_MUX_BASE +0x3c)
-  > #define IO_MUX_GPIO15_REG                    PERIPHS_IO_MUX_MTDO_U
-  > #define FUNC_MTDI_MTDI                              0
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Прохід 20 закрив два піни з чотирьох і два свідомо відправив у наряд, бо йшов від документації, де таблиця JTAG-пінів підставляється директивою і в сирому `.rst` не читається.
-Тут узято інше джерело, і воно однозначніше: у самому заголовку IOMUX ім'я регістра **є** іменем сигналу JTAG. `IO_MUX_GPIO12_REG` дорівнює `PERIPHS_IO_MUX_MTDI_U` — тобто GPIO12 і MTDI це один і той самий вивід, а `FUNC_MTDI_MTDI = 0` каже, що JTAG — функція нуль, тобто типова після скидання.
-Усі чотири рядки таблиці розділу 27 звірено: TMS `GPIO14`, TDI `GPIO12`, TCK `GPIO13`, TDO `GPIO15`. Розбіжностей немає. Два пункти наряду проходу 20 закрито.
-- **Прохід:** pass-24-zsuvy-i-matrycya
+  > Name    No.   Type   Function
+  > MTMS    17    I/O    GPIO14, ADC2_CH6, RTC_GPIO16, TOUCH6, EMAC_TXD2, HSPICLK, HS2_CLK, SD_CLK, MTMS
+  > MTDI    18    I/O    GPIO12, ADC2_CH5, RTC_GPIO15, TOUCH5, EMAC_TXD3, HSPIQ, HS2_DATA2, SD_DATA2, MTDI
+  > MTCK    20    I/O    GPIO13, ADC2_CH4, RTC_GPIO14, TOUCH4, EMAC_RX_ER, HSPID, HS2_DATA3, SD_DATA3, MTCK
+  > MTDO    21    I/O    GPIO15, ADC2_CH3, RTC_GPIO13, TOUCH3, EMAC_RXD3, HSPICS0, HS2_CMD, SD_CMD, MTDO
+  > 
+  > Notes for Table 2-1 Pin Overview:
+  > 1. Function names:
+  >    MTMS
+  >    MTDI
+  >    MTCK    JTAG interface signals
+  >    MTDO
+- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Звірка, яку просить оновлене завдання. Таблиця друкованого datasheet збігається з `io_mux_reg.h` по всіх чотирьох пінах JTAG, а не лише по двох, що були в наряді: `MTDI` — `GPIO12` (вивід 18), `MTCK` — `GPIO13` (вивід 20), `MTMS` — `GPIO14` (вивід 17), `MTDO` — `GPIO15` (вивід 21). Таблиця розділу 27 звірена повністю, двома джерелами різного роду.
+Джерело дає дві речі понад те, про що просили. Примітка 1 до таблиці називає `MTMS`/`MTDI`/`MTCK`/`MTDO` саме «JTAG interface signals» — тобто зв'язок сигналу з іменем виводу стверджує сам datasheet, а не читач таблиці альтернативних функцій. Розділ 2.3.1 «Restrictions for GPIOs and RTC_GPIOs» ставить інтерфейс JTAG в один перелік зі strapping-пінами як «important functions» — це та сама думка, з якої починається попередження розділу 27.
+Про спосіб. Перша редакція завдання вказувала на додаток A.4 (таблиця IO_MUX). Рядки там є, але додаток верстається повернутим на 90°, і pdftotext втрачає в ньому цифри: «GPIO» без номера, «VDD P» замість «VDD3P3». Витяг наведено з Table 2-1 того самого документа, де ті самі відомості видобуваються без утрат. Це не обхід правила, а вибір читабельної таблиці в тому самому документі.
+Взірець навмисно лишено вузьким — на два рядки книги, що були в наряді. Підтвердження `TDI`/`TDO` описано тут, але покривати ними рядки, уже закриті проходом 20, сенсу немає: широкий взірець небезпечніший за відсутній.
+- **Прохід:** m2-01-esp32-datasheet-iomux
 
 ---
 
@@ -603,22 +607,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/register/soc/io_mux_reg.h
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, розділ 2.2 «Pin Overview», Table 2-1 «Pin Overview», с. 14-15
 - **Дослівно з джерела:**
-  > #define PERIPHS_IO_MUX_MTDI_U             (DR_REG_IO_MUX_BASE +0x34)
-  > #define IO_MUX_GPIO12_REG                    PERIPHS_IO_MUX_MTDI_U
-  > #define PERIPHS_IO_MUX_MTCK_U             (DR_REG_IO_MUX_BASE +0x38)
-  > #define IO_MUX_GPIO13_REG                    PERIPHS_IO_MUX_MTCK_U
-  > #define PERIPHS_IO_MUX_MTMS_U             (DR_REG_IO_MUX_BASE +0x30)
-  > #define IO_MUX_GPIO14_REG                    PERIPHS_IO_MUX_MTMS_U
-  > #define PERIPHS_IO_MUX_MTDO_U             (DR_REG_IO_MUX_BASE +0x3c)
-  > #define IO_MUX_GPIO15_REG                    PERIPHS_IO_MUX_MTDO_U
-  > #define FUNC_MTDI_MTDI                              0
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Прохід 20 закрив два піни з чотирьох і два свідомо відправив у наряд, бо йшов від документації, де таблиця JTAG-пінів підставляється директивою і в сирому `.rst` не читається.
-Тут узято інше джерело, і воно однозначніше: у самому заголовку IOMUX ім'я регістра **є** іменем сигналу JTAG. `IO_MUX_GPIO12_REG` дорівнює `PERIPHS_IO_MUX_MTDI_U` — тобто GPIO12 і MTDI це один і той самий вивід, а `FUNC_MTDI_MTDI = 0` каже, що JTAG — функція нуль, тобто типова після скидання.
-Усі чотири рядки таблиці розділу 27 звірено: TMS `GPIO14`, TDI `GPIO12`, TCK `GPIO13`, TDO `GPIO15`. Розбіжностей немає. Два пункти наряду проходу 20 закрито.
-- **Прохід:** pass-24-zsuvy-i-matrycya
+  > Name    No.   Type   Function
+  > MTMS    17    I/O    GPIO14, ADC2_CH6, RTC_GPIO16, TOUCH6, EMAC_TXD2, HSPICLK, HS2_CLK, SD_CLK, MTMS
+  > MTDI    18    I/O    GPIO12, ADC2_CH5, RTC_GPIO15, TOUCH5, EMAC_TXD3, HSPIQ, HS2_DATA2, SD_DATA2, MTDI
+  > MTCK    20    I/O    GPIO13, ADC2_CH4, RTC_GPIO14, TOUCH4, EMAC_RX_ER, HSPID, HS2_DATA3, SD_DATA3, MTCK
+  > MTDO    21    I/O    GPIO15, ADC2_CH3, RTC_GPIO13, TOUCH3, EMAC_RXD3, HSPICS0, HS2_CMD, SD_CMD, MTDO
+  > 
+  > Notes for Table 2-1 Pin Overview:
+  > 1. Function names:
+  >    MTMS
+  >    MTDI
+  >    MTCK    JTAG interface signals
+  >    MTDO
+- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Звірка, яку просить оновлене завдання. Таблиця друкованого datasheet збігається з `io_mux_reg.h` по всіх чотирьох пінах JTAG, а не лише по двох, що були в наряді: `MTDI` — `GPIO12` (вивід 18), `MTCK` — `GPIO13` (вивід 20), `MTMS` — `GPIO14` (вивід 17), `MTDO` — `GPIO15` (вивід 21). Таблиця розділу 27 звірена повністю, двома джерелами різного роду.
+Джерело дає дві речі понад те, про що просили. Примітка 1 до таблиці називає `MTMS`/`MTDI`/`MTCK`/`MTDO` саме «JTAG interface signals» — тобто зв'язок сигналу з іменем виводу стверджує сам datasheet, а не читач таблиці альтернативних функцій. Розділ 2.3.1 «Restrictions for GPIOs and RTC_GPIOs» ставить інтерфейс JTAG в один перелік зі strapping-пінами як «important functions» — це та сама думка, з якої починається попередження розділу 27.
+Про спосіб. Перша редакція завдання вказувала на додаток A.4 (таблиця IO_MUX). Рядки там є, але додаток верстається повернутим на 90°, і pdftotext втрачає в ньому цифри: «GPIO» без номера, «VDD P» замість «VDD3P3». Витяг наведено з Table 2-1 того самого документа, де ті самі відомості видобуваються без утрат. Це не обхід правила, а вибір читабельної таблиці в тому самому документі.
+Взірець навмисно лишено вузьким — на два рядки книги, що були в наряді. Підтвердження `TDI`/`TDO` описано тут, але покривати ними рядки, уже закриті проходом 20, сенсу немає: широкий взірець небезпечніший за відсутній.
+- **Прохід:** m2-01-esp32-datasheet-iomux
 
 ---
 

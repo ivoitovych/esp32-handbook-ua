@@ -240,24 +240,20 @@
 
 ---
 
-<!-- fc id:T-06-019 sha:48ac9fb6 src:manual/06-zhyvlennya.md:43 klas:C -->
+<!-- fc id:T-06-019 sha:53345c34 src:manual/06-zhyvlennya.md:43 klas:F -->
 ### T-06-019 · tablycya · рядок 43
 
 **Книга каже, дослівно:**
 
-> | Deep sleep | одиниці — десятки мкА |
+> | Deep sleep | ~10 мкА; з живленим ULP — близько 150 мкА |
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
-- **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
-- **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-06-020 sha:17b7dd68 src:manual/06-zhyvlennya.md:44 klas:F -->
+<!-- fc id:T-06-020 sha:17b7dd68 src:manual/06-zhyvlennya.md:44 klas:A -->
 ### T-06-020 · tablycya · рядок 44
 
 **Книга каже, дослівно:**
@@ -266,7 +262,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes» (с. 30) і Table 5-4 «Current Consumption Depending on RF Modes» (с. 52)
+- **Дослівно з джерела:**
+  > Table 4-2. Power Consumption by Power Modes
+  > Power mode      Description                                Power Consumption
+  > Modem-sleep     240 MHz  Dual-core chip(s)                 30 mA ~ 68 mA
+  >                 160 MHz  Dual-core chip(s)                 27 mA ~ 44 mA
+  >                 Normal speed: 80 MHz  Dual-core chip(s)    20 mA ~ 31 mA
+  > Light-sleep     -                                          0.8 mA
+  > Deep-sleep      The ULP coprocessor is powered up.         150 µA
+  >                 ULP sensor-monitored pattern               100 µA @1% duty
+  >                 RTC timer + RTC memory                     10 µA
+  > Hibernation     RTC timer only                             5 µA
+  > Power off       CHIP_PU is set to low level                1 µA
+  > 
+  > Table 5-4. Current Consumption Depending on RF Modes
+  > Transmit 802.11b, DSSS 1 Mbps, POUT = +19.5 dBm     Typ 240 mA
+  > Transmit 802.11g, OFDM 54 Mbps, POUT = +16 dBm      Typ 190 mA
+  > Transmit 802.11n, OFDM MCS7, POUT = +14 dBm         Typ 180 mA
+  > Receive 802.11b/g/n                                 Typ 95 ~ 100 mA
+- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Таблиця розділу 06 подає порядки, і всі вони збігаються: deep sleep 10 мкА («одиниці — десятки мкА»), light sleep 0.8 мА («сотні мкА — одиниці мА»), активний без радіо 20-68 мА («десятки мА»), Wi-Fi у роботі 95-100 мА на прийомі («близько сотні мА»), піки передачі 180-240 мА («сотні мА»).
+Заразом знімається застереження, яке стояло над таблицею з проходу 1: «взято з документації сімейств і до першоджерела не звірено». Тепер звірено, і рядок про незвіреність у розділі 06 має піти — але розділ за М1, тож це в звіті, а не тут.
+Одна межа таблиці варта уваги й описана у звіті окремо: «одиниці — десятки мкА» справедливе для deep sleep із самим RTC (10 мкА). З увімкненим ULP це 150 мкА, тобто сотні. Книга ULP у цій таблиці не згадує, і рядок читається як «deep sleep узагалі».
+- **Прохід:** m2-02-esp32-datasheet
 
 ---
 
@@ -296,7 +316,7 @@
 
 ---
 
-<!-- fc id:T-06-023 sha:3a38002a src:manual/06-zhyvlennya.md:47 klas:C -->
+<!-- fc id:T-06-023 sha:3a38002a src:manual/06-zhyvlennya.md:47 klas:A -->
 ### T-06-023 · tablycya · рядок 47
 
 **Книга каже, дослівно:**
@@ -305,11 +325,31 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.espressif.com/en/support/documents/technical-documents (ESP32 Series Datasheet)
-- **Що шукати в джерелі:** розділ «Recommended Operating Conditions»: гранично допустимий струм на пін (40 мА) і типова сила драйвера за замовчуванням; робочий діапазон температур; таблиця споживання за режимами (deep sleep, light sleep, modem sleep, активний, пік передачі Wi-Fi).
-- **Нотатка:** Найважливіша недосяжна група після BME280: на цих числах стоять розділи 05, 06 і 47, тобто вся частина про живлення. Частина закривається обхідним шляхом — `gpio_set_drive_capability` у ESP-IDF описує рівні сили драйвера, — і це завдання наступного проходу.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes» (с. 30) і Table 5-4 «Current Consumption Depending on RF Modes» (с. 52)
+- **Дослівно з джерела:**
+  > Table 4-2. Power Consumption by Power Modes
+  > Power mode      Description                                Power Consumption
+  > Modem-sleep     240 MHz  Dual-core chip(s)                 30 mA ~ 68 mA
+  >                 160 MHz  Dual-core chip(s)                 27 mA ~ 44 mA
+  >                 Normal speed: 80 MHz  Dual-core chip(s)    20 mA ~ 31 mA
+  > Light-sleep     -                                          0.8 mA
+  > Deep-sleep      The ULP coprocessor is powered up.         150 µA
+  >                 ULP sensor-monitored pattern               100 µA @1% duty
+  >                 RTC timer + RTC memory                     10 µA
+  > Hibernation     RTC timer only                             5 µA
+  > Power off       CHIP_PU is set to low level                1 µA
+  > 
+  > Table 5-4. Current Consumption Depending on RF Modes
+  > Transmit 802.11b, DSSS 1 Mbps, POUT = +19.5 dBm     Typ 240 mA
+  > Transmit 802.11g, OFDM 54 Mbps, POUT = +16 dBm      Typ 190 mA
+  > Transmit 802.11n, OFDM MCS7, POUT = +14 dBm         Typ 180 mA
+  > Receive 802.11b/g/n                                 Typ 95 ~ 100 mA
+- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
+- **Нотатка:** Таблиця розділу 06 подає порядки, і всі вони збігаються: deep sleep 10 мкА («одиниці — десятки мкА»), light sleep 0.8 мА («сотні мкА — одиниці мА»), активний без радіо 20-68 мА («десятки мА»), Wi-Fi у роботі 95-100 мА на прийомі («близько сотні мА»), піки передачі 180-240 мА («сотні мА»).
+Заразом знімається застереження, яке стояло над таблицею з проходу 1: «взято з документації сімейств і до першоджерела не звірено». Тепер звірено, і рядок про незвіреність у розділі 06 має піти — але розділ за М1, тож це в звіті, а не тут.
+Одна межа таблиці варта уваги й описана у звіті окремо: «одиниці — десятки мкА» справедливе для deep sleep із самим RTC (10 мкА). З увімкненим ULP це 150 мкА, тобто сотні. Книга ULP у цій таблиці не згадує, і рядок читається як «deep sleep узагалі».
+- **Прохід:** m2-02-esp32-datasheet
 
 ---
 
