@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/56-pasport.md`
 
-Одиниць твердження: **70**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **74**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-56-010 sha:44ce74f1 src:manual/56-pasport.md:22 klas:C -->
+<!-- fc id:T-56-010 sha:44ce74f1 src:manual/56-pasport.md:22 klas:K -->
 ### T-56-010 · kod · рядок 22
 
 **Книга каже, дослівно:**
@@ -145,8 +145,72 @@
 
 ---
 
-<!-- fc id:T-56-011 sha:16abcbe1 src:manual/56-pasport.md:29 klas:F -->
-### T-56-011 · proza · рядок 29
+<!-- fc id:T-56-011 sha:1e9c2c6b src:manual/56-pasport.md:23 klas:C -->
+### T-56-011 · schema-zvyazok · рядок 23
+
+**Книга каже, дослівно:**
+
+> GPIO4  → датчик DS18B20, лінія DATA (підтяжка 4.7 кОм до 3V3)
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** https://www.analog.com/ (DS18B20 Datasheet, Maxim Integrated)
+- **Що шукати в джерелі:** таблиця часу перетворення за роздільністю (9 біт ≈ 93.75 мс, 12 біт ≈ 750 мс); робочий діапазон −55…+125 °C; налаштування роздільності 9–12 біт; вимога підтягувального резистора 4.7 кОм; розділ про паразитне живлення й обмеження на кількість пристроїв; 64-бітний унікальний ROM-код.
+- **Нотатка:** Значення −127 °C, яке книга називає кодом помилки, у datasheet відсутнє: це домовленість бібліотеки `DallasTemperature` (`DEVICE_DISCONNECTED_C`). Окремий пункт для наступного проходу — його можна закрити класом A з GitHub, бо бібліотека відкрита.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-56-012 sha:e5541d41 src:manual/56-pasport.md:24 klas:C -->
+### T-56-012 · schema-zvyazok · рядок 24
+
+**Книга каже, дослівно:**
+
+> GPIO21 → дисплей SSD1306, SDA
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
+- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
+- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-56-013 sha:9fdaeb37 src:manual/56-pasport.md:25 klas:C -->
+### T-56-013 · schema-zvyazok · рядок 25
+
+**Книга каже, дослівно:**
+
+> GPIO22 → дисплей SSD1306, SCL
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
+- **Що шукати в джерелі:** для SH1106 — розмір внутрішньої відеопам'яті (132 стовпці проти 128 у SSD1306), звідки береться зсув на два пікселі; для решти — таблиця адрес I²C і піни вибору адреси в кожному datasheet.
+- **Нотатка:** Покриває таблицю адрес у додатку E й таблицю дисплеїв у розділі 46 — десятки окремих тверджень, кожне з яких перевіряється швидко, але лише за наявності доступу.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-56-014 sha:df415666 src:manual/56-pasport.md:26 klas:F -->
+### T-56-014 · schema-zvyazok · рядок 26
+
+**Книга каже, дослівно:**
+
+> GPIO25 → реле насоса, ключ на MOSFET (низький = вимкнено)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-56-015 sha:16abcbe1 src:manual/56-pasport.md:29 klas:F -->
+### T-56-015 · proza · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -158,8 +222,8 @@
 
 ---
 
-<!-- fc id:T-56-012 sha:755b28d7 src:manual/56-pasport.md:32 klas:A -->
-### T-56-012 · kod · рядок 32
+<!-- fc id:T-56-016 sha:755b28d7 src:manual/56-pasport.md:32 klas:K -->
+### T-56-016 · kod · рядок 32
 
 **Книга каже, дослівно:**
 
@@ -193,8 +257,8 @@
 
 ---
 
-<!-- fc id:T-56-013 sha:1bef7ff0 src:manual/56-pasport.md:33 klas:A -->
-### T-56-013 · kod-ryadok · рядок 33
+<!-- fc id:T-56-017 sha:1bef7ff0 src:manual/56-pasport.md:33 klas:A -->
+### T-56-017 · kod-ryadok · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -226,8 +290,8 @@
 
 ---
 
-<!-- fc id:T-56-014 sha:0244fe37 src:manual/56-pasport.md:36 klas:F -->
-### T-56-014 · proza · рядок 36
+<!-- fc id:T-56-018 sha:0244fe37 src:manual/56-pasport.md:36 klas:F -->
+### T-56-018 · proza · рядок 36
 
 **Книга каже, дослівно:**
 
@@ -239,8 +303,8 @@
 
 ---
 
-<!-- fc id:T-56-015 sha:5903ca87 src:manual/56-pasport.md:39 klas:F -->
-### T-56-015 · proza · рядок 39
+<!-- fc id:T-56-019 sha:5903ca87 src:manual/56-pasport.md:39 klas:F -->
+### T-56-019 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -252,8 +316,8 @@
 
 ---
 
-<!-- fc id:T-56-016 sha:b7e14a3a src:manual/56-pasport.md:41 klas:F -->
-### T-56-016 · proza · рядок 41
+<!-- fc id:T-56-020 sha:b7e14a3a src:manual/56-pasport.md:41 klas:F -->
+### T-56-020 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -265,8 +329,8 @@
 
 ---
 
-<!-- fc id:T-56-017 sha:caa6eda1 src:manual/56-pasport.md:43 klas:F -->
-### T-56-017 · proza · рядок 43
+<!-- fc id:T-56-021 sha:caa6eda1 src:manual/56-pasport.md:43 klas:F -->
+### T-56-021 · proza · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -278,8 +342,8 @@
 
 ---
 
-<!-- fc id:T-56-018 sha:5b2b0930 src:manual/56-pasport.md:47 klas:F -->
-### T-56-018 · proza · рядок 47
+<!-- fc id:T-56-022 sha:5b2b0930 src:manual/56-pasport.md:47 klas:F -->
+### T-56-022 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -291,8 +355,8 @@
 
 ---
 
-<!-- fc id:T-56-019 sha:8e0558e1 src:manual/56-pasport.md:50 klas:F -->
-### T-56-019 · proza · рядок 50
+<!-- fc id:T-56-023 sha:8e0558e1 src:manual/56-pasport.md:50 klas:F -->
+### T-56-023 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -304,8 +368,8 @@
 
 ---
 
-<!-- fc id:T-56-020 sha:46b356c9 src:manual/56-pasport.md:53 klas:F -->
-### T-56-020 · proza · рядок 53
+<!-- fc id:T-56-024 sha:46b356c9 src:manual/56-pasport.md:53 klas:F -->
+### T-56-024 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -317,8 +381,8 @@
 
 ---
 
-<!-- fc id:T-56-021 sha:786f1530 src:manual/56-pasport.md:55 klas:C -->
-### T-56-021 · proza · рядок 55
+<!-- fc id:T-56-025 sha:786f1530 src:manual/56-pasport.md:55 klas:C -->
+### T-56-025 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -334,8 +398,8 @@
 
 ---
 
-<!-- fc id:T-56-022 sha:f6af339a src:manual/56-pasport.md:58 klas:F -->
-### T-56-022 · proza · рядок 58
+<!-- fc id:T-56-026 sha:f6af339a src:manual/56-pasport.md:58 klas:F -->
+### T-56-026 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -347,8 +411,8 @@
 
 ---
 
-<!-- fc id:T-56-023 sha:09b56a4e src:manual/56-pasport.md:63 klas:F -->
-### T-56-023 · proza · рядок 63
+<!-- fc id:T-56-027 sha:09b56a4e src:manual/56-pasport.md:63 klas:F -->
+### T-56-027 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -360,8 +424,8 @@
 
 ---
 
-<!-- fc id:T-56-024 sha:9a88b8e3 src:manual/56-pasport.md:63 klas:F -->
-### T-56-024 · proza · рядок 63
+<!-- fc id:T-56-028 sha:9a88b8e3 src:manual/56-pasport.md:63 klas:F -->
+### T-56-028 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -373,8 +437,8 @@
 
 ---
 
-<!-- fc id:T-56-025 sha:8b46edd7 src:manual/56-pasport.md:63 klas:F -->
-### T-56-025 · proza · рядок 63
+<!-- fc id:T-56-029 sha:8b46edd7 src:manual/56-pasport.md:63 klas:F -->
+### T-56-029 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -386,8 +450,8 @@
 
 ---
 
-<!-- fc id:T-56-026 sha:6509893b src:manual/56-pasport.md:67 klas:F -->
-### T-56-026 · proza · рядок 67
+<!-- fc id:T-56-030 sha:6509893b src:manual/56-pasport.md:67 klas:F -->
+### T-56-030 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -399,8 +463,8 @@
 
 ---
 
-<!-- fc id:T-56-027 sha:bfcb9e85 src:manual/56-pasport.md:67 klas:F -->
-### T-56-027 · proza · рядок 67
+<!-- fc id:T-56-031 sha:bfcb9e85 src:manual/56-pasport.md:67 klas:F -->
+### T-56-031 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -412,8 +476,8 @@
 
 ---
 
-<!-- fc id:T-56-028 sha:d438a1ea src:manual/56-pasport.md:74 klas:F -->
-### T-56-028 · proza · рядок 74
+<!-- fc id:T-56-032 sha:d438a1ea src:manual/56-pasport.md:74 klas:F -->
+### T-56-032 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -425,8 +489,8 @@
 
 ---
 
-<!-- fc id:T-56-029 sha:e6fdb4f6 src:manual/56-pasport.md:77 klas:F -->
-### T-56-029 · kod · рядок 77
+<!-- fc id:T-56-033 sha:e6fdb4f6 src:manual/56-pasport.md:77 klas:K -->
+### T-56-033 · kod · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -440,8 +504,8 @@
 
 ---
 
-<!-- fc id:T-56-030 sha:702ee643 src:manual/56-pasport.md:78 klas:F -->
-### T-56-030 · kod-ryadok · рядок 78
+<!-- fc id:T-56-034 sha:702ee643 src:manual/56-pasport.md:78 klas:F -->
+### T-56-034 · kod-ryadok · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -453,8 +517,8 @@
 
 ---
 
-<!-- fc id:T-56-031 sha:7d67dd6d src:manual/56-pasport.md:81 klas:F -->
-### T-56-031 · proza · рядок 81
+<!-- fc id:T-56-035 sha:7d67dd6d src:manual/56-pasport.md:81 klas:F -->
+### T-56-035 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -466,8 +530,8 @@
 
 ---
 
-<!-- fc id:T-56-032 sha:dabcf6bf src:manual/56-pasport.md:85 klas:F -->
-### T-56-032 · proza · рядок 85
+<!-- fc id:T-56-036 sha:dabcf6bf src:manual/56-pasport.md:85 klas:F -->
+### T-56-036 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -479,8 +543,8 @@
 
 ---
 
-<!-- fc id:T-56-033 sha:8dcafc65 src:manual/56-pasport.md:85 klas:F -->
-### T-56-033 · proza · рядок 85
+<!-- fc id:T-56-037 sha:8dcafc65 src:manual/56-pasport.md:85 klas:F -->
+### T-56-037 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -492,8 +556,8 @@
 
 ---
 
-<!-- fc id:T-56-034 sha:457b7f24 src:manual/56-pasport.md:90 klas:F -->
-### T-56-034 · proza · рядок 90
+<!-- fc id:T-56-038 sha:457b7f24 src:manual/56-pasport.md:90 klas:F -->
+### T-56-038 · proza · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -505,8 +569,8 @@
 
 ---
 
-<!-- fc id:T-56-035 sha:77250e0c src:manual/56-pasport.md:90 klas:F -->
-### T-56-035 · proza · рядок 90
+<!-- fc id:T-56-039 sha:77250e0c src:manual/56-pasport.md:90 klas:F -->
+### T-56-039 · proza · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -518,8 +582,8 @@
 
 ---
 
-<!-- fc id:T-56-036 sha:312b4474 src:manual/56-pasport.md:97 klas:F -->
-### T-56-036 · proza · рядок 97
+<!-- fc id:T-56-040 sha:312b4474 src:manual/56-pasport.md:97 klas:F -->
+### T-56-040 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -531,8 +595,8 @@
 
 ---
 
-<!-- fc id:T-56-037 sha:7b76587c src:manual/56-pasport.md:97 klas:F -->
-### T-56-037 · proza · рядок 97
+<!-- fc id:T-56-041 sha:7b76587c src:manual/56-pasport.md:97 klas:F -->
+### T-56-041 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -544,8 +608,8 @@
 
 ---
 
-<!-- fc id:T-56-038 sha:c72d4d4f src:manual/56-pasport.md:103 klas:F -->
-### T-56-038 · proza · рядок 103
+<!-- fc id:T-56-042 sha:c72d4d4f src:manual/56-pasport.md:103 klas:F -->
+### T-56-042 · proza · рядок 103
 
 **Книга каже, дослівно:**
 
@@ -557,8 +621,8 @@
 
 ---
 
-<!-- fc id:T-56-039 sha:65b3a914 src:manual/56-pasport.md:105 klas:F -->
-### T-56-039 · proza · рядок 105
+<!-- fc id:T-56-043 sha:65b3a914 src:manual/56-pasport.md:105 klas:F -->
+### T-56-043 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -570,8 +634,8 @@
 
 ---
 
-<!-- fc id:T-56-040 sha:67b6e4a9 src:manual/56-pasport.md:112 klas:F -->
-### T-56-040 · proza · рядок 112
+<!-- fc id:T-56-044 sha:67b6e4a9 src:manual/56-pasport.md:112 klas:F -->
+### T-56-044 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -583,8 +647,8 @@
 
 ---
 
-<!-- fc id:T-56-041 sha:26887cac src:manual/56-pasport.md:112 klas:F -->
-### T-56-041 · proza · рядок 112
+<!-- fc id:T-56-045 sha:26887cac src:manual/56-pasport.md:112 klas:F -->
+### T-56-045 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -596,8 +660,8 @@
 
 ---
 
-<!-- fc id:T-56-042 sha:6a8d2037 src:manual/56-pasport.md:116 klas:F -->
-### T-56-042 · proza · рядок 116
+<!-- fc id:T-56-046 sha:6a8d2037 src:manual/56-pasport.md:116 klas:F -->
+### T-56-046 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -609,8 +673,8 @@
 
 ---
 
-<!-- fc id:T-56-043 sha:97fecdbd src:manual/56-pasport.md:122 klas:F -->
-### T-56-043 · proza · рядок 122
+<!-- fc id:T-56-047 sha:97fecdbd src:manual/56-pasport.md:122 klas:F -->
+### T-56-047 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -622,8 +686,8 @@
 
 ---
 
-<!-- fc id:T-56-044 sha:b2fd279a src:manual/56-pasport.md:124 klas:F -->
-### T-56-044 · kod · рядок 124
+<!-- fc id:T-56-048 sha:b2fd279a src:manual/56-pasport.md:124 klas:K -->
+### T-56-048 · kod · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -640,8 +704,8 @@
 
 ---
 
-<!-- fc id:T-56-045 sha:468ce3ff src:manual/56-pasport.md:131 klas:F -->
-### T-56-045 · proza · рядок 131
+<!-- fc id:T-56-049 sha:468ce3ff src:manual/56-pasport.md:131 klas:F -->
+### T-56-049 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -653,8 +717,8 @@
 
 ---
 
-<!-- fc id:T-56-046 sha:a2770129 src:manual/56-pasport.md:131 klas:F -->
-### T-56-046 · proza · рядок 131
+<!-- fc id:T-56-050 sha:a2770129 src:manual/56-pasport.md:131 klas:F -->
+### T-56-050 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -666,8 +730,8 @@
 
 ---
 
-<!-- fc id:T-56-047 sha:c5032a1f src:manual/56-pasport.md:137 klas:F -->
-### T-56-047 · proza · рядок 137
+<!-- fc id:T-56-051 sha:c5032a1f src:manual/56-pasport.md:137 klas:F -->
+### T-56-051 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -679,8 +743,8 @@
 
 ---
 
-<!-- fc id:T-56-048 sha:366ffdd2 src:manual/56-pasport.md:142 klas:F -->
-### T-56-048 · proza · рядок 142
+<!-- fc id:T-56-052 sha:366ffdd2 src:manual/56-pasport.md:142 klas:F -->
+### T-56-052 · proza · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -692,8 +756,8 @@
 
 ---
 
-<!-- fc id:T-56-049 sha:49c90ce6 src:manual/56-pasport.md:149 klas:F -->
-### T-56-049 · proza · рядок 149
+<!-- fc id:T-56-053 sha:49c90ce6 src:manual/56-pasport.md:149 klas:F -->
+### T-56-053 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -705,8 +769,8 @@
 
 ---
 
-<!-- fc id:T-56-050 sha:3ccf0166 src:manual/56-pasport.md:149 klas:F -->
-### T-56-050 · proza · рядок 149
+<!-- fc id:T-56-054 sha:3ccf0166 src:manual/56-pasport.md:149 klas:F -->
+### T-56-054 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -718,8 +782,8 @@
 
 ---
 
-<!-- fc id:T-56-051 sha:afeb6ab6 src:manual/56-pasport.md:152 klas:F -->
-### T-56-051 · proza · рядок 152
+<!-- fc id:T-56-055 sha:afeb6ab6 src:manual/56-pasport.md:152 klas:F -->
+### T-56-055 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -731,8 +795,8 @@
 
 ---
 
-<!-- fc id:T-56-052 sha:71ede250 src:manual/56-pasport.md:156 klas:F -->
-### T-56-052 · proza · рядок 156
+<!-- fc id:T-56-056 sha:71ede250 src:manual/56-pasport.md:156 klas:F -->
+### T-56-056 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -744,8 +808,8 @@
 
 ---
 
-<!-- fc id:T-56-053 sha:930ffc71 src:manual/56-pasport.md:158 klas:F -->
-### T-56-053 · proza · рядок 158
+<!-- fc id:T-56-057 sha:930ffc71 src:manual/56-pasport.md:158 klas:F -->
+### T-56-057 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -757,8 +821,8 @@
 
 ---
 
-<!-- fc id:T-56-054 sha:843b689d src:manual/56-pasport.md:165 klas:F -->
-### T-56-054 · proza · рядок 165
+<!-- fc id:T-56-058 sha:843b689d src:manual/56-pasport.md:165 klas:F -->
+### T-56-058 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -770,8 +834,8 @@
 
 ---
 
-<!-- fc id:T-56-055 sha:dc16e2b3 src:manual/56-pasport.md:165 klas:F -->
-### T-56-055 · proza · рядок 165
+<!-- fc id:T-56-059 sha:dc16e2b3 src:manual/56-pasport.md:165 klas:F -->
+### T-56-059 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -783,8 +847,8 @@
 
 ---
 
-<!-- fc id:T-56-056 sha:49de39ef src:manual/56-pasport.md:169 klas:F -->
-### T-56-056 · proza · рядок 169
+<!-- fc id:T-56-060 sha:49de39ef src:manual/56-pasport.md:169 klas:F -->
+### T-56-060 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -796,8 +860,8 @@
 
 ---
 
-<!-- fc id:T-56-057 sha:29a82b3c src:manual/56-pasport.md:169 klas:F -->
-### T-56-057 · proza · рядок 169
+<!-- fc id:T-56-061 sha:29a82b3c src:manual/56-pasport.md:169 klas:F -->
+### T-56-061 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -809,8 +873,8 @@
 
 ---
 
-<!-- fc id:T-56-058 sha:4259ac59 src:manual/56-pasport.md:175 klas:F -->
-### T-56-058 · proza · рядок 175
+<!-- fc id:T-56-062 sha:4259ac59 src:manual/56-pasport.md:175 klas:F -->
+### T-56-062 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -822,8 +886,8 @@
 
 ---
 
-<!-- fc id:T-56-059 sha:bfc2d507 src:manual/56-pasport.md:177 klas:F -->
-### T-56-059 · proza · рядок 177
+<!-- fc id:T-56-063 sha:bfc2d507 src:manual/56-pasport.md:177 klas:F -->
+### T-56-063 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -835,8 +899,8 @@
 
 ---
 
-<!-- fc id:T-56-060 sha:1c98de3d src:manual/56-pasport.md:185 klas:F -->
-### T-56-060 · proza · рядок 185
+<!-- fc id:T-56-064 sha:1c98de3d src:manual/56-pasport.md:185 klas:F -->
+### T-56-064 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -848,8 +912,8 @@
 
 ---
 
-<!-- fc id:T-56-061 sha:cd24f915 src:manual/56-pasport.md:185 klas:F -->
-### T-56-061 · proza · рядок 185
+<!-- fc id:T-56-065 sha:cd24f915 src:manual/56-pasport.md:185 klas:F -->
+### T-56-065 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -861,8 +925,8 @@
 
 ---
 
-<!-- fc id:T-56-062 sha:c7a13eb2 src:manual/56-pasport.md:185 klas:F -->
-### T-56-062 · proza · рядок 185
+<!-- fc id:T-56-066 sha:c7a13eb2 src:manual/56-pasport.md:185 klas:F -->
+### T-56-066 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -874,8 +938,8 @@
 
 ---
 
-<!-- fc id:T-56-063 sha:6c006e9d src:manual/56-pasport.md:192 klas:F -->
-### T-56-063 · proza · рядок 192
+<!-- fc id:T-56-067 sha:6c006e9d src:manual/56-pasport.md:192 klas:F -->
+### T-56-067 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -887,8 +951,8 @@
 
 ---
 
-<!-- fc id:T-56-064 sha:06a865fa src:manual/56-pasport.md:195 klas:F -->
-### T-56-064 · proza · рядок 195
+<!-- fc id:T-56-068 sha:06a865fa src:manual/56-pasport.md:195 klas:F -->
+### T-56-068 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -900,8 +964,8 @@
 
 ---
 
-<!-- fc id:T-56-065 sha:9e4d1b4a src:manual/56-pasport.md:197 klas:F -->
-### T-56-065 · proza · рядок 197
+<!-- fc id:T-56-069 sha:9e4d1b4a src:manual/56-pasport.md:197 klas:F -->
+### T-56-069 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -913,8 +977,8 @@
 
 ---
 
-<!-- fc id:T-56-066 sha:7cfe2929 src:manual/56-pasport.md:200 klas:F -->
-### T-56-066 · proza · рядок 200
+<!-- fc id:T-56-070 sha:7cfe2929 src:manual/56-pasport.md:200 klas:F -->
+### T-56-070 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -926,8 +990,8 @@
 
 ---
 
-<!-- fc id:T-56-067 sha:98767370 src:manual/56-pasport.md:202 klas:F -->
-### T-56-067 · proza · рядок 202
+<!-- fc id:T-56-071 sha:98767370 src:manual/56-pasport.md:202 klas:F -->
+### T-56-071 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -939,8 +1003,8 @@
 
 ---
 
-<!-- fc id:T-56-068 sha:e22e223c src:manual/56-pasport.md:204 klas:F -->
-### T-56-068 · proza · рядок 204
+<!-- fc id:T-56-072 sha:e22e223c src:manual/56-pasport.md:204 klas:F -->
+### T-56-072 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -952,8 +1016,8 @@
 
 ---
 
-<!-- fc id:T-56-069 sha:ba9baba6 src:manual/56-pasport.md:206 klas:F -->
-### T-56-069 · proza · рядок 206
+<!-- fc id:T-56-073 sha:ba9baba6 src:manual/56-pasport.md:206 klas:F -->
+### T-56-073 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -965,8 +1029,8 @@
 
 ---
 
-<!-- fc id:T-56-070 sha:97804f7b src:manual/56-pasport.md:208 klas:F -->
-### T-56-070 · proza · рядок 208
+<!-- fc id:T-56-074 sha:97804f7b src:manual/56-pasport.md:208 klas:F -->
+### T-56-074 · proza · рядок 208
 
 **Книга каже, дослівно:**
 

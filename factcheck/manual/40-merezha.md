@@ -136,7 +136,7 @@
 
 ---
 
-<!-- fc id:T-40-011 sha:27f9f409 src:manual/40-merezha.md:24 klas:A -->
+<!-- fc id:T-40-011 sha:27f9f409 src:manual/40-merezha.md:24 klas:K -->
 ### T-40-011 · kod · рядок 24
 
 **Книга каже, дослівно:**
@@ -455,7 +455,7 @@
 
 ---
 
-<!-- fc id:T-40-031 sha:86639629 src:manual/40-merezha.md:71 klas:A -->
+<!-- fc id:T-40-031 sha:86639629 src:manual/40-merezha.md:71 klas:K -->
 ### T-40-031 · kod · рядок 71
 
 **Книга каже, дослівно:**
@@ -653,7 +653,7 @@
 
 ---
 
-<!-- fc id:T-40-041 sha:01cae44d src:manual/40-merezha.md:94 klas:A -->
+<!-- fc id:T-40-041 sha:01cae44d src:manual/40-merezha.md:94 klas:K -->
 ### T-40-041 · kod · рядок 94
 
 **Книга каже, дослівно:**
@@ -905,7 +905,7 @@
 
 ---
 
-<!-- fc id:T-40-055 sha:cdb9b592 src:manual/40-merezha.md:121 klas:A -->
+<!-- fc id:T-40-055 sha:cdb9b592 src:manual/40-merezha.md:121 klas:K -->
 ### T-40-055 · kod · рядок 121
 
 **Книга каже, дослівно:**

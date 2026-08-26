@@ -954,7 +954,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-062 sha:17b08a0c src:manual/36-spi.md:93 klas:A -->
+<!-- fc id:T-36-062 sha:17b08a0c src:manual/36-spi.md:93 klas:K -->
 ### T-36-062 · kod · рядок 93
 
 **Книга каже, дослівно:**
@@ -1301,7 +1301,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-082 sha:54abc578 src:manual/36-spi.md:134 klas:A -->
+<!-- fc id:T-36-082 sha:54abc578 src:manual/36-spi.md:134 klas:K -->
 ### T-36-082 · kod · рядок 134
 
 **Книга каже, дослівно:**

@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-K02-016 sha:d28a1a55 src:kartky/k02-stan.md:34 klas:A -->
+<!-- fc id:T-K02-016 sha:d28a1a55 src:kartky/k02-stan.md:34 klas:K -->
 ### T-K02-016 · kod · рядок 34
 
 **Книга каже, дослівно:**

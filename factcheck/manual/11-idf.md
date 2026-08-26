@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-11-016 sha:42462c79 src:manual/11-idf.md:35 klas:A -->
+<!-- fc id:T-11-016 sha:42462c79 src:manual/11-idf.md:35 klas:K -->
 ### T-11-016 · kod · рядок 35
 
 **Книга каже, дослівно:**
@@ -298,7 +298,7 @@
 
 ---
 
-<!-- fc id:T-11-022 sha:18cc1794 src:manual/11-idf.md:53 klas:A -->
+<!-- fc id:T-11-022 sha:18cc1794 src:manual/11-idf.md:53 klas:K -->
 ### T-11-022 · kod · рядок 53
 
 **Книга каже, дослівно:**
@@ -379,7 +379,7 @@
 
 ---
 
-<!-- fc id:T-11-027 sha:00ed8f72 src:manual/11-idf.md:68 klas:A -->
+<!-- fc id:T-11-027 sha:00ed8f72 src:manual/11-idf.md:68 klas:K -->
 ### T-11-027 · kod · рядок 68
 
 **Книга каже, дослівно:**
@@ -674,7 +674,7 @@
 
 ---
 
-<!-- fc id:T-11-045 sha:00a5a033 src:manual/11-idf.md:117 klas:F -->
+<!-- fc id:T-11-045 sha:00a5a033 src:manual/11-idf.md:117 klas:K -->
 ### T-11-045 · kod · рядок 117
 
 **Книга каже, дослівно:**
@@ -994,7 +994,7 @@
 
 ---
 
-<!-- fc id:T-11-064 sha:a7338ec1 src:manual/11-idf.md:154 klas:F -->
+<!-- fc id:T-11-064 sha:a7338ec1 src:manual/11-idf.md:154 klas:K -->
 ### T-11-064 · kod · рядок 154
 
 **Книга каже, дослівно:**
@@ -1059,7 +1059,7 @@
 
 ---
 
-<!-- fc id:T-11-068 sha:8de84f8b src:manual/11-idf.md:175 klas:F -->
+<!-- fc id:T-11-068 sha:8de84f8b src:manual/11-idf.md:175 klas:K -->
 ### T-11-068 · kod · рядок 175
 
 **Книга каже, дослівно:**
@@ -1477,7 +1477,7 @@
 
 ---
 
-<!-- fc id:T-11-086 sha:c0f7fc7a src:manual/11-idf.md:215 klas:A -->
+<!-- fc id:T-11-086 sha:c0f7fc7a src:manual/11-idf.md:215 klas:K -->
 ### T-11-086 · kod · рядок 215
 
 **Книга каже, дослівно:**

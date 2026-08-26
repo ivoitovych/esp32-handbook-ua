@@ -99,7 +99,7 @@
 
 ---
 
-<!-- fc id:T-21-007 sha:56d43d34 src:manual/21-seriyna.md:20 klas:A -->
+<!-- fc id:T-21-007 sha:56d43d34 src:manual/21-seriyna.md:20 klas:K -->
 ### T-21-007 · kod · рядок 20
 
 **Книга каже, дослівно:**
@@ -179,7 +179,7 @@
 
 ---
 
-<!-- fc id:T-21-011 sha:fd180332 src:manual/21-seriyna.md:31 klas:A -->
+<!-- fc id:T-21-011 sha:fd180332 src:manual/21-seriyna.md:31 klas:K -->
 ### T-21-011 · kod · рядок 31
 
 **Книга каже, дослівно:**
@@ -257,7 +257,7 @@
 
 ---
 
-<!-- fc id:T-21-014 sha:7c27876f src:manual/21-seriyna.md:40 klas:A -->
+<!-- fc id:T-21-014 sha:7c27876f src:manual/21-seriyna.md:40 klas:K -->
 ### T-21-014 · kod · рядок 40
 
 **Книга каже, дослівно:**
@@ -429,7 +429,7 @@
 
 ---
 
-<!-- fc id:T-21-024 sha:41cc9c7f src:manual/21-seriyna.md:62 klas:A -->
+<!-- fc id:T-21-024 sha:41cc9c7f src:manual/21-seriyna.md:62 klas:K -->
 ### T-21-024 · kod · рядок 62
 
 **Книга каже, дослівно:**
@@ -917,7 +917,7 @@
 
 ---
 
-<!-- fc id:T-21-049 sha:fc2721f0 src:manual/21-seriyna.md:115 klas:A -->
+<!-- fc id:T-21-049 sha:fc2721f0 src:manual/21-seriyna.md:115 klas:K -->
 ### T-21-049 · kod · рядок 115
 
 **Книга каже, дослівно:**

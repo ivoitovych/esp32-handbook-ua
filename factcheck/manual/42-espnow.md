@@ -201,7 +201,7 @@
 
 ---
 
-<!-- fc id:T-42-016 sha:5acf4a2b src:manual/42-espnow.md:37 klas:A -->
+<!-- fc id:T-42-016 sha:5acf4a2b src:manual/42-espnow.md:37 klas:K -->
 ### T-42-016 · kod · рядок 37
 
 **Книга каже, дослівно:**
@@ -380,7 +380,7 @@
 
 ---
 
-<!-- fc id:T-42-024 sha:11151595 src:manual/42-espnow.md:52 klas:A -->
+<!-- fc id:T-42-024 sha:11151595 src:manual/42-espnow.md:52 klas:K -->
 ### T-42-024 · kod · рядок 52
 
 **Книга каже, дослівно:**
@@ -767,7 +767,7 @@
 
 ---
 
-<!-- fc id:T-42-046 sha:5b245222 src:manual/42-espnow.md:114 klas:A -->
+<!-- fc id:T-42-046 sha:5b245222 src:manual/42-espnow.md:114 klas:K -->
 ### T-42-046 · kod · рядок 114
 
 **Книга каже, дослівно:**

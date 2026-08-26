@@ -825,7 +825,7 @@
 
 ---
 
-<!-- fc id:T-08-064 sha:0272d30f src:manual/08-platy.md:116 klas:A -->
+<!-- fc id:T-08-064 sha:0272d30f src:manual/08-platy.md:116 klas:K -->
 ### T-08-064 · kod · рядок 116
 
 **Книга каже, дослівно:**

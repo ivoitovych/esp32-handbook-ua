@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-17-006 sha:64f486d7 src:manual/17-esptool.md:16 klas:F -->
+<!-- fc id:T-17-006 sha:64f486d7 src:manual/17-esptool.md:16 klas:K -->
 ### T-17-006 · kod · рядок 16
 
 **Книга каже, дослівно:**
@@ -546,7 +546,7 @@
 
 ---
 
-<!-- fc id:T-17-027 sha:85f599cb src:manual/17-esptool.md:62 klas:A -->
+<!-- fc id:T-17-027 sha:85f599cb src:manual/17-esptool.md:62 klas:K -->
 ### T-17-027 · kod · рядок 62
 
 **Книга каже, дослівно:**
@@ -622,7 +622,7 @@
 
 ---
 
-<!-- fc id:T-17-031 sha:e66c9553 src:manual/17-esptool.md:70 klas:A -->
+<!-- fc id:T-17-031 sha:e66c9553 src:manual/17-esptool.md:70 klas:K -->
 ### T-17-031 · kod · рядок 70
 
 **Книга каже, дослівно:**
@@ -763,7 +763,7 @@
 
 ---
 
-<!-- fc id:T-17-040 sha:8b4f4b75 src:manual/17-esptool.md:91 klas:A -->
+<!-- fc id:T-17-040 sha:8b4f4b75 src:manual/17-esptool.md:91 klas:K -->
 ### T-17-040 · kod · рядок 91
 
 **Книга каже, дослівно:**
@@ -920,7 +920,7 @@
 
 ---
 
-<!-- fc id:T-17-048 sha:0615bf62 src:manual/17-esptool.md:107 klas:F -->
+<!-- fc id:T-17-048 sha:0615bf62 src:manual/17-esptool.md:107 klas:K -->
 ### T-17-048 · kod · рядок 107
 
 **Книга каже, дослівно:**
@@ -961,7 +961,7 @@
 
 ---
 
-<!-- fc id:T-17-051 sha:911de04d src:manual/17-esptool.md:115 klas:A -->
+<!-- fc id:T-17-051 sha:911de04d src:manual/17-esptool.md:115 klas:K -->
 ### T-17-051 · kod · рядок 115
 
 **Книга каже, дослівно:**
@@ -1216,7 +1216,7 @@
 
 ---
 
-<!-- fc id:T-17-066 sha:1edaa56d src:manual/17-esptool.md:145 klas:F -->
+<!-- fc id:T-17-066 sha:1edaa56d src:manual/17-esptool.md:145 klas:K -->
 ### T-17-066 · kod · рядок 145
 
 **Книга каже, дослівно:**
@@ -1368,7 +1368,7 @@
 
 ---
 
-<!-- fc id:T-17-076 sha:5a1c829e src:manual/17-esptool.md:167 klas:A -->
+<!-- fc id:T-17-076 sha:5a1c829e src:manual/17-esptool.md:167 klas:K -->
 ### T-17-076 · kod · рядок 167
 
 **Книга каже, дослівно:**
@@ -1440,7 +1440,7 @@
 
 ---
 
-<!-- fc id:T-17-078 sha:31d5a3a2 src:manual/17-esptool.md:173 klas:A -->
+<!-- fc id:T-17-078 sha:31d5a3a2 src:manual/17-esptool.md:173 klas:K -->
 ### T-17-078 · kod · рядок 173
 
 **Книга каже, дослівно:**
@@ -1599,7 +1599,7 @@
 
 ---
 
-<!-- fc id:T-17-085 sha:c1d44c0d src:manual/17-esptool.md:187 klas:A -->
+<!-- fc id:T-17-085 sha:c1d44c0d src:manual/17-esptool.md:187 klas:K -->
 ### T-17-085 · kod · рядок 187
 
 **Книга каже, дослівно:**
@@ -1776,7 +1776,7 @@
 
 ---
 
-<!-- fc id:T-17-093 sha:ba49e524 src:manual/17-esptool.md:207 klas:A -->
+<!-- fc id:T-17-093 sha:ba49e524 src:manual/17-esptool.md:207 klas:K -->
 ### T-17-093 · kod · рядок 207
 
 **Книга каже, дослівно:**
@@ -1896,7 +1896,7 @@
 
 ---
 
-<!-- fc id:T-17-099 sha:aa4bc88d src:manual/17-esptool.md:220 klas:A -->
+<!-- fc id:T-17-099 sha:aa4bc88d src:manual/17-esptool.md:220 klas:K -->
 ### T-17-099 · kod · рядок 220
 
 **Книга каже, дослівно:**
@@ -2518,7 +2518,7 @@
 
 ---
 
-<!-- fc id:T-17-133 sha:c2ed87c0 src:manual/17-esptool.md:293 klas:A -->
+<!-- fc id:T-17-133 sha:c2ed87c0 src:manual/17-esptool.md:293 klas:K -->
 ### T-17-133 · kod · рядок 293
 
 **Книга каже, дослівно:**

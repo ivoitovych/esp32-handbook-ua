@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-39-024 sha:a81c330c src:manual/39-wifi.md:59 klas:A -->
+<!-- fc id:T-39-024 sha:a81c330c src:manual/39-wifi.md:59 klas:K -->
 ### T-39-024 · kod · рядок 59
 
 **Книга каже, дослівно:**
@@ -734,7 +734,7 @@
 
 ---
 
-<!-- fc id:T-39-046 sha:c2e1c24c src:manual/39-wifi.md:110 klas:A -->
+<!-- fc id:T-39-046 sha:c2e1c24c src:manual/39-wifi.md:110 klas:K -->
 ### T-39-046 · kod · рядок 110
 
 **Книга каже, дослівно:**
@@ -986,7 +986,7 @@
 
 ---
 
-<!-- fc id:T-39-062 sha:1c19383e src:manual/39-wifi.md:163 klas:A -->
+<!-- fc id:T-39-062 sha:1c19383e src:manual/39-wifi.md:163 klas:K -->
 ### T-39-062 · kod · рядок 163
 
 **Книга каже, дослівно:**

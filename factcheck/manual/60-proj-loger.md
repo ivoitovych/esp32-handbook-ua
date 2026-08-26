@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/60-proj-loger.md`
 
-Одиниць твердження: **133**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **137**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -772,7 +772,7 @@
 
 ---
 
-<!-- fc id:T-60-054 sha:618e4824 src:manual/60-proj-loger.md:81 klas:C -->
+<!-- fc id:T-60-054 sha:618e4824 src:manual/60-proj-loger.md:81 klas:K -->
 ### T-60-054 · kod · рядок 81
 
 **Книга каже, дослівно:**
@@ -801,8 +801,64 @@
 
 ---
 
-<!-- fc id:T-60-055 sha:3d5502e9 src:manual/60-proj-loger.md:96 klas:F -->
-### T-60-055 · proza · рядок 96
+<!-- fc id:T-60-055 sha:913f8132 src:manual/60-proj-loger.md:82 klas:C -->
+### T-60-055 · schema-zvyazok · рядок 82
+
+**Книга каже, дослівно:**
+
+> 18650 ──[захист]──[TP4056]──┬── buck-boost 3.3 В ── ESP32 + периферія
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
+- **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
+- **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-60-056 sha:e6f1a6a7 src:manual/60-proj-loger.md:83 klas:F -->
+### T-60-056 · schema-zvyazok · рядок 83
+
+**Книга каже, дослівно:**
+
+> │
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-057 sha:a1efd7c9 src:manual/60-proj-loger.md:84 klas:F -->
+### T-60-057 · schema-zvyazok · рядок 84
+
+**Книга каже, дослівно:**
+
+> └──[MOSFET]──[100к]──┬── ADC     classic 34 / C3 3
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-058 sha:6b711a92 src:manual/60-proj-loger.md:85 klas:F -->
+### T-60-058 · schema-zvyazok · рядок 85
+
+**Книга каже, дослівно:**
+
+> [100к]─┘
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-059 sha:3d5502e9 src:manual/60-proj-loger.md:96 klas:F -->
+### T-60-059 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -814,8 +870,8 @@
 
 ---
 
-<!-- fc id:T-60-056 sha:259eae72 src:manual/60-proj-loger.md:96 klas:F -->
-### T-60-056 · proza · рядок 96
+<!-- fc id:T-60-060 sha:259eae72 src:manual/60-proj-loger.md:96 klas:F -->
+### T-60-060 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -827,8 +883,8 @@
 
 ---
 
-<!-- fc id:T-60-057 sha:a503da18 src:manual/60-proj-loger.md:96 klas:F -->
-### T-60-057 · proza · рядок 96
+<!-- fc id:T-60-061 sha:a503da18 src:manual/60-proj-loger.md:96 klas:F -->
+### T-60-061 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -840,8 +896,8 @@
 
 ---
 
-<!-- fc id:T-60-058 sha:9eb66891 src:manual/60-proj-loger.md:100 klas:F -->
-### T-60-058 · proza · рядок 100
+<!-- fc id:T-60-062 sha:9eb66891 src:manual/60-proj-loger.md:100 klas:F -->
+### T-60-062 · proza · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -853,8 +909,8 @@
 
 ---
 
-<!-- fc id:T-60-059 sha:99a575e7 src:manual/60-proj-loger.md:105 klas:F -->
-### T-60-059 · proza · рядок 105
+<!-- fc id:T-60-063 sha:99a575e7 src:manual/60-proj-loger.md:105 klas:F -->
+### T-60-063 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -866,8 +922,8 @@
 
 ---
 
-<!-- fc id:T-60-060 sha:195b9722 src:manual/60-proj-loger.md:110 klas:F -->
-### T-60-060 · proza · рядок 110
+<!-- fc id:T-60-064 sha:195b9722 src:manual/60-proj-loger.md:110 klas:F -->
+### T-60-064 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -879,8 +935,8 @@
 
 ---
 
-<!-- fc id:T-60-061 sha:2513a78d src:manual/60-proj-loger.md:116 klas:F -->
-### T-60-061 · proza · рядок 116
+<!-- fc id:T-60-065 sha:2513a78d src:manual/60-proj-loger.md:116 klas:F -->
+### T-60-065 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -892,8 +948,8 @@
 
 ---
 
-<!-- fc id:T-60-062 sha:51d55f35 src:manual/60-proj-loger.md:116 klas:F -->
-### T-60-062 · proza · рядок 116
+<!-- fc id:T-60-066 sha:51d55f35 src:manual/60-proj-loger.md:116 klas:F -->
+### T-60-066 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -905,8 +961,8 @@
 
 ---
 
-<!-- fc id:T-60-063 sha:911b825f src:manual/60-proj-loger.md:120 klas:F -->
-### T-60-063 · kod · рядок 120
+<!-- fc id:T-60-067 sha:911b825f src:manual/60-proj-loger.md:120 klas:K -->
+### T-60-067 · kod · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -941,8 +997,8 @@
 
 ---
 
-<!-- fc id:T-60-064 sha:f9fbb83e src:manual/60-proj-loger.md:146 klas:F -->
-### T-60-064 · proza · рядок 146
+<!-- fc id:T-60-068 sha:f9fbb83e src:manual/60-proj-loger.md:146 klas:F -->
+### T-60-068 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -954,8 +1010,8 @@
 
 ---
 
-<!-- fc id:T-60-065 sha:04d77d98 src:manual/60-proj-loger.md:146 klas:F -->
-### T-60-065 · proza · рядок 146
+<!-- fc id:T-60-069 sha:04d77d98 src:manual/60-proj-loger.md:146 klas:F -->
+### T-60-069 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -967,8 +1023,8 @@
 
 ---
 
-<!-- fc id:T-60-066 sha:c59f8ae8 src:manual/60-proj-loger.md:146 klas:F -->
-### T-60-066 · proza · рядок 146
+<!-- fc id:T-60-070 sha:c59f8ae8 src:manual/60-proj-loger.md:146 klas:F -->
+### T-60-070 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -980,8 +1036,8 @@
 
 ---
 
-<!-- fc id:T-60-067 sha:65e265f5 src:manual/60-proj-loger.md:152 klas:F -->
-### T-60-067 · proza · рядок 152
+<!-- fc id:T-60-071 sha:65e265f5 src:manual/60-proj-loger.md:152 klas:F -->
+### T-60-071 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -993,8 +1049,8 @@
 
 ---
 
-<!-- fc id:T-60-068 sha:5b607b9b src:manual/60-proj-loger.md:157 klas:F -->
-### T-60-068 · proza · рядок 157
+<!-- fc id:T-60-072 sha:5b607b9b src:manual/60-proj-loger.md:157 klas:F -->
+### T-60-072 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1006,8 +1062,8 @@
 
 ---
 
-<!-- fc id:T-60-069 sha:077ad9d7 src:manual/60-proj-loger.md:157 klas:A -->
-### T-60-069 · proza · рядок 157
+<!-- fc id:T-60-073 sha:077ad9d7 src:manual/60-proj-loger.md:157 klas:A -->
+### T-60-073 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1027,8 +1083,8 @@
 
 ---
 
-<!-- fc id:T-60-070 sha:047a7bc6 src:manual/60-proj-loger.md:160 klas:A -->
-### T-60-070 · kod · рядок 160
+<!-- fc id:T-60-074 sha:047a7bc6 src:manual/60-proj-loger.md:160 klas:K -->
+### T-60-074 · kod · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1053,8 +1109,8 @@
 
 ---
 
-<!-- fc id:T-60-071 sha:84ff3f5f src:manual/60-proj-loger.md:167 klas:A -->
-### T-60-071 · proza · рядок 167
+<!-- fc id:T-60-075 sha:84ff3f5f src:manual/60-proj-loger.md:167 klas:A -->
+### T-60-075 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1074,8 +1130,8 @@
 
 ---
 
-<!-- fc id:T-60-072 sha:60e50665 src:manual/60-proj-loger.md:167 klas:F -->
-### T-60-072 · proza · рядок 167
+<!-- fc id:T-60-076 sha:60e50665 src:manual/60-proj-loger.md:167 klas:F -->
+### T-60-076 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1087,8 +1143,8 @@
 
 ---
 
-<!-- fc id:T-60-073 sha:33b09b68 src:manual/60-proj-loger.md:172 klas:A -->
-### T-60-073 · kod · рядок 172
+<!-- fc id:T-60-077 sha:33b09b68 src:manual/60-proj-loger.md:172 klas:K -->
+### T-60-077 · kod · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -1142,8 +1198,8 @@
 
 ---
 
-<!-- fc id:T-60-074 sha:36e9dc05 src:manual/60-proj-loger.md:180 klas:F -->
-### T-60-074 · kod-ryadok · рядок 180
+<!-- fc id:T-60-078 sha:36e9dc05 src:manual/60-proj-loger.md:180 klas:F -->
+### T-60-078 · kod-ryadok · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1155,8 +1211,8 @@
 
 ---
 
-<!-- fc id:T-60-075 sha:96e47c3f src:manual/60-proj-loger.md:191 klas:F -->
-### T-60-075 · kod-ryadok · рядок 191
+<!-- fc id:T-60-079 sha:96e47c3f src:manual/60-proj-loger.md:191 klas:F -->
+### T-60-079 · kod-ryadok · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -1168,8 +1224,8 @@
 
 ---
 
-<!-- fc id:T-60-076 sha:11e7a3b4 src:manual/60-proj-loger.md:196 klas:F -->
-### T-60-076 · kod-ryadok · рядок 196
+<!-- fc id:T-60-080 sha:11e7a3b4 src:manual/60-proj-loger.md:196 klas:F -->
+### T-60-080 · kod-ryadok · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1181,8 +1237,8 @@
 
 ---
 
-<!-- fc id:T-60-077 sha:86c1b4b6 src:manual/60-proj-loger.md:201 klas:F -->
-### T-60-077 · proza · рядок 201
+<!-- fc id:T-60-081 sha:86c1b4b6 src:manual/60-proj-loger.md:201 klas:F -->
+### T-60-081 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1194,8 +1250,8 @@
 
 ---
 
-<!-- fc id:T-60-078 sha:d34c43c3 src:manual/60-proj-loger.md:203 klas:F -->
-### T-60-078 · proza · рядок 203
+<!-- fc id:T-60-082 sha:d34c43c3 src:manual/60-proj-loger.md:203 klas:F -->
+### T-60-082 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1207,8 +1263,8 @@
 
 ---
 
-<!-- fc id:T-60-079 sha:c226a03c src:manual/60-proj-loger.md:207 klas:F -->
-### T-60-079 · proza · рядок 207
+<!-- fc id:T-60-083 sha:c226a03c src:manual/60-proj-loger.md:207 klas:F -->
+### T-60-083 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1220,8 +1276,8 @@
 
 ---
 
-<!-- fc id:T-60-080 sha:f0958dca src:manual/60-proj-loger.md:213 klas:A -->
-### T-60-080 · kod · рядок 213
+<!-- fc id:T-60-084 sha:f0958dca src:manual/60-proj-loger.md:213 klas:K -->
+### T-60-084 · kod · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1266,8 +1322,8 @@
 
 ---
 
-<!-- fc id:T-60-081 sha:e249c82c src:manual/60-proj-loger.md:215 klas:F -->
-### T-60-081 · kod-ryadok · рядок 215
+<!-- fc id:T-60-085 sha:e249c82c src:manual/60-proj-loger.md:215 klas:F -->
+### T-60-085 · kod-ryadok · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1279,8 +1335,8 @@
 
 ---
 
-<!-- fc id:T-60-082 sha:fa5319b8 src:manual/60-proj-loger.md:221 klas:A -->
-### T-60-082 · kod-ryadok · рядок 221
+<!-- fc id:T-60-086 sha:fa5319b8 src:manual/60-proj-loger.md:221 klas:A -->
+### T-60-086 · kod-ryadok · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1308,8 +1364,8 @@
 
 ---
 
-<!-- fc id:T-60-083 sha:ad6f9b2c src:manual/60-proj-loger.md:227 klas:A -->
-### T-60-083 · kod-ryadok · рядок 227
+<!-- fc id:T-60-087 sha:ad6f9b2c src:manual/60-proj-loger.md:227 klas:A -->
+### T-60-087 · kod-ryadok · рядок 227
 
 **Книга каже, дослівно:**
 
@@ -1337,8 +1393,8 @@
 
 ---
 
-<!-- fc id:T-60-084 sha:4b6bd1c9 src:manual/60-proj-loger.md:234 klas:F -->
-### T-60-084 · kod · рядок 234
+<!-- fc id:T-60-088 sha:4b6bd1c9 src:manual/60-proj-loger.md:234 klas:K -->
+### T-60-088 · kod · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -1367,8 +1423,8 @@
 
 ---
 
-<!-- fc id:T-60-085 sha:f0c8956e src:manual/60-proj-loger.md:245 klas:F -->
-### T-60-085 · kod-ryadok · рядок 245
+<!-- fc id:T-60-089 sha:f0c8956e src:manual/60-proj-loger.md:245 klas:F -->
+### T-60-089 · kod-ryadok · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -1380,8 +1436,8 @@
 
 ---
 
-<!-- fc id:T-60-086 sha:17341195 src:manual/60-proj-loger.md:247 klas:F -->
-### T-60-086 · kod-ryadok · рядок 247
+<!-- fc id:T-60-090 sha:17341195 src:manual/60-proj-loger.md:247 klas:F -->
+### T-60-090 · kod-ryadok · рядок 247
 
 **Книга каже, дослівно:**
 
@@ -1393,8 +1449,8 @@
 
 ---
 
-<!-- fc id:T-60-087 sha:d99dbbfc src:manual/60-proj-loger.md:254 klas:F -->
-### T-60-087 · proza · рядок 254
+<!-- fc id:T-60-091 sha:d99dbbfc src:manual/60-proj-loger.md:254 klas:F -->
+### T-60-091 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -1406,8 +1462,8 @@
 
 ---
 
-<!-- fc id:T-60-088 sha:a161b206 src:manual/60-proj-loger.md:257 klas:F -->
-### T-60-088 · proza · рядок 257
+<!-- fc id:T-60-092 sha:a161b206 src:manual/60-proj-loger.md:257 klas:F -->
+### T-60-092 · proza · рядок 257
 
 **Книга каже, дослівно:**
 
@@ -1419,8 +1475,8 @@
 
 ---
 
-<!-- fc id:T-60-089 sha:b0cfdae4 src:manual/60-proj-loger.md:257 klas:F -->
-### T-60-089 · proza · рядок 257
+<!-- fc id:T-60-093 sha:b0cfdae4 src:manual/60-proj-loger.md:257 klas:F -->
+### T-60-093 · proza · рядок 257
 
 **Книга каже, дослівно:**
 
@@ -1432,8 +1488,8 @@
 
 ---
 
-<!-- fc id:T-60-090 sha:5619cd9a src:manual/60-proj-loger.md:260 klas:F -->
-### T-60-090 · proza · рядок 260
+<!-- fc id:T-60-094 sha:5619cd9a src:manual/60-proj-loger.md:260 klas:F -->
+### T-60-094 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -1445,8 +1501,8 @@
 
 ---
 
-<!-- fc id:T-60-091 sha:1ee7e676 src:manual/60-proj-loger.md:260 klas:F -->
-### T-60-091 · proza · рядок 260
+<!-- fc id:T-60-095 sha:1ee7e676 src:manual/60-proj-loger.md:260 klas:F -->
+### T-60-095 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -1458,8 +1514,8 @@
 
 ---
 
-<!-- fc id:T-60-092 sha:69c60ed0 src:manual/60-proj-loger.md:266 klas:A -->
-### T-60-092 · kod · рядок 266
+<!-- fc id:T-60-096 sha:69c60ed0 src:manual/60-proj-loger.md:266 klas:K -->
+### T-60-096 · kod · рядок 266
 
 **Книга каже, дослівно:**
 
@@ -1498,8 +1554,8 @@
 
 ---
 
-<!-- fc id:T-60-093 sha:08a000e8 src:manual/60-proj-loger.md:269 klas:F -->
-### T-60-093 · kod-ryadok · рядок 269
+<!-- fc id:T-60-097 sha:08a000e8 src:manual/60-proj-loger.md:269 klas:F -->
+### T-60-097 · kod-ryadok · рядок 269
 
 **Книга каже, дослівно:**
 
@@ -1511,8 +1567,8 @@
 
 ---
 
-<!-- fc id:T-60-094 sha:ab40e8e7 src:manual/60-proj-loger.md:270 klas:F -->
-### T-60-094 · kod-ryadok · рядок 270
+<!-- fc id:T-60-098 sha:ab40e8e7 src:manual/60-proj-loger.md:270 klas:F -->
+### T-60-098 · kod-ryadok · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -1524,8 +1580,8 @@
 
 ---
 
-<!-- fc id:T-60-095 sha:3fd6a686 src:manual/60-proj-loger.md:273 klas:A -->
-### T-60-095 · kod-ryadok · рядок 273
+<!-- fc id:T-60-099 sha:3fd6a686 src:manual/60-proj-loger.md:273 klas:A -->
+### T-60-099 · kod-ryadok · рядок 273
 
 **Книга каже, дослівно:**
 
@@ -1553,8 +1609,8 @@
 
 ---
 
-<!-- fc id:T-60-096 sha:34ad95d5 src:manual/60-proj-loger.md:274 klas:F -->
-### T-60-096 · kod-ryadok · рядок 274
+<!-- fc id:T-60-100 sha:34ad95d5 src:manual/60-proj-loger.md:274 klas:F -->
+### T-60-100 · kod-ryadok · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -1566,8 +1622,8 @@
 
 ---
 
-<!-- fc id:T-60-097 sha:c5771474 src:manual/60-proj-loger.md:275 klas:F -->
-### T-60-097 · kod-ryadok · рядок 275
+<!-- fc id:T-60-101 sha:c5771474 src:manual/60-proj-loger.md:275 klas:F -->
+### T-60-101 · kod-ryadok · рядок 275
 
 **Книга каже, дослівно:**
 
@@ -1579,8 +1635,8 @@
 
 ---
 
-<!-- fc id:T-60-098 sha:ad07f2d7 src:manual/60-proj-loger.md:280 klas:C -->
-### T-60-098 · proza · рядок 280
+<!-- fc id:T-60-102 sha:ad07f2d7 src:manual/60-proj-loger.md:280 klas:C -->
+### T-60-102 · proza · рядок 280
 
 **Книга каже, дослівно:**
 
@@ -1596,8 +1652,8 @@
 
 ---
 
-<!-- fc id:T-60-099 sha:fac610a6 src:manual/60-proj-loger.md:283 klas:F -->
-### T-60-099 · proza · рядок 283
+<!-- fc id:T-60-103 sha:fac610a6 src:manual/60-proj-loger.md:283 klas:F -->
+### T-60-103 · proza · рядок 283
 
 **Книга каже, дослівно:**
 
@@ -1609,8 +1665,8 @@
 
 ---
 
-<!-- fc id:T-60-100 sha:b4495bba src:manual/60-proj-loger.md:286 klas:F -->
-### T-60-100 · proza · рядок 286
+<!-- fc id:T-60-104 sha:b4495bba src:manual/60-proj-loger.md:286 klas:F -->
+### T-60-104 · proza · рядок 286
 
 **Книга каже, дослівно:**
 
@@ -1622,8 +1678,8 @@
 
 ---
 
-<!-- fc id:T-60-101 sha:83a8e3da src:manual/60-proj-loger.md:291 klas:F -->
-### T-60-101 · proza · рядок 291
+<!-- fc id:T-60-105 sha:83a8e3da src:manual/60-proj-loger.md:291 klas:F -->
+### T-60-105 · proza · рядок 291
 
 **Книга каже, дослівно:**
 
@@ -1635,8 +1691,8 @@
 
 ---
 
-<!-- fc id:T-60-102 sha:6f45d6d6 src:manual/60-proj-loger.md:293 klas:F -->
-### T-60-102 · tablycya-shapka · рядок 293
+<!-- fc id:T-60-106 sha:6f45d6d6 src:manual/60-proj-loger.md:293 klas:F -->
+### T-60-106 · tablycya-shapka · рядок 293
 
 **Книга каже, дослівно:**
 
@@ -1648,8 +1704,8 @@
 
 ---
 
-<!-- fc id:T-60-103 sha:a6f4ae9a src:manual/60-proj-loger.md:294 klas:F -->
-### T-60-103 · komirka · рядок 294
+<!-- fc id:T-60-107 sha:a6f4ae9a src:manual/60-proj-loger.md:294 klas:F -->
+### T-60-107 · komirka · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -1661,8 +1717,8 @@
 
 ---
 
-<!-- fc id:T-60-104 sha:17288f9c src:manual/60-proj-loger.md:294 klas:C -->
-### T-60-104 · komirka · рядок 294
+<!-- fc id:T-60-108 sha:17288f9c src:manual/60-proj-loger.md:294 klas:C -->
+### T-60-108 · komirka · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -1678,8 +1734,8 @@
 
 ---
 
-<!-- fc id:T-60-105 sha:2d0a41b2 src:manual/60-proj-loger.md:294 klas:F -->
-### T-60-105 · komirka · рядок 294
+<!-- fc id:T-60-109 sha:2d0a41b2 src:manual/60-proj-loger.md:294 klas:F -->
+### T-60-109 · komirka · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -1691,8 +1747,8 @@
 
 ---
 
-<!-- fc id:T-60-106 sha:b201f1de src:manual/60-proj-loger.md:295 klas:A -->
-### T-60-106 · komirka · рядок 295
+<!-- fc id:T-60-110 sha:b201f1de src:manual/60-proj-loger.md:295 klas:A -->
+### T-60-110 · komirka · рядок 295
 
 **Книга каже, дослівно:**
 
@@ -1714,8 +1770,8 @@
 
 ---
 
-<!-- fc id:T-60-107 sha:68da1621 src:manual/60-proj-loger.md:295 klas:A -->
-### T-60-107 · komirka · рядок 295
+<!-- fc id:T-60-111 sha:68da1621 src:manual/60-proj-loger.md:295 klas:A -->
+### T-60-111 · komirka · рядок 295
 
 **Книга каже, дослівно:**
 
@@ -1737,8 +1793,8 @@
 
 ---
 
-<!-- fc id:T-60-108 sha:7bf88644 src:manual/60-proj-loger.md:295 klas:A -->
-### T-60-108 · komirka · рядок 295
+<!-- fc id:T-60-112 sha:7bf88644 src:manual/60-proj-loger.md:295 klas:A -->
+### T-60-112 · komirka · рядок 295
 
 **Книга каже, дослівно:**
 
@@ -1760,8 +1816,8 @@
 
 ---
 
-<!-- fc id:T-60-109 sha:772fb917 src:manual/60-proj-loger.md:296 klas:F -->
-### T-60-109 · komirka · рядок 296
+<!-- fc id:T-60-113 sha:772fb917 src:manual/60-proj-loger.md:296 klas:F -->
+### T-60-113 · komirka · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -1773,8 +1829,8 @@
 
 ---
 
-<!-- fc id:T-60-110 sha:ef81a4da src:manual/60-proj-loger.md:296 klas:F -->
-### T-60-110 · komirka · рядок 296
+<!-- fc id:T-60-114 sha:ef81a4da src:manual/60-proj-loger.md:296 klas:F -->
+### T-60-114 · komirka · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -1786,8 +1842,8 @@
 
 ---
 
-<!-- fc id:T-60-111 sha:386c98cf src:manual/60-proj-loger.md:296 klas:F -->
-### T-60-111 · komirka · рядок 296
+<!-- fc id:T-60-115 sha:386c98cf src:manual/60-proj-loger.md:296 klas:F -->
+### T-60-115 · komirka · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -1799,8 +1855,8 @@
 
 ---
 
-<!-- fc id:T-60-112 sha:9084f4d4 src:manual/60-proj-loger.md:297 klas:F -->
-### T-60-112 · komirka · рядок 297
+<!-- fc id:T-60-116 sha:9084f4d4 src:manual/60-proj-loger.md:297 klas:F -->
+### T-60-116 · komirka · рядок 297
 
 **Книга каже, дослівно:**
 
@@ -1812,8 +1868,8 @@
 
 ---
 
-<!-- fc id:T-60-113 sha:d5314759 src:manual/60-proj-loger.md:297 klas:F -->
-### T-60-113 · komirka · рядок 297
+<!-- fc id:T-60-117 sha:d5314759 src:manual/60-proj-loger.md:297 klas:F -->
+### T-60-117 · komirka · рядок 297
 
 **Книга каже, дослівно:**
 
@@ -1825,8 +1881,8 @@
 
 ---
 
-<!-- fc id:T-60-114 sha:4b86eaef src:manual/60-proj-loger.md:297 klas:F -->
-### T-60-114 · komirka · рядок 297
+<!-- fc id:T-60-118 sha:4b86eaef src:manual/60-proj-loger.md:297 klas:F -->
+### T-60-118 · komirka · рядок 297
 
 **Книга каже, дослівно:**
 
@@ -1838,8 +1894,8 @@
 
 ---
 
-<!-- fc id:T-60-115 sha:7ebdd2fb src:manual/60-proj-loger.md:298 klas:F -->
-### T-60-115 · komirka · рядок 298
+<!-- fc id:T-60-119 sha:7ebdd2fb src:manual/60-proj-loger.md:298 klas:F -->
+### T-60-119 · komirka · рядок 298
 
 **Книга каже, дослівно:**
 
@@ -1851,8 +1907,8 @@
 
 ---
 
-<!-- fc id:T-60-116 sha:fa15cd97 src:manual/60-proj-loger.md:298 klas:D -->
-### T-60-116 · komirka · рядок 298
+<!-- fc id:T-60-120 sha:fa15cd97 src:manual/60-proj-loger.md:298 klas:D -->
+### T-60-120 · komirka · рядок 298
 
 **Книга каже, дослівно:**
 
@@ -1894,8 +1950,8 @@
 
 ---
 
-<!-- fc id:T-60-117 sha:3a61fcae src:manual/60-proj-loger.md:301 klas:D -->
-### T-60-117 · proza · рядок 301
+<!-- fc id:T-60-121 sha:3a61fcae src:manual/60-proj-loger.md:301 klas:D -->
+### T-60-121 · proza · рядок 301
 
 **Книга каже, дослівно:**
 
@@ -1937,8 +1993,8 @@
 
 ---
 
-<!-- fc id:T-60-118 sha:f90b83e5 src:manual/60-proj-loger.md:303 klas:D -->
-### T-60-118 · proza · рядок 303
+<!-- fc id:T-60-122 sha:f90b83e5 src:manual/60-proj-loger.md:303 klas:D -->
+### T-60-122 · proza · рядок 303
 
 **Книга каже, дослівно:**
 
@@ -1980,8 +2036,8 @@
 
 ---
 
-<!-- fc id:T-60-119 sha:c426e030 src:manual/60-proj-loger.md:307 klas:F -->
-### T-60-119 · proza · рядок 307
+<!-- fc id:T-60-123 sha:c426e030 src:manual/60-proj-loger.md:307 klas:F -->
+### T-60-123 · proza · рядок 307
 
 **Книга каже, дослівно:**
 
@@ -1993,8 +2049,8 @@
 
 ---
 
-<!-- fc id:T-60-120 sha:45833f6d src:manual/60-proj-loger.md:310 klas:F -->
-### T-60-120 · proza · рядок 310
+<!-- fc id:T-60-124 sha:45833f6d src:manual/60-proj-loger.md:310 klas:F -->
+### T-60-124 · proza · рядок 310
 
 **Книга каже, дослівно:**
 
@@ -2006,8 +2062,8 @@
 
 ---
 
-<!-- fc id:T-60-121 sha:30cc6798 src:manual/60-proj-loger.md:314 klas:F -->
-### T-60-121 · proza · рядок 314
+<!-- fc id:T-60-125 sha:30cc6798 src:manual/60-proj-loger.md:314 klas:F -->
+### T-60-125 · proza · рядок 314
 
 **Книга каже, дослівно:**
 
@@ -2019,8 +2075,8 @@
 
 ---
 
-<!-- fc id:T-60-122 sha:e71331a3 src:manual/60-proj-loger.md:314 klas:F -->
-### T-60-122 · proza · рядок 314
+<!-- fc id:T-60-126 sha:e71331a3 src:manual/60-proj-loger.md:314 klas:F -->
+### T-60-126 · proza · рядок 314
 
 **Книга каже, дослівно:**
 
@@ -2032,8 +2088,8 @@
 
 ---
 
-<!-- fc id:T-60-123 sha:cfdb4c7e src:manual/60-proj-loger.md:319 klas:C -->
-### T-60-123 · proza · рядок 319
+<!-- fc id:T-60-127 sha:cfdb4c7e src:manual/60-proj-loger.md:319 klas:C -->
+### T-60-127 · proza · рядок 319
 
 **Книга каже, дослівно:**
 
@@ -2049,8 +2105,8 @@
 
 ---
 
-<!-- fc id:T-60-124 sha:20a65322 src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-124 · proza · рядок 325
+<!-- fc id:T-60-128 sha:20a65322 src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-128 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2062,8 +2118,8 @@
 
 ---
 
-<!-- fc id:T-60-125 sha:6d2dba14 src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-125 · proza · рядок 325
+<!-- fc id:T-60-129 sha:6d2dba14 src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-129 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2075,8 +2131,8 @@
 
 ---
 
-<!-- fc id:T-60-126 sha:195b951b src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-126 · proza · рядок 325
+<!-- fc id:T-60-130 sha:195b951b src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-130 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2088,8 +2144,8 @@
 
 ---
 
-<!-- fc id:T-60-127 sha:126b1d9d src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-127 · proza · рядок 325
+<!-- fc id:T-60-131 sha:126b1d9d src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-131 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2101,8 +2157,8 @@
 
 ---
 
-<!-- fc id:T-60-128 sha:3b7a50dc src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-128 · proza · рядок 325
+<!-- fc id:T-60-132 sha:3b7a50dc src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-132 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2114,8 +2170,8 @@
 
 ---
 
-<!-- fc id:T-60-129 sha:58500cd8 src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-129 · proza · рядок 325
+<!-- fc id:T-60-133 sha:58500cd8 src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-133 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2127,8 +2183,8 @@
 
 ---
 
-<!-- fc id:T-60-130 sha:7f1d478f src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-130 · proza · рядок 325
+<!-- fc id:T-60-134 sha:7f1d478f src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-134 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2140,8 +2196,8 @@
 
 ---
 
-<!-- fc id:T-60-131 sha:47cb735d src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-131 · proza · рядок 325
+<!-- fc id:T-60-135 sha:47cb735d src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-135 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2153,8 +2209,8 @@
 
 ---
 
-<!-- fc id:T-60-132 sha:7fa10fa1 src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-132 · proza · рядок 325
+<!-- fc id:T-60-136 sha:7fa10fa1 src:manual/60-proj-loger.md:325 klas:F -->
+### T-60-136 · proza · рядок 325
 
 **Книга каже, дослівно:**
 
@@ -2166,8 +2222,8 @@
 
 ---
 
-<!-- fc id:T-60-133 sha:985bc47c src:manual/60-proj-loger.md:340 klas:F -->
-### T-60-133 · proza · рядок 340
+<!-- fc id:T-60-137 sha:985bc47c src:manual/60-proj-loger.md:340 klas:F -->
+### T-60-137 · proza · рядок 340
 
 **Книга каже, дослівно:**
 

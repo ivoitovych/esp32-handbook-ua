@@ -667,7 +667,7 @@
 
 ---
 
-<!-- fc id:T-03-048 sha:56f50edc src:manual/03-soc.md:100 klas:A -->
+<!-- fc id:T-03-048 sha:56f50edc src:manual/03-soc.md:100 klas:K -->
 ### T-03-048 · kod · рядок 100
 
 **Книга каже, дослівно:**

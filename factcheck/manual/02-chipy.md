@@ -1624,7 +1624,7 @@
 
 ---
 
-<!-- fc id:T-02-100 sha:5e7f4dbe src:manual/02-chipy.md:133 klas:F -->
+<!-- fc id:T-02-100 sha:5e7f4dbe src:manual/02-chipy.md:133 klas:K -->
 ### T-02-100 · kod · рядок 133
 
 **Книга каже, дослівно:**

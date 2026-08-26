@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-K03-021 sha:b4bb361c src:kartky/k03-pidkl.md:40 klas:F -->
+<!-- fc id:T-K03-021 sha:b4bb361c src:kartky/k03-pidkl.md:40 klas:K -->
 ### T-K03-021 · kod · рядок 40
 
 **Книга каже, дослівно:**

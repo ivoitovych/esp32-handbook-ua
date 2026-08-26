@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-14-006 sha:86881aef src:manual/14-shvydki-shlyakhy.md:16 klas:F -->
+<!-- fc id:T-14-006 sha:86881aef src:manual/14-shvydki-shlyakhy.md:16 klas:K -->
 ### T-14-006 · kod · рядок 16
 
 **Книга каже, дослівно:**
@@ -274,7 +274,7 @@
 
 ---
 
-<!-- fc id:T-14-021 sha:99a91753 src:manual/14-shvydki-shlyakhy.md:54 klas:F -->
+<!-- fc id:T-14-021 sha:99a91753 src:manual/14-shvydki-shlyakhy.md:54 klas:K -->
 ### T-14-021 · kod · рядок 54
 
 **Книга каже, дослівно:**
@@ -302,7 +302,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+- **Дослівно з джерела:**
+  > #define BME280_CHIP_ID          UINT8_C(0x60)
+  > #define BME280_I2C_ADDR_PRIM    UINT8_C(0x76)
+  > #define BME280_I2C_ADDR_SEC     UINT8_C(0x77)
+  > #define BME280_REG_CHIP_ID      UINT8_C(0xD0)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і порівнює відповідь із `0x60` — рівно те, що оголошує офіційний драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
+Це саме той доказ, який раніше приписували **всій** схемі проєкту 59, включно з рядком про `GPIO22`. Datasheet датчика ніколи не міг би підтвердити наявність піна в S3 — тепер він і не претендує: покриває рядки про датчик, і лише їх.
+- **Прохід:** pass-18-schemy
 
 ---
 

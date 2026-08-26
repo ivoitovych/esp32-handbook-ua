@@ -246,7 +246,7 @@
 
 ---
 
-<!-- fc id:T-29-018 sha:e0ce2843 src:manual/29-symptomy.md:41 klas:A -->
+<!-- fc id:T-29-018 sha:e0ce2843 src:manual/29-symptomy.md:41 klas:K -->
 ### T-29-018 · kod · рядок 41
 
 **Книга каже, дослівно:**
@@ -957,7 +957,7 @@
 
 ---
 
-<!-- fc id:T-29-067 sha:6af58709 src:manual/29-symptomy.md:164 klas:A -->
+<!-- fc id:T-29-067 sha:6af58709 src:manual/29-symptomy.md:164 klas:K -->
 ### T-29-067 · kod · рядок 164
 
 **Книга каже, дослівно:**

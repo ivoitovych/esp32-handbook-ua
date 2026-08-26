@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-32-006 sha:2624e8ee src:manual/32-nadiynist.md:15 klas:A -->
+<!-- fc id:T-32-006 sha:2624e8ee src:manual/32-nadiynist.md:15 klas:K -->
 ### T-32-006 · kod · рядок 15
 
 **Книга каже, дослівно:**
@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-32-009 sha:2845d7a3 src:manual/32-nadiynist.md:29 klas:A -->
+<!-- fc id:T-32-009 sha:2845d7a3 src:manual/32-nadiynist.md:29 klas:K -->
 ### T-32-009 · kod · рядок 29
 
 **Книга каже, дослівно:**
@@ -378,7 +378,7 @@
 
 ---
 
-<!-- fc id:T-32-024 sha:152e687c src:manual/32-nadiynist.md:61 klas:A -->
+<!-- fc id:T-32-024 sha:152e687c src:manual/32-nadiynist.md:61 klas:K -->
 ### T-32-024 · kod · рядок 61
 
 **Книга каже, дослівно:**
@@ -654,7 +654,7 @@
 
 ---
 
-<!-- fc id:T-32-041 sha:ae559317 src:manual/32-nadiynist.md:109 klas:A -->
+<!-- fc id:T-32-041 sha:ae559317 src:manual/32-nadiynist.md:109 klas:K -->
 ### T-32-041 · kod · рядок 109
 
 **Книга каже, дослівно:**

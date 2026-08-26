@@ -1187,7 +1187,7 @@
 
 ---
 
-<!-- fc id:T-D-079 sha:d39312ec src:dodatky/d-panik.md:87 klas:A -->
+<!-- fc id:T-D-079 sha:d39312ec src:dodatky/d-panik.md:87 klas:K -->
 ### T-D-079 · kod · рядок 87
 
 **Книга каже, дослівно:**
@@ -2594,7 +2594,7 @@
 
 ---
 
-<!-- fc id:T-D-133 sha:655ff0e7 src:dodatky/d-panik.md:172 klas:A -->
+<!-- fc id:T-D-133 sha:655ff0e7 src:dodatky/d-panik.md:172 klas:K -->
 ### T-D-133 · kod · рядок 172
 
 **Книга каже, дослівно:**
@@ -2751,7 +2751,7 @@
 
 ---
 
-<!-- fc id:T-D-140 sha:113645cd src:dodatky/d-panik.md:189 klas:A -->
+<!-- fc id:T-D-140 sha:113645cd src:dodatky/d-panik.md:189 klas:K -->
 ### T-D-140 · kod · рядок 189
 
 **Книга каже, дослівно:**

@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-61-020 sha:488cb3e6 src:manual/61-proj-kanal.md:41 klas:A -->
+<!-- fc id:T-61-020 sha:488cb3e6 src:manual/61-proj-kanal.md:41 klas:K -->
 ### T-61-020 · kod · рядок 41
 
 **Книга каже, дослівно:**
@@ -424,7 +424,7 @@
 
 ---
 
-<!-- fc id:T-61-030 sha:cda5218c src:manual/61-proj-kanal.md:76 klas:A -->
+<!-- fc id:T-61-030 sha:cda5218c src:manual/61-proj-kanal.md:76 klas:K -->
 ### T-61-030 · kod · рядок 76
 
 **Книга каже, дослівно:**
@@ -806,7 +806,7 @@
 
 ---
 
-<!-- fc id:T-61-048 sha:a8e5e059 src:manual/61-proj-kanal.md:144 klas:A -->
+<!-- fc id:T-61-048 sha:a8e5e059 src:manual/61-proj-kanal.md:144 klas:K -->
 ### T-61-048 · kod · рядок 144
 
 **Книга каже, дослівно:**
@@ -1057,7 +1057,7 @@
 
 ---
 
-<!-- fc id:T-61-060 sha:4834ece6 src:manual/61-proj-kanal.md:173 klas:A -->
+<!-- fc id:T-61-060 sha:4834ece6 src:manual/61-proj-kanal.md:173 klas:K -->
 ### T-61-060 · kod · рядок 173
 
 **Книга каже, дослівно:**
@@ -1179,7 +1179,7 @@
 
 ---
 
-<!-- fc id:T-61-065 sha:60da1592 src:manual/61-proj-kanal.md:224 klas:A -->
+<!-- fc id:T-61-065 sha:60da1592 src:manual/61-proj-kanal.md:224 klas:K -->
 ### T-61-065 · kod · рядок 224
 
 **Книга каже, дослівно:**

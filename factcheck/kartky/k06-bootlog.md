@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-K06-003 sha:7419d2c5 src:kartky/k06-bootlog.md:8 klas:A -->
+<!-- fc id:T-K06-003 sha:7419d2c5 src:kartky/k06-bootlog.md:8 klas:K -->
 ### T-K06-003 · kod · рядок 8
 
 **Книга каже, дослівно:**
@@ -598,7 +598,7 @@
 
 ---
 
-<!-- fc id:T-K06-032 sha:0219c8b1 src:kartky/k06-bootlog.md:46 klas:A -->
+<!-- fc id:T-K06-032 sha:0219c8b1 src:kartky/k06-bootlog.md:46 klas:K -->
 ### T-K06-032 · kod · рядок 46
 
 **Книга каже, дослівно:**

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/62-proj-keruvannya.md`
 
-Одиниць твердження: **130**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **168**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -110,8 +110,409 @@
 
 ---
 
-<!-- fc id:T-62-009 sha:77a45dd4 src:manual/62-proj-keruvannya.md:31 klas:F -->
-### T-62-009 · proza · рядок 31
+<!-- fc id:T-62-009 sha:648244e3 src:manual/62-proj-keruvannya.md:30 klas:F -->
+### T-62-009 · tablycya-shapka · рядок 30
+
+**Книга каже, дослівно:**
+
+> | Позиція | Кількість | Примітка |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-010 sha:bfbf6ddc src:manual/62-proj-keruvannya.md:31 klas:F -->
+### T-62-010 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> ESP32 classic DevKitC · Кількість → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-011 sha:aed2a2e0 src:manual/62-proj-keruvannya.md:31 klas:F -->
+### T-62-011 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> ESP32 classic DevKitC · Примітка → схема нижче — для classic
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-012 sha:c5901edb src:manual/62-proj-keruvannya.md:32 klas:F -->
+### T-62-012 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> Модуль реле з оптопарою · Кількість → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-013 sha:58e01a67 src:manual/62-proj-keruvannya.md:32 klas:F -->
+### T-62-013 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> Модуль реле з оптопарою · Примітка → живлення котушки 5 В, розділ 47
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-014 sha:20d19b70 src:manual/62-proj-keruvannya.md:33 klas:F -->
+### T-62-014 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Аварійний вимикач · Кількість → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-015 sha:e78fb121 src:manual/62-proj-keruvannya.md:33 klas:F -->
+### T-62-015 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Аварійний вимикач · Примітка → механічний, у силовому колі
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-016 sha:1fc642d2 src:manual/62-proj-keruvannya.md:34 klas:F -->
+### T-62-016 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> Поплавковий вимикач · Кількість → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-017 sha:5b40a09d src:manual/62-proj-keruvannya.md:34 klas:F -->
+### T-62-017 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> Поплавковий вимикач · Примітка → + зовнішня підтяжка 10 кОм
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-018 sha:444b90c1 src:manual/62-proj-keruvannya.md:35 klas:F -->
+### T-62-018 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> Кнопки «пуск» і «стоп» · Кількість → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-019 sha:8fc03a5a src:manual/62-proj-keruvannya.md:36 klas:F -->
+### T-62-019 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Резистори 220 Ом, 10 кОм · Кількість → по 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-020 sha:1d1a44b6 src:manual/62-proj-keruvannya.md:39 klas:F -->
+### T-62-020 · tablycya-shapka · рядок 39
+
+**Книга каже, дослівно:**
+
+> | Сигнал | classic | S3 | C3 |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-021 sha:06e85c5c src:manual/62-proj-keruvannya.md:40 klas:F -->
+### T-62-021 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> Вихід на реле · classic → `GPIO25`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-022 sha:6dbfe366 src:manual/62-proj-keruvannya.md:40 klas:F -->
+### T-62-022 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> Вихід на реле · S3 → `GPIO4`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-023 sha:680cd1bf src:manual/62-proj-keruvannya.md:40 klas:F -->
+### T-62-023 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> Вихід на реле · C3 → `GPIO4`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-024 sha:6f6a96e9 src:manual/62-proj-keruvannya.md:41 klas:F -->
+### T-62-024 · komirka · рядок 41
+
+**Книга каже, дослівно:**
+
+> Поплавковий вимикач · classic → `GPIO34`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-025 sha:66b266bb src:manual/62-proj-keruvannya.md:41 klas:F -->
+### T-62-025 · komirka · рядок 41
+
+**Книга каже, дослівно:**
+
+> Поплавковий вимикач · S3 → `GPIO5`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-026 sha:62ff4d05 src:manual/62-proj-keruvannya.md:41 klas:F -->
+### T-62-026 · komirka · рядок 41
+
+**Книга каже, дослівно:**
+
+> Поплавковий вимикач · C3 → `GPIO5`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-027 sha:a64ce347 src:manual/62-proj-keruvannya.md:42 klas:F -->
+### T-62-027 · komirka · рядок 42
+
+**Книга каже, дослівно:**
+
+> Кнопка «стоп» · classic → `GPIO26`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-028 sha:9d7cdd08 src:manual/62-proj-keruvannya.md:42 klas:F -->
+### T-62-028 · komirka · рядок 42
+
+**Книга каже, дослівно:**
+
+> Кнопка «стоп» · S3 → `GPIO6`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-029 sha:37f7d5f3 src:manual/62-proj-keruvannya.md:42 klas:F -->
+### T-62-029 · komirka · рядок 42
+
+**Книга каже, дослівно:**
+
+> Кнопка «стоп» · C3 → `GPIO6`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-030 sha:a48ef5a8 src:manual/62-proj-keruvannya.md:43 klas:F -->
+### T-62-030 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> Кнопка «пуск» · classic → `GPIO27`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-031 sha:45b78b5c src:manual/62-proj-keruvannya.md:43 klas:F -->
+### T-62-031 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> Кнопка «пуск» · S3 → `GPIO7`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-032 sha:66aeee19 src:manual/62-proj-keruvannya.md:43 klas:F -->
+### T-62-032 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> Кнопка «пуск» · C3 → `GPIO7`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-033 sha:b640ac98 src:manual/62-proj-keruvannya.md:47 klas:B -->
+### T-62-033 · proza · рядок 47
+
+**Книга каже, дослівно:**
+
+> Схема й код нижче написані під classic, бо `GPIO34` там **тільки вхідний** — і це принципово саме для цього проєкту: пін, який фізично не вміє бути виходом, не може випадково подати сигнал на реле через помилку в коді.
+
+**Доказ**
+
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_VALID_OUTPUT_GPIO_MASK
+  >            (SOC_GPIO_VALID_GPIO_MASK & ~(BIT34|BIT35|BIT36|BIT37|BIT38|BIT39))
+  > esp32s3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK (SOC_GPIO_VALID_GPIO_MASK)
+  > esp32c3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK SOC_GPIO_VALID_GPIO_MASK
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 62 не мав переліку складових узагалі, тож `tools/piny.py` його піни не перевіряв: файл нічого собі не приписував. Додано перелік і таблицю пінів на три сімейства — і разом із ними названо причину вибору.
+Причина механічна, і вона видна прямо в масках. На classic `GPIO34`–`GPIO39` вирізані з маски **виходів**: пін фізично не вміє бути виходом. Для проєкту, де помилка в коді заливає приміщення, це не дрібниця — датчик рівня сидить на піні, який неможливо випадково перетворити на джерело сигналу.
+На S3 і C3 маски виходу й входу збігаються, тільки-вхідних пінів немає, і цю властивість там не отримати. Тому вибір classic у цьому проєкті — рішення, а не інерція; так і записано.
+Клас `B`: маски отримано дослівно, висновок про безпекову властивість із них випливає однозначно, але сам він — міркування, а не цитата.
+- **Прохід:** pass-18-schemy
+
+---
+
+<!-- fc id:T-62-034 sha:960075a5 src:manual/62-proj-keruvannya.md:52 klas:B -->
+### T-62-034 · proza · рядок 52
+
+**Книга каже, дослівно:**
+
+> На S3 і C3 тільки-вхідних пінів немає взагалі (розділ 07), тож цю властивість там не отримати.
+
+**Доказ**
+
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > esp32:   SOC_GPIO_VALID_OUTPUT_GPIO_MASK
+  >            (SOC_GPIO_VALID_GPIO_MASK & ~(BIT34|BIT35|BIT36|BIT37|BIT38|BIT39))
+  > esp32s3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK (SOC_GPIO_VALID_GPIO_MASK)
+  > esp32c3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK SOC_GPIO_VALID_GPIO_MASK
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 62 не мав переліку складових узагалі, тож `tools/piny.py` його піни не перевіряв: файл нічого собі не приписував. Додано перелік і таблицю пінів на три сімейства — і разом із ними названо причину вибору.
+Причина механічна, і вона видна прямо в масках. На classic `GPIO34`–`GPIO39` вирізані з маски **виходів**: пін фізично не вміє бути виходом. Для проєкту, де помилка в коді заливає приміщення, це не дрібниця — датчик рівня сидить на піні, який неможливо випадково перетворити на джерело сигналу.
+На S3 і C3 маски виходу й входу збігаються, тільки-вхідних пінів немає, і цю властивість там не отримати. Тому вибір classic у цьому проєкті — рішення, а не інерція; так і записано.
+Клас `B`: маски отримано дослівно, висновок про безпекову властивість із них випливає однозначно, але сам він — міркування, а не цитата.
+- **Прохід:** pass-18-schemy
+
+---
+
+<!-- fc id:T-62-035 sha:2ac1d78c src:manual/62-proj-keruvannya.md:52 klas:F -->
+### T-62-035 · proza · рядок 52
+
+**Книга каже, дослівно:**
+
+> Замість неї доведеться покладатися на дисципліну коду — а в проєкті, де помилка заливає приміщення, це гірший захист.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-036 sha:6f145727 src:manual/62-proj-keruvannya.md:57 klas:F -->
+### T-62-036 · proza · рядок 57
+
+**Книга каже, дослівно:**
+
+> Тому вибір classic тут не інерція, а рішення.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-037 sha:069f6e6e src:manual/62-proj-keruvannya.md:57 klas:F -->
+### T-62-037 · proza · рядок 57
+
+**Книга каже, дослівно:**
+
+> Числа для інших сімейств наведені, щоб перенесення було свідомим, а не «замінити 34 на щось».
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-038 sha:77a45dd4 src:manual/62-proj-keruvannya.md:64 klas:F -->
+### T-62-038 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -123,8 +524,8 @@
 
 ---
 
-<!-- fc id:T-62-010 sha:52ffe580 src:manual/62-proj-keruvannya.md:34 klas:F -->
-### T-62-010 · proza · рядок 34
+<!-- fc id:T-62-039 sha:52ffe580 src:manual/62-proj-keruvannya.md:67 klas:F -->
+### T-62-039 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -136,8 +537,8 @@
 
 ---
 
-<!-- fc id:T-62-011 sha:3df5db21 src:manual/62-proj-keruvannya.md:37 klas:F -->
-### T-62-011 · proza · рядок 37
+<!-- fc id:T-62-040 sha:3df5db21 src:manual/62-proj-keruvannya.md:70 klas:F -->
+### T-62-040 · proza · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -149,8 +550,8 @@
 
 ---
 
-<!-- fc id:T-62-012 sha:f384e7dc src:manual/62-proj-keruvannya.md:39 klas:F -->
-### T-62-012 · proza · рядок 39
+<!-- fc id:T-62-041 sha:f384e7dc src:manual/62-proj-keruvannya.md:72 klas:F -->
+### T-62-041 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -162,8 +563,8 @@
 
 ---
 
-<!-- fc id:T-62-013 sha:24f28a5e src:manual/62-proj-keruvannya.md:39 klas:F -->
-### T-62-013 · proza · рядок 39
+<!-- fc id:T-62-042 sha:24f28a5e src:manual/62-proj-keruvannya.md:72 klas:F -->
+### T-62-042 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -175,8 +576,8 @@
 
 ---
 
-<!-- fc id:T-62-014 sha:ba1a98ae src:manual/62-proj-keruvannya.md:39 klas:F -->
-### T-62-014 · proza · рядок 39
+<!-- fc id:T-62-043 sha:ba1a98ae src:manual/62-proj-keruvannya.md:72 klas:F -->
+### T-62-043 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -188,8 +589,8 @@
 
 ---
 
-<!-- fc id:T-62-015 sha:99b36b89 src:manual/62-proj-keruvannya.md:46 klas:F -->
-### T-62-015 · proza · рядок 46
+<!-- fc id:T-62-044 sha:99b36b89 src:manual/62-proj-keruvannya.md:79 klas:F -->
+### T-62-044 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -201,8 +602,8 @@
 
 ---
 
-<!-- fc id:T-62-016 sha:42efe84d src:manual/62-proj-keruvannya.md:49 klas:F -->
-### T-62-016 · proza · рядок 49
+<!-- fc id:T-62-045 sha:42efe84d src:manual/62-proj-keruvannya.md:82 klas:F -->
+### T-62-045 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -214,8 +615,8 @@
 
 ---
 
-<!-- fc id:T-62-017 sha:dda89b86 src:manual/62-proj-keruvannya.md:49 klas:F -->
-### T-62-017 · proza · рядок 49
+<!-- fc id:T-62-046 sha:dda89b86 src:manual/62-proj-keruvannya.md:82 klas:F -->
+### T-62-046 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -227,8 +628,8 @@
 
 ---
 
-<!-- fc id:T-62-018 sha:efe8ee6b src:manual/62-proj-keruvannya.md:49 klas:F -->
-### T-62-018 · proza · рядок 49
+<!-- fc id:T-62-047 sha:efe8ee6b src:manual/62-proj-keruvannya.md:82 klas:F -->
+### T-62-047 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -240,8 +641,8 @@
 
 ---
 
-<!-- fc id:T-62-019 sha:9bf90e1f src:manual/62-proj-keruvannya.md:54 klas:F -->
-### T-62-019 · proza · рядок 54
+<!-- fc id:T-62-048 sha:9bf90e1f src:manual/62-proj-keruvannya.md:87 klas:F -->
+### T-62-048 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -253,8 +654,8 @@
 
 ---
 
-<!-- fc id:T-62-020 sha:dbc86f12 src:manual/62-proj-keruvannya.md:60 klas:F -->
-### T-62-020 · proza · рядок 60
+<!-- fc id:T-62-049 sha:dbc86f12 src:manual/62-proj-keruvannya.md:93 klas:F -->
+### T-62-049 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -266,8 +667,8 @@
 
 ---
 
-<!-- fc id:T-62-021 sha:b9ff9d58 src:manual/62-proj-keruvannya.md:62 klas:F -->
-### T-62-021 · kod · рядок 62
+<!-- fc id:T-62-050 sha:b9ff9d58 src:manual/62-proj-keruvannya.md:95 klas:K -->
+### T-62-050 · kod · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -281,8 +682,21 @@
 
 ---
 
-<!-- fc id:T-62-022 sha:2a932c15 src:manual/62-proj-keruvannya.md:66 klas:F -->
-### T-62-022 · proza · рядок 66
+<!-- fc id:T-62-051 sha:5f426d1b src:manual/62-proj-keruvannya.md:96 klas:F -->
+### T-62-051 · schema-zvyazok · рядок 96
+
+**Книга каже, дослівно:**
+
+> +12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-052 sha:2a932c15 src:manual/62-proj-keruvannya.md:99 klas:F -->
+### T-62-052 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -294,8 +708,8 @@
 
 ---
 
-<!-- fc id:T-62-023 sha:93c68e4b src:manual/62-proj-keruvannya.md:68 klas:F -->
-### T-62-023 · kod · рядок 68
+<!-- fc id:T-62-053 sha:93c68e4b src:manual/62-proj-keruvannya.md:101 klas:K -->
+### T-62-053 · kod · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -316,8 +730,73 @@
 
 ---
 
-<!-- fc id:T-62-024 sha:de2eca7d src:manual/62-proj-keruvannya.md:81 klas:F -->
-### T-62-024 · kod · рядок 81
+<!-- fc id:T-62-054 sha:48a3f921 src:manual/62-proj-keruvannya.md:102 klas:F -->
+### T-62-054 · schema-zvyazok · рядок 102
+
+**Книга каже, дослівно:**
+
+> 5 В ──── VCC модуля реле
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-055 sha:9d236f2d src:manual/62-proj-keruvannya.md:103 klas:F -->
+### T-62-055 · schema-zvyazok · рядок 103
+
+**Книга каже, дослівно:**
+
+> GND ──── GND модуля  (спільна з ESP32)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-056 sha:de90129c src:manual/62-proj-keruvannya.md:105 klas:F -->
+### T-62-056 · schema-zvyazok · рядок 105
+
+**Книга каже, дослівно:**
+
+> GPIO25 ──┬──[220 Ом]──── IN модуля
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-057 sha:e6f1a6a7 src:manual/62-proj-keruvannya.md:106 klas:F -->
+### T-62-057 · schema-zvyazok · рядок 106
+
+**Книга каже, дослівно:**
+
+> │
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-058 sha:e6f1a6a7 src:manual/62-proj-keruvannya.md:108 klas:F -->
+### T-62-058 · schema-zvyazok · рядок 108
+
+**Книга каже, дослівно:**
+
+> │
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-059 sha:de2eca7d src:manual/62-proj-keruvannya.md:114 klas:K -->
+### T-62-059 · kod · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -333,8 +812,47 @@
 
 ---
 
-<!-- fc id:T-62-025 sha:dec1d5dd src:manual/62-proj-keruvannya.md:88 klas:F -->
-### T-62-025 · proza · рядок 88
+<!-- fc id:T-62-060 sha:42712b16 src:manual/62-proj-keruvannya.md:115 klas:F -->
+### T-62-060 · schema-zvyazok · рядок 115
+
+**Книга каже, дослівно:**
+
+> GPIO34 ── поплавковий вимикач ── GND   (+ зовнішня підтяжка 10 кОм до 3V3!)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-061 sha:f0275ac7 src:manual/62-proj-keruvannya.md:116 klas:F -->
+### T-62-061 · schema-zvyazok · рядок 116
+
+**Книга каже, дослівно:**
+
+> GPIO26 ── кнопка «стоп» ── GND         (внутрішня підтяжка)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-062 sha:ece88320 src:manual/62-proj-keruvannya.md:117 klas:F -->
+### T-62-062 · schema-zvyazok · рядок 117
+
+**Книга каже, дослівно:**
+
+> GPIO27 ── кнопка «пуск» ── GND
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-62-063 sha:dec1d5dd src:manual/62-proj-keruvannya.md:121 klas:F -->
+### T-62-063 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -346,8 +864,8 @@
 
 ---
 
-<!-- fc id:T-62-026 sha:1027195f src:manual/62-proj-keruvannya.md:91 klas:F -->
-### T-62-026 · proza · рядок 91
+<!-- fc id:T-62-064 sha:1027195f src:manual/62-proj-keruvannya.md:124 klas:F -->
+### T-62-064 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -359,8 +877,8 @@
 
 ---
 
-<!-- fc id:T-62-027 sha:bba06f58 src:manual/62-proj-keruvannya.md:91 klas:F -->
-### T-62-027 · proza · рядок 91
+<!-- fc id:T-62-065 sha:bba06f58 src:manual/62-proj-keruvannya.md:124 klas:F -->
+### T-62-065 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -372,8 +890,8 @@
 
 ---
 
-<!-- fc id:T-62-028 sha:b2c92c88 src:manual/62-proj-keruvannya.md:91 klas:F -->
-### T-62-028 · proza · рядок 91
+<!-- fc id:T-62-066 sha:b2c92c88 src:manual/62-proj-keruvannya.md:124 klas:F -->
+### T-62-066 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -385,8 +903,8 @@
 
 ---
 
-<!-- fc id:T-62-029 sha:4a793c5c src:manual/62-proj-keruvannya.md:95 klas:F -->
-### T-62-029 · proza · рядок 95
+<!-- fc id:T-62-067 sha:4a793c5c src:manual/62-proj-keruvannya.md:128 klas:F -->
+### T-62-067 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -398,8 +916,8 @@
 
 ---
 
-<!-- fc id:T-62-030 sha:4c2abbdc src:manual/62-proj-keruvannya.md:95 klas:F -->
-### T-62-030 · proza · рядок 95
+<!-- fc id:T-62-068 sha:4c2abbdc src:manual/62-proj-keruvannya.md:128 klas:F -->
+### T-62-068 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -411,8 +929,8 @@
 
 ---
 
-<!-- fc id:T-62-031 sha:0d7fdee7 src:manual/62-proj-keruvannya.md:95 klas:F -->
-### T-62-031 · proza · рядок 95
+<!-- fc id:T-62-069 sha:0d7fdee7 src:manual/62-proj-keruvannya.md:128 klas:F -->
+### T-62-069 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -424,8 +942,8 @@
 
 ---
 
-<!-- fc id:T-62-032 sha:360f8a71 src:manual/62-proj-keruvannya.md:101 klas:F -->
-### T-62-032 · proza · рядок 101
+<!-- fc id:T-62-070 sha:360f8a71 src:manual/62-proj-keruvannya.md:134 klas:F -->
+### T-62-070 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -437,8 +955,8 @@
 
 ---
 
-<!-- fc id:T-62-033 sha:7e6052b3 src:manual/62-proj-keruvannya.md:101 klas:F -->
-### T-62-033 · proza · рядок 101
+<!-- fc id:T-62-071 sha:7e6052b3 src:manual/62-proj-keruvannya.md:134 klas:F -->
+### T-62-071 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -450,8 +968,8 @@
 
 ---
 
-<!-- fc id:T-62-034 sha:c05295a1 src:manual/62-proj-keruvannya.md:101 klas:F -->
-### T-62-034 · proza · рядок 101
+<!-- fc id:T-62-072 sha:c05295a1 src:manual/62-proj-keruvannya.md:134 klas:F -->
+### T-62-072 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -463,8 +981,8 @@
 
 ---
 
-<!-- fc id:T-62-035 sha:f49c43fd src:manual/62-proj-keruvannya.md:107 klas:F -->
-### T-62-035 · proza · рядок 107
+<!-- fc id:T-62-073 sha:f49c43fd src:manual/62-proj-keruvannya.md:140 klas:F -->
+### T-62-073 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -476,8 +994,8 @@
 
 ---
 
-<!-- fc id:T-62-036 sha:5e02ec72 src:manual/62-proj-keruvannya.md:107 klas:F -->
-### T-62-036 · proza · рядок 107
+<!-- fc id:T-62-074 sha:5e02ec72 src:manual/62-proj-keruvannya.md:140 klas:F -->
+### T-62-074 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -489,8 +1007,8 @@
 
 ---
 
-<!-- fc id:T-62-037 sha:70b70869 src:manual/62-proj-keruvannya.md:111 klas:F -->
-### T-62-037 · tablycya-shapka · рядок 111
+<!-- fc id:T-62-075 sha:70b70869 src:manual/62-proj-keruvannya.md:144 klas:F -->
+### T-62-075 · tablycya-shapka · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -502,8 +1020,8 @@
 
 ---
 
-<!-- fc id:T-62-038 sha:d08185e1 src:manual/62-proj-keruvannya.md:112 klas:F -->
-### T-62-038 · komirka · рядок 112
+<!-- fc id:T-62-076 sha:d08185e1 src:manual/62-proj-keruvannya.md:145 klas:F -->
+### T-62-076 · komirka · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -515,8 +1033,8 @@
 
 ---
 
-<!-- fc id:T-62-039 sha:4efee294 src:manual/62-proj-keruvannya.md:112 klas:F -->
-### T-62-039 · komirka · рядок 112
+<!-- fc id:T-62-077 sha:4efee294 src:manual/62-proj-keruvannya.md:145 klas:F -->
+### T-62-077 · komirka · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -528,8 +1046,8 @@
 
 ---
 
-<!-- fc id:T-62-040 sha:867a666c src:manual/62-proj-keruvannya.md:113 klas:F -->
-### T-62-040 · komirka · рядок 113
+<!-- fc id:T-62-078 sha:867a666c src:manual/62-proj-keruvannya.md:146 klas:F -->
+### T-62-078 · komirka · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -541,8 +1059,8 @@
 
 ---
 
-<!-- fc id:T-62-041 sha:3061b493 src:manual/62-proj-keruvannya.md:113 klas:F -->
-### T-62-041 · komirka · рядок 113
+<!-- fc id:T-62-079 sha:3061b493 src:manual/62-proj-keruvannya.md:146 klas:F -->
+### T-62-079 · komirka · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -554,8 +1072,8 @@
 
 ---
 
-<!-- fc id:T-62-042 sha:9256213b src:manual/62-proj-keruvannya.md:116 klas:F -->
-### T-62-042 · proza · рядок 116
+<!-- fc id:T-62-080 sha:9256213b src:manual/62-proj-keruvannya.md:149 klas:F -->
+### T-62-080 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -567,8 +1085,8 @@
 
 ---
 
-<!-- fc id:T-62-043 sha:04f1066f src:manual/62-proj-keruvannya.md:123 klas:F -->
-### T-62-043 · proza · рядок 123
+<!-- fc id:T-62-081 sha:04f1066f src:manual/62-proj-keruvannya.md:156 klas:F -->
+### T-62-081 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -580,8 +1098,8 @@
 
 ---
 
-<!-- fc id:T-62-044 sha:7ab48ab4 src:manual/62-proj-keruvannya.md:123 klas:F -->
-### T-62-044 · proza · рядок 123
+<!-- fc id:T-62-082 sha:7ab48ab4 src:manual/62-proj-keruvannya.md:156 klas:F -->
+### T-62-082 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -593,8 +1111,8 @@
 
 ---
 
-<!-- fc id:T-62-045 sha:2f80ddd9 src:manual/62-proj-keruvannya.md:127 klas:F -->
-### T-62-045 · proza · рядок 127
+<!-- fc id:T-62-083 sha:2f80ddd9 src:manual/62-proj-keruvannya.md:160 klas:F -->
+### T-62-083 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -606,8 +1124,8 @@
 
 ---
 
-<!-- fc id:T-62-046 sha:98707e37 src:manual/62-proj-keruvannya.md:133 klas:F -->
-### T-62-046 · proza · рядок 133
+<!-- fc id:T-62-084 sha:98707e37 src:manual/62-proj-keruvannya.md:166 klas:F -->
+### T-62-084 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -619,8 +1137,8 @@
 
 ---
 
-<!-- fc id:T-62-047 sha:b8cd9901 src:manual/62-proj-keruvannya.md:133 klas:F -->
-### T-62-047 · proza · рядок 133
+<!-- fc id:T-62-085 sha:b8cd9901 src:manual/62-proj-keruvannya.md:166 klas:F -->
+### T-62-085 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -632,8 +1150,8 @@
 
 ---
 
-<!-- fc id:T-62-048 sha:05334bcf src:manual/62-proj-keruvannya.md:136 klas:A -->
-### T-62-048 · kod · рядок 136
+<!-- fc id:T-62-086 sha:05334bcf src:manual/62-proj-keruvannya.md:169 klas:K -->
+### T-62-086 · kod · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -680,8 +1198,8 @@
 
 ---
 
-<!-- fc id:T-62-049 sha:fb4554b3 src:manual/62-proj-keruvannya.md:149 klas:F -->
-### T-62-049 · kod-ryadok · рядок 149
+<!-- fc id:T-62-087 sha:fb4554b3 src:manual/62-proj-keruvannya.md:182 klas:F -->
+### T-62-087 · kod-ryadok · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -693,8 +1211,8 @@
 
 ---
 
-<!-- fc id:T-62-050 sha:ea4d167e src:manual/62-proj-keruvannya.md:152 klas:F -->
-### T-62-050 · kod-ryadok · рядок 152
+<!-- fc id:T-62-088 sha:ea4d167e src:manual/62-proj-keruvannya.md:185 klas:F -->
+### T-62-088 · kod-ryadok · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -706,8 +1224,8 @@
 
 ---
 
-<!-- fc id:T-62-051 sha:e5aaf78d src:manual/62-proj-keruvannya.md:153 klas:F -->
-### T-62-051 · kod-ryadok · рядок 153
+<!-- fc id:T-62-089 sha:e5aaf78d src:manual/62-proj-keruvannya.md:186 klas:F -->
+### T-62-089 · kod-ryadok · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -719,8 +1237,8 @@
 
 ---
 
-<!-- fc id:T-62-052 sha:1157a791 src:manual/62-proj-keruvannya.md:157 klas:F -->
-### T-62-052 · proza · рядок 157
+<!-- fc id:T-62-090 sha:1157a791 src:manual/62-proj-keruvannya.md:190 klas:F -->
+### T-62-090 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -732,8 +1250,8 @@
 
 ---
 
-<!-- fc id:T-62-053 sha:4e69dd78 src:manual/62-proj-keruvannya.md:162 klas:A -->
-### T-62-053 · kod · рядок 162
+<!-- fc id:T-62-091 sha:4e69dd78 src:manual/62-proj-keruvannya.md:195 klas:K -->
+### T-62-091 · kod · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -791,8 +1309,8 @@
 
 ---
 
-<!-- fc id:T-62-054 sha:49e09508 src:manual/62-proj-keruvannya.md:163 klas:F -->
-### T-62-054 · kod-ryadok · рядок 163
+<!-- fc id:T-62-092 sha:49e09508 src:manual/62-proj-keruvannya.md:196 klas:F -->
+### T-62-092 · kod-ryadok · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -804,8 +1322,8 @@
 
 ---
 
-<!-- fc id:T-62-055 sha:f5124e8d src:manual/62-proj-keruvannya.md:164 klas:F -->
-### T-62-055 · kod-ryadok · рядок 164
+<!-- fc id:T-62-093 sha:f5124e8d src:manual/62-proj-keruvannya.md:197 klas:F -->
+### T-62-093 · kod-ryadok · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -817,8 +1335,8 @@
 
 ---
 
-<!-- fc id:T-62-056 sha:76745c58 src:manual/62-proj-keruvannya.md:165 klas:F -->
-### T-62-056 · kod-ryadok · рядок 165
+<!-- fc id:T-62-094 sha:76745c58 src:manual/62-proj-keruvannya.md:198 klas:F -->
+### T-62-094 · kod-ryadok · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -830,8 +1348,8 @@
 
 ---
 
-<!-- fc id:T-62-057 sha:3041709b src:manual/62-proj-keruvannya.md:168 klas:A -->
-### T-62-057 · kod-ryadok · рядок 168
+<!-- fc id:T-62-095 sha:3041709b src:manual/62-proj-keruvannya.md:201 klas:A -->
+### T-62-095 · kod-ryadok · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -859,8 +1377,8 @@
 
 ---
 
-<!-- fc id:T-62-058 sha:61e9dfbd src:manual/62-proj-keruvannya.md:170 klas:A -->
-### T-62-058 · kod-ryadok · рядок 170
+<!-- fc id:T-62-096 sha:61e9dfbd src:manual/62-proj-keruvannya.md:203 klas:A -->
+### T-62-096 · kod-ryadok · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -888,8 +1406,8 @@
 
 ---
 
-<!-- fc id:T-62-059 sha:cf06630c src:manual/62-proj-keruvannya.md:174 klas:F -->
-### T-62-059 · kod-ryadok · рядок 174
+<!-- fc id:T-62-097 sha:cf06630c src:manual/62-proj-keruvannya.md:207 klas:F -->
+### T-62-097 · kod-ryadok · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -901,8 +1419,8 @@
 
 ---
 
-<!-- fc id:T-62-060 sha:7ed04c13 src:manual/62-proj-keruvannya.md:175 klas:F -->
-### T-62-060 · kod-ryadok · рядок 175
+<!-- fc id:T-62-098 sha:7ed04c13 src:manual/62-proj-keruvannya.md:208 klas:F -->
+### T-62-098 · kod-ryadok · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -914,8 +1432,8 @@
 
 ---
 
-<!-- fc id:T-62-061 sha:cc6ada9c src:manual/62-proj-keruvannya.md:178 klas:F -->
-### T-62-061 · kod-ryadok · рядок 178
+<!-- fc id:T-62-099 sha:cc6ada9c src:manual/62-proj-keruvannya.md:211 klas:F -->
+### T-62-099 · kod-ryadok · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -927,8 +1445,8 @@
 
 ---
 
-<!-- fc id:T-62-062 sha:900722d7 src:manual/62-proj-keruvannya.md:179 klas:F -->
-### T-62-062 · kod-ryadok · рядок 179
+<!-- fc id:T-62-100 sha:900722d7 src:manual/62-proj-keruvannya.md:212 klas:F -->
+### T-62-100 · kod-ryadok · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -940,8 +1458,8 @@
 
 ---
 
-<!-- fc id:T-62-063 sha:e49bc4d8 src:manual/62-proj-keruvannya.md:182 klas:F -->
-### T-62-063 · kod-ryadok · рядок 182
+<!-- fc id:T-62-101 sha:e49bc4d8 src:manual/62-proj-keruvannya.md:215 klas:F -->
+### T-62-101 · kod-ryadok · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -953,8 +1471,8 @@
 
 ---
 
-<!-- fc id:T-62-064 sha:3f4ad16a src:manual/62-proj-keruvannya.md:183 klas:F -->
-### T-62-064 · kod-ryadok · рядок 183
+<!-- fc id:T-62-102 sha:3f4ad16a src:manual/62-proj-keruvannya.md:216 klas:F -->
+### T-62-102 · kod-ryadok · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -966,8 +1484,8 @@
 
 ---
 
-<!-- fc id:T-62-065 sha:00253454 src:manual/62-proj-keruvannya.md:186 klas:F -->
-### T-62-065 · kod-ryadok · рядок 186
+<!-- fc id:T-62-103 sha:00253454 src:manual/62-proj-keruvannya.md:219 klas:F -->
+### T-62-103 · kod-ryadok · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -979,8 +1497,8 @@
 
 ---
 
-<!-- fc id:T-62-066 sha:c7e221ff src:manual/62-proj-keruvannya.md:187 klas:F -->
-### T-62-066 · kod-ryadok · рядок 187
+<!-- fc id:T-62-104 sha:c7e221ff src:manual/62-proj-keruvannya.md:220 klas:F -->
+### T-62-104 · kod-ryadok · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -992,8 +1510,8 @@
 
 ---
 
-<!-- fc id:T-62-067 sha:20132484 src:manual/62-proj-keruvannya.md:189 klas:A -->
-### T-62-067 · kod-ryadok · рядок 189
+<!-- fc id:T-62-105 sha:20132484 src:manual/62-proj-keruvannya.md:222 klas:A -->
+### T-62-105 · kod-ryadok · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1015,8 +1533,8 @@
 
 ---
 
-<!-- fc id:T-62-068 sha:d42fe36f src:manual/62-proj-keruvannya.md:195 klas:F -->
-### T-62-068 · proza · рядок 195
+<!-- fc id:T-62-106 sha:d42fe36f src:manual/62-proj-keruvannya.md:228 klas:F -->
+### T-62-106 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1028,8 +1546,8 @@
 
 ---
 
-<!-- fc id:T-62-069 sha:618ac858 src:manual/62-proj-keruvannya.md:197 klas:F -->
-### T-62-069 · proza · рядок 197
+<!-- fc id:T-62-107 sha:618ac858 src:manual/62-proj-keruvannya.md:230 klas:F -->
+### T-62-107 · proza · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -1041,8 +1559,8 @@
 
 ---
 
-<!-- fc id:T-62-070 sha:648dae42 src:manual/62-proj-keruvannya.md:197 klas:F -->
-### T-62-070 · proza · рядок 197
+<!-- fc id:T-62-108 sha:648dae42 src:manual/62-proj-keruvannya.md:230 klas:F -->
+### T-62-108 · proza · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -1054,8 +1572,8 @@
 
 ---
 
-<!-- fc id:T-62-071 sha:e3a133ac src:manual/62-proj-keruvannya.md:202 klas:F -->
-### T-62-071 · proza · рядок 202
+<!-- fc id:T-62-109 sha:e3a133ac src:manual/62-proj-keruvannya.md:235 klas:F -->
+### T-62-109 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -1067,8 +1585,8 @@
 
 ---
 
-<!-- fc id:T-62-072 sha:9a8b2e5c src:manual/62-proj-keruvannya.md:202 klas:F -->
-### T-62-072 · proza · рядок 202
+<!-- fc id:T-62-110 sha:9a8b2e5c src:manual/62-proj-keruvannya.md:235 klas:F -->
+### T-62-110 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -1080,8 +1598,8 @@
 
 ---
 
-<!-- fc id:T-62-073 sha:9cc7f463 src:manual/62-proj-keruvannya.md:207 klas:B -->
-### T-62-073 · proza · рядок 207
+<!-- fc id:T-62-111 sha:9cc7f463 src:manual/62-proj-keruvannya.md:240 klas:B -->
+### T-62-111 · proza · рядок 240
 
 **Книга каже, дослівно:**
 
@@ -1106,8 +1624,8 @@
 
 ---
 
-<!-- fc id:T-62-074 sha:92ad9f27 src:manual/62-proj-keruvannya.md:209 klas:F -->
-### T-62-074 · proza · рядок 209
+<!-- fc id:T-62-112 sha:92ad9f27 src:manual/62-proj-keruvannya.md:242 klas:F -->
+### T-62-112 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1119,8 +1637,8 @@
 
 ---
 
-<!-- fc id:T-62-075 sha:a328787e src:manual/62-proj-keruvannya.md:209 klas:F -->
-### T-62-075 · proza · рядок 209
+<!-- fc id:T-62-113 sha:a328787e src:manual/62-proj-keruvannya.md:242 klas:F -->
+### T-62-113 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1132,8 +1650,8 @@
 
 ---
 
-<!-- fc id:T-62-076 sha:57e0ed68 src:manual/62-proj-keruvannya.md:212 klas:F -->
-### T-62-076 · tablycya · рядок 212
+<!-- fc id:T-62-114 sha:57e0ed68 src:manual/62-proj-keruvannya.md:245 klas:F -->
+### T-62-114 · tablycya · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -1145,8 +1663,8 @@
 
 ---
 
-<!-- fc id:T-62-077 sha:e1a27c92 src:manual/62-proj-keruvannya.md:214 klas:F -->
-### T-62-077 · tablycya · рядок 214
+<!-- fc id:T-62-115 sha:e1a27c92 src:manual/62-proj-keruvannya.md:247 klas:F -->
+### T-62-115 · tablycya · рядок 247
 
 **Книга каже, дослівно:**
 
@@ -1158,8 +1676,8 @@
 
 ---
 
-<!-- fc id:T-62-078 sha:9cef389c src:manual/62-proj-keruvannya.md:215 klas:F -->
-### T-62-078 · tablycya · рядок 215
+<!-- fc id:T-62-116 sha:9cef389c src:manual/62-proj-keruvannya.md:248 klas:F -->
+### T-62-116 · tablycya · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1171,8 +1689,8 @@
 
 ---
 
-<!-- fc id:T-62-079 sha:9241d00e src:manual/62-proj-keruvannya.md:216 klas:B -->
-### T-62-079 · tablycya · рядок 216
+<!-- fc id:T-62-117 sha:9241d00e src:manual/62-proj-keruvannya.md:249 klas:B -->
+### T-62-117 · tablycya · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -1197,8 +1715,8 @@
 
 ---
 
-<!-- fc id:T-62-080 sha:cc80c2e7 src:manual/62-proj-keruvannya.md:217 klas:F -->
-### T-62-080 · tablycya · рядок 217
+<!-- fc id:T-62-118 sha:cc80c2e7 src:manual/62-proj-keruvannya.md:250 klas:F -->
+### T-62-118 · tablycya · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1210,8 +1728,8 @@
 
 ---
 
-<!-- fc id:T-62-081 sha:af96bb07 src:manual/62-proj-keruvannya.md:218 klas:F -->
-### T-62-081 · tablycya · рядок 218
+<!-- fc id:T-62-119 sha:af96bb07 src:manual/62-proj-keruvannya.md:251 klas:F -->
+### T-62-119 · tablycya · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -1223,8 +1741,8 @@
 
 ---
 
-<!-- fc id:T-62-082 sha:0bb94afa src:manual/62-proj-keruvannya.md:220 klas:B -->
-### T-62-082 · proza · рядок 220
+<!-- fc id:T-62-120 sha:0bb94afa src:manual/62-proj-keruvannya.md:253 klas:B -->
+### T-62-120 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -1249,8 +1767,8 @@
 
 ---
 
-<!-- fc id:T-62-083 sha:cec65d16 src:manual/62-proj-keruvannya.md:220 klas:B -->
-### T-62-083 · proza · рядок 220
+<!-- fc id:T-62-121 sha:cec65d16 src:manual/62-proj-keruvannya.md:253 klas:B -->
+### T-62-121 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -1275,8 +1793,8 @@
 
 ---
 
-<!-- fc id:T-62-084 sha:5b48db3c src:manual/62-proj-keruvannya.md:220 klas:F -->
-### T-62-084 · proza · рядок 220
+<!-- fc id:T-62-122 sha:5b48db3c src:manual/62-proj-keruvannya.md:253 klas:F -->
+### T-62-122 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -1288,8 +1806,8 @@
 
 ---
 
-<!-- fc id:T-62-085 sha:203a4ea8 src:manual/62-proj-keruvannya.md:224 klas:F -->
-### T-62-085 · proza · рядок 224
+<!-- fc id:T-62-123 sha:203a4ea8 src:manual/62-proj-keruvannya.md:257 klas:F -->
+### T-62-123 · proza · рядок 257
 
 **Книга каже, дослівно:**
 
@@ -1301,8 +1819,8 @@
 
 ---
 
-<!-- fc id:T-62-086 sha:bfea3526 src:manual/62-proj-keruvannya.md:224 klas:F -->
-### T-62-086 · proza · рядок 224
+<!-- fc id:T-62-124 sha:bfea3526 src:manual/62-proj-keruvannya.md:257 klas:F -->
+### T-62-124 · proza · рядок 257
 
 **Книга каже, дослівно:**
 
@@ -1314,8 +1832,8 @@
 
 ---
 
-<!-- fc id:T-62-087 sha:d5b10ac3 src:manual/62-proj-keruvannya.md:229 klas:F -->
-### T-62-087 · proza · рядок 229
+<!-- fc id:T-62-125 sha:d5b10ac3 src:manual/62-proj-keruvannya.md:262 klas:F -->
+### T-62-125 · proza · рядок 262
 
 **Книга каже, дослівно:**
 
@@ -1327,8 +1845,8 @@
 
 ---
 
-<!-- fc id:T-62-088 sha:669160d7 src:manual/62-proj-keruvannya.md:229 klas:F -->
-### T-62-088 · proza · рядок 229
+<!-- fc id:T-62-126 sha:669160d7 src:manual/62-proj-keruvannya.md:262 klas:F -->
+### T-62-126 · proza · рядок 262
 
 **Книга каже, дослівно:**
 
@@ -1340,8 +1858,8 @@
 
 ---
 
-<!-- fc id:T-62-089 sha:bd516205 src:manual/62-proj-keruvannya.md:237 klas:F -->
-### T-62-089 · proza · рядок 237
+<!-- fc id:T-62-127 sha:bd516205 src:manual/62-proj-keruvannya.md:270 klas:F -->
+### T-62-127 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -1353,8 +1871,8 @@
 
 ---
 
-<!-- fc id:T-62-090 sha:da6f29d5 src:manual/62-proj-keruvannya.md:241 klas:F -->
-### T-62-090 · proza · рядок 241
+<!-- fc id:T-62-128 sha:da6f29d5 src:manual/62-proj-keruvannya.md:274 klas:F -->
+### T-62-128 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -1366,8 +1884,8 @@
 
 ---
 
-<!-- fc id:T-62-091 sha:9c0f3e88 src:manual/62-proj-keruvannya.md:248 klas:F -->
-### T-62-091 · proza · рядок 248
+<!-- fc id:T-62-129 sha:9c0f3e88 src:manual/62-proj-keruvannya.md:281 klas:F -->
+### T-62-129 · proza · рядок 281
 
 **Книга каже, дослівно:**
 
@@ -1379,8 +1897,8 @@
 
 ---
 
-<!-- fc id:T-62-092 sha:d024ec6b src:manual/62-proj-keruvannya.md:251 klas:F -->
-### T-62-092 · proza · рядок 251
+<!-- fc id:T-62-130 sha:d024ec6b src:manual/62-proj-keruvannya.md:284 klas:F -->
+### T-62-130 · proza · рядок 284
 
 **Книга каже, дослівно:**
 
@@ -1392,8 +1910,8 @@
 
 ---
 
-<!-- fc id:T-62-093 sha:7da2f6b3 src:manual/62-proj-keruvannya.md:253 klas:F -->
-### T-62-093 · proza · рядок 253
+<!-- fc id:T-62-131 sha:7da2f6b3 src:manual/62-proj-keruvannya.md:286 klas:F -->
+### T-62-131 · proza · рядок 286
 
 **Книга каже, дослівно:**
 
@@ -1405,8 +1923,8 @@
 
 ---
 
-<!-- fc id:T-62-094 sha:fcef41df src:manual/62-proj-keruvannya.md:256 klas:F -->
-### T-62-094 · proza · рядок 256
+<!-- fc id:T-62-132 sha:fcef41df src:manual/62-proj-keruvannya.md:289 klas:F -->
+### T-62-132 · proza · рядок 289
 
 **Книга каже, дослівно:**
 
@@ -1418,8 +1936,8 @@
 
 ---
 
-<!-- fc id:T-62-095 sha:6a40ae41 src:manual/62-proj-keruvannya.md:259 klas:F -->
-### T-62-095 · proza · рядок 259
+<!-- fc id:T-62-133 sha:6a40ae41 src:manual/62-proj-keruvannya.md:292 klas:F -->
+### T-62-133 · proza · рядок 292
 
 **Книга каже, дослівно:**
 
@@ -1431,8 +1949,8 @@
 
 ---
 
-<!-- fc id:T-62-096 sha:978546bd src:manual/62-proj-keruvannya.md:264 klas:F -->
-### T-62-096 · proza · рядок 264
+<!-- fc id:T-62-134 sha:978546bd src:manual/62-proj-keruvannya.md:297 klas:F -->
+### T-62-134 · proza · рядок 297
 
 **Книга каже, дослівно:**
 
@@ -1444,8 +1962,8 @@
 
 ---
 
-<!-- fc id:T-62-097 sha:f2860393 src:manual/62-proj-keruvannya.md:269 klas:A -->
-### T-62-097 · kod · рядок 269
+<!-- fc id:T-62-135 sha:f2860393 src:manual/62-proj-keruvannya.md:302 klas:K -->
+### T-62-135 · kod · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -1498,8 +2016,8 @@
 
 ---
 
-<!-- fc id:T-62-098 sha:bff39e0f src:manual/62-proj-keruvannya.md:277 klas:F -->
-### T-62-098 · kod-ryadok · рядок 277
+<!-- fc id:T-62-136 sha:bff39e0f src:manual/62-proj-keruvannya.md:310 klas:F -->
+### T-62-136 · kod-ryadok · рядок 310
 
 **Книга каже, дослівно:**
 
@@ -1511,8 +2029,8 @@
 
 ---
 
-<!-- fc id:T-62-099 sha:a3f2a35d src:manual/62-proj-keruvannya.md:278 klas:A -->
-### T-62-099 · kod-ryadok · рядок 278
+<!-- fc id:T-62-137 sha:a3f2a35d src:manual/62-proj-keruvannya.md:311 klas:A -->
+### T-62-137 · kod-ryadok · рядок 311
 
 **Книга каже, дослівно:**
 
@@ -1540,8 +2058,8 @@
 
 ---
 
-<!-- fc id:T-62-100 sha:83924cce src:manual/62-proj-keruvannya.md:280 klas:A -->
-### T-62-100 · kod-ryadok · рядок 280
+<!-- fc id:T-62-138 sha:83924cce src:manual/62-proj-keruvannya.md:313 klas:A -->
+### T-62-138 · kod-ryadok · рядок 313
 
 **Книга каже, дослівно:**
 
@@ -1569,8 +2087,8 @@
 
 ---
 
-<!-- fc id:T-62-101 sha:779ecc0f src:manual/62-proj-keruvannya.md:282 klas:F -->
-### T-62-101 · kod-ryadok · рядок 282
+<!-- fc id:T-62-139 sha:779ecc0f src:manual/62-proj-keruvannya.md:315 klas:F -->
+### T-62-139 · kod-ryadok · рядок 315
 
 **Книга каже, дослівно:**
 
@@ -1582,8 +2100,8 @@
 
 ---
 
-<!-- fc id:T-62-102 sha:a3150d68 src:manual/62-proj-keruvannya.md:283 klas:A -->
-### T-62-102 · kod-ryadok · рядок 283
+<!-- fc id:T-62-140 sha:a3150d68 src:manual/62-proj-keruvannya.md:316 klas:A -->
+### T-62-140 · kod-ryadok · рядок 316
 
 **Книга каже, дослівно:**
 
@@ -1611,8 +2129,8 @@
 
 ---
 
-<!-- fc id:T-62-103 sha:a7ed0c57 src:manual/62-proj-keruvannya.md:286 klas:F -->
-### T-62-103 · kod-ryadok · рядок 286
+<!-- fc id:T-62-141 sha:a7ed0c57 src:manual/62-proj-keruvannya.md:319 klas:F -->
+### T-62-141 · kod-ryadok · рядок 319
 
 **Книга каже, дослівно:**
 
@@ -1624,8 +2142,8 @@
 
 ---
 
-<!-- fc id:T-62-104 sha:a3150d68 src:manual/62-proj-keruvannya.md:287 klas:A -->
-### T-62-104 · kod-ryadok · рядок 287
+<!-- fc id:T-62-142 sha:a3150d68 src:manual/62-proj-keruvannya.md:320 klas:A -->
+### T-62-142 · kod-ryadok · рядок 320
 
 **Книга каже, дослівно:**
 
@@ -1653,8 +2171,8 @@
 
 ---
 
-<!-- fc id:T-62-105 sha:f0c3511e src:manual/62-proj-keruvannya.md:289 klas:F -->
-### T-62-105 · kod-ryadok · рядок 289
+<!-- fc id:T-62-143 sha:f0c3511e src:manual/62-proj-keruvannya.md:322 klas:F -->
+### T-62-143 · kod-ryadok · рядок 322
 
 **Книга каже, дослівно:**
 
@@ -1666,8 +2184,8 @@
 
 ---
 
-<!-- fc id:T-62-106 sha:a3150d68 src:manual/62-proj-keruvannya.md:290 klas:A -->
-### T-62-106 · kod-ryadok · рядок 290
+<!-- fc id:T-62-144 sha:a3150d68 src:manual/62-proj-keruvannya.md:323 klas:A -->
+### T-62-144 · kod-ryadok · рядок 323
 
 **Книга каже, дослівно:**
 
@@ -1695,8 +2213,8 @@
 
 ---
 
-<!-- fc id:T-62-107 sha:19f6806c src:manual/62-proj-keruvannya.md:297 klas:F -->
-### T-62-107 · proza · рядок 297
+<!-- fc id:T-62-145 sha:19f6806c src:manual/62-proj-keruvannya.md:330 klas:F -->
+### T-62-145 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -1708,8 +2226,8 @@
 
 ---
 
-<!-- fc id:T-62-108 sha:9bb680b6 src:manual/62-proj-keruvannya.md:297 klas:F -->
-### T-62-108 · proza · рядок 297
+<!-- fc id:T-62-146 sha:9bb680b6 src:manual/62-proj-keruvannya.md:330 klas:F -->
+### T-62-146 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -1721,8 +2239,8 @@
 
 ---
 
-<!-- fc id:T-62-109 sha:c0cb37d6 src:manual/62-proj-keruvannya.md:301 klas:F -->
-### T-62-109 · proza · рядок 301
+<!-- fc id:T-62-147 sha:c0cb37d6 src:manual/62-proj-keruvannya.md:334 klas:F -->
+### T-62-147 · proza · рядок 334
 
 **Книга каже, дослівно:**
 
@@ -1734,8 +2252,8 @@
 
 ---
 
-<!-- fc id:T-62-110 sha:3fa12ad8 src:manual/62-proj-keruvannya.md:304 klas:F -->
-### T-62-110 · proza · рядок 304
+<!-- fc id:T-62-148 sha:3fa12ad8 src:manual/62-proj-keruvannya.md:337 klas:F -->
+### T-62-148 · proza · рядок 337
 
 **Книга каже, дослівно:**
 
@@ -1747,8 +2265,8 @@
 
 ---
 
-<!-- fc id:T-62-111 sha:92e5f6bc src:manual/62-proj-keruvannya.md:309 klas:F -->
-### T-62-111 · proza · рядок 309
+<!-- fc id:T-62-149 sha:92e5f6bc src:manual/62-proj-keruvannya.md:342 klas:F -->
+### T-62-149 · proza · рядок 342
 
 **Книга каже, дослівно:**
 
@@ -1760,8 +2278,8 @@
 
 ---
 
-<!-- fc id:T-62-112 sha:4a8e99b7 src:manual/62-proj-keruvannya.md:311 klas:F -->
-### T-62-112 · tablycya · рядок 311
+<!-- fc id:T-62-150 sha:4a8e99b7 src:manual/62-proj-keruvannya.md:344 klas:F -->
+### T-62-150 · tablycya · рядок 344
 
 **Книга каже, дослівно:**
 
@@ -1773,8 +2291,8 @@
 
 ---
 
-<!-- fc id:T-62-113 sha:51c885d4 src:manual/62-proj-keruvannya.md:313 klas:F -->
-### T-62-113 · tablycya · рядок 313
+<!-- fc id:T-62-151 sha:51c885d4 src:manual/62-proj-keruvannya.md:346 klas:F -->
+### T-62-151 · tablycya · рядок 346
 
 **Книга каже, дослівно:**
 
@@ -1786,8 +2304,8 @@
 
 ---
 
-<!-- fc id:T-62-114 sha:fdf62190 src:manual/62-proj-keruvannya.md:314 klas:F -->
-### T-62-114 · tablycya · рядок 314
+<!-- fc id:T-62-152 sha:fdf62190 src:manual/62-proj-keruvannya.md:347 klas:F -->
+### T-62-152 · tablycya · рядок 347
 
 **Книга каже, дослівно:**
 
@@ -1799,8 +2317,8 @@
 
 ---
 
-<!-- fc id:T-62-115 sha:825f7619 src:manual/62-proj-keruvannya.md:315 klas:F -->
-### T-62-115 · tablycya · рядок 315
+<!-- fc id:T-62-153 sha:825f7619 src:manual/62-proj-keruvannya.md:348 klas:F -->
+### T-62-153 · tablycya · рядок 348
 
 **Книга каже, дослівно:**
 
@@ -1812,8 +2330,8 @@
 
 ---
 
-<!-- fc id:T-62-116 sha:06e8e104 src:manual/62-proj-keruvannya.md:316 klas:F -->
-### T-62-116 · tablycya · рядок 316
+<!-- fc id:T-62-154 sha:06e8e104 src:manual/62-proj-keruvannya.md:349 klas:F -->
+### T-62-154 · tablycya · рядок 349
 
 **Книга каже, дослівно:**
 
@@ -1825,8 +2343,8 @@
 
 ---
 
-<!-- fc id:T-62-117 sha:3182a8e9 src:manual/62-proj-keruvannya.md:318 klas:F -->
-### T-62-117 · proza · рядок 318
+<!-- fc id:T-62-155 sha:3182a8e9 src:manual/62-proj-keruvannya.md:351 klas:F -->
+### T-62-155 · proza · рядок 351
 
 **Книга каже, дослівно:**
 
@@ -1838,8 +2356,8 @@
 
 ---
 
-<!-- fc id:T-62-118 sha:1f49899c src:manual/62-proj-keruvannya.md:323 klas:F -->
-### T-62-118 · proza · рядок 323
+<!-- fc id:T-62-156 sha:1f49899c src:manual/62-proj-keruvannya.md:356 klas:F -->
+### T-62-156 · proza · рядок 356
 
 **Книга каже, дослівно:**
 
@@ -1851,8 +2369,8 @@
 
 ---
 
-<!-- fc id:T-62-119 sha:2bba4dc1 src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-119 · proza · рядок 325
+<!-- fc id:T-62-157 sha:2bba4dc1 src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-157 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1864,8 +2382,8 @@
 
 ---
 
-<!-- fc id:T-62-120 sha:dc644d42 src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-120 · proza · рядок 325
+<!-- fc id:T-62-158 sha:dc644d42 src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-158 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1877,8 +2395,8 @@
 
 ---
 
-<!-- fc id:T-62-121 sha:eef3109d src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-121 · proza · рядок 325
+<!-- fc id:T-62-159 sha:eef3109d src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-159 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1890,8 +2408,8 @@
 
 ---
 
-<!-- fc id:T-62-122 sha:681a455a src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-122 · proza · рядок 325
+<!-- fc id:T-62-160 sha:681a455a src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-160 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1903,8 +2421,8 @@
 
 ---
 
-<!-- fc id:T-62-123 sha:8e5546e2 src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-123 · proza · рядок 325
+<!-- fc id:T-62-161 sha:8e5546e2 src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-161 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1916,8 +2434,8 @@
 
 ---
 
-<!-- fc id:T-62-124 sha:3ef4ae03 src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-124 · proza · рядок 325
+<!-- fc id:T-62-162 sha:3ef4ae03 src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-162 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1929,8 +2447,8 @@
 
 ---
 
-<!-- fc id:T-62-125 sha:9f0d9ebc src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-125 · proza · рядок 325
+<!-- fc id:T-62-163 sha:9f0d9ebc src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-163 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1942,8 +2460,8 @@
 
 ---
 
-<!-- fc id:T-62-126 sha:3ad292e9 src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-126 · proza · рядок 325
+<!-- fc id:T-62-164 sha:3ad292e9 src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-164 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1955,8 +2473,8 @@
 
 ---
 
-<!-- fc id:T-62-127 sha:55565e34 src:manual/62-proj-keruvannya.md:325 klas:F -->
-### T-62-127 · proza · рядок 325
+<!-- fc id:T-62-165 sha:55565e34 src:manual/62-proj-keruvannya.md:358 klas:F -->
+### T-62-165 · proza · рядок 358
 
 **Книга каже, дослівно:**
 
@@ -1968,8 +2486,8 @@
 
 ---
 
-<!-- fc id:T-62-128 sha:92534189 src:manual/62-proj-keruvannya.md:341 klas:F -->
-### T-62-128 · proza · рядок 341
+<!-- fc id:T-62-166 sha:92534189 src:manual/62-proj-keruvannya.md:374 klas:F -->
+### T-62-166 · proza · рядок 374
 
 **Книга каже, дослівно:**
 
@@ -1981,8 +2499,8 @@
 
 ---
 
-<!-- fc id:T-62-129 sha:e6af39f2 src:manual/62-proj-keruvannya.md:341 klas:F -->
-### T-62-129 · proza · рядок 341
+<!-- fc id:T-62-167 sha:e6af39f2 src:manual/62-proj-keruvannya.md:374 klas:F -->
+### T-62-167 · proza · рядок 374
 
 **Книга каже, дослівно:**
 
@@ -1994,8 +2512,8 @@
 
 ---
 
-<!-- fc id:T-62-130 sha:7a37c9e6 src:manual/62-proj-keruvannya.md:347 klas:F -->
-### T-62-130 · proza · рядок 347
+<!-- fc id:T-62-168 sha:7a37c9e6 src:manual/62-proj-keruvannya.md:380 klas:F -->
+### T-62-168 · proza · рядок 380
 
 **Книга каже, дослівно:**
 

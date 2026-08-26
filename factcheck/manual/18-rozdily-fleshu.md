@@ -459,7 +459,7 @@
 
 ---
 
-<!-- fc id:T-18-031 sha:2af2e0ef src:manual/18-rozdily-fleshu.md:48 klas:F -->
+<!-- fc id:T-18-031 sha:2af2e0ef src:manual/18-rozdily-fleshu.md:48 klas:K -->
 ### T-18-031 · kod · рядок 48
 
 **Книга каже, дослівно:**
@@ -540,7 +540,7 @@
 
 ---
 
-<!-- fc id:T-18-037 sha:8348b7b2 src:manual/18-rozdily-fleshu.md:60 klas:A -->
+<!-- fc id:T-18-037 sha:8348b7b2 src:manual/18-rozdily-fleshu.md:60 klas:K -->
 ### T-18-037 · kod · рядок 60
 
 **Книга каже, дослівно:**
@@ -861,7 +861,7 @@
 
 ---
 
-<!-- fc id:T-18-054 sha:bdb800c3 src:manual/18-rozdily-fleshu.md:105 klas:A -->
+<!-- fc id:T-18-054 sha:bdb800c3 src:manual/18-rozdily-fleshu.md:105 klas:K -->
 ### T-18-054 · kod · рядок 105
 
 **Книга каже, дослівно:**
@@ -1307,7 +1307,7 @@
 
 ---
 
-<!-- fc id:T-18-084 sha:8278d069 src:manual/18-rozdily-fleshu.md:147 klas:A -->
+<!-- fc id:T-18-084 sha:8278d069 src:manual/18-rozdily-fleshu.md:147 klas:K -->
 ### T-18-084 · kod · рядок 147
 
 **Книга каже, дослівно:**
@@ -1522,7 +1522,7 @@
 
 ---
 
-<!-- fc id:T-18-097 sha:7ab66916 src:manual/18-rozdily-fleshu.md:177 klas:F -->
+<!-- fc id:T-18-097 sha:7ab66916 src:manual/18-rozdily-fleshu.md:177 klas:K -->
 ### T-18-097 · kod · рядок 177
 
 **Книга каже, дослівно:**

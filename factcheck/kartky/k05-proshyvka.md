@@ -240,7 +240,7 @@
 
 ---
 
-<!-- fc id:T-K05-019 sha:911de04d src:kartky/k05-proshyvka.md:24 klas:A -->
+<!-- fc id:T-K05-019 sha:911de04d src:kartky/k05-proshyvka.md:24 klas:K -->
 ### T-K05-019 · kod · рядок 24
 
 **Книга каже, дослівно:**
@@ -417,7 +417,7 @@
 
 ---
 
-<!-- fc id:T-K05-028 sha:1df68ffb src:kartky/k05-proshyvka.md:42 klas:A -->
+<!-- fc id:T-K05-028 sha:1df68ffb src:kartky/k05-proshyvka.md:42 klas:K -->
 ### T-K05-028 · kod · рядок 42
 
 **Книга каже, дослівно:**
@@ -531,7 +531,7 @@
 
 ---
 
-<!-- fc id:T-K05-032 sha:09ccdb8d src:kartky/k05-proshyvka.md:51 klas:A -->
+<!-- fc id:T-K05-032 sha:09ccdb8d src:kartky/k05-proshyvka.md:51 klas:K -->
 ### T-K05-032 · kod · рядок 51
 
 **Книга каже, дослівно:**

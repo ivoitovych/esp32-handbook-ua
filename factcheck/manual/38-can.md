@@ -530,7 +530,7 @@
 
 ---
 
-<!-- fc id:T-38-036 sha:b9715954 src:manual/38-can.md:83 klas:A -->
+<!-- fc id:T-38-036 sha:b9715954 src:manual/38-can.md:83 klas:K -->
 ### T-38-036 · kod · рядок 83
 
 **Книга каже, дослівно:**
@@ -953,7 +953,7 @@
 
 ---
 
-<!-- fc id:T-38-061 sha:094c6d05 src:manual/38-can.md:147 klas:A -->
+<!-- fc id:T-38-061 sha:094c6d05 src:manual/38-can.md:147 klas:K -->
 ### T-38-061 · kod · рядок 147
 
 **Книга каже, дослівно:**

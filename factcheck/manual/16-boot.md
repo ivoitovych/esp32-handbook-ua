@@ -749,7 +749,7 @@
 
 ---
 
-<!-- fc id:T-16-051 sha:17b0b9ca src:manual/16-boot.md:114 klas:A -->
+<!-- fc id:T-16-051 sha:17b0b9ca src:manual/16-boot.md:114 klas:K -->
 ### T-16-051 · kod · рядок 114
 
 **Книга каже, дослівно:**
@@ -899,7 +899,7 @@
 
 ---
 
-<!-- fc id:T-16-058 sha:e5f9555a src:manual/16-boot.md:137 klas:A -->
+<!-- fc id:T-16-058 sha:e5f9555a src:manual/16-boot.md:137 klas:K -->
 ### T-16-058 · kod · рядок 137
 
 **Книга каже, дослівно:**
@@ -987,7 +987,7 @@
 
 ---
 
-<!-- fc id:T-16-061 sha:dfc19c84 src:manual/16-boot.md:146 klas:A -->
+<!-- fc id:T-16-061 sha:dfc19c84 src:manual/16-boot.md:146 klas:K -->
 ### T-16-061 · kod · рядок 146
 
 **Книга каже, дослівно:**
@@ -1081,7 +1081,7 @@
 
 ---
 
-<!-- fc id:T-16-066 sha:df92f5bb src:manual/16-boot.md:156 klas:A -->
+<!-- fc id:T-16-066 sha:df92f5bb src:manual/16-boot.md:156 klas:K -->
 ### T-16-066 · kod · рядок 156
 
 **Книга каже, дослівно:**

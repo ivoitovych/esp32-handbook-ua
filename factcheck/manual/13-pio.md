@@ -266,7 +266,7 @@
 
 ---
 
-<!-- fc id:T-13-021 sha:9cc8c88c src:manual/13-pio.md:56 klas:A -->
+<!-- fc id:T-13-021 sha:9cc8c88c src:manual/13-pio.md:56 klas:K -->
 ### T-13-021 · kod · рядок 56
 
 **Книга каже, дослівно:**
@@ -505,7 +505,7 @@
 
 ---
 
-<!-- fc id:T-13-033 sha:827612bd src:manual/13-pio.md:101 klas:A -->
+<!-- fc id:T-13-033 sha:827612bd src:manual/13-pio.md:101 klas:K -->
 ### T-13-033 · kod · рядок 101
 
 **Книга каже, дослівно:**
@@ -664,7 +664,7 @@
 
 ---
 
-<!-- fc id:T-13-044 sha:527078ef src:manual/13-pio.md:125 klas:A -->
+<!-- fc id:T-13-044 sha:527078ef src:manual/13-pio.md:125 klas:K -->
 ### T-13-044 · kod · рядок 125
 
 **Книга каже, дослівно:**

@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K07-001 sha:b2a29f58 src:kartky/k07-panika.md:3 klas:A -->
+<!-- fc id:T-K07-001 sha:b2a29f58 src:kartky/k07-panika.md:3 klas:K -->
 ### T-K07-001 · kod · рядок 3
 
 **Книга каже, дослівно:**
@@ -709,7 +709,7 @@
 
 ---
 
-<!-- fc id:T-K07-025 sha:4490d7ba src:kartky/k07-panika.md:40 klas:F -->
+<!-- fc id:T-K07-025 sha:4490d7ba src:kartky/k07-panika.md:40 klas:K -->
 ### T-K07-025 · kod · рядок 40
 
 **Книга каже, дослівно:**

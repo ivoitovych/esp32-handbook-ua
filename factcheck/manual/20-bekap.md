@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-20-029 sha:d28a1a55 src:manual/20-bekap.md:70 klas:A -->
+<!-- fc id:T-20-029 sha:d28a1a55 src:manual/20-bekap.md:70 klas:K -->
 ### T-20-029 · kod · рядок 70
 
 **Книга каже, дослівно:**
@@ -485,7 +485,7 @@
 
 ---
 
-<!-- fc id:T-20-035 sha:1d150225 src:manual/20-bekap.md:80 klas:A -->
+<!-- fc id:T-20-035 sha:1d150225 src:manual/20-bekap.md:80 klas:K -->
 ### T-20-035 · kod · рядок 80
 
 **Книга каже, дослівно:**
@@ -1057,7 +1057,7 @@
 
 ---
 
-<!-- fc id:T-20-074 sha:5a1c829e src:manual/20-bekap.md:159 klas:A -->
+<!-- fc id:T-20-074 sha:5a1c829e src:manual/20-bekap.md:159 klas:K -->
 ### T-20-074 · kod · рядок 159
 
 **Книга каже, дослівно:**

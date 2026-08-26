@@ -93,7 +93,7 @@
 
 ---
 
-<!-- fc id:T-C-005 sha:b9d7b8df src:dodatky/c-komandy.md:12 klas:A -->
+<!-- fc id:T-C-005 sha:b9d7b8df src:dodatky/c-komandy.md:12 klas:K -->
 ### T-C-005 · kod · рядок 12
 
 **Книга каже, дослівно:**
@@ -229,7 +229,7 @@
 
 ---
 
-<!-- fc id:T-C-010 sha:881f86c6 src:dodatky/c-komandy.md:21 klas:A -->
+<!-- fc id:T-C-010 sha:881f86c6 src:dodatky/c-komandy.md:21 klas:K -->
 ### T-C-010 · kod · рядок 21
 
 **Книга каже, дослівно:**
@@ -359,7 +359,7 @@
 
 ---
 
-<!-- fc id:T-C-017 sha:fcd6b026 src:dodatky/c-komandy.md:33 klas:A -->
+<!-- fc id:T-C-017 sha:fcd6b026 src:dodatky/c-komandy.md:33 klas:K -->
 ### T-C-017 · kod · рядок 33
 
 **Книга каже, дослівно:**
@@ -499,7 +499,7 @@
 
 ---
 
-<!-- fc id:T-C-021 sha:00142e5e src:dodatky/c-komandy.md:43 klas:A -->
+<!-- fc id:T-C-021 sha:00142e5e src:dodatky/c-komandy.md:43 klas:K -->
 ### T-C-021 · kod · рядок 43
 
 **Книга каже, дослівно:**
@@ -585,7 +585,7 @@
 
 ---
 
-<!-- fc id:T-C-024 sha:56d01430 src:dodatky/c-komandy.md:50 klas:A -->
+<!-- fc id:T-C-024 sha:56d01430 src:dodatky/c-komandy.md:50 klas:K -->
 ### T-C-024 · kod · рядок 50
 
 **Книга каже, дослівно:**
@@ -985,7 +985,7 @@
 
 ---
 
-<!-- fc id:T-C-043 sha:d25d8e19 src:dodatky/c-komandy.md:89 klas:F -->
+<!-- fc id:T-C-043 sha:d25d8e19 src:dodatky/c-komandy.md:89 klas:K -->
 ### T-C-043 · kod · рядок 89
 
 **Книга каже, дослівно:**
@@ -1013,7 +1013,7 @@
 
 ---
 
-<!-- fc id:T-C-045 sha:d06f73ae src:dodatky/c-komandy.md:97 klas:A -->
+<!-- fc id:T-C-045 sha:d06f73ae src:dodatky/c-komandy.md:97 klas:K -->
 ### T-C-045 · kod · рядок 97
 
 **Книга каже, дослівно:**
@@ -1127,7 +1127,7 @@
 
 ---
 
-<!-- fc id:T-C-050 sha:4f12da8e src:dodatky/c-komandy.md:106 klas:A -->
+<!-- fc id:T-C-050 sha:4f12da8e src:dodatky/c-komandy.md:106 klas:K -->
 ### T-C-050 · kod · рядок 106
 
 **Книга каже, дослівно:**
@@ -1361,7 +1361,7 @@
 
 ---
 
-<!-- fc id:T-C-060 sha:e06292bb src:dodatky/c-komandy.md:123 klas:A -->
+<!-- fc id:T-C-060 sha:e06292bb src:dodatky/c-komandy.md:123 klas:K -->
 ### T-C-060 · kod · рядок 123
 
 **Книга каже, дослівно:**
@@ -1461,7 +1461,7 @@
 
 ---
 
-<!-- fc id:T-C-064 sha:d3c38986 src:dodatky/c-komandy.md:131 klas:A -->
+<!-- fc id:T-C-064 sha:d3c38986 src:dodatky/c-komandy.md:131 klas:K -->
 ### T-C-064 · kod · рядок 131
 
 **Книга каже, дослівно:**
@@ -1597,7 +1597,7 @@
 
 ---
 
-<!-- fc id:T-C-069 sha:f027758e src:dodatky/c-komandy.md:140 klas:A -->
+<!-- fc id:T-C-069 sha:f027758e src:dodatky/c-komandy.md:140 klas:K -->
 ### T-C-069 · kod · рядок 140
 
 **Книга каже, дослівно:**
@@ -1705,7 +1705,7 @@
 
 ---
 
-<!-- fc id:T-C-072 sha:14ee9040 src:dodatky/c-komandy.md:147 klas:F -->
+<!-- fc id:T-C-072 sha:14ee9040 src:dodatky/c-komandy.md:147 klas:K -->
 ### T-C-072 · kod · рядок 147
 
 **Книга каже, дослівно:**
@@ -1878,7 +1878,7 @@
 
 ---
 
-<!-- fc id:T-C-085 sha:03ecbe4f src:dodatky/c-komandy.md:166 klas:F -->
+<!-- fc id:T-C-085 sha:03ecbe4f src:dodatky/c-komandy.md:166 klas:K -->
 ### T-C-085 · kod · рядок 166
 
 **Книга каже, дослівно:**
@@ -1906,7 +1906,7 @@
 
 ---
 
-<!-- fc id:T-C-087 sha:5bc221cd src:dodatky/c-komandy.md:172 klas:F -->
+<!-- fc id:T-C-087 sha:5bc221cd src:dodatky/c-komandy.md:172 klas:K -->
 ### T-C-087 · kod · рядок 172
 
 **Книга каже, дослівно:**
@@ -2016,7 +2016,7 @@
 
 ---
 
-<!-- fc id:T-C-095 sha:f68e2f06 src:dodatky/c-komandy.md:184 klas:F -->
+<!-- fc id:T-C-095 sha:f68e2f06 src:dodatky/c-komandy.md:184 klas:K -->
 ### T-C-095 · kod · рядок 184
 
 **Книга каже, дослівно:**
@@ -2405,7 +2405,7 @@
 
 ---
 
-<!-- fc id:T-C-120 sha:20c177db src:dodatky/c-komandy.md:210 klas:F -->
+<!-- fc id:T-C-120 sha:20c177db src:dodatky/c-komandy.md:210 klas:K -->
 ### T-C-120 · kod · рядок 210
 
 **Книга каже, дослівно:**
@@ -2447,7 +2447,7 @@
 
 ---
 
-<!-- fc id:T-C-123 sha:9fd4791b src:dodatky/c-komandy.md:217 klas:F -->
+<!-- fc id:T-C-123 sha:9fd4791b src:dodatky/c-komandy.md:217 klas:K -->
 ### T-C-123 · kod · рядок 217
 
 **Книга каже, дослівно:**
@@ -2503,7 +2503,7 @@
 
 ---
 
-<!-- fc id:T-C-127 sha:51bbff59 src:dodatky/c-komandy.md:227 klas:A -->
+<!-- fc id:T-C-127 sha:51bbff59 src:dodatky/c-komandy.md:227 klas:K -->
 ### T-C-127 · kod · рядок 227
 
 **Книга каже, дослівно:**

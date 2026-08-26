@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-12-004 sha:07066c31 src:manual/12-arduino.md:14 klas:F -->
+<!-- fc id:T-12-004 sha:07066c31 src:manual/12-arduino.md:14 klas:K -->
 ### T-12-004 · kod · рядок 14
 
 **Книга каже, дослівно:**

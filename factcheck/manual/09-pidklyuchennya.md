@@ -811,7 +811,7 @@
 
 ---
 
-<!-- fc id:T-09-061 sha:b4bb361c src:manual/09-pidklyuchennya.md:112 klas:F -->
+<!-- fc id:T-09-061 sha:b4bb361c src:manual/09-pidklyuchennya.md:112 klas:K -->
 ### T-09-061 · kod · рядок 112
 
 **Книга каже, дослівно:**
@@ -878,7 +878,7 @@
 
 ---
 
-<!-- fc id:T-09-066 sha:08d72203 src:manual/09-pidklyuchennya.md:122 klas:F -->
+<!-- fc id:T-09-066 sha:08d72203 src:manual/09-pidklyuchennya.md:122 klas:K -->
 ### T-09-066 · kod · рядок 122
 
 **Книга каже, дослівно:**
@@ -945,7 +945,7 @@
 
 ---
 
-<!-- fc id:T-09-071 sha:2c4e2e72 src:manual/09-pidklyuchennya.md:135 klas:F -->
+<!-- fc id:T-09-071 sha:2c4e2e72 src:manual/09-pidklyuchennya.md:135 klas:K -->
 ### T-09-071 · kod · рядок 135
 
 **Книга каже, дослівно:**
@@ -986,7 +986,7 @@
 
 ---
 
-<!-- fc id:T-09-074 sha:9076b1b4 src:manual/09-pidklyuchennya.md:145 klas:F -->
+<!-- fc id:T-09-074 sha:9076b1b4 src:manual/09-pidklyuchennya.md:145 klas:K -->
 ### T-09-074 · kod · рядок 145
 
 **Книга каже, дослівно:**
@@ -1040,7 +1040,7 @@
 
 ---
 
-<!-- fc id:T-09-078 sha:c52c489e src:manual/09-pidklyuchennya.md:156 klas:F -->
+<!-- fc id:T-09-078 sha:c52c489e src:manual/09-pidklyuchennya.md:156 klas:K -->
 ### T-09-078 · kod · рядок 156
 
 **Книга каже, дослівно:**
@@ -1302,7 +1302,7 @@
 
 ---
 
-<!-- fc id:T-09-098 sha:5deba207 src:manual/09-pidklyuchennya.md:202 klas:F -->
+<!-- fc id:T-09-098 sha:5deba207 src:manual/09-pidklyuchennya.md:202 klas:K -->
 ### T-09-098 · kod · рядок 202
 
 **Книга каже, дослівно:**

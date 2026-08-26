@@ -580,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-19-041 sha:1e2699ba src:manual/19-ota.md:79 klas:A -->
+<!-- fc id:T-19-041 sha:1e2699ba src:manual/19-ota.md:79 klas:K -->
 ### T-19-041 · kod · рядок 79
 
 **Книга каже, дослівно:**
@@ -780,7 +780,7 @@
 
 ---
 
-<!-- fc id:T-19-053 sha:d1211944 src:manual/19-ota.md:109 klas:A -->
+<!-- fc id:T-19-053 sha:d1211944 src:manual/19-ota.md:109 klas:K -->
 ### T-19-053 · kod · рядок 109
 
 **Книга каже, дослівно:**

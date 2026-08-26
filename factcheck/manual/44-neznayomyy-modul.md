@@ -915,7 +915,7 @@
 
 ---
 
-<!-- fc id:T-44-070 sha:0db4e411 src:manual/44-neznayomyy-modul.md:141 klas:A -->
+<!-- fc id:T-44-070 sha:0db4e411 src:manual/44-neznayomyy-modul.md:141 klas:K -->
 ### T-44-070 · kod · рядок 141
 
 **Книга каже, дослівно:**

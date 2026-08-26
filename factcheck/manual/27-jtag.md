@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-27-011 sha:14c6572e src:manual/27-jtag.md:24 klas:F -->
+<!-- fc id:T-27-011 sha:14c6572e src:manual/27-jtag.md:24 klas:K -->
 ### T-27-011 · kod · рядок 24
 
 **Книга каже, дослівно:**
@@ -186,7 +186,7 @@
 
 ---
 
-<!-- fc id:T-27-014 sha:ee7e79eb src:manual/27-jtag.md:30 klas:F -->
+<!-- fc id:T-27-014 sha:ee7e79eb src:manual/27-jtag.md:30 klas:K -->
 ### T-27-014 · kod · рядок 30
 
 **Книга каже, дослівно:**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-27-017 sha:91f73a92 src:manual/27-jtag.md:36 klas:F -->
+<!-- fc id:T-27-017 sha:91f73a92 src:manual/27-jtag.md:36 klas:K -->
 ### T-27-017 · kod · рядок 36
 
 **Книга каже, дослівно:**

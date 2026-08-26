@@ -369,7 +369,7 @@
 
 ---
 
-<!-- fc id:T-UA--028 sha:fb533b14 src:inserts/ua-market-2026-08.md:65 klas:A -->
+<!-- fc id:T-UA--028 sha:fb533b14 src:inserts/ua-market-2026-08.md:65 klas:K -->
 ### T-UA--028 · kod · рядок 65
 
 **Книга каже, дослівно:**

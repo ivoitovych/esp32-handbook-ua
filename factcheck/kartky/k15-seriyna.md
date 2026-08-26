@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-K15-003 sha:f21b91a9 src:kartky/k15-seriyna.md:19 klas:A -->
+<!-- fc id:T-K15-003 sha:f21b91a9 src:kartky/k15-seriyna.md:19 klas:K -->
 ### T-K15-003 · kod · рядок 19
 
 **Книга каже, дослівно:**
@@ -557,7 +557,7 @@
 
 ---
 
-<!-- fc id:T-K15-038 sha:51bbff59 src:kartky/k15-seriyna.md:62 klas:A -->
+<!-- fc id:T-K15-038 sha:51bbff59 src:kartky/k15-seriyna.md:62 klas:K -->
 ### T-K15-038 · kod · рядок 62
 
 **Книга каже, дослівно:**

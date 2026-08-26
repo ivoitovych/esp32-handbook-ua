@@ -591,7 +591,7 @@
 
 ---
 
-<!-- fc id:T-23-046 sha:0272d30f src:manual/23-triazh.md:86 klas:A -->
+<!-- fc id:T-23-046 sha:0272d30f src:manual/23-triazh.md:86 klas:K -->
 ### T-23-046 · kod · рядок 86
 
 **Книга каже, дослівно:**

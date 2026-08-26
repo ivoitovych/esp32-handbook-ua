@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-K01-029 sha:0272d30f src:kartky/k01-triazh.md:46 klas:A -->
+<!-- fc id:T-K01-029 sha:0272d30f src:kartky/k01-triazh.md:46 klas:K -->
 ### T-K01-029 · kod · рядок 46
 
 **Книга каже, дослівно:**

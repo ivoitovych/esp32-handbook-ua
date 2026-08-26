@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-33-003 sha:6723d0bf src:manual/33-peryferiya-kod.md:10 klas:F -->
+<!-- fc id:T-33-003 sha:6723d0bf src:manual/33-peryferiya-kod.md:10 klas:K -->
 ### T-33-003 · kod · рядок 10
 
 **Книга каже, дослівно:**
@@ -172,7 +172,7 @@
 
 ---
 
-<!-- fc id:T-33-013 sha:fbcbf58d src:manual/33-peryferiya-kod.md:27 klas:F -->
+<!-- fc id:T-33-013 sha:fbcbf58d src:manual/33-peryferiya-kod.md:27 klas:K -->
 ### T-33-013 · kod · рядок 27
 
 **Книга каже, дослівно:**
@@ -270,7 +270,7 @@
 
 ---
 
-<!-- fc id:T-33-020 sha:e35f117f src:manual/33-peryferiya-kod.md:43 klas:A -->
+<!-- fc id:T-33-020 sha:e35f117f src:manual/33-peryferiya-kod.md:43 klas:K -->
 ### T-33-020 · kod · рядок 43
 
 **Книга каже, дослівно:**
@@ -376,7 +376,7 @@
 
 ---
 
-<!-- fc id:T-33-026 sha:7196915f src:manual/33-peryferiya-kod.md:57 klas:A -->
+<!-- fc id:T-33-026 sha:7196915f src:manual/33-peryferiya-kod.md:57 klas:K -->
 ### T-33-026 · kod · рядок 57
 
 **Книга каже, дослівно:**
@@ -463,7 +463,7 @@
 
 ---
 
-<!-- fc id:T-33-030 sha:3915b0a4 src:manual/33-peryferiya-kod.md:73 klas:A -->
+<!-- fc id:T-33-030 sha:3915b0a4 src:manual/33-peryferiya-kod.md:73 klas:K -->
 ### T-33-030 · kod · рядок 73
 
 **Книга каже, дослівно:**
@@ -596,7 +596,7 @@
 
 ---
 
-<!-- fc id:T-33-036 sha:abc3c580 src:manual/33-peryferiya-kod.md:94 klas:A -->
+<!-- fc id:T-33-036 sha:abc3c580 src:manual/33-peryferiya-kod.md:94 klas:K -->
 ### T-33-036 · kod · рядок 94
 
 **Книга каже, дослівно:**
@@ -1105,7 +1105,7 @@
 
 ---
 
-<!-- fc id:T-33-067 sha:aeef17bd src:manual/33-peryferiya-kod.md:166 klas:A -->
+<!-- fc id:T-33-067 sha:aeef17bd src:manual/33-peryferiya-kod.md:166 klas:K -->
 ### T-33-067 · kod · рядок 166
 
 **Книга каже, дослівно:**
@@ -1354,7 +1354,7 @@
 
 ---
 
-<!-- fc id:T-33-080 sha:81a8f41e src:manual/33-peryferiya-kod.md:198 klas:A -->
+<!-- fc id:T-33-080 sha:81a8f41e src:manual/33-peryferiya-kod.md:198 klas:K -->
 ### T-33-080 · kod · рядок 198
 
 **Книга каже, дослівно:**
@@ -1636,7 +1636,7 @@
 
 ---
 
-<!-- fc id:T-33-094 sha:0bfeb273 src:manual/33-peryferiya-kod.md:227 klas:A -->
+<!-- fc id:T-33-094 sha:0bfeb273 src:manual/33-peryferiya-kod.md:227 klas:K -->
 ### T-33-094 · kod · рядок 227
 
 **Книга каже, дослівно:**

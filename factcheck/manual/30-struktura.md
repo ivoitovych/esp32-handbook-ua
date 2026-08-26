@@ -165,7 +165,7 @@
 
 ---
 
-<!-- fc id:T-30-012 sha:c6be7a60 src:manual/30-struktura.md:33 klas:A -->
+<!-- fc id:T-30-012 sha:c6be7a60 src:manual/30-struktura.md:33 klas:K -->
 ### T-30-012 · kod · рядок 33
 
 **Книга каже, дослівно:**
@@ -369,7 +369,7 @@
 
 ---
 
-<!-- fc id:T-30-024 sha:f15330b2 src:manual/30-struktura.md:60 klas:A -->
+<!-- fc id:T-30-024 sha:f15330b2 src:manual/30-struktura.md:60 klas:K -->
 ### T-30-024 · kod · рядок 60
 
 **Книга каже, дослівно:**
@@ -539,7 +539,7 @@
 
 ---
 
-<!-- fc id:T-30-033 sha:eaa943f5 src:manual/30-struktura.md:90 klas:A -->
+<!-- fc id:T-30-033 sha:eaa943f5 src:manual/30-struktura.md:90 klas:K -->
 ### T-30-033 · kod · рядок 90
 
 **Книга каже, дослівно:**
@@ -776,7 +776,7 @@
 
 ---
 
-<!-- fc id:T-30-049 sha:9f282c16 src:manual/30-struktura.md:133 klas:A -->
+<!-- fc id:T-30-049 sha:9f282c16 src:manual/30-struktura.md:133 klas:K -->
 ### T-30-049 · kod · рядок 133
 
 **Книга каже, дослівно:**
@@ -847,7 +847,7 @@
 
 ---
 
-<!-- fc id:T-30-053 sha:7d8168b3 src:manual/30-struktura.md:145 klas:A -->
+<!-- fc id:T-30-053 sha:7d8168b3 src:manual/30-struktura.md:145 klas:K -->
 ### T-30-053 · kod · рядок 145
 
 **Книга каже, дослівно:**
@@ -1007,7 +1007,7 @@
 
 ---
 
-<!-- fc id:T-30-059 sha:54537a63 src:manual/30-struktura.md:158 klas:F -->
+<!-- fc id:T-30-059 sha:54537a63 src:manual/30-struktura.md:158 klas:K -->
 ### T-30-059 · kod · рядок 158
 
 **Книга каже, дослівно:**
@@ -1078,7 +1078,7 @@
 
 ---
 
-<!-- fc id:T-30-064 sha:e4e95770 src:manual/30-struktura.md:175 klas:A -->
+<!-- fc id:T-30-064 sha:e4e95770 src:manual/30-struktura.md:175 klas:K -->
 ### T-30-064 · kod · рядок 175
 
 **Книга каже, дослівно:**
@@ -1204,7 +1204,7 @@
 
 ---
 
-<!-- fc id:T-30-072 sha:5503aeaf src:manual/30-struktura.md:195 klas:F -->
+<!-- fc id:T-30-072 sha:5503aeaf src:manual/30-struktura.md:195 klas:K -->
 ### T-30-072 · kod · рядок 195
 
 **Книга каже, дослівно:**
@@ -1286,7 +1286,7 @@
 
 ---
 
-<!-- fc id:T-30-078 sha:66cbb212 src:manual/30-struktura.md:212 klas:A -->
+<!-- fc id:T-30-078 sha:66cbb212 src:manual/30-struktura.md:212 klas:K -->
 ### T-30-078 · kod · рядок 212
 
 **Книга каже, дослівно:**
@@ -1407,7 +1407,7 @@
 
 ---
 
-<!-- fc id:T-30-082 sha:23020636 src:manual/30-struktura.md:223 klas:F -->
+<!-- fc id:T-30-082 sha:23020636 src:manual/30-struktura.md:223 klas:K -->
 ### T-30-082 · kod · рядок 223
 
 **Книга каже, дослівно:**

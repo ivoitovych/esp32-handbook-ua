@@ -817,7 +817,7 @@
 
 ---
 
-<!-- fc id:T-45-059 sha:4626ef98 src:manual/45-sensory.md:135 klas:F -->
+<!-- fc id:T-45-059 sha:4626ef98 src:manual/45-sensory.md:135 klas:K -->
 ### T-45-059 · kod · рядок 135
 
 **Книга каже, дослівно:**

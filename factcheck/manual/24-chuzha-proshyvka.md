@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-24-009 sha:20c177db src:manual/24-chuzha-proshyvka.md:19 klas:F -->
+<!-- fc id:T-24-009 sha:20c177db src:manual/24-chuzha-proshyvka.md:19 klas:K -->
 ### T-24-009 · kod · рядок 19
 
 **Книга каже, дослівно:**
@@ -243,7 +243,7 @@
 
 ---
 
-<!-- fc id:T-24-019 sha:9cbe5f08 src:manual/24-chuzha-proshyvka.md:41 klas:F -->
+<!-- fc id:T-24-019 sha:9cbe5f08 src:manual/24-chuzha-proshyvka.md:41 klas:K -->
 ### T-24-019 · kod · рядок 41
 
 **Книга каже, дослівно:**
@@ -483,7 +483,7 @@
 
 ---
 
-<!-- fc id:T-24-036 sha:0615bf62 src:manual/24-chuzha-proshyvka.md:80 klas:F -->
+<!-- fc id:T-24-036 sha:0615bf62 src:manual/24-chuzha-proshyvka.md:80 klas:K -->
 ### T-24-036 · kod · рядок 80
 
 **Книга каже, дослівно:**

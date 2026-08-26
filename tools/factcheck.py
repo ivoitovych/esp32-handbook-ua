@@ -42,12 +42,14 @@ KLASY = {
     "E": "поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу",
     "F": "не звірено",
     "G": "спростовано або потребує правки",
+    "K": "контекст — блок коду цілком; твердження в його рядках",
 }
-ZNAK = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "🔴", "G": "⚠"}
+ZNAK = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "🔴",
+        "G": "⚠", "K": "▫"}
 
 RE_ZAPYS = re.compile(
     r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
-    r"\s+src:(?P<src>[^\s]+)\s+klas:(?P<klas>[A-G])\s*-->"
+    r"\s+src:(?P<src>[^\s]+)\s+klas:(?P<klas>[A-GK])\s*-->"
 )
 
 
@@ -68,6 +70,18 @@ RE_KOD_TVERDZHENNYA = re.compile(
     r"screen|dd|python|strings|xtensa-|riscv32-|sudo|ls|dmesg|lsof|git|make)\b"
     r")"
 )
+
+
+# Рядок ASCII-схеми: два виводи, з'єднані лінією. Кожен такий рядок —
+# **окреме** твердження, і майже завжди з іншим джерелом, ніж сусідній:
+# «3V3 ─── VCC» перевіряється за datasheet датчика, «SDA ─── GPIO21» —
+# за документацією плати, «└─[4.7к]─ 3V3» — за специфікацією шини.
+#
+# Доти схема реєструвалася одним записом, і доказ на будь-яку її частину
+# позначав звіреною всю. Зовнішня рецензія 2026-08-26 показала, чим це
+# кінчається: повна схема проєкту 59 стояла з доказом на datasheet
+# BME280, який ніколи не міг би підтвердити наявність `GPIO22` у S3.
+RE_SCHEMA_ZVYAZOK = re.compile(r"[─━]{2,}|[│┬└┌┐┘├┤]|-{3,}[>\s]|→")
 
 
 def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
@@ -153,7 +167,9 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
             tilo = ryadky[start + 1:i]
             odynyci.append(("kod", "\n".join(ryadky[start:i + 1]), start + 1))
             for j, kr in enumerate(tilo):
-                if RE_KOD_TVERDZHENNYA.match(kr) and len(kr.strip()) > 6:
+                if RE_SCHEMA_ZVYAZOK.search(kr):
+                    odynyci.append(("schema-zvyazok", kr.strip(), start + 2 + j))
+                elif RE_KOD_TVERDZHENNYA.match(kr) and len(kr.strip()) > 6:
                     odynyci.append(("kod-ryadok", kr.strip(), start + 2 + j))
             i += 1
             continue
@@ -312,7 +328,14 @@ def sketch() -> int:
                     vzhyti.add(h)
                     z_dokazom += 1
                     pokryttya.setdefault(z.get("nazva", "?"), []).append(ident)
-                klas = z.get("klas", "F") if z else "F"
+                # Блок коду цілком — **контекст**, а не твердження. Він
+                # складається з рядків, у кожного з яких своє джерело, і
+                # доказ на один рядок не звіряє решту. Тому клас блоку не
+                # успадковується від доказу, а фіксований: `K`.
+                if vyd == "kod":
+                    klas = "K"
+                else:
+                    klas = z.get("klas", "F") if z else "F"
                 cyt = "\n".join("> " + x for x in txt.split("\n"))
                 chastyny.append(
                     f"<!-- fc id:{ident} sha:{h} "
@@ -372,8 +395,13 @@ def zbir_usikh() -> list[dict]:
 def status() -> int:
     zapysy = zbir_usikh()
     c = Counter(z["klas"] for z in zapysy)
-    vsjogo = len(zapysy)
-    print(f"\nодиниць твердження: {vsjogo}\n")
+    kontekst = c.get("K", 0)
+    # Блоки коду — контекст, а не твердження: відсотки рахуються від
+    # тверджень, інакше знаменник роздувається тим, що ніхто й не збирався
+    # звіряти.
+    vsjogo = len(zapysy) - kontekst
+    print(f"\nодиниць твердження: {vsjogo}"
+          f"  (+ {kontekst} блоків коду як контекст)\n")
     zvireno = sum(c[k] for k in "ABD")
     for k in "ABCDEFG":
         n = c.get(k, 0)

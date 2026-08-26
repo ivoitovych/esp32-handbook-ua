@@ -430,7 +430,7 @@
 
 ---
 
-<!-- fc id:T-06-033 sha:7ab00834 src:manual/06-zhyvlennya.md:72 klas:A -->
+<!-- fc id:T-06-033 sha:7ab00834 src:manual/06-zhyvlennya.md:72 klas:K -->
 ### T-06-033 · kod · рядок 72
 
 **Книга каже, дослівно:**
@@ -504,7 +504,7 @@
 
 ---
 
-<!-- fc id:T-06-035 sha:731a1ba2 src:manual/06-zhyvlennya.md:78 klas:F -->
+<!-- fc id:T-06-035 sha:731a1ba2 src:manual/06-zhyvlennya.md:78 klas:K -->
 ### T-06-035 · kod · рядок 78
 
 **Книга каже, дослівно:**
@@ -977,7 +977,7 @@
 
 ---
 
-<!-- fc id:T-06-070 sha:85b3ed4a src:manual/06-zhyvlennya.md:141 klas:A -->
+<!-- fc id:T-06-070 sha:85b3ed4a src:manual/06-zhyvlennya.md:141 klas:K -->
 ### T-06-070 · kod · рядок 141
 
 **Книга каже, дослівно:**
@@ -1047,7 +1047,7 @@
 
 ---
 
-<!-- fc id:T-06-074 sha:076077f4 src:manual/06-zhyvlennya.md:151 klas:A -->
+<!-- fc id:T-06-074 sha:076077f4 src:manual/06-zhyvlennya.md:151 klas:K -->
 ### T-06-074 · kod · рядок 151
 
 **Книга каже, дослівно:**

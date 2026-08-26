@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-34-009 sha:eaeb4494 src:manual/34-uart.md:22 klas:A -->
+<!-- fc id:T-34-009 sha:eaeb4494 src:manual/34-uart.md:22 klas:K -->
 ### T-34-009 · kod · рядок 22
 
 **Книга каже, дослівно:**
@@ -288,7 +288,7 @@
 
 ---
 
-<!-- fc id:T-34-018 sha:4133379a src:manual/34-uart.md:39 klas:A -->
+<!-- fc id:T-34-018 sha:4133379a src:manual/34-uart.md:39 klas:K -->
 ### T-34-018 · kod · рядок 39
 
 **Книга каже, дослівно:**
@@ -623,7 +623,7 @@
 
 ---
 
-<!-- fc id:T-34-037 sha:4659580a src:manual/34-uart.md:83 klas:A -->
+<!-- fc id:T-34-037 sha:4659580a src:manual/34-uart.md:83 klas:K -->
 ### T-34-037 · kod · рядок 83
 
 **Книга каже, дослівно:**
