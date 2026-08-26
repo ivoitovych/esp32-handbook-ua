@@ -217,9 +217,12 @@
   set raw(lang: none)
 
   show raw: set text(font: font-mono, size: 0.86em)
+  // Короткий блок не розривається між сторінками: ASCII-схема, розірвана
+  // навпіл, перестає бути схемою. Довгий лістинг розривати доводиться —
+  // інакше він не влізе взагалі.
   show raw.where(block: true): it => block(
     width: 100%,
-    breakable: true,
+    breakable: it.lines.len() > 22,
     inset: (x: 0.8em, y: 0.65em),
     radius: 2pt,
     fill: panel,
