@@ -64,6 +64,28 @@ def main() -> int:
         else:
             print(f"   ✓ {imya}: {st} с., {kb} КБ")
 
+    # Числа сторінок, надруковані в README. Репозиторій публічний, і саме
+    # README — перше, що бачить читач; застаріле число там обіцяє йому
+    # іншу книгу, ніж лежить поруч. Це вже траплялося: у головному
+    # README стояло 400 сторінок, у `release/` — 413, а в файлі 422.
+    for imya, _, _ in OCHIKUVANNYA:
+        b = ROOT / "build" / imya
+        if not b.exists():
+            continue
+        st = storinok(b.read_bytes())
+        for readme in (ROOT / "README.md", ROOT / "release" / "README.md"):
+            if not readme.exists():
+                continue
+            tekst = readme.read_text(encoding="utf-8")
+            for ryadok in tekst.split("\n"):
+                if imya not in ryadok:
+                    continue
+                m = re.search(r"(\d+)\s*стор\.", ryadok)
+                if m and int(m.group(1)) != st:
+                    zhahy.append(
+                        f"{readme.relative_to(ROOT)}: обіцяє "
+                        f"{m.group(1)} стор. для {imya}, а в ньому {st}")
+
     # Відбиток джерел: чи зібрано опубліковане з поточного тексту.
     sys.path.insert(0, str(ROOT / "tools"))
     import importlib

@@ -26,16 +26,16 @@
 [`docs/fakty.md`](docs/fakty.md). Аудит покриття тем перед freeze
 ревізії — [`docs/coverage-checklist.md`](docs/coverage-checklist.md)
 (Р14). Звіти сесій рецензування — каталог
-[`reviews/`](reviews/README.md).
+[`reviews/`](reviews/).
 
 ## Готовий PDF
 
-Складена книга лежить у [`release/`](release/README.md) — брати звідти,
+Складена книга лежить у [`release/`](release/) — брати звідти,
 якщо треба просто прочитати або надрукувати:
 
 | Файл | Що це |
 |---|---|
-| [`release/esp32-dovidnyk.pdf`](release/esp32-dovidnyk.pdf) | **основна книга**, A5, 400 стор. |
+| [`release/esp32-dovidnyk.pdf`](release/esp32-dovidnyk.pdf) | **основна книга**, A5, 422 стор. |
 | [`release/esp32-kartky.pdf`](release/esp32-kartky.pdf) | картки К1–К15 під друк на A4 і ламінування |
 | [`release/esp32-proekty.pdf`](release/esp32-proekty.pdf) | проєкти 59–63 окремо |
 
