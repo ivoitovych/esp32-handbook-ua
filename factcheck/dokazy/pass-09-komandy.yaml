@@ -128,7 +128,7 @@
     теж названо, бо без нього читач вирішить, що плата зникла.
 
 - nazva: Решта команд esptool і idf.py, що вживає книга, існує дослівно
-  zbih: 'read-flash 0 ALL|chip-id\s|flash-id\s|erase-region|verify-flash|app-flash|size-components|coredump-info|coredump-debug|create-component|add-dependency|reconfigure|fullclean'
+  zbih: 'read-flash 0 ALL|chip-id\s|flash-id\s|erase-region|verify-flash|app-flash|size-components|coredump-info|coredump-debug|create-component|add-dependency|reconfigure|fullclean|espefuse [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig|`idf\.py menuconfig`|idf\.py set-target|idf\.py create-project|idf\.py size\b|idf\.py openocd|idf\.py gdb\b'
   klas: A
   dzherelo: >-
     https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst

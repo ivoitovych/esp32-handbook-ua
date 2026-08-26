@@ -95,6 +95,18 @@
   zamist: '`Component config` → `Log` → `Log Level`'
   prokhid: 11
 
+- shcho: DAC на S2 як GPIO25/GPIO26
+  zbih: 'lassic\]\] і S2, на\s*`GPIO25`|S2[^.\n]{0,40}(?:на |—\s*)`GPIO25`|DAC[^.\n]{0,60}S2[^.\n]{0,40}`GPIO25`'
+  chomu: >-
+    На classic DAC справді на GPIO25/GPIO26, на S2 — на GPIO17/GPIO18.
+    Більше того, GPIO25 у S2 не існує взагалі: маска дійсних пінів
+    вирізає 22–25. Твердження про два сімейства, вірне для одного.
+  zamist: >-
+    classic — GPIO25/GPIO26; S2 — GPIO17/GPIO18
+  prokhid: 17
+  vynyatky: [factcheck/, reviews/, zvyazok/]
+  dozvil: 'GPIO17|не існу|різні'   # абзац, що якраз розводить два сімейства
+
 - shcho: Програмний ліміт часу рятує від залиплого реле
   zbih: '(ліміт|таймаут)[^.]{0,80}залипл|залипл[^.]{0,60}(ліміт|таймаут)'
   chomu: >-
