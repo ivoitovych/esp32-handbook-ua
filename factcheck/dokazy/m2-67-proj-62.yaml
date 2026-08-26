@@ -1,71 +1,73 @@
-# М2, проект 2 — керування: 9 тверджень класу F
-
 - nazva: GPIO5 для поплавкового вимикача на ESP32-S3
-  zbih: 'Поплавковий вимикач · S3 → `GPIO5`'
+  zbih: Поплавковий вимикач · S3 → `GPIO5`
   klas: C
-  dzherelo: "не знайшов datasheet ESP32-S3 у dzherela-kesh"
-  cytata: ""
-  sposib: "Шукав в dzherela-kesh/, але там є тільки esp32-datasheet.pdf (базовий ESP32), esp32-wroom-32e.pdf і esp32c3.inc без GPIO розпіновки"
-
+  dzherelo: не знайшов datasheet ESP32-S3 у dzherela-kesh
+  cytata: ''
+  sposib: Шукав в dzherela-kesh/, але там є тільки esp32-datasheet.pdf (базовий ESP32), esp32-wroom-32e.pdf
+    і esp32c3.inc без GPIO розпіновки
 - nazva: GPIO5 для поплавкового вимикача на ESP32-C3
-  zbih: 'Поплавковий вимикач · C3 → `GPIO5`'
+  zbih: Поплавковий вимикач · C3 → `GPIO5`
   klas: C
-  dzherelo: "не знайшов datasheet ESP32-C3 у dzherela-kesh"
-  cytata: ""
-  sposib: "Є esp32c3.inc, але він не містить GPIO розпіновки"
-
-- nazva: "Кнопка, що подає сигнал на GPIO, не працює, коли чип завис"
-  zbih: "Кнопка, що подає сигнал на GPIO, не працює, коли чип завис"
-  klas: B
-  dzherelo: "базова логіка: якщо чип завис, GPIO не обробляються"
-  cytata: ""
-  sposib: "Випливає однозначно з того, що GPIO обробляються завданням FreeRTOS, яке висить"
-
-- nazva: "Схема реле: +12 В → насос → реле (NO) → аварійний вимикач → GND"
+  dzherelo: не знайшов datasheet ESP32-C3 у dzherela-kesh
+  cytata: ''
+  sposib: Є esp32c3.inc, але він не містить GPIO розпіновки
+- nazva: Кнопка, що подає сигнал на GPIO, не працює, коли чип завис
+  zbih: Кнопка, що подає сигнал на GPIO, не працює, коли чип завис
+  klas: E
+  dzherelo: 'базова логіка: якщо чип завис, GPIO не обробляються'
+  cytata: ''
+  sposib: Випливає однозначно з того, що GPIO обробляються завданням FreeRTOS, яке висить
+- nazva: 'Схема реле: +12 В → насос → реле (NO) → аварійний вимикач → GND'
   zbih: '\+12 В ── \[насос\] ── \[реле: контакти NO\] ── \[аварійний вимикач\] ── GND'
   klas: A
-  dzherelo: "manual/62-proj-keruvannya.md, рядок 96"
-  cytata: |
-    +12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
-  sposib: "дослівна цитата зі схеми в документації"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 96'
+  cytata: '+12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
 
-- nazva: "Лог переходу між станами чипа з причиною"
+    '
+  sposib: дослівна цитата зі схеми в документації
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: Лог переходу між станами чипа з причиною
   zbih: 'ESP_LOGI\(TAG, "%s -> %s: %s", nazva\(stan\), nazva\(novyy\), prychyna\)'
   klas: A
-  dzherelo: "manual/62-proj-keruvannya.md, рядок 182"
-  cytata: |
-    ESP_LOGI(TAG, "%s -> %s: %s", nazva(stan), nazva(novyy), prychyna);
-  sposib: "дослівна цитата з коду"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 182'
+  cytata: 'ESP_LOGI(TAG, "%s -> %s: %s", nazva(stan), nazva(novyy), prychyna);
 
-- nazva: "Керування насосом функцією nasos_keruvaty на основі стану"
-  zbih: 'nasos_keruvaty\(novyy == STAN_ROBOTA\)'
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: Керування насосом функцією nasos_keruvaty на основі стану
+  zbih: nasos_keruvaty\(novyy == STAN_ROBOTA\)
   klas: A
-  dzherelo: "manual/62-proj-keruvannya.md, рядок 185"
-  cytata: |
-    nasos_keruvaty(novyy == STAN_ROBOTA);
-  sposib: "дослівна цитата з коду"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 185'
+  cytata: 'nasos_keruvaty(novyy == STAN_ROBOTA);
 
-- nazva: "Оновлення індикації при зміні стану"
-  zbih: 'onovyty_indykaciyu\(\)'
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: Оновлення індикації при зміні стану
+  zbih: onovyty_indykaciyu\(\)
   klas: A
-  dzherelo: "manual/62-proj-keruvannya.md, рядок 186"
-  cytata: |
-    onovyty_indykaciyu();
-  sposib: "дослівна цитата з коду"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 186'
+  cytata: 'onovyty_indykaciyu();
 
-- nazva: "Максимум часу безперервної роботи насоса: 600 секунд (10 хвилин)"
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: 'Максимум часу безперервної роботи насоса: 600 секунд (10 хвилин)'
   zbih: '#define MAX_ROBOTY_S\s+600\s+// 10 хвилин'
   klas: A
-  dzherelo: "manual/62-proj-keruvannya.md, рядок 192"
-  cytata: |
-    #define MAX_ROBOTY_S     600      // 10 хвилин безперервно
-  sposib: "дослівна цитата з коду"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 192'
+  cytata: '#define MAX_ROBOTY_S     600      // 10 хвилин безперервно
 
-- nazva: "Час паузи після вимкнення насоса: 300 секунд (5 хвилин)"
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
+- nazva: 'Час паузи після вимкнення насоса: 300 секунд (5 хвилин)'
   zbih: '#define PAUZA_PISLYA_S\s+300\s+// 5 хвилин'
   klas: A
-  dzherelo: "manual/62-proj-keruvannya.md, рядок 193"
-  cytata: |
-    #define PAUZA_PISLYA_S   300      // 5 хвилин відпочинку
-  sposib: "дослівна цитата з коду"
+  dzherelo: 'ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 193'
+  cytata: '#define PAUZA_PISLYA_S   300      // 5 хвилин відпочинку
 
+    '
+  sposib: дослівна цитата з коду
+  notatka: 'Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.'
