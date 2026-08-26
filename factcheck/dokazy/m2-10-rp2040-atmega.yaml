@@ -1,0 +1,230 @@
+# М2, крок 10 — порівняльна таблиця розділу 01, комірки ATmega328P (AVR,
+# Arduino Uno). Джерело в кеші: `atmega328p.pdf` (Microchip,
+# ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet, DS40002061B). Наряд —
+# `factcheck/NARYAD-nedostupni.md`, група «RP2040, ATmega328P».
+#
+# Межа кроку: рядок таблиці називається «AVR (Arduino Uno)», не
+# «ATmega328P» — це плата, а не голий кристал. Де книга стверджує щось
+# про саму плату (зовнішній кварц, ціну плати), а не про кристал,
+# datasheet кристала цього не доводить: це або інший клас доказу, або
+# інше джерело (схема Arduino Uno), яке в цій сесії не діставали.
+#
+# Обидва тексти витягнуті: `pdftotext -layout atmega328p.pdf
+# atmega328p.txt` і `pdftotext -layout rp2040.pdf rp2040.txt`,
+# 2026-08-26.
+#
+# Комірки RP2040 у цьому наряді відсутні (id T-01-041/046/051/056/061/
+# /066/071/076 уже позначені як закриті іншим проходом,
+# `pass-04-obkhidni.yaml`), тому в цьому файлі їх немає. Але звірка з
+# `rp2040.pdf` під час цього кроку виявила проблему саме в тому проході:
+# його `zbih: 'RP2040|264 КБ'` — це ДИЗ'ЮНКЦІЯ двох альтернатив, і
+# альтернатива `RP2040` сама по собі збігається з текстом БУДЬ-ЯКОЇ
+# комірки колонки RP2040, бо кожна містить слово «RP2040». Через це
+# докази про SRAM (SRAM_BASE/SRAM_STRIPED_END з pico-sdk) хибно
+# приліпилися до T-01-041 (Радіо), T-01-056 (ОС), T-01-061 (Старт),
+# T-01-066 (Сон), T-01-071 (Реальний час), T-01-076 (Ціна плати) —
+# жодна з цих комірок не стосується SRAM. Це саме пастка з правила 4
+# SCHEMA.md, і вона не моя, щоб лагодити (чужий файл доказів), тож
+# лишаю це в звіті, а не в правках.
+#
+# Окремо: `rp2040.pdf` містить кращі, прямі цитати на 133 МГц і 264 КБ
+# (Key features, розділ 1), ніж непряме обчислення з заголовка pico-sdk,
+# яке зараз використовує pass-04. І там-таки, Table 637 (5.7.2, «Power
+# Consumption for typical user cases») прямо підтверджує, що сон
+# RP2040 вимірюється в одиницях мА (Dormant: typical 0.18 мА, max
+# 4.2 мА; Sleep: typical 0.39 мА, max 4.5 мА) — це підтверджує саме те
+# слово, що стоїть у таблиці розділу 01 («Сон · RP2040 → мА»), на
+# відміну від «мкА» в AVR/STM32. Ця знахідка теж не оформлена як запис
+# доказу нижче — вона стосується не моїх 8 комірок AVR, а чужого файла.
+
+- nazva: ATmega328P — немає радіомодуля серед периферії
+  zbih: 'Радіо на борту · AVR \(Arduino Uno\) → ні'
+  klas: B
+  dzherelo: >-
+    Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B),
+    вступ і розділ «Features» — «Peripheral Features» і «Special
+    Microcontroller Features»
+  cytata: |
+    The ATmega48A/PA/88A/PA/168A/PA/328/P provides the following features: 4K/8Kbytes of In-System
+    Programmable Flash with Read-While-Write capabilities, 256/512/512/1Kbytes EEPROM, 512/1K/1K/2Kbytes
+    SRAM, 23 general purpose I/O lines, 32 general purpose working registers, three flexible Timer/Counters with
+    compare modes, internal and external interrupts, a serial programmable USART, a byte-oriented 2-wire Serial
+    Interface, an SPI serial port, a 6-channel 10-bit ADC (8 channels in TQFP and VQFN packages), a
+    programmable Watchdog Timer with internal Oscillator, and five software selectable power saving modes.
+  sposib: >-
+    PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Вступ datasheet перелічує периферію вичерпно (це той самий перелік,
+    що дублюється розбито по пунктах у «Features»: USART, 2-wire
+    (I²C), SPI, ADC, Watchdog, компаратор, лічильники) — радіо чи
+    будь-якого бездротового інтерфейсу серед них немає. Висновок «ні»
+    випливає з повноти переліку, а не з прямої фрази «немає радіо»,
+    тому клас B, а не A — той самий патерн, що й приклад із SCHEMA.md
+    про `SOC_UART_NUM 3`.
+
+- nazva: ATmega328P — 16 МГц серед «типових» тактових частот
+  zbih: 'Частота · AVR \(Arduino Uno\) → 16 МГц'
+  klas: A
+  dzherelo: >-
+    Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B),
+    Table 20-7 «Examples of UBRRn Settings for Commonly Used Oscillator
+    Frequencies» і розділ 29.3 «Speed Grades»
+  cytata: |
+    Table 20-7.         Examples of UBRRn Settings for Commonly Used Oscillator Frequencies (Continued)
+                              fosc = 16.0000MHz                      fosc = 18.4320MHz                      fosc = 20.0000MHz
+
+    Speed Grade:
+                        ̶           0 - 4MHz@1.8 - 5.5V, 0 - 10MHz@2.7 - 5.5.V, 0 - 20MHz @ 4.5 - 5.5V
+  sposib: >-
+    PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    16 МГц — не максимум кристала (максимум за Speed Grade — 20 МГц при
+    4.5–5.5 В), а один із «типових» («Commonly Used») тактових частот,
+    прямо названих у таблиці налаштувань USART — саме ту, яку обрала
+    плата Arduino Uno для зовнішнього резонатора. Сам зовнішній кварц
+    16 МГц — властивість плати Arduino Uno, а не кристала; це datasheet
+    ATmega328P підтверджує лише опосередковано (частота підтримується
+    і є «типовою»), а не як специфікацію конкретної плати. Прямого
+    підтвердження, що саме на Arduino Uno стоїть резонатор 16 МГц,
+    треба шукати у схемі плати (Arduino Uno Rev3), а не в datasheet
+    кристала — вона в цій сесії не звірялася.
+
+- nazva: ATmega328P — 2 КБ внутрішньої SRAM
+  zbih: 'RAM · AVR \(Arduino Uno\) → 2 КБ'
+  klas: A
+  dzherelo: >-
+    Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B),
+    розділ «Features» → «High Endurance Non-volatile Memory Segments»
+    і розділ 8.3 «SRAM Data Memory»
+  cytata: |
+    High Endurance Non-volatile Memory Segments
+                ̶               4/8/16/32KBytes of In-System Self-Programmable Flash program memory
+                ̶               256/512/512/1KBytes EEPROM
+                ̶               512/1K/1K/2KBytes Internal SRAM
+  sposib: >-
+    PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Чотири числа в кожному рядку йдуть у порядку назви документа —
+    ATmega48A/PA, 88A/PA, 168A/PA, 328/P — тобто SRAM саме для 328/P
+    останнє в ряду: 2 КБайти. Підтверджено ще раз у розділі 8.3, де
+    для 328/P пряма адресація SRAM дає «512/1024/1024/2048 bytes of
+    internal data SRAM» — 2048 байт = 2 КБ.
+
+- nazva: ATmega328P — немає операційної системи серед можливостей чипа
+  zbih: 'ОС · AVR \(Arduino Uno\) → немає'
+  klas: B
+  dzherelo: >-
+    Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B),
+    «Introduction» і розділ «Features» → «Special Microcontroller
+    Features»
+  cytata: |
+    The ATmega48A/PA/88A/PA/168A/PA/328/P is a low power, CMOS 8-bit microcontrollers based on the
+    AVR® enhanced RISC architecture.
+
+    Special Microcontroller Features
+                        ̶           Power-on Reset and Programmable Brown-out Detection
+                    ̶               Internal Calibrated Oscillator
+                    ̶               External and Internal Interrupt Sources
+                    ̶               Six Sleep Modes: Idle, ADC Noise Reduction, Power-save, Power-down, Standby, and Extended Standby
+  sposib: >-
+    PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Datasheet прямо не пише «операційної системи немає» — про софт
+    датащит узагалі не говорить, це нормально для нього. Висновок B
+    випливає з архітектури: чип описаний як «8-bit microcontroller»
+    без блоку керування пам'яттю, привілейованих рівнів чи
+    планувальника, а весь перелік «Special Microcontroller Features»
+    вичерпується скиданням, генератором, перериваннями й режимами сну
+    — жодного системного/ядерного примітиву. Разом з обсягом SRAM
+    (2 КБ, попередній запис) цього достатньо, щоб «немає ОС» було
+    прямим наслідком архітектури, а не голослівним твердженням.
+
+- nazva: ATmega328P — час старту вимірюється циклами й мілісекундами
+  zbih: 'Старт · AVR \(Arduino Uno\) → миттєво'
+  klas: B
+  dzherelo: >-
+    Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B),
+    Table 9-6 «Start-up Times for the Full Swing Crystal Oscillator
+    Clock Selection»
+  cytata: |
+    Table 9-6.        Start-up Times for the Full Swing Crystal Oscillator Clock Selection
+                                       Start-up Time from          Additional Delay
+     Oscillator Source /                Power-down and               from Reset
+     Power Conditions                     Power-save                 (VCC = 5.0V)        CKSEL0         SUT1...0
+     Ceramic resonator, fast
+                                            258 CK                 14CK + 4.1ms(1)           0            00
+     rising power
+     Ceramic resonator, slowly
+                                            258 CK                 14CK + 65ms(1)            0            01
+     rising power
+  sposib: >-
+    PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Найгірший випадок у таблиці — 65 мс (повільно наростаюче живлення,
+    керамічний резонатор); з боку живлення поза скиданням (з
+    Power-down/Power-save) — лише 258 тактів годинника, тобто долі
+    мікросекунди на 16 МГц. В обох випадках це на три-чотири порядки
+    швидше за «десятки секунд» Raspberry Pi з таблиці того ж розділу,
+    тому «миттєво» — розумний висновок з таблиці, хоч дослівно слова
+    «миттєво» в datasheet немає.
+
+- nazva: ATmega328P — струм у Power-down вимірюється мікроамперами
+  zbih: 'Сон · AVR \(Arduino Uno\) → мкА'
+  klas: A
+  dzherelo: >-
+    Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B),
+    Table 29-8 «ATmega328P DC characteristics», рядок «Power-down mode»
+  cytata: |
+    Table 29-8.      ATmega328P DC characteristics - TA = -40C to 85C, VCC = 1.8V to 5.5V (unless otherwise noted)
+     Symbol       Parameter                              Condition                                      Min.       Typ.(2)      Max.       Units
+                                                         WDT enabled, VCC = 3V                                      4.2             8
+                                           (3)
+                  Power-down mode
+                                                         WDT disabled, VCC = 3V                                     0.1             2
+    Notes:   ...  µA
+  sposib: >-
+    PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Одиниці виміру для цього рядка таблиці — µA (позначено в колонці
+    «Units» одразу під рядками Power-save/Power-down режимів): від
+    0.1 мкА (WDT вимкнено) до 8 мкА (WDT увімкнено, максимум). Це
+    буквально підтверджує саме слово «мкА» з таблиці розділу 01.
+
+- nazva: ATmega328P — детермінована й мінімальна затримка переривання
+  zbih: 'Реальний час · AVR \(Arduino Uno\) → добре'
+  klas: B
+  dzherelo: >-
+    Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B),
+    розділ 7.7.1 «Interrupt Response Time»
+  cytata: |
+    7.7.1   Interrupt Response Time
+            The interrupt execution response for all the enabled AVR interrupts is four clock cycles minimum. After four
+            clock cycles the program vector address for the actual interrupt handling routine is executed.
+  sposib: >-
+    PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Фіксована затримка в чотири такти без операційної системи й без
+    змагання за шину (одне ядро, немає радіостека, який міг би
+    перехопити керування) — це те, що зазвичай називають «добре» для
+    реального часу. Клас B, бо datasheet не оцінює себе словом
+    «добре»: оцінка порівняльна (гірше за «дуже добре» STM32 з
+    NVIC-пріоритетами, які тут не звірялися — це поза межами цього
+    кроку) і лишається редакторським рішенням автора книги, а не
+    прямим фактом із джерела.
+
+- nazva: Ціна плати Arduino Uno — не факт із datasheet кристала
+  zbih: 'Ціна плати · AVR \(Arduino Uno\) → низька'
+  klas: E
+  dzherelo: —
+  cytata: —
+  sposib: >-
+    PDF з кешу `atmega328p.pdf`, pdftotext -layout, 2026-08-26 —
+    перевірено, що в документі немає розділу про ціну.
+  notatka: >-
+    Datasheet кристала описує сам кристал, а не ринкову ціну готової
+    плати Arduino Uno чи її клонів — про ціни там немає жодного слова,
+    і не повинно бути: це не той рівень документа (розділ 01 сам
+    розрізняє кристал/модуль/плату, і ціна належить рівню плати).
+    Тому це не недосяжне джерело (клас C), а твердження поза межами
+    того, що datasheet у принципі покриває, — редакційна економічна
+    оцінка автора книги. Клас E.

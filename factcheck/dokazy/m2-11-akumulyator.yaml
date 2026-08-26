@@ -1,0 +1,136 @@
+# М2, крок 11 — TP4056 і DW01 (розділ 53, автономне живлення).
+#
+# Джерела в кеші: `tp4056.pdf` (NanJing Top Power ASIC Corp, 3 с.,
+# дзеркало SparkFun/cloudfront) і `dw01.pdf` (Fortune Semiconductor,
+# офіційний сайт виробника ic-fortune.com, 13 с.). Реєстр —
+# `factcheck/DZHERELA-m2.md`.
+#
+# Заміняє вузько ту частину широкого класу C «Li-ion і TP4056 — напруги,
+# ємність, захист» (factcheck/dokazy/pass-03-nedostupni.yaml), яка тепер
+# дістається. Файл pass-03 не чіпаю — це не мій запис.
+
+- nazva: TP4056 — заряджання фіксоване на 4.2 В
+  zbih: 'Напруга: 4\.2 В повністю заряджений'
+  klas: A
+  dzherelo: >-
+    TP4056 1A Standalone Linear Li-Ion Battery Charger with Thermal
+    Regulation, datasheet NanJing Top Power ASIC Corp — «DESCRIPTION»,
+    «FEATURES», «ELECTRICAL CHARACTERISTICS»
+  cytata: |
+    The charge voltage is fixed at 4.2V, and the charge current can be
+    programmed externally with a single resistor.
+
+    · Preset 4.2V Charge Voltage with 1.5% Accuracy
+
+    Regulated Output (Float) Voltage   0℃≤TA≤85℃，IBAT=40mA
+      MIN 4.137   TYP 4.2   MAX 4.263   V
+  sposib: >-
+    PDF NanJing Top Power ASIC, кеш `tp4056.pdf`, pdftotext -layout,
+    2026-08-26
+  notatka: >-
+    Взірець навмисно вузький — лише підрядок «Напруга: 4.2 В повністю
+    заряджений». Решта речення книги («приблизно 3.7 В номінальна,
+    2.5–3.0 В розряджений») — властивість елемента 18650, а не TP4056 чи
+    DW01; ці два datasheet цього не підтверджують і не спростовують.
+    T-53-003 лишається під ширшим класом `C` із `pass-03-nedostupni.yaml`
+    для решти речення.
+
+- nazva: TP4056 — струм заряджання задає резистор, 1.2 кОм дає 1 А
+  zbih: '\*\*Струм заряджання\*\* задається резистором на платі, типово 1 А\.'
+  klas: A
+  dzherelo: >-
+    TP4056 datasheet NanJing Top Power ASIC Corp — опис виводу PROG
+    (Pin 2) і таблиця «Rprog Current Setting»
+  cytata: |
+    PROG(Pin 2): Constant Charge Current Setting and Charge Current
+    Monitor Pin charge current is set by connecting a resistor RISET
+    from this pin to GND. ... In all modes during charging, the voltage
+    on ISET pin can be used to measure the charge current as follows:
+      IBAT = (VPROG / RPROG) × 1200   (VPROG=1V)
+
+    Rprog Current Setting
+      RPROG (k)   IBAT (mA)
+      10          130
+      5           250
+      4           300
+      3           400
+      2           580
+      1.66        690
+      1.5         780
+      1.33        900
+      1.2         1000
+  sposib: >-
+    PDF NanJing Top Power ASIC, кеш `tp4056.pdf`, pdftotext -layout,
+    2026-08-26
+  notatka: >-
+    Пряме влучання: і механізм («задається резистором»), і число
+    («типово 1 А») підтверджені окремо — резистор `RPROG=1.2 кОм`, який
+    стоїть на типовому модулі TP4056, у власній таблиці виробника дає
+    рівно `IBAT=1000 мА`. Клас `A`, бо цитата дослівна й формула, і
+    таблиця.
+
+- nazva: TP4056 продається із захистом DW01 — два транзистори в типовій схемі
+  zbih: >-
+    TP4056 продається у \*\*двох варіантах\*\*: із захистом \(додаткова
+    мікросхема DW01 і два транзистори на платі\) і без\.
+  klas: B
+  dzherelo: >-
+    DW01A — One Cell Lithium-ion/Polymer Battery Protection IC,
+    datasheet Fortune Semiconductor Corp — «Pin Configuration», «Typical
+    Application Circuit», «Description of Operation»
+  cytata: |
+    Pin No.  Symbol   Description
+      1        OD     MOSFET gate connection pin for discharge control
+      3        OC     MOSFET gate connection pin for charge control
+
+    8. Typical Application Circuit
+      ... R1, C1, DW01A, R2, M1, M2 ...  (M1 і M2 — два MOSFET,
+      під'єднані між CS/OD/OC мікросхеми й BATT-)
+
+    11. Description of Operation — Normal Condition
+      If VODP<VCC<VOCP and VCH<VCS<VOI1, M1 and M2 are both turned on.
+      The charging and discharging processes can be operated normally.
+  sposib: >-
+    PDF Fortune Semiconductor (офіційний сайт ic-fortune.com), кеш
+    `dw01.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Клас `B`, не `A`: datasheet DW01A ніде не пише фразою «на платі
+    стоять два транзистори» — це малюнок типової схеми (позначки `M1`,
+    `M2`) і опис двох виводів керування затвором (`OD` — розряд, `OC` —
+    заряд), з яких висновок «два транзистори» випливає однозначно, але
+    не дослівно. DW01A сам по собі — лише компаратор напруги/струму;
+    силові ключі зовнішні, і схема виробника показує їх саме парою.
+    Книжкове «додаткова мікросхема DW01 і два транзистори» — точний
+    опис цієї типової схеми.
+
+- nazva: TP4056 — паралельне навантаження заважає визначенню кінця заряду
+  zbih: >-
+    \*\*Одночасна робота й заряджання\.\*\* Проста схема «акумулятор і
+    навантаження паралельно на виході TP4056» працює, але заряджання
+    при цьому не завершується коректно: модуль не бачить, коли елемент
+    заповнився, бо струм іде і в навантаження\.
+  klas: B
+  dzherelo: >-
+    TP4056 datasheet NanJing Top Power ASIC Corp — «DESCRIPTION» і опис
+    виводу BAT (Pin 5)
+  cytata: |
+    The TP4056 automatically terminates the charge cycle when the
+    charge current drops to 1/10th the programmed value after the final
+    float voltage is reached.
+
+    BAT(Pin5): Battery Connection Pin. Connect the positive terminal of
+    the battery to BAT pin. ... BAT pin provides charge current to the
+    battery and provides regulation voltage of 4.2V.
+  sposib: >-
+    PDF NanJing Top Power ASIC, кеш `tp4056.pdf`, pdftotext -layout,
+    2026-08-26
+  notatka: >-
+    Клас `B`: datasheet не описує сценарій «навантаження паралельно
+    акумулятору» явно, але механізм термінації випливає з нього
+    однозначно. TP4056 завершує заряд, коли струм на виводі `BAT`
+    падає до 1/10 запрограмованого значення. `BAT` — спільний вузол з
+    акумулятором і навантаженням: якщо навантаження весь час забирає
+    частину струму, повний струм через `BAT` не опускається до порогу
+    навіть після заповнення елемента, і чип не бачить завершення
+    заряду. Це прямий наслідок описаного механізму термінації, а не
+    цитата про сам сценарій.
