@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/06-zhyvlennya.md`
 
-Одиниць твердження: **125**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **132**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -974,8 +974,165 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-067 sha:70530b53 src:manual/06-zhyvlennya.md:137 klas:F -->
-### T-06-067 · proza · рядок 137
+<!-- fc id:T-06-067 sha:d7df9b31 src:manual/06-zhyvlennya.md:138 klas:A -->
+### T-06-067 · proza · рядок 138
+
+**Книга каже, дослівно:**
+
+> [[classic]] **Пін, який мусить тримати рівень крізь light sleep, треба спершу перевірити на приналежність до домену `VDD_SDIO`.** На `WROOM-32` до нього належать `GPIO16` і `GPIO17`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > Before entering Light-sleep mode, check if any GPIO pin to be driven is part of the {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If so, this power domain must be configured to remain ON during sleep.
+  > 
+  > For example, on ESP32-WROOM-32 board, GPIO16 and GPIO17 are linked to {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If they are configured to remain high during Light-sleep, the power domain should be configured to remain powered ON. This can be done with :cpp:func:`esp_sleep_pd_config()`::
+  > 
+  >     esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
+- **Спосіб і дата:** помічник пулу (S2, Haiku); контекст прочитаний М1 перед унесенням, 2026-08-26
+- **Нотатка:** **Прогалина, знайдена побічно, і мало не сприйнята за суперечність.**
+Помічник подав цю цитату до одиниці про `GPIO16`/`GPIO17`, зайняті флешем і PSRAM. З першого погляду виглядало, ніби джерело заперечує моє власне виправлення проходу 33: там сказано, що ці два піни зайняті **лише на модулях із PSRAM**, а тут ідеться про `WROOM-32`, у якого PSRAM немає.
+Прочитане цілком, воно каже інше й про інше. Мова не про зайнятість шиною, а про **домен живлення**: на classic ці піни живляться з `VDD_SDIO`, і в light sleep домен вимикається. Пін, виставлений високим, тихо просідає.
+Обидва твердження правдиві й не перетинаються. Але прочитати довелося весь абзац, а не рядок, який збігся, — і це рівно те, чого третій шар не вміє і не має вміти.
+Наслідок для читача неприємний саме тим, що виглядає як несправність заліза: реле відпускає в сні, а вимірювання показують, що керівний пін «високий». Додано в розділ 06 разом із рядком лікування й ціною цього рядка.
+- **Прохід:** pass-39-pul-haiku
+
+---
+
+<!-- fc id:T-06-068 sha:e812ef2c src:manual/06-zhyvlennya.md:138 klas:A -->
+### T-06-068 · proza · рядок 138
+
+**Книга каже, дослівно:**
+
+> Домен у сні вимикається, і пін, виставлений високим, тихо просідає — реле відпускає, транзистор закривається, `EN` зовнішньої мікросхеми падає.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > Before entering Light-sleep mode, check if any GPIO pin to be driven is part of the {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If so, this power domain must be configured to remain ON during sleep.
+  > 
+  > For example, on ESP32-WROOM-32 board, GPIO16 and GPIO17 are linked to {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If they are configured to remain high during Light-sleep, the power domain should be configured to remain powered ON. This can be done with :cpp:func:`esp_sleep_pd_config()`::
+  > 
+  >     esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
+- **Спосіб і дата:** помічник пулу (S2, Haiku); контекст прочитаний М1 перед унесенням, 2026-08-26
+- **Нотатка:** **Прогалина, знайдена побічно, і мало не сприйнята за суперечність.**
+Помічник подав цю цитату до одиниці про `GPIO16`/`GPIO17`, зайняті флешем і PSRAM. З першого погляду виглядало, ніби джерело заперечує моє власне виправлення проходу 33: там сказано, що ці два піни зайняті **лише на модулях із PSRAM**, а тут ідеться про `WROOM-32`, у якого PSRAM немає.
+Прочитане цілком, воно каже інше й про інше. Мова не про зайнятість шиною, а про **домен живлення**: на classic ці піни живляться з `VDD_SDIO`, і в light sleep домен вимикається. Пін, виставлений високим, тихо просідає.
+Обидва твердження правдиві й не перетинаються. Але прочитати довелося весь абзац, а не рядок, який збігся, — і це рівно те, чого третій шар не вміє і не має вміти.
+Наслідок для читача неприємний саме тим, що виглядає як несправність заліза: реле відпускає в сні, а вимірювання показують, що керівний пін «високий». Додано в розділ 06 разом із рядком лікування й ціною цього рядка.
+- **Прохід:** pass-39-pul-haiku
+
+---
+
+<!-- fc id:T-06-069 sha:13c835d8 src:manual/06-zhyvlennya.md:144 klas:E -->
+### T-06-069 · proza · рядок 144
+
+**Книга каже, дослівно:**
+
+> Лікується одним рядком **до** засинання:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-06-070 sha:f7168601 src:manual/06-zhyvlennya.md:146 klas:K -->
+### T-06-070 · kod · рядок 146
+
+**Книга каже, дослівно:**
+
+> ```c
+> esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > choice BOOTLOADER_VDDSDIO_BOOST
+  >     bool "VDDSDIO LDO voltage"
+  >     default BOOTLOADER_VDDSDIO_BOOST_1_9V
+  >     depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED
+  >     help
+  >         If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse
+  >         or MTDI bootstrapping pin), bootloader will change LDO settings to
+  >         output 1.9V instead. This helps prevent flash chip from browning out
+  >         during flash programming operations.
+  > 
+  >         This option has no effect if VDDSDIO is set to 3.3V, or if the internal
+  >         VDDSDIO regulator is disabled via eFuse.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
+З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.
+- **Прохід:** pass-06-komandy-strapping
+
+---
+
+<!-- fc id:T-06-071 sha:a729b5d3 src:manual/06-zhyvlennya.md:147 klas:A -->
+### T-06-071 · kod-ryadok · рядок 147
+
+**Книга каже, дослівно:**
+
+> esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > choice BOOTLOADER_VDDSDIO_BOOST
+  >     bool "VDDSDIO LDO voltage"
+  >     default BOOTLOADER_VDDSDIO_BOOST_1_9V
+  >     depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED
+  >     help
+  >         If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse
+  >         or MTDI bootstrapping pin), bootloader will change LDO settings to
+  >         output 1.9V instead. This helps prevent flash chip from browning out
+  >         during flash programming operations.
+  > 
+  >         This option has no effect if VDDSDIO is set to 3.3V, or if the internal
+  >         VDDSDIO regulator is disabled via eFuse.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
+З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.
+- **Прохід:** pass-06-komandy-strapping
+
+---
+
+<!-- fc id:T-06-072 sha:849ec5ff src:manual/06-zhyvlennya.md:150 klas:E -->
+### T-06-072 · proza · рядок 150
+
+**Книга каже, дослівно:**
+
+> Ціна — домен лишається під живленням, тобто споживання в сні росте.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-06-073 sha:70411ee5 src:manual/06-zhyvlennya.md:150 klas:E -->
+### T-06-073 · proza · рядок 150
+
+**Книга каже, дослівно:**
+
+> Тому це рішення, а не типове налаштування: якщо рівень тримати не конче, дешевше взяти інший пін.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-06-074 sha:70530b53 src:manual/06-zhyvlennya.md:155 klas:F -->
+### T-06-074 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -987,8 +1144,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-068 sha:56b98538 src:manual/06-zhyvlennya.md:137 klas:A -->
-### T-06-068 · proza · рядок 137
+<!-- fc id:T-06-075 sha:56b98538 src:manual/06-zhyvlennya.md:155 klas:A -->
+### T-06-075 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -1008,8 +1165,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-069 sha:270264d5 src:manual/06-zhyvlennya.md:137 klas:E -->
-### T-06-069 · proza · рядок 137
+<!-- fc id:T-06-076 sha:270264d5 src:manual/06-zhyvlennya.md:155 klas:E -->
+### T-06-076 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -1021,8 +1178,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-070 sha:2f88579a src:manual/06-zhyvlennya.md:141 klas:F -->
-### T-06-070 · proza · рядок 141
+<!-- fc id:T-06-077 sha:2f88579a src:manual/06-zhyvlennya.md:159 klas:F -->
+### T-06-077 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -1034,8 +1191,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-071 sha:14731677 src:manual/06-zhyvlennya.md:145 klas:E -->
-### T-06-071 · proza · рядок 145
+<!-- fc id:T-06-078 sha:14731677 src:manual/06-zhyvlennya.md:163 klas:E -->
+### T-06-078 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -1047,8 +1204,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-072 sha:e53bd8ea src:manual/06-zhyvlennya.md:145 klas:F -->
-### T-06-072 · proza · рядок 145
+<!-- fc id:T-06-079 sha:e53bd8ea src:manual/06-zhyvlennya.md:163 klas:F -->
+### T-06-079 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -1060,8 +1217,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-073 sha:e403a1b1 src:manual/06-zhyvlennya.md:145 klas:A -->
-### T-06-073 · proza · рядок 145
+<!-- fc id:T-06-080 sha:e403a1b1 src:manual/06-zhyvlennya.md:163 klas:A -->
+### T-06-080 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -1081,8 +1238,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-074 sha:85b3ed4a src:manual/06-zhyvlennya.md:149 klas:K -->
-### T-06-074 · kod · рядок 149
+<!-- fc id:T-06-081 sha:85b3ed4a src:manual/06-zhyvlennya.md:167 klas:K -->
+### T-06-081 · kod · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1104,8 +1261,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-075 sha:fad422b8 src:manual/06-zhyvlennya.md:153 klas:F -->
-### T-06-075 · proza · рядок 153
+<!-- fc id:T-06-082 sha:fad422b8 src:manual/06-zhyvlennya.md:171 klas:F -->
+### T-06-082 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -1117,8 +1274,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-076 sha:ca324dc4 src:manual/06-zhyvlennya.md:153 klas:A -->
-### T-06-076 · proza · рядок 153
+<!-- fc id:T-06-083 sha:ca324dc4 src:manual/06-zhyvlennya.md:171 klas:A -->
+### T-06-083 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -1138,8 +1295,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-077 sha:22eebc77 src:manual/06-zhyvlennya.md:157 klas:E -->
-### T-06-077 · proza · рядок 157
+<!-- fc id:T-06-084 sha:22eebc77 src:manual/06-zhyvlennya.md:175 klas:E -->
+### T-06-084 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1151,8 +1308,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-078 sha:076077f4 src:manual/06-zhyvlennya.md:159 klas:K -->
-### T-06-078 · kod · рядок 159
+<!-- fc id:T-06-085 sha:076077f4 src:manual/06-zhyvlennya.md:177 klas:K -->
+### T-06-085 · kod · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1183,8 +1340,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-079 sha:808d179c src:manual/06-zhyvlennya.md:164 klas:F -->
-### T-06-079 · proza · рядок 164
+<!-- fc id:T-06-086 sha:808d179c src:manual/06-zhyvlennya.md:182 klas:F -->
+### T-06-086 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -1196,8 +1353,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-080 sha:a6b410ac src:manual/06-zhyvlennya.md:168 klas:E -->
-### T-06-080 · proza · рядок 168
+<!-- fc id:T-06-087 sha:a6b410ac src:manual/06-zhyvlennya.md:186 klas:E -->
+### T-06-087 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1209,8 +1366,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-081 sha:0f436362 src:manual/06-zhyvlennya.md:170 klas:C -->
-### T-06-081 · proza · рядок 170
+<!-- fc id:T-06-088 sha:0f436362 src:manual/06-zhyvlennya.md:188 klas:C -->
+### T-06-088 · proza · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -1226,8 +1383,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-082 sha:611fc8e6 src:manual/06-zhyvlennya.md:170 klas:F -->
-### T-06-082 · proza · рядок 170
+<!-- fc id:T-06-089 sha:611fc8e6 src:manual/06-zhyvlennya.md:188 klas:F -->
+### T-06-089 · proza · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -1239,8 +1396,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-083 sha:7484ddec src:manual/06-zhyvlennya.md:173 klas:E -->
-### T-06-083 · proza · рядок 173
+<!-- fc id:T-06-090 sha:7484ddec src:manual/06-zhyvlennya.md:191 klas:E -->
+### T-06-090 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -1252,8 +1409,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-084 sha:2d5ba434 src:manual/06-zhyvlennya.md:173 klas:E -->
-### T-06-084 · proza · рядок 173
+<!-- fc id:T-06-091 sha:2d5ba434 src:manual/06-zhyvlennya.md:191 klas:E -->
+### T-06-091 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -1265,8 +1422,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-085 sha:b3fbf50d src:manual/06-zhyvlennya.md:177 klas:C -->
-### T-06-085 · proza · рядок 177
+<!-- fc id:T-06-092 sha:b3fbf50d src:manual/06-zhyvlennya.md:195 klas:C -->
+### T-06-092 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1282,8 +1439,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-086 sha:51979b51 src:manual/06-zhyvlennya.md:180 klas:D -->
-### T-06-086 · proza · рядок 180
+<!-- fc id:T-06-093 sha:51979b51 src:manual/06-zhyvlennya.md:198 klas:D -->
+### T-06-093 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1325,8 +1482,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-087 sha:d870c8db src:manual/06-zhyvlennya.md:182 klas:F -->
-### T-06-087 · proza · рядок 182
+<!-- fc id:T-06-094 sha:d870c8db src:manual/06-zhyvlennya.md:200 klas:F -->
+### T-06-094 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1338,8 +1495,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-088 sha:3c20e9a3 src:manual/06-zhyvlennya.md:182 klas:D -->
-### T-06-088 · proza · рядок 182
+<!-- fc id:T-06-095 sha:3c20e9a3 src:manual/06-zhyvlennya.md:200 klas:D -->
+### T-06-095 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1381,8 +1538,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-089 sha:c7d5e1c8 src:manual/06-zhyvlennya.md:186 klas:F -->
-### T-06-089 · proza · рядок 186
+<!-- fc id:T-06-096 sha:c7d5e1c8 src:manual/06-zhyvlennya.md:204 klas:F -->
+### T-06-096 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1394,8 +1551,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-090 sha:556d645b src:manual/06-zhyvlennya.md:186 klas:E -->
-### T-06-090 · proza · рядок 186
+<!-- fc id:T-06-097 sha:556d645b src:manual/06-zhyvlennya.md:204 klas:E -->
+### T-06-097 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1407,8 +1564,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-091 sha:c349b673 src:manual/06-zhyvlennya.md:186 klas:E -->
-### T-06-091 · proza · рядок 186
+<!-- fc id:T-06-098 sha:c349b673 src:manual/06-zhyvlennya.md:204 klas:E -->
+### T-06-098 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1420,8 +1577,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-092 sha:de7c3154 src:manual/06-zhyvlennya.md:192 klas:F -->
-### T-06-092 · proza · рядок 192
+<!-- fc id:T-06-099 sha:de7c3154 src:manual/06-zhyvlennya.md:210 klas:F -->
+### T-06-099 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1433,8 +1590,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-093 sha:12e008fa src:manual/06-zhyvlennya.md:192 klas:E -->
-### T-06-093 · proza · рядок 192
+<!-- fc id:T-06-100 sha:12e008fa src:manual/06-zhyvlennya.md:210 klas:E -->
+### T-06-100 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1446,8 +1603,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-094 sha:c87cb774 src:manual/06-zhyvlennya.md:197 klas:E -->
-### T-06-094 · proza · рядок 197
+<!-- fc id:T-06-101 sha:c87cb774 src:manual/06-zhyvlennya.md:215 klas:E -->
+### T-06-101 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1459,8 +1616,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-095 sha:c149d101 src:manual/06-zhyvlennya.md:197 klas:E -->
-### T-06-095 · proza · рядок 197
+<!-- fc id:T-06-102 sha:c149d101 src:manual/06-zhyvlennya.md:215 klas:E -->
+### T-06-102 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1472,8 +1629,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-096 sha:8d0045df src:manual/06-zhyvlennya.md:202 klas:F -->
-### T-06-096 · proza · рядок 202
+<!-- fc id:T-06-103 sha:8d0045df src:manual/06-zhyvlennya.md:220 klas:F -->
+### T-06-103 · proza · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -1485,8 +1642,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-097 sha:f21b420b src:manual/06-zhyvlennya.md:202 klas:E -->
-### T-06-097 · proza · рядок 202
+<!-- fc id:T-06-104 sha:f21b420b src:manual/06-zhyvlennya.md:220 klas:E -->
+### T-06-104 · proza · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -1498,8 +1655,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-098 sha:8e69b815 src:manual/06-zhyvlennya.md:202 klas:E -->
-### T-06-098 · proza · рядок 202
+<!-- fc id:T-06-105 sha:8e69b815 src:manual/06-zhyvlennya.md:220 klas:E -->
+### T-06-105 · proza · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -1511,8 +1668,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-099 sha:5f7bb179 src:manual/06-zhyvlennya.md:206 klas:E -->
-### T-06-099 · proza · рядок 206
+<!-- fc id:T-06-106 sha:5f7bb179 src:manual/06-zhyvlennya.md:224 klas:E -->
+### T-06-106 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1524,8 +1681,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-100 sha:be6c0719 src:manual/06-zhyvlennya.md:206 klas:E -->
-### T-06-100 · proza · рядок 206
+<!-- fc id:T-06-107 sha:be6c0719 src:manual/06-zhyvlennya.md:224 klas:E -->
+### T-06-107 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1537,8 +1694,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-101 sha:6b986069 src:manual/06-zhyvlennya.md:210 klas:F -->
-### T-06-101 · proza · рядок 210
+<!-- fc id:T-06-108 sha:6b986069 src:manual/06-zhyvlennya.md:228 klas:F -->
+### T-06-108 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1550,8 +1707,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-102 sha:1e3be1de src:manual/06-zhyvlennya.md:210 klas:E -->
-### T-06-102 · proza · рядок 210
+<!-- fc id:T-06-109 sha:1e3be1de src:manual/06-zhyvlennya.md:228 klas:E -->
+### T-06-109 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1563,8 +1720,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-103 sha:8febff09 src:manual/06-zhyvlennya.md:215 klas:E -->
-### T-06-103 · proza · рядок 215
+<!-- fc id:T-06-110 sha:8febff09 src:manual/06-zhyvlennya.md:233 klas:E -->
+### T-06-110 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1576,8 +1733,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-104 sha:f320b6cc src:manual/06-zhyvlennya.md:215 klas:E -->
-### T-06-104 · proza · рядок 215
+<!-- fc id:T-06-111 sha:f320b6cc src:manual/06-zhyvlennya.md:233 klas:E -->
+### T-06-111 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1589,8 +1746,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-105 sha:4f3df3b5 src:manual/06-zhyvlennya.md:220 klas:E -->
-### T-06-105 · proza · рядок 220
+<!-- fc id:T-06-112 sha:4f3df3b5 src:manual/06-zhyvlennya.md:238 klas:E -->
+### T-06-112 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1602,8 +1759,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-106 sha:304fa1bd src:manual/06-zhyvlennya.md:220 klas:F -->
-### T-06-106 · proza · рядок 220
+<!-- fc id:T-06-113 sha:304fa1bd src:manual/06-zhyvlennya.md:238 klas:F -->
+### T-06-113 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1615,8 +1772,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-107 sha:640eee6d src:manual/06-zhyvlennya.md:224 klas:C -->
-### T-06-107 · proza · рядок 224
+<!-- fc id:T-06-114 sha:640eee6d src:manual/06-zhyvlennya.md:242 klas:C -->
+### T-06-114 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1632,8 +1789,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-108 sha:1ee88ba5 src:manual/06-zhyvlennya.md:224 klas:E -->
-### T-06-108 · proza · рядок 224
+<!-- fc id:T-06-115 sha:1ee88ba5 src:manual/06-zhyvlennya.md:242 klas:E -->
+### T-06-115 · proza · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1645,8 +1802,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-109 sha:430b10da src:manual/06-zhyvlennya.md:232 klas:E -->
-### T-06-109 · proza · рядок 232
+<!-- fc id:T-06-116 sha:430b10da src:manual/06-zhyvlennya.md:250 klas:E -->
+### T-06-116 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1658,8 +1815,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-110 sha:974911e6 src:manual/06-zhyvlennya.md:232 klas:E -->
-### T-06-110 · proza · рядок 232
+<!-- fc id:T-06-117 sha:974911e6 src:manual/06-zhyvlennya.md:250 klas:E -->
+### T-06-117 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1671,8 +1828,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-111 sha:af783d97 src:manual/06-zhyvlennya.md:232 klas:F -->
-### T-06-111 · proza · рядок 232
+<!-- fc id:T-06-118 sha:af783d97 src:manual/06-zhyvlennya.md:250 klas:F -->
+### T-06-118 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1684,8 +1841,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-112 sha:3dc81fc0 src:manual/06-zhyvlennya.md:232 klas:F -->
-### T-06-112 · proza · рядок 232
+<!-- fc id:T-06-119 sha:3dc81fc0 src:manual/06-zhyvlennya.md:250 klas:F -->
+### T-06-119 · proza · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1697,8 +1854,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-113 sha:6da0acaf src:manual/06-zhyvlennya.md:237 klas:F -->
-### T-06-113 · proza · рядок 237
+<!-- fc id:T-06-120 sha:6da0acaf src:manual/06-zhyvlennya.md:255 klas:F -->
+### T-06-120 · proza · рядок 255
 
 **Книга каже, дослівно:**
 
@@ -1710,8 +1867,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-114 sha:dd8abc67 src:manual/06-zhyvlennya.md:237 klas:E -->
-### T-06-114 · proza · рядок 237
+<!-- fc id:T-06-121 sha:dd8abc67 src:manual/06-zhyvlennya.md:255 klas:E -->
+### T-06-121 · proza · рядок 255
 
 **Книга каже, дослівно:**
 
@@ -1723,8 +1880,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-115 sha:d77349f9 src:manual/06-zhyvlennya.md:237 klas:E -->
-### T-06-115 · proza · рядок 237
+<!-- fc id:T-06-122 sha:d77349f9 src:manual/06-zhyvlennya.md:255 klas:E -->
+### T-06-122 · proza · рядок 255
 
 **Книга каже, дослівно:**
 
@@ -1736,8 +1893,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-116 sha:c8c42ac2 src:manual/06-zhyvlennya.md:242 klas:E -->
-### T-06-116 · proza · рядок 242
+<!-- fc id:T-06-123 sha:c8c42ac2 src:manual/06-zhyvlennya.md:260 klas:E -->
+### T-06-123 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -1749,8 +1906,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-117 sha:cb757722 src:manual/06-zhyvlennya.md:242 klas:E -->
-### T-06-117 · proza · рядок 242
+<!-- fc id:T-06-124 sha:cb757722 src:manual/06-zhyvlennya.md:260 klas:E -->
+### T-06-124 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -1762,8 +1919,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-118 sha:26f7a792 src:manual/06-zhyvlennya.md:246 klas:F -->
-### T-06-118 · proza · рядок 246
+<!-- fc id:T-06-125 sha:26f7a792 src:manual/06-zhyvlennya.md:264 klas:F -->
+### T-06-125 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -1775,8 +1932,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-119 sha:f3ba3183 src:manual/06-zhyvlennya.md:252 klas:F -->
-### T-06-119 · proza · рядок 252
+<!-- fc id:T-06-126 sha:f3ba3183 src:manual/06-zhyvlennya.md:270 klas:F -->
+### T-06-126 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -1788,8 +1945,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-120 sha:339581bb src:manual/06-zhyvlennya.md:252 klas:E -->
-### T-06-120 · proza · рядок 252
+<!-- fc id:T-06-127 sha:339581bb src:manual/06-zhyvlennya.md:270 klas:E -->
+### T-06-127 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -1801,8 +1958,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-121 sha:c1e94628 src:manual/06-zhyvlennya.md:254 klas:F -->
-### T-06-121 · proza · рядок 254
+<!-- fc id:T-06-128 sha:c1e94628 src:manual/06-zhyvlennya.md:272 klas:F -->
+### T-06-128 · proza · рядок 272
 
 **Книга каже, дослівно:**
 
@@ -1814,8 +1971,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-122 sha:64d1633a src:manual/06-zhyvlennya.md:257 klas:F -->
-### T-06-122 · proza · рядок 257
+<!-- fc id:T-06-129 sha:64d1633a src:manual/06-zhyvlennya.md:275 klas:F -->
+### T-06-129 · proza · рядок 275
 
 **Книга каже, дослівно:**
 
@@ -1827,8 +1984,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-123 sha:34b338b0 src:manual/06-zhyvlennya.md:260 klas:F -->
-### T-06-123 · proza · рядок 260
+<!-- fc id:T-06-130 sha:34b338b0 src:manual/06-zhyvlennya.md:278 klas:F -->
+### T-06-130 · proza · рядок 278
 
 **Книга каже, дослівно:**
 
@@ -1840,8 +1997,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-124 sha:48981a0d src:manual/06-zhyvlennya.md:262 klas:A -->
-### T-06-124 · proza · рядок 262
+<!-- fc id:T-06-131 sha:48981a0d src:manual/06-zhyvlennya.md:280 klas:A -->
+### T-06-131 · proza · рядок 280
 
 **Книга каже, дослівно:**
 
@@ -1861,8 +2018,8 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-125 sha:077725ef src:manual/06-zhyvlennya.md:264 klas:F -->
-### T-06-125 · proza · рядок 264
+<!-- fc id:T-06-132 sha:077725ef src:manual/06-zhyvlennya.md:282 klas:F -->
+### T-06-132 · proza · рядок 282
 
 **Книга каже, дослівно:**
 

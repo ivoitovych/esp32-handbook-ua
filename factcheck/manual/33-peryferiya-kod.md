@@ -2459,9 +2459,9 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
 - **Дослівно з джерела:**
   > (esp_ota_ops.h)
-  > #define ESP_ERR_OTA_BASE                       0x1500
-  > #define ESP_ERR_OTA_PARTITION_CONFLICT         (ESP_ERR_OTA_BASE + 0x02)
-  > #define ESP_ERR_OTA_VALIDATE_FAILED            (ESP_ERR_OTA_BASE + 0x04)
+  > #define ESP_ERR_OTA_BASE                         0x1500                     /*!< Base error code for ota_ops api */
+  > #define ESP_ERR_OTA_PARTITION_CONFLICT           (ESP_ERR_OTA_BASE + 0x01)  /*!< Error if request was to write or erase the current running partition */
+  > #define ESP_ERR_OTA_VALIDATE_FAILED              (ESP_ERR_OTA_BASE + 0x03)  /*!< Error if OTA app image is invalid */
   > 
   > (esp_err.h)
   > #define ESP_ERR_INVALID_ARG         0x102

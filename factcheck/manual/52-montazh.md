@@ -669,7 +669,7 @@
 
 ---
 
-<!-- fc id:T-52-052 sha:090225da src:manual/52-montazh.md:130 klas:F -->
+<!-- fc id:T-52-052 sha:090225da src:manual/52-montazh.md:130 klas:A -->
 ### T-52-052 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -678,7 +678,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0", esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28", esp32h21="GPIO14", esp32h4="GPIO14", esp32s31="GPIO61"}
+  > 
+  > The {IDF_TARGET_NAME} will enter the serial bootloader when {IDF_TARGET_STRAP_BOOT_GPIO} is held low on reset. Otherwise it will run the program in flash.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif development boards) that pulls {IDF_TARGET_STRAP_BOOT_GPIO} low when pressed.
+- **Спосіб і дата:** помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
+- **Нотатка:** Підстава для виправлення розділів 08 і 52: шість площадок для прошивки називали `GPIO0` без позначки сімейства, а `GPIO0` — це значення для classic, S2 і S3. Для C3, C6 і H2 діє типове `GPIO9`.
+Ціна помилки конкретна: книга ж сама радить брати C3 для власної плати. Читач розводить площадку на `GPIO0`, вона нічого не робить, а піна, який справді потрібен, на платі немає.
+Варта уваги дрібниця в підстановці: для C3 перевизначення немає, діє `default="GPIO9"`. Те саме спостереження вже записано в проході 33 — два незалежні помічники дійшли до нього з різних боків.
+- **Прохід:** pass-39-pul-haiku
 
 ---
 
@@ -695,7 +707,7 @@
 
 ---
 
-<!-- fc id:T-52-054 sha:92d48dac src:manual/52-montazh.md:134 klas:F -->
+<!-- fc id:T-52-054 sha:92d48dac src:manual/52-montazh.md:134 klas:A -->
 ### T-52-054 · proza · рядок 134
 
 **Книга каже, дослівно:**
@@ -704,7 +716,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0", esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28", esp32h21="GPIO14", esp32h4="GPIO14", esp32s31="GPIO61"}
+  > 
+  > The {IDF_TARGET_NAME} will enter the serial bootloader when {IDF_TARGET_STRAP_BOOT_GPIO} is held low on reset. Otherwise it will run the program in flash.
+  > 
+  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif development boards) that pulls {IDF_TARGET_STRAP_BOOT_GPIO} low when pressed.
+- **Спосіб і дата:** помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
+- **Нотатка:** Підстава для виправлення розділів 08 і 52: шість площадок для прошивки називали `GPIO0` без позначки сімейства, а `GPIO0` — це значення для classic, S2 і S3. Для C3, C6 і H2 діє типове `GPIO9`.
+Ціна помилки конкретна: книга ж сама радить брати C3 для власної плати. Читач розводить площадку на `GPIO0`, вона нічого не робить, а піна, який справді потрібен, на платі немає.
+Варта уваги дрібниця в підстановці: для C3 перевизначення немає, діє `default="GPIO9"`. Те саме спостереження вже записано в проході 33 — два незалежні помічники дійшли до нього з різних боків.
+- **Прохід:** pass-39-pul-haiku
 
 ---
 

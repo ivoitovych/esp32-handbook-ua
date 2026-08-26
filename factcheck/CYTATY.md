@@ -13,9 +13,9 @@
 | `джерело не в кеші` | нема з чим звіряти: `--kachaty`, або егрес не пускає |
 | `нема чого звіряти` | доказ без URL або без дослівного уривка (клас `C`, `E`, `K`) |
 
-Записів доказів: **227**. Звірено дослівно: **62**. Не знайдено: **51**. Джерело не в кеші: **32**. Нема чого звіряти: **82**.
+Записів доказів: **233**. Звірено дослівно: **68**. Не знайдено: **51**. Джерело не в кеші: **32**. Нема чого звіряти: **82**.
 
-Станом на 2026-08-26 18:44 UTC.
+Станом на 2026-08-26 18:54 UTC.
 
 
 ## **не знайдено** — 51
@@ -58,7 +58,7 @@
 | Таблиці адрес прошивки — три рядки на три сімейства | `pass-31-adresy-i-api` | 3 з 9 рядків: «* At a 0x10000 (64 KB) offset in the flash is the app labelled…»; «"factory". The bootloader runs this app by default.…»; «nvs,      data, nvs,     0x9000,  0x6000,…» |
 | ESP_ERROR_CHECK — це assert, а не обробка помилок | `pass-31-adresy-i-api` | 2 з 15 рядків: «#define ESP_OK          0    /*!< esp_err_t value indicating success *…»; «* message but isn't terminating the program.…» |
 | ESP_LOGD не коштує нічого при рівні збирання Info | `pass-31-adresy-i-api` | 6 з 6 рядків: «* @brief Compile-time log level.…»; «* removed by the preprocessor and take no space in the binary and no…»; «* time at runtime.…» |
-| Коди помилок OTA і NVS, які книга називає поіменно | `pass-31-adresy-i-api` | 4 з 6 рядків: «#define ESP_ERR_OTA_PARTITION_CONFLICT         (ESP_ERR_OTA_BASE + 0x0…»; «#define ESP_ERR_OTA_VALIDATE_FAILED            (ESP_ERR_OTA_BASE + 0x0…»; «partition, and is used together with the FAT filesystem via…» |
+| Коди помилок OTA і NVS, які книга називає поіменно | `pass-31-adresy-i-api` | 2 з 6 рядків: «partition, and is used together with the FAT filesystem via…»; «esp_vfs_fat_spiflash_mount_rw_wl.…» |
 | DAC, ADC-затухання й обв'язка входу — розділ 33 | `pass-32-pul-shmatky-1-3` | 8 з 11 рядків: «Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input…»; «voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,…»; «the attenuation of ADC is set to 11 dB, and input voltage higher than…» |
 | LISTEN_ONLY і NO_ACK — режими TWAI дослівно | `pass-32-pul-shmatky-1-3` | 2 з 7 рядків: «The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.…»; «Therefore, an external transceiver is required to connect to a TWAI…» |
 | Рівні логу, esp_err_to_name і монітор — розділ 25 | `pass-32-pul-shmatky-1-3` | 7 з 10 рядків: «choice LOG_DEFAULT_LEVEL…»; «bool "Default log verbosity"…»; «default LOG_DEFAULT_LEVEL_INFO…» |
@@ -111,7 +111,7 @@
 | Тільки-вхідні, консоль і USB-JTAG у довіднику пінів | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
 | Піновий план проєкту 62 — три сімейства, кожен пін вільний | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
 
-## звірено — 62
+## звірено — 68
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -177,6 +177,12 @@
 | Порядок читання backtrace — знахідку відхилено | `pass-35-vlasna-pomylka-boot` | 2 рядків |
 | Сімейство, ревізію, кристал і MAC друкує преамбула з'єднання | `pass-36-chip-id` | 8 рядків |
 | GPIO11 на C3 — це майданчик VDD_SPI, живлення флешу | `pass-38-pul-shmatky-9-11` | 7 рядків |
+| Рядки режиму завантаження — перелік із документації esptool | `pass-39-pul-haiku` | 3 рядків |
+| Пін входу в бутлоадер за сімействами — підстановки esptool | `pass-39-pul-haiku` | 3 рядків |
+| Внутрішнє підтягування 45 кОм на піні входу в бутлоадер | `pass-39-pul-haiku` | 2 рядків |
+| GPIO16 і GPIO17 на classic живляться з домену VDD_SDIO | `pass-39-pul-haiku` | 3 рядків |
+| GPIO5 на classic — CS апаратного VSPI | `pass-39-pul-haiku` | 1 рядків |
+| Сила драйвера GPIO — типова середня, і файл лежить не там | `pass-39-pul-haiku` | 5 рядків |
 
 ## нема чого звіряти — 82
 

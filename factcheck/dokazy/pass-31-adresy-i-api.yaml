@@ -152,6 +152,19 @@
     тому, що стоїть у тих самих реченнях. Клас одиниці від того не
     зростає — доказ покриває технічну половину.
 
+# ⚠ ЦИТАТА БУЛА ХИБНА — виправлено в проході 39 третім шаром.
+#
+# Записано було `+0x02` і `+0x04`; насправді `+0x01` і `+0x03`. Тобто
+# я не скопіював заголовок, а **відтворив його з пам'яті** й помилився
+# у двох числах із двох. Клас при цьому стояв `A`.
+#
+# Книга від цього не постраждала: вона називає ці помилки **іменами**, а
+# не числами, і жодного зсуву не друкує. Тобто помилка сиділа рівно там,
+# де її ніхто не шукав, — у доказі, а не у тексті.
+#
+# Знайшов це помічник на Haiku, звіряючи цитату з файлом. Ані сильніша
+# модель, ані я сам за п'ять проходів цього не побачили: цитата
+# виглядала правильно, бо була правдоподібна.
 - nazva: Коди помилок OTA і NVS, які книга називає поіменно
   zbih: '`ESP_ERR_OTA_VALIDATE_FAILED`|`ESP_ERR_OTA_PARTITION_CONFLICT`|`ESP_ERR_INVALID_ARG` при налаштуванні|`wear_levelling`|`esp_vfs_fat`'
   klas: A
@@ -161,9 +174,9 @@
     .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
   cytata: |
     (esp_ota_ops.h)
-    #define ESP_ERR_OTA_BASE                       0x1500
-    #define ESP_ERR_OTA_PARTITION_CONFLICT         (ESP_ERR_OTA_BASE + 0x02)
-    #define ESP_ERR_OTA_VALIDATE_FAILED            (ESP_ERR_OTA_BASE + 0x04)
+    #define ESP_ERR_OTA_BASE                         0x1500                     /*!< Base error code for ota_ops api */
+    #define ESP_ERR_OTA_PARTITION_CONFLICT           (ESP_ERR_OTA_BASE + 0x01)  /*!< Error if request was to write or erase the current running partition */
+    #define ESP_ERR_OTA_VALIDATE_FAILED              (ESP_ERR_OTA_BASE + 0x03)  /*!< Error if OTA app image is invalid */
 
     (esp_err.h)
     #define ESP_ERR_INVALID_ARG         0x102
