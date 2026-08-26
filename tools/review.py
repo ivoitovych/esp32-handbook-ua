@@ -14,6 +14,7 @@
   блоки       незакриті ::: і невідомі класи
   таблиці     різна кількість колонок у рядках однієї таблиці
   мова        типові одруки й невідповідності термінології
+  кирилиця    кирилична літера всередині латинського слова в блоці коду
 """
 
 import re
@@ -191,6 +192,28 @@ def perevirka_movy(fs: list[Path]) -> list[str]:
     return znaxidky
 
 
+RE_ZMISH = re.compile(r"[A-Za-z][а-щьюяїієґА-ЩЬЮЯЇІЄҐ]|[а-щьюяїієґА-ЩЬЮЯЇІЄҐ][A-Za-z]")
+
+
+def perevirka_kyrylyci_v_kodi(fs: list[Path]) -> list[str]:
+    """Кирилиця всередині латинського слова в блоці коду.
+
+    Ловить те, чого око не бачить взагалі: кириличну «о» посеред URL або
+    імені функції. Такий код компілюється або не компілюється, але читач
+    не має жодного шансу зрозуміти, чому. Коментарі українською в коді
+    сюди не потрапляють: там кирилиця не межує з латиницею впритул.
+    """
+    znaxidky = []
+    for f in fs:
+        rel = str(f.relative_to(ROOT))
+        for blok in re.finditer(r"```.*?```", f.read_text(encoding="utf-8"), re.S):
+            for ryadok in blok.group(0).split("\n"):
+                m = RE_ZMISH.search(ryadok)
+                if m:
+                    znaxidky.append(f"{rel}: «{m.group(0)}» у рядку   {ryadok.strip()[:80]}")
+    return znaxidky
+
+
 def perevirka_povtoriv(fs: list[Path]) -> list[str]:
     """Однакові речення в різних файлах — кандидати на порушення Р10."""
     de = defaultdict(list)
@@ -216,6 +239,7 @@ def main() -> int:
         ("bloky", perevirka_blokiv),
         ("tablyci", perevirka_tablyc),
         ("mova", perevirka_movy),
+        ("kyrylycya-v-kodi", perevirka_kyrylyci_v_kodi),
         ("dubli", perevirka_povtoriv),
     ]
     vsjogo = 0

@@ -334,6 +334,54 @@ GPIO» (`gpio_set_drive_capability`). Звірено 2026-08-26.
 
 ---
 
+## Файлові системи: що входить до ESP-IDF, а що ні
+
+**SPIFFS і FATFS — компоненти самого ESP-IDF** (`components/spiffs`,
+`components/fatfs`). **LittleFS до ESP-IDF не входить**: це зовнішній
+компонент із реєстру, `joltwallet/littlefs` (репозиторій
+`joltwallet/esp_littlefs`, на момент звірки версія 1.22.3, вимагає
+`idf >= 5.0`).
+
+**FAT на вбудованому флеші не вирівнює знос сама.** Це робить окремий
+компонент `wear_levelling`, який ESP-IDF підставляє під неї: точка входу
+`esp_vfs_fat_spiflash_mount_rw_wl()` в `esp_vfs_fat.h`. Тобто твердження
+«у FAT немає вирівнювання зносу» для ESP-IDF хибне; правильне
+формулювання — «не власним механізмом, а окремим шаром».
+
+Джерело: дерево ESP-IDF `release/v5.5` (наявність і відсутність
+відповідних каталогів `components/`), `components/fatfs/vfs/esp_vfs_fat.h`,
+`idf_component.yml` репозиторію `joltwallet/esp_littlefs`.
+Звірено 2026-08-26.
+
+**Поправка до першої редакції розділу 18.** Таблиця порівняння ФС
+приписувала FAT відсутність вирівнювання зносу і не згадувала, що
+LittleFS, який розділ рекомендує за замовчуванням, у `menuconfig` не
+з'явиться, доки його не поставити з реєстру. Обидва місця виправлено.
+
+---
+
+## Рівні оптимізації в menuconfig
+
+Перелік у `Compiler options` → `Optimization Level` (кореневий `Kconfig`
+ESP-IDF, `choice COMPILER_OPTIMIZATION`) складається з чотирьох пунктів:
+
+| Пункт меню | Прапорець |
+|---|---|
+| `Debug (-Og)` | `-Og` — **за замовчуванням** |
+| `Optimize for size (-Os with GCC, -Oz with Clang)` | `-Os` |
+| `Optimize for performance (-O2)` | `-O2` |
+| `Debug without optimization (-O0)` | `-O0` |
+
+Джерело: `Kconfig` ESP-IDF `release/v5.5`, `choice COMPILER_OPTIMIZATION`.
+Звірено 2026-08-26.
+
+**Поправка до першої редакції розділу 27.** Було сказано вибрати пункт
+`Debug`, щоб отримати `-O0`. Пункт `Debug` дає `-Og` — тобто рівно те,
+що вже стоїть за замовчуванням і від чого розділ радить тікати.
+Правильний пункт — `Debug without optimization (-O0)`.
+
+---
+
 ## Незвірене
 
 Перелік того, що вжито в тексті, але ще не звірено з першоджерелом.
