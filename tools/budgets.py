@@ -66,19 +66,20 @@ def main() -> int:
         for f in sorted((ROOT / group).glob("*.md")):
             w, c, i = measure(f)
             lo, hi = lim["words"]
+            max_code, max_img = lim["code"], lim["img"]
             # Проєкти ярусу 2 — це переважно код із поясненнями,
             # тому орієнтир на прозу до них не застосовується (Р9-а).
             if "-proj-" in f.name:
-                lo, hi, lim = 0, 0, {"code": 99, "img": 99}
+                lo, hi, max_code, max_img = 0, 0, 99, 99
             flags = []
             if hi and w > hi:
                 flags.append(f"слів {w} > {hi}")
             if lo and w < lo:
                 flags.append(f"слів {w} < {lo} — схоже, це ще заготовка")
-            if c > lim["code"]:
-                flags.append(f"коду {c} > {lim['code']}")
-            if i > lim["img"]:
-                flags.append(f"схем {i} > {lim['img']}")
+            if c > max_code:
+                flags.append(f"коду {c} > {max_code}")
+            if i > max_img:
+                flags.append(f"схем {i} > {max_img}")
             rows.append((str(f.relative_to(ROOT)), w, c, i, flags))
             if flags:
                 over += 1

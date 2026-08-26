@@ -226,6 +226,15 @@
 
   show figure.caption: set text(font: font-sans, size: 0.8em, fill: luma(25%))
 
+  // Порожній квадратик списку задач (pandoc віддає U+2610) малюємо самі:
+  // у текстових гарнітурах цього гліфа немає, і підстановка з іншого
+  // шрифту приходить завеликою і рве рядок.
+  show "☐": box(width: 0.72em, height: 0.72em, baseline: 0.08em,
+                inset: 0pt, stroke: 0.5pt + ink, radius: 0.5pt)
+  show "☑": box(width: 0.72em, height: 0.72em, baseline: 0.08em,
+                inset: 0pt, stroke: 0.5pt + ink, radius: 0.5pt,
+                align(center + horizon, text(size: 0.6em, sym.checkmark)))
+
   body
 }
 
@@ -320,12 +329,14 @@
       )
     },
   )
-  show: base-styles.with(size: 10pt, leading: 0.58em)
-  set par(spacing: 0.85em)
+  show: base-styles.with(size: 9.6pt, leading: 0.56em)
+  set par(spacing: 0.8em)
   show heading: set text(font: font-sans, fill: ink, hyphenate: false)
   show heading: set par(justify: false)
-  show table: set block(spacing: 0.85em)
-  show raw.where(block: true): set block(spacing: 0.85em)
+  show table: set block(spacing: 0.8em)
+  show raw.where(block: true): set block(spacing: 0.8em)
+  set list(spacing: 0.5em)
+  set enum(spacing: 0.5em)
   // Кожна картка ярусу 0 починається з нової сторінки (Р9: одна сторінка).
   show heading.where(level: 2): it => {
     pagebreak(weak: true)

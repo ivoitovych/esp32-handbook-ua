@@ -39,6 +39,9 @@ targets:
           - kartky/k10-komandy.md
           - kartky/k11-nikoly.md
           - kartky/k12-komplekt.md
+          - kartky/k13-zhyvlennya.md
+          - kartky/k14-rivni.md
+          - kartky/k15-seriyna.md
       - title: "Частина I. Платформа"
         blurb: >-
           Що це за кремній, чим сімейства різняться і коли ESP32 — не той вибір.
@@ -203,6 +206,9 @@ targets:
           - kartky/k10-komandy.md
           - kartky/k11-nikoly.md
           - kartky/k12-komplekt.md
+          - kartky/k13-zhyvlennya.md
+          - kartky/k14-rivni.md
+          - kartky/k15-seriyna.md
 
   # Допоміжна ціль: проєкти ярусу 2, A4.
   proekty:
