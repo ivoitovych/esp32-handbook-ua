@@ -83,6 +83,21 @@ RE_PROPUSK = re.compile(r"…|\.\.\.")
 # не лише не є частиною джерела — вона ще й **склеювала** б сусідні
 # рядки в один абзац, і тоді не знаходився б жоден.
 RE_POZNACHKA = re.compile(r"^\([^()]*\)$")
+# Назва, що сама себе оголошує редакційною. Перша редакція перевірки
+# спрацювала на 46 записах, і майже всі виявилися чесним `E`: «авторський
+# підсумок», «рейтинг причин», «заголовок таблиці». Супровідник у назві
+# **уже сказав**, що це судження, а не факт про світ — і тригер, який
+# цього не читає, перетворює корисне питання на шум.
+RE_SAM_KAZHE_E = re.compile(
+    r"авторськ|підсум|рейтинг|спостереж|узагальн|заголов|назви колонок|"
+    r"рамка|порада|редакційн|вибір автора|оцінка|міркуванн|формулюванн|"
+    r"ринков|маршрут|позиція", re.I)
+
+# Число з одиницею виміру: те, для чого джерело майже завжди існує.
+RE_CHYSLO_Z_ODYNYCEYU = re.compile(
+    r"\d+(?:[.,]\d+)?\s*(?:мА|мкА|нА|А\b|мВ|В\b|кВ|Ом|кОм|МОм|Гц|кГц|МГц|"
+    r"ГГц|мс|мкс|нс|с\b|°C|дБм|дБ|мм|см|м\b|Вт|мВт|Гн|мГн|нФ|мкФ|пФ|"
+    r"КБ|МБ|ГБ|біт|байт|%)")
 
 
 def rozgornuty(url: str) -> list[str]:
@@ -482,7 +497,7 @@ def perevirka(kachaty: bool,
     naslidky: list[dict] = []
     pidsumok = {"ok": 0, "ne_znaydeno": 0, "nedosyazhne": 0, "nichoho": 0,
                 "vygadane": 0, "zaglushka": 0, "okom": 0, "pomylka": 0,
-                "nechytne": 0}
+                "nechytne": 0, "nadmirnyy_e": 0}
     kesh_tekstu: dict[str, str | None] = {}
 
     for f in (fayly if fayly is not None else sorted(DOKAZY.glob("*.yaml"))):
@@ -530,6 +545,34 @@ def perevirka(kachaty: bool,
                            f"«{str(z.get('dzherelo') or '')[:60]}»"))
                 continue
 
+            # **Надмірний `E` — дзеркало вигаданого джерела.** Знахідка
+            # М2 від 22:23Z, і найважливіше, що дала остання хвиля.
+            #
+            # Клас `E` означає «зовнішнього джерела не існує за
+            # побудовою»: редакційне рішення, порада, рамка викладу.
+            # Помічники ставили його твердженням **із числами** — «4.7
+            # кОм обов'язкове», «3.3 В на обох лініях». Для таких
+            # джерело існує, і М2 довів це для трьох із трьох, що
+            # перевірив.
+            #
+            # Наслідок той самий, що у вигаданого джерела: одиниця
+            # виходить із роботи назавжди. Але помітити важче — надмірний
+            # `E` схожий на обережність, а обережність ми заохочували
+            # обидва. Учили «не натягуй `A`»; не сказали «і не тікай
+            # у `E`».
+            #
+            # Тому це **питання, а не заборона**: `E` на твердженні, у
+            # назві якого число з одиницею виміру, друкується окремим
+            # переліком і рішення лишає людині.
+            if (maye_klas and klas == "E"
+                    and RE_CHYSLO_Z_ODYNYCEYU.search(nazva)
+                    and not RE_SAM_KAZHE_E.search(nazva)):
+                pidsumok["nadmirnyy_e"] = pidsumok.get("nadmirnyy_e", 0) + 1
+                naslidky.append(dict(
+                    fayl=f.stem, nazva=nazva, stan="nadmirnyy_e",
+                    detali="клас E, а в назві число з одиницею"))
+                continue
+
             # Цитата, яку супровідник звірив очима там, де витягання
             # тексту руйнує структуру. Знахідка М2: без цього стану шар 3
             # б'є на сполох на **правильних** цитатах, і за тиждень його
@@ -542,7 +585,31 @@ def perevirka(kachaty: bool,
                     detali=str(z.get("perevireno-okom"))[:90]))
                 continue
 
-            frahmenty = uryvky(str(z.get("cytata") or ""))
+            # **Читання таблиці — не цитата, і це два різні роди.**
+            # Знахідка М2 від 22:05Z, і вона стосується самої побудови
+            # поля `cytata`.
+            #
+            # У datasheet факт часто живе в перетині рядка й стовпця, а
+            # назва параметра стоїть у комірці, розтягнутій на кілька
+            # рядків. Зібрати з цього «рядок таблиці» можна лише рукою —
+            # злити клітинки, дописати `Typ`, `Min`, `(note 3)`. Факт
+            # при цьому правильний, а суцільного рядка в документі
+            # **немає й не буде**, скільки б ми не покращували витягання.
+            #
+            # М2 знайшов це в себе, назвавши прямо: «це рівно те, що ми
+            # звемо помилкою помічника — коментар, вписаний у поле
+            # цитати; я робив це власноруч і водночас перевіряв за це
+            # інших».
+            #
+            # Тому окреме поле: перелік клітинок, кожна перевіряється
+            # підрядком **окремо**, без вигаданих відступів і дописаних
+            # слів. Пояснення йде в нотатку, де йому й місце.
+            tablychna = z.get("cytata-tablytsya")
+            if tablychna:
+                frahmenty = [[str(k).strip()] for k in tablychna
+                             if str(k).strip()]
+            else:
+                frahmenty = uryvky(str(z.get("cytata") or ""))
             urly = dzherela_zapysu(z)
             if not frahmenty or not urly:
                 pidsumok["nichoho"] += 1
@@ -653,6 +720,7 @@ def zvit(naslidky: list[dict], pidsumok: dict[str, int]) -> None:
                "zaglushka": "**у кеші заглушка, не документ**",
                "okom": "звірено очима",
                "nechytne": "**файл є, витягти текст нічим**",
+               "nadmirnyy_e": "клас E на твердженні з числом — перевірити",
                "pomylka": "**хибний запис**"}
     r = [ZAHOLOVOK_ZVITU.rstrip("\n"), ""]
     r.append(f"Записів доказів: **{sum(pidsumok.values())}**. "
@@ -662,7 +730,7 @@ def zvit(naslidky: list[dict], pidsumok: dict[str, int]) -> None:
              f"Нема чого звіряти: **{pidsumok['nichoho']}**.\n")
     r.append(f"Станом на {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC.\n")
     for stan in ("vygadane", "zaglushka", "pomylka", "nechytne",
-                 "ne_znaydeno",
+                 "nadmirnyy_e", "ne_znaydeno",
                  "nedosyazhne", "okom", "ok", "nichoho"):
         grupa = [n for n in naslidky if n["stan"] == stan]
         if not grupa:
@@ -700,6 +768,10 @@ def main() -> int:
           f"не в кеші {pidsumok['nedosyazhne']}; "
           f"без цитати {pidsumok['nichoho']}; "
           f"звірено очима {pidsumok['okom']}")
+    if pidsumok["nadmirnyy_e"]:
+        print(f"   · клас E на твердженні з числом: "
+              f"{pidsumok['nadmirnyy_e']} — перевірити, чи джерела справді "
+              f"немає")
     if pidsumok["vygadane"] or pidsumok["zaglushka"] or pidsumok["pomylka"]:
         print(f"   ⚠ вигаданих джерел {pidsumok['vygadane']}; "
               f"заглушок у кеші {pidsumok['zaglushka']}; "
