@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Шар 3: чи справді цитата є в джерелі.
+"""Шар 3 — ЗАСТАРІЛИЙ. Уживайте tools/citaty.py від М1: він потужніший
+і перевіряє вихід помічника ДО того, як той потрапляє в реєстр.
+
+Цей файл лишається лише через функцію znayty_ryadok (табличне
+зіставлення), якої в citaty.py немає. Решта — дублювання.
+
+Чи справді цитата є в джерелі.
 
 Детермінований скрипт без жодної моделі. Бере кожен доказ класу `A`,
 знаходить документ у кеші й перевіряє, що поле `cytata` справді в ньому є.
@@ -71,6 +77,19 @@ def znayty_ryadok(ryadok: str, tekst: str) -> bool:
         poz.append(i)
     return (max(poz) - min(poz)) < 4000
 
+
+def rozvyazne(z: dict) -> bool:
+    """Чи є в полі `dzherelo` щось, що взагалі може бути документом.
+
+    URL, шлях у репозиторії, назва файлу, назва стандарту з номером —
+    так. «Властивості логіки CMOS», «фундаментальне правило електроніки» —
+    ні: це міркування в полі джерела, тобто клас A без джерела.
+    """
+    d = str(z.get("dzherelo", ""))
+    if re.search(r"https?://|\.pdf|\.h\b|\.c\b|\.rst\b|components/|datasheet|Datasheet|IEC \d|UM\d|SCLS|Table \d", d):
+        return True
+    return False
+
 def tekst_dokumenta(shlyah: pathlib.Path) -> str:
     kesh_txt = shlyah.with_suffix(".txt")
     if not kesh_txt.exists():
@@ -101,7 +120,7 @@ def znayty_dokument(z: dict) -> pathlib.Path | None:
 def main() -> int:
     import yaml
     detal = "-v" in sys.argv
-    vsogo = pereveryly = zbih = bez_dok = ne_znayshly = 0
+    vsogo = pereveryly = zbih = bez_dok = ne_znayshly = ne_rozvyazne = 0
     bidy: list[str] = []
 
     for f in sorted(DOKAZY.glob("*.yaml")):
@@ -115,9 +134,21 @@ def main() -> int:
                 continue
             dok = znayty_dokument(z)
             if dok is None:
+                # Найважливіше рішення в цьому скрипті, і воно з практики.
+                # «Джерела немає в кеші» — не пропуск, а РОЗБІЖНІСТЬ. Саме в
+                # цьому мовчазному кошику ховалися записи класу A, у полі
+                # `dzherelo` яких стояв не документ, а міркування:
+                # «Властивості логіки CMOS», «Типовий дизайн модульних плат».
+                # Доки скрипт лише мовчки їх пропускав, вони виглядали як
+                # чесні докази, для яких просто не завантажили файл.
                 bez_dok += 1
-                if detal:
-                    print(f"  ?  {z['nazva'][:52]} — документа немає в кеші")
+                if rozvyazne(z):
+                    if detal:
+                        print(f"  ?  {z['nazva'][:52]} — джерело назване, файла нема")
+                else:
+                    ne_rozvyazne += 1
+                    print(f"  ✗✗ {z['nazva'][:56]}")
+                    print(f"       джерело не є документом: {str(z.get('dzherelo',''))[:74]}")
                 continue
             tekst = tekst_dokumenta(dok)
             if not tekst:
@@ -141,10 +172,11 @@ def main() -> int:
                     print(f"       не знайдено: {r[:88]}")
 
     print(f"\nшар 3: доказів класу A {vsogo}; перевірено {pereveryly}; "
-          f"збіглося {zbih}; не знайдено {ne_znayshly}; без документа в кеші {bez_dok}")
+          f"збіглося {zbih}; не знайдено {ne_znayshly}; без документа {bez_dok}"
+          f"; ДЖЕРЕЛО НЕ ДОКУМЕНТ {ne_rozvyazne}")
     for b in bidy:
         print(f"  ⚠ {b}")
-    return 1 if (ne_znayshly or bidy) else 0
+    return 1 if (ne_znayshly or bidy or ne_rozvyazne) else 0
 
 
 if __name__ == "__main__":
