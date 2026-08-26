@@ -162,14 +162,34 @@
 }
 
 // ── Колонтитул ──────────────────────────────────────────────────────────
-// Верхній колонтитул: назва книги на парних, поточний розділ на непарних.
+// Назва книги на парних сторінках, поточний розділ на непарних.
+//
+// Дві тонкощі, через які наївна реалізація дає неправильний результат.
+//
+// Колонтитул обчислюється до того, як на сторінку ляже вміст, тому
+// `before(here())` на сторінці початку розділу знаходить ПОПЕРЕДНІЙ
+// розділ. Тому шукаємо за номером сторінки, а не за позицією.
+//
+// На сторінці, де розділ починається, колонтитула немає взагалі — так
+// заведено в книжковому наборі: назва розділу вже стоїть заголовком, і
+// дублювати її вгорі нема сенсу.
 #let running-header(meta) = context {
-  let chapters = query(selector(heading.where(level: 2)).before(here()))
-  let chap = if chapters.len() > 0 { chapters.last().body } else { meta.title }
+  let n = counter(page).get().first()
+  let fiz = here().page()
+  let chapters = query(heading.where(level: 2))
+  let parts = query(heading.where(level: 1))
+
+  // сторінка початку розділу або шмуцтитул частини — без колонтитула
+  if chapters.any(h => h.location().page() == fiz) { return }
+  if parts.any(h => h.location().page() == fiz) { return }
+
+  let before = chapters.filter(h => h.location().page() < fiz)
+  if before.len() == 0 { return }
+
   set text(font: font-sans, size: 0.68em, fill: dim, tracking: 0.03em)
   block(width: 100%, below: 0.5em)[
-    #if calc.odd(counter(page).get().first()) {
-      align(right, chap)
+    #if calc.odd(n) {
+      align(right, before.last().body)
     } else {
       align(left, meta.title)
     }
@@ -310,6 +330,7 @@
   colophon-front(meta)
 
   table-of-contents()
+  pagebreak(to: "odd", weak: false)
   counter(page).update(1)
   body
 }
@@ -374,6 +395,7 @@
   title-page(meta)
   colophon-front(meta)
   table-of-contents()
+  pagebreak(to: "odd", weak: false)
   counter(page).update(1)
   body
 }
