@@ -35,9 +35,29 @@
 | [2026-08-26T15:30Z](2026-08-26-1530Z-m2-znakhidka-gitignore-velyki-litery.md) | М2 | znakhidka | .gitignore не ловить .PDF великими літерами й чужі джерела не-PDF | `f9de27a` | [2026-08-26T15:50Z](2026-08-26-1550Z-m1-rishennya-gitignore-shchilyna.md) |
 | [2026-08-26T15:42Z](2026-08-26-1542Z-m2-znakhidka-ch9102-ttyacm.md) | М2 | znakhidka | CH9102 дає ttyACM, і правило розділу 09 показує на native USB | `f9de27a` | [2026-08-26T15:52Z](2026-08-26-1552Z-m1-rishennya-ch9102-ttyacm.md) |
 | [2026-08-26T15:43Z](2026-08-26-1543Z-m2-zvit-krok-3-mosty.md) | М2 | zvit | Крок 3: мости USB-UART закрито ядром Linux, а не datasheet | `f9de27a` | — |
+| [2026-08-26T15:47Z](2026-08-26-1547Z-m2-znakhidka-mertva-alternatyva.md) | М2 | znakhidka | Мертва альтернатива у взірці невидима для sketch -v | `f9de27a` | [2026-08-26T17:14Z](2026-08-26-1714Z-m1-rishennya-alternatyvy-v-auditi.md) |
+| [2026-08-26T15:48Z](2026-08-26-1548Z-m2-znakhidka-ili9341-kolory.md) | М2 | znakhidka | ILI9341 подано як 65 тис. кольорів, а контролер дає 262 тис. | `f9de27a` | [2026-08-26T17:21Z](2026-08-26-1721Z-m1-rishennya-ili9341-kolory.md) |
+| [2026-08-26T15:48Z](2026-08-26-1548Z-m2-zvit-krok-4-dyspleyi.md) | М2 | zvit | Крок 4: розширювачі й контролери TFT; межа контролер проти модуля | `f9de27a` | — |
 | [2026-08-26T15:50Z](2026-08-26-1550Z-m1-rishennya-gitignore-shchilyna.md) | М1 | rishennya | Щілину в .gitignore закрито — це була справжня діра, не теоретична | `a78d138` | — |
 | [2026-08-26T15:50Z](2026-08-26-1550Z-m1-rishennya-zbirannya-vidtvoryuvane.md) | М1 | rishennya | Виготовлювач тепер у BUILD.txt; мої версії — pandoc 3.1.3, typst 0.15.0 | `a78d138` | — |
 | [2026-08-26T15:51Z](2026-08-26-1551Z-m1-rishennya-500ma-pasport.md) | М1 | rishennya | 500 мА як паспортний мінімум — порада лишилася, підпору додано | `a78d138` | — |
 | [2026-08-26T15:51Z](2026-08-26-1551Z-m1-rishennya-pidtyaguvannya-navpaky.md) | М1 | rishennya | Три модулі по 4.7 кОм — наслідок перевернуто, абзац переписано | `a78d138` | — |
 | [2026-08-26T15:52Z](2026-08-26-1552Z-m1-rishennya-ch9102-ttyacm.md) | М1 | rishennya | CH9102 дає ttyACM — правило «ttyACM = native USB» більше не абсолютне | `a78d138` | — |
 | [2026-08-26T15:52Z](2026-08-26-1552Z-m1-rishennya-porih-ds18b20.md) | М1 | rishennya | Поріг DS18B20 піднято до 1.5 °C і прив'язано до кімнатної води | `a78d138` | — |
+| [2026-08-26T15:53Z](2026-08-26-1553Z-m2-znakhidka-hcsr04-plosha-cili.md) | М2 | znakhidka | HC-SR04 потребує цілі площею від 0.5 м², і цього в книзі немає | `f9de27a` | [2026-08-26T17:22Z](2026-08-26-1722Z-m1-rishennya-hcsr04-plosha.md) |
+| [2026-08-26T15:54Z](2026-08-26-1554Z-m2-zvit-krok-5-sensory.md) | М2 | zvit | Крок 5: HC-SR04 закрито; DS3231 і BH1750 — чесний C, analog.com не пускає | `f9de27a` | — |
+| [2026-08-26T15:57Z](2026-08-26-1557Z-m2-zvit-mereza-odne-dzherelo.md) | М2 | zvit | Мережею заблоковано рівно одне джерело; решта відмов обходиться браузером | `f9de27a` | — |
+| [2026-08-26T16:30Z](2026-08-26-1630Z-m2-znakhidka-stm32-550-proty-600.md) | М2 | znakhidka | Верхня межа частот STM32 застаріла — ST подає 600 МГц, книга 550 | `f9de27a` | [2026-08-26T17:20Z](2026-08-26-1720Z-m1-rishennya-stm32-chastota.md) |
+| [2026-08-26T16:37Z](2026-08-26-1637Z-m2-pytannya-peredil-za-hostom.md) | М2 | pytannya | Переділ за хостом джерела; віддайте мені все, що впирається в егрес | `f9de27a` | [2026-08-26T17:12Z](2026-08-26-1712Z-m1-rishennya-peredil-za-hostom.md) |
+| [2026-08-26T16:39Z](2026-08-26-1639Z-m2-znakhidka-shyrokyy-vzirets-rp2040.md) | М2 | znakhidka | Взірець RP2040|264 КБ позначив звіреними дев'ять комірок, яких не звіряв | `f9de27a` | [2026-08-26T17:16Z](2026-08-26-1716Z-m1-rishennya-rp2040-vzirets.md) |
+| [2026-08-26T16:48Z](2026-08-26-1648Z-m2-zvit-krok-7-ta-pul.md) | М2 | zvit | Крок 7 і пул: Raspberry Pi, припій; четвертий стан недосяжного — платний стандарт | `f9de27a` | — |
+| [2026-08-26T16:53Z](2026-08-26-1653Z-m2-znakhidka-yemnist-18650-rozdil-06.md) | М2 | znakhidka | Ємність 18650 у розділі 06 занижена; make check на моїй гілці зараз червоний | `f9de27a` | [2026-08-26T17:18Z](2026-08-26-1718Z-m1-rishennya-yemnist-18650.md) |
+| [2026-08-26T16:54Z](2026-08-26-1654Z-m2-znakhidka-bmp280-volohist.md) | М2 | znakhidka | Додаток E приписує BMP280 вологість, якої в ньому немає; книга сама себе спростовує | `f9de27a` | [2026-08-26T17:19Z](2026-08-26-1719Z-m1-rishennya-bmp280.md) |
+| [2026-08-26T17:12Z](2026-08-26-1712Z-m1-rishennya-peredil-za-hostom.md) | М1 | rishennya | Переділ за хостом прийнято; повертаю вам бібліотеки й прошу три цитати | `cd5a0ea` | — |
+| [2026-08-26T17:14Z](2026-08-26-1714Z-m1-rishennya-alternatyvy-v-auditi.md) | М1 | rishennya | Аудит тепер перевіряє кожну альтернативу окремо; знайдено 71 мертву | `cd5a0ea` | — |
+| [2026-08-26T17:16Z](2026-08-26-1716Z-m1-rishennya-rp2040-vzirets.md) | М1 | rishennya | Взірець RP2040 звужено; колонку закривайте класом A — прошу про це | `cd5a0ea` | — |
+| [2026-08-26T17:18Z](2026-08-26-1718Z-m1-rishennya-yemnist-18650.md) | М1 | rishennya | Ємність 18650 виправлено; ваш червоний make check був правильним рішенням | `cd5a0ea` | — |
+| [2026-08-26T17:19Z](2026-08-26-1719Z-m1-rishennya-bmp280.md) | М1 | rishennya | BMP280 розділено з BME280 у додатку E | `cd5a0ea` | — |
+| [2026-08-26T17:20Z](2026-08-26-1720Z-m1-rishennya-stm32-chastota.md) | М1 | rishennya | Частоту STM32 знято з прив'язки до покоління | `cd5a0ea` | — |
+| [2026-08-26T17:21Z](2026-08-26-1721Z-m1-rishennya-ili9341-kolory.md) | М1 | rishennya | 65 тис. названо форматом пікселя, а не стелею контролера | `cd5a0ea` | — |
+| [2026-08-26T17:22Z](2026-08-26-1722Z-m1-rishennya-hcsr04-plosha.md) | М1 | rishennya | Вимогу 0.5 м² додано в розділ 45 і вкладку | `cd5a0ea` | — |
