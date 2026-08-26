@@ -1,0 +1,101 @@
+# М2, крок 2 — межі напруги живлення й логіки, проти datasheet ESP32.
+#
+# Найщільніший вузол кошика `elektro`: попередження «не подавати 5 В»
+# повторюється в картках, додатках і симптомах, а спиралося досі ні на що.
+#
+# Джерело в кеші: `esp32-datasheet.pdf`, реєстр `factcheck/DZHERELA-m2.md`.
+# Взірці перевірено на чинному тексті М1 (база 4ba865c).
+
+- nazva: Абсолютний максимум входу — 3.6 В, тому 5 В убивають пін
+  zbih: 'П.ять вольтів на будь-який GPIO вбивають пін або|\*\*Не подавати 5 В на GPIO\.\*\*|\*\*П.ять вольтів на GPIO вбивають пін, а іноді чип\.\*\*|\*\*Подано 5 В на 3\.3-вольтовий вхід\.\*\*|подано 5 В на 3\.3 В|Логіка ESP32 — \*\*3\.3 В\*\*'
+  klas: A
+  dzherelo: >-
+    https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+    — ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings»
+    і Table 5-3 «DC Characteristics», с. 51
+  cytata: |
+    Table 5-1. Absolute Maximum Ratings
+    Parameter                                    Description              Min    Max   Unit
+    VDDA, VDD3P3, VDD3P3_RTC,
+    VDD3P3_CPU, VDD_SDIO                  Allowed input voltage          –0.3    3.6    V
+
+    Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause
+    permanent damage to the device.
+
+    Table 5-3. DC Characteristics (3.3 V, 25 °C)
+    VIH   High-level input voltage    0.75 × VDD   —   VDD + 0.3   V
+    VIL   Low-level input voltage           –0.3   —   0.25 × VDD  V
+
+    [2] Maximum VIH = VDD(max) + 0.5 V or 5.5 V, which ever is lower.
+  sposib: >-
+    PDF Espressif, кеш `esp32-datasheet.pdf`, реєстр
+    `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Попередження книги дістає нарешті числову підставу, і вона сильніша
+    за «логіка 3.3 В». Джерело нормує **абсолютний максимум** входу як
+    3.6 В і прямо каже, що вище — `permanent damage`. П'ять вольтів це
+    перевищення на 1.4 В, тобто не «поза рекомендованим», а поза
+    гранично допустимим.
+
+    Друга половина, потрібна для картки К14: поріг високого рівня —
+    `0.75 × VDD`, тобто близько 2.5 В при 3.3 В живлення. Тому
+    п'ятивольтовий вихід читається як логічна одиниця й «начебто
+    працює» — доки пін не деградує. Це пояснює найпідступніше в цій
+    несправності: вона не миттєва.
+
+- nazva: Робоча напруга живлення — 3.0–3.6 В, типова 3.3 В
+  zbih: 'не нижче 3\.0 В'
+  klas: A
+  dzherelo: >-
+    ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply
+    Characteristics», с. 51, разом із приміткою 2
+  cytata: |
+    Table 5-2. Recommended Power Supply Characteristics
+    Parameter                          Description                     Min       Typ   Max  Unit
+    VDDA, VDD3P3_RTC, VDD3P3,     Voltage applied to power
+    VDD_SDIO (3.3 V mode)         supply pins per power domain   2.3/3.0 [2]     3.3   3.6   V
+
+    [2] • Chips with a 3.3 V flash or PSRAM in-package: this minimum voltage is 3.0 V;
+        • Chips with no flash or PSRAM in-package: this minimum voltage is 2.3 V.
+  sposib: >-
+    PDF Espressif, кеш `esp32-datasheet.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Поріг «не нижче 3.0 В» у картці К13 збігається з нижньою межею
+    джерела для чипів із флешем у корпусі — тобто саме для того випадку,
+    який тримає в руках читач: модуль із флешем.
+
+    Примітка 2 додає те, чого в книзі немає й що варте рядка: для чипів
+    **без** флешу в корпусі нижня межа 2.3 В. Різниця не академічна —
+    вона пояснює, чому та сама просадка на одній платі валить завантаження,
+    а на іншій ні.
+
+- nazva: Джерело мусить давати щонайменше 0.5 А за datasheet
+  zbih: 'джерело для ESP32 з Wi-Fi має тягнути щонайменше\s+1 А'
+  klas: B
+  dzherelo: >-
+    ESP32 Series Datasheet v5.3, Table 5-2, параметр IVDD; разом із
+    Table 5-4 «Current Consumption Depending on RF Modes»
+  cytata: |
+    Table 5-2. Recommended Power Supply Characteristics
+    IVDD   Current delivered by external power supply    Min 0.5   —   —   A
+
+    Table 5-4 (пік передачі):
+    Transmit 802.11b, DSSS 1 Mbps, POUT = +19.5 dBm     Typ 240 mA
+  sposib: >-
+    PDF Espressif, кеш `esp32-datasheet.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Клас `B`, а не `A`, і це важливо розрізнити. Джерело нормує мінімум
+    **0.5 А**, а книга радить **1 А**. Числа різні, і суперечності немає
+    лише тому, що книга подає своє як «практичний висновок» і називає
+    причину — джерело мусить тримати напругу під короткими піками, а не
+    покривати середнє.
+
+    Datasheet цю причину підтверджує з іншого боку: пік передачі 240 мА
+    при середньому споживанні близько сотні. Тобто вимога джерела
+    визначається не середнім струмом, а здатністю не просісти на
+    короткому сплеску — саме те, що книга й каже.
+
+    Але формулювання «блок на 500 мА не годиться» варте нагляду: 0.5 А —
+    це рівно паспортний мінімум Espressif. Книга має рацію практично
+    (дешеві блоки просідають), проте читач, який звірить із datasheet,
+    побачить розбіжність. Винесено окремою знахідкою.
