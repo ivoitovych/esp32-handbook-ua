@@ -1,0 +1,53 @@
+# М2, джерело 2 наряду — ESP32 Series Datasheet, таблиця виводів.
+#
+# Це пункт, який М1 просив закрити першим: не через вагу (два
+# твердження з 169), а щоб перевірити, що правило класу A працює
+# однаково для обох супровідників. Мапінг MTCK/MTMS на GPIO13/GPIO14
+# знає кожен, хто чіпав JTAG на ESP32, і саме тому він лишався в класі
+# C двадцять два проходи — доки текст джерела не був у руках.
+#
+# Тепер він у руках. PDF узято з espressif.com, витяг наведено дослівно.
+
+- nazva: Розпіновка JTAG classic — MTCK на GPIO13, MTMS на GPIO14
+  zbih: '\| TMS \| `GPIO14` \||\| TCK \| `GPIO13` \|'
+  klas: A
+  dzherelo: >-
+    https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+    — ESP32 Series Datasheet v5.3, розділ 2.2 «Pin Overview»,
+    Table 2-1 «Pin Overview», с. 14-15
+  cytata: |
+    Name    No.   Type   Function
+    MTMS    17    I/O    GPIO14, ADC2_CH6, RTC_GPIO16, TOUCH6, EMAC_TXD2, HSPICLK, HS2_CLK, SD_CLK, MTMS
+    MTDI    18    I/O    GPIO12, ADC2_CH5, RTC_GPIO15, TOUCH5, EMAC_TXD3, HSPIQ, HS2_DATA2, SD_DATA2, MTDI
+    MTCK    20    I/O    GPIO13, ADC2_CH4, RTC_GPIO14, TOUCH4, EMAC_RX_ER, HSPID, HS2_DATA3, SD_DATA3, MTCK
+    MTDO    21    I/O    GPIO15, ADC2_CH3, RTC_GPIO13, TOUCH3, EMAC_RXD3, HSPICS0, HS2_CMD, SD_CMD, MTDO
+
+    Notes for Table 2-1 Pin Overview:
+    1. Function names:
+       MTMS
+       MTDI
+       MTCK    JTAG interface signals
+       MTDO
+  sposib: curl PDF з espressif.com, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Таблиця книги в розділі 27 збігається з джерелом дослівно: `TMS` —
+    `GPIO14` (вивід 17), `TCK` — `GPIO13` (вивід 20). Разом із проходом
+    20, який закрив `TDI`/`GPIO12` і `TDO`/`GPIO15` документацією
+    esptool, таблиця JTAG розділу 27 звірена повністю — усі чотири
+    сигнали.
+
+    Джерело дає більше, ніж просили в наряді, і це варте запису.
+    По-перше, примітка 1 до таблиці називає MTMS, MTDI, MTCK і MTDO
+    саме «JTAG interface signals» — тобто зв'язок сигналу з іменем
+    виводу стверджує сам datasheet, а не читач таблиці альтернативних
+    функцій. По-друге, розділ 2.3.1 «Restrictions for GPIOs and
+    RTC_GPIOs» ставить інтерфейс JTAG в один перелік зі strapping-пінами
+    як «important functions» — це та сама думка, з якої починається
+    попередження розділу 27.
+
+    Про спосіб. Наряд указував на таблицю IO_MUX (додаток A.4), і там
+    ці рядки теж є, але додаток верстається повернутим на 90°, і
+    pdftotext втрачає в ньому цифри: «GPIO» без номера, «VDD P» замість
+    «VDD3P3». Витяг наведено з Table 2-1, де ті самі відомості
+    видобуваються без утрат. Це не обхід правила, а вибір читабельної
+    таблиці в тому самому документі.
