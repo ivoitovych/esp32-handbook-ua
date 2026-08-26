@@ -41,6 +41,9 @@ VYDY = {"zavdannya", "pryynyato", "zvit",
 # невідомо, чи дійшло. Прийняття тут не ввічливість, а єдине місце, де
 # видно, що доручення зрозуміли так само, як його писали.
 POTREBUYUT_VIDPOVIDI = {"zavdannya", "pytannya", "znakhidka"}
+# Хто веде це дерево. Потрібно, щоб відрізнити власний борг від
+# очікування на відповідь іншого супровідника.
+YA = "М1"
 OBOVYAZKOVI = ("vid", "komu", "koly", "vyd", "tema", "baza")
 AVTOR = {"m1": "М1", "m2": "М2"}
 
@@ -152,22 +155,38 @@ def perevirka(suvoro: bool) -> int:
 
     vidkryti = [p for p in povid
                 if p["vyd"] in POTREBUYUT_VIDPOVIDI and p["imya"] not in vidpovidi]
+    # Відкрите відкритому не рівне. Питання, надіслане **вам**, — ваш
+    # борг: доки ви не відповіли, супровідник на тому боці чекає, і
+    # випускати книгу через його голову не можна.
+    #
+    # Питання, надіслане **вами**, — не борг, а очікування. Спиняти на
+    # ньому випуск означає спиняти роботу на тому, чого ви зробити не
+    # можете; а ворота, які не дають нічого вдіяти, за тиждень
+    # обходять — і тоді вони не спинять і справжнього боргу.
+    #
+    # Тому строгість рахує лише вхідні.
+    nash_borh = [p for p in vidkryti if p["vid"] != YA]
+    chekayemo = [p for p in vidkryti if p["vid"] == YA]
 
     for b in bidy:
         print(f"   ✗ {b}")
 
-    if vidkryti:
+    if nash_borh:
         znak = "✗" if suvoro else "·"
-        print(f"\n{znak} без відповіді: {len(vidkryti)}")
-        for p in sorted(vidkryti, key=lambda p: p["koly"]):
+        print(f"\n{znak} чекають нашої відповіді: {len(nash_borh)}")
+        for p in sorted(nash_borh, key=lambda p: p["koly"]):
             print(f"    {p['koly']}  {p['vid']} → {p['vyd']}: {p['tema']}")
             print(f"        {p['fayl']}")
+    if chekayemo:
+        print(f"\n· надіслано, чекаємо відповіді: {len(chekayemo)}")
+        for p in sorted(chekayemo, key=lambda p: p["koly"]):
+            print(f"    {p['koly']}  → {p['vyd']}: {p['tema']}")
 
     print(f"\nzvyazok: повідомлень {len(povid)}, порушень форми {len(bidy)}, "
-          f"без відповіді {len(vidkryti)}")
+          f"наш борг {len(nash_borh)}, чекаємо {len(chekayemo)}")
     if bidy:
         return 1
-    return 1 if (suvoro and vidkryti) else 0
+    return 1 if (suvoro and nash_borh) else 0
 
 
 def indeks() -> int:
