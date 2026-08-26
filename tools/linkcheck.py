@@ -64,19 +64,35 @@ def main() -> int:
             errors.append(f"якір {{#{a}}} оголошено {len(where)} разів: "
                           + ", ".join(where))
 
+    # Якір, оголошений у ще не написаному розділі, — не бите посилання,
+    # а посилання вперед. Відрізняємо одне від одного за тим, чи згадано
+    # цей слаг у канонічному змісті.
+    planned = set(RE_ANCHOR.findall(
+        (ROOT / "docs" / "zmist.md").read_text(encoding="utf-8")))
+    forward = 0
     for a, where in sorted(links.items()):
-        if a not in anchors:
-            for w in where:
-                errors.append(f"{w}: посилання на неоголошений якір «#{a}»")
+        if a in anchors:
+            continue
+        if a in planned:
+            forward += len(where)
+            continue
+        for w in where:
+            errors.append(f"{w}: посилання на неоголошений якір «#{a}»")
+    if forward:
+        print(f"  · посилань уперед, на ще не написані якорі: {forward}")
 
+    # Файли, перелічені в маніфесті, але ще не написані, — це план роботи,
+    # а не помилка: book.yaml описує книгу цілком з самого початку.
+    # Помилками лишаються лише биті якорі, дублі й відсутні зображення.
     manifest = yaml.safe_load((ROOT / "book.yaml").read_text(encoding="utf-8"))
     listed: set[str] = set()
-    for tname, t in manifest["targets"].items():
+    not_written: set[str] = set()
+    for t in manifest["targets"].values():
         for part in t.get("parts") or []:
             for rel in part.get("files") or []:
                 listed.add(rel)
                 if not (ROOT / rel).exists():
-                    errors.append(f"book.yaml [{tname}]: немає файлу «{rel}»")
+                    not_written.add(rel)
 
     orphan_files = sorted(str(f.relative_to(ROOT)) for f in files
                           if str(f.relative_to(ROOT)) not in listed)
@@ -84,6 +100,8 @@ def main() -> int:
 
     for e in errors:
         print(f"  ✗ {e}")
+    if not_written:
+        print(f"  · заплановано, ще не написано: {len(not_written)}")
     if orphan_files:
         print(f"  · не входять у жодну ціль book.yaml ({len(orphan_files)}): "
               + ", ".join(orphan_files[:8])
