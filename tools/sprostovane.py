@@ -26,22 +26,24 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-REYESTR = ROOT / "factcheck" / "SPROSTOVANE.md"
+# Реєстрів може бути кілька: головний і по одному на паралельного
+# супровідника (`SPROSTOVANE-m2.md`). Так вони не б'ються при злитті —
+# кожен пише лише у свій файл.
+REYESTRY = sorted((ROOT / "factcheck").glob("SPROSTOVANE*.md"))
 
 # Де шукаємо. Реєстр спростованого й звіти рецензій цитують хибні
 # формулювання за призначенням — там вони доречні.
 DE = ("kartky", "manual", "dodatky", "inserts", "docs")
-NE_CHIPATY = ("factcheck/SPROSTOVANE.md", "reviews/")
+NE_CHIPATY = ("factcheck/SPROSTOVANE", "reviews/", "zvyazok/")
 
 
 def zapysy() -> list[dict]:
-    text = REYESTR.read_text(encoding="utf-8")
-    bloky = re.findall(r"```yaml\n(.*?)```", text, re.S)
     out: list[dict] = []
-    for b in bloky:
-        dani = yaml.safe_load(b)
-        if isinstance(dani, list):
-            out += [z for z in dani if isinstance(z, dict) and z.get("zbih")]
+    for f in REYESTRY:
+        for b in re.findall(r"```yaml\n(.*?)```", f.read_text(encoding="utf-8"), re.S):
+            dani = yaml.safe_load(b)
+            if isinstance(dani, list):
+                out += [z for z in dani if isinstance(z, dict) and z.get("zbih")]
     return out
 
 
@@ -88,8 +90,8 @@ def main() -> int:
 
     for zh in zhahy:
         print(f"   • {zh}")
-    print(f"sprostovane: взірців {len(zap)}, файлів {perevireno}, "
-          f"знахідок {len(zhahy)}")
+    print(f"sprostovane: реєстрів {len(REYESTRY)}, взірців {len(zap)}, "
+          f"файлів {perevireno}, знахідок {len(zhahy)}")
     return 1 if zhahy else 0
 
 
