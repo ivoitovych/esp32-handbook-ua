@@ -54,6 +54,23 @@
 #let zakupivlya(body) = note-block("Закупівля", body, rule: 0.6pt)
 #let nezvorotne(body) = note-block("Незворотне", body, rule: 3pt, fill-bg: panel)
 
+// ── Присвята ────────────────────────────────────────────────────────────
+// Окрема сторінка з власною типографікою: без колонтитулів, без номера,
+// текст у верхній третині. Так її роблять у книжках, і саме тому вона не
+// може бути звичайним блоком-застереженням.
+#let prysvyata(body) = {
+  pagebreak(weak: true)
+  set page(header: none, footer: none, numbering: none)
+  v(1fr)
+  align(center, block(width: 70%)[
+    #set par(justify: false, leading: 0.9em)
+    #set text(size: 1.05em, style: "italic")
+    #body
+  ])
+  v(2fr)
+  pagebreak(weak: true)
+}
+
 // ── Посилання на картку ярусу 0 ─────────────────────────────────────────
 #let kartka(n, target) = box[
   #text(font: font-sans, size: 0.78em, weight: 600)[→ картка К#n]

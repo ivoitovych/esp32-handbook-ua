@@ -22,6 +22,7 @@ targets:
       - title: "Вступ"
         silent: true
         files:
+          - manual/prysvyata.md
           - manual/00-pro-dovidnyk.md
       - title: "Ярус 0. Картки"
         blurb: >-

@@ -33,6 +33,7 @@ NOTE_CLASSES = {
     "hrabli": "hrabli",
     "zakupivlya": "zakupivlya",
     "nezvorotne": "nezvorotne",
+    "prysvyata": "prysvyata",
 }
 
 RE_HEADING = re.compile(r"^(#{1,5})(\s)")
