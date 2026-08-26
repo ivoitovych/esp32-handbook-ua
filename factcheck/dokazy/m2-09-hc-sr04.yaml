@@ -1,0 +1,88 @@
+# М2, крок 5 — HC-SR04.
+#
+# Кластер важливий не кількістю, а ціною помилки: це найчастіше джерело
+# 5 В на сигнальній лінії ESP32 в усій книзі, і воно ж — головний
+# кандидат на спалений пін.
+#
+# Джерело в кеші: `hc-sr04.pdf` (ElecFreaks), реєстр
+# `factcheck/DZHERELA-m2.md`.
+
+- nazva: HC-SR04 — діапазон 2-400 см
+  zbih: '\*\*HC-SR04\*\* — ультразвуковий далекомір, 2–400 см\.'
+  klas: A
+  dzherelo: >-
+    Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — розділи
+    «Product features» і «Electric Parameter»
+  cytata: |
+    Ultrasonic ranging module HC-SR04 provides 2cm - 400cm non-contact
+    measurement function, the ranging accuracy can reach to 3mm.
+
+    Electric Parameter
+      Working Voltage      DC 5 V
+      Working Current      15mA
+      Working Frequency    40 kHz
+      Max Range            4m
+      Min Range            2cm
+      Measuring Angle      15 degree
+      Trigger Input Signal 10uS TTL pulse
+  sposib: >-
+    PDF ElecFreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Діапазон збігається дослівно. Джерело дає й точність — 3 мм, — якої
+    в книзі немає, і кут огляду 15°.
+
+- nazva: HC-SR04 живиться від 5 В, тому ECHO дає 5 В
+  zbih: 'HC-SR04 живиться від 5 В і видає \*\*5 В на виводі `ECHO`|HC-SR04 видає 5 В на `ECHO` — дільник обов.язковий'
+  klas: B
+  dzherelo: >-
+    Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks —
+    «Electric Parameter» і «Wire connecting»
+  cytata: |
+    Wire connecting direct as following:
+      5V Supply
+      Trigger Pulse Input
+      Echo Pulse Output
+      0V Ground
+
+    Electric Parameter
+      Working Voltage        DC 5 V
+      Echo Output Signal     Input TTL lever signal and the range in proportion
+  sposib: >-
+    PDF ElecFreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+  notatka: >-
+    Клас `B`, а не `A`, і різницю варто назвати чесно: datasheet **не
+    пише** «5 В на ECHO» дослівно. Він пише два факти — живлення `DC 5 V`
+    і що `ECHO` є `TTL lever signal`. Логіка TTL від п'ятивольтового
+    живлення дає високий рівень близько 5 В; висновок однозначний, але
+    це висновок.
+
+    Для книги різниці немає: дільник потрібен у будь-якому разі, бо
+    абсолютний максимум входу ESP32 — 3.6 В (доказ
+    `m2-06-napruga-mezhi`). Але реєстр має показувати `B`, а не вдавати
+    цитату, якої немає.
+
+- nazva: DS3231 і BH1750 — джерела недосяжні з цієї мережі
+  zbih: 'DS3231 · Що дає → RTC з батарейкою'
+  klas: C
+  dzherelo: >-
+    DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet
+    Maxim Integrated (нині Analog Devices) —
+    https://www.analog.com/en/products/ds3231.html
+  shukaty: >-
+    точність ходу (± ppm за температурою), струм від резервної батареї в
+    режимі підтримки, діапазон живлення VBAT і адреса на шині I²C
+    (очікується 0x68). Окремо — чи є в datasheet згадка про тип
+    батареї: у книзі стоїть CR2032, але це властивість **модуля**, а не
+    мікросхеми
+  notatka: >-
+    Чесний `C`. `analog.com` відмовляє **цій мережі** на рівні Akamai —
+    «Access Denied» із посиланням `errors.edgesuite.net`, і не лише
+    `curl`, а й справжньому Chrome. Це не фільтр на інструмент, а
+    рішення видавця; обійти його я не можу й не пробував.
+
+    Перевірено чотири дзеркала (Mouser, DigiKey, SparkFun,
+    rcscomponents) — жодне не віддало PDF. Те саме з BH1750 (ROHM).
+
+    Межа, що повторюється з кроку 4: `CR2032` у книзі — властивість
+    модуля, а не DS3231. Datasheet мікросхеми її не підтвердить ніколи,
+    хоч би він і відкрився.
