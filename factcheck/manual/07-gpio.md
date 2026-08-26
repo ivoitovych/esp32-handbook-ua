@@ -2520,7 +2520,7 @@
 
 ---
 
-<!-- fc id:T-07-119 sha:34181297 src:manual/07-gpio.md:257 klas:F -->
+<!-- fc id:T-07-119 sha:34181297 src:manual/07-gpio.md:257 klas:A -->
 ### T-07-119 · proza · рядок 257
 
 **Книга каже, дослівно:**
@@ -2529,11 +2529,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Texas Instruments, SNx4HC595 8-Bit Shift Registers With 3-State Output Registers (SCLS041J), розділи «Features» і «Description»
+- **Дослівно з джерела:**
+  > SN54HC595, SN74HC595
+  > SNx4HC595 8-Bit Shift Registers With 3-State Output Registers
+  > 
+  > Features
+  > • 8-bit serial-in, parallel-out shift
+  > • High-current 3-state outputs can drive up to 15 LSTTL loads
+  > 
+  > Description
+  > The SNx4HC595 devices contain an 8-bit, serial-in,
+  > parallel-out shift register that feeds an 8-bit D-type
+  > storage register. The storage register has parallel 3-
+  > state outputs. Separate clocks are provided for both
+  > the shift and storage register.
+- **Спосіб і дата:** PDF TI, кеш `74hc595.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** 8 розрядів підтверджено в названі і на першій сторінці документа. Видихід на паралельні лінії (parallel output) та можливість каскадування (serial outputs for cascading) — ключові характеристики для задачі розширення портів на виходи.
+- **Прохід:** m2-33-gpio-07
 
 ---
 
-<!-- fc id:T-07-120 sha:28de41c4 src:manual/07-gpio.md:260 klas:F -->
+<!-- fc id:T-07-120 sha:28de41c4 src:manual/07-gpio.md:260 klas:A -->
 ### T-07-120 · proza · рядок 260
 
 **Книга каже, дослівно:**
@@ -2542,7 +2560,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Texas Instruments, CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer With Logic-Level Conversion (SCHS047O), розділи «Features» і «Description»
+- **Дослівно з джерела:**
+  > CD4051B, CD4052B, CD4053B
+  > CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer
+  > 
+  > Features
+  > • Analog and digital multiplexing and demultiplexing
+  > 8-channel multiplexer having three binary control inputs
+  > • Bidirectional signal path
+  > ON resistance, 125Ω (typical)
+  > 
+  > Description
+  > The CD405xB analog multiplexers and demultiplexers
+  > are digitally-controlled analog switches having low ON
+  > impedance and very low OFF leakage current.
+- **Спосіб і дата:** PDF TI, кеш `cd4051.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Вісім каналів підтверджено: CD4051 названо 8-Channel у Features та описано 8 можливостей комутації (Ch 0 – Ch 7). Аналоговий сигнал (analog multiplexer), а не цифровий, що критично для прикладу з ADC у розділі 07. Використання для мультиплексування аналогових входів на один ADC-пін прямо зазначено в Applications.
+- **Прохід:** m2-33-gpio-07
 
 ---
 
@@ -2738,7 +2774,7 @@
 
 ---
 
-<!-- fc id:T-07-134 sha:eca754e3 src:manual/07-gpio.md:298 klas:B -->
+<!-- fc id:T-07-134 sha:eca754e3 src:manual/07-gpio.md:298 klas:A -->
 ### T-07-134 · proza · рядок 298
 
 **Книга каже, дослівно:**
@@ -2747,22 +2783,16 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ESP32 Series Datasheet v5.3, Appendix A, Table 6-1 «Notes on ESP32 Pin Lists», примітка 2, с. 60
 - **Дослівно з джерела:**
-  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
-  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
-  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
-  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
-  > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
-  > сімейств, які текст поруч називає; область дії береться з `#if
-  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
-  > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
-Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
-- **Прохід:** pass-30-piny-suciljno
+  > GPIO pins 34-39 are input-only. These pins do not feature an output
+  > driver or internal pull-up/pull-down circuitry. The pin names are:
+  > SENSOR_VP (GPIO36), SENSOR_CAPP (GPIO37), SENSOR_CAPN (GPIO38),
+  > SENSOR_VN (GPIO39), VDET_1 (GPIO34), VDET_2 (GPIO35).
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Дослівне влучання: джерело прямо називає `GPIO34` серед пінів без жодного внутрішнього pull-up/pull-down. Це друга знахідка розділу 62, варта безпеки: без зовнішнього резистора вхід поплавкового вимикача справді «бовтається», і немає резервного внутрішнього підтягування, яке б це пом'якшило (на відміну від GPIO26/27 для кнопок, де книга сама називає внутрішню підтяжку — рядок 116 схеми). Вибір саме зовнішнього резистора тут не перестраховка, а єдиний спосіб.
+- **Прохід:** m2-23-proekty-60-62
 
 ---
 

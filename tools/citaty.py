@@ -120,13 +120,88 @@ def zavantazhyty(url: str, cil: Path) -> bool:
     return r.returncode == 0 and cil.exists() and cil.stat().st_size > 0
 
 
+DOPUSK_RYADKA = 3.0
+
+
+def ryadky_z_koordynat(storinka) -> list[str]:
+    """Відновити рядки таблиці з координат слів.
+
+    `pdftotext` (і звичайне витягання pymupdf) віддають **порядок
+    читання**, у якому кожна комірка стовпця стоїть окремим рядком:
+
+        Thermometer
+        tERR
+        -55°C to +125°C
+        ±2
+        °C
+
+    Суцільного рядка «Thermometer tERR -55°C to +125°C ±2 °C» у такому
+    тексті немає й бути не може, хоч у документі це один рядок таблиці.
+    Саме через це М2 дістав 27 хибних тривог із 45, і саме через це
+    з'явилася позначка «звірено очима».
+
+    Тут слова беруться з координатами й **групуються за базовою
+    лінією**: усе, що лежить у межах `DOPUSK_RYADKA` пунктів по
+    вертикалі, — один рядок; усередині рядка сортуємо зліва направо.
+
+    Лишається один випадок, який так не збирається: комірка, розбита на
+    два візуальні рядки («Thermometer» над «Error»). Для нього далі є
+    запасний хід із лексемами.
+    """
+    slova = storinka.get_text("words")
+    if not slova:
+        return []
+    slova.sort(key=lambda w: (round(w[1], 1), w[0]))
+    ryadky, potochnyy, baza = [], [], None
+    for w in slova:
+        if baza is None:
+            potochnyy, baza = [w], w[1]
+        elif abs(w[1] - baza) <= DOPUSK_RYADKA:
+            potochnyy.append(w)
+        else:
+            ryadky.append(potochnyy)
+            potochnyy, baza = [w], w[1]
+    if potochnyy:
+        ryadky.append(potochnyy)
+    out = []
+    for r in ryadky:
+        r.sort(key=lambda w: w[0])
+        out.append(" ".join(w[4] for w in r))
+    return out
+
+
+def tekst_pdf(p: Path) -> str | None:
+    """Текст PDF у **двох виглядах одразу**.
+
+    Порядок читання й відновлені за координатами рядки таблиць
+    склеюються в один рядок пошуку. Цитата, взята з абзацу, знайдеться
+    в першому; цитата, взята з рядка таблиці, — у другому.
+
+    Це і є заміна позначці «звірено очима» для типового випадку: не
+    послаблення перевірки, а **краще витягання**. Послаблення (лексеми
+    у вікні) лишається тільки для комірок, розбитих на два рядки.
+    """
+    try:
+        import pymupdf
+    except ImportError:
+        r = subprocess.run(["pdftotext", "-q", "-layout", str(p), "-"],
+                           capture_output=True)
+        return (r.stdout.decode("utf-8", "replace")
+                if r.returncode == 0 else None)
+    try:
+        with pymupdf.open(p) as d:
+            chastyny = []
+            for storinka in d:
+                chastyny.append(storinka.get_text())
+                chastyny += ryadky_z_koordynat(storinka)
+        return "\n".join(chastyny)
+    except Exception:
+        return None
+
+
 def tekst_dzherela(p: Path) -> str | None:
     if p.suffix.lower() == ".pdf":
-        r = subprocess.run(["pdftotext", "-q", str(p), "-"],
-                           capture_output=True)
-        if r.returncode != 0:
-            return None
-        return r.stdout.decode("utf-8", "replace")
+        return tekst_pdf(p)
     if p.suffix.lower() not in TEKSTOVI:
         return None
     try:
@@ -219,13 +294,32 @@ def pidmineno_zaglushkoyu(p: Path) -> bool:
     return not pochatok.startswith(b"%PDF")
 
 
-def plaskyy(s: str) -> str:
-    """Один пробіл між словами, решта як є.
+# М'який перенос і ліґатури, які PDF лишає в тексті. Це не зміст, а
+# сміття витягання: у документі їх не видно, у витягнутому тексті вони
+# розривають слово посеред цитати. Тире різних видів зводимо до одного —
+# `‑` (non-breaking hyphen) у datasheet трапляється замість `-`.
+PEREKLAD_SMITTYA = {
+    "\u00ad": "",      # м'який перенос
+    "\u200b": "",      # нульової ширини пробіл
+    "\ufeff": "",      # BOM усередині
+    "\u2011": "-",     # нерозривний дефіс
+    "\ufb01": "fi", "\ufb02": "fl",   # ліґатури
+}
 
-    Свідомо **не** чіпаємо ні регістр, ні лапки, ні тире. Цитата, яка
-    збігається лише після приведення регістру, — це вже переказ, і хай
-    вона падає: доказ мусить бути дослівним.
+
+def plaskyy(s: str) -> str:
+    """Один пробіл між словами; сміття витягання прибрано.
+
+    Свідомо **не** чіпаємо ні регістр, ні лапки, ні змістовні тире.
+    Цитата, яка збігається лише після приведення регістру, — це вже
+    переказ, і хай вона падає: доказ мусить бути дослівним.
+
+    А от м'який перенос і ліґатури змісту не несуть: їх у документі не
+    видно, і жодна людина не могла б їх «процитувати неправильно».
+    Прибирати їх — не послаблення, а виправлення витягання.
     """
+    for shcho, na in PEREKLAD_SMITTYA.items():
+        s = s.replace(shcho, na)
     return re.sub(r"\s+", " ", s).strip()
 
 
@@ -387,7 +481,8 @@ def perevirka(kachaty: bool,
     """
     naslidky: list[dict] = []
     pidsumok = {"ok": 0, "ne_znaydeno": 0, "nedosyazhne": 0, "nichoho": 0,
-                "vygadane": 0, "zaglushka": 0, "okom": 0, "pomylka": 0}
+                "vygadane": 0, "zaglushka": 0, "okom": 0, "pomylka": 0,
+                "nechytne": 0}
     kesh_tekstu: dict[str, str | None] = {}
 
     for f in (fayly if fayly is not None else sorted(DOKAZY.glob("*.yaml"))):
@@ -448,6 +543,7 @@ def perevirka(kachaty: bool,
             teksty: list[str] = []
             nedosyazhni: list[str] = []
             zaglushky: list[str] = []
+            nechytni: list[str] = []
             tablychni = False
             for u in urly:
                 if u not in kesh_tekstu:
@@ -460,6 +556,8 @@ def perevirka(kachaty: bool,
                     else:
                         kesh_tekstu[u] = (plaskyy(tekst_dzherela(cil) or "")
                                           if cil.exists() else None) or None
+                        if cil.exists() and not kesh_tekstu[u]:
+                            nechytni.append(u)
                 if u.lower().endswith(".pdf"):
                     tablychni = True
                 if kesh_tekstu[u]:
@@ -468,6 +566,18 @@ def perevirka(kachaty: bool,
                     pass
                 else:
                     nedosyazhni.append(u)
+
+            # «Файл є, прочитати нічим» і «файлу немає» — різні стани, і
+            # плутати їх небезпечно. Досі PDF без витягача мовчки падав у
+            # «немає в кеші», тобто виглядав як проблема егресу, а не як
+            # брак інструмента на цій машині.
+            if nechytni and not teksty:
+                pidsumok["nechytne"] = pidsumok.get("nechytne", 0) + 1
+                naslidky.append(dict(
+                    fayl=f.stem, nazva=nazva, stan="nechytne",
+                    detali=f"{len(nechytni)}: файл у кеші є, витягти текст "
+                           f"нічим"))
+                continue
 
             if zaglushky and not teksty:
                 pidsumok["zaglushka"] = pidsumok.get("zaglushka", 0) + 1
@@ -530,6 +640,7 @@ def zvit(naslidky: list[dict], pidsumok: dict[str, int]) -> None:
                "vygadane": "**джерело вигадане**",
                "zaglushka": "**у кеші заглушка, не документ**",
                "okom": "звірено очима",
+               "nechytne": "**файл є, витягти текст нічим**",
                "pomylka": "**хибний запис**"}
     r = [ZAHOLOVOK_ZVITU.rstrip("\n"), ""]
     r.append(f"Записів доказів: **{sum(pidsumok.values())}**. "
@@ -538,7 +649,8 @@ def zvit(naslidky: list[dict], pidsumok: dict[str, int]) -> None:
              f"Джерело не в кеші: **{pidsumok['nedosyazhne']}**. "
              f"Нема чого звіряти: **{pidsumok['nichoho']}**.\n")
     r.append(f"Станом на {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC.\n")
-    for stan in ("vygadane", "zaglushka", "pomylka", "ne_znaydeno",
+    for stan in ("vygadane", "zaglushka", "pomylka", "nechytne",
+                 "ne_znaydeno",
                  "nedosyazhne", "okom", "ok", "nichoho"):
         grupa = [n for n in naslidky if n["stan"] == stan]
         if not grupa:

@@ -194,7 +194,7 @@
 
 ---
 
-<!-- fc id:T-09-015 sha:c2d47e2e src:manual/09-pidklyuchennya.md:29 klas:F -->
+<!-- fc id:T-09-015 sha:c2d47e2e src:manual/09-pidklyuchennya.md:29 klas:A -->
 ### T-09-015 · komirka · рядок 29
 
 **Книга каже, дослівно:**
@@ -203,7 +203,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Silicon Labs, CP2102/9 SINGLE-CHIP USB-TO-UART BRIDGE, datasheet, розділ 9 «CP2102/9 Device Drivers» і «9.1. Virtual COM Port Drivers»
+- **Дослівно з джерела:**
+  > Virtual COM Port Device Drivers
+  > - Works with existing COM port PC Applications
+  > - Royalty-free distribution license
+  > - Windows 8/7/Vista/Server 2003/XP/2000
+  > 
+  > Royalty-free Virtual COM Port (VCP) device drivers provided by Silicon
+  > Laboratories allow a CP2102/9-based device to appear to the PC's
+  > 
+  > The latest drivers are available at
+  > http://www.silabs.com/support/Pages/software-downloads.aspx.
+- **Спосіб і дата:** PDF /home/ubuntu/dzherela-cache/cp2102.pdf, pdftotext -layout, grep "Virtual COM Port\|Windows\|Silicon Laboratories", 2026-08-26
+- **Нотатка:** Документ явно вказує на Virtual COM Port драйвери для Windows від Silicon Laboratories. Посилання на сайт SiLabs підтверджує, що це офіційні драйвери від виробника, як стверджує книга.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 
@@ -249,7 +264,7 @@
 
 ---
 
-<!-- fc id:T-09-018 sha:ee486859 src:manual/09-pidklyuchennya.md:30 klas:F -->
+<!-- fc id:T-09-018 sha:ee486859 src:manual/09-pidklyuchennya.md:30 klas:B -->
 ### T-09-018 · komirka · рядок 30
 
 **Книга каже, дослівно:**
@@ -258,7 +273,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** WCH, CH340 USB to serial chip, datasheet (english), розділи «Introduction» і «Features»
+- **Дослівно з джерела:**
+  > USB to serial chip CH340
+  > 
+  > Features:
+  > ● Totally compatible with serial application program in computer endpoint
+  >   Windows operation system.
+  > ● Software compatible with CH341, using drive of CH341 directly.
+  > 
+  > http://wch.cn
+- **Спосіб і дата:** PDF /home/ubuntu/dzherela-cache/ch340.pdf, pdftotext -layout, grep "Windows\|compatible", 2026-08-26
+- **Нотатка:** Документ підтверджує сумісність з Windows, але не називає явно драйвер від WCH. Зазначено сумісність з CH341 драйвером. URL wch.cn вказує на виробника WCH. Для класу A потребувалася б явна посилання на драйвер від WCH для Windows у datasheet.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 
@@ -311,7 +339,7 @@
 
 ---
 
-<!-- fc id:T-09-021 sha:8e99078d src:manual/09-pidklyuchennya.md:31 klas:F -->
+<!-- fc id:T-09-021 sha:8e99078d src:manual/09-pidklyuchennya.md:31 klas:C -->
 ### T-09-021 · komirka · рядок 31
 
 **Книга каже, дослівно:**
@@ -320,7 +348,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** WCH CH9102 / CH9102F datasheet
+- **Що шукати в джерелі:** Інформація про Windows драйвер для CH9102; розділи про драйвери та встановлення на Windows; як він відрізняється від CH340
+- **Нотатка:** CH9102 datasheet не дістається з dzherela-cache. Потребує окремого завантаження з wch.cn. Книга стверджує, що CH9102 потребує окремого драйвера від CH340 для Windows.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 
@@ -370,7 +402,7 @@
 
 ---
 
-<!-- fc id:T-09-024 sha:8efca634 src:manual/09-pidklyuchennya.md:32 klas:F -->
+<!-- fc id:T-09-024 sha:8efca634 src:manual/09-pidklyuchennya.md:32 klas:C -->
 ### T-09-024 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -379,7 +411,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** FTDI FT232RL USB UART IC datasheet
+- **Що шукати в джерелі:** Інформація про Windows драйвер для FT232RL; розділи про драйвери та встановлення
+- **Нотатка:** FT232RL datasheet не дістається з dzherela-cache. Потребує окремого завантаження з ftdichip.com. Книга говорить про драйвер FTDI для Windows.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 
@@ -416,7 +452,7 @@
 
 ---
 
-<!-- fc id:T-09-027 sha:3a89ec16 src:manual/09-pidklyuchennya.md:37 klas:F -->
+<!-- fc id:T-09-027 sha:3a89ec16 src:manual/09-pidklyuchennya.md:37 klas:C -->
 ### T-09-027 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -425,11 +461,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** WCH CH9102 / CH9102F datasheet та CH340 datasheet для порівняння
+- **Що шукати в джерелі:** Інформація про фізичну схожість CH9102 з CH340; упаковки, розташування піків; відмінності у драйвері та встановленні
+- **Нотатка:** CH9102 datasheet не дістається. Це спеціальний випадок, як пояснює книга: CH9102 часто стоїть на платах з позначкою CH340, але потребує іншого драйвера, що викликає плутанину та помилки користувачів.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 
-<!-- fc id:T-09-028 sha:6ca4fb71 src:manual/09-pidklyuchennya.md:37 klas:F -->
+<!-- fc id:T-09-028 sha:6ca4fb71 src:manual/09-pidklyuchennya.md:37 klas:E -->
 ### T-09-028 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -438,7 +478,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** не застосовується
+- **Дослівно з джерела:**
+  > Людина ставить драйвер CH340, він не працює, і виникає висновок «плата бракована».
+- **Спосіб і дата:** не застосовується
+- **Нотатка:** Це не факт про мікросхему, а опис поведінки користувача та його висновку. Редакційна порада про частину лікування проблеми в налаштування, не в залізі. Клас E: редакційне рішення, порада.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 
@@ -572,7 +618,7 @@
 
 ---
 
-<!-- fc id:T-09-039 sha:e79151e3 src:manual/09-pidklyuchennya.md:61 klas:F -->
+<!-- fc id:T-09-039 sha:e79151e3 src:manual/09-pidklyuchennya.md:61 klas:E -->
 ### T-09-039 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -581,7 +627,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** не застосовується
+- **Дослівно з джерела:**
+  > Один і той самий комп'ютер може дати `/dev/ttyUSB0` одній платі й `/dev/ttyUSB1` іншій, і після перевтикання номери міняються.
+- **Спосіб і дата:** не застосовується
+- **Нотатка:** Це поведінка операційної системи Linux при переборі портів, а не факт про мікросхему. Редакційна порада користувачам. Клас E: редакційне рішення, поза зовнішньою звіркою.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 
@@ -598,7 +650,7 @@
 
 ---
 
-<!-- fc id:T-09-041 sha:5268e7f0 src:manual/09-pidklyuchennya.md:68 klas:F -->
+<!-- fc id:T-09-041 sha:5268e7f0 src:manual/09-pidklyuchennya.md:68 klas:C -->
 ### T-09-041 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -607,7 +659,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** Espressif ESP32-S3 datasheet та ESP32-C3 datasheet
+- **Що шукати в джерелі:** Розділи про інтеграцію USB контролера на кристалі; розділи «Features» та «Electrical Characteristics»; архітектура та периферійні модулі
+- **Нотатка:** Потребує окремих datasheet'ів для ESP32-S3 та ESP32-C3 від Espressif. Основний esp32-datasheet.pdf не містить цієї інформації. Книга говорить про наявність вбудованого USB контролера на цих чипах, що дозволяє прямідне підключення до комп'ютера без зовнішнього мосту USB-UART.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 
@@ -1536,7 +1592,7 @@
 
 ---
 
-<!-- fc id:T-09-109 sha:871dd53d src:manual/09-pidklyuchennya.md:226 klas:F -->
+<!-- fc id:T-09-109 sha:871dd53d src:manual/09-pidklyuchennya.md:226 klas:C -->
 ### T-09-109 · proza · рядок 226
 
 **Книга каже, дослівно:**
@@ -1545,7 +1601,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** WCH CH9102 / CH9102F datasheet та драйверне забезпечення
+- **Що шукати в джерелі:** Порівняння драйверів CH340 та CH9102; їхні відмінності та несумісність на рівні драйвера та встановлення
+- **Нотатка:** Це те саме твердження, що T-09-027, але коротша версія у розділі резюме. Потребує CH9102 datasheet та інформації про драйвери для обох чипів.
+- **Прохід:** m2-25-pidklyuchennya-09
 
 ---
 

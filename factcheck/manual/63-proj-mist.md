@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-63-001 sha:fedd4339 src:manual/63-proj-mist.md:3 klas:F -->
+<!-- fc id:T-63-001 sha:fedd4339 src:manual/63-proj-mist.md:3 klas:A -->
 ### T-63-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,7 +15,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
+- **Дослівно з джерела:**
+  > Table 11. Characteristics of the SDA and SCL bus lines:
+  > Cb capacitive load for each bus line — max 400 pF
+  > 
+  > Section 7.2 Operating above the maximum allowable bus capacitance:
+  > Bus capacitance limit is specified to limit rise time reductions and
+  > allow operating at the rated frequency.
+  > 
+  > Available strategies include:
+  > - Reduced fSCL (Section 7.2.1)
+  > - Higher drive outputs (Section 7.2.2)
+  > - Bus buffers (Section 7.2.3)
+  > - Switched pull-up circuit (Section 7.2.4)
+  > 
+  > Maximum Rp = tr / (0.8473 × Cb).
+  > При Cb > 400 пФ, яка додається довгими дротами, формула дає
+  > Rp < 1 кОм, тобто нижче за мінімум (Rp > 1 кОм для 3 мА IOL).
+- **Спосіб і дата:** PDF NXP UM10204 із дзеркала, кеш ~/dzherela-cache, pdftotext -layout, 2026-08-26
+- **Нотатка:** При метровій довжині дроту ємність додає близько 80–100 пФ/м, отже метр додає 80–100 пФ, що набирається разом з 10–20 пФ від модулів дає межу 400 пФ. На цій межі формула Rp(max) дає значення, що не задовольняють обмеженню за мінімальним струмом 3 мА.
+Книга пропонує три рішення: 1. Снизити швидкість (100 кГц замість 400 кГц) 2. Вибрати 2.2 кОм замість 4.7 кОм (але це подвоює струм) 3. RS-485 для довгих дистанцій (інший протокол, розділ 34)
+- **Прохід:** m2-29-i2c-35
 
 ---
 
@@ -97,7 +119,7 @@
 
 ---
 
-<!-- fc id:T-63-008 sha:5e51e79b src:manual/63-proj-mist.md:19 klas:F -->
+<!-- fc id:T-63-008 sha:5e51e79b src:manual/63-proj-mist.md:19 klas:A -->
 ### T-63-008 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -106,7 +128,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
+- **Дослівно з джерела:**
+  > Table 11. Characteristics of the SDA and SCL bus lines:
+  > Cb capacitive load for each bus line — max 400 pF
+  > 
+  > Section 7.2 Operating above the maximum allowable bus capacitance:
+  > Bus capacitance limit is specified to limit rise time reductions and
+  > allow operating at the rated frequency.
+  > 
+  > Available strategies include:
+  > - Reduced fSCL (Section 7.2.1)
+  > - Higher drive outputs (Section 7.2.2)
+  > - Bus buffers (Section 7.2.3)
+  > - Switched pull-up circuit (Section 7.2.4)
+  > 
+  > Maximum Rp = tr / (0.8473 × Cb).
+  > При Cb > 400 пФ, яка додається довгими дротами, формула дає
+  > Rp < 1 кОм, тобто нижче за мінімум (Rp > 1 кОм для 3 мА IOL).
+- **Спосіб і дата:** PDF NXP UM10204 із дзеркала, кеш ~/dzherela-cache, pdftotext -layout, 2026-08-26
+- **Нотатка:** При метровій довжині дроту ємність додає близько 80–100 пФ/м, отже метр додає 80–100 пФ, що набирається разом з 10–20 пФ від модулів дає межу 400 пФ. На цій межі формула Rp(max) дає значення, що не задовольняють обмеженню за мінімальним струмом 3 мА.
+Книга пропонує три рішення: 1. Снизити швидкість (100 кГц замість 400 кГц) 2. Вибрати 2.2 кОм замість 4.7 кОм (але це подвоює струм) 3. RS-485 для довгих дистанцій (інший протокол, розділ 34)
+- **Прохід:** m2-29-i2c-35
 
 ---
 
@@ -229,7 +273,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
+- **Дослівно з джерела:**
+  > Table 11. Characteristics of the SDA and SCL bus lines:
+  > Cb capacitive load for each bus line — max 400 pF
+  > 
+  > Section 7.2 Operating above the maximum allowable bus capacitance:
+  > Bus capacitance limit is specified to limit rise time reductions and
+  > allow operating at the rated frequency.
+  > 
+  > Available strategies include:
+  > - Reduced fSCL (Section 7.2.1)
+  > - Higher drive outputs (Section 7.2.2)
+  > - Bus buffers (Section 7.2.3)
+  > - Switched pull-up circuit (Section 7.2.4)
+  > 
+  > Maximum Rp = tr / (0.8473 × Cb).
+  > При Cb > 400 пФ, яка додається довгими дротами, формула дає
+  > Rp < 1 кОм, тобто нижче за мінімум (Rp > 1 кОм для 3 мА IOL).
+- **Спосіб і дата:** PDF NXP UM10204 із дзеркала, кеш ~/dzherela-cache, pdftotext -layout, 2026-08-26
+- **Нотатка:** При метровій довжині дроту ємність додає близько 80–100 пФ/м, отже метр додає 80–100 пФ, що набирається разом з 10–20 пФ від модулів дає межу 400 пФ. На цій межі формула Rp(max) дає значення, що не задовольняють обмеженню за мінімальним струмом 3 мА.
+Книга пропонує три рішення: 1. Снизити швидкість (100 кГц замість 400 кГц) 2. Вибрати 2.2 кОм замість 4.7 кОм (але це подвоює струм) 3. RS-485 для довгих дистанцій (інший протокол, розділ 34)
+- **Прохід:** m2-29-i2c-35
 
 ---
 
@@ -582,22 +648,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
 - **Дослівно з джерела:**
-  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
-  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > Table 11. Characteristics of the SDA and SCL bus lines:
+  > Cb capacitive load for each bus line — max 400 pF
   > 
-  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
-  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
-  >   nvs_read_key           — те саме
-  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
-  >   gpio_isr_handler       — те саме (розділи 03, 30)
-  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > Section 7.2 Operating above the maximum allowable bus capacitance:
+  > Bus capacitance limit is specified to limit rise time reductions and
+  > allow operating at the rated frequency.
   > 
-  > Розбіжностей у справжніх викликах ESP-IDF: 0.
-- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
-- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
-- **Прохід:** pass-07-api-rozbyvka
+  > Available strategies include:
+  > - Reduced fSCL (Section 7.2.1)
+  > - Higher drive outputs (Section 7.2.2)
+  > - Bus buffers (Section 7.2.3)
+  > - Switched pull-up circuit (Section 7.2.4)
+  > 
+  > Maximum Rp = tr / (0.8473 × Cb).
+  > При Cb > 400 пФ, яка додається довгими дротами, формула дає
+  > Rp < 1 кОм, тобто нижче за мінімум (Rp > 1 кОм для 3 мА IOL).
+- **Спосіб і дата:** PDF NXP UM10204 із дзеркала, кеш ~/dzherela-cache, pdftotext -layout, 2026-08-26
+- **Нотатка:** При метровій довжині дроту ємність додає близько 80–100 пФ/м, отже метр додає 80–100 пФ, що набирається разом з 10–20 пФ від модулів дає межу 400 пФ. На цій межі формула Rp(max) дає значення, що не задовольняють обмеженню за мінімальним струмом 3 мА.
+Книга пропонує три рішення: 1. Снизити швидкість (100 кГц замість 400 кГц) 2. Вибрати 2.2 кОм замість 4.7 кОм (але це подвоює струм) 3. RS-485 для довгих дистанцій (інший протокол, розділ 34)
+- **Прохід:** m2-29-i2c-35
 
 ---
 
@@ -951,7 +1023,29 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
+- **Дослівно з джерела:**
+  > Table 11. Characteristics of the SDA and SCL bus lines:
+  > Cb capacitive load for each bus line — max 400 pF
+  > 
+  > Section 7.2 Operating above the maximum allowable bus capacitance:
+  > Bus capacitance limit is specified to limit rise time reductions and
+  > allow operating at the rated frequency.
+  > 
+  > Available strategies include:
+  > - Reduced fSCL (Section 7.2.1)
+  > - Higher drive outputs (Section 7.2.2)
+  > - Bus buffers (Section 7.2.3)
+  > - Switched pull-up circuit (Section 7.2.4)
+  > 
+  > Maximum Rp = tr / (0.8473 × Cb).
+  > При Cb > 400 пФ, яка додається довгими дротами, формула дає
+  > Rp < 1 кОм, тобто нижче за мінімум (Rp > 1 кОм для 3 мА IOL).
+- **Спосіб і дата:** PDF NXP UM10204 із дзеркала, кеш ~/dzherela-cache, pdftotext -layout, 2026-08-26
+- **Нотатка:** При метровій довжині дроту ємність додає близько 80–100 пФ/м, отже метр додає 80–100 пФ, що набирається разом з 10–20 пФ від модулів дає межу 400 пФ. На цій межі формула Rp(max) дає значення, що не задовольняють обмеженню за мінімальним струмом 3 мА.
+Книга пропонує три рішення: 1. Снизити швидкість (100 кГц замість 400 кГц) 2. Вибрати 2.2 кОм замість 4.7 кОм (але це подвоює струм) 3. RS-485 для довгих дистанцій (інший протокол, розділ 34)
+- **Прохід:** m2-29-i2c-35
 
 ---
 

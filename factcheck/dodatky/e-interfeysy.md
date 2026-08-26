@@ -437,7 +437,7 @@
 
 ---
 
-<!-- fc id:T-E-020 sha:aeaa568e src:dodatky/e-interfeysy.md:16 klas:F -->
+<!-- fc id:T-E-020 sha:aeaa568e src:dodatky/e-interfeysy.md:16 klas:E -->
 ### T-E-020 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -446,7 +446,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — назва бібліотеки Adafruit/Arduino не є характеристикою кристала.
+- **Нотатка:** Той самий випадок, що й «Бібліотека» для SHT3x/SHT4x і MPU6050 в m2-16. Клас E.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
@@ -602,7 +608,7 @@
 
 ---
 
-<!-- fc id:T-E-028 sha:b0502556 src:dodatky/e-interfeysy.md:19 klas:F -->
+<!-- fc id:T-E-028 sha:b0502556 src:dodatky/e-interfeysy.md:19 klas:A -->
 ### T-E-028 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -611,11 +617,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Texas Instruments, INA219 (SBOS448G) і INA226 (SBOS547C) Datasheet, розділ 1 «Features» кожного
+- **Дослівно з джерела:**
+  > (INA219)
+  > INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface
+  > 1 Features
+  > • Senses Bus Voltages from 0 to 26 V
+  > • Reports Current, Voltage, and Power
+  > 
+  > (INA226)
+  > INA226 36V, 16-Bit, Ultra-Precise I2C Output Current, Voltage, and Power Monitor With Alert
+  > 1 Features
+  > • Senses bus voltages from 0V to 36V
+  > • Reports current, voltage, and power
+- **Спосіб і дата:** PDF TI, кеш `ina219.pdf` і `ina226.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** «Струм і напруга» правдиве для обох мікросхем окремо — перевірено саме так, як просили: не лише «Що дає» в цілому, а що кожна з двох деталей у рядку справді це вміє. Обидві також повідомляють потужність (Power/Watts) — книга цього не згадує, це неповнота, а не помилка. Числова різниця, вартого уваги: межа шинної напруги — 0…26 В в INA219 проти 0…36 В в INA226; рядок додатка E жодного числа не називає, тож книга нічого не наплутала, але читач, що обирає деталь під конкретну напругу, цієї різниці з таблиці не побачить.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-029 sha:bf63dda1 src:dodatky/e-interfeysy.md:19 klas:F -->
+<!-- fc id:T-E-029 sha:bf63dda1 src:dodatky/e-interfeysy.md:19 klas:E -->
 ### T-E-029 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -624,7 +646,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — назва бібліотеки не є характеристикою кристала.
+- **Нотатка:** Той самий випадок. Клас E. Побічно: Adafruit_INA219 підтримує лише INA219, не INA226 (в Adafruit є окрема Adafruit_INA226) — але оскільки колонка «Бібліотека» тут не звіряється проти datasheet за вказівкою, це не переростає в помилку класу, лише в спостереження.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
@@ -808,7 +836,7 @@
 
 ---
 
-<!-- fc id:T-E-038 sha:7da6b06b src:dodatky/e-interfeysy.md:22 klas:F -->
+<!-- fc id:T-E-038 sha:7da6b06b src:dodatky/e-interfeysy.md:22 klas:E -->
 ### T-E-038 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -817,7 +845,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — назва бібліотеки не є характеристикою кристала. «Що дає» для PCF8574 уже клас A в m2-08-dyspleyi-rozshyryuvachi.yaml.
+- **Нотатка:** Клас E, той самий випадок.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
@@ -877,7 +911,7 @@
 
 ---
 
-<!-- fc id:T-E-041 sha:49d948f0 src:dodatky/e-interfeysy.md:23 klas:F -->
+<!-- fc id:T-E-041 sha:49d948f0 src:dodatky/e-interfeysy.md:23 klas:E -->
 ### T-E-041 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -886,7 +920,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки. «Що дає» для MCP23017 уже клас A в m2-08-dyspleyi-rozshyryuvachi.yaml.
+- **Нотатка:** Клас E, той самий випадок.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
@@ -1096,7 +1136,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-052 sha:5524a220 src:dodatky/e-interfeysy.md:39 klas:F -->
+<!-- fc id:T-E-052 sha:5524a220 src:dodatky/e-interfeysy.md:39 klas:A -->
 ### T-E-052 · komirka · рядок 39
 
 **Книга каже, дослівно:**
@@ -1105,11 +1145,19 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка
+- **Дослівно з джерела:**
+  > ST7789V
+  > 240RGB x 320 dot 262K Color with Frame Memory
+  > Single-Chip TFT Controller/Driver
+- **Спосіб і дата:** PDF Sitronix (дзеркало newhavendisplay.com — офіційний сайт Sitronix не роздає окремого прямого PDF-лінка), кеш `st7789.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** «TFT-дисплей» підтверджено дослівно з титулу. Режим SPI («0 або 3») для цього рядка вже закритий класом A в pass-16-interfeysy — новий запис для нього не потрібен.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-053 sha:f129922d src:dodatky/e-interfeysy.md:39 klas:F -->
+<!-- fc id:T-E-053 sha:f129922d src:dodatky/e-interfeysy.md:39 klas:E -->
 ### T-E-053 · komirka · рядок 39
 
 **Книга каже, дослівно:**
@@ -1118,11 +1166,17 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки.
+- **Нотатка:** Клас E, той самий випадок.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-054 sha:adfd8b57 src:dodatky/e-interfeysy.md:40 klas:F -->
+<!-- fc id:T-E-054 sha:adfd8b57 src:dodatky/e-interfeysy.md:40 klas:A -->
 ### T-E-054 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -1131,11 +1185,22 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ILI Technology, ILI9341 Datasheet V1.11, розділ 6 «Pin Description» (SDI/SDA) і розділ 7.1.9 «Write Cycle Sequence»
+- **Дослівно з джерела:**
+  > SDI/SDA    I/O    The data is applied on the rising edge of the SCL signal.
+  > 
+  > 7.1.9. Write Cycle Sequence
+  > Host processor drives the CSX pin to low and starts by setting the D/CX bit on SDA. The bit is read by ILI9341
+  > on the first rising edge of SCL signal. On the next falling edge of SCL, the MSB data bit (D7) is set on SDA by
+  > the host.
+- **Спосіб і дата:** PDF ILI Technology, кеш `ili9341.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Хост змінює біт на падаючому фронті SCL, ILI9341 читає його на наступному висхідному — зразок на першому (провідному) фронті при клоку, що в стані очікування низький: це і є SPI Mode 0 (CPOL=0, CPHA=0), як і каже книга. Той самий висновок про «номер фронту, а не напрямок», що вже встановлений в pass-16-interfeysy для інших рядків додатка E.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-055 sha:dfb7b32b src:dodatky/e-interfeysy.md:40 klas:F -->
+<!-- fc id:T-E-055 sha:dfb7b32b src:dodatky/e-interfeysy.md:40 klas:A -->
 ### T-E-055 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -1144,11 +1209,19 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка
+- **Дослівно з джерела:**
+  > ILI9341
+  > a-Si TFT LCD Single Chip Driver
+  > 240RGBx320 Resolution and 262K color
+- **Спосіб і дата:** PDF ILI Technology, кеш `ili9341.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Той самий фрагмент, що вже цитувався в m2-08 для клітинки «Інтерфейс → SPI» цього ж рядка; тут ним підтверджується інша клітинка того самого рядка — «TFT-дисплей».
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-056 sha:f30ebfb1 src:dodatky/e-interfeysy.md:40 klas:F -->
+<!-- fc id:T-E-056 sha:f30ebfb1 src:dodatky/e-interfeysy.md:40 klas:E -->
 ### T-E-056 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -1157,7 +1230,13 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки.
+- **Нотатка:** Клас E, той самий випадок.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
@@ -1359,7 +1438,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-069 sha:27d739d6 src:dodatky/e-interfeysy.md:45 klas:F -->
+<!-- fc id:T-E-069 sha:27d739d6 src:dodatky/e-interfeysy.md:45 klas:A -->
 ### T-E-069 · komirka · рядок 45
 
 **Книга каже, дослівно:**
@@ -1368,11 +1447,21 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features»
+- **Дослівно з джерела:**
+  > MCP2515
+  > Stand-Alone CAN Controller with SPI Interface
+  > Features
+  > • High-Speed SPI Interface (10 MHz):
+  >   - SPI modes 0,0 and 1,1
+- **Спосіб і дата:** PDF Microchip, кеш `mcp2515.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Datasheet прямо називає підтримувані режими нотацією (CPOL,CPHA): «0,0» — це SPI Mode 0, «1,1» — Mode 3. Книга називає лише 0 (як і для рядка ST7789/SSD1306, де вказано «0 або 3»), що є підмножиною, не помилкою: узгоджено з рештою рядків книги, де завжди вказано робочий, а не вичерпний перелік режимів.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-070 sha:3ec6e643 src:dodatky/e-interfeysy.md:45 klas:F -->
+<!-- fc id:T-E-070 sha:3ec6e643 src:dodatky/e-interfeysy.md:45 klas:A -->
 ### T-E-070 · komirka · рядок 45
 
 **Книга каже, дослівно:**
@@ -1381,11 +1470,21 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Microchip, MCP2515 Datasheet (DS20001801J), титульна сторінка й розділ «Description»
+- **Дослівно з джерела:**
+  > MCP2515
+  > Stand-Alone CAN Controller with SPI Interface
+  > Microchip Technology's MCP2515 is a stand-alone Controller Area Network (CAN) controller that implements
+  > the CAN specification, Version 2.0B. […] The MCP2515 interfaces with microcontrollers (MCUs) via an
+  > industry standard Serial Peripheral Interface (SPI).
+- **Спосіб і дата:** PDF Microchip, кеш `mcp2515.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** «Зовнішній» — точне слово: MCP2515 підключається до MCU через SPI саме тому, що сам MCU (у книзі — ESP32) власного CAN-контролера не має; для ESP32, що має вбудований TWAI, MCP2515 потрібен лише для другої шини чи гальванічної розв'язки — це вже редакційна колонка «Бібліотека» цього рядка й нижче.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-071 sha:8f789500 src:dodatky/e-interfeysy.md:45 klas:F -->
+<!-- fc id:T-E-071 sha:8f789500 src:dodatky/e-interfeysy.md:45 klas:E -->
 ### T-E-071 · komirka · рядок 45
 
 **Книга каже, дослівно:**
@@ -1394,11 +1493,17 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — MCP2515 datasheet нічого не каже про периферію ESP32. Твердження «в ESP32 є свій [CAN- контролер]» — про TWAI ESP32, а не про мікросхему цього рядка; воно закривається окремо в фактчекінгу розділу 38 (де й розгорнуто), не тут.
+- **Нотатка:** Клас E за формою (не факт про MCP2515), хоча підстава для «—» зрозуміла й правильна: TWAI — справді вбудований периферійний блок ESP32, задокументований в ESP-IDF. Повторна звірка цього факту належить розділу 38, не додатку E.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-072 sha:39070e8a src:dodatky/e-interfeysy.md:46 klas:F -->
+<!-- fc id:T-E-072 sha:39070e8a src:dodatky/e-interfeysy.md:46 klas:A -->
 ### T-E-072 · komirka · рядок 46
 
 **Книга каже, дослівно:**
@@ -1407,11 +1512,26 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** adafruit/Adafruit-MAX31855-library, `Adafruit_MAX31855.cpp`; RobTillaart/MAX6675, `MAX6675.cpp`
+- **Дослівно з джерела:**
+  > (Adafruit_MAX31855.cpp)
+  > Adafruit_MAX31855::Adafruit_MAX31855(int8_t _cs, SPIClass *_spi)
+  >     : spi_dev(_cs, 1000000, SPI_BITORDER_MSBFIRST, SPI_MODE0, _spi) {}
+  > 
+  > (RobTillaart/MAX6675/MAX6675.cpp)
+  > void MAX6675::setSPIspeed(uint32_t speed)
+  > {
+  >   _SPIspeed = speed;
+  >   _spi_settings = SPISettings(_SPIspeed, MSBFIRST, SPI_MODE0);
+  > }
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Перевірено окремо для кожної з двох деталей рядка — саме тому, що попередній чанк показав, як легко невірно приписати спільній клітинці властивість лише однієї з пари. Обидва посилання явно задають `SPI_MODE0`. Datasheet-текст сам по собі («D31…D0 presented to SO within tDO of the falling edge of SCK») без бібліотечного підтвердження можна прочитати неоднозначно (зміна даних на падаючому фронті наводить на думку про Mode 1), тому як первинне джерело для класу A взято сам робочий драйвер, а не власна інтерпретація часової діаграми — це надійніший шлях, ніж самостійний розбір таймінгів. Офіційна бібліотека Adafruit для MAX6675 (`adafruit/MAX6675-library`) для порівняння: програмний бітбенг без апаратного SPI, тому в ній самої константи `SPI_MODE0` немає — використано альтернативну, широко вживану апаратну бібліотеку `RobTillaart/MAX6675`.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-073 sha:1aa5f02d src:dodatky/e-interfeysy.md:46 klas:F -->
+<!-- fc id:T-E-073 sha:1aa5f02d src:dodatky/e-interfeysy.md:46 klas:A -->
 ### T-E-073 · komirka · рядок 46
 
 **Книга каже, дослівно:**
@@ -1420,11 +1540,24 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Maxim/Analog Devices, MAX31855 (19-5793) і MAX6675 (19-2235) Datasheet, титульна сторінка кожного
+- **Дослівно з джерела:**
+  > (MAX31855)
+  > MAX31855
+  > Cold-Junction Compensated
+  > Thermocouple-to-Digital Converter
+  > 
+  > (MAX6675)
+  > Cold-Junction-Compensated K-Thermocouple-
+  > to-Digital Converter (0°C to +1024°C)
+- **Спосіб і дата:** PDF Maxim/Analog Devices (через дзеркало cdn-shop.adafruit.com — analog.com блокує з цієї мережі), кеш `max31855.pdf` і `max6675.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** «Термопара» правдиве для обох окремо — перевірено кожну деталь подвійного рядка окремо, як і просили. Різниця, вартого уваги: MAX31855 підтримує сім типів термопар (K, J, N, T, S, R, E), MAX6675 — лише тип K («Direct Digital Conversion of Type -K Thermocouple Output»). Книга типу термопари не називає, тож помилки немає — але хто побудує деталь під MAX6675, обмежений типом K, а рядок цього не показує.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-074 sha:5de71916 src:dodatky/e-interfeysy.md:46 klas:F -->
+<!-- fc id:T-E-074 sha:5de71916 src:dodatky/e-interfeysy.md:46 klas:E -->
 ### T-E-074 · komirka · рядок 46
 
 **Книга каже, дослівно:**
@@ -1433,7 +1566,13 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки самої назви бібліотеки — але перевірено (curl raw.githubusercontent, 2026-08-26), що `adafruit/Adafruit-MAX31855-library` і `adafruit/MAX6675-library` — два різні репозиторії Adafruit, кожен під свою мікросхему.
+- **Нотатка:** Клас E за правилом («Бібліотека» — не факт про кристал), але це саме той різновид помилки, який просили шукати в подвійних рядках: рядок «MAX31855 / MAX6675» називає в колонці «Бібліотека» лише `Adafruit MAX31855` — а ця бібліотека працює тільки з MAX31855. Читач, що зібрав термопару на MAX6675 (дешевший, без підтримки інших типів термопар, лише K) і встановив бібліотеку за підказкою цього рядка, отримає код, який не компілюється для його деталі: для MAX6675 потрібна окрема `MAX6675` (Adafruit) чи `RobTillaart/ MAX6675`. На відміну від BMP280/вологості, це не суперечність між частинами книги (розділ 45 такого протиріччя не містить — MAX6675 там не згадується), а прогалина лише в цьому рядку додатка E.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
@@ -1599,7 +1738,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-086 sha:2584d17b src:dodatky/e-interfeysy.md:61 klas:F -->
+<!-- fc id:T-E-086 sha:2584d17b src:dodatky/e-interfeysy.md:61 klas:A -->
 ### T-E-086 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -1608,7 +1747,29 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
+- **Дослівно з джерела:**
+  > Table 11. Characteristics of the SDA and SCL bus lines:
+  > Cb capacitive load for each bus line — max 400 pF
+  > 
+  > Section 7.2 Operating above the maximum allowable bus capacitance:
+  > Bus capacitance limit is specified to limit rise time reductions and
+  > allow operating at the rated frequency.
+  > 
+  > Available strategies include:
+  > - Reduced fSCL (Section 7.2.1)
+  > - Higher drive outputs (Section 7.2.2)
+  > - Bus buffers (Section 7.2.3)
+  > - Switched pull-up circuit (Section 7.2.4)
+  > 
+  > Maximum Rp = tr / (0.8473 × Cb).
+  > При Cb > 400 пФ, яка додається довгими дротами, формула дає
+  > Rp < 1 кОм, тобто нижче за мінімум (Rp > 1 кОм для 3 мА IOL).
+- **Спосіб і дата:** PDF NXP UM10204 із дзеркала, кеш ~/dzherela-cache, pdftotext -layout, 2026-08-26
+- **Нотатка:** При метровій довжині дроту ємність додає близько 80–100 пФ/м, отже метр додає 80–100 пФ, що набирається разом з 10–20 пФ від модулів дає межу 400 пФ. На цій межі формула Rp(max) дає значення, що не задовольняють обмеженню за мінімальним струмом 3 мА.
+Книга пропонує три рішення: 1. Снизити швидкість (100 кГц замість 400 кГц) 2. Вибрати 2.2 кОм замість 4.7 кОм (але це подвоює струм) 3. RS-485 для довгих дистанцій (інший протокол, розділ 34)
+- **Прохід:** m2-29-i2c-35
 
 ---
 
@@ -1668,7 +1829,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-091 sha:c547b848 src:dodatky/e-interfeysy.md:65 klas:C -->
+<!-- fc id:T-E-091 sha:c547b848 src:dodatky/e-interfeysy.md:65 klas:A -->
 ### T-E-091 · komirka · рядок 65
 
 **Книга каже, дослівно:**
@@ -1677,11 +1838,29 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.ti.com/ та https://www.analog.com/ (datasheet відповідних трансиверів)
-- **Що шукати в джерелі:** напруга живлення й рівні логічних входів/виходів кожного: SN65HVD230 (3.3 В), TJA1050 і MCP2551 (5 В, рівень виходу RX), MAX485 (5 В) і його 3.3-вольтові аналоги на кшталт SP3485/MAX3485.
-- **Нотатка:** Твердження книги «5-вольтовий трансивер може спалити пін ESP32» спирається саме на рівень виходу RX і на те, що вхід ESP32 не толерантний до 5 В. Обидві половини потребують окремих datasheet.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** NXP UM10204 Rev. 7.0 — розділи 7.1, 7.2; обмеження ємності шини (Cb max 400 пФ) в Table 11
+- **Дослівно з джерела:**
+  > Table 11. Characteristics of the SDA and SCL bus lines:
+  > Cb capacitive load for each bus line — max 400 pF
+  > 
+  > Section 7.2 Operating above the maximum allowable bus capacitance:
+  > Bus capacitance limit is specified to limit rise time reductions and
+  > allow operating at the rated frequency.
+  > 
+  > Available strategies include:
+  > - Reduced fSCL (Section 7.2.1)
+  > - Higher drive outputs (Section 7.2.2)
+  > - Bus buffers (Section 7.2.3)
+  > - Switched pull-up circuit (Section 7.2.4)
+  > 
+  > Maximum Rp = tr / (0.8473 × Cb).
+  > При Cb > 400 пФ, яка додається довгими дротами, формула дає
+  > Rp < 1 кОм, тобто нижче за мінімум (Rp > 1 кОм для 3 мА IOL).
+- **Спосіб і дата:** PDF NXP UM10204 із дзеркала, кеш ~/dzherela-cache, pdftotext -layout, 2026-08-26
+- **Нотатка:** При метровій довжині дроту ємність додає близько 80–100 пФ/м, отже метр додає 80–100 пФ, що набирається разом з 10–20 пФ від модулів дає межу 400 пФ. На цій межі формула Rp(max) дає значення, що не задовольняють обмеженню за мінімальним струмом 3 мА.
+Книга пропонує три рішення: 1. Снизити швидкість (100 кГц замість 400 кГц) 2. Вибрати 2.2 кОм замість 4.7 кОм (але це подвоює струм) 3. RS-485 для довгих дистанцій (інший протокол, розділ 34)
+- **Прохід:** m2-29-i2c-35
 
 ---
 
@@ -2143,7 +2322,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-126 sha:c29a7095 src:dodatky/e-interfeysy.md:109 klas:F -->
+<!-- fc id:T-E-126 sha:c29a7095 src:dodatky/e-interfeysy.md:109 klas:A -->
 ### T-E-126 · komirka · рядок 109
 
 **Книга каже, дослівно:**
@@ -2152,11 +2331,26 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet)
+- **Дослівно з джерела:**
+  > Wire connecting direct as following:
+  >    5V Supply
+  >    Trigger Pulse Input
+  >    Echo Pulse Output
+  >    0V Ground
+  > 
+  > Electric Parameter
+  > Working Voltage                DC 5 V
+  > Trigger Input Signal           10uS TTL pulse
+  > Echo Output Signal             Input TTL lever signal and the range in proportion
+- **Спосіб і дата:** PDF Elecfreaks, кеш `hc-sr04.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Обидві половини твердження дослівні: окремі піни тригера й ECHO, і робоча напруга модуля — 5 В, тобто ECHO — це 5-вольтовий TTL-рівень. Попередження «⛔ 5 В!» у книзі влучне: пряме підключення ECHO до GPIO ESP32 (толерантність 3.3 В) без дільника напруги ризиковане. Datasheet цього попередження сам не формулює (виробники таких попереджень про сумісність із конкретним MCU зазвичай не пишуть) — це книжковий, а не джерельний висновок, але числа, з яких він випливає (5 В проти 3.3 В ESP32), дослівні.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 
-<!-- fc id:T-E-127 sha:2edcffe2 src:dodatky/e-interfeysy.md:109 klas:F -->
+<!-- fc id:T-E-127 sha:2edcffe2 src:dodatky/e-interfeysy.md:109 klas:E -->
 ### T-E-127 · komirka · рядок 109
 
 **Книга каже, дослівно:**
@@ -2165,7 +2359,13 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — номер розділу це структура самої книги, не характеристика HC-SR04. Коректність посилання перевіряє окремий інструмент (`make check` → `posylannya`), не фактчекінг проти datasheet.
+- **Нотатка:** Клас E.
+- **Прохід:** m2-18-dodatok-e-reshta
 
 ---
 

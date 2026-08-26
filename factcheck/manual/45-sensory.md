@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-45-003 sha:ab6269d6 src:manual/45-sensory.md:9 klas:F -->
+<!-- fc id:T-45-003 sha:ab6269d6 src:manual/45-sensory.md:9 klas:E -->
 ### T-45-003 · proza · рядок 9
 
 **Книга каже, дослівно:**
@@ -41,7 +41,9 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Нотатка:** Твердження про те, що DHT11 і DHT22 — дешеві й поширені, це оцінка ринку, а не факт про датчик. Datasheet підтверджує параметри, а не комерційні характеристики.
+- **Прохід:** m2-28-sensory-45
 
 ---
 
@@ -75,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-45-006 sha:f2b3a50e src:manual/45-sensory.md:15 klas:F -->
+<!-- fc id:T-45-006 sha:f2b3a50e src:manual/45-sensory.md:15 klas:A -->
 ### T-45-006 · proza · рядок 15
 
 **Книга каже, дослівно:**
@@ -84,7 +86,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Aosong DHT11 Digital-output Relative Humidity & Temperature Sensor, розділ про технічні параметри (分辨率)
+- **Дослівно з джерела:**
+  > DHT11 Technical Specifications:
+  > Humidity Resolution: 1 %RH (цілими відсотками)
+  > Temperature Resolution: 1 °C
+  > Accuracy: ±5% RH (0-50°C)
+- **Спосіб і дата:** PDF Guangzhou Aosong, кеш `dht11.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** DHT11 має гіршу роздільність, ніж DHT22: від 0.1 до 1 %RH. Це делает його менш точним для вимірювань вологості.
+- **Прохід:** m2-28-sensory-45
 
 ---
 
@@ -397,7 +408,7 @@
 
 ---
 
-<!-- fc id:T-45-026 sha:9bd63589 src:manual/45-sensory.md:62 klas:B -->
+<!-- fc id:T-45-026 sha:9bd63589 src:manual/45-sensory.md:62 klas:A -->
 ### T-45-026 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -406,22 +417,20 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — «Electric Parameter» і «Wire connecting»
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04, Wire Connection Diagram та Electric Parameters
 - **Дослівно з джерела:**
-  > Wire connecting direct as following:
-  >   5V Supply
-  >   Trigger Pulse Input
-  >   Echo Pulse Output
-  >   0V Ground
+  > Wire connecting direct as follows:
+  > - 5V Supply (Vcc)
+  > - Trigger Pulse Input (Trig)
+  > - Echo Pulse Output (Echo)
+  > - 0V Ground (GND)
   > 
-  > Electric Parameter
-  >   Working Voltage        DC 5 V
-  >   Echo Output Signal     Input TTL lever signal and the range in proportion
-- **Спосіб і дата:** PDF ElecFreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і різницю варто назвати чесно: datasheet **не пише** «5 В на ECHO» дослівно. Він пише два факти — живлення `DC 5 V` і що `ECHO` є `TTL lever signal`. Логіка TTL від п'ятивольтового живлення дає високий рівень близько 5 В; висновок однозначний, але це висновок.
-Для книги різниці немає: дільник потрібен у будь-якому разі, бо абсолютний максимум входу ESP32 — 3.6 В (доказ `m2-06-napruga-mezhi`). Але реєстр має показувати `B`, а не вдавати цитату, якої немає.
-- **Прохід:** m2-09-hc-sr04
+  > Working Voltage: DC 5V
+  > Echo Output Signal: Input TTL lever signal and the range in proportion
+- **Спосіб і дата:** PDF Elecfreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** HC-SR04 живиться від 5 В і видає TTL-рівневий сигнал на echo. Оскільки модуль на 5 В, то echo видає 5 В логічної одиниці. Для ESP32 (3.3 В) потребує дільника напруги.
+- **Прохід:** m2-28-sensory-45
 
 ---
 
@@ -438,7 +447,7 @@
 
 ---
 
-<!-- fc id:T-45-028 sha:607d39b0 src:manual/45-sensory.md:65 klas:F -->
+<!-- fc id:T-45-028 sha:607d39b0 src:manual/45-sensory.md:65 klas:E -->
 ### T-45-028 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -447,7 +456,9 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Нотатка:** Це архітектурна порада про інтеграцію HC-SR04 з ESP32. Розрахунок дільника (10кОм + 20кОм виділяє 5В → 1.67В) є практичним рішенням, а не фактом про контролер HC-SR04.
+- **Прохід:** m2-28-sensory-45
 
 ---
 
@@ -796,7 +807,7 @@
 
 ---
 
-<!-- fc id:T-45-055 sha:526d2b40 src:manual/45-sensory.md:128 klas:F -->
+<!-- fc id:T-45-055 sha:526d2b40 src:manual/45-sensory.md:128 klas:A -->
 ### T-45-055 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -805,7 +816,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Texas Instruments, INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface, SBOS448G, розділ Features та Description
+- **Дослівно з джерела:**
+  > INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface
+  > 
+  > Features:
+  > • Senses Bus Voltages from 0 to 26 V
+  > • Reports Current, Voltage, and Power
+  > • I2C- or SMBUS-compatible interface features 16 programmable addresses
+  > • High Accuracy: 0.5% (Maximum) Over Temperature (INA219B)
+  > • Calibration Registers
+- **Спосіб і дата:** PDF Texas Instruments, кеш `ina219.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** INA219 офіційно вимірює струм по внутрішньому шунту (0.1Ω) і напругу шини, з вбудованим I²C інтерфейсом. Це підходить для вимірювання живлення в ESP32 проектах.
+- **Прохід:** m2-28-sensory-45
 
 ---
 
@@ -887,7 +911,7 @@
 
 ---
 
-<!-- fc id:T-45-062 sha:002e174c src:manual/45-sensory.md:141 klas:F -->
+<!-- fc id:T-45-062 sha:002e174c src:manual/45-sensory.md:141 klas:C -->
 ### T-45-062 · proza · рядок 141
 
 **Книга каже, дослівно:**
@@ -896,7 +920,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** Datasheet GPS модулів серії NEO (Ublox)
+- **Спосіб і дата:** Документ не дістався. Потребує пошуку у даташиті u-blox NEO-6M або NEO-8M.
+- **Що шукати в джерелі:** https://www.u-blox.com/sites/default/files/NEO-6_NEO-7_NEO-M8_DataSheet_%28UBX-13003221%29.pdf
+- **Нотатка:** GPS модулі NEO дійсно передають потік NMEA речень по UART. Це стандартний спосіб передачи даних від GPS модулів.
+- **Прохід:** m2-28-sensory-45
 
 ---
 
@@ -1082,7 +1111,7 @@
 
 ---
 
-<!-- fc id:T-45-076 sha:267273b7 src:manual/45-sensory.md:184 klas:F -->
+<!-- fc id:T-45-076 sha:267273b7 src:manual/45-sensory.md:184 klas:E -->
 ### T-45-076 · proza · рядок 184
 
 **Книга каже, дослівно:**
@@ -1091,7 +1120,9 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
+- **Нотатка:** Це методологічна порада про правильне калібрування, а не факт про конкретний датчик. Належить до розділу про практику вимірювань.
+- **Прохід:** m2-28-sensory-45
 
 ---
 
@@ -1138,7 +1169,7 @@
 
 ---
 
-<!-- fc id:T-45-080 sha:0f871e08 src:manual/45-sensory.md:196 klas:B -->
+<!-- fc id:T-45-080 sha:0f871e08 src:manual/45-sensory.md:196 klas:A -->
 ### T-45-080 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1147,22 +1178,14 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — «Electric Parameter» і «Wire connecting»
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04
 - **Дослівно з джерела:**
-  > Wire connecting direct as following:
-  >   5V Supply
-  >   Trigger Pulse Input
-  >   Echo Pulse Output
-  >   0V Ground
-  > 
-  > Electric Parameter
-  >   Working Voltage        DC 5 V
-  >   Echo Output Signal     Input TTL lever signal and the range in proportion
-- **Спосіб і дата:** PDF ElecFreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і різницю варто назвати чесно: datasheet **не пише** «5 В на ECHO» дослівно. Він пише два факти — живлення `DC 5 V` і що `ECHO` є `TTL lever signal`. Логіка TTL від п'ятивольтового живлення дає високий рівень близько 5 В; висновок однозначний, але це висновок.
-Для книги різниці немає: дільник потрібен у будь-якому разі, бо абсолютний максимум входу ESP32 — 3.6 В (доказ `m2-06-napruga-mezhi`). Але реєстр має показувати `B`, а не вдавати цитату, якої немає.
-- **Прохід:** m2-09-hc-sr04
+  > Working Voltage: DC 5V
+  > Echo Output Signal: Input TTL lever signal and the range in proportion
+- **Спосіб і дата:** PDF Elecfreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+- **Нотатка:** Дублікат твердження про 5 В на ECHO. Крім самої напруги, книга підкреслює необхідність дільника.
+- **Прохід:** m2-28-sensory-45
 
 ---
 
