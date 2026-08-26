@@ -1,0 +1,60 @@
+# М2, джерело — LoRa розділ 43, одиниці T-43-028 та T-43-033.
+#
+# Дві `detali` з розділу 43, що залишилися. Обидві про RFM69:
+# - Перша висвітлює помилку в нашій документації про модуль;
+# - Друга переконує, що це правильна виправка.
+
+- nazva: Слова «LoRa» в документації RFM69 немає жодного разу
+  zbih: 'Слова «LoRa» в документації RFM69 немає жодного разу'
+  klas: A
+  dzherelo: >-
+    RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product
+    Features»
+  cytata: |
+    RFM69HCW — KEY PRODUCT FEATURES
+
+    +20 dBm - 100 mW Power Output Capability
+    High Sensitivity: down to -120 dBm at 1.2 kbps
+    High Selectivity: 16-tap FIR Channel Filter
+    Bullet-proof front end: IIP3 = -18 dBm, IIP2 = +35 dBm,
+    80 dB Blocking Immunity, no Image Frequency response
+    Low current: Rx = 16 mA, 100nA register retention
+    Programmable Pout: -18 to +20 dBm in 1dB steps
+    Constant RF performance over voltage range of module
+    FSK Bit rates up to 300 kb/s
+    Fully integrated synthesizer with a resolution of 61 Hz
+    FSK, GFSK, MSK, GMSK and OOK modulations
+    Built-in Bit Synchronizer performing Clock Recovery
+    Incoming Sync Word Recognition
+    115 dB+ Dynamic Range RSSI
+
+    (слово «LoRa» у документі RFM69HCW не трапляється жодного разу)
+  sposib: >-
+    PDF HopeRF через cdn-shop.adafruit.com; pdftotext -layout, 2026-08-26
+  notatka: >-
+    Це потверджує висновок розділу щодо різниці між RFM69 та LoRa-модулями.
+    Коли потрібно розрізнити: RFM69 (FSK, без LoRa) проти RFM95/SX1276 (LoRa).
+    У документації немає жодної згадки про LoRa, лише FSK-модуляція.
+
+- nazva: RFM69 — сусіднє сімейство для вузькосмугового FSK без дальності LoRa
+  zbih: 'RFM69.*сусіднє сімейство.*FSK.*без дальності LoRa'
+  klas: A
+  dzherelo: >-
+    RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділи 3.3 «FSK Modulation»
+    та «Key Product Features»
+  cytata: |
+    3.3.3. FSK Modulation
+    FSK modulation is performed inside the PLL bandwidth, by changing the
+    fractional divider ratio in the feedback loop of the PLL. The large
+    resolution of the sigma-delta modulator, allows for very narrow frequency
+    deviation.
+
+    KEY PRODUCT FEATURES
+    FSK, GFSK, MSK, GMSK and OOK modulations
+  sposib: >-
+    PDF HopeRF через cdn-shop.adafruit.com; pdftotext -layout, 2026-08-26
+  notatka: >-
+    Документація RFM69 підтверджує, що це модуль для FSK-модуляції, а не LoRa.
+    Модуль підтримує FSK, GFSK, MSK, GMSK та OOK, але не LoRa. Це пояснює
+    проблему розділу: RFM69 часто плутають з RFM95 за назвою і ціною, але це
+    зовсім інше радіо, без дальності LoRa.
