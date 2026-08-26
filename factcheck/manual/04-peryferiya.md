@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/04-peryferiya.md`
 
-Одиниць твердження: **89**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **150**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -241,7 +241,7 @@
 ---
 
 <!-- fc id:T-04-019 sha:8d66d74f src:manual/04-peryferiya.md:51 klas:F -->
-### T-04-019 · tablycya · рядок 51
+### T-04-019 · tablycya-shapka · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -253,12 +253,12 @@
 
 ---
 
-<!-- fc id:T-04-020 sha:e85030bf src:manual/04-peryferiya.md:53 klas:F -->
-### T-04-020 · tablycya · рядок 53
+<!-- fc id:T-04-020 sha:568b7911 src:manual/04-peryferiya.md:52 klas:F -->
+### T-04-020 · komirka · рядок 52
 
 **Книга каже, дослівно:**
 
-> | UART | послідовний порт; консоль і RS-485 | 34 |
+> UART · Що це → послідовний порт; консоль і RS-485
 
 **Доказ**
 
@@ -266,12 +266,12 @@
 
 ---
 
-<!-- fc id:T-04-021 sha:c3645bf7 src:manual/04-peryferiya.md:54 klas:F -->
-### T-04-021 · tablycya · рядок 54
+<!-- fc id:T-04-021 sha:32c2186a src:manual/04-peryferiya.md:52 klas:F -->
+### T-04-021 · komirka · рядок 52
 
 **Книга каже, дослівно:**
 
-> | I²C | дві лінії, багато пристроїв, невисока швидкість | 35 |
+> UART · Розділ → 34
 
 **Доказ**
 
@@ -279,12 +279,12 @@
 
 ---
 
-<!-- fc id:T-04-022 sha:c642b53c src:manual/04-peryferiya.md:55 klas:F -->
-### T-04-022 · tablycya · рядок 55
+<!-- fc id:T-04-022 sha:24fd2228 src:manual/04-peryferiya.md:53 klas:F -->
+### T-04-022 · komirka · рядок 53
 
 **Книга каже, дослівно:**
 
-> | SPI | швидка шина, окремий вибір на кожен пристрій | 36 |
+> I²C · Що це → дві лінії, багато пристроїв, невисока швидкість
 
 **Доказ**
 
@@ -292,12 +292,12 @@
 
 ---
 
-<!-- fc id:T-04-023 sha:313b72dd src:manual/04-peryferiya.md:56 klas:F -->
-### T-04-023 · tablycya · рядок 56
+<!-- fc id:T-04-023 sha:9f56beb2 src:manual/04-peryferiya.md:53 klas:F -->
+### T-04-023 · komirka · рядок 53
 
 **Книга каже, дослівно:**
 
-> | I²S | цифровий звук: мікрофони, підсилювачі | 49 |
+> I²C · Розділ → 35
 
 **Доказ**
 
@@ -305,12 +305,12 @@
 
 ---
 
-<!-- fc id:T-04-024 sha:f8c4899f src:manual/04-peryferiya.md:57 klas:F -->
-### T-04-024 · tablycya · рядок 57
+<!-- fc id:T-04-024 sha:0aef4c28 src:manual/04-peryferiya.md:54 klas:F -->
+### T-04-024 · komirka · рядок 54
 
 **Книга каже, дослівно:**
 
-> | TWAI | CAN-шина, сумісна з автомобільною | 38 |
+> SPI · Що це → швидка шина, окремий вибір на кожен пристрій
 
 **Доказ**
 
@@ -318,12 +318,12 @@
 
 ---
 
-<!-- fc id:T-04-025 sha:0d197b4f src:manual/04-peryferiya.md:58 klas:F -->
-### T-04-025 · tablycya · рядок 58
+<!-- fc id:T-04-025 sha:0ed1c8c6 src:manual/04-peryferiya.md:54 klas:F -->
+### T-04-025 · komirka · рядок 54
 
 **Книга каже, дослівно:**
 
-> | SDMMC | картки пам'яті на повній швидкості | 49 |
+> SPI · Розділ → 36
 
 **Доказ**
 
@@ -331,12 +331,12 @@
 
 ---
 
-<!-- fc id:T-04-026 sha:0c9d4279 src:manual/04-peryferiya.md:59 klas:F -->
-### T-04-026 · tablycya · рядок 59
+<!-- fc id:T-04-026 sha:8e9323a3 src:manual/04-peryferiya.md:55 klas:F -->
+### T-04-026 · komirka · рядок 55
 
 **Книга каже, дослівно:**
 
-> | USB OTG | [[S3]] повноцінний USB: пристрій або хост | 09 |
+> I²S · Що це → цифровий звук: мікрофони, підсилювачі
 
 **Доказ**
 
@@ -344,12 +344,12 @@
 
 ---
 
-<!-- fc id:T-04-027 sha:7c11146d src:manual/04-peryferiya.md:60 klas:F -->
-### T-04-027 · tablycya · рядок 60
+<!-- fc id:T-04-027 sha:9687e42c src:manual/04-peryferiya.md:55 klas:F -->
+### T-04-027 · komirka · рядок 55
 
 **Книга каже, дослівно:**
 
-> | USB-Serial-JTAG | [[S3]] [[C3]] консоль і JTAG одним кабелем | 27 |
+> I²S · Розділ → 49
 
 **Доказ**
 
@@ -357,8 +357,112 @@
 
 ---
 
-<!-- fc id:T-04-028 sha:8d66d74f src:manual/04-peryferiya.md:64 klas:F -->
-### T-04-028 · tablycya · рядок 64
+<!-- fc id:T-04-028 sha:ba6a71e5 src:manual/04-peryferiya.md:56 klas:F -->
+### T-04-028 · komirka · рядок 56
+
+**Книга каже, дослівно:**
+
+> TWAI · Що це → CAN-шина, сумісна з автомобільною
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-029 sha:436bfe4d src:manual/04-peryferiya.md:56 klas:F -->
+### T-04-029 · komirka · рядок 56
+
+**Книга каже, дослівно:**
+
+> TWAI · Розділ → 38
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-030 sha:b4c0eb8d src:manual/04-peryferiya.md:57 klas:F -->
+### T-04-030 · komirka · рядок 57
+
+**Книга каже, дослівно:**
+
+> SDMMC · Що це → картки пам'яті на повній швидкості
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-031 sha:cb2543fd src:manual/04-peryferiya.md:57 klas:F -->
+### T-04-031 · komirka · рядок 57
+
+**Книга каже, дослівно:**
+
+> SDMMC · Розділ → 49
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-032 sha:311bec1c src:manual/04-peryferiya.md:58 klas:F -->
+### T-04-032 · komirka · рядок 58
+
+**Книга каже, дослівно:**
+
+> USB OTG · Що це → [[S3]] повноцінний USB: пристрій або хост
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-033 sha:364ba139 src:manual/04-peryferiya.md:58 klas:F -->
+### T-04-033 · komirka · рядок 58
+
+**Книга каже, дослівно:**
+
+> USB OTG · Розділ → 09
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-034 sha:67d4ed9e src:manual/04-peryferiya.md:59 klas:F -->
+### T-04-034 · komirka · рядок 59
+
+**Книга каже, дослівно:**
+
+> USB-Serial-JTAG · Що це → [[S3]] [[C3]] консоль і JTAG одним кабелем
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-035 sha:31eaa593 src:manual/04-peryferiya.md:59 klas:F -->
+### T-04-035 · komirka · рядок 59
+
+**Книга каже, дослівно:**
+
+> USB-Serial-JTAG · Розділ → 27
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-036 sha:8d66d74f src:manual/04-peryferiya.md:64 klas:F -->
+### T-04-036 · tablycya-shapka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -370,12 +474,12 @@
 
 ---
 
-<!-- fc id:T-04-029 sha:9c240fec src:manual/04-peryferiya.md:66 klas:F -->
-### T-04-029 · tablycya · рядок 66
+<!-- fc id:T-04-037 sha:2a3561f1 src:manual/04-peryferiya.md:65 klas:F -->
+### T-04-037 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
-> | LEDC | PWM: яскравість світлодіодів, сервоприводи | 33 |
+> LEDC · Що це → PWM: яскравість світлодіодів, сервоприводи
 
 **Доказ**
 
@@ -383,12 +487,12 @@
 
 ---
 
-<!-- fc id:T-04-030 sha:6e1c501a src:manual/04-peryferiya.md:67 klas:F -->
-### T-04-030 · tablycya · рядок 67
+<!-- fc id:T-04-038 sha:202d2806 src:manual/04-peryferiya.md:65 klas:F -->
+### T-04-038 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
-> | MCPWM | [[classic]] [[S3]] моторний PWM: мертвий час, аварійне вимкнення | 48 |
+> LEDC · Розділ → 33
 
 **Доказ**
 
@@ -396,12 +500,12 @@
 
 ---
 
-<!-- fc id:T-04-031 sha:e6e3f492 src:manual/04-peryferiya.md:68 klas:F -->
-### T-04-031 · tablycya · рядок 68
+<!-- fc id:T-04-039 sha:9c0ad84a src:manual/04-peryferiya.md:66 klas:F -->
+### T-04-039 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
-> | RMT | точні послідовності імпульсів: WS2812, ІЧ | 33 |
+> MCPWM · Що це → [[classic]] [[S3]] моторний PWM: мертвий час, аварійне вимкнення
 
 **Доказ**
 
@@ -409,12 +513,12 @@
 
 ---
 
-<!-- fc id:T-04-032 sha:622b63e5 src:manual/04-peryferiya.md:69 klas:F -->
-### T-04-032 · tablycya · рядок 69
+<!-- fc id:T-04-040 sha:dafa9bd0 src:manual/04-peryferiya.md:66 klas:F -->
+### T-04-040 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
-> | PCNT | апаратний лічильник імпульсів: енкодери, витратоміри | 33 |
+> MCPWM · Розділ → 48
 
 **Доказ**
 
@@ -422,12 +526,12 @@
 
 ---
 
-<!-- fc id:T-04-033 sha:9c1e66bb src:manual/04-peryferiya.md:70 klas:F -->
-### T-04-033 · tablycya · рядок 70
+<!-- fc id:T-04-041 sha:ba94361c src:manual/04-peryferiya.md:67 klas:F -->
+### T-04-041 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
-> | Таймери | апаратні таймери загального призначення | 33 |
+> RMT · Що це → точні послідовності імпульсів: WS2812, ІЧ
 
 **Доказ**
 
@@ -435,8 +539,73 @@
 
 ---
 
-<!-- fc id:T-04-034 sha:8d66d74f src:manual/04-peryferiya.md:74 klas:F -->
-### T-04-034 · tablycya · рядок 74
+<!-- fc id:T-04-042 sha:8295f48c src:manual/04-peryferiya.md:67 klas:F -->
+### T-04-042 · komirka · рядок 67
+
+**Книга каже, дослівно:**
+
+> RMT · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-043 sha:20f2f218 src:manual/04-peryferiya.md:68 klas:F -->
+### T-04-043 · komirka · рядок 68
+
+**Книга каже, дослівно:**
+
+> PCNT · Що це → апаратний лічильник імпульсів: енкодери, витратоміри
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-044 sha:e6046b59 src:manual/04-peryferiya.md:68 klas:F -->
+### T-04-044 · komirka · рядок 68
+
+**Книга каже, дослівно:**
+
+> PCNT · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-045 sha:0339aa31 src:manual/04-peryferiya.md:69 klas:F -->
+### T-04-045 · komirka · рядок 69
+
+**Книга каже, дослівно:**
+
+> Таймери · Що це → апаратні таймери загального призначення
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-046 sha:b285d77f src:manual/04-peryferiya.md:69 klas:F -->
+### T-04-046 · komirka · рядок 69
+
+**Книга каже, дослівно:**
+
+> Таймери · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-047 sha:8d66d74f src:manual/04-peryferiya.md:74 klas:F -->
+### T-04-047 · tablycya-shapka · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -448,12 +617,12 @@
 
 ---
 
-<!-- fc id:T-04-035 sha:1cbce998 src:manual/04-peryferiya.md:76 klas:F -->
-### T-04-035 · tablycya · рядок 76
+<!-- fc id:T-04-048 sha:2a777a37 src:manual/04-peryferiya.md:75 klas:F -->
+### T-04-048 · komirka · рядок 75
 
 **Книга каже, дослівно:**
 
-> | ADC | вимірювання напруги | 33 |
+> ADC · Що це → вимірювання напруги
 
 **Доказ**
 
@@ -461,12 +630,12 @@
 
 ---
 
-<!-- fc id:T-04-036 sha:fc8bc96a src:manual/04-peryferiya.md:77 klas:F -->
-### T-04-036 · tablycya · рядок 77
+<!-- fc id:T-04-049 sha:27e089d6 src:manual/04-peryferiya.md:75 klas:F -->
+### T-04-049 · komirka · рядок 75
 
 **Книга каже, дослівно:**
 
-> | DAC | [[classic]] [[S2]] справжній аналоговий вихід | 33 |
+> ADC · Розділ → 33
 
 **Доказ**
 
@@ -474,12 +643,12 @@
 
 ---
 
-<!-- fc id:T-04-037 sha:39be56c3 src:manual/04-peryferiya.md:78 klas:F -->
-### T-04-037 · tablycya · рядок 78
+<!-- fc id:T-04-050 sha:2f606168 src:manual/04-peryferiya.md:76 klas:F -->
+### T-04-050 · komirka · рядок 76
 
 **Книга каже, дослівно:**
 
-> | Touch | ємнісні сенсори дотику | 33 |
+> DAC · Що це → [[classic]] [[S2]] справжній аналоговий вихід
 
 **Доказ**
 
@@ -487,8 +656,47 @@
 
 ---
 
-<!-- fc id:T-04-038 sha:6b77ee59 src:manual/04-peryferiya.md:82 klas:F -->
-### T-04-038 · proza · рядок 82
+<!-- fc id:T-04-051 sha:9040d220 src:manual/04-peryferiya.md:76 klas:F -->
+### T-04-051 · komirka · рядок 76
+
+**Книга каже, дослівно:**
+
+> DAC · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:77 klas:F -->
+### T-04-052 · komirka · рядок 77
+
+**Книга каже, дослівно:**
+
+> Touch · Що це → ємнісні сенсори дотику
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:77 klas:F -->
+### T-04-053 · komirka · рядок 77
+
+**Книга каже, дослівно:**
+
+> Touch · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-054 sha:6b77ee59 src:manual/04-peryferiya.md:82 klas:F -->
+### T-04-054 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -500,8 +708,8 @@
 
 ---
 
-<!-- fc id:T-04-039 sha:4ba300f4 src:manual/04-peryferiya.md:87 klas:F -->
-### T-04-039 · proza · рядок 87
+<!-- fc id:T-04-055 sha:4ba300f4 src:manual/04-peryferiya.md:87 klas:F -->
+### T-04-055 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -513,8 +721,8 @@
 
 ---
 
-<!-- fc id:T-04-040 sha:ffc19a11 src:manual/04-peryferiya.md:87 klas:F -->
-### T-04-040 · proza · рядок 87
+<!-- fc id:T-04-056 sha:ffc19a11 src:manual/04-peryferiya.md:87 klas:F -->
+### T-04-056 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -526,8 +734,8 @@
 
 ---
 
-<!-- fc id:T-04-041 sha:8716ec5b src:manual/04-peryferiya.md:87 klas:F -->
-### T-04-041 · proza · рядок 87
+<!-- fc id:T-04-057 sha:8716ec5b src:manual/04-peryferiya.md:87 klas:F -->
+### T-04-057 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -539,8 +747,8 @@
 
 ---
 
-<!-- fc id:T-04-042 sha:73930e26 src:manual/04-peryferiya.md:87 klas:F -->
-### T-04-042 · proza · рядок 87
+<!-- fc id:T-04-058 sha:73930e26 src:manual/04-peryferiya.md:87 klas:F -->
+### T-04-058 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -552,8 +760,8 @@
 
 ---
 
-<!-- fc id:T-04-043 sha:b2c79788 src:manual/04-peryferiya.md:94 klas:F -->
-### T-04-043 · proza · рядок 94
+<!-- fc id:T-04-059 sha:b2c79788 src:manual/04-peryferiya.md:94 klas:F -->
+### T-04-059 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -565,8 +773,8 @@
 
 ---
 
-<!-- fc id:T-04-044 sha:3e8807d6 src:manual/04-peryferiya.md:94 klas:F -->
-### T-04-044 · proza · рядок 94
+<!-- fc id:T-04-060 sha:3e8807d6 src:manual/04-peryferiya.md:94 klas:F -->
+### T-04-060 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -578,8 +786,8 @@
 
 ---
 
-<!-- fc id:T-04-045 sha:2f22bb75 src:manual/04-peryferiya.md:98 klas:F -->
-### T-04-045 · proza · рядок 98
+<!-- fc id:T-04-061 sha:2f22bb75 src:manual/04-peryferiya.md:98 klas:F -->
+### T-04-061 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -591,8 +799,8 @@
 
 ---
 
-<!-- fc id:T-04-046 sha:0bbc6793 src:manual/04-peryferiya.md:98 klas:F -->
-### T-04-046 · proza · рядок 98
+<!-- fc id:T-04-062 sha:0bbc6793 src:manual/04-peryferiya.md:98 klas:F -->
+### T-04-062 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -604,8 +812,8 @@
 
 ---
 
-<!-- fc id:T-04-047 sha:d4ed4106 src:manual/04-peryferiya.md:104 klas:F -->
-### T-04-047 · proza · рядок 104
+<!-- fc id:T-04-063 sha:d4ed4106 src:manual/04-peryferiya.md:104 klas:F -->
+### T-04-063 · proza · рядок 104
 
 **Книга каже, дослівно:**
 
@@ -617,8 +825,8 @@
 
 ---
 
-<!-- fc id:T-04-048 sha:70bda4e1 src:manual/04-peryferiya.md:104 klas:F -->
-### T-04-048 · proza · рядок 104
+<!-- fc id:T-04-064 sha:70bda4e1 src:manual/04-peryferiya.md:104 klas:F -->
+### T-04-064 · proza · рядок 104
 
 **Книга каже, дослівно:**
 
@@ -630,8 +838,8 @@
 
 ---
 
-<!-- fc id:T-04-049 sha:fec794dc src:manual/04-peryferiya.md:108 klas:F -->
-### T-04-049 · proza · рядок 108
+<!-- fc id:T-04-065 sha:fec794dc src:manual/04-peryferiya.md:108 klas:F -->
+### T-04-065 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -643,8 +851,8 @@
 
 ---
 
-<!-- fc id:T-04-050 sha:0c413fdd src:manual/04-peryferiya.md:108 klas:F -->
-### T-04-050 · proza · рядок 108
+<!-- fc id:T-04-066 sha:0c413fdd src:manual/04-peryferiya.md:108 klas:F -->
+### T-04-066 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -656,8 +864,8 @@
 
 ---
 
-<!-- fc id:T-04-051 sha:60a19ebb src:manual/04-peryferiya.md:113 klas:F -->
-### T-04-051 · tablycya · рядок 113
+<!-- fc id:T-04-067 sha:60a19ebb src:manual/04-peryferiya.md:113 klas:F -->
+### T-04-067 · tablycya-shapka · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -669,12 +877,12 @@
 
 ---
 
-<!-- fc id:T-04-052 sha:a024826e src:manual/04-peryferiya.md:115 klas:F -->
-### T-04-052 · tablycya · рядок 115
+<!-- fc id:T-04-068 sha:d294d263 src:manual/04-peryferiya.md:114 klas:F -->
+### T-04-068 · komirka · рядок 114
 
 **Книга каже, дослівно:**
 
-> | UART | 3 | 2 | 3 | 2 | 3 | 2 |
+> UART · classic → 3
 
 **Доказ**
 
@@ -682,12 +890,129 @@
 
 ---
 
-<!-- fc id:T-04-053 sha:eee67b0a src:manual/04-peryferiya.md:116 klas:A -->
-### T-04-053 · tablycya · рядок 116
+<!-- fc id:T-04-069 sha:a52b9268 src:manual/04-peryferiya.md:114 klas:F -->
+### T-04-069 · komirka · рядок 114
 
 **Книга каже, дослівно:**
 
-> | I²C | 2 | 2 | 2 | **1** | 1 + 1 LP | 2 |
+> UART · S2 → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-070 sha:f80d356e src:manual/04-peryferiya.md:114 klas:F -->
+### T-04-070 · komirka · рядок 114
+
+**Книга каже, дослівно:**
+
+> UART · S3 → 3
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-071 sha:32042095 src:manual/04-peryferiya.md:114 klas:F -->
+### T-04-071 · komirka · рядок 114
+
+**Книга каже, дослівно:**
+
+> UART · C3 → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-072 sha:4275fcfc src:manual/04-peryferiya.md:114 klas:F -->
+### T-04-072 · komirka · рядок 114
+
+**Книга каже, дослівно:**
+
+> UART · C6 → 3
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-073 sha:393a056c src:manual/04-peryferiya.md:114 klas:F -->
+### T-04-073 · komirka · рядок 114
+
+**Книга каже, дослівно:**
+
+> UART · H2 → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-074 sha:59f98618 src:manual/04-peryferiya.md:115 klas:F -->
+### T-04-074 · komirka · рядок 115
+
+**Книга каже, дослівно:**
+
+> I²C · classic → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-075 sha:5e4f8375 src:manual/04-peryferiya.md:115 klas:F -->
+### T-04-075 · komirka · рядок 115
+
+**Книга каже, дослівно:**
+
+> I²C · S2 → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-076 sha:c9d1e001 src:manual/04-peryferiya.md:115 klas:F -->
+### T-04-076 · komirka · рядок 115
+
+**Книга каже, дослівно:**
+
+> I²C · S3 → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-077 sha:fab5f138 src:manual/04-peryferiya.md:115 klas:F -->
+### T-04-077 · komirka · рядок 115
+
+**Книга каже, дослівно:**
+
+> I²C · C3 → **1**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-078 sha:226fd709 src:manual/04-peryferiya.md:115 klas:A -->
+### T-04-078 · komirka · рядок 115
+
+**Книга каже, дослівно:**
+
+> I²C · C6 → 1 + 1 LP
 
 **Доказ**
 
@@ -703,12 +1028,12 @@
 
 ---
 
-<!-- fc id:T-04-054 sha:41ec6c7f src:manual/04-peryferiya.md:117 klas:F -->
-### T-04-054 · tablycya · рядок 117
+<!-- fc id:T-04-079 sha:24cf7588 src:manual/04-peryferiya.md:115 klas:F -->
+### T-04-079 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
-> | SPI, усього | 3 | 3 | 3 | 2 | 2 | 2 |
+> I²C · H2 → 2
 
 **Доказ**
 
@@ -716,12 +1041,12 @@
 
 ---
 
-<!-- fc id:T-04-055 sha:834ea4b3 src:manual/04-peryferiya.md:118 klas:F -->
-### T-04-055 · tablycya · рядок 118
+<!-- fc id:T-04-080 sha:62eeabd8 src:manual/04-peryferiya.md:116 klas:F -->
+### T-04-080 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
-> | SPI, вільних | 2 | 2 | 2 | **1** | **1** | **1** |
+> SPI, усього · classic → 3
 
 **Доказ**
 
@@ -729,12 +1054,12 @@
 
 ---
 
-<!-- fc id:T-04-056 sha:85113e4f src:manual/04-peryferiya.md:119 klas:F -->
-### T-04-056 · tablycya · рядок 119
+<!-- fc id:T-04-081 sha:57e95b47 src:manual/04-peryferiya.md:116 klas:F -->
+### T-04-081 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
-> | I²S | 2 | 1 | 2 | 1 | 1 | 1 |
+> SPI, усього · S2 → 3
 
 **Доказ**
 
@@ -742,12 +1067,12 @@
 
 ---
 
-<!-- fc id:T-04-057 sha:24f3f220 src:manual/04-peryferiya.md:120 klas:F -->
-### T-04-057 · tablycya · рядок 120
+<!-- fc id:T-04-082 sha:7387c593 src:manual/04-peryferiya.md:116 klas:F -->
+### T-04-082 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
-> | TWAI (CAN) | 1 | 1 | 1 | 1 | **2** | 1 |
+> SPI, усього · S3 → 3
 
 **Доказ**
 
@@ -755,12 +1080,12 @@
 
 ---
 
-<!-- fc id:T-04-058 sha:2ae283ed src:manual/04-peryferiya.md:121 klas:F -->
-### T-04-058 · tablycya · рядок 121
+<!-- fc id:T-04-083 sha:c2c0f8a2 src:manual/04-peryferiya.md:116 klas:F -->
+### T-04-083 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
-> | DAC | **2** | **2** | ні | ні | ні | ні |
+> SPI, усього · C3 → 2
 
 **Доказ**
 
@@ -768,12 +1093,12 @@
 
 ---
 
-<!-- fc id:T-04-059 sha:2d09a367 src:manual/04-peryferiya.md:122 klas:F -->
-### T-04-059 · tablycya · рядок 122
+<!-- fc id:T-04-084 sha:3eb116e1 src:manual/04-peryferiya.md:116 klas:F -->
+### T-04-084 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
-> | Touch | 10 | 14 | 14 | **ні** | ні | ні |
+> SPI, усього · C6 → 2
 
 **Доказ**
 
@@ -781,12 +1106,12 @@
 
 ---
 
-<!-- fc id:T-04-060 sha:72477bd2 src:manual/04-peryferiya.md:123 klas:F -->
-### T-04-060 · tablycya · рядок 123
+<!-- fc id:T-04-085 sha:1104526d src:manual/04-peryferiya.md:116 klas:F -->
+### T-04-085 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
-> | USB | ні | OTG | OTG+JTAG | JTAG | JTAG | JTAG |
+> SPI, усього · H2 → 2
 
 **Доказ**
 
@@ -794,8 +1119,476 @@
 
 ---
 
-<!-- fc id:T-04-061 sha:3a653bb8 src:manual/04-peryferiya.md:125 klas:A -->
-### T-04-061 · proza · рядок 125
+<!-- fc id:T-04-086 sha:12f97fd5 src:manual/04-peryferiya.md:117 klas:F -->
+### T-04-086 · komirka · рядок 117
+
+**Книга каже, дослівно:**
+
+> SPI, вільних · classic → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-087 sha:9797cc5c src:manual/04-peryferiya.md:117 klas:F -->
+### T-04-087 · komirka · рядок 117
+
+**Книга каже, дослівно:**
+
+> SPI, вільних · S2 → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-088 sha:861ab1b0 src:manual/04-peryferiya.md:117 klas:F -->
+### T-04-088 · komirka · рядок 117
+
+**Книга каже, дослівно:**
+
+> SPI, вільних · S3 → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-089 sha:aad3e15e src:manual/04-peryferiya.md:117 klas:F -->
+### T-04-089 · komirka · рядок 117
+
+**Книга каже, дослівно:**
+
+> SPI, вільних · C3 → **1**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-090 sha:e10c70d1 src:manual/04-peryferiya.md:117 klas:F -->
+### T-04-090 · komirka · рядок 117
+
+**Книга каже, дослівно:**
+
+> SPI, вільних · C6 → **1**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-091 sha:191c4f76 src:manual/04-peryferiya.md:117 klas:F -->
+### T-04-091 · komirka · рядок 117
+
+**Книга каже, дослівно:**
+
+> SPI, вільних · H2 → **1**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-092 sha:2ad02aba src:manual/04-peryferiya.md:118 klas:F -->
+### T-04-092 · komirka · рядок 118
+
+**Книга каже, дослівно:**
+
+> I²S · classic → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-093 sha:7020fb4f src:manual/04-peryferiya.md:118 klas:F -->
+### T-04-093 · komirka · рядок 118
+
+**Книга каже, дослівно:**
+
+> I²S · S2 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-094 sha:2a1ed9af src:manual/04-peryferiya.md:118 klas:F -->
+### T-04-094 · komirka · рядок 118
+
+**Книга каже, дослівно:**
+
+> I²S · S3 → 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-095 sha:3a57b6f4 src:manual/04-peryferiya.md:118 klas:F -->
+### T-04-095 · komirka · рядок 118
+
+**Книга каже, дослівно:**
+
+> I²S · C3 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-096 sha:c17be608 src:manual/04-peryferiya.md:118 klas:F -->
+### T-04-096 · komirka · рядок 118
+
+**Книга каже, дослівно:**
+
+> I²S · C6 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-097 sha:ab67ab65 src:manual/04-peryferiya.md:118 klas:F -->
+### T-04-097 · komirka · рядок 118
+
+**Книга каже, дослівно:**
+
+> I²S · H2 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-098 sha:d9e2ad8c src:manual/04-peryferiya.md:119 klas:F -->
+### T-04-098 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> TWAI (CAN) · classic → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-099 sha:fcb3dc0e src:manual/04-peryferiya.md:119 klas:F -->
+### T-04-099 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> TWAI (CAN) · S2 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-100 sha:3703494f src:manual/04-peryferiya.md:119 klas:F -->
+### T-04-100 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> TWAI (CAN) · S3 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-101 sha:0dd74db5 src:manual/04-peryferiya.md:119 klas:F -->
+### T-04-101 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> TWAI (CAN) · C3 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-102 sha:0b174b85 src:manual/04-peryferiya.md:119 klas:F -->
+### T-04-102 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> TWAI (CAN) · C6 → **2**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-103 sha:f575a5bf src:manual/04-peryferiya.md:119 klas:F -->
+### T-04-103 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> TWAI (CAN) · H2 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-104 sha:8b6b6bdd src:manual/04-peryferiya.md:120 klas:F -->
+### T-04-104 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> DAC · classic → **2**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-105 sha:d882c9c3 src:manual/04-peryferiya.md:120 klas:F -->
+### T-04-105 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> DAC · S2 → **2**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-106 sha:81584cd7 src:manual/04-peryferiya.md:120 klas:F -->
+### T-04-106 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> DAC · S3 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-107 sha:4e26e4ae src:manual/04-peryferiya.md:120 klas:F -->
+### T-04-107 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> DAC · C3 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-108 sha:589c599f src:manual/04-peryferiya.md:120 klas:F -->
+### T-04-108 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> DAC · C6 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-109 sha:1b51b413 src:manual/04-peryferiya.md:120 klas:F -->
+### T-04-109 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> DAC · H2 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:121 klas:F -->
+### T-04-110 · komirka · рядок 121
+
+**Книга каже, дослівно:**
+
+> Touch · classic → 10
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-111 sha:ca68ac49 src:manual/04-peryferiya.md:121 klas:F -->
+### T-04-111 · komirka · рядок 121
+
+**Книга каже, дослівно:**
+
+> Touch · S2 → 14
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-112 sha:affdc5f0 src:manual/04-peryferiya.md:121 klas:F -->
+### T-04-112 · komirka · рядок 121
+
+**Книга каже, дослівно:**
+
+> Touch · S3 → 14
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-113 sha:45a998a0 src:manual/04-peryferiya.md:121 klas:F -->
+### T-04-113 · komirka · рядок 121
+
+**Книга каже, дослівно:**
+
+> Touch · C3 → **ні**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-114 sha:fe58cacf src:manual/04-peryferiya.md:121 klas:F -->
+### T-04-114 · komirka · рядок 121
+
+**Книга каже, дослівно:**
+
+> Touch · C6 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-115 sha:86b8a81d src:manual/04-peryferiya.md:121 klas:F -->
+### T-04-115 · komirka · рядок 121
+
+**Книга каже, дослівно:**
+
+> Touch · H2 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-116 sha:b9a03293 src:manual/04-peryferiya.md:122 klas:F -->
+### T-04-116 · komirka · рядок 122
+
+**Книга каже, дослівно:**
+
+> USB · classic → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-117 sha:5c099b4e src:manual/04-peryferiya.md:122 klas:F -->
+### T-04-117 · komirka · рядок 122
+
+**Книга каже, дослівно:**
+
+> USB · S2 → OTG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-118 sha:ef2532f6 src:manual/04-peryferiya.md:122 klas:F -->
+### T-04-118 · komirka · рядок 122
+
+**Книга каже, дослівно:**
+
+> USB · S3 → OTG+JTAG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-119 sha:73c01d8f src:manual/04-peryferiya.md:122 klas:F -->
+### T-04-119 · komirka · рядок 122
+
+**Книга каже, дослівно:**
+
+> USB · C3 → JTAG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-120 sha:f972dd82 src:manual/04-peryferiya.md:122 klas:F -->
+### T-04-120 · komirka · рядок 122
+
+**Книга каже, дослівно:**
+
+> USB · C6 → JTAG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-121 sha:d735d6e3 src:manual/04-peryferiya.md:122 klas:F -->
+### T-04-121 · komirka · рядок 122
+
+**Книга каже, дослівно:**
+
+> USB · H2 → JTAG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-04-122 sha:3a653bb8 src:manual/04-peryferiya.md:125 klas:A -->
+### T-04-122 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -818,8 +1611,8 @@
 
 ---
 
-<!-- fc id:T-04-062 sha:fef032a2 src:manual/04-peryferiya.md:128 klas:F -->
-### T-04-062 · proza · рядок 128
+<!-- fc id:T-04-123 sha:fef032a2 src:manual/04-peryferiya.md:128 klas:F -->
+### T-04-123 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -831,8 +1624,8 @@
 
 ---
 
-<!-- fc id:T-04-063 sha:167a6ba8 src:manual/04-peryferiya.md:128 klas:F -->
-### T-04-063 · proza · рядок 128
+<!-- fc id:T-04-124 sha:167a6ba8 src:manual/04-peryferiya.md:128 klas:F -->
+### T-04-124 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -844,8 +1637,8 @@
 
 ---
 
-<!-- fc id:T-04-064 sha:0d438a0e src:manual/04-peryferiya.md:132 klas:A -->
-### T-04-064 · proza · рядок 132
+<!-- fc id:T-04-125 sha:0d438a0e src:manual/04-peryferiya.md:132 klas:A -->
+### T-04-125 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -865,8 +1658,8 @@
 
 ---
 
-<!-- fc id:T-04-065 sha:4441660f src:manual/04-peryferiya.md:132 klas:F -->
-### T-04-065 · proza · рядок 132
+<!-- fc id:T-04-126 sha:4441660f src:manual/04-peryferiya.md:132 klas:F -->
+### T-04-126 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -878,8 +1671,8 @@
 
 ---
 
-<!-- fc id:T-04-066 sha:c5ad1ef4 src:manual/04-peryferiya.md:132 klas:F -->
-### T-04-066 · proza · рядок 132
+<!-- fc id:T-04-127 sha:c5ad1ef4 src:manual/04-peryferiya.md:132 klas:F -->
+### T-04-127 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -891,8 +1684,8 @@
 
 ---
 
-<!-- fc id:T-04-067 sha:2ab21690 src:manual/04-peryferiya.md:137 klas:A -->
-### T-04-067 · proza · рядок 137
+<!-- fc id:T-04-128 sha:2ab21690 src:manual/04-peryferiya.md:137 klas:A -->
+### T-04-128 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -912,8 +1705,8 @@
 
 ---
 
-<!-- fc id:T-04-068 sha:9fe58390 src:manual/04-peryferiya.md:142 klas:F -->
-### T-04-068 · proza · рядок 142
+<!-- fc id:T-04-129 sha:9fe58390 src:manual/04-peryferiya.md:142 klas:F -->
+### T-04-129 · proza · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -925,8 +1718,8 @@
 
 ---
 
-<!-- fc id:T-04-069 sha:639805c9 src:manual/04-peryferiya.md:144 klas:F -->
-### T-04-069 · proza · рядок 144
+<!-- fc id:T-04-130 sha:639805c9 src:manual/04-peryferiya.md:144 klas:F -->
+### T-04-130 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -938,8 +1731,8 @@
 
 ---
 
-<!-- fc id:T-04-070 sha:c93861a4 src:manual/04-peryferiya.md:144 klas:F -->
-### T-04-070 · proza · рядок 144
+<!-- fc id:T-04-131 sha:c93861a4 src:manual/04-peryferiya.md:144 klas:F -->
+### T-04-131 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -951,8 +1744,8 @@
 
 ---
 
-<!-- fc id:T-04-071 sha:0885291c src:manual/04-peryferiya.md:147 klas:F -->
-### T-04-071 · proza · рядок 147
+<!-- fc id:T-04-132 sha:0885291c src:manual/04-peryferiya.md:147 klas:F -->
+### T-04-132 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -964,8 +1757,8 @@
 
 ---
 
-<!-- fc id:T-04-072 sha:4e6975f8 src:manual/04-peryferiya.md:153 klas:F -->
-### T-04-072 · proza · рядок 153
+<!-- fc id:T-04-133 sha:4e6975f8 src:manual/04-peryferiya.md:153 klas:F -->
+### T-04-133 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -977,8 +1770,8 @@
 
 ---
 
-<!-- fc id:T-04-073 sha:d65e9f0b src:manual/04-peryferiya.md:153 klas:F -->
-### T-04-073 · proza · рядок 153
+<!-- fc id:T-04-134 sha:d65e9f0b src:manual/04-peryferiya.md:153 klas:F -->
+### T-04-134 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -990,8 +1783,8 @@
 
 ---
 
-<!-- fc id:T-04-074 sha:a89cb3ba src:manual/04-peryferiya.md:156 klas:F -->
-### T-04-074 · proza · рядок 156
+<!-- fc id:T-04-135 sha:a89cb3ba src:manual/04-peryferiya.md:156 klas:F -->
+### T-04-135 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1003,8 +1796,8 @@
 
 ---
 
-<!-- fc id:T-04-075 sha:515af58b src:manual/04-peryferiya.md:156 klas:F -->
-### T-04-075 · proza · рядок 156
+<!-- fc id:T-04-136 sha:515af58b src:manual/04-peryferiya.md:156 klas:F -->
+### T-04-136 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1016,8 +1809,8 @@
 
 ---
 
-<!-- fc id:T-04-076 sha:1c59341c src:manual/04-peryferiya.md:160 klas:F -->
-### T-04-076 · proza · рядок 160
+<!-- fc id:T-04-137 sha:1c59341c src:manual/04-peryferiya.md:160 klas:F -->
+### T-04-137 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1029,8 +1822,8 @@
 
 ---
 
-<!-- fc id:T-04-077 sha:dfae32de src:manual/04-peryferiya.md:163 klas:F -->
-### T-04-077 · proza · рядок 163
+<!-- fc id:T-04-138 sha:dfae32de src:manual/04-peryferiya.md:163 klas:F -->
+### T-04-138 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -1042,8 +1835,8 @@
 
 ---
 
-<!-- fc id:T-04-078 sha:bf0c9940 src:manual/04-peryferiya.md:163 klas:F -->
-### T-04-078 · proza · рядок 163
+<!-- fc id:T-04-139 sha:bf0c9940 src:manual/04-peryferiya.md:163 klas:F -->
+### T-04-139 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -1055,8 +1848,8 @@
 
 ---
 
-<!-- fc id:T-04-079 sha:ee6dbb00 src:manual/04-peryferiya.md:167 klas:F -->
-### T-04-079 · proza · рядок 167
+<!-- fc id:T-04-140 sha:ee6dbb00 src:manual/04-peryferiya.md:167 klas:F -->
+### T-04-140 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -1068,8 +1861,8 @@
 
 ---
 
-<!-- fc id:T-04-080 sha:286715ad src:manual/04-peryferiya.md:173 klas:F -->
-### T-04-080 · proza · рядок 173
+<!-- fc id:T-04-141 sha:286715ad src:manual/04-peryferiya.md:173 klas:F -->
+### T-04-141 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1081,8 +1874,8 @@
 
 ---
 
-<!-- fc id:T-04-081 sha:38202477 src:manual/04-peryferiya.md:175 klas:F -->
-### T-04-081 · proza · рядок 175
+<!-- fc id:T-04-142 sha:38202477 src:manual/04-peryferiya.md:175 klas:F -->
+### T-04-142 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1094,8 +1887,8 @@
 
 ---
 
-<!-- fc id:T-04-082 sha:9772025b src:manual/04-peryferiya.md:178 klas:F -->
-### T-04-082 · proza · рядок 178
+<!-- fc id:T-04-143 sha:9772025b src:manual/04-peryferiya.md:178 klas:A -->
+### T-04-143 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1103,25 +1896,43 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+- **Дослівно з джерела:**
+  > - Increases the input delay of the MISO signal, which makes MISO setup time violations more likely.
+  >   If SPI needs to operate at high speeds, use dedicated IO_MUX pins.
+  > - Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
+  > …
+  > When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the GPIO matrix
+  > will behave the same compared to routing them via IOMUX.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Точно підтверджує «приблизно вдвічі» в розділі 36 і додатку A: 40 проти 80 МГц. Другий абзац додає корисне уточнення, якого в книзі немає і яке варте наступного проходу: до 40 МГц різниці між маршрутами немає взагалі.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-04-083 sha:bd5e1813 src:manual/04-peryferiya.md:181 klas:F -->
-### T-04-083 · proza · рядок 181
+<!-- fc id:T-04-144 sha:365c45ac src:manual/04-peryferiya.md:181 klas:A -->
+### T-04-144 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
-> **Взаємні конфлікти** — [[classic]] [[S2]] ADC2 не працює при Wi-Fi; USB-JTAG займає конкретні піни; DAC ділить піни з іншими блоками.
+> **Взаємні конфлікти** — [[classic]] [[S2]] [[S3]] ADC2 не працює при Wi-Fi; USB-JTAG займає конкретні піни; DAC ділить піни з іншими блоками.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+- **Дослівно з джерела:**
+  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
+  > provided protection between the Wi-Fi driver and ADC oneshot mode driver.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише classic), тоді як документація прямо називає три цілі, включно з S3. Для S3 це важить окремо: його рекомендують як вибір за замовчуванням для нового проєкту, тобто найімовірніше саме на ньому читач і розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи 04, 07 (двічі), 29, 33 (двічі), 45 і картка К8.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-04-084 sha:c8e1dfd8 src:manual/04-peryferiya.md:184 klas:F -->
-### T-04-084 · proza · рядок 184
+<!-- fc id:T-04-145 sha:c8e1dfd8 src:manual/04-peryferiya.md:184 klas:F -->
+### T-04-145 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1133,8 +1944,8 @@
 
 ---
 
-<!-- fc id:T-04-085 sha:a1f5c1d5 src:manual/04-peryferiya.md:189 klas:F -->
-### T-04-085 · proza · рядок 189
+<!-- fc id:T-04-146 sha:a1f5c1d5 src:manual/04-peryferiya.md:189 klas:F -->
+### T-04-146 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1146,8 +1957,8 @@
 
 ---
 
-<!-- fc id:T-04-086 sha:9ee3c94f src:manual/04-peryferiya.md:192 klas:F -->
-### T-04-086 · proza · рядок 192
+<!-- fc id:T-04-147 sha:9ee3c94f src:manual/04-peryferiya.md:192 klas:F -->
+### T-04-147 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1159,8 +1970,8 @@
 
 ---
 
-<!-- fc id:T-04-087 sha:598994be src:manual/04-peryferiya.md:196 klas:F -->
-### T-04-087 · proza · рядок 196
+<!-- fc id:T-04-148 sha:598994be src:manual/04-peryferiya.md:196 klas:F -->
+### T-04-148 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1172,8 +1983,8 @@
 
 ---
 
-<!-- fc id:T-04-088 sha:aea8bc68 src:manual/04-peryferiya.md:196 klas:F -->
-### T-04-088 · proza · рядок 196
+<!-- fc id:T-04-149 sha:aea8bc68 src:manual/04-peryferiya.md:196 klas:F -->
+### T-04-149 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1185,8 +1996,8 @@
 
 ---
 
-<!-- fc id:T-04-089 sha:fe42809f src:manual/04-peryferiya.md:198 klas:F -->
-### T-04-089 · proza · рядок 198
+<!-- fc id:T-04-150 sha:fe42809f src:manual/04-peryferiya.md:198 klas:F -->
+### T-04-150 · proza · рядок 198
 
 **Книга каже, дослівно:**
 

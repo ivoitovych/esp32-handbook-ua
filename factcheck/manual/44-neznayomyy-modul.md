@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/44-neznayomyy-modul.md`
 
-Одиниць твердження: **78**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **89**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -176,7 +176,7 @@
 ---
 
 <!-- fc id:T-44-014 sha:3b9f79e3 src:manual/44-neznayomyy-modul.md:31 klas:F -->
-### T-44-014 · tablycya · рядок 31
+### T-44-014 · tablycya-shapka · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -188,12 +188,12 @@
 
 ---
 
-<!-- fc id:T-44-015 sha:40dfe857 src:manual/44-neznayomyy-modul.md:33 klas:F -->
-### T-44-015 · tablycya · рядок 33
+<!-- fc id:T-44-015 sha:208df048 src:manual/44-neznayomyy-modul.md:32 klas:F -->
+### T-44-015 · komirka · рядок 32
 
 **Книга каже, дослівно:**
 
-> | Немає стабілізатора | 3.3 В | 3.3 В — під'єднувати прямо |
+> Немає стабілізатора · Живлення → 3.3 В
 
 **Доказ**
 
@@ -201,12 +201,12 @@
 
 ---
 
-<!-- fc id:T-44-016 sha:0146c9fd src:manual/44-neznayomyy-modul.md:34 klas:F -->
-### T-44-016 · tablycya · рядок 34
+<!-- fc id:T-44-016 sha:c62854ef src:manual/44-neznayomyy-modul.md:32 klas:F -->
+### T-44-016 · komirka · рядок 32
 
 **Книга каже, дослівно:**
 
-> | Є стабілізатор 5→3.3 | 5 В | **може бути 3.3 або 5** — перевіряти |
+> Немає стабілізатора · Логічні рівні на виводах → 3.3 В — під'єднувати прямо
 
 **Доказ**
 
@@ -214,12 +214,12 @@
 
 ---
 
-<!-- fc id:T-44-017 sha:31ccf487 src:manual/44-neznayomyy-modul.md:35 klas:F -->
-### T-44-017 · tablycya · рядок 35
+<!-- fc id:T-44-017 sha:2932f428 src:manual/44-neznayomyy-modul.md:33 klas:F -->
+### T-44-017 · komirka · рядок 33
 
 **Книга каже, дослівно:**
 
-> | Є стабілізатор і конвертер рівнів | 5 В | 5 В — потрібен конвертер |
+> Є стабілізатор 5→3.3 · Живлення → 5 В
 
 **Доказ**
 
@@ -227,8 +227,47 @@
 
 ---
 
-<!-- fc id:T-44-018 sha:b73cf76a src:manual/44-neznayomyy-modul.md:38 klas:F -->
-### T-44-018 · proza · рядок 38
+<!-- fc id:T-44-018 sha:5deda58a src:manual/44-neznayomyy-modul.md:33 klas:F -->
+### T-44-018 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Є стабілізатор 5→3.3 · Логічні рівні на виводах → **може бути 3.3 або 5** — перевіряти
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-019 sha:58d6693f src:manual/44-neznayomyy-modul.md:34 klas:F -->
+### T-44-019 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> Є стабілізатор і конвертер рівнів · Живлення → 5 В
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-020 sha:8356f1b2 src:manual/44-neznayomyy-modul.md:34 klas:F -->
+### T-44-020 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> Є стабілізатор і конвертер рівнів · Логічні рівні на виводах → 5 В — потрібен конвертер
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-021 sha:b73cf76a src:manual/44-neznayomyy-modul.md:38 klas:F -->
+### T-44-021 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -240,8 +279,8 @@
 
 ---
 
-<!-- fc id:T-44-019 sha:a481fa42 src:manual/44-neznayomyy-modul.md:42 klas:F -->
-### T-44-019 · proza · рядок 42
+<!-- fc id:T-44-022 sha:a481fa42 src:manual/44-neznayomyy-modul.md:42 klas:F -->
+### T-44-022 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -253,8 +292,8 @@
 
 ---
 
-<!-- fc id:T-44-020 sha:5d4ba683 src:manual/44-neznayomyy-modul.md:42 klas:F -->
-### T-44-020 · proza · рядок 42
+<!-- fc id:T-44-023 sha:5d4ba683 src:manual/44-neznayomyy-modul.md:42 klas:F -->
+### T-44-023 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -266,8 +305,8 @@
 
 ---
 
-<!-- fc id:T-44-021 sha:f48ee314 src:manual/44-neznayomyy-modul.md:46 klas:F -->
-### T-44-021 · proza · рядок 46
+<!-- fc id:T-44-024 sha:f48ee314 src:manual/44-neznayomyy-modul.md:46 klas:F -->
+### T-44-024 · proza · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -279,8 +318,8 @@
 
 ---
 
-<!-- fc id:T-44-022 sha:06a16297 src:manual/44-neznayomyy-modul.md:50 klas:F -->
-### T-44-022 · proza · рядок 50
+<!-- fc id:T-44-025 sha:06a16297 src:manual/44-neznayomyy-modul.md:50 klas:F -->
+### T-44-025 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -292,8 +331,8 @@
 
 ---
 
-<!-- fc id:T-44-023 sha:72fb7080 src:manual/44-neznayomyy-modul.md:50 klas:F -->
-### T-44-023 · proza · рядок 50
+<!-- fc id:T-44-026 sha:72fb7080 src:manual/44-neznayomyy-modul.md:50 klas:F -->
+### T-44-026 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -305,8 +344,8 @@
 
 ---
 
-<!-- fc id:T-44-024 sha:c7af57b1 src:manual/44-neznayomyy-modul.md:50 klas:F -->
-### T-44-024 · proza · рядок 50
+<!-- fc id:T-44-027 sha:c7af57b1 src:manual/44-neznayomyy-modul.md:50 klas:F -->
+### T-44-027 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -318,8 +357,8 @@
 
 ---
 
-<!-- fc id:T-44-025 sha:d26ab398 src:manual/44-neznayomyy-modul.md:56 klas:F -->
-### T-44-025 · proza · рядок 56
+<!-- fc id:T-44-028 sha:d26ab398 src:manual/44-neznayomyy-modul.md:56 klas:F -->
+### T-44-028 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -331,8 +370,8 @@
 
 ---
 
-<!-- fc id:T-44-026 sha:b2e25812 src:manual/44-neznayomyy-modul.md:58 klas:F -->
-### T-44-026 · tablycya · рядок 58
+<!-- fc id:T-44-029 sha:b2e25812 src:manual/44-neznayomyy-modul.md:58 klas:F -->
+### T-44-029 · tablycya-shapka · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -344,12 +383,12 @@
 
 ---
 
-<!-- fc id:T-44-027 sha:1db19598 src:manual/44-neznayomyy-modul.md:60 klas:F -->
-### T-44-027 · tablycya · рядок 60
+<!-- fc id:T-44-030 sha:06897e8b src:manual/44-neznayomyy-modul.md:59 klas:F -->
+### T-44-030 · komirka · рядок 59
 
 **Книга каже, дослівно:**
 
-> | `VCC`, `GND`, `SDA`, `SCL` | I²C | 35 |
+> `VCC`, `GND`, `SDA`, `SCL` · Інтерфейс → I²C
 
 **Доказ**
 
@@ -357,12 +396,12 @@
 
 ---
 
-<!-- fc id:T-44-028 sha:bf4f47f8 src:manual/44-neznayomyy-modul.md:61 klas:F -->
-### T-44-028 · tablycya · рядок 61
+<!-- fc id:T-44-031 sha:81def94d src:manual/44-neznayomyy-modul.md:59 klas:F -->
+### T-44-031 · komirka · рядок 59
 
 **Книга каже, дослівно:**
 
-> | `VCC`, `GND`, `SCK`, `MOSI`/`SDI`, `MISO`/`SDO`, `CS` | SPI | 36 |
+> `VCC`, `GND`, `SDA`, `SCL` · Розділ → 35
 
 **Доказ**
 
@@ -370,12 +409,12 @@
 
 ---
 
-<!-- fc id:T-44-029 sha:3448e3cd src:manual/44-neznayomyy-modul.md:62 klas:F -->
-### T-44-029 · tablycya · рядок 62
+<!-- fc id:T-44-032 sha:d24088e4 src:manual/44-neznayomyy-modul.md:60 klas:F -->
+### T-44-032 · komirka · рядок 60
 
 **Книга каже, дослівно:**
 
-> | `VCC`, `GND`, `TX`, `RX` | UART | 34 |
+> `VCC`, `GND`, `SCK`, `MOSI`/`SDI`, `MISO`/`SDO`, `CS` · Інтерфейс → SPI
 
 **Доказ**
 
@@ -383,12 +422,12 @@
 
 ---
 
-<!-- fc id:T-44-030 sha:81aa31b3 src:manual/44-neznayomyy-modul.md:63 klas:F -->
-### T-44-030 · tablycya · рядок 63
+<!-- fc id:T-44-033 sha:b97cef49 src:manual/44-neznayomyy-modul.md:60 klas:F -->
+### T-44-033 · komirka · рядок 60
 
 **Книга каже, дослівно:**
 
-> | `VCC`, `GND`, `DQ`/`DATA` | 1-Wire | 37 |
+> `VCC`, `GND`, `SCK`, `MOSI`/`SDI`, `MISO`/`SDO`, `CS` · Розділ → 36
 
 **Доказ**
 
@@ -396,12 +435,12 @@
 
 ---
 
-<!-- fc id:T-44-031 sha:fb6189a3 src:manual/44-neznayomyy-modul.md:64 klas:F -->
-### T-44-031 · tablycya · рядок 64
+<!-- fc id:T-44-034 sha:9c3b193e src:manual/44-neznayomyy-modul.md:61 klas:F -->
+### T-44-034 · komirka · рядок 61
 
 **Книга каже, дослівно:**
 
-> | `VCC`, `GND`, один сигнал | GPIO, PWM або власний протокол | 33 |
+> `VCC`, `GND`, `TX`, `RX` · Інтерфейс → UART
 
 **Доказ**
 
@@ -409,12 +448,12 @@
 
 ---
 
-<!-- fc id:T-44-032 sha:7b48536d src:manual/44-neznayomyy-modul.md:65 klas:F -->
-### T-44-032 · tablycya · рядок 65
+<!-- fc id:T-44-035 sha:62ebcb00 src:manual/44-neznayomyy-modul.md:61 klas:F -->
+### T-44-035 · komirka · рядок 61
 
 **Книга каже, дослівно:**
 
-> | `VCC`, `GND`, `A0`/`OUT` аналоговий | ADC | 33 |
+> `VCC`, `GND`, `TX`, `RX` · Розділ → 34
 
 **Доказ**
 
@@ -422,8 +461,86 @@
 
 ---
 
-<!-- fc id:T-44-033 sha:29648e4a src:manual/44-neznayomyy-modul.md:67 klas:F -->
-### T-44-033 · proza · рядок 67
+<!-- fc id:T-44-036 sha:24219a3b src:manual/44-neznayomyy-modul.md:62 klas:F -->
+### T-44-036 · komirka · рядок 62
+
+**Книга каже, дослівно:**
+
+> `VCC`, `GND`, `DQ`/`DATA` · Інтерфейс → 1-Wire
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-037 sha:a54e6223 src:manual/44-neznayomyy-modul.md:62 klas:F -->
+### T-44-037 · komirka · рядок 62
+
+**Книга каже, дослівно:**
+
+> `VCC`, `GND`, `DQ`/`DATA` · Розділ → 37
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-038 sha:e81dfa2a src:manual/44-neznayomyy-modul.md:63 klas:F -->
+### T-44-038 · komirka · рядок 63
+
+**Книга каже, дослівно:**
+
+> `VCC`, `GND`, один сигнал · Інтерфейс → GPIO, PWM або власний протокол
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-039 sha:20fdc7eb src:manual/44-neznayomyy-modul.md:63 klas:F -->
+### T-44-039 · komirka · рядок 63
+
+**Книга каже, дослівно:**
+
+> `VCC`, `GND`, один сигнал · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-040 sha:3363d5b0 src:manual/44-neznayomyy-modul.md:64 klas:F -->
+### T-44-040 · komirka · рядок 64
+
+**Книга каже, дослівно:**
+
+> `VCC`, `GND`, `A0`/`OUT` аналоговий · Інтерфейс → ADC
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-041 sha:442a22c8 src:manual/44-neznayomyy-modul.md:64 klas:F -->
+### T-44-041 · komirka · рядок 64
+
+**Книга каже, дослівно:**
+
+> `VCC`, `GND`, `A0`/`OUT` аналоговий · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-042 sha:29648e4a src:manual/44-neznayomyy-modul.md:67 klas:F -->
+### T-44-042 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -435,8 +552,8 @@
 
 ---
 
-<!-- fc id:T-44-034 sha:eb95e6a4 src:manual/44-neznayomyy-modul.md:67 klas:F -->
-### T-44-034 · proza · рядок 67
+<!-- fc id:T-44-043 sha:eb95e6a4 src:manual/44-neznayomyy-modul.md:67 klas:F -->
+### T-44-043 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -448,8 +565,8 @@
 
 ---
 
-<!-- fc id:T-44-035 sha:ef71a910 src:manual/44-neznayomyy-modul.md:73 klas:F -->
-### T-44-035 · proza · рядок 73
+<!-- fc id:T-44-044 sha:ef71a910 src:manual/44-neznayomyy-modul.md:73 klas:F -->
+### T-44-044 · proza · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -461,8 +578,8 @@
 
 ---
 
-<!-- fc id:T-44-036 sha:706930cd src:manual/44-neznayomyy-modul.md:77 klas:F -->
-### T-44-036 · proza · рядок 77
+<!-- fc id:T-44-045 sha:706930cd src:manual/44-neznayomyy-modul.md:77 klas:F -->
+### T-44-045 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -474,8 +591,8 @@
 
 ---
 
-<!-- fc id:T-44-037 sha:4aa5f3b8 src:manual/44-neznayomyy-modul.md:77 klas:F -->
-### T-44-037 · proza · рядок 77
+<!-- fc id:T-44-046 sha:4aa5f3b8 src:manual/44-neznayomyy-modul.md:77 klas:F -->
+### T-44-046 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -487,8 +604,8 @@
 
 ---
 
-<!-- fc id:T-44-038 sha:50ac2a6c src:manual/44-neznayomyy-modul.md:80 klas:F -->
-### T-44-038 · proza · рядок 80
+<!-- fc id:T-44-047 sha:50ac2a6c src:manual/44-neznayomyy-modul.md:80 klas:F -->
+### T-44-047 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -500,8 +617,8 @@
 
 ---
 
-<!-- fc id:T-44-039 sha:68c2143b src:manual/44-neznayomyy-modul.md:80 klas:F -->
-### T-44-039 · proza · рядок 80
+<!-- fc id:T-44-048 sha:68c2143b src:manual/44-neznayomyy-modul.md:80 klas:F -->
+### T-44-048 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -513,8 +630,8 @@
 
 ---
 
-<!-- fc id:T-44-040 sha:18ea166f src:manual/44-neznayomyy-modul.md:85 klas:F -->
-### T-44-040 · proza · рядок 85
+<!-- fc id:T-44-049 sha:18ea166f src:manual/44-neznayomyy-modul.md:85 klas:F -->
+### T-44-049 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -526,8 +643,8 @@
 
 ---
 
-<!-- fc id:T-44-041 sha:111d86b2 src:manual/44-neznayomyy-modul.md:89 klas:F -->
-### T-44-041 · proza · рядок 89
+<!-- fc id:T-44-050 sha:111d86b2 src:manual/44-neznayomyy-modul.md:89 klas:F -->
+### T-44-050 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -539,8 +656,8 @@
 
 ---
 
-<!-- fc id:T-44-042 sha:5ccad1ee src:manual/44-neznayomyy-modul.md:89 klas:F -->
-### T-44-042 · proza · рядок 89
+<!-- fc id:T-44-051 sha:5ccad1ee src:manual/44-neznayomyy-modul.md:89 klas:F -->
+### T-44-051 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -552,8 +669,8 @@
 
 ---
 
-<!-- fc id:T-44-043 sha:56b82275 src:manual/44-neznayomyy-modul.md:94 klas:F -->
-### T-44-043 · proza · рядок 94
+<!-- fc id:T-44-052 sha:56b82275 src:manual/44-neznayomyy-modul.md:94 klas:F -->
+### T-44-052 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -565,8 +682,8 @@
 
 ---
 
-<!-- fc id:T-44-044 sha:0ee5fec2 src:manual/44-neznayomyy-modul.md:97 klas:F -->
-### T-44-044 · proza · рядок 97
+<!-- fc id:T-44-053 sha:0ee5fec2 src:manual/44-neznayomyy-modul.md:97 klas:F -->
+### T-44-053 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -578,8 +695,8 @@
 
 ---
 
-<!-- fc id:T-44-045 sha:50efad74 src:manual/44-neznayomyy-modul.md:97 klas:F -->
-### T-44-045 · proza · рядок 97
+<!-- fc id:T-44-054 sha:50efad74 src:manual/44-neznayomyy-modul.md:97 klas:F -->
+### T-44-054 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -591,8 +708,8 @@
 
 ---
 
-<!-- fc id:T-44-046 sha:d11ee129 src:manual/44-neznayomyy-modul.md:97 klas:F -->
-### T-44-046 · proza · рядок 97
+<!-- fc id:T-44-055 sha:d11ee129 src:manual/44-neznayomyy-modul.md:97 klas:F -->
+### T-44-055 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -604,8 +721,8 @@
 
 ---
 
-<!-- fc id:T-44-047 sha:caabc133 src:manual/44-neznayomyy-modul.md:101 klas:F -->
-### T-44-047 · proza · рядок 101
+<!-- fc id:T-44-056 sha:caabc133 src:manual/44-neznayomyy-modul.md:101 klas:F -->
+### T-44-056 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -617,8 +734,8 @@
 
 ---
 
-<!-- fc id:T-44-048 sha:8c8f5cff src:manual/44-neznayomyy-modul.md:101 klas:F -->
-### T-44-048 · proza · рядок 101
+<!-- fc id:T-44-057 sha:8c8f5cff src:manual/44-neznayomyy-modul.md:101 klas:F -->
+### T-44-057 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -630,8 +747,8 @@
 
 ---
 
-<!-- fc id:T-44-049 sha:29303dd2 src:manual/44-neznayomyy-modul.md:104 klas:F -->
-### T-44-049 · proza · рядок 104
+<!-- fc id:T-44-058 sha:29303dd2 src:manual/44-neznayomyy-modul.md:104 klas:F -->
+### T-44-058 · proza · рядок 104
 
 **Книга каже, дослівно:**
 
@@ -643,8 +760,8 @@
 
 ---
 
-<!-- fc id:T-44-050 sha:d9ca6dd1 src:manual/44-neznayomyy-modul.md:109 klas:F -->
-### T-44-050 · proza · рядок 109
+<!-- fc id:T-44-059 sha:d9ca6dd1 src:manual/44-neznayomyy-modul.md:109 klas:F -->
+### T-44-059 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -656,8 +773,8 @@
 
 ---
 
-<!-- fc id:T-44-051 sha:32ecee34 src:manual/44-neznayomyy-modul.md:112 klas:F -->
-### T-44-051 · proza · рядок 112
+<!-- fc id:T-44-060 sha:32ecee34 src:manual/44-neznayomyy-modul.md:112 klas:F -->
+### T-44-060 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -669,8 +786,8 @@
 
 ---
 
-<!-- fc id:T-44-052 sha:e4bcb1c4 src:manual/44-neznayomyy-modul.md:114 klas:F -->
-### T-44-052 · proza · рядок 114
+<!-- fc id:T-44-061 sha:e4bcb1c4 src:manual/44-neznayomyy-modul.md:114 klas:F -->
+### T-44-061 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -682,8 +799,8 @@
 
 ---
 
-<!-- fc id:T-44-053 sha:35fab9da src:manual/44-neznayomyy-modul.md:117 klas:F -->
-### T-44-053 · proza · рядок 117
+<!-- fc id:T-44-062 sha:35fab9da src:manual/44-neznayomyy-modul.md:117 klas:F -->
+### T-44-062 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -695,8 +812,8 @@
 
 ---
 
-<!-- fc id:T-44-054 sha:f8bba158 src:manual/44-neznayomyy-modul.md:120 klas:F -->
-### T-44-054 · proza · рядок 120
+<!-- fc id:T-44-063 sha:f8bba158 src:manual/44-neznayomyy-modul.md:120 klas:F -->
+### T-44-063 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -708,8 +825,8 @@
 
 ---
 
-<!-- fc id:T-44-055 sha:3c603c96 src:manual/44-neznayomyy-modul.md:127 klas:F -->
-### T-44-055 · proza · рядок 127
+<!-- fc id:T-44-064 sha:3c603c96 src:manual/44-neznayomyy-modul.md:127 klas:F -->
+### T-44-064 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -721,8 +838,8 @@
 
 ---
 
-<!-- fc id:T-44-056 sha:a736b732 src:manual/44-neznayomyy-modul.md:127 klas:F -->
-### T-44-056 · proza · рядок 127
+<!-- fc id:T-44-065 sha:a736b732 src:manual/44-neznayomyy-modul.md:127 klas:F -->
+### T-44-065 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -734,8 +851,8 @@
 
 ---
 
-<!-- fc id:T-44-057 sha:70379f3a src:manual/44-neznayomyy-modul.md:131 klas:F -->
-### T-44-057 · proza · рядок 131
+<!-- fc id:T-44-066 sha:70379f3a src:manual/44-neznayomyy-modul.md:131 klas:F -->
+### T-44-066 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -747,8 +864,8 @@
 
 ---
 
-<!-- fc id:T-44-058 sha:e631de01 src:manual/44-neznayomyy-modul.md:135 klas:F -->
-### T-44-058 · proza · рядок 135
+<!-- fc id:T-44-067 sha:e631de01 src:manual/44-neznayomyy-modul.md:135 klas:F -->
+### T-44-067 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -760,8 +877,8 @@
 
 ---
 
-<!-- fc id:T-44-059 sha:a890f9af src:manual/44-neznayomyy-modul.md:135 klas:F -->
-### T-44-059 · proza · рядок 135
+<!-- fc id:T-44-068 sha:a890f9af src:manual/44-neznayomyy-modul.md:135 klas:F -->
+### T-44-068 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -773,8 +890,8 @@
 
 ---
 
-<!-- fc id:T-44-060 sha:a5ca33b4 src:manual/44-neznayomyy-modul.md:139 klas:F -->
-### T-44-060 · proza · рядок 139
+<!-- fc id:T-44-069 sha:a5ca33b4 src:manual/44-neznayomyy-modul.md:139 klas:F -->
+### T-44-069 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -786,8 +903,8 @@
 
 ---
 
-<!-- fc id:T-44-061 sha:0db4e411 src:manual/44-neznayomyy-modul.md:141 klas:F -->
-### T-44-061 · kod · рядок 141
+<!-- fc id:T-44-070 sha:0db4e411 src:manual/44-neznayomyy-modul.md:141 klas:F -->
+### T-44-070 · kod · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -807,8 +924,34 @@
 
 ---
 
-<!-- fc id:T-44-062 sha:ab4e0053 src:manual/44-neznayomyy-modul.md:151 klas:F -->
-### T-44-062 · proza · рядок 151
+<!-- fc id:T-44-071 sha:d7990763 src:manual/44-neznayomyy-modul.md:144 klas:F -->
+### T-44-071 · kod-ryadok · рядок 144
+
+**Книга каже, дослівно:**
+
+> i2c_master_transmit(dev, cfg, 2, pdMS_TO_TICKS(100));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-072 sha:8c3cf6e5 src:manual/44-neznayomyy-modul.md:148 klas:F -->
+### T-44-072 · kod-ryadok · рядок 148
+
+**Книга каже, дослівно:**
+
+> i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-44-073 sha:ab4e0053 src:manual/44-neznayomyy-modul.md:151 klas:F -->
+### T-44-073 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -820,8 +963,8 @@
 
 ---
 
-<!-- fc id:T-44-063 sha:3439b0f1 src:manual/44-neznayomyy-modul.md:151 klas:F -->
-### T-44-063 · proza · рядок 151
+<!-- fc id:T-44-074 sha:3439b0f1 src:manual/44-neznayomyy-modul.md:151 klas:F -->
+### T-44-074 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -833,8 +976,8 @@
 
 ---
 
-<!-- fc id:T-44-064 sha:e0f582c1 src:manual/44-neznayomyy-modul.md:151 klas:F -->
-### T-44-064 · proza · рядок 151
+<!-- fc id:T-44-075 sha:e0f582c1 src:manual/44-neznayomyy-modul.md:151 klas:F -->
+### T-44-075 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -846,8 +989,8 @@
 
 ---
 
-<!-- fc id:T-44-065 sha:11413386 src:manual/44-neznayomyy-modul.md:158 klas:F -->
-### T-44-065 · proza · рядок 158
+<!-- fc id:T-44-076 sha:11413386 src:manual/44-neznayomyy-modul.md:158 klas:F -->
+### T-44-076 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -859,8 +1002,8 @@
 
 ---
 
-<!-- fc id:T-44-066 sha:9ce6f2e8 src:manual/44-neznayomyy-modul.md:158 klas:F -->
-### T-44-066 · proza · рядок 158
+<!-- fc id:T-44-077 sha:9ce6f2e8 src:manual/44-neznayomyy-modul.md:158 klas:F -->
+### T-44-077 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -872,8 +1015,8 @@
 
 ---
 
-<!-- fc id:T-44-067 sha:e3134097 src:manual/44-neznayomyy-modul.md:158 klas:F -->
-### T-44-067 · proza · рядок 158
+<!-- fc id:T-44-078 sha:e3134097 src:manual/44-neznayomyy-modul.md:158 klas:F -->
+### T-44-078 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -885,8 +1028,8 @@
 
 ---
 
-<!-- fc id:T-44-068 sha:c37d7794 src:manual/44-neznayomyy-modul.md:158 klas:F -->
-### T-44-068 · proza · рядок 158
+<!-- fc id:T-44-079 sha:c37d7794 src:manual/44-neznayomyy-modul.md:158 klas:F -->
+### T-44-079 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -898,8 +1041,8 @@
 
 ---
 
-<!-- fc id:T-44-069 sha:24c0f55b src:manual/44-neznayomyy-modul.md:158 klas:F -->
-### T-44-069 · proza · рядок 158
+<!-- fc id:T-44-080 sha:24c0f55b src:manual/44-neznayomyy-modul.md:158 klas:F -->
+### T-44-080 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -911,8 +1054,8 @@
 
 ---
 
-<!-- fc id:T-44-070 sha:246ff7c6 src:manual/44-neznayomyy-modul.md:158 klas:F -->
-### T-44-070 · proza · рядок 158
+<!-- fc id:T-44-081 sha:246ff7c6 src:manual/44-neznayomyy-modul.md:158 klas:F -->
+### T-44-081 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -924,8 +1067,8 @@
 
 ---
 
-<!-- fc id:T-44-071 sha:6baed1bb src:manual/44-neznayomyy-modul.md:158 klas:F -->
-### T-44-071 · proza · рядок 158
+<!-- fc id:T-44-082 sha:6baed1bb src:manual/44-neznayomyy-modul.md:158 klas:F -->
+### T-44-082 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -937,8 +1080,8 @@
 
 ---
 
-<!-- fc id:T-44-072 sha:9d10200e src:manual/44-neznayomyy-modul.md:167 klas:F -->
-### T-44-072 · proza · рядок 167
+<!-- fc id:T-44-083 sha:9d10200e src:manual/44-neznayomyy-modul.md:167 klas:F -->
+### T-44-083 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -950,8 +1093,8 @@
 
 ---
 
-<!-- fc id:T-44-073 sha:e12363c9 src:manual/44-neznayomyy-modul.md:171 klas:F -->
-### T-44-073 · proza · рядок 171
+<!-- fc id:T-44-084 sha:e12363c9 src:manual/44-neznayomyy-modul.md:171 klas:F -->
+### T-44-084 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -963,8 +1106,8 @@
 
 ---
 
-<!-- fc id:T-44-074 sha:bf660da8 src:manual/44-neznayomyy-modul.md:173 klas:F -->
-### T-44-074 · proza · рядок 173
+<!-- fc id:T-44-085 sha:bf660da8 src:manual/44-neznayomyy-modul.md:173 klas:F -->
+### T-44-085 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -976,8 +1119,8 @@
 
 ---
 
-<!-- fc id:T-44-075 sha:1fef7c0e src:manual/44-neznayomyy-modul.md:175 klas:F -->
-### T-44-075 · proza · рядок 175
+<!-- fc id:T-44-086 sha:1fef7c0e src:manual/44-neznayomyy-modul.md:175 klas:F -->
+### T-44-086 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -989,8 +1132,8 @@
 
 ---
 
-<!-- fc id:T-44-076 sha:4e54c75e src:manual/44-neznayomyy-modul.md:177 klas:F -->
-### T-44-076 · proza · рядок 177
+<!-- fc id:T-44-087 sha:4e54c75e src:manual/44-neznayomyy-modul.md:177 klas:F -->
+### T-44-087 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1002,8 +1145,8 @@
 
 ---
 
-<!-- fc id:T-44-077 sha:24f12674 src:manual/44-neznayomyy-modul.md:179 klas:F -->
-### T-44-077 · proza · рядок 179
+<!-- fc id:T-44-088 sha:24f12674 src:manual/44-neznayomyy-modul.md:179 klas:F -->
+### T-44-088 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1015,8 +1158,8 @@
 
 ---
 
-<!-- fc id:T-44-078 sha:ca343a9d src:manual/44-neznayomyy-modul.md:181 klas:F -->
-### T-44-078 · proza · рядок 181
+<!-- fc id:T-44-089 sha:ca343a9d src:manual/44-neznayomyy-modul.md:181 klas:F -->
+### T-44-089 · proza · рядок 181
 
 **Книга каже, дослівно:**
 

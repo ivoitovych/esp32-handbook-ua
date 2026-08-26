@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k05-proshyvka.md`
 
-Одиниць твердження: **26**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **38**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -33,7 +33,7 @@
 ---
 
 <!-- fc id:T-K05-003 sha:ad965e81 src:kartky/k05-proshyvka.md:9 klas:F -->
-### T-K05-003 · tablycya · рядок 9
+### T-K05-003 · tablycya-shapka · рядок 9
 
 **Книга каже, дослівно:**
 
@@ -45,12 +45,12 @@
 
 ---
 
-<!-- fc id:T-K05-004 sha:6d834a4f src:kartky/k05-proshyvka.md:11 klas:F -->
-### T-K05-004 · tablycya · рядок 11
+<!-- fc id:T-K05-004 sha:bb0f770d src:kartky/k05-proshyvka.md:10 klas:F -->
+### T-K05-004 · komirka · рядок 10
 
 **Книга каже, дослівно:**
 
-> | `bootloader.bin` | другий бутлоадер | `0x1000` | `0x0` | `0x2000` |
+> `bootloader.bin` · Що це → другий бутлоадер
 
 **Доказ**
 
@@ -58,34 +58,12 @@
 
 ---
 
-<!-- fc id:T-K05-005 sha:14c45987 src:kartky/k05-proshyvka.md:12 klas:A -->
-### T-K05-005 · tablycya · рядок 12
+<!-- fc id:T-K05-005 sha:e3c8ae66 src:kartky/k05-proshyvka.md:10 klas:F -->
+### T-K05-005 · komirka · рядок 10
 
 **Книга каже, дослівно:**
 
-> | `partition-table.bin` | таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
-
-**Доказ**
-
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
-- **Дослівно з джерела:**
-  > For this reason a partition table is flashed to
-  > (:ref:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash.
-  > …
-  > In both cases the factory app is flashed at offset 0x10000.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Вихідний .rst документації ESP-IDF — те, з чого зроблено docs.espressif.com, який із цього середовища не дістається.
-- **Прохід:** pass-01-tverde-yadro
-
----
-
-<!-- fc id:T-K05-006 sha:7ed729e8 src:kartky/k05-proshyvka.md:13 klas:F -->
-### T-K05-006 · tablycya · рядок 13
-
-**Книга каже, дослівно:**
-
-> | застосунок `.bin` | сама програма | `0x10000` | `0x10000` | `0x10000` |
+> `bootloader.bin` · classic, S2 → `0x1000`
 
 **Доказ**
 
@@ -93,8 +71,138 @@
 
 ---
 
-<!-- fc id:T-K05-007 sha:efc6c6df src:kartky/k05-proshyvka.md:16 klas:F -->
-### T-K05-007 · proza · рядок 16
+<!-- fc id:T-K05-006 sha:cad2ff61 src:kartky/k05-proshyvka.md:10 klas:F -->
+### T-K05-006 · komirka · рядок 10
+
+**Книга каже, дослівно:**
+
+> `bootloader.bin` · S3, C3, C6, H2 → `0x0`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-007 sha:13356a21 src:kartky/k05-proshyvka.md:10 klas:F -->
+### T-K05-007 · komirka · рядок 10
+
+**Книга каже, дослівно:**
+
+> `bootloader.bin` · P4, C5, H4 → `0x2000`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:11 klas:F -->
+### T-K05-008 · komirka · рядок 11
+
+**Книга каже, дослівно:**
+
+> `partition-table.bin` · Що це → таблиця розділів
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-009 sha:d4684bb6 src:kartky/k05-proshyvka.md:11 klas:F -->
+### T-K05-009 · komirka · рядок 11
+
+**Книга каже, дослівно:**
+
+> `partition-table.bin` · classic, S2 → `0x8000`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-010 sha:723732a3 src:kartky/k05-proshyvka.md:11 klas:F -->
+### T-K05-010 · komirka · рядок 11
+
+**Книга каже, дослівно:**
+
+> `partition-table.bin` · S3, C3, C6, H2 → `0x8000`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-011 sha:1ec0b452 src:kartky/k05-proshyvka.md:11 klas:F -->
+### T-K05-011 · komirka · рядок 11
+
+**Книга каже, дослівно:**
+
+> `partition-table.bin` · P4, C5, H4 → `0x8000`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-012 sha:83295d52 src:kartky/k05-proshyvka.md:12 klas:F -->
+### T-K05-012 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> застосунок `.bin` · Що це → сама програма
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-013 sha:fb9cf9cd src:kartky/k05-proshyvka.md:12 klas:F -->
+### T-K05-013 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> застосунок `.bin` · classic, S2 → `0x10000`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-014 sha:630093e6 src:kartky/k05-proshyvka.md:12 klas:F -->
+### T-K05-014 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> застосунок `.bin` · S3, C3, C6, H2 → `0x10000`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-015 sha:c2ba364d src:kartky/k05-proshyvka.md:12 klas:F -->
+### T-K05-015 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> застосунок `.bin` · P4, C5, H4 → `0x10000`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-016 sha:efc6c6df src:kartky/k05-proshyvka.md:16 klas:F -->
+### T-K05-016 · proza · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -106,8 +214,8 @@
 
 ---
 
-<!-- fc id:T-K05-008 sha:14934f37 src:kartky/k05-proshyvka.md:16 klas:F -->
-### T-K05-008 · proza · рядок 16
+<!-- fc id:T-K05-017 sha:14934f37 src:kartky/k05-proshyvka.md:16 klas:F -->
+### T-K05-017 · proza · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -119,8 +227,8 @@
 
 ---
 
-<!-- fc id:T-K05-009 sha:4188b893 src:kartky/k05-proshyvka.md:16 klas:F -->
-### T-K05-009 · proza · рядок 16
+<!-- fc id:T-K05-018 sha:4188b893 src:kartky/k05-proshyvka.md:16 klas:F -->
+### T-K05-018 · proza · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -132,8 +240,8 @@
 
 ---
 
-<!-- fc id:T-K05-010 sha:911de04d src:kartky/k05-proshyvka.md:24 klas:F -->
-### T-K05-010 · kod · рядок 24
+<!-- fc id:T-K05-019 sha:911de04d src:kartky/k05-proshyvka.md:24 klas:F -->
+### T-K05-019 · kod · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -150,8 +258,21 @@
 
 ---
 
-<!-- fc id:T-K05-011 sha:0e7ce691 src:kartky/k05-proshyvka.md:31 klas:F -->
-### T-K05-011 · proza · рядок 31
+<!-- fc id:T-K05-020 sha:bdd61138 src:kartky/k05-proshyvka.md:25 klas:F -->
+### T-K05-020 · kod-ryadok · рядок 25
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-021 sha:0e7ce691 src:kartky/k05-proshyvka.md:31 klas:F -->
+### T-K05-021 · proza · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -163,8 +284,8 @@
 
 ---
 
-<!-- fc id:T-K05-012 sha:308e3d3b src:kartky/k05-proshyvka.md:31 klas:F -->
-### T-K05-012 · proza · рядок 31
+<!-- fc id:T-K05-022 sha:308e3d3b src:kartky/k05-proshyvka.md:31 klas:F -->
+### T-K05-022 · proza · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -176,8 +297,8 @@
 
 ---
 
-<!-- fc id:T-K05-013 sha:4b49ff3c src:kartky/k05-proshyvka.md:31 klas:A -->
-### T-K05-013 · proza · рядок 31
+<!-- fc id:T-K05-023 sha:4b49ff3c src:kartky/k05-proshyvka.md:31 klas:A -->
+### T-K05-023 · proza · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -204,8 +325,8 @@
 
 ---
 
-<!-- fc id:T-K05-014 sha:a5f80c6b src:kartky/k05-proshyvka.md:35 klas:F -->
-### T-K05-014 · proza · рядок 35
+<!-- fc id:T-K05-024 sha:a5f80c6b src:kartky/k05-proshyvka.md:35 klas:F -->
+### T-K05-024 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -217,8 +338,8 @@
 
 ---
 
-<!-- fc id:T-K05-015 sha:ca260535 src:kartky/k05-proshyvka.md:35 klas:F -->
-### T-K05-015 · proza · рядок 35
+<!-- fc id:T-K05-025 sha:ca260535 src:kartky/k05-proshyvka.md:35 klas:F -->
+### T-K05-025 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -230,8 +351,8 @@
 
 ---
 
-<!-- fc id:T-K05-016 sha:18bb88d3 src:kartky/k05-proshyvka.md:38 klas:F -->
-### T-K05-016 · proza · рядок 38
+<!-- fc id:T-K05-026 sha:18bb88d3 src:kartky/k05-proshyvka.md:38 klas:F -->
+### T-K05-026 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -243,8 +364,8 @@
 
 ---
 
-<!-- fc id:T-K05-017 sha:1df68ffb src:kartky/k05-proshyvka.md:41 klas:F -->
-### T-K05-017 · kod · рядок 41
+<!-- fc id:T-K05-027 sha:1df68ffb src:kartky/k05-proshyvka.md:41 klas:F -->
+### T-K05-027 · kod · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -258,8 +379,21 @@
 
 ---
 
-<!-- fc id:T-K05-018 sha:953c7797 src:kartky/k05-proshyvka.md:47 klas:F -->
-### T-K05-018 · proza · рядок 47
+<!-- fc id:T-K05-028 sha:9a611ded src:kartky/k05-proshyvka.md:42 klas:F -->
+### T-K05-028 · kod-ryadok · рядок 42
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 write-flash 0x0 merged.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-029 sha:953c7797 src:kartky/k05-proshyvka.md:47 klas:F -->
+### T-K05-029 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -271,8 +405,8 @@
 
 ---
 
-<!-- fc id:T-K05-019 sha:d4137943 src:kartky/k05-proshyvka.md:47 klas:F -->
-### T-K05-019 · proza · рядок 47
+<!-- fc id:T-K05-030 sha:d4137943 src:kartky/k05-proshyvka.md:47 klas:F -->
+### T-K05-030 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -284,8 +418,8 @@
 
 ---
 
-<!-- fc id:T-K05-020 sha:09ccdb8d src:kartky/k05-proshyvka.md:50 klas:F -->
-### T-K05-020 · kod · рядок 50
+<!-- fc id:T-K05-031 sha:09ccdb8d src:kartky/k05-proshyvka.md:50 klas:F -->
+### T-K05-031 · kod · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -299,8 +433,21 @@
 
 ---
 
-<!-- fc id:T-K05-021 sha:9b34572c src:kartky/k05-proshyvka.md:54 klas:F -->
-### T-K05-021 · proza · рядок 54
+<!-- fc id:T-K05-032 sha:b9fc11f0 src:kartky/k05-proshyvka.md:51 klas:F -->
+### T-K05-032 · kod-ryadok · рядок 51
+
+**Книга каже, дослівно:**
+
+> esptool.py --port /dev/ttyUSB0 write_flash -z 0x1000 bootloader.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K05-033 sha:9b34572c src:kartky/k05-proshyvka.md:54 klas:F -->
+### T-K05-033 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -312,8 +459,8 @@
 
 ---
 
-<!-- fc id:T-K05-022 sha:ba1c09bd src:kartky/k05-proshyvka.md:58 klas:F -->
-### T-K05-022 · proza · рядок 58
+<!-- fc id:T-K05-034 sha:ba1c09bd src:kartky/k05-proshyvka.md:58 klas:F -->
+### T-K05-034 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -325,8 +472,8 @@
 
 ---
 
-<!-- fc id:T-K05-023 sha:f9a95e16 src:kartky/k05-proshyvka.md:60 klas:F -->
-### T-K05-023 · proza · рядок 60
+<!-- fc id:T-K05-035 sha:f9a95e16 src:kartky/k05-proshyvka.md:60 klas:F -->
+### T-K05-035 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -338,8 +485,8 @@
 
 ---
 
-<!-- fc id:T-K05-024 sha:ae4eb4e6 src:kartky/k05-proshyvka.md:65 klas:F -->
-### T-K05-024 · proza · рядок 65
+<!-- fc id:T-K05-036 sha:ae4eb4e6 src:kartky/k05-proshyvka.md:65 klas:F -->
+### T-K05-036 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -351,8 +498,8 @@
 
 ---
 
-<!-- fc id:T-K05-025 sha:631e8856 src:kartky/k05-proshyvka.md:68 klas:F -->
-### T-K05-025 · proza · рядок 68
+<!-- fc id:T-K05-037 sha:631e8856 src:kartky/k05-proshyvka.md:68 klas:F -->
+### T-K05-037 · proza · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -364,8 +511,8 @@
 
 ---
 
-<!-- fc id:T-K05-026 sha:f5bd92cd src:kartky/k05-proshyvka.md:68 klas:F -->
-### T-K05-026 · proza · рядок 68
+<!-- fc id:T-K05-038 sha:f5bd92cd src:kartky/k05-proshyvka.md:68 klas:F -->
+### T-K05-038 · proza · рядок 68
 
 **Книга каже, дослівно:**
 

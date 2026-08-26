@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/46-dyspleyi.md`
 
-Одиниць твердження: **70**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **85**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -33,7 +33,7 @@
 ---
 
 <!-- fc id:T-46-003 sha:df50d00f src:manual/46-dyspleyi.md:9 klas:F -->
-### T-46-003 · tablycya · рядок 9
+### T-46-003 · tablycya-shapka · рядок 9
 
 **Книга каже, дослівно:**
 
@@ -45,12 +45,12 @@
 
 ---
 
-<!-- fc id:T-46-004 sha:74095264 src:manual/46-dyspleyi.md:11 klas:F -->
-### T-46-004 · tablycya · рядок 11
+<!-- fc id:T-46-004 sha:862700ce src:manual/46-dyspleyi.md:10 klas:F -->
+### T-46-004 · komirka · рядок 10
 
 **Книга каже, дослівно:**
 
-> | OLED SSD1306 | 0.96–1.3" | I²C або SPI | моно | контраст, малий, дешевий |
+> OLED SSD1306 · Розмір → 0.96–1.3"
 
 **Доказ**
 
@@ -58,12 +58,12 @@
 
 ---
 
-<!-- fc id:T-46-005 sha:4e4a9477 src:manual/46-dyspleyi.md:12 klas:F -->
-### T-46-005 · tablycya · рядок 12
+<!-- fc id:T-46-005 sha:b834ae0e src:manual/46-dyspleyi.md:10 klas:F -->
+### T-46-005 · komirka · рядок 10
 
 **Книга каже, дослівно:**
 
-> | OLED SH1106 | 1.3" | I²C | моно | схожий на SSD1306, зсув на 2 пікселі |
+> OLED SSD1306 · Інтерфейс → I²C або SPI
 
 **Доказ**
 
@@ -71,12 +71,12 @@
 
 ---
 
-<!-- fc id:T-46-006 sha:8e73ed13 src:manual/46-dyspleyi.md:13 klas:F -->
-### T-46-006 · tablycya · рядок 13
+<!-- fc id:T-46-006 sha:30fa5a62 src:manual/46-dyspleyi.md:10 klas:F -->
+### T-46-006 · komirka · рядок 10
 
 **Книга каже, дослівно:**
 
-> | TFT ST7789 | 1.3–2.4" | SPI | 65 тис. | яскравий, швидкий |
+> OLED SSD1306 · Кольори → моно
 
 **Доказ**
 
@@ -84,12 +84,12 @@
 
 ---
 
-<!-- fc id:T-46-007 sha:2b95b399 src:manual/46-dyspleyi.md:14 klas:F -->
-### T-46-007 · tablycya · рядок 14
+<!-- fc id:T-46-007 sha:7683ff23 src:manual/46-dyspleyi.md:10 klas:F -->
+### T-46-007 · komirka · рядок 10
 
 **Книга каже, дослівно:**
 
-> | TFT ILI9341 | 2.4–3.2" | SPI | 65 тис. | великий, класика |
+> OLED SSD1306 · Особливості → контраст, малий, дешевий
 
 **Доказ**
 
@@ -97,12 +97,12 @@
 
 ---
 
-<!-- fc id:T-46-008 sha:60fa3916 src:manual/46-dyspleyi.md:15 klas:F -->
-### T-46-008 · tablycya · рядок 15
+<!-- fc id:T-46-008 sha:8d1c9e51 src:manual/46-dyspleyi.md:11 klas:F -->
+### T-46-008 · komirka · рядок 11
 
 **Книга каже, дослівно:**
 
-> | E-paper | 1.5–7.5" | SPI | моно / 3 | **тримає зображення без живлення** |
+> OLED SH1106 · Розмір → 1.3"
 
 **Доказ**
 
@@ -110,8 +110,203 @@
 
 ---
 
-<!-- fc id:T-46-009 sha:46236625 src:manual/46-dyspleyi.md:17 klas:F -->
-### T-46-009 · proza · рядок 17
+<!-- fc id:T-46-009 sha:6ed23144 src:manual/46-dyspleyi.md:11 klas:F -->
+### T-46-009 · komirka · рядок 11
+
+**Книга каже, дослівно:**
+
+> OLED SH1106 · Інтерфейс → I²C
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-010 sha:e4e2f0fd src:manual/46-dyspleyi.md:11 klas:F -->
+### T-46-010 · komirka · рядок 11
+
+**Книга каже, дослівно:**
+
+> OLED SH1106 · Кольори → моно
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-011 sha:7273b8f9 src:manual/46-dyspleyi.md:11 klas:F -->
+### T-46-011 · komirka · рядок 11
+
+**Книга каже, дослівно:**
+
+> OLED SH1106 · Особливості → схожий на SSD1306, зсув на 2 пікселі
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-012 sha:80458441 src:manual/46-dyspleyi.md:12 klas:F -->
+### T-46-012 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> TFT ST7789 · Розмір → 1.3–2.4"
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-013 sha:fc224a18 src:manual/46-dyspleyi.md:12 klas:F -->
+### T-46-013 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> TFT ST7789 · Інтерфейс → SPI
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-014 sha:2c7d2157 src:manual/46-dyspleyi.md:12 klas:F -->
+### T-46-014 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> TFT ST7789 · Кольори → 65 тис.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-015 sha:f338098f src:manual/46-dyspleyi.md:12 klas:F -->
+### T-46-015 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> TFT ST7789 · Особливості → яскравий, швидкий
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-016 sha:c7c7dc37 src:manual/46-dyspleyi.md:13 klas:F -->
+### T-46-016 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> TFT ILI9341 · Розмір → 2.4–3.2"
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-017 sha:a31fa981 src:manual/46-dyspleyi.md:13 klas:F -->
+### T-46-017 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> TFT ILI9341 · Інтерфейс → SPI
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-018 sha:dc8adf55 src:manual/46-dyspleyi.md:13 klas:F -->
+### T-46-018 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> TFT ILI9341 · Кольори → 65 тис.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-019 sha:8c1e541e src:manual/46-dyspleyi.md:13 klas:F -->
+### T-46-019 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> TFT ILI9341 · Особливості → великий, класика
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-020 sha:2fd93771 src:manual/46-dyspleyi.md:14 klas:F -->
+### T-46-020 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> E-paper · Розмір → 1.5–7.5"
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-021 sha:6c4d6211 src:manual/46-dyspleyi.md:14 klas:F -->
+### T-46-021 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> E-paper · Інтерфейс → SPI
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-022 sha:f0cf6de6 src:manual/46-dyspleyi.md:14 klas:F -->
+### T-46-022 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> E-paper · Кольори → моно / 3
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-023 sha:336725e3 src:manual/46-dyspleyi.md:14 klas:F -->
+### T-46-023 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> E-paper · Особливості → **тримає зображення без живлення**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-46-024 sha:46236625 src:manual/46-dyspleyi.md:17 klas:F -->
+### T-46-024 · proza · рядок 17
 
 **Книга каже, дослівно:**
 
@@ -123,8 +318,8 @@
 
 ---
 
-<!-- fc id:T-46-010 sha:5436d6ff src:manual/46-dyspleyi.md:17 klas:F -->
-### T-46-010 · proza · рядок 17
+<!-- fc id:T-46-025 sha:5436d6ff src:manual/46-dyspleyi.md:17 klas:F -->
+### T-46-025 · proza · рядок 17
 
 **Книга каже, дослівно:**
 
@@ -136,8 +331,8 @@
 
 ---
 
-<!-- fc id:T-46-011 sha:fb21b68a src:manual/46-dyspleyi.md:21 klas:F -->
-### T-46-011 · proza · рядок 21
+<!-- fc id:T-46-026 sha:fb21b68a src:manual/46-dyspleyi.md:21 klas:F -->
+### T-46-026 · proza · рядок 21
 
 **Книга каже, дослівно:**
 
@@ -149,8 +344,8 @@
 
 ---
 
-<!-- fc id:T-46-012 sha:e56e248a src:manual/46-dyspleyi.md:25 klas:F -->
-### T-46-012 · proza · рядок 25
+<!-- fc id:T-46-027 sha:e56e248a src:manual/46-dyspleyi.md:25 klas:F -->
+### T-46-027 · proza · рядок 25
 
 **Книга каже, дослівно:**
 
@@ -162,8 +357,8 @@
 
 ---
 
-<!-- fc id:T-46-013 sha:ecb09442 src:manual/46-dyspleyi.md:25 klas:F -->
-### T-46-013 · proza · рядок 25
+<!-- fc id:T-46-028 sha:ecb09442 src:manual/46-dyspleyi.md:25 klas:F -->
+### T-46-028 · proza · рядок 25
 
 **Книга каже, дослівно:**
 
@@ -175,8 +370,8 @@
 
 ---
 
-<!-- fc id:T-46-014 sha:9bf55437 src:manual/46-dyspleyi.md:29 klas:F -->
-### T-46-014 · proza · рядок 29
+<!-- fc id:T-46-029 sha:9bf55437 src:manual/46-dyspleyi.md:29 klas:F -->
+### T-46-029 · proza · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -188,8 +383,8 @@
 
 ---
 
-<!-- fc id:T-46-015 sha:db78ce45 src:manual/46-dyspleyi.md:29 klas:F -->
-### T-46-015 · proza · рядок 29
+<!-- fc id:T-46-030 sha:db78ce45 src:manual/46-dyspleyi.md:29 klas:F -->
+### T-46-030 · proza · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -201,8 +396,8 @@
 
 ---
 
-<!-- fc id:T-46-016 sha:068ff34b src:manual/46-dyspleyi.md:34 klas:F -->
-### T-46-016 · proza · рядок 34
+<!-- fc id:T-46-031 sha:068ff34b src:manual/46-dyspleyi.md:34 klas:F -->
+### T-46-031 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -214,8 +409,8 @@
 
 ---
 
-<!-- fc id:T-46-017 sha:3ac002a6 src:manual/46-dyspleyi.md:40 klas:F -->
-### T-46-017 · proza · рядок 40
+<!-- fc id:T-46-032 sha:3ac002a6 src:manual/46-dyspleyi.md:40 klas:F -->
+### T-46-032 · proza · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -227,8 +422,8 @@
 
 ---
 
-<!-- fc id:T-46-018 sha:fd124a1f src:manual/46-dyspleyi.md:40 klas:F -->
-### T-46-018 · proza · рядок 40
+<!-- fc id:T-46-033 sha:fd124a1f src:manual/46-dyspleyi.md:40 klas:F -->
+### T-46-033 · proza · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -240,8 +435,8 @@
 
 ---
 
-<!-- fc id:T-46-019 sha:27472a58 src:manual/46-dyspleyi.md:46 klas:F -->
-### T-46-019 · proza · рядок 46
+<!-- fc id:T-46-034 sha:27472a58 src:manual/46-dyspleyi.md:46 klas:F -->
+### T-46-034 · proza · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -253,8 +448,8 @@
 
 ---
 
-<!-- fc id:T-46-020 sha:6ef626d7 src:manual/46-dyspleyi.md:51 klas:F -->
-### T-46-020 · proza · рядок 51
+<!-- fc id:T-46-035 sha:6ef626d7 src:manual/46-dyspleyi.md:51 klas:F -->
+### T-46-035 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -266,8 +461,8 @@
 
 ---
 
-<!-- fc id:T-46-021 sha:0da7ac6e src:manual/46-dyspleyi.md:51 klas:F -->
-### T-46-021 · proza · рядок 51
+<!-- fc id:T-46-036 sha:0da7ac6e src:manual/46-dyspleyi.md:51 klas:F -->
+### T-46-036 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -279,8 +474,8 @@
 
 ---
 
-<!-- fc id:T-46-022 sha:17bcb9f3 src:manual/46-dyspleyi.md:51 klas:F -->
-### T-46-022 · proza · рядок 51
+<!-- fc id:T-46-037 sha:17bcb9f3 src:manual/46-dyspleyi.md:51 klas:F -->
+### T-46-037 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -292,8 +487,8 @@
 
 ---
 
-<!-- fc id:T-46-023 sha:267484c5 src:manual/46-dyspleyi.md:54 klas:F -->
-### T-46-023 · proza · рядок 54
+<!-- fc id:T-46-038 sha:267484c5 src:manual/46-dyspleyi.md:54 klas:F -->
+### T-46-038 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -305,8 +500,8 @@
 
 ---
 
-<!-- fc id:T-46-024 sha:63930b45 src:manual/46-dyspleyi.md:54 klas:F -->
-### T-46-024 · proza · рядок 54
+<!-- fc id:T-46-039 sha:63930b45 src:manual/46-dyspleyi.md:54 klas:F -->
+### T-46-039 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -318,8 +513,8 @@
 
 ---
 
-<!-- fc id:T-46-025 sha:1164678b src:manual/46-dyspleyi.md:54 klas:F -->
-### T-46-025 · proza · рядок 54
+<!-- fc id:T-46-040 sha:1164678b src:manual/46-dyspleyi.md:54 klas:F -->
+### T-46-040 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -331,8 +526,8 @@
 
 ---
 
-<!-- fc id:T-46-026 sha:5a052aca src:manual/46-dyspleyi.md:60 klas:F -->
-### T-46-026 · proza · рядок 60
+<!-- fc id:T-46-041 sha:5a052aca src:manual/46-dyspleyi.md:60 klas:F -->
+### T-46-041 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -344,8 +539,8 @@
 
 ---
 
-<!-- fc id:T-46-027 sha:99de20dc src:manual/46-dyspleyi.md:63 klas:F -->
-### T-46-027 · proza · рядок 63
+<!-- fc id:T-46-042 sha:99de20dc src:manual/46-dyspleyi.md:63 klas:F -->
+### T-46-042 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -357,8 +552,8 @@
 
 ---
 
-<!-- fc id:T-46-028 sha:d8cdd72c src:manual/46-dyspleyi.md:67 klas:F -->
-### T-46-028 · proza · рядок 67
+<!-- fc id:T-46-043 sha:d8cdd72c src:manual/46-dyspleyi.md:67 klas:F -->
+### T-46-043 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -370,8 +565,8 @@
 
 ---
 
-<!-- fc id:T-46-029 sha:15361913 src:manual/46-dyspleyi.md:67 klas:F -->
-### T-46-029 · proza · рядок 67
+<!-- fc id:T-46-044 sha:15361913 src:manual/46-dyspleyi.md:67 klas:F -->
+### T-46-044 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -383,8 +578,8 @@
 
 ---
 
-<!-- fc id:T-46-030 sha:66087aa6 src:manual/46-dyspleyi.md:72 klas:F -->
-### T-46-030 · proza · рядок 72
+<!-- fc id:T-46-045 sha:66087aa6 src:manual/46-dyspleyi.md:72 klas:F -->
+### T-46-045 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -396,8 +591,8 @@
 
 ---
 
-<!-- fc id:T-46-031 sha:1e6186f3 src:manual/46-dyspleyi.md:72 klas:F -->
-### T-46-031 · proza · рядок 72
+<!-- fc id:T-46-046 sha:1e6186f3 src:manual/46-dyspleyi.md:72 klas:F -->
+### T-46-046 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -409,8 +604,8 @@
 
 ---
 
-<!-- fc id:T-46-032 sha:c852732a src:manual/46-dyspleyi.md:76 klas:F -->
-### T-46-032 · proza · рядок 76
+<!-- fc id:T-46-047 sha:c852732a src:manual/46-dyspleyi.md:76 klas:F -->
+### T-46-047 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -422,8 +617,8 @@
 
 ---
 
-<!-- fc id:T-46-033 sha:f082b2eb src:manual/46-dyspleyi.md:82 klas:F -->
-### T-46-033 · proza · рядок 82
+<!-- fc id:T-46-048 sha:f082b2eb src:manual/46-dyspleyi.md:82 klas:F -->
+### T-46-048 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -435,8 +630,8 @@
 
 ---
 
-<!-- fc id:T-46-034 sha:d9a18b0b src:manual/46-dyspleyi.md:82 klas:F -->
-### T-46-034 · proza · рядок 82
+<!-- fc id:T-46-049 sha:d9a18b0b src:manual/46-dyspleyi.md:82 klas:F -->
+### T-46-049 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -448,8 +643,8 @@
 
 ---
 
-<!-- fc id:T-46-035 sha:ccb77182 src:manual/46-dyspleyi.md:87 klas:F -->
-### T-46-035 · proza · рядок 87
+<!-- fc id:T-46-050 sha:ccb77182 src:manual/46-dyspleyi.md:87 klas:F -->
+### T-46-050 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -461,8 +656,8 @@
 
 ---
 
-<!-- fc id:T-46-036 sha:69e02e27 src:manual/46-dyspleyi.md:90 klas:F -->
-### T-46-036 · proza · рядок 90
+<!-- fc id:T-46-051 sha:69e02e27 src:manual/46-dyspleyi.md:90 klas:F -->
+### T-46-051 · proza · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -474,8 +669,8 @@
 
 ---
 
-<!-- fc id:T-46-037 sha:16e5d3ba src:manual/46-dyspleyi.md:93 klas:F -->
-### T-46-037 · proza · рядок 93
+<!-- fc id:T-46-052 sha:16e5d3ba src:manual/46-dyspleyi.md:93 klas:F -->
+### T-46-052 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -487,8 +682,8 @@
 
 ---
 
-<!-- fc id:T-46-038 sha:2f2ae56c src:manual/46-dyspleyi.md:93 klas:F -->
-### T-46-038 · proza · рядок 93
+<!-- fc id:T-46-053 sha:2f2ae56c src:manual/46-dyspleyi.md:93 klas:F -->
+### T-46-053 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -500,8 +695,8 @@
 
 ---
 
-<!-- fc id:T-46-039 sha:27cefc36 src:manual/46-dyspleyi.md:97 klas:F -->
-### T-46-039 · proza · рядок 97
+<!-- fc id:T-46-054 sha:27cefc36 src:manual/46-dyspleyi.md:97 klas:F -->
+### T-46-054 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -513,8 +708,8 @@
 
 ---
 
-<!-- fc id:T-46-040 sha:bf726169 src:manual/46-dyspleyi.md:102 klas:F -->
-### T-46-040 · proza · рядок 102
+<!-- fc id:T-46-055 sha:bf726169 src:manual/46-dyspleyi.md:102 klas:F -->
+### T-46-055 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -526,8 +721,8 @@
 
 ---
 
-<!-- fc id:T-46-041 sha:789b457c src:manual/46-dyspleyi.md:102 klas:F -->
-### T-46-041 · proza · рядок 102
+<!-- fc id:T-46-056 sha:789b457c src:manual/46-dyspleyi.md:102 klas:F -->
+### T-46-056 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -539,8 +734,8 @@
 
 ---
 
-<!-- fc id:T-46-042 sha:d537fafe src:manual/46-dyspleyi.md:106 klas:F -->
-### T-46-042 · proza · рядок 106
+<!-- fc id:T-46-057 sha:d537fafe src:manual/46-dyspleyi.md:106 klas:F -->
+### T-46-057 · proza · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -552,8 +747,8 @@
 
 ---
 
-<!-- fc id:T-46-043 sha:ffcc7b25 src:manual/46-dyspleyi.md:108 klas:F -->
-### T-46-043 · proza · рядок 108
+<!-- fc id:T-46-058 sha:ffcc7b25 src:manual/46-dyspleyi.md:108 klas:F -->
+### T-46-058 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -565,8 +760,8 @@
 
 ---
 
-<!-- fc id:T-46-044 sha:8cd553b1 src:manual/46-dyspleyi.md:108 klas:F -->
-### T-46-044 · proza · рядок 108
+<!-- fc id:T-46-059 sha:8cd553b1 src:manual/46-dyspleyi.md:108 klas:F -->
+### T-46-059 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -578,8 +773,8 @@
 
 ---
 
-<!-- fc id:T-46-045 sha:308b61e3 src:manual/46-dyspleyi.md:111 klas:F -->
-### T-46-045 · proza · рядок 111
+<!-- fc id:T-46-060 sha:308b61e3 src:manual/46-dyspleyi.md:111 klas:F -->
+### T-46-060 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -591,8 +786,8 @@
 
 ---
 
-<!-- fc id:T-46-046 sha:4d06ad8a src:manual/46-dyspleyi.md:111 klas:F -->
-### T-46-046 · proza · рядок 111
+<!-- fc id:T-46-061 sha:4d06ad8a src:manual/46-dyspleyi.md:111 klas:F -->
+### T-46-061 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -604,8 +799,8 @@
 
 ---
 
-<!-- fc id:T-46-047 sha:048268a6 src:manual/46-dyspleyi.md:114 klas:F -->
-### T-46-047 · proza · рядок 114
+<!-- fc id:T-46-062 sha:048268a6 src:manual/46-dyspleyi.md:114 klas:F -->
+### T-46-062 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -617,8 +812,8 @@
 
 ---
 
-<!-- fc id:T-46-048 sha:306d9a08 src:manual/46-dyspleyi.md:114 klas:F -->
-### T-46-048 · proza · рядок 114
+<!-- fc id:T-46-063 sha:306d9a08 src:manual/46-dyspleyi.md:114 klas:F -->
+### T-46-063 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -630,8 +825,8 @@
 
 ---
 
-<!-- fc id:T-46-049 sha:99fe0fae src:manual/46-dyspleyi.md:119 klas:F -->
-### T-46-049 · proza · рядок 119
+<!-- fc id:T-46-064 sha:99fe0fae src:manual/46-dyspleyi.md:119 klas:F -->
+### T-46-064 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -643,8 +838,8 @@
 
 ---
 
-<!-- fc id:T-46-050 sha:3c6213d4 src:manual/46-dyspleyi.md:122 klas:F -->
-### T-46-050 · proza · рядок 122
+<!-- fc id:T-46-065 sha:3c6213d4 src:manual/46-dyspleyi.md:122 klas:F -->
+### T-46-065 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -656,8 +851,8 @@
 
 ---
 
-<!-- fc id:T-46-051 sha:6c925664 src:manual/46-dyspleyi.md:122 klas:F -->
-### T-46-051 · proza · рядок 122
+<!-- fc id:T-46-066 sha:6c925664 src:manual/46-dyspleyi.md:122 klas:F -->
+### T-46-066 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -669,8 +864,8 @@
 
 ---
 
-<!-- fc id:T-46-052 sha:93eaca22 src:manual/46-dyspleyi.md:126 klas:F -->
-### T-46-052 · proza · рядок 126
+<!-- fc id:T-46-067 sha:93eaca22 src:manual/46-dyspleyi.md:126 klas:F -->
+### T-46-067 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -682,8 +877,8 @@
 
 ---
 
-<!-- fc id:T-46-053 sha:3b794a14 src:manual/46-dyspleyi.md:131 klas:F -->
-### T-46-053 · proza · рядок 131
+<!-- fc id:T-46-068 sha:3b794a14 src:manual/46-dyspleyi.md:131 klas:F -->
+### T-46-068 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -695,8 +890,8 @@
 
 ---
 
-<!-- fc id:T-46-054 sha:ebea19d5 src:manual/46-dyspleyi.md:134 klas:F -->
-### T-46-054 · proza · рядок 134
+<!-- fc id:T-46-069 sha:ebea19d5 src:manual/46-dyspleyi.md:134 klas:F -->
+### T-46-069 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -708,8 +903,8 @@
 
 ---
 
-<!-- fc id:T-46-055 sha:886e611d src:manual/46-dyspleyi.md:134 klas:F -->
-### T-46-055 · proza · рядок 134
+<!-- fc id:T-46-070 sha:886e611d src:manual/46-dyspleyi.md:134 klas:F -->
+### T-46-070 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -721,8 +916,8 @@
 
 ---
 
-<!-- fc id:T-46-056 sha:ab7d677a src:manual/46-dyspleyi.md:139 klas:F -->
-### T-46-056 · proza · рядок 139
+<!-- fc id:T-46-071 sha:ab7d677a src:manual/46-dyspleyi.md:139 klas:F -->
+### T-46-071 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -734,8 +929,8 @@
 
 ---
 
-<!-- fc id:T-46-057 sha:a789af84 src:manual/46-dyspleyi.md:139 klas:F -->
-### T-46-057 · proza · рядок 139
+<!-- fc id:T-46-072 sha:a789af84 src:manual/46-dyspleyi.md:139 klas:F -->
+### T-46-072 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -747,8 +942,8 @@
 
 ---
 
-<!-- fc id:T-46-058 sha:d9634ea9 src:manual/46-dyspleyi.md:146 klas:F -->
-### T-46-058 · proza · рядок 146
+<!-- fc id:T-46-073 sha:d9634ea9 src:manual/46-dyspleyi.md:146 klas:F -->
+### T-46-073 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -760,8 +955,8 @@
 
 ---
 
-<!-- fc id:T-46-059 sha:d032630b src:manual/46-dyspleyi.md:146 klas:F -->
-### T-46-059 · proza · рядок 146
+<!-- fc id:T-46-074 sha:d032630b src:manual/46-dyspleyi.md:146 klas:F -->
+### T-46-074 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -773,8 +968,8 @@
 
 ---
 
-<!-- fc id:T-46-060 sha:3524415f src:manual/46-dyspleyi.md:149 klas:F -->
-### T-46-060 · proza · рядок 149
+<!-- fc id:T-46-075 sha:3524415f src:manual/46-dyspleyi.md:149 klas:F -->
+### T-46-075 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -786,8 +981,8 @@
 
 ---
 
-<!-- fc id:T-46-061 sha:e1503fc3 src:manual/46-dyspleyi.md:149 klas:F -->
-### T-46-061 · proza · рядок 149
+<!-- fc id:T-46-076 sha:e1503fc3 src:manual/46-dyspleyi.md:149 klas:F -->
+### T-46-076 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -799,8 +994,8 @@
 
 ---
 
-<!-- fc id:T-46-062 sha:31c8fd19 src:manual/46-dyspleyi.md:153 klas:F -->
-### T-46-062 · proza · рядок 153
+<!-- fc id:T-46-077 sha:31c8fd19 src:manual/46-dyspleyi.md:153 klas:F -->
+### T-46-077 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -812,8 +1007,8 @@
 
 ---
 
-<!-- fc id:T-46-063 sha:4cde5d29 src:manual/46-dyspleyi.md:153 klas:F -->
-### T-46-063 · proza · рядок 153
+<!-- fc id:T-46-078 sha:4cde5d29 src:manual/46-dyspleyi.md:153 klas:F -->
+### T-46-078 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -825,8 +1020,8 @@
 
 ---
 
-<!-- fc id:T-46-064 sha:7c71110c src:manual/46-dyspleyi.md:158 klas:F -->
-### T-46-064 · proza · рядок 158
+<!-- fc id:T-46-079 sha:7c71110c src:manual/46-dyspleyi.md:158 klas:F -->
+### T-46-079 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -838,8 +1033,8 @@
 
 ---
 
-<!-- fc id:T-46-065 sha:2695515d src:manual/46-dyspleyi.md:160 klas:F -->
-### T-46-065 · proza · рядок 160
+<!-- fc id:T-46-080 sha:2695515d src:manual/46-dyspleyi.md:160 klas:F -->
+### T-46-080 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -851,8 +1046,8 @@
 
 ---
 
-<!-- fc id:T-46-066 sha:969f523f src:manual/46-dyspleyi.md:163 klas:F -->
-### T-46-066 · proza · рядок 163
+<!-- fc id:T-46-081 sha:969f523f src:manual/46-dyspleyi.md:163 klas:F -->
+### T-46-081 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -864,8 +1059,8 @@
 
 ---
 
-<!-- fc id:T-46-067 sha:b12b358a src:manual/46-dyspleyi.md:165 klas:F -->
-### T-46-067 · proza · рядок 165
+<!-- fc id:T-46-082 sha:b12b358a src:manual/46-dyspleyi.md:165 klas:F -->
+### T-46-082 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -877,8 +1072,8 @@
 
 ---
 
-<!-- fc id:T-46-068 sha:d759fdec src:manual/46-dyspleyi.md:167 klas:F -->
-### T-46-068 · proza · рядок 167
+<!-- fc id:T-46-083 sha:d759fdec src:manual/46-dyspleyi.md:167 klas:F -->
+### T-46-083 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -890,8 +1085,8 @@
 
 ---
 
-<!-- fc id:T-46-069 sha:ca818cd6 src:manual/46-dyspleyi.md:169 klas:F -->
-### T-46-069 · proza · рядок 169
+<!-- fc id:T-46-084 sha:ca818cd6 src:manual/46-dyspleyi.md:169 klas:F -->
+### T-46-084 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -903,8 +1098,8 @@
 
 ---
 
-<!-- fc id:T-46-070 sha:fdb0c400 src:manual/46-dyspleyi.md:171 klas:F -->
-### T-46-070 · proza · рядок 171
+<!-- fc id:T-46-085 sha:fdb0c400 src:manual/46-dyspleyi.md:171 klas:F -->
+### T-46-085 · proza · рядок 171
 
 **Книга каже, дослівно:**
 

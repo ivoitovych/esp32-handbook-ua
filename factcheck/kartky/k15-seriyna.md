@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k15-seriyna.md`
 
-Одиниць твердження: **30**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **47**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -48,8 +48,21 @@
 
 ---
 
-<!-- fc id:T-K15-004 sha:8511d99d src:kartky/k15-seriyna.md:26 klas:F -->
-### T-K15-004 · tablycya · рядок 26
+<!-- fc id:T-K15-004 sha:d650ca01 src:kartky/k15-seriyna.md:20 klas:F -->
+### T-K15-004 · kod-ryadok · рядок 20
+
+**Книга каже, дослівно:**
+
+> esptool merge-bin -o vyrib-v1.4.bin --flash-mode dio \
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-005 sha:8511d99d src:kartky/k15-seriyna.md:26 klas:F -->
+### T-K15-005 · tablycya-shapka · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -61,12 +74,12 @@
 
 ---
 
-<!-- fc id:T-K15-005 sha:eb2b61d2 src:kartky/k15-seriyna.md:28 klas:F -->
-### T-K15-005 · tablycya · рядок 28
+<!-- fc id:T-K15-006 sha:4fb5c876 src:kartky/k15-seriyna.md:27 klas:F -->
+### T-K15-006 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
-> | ☐ | 1. Прошити | `write-flash -z 0x0 vyrib-v1.4.bin` |
+> ☐ · Крок → 1. Прошити
 
 **Доказ**
 
@@ -74,12 +87,12 @@
 
 ---
 
-<!-- fc id:T-K15-006 sha:d323fdca src:kartky/k15-seriyna.md:29 klas:F -->
-### T-K15-006 · tablycya · рядок 29
+<!-- fc id:T-K15-007 sha:996855d9 src:kartky/k15-seriyna.md:27 klas:F -->
+### T-K15-007 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
-> | ☐ | 2. **Звірити** | `verify-flash 0x0 vyrib-v1.4.bin` |
+> ☐ · Чим → `write-flash -z 0x0 vyrib-v1.4.bin`
 
 **Доказ**
 
@@ -87,12 +100,12 @@
 
 ---
 
-<!-- fc id:T-K15-007 sha:d8c1907d src:kartky/k15-seriyna.md:30 klas:F -->
-### T-K15-007 · tablycya · рядок 30
+<!-- fc id:T-K15-008 sha:b6338e2f src:kartky/k15-seriyna.md:28 klas:F -->
+### T-K15-008 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
-> | ☐ | 3. Записати унікальне | NVS: номер, ключі, калібрування |
+> ☐ · Крок → 2. **Звірити**
 
 **Доказ**
 
@@ -100,12 +113,12 @@
 
 ---
 
-<!-- fc id:T-K15-008 sha:2e9a8fab src:kartky/k15-seriyna.md:31 klas:F -->
-### T-K15-008 · tablycya · рядок 31
+<!-- fc id:T-K15-009 sha:8c04de3d src:kartky/k15-seriyna.md:28 klas:F -->
+### T-K15-009 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
-> | ☐ | 4. Зняти MAC | єдиний надійний ідентифікатор плати |
+> ☐ · Чим → `verify-flash 0x0 vyrib-v1.4.bin`
 
 **Доказ**
 
@@ -113,12 +126,12 @@
 
 ---
 
-<!-- fc id:T-K15-009 sha:ea103ccd src:kartky/k15-seriyna.md:32 klas:F -->
-### T-K15-009 · tablycya · рядок 32
+<!-- fc id:T-K15-010 sha:f91fb570 src:kartky/k15-seriyna.md:29 klas:F -->
+### T-K15-010 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | ☐ | 5. **Прочитати boot-лог** | пристрій справді стартує |
+> ☐ · Крок → 3. Записати унікальне
 
 **Доказ**
 
@@ -126,12 +139,12 @@
 
 ---
 
-<!-- fc id:T-K15-010 sha:084ca6e7 src:kartky/k15-seriyna.md:33 klas:F -->
-### T-K15-010 · tablycya · рядок 33
+<!-- fc id:T-K15-011 sha:faca8f2d src:kartky/k15-seriyna.md:29 klas:F -->
+### T-K15-011 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | ☐ | 6. **Функціональна перевірка** | те, заради чого виріб існує |
+> ☐ · Чим → NVS: номер, ключі, калібрування
 
 **Доказ**
 
@@ -139,12 +152,12 @@
 
 ---
 
-<!-- fc id:T-K15-011 sha:a2913390 src:kartky/k15-seriyna.md:34 klas:F -->
-### T-K15-011 · tablycya · рядок 34
+<!-- fc id:T-K15-012 sha:d7deee82 src:kartky/k15-seriyna.md:30 klas:F -->
+### T-K15-012 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> | ☐ | 7. Маркувати | номер, версія, дата — на видний бік |
+> ☐ · Крок → 4. Зняти MAC
 
 **Доказ**
 
@@ -152,12 +165,12 @@
 
 ---
 
-<!-- fc id:T-K15-012 sha:4e2f98b9 src:kartky/k15-seriyna.md:35 klas:F -->
-### T-K15-012 · tablycya · рядок 35
+<!-- fc id:T-K15-013 sha:27735e3c src:kartky/k15-seriyna.md:30 klas:F -->
+### T-K15-013 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> | ☐ | 8. Записати рядок у журнал | |
+> ☐ · Чим → єдиний надійний ідентифікатор плати
 
 **Доказ**
 
@@ -165,8 +178,99 @@
 
 ---
 
-<!-- fc id:T-K15-013 sha:cf346d2a src:kartky/k15-seriyna.md:37 klas:F -->
-### T-K15-013 · proza · рядок 37
+<!-- fc id:T-K15-014 sha:fa0d7841 src:kartky/k15-seriyna.md:31 klas:F -->
+### T-K15-014 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> ☐ · Крок → 5. **Прочитати boot-лог**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-015 sha:c289cc01 src:kartky/k15-seriyna.md:31 klas:F -->
+### T-K15-015 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> ☐ · Чим → пристрій справді стартує
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-016 sha:935c8ea3 src:kartky/k15-seriyna.md:32 klas:F -->
+### T-K15-016 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> ☐ · Крок → 6. **Функціональна перевірка**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-017 sha:1455628b src:kartky/k15-seriyna.md:32 klas:F -->
+### T-K15-017 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> ☐ · Чим → те, заради чого виріб існує
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-018 sha:324b565a src:kartky/k15-seriyna.md:33 klas:F -->
+### T-K15-018 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> ☐ · Крок → 7. Маркувати
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-019 sha:4253d18a src:kartky/k15-seriyna.md:33 klas:F -->
+### T-K15-019 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> ☐ · Чим → номер, версія, дата — на видний бік
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-020 sha:b24d7bca src:kartky/k15-seriyna.md:34 klas:F -->
+### T-K15-020 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> ☐ · Крок → 8. Записати рядок у журнал
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-021 sha:cf346d2a src:kartky/k15-seriyna.md:37 klas:F -->
+### T-K15-021 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -178,8 +282,8 @@
 
 ---
 
-<!-- fc id:T-K15-014 sha:ea9b0c14 src:kartky/k15-seriyna.md:37 klas:F -->
-### T-K15-014 · proza · рядок 37
+<!-- fc id:T-K15-022 sha:ea9b0c14 src:kartky/k15-seriyna.md:37 klas:F -->
+### T-K15-022 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -191,8 +295,8 @@
 
 ---
 
-<!-- fc id:T-K15-015 sha:75def2ca src:kartky/k15-seriyna.md:42 klas:F -->
-### T-K15-015 · tablycya · рядок 42
+<!-- fc id:T-K15-023 sha:75def2ca src:kartky/k15-seriyna.md:42 klas:F -->
+### T-K15-023 · tablycya-shapka · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -204,12 +308,12 @@
 
 ---
 
-<!-- fc id:T-K15-016 sha:0152da49 src:kartky/k15-seriyna.md:44 klas:F -->
-### T-K15-016 · tablycya · рядок 44
+<!-- fc id:T-K15-024 sha:e706eb63 src:kartky/k15-seriyna.md:43 klas:F -->
+### T-K15-024 · komirka · рядок 43
 
 **Книга каже, дослівно:**
 
-> | 0041 | `A0:B7:…:14` | v1.4 | 2026-08-26 | OK | |
+> 0041 · MAC → `A0:B7:…:14`
 
 **Доказ**
 
@@ -217,12 +321,12 @@
 
 ---
 
-<!-- fc id:T-K15-017 sha:4b2038b0 src:kartky/k15-seriyna.md:45 klas:F -->
-### T-K15-017 · tablycya · рядок 45
+<!-- fc id:T-K15-025 sha:a8bb95c8 src:kartky/k15-seriyna.md:43 klas:F -->
+### T-K15-025 · komirka · рядок 43
 
 **Книга каже, дослівно:**
 
-> | 0043 | `A0:B7:…:31` | v1.4 | 2026-08-26 | **брак** | не стартує |
+> 0041 · Версія → v1.4
 
 **Доказ**
 
@@ -230,8 +334,99 @@
 
 ---
 
-<!-- fc id:T-K15-018 sha:2fd35e3c src:kartky/k15-seriyna.md:50 klas:F -->
-### T-K15-018 · proza · рядок 50
+<!-- fc id:T-K15-026 sha:e4e73586 src:kartky/k15-seriyna.md:43 klas:F -->
+### T-K15-026 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> 0041 · Дата → 2026-08-26
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-027 sha:29d3900f src:kartky/k15-seriyna.md:43 klas:F -->
+### T-K15-027 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> 0041 · Контроль → OK
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-028 sha:79ce9a1f src:kartky/k15-seriyna.md:44 klas:F -->
+### T-K15-028 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> 0043 · MAC → `A0:B7:…:31`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-029 sha:9f488b42 src:kartky/k15-seriyna.md:44 klas:F -->
+### T-K15-029 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> 0043 · Версія → v1.4
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-030 sha:a6590e77 src:kartky/k15-seriyna.md:44 klas:F -->
+### T-K15-030 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> 0043 · Дата → 2026-08-26
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-031 sha:37c1710c src:kartky/k15-seriyna.md:44 klas:F -->
+### T-K15-031 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> 0043 · Контроль → **брак**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-032 sha:0554d11b src:kartky/k15-seriyna.md:44 klas:F -->
+### T-K15-032 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> 0043 · Примітка → не стартує
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-033 sha:2fd35e3c src:kartky/k15-seriyna.md:50 klas:F -->
+### T-K15-033 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -243,8 +438,8 @@
 
 ---
 
-<!-- fc id:T-K15-019 sha:9149b7e4 src:kartky/k15-seriyna.md:52 klas:F -->
-### T-K15-019 · proza · рядок 52
+<!-- fc id:T-K15-034 sha:9149b7e4 src:kartky/k15-seriyna.md:52 klas:F -->
+### T-K15-034 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -256,8 +451,8 @@
 
 ---
 
-<!-- fc id:T-K15-020 sha:8ae34cb3 src:kartky/k15-seriyna.md:52 klas:F -->
-### T-K15-020 · proza · рядок 52
+<!-- fc id:T-K15-035 sha:8ae34cb3 src:kartky/k15-seriyna.md:52 klas:F -->
+### T-K15-035 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -269,8 +464,8 @@
 
 ---
 
-<!-- fc id:T-K15-021 sha:49dd7b20 src:kartky/k15-seriyna.md:57 klas:F -->
-### T-K15-021 · proza · рядок 57
+<!-- fc id:T-K15-036 sha:49dd7b20 src:kartky/k15-seriyna.md:57 klas:F -->
+### T-K15-036 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -282,8 +477,8 @@
 
 ---
 
-<!-- fc id:T-K15-022 sha:60d02320 src:kartky/k15-seriyna.md:59 klas:F -->
-### T-K15-022 · proza · рядок 59
+<!-- fc id:T-K15-037 sha:60d02320 src:kartky/k15-seriyna.md:59 klas:F -->
+### T-K15-037 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -295,8 +490,8 @@
 
 ---
 
-<!-- fc id:T-K15-023 sha:51bbff59 src:kartky/k15-seriyna.md:63 klas:F -->
-### T-K15-023 · kod · рядок 63
+<!-- fc id:T-K15-038 sha:51bbff59 src:kartky/k15-seriyna.md:63 klas:F -->
+### T-K15-038 · kod · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -311,8 +506,34 @@
 
 ---
 
-<!-- fc id:T-K15-024 sha:306c0a40 src:kartky/k15-seriyna.md:70 klas:F -->
-### T-K15-024 · proza · рядок 70
+<!-- fc id:T-K15-039 sha:aa33e38e src:kartky/k15-seriyna.md:64 klas:F -->
+### T-K15-039 · kod-ryadok · рядок 64
+
+**Книга каже, дослівно:**
+
+> nvs_partition_gen.py generate config-0042.csv nvs-0042.bin 0x6000
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-040 sha:8fc5b038 src:kartky/k15-seriyna.md:65 klas:F -->
+### T-K15-040 · kod-ryadok · рядок 65
+
+**Книга каже, дослівно:**
+
+> esptool --port PORT write-flash 0x9000 nvs-0042.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K15-041 sha:306c0a40 src:kartky/k15-seriyna.md:70 klas:F -->
+### T-K15-041 · proza · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -324,8 +545,8 @@
 
 ---
 
-<!-- fc id:T-K15-025 sha:f7220973 src:kartky/k15-seriyna.md:72 klas:F -->
-### T-K15-025 · proza · рядок 72
+<!-- fc id:T-K15-042 sha:f7220973 src:kartky/k15-seriyna.md:72 klas:F -->
+### T-K15-042 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -337,8 +558,8 @@
 
 ---
 
-<!-- fc id:T-K15-026 sha:28cc3b5c src:kartky/k15-seriyna.md:77 klas:F -->
-### T-K15-026 · proza · рядок 77
+<!-- fc id:T-K15-043 sha:28cc3b5c src:kartky/k15-seriyna.md:77 klas:F -->
+### T-K15-043 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -350,8 +571,8 @@
 
 ---
 
-<!-- fc id:T-K15-027 sha:db835ae1 src:kartky/k15-seriyna.md:77 klas:F -->
-### T-K15-027 · proza · рядок 77
+<!-- fc id:T-K15-044 sha:db835ae1 src:kartky/k15-seriyna.md:77 klas:F -->
+### T-K15-044 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -363,8 +584,8 @@
 
 ---
 
-<!-- fc id:T-K15-028 sha:d94b9526 src:kartky/k15-seriyna.md:81 klas:F -->
-### T-K15-028 · proza · рядок 81
+<!-- fc id:T-K15-045 sha:d94b9526 src:kartky/k15-seriyna.md:81 klas:F -->
+### T-K15-045 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -376,8 +597,8 @@
 
 ---
 
-<!-- fc id:T-K15-029 sha:8082acae src:kartky/k15-seriyna.md:89 klas:F -->
-### T-K15-029 · proza · рядок 89
+<!-- fc id:T-K15-046 sha:8082acae src:kartky/k15-seriyna.md:89 klas:F -->
+### T-K15-046 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -389,8 +610,8 @@
 
 ---
 
-<!-- fc id:T-K15-030 sha:a5422053 src:kartky/k15-seriyna.md:89 klas:F -->
-### T-K15-030 · proza · рядок 89
+<!-- fc id:T-K15-047 sha:a5422053 src:kartky/k15-seriyna.md:89 klas:F -->
+### T-K15-047 · proza · рядок 89
 
 **Книга каже, дослівно:**
 

@@ -1995,7 +1995,7 @@
 
 ---
 
-<!-- fc id:T-G-154 sha:8ae7d5f2 src:dodatky/g-glosariy.md:188 klas:F -->
+<!-- fc id:T-G-154 sha:8ae7d5f2 src:dodatky/g-glosariy.md:188 klas:A -->
 ### T-G-154 · tablycya · рядок 188
 
 **Книга каже, дослівно:**
@@ -2004,7 +2004,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
+  > both standard frames with 11-bit identifiers and extended frames with 29-bit identifiers.
+  > …
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver. Therefore, an external
+  > transceiver is required to connect to a TWAI bus.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Прохід:** pass-02-povedinka
 
 ---
 

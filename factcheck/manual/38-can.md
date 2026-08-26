@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/38-can.md`
 
-Одиниць твердження: **72**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **87**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-38-002 sha:1bb62584 src:manual/38-can.md:7 klas:F -->
+<!-- fc id:T-38-002 sha:1bb62584 src:manual/38-can.md:7 klas:A -->
 ### T-38-002 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -28,7 +28,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
+  > both standard frames with 11-bit identifiers and extended frames with 29-bit identifiers.
+  > …
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver. Therefore, an external
+  > transceiver is required to connect to a TWAI bus.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Прохід:** pass-02-povedinka
 
 ---
 
@@ -201,7 +210,7 @@
 
 ---
 
-<!-- fc id:T-38-016 sha:21c3981f src:manual/38-can.md:41 klas:F -->
+<!-- fc id:T-38-016 sha:21c3981f src:manual/38-can.md:41 klas:A -->
 ### T-38-016 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -210,7 +219,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
+  > both standard frames with 11-bit identifiers and extended frames with 29-bit identifiers.
+  > …
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver. Therefore, an external
+  > transceiver is required to connect to a TWAI bus.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Прохід:** pass-02-povedinka
 
 ---
 
@@ -227,7 +245,7 @@
 
 ---
 
-<!-- fc id:T-38-018 sha:9de47991 src:manual/38-can.md:45 klas:F -->
+<!-- fc id:T-38-018 sha:9de47991 src:manual/38-can.md:45 klas:A -->
 ### T-38-018 · proza · рядок 45
 
 **Книга каже, дослівно:**
@@ -236,7 +254,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
+  > both standard frames with 11-bit identifiers and extended frames with 29-bit identifiers.
+  > …
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver. Therefore, an external
+  > transceiver is required to connect to a TWAI bus.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Прохід:** pass-02-povedinka
 
 ---
 
@@ -494,8 +521,99 @@
 
 ---
 
-<!-- fc id:T-38-037 sha:dd265086 src:manual/38-can.md:105 klas:F -->
-### T-38-037 · proza · рядок 105
+<!-- fc id:T-38-037 sha:fb3aaa42 src:manual/38-can.md:89 klas:F -->
+### T-38-037 · kod-ryadok · рядок 89
+
+**Книга каже, дослівно:**
+
+> twai_driver_install(&g, &t, &f);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-038 sha:63725ecc src:manual/38-can.md:90 klas:F -->
+### T-38-038 · kod-ryadok · рядок 90
+
+**Книга каже, дослівно:**
+
+> twai_start();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-039 sha:559d08f3 src:manual/38-can.md:93 klas:F -->
+### T-38-039 · kod-ryadok · рядок 93
+
+**Книга каже, дослівно:**
+
+> .identifier = 0x180,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-040 sha:5a2ffc57 src:manual/38-can.md:94 klas:F -->
+### T-38-040 · kod-ryadok · рядок 94
+
+**Книга каже, дослівно:**
+
+> .data_length_code = 4,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-041 sha:fa34c399 src:manual/38-can.md:95 klas:F -->
+### T-38-041 · kod-ryadok · рядок 95
+
+**Книга каже, дослівно:**
+
+> .data = { 0x01, 0x02, 0x03, 0x04 },
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-042 sha:3205f13f src:manual/38-can.md:97 klas:F -->
+### T-38-042 · kod-ryadok · рядок 97
+
+**Книга каже, дослівно:**
+
+> twai_transmit(&msg, pdMS_TO_TICKS(100));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-043 sha:a3d9f170 src:manual/38-can.md:101 klas:F -->
+### T-38-043 · kod-ryadok · рядок 101
+
+**Книга каже, дослівно:**
+
+> ESP_LOGI(TAG, "id 0x%03lx, %d байт", in.identifier, in.data_length_code);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-044 sha:dd265086 src:manual/38-can.md:105 klas:F -->
+### T-38-044 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -507,8 +625,8 @@
 
 ---
 
-<!-- fc id:T-38-038 sha:c14b966b src:manual/38-can.md:105 klas:F -->
-### T-38-038 · proza · рядок 105
+<!-- fc id:T-38-045 sha:c14b966b src:manual/38-can.md:105 klas:F -->
+### T-38-045 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -520,8 +638,113 @@
 
 ---
 
-<!-- fc id:T-38-039 sha:1a37b1f4 src:manual/38-can.md:109 klas:F -->
-### T-38-039 · proza · рядок 109
+<!-- fc id:T-38-046 sha:b6daa495 src:manual/38-can.md:110 klas:A -->
+### T-38-046 · proza · рядок 110
+
+**Книга каже, дослівно:**
+
+> **CAN FD жодне з сімейств у цій книзі не розуміє** — ні classic, ні S2, ні S3, ні C3, ні C6, ні H2.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > The TWAI controllers on the {IDF_TARGET_NAME} are **not compatible with FD format frames
+  > and will interpret such frames as errors.**
+- **Спосіб і дата:** curl raw.githubusercontent для .rst; окремо перевірено відсутність SOC_TWAI_SUPPORT_FD у soc_caps.h усіх шести цілей, 2026-08-26
+- **Нотатка:** Знахідка проходу — прогалина, а не помилка. Книга не згадувала CAN FD взагалі, тоді як наслідок польовий: FD-кадр сприймається як помилка, тобто вузол не просто мовчить, а **псує чужу шину**, як вузол із неправильною швидкістю. Для книги, яка окремо вчить під'єднуватися до чужої працюючої системи, це істотно. Додано блок у розділ 38 із вказівкою перевіряти `SOC_TWAI_SUPPORT_FD` для свого чипа.
+- **Прохід:** pass-02-povedinka
+
+---
+
+<!-- fc id:T-38-047 sha:cefd9a65 src:manual/38-can.md:110 klas:F -->
+### T-38-047 · proza · рядок 110
+
+**Книга каже, дослівно:**
+
+> І поводиться воно гірше, ніж «просто не працює»: контролер сприймає FD-кадр як **помилку**.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-048 sha:139b5f1d src:manual/38-can.md:114 klas:F -->
+### T-38-048 · proza · рядок 114
+
+**Книга каже, дослівно:**
+
+> Наслідок для розвідки чужої шини серйозний.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-049 sha:ae4d2dd0 src:manual/38-can.md:114 klas:F -->
+### T-38-049 · proza · рядок 114
+
+**Книга каже, дослівно:**
+
+> Сучасний автомобіль або промислова установка цілком може ходити на CAN FD; ваш вузол не просто нічого не прочитає — він почне генерувати кадри помилок і псувати обмін решті, рівно як вузол із неправильною швидкістю.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-050 sha:8b2ded9f src:manual/38-can.md:119 klas:F -->
+### T-38-050 · proza · рядок 119
+
+**Книга каже, дослівно:**
+
+> Тому `LISTEN_ONLY` (нижче) — не порада для акуратних, а спосіб не зіпсувати чужу шину, поки не з'ясовано, що вона класична.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-051 sha:3e99d0dc src:manual/38-can.md:119 klas:F -->
+### T-38-051 · proza · рядок 119
+
+**Книга каже, дослівно:**
+
+> Якщо на ній FD — потрібен інший контролер, зовнішній (наприклад, MCP2518FD по SPI) або не ESP32 узагалі.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-052 sha:33a25696 src:manual/38-can.md:124 klas:A -->
+### T-38-052 · proza · рядок 124
+
+**Книга каже, дослівно:**
+
+> Це та властивість, яка з'являється в новіших чипах Espressif; перед проєктуванням під FD звіряйте `soc_caps.h` свого чипа на `SOC_TWAI_SUPPORT_FD`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > The TWAI controllers on the {IDF_TARGET_NAME} are **not compatible with FD format frames
+  > and will interpret such frames as errors.**
+- **Спосіб і дата:** curl raw.githubusercontent для .rst; окремо перевірено відсутність SOC_TWAI_SUPPORT_FD у soc_caps.h усіх шести цілей, 2026-08-26
+- **Нотатка:** Знахідка проходу — прогалина, а не помилка. Книга не згадувала CAN FD взагалі, тоді як наслідок польовий: FD-кадр сприймається як помилка, тобто вузол не просто мовчить, а **псує чужу шину**, як вузол із неправильною швидкістю. Для книги, яка окремо вчить під'єднуватися до чужої працюючої системи, це істотно. Додано блок у розділ 38 із вказівкою перевіряти `SOC_TWAI_SUPPORT_FD` для свого чипа.
+- **Прохід:** pass-02-povedinka
+
+---
+
+<!-- fc id:T-38-053 sha:1a37b1f4 src:manual/38-can.md:129 klas:F -->
+### T-38-053 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -533,8 +756,8 @@
 
 ---
 
-<!-- fc id:T-38-040 sha:3677d9d8 src:manual/38-can.md:109 klas:F -->
-### T-38-040 · proza · рядок 109
+<!-- fc id:T-38-054 sha:3677d9d8 src:manual/38-can.md:129 klas:F -->
+### T-38-054 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -546,8 +769,8 @@
 
 ---
 
-<!-- fc id:T-38-041 sha:5b819334 src:manual/38-can.md:113 klas:F -->
-### T-38-041 · proza · рядок 113
+<!-- fc id:T-38-055 sha:5b819334 src:manual/38-can.md:133 klas:F -->
+### T-38-055 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -559,8 +782,8 @@
 
 ---
 
-<!-- fc id:T-38-042 sha:5e9f7a90 src:manual/38-can.md:113 klas:F -->
-### T-38-042 · proza · рядок 113
+<!-- fc id:T-38-056 sha:5e9f7a90 src:manual/38-can.md:133 klas:F -->
+### T-38-056 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -572,8 +795,8 @@
 
 ---
 
-<!-- fc id:T-38-043 sha:9d9661b6 src:manual/38-can.md:116 klas:F -->
-### T-38-043 · proza · рядок 116
+<!-- fc id:T-38-057 sha:9d9661b6 src:manual/38-can.md:136 klas:F -->
+### T-38-057 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -585,8 +808,8 @@
 
 ---
 
-<!-- fc id:T-38-044 sha:c4f27b74 src:manual/38-can.md:116 klas:F -->
-### T-38-044 · proza · рядок 116
+<!-- fc id:T-38-058 sha:c4f27b74 src:manual/38-can.md:136 klas:F -->
+### T-38-058 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -598,8 +821,8 @@
 
 ---
 
-<!-- fc id:T-38-045 sha:43fb7ee2 src:manual/38-can.md:123 klas:F -->
-### T-38-045 · proza · рядок 123
+<!-- fc id:T-38-059 sha:43fb7ee2 src:manual/38-can.md:143 klas:F -->
+### T-38-059 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -611,8 +834,8 @@
 
 ---
 
-<!-- fc id:T-38-046 sha:02941c9e src:manual/38-can.md:123 klas:F -->
-### T-38-046 · proza · рядок 123
+<!-- fc id:T-38-060 sha:02941c9e src:manual/38-can.md:143 klas:F -->
+### T-38-060 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -624,8 +847,8 @@
 
 ---
 
-<!-- fc id:T-38-047 sha:094c6d05 src:manual/38-can.md:127 klas:F -->
-### T-38-047 · kod · рядок 127
+<!-- fc id:T-38-061 sha:094c6d05 src:manual/38-can.md:147 klas:F -->
+### T-38-061 · kod · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -642,8 +865,21 @@
 
 ---
 
-<!-- fc id:T-38-048 sha:321fdcfb src:manual/38-can.md:134 klas:F -->
-### T-38-048 · proza · рядок 134
+<!-- fc id:T-38-062 sha:a0d8240d src:manual/38-can.md:149 klas:F -->
+### T-38-062 · kod-ryadok · рядок 149
+
+**Книга каже, дослівно:**
+
+> twai_get_status_info(&st);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-38-063 sha:321fdcfb src:manual/38-can.md:154 klas:F -->
+### T-38-063 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -655,8 +891,8 @@
 
 ---
 
-<!-- fc id:T-38-049 sha:d44ec172 src:manual/38-can.md:134 klas:F -->
-### T-38-049 · proza · рядок 134
+<!-- fc id:T-38-064 sha:d44ec172 src:manual/38-can.md:154 klas:F -->
+### T-38-064 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -668,8 +904,8 @@
 
 ---
 
-<!-- fc id:T-38-050 sha:ff14f155 src:manual/38-can.md:139 klas:F -->
-### T-38-050 · proza · рядок 139
+<!-- fc id:T-38-065 sha:ff14f155 src:manual/38-can.md:159 klas:F -->
+### T-38-065 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -681,8 +917,8 @@
 
 ---
 
-<!-- fc id:T-38-051 sha:09a82db5 src:manual/38-can.md:139 klas:F -->
-### T-38-051 · proza · рядок 139
+<!-- fc id:T-38-066 sha:09a82db5 src:manual/38-can.md:159 klas:F -->
+### T-38-066 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -694,8 +930,8 @@
 
 ---
 
-<!-- fc id:T-38-052 sha:823d32fa src:manual/38-can.md:143 klas:F -->
-### T-38-052 · proza · рядок 143
+<!-- fc id:T-38-067 sha:823d32fa src:manual/38-can.md:163 klas:F -->
+### T-38-067 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -707,8 +943,8 @@
 
 ---
 
-<!-- fc id:T-38-053 sha:36d28763 src:manual/38-can.md:147 klas:F -->
-### T-38-053 · proza · рядок 147
+<!-- fc id:T-38-068 sha:36d28763 src:manual/38-can.md:167 klas:F -->
+### T-38-068 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -720,8 +956,8 @@
 
 ---
 
-<!-- fc id:T-38-054 sha:9347e196 src:manual/38-can.md:147 klas:F -->
-### T-38-054 · proza · рядок 147
+<!-- fc id:T-38-069 sha:9347e196 src:manual/38-can.md:167 klas:F -->
+### T-38-069 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -733,8 +969,8 @@
 
 ---
 
-<!-- fc id:T-38-055 sha:17c0166c src:manual/38-can.md:151 klas:F -->
-### T-38-055 · proza · рядок 151
+<!-- fc id:T-38-070 sha:17c0166c src:manual/38-can.md:171 klas:F -->
+### T-38-070 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -746,8 +982,8 @@
 
 ---
 
-<!-- fc id:T-38-056 sha:323aba76 src:manual/38-can.md:156 klas:F -->
-### T-38-056 · proza · рядок 156
+<!-- fc id:T-38-071 sha:323aba76 src:manual/38-can.md:176 klas:F -->
+### T-38-071 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -759,8 +995,8 @@
 
 ---
 
-<!-- fc id:T-38-057 sha:2bef8ef6 src:manual/38-can.md:158 klas:F -->
-### T-38-057 · proza · рядок 158
+<!-- fc id:T-38-072 sha:2bef8ef6 src:manual/38-can.md:178 klas:F -->
+### T-38-072 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -772,8 +1008,8 @@
 
 ---
 
-<!-- fc id:T-38-058 sha:a9ffd1d1 src:manual/38-can.md:158 klas:F -->
-### T-38-058 · proza · рядок 158
+<!-- fc id:T-38-073 sha:a9ffd1d1 src:manual/38-can.md:178 klas:F -->
+### T-38-073 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -785,8 +1021,8 @@
 
 ---
 
-<!-- fc id:T-38-059 sha:49f5cf71 src:manual/38-can.md:158 klas:F -->
-### T-38-059 · proza · рядок 158
+<!-- fc id:T-38-074 sha:49f5cf71 src:manual/38-can.md:178 klas:F -->
+### T-38-074 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -798,8 +1034,8 @@
 
 ---
 
-<!-- fc id:T-38-060 sha:b6945f61 src:manual/38-can.md:158 klas:F -->
-### T-38-060 · proza · рядок 158
+<!-- fc id:T-38-075 sha:b6945f61 src:manual/38-can.md:178 klas:F -->
+### T-38-075 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -811,8 +1047,8 @@
 
 ---
 
-<!-- fc id:T-38-061 sha:42ee92a9 src:manual/38-can.md:158 klas:F -->
-### T-38-061 · proza · рядок 158
+<!-- fc id:T-38-076 sha:42ee92a9 src:manual/38-can.md:178 klas:F -->
+### T-38-076 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -824,8 +1060,8 @@
 
 ---
 
-<!-- fc id:T-38-062 sha:fbfbe1b6 src:manual/38-can.md:167 klas:F -->
-### T-38-062 · proza · рядок 167
+<!-- fc id:T-38-077 sha:fbfbe1b6 src:manual/38-can.md:187 klas:F -->
+### T-38-077 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -837,8 +1073,8 @@
 
 ---
 
-<!-- fc id:T-38-063 sha:a89e3321 src:manual/38-can.md:167 klas:F -->
-### T-38-063 · proza · рядок 167
+<!-- fc id:T-38-078 sha:a89e3321 src:manual/38-can.md:187 klas:F -->
+### T-38-078 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -850,8 +1086,8 @@
 
 ---
 
-<!-- fc id:T-38-064 sha:5f59c70a src:manual/38-can.md:170 klas:F -->
-### T-38-064 · proza · рядок 170
+<!-- fc id:T-38-079 sha:5f59c70a src:manual/38-can.md:190 klas:F -->
+### T-38-079 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -863,8 +1099,8 @@
 
 ---
 
-<!-- fc id:T-38-065 sha:73568b75 src:manual/38-can.md:170 klas:F -->
-### T-38-065 · proza · рядок 170
+<!-- fc id:T-38-080 sha:73568b75 src:manual/38-can.md:190 klas:F -->
+### T-38-080 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -876,8 +1112,8 @@
 
 ---
 
-<!-- fc id:T-38-066 sha:8f398650 src:manual/38-can.md:177 klas:F -->
-### T-38-066 · proza · рядок 177
+<!-- fc id:T-38-081 sha:8f398650 src:manual/38-can.md:197 klas:A -->
+### T-38-081 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -885,12 +1121,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+- **Дослівно з джерела:**
+  > It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
+  > both standard frames with 11-bit identifiers and extended frames with 29-bit identifiers.
+  > …
+  > The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver. Therefore, an external
+  > transceiver is required to connect to a TWAI bus.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-38-067 sha:1c9e018a src:manual/38-can.md:179 klas:F -->
-### T-38-067 · proza · рядок 179
+<!-- fc id:T-38-082 sha:1c9e018a src:manual/38-can.md:199 klas:F -->
+### T-38-082 · proza · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -902,8 +1147,8 @@
 
 ---
 
-<!-- fc id:T-38-068 sha:2ac24e96 src:manual/38-can.md:181 klas:F -->
-### T-38-068 · proza · рядок 181
+<!-- fc id:T-38-083 sha:2ac24e96 src:manual/38-can.md:201 klas:F -->
+### T-38-083 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -915,8 +1160,8 @@
 
 ---
 
-<!-- fc id:T-38-069 sha:540f3318 src:manual/38-can.md:184 klas:F -->
-### T-38-069 · proza · рядок 184
+<!-- fc id:T-38-084 sha:540f3318 src:manual/38-can.md:204 klas:F -->
+### T-38-084 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -928,8 +1173,8 @@
 
 ---
 
-<!-- fc id:T-38-070 sha:a1fbd4a3 src:manual/38-can.md:187 klas:F -->
-### T-38-070 · proza · рядок 187
+<!-- fc id:T-38-085 sha:a1fbd4a3 src:manual/38-can.md:207 klas:F -->
+### T-38-085 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -941,8 +1186,8 @@
 
 ---
 
-<!-- fc id:T-38-071 sha:402c360c src:manual/38-can.md:190 klas:F -->
-### T-38-071 · proza · рядок 190
+<!-- fc id:T-38-086 sha:402c360c src:manual/38-can.md:210 klas:F -->
+### T-38-086 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -954,8 +1199,8 @@
 
 ---
 
-<!-- fc id:T-38-072 sha:05cca194 src:manual/38-can.md:192 klas:F -->
-### T-38-072 · proza · рядок 192
+<!-- fc id:T-38-087 sha:05cca194 src:manual/38-can.md:212 klas:F -->
+### T-38-087 · proza · рядок 212
 
 **Книга каже, дослівно:**
 

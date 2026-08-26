@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k14-rivni.md`
 
-Одиниць твердження: **34**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **37**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -85,7 +85,7 @@
 ---
 
 <!-- fc id:T-K14-007 sha:63c4e407 src:kartky/k14-rivni.md:19 klas:F -->
-### T-K14-007 · tablycya · рядок 19
+### T-K14-007 · tablycya-shapka · рядок 19
 
 **Книга каже, дослівно:**
 
@@ -97,12 +97,12 @@
 
 ---
 
-<!-- fc id:T-K14-008 sha:60d5d4da src:kartky/k14-rivni.md:21 klas:F -->
-### T-K14-008 · tablycya · рядок 21
+<!-- fc id:T-K14-008 sha:208df048 src:kartky/k14-rivni.md:20 klas:F -->
+### T-K14-008 · komirka · рядок 20
 
 **Книга каже, дослівно:**
 
-> | Немає стабілізатора | 3.3 В | 3.3 В — прямо |
+> Немає стабілізатора · Живлення → 3.3 В
 
 **Доказ**
 
@@ -110,12 +110,12 @@
 
 ---
 
-<!-- fc id:T-K14-009 sha:fa7c94b9 src:kartky/k14-rivni.md:22 klas:F -->
-### T-K14-009 · tablycya · рядок 22
+<!-- fc id:T-K14-009 sha:324eeb2a src:kartky/k14-rivni.md:20 klas:F -->
+### T-K14-009 · komirka · рядок 20
 
 **Книга каже, дослівно:**
 
-> | Є стабілізатор 5→3.3 | 5 В | **перевіряти** |
+> Немає стабілізатора · Сигнали → 3.3 В — прямо
 
 **Доказ**
 
@@ -123,12 +123,12 @@
 
 ---
 
-<!-- fc id:T-K14-010 sha:6ca75325 src:kartky/k14-rivni.md:23 klas:F -->
-### T-K14-010 · tablycya · рядок 23
+<!-- fc id:T-K14-010 sha:2932f428 src:kartky/k14-rivni.md:21 klas:F -->
+### T-K14-010 · komirka · рядок 21
 
 **Книга каже, дослівно:**
 
-> | Є стабілізатор і конвертер | 5 В | 5 В — потрібен конвертер |
+> Є стабілізатор 5→3.3 · Живлення → 5 В
 
 **Доказ**
 
@@ -136,8 +136,47 @@
 
 ---
 
-<!-- fc id:T-K14-011 sha:18fa4443 src:kartky/k14-rivni.md:27 klas:F -->
-### T-K14-011 · proza · рядок 27
+<!-- fc id:T-K14-011 sha:75750156 src:kartky/k14-rivni.md:21 klas:F -->
+### T-K14-011 · komirka · рядок 21
+
+**Книга каже, дослівно:**
+
+> Є стабілізатор 5→3.3 · Сигнали → **перевіряти**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K14-012 sha:ac22ebf2 src:kartky/k14-rivni.md:22 klas:F -->
+### T-K14-012 · komirka · рядок 22
+
+**Книга каже, дослівно:**
+
+> Є стабілізатор і конвертер · Живлення → 5 В
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K14-013 sha:3a97ea92 src:kartky/k14-rivni.md:22 klas:F -->
+### T-K14-013 · komirka · рядок 22
+
+**Книга каже, дослівно:**
+
+> Є стабілізатор і конвертер · Сигнали → 5 В — потрібен конвертер
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K14-014 sha:18fa4443 src:kartky/k14-rivni.md:27 klas:F -->
+### T-K14-014 · proza · рядок 27
 
 **Книга каже, дослівно:**
 
@@ -149,8 +188,8 @@
 
 ---
 
-<!-- fc id:T-K14-012 sha:98262ec7 src:kartky/k14-rivni.md:30 klas:F -->
-### T-K14-012 · proza · рядок 30
+<!-- fc id:T-K14-015 sha:98262ec7 src:kartky/k14-rivni.md:30 klas:F -->
+### T-K14-015 · proza · рядок 30
 
 **Книга каже, дослівно:**
 
@@ -162,8 +201,8 @@
 
 ---
 
-<!-- fc id:T-K14-013 sha:e243525c src:kartky/k14-rivni.md:34 klas:F -->
-### T-K14-013 · proza · рядок 34
+<!-- fc id:T-K14-016 sha:e243525c src:kartky/k14-rivni.md:34 klas:F -->
+### T-K14-016 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -175,8 +214,8 @@
 
 ---
 
-<!-- fc id:T-K14-014 sha:40074bf6 src:kartky/k14-rivni.md:36 klas:F -->
-### T-K14-014 · kod · рядок 36
+<!-- fc id:T-K14-017 sha:40074bf6 src:kartky/k14-rivni.md:36 klas:F -->
+### T-K14-017 · kod · рядок 36
 
 **Книга каже, дослівно:**
 
@@ -191,8 +230,8 @@
 
 ---
 
-<!-- fc id:T-K14-015 sha:1303c9e9 src:kartky/k14-rivni.md:41 klas:F -->
-### T-K14-015 · proza · рядок 41
+<!-- fc id:T-K14-018 sha:1303c9e9 src:kartky/k14-rivni.md:41 klas:F -->
+### T-K14-018 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -204,8 +243,8 @@
 
 ---
 
-<!-- fc id:T-K14-016 sha:d4c687c0 src:kartky/k14-rivni.md:41 klas:F -->
-### T-K14-016 · proza · рядок 41
+<!-- fc id:T-K14-019 sha:d4c687c0 src:kartky/k14-rivni.md:41 klas:F -->
+### T-K14-019 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -217,8 +256,8 @@
 
 ---
 
-<!-- fc id:T-K14-017 sha:6c223e67 src:kartky/k14-rivni.md:44 klas:F -->
-### T-K14-017 · proza · рядок 44
+<!-- fc id:T-K14-020 sha:6c223e67 src:kartky/k14-rivni.md:44 klas:F -->
+### T-K14-020 · proza · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -230,8 +269,8 @@
 
 ---
 
-<!-- fc id:T-K14-018 sha:ea7f7371 src:kartky/k14-rivni.md:44 klas:F -->
-### T-K14-018 · proza · рядок 44
+<!-- fc id:T-K14-021 sha:ea7f7371 src:kartky/k14-rivni.md:44 klas:F -->
+### T-K14-021 · proza · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -243,8 +282,8 @@
 
 ---
 
-<!-- fc id:T-K14-019 sha:5bd1e95c src:kartky/k14-rivni.md:48 klas:F -->
-### T-K14-019 · proza · рядок 48
+<!-- fc id:T-K14-022 sha:5bd1e95c src:kartky/k14-rivni.md:48 klas:F -->
+### T-K14-022 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -256,8 +295,8 @@
 
 ---
 
-<!-- fc id:T-K14-020 sha:0223fc1c src:kartky/k14-rivni.md:52 klas:F -->
-### T-K14-020 · tablycya · рядок 52
+<!-- fc id:T-K14-023 sha:0223fc1c src:kartky/k14-rivni.md:52 klas:F -->
+### T-K14-023 · tablycya · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -269,8 +308,8 @@
 
 ---
 
-<!-- fc id:T-K14-021 sha:63427973 src:kartky/k14-rivni.md:54 klas:F -->
-### T-K14-021 · tablycya · рядок 54
+<!-- fc id:T-K14-024 sha:63427973 src:kartky/k14-rivni.md:54 klas:F -->
+### T-K14-024 · tablycya · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -282,8 +321,8 @@
 
 ---
 
-<!-- fc id:T-K14-022 sha:a7f9a5da src:kartky/k14-rivni.md:55 klas:F -->
-### T-K14-022 · tablycya · рядок 55
+<!-- fc id:T-K14-025 sha:a7f9a5da src:kartky/k14-rivni.md:55 klas:F -->
+### T-K14-025 · tablycya · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -295,8 +334,8 @@
 
 ---
 
-<!-- fc id:T-K14-023 sha:8896c5bc src:kartky/k14-rivni.md:56 klas:F -->
-### T-K14-023 · tablycya · рядок 56
+<!-- fc id:T-K14-026 sha:8896c5bc src:kartky/k14-rivni.md:56 klas:F -->
+### T-K14-026 · tablycya · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -308,8 +347,8 @@
 
 ---
 
-<!-- fc id:T-K14-024 sha:e5fd8585 src:kartky/k14-rivni.md:57 klas:F -->
-### T-K14-024 · tablycya · рядок 57
+<!-- fc id:T-K14-027 sha:e5fd8585 src:kartky/k14-rivni.md:57 klas:F -->
+### T-K14-027 · tablycya · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -321,8 +360,8 @@
 
 ---
 
-<!-- fc id:T-K14-025 sha:a2e10d3e src:kartky/k14-rivni.md:58 klas:F -->
-### T-K14-025 · tablycya · рядок 58
+<!-- fc id:T-K14-028 sha:a2e10d3e src:kartky/k14-rivni.md:58 klas:F -->
+### T-K14-028 · tablycya · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -334,8 +373,8 @@
 
 ---
 
-<!-- fc id:T-K14-026 sha:3f1de328 src:kartky/k14-rivni.md:63 klas:F -->
-### T-K14-026 · proza · рядок 63
+<!-- fc id:T-K14-029 sha:3f1de328 src:kartky/k14-rivni.md:63 klas:F -->
+### T-K14-029 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -347,8 +386,8 @@
 
 ---
 
-<!-- fc id:T-K14-027 sha:318ba3a2 src:kartky/k14-rivni.md:66 klas:F -->
-### T-K14-027 · proza · рядок 66
+<!-- fc id:T-K14-030 sha:318ba3a2 src:kartky/k14-rivni.md:66 klas:F -->
+### T-K14-030 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -360,8 +399,8 @@
 
 ---
 
-<!-- fc id:T-K14-028 sha:f592fd96 src:kartky/k14-rivni.md:69 klas:F -->
-### T-K14-028 · proza · рядок 69
+<!-- fc id:T-K14-031 sha:f592fd96 src:kartky/k14-rivni.md:69 klas:F -->
+### T-K14-031 · proza · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -373,8 +412,8 @@
 
 ---
 
-<!-- fc id:T-K14-029 sha:247fa56f src:kartky/k14-rivni.md:69 klas:F -->
-### T-K14-029 · proza · рядок 69
+<!-- fc id:T-K14-032 sha:247fa56f src:kartky/k14-rivni.md:69 klas:F -->
+### T-K14-032 · proza · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -386,8 +425,8 @@
 
 ---
 
-<!-- fc id:T-K14-030 sha:25854768 src:kartky/k14-rivni.md:76 klas:F -->
-### T-K14-030 · proza · рядок 76
+<!-- fc id:T-K14-033 sha:25854768 src:kartky/k14-rivni.md:76 klas:F -->
+### T-K14-033 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -399,8 +438,8 @@
 
 ---
 
-<!-- fc id:T-K14-031 sha:362111b1 src:kartky/k14-rivni.md:78 klas:F -->
-### T-K14-031 · proza · рядок 78
+<!-- fc id:T-K14-034 sha:362111b1 src:kartky/k14-rivni.md:78 klas:F -->
+### T-K14-034 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -412,8 +451,8 @@
 
 ---
 
-<!-- fc id:T-K14-032 sha:642d6bdb src:kartky/k14-rivni.md:78 klas:F -->
-### T-K14-032 · proza · рядок 78
+<!-- fc id:T-K14-035 sha:642d6bdb src:kartky/k14-rivni.md:78 klas:F -->
+### T-K14-035 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -425,8 +464,8 @@
 
 ---
 
-<!-- fc id:T-K14-033 sha:5fdebcbe src:kartky/k14-rivni.md:78 klas:F -->
-### T-K14-033 · proza · рядок 78
+<!-- fc id:T-K14-036 sha:5fdebcbe src:kartky/k14-rivni.md:78 klas:F -->
+### T-K14-036 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -438,8 +477,8 @@
 
 ---
 
-<!-- fc id:T-K14-034 sha:2a6b8ec8 src:kartky/k14-rivni.md:82 klas:F -->
-### T-K14-034 · proza · рядок 82
+<!-- fc id:T-K14-037 sha:2a6b8ec8 src:kartky/k14-rivni.md:82 klas:F -->
+### T-K14-037 · proza · рядок 82
 
 **Книга каже, дослівно:**
 

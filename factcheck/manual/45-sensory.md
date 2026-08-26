@@ -617,16 +617,23 @@
 
 ---
 
-<!-- fc id:T-45-048 sha:e33dab13 src:manual/45-sensory.md:107 klas:F -->
+<!-- fc id:T-45-048 sha:7cfc8b8b src:manual/45-sensory.md:107 klas:A -->
 ### T-45-048 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
-> Про обмеження ADC — розділ 33: нелінійність, потреба калібрування, [[classic]] недоступність ADC2 при Wi-Fi.
+> Про обмеження ADC — розділ 33: нелінійність, потреба калібрування, [[classic]] [[S2]] [[S3]] недоступність ADC2 при Wi-Fi.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+- **Дослівно з джерела:**
+  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
+  > provided protection between the Wi-Fi driver and ADC oneshot mode driver.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише classic), тоді як документація прямо називає три цілі, включно з S3. Для S3 це важить окремо: його рекомендують як вибір за замовчуванням для нового проєкту, тобто найімовірніше саме на ньому читач і розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи 04, 07 (двічі), 29, 33 (двічі), 45 і картка К8.
+- **Прохід:** pass-02-povedinka
 
 ---
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/06-zhyvlennya.md`
 
-Одиниць твердження: **120**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **121**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -460,8 +460,44 @@
 
 ---
 
-<!-- fc id:T-06-034 sha:731a1ba2 src:manual/06-zhyvlennya.md:78 klas:F -->
-### T-06-034 · kod · рядок 78
+<!-- fc id:T-06-034 sha:abd09508 src:manual/06-zhyvlennya.md:73 klas:A -->
+### T-06-034 · kod-ryadok · рядок 73
+
+**Книга каже, дослівно:**
+
+> rst:0xf (RTCWDT_BROWN_OUT_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-06-035 sha:731a1ba2 src:manual/06-zhyvlennya.md:78 klas:F -->
+### T-06-035 · kod · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -475,8 +511,8 @@
 
 ---
 
-<!-- fc id:T-06-035 sha:9fd2fb02 src:manual/06-zhyvlennya.md:82 klas:F -->
-### T-06-035 · proza · рядок 82
+<!-- fc id:T-06-036 sha:9fd2fb02 src:manual/06-zhyvlennya.md:82 klas:F -->
+### T-06-036 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -488,8 +524,8 @@
 
 ---
 
-<!-- fc id:T-06-036 sha:9f4d5001 src:manual/06-zhyvlennya.md:82 klas:F -->
-### T-06-036 · proza · рядок 82
+<!-- fc id:T-06-037 sha:9f4d5001 src:manual/06-zhyvlennya.md:82 klas:F -->
+### T-06-037 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -501,8 +537,8 @@
 
 ---
 
-<!-- fc id:T-06-037 sha:42e729f4 src:manual/06-zhyvlennya.md:87 klas:F -->
-### T-06-037 · proza · рядок 87
+<!-- fc id:T-06-038 sha:42e729f4 src:manual/06-zhyvlennya.md:87 klas:F -->
+### T-06-038 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -514,8 +550,8 @@
 
 ---
 
-<!-- fc id:T-06-038 sha:056507c2 src:manual/06-zhyvlennya.md:87 klas:F -->
-### T-06-038 · proza · рядок 87
+<!-- fc id:T-06-039 sha:056507c2 src:manual/06-zhyvlennya.md:87 klas:F -->
+### T-06-039 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -527,8 +563,8 @@
 
 ---
 
-<!-- fc id:T-06-039 sha:85d914b8 src:manual/06-zhyvlennya.md:87 klas:F -->
-### T-06-039 · proza · рядок 87
+<!-- fc id:T-06-040 sha:85d914b8 src:manual/06-zhyvlennya.md:87 klas:F -->
+### T-06-040 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -540,8 +576,8 @@
 
 ---
 
-<!-- fc id:T-06-040 sha:ba3c44f4 src:manual/06-zhyvlennya.md:87 klas:F -->
-### T-06-040 · proza · рядок 87
+<!-- fc id:T-06-041 sha:ba3c44f4 src:manual/06-zhyvlennya.md:87 klas:F -->
+### T-06-041 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -553,8 +589,8 @@
 
 ---
 
-<!-- fc id:T-06-041 sha:327304ef src:manual/06-zhyvlennya.md:87 klas:F -->
-### T-06-041 · proza · рядок 87
+<!-- fc id:T-06-042 sha:327304ef src:manual/06-zhyvlennya.md:87 klas:F -->
+### T-06-042 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -566,8 +602,8 @@
 
 ---
 
-<!-- fc id:T-06-042 sha:845c5673 src:manual/06-zhyvlennya.md:87 klas:F -->
-### T-06-042 · proza · рядок 87
+<!-- fc id:T-06-043 sha:845c5673 src:manual/06-zhyvlennya.md:87 klas:F -->
+### T-06-043 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -579,8 +615,8 @@
 
 ---
 
-<!-- fc id:T-06-043 sha:86b3ba98 src:manual/06-zhyvlennya.md:87 klas:F -->
-### T-06-043 · proza · рядок 87
+<!-- fc id:T-06-044 sha:86b3ba98 src:manual/06-zhyvlennya.md:87 klas:F -->
+### T-06-044 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -592,8 +628,8 @@
 
 ---
 
-<!-- fc id:T-06-044 sha:f1d7003f src:manual/06-zhyvlennya.md:95 klas:F -->
-### T-06-044 · proza · рядок 95
+<!-- fc id:T-06-045 sha:f1d7003f src:manual/06-zhyvlennya.md:95 klas:F -->
+### T-06-045 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -605,8 +641,8 @@
 
 ---
 
-<!-- fc id:T-06-045 sha:65171072 src:manual/06-zhyvlennya.md:97 klas:F -->
-### T-06-045 · proza · рядок 97
+<!-- fc id:T-06-046 sha:65171072 src:manual/06-zhyvlennya.md:97 klas:F -->
+### T-06-046 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -618,8 +654,8 @@
 
 ---
 
-<!-- fc id:T-06-046 sha:7539ff68 src:manual/06-zhyvlennya.md:97 klas:F -->
-### T-06-046 · proza · рядок 97
+<!-- fc id:T-06-047 sha:7539ff68 src:manual/06-zhyvlennya.md:97 klas:F -->
+### T-06-047 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -631,8 +667,8 @@
 
 ---
 
-<!-- fc id:T-06-047 sha:1143ca4f src:manual/06-zhyvlennya.md:97 klas:F -->
-### T-06-047 · proza · рядок 97
+<!-- fc id:T-06-048 sha:1143ca4f src:manual/06-zhyvlennya.md:97 klas:F -->
+### T-06-048 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -644,8 +680,8 @@
 
 ---
 
-<!-- fc id:T-06-048 sha:4fe2bca0 src:manual/06-zhyvlennya.md:97 klas:F -->
-### T-06-048 · proza · рядок 97
+<!-- fc id:T-06-049 sha:4fe2bca0 src:manual/06-zhyvlennya.md:97 klas:F -->
+### T-06-049 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -657,8 +693,8 @@
 
 ---
 
-<!-- fc id:T-06-049 sha:1684b3f3 src:manual/06-zhyvlennya.md:105 klas:F -->
-### T-06-049 · proza · рядок 105
+<!-- fc id:T-06-050 sha:1684b3f3 src:manual/06-zhyvlennya.md:105 klas:F -->
+### T-06-050 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -670,8 +706,8 @@
 
 ---
 
-<!-- fc id:T-06-050 sha:db6086a7 src:manual/06-zhyvlennya.md:108 klas:F -->
-### T-06-050 · proza · рядок 108
+<!-- fc id:T-06-051 sha:db6086a7 src:manual/06-zhyvlennya.md:108 klas:F -->
+### T-06-051 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -683,8 +719,8 @@
 
 ---
 
-<!-- fc id:T-06-051 sha:5f5afbdc src:manual/06-zhyvlennya.md:108 klas:F -->
-### T-06-051 · proza · рядок 108
+<!-- fc id:T-06-052 sha:5f5afbdc src:manual/06-zhyvlennya.md:108 klas:F -->
+### T-06-052 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -696,8 +732,8 @@
 
 ---
 
-<!-- fc id:T-06-052 sha:fa7e6407 src:manual/06-zhyvlennya.md:113 klas:F -->
-### T-06-052 · proza · рядок 113
+<!-- fc id:T-06-053 sha:fa7e6407 src:manual/06-zhyvlennya.md:113 klas:F -->
+### T-06-053 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -709,8 +745,8 @@
 
 ---
 
-<!-- fc id:T-06-053 sha:999e517d src:manual/06-zhyvlennya.md:113 klas:F -->
-### T-06-053 · proza · рядок 113
+<!-- fc id:T-06-054 sha:999e517d src:manual/06-zhyvlennya.md:113 klas:F -->
+### T-06-054 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -722,8 +758,8 @@
 
 ---
 
-<!-- fc id:T-06-054 sha:6fc37438 src:manual/06-zhyvlennya.md:119 klas:F -->
-### T-06-054 · proza · рядок 119
+<!-- fc id:T-06-055 sha:6fc37438 src:manual/06-zhyvlennya.md:119 klas:F -->
+### T-06-055 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -735,8 +771,8 @@
 
 ---
 
-<!-- fc id:T-06-055 sha:fb316456 src:manual/06-zhyvlennya.md:119 klas:F -->
-### T-06-055 · proza · рядок 119
+<!-- fc id:T-06-056 sha:fb316456 src:manual/06-zhyvlennya.md:119 klas:F -->
+### T-06-056 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -748,8 +784,8 @@
 
 ---
 
-<!-- fc id:T-06-056 sha:c5a1ea76 src:manual/06-zhyvlennya.md:121 klas:F -->
-### T-06-056 · proza · рядок 121
+<!-- fc id:T-06-057 sha:c5a1ea76 src:manual/06-zhyvlennya.md:121 klas:F -->
+### T-06-057 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -761,8 +797,8 @@
 
 ---
 
-<!-- fc id:T-06-057 sha:05cbea1e src:manual/06-zhyvlennya.md:121 klas:F -->
-### T-06-057 · proza · рядок 121
+<!-- fc id:T-06-058 sha:05cbea1e src:manual/06-zhyvlennya.md:121 klas:F -->
+### T-06-058 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -774,8 +810,8 @@
 
 ---
 
-<!-- fc id:T-06-058 sha:d576dbdb src:manual/06-zhyvlennya.md:121 klas:F -->
-### T-06-058 · proza · рядок 121
+<!-- fc id:T-06-059 sha:d576dbdb src:manual/06-zhyvlennya.md:121 klas:F -->
+### T-06-059 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -787,8 +823,8 @@
 
 ---
 
-<!-- fc id:T-06-059 sha:03cea31f src:manual/06-zhyvlennya.md:125 klas:F -->
-### T-06-059 · proza · рядок 125
+<!-- fc id:T-06-060 sha:03cea31f src:manual/06-zhyvlennya.md:125 klas:F -->
+### T-06-060 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -800,8 +836,8 @@
 
 ---
 
-<!-- fc id:T-06-060 sha:a97d7964 src:manual/06-zhyvlennya.md:125 klas:F -->
-### T-06-060 · proza · рядок 125
+<!-- fc id:T-06-061 sha:a97d7964 src:manual/06-zhyvlennya.md:125 klas:F -->
+### T-06-061 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -813,8 +849,8 @@
 
 ---
 
-<!-- fc id:T-06-061 sha:7d1e7818 src:manual/06-zhyvlennya.md:125 klas:F -->
-### T-06-061 · proza · рядок 125
+<!-- fc id:T-06-062 sha:7d1e7818 src:manual/06-zhyvlennya.md:125 klas:F -->
+### T-06-062 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -826,8 +862,8 @@
 
 ---
 
-<!-- fc id:T-06-062 sha:70530b53 src:manual/06-zhyvlennya.md:129 klas:F -->
-### T-06-062 · proza · рядок 129
+<!-- fc id:T-06-063 sha:70530b53 src:manual/06-zhyvlennya.md:129 klas:F -->
+### T-06-063 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -839,8 +875,8 @@
 
 ---
 
-<!-- fc id:T-06-063 sha:56b98538 src:manual/06-zhyvlennya.md:129 klas:F -->
-### T-06-063 · proza · рядок 129
+<!-- fc id:T-06-064 sha:56b98538 src:manual/06-zhyvlennya.md:129 klas:A -->
+### T-06-064 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -848,12 +884,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-06-064 sha:270264d5 src:manual/06-zhyvlennya.md:129 klas:F -->
-### T-06-064 · proza · рядок 129
+<!-- fc id:T-06-065 sha:270264d5 src:manual/06-zhyvlennya.md:129 klas:F -->
+### T-06-065 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -865,8 +909,8 @@
 
 ---
 
-<!-- fc id:T-06-065 sha:2f88579a src:manual/06-zhyvlennya.md:133 klas:F -->
-### T-06-065 · proza · рядок 133
+<!-- fc id:T-06-066 sha:2f88579a src:manual/06-zhyvlennya.md:133 klas:F -->
+### T-06-066 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -878,8 +922,8 @@
 
 ---
 
-<!-- fc id:T-06-066 sha:14731677 src:manual/06-zhyvlennya.md:137 klas:F -->
-### T-06-066 · proza · рядок 137
+<!-- fc id:T-06-067 sha:14731677 src:manual/06-zhyvlennya.md:137 klas:F -->
+### T-06-067 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -891,8 +935,8 @@
 
 ---
 
-<!-- fc id:T-06-067 sha:e53bd8ea src:manual/06-zhyvlennya.md:137 klas:F -->
-### T-06-067 · proza · рядок 137
+<!-- fc id:T-06-068 sha:e53bd8ea src:manual/06-zhyvlennya.md:137 klas:F -->
+### T-06-068 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -904,8 +948,8 @@
 
 ---
 
-<!-- fc id:T-06-068 sha:e403a1b1 src:manual/06-zhyvlennya.md:137 klas:F -->
-### T-06-068 · proza · рядок 137
+<!-- fc id:T-06-069 sha:e403a1b1 src:manual/06-zhyvlennya.md:137 klas:A -->
+### T-06-069 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -913,12 +957,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-06-069 sha:85b3ed4a src:manual/06-zhyvlennya.md:141 klas:F -->
-### T-06-069 · kod · рядок 141
+<!-- fc id:T-06-070 sha:85b3ed4a src:manual/06-zhyvlennya.md:141 klas:A -->
+### T-06-070 · kod · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -928,12 +980,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-06-070 sha:fad422b8 src:manual/06-zhyvlennya.md:145 klas:F -->
-### T-06-070 · proza · рядок 145
+<!-- fc id:T-06-071 sha:fad422b8 src:manual/06-zhyvlennya.md:145 klas:F -->
+### T-06-071 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -945,8 +1005,8 @@
 
 ---
 
-<!-- fc id:T-06-071 sha:ca324dc4 src:manual/06-zhyvlennya.md:145 klas:F -->
-### T-06-071 · proza · рядок 145
+<!-- fc id:T-06-072 sha:ca324dc4 src:manual/06-zhyvlennya.md:145 klas:A -->
+### T-06-072 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -954,12 +1014,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-06-072 sha:22eebc77 src:manual/06-zhyvlennya.md:149 klas:F -->
-### T-06-072 · proza · рядок 149
+<!-- fc id:T-06-073 sha:22eebc77 src:manual/06-zhyvlennya.md:149 klas:F -->
+### T-06-073 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -971,8 +1039,8 @@
 
 ---
 
-<!-- fc id:T-06-073 sha:076077f4 src:manual/06-zhyvlennya.md:151 klas:F -->
-### T-06-073 · kod · рядок 151
+<!-- fc id:T-06-074 sha:076077f4 src:manual/06-zhyvlennya.md:151 klas:F -->
+### T-06-074 · kod · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -987,8 +1055,8 @@
 
 ---
 
-<!-- fc id:T-06-074 sha:808d179c src:manual/06-zhyvlennya.md:156 klas:F -->
-### T-06-074 · proza · рядок 156
+<!-- fc id:T-06-075 sha:808d179c src:manual/06-zhyvlennya.md:156 klas:F -->
+### T-06-075 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1000,8 +1068,8 @@
 
 ---
 
-<!-- fc id:T-06-075 sha:a6b410ac src:manual/06-zhyvlennya.md:160 klas:F -->
-### T-06-075 · proza · рядок 160
+<!-- fc id:T-06-076 sha:a6b410ac src:manual/06-zhyvlennya.md:160 klas:F -->
+### T-06-076 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1013,8 +1081,8 @@
 
 ---
 
-<!-- fc id:T-06-076 sha:da1e9a19 src:manual/06-zhyvlennya.md:162 klas:F -->
-### T-06-076 · proza · рядок 162
+<!-- fc id:T-06-077 sha:da1e9a19 src:manual/06-zhyvlennya.md:162 klas:F -->
+### T-06-077 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1026,8 +1094,8 @@
 
 ---
 
-<!-- fc id:T-06-077 sha:611fc8e6 src:manual/06-zhyvlennya.md:162 klas:F -->
-### T-06-077 · proza · рядок 162
+<!-- fc id:T-06-078 sha:611fc8e6 src:manual/06-zhyvlennya.md:162 klas:F -->
+### T-06-078 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1039,8 +1107,8 @@
 
 ---
 
-<!-- fc id:T-06-078 sha:7484ddec src:manual/06-zhyvlennya.md:165 klas:F -->
-### T-06-078 · proza · рядок 165
+<!-- fc id:T-06-079 sha:7484ddec src:manual/06-zhyvlennya.md:165 klas:F -->
+### T-06-079 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1052,8 +1120,8 @@
 
 ---
 
-<!-- fc id:T-06-079 sha:2d5ba434 src:manual/06-zhyvlennya.md:165 klas:F -->
-### T-06-079 · proza · рядок 165
+<!-- fc id:T-06-080 sha:2d5ba434 src:manual/06-zhyvlennya.md:165 klas:F -->
+### T-06-080 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1065,8 +1133,8 @@
 
 ---
 
-<!-- fc id:T-06-080 sha:b3fbf50d src:manual/06-zhyvlennya.md:169 klas:F -->
-### T-06-080 · proza · рядок 169
+<!-- fc id:T-06-081 sha:b3fbf50d src:manual/06-zhyvlennya.md:169 klas:F -->
+### T-06-081 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -1078,8 +1146,8 @@
 
 ---
 
-<!-- fc id:T-06-081 sha:51979b51 src:manual/06-zhyvlennya.md:172 klas:F -->
-### T-06-081 · proza · рядок 172
+<!-- fc id:T-06-082 sha:51979b51 src:manual/06-zhyvlennya.md:172 klas:F -->
+### T-06-082 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -1091,8 +1159,8 @@
 
 ---
 
-<!-- fc id:T-06-082 sha:d870c8db src:manual/06-zhyvlennya.md:174 klas:F -->
-### T-06-082 · proza · рядок 174
+<!-- fc id:T-06-083 sha:d870c8db src:manual/06-zhyvlennya.md:174 klas:F -->
+### T-06-083 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1104,8 +1172,8 @@
 
 ---
 
-<!-- fc id:T-06-083 sha:3c20e9a3 src:manual/06-zhyvlennya.md:174 klas:F -->
-### T-06-083 · proza · рядок 174
+<!-- fc id:T-06-084 sha:3c20e9a3 src:manual/06-zhyvlennya.md:174 klas:F -->
+### T-06-084 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1117,8 +1185,8 @@
 
 ---
 
-<!-- fc id:T-06-084 sha:c7d5e1c8 src:manual/06-zhyvlennya.md:178 klas:F -->
-### T-06-084 · proza · рядок 178
+<!-- fc id:T-06-085 sha:c7d5e1c8 src:manual/06-zhyvlennya.md:178 klas:F -->
+### T-06-085 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1130,8 +1198,8 @@
 
 ---
 
-<!-- fc id:T-06-085 sha:556d645b src:manual/06-zhyvlennya.md:178 klas:F -->
-### T-06-085 · proza · рядок 178
+<!-- fc id:T-06-086 sha:556d645b src:manual/06-zhyvlennya.md:178 klas:F -->
+### T-06-086 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1143,8 +1211,8 @@
 
 ---
 
-<!-- fc id:T-06-086 sha:c349b673 src:manual/06-zhyvlennya.md:178 klas:F -->
-### T-06-086 · proza · рядок 178
+<!-- fc id:T-06-087 sha:c349b673 src:manual/06-zhyvlennya.md:178 klas:F -->
+### T-06-087 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1156,8 +1224,8 @@
 
 ---
 
-<!-- fc id:T-06-087 sha:de7c3154 src:manual/06-zhyvlennya.md:184 klas:F -->
-### T-06-087 · proza · рядок 184
+<!-- fc id:T-06-088 sha:de7c3154 src:manual/06-zhyvlennya.md:184 klas:F -->
+### T-06-088 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1169,8 +1237,8 @@
 
 ---
 
-<!-- fc id:T-06-088 sha:12e008fa src:manual/06-zhyvlennya.md:184 klas:F -->
-### T-06-088 · proza · рядок 184
+<!-- fc id:T-06-089 sha:12e008fa src:manual/06-zhyvlennya.md:184 klas:F -->
+### T-06-089 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1182,8 +1250,8 @@
 
 ---
 
-<!-- fc id:T-06-089 sha:c87cb774 src:manual/06-zhyvlennya.md:189 klas:F -->
-### T-06-089 · proza · рядок 189
+<!-- fc id:T-06-090 sha:c87cb774 src:manual/06-zhyvlennya.md:189 klas:F -->
+### T-06-090 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1195,8 +1263,8 @@
 
 ---
 
-<!-- fc id:T-06-090 sha:c149d101 src:manual/06-zhyvlennya.md:189 klas:F -->
-### T-06-090 · proza · рядок 189
+<!-- fc id:T-06-091 sha:c149d101 src:manual/06-zhyvlennya.md:189 klas:F -->
+### T-06-091 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1208,8 +1276,8 @@
 
 ---
 
-<!-- fc id:T-06-091 sha:8d0045df src:manual/06-zhyvlennya.md:194 klas:F -->
-### T-06-091 · proza · рядок 194
+<!-- fc id:T-06-092 sha:8d0045df src:manual/06-zhyvlennya.md:194 klas:F -->
+### T-06-092 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1221,8 +1289,8 @@
 
 ---
 
-<!-- fc id:T-06-092 sha:f21b420b src:manual/06-zhyvlennya.md:194 klas:F -->
-### T-06-092 · proza · рядок 194
+<!-- fc id:T-06-093 sha:f21b420b src:manual/06-zhyvlennya.md:194 klas:F -->
+### T-06-093 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1234,8 +1302,8 @@
 
 ---
 
-<!-- fc id:T-06-093 sha:8e69b815 src:manual/06-zhyvlennya.md:194 klas:F -->
-### T-06-093 · proza · рядок 194
+<!-- fc id:T-06-094 sha:8e69b815 src:manual/06-zhyvlennya.md:194 klas:F -->
+### T-06-094 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1247,8 +1315,8 @@
 
 ---
 
-<!-- fc id:T-06-094 sha:5f7bb179 src:manual/06-zhyvlennya.md:198 klas:F -->
-### T-06-094 · proza · рядок 198
+<!-- fc id:T-06-095 sha:5f7bb179 src:manual/06-zhyvlennya.md:198 klas:F -->
+### T-06-095 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1260,8 +1328,8 @@
 
 ---
 
-<!-- fc id:T-06-095 sha:be6c0719 src:manual/06-zhyvlennya.md:198 klas:F -->
-### T-06-095 · proza · рядок 198
+<!-- fc id:T-06-096 sha:be6c0719 src:manual/06-zhyvlennya.md:198 klas:F -->
+### T-06-096 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1273,8 +1341,8 @@
 
 ---
 
-<!-- fc id:T-06-096 sha:6b986069 src:manual/06-zhyvlennya.md:202 klas:F -->
-### T-06-096 · proza · рядок 202
+<!-- fc id:T-06-097 sha:6b986069 src:manual/06-zhyvlennya.md:202 klas:F -->
+### T-06-097 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1286,8 +1354,8 @@
 
 ---
 
-<!-- fc id:T-06-097 sha:1e3be1de src:manual/06-zhyvlennya.md:202 klas:F -->
-### T-06-097 · proza · рядок 202
+<!-- fc id:T-06-098 sha:1e3be1de src:manual/06-zhyvlennya.md:202 klas:F -->
+### T-06-098 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1299,8 +1367,8 @@
 
 ---
 
-<!-- fc id:T-06-098 sha:8febff09 src:manual/06-zhyvlennya.md:207 klas:F -->
-### T-06-098 · proza · рядок 207
+<!-- fc id:T-06-099 sha:8febff09 src:manual/06-zhyvlennya.md:207 klas:F -->
+### T-06-099 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1312,8 +1380,8 @@
 
 ---
 
-<!-- fc id:T-06-099 sha:f320b6cc src:manual/06-zhyvlennya.md:207 klas:F -->
-### T-06-099 · proza · рядок 207
+<!-- fc id:T-06-100 sha:f320b6cc src:manual/06-zhyvlennya.md:207 klas:F -->
+### T-06-100 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1325,8 +1393,8 @@
 
 ---
 
-<!-- fc id:T-06-100 sha:4f3df3b5 src:manual/06-zhyvlennya.md:212 klas:F -->
-### T-06-100 · proza · рядок 212
+<!-- fc id:T-06-101 sha:4f3df3b5 src:manual/06-zhyvlennya.md:212 klas:F -->
+### T-06-101 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1338,8 +1406,8 @@
 
 ---
 
-<!-- fc id:T-06-101 sha:304fa1bd src:manual/06-zhyvlennya.md:212 klas:F -->
-### T-06-101 · proza · рядок 212
+<!-- fc id:T-06-102 sha:304fa1bd src:manual/06-zhyvlennya.md:212 klas:F -->
+### T-06-102 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1351,8 +1419,8 @@
 
 ---
 
-<!-- fc id:T-06-102 sha:640eee6d src:manual/06-zhyvlennya.md:216 klas:F -->
-### T-06-102 · proza · рядок 216
+<!-- fc id:T-06-103 sha:640eee6d src:manual/06-zhyvlennya.md:216 klas:F -->
+### T-06-103 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1364,8 +1432,8 @@
 
 ---
 
-<!-- fc id:T-06-103 sha:1ee88ba5 src:manual/06-zhyvlennya.md:216 klas:F -->
-### T-06-103 · proza · рядок 216
+<!-- fc id:T-06-104 sha:1ee88ba5 src:manual/06-zhyvlennya.md:216 klas:F -->
+### T-06-104 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1377,8 +1445,8 @@
 
 ---
 
-<!-- fc id:T-06-104 sha:430b10da src:manual/06-zhyvlennya.md:224 klas:F -->
-### T-06-104 · proza · рядок 224
+<!-- fc id:T-06-105 sha:430b10da src:manual/06-zhyvlennya.md:224 klas:F -->
+### T-06-105 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1390,8 +1458,8 @@
 
 ---
 
-<!-- fc id:T-06-105 sha:974911e6 src:manual/06-zhyvlennya.md:224 klas:F -->
-### T-06-105 · proza · рядок 224
+<!-- fc id:T-06-106 sha:974911e6 src:manual/06-zhyvlennya.md:224 klas:F -->
+### T-06-106 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1403,8 +1471,8 @@
 
 ---
 
-<!-- fc id:T-06-106 sha:af783d97 src:manual/06-zhyvlennya.md:224 klas:F -->
-### T-06-106 · proza · рядок 224
+<!-- fc id:T-06-107 sha:af783d97 src:manual/06-zhyvlennya.md:224 klas:F -->
+### T-06-107 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1416,8 +1484,8 @@
 
 ---
 
-<!-- fc id:T-06-107 sha:3dc81fc0 src:manual/06-zhyvlennya.md:224 klas:F -->
-### T-06-107 · proza · рядок 224
+<!-- fc id:T-06-108 sha:3dc81fc0 src:manual/06-zhyvlennya.md:224 klas:F -->
+### T-06-108 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1429,8 +1497,8 @@
 
 ---
 
-<!-- fc id:T-06-108 sha:6da0acaf src:manual/06-zhyvlennya.md:229 klas:F -->
-### T-06-108 · proza · рядок 229
+<!-- fc id:T-06-109 sha:6da0acaf src:manual/06-zhyvlennya.md:229 klas:F -->
+### T-06-109 · proza · рядок 229
 
 **Книга каже, дослівно:**
 
@@ -1442,8 +1510,8 @@
 
 ---
 
-<!-- fc id:T-06-109 sha:dd8abc67 src:manual/06-zhyvlennya.md:229 klas:F -->
-### T-06-109 · proza · рядок 229
+<!-- fc id:T-06-110 sha:dd8abc67 src:manual/06-zhyvlennya.md:229 klas:F -->
+### T-06-110 · proza · рядок 229
 
 **Книга каже, дослівно:**
 
@@ -1455,8 +1523,8 @@
 
 ---
 
-<!-- fc id:T-06-110 sha:d77349f9 src:manual/06-zhyvlennya.md:229 klas:F -->
-### T-06-110 · proza · рядок 229
+<!-- fc id:T-06-111 sha:d77349f9 src:manual/06-zhyvlennya.md:229 klas:F -->
+### T-06-111 · proza · рядок 229
 
 **Книга каже, дослівно:**
 
@@ -1468,8 +1536,8 @@
 
 ---
 
-<!-- fc id:T-06-111 sha:c8c42ac2 src:manual/06-zhyvlennya.md:234 klas:F -->
-### T-06-111 · proza · рядок 234
+<!-- fc id:T-06-112 sha:c8c42ac2 src:manual/06-zhyvlennya.md:234 klas:F -->
+### T-06-112 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -1481,8 +1549,8 @@
 
 ---
 
-<!-- fc id:T-06-112 sha:cb757722 src:manual/06-zhyvlennya.md:234 klas:F -->
-### T-06-112 · proza · рядок 234
+<!-- fc id:T-06-113 sha:cb757722 src:manual/06-zhyvlennya.md:234 klas:F -->
+### T-06-113 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -1494,8 +1562,8 @@
 
 ---
 
-<!-- fc id:T-06-113 sha:26f7a792 src:manual/06-zhyvlennya.md:238 klas:F -->
-### T-06-113 · proza · рядок 238
+<!-- fc id:T-06-114 sha:26f7a792 src:manual/06-zhyvlennya.md:238 klas:F -->
+### T-06-114 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1507,8 +1575,8 @@
 
 ---
 
-<!-- fc id:T-06-114 sha:f3ba3183 src:manual/06-zhyvlennya.md:244 klas:F -->
-### T-06-114 · proza · рядок 244
+<!-- fc id:T-06-115 sha:f3ba3183 src:manual/06-zhyvlennya.md:244 klas:F -->
+### T-06-115 · proza · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -1520,8 +1588,8 @@
 
 ---
 
-<!-- fc id:T-06-115 sha:339581bb src:manual/06-zhyvlennya.md:244 klas:F -->
-### T-06-115 · proza · рядок 244
+<!-- fc id:T-06-116 sha:339581bb src:manual/06-zhyvlennya.md:244 klas:F -->
+### T-06-116 · proza · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -1533,8 +1601,8 @@
 
 ---
 
-<!-- fc id:T-06-116 sha:c1e94628 src:manual/06-zhyvlennya.md:246 klas:F -->
-### T-06-116 · proza · рядок 246
+<!-- fc id:T-06-117 sha:c1e94628 src:manual/06-zhyvlennya.md:246 klas:F -->
+### T-06-117 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -1546,8 +1614,8 @@
 
 ---
 
-<!-- fc id:T-06-117 sha:64d1633a src:manual/06-zhyvlennya.md:249 klas:F -->
-### T-06-117 · proza · рядок 249
+<!-- fc id:T-06-118 sha:64d1633a src:manual/06-zhyvlennya.md:249 klas:F -->
+### T-06-118 · proza · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -1559,8 +1627,8 @@
 
 ---
 
-<!-- fc id:T-06-118 sha:34b338b0 src:manual/06-zhyvlennya.md:252 klas:F -->
-### T-06-118 · proza · рядок 252
+<!-- fc id:T-06-119 sha:34b338b0 src:manual/06-zhyvlennya.md:252 klas:F -->
+### T-06-119 · proza · рядок 252
 
 **Книга каже, дослівно:**
 
@@ -1572,8 +1640,8 @@
 
 ---
 
-<!-- fc id:T-06-119 sha:48981a0d src:manual/06-zhyvlennya.md:254 klas:F -->
-### T-06-119 · proza · рядок 254
+<!-- fc id:T-06-120 sha:48981a0d src:manual/06-zhyvlennya.md:254 klas:A -->
+### T-06-120 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -1581,12 +1649,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-06-120 sha:077725ef src:manual/06-zhyvlennya.md:256 klas:F -->
-### T-06-120 · proza · рядок 256
+<!-- fc id:T-06-121 sha:077725ef src:manual/06-zhyvlennya.md:256 klas:F -->
+### T-06-121 · proza · рядок 256
 
 **Книга каже, дослівно:**
 

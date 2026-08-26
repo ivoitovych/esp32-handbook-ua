@@ -1,6 +1,6 @@
 # Фактчекінг: `inserts/components-2026-08.md`
 
-Одиниць твердження: **60**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **88**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -72,7 +72,7 @@
 ---
 
 <!-- fc id:T-COM-006 sha:8239343e src:inserts/components-2026-08.md:15 klas:F -->
-### T-COM-006 · tablycya · рядок 15
+### T-COM-006 · tablycya-shapka · рядок 15
 
 **Книга каже, дослівно:**
 
@@ -84,12 +84,12 @@
 
 ---
 
-<!-- fc id:T-COM-007 sha:c50bf300 src:inserts/components-2026-08.md:17 klas:F -->
-### T-COM-007 · tablycya · рядок 17
+<!-- fc id:T-COM-007 sha:62f1b6ee src:inserts/components-2026-08.md:16 klas:F -->
+### T-COM-007 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
-> | ESP32-S3-DevKitC-1 | новий проєкт за замовчуванням | `N8` чи `N16R8` — різна кількість вільних пінів |
+> ESP32-S3-DevKitC-1 · Коли брати → новий проєкт за замовчуванням
 
 **Доказ**
 
@@ -97,12 +97,12 @@
 
 ---
 
-<!-- fc id:T-COM-008 sha:7ec9efd9 src:inserts/components-2026-08.md:18 klas:F -->
-### T-COM-008 · tablycya · рядок 18
+<!-- fc id:T-COM-008 sha:e3929f5e src:inserts/components-2026-08.md:16 klas:F -->
+### T-COM-008 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
-> | ESP32-DevKitC V4 | навчання, максимум прикладів | 38 пінів, оригінал Espressif |
+> ESP32-S3-DevKitC-1 · На що дивитися → `N8` чи `N16R8` — різна кількість вільних пінів
 
 **Доказ**
 
@@ -110,12 +110,12 @@
 
 ---
 
-<!-- fc id:T-COM-009 sha:9720af6c src:inserts/components-2026-08.md:19 klas:F -->
-### T-COM-009 · tablycya · рядок 19
+<!-- fc id:T-COM-009 sha:87955aca src:inserts/components-2026-08.md:17 klas:F -->
+### T-COM-009 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
-> | DevKit V1 / DOIT | дешева заміна попередньої | **буває 30- і 38-піновою — різні плати** |
+> ESP32-DevKitC V4 · Коли брати → навчання, максимум прикладів
 
 **Доказ**
 
@@ -123,12 +123,12 @@
 
 ---
 
-<!-- fc id:T-COM-010 sha:92caae83 src:inserts/components-2026-08.md:20 klas:F -->
-### T-COM-010 · tablycya · рядок 20
+<!-- fc id:T-COM-010 sha:e623e717 src:inserts/components-2026-08.md:17 klas:F -->
+### T-COM-010 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
-> | ESP32-C3 SuperMini | простий дешевий вузол | 400 КБ — стеля, PSRAM немає |
+> ESP32-DevKitC V4 · На що дивитися → 38 пінів, оригінал Espressif
 
 **Доказ**
 
@@ -136,12 +136,12 @@
 
 ---
 
-<!-- fc id:T-COM-011 sha:609f323e src:inserts/components-2026-08.md:21 klas:F -->
-### T-COM-011 · tablycya · рядок 21
+<!-- fc id:T-COM-011 sha:325f03c0 src:inserts/components-2026-08.md:18 klas:F -->
+### T-COM-011 · komirka · рядок 18
 
 **Книга каже, дослівно:**
 
-> | ESP32-CAM | камера за подією | **немає USB**, потрібен перехідник |
+> DevKit V1 / DOIT · Коли брати → дешева заміна попередньої
 
 **Доказ**
 
@@ -149,8 +149,73 @@
 
 ---
 
-<!-- fc id:T-COM-012 sha:2e5c1f17 src:inserts/components-2026-08.md:25 klas:F -->
-### T-COM-012 · tablycya · рядок 25
+<!-- fc id:T-COM-012 sha:a9dfed82 src:inserts/components-2026-08.md:18 klas:F -->
+### T-COM-012 · komirka · рядок 18
+
+**Книга каже, дослівно:**
+
+> DevKit V1 / DOIT · На що дивитися → **буває 30- і 38-піновою — різні плати**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-013 sha:86b6962e src:inserts/components-2026-08.md:19 klas:F -->
+### T-COM-013 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> ESP32-C3 SuperMini · Коли брати → простий дешевий вузол
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-014 sha:0aa192e8 src:inserts/components-2026-08.md:19 klas:F -->
+### T-COM-014 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> ESP32-C3 SuperMini · На що дивитися → 400 КБ — стеля, PSRAM немає
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-015 sha:49eb66a1 src:inserts/components-2026-08.md:20 klas:F -->
+### T-COM-015 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> ESP32-CAM · Коли брати → камера за подією
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-016 sha:3074b1e8 src:inserts/components-2026-08.md:20 klas:F -->
+### T-COM-016 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> ESP32-CAM · На що дивитися → **немає USB**, потрібен перехідник
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-017 sha:2e5c1f17 src:inserts/components-2026-08.md:25 klas:F -->
+### T-COM-017 · tablycya-shapka · рядок 25
 
 **Книга каже, дослівно:**
 
@@ -162,12 +227,12 @@
 
 ---
 
-<!-- fc id:T-COM-013 sha:90713820 src:inserts/components-2026-08.md:27 klas:F -->
-### T-COM-013 · tablycya · рядок 27
+<!-- fc id:T-COM-018 sha:b2b5e5d7 src:inserts/components-2026-08.md:26 klas:F -->
+### T-COM-018 · komirka · рядок 26
 
 **Книга каже, дослівно:**
 
-> | DHT11, DHT22 | **BME280** або SHT3x | власний протокол, нестабільна точність |
+> DHT11, DHT22 · Беріть → **BME280** або SHT3x
 
 **Доказ**
 
@@ -175,12 +240,12 @@
 
 ---
 
-<!-- fc id:T-COM-014 sha:13383fbb src:inserts/components-2026-08.md:28 klas:F -->
-### T-COM-014 · tablycya · рядок 28
+<!-- fc id:T-COM-019 sha:a277c905 src:inserts/components-2026-08.md:26 klas:F -->
+### T-COM-019 · komirka · рядок 26
 
 **Книга каже, дослівно:**
 
-> | Фоторезистор | **BH1750** | лінійний, у люксах, по I²C |
+> DHT11, DHT22 · Чому → власний протокол, нестабільна точність
 
 **Доказ**
 
@@ -188,12 +253,12 @@
 
 ---
 
-<!-- fc id:T-COM-015 sha:5ba67520 src:inserts/components-2026-08.md:29 klas:F -->
-### T-COM-015 · tablycya · рядок 29
+<!-- fc id:T-COM-020 sha:143fcf82 src:inserts/components-2026-08.md:27 klas:F -->
+### T-COM-020 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
-> | HC-SR04 | VL53L0X, де можна | ⛔ 5 В на `ECHO`; не бачить м'які поверхні |
+> Фоторезистор · Беріть → **BH1750**
 
 **Доказ**
 
@@ -201,12 +266,12 @@
 
 ---
 
-<!-- fc id:T-COM-016 sha:25baecf2 src:inserts/components-2026-08.md:30 klas:F -->
-### T-COM-016 · tablycya · рядок 30
+<!-- fc id:T-COM-021 sha:5b431873 src:inserts/components-2026-08.md:27 klas:F -->
+### T-COM-021 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
-> | MPU6050 | BNO055, де потрібна орієнтація | сам зводить дані, менше роботи |
+> Фоторезистор · Чому → лінійний, у люксах, по I²C
 
 **Доказ**
 
@@ -214,12 +279,12 @@
 
 ---
 
-<!-- fc id:T-COM-017 sha:c0ea6e5a src:inserts/components-2026-08.md:31 klas:F -->
-### T-COM-017 · tablycya · рядок 31
+<!-- fc id:T-COM-022 sha:923e96e8 src:inserts/components-2026-08.md:28 klas:F -->
+### T-COM-022 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
-> | Резистивний датчик вологості ґрунту | ємнісний | резистивні кородують за місяці |
+> HC-SR04 · Беріть → VL53L0X, де можна
 
 **Доказ**
 
@@ -227,12 +292,12 @@
 
 ---
 
-<!-- fc id:T-COM-018 sha:14b55be2 src:inserts/components-2026-08.md:32 klas:F -->
-### T-COM-018 · tablycya · рядок 32
+<!-- fc id:T-COM-023 sha:e2d499f5 src:inserts/components-2026-08.md:28 klas:F -->
+### T-COM-023 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
-> | ACS712 | INA219 / INA226 | цифровий, точніший, менше шуму |
+> HC-SR04 · Чому → ⛔ 5 В на `ECHO`; не бачить м'які поверхні
 
 **Доказ**
 
@@ -240,8 +305,86 @@
 
 ---
 
-<!-- fc id:T-COM-019 sha:8f2c2a36 src:inserts/components-2026-08.md:34 klas:F -->
-### T-COM-019 · proza · рядок 34
+<!-- fc id:T-COM-024 sha:039a3fda src:inserts/components-2026-08.md:29 klas:F -->
+### T-COM-024 · komirka · рядок 29
+
+**Книга каже, дослівно:**
+
+> MPU6050 · Беріть → BNO055, де потрібна орієнтація
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-025 sha:367ed7ac src:inserts/components-2026-08.md:29 klas:F -->
+### T-COM-025 · komirka · рядок 29
+
+**Книга каже, дослівно:**
+
+> MPU6050 · Чому → сам зводить дані, менше роботи
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-026 sha:7e935ba7 src:inserts/components-2026-08.md:30 klas:F -->
+### T-COM-026 · komirka · рядок 30
+
+**Книга каже, дослівно:**
+
+> Резистивний датчик вологості ґрунту · Беріть → ємнісний
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-027 sha:21af3596 src:inserts/components-2026-08.md:30 klas:F -->
+### T-COM-027 · komirka · рядок 30
+
+**Книга каже, дослівно:**
+
+> Резистивний датчик вологості ґрунту · Чому → резистивні кородують за місяці
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-028 sha:37cc4d8c src:inserts/components-2026-08.md:31 klas:F -->
+### T-COM-028 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> ACS712 · Беріть → INA219 / INA226
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-029 sha:95d32862 src:inserts/components-2026-08.md:31 klas:F -->
+### T-COM-029 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> ACS712 · Чому → цифровий, точніший, менше шуму
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-030 sha:8f2c2a36 src:inserts/components-2026-08.md:34 klas:F -->
+### T-COM-030 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -253,8 +396,8 @@
 
 ---
 
-<!-- fc id:T-COM-020 sha:c2a64930 src:inserts/components-2026-08.md:40 klas:F -->
-### T-COM-020 · tablycya · рядок 40
+<!-- fc id:T-COM-031 sha:c2a64930 src:inserts/components-2026-08.md:40 klas:F -->
+### T-COM-031 · tablycya-shapka · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -266,12 +409,12 @@
 
 ---
 
-<!-- fc id:T-COM-021 sha:4bb9e2b9 src:inserts/components-2026-08.md:42 klas:F -->
-### T-COM-021 · tablycya · рядок 42
+<!-- fc id:T-COM-032 sha:063196fc src:inserts/components-2026-08.md:41 klas:F -->
+### T-COM-032 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
-> | DRV8833 | двигун постійного струму | TB6612FNG |
+> DRV8833 · Для чого → двигун постійного струму
 
 **Доказ**
 
@@ -279,12 +422,12 @@
 
 ---
 
-<!-- fc id:T-COM-022 sha:3a821d32 src:inserts/components-2026-08.md:43 klas:F -->
-### T-COM-022 · tablycya · рядок 43
+<!-- fc id:T-COM-033 sha:f1ca3000 src:inserts/components-2026-08.md:41 klas:F -->
+### T-COM-033 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
-> | **не** L298N | — | застарів, втрачає ~2 В на собі |
+> DRV8833 · Замінники → TB6612FNG
 
 **Доказ**
 
@@ -292,12 +435,12 @@
 
 ---
 
-<!-- fc id:T-COM-023 sha:811837d8 src:inserts/components-2026-08.md:44 klas:F -->
-### T-COM-023 · tablycya · рядок 44
+<!-- fc id:T-COM-034 sha:55ed4d88 src:inserts/components-2026-08.md:42 klas:F -->
+### T-COM-034 · komirka · рядок 42
 
 **Книга каже, дослівно:**
 
-> | A4988 | кроковий | DRV8825 (більший струм, мікрокрок 1/32) |
+> **не** L298N · Замінники → застарів, втрачає ~2 В на собі
 
 **Доказ**
 
@@ -305,12 +448,12 @@
 
 ---
 
-<!-- fc id:T-COM-024 sha:78eb40bd src:inserts/components-2026-08.md:45 klas:F -->
-### T-COM-024 · tablycya · рядок 45
+<!-- fc id:T-COM-035 sha:48d57c4e src:inserts/components-2026-08.md:43 klas:F -->
+### T-COM-035 · komirka · рядок 43
 
 **Книга каже, дослівно:**
 
-> | ULN2003 | 28BYJ-48 | іде в комплекті |
+> A4988 · Для чого → кроковий
 
 **Доказ**
 
@@ -318,12 +461,12 @@
 
 ---
 
-<!-- fc id:T-COM-025 sha:c1b85209 src:inserts/components-2026-08.md:46 klas:F -->
-### T-COM-025 · tablycya · рядок 46
+<!-- fc id:T-COM-036 sha:4ce143ff src:inserts/components-2026-08.md:43 klas:F -->
+### T-COM-036 · komirka · рядок 43
 
 **Книга каже, дослівно:**
 
-> | MOSFET логічного рівня | комутація навантаження | **обов'язково logic level** |
+> A4988 · Замінники → DRV8825 (більший струм, мікрокрок 1/32)
 
 **Доказ**
 
@@ -331,12 +474,12 @@
 
 ---
 
-<!-- fc id:T-COM-026 sha:6356c12b src:inserts/components-2026-08.md:47 klas:F -->
-### T-COM-026 · tablycya · рядок 47
+<!-- fc id:T-COM-037 sha:944ede34 src:inserts/components-2026-08.md:44 klas:F -->
+### T-COM-037 · komirka · рядок 44
 
 **Книга каже, дослівно:**
 
-> | Релейний модуль з оптопарою | мережеве живлення | перевіряти: 5 В і часто інверсна логіка |
+> ULN2003 · Для чого → 28BYJ-48
 
 **Доказ**
 
@@ -344,12 +487,12 @@
 
 ---
 
-<!-- fc id:T-COM-027 sha:d21bb34f src:inserts/components-2026-08.md:48 klas:F -->
-### T-COM-027 · tablycya · рядок 48
+<!-- fc id:T-COM-038 sha:7fb8610e src:inserts/components-2026-08.md:44 klas:F -->
+### T-COM-038 · komirka · рядок 44
 
 **Книга каже, дослівно:**
 
-> | SSR | часте перемикання | потребує радіатора |
+> ULN2003 · Замінники → іде в комплекті
 
 **Доказ**
 
@@ -357,12 +500,12 @@
 
 ---
 
-<!-- fc id:T-COM-028 sha:65308be0 src:inserts/components-2026-08.md:52 klas:F -->
-### T-COM-028 · tablycya · рядок 52
+<!-- fc id:T-COM-039 sha:f7ec6df8 src:inserts/components-2026-08.md:45 klas:F -->
+### T-COM-039 · komirka · рядок 45
 
 **Книга каже, дослівно:**
 
-> | Позиція | Для чого | Застереження |
+> MOSFET логічного рівня · Для чого → комутація навантаження
 
 **Доказ**
 
@@ -370,12 +513,12 @@
 
 ---
 
-<!-- fc id:T-COM-029 sha:10d42027 src:inserts/components-2026-08.md:54 klas:F -->
-### T-COM-029 · tablycya · рядок 54
+<!-- fc id:T-COM-040 sha:54c257d2 src:inserts/components-2026-08.md:45 klas:F -->
+### T-COM-040 · komirka · рядок 45
 
 **Книга каже, дослівно:**
 
-> | **SN65HVD230** | трансивер CAN | ✔ 3.3 В — правильний вибір |
+> MOSFET логічного рівня · Замінники → **обов'язково logic level**
 
 **Доказ**
 
@@ -383,12 +526,12 @@
 
 ---
 
-<!-- fc id:T-COM-030 sha:277c7a99 src:inserts/components-2026-08.md:55 klas:F -->
-### T-COM-030 · tablycya · рядок 55
+<!-- fc id:T-COM-041 sha:21fa22fe src:inserts/components-2026-08.md:46 klas:F -->
+### T-COM-041 · komirka · рядок 46
 
 **Книга каже, дослівно:**
 
-> | TJA1050, MCP2551 | трансивер CAN | ⛔ 5 В, потрібен конвертер на `RX` |
+> Релейний модуль з оптопарою · Для чого → мережеве живлення
 
 **Доказ**
 
@@ -396,12 +539,12 @@
 
 ---
 
-<!-- fc id:T-COM-031 sha:3d90fdef src:inserts/components-2026-08.md:56 klas:F -->
-### T-COM-031 · tablycya · рядок 56
+<!-- fc id:T-COM-042 sha:cf3734bb src:inserts/components-2026-08.md:46 klas:F -->
+### T-COM-042 · komirka · рядок 46
 
 **Книга каже, дослівно:**
 
-> | MAX485 | RS-485 | брати версію на 3.3 В |
+> Релейний модуль з оптопарою · Замінники → перевіряти: 5 В і часто інверсна логіка
 
 **Доказ**
 
@@ -409,12 +552,12 @@
 
 ---
 
-<!-- fc id:T-COM-032 sha:69aa4f35 src:inserts/components-2026-08.md:57 klas:F -->
-### T-COM-032 · tablycya · рядок 57
+<!-- fc id:T-COM-043 sha:5a7daf97 src:inserts/components-2026-08.md:47 klas:F -->
+### T-COM-043 · komirka · рядок 47
 
 **Книга каже, дослівно:**
 
-> | SX1262 | LoRa | ефективніший за SX1276 |
+> SSR · Для чого → часте перемикання
 
 **Доказ**
 
@@ -422,12 +565,12 @@
 
 ---
 
-<!-- fc id:T-COM-033 sha:3340f431 src:inserts/components-2026-08.md:58 klas:F -->
-### T-COM-033 · tablycya · рядок 58
+<!-- fc id:T-COM-044 sha:46e0360c src:inserts/components-2026-08.md:47 klas:F -->
+### T-COM-044 · komirka · рядок 47
 
 **Книга каже, дослівно:**
 
-> | SX1276 / RFM95 | LoRa | більше бібліотек і прикладів |
+> SSR · Замінники → потребує радіатора
 
 **Доказ**
 
@@ -435,21 +578,8 @@
 
 ---
 
-<!-- fc id:T-COM-034 sha:7220e0da src:inserts/components-2026-08.md:59 klas:F -->
-### T-COM-034 · tablycya · рядок 59
-
-**Книга каже, дослівно:**
-
-> | Конвертер рівнів на польових | 3.3 ↔ 5 В | двонапрямлений, працює з I²C |
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-COM-035 sha:65308be0 src:inserts/components-2026-08.md:63 klas:F -->
-### T-COM-035 · tablycya · рядок 63
+<!-- fc id:T-COM-045 sha:65308be0 src:inserts/components-2026-08.md:52 klas:F -->
+### T-COM-045 · tablycya-shapka · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -461,12 +591,12 @@
 
 ---
 
-<!-- fc id:T-COM-036 sha:605fd3da src:inserts/components-2026-08.md:65 klas:F -->
-### T-COM-036 · tablycya · рядок 65
+<!-- fc id:T-COM-046 sha:638d632c src:inserts/components-2026-08.md:53 klas:F -->
+### T-COM-046 · komirka · рядок 53
 
 **Книга каже, дослівно:**
 
-> | TP4056 **з захистом** | заряд Li-ion | ⛔ версія без захисту виглядає так само |
+> **SN65HVD230** · Для чого → трансивер CAN
 
 **Доказ**
 
@@ -474,12 +604,12 @@
 
 ---
 
-<!-- fc id:T-COM-037 sha:128cb3bf src:inserts/components-2026-08.md:66 klas:F -->
-### T-COM-037 · tablycya · рядок 66
+<!-- fc id:T-COM-047 sha:7a78c033 src:inserts/components-2026-08.md:53 klas:F -->
+### T-COM-047 · komirka · рядок 53
 
 **Книга каже, дослівно:**
 
-> | Buck-boost 3.3 В | автономний пристрій | дає майже всю ємність, LDO — половину |
+> **SN65HVD230** · Застереження → ✔ 3.3 В — правильний вибір
 
 **Доказ**
 
@@ -487,12 +617,12 @@
 
 ---
 
-<!-- fc id:T-COM-038 sha:620fba20 src:inserts/components-2026-08.md:67 klas:F -->
-### T-COM-038 · tablycya · рядок 67
+<!-- fc id:T-COM-048 sha:f1ce4a77 src:inserts/components-2026-08.md:54 klas:F -->
+### T-COM-048 · komirka · рядок 54
 
 **Книга каже, дослівно:**
 
-> | LDO з малим падінням | тихе живлення для ADC | після buck |
+> TJA1050, MCP2551 · Для чого → трансивер CAN
 
 **Доказ**
 
@@ -500,12 +630,12 @@
 
 ---
 
-<!-- fc id:T-COM-039 sha:72dc8347 src:inserts/components-2026-08.md:68 klas:F -->
-### T-COM-039 · tablycya · рядок 68
+<!-- fc id:T-COM-049 sha:61722fb9 src:inserts/components-2026-08.md:54 klas:F -->
+### T-COM-049 · komirka · рядок 54
 
 **Книга каже, дослівно:**
 
-> | 18650 **protected** | акумулятор | або окрема BMS |
+> TJA1050, MCP2551 · Застереження → ⛔ 5 В, потрібен конвертер на `RX`
 
 **Доказ**
 
@@ -513,12 +643,12 @@
 
 ---
 
-<!-- fc id:T-COM-040 sha:d230e841 src:inserts/components-2026-08.md:69 klas:F -->
-### T-COM-040 · tablycya · рядок 69
+<!-- fc id:T-COM-050 sha:c723dc1b src:inserts/components-2026-08.md:55 klas:F -->
+### T-COM-050 · komirka · рядок 55
 
 **Книга каже, дослівно:**
 
-> | Тримач або елемент із привареними виводами | 18650 | не паяти напряму до елемента |
+> MAX485 · Для чого → RS-485
 
 **Доказ**
 
@@ -526,8 +656,242 @@
 
 ---
 
-<!-- fc id:T-COM-041 sha:deea9bde src:inserts/components-2026-08.md:73 klas:F -->
-### T-COM-041 · tablycya · рядок 73
+<!-- fc id:T-COM-051 sha:b1d46fe3 src:inserts/components-2026-08.md:55 klas:F -->
+### T-COM-051 · komirka · рядок 55
+
+**Книга каже, дослівно:**
+
+> MAX485 · Застереження → брати версію на 3.3 В
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-052 sha:63a09dca src:inserts/components-2026-08.md:56 klas:F -->
+### T-COM-052 · komirka · рядок 56
+
+**Книга каже, дослівно:**
+
+> SX1262 · Для чого → LoRa
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-053 sha:560b7d6b src:inserts/components-2026-08.md:56 klas:F -->
+### T-COM-053 · komirka · рядок 56
+
+**Книга каже, дослівно:**
+
+> SX1262 · Застереження → ефективніший за SX1276
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-054 sha:b1f005dc src:inserts/components-2026-08.md:57 klas:F -->
+### T-COM-054 · komirka · рядок 57
+
+**Книга каже, дослівно:**
+
+> SX1276 / RFM95 · Для чого → LoRa
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-055 sha:a1ff07d2 src:inserts/components-2026-08.md:57 klas:F -->
+### T-COM-055 · komirka · рядок 57
+
+**Книга каже, дослівно:**
+
+> SX1276 / RFM95 · Застереження → більше бібліотек і прикладів
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-056 sha:6e24ff79 src:inserts/components-2026-08.md:58 klas:F -->
+### T-COM-056 · komirka · рядок 58
+
+**Книга каже, дослівно:**
+
+> Конвертер рівнів на польових · Для чого → 3.3 ↔ 5 В
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-057 sha:885925b7 src:inserts/components-2026-08.md:58 klas:F -->
+### T-COM-057 · komirka · рядок 58
+
+**Книга каже, дослівно:**
+
+> Конвертер рівнів на польових · Застереження → двонапрямлений, працює з I²C
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-058 sha:65308be0 src:inserts/components-2026-08.md:63 klas:F -->
+### T-COM-058 · tablycya-shapka · рядок 63
+
+**Книга каже, дослівно:**
+
+> | Позиція | Для чого | Застереження |
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-059 sha:3ef3c083 src:inserts/components-2026-08.md:64 klas:F -->
+### T-COM-059 · komirka · рядок 64
+
+**Книга каже, дослівно:**
+
+> TP4056 **з захистом** · Для чого → заряд Li-ion
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-060 sha:61735796 src:inserts/components-2026-08.md:64 klas:F -->
+### T-COM-060 · komirka · рядок 64
+
+**Книга каже, дослівно:**
+
+> TP4056 **з захистом** · Застереження → ⛔ версія без захисту виглядає так само
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-061 sha:844269dc src:inserts/components-2026-08.md:65 klas:F -->
+### T-COM-061 · komirka · рядок 65
+
+**Книга каже, дослівно:**
+
+> Buck-boost 3.3 В · Для чого → автономний пристрій
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-062 sha:bfe7b4be src:inserts/components-2026-08.md:65 klas:F -->
+### T-COM-062 · komirka · рядок 65
+
+**Книга каже, дослівно:**
+
+> Buck-boost 3.3 В · Застереження → дає майже всю ємність, LDO — половину
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-063 sha:5ce3f690 src:inserts/components-2026-08.md:66 klas:F -->
+### T-COM-063 · komirka · рядок 66
+
+**Книга каже, дослівно:**
+
+> LDO з малим падінням · Для чого → тихе живлення для ADC
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-064 sha:cd87924b src:inserts/components-2026-08.md:66 klas:F -->
+### T-COM-064 · komirka · рядок 66
+
+**Книга каже, дослівно:**
+
+> LDO з малим падінням · Застереження → після buck
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-065 sha:3dd0acbf src:inserts/components-2026-08.md:67 klas:F -->
+### T-COM-065 · komirka · рядок 67
+
+**Книга каже, дослівно:**
+
+> 18650 **protected** · Для чого → акумулятор
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-066 sha:0fc81150 src:inserts/components-2026-08.md:67 klas:F -->
+### T-COM-066 · komirka · рядок 67
+
+**Книга каже, дослівно:**
+
+> 18650 **protected** · Застереження → або окрема BMS
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-067 sha:6362ca8d src:inserts/components-2026-08.md:68 klas:F -->
+### T-COM-067 · komirka · рядок 68
+
+**Книга каже, дослівно:**
+
+> Тримач або елемент із привареними виводами · Для чого → 18650
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-068 sha:4d8b626e src:inserts/components-2026-08.md:68 klas:F -->
+### T-COM-068 · komirka · рядок 68
+
+**Книга каже, дослівно:**
+
+> Тримач або елемент із привареними виводами · Застереження → не паяти напряму до елемента
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-COM-069 sha:deea9bde src:inserts/components-2026-08.md:73 klas:F -->
+### T-COM-069 · tablycya · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -539,8 +903,8 @@
 
 ---
 
-<!-- fc id:T-COM-042 sha:bcb0a383 src:inserts/components-2026-08.md:75 klas:F -->
-### T-COM-042 · tablycya · рядок 75
+<!-- fc id:T-COM-070 sha:bcb0a383 src:inserts/components-2026-08.md:75 klas:F -->
+### T-COM-070 · tablycya · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -552,8 +916,8 @@
 
 ---
 
-<!-- fc id:T-COM-043 sha:0ad1879f src:inserts/components-2026-08.md:76 klas:F -->
-### T-COM-043 · tablycya · рядок 76
+<!-- fc id:T-COM-071 sha:0ad1879f src:inserts/components-2026-08.md:76 klas:F -->
+### T-COM-071 · tablycya · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -565,8 +929,8 @@
 
 ---
 
-<!-- fc id:T-COM-044 sha:ef5efd9a src:inserts/components-2026-08.md:77 klas:F -->
-### T-COM-044 · tablycya · рядок 77
+<!-- fc id:T-COM-072 sha:ef5efd9a src:inserts/components-2026-08.md:77 klas:F -->
+### T-COM-072 · tablycya · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -578,8 +942,8 @@
 
 ---
 
-<!-- fc id:T-COM-045 sha:080b6bae src:inserts/components-2026-08.md:78 klas:F -->
-### T-COM-045 · tablycya · рядок 78
+<!-- fc id:T-COM-073 sha:080b6bae src:inserts/components-2026-08.md:78 klas:F -->
+### T-COM-073 · tablycya · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -591,8 +955,8 @@
 
 ---
 
-<!-- fc id:T-COM-046 sha:cc438e52 src:inserts/components-2026-08.md:79 klas:F -->
-### T-COM-046 · tablycya · рядок 79
+<!-- fc id:T-COM-074 sha:cc438e52 src:inserts/components-2026-08.md:79 klas:F -->
+### T-COM-074 · tablycya · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -604,8 +968,8 @@
 
 ---
 
-<!-- fc id:T-COM-047 sha:f17c30b7 src:inserts/components-2026-08.md:80 klas:F -->
-### T-COM-047 · tablycya · рядок 80
+<!-- fc id:T-COM-075 sha:f17c30b7 src:inserts/components-2026-08.md:80 klas:F -->
+### T-COM-075 · tablycya · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -617,8 +981,8 @@
 
 ---
 
-<!-- fc id:T-COM-048 sha:36d71a06 src:inserts/components-2026-08.md:81 klas:F -->
-### T-COM-048 · tablycya · рядок 81
+<!-- fc id:T-COM-076 sha:36d71a06 src:inserts/components-2026-08.md:81 klas:F -->
+### T-COM-076 · tablycya · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -630,8 +994,8 @@
 
 ---
 
-<!-- fc id:T-COM-049 sha:7ebd07fc src:inserts/components-2026-08.md:82 klas:F -->
-### T-COM-049 · tablycya · рядок 82
+<!-- fc id:T-COM-077 sha:7ebd07fc src:inserts/components-2026-08.md:82 klas:F -->
+### T-COM-077 · tablycya · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -643,8 +1007,8 @@
 
 ---
 
-<!-- fc id:T-COM-050 sha:2e0b8764 src:inserts/components-2026-08.md:86 klas:F -->
-### T-COM-050 · tablycya · рядок 86
+<!-- fc id:T-COM-078 sha:2e0b8764 src:inserts/components-2026-08.md:86 klas:F -->
+### T-COM-078 · tablycya · рядок 86
 
 **Книга каже, дослівно:**
 
@@ -656,8 +1020,8 @@
 
 ---
 
-<!-- fc id:T-COM-051 sha:5be320ba src:inserts/components-2026-08.md:88 klas:F -->
-### T-COM-051 · tablycya · рядок 88
+<!-- fc id:T-COM-079 sha:5be320ba src:inserts/components-2026-08.md:88 klas:F -->
+### T-COM-079 · tablycya · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -669,8 +1033,8 @@
 
 ---
 
-<!-- fc id:T-COM-052 sha:1f97465d src:inserts/components-2026-08.md:89 klas:F -->
-### T-COM-052 · tablycya · рядок 89
+<!-- fc id:T-COM-080 sha:1f97465d src:inserts/components-2026-08.md:89 klas:F -->
+### T-COM-080 · tablycya · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -682,8 +1046,8 @@
 
 ---
 
-<!-- fc id:T-COM-053 sha:06de9e89 src:inserts/components-2026-08.md:90 klas:F -->
-### T-COM-053 · tablycya · рядок 90
+<!-- fc id:T-COM-081 sha:06de9e89 src:inserts/components-2026-08.md:90 klas:F -->
+### T-COM-081 · tablycya · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -695,8 +1059,8 @@
 
 ---
 
-<!-- fc id:T-COM-054 sha:ec3f8d9e src:inserts/components-2026-08.md:91 klas:F -->
-### T-COM-054 · tablycya · рядок 91
+<!-- fc id:T-COM-082 sha:ec3f8d9e src:inserts/components-2026-08.md:91 klas:F -->
+### T-COM-082 · tablycya · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -708,8 +1072,8 @@
 
 ---
 
-<!-- fc id:T-COM-055 sha:e5acfdc7 src:inserts/components-2026-08.md:92 klas:F -->
-### T-COM-055 · tablycya · рядок 92
+<!-- fc id:T-COM-083 sha:e5acfdc7 src:inserts/components-2026-08.md:92 klas:F -->
+### T-COM-083 · tablycya · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -721,8 +1085,8 @@
 
 ---
 
-<!-- fc id:T-COM-056 sha:9992a4c5 src:inserts/components-2026-08.md:93 klas:F -->
-### T-COM-056 · tablycya · рядок 93
+<!-- fc id:T-COM-084 sha:9992a4c5 src:inserts/components-2026-08.md:93 klas:F -->
+### T-COM-084 · tablycya · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -734,8 +1098,8 @@
 
 ---
 
-<!-- fc id:T-COM-057 sha:a7138583 src:inserts/components-2026-08.md:95 klas:F -->
-### T-COM-057 · proza · рядок 95
+<!-- fc id:T-COM-085 sha:a7138583 src:inserts/components-2026-08.md:95 klas:F -->
+### T-COM-085 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -747,8 +1111,8 @@
 
 ---
 
-<!-- fc id:T-COM-058 sha:60104ef0 src:inserts/components-2026-08.md:100 klas:F -->
-### T-COM-058 · proza · рядок 100
+<!-- fc id:T-COM-086 sha:60104ef0 src:inserts/components-2026-08.md:100 klas:F -->
+### T-COM-086 · proza · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -760,8 +1124,8 @@
 
 ---
 
-<!-- fc id:T-COM-059 sha:47861098 src:inserts/components-2026-08.md:104 klas:F -->
-### T-COM-059 · proza · рядок 104
+<!-- fc id:T-COM-087 sha:47861098 src:inserts/components-2026-08.md:104 klas:F -->
+### T-COM-087 · proza · рядок 104
 
 **Книга каже, дослівно:**
 
@@ -773,8 +1137,8 @@
 
 ---
 
-<!-- fc id:T-COM-060 sha:75617667 src:inserts/components-2026-08.md:107 klas:F -->
-### T-COM-060 · proza · рядок 107
+<!-- fc id:T-COM-088 sha:75617667 src:inserts/components-2026-08.md:107 klas:F -->
+### T-COM-088 · proza · рядок 107
 
 **Книга каже, дослівно:**
 

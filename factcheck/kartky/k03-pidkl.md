@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k03-pidkl.md`
 
-Одиниць твердження: **24**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **29**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -111,7 +111,7 @@
 ---
 
 <!-- fc id:T-K03-009 sha:b1c0759b src:kartky/k03-pidkl.md:24 klas:F -->
-### T-K03-009 · tablycya · рядок 24
+### T-K03-009 · tablycya-shapka · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -123,12 +123,12 @@
 
 ---
 
-<!-- fc id:T-K03-010 sha:2432e2d3 src:kartky/k03-pidkl.md:26 klas:F -->
-### T-K03-010 · tablycya · рядок 26
+<!-- fc id:T-K03-010 sha:5a7df3f2 src:kartky/k03-pidkl.md:25 klas:F -->
+### T-K03-010 · komirka · рядок 25
 
 **Книга каже, дослівно:**
 
-> | `CP2102`, `CP2102N` | Silicon Labs | Windows: з сайту SiLabs. Linux: у ядрі |
+> `CP2102`, `CP2102N` · Міст → Silicon Labs
 
 **Доказ**
 
@@ -136,12 +136,12 @@
 
 ---
 
-<!-- fc id:T-K03-011 sha:764be307 src:kartky/k03-pidkl.md:27 klas:F -->
-### T-K03-011 · tablycya · рядок 27
+<!-- fc id:T-K03-011 sha:ffd5aad8 src:kartky/k03-pidkl.md:25 klas:F -->
+### T-K03-011 · komirka · рядок 25
 
 **Книга каже, дослівно:**
 
-> | `CH340`, `CH341` | WCH | Windows: з сайту WCH. Linux: у ядрі |
+> `CP2102`, `CP2102N` · Драйвер → Windows: з сайту SiLabs. Linux: у ядрі
 
 **Доказ**
 
@@ -149,12 +149,12 @@
 
 ---
 
-<!-- fc id:T-K03-012 sha:beff27b5 src:kartky/k03-pidkl.md:28 klas:F -->
-### T-K03-012 · tablycya · рядок 28
+<!-- fc id:T-K03-012 sha:f9af5909 src:kartky/k03-pidkl.md:26 klas:F -->
+### T-K03-012 · komirka · рядок 26
 
 **Книга каже, дослівно:**
 
-> | `CH9102`, `CH9102F` | WCH | Windows: окремий, не той, що для CH340 |
+> `CH340`, `CH341` · Міст → WCH
 
 **Доказ**
 
@@ -162,12 +162,12 @@
 
 ---
 
-<!-- fc id:T-K03-013 sha:dd1e9970 src:kartky/k03-pidkl.md:29 klas:F -->
-### T-K03-013 · tablycya · рядок 29
+<!-- fc id:T-K03-013 sha:11309fcc src:kartky/k03-pidkl.md:26 klas:F -->
+### T-K03-013 · komirka · рядок 26
 
 **Книга каже, дослівно:**
 
-> | немає окремого чипа | native USB [[S3]] [[C3]] | драйвер не потрібен |
+> `CH340`, `CH341` · Драйвер → Windows: з сайту WCH. Linux: у ядрі
 
 **Доказ**
 
@@ -175,8 +175,60 @@
 
 ---
 
-<!-- fc id:T-K03-014 sha:254dbbd9 src:kartky/k03-pidkl.md:31 klas:F -->
-### T-K03-014 · proza · рядок 31
+<!-- fc id:T-K03-014 sha:78a66c0c src:kartky/k03-pidkl.md:27 klas:F -->
+### T-K03-014 · komirka · рядок 27
+
+**Книга каже, дослівно:**
+
+> `CH9102`, `CH9102F` · Міст → WCH
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K03-015 sha:14b8c42e src:kartky/k03-pidkl.md:27 klas:F -->
+### T-K03-015 · komirka · рядок 27
+
+**Книга каже, дослівно:**
+
+> `CH9102`, `CH9102F` · Драйвер → Windows: окремий, не той, що для CH340
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K03-016 sha:fd830d21 src:kartky/k03-pidkl.md:28 klas:F -->
+### T-K03-016 · komirka · рядок 28
+
+**Книга каже, дослівно:**
+
+> немає окремого чипа · Міст → native USB [[S3]] [[C3]]
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:28 klas:F -->
+### T-K03-017 · komirka · рядок 28
+
+**Книга каже, дослівно:**
+
+> немає окремого чипа · Драйвер → драйвер не потрібен
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K03-018 sha:254dbbd9 src:kartky/k03-pidkl.md:31 klas:F -->
+### T-K03-018 · proza · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -188,8 +240,8 @@
 
 ---
 
-<!-- fc id:T-K03-015 sha:9014d1b4 src:kartky/k03-pidkl.md:31 klas:F -->
-### T-K03-015 · proza · рядок 31
+<!-- fc id:T-K03-019 sha:9014d1b4 src:kartky/k03-pidkl.md:31 klas:F -->
+### T-K03-019 · proza · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -201,8 +253,8 @@
 
 ---
 
-<!-- fc id:T-K03-016 sha:c5be6367 src:kartky/k03-pidkl.md:37 klas:F -->
-### T-K03-016 · proza · рядок 37
+<!-- fc id:T-K03-020 sha:c5be6367 src:kartky/k03-pidkl.md:37 klas:F -->
+### T-K03-020 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -214,8 +266,8 @@
 
 ---
 
-<!-- fc id:T-K03-017 sha:b4bb361c src:kartky/k03-pidkl.md:40 klas:F -->
-### T-K03-017 · kod · рядок 40
+<!-- fc id:T-K03-021 sha:b4bb361c src:kartky/k03-pidkl.md:40 klas:F -->
+### T-K03-021 · kod · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -229,8 +281,21 @@
 
 ---
 
-<!-- fc id:T-K03-018 sha:5eb954e4 src:kartky/k03-pidkl.md:44 klas:F -->
-### T-K03-018 · proza · рядок 44
+<!-- fc id:T-K03-022 sha:227ed426 src:kartky/k03-pidkl.md:41 klas:F -->
+### T-K03-022 · kod-ryadok · рядок 41
+
+**Книга каже, дослівно:**
+
+> sudo usermod -aG dialout $USER
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K03-023 sha:5eb954e4 src:kartky/k03-pidkl.md:44 klas:F -->
+### T-K03-023 · proza · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -242,8 +307,8 @@
 
 ---
 
-<!-- fc id:T-K03-019 sha:b25b1a1b src:kartky/k03-pidkl.md:44 klas:F -->
-### T-K03-019 · proza · рядок 44
+<!-- fc id:T-K03-024 sha:b25b1a1b src:kartky/k03-pidkl.md:44 klas:F -->
+### T-K03-024 · proza · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -255,8 +320,8 @@
 
 ---
 
-<!-- fc id:T-K03-020 sha:ca54e413 src:kartky/k03-pidkl.md:48 klas:F -->
-### T-K03-020 · proza · рядок 48
+<!-- fc id:T-K03-025 sha:ca54e413 src:kartky/k03-pidkl.md:48 klas:F -->
+### T-K03-025 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -268,8 +333,8 @@
 
 ---
 
-<!-- fc id:T-K03-021 sha:fcf18876 src:kartky/k03-pidkl.md:48 klas:F -->
-### T-K03-021 · proza · рядок 48
+<!-- fc id:T-K03-026 sha:fcf18876 src:kartky/k03-pidkl.md:48 klas:F -->
+### T-K03-026 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -281,8 +346,8 @@
 
 ---
 
-<!-- fc id:T-K03-022 sha:dacd95cb src:kartky/k03-pidkl.md:55 klas:F -->
-### T-K03-022 · proza · рядок 55
+<!-- fc id:T-K03-027 sha:dacd95cb src:kartky/k03-pidkl.md:55 klas:F -->
+### T-K03-027 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -294,8 +359,8 @@
 
 ---
 
-<!-- fc id:T-K03-023 sha:6908eac2 src:kartky/k03-pidkl.md:55 klas:F -->
-### T-K03-023 · proza · рядок 55
+<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:55 klas:F -->
+### T-K03-028 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -307,8 +372,8 @@
 
 ---
 
-<!-- fc id:T-K03-024 sha:dc22a6aa src:kartky/k03-pidkl.md:55 klas:F -->
-### T-K03-024 · proza · рядок 55
+<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:55 klas:F -->
+### T-K03-029 · proza · рядок 55
 
 **Книга каже, дослівно:**
 

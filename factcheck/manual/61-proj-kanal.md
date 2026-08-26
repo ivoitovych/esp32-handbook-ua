@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/61-proj-kanal.md`
 
-Одиниць твердження: **52**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **84**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -124,7 +124,7 @@
 ---
 
 <!-- fc id:T-61-010 sha:464bdd0d src:manual/61-proj-kanal.md:28 klas:F -->
-### T-61-010 · tablycya · рядок 28
+### T-61-010 · tablycya-shapka · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -136,12 +136,12 @@
 
 ---
 
-<!-- fc id:T-61-011 sha:b1bedd43 src:manual/61-proj-kanal.md:30 klas:F -->
-### T-61-011 · tablycya · рядок 30
+<!-- fc id:T-61-011 sha:01a9ed98 src:manual/61-proj-kanal.md:29 klas:F -->
+### T-61-011 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | Час до передачі | 1–10 с | **10 мс** |
+> Час до передачі · Wi-Fi → 1–10 с
 
 **Доказ**
 
@@ -149,12 +149,12 @@
 
 ---
 
-<!-- fc id:T-61-012 sha:a94d59bd src:manual/61-proj-kanal.md:31 klas:F -->
-### T-61-012 · tablycya · рядок 31
+<!-- fc id:T-61-012 sha:573156b8 src:manual/61-proj-kanal.md:29 klas:F -->
+### T-61-012 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | Заряд на цикл | ~500 мА·с | **~5 мА·с** |
+> Час до передачі · ESP-NOW → **10 мс**
 
 **Доказ**
 
@@ -162,12 +162,12 @@
 
 ---
 
-<!-- fc id:T-61-013 sha:45a22919 src:manual/61-proj-kanal.md:32 klas:F -->
-### T-61-013 · tablycya · рядок 32
+<!-- fc id:T-61-013 sha:76ab707d src:manual/61-proj-kanal.md:30 klas:F -->
+### T-61-013 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> | Потрібен роутер | так | **ні** |
+> Заряд на цикл · Wi-Fi → ~500 мА·с
 
 **Доказ**
 
@@ -175,8 +175,47 @@
 
 ---
 
-<!-- fc id:T-61-014 sha:9b30fdd0 src:manual/61-proj-kanal.md:34 klas:F -->
-### T-61-014 · proza · рядок 34
+<!-- fc id:T-61-014 sha:706d3437 src:manual/61-proj-kanal.md:30 klas:F -->
+### T-61-014 · komirka · рядок 30
+
+**Книга каже, дослівно:**
+
+> Заряд на цикл · ESP-NOW → **~5 мА·с**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-015 sha:24bfd5bc src:manual/61-proj-kanal.md:31 klas:F -->
+### T-61-015 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> Потрібен роутер · Wi-Fi → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-016 sha:dba9d4ef src:manual/61-proj-kanal.md:31 klas:F -->
+### T-61-016 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> Потрібен роутер · ESP-NOW → **ні**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-017 sha:9b30fdd0 src:manual/61-proj-kanal.md:34 klas:F -->
+### T-61-017 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -188,8 +227,8 @@
 
 ---
 
-<!-- fc id:T-61-015 sha:f080f748 src:manual/61-proj-kanal.md:38 klas:F -->
-### T-61-015 · proza · рядок 38
+<!-- fc id:T-61-018 sha:f080f748 src:manual/61-proj-kanal.md:38 klas:F -->
+### T-61-018 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -201,8 +240,8 @@
 
 ---
 
-<!-- fc id:T-61-016 sha:ed70f774 src:manual/61-proj-kanal.md:38 klas:F -->
-### T-61-016 · proza · рядок 38
+<!-- fc id:T-61-019 sha:ed70f774 src:manual/61-proj-kanal.md:38 klas:F -->
+### T-61-019 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -214,8 +253,8 @@
 
 ---
 
-<!-- fc id:T-61-017 sha:488cb3e6 src:manual/61-proj-kanal.md:41 klas:A -->
-### T-61-017 · kod · рядок 41
+<!-- fc id:T-61-020 sha:488cb3e6 src:manual/61-proj-kanal.md:41 klas:A -->
+### T-61-020 · kod · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -256,8 +295,72 @@
 
 ---
 
-<!-- fc id:T-61-018 sha:92d27801 src:manual/61-proj-kanal.md:61 klas:F -->
-### T-61-018 · proza · рядок 61
+<!-- fc id:T-61-021 sha:38e6adad src:manual/61-proj-kanal.md:42 klas:F -->
+### T-61-021 · kod-ryadok · рядок 42
+
+**Книга каже, дослівно:**
+
+> #define PROTO_VERSIYA  1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-022 sha:ceff9e1c src:manual/61-proj-kanal.md:43 klas:F -->
+### T-61-022 · kod-ryadok · рядок 43
+
+**Книга каже, дослівно:**
+
+> #define TYP_VYMIR      1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-023 sha:cf685481 src:manual/61-proj-kanal.md:44 klas:F -->
+### T-61-023 · kod-ryadok · рядок 44
+
+**Книга каже, дослівно:**
+
+> #define TYP_PIDTVERDZH 2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-024 sha:b4239afb src:manual/61-proj-kanal.md:57 klas:A -->
+### T-61-024 · kod-ryadok · рядок 57
+
+**Книга каже, дослівно:**
+
+> _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байтів");
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h
+- **Дослівно з джерела:**
+  > #define ESP_NOW_ETH_ALEN             6         /*!< Length of ESPNOW peer MAC address */
+  > #define ESP_NOW_MAX_TOTAL_PEER_NUM   20        /*!< Maximum number of ESPNOW total peers */
+  > #define ESP_NOW_MAX_ENCRYPT_PEER_NUM 6         /*!< Maximum number of ESPNOW encrypted peers */
+  > #define ESP_NOW_MAX_DATA_LEN  ESP_NOW_MAX_IE_DATA_LEN   /**< Maximum length of data sent in each ESPNOW transmission for v1.0 */
+  > #define ESP_NOW_MAX_DATA_LEN_V2      1470      /**< Maximum length of data sent in each ESPNOW transmission for v2.0 */
+  > typedef void (*esp_now_recv_cb_t)(const esp_now_recv_info_t * esp_now_info, const uint8_t *data, int data_len);
+  > typedef void (*esp_now_send_cb_t)(const esp_now_send_info_t *tx_info, esp_now_send_status_t status);
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Обидві сигнатури використані в розділах 42 і 61; стару сигнатуру `on_sent` виправлено в сесії рецензування 05 за цим самим джерелом.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-61-025 sha:92d27801 src:manual/61-proj-kanal.md:61 klas:F -->
+### T-61-025 · proza · рядок 61
 
 **Книга каже, дослівно:**
 
@@ -269,8 +372,8 @@
 
 ---
 
-<!-- fc id:T-61-019 sha:5b873185 src:manual/61-proj-kanal.md:63 klas:F -->
-### T-61-019 · proza · рядок 63
+<!-- fc id:T-61-026 sha:5b873185 src:manual/61-proj-kanal.md:63 klas:F -->
+### T-61-026 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -282,8 +385,8 @@
 
 ---
 
-<!-- fc id:T-61-020 sha:e6af2908 src:manual/61-proj-kanal.md:66 klas:F -->
-### T-61-020 · proza · рядок 66
+<!-- fc id:T-61-027 sha:e6af2908 src:manual/61-proj-kanal.md:66 klas:F -->
+### T-61-027 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -295,8 +398,8 @@
 
 ---
 
-<!-- fc id:T-61-021 sha:bc260bbb src:manual/61-proj-kanal.md:66 klas:F -->
-### T-61-021 · proza · рядок 66
+<!-- fc id:T-61-028 sha:bc260bbb src:manual/61-proj-kanal.md:66 klas:F -->
+### T-61-028 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -308,8 +411,8 @@
 
 ---
 
-<!-- fc id:T-61-022 sha:5c50e427 src:manual/61-proj-kanal.md:70 klas:F -->
-### T-61-022 · proza · рядок 70
+<!-- fc id:T-61-029 sha:5c50e427 src:manual/61-proj-kanal.md:70 klas:F -->
+### T-61-029 · proza · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -321,8 +424,8 @@
 
 ---
 
-<!-- fc id:T-61-023 sha:cda5218c src:manual/61-proj-kanal.md:76 klas:A -->
-### T-61-023 · kod · рядок 76
+<!-- fc id:T-61-030 sha:cda5218c src:manual/61-proj-kanal.md:76 klas:A -->
+### T-61-030 · kod · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -396,8 +499,164 @@
 
 ---
 
-<!-- fc id:T-61-024 sha:ac5efcc7 src:manual/61-proj-kanal.md:129 klas:F -->
-### T-61-024 · proza · рядок 129
+<!-- fc id:T-61-031 sha:0bead0fd src:manual/61-proj-kanal.md:92 klas:F -->
+### T-61-031 · kod-ryadok · рядок 92
+
+**Книга каже, дослівно:**
+
+> if (esp_now_send(MAC_PRYIMACHA, (const uint8_t *)p, sizeof(*p)) != ESP_OK)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-032 sha:db8aefcb src:manual/61-proj-kanal.md:98 klas:F -->
+### T-61-032 · kod-ryadok · рядок 98
+
+**Книга каже, дослівно:**
+
+> vTaskDelay(pdMS_TO_TICKS(2));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-033 sha:3078ec3b src:manual/61-proj-kanal.md:104 klas:F -->
+### T-61-033 · kod-ryadok · рядок 104
+
+**Книга каже, дослівно:**
+
+> espnow_init_with_key();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-034 sha:324c53f6 src:manual/61-proj-kanal.md:107 klas:F -->
+### T-61-034 · kod-ryadok · рядок 107
+
+**Книга каже, дослівно:**
+
+> .versiya = PROTO_VERSIYA,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-035 sha:7ce2b7c7 src:manual/61-proj-kanal.md:108 klas:F -->
+### T-61-035 · kod-ryadok · рядок 108
+
+**Книга каже, дослівно:**
+
+> .typ = TYP_VYMIR,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-036 sha:6fe24018 src:manual/61-proj-kanal.md:109 klas:F -->
+### T-61-036 · kod-ryadok · рядок 109
+
+**Книга каже, дослівно:**
+
+> .vuzol = NOMER_VUZLA,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-037 sha:8d862d63 src:manual/61-proj-kanal.md:110 klas:F -->
+### T-61-037 · kod-ryadok · рядок 110
+
+**Книга каже, дослівно:**
+
+> .nomer = ++nomer,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-038 sha:e3e10d63 src:manual/61-proj-kanal.md:112 klas:F -->
+### T-61-038 · kod-ryadok · рядок 112
+
+**Книга каже, дослівно:**
+
+> zmiryaty(&p);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-039 sha:5f2fdeaa src:manual/61-proj-kanal.md:116 klas:F -->
+### T-61-039 · kod-ryadok · рядок 116
+
+**Книга каже, дослівно:**
+
+> ESP_LOGW(TAG, "не доставлено, у буфері %u", u_buferi);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-040 sha:bcaf613d src:manual/61-proj-kanal.md:119 klas:F -->
+### T-61-040 · kod-ryadok · рядок 119
+
+**Книга каже, дослівно:**
+
+> while (u_buferi > 0 && nadislaty(&bufer[u_buferi - 1]))
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-041 sha:6679c2fc src:manual/61-proj-kanal.md:123 klas:F -->
+### T-61-041 · kod-ryadok · рядок 123
+
+**Книга каже, дослівно:**
+
+> esp_sleep_enable_timer_wakeup(60ULL * 1000000);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-042 sha:c5771474 src:manual/61-proj-kanal.md:124 klas:F -->
+### T-61-042 · kod-ryadok · рядок 124
+
+**Книга каже, дослівно:**
+
+> esp_deep_sleep_start();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-043 sha:ac5efcc7 src:manual/61-proj-kanal.md:129 klas:F -->
+### T-61-043 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -409,8 +668,8 @@
 
 ---
 
-<!-- fc id:T-61-025 sha:397a915a src:manual/61-proj-kanal.md:129 klas:F -->
-### T-61-025 · proza · рядок 129
+<!-- fc id:T-61-044 sha:397a915a src:manual/61-proj-kanal.md:129 klas:F -->
+### T-61-044 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -422,8 +681,8 @@
 
 ---
 
-<!-- fc id:T-61-026 sha:14b6fb2b src:manual/61-proj-kanal.md:133 klas:F -->
-### T-61-026 · proza · рядок 133
+<!-- fc id:T-61-045 sha:14b6fb2b src:manual/61-proj-kanal.md:133 klas:F -->
+### T-61-045 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -435,8 +694,8 @@
 
 ---
 
-<!-- fc id:T-61-027 sha:dee8e24a src:manual/61-proj-kanal.md:136 klas:A -->
-### T-61-027 · proza · рядок 136
+<!-- fc id:T-61-046 sha:dee8e24a src:manual/61-proj-kanal.md:136 klas:A -->
+### T-61-046 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -460,8 +719,8 @@
 
 ---
 
-<!-- fc id:T-61-028 sha:3a1e9ece src:manual/61-proj-kanal.md:136 klas:F -->
-### T-61-028 · proza · рядок 136
+<!-- fc id:T-61-047 sha:3a1e9ece src:manual/61-proj-kanal.md:136 klas:F -->
+### T-61-047 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -473,8 +732,8 @@
 
 ---
 
-<!-- fc id:T-61-029 sha:a8e5e059 src:manual/61-proj-kanal.md:144 klas:F -->
-### T-61-029 · kod · рядок 144
+<!-- fc id:T-61-048 sha:a8e5e059 src:manual/61-proj-kanal.md:144 klas:F -->
+### T-61-048 · kod · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -501,8 +760,99 @@
 
 ---
 
-<!-- fc id:T-61-030 sha:214d0ef5 src:manual/61-proj-kanal.md:162 klas:F -->
-### T-61-030 · proza · рядок 162
+<!-- fc id:T-61-049 sha:0232cd24 src:manual/61-proj-kanal.md:146 klas:F -->
+### T-61-049 · kod-ryadok · рядок 146
+
+**Книга каже, дослівно:**
+
+> ESP_ERROR_CHECK(esp_now_init());
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-050 sha:e2734f8f src:manual/61-proj-kanal.md:147 klas:F -->
+### T-61-050 · kod-ryadok · рядок 147
+
+**Книга каже, дослівно:**
+
+> ESP_ERROR_CHECK(esp_now_register_send_cb(on_sent));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-051 sha:b257bee2 src:manual/61-proj-kanal.md:151 klas:F -->
+### T-61-051 · kod-ryadok · рядок 151
+
+**Книга каже, дослівно:**
+
+> nvs_read_key("lmk", lmk);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-052 sha:1980955e src:manual/61-proj-kanal.md:152 klas:F -->
+### T-61-052 · kod-ryadok · рядок 152
+
+**Книга каже, дослівно:**
+
+> ESP_ERROR_CHECK(esp_now_set_pmk(pmk));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-053 sha:7881c502 src:manual/61-proj-kanal.md:155 klas:F -->
+### T-61-053 · kod-ryadok · рядок 155
+
+**Книга каже, дослівно:**
+
+> memcpy(peer.peer_addr, MAC_PRYIMACHA, 6);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-054 sha:dfd25891 src:manual/61-proj-kanal.md:156 klas:F -->
+### T-61-054 · kod-ryadok · рядок 156
+
+**Книга каже, дослівно:**
+
+> memcpy(peer.lmk, lmk, 16);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-055 sha:eb4e4ec4 src:manual/61-proj-kanal.md:157 klas:F -->
+### T-61-055 · kod-ryadok · рядок 157
+
+**Книга каже, дослівно:**
+
+> ESP_ERROR_CHECK(esp_now_add_peer(&peer));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-056 sha:214d0ef5 src:manual/61-proj-kanal.md:162 klas:F -->
+### T-61-056 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -514,8 +864,8 @@
 
 ---
 
-<!-- fc id:T-61-031 sha:f7237524 src:manual/61-proj-kanal.md:162 klas:F -->
-### T-61-031 · proza · рядок 162
+<!-- fc id:T-61-057 sha:f7237524 src:manual/61-proj-kanal.md:162 klas:F -->
+### T-61-057 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -527,8 +877,8 @@
 
 ---
 
-<!-- fc id:T-61-032 sha:623cf9a6 src:manual/61-proj-kanal.md:165 klas:F -->
-### T-61-032 · proza · рядок 165
+<!-- fc id:T-61-058 sha:623cf9a6 src:manual/61-proj-kanal.md:165 klas:F -->
+### T-61-058 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -540,8 +890,8 @@
 
 ---
 
-<!-- fc id:T-61-033 sha:22808815 src:manual/61-proj-kanal.md:168 klas:F -->
-### T-61-033 · proza · рядок 168
+<!-- fc id:T-61-059 sha:22808815 src:manual/61-proj-kanal.md:168 klas:F -->
+### T-61-059 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -553,8 +903,8 @@
 
 ---
 
-<!-- fc id:T-61-034 sha:4834ece6 src:manual/61-proj-kanal.md:173 klas:A -->
-### T-61-034 · kod · рядок 173
+<!-- fc id:T-61-060 sha:4834ece6 src:manual/61-proj-kanal.md:173 klas:A -->
+### T-61-060 · kod · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -623,8 +973,47 @@
 
 ---
 
-<!-- fc id:T-61-035 sha:d513bc14 src:manual/61-proj-kanal.md:222 klas:F -->
-### T-61-035 · proza · рядок 222
+<!-- fc id:T-61-061 sha:223fcbe9 src:manual/61-proj-kanal.md:189 klas:F -->
+### T-61-061 · kod-ryadok · рядок 189
+
+**Книга каже, дослівно:**
+
+> memcpy(&p, data, sizeof(p));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-062 sha:9f94ad98 src:manual/61-proj-kanal.md:197 klas:F -->
+### T-61-062 · kod-ryadok · рядок 197
+
+**Книга каже, дослівно:**
+
+> ESP_LOGW(TAG, "чужа версія протоколу: %u", p.versiya);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-063 sha:56e84656 src:manual/61-proj-kanal.md:203 klas:F -->
+### T-61-063 · kod-ryadok · рядок 203
+
+**Книга каже, дослівно:**
+
+> if (v->ostanniy_nomer && p.nomer > v->ostanniy_nomer + 1)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-064 sha:d513bc14 src:manual/61-proj-kanal.md:222 klas:F -->
+### T-61-064 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -636,8 +1025,8 @@
 
 ---
 
-<!-- fc id:T-61-036 sha:60da1592 src:manual/61-proj-kanal.md:224 klas:F -->
-### T-61-036 · kod · рядок 224
+<!-- fc id:T-61-065 sha:60da1592 src:manual/61-proj-kanal.md:224 klas:F -->
+### T-61-065 · kod · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -666,8 +1055,47 @@
 
 ---
 
-<!-- fc id:T-61-037 sha:675401be src:manual/61-proj-kanal.md:243 klas:F -->
-### T-61-037 · proza · рядок 243
+<!-- fc id:T-61-066 sha:8f529d45 src:manual/61-proj-kanal.md:234 klas:F -->
+### T-61-066 · kod-ryadok · рядок 234
+
+**Книга каже, дослівно:**
+
+> ESP_LOGE(TAG, "вузол %d не виходить на зв'язок", i);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-067 sha:53dc7d43 src:manual/61-proj-kanal.md:235 klas:F -->
+### T-61-067 · kod-ryadok · рядок 235
+
+**Книга каже, дослівно:**
+
+> povidomyty_pro_vtratu(i);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-068 sha:ce0827f5 src:manual/61-proj-kanal.md:238 klas:F -->
+### T-61-068 · kod-ryadok · рядок 238
+
+**Книга каже, дослівно:**
+
+> vTaskDelay(pdMS_TO_TICKS(10000));
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-61-069 sha:675401be src:manual/61-proj-kanal.md:243 klas:F -->
+### T-61-069 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -679,8 +1107,8 @@
 
 ---
 
-<!-- fc id:T-61-038 sha:916b3a63 src:manual/61-proj-kanal.md:243 klas:F -->
-### T-61-038 · proza · рядок 243
+<!-- fc id:T-61-070 sha:916b3a63 src:manual/61-proj-kanal.md:243 klas:F -->
+### T-61-070 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -692,8 +1120,8 @@
 
 ---
 
-<!-- fc id:T-61-039 sha:12d05c66 src:manual/61-proj-kanal.md:249 klas:F -->
-### T-61-039 · proza · рядок 249
+<!-- fc id:T-61-071 sha:12d05c66 src:manual/61-proj-kanal.md:249 klas:F -->
+### T-61-071 · proza · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -705,8 +1133,8 @@
 
 ---
 
-<!-- fc id:T-61-040 sha:20f218a3 src:manual/61-proj-kanal.md:249 klas:F -->
-### T-61-040 · proza · рядок 249
+<!-- fc id:T-61-072 sha:20f218a3 src:manual/61-proj-kanal.md:249 klas:F -->
+### T-61-072 · proza · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -718,8 +1146,8 @@
 
 ---
 
-<!-- fc id:T-61-041 sha:3d292935 src:manual/61-proj-kanal.md:253 klas:F -->
-### T-61-041 · proza · рядок 253
+<!-- fc id:T-61-073 sha:3d292935 src:manual/61-proj-kanal.md:253 klas:F -->
+### T-61-073 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -731,8 +1159,8 @@
 
 ---
 
-<!-- fc id:T-61-042 sha:6d5cc616 src:manual/61-proj-kanal.md:258 klas:F -->
-### T-61-042 · proza · рядок 258
+<!-- fc id:T-61-074 sha:6d5cc616 src:manual/61-proj-kanal.md:258 klas:F -->
+### T-61-074 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -744,8 +1172,8 @@
 
 ---
 
-<!-- fc id:T-61-043 sha:e85b1b17 src:manual/61-proj-kanal.md:260 klas:F -->
-### T-61-043 · proza · рядок 260
+<!-- fc id:T-61-075 sha:e85b1b17 src:manual/61-proj-kanal.md:260 klas:F -->
+### T-61-075 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -757,8 +1185,8 @@
 
 ---
 
-<!-- fc id:T-61-044 sha:a4a5cb00 src:manual/61-proj-kanal.md:263 klas:F -->
-### T-61-044 · proza · рядок 263
+<!-- fc id:T-61-076 sha:a4a5cb00 src:manual/61-proj-kanal.md:263 klas:F -->
+### T-61-076 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -770,8 +1198,8 @@
 
 ---
 
-<!-- fc id:T-61-045 sha:54e08390 src:manual/61-proj-kanal.md:263 klas:F -->
-### T-61-045 · proza · рядок 263
+<!-- fc id:T-61-077 sha:54e08390 src:manual/61-proj-kanal.md:263 klas:F -->
+### T-61-077 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -783,8 +1211,8 @@
 
 ---
 
-<!-- fc id:T-61-046 sha:4d07d0f3 src:manual/61-proj-kanal.md:270 klas:F -->
-### T-61-046 · proza · рядок 270
+<!-- fc id:T-61-078 sha:4d07d0f3 src:manual/61-proj-kanal.md:270 klas:F -->
+### T-61-078 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -796,8 +1224,8 @@
 
 ---
 
-<!-- fc id:T-61-047 sha:dd7135d0 src:manual/61-proj-kanal.md:270 klas:F -->
-### T-61-047 · proza · рядок 270
+<!-- fc id:T-61-079 sha:dd7135d0 src:manual/61-proj-kanal.md:270 klas:F -->
+### T-61-079 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -809,8 +1237,8 @@
 
 ---
 
-<!-- fc id:T-61-048 sha:76b1afa6 src:manual/61-proj-kanal.md:270 klas:F -->
-### T-61-048 · proza · рядок 270
+<!-- fc id:T-61-080 sha:76b1afa6 src:manual/61-proj-kanal.md:270 klas:F -->
+### T-61-080 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -822,8 +1250,8 @@
 
 ---
 
-<!-- fc id:T-61-049 sha:198c83a8 src:manual/61-proj-kanal.md:270 klas:F -->
-### T-61-049 · proza · рядок 270
+<!-- fc id:T-61-081 sha:198c83a8 src:manual/61-proj-kanal.md:270 klas:F -->
+### T-61-081 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -835,8 +1263,8 @@
 
 ---
 
-<!-- fc id:T-61-050 sha:746d62bc src:manual/61-proj-kanal.md:270 klas:F -->
-### T-61-050 · proza · рядок 270
+<!-- fc id:T-61-082 sha:746d62bc src:manual/61-proj-kanal.md:270 klas:F -->
+### T-61-082 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -848,8 +1276,8 @@
 
 ---
 
-<!-- fc id:T-61-051 sha:db90849f src:manual/61-proj-kanal.md:270 klas:F -->
-### T-61-051 · proza · рядок 270
+<!-- fc id:T-61-083 sha:db90849f src:manual/61-proj-kanal.md:270 klas:F -->
+### T-61-083 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -861,8 +1289,8 @@
 
 ---
 
-<!-- fc id:T-61-052 sha:d2b37c0f src:manual/61-proj-kanal.md:281 klas:F -->
-### T-61-052 · proza · рядок 281
+<!-- fc id:T-61-084 sha:d2b37c0f src:manual/61-proj-kanal.md:281 klas:F -->
+### T-61-084 · proza · рядок 281
 
 **Книга каже, дослівно:**
 

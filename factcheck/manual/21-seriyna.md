@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/21-seriyna.md`
 
-Одиниць твердження: **73**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **91**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -89,8 +89,21 @@
 
 ---
 
-<!-- fc id:T-21-007 sha:99dac3f2 src:manual/21-seriyna.md:27 klas:F -->
-### T-21-007 · proza · рядок 27
+<!-- fc id:T-21-007 sha:d650ca01 src:manual/21-seriyna.md:21 klas:F -->
+### T-21-007 · kod-ryadok · рядок 21
+
+**Книга каже, дослівно:**
+
+> esptool merge-bin -o vyrib-v1.4.bin --flash-mode dio \
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-008 sha:99dac3f2 src:manual/21-seriyna.md:27 klas:F -->
+### T-21-008 · proza · рядок 27
 
 **Книга каже, дослівно:**
 
@@ -102,8 +115,8 @@
 
 ---
 
-<!-- fc id:T-21-008 sha:7c27876f src:manual/21-seriyna.md:29 klas:F -->
-### T-21-008 · kod · рядок 29
+<!-- fc id:T-21-009 sha:7c27876f src:manual/21-seriyna.md:29 klas:F -->
+### T-21-009 · kod · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -117,8 +130,21 @@
 
 ---
 
-<!-- fc id:T-21-009 sha:d76a9957 src:manual/21-seriyna.md:33 klas:F -->
-### T-21-009 · proza · рядок 33
+<!-- fc id:T-21-010 sha:060d1904 src:manual/21-seriyna.md:30 klas:F -->
+### T-21-010 · kod-ryadok · рядок 30
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.4.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-011 sha:d76a9957 src:manual/21-seriyna.md:33 klas:F -->
+### T-21-011 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -130,8 +156,8 @@
 
 ---
 
-<!-- fc id:T-21-010 sha:378d2fc5 src:manual/21-seriyna.md:37 klas:F -->
-### T-21-010 · proza · рядок 37
+<!-- fc id:T-21-012 sha:378d2fc5 src:manual/21-seriyna.md:37 klas:F -->
+### T-21-012 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -143,8 +169,8 @@
 
 ---
 
-<!-- fc id:T-21-011 sha:27deca81 src:manual/21-seriyna.md:37 klas:F -->
-### T-21-011 · proza · рядок 37
+<!-- fc id:T-21-013 sha:27deca81 src:manual/21-seriyna.md:37 klas:F -->
+### T-21-013 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -156,8 +182,8 @@
 
 ---
 
-<!-- fc id:T-21-012 sha:a6125283 src:manual/21-seriyna.md:37 klas:F -->
-### T-21-012 · proza · рядок 37
+<!-- fc id:T-21-014 sha:a6125283 src:manual/21-seriyna.md:37 klas:F -->
+### T-21-014 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -169,8 +195,8 @@
 
 ---
 
-<!-- fc id:T-21-013 sha:ac7a1ba1 src:manual/21-seriyna.md:45 klas:F -->
-### T-21-013 · proza · рядок 45
+<!-- fc id:T-21-015 sha:ac7a1ba1 src:manual/21-seriyna.md:45 klas:F -->
+### T-21-015 · proza · рядок 45
 
 **Книга каже, дослівно:**
 
@@ -182,8 +208,8 @@
 
 ---
 
-<!-- fc id:T-21-014 sha:01a36707 src:manual/21-seriyna.md:45 klas:F -->
-### T-21-014 · proza · рядок 45
+<!-- fc id:T-21-016 sha:01a36707 src:manual/21-seriyna.md:45 klas:F -->
+### T-21-016 · proza · рядок 45
 
 **Книга каже, дослівно:**
 
@@ -195,8 +221,8 @@
 
 ---
 
-<!-- fc id:T-21-015 sha:41cc9c7f src:manual/21-seriyna.md:48 klas:F -->
-### T-21-015 · kod · рядок 48
+<!-- fc id:T-21-017 sha:41cc9c7f src:manual/21-seriyna.md:48 klas:F -->
+### T-21-017 · kod · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -218,8 +244,47 @@
 
 ---
 
-<!-- fc id:T-21-016 sha:270a6061 src:manual/21-seriyna.md:60 klas:F -->
-### T-21-016 · proza · рядок 60
+<!-- fc id:T-21-018 sha:23224667 src:manual/21-seriyna.md:54 klas:F -->
+### T-21-018 · kod-ryadok · рядок 54
+
+**Книга каже, дослівно:**
+
+> esptool --port "$PORT" --baud 460800 write-flash -z 0x0 "$IMAGE"
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-019 sha:1442de15 src:manual/21-seriyna.md:55 klas:F -->
+### T-21-019 · kod-ryadok · рядок 55
+
+**Книга каже, дослівно:**
+
+> esptool --port "$PORT" verify-flash 0x0 "$IMAGE"
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-020 sha:e7dfc363 src:manual/21-seriyna.md:56 klas:F -->
+### T-21-020 · kod-ryadok · рядок 56
+
+**Книга каже, дослівно:**
+
+> esptool --port "$PORT" chip-id | grep -i "MAC:"
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-021 sha:270a6061 src:manual/21-seriyna.md:60 klas:F -->
+### T-21-021 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -231,8 +296,8 @@
 
 ---
 
-<!-- fc id:T-21-017 sha:12bbf3c5 src:manual/21-seriyna.md:60 klas:F -->
-### T-21-017 · proza · рядок 60
+<!-- fc id:T-21-022 sha:12bbf3c5 src:manual/21-seriyna.md:60 klas:F -->
+### T-21-022 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -244,8 +309,8 @@
 
 ---
 
-<!-- fc id:T-21-018 sha:42368b26 src:manual/21-seriyna.md:60 klas:F -->
-### T-21-018 · proza · рядок 60
+<!-- fc id:T-21-023 sha:42368b26 src:manual/21-seriyna.md:60 klas:F -->
+### T-21-023 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -257,8 +322,8 @@
 
 ---
 
-<!-- fc id:T-21-019 sha:16350670 src:manual/21-seriyna.md:60 klas:F -->
-### T-21-019 · proza · рядок 60
+<!-- fc id:T-21-024 sha:16350670 src:manual/21-seriyna.md:60 klas:F -->
+### T-21-024 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -270,8 +335,8 @@
 
 ---
 
-<!-- fc id:T-21-020 sha:e3f39fae src:manual/21-seriyna.md:67 klas:F -->
-### T-21-020 · proza · рядок 67
+<!-- fc id:T-21-025 sha:e3f39fae src:manual/21-seriyna.md:67 klas:F -->
+### T-21-025 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -283,8 +348,8 @@
 
 ---
 
-<!-- fc id:T-21-021 sha:d1d7cedd src:manual/21-seriyna.md:67 klas:F -->
-### T-21-021 · proza · рядок 67
+<!-- fc id:T-21-026 sha:d1d7cedd src:manual/21-seriyna.md:67 klas:F -->
+### T-21-026 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -296,8 +361,8 @@
 
 ---
 
-<!-- fc id:T-21-022 sha:ddc59055 src:manual/21-seriyna.md:70 klas:F -->
-### T-21-022 · proza · рядок 70
+<!-- fc id:T-21-027 sha:ddc59055 src:manual/21-seriyna.md:70 klas:F -->
+### T-21-027 · proza · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -309,8 +374,8 @@
 
 ---
 
-<!-- fc id:T-21-023 sha:1d35be73 src:manual/21-seriyna.md:70 klas:F -->
-### T-21-023 · proza · рядок 70
+<!-- fc id:T-21-028 sha:1d35be73 src:manual/21-seriyna.md:70 klas:F -->
+### T-21-028 · proza · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -322,8 +387,8 @@
 
 ---
 
-<!-- fc id:T-21-024 sha:a414fea1 src:manual/21-seriyna.md:70 klas:F -->
-### T-21-024 · proza · рядок 70
+<!-- fc id:T-21-029 sha:a414fea1 src:manual/21-seriyna.md:70 klas:F -->
+### T-21-029 · proza · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -335,8 +400,8 @@
 
 ---
 
-<!-- fc id:T-21-025 sha:c6467fae src:manual/21-seriyna.md:75 klas:F -->
-### T-21-025 · proza · рядок 75
+<!-- fc id:T-21-030 sha:c6467fae src:manual/21-seriyna.md:75 klas:F -->
+### T-21-030 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -348,8 +413,8 @@
 
 ---
 
-<!-- fc id:T-21-026 sha:621d4059 src:manual/21-seriyna.md:79 klas:F -->
-### T-21-026 · proza · рядок 79
+<!-- fc id:T-21-031 sha:621d4059 src:manual/21-seriyna.md:79 klas:F -->
+### T-21-031 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -361,8 +426,8 @@
 
 ---
 
-<!-- fc id:T-21-027 sha:14a2790e src:manual/21-seriyna.md:79 klas:F -->
-### T-21-027 · proza · рядок 79
+<!-- fc id:T-21-032 sha:14a2790e src:manual/21-seriyna.md:79 klas:F -->
+### T-21-032 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -374,8 +439,8 @@
 
 ---
 
-<!-- fc id:T-21-028 sha:432b092c src:manual/21-seriyna.md:79 klas:F -->
-### T-21-028 · proza · рядок 79
+<!-- fc id:T-21-033 sha:432b092c src:manual/21-seriyna.md:79 klas:F -->
+### T-21-033 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -387,8 +452,8 @@
 
 ---
 
-<!-- fc id:T-21-029 sha:1a3a9559 src:manual/21-seriyna.md:87 klas:F -->
-### T-21-029 · proza · рядок 87
+<!-- fc id:T-21-034 sha:1a3a9559 src:manual/21-seriyna.md:87 klas:F -->
+### T-21-034 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -400,8 +465,8 @@
 
 ---
 
-<!-- fc id:T-21-030 sha:6c7e3e50 src:manual/21-seriyna.md:87 klas:F -->
-### T-21-030 · proza · рядок 87
+<!-- fc id:T-21-035 sha:6c7e3e50 src:manual/21-seriyna.md:87 klas:F -->
+### T-21-035 · proza · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -413,8 +478,8 @@
 
 ---
 
-<!-- fc id:T-21-031 sha:3140d22c src:manual/21-seriyna.md:92 klas:F -->
-### T-21-031 · proza · рядок 92
+<!-- fc id:T-21-036 sha:3140d22c src:manual/21-seriyna.md:92 klas:F -->
+### T-21-036 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -426,8 +491,8 @@
 
 ---
 
-<!-- fc id:T-21-032 sha:1cfc3ebd src:manual/21-seriyna.md:94 klas:F -->
-### T-21-032 · proza · рядок 94
+<!-- fc id:T-21-037 sha:1cfc3ebd src:manual/21-seriyna.md:94 klas:F -->
+### T-21-037 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -439,8 +504,8 @@
 
 ---
 
-<!-- fc id:T-21-033 sha:ac0e1bb8 src:manual/21-seriyna.md:94 klas:F -->
-### T-21-033 · proza · рядок 94
+<!-- fc id:T-21-038 sha:ac0e1bb8 src:manual/21-seriyna.md:94 klas:F -->
+### T-21-038 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -452,8 +517,8 @@
 
 ---
 
-<!-- fc id:T-21-034 sha:c50488dc src:manual/21-seriyna.md:96 klas:F -->
-### T-21-034 · proza · рядок 96
+<!-- fc id:T-21-039 sha:c50488dc src:manual/21-seriyna.md:96 klas:F -->
+### T-21-039 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -465,8 +530,8 @@
 
 ---
 
-<!-- fc id:T-21-035 sha:5ee74ccf src:manual/21-seriyna.md:96 klas:F -->
-### T-21-035 · proza · рядок 96
+<!-- fc id:T-21-040 sha:5ee74ccf src:manual/21-seriyna.md:96 klas:F -->
+### T-21-040 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -478,8 +543,8 @@
 
 ---
 
-<!-- fc id:T-21-036 sha:8fbe10a5 src:manual/21-seriyna.md:99 klas:F -->
-### T-21-036 · proza · рядок 99
+<!-- fc id:T-21-041 sha:8fbe10a5 src:manual/21-seriyna.md:99 klas:F -->
+### T-21-041 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -491,8 +556,8 @@
 
 ---
 
-<!-- fc id:T-21-037 sha:fc2721f0 src:manual/21-seriyna.md:101 klas:F -->
-### T-21-037 · kod · рядок 101
+<!-- fc id:T-21-042 sha:fc2721f0 src:manual/21-seriyna.md:101 klas:F -->
+### T-21-042 · kod · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -507,8 +572,34 @@
 
 ---
 
-<!-- fc id:T-21-038 sha:b0a670d8 src:manual/21-seriyna.md:106 klas:F -->
-### T-21-038 · proza · рядок 106
+<!-- fc id:T-21-043 sha:aa33e38e src:manual/21-seriyna.md:102 klas:F -->
+### T-21-043 · kod-ryadok · рядок 102
+
+**Книга каже, дослівно:**
+
+> nvs_partition_gen.py generate config-0042.csv nvs-0042.bin 0x6000
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-044 sha:dab0dee5 src:manual/21-seriyna.md:103 klas:F -->
+### T-21-044 · kod-ryadok · рядок 103
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 write-flash 0x9000 nvs-0042.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-045 sha:b0a670d8 src:manual/21-seriyna.md:106 klas:F -->
+### T-21-045 · proza · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -520,8 +611,8 @@
 
 ---
 
-<!-- fc id:T-21-039 sha:a441973a src:manual/21-seriyna.md:109 klas:F -->
-### T-21-039 · proza · рядок 109
+<!-- fc id:T-21-046 sha:a441973a src:manual/21-seriyna.md:109 klas:F -->
+### T-21-046 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -533,8 +624,8 @@
 
 ---
 
-<!-- fc id:T-21-040 sha:168c664c src:manual/21-seriyna.md:109 klas:F -->
-### T-21-040 · proza · рядок 109
+<!-- fc id:T-21-047 sha:168c664c src:manual/21-seriyna.md:109 klas:F -->
+### T-21-047 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -546,8 +637,8 @@
 
 ---
 
-<!-- fc id:T-21-041 sha:82ff65b0 src:manual/21-seriyna.md:115 klas:F -->
-### T-21-041 · proza · рядок 115
+<!-- fc id:T-21-048 sha:82ff65b0 src:manual/21-seriyna.md:115 klas:F -->
+### T-21-048 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -559,8 +650,8 @@
 
 ---
 
-<!-- fc id:T-21-042 sha:8aa5ff33 src:manual/21-seriyna.md:115 klas:F -->
-### T-21-042 · proza · рядок 115
+<!-- fc id:T-21-049 sha:8aa5ff33 src:manual/21-seriyna.md:115 klas:F -->
+### T-21-049 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -572,8 +663,8 @@
 
 ---
 
-<!-- fc id:T-21-043 sha:5aed5cc9 src:manual/21-seriyna.md:115 klas:F -->
-### T-21-043 · proza · рядок 115
+<!-- fc id:T-21-050 sha:5aed5cc9 src:manual/21-seriyna.md:115 klas:F -->
+### T-21-050 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -585,8 +676,8 @@
 
 ---
 
-<!-- fc id:T-21-044 sha:7afef3b1 src:manual/21-seriyna.md:123 klas:F -->
-### T-21-044 · proza · рядок 123
+<!-- fc id:T-21-051 sha:7afef3b1 src:manual/21-seriyna.md:123 klas:F -->
+### T-21-051 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -598,8 +689,8 @@
 
 ---
 
-<!-- fc id:T-21-045 sha:80b6708b src:manual/21-seriyna.md:123 klas:F -->
-### T-21-045 · proza · рядок 123
+<!-- fc id:T-21-052 sha:80b6708b src:manual/21-seriyna.md:123 klas:F -->
+### T-21-052 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -611,8 +702,8 @@
 
 ---
 
-<!-- fc id:T-21-046 sha:581413be src:manual/21-seriyna.md:126 klas:F -->
-### T-21-046 · proza · рядок 126
+<!-- fc id:T-21-053 sha:581413be src:manual/21-seriyna.md:126 klas:F -->
+### T-21-053 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -624,8 +715,8 @@
 
 ---
 
-<!-- fc id:T-21-047 sha:b8ed94db src:manual/21-seriyna.md:130 klas:F -->
-### T-21-047 · proza · рядок 130
+<!-- fc id:T-21-054 sha:b8ed94db src:manual/21-seriyna.md:130 klas:F -->
+### T-21-054 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -637,8 +728,8 @@
 
 ---
 
-<!-- fc id:T-21-048 sha:d888373f src:manual/21-seriyna.md:130 klas:F -->
-### T-21-048 · proza · рядок 130
+<!-- fc id:T-21-055 sha:d888373f src:manual/21-seriyna.md:130 klas:F -->
+### T-21-055 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -650,8 +741,8 @@
 
 ---
 
-<!-- fc id:T-21-049 sha:669ee36d src:manual/21-seriyna.md:135 klas:F -->
-### T-21-049 · proza · рядок 135
+<!-- fc id:T-21-056 sha:669ee36d src:manual/21-seriyna.md:135 klas:F -->
+### T-21-056 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -663,8 +754,8 @@
 
 ---
 
-<!-- fc id:T-21-050 sha:75def2ca src:manual/21-seriyna.md:137 klas:F -->
-### T-21-050 · tablycya · рядок 137
+<!-- fc id:T-21-057 sha:75def2ca src:manual/21-seriyna.md:137 klas:F -->
+### T-21-057 · tablycya-shapka · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -676,12 +767,12 @@
 
 ---
 
-<!-- fc id:T-21-051 sha:0152da49 src:manual/21-seriyna.md:139 klas:F -->
-### T-21-051 · tablycya · рядок 139
+<!-- fc id:T-21-058 sha:e706eb63 src:manual/21-seriyna.md:138 klas:F -->
+### T-21-058 · komirka · рядок 138
 
 **Книга каже, дослівно:**
 
-> | 0041 | `A0:B7:…:14` | v1.4 | 2026-08-26 | OK | |
+> 0041 · MAC → `A0:B7:…:14`
 
 **Доказ**
 
@@ -689,12 +780,12 @@
 
 ---
 
-<!-- fc id:T-21-052 sha:d5559b1a src:manual/21-seriyna.md:140 klas:F -->
-### T-21-052 · tablycya · рядок 140
+<!-- fc id:T-21-059 sha:a8bb95c8 src:manual/21-seriyna.md:138 klas:F -->
+### T-21-059 · komirka · рядок 138
 
 **Книга каже, дослівно:**
 
-> | 0042 | `A0:B7:…:2C` | v1.4 | 2026-08-26 | OK | корпус подряпаний |
+> 0041 · Версія → v1.4
 
 **Доказ**
 
@@ -702,12 +793,12 @@
 
 ---
 
-<!-- fc id:T-21-053 sha:cd291094 src:manual/21-seriyna.md:141 klas:F -->
-### T-21-053 · tablycya · рядок 141
+<!-- fc id:T-21-060 sha:e4e73586 src:manual/21-seriyna.md:138 klas:F -->
+### T-21-060 · komirka · рядок 138
 
 **Книга каже, дослівно:**
 
-> | 0043 | `A0:B7:…:31` | v1.4 | 2026-08-26 | **брак** | не стартує, модуль |
+> 0041 · Дата → 2026-08-26
 
 **Доказ**
 
@@ -715,8 +806,151 @@
 
 ---
 
-<!-- fc id:T-21-054 sha:ee027464 src:manual/21-seriyna.md:143 klas:F -->
-### T-21-054 · proza · рядок 143
+<!-- fc id:T-21-061 sha:29d3900f src:manual/21-seriyna.md:138 klas:F -->
+### T-21-061 · komirka · рядок 138
+
+**Книга каже, дослівно:**
+
+> 0041 · Контроль → OK
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-062 sha:75799caf src:manual/21-seriyna.md:139 klas:F -->
+### T-21-062 · komirka · рядок 139
+
+**Книга каже, дослівно:**
+
+> 0042 · MAC → `A0:B7:…:2C`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-063 sha:abb9bd4b src:manual/21-seriyna.md:139 klas:F -->
+### T-21-063 · komirka · рядок 139
+
+**Книга каже, дослівно:**
+
+> 0042 · Версія → v1.4
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-064 sha:e2d0d5e3 src:manual/21-seriyna.md:139 klas:F -->
+### T-21-064 · komirka · рядок 139
+
+**Книга каже, дослівно:**
+
+> 0042 · Дата → 2026-08-26
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-065 sha:f7d5d679 src:manual/21-seriyna.md:139 klas:F -->
+### T-21-065 · komirka · рядок 139
+
+**Книга каже, дослівно:**
+
+> 0042 · Контроль → OK
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-066 sha:c5831a43 src:manual/21-seriyna.md:139 klas:F -->
+### T-21-066 · komirka · рядок 139
+
+**Книга каже, дослівно:**
+
+> 0042 · Примітка → корпус подряпаний
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-067 sha:79ce9a1f src:manual/21-seriyna.md:140 klas:F -->
+### T-21-067 · komirka · рядок 140
+
+**Книга каже, дослівно:**
+
+> 0043 · MAC → `A0:B7:…:31`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-068 sha:9f488b42 src:manual/21-seriyna.md:140 klas:F -->
+### T-21-068 · komirka · рядок 140
+
+**Книга каже, дослівно:**
+
+> 0043 · Версія → v1.4
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-069 sha:a6590e77 src:manual/21-seriyna.md:140 klas:F -->
+### T-21-069 · komirka · рядок 140
+
+**Книга каже, дослівно:**
+
+> 0043 · Дата → 2026-08-26
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-070 sha:37c1710c src:manual/21-seriyna.md:140 klas:F -->
+### T-21-070 · komirka · рядок 140
+
+**Книга каже, дослівно:**
+
+> 0043 · Контроль → **брак**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-071 sha:4688c6c2 src:manual/21-seriyna.md:140 klas:F -->
+### T-21-071 · komirka · рядок 140
+
+**Книга каже, дослівно:**
+
+> 0043 · Примітка → не стартує, модуль
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-21-072 sha:ee027464 src:manual/21-seriyna.md:143 klas:F -->
+### T-21-072 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -728,8 +962,8 @@
 
 ---
 
-<!-- fc id:T-21-055 sha:f8360aa5 src:manual/21-seriyna.md:147 klas:F -->
-### T-21-055 · proza · рядок 147
+<!-- fc id:T-21-073 sha:f8360aa5 src:manual/21-seriyna.md:147 klas:F -->
+### T-21-073 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -741,8 +975,8 @@
 
 ---
 
-<!-- fc id:T-21-056 sha:2e3ee5bc src:manual/21-seriyna.md:152 klas:F -->
-### T-21-056 · proza · рядок 152
+<!-- fc id:T-21-074 sha:2e3ee5bc src:manual/21-seriyna.md:152 klas:F -->
+### T-21-074 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -754,8 +988,8 @@
 
 ---
 
-<!-- fc id:T-21-057 sha:6b4d2e33 src:manual/21-seriyna.md:152 klas:F -->
-### T-21-057 · proza · рядок 152
+<!-- fc id:T-21-075 sha:6b4d2e33 src:manual/21-seriyna.md:152 klas:F -->
+### T-21-075 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -767,8 +1001,8 @@
 
 ---
 
-<!-- fc id:T-21-058 sha:775f6652 src:manual/21-seriyna.md:152 klas:F -->
-### T-21-058 · proza · рядок 152
+<!-- fc id:T-21-076 sha:775f6652 src:manual/21-seriyna.md:152 klas:F -->
+### T-21-076 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -780,8 +1014,8 @@
 
 ---
 
-<!-- fc id:T-21-059 sha:f5a053c0 src:manual/21-seriyna.md:161 klas:F -->
-### T-21-059 · proza · рядок 161
+<!-- fc id:T-21-077 sha:f5a053c0 src:manual/21-seriyna.md:161 klas:F -->
+### T-21-077 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -793,8 +1027,8 @@
 
 ---
 
-<!-- fc id:T-21-060 sha:c5052027 src:manual/21-seriyna.md:161 klas:F -->
-### T-21-060 · proza · рядок 161
+<!-- fc id:T-21-078 sha:c5052027 src:manual/21-seriyna.md:161 klas:F -->
+### T-21-078 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -806,8 +1040,8 @@
 
 ---
 
-<!-- fc id:T-21-061 sha:7b5f5132 src:manual/21-seriyna.md:164 klas:F -->
-### T-21-061 · proza · рядок 164
+<!-- fc id:T-21-079 sha:7b5f5132 src:manual/21-seriyna.md:164 klas:F -->
+### T-21-079 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -819,8 +1053,8 @@
 
 ---
 
-<!-- fc id:T-21-062 sha:03a8a283 src:manual/21-seriyna.md:164 klas:F -->
-### T-21-062 · proza · рядок 164
+<!-- fc id:T-21-080 sha:03a8a283 src:manual/21-seriyna.md:164 klas:F -->
+### T-21-080 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -832,8 +1066,8 @@
 
 ---
 
-<!-- fc id:T-21-063 sha:73cabe58 src:manual/21-seriyna.md:164 klas:F -->
-### T-21-063 · proza · рядок 164
+<!-- fc id:T-21-081 sha:73cabe58 src:manual/21-seriyna.md:164 klas:F -->
+### T-21-081 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -845,8 +1079,8 @@
 
 ---
 
-<!-- fc id:T-21-064 sha:74a5c7c5 src:manual/21-seriyna.md:169 klas:F -->
-### T-21-064 · proza · рядок 169
+<!-- fc id:T-21-082 sha:74a5c7c5 src:manual/21-seriyna.md:169 klas:F -->
+### T-21-082 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -858,8 +1092,8 @@
 
 ---
 
-<!-- fc id:T-21-065 sha:8bcfad00 src:manual/21-seriyna.md:172 klas:F -->
-### T-21-065 · proza · рядок 172
+<!-- fc id:T-21-083 sha:8bcfad00 src:manual/21-seriyna.md:172 klas:F -->
+### T-21-083 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -871,8 +1105,8 @@
 
 ---
 
-<!-- fc id:T-21-066 sha:eecd5522 src:manual/21-seriyna.md:172 klas:F -->
-### T-21-066 · proza · рядок 172
+<!-- fc id:T-21-084 sha:eecd5522 src:manual/21-seriyna.md:172 klas:F -->
+### T-21-084 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -884,8 +1118,8 @@
 
 ---
 
-<!-- fc id:T-21-067 sha:850d2dde src:manual/21-seriyna.md:177 klas:F -->
-### T-21-067 · proza · рядок 177
+<!-- fc id:T-21-085 sha:850d2dde src:manual/21-seriyna.md:177 klas:F -->
+### T-21-085 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -897,8 +1131,8 @@
 
 ---
 
-<!-- fc id:T-21-068 sha:69e2ed79 src:manual/21-seriyna.md:177 klas:F -->
-### T-21-068 · proza · рядок 177
+<!-- fc id:T-21-086 sha:69e2ed79 src:manual/21-seriyna.md:177 klas:F -->
+### T-21-086 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -910,8 +1144,8 @@
 
 ---
 
-<!-- fc id:T-21-069 sha:39f098a2 src:manual/21-seriyna.md:184 klas:F -->
-### T-21-069 · proza · рядок 184
+<!-- fc id:T-21-087 sha:39f098a2 src:manual/21-seriyna.md:184 klas:F -->
+### T-21-087 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -923,8 +1157,8 @@
 
 ---
 
-<!-- fc id:T-21-070 sha:81a87405 src:manual/21-seriyna.md:186 klas:F -->
-### T-21-070 · proza · рядок 186
+<!-- fc id:T-21-088 sha:81a87405 src:manual/21-seriyna.md:186 klas:F -->
+### T-21-088 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -936,8 +1170,8 @@
 
 ---
 
-<!-- fc id:T-21-071 sha:26048fe4 src:manual/21-seriyna.md:188 klas:F -->
-### T-21-071 · proza · рядок 188
+<!-- fc id:T-21-089 sha:26048fe4 src:manual/21-seriyna.md:188 klas:F -->
+### T-21-089 · proza · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -949,8 +1183,8 @@
 
 ---
 
-<!-- fc id:T-21-072 sha:ade9bd68 src:manual/21-seriyna.md:188 klas:F -->
-### T-21-072 · proza · рядок 188
+<!-- fc id:T-21-090 sha:ade9bd68 src:manual/21-seriyna.md:188 klas:F -->
+### T-21-090 · proza · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -962,8 +1196,8 @@
 
 ---
 
-<!-- fc id:T-21-073 sha:fd3cdf97 src:manual/21-seriyna.md:191 klas:F -->
-### T-21-073 · proza · рядок 191
+<!-- fc id:T-21-091 sha:fd3cdf97 src:manual/21-seriyna.md:191 klas:F -->
+### T-21-091 · proza · рядок 191
 
 **Книга каже, дослівно:**
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/d-panik.md`
 
-Одиниць твердження: **83**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **130**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -46,7 +46,7 @@
 ---
 
 <!-- fc id:T-D-004 sha:1b3814f6 src:dodatky/d-panik.md:10 klas:F -->
-### T-D-004 · tablycya · рядок 10
+### T-D-004 · tablycya-shapka · рядок 10
 
 **Книга каже, дослівно:**
 
@@ -58,12 +58,12 @@
 
 ---
 
-<!-- fc id:T-D-005 sha:fc6448c4 src:dodatky/d-panik.md:12 klas:A -->
-### T-D-005 · tablycya · рядок 12
+<!-- fc id:T-D-005 sha:508894ad src:dodatky/d-panik.md:11 klas:A -->
+### T-D-005 · komirka · рядок 11
 
 **Книга каже, дослівно:**
 
-> | `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+> `0x1` · Назва → POWERON_RESET
 
 **Доказ**
 
@@ -94,12 +94,12 @@
 
 ---
 
-<!-- fc id:T-D-006 sha:29197176 src:dodatky/d-panik.md:13 klas:F -->
-### T-D-006 · tablycya · рядок 13
+<!-- fc id:T-D-006 sha:d090e5b8 src:dodatky/d-panik.md:11 klas:F -->
+### T-D-006 · komirka · рядок 11
 
 **Книга каже, дослівно:**
 
-> | `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+> `0x1` · Що сталося → подано живлення або `EN`
 
 **Доказ**
 
@@ -107,12 +107,12 @@
 
 ---
 
-<!-- fc id:T-D-007 sha:c99ce079 src:dodatky/d-panik.md:14 klas:F -->
-### T-D-007 · tablycya · рядок 14
+<!-- fc id:T-D-007 sha:7431c283 src:dodatky/d-panik.md:11 klas:F -->
+### T-D-007 · komirka · рядок 11
 
 **Книга каже, дослівно:**
 
-> | `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+> `0x1` · Що робити → норма
 
 **Доказ**
 
@@ -120,12 +120,12 @@
 
 ---
 
-<!-- fc id:T-D-008 sha:ee0ffa78 src:dodatky/d-panik.md:15 klas:F -->
-### T-D-008 · tablycya · рядок 15
+<!-- fc id:T-D-008 sha:1baef394 src:dodatky/d-panik.md:12 klas:F -->
+### T-D-008 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> | `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+> `0x3` · Назва → SW_RESET
 
 **Доказ**
 
@@ -133,12 +133,12 @@
 
 ---
 
-<!-- fc id:T-D-009 sha:12e15566 src:dodatky/d-panik.md:16 klas:F -->
-### T-D-009 · tablycya · рядок 16
+<!-- fc id:T-D-009 sha:16e24570 src:dodatky/d-panik.md:12 klas:F -->
+### T-D-009 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> | `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+> `0x3` · Що сталося → `esp_restart()` з коду
 
 **Доказ**
 
@@ -146,12 +146,142 @@
 
 ---
 
-<!-- fc id:T-D-010 sha:f18efcfe src:dodatky/d-panik.md:17 klas:A -->
-### T-D-010 · tablycya · рядок 17
+<!-- fc id:T-D-010 sha:03a89bab src:dodatky/d-panik.md:12 klas:F -->
+### T-D-010 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> | `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+> `0x3` · Що робити → норма, якщо ваша
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-011 sha:7add9e17 src:dodatky/d-panik.md:13 klas:F -->
+### T-D-011 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> `0x4` · Назва → OWDT_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-012 sha:3ae2fadd src:dodatky/d-panik.md:13 klas:F -->
+### T-D-012 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> `0x4` · Що сталося → застарілий watchdog
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-013 sha:b04df11d src:dodatky/d-panik.md:13 klas:F -->
+### T-D-013 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> `0x4` · Що робити → рідко
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-014 sha:60cc5d87 src:dodatky/d-panik.md:14 klas:F -->
+### T-D-014 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> `0x5` · Назва → DEEPSLEEP_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-015 sha:d01aac01 src:dodatky/d-panik.md:14 klas:F -->
+### T-D-015 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> `0x5` · Що сталося → прокинувся з deep sleep
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-016 sha:0f8056b3 src:dodatky/d-panik.md:14 klas:F -->
+### T-D-016 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> `0x5` · Що робити → норма
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-017 sha:6624efb1 src:dodatky/d-panik.md:15 klas:F -->
+### T-D-017 · komirka · рядок 15
+
+**Книга каже, дослівно:**
+
+> `0x6` · Назва → SDIO_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-018 sha:8a61920f src:dodatky/d-panik.md:15 klas:F -->
+### T-D-018 · komirka · рядок 15
+
+**Книга каже, дослівно:**
+
+> `0x6` · Що сталося → скидання модулем SLC
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-019 sha:31ae5bdb src:dodatky/d-panik.md:15 klas:F -->
+### T-D-019 · komirka · рядок 15
+
+**Книга каже, дослівно:**
+
+> `0x6` · Що робити → рідко
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-020 sha:b13c24c5 src:dodatky/d-panik.md:16 klas:A -->
+### T-D-020 · komirka · рядок 16
+
+**Книга каже, дослівно:**
+
+> `0x7` · Назва → TG0WDT_SYS_RESET
 
 **Доказ**
 
@@ -182,12 +312,12 @@
 
 ---
 
-<!-- fc id:T-D-011 sha:16eefa12 src:dodatky/d-panik.md:18 klas:F -->
-### T-D-011 · tablycya · рядок 18
+<!-- fc id:T-D-021 sha:3f69134f src:dodatky/d-panik.md:16 klas:F -->
+### T-D-021 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
-> | `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+> `0x7` · Що сталося → watchdog таймера 0
 
 **Доказ**
 
@@ -195,12 +325,12 @@
 
 ---
 
-<!-- fc id:T-D-012 sha:88a78bc6 src:dodatky/d-panik.md:19 klas:F -->
-### T-D-012 · tablycya · рядок 19
+<!-- fc id:T-D-022 sha:64d8d101 src:dodatky/d-panik.md:16 klas:F -->
+### T-D-022 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
-> | `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+> `0x7` · Що робити → розділ 32
 
 **Доказ**
 
@@ -208,12 +338,12 @@
 
 ---
 
-<!-- fc id:T-D-013 sha:2ea56592 src:dodatky/d-panik.md:20 klas:F -->
-### T-D-013 · tablycya · рядок 20
+<!-- fc id:T-D-023 sha:a4c80ac9 src:dodatky/d-panik.md:17 klas:F -->
+### T-D-023 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
-> | `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+> `0x8` · Назва → TG1WDT_SYS_RESET
 
 **Доказ**
 
@@ -221,12 +351,12 @@
 
 ---
 
-<!-- fc id:T-D-014 sha:06c8fc0b src:dodatky/d-panik.md:21 klas:F -->
-### T-D-014 · tablycya · рядок 21
+<!-- fc id:T-D-024 sha:3253c52a src:dodatky/d-panik.md:17 klas:F -->
+### T-D-024 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
-> | `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+> `0x8` · Що сталося → watchdog таймера 1
 
 **Доказ**
 
@@ -234,12 +364,142 @@
 
 ---
 
-<!-- fc id:T-D-015 sha:a2bcec85 src:dodatky/d-panik.md:22 klas:A -->
-### T-D-015 · tablycya · рядок 22
+<!-- fc id:T-D-025 sha:67e1a886 src:dodatky/d-panik.md:17 klas:F -->
+### T-D-025 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
-> | `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+> `0x8` · Що робити → розділ 32
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-026 sha:61c76aaf src:dodatky/d-panik.md:18 klas:F -->
+### T-D-026 · komirka · рядок 18
+
+**Книга каже, дослівно:**
+
+> `0x9` · Назва → RTCWDT_SYS_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-027 sha:9b884225 src:dodatky/d-panik.md:18 klas:F -->
+### T-D-027 · komirka · рядок 18
+
+**Книга каже, дослівно:**
+
+> `0x9` · Що сталося → RTC watchdog
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-028 sha:abc8094d src:dodatky/d-panik.md:18 klas:F -->
+### T-D-028 · komirka · рядок 18
+
+**Книга каже, дослівно:**
+
+> `0x9` · Що робити → розділ 32
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-029 sha:3c9dd369 src:dodatky/d-panik.md:19 klas:F -->
+### T-D-029 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> `0xa` · Назва → INTRUSION_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-030 sha:47e8e5d3 src:dodatky/d-panik.md:19 klas:F -->
+### T-D-030 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> `0xa` · Що сталося → детектор втручання
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-031 sha:9064117d src:dodatky/d-panik.md:19 klas:F -->
+### T-D-031 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> `0xa` · Що робити → рідко
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-032 sha:b1aea164 src:dodatky/d-panik.md:20 klas:F -->
+### T-D-032 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> `0xb` · Назва → TGWDT_CPU_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-033 sha:ffe03c46 src:dodatky/d-panik.md:20 klas:F -->
+### T-D-033 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> `0xb` · Що сталося → watchdog скинув ядро
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-034 sha:4184159d src:dodatky/d-panik.md:20 klas:F -->
+### T-D-034 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> `0xb` · Що робити → розділ 32
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-035 sha:9b73d7e0 src:dodatky/d-panik.md:21 klas:A -->
+### T-D-035 · komirka · рядок 21
+
+**Книга каже, дослівно:**
+
+> `0xc` · Назва → SW_CPU_RESET
 
 **Доказ**
 
@@ -270,12 +530,12 @@
 
 ---
 
-<!-- fc id:T-D-016 sha:29ac201d src:dodatky/d-panik.md:23 klas:F -->
-### T-D-016 · tablycya · рядок 23
+<!-- fc id:T-D-036 sha:382d166f src:dodatky/d-panik.md:21 klas:F -->
+### T-D-036 · komirka · рядок 21
 
 **Книга каже, дослівно:**
 
-> | `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+> `0xc` · Що сталося → програмне скидання ядра
 
 **Доказ**
 
@@ -283,12 +543,12 @@
 
 ---
 
-<!-- fc id:T-D-017 sha:8faec6c3 src:dodatky/d-panik.md:24 klas:F -->
-### T-D-017 · tablycya · рядок 24
+<!-- fc id:T-D-037 sha:63b241b6 src:dodatky/d-panik.md:21 klas:F -->
+### T-D-037 · komirka · рядок 21
 
 **Книга каже, дослівно:**
 
-> | `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+> `0xc` · Що робити → **типово після паніки**
 
 **Доказ**
 
@@ -296,12 +556,90 @@
 
 ---
 
-<!-- fc id:T-D-018 sha:013ea134 src:dodatky/d-panik.md:25 klas:A -->
-### T-D-018 · tablycya · рядок 25
+<!-- fc id:T-D-038 sha:b265b468 src:dodatky/d-panik.md:22 klas:F -->
+### T-D-038 · komirka · рядок 22
 
 **Книга каже, дослівно:**
 
-> | `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+> `0xd` · Назва → RTCWDT_CPU_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-039 sha:e72beb66 src:dodatky/d-panik.md:22 klas:F -->
+### T-D-039 · komirka · рядок 22
+
+**Книга каже, дослівно:**
+
+> `0xd` · Що сталося → RTC watchdog скинув ядро
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-040 sha:cc29d27d src:dodatky/d-panik.md:22 klas:F -->
+### T-D-040 · komirka · рядок 22
+
+**Книга каже, дослівно:**
+
+> `0xd` · Що робити → розділ 32
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-041 sha:5964cff8 src:dodatky/d-panik.md:23 klas:F -->
+### T-D-041 · komirka · рядок 23
+
+**Книга каже, дослівно:**
+
+> `0xe` · Назва → EXT_CPU_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-042 sha:111c70cc src:dodatky/d-panik.md:23 klas:F -->
+### T-D-042 · komirka · рядок 23
+
+**Книга каже, дослівно:**
+
+> `0xe` · Що сталося → APP CPU скинутий PRO CPU
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-043 sha:47b3fdc0 src:dodatky/d-panik.md:23 klas:F -->
+### T-D-043 · komirka · рядок 23
+
+**Книга каже, дослівно:**
+
+> `0xe` · Що робити → норма
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-044 sha:4f167746 src:dodatky/d-panik.md:24 klas:A -->
+### T-D-044 · komirka · рядок 24
+
+**Книга каже, дослівно:**
+
+> `0xf` · Назва → RTCWDT_BROWN_OUT_RESET
 
 **Доказ**
 
@@ -332,12 +670,12 @@
 
 ---
 
-<!-- fc id:T-D-019 sha:b5a4d389 src:dodatky/d-panik.md:26 klas:F -->
-### T-D-019 · tablycya · рядок 26
+<!-- fc id:T-D-045 sha:00c236fb src:dodatky/d-panik.md:24 klas:F -->
+### T-D-045 · komirka · рядок 24
 
 **Книга каже, дослівно:**
 
-> | `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+> `0xf` · Що сталося → **просіло живлення**
 
 **Доказ**
 
@@ -345,8 +683,60 @@
 
 ---
 
-<!-- fc id:T-D-020 sha:14e3db2f src:dodatky/d-panik.md:28 klas:F -->
-### T-D-020 · proza · рядок 28
+<!-- fc id:T-D-046 sha:3323a02f src:dodatky/d-panik.md:24 klas:F -->
+### T-D-046 · komirka · рядок 24
+
+**Книга каже, дослівно:**
+
+> `0xf` · Що робити → ⚡ розділ 06
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-047 sha:9338f26b src:dodatky/d-panik.md:25 klas:F -->
+### T-D-047 · komirka · рядок 25
+
+**Книга каже, дослівно:**
+
+> `0x10` · Назва → RTCWDT_RTC_RESET
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-048 sha:6938bd06 src:dodatky/d-panik.md:25 klas:F -->
+### T-D-048 · komirka · рядок 25
+
+**Книга каже, дослівно:**
+
+> `0x10` · Що сталося → RTC watchdog скинув усе
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-049 sha:1e2b3315 src:dodatky/d-panik.md:25 klas:F -->
+### T-D-049 · komirka · рядок 25
+
+**Книга каже, дослівно:**
+
+> `0x10` · Що робити → розділ 32
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-050 sha:14e3db2f src:dodatky/d-panik.md:28 klas:F -->
+### T-D-050 · proza · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -358,8 +748,8 @@
 
 ---
 
-<!-- fc id:T-D-021 sha:95099304 src:dodatky/d-panik.md:32 klas:F -->
-### T-D-021 · proza · рядок 32
+<!-- fc id:T-D-051 sha:95099304 src:dodatky/d-panik.md:32 klas:F -->
+### T-D-051 · proza · рядок 32
 
 **Книга каже, дослівно:**
 
@@ -371,8 +761,8 @@
 
 ---
 
-<!-- fc id:T-D-022 sha:0517766f src:dodatky/d-panik.md:32 klas:F -->
-### T-D-022 · proza · рядок 32
+<!-- fc id:T-D-052 sha:0517766f src:dodatky/d-panik.md:32 klas:F -->
+### T-D-052 · proza · рядок 32
 
 **Книга каже, дослівно:**
 
@@ -384,8 +774,8 @@
 
 ---
 
-<!-- fc id:T-D-023 sha:6f6a5a2e src:dodatky/d-panik.md:36 klas:F -->
-### T-D-023 · proza · рядок 36
+<!-- fc id:T-D-053 sha:6f6a5a2e src:dodatky/d-panik.md:36 klas:F -->
+### T-D-053 · proza · рядок 36
 
 **Книга каже, дослівно:**
 
@@ -397,8 +787,8 @@
 
 ---
 
-<!-- fc id:T-D-024 sha:a826fb3a src:dodatky/d-panik.md:36 klas:F -->
-### T-D-024 · proza · рядок 36
+<!-- fc id:T-D-054 sha:a826fb3a src:dodatky/d-panik.md:36 klas:F -->
+### T-D-054 · proza · рядок 36
 
 **Книга каже, дослівно:**
 
@@ -410,8 +800,8 @@
 
 ---
 
-<!-- fc id:T-D-025 sha:9789ed83 src:dodatky/d-panik.md:40 klas:F -->
-### T-D-025 · tablycya · рядок 40
+<!-- fc id:T-D-055 sha:9789ed83 src:dodatky/d-panik.md:40 klas:F -->
+### T-D-055 · tablycya · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -423,8 +813,8 @@
 
 ---
 
-<!-- fc id:T-D-026 sha:8e00aaa2 src:dodatky/d-panik.md:42 klas:F -->
-### T-D-026 · tablycya · рядок 42
+<!-- fc id:T-D-056 sha:8e00aaa2 src:dodatky/d-panik.md:42 klas:F -->
+### T-D-056 · tablycya · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -436,8 +826,8 @@
 
 ---
 
-<!-- fc id:T-D-027 sha:bb0d0fd7 src:dodatky/d-panik.md:43 klas:F -->
-### T-D-027 · tablycya · рядок 43
+<!-- fc id:T-D-057 sha:bb0d0fd7 src:dodatky/d-panik.md:43 klas:F -->
+### T-D-057 · tablycya · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -449,8 +839,8 @@
 
 ---
 
-<!-- fc id:T-D-028 sha:d39312ec src:dodatky/d-panik.md:47 klas:A -->
-### T-D-028 · kod · рядок 47
+<!-- fc id:T-D-058 sha:d39312ec src:dodatky/d-panik.md:47 klas:A -->
+### T-D-058 · kod · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -499,8 +889,44 @@
 
 ---
 
-<!-- fc id:T-D-029 sha:825633b5 src:dodatky/d-panik.md:63 klas:F -->
-### T-D-029 · proza · рядок 63
+<!-- fc id:T-D-059 sha:490ee98b src:dodatky/d-panik.md:48 klas:A -->
+### T-D-059 · kod-ryadok · рядок 48
+
+**Книга каже, дослівно:**
+
+> rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-D-060 sha:825633b5 src:dodatky/d-panik.md:63 klas:F -->
+### T-D-060 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -512,8 +938,8 @@
 
 ---
 
-<!-- fc id:T-D-030 sha:0ebdcddf src:dodatky/d-panik.md:67 klas:F -->
-### T-D-030 · proza · рядок 67
+<!-- fc id:T-D-061 sha:0ebdcddf src:dodatky/d-panik.md:67 klas:F -->
+### T-D-061 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -525,8 +951,8 @@
 
 ---
 
-<!-- fc id:T-D-031 sha:3d92627f src:dodatky/d-panik.md:67 klas:F -->
-### T-D-031 · proza · рядок 67
+<!-- fc id:T-D-062 sha:3d92627f src:dodatky/d-panik.md:67 klas:F -->
+### T-D-062 · proza · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -538,8 +964,8 @@
 
 ---
 
-<!-- fc id:T-D-032 sha:fbdc8285 src:dodatky/d-panik.md:72 klas:F -->
-### T-D-032 · tablycya · рядок 72
+<!-- fc id:T-D-063 sha:fbdc8285 src:dodatky/d-panik.md:72 klas:F -->
+### T-D-063 · tablycya-shapka · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -551,12 +977,12 @@
 
 ---
 
-<!-- fc id:T-D-033 sha:bc03f680 src:dodatky/d-panik.md:74 klas:F -->
-### T-D-033 · tablycya · рядок 74
+<!-- fc id:T-D-064 sha:fc9c4e50 src:dodatky/d-panik.md:73 klas:F -->
+### T-D-064 · komirka · рядок 73
 
 **Книга каже, дослівно:**
 
-> | `invalid magic byte` | за адресою застосунку не образ | 18 |
+> `invalid magic byte` · Причина → за адресою застосунку не образ
 
 **Доказ**
 
@@ -564,12 +990,12 @@
 
 ---
 
-<!-- fc id:T-D-034 sha:1334b55f src:dodatky/d-panik.md:75 klas:F -->
-### T-D-034 · tablycya · рядок 75
+<!-- fc id:T-D-065 sha:d2308cd8 src:dodatky/d-panik.md:73 klas:F -->
+### T-D-065 · komirka · рядок 73
 
 **Книга каже, дослівно:**
 
-> | `Factory app partition is not bootable` | застосунку немає | К5 |
+> `invalid magic byte` · Розділ → 18
 
 **Доказ**
 
@@ -577,12 +1003,12 @@
 
 ---
 
-<!-- fc id:T-D-035 sha:193468e5 src:dodatky/d-panik.md:76 klas:F -->
-### T-D-035 · tablycya · рядок 76
+<!-- fc id:T-D-066 sha:0164e3bb src:dodatky/d-panik.md:74 klas:F -->
+### T-D-066 · komirka · рядок 74
 
 **Книга каже, дослівно:**
 
-> | `partition N invalid magic number` | немає таблиці розділів | 18 |
+> `Factory app partition is not bootable` · Причина → застосунку немає
 
 **Доказ**
 
@@ -590,12 +1016,12 @@
 
 ---
 
-<!-- fc id:T-D-036 sha:1ec4a882 src:dodatky/d-panik.md:77 klas:F -->
-### T-D-036 · tablycya · рядок 77
+<!-- fc id:T-D-067 sha:2d07f5b7 src:dodatky/d-panik.md:74 klas:F -->
+### T-D-067 · komirka · рядок 74
 
 **Книга каже, дослівно:**
 
-> | `Failed to verify partition table` | те саме | 18 |
+> `Factory app partition is not bootable` · Розділ → К5
 
 **Доказ**
 
@@ -603,12 +1029,12 @@
 
 ---
 
-<!-- fc id:T-D-037 sha:e538e610 src:dodatky/d-panik.md:78 klas:F -->
-### T-D-037 · tablycya · рядок 78
+<!-- fc id:T-D-068 sha:2b9cc080 src:dodatky/d-panik.md:75 klas:F -->
+### T-D-068 · komirka · рядок 75
 
 **Книга каже, дослівно:**
 
-> | `ota data partition invalid` | зіпсований `otadata` | 19 |
+> `partition N invalid magic number` · Причина → немає таблиці розділів
 
 **Доказ**
 
@@ -616,12 +1042,12 @@
 
 ---
 
-<!-- fc id:T-D-038 sha:f4325fd8 src:dodatky/d-panik.md:79 klas:F -->
-### T-D-038 · tablycya · рядок 79
+<!-- fc id:T-D-069 sha:4d44560e src:dodatky/d-panik.md:75 klas:F -->
+### T-D-069 · komirka · рядок 75
 
 **Книга каже, дослівно:**
 
-> | `image has invalid SHA256` | образ пошкоджений | 17 |
+> `partition N invalid magic number` · Розділ → 18
 
 **Доказ**
 
@@ -629,12 +1055,12 @@
 
 ---
 
-<!-- fc id:T-D-039 sha:19045897 src:dodatky/d-panik.md:80 klas:F -->
-### T-D-039 · tablycya · рядок 80
+<!-- fc id:T-D-070 sha:47044db6 src:dodatky/d-panik.md:76 klas:F -->
+### T-D-070 · komirka · рядок 76
 
 **Книга каже, дослівно:**
 
-> | `Flash chip size mismatch` | конфігурація ≠ реальний флеш | 08 |
+> `Failed to verify partition table` · Причина → те саме
 
 **Доказ**
 
@@ -642,8 +1068,99 @@
 
 ---
 
-<!-- fc id:T-D-040 sha:ea9dc162 src:dodatky/d-panik.md:84 klas:F -->
-### T-D-040 · tablycya · рядок 84
+<!-- fc id:T-D-071 sha:6a21db9c src:dodatky/d-panik.md:76 klas:F -->
+### T-D-071 · komirka · рядок 76
+
+**Книга каже, дослівно:**
+
+> `Failed to verify partition table` · Розділ → 18
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-072 sha:e688bcbc src:dodatky/d-panik.md:77 klas:F -->
+### T-D-072 · komirka · рядок 77
+
+**Книга каже, дослівно:**
+
+> `ota data partition invalid` · Причина → зіпсований `otadata`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-073 sha:a25a5d46 src:dodatky/d-panik.md:77 klas:F -->
+### T-D-073 · komirka · рядок 77
+
+**Книга каже, дослівно:**
+
+> `ota data partition invalid` · Розділ → 19
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-074 sha:e71a4e33 src:dodatky/d-panik.md:78 klas:F -->
+### T-D-074 · komirka · рядок 78
+
+**Книга каже, дослівно:**
+
+> `image has invalid SHA256` · Причина → образ пошкоджений
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-075 sha:ea436193 src:dodatky/d-panik.md:78 klas:F -->
+### T-D-075 · komirka · рядок 78
+
+**Книга каже, дослівно:**
+
+> `image has invalid SHA256` · Розділ → 17
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-076 sha:d02987b0 src:dodatky/d-panik.md:79 klas:F -->
+### T-D-076 · komirka · рядок 79
+
+**Книга каже, дослівно:**
+
+> `Flash chip size mismatch` · Причина → конфігурація ≠ реальний флеш
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-077 sha:e76a8e56 src:dodatky/d-panik.md:79 klas:F -->
+### T-D-077 · komirka · рядок 79
+
+**Книга каже, дослівно:**
+
+> `Flash chip size mismatch` · Розділ → 08
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-078 sha:ea9dc162 src:dodatky/d-panik.md:84 klas:F -->
+### T-D-078 · tablycya-shapka · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -655,12 +1172,12 @@
 
 ---
 
-<!-- fc id:T-D-041 sha:07b05a57 src:dodatky/d-panik.md:86 klas:F -->
-### T-D-041 · tablycya · рядок 86
+<!-- fc id:T-D-079 sha:3f7f05f2 src:dodatky/d-panik.md:85 klas:F -->
+### T-D-079 · komirka · рядок 85
 
 **Книга каже, дослівно:**
 
-> | `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+> `LoadProhibited` · Що заборонено → читання з недійсної адреси
 
 **Доказ**
 
@@ -668,12 +1185,12 @@
 
 ---
 
-<!-- fc id:T-D-042 sha:b3f83bf2 src:dodatky/d-panik.md:87 klas:F -->
-### T-D-042 · tablycya · рядок 87
+<!-- fc id:T-D-080 sha:e1369196 src:dodatky/d-panik.md:85 klas:F -->
+### T-D-080 · komirka · рядок 85
 
 **Книга каже, дослівно:**
 
-> | `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+> `LoadProhibited` · Що шукати → `NULL` або звільнений покажчик
 
 **Доказ**
 
@@ -681,12 +1198,12 @@
 
 ---
 
-<!-- fc id:T-D-043 sha:568ebc8f src:dodatky/d-panik.md:88 klas:F -->
-### T-D-043 · tablycya · рядок 88
+<!-- fc id:T-D-081 sha:8bc4f39c src:dodatky/d-panik.md:86 klas:F -->
+### T-D-081 · komirka · рядок 86
 
 **Книга каже, дослівно:**
 
-> | `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+> `StoreProhibited` · Що заборонено → запис за недійсною адресою
 
 **Доказ**
 
@@ -694,12 +1211,12 @@
 
 ---
 
-<!-- fc id:T-D-044 sha:9f9b346e src:dodatky/d-panik.md:89 klas:F -->
-### T-D-044 · tablycya · рядок 89
+<!-- fc id:T-D-082 sha:28cc86f2 src:dodatky/d-panik.md:86 klas:F -->
+### T-D-082 · komirka · рядок 86
 
 **Книга каже, дослівно:**
 
-> | `IllegalInstruction` | виконання не-коду | переповнення стека |
+> `StoreProhibited` · Що шукати → те саме, на запис
 
 **Доказ**
 
@@ -707,12 +1224,12 @@
 
 ---
 
-<!-- fc id:T-D-045 sha:5e84c594 src:dodatky/d-panik.md:90 klas:F -->
-### T-D-045 · tablycya · рядок 90
+<!-- fc id:T-D-083 sha:65e5b66a src:dodatky/d-panik.md:87 klas:F -->
+### T-D-083 · komirka · рядок 87
 
 **Книга каже, дослівно:**
 
-> | `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+> `InstrFetchProhibited` · Що заборонено → перехід на недійсну адресу
 
 **Доказ**
 
@@ -720,12 +1237,12 @@
 
 ---
 
-<!-- fc id:T-D-046 sha:25421c81 src:dodatky/d-panik.md:91 klas:F -->
-### T-D-046 · tablycya · рядок 91
+<!-- fc id:T-D-084 sha:89d4b0ed src:dodatky/d-panik.md:87 klas:F -->
+### T-D-084 · komirka · рядок 87
 
 **Книга каже, дослівно:**
 
-> | `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+> `InstrFetchProhibited` · Що шукати → зіпсований покажчик на функцію
 
 **Доказ**
 
@@ -733,12 +1250,12 @@
 
 ---
 
-<!-- fc id:T-D-047 sha:ebfddc20 src:dodatky/d-panik.md:92 klas:F -->
-### T-D-047 · tablycya · рядок 92
+<!-- fc id:T-D-085 sha:0e5b84a2 src:dodatky/d-panik.md:88 klas:F -->
+### T-D-085 · komirka · рядок 88
 
 **Книга каже, дослівно:**
 
-> | `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+> `IllegalInstruction` · Що заборонено → виконання не-коду
 
 **Доказ**
 
@@ -746,12 +1263,12 @@
 
 ---
 
-<!-- fc id:T-D-048 sha:512d4881 src:dodatky/d-panik.md:93 klas:F -->
-### T-D-048 · tablycya · рядок 93
+<!-- fc id:T-D-086 sha:b8918b59 src:dodatky/d-panik.md:88 klas:F -->
+### T-D-086 · komirka · рядок 88
 
 **Книга каже, дослівно:**
 
-> | `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+> `IllegalInstruction` · Що шукати → переповнення стека
 
 **Доказ**
 
@@ -759,8 +1276,112 @@
 
 ---
 
-<!-- fc id:T-D-049 sha:a66ac160 src:dodatky/d-panik.md:97 klas:F -->
-### T-D-049 · tablycya · рядок 97
+<!-- fc id:T-D-087 sha:c4d149ff src:dodatky/d-panik.md:89 klas:F -->
+### T-D-087 · komirka · рядок 89
+
+**Книга каже, дослівно:**
+
+> `LoadStoreAlignment` · Що заборонено → невирівняний доступ
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-088 sha:46508737 src:dodatky/d-panik.md:89 klas:F -->
+### T-D-088 · komirka · рядок 89
+
+**Книга каже, дослівно:**
+
+> `LoadStoreAlignment` · Що шукати → 32 біти з непарної адреси
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-089 sha:d96111a7 src:dodatky/d-panik.md:90 klas:F -->
+### T-D-089 · komirka · рядок 90
+
+**Книга каже, дослівно:**
+
+> `IntegerDivideByZero` · Що заборонено → ділення на нуль
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-090 sha:439a9b98 src:dodatky/d-panik.md:90 klas:F -->
+### T-D-090 · komirka · рядок 90
+
+**Книга каже, дослівно:**
+
+> `IntegerDivideByZero` · Що шукати → дільник із датчика без перевірки
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-091 sha:7c359228 src:dodatky/d-panik.md:91 klas:F -->
+### T-D-091 · komirka · рядок 91
+
+**Книга каже, дослівно:**
+
+> `Interrupt wdt timeout` · Що заборонено → переривання заблоковані задовго
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-092 sha:4c606b3e src:dodatky/d-panik.md:91 klas:F -->
+### T-D-092 · komirka · рядок 91
+
+**Книга каже, дослівно:**
+
+> `Interrupt wdt timeout` · Що шукати → довгий ISR, критична секція
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-093 sha:8712f714 src:dodatky/d-panik.md:92 klas:F -->
+### T-D-093 · komirka · рядок 92
+
+**Книга каже, дослівно:**
+
+> `Cache disabled but cached memory region accessed` · Що заборонено → доступ до флешу при вимкненому кеші
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-094 sha:4e40193e src:dodatky/d-panik.md:92 klas:F -->
+### T-D-094 · komirka · рядок 92
+
+**Книга каже, дослівно:**
+
+> `Cache disabled but cached memory region accessed` · Що шукати → немає `IRAM_ATTR`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-095 sha:a66ac160 src:dodatky/d-panik.md:97 klas:F -->
+### T-D-095 · tablycya · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -772,8 +1393,8 @@
 
 ---
 
-<!-- fc id:T-D-050 sha:9e0b8e4a src:dodatky/d-panik.md:99 klas:F -->
-### T-D-050 · tablycya · рядок 99
+<!-- fc id:T-D-096 sha:9e0b8e4a src:dodatky/d-panik.md:99 klas:F -->
+### T-D-096 · tablycya · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -785,8 +1406,8 @@
 
 ---
 
-<!-- fc id:T-D-051 sha:f82d7189 src:dodatky/d-panik.md:100 klas:F -->
-### T-D-051 · tablycya · рядок 100
+<!-- fc id:T-D-097 sha:f82d7189 src:dodatky/d-panik.md:100 klas:F -->
+### T-D-097 · tablycya · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -798,8 +1419,8 @@
 
 ---
 
-<!-- fc id:T-D-052 sha:74974165 src:dodatky/d-panik.md:101 klas:F -->
-### T-D-052 · tablycya · рядок 101
+<!-- fc id:T-D-098 sha:74974165 src:dodatky/d-panik.md:101 klas:F -->
+### T-D-098 · tablycya · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -811,8 +1432,8 @@
 
 ---
 
-<!-- fc id:T-D-053 sha:b89ae2bf src:dodatky/d-panik.md:102 klas:F -->
-### T-D-053 · tablycya · рядок 102
+<!-- fc id:T-D-099 sha:b89ae2bf src:dodatky/d-panik.md:102 klas:F -->
+### T-D-099 · tablycya · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -824,8 +1445,8 @@
 
 ---
 
-<!-- fc id:T-D-054 sha:6ef4b75c src:dodatky/d-panik.md:105 klas:F -->
-### T-D-054 · proza · рядок 105
+<!-- fc id:T-D-100 sha:6ef4b75c src:dodatky/d-panik.md:105 klas:F -->
+### T-D-100 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -837,8 +1458,8 @@
 
 ---
 
-<!-- fc id:T-D-055 sha:f710df6f src:dodatky/d-panik.md:107 klas:F -->
-### T-D-055 · proza · рядок 107
+<!-- fc id:T-D-101 sha:f710df6f src:dodatky/d-panik.md:107 klas:F -->
+### T-D-101 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -850,8 +1471,8 @@
 
 ---
 
-<!-- fc id:T-D-056 sha:4c0a3cc5 src:dodatky/d-panik.md:107 klas:F -->
-### T-D-056 · proza · рядок 107
+<!-- fc id:T-D-102 sha:4c0a3cc5 src:dodatky/d-panik.md:107 klas:F -->
+### T-D-102 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -863,8 +1484,8 @@
 
 ---
 
-<!-- fc id:T-D-057 sha:7ff566f8 src:dodatky/d-panik.md:110 klas:F -->
-### T-D-057 · proza · рядок 110
+<!-- fc id:T-D-103 sha:7ff566f8 src:dodatky/d-panik.md:110 klas:F -->
+### T-D-103 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -876,8 +1497,8 @@
 
 ---
 
-<!-- fc id:T-D-058 sha:d09dfd9d src:dodatky/d-panik.md:116 klas:F -->
-### T-D-058 · proza · рядок 116
+<!-- fc id:T-D-104 sha:d09dfd9d src:dodatky/d-panik.md:116 klas:F -->
+### T-D-104 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -889,8 +1510,8 @@
 
 ---
 
-<!-- fc id:T-D-059 sha:989bdd9f src:dodatky/d-panik.md:118 klas:F -->
-### T-D-059 · kod · рядок 118
+<!-- fc id:T-D-105 sha:989bdd9f src:dodatky/d-panik.md:118 klas:F -->
+### T-D-105 · kod · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -907,8 +1528,21 @@
 
 ---
 
-<!-- fc id:T-D-060 sha:957bad5d src:dodatky/d-panik.md:125 klas:F -->
-### T-D-060 · proza · рядок 125
+<!-- fc id:T-D-106 sha:a1afa6b3 src:dodatky/d-panik.md:120 klas:F -->
+### T-D-106 · kod-ryadok · рядок 120
+
+**Книга каже, дослівно:**
+
+> E (5234) task_wdt: - IDLE0 (CPU 0)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-107 sha:957bad5d src:dodatky/d-panik.md:125 klas:F -->
+### T-D-107 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -920,8 +1554,8 @@
 
 ---
 
-<!-- fc id:T-D-061 sha:12db62c5 src:dodatky/d-panik.md:125 klas:F -->
-### T-D-061 · proza · рядок 125
+<!-- fc id:T-D-108 sha:12db62c5 src:dodatky/d-panik.md:125 klas:F -->
+### T-D-108 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -933,8 +1567,8 @@
 
 ---
 
-<!-- fc id:T-D-062 sha:77e4f2d7 src:dodatky/d-panik.md:128 klas:F -->
-### T-D-062 · proza · рядок 128
+<!-- fc id:T-D-109 sha:77e4f2d7 src:dodatky/d-panik.md:128 klas:F -->
+### T-D-109 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -946,8 +1580,8 @@
 
 ---
 
-<!-- fc id:T-D-063 sha:113645cd src:dodatky/d-panik.md:130 klas:F -->
-### T-D-063 · kod · рядок 130
+<!-- fc id:T-D-110 sha:113645cd src:dodatky/d-panik.md:130 klas:F -->
+### T-D-110 · kod · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -961,8 +1595,8 @@
 
 ---
 
-<!-- fc id:T-D-064 sha:61ffbc10 src:dodatky/d-panik.md:134 klas:F -->
-### T-D-064 · proza · рядок 134
+<!-- fc id:T-D-111 sha:61ffbc10 src:dodatky/d-panik.md:134 klas:F -->
+### T-D-111 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -974,8 +1608,8 @@
 
 ---
 
-<!-- fc id:T-D-065 sha:ef04690f src:dodatky/d-panik.md:139 klas:F -->
-### T-D-065 · tablycya · рядок 139
+<!-- fc id:T-D-112 sha:ef04690f src:dodatky/d-panik.md:139 klas:F -->
+### T-D-112 · tablycya · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -987,8 +1621,8 @@
 
 ---
 
-<!-- fc id:T-D-066 sha:8f5f38c0 src:dodatky/d-panik.md:141 klas:F -->
-### T-D-066 · tablycya · рядок 141
+<!-- fc id:T-D-113 sha:8f5f38c0 src:dodatky/d-panik.md:141 klas:F -->
+### T-D-113 · tablycya · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1000,8 +1634,8 @@
 
 ---
 
-<!-- fc id:T-D-067 sha:de0b73f8 src:dodatky/d-panik.md:142 klas:F -->
-### T-D-067 · tablycya · рядок 142
+<!-- fc id:T-D-114 sha:de0b73f8 src:dodatky/d-panik.md:142 klas:F -->
+### T-D-114 · tablycya · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -1013,8 +1647,8 @@
 
 ---
 
-<!-- fc id:T-D-068 sha:c629c9be src:dodatky/d-panik.md:143 klas:F -->
-### T-D-068 · tablycya · рядок 143
+<!-- fc id:T-D-115 sha:c629c9be src:dodatky/d-panik.md:143 klas:F -->
+### T-D-115 · tablycya · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1026,8 +1660,8 @@
 
 ---
 
-<!-- fc id:T-D-069 sha:69aa2c68 src:dodatky/d-panik.md:144 klas:F -->
-### T-D-069 · tablycya · рядок 144
+<!-- fc id:T-D-116 sha:69aa2c68 src:dodatky/d-panik.md:144 klas:F -->
+### T-D-116 · tablycya · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -1039,8 +1673,8 @@
 
 ---
 
-<!-- fc id:T-D-070 sha:4dc00872 src:dodatky/d-panik.md:145 klas:F -->
-### T-D-070 · tablycya · рядок 145
+<!-- fc id:T-D-117 sha:4dc00872 src:dodatky/d-panik.md:145 klas:F -->
+### T-D-117 · tablycya · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -1052,8 +1686,8 @@
 
 ---
 
-<!-- fc id:T-D-071 sha:760e202b src:dodatky/d-panik.md:147 klas:F -->
-### T-D-071 · proza · рядок 147
+<!-- fc id:T-D-118 sha:760e202b src:dodatky/d-panik.md:147 klas:F -->
+### T-D-118 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -1065,8 +1699,8 @@
 
 ---
 
-<!-- fc id:T-D-072 sha:cbdc8d7f src:dodatky/d-panik.md:152 klas:F -->
-### T-D-072 · proza · рядок 152
+<!-- fc id:T-D-119 sha:cbdc8d7f src:dodatky/d-panik.md:152 klas:F -->
+### T-D-119 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1078,8 +1712,8 @@
 
 ---
 
-<!-- fc id:T-D-073 sha:61db3e19 src:dodatky/d-panik.md:152 klas:F -->
-### T-D-073 · proza · рядок 152
+<!-- fc id:T-D-120 sha:61db3e19 src:dodatky/d-panik.md:152 klas:F -->
+### T-D-120 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1091,8 +1725,8 @@
 
 ---
 
-<!-- fc id:T-D-074 sha:8d7da41f src:dodatky/d-panik.md:152 klas:F -->
-### T-D-074 · proza · рядок 152
+<!-- fc id:T-D-121 sha:8d7da41f src:dodatky/d-panik.md:152 klas:F -->
+### T-D-121 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1104,8 +1738,8 @@
 
 ---
 
-<!-- fc id:T-D-075 sha:223bf487 src:dodatky/d-panik.md:152 klas:F -->
-### T-D-075 · proza · рядок 152
+<!-- fc id:T-D-122 sha:223bf487 src:dodatky/d-panik.md:152 klas:F -->
+### T-D-122 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1117,8 +1751,8 @@
 
 ---
 
-<!-- fc id:T-D-076 sha:6a7c80ec src:dodatky/d-panik.md:152 klas:F -->
-### T-D-076 · proza · рядок 152
+<!-- fc id:T-D-123 sha:6a7c80ec src:dodatky/d-panik.md:152 klas:F -->
+### T-D-123 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1130,8 +1764,8 @@
 
 ---
 
-<!-- fc id:T-D-077 sha:4304fde6 src:dodatky/d-panik.md:160 klas:F -->
-### T-D-077 · proza · рядок 160
+<!-- fc id:T-D-124 sha:4304fde6 src:dodatky/d-panik.md:160 klas:F -->
+### T-D-124 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1143,8 +1777,8 @@
 
 ---
 
-<!-- fc id:T-D-078 sha:91a1f9a6 src:dodatky/d-panik.md:160 klas:F -->
-### T-D-078 · proza · рядок 160
+<!-- fc id:T-D-125 sha:91a1f9a6 src:dodatky/d-panik.md:160 klas:F -->
+### T-D-125 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1156,8 +1790,8 @@
 
 ---
 
-<!-- fc id:T-D-079 sha:00df861d src:dodatky/d-panik.md:164 klas:F -->
-### T-D-079 · proza · рядок 164
+<!-- fc id:T-D-126 sha:00df861d src:dodatky/d-panik.md:164 klas:F -->
+### T-D-126 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1169,8 +1803,8 @@
 
 ---
 
-<!-- fc id:T-D-080 sha:9a6f1773 src:dodatky/d-panik.md:169 klas:F -->
-### T-D-080 · proza · рядок 169
+<!-- fc id:T-D-127 sha:9a6f1773 src:dodatky/d-panik.md:169 klas:F -->
+### T-D-127 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -1182,8 +1816,8 @@
 
 ---
 
-<!-- fc id:T-D-081 sha:c50282dd src:dodatky/d-panik.md:169 klas:F -->
-### T-D-081 · proza · рядок 169
+<!-- fc id:T-D-128 sha:c50282dd src:dodatky/d-panik.md:169 klas:F -->
+### T-D-128 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -1195,8 +1829,8 @@
 
 ---
 
-<!-- fc id:T-D-082 sha:71f2dcf5 src:dodatky/d-panik.md:172 klas:F -->
-### T-D-082 · proza · рядок 172
+<!-- fc id:T-D-129 sha:71f2dcf5 src:dodatky/d-panik.md:172 klas:F -->
+### T-D-129 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -1208,8 +1842,8 @@
 
 ---
 
-<!-- fc id:T-D-083 sha:d8b5c935 src:dodatky/d-panik.md:172 klas:F -->
-### T-D-083 · proza · рядок 172
+<!-- fc id:T-D-130 sha:d8b5c935 src:dodatky/d-panik.md:172 klas:F -->
+### T-D-130 · proza · рядок 172
 
 **Книга каже, дослівно:**
 

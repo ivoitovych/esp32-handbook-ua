@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/51-payannya.md`
 
-Одиниць твердження: **77**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **83**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -670,7 +670,7 @@
 ---
 
 <!-- fc id:T-51-052 sha:6ffe87bf src:manual/51-payannya.md:114 klas:F -->
-### T-51-052 · tablycya · рядок 114
+### T-51-052 · tablycya-shapka · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -682,12 +682,12 @@
 
 ---
 
-<!-- fc id:T-51-053 sha:433e70cb src:manual/51-payannya.md:116 klas:F -->
-### T-51-053 · tablycya · рядок 116
+<!-- fc id:T-51-053 sha:379892e3 src:manual/51-payannya.md:115 klas:F -->
+### T-51-053 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
-> | Холодна пайка | матова кулька | замало температури, немає флюсу |
+> Холодна пайка · Вигляд → матова кулька
 
 **Доказ**
 
@@ -695,12 +695,12 @@
 
 ---
 
-<!-- fc id:T-51-054 sha:b4528cf4 src:manual/51-payannya.md:117 klas:F -->
-### T-51-054 · tablycya · рядок 117
+<!-- fc id:T-51-054 sha:99c40d6d src:manual/51-payannya.md:115 klas:F -->
+### T-51-054 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
-> | Перемичка | припій між сусідніми | забагато припою |
+> Холодна пайка · Причина → замало температури, немає флюсу
 
 **Доказ**
 
@@ -708,12 +708,12 @@
 
 ---
 
-<!-- fc id:T-51-055 sha:061c8892 src:manual/51-payannya.md:118 klas:F -->
-### T-51-055 · tablycya · рядок 118
+<!-- fc id:T-51-055 sha:db1c3d01 src:manual/51-payannya.md:116 klas:F -->
+### T-51-055 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
-> | Відірвана площадка | мідь відстала | перегрів |
+> Перемичка · Вигляд → припій між сусідніми
 
 **Доказ**
 
@@ -721,12 +721,12 @@
 
 ---
 
-<!-- fc id:T-51-056 sha:bcc6dc20 src:manual/51-payannya.md:119 klas:F -->
-### T-51-056 · tablycya · рядок 119
+<!-- fc id:T-51-056 sha:670a4984 src:manual/51-payannya.md:116 klas:F -->
+### T-51-056 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
-> | Непропай | вивід не змочений | не прогріли обидві поверхні |
+> Перемичка · Причина → забагато припою
 
 **Доказ**
 
@@ -734,12 +734,12 @@
 
 ---
 
-<!-- fc id:T-51-057 sha:bd1ad267 src:manual/51-payannya.md:120 klas:F -->
-### T-51-057 · tablycya · рядок 120
+<!-- fc id:T-51-057 sha:1ec2a927 src:manual/51-payannya.md:117 klas:F -->
+### T-51-057 · komirka · рядок 117
 
 **Книга каже, дослівно:**
 
-> | Тріщина | волосяна лінія | рухали до застигання |
+> Відірвана площадка · Вигляд → мідь відстала
 
 **Доказ**
 
@@ -747,12 +747,12 @@
 
 ---
 
-<!-- fc id:T-51-058 sha:8ad8af57 src:manual/51-payannya.md:121 klas:F -->
-### T-51-058 · tablycya · рядок 121
+<!-- fc id:T-51-058 sha:6876a292 src:manual/51-payannya.md:117 klas:F -->
+### T-51-058 · komirka · рядок 117
 
 **Книга каже, дослівно:**
 
-> | Залишки флюсу | липкий наліт | не змили |
+> Відірвана площадка · Причина → перегрів
 
 **Доказ**
 
@@ -760,8 +760,86 @@
 
 ---
 
-<!-- fc id:T-51-059 sha:0c0d8553 src:manual/51-payannya.md:123 klas:F -->
-### T-51-059 · proza · рядок 123
+<!-- fc id:T-51-059 sha:2b9ef61a src:manual/51-payannya.md:118 klas:F -->
+### T-51-059 · komirka · рядок 118
+
+**Книга каже, дослівно:**
+
+> Непропай · Вигляд → вивід не змочений
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-51-060 sha:bf538913 src:manual/51-payannya.md:118 klas:F -->
+### T-51-060 · komirka · рядок 118
+
+**Книга каже, дослівно:**
+
+> Непропай · Причина → не прогріли обидві поверхні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-51-061 sha:d572f94f src:manual/51-payannya.md:119 klas:F -->
+### T-51-061 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> Тріщина · Вигляд → волосяна лінія
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-51-062 sha:01d58b5f src:manual/51-payannya.md:119 klas:F -->
+### T-51-062 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> Тріщина · Причина → рухали до застигання
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-51-063 sha:753048dd src:manual/51-payannya.md:120 klas:F -->
+### T-51-063 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> Залишки флюсу · Вигляд → липкий наліт
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-51-064 sha:da7d229b src:manual/51-payannya.md:120 klas:F -->
+### T-51-064 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> Залишки флюсу · Причина → не змили
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-51-065 sha:0c0d8553 src:manual/51-payannya.md:123 klas:F -->
+### T-51-065 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -773,8 +851,8 @@
 
 ---
 
-<!-- fc id:T-51-060 sha:efb55461 src:manual/51-payannya.md:128 klas:F -->
-### T-51-060 · proza · рядок 128
+<!-- fc id:T-51-066 sha:efb55461 src:manual/51-payannya.md:128 klas:F -->
+### T-51-066 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -786,8 +864,8 @@
 
 ---
 
-<!-- fc id:T-51-061 sha:b4ec3e88 src:manual/51-payannya.md:128 klas:F -->
-### T-51-061 · proza · рядок 128
+<!-- fc id:T-51-067 sha:b4ec3e88 src:manual/51-payannya.md:128 klas:F -->
+### T-51-067 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -799,8 +877,8 @@
 
 ---
 
-<!-- fc id:T-51-062 sha:030bce21 src:manual/51-payannya.md:131 klas:F -->
-### T-51-062 · proza · рядок 131
+<!-- fc id:T-51-068 sha:030bce21 src:manual/51-payannya.md:131 klas:F -->
+### T-51-068 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -812,8 +890,8 @@
 
 ---
 
-<!-- fc id:T-51-063 sha:d771339e src:manual/51-payannya.md:133 klas:F -->
-### T-51-063 · proza · рядок 133
+<!-- fc id:T-51-069 sha:d771339e src:manual/51-payannya.md:133 klas:F -->
+### T-51-069 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -825,8 +903,8 @@
 
 ---
 
-<!-- fc id:T-51-064 sha:455522e3 src:manual/51-payannya.md:138 klas:F -->
-### T-51-064 · proza · рядок 138
+<!-- fc id:T-51-070 sha:455522e3 src:manual/51-payannya.md:138 klas:F -->
+### T-51-070 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -838,8 +916,8 @@
 
 ---
 
-<!-- fc id:T-51-065 sha:8399e47f src:manual/51-payannya.md:138 klas:F -->
-### T-51-065 · proza · рядок 138
+<!-- fc id:T-51-071 sha:8399e47f src:manual/51-payannya.md:138 klas:F -->
+### T-51-071 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -851,8 +929,8 @@
 
 ---
 
-<!-- fc id:T-51-066 sha:a1b84a49 src:manual/51-payannya.md:141 klas:F -->
-### T-51-066 · proza · рядок 141
+<!-- fc id:T-51-072 sha:a1b84a49 src:manual/51-payannya.md:141 klas:F -->
+### T-51-072 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -864,8 +942,8 @@
 
 ---
 
-<!-- fc id:T-51-067 sha:c7b14e4a src:manual/51-payannya.md:143 klas:F -->
-### T-51-067 · proza · рядок 143
+<!-- fc id:T-51-073 sha:c7b14e4a src:manual/51-payannya.md:143 klas:F -->
+### T-51-073 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -877,8 +955,8 @@
 
 ---
 
-<!-- fc id:T-51-068 sha:e87f8868 src:manual/51-payannya.md:145 klas:F -->
-### T-51-068 · proza · рядок 145
+<!-- fc id:T-51-074 sha:e87f8868 src:manual/51-payannya.md:145 klas:F -->
+### T-51-074 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -890,8 +968,8 @@
 
 ---
 
-<!-- fc id:T-51-069 sha:0d57eba9 src:manual/51-payannya.md:151 klas:F -->
-### T-51-069 · proza · рядок 151
+<!-- fc id:T-51-075 sha:0d57eba9 src:manual/51-payannya.md:151 klas:F -->
+### T-51-075 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -903,8 +981,8 @@
 
 ---
 
-<!-- fc id:T-51-070 sha:042ce29b src:manual/51-payannya.md:151 klas:F -->
-### T-51-070 · proza · рядок 151
+<!-- fc id:T-51-076 sha:042ce29b src:manual/51-payannya.md:151 klas:F -->
+### T-51-076 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -916,8 +994,8 @@
 
 ---
 
-<!-- fc id:T-51-071 sha:67717e8e src:manual/51-payannya.md:155 klas:F -->
-### T-51-071 · proza · рядок 155
+<!-- fc id:T-51-077 sha:67717e8e src:manual/51-payannya.md:155 klas:F -->
+### T-51-077 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -929,8 +1007,8 @@
 
 ---
 
-<!-- fc id:T-51-072 sha:66f2828d src:manual/51-payannya.md:159 klas:F -->
-### T-51-072 · proza · рядок 159
+<!-- fc id:T-51-078 sha:66f2828d src:manual/51-payannya.md:159 klas:F -->
+### T-51-078 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -942,8 +1020,8 @@
 
 ---
 
-<!-- fc id:T-51-073 sha:817f6342 src:manual/51-payannya.md:162 klas:F -->
-### T-51-073 · proza · рядок 162
+<!-- fc id:T-51-079 sha:817f6342 src:manual/51-payannya.md:162 klas:F -->
+### T-51-079 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -955,8 +1033,8 @@
 
 ---
 
-<!-- fc id:T-51-074 sha:70aa433e src:manual/51-payannya.md:164 klas:F -->
-### T-51-074 · proza · рядок 164
+<!-- fc id:T-51-080 sha:70aa433e src:manual/51-payannya.md:164 klas:F -->
+### T-51-080 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -968,8 +1046,8 @@
 
 ---
 
-<!-- fc id:T-51-075 sha:fb12e78e src:manual/51-payannya.md:166 klas:F -->
-### T-51-075 · proza · рядок 166
+<!-- fc id:T-51-081 sha:fb12e78e src:manual/51-payannya.md:166 klas:F -->
+### T-51-081 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -981,8 +1059,8 @@
 
 ---
 
-<!-- fc id:T-51-076 sha:d785db07 src:manual/51-payannya.md:168 klas:F -->
-### T-51-076 · proza · рядок 168
+<!-- fc id:T-51-082 sha:d785db07 src:manual/51-payannya.md:168 klas:F -->
+### T-51-082 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -994,8 +1072,8 @@
 
 ---
 
-<!-- fc id:T-51-077 sha:07ceb369 src:manual/51-payannya.md:172 klas:F -->
-### T-51-077 · proza · рядок 172
+<!-- fc id:T-51-083 sha:07ceb369 src:manual/51-payannya.md:172 klas:F -->
+### T-51-083 · proza · рядок 172
 
 **Книга каже, дослівно:**
 

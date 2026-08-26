@@ -710,16 +710,23 @@
 
 ---
 
-<!-- fc id:T-29-055 sha:db8f58df src:manual/29-symptomy.md:138 klas:F -->
+<!-- fc id:T-29-055 sha:4793f7fb src:manual/29-symptomy.md:138 klas:A -->
 ### T-29-055 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
-> **[[classic]] Використано ADC2 при увімкненому Wi-Fi.** ADC2 у classic недоступний, поки працює радіо.
+> **[[classic]] [[S2]] [[S3]] Використано ADC2 при увімкненому Wi-Fi.** ADC2 тут недоступний, поки працює радіо.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+- **Дослівно з джерела:**
+  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
+  > provided protection between the Wi-Fi driver and ADC oneshot mode driver.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише classic), тоді як документація прямо називає три цілі, включно з S3. Для S3 це важить окремо: його рекомендують як вибір за замовчуванням для нового проєкту, тобто найімовірніше саме на ньому читач і розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи 04, 07 (двічі), 29, 33 (двічі), 45 і картка К8.
+- **Прохід:** pass-02-povedinka
 
 ---
 

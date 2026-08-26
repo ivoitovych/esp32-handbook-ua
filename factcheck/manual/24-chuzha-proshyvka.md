@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/24-chuzha-proshyvka.md`
 
-Одиниць твердження: **71**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **76**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -126,8 +126,34 @@
 
 ---
 
-<!-- fc id:T-24-010 sha:1e071f0d src:manual/24-chuzha-proshyvka.md:24 klas:F -->
-### T-24-010 · proza · рядок 24
+<!-- fc id:T-24-010 sha:d1458242 src:manual/24-chuzha-proshyvka.md:20 klas:F -->
+### T-24-010 · kod-ryadok · рядок 20
+
+**Книга каже, дослівно:**
+
+> dd if=dump.bin of=pt.bin bs=1 skip=$((0x8000)) count=$((0x1000))
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-24-011 sha:4438754b src:manual/24-chuzha-proshyvka.md:21 klas:F -->
+### T-24-011 · kod-ryadok · рядок 21
+
+**Книга каже, дослівно:**
+
+> python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-24-012 sha:1e071f0d src:manual/24-chuzha-proshyvka.md:24 klas:F -->
+### T-24-012 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -139,8 +165,8 @@
 
 ---
 
-<!-- fc id:T-24-011 sha:b0105296 src:manual/24-chuzha-proshyvka.md:26 klas:F -->
-### T-24-011 · proza · рядок 26
+<!-- fc id:T-24-013 sha:b0105296 src:manual/24-chuzha-proshyvka.md:26 klas:F -->
+### T-24-013 · proza · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -152,8 +178,8 @@
 
 ---
 
-<!-- fc id:T-24-012 sha:a0df9f73 src:manual/24-chuzha-proshyvka.md:26 klas:F -->
-### T-24-012 · proza · рядок 26
+<!-- fc id:T-24-014 sha:a0df9f73 src:manual/24-chuzha-proshyvka.md:26 klas:F -->
+### T-24-014 · proza · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -165,8 +191,8 @@
 
 ---
 
-<!-- fc id:T-24-013 sha:b66c9dc5 src:manual/24-chuzha-proshyvka.md:30 klas:F -->
-### T-24-013 · proza · рядок 30
+<!-- fc id:T-24-015 sha:b66c9dc5 src:manual/24-chuzha-proshyvka.md:30 klas:F -->
+### T-24-015 · proza · рядок 30
 
 **Книга каже, дослівно:**
 
@@ -178,8 +204,8 @@
 
 ---
 
-<!-- fc id:T-24-014 sha:300046e5 src:manual/24-chuzha-proshyvka.md:33 klas:F -->
-### T-24-014 · proza · рядок 33
+<!-- fc id:T-24-016 sha:300046e5 src:manual/24-chuzha-proshyvka.md:33 klas:F -->
+### T-24-016 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -191,8 +217,8 @@
 
 ---
 
-<!-- fc id:T-24-015 sha:169d8d9d src:manual/24-chuzha-proshyvka.md:38 klas:F -->
-### T-24-015 · proza · рядок 38
+<!-- fc id:T-24-017 sha:169d8d9d src:manual/24-chuzha-proshyvka.md:38 klas:F -->
+### T-24-017 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -204,8 +230,8 @@
 
 ---
 
-<!-- fc id:T-24-016 sha:74d8abfe src:manual/24-chuzha-proshyvka.md:38 klas:F -->
-### T-24-016 · proza · рядок 38
+<!-- fc id:T-24-018 sha:74d8abfe src:manual/24-chuzha-proshyvka.md:38 klas:F -->
+### T-24-018 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -217,8 +243,8 @@
 
 ---
 
-<!-- fc id:T-24-017 sha:9cbe5f08 src:manual/24-chuzha-proshyvka.md:41 klas:F -->
-### T-24-017 · kod · рядок 41
+<!-- fc id:T-24-019 sha:9cbe5f08 src:manual/24-chuzha-proshyvka.md:41 klas:F -->
+### T-24-019 · kod · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -233,8 +259,34 @@
 
 ---
 
-<!-- fc id:T-24-018 sha:3e40bbcb src:manual/24-chuzha-proshyvka.md:46 klas:F -->
-### T-24-018 · proza · рядок 46
+<!-- fc id:T-24-020 sha:3e391da0 src:manual/24-chuzha-proshyvka.md:42 klas:F -->
+### T-24-020 · kod-ryadok · рядок 42
+
+**Книга каже, дослівно:**
+
+> strings -n 6 dump.bin | less
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-24-021 sha:580bb88f src:manual/24-chuzha-proshyvka.md:43 klas:F -->
+### T-24-021 · kod-ryadok · рядок 43
+
+**Книга каже, дослівно:**
+
+> strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-24-022 sha:3e40bbcb src:manual/24-chuzha-proshyvka.md:46 klas:F -->
+### T-24-022 · proza · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -246,8 +298,8 @@
 
 ---
 
-<!-- fc id:T-24-019 sha:dc69216b src:manual/24-chuzha-proshyvka.md:48 klas:F -->
-### T-24-019 · proza · рядок 48
+<!-- fc id:T-24-023 sha:dc69216b src:manual/24-chuzha-proshyvka.md:48 klas:F -->
+### T-24-023 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -259,8 +311,8 @@
 
 ---
 
-<!-- fc id:T-24-020 sha:1c8bfbed src:manual/24-chuzha-proshyvka.md:48 klas:F -->
-### T-24-020 · proza · рядок 48
+<!-- fc id:T-24-024 sha:1c8bfbed src:manual/24-chuzha-proshyvka.md:48 klas:F -->
+### T-24-024 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -272,8 +324,8 @@
 
 ---
 
-<!-- fc id:T-24-021 sha:08ecb7ee src:manual/24-chuzha-proshyvka.md:52 klas:F -->
-### T-24-021 · proza · рядок 52
+<!-- fc id:T-24-025 sha:08ecb7ee src:manual/24-chuzha-proshyvka.md:52 klas:F -->
+### T-24-025 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -285,8 +337,8 @@
 
 ---
 
-<!-- fc id:T-24-022 sha:5fcc9dbe src:manual/24-chuzha-proshyvka.md:52 klas:F -->
-### T-24-022 · proza · рядок 52
+<!-- fc id:T-24-026 sha:5fcc9dbe src:manual/24-chuzha-proshyvka.md:52 klas:F -->
+### T-24-026 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -298,8 +350,8 @@
 
 ---
 
-<!-- fc id:T-24-023 sha:4f4227a5 src:manual/24-chuzha-proshyvka.md:56 klas:F -->
-### T-24-023 · proza · рядок 56
+<!-- fc id:T-24-027 sha:4f4227a5 src:manual/24-chuzha-proshyvka.md:56 klas:F -->
+### T-24-027 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -311,8 +363,8 @@
 
 ---
 
-<!-- fc id:T-24-024 sha:d96a1d0f src:manual/24-chuzha-proshyvka.md:59 klas:F -->
-### T-24-024 · proza · рядок 59
+<!-- fc id:T-24-028 sha:d96a1d0f src:manual/24-chuzha-proshyvka.md:59 klas:F -->
+### T-24-028 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -324,8 +376,8 @@
 
 ---
 
-<!-- fc id:T-24-025 sha:0b6a361f src:manual/24-chuzha-proshyvka.md:63 klas:F -->
-### T-24-025 · proza · рядок 63
+<!-- fc id:T-24-029 sha:0b6a361f src:manual/24-chuzha-proshyvka.md:63 klas:F -->
+### T-24-029 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -337,8 +389,8 @@
 
 ---
 
-<!-- fc id:T-24-026 sha:08d57e94 src:manual/24-chuzha-proshyvka.md:63 klas:F -->
-### T-24-026 · proza · рядок 63
+<!-- fc id:T-24-030 sha:08d57e94 src:manual/24-chuzha-proshyvka.md:63 klas:F -->
+### T-24-030 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -350,8 +402,8 @@
 
 ---
 
-<!-- fc id:T-24-027 sha:76bdb94f src:manual/24-chuzha-proshyvka.md:66 klas:F -->
-### T-24-027 · proza · рядок 66
+<!-- fc id:T-24-031 sha:76bdb94f src:manual/24-chuzha-proshyvka.md:66 klas:F -->
+### T-24-031 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -363,8 +415,8 @@
 
 ---
 
-<!-- fc id:T-24-028 sha:51ac664e src:manual/24-chuzha-proshyvka.md:66 klas:F -->
-### T-24-028 · proza · рядок 66
+<!-- fc id:T-24-032 sha:51ac664e src:manual/24-chuzha-proshyvka.md:66 klas:F -->
+### T-24-032 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -376,8 +428,8 @@
 
 ---
 
-<!-- fc id:T-24-029 sha:ee19140e src:manual/24-chuzha-proshyvka.md:74 klas:F -->
-### T-24-029 · proza · рядок 74
+<!-- fc id:T-24-033 sha:ee19140e src:manual/24-chuzha-proshyvka.md:74 klas:F -->
+### T-24-033 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -389,8 +441,8 @@
 
 ---
 
-<!-- fc id:T-24-030 sha:c8fce846 src:manual/24-chuzha-proshyvka.md:74 klas:F -->
-### T-24-030 · proza · рядок 74
+<!-- fc id:T-24-034 sha:c8fce846 src:manual/24-chuzha-proshyvka.md:74 klas:F -->
+### T-24-034 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -402,8 +454,8 @@
 
 ---
 
-<!-- fc id:T-24-031 sha:a83a6314 src:manual/24-chuzha-proshyvka.md:78 klas:F -->
-### T-24-031 · proza · рядок 78
+<!-- fc id:T-24-035 sha:a83a6314 src:manual/24-chuzha-proshyvka.md:78 klas:F -->
+### T-24-035 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -415,8 +467,8 @@
 
 ---
 
-<!-- fc id:T-24-032 sha:0615bf62 src:manual/24-chuzha-proshyvka.md:80 klas:F -->
-### T-24-032 · kod · рядок 80
+<!-- fc id:T-24-036 sha:0615bf62 src:manual/24-chuzha-proshyvka.md:80 klas:F -->
+### T-24-036 · kod · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -430,8 +482,21 @@
 
 ---
 
-<!-- fc id:T-24-033 sha:8780dde8 src:manual/24-chuzha-proshyvka.md:84 klas:F -->
-### T-24-033 · proza · рядок 84
+<!-- fc id:T-24-037 sha:fe1f802d src:manual/24-chuzha-proshyvka.md:81 klas:F -->
+### T-24-037 · kod-ryadok · рядок 81
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-24-038 sha:8780dde8 src:manual/24-chuzha-proshyvka.md:84 klas:F -->
+### T-24-038 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -443,8 +508,8 @@
 
 ---
 
-<!-- fc id:T-24-034 sha:a597c836 src:manual/24-chuzha-proshyvka.md:84 klas:F -->
-### T-24-034 · proza · рядок 84
+<!-- fc id:T-24-039 sha:a597c836 src:manual/24-chuzha-proshyvka.md:84 klas:F -->
+### T-24-039 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -456,8 +521,8 @@
 
 ---
 
-<!-- fc id:T-24-035 sha:68f95422 src:manual/24-chuzha-proshyvka.md:84 klas:F -->
-### T-24-035 · proza · рядок 84
+<!-- fc id:T-24-040 sha:68f95422 src:manual/24-chuzha-proshyvka.md:84 klas:F -->
+### T-24-040 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -469,8 +534,8 @@
 
 ---
 
-<!-- fc id:T-24-036 sha:ae243f3d src:manual/24-chuzha-proshyvka.md:89 klas:F -->
-### T-24-036 · proza · рядок 89
+<!-- fc id:T-24-041 sha:ae243f3d src:manual/24-chuzha-proshyvka.md:89 klas:F -->
+### T-24-041 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -482,8 +547,8 @@
 
 ---
 
-<!-- fc id:T-24-037 sha:e768e0e9 src:manual/24-chuzha-proshyvka.md:95 klas:F -->
-### T-24-037 · proza · рядок 95
+<!-- fc id:T-24-042 sha:e768e0e9 src:manual/24-chuzha-proshyvka.md:95 klas:F -->
+### T-24-042 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -495,8 +560,8 @@
 
 ---
 
-<!-- fc id:T-24-038 sha:33a21857 src:manual/24-chuzha-proshyvka.md:98 klas:F -->
-### T-24-038 · proza · рядок 98
+<!-- fc id:T-24-043 sha:33a21857 src:manual/24-chuzha-proshyvka.md:98 klas:F -->
+### T-24-043 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -508,8 +573,8 @@
 
 ---
 
-<!-- fc id:T-24-039 sha:fb9b6086 src:manual/24-chuzha-proshyvka.md:98 klas:F -->
-### T-24-039 · proza · рядок 98
+<!-- fc id:T-24-044 sha:fb9b6086 src:manual/24-chuzha-proshyvka.md:98 klas:F -->
+### T-24-044 · proza · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -521,8 +586,8 @@
 
 ---
 
-<!-- fc id:T-24-040 sha:71d85f42 src:manual/24-chuzha-proshyvka.md:102 klas:F -->
-### T-24-040 · proza · рядок 102
+<!-- fc id:T-24-045 sha:71d85f42 src:manual/24-chuzha-proshyvka.md:102 klas:F -->
+### T-24-045 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -534,8 +599,8 @@
 
 ---
 
-<!-- fc id:T-24-041 sha:728f71be src:manual/24-chuzha-proshyvka.md:108 klas:F -->
-### T-24-041 · proza · рядок 108
+<!-- fc id:T-24-046 sha:728f71be src:manual/24-chuzha-proshyvka.md:108 klas:F -->
+### T-24-046 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -547,8 +612,8 @@
 
 ---
 
-<!-- fc id:T-24-042 sha:0f41d41e src:manual/24-chuzha-proshyvka.md:110 klas:F -->
-### T-24-042 · proza · рядок 110
+<!-- fc id:T-24-047 sha:0f41d41e src:manual/24-chuzha-proshyvka.md:110 klas:F -->
+### T-24-047 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -560,8 +625,8 @@
 
 ---
 
-<!-- fc id:T-24-043 sha:91b6b216 src:manual/24-chuzha-proshyvka.md:113 klas:F -->
-### T-24-043 · proza · рядок 113
+<!-- fc id:T-24-048 sha:91b6b216 src:manual/24-chuzha-proshyvka.md:113 klas:F -->
+### T-24-048 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -573,8 +638,8 @@
 
 ---
 
-<!-- fc id:T-24-044 sha:61bbee4a src:manual/24-chuzha-proshyvka.md:113 klas:F -->
-### T-24-044 · proza · рядок 113
+<!-- fc id:T-24-049 sha:61bbee4a src:manual/24-chuzha-proshyvka.md:113 klas:F -->
+### T-24-049 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -586,8 +651,8 @@
 
 ---
 
-<!-- fc id:T-24-045 sha:f40d7be0 src:manual/24-chuzha-proshyvka.md:118 klas:F -->
-### T-24-045 · proza · рядок 118
+<!-- fc id:T-24-050 sha:f40d7be0 src:manual/24-chuzha-proshyvka.md:118 klas:F -->
+### T-24-050 · proza · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -599,8 +664,8 @@
 
 ---
 
-<!-- fc id:T-24-046 sha:047da961 src:manual/24-chuzha-proshyvka.md:124 klas:F -->
-### T-24-046 · proza · рядок 124
+<!-- fc id:T-24-051 sha:047da961 src:manual/24-chuzha-proshyvka.md:124 klas:F -->
+### T-24-051 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -612,8 +677,8 @@
 
 ---
 
-<!-- fc id:T-24-047 sha:bf4cb5b8 src:manual/24-chuzha-proshyvka.md:128 klas:F -->
-### T-24-047 · proza · рядок 128
+<!-- fc id:T-24-052 sha:bf4cb5b8 src:manual/24-chuzha-proshyvka.md:128 klas:F -->
+### T-24-052 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -625,8 +690,8 @@
 
 ---
 
-<!-- fc id:T-24-048 sha:90de82f6 src:manual/24-chuzha-proshyvka.md:134 klas:F -->
-### T-24-048 · proza · рядок 134
+<!-- fc id:T-24-053 sha:90de82f6 src:manual/24-chuzha-proshyvka.md:134 klas:F -->
+### T-24-053 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -638,8 +703,8 @@
 
 ---
 
-<!-- fc id:T-24-049 sha:22b15af8 src:manual/24-chuzha-proshyvka.md:134 klas:F -->
-### T-24-049 · proza · рядок 134
+<!-- fc id:T-24-054 sha:22b15af8 src:manual/24-chuzha-proshyvka.md:134 klas:F -->
+### T-24-054 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -651,8 +716,8 @@
 
 ---
 
-<!-- fc id:T-24-050 sha:aa4ce0a2 src:manual/24-chuzha-proshyvka.md:140 klas:F -->
-### T-24-050 · proza · рядок 140
+<!-- fc id:T-24-055 sha:aa4ce0a2 src:manual/24-chuzha-proshyvka.md:140 klas:F -->
+### T-24-055 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -664,8 +729,8 @@
 
 ---
 
-<!-- fc id:T-24-051 sha:e018c622 src:manual/24-chuzha-proshyvka.md:140 klas:F -->
-### T-24-051 · proza · рядок 140
+<!-- fc id:T-24-056 sha:e018c622 src:manual/24-chuzha-proshyvka.md:140 klas:F -->
+### T-24-056 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -677,8 +742,8 @@
 
 ---
 
-<!-- fc id:T-24-052 sha:a4f46dd1 src:manual/24-chuzha-proshyvka.md:140 klas:F -->
-### T-24-052 · proza · рядок 140
+<!-- fc id:T-24-057 sha:a4f46dd1 src:manual/24-chuzha-proshyvka.md:140 klas:F -->
+### T-24-057 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -690,8 +755,8 @@
 
 ---
 
-<!-- fc id:T-24-053 sha:51267f7a src:manual/24-chuzha-proshyvka.md:147 klas:F -->
-### T-24-053 · proza · рядок 147
+<!-- fc id:T-24-058 sha:51267f7a src:manual/24-chuzha-proshyvka.md:147 klas:F -->
+### T-24-058 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -703,8 +768,8 @@
 
 ---
 
-<!-- fc id:T-24-054 sha:f9de2c79 src:manual/24-chuzha-proshyvka.md:153 klas:F -->
-### T-24-054 · proza · рядок 153
+<!-- fc id:T-24-059 sha:f9de2c79 src:manual/24-chuzha-proshyvka.md:153 klas:F -->
+### T-24-059 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -716,8 +781,8 @@
 
 ---
 
-<!-- fc id:T-24-055 sha:31d7d4b4 src:manual/24-chuzha-proshyvka.md:156 klas:F -->
-### T-24-055 · proza · рядок 156
+<!-- fc id:T-24-060 sha:31d7d4b4 src:manual/24-chuzha-proshyvka.md:156 klas:F -->
+### T-24-060 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -729,8 +794,8 @@
 
 ---
 
-<!-- fc id:T-24-056 sha:fd0b2ac2 src:manual/24-chuzha-proshyvka.md:158 klas:F -->
-### T-24-056 · proza · рядок 158
+<!-- fc id:T-24-061 sha:fd0b2ac2 src:manual/24-chuzha-proshyvka.md:158 klas:F -->
+### T-24-061 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -742,8 +807,8 @@
 
 ---
 
-<!-- fc id:T-24-057 sha:bfbae2a9 src:manual/24-chuzha-proshyvka.md:163 klas:F -->
-### T-24-057 · proza · рядок 163
+<!-- fc id:T-24-062 sha:bfbae2a9 src:manual/24-chuzha-proshyvka.md:163 klas:F -->
+### T-24-062 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -755,8 +820,8 @@
 
 ---
 
-<!-- fc id:T-24-058 sha:9179143c src:manual/24-chuzha-proshyvka.md:163 klas:F -->
-### T-24-058 · proza · рядок 163
+<!-- fc id:T-24-063 sha:9179143c src:manual/24-chuzha-proshyvka.md:163 klas:F -->
+### T-24-063 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -768,8 +833,8 @@
 
 ---
 
-<!-- fc id:T-24-059 sha:23897b30 src:manual/24-chuzha-proshyvka.md:170 klas:F -->
-### T-24-059 · proza · рядок 170
+<!-- fc id:T-24-064 sha:23897b30 src:manual/24-chuzha-proshyvka.md:170 klas:F -->
+### T-24-064 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -781,8 +846,8 @@
 
 ---
 
-<!-- fc id:T-24-060 sha:850b62ce src:manual/24-chuzha-proshyvka.md:172 klas:F -->
-### T-24-060 · proza · рядок 172
+<!-- fc id:T-24-065 sha:850b62ce src:manual/24-chuzha-proshyvka.md:172 klas:F -->
+### T-24-065 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -794,8 +859,8 @@
 
 ---
 
-<!-- fc id:T-24-061 sha:7a6148ae src:manual/24-chuzha-proshyvka.md:172 klas:F -->
-### T-24-061 · proza · рядок 172
+<!-- fc id:T-24-066 sha:7a6148ae src:manual/24-chuzha-proshyvka.md:172 klas:F -->
+### T-24-066 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -807,8 +872,8 @@
 
 ---
 
-<!-- fc id:T-24-062 sha:2071b340 src:manual/24-chuzha-proshyvka.md:175 klas:F -->
-### T-24-062 · proza · рядок 175
+<!-- fc id:T-24-067 sha:2071b340 src:manual/24-chuzha-proshyvka.md:175 klas:F -->
+### T-24-067 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -820,8 +885,8 @@
 
 ---
 
-<!-- fc id:T-24-063 sha:60caff3a src:manual/24-chuzha-proshyvka.md:175 klas:F -->
-### T-24-063 · proza · рядок 175
+<!-- fc id:T-24-068 sha:60caff3a src:manual/24-chuzha-proshyvka.md:175 klas:F -->
+### T-24-068 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -833,8 +898,8 @@
 
 ---
 
-<!-- fc id:T-24-064 sha:9d57a86a src:manual/24-chuzha-proshyvka.md:181 klas:F -->
-### T-24-064 · proza · рядок 181
+<!-- fc id:T-24-069 sha:9d57a86a src:manual/24-chuzha-proshyvka.md:181 klas:F -->
+### T-24-069 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -846,8 +911,8 @@
 
 ---
 
-<!-- fc id:T-24-065 sha:a234464f src:manual/24-chuzha-proshyvka.md:181 klas:F -->
-### T-24-065 · proza · рядок 181
+<!-- fc id:T-24-070 sha:a234464f src:manual/24-chuzha-proshyvka.md:181 klas:F -->
+### T-24-070 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -859,8 +924,8 @@
 
 ---
 
-<!-- fc id:T-24-066 sha:a888acf1 src:manual/24-chuzha-proshyvka.md:181 klas:F -->
-### T-24-066 · proza · рядок 181
+<!-- fc id:T-24-071 sha:a888acf1 src:manual/24-chuzha-proshyvka.md:181 klas:F -->
+### T-24-071 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -872,8 +937,8 @@
 
 ---
 
-<!-- fc id:T-24-067 sha:e5ffb553 src:manual/24-chuzha-proshyvka.md:181 klas:F -->
-### T-24-067 · proza · рядок 181
+<!-- fc id:T-24-072 sha:e5ffb553 src:manual/24-chuzha-proshyvka.md:181 klas:F -->
+### T-24-072 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -885,8 +950,8 @@
 
 ---
 
-<!-- fc id:T-24-068 sha:d6ef92d9 src:manual/24-chuzha-proshyvka.md:188 klas:F -->
-### T-24-068 · proza · рядок 188
+<!-- fc id:T-24-073 sha:d6ef92d9 src:manual/24-chuzha-proshyvka.md:188 klas:F -->
+### T-24-073 · proza · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -898,8 +963,8 @@
 
 ---
 
-<!-- fc id:T-24-069 sha:34750b8a src:manual/24-chuzha-proshyvka.md:191 klas:F -->
-### T-24-069 · proza · рядок 191
+<!-- fc id:T-24-074 sha:34750b8a src:manual/24-chuzha-proshyvka.md:191 klas:F -->
+### T-24-074 · proza · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -911,8 +976,8 @@
 
 ---
 
-<!-- fc id:T-24-070 sha:a0a3dbf2 src:manual/24-chuzha-proshyvka.md:194 klas:F -->
-### T-24-070 · proza · рядок 194
+<!-- fc id:T-24-075 sha:a0a3dbf2 src:manual/24-chuzha-proshyvka.md:194 klas:F -->
+### T-24-075 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -924,8 +989,8 @@
 
 ---
 
-<!-- fc id:T-24-071 sha:8cb8af19 src:manual/24-chuzha-proshyvka.md:197 klas:F -->
-### T-24-071 · proza · рядок 197
+<!-- fc id:T-24-076 sha:8cb8af19 src:manual/24-chuzha-proshyvka.md:197 klas:F -->
+### T-24-076 · proza · рядок 197
 
 **Книга каже, дослівно:**
 

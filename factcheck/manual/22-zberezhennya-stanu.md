@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/22-zberezhennya-stanu.md`
 
-Одиниць твердження: **63**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **65**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -510,8 +510,34 @@
 
 ---
 
-<!-- fc id:T-22-039 sha:183e8eeb src:manual/22-zberezhennya-stanu.md:105 klas:F -->
-### T-22-039 · proza · рядок 105
+<!-- fc id:T-22-039 sha:4c5a16ee src:manual/22-zberezhennya-stanu.md:101 klas:F -->
+### T-22-039 · kod-ryadok · рядок 101
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 flash-id
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-22-040 sha:213017c0 src:manual/22-zberezhennya-stanu.md:102 klas:F -->
+### T-22-040 · kod-ryadok · рядок 102
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-22-041 sha:183e8eeb src:manual/22-zberezhennya-stanu.md:105 klas:F -->
+### T-22-041 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -523,8 +549,8 @@
 
 ---
 
-<!-- fc id:T-22-040 sha:2403c92b src:manual/22-zberezhennya-stanu.md:105 klas:F -->
-### T-22-040 · proza · рядок 105
+<!-- fc id:T-22-042 sha:2403c92b src:manual/22-zberezhennya-stanu.md:105 klas:F -->
+### T-22-042 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -536,8 +562,8 @@
 
 ---
 
-<!-- fc id:T-22-041 sha:51ccc16f src:manual/22-zberezhennya-stanu.md:110 klas:F -->
-### T-22-041 · proza · рядок 110
+<!-- fc id:T-22-043 sha:51ccc16f src:manual/22-zberezhennya-stanu.md:110 klas:F -->
+### T-22-043 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -549,8 +575,8 @@
 
 ---
 
-<!-- fc id:T-22-042 sha:ecd3eefc src:manual/22-zberezhennya-stanu.md:110 klas:F -->
-### T-22-042 · proza · рядок 110
+<!-- fc id:T-22-044 sha:ecd3eefc src:manual/22-zberezhennya-stanu.md:110 klas:F -->
+### T-22-044 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -562,8 +588,8 @@
 
 ---
 
-<!-- fc id:T-22-043 sha:180242fb src:manual/22-zberezhennya-stanu.md:114 klas:F -->
-### T-22-043 · proza · рядок 114
+<!-- fc id:T-22-045 sha:180242fb src:manual/22-zberezhennya-stanu.md:114 klas:F -->
+### T-22-045 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -575,8 +601,8 @@
 
 ---
 
-<!-- fc id:T-22-044 sha:e474fa90 src:manual/22-zberezhennya-stanu.md:114 klas:F -->
-### T-22-044 · proza · рядок 114
+<!-- fc id:T-22-046 sha:e474fa90 src:manual/22-zberezhennya-stanu.md:114 klas:F -->
+### T-22-046 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -588,8 +614,8 @@
 
 ---
 
-<!-- fc id:T-22-045 sha:0ab3bd18 src:manual/22-zberezhennya-stanu.md:118 klas:F -->
-### T-22-045 · proza · рядок 118
+<!-- fc id:T-22-047 sha:0ab3bd18 src:manual/22-zberezhennya-stanu.md:118 klas:F -->
+### T-22-047 · proza · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -601,8 +627,8 @@
 
 ---
 
-<!-- fc id:T-22-046 sha:827ea730 src:manual/22-zberezhennya-stanu.md:122 klas:F -->
-### T-22-046 · proza · рядок 122
+<!-- fc id:T-22-048 sha:827ea730 src:manual/22-zberezhennya-stanu.md:122 klas:F -->
+### T-22-048 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -614,8 +640,8 @@
 
 ---
 
-<!-- fc id:T-22-047 sha:d745dfcb src:manual/22-zberezhennya-stanu.md:125 klas:F -->
-### T-22-047 · proza · рядок 125
+<!-- fc id:T-22-049 sha:d745dfcb src:manual/22-zberezhennya-stanu.md:125 klas:F -->
+### T-22-049 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -627,8 +653,8 @@
 
 ---
 
-<!-- fc id:T-22-048 sha:3022a741 src:manual/22-zberezhennya-stanu.md:125 klas:F -->
-### T-22-048 · proza · рядок 125
+<!-- fc id:T-22-050 sha:3022a741 src:manual/22-zberezhennya-stanu.md:125 klas:F -->
+### T-22-050 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -640,8 +666,8 @@
 
 ---
 
-<!-- fc id:T-22-049 sha:9ef15fdb src:manual/22-zberezhennya-stanu.md:129 klas:F -->
-### T-22-049 · proza · рядок 129
+<!-- fc id:T-22-051 sha:9ef15fdb src:manual/22-zberezhennya-stanu.md:129 klas:F -->
+### T-22-051 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -653,8 +679,8 @@
 
 ---
 
-<!-- fc id:T-22-050 sha:71482846 src:manual/22-zberezhennya-stanu.md:129 klas:F -->
-### T-22-050 · proza · рядок 129
+<!-- fc id:T-22-052 sha:71482846 src:manual/22-zberezhennya-stanu.md:129 klas:F -->
+### T-22-052 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -666,8 +692,8 @@
 
 ---
 
-<!-- fc id:T-22-051 sha:759ecadf src:manual/22-zberezhennya-stanu.md:134 klas:F -->
-### T-22-051 · proza · рядок 134
+<!-- fc id:T-22-053 sha:759ecadf src:manual/22-zberezhennya-stanu.md:134 klas:F -->
+### T-22-053 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -679,8 +705,8 @@
 
 ---
 
-<!-- fc id:T-22-052 sha:1c8a70f9 src:manual/22-zberezhennya-stanu.md:134 klas:F -->
-### T-22-052 · proza · рядок 134
+<!-- fc id:T-22-054 sha:1c8a70f9 src:manual/22-zberezhennya-stanu.md:134 klas:F -->
+### T-22-054 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -692,8 +718,8 @@
 
 ---
 
-<!-- fc id:T-22-053 sha:31a173a9 src:manual/22-zberezhennya-stanu.md:136 klas:F -->
-### T-22-053 · kod · рядок 136
+<!-- fc id:T-22-055 sha:31a173a9 src:manual/22-zberezhennya-stanu.md:136 klas:F -->
+### T-22-055 · kod · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -713,8 +739,8 @@
 
 ---
 
-<!-- fc id:T-22-054 sha:377a817e src:manual/22-zberezhennya-stanu.md:146 klas:F -->
-### T-22-054 · proza · рядок 146
+<!-- fc id:T-22-056 sha:377a817e src:manual/22-zberezhennya-stanu.md:146 klas:F -->
+### T-22-056 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -726,8 +752,8 @@
 
 ---
 
-<!-- fc id:T-22-055 sha:4168973d src:manual/22-zberezhennya-stanu.md:146 klas:F -->
-### T-22-055 · proza · рядок 146
+<!-- fc id:T-22-057 sha:4168973d src:manual/22-zberezhennya-stanu.md:146 klas:F -->
+### T-22-057 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -739,8 +765,8 @@
 
 ---
 
-<!-- fc id:T-22-056 sha:f15538f5 src:manual/22-zberezhennya-stanu.md:152 klas:F -->
-### T-22-056 · proza · рядок 152
+<!-- fc id:T-22-058 sha:f15538f5 src:manual/22-zberezhennya-stanu.md:152 klas:F -->
+### T-22-058 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -752,8 +778,8 @@
 
 ---
 
-<!-- fc id:T-22-057 sha:20e09f60 src:manual/22-zberezhennya-stanu.md:152 klas:F -->
-### T-22-057 · proza · рядок 152
+<!-- fc id:T-22-059 sha:20e09f60 src:manual/22-zberezhennya-stanu.md:152 klas:F -->
+### T-22-059 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -765,8 +791,8 @@
 
 ---
 
-<!-- fc id:T-22-058 sha:9555d4f3 src:manual/22-zberezhennya-stanu.md:155 klas:F -->
-### T-22-058 · proza · рядок 155
+<!-- fc id:T-22-060 sha:9555d4f3 src:manual/22-zberezhennya-stanu.md:155 klas:F -->
+### T-22-060 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -778,8 +804,8 @@
 
 ---
 
-<!-- fc id:T-22-059 sha:851adcac src:manual/22-zberezhennya-stanu.md:161 klas:F -->
-### T-22-059 · proza · рядок 161
+<!-- fc id:T-22-061 sha:851adcac src:manual/22-zberezhennya-stanu.md:161 klas:F -->
+### T-22-061 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -791,8 +817,8 @@
 
 ---
 
-<!-- fc id:T-22-060 sha:cf72c89e src:manual/22-zberezhennya-stanu.md:163 klas:F -->
-### T-22-060 · proza · рядок 163
+<!-- fc id:T-22-062 sha:cf72c89e src:manual/22-zberezhennya-stanu.md:163 klas:F -->
+### T-22-062 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -804,8 +830,8 @@
 
 ---
 
-<!-- fc id:T-22-061 sha:de6d89b1 src:manual/22-zberezhennya-stanu.md:165 klas:F -->
-### T-22-061 · proza · рядок 165
+<!-- fc id:T-22-063 sha:de6d89b1 src:manual/22-zberezhennya-stanu.md:165 klas:F -->
+### T-22-063 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -817,8 +843,8 @@
 
 ---
 
-<!-- fc id:T-22-062 sha:7143f671 src:manual/22-zberezhennya-stanu.md:168 klas:F -->
-### T-22-062 · proza · рядок 168
+<!-- fc id:T-22-064 sha:7143f671 src:manual/22-zberezhennya-stanu.md:168 klas:F -->
+### T-22-064 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -830,8 +856,8 @@
 
 ---
 
-<!-- fc id:T-22-063 sha:a99ef027 src:manual/22-zberezhennya-stanu.md:171 klas:F -->
-### T-22-063 · proza · рядок 171
+<!-- fc id:T-22-065 sha:a99ef027 src:manual/22-zberezhennya-stanu.md:171 klas:F -->
+### T-22-065 · proza · рядок 171
 
 **Книга каже, дослівно:**
 

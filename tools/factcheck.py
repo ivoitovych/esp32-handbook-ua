@@ -55,14 +55,67 @@ def sha(text: str) -> str:
     return hashlib.sha256(" ".join(text.split()).encode("utf-8")).hexdigest()[:8]
 
 
+# Рядок коду, який щось стверджує про світ: виклик, константа, команда,
+# запис у регістр. Решта (дужки, коментарі, оголошення змінних) нічого не
+# стверджує і в реєстр не йде.
+RE_KOD_TVERDZHENNYA = re.compile(
+    r"^\s*(?:"
+    r"#define\s+\w+|"
+    r"#include\s*[<\"]|"
+    r"[A-Za-z_][\w:.]*\s*\([^;]*\)\s*[;,]?\s*$|"          # виклик
+    r"\.\w+\s*=|"                                          # ініціалізація поля
+    r"(?:esptool|idf\.py|espefuse|pio|nvs_partition_gen|picocom|minicom|"
+    r"screen|dd|python|strings|xtensa-|riscv32-|sudo|ls|dmesg|lsof|git|make)\b"
+    r")"
+)
+
+
+def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
+    """Таблиця → окреме твердження на кожну **комірку**, а не на рядок.
+
+    Рядок «| UART | 3 | 2 | 3 | 2 | 3 | 2 |» — це шість незалежних
+    тверджень про шість різних чипів, і звіреність п'яти з них нічого не
+    каже про шосте. Тому комірка розкладається у формі «рядок · колонка →
+    значення», яка читається як самостійне речення.
+
+    Таблиці на дві колонки лишаються цілими: там рядок і є твердженням
+    («симптом → причина»), і різати його безглуздо.
+    """
+    korysni = [r for r in ryadky if not re.match(r"^\|[\s:|-]+\|$", r.strip())]
+    if not korysni:
+        return []
+
+    def komirky(r: str) -> list[str]:
+        return [c.strip() for c in r.strip().strip("|").split("|")]
+
+    shapka = komirky(korysni[0])
+    if len(shapka) <= 2:
+        return [("tablycya", r.strip(), vid + i) for i, r in enumerate(ryadky)
+                if not re.match(r"^\|[\s:|-]+\|$", r.strip())]
+
+    out: list[tuple[str, str, int]] = []
+    out.append(("tablycya-shapka", korysni[0].strip(), vid))
+    for i, r in enumerate(korysni[1:], 1):
+        k = komirky(r)
+        pidmet = k[0] if k else ""
+        for j, v in enumerate(k[1:], 1):
+            if j >= len(shapka) or not v or v in ("—", "-", ""):
+                continue
+            kolonka = shapka[j] or f"колонка {j}"
+            out.append(("komirka", f"{pidmet} · {kolonka} → {v}", vid + i))
+    return out
+
+
 def rozbyty(text: str) -> list[tuple[str, str, int]]:
     """Файл → перелік (вид, дослівний текст, номер рядка).
 
     Види одиниць:
-      proza    речення поза кодом і таблицями
-      tablycya рядок таблиці (кожен рядок — окреме твердження)
-      kod      блок коду цілком (перевіряється як одне: чи компілюється,
-               чи існують виклики, чи правильні одиниці аргументів)
+      proza            речення поза кодом і таблицями
+      tablycya         рядок таблиці на дві колонки
+      tablycya-shapka  шапка широкої таблиці
+      komirka          окрема комірка широкої таблиці
+      kod              блок коду цілком — як контекст
+      kod-ryadok       окремий рядок коду, що щось стверджує
 
     Заголовки, порожні рядки й розмітку блоків пропускаємо: вони нічого
     не стверджують про світ.
@@ -97,15 +150,19 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
             i += 1
             while i < n and not ryadky[i].lstrip().startswith("```"):
                 i += 1
-            blok = "\n".join(ryadky[start:i + 1])
-            odynyci.append(("kod", blok, start + 1))
+            tilo = ryadky[start + 1:i]
+            odynyci.append(("kod", "\n".join(ryadky[start:i + 1]), start + 1))
+            for j, kr in enumerate(tilo):
+                if RE_KOD_TVERDZHENNYA.match(kr) and len(kr.strip()) > 6:
+                    odynyci.append(("kod-ryadok", kr.strip(), start + 2 + j))
             i += 1
             continue
         if r.startswith("|"):
             zlyty_prozu()
-            if not re.match(r"^\|[\s:|-]+\|$", r):
-                odynyci.append(("tablycya", r.strip(), i + 1))
-            i += 1
+            start = i
+            while i < n and ryadky[i].startswith("|"):
+                i += 1
+            odynyci += rozbyty_tablycyu(ryadky[start:i], start + 1)
             continue
         if r.startswith("#") or r.startswith(":::") or not r.strip():
             zlyty_prozu()

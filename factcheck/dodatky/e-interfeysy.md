@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/e-interfeysy.md`
 
-Одиниць твердження: **84**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **149**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -59,7 +59,7 @@
 ---
 
 <!-- fc id:T-E-005 sha:17f406f5 src:dodatky/e-interfeysy.md:11 klas:F -->
-### T-E-005 · tablycya · рядок 11
+### T-E-005 · tablycya-shapka · рядок 11
 
 **Книга каже, дослівно:**
 
@@ -71,12 +71,12 @@
 
 ---
 
-<!-- fc id:T-E-006 sha:d396c111 src:dodatky/e-interfeysy.md:13 klas:F -->
-### T-E-006 · tablycya · рядок 13
+<!-- fc id:T-E-006 sha:dcae0ce9 src:dodatky/e-interfeysy.md:12 klas:F -->
+### T-E-006 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> | BME280 / BMP280 | `0x76`, `0x77` | тиск, T, вологість | реєстр IDF; Adafruit BME280 |
+> BME280 / BMP280 · Адреса → `0x76`, `0x77`
 
 **Доказ**
 
@@ -84,12 +84,12 @@
 
 ---
 
-<!-- fc id:T-E-007 sha:df65a96c src:dodatky/e-interfeysy.md:14 klas:F -->
-### T-E-007 · tablycya · рядок 14
+<!-- fc id:T-E-007 sha:3f3e6545 src:dodatky/e-interfeysy.md:12 klas:F -->
+### T-E-007 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> | SHT3x / SHT4x | `0x44`, `0x45` | точна вологість | Sensirion |
+> BME280 / BMP280 · Що дає → тиск, T, вологість
 
 **Доказ**
 
@@ -97,12 +97,12 @@
 
 ---
 
-<!-- fc id:T-E-008 sha:61857dc7 src:dodatky/e-interfeysy.md:15 klas:F -->
-### T-E-008 · tablycya · рядок 15
+<!-- fc id:T-E-008 sha:e2458664 src:dodatky/e-interfeysy.md:12 klas:F -->
+### T-E-008 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> | BH1750 | `0x23`, `0x5C` | освітленість, люкс | BH1750 |
+> BME280 / BMP280 · Бібліотека → реєстр IDF; Adafruit BME280
 
 **Доказ**
 
@@ -110,12 +110,12 @@
 
 ---
 
-<!-- fc id:T-E-009 sha:f5962bb7 src:dodatky/e-interfeysy.md:16 klas:F -->
-### T-E-009 · tablycya · рядок 16
+<!-- fc id:T-E-009 sha:5f4e30c5 src:dodatky/e-interfeysy.md:13 klas:F -->
+### T-E-009 · komirka · рядок 13
 
 **Книга каже, дослівно:**
 
-> | DS3231 | `0x68` | RTC з батарейкою | RTClib |
+> SHT3x / SHT4x · Адреса → `0x44`, `0x45`
 
 **Доказ**
 
@@ -123,12 +123,12 @@
 
 ---
 
-<!-- fc id:T-E-010 sha:76a58ba1 src:dodatky/e-interfeysy.md:17 klas:F -->
-### T-E-010 · tablycya · рядок 17
+<!-- fc id:T-E-010 sha:11669d9f src:dodatky/e-interfeysy.md:13 klas:F -->
+### T-E-010 · komirka · рядок 13
 
 **Книга каже, дослівно:**
 
-> | MPU6050 | `0x68`, `0x69` | акселерометр, гіроскоп | MPU6050 |
+> SHT3x / SHT4x · Що дає → точна вологість
 
 **Доказ**
 
@@ -136,12 +136,12 @@
 
 ---
 
-<!-- fc id:T-E-011 sha:2270a537 src:dodatky/e-interfeysy.md:18 klas:F -->
-### T-E-011 · tablycya · рядок 18
+<!-- fc id:T-E-011 sha:57cc4434 src:dodatky/e-interfeysy.md:13 klas:F -->
+### T-E-011 · komirka · рядок 13
 
 **Книга каже, дослівно:**
 
-> | BNO055 | `0x28`, `0x29` | готова орієнтація | Adafruit BNO055 |
+> SHT3x / SHT4x · Бібліотека → Sensirion
 
 **Доказ**
 
@@ -149,12 +149,12 @@
 
 ---
 
-<!-- fc id:T-E-012 sha:d530b13c src:dodatky/e-interfeysy.md:19 klas:F -->
-### T-E-012 · tablycya · рядок 19
+<!-- fc id:T-E-012 sha:3a822c76 src:dodatky/e-interfeysy.md:14 klas:F -->
+### T-E-012 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
-> | INA219 / INA226 | `0x40`+ | струм і напруга | Adafruit INA219 |
+> BH1750 · Адреса → `0x23`, `0x5C`
 
 **Доказ**
 
@@ -162,12 +162,12 @@
 
 ---
 
-<!-- fc id:T-E-013 sha:7200635f src:dodatky/e-interfeysy.md:20 klas:F -->
-### T-E-013 · tablycya · рядок 20
+<!-- fc id:T-E-013 sha:1899b23c src:dodatky/e-interfeysy.md:14 klas:F -->
+### T-E-013 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
-> | VL53L0X / VL53L1X | `0x29` | лазерна відстань | VL53L0X |
+> BH1750 · Що дає → освітленість, люкс
 
 **Доказ**
 
@@ -175,12 +175,12 @@
 
 ---
 
-<!-- fc id:T-E-014 sha:d6dbd5a7 src:dodatky/e-interfeysy.md:21 klas:F -->
-### T-E-014 · tablycya · рядок 21
+<!-- fc id:T-E-014 sha:60e52cde src:dodatky/e-interfeysy.md:14 klas:F -->
+### T-E-014 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
-> | SSD1306 / SH1106 | `0x3C`, `0x3D` | OLED-дисплей | U8g2 |
+> BH1750 · Бібліотека → BH1750
 
 **Доказ**
 
@@ -188,12 +188,12 @@
 
 ---
 
-<!-- fc id:T-E-015 sha:066e4a3d src:dodatky/e-interfeysy.md:22 klas:F -->
-### T-E-015 · tablycya · рядок 22
+<!-- fc id:T-E-015 sha:6004e5d0 src:dodatky/e-interfeysy.md:15 klas:F -->
+### T-E-015 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
-> | PCF8574 | `0x20`–`0x27` | розширювач портів | PCF8574 |
+> DS3231 · Адреса → `0x68`
 
 **Доказ**
 
@@ -201,12 +201,12 @@
 
 ---
 
-<!-- fc id:T-E-016 sha:03ac444f src:dodatky/e-interfeysy.md:23 klas:F -->
-### T-E-016 · tablycya · рядок 23
+<!-- fc id:T-E-016 sha:450710eb src:dodatky/e-interfeysy.md:15 klas:F -->
+### T-E-016 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
-> | MCP23017 | `0x20`–`0x27` | розширювач, 16 пінів | MCP23017 |
+> DS3231 · Що дає → RTC з батарейкою
 
 **Доказ**
 
@@ -214,12 +214,12 @@
 
 ---
 
-<!-- fc id:T-E-017 sha:b5e046bc src:dodatky/e-interfeysy.md:24 klas:F -->
-### T-E-017 · tablycya · рядок 24
+<!-- fc id:T-E-017 sha:aeaa568e src:dodatky/e-interfeysy.md:15 klas:F -->
+### T-E-017 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
-> | TCA9548A | `0x70`–`0x77` | мультиплексор шини | TCA9548A |
+> DS3231 · Бібліотека → RTClib
 
 **Доказ**
 
@@ -227,12 +227,12 @@
 
 ---
 
-<!-- fc id:T-E-018 sha:de4743bb src:dodatky/e-interfeysy.md:25 klas:F -->
-### T-E-018 · tablycya · рядок 25
+<!-- fc id:T-E-018 sha:274457e9 src:dodatky/e-interfeysy.md:16 klas:F -->
+### T-E-018 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
-> | AT24Cxx | `0x50`–`0x57` | EEPROM | — |
+> MPU6050 · Адреса → `0x68`, `0x69`
 
 **Доказ**
 
@@ -240,8 +240,333 @@
 
 ---
 
-<!-- fc id:T-E-019 sha:9f46567b src:dodatky/e-interfeysy.md:28 klas:F -->
-### T-E-019 · proza · рядок 28
+<!-- fc id:T-E-019 sha:d5040300 src:dodatky/e-interfeysy.md:16 klas:F -->
+### T-E-019 · komirka · рядок 16
+
+**Книга каже, дослівно:**
+
+> MPU6050 · Що дає → акселерометр, гіроскоп
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-020 sha:6181e702 src:dodatky/e-interfeysy.md:16 klas:F -->
+### T-E-020 · komirka · рядок 16
+
+**Книга каже, дослівно:**
+
+> MPU6050 · Бібліотека → MPU6050
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-021 sha:04902e5b src:dodatky/e-interfeysy.md:17 klas:F -->
+### T-E-021 · komirka · рядок 17
+
+**Книга каже, дослівно:**
+
+> BNO055 · Адреса → `0x28`, `0x29`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-022 sha:825b180a src:dodatky/e-interfeysy.md:17 klas:F -->
+### T-E-022 · komirka · рядок 17
+
+**Книга каже, дослівно:**
+
+> BNO055 · Що дає → готова орієнтація
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-023 sha:b55c4a45 src:dodatky/e-interfeysy.md:17 klas:F -->
+### T-E-023 · komirka · рядок 17
+
+**Книга каже, дослівно:**
+
+> BNO055 · Бібліотека → Adafruit BNO055
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-024 sha:3a9afe05 src:dodatky/e-interfeysy.md:18 klas:F -->
+### T-E-024 · komirka · рядок 18
+
+**Книга каже, дослівно:**
+
+> INA219 / INA226 · Адреса → `0x40`+
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-025 sha:b0502556 src:dodatky/e-interfeysy.md:18 klas:F -->
+### T-E-025 · komirka · рядок 18
+
+**Книга каже, дослівно:**
+
+> INA219 / INA226 · Що дає → струм і напруга
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-026 sha:bf63dda1 src:dodatky/e-interfeysy.md:18 klas:F -->
+### T-E-026 · komirka · рядок 18
+
+**Книга каже, дослівно:**
+
+> INA219 / INA226 · Бібліотека → Adafruit INA219
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-027 sha:d621df80 src:dodatky/e-interfeysy.md:19 klas:F -->
+### T-E-027 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> VL53L0X / VL53L1X · Адреса → `0x29`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-028 sha:eca8e7cb src:dodatky/e-interfeysy.md:19 klas:F -->
+### T-E-028 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> VL53L0X / VL53L1X · Що дає → лазерна відстань
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-029 sha:031a738c src:dodatky/e-interfeysy.md:19 klas:F -->
+### T-E-029 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> VL53L0X / VL53L1X · Бібліотека → VL53L0X
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-030 sha:974da9fb src:dodatky/e-interfeysy.md:20 klas:F -->
+### T-E-030 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> SSD1306 / SH1106 · Адреса → `0x3C`, `0x3D`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-031 sha:a6fff190 src:dodatky/e-interfeysy.md:20 klas:F -->
+### T-E-031 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> SSD1306 / SH1106 · Що дає → OLED-дисплей
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-032 sha:caaaf18d src:dodatky/e-interfeysy.md:20 klas:F -->
+### T-E-032 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> SSD1306 / SH1106 · Бібліотека → U8g2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-033 sha:af561b9a src:dodatky/e-interfeysy.md:21 klas:F -->
+### T-E-033 · komirka · рядок 21
+
+**Книга каже, дослівно:**
+
+> PCF8574 · Адреса → `0x20`–`0x27`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-034 sha:84958947 src:dodatky/e-interfeysy.md:21 klas:F -->
+### T-E-034 · komirka · рядок 21
+
+**Книга каже, дослівно:**
+
+> PCF8574 · Що дає → розширювач портів
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-035 sha:7da6b06b src:dodatky/e-interfeysy.md:21 klas:F -->
+### T-E-035 · komirka · рядок 21
+
+**Книга каже, дослівно:**
+
+> PCF8574 · Бібліотека → PCF8574
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-036 sha:9ec27075 src:dodatky/e-interfeysy.md:22 klas:F -->
+### T-E-036 · komirka · рядок 22
+
+**Книга каже, дослівно:**
+
+> MCP23017 · Адреса → `0x20`–`0x27`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-037 sha:55153a86 src:dodatky/e-interfeysy.md:22 klas:F -->
+### T-E-037 · komirka · рядок 22
+
+**Книга каже, дослівно:**
+
+> MCP23017 · Що дає → розширювач, 16 пінів
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-038 sha:49d948f0 src:dodatky/e-interfeysy.md:22 klas:F -->
+### T-E-038 · komirka · рядок 22
+
+**Книга каже, дослівно:**
+
+> MCP23017 · Бібліотека → MCP23017
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-039 sha:7d4b5654 src:dodatky/e-interfeysy.md:23 klas:F -->
+### T-E-039 · komirka · рядок 23
+
+**Книга каже, дослівно:**
+
+> TCA9548A · Адреса → `0x70`–`0x77`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-040 sha:302952a9 src:dodatky/e-interfeysy.md:23 klas:F -->
+### T-E-040 · komirka · рядок 23
+
+**Книга каже, дослівно:**
+
+> TCA9548A · Що дає → мультиплексор шини
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-041 sha:ef9fcd2b src:dodatky/e-interfeysy.md:23 klas:F -->
+### T-E-041 · komirka · рядок 23
+
+**Книга каже, дослівно:**
+
+> TCA9548A · Бібліотека → TCA9548A
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-042 sha:ed48c80e src:dodatky/e-interfeysy.md:24 klas:F -->
+### T-E-042 · komirka · рядок 24
+
+**Книга каже, дослівно:**
+
+> AT24Cxx · Адреса → `0x50`–`0x57`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-043 sha:0edbf47b src:dodatky/e-interfeysy.md:24 klas:F -->
+### T-E-043 · komirka · рядок 24
+
+**Книга каже, дослівно:**
+
+> AT24Cxx · Що дає → EEPROM
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-044 sha:9f46567b src:dodatky/e-interfeysy.md:28 klas:F -->
+### T-E-044 · proza · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -253,8 +578,8 @@
 
 ---
 
-<!-- fc id:T-E-020 sha:50f4c8ac src:dodatky/e-interfeysy.md:28 klas:F -->
-### T-E-020 · proza · рядок 28
+<!-- fc id:T-E-045 sha:50f4c8ac src:dodatky/e-interfeysy.md:28 klas:F -->
+### T-E-045 · proza · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -266,8 +591,8 @@
 
 ---
 
-<!-- fc id:T-E-021 sha:cf3f864a src:dodatky/e-interfeysy.md:35 klas:F -->
-### T-E-021 · proza · рядок 35
+<!-- fc id:T-E-046 sha:cf3f864a src:dodatky/e-interfeysy.md:35 klas:F -->
+### T-E-046 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -279,8 +604,8 @@
 
 ---
 
-<!-- fc id:T-E-022 sha:f78815d4 src:dodatky/e-interfeysy.md:37 klas:F -->
-### T-E-022 · tablycya · рядок 37
+<!-- fc id:T-E-047 sha:f78815d4 src:dodatky/e-interfeysy.md:37 klas:F -->
+### T-E-047 · tablycya-shapka · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -292,12 +617,12 @@
 
 ---
 
-<!-- fc id:T-E-023 sha:4ff015a3 src:dodatky/e-interfeysy.md:39 klas:F -->
-### T-E-023 · tablycya · рядок 39
+<!-- fc id:T-E-048 sha:1315fbd8 src:dodatky/e-interfeysy.md:38 klas:F -->
+### T-E-048 · komirka · рядок 38
 
 **Книга каже, дослівно:**
 
-> | ST7789 | 3 | TFT-дисплей | TFT_eSPI, LovyanGFX |
+> ST7789 · Режим → 3
 
 **Доказ**
 
@@ -305,12 +630,12 @@
 
 ---
 
-<!-- fc id:T-E-024 sha:1d5da638 src:dodatky/e-interfeysy.md:40 klas:F -->
-### T-E-024 · tablycya · рядок 40
+<!-- fc id:T-E-049 sha:5524a220 src:dodatky/e-interfeysy.md:38 klas:F -->
+### T-E-049 · komirka · рядок 38
 
 **Книга каже, дослівно:**
 
-> | ILI9341 | 0 | TFT-дисплей | TFT_eSPI, LovyanGFX |
+> ST7789 · Що дає → TFT-дисплей
 
 **Доказ**
 
@@ -318,12 +643,12 @@
 
 ---
 
-<!-- fc id:T-E-025 sha:5aa15f48 src:dodatky/e-interfeysy.md:41 klas:F -->
-### T-E-025 · tablycya · рядок 41
+<!-- fc id:T-E-050 sha:f129922d src:dodatky/e-interfeysy.md:38 klas:F -->
+### T-E-050 · komirka · рядок 38
 
 **Книга каже, дослівно:**
 
-> | microSD | 0 | картка пам'яті | штатний `esp_vfs_fat` |
+> ST7789 · Бібліотека → TFT_eSPI, LovyanGFX
 
 **Доказ**
 
@@ -331,12 +656,12 @@
 
 ---
 
-<!-- fc id:T-E-026 sha:4c957156 src:dodatky/e-interfeysy.md:42 klas:F -->
-### T-E-026 · tablycya · рядок 42
+<!-- fc id:T-E-051 sha:adfd8b57 src:dodatky/e-interfeysy.md:39 klas:F -->
+### T-E-051 · komirka · рядок 39
 
 **Книга каже, дослівно:**
 
-> | SX1276 / RFM95 | 0 | LoRa | RadioLib, LoRa |
+> ILI9341 · Режим → 0
 
 **Доказ**
 
@@ -344,12 +669,12 @@
 
 ---
 
-<!-- fc id:T-E-027 sha:1de3f2ca src:dodatky/e-interfeysy.md:43 klas:F -->
-### T-E-027 · tablycya · рядок 43
+<!-- fc id:T-E-052 sha:dfb7b32b src:dodatky/e-interfeysy.md:39 klas:F -->
+### T-E-052 · komirka · рядок 39
 
 **Книга каже, дослівно:**
 
-> | SX1262 | 0 | LoRa, новіший | RadioLib |
+> ILI9341 · Що дає → TFT-дисплей
 
 **Доказ**
 
@@ -357,12 +682,12 @@
 
 ---
 
-<!-- fc id:T-E-028 sha:ca37f6a3 src:dodatky/e-interfeysy.md:44 klas:F -->
-### T-E-028 · tablycya · рядок 44
+<!-- fc id:T-E-053 sha:f30ebfb1 src:dodatky/e-interfeysy.md:39 klas:F -->
+### T-E-053 · komirka · рядок 39
 
 **Книга каже, дослівно:**
 
-> | NRF24L01 | 0 | радіо 2.4 ГГц | RF24 |
+> ILI9341 · Бібліотека → TFT_eSPI, LovyanGFX
 
 **Доказ**
 
@@ -370,12 +695,12 @@
 
 ---
 
-<!-- fc id:T-E-029 sha:af0bfb33 src:dodatky/e-interfeysy.md:45 klas:F -->
-### T-E-029 · tablycya · рядок 45
+<!-- fc id:T-E-054 sha:8f11bd59 src:dodatky/e-interfeysy.md:40 klas:F -->
+### T-E-054 · komirka · рядок 40
 
 **Книга каже, дослівно:**
 
-> | MCP2515 | 0 | зовнішній CAN | — (у ESP32 є свій, розділ 38) |
+> microSD · Режим → 0
 
 **Доказ**
 
@@ -383,12 +708,12 @@
 
 ---
 
-<!-- fc id:T-E-030 sha:9625beca src:dodatky/e-interfeysy.md:46 klas:F -->
-### T-E-030 · tablycya · рядок 46
+<!-- fc id:T-E-055 sha:59f2f000 src:dodatky/e-interfeysy.md:40 klas:F -->
+### T-E-055 · komirka · рядок 40
 
 **Книга каже, дослівно:**
 
-> | MAX31855 / MAX6675 | 0 | термопара | Adafruit MAX31855 |
+> microSD · Що дає → картка пам'яті
 
 **Доказ**
 
@@ -396,12 +721,12 @@
 
 ---
 
-<!-- fc id:T-E-031 sha:3ae88998 src:dodatky/e-interfeysy.md:47 klas:F -->
-### T-E-031 · tablycya · рядок 47
+<!-- fc id:T-E-056 sha:223f57f7 src:dodatky/e-interfeysy.md:40 klas:F -->
+### T-E-056 · komirka · рядок 40
 
 **Книга каже, дослівно:**
 
-> | ADS1256, MCP3208 | 0/1 | зовнішній точний ADC | — |
+> microSD · Бібліотека → штатний `esp_vfs_fat`
 
 **Доказ**
 
@@ -409,12 +734,12 @@
 
 ---
 
-<!-- fc id:T-E-032 sha:9d016a50 src:dodatky/e-interfeysy.md:48 klas:F -->
-### T-E-032 · tablycya · рядок 48
+<!-- fc id:T-E-057 sha:d5eed7a0 src:dodatky/e-interfeysy.md:41 klas:F -->
+### T-E-057 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
-> | W5500 | 0 | дротовий Ethernet | Ethernet |
+> SX1276 / RFM95 · Режим → 0
 
 **Доказ**
 
@@ -422,12 +747,12 @@
 
 ---
 
-<!-- fc id:T-E-033 sha:38733939 src:dodatky/e-interfeysy.md:49 klas:F -->
-### T-E-033 · tablycya · рядок 49
+<!-- fc id:T-E-058 sha:2d0a3f04 src:dodatky/e-interfeysy.md:41 klas:F -->
+### T-E-058 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
-> | E-paper (SSD16xx) | 0 | електронний папір | GxEPD2 |
+> SX1276 / RFM95 · Що дає → LoRa
 
 **Доказ**
 
@@ -435,8 +760,281 @@
 
 ---
 
-<!-- fc id:T-E-034 sha:508da6ef src:dodatky/e-interfeysy.md:51 klas:F -->
-### T-E-034 · proza · рядок 51
+<!-- fc id:T-E-059 sha:94c061f0 src:dodatky/e-interfeysy.md:41 klas:F -->
+### T-E-059 · komirka · рядок 41
+
+**Книга каже, дослівно:**
+
+> SX1276 / RFM95 · Бібліотека → RadioLib, LoRa
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-060 sha:33326c46 src:dodatky/e-interfeysy.md:42 klas:F -->
+### T-E-060 · komirka · рядок 42
+
+**Книга каже, дослівно:**
+
+> SX1262 · Режим → 0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-061 sha:b83467dd src:dodatky/e-interfeysy.md:42 klas:F -->
+### T-E-061 · komirka · рядок 42
+
+**Книга каже, дослівно:**
+
+> SX1262 · Що дає → LoRa, новіший
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-062 sha:a588779e src:dodatky/e-interfeysy.md:42 klas:F -->
+### T-E-062 · komirka · рядок 42
+
+**Книга каже, дослівно:**
+
+> SX1262 · Бібліотека → RadioLib
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-063 sha:dc8f7e30 src:dodatky/e-interfeysy.md:43 klas:F -->
+### T-E-063 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> NRF24L01 · Режим → 0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-064 sha:722a12f0 src:dodatky/e-interfeysy.md:43 klas:F -->
+### T-E-064 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> NRF24L01 · Що дає → радіо 2.4 ГГц
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-065 sha:e12a5df8 src:dodatky/e-interfeysy.md:43 klas:F -->
+### T-E-065 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> NRF24L01 · Бібліотека → RF24
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-066 sha:27d739d6 src:dodatky/e-interfeysy.md:44 klas:F -->
+### T-E-066 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> MCP2515 · Режим → 0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-067 sha:3ec6e643 src:dodatky/e-interfeysy.md:44 klas:F -->
+### T-E-067 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> MCP2515 · Що дає → зовнішній CAN
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-068 sha:8f789500 src:dodatky/e-interfeysy.md:44 klas:F -->
+### T-E-068 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> MCP2515 · Бібліотека → — (у ESP32 є свій, розділ 38)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-069 sha:39070e8a src:dodatky/e-interfeysy.md:45 klas:F -->
+### T-E-069 · komirka · рядок 45
+
+**Книга каже, дослівно:**
+
+> MAX31855 / MAX6675 · Режим → 0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-070 sha:1aa5f02d src:dodatky/e-interfeysy.md:45 klas:F -->
+### T-E-070 · komirka · рядок 45
+
+**Книга каже, дослівно:**
+
+> MAX31855 / MAX6675 · Що дає → термопара
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-071 sha:5de71916 src:dodatky/e-interfeysy.md:45 klas:F -->
+### T-E-071 · komirka · рядок 45
+
+**Книга каже, дослівно:**
+
+> MAX31855 / MAX6675 · Бібліотека → Adafruit MAX31855
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-072 sha:4371340c src:dodatky/e-interfeysy.md:46 klas:F -->
+### T-E-072 · komirka · рядок 46
+
+**Книга каже, дослівно:**
+
+> ADS1256, MCP3208 · Режим → 0/1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-073 sha:e486f0a5 src:dodatky/e-interfeysy.md:46 klas:F -->
+### T-E-073 · komirka · рядок 46
+
+**Книга каже, дослівно:**
+
+> ADS1256, MCP3208 · Що дає → зовнішній точний ADC
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-074 sha:c89cdd6b src:dodatky/e-interfeysy.md:47 klas:F -->
+### T-E-074 · komirka · рядок 47
+
+**Книга каже, дослівно:**
+
+> W5500 · Режим → 0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-075 sha:95e8ad21 src:dodatky/e-interfeysy.md:47 klas:F -->
+### T-E-075 · komirka · рядок 47
+
+**Книга каже, дослівно:**
+
+> W5500 · Що дає → дротовий Ethernet
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-076 sha:ffad2970 src:dodatky/e-interfeysy.md:47 klas:F -->
+### T-E-076 · komirka · рядок 47
+
+**Книга каже, дослівно:**
+
+> W5500 · Бібліотека → Ethernet
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-077 sha:91a5608b src:dodatky/e-interfeysy.md:48 klas:F -->
+### T-E-077 · komirka · рядок 48
+
+**Книга каже, дослівно:**
+
+> E-paper (SSD16xx) · Режим → 0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-078 sha:ebbcf551 src:dodatky/e-interfeysy.md:48 klas:F -->
+### T-E-078 · komirka · рядок 48
+
+**Книга каже, дослівно:**
+
+> E-paper (SSD16xx) · Що дає → електронний папір
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-079 sha:0053b4f8 src:dodatky/e-interfeysy.md:48 klas:F -->
+### T-E-079 · komirka · рядок 48
+
+**Книга каже, дослівно:**
+
+> E-paper (SSD16xx) · Бібліотека → GxEPD2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-080 sha:508da6ef src:dodatky/e-interfeysy.md:51 klas:F -->
+### T-E-080 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -448,8 +1046,8 @@
 
 ---
 
-<!-- fc id:T-E-035 sha:2584d17b src:dodatky/e-interfeysy.md:55 klas:F -->
-### T-E-035 · proza · рядок 55
+<!-- fc id:T-E-081 sha:2584d17b src:dodatky/e-interfeysy.md:55 klas:F -->
+### T-E-081 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -461,8 +1059,8 @@
 
 ---
 
-<!-- fc id:T-E-036 sha:58e2d28c src:dodatky/e-interfeysy.md:57 klas:F -->
-### T-E-036 · tablycya · рядок 57
+<!-- fc id:T-E-082 sha:58e2d28c src:dodatky/e-interfeysy.md:57 klas:F -->
+### T-E-082 · tablycya-shapka · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -474,12 +1072,12 @@
 
 ---
 
-<!-- fc id:T-E-037 sha:cd137a46 src:dodatky/e-interfeysy.md:59 klas:F -->
-### T-E-037 · tablycya · рядок 59
+<!-- fc id:T-E-083 sha:94d7dcf5 src:dodatky/e-interfeysy.md:58 klas:F -->
+### T-E-083 · komirka · рядок 58
 
 **Книга каже, дослівно:**
 
-> | GPS NEO-6M / NEO-8M | 9600 | координати, точний час (NMEA) |
+> GPS NEO-6M / NEO-8M · Швидкість → 9600
 
 **Доказ**
 
@@ -487,12 +1085,12 @@
 
 ---
 
-<!-- fc id:T-E-038 sha:439956a9 src:dodatky/e-interfeysy.md:60 klas:F -->
-### T-E-038 · tablycya · рядок 60
+<!-- fc id:T-E-084 sha:2aae51ca src:dodatky/e-interfeysy.md:58 klas:F -->
+### T-E-084 · komirka · рядок 58
 
 **Книга каже, дослівно:**
 
-> | MAX485 / SP3485 | будь-яка | RS-485, сотні метрів |
+> GPS NEO-6M / NEO-8M · Що дає → координати, точний час (NMEA)
 
 **Доказ**
 
@@ -500,12 +1098,12 @@
 
 ---
 
-<!-- fc id:T-E-039 sha:ab829ec1 src:dodatky/e-interfeysy.md:61 klas:F -->
-### T-E-039 · tablycya · рядок 61
+<!-- fc id:T-E-085 sha:855aa221 src:dodatky/e-interfeysy.md:59 klas:F -->
+### T-E-085 · komirka · рядок 59
 
 **Книга каже, дослівно:**
 
-> | PMS5003, SDS011 | 9600 | пилові частинки |
+> MAX485 / SP3485 · Швидкість → будь-яка
 
 **Доказ**
 
@@ -513,12 +1111,12 @@
 
 ---
 
-<!-- fc id:T-E-040 sha:3a7a68d8 src:dodatky/e-interfeysy.md:62 klas:F -->
-### T-E-040 · tablycya · рядок 62
+<!-- fc id:T-E-086 sha:c547b848 src:dodatky/e-interfeysy.md:59 klas:F -->
+### T-E-086 · komirka · рядок 59
 
 **Книга каже, дослівно:**
 
-> | MH-Z19 | 9600 | CO₂ |
+> MAX485 / SP3485 · Що дає → RS-485, сотні метрів
 
 **Доказ**
 
@@ -526,12 +1124,12 @@
 
 ---
 
-<!-- fc id:T-E-041 sha:5d95991c src:dodatky/e-interfeysy.md:63 klas:F -->
-### T-E-041 · tablycya · рядок 63
+<!-- fc id:T-E-087 sha:3f504a93 src:dodatky/e-interfeysy.md:60 klas:F -->
+### T-E-087 · komirka · рядок 60
 
 **Книга каже, дослівно:**
 
-> | A6 / SIM800 / SIM7600 | 115200 | стільниковий зв'язок |
+> PMS5003, SDS011 · Швидкість → 9600
 
 **Доказ**
 
@@ -539,12 +1137,12 @@
 
 ---
 
-<!-- fc id:T-E-042 sha:f7fb2efa src:dodatky/e-interfeysy.md:64 klas:F -->
-### T-E-042 · tablycya · рядок 64
+<!-- fc id:T-E-088 sha:0612861d src:dodatky/e-interfeysy.md:60 klas:F -->
+### T-E-088 · komirka · рядок 60
 
 **Книга каже, дослівно:**
 
-> | Модулі відбитків пальців | 57600 | біометрія |
+> PMS5003, SDS011 · Що дає → пилові частинки
 
 **Доказ**
 
@@ -552,12 +1150,12 @@
 
 ---
 
-<!-- fc id:T-E-043 sha:13d9d898 src:dodatky/e-interfeysy.md:65 klas:F -->
-### T-E-043 · tablycya · рядок 65
+<!-- fc id:T-E-089 sha:b8877b39 src:dodatky/e-interfeysy.md:61 klas:F -->
+### T-E-089 · komirka · рядок 61
 
 **Книга каже, дослівно:**
 
-> | Інший мікроконтролер | ваша | companion-схема (розділ 57) |
+> MH-Z19 · Швидкість → 9600
 
 **Доказ**
 
@@ -565,8 +1163,99 @@
 
 ---
 
-<!-- fc id:T-E-044 sha:e19753d0 src:dodatky/e-interfeysy.md:69 klas:F -->
-### T-E-044 · proza · рядок 69
+<!-- fc id:T-E-090 sha:053289b4 src:dodatky/e-interfeysy.md:61 klas:F -->
+### T-E-090 · komirka · рядок 61
+
+**Книга каже, дослівно:**
+
+> MH-Z19 · Що дає → CO₂
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-091 sha:5b51dcfb src:dodatky/e-interfeysy.md:62 klas:F -->
+### T-E-091 · komirka · рядок 62
+
+**Книга каже, дослівно:**
+
+> A6 / SIM800 / SIM7600 · Швидкість → 115200
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-092 sha:896f6358 src:dodatky/e-interfeysy.md:62 klas:F -->
+### T-E-092 · komirka · рядок 62
+
+**Книга каже, дослівно:**
+
+> A6 / SIM800 / SIM7600 · Що дає → стільниковий зв'язок
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-093 sha:cac54e4e src:dodatky/e-interfeysy.md:63 klas:F -->
+### T-E-093 · komirka · рядок 63
+
+**Книга каже, дослівно:**
+
+> Модулі відбитків пальців · Швидкість → 57600
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-094 sha:48ea03d4 src:dodatky/e-interfeysy.md:63 klas:F -->
+### T-E-094 · komirka · рядок 63
+
+**Книга каже, дослівно:**
+
+> Модулі відбитків пальців · Що дає → біометрія
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-095 sha:5155a527 src:dodatky/e-interfeysy.md:64 klas:F -->
+### T-E-095 · komirka · рядок 64
+
+**Книга каже, дослівно:**
+
+> Інший мікроконтролер · Швидкість → ваша
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-096 sha:e2c081b0 src:dodatky/e-interfeysy.md:64 klas:F -->
+### T-E-096 · komirka · рядок 64
+
+**Книга каже, дослівно:**
+
+> Інший мікроконтролер · Що дає → companion-схема (розділ 57)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-097 sha:e19753d0 src:dodatky/e-interfeysy.md:69 klas:F -->
+### T-E-097 · proza · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -578,8 +1267,8 @@
 
 ---
 
-<!-- fc id:T-E-045 sha:929d7feb src:dodatky/e-interfeysy.md:71 klas:F -->
-### T-E-045 · tablycya · рядок 71
+<!-- fc id:T-E-098 sha:929d7feb src:dodatky/e-interfeysy.md:71 klas:F -->
+### T-E-098 · tablycya-shapka · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -591,12 +1280,12 @@
 
 ---
 
-<!-- fc id:T-E-046 sha:f1f53840 src:dodatky/e-interfeysy.md:73 klas:F -->
-### T-E-046 · tablycya · рядок 73
+<!-- fc id:T-E-099 sha:63e06b9b src:dodatky/e-interfeysy.md:72 klas:F -->
+### T-E-099 · komirka · рядок 72
 
 **Книга каже, дослівно:**
 
-> | DS18B20 | температура, кілька на лінії | OneWire + DallasTemperature |
+> DS18B20 · Що дає → температура, кілька на лінії
 
 **Доказ**
 
@@ -604,12 +1293,12 @@
 
 ---
 
-<!-- fc id:T-E-047 sha:53663b4e src:dodatky/e-interfeysy.md:74 klas:F -->
-### T-E-047 · tablycya · рядок 74
+<!-- fc id:T-E-100 sha:8665749b src:dodatky/e-interfeysy.md:72 klas:F -->
+### T-E-100 · komirka · рядок 72
 
 **Книга каже, дослівно:**
 
-> | DS2431 | EEPROM | — |
+> DS18B20 · Бібліотека → OneWire + DallasTemperature
 
 **Доказ**
 
@@ -617,8 +1306,21 @@
 
 ---
 
-<!-- fc id:T-E-048 sha:dfa3ce29 src:dodatky/e-interfeysy.md:78 klas:F -->
-### T-E-048 · proza · рядок 78
+<!-- fc id:T-E-101 sha:a1c587ef src:dodatky/e-interfeysy.md:73 klas:F -->
+### T-E-101 · komirka · рядок 73
+
+**Книга каже, дослівно:**
+
+> DS2431 · Що дає → EEPROM
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-102 sha:dfa3ce29 src:dodatky/e-interfeysy.md:78 klas:F -->
+### T-E-102 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -630,8 +1332,8 @@
 
 ---
 
-<!-- fc id:T-E-049 sha:7371b723 src:dodatky/e-interfeysy.md:80 klas:F -->
-### T-E-049 · tablycya · рядок 80
+<!-- fc id:T-E-103 sha:7371b723 src:dodatky/e-interfeysy.md:80 klas:F -->
+### T-E-103 · tablycya · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -643,8 +1345,8 @@
 
 ---
 
-<!-- fc id:T-E-050 sha:31ba3159 src:dodatky/e-interfeysy.md:82 klas:F -->
-### T-E-050 · tablycya · рядок 82
+<!-- fc id:T-E-104 sha:31ba3159 src:dodatky/e-interfeysy.md:82 klas:F -->
+### T-E-104 · tablycya · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -656,8 +1358,8 @@
 
 ---
 
-<!-- fc id:T-E-051 sha:e1da2f4a src:dodatky/e-interfeysy.md:83 klas:F -->
-### T-E-051 · tablycya · рядок 83
+<!-- fc id:T-E-105 sha:e1da2f4a src:dodatky/e-interfeysy.md:83 klas:F -->
+### T-E-105 · tablycya · рядок 83
 
 **Книга каже, дослівно:**
 
@@ -669,8 +1371,8 @@
 
 ---
 
-<!-- fc id:T-E-052 sha:e67a29db src:dodatky/e-interfeysy.md:84 klas:F -->
-### T-E-052 · tablycya · рядок 84
+<!-- fc id:T-E-106 sha:e67a29db src:dodatky/e-interfeysy.md:84 klas:F -->
+### T-E-106 · tablycya · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -682,8 +1384,8 @@
 
 ---
 
-<!-- fc id:T-E-053 sha:8929fec1 src:dodatky/e-interfeysy.md:85 klas:F -->
-### T-E-053 · tablycya · рядок 85
+<!-- fc id:T-E-107 sha:8929fec1 src:dodatky/e-interfeysy.md:85 klas:F -->
+### T-E-107 · tablycya · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -695,8 +1397,8 @@
 
 ---
 
-<!-- fc id:T-E-054 sha:d063a502 src:dodatky/e-interfeysy.md:86 klas:F -->
-### T-E-054 · tablycya · рядок 86
+<!-- fc id:T-E-108 sha:d063a502 src:dodatky/e-interfeysy.md:86 klas:F -->
+### T-E-108 · tablycya · рядок 86
 
 **Книга каже, дослівно:**
 
@@ -708,8 +1410,8 @@
 
 ---
 
-<!-- fc id:T-E-055 sha:754f537d src:dodatky/e-interfeysy.md:90 klas:F -->
-### T-E-055 · proza · рядок 90
+<!-- fc id:T-E-109 sha:754f537d src:dodatky/e-interfeysy.md:90 klas:F -->
+### T-E-109 · proza · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -721,8 +1423,8 @@
 
 ---
 
-<!-- fc id:T-E-056 sha:d058b8f8 src:dodatky/e-interfeysy.md:92 klas:F -->
-### T-E-056 · tablycya · рядок 92
+<!-- fc id:T-E-110 sha:d058b8f8 src:dodatky/e-interfeysy.md:92 klas:F -->
+### T-E-110 · tablycya-shapka · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -734,12 +1436,12 @@
 
 ---
 
-<!-- fc id:T-E-057 sha:de51eff6 src:dodatky/e-interfeysy.md:94 klas:F -->
-### T-E-057 · tablycya · рядок 94
+<!-- fc id:T-E-111 sha:c6e013aa src:dodatky/e-interfeysy.md:93 klas:F -->
+### T-E-111 · komirka · рядок 93
 
 **Книга каже, дослівно:**
 
-> | INMP441 | цифровий мікрофон | без аналогової обв'язки |
+> INMP441 · Що дає → цифровий мікрофон
 
 **Доказ**
 
@@ -747,12 +1449,12 @@
 
 ---
 
-<!-- fc id:T-E-058 sha:7a624605 src:dodatky/e-interfeysy.md:95 klas:F -->
-### T-E-058 · tablycya · рядок 95
+<!-- fc id:T-E-112 sha:68634053 src:dodatky/e-interfeysy.md:93 klas:F -->
+### T-E-112 · komirka · рядок 93
 
 **Книга каже, дослівно:**
 
-> | MAX98357A | підсилювач класу D | окреме живлення |
+> INMP441 · Примітка → без аналогової обв'язки
 
 **Доказ**
 
@@ -760,12 +1462,12 @@
 
 ---
 
-<!-- fc id:T-E-059 sha:894f0380 src:dodatky/e-interfeysy.md:96 klas:F -->
-### T-E-059 · tablycya · рядок 96
+<!-- fc id:T-E-113 sha:e83535cc src:dodatky/e-interfeysy.md:94 klas:F -->
+### T-E-113 · komirka · рядок 94
 
 **Книга каже, дослівно:**
 
-> | PCM5102 | ЦАП для звуку | |
+> MAX98357A · Що дає → підсилювач класу D
 
 **Доказ**
 
@@ -773,8 +1475,34 @@
 
 ---
 
-<!-- fc id:T-E-060 sha:06d56aa5 src:dodatky/e-interfeysy.md:100 klas:F -->
-### T-E-060 · tablycya · рядок 100
+<!-- fc id:T-E-114 sha:b327d32d src:dodatky/e-interfeysy.md:94 klas:F -->
+### T-E-114 · komirka · рядок 94
+
+**Книга каже, дослівно:**
+
+> MAX98357A · Примітка → окреме живлення
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-115 sha:2aedf206 src:dodatky/e-interfeysy.md:95 klas:F -->
+### T-E-115 · komirka · рядок 95
+
+**Книга каже, дослівно:**
+
+> PCM5102 · Що дає → ЦАП для звуку
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-116 sha:06d56aa5 src:dodatky/e-interfeysy.md:100 klas:F -->
+### T-E-116 · tablycya-shapka · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -786,12 +1514,12 @@
 
 ---
 
-<!-- fc id:T-E-061 sha:1bdd687b src:dodatky/e-interfeysy.md:102 klas:F -->
-### T-E-061 · tablycya · рядок 102
+<!-- fc id:T-E-117 sha:5a46b695 src:dodatky/e-interfeysy.md:101 klas:F -->
+### T-E-117 · komirka · рядок 101
 
 **Книга каже, дослівно:**
 
-> | WS2812 / SK6812 | **RMT**, не програмно | 33 |
+> WS2812 / SK6812 · Як → **RMT**, не програмно
 
 **Доказ**
 
@@ -799,12 +1527,12 @@
 
 ---
 
-<!-- fc id:T-E-062 sha:1fcadb65 src:dodatky/e-interfeysy.md:103 klas:F -->
-### T-E-062 · tablycya · рядок 103
+<!-- fc id:T-E-118 sha:2a40ffab src:dodatky/e-interfeysy.md:101 klas:F -->
+### T-E-118 · komirka · рядок 101
 
 **Книга каже, дослівно:**
 
-> | Серво SG90, MG996R | LEDC 50 Гц, окреме живлення | 48 |
+> WS2812 / SK6812 · Розділ → 33
 
 **Доказ**
 
@@ -812,12 +1540,12 @@
 
 ---
 
-<!-- fc id:T-E-063 sha:6b4b9172 src:dodatky/e-interfeysy.md:104 klas:F -->
-### T-E-063 · tablycya · рядок 104
+<!-- fc id:T-E-119 sha:70c43f02 src:dodatky/e-interfeysy.md:102 klas:F -->
+### T-E-119 · komirka · рядок 102
 
 **Книга каже, дослівно:**
 
-> | HC-SR04 | тригер + вимір `ECHO` (⛔ 5 В!) | 45 |
+> Серво SG90, MG996R · Як → LEDC 50 Гц, окреме живлення
 
 **Доказ**
 
@@ -825,12 +1553,12 @@
 
 ---
 
-<!-- fc id:T-E-064 sha:e40e09d7 src:dodatky/e-interfeysy.md:105 klas:F -->
-### T-E-064 · tablycya · рядок 105
+<!-- fc id:T-E-120 sha:92e46f9c src:dodatky/e-interfeysy.md:102 klas:F -->
+### T-E-120 · komirka · рядок 102
 
 **Книга каже, дослівно:**
 
-> | PIR HC-SR501 | цифровий вхід | 45 |
+> Серво SG90, MG996R · Розділ → 48
 
 **Доказ**
 
@@ -838,12 +1566,12 @@
 
 ---
 
-<!-- fc id:T-E-065 sha:8dfd6dc1 src:dodatky/e-interfeysy.md:106 klas:F -->
-### T-E-065 · tablycya · рядок 106
+<!-- fc id:T-E-121 sha:c29a7095 src:dodatky/e-interfeysy.md:103 klas:F -->
+### T-E-121 · komirka · рядок 103
 
 **Книга каже, дослівно:**
 
-> | Енкодер | **PCNT**, не переривання | 33 |
+> HC-SR04 · Як → тригер + вимір `ECHO` (⛔ 5 В!)
 
 **Доказ**
 
@@ -851,12 +1579,12 @@
 
 ---
 
-<!-- fc id:T-E-066 sha:a208a86c src:dodatky/e-interfeysy.md:107 klas:F -->
-### T-E-066 · tablycya · рядок 107
+<!-- fc id:T-E-122 sha:2edcffe2 src:dodatky/e-interfeysy.md:103 klas:F -->
+### T-E-122 · komirka · рядок 103
 
 **Книга каже, дослівно:**
 
-> | Реле, MOSFET | вихід + резистор на затворі | 47 |
+> HC-SR04 · Розділ → 45
 
 **Доказ**
 
@@ -864,12 +1592,12 @@
 
 ---
 
-<!-- fc id:T-E-067 sha:afce1f8e src:dodatky/e-interfeysy.md:108 klas:F -->
-### T-E-067 · tablycya · рядок 108
+<!-- fc id:T-E-123 sha:25d38211 src:dodatky/e-interfeysy.md:104 klas:F -->
+### T-E-123 · komirka · рядок 104
 
 **Книга каже, дослівно:**
 
-> | A4988 / DRV8825 | `STEP` + `DIR`, кроки апаратно | 48 |
+> PIR HC-SR501 · Як → цифровий вхід
 
 **Доказ**
 
@@ -877,12 +1605,12 @@
 
 ---
 
-<!-- fc id:T-E-068 sha:d18a7855 src:dodatky/e-interfeysy.md:109 klas:F -->
-### T-E-068 · tablycya · рядок 109
+<!-- fc id:T-E-124 sha:7a8a7c1e src:dodatky/e-interfeysy.md:104 klas:F -->
+### T-E-124 · komirka · рядок 104
 
 **Книга каже, дослівно:**
 
-> | DRV8833 / TB6612 | PWM + напрямок | 48 |
+> PIR HC-SR501 · Розділ → 45
 
 **Доказ**
 
@@ -890,12 +1618,12 @@
 
 ---
 
-<!-- fc id:T-E-069 sha:aa2fa07e src:dodatky/e-interfeysy.md:110 klas:F -->
-### T-E-069 · tablycya · рядок 110
+<!-- fc id:T-E-125 sha:af56f9d9 src:dodatky/e-interfeysy.md:105 klas:F -->
+### T-E-125 · komirka · рядок 105
 
 **Книга каже, дослівно:**
 
-> | Кнопки | вхід із підтягуванням, антидребезг | 33 |
+> Енкодер · Як → **PCNT**, не переривання
 
 **Доказ**
 
@@ -903,8 +1631,125 @@
 
 ---
 
-<!-- fc id:T-E-070 sha:b65fc0a5 src:dodatky/e-interfeysy.md:114 klas:F -->
-### T-E-070 · proza · рядок 114
+<!-- fc id:T-E-126 sha:54d7c2be src:dodatky/e-interfeysy.md:105 klas:F -->
+### T-E-126 · komirka · рядок 105
+
+**Книга каже, дослівно:**
+
+> Енкодер · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-127 sha:6718e2ac src:dodatky/e-interfeysy.md:106 klas:F -->
+### T-E-127 · komirka · рядок 106
+
+**Книга каже, дослівно:**
+
+> Реле, MOSFET · Як → вихід + резистор на затворі
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-128 sha:b7388bb6 src:dodatky/e-interfeysy.md:106 klas:F -->
+### T-E-128 · komirka · рядок 106
+
+**Книга каже, дослівно:**
+
+> Реле, MOSFET · Розділ → 47
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-129 sha:a6161f9a src:dodatky/e-interfeysy.md:107 klas:F -->
+### T-E-129 · komirka · рядок 107
+
+**Книга каже, дослівно:**
+
+> A4988 / DRV8825 · Як → `STEP` + `DIR`, кроки апаратно
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-130 sha:32214f7d src:dodatky/e-interfeysy.md:107 klas:F -->
+### T-E-130 · komirka · рядок 107
+
+**Книга каже, дослівно:**
+
+> A4988 / DRV8825 · Розділ → 48
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-131 sha:909ea86e src:dodatky/e-interfeysy.md:108 klas:F -->
+### T-E-131 · komirka · рядок 108
+
+**Книга каже, дослівно:**
+
+> DRV8833 / TB6612 · Як → PWM + напрямок
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-132 sha:dc6772ec src:dodatky/e-interfeysy.md:108 klas:F -->
+### T-E-132 · komirka · рядок 108
+
+**Книга каже, дослівно:**
+
+> DRV8833 / TB6612 · Розділ → 48
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-133 sha:70d1ab2b src:dodatky/e-interfeysy.md:109 klas:F -->
+### T-E-133 · komirka · рядок 109
+
+**Книга каже, дослівно:**
+
+> Кнопки · Як → вхід із підтягуванням, антидребезг
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-134 sha:82b294d2 src:dodatky/e-interfeysy.md:109 klas:F -->
+### T-E-134 · komirka · рядок 109
+
+**Книга каже, дослівно:**
+
+> Кнопки · Розділ → 33
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-E-135 sha:b65fc0a5 src:dodatky/e-interfeysy.md:114 klas:F -->
+### T-E-135 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -916,8 +1761,8 @@
 
 ---
 
-<!-- fc id:T-E-071 sha:8d32b02f src:dodatky/e-interfeysy.md:116 klas:F -->
-### T-E-071 · tablycya · рядок 116
+<!-- fc id:T-E-136 sha:8d32b02f src:dodatky/e-interfeysy.md:116 klas:F -->
+### T-E-136 · tablycya · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -929,8 +1774,8 @@
 
 ---
 
-<!-- fc id:T-E-072 sha:c8c1f60e src:dodatky/e-interfeysy.md:118 klas:F -->
-### T-E-072 · tablycya · рядок 118
+<!-- fc id:T-E-137 sha:c8c1f60e src:dodatky/e-interfeysy.md:118 klas:F -->
+### T-E-137 · tablycya · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -942,8 +1787,8 @@
 
 ---
 
-<!-- fc id:T-E-073 sha:d6e27376 src:dodatky/e-interfeysy.md:119 klas:F -->
-### T-E-073 · tablycya · рядок 119
+<!-- fc id:T-E-138 sha:d6e27376 src:dodatky/e-interfeysy.md:119 klas:F -->
+### T-E-138 · tablycya · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -955,8 +1800,8 @@
 
 ---
 
-<!-- fc id:T-E-074 sha:17f8b064 src:dodatky/e-interfeysy.md:120 klas:F -->
-### T-E-074 · tablycya · рядок 120
+<!-- fc id:T-E-139 sha:17f8b064 src:dodatky/e-interfeysy.md:120 klas:F -->
+### T-E-139 · tablycya · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -968,8 +1813,8 @@
 
 ---
 
-<!-- fc id:T-E-075 sha:fcd63e03 src:dodatky/e-interfeysy.md:121 klas:F -->
-### T-E-075 · tablycya · рядок 121
+<!-- fc id:T-E-140 sha:fcd63e03 src:dodatky/e-interfeysy.md:121 klas:F -->
+### T-E-140 · tablycya · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -981,8 +1826,8 @@
 
 ---
 
-<!-- fc id:T-E-076 sha:fb2090c8 src:dodatky/e-interfeysy.md:122 klas:F -->
-### T-E-076 · tablycya · рядок 122
+<!-- fc id:T-E-141 sha:fb2090c8 src:dodatky/e-interfeysy.md:122 klas:F -->
+### T-E-141 · tablycya · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -994,8 +1839,8 @@
 
 ---
 
-<!-- fc id:T-E-077 sha:06362e64 src:dodatky/e-interfeysy.md:126 klas:F -->
-### T-E-077 · proza · рядок 126
+<!-- fc id:T-E-142 sha:06362e64 src:dodatky/e-interfeysy.md:126 klas:F -->
+### T-E-142 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -1007,8 +1852,8 @@
 
 ---
 
-<!-- fc id:T-E-078 sha:66b89da4 src:dodatky/e-interfeysy.md:126 klas:F -->
-### T-E-078 · proza · рядок 126
+<!-- fc id:T-E-143 sha:66b89da4 src:dodatky/e-interfeysy.md:126 klas:F -->
+### T-E-143 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -1020,8 +1865,8 @@
 
 ---
 
-<!-- fc id:T-E-079 sha:dcd5dd7e src:dodatky/e-interfeysy.md:129 klas:F -->
-### T-E-079 · proza · рядок 129
+<!-- fc id:T-E-144 sha:dcd5dd7e src:dodatky/e-interfeysy.md:129 klas:F -->
+### T-E-144 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -1033,8 +1878,8 @@
 
 ---
 
-<!-- fc id:T-E-080 sha:4bb5ebd8 src:dodatky/e-interfeysy.md:129 klas:F -->
-### T-E-080 · proza · рядок 129
+<!-- fc id:T-E-145 sha:4bb5ebd8 src:dodatky/e-interfeysy.md:129 klas:F -->
+### T-E-145 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -1046,8 +1891,8 @@
 
 ---
 
-<!-- fc id:T-E-081 sha:107a64bc src:dodatky/e-interfeysy.md:132 klas:F -->
-### T-E-081 · proza · рядок 132
+<!-- fc id:T-E-146 sha:107a64bc src:dodatky/e-interfeysy.md:132 klas:F -->
+### T-E-146 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -1059,8 +1904,8 @@
 
 ---
 
-<!-- fc id:T-E-082 sha:abdd0a3f src:dodatky/e-interfeysy.md:132 klas:F -->
-### T-E-082 · proza · рядок 132
+<!-- fc id:T-E-147 sha:abdd0a3f src:dodatky/e-interfeysy.md:132 klas:F -->
+### T-E-147 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -1072,8 +1917,8 @@
 
 ---
 
-<!-- fc id:T-E-083 sha:b357ccb9 src:dodatky/e-interfeysy.md:135 klas:F -->
-### T-E-083 · proza · рядок 135
+<!-- fc id:T-E-148 sha:b357ccb9 src:dodatky/e-interfeysy.md:135 klas:F -->
+### T-E-148 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -1085,8 +1930,8 @@
 
 ---
 
-<!-- fc id:T-E-084 sha:f5b849f3 src:dodatky/e-interfeysy.md:139 klas:F -->
-### T-E-084 · proza · рядок 139
+<!-- fc id:T-E-149 sha:f5b849f3 src:dodatky/e-interfeysy.md:139 klas:F -->
+### T-E-149 · proza · рядок 139
 
 **Книга каже, дослівно:**
 

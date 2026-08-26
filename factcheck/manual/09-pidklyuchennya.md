@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/09-pidklyuchennya.md`
 
-Одиниць твердження: **94**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **107**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -163,7 +163,7 @@
 ---
 
 <!-- fc id:T-09-013 sha:52c860f9 src:manual/09-pidklyuchennya.md:28 klas:F -->
-### T-09-013 · tablycya · рядок 28
+### T-09-013 · tablycya-shapka · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -175,12 +175,12 @@
 
 ---
 
-<!-- fc id:T-09-014 sha:ce99a3bd src:manual/09-pidklyuchennya.md:30 klas:F -->
-### T-09-014 · tablycya · рядок 30
+<!-- fc id:T-09-014 sha:388dab13 src:manual/09-pidklyuchennya.md:29 klas:F -->
+### T-09-014 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | `CP2102`, `CP2102N` | Silicon Labs | драйвер із сайту SiLabs | у ядрі |
+> `CP2102`, `CP2102N` · Виробник → Silicon Labs
 
 **Доказ**
 
@@ -188,12 +188,12 @@
 
 ---
 
-<!-- fc id:T-09-015 sha:baeb90c5 src:manual/09-pidklyuchennya.md:31 klas:F -->
-### T-09-015 · tablycya · рядок 31
+<!-- fc id:T-09-015 sha:c2d47e2e src:manual/09-pidklyuchennya.md:29 klas:F -->
+### T-09-015 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | `CH340`, `CH340G`, `CH341` | WCH | драйвер із сайту WCH | у ядрі |
+> `CP2102`, `CP2102N` · Windows → драйвер із сайту SiLabs
 
 **Доказ**
 
@@ -201,12 +201,12 @@
 
 ---
 
-<!-- fc id:T-09-016 sha:e78ae03e src:manual/09-pidklyuchennya.md:32 klas:F -->
-### T-09-016 · tablycya · рядок 32
+<!-- fc id:T-09-016 sha:c2bec9c8 src:manual/09-pidklyuchennya.md:29 klas:F -->
+### T-09-016 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | `CH9102`, `CH9102F` | WCH | **окремий** драйвер, не той, що CH340 | у ядрі |
+> `CP2102`, `CP2102N` · Linux → у ядрі
 
 **Доказ**
 
@@ -214,12 +214,12 @@
 
 ---
 
-<!-- fc id:T-09-017 sha:212d302a src:manual/09-pidklyuchennya.md:33 klas:F -->
-### T-09-017 · tablycya · рядок 33
+<!-- fc id:T-09-017 sha:72a038d1 src:manual/09-pidklyuchennya.md:30 klas:F -->
+### T-09-017 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> | `FT232RL` | FTDI | драйвер FTDI | у ядрі |
+> `CH340`, `CH340G`, `CH341` · Виробник → WCH
 
 **Доказ**
 
@@ -227,8 +227,112 @@
 
 ---
 
-<!-- fc id:T-09-018 sha:e619ba8a src:manual/09-pidklyuchennya.md:35 klas:F -->
-### T-09-018 · proza · рядок 35
+<!-- fc id:T-09-018 sha:ee486859 src:manual/09-pidklyuchennya.md:30 klas:F -->
+### T-09-018 · komirka · рядок 30
+
+**Книга каже, дослівно:**
+
+> `CH340`, `CH340G`, `CH341` · Windows → драйвер із сайту WCH
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-019 sha:a1e6a5ca src:manual/09-pidklyuchennya.md:30 klas:F -->
+### T-09-019 · komirka · рядок 30
+
+**Книга каже, дослівно:**
+
+> `CH340`, `CH340G`, `CH341` · Linux → у ядрі
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-020 sha:f99c9567 src:manual/09-pidklyuchennya.md:31 klas:F -->
+### T-09-020 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> `CH9102`, `CH9102F` · Виробник → WCH
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-021 sha:8e99078d src:manual/09-pidklyuchennya.md:31 klas:F -->
+### T-09-021 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> `CH9102`, `CH9102F` · Windows → **окремий** драйвер, не той, що CH340
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-022 sha:09842382 src:manual/09-pidklyuchennya.md:31 klas:F -->
+### T-09-022 · komirka · рядок 31
+
+**Книга каже, дослівно:**
+
+> `CH9102`, `CH9102F` · Linux → у ядрі
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-023 sha:0d78e84c src:manual/09-pidklyuchennya.md:32 klas:F -->
+### T-09-023 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> `FT232RL` · Виробник → FTDI
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-024 sha:8efca634 src:manual/09-pidklyuchennya.md:32 klas:F -->
+### T-09-024 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> `FT232RL` · Windows → драйвер FTDI
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-025 sha:871e63ad src:manual/09-pidklyuchennya.md:32 klas:F -->
+### T-09-025 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> `FT232RL` · Linux → у ядрі
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-026 sha:e619ba8a src:manual/09-pidklyuchennya.md:35 klas:F -->
+### T-09-026 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -240,8 +344,8 @@
 
 ---
 
-<!-- fc id:T-09-019 sha:fb020f47 src:manual/09-pidklyuchennya.md:37 klas:F -->
-### T-09-019 · proza · рядок 37
+<!-- fc id:T-09-027 sha:fb020f47 src:manual/09-pidklyuchennya.md:37 klas:F -->
+### T-09-027 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -253,8 +357,8 @@
 
 ---
 
-<!-- fc id:T-09-020 sha:6ca4fb71 src:manual/09-pidklyuchennya.md:37 klas:F -->
-### T-09-020 · proza · рядок 37
+<!-- fc id:T-09-028 sha:6ca4fb71 src:manual/09-pidklyuchennya.md:37 klas:F -->
+### T-09-028 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -266,8 +370,8 @@
 
 ---
 
-<!-- fc id:T-09-021 sha:c9a4b039 src:manual/09-pidklyuchennya.md:42 klas:F -->
-### T-09-021 · proza · рядок 42
+<!-- fc id:T-09-029 sha:c9a4b039 src:manual/09-pidklyuchennya.md:42 klas:F -->
+### T-09-029 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -279,8 +383,8 @@
 
 ---
 
-<!-- fc id:T-09-022 sha:70d8b6e7 src:manual/09-pidklyuchennya.md:42 klas:F -->
-### T-09-022 · proza · рядок 42
+<!-- fc id:T-09-030 sha:70d8b6e7 src:manual/09-pidklyuchennya.md:42 klas:F -->
+### T-09-030 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -292,8 +396,8 @@
 
 ---
 
-<!-- fc id:T-09-023 sha:8af39317 src:manual/09-pidklyuchennya.md:42 klas:F -->
-### T-09-023 · proza · рядок 42
+<!-- fc id:T-09-031 sha:8af39317 src:manual/09-pidklyuchennya.md:42 klas:F -->
+### T-09-031 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -305,8 +409,8 @@
 
 ---
 
-<!-- fc id:T-09-024 sha:09e91692 src:manual/09-pidklyuchennya.md:48 klas:F -->
-### T-09-024 · proza · рядок 48
+<!-- fc id:T-09-032 sha:09e91692 src:manual/09-pidklyuchennya.md:48 klas:F -->
+### T-09-032 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -318,8 +422,8 @@
 
 ---
 
-<!-- fc id:T-09-025 sha:fdfccb59 src:manual/09-pidklyuchennya.md:48 klas:F -->
-### T-09-025 · proza · рядок 48
+<!-- fc id:T-09-033 sha:fdfccb59 src:manual/09-pidklyuchennya.md:48 klas:F -->
+### T-09-033 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -331,8 +435,8 @@
 
 ---
 
-<!-- fc id:T-09-026 sha:e79151e3 src:manual/09-pidklyuchennya.md:52 klas:F -->
-### T-09-026 · proza · рядок 52
+<!-- fc id:T-09-034 sha:e79151e3 src:manual/09-pidklyuchennya.md:52 klas:F -->
+### T-09-034 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -344,8 +448,8 @@
 
 ---
 
-<!-- fc id:T-09-027 sha:63b931d1 src:manual/09-pidklyuchennya.md:52 klas:F -->
-### T-09-027 · proza · рядок 52
+<!-- fc id:T-09-035 sha:63b931d1 src:manual/09-pidklyuchennya.md:52 klas:F -->
+### T-09-035 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -357,8 +461,8 @@
 
 ---
 
-<!-- fc id:T-09-028 sha:5268e7f0 src:manual/09-pidklyuchennya.md:59 klas:F -->
-### T-09-028 · proza · рядок 59
+<!-- fc id:T-09-036 sha:5268e7f0 src:manual/09-pidklyuchennya.md:59 klas:F -->
+### T-09-036 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -370,8 +474,8 @@
 
 ---
 
-<!-- fc id:T-09-029 sha:95e4b03d src:manual/09-pidklyuchennya.md:59 klas:F -->
-### T-09-029 · proza · рядок 59
+<!-- fc id:T-09-037 sha:95e4b03d src:manual/09-pidklyuchennya.md:59 klas:F -->
+### T-09-037 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -383,8 +487,8 @@
 
 ---
 
-<!-- fc id:T-09-030 sha:f2b73c19 src:manual/09-pidklyuchennya.md:64 klas:F -->
-### T-09-030 · proza · рядок 64
+<!-- fc id:T-09-038 sha:f2b73c19 src:manual/09-pidklyuchennya.md:64 klas:F -->
+### T-09-038 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -396,8 +500,8 @@
 
 ---
 
-<!-- fc id:T-09-031 sha:28e42fea src:manual/09-pidklyuchennya.md:64 klas:F -->
-### T-09-031 · proza · рядок 64
+<!-- fc id:T-09-039 sha:28e42fea src:manual/09-pidklyuchennya.md:64 klas:F -->
+### T-09-039 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -409,8 +513,8 @@
 
 ---
 
-<!-- fc id:T-09-032 sha:42f0a8ae src:manual/09-pidklyuchennya.md:68 klas:F -->
-### T-09-032 · proza · рядок 68
+<!-- fc id:T-09-040 sha:42f0a8ae src:manual/09-pidklyuchennya.md:68 klas:F -->
+### T-09-040 · proza · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -422,8 +526,8 @@
 
 ---
 
-<!-- fc id:T-09-033 sha:a0a9fc6a src:manual/09-pidklyuchennya.md:71 klas:F -->
-### T-09-033 · proza · рядок 71
+<!-- fc id:T-09-041 sha:a0a9fc6a src:manual/09-pidklyuchennya.md:71 klas:F -->
+### T-09-041 · proza · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -435,8 +539,8 @@
 
 ---
 
-<!-- fc id:T-09-034 sha:644dba72 src:manual/09-pidklyuchennya.md:74 klas:F -->
-### T-09-034 · proza · рядок 74
+<!-- fc id:T-09-042 sha:644dba72 src:manual/09-pidklyuchennya.md:74 klas:F -->
+### T-09-042 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -448,8 +552,8 @@
 
 ---
 
-<!-- fc id:T-09-035 sha:98aec72b src:manual/09-pidklyuchennya.md:74 klas:F -->
-### T-09-035 · proza · рядок 74
+<!-- fc id:T-09-043 sha:98aec72b src:manual/09-pidklyuchennya.md:74 klas:F -->
+### T-09-043 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -461,8 +565,8 @@
 
 ---
 
-<!-- fc id:T-09-036 sha:d29e020d src:manual/09-pidklyuchennya.md:74 klas:F -->
-### T-09-036 · proza · рядок 74
+<!-- fc id:T-09-044 sha:d29e020d src:manual/09-pidklyuchennya.md:74 klas:F -->
+### T-09-044 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -474,8 +578,8 @@
 
 ---
 
-<!-- fc id:T-09-037 sha:0f211978 src:manual/09-pidklyuchennya.md:81 klas:F -->
-### T-09-037 · proza · рядок 81
+<!-- fc id:T-09-045 sha:0f211978 src:manual/09-pidklyuchennya.md:81 klas:F -->
+### T-09-045 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -487,8 +591,8 @@
 
 ---
 
-<!-- fc id:T-09-038 sha:2c036fcf src:manual/09-pidklyuchennya.md:81 klas:F -->
-### T-09-038 · proza · рядок 81
+<!-- fc id:T-09-046 sha:2c036fcf src:manual/09-pidklyuchennya.md:81 klas:F -->
+### T-09-046 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -500,8 +604,8 @@
 
 ---
 
-<!-- fc id:T-09-039 sha:7a909345 src:manual/09-pidklyuchennya.md:81 klas:F -->
-### T-09-039 · proza · рядок 81
+<!-- fc id:T-09-047 sha:7a909345 src:manual/09-pidklyuchennya.md:81 klas:F -->
+### T-09-047 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -513,8 +617,8 @@
 
 ---
 
-<!-- fc id:T-09-040 sha:95c02e74 src:manual/09-pidklyuchennya.md:89 klas:F -->
-### T-09-040 · proza · рядок 89
+<!-- fc id:T-09-048 sha:95c02e74 src:manual/09-pidklyuchennya.md:89 klas:F -->
+### T-09-048 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -526,8 +630,8 @@
 
 ---
 
-<!-- fc id:T-09-041 sha:d4504537 src:manual/09-pidklyuchennya.md:89 klas:F -->
-### T-09-041 · proza · рядок 89
+<!-- fc id:T-09-049 sha:d4504537 src:manual/09-pidklyuchennya.md:89 klas:F -->
+### T-09-049 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -539,8 +643,8 @@
 
 ---
 
-<!-- fc id:T-09-042 sha:c2b66b41 src:manual/09-pidklyuchennya.md:89 klas:F -->
-### T-09-042 · proza · рядок 89
+<!-- fc id:T-09-050 sha:c2b66b41 src:manual/09-pidklyuchennya.md:89 klas:F -->
+### T-09-050 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -552,8 +656,8 @@
 
 ---
 
-<!-- fc id:T-09-043 sha:db94e170 src:manual/09-pidklyuchennya.md:93 klas:F -->
-### T-09-043 · proza · рядок 93
+<!-- fc id:T-09-051 sha:db94e170 src:manual/09-pidklyuchennya.md:93 klas:F -->
+### T-09-051 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -565,8 +669,8 @@
 
 ---
 
-<!-- fc id:T-09-044 sha:90a00967 src:manual/09-pidklyuchennya.md:93 klas:F -->
-### T-09-044 · proza · рядок 93
+<!-- fc id:T-09-052 sha:90a00967 src:manual/09-pidklyuchennya.md:93 klas:F -->
+### T-09-052 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -578,8 +682,8 @@
 
 ---
 
-<!-- fc id:T-09-045 sha:cebf28a6 src:manual/09-pidklyuchennya.md:96 klas:F -->
-### T-09-045 · proza · рядок 96
+<!-- fc id:T-09-053 sha:cebf28a6 src:manual/09-pidklyuchennya.md:96 klas:F -->
+### T-09-053 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -591,8 +695,8 @@
 
 ---
 
-<!-- fc id:T-09-046 sha:7002b15e src:manual/09-pidklyuchennya.md:96 klas:F -->
-### T-09-046 · proza · рядок 96
+<!-- fc id:T-09-054 sha:7002b15e src:manual/09-pidklyuchennya.md:96 klas:F -->
+### T-09-054 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -604,8 +708,8 @@
 
 ---
 
-<!-- fc id:T-09-047 sha:75eadf76 src:manual/09-pidklyuchennya.md:96 klas:F -->
-### T-09-047 · proza · рядок 96
+<!-- fc id:T-09-055 sha:75eadf76 src:manual/09-pidklyuchennya.md:96 klas:F -->
+### T-09-055 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -617,8 +721,8 @@
 
 ---
 
-<!-- fc id:T-09-048 sha:56488dd2 src:manual/09-pidklyuchennya.md:101 klas:F -->
-### T-09-048 · proza · рядок 101
+<!-- fc id:T-09-056 sha:56488dd2 src:manual/09-pidklyuchennya.md:101 klas:F -->
+### T-09-056 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -630,8 +734,8 @@
 
 ---
 
-<!-- fc id:T-09-049 sha:50131373 src:manual/09-pidklyuchennya.md:101 klas:F -->
-### T-09-049 · proza · рядок 101
+<!-- fc id:T-09-057 sha:50131373 src:manual/09-pidklyuchennya.md:101 klas:F -->
+### T-09-057 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -643,8 +747,8 @@
 
 ---
 
-<!-- fc id:T-09-050 sha:82da5e37 src:manual/09-pidklyuchennya.md:101 klas:F -->
-### T-09-050 · proza · рядок 101
+<!-- fc id:T-09-058 sha:82da5e37 src:manual/09-pidklyuchennya.md:101 klas:F -->
+### T-09-058 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -656,8 +760,8 @@
 
 ---
 
-<!-- fc id:T-09-051 sha:5571bbf3 src:manual/09-pidklyuchennya.md:109 klas:F -->
-### T-09-051 · proza · рядок 109
+<!-- fc id:T-09-059 sha:5571bbf3 src:manual/09-pidklyuchennya.md:109 klas:F -->
+### T-09-059 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -669,8 +773,8 @@
 
 ---
 
-<!-- fc id:T-09-052 sha:e6608ea6 src:manual/09-pidklyuchennya.md:109 klas:F -->
-### T-09-052 · proza · рядок 109
+<!-- fc id:T-09-060 sha:e6608ea6 src:manual/09-pidklyuchennya.md:109 klas:F -->
+### T-09-060 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -682,8 +786,8 @@
 
 ---
 
-<!-- fc id:T-09-053 sha:b4bb361c src:manual/09-pidklyuchennya.md:112 klas:F -->
-### T-09-053 · kod · рядок 112
+<!-- fc id:T-09-061 sha:b4bb361c src:manual/09-pidklyuchennya.md:112 klas:F -->
+### T-09-061 · kod · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -697,8 +801,21 @@
 
 ---
 
-<!-- fc id:T-09-054 sha:5eb954e4 src:manual/09-pidklyuchennya.md:116 klas:F -->
-### T-09-054 · proza · рядок 116
+<!-- fc id:T-09-062 sha:227ed426 src:manual/09-pidklyuchennya.md:113 klas:F -->
+### T-09-062 · kod-ryadok · рядок 113
+
+**Книга каже, дослівно:**
+
+> sudo usermod -aG dialout $USER
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-063 sha:5eb954e4 src:manual/09-pidklyuchennya.md:116 klas:F -->
+### T-09-063 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -710,8 +827,8 @@
 
 ---
 
-<!-- fc id:T-09-055 sha:1a6e4d7e src:manual/09-pidklyuchennya.md:116 klas:F -->
-### T-09-055 · proza · рядок 116
+<!-- fc id:T-09-064 sha:1a6e4d7e src:manual/09-pidklyuchennya.md:116 klas:F -->
+### T-09-064 · proza · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -723,8 +840,8 @@
 
 ---
 
-<!-- fc id:T-09-056 sha:59e49521 src:manual/09-pidklyuchennya.md:119 klas:F -->
-### T-09-056 · proza · рядок 119
+<!-- fc id:T-09-065 sha:59e49521 src:manual/09-pidklyuchennya.md:119 klas:F -->
+### T-09-065 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -736,8 +853,8 @@
 
 ---
 
-<!-- fc id:T-09-057 sha:08d72203 src:manual/09-pidklyuchennya.md:122 klas:F -->
-### T-09-057 · kod · рядок 122
+<!-- fc id:T-09-066 sha:08d72203 src:manual/09-pidklyuchennya.md:122 klas:F -->
+### T-09-066 · kod · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -751,8 +868,21 @@
 
 ---
 
-<!-- fc id:T-09-058 sha:8c3e6723 src:manual/09-pidklyuchennya.md:127 klas:F -->
-### T-09-058 · proza · рядок 127
+<!-- fc id:T-09-067 sha:ec8c84c9 src:manual/09-pidklyuchennya.md:123 klas:F -->
+### T-09-067 · kod-ryadok · рядок 123
+
+**Книга каже, дослівно:**
+
+> ls -l /dev/ttyUSB0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-068 sha:8c3e6723 src:manual/09-pidklyuchennya.md:127 klas:F -->
+### T-09-068 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -764,8 +894,8 @@
 
 ---
 
-<!-- fc id:T-09-059 sha:5a834809 src:manual/09-pidklyuchennya.md:127 klas:F -->
-### T-09-059 · proza · рядок 127
+<!-- fc id:T-09-069 sha:5a834809 src:manual/09-pidklyuchennya.md:127 klas:F -->
+### T-09-069 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -777,8 +907,8 @@
 
 ---
 
-<!-- fc id:T-09-060 sha:8730de05 src:manual/09-pidklyuchennya.md:127 klas:F -->
-### T-09-060 · proza · рядок 127
+<!-- fc id:T-09-070 sha:8730de05 src:manual/09-pidklyuchennya.md:127 klas:F -->
+### T-09-070 · proza · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -790,8 +920,8 @@
 
 ---
 
-<!-- fc id:T-09-061 sha:2c4e2e72 src:manual/09-pidklyuchennya.md:135 klas:F -->
-### T-09-061 · kod · рядок 135
+<!-- fc id:T-09-071 sha:2c4e2e72 src:manual/09-pidklyuchennya.md:135 klas:F -->
+### T-09-071 · kod · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -805,8 +935,8 @@
 
 ---
 
-<!-- fc id:T-09-062 sha:daf30df3 src:manual/09-pidklyuchennya.md:139 klas:F -->
-### T-09-062 · proza · рядок 139
+<!-- fc id:T-09-072 sha:daf30df3 src:manual/09-pidklyuchennya.md:139 klas:F -->
+### T-09-072 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -818,8 +948,8 @@
 
 ---
 
-<!-- fc id:T-09-063 sha:5d1f891c src:manual/09-pidklyuchennya.md:139 klas:F -->
-### T-09-063 · proza · рядок 139
+<!-- fc id:T-09-073 sha:5d1f891c src:manual/09-pidklyuchennya.md:139 klas:F -->
+### T-09-073 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -831,8 +961,8 @@
 
 ---
 
-<!-- fc id:T-09-064 sha:9076b1b4 src:manual/09-pidklyuchennya.md:145 klas:F -->
-### T-09-064 · kod · рядок 145
+<!-- fc id:T-09-074 sha:9076b1b4 src:manual/09-pidklyuchennya.md:145 klas:F -->
+### T-09-074 · kod · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -846,8 +976,21 @@
 
 ---
 
-<!-- fc id:T-09-065 sha:c7150df3 src:manual/09-pidklyuchennya.md:149 klas:F -->
-### T-09-065 · proza · рядок 149
+<!-- fc id:T-09-075 sha:1517df24 src:manual/09-pidklyuchennya.md:146 klas:F -->
+### T-09-075 · kod-ryadok · рядок 146
+
+**Книга каже, дослівно:**
+
+> lsof /dev/ttyUSB0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-076 sha:c7150df3 src:manual/09-pidklyuchennya.md:149 klas:F -->
+### T-09-076 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -859,8 +1002,8 @@
 
 ---
 
-<!-- fc id:T-09-066 sha:76ff912a src:manual/09-pidklyuchennya.md:154 klas:F -->
-### T-09-066 · proza · рядок 154
+<!-- fc id:T-09-077 sha:76ff912a src:manual/09-pidklyuchennya.md:154 klas:F -->
+### T-09-077 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -872,8 +1015,8 @@
 
 ---
 
-<!-- fc id:T-09-067 sha:c52c489e src:manual/09-pidklyuchennya.md:156 klas:F -->
-### T-09-067 · kod · рядок 156
+<!-- fc id:T-09-078 sha:c52c489e src:manual/09-pidklyuchennya.md:156 klas:F -->
+### T-09-078 · kod · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -887,8 +1030,21 @@
 
 ---
 
-<!-- fc id:T-09-068 sha:82e0eb52 src:manual/09-pidklyuchennya.md:160 klas:F -->
-### T-09-068 · proza · рядок 160
+<!-- fc id:T-09-079 sha:62bdb0e1 src:manual/09-pidklyuchennya.md:157 klas:F -->
+### T-09-079 · kod-ryadok · рядок 157
+
+**Книга каже, дослівно:**
+
+> dmesg | tail -20
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-080 sha:82e0eb52 src:manual/09-pidklyuchennya.md:160 klas:F -->
+### T-09-080 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -900,8 +1056,8 @@
 
 ---
 
-<!-- fc id:T-09-069 sha:baac9f52 src:manual/09-pidklyuchennya.md:162 klas:F -->
-### T-09-069 · proza · рядок 162
+<!-- fc id:T-09-081 sha:baac9f52 src:manual/09-pidklyuchennya.md:162 klas:F -->
+### T-09-081 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -913,8 +1069,8 @@
 
 ---
 
-<!-- fc id:T-09-070 sha:9ecc9948 src:manual/09-pidklyuchennya.md:162 klas:F -->
-### T-09-070 · proza · рядок 162
+<!-- fc id:T-09-082 sha:9ecc9948 src:manual/09-pidklyuchennya.md:162 klas:F -->
+### T-09-082 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -926,8 +1082,8 @@
 
 ---
 
-<!-- fc id:T-09-071 sha:af5831e6 src:manual/09-pidklyuchennya.md:165 klas:F -->
-### T-09-071 · proza · рядок 165
+<!-- fc id:T-09-083 sha:af5831e6 src:manual/09-pidklyuchennya.md:165 klas:F -->
+### T-09-083 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -939,8 +1095,8 @@
 
 ---
 
-<!-- fc id:T-09-072 sha:a22810af src:manual/09-pidklyuchennya.md:168 klas:F -->
-### T-09-072 · proza · рядок 168
+<!-- fc id:T-09-084 sha:a22810af src:manual/09-pidklyuchennya.md:168 klas:F -->
+### T-09-084 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -952,8 +1108,8 @@
 
 ---
 
-<!-- fc id:T-09-073 sha:18cd5314 src:manual/09-pidklyuchennya.md:168 klas:F -->
-### T-09-073 · proza · рядок 168
+<!-- fc id:T-09-085 sha:18cd5314 src:manual/09-pidklyuchennya.md:168 klas:F -->
+### T-09-085 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -965,8 +1121,8 @@
 
 ---
 
-<!-- fc id:T-09-074 sha:5f84d2ba src:manual/09-pidklyuchennya.md:174 klas:F -->
-### T-09-074 · proza · рядок 174
+<!-- fc id:T-09-086 sha:5f84d2ba src:manual/09-pidklyuchennya.md:174 klas:F -->
+### T-09-086 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -978,8 +1134,8 @@
 
 ---
 
-<!-- fc id:T-09-075 sha:7625a5f2 src:manual/09-pidklyuchennya.md:174 klas:F -->
-### T-09-075 · proza · рядок 174
+<!-- fc id:T-09-087 sha:7625a5f2 src:manual/09-pidklyuchennya.md:174 klas:F -->
+### T-09-087 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -991,8 +1147,8 @@
 
 ---
 
-<!-- fc id:T-09-076 sha:6418c178 src:manual/09-pidklyuchennya.md:177 klas:F -->
-### T-09-076 · proza · рядок 177
+<!-- fc id:T-09-088 sha:6418c178 src:manual/09-pidklyuchennya.md:177 klas:F -->
+### T-09-088 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1004,8 +1160,8 @@
 
 ---
 
-<!-- fc id:T-09-077 sha:948b9266 src:manual/09-pidklyuchennya.md:180 klas:F -->
-### T-09-077 · proza · рядок 180
+<!-- fc id:T-09-089 sha:948b9266 src:manual/09-pidklyuchennya.md:180 klas:F -->
+### T-09-089 · proza · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1017,8 +1173,8 @@
 
 ---
 
-<!-- fc id:T-09-078 sha:b2bd4fc0 src:manual/09-pidklyuchennya.md:184 klas:F -->
-### T-09-078 · proza · рядок 184
+<!-- fc id:T-09-090 sha:b2bd4fc0 src:manual/09-pidklyuchennya.md:184 klas:F -->
+### T-09-090 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1030,8 +1186,8 @@
 
 ---
 
-<!-- fc id:T-09-079 sha:53215e43 src:manual/09-pidklyuchennya.md:184 klas:F -->
-### T-09-079 · proza · рядок 184
+<!-- fc id:T-09-091 sha:53215e43 src:manual/09-pidklyuchennya.md:184 klas:F -->
+### T-09-091 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1199,8 @@
 
 ---
 
-<!-- fc id:T-09-080 sha:df768b5b src:manual/09-pidklyuchennya.md:184 klas:F -->
-### T-09-080 · proza · рядок 184
+<!-- fc id:T-09-092 sha:df768b5b src:manual/09-pidklyuchennya.md:184 klas:F -->
+### T-09-092 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1056,8 +1212,8 @@
 
 ---
 
-<!-- fc id:T-09-081 sha:57a3d942 src:manual/09-pidklyuchennya.md:189 klas:F -->
-### T-09-081 · proza · рядок 189
+<!-- fc id:T-09-093 sha:57a3d942 src:manual/09-pidklyuchennya.md:189 klas:F -->
+### T-09-093 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1069,8 +1225,8 @@
 
 ---
 
-<!-- fc id:T-09-082 sha:20fc09ac src:manual/09-pidklyuchennya.md:189 klas:F -->
-### T-09-082 · proza · рядок 189
+<!-- fc id:T-09-094 sha:20fc09ac src:manual/09-pidklyuchennya.md:189 klas:F -->
+### T-09-094 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1082,8 +1238,8 @@
 
 ---
 
-<!-- fc id:T-09-083 sha:006ab7dc src:manual/09-pidklyuchennya.md:193 klas:F -->
-### T-09-083 · proza · рядок 193
+<!-- fc id:T-09-095 sha:006ab7dc src:manual/09-pidklyuchennya.md:193 klas:F -->
+### T-09-095 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -1095,8 +1251,8 @@
 
 ---
 
-<!-- fc id:T-09-084 sha:abd1f18d src:manual/09-pidklyuchennya.md:198 klas:F -->
-### T-09-084 · proza · рядок 198
+<!-- fc id:T-09-096 sha:abd1f18d src:manual/09-pidklyuchennya.md:198 klas:F -->
+### T-09-096 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1108,8 +1264,8 @@
 
 ---
 
-<!-- fc id:T-09-085 sha:7f133b7d src:manual/09-pidklyuchennya.md:198 klas:F -->
-### T-09-085 · proza · рядок 198
+<!-- fc id:T-09-097 sha:7f133b7d src:manual/09-pidklyuchennya.md:198 klas:F -->
+### T-09-097 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1121,8 +1277,8 @@
 
 ---
 
-<!-- fc id:T-09-086 sha:5deba207 src:manual/09-pidklyuchennya.md:202 klas:F -->
-### T-09-086 · kod · рядок 202
+<!-- fc id:T-09-098 sha:5deba207 src:manual/09-pidklyuchennya.md:202 klas:F -->
+### T-09-098 · kod · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1136,8 +1292,21 @@
 
 ---
 
-<!-- fc id:T-09-087 sha:fd907831 src:manual/09-pidklyuchennya.md:206 klas:F -->
-### T-09-087 · proza · рядок 206
+<!-- fc id:T-09-099 sha:a67da531 src:manual/09-pidklyuchennya.md:203 klas:F -->
+### T-09-099 · kod-ryadok · рядок 203
+
+**Книга каже, дослівно:**
+
+> ls -l /dev/serial/by-id/
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-09-100 sha:fd907831 src:manual/09-pidklyuchennya.md:206 klas:F -->
+### T-09-100 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1149,8 +1318,8 @@
 
 ---
 
-<!-- fc id:T-09-088 sha:70899d2b src:manual/09-pidklyuchennya.md:206 klas:F -->
-### T-09-088 · proza · рядок 206
+<!-- fc id:T-09-101 sha:70899d2b src:manual/09-pidklyuchennya.md:206 klas:F -->
+### T-09-101 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1162,8 +1331,8 @@
 
 ---
 
-<!-- fc id:T-09-089 sha:981561db src:manual/09-pidklyuchennya.md:212 klas:F -->
-### T-09-089 · proza · рядок 212
+<!-- fc id:T-09-102 sha:981561db src:manual/09-pidklyuchennya.md:212 klas:F -->
+### T-09-102 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1175,8 +1344,8 @@
 
 ---
 
-<!-- fc id:T-09-090 sha:c1a9723b src:manual/09-pidklyuchennya.md:215 klas:F -->
-### T-09-090 · proza · рядок 215
+<!-- fc id:T-09-103 sha:c1a9723b src:manual/09-pidklyuchennya.md:215 klas:F -->
+### T-09-103 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1188,8 +1357,8 @@
 
 ---
 
-<!-- fc id:T-09-091 sha:871dd53d src:manual/09-pidklyuchennya.md:217 klas:F -->
-### T-09-091 · proza · рядок 217
+<!-- fc id:T-09-104 sha:871dd53d src:manual/09-pidklyuchennya.md:217 klas:F -->
+### T-09-104 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1201,8 +1370,8 @@
 
 ---
 
-<!-- fc id:T-09-092 sha:dd5a58ae src:manual/09-pidklyuchennya.md:219 klas:F -->
-### T-09-092 · proza · рядок 219
+<!-- fc id:T-09-105 sha:dd5a58ae src:manual/09-pidklyuchennya.md:219 klas:F -->
+### T-09-105 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1214,8 +1383,8 @@
 
 ---
 
-<!-- fc id:T-09-093 sha:1cb2d51a src:manual/09-pidklyuchennya.md:222 klas:F -->
-### T-09-093 · proza · рядок 222
+<!-- fc id:T-09-106 sha:1cb2d51a src:manual/09-pidklyuchennya.md:222 klas:F -->
+### T-09-106 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1227,8 +1396,8 @@
 
 ---
 
-<!-- fc id:T-09-094 sha:ab68d2a4 src:manual/09-pidklyuchennya.md:224 klas:F -->
-### T-09-094 · proza · рядок 224
+<!-- fc id:T-09-107 sha:ab68d2a4 src:manual/09-pidklyuchennya.md:224 klas:F -->
+### T-09-107 · proza · рядок 224
 
 **Книга каже, дослівно:**
 

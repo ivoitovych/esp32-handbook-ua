@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/36-spi.md`
 
-Одиниць твердження: **74**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **105**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -33,7 +33,7 @@
 ---
 
 <!-- fc id:T-36-003 sha:f47ef35a src:manual/36-spi.md:9 klas:F -->
-### T-36-003 · tablycya · рядок 9
+### T-36-003 · tablycya-shapka · рядок 9
 
 **Книга каже, дослівно:**
 
@@ -45,12 +45,12 @@
 
 ---
 
-<!-- fc id:T-36-004 sha:b37243a7 src:manual/36-spi.md:11 klas:F -->
-### T-36-004 · tablycya · рядок 11
+<!-- fc id:T-36-004 sha:ef9e4032 src:manual/36-spi.md:10 klas:F -->
+### T-36-004 · komirka · рядок 10
 
 **Книга каже, дослівно:**
 
-> | `SCK` | `SCLK`, `CLK` | тактування, задає ведучий |
+> `SCK` · Інші назви → `SCLK`, `CLK`
 
 **Доказ**
 
@@ -58,12 +58,12 @@
 
 ---
 
-<!-- fc id:T-36-005 sha:ecbd0f32 src:manual/36-spi.md:12 klas:F -->
-### T-36-005 · tablycya · рядок 12
+<!-- fc id:T-36-005 sha:6235f591 src:manual/36-spi.md:10 klas:F -->
+### T-36-005 · komirka · рядок 10
 
 **Книга каже, дослівно:**
 
-> | `MOSI` | `SDI`, `DIN`, `SDA` | від ведучого до веденого |
+> `SCK` · Що робить → тактування, задає ведучий
 
 **Доказ**
 
@@ -71,12 +71,12 @@
 
 ---
 
-<!-- fc id:T-36-006 sha:7259ad38 src:manual/36-spi.md:13 klas:F -->
-### T-36-006 · tablycya · рядок 13
+<!-- fc id:T-36-006 sha:7d056b23 src:manual/36-spi.md:11 klas:F -->
+### T-36-006 · komirka · рядок 11
 
 **Книга каже, дослівно:**
 
-> | `MISO` | `SDO`, `DOUT` | від веденого до ведучого |
+> `MOSI` · Інші назви → `SDI`, `DIN`, `SDA`
 
 **Доказ**
 
@@ -84,12 +84,12 @@
 
 ---
 
-<!-- fc id:T-36-007 sha:b6e190ce src:manual/36-spi.md:14 klas:F -->
-### T-36-007 · tablycya · рядок 14
+<!-- fc id:T-36-007 sha:a68f37fc src:manual/36-spi.md:11 klas:F -->
+### T-36-007 · komirka · рядок 11
 
 **Книга каже, дослівно:**
 
-> | `CS` | `SS`, `NSS`, `CE` | вибір пристрою, активний нуль |
+> `MOSI` · Що робить → від ведучого до веденого
 
 **Доказ**
 
@@ -97,8 +97,60 @@
 
 ---
 
-<!-- fc id:T-36-008 sha:d7b624ac src:manual/36-spi.md:16 klas:F -->
-### T-36-008 · proza · рядок 16
+<!-- fc id:T-36-008 sha:4f9a14ee src:manual/36-spi.md:12 klas:F -->
+### T-36-008 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> `MISO` · Інші назви → `SDO`, `DOUT`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-009 sha:13201fe1 src:manual/36-spi.md:12 klas:F -->
+### T-36-009 · komirka · рядок 12
+
+**Книга каже, дослівно:**
+
+> `MISO` · Що робить → від веденого до ведучого
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-010 sha:f2c47d63 src:manual/36-spi.md:13 klas:F -->
+### T-36-010 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> `CS` · Інші назви → `SS`, `NSS`, `CE`
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-011 sha:9734e10e src:manual/36-spi.md:13 klas:F -->
+### T-36-011 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> `CS` · Що робить → вибір пристрою, активний нуль
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-012 sha:d7b624ac src:manual/36-spi.md:16 klas:F -->
+### T-36-012 · proza · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -110,8 +162,8 @@
 
 ---
 
-<!-- fc id:T-36-009 sha:36fd447c src:manual/36-spi.md:16 klas:F -->
-### T-36-009 · proza · рядок 16
+<!-- fc id:T-36-013 sha:36fd447c src:manual/36-spi.md:16 klas:F -->
+### T-36-013 · proza · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -123,8 +175,8 @@
 
 ---
 
-<!-- fc id:T-36-010 sha:42bf1109 src:manual/36-spi.md:20 klas:F -->
-### T-36-010 · proza · рядок 20
+<!-- fc id:T-36-014 sha:42bf1109 src:manual/36-spi.md:20 klas:F -->
+### T-36-014 · proza · рядок 20
 
 **Книга каже, дослівно:**
 
@@ -136,8 +188,8 @@
 
 ---
 
-<!-- fc id:T-36-011 sha:1b6bd858 src:manual/36-spi.md:20 klas:F -->
-### T-36-011 · proza · рядок 20
+<!-- fc id:T-36-015 sha:1b6bd858 src:manual/36-spi.md:20 klas:F -->
+### T-36-015 · proza · рядок 20
 
 **Книга каже, дослівно:**
 
@@ -149,8 +201,8 @@
 
 ---
 
-<!-- fc id:T-36-012 sha:dabf8964 src:manual/36-spi.md:24 klas:F -->
-### T-36-012 · proza · рядок 24
+<!-- fc id:T-36-016 sha:dabf8964 src:manual/36-spi.md:24 klas:F -->
+### T-36-016 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -162,8 +214,8 @@
 
 ---
 
-<!-- fc id:T-36-013 sha:7a8209c3 src:manual/36-spi.md:28 klas:F -->
-### T-36-013 · proza · рядок 28
+<!-- fc id:T-36-017 sha:7a8209c3 src:manual/36-spi.md:28 klas:F -->
+### T-36-017 · proza · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -175,8 +227,8 @@
 
 ---
 
-<!-- fc id:T-36-014 sha:594d139a src:manual/36-spi.md:31 klas:F -->
-### T-36-014 · proza · рядок 31
+<!-- fc id:T-36-018 sha:594d139a src:manual/36-spi.md:31 klas:F -->
+### T-36-018 · proza · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -188,8 +240,8 @@
 
 ---
 
-<!-- fc id:T-36-015 sha:d52e9803 src:manual/36-spi.md:34 klas:F -->
-### T-36-015 · tablycya · рядок 34
+<!-- fc id:T-36-019 sha:d52e9803 src:manual/36-spi.md:34 klas:F -->
+### T-36-019 · tablycya-shapka · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -201,12 +253,12 @@
 
 ---
 
-<!-- fc id:T-36-016 sha:6d203e80 src:manual/36-spi.md:36 klas:F -->
-### T-36-016 · tablycya · рядок 36
+<!-- fc id:T-36-020 sha:6ba33956 src:manual/36-spi.md:35 klas:F -->
+### T-36-020 · komirka · рядок 35
 
 **Книга каже, дослівно:**
 
-> | 0 | 0 | 0 | у спокої низький, читання по передньому фронту |
+> 0 · CPOL → 0
 
 **Доказ**
 
@@ -214,12 +266,12 @@
 
 ---
 
-<!-- fc id:T-36-017 sha:ddaad009 src:manual/36-spi.md:37 klas:F -->
-### T-36-017 · tablycya · рядок 37
+<!-- fc id:T-36-021 sha:64e344a1 src:manual/36-spi.md:35 klas:F -->
+### T-36-021 · komirka · рядок 35
 
 **Книга каже, дослівно:**
 
-> | 1 | 0 | 1 | у спокої низький, читання по задньому |
+> 0 · CPHA → 0
 
 **Доказ**
 
@@ -227,12 +279,12 @@
 
 ---
 
-<!-- fc id:T-36-018 sha:36b921ec src:manual/36-spi.md:38 klas:F -->
-### T-36-018 · tablycya · рядок 38
+<!-- fc id:T-36-022 sha:1d15ca84 src:manual/36-spi.md:35 klas:F -->
+### T-36-022 · komirka · рядок 35
 
 **Книга каже, дослівно:**
 
-> | 2 | 1 | 0 | у спокої високий, читання по передньому |
+> 0 · Що це значить → у спокої низький, читання по передньому фронту
 
 **Доказ**
 
@@ -240,12 +292,12 @@
 
 ---
 
-<!-- fc id:T-36-019 sha:d2c8d2d9 src:manual/36-spi.md:39 klas:F -->
-### T-36-019 · tablycya · рядок 39
+<!-- fc id:T-36-023 sha:aa8cad3b src:manual/36-spi.md:36 klas:F -->
+### T-36-023 · komirka · рядок 36
 
 **Книга каже, дослівно:**
 
-> | 3 | 1 | 1 | у спокої високий, читання по задньому |
+> 1 · CPOL → 0
 
 **Доказ**
 
@@ -253,8 +305,112 @@
 
 ---
 
-<!-- fc id:T-36-020 sha:f774ed83 src:manual/36-spi.md:41 klas:F -->
-### T-36-020 · proza · рядок 41
+<!-- fc id:T-36-024 sha:bdd9609f src:manual/36-spi.md:36 klas:F -->
+### T-36-024 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> 1 · CPHA → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-025 sha:fbbca52c src:manual/36-spi.md:36 klas:F -->
+### T-36-025 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> 1 · Що це значить → у спокої низький, читання по задньому
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-026 sha:2555e825 src:manual/36-spi.md:37 klas:F -->
+### T-36-026 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> 2 · CPOL → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-027 sha:5ab027b6 src:manual/36-spi.md:37 klas:F -->
+### T-36-027 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> 2 · CPHA → 0
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-028 sha:05f15bf9 src:manual/36-spi.md:37 klas:F -->
+### T-36-028 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> 2 · Що це значить → у спокої високий, читання по передньому
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-029 sha:5126ad31 src:manual/36-spi.md:38 klas:F -->
+### T-36-029 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> 3 · CPOL → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-030 sha:9cdc1493 src:manual/36-spi.md:38 klas:F -->
+### T-36-030 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> 3 · CPHA → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-031 sha:c6bddcb3 src:manual/36-spi.md:38 klas:F -->
+### T-36-031 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> 3 · Що це значить → у спокої високий, читання по задньому
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-032 sha:f774ed83 src:manual/36-spi.md:41 klas:F -->
+### T-36-032 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -266,8 +422,8 @@
 
 ---
 
-<!-- fc id:T-36-021 sha:42715563 src:manual/36-spi.md:44 klas:F -->
-### T-36-021 · proza · рядок 44
+<!-- fc id:T-36-033 sha:42715563 src:manual/36-spi.md:44 klas:F -->
+### T-36-033 · proza · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -279,8 +435,8 @@
 
 ---
 
-<!-- fc id:T-36-022 sha:386a5eda src:manual/36-spi.md:47 klas:F -->
-### T-36-022 · proza · рядок 47
+<!-- fc id:T-36-034 sha:386a5eda src:manual/36-spi.md:47 klas:F -->
+### T-36-034 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -292,8 +448,8 @@
 
 ---
 
-<!-- fc id:T-36-023 sha:566c2e3d src:manual/36-spi.md:47 klas:F -->
-### T-36-023 · proza · рядок 47
+<!-- fc id:T-36-035 sha:566c2e3d src:manual/36-spi.md:47 klas:F -->
+### T-36-035 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -305,8 +461,8 @@
 
 ---
 
-<!-- fc id:T-36-024 sha:f17cf0ff src:manual/36-spi.md:51 klas:F -->
-### T-36-024 · proza · рядок 51
+<!-- fc id:T-36-036 sha:f17cf0ff src:manual/36-spi.md:51 klas:F -->
+### T-36-036 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -318,8 +474,8 @@
 
 ---
 
-<!-- fc id:T-36-025 sha:e4e931eb src:manual/36-spi.md:51 klas:F -->
-### T-36-025 · proza · рядок 51
+<!-- fc id:T-36-037 sha:e4e931eb src:manual/36-spi.md:51 klas:F -->
+### T-36-037 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -331,8 +487,8 @@
 
 ---
 
-<!-- fc id:T-36-026 sha:cb1460f8 src:manual/36-spi.md:57 klas:F -->
-### T-36-026 · proza · рядок 57
+<!-- fc id:T-36-038 sha:cb1460f8 src:manual/36-spi.md:57 klas:F -->
+### T-36-038 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -344,8 +500,8 @@
 
 ---
 
-<!-- fc id:T-36-027 sha:f871807b src:manual/36-spi.md:59 klas:F -->
-### T-36-027 · proza · рядок 59
+<!-- fc id:T-36-039 sha:f871807b src:manual/36-spi.md:59 klas:A -->
+### T-36-039 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -353,12 +509,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+- **Дослівно з джерела:**
+  > - Increases the input delay of the MISO signal, which makes MISO setup time violations more likely.
+  >   If SPI needs to operate at high speeds, use dedicated IO_MUX pins.
+  > - Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
+  > …
+  > When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the GPIO matrix
+  > will behave the same compared to routing them via IOMUX.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Точно підтверджує «приблизно вдвічі» в розділі 36 і додатку A: 40 проти 80 МГц. Другий абзац додає корисне уточнення, якого в книзі немає і яке варте наступного проходу: до 40 МГц різниці між маршрутами немає взагалі.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-36-028 sha:18ac2d0a src:manual/36-spi.md:59 klas:F -->
-### T-36-028 · proza · рядок 59
+<!-- fc id:T-36-040 sha:18ac2d0a src:manual/36-spi.md:59 klas:A -->
+### T-36-040 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -366,12 +533,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+- **Дослівно з джерела:**
+  > - Increases the input delay of the MISO signal, which makes MISO setup time violations more likely.
+  >   If SPI needs to operate at high speeds, use dedicated IO_MUX pins.
+  > - Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
+  > …
+  > When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the GPIO matrix
+  > will behave the same compared to routing them via IOMUX.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Точно підтверджує «приблизно вдвічі» в розділі 36 і додатку A: 40 проти 80 МГц. Другий абзац додає корисне уточнення, якого в книзі немає і яке варте наступного проходу: до 40 МГц різниці між маршрутами немає взагалі.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-36-029 sha:8c459e5d src:manual/36-spi.md:63 klas:F -->
-### T-36-029 · proza · рядок 63
+<!-- fc id:T-36-041 sha:8c459e5d src:manual/36-spi.md:63 klas:F -->
+### T-36-041 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -383,8 +561,8 @@
 
 ---
 
-<!-- fc id:T-36-030 sha:440fcfa3 src:manual/36-spi.md:63 klas:F -->
-### T-36-030 · proza · рядок 63
+<!-- fc id:T-36-042 sha:440fcfa3 src:manual/36-spi.md:63 klas:F -->
+### T-36-042 · proza · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -396,8 +574,8 @@
 
 ---
 
-<!-- fc id:T-36-031 sha:e12191cb src:manual/36-spi.md:66 klas:F -->
-### T-36-031 · proza · рядок 66
+<!-- fc id:T-36-043 sha:e12191cb src:manual/36-spi.md:66 klas:F -->
+### T-36-043 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -409,8 +587,8 @@
 
 ---
 
-<!-- fc id:T-36-032 sha:93acada7 src:manual/36-spi.md:66 klas:F -->
-### T-36-032 · proza · рядок 66
+<!-- fc id:T-36-044 sha:93acada7 src:manual/36-spi.md:66 klas:F -->
+### T-36-044 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -422,8 +600,8 @@
 
 ---
 
-<!-- fc id:T-36-033 sha:17b08a0c src:manual/36-spi.md:72 klas:F -->
-### T-36-033 · kod · рядок 72
+<!-- fc id:T-36-045 sha:17b08a0c src:manual/36-spi.md:72 klas:F -->
+### T-36-045 · kod · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -458,8 +636,177 @@
 
 ---
 
-<!-- fc id:T-36-034 sha:bdc6d9e0 src:manual/36-spi.md:97 klas:F -->
-### T-36-034 · proza · рядок 97
+<!-- fc id:T-36-046 sha:e4881333 src:manual/36-spi.md:74 klas:F -->
+### T-36-046 · kod-ryadok · рядок 74
+
+**Книга каже, дослівно:**
+
+> .mosi_io_num = GPIO_NUM_23,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-047 sha:139b516d src:manual/36-spi.md:75 klas:F -->
+### T-36-047 · kod-ryadok · рядок 75
+
+**Книга каже, дослівно:**
+
+> .miso_io_num = GPIO_NUM_19,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-048 sha:4bc757ac src:manual/36-spi.md:76 klas:F -->
+### T-36-048 · kod-ryadok · рядок 76
+
+**Книга каже, дослівно:**
+
+> .sclk_io_num = GPIO_NUM_18,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-049 sha:514ab3f3 src:manual/36-spi.md:77 klas:F -->
+### T-36-049 · kod-ryadok · рядок 77
+
+**Книга каже, дослівно:**
+
+> .quadwp_io_num = -1,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-050 sha:2ab54084 src:manual/36-spi.md:78 klas:F -->
+### T-36-050 · kod-ryadok · рядок 78
+
+**Книга каже, дослівно:**
+
+> .quadhd_io_num = -1,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-051 sha:32358bdf src:manual/36-spi.md:79 klas:F -->
+### T-36-051 · kod-ryadok · рядок 79
+
+**Книга каже, дослівно:**
+
+> .max_transfer_sz = 4096,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-052 sha:77cebc65 src:manual/36-spi.md:81 klas:F -->
+### T-36-052 · kod-ryadok · рядок 81
+
+**Книга каже, дослівно:**
+
+> spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-053 sha:ecc8ae71 src:manual/36-spi.md:84 klas:F -->
+### T-36-053 · kod-ryadok · рядок 84
+
+**Книга каже, дослівно:**
+
+> .clock_speed_hz = 1 * 1000 * 1000,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-054 sha:0c8398fb src:manual/36-spi.md:85 klas:F -->
+### T-36-054 · kod-ryadok · рядок 85
+
+**Книга каже, дослівно:**
+
+> .mode = 0,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-055 sha:ac435de6 src:manual/36-spi.md:86 klas:F -->
+### T-36-055 · kod-ryadok · рядок 86
+
+**Книга каже, дослівно:**
+
+> .spics_io_num = GPIO_NUM_5,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-056 sha:36828936 src:manual/36-spi.md:87 klas:F -->
+### T-36-056 · kod-ryadok · рядок 87
+
+**Книга каже, дослівно:**
+
+> .queue_size = 7,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-057 sha:3a842f5a src:manual/36-spi.md:90 klas:F -->
+### T-36-057 · kod-ryadok · рядок 90
+
+**Книга каже, дослівно:**
+
+> spi_bus_add_device(SPI2_HOST, &dev, &handle);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-058 sha:144bbe3b src:manual/36-spi.md:94 klas:F -->
+### T-36-058 · kod-ryadok · рядок 94
+
+**Книга каже, дослівно:**
+
+> spi_device_transmit(handle, &t);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-059 sha:bdc6d9e0 src:manual/36-spi.md:97 klas:F -->
+### T-36-059 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -471,8 +818,8 @@
 
 ---
 
-<!-- fc id:T-36-035 sha:79639d5a src:manual/36-spi.md:97 klas:F -->
-### T-36-035 · proza · рядок 97
+<!-- fc id:T-36-060 sha:79639d5a src:manual/36-spi.md:97 klas:F -->
+### T-36-060 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -484,8 +831,8 @@
 
 ---
 
-<!-- fc id:T-36-036 sha:68e43f7b src:manual/36-spi.md:100 klas:F -->
-### T-36-036 · proza · рядок 100
+<!-- fc id:T-36-061 sha:68e43f7b src:manual/36-spi.md:100 klas:F -->
+### T-36-061 · proza · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -497,8 +844,8 @@
 
 ---
 
-<!-- fc id:T-36-037 sha:45437be3 src:manual/36-spi.md:105 klas:F -->
-### T-36-037 · proza · рядок 105
+<!-- fc id:T-36-062 sha:45437be3 src:manual/36-spi.md:105 klas:F -->
+### T-36-062 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -510,8 +857,8 @@
 
 ---
 
-<!-- fc id:T-36-038 sha:e9a09396 src:manual/36-spi.md:108 klas:F -->
-### T-36-038 · proza · рядок 108
+<!-- fc id:T-36-063 sha:e9a09396 src:manual/36-spi.md:108 klas:F -->
+### T-36-063 · proza · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -523,8 +870,8 @@
 
 ---
 
-<!-- fc id:T-36-039 sha:65a6eae0 src:manual/36-spi.md:110 klas:F -->
-### T-36-039 · proza · рядок 110
+<!-- fc id:T-36-064 sha:65a6eae0 src:manual/36-spi.md:110 klas:F -->
+### T-36-064 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -536,8 +883,8 @@
 
 ---
 
-<!-- fc id:T-36-040 sha:54abc578 src:manual/36-spi.md:113 klas:F -->
-### T-36-040 · kod · рядок 113
+<!-- fc id:T-36-065 sha:54abc578 src:manual/36-spi.md:113 klas:F -->
+### T-36-065 · kod · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -551,8 +898,8 @@
 
 ---
 
-<!-- fc id:T-36-041 sha:fde835ee src:manual/36-spi.md:117 klas:F -->
-### T-36-041 · proza · рядок 117
+<!-- fc id:T-36-066 sha:fde835ee src:manual/36-spi.md:117 klas:F -->
+### T-36-066 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -564,8 +911,8 @@
 
 ---
 
-<!-- fc id:T-36-042 sha:19a5eb78 src:manual/36-spi.md:117 klas:F -->
-### T-36-042 · proza · рядок 117
+<!-- fc id:T-36-067 sha:19a5eb78 src:manual/36-spi.md:117 klas:F -->
+### T-36-067 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -577,8 +924,8 @@
 
 ---
 
-<!-- fc id:T-36-043 sha:9d15bf1a src:manual/36-spi.md:123 klas:F -->
-### T-36-043 · proza · рядок 123
+<!-- fc id:T-36-068 sha:9d15bf1a src:manual/36-spi.md:123 klas:F -->
+### T-36-068 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -590,8 +937,8 @@
 
 ---
 
-<!-- fc id:T-36-044 sha:5defd1b1 src:manual/36-spi.md:123 klas:F -->
-### T-36-044 · proza · рядок 123
+<!-- fc id:T-36-069 sha:5defd1b1 src:manual/36-spi.md:123 klas:F -->
+### T-36-069 · proza · рядок 123
 
 **Книга каже, дослівно:**
 
@@ -603,8 +950,8 @@
 
 ---
 
-<!-- fc id:T-36-045 sha:a0ca2c3c src:manual/36-spi.md:126 klas:F -->
-### T-36-045 · proza · рядок 126
+<!-- fc id:T-36-070 sha:a0ca2c3c src:manual/36-spi.md:126 klas:F -->
+### T-36-070 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -616,8 +963,8 @@
 
 ---
 
-<!-- fc id:T-36-046 sha:54e778ad src:manual/36-spi.md:126 klas:F -->
-### T-36-046 · proza · рядок 126
+<!-- fc id:T-36-071 sha:54e778ad src:manual/36-spi.md:126 klas:F -->
+### T-36-071 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -629,8 +976,8 @@
 
 ---
 
-<!-- fc id:T-36-047 sha:c0b08d64 src:manual/36-spi.md:130 klas:F -->
-### T-36-047 · proza · рядок 130
+<!-- fc id:T-36-072 sha:c0b08d64 src:manual/36-spi.md:130 klas:F -->
+### T-36-072 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -642,8 +989,8 @@
 
 ---
 
-<!-- fc id:T-36-048 sha:713918ed src:manual/36-spi.md:130 klas:F -->
-### T-36-048 · proza · рядок 130
+<!-- fc id:T-36-073 sha:713918ed src:manual/36-spi.md:130 klas:F -->
+### T-36-073 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -655,8 +1002,8 @@
 
 ---
 
-<!-- fc id:T-36-049 sha:aa51a579 src:manual/36-spi.md:134 klas:F -->
-### T-36-049 · proza · рядок 134
+<!-- fc id:T-36-074 sha:aa51a579 src:manual/36-spi.md:134 klas:F -->
+### T-36-074 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -668,8 +1015,8 @@
 
 ---
 
-<!-- fc id:T-36-050 sha:3fec2e5c src:manual/36-spi.md:134 klas:F -->
-### T-36-050 · proza · рядок 134
+<!-- fc id:T-36-075 sha:3fec2e5c src:manual/36-spi.md:134 klas:F -->
+### T-36-075 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -681,8 +1028,8 @@
 
 ---
 
-<!-- fc id:T-36-051 sha:77359921 src:manual/36-spi.md:137 klas:F -->
-### T-36-051 · proza · рядок 137
+<!-- fc id:T-36-076 sha:77359921 src:manual/36-spi.md:137 klas:F -->
+### T-36-076 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -694,8 +1041,8 @@
 
 ---
 
-<!-- fc id:T-36-052 sha:f906627c src:manual/36-spi.md:143 klas:F -->
-### T-36-052 · tablycya · рядок 143
+<!-- fc id:T-36-077 sha:f906627c src:manual/36-spi.md:143 klas:F -->
+### T-36-077 · tablycya-shapka · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -707,12 +1054,12 @@
 
 ---
 
-<!-- fc id:T-36-053 sha:84392932 src:manual/36-spi.md:145 klas:F -->
-### T-36-053 · tablycya · рядок 145
+<!-- fc id:T-36-078 sha:9f4c2a5b src:manual/36-spi.md:144 klas:F -->
+### T-36-078 · komirka · рядок 144
 
 **Книга каже, дослівно:**
 
-> | Пінів | 2 на всіх | 4 + 1 на пристрій |
+> Пінів · I²C → 2 на всіх
 
 **Доказ**
 
@@ -720,12 +1067,12 @@
 
 ---
 
-<!-- fc id:T-36-054 sha:32c66035 src:manual/36-spi.md:146 klas:F -->
-### T-36-054 · tablycya · рядок 146
+<!-- fc id:T-36-079 sha:47924046 src:manual/36-spi.md:144 klas:F -->
+### T-36-079 · komirka · рядок 144
 
 **Книга каже, дослівно:**
 
-> | Швидкість | сотні кГц | десятки МГц |
+> Пінів · SPI → 4 + 1 на пристрій
 
 **Доказ**
 
@@ -733,12 +1080,12 @@
 
 ---
 
-<!-- fc id:T-36-055 sha:c199bee9 src:manual/36-spi.md:147 klas:F -->
-### T-36-055 · tablycya · рядок 147
+<!-- fc id:T-36-080 sha:8e4ac920 src:manual/36-spi.md:145 klas:F -->
+### T-36-080 · komirka · рядок 145
 
 **Книга каже, дослівно:**
 
-> | Підтягування | обов'язкове | не потрібне |
+> Швидкість · I²C → сотні кГц
 
 **Доказ**
 
@@ -746,12 +1093,12 @@
 
 ---
 
-<!-- fc id:T-36-056 sha:e2736ab0 src:manual/36-spi.md:148 klas:F -->
-### T-36-056 · tablycya · рядок 148
+<!-- fc id:T-36-081 sha:88e28272 src:manual/36-spi.md:145 klas:F -->
+### T-36-081 · komirka · рядок 145
 
 **Книга каже, дослівно:**
 
-> | Адресація | адреса в пристрої | окремий пін |
+> Швидкість · SPI → десятки МГц
 
 **Доказ**
 
@@ -759,12 +1106,12 @@
 
 ---
 
-<!-- fc id:T-36-057 sha:023289a1 src:manual/36-spi.md:149 klas:F -->
-### T-36-057 · tablycya · рядок 149
+<!-- fc id:T-36-082 sha:ad2a20bc src:manual/36-spi.md:146 klas:F -->
+### T-36-082 · komirka · рядок 146
 
 **Книга каже, дослівно:**
 
-> | Конфлікт адрес | буває | неможливий |
+> Підтягування · I²C → обов'язкове
 
 **Доказ**
 
@@ -772,12 +1119,12 @@
 
 ---
 
-<!-- fc id:T-36-058 sha:f6a656af src:manual/36-spi.md:150 klas:F -->
-### T-36-058 · tablycya · рядок 150
+<!-- fc id:T-36-083 sha:fe66155c src:manual/36-spi.md:146 klas:F -->
+### T-36-083 · komirka · рядок 146
 
 **Книга каже, дослівно:**
 
-> | Довжина | десятки см | ще менше |
+> Підтягування · SPI → не потрібне
 
 **Доказ**
 
@@ -785,8 +1132,86 @@
 
 ---
 
-<!-- fc id:T-36-059 sha:e8553070 src:manual/36-spi.md:152 klas:F -->
-### T-36-059 · proza · рядок 152
+<!-- fc id:T-36-084 sha:f427c359 src:manual/36-spi.md:147 klas:F -->
+### T-36-084 · komirka · рядок 147
+
+**Книга каже, дослівно:**
+
+> Адресація · I²C → адреса в пристрої
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-085 sha:e67d35a3 src:manual/36-spi.md:147 klas:F -->
+### T-36-085 · komirka · рядок 147
+
+**Книга каже, дослівно:**
+
+> Адресація · SPI → окремий пін
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-086 sha:5ddd7e73 src:manual/36-spi.md:148 klas:F -->
+### T-36-086 · komirka · рядок 148
+
+**Книга каже, дослівно:**
+
+> Конфлікт адрес · I²C → буває
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-087 sha:11a45f5d src:manual/36-spi.md:148 klas:F -->
+### T-36-087 · komirka · рядок 148
+
+**Книга каже, дослівно:**
+
+> Конфлікт адрес · SPI → неможливий
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-088 sha:84417e83 src:manual/36-spi.md:149 klas:F -->
+### T-36-088 · komirka · рядок 149
+
+**Книга каже, дослівно:**
+
+> Довжина · I²C → десятки см
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-089 sha:7d93c96f src:manual/36-spi.md:149 klas:F -->
+### T-36-089 · komirka · рядок 149
+
+**Книга каже, дослівно:**
+
+> Довжина · SPI → ще менше
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-090 sha:e8553070 src:manual/36-spi.md:152 klas:F -->
+### T-36-090 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -798,8 +1223,8 @@
 
 ---
 
-<!-- fc id:T-36-060 sha:9af4ac10 src:manual/36-spi.md:155 klas:F -->
-### T-36-060 · proza · рядок 155
+<!-- fc id:T-36-091 sha:9af4ac10 src:manual/36-spi.md:155 klas:F -->
+### T-36-091 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -811,8 +1236,8 @@
 
 ---
 
-<!-- fc id:T-36-061 sha:178b7c3f src:manual/36-spi.md:158 klas:F -->
-### T-36-061 · proza · рядок 158
+<!-- fc id:T-36-092 sha:178b7c3f src:manual/36-spi.md:158 klas:F -->
+### T-36-092 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -824,8 +1249,8 @@
 
 ---
 
-<!-- fc id:T-36-062 sha:c4c8a3dc src:manual/36-spi.md:158 klas:F -->
-### T-36-062 · proza · рядок 158
+<!-- fc id:T-36-093 sha:c4c8a3dc src:manual/36-spi.md:158 klas:F -->
+### T-36-093 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -837,8 +1262,8 @@
 
 ---
 
-<!-- fc id:T-36-063 sha:4701845c src:manual/36-spi.md:164 klas:F -->
-### T-36-063 · proza · рядок 164
+<!-- fc id:T-36-094 sha:4701845c src:manual/36-spi.md:164 klas:F -->
+### T-36-094 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -850,8 +1275,8 @@
 
 ---
 
-<!-- fc id:T-36-064 sha:5ff6ea36 src:manual/36-spi.md:164 klas:F -->
-### T-36-064 · proza · рядок 164
+<!-- fc id:T-36-095 sha:5ff6ea36 src:manual/36-spi.md:164 klas:F -->
+### T-36-095 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -863,8 +1288,8 @@
 
 ---
 
-<!-- fc id:T-36-065 sha:58094afa src:manual/36-spi.md:164 klas:F -->
-### T-36-065 · proza · рядок 164
+<!-- fc id:T-36-096 sha:58094afa src:manual/36-spi.md:164 klas:F -->
+### T-36-096 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -876,8 +1301,8 @@
 
 ---
 
-<!-- fc id:T-36-066 sha:35b028da src:manual/36-spi.md:164 klas:F -->
-### T-36-066 · proza · рядок 164
+<!-- fc id:T-36-097 sha:35b028da src:manual/36-spi.md:164 klas:F -->
+### T-36-097 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -889,8 +1314,8 @@
 
 ---
 
-<!-- fc id:T-36-067 sha:409f6bd4 src:manual/36-spi.md:164 klas:F -->
-### T-36-067 · proza · рядок 164
+<!-- fc id:T-36-098 sha:409f6bd4 src:manual/36-spi.md:164 klas:F -->
+### T-36-098 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -902,8 +1327,8 @@
 
 ---
 
-<!-- fc id:T-36-068 sha:7b6c367c src:manual/36-spi.md:164 klas:F -->
-### T-36-068 · proza · рядок 164
+<!-- fc id:T-36-099 sha:7b6c367c src:manual/36-spi.md:164 klas:F -->
+### T-36-099 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -915,8 +1340,8 @@
 
 ---
 
-<!-- fc id:T-36-069 sha:ecc91c25 src:manual/36-spi.md:173 klas:F -->
-### T-36-069 · proza · рядок 173
+<!-- fc id:T-36-100 sha:ecc91c25 src:manual/36-spi.md:173 klas:F -->
+### T-36-100 · proza · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -928,8 +1353,8 @@
 
 ---
 
-<!-- fc id:T-36-070 sha:b875f588 src:manual/36-spi.md:175 klas:F -->
-### T-36-070 · proza · рядок 175
+<!-- fc id:T-36-101 sha:b875f588 src:manual/36-spi.md:175 klas:F -->
+### T-36-101 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -941,8 +1366,8 @@
 
 ---
 
-<!-- fc id:T-36-071 sha:a52be068 src:manual/36-spi.md:178 klas:F -->
-### T-36-071 · proza · рядок 178
+<!-- fc id:T-36-102 sha:a52be068 src:manual/36-spi.md:178 klas:F -->
+### T-36-102 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -954,8 +1379,8 @@
 
 ---
 
-<!-- fc id:T-36-072 sha:6c218cdc src:manual/36-spi.md:180 klas:F -->
-### T-36-072 · proza · рядок 180
+<!-- fc id:T-36-103 sha:6c218cdc src:manual/36-spi.md:180 klas:A -->
+### T-36-103 · proza · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -963,12 +1388,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+- **Дослівно з джерела:**
+  > - Increases the input delay of the MISO signal, which makes MISO setup time violations more likely.
+  >   If SPI needs to operate at high speeds, use dedicated IO_MUX pins.
+  > - Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
+  > …
+  > When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the GPIO matrix
+  > will behave the same compared to routing them via IOMUX.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Точно підтверджує «приблизно вдвічі» в розділі 36 і додатку A: 40 проти 80 МГц. Другий абзац додає корисне уточнення, якого в книзі немає і яке варте наступного проходу: до 40 МГц різниці між маршрутами немає взагалі.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-36-073 sha:acf3401b src:manual/36-spi.md:183 klas:F -->
-### T-36-073 · proza · рядок 183
+<!-- fc id:T-36-104 sha:acf3401b src:manual/36-spi.md:183 klas:F -->
+### T-36-104 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -980,8 +1416,8 @@
 
 ---
 
-<!-- fc id:T-36-074 sha:bc757115 src:manual/36-spi.md:185 klas:F -->
-### T-36-074 · proza · рядок 185
+<!-- fc id:T-36-105 sha:bc757115 src:manual/36-spi.md:185 klas:F -->
+### T-36-105 · proza · рядок 185
 
 **Книга каже, дослівно:**
 

@@ -370,12 +370,12 @@
 
 ---
 
-<!-- fc id:T-K09-029 sha:c7cf1c2f src:kartky/k09-pinouty.md:49 klas:F -->
+<!-- fc id:T-K09-029 sha:04c9b16d src:kartky/k09-pinouty.md:49 klas:F -->
 ### T-K09-029 · tablycya · рядок 49
 
 **Книга каже, дослівно:**
 
-> | 5 | ADC2 |
+> | 5 | ADC2 — **не використовувати**, апаратна вада |
 
 **Доказ**
 

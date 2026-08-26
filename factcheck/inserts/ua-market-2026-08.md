@@ -1,6 +1,6 @@
 # Фактчекінг: `inserts/ua-market-2026-08.md`
 
-Одиниць твердження: **37**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **39**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -373,8 +373,34 @@
 
 ---
 
-<!-- fc id:T-UA--029 sha:c706887e src:inserts/ua-market-2026-08.md:70 klas:F -->
-### T-UA--029 · proza · рядок 70
+<!-- fc id:T-UA--029 sha:f9ee23de src:inserts/ua-market-2026-08.md:66 klas:F -->
+### T-UA--029 · kod-ryadok · рядок 66
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 chip-id     # звірити з написом на модулі
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-UA--030 sha:d204efdb src:inserts/ua-market-2026-08.md:67 klas:F -->
+### T-UA--030 · kod-ryadok · рядок 67
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-UA--031 sha:c706887e src:inserts/ua-market-2026-08.md:70 klas:F -->
+### T-UA--031 · proza · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -386,8 +412,8 @@
 
 ---
 
-<!-- fc id:T-UA--030 sha:228bb5b5 src:inserts/ua-market-2026-08.md:73 klas:F -->
-### T-UA--030 · proza · рядок 73
+<!-- fc id:T-UA--032 sha:228bb5b5 src:inserts/ua-market-2026-08.md:73 klas:F -->
+### T-UA--032 · proza · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -399,8 +425,8 @@
 
 ---
 
-<!-- fc id:T-UA--031 sha:6dd417b9 src:inserts/ua-market-2026-08.md:77 klas:F -->
-### T-UA--031 · proza · рядок 77
+<!-- fc id:T-UA--033 sha:6dd417b9 src:inserts/ua-market-2026-08.md:77 klas:F -->
+### T-UA--033 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -412,8 +438,8 @@
 
 ---
 
-<!-- fc id:T-UA--032 sha:9b8eb581 src:inserts/ua-market-2026-08.md:77 klas:F -->
-### T-UA--032 · proza · рядок 77
+<!-- fc id:T-UA--034 sha:9b8eb581 src:inserts/ua-market-2026-08.md:77 klas:F -->
+### T-UA--034 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -425,8 +451,8 @@
 
 ---
 
-<!-- fc id:T-UA--033 sha:512b4a1a src:inserts/ua-market-2026-08.md:80 klas:F -->
-### T-UA--033 · proza · рядок 80
+<!-- fc id:T-UA--035 sha:512b4a1a src:inserts/ua-market-2026-08.md:80 klas:F -->
+### T-UA--035 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -438,8 +464,8 @@
 
 ---
 
-<!-- fc id:T-UA--034 sha:de674e32 src:inserts/ua-market-2026-08.md:80 klas:F -->
-### T-UA--034 · proza · рядок 80
+<!-- fc id:T-UA--036 sha:de674e32 src:inserts/ua-market-2026-08.md:80 klas:F -->
+### T-UA--036 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -451,8 +477,8 @@
 
 ---
 
-<!-- fc id:T-UA--035 sha:61c6ef6c src:inserts/ua-market-2026-08.md:86 klas:F -->
-### T-UA--035 · proza · рядок 86
+<!-- fc id:T-UA--037 sha:61c6ef6c src:inserts/ua-market-2026-08.md:86 klas:F -->
+### T-UA--037 · proza · рядок 86
 
 **Книга каже, дослівно:**
 
@@ -464,8 +490,8 @@
 
 ---
 
-<!-- fc id:T-UA--036 sha:6ac069ed src:inserts/ua-market-2026-08.md:88 klas:F -->
-### T-UA--036 · proza · рядок 88
+<!-- fc id:T-UA--038 sha:6ac069ed src:inserts/ua-market-2026-08.md:88 klas:F -->
+### T-UA--038 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -477,8 +503,8 @@
 
 ---
 
-<!-- fc id:T-UA--037 sha:02d11ac6 src:inserts/ua-market-2026-08.md:94 klas:F -->
-### T-UA--037 · proza · рядок 94
+<!-- fc id:T-UA--039 sha:02d11ac6 src:inserts/ua-market-2026-08.md:94 klas:F -->
+### T-UA--039 · proza · рядок 94
 
 **Книга каже, дослівно:**
 

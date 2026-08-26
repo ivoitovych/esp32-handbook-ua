@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k07-panika.md`
 
-Одиниць твердження: **30**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **37**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -39,7 +39,7 @@
 ---
 
 <!-- fc id:T-K07-003 sha:398c272f src:kartky/k07-panika.md:15 klas:F -->
-### T-K07-003 · tablycya · рядок 15
+### T-K07-003 · tablycya-shapka · рядок 15
 
 **Книга каже, дослівно:**
 
@@ -51,12 +51,12 @@
 
 ---
 
-<!-- fc id:T-K07-004 sha:32048c83 src:kartky/k07-panika.md:17 klas:F -->
-### T-K07-004 · tablycya · рядок 17
+<!-- fc id:T-K07-004 sha:43e6233d src:kartky/k07-panika.md:16 klas:F -->
+### T-K07-004 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
-> | `LoadProhibited` | читання за недійсною адресою | покажчик `NULL` або звільнений |
+> `LoadProhibited` · Що сталося → читання за недійсною адресою
 
 **Доказ**
 
@@ -64,12 +64,12 @@
 
 ---
 
-<!-- fc id:T-K07-005 sha:5d554c88 src:kartky/k07-panika.md:18 klas:F -->
-### T-K07-005 · tablycya · рядок 18
+<!-- fc id:T-K07-005 sha:c9684ba0 src:kartky/k07-panika.md:16 klas:F -->
+### T-K07-005 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
-> | `StoreProhibited` | запис за недійсною адресою | те саме, але на запис |
+> `LoadProhibited` · Куди дивитися → покажчик `NULL` або звільнений
 
 **Доказ**
 
@@ -77,12 +77,12 @@
 
 ---
 
-<!-- fc id:T-K07-006 sha:568ebc8f src:kartky/k07-panika.md:19 klas:F -->
-### T-K07-006 · tablycya · рядок 19
+<!-- fc id:T-K07-006 sha:17665be2 src:kartky/k07-panika.md:17 klas:F -->
+### T-K07-006 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
-> | `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+> `StoreProhibited` · Що сталося → запис за недійсною адресою
 
 **Доказ**
 
@@ -90,12 +90,12 @@
 
 ---
 
-<!-- fc id:T-K07-007 sha:5a04adca src:kartky/k07-panika.md:20 klas:F -->
-### T-K07-007 · tablycya · рядок 20
+<!-- fc id:T-K07-007 sha:79b748d0 src:kartky/k07-panika.md:17 klas:F -->
+### T-K07-007 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
-> | `IllegalInstruction` | виконання не-коду | пошкоджений стек, переповнення |
+> `StoreProhibited` · Куди дивитися → те саме, але на запис
 
 **Доказ**
 
@@ -103,12 +103,12 @@
 
 ---
 
-<!-- fc id:T-K07-008 sha:1add8061 src:kartky/k07-panika.md:21 klas:F -->
-### T-K07-008 · tablycya · рядок 21
+<!-- fc id:T-K07-008 sha:81fd026c src:kartky/k07-panika.md:18 klas:F -->
+### T-K07-008 · komirka · рядок 18
 
 **Книга каже, дослівно:**
 
-> | `LoadStoreAlignment` | невирівняний доступ | читання 32 біт з непарної адреси |
+> `InstrFetchProhibited` · Що сталося → перехід на недійсну адресу
 
 **Доказ**
 
@@ -116,12 +116,12 @@
 
 ---
 
-<!-- fc id:T-K07-009 sha:ec874189 src:kartky/k07-panika.md:22 klas:F -->
-### T-K07-009 · tablycya · рядок 22
+<!-- fc id:T-K07-009 sha:a365c033 src:kartky/k07-panika.md:18 klas:F -->
+### T-K07-009 · komirka · рядок 18
 
 **Книга каже, дослівно:**
 
-> | `Interrupt wdt timeout` | ISR або critical section триває задовго | код у перериванні |
+> `InstrFetchProhibited` · Куди дивитися → зіпсований покажчик на функцію
 
 **Доказ**
 
@@ -129,8 +129,86 @@
 
 ---
 
-<!-- fc id:T-K07-010 sha:8c383197 src:kartky/k07-panika.md:24 klas:F -->
-### T-K07-010 · proza · рядок 24
+<!-- fc id:T-K07-010 sha:a2d38223 src:kartky/k07-panika.md:19 klas:F -->
+### T-K07-010 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> `IllegalInstruction` · Що сталося → виконання не-коду
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K07-011 sha:5208283b src:kartky/k07-panika.md:19 klas:F -->
+### T-K07-011 · komirka · рядок 19
+
+**Книга каже, дослівно:**
+
+> `IllegalInstruction` · Куди дивитися → пошкоджений стек, переповнення
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K07-012 sha:3df94a10 src:kartky/k07-panika.md:20 klas:F -->
+### T-K07-012 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> `LoadStoreAlignment` · Що сталося → невирівняний доступ
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K07-013 sha:1d31178b src:kartky/k07-panika.md:20 klas:F -->
+### T-K07-013 · komirka · рядок 20
+
+**Книга каже, дослівно:**
+
+> `LoadStoreAlignment` · Куди дивитися → читання 32 біт з непарної адреси
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K07-014 sha:23917c21 src:kartky/k07-panika.md:21 klas:F -->
+### T-K07-014 · komirka · рядок 21
+
+**Книга каже, дослівно:**
+
+> `Interrupt wdt timeout` · Що сталося → ISR або critical section триває задовго
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K07-015 sha:58d7dba4 src:kartky/k07-panika.md:21 klas:F -->
+### T-K07-015 · komirka · рядок 21
+
+**Книга каже, дослівно:**
+
+> `Interrupt wdt timeout` · Куди дивитися → код у перериванні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K07-016 sha:8c383197 src:kartky/k07-panika.md:24 klas:F -->
+### T-K07-016 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -142,8 +220,8 @@
 
 ---
 
-<!-- fc id:T-K07-011 sha:e501e2ce src:kartky/k07-panika.md:24 klas:F -->
-### T-K07-011 · proza · рядок 24
+<!-- fc id:T-K07-017 sha:e501e2ce src:kartky/k07-panika.md:24 klas:F -->
+### T-K07-017 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -155,8 +233,8 @@
 
 ---
 
-<!-- fc id:T-K07-012 sha:28db66bc src:kartky/k07-panika.md:24 klas:F -->
-### T-K07-012 · proza · рядок 24
+<!-- fc id:T-K07-018 sha:28db66bc src:kartky/k07-panika.md:24 klas:F -->
+### T-K07-018 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -168,8 +246,8 @@
 
 ---
 
-<!-- fc id:T-K07-013 sha:7474c60a src:kartky/k07-panika.md:28 klas:F -->
-### T-K07-013 · proza · рядок 28
+<!-- fc id:T-K07-019 sha:7474c60a src:kartky/k07-panika.md:28 klas:F -->
+### T-K07-019 · proza · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -181,8 +259,8 @@
 
 ---
 
-<!-- fc id:T-K07-014 sha:9ad1110b src:kartky/k07-panika.md:28 klas:F -->
-### T-K07-014 · proza · рядок 28
+<!-- fc id:T-K07-020 sha:9ad1110b src:kartky/k07-panika.md:28 klas:F -->
+### T-K07-020 · proza · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -194,8 +272,8 @@
 
 ---
 
-<!-- fc id:T-K07-015 sha:db4c2e3d src:kartky/k07-panika.md:34 klas:F -->
-### T-K07-015 · proza · рядок 34
+<!-- fc id:T-K07-021 sha:db4c2e3d src:kartky/k07-panika.md:34 klas:F -->
+### T-K07-021 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -207,8 +285,8 @@
 
 ---
 
-<!-- fc id:T-K07-016 sha:ce22291b src:kartky/k07-panika.md:34 klas:F -->
-### T-K07-016 · proza · рядок 34
+<!-- fc id:T-K07-022 sha:ce22291b src:kartky/k07-panika.md:34 klas:F -->
+### T-K07-022 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -220,8 +298,8 @@
 
 ---
 
-<!-- fc id:T-K07-017 sha:e0cf8dca src:kartky/k07-panika.md:34 klas:F -->
-### T-K07-017 · proza · рядок 34
+<!-- fc id:T-K07-023 sha:e0cf8dca src:kartky/k07-panika.md:34 klas:F -->
+### T-K07-023 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -233,8 +311,8 @@
 
 ---
 
-<!-- fc id:T-K07-018 sha:1346d34d src:kartky/k07-panika.md:38 klas:F -->
-### T-K07-018 · proza · рядок 38
+<!-- fc id:T-K07-024 sha:1346d34d src:kartky/k07-panika.md:38 klas:F -->
+### T-K07-024 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -246,8 +324,8 @@
 
 ---
 
-<!-- fc id:T-K07-019 sha:4490d7ba src:kartky/k07-panika.md:40 klas:F -->
-### T-K07-019 · kod · рядок 40
+<!-- fc id:T-K07-025 sha:4490d7ba src:kartky/k07-panika.md:40 klas:F -->
+### T-K07-025 · kod · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -261,8 +339,21 @@
 
 ---
 
-<!-- fc id:T-K07-020 sha:e408ef53 src:kartky/k07-panika.md:44 klas:F -->
-### T-K07-020 · proza · рядок 44
+<!-- fc id:T-K07-026 sha:5f267d8c src:kartky/k07-panika.md:41 klas:F -->
+### T-K07-026 · kod-ryadok · рядок 41
+
+**Книга каже, дослівно:**
+
+> xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K07-027 sha:e408ef53 src:kartky/k07-panika.md:44 klas:F -->
+### T-K07-027 · proza · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -274,8 +365,8 @@
 
 ---
 
-<!-- fc id:T-K07-021 sha:691fefcb src:kartky/k07-panika.md:48 klas:F -->
-### T-K07-021 · proza · рядок 48
+<!-- fc id:T-K07-028 sha:691fefcb src:kartky/k07-panika.md:48 klas:F -->
+### T-K07-028 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -287,8 +378,8 @@
 
 ---
 
-<!-- fc id:T-K07-022 sha:f4767606 src:kartky/k07-panika.md:52 klas:F -->
-### T-K07-022 · proza · рядок 52
+<!-- fc id:T-K07-029 sha:f4767606 src:kartky/k07-panika.md:52 klas:F -->
+### T-K07-029 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -300,8 +391,8 @@
 
 ---
 
-<!-- fc id:T-K07-023 sha:4837dd6e src:kartky/k07-panika.md:52 klas:F -->
-### T-K07-023 · proza · рядок 52
+<!-- fc id:T-K07-030 sha:4837dd6e src:kartky/k07-panika.md:52 klas:F -->
+### T-K07-030 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -313,8 +404,8 @@
 
 ---
 
-<!-- fc id:T-K07-024 sha:0b3b2823 src:kartky/k07-panika.md:57 klas:F -->
-### T-K07-024 · proza · рядок 57
+<!-- fc id:T-K07-031 sha:0b3b2823 src:kartky/k07-panika.md:57 klas:F -->
+### T-K07-031 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -326,8 +417,8 @@
 
 ---
 
-<!-- fc id:T-K07-025 sha:9b8eb9e1 src:kartky/k07-panika.md:57 klas:F -->
-### T-K07-025 · proza · рядок 57
+<!-- fc id:T-K07-032 sha:9b8eb9e1 src:kartky/k07-panika.md:57 klas:F -->
+### T-K07-032 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -339,8 +430,8 @@
 
 ---
 
-<!-- fc id:T-K07-026 sha:0c9a59fb src:kartky/k07-panika.md:57 klas:F -->
-### T-K07-026 · proza · рядок 57
+<!-- fc id:T-K07-033 sha:0c9a59fb src:kartky/k07-panika.md:57 klas:F -->
+### T-K07-033 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -352,8 +443,8 @@
 
 ---
 
-<!-- fc id:T-K07-027 sha:9e14d394 src:kartky/k07-panika.md:64 klas:F -->
-### T-K07-027 · proza · рядок 64
+<!-- fc id:T-K07-034 sha:9e14d394 src:kartky/k07-panika.md:64 klas:F -->
+### T-K07-034 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -365,8 +456,8 @@
 
 ---
 
-<!-- fc id:T-K07-028 sha:fc205c28 src:kartky/k07-panika.md:64 klas:F -->
-### T-K07-028 · proza · рядок 64
+<!-- fc id:T-K07-035 sha:fc205c28 src:kartky/k07-panika.md:64 klas:F -->
+### T-K07-035 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -378,8 +469,8 @@
 
 ---
 
-<!-- fc id:T-K07-029 sha:95c093b4 src:kartky/k07-panika.md:64 klas:F -->
-### T-K07-029 · proza · рядок 64
+<!-- fc id:T-K07-036 sha:95c093b4 src:kartky/k07-panika.md:64 klas:F -->
+### T-K07-036 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -391,8 +482,8 @@
 
 ---
 
-<!-- fc id:T-K07-030 sha:f79bd0a9 src:kartky/k07-panika.md:68 klas:F -->
-### T-K07-030 · proza · рядок 68
+<!-- fc id:T-K07-037 sha:f79bd0a9 src:kartky/k07-panika.md:68 klas:F -->
+### T-K07-037 · proza · рядок 68
 
 **Книга каже, дослівно:**
 

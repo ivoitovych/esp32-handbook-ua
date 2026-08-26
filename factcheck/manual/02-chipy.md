@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/02-chipy.md`
 
-Одиниць твердження: **80**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **141**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -137,7 +137,7 @@
 ---
 
 <!-- fc id:T-02-011 sha:8630e49d src:manual/02-chipy.md:30 klas:F -->
-### T-02-011 · tablycya · рядок 30
+### T-02-011 · tablycya-shapka · рядок 30
 
 **Книга каже, дослівно:**
 
@@ -149,12 +149,12 @@
 
 ---
 
-<!-- fc id:T-02-012 sha:9e1855bb src:manual/02-chipy.md:32 klas:F -->
-### T-02-012 · tablycya · рядок 32
+<!-- fc id:T-02-012 sha:0168572d src:manual/02-chipy.md:31 klas:F -->
+### T-02-012 · komirka · рядок 31
 
 **Книга каже, дослівно:**
 
-> | Ядро | Xtensa LX6 | Xtensa LX7 | Xtensa LX7 | RISC-V | RISC-V | RISC-V |
+> Ядро · ESP32 → Xtensa LX6
 
 **Доказ**
 
@@ -162,12 +162,12 @@
 
 ---
 
-<!-- fc id:T-02-013 sha:92cba7d0 src:manual/02-chipy.md:33 klas:F -->
-### T-02-013 · tablycya · рядок 33
+<!-- fc id:T-02-013 sha:e91dccbe src:manual/02-chipy.md:31 klas:F -->
+### T-02-013 · komirka · рядок 31
 
 **Книга каже, дослівно:**
 
-> | Ядер | **2** | 1 | **2** | 1 | 1 | 1 |
+> Ядро · S2 → Xtensa LX7
 
 **Доказ**
 
@@ -175,12 +175,12 @@
 
 ---
 
-<!-- fc id:T-02-014 sha:43f819d4 src:manual/02-chipy.md:34 klas:F -->
-### T-02-014 · tablycya · рядок 34
+<!-- fc id:T-02-014 sha:36ed0120 src:manual/02-chipy.md:31 klas:F -->
+### T-02-014 · komirka · рядок 31
 
 **Книга каже, дослівно:**
 
-> | Частота, МГц | 240 | 240 | 240 | 160 | 160 | 96 |
+> Ядро · S3 → Xtensa LX7
 
 **Доказ**
 
@@ -188,12 +188,12 @@
 
 ---
 
-<!-- fc id:T-02-015 sha:0bce7d1f src:manual/02-chipy.md:35 klas:F -->
-### T-02-015 · tablycya · рядок 35
+<!-- fc id:T-02-015 sha:009980b4 src:manual/02-chipy.md:31 klas:F -->
+### T-02-015 · komirka · рядок 31
 
 **Книга каже, дослівно:**
 
-> | SRAM, КБ | 520 | 320 | 512 | 400 | 512 | 320 |
+> Ядро · C3 → RISC-V
 
 **Доказ**
 
@@ -201,12 +201,12 @@
 
 ---
 
-<!-- fc id:T-02-016 sha:5f5a82db src:manual/02-chipy.md:36 klas:F -->
-### T-02-016 · tablycya · рядок 36
+<!-- fc id:T-02-016 sha:655eca53 src:manual/02-chipy.md:31 klas:F -->
+### T-02-016 · komirka · рядок 31
 
 **Книга каже, дослівно:**
 
-> | PSRAM | так | так | так | **ні** | **ні** | **ні** |
+> Ядро · C6 → RISC-V
 
 **Доказ**
 
@@ -214,12 +214,12 @@
 
 ---
 
-<!-- fc id:T-02-017 sha:c50a7dd3 src:manual/02-chipy.md:37 klas:F -->
-### T-02-017 · tablycya · рядок 37
+<!-- fc id:T-02-017 sha:626a6ffe src:manual/02-chipy.md:31 klas:F -->
+### T-02-017 · komirka · рядок 31
 
 **Книга каже, дослівно:**
 
-> | Wi-Fi | так | так | так | так | **Wi-Fi 6** | **ні** |
+> Ядро · H2 → RISC-V
 
 **Доказ**
 
@@ -227,12 +227,12 @@
 
 ---
 
-<!-- fc id:T-02-018 sha:d2adf428 src:manual/02-chipy.md:38 klas:F -->
-### T-02-018 · tablycya · рядок 38
+<!-- fc id:T-02-018 sha:0cb91d4a src:manual/02-chipy.md:32 klas:F -->
+### T-02-018 · komirka · рядок 32
 
 **Книга каже, дослівно:**
 
-> | BT Classic | **так** | **ні** | ні | ні | ні | ні |
+> Ядер · ESP32 → **2**
 
 **Доказ**
 
@@ -240,12 +240,12 @@
 
 ---
 
-<!-- fc id:T-02-019 sha:99a2e8f3 src:manual/02-chipy.md:39 klas:F -->
-### T-02-019 · tablycya · рядок 39
+<!-- fc id:T-02-019 sha:1e14bfc6 src:manual/02-chipy.md:32 klas:F -->
+### T-02-019 · komirka · рядок 32
 
 **Книга каже, дослівно:**
 
-> | BLE | так | **ні** | так | так | так | так |
+> Ядер · S2 → 1
 
 **Доказ**
 
@@ -253,12 +253,12 @@
 
 ---
 
-<!-- fc id:T-02-020 sha:d7fd8f47 src:manual/02-chipy.md:40 klas:F -->
-### T-02-020 · tablycya · рядок 40
+<!-- fc id:T-02-020 sha:6aac4631 src:manual/02-chipy.md:32 klas:F -->
+### T-02-020 · komirka · рядок 32
 
 **Книга каже, дослівно:**
 
-> | 802.15.4 | ні | ні | ні | ні | **так** | **так** |
+> Ядер · S3 → **2**
 
 **Доказ**
 
@@ -266,12 +266,12 @@
 
 ---
 
-<!-- fc id:T-02-021 sha:db970326 src:manual/02-chipy.md:41 klas:F -->
-### T-02-021 · tablycya · рядок 41
+<!-- fc id:T-02-021 sha:de0b6f6b src:manual/02-chipy.md:32 klas:F -->
+### T-02-021 · komirka · рядок 32
 
 **Книга каже, дослівно:**
 
-> | USB | ні | OTG | OTG + JTAG | Serial-JTAG | Serial-JTAG | Serial-JTAG |
+> Ядер · C3 → 1
 
 **Доказ**
 
@@ -279,8 +279,658 @@
 
 ---
 
-<!-- fc id:T-02-022 sha:bfdbac4b src:manual/02-chipy.md:43 klas:F -->
-### T-02-022 · proza · рядок 43
+<!-- fc id:T-02-022 sha:0d0afd19 src:manual/02-chipy.md:32 klas:F -->
+### T-02-022 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> Ядер · C6 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-023 sha:af57da03 src:manual/02-chipy.md:32 klas:F -->
+### T-02-023 · komirka · рядок 32
+
+**Книга каже, дослівно:**
+
+> Ядер · H2 → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-024 sha:0f17620f src:manual/02-chipy.md:33 klas:F -->
+### T-02-024 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Частота, МГц · ESP32 → 240
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-025 sha:7e7d979b src:manual/02-chipy.md:33 klas:F -->
+### T-02-025 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Частота, МГц · S2 → 240
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-026 sha:966fb621 src:manual/02-chipy.md:33 klas:F -->
+### T-02-026 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Частота, МГц · S3 → 240
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-027 sha:52b2301b src:manual/02-chipy.md:33 klas:F -->
+### T-02-027 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Частота, МГц · C3 → 160
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-028 sha:b3f7155b src:manual/02-chipy.md:33 klas:F -->
+### T-02-028 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Частота, МГц · C6 → 160
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-029 sha:f4539c1a src:manual/02-chipy.md:33 klas:F -->
+### T-02-029 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> Частота, МГц · H2 → 96
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-030 sha:3424af9b src:manual/02-chipy.md:34 klas:F -->
+### T-02-030 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> SRAM, КБ · ESP32 → 520
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-031 sha:653d5866 src:manual/02-chipy.md:34 klas:F -->
+### T-02-031 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> SRAM, КБ · S2 → 320
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-032 sha:13e5bc61 src:manual/02-chipy.md:34 klas:F -->
+### T-02-032 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> SRAM, КБ · S3 → 512
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-033 sha:0127c37c src:manual/02-chipy.md:34 klas:F -->
+### T-02-033 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> SRAM, КБ · C3 → 400
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-034 sha:7798c639 src:manual/02-chipy.md:34 klas:F -->
+### T-02-034 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> SRAM, КБ · C6 → 512
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-035 sha:8798e39c src:manual/02-chipy.md:34 klas:F -->
+### T-02-035 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> SRAM, КБ · H2 → 320
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-036 sha:bd5f8f54 src:manual/02-chipy.md:35 klas:F -->
+### T-02-036 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> PSRAM · ESP32 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-037 sha:62d6b631 src:manual/02-chipy.md:35 klas:F -->
+### T-02-037 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> PSRAM · S2 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-038 sha:1b466931 src:manual/02-chipy.md:35 klas:F -->
+### T-02-038 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> PSRAM · S3 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-039 sha:2ace6257 src:manual/02-chipy.md:35 klas:F -->
+### T-02-039 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> PSRAM · C3 → **ні**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-040 sha:328f15ff src:manual/02-chipy.md:35 klas:F -->
+### T-02-040 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> PSRAM · C6 → **ні**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-041 sha:0da97b7e src:manual/02-chipy.md:35 klas:F -->
+### T-02-041 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> PSRAM · H2 → **ні**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-042 sha:d887dabc src:manual/02-chipy.md:36 klas:F -->
+### T-02-042 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Wi-Fi · ESP32 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-043 sha:8de930a4 src:manual/02-chipy.md:36 klas:F -->
+### T-02-043 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Wi-Fi · S2 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-044 sha:a5ffbdc2 src:manual/02-chipy.md:36 klas:F -->
+### T-02-044 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Wi-Fi · S3 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-045 sha:715a8f46 src:manual/02-chipy.md:36 klas:F -->
+### T-02-045 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Wi-Fi · C3 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-046 sha:86264540 src:manual/02-chipy.md:36 klas:F -->
+### T-02-046 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Wi-Fi · C6 → **Wi-Fi 6**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-047 sha:ef59b447 src:manual/02-chipy.md:36 klas:F -->
+### T-02-047 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Wi-Fi · H2 → **ні**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-048 sha:9bdedf92 src:manual/02-chipy.md:37 klas:F -->
+### T-02-048 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> BT Classic · ESP32 → **так**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-049 sha:37ca91b8 src:manual/02-chipy.md:37 klas:F -->
+### T-02-049 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> BT Classic · S2 → **ні**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-050 sha:679fdc0a src:manual/02-chipy.md:37 klas:F -->
+### T-02-050 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> BT Classic · S3 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-051 sha:830f1e52 src:manual/02-chipy.md:37 klas:F -->
+### T-02-051 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> BT Classic · C3 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-052 sha:0688b955 src:manual/02-chipy.md:37 klas:F -->
+### T-02-052 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> BT Classic · C6 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-053 sha:5180d438 src:manual/02-chipy.md:37 klas:F -->
+### T-02-053 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> BT Classic · H2 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-054 sha:44c68cc9 src:manual/02-chipy.md:38 klas:F -->
+### T-02-054 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> BLE · ESP32 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-055 sha:8758336a src:manual/02-chipy.md:38 klas:F -->
+### T-02-055 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> BLE · S2 → **ні**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-056 sha:a7109dbe src:manual/02-chipy.md:38 klas:F -->
+### T-02-056 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> BLE · S3 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-057 sha:fedb80c4 src:manual/02-chipy.md:38 klas:F -->
+### T-02-057 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> BLE · C3 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-058 sha:72e63fbb src:manual/02-chipy.md:38 klas:F -->
+### T-02-058 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> BLE · C6 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-059 sha:f2652967 src:manual/02-chipy.md:38 klas:F -->
+### T-02-059 · komirka · рядок 38
+
+**Книга каже, дослівно:**
+
+> BLE · H2 → так
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-060 sha:6d067d98 src:manual/02-chipy.md:39 klas:F -->
+### T-02-060 · komirka · рядок 39
+
+**Книга каже, дослівно:**
+
+> 802.15.4 · ESP32 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-061 sha:d6c8ccf7 src:manual/02-chipy.md:39 klas:F -->
+### T-02-061 · komirka · рядок 39
+
+**Книга каже, дослівно:**
+
+> 802.15.4 · S2 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-062 sha:60a5ea72 src:manual/02-chipy.md:39 klas:F -->
+### T-02-062 · komirka · рядок 39
+
+**Книга каже, дослівно:**
+
+> 802.15.4 · S3 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-063 sha:6bd38e28 src:manual/02-chipy.md:39 klas:F -->
+### T-02-063 · komirka · рядок 39
+
+**Книга каже, дослівно:**
+
+> 802.15.4 · C3 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-064 sha:43079d53 src:manual/02-chipy.md:39 klas:F -->
+### T-02-064 · komirka · рядок 39
+
+**Книга каже, дослівно:**
+
+> 802.15.4 · C6 → **так**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-065 sha:aff9b495 src:manual/02-chipy.md:39 klas:F -->
+### T-02-065 · komirka · рядок 39
+
+**Книга каже, дослівно:**
+
+> 802.15.4 · H2 → **так**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-066 sha:b3fa1d90 src:manual/02-chipy.md:40 klas:F -->
+### T-02-066 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> USB · ESP32 → ні
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-067 sha:5c099b4e src:manual/02-chipy.md:40 klas:F -->
+### T-02-067 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> USB · S2 → OTG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-068 sha:7d1819e5 src:manual/02-chipy.md:40 klas:F -->
+### T-02-068 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> USB · S3 → OTG + JTAG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-069 sha:85dd3bbe src:manual/02-chipy.md:40 klas:F -->
+### T-02-069 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> USB · C3 → Serial-JTAG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-070 sha:e3d31b30 src:manual/02-chipy.md:40 klas:F -->
+### T-02-070 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> USB · C6 → Serial-JTAG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-071 sha:74ca1990 src:manual/02-chipy.md:40 klas:F -->
+### T-02-071 · komirka · рядок 40
+
+**Книга каже, дослівно:**
+
+> USB · H2 → Serial-JTAG
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-072 sha:bfdbac4b src:manual/02-chipy.md:43 klas:F -->
+### T-02-072 · proza · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -292,8 +942,8 @@
 
 ---
 
-<!-- fc id:T-02-023 sha:967fdcb8 src:manual/02-chipy.md:43 klas:F -->
-### T-02-023 · proza · рядок 43
+<!-- fc id:T-02-073 sha:967fdcb8 src:manual/02-chipy.md:43 klas:F -->
+### T-02-073 · proza · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -305,8 +955,8 @@
 
 ---
 
-<!-- fc id:T-02-024 sha:0fb7a491 src:manual/02-chipy.md:48 klas:F -->
-### T-02-024 · proza · рядок 48
+<!-- fc id:T-02-074 sha:0fb7a491 src:manual/02-chipy.md:48 klas:F -->
+### T-02-074 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -318,8 +968,8 @@
 
 ---
 
-<!-- fc id:T-02-025 sha:e9312cfd src:manual/02-chipy.md:55 klas:F -->
-### T-02-025 · proza · рядок 55
+<!-- fc id:T-02-075 sha:e9312cfd src:manual/02-chipy.md:55 klas:F -->
+### T-02-075 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -331,8 +981,8 @@
 
 ---
 
-<!-- fc id:T-02-026 sha:8f45264a src:manual/02-chipy.md:55 klas:F -->
-### T-02-026 · proza · рядок 55
+<!-- fc id:T-02-076 sha:8f45264a src:manual/02-chipy.md:55 klas:F -->
+### T-02-076 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -344,8 +994,8 @@
 
 ---
 
-<!-- fc id:T-02-027 sha:447dbfe3 src:manual/02-chipy.md:58 klas:F -->
-### T-02-027 · proza · рядок 58
+<!-- fc id:T-02-077 sha:447dbfe3 src:manual/02-chipy.md:58 klas:F -->
+### T-02-077 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -357,8 +1007,8 @@
 
 ---
 
-<!-- fc id:T-02-028 sha:33136a2d src:manual/02-chipy.md:58 klas:F -->
-### T-02-028 · proza · рядок 58
+<!-- fc id:T-02-078 sha:33136a2d src:manual/02-chipy.md:58 klas:F -->
+### T-02-078 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -370,8 +1020,8 @@
 
 ---
 
-<!-- fc id:T-02-029 sha:b13a20d6 src:manual/02-chipy.md:66 klas:F -->
-### T-02-029 · proza · рядок 66
+<!-- fc id:T-02-079 sha:b13a20d6 src:manual/02-chipy.md:66 klas:F -->
+### T-02-079 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -383,8 +1033,8 @@
 
 ---
 
-<!-- fc id:T-02-030 sha:b75ec5dc src:manual/02-chipy.md:66 klas:F -->
-### T-02-030 · proza · рядок 66
+<!-- fc id:T-02-080 sha:b75ec5dc src:manual/02-chipy.md:66 klas:F -->
+### T-02-080 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -396,8 +1046,8 @@
 
 ---
 
-<!-- fc id:T-02-031 sha:f76e5a7f src:manual/02-chipy.md:72 klas:F -->
-### T-02-031 · proza · рядок 72
+<!-- fc id:T-02-081 sha:f76e5a7f src:manual/02-chipy.md:72 klas:F -->
+### T-02-081 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -409,8 +1059,8 @@
 
 ---
 
-<!-- fc id:T-02-032 sha:5d224757 src:manual/02-chipy.md:75 klas:F -->
-### T-02-032 · proza · рядок 75
+<!-- fc id:T-02-082 sha:5d224757 src:manual/02-chipy.md:75 klas:F -->
+### T-02-082 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -422,8 +1072,8 @@
 
 ---
 
-<!-- fc id:T-02-033 sha:20383220 src:manual/02-chipy.md:75 klas:F -->
-### T-02-033 · proza · рядок 75
+<!-- fc id:T-02-083 sha:20383220 src:manual/02-chipy.md:75 klas:F -->
+### T-02-083 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -435,8 +1085,8 @@
 
 ---
 
-<!-- fc id:T-02-034 sha:258d0fa2 src:manual/02-chipy.md:82 klas:F -->
-### T-02-034 · proza · рядок 82
+<!-- fc id:T-02-084 sha:258d0fa2 src:manual/02-chipy.md:82 klas:F -->
+### T-02-084 · proza · рядок 82
 
 **Книга каже, дослівно:**
 
@@ -448,8 +1098,8 @@
 
 ---
 
-<!-- fc id:T-02-035 sha:69cccb54 src:manual/02-chipy.md:85 klas:F -->
-### T-02-035 · proza · рядок 85
+<!-- fc id:T-02-085 sha:69cccb54 src:manual/02-chipy.md:85 klas:F -->
+### T-02-085 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -461,8 +1111,8 @@
 
 ---
 
-<!-- fc id:T-02-036 sha:e76453d8 src:manual/02-chipy.md:85 klas:F -->
-### T-02-036 · proza · рядок 85
+<!-- fc id:T-02-086 sha:e76453d8 src:manual/02-chipy.md:85 klas:F -->
+### T-02-086 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -474,8 +1124,8 @@
 
 ---
 
-<!-- fc id:T-02-037 sha:b6b6f8de src:manual/02-chipy.md:91 klas:F -->
-### T-02-037 · proza · рядок 91
+<!-- fc id:T-02-087 sha:b6b6f8de src:manual/02-chipy.md:91 klas:F -->
+### T-02-087 · proza · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -487,8 +1137,8 @@
 
 ---
 
-<!-- fc id:T-02-038 sha:058b6206 src:manual/02-chipy.md:99 klas:F -->
-### T-02-038 · proza · рядок 99
+<!-- fc id:T-02-088 sha:058b6206 src:manual/02-chipy.md:99 klas:F -->
+### T-02-088 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -500,8 +1150,8 @@
 
 ---
 
-<!-- fc id:T-02-039 sha:c17dc940 src:manual/02-chipy.md:104 klas:F -->
-### T-02-039 · proza · рядок 104
+<!-- fc id:T-02-089 sha:c17dc940 src:manual/02-chipy.md:104 klas:F -->
+### T-02-089 · proza · рядок 104
 
 **Книга каже, дослівно:**
 
@@ -513,8 +1163,8 @@
 
 ---
 
-<!-- fc id:T-02-040 sha:5ec634b9 src:manual/02-chipy.md:107 klas:F -->
-### T-02-040 · proza · рядок 107
+<!-- fc id:T-02-090 sha:5ec634b9 src:manual/02-chipy.md:107 klas:F -->
+### T-02-090 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -526,8 +1176,8 @@
 
 ---
 
-<!-- fc id:T-02-041 sha:6ddadcf2 src:manual/02-chipy.md:111 klas:F -->
-### T-02-041 · proza · рядок 111
+<!-- fc id:T-02-091 sha:6ddadcf2 src:manual/02-chipy.md:111 klas:F -->
+### T-02-091 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -539,8 +1189,8 @@
 
 ---
 
-<!-- fc id:T-02-042 sha:ce0f3606 src:manual/02-chipy.md:114 klas:F -->
-### T-02-042 · proza · рядок 114
+<!-- fc id:T-02-092 sha:ce0f3606 src:manual/02-chipy.md:114 klas:F -->
+### T-02-092 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -552,8 +1202,8 @@
 
 ---
 
-<!-- fc id:T-02-043 sha:5e7f4dbe src:manual/02-chipy.md:116 klas:F -->
-### T-02-043 · kod · рядок 116
+<!-- fc id:T-02-093 sha:5e7f4dbe src:manual/02-chipy.md:116 klas:F -->
+### T-02-093 · kod · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -567,8 +1217,21 @@
 
 ---
 
-<!-- fc id:T-02-044 sha:a88581f8 src:manual/02-chipy.md:121 klas:F -->
-### T-02-044 · proza · рядок 121
+<!-- fc id:T-02-094 sha:6aa9cf42 src:manual/02-chipy.md:117 klas:F -->
+### T-02-094 · kod-ryadok · рядок 117
+
+**Книга каже, дослівно:**
+
+> idf.py set-target esp32s3
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-095 sha:a88581f8 src:manual/02-chipy.md:121 klas:F -->
+### T-02-095 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -580,8 +1243,8 @@
 
 ---
 
-<!-- fc id:T-02-045 sha:37dcf890 src:manual/02-chipy.md:121 klas:F -->
-### T-02-045 · proza · рядок 121
+<!-- fc id:T-02-096 sha:37dcf890 src:manual/02-chipy.md:121 klas:F -->
+### T-02-096 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -593,8 +1256,8 @@
 
 ---
 
-<!-- fc id:T-02-046 sha:0db3ab6f src:manual/02-chipy.md:121 klas:F -->
-### T-02-046 · proza · рядок 121
+<!-- fc id:T-02-097 sha:0db3ab6f src:manual/02-chipy.md:121 klas:F -->
+### T-02-097 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -606,8 +1269,8 @@
 
 ---
 
-<!-- fc id:T-02-047 sha:ac382040 src:manual/02-chipy.md:121 klas:F -->
-### T-02-047 · proza · рядок 121
+<!-- fc id:T-02-098 sha:ac382040 src:manual/02-chipy.md:121 klas:F -->
+### T-02-098 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -619,8 +1282,8 @@
 
 ---
 
-<!-- fc id:T-02-048 sha:8793046b src:manual/02-chipy.md:129 klas:F -->
-### T-02-048 · proza · рядок 129
+<!-- fc id:T-02-099 sha:8793046b src:manual/02-chipy.md:129 klas:F -->
+### T-02-099 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -632,8 +1295,8 @@
 
 ---
 
-<!-- fc id:T-02-049 sha:b3e35e83 src:manual/02-chipy.md:129 klas:F -->
-### T-02-049 · proza · рядок 129
+<!-- fc id:T-02-100 sha:b3e35e83 src:manual/02-chipy.md:129 klas:F -->
+### T-02-100 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -645,8 +1308,8 @@
 
 ---
 
-<!-- fc id:T-02-050 sha:18efa8ca src:manual/02-chipy.md:132 klas:F -->
-### T-02-050 · proza · рядок 132
+<!-- fc id:T-02-101 sha:18efa8ca src:manual/02-chipy.md:132 klas:F -->
+### T-02-101 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -658,8 +1321,8 @@
 
 ---
 
-<!-- fc id:T-02-051 sha:cac1eaa9 src:manual/02-chipy.md:132 klas:F -->
-### T-02-051 · proza · рядок 132
+<!-- fc id:T-02-102 sha:cac1eaa9 src:manual/02-chipy.md:132 klas:F -->
+### T-02-102 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -671,8 +1334,8 @@
 
 ---
 
-<!-- fc id:T-02-052 sha:89db3f60 src:manual/02-chipy.md:135 klas:F -->
-### T-02-052 · proza · рядок 135
+<!-- fc id:T-02-103 sha:89db3f60 src:manual/02-chipy.md:135 klas:F -->
+### T-02-103 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -684,8 +1347,8 @@
 
 ---
 
-<!-- fc id:T-02-053 sha:4f695ef2 src:manual/02-chipy.md:137 klas:F -->
-### T-02-053 · proza · рядок 137
+<!-- fc id:T-02-104 sha:4f695ef2 src:manual/02-chipy.md:137 klas:F -->
+### T-02-104 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -697,8 +1360,8 @@
 
 ---
 
-<!-- fc id:T-02-054 sha:142e98c9 src:manual/02-chipy.md:140 klas:F -->
-### T-02-054 · proza · рядок 140
+<!-- fc id:T-02-105 sha:142e98c9 src:manual/02-chipy.md:140 klas:F -->
+### T-02-105 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -710,8 +1373,8 @@
 
 ---
 
-<!-- fc id:T-02-055 sha:028b5c51 src:manual/02-chipy.md:140 klas:F -->
-### T-02-055 · proza · рядок 140
+<!-- fc id:T-02-106 sha:028b5c51 src:manual/02-chipy.md:140 klas:F -->
+### T-02-106 · proza · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -723,8 +1386,8 @@
 
 ---
 
-<!-- fc id:T-02-056 sha:7734fd03 src:manual/02-chipy.md:145 klas:F -->
-### T-02-056 · proza · рядок 145
+<!-- fc id:T-02-107 sha:7734fd03 src:manual/02-chipy.md:145 klas:F -->
+### T-02-107 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -736,8 +1399,8 @@
 
 ---
 
-<!-- fc id:T-02-057 sha:af7651a0 src:manual/02-chipy.md:145 klas:F -->
-### T-02-057 · proza · рядок 145
+<!-- fc id:T-02-108 sha:af7651a0 src:manual/02-chipy.md:145 klas:F -->
+### T-02-108 · proza · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -749,8 +1412,8 @@
 
 ---
 
-<!-- fc id:T-02-058 sha:7a023de8 src:manual/02-chipy.md:150 klas:F -->
-### T-02-058 · proza · рядок 150
+<!-- fc id:T-02-109 sha:7a023de8 src:manual/02-chipy.md:150 klas:F -->
+### T-02-109 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -762,8 +1425,8 @@
 
 ---
 
-<!-- fc id:T-02-059 sha:85436893 src:manual/02-chipy.md:150 klas:F -->
-### T-02-059 · proza · рядок 150
+<!-- fc id:T-02-110 sha:85436893 src:manual/02-chipy.md:150 klas:F -->
+### T-02-110 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -775,8 +1438,8 @@
 
 ---
 
-<!-- fc id:T-02-060 sha:49610759 src:manual/02-chipy.md:156 klas:F -->
-### T-02-060 · tablycya · рядок 156
+<!-- fc id:T-02-111 sha:49610759 src:manual/02-chipy.md:156 klas:F -->
+### T-02-111 · tablycya-shapka · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -788,12 +1451,12 @@
 
 ---
 
-<!-- fc id:T-02-061 sha:97ae8edd src:manual/02-chipy.md:158 klas:F -->
-### T-02-061 · tablycya · рядок 158
+<!-- fc id:T-02-112 sha:aafacce0 src:manual/02-chipy.md:157 klas:F -->
+### T-02-112 · komirka · рядок 157
 
 **Книга каже, дослівно:**
 
-> | Перший проєкт, навчання | classic | найбільше прикладів і статей |
+> Перший проєкт, навчання · Чип → classic
 
 **Доказ**
 
@@ -801,12 +1464,12 @@
 
 ---
 
-<!-- fc id:T-02-062 sha:e2ad13fe src:manual/02-chipy.md:159 klas:F -->
-### T-02-062 · tablycya · рядок 159
+<!-- fc id:T-02-113 sha:31913840 src:manual/02-chipy.md:157 klas:F -->
+### T-02-113 · komirka · рядок 157
 
 **Книга каже, дослівно:**
 
-> | Новий серйозний проєкт | **S3** | два ядра, USB-JTAG, PSRAM, актуальний |
+> Перший проєкт, навчання · Чому → найбільше прикладів і статей
 
 **Доказ**
 
@@ -814,12 +1477,12 @@
 
 ---
 
-<!-- fc id:T-02-063 sha:aaa6c9e0 src:manual/02-chipy.md:160 klas:F -->
-### T-02-063 · tablycya · рядок 160
+<!-- fc id:T-02-114 sha:b7228131 src:manual/02-chipy.md:158 klas:F -->
+### T-02-114 · komirka · рядок 158
 
 **Книга каже, дослівно:**
 
-> | Дешево і масово | C3 | ціна і розмір, якщо 400 КБ вистачає |
+> Новий серйозний проєкт · Чип → **S3**
 
 **Доказ**
 
@@ -827,12 +1490,12 @@
 
 ---
 
-<!-- fc id:T-02-064 sha:fb8079fe src:manual/02-chipy.md:161 klas:F -->
-### T-02-064 · tablycya · рядок 161
+<!-- fc id:T-02-115 sha:a38da246 src:manual/02-chipy.md:158 klas:F -->
+### T-02-115 · komirka · рядок 158
 
 **Книга каже, дослівно:**
 
-> | Треба Bluetooth Classic / SPP | **тільки classic** | більше ніде немає |
+> Новий серйозний проєкт · Чому → два ядра, USB-JTAG, PSRAM, актуальний
 
 **Доказ**
 
@@ -840,12 +1503,12 @@
 
 ---
 
-<!-- fc id:T-02-065 sha:9bf1eded src:manual/02-chipy.md:162 klas:F -->
-### T-02-065 · tablycya · рядок 162
+<!-- fc id:T-02-116 sha:451c14a8 src:manual/02-chipy.md:159 klas:F -->
+### T-02-116 · komirka · рядок 159
 
 **Книга каже, дослівно:**
 
-> | Камера, дисплей, буфери | S3 з PSRAM | пам'ять — вирішальна |
+> Дешево і масово · Чип → C3
 
 **Доказ**
 
@@ -853,12 +1516,12 @@
 
 ---
 
-<!-- fc id:T-02-066 sha:2c138e85 src:manual/02-chipy.md:163 klas:F -->
-### T-02-066 · tablycya · рядок 163
+<!-- fc id:T-02-117 sha:d4198bbd src:manual/02-chipy.md:159 klas:F -->
+### T-02-117 · komirka · рядок 159
 
 **Книга каже, дослівно:**
 
-> | Батарейка на роки, без Wi-Fi | H2 | немає Wi-Fi, дуже низьке споживання |
+> Дешево і масово · Чому → ціна і розмір, якщо 400 КБ вистачає
 
 **Доказ**
 
@@ -866,12 +1529,12 @@
 
 ---
 
-<!-- fc id:T-02-067 sha:f1a081ec src:manual/02-chipy.md:164 klas:F -->
-### T-02-067 · tablycya · рядок 164
+<!-- fc id:T-02-118 sha:ae41dea8 src:manual/02-chipy.md:160 klas:F -->
+### T-02-118 · komirka · рядок 160
 
 **Книга каже, дослівно:**
 
-> | Zigbee, Thread, Matter | C6 або H2 | тільки в них є 802.15.4 |
+> Треба Bluetooth Classic / SPP · Чип → **тільки classic**
 
 **Доказ**
 
@@ -879,12 +1542,12 @@
 
 ---
 
-<!-- fc id:T-02-068 sha:58138a8a src:manual/02-chipy.md:165 klas:F -->
-### T-02-068 · tablycya · рядок 165
+<!-- fc id:T-02-119 sha:4020ac33 src:manual/02-chipy.md:160 klas:F -->
+### T-02-119 · komirka · рядок 160
 
 **Книга каже, дослівно:**
 
-> | Wi-Fi 6 у щільній мережі | C6 | єдиний з Wi-Fi 6 у цій таблиці |
+> Треба Bluetooth Classic / SPP · Чому → більше ніде немає
 
 **Доказ**
 
@@ -892,12 +1555,12 @@
 
 ---
 
-<!-- fc id:T-02-069 sha:1fd9ac52 src:manual/02-chipy.md:166 klas:F -->
-### T-02-069 · tablycya · рядок 166
+<!-- fc id:T-02-120 sha:78ce8952 src:manual/02-chipy.md:161 klas:F -->
+### T-02-120 · komirka · рядок 161
 
 **Книга каже, дослівно:**
 
-> | Мережа 5 ГГц | C5 | решта лінійки 5 ГГц не бачить |
+> Камера, дисплей, буфери · Чип → S3 з PSRAM
 
 **Доказ**
 
@@ -905,12 +1568,12 @@
 
 ---
 
-<!-- fc id:T-02-070 sha:0a10fc53 src:manual/02-chipy.md:167 klas:F -->
-### T-02-070 · tablycya · рядок 167
+<!-- fc id:T-02-121 sha:c8184cfc src:manual/02-chipy.md:161 klas:F -->
+### T-02-121 · komirka · рядок 161
 
 **Книга каже, дослівно:**
 
-> | Налагодження без адаптера | S3, C3 | вбудований USB-JTAG (розділ 27) |
+> Камера, дисплей, буфери · Чому → пам'ять — вирішальна
 
 **Доказ**
 
@@ -918,8 +1581,138 @@
 
 ---
 
-<!-- fc id:T-02-071 sha:27116816 src:manual/02-chipy.md:171 klas:F -->
-### T-02-071 · proza · рядок 171
+<!-- fc id:T-02-122 sha:7091ac6f src:manual/02-chipy.md:162 klas:F -->
+### T-02-122 · komirka · рядок 162
+
+**Книга каже, дослівно:**
+
+> Батарейка на роки, без Wi-Fi · Чип → H2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-123 sha:79873967 src:manual/02-chipy.md:162 klas:F -->
+### T-02-123 · komirka · рядок 162
+
+**Книга каже, дослівно:**
+
+> Батарейка на роки, без Wi-Fi · Чому → немає Wi-Fi, дуже низьке споживання
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-124 sha:bda12f8d src:manual/02-chipy.md:163 klas:F -->
+### T-02-124 · komirka · рядок 163
+
+**Книга каже, дослівно:**
+
+> Zigbee, Thread, Matter · Чип → C6 або H2
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-125 sha:fca9e612 src:manual/02-chipy.md:163 klas:F -->
+### T-02-125 · komirka · рядок 163
+
+**Книга каже, дослівно:**
+
+> Zigbee, Thread, Matter · Чому → тільки в них є 802.15.4
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-126 sha:32086172 src:manual/02-chipy.md:164 klas:F -->
+### T-02-126 · komirka · рядок 164
+
+**Книга каже, дослівно:**
+
+> Wi-Fi 6 у щільній мережі · Чип → C6
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-127 sha:59bd179d src:manual/02-chipy.md:164 klas:F -->
+### T-02-127 · komirka · рядок 164
+
+**Книга каже, дослівно:**
+
+> Wi-Fi 6 у щільній мережі · Чому → єдиний з Wi-Fi 6 у цій таблиці
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-128 sha:7e859643 src:manual/02-chipy.md:165 klas:F -->
+### T-02-128 · komirka · рядок 165
+
+**Книга каже, дослівно:**
+
+> Мережа 5 ГГц · Чип → C5
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-129 sha:7f0446d0 src:manual/02-chipy.md:165 klas:F -->
+### T-02-129 · komirka · рядок 165
+
+**Книга каже, дослівно:**
+
+> Мережа 5 ГГц · Чому → решта лінійки 5 ГГц не бачить
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-130 sha:aaa0d26b src:manual/02-chipy.md:166 klas:F -->
+### T-02-130 · komirka · рядок 166
+
+**Книга каже, дослівно:**
+
+> Налагодження без адаптера · Чип → S3, C3
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-131 sha:202ec3ac src:manual/02-chipy.md:166 klas:F -->
+### T-02-131 · komirka · рядок 166
+
+**Книга каже, дослівно:**
+
+> Налагодження без адаптера · Чому → вбудований USB-JTAG (розділ 27)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-132 sha:27116816 src:manual/02-chipy.md:171 klas:F -->
+### T-02-132 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -931,8 +1724,8 @@
 
 ---
 
-<!-- fc id:T-02-072 sha:dff56dfe src:manual/02-chipy.md:171 klas:F -->
-### T-02-072 · proza · рядок 171
+<!-- fc id:T-02-133 sha:dff56dfe src:manual/02-chipy.md:171 klas:F -->
+### T-02-133 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -944,8 +1737,8 @@
 
 ---
 
-<!-- fc id:T-02-073 sha:8e85191b src:manual/02-chipy.md:175 klas:F -->
-### T-02-073 · proza · рядок 175
+<!-- fc id:T-02-134 sha:8e85191b src:manual/02-chipy.md:175 klas:F -->
+### T-02-134 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -957,8 +1750,8 @@
 
 ---
 
-<!-- fc id:T-02-074 sha:6ea7599d src:manual/02-chipy.md:175 klas:F -->
-### T-02-074 · proza · рядок 175
+<!-- fc id:T-02-135 sha:6ea7599d src:manual/02-chipy.md:175 klas:F -->
+### T-02-135 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -970,8 +1763,8 @@
 
 ---
 
-<!-- fc id:T-02-075 sha:450733e8 src:manual/02-chipy.md:181 klas:F -->
-### T-02-075 · proza · рядок 181
+<!-- fc id:T-02-136 sha:450733e8 src:manual/02-chipy.md:181 klas:F -->
+### T-02-136 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -983,8 +1776,8 @@
 
 ---
 
-<!-- fc id:T-02-076 sha:e13ade69 src:manual/02-chipy.md:181 klas:F -->
-### T-02-076 · proza · рядок 181
+<!-- fc id:T-02-137 sha:e13ade69 src:manual/02-chipy.md:181 klas:F -->
+### T-02-137 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -996,8 +1789,8 @@
 
 ---
 
-<!-- fc id:T-02-077 sha:81afe265 src:manual/02-chipy.md:181 klas:F -->
-### T-02-077 · proza · рядок 181
+<!-- fc id:T-02-138 sha:81afe265 src:manual/02-chipy.md:181 klas:F -->
+### T-02-138 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -1009,8 +1802,8 @@
 
 ---
 
-<!-- fc id:T-02-078 sha:7fcabe7b src:manual/02-chipy.md:184 klas:F -->
-### T-02-078 · proza · рядок 184
+<!-- fc id:T-02-139 sha:7fcabe7b src:manual/02-chipy.md:184 klas:F -->
+### T-02-139 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1022,8 +1815,8 @@
 
 ---
 
-<!-- fc id:T-02-079 sha:718e5bfc src:manual/02-chipy.md:187 klas:F -->
-### T-02-079 · proza · рядок 187
+<!-- fc id:T-02-140 sha:718e5bfc src:manual/02-chipy.md:187 klas:F -->
+### T-02-140 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1035,8 +1828,8 @@
 
 ---
 
-<!-- fc id:T-02-080 sha:8ef720fa src:manual/02-chipy.md:189 klas:F -->
-### T-02-080 · proza · рядок 189
+<!-- fc id:T-02-141 sha:8ef720fa src:manual/02-chipy.md:189 klas:F -->
+### T-02-141 · proza · рядок 189
 
 **Книга каже, дослівно:**
 

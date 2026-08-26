@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/54-korpus.md`
 
-Одиниць твердження: **73**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **77**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -46,7 +46,7 @@
 ---
 
 <!-- fc id:T-54-004 sha:e0544f2d src:manual/54-korpus.md:13 klas:F -->
-### T-54-004 · tablycya · рядок 13
+### T-54-004 · tablycya-shapka · рядок 13
 
 **Книга каже, дослівно:**
 
@@ -58,12 +58,12 @@
 
 ---
 
-<!-- fc id:T-54-005 sha:65e5ef2d src:manual/54-korpus.md:15 klas:F -->
-### T-54-005 · tablycya · рядок 15
+<!-- fc id:T-54-005 sha:6fbe4ff1 src:manual/54-korpus.md:14 klas:F -->
+### T-54-005 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
-> | IP20 | пальці й великі предмети | приміщення |
+> IP20 · Що означає → пальці й великі предмети
 
 **Доказ**
 
@@ -71,12 +71,12 @@
 
 ---
 
-<!-- fc id:T-54-006 sha:bb1aab97 src:manual/54-korpus.md:16 klas:F -->
-### T-54-006 · tablycya · рядок 16
+<!-- fc id:T-54-006 sha:a53e716f src:manual/54-korpus.md:14 klas:F -->
+### T-54-006 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
-> | IP54 | пил частково, бризки | під навісом |
+> IP20 · Де застосовне → приміщення
 
 **Доказ**
 
@@ -84,12 +84,12 @@
 
 ---
 
-<!-- fc id:T-54-007 sha:21400881 src:manual/54-korpus.md:17 klas:F -->
-### T-54-007 · tablycya · рядок 17
+<!-- fc id:T-54-007 sha:4acd3948 src:manual/54-korpus.md:15 klas:F -->
+### T-54-007 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
-> | IP65 | пил повністю, струмені | вулиця |
+> IP54 · Що означає → пил частково, бризки
 
 **Доказ**
 
@@ -97,12 +97,12 @@
 
 ---
 
-<!-- fc id:T-54-008 sha:4bc57bfc src:manual/54-korpus.md:18 klas:F -->
-### T-54-008 · tablycya · рядок 18
+<!-- fc id:T-54-008 sha:173dfdc3 src:manual/54-korpus.md:15 klas:F -->
+### T-54-008 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
-> | IP67 | занурення на 30 хв | вулиця, тимчасове затоплення |
+> IP54 · Де застосовне → під навісом
 
 **Доказ**
 
@@ -110,8 +110,60 @@
 
 ---
 
-<!-- fc id:T-54-009 sha:b54e1c5b src:manual/54-korpus.md:20 klas:F -->
-### T-54-009 · proza · рядок 20
+<!-- fc id:T-54-009 sha:6f22aac0 src:manual/54-korpus.md:16 klas:F -->
+### T-54-009 · komirka · рядок 16
+
+**Книга каже, дослівно:**
+
+> IP65 · Що означає → пил повністю, струмені
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-010 sha:4795c3f7 src:manual/54-korpus.md:16 klas:F -->
+### T-54-010 · komirka · рядок 16
+
+**Книга каже, дослівно:**
+
+> IP65 · Де застосовне → вулиця
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-011 sha:ff7027ee src:manual/54-korpus.md:17 klas:F -->
+### T-54-011 · komirka · рядок 17
+
+**Книга каже, дослівно:**
+
+> IP67 · Що означає → занурення на 30 хв
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-012 sha:8bb2a54a src:manual/54-korpus.md:17 klas:F -->
+### T-54-012 · komirka · рядок 17
+
+**Книга каже, дослівно:**
+
+> IP67 · Де застосовне → вулиця, тимчасове затоплення
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-54-013 sha:b54e1c5b src:manual/54-korpus.md:20 klas:F -->
+### T-54-013 · proza · рядок 20
 
 **Книга каже, дослівно:**
 
@@ -123,8 +175,8 @@
 
 ---
 
-<!-- fc id:T-54-010 sha:85d0bc0a src:manual/54-korpus.md:20 klas:F -->
-### T-54-010 · proza · рядок 20
+<!-- fc id:T-54-014 sha:85d0bc0a src:manual/54-korpus.md:20 klas:F -->
+### T-54-014 · proza · рядок 20
 
 **Книга каже, дослівно:**
 
@@ -136,8 +188,8 @@
 
 ---
 
-<!-- fc id:T-54-011 sha:2e021e35 src:manual/54-korpus.md:24 klas:F -->
-### T-54-011 · proza · рядок 24
+<!-- fc id:T-54-015 sha:2e021e35 src:manual/54-korpus.md:24 klas:F -->
+### T-54-015 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -149,8 +201,8 @@
 
 ---
 
-<!-- fc id:T-54-012 sha:97801af7 src:manual/54-korpus.md:28 klas:F -->
-### T-54-012 · proza · рядок 28
+<!-- fc id:T-54-016 sha:97801af7 src:manual/54-korpus.md:28 klas:F -->
+### T-54-016 · proza · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -162,8 +214,8 @@
 
 ---
 
-<!-- fc id:T-54-013 sha:b19545d4 src:manual/54-korpus.md:34 klas:F -->
-### T-54-013 · proza · рядок 34
+<!-- fc id:T-54-017 sha:b19545d4 src:manual/54-korpus.md:34 klas:F -->
+### T-54-017 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -175,8 +227,8 @@
 
 ---
 
-<!-- fc id:T-54-014 sha:9cc78cce src:manual/54-korpus.md:34 klas:F -->
-### T-54-014 · proza · рядок 34
+<!-- fc id:T-54-018 sha:9cc78cce src:manual/54-korpus.md:34 klas:F -->
+### T-54-018 · proza · рядок 34
 
 **Книга каже, дослівно:**
 
@@ -188,8 +240,8 @@
 
 ---
 
-<!-- fc id:T-54-015 sha:cf11ba25 src:manual/54-korpus.md:39 klas:F -->
-### T-54-015 · proza · рядок 39
+<!-- fc id:T-54-019 sha:cf11ba25 src:manual/54-korpus.md:39 klas:F -->
+### T-54-019 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -201,8 +253,8 @@
 
 ---
 
-<!-- fc id:T-54-016 sha:ad3bb384 src:manual/54-korpus.md:39 klas:F -->
-### T-54-016 · proza · рядок 39
+<!-- fc id:T-54-020 sha:ad3bb384 src:manual/54-korpus.md:39 klas:F -->
+### T-54-020 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -214,8 +266,8 @@
 
 ---
 
-<!-- fc id:T-54-017 sha:44c4fbc2 src:manual/54-korpus.md:43 klas:F -->
-### T-54-017 · proza · рядок 43
+<!-- fc id:T-54-021 sha:44c4fbc2 src:manual/54-korpus.md:43 klas:F -->
+### T-54-021 · proza · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -227,8 +279,8 @@
 
 ---
 
-<!-- fc id:T-54-018 sha:2ee794d1 src:manual/54-korpus.md:43 klas:F -->
-### T-54-018 · proza · рядок 43
+<!-- fc id:T-54-022 sha:2ee794d1 src:manual/54-korpus.md:43 klas:F -->
+### T-54-022 · proza · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -240,8 +292,8 @@
 
 ---
 
-<!-- fc id:T-54-019 sha:c1810299 src:manual/54-korpus.md:49 klas:F -->
-### T-54-019 · proza · рядок 49
+<!-- fc id:T-54-023 sha:c1810299 src:manual/54-korpus.md:49 klas:F -->
+### T-54-023 · proza · рядок 49
 
 **Книга каже, дослівно:**
 
@@ -253,8 +305,8 @@
 
 ---
 
-<!-- fc id:T-54-020 sha:35793b68 src:manual/54-korpus.md:52 klas:F -->
-### T-54-020 · proza · рядок 52
+<!-- fc id:T-54-024 sha:35793b68 src:manual/54-korpus.md:52 klas:F -->
+### T-54-024 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -266,8 +318,8 @@
 
 ---
 
-<!-- fc id:T-54-021 sha:e0e905bb src:manual/54-korpus.md:52 klas:F -->
-### T-54-021 · proza · рядок 52
+<!-- fc id:T-54-025 sha:e0e905bb src:manual/54-korpus.md:52 klas:F -->
+### T-54-025 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -279,8 +331,8 @@
 
 ---
 
-<!-- fc id:T-54-022 sha:e235380e src:manual/54-korpus.md:56 klas:F -->
-### T-54-022 · proza · рядок 56
+<!-- fc id:T-54-026 sha:e235380e src:manual/54-korpus.md:56 klas:F -->
+### T-54-026 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -292,8 +344,8 @@
 
 ---
 
-<!-- fc id:T-54-023 sha:bf5c83b4 src:manual/54-korpus.md:62 klas:F -->
-### T-54-023 · proza · рядок 62
+<!-- fc id:T-54-027 sha:bf5c83b4 src:manual/54-korpus.md:62 klas:F -->
+### T-54-027 · proza · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -305,8 +357,8 @@
 
 ---
 
-<!-- fc id:T-54-024 sha:5882bcb2 src:manual/54-korpus.md:65 klas:F -->
-### T-54-024 · proza · рядок 65
+<!-- fc id:T-54-028 sha:5882bcb2 src:manual/54-korpus.md:65 klas:F -->
+### T-54-028 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -318,8 +370,8 @@
 
 ---
 
-<!-- fc id:T-54-025 sha:29ef4b1d src:manual/54-korpus.md:68 klas:F -->
-### T-54-025 · proza · рядок 68
+<!-- fc id:T-54-029 sha:29ef4b1d src:manual/54-korpus.md:68 klas:F -->
+### T-54-029 · proza · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -331,8 +383,8 @@
 
 ---
 
-<!-- fc id:T-54-026 sha:e536a332 src:manual/54-korpus.md:68 klas:F -->
-### T-54-026 · proza · рядок 68
+<!-- fc id:T-54-030 sha:e536a332 src:manual/54-korpus.md:68 klas:F -->
+### T-54-030 · proza · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -344,8 +396,8 @@
 
 ---
 
-<!-- fc id:T-54-027 sha:26186cbd src:manual/54-korpus.md:72 klas:F -->
-### T-54-027 · proza · рядок 72
+<!-- fc id:T-54-031 sha:26186cbd src:manual/54-korpus.md:72 klas:F -->
+### T-54-031 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -357,8 +409,8 @@
 
 ---
 
-<!-- fc id:T-54-028 sha:515fca62 src:manual/54-korpus.md:72 klas:F -->
-### T-54-028 · proza · рядок 72
+<!-- fc id:T-54-032 sha:515fca62 src:manual/54-korpus.md:72 klas:F -->
+### T-54-032 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -370,8 +422,8 @@
 
 ---
 
-<!-- fc id:T-54-029 sha:8ac9226b src:manual/54-korpus.md:78 klas:F -->
-### T-54-029 · proza · рядок 78
+<!-- fc id:T-54-033 sha:8ac9226b src:manual/54-korpus.md:78 klas:F -->
+### T-54-033 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -383,8 +435,8 @@
 
 ---
 
-<!-- fc id:T-54-030 sha:7e73ec02 src:manual/54-korpus.md:80 klas:F -->
-### T-54-030 · proza · рядок 80
+<!-- fc id:T-54-034 sha:7e73ec02 src:manual/54-korpus.md:80 klas:F -->
+### T-54-034 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -396,8 +448,8 @@
 
 ---
 
-<!-- fc id:T-54-031 sha:e4b426a7 src:manual/54-korpus.md:80 klas:F -->
-### T-54-031 · proza · рядок 80
+<!-- fc id:T-54-035 sha:e4b426a7 src:manual/54-korpus.md:80 klas:F -->
+### T-54-035 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -409,8 +461,8 @@
 
 ---
 
-<!-- fc id:T-54-032 sha:b4490502 src:manual/54-korpus.md:80 klas:F -->
-### T-54-032 · proza · рядок 80
+<!-- fc id:T-54-036 sha:b4490502 src:manual/54-korpus.md:80 klas:F -->
+### T-54-036 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -422,8 +474,8 @@
 
 ---
 
-<!-- fc id:T-54-033 sha:fb2371cf src:manual/54-korpus.md:80 klas:F -->
-### T-54-033 · proza · рядок 80
+<!-- fc id:T-54-037 sha:fb2371cf src:manual/54-korpus.md:80 klas:F -->
+### T-54-037 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
@@ -435,8 +487,8 @@
 
 ---
 
-<!-- fc id:T-54-034 sha:8b225daf src:manual/54-korpus.md:85 klas:F -->
-### T-54-034 · proza · рядок 85
+<!-- fc id:T-54-038 sha:8b225daf src:manual/54-korpus.md:85 klas:F -->
+### T-54-038 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -448,8 +500,8 @@
 
 ---
 
-<!-- fc id:T-54-035 sha:1d0f53c8 src:manual/54-korpus.md:90 klas:F -->
-### T-54-035 · proza · рядок 90
+<!-- fc id:T-54-039 sha:1d0f53c8 src:manual/54-korpus.md:90 klas:F -->
+### T-54-039 · proza · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -461,8 +513,8 @@
 
 ---
 
-<!-- fc id:T-54-036 sha:15fc751d src:manual/54-korpus.md:90 klas:F -->
-### T-54-036 · proza · рядок 90
+<!-- fc id:T-54-040 sha:15fc751d src:manual/54-korpus.md:90 klas:F -->
+### T-54-040 · proza · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -474,8 +526,8 @@
 
 ---
 
-<!-- fc id:T-54-037 sha:d15e4c6e src:manual/54-korpus.md:93 klas:F -->
-### T-54-037 · proza · рядок 93
+<!-- fc id:T-54-041 sha:d15e4c6e src:manual/54-korpus.md:93 klas:F -->
+### T-54-041 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -487,8 +539,8 @@
 
 ---
 
-<!-- fc id:T-54-038 sha:16382fe6 src:manual/54-korpus.md:93 klas:F -->
-### T-54-038 · proza · рядок 93
+<!-- fc id:T-54-042 sha:16382fe6 src:manual/54-korpus.md:93 klas:F -->
+### T-54-042 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -500,8 +552,8 @@
 
 ---
 
-<!-- fc id:T-54-039 sha:3f54345f src:manual/54-korpus.md:96 klas:F -->
-### T-54-039 · proza · рядок 96
+<!-- fc id:T-54-043 sha:3f54345f src:manual/54-korpus.md:96 klas:F -->
+### T-54-043 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -513,8 +565,8 @@
 
 ---
 
-<!-- fc id:T-54-040 sha:6c2b8a32 src:manual/54-korpus.md:96 klas:F -->
-### T-54-040 · proza · рядок 96
+<!-- fc id:T-54-044 sha:6c2b8a32 src:manual/54-korpus.md:96 klas:F -->
+### T-54-044 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -526,8 +578,8 @@
 
 ---
 
-<!-- fc id:T-54-041 sha:edeadd77 src:manual/54-korpus.md:99 klas:F -->
-### T-54-041 · proza · рядок 99
+<!-- fc id:T-54-045 sha:edeadd77 src:manual/54-korpus.md:99 klas:F -->
+### T-54-045 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -539,8 +591,8 @@
 
 ---
 
-<!-- fc id:T-54-042 sha:cf2bab0c src:manual/54-korpus.md:102 klas:F -->
-### T-54-042 · proza · рядок 102
+<!-- fc id:T-54-046 sha:cf2bab0c src:manual/54-korpus.md:102 klas:F -->
+### T-54-046 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -552,8 +604,8 @@
 
 ---
 
-<!-- fc id:T-54-043 sha:faf4b437 src:manual/54-korpus.md:102 klas:F -->
-### T-54-043 · proza · рядок 102
+<!-- fc id:T-54-047 sha:faf4b437 src:manual/54-korpus.md:102 klas:F -->
+### T-54-047 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -565,8 +617,8 @@
 
 ---
 
-<!-- fc id:T-54-044 sha:4d52c369 src:manual/54-korpus.md:102 klas:F -->
-### T-54-044 · proza · рядок 102
+<!-- fc id:T-54-048 sha:4d52c369 src:manual/54-korpus.md:102 klas:F -->
+### T-54-048 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -578,8 +630,8 @@
 
 ---
 
-<!-- fc id:T-54-045 sha:8cab7d26 src:manual/54-korpus.md:109 klas:F -->
-### T-54-045 · proza · рядок 109
+<!-- fc id:T-54-049 sha:8cab7d26 src:manual/54-korpus.md:109 klas:F -->
+### T-54-049 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -591,8 +643,8 @@
 
 ---
 
-<!-- fc id:T-54-046 sha:97da83c9 src:manual/54-korpus.md:111 klas:F -->
-### T-54-046 · proza · рядок 111
+<!-- fc id:T-54-050 sha:97da83c9 src:manual/54-korpus.md:111 klas:F -->
+### T-54-050 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -604,8 +656,8 @@
 
 ---
 
-<!-- fc id:T-54-047 sha:fb893cbb src:manual/54-korpus.md:111 klas:F -->
-### T-54-047 · proza · рядок 111
+<!-- fc id:T-54-051 sha:fb893cbb src:manual/54-korpus.md:111 klas:F -->
+### T-54-051 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -617,8 +669,8 @@
 
 ---
 
-<!-- fc id:T-54-048 sha:79e3d4ae src:manual/54-korpus.md:114 klas:F -->
-### T-54-048 · proza · рядок 114
+<!-- fc id:T-54-052 sha:79e3d4ae src:manual/54-korpus.md:114 klas:F -->
+### T-54-052 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -630,8 +682,8 @@
 
 ---
 
-<!-- fc id:T-54-049 sha:42d09206 src:manual/54-korpus.md:114 klas:F -->
-### T-54-049 · proza · рядок 114
+<!-- fc id:T-54-053 sha:42d09206 src:manual/54-korpus.md:114 klas:F -->
+### T-54-053 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -643,8 +695,8 @@
 
 ---
 
-<!-- fc id:T-54-050 sha:9b181b66 src:manual/54-korpus.md:117 klas:F -->
-### T-54-050 · proza · рядок 117
+<!-- fc id:T-54-054 sha:9b181b66 src:manual/54-korpus.md:117 klas:F -->
+### T-54-054 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -656,8 +708,8 @@
 
 ---
 
-<!-- fc id:T-54-051 sha:b925b401 src:manual/54-korpus.md:117 klas:F -->
-### T-54-051 · proza · рядок 117
+<!-- fc id:T-54-055 sha:b925b401 src:manual/54-korpus.md:117 klas:F -->
+### T-54-055 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -669,8 +721,8 @@
 
 ---
 
-<!-- fc id:T-54-052 sha:801e0fbd src:manual/54-korpus.md:120 klas:F -->
-### T-54-052 · proza · рядок 120
+<!-- fc id:T-54-056 sha:801e0fbd src:manual/54-korpus.md:120 klas:F -->
+### T-54-056 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -682,8 +734,8 @@
 
 ---
 
-<!-- fc id:T-54-053 sha:11b043fe src:manual/54-korpus.md:124 klas:F -->
-### T-54-053 · proza · рядок 124
+<!-- fc id:T-54-057 sha:11b043fe src:manual/54-korpus.md:124 klas:F -->
+### T-54-057 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -695,8 +747,8 @@
 
 ---
 
-<!-- fc id:T-54-054 sha:5c9c5c08 src:manual/54-korpus.md:129 klas:F -->
-### T-54-054 · proza · рядок 129
+<!-- fc id:T-54-058 sha:5c9c5c08 src:manual/54-korpus.md:129 klas:F -->
+### T-54-058 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -708,8 +760,8 @@
 
 ---
 
-<!-- fc id:T-54-055 sha:ad01f8ff src:manual/54-korpus.md:132 klas:F -->
-### T-54-055 · proza · рядок 132
+<!-- fc id:T-54-059 sha:ad01f8ff src:manual/54-korpus.md:132 klas:F -->
+### T-54-059 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -721,8 +773,8 @@
 
 ---
 
-<!-- fc id:T-54-056 sha:63206d8e src:manual/54-korpus.md:135 klas:F -->
-### T-54-056 · proza · рядок 135
+<!-- fc id:T-54-060 sha:63206d8e src:manual/54-korpus.md:135 klas:F -->
+### T-54-060 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -734,8 +786,8 @@
 
 ---
 
-<!-- fc id:T-54-057 sha:52f8657e src:manual/54-korpus.md:138 klas:F -->
-### T-54-057 · proza · рядок 138
+<!-- fc id:T-54-061 sha:52f8657e src:manual/54-korpus.md:138 klas:F -->
+### T-54-061 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -747,8 +799,8 @@
 
 ---
 
-<!-- fc id:T-54-058 sha:c2329a6c src:manual/54-korpus.md:142 klas:F -->
-### T-54-058 · proza · рядок 142
+<!-- fc id:T-54-062 sha:c2329a6c src:manual/54-korpus.md:142 klas:F -->
+### T-54-062 · proza · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -760,8 +812,8 @@
 
 ---
 
-<!-- fc id:T-54-059 sha:896386b0 src:manual/54-korpus.md:142 klas:F -->
-### T-54-059 · proza · рядок 142
+<!-- fc id:T-54-063 sha:896386b0 src:manual/54-korpus.md:142 klas:F -->
+### T-54-063 · proza · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -773,8 +825,8 @@
 
 ---
 
-<!-- fc id:T-54-060 sha:8410b7ef src:manual/54-korpus.md:146 klas:F -->
-### T-54-060 · proza · рядок 146
+<!-- fc id:T-54-064 sha:8410b7ef src:manual/54-korpus.md:146 klas:F -->
+### T-54-064 · proza · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -786,8 +838,8 @@
 
 ---
 
-<!-- fc id:T-54-061 sha:189f9506 src:manual/54-korpus.md:148 klas:F -->
-### T-54-061 · proza · рядок 148
+<!-- fc id:T-54-065 sha:189f9506 src:manual/54-korpus.md:148 klas:F -->
+### T-54-065 · proza · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -799,8 +851,8 @@
 
 ---
 
-<!-- fc id:T-54-062 sha:3e08e6cd src:manual/54-korpus.md:155 klas:F -->
-### T-54-062 · proza · рядок 155
+<!-- fc id:T-54-066 sha:3e08e6cd src:manual/54-korpus.md:155 klas:F -->
+### T-54-066 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -812,8 +864,8 @@
 
 ---
 
-<!-- fc id:T-54-063 sha:8a70fe73 src:manual/54-korpus.md:157 klas:F -->
-### T-54-063 · proza · рядок 157
+<!-- fc id:T-54-067 sha:8a70fe73 src:manual/54-korpus.md:157 klas:F -->
+### T-54-067 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -825,8 +877,8 @@
 
 ---
 
-<!-- fc id:T-54-064 sha:e900fdb4 src:manual/54-korpus.md:160 klas:F -->
-### T-54-064 · proza · рядок 160
+<!-- fc id:T-54-068 sha:e900fdb4 src:manual/54-korpus.md:160 klas:F -->
+### T-54-068 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -838,8 +890,8 @@
 
 ---
 
-<!-- fc id:T-54-065 sha:4eda0d7f src:manual/54-korpus.md:160 klas:F -->
-### T-54-065 · proza · рядок 160
+<!-- fc id:T-54-069 sha:4eda0d7f src:manual/54-korpus.md:160 klas:F -->
+### T-54-069 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -851,8 +903,8 @@
 
 ---
 
-<!-- fc id:T-54-066 sha:3c5ec6fc src:manual/54-korpus.md:164 klas:F -->
-### T-54-066 · proza · рядок 164
+<!-- fc id:T-54-070 sha:3c5ec6fc src:manual/54-korpus.md:164 klas:F -->
+### T-54-070 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -864,8 +916,8 @@
 
 ---
 
-<!-- fc id:T-54-067 sha:d618df70 src:manual/54-korpus.md:164 klas:F -->
-### T-54-067 · proza · рядок 164
+<!-- fc id:T-54-071 sha:d618df70 src:manual/54-korpus.md:164 klas:F -->
+### T-54-071 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -877,8 +929,8 @@
 
 ---
 
-<!-- fc id:T-54-068 sha:0df1b9d0 src:manual/54-korpus.md:170 klas:F -->
-### T-54-068 · proza · рядок 170
+<!-- fc id:T-54-072 sha:0df1b9d0 src:manual/54-korpus.md:170 klas:F -->
+### T-54-072 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -890,8 +942,8 @@
 
 ---
 
-<!-- fc id:T-54-069 sha:75b48215 src:manual/54-korpus.md:172 klas:F -->
-### T-54-069 · proza · рядок 172
+<!-- fc id:T-54-073 sha:75b48215 src:manual/54-korpus.md:172 klas:F -->
+### T-54-073 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -903,8 +955,8 @@
 
 ---
 
-<!-- fc id:T-54-070 sha:b3ead5ba src:manual/54-korpus.md:174 klas:F -->
-### T-54-070 · proza · рядок 174
+<!-- fc id:T-54-074 sha:b3ead5ba src:manual/54-korpus.md:174 klas:F -->
+### T-54-074 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -916,8 +968,8 @@
 
 ---
 
-<!-- fc id:T-54-071 sha:c17999f5 src:manual/54-korpus.md:176 klas:F -->
-### T-54-071 · proza · рядок 176
+<!-- fc id:T-54-075 sha:c17999f5 src:manual/54-korpus.md:176 klas:F -->
+### T-54-075 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -929,8 +981,8 @@
 
 ---
 
-<!-- fc id:T-54-072 sha:b355ea75 src:manual/54-korpus.md:179 klas:F -->
-### T-54-072 · proza · рядок 179
+<!-- fc id:T-54-076 sha:b355ea75 src:manual/54-korpus.md:179 klas:F -->
+### T-54-076 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -942,8 +994,8 @@
 
 ---
 
-<!-- fc id:T-54-073 sha:4f4766e0 src:manual/54-korpus.md:181 klas:F -->
-### T-54-073 · proza · рядок 181
+<!-- fc id:T-54-077 sha:4f4766e0 src:manual/54-korpus.md:181 klas:F -->
+### T-54-077 · proza · рядок 181
 
 **Книга каже, дослівно:**
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/26-zboyi.md`
 
-Одиниць твердження: **97**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **110**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -186,7 +186,7 @@
 ---
 
 <!-- fc id:T-26-014 sha:ea9dc162 src:manual/26-zboyi.md:39 klas:F -->
-### T-26-014 · tablycya · рядок 39
+### T-26-014 · tablycya-shapka · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -198,12 +198,12 @@
 
 ---
 
-<!-- fc id:T-26-015 sha:07b05a57 src:manual/26-zboyi.md:41 klas:F -->
-### T-26-015 · tablycya · рядок 41
+<!-- fc id:T-26-015 sha:3f7f05f2 src:manual/26-zboyi.md:40 klas:F -->
+### T-26-015 · komirka · рядок 40
 
 **Книга каже, дослівно:**
 
-> | `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+> `LoadProhibited` · Що заборонено → читання з недійсної адреси
 
 **Доказ**
 
@@ -211,12 +211,12 @@
 
 ---
 
-<!-- fc id:T-26-016 sha:b3f83bf2 src:manual/26-zboyi.md:42 klas:F -->
-### T-26-016 · tablycya · рядок 42
+<!-- fc id:T-26-016 sha:e1369196 src:manual/26-zboyi.md:40 klas:F -->
+### T-26-016 · komirka · рядок 40
 
 **Книга каже, дослівно:**
 
-> | `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+> `LoadProhibited` · Що шукати → `NULL` або звільнений покажчик
 
 **Доказ**
 
@@ -224,12 +224,12 @@
 
 ---
 
-<!-- fc id:T-26-017 sha:568ebc8f src:manual/26-zboyi.md:43 klas:F -->
-### T-26-017 · tablycya · рядок 43
+<!-- fc id:T-26-017 sha:8bc4f39c src:manual/26-zboyi.md:41 klas:F -->
+### T-26-017 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
-> | `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+> `StoreProhibited` · Що заборонено → запис за недійсною адресою
 
 **Доказ**
 
@@ -237,12 +237,12 @@
 
 ---
 
-<!-- fc id:T-26-018 sha:f3a5f4c7 src:manual/26-zboyi.md:44 klas:F -->
-### T-26-018 · tablycya · рядок 44
+<!-- fc id:T-26-018 sha:28cc86f2 src:manual/26-zboyi.md:41 klas:F -->
+### T-26-018 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
-> | `IllegalInstruction` | виконання не-коду | переповнення стека, пошкоджена пам'ять |
+> `StoreProhibited` · Що шукати → те саме, на запис
 
 **Доказ**
 
@@ -250,12 +250,12 @@
 
 ---
 
-<!-- fc id:T-26-019 sha:7e143b71 src:manual/26-zboyi.md:45 klas:F -->
-### T-26-019 · tablycya · рядок 45
+<!-- fc id:T-26-019 sha:65e5b66a src:manual/26-zboyi.md:42 klas:F -->
+### T-26-019 · komirka · рядок 42
 
 **Книга каже, дослівно:**
 
-> | `LoadStoreAlignment` | невирівняний доступ | 32-бітове читання з непарної адреси |
+> `InstrFetchProhibited` · Що заборонено → перехід на недійсну адресу
 
 **Доказ**
 
@@ -263,12 +263,12 @@
 
 ---
 
-<!-- fc id:T-26-020 sha:25421c81 src:manual/26-zboyi.md:46 klas:F -->
-### T-26-020 · tablycya · рядок 46
+<!-- fc id:T-26-020 sha:89d4b0ed src:manual/26-zboyi.md:42 klas:F -->
+### T-26-020 · komirka · рядок 42
 
 **Книга каже, дослівно:**
 
-> | `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+> `InstrFetchProhibited` · Що шукати → зіпсований покажчик на функцію
 
 **Доказ**
 
@@ -276,8 +276,86 @@
 
 ---
 
-<!-- fc id:T-26-021 sha:daea59e7 src:manual/26-zboyi.md:48 klas:F -->
-### T-26-021 · proza · рядок 48
+<!-- fc id:T-26-021 sha:0e5b84a2 src:manual/26-zboyi.md:43 klas:F -->
+### T-26-021 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> `IllegalInstruction` · Що заборонено → виконання не-коду
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-022 sha:ba217f40 src:manual/26-zboyi.md:43 klas:F -->
+### T-26-022 · komirka · рядок 43
+
+**Книга каже, дослівно:**
+
+> `IllegalInstruction` · Що шукати → переповнення стека, пошкоджена пам'ять
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-023 sha:c4d149ff src:manual/26-zboyi.md:44 klas:F -->
+### T-26-023 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> `LoadStoreAlignment` · Що заборонено → невирівняний доступ
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-024 sha:c6b36da3 src:manual/26-zboyi.md:44 klas:F -->
+### T-26-024 · komirka · рядок 44
+
+**Книга каже, дослівно:**
+
+> `LoadStoreAlignment` · Що шукати → 32-бітове читання з непарної адреси
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-025 sha:d96111a7 src:manual/26-zboyi.md:45 klas:F -->
+### T-26-025 · komirka · рядок 45
+
+**Книга каже, дослівно:**
+
+> `IntegerDivideByZero` · Що заборонено → ділення на нуль
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-026 sha:439a9b98 src:manual/26-zboyi.md:45 klas:F -->
+### T-26-026 · komirka · рядок 45
+
+**Книга каже, дослівно:**
+
+> `IntegerDivideByZero` · Що шукати → дільник із датчика без перевірки
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-027 sha:daea59e7 src:manual/26-zboyi.md:48 klas:F -->
+### T-26-027 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -289,8 +367,8 @@
 
 ---
 
-<!-- fc id:T-26-022 sha:202f36a9 src:manual/26-zboyi.md:48 klas:F -->
-### T-26-022 · proza · рядок 48
+<!-- fc id:T-26-028 sha:202f36a9 src:manual/26-zboyi.md:48 klas:F -->
+### T-26-028 · proza · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -302,8 +380,8 @@
 
 ---
 
-<!-- fc id:T-26-023 sha:98f44ec0 src:manual/26-zboyi.md:53 klas:F -->
-### T-26-023 · proza · рядок 53
+<!-- fc id:T-26-029 sha:98f44ec0 src:manual/26-zboyi.md:53 klas:F -->
+### T-26-029 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -315,8 +393,8 @@
 
 ---
 
-<!-- fc id:T-26-024 sha:57bdf5fd src:manual/26-zboyi.md:53 klas:F -->
-### T-26-024 · proza · рядок 53
+<!-- fc id:T-26-030 sha:57bdf5fd src:manual/26-zboyi.md:53 klas:F -->
+### T-26-030 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -328,8 +406,8 @@
 
 ---
 
-<!-- fc id:T-26-025 sha:820b452a src:manual/26-zboyi.md:58 klas:F -->
-### T-26-025 · proza · рядок 58
+<!-- fc id:T-26-031 sha:820b452a src:manual/26-zboyi.md:58 klas:F -->
+### T-26-031 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -341,8 +419,8 @@
 
 ---
 
-<!-- fc id:T-26-026 sha:03382f5a src:manual/26-zboyi.md:58 klas:F -->
-### T-26-026 · proza · рядок 58
+<!-- fc id:T-26-032 sha:03382f5a src:manual/26-zboyi.md:58 klas:F -->
+### T-26-032 · proza · рядок 58
 
 **Книга каже, дослівно:**
 
@@ -354,8 +432,8 @@
 
 ---
 
-<!-- fc id:T-26-027 sha:ac7aa576 src:manual/26-zboyi.md:65 klas:F -->
-### T-26-027 · proza · рядок 65
+<!-- fc id:T-26-033 sha:ac7aa576 src:manual/26-zboyi.md:65 klas:F -->
+### T-26-033 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -367,8 +445,8 @@
 
 ---
 
-<!-- fc id:T-26-028 sha:bfde3822 src:manual/26-zboyi.md:65 klas:F -->
-### T-26-028 · proza · рядок 65
+<!-- fc id:T-26-034 sha:bfde3822 src:manual/26-zboyi.md:65 klas:F -->
+### T-26-034 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -380,8 +458,8 @@
 
 ---
 
-<!-- fc id:T-26-029 sha:dbe3d911 src:manual/26-zboyi.md:68 klas:F -->
-### T-26-029 · proza · рядок 68
+<!-- fc id:T-26-035 sha:dbe3d911 src:manual/26-zboyi.md:68 klas:F -->
+### T-26-035 · proza · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -393,8 +471,8 @@
 
 ---
 
-<!-- fc id:T-26-030 sha:18ced902 src:manual/26-zboyi.md:71 klas:F -->
-### T-26-030 · proza · рядок 71
+<!-- fc id:T-26-036 sha:18ced902 src:manual/26-zboyi.md:71 klas:F -->
+### T-26-036 · proza · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -406,8 +484,8 @@
 
 ---
 
-<!-- fc id:T-26-031 sha:6c1fb6aa src:manual/26-zboyi.md:73 klas:F -->
-### T-26-031 · kod · рядок 73
+<!-- fc id:T-26-037 sha:6c1fb6aa src:manual/26-zboyi.md:73 klas:F -->
+### T-26-037 · kod · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -422,8 +500,21 @@
 
 ---
 
-<!-- fc id:T-26-032 sha:136f8130 src:manual/26-zboyi.md:78 klas:F -->
-### T-26-032 · proza · рядок 78
+<!-- fc id:T-26-038 sha:92bc15fa src:manual/26-zboyi.md:74 klas:F -->
+### T-26-038 · kod-ryadok · рядок 74
+
+**Книга каже, дослівно:**
+
+> xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf \
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-039 sha:136f8130 src:manual/26-zboyi.md:78 klas:F -->
+### T-26-039 · proza · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -435,8 +526,8 @@
 
 ---
 
-<!-- fc id:T-26-033 sha:504645eb src:manual/26-zboyi.md:81 klas:F -->
-### T-26-033 · proza · рядок 81
+<!-- fc id:T-26-040 sha:504645eb src:manual/26-zboyi.md:81 klas:F -->
+### T-26-040 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -448,8 +539,8 @@
 
 ---
 
-<!-- fc id:T-26-034 sha:f5dc374f src:manual/26-zboyi.md:85 klas:F -->
-### T-26-034 · proza · рядок 85
+<!-- fc id:T-26-041 sha:f5dc374f src:manual/26-zboyi.md:85 klas:F -->
+### T-26-041 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -461,8 +552,8 @@
 
 ---
 
-<!-- fc id:T-26-035 sha:4980da78 src:manual/26-zboyi.md:85 klas:F -->
-### T-26-035 · proza · рядок 85
+<!-- fc id:T-26-042 sha:4980da78 src:manual/26-zboyi.md:85 klas:F -->
+### T-26-042 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -474,8 +565,8 @@
 
 ---
 
-<!-- fc id:T-26-036 sha:35f815e8 src:manual/26-zboyi.md:89 klas:F -->
-### T-26-036 · proza · рядок 89
+<!-- fc id:T-26-043 sha:35f815e8 src:manual/26-zboyi.md:89 klas:F -->
+### T-26-043 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -487,8 +578,8 @@
 
 ---
 
-<!-- fc id:T-26-037 sha:d38a2d32 src:manual/26-zboyi.md:89 klas:F -->
-### T-26-037 · proza · рядок 89
+<!-- fc id:T-26-044 sha:d38a2d32 src:manual/26-zboyi.md:89 klas:F -->
+### T-26-044 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -500,8 +591,8 @@
 
 ---
 
-<!-- fc id:T-26-038 sha:aefbccf3 src:manual/26-zboyi.md:93 klas:F -->
-### T-26-038 · proza · рядок 93
+<!-- fc id:T-26-045 sha:aefbccf3 src:manual/26-zboyi.md:93 klas:F -->
+### T-26-045 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -513,8 +604,8 @@
 
 ---
 
-<!-- fc id:T-26-039 sha:fce80b0b src:manual/26-zboyi.md:93 klas:F -->
-### T-26-039 · proza · рядок 93
+<!-- fc id:T-26-046 sha:fce80b0b src:manual/26-zboyi.md:93 klas:F -->
+### T-26-046 · proza · рядок 93
 
 **Книга каже, дослівно:**
 
@@ -526,8 +617,8 @@
 
 ---
 
-<!-- fc id:T-26-040 sha:87564073 src:manual/26-zboyi.md:100 klas:F -->
-### T-26-040 · proza · рядок 100
+<!-- fc id:T-26-047 sha:87564073 src:manual/26-zboyi.md:100 klas:F -->
+### T-26-047 · proza · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -539,8 +630,8 @@
 
 ---
 
-<!-- fc id:T-26-041 sha:fb634479 src:manual/26-zboyi.md:102 klas:F -->
-### T-26-041 · proza · рядок 102
+<!-- fc id:T-26-048 sha:fb634479 src:manual/26-zboyi.md:102 klas:F -->
+### T-26-048 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -552,8 +643,8 @@
 
 ---
 
-<!-- fc id:T-26-042 sha:989bdd9f src:manual/26-zboyi.md:104 klas:F -->
-### T-26-042 · kod · рядок 104
+<!-- fc id:T-26-049 sha:989bdd9f src:manual/26-zboyi.md:104 klas:F -->
+### T-26-049 · kod · рядок 104
 
 **Книга каже, дослівно:**
 
@@ -570,8 +661,21 @@
 
 ---
 
-<!-- fc id:T-26-043 sha:6f3e6008 src:manual/26-zboyi.md:111 klas:F -->
-### T-26-043 · proza · рядок 111
+<!-- fc id:T-26-050 sha:a1afa6b3 src:manual/26-zboyi.md:106 klas:F -->
+### T-26-050 · kod-ryadok · рядок 106
+
+**Книга каже, дослівно:**
+
+> E (5234) task_wdt: - IDLE0 (CPU 0)
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-051 sha:6f3e6008 src:manual/26-zboyi.md:111 klas:F -->
+### T-26-051 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -583,8 +687,8 @@
 
 ---
 
-<!-- fc id:T-26-044 sha:e607bc06 src:manual/26-zboyi.md:111 klas:F -->
-### T-26-044 · proza · рядок 111
+<!-- fc id:T-26-052 sha:e607bc06 src:manual/26-zboyi.md:111 klas:F -->
+### T-26-052 · proza · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -596,8 +700,8 @@
 
 ---
 
-<!-- fc id:T-26-045 sha:e1f3ea14 src:manual/26-zboyi.md:115 klas:F -->
-### T-26-045 · proza · рядок 115
+<!-- fc id:T-26-053 sha:e1f3ea14 src:manual/26-zboyi.md:115 klas:F -->
+### T-26-053 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -609,8 +713,8 @@
 
 ---
 
-<!-- fc id:T-26-046 sha:736b9d75 src:manual/26-zboyi.md:117 klas:F -->
-### T-26-046 · kod · рядок 117
+<!-- fc id:T-26-054 sha:736b9d75 src:manual/26-zboyi.md:117 klas:F -->
+### T-26-054 · kod · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -627,8 +731,21 @@
 
 ---
 
-<!-- fc id:T-26-047 sha:5b756509 src:manual/26-zboyi.md:124 klas:F -->
-### T-26-047 · proza · рядок 124
+<!-- fc id:T-26-055 sha:b174e002 src:manual/26-zboyi.md:119 klas:F -->
+### T-26-055 · kod-ryadok · рядок 119
+
+**Книга каже, дослівно:**
+
+> do_work();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-056 sha:5b756509 src:manual/26-zboyi.md:124 klas:F -->
+### T-26-056 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -640,8 +757,8 @@
 
 ---
 
-<!-- fc id:T-26-048 sha:8e273a6c src:manual/26-zboyi.md:124 klas:F -->
-### T-26-048 · proza · рядок 124
+<!-- fc id:T-26-057 sha:8e273a6c src:manual/26-zboyi.md:124 klas:F -->
+### T-26-057 · proza · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -653,8 +770,8 @@
 
 ---
 
-<!-- fc id:T-26-049 sha:8bb6d694 src:manual/26-zboyi.md:129 klas:F -->
-### T-26-049 · proza · рядок 129
+<!-- fc id:T-26-058 sha:8bb6d694 src:manual/26-zboyi.md:129 klas:F -->
+### T-26-058 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -666,8 +783,8 @@
 
 ---
 
-<!-- fc id:T-26-050 sha:7b2b476d src:manual/26-zboyi.md:129 klas:F -->
-### T-26-050 · proza · рядок 129
+<!-- fc id:T-26-059 sha:7b2b476d src:manual/26-zboyi.md:129 klas:F -->
+### T-26-059 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -679,8 +796,8 @@
 
 ---
 
-<!-- fc id:T-26-051 sha:113645cd src:manual/26-zboyi.md:135 klas:F -->
-### T-26-051 · kod · рядок 135
+<!-- fc id:T-26-060 sha:113645cd src:manual/26-zboyi.md:135 klas:F -->
+### T-26-060 · kod · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -694,8 +811,8 @@
 
 ---
 
-<!-- fc id:T-26-052 sha:63eae962 src:manual/26-zboyi.md:139 klas:F -->
-### T-26-052 · proza · рядок 139
+<!-- fc id:T-26-061 sha:63eae962 src:manual/26-zboyi.md:139 klas:F -->
+### T-26-061 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -707,8 +824,8 @@
 
 ---
 
-<!-- fc id:T-26-053 sha:2f6d7c09 src:manual/26-zboyi.md:143 klas:F -->
-### T-26-053 · proza · рядок 143
+<!-- fc id:T-26-062 sha:2f6d7c09 src:manual/26-zboyi.md:143 klas:F -->
+### T-26-062 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -720,8 +837,8 @@
 
 ---
 
-<!-- fc id:T-26-054 sha:3d768ead src:manual/26-zboyi.md:147 klas:F -->
-### T-26-054 · proza · рядок 147
+<!-- fc id:T-26-063 sha:3d768ead src:manual/26-zboyi.md:147 klas:F -->
+### T-26-063 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -733,8 +850,8 @@
 
 ---
 
-<!-- fc id:T-26-055 sha:57ec2b02 src:manual/26-zboyi.md:147 klas:F -->
-### T-26-055 · proza · рядок 147
+<!-- fc id:T-26-064 sha:57ec2b02 src:manual/26-zboyi.md:147 klas:F -->
+### T-26-064 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -746,8 +863,8 @@
 
 ---
 
-<!-- fc id:T-26-056 sha:9c01ac3c src:manual/26-zboyi.md:152 klas:A -->
-### T-26-056 · proza · рядок 152
+<!-- fc id:T-26-065 sha:9c01ac3c src:manual/26-zboyi.md:152 klas:A -->
+### T-26-065 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -782,8 +899,8 @@
 
 ---
 
-<!-- fc id:T-26-057 sha:73fe2b19 src:manual/26-zboyi.md:152 klas:F -->
-### T-26-057 · proza · рядок 152
+<!-- fc id:T-26-066 sha:73fe2b19 src:manual/26-zboyi.md:152 klas:F -->
+### T-26-066 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -795,8 +912,8 @@
 
 ---
 
-<!-- fc id:T-26-058 sha:0ab8fc51 src:manual/26-zboyi.md:155 klas:F -->
-### T-26-058 · proza · рядок 155
+<!-- fc id:T-26-067 sha:0ab8fc51 src:manual/26-zboyi.md:155 klas:F -->
+### T-26-067 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -808,8 +925,8 @@
 
 ---
 
-<!-- fc id:T-26-059 sha:961c01d3 src:manual/26-zboyi.md:157 klas:F -->
-### T-26-059 · proza · рядок 157
+<!-- fc id:T-26-068 sha:961c01d3 src:manual/26-zboyi.md:157 klas:F -->
+### T-26-068 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -821,8 +938,8 @@
 
 ---
 
-<!-- fc id:T-26-060 sha:8fb46bd6 src:manual/26-zboyi.md:157 klas:F -->
-### T-26-060 · proza · рядок 157
+<!-- fc id:T-26-069 sha:8fb46bd6 src:manual/26-zboyi.md:157 klas:F -->
+### T-26-069 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -834,8 +951,8 @@
 
 ---
 
-<!-- fc id:T-26-061 sha:f91c02a9 src:manual/26-zboyi.md:157 klas:F -->
-### T-26-061 · proza · рядок 157
+<!-- fc id:T-26-070 sha:f91c02a9 src:manual/26-zboyi.md:157 klas:F -->
+### T-26-070 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -847,8 +964,8 @@
 
 ---
 
-<!-- fc id:T-26-062 sha:24f657dc src:manual/26-zboyi.md:162 klas:F -->
-### T-26-062 · proza · рядок 162
+<!-- fc id:T-26-071 sha:24f657dc src:manual/26-zboyi.md:162 klas:F -->
+### T-26-071 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -860,8 +977,8 @@
 
 ---
 
-<!-- fc id:T-26-063 sha:e442aed3 src:manual/26-zboyi.md:162 klas:F -->
-### T-26-063 · proza · рядок 162
+<!-- fc id:T-26-072 sha:e442aed3 src:manual/26-zboyi.md:162 klas:F -->
+### T-26-072 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -873,8 +990,8 @@
 
 ---
 
-<!-- fc id:T-26-064 sha:6ebbb02e src:manual/26-zboyi.md:165 klas:F -->
-### T-26-064 · proza · рядок 165
+<!-- fc id:T-26-073 sha:6ebbb02e src:manual/26-zboyi.md:165 klas:F -->
+### T-26-073 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -886,8 +1003,8 @@
 
 ---
 
-<!-- fc id:T-26-065 sha:a6cbcea5 src:manual/26-zboyi.md:167 klas:F -->
-### T-26-065 · proza · рядок 167
+<!-- fc id:T-26-074 sha:a6cbcea5 src:manual/26-zboyi.md:167 klas:F -->
+### T-26-074 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -899,8 +1016,8 @@
 
 ---
 
-<!-- fc id:T-26-066 sha:4a9c0d23 src:manual/26-zboyi.md:169 klas:F -->
-### T-26-066 · kod · рядок 169
+<!-- fc id:T-26-075 sha:4a9c0d23 src:manual/26-zboyi.md:169 klas:F -->
+### T-26-075 · kod · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -915,8 +1032,34 @@
 
 ---
 
-<!-- fc id:T-26-067 sha:c9de9809 src:manual/26-zboyi.md:174 klas:F -->
-### T-26-067 · proza · рядок 174
+<!-- fc id:T-26-076 sha:d91724ab src:manual/26-zboyi.md:170 klas:F -->
+### T-26-076 · kod-ryadok · рядок 170
+
+**Книга каже, дослівно:**
+
+> #include "esp_system.h"
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-077 sha:ad7928af src:manual/26-zboyi.md:171 klas:F -->
+### T-26-077 · kod-ryadok · рядок 171
+
+**Книга каже, дослівно:**
+
+> ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-078 sha:c9de9809 src:manual/26-zboyi.md:174 klas:F -->
+### T-26-078 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -928,8 +1071,8 @@
 
 ---
 
-<!-- fc id:T-26-068 sha:56656a17 src:manual/26-zboyi.md:179 klas:F -->
-### T-26-068 · proza · рядок 179
+<!-- fc id:T-26-079 sha:56656a17 src:manual/26-zboyi.md:179 klas:F -->
+### T-26-079 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -941,8 +1084,8 @@
 
 ---
 
-<!-- fc id:T-26-069 sha:eb6b2e19 src:manual/26-zboyi.md:179 klas:F -->
-### T-26-069 · proza · рядок 179
+<!-- fc id:T-26-080 sha:eb6b2e19 src:manual/26-zboyi.md:179 klas:F -->
+### T-26-080 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -954,8 +1097,8 @@
 
 ---
 
-<!-- fc id:T-26-070 sha:86180e20 src:manual/26-zboyi.md:182 klas:F -->
-### T-26-070 · proza · рядок 182
+<!-- fc id:T-26-081 sha:86180e20 src:manual/26-zboyi.md:182 klas:F -->
+### T-26-081 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -967,8 +1110,8 @@
 
 ---
 
-<!-- fc id:T-26-071 sha:819ab93e src:manual/26-zboyi.md:182 klas:F -->
-### T-26-071 · proza · рядок 182
+<!-- fc id:T-26-082 sha:819ab93e src:manual/26-zboyi.md:182 klas:F -->
+### T-26-082 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -980,8 +1123,8 @@
 
 ---
 
-<!-- fc id:T-26-072 sha:689cd982 src:manual/26-zboyi.md:185 klas:F -->
-### T-26-072 · proza · рядок 185
+<!-- fc id:T-26-083 sha:689cd982 src:manual/26-zboyi.md:185 klas:F -->
+### T-26-083 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -993,8 +1136,8 @@
 
 ---
 
-<!-- fc id:T-26-073 sha:a145945b src:manual/26-zboyi.md:185 klas:F -->
-### T-26-073 · proza · рядок 185
+<!-- fc id:T-26-084 sha:a145945b src:manual/26-zboyi.md:185 klas:F -->
+### T-26-084 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -1006,8 +1149,8 @@
 
 ---
 
-<!-- fc id:T-26-074 sha:ceaf6d65 src:manual/26-zboyi.md:187 klas:F -->
-### T-26-074 · proza · рядок 187
+<!-- fc id:T-26-085 sha:ceaf6d65 src:manual/26-zboyi.md:187 klas:F -->
+### T-26-085 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1019,8 +1162,8 @@
 
 ---
 
-<!-- fc id:T-26-075 sha:b06bd77e src:manual/26-zboyi.md:192 klas:F -->
-### T-26-075 · proza · рядок 192
+<!-- fc id:T-26-086 sha:b06bd77e src:manual/26-zboyi.md:192 klas:F -->
+### T-26-086 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1032,8 +1175,8 @@
 
 ---
 
-<!-- fc id:T-26-076 sha:a4784398 src:manual/26-zboyi.md:192 klas:F -->
-### T-26-076 · proza · рядок 192
+<!-- fc id:T-26-087 sha:a4784398 src:manual/26-zboyi.md:192 klas:F -->
+### T-26-087 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -1045,8 +1188,8 @@
 
 ---
 
-<!-- fc id:T-26-077 sha:64dbf60b src:manual/26-zboyi.md:195 klas:F -->
-### T-26-077 · proza · рядок 195
+<!-- fc id:T-26-088 sha:64dbf60b src:manual/26-zboyi.md:195 klas:F -->
+### T-26-088 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1058,8 +1201,8 @@
 
 ---
 
-<!-- fc id:T-26-078 sha:01cd2bea src:manual/26-zboyi.md:195 klas:F -->
-### T-26-078 · proza · рядок 195
+<!-- fc id:T-26-089 sha:01cd2bea src:manual/26-zboyi.md:195 klas:F -->
+### T-26-089 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1071,8 +1214,8 @@
 
 ---
 
-<!-- fc id:T-26-079 sha:81408aec src:manual/26-zboyi.md:199 klas:F -->
-### T-26-079 · kod · рядок 199
+<!-- fc id:T-26-090 sha:81408aec src:manual/26-zboyi.md:199 klas:F -->
+### T-26-090 · kod · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -1087,8 +1230,34 @@
 
 ---
 
-<!-- fc id:T-26-080 sha:9dc04b93 src:manual/26-zboyi.md:204 klas:F -->
-### T-26-080 · proza · рядок 204
+<!-- fc id:T-26-091 sha:6670ebea src:manual/26-zboyi.md:200 klas:F -->
+### T-26-091 · kod-ryadok · рядок 200
+
+**Книга каже, дослівно:**
+
+> idf.py coredump-info
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-092 sha:20162ba3 src:manual/26-zboyi.md:201 klas:F -->
+### T-26-092 · kod-ryadok · рядок 201
+
+**Книга каже, дослівно:**
+
+> idf.py coredump-debug
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-093 sha:9dc04b93 src:manual/26-zboyi.md:204 klas:F -->
+### T-26-093 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1100,8 +1269,8 @@
 
 ---
 
-<!-- fc id:T-26-081 sha:2536fa4f src:manual/26-zboyi.md:208 klas:F -->
-### T-26-081 · proza · рядок 208
+<!-- fc id:T-26-094 sha:2536fa4f src:manual/26-zboyi.md:208 klas:F -->
+### T-26-094 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1113,8 +1282,8 @@
 
 ---
 
-<!-- fc id:T-26-082 sha:154e3023 src:manual/26-zboyi.md:208 klas:F -->
-### T-26-082 · proza · рядок 208
+<!-- fc id:T-26-095 sha:154e3023 src:manual/26-zboyi.md:208 klas:F -->
+### T-26-095 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1126,8 +1295,8 @@
 
 ---
 
-<!-- fc id:T-26-083 sha:23da014b src:manual/26-zboyi.md:213 klas:F -->
-### T-26-083 · proza · рядок 213
+<!-- fc id:T-26-096 sha:23da014b src:manual/26-zboyi.md:213 klas:F -->
+### T-26-096 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1139,8 +1308,8 @@
 
 ---
 
-<!-- fc id:T-26-084 sha:2622940b src:manual/26-zboyi.md:213 klas:F -->
-### T-26-084 · proza · рядок 213
+<!-- fc id:T-26-097 sha:2622940b src:manual/26-zboyi.md:213 klas:F -->
+### T-26-097 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1152,8 +1321,8 @@
 
 ---
 
-<!-- fc id:T-26-085 sha:f5ed97d2 src:manual/26-zboyi.md:213 klas:F -->
-### T-26-085 · proza · рядок 213
+<!-- fc id:T-26-098 sha:f5ed97d2 src:manual/26-zboyi.md:213 klas:F -->
+### T-26-098 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1165,8 +1334,8 @@
 
 ---
 
-<!-- fc id:T-26-086 sha:c012752e src:manual/26-zboyi.md:221 klas:F -->
-### T-26-086 · proza · рядок 221
+<!-- fc id:T-26-099 sha:c012752e src:manual/26-zboyi.md:221 klas:F -->
+### T-26-099 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1178,8 +1347,8 @@
 
 ---
 
-<!-- fc id:T-26-087 sha:0e195791 src:manual/26-zboyi.md:221 klas:F -->
-### T-26-087 · proza · рядок 221
+<!-- fc id:T-26-100 sha:0e195791 src:manual/26-zboyi.md:221 klas:F -->
+### T-26-100 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1191,8 +1360,8 @@
 
 ---
 
-<!-- fc id:T-26-088 sha:a9a4f529 src:manual/26-zboyi.md:221 klas:F -->
-### T-26-088 · proza · рядок 221
+<!-- fc id:T-26-101 sha:a9a4f529 src:manual/26-zboyi.md:221 klas:F -->
+### T-26-101 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1204,8 +1373,8 @@
 
 ---
 
-<!-- fc id:T-26-089 sha:9f6b0ad0 src:manual/26-zboyi.md:221 klas:F -->
-### T-26-089 · proza · рядок 221
+<!-- fc id:T-26-102 sha:9f6b0ad0 src:manual/26-zboyi.md:221 klas:F -->
+### T-26-102 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1217,8 +1386,8 @@
 
 ---
 
-<!-- fc id:T-26-090 sha:54fce724 src:manual/26-zboyi.md:221 klas:F -->
-### T-26-090 · proza · рядок 221
+<!-- fc id:T-26-103 sha:54fce724 src:manual/26-zboyi.md:221 klas:F -->
+### T-26-103 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1230,8 +1399,8 @@
 
 ---
 
-<!-- fc id:T-26-091 sha:0699a2f6 src:manual/26-zboyi.md:233 klas:F -->
-### T-26-091 · proza · рядок 233
+<!-- fc id:T-26-104 sha:0699a2f6 src:manual/26-zboyi.md:233 klas:F -->
+### T-26-104 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1243,8 +1412,8 @@
 
 ---
 
-<!-- fc id:T-26-092 sha:45939324 src:manual/26-zboyi.md:236 klas:F -->
-### T-26-092 · proza · рядок 236
+<!-- fc id:T-26-105 sha:45939324 src:manual/26-zboyi.md:236 klas:F -->
+### T-26-105 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1256,8 +1425,8 @@
 
 ---
 
-<!-- fc id:T-26-093 sha:719ceef5 src:manual/26-zboyi.md:236 klas:F -->
-### T-26-093 · proza · рядок 236
+<!-- fc id:T-26-106 sha:719ceef5 src:manual/26-zboyi.md:236 klas:F -->
+### T-26-106 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1269,8 +1438,8 @@
 
 ---
 
-<!-- fc id:T-26-094 sha:0d7c5a65 src:manual/26-zboyi.md:239 klas:F -->
-### T-26-094 · proza · рядок 239
+<!-- fc id:T-26-107 sha:0d7c5a65 src:manual/26-zboyi.md:239 klas:F -->
+### T-26-107 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -1282,8 +1451,8 @@
 
 ---
 
-<!-- fc id:T-26-095 sha:3995e61f src:manual/26-zboyi.md:241 klas:F -->
-### T-26-095 · proza · рядок 241
+<!-- fc id:T-26-108 sha:3995e61f src:manual/26-zboyi.md:241 klas:F -->
+### T-26-108 · proza · рядок 241
 
 **Книга каже, дослівно:**
 
@@ -1295,8 +1464,8 @@
 
 ---
 
-<!-- fc id:T-26-096 sha:339581bb src:manual/26-zboyi.md:243 klas:F -->
-### T-26-096 · proza · рядок 243
+<!-- fc id:T-26-109 sha:339581bb src:manual/26-zboyi.md:243 klas:F -->
+### T-26-109 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -1308,8 +1477,8 @@
 
 ---
 
-<!-- fc id:T-26-097 sha:0bbfc00c src:manual/26-zboyi.md:245 klas:F -->
-### T-26-097 · proza · рядок 245
+<!-- fc id:T-26-110 sha:0bbfc00c src:manual/26-zboyi.md:245 klas:F -->
+### T-26-110 · proza · рядок 245
 
 **Книга каже, дослівно:**
 

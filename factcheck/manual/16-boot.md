@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/16-boot.md`
 
-Одиниць твердження: **84**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **86**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -768,8 +768,44 @@
 
 ---
 
-<!-- fc id:T-16-052 sha:cafabedc src:manual/16-boot.md:129 klas:F -->
-### T-16-052 · proza · рядок 129
+<!-- fc id:T-16-052 sha:490ee98b src:manual/16-boot.md:115 klas:A -->
+### T-16-052 · kod-ryadok · рядок 115
+
+**Книга каже, дослівно:**
+
+> rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-16-053 sha:cafabedc src:manual/16-boot.md:129 klas:F -->
+### T-16-053 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -781,8 +817,8 @@
 
 ---
 
-<!-- fc id:T-16-053 sha:8c83e86c src:manual/16-boot.md:129 klas:F -->
-### T-16-053 · proza · рядок 129
+<!-- fc id:T-16-054 sha:8c83e86c src:manual/16-boot.md:129 klas:F -->
+### T-16-054 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -794,8 +830,8 @@
 
 ---
 
-<!-- fc id:T-16-054 sha:9687babe src:manual/16-boot.md:129 klas:F -->
-### T-16-054 · proza · рядок 129
+<!-- fc id:T-16-055 sha:9687babe src:manual/16-boot.md:129 klas:F -->
+### T-16-055 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -807,8 +843,8 @@
 
 ---
 
-<!-- fc id:T-16-055 sha:50f40ab5 src:manual/16-boot.md:129 klas:F -->
-### T-16-055 · proza · рядок 129
+<!-- fc id:T-16-056 sha:50f40ab5 src:manual/16-boot.md:129 klas:F -->
+### T-16-056 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -820,8 +856,8 @@
 
 ---
 
-<!-- fc id:T-16-056 sha:b91c3393 src:manual/16-boot.md:129 klas:F -->
-### T-16-056 · proza · рядок 129
+<!-- fc id:T-16-057 sha:b91c3393 src:manual/16-boot.md:129 klas:F -->
+### T-16-057 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -833,8 +869,8 @@
 
 ---
 
-<!-- fc id:T-16-057 sha:e5f9555a src:manual/16-boot.md:137 klas:A -->
-### T-16-057 · kod · рядок 137
+<!-- fc id:T-16-058 sha:e5f9555a src:manual/16-boot.md:137 klas:A -->
+### T-16-058 · kod · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -872,8 +908,44 @@
 
 ---
 
-<!-- fc id:T-16-058 sha:2987ec81 src:manual/16-boot.md:142 klas:F -->
-### T-16-058 · proza · рядок 142
+<!-- fc id:T-16-059 sha:5b0e39f3 src:manual/16-boot.md:138 klas:A -->
+### T-16-059 · kod-ryadok · рядок 138
+
+**Книга каже, дослівно:**
+
+> rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
+  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-16-060 sha:2987ec81 src:manual/16-boot.md:142 klas:F -->
+### T-16-060 · proza · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -885,8 +957,8 @@
 
 ---
 
-<!-- fc id:T-16-059 sha:d0aee71f src:manual/16-boot.md:146 klas:F -->
-### T-16-059 · kod · рядок 146
+<!-- fc id:T-16-061 sha:d0aee71f src:manual/16-boot.md:146 klas:F -->
+### T-16-061 · kod · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -901,8 +973,8 @@
 
 ---
 
-<!-- fc id:T-16-060 sha:3098ca78 src:manual/16-boot.md:151 klas:F -->
-### T-16-060 · proza · рядок 151
+<!-- fc id:T-16-062 sha:3098ca78 src:manual/16-boot.md:151 klas:F -->
+### T-16-062 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -914,8 +986,8 @@
 
 ---
 
-<!-- fc id:T-16-061 sha:120fecd6 src:manual/16-boot.md:151 klas:F -->
-### T-16-061 · proza · рядок 151
+<!-- fc id:T-16-063 sha:120fecd6 src:manual/16-boot.md:151 klas:F -->
+### T-16-063 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -927,8 +999,8 @@
 
 ---
 
-<!-- fc id:T-16-062 sha:65aa20e8 src:manual/16-boot.md:154 klas:F -->
-### T-16-062 · proza · рядок 154
+<!-- fc id:T-16-064 sha:65aa20e8 src:manual/16-boot.md:154 klas:F -->
+### T-16-064 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -940,8 +1012,8 @@
 
 ---
 
-<!-- fc id:T-16-063 sha:df92f5bb src:manual/16-boot.md:156 klas:F -->
-### T-16-063 · kod · рядок 156
+<!-- fc id:T-16-065 sha:df92f5bb src:manual/16-boot.md:156 klas:F -->
+### T-16-065 · kod · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -956,8 +1028,8 @@
 
 ---
 
-<!-- fc id:T-16-064 sha:4878c76b src:manual/16-boot.md:161 klas:F -->
-### T-16-064 · proza · рядок 161
+<!-- fc id:T-16-066 sha:4878c76b src:manual/16-boot.md:161 klas:F -->
+### T-16-066 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -969,8 +1041,8 @@
 
 ---
 
-<!-- fc id:T-16-065 sha:f07d9e1c src:manual/16-boot.md:164 klas:F -->
-### T-16-065 · proza · рядок 164
+<!-- fc id:T-16-067 sha:f07d9e1c src:manual/16-boot.md:164 klas:F -->
+### T-16-067 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -982,8 +1054,8 @@
 
 ---
 
-<!-- fc id:T-16-066 sha:c41ad640 src:manual/16-boot.md:164 klas:F -->
-### T-16-066 · proza · рядок 164
+<!-- fc id:T-16-068 sha:c41ad640 src:manual/16-boot.md:164 klas:F -->
+### T-16-068 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -995,8 +1067,8 @@
 
 ---
 
-<!-- fc id:T-16-067 sha:e41e916a src:manual/16-boot.md:164 klas:F -->
-### T-16-067 · proza · рядок 164
+<!-- fc id:T-16-069 sha:e41e916a src:manual/16-boot.md:164 klas:F -->
+### T-16-069 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1008,8 +1080,8 @@
 
 ---
 
-<!-- fc id:T-16-068 sha:dafca624 src:manual/16-boot.md:170 klas:F -->
-### T-16-068 · proza · рядок 170
+<!-- fc id:T-16-070 sha:dafca624 src:manual/16-boot.md:170 klas:F -->
+### T-16-070 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1021,8 +1093,8 @@
 
 ---
 
-<!-- fc id:T-16-069 sha:68faec6e src:manual/16-boot.md:170 klas:F -->
-### T-16-069 · proza · рядок 170
+<!-- fc id:T-16-071 sha:68faec6e src:manual/16-boot.md:170 klas:F -->
+### T-16-071 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1034,8 +1106,8 @@
 
 ---
 
-<!-- fc id:T-16-070 sha:7c2cf10c src:manual/16-boot.md:175 klas:F -->
-### T-16-070 · proza · рядок 175
+<!-- fc id:T-16-072 sha:7c2cf10c src:manual/16-boot.md:175 klas:F -->
+### T-16-072 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1047,8 +1119,8 @@
 
 ---
 
-<!-- fc id:T-16-071 sha:64b7ef66 src:manual/16-boot.md:177 klas:F -->
-### T-16-071 · proza · рядок 177
+<!-- fc id:T-16-073 sha:64b7ef66 src:manual/16-boot.md:177 klas:F -->
+### T-16-073 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1060,8 +1132,8 @@
 
 ---
 
-<!-- fc id:T-16-072 sha:5b9eaf66 src:manual/16-boot.md:184 klas:F -->
-### T-16-072 · proza · рядок 184
+<!-- fc id:T-16-074 sha:5b9eaf66 src:manual/16-boot.md:184 klas:F -->
+### T-16-074 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1073,8 +1145,8 @@
 
 ---
 
-<!-- fc id:T-16-073 sha:68f8f3aa src:manual/16-boot.md:184 klas:F -->
-### T-16-073 · proza · рядок 184
+<!-- fc id:T-16-075 sha:68f8f3aa src:manual/16-boot.md:184 klas:F -->
+### T-16-075 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1086,8 +1158,8 @@
 
 ---
 
-<!-- fc id:T-16-074 sha:3c680211 src:manual/16-boot.md:189 klas:F -->
-### T-16-074 · proza · рядок 189
+<!-- fc id:T-16-076 sha:3c680211 src:manual/16-boot.md:189 klas:F -->
+### T-16-076 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1099,8 +1171,8 @@
 
 ---
 
-<!-- fc id:T-16-075 sha:b34d888e src:manual/16-boot.md:189 klas:F -->
-### T-16-075 · proza · рядок 189
+<!-- fc id:T-16-077 sha:b34d888e src:manual/16-boot.md:189 klas:F -->
+### T-16-077 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1112,8 +1184,8 @@
 
 ---
 
-<!-- fc id:T-16-076 sha:b1352204 src:manual/16-boot.md:196 klas:F -->
-### T-16-076 · proza · рядок 196
+<!-- fc id:T-16-078 sha:b1352204 src:manual/16-boot.md:196 klas:F -->
+### T-16-078 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1125,8 +1197,8 @@
 
 ---
 
-<!-- fc id:T-16-077 sha:6b942f91 src:manual/16-boot.md:196 klas:F -->
-### T-16-077 · proza · рядок 196
+<!-- fc id:T-16-079 sha:6b942f91 src:manual/16-boot.md:196 klas:F -->
+### T-16-079 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1138,8 +1210,8 @@
 
 ---
 
-<!-- fc id:T-16-078 sha:7c8641d9 src:manual/16-boot.md:196 klas:F -->
-### T-16-078 · proza · рядок 196
+<!-- fc id:T-16-080 sha:7c8641d9 src:manual/16-boot.md:196 klas:F -->
+### T-16-080 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1151,8 +1223,8 @@
 
 ---
 
-<!-- fc id:T-16-079 sha:96d636c6 src:manual/16-boot.md:205 klas:F -->
-### T-16-079 · proza · рядок 205
+<!-- fc id:T-16-081 sha:96d636c6 src:manual/16-boot.md:205 klas:F -->
+### T-16-081 · proza · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1164,8 +1236,8 @@
 
 ---
 
-<!-- fc id:T-16-080 sha:85240d7d src:manual/16-boot.md:205 klas:F -->
-### T-16-080 · proza · рядок 205
+<!-- fc id:T-16-082 sha:85240d7d src:manual/16-boot.md:205 klas:F -->
+### T-16-082 · proza · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1177,8 +1249,8 @@
 
 ---
 
-<!-- fc id:T-16-081 sha:be649b20 src:manual/16-boot.md:208 klas:A -->
-### T-16-081 · proza · рядок 208
+<!-- fc id:T-16-083 sha:be649b20 src:manual/16-boot.md:208 klas:A -->
+### T-16-083 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1199,8 +1271,8 @@
 
 ---
 
-<!-- fc id:T-16-082 sha:d25421b7 src:manual/16-boot.md:211 klas:F -->
-### T-16-082 · proza · рядок 211
+<!-- fc id:T-16-084 sha:d25421b7 src:manual/16-boot.md:211 klas:F -->
+### T-16-084 · proza · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -1212,8 +1284,8 @@
 
 ---
 
-<!-- fc id:T-16-083 sha:6555a300 src:manual/16-boot.md:214 klas:F -->
-### T-16-083 · proza · рядок 214
+<!-- fc id:T-16-085 sha:6555a300 src:manual/16-boot.md:214 klas:F -->
+### T-16-085 · proza · рядок 214
 
 **Книга каже, дослівно:**
 
@@ -1225,8 +1297,8 @@
 
 ---
 
-<!-- fc id:T-16-084 sha:a59da32e src:manual/16-boot.md:214 klas:F -->
-### T-16-084 · proza · рядок 214
+<!-- fc id:T-16-086 sha:a59da32e src:manual/16-boot.md:214 klas:F -->
+### T-16-086 · proza · рядок 214
 
 **Книга каже, дослівно:**
 

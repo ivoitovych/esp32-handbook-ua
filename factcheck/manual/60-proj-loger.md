@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/60-proj-loger.md`
 
-Одиниць твердження: **70**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **102**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-60-008 sha:99eb74ab src:manual/60-proj-loger.md:21 klas:F -->
+<!-- fc id:T-60-008 sha:99eb74ab src:manual/60-proj-loger.md:21 klas:A -->
 ### T-60-008 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -106,12 +106,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
 <!-- fc id:T-60-009 sha:648244e3 src:manual/60-proj-loger.md:27 klas:F -->
-### T-60-009 · tablycya · рядок 27
+### T-60-009 · tablycya-shapka · рядок 27
 
 **Книга каже, дослівно:**
 
@@ -123,12 +131,12 @@
 
 ---
 
-<!-- fc id:T-60-010 sha:1a65ec1e src:manual/60-proj-loger.md:29 klas:F -->
-### T-60-010 · tablycya · рядок 29
+<!-- fc id:T-60-010 sha:86983c72 src:manual/60-proj-loger.md:28 klas:F -->
+### T-60-010 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
-> | ESP32 classic або C3 | 1 | **не плата розробки** для фінальної версії |
+> ESP32 classic або C3 · Кількість → 1
 
 **Доказ**
 
@@ -136,12 +144,12 @@
 
 ---
 
-<!-- fc id:T-60-011 sha:42e3d9ab src:manual/60-proj-loger.md:30 klas:F -->
-### T-60-011 · tablycya · рядок 30
+<!-- fc id:T-60-011 sha:cc0e8296 src:manual/60-proj-loger.md:28 klas:F -->
+### T-60-011 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
-> | BME280 | 1 | I²C |
+> ESP32 classic або C3 · Примітка → **не плата розробки** для фінальної версії
 
 **Доказ**
 
@@ -149,12 +157,12 @@
 
 ---
 
-<!-- fc id:T-60-012 sha:500589bb src:manual/60-proj-loger.md:31 klas:F -->
-### T-60-012 · tablycya · рядок 31
+<!-- fc id:T-60-012 sha:ae098f83 src:manual/60-proj-loger.md:29 klas:F -->
+### T-60-012 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | DS18B20 у зонді | 1 | 1-Wire, резистор 4.7 кОм |
+> BME280 · Кількість → 1
 
 **Доказ**
 
@@ -162,12 +170,12 @@
 
 ---
 
-<!-- fc id:T-60-013 sha:55bec475 src:manual/60-proj-loger.md:32 klas:F -->
-### T-60-013 · tablycya · рядок 32
+<!-- fc id:T-60-013 sha:9800167e src:manual/60-proj-loger.md:29 klas:F -->
+### T-60-013 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> | DS3231 модуль RTC | 1 | I²C, з батарейкою CR2032 |
+> BME280 · Примітка → I²C
 
 **Доказ**
 
@@ -175,12 +183,12 @@
 
 ---
 
-<!-- fc id:T-60-014 sha:c0a00252 src:manual/60-proj-loger.md:33 klas:F -->
-### T-60-014 · tablycya · рядок 33
+<!-- fc id:T-60-014 sha:42ba36b1 src:manual/60-proj-loger.md:30 klas:F -->
+### T-60-014 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> | Модуль microSD | 1 | SPI |
+> DS18B20 у зонді · Кількість → 1
 
 **Доказ**
 
@@ -188,12 +196,12 @@
 
 ---
 
-<!-- fc id:T-60-015 sha:1e391f23 src:manual/60-proj-loger.md:34 klas:F -->
-### T-60-015 · tablycya · рядок 34
+<!-- fc id:T-60-015 sha:aa59c919 src:manual/60-proj-loger.md:30 klas:F -->
+### T-60-015 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> | 18650 з захистом | 1 | розділ 53 |
+> DS18B20 у зонді · Примітка → 1-Wire, резистор 4.7 кОм
 
 **Доказ**
 
@@ -201,12 +209,12 @@
 
 ---
 
-<!-- fc id:T-60-016 sha:afd4941f src:manual/60-proj-loger.md:35 klas:F -->
-### T-60-016 · tablycya · рядок 35
+<!-- fc id:T-60-016 sha:376fd675 src:manual/60-proj-loger.md:31 klas:F -->
+### T-60-016 · komirka · рядок 31
 
 **Книга каже, дослівно:**
 
-> | TP4056 **з захистом** | 1 | розділ 53 |
+> DS3231 модуль RTC · Кількість → 1
 
 **Доказ**
 
@@ -214,12 +222,12 @@
 
 ---
 
-<!-- fc id:T-60-017 sha:f5ab433a src:manual/60-proj-loger.md:36 klas:F -->
-### T-60-017 · tablycya · рядок 36
+<!-- fc id:T-60-017 sha:90f9a897 src:manual/60-proj-loger.md:31 klas:F -->
+### T-60-017 · komirka · рядок 31
 
 **Книга каже, дослівно:**
 
-> | Перетворювач buck-boost на 3.3 В | 1 | ключове рішення, див. нижче |
+> DS3231 модуль RTC · Примітка → I²C, з батарейкою CR2032
 
 **Доказ**
 
@@ -227,12 +235,12 @@
 
 ---
 
-<!-- fc id:T-60-018 sha:b927d0c7 src:manual/60-proj-loger.md:37 klas:F -->
-### T-60-018 · tablycya · рядок 37
+<!-- fc id:T-60-018 sha:c08c37e1 src:manual/60-proj-loger.md:32 klas:F -->
+### T-60-018 · komirka · рядок 32
 
 **Книга каже, дослівно:**
 
-> | Резистори 4.7 кОм | 3 | I²C і 1-Wire |
+> Модуль microSD · Кількість → 1
 
 **Доказ**
 
@@ -240,12 +248,12 @@
 
 ---
 
-<!-- fc id:T-60-019 sha:07fb4405 src:manual/60-proj-loger.md:38 klas:F -->
-### T-60-019 · tablycya · рядок 38
+<!-- fc id:T-60-019 sha:b5b70cc2 src:manual/60-proj-loger.md:32 klas:F -->
+### T-60-019 · komirka · рядок 32
 
 **Книга каже, дослівно:**
 
-> | MOSFET малий + резистори | 1 | ключ дільника вимірювання напруги |
+> Модуль microSD · Примітка → SPI
 
 **Доказ**
 
@@ -253,8 +261,138 @@
 
 ---
 
-<!-- fc id:T-60-020 sha:29ab3854 src:manual/60-proj-loger.md:42 klas:F -->
-### T-60-020 · kod · рядок 42
+<!-- fc id:T-60-020 sha:69538962 src:manual/60-proj-loger.md:33 klas:F -->
+### T-60-020 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> 18650 з захистом · Кількість → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-021 sha:d7115003 src:manual/60-proj-loger.md:33 klas:F -->
+### T-60-021 · komirka · рядок 33
+
+**Книга каже, дослівно:**
+
+> 18650 з захистом · Примітка → розділ 53
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-022 sha:a5e98667 src:manual/60-proj-loger.md:34 klas:F -->
+### T-60-022 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> TP4056 **з захистом** · Кількість → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-023 sha:b13324f3 src:manual/60-proj-loger.md:34 klas:F -->
+### T-60-023 · komirka · рядок 34
+
+**Книга каже, дослівно:**
+
+> TP4056 **з захистом** · Примітка → розділ 53
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-024 sha:8315296f src:manual/60-proj-loger.md:35 klas:F -->
+### T-60-024 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> Перетворювач buck-boost на 3.3 В · Кількість → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-025 sha:b07cbc0d src:manual/60-proj-loger.md:35 klas:F -->
+### T-60-025 · komirka · рядок 35
+
+**Книга каже, дослівно:**
+
+> Перетворювач buck-boost на 3.3 В · Примітка → ключове рішення, див. нижче
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-026 sha:7326d03c src:manual/60-proj-loger.md:36 klas:F -->
+### T-60-026 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Резистори 4.7 кОм · Кількість → 3
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-027 sha:6b151619 src:manual/60-proj-loger.md:36 klas:F -->
+### T-60-027 · komirka · рядок 36
+
+**Книга каже, дослівно:**
+
+> Резистори 4.7 кОм · Примітка → I²C і 1-Wire
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-028 sha:060e5700 src:manual/60-proj-loger.md:37 klas:F -->
+### T-60-028 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> MOSFET малий + резистори · Кількість → 1
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-029 sha:186c921d src:manual/60-proj-loger.md:37 klas:F -->
+### T-60-029 · komirka · рядок 37
+
+**Книга каже, дослівно:**
+
+> MOSFET малий + резистори · Примітка → ключ дільника вимірювання напруги
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-030 sha:29ab3854 src:manual/60-proj-loger.md:42 klas:F -->
+### T-60-030 · kod · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -276,8 +414,8 @@
 
 ---
 
-<!-- fc id:T-60-021 sha:3d5502e9 src:manual/60-proj-loger.md:55 klas:F -->
-### T-60-021 · proza · рядок 55
+<!-- fc id:T-60-031 sha:3d5502e9 src:manual/60-proj-loger.md:55 klas:F -->
+### T-60-031 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -289,8 +427,8 @@
 
 ---
 
-<!-- fc id:T-60-022 sha:259eae72 src:manual/60-proj-loger.md:55 klas:F -->
-### T-60-022 · proza · рядок 55
+<!-- fc id:T-60-032 sha:259eae72 src:manual/60-proj-loger.md:55 klas:F -->
+### T-60-032 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -302,8 +440,8 @@
 
 ---
 
-<!-- fc id:T-60-023 sha:a503da18 src:manual/60-proj-loger.md:55 klas:F -->
-### T-60-023 · proza · рядок 55
+<!-- fc id:T-60-033 sha:a503da18 src:manual/60-proj-loger.md:55 klas:F -->
+### T-60-033 · proza · рядок 55
 
 **Книга каже, дослівно:**
 
@@ -315,8 +453,8 @@
 
 ---
 
-<!-- fc id:T-60-024 sha:9eb66891 src:manual/60-proj-loger.md:59 klas:F -->
-### T-60-024 · proza · рядок 59
+<!-- fc id:T-60-034 sha:9eb66891 src:manual/60-proj-loger.md:59 klas:F -->
+### T-60-034 · proza · рядок 59
 
 **Книга каже, дослівно:**
 
@@ -328,8 +466,8 @@
 
 ---
 
-<!-- fc id:T-60-025 sha:99a575e7 src:manual/60-proj-loger.md:64 klas:F -->
-### T-60-025 · proza · рядок 64
+<!-- fc id:T-60-035 sha:99a575e7 src:manual/60-proj-loger.md:64 klas:F -->
+### T-60-035 · proza · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -341,8 +479,8 @@
 
 ---
 
-<!-- fc id:T-60-026 sha:195b9722 src:manual/60-proj-loger.md:69 klas:F -->
-### T-60-026 · proza · рядок 69
+<!-- fc id:T-60-036 sha:195b9722 src:manual/60-proj-loger.md:69 klas:F -->
+### T-60-036 · proza · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -354,8 +492,8 @@
 
 ---
 
-<!-- fc id:T-60-027 sha:5b607b9b src:manual/60-proj-loger.md:75 klas:F -->
-### T-60-027 · proza · рядок 75
+<!-- fc id:T-60-037 sha:5b607b9b src:manual/60-proj-loger.md:75 klas:F -->
+### T-60-037 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -367,8 +505,8 @@
 
 ---
 
-<!-- fc id:T-60-028 sha:077ad9d7 src:manual/60-proj-loger.md:75 klas:F -->
-### T-60-028 · proza · рядок 75
+<!-- fc id:T-60-038 sha:077ad9d7 src:manual/60-proj-loger.md:75 klas:A -->
+### T-60-038 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -376,12 +514,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-60-029 sha:047a7bc6 src:manual/60-proj-loger.md:78 klas:F -->
-### T-60-029 · kod · рядок 78
+<!-- fc id:T-60-039 sha:047a7bc6 src:manual/60-proj-loger.md:78 klas:A -->
+### T-60-039 · kod · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -394,12 +540,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-60-030 sha:84ff3f5f src:manual/60-proj-loger.md:85 klas:F -->
-### T-60-030 · proza · рядок 85
+<!-- fc id:T-60-040 sha:84ff3f5f src:manual/60-proj-loger.md:85 klas:A -->
+### T-60-040 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -407,12 +561,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-60-031 sha:60e50665 src:manual/60-proj-loger.md:85 klas:F -->
-### T-60-031 · proza · рядок 85
+<!-- fc id:T-60-041 sha:60e50665 src:manual/60-proj-loger.md:85 klas:F -->
+### T-60-041 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -424,8 +586,8 @@
 
 ---
 
-<!-- fc id:T-60-032 sha:33b09b68 src:manual/60-proj-loger.md:90 klas:F -->
-### T-60-032 · kod · рядок 90
+<!-- fc id:T-60-042 sha:33b09b68 src:manual/60-proj-loger.md:90 klas:F -->
+### T-60-042 · kod · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -463,8 +625,47 @@
 
 ---
 
-<!-- fc id:T-60-033 sha:86c1b4b6 src:manual/60-proj-loger.md:119 klas:F -->
-### T-60-033 · proza · рядок 119
+<!-- fc id:T-60-043 sha:36e9dc05 src:manual/60-proj-loger.md:98 klas:F -->
+### T-60-043 · kod-ryadok · рядок 98
+
+**Книга каже, дослівно:**
+
+> ESP_LOGE(TAG, "акумулятор %.2f В — засинаємо назавжди", napruga);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-044 sha:96e47c3f src:manual/60-proj-loger.md:109 klas:F -->
+### T-60-044 · kod-ryadok · рядок 109
+
+**Книга каже, дослівно:**
+
+> ESP_LOGW(TAG, "картка недоступна, у буфері %u", u_buferi);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-045 sha:11e7a3b4 src:manual/60-proj-loger.md:114 klas:F -->
+### T-60-045 · kod-ryadok · рядок 114
+
+**Книга каже, дослівно:**
+
+> zasnuty(15 * 60);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-046 sha:86c1b4b6 src:manual/60-proj-loger.md:119 klas:F -->
+### T-60-046 · proza · рядок 119
 
 **Книга каже, дослівно:**
 
@@ -476,8 +677,8 @@
 
 ---
 
-<!-- fc id:T-60-034 sha:d34c43c3 src:manual/60-proj-loger.md:121 klas:F -->
-### T-60-034 · proza · рядок 121
+<!-- fc id:T-60-047 sha:d34c43c3 src:manual/60-proj-loger.md:121 klas:F -->
+### T-60-047 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -489,8 +690,8 @@
 
 ---
 
-<!-- fc id:T-60-035 sha:c226a03c src:manual/60-proj-loger.md:125 klas:F -->
-### T-60-035 · proza · рядок 125
+<!-- fc id:T-60-048 sha:c226a03c src:manual/60-proj-loger.md:125 klas:F -->
+### T-60-048 · proza · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -502,8 +703,8 @@
 
 ---
 
-<!-- fc id:T-60-036 sha:f0958dca src:manual/60-proj-loger.md:131 klas:F -->
-### T-60-036 · kod · рядок 131
+<!-- fc id:T-60-049 sha:f0958dca src:manual/60-proj-loger.md:131 klas:F -->
+### T-60-049 · kod · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -532,8 +733,47 @@
 
 ---
 
-<!-- fc id:T-60-037 sha:4b6bd1c9 src:manual/60-proj-loger.md:152 klas:F -->
-### T-60-037 · kod · рядок 152
+<!-- fc id:T-60-050 sha:e249c82c src:manual/60-proj-loger.md:133 klas:F -->
+### T-60-050 · kod-ryadok · рядок 133
+
+**Книга каже, дослівно:**
+
+> gpio_set_level(PIN_DILNYK_EN, 1);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-051 sha:fa5319b8 src:manual/60-proj-loger.md:139 klas:F -->
+### T-60-051 · kod-ryadok · рядок 139
+
+**Книга каже, дослівно:**
+
+> adc_oneshot_read(adc, ADC_CHANNEL, &raw);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-052 sha:ad6f9b2c src:manual/60-proj-loger.md:145 klas:F -->
+### T-60-052 · kod-ryadok · рядок 145
+
+**Книга каже, дослівно:**
+
+> adc_cali_raw_to_voltage(cali, sum / 32, &mv);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-053 sha:4b6bd1c9 src:manual/60-proj-loger.md:152 klas:F -->
+### T-60-053 · kod · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -562,8 +802,34 @@
 
 ---
 
-<!-- fc id:T-60-038 sha:d99dbbfc src:manual/60-proj-loger.md:172 klas:F -->
-### T-60-038 · proza · рядок 172
+<!-- fc id:T-60-054 sha:f0c8956e src:manual/60-proj-loger.md:163 klas:F -->
+### T-60-054 · kod-ryadok · рядок 163
+
+**Книга каже, дослівно:**
+
+> fflush(f);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-055 sha:17341195 src:manual/60-proj-loger.md:165 klas:F -->
+### T-60-055 · kod-ryadok · рядок 165
+
+**Книга каже, дослівно:**
+
+> fclose(f);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-056 sha:d99dbbfc src:manual/60-proj-loger.md:172 klas:F -->
+### T-60-056 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -575,8 +841,8 @@
 
 ---
 
-<!-- fc id:T-60-039 sha:a161b206 src:manual/60-proj-loger.md:175 klas:F -->
-### T-60-039 · proza · рядок 175
+<!-- fc id:T-60-057 sha:a161b206 src:manual/60-proj-loger.md:175 klas:F -->
+### T-60-057 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -588,8 +854,8 @@
 
 ---
 
-<!-- fc id:T-60-040 sha:b0cfdae4 src:manual/60-proj-loger.md:175 klas:F -->
-### T-60-040 · proza · рядок 175
+<!-- fc id:T-60-058 sha:b0cfdae4 src:manual/60-proj-loger.md:175 klas:F -->
+### T-60-058 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -601,8 +867,8 @@
 
 ---
 
-<!-- fc id:T-60-041 sha:5619cd9a src:manual/60-proj-loger.md:178 klas:F -->
-### T-60-041 · proza · рядок 178
+<!-- fc id:T-60-059 sha:5619cd9a src:manual/60-proj-loger.md:178 klas:F -->
+### T-60-059 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -614,8 +880,8 @@
 
 ---
 
-<!-- fc id:T-60-042 sha:1ee7e676 src:manual/60-proj-loger.md:178 klas:F -->
-### T-60-042 · proza · рядок 178
+<!-- fc id:T-60-060 sha:1ee7e676 src:manual/60-proj-loger.md:178 klas:F -->
+### T-60-060 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -627,8 +893,8 @@
 
 ---
 
-<!-- fc id:T-60-043 sha:69c60ed0 src:manual/60-proj-loger.md:184 klas:F -->
-### T-60-043 · kod · рядок 184
+<!-- fc id:T-60-061 sha:69c60ed0 src:manual/60-proj-loger.md:184 klas:F -->
+### T-60-061 · kod · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -651,8 +917,73 @@
 
 ---
 
-<!-- fc id:T-60-044 sha:ad07f2d7 src:manual/60-proj-loger.md:198 klas:F -->
-### T-60-044 · proza · рядок 198
+<!-- fc id:T-60-062 sha:08a000e8 src:manual/60-proj-loger.md:187 klas:F -->
+### T-60-062 · kod-ryadok · рядок 187
+
+**Книга каже, дослівно:**
+
+> sd_unmount();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-063 sha:ab40e8e7 src:manual/60-proj-loger.md:188 klas:F -->
+### T-60-063 · kod-ryadok · рядок 188
+
+**Книга каже, дослівно:**
+
+> gpio_set_level(PIN_DILNYK_EN, 0);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-064 sha:3fd6a686 src:manual/60-proj-loger.md:191 klas:F -->
+### T-60-064 · kod-ryadok · рядок 191
+
+**Книга каже, дослівно:**
+
+> esp_sleep_enable_timer_wakeup((uint64_t)sekund * 1000000ULL);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-065 sha:34ad95d5 src:manual/60-proj-loger.md:192 klas:F -->
+### T-60-065 · kod-ryadok · рядок 192
+
+**Книга каже, дослівно:**
+
+> ESP_LOGI(TAG, "засинаємо на %lu с", sekund);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-066 sha:c5771474 src:manual/60-proj-loger.md:193 klas:F -->
+### T-60-066 · kod-ryadok · рядок 193
+
+**Книга каже, дослівно:**
+
+> esp_deep_sleep_start();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-067 sha:ad07f2d7 src:manual/60-proj-loger.md:198 klas:F -->
+### T-60-067 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -664,8 +995,8 @@
 
 ---
 
-<!-- fc id:T-60-045 sha:fac610a6 src:manual/60-proj-loger.md:201 klas:F -->
-### T-60-045 · proza · рядок 201
+<!-- fc id:T-60-068 sha:fac610a6 src:manual/60-proj-loger.md:201 klas:F -->
+### T-60-068 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -677,8 +1008,8 @@
 
 ---
 
-<!-- fc id:T-60-046 sha:b4495bba src:manual/60-proj-loger.md:204 klas:F -->
-### T-60-046 · proza · рядок 204
+<!-- fc id:T-60-069 sha:b4495bba src:manual/60-proj-loger.md:204 klas:F -->
+### T-60-069 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -690,8 +1021,8 @@
 
 ---
 
-<!-- fc id:T-60-047 sha:83a8e3da src:manual/60-proj-loger.md:209 klas:F -->
-### T-60-047 · proza · рядок 209
+<!-- fc id:T-60-070 sha:83a8e3da src:manual/60-proj-loger.md:209 klas:F -->
+### T-60-070 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -703,8 +1034,8 @@
 
 ---
 
-<!-- fc id:T-60-048 sha:6f45d6d6 src:manual/60-proj-loger.md:211 klas:F -->
-### T-60-048 · tablycya · рядок 211
+<!-- fc id:T-60-071 sha:6f45d6d6 src:manual/60-proj-loger.md:211 klas:F -->
+### T-60-071 · tablycya-shapka · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -716,12 +1047,12 @@
 
 ---
 
-<!-- fc id:T-60-049 sha:1bb6fc79 src:manual/60-proj-loger.md:213 klas:F -->
-### T-60-049 · tablycya · рядок 213
+<!-- fc id:T-60-072 sha:a6f4ae9a src:manual/60-proj-loger.md:212 klas:F -->
+### T-60-072 · komirka · рядок 212
 
 **Книга каже, дослівно:**
 
-> | Пробудження й ініціалізація | 300 мс | 40 мА | 12 мА·с |
+> Пробудження й ініціалізація · Час → 300 мс
 
 **Доказ**
 
@@ -729,12 +1060,12 @@
 
 ---
 
-<!-- fc id:T-60-050 sha:ecb42c58 src:manual/60-proj-loger.md:214 klas:F -->
-### T-60-050 · tablycya · рядок 214
+<!-- fc id:T-60-073 sha:17288f9c src:manual/60-proj-loger.md:212 klas:F -->
+### T-60-073 · komirka · рядок 212
 
 **Книга каже, дослівно:**
 
-> | Вимірювання (DS18B20 — 750 мс) | 900 мс | 40 мА | 36 мА·с |
+> Пробудження й ініціалізація · Струм → 40 мА
 
 **Доказ**
 
@@ -742,12 +1073,12 @@
 
 ---
 
-<!-- fc id:T-60-051 sha:531c68c7 src:manual/60-proj-loger.md:215 klas:F -->
-### T-60-051 · tablycya · рядок 215
+<!-- fc id:T-60-074 sha:2d0a41b2 src:manual/60-proj-loger.md:212 klas:F -->
+### T-60-074 · komirka · рядок 212
 
 **Книга каже, дослівно:**
 
-> | Запис на картку | 400 мс | 80 мА | 32 мА·с |
+> Пробудження й ініціалізація · Заряд → 12 мА·с
 
 **Доказ**
 
@@ -755,12 +1086,12 @@
 
 ---
 
-<!-- fc id:T-60-052 sha:884e9bab src:manual/60-proj-loger.md:216 klas:F -->
-### T-60-052 · tablycya · рядок 216
+<!-- fc id:T-60-075 sha:b201f1de src:manual/60-proj-loger.md:213 klas:F -->
+### T-60-075 · komirka · рядок 213
 
 **Книга каже, дослівно:**
 
-> | Сон | 899 с | 30 мкА | 27 мА·с |
+> Вимірювання (DS18B20 — 750 мс) · Час → 900 мс
 
 **Доказ**
 
@@ -768,12 +1099,12 @@
 
 ---
 
-<!-- fc id:T-60-053 sha:cfc2983d src:manual/60-proj-loger.md:217 klas:F -->
-### T-60-053 · tablycya · рядок 217
+<!-- fc id:T-60-076 sha:68da1621 src:manual/60-proj-loger.md:213 klas:F -->
+### T-60-076 · komirka · рядок 213
 
 **Книга каже, дослівно:**
 
-> | **Разом за цикл** | 900 с | | **≈107 мА·с** |
+> Вимірювання (DS18B20 — 750 мс) · Струм → 40 мА
 
 **Доказ**
 
@@ -781,8 +1112,125 @@
 
 ---
 
-<!-- fc id:T-60-054 sha:3a61fcae src:manual/60-proj-loger.md:219 klas:F -->
-### T-60-054 · proza · рядок 219
+<!-- fc id:T-60-077 sha:7bf88644 src:manual/60-proj-loger.md:213 klas:F -->
+### T-60-077 · komirka · рядок 213
+
+**Книга каже, дослівно:**
+
+> Вимірювання (DS18B20 — 750 мс) · Заряд → 36 мА·с
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-078 sha:772fb917 src:manual/60-proj-loger.md:214 klas:F -->
+### T-60-078 · komirka · рядок 214
+
+**Книга каже, дослівно:**
+
+> Запис на картку · Час → 400 мс
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-079 sha:ef81a4da src:manual/60-proj-loger.md:214 klas:F -->
+### T-60-079 · komirka · рядок 214
+
+**Книга каже, дослівно:**
+
+> Запис на картку · Струм → 80 мА
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-080 sha:386c98cf src:manual/60-proj-loger.md:214 klas:F -->
+### T-60-080 · komirka · рядок 214
+
+**Книга каже, дослівно:**
+
+> Запис на картку · Заряд → 32 мА·с
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-081 sha:9084f4d4 src:manual/60-proj-loger.md:215 klas:F -->
+### T-60-081 · komirka · рядок 215
+
+**Книга каже, дослівно:**
+
+> Сон · Час → 899 с
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-082 sha:d5314759 src:manual/60-proj-loger.md:215 klas:F -->
+### T-60-082 · komirka · рядок 215
+
+**Книга каже, дослівно:**
+
+> Сон · Струм → 30 мкА
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-083 sha:4b86eaef src:manual/60-proj-loger.md:215 klas:F -->
+### T-60-083 · komirka · рядок 215
+
+**Книга каже, дослівно:**
+
+> Сон · Заряд → 27 мА·с
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-084 sha:7ebdd2fb src:manual/60-proj-loger.md:216 klas:F -->
+### T-60-084 · komirka · рядок 216
+
+**Книга каже, дослівно:**
+
+> **Разом за цикл** · Час → 900 с
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-085 sha:fa15cd97 src:manual/60-proj-loger.md:216 klas:F -->
+### T-60-085 · komirka · рядок 216
+
+**Книга каже, дослівно:**
+
+> **Разом за цикл** · Заряд → **≈107 мА·с**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-086 sha:3a61fcae src:manual/60-proj-loger.md:219 klas:F -->
+### T-60-086 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -794,8 +1242,8 @@
 
 ---
 
-<!-- fc id:T-60-055 sha:f90b83e5 src:manual/60-proj-loger.md:221 klas:F -->
-### T-60-055 · proza · рядок 221
+<!-- fc id:T-60-087 sha:f90b83e5 src:manual/60-proj-loger.md:221 klas:F -->
+### T-60-087 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -807,8 +1255,8 @@
 
 ---
 
-<!-- fc id:T-60-056 sha:c426e030 src:manual/60-proj-loger.md:225 klas:F -->
-### T-60-056 · proza · рядок 225
+<!-- fc id:T-60-088 sha:c426e030 src:manual/60-proj-loger.md:225 klas:F -->
+### T-60-088 · proza · рядок 225
 
 **Книга каже, дослівно:**
 
@@ -820,8 +1268,8 @@
 
 ---
 
-<!-- fc id:T-60-057 sha:45833f6d src:manual/60-proj-loger.md:228 klas:F -->
-### T-60-057 · proza · рядок 228
+<!-- fc id:T-60-089 sha:45833f6d src:manual/60-proj-loger.md:228 klas:F -->
+### T-60-089 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -833,8 +1281,8 @@
 
 ---
 
-<!-- fc id:T-60-058 sha:30cc6798 src:manual/60-proj-loger.md:232 klas:F -->
-### T-60-058 · proza · рядок 232
+<!-- fc id:T-60-090 sha:30cc6798 src:manual/60-proj-loger.md:232 klas:F -->
+### T-60-090 · proza · рядок 232
 
 **Книга каже, дослівно:**
 
@@ -846,8 +1294,8 @@
 
 ---
 
-<!-- fc id:T-60-059 sha:e71331a3 src:manual/60-proj-loger.md:232 klas:F -->
-### T-60-059 · proza · рядок 232
+<!-- fc id:T-60-091 sha:e71331a3 src:manual/60-proj-loger.md:232 klas:F -->
+### T-60-091 · proza · рядок 232
 
 **Книга каже, дослівно:**
 
@@ -859,8 +1307,8 @@
 
 ---
 
-<!-- fc id:T-60-060 sha:cfdb4c7e src:manual/60-proj-loger.md:237 klas:F -->
-### T-60-060 · proza · рядок 237
+<!-- fc id:T-60-092 sha:cfdb4c7e src:manual/60-proj-loger.md:237 klas:F -->
+### T-60-092 · proza · рядок 237
 
 **Книга каже, дослівно:**
 
@@ -872,8 +1320,8 @@
 
 ---
 
-<!-- fc id:T-60-061 sha:20a65322 src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-061 · proza · рядок 243
+<!-- fc id:T-60-093 sha:20a65322 src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-093 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -885,8 +1333,8 @@
 
 ---
 
-<!-- fc id:T-60-062 sha:6d2dba14 src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-062 · proza · рядок 243
+<!-- fc id:T-60-094 sha:6d2dba14 src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-094 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -898,8 +1346,8 @@
 
 ---
 
-<!-- fc id:T-60-063 sha:195b951b src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-063 · proza · рядок 243
+<!-- fc id:T-60-095 sha:195b951b src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-095 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -911,8 +1359,8 @@
 
 ---
 
-<!-- fc id:T-60-064 sha:126b1d9d src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-064 · proza · рядок 243
+<!-- fc id:T-60-096 sha:126b1d9d src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-096 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -924,8 +1372,8 @@
 
 ---
 
-<!-- fc id:T-60-065 sha:3b7a50dc src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-065 · proza · рядок 243
+<!-- fc id:T-60-097 sha:3b7a50dc src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-097 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -937,8 +1385,8 @@
 
 ---
 
-<!-- fc id:T-60-066 sha:58500cd8 src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-066 · proza · рядок 243
+<!-- fc id:T-60-098 sha:58500cd8 src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-098 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -950,8 +1398,8 @@
 
 ---
 
-<!-- fc id:T-60-067 sha:7f1d478f src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-067 · proza · рядок 243
+<!-- fc id:T-60-099 sha:7f1d478f src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-099 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -963,8 +1411,8 @@
 
 ---
 
-<!-- fc id:T-60-068 sha:47cb735d src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-068 · proza · рядок 243
+<!-- fc id:T-60-100 sha:47cb735d src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-100 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -976,8 +1424,8 @@
 
 ---
 
-<!-- fc id:T-60-069 sha:7fa10fa1 src:manual/60-proj-loger.md:243 klas:F -->
-### T-60-069 · proza · рядок 243
+<!-- fc id:T-60-101 sha:7fa10fa1 src:manual/60-proj-loger.md:243 klas:F -->
+### T-60-101 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -989,8 +1437,8 @@
 
 ---
 
-<!-- fc id:T-60-070 sha:985bc47c src:manual/60-proj-loger.md:258 klas:F -->
-### T-60-070 · proza · рядок 258
+<!-- fc id:T-60-102 sha:985bc47c src:manual/60-proj-loger.md:258 klas:F -->
+### T-60-102 · proza · рядок 258
 
 **Книга каже, дослівно:**
 

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/40-merezha.md`
 
-Одиниць твердження: **83**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **102**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -160,8 +160,73 @@
 
 ---
 
-<!-- fc id:T-40-012 sha:b21a17f0 src:manual/40-merezha.md:38 klas:F -->
-### T-40-012 · proza · рядок 38
+<!-- fc id:T-40-012 sha:5f326a60 src:manual/40-merezha.md:27 klas:F -->
+### T-40-012 · kod-ryadok · рядок 27
+
+**Книга каже, дослівно:**
+
+> httpd_start(&server, &cfg);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-013 sha:b5f61665 src:manual/40-merezha.md:30 klas:F -->
+### T-40-013 · kod-ryadok · рядок 30
+
+**Книга каже, дослівно:**
+
+> .uri = "/api/stan",
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-014 sha:3b3be56d src:manual/40-merezha.md:31 klas:F -->
+### T-40-014 · kod-ryadok · рядок 31
+
+**Книга каже, дослівно:**
+
+> .method = HTTP_GET,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-015 sha:1ff1aec9 src:manual/40-merezha.md:32 klas:F -->
+### T-40-015 · kod-ryadok · рядок 32
+
+**Книга каже, дослівно:**
+
+> .handler = stan_handler,
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-016 sha:f833664b src:manual/40-merezha.md:34 klas:F -->
+### T-40-016 · kod-ryadok · рядок 34
+
+**Книга каже, дослівно:**
+
+> httpd_register_uri_handler(server, &uri);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-017 sha:b21a17f0 src:manual/40-merezha.md:38 klas:F -->
+### T-40-017 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -173,8 +238,8 @@
 
 ---
 
-<!-- fc id:T-40-013 sha:d6fb9903 src:manual/40-merezha.md:38 klas:F -->
-### T-40-013 · proza · рядок 38
+<!-- fc id:T-40-018 sha:d6fb9903 src:manual/40-merezha.md:38 klas:F -->
+### T-40-018 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -186,8 +251,8 @@
 
 ---
 
-<!-- fc id:T-40-014 sha:57ba00a7 src:manual/40-merezha.md:42 klas:F -->
-### T-40-014 · proza · рядок 42
+<!-- fc id:T-40-019 sha:57ba00a7 src:manual/40-merezha.md:42 klas:F -->
+### T-40-019 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -199,8 +264,8 @@
 
 ---
 
-<!-- fc id:T-40-015 sha:86c0653a src:manual/40-merezha.md:42 klas:F -->
-### T-40-015 · proza · рядок 42
+<!-- fc id:T-40-020 sha:86c0653a src:manual/40-merezha.md:42 klas:F -->
+### T-40-020 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -212,8 +277,8 @@
 
 ---
 
-<!-- fc id:T-40-016 sha:d91a7859 src:manual/40-merezha.md:47 klas:F -->
-### T-40-016 · proza · рядок 47
+<!-- fc id:T-40-021 sha:d91a7859 src:manual/40-merezha.md:47 klas:F -->
+### T-40-021 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -225,8 +290,8 @@
 
 ---
 
-<!-- fc id:T-40-017 sha:d2be0535 src:manual/40-merezha.md:47 klas:F -->
-### T-40-017 · proza · рядок 47
+<!-- fc id:T-40-022 sha:d2be0535 src:manual/40-merezha.md:47 klas:F -->
+### T-40-022 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -238,8 +303,8 @@
 
 ---
 
-<!-- fc id:T-40-018 sha:553a1977 src:manual/40-merezha.md:53 klas:F -->
-### T-40-018 · proza · рядок 53
+<!-- fc id:T-40-023 sha:553a1977 src:manual/40-merezha.md:53 klas:F -->
+### T-40-023 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -251,8 +316,8 @@
 
 ---
 
-<!-- fc id:T-40-019 sha:fde2d7f3 src:manual/40-merezha.md:53 klas:F -->
-### T-40-019 · proza · рядок 53
+<!-- fc id:T-40-024 sha:fde2d7f3 src:manual/40-merezha.md:53 klas:F -->
+### T-40-024 · proza · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -264,8 +329,8 @@
 
 ---
 
-<!-- fc id:T-40-020 sha:c1bb8fe5 src:manual/40-merezha.md:57 klas:F -->
-### T-40-020 · proza · рядок 57
+<!-- fc id:T-40-025 sha:c1bb8fe5 src:manual/40-merezha.md:57 klas:F -->
+### T-40-025 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -277,8 +342,8 @@
 
 ---
 
-<!-- fc id:T-40-021 sha:3aa2580a src:manual/40-merezha.md:57 klas:F -->
-### T-40-021 · proza · рядок 57
+<!-- fc id:T-40-026 sha:3aa2580a src:manual/40-merezha.md:57 klas:F -->
+### T-40-026 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -290,8 +355,8 @@
 
 ---
 
-<!-- fc id:T-40-022 sha:6592d83e src:manual/40-merezha.md:60 klas:F -->
-### T-40-022 · proza · рядок 60
+<!-- fc id:T-40-027 sha:6592d83e src:manual/40-merezha.md:60 klas:F -->
+### T-40-027 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -303,8 +368,8 @@
 
 ---
 
-<!-- fc id:T-40-023 sha:b23be94f src:manual/40-merezha.md:60 klas:F -->
-### T-40-023 · proza · рядок 60
+<!-- fc id:T-40-028 sha:b23be94f src:manual/40-merezha.md:60 klas:F -->
+### T-40-028 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -316,8 +381,8 @@
 
 ---
 
-<!-- fc id:T-40-024 sha:4786a8f6 src:manual/40-merezha.md:66 klas:F -->
-### T-40-024 · proza · рядок 66
+<!-- fc id:T-40-029 sha:4786a8f6 src:manual/40-merezha.md:66 klas:F -->
+### T-40-029 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -329,8 +394,8 @@
 
 ---
 
-<!-- fc id:T-40-025 sha:84b2234f src:manual/40-merezha.md:66 klas:F -->
-### T-40-025 · proza · рядок 66
+<!-- fc id:T-40-030 sha:84b2234f src:manual/40-merezha.md:66 klas:F -->
+### T-40-030 · proza · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -342,8 +407,8 @@
 
 ---
 
-<!-- fc id:T-40-026 sha:86639629 src:manual/40-merezha.md:71 klas:F -->
-### T-40-026 · kod · рядок 71
+<!-- fc id:T-40-031 sha:86639629 src:manual/40-merezha.md:71 klas:F -->
+### T-40-031 · kod · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -359,8 +424,47 @@
 
 ---
 
-<!-- fc id:T-40-027 sha:d61aa1fa src:manual/40-merezha.md:77 klas:F -->
-### T-40-027 · proza · рядок 77
+<!-- fc id:T-40-032 sha:f15667d5 src:manual/40-merezha.md:72 klas:F -->
+### T-40-032 · kod-ryadok · рядок 72
+
+**Книга каже, дослівно:**
+
+> mdns_init();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-033 sha:cb6701a7 src:manual/40-merezha.md:73 klas:F -->
+### T-40-033 · kod-ryadok · рядок 73
+
+**Книга каже, дослівно:**
+
+> mdns_hostname_set("teplytsia");
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-034 sha:0b1f2c68 src:manual/40-merezha.md:74 klas:F -->
+### T-40-034 · kod-ryadok · рядок 74
+
+**Книга каже, дослівно:**
+
+> mdns_instance_name_set("Датчики теплиці");
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-035 sha:d61aa1fa src:manual/40-merezha.md:77 klas:F -->
+### T-40-035 · proza · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -372,8 +476,8 @@
 
 ---
 
-<!-- fc id:T-40-028 sha:653ea4a2 src:manual/40-merezha.md:81 klas:F -->
-### T-40-028 · proza · рядок 81
+<!-- fc id:T-40-036 sha:653ea4a2 src:manual/40-merezha.md:81 klas:F -->
+### T-40-036 · proza · рядок 81
 
 **Книга каже, дослівно:**
 
@@ -385,8 +489,8 @@
 
 ---
 
-<!-- fc id:T-40-029 sha:f7798eee src:manual/40-merezha.md:85 klas:F -->
-### T-40-029 · proza · рядок 85
+<!-- fc id:T-40-037 sha:f7798eee src:manual/40-merezha.md:85 klas:F -->
+### T-40-037 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -398,8 +502,8 @@
 
 ---
 
-<!-- fc id:T-40-030 sha:ae6489bf src:manual/40-merezha.md:85 klas:F -->
-### T-40-030 · proza · рядок 85
+<!-- fc id:T-40-038 sha:ae6489bf src:manual/40-merezha.md:85 klas:F -->
+### T-40-038 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -411,8 +515,8 @@
 
 ---
 
-<!-- fc id:T-40-031 sha:1839164a src:manual/40-merezha.md:91 klas:F -->
-### T-40-031 · proza · рядок 91
+<!-- fc id:T-40-039 sha:1839164a src:manual/40-merezha.md:91 klas:F -->
+### T-40-039 · proza · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -424,8 +528,8 @@
 
 ---
 
-<!-- fc id:T-40-032 sha:cbb939d1 src:manual/40-merezha.md:91 klas:F -->
-### T-40-032 · proza · рядок 91
+<!-- fc id:T-40-040 sha:cbb939d1 src:manual/40-merezha.md:91 klas:F -->
+### T-40-040 · proza · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -437,8 +541,8 @@
 
 ---
 
-<!-- fc id:T-40-033 sha:01cae44d src:manual/40-merezha.md:94 klas:F -->
-### T-40-033 · kod · рядок 94
+<!-- fc id:T-40-041 sha:01cae44d src:manual/40-merezha.md:94 klas:F -->
+### T-40-041 · kod · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -456,8 +560,73 @@
 
 ---
 
-<!-- fc id:T-40-034 sha:8c357f0b src:manual/40-merezha.md:102 klas:F -->
-### T-40-034 · proza · рядок 102
+<!-- fc id:T-40-042 sha:651d6c12 src:manual/40-merezha.md:95 klas:F -->
+### T-40-042 · kod-ryadok · рядок 95
+
+**Книга каже, дослівно:**
+
+> esp_sntp_setoperatingmode(ESP_SNTP_OPMODE_POLL);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-043 sha:1e52cf1e src:manual/40-merezha.md:96 klas:F -->
+### T-40-043 · kod-ryadok · рядок 96
+
+**Книга каже, дослівно:**
+
+> esp_sntp_setservername(0, "pool.ntp.org");
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-044 sha:afab5f1f src:manual/40-merezha.md:97 klas:F -->
+### T-40-044 · kod-ryadok · рядок 97
+
+**Книга каже, дослівно:**
+
+> esp_sntp_init();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-045 sha:0cc9293f src:manual/40-merezha.md:98 klas:F -->
+### T-40-045 · kod-ryadok · рядок 98
+
+**Книга каже, дослівно:**
+
+> setenv("TZ", "EET-2EEST,M3.5.0/3,M10.5.0/4", 1);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-046 sha:ab5c560a src:manual/40-merezha.md:99 klas:F -->
+### T-40-046 · kod-ryadok · рядок 99
+
+**Книга каже, дослівно:**
+
+> tzset();
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-047 sha:8c357f0b src:manual/40-merezha.md:102 klas:F -->
+### T-40-047 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -469,8 +638,8 @@
 
 ---
 
-<!-- fc id:T-40-035 sha:aa6bbdb5 src:manual/40-merezha.md:105 klas:F -->
-### T-40-035 · proza · рядок 105
+<!-- fc id:T-40-048 sha:aa6bbdb5 src:manual/40-merezha.md:105 klas:F -->
+### T-40-048 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -482,8 +651,8 @@
 
 ---
 
-<!-- fc id:T-40-036 sha:caed2427 src:manual/40-merezha.md:105 klas:F -->
-### T-40-036 · proza · рядок 105
+<!-- fc id:T-40-049 sha:caed2427 src:manual/40-merezha.md:105 klas:F -->
+### T-40-049 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -495,8 +664,8 @@
 
 ---
 
-<!-- fc id:T-40-037 sha:70ee41d2 src:manual/40-merezha.md:109 klas:F -->
-### T-40-037 · proza · рядок 109
+<!-- fc id:T-40-050 sha:70ee41d2 src:manual/40-merezha.md:109 klas:F -->
+### T-40-050 · proza · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -508,8 +677,8 @@
 
 ---
 
-<!-- fc id:T-40-038 sha:70422979 src:manual/40-merezha.md:114 klas:F -->
-### T-40-038 · proza · рядок 114
+<!-- fc id:T-40-051 sha:70422979 src:manual/40-merezha.md:114 klas:F -->
+### T-40-051 · proza · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -521,8 +690,8 @@
 
 ---
 
-<!-- fc id:T-40-039 sha:237411e6 src:manual/40-merezha.md:117 klas:F -->
-### T-40-039 · proza · рядок 117
+<!-- fc id:T-40-052 sha:237411e6 src:manual/40-merezha.md:117 klas:F -->
+### T-40-052 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -534,8 +703,8 @@
 
 ---
 
-<!-- fc id:T-40-040 sha:57bee44f src:manual/40-merezha.md:117 klas:F -->
-### T-40-040 · proza · рядок 117
+<!-- fc id:T-40-053 sha:57bee44f src:manual/40-merezha.md:117 klas:F -->
+### T-40-053 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -547,8 +716,8 @@
 
 ---
 
-<!-- fc id:T-40-041 sha:67a21aaa src:manual/40-merezha.md:117 klas:F -->
-### T-40-041 · proza · рядок 117
+<!-- fc id:T-40-054 sha:67a21aaa src:manual/40-merezha.md:117 klas:F -->
+### T-40-054 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -560,8 +729,8 @@
 
 ---
 
-<!-- fc id:T-40-042 sha:cdb9b592 src:manual/40-merezha.md:121 klas:F -->
-### T-40-042 · kod · рядок 121
+<!-- fc id:T-40-055 sha:cdb9b592 src:manual/40-merezha.md:121 klas:F -->
+### T-40-055 · kod · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -584,8 +753,47 @@
 
 ---
 
-<!-- fc id:T-40-043 sha:f98961f2 src:manual/40-merezha.md:134 klas:F -->
-### T-40-043 · proza · рядок 134
+<!-- fc id:T-40-056 sha:2c105ffb src:manual/40-merezha.md:128 klas:F -->
+### T-40-056 · kod-ryadok · рядок 128
+
+**Книга каже, дослівно:**
+
+> esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, handler, NULL);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-057 sha:da12f696 src:manual/40-merezha.md:129 klas:F -->
+### T-40-057 · kod-ryadok · рядок 129
+
+**Книга каже, дослівно:**
+
+> esp_mqtt_client_start(client);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-058 sha:7fcb8ea4 src:manual/40-merezha.md:131 klas:F -->
+### T-40-058 · kod-ryadok · рядок 131
+
+**Книга каже, дослівно:**
+
+> esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-059 sha:f98961f2 src:manual/40-merezha.md:134 klas:F -->
+### T-40-059 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -597,8 +805,8 @@
 
 ---
 
-<!-- fc id:T-40-044 sha:6937ad74 src:manual/40-merezha.md:134 klas:F -->
-### T-40-044 · proza · рядок 134
+<!-- fc id:T-40-060 sha:6937ad74 src:manual/40-merezha.md:134 klas:F -->
+### T-40-060 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -610,8 +818,8 @@
 
 ---
 
-<!-- fc id:T-40-045 sha:9ccd51d0 src:manual/40-merezha.md:134 klas:F -->
-### T-40-045 · proza · рядок 134
+<!-- fc id:T-40-061 sha:9ccd51d0 src:manual/40-merezha.md:134 klas:F -->
+### T-40-061 · proza · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -623,8 +831,8 @@
 
 ---
 
-<!-- fc id:T-40-046 sha:a84b93ca src:manual/40-merezha.md:141 klas:F -->
-### T-40-046 · tablycya · рядок 141
+<!-- fc id:T-40-062 sha:a84b93ca src:manual/40-merezha.md:141 klas:F -->
+### T-40-062 · tablycya-shapka · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -636,12 +844,12 @@
 
 ---
 
-<!-- fc id:T-40-047 sha:639b9e42 src:manual/40-merezha.md:143 klas:F -->
-### T-40-047 · tablycya · рядок 143
+<!-- fc id:T-40-063 sha:9628ec9a src:manual/40-merezha.md:142 klas:F -->
+### T-40-063 · komirka · рядок 142
 
 **Книга каже, дослівно:**
 
-> | 0 | доставка не гарантована | телеметрія, часті вимірювання |
+> 0 · Гарантія → доставка не гарантована
 
 **Доказ**
 
@@ -649,12 +857,12 @@
 
 ---
 
-<!-- fc id:T-40-048 sha:2e6df872 src:manual/40-merezha.md:144 klas:F -->
-### T-40-048 · tablycya · рядок 144
+<!-- fc id:T-40-064 sha:7d437bc9 src:manual/40-merezha.md:142 klas:F -->
+### T-40-064 · komirka · рядок 142
 
 **Книга каже, дослівно:**
 
-> | 1 | доставлено щонайменше раз, можливі дублі | команди |
+> 0 · Коли → телеметрія, часті вимірювання
 
 **Доказ**
 
@@ -662,12 +870,12 @@
 
 ---
 
-<!-- fc id:T-40-049 sha:e95e2c84 src:manual/40-merezha.md:145 klas:F -->
-### T-40-049 · tablycya · рядок 145
+<!-- fc id:T-40-065 sha:717e2285 src:manual/40-merezha.md:143 klas:F -->
+### T-40-065 · komirka · рядок 143
 
 **Книга каже, дослівно:**
 
-> | 2 | рівно раз, найдорожчий | рідко потрібен |
+> 1 · Гарантія → доставлено щонайменше раз, можливі дублі
 
 **Доказ**
 
@@ -675,8 +883,47 @@
 
 ---
 
-<!-- fc id:T-40-050 sha:93e6a99f src:manual/40-merezha.md:147 klas:F -->
-### T-40-050 · proza · рядок 147
+<!-- fc id:T-40-066 sha:83a52bfd src:manual/40-merezha.md:143 klas:F -->
+### T-40-066 · komirka · рядок 143
+
+**Книга каже, дослівно:**
+
+> 1 · Коли → команди
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-067 sha:6221cb30 src:manual/40-merezha.md:144 klas:F -->
+### T-40-067 · komirka · рядок 144
+
+**Книга каже, дослівно:**
+
+> 2 · Гарантія → рівно раз, найдорожчий
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-068 sha:8500e7ee src:manual/40-merezha.md:144 klas:F -->
+### T-40-068 · komirka · рядок 144
+
+**Книга каже, дослівно:**
+
+> 2 · Коли → рідко потрібен
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-40-069 sha:93e6a99f src:manual/40-merezha.md:147 klas:F -->
+### T-40-069 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -688,8 +935,8 @@
 
 ---
 
-<!-- fc id:T-40-051 sha:a97658fd src:manual/40-merezha.md:152 klas:F -->
-### T-40-051 · proza · рядок 152
+<!-- fc id:T-40-070 sha:a97658fd src:manual/40-merezha.md:152 klas:F -->
+### T-40-070 · proza · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -701,8 +948,8 @@
 
 ---
 
-<!-- fc id:T-40-052 sha:d015a0ae src:manual/40-merezha.md:154 klas:F -->
-### T-40-052 · proza · рядок 154
+<!-- fc id:T-40-071 sha:d015a0ae src:manual/40-merezha.md:154 klas:F -->
+### T-40-071 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -714,8 +961,8 @@
 
 ---
 
-<!-- fc id:T-40-053 sha:8a48a664 src:manual/40-merezha.md:154 klas:F -->
-### T-40-053 · proza · рядок 154
+<!-- fc id:T-40-072 sha:8a48a664 src:manual/40-merezha.md:154 klas:F -->
+### T-40-072 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -727,8 +974,8 @@
 
 ---
 
-<!-- fc id:T-40-054 sha:17065457 src:manual/40-merezha.md:159 klas:F -->
-### T-40-054 · proza · рядок 159
+<!-- fc id:T-40-073 sha:17065457 src:manual/40-merezha.md:159 klas:F -->
+### T-40-073 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -740,8 +987,8 @@
 
 ---
 
-<!-- fc id:T-40-055 sha:16021207 src:manual/40-merezha.md:159 klas:F -->
-### T-40-055 · proza · рядок 159
+<!-- fc id:T-40-074 sha:16021207 src:manual/40-merezha.md:159 klas:F -->
+### T-40-074 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -753,8 +1000,8 @@
 
 ---
 
-<!-- fc id:T-40-056 sha:7a16e395 src:manual/40-merezha.md:159 klas:F -->
-### T-40-056 · proza · рядок 159
+<!-- fc id:T-40-075 sha:7a16e395 src:manual/40-merezha.md:159 klas:F -->
+### T-40-075 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -766,8 +1013,8 @@
 
 ---
 
-<!-- fc id:T-40-057 sha:6a8edb98 src:manual/40-merezha.md:167 klas:F -->
-### T-40-057 · proza · рядок 167
+<!-- fc id:T-40-076 sha:6a8edb98 src:manual/40-merezha.md:167 klas:F -->
+### T-40-076 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -779,8 +1026,8 @@
 
 ---
 
-<!-- fc id:T-40-058 sha:5b7d99a8 src:manual/40-merezha.md:167 klas:F -->
-### T-40-058 · proza · рядок 167
+<!-- fc id:T-40-077 sha:5b7d99a8 src:manual/40-merezha.md:167 klas:F -->
+### T-40-077 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -792,8 +1039,8 @@
 
 ---
 
-<!-- fc id:T-40-059 sha:85ac2b05 src:manual/40-merezha.md:170 klas:F -->
-### T-40-059 · proza · рядок 170
+<!-- fc id:T-40-078 sha:85ac2b05 src:manual/40-merezha.md:170 klas:F -->
+### T-40-078 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -805,8 +1052,8 @@
 
 ---
 
-<!-- fc id:T-40-060 sha:42942377 src:manual/40-merezha.md:172 klas:F -->
-### T-40-060 · proza · рядок 172
+<!-- fc id:T-40-079 sha:42942377 src:manual/40-merezha.md:172 klas:F -->
+### T-40-079 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -818,8 +1065,8 @@
 
 ---
 
-<!-- fc id:T-40-061 sha:ce6848a3 src:manual/40-merezha.md:172 klas:F -->
-### T-40-061 · proza · рядок 172
+<!-- fc id:T-40-080 sha:ce6848a3 src:manual/40-merezha.md:172 klas:F -->
+### T-40-080 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -831,8 +1078,8 @@
 
 ---
 
-<!-- fc id:T-40-062 sha:94635c7b src:manual/40-merezha.md:175 klas:F -->
-### T-40-062 · proza · рядок 175
+<!-- fc id:T-40-081 sha:94635c7b src:manual/40-merezha.md:175 klas:F -->
+### T-40-081 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -844,8 +1091,8 @@
 
 ---
 
-<!-- fc id:T-40-063 sha:ee961520 src:manual/40-merezha.md:175 klas:F -->
-### T-40-063 · proza · рядок 175
+<!-- fc id:T-40-082 sha:ee961520 src:manual/40-merezha.md:175 klas:F -->
+### T-40-082 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -857,8 +1104,8 @@
 
 ---
 
-<!-- fc id:T-40-064 sha:e9d42010 src:manual/40-merezha.md:179 klas:F -->
-### T-40-064 · proza · рядок 179
+<!-- fc id:T-40-083 sha:e9d42010 src:manual/40-merezha.md:179 klas:F -->
+### T-40-083 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -870,8 +1117,8 @@
 
 ---
 
-<!-- fc id:T-40-065 sha:29ee7ec2 src:manual/40-merezha.md:179 klas:F -->
-### T-40-065 · proza · рядок 179
+<!-- fc id:T-40-084 sha:29ee7ec2 src:manual/40-merezha.md:179 klas:F -->
+### T-40-084 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -883,8 +1130,8 @@
 
 ---
 
-<!-- fc id:T-40-066 sha:da66469b src:manual/40-merezha.md:179 klas:F -->
-### T-40-066 · proza · рядок 179
+<!-- fc id:T-40-085 sha:da66469b src:manual/40-merezha.md:179 klas:F -->
+### T-40-085 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -896,8 +1143,8 @@
 
 ---
 
-<!-- fc id:T-40-067 sha:98aa77fd src:manual/40-merezha.md:185 klas:F -->
-### T-40-067 · proza · рядок 185
+<!-- fc id:T-40-086 sha:98aa77fd src:manual/40-merezha.md:185 klas:F -->
+### T-40-086 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -909,8 +1156,8 @@
 
 ---
 
-<!-- fc id:T-40-068 sha:cbddb568 src:manual/40-merezha.md:185 klas:F -->
-### T-40-068 · proza · рядок 185
+<!-- fc id:T-40-087 sha:cbddb568 src:manual/40-merezha.md:185 klas:F -->
+### T-40-087 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -922,8 +1169,8 @@
 
 ---
 
-<!-- fc id:T-40-069 sha:cd1b7976 src:manual/40-merezha.md:189 klas:F -->
-### T-40-069 · proza · рядок 189
+<!-- fc id:T-40-088 sha:cd1b7976 src:manual/40-merezha.md:189 klas:F -->
+### T-40-088 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -935,8 +1182,8 @@
 
 ---
 
-<!-- fc id:T-40-070 sha:f5dece33 src:manual/40-merezha.md:189 klas:F -->
-### T-40-070 · proza · рядок 189
+<!-- fc id:T-40-089 sha:f5dece33 src:manual/40-merezha.md:189 klas:F -->
+### T-40-089 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -948,8 +1195,8 @@
 
 ---
 
-<!-- fc id:T-40-071 sha:e3096115 src:manual/40-merezha.md:197 klas:F -->
-### T-40-071 · tablycya · рядок 197
+<!-- fc id:T-40-090 sha:e3096115 src:manual/40-merezha.md:197 klas:F -->
+### T-40-090 · tablycya · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -961,8 +1208,8 @@
 
 ---
 
-<!-- fc id:T-40-072 sha:761d9ec2 src:manual/40-merezha.md:199 klas:F -->
-### T-40-072 · tablycya · рядок 199
+<!-- fc id:T-40-091 sha:761d9ec2 src:manual/40-merezha.md:199 klas:F -->
+### T-40-091 · tablycya · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -974,8 +1221,8 @@
 
 ---
 
-<!-- fc id:T-40-073 sha:e32c11a5 src:manual/40-merezha.md:200 klas:F -->
-### T-40-073 · tablycya · рядок 200
+<!-- fc id:T-40-092 sha:e32c11a5 src:manual/40-merezha.md:200 klas:F -->
+### T-40-092 · tablycya · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -987,8 +1234,8 @@
 
 ---
 
-<!-- fc id:T-40-074 sha:9978f5d3 src:manual/40-merezha.md:201 klas:F -->
-### T-40-074 · tablycya · рядок 201
+<!-- fc id:T-40-093 sha:9978f5d3 src:manual/40-merezha.md:201 klas:F -->
+### T-40-093 · tablycya · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1000,8 +1247,8 @@
 
 ---
 
-<!-- fc id:T-40-075 sha:cc768007 src:manual/40-merezha.md:202 klas:F -->
-### T-40-075 · tablycya · рядок 202
+<!-- fc id:T-40-094 sha:cc768007 src:manual/40-merezha.md:202 klas:F -->
+### T-40-094 · tablycya · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1013,8 +1260,8 @@
 
 ---
 
-<!-- fc id:T-40-076 sha:5234074a src:manual/40-merezha.md:203 klas:F -->
-### T-40-076 · tablycya · рядок 203
+<!-- fc id:T-40-095 sha:5234074a src:manual/40-merezha.md:203 klas:F -->
+### T-40-095 · tablycya · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1026,8 +1273,8 @@
 
 ---
 
-<!-- fc id:T-40-077 sha:2f67bd2b src:manual/40-merezha.md:204 klas:F -->
-### T-40-077 · tablycya · рядок 204
+<!-- fc id:T-40-096 sha:2f67bd2b src:manual/40-merezha.md:204 klas:F -->
+### T-40-096 · tablycya · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1039,8 +1286,8 @@
 
 ---
 
-<!-- fc id:T-40-078 sha:646fd8a7 src:manual/40-merezha.md:208 klas:F -->
-### T-40-078 · proza · рядок 208
+<!-- fc id:T-40-097 sha:646fd8a7 src:manual/40-merezha.md:208 klas:F -->
+### T-40-097 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1052,8 +1299,8 @@
 
 ---
 
-<!-- fc id:T-40-079 sha:6386a727 src:manual/40-merezha.md:210 klas:F -->
-### T-40-079 · proza · рядок 210
+<!-- fc id:T-40-098 sha:6386a727 src:manual/40-merezha.md:210 klas:F -->
+### T-40-098 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1065,8 +1312,8 @@
 
 ---
 
-<!-- fc id:T-40-080 sha:402147ba src:manual/40-merezha.md:212 klas:F -->
-### T-40-080 · proza · рядок 212
+<!-- fc id:T-40-099 sha:402147ba src:manual/40-merezha.md:212 klas:F -->
+### T-40-099 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1078,8 +1325,8 @@
 
 ---
 
-<!-- fc id:T-40-081 sha:95fe58b2 src:manual/40-merezha.md:214 klas:F -->
-### T-40-081 · proza · рядок 214
+<!-- fc id:T-40-100 sha:95fe58b2 src:manual/40-merezha.md:214 klas:F -->
+### T-40-100 · proza · рядок 214
 
 **Книга каже, дослівно:**
 
@@ -1091,8 +1338,8 @@
 
 ---
 
-<!-- fc id:T-40-082 sha:e6c71b56 src:manual/40-merezha.md:217 klas:F -->
-### T-40-082 · proza · рядок 217
+<!-- fc id:T-40-101 sha:e6c71b56 src:manual/40-merezha.md:217 klas:F -->
+### T-40-101 · proza · рядок 217
 
 **Книга каже, дослівно:**
 
@@ -1104,8 +1351,8 @@
 
 ---
 
-<!-- fc id:T-40-083 sha:9859565e src:manual/40-merezha.md:219 klas:F -->
-### T-40-083 · proza · рядок 219
+<!-- fc id:T-40-102 sha:9859565e src:manual/40-merezha.md:219 klas:F -->
+### T-40-102 · proza · рядок 219
 
 **Книга каже, дослівно:**
 

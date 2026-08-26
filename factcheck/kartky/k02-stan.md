@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k02-stan.md`
 
-Одиниць твердження: **25**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **27**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -217,8 +217,34 @@
 
 ---
 
-<!-- fc id:T-K02-017 sha:1856248d src:kartky/k02-stan.md:39 klas:F -->
-### T-K02-017 · proza · рядок 39
+<!-- fc id:T-K02-017 sha:4c5a16ee src:kartky/k02-stan.md:35 klas:F -->
+### T-K02-017 · kod-ryadok · рядок 35
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 flash-id
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K02-018 sha:213017c0 src:kartky/k02-stan.md:36 klas:F -->
+### T-K02-018 · kod-ryadok · рядок 36
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K02-019 sha:1856248d src:kartky/k02-stan.md:39 klas:F -->
+### T-K02-019 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -230,8 +256,8 @@
 
 ---
 
-<!-- fc id:T-K02-018 sha:3eb44454 src:kartky/k02-stan.md:39 klas:F -->
-### T-K02-018 · proza · рядок 39
+<!-- fc id:T-K02-020 sha:3eb44454 src:kartky/k02-stan.md:39 klas:F -->
+### T-K02-020 · proza · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -243,8 +269,8 @@
 
 ---
 
-<!-- fc id:T-K02-019 sha:f9d252b0 src:kartky/k02-stan.md:42 klas:F -->
-### T-K02-019 · proza · рядок 42
+<!-- fc id:T-K02-021 sha:f9d252b0 src:kartky/k02-stan.md:42 klas:F -->
+### T-K02-021 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -256,8 +282,8 @@
 
 ---
 
-<!-- fc id:T-K02-020 sha:de849d8b src:kartky/k02-stan.md:42 klas:F -->
-### T-K02-020 · proza · рядок 42
+<!-- fc id:T-K02-022 sha:de849d8b src:kartky/k02-stan.md:42 klas:F -->
+### T-K02-022 · proza · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -269,8 +295,8 @@
 
 ---
 
-<!-- fc id:T-K02-021 sha:33c5d9b5 src:kartky/k02-stan.md:47 klas:F -->
-### T-K02-021 · proza · рядок 47
+<!-- fc id:T-K02-023 sha:33c5d9b5 src:kartky/k02-stan.md:47 klas:F -->
+### T-K02-023 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -282,8 +308,8 @@
 
 ---
 
-<!-- fc id:T-K02-022 sha:744e6463 src:kartky/k02-stan.md:47 klas:F -->
-### T-K02-022 · proza · рядок 47
+<!-- fc id:T-K02-024 sha:744e6463 src:kartky/k02-stan.md:47 klas:F -->
+### T-K02-024 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -295,8 +321,8 @@
 
 ---
 
-<!-- fc id:T-K02-023 sha:79fb5b6b src:kartky/k02-stan.md:47 klas:F -->
-### T-K02-023 · proza · рядок 47
+<!-- fc id:T-K02-025 sha:79fb5b6b src:kartky/k02-stan.md:47 klas:F -->
+### T-K02-025 · proza · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -308,8 +334,8 @@
 
 ---
 
-<!-- fc id:T-K02-024 sha:943e89a5 src:kartky/k02-stan.md:51 klas:F -->
-### T-K02-024 · proza · рядок 51
+<!-- fc id:T-K02-026 sha:943e89a5 src:kartky/k02-stan.md:51 klas:F -->
+### T-K02-026 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -321,8 +347,8 @@
 
 ---
 
-<!-- fc id:T-K02-025 sha:d3533a61 src:kartky/k02-stan.md:51 klas:F -->
-### T-K02-025 · proza · рядок 51
+<!-- fc id:T-K02-027 sha:d3533a61 src:kartky/k02-stan.md:51 klas:F -->
+### T-K02-027 · proza · рядок 51
 
 **Книга каже, дослівно:**
 

@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-03-025 sha:f908bd73 src:manual/03-soc.md:54 klas:F -->
+<!-- fc id:T-03-025 sha:f908bd73 src:manual/03-soc.md:54 klas:A -->
 ### T-03-025 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -327,7 +327,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
@@ -764,7 +772,7 @@
 
 ---
 
-<!-- fc id:T-03-059 sha:dc78d229 src:manual/03-soc.md:137 klas:F -->
+<!-- fc id:T-03-059 sha:dc78d229 src:manual/03-soc.md:137 klas:A -->
 ### T-03-059 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -773,7 +781,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 
@@ -972,7 +988,7 @@
 
 ---
 
-<!-- fc id:T-03-075 sha:ece55389 src:manual/03-soc.md:185 klas:F -->
+<!-- fc id:T-03-075 sha:ece55389 src:manual/03-soc.md:185 klas:A -->
 ### T-03-075 · proza · рядок 185
 
 **Книга каже, дослівно:**
@@ -981,7 +997,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+- **Дослівно з джерела:**
+  > If some variables in the program are placed into RTC SLOW memory (for example, using
+  > ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+  > This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути йдуть туди ж.
+- **Прохід:** pass-02-povedinka
 
 ---
 

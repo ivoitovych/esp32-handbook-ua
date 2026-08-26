@@ -1,6 +1,6 @@
 # Фактчекінг: `kartky/k01-triazh.md`
 
-Одиниць твердження: **37**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **44**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -59,7 +59,7 @@
 ---
 
 <!-- fc id:T-K01-005 sha:fe1d67a5 src:kartky/k01-triazh.md:10 klas:F -->
-### T-K01-005 · tablycya · рядок 10
+### T-K01-005 · tablycya-shapka · рядок 10
 
 **Книга каже, дослівно:**
 
@@ -71,12 +71,12 @@
 
 ---
 
-<!-- fc id:T-K01-006 sha:7c5f2ad7 src:kartky/k01-triazh.md:12 klas:F -->
-### T-K01-006 · tablycya · рядок 12
+<!-- fc id:T-K01-006 sha:f5a2b442 src:kartky/k01-triazh.md:11 klas:F -->
+### T-K01-006 · komirka · рядок 11
 
 **Книга каже, дослівно:**
 
-> | `ESP32-WROOM-32` | ESP32 classic | двоядерний Xtensa, без PSRAM |
+> `ESP32-WROOM-32` · Чип → ESP32 classic
 
 **Доказ**
 
@@ -84,12 +84,12 @@
 
 ---
 
-<!-- fc id:T-K01-007 sha:529ab6b4 src:kartky/k01-triazh.md:13 klas:F -->
-### T-K01-007 · tablycya · рядок 13
+<!-- fc id:T-K01-007 sha:8e47008e src:kartky/k01-triazh.md:11 klas:F -->
+### T-K01-007 · komirka · рядок 11
 
 **Книга каже, дослівно:**
 
-> | `ESP32-WROVER` | ESP32 classic | + PSRAM; вона займає частину пінів |
+> `ESP32-WROOM-32` · Що це значить → двоядерний Xtensa, без PSRAM
 
 **Доказ**
 
@@ -97,12 +97,12 @@
 
 ---
 
-<!-- fc id:T-K01-008 sha:3ab93d80 src:kartky/k01-triazh.md:14 klas:F -->
-### T-K01-008 · tablycya · рядок 14
+<!-- fc id:T-K01-008 sha:3138f20b src:kartky/k01-triazh.md:12 klas:F -->
+### T-K01-008 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> | `ESP32-S3-WROOM-1` | ESP32-S3 | двоядерний, native USB |
+> `ESP32-WROVER` · Чип → ESP32 classic
 
 **Доказ**
 
@@ -110,12 +110,12 @@
 
 ---
 
-<!-- fc id:T-K01-009 sha:90787cfb src:kartky/k01-triazh.md:15 klas:F -->
-### T-K01-009 · tablycya · рядок 15
+<!-- fc id:T-K01-009 sha:da93faf6 src:kartky/k01-triazh.md:12 klas:F -->
+### T-K01-009 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> | `ESP32-C3-MINI-1` | ESP32-C3 | одноядерний RISC-V |
+> `ESP32-WROVER` · Що це значить → + PSRAM; вона займає частину пінів
 
 **Доказ**
 
@@ -123,12 +123,12 @@
 
 ---
 
-<!-- fc id:T-K01-010 sha:746b7c3d src:kartky/k01-triazh.md:16 klas:F -->
-### T-K01-010 · tablycya · рядок 16
+<!-- fc id:T-K01-010 sha:92bef9b9 src:kartky/k01-triazh.md:13 klas:F -->
+### T-K01-010 · komirka · рядок 13
 
 **Книга каже, дослівно:**
 
-> | `ESP8266` / `ESP-12` | не ESP32 | інша архітектура, інший тулчейн |
+> `ESP32-S3-WROOM-1` · Чип → ESP32-S3
 
 **Доказ**
 
@@ -136,8 +136,73 @@
 
 ---
 
-<!-- fc id:T-K01-011 sha:735b1c96 src:kartky/k01-triazh.md:18 klas:F -->
-### T-K01-011 · proza · рядок 18
+<!-- fc id:T-K01-011 sha:36d7f03f src:kartky/k01-triazh.md:13 klas:F -->
+### T-K01-011 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> `ESP32-S3-WROOM-1` · Що це значить → двоядерний, native USB
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K01-012 sha:db5fc68e src:kartky/k01-triazh.md:14 klas:F -->
+### T-K01-012 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> `ESP32-C3-MINI-1` · Чип → ESP32-C3
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K01-013 sha:d9ec92f0 src:kartky/k01-triazh.md:14 klas:F -->
+### T-K01-013 · komirka · рядок 14
+
+**Книга каже, дослівно:**
+
+> `ESP32-C3-MINI-1` · Що це значить → одноядерний RISC-V
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K01-014 sha:9e2dcef5 src:kartky/k01-triazh.md:15 klas:F -->
+### T-K01-014 · komirka · рядок 15
+
+**Книга каже, дослівно:**
+
+> `ESP8266` / `ESP-12` · Чип → не ESP32
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K01-015 sha:cfcde96c src:kartky/k01-triazh.md:15 klas:F -->
+### T-K01-015 · komirka · рядок 15
+
+**Книга каже, дослівно:**
+
+> `ESP8266` / `ESP-12` · Що це значить → інша архітектура, інший тулчейн
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K01-016 sha:735b1c96 src:kartky/k01-triazh.md:18 klas:F -->
+### T-K01-016 · proza · рядок 18
 
 **Книга каже, дослівно:**
 
@@ -149,8 +214,8 @@
 
 ---
 
-<!-- fc id:T-K01-012 sha:27868d1b src:kartky/k01-triazh.md:24 klas:F -->
-### T-K01-012 · proza · рядок 24
+<!-- fc id:T-K01-017 sha:27868d1b src:kartky/k01-triazh.md:24 klas:F -->
+### T-K01-017 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -162,8 +227,8 @@
 
 ---
 
-<!-- fc id:T-K01-013 sha:12a04661 src:kartky/k01-triazh.md:24 klas:F -->
-### T-K01-013 · proza · рядок 24
+<!-- fc id:T-K01-018 sha:12a04661 src:kartky/k01-triazh.md:24 klas:F -->
+### T-K01-018 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -175,8 +240,8 @@
 
 ---
 
-<!-- fc id:T-K01-014 sha:26e56daa src:kartky/k01-triazh.md:24 klas:F -->
-### T-K01-014 · proza · рядок 24
+<!-- fc id:T-K01-019 sha:26e56daa src:kartky/k01-triazh.md:24 klas:F -->
+### T-K01-019 · proza · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -188,8 +253,8 @@
 
 ---
 
-<!-- fc id:T-K01-015 sha:b54c22e9 src:kartky/k01-triazh.md:29 klas:F -->
-### T-K01-015 · proza · рядок 29
+<!-- fc id:T-K01-020 sha:b54c22e9 src:kartky/k01-triazh.md:29 klas:F -->
+### T-K01-020 · proza · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -201,8 +266,8 @@
 
 ---
 
-<!-- fc id:T-K01-016 sha:5e734fa8 src:kartky/k01-triazh.md:29 klas:F -->
-### T-K01-016 · proza · рядок 29
+<!-- fc id:T-K01-021 sha:5e734fa8 src:kartky/k01-triazh.md:29 klas:F -->
+### T-K01-021 · proza · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -214,8 +279,8 @@
 
 ---
 
-<!-- fc id:T-K01-017 sha:648833a9 src:kartky/k01-triazh.md:35 klas:F -->
-### T-K01-017 · proza · рядок 35
+<!-- fc id:T-K01-022 sha:648833a9 src:kartky/k01-triazh.md:35 klas:F -->
+### T-K01-022 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -227,8 +292,8 @@
 
 ---
 
-<!-- fc id:T-K01-018 sha:f87188a6 src:kartky/k01-triazh.md:35 klas:F -->
-### T-K01-018 · proza · рядок 35
+<!-- fc id:T-K01-023 sha:f87188a6 src:kartky/k01-triazh.md:35 klas:F -->
+### T-K01-023 · proza · рядок 35
 
 **Книга каже, дослівно:**
 
@@ -240,8 +305,8 @@
 
 ---
 
-<!-- fc id:T-K01-019 sha:08e99d29 src:kartky/k01-triazh.md:38 klas:F -->
-### T-K01-019 · proza · рядок 38
+<!-- fc id:T-K01-024 sha:08e99d29 src:kartky/k01-triazh.md:38 klas:F -->
+### T-K01-024 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -253,8 +318,8 @@
 
 ---
 
-<!-- fc id:T-K01-020 sha:77cc1bbf src:kartky/k01-triazh.md:38 klas:F -->
-### T-K01-020 · proza · рядок 38
+<!-- fc id:T-K01-025 sha:77cc1bbf src:kartky/k01-triazh.md:38 klas:F -->
+### T-K01-025 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -266,8 +331,8 @@
 
 ---
 
-<!-- fc id:T-K01-021 sha:442e5b70 src:kartky/k01-triazh.md:38 klas:F -->
-### T-K01-021 · proza · рядок 38
+<!-- fc id:T-K01-026 sha:442e5b70 src:kartky/k01-triazh.md:38 klas:F -->
+### T-K01-026 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -279,8 +344,8 @@
 
 ---
 
-<!-- fc id:T-K01-022 sha:68f8ba27 src:kartky/k01-triazh.md:38 klas:F -->
-### T-K01-022 · proza · рядок 38
+<!-- fc id:T-K01-027 sha:68f8ba27 src:kartky/k01-triazh.md:38 klas:F -->
+### T-K01-027 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -292,8 +357,8 @@
 
 ---
 
-<!-- fc id:T-K01-023 sha:36d5b847 src:kartky/k01-triazh.md:38 klas:F -->
-### T-K01-023 · proza · рядок 38
+<!-- fc id:T-K01-028 sha:36d5b847 src:kartky/k01-triazh.md:38 klas:F -->
+### T-K01-028 · proza · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -305,8 +370,8 @@
 
 ---
 
-<!-- fc id:T-K01-024 sha:0272d30f src:kartky/k01-triazh.md:46 klas:F -->
-### T-K01-024 · kod · рядок 46
+<!-- fc id:T-K01-029 sha:0272d30f src:kartky/k01-triazh.md:46 klas:F -->
+### T-K01-029 · kod · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -321,8 +386,34 @@
 
 ---
 
-<!-- fc id:T-K01-025 sha:0d3dd7c0 src:kartky/k01-triazh.md:51 klas:F -->
-### T-K01-025 · proza · рядок 51
+<!-- fc id:T-K01-030 sha:32416a21 src:kartky/k01-triazh.md:47 klas:F -->
+### T-K01-030 · kod-ryadok · рядок 47
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 chip-id
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K01-031 sha:4c5a16ee src:kartky/k01-triazh.md:48 klas:F -->
+### T-K01-031 · kod-ryadok · рядок 48
+
+**Книга каже, дослівно:**
+
+> esptool --port /dev/ttyUSB0 flash-id
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-K01-032 sha:0d3dd7c0 src:kartky/k01-triazh.md:51 klas:F -->
+### T-K01-032 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -334,8 +425,8 @@
 
 ---
 
-<!-- fc id:T-K01-026 sha:e687b58d src:kartky/k01-triazh.md:51 klas:F -->
-### T-K01-026 · proza · рядок 51
+<!-- fc id:T-K01-033 sha:e687b58d src:kartky/k01-triazh.md:51 klas:F -->
+### T-K01-033 · proza · рядок 51
 
 **Книга каже, дослівно:**
 
@@ -347,8 +438,8 @@
 
 ---
 
-<!-- fc id:T-K01-027 sha:76c54bbe src:kartky/k01-triazh.md:56 klas:F -->
-### T-K01-027 · proza · рядок 56
+<!-- fc id:T-K01-034 sha:76c54bbe src:kartky/k01-triazh.md:56 klas:F -->
+### T-K01-034 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -360,8 +451,8 @@
 
 ---
 
-<!-- fc id:T-K01-028 sha:87244ea5 src:kartky/k01-triazh.md:56 klas:F -->
-### T-K01-028 · proza · рядок 56
+<!-- fc id:T-K01-035 sha:87244ea5 src:kartky/k01-triazh.md:56 klas:F -->
+### T-K01-035 · proza · рядок 56
 
 **Книга каже, дослівно:**
 
@@ -373,8 +464,8 @@
 
 ---
 
-<!-- fc id:T-K01-029 sha:819f6c86 src:kartky/k01-triazh.md:62 klas:F -->
-### T-K01-029 · proza · рядок 62
+<!-- fc id:T-K01-036 sha:819f6c86 src:kartky/k01-triazh.md:62 klas:F -->
+### T-K01-036 · proza · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -386,8 +477,8 @@
 
 ---
 
-<!-- fc id:T-K01-030 sha:0ed28b48 src:kartky/k01-triazh.md:62 klas:F -->
-### T-K01-030 · proza · рядок 62
+<!-- fc id:T-K01-037 sha:0ed28b48 src:kartky/k01-triazh.md:62 klas:F -->
+### T-K01-037 · proza · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -399,8 +490,8 @@
 
 ---
 
-<!-- fc id:T-K01-031 sha:e8fd95bd src:kartky/k01-triazh.md:68 klas:F -->
-### T-K01-031 · tablycya · рядок 68
+<!-- fc id:T-K01-038 sha:e8fd95bd src:kartky/k01-triazh.md:68 klas:F -->
+### T-K01-038 · tablycya · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -412,8 +503,8 @@
 
 ---
 
-<!-- fc id:T-K01-032 sha:201f9419 src:kartky/k01-triazh.md:70 klas:F -->
-### T-K01-032 · tablycya · рядок 70
+<!-- fc id:T-K01-039 sha:201f9419 src:kartky/k01-triazh.md:70 klas:F -->
+### T-K01-039 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -425,8 +516,8 @@
 
 ---
 
-<!-- fc id:T-K01-033 sha:017fe3de src:kartky/k01-triazh.md:71 klas:F -->
-### T-K01-033 · tablycya · рядок 71
+<!-- fc id:T-K01-040 sha:017fe3de src:kartky/k01-triazh.md:71 klas:F -->
+### T-K01-040 · tablycya · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -438,8 +529,8 @@
 
 ---
 
-<!-- fc id:T-K01-034 sha:64bb37ea src:kartky/k01-triazh.md:72 klas:F -->
-### T-K01-034 · tablycya · рядок 72
+<!-- fc id:T-K01-041 sha:64bb37ea src:kartky/k01-triazh.md:72 klas:F -->
+### T-K01-041 · tablycya · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -451,8 +542,8 @@
 
 ---
 
-<!-- fc id:T-K01-035 sha:07ca066d src:kartky/k01-triazh.md:73 klas:F -->
-### T-K01-035 · tablycya · рядок 73
+<!-- fc id:T-K01-042 sha:07ca066d src:kartky/k01-triazh.md:73 klas:F -->
+### T-K01-042 · tablycya · рядок 73
 
 **Книга каже, дослівно:**
 
@@ -464,8 +555,8 @@
 
 ---
 
-<!-- fc id:T-K01-036 sha:564e5a63 src:kartky/k01-triazh.md:74 klas:F -->
-### T-K01-036 · tablycya · рядок 74
+<!-- fc id:T-K01-043 sha:564e5a63 src:kartky/k01-triazh.md:74 klas:F -->
+### T-K01-043 · tablycya · рядок 74
 
 **Книга каже, дослівно:**
 
@@ -477,8 +568,8 @@
 
 ---
 
-<!-- fc id:T-K01-037 sha:d4503abd src:kartky/k01-triazh.md:75 klas:F -->
-### T-K01-037 · tablycya · рядок 75
+<!-- fc id:T-K01-044 sha:d4503abd src:kartky/k01-triazh.md:75 klas:F -->
+### T-K01-044 · tablycya · рядок 75
 
 **Книга каже, дослівно:**
 
