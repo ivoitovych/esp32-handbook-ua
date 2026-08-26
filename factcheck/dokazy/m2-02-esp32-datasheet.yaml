@@ -54,7 +54,7 @@
     згадує, і рядок читається як «deep sleep узагалі».
 
 - nazva: Пін віддає більше, ніж приймає — IOH 40 мА проти IOL 28 мА
-  zbih: 'на віддачу пін дає більше, ніж\s+на прийом'
+  zbih: '[Нн]а віддачу пін дає більше, ніж\s+на прийом'
   klas: A
   dzherelo: >-
     https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
