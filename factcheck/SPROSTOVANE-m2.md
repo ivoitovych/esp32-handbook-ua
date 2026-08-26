@@ -23,4 +23,19 @@
     всередині корпусу виробу.
   prokhid: m2-01
   vynyatky: [manual/54-korpus.md]
+
+- shcho: RFM69HCW названо LoRa-модулем
+  zbih: 'SX1262 */ *RFM69|RFM69[A-Z]*\s*(?:—|-)\s*(?:новіш|LoRa)|LoRa[^.]{0,40}RFM69'
+  chomu: >-
+    RFM69 (RFM69HCW, RFM69W) не вміє LoRa взагалі. Його документація
+    називає модуляції FSK, GFSK, MSK, GMSK і OOK, а слово «LoRa» в ній не
+    трапляється жодного разу. З RFM95 чи SX1262 він не зв'яжеться, і
+    симптом буде той самий, що при різних SF або несправній антені, —
+    тиша.
+  zamist: >-
+    SX1262 — новіше покоління Semtech із тим самим LoRa. RFM69 —
+    сусіднє сімейство для вузькосмугового FSK і LoRa не вміє; у
+    LoRa-модулів HopeRF номер починається з RFM9.
+  prokhid: m2-02
+  vynyatky: [manual/43-lora.md]
 ```
