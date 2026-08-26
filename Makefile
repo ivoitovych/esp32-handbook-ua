@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh pravopys budgets arytmetyka check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty pravopys budgets arytmetyka check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -61,6 +61,12 @@ polya:
 # Листування супровідників: форма, зв'язність, перелік відкритого.
 zvyazok:
 	@$(PY) tools/zvyazok.py
+
+# Третій шар фактчекінгу: чи стоїть цитата за названою адресою.
+# Поки **звіт**, не ворота: 57 записів не сходяться, і кожен треба
+# розібрати окремо. Стане `check`, коли черга спорожніє.
+citaty:
+	@$(PY) tools/citaty.py --zvit || true
 
 # Поділ незвіреного між супровідниками за досяжністю джерела.
 podil:
