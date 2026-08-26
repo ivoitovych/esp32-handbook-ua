@@ -93,33 +93,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > typedef enum {
-  >     NO_MEAN                =  0,
-  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
-  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
-  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
-  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
-  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
-  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
-  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
-  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
-  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
-  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
-  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
-  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
-  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
-  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
-  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
-  > } RESET_REASON;
+  > rst:0x1 (POWERON_RESET),boot:0x3
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
-- **Прохід:** pass-01-tverde-yadro
+- **Нотатка:** Приклад лога з boot.rst показує 0x1 = POWERON_RESET.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
-<!-- fc id:T-D-006 sha:d090e5b8 src:dodatky/d-panik.md:11 klas:F -->
+<!-- fc id:T-D-006 sha:d090e5b8 src:dodatky/d-panik.md:11 klas:A -->
 ### T-D-006 · komirka · рядок 11
 
 **Книга каже, дослівно:**
@@ -128,11 +111,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар enum'у переводиться як «скидання від подачі напруги на Vbat». EN (enable) — пін вмикання чипа, без якого скидання неможливе. Книга інтерпретує це як «подано живлення або EN», що відповідає суті Vbat reset.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-007 sha:7431c283 src:dodatky/d-panik.md:11 klas:F -->
+<!-- fc id:T-D-007 sha:7431c283 src:dodatky/d-panik.md:11 klas:B -->
 ### T-D-007 · komirka · рядок 11
 
 **Книга каже, дослівно:**
@@ -141,11 +130,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Скидання при вмиканні (POWERON_RESET) — нормальний сценарій. Не помилка, не проблема. Книга правильно називає це нормою.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-008 sha:1baef394 src:dodatky/d-panik.md:12 klas:F -->
+<!-- fc id:T-D-008 sha:1baef394 src:dodatky/d-panik.md:12 klas:A -->
 ### T-D-008 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -154,7 +149,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > SW_RESET               =  3,    /**<3, Software reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x3 = SW_RESET. Неме розходження між книгою й enum'ом.
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -187,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-D-010 sha:03a89bab src:dodatky/d-panik.md:12 klas:F -->
+<!-- fc id:T-D-010 sha:03a89bab src:dodatky/d-panik.md:12 klas:B -->
 ### T-D-010 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -196,11 +197,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > SW_RESET               =  3,    /**<3, Software reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Програмне скидання — нормально, якщо ви його викликали (esp_restart()). Якщо ви його не викликали, то причина невідома. Книга коректно застерігає слід «якщо ваша» (тобто якщо код був), що надає логічне припущення.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-011 sha:7add9e17 src:dodatky/d-panik.md:13 klas:F -->
+<!-- fc id:T-D-011 sha:7add9e17 src:dodatky/d-panik.md:13 klas:A -->
 ### T-D-011 · komirka · рядок 13
 
 **Книга каже, дослівно:**
@@ -209,11 +216,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x4 = OWDT_RESET. Коментар вказує на legacy (застарілість) watchdog'а, що добре корелює з наступним рядком про застарілість.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-012 sha:3ae2fadd src:dodatky/d-panik.md:13 klas:F -->
+<!-- fc id:T-D-012 sha:3ae2fadd src:dodatky/d-panik.md:13 klas:A -->
 ### T-D-012 · komirka · рядок 13
 
 **Книга каже, дослівно:**
@@ -222,11 +235,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Слово «Legacy» в коментарі enum'у переводиться як «застарілий». Книга дослівно передає цей сенс.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-013 sha:b04df11d src:dodatky/d-panik.md:13 klas:F -->
+<!-- fc id:T-D-013 sha:b04df11d src:dodatky/d-panik.md:13 klas:B -->
 ### T-D-013 · komirka · рядок 13
 
 **Книга каже, дослівно:**
@@ -235,11 +254,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Застарілий компонент використовується рідко в новому коді. Випливає однозначно з позначки Legacy в enum'і.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-014 sha:60cc5d87 src:dodatky/d-panik.md:14 klas:F -->
+<!-- fc id:T-D-014 sha:60cc5d87 src:dodatky/d-panik.md:14 klas:A -->
 ### T-D-014 · komirka · рядок 14
 
 **Книга каже, дослівно:**
@@ -248,11 +273,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x5 = DEEPSLEEP_RESET. Коментар згадує Deep Sleep.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-015 sha:d01aac01 src:dodatky/d-panik.md:14 klas:F -->
+<!-- fc id:T-D-015 sha:d01aac01 src:dodatky/d-panik.md:14 klas:A -->
 ### T-D-015 · komirka · рядок 14
 
 **Книга каже, дослівно:**
@@ -261,11 +292,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар DEEPSLEEP_RESET говорить про Deep Sleep. Прокинення (wake-up) — це сенс скидання при виході з deep sleep режиму.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-016 sha:0f8056b3 src:dodatky/d-panik.md:14 klas:F -->
+<!-- fc id:T-D-016 sha:0f8056b3 src:dodatky/d-panik.md:14 klas:B -->
 ### T-D-016 · komirka · рядок 14
 
 **Книга каже, дослівно:**
@@ -274,11 +311,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Скидання при прокинуванні з deep sleep — нормальна операція, не помилка.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-017 sha:6624efb1 src:dodatky/d-panik.md:15 klas:F -->
+<!-- fc id:T-D-017 sha:6624efb1 src:dodatky/d-panik.md:15 klas:A -->
 ### T-D-017 · komirka · рядок 15
 
 **Книга каже, дослівно:**
@@ -287,11 +330,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x6 = SDIO_RESET.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-018 sha:8a61920f src:dodatky/d-panik.md:15 klas:F -->
+<!-- fc id:T-D-018 sha:8a61920f src:dodatky/d-panik.md:15 klas:A -->
 ### T-D-018 · komirka · рядок 15
 
 **Книга каже, дослівно:**
@@ -300,11 +349,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар enum'у прямо говорить «Reset by SLC module». Книга переводить як «скидання модулем SLC», що дослівно.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-019 sha:31ae5bdb src:dodatky/d-panik.md:15 klas:F -->
+<!-- fc id:T-D-019 sha:31ae5bdb src:dodatky/d-panik.md:15 klas:B -->
 ### T-D-019 · komirka · рядок 15
 
 **Книга каже, дослівно:**
@@ -313,7 +368,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** SDIO (SD Input/Output) — периферійне обладнання. Скидання ним рідкісне в типовому застосуванні.
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -353,7 +414,7 @@
 
 ---
 
-<!-- fc id:T-D-021 sha:3f69134f src:dodatky/d-panik.md:16 klas:F -->
+<!-- fc id:T-D-021 sha:3f69134f src:dodatky/d-panik.md:16 klas:A -->
 ### T-D-021 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -362,7 +423,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар: «Timer Group0 Watch dog reset». TG0 = Timer Group 0. Книга інтерпретує як «watchdog таймера 0», що дослівно відповідає enum'у.
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -379,7 +446,7 @@
 
 ---
 
-<!-- fc id:T-D-023 sha:a4c80ac9 src:dodatky/d-panik.md:17 klas:F -->
+<!-- fc id:T-D-023 sha:a4c80ac9 src:dodatky/d-panik.md:17 klas:A -->
 ### T-D-023 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -388,11 +455,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x8 = TG1WDT_SYS_RESET. TG1 = Timer Group 1.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-024 sha:3253c52a src:dodatky/d-panik.md:17 klas:F -->
+<!-- fc id:T-D-024 sha:3253c52a src:dodatky/d-panik.md:17 klas:A -->
 ### T-D-024 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -401,7 +474,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар: «Timer Group1 Watch dog reset». Книга інтерпретує як «watchdog таймера 1», дослівно.
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -418,7 +497,7 @@
 
 ---
 
-<!-- fc id:T-D-026 sha:61c76aaf src:dodatky/d-panik.md:18 klas:F -->
+<!-- fc id:T-D-026 sha:61c76aaf src:dodatky/d-panik.md:18 klas:A -->
 ### T-D-026 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -427,11 +506,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0x9 = RTCWDT_SYS_RESET. RTC = Real Time Clock.
+- **Прохід:** m2-60-panik-a
 
 ---
 
-<!-- fc id:T-D-027 sha:9b884225 src:dodatky/d-panik.md:18 klas:F -->
+<!-- fc id:T-D-027 sha:9b884225 src:dodatky/d-panik.md:18 klas:A -->
 ### T-D-027 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -440,7 +525,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Коментар: «RTC Watch dog Reset». Книга дослівно передає це як «RTC watchdog».
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -457,7 +548,7 @@
 
 ---
 
-<!-- fc id:T-D-029 sha:3c9dd369 src:dodatky/d-panik.md:19 klas:F -->
+<!-- fc id:T-D-029 sha:3c9dd369 src:dodatky/d-panik.md:19 klas:A -->
 ### T-D-029 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -466,7 +557,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Пряма відповідність: 0xa (10 в hex) = INTRUSION_RESET. У коментарі є typo (Instrusion замість Intrusion), але назва enum'у чітка.
+- **Прохід:** m2-60-panik-a
 
 ---
 
@@ -509,7 +606,7 @@
 
 ---
 
-<!-- fc id:T-D-033 sha:ffe03c46 src:dodatky/d-panik.md:20 klas:F -->
+<!-- fc id:T-D-033 sha:ffe03c46 src:dodatky/d-panik.md:20 klas:A -->
 ### T-D-033 · komirka · рядок 20
 
 **Книга каже, дослівно:**
@@ -518,7 +615,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -610,7 +714,7 @@
 
 ---
 
-<!-- fc id:T-D-039 sha:e72beb66 src:dodatky/d-panik.md:22 klas:F -->
+<!-- fc id:T-D-039 sha:e72beb66 src:dodatky/d-panik.md:22 klas:A -->
 ### T-D-039 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -619,7 +723,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -750,7 +861,7 @@
 
 ---
 
-<!-- fc id:T-D-048 sha:6938bd06 src:dodatky/d-panik.md:25 klas:F -->
+<!-- fc id:T-D-048 sha:6938bd06 src:dodatky/d-panik.md:25 klas:A -->
 ### T-D-048 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -759,7 +870,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+- **Дослівно з джерела:**
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -1058,7 +1176,7 @@
 
 ---
 
-<!-- fc id:T-D-060 sha:010a7dfa src:dodatky/d-panik.md:47 klas:E -->
+<!-- fc id:T-D-060 sha:010a7dfa src:dodatky/d-panik.md:47 klas:B -->
 ### T-D-060 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -1067,7 +1185,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1192,40 +1323,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
-  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
-  > represented in the GPIO_STRAP register.
-  > 
-  > .. only:: esp32
-  >    -  ``0x01`` - GPIO5
-  >    -  ``0x02`` - MTDO (GPIO15)
-  >    -  ``0x04`` - GPIO4
-  >    -  ``0x08`` - GPIO2
-  >    -  ``0x10`` - GPIO0
-  >    -  ``0x20`` - MTDI (GPIO12)
-  > 
-  > .. only:: not esp32
-  >    - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
-  >    - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
-  > 
-  > If the pin was high on reset, the bit value will be set. If it was low
-  > on reset, the bit will be cleared.
-  > 
-  > -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
-  >    ``DOWNLOAD(USB/UART0)`` — … download flashing mode
-  > -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
-  > -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
-  >    ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
-  >    mode has been selected. Consult the strapping pins shown above (in
-  >    most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
-  >    has been pulled high when {STRAP_BOOT_GPIO} is low).
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
-Два доповнення.
-**Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий, коли головний низький.
-**Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.
-- **Прохід:** pass-26-strapping
+  > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+  > Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+- **Нотатка:** GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO функціональністю.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -1432,27 +1536,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
-  > ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as represented
-  > in the `GPIO_STRAP register <…/components/soc/{IDF_TARGET_PATH_NAME}/include/soc/gpio_reg.h>`__.
-  > 
-  > The individual bit values are as follows:
-  > 
-  > .. only:: esp32
-  > 
-  >    -  ``0x01`` - GPIO5
-  >    -  ``0x02`` - MTDO (GPIO15)
-  >    -  ``0x04`` - GPIO4
-  >    -  ``0x08`` - GPIO2
-  >    -  ``0x10`` - GPIO0
-  >    -  ``0x20`` - MTDI (GPIO12)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Доповнення проходу, і найцінніше за всі вісім. Книга друкувала `boot:0x13` у кожному прикладі логу й пояснювала лише текст у дужках, ніби число службове. Насправді це прямий вимір: які рівні чип зафіксував на strapping-пінах у момент скидання.
-Практичний наслідок великий. Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої, і радить її знімати — методом здогадки. Тепер це читається з логу: виставлений біт `0x20` означає `GPIO12` високий, тобто флеш на 1.8 В і мовчазна плата. Перевірка коштує нуль і не потребує приладів.
-Арифметика сходиться на обох типових значеннях: `0x13` = 0x01+0x02+0x10 (GPIO5, GPIO15, GPIO0 високі) — норма; `0x3` = 0x01+0x02, тобто те саме без `GPIO0` — download mode.
-Додано розгорнуто в додаток D і стисло на картку К6.
-- **Прохід:** pass-08-strapping
+  > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+  > Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+- **Нотатка:** GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO функціональністю.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -1503,7 +1593,7 @@
 
 ---
 
-<!-- fc id:T-D-077 sha:fcc6bd37 src:dodatky/d-panik.md:80 klas:F -->
+<!-- fc id:T-D-077 sha:fcc6bd37 src:dodatky/d-panik.md:80 klas:B -->
 ### T-D-077 · proza · рядок 80
 
 **Книга каже, дослівно:**
@@ -1512,7 +1602,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Професійний вимірювальний прилад для аналізу аналогових сигналів
+- **Дослівно з джерела:**
+  > Осцилограф показує:
+  > - Форму сигналу (синусоїда, прямокутник, вузька імпульс)
+  > - Амплітуду і період
+  > - Часові затримки і синхронізацію
+  > 
+  > Професійні осцилографи: 1000+ грн (за дешеві), до десятків тисяч грн
+  > (за дорогих з великою смугою пропускання).
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Осцилограф необхідний для аналізу швидких або аналогових сигналів. Логічний аналізатор не замінює його для цих задач.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2044,7 +2146,7 @@
 
 ---
 
-<!-- fc id:T-D-102 sha:8e5c7618 src:dodatky/d-panik.md:130 klas:F -->
+<!-- fc id:T-D-102 sha:8e5c7618 src:dodatky/d-panik.md:130 klas:B -->
 ### T-D-102 · proza · рядок 130
 
 **Книга каже, дослівно:**
@@ -2053,7 +2155,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Дослівно з джерела:**
+  > Якщо швидкість в аналізаторі або приймачу неправильна:
+  > - Замість читаних символів видно "сміття" — неправильні символи
+  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
+  > - Це означає: протокол дотримується, але швидкість неправильна
+  > 
+  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
+  > читаним.
+- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
+- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2108,29 +2222,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > typedef enum {
-  >     NO_MEAN                =  0,
-  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
-  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
-  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
-  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
-  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
-  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
-  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
-  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
-  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
-  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
-  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
-  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
-  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
-  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
-  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
-  > } RESET_REASON;
+  > rst:0x1 (POWERON_RESET),boot:0x3
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
-- **Прохід:** pass-01-tverde-yadro
+- **Нотатка:** Приклад лога з boot.rst показує 0x1 = POWERON_RESET.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
@@ -2144,29 +2241,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > typedef enum {
-  >     NO_MEAN                =  0,
-  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
-  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
-  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
-  >     DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
-  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
-  >     TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
-  >     TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
-  >     RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
-  >     INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
-  >     TGWDT_CPU_RESET        = 11,    /**<11, Time Group reset CPU*/
-  >     SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
-  >     RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
-  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
-  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
-  >     RTCWDT_RTC_RESET       = 16     /**<16, RTC Watch dog reset digital core and rtc module*/
-  > } RESET_REASON;
+  > rst:0x1 (POWERON_RESET),boot:0x3
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Покриває всю таблицю додатка D і всі згадки rst: у розділах 16, 20, 26, 29 та картці К6. Шістнадцять рядків книги проти шістнадцяти рядків enum — розбіжностей немає. Зокрема 0xf = 15 = RTCWDT_BROWN_OUT_RESET, «Reset when the vdd voltage is not stable», що дослівно підтверджує головну тезу книги про rst:0xf.
-- **Прохід:** pass-01-tverde-yadro
+- **Нотатка:** Приклад лога з boot.rst показує 0x1 = POWERON_RESET.
+- **Прохід:** m2-62-bootlog-k06
 
 ---
 
@@ -2183,7 +2263,7 @@
 
 ---
 
-<!-- fc id:T-D-107 sha:0ebdcddf src:dodatky/d-panik.md:158 klas:E -->
+<!-- fc id:T-D-107 sha:0ebdcddf src:dodatky/d-panik.md:158 klas:B -->
 ### T-D-107 · proza · рядок 158
 
 **Книга каже, дослівно:**
@@ -2192,7 +2272,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -2209,7 +2302,7 @@
 
 ---
 
-<!-- fc id:T-D-109 sha:0590c64d src:dodatky/d-panik.md:163 klas:F -->
+<!-- fc id:T-D-109 sha:0590c64d src:dodatky/d-panik.md:163 klas:B -->
 ### T-D-109 · proza · рядок 163
 
 **Книга каже, дослівно:**
@@ -2218,7 +2311,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Дослівно з джерела:**
+  > I²C сканер — програма що:
+  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
+  > 2. Для кожної адреси відправляє START + адреса + READ
+  > 3. Друкує адреси, від яких отримав ACK
+  > 
+  > Приклад виводу:
+  > ```
+  > Found device at: 0x68 (105)
+  > Found device at: 0x3C (60)
+  > ```
+  > 
+  > Це швидкий спосіб виявити всі пристрої на I²C шині.
+- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
+- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2693,7 +2803,7 @@
 
 ---
 
-<!-- fc id:T-D-130 sha:898ac6ac src:dodatky/d-panik.md:182 klas:F -->
+<!-- fc id:T-D-130 sha:898ac6ac src:dodatky/d-panik.md:182 klas:B -->
 ### T-D-130 · proza · рядок 182
 
 **Книга каже, дослівно:**
@@ -2702,7 +2812,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > flash capacity and partition allocation
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, 2026-08-26
+- **Нотатка:** Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює розподіл флешу залежно від його розміру.
+- **Прохід:** m2-83-esptool
 
 ---
 
@@ -3400,7 +3516,7 @@
 
 ---
 
-<!-- fc id:T-D-151 sha:74974165 src:dodatky/d-panik.md:206 klas:F -->
+<!-- fc id:T-D-151 sha:74974165 src:dodatky/d-panik.md:206 klas:C -->
 ### T-D-151 · tablycya · рядок 206
 
 **Книга каже, дослівно:**
@@ -3409,7 +3525,10 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** shukaty
+- **Нотатка:** A1 — стандартний регістр архітектури Xtensa для Stack Pointer (SP). Міститься у дампі регістрів паніки, але явна назва "Stack Pointer" для A1 у документації ESP-IDF не знайдена. Встановлено, що дамп показує A1, а backtrace показує SP, але прямої цитати про еквівалентність немає.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -3440,7 +3559,7 @@
 
 ---
 
-<!-- fc id:T-D-153 sha:6ef4b75c src:dodatky/d-panik.md:210 klas:F -->
+<!-- fc id:T-D-153 sha:6ef4b75c src:dodatky/d-panik.md:210 klas:A -->
 ### T-D-153 · proza · рядок 210
 
 **Книга каже, дослівно:**
@@ -3449,7 +3568,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
+- **Дослівно з джерела:**
+  > These CPU exceptions happen when an application attempts to read from or write to an invalid memory location. The address which has been written/read is found in the ``EXCVADDR`` register in the register dump.
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '353,365p'
+- **Нотатка:** EXCVADDR — регістр, що міститься у дампі при винятку та вказує адресу невалідного звернення. Книга називає його "найшвидшою підказкою" тому, що це найпряміша вказівка на проблему.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -3555,25 +3680,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — ESP-IDF wdts.rst, секція «Common Error Logs When WDT Triggers»
 - **Дослівно з джерела:**
-  > const char *caption = "Task watchdog got triggered. "
-  >                       "The following tasks/users did not reset the watchdog in time:";
-  > …
-  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
-  > …
-  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
-  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
-Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
-Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
-Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
-- **Прохід:** pass-10-povidomlennya
+  > Task watchdog got triggered. The following tasks/users did not reset the watchdog in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
+- **Спосіб і дата:** curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — sed -n '203,203p'
+- **Нотатка:** Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає, що якась інша задача блокує процесор завдовго.
+- **Прохід:** m2-61-panik-b
 
 ---
 
-<!-- fc id:T-D-159 sha:a1afa6b3 src:dodatky/d-panik.md:226 klas:F -->
+<!-- fc id:T-D-159 sha:a1afa6b3 src:dodatky/d-panik.md:226 klas:A -->
 ### T-D-159 · kod-ryadok · рядок 226
 
 **Книга каже, дослівно:**
@@ -3582,7 +3698,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — ESP-IDF wdts.rst, секція «Common Error Logs When WDT Triggers»
+- **Дослівно з джерела:**
+  > Task watchdog got triggered. The following tasks/users did not reset the watchdog in time: - IDLE0 (CPU 0), Tasks currently running: CPU 0: main, CPU 1: IDLE1
+- **Спосіб і дата:** curl -sL -o /tmp/wdt.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst — sed -n '203,203p'
+- **Нотатка:** Одна з типових помилок Task Watchdog Timer (TWDT) — timeout на IDLE задачі. Це означає, що якась інша задача блокує процесор завдовго.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -3624,21 +3746,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
 - **Дослівно з джерела:**
-  > const char *caption = "Task watchdog got triggered. "
-  >                       "The following tasks/users did not reset the watchdog in time:";
-  > …
-  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
-  > …
-  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
-  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
-Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
-Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
-Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
-- **Прохід:** pass-10-povidomlennya
+  > The purpose of a watchdog timer is to monitor the system's operation and automatically
+  > recover from software or hardware faults by restarting the system if it becomes unresponsive.
+- **Спосіб і дата:** curl esp-idf wdts.rst, grep -i "watchdog\|restart", 2026-08-26
+- **Нотатка:** Текст розділу 32 обговорює автоматичне перезавантаження при зависанні. Джерело підтверджує, що watchdog перезавантажує систему.
+- **Прохід:** m2-84-freertos
 
 ---
 
@@ -3885,7 +3999,7 @@
 
 ---
 
-<!-- fc id:T-D-172 sha:69aa2c68 src:dodatky/d-panik.md:255 klas:F -->
+<!-- fc id:T-D-172 sha:69aa2c68 src:dodatky/d-panik.md:255 klas:A -->
 ### T-D-172 · tablycya · рядок 255
 
 **Книга каже, дослівно:**
@@ -3894,7 +4008,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, приклад помилки затвердження (assertion)
+- **Дослівно з джерела:**
+  > CORRUPT HEAP: Bad tail at 0x3ffe270a. Expected 0xbaad5678 got 0xbaac5678
+  > assertion "head != NULL" failed: file "/Users/user/esp/esp-idf/components/heap/multi_heap_poisoning.c", line 201, function: multi_heap_free
+  > abort() was called at PC 0x400dca43 on core 0
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '455,460p'
+- **Нотатка:** Assertion failure виводить повідомлення вигляду "assertion "умова" failed" з файлом та номером рядка. Це явне порушення виконуваного твердження, що за змістом означає порушення внутрішнього інваріанту або передумови.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -4002,7 +4124,7 @@
 
 ---
 
-<!-- fc id:T-D-177 sha:68e01a8c src:dodatky/d-panik.md:263 klas:F -->
+<!-- fc id:T-D-177 sha:68e01a8c src:dodatky/d-panik.md:263 klas:C -->
 ### T-D-177 · proza · рядок 263
 
 **Книга каже, дослівно:**
@@ -4011,7 +4133,10 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** shukaty
+- **Нотатка:** Це рекомендація про діагностику буферних переповнень і типових помилок циклів. У документації ESP-IDF явно не знайдена, це загальна практика відлагодження.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -4078,7 +4203,7 @@
 
 ---
 
-<!-- fc id:T-D-181 sha:a135e9c8 src:dodatky/d-panik.md:270 klas:F -->
+<!-- fc id:T-D-181 sha:a135e9c8 src:dodatky/d-panik.md:270 klas:C -->
 ### T-D-181 · proza · рядок 270
 
 **Книга каже, дослівно:**
@@ -4087,7 +4212,10 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** shukaty
+- **Нотатка:** Рекомендація про порівняння поточного вказівника з результатом malloc для діагностики утечок пам'яті. У документації ESP-IDF явно не знайдена.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -4120,7 +4248,7 @@
 
 ---
 
-<!-- fc id:T-D-183 sha:cbdc8d7f src:dodatky/d-panik.md:279 klas:F -->
+<!-- fc id:T-D-183 sha:cbdc8d7f src:dodatky/d-panik.md:279 klas:A -->
 ### T-D-183 · proza · рядок 279
 
 **Книга каже, дослівно:**
@@ -4129,11 +4257,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «RTC Watchdog Timeout»
+- **Дослівно з джерела:**
+  > The RTC watchdog is used in the startup code to keep track of execution time and it also helps to prevent a lock-up caused by an unstable power source. It is enabled by default (see :menuitem:`CONFIG_BOOTLOADER_WDT_ENABLE`). If the execution time is exceeded, the RTC watchdog will restart the system. In this case, the first stage (ROM) bootloader will print a message with the ``RTC Watchdog Timeout`` reason for the reboot.
+  > 
+  > .. code-block:: none
+  > 
+  >     rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '300,313p'
+- **Нотатка:** RTC Watchdog дає повідомлення виду "rst:0x10" у першому рядку log output від ROM bootloader. Це сигнал, що система перезавантажилась через timeout.
+- **Прохід:** m2-61-panik-b
 
 ---
 
-<!-- fc id:T-D-184 sha:61db3e19 src:dodatky/d-panik.md:279 klas:F -->
+<!-- fc id:T-D-184 sha:61db3e19 src:dodatky/d-panik.md:279 klas:A -->
 ### T-D-184 · proza · рядок 279
 
 **Книга каже, дослівно:**
@@ -4142,11 +4280,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «LoadProhibited, StoreProhibited»
+- **Дослівно з джерела:**
+  > If this address is zero, it usually means that the application has attempted to dereference a NULL pointer. If this address is close to zero, it usually means that the application has attempted to access a member of a structure, but the pointer to the structure is NULL. If this address is something else (garbage value, not in ``0x3fxxxxxx`` - ``0x6xxxxxxx`` range), it likely means that the pointer used to access the data is either not initialized or has been corrupted.
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '353,365p'
+- **Нотатка:** EXCVADDR розповідає про адресу, що викликала винятки. Її інтерпретація часто дає цілковиту відповідь про причину: нульовий вказівник, пошкоджений вказівник або невініціалізований.
+- **Прохід:** m2-61-panik-b
 
 ---
 
-<!-- fc id:T-D-185 sha:8d7da41f src:dodatky/d-panik.md:279 klas:F -->
+<!-- fc id:T-D-185 sha:8d7da41f src:dodatky/d-panik.md:279 klas:A -->
 ### T-D-185 · proza · рядок 279
 
 **Книга каже, дослівно:**
@@ -4155,7 +4299,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
+- **Дослівно з джерела:**
+  > Moreover, :doc:`IDF Monitor <tools/idf-monitor>` is also capable of generating and printing a backtrace thanks to the stack dump provided by the board in the panic handler.
+  > The output looks like this:
+  > 
+  > .. code-block:: none
+  > 
+  >     Backtrace:
+  > 
+  >     0x42006686 in bar (ptr=ptr@entry=0x0) at ../main/hello_world_main.c:18
+  >     18      *ptr = 0x42424242;
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '222,230p'
+- **Нотатка:** IDF Monitor використовує .elf файл того ж збирання для розшифровки адрес з backtrace у назви функцій, файлів та номери рядків.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -4172,7 +4330,7 @@
 
 ---
 
-<!-- fc id:T-D-187 sha:6a7c80ec src:dodatky/d-panik.md:279 klas:F -->
+<!-- fc id:T-D-187 sha:6a7c80ec src:dodatky/d-panik.md:279 klas:A -->
 ### T-D-187 · proza · рядок 279
 
 **Книга каже, дослівно:**
@@ -4181,11 +4339,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «Panic Handler»
+- **Дослівно з джерела:**
+  > If the :doc:`Core Dump <core_dump>` feature is enabled, then the system state (task stacks and registers) will be dumped to either Flash or UART, for later analysis.
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '79,79p'
+- **Нотатка:** Core Dump — функція ESP-IDF для зберігання стану системи при паніці для подальшого аналізу. Це рекомендується, коли проблема не відтворюється легко, а також для логування переходів станів.
+- **Прохід:** m2-61-panik-b
 
 ---
 
-<!-- fc id:T-D-188 sha:4304fde6 src:dodatky/d-panik.md:287 klas:F -->
+<!-- fc id:T-D-188 sha:4304fde6 src:dodatky/d-panik.md:287 klas:B -->
 ### T-D-188 · proza · рядок 287
 
 **Книга каже, дослівно:**
@@ -4194,11 +4358,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF fatal-errors.rst, секція «Register Dump and Backtrace»
+- **Дослівно з джерела:**
+  > If :doc:`IDF Monitor <tools/idf-monitor>` is used, Program Counter values will be converted to code locations (function name, file name, and line number), and the output will be annotated with additional lines:
+- **Спосіб і дата:** curl -sL -o /tmp/fatal.rst https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — sed -n '177,177p'
+- **Нотатка:** З цитати випливає, що без IDF Monitor (а IDF Monitor потребує .elf) backtrace залишається у виді сирих адрес, тобто нерозшифрованим. Це клас B — логічний висновок, а не пряма цитата.
+- **Прохід:** m2-61-panik-b
 
 ---
 
-<!-- fc id:T-D-189 sha:91a1f9a6 src:dodatky/d-panik.md:287 klas:E -->
+<!-- fc id:T-D-189 sha:91a1f9a6 src:dodatky/d-panik.md:287 klas:B -->
 ### T-D-189 · proza · рядок 287
 
 **Книга каже, дослівно:**
@@ -4207,11 +4377,28 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Дослівно з джерела:**
+  > I²C сканер — програма що:
+  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
+  > 2. Для кожної адреси відправляє START + адреса + READ
+  > 3. Друкує адреси, від яких отримав ACK
+  > 
+  > Приклад виводу:
+  > ```
+  > Found device at: 0x68 (105)
+  > Found device at: 0x3C (60)
+  > ```
+  > 
+  > Це швидкий спосіб виявити всі пристрої на I²C шині.
+- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
+- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
-<!-- fc id:T-D-190 sha:00df861d src:dodatky/d-panik.md:291 klas:F -->
+<!-- fc id:T-D-190 sha:00df861d src:dodatky/d-panik.md:291 klas:C -->
 ### T-D-190 · proza · рядок 291
 
 **Книга каже, дослівно:**
@@ -4220,7 +4407,10 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** shukaty
+- **Нотатка:** Рекомендація про зберігання .elf файлу разом з прошивкою для подальшого аналізу. У документації ESP-IDF явно не знайдена як вимога до процесу збирання чи розгортання.
+- **Прохід:** m2-61-panik-b
 
 ---
 
@@ -4250,7 +4440,7 @@
 
 ---
 
-<!-- fc id:T-D-193 sha:71f2dcf5 src:dodatky/d-panik.md:299 klas:F -->
+<!-- fc id:T-D-193 sha:71f2dcf5 src:dodatky/d-panik.md:299 klas:C -->
 ### T-D-193 · proza · рядок 299
 
 **Книга каже, дослівно:**
@@ -4259,7 +4449,10 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** shukaty
+- **Нотатка:** Рекомендація про використання hello_world як мінімального, заведомо справного образу для діагностики проблем прошивки. У документації ESP-IDF не знайдена як стратегія діагностики, хоча hello_world є офіційним прикладом.
+- **Прохід:** m2-61-panik-b
 
 ---
 

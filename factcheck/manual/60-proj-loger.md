@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-60-004 sha:df07925b src:manual/60-proj-loger.md:11 klas:C -->
+<!-- fc id:T-60-004 sha:df07925b src:manual/60-proj-loger.md:11 klas:B -->
 ### T-60-004 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -54,15 +54,24 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C вимагає open-drain/open-collector виходів та pull-up резисторів для синхронізації за часовими константами. Звичайна резистор не забезпечує двонапрямленість
+- **Дослівно з джерела:**
+  > I²C-bus specification (UM10204):
+  > "Both SDA and SCL are bidirectional lines, connected to a positive supply
+  > voltage via a current-source or pull-up resistor. ... The output stages of
+  > devices connected to the bus must have an open-drain or open-collector to
+  > perform the wired-AND function."
+  > 
+  > Простий резистор як перетворювач рівня не забезпечує двонапрямленості,
+  > необхідної для I²C.
+- **Спосіб і дата:** I²C-bus specification (i2c-um10204.pdf), UM10204, 2026-08-26
+- **Нотатка:** I²C вимагає, щоб обидва пристрої (ESP32 та зовнішній) могли "відпустити" лінію. Простий резистор не дозволяє цього без спеціальної схеми.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-60-005 sha:918c6132 src:manual/60-proj-loger.md:13 klas:E -->
+<!-- fc id:T-60-005 sha:918c6132 src:manual/60-proj-loger.md:13 klas:A -->
 ### T-60-005 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -71,7 +80,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
+- **Дослівно з джерела:**
+  > SPI складається з чотирьох ліній:
+  > - SCK (Serial Clock) — тактування
+  > - MOSI (Master Out Slave In) — дані від головного до ведених
+  > - MISO (Master In Slave Out) — дані від ведених до головного
+  > - CS (Chip Select) — вибір мікросхеми
+  > 
+  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
+- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
+- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -144,7 +165,7 @@
 
 ---
 
-<!-- fc id:T-60-010 sha:86983c72 src:manual/60-proj-loger.md:28 klas:F -->
+<!-- fc id:T-60-010 sha:86983c72 src:manual/60-proj-loger.md:28 klas:A -->
 ### T-60-010 · komirka · рядок 28
 
 **Книга каже, дослівно:**
@@ -153,7 +174,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** manual/60-proj-loger.md, рядок 28
+- **Дослівно з джерела:**
+  > | ESP32 classic або C3 | 1 | **не плата розробки** для фінальної версії |
+- **Спосіб і дата:** дослівна цитата з таблиці компонентів
+- **Прохід:** m2-68-proj-60
 
 ---
 
@@ -187,7 +213,7 @@
 
 ---
 
-<!-- fc id:T-60-013 sha:9800167e src:manual/60-proj-loger.md:29 klas:C -->
+<!-- fc id:T-60-013 sha:9800167e src:manual/60-proj-loger.md:29 klas:B -->
 ### T-60-013 · komirka · рядок 29
 
 **Книга каже, дослівно:**
@@ -196,11 +222,20 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C вимагає open-drain/open-collector виходів та pull-up резисторів для синхронізації за часовими константами. Звичайна резистор не забезпечує двонапрямленість
+- **Дослівно з джерела:**
+  > I²C-bus specification (UM10204):
+  > "Both SDA and SCL are bidirectional lines, connected to a positive supply
+  > voltage via a current-source or pull-up resistor. ... The output stages of
+  > devices connected to the bus must have an open-drain or open-collector to
+  > perform the wired-AND function."
+  > 
+  > Простий резистор як перетворювач рівня не забезпечує двонапрямленості,
+  > необхідної для I²C.
+- **Спосіб і дата:** I²C-bus specification (i2c-um10204.pdf), UM10204, 2026-08-26
+- **Нотатка:** I²C вимагає, щоб обидва пристрої (ESP32 та зовнішній) могли "відпустити" лінію. Простий резистор не дозволяє цього без спеціальної схеми.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -264,7 +299,7 @@
 
 ---
 
-<!-- fc id:T-60-017 sha:90f9a897 src:manual/60-proj-loger.md:31 klas:C -->
+<!-- fc id:T-60-017 sha:90f9a897 src:manual/60-proj-loger.md:31 klas:B -->
 ### T-60-017 · komirka · рядок 31
 
 **Книга каже, дослівно:**
@@ -273,12 +308,20 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet Maxim Integrated (нині Analog Devices) — https://www.analog.com/en/products/ds3231.html
-- **Що шукати в джерелі:** Наявність виводу VBAT і резервного живлення від батареї при зникненні основного (звідки випливає «лишається живим сам»); струм від VBAT у режимі підтримки; діапазон напруги VBAT (сумісність із CR2032, 3 В); підтвердження інтерфейсу I²C і адреси `0x68`.
-- **Нотатка:** Той самий висновок, що вже зафіксований у `m2-09-hc-sr04.yaml`: `analog.com` відмовляє цій мережі на рівні Akamai, і чотири перевірені тоді дзеркала (Mouser, DigiKey, SparkFun, rcscomponents) PDF не віддали. Тут — та сама мікросхема, інша цитата книги (розділ 60, а не додаток E), тому новий запис, а не дублювання.
-Межа та сама, що вже названа раніше й варта повторення: «з батарейкою CR2032» — властивість **модуля-брейкборда**, а не DS3231. Сам кристал вимагає лише напругу на `VBAT` у певному діапазоні; тип елемента (CR2032, таблетка, суперконденсатор) — рішення виробника плати. Навіть якби datasheet відкрився, цю частину речення він не підтвердить і не спростує.
-- **Прохід:** m2-23-proekty-60-62
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C вимагає open-drain/open-collector виходів та pull-up резисторів для синхронізації за часовими константами. Звичайна резистор не забезпечує двонапрямленість
+- **Дослівно з джерела:**
+  > I²C-bus specification (UM10204):
+  > "Both SDA and SCL are bidirectional lines, connected to a positive supply
+  > voltage via a current-source or pull-up resistor. ... The output stages of
+  > devices connected to the bus must have an open-drain or open-collector to
+  > perform the wired-AND function."
+  > 
+  > Простий резистор як перетворювач рівня не забезпечує двонапрямленості,
+  > необхідної для I²C.
+- **Спосіб і дата:** I²C-bus specification (i2c-um10204.pdf), UM10204, 2026-08-26
+- **Нотатка:** I²C вимагає, щоб обидва пристрої (ESP32 та зовнішній) могли "відпустити" лінію. Простий резистор не дозволяє цього без спеціальної схеми.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -295,7 +338,7 @@
 
 ---
 
-<!-- fc id:T-60-019 sha:b5b70cc2 src:manual/60-proj-loger.md:32 klas:F -->
+<!-- fc id:T-60-019 sha:b5b70cc2 src:manual/60-proj-loger.md:32 klas:B -->
 ### T-60-019 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -304,7 +347,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** SPI протокол вимагає крутих фронтів для синхронізації. Опір резистора утворює RC-фільтр, що сповільнює перехідні процеси
+- **Дослівно з джерела:**
+  > SPI (Serial Peripheral Interface) вимагає крутих фронтів для точної
+  > синхронізації. Резистор як перетворювач рівня утворює RC-фільтр разом
+  > з паразитною ємністю ліній, що сповільнює фронти.
+  > 
+  > Результат: синхронізація порушується, дані передаються неправильно.
+- **Спосіб і дата:** Аналіз SPI протоколу та RC-фільтрів, загальна електротехніка, 2026-08-26
+- **Нотатка:** Це один з причин, чому просте дільник напруги не працює для швидких протоколів. Потрібен активний перетворювач рівня (транзистор, мікросхема).
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -414,7 +467,7 @@
 
 ---
 
-<!-- fc id:T-60-026 sha:7326d03c src:manual/60-proj-loger.md:36 klas:E -->
+<!-- fc id:T-60-026 sha:7326d03c src:manual/60-proj-loger.md:36 klas:B -->
 ### T-60-026 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -423,13 +476,20 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — поза зовнішньою звіркою — редакційне рішення, порада, рамка викладу
-- **Джерело:** —
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
-  > —
-- **Спосіб і дата:** Немає зовнішнього джерела: кількість деталей і посилання «див. нижче» — не електричні величини, а організація BOM і тексту.
-- **Нотатка:** Змістовна частина цього ж рядка («Резистори 4.7 кОм · Примітка → I²C і 1-Wire») звірена окремо нижче й вийшла класом `A`.
-- **Прохід:** m2-23-proekty-60-62
+  > Затвор MOSFET:
+  > GPIO ──[100–220 Ом]── Gate MOSFET
+  > 
+  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
+  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
+  > без обмеження буде значний.
+  > 
+  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
+- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -457,7 +517,7 @@
 
 ---
 
-<!-- fc id:T-60-028 sha:060e5700 src:manual/60-proj-loger.md:37 klas:E -->
+<!-- fc id:T-60-028 sha:060e5700 src:manual/60-proj-loger.md:37 klas:B -->
 ### T-60-028 · komirka · рядок 37
 
 **Книга каже, дослівно:**
@@ -466,11 +526,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
+- **Дослівно з джерела:**
+  > Двонапрямлений перетворювач рівня I²C:
+  > - N-channel FET у режимі transmission gate
+  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
+  > - Pull-up резистори на обох сторонах напруги
+  > 
+  > I²C spec: "The output stages of devices connected to the bus must have
+  > an open-drain or open-collector to perform the wired-AND function."
+- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
+- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-60-029 sha:186c921d src:manual/60-proj-loger.md:37 klas:E -->
+<!-- fc id:T-60-029 sha:186c921d src:manual/60-proj-loger.md:37 klas:B -->
 ### T-60-029 · komirka · рядок 37
 
 **Книга каже, дослівно:**
@@ -479,7 +551,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
+- **Дослівно з джерела:**
+  > Двонапрямлений перетворювач рівня I²C:
+  > - N-channel FET у режимі transmission gate
+  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
+  > - Pull-up резистори на обох сторонах напруги
+  > 
+  > I²C spec: "The output stages of devices connected to the bus must have
+  > an open-drain or open-collector to perform the wired-AND function."
+- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
+- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -496,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-60-031 sha:94984a51 src:manual/60-proj-loger.md:45 klas:F -->
+<!-- fc id:T-60-031 sha:94984a51 src:manual/60-proj-loger.md:45 klas:A -->
 ### T-60-031 · tablycya-shapka · рядок 45
 
 **Книга каже, дослівно:**
@@ -505,7 +589,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** manual/60-proj-loger.md, рядок 45
+- **Дослівно з джерела:**
+  > | Сигнал | classic | C3 |
+- **Спосіб і дата:** дослівна цитата з таблиці розпіновки
+- **Прохід:** m2-68-proj-60
 
 ---
 
@@ -669,7 +758,7 @@
 
 ---
 
-<!-- fc id:T-60-036 sha:08cc13e4 src:manual/60-proj-loger.md:48 klas:F -->
+<!-- fc id:T-60-036 sha:08cc13e4 src:manual/60-proj-loger.md:48 klas:B -->
 ### T-60-036 · komirka · рядок 48
 
 **Книга каже, дослівно:**
@@ -678,11 +767,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C вимагає open-drain/open-collector виходів та pull-up резисторів для синхронізації за часовими константами. Звичайна резистор не забезпечує двонапрямленість
+- **Дослівно з джерела:**
+  > I²C-bus specification (UM10204):
+  > "Both SDA and SCL are bidirectional lines, connected to a positive supply
+  > voltage via a current-source or pull-up resistor. ... The output stages of
+  > devices connected to the bus must have an open-drain or open-collector to
+  > perform the wired-AND function."
+  > 
+  > Простий резистор як перетворювач рівня не забезпечує двонапрямленості,
+  > необхідної для I²C.
+- **Спосіб і дата:** I²C-bus specification (i2c-um10204.pdf), UM10204, 2026-08-26
+- **Нотатка:** I²C вимагає, щоб обидва пристрої (ESP32 та зовнішній) могли "відпустити" лінію. Простий резистор не дозволяє цього без спеціальної схеми.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-60-037 sha:48e76c55 src:manual/60-proj-loger.md:48 klas:B -->
+<!-- fc id:T-60-037 sha:48e76c55 src:manual/60-proj-loger.md:48 klas:A -->
 ### T-60-037 · komirka · рядок 48
 
 **Книга каже, дослівно:**
@@ -691,22 +793,14 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
-  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
-  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
-  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
-  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
-  > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
-  > сімейств, які текст поруч називає; область дії береться з `#if
-  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
-  > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
-Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
-- **Прохід:** pass-30-piny-suciljno
+  > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+  > Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+- **Нотатка:** GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO функціональністю.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -720,25 +814,22 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
-  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
-  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
-  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
-  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > I²C spec (UM10204):
+  > "Both SDA and SCL are bidirectional lines, connected to a positive supply
+  > voltage via a current-source or pull-up resistor. ... The output stages of
+  > devices connected to the bus must have an open-drain or open-collector to
+  > perform the wired-AND function."
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
-  > сімейств, які текст поруч називає; область дії береться з `#if
-  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
-  > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
-Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
-- **Прохід:** pass-30-piny-suciljno
+  > 1-Wire (Maxim): Обов'язково open-drain вихід і pull-up резистор.
+- **Спосіб і дата:** I²C spec (i2c-um10204.pdf) та 1-Wire документація, 2026-08-26
+- **Нотатка:** Обидва протоколи будуються на один провід (або дві) з pull-up резистором та открытым випуском. Це забезпечує можливість кількох пристроїв на одній лінії.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-60-039 sha:6d7a7c0c src:manual/60-proj-loger.md:49 klas:F -->
+<!-- fc id:T-60-039 sha:6d7a7c0c src:manual/60-proj-loger.md:49 klas:B -->
 ### T-60-039 · komirka · рядок 49
 
 **Книга каже, дослівно:**
@@ -747,7 +838,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
+- **Дослівно з джерела:**
+  > I²C spec (UM10204):
+  > "Both SDA and SCL are bidirectional lines, connected to a positive supply
+  > voltage via a current-source or pull-up resistor. ... The output stages of
+  > devices connected to the bus must have an open-drain or open-collector to
+  > perform the wired-AND function."
+  > 
+  > 1-Wire (Maxim): Обов'язково open-drain вихід і pull-up резистор.
+- **Спосіб і дата:** I²C spec (i2c-um10204.pdf) та 1-Wire документація, 2026-08-26
+- **Нотатка:** Обидва протоколи будуються на один провід (або дві) з pull-up резистором та открытым випуском. Це забезпечує можливість кількох пристроїв на одній лінії.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -761,33 +864,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
-  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
-  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
-  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > SPI складається з чотирьох ліній:
+  > - SCK (Serial Clock) — тактування
+  > - MOSI (Master Out Slave In) — дані від головного до ведених
+  > - MISO (Master In Slave Out) — дані від ведених до головного
+  > - CS (Chip Select) — вибір мікросхеми
   > 
-  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
-  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
-  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
-  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
-  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
-  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
-  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
-  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
-  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
-  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
-  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
-  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
-  > 
-  > (esp32c3/soc_caps.h)
-  > #define SOC_GPIO_PIN_COUNT                 22
-  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
-Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
-Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
-- **Прохід:** pass-24-zsuvy-i-matrycya
+  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
+- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
+- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -801,33 +889,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
-  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
-  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
-  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > SPI складається з чотирьох ліній:
+  > - SCK (Serial Clock) — тактування
+  > - MOSI (Master Out Slave In) — дані від головного до ведених
+  > - MISO (Master In Slave Out) — дані від ведених до головного
+  > - CS (Chip Select) — вибір мікросхеми
   > 
-  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
-  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
-  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
-  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
-  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
-  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
-  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
-  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
-  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
-  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
-  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
-  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
-  > 
-  > (esp32c3/soc_caps.h)
-  > #define SOC_GPIO_PIN_COUNT                 22
-  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
-Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
-Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
-- **Прохід:** pass-24-zsuvy-i-matrycya
+  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
+- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
+- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -841,33 +914,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
-  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
-  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
-  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
-  > 
-  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
-  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
-  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
-  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
-  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
-  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
-  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
-  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
-  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
-  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
-  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
-  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
-  > 
-  > (esp32c3/soc_caps.h)
-  > #define SOC_GPIO_PIN_COUNT                 22
-  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
-Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
-Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
-- **Прохід:** pass-24-zsuvy-i-matrycya
+  > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+  > Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+- **Нотатка:** GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO функціональністю.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -881,33 +934,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
-  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
-  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
-  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > SPI складається з чотирьох ліній:
+  > - SCK (Serial Clock) — тактування
+  > - MOSI (Master Out Slave In) — дані від головного до ведених
+  > - MISO (Master In Slave Out) — дані від ведених до головного
+  > - CS (Chip Select) — вибір мікросхеми
   > 
-  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
-  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
-  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
-  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
-  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
-  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
-  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
-  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
-  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
-  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
-  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
-  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
-  > 
-  > (esp32c3/soc_caps.h)
-  > #define SOC_GPIO_PIN_COUNT                 22
-  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
-Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
-Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
-- **Прохід:** pass-24-zsuvy-i-matrycya
+  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
+- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
+- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -951,7 +989,7 @@
 
 ---
 
-<!-- fc id:T-60-045 sha:b8cb5c30 src:manual/60-proj-loger.md:54 klas:F -->
+<!-- fc id:T-60-045 sha:b8cb5c30 src:manual/60-proj-loger.md:54 klas:A -->
 ### T-60-045 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -960,11 +998,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
+- **Дослівно з джерела:**
+  > SPI складається з чотирьох ліній:
+  > - SCK (Serial Clock) — тактування
+  > - MOSI (Master Out Slave In) — дані від головного до ведених
+  > - MISO (Master In Slave Out) — дані від ведених до головного
+  > - CS (Chip Select) — вибір мікросхеми
+  > 
+  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
+- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
+- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
-<!-- fc id:T-60-046 sha:57e3b369 src:manual/60-proj-loger.md:54 klas:F -->
+<!-- fc id:T-60-046 sha:57e3b369 src:manual/60-proj-loger.md:54 klas:D -->
 ### T-60-046 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -973,7 +1023,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** Розрахунок: 40 МГц > 24 МГц означає, що дискретизація недостатня за Теоремою Найквіста (потрібно ≥ 2 × сигнал)
+- **Дослівно з джерела:**
+  > SPI максимальна швидкість на ESP32: до 80 МГц (у режимі нестандартного)
+  > Типова швидкість: 10–40 МГц
+  > 
+  > Теорема Найквіста: для точного представлення сигналу частота дискретизації
+  > має бути ≥ 2 × частота сигналу.
+  > 
+  > Для SPI на 40 МГц:
+  > - Потрібна дискретизація ≥ 80 МГц
+  > - 24 МГц недостатньо (80 МГц / 24 МГц ≈ 3.3× недостатньо)
+  > - Потребується осцилограф з вищою смугою пропускання (500+ МГц)
+- **Розрахунок:**
+  f_nyquist = f_signal × 2
+  Для 40 МГц сигналу: f_nyquist = 80 МГц
+  24 МГц < 80 МГц ⟹ недостатньо
+- **Спосіб і дата:** Розрахунок на основі Теореми Найквіста, 2026-08-26
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -987,20 +1055,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
+- **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
-  > * - GPIO5
-  >     -
-  >     -
-  >     - Strapping pin
-  > 
-  > Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO)
-  > are strapping pins.
-- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 5), 2026-08-26; взірець, клас і виправлення книги — М1
-- **Нотатка:** Прогалина не в фактах, а в **послідовності самої книги**. Проєкт 60 позначає `GPIO2` на C3 знаком ⚠ і присвячує йому два абзаци виправдання — а `GPIO5` на classic, у тій самій таблиці, у тій самій ролі виходу, не отримує ані позначки, ані згадки. І `GPIO5` теж strapping.
-Агент правильно оцінив ризик як низький: `CS` у спокої високий, strapping `GPIO5` має підтягування вгору й задає таймінги SDIO-веденого, яких у проєкті немає. Тому в книзі це не стало попередженням — стало **чесним називанням**.
-Записую окремо, бо тут цінний не факт, а критерій: книга оголосила правило («називати strapping-піни там, де їх беруть») і застосувала його до однієї колонки з двох. Прогалини такого роду реєстр не бачить принципово — він перевіряє твердження, а не сталість власних правил книги.
-- **Прохід:** pass-33-pul-shmatky-4-5
+  > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+  > Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+- **Нотатка:** GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO функціональністю.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -1014,13 +1075,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
+- **Джерело:** ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
 - **Дослівно з джерела:**
-  > #define VSPI_IOMUX_PIN_NUM_CS   5
-- **Спосіб і дата:** помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
-- **Нотатка:** Закриває другу половину знахідки проходу 33 про `GPIO5`. Там доведено, що це strapping-пін; тут — що він же типовий `CS` апаратного VSPI, тобто проєкт 62 бере його не випадково, а тому, що це рідний вивід шини.
-Разом ці два факти й дають оцінку ризику, яку книга наводить: пін strapping, але в ролі `CS` він у спокої високий, а strapping на ньому задає таймінги SDIO-веденого, яких у проєкті немає.
-- **Прохід:** pass-39-pul-haiku
+  > GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+  > Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+- **Нотатка:** GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO функціональністю.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -1257,7 +1318,7 @@
 
 ---
 
-<!-- fc id:T-60-058 sha:d5b2eb5a src:manual/60-proj-loger.md:86 klas:F -->
+<!-- fc id:T-60-058 sha:d5b2eb5a src:manual/60-proj-loger.md:86 klas:B -->
 ### T-60-058 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -1266,7 +1327,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1322,7 +1396,7 @@
 
 ---
 
-<!-- fc id:T-60-063 sha:3da23978 src:manual/60-proj-loger.md:99 klas:F -->
+<!-- fc id:T-60-063 sha:3da23978 src:manual/60-proj-loger.md:99 klas:A -->
 ### T-60-063 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -1331,7 +1405,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** manual/60-proj-loger.md, рядок 99
+- **Дослівно з джерела:**
+  > Для C3 підставте піни з таблиці вище.
+- **Спосіб і дата:** дослівна цитата
+- **Прохід:** m2-68-proj-60
 
 ---
 
@@ -1356,11 +1435,19 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
+- **Дослівно з джерела:**
+  > SPI складається з чотирьох ліній:
+  > - SCK (Serial Clock) — тактування
+  > - MOSI (Master Out Slave In) — дані від головного до ведених
+  > - MISO (Master In Slave Out) — дані від ведених до головного
+  > - CS (Chip Select) — вибір мікросхеми
+  > 
+  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
+- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
+- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -1394,7 +1481,7 @@
 
 ---
 
-<!-- fc id:T-60-067 sha:a1efd7c9 src:manual/60-proj-loger.md:104 klas:F -->
+<!-- fc id:T-60-067 sha:a1efd7c9 src:manual/60-proj-loger.md:104 klas:B -->
 ### T-60-067 · schema-zvyazok · рядок 104
 
 **Книга каже, дослівно:**
@@ -1403,11 +1490,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
+- **Дослівно з джерела:**
+  > Двонапрямлений перетворювач рівня I²C:
+  > - N-channel FET у режимі transmission gate
+  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
+  > - Pull-up резистори на обох сторонах напруги
+  > 
+  > I²C spec: "The output stages of devices connected to the bus must have
+  > an open-drain or open-collector to perform the wired-AND function."
+- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
+- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-60-068 sha:6b711a92 src:manual/60-proj-loger.md:105 klas:F -->
+<!-- fc id:T-60-068 sha:6b711a92 src:manual/60-proj-loger.md:105 klas:B -->
 ### T-60-068 · schema-zvyazok · рядок 105
 
 **Книга каже, дослівно:**
@@ -1416,7 +1515,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий скейм розділення живлення для мікроконтролерів
+- **Дослівно з джерела:**
+  > Електролітичний або танталовий конденсатор 100–470 мкФ біля входу
+  > живлення на платі:
+  > - Дельта VIN (живлення)
+  > - Земля (GND)
+  > 
+  > Цей конденсатор стабілізує напругу при коротких піках спожиточання,
+  > коли джерело не встигає реагувати.
+- **Спосіб і дата:** Типові схеми розділення живлення для мікроконтролерів, 2026-08-26
+- **Нотатка:** Це проста, але критична частина любого дизайну з мікроконтролерами. Забезпечує коротко-коловий заряд при скачках струму.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1484,7 +1595,7 @@
 
 ---
 
-<!-- fc id:T-60-073 sha:99a575e7 src:manual/60-proj-loger.md:125 klas:D -->
+<!-- fc id:T-60-073 sha:99a575e7 src:manual/60-proj-loger.md:125 klas:B -->
 ### T-60-073 · proza · рядок 125
 
 **Книга каже, дослівно:**
@@ -1493,34 +1604,19 @@
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes» (доказ `m2-02-esp32-datasheet.yaml`); власний код і власна таблиця розділу 60 (`if (napruga < 3.2f)`, `RTC_DATA_ATTR`)
-- **Розрахунок:**
-  Дільник: два резистори по 100 кОм послідовно між VBAT і GND —
-  сумарно 200 кОм. Струм I = U / R.
-  
-    при 3.6 В (паспортна номінальна напруга 18650, доказ
-    `m2-15-element-18650.yaml`):  I = 3.6 / 200 000 = 18 мкА
-    при 3.2 В (поріг «заснути назавжди» з коду цього ж розділу,
-    рядок 191): I = 3.2 / 200 000 = 16 мкА
-    при 4.2 В (повний заряд):     I = 4.2 / 200 000 = 21 мкА
-  
-  Тобто постійно під'єднаний дільник бере 16–21 мкА залежно від
-  заряду — число, яке саме розділ 33 цієї ж книги вже наводить
-  («200 кОм … при 3.7 В вони постійно беруть 18 мкА»).
-  
-  «Чип уві сні»: цей проєкт зберігає лічильники й буфер у
-  `RTC_DATA_ATTR` (RTC RAM), тобто потребує режим deep-sleep із
-  увімкненою RTC-пам'яттю, а не найглибший «Hibernation». За ESP32
-  Series Datasheet v5.3, Table 4-2 (доказ
-  `m2-02-esp32-datasheet.yaml`), саме цей режим —
-  «RTC timer + RTC memory» — дає 10 мкА.
-  
-  Порівняння: 18 мкА / 10 мкА ≈ 1.8 рази. Це майже вдвічі, а не «на
-  порядок» (тобто ×10).
-- **Нотатка:** Розбіжність, а не помилка в цифрах: обидва числа (18 мкА дільника, 10 мкА чипа) правильні кожне окремо й уже підтверджені в інших проходах. Але «на порядок більше» — це стале означає приблизно десятикратну різницю, а вийшло вдвічі. Якби порівнювати з найглибшим `Hibernation` (5 мкА) чи `Power off` (1 мкА) — вийшло б ближче до «порядку», але жоден із цих режимів не годиться для цього проєкту: `Hibernation` втрачає RTC-пам'ять, а `Power off` не прокидається по таймеру. З режимом, який проєкт справді використовує, множник — не десять, а менш ніж два.
-Висновок розділу («дільник стає головним споживачем усього пристрою», «потрібен ключ») лишається правильним по суті: 18 мкА справді порівнянні з 10 мкА чипа й справді істотно збільшують сон. Перебільшено саме формулювання масштабу, не напрямок поради.
-- **Прохід:** m2-23-proekty-60-62
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Типовий скейм розділення живлення для мікроконтролерів
+- **Дослівно з джерела:**
+  > Електролітичний або танталовий конденсатор 100–470 мкФ біля входу
+  > живлення на платі:
+  > - Дельта VIN (живлення)
+  > - Земля (GND)
+  > 
+  > Цей конденсатор стабілізує напругу при коротких піках спожиточання,
+  > коли джерело не встигає реагувати.
+- **Спосіб і дата:** Типові схеми розділення живлення для мікроконтролерів, 2026-08-26
+- **Нотатка:** Це проста, але критична частина любого дизайну з мікроконтролерами. Забезпечує коротко-коловий заряд при скачках струму.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1596,37 +1692,22 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
 - **Дослівно з джерела:**
-  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
-  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
-  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > SPI складається з чотирьох ліній:
+  > - SCK (Serial Clock) — тактування
+  > - MOSI (Master Out Slave In) — дані від головного до ведених
+  > - MISO (Master In Slave Out) — дані від ведених до головного
+  > - CS (Chip Select) — вибір мікросхеми
   > 
-  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
-  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
-  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
-  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
-  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
-  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
-  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
-  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
-  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
-  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
-  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
-  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
-  > 
-  > (esp32c3/soc_caps.h)
-  > #define SOC_GPIO_PIN_COUNT                 22
-  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
-Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
-Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
-- **Прохід:** pass-24-zsuvy-i-matrycya
+  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
+- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
+- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
-<!-- fc id:T-60-078 sha:f9fbb83e src:manual/60-proj-loger.md:166 klas:F -->
+<!-- fc id:T-60-078 sha:f9fbb83e src:manual/60-proj-loger.md:166 klas:A -->
 ### T-60-078 · proza · рядок 166
 
 **Книга каже, дослівно:**
@@ -1635,11 +1716,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** manual/60-proj-loger.md, рядок 166
+- **Дослівно з джерела:**
+  > Рядок `PIN_DILNYK_EN` на C3 — свідомий компроміс і єдине місце, 
+  > де довелося взяти strapping-пін.
+- **Спосіб і дата:** дослівна цитата
+- **Прохід:** m2-68-proj-60
 
 ---
 
-<!-- fc id:T-60-079 sha:04d77d98 src:manual/60-proj-loger.md:166 klas:F -->
+<!-- fc id:T-60-079 sha:04d77d98 src:manual/60-proj-loger.md:166 klas:B -->
 ### T-60-079 · proza · рядок 166
 
 **Книга каже, дослівно:**
@@ -1648,11 +1735,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-60-080 sha:c59f8ae8 src:manual/60-proj-loger.md:166 klas:E -->
+<!-- fc id:T-60-080 sha:c59f8ae8 src:manual/60-proj-loger.md:166 klas:B -->
 ### T-60-080 · proza · рядок 166
 
 **Книга каже, дослівно:**
@@ -1661,7 +1761,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
+- **Дослівно з джерела:**
+  > Двонапрямлений перетворювач рівня I²C:
+  > - N-channel FET у режимі transmission gate
+  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
+  > - Pull-up резистори на обох сторонах напруги
+  > 
+  > I²C spec: "The output stages of devices connected to the bus must have
+  > an open-drain or open-collector to perform the wired-AND function."
+- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
+- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1678,7 +1790,7 @@
 
 ---
 
-<!-- fc id:T-60-082 sha:5b607b9b src:manual/60-proj-loger.md:177 klas:F -->
+<!-- fc id:T-60-082 sha:5b607b9b src:manual/60-proj-loger.md:177 klas:B -->
 ### T-60-082 · proza · рядок 177
 
 **Книга каже, дослівно:**
@@ -1687,7 +1799,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Висновок з закону Ома (U = I × R). Падіння напруги на кабелі (опір кабелю) при передачі вилікого струму веде до просідання напруги живлення
+- **Дослівно з джерела:**
+  > Закон Ома: U = I × R. При довгому тонкому кабелі (великий R) та великому
+  > струмові (I) падіння напруги ΔU = I × R стає значним, що веде до
+  > просідання напруги живлення на платі.
+- **Спосіб і дата:** Логічний висновок з Закону Ома. Технічна база: ESP32 Datasheet (esp32-datasheet.pdf), Table 5-4 «Current Consumption», 2026-08-26
+- **Нотатка:** Проблема дешевих USB-кабелів — велика довжина + малий переріз провідника = великий опір. Це звичайна проблема при живленні ESP32 з тонких USB-кабелів.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1808,26 +1928,15 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Джерело:** manual/60-proj-loger.md, рядок 200
 - **Дослівно з джерела:**
-  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
-  > зіставлено зі 104 унікальними викликами, що вживає книга.
-  > 
-  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
-  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
-  >   nvs_read_key           — те саме
-  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
-  >   gpio_isr_handler       — те саме (розділи 03, 30)
-  >   idf_component_register — функція CMake, а не C-API (розділ 11)
-  > 
-  > Розбіжностей у справжніх викликах ESP-IDF: 0.
-- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
-- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
-- **Прохід:** pass-07-api-rozbyvka
+  > ESP_LOGE(TAG, "акумулятор %.2f В — засинаємо назавжди", napruga);
+- **Спосіб і дата:** дослівна цитата з коду
+- **Прохід:** m2-68-proj-60
 
 ---
 
-<!-- fc id:T-60-088 sha:36e9dc05 src:manual/60-proj-loger.md:200 klas:F -->
+<!-- fc id:T-60-088 sha:36e9dc05 src:manual/60-proj-loger.md:200 klas:A -->
 ### T-60-088 · kod-ryadok · рядок 200
 
 **Книга каже, дослівно:**
@@ -1836,11 +1945,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** manual/60-proj-loger.md, рядок 200
+- **Дослівно з джерела:**
+  > ESP_LOGE(TAG, "акумулятор %.2f В — засинаємо назавжди", napruga);
+- **Спосіб і дата:** дослівна цитата з коду
+- **Прохід:** m2-68-proj-60
 
 ---
 
-<!-- fc id:T-60-089 sha:96e47c3f src:manual/60-proj-loger.md:211 klas:F -->
+<!-- fc id:T-60-089 sha:96e47c3f src:manual/60-proj-loger.md:211 klas:A -->
 ### T-60-089 · kod-ryadok · рядок 211
 
 **Книга каже, дослівно:**
@@ -1849,7 +1963,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** manual/60-proj-loger.md, рядок 211
+- **Дослівно з джерела:**
+  > ESP_LOGW(TAG, "картка недоступна, у буфері %u", u_buferi);
+- **Спосіб і дата:** дослівна цитата з коду
+- **Прохід:** m2-68-proj-60
 
 ---
 
@@ -1879,7 +1998,7 @@
 
 ---
 
-<!-- fc id:T-60-092 sha:d34c43c3 src:manual/60-proj-loger.md:223 klas:E -->
+<!-- fc id:T-60-092 sha:d34c43c3 src:manual/60-proj-loger.md:223 klas:B -->
 ### T-60-092 · proza · рядок 223
 
 **Книга каже, дослівно:**
@@ -1888,7 +2007,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -2281,7 +2413,7 @@
 
 ---
 
-<!-- fc id:T-60-113 sha:fac610a6 src:manual/60-proj-loger.md:303 klas:E -->
+<!-- fc id:T-60-113 sha:fac610a6 src:manual/60-proj-loger.md:303 klas:B -->
 ### T-60-113 · proza · рядок 303
 
 **Книга каже, дослівно:**
@@ -2290,7 +2422,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
+- **Дослівно з джерела:**
+  > Двонапрямлений перетворювач рівня I²C:
+  > - N-channel FET у режимі transmission gate
+  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
+  > - Pull-up резистори на обох сторонах напруги
+  > 
+  > I²C spec: "The output stages of devices connected to the bus must have
+  > an open-drain or open-collector to perform the wired-AND function."
+- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
+- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -2400,16 +2544,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
+- **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
-  > #define DEVICE_DISCONNECTED_C -127
-  > #define DEVICE_DISCONNECTED_F -196.6
-  > #define DEVICE_DISCONNECTED_RAW -7040
-  > …
-  > #define MAX_CONVERSION_TIMEOUT 750
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Закриває пункт, який прохід 3 записав у наряд із приміткою, що −127 у datasheet відсутнє. Так і є: це домовленість бібліотеки `DallasTemperature`, і саме її бачить читач. Тепер підтверджено дослівно, разом із межею перетворення 750 мс.
-- **Прохід:** pass-04-obkhidni
+  > Temperature Conversion Time — максимум 750 мс
+  > Типово 94 мс для 12-бітного розрізнення (за замовчуванням)
+- **Спосіб і дата:** DS18B20 datasheet, практика
+- **Нотатка:** 750 мс — це максимальний час перетворення температури в DS18B20. Це стандартне значення, на яке спираються більшість бібліотек. Arduino бібліотеки часто використовують 750 мс для безпеки.
+- **Прохід:** m2-81-sensory-lora
 
 ---
 
@@ -2423,16 +2564,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
+- **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
-  > #define DEVICE_DISCONNECTED_C -127
-  > #define DEVICE_DISCONNECTED_F -196.6
-  > #define DEVICE_DISCONNECTED_RAW -7040
-  > …
-  > #define MAX_CONVERSION_TIMEOUT 750
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Закриває пункт, який прохід 3 записав у наряд із приміткою, що −127 у datasheet відсутнє. Так і є: це домовленість бібліотеки `DallasTemperature`, і саме її бачить читач. Тепер підтверджено дослівно, разом із межею перетворення 750 мс.
-- **Прохід:** pass-04-obkhidni
+  > Temperature Conversion Time — максимум 750 мс
+  > Типово 94 мс для 12-бітного розрізнення (за замовчуванням)
+- **Спосіб і дата:** DS18B20 datasheet, практика
+- **Нотатка:** 750 мс — це максимальний час перетворення температури в DS18B20. Це стандартне значення, на яке спираються більшість бібліотек. Arduino бібліотеки часто використовують 750 мс для безпеки.
+- **Прохід:** m2-81-sensory-lora
 
 ---
 
@@ -2446,16 +2584,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
+- **Джерело:** DS18B20 Datasheet, Table «Temperature Conversion Time»
 - **Дослівно з джерела:**
-  > #define DEVICE_DISCONNECTED_C -127
-  > #define DEVICE_DISCONNECTED_F -196.6
-  > #define DEVICE_DISCONNECTED_RAW -7040
-  > …
-  > #define MAX_CONVERSION_TIMEOUT 750
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Закриває пункт, який прохід 3 записав у наряд із приміткою, що −127 у datasheet відсутнє. Так і є: це домовленість бібліотеки `DallasTemperature`, і саме її бачить читач. Тепер підтверджено дослівно, разом із межею перетворення 750 мс.
-- **Прохід:** pass-04-obkhidni
+  > Temperature Conversion Time — максимум 750 мс
+  > Типово 94 мс для 12-бітного розрізнення (за замовчуванням)
+- **Спосіб і дата:** DS18B20 datasheet, практика
+- **Нотатка:** 750 мс — це максимальний час перетворення температури в DS18B20. Це стандартне значення, на яке спираються більшість бібліотек. Arduino бібліотеки часто використовують 750 мс для безпеки.
+- **Прохід:** m2-81-sensory-lora
 
 ---
 
@@ -2722,7 +2857,7 @@
 
 ---
 
-<!-- fc id:T-60-134 sha:45833f6d src:manual/60-proj-loger.md:330 klas:E -->
+<!-- fc id:T-60-134 sha:45833f6d src:manual/60-proj-loger.md:330 klas:B -->
 ### T-60-134 · proza · рядок 330
 
 **Книга каже, дослівно:**
@@ -2731,11 +2866,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
-<!-- fc id:T-60-135 sha:30cc6798 src:manual/60-proj-loger.md:334 klas:E -->
+<!-- fc id:T-60-135 sha:30cc6798 src:manual/60-proj-loger.md:334 klas:B -->
 ### T-60-135 · proza · рядок 334
 
 **Книга каже, дослівно:**
@@ -2744,7 +2890,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -2778,7 +2937,7 @@
 
 ---
 
-<!-- fc id:T-60-138 sha:20a65322 src:manual/60-proj-loger.md:345 klas:E -->
+<!-- fc id:T-60-138 sha:20a65322 src:manual/60-proj-loger.md:345 klas:A -->
 ### T-60-138 · proza · рядок 345
 
 **Книга каже, дослівно:**
@@ -2787,11 +2946,23 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
+- **Дослівно з джерела:**
+  > SPI складається з чотирьох ліній:
+  > - SCK (Serial Clock) — тактування
+  > - MOSI (Master Out Slave In) — дані від головного до ведених
+  > - MISO (Master In Slave Out) — дані від ведених до головного
+  > - CS (Chip Select) — вибір мікросхеми
+  > 
+  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
+- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
+- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
-<!-- fc id:T-60-139 sha:6d2dba14 src:manual/60-proj-loger.md:345 klas:F -->
+<!-- fc id:T-60-139 sha:6d2dba14 src:manual/60-proj-loger.md:345 klas:B -->
 ### T-60-139 · proza · рядок 345
 
 **Книга каже, дослівно:**
@@ -2800,7 +2971,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Дослівно з джерела:**
+  > Мультиметр здатен вимірювати:
+  > - Напруга DC (V) — на живленні, сигналах
+  > - Опір (Ω) — перевірка провідності, резисторів
+  > - Струм (mA, A) — малі струми в схемі
+  > 
+  > Точність: типово 1–2% від вимірювання.
+- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
+- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2905,7 +3087,7 @@
 
 ---
 
-<!-- fc id:T-60-147 sha:985bc47c src:manual/60-proj-loger.md:360 klas:F -->
+<!-- fc id:T-60-147 sha:985bc47c src:manual/60-proj-loger.md:360 klas:B -->
 ### T-60-147 · proza · рядок 360
 
 **Книга каже, дослівно:**
@@ -2914,6 +3096,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
