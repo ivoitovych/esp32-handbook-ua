@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/26-zboyi.md`
 
-Одиниць твердження: **110**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **117**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-26-005 sha:2930db2f src:manual/26-zboyi.md:13 klas:F -->
+<!-- fc id:T-26-005 sha:2930db2f src:manual/26-zboyi.md:13 klas:A -->
 ### T-26-005 · kod · рядок 13
 
 **Книга каже, дослівно:**
@@ -77,7 +77,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -94,7 +124,7 @@
 
 ---
 
-<!-- fc id:T-26-007 sha:78a1ffd3 src:manual/26-zboyi.md:27 klas:F -->
+<!-- fc id:T-26-007 sha:78a1ffd3 src:manual/26-zboyi.md:27 klas:A -->
 ### T-26-007 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -103,7 +133,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -198,7 +258,7 @@
 
 ---
 
-<!-- fc id:T-26-015 sha:3f7f05f2 src:manual/26-zboyi.md:40 klas:F -->
+<!-- fc id:T-26-015 sha:3f7f05f2 src:manual/26-zboyi.md:40 klas:A -->
 ### T-26-015 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -207,11 +267,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-016 sha:e1369196 src:manual/26-zboyi.md:40 klas:F -->
+<!-- fc id:T-26-016 sha:e1369196 src:manual/26-zboyi.md:40 klas:A -->
 ### T-26-016 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -220,11 +310,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-017 sha:8bc4f39c src:manual/26-zboyi.md:41 klas:F -->
+<!-- fc id:T-26-017 sha:8bc4f39c src:manual/26-zboyi.md:41 klas:A -->
 ### T-26-017 · komirka · рядок 41
 
 **Книга каже, дослівно:**
@@ -233,11 +353,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-018 sha:28cc86f2 src:manual/26-zboyi.md:41 klas:F -->
+<!-- fc id:T-26-018 sha:28cc86f2 src:manual/26-zboyi.md:41 klas:A -->
 ### T-26-018 · komirka · рядок 41
 
 **Книга каже, дослівно:**
@@ -246,11 +396,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-019 sha:65e5b66a src:manual/26-zboyi.md:42 klas:F -->
+<!-- fc id:T-26-019 sha:65e5b66a src:manual/26-zboyi.md:42 klas:A -->
 ### T-26-019 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -259,11 +439,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-020 sha:89d4b0ed src:manual/26-zboyi.md:42 klas:F -->
+<!-- fc id:T-26-020 sha:89d4b0ed src:manual/26-zboyi.md:42 klas:A -->
 ### T-26-020 · komirka · рядок 42
 
 **Книга каже, дослівно:**
@@ -272,11 +482,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-021 sha:0e5b84a2 src:manual/26-zboyi.md:43 klas:F -->
+<!-- fc id:T-26-021 sha:0e5b84a2 src:manual/26-zboyi.md:43 klas:A -->
 ### T-26-021 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -285,11 +525,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-022 sha:ba217f40 src:manual/26-zboyi.md:43 klas:F -->
+<!-- fc id:T-26-022 sha:ba217f40 src:manual/26-zboyi.md:43 klas:A -->
 ### T-26-022 · komirka · рядок 43
 
 **Книга каже, дослівно:**
@@ -298,11 +568,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-023 sha:c4d149ff src:manual/26-zboyi.md:44 klas:F -->
+<!-- fc id:T-26-023 sha:c4d149ff src:manual/26-zboyi.md:44 klas:A -->
 ### T-26-023 · komirka · рядок 44
 
 **Книга каже, дослівно:**
@@ -311,11 +611,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-024 sha:c6b36da3 src:manual/26-zboyi.md:44 klas:F -->
+<!-- fc id:T-26-024 sha:c6b36da3 src:manual/26-zboyi.md:44 klas:A -->
 ### T-26-024 · komirka · рядок 44
 
 **Книга каже, дослівно:**
@@ -324,11 +654,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-025 sha:d96111a7 src:manual/26-zboyi.md:45 klas:F -->
+<!-- fc id:T-26-025 sha:d96111a7 src:manual/26-zboyi.md:45 klas:A -->
 ### T-26-025 · komirka · рядок 45
 
 **Книга каже, дослівно:**
@@ -337,11 +697,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-026 sha:439a9b98 src:manual/26-zboyi.md:45 klas:F -->
+<!-- fc id:T-26-026 sha:439a9b98 src:manual/26-zboyi.md:45 klas:A -->
 ### T-26-026 · komirka · рядок 45
 
 **Книга каже, дослівно:**
@@ -350,7 +740,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -647,30 +1067,46 @@
 
 ---
 
-<!-- fc id:T-26-049 sha:989bdd9f src:manual/26-zboyi.md:104 klas:F -->
+<!-- fc id:T-26-049 sha:655ff0e7 src:manual/26-zboyi.md:104 klas:A -->
 ### T-26-049 · kod · рядок 104
 
 **Книга каже, дослівно:**
 
 > ```
-> E (5234) task_wdt: Task watchdog got triggered.
-> E (5234) task_wdt: - IDLE0 (CPU 0)
+> E (5234) task_wdt: Task watchdog got triggered. The following tasks/users
+> did not reset the watchdog in time:
+> E (5234) task_wdt:  - IDLE0 (CPU 0)
 > E (5234) task_wdt: Tasks currently running:
 > E (5234) task_wdt: CPU 0: my_task
 > ```
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-050 sha:a1afa6b3 src:manual/26-zboyi.md:106 klas:F -->
-### T-26-050 · kod-ryadok · рядок 106
+<!-- fc id:T-26-050 sha:a1afa6b3 src:manual/26-zboyi.md:107 klas:F -->
+### T-26-050 · kod-ryadok · рядок 107
 
 **Книга каже, дослівно:**
 
-> E (5234) task_wdt: - IDLE0 (CPU 0)
+> E (5234) task_wdt:  - IDLE0 (CPU 0)
 
 **Доказ**
 
@@ -678,8 +1114,8 @@
 
 ---
 
-<!-- fc id:T-26-051 sha:6f3e6008 src:manual/26-zboyi.md:111 klas:F -->
-### T-26-051 · proza · рядок 111
+<!-- fc id:T-26-051 sha:6f3e6008 src:manual/26-zboyi.md:112 klas:F -->
+### T-26-051 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -691,8 +1127,8 @@
 
 ---
 
-<!-- fc id:T-26-052 sha:e607bc06 src:manual/26-zboyi.md:111 klas:F -->
-### T-26-052 · proza · рядок 111
+<!-- fc id:T-26-052 sha:e607bc06 src:manual/26-zboyi.md:112 klas:F -->
+### T-26-052 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -704,8 +1140,129 @@
 
 ---
 
-<!-- fc id:T-26-053 sha:e1f3ea14 src:manual/26-zboyi.md:115 klas:F -->
-### T-26-053 · proza · рядок 115
+<!-- fc id:T-26-053 sha:e04f1350 src:manual/26-zboyi.md:117 klas:F -->
+### T-26-053 · proza · рядок 117
+
+**Книга каже, дослівно:**
+
+> **Два переліки в цьому дампі — різні, і плутати їх дорого.**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-054 sha:9b2f397d src:manual/26-zboyi.md:119 klas:A -->
+### T-26-054 · proza · рядок 119
+
+**Книга каже, дослівно:**
+
+> Після першого рядка йдуть ті, хто **не встиг погодувати** watchdog.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-26-055 sha:ed96a95f src:manual/26-zboyi.md:119 klas:F -->
+### T-26-055 · proza · рядок 119
+
+**Книга каже, дослівно:**
+
+> У типовому випадку це `IDLE0` — тобто потерпілий, а не винуватець.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-056 sha:15ff91b6 src:manual/26-zboyi.md:122 klas:A -->
+### T-26-056 · proza · рядок 122
+
+**Книга каже, дослівно:**
+
+> `Tasks currently running:` — те, що виконувалося в момент спрацювання.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-26-057 sha:3e706fc4 src:manual/26-zboyi.md:122 klas:F -->
+### T-26-057 · proza · рядок 122
+
+**Книга каже, дослівно:**
+
+> Ось тут і стоїть винуватець: `my_task` зайняв ядро й не дав IDLE запуститися.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-058 sha:dc425365 src:manual/26-zboyi.md:126 klas:F -->
+### T-26-058 · proza · рядок 126
+
+**Книга каже, дослівно:**
+
+> Шукати треба ім'я з **другого** переліку.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-059 sha:a7015ad3 src:manual/26-zboyi.md:126 klas:F -->
+### T-26-059 · proza · рядок 126
+
+**Книга каже, дослівно:**
+
+> Перший лише каже, на якому ядрі стало погано.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-26-060 sha:e1f3ea14 src:manual/26-zboyi.md:130 klas:F -->
+### T-26-060 · proza · рядок 130
 
 **Книга каже, дослівно:**
 
@@ -717,8 +1274,8 @@
 
 ---
 
-<!-- fc id:T-26-054 sha:736b9d75 src:manual/26-zboyi.md:117 klas:A -->
-### T-26-054 · kod · рядок 117
+<!-- fc id:T-26-061 sha:736b9d75 src:manual/26-zboyi.md:132 klas:A -->
+### T-26-061 · kod · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -745,8 +1302,8 @@
 
 ---
 
-<!-- fc id:T-26-055 sha:b174e002 src:manual/26-zboyi.md:119 klas:F -->
-### T-26-055 · kod-ryadok · рядок 119
+<!-- fc id:T-26-062 sha:b174e002 src:manual/26-zboyi.md:134 klas:F -->
+### T-26-062 · kod-ryadok · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -758,8 +1315,8 @@
 
 ---
 
-<!-- fc id:T-26-056 sha:5b756509 src:manual/26-zboyi.md:124 klas:A -->
-### T-26-056 · proza · рядок 124
+<!-- fc id:T-26-063 sha:5b756509 src:manual/26-zboyi.md:139 klas:A -->
+### T-26-063 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -781,8 +1338,8 @@
 
 ---
 
-<!-- fc id:T-26-057 sha:8e273a6c src:manual/26-zboyi.md:124 klas:A -->
-### T-26-057 · proza · рядок 124
+<!-- fc id:T-26-064 sha:8e273a6c src:manual/26-zboyi.md:139 klas:A -->
+### T-26-064 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -810,8 +1367,8 @@
 
 ---
 
-<!-- fc id:T-26-058 sha:8bb6d694 src:manual/26-zboyi.md:129 klas:F -->
-### T-26-058 · proza · рядок 129
+<!-- fc id:T-26-065 sha:8bb6d694 src:manual/26-zboyi.md:144 klas:F -->
+### T-26-065 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -823,8 +1380,8 @@
 
 ---
 
-<!-- fc id:T-26-059 sha:7b2b476d src:manual/26-zboyi.md:129 klas:F -->
-### T-26-059 · proza · рядок 129
+<!-- fc id:T-26-066 sha:7b2b476d src:manual/26-zboyi.md:144 klas:A -->
+### T-26-066 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -832,12 +1389,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-060 sha:113645cd src:manual/26-zboyi.md:135 klas:F -->
-### T-26-060 · kod · рядок 135
+<!-- fc id:T-26-067 sha:113645cd src:manual/26-zboyi.md:150 klas:A -->
+### T-26-067 · kod · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -847,12 +1419,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-061 sha:63eae962 src:manual/26-zboyi.md:139 klas:F -->
-### T-26-061 · proza · рядок 139
+<!-- fc id:T-26-068 sha:63eae962 src:manual/26-zboyi.md:154 klas:F -->
+### T-26-068 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -864,8 +1466,8 @@
 
 ---
 
-<!-- fc id:T-26-062 sha:2f6d7c09 src:manual/26-zboyi.md:143 klas:F -->
-### T-26-062 · proza · рядок 143
+<!-- fc id:T-26-069 sha:2f6d7c09 src:manual/26-zboyi.md:158 klas:F -->
+### T-26-069 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -877,8 +1479,8 @@
 
 ---
 
-<!-- fc id:T-26-063 sha:3d768ead src:manual/26-zboyi.md:147 klas:F -->
-### T-26-063 · proza · рядок 147
+<!-- fc id:T-26-070 sha:3d768ead src:manual/26-zboyi.md:162 klas:F -->
+### T-26-070 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -890,8 +1492,8 @@
 
 ---
 
-<!-- fc id:T-26-064 sha:57ec2b02 src:manual/26-zboyi.md:147 klas:F -->
-### T-26-064 · proza · рядок 147
+<!-- fc id:T-26-071 sha:57ec2b02 src:manual/26-zboyi.md:162 klas:F -->
+### T-26-071 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -903,8 +1505,8 @@
 
 ---
 
-<!-- fc id:T-26-065 sha:9c01ac3c src:manual/26-zboyi.md:152 klas:A -->
-### T-26-065 · proza · рядок 152
+<!-- fc id:T-26-072 sha:9c01ac3c src:manual/26-zboyi.md:167 klas:A -->
+### T-26-072 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -939,8 +1541,8 @@
 
 ---
 
-<!-- fc id:T-26-066 sha:73fe2b19 src:manual/26-zboyi.md:152 klas:F -->
-### T-26-066 · proza · рядок 152
+<!-- fc id:T-26-073 sha:73fe2b19 src:manual/26-zboyi.md:167 klas:F -->
+### T-26-073 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -952,8 +1554,8 @@
 
 ---
 
-<!-- fc id:T-26-067 sha:0ab8fc51 src:manual/26-zboyi.md:155 klas:F -->
-### T-26-067 · proza · рядок 155
+<!-- fc id:T-26-074 sha:0ab8fc51 src:manual/26-zboyi.md:170 klas:F -->
+### T-26-074 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -965,8 +1567,8 @@
 
 ---
 
-<!-- fc id:T-26-068 sha:961c01d3 src:manual/26-zboyi.md:157 klas:F -->
-### T-26-068 · proza · рядок 157
+<!-- fc id:T-26-075 sha:961c01d3 src:manual/26-zboyi.md:172 klas:F -->
+### T-26-075 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -978,8 +1580,8 @@
 
 ---
 
-<!-- fc id:T-26-069 sha:8fb46bd6 src:manual/26-zboyi.md:157 klas:F -->
-### T-26-069 · proza · рядок 157
+<!-- fc id:T-26-076 sha:8fb46bd6 src:manual/26-zboyi.md:172 klas:F -->
+### T-26-076 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -991,8 +1593,8 @@
 
 ---
 
-<!-- fc id:T-26-070 sha:f91c02a9 src:manual/26-zboyi.md:157 klas:F -->
-### T-26-070 · proza · рядок 157
+<!-- fc id:T-26-077 sha:f91c02a9 src:manual/26-zboyi.md:172 klas:F -->
+### T-26-077 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -1004,8 +1606,8 @@
 
 ---
 
-<!-- fc id:T-26-071 sha:24f657dc src:manual/26-zboyi.md:162 klas:F -->
-### T-26-071 · proza · рядок 162
+<!-- fc id:T-26-078 sha:24f657dc src:manual/26-zboyi.md:177 klas:F -->
+### T-26-078 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1017,8 +1619,8 @@
 
 ---
 
-<!-- fc id:T-26-072 sha:e442aed3 src:manual/26-zboyi.md:162 klas:F -->
-### T-26-072 · proza · рядок 162
+<!-- fc id:T-26-079 sha:e442aed3 src:manual/26-zboyi.md:177 klas:F -->
+### T-26-079 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1030,8 +1632,8 @@
 
 ---
 
-<!-- fc id:T-26-073 sha:6ebbb02e src:manual/26-zboyi.md:165 klas:F -->
-### T-26-073 · proza · рядок 165
+<!-- fc id:T-26-080 sha:6ebbb02e src:manual/26-zboyi.md:180 klas:F -->
+### T-26-080 · proza · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1645,8 @@
 
 ---
 
-<!-- fc id:T-26-074 sha:a6cbcea5 src:manual/26-zboyi.md:167 klas:F -->
-### T-26-074 · proza · рядок 167
+<!-- fc id:T-26-081 sha:a6cbcea5 src:manual/26-zboyi.md:182 klas:F -->
+### T-26-081 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -1056,8 +1658,8 @@
 
 ---
 
-<!-- fc id:T-26-075 sha:4a9c0d23 src:manual/26-zboyi.md:169 klas:A -->
-### T-26-075 · kod · рядок 169
+<!-- fc id:T-26-082 sha:4a9c0d23 src:manual/26-zboyi.md:184 klas:A -->
+### T-26-082 · kod · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1088,8 +1690,8 @@
 
 ---
 
-<!-- fc id:T-26-076 sha:d91724ab src:manual/26-zboyi.md:170 klas:F -->
-### T-26-076 · kod-ryadok · рядок 170
+<!-- fc id:T-26-083 sha:d91724ab src:manual/26-zboyi.md:185 klas:F -->
+### T-26-083 · kod-ryadok · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -1101,8 +1703,8 @@
 
 ---
 
-<!-- fc id:T-26-077 sha:ad7928af src:manual/26-zboyi.md:171 klas:A -->
-### T-26-077 · kod-ryadok · рядок 171
+<!-- fc id:T-26-084 sha:ad7928af src:manual/26-zboyi.md:186 klas:A -->
+### T-26-084 · kod-ryadok · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1130,8 +1732,8 @@
 
 ---
 
-<!-- fc id:T-26-078 sha:c9de9809 src:manual/26-zboyi.md:174 klas:F -->
-### T-26-078 · proza · рядок 174
+<!-- fc id:T-26-085 sha:c9de9809 src:manual/26-zboyi.md:189 klas:F -->
+### T-26-085 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1143,8 +1745,8 @@
 
 ---
 
-<!-- fc id:T-26-079 sha:56656a17 src:manual/26-zboyi.md:179 klas:F -->
-### T-26-079 · proza · рядок 179
+<!-- fc id:T-26-086 sha:56656a17 src:manual/26-zboyi.md:194 klas:F -->
+### T-26-086 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1156,8 +1758,8 @@
 
 ---
 
-<!-- fc id:T-26-080 sha:eb6b2e19 src:manual/26-zboyi.md:179 klas:F -->
-### T-26-080 · proza · рядок 179
+<!-- fc id:T-26-087 sha:eb6b2e19 src:manual/26-zboyi.md:194 klas:F -->
+### T-26-087 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1169,8 +1771,8 @@
 
 ---
 
-<!-- fc id:T-26-081 sha:86180e20 src:manual/26-zboyi.md:182 klas:F -->
-### T-26-081 · proza · рядок 182
+<!-- fc id:T-26-088 sha:86180e20 src:manual/26-zboyi.md:197 klas:F -->
+### T-26-088 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1182,8 +1784,8 @@
 
 ---
 
-<!-- fc id:T-26-082 sha:819ab93e src:manual/26-zboyi.md:182 klas:F -->
-### T-26-082 · proza · рядок 182
+<!-- fc id:T-26-089 sha:819ab93e src:manual/26-zboyi.md:197 klas:F -->
+### T-26-089 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -1195,8 +1797,8 @@
 
 ---
 
-<!-- fc id:T-26-083 sha:689cd982 src:manual/26-zboyi.md:185 klas:F -->
-### T-26-083 · proza · рядок 185
+<!-- fc id:T-26-090 sha:689cd982 src:manual/26-zboyi.md:200 klas:F -->
+### T-26-090 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1208,8 +1810,8 @@
 
 ---
 
-<!-- fc id:T-26-084 sha:a145945b src:manual/26-zboyi.md:185 klas:F -->
-### T-26-084 · proza · рядок 185
+<!-- fc id:T-26-091 sha:a145945b src:manual/26-zboyi.md:200 klas:F -->
+### T-26-091 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1221,8 +1823,8 @@
 
 ---
 
-<!-- fc id:T-26-085 sha:ceaf6d65 src:manual/26-zboyi.md:187 klas:F -->
-### T-26-085 · proza · рядок 187
+<!-- fc id:T-26-092 sha:ceaf6d65 src:manual/26-zboyi.md:202 klas:F -->
+### T-26-092 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1234,8 +1836,8 @@
 
 ---
 
-<!-- fc id:T-26-086 sha:b06bd77e src:manual/26-zboyi.md:192 klas:F -->
-### T-26-086 · proza · рядок 192
+<!-- fc id:T-26-093 sha:b06bd77e src:manual/26-zboyi.md:207 klas:F -->
+### T-26-093 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1247,8 +1849,8 @@
 
 ---
 
-<!-- fc id:T-26-087 sha:a4784398 src:manual/26-zboyi.md:192 klas:F -->
-### T-26-087 · proza · рядок 192
+<!-- fc id:T-26-094 sha:a4784398 src:manual/26-zboyi.md:207 klas:F -->
+### T-26-094 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1260,8 +1862,8 @@
 
 ---
 
-<!-- fc id:T-26-088 sha:64dbf60b src:manual/26-zboyi.md:195 klas:F -->
-### T-26-088 · proza · рядок 195
+<!-- fc id:T-26-095 sha:64dbf60b src:manual/26-zboyi.md:210 klas:F -->
+### T-26-095 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1273,8 +1875,8 @@
 
 ---
 
-<!-- fc id:T-26-089 sha:01cd2bea src:manual/26-zboyi.md:195 klas:F -->
-### T-26-089 · proza · рядок 195
+<!-- fc id:T-26-096 sha:01cd2bea src:manual/26-zboyi.md:210 klas:F -->
+### T-26-096 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1286,8 +1888,8 @@
 
 ---
 
-<!-- fc id:T-26-090 sha:81408aec src:manual/26-zboyi.md:199 klas:A -->
-### T-26-090 · kod · рядок 199
+<!-- fc id:T-26-097 sha:81408aec src:manual/26-zboyi.md:214 klas:A -->
+### T-26-097 · kod · рядок 214
 
 **Книга каже, дослівно:**
 
@@ -1324,8 +1926,8 @@
 
 ---
 
-<!-- fc id:T-26-091 sha:6670ebea src:manual/26-zboyi.md:200 klas:A -->
-### T-26-091 · kod-ryadok · рядок 200
+<!-- fc id:T-26-098 sha:6670ebea src:manual/26-zboyi.md:215 klas:A -->
+### T-26-098 · kod-ryadok · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1359,8 +1961,8 @@
 
 ---
 
-<!-- fc id:T-26-092 sha:20162ba3 src:manual/26-zboyi.md:201 klas:A -->
-### T-26-092 · kod-ryadok · рядок 201
+<!-- fc id:T-26-099 sha:20162ba3 src:manual/26-zboyi.md:216 klas:A -->
+### T-26-099 · kod-ryadok · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1394,8 +1996,8 @@
 
 ---
 
-<!-- fc id:T-26-093 sha:9dc04b93 src:manual/26-zboyi.md:204 klas:F -->
-### T-26-093 · proza · рядок 204
+<!-- fc id:T-26-100 sha:9dc04b93 src:manual/26-zboyi.md:219 klas:F -->
+### T-26-100 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1407,8 +2009,8 @@
 
 ---
 
-<!-- fc id:T-26-094 sha:2536fa4f src:manual/26-zboyi.md:208 klas:F -->
-### T-26-094 · proza · рядок 208
+<!-- fc id:T-26-101 sha:2536fa4f src:manual/26-zboyi.md:223 klas:F -->
+### T-26-101 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -1420,8 +2022,8 @@
 
 ---
 
-<!-- fc id:T-26-095 sha:154e3023 src:manual/26-zboyi.md:208 klas:F -->
-### T-26-095 · proza · рядок 208
+<!-- fc id:T-26-102 sha:154e3023 src:manual/26-zboyi.md:223 klas:F -->
+### T-26-102 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -1433,8 +2035,8 @@
 
 ---
 
-<!-- fc id:T-26-096 sha:23da014b src:manual/26-zboyi.md:213 klas:F -->
-### T-26-096 · proza · рядок 213
+<!-- fc id:T-26-103 sha:23da014b src:manual/26-zboyi.md:228 klas:F -->
+### T-26-103 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1446,8 +2048,8 @@
 
 ---
 
-<!-- fc id:T-26-097 sha:2622940b src:manual/26-zboyi.md:213 klas:F -->
-### T-26-097 · proza · рядок 213
+<!-- fc id:T-26-104 sha:2622940b src:manual/26-zboyi.md:228 klas:F -->
+### T-26-104 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1459,8 +2061,8 @@
 
 ---
 
-<!-- fc id:T-26-098 sha:f5ed97d2 src:manual/26-zboyi.md:213 klas:F -->
-### T-26-098 · proza · рядок 213
+<!-- fc id:T-26-105 sha:f5ed97d2 src:manual/26-zboyi.md:228 klas:F -->
+### T-26-105 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -1472,8 +2074,8 @@
 
 ---
 
-<!-- fc id:T-26-099 sha:c012752e src:manual/26-zboyi.md:221 klas:F -->
-### T-26-099 · proza · рядок 221
+<!-- fc id:T-26-106 sha:c012752e src:manual/26-zboyi.md:236 klas:F -->
+### T-26-106 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1485,8 +2087,8 @@
 
 ---
 
-<!-- fc id:T-26-100 sha:0e195791 src:manual/26-zboyi.md:221 klas:F -->
-### T-26-100 · proza · рядок 221
+<!-- fc id:T-26-107 sha:0e195791 src:manual/26-zboyi.md:236 klas:A -->
+### T-26-107 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1494,12 +2096,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-101 sha:a9a4f529 src:manual/26-zboyi.md:221 klas:F -->
-### T-26-101 · proza · рядок 221
+<!-- fc id:T-26-108 sha:a9a4f529 src:manual/26-zboyi.md:236 klas:F -->
+### T-26-108 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1511,8 +2143,8 @@
 
 ---
 
-<!-- fc id:T-26-102 sha:9f6b0ad0 src:manual/26-zboyi.md:221 klas:F -->
-### T-26-102 · proza · рядок 221
+<!-- fc id:T-26-109 sha:9f6b0ad0 src:manual/26-zboyi.md:236 klas:F -->
+### T-26-109 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1524,8 +2156,8 @@
 
 ---
 
-<!-- fc id:T-26-103 sha:54fce724 src:manual/26-zboyi.md:221 klas:F -->
-### T-26-103 · proza · рядок 221
+<!-- fc id:T-26-110 sha:54fce724 src:manual/26-zboyi.md:236 klas:F -->
+### T-26-110 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1537,8 +2169,8 @@
 
 ---
 
-<!-- fc id:T-26-104 sha:0699a2f6 src:manual/26-zboyi.md:233 klas:F -->
-### T-26-104 · proza · рядок 233
+<!-- fc id:T-26-111 sha:0699a2f6 src:manual/26-zboyi.md:248 klas:F -->
+### T-26-111 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1550,8 +2182,8 @@
 
 ---
 
-<!-- fc id:T-26-105 sha:45939324 src:manual/26-zboyi.md:236 klas:F -->
-### T-26-105 · proza · рядок 236
+<!-- fc id:T-26-112 sha:45939324 src:manual/26-zboyi.md:251 klas:F -->
+### T-26-112 · proza · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -1563,8 +2195,8 @@
 
 ---
 
-<!-- fc id:T-26-106 sha:719ceef5 src:manual/26-zboyi.md:236 klas:F -->
-### T-26-106 · proza · рядок 236
+<!-- fc id:T-26-113 sha:719ceef5 src:manual/26-zboyi.md:251 klas:F -->
+### T-26-113 · proza · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -1576,8 +2208,8 @@
 
 ---
 
-<!-- fc id:T-26-107 sha:0d7c5a65 src:manual/26-zboyi.md:239 klas:F -->
-### T-26-107 · proza · рядок 239
+<!-- fc id:T-26-114 sha:0d7c5a65 src:manual/26-zboyi.md:254 klas:A -->
+### T-26-114 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -1585,12 +2217,27 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-26-108 sha:3995e61f src:manual/26-zboyi.md:241 klas:F -->
-### T-26-108 · proza · рядок 241
+<!-- fc id:T-26-115 sha:3995e61f src:manual/26-zboyi.md:256 klas:F -->
+### T-26-115 · proza · рядок 256
 
 **Книга каже, дослівно:**
 
@@ -1602,8 +2249,8 @@
 
 ---
 
-<!-- fc id:T-26-109 sha:339581bb src:manual/26-zboyi.md:243 klas:F -->
-### T-26-109 · proza · рядок 243
+<!-- fc id:T-26-116 sha:339581bb src:manual/26-zboyi.md:258 klas:F -->
+### T-26-116 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1615,8 +2262,8 @@
 
 ---
 
-<!-- fc id:T-26-110 sha:0bbfc00c src:manual/26-zboyi.md:245 klas:F -->
-### T-26-110 · proza · рядок 245
+<!-- fc id:T-26-117 sha:0bbfc00c src:manual/26-zboyi.md:260 klas:F -->
+### T-26-117 · proza · рядок 260
 
 **Книга каже, дослівно:**
 

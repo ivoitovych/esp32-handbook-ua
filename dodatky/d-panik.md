@@ -109,15 +109,29 @@ I (xxx) cpu_start: Pro cpu up.
 
 ## Помилки бутлоадера
 
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
 | Повідомлення | Причина | Розділ |
 |---|---|---|
-| `invalid magic byte` | за адресою застосунку не образ | 18 |
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
 | `Factory app partition is not bootable` | застосунку немає | К5 |
-| `partition N invalid magic number` | немає таблиці розділів | 18 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
 | `Failed to verify partition table` | те саме | 18 |
-| `ota data partition invalid` | зіпсований `otadata` | 19 |
-| `image has invalid SHA256` | образ пошкоджений | 17 |
-| `Flash chip size mismatch` | конфігурація ≠ реальний флеш | 08 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+
+::: uvaha
+Розбіжність обсягу флешу дає **два різні рядки, і наслідки різні**.
+
+Реальний флеш **менший** за налаштований — фатально: бутлоадер зупиняє
+пробу, бо частина розділів фізично не існує.
+
+Реальний флеш **більший** — лише попередження: система працює, просто
+надлишок не використовується. Саме цей випадок трапляється з клонами,
+що продаються як 16 МБ, а стають 4 МБ у конфігурації.
+:::
 
 ## Причини паніки
 
@@ -156,14 +170,19 @@ I (xxx) cpu_start: Pro cpu up.
 **Task WDT** — задача не віддає керування:
 
 ```
-E (5234) task_wdt: Task watchdog got triggered.
-E (5234) task_wdt: - IDLE0 (CPU 0)
+E (5234) task_wdt: Task watchdog got triggered. The following tasks/users
+did not reset the watchdog in time:
+E (5234) task_wdt:  - IDLE0 (CPU 0)
 E (5234) task_wdt: Tasks currently running:
 E (5234) task_wdt: CPU 0: my_task
 ```
 
-Рядок `Tasks currently running` **називає винуватця**. Це діагностика,
-а не смерть системи.
+Переліків тут **два, і вони різні**. Після першого рядка — ті, хто не
+встиг погодувати watchdog (`IDLE0` — потерпілий). Після
+`Tasks currently running:` — те, що виконувалося в цю мить, і саме там
+винуватець: `my_task`.
+
+Це діагностика, а не смерть системи.
 
 **Interrupt WDT** — переривання заблоковані:
 
@@ -178,11 +197,28 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 | Повідомлення | Причина |
 |---|---|
-| `***ERROR*** A stack overflow in task X` | замалий стек задачі |
-| `CORRUPT HEAP` | запис за межі виділеного блоку |
+| `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+| `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+| `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
 | `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
 | `assert failed: ...` | порушено внутрішній інваріант |
 | `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
+
+::: uvaha
+`Bad head` і `Bad tail` — не однакові повідомлення. Купа тримає навколо
+кожного блоку контрольні слова-канарки, і зіпсована каже, з якого боку
+писали повз.
+
+`Bad tail` — типове переповнення буфера: писали далі, ніж виділили.
+Шукати `memcpy`, `sprintf`, цикл із `<=` замість `<`.
+
+`Bad head` — писали **до** початку блоку: від'ємний індекс, зсув
+покажчика назад, звільнення чужої адреси. Трапляється рідше й майже
+завжди означає помилку в арифметиці покажчиків.
+
+Адреса в повідомленні — це адреса канарки, тобто край самого блоку. Її
+можна порівняти з тим, що повернув `malloc`.
+:::
 
 Діагностика — розділ 30: `uxTaskGetStackHighWaterMark`,
 `heap_caps_get_largest_free_block`.

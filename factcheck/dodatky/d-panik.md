@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/d-panik.md`
 
-Одиниць твердження: **151**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **169**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -1312,8 +1312,21 @@
 
 ---
 
-<!-- fc id:T-D-084 sha:fbdc8285 src:dodatky/d-panik.md:112 klas:F -->
-### T-D-084 · tablycya-shapka · рядок 112
+<!-- fc id:T-D-084 sha:0590c64d src:dodatky/d-panik.md:112 klas:F -->
+### T-D-084 · proza · рядок 112
+
+**Книга каже, дослівно:**
+
+> Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-085 sha:fbdc8285 src:dodatky/d-panik.md:114 klas:F -->
+### T-D-085 · tablycya-shapka · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -1325,34 +1338,60 @@
 
 ---
 
-<!-- fc id:T-D-085 sha:fc9c4e50 src:dodatky/d-panik.md:113 klas:F -->
-### T-D-085 · komirka · рядок 113
+<!-- fc id:T-D-086 sha:a63a39c2 src:dodatky/d-panik.md:115 klas:A -->
+### T-D-086 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
-> `invalid magic byte` · Причина → за адресою застосунку не образ
+> `image at 0x… has invalid magic byte (nothing flashed here?)` · Причина → за адресою застосунку не образ
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-086 sha:d2308cd8 src:dodatky/d-panik.md:113 klas:F -->
-### T-D-086 · komirka · рядок 113
+<!-- fc id:T-D-087 sha:ad4c17ec src:dodatky/d-panik.md:115 klas:A -->
+### T-D-087 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
-> `invalid magic byte` · Розділ → 18
+> `image at 0x… has invalid magic byte (nothing flashed here?)` · Розділ → 18
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-087 sha:0164e3bb src:dodatky/d-panik.md:114 klas:F -->
-### T-D-087 · komirka · рядок 114
+<!-- fc id:T-D-088 sha:0164e3bb src:dodatky/d-panik.md:116 klas:A -->
+### T-D-088 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -1360,12 +1399,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-088 sha:2d07f5b7 src:dodatky/d-panik.md:114 klas:F -->
-### T-D-088 · komirka · рядок 114
+<!-- fc id:T-D-089 sha:2d07f5b7 src:dodatky/d-panik.md:116 klas:A -->
+### T-D-089 · komirka · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -1373,38 +1425,77 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-089 sha:2b9cc080 src:dodatky/d-panik.md:115 klas:F -->
-### T-D-089 · komirka · рядок 115
+<!-- fc id:T-D-090 sha:2bc6cd2b src:dodatky/d-panik.md:117 klas:A -->
+### T-D-090 · komirka · рядок 117
 
 **Книга каже, дослівно:**
 
-> `partition N invalid magic number` · Причина → немає таблиці розділів
+> `partition N invalid magic number 0x…` · Причина → немає таблиці розділів
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-090 sha:4d44560e src:dodatky/d-panik.md:115 klas:F -->
-### T-D-090 · komirka · рядок 115
+<!-- fc id:T-D-091 sha:b805a263 src:dodatky/d-panik.md:117 klas:A -->
+### T-D-091 · komirka · рядок 117
 
 **Книга каже, дослівно:**
 
-> `partition N invalid magic number` · Розділ → 18
+> `partition N invalid magic number 0x…` · Розділ → 18
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-091 sha:47044db6 src:dodatky/d-panik.md:116 klas:F -->
-### T-D-091 · komirka · рядок 116
+<!-- fc id:T-D-092 sha:47044db6 src:dodatky/d-panik.md:118 klas:A -->
+### T-D-092 · komirka · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -1412,12 +1503,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-092 sha:6a21db9c src:dodatky/d-panik.md:116 klas:F -->
-### T-D-092 · komirka · рядок 116
+<!-- fc id:T-D-093 sha:6a21db9c src:dodatky/d-panik.md:118 klas:A -->
+### T-D-093 · komirka · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -1425,16 +1529,229 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-093 sha:e688bcbc src:dodatky/d-panik.md:117 klas:F -->
-### T-D-093 · komirka · рядок 117
+<!-- fc id:T-D-094 sha:168149c9 src:dodatky/d-panik.md:119 klas:A -->
+### T-D-094 · komirka · рядок 119
 
 **Книга каже, дослівно:**
 
-> `ota data partition invalid` · Причина → зіпсований `otadata`
+> `ota data partition invalid, falling back to factory` · Причина → зіпсований `otadata`
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-095 sha:e514eca1 src:dodatky/d-panik.md:119 klas:A -->
+### T-D-095 · komirka · рядок 119
+
+**Книга каже, дослівно:**
+
+> `ota data partition invalid, falling back to factory` · Розділ → 19
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-096 sha:2f309750 src:dodatky/d-panik.md:120 klas:A -->
+### T-D-096 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> `Image hash failed - image is corrupt` · Причина → образ пошкоджений
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-097 sha:e82565ff src:dodatky/d-panik.md:120 klas:A -->
+### T-D-097 · komirka · рядок 120
+
+**Книга каже, дослівно:**
+
+> `Image hash failed - image is corrupt` · Розділ → 17
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-098 sha:c946c98e src:dodatky/d-panik.md:121 klas:A -->
+### T-D-098 · komirka · рядок 121
+
+**Книга каже, дослівно:**
+
+> `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` · Причина → конфігурація > реальний флеш
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
+- **Дослівно з джерела:**
+  > ESP_EARLY_LOGE(TAG, "Detected size(%dk) smaller than the size in the binary image "
+  >                     "header(%dk). Probe failed.", default_chip.size/1024, legacy_chip->chip_size/1024);
+  > ESP_EARLY_LOGW(TAG, "Detected size(%dk) larger than the size in the binary image "
+  >                     "header(%dk). Using the size in the binary image header.", …);
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга друкувала `Flash chip size mismatch` — рядка з такою назвою в ESP-IDF немає ніде.
+Справжні рядки не лише інші, а ще й **два**, з протилежними наслідками. Реальний флеш менший за налаштований — фатально, проба зупиняється (`ESP_LOGE`). Більший — лише попередження (`ESP_LOGW`), система працює, надлишок не використовується.
+Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала обидва випадки одним рядком і одним наслідком; тепер вони розділені.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-099 sha:4adb2806 src:dodatky/d-panik.md:121 klas:A -->
+### T-D-099 · komirka · рядок 121
+
+**Книга каже, дослівно:**
+
+> `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` · Розділ → 08
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
+- **Дослівно з джерела:**
+  > ESP_EARLY_LOGE(TAG, "Detected size(%dk) smaller than the size in the binary image "
+  >                     "header(%dk). Probe failed.", default_chip.size/1024, legacy_chip->chip_size/1024);
+  > ESP_EARLY_LOGW(TAG, "Detected size(%dk) larger than the size in the binary image "
+  >                     "header(%dk). Using the size in the binary image header.", …);
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга друкувала `Flash chip size mismatch` — рядка з такою назвою в ESP-IDF немає ніде.
+Справжні рядки не лише інші, а ще й **два**, з протилежними наслідками. Реальний флеш менший за налаштований — фатально, проба зупиняється (`ESP_LOGE`). Більший — лише попередження (`ESP_LOGW`), система працює, надлишок не використовується.
+Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала обидва випадки одним рядком і одним наслідком; тепер вони розділені.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-100 sha:45fbc80e src:dodatky/d-panik.md:122 klas:A -->
+### T-D-100 · komirka · рядок 122
+
+**Книга каже, дослівно:**
+
+> `Detected size(…k) larger than … Using the size in the binary image header.` · Причина → конфігурація < реальний флеш; лише попередження
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
+- **Дослівно з джерела:**
+  > ESP_EARLY_LOGE(TAG, "Detected size(%dk) smaller than the size in the binary image "
+  >                     "header(%dk). Probe failed.", default_chip.size/1024, legacy_chip->chip_size/1024);
+  > ESP_EARLY_LOGW(TAG, "Detected size(%dk) larger than the size in the binary image "
+  >                     "header(%dk). Using the size in the binary image header.", …);
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга друкувала `Flash chip size mismatch` — рядка з такою назвою в ESP-IDF немає ніде.
+Справжні рядки не лише інші, а ще й **два**, з протилежними наслідками. Реальний флеш менший за налаштований — фатально, проба зупиняється (`ESP_LOGE`). Більший — лише попередження (`ESP_LOGW`), система працює, надлишок не використовується.
+Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала обидва випадки одним рядком і одним наслідком; тепер вони розділені.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-101 sha:f25a0f20 src:dodatky/d-panik.md:122 klas:A -->
+### T-D-101 · komirka · рядок 122
+
+**Книга каже, дослівно:**
+
+> `Detected size(…k) larger than … Using the size in the binary image header.` · Розділ → 08
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
+- **Дослівно з джерела:**
+  > ESP_EARLY_LOGE(TAG, "Detected size(%dk) smaller than the size in the binary image "
+  >                     "header(%dk). Probe failed.", default_chip.size/1024, legacy_chip->chip_size/1024);
+  > ESP_EARLY_LOGW(TAG, "Detected size(%dk) larger than the size in the binary image "
+  >                     "header(%dk). Using the size in the binary image header.", …);
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга друкувала `Flash chip size mismatch` — рядка з такою назвою в ESP-IDF немає ніде.
+Справжні рядки не лише інші, а ще й **два**, з протилежними наслідками. Реальний флеш менший за налаштований — фатально, проба зупиняється (`ESP_LOGE`). Більший — лише попередження (`ESP_LOGW`), система працює, надлишок не використовується.
+Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала обидва випадки одним рядком і одним наслідком; тепер вони розділені.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-102 sha:930379a1 src:dodatky/d-panik.md:126 klas:F -->
+### T-D-102 · proza · рядок 126
+
+**Книга каже, дослівно:**
+
+> Розбіжність обсягу флешу дає **два різні рядки, і наслідки різні**.
 
 **Доказ**
 
@@ -1442,12 +1759,36 @@
 
 ---
 
-<!-- fc id:T-D-094 sha:a25a5d46 src:dodatky/d-panik.md:117 klas:F -->
-### T-D-094 · komirka · рядок 117
+<!-- fc id:T-D-103 sha:6a177d47 src:dodatky/d-panik.md:128 klas:A -->
+### T-D-103 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
-> `ota data partition invalid` · Розділ → 19
+> Реальний флеш **менший** за налаштований — фатально: бутлоадер зупиняє пробу, бо частина розділів фізично не існує.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
+- **Дослівно з джерела:**
+  > ESP_EARLY_LOGE(TAG, "Detected size(%dk) smaller than the size in the binary image "
+  >                     "header(%dk). Probe failed.", default_chip.size/1024, legacy_chip->chip_size/1024);
+  > ESP_EARLY_LOGW(TAG, "Detected size(%dk) larger than the size in the binary image "
+  >                     "header(%dk). Using the size in the binary image header.", …);
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга друкувала `Flash chip size mismatch` — рядка з такою назвою в ESP-IDF немає ніде.
+Справжні рядки не лише інші, а ще й **два**, з протилежними наслідками. Реальний флеш менший за налаштований — фатально, проба зупиняється (`ESP_LOGE`). Більший — лише попередження (`ESP_LOGW`), система працює, надлишок не використовується.
+Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала обидва випадки одним рядком і одним наслідком; тепер вони розділені.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-104 sha:3a4f06b3 src:dodatky/d-panik.md:131 klas:F -->
+### T-D-104 · proza · рядок 131
+
+**Книга каже, дослівно:**
+
+> Реальний флеш **більший** — лише попередження: система працює, просто надлишок не використовується.
 
 **Доказ**
 
@@ -1455,12 +1796,12 @@
 
 ---
 
-<!-- fc id:T-D-095 sha:e71a4e33 src:dodatky/d-panik.md:118 klas:F -->
-### T-D-095 · komirka · рядок 118
+<!-- fc id:T-D-105 sha:898ac6ac src:dodatky/d-panik.md:131 klas:F -->
+### T-D-105 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
-> `image has invalid SHA256` · Причина → образ пошкоджений
+> Саме цей випадок трапляється з клонами, що продаються як 16 МБ, а стають 4 МБ у конфігурації.
 
 **Доказ**
 
@@ -1468,47 +1809,8 @@
 
 ---
 
-<!-- fc id:T-D-096 sha:ea436193 src:dodatky/d-panik.md:118 klas:F -->
-### T-D-096 · komirka · рядок 118
-
-**Книга каже, дослівно:**
-
-> `image has invalid SHA256` · Розділ → 17
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-D-097 sha:d02987b0 src:dodatky/d-panik.md:119 klas:F -->
-### T-D-097 · komirka · рядок 119
-
-**Книга каже, дослівно:**
-
-> `Flash chip size mismatch` · Причина → конфігурація ≠ реальний флеш
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-D-098 sha:e76a8e56 src:dodatky/d-panik.md:119 klas:F -->
-### T-D-098 · komirka · рядок 119
-
-**Книга каже, дослівно:**
-
-> `Flash chip size mismatch` · Розділ → 08
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-D-099 sha:ea9dc162 src:dodatky/d-panik.md:124 klas:F -->
-### T-D-099 · tablycya-shapka · рядок 124
+<!-- fc id:T-D-106 sha:ea9dc162 src:dodatky/d-panik.md:138 klas:F -->
+### T-D-106 · tablycya-shapka · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -1520,8 +1822,8 @@
 
 ---
 
-<!-- fc id:T-D-100 sha:3f7f05f2 src:dodatky/d-panik.md:125 klas:F -->
-### T-D-100 · komirka · рядок 125
+<!-- fc id:T-D-107 sha:3f7f05f2 src:dodatky/d-panik.md:139 klas:A -->
+### T-D-107 · komirka · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -1529,12 +1831,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-101 sha:e1369196 src:dodatky/d-panik.md:125 klas:F -->
-### T-D-101 · komirka · рядок 125
+<!-- fc id:T-D-108 sha:e1369196 src:dodatky/d-panik.md:139 klas:A -->
+### T-D-108 · komirka · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -1542,12 +1874,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-102 sha:8bc4f39c src:dodatky/d-panik.md:126 klas:F -->
-### T-D-102 · komirka · рядок 126
+<!-- fc id:T-D-109 sha:8bc4f39c src:dodatky/d-panik.md:140 klas:A -->
+### T-D-109 · komirka · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -1555,12 +1917,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-103 sha:28cc86f2 src:dodatky/d-panik.md:126 klas:F -->
-### T-D-103 · komirka · рядок 126
+<!-- fc id:T-D-110 sha:28cc86f2 src:dodatky/d-panik.md:140 klas:A -->
+### T-D-110 · komirka · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -1568,12 +1960,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-104 sha:65e5b66a src:dodatky/d-panik.md:127 klas:F -->
-### T-D-104 · komirka · рядок 127
+<!-- fc id:T-D-111 sha:65e5b66a src:dodatky/d-panik.md:141 klas:A -->
+### T-D-111 · komirka · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1581,12 +2003,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-105 sha:89d4b0ed src:dodatky/d-panik.md:127 klas:F -->
-### T-D-105 · komirka · рядок 127
+<!-- fc id:T-D-112 sha:89d4b0ed src:dodatky/d-panik.md:141 klas:A -->
+### T-D-112 · komirka · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1594,12 +2046,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-106 sha:0e5b84a2 src:dodatky/d-panik.md:128 klas:F -->
-### T-D-106 · komirka · рядок 128
+<!-- fc id:T-D-113 sha:0e5b84a2 src:dodatky/d-panik.md:142 klas:A -->
+### T-D-113 · komirka · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -1607,12 +2089,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-107 sha:b8918b59 src:dodatky/d-panik.md:128 klas:F -->
-### T-D-107 · komirka · рядок 128
+<!-- fc id:T-D-114 sha:b8918b59 src:dodatky/d-panik.md:142 klas:A -->
+### T-D-114 · komirka · рядок 142
 
 **Книга каже, дослівно:**
 
@@ -1620,12 +2132,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-108 sha:c4d149ff src:dodatky/d-panik.md:129 klas:F -->
-### T-D-108 · komirka · рядок 129
+<!-- fc id:T-D-115 sha:c4d149ff src:dodatky/d-panik.md:143 klas:A -->
+### T-D-115 · komirka · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1633,12 +2175,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-109 sha:46508737 src:dodatky/d-panik.md:129 klas:F -->
-### T-D-109 · komirka · рядок 129
+<!-- fc id:T-D-116 sha:46508737 src:dodatky/d-panik.md:143 klas:A -->
+### T-D-116 · komirka · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1646,12 +2218,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-110 sha:d96111a7 src:dodatky/d-panik.md:130 klas:F -->
-### T-D-110 · komirka · рядок 130
+<!-- fc id:T-D-117 sha:d96111a7 src:dodatky/d-panik.md:144 klas:A -->
+### T-D-117 · komirka · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -1659,12 +2261,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-111 sha:439a9b98 src:dodatky/d-panik.md:130 klas:F -->
-### T-D-111 · komirka · рядок 130
+<!-- fc id:T-D-118 sha:439a9b98 src:dodatky/d-panik.md:144 klas:A -->
+### T-D-118 · komirka · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -1672,12 +2304,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-112 sha:7c359228 src:dodatky/d-panik.md:131 klas:F -->
-### T-D-112 · komirka · рядок 131
+<!-- fc id:T-D-119 sha:7c359228 src:dodatky/d-panik.md:145 klas:F -->
+### T-D-119 · komirka · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -1689,8 +2351,8 @@
 
 ---
 
-<!-- fc id:T-D-113 sha:4c606b3e src:dodatky/d-panik.md:131 klas:F -->
-### T-D-113 · komirka · рядок 131
+<!-- fc id:T-D-120 sha:4c606b3e src:dodatky/d-panik.md:145 klas:F -->
+### T-D-120 · komirka · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -1702,8 +2364,8 @@
 
 ---
 
-<!-- fc id:T-D-114 sha:8712f714 src:dodatky/d-panik.md:132 klas:F -->
-### T-D-114 · komirka · рядок 132
+<!-- fc id:T-D-121 sha:8712f714 src:dodatky/d-panik.md:146 klas:A -->
+### T-D-121 · komirka · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -1711,12 +2373,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-115 sha:4e40193e src:dodatky/d-panik.md:132 klas:A -->
-### T-D-115 · komirka · рядок 132
+<!-- fc id:T-D-122 sha:4e40193e src:dodatky/d-panik.md:146 klas:A -->
+### T-D-122 · komirka · рядок 146
 
 **Книга каже, дослівно:**
 
@@ -1738,8 +2430,8 @@
 
 ---
 
-<!-- fc id:T-D-116 sha:a66ac160 src:dodatky/d-panik.md:137 klas:F -->
-### T-D-116 · tablycya · рядок 137
+<!-- fc id:T-D-123 sha:a66ac160 src:dodatky/d-panik.md:151 klas:F -->
+### T-D-123 · tablycya · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1751,8 +2443,8 @@
 
 ---
 
-<!-- fc id:T-D-117 sha:9e0b8e4a src:dodatky/d-panik.md:139 klas:F -->
-### T-D-117 · tablycya · рядок 139
+<!-- fc id:T-D-124 sha:9e0b8e4a src:dodatky/d-panik.md:153 klas:F -->
+### T-D-124 · tablycya · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -1764,8 +2456,8 @@
 
 ---
 
-<!-- fc id:T-D-118 sha:f82d7189 src:dodatky/d-panik.md:140 klas:F -->
-### T-D-118 · tablycya · рядок 140
+<!-- fc id:T-D-125 sha:f82d7189 src:dodatky/d-panik.md:154 klas:F -->
+### T-D-125 · tablycya · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1777,8 +2469,8 @@
 
 ---
 
-<!-- fc id:T-D-119 sha:74974165 src:dodatky/d-panik.md:141 klas:F -->
-### T-D-119 · tablycya · рядок 141
+<!-- fc id:T-D-126 sha:74974165 src:dodatky/d-panik.md:155 klas:F -->
+### T-D-126 · tablycya · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -1790,8 +2482,8 @@
 
 ---
 
-<!-- fc id:T-D-120 sha:b89ae2bf src:dodatky/d-panik.md:142 klas:F -->
-### T-D-120 · tablycya · рядок 142
+<!-- fc id:T-D-127 sha:b89ae2bf src:dodatky/d-panik.md:156 klas:F -->
+### T-D-127 · tablycya · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1803,8 +2495,8 @@
 
 ---
 
-<!-- fc id:T-D-121 sha:6ef4b75c src:dodatky/d-panik.md:145 klas:F -->
-### T-D-121 · proza · рядок 145
+<!-- fc id:T-D-128 sha:6ef4b75c src:dodatky/d-panik.md:159 klas:F -->
+### T-D-128 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -1816,8 +2508,8 @@
 
 ---
 
-<!-- fc id:T-D-122 sha:f710df6f src:dodatky/d-panik.md:147 klas:C -->
-### T-D-122 · proza · рядок 147
+<!-- fc id:T-D-129 sha:f710df6f src:dodatky/d-panik.md:161 klas:C -->
+### T-D-129 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1833,8 +2525,8 @@
 
 ---
 
-<!-- fc id:T-D-123 sha:4c0a3cc5 src:dodatky/d-panik.md:147 klas:F -->
-### T-D-123 · proza · рядок 147
+<!-- fc id:T-D-130 sha:4c0a3cc5 src:dodatky/d-panik.md:161 klas:A -->
+### T-D-130 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1842,12 +2534,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-124 sha:7ff566f8 src:dodatky/d-panik.md:150 klas:F -->
-### T-D-124 · proza · рядок 150
+<!-- fc id:T-D-131 sha:7ff566f8 src:dodatky/d-panik.md:164 klas:F -->
+### T-D-131 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1859,8 +2581,8 @@
 
 ---
 
-<!-- fc id:T-D-125 sha:d09dfd9d src:dodatky/d-panik.md:156 klas:F -->
-### T-D-125 · proza · рядок 156
+<!-- fc id:T-D-132 sha:d09dfd9d src:dodatky/d-panik.md:170 klas:F -->
+### T-D-132 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1872,30 +2594,46 @@
 
 ---
 
-<!-- fc id:T-D-126 sha:989bdd9f src:dodatky/d-panik.md:158 klas:F -->
-### T-D-126 · kod · рядок 158
+<!-- fc id:T-D-133 sha:655ff0e7 src:dodatky/d-panik.md:172 klas:A -->
+### T-D-133 · kod · рядок 172
 
 **Книга каже, дослівно:**
 
 > ```
-> E (5234) task_wdt: Task watchdog got triggered.
-> E (5234) task_wdt: - IDLE0 (CPU 0)
+> E (5234) task_wdt: Task watchdog got triggered. The following tasks/users
+> did not reset the watchdog in time:
+> E (5234) task_wdt:  - IDLE0 (CPU 0)
 > E (5234) task_wdt: Tasks currently running:
 > E (5234) task_wdt: CPU 0: my_task
 > ```
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-127 sha:a1afa6b3 src:dodatky/d-panik.md:160 klas:F -->
-### T-D-127 · kod-ryadok · рядок 160
+<!-- fc id:T-D-134 sha:a1afa6b3 src:dodatky/d-panik.md:175 klas:F -->
+### T-D-134 · kod-ryadok · рядок 175
 
 **Книга каже, дослівно:**
 
-> E (5234) task_wdt: - IDLE0 (CPU 0)
+> E (5234) task_wdt:  - IDLE0 (CPU 0)
 
 **Доказ**
 
@@ -1903,21 +2641,92 @@
 
 ---
 
-<!-- fc id:T-D-128 sha:957bad5d src:dodatky/d-panik.md:165 klas:F -->
-### T-D-128 · proza · рядок 165
+<!-- fc id:T-D-135 sha:b8253fd9 src:dodatky/d-panik.md:180 klas:A -->
+### T-D-135 · proza · рядок 180
 
 **Книга каже, дослівно:**
 
-> Рядок `Tasks currently running` **називає винуватця**.
+> Переліків тут **два, і вони різні**.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-129 sha:12db62c5 src:dodatky/d-panik.md:165 klas:F -->
-### T-D-129 · proza · рядок 165
+<!-- fc id:T-D-136 sha:d413fc69 src:dodatky/d-panik.md:180 klas:A -->
+### T-D-136 · proza · рядок 180
+
+**Книга каже, дослівно:**
+
+> Після першого рядка — ті, хто не встиг погодувати watchdog (`IDLE0` — потерпілий).
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-137 sha:15a9044c src:dodatky/d-panik.md:180 klas:A -->
+### T-D-137 · proza · рядок 180
+
+**Книга каже, дослівно:**
+
+> Після `Tasks currently running:` — те, що виконувалося в цю мить, і саме там винуватець: `my_task`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-138 sha:12db62c5 src:dodatky/d-panik.md:185 klas:F -->
+### T-D-138 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -1929,8 +2738,8 @@
 
 ---
 
-<!-- fc id:T-D-130 sha:77e4f2d7 src:dodatky/d-panik.md:168 klas:F -->
-### T-D-130 · proza · рядок 168
+<!-- fc id:T-D-139 sha:77e4f2d7 src:dodatky/d-panik.md:187 klas:F -->
+### T-D-139 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1942,8 +2751,8 @@
 
 ---
 
-<!-- fc id:T-D-131 sha:113645cd src:dodatky/d-panik.md:170 klas:F -->
-### T-D-131 · kod · рядок 170
+<!-- fc id:T-D-140 sha:113645cd src:dodatky/d-panik.md:189 klas:A -->
+### T-D-140 · kod · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1953,12 +2762,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-132 sha:61ffbc10 src:dodatky/d-panik.md:174 klas:F -->
-### T-D-132 · proza · рядок 174
+<!-- fc id:T-D-141 sha:61ffbc10 src:dodatky/d-panik.md:193 klas:F -->
+### T-D-141 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -1970,8 +2809,8 @@
 
 ---
 
-<!-- fc id:T-D-133 sha:ef04690f src:dodatky/d-panik.md:179 klas:F -->
-### T-D-133 · tablycya · рядок 179
+<!-- fc id:T-D-142 sha:ef04690f src:dodatky/d-panik.md:198 klas:F -->
+### T-D-142 · tablycya · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1983,34 +2822,83 @@
 
 ---
 
-<!-- fc id:T-D-134 sha:8f5f38c0 src:dodatky/d-panik.md:181 klas:F -->
-### T-D-134 · tablycya · рядок 181
+<!-- fc id:T-D-143 sha:200e947a src:dodatky/d-panik.md:200 klas:A -->
+### T-D-143 · tablycya · рядок 200
 
 **Книга каже, дослівно:**
 
-> | `***ERROR*** A stack overflow in task X` | замалий стек задачі |
+> | `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+- **Дослівно з джерела:**
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  > 
+  > #define ERR_STR1 "***ERROR*** A stack overflow in task "
+  > #define ERR_STR2 " has been detected."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення буфера), `Bad head` — перед початком (від'ємний індекс, арифметика покажчиків).
+Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням, що адреса в рядку — це адреса канарки, тобто край блоку.
+Рядок про переповнення стека доповнено до повного: `… has been detected.`
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-135 sha:de0b73f8 src:dodatky/d-panik.md:182 klas:F -->
-### T-D-135 · tablycya · рядок 182
+<!-- fc id:T-D-144 sha:6747d938 src:dodatky/d-panik.md:201 klas:A -->
+### T-D-144 · tablycya · рядок 201
 
 **Книга каже, дослівно:**
 
-> | `CORRUPT HEAP` | запис за межі виділеного блоку |
+> | `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+- **Дослівно з джерела:**
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  > 
+  > #define ERR_STR1 "***ERROR*** A stack overflow in task "
+  > #define ERR_STR2 " has been detected."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення буфера), `Bad head` — перед початком (від'ємний індекс, арифметика покажчиків).
+Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням, що адреса в рядку — це адреса канарки, тобто край блоку.
+Рядок про переповнення стека доповнено до повного: `… has been detected.`
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-136 sha:c629c9be src:dodatky/d-panik.md:183 klas:F -->
-### T-D-136 · tablycya · рядок 183
+<!-- fc id:T-D-145 sha:0e926220 src:dodatky/d-panik.md:202 klas:A -->
+### T-D-145 · tablycya · рядок 202
+
+**Книга каже, дослівно:**
+
+> | `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+- **Дослівно з джерела:**
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  > 
+  > #define ERR_STR1 "***ERROR*** A stack overflow in task "
+  > #define ERR_STR2 " has been detected."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення буфера), `Bad head` — перед початком (від'ємний індекс, арифметика покажчиків).
+Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням, що адреса в рядку — це адреса канарки, тобто край блоку.
+Рядок про переповнення стека доповнено до повного: `… has been detected.`
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-146 sha:c629c9be src:dodatky/d-panik.md:203 klas:A -->
+### T-D-146 · tablycya · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -2018,12 +2906,42 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-D-137 sha:69aa2c68 src:dodatky/d-panik.md:184 klas:F -->
-### T-D-137 · tablycya · рядок 184
+<!-- fc id:T-D-147 sha:69aa2c68 src:dodatky/d-panik.md:204 klas:F -->
+### T-D-147 · tablycya · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -2035,8 +2953,8 @@
 
 ---
 
-<!-- fc id:T-D-138 sha:4dc00872 src:dodatky/d-panik.md:185 klas:A -->
-### T-D-138 · tablycya · рядок 185
+<!-- fc id:T-D-148 sha:4dc00872 src:dodatky/d-panik.md:205 klas:A -->
+### T-D-148 · tablycya · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -2064,8 +2982,172 @@
 
 ---
 
-<!-- fc id:T-D-139 sha:760e202b src:dodatky/d-panik.md:187 klas:A -->
-### T-D-139 · proza · рядок 187
+<!-- fc id:T-D-149 sha:1e8945f3 src:dodatky/d-panik.md:208 klas:A -->
+### T-D-149 · proza · рядок 208
+
+**Книга каже, дослівно:**
+
+> `Bad head` і `Bad tail` — не однакові повідомлення.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+- **Дослівно з джерела:**
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  > 
+  > #define ERR_STR1 "***ERROR*** A stack overflow in task "
+  > #define ERR_STR2 " has been detected."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення буфера), `Bad head` — перед початком (від'ємний індекс, арифметика покажчиків).
+Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням, що адреса в рядку — це адреса канарки, тобто край блоку.
+Рядок про переповнення стека доповнено до повного: `… has been detected.`
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-150 sha:7076a5df src:dodatky/d-panik.md:208 klas:A -->
+### T-D-150 · proza · рядок 208
+
+**Книга каже, дослівно:**
+
+> Купа тримає навколо кожного блоку контрольні слова-канарки, і зіпсована каже, з якого боку писали повз.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+- **Дослівно з джерела:**
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  > 
+  > #define ERR_STR1 "***ERROR*** A stack overflow in task "
+  > #define ERR_STR2 " has been detected."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення буфера), `Bad head` — перед початком (від'ємний індекс, арифметика покажчиків).
+Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням, що адреса в рядку — це адреса канарки, тобто край блоку.
+Рядок про переповнення стека доповнено до повного: `… has been detected.`
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-151 sha:dbf57f9c src:dodatky/d-panik.md:212 klas:A -->
+### T-D-151 · proza · рядок 212
+
+**Книга каже, дослівно:**
+
+> `Bad tail` — типове переповнення буфера: писали далі, ніж виділили.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+- **Дослівно з джерела:**
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  > 
+  > #define ERR_STR1 "***ERROR*** A stack overflow in task "
+  > #define ERR_STR2 " has been detected."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення буфера), `Bad head` — перед початком (від'ємний індекс, арифметика покажчиків).
+Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням, що адреса в рядку — це адреса канарки, тобто край блоку.
+Рядок про переповнення стека доповнено до повного: `… has been detected.`
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-152 sha:68e01a8c src:dodatky/d-panik.md:212 klas:F -->
+### T-D-152 · proza · рядок 212
+
+**Книга каже, дослівно:**
+
+> Шукати `memcpy`, `sprintf`, цикл із `<=` замість `<`.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-153 sha:123d0b6e src:dodatky/d-panik.md:215 klas:A -->
+### T-D-153 · proza · рядок 215
+
+**Книга каже, дослівно:**
+
+> `Bad head` — писали **до** початку блоку: від'ємний індекс, зсув покажчика назад, звільнення чужої адреси.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+- **Дослівно з джерела:**
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  > 
+  > #define ERR_STR1 "***ERROR*** A stack overflow in task "
+  > #define ERR_STR2 " has been detected."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення буфера), `Bad head` — перед початком (від'ємний індекс, арифметика покажчиків).
+Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням, що адреса в рядку — це адреса канарки, тобто край блоку.
+Рядок про переповнення стека доповнено до повного: `… has been detected.`
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-154 sha:290e2e50 src:dodatky/d-panik.md:215 klas:F -->
+### T-D-154 · proza · рядок 215
+
+**Книга каже, дослівно:**
+
+> Трапляється рідше й майже завжди означає помилку в арифметиці покажчиків.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-155 sha:0140364c src:dodatky/d-panik.md:219 klas:A -->
+### T-D-155 · proza · рядок 219
+
+**Книга каже, дослівно:**
+
+> Адреса в повідомленні — це адреса канарки, тобто край самого блоку.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+- **Дослівно з джерела:**
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
+  > MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  > 
+  > #define ERR_STR1 "***ERROR*** A stack overflow in task "
+  > #define ERR_STR2 " has been detected."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення буфера), `Bad head` — перед початком (від'ємний індекс, арифметика покажчиків).
+Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням, що адреса в рядку — це адреса канарки, тобто край блоку.
+Рядок про переповнення стека доповнено до повного: `… has been detected.`
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-D-156 sha:a135e9c8 src:dodatky/d-panik.md:219 klas:F -->
+### T-D-156 · proza · рядок 219
+
+**Книга каже, дослівно:**
+
+> Її можна порівняти з тим, що повернув `malloc`.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-157 sha:760e202b src:dodatky/d-panik.md:223 klas:A -->
+### T-D-157 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -2093,8 +3175,8 @@
 
 ---
 
-<!-- fc id:T-D-140 sha:cbdc8d7f src:dodatky/d-panik.md:192 klas:F -->
-### T-D-140 · proza · рядок 192
+<!-- fc id:T-D-158 sha:cbdc8d7f src:dodatky/d-panik.md:228 klas:F -->
+### T-D-158 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -2106,8 +3188,8 @@
 
 ---
 
-<!-- fc id:T-D-141 sha:61db3e19 src:dodatky/d-panik.md:192 klas:F -->
-### T-D-141 · proza · рядок 192
+<!-- fc id:T-D-159 sha:61db3e19 src:dodatky/d-panik.md:228 klas:F -->
+### T-D-159 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -2119,8 +3201,8 @@
 
 ---
 
-<!-- fc id:T-D-142 sha:8d7da41f src:dodatky/d-panik.md:192 klas:F -->
-### T-D-142 · proza · рядок 192
+<!-- fc id:T-D-160 sha:8d7da41f src:dodatky/d-panik.md:228 klas:F -->
+### T-D-160 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -2132,8 +3214,8 @@
 
 ---
 
-<!-- fc id:T-D-143 sha:223bf487 src:dodatky/d-panik.md:192 klas:F -->
-### T-D-143 · proza · рядок 192
+<!-- fc id:T-D-161 sha:223bf487 src:dodatky/d-panik.md:228 klas:F -->
+### T-D-161 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -2145,8 +3227,8 @@
 
 ---
 
-<!-- fc id:T-D-144 sha:6a7c80ec src:dodatky/d-panik.md:192 klas:F -->
-### T-D-144 · proza · рядок 192
+<!-- fc id:T-D-162 sha:6a7c80ec src:dodatky/d-panik.md:228 klas:F -->
+### T-D-162 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -2158,8 +3240,8 @@
 
 ---
 
-<!-- fc id:T-D-145 sha:4304fde6 src:dodatky/d-panik.md:200 klas:F -->
-### T-D-145 · proza · рядок 200
+<!-- fc id:T-D-163 sha:4304fde6 src:dodatky/d-panik.md:236 klas:F -->
+### T-D-163 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -2171,8 +3253,8 @@
 
 ---
 
-<!-- fc id:T-D-146 sha:91a1f9a6 src:dodatky/d-panik.md:200 klas:F -->
-### T-D-146 · proza · рядок 200
+<!-- fc id:T-D-164 sha:91a1f9a6 src:dodatky/d-panik.md:236 klas:F -->
+### T-D-164 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -2184,8 +3266,8 @@
 
 ---
 
-<!-- fc id:T-D-147 sha:00df861d src:dodatky/d-panik.md:204 klas:F -->
-### T-D-147 · proza · рядок 204
+<!-- fc id:T-D-165 sha:00df861d src:dodatky/d-panik.md:240 klas:F -->
+### T-D-165 · proza · рядок 240
 
 **Книга каже, дослівно:**
 
@@ -2197,8 +3279,8 @@
 
 ---
 
-<!-- fc id:T-D-148 sha:9a6f1773 src:dodatky/d-panik.md:209 klas:F -->
-### T-D-148 · proza · рядок 209
+<!-- fc id:T-D-166 sha:9a6f1773 src:dodatky/d-panik.md:245 klas:F -->
+### T-D-166 · proza · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -2210,8 +3292,8 @@
 
 ---
 
-<!-- fc id:T-D-149 sha:c50282dd src:dodatky/d-panik.md:209 klas:F -->
-### T-D-149 · proza · рядок 209
+<!-- fc id:T-D-167 sha:c50282dd src:dodatky/d-panik.md:245 klas:F -->
+### T-D-167 · proza · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -2223,8 +3305,8 @@
 
 ---
 
-<!-- fc id:T-D-150 sha:71f2dcf5 src:dodatky/d-panik.md:212 klas:F -->
-### T-D-150 · proza · рядок 212
+<!-- fc id:T-D-168 sha:71f2dcf5 src:dodatky/d-panik.md:248 klas:F -->
+### T-D-168 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -2236,8 +3318,8 @@
 
 ---
 
-<!-- fc id:T-D-151 sha:d8b5c935 src:dodatky/d-panik.md:212 klas:F -->
-### T-D-151 · proza · рядок 212
+<!-- fc id:T-D-169 sha:d8b5c935 src:dodatky/d-panik.md:248 klas:F -->
+### T-D-169 · proza · рядок 248
 
 **Книга каже, дослівно:**
 

@@ -331,7 +331,7 @@
 
 ---
 
-<!-- fc id:T-49-026 sha:d191e35a src:manual/49-kamera.md:78 klas:F -->
+<!-- fc id:T-49-026 sha:d191e35a src:manual/49-kamera.md:78 klas:A -->
 ### T-49-026 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -340,7 +340,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c
+- **Дослівно з джерела:**
+  > ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Без виправлення: те, що друкує книга, — точний початок справжнього рядка, тож пошук у логу спрацює. Зафіксовано повний вигляд, бо код помилки в хвості рядка часто й називає причину.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -828,7 +834,7 @@
 
 ---
 
-<!-- fc id:T-49-063 sha:9c72a8d5 src:manual/49-kamera.md:167 klas:F -->
+<!-- fc id:T-49-063 sha:9c72a8d5 src:manual/49-kamera.md:167 klas:A -->
 ### T-49-063 · proza · рядок 167
 
 **Книга каже, дослівно:**
@@ -837,7 +843,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c
+- **Дослівно з джерела:**
+  > ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Без виправлення: те, що друкує книга, — точний початок справжнього рядка, тож пошук у логу спрацює. Зафіксовано повний вигляд, бо код помилки в хвості рядка часто й називає причину.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 

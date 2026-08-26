@@ -40,6 +40,16 @@ RE_KOMANDA = re.compile(r"^\s*((?:esptool|idf\.py|espefuse|pio|nvs_partition_gen
                         r"picocom|minicom|screen|dmesg|lsof|usermod|sudo|git|"
                         r"xtensa-|riscv32-|mklittlefs|mkspiffs)[^\n]*)$", re.M)
 
+# Повідомлення, які книга обіцяє читачеві побачити в консолі. Окрема
+# категорія, бо ціна помилки тут особлива: читач шукає рядок у своєму
+# логу дослівно, і зайва кома робить пораду непридатною.
+RE_POVIDOMLENNYA = re.compile(
+    r"`([A-Z][^`\n]{6,}?"
+    r"(?:failed|error|Error|timeout|timed out|invalid|Invalid|not |no |"
+    r"prohibited|Prohibited|triggered|mismatch|overflow|corrupt|CORRUPT|"
+    r"disabled|Meditation|reset|abort|panic|wdt|WDT|ESP_ERR_|E \(|W \(|"
+    r"assert)[^`\n]*)`")
+
 
 def fajly():
     out = []
@@ -97,6 +107,19 @@ def main():
 
     if shho in ("vse", "komandy"):
         druk("командні рядки", zbir(RE_KOMANDA, tilky_kod=True, grupa=1))
+
+    if shho in ("vse", "povidomlennya"):
+        de = zbir(RE_POVIDOMLENNYA, grupa=1)
+        for f in fajly():
+            for blok in re.findall(r"```.*?```", f.read_text(encoding="utf-8"),
+                                   flags=re.S):
+                for ln in blok.split("\n"):
+                    ln = ln.strip()
+                    if re.match(r"^[EWI] \(\d+\)|^Guru Meditation|"
+                                r"^rst:0x|^[A-Z][a-z]+ [a-z]+ .*(failed|error)",
+                                ln):
+                        de[ln].add(str(f.relative_to(ROOT)))
+        druk("повідомлення в консолі", de)
 
 
 if __name__ == "__main__":

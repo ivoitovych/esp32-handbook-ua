@@ -236,12 +236,18 @@ idf.py merge-bin -o vyrib-v1.bin
 
 ## Типові помилки і що вони означають
 
-**`A fatal error occurred: Failed to connect to ESP32: Timed out waiting
-for packet header`**
+**`A fatal error occurred: Failed to connect to ESP32: No serial data
+received.`**
 
 Найчастіша. Чип не в download mode. Спробувати вручну (картка
 [К4](#k-boot)), знизити швидкість, перевірити, що порт не зайнятий
 відкритим монітором.
+
+Друга половина рядка залежить від версії. `No serial data received.` —
+esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, які
+ще трапляються в готових складаннях і в чужих інструкціях. Причина в
+обох випадках та сама, і шукати варто за початком рядка —
+`Failed to connect`.
 
 **`Serial port ... could not be opened: Permission denied`**
 
@@ -266,7 +272,7 @@ for packet header`**
 який сам щось пише в UART, поки `esptool` намагається говорити.
 Увійти в download mode вручну.
 
-**`This chip is ESP32-S3 not ESP32`**
+**`This chip is ESP32-S3, not ESP32. Wrong chip argument?`**
 
 `esptool` визначив чип сам і побачив розбіжність із тим, що йому сказали.
 Прибрати `--chip`, дати визначити автоматично.
@@ -291,11 +297,18 @@ esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
 На ESP32 classic, C6 і H2 цього режиму немає — там працює звичайне
 `hard-reset` по `RTS`.
 
-**`Stub is disabled` / `Failed to run stub`**
+**`Failed to start stub flasher. There was no response.`**
 
 `esptool` вантажить у RAM невелику допоміжну програму («stub») для
 пришвидшення. На частині клонів це не працює. Обійти: `--no-stub`,
 буде повільніше, але працюватиме.
+
+Сусіднє попередження `Stub flasher has been disabled for compatibility,
+set --no-stub to suppress this warning.` — не помилка: `esptool` сам
+вимкнув stub і працює далі.
+
+У v4 ті самі рядки коротші — `Failed to start stub.` Шукати варто за
+словом `stub`, а не за повним реченням.
 
 ## Windows: Flash Download Tool
 

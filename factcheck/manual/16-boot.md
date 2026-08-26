@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/16-boot.md`
 
-Одиниць твердження: **86**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **87**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -987,24 +987,63 @@
 
 ---
 
-<!-- fc id:T-16-061 sha:d0aee71f src:manual/16-boot.md:146 klas:F -->
+<!-- fc id:T-16-061 sha:dfc19c84 src:manual/16-boot.md:146 klas:A -->
 ### T-16-061 · kod · рядок 146
 
 **Книга каже, дослівно:**
 
 > ```
-> E (xxx) esp_image: image at 0x10000 has invalid magic byte
+> E (xxx) esp_image: image at 0x10000 has invalid magic byte (nothing flashed here?)
 > E (xxx) boot: Factory app partition is not bootable
 > ```
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-16-062 sha:3098ca78 src:manual/16-boot.md:151 klas:F -->
-### T-16-062 · proza · рядок 151
+<!-- fc id:T-16-062 sha:c68e2346 src:manual/16-boot.md:147 klas:A -->
+### T-16-062 · kod-ryadok · рядок 147
+
+**Книга каже, дослівно:**
+
+> E (xxx) esp_image: image at 0x10000 has invalid magic byte (nothing flashed here?)
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-16-063 sha:3098ca78 src:manual/16-boot.md:151 klas:F -->
+### T-16-063 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1016,8 +1055,8 @@
 
 ---
 
-<!-- fc id:T-16-063 sha:120fecd6 src:manual/16-boot.md:151 klas:F -->
-### T-16-063 · proza · рядок 151
+<!-- fc id:T-16-064 sha:120fecd6 src:manual/16-boot.md:151 klas:F -->
+### T-16-064 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1029,8 +1068,8 @@
 
 ---
 
-<!-- fc id:T-16-064 sha:65aa20e8 src:manual/16-boot.md:154 klas:F -->
-### T-16-064 · proza · рядок 154
+<!-- fc id:T-16-065 sha:65aa20e8 src:manual/16-boot.md:154 klas:F -->
+### T-16-065 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1042,8 +1081,8 @@
 
 ---
 
-<!-- fc id:T-16-065 sha:df92f5bb src:manual/16-boot.md:156 klas:F -->
-### T-16-065 · kod · рядок 156
+<!-- fc id:T-16-066 sha:df92f5bb src:manual/16-boot.md:156 klas:A -->
+### T-16-066 · kod · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1054,12 +1093,25 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-16-066 sha:4878c76b src:manual/16-boot.md:161 klas:F -->
-### T-16-066 · proza · рядок 161
+<!-- fc id:T-16-067 sha:4878c76b src:manual/16-boot.md:161 klas:F -->
+### T-16-067 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1071,8 +1123,8 @@
 
 ---
 
-<!-- fc id:T-16-067 sha:f07d9e1c src:manual/16-boot.md:164 klas:F -->
-### T-16-067 · proza · рядок 164
+<!-- fc id:T-16-068 sha:f07d9e1c src:manual/16-boot.md:164 klas:F -->
+### T-16-068 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1084,8 +1136,8 @@
 
 ---
 
-<!-- fc id:T-16-068 sha:c41ad640 src:manual/16-boot.md:164 klas:F -->
-### T-16-068 · proza · рядок 164
+<!-- fc id:T-16-069 sha:c41ad640 src:manual/16-boot.md:164 klas:F -->
+### T-16-069 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1097,8 +1149,8 @@
 
 ---
 
-<!-- fc id:T-16-069 sha:e41e916a src:manual/16-boot.md:164 klas:F -->
-### T-16-069 · proza · рядок 164
+<!-- fc id:T-16-070 sha:e41e916a src:manual/16-boot.md:164 klas:F -->
+### T-16-070 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -1110,8 +1162,8 @@
 
 ---
 
-<!-- fc id:T-16-070 sha:dafca624 src:manual/16-boot.md:170 klas:F -->
-### T-16-070 · proza · рядок 170
+<!-- fc id:T-16-071 sha:dafca624 src:manual/16-boot.md:170 klas:F -->
+### T-16-071 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1123,8 +1175,8 @@
 
 ---
 
-<!-- fc id:T-16-071 sha:68faec6e src:manual/16-boot.md:170 klas:F -->
-### T-16-071 · proza · рядок 170
+<!-- fc id:T-16-072 sha:68faec6e src:manual/16-boot.md:170 klas:F -->
+### T-16-072 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -1136,8 +1188,8 @@
 
 ---
 
-<!-- fc id:T-16-072 sha:7c2cf10c src:manual/16-boot.md:175 klas:F -->
-### T-16-072 · proza · рядок 175
+<!-- fc id:T-16-073 sha:7c2cf10c src:manual/16-boot.md:175 klas:F -->
+### T-16-073 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1149,8 +1201,8 @@
 
 ---
 
-<!-- fc id:T-16-073 sha:64b7ef66 src:manual/16-boot.md:177 klas:F -->
-### T-16-073 · proza · рядок 177
+<!-- fc id:T-16-074 sha:64b7ef66 src:manual/16-boot.md:177 klas:F -->
+### T-16-074 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1162,8 +1214,8 @@
 
 ---
 
-<!-- fc id:T-16-074 sha:5b9eaf66 src:manual/16-boot.md:184 klas:F -->
-### T-16-074 · proza · рядок 184
+<!-- fc id:T-16-075 sha:5b9eaf66 src:manual/16-boot.md:184 klas:F -->
+### T-16-075 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1175,8 +1227,8 @@
 
 ---
 
-<!-- fc id:T-16-075 sha:68f8f3aa src:manual/16-boot.md:184 klas:F -->
-### T-16-075 · proza · рядок 184
+<!-- fc id:T-16-076 sha:68f8f3aa src:manual/16-boot.md:184 klas:F -->
+### T-16-076 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1188,8 +1240,8 @@
 
 ---
 
-<!-- fc id:T-16-076 sha:3c680211 src:manual/16-boot.md:189 klas:F -->
-### T-16-076 · proza · рядок 189
+<!-- fc id:T-16-077 sha:3c680211 src:manual/16-boot.md:189 klas:F -->
+### T-16-077 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1201,8 +1253,8 @@
 
 ---
 
-<!-- fc id:T-16-077 sha:b34d888e src:manual/16-boot.md:189 klas:F -->
-### T-16-077 · proza · рядок 189
+<!-- fc id:T-16-078 sha:b34d888e src:manual/16-boot.md:189 klas:F -->
+### T-16-078 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1214,8 +1266,8 @@
 
 ---
 
-<!-- fc id:T-16-078 sha:b1352204 src:manual/16-boot.md:196 klas:F -->
-### T-16-078 · proza · рядок 196
+<!-- fc id:T-16-079 sha:b1352204 src:manual/16-boot.md:196 klas:F -->
+### T-16-079 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1227,8 +1279,8 @@
 
 ---
 
-<!-- fc id:T-16-079 sha:6b942f91 src:manual/16-boot.md:196 klas:F -->
-### T-16-079 · proza · рядок 196
+<!-- fc id:T-16-080 sha:6b942f91 src:manual/16-boot.md:196 klas:F -->
+### T-16-080 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1240,8 +1292,8 @@
 
 ---
 
-<!-- fc id:T-16-080 sha:7c8641d9 src:manual/16-boot.md:196 klas:F -->
-### T-16-080 · proza · рядок 196
+<!-- fc id:T-16-081 sha:7c8641d9 src:manual/16-boot.md:196 klas:F -->
+### T-16-081 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1253,8 +1305,8 @@
 
 ---
 
-<!-- fc id:T-16-081 sha:96d636c6 src:manual/16-boot.md:205 klas:F -->
-### T-16-081 · proza · рядок 205
+<!-- fc id:T-16-082 sha:96d636c6 src:manual/16-boot.md:205 klas:F -->
+### T-16-082 · proza · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1266,8 +1318,8 @@
 
 ---
 
-<!-- fc id:T-16-082 sha:85240d7d src:manual/16-boot.md:205 klas:F -->
-### T-16-082 · proza · рядок 205
+<!-- fc id:T-16-083 sha:85240d7d src:manual/16-boot.md:205 klas:F -->
+### T-16-083 · proza · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1279,8 +1331,8 @@
 
 ---
 
-<!-- fc id:T-16-083 sha:be649b20 src:manual/16-boot.md:208 klas:A -->
-### T-16-083 · proza · рядок 208
+<!-- fc id:T-16-084 sha:be649b20 src:manual/16-boot.md:208 klas:A -->
+### T-16-084 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1301,8 +1353,8 @@
 
 ---
 
-<!-- fc id:T-16-084 sha:d25421b7 src:manual/16-boot.md:211 klas:F -->
-### T-16-084 · proza · рядок 211
+<!-- fc id:T-16-085 sha:d25421b7 src:manual/16-boot.md:211 klas:F -->
+### T-16-085 · proza · рядок 211
 
 **Книга каже, дослівно:**
 
@@ -1314,8 +1366,8 @@
 
 ---
 
-<!-- fc id:T-16-085 sha:6555a300 src:manual/16-boot.md:214 klas:F -->
-### T-16-085 · proza · рядок 214
+<!-- fc id:T-16-086 sha:6555a300 src:manual/16-boot.md:214 klas:F -->
+### T-16-086 · proza · рядок 214
 
 **Книга каже, дослівно:**
 
@@ -1327,8 +1379,8 @@
 
 ---
 
-<!-- fc id:T-16-086 sha:a59da32e src:manual/16-boot.md:214 klas:F -->
-### T-16-086 · proza · рядок 214
+<!-- fc id:T-16-087 sha:a59da32e src:manual/16-boot.md:214 klas:F -->
+### T-16-087 · proza · рядок 214
 
 **Книга каже, дослівно:**
 

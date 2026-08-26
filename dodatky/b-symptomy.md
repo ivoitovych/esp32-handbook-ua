@@ -25,10 +25,10 @@
 | `Failed to connect` | не в download mode | `BOOT`+`EN` вручну | К4 |
 | `Failed to connect` | зависока швидкість | `--baud 115200` | 17 |
 | `Failed to connect` | обв'язка на strapping-піні | зняти | 16 |
-| `MD5 does not match` | просадка живлення, кабель | коротший кабель, `--baud` нижче | 06 |
+| `MD5 of file does not match` | просадка живлення, кабель | коротший кабель, `--baud` нижче | 06 |
 | `Invalid head of packet` | застосунок пише в UART | download mode вручну | 17 |
-| `Stub is disabled` | клон не приймає stub | `--no-stub` | 17 |
-| `This chip is X not Y` | не той `--chip` | прибрати `--chip` | 17 |
+| `Failed to start stub flasher` | клон не приймає stub | `--no-stub` | 17 |
+| `This chip is X, not Y` | не той `--chip` | прибрати `--chip` | 17 |
 
 ## Старт і завантаження
 

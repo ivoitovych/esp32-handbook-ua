@@ -144,7 +144,7 @@ waiting for download
 **Немає застосунку:**
 
 ```
-E (xxx) esp_image: image at 0x10000 has invalid magic byte
+E (xxx) esp_image: image at 0x10000 has invalid magic byte (nothing flashed here?)
 E (xxx) boot: Factory app partition is not bootable
 ```
 

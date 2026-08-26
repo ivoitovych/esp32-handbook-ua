@@ -383,42 +383,117 @@
 
 ---
 
-<!-- fc id:T-B-030 sha:bb7f366d src:dodatky/b-symptomy.md:27 klas:F -->
+<!-- fc id:T-B-030 sha:997a6b63 src:dodatky/b-symptomy.md:27 klas:A -->
 ### T-B-030 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
-> `MD5 does not match` · Причина → просадка живлення, кабель
+> `MD5 of file does not match` · Причина → просадка живлення, кабель
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-031 sha:61671eb6 src:dodatky/b-symptomy.md:27 klas:F -->
+<!-- fc id:T-B-031 sha:33ae1bd4 src:dodatky/b-symptomy.md:27 klas:A -->
 ### T-B-031 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
-> `MD5 does not match` · Дія → коротший кабель, `--baud` нижче
+> `MD5 of file does not match` · Дія → коротший кабель, `--baud` нижче
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-032 sha:490e3704 src:dodatky/b-symptomy.md:27 klas:F -->
+<!-- fc id:T-B-032 sha:9303c290 src:dodatky/b-symptomy.md:27 klas:A -->
 ### T-B-032 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
-> `MD5 does not match` · Розділ → 06
+> `MD5 of file does not match` · Розділ → 06
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -461,51 +536,126 @@
 
 ---
 
-<!-- fc id:T-B-036 sha:8be7a97e src:dodatky/b-symptomy.md:29 klas:F -->
+<!-- fc id:T-B-036 sha:cf08f94d src:dodatky/b-symptomy.md:29 klas:A -->
 ### T-B-036 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> `Stub is disabled` · Причина → клон не приймає stub
+> `Failed to start stub flasher` · Причина → клон не приймає stub
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-037 sha:eb447386 src:dodatky/b-symptomy.md:29 klas:F -->
+<!-- fc id:T-B-037 sha:e59b86ec src:dodatky/b-symptomy.md:29 klas:A -->
 ### T-B-037 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> `Stub is disabled` · Дія → `--no-stub`
+> `Failed to start stub flasher` · Дія → `--no-stub`
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-038 sha:ebb9c1de src:dodatky/b-symptomy.md:29 klas:F -->
+<!-- fc id:T-B-038 sha:81a82c66 src:dodatky/b-symptomy.md:29 klas:A -->
 ### T-B-038 · komirka · рядок 29
 
 **Книга каже, дослівно:**
 
-> `Stub is disabled` · Розділ → 17
+> `Failed to start stub flasher` · Розділ → 17
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-039 sha:bf085217 src:dodatky/b-symptomy.md:30 klas:F -->
+<!-- fc id:T-B-039 sha:a7028303 src:dodatky/b-symptomy.md:30 klas:F -->
 ### T-B-039 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> `This chip is X not Y` · Причина → не той `--chip`
+> `This chip is X, not Y` · Причина → не той `--chip`
 
 **Доказ**
 
@@ -513,12 +663,12 @@
 
 ---
 
-<!-- fc id:T-B-040 sha:6298e2d4 src:dodatky/b-symptomy.md:30 klas:F -->
+<!-- fc id:T-B-040 sha:21e13c37 src:dodatky/b-symptomy.md:30 klas:F -->
 ### T-B-040 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> `This chip is X not Y` · Дія → прибрати `--chip`
+> `This chip is X, not Y` · Дія → прибрати `--chip`
 
 **Доказ**
 
@@ -526,12 +676,12 @@
 
 ---
 
-<!-- fc id:T-B-041 sha:9e47b63d src:dodatky/b-symptomy.md:30 klas:F -->
+<!-- fc id:T-B-041 sha:d67ce886 src:dodatky/b-symptomy.md:30 klas:F -->
 ### T-B-041 · komirka · рядок 30
 
 **Книга каже, дослівно:**
 
-> `This chip is X not Y` · Розділ → 17
+> `This chip is X, not Y` · Розділ → 17
 
 **Доказ**
 
@@ -630,7 +780,7 @@
 
 ---
 
-<!-- fc id:T-B-049 sha:efbec25c src:dodatky/b-symptomy.md:38 klas:F -->
+<!-- fc id:T-B-049 sha:efbec25c src:dodatky/b-symptomy.md:38 klas:A -->
 ### T-B-049 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -639,11 +789,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-050 sha:6ce91a07 src:dodatky/b-symptomy.md:38 klas:F -->
+<!-- fc id:T-B-050 sha:6ce91a07 src:dodatky/b-symptomy.md:38 klas:A -->
 ### T-B-050 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -652,11 +815,24 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-051 sha:6a21db9c src:dodatky/b-symptomy.md:38 klas:F -->
+<!-- fc id:T-B-051 sha:6a21db9c src:dodatky/b-symptomy.md:38 klas:A -->
 ### T-B-051 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -665,7 +841,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+- **Дослівно з джерела:**
+  > FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  > ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+  > ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+  > ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+  > ESP_LOGE(TAG, "Failed to verify partition table");
+  > ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. П'ять із шести рядків книга подавала правильно, шостий — `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image is corrupt`.
+Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)` і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -2489,7 +2678,7 @@
 
 ---
 
-<!-- fc id:T-B-184 sha:cdbf2b21 src:dodatky/b-symptomy.md:97 klas:F -->
+<!-- fc id:T-B-184 sha:cdbf2b21 src:dodatky/b-symptomy.md:97 klas:A -->
 ### T-B-184 · komirka · рядок 97
 
 **Книга каже, дослівно:**
@@ -2498,11 +2687,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c
+- **Дослівно з джерела:**
+  > ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Без виправлення: те, що друкує книга, — точний початок справжнього рядка, тож пошук у логу спрацює. Зафіксовано повний вигляд, бо код помилки в хвості рядка часто й називає причину.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-185 sha:20942e97 src:dodatky/b-symptomy.md:97 klas:F -->
+<!-- fc id:T-B-185 sha:20942e97 src:dodatky/b-symptomy.md:97 klas:A -->
 ### T-B-185 · komirka · рядок 97
 
 **Книга каже, дослівно:**
@@ -2511,11 +2706,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c
+- **Дослівно з джерела:**
+  > ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Без виправлення: те, що друкує книга, — точний початок справжнього рядка, тож пошук у логу спрацює. Зафіксовано повний вигляд, бо код помилки в хвості рядка часто й називає причину.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-186 sha:1e765843 src:dodatky/b-symptomy.md:97 klas:F -->
+<!-- fc id:T-B-186 sha:1e765843 src:dodatky/b-symptomy.md:97 klas:A -->
 ### T-B-186 · komirka · рядок 97
 
 **Книга каже, дослівно:**
@@ -2524,7 +2725,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c
+- **Дослівно з джерела:**
+  > ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Без виправлення: те, що друкує книга, — точний початок справжнього рядка, тож пошук у логу спрацює. Зафіксовано повний вигляд, бо код помилки в хвості рядка часто й називає причину.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -3139,7 +3346,7 @@
 
 ---
 
-<!-- fc id:T-B-234 sha:4264d262 src:dodatky/b-symptomy.md:123 klas:F -->
+<!-- fc id:T-B-234 sha:4264d262 src:dodatky/b-symptomy.md:123 klas:A -->
 ### T-B-234 · komirka · рядок 123
 
 **Книга каже, дослівно:**
@@ -3148,11 +3355,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-235 sha:962e23f9 src:dodatky/b-symptomy.md:123 klas:F -->
+<!-- fc id:T-B-235 sha:962e23f9 src:dodatky/b-symptomy.md:123 klas:A -->
 ### T-B-235 · komirka · рядок 123
 
 **Книга каже, дослівно:**
@@ -3161,11 +3398,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-B-236 sha:65aff682 src:dodatky/b-symptomy.md:123 klas:F -->
+<!-- fc id:T-B-236 sha:65aff682 src:dodatky/b-symptomy.md:123 klas:A -->
 ### T-B-236 · komirka · рядок 123
 
 **Книга каже, дослівно:**
@@ -3174,7 +3441,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 

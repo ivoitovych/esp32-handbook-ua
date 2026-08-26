@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K07-001 sha:b2a29f58 src:kartky/k07-panika.md:3 klas:F -->
+<!-- fc id:T-K07-001 sha:b2a29f58 src:kartky/k07-panika.md:3 klas:A -->
 ### T-K07-001 · kod · рядок 3
 
 **Книга каже, дослівно:**
@@ -21,7 +21,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -51,7 +81,7 @@
 
 ---
 
-<!-- fc id:T-K07-004 sha:43e6233d src:kartky/k07-panika.md:16 klas:F -->
+<!-- fc id:T-K07-004 sha:43e6233d src:kartky/k07-panika.md:16 klas:A -->
 ### T-K07-004 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -60,11 +90,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-005 sha:c9684ba0 src:kartky/k07-panika.md:16 klas:F -->
+<!-- fc id:T-K07-005 sha:c9684ba0 src:kartky/k07-panika.md:16 klas:A -->
 ### T-K07-005 · komirka · рядок 16
 
 **Книга каже, дослівно:**
@@ -73,11 +133,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-006 sha:17665be2 src:kartky/k07-panika.md:17 klas:F -->
+<!-- fc id:T-K07-006 sha:17665be2 src:kartky/k07-panika.md:17 klas:A -->
 ### T-K07-006 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -86,11 +176,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-007 sha:79b748d0 src:kartky/k07-panika.md:17 klas:F -->
+<!-- fc id:T-K07-007 sha:79b748d0 src:kartky/k07-panika.md:17 klas:A -->
 ### T-K07-007 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -99,11 +219,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-008 sha:81fd026c src:kartky/k07-panika.md:18 klas:F -->
+<!-- fc id:T-K07-008 sha:81fd026c src:kartky/k07-panika.md:18 klas:A -->
 ### T-K07-008 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -112,11 +262,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-009 sha:a365c033 src:kartky/k07-panika.md:18 klas:F -->
+<!-- fc id:T-K07-009 sha:a365c033 src:kartky/k07-panika.md:18 klas:A -->
 ### T-K07-009 · komirka · рядок 18
 
 **Книга каже, дослівно:**
@@ -125,11 +305,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-010 sha:a2d38223 src:kartky/k07-panika.md:19 klas:F -->
+<!-- fc id:T-K07-010 sha:a2d38223 src:kartky/k07-panika.md:19 klas:A -->
 ### T-K07-010 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -138,11 +348,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-011 sha:5208283b src:kartky/k07-panika.md:19 klas:F -->
+<!-- fc id:T-K07-011 sha:5208283b src:kartky/k07-panika.md:19 klas:A -->
 ### T-K07-011 · komirka · рядок 19
 
 **Книга каже, дослівно:**
@@ -151,11 +391,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-012 sha:3df94a10 src:kartky/k07-panika.md:20 klas:F -->
+<!-- fc id:T-K07-012 sha:3df94a10 src:kartky/k07-panika.md:20 klas:A -->
 ### T-K07-012 · komirka · рядок 20
 
 **Книга каже, дослівно:**
@@ -164,11 +434,41 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-K07-013 sha:1d31178b src:kartky/k07-panika.md:20 klas:F -->
+<!-- fc id:T-K07-013 sha:1d31178b src:kartky/k07-panika.md:20 klas:A -->
 ### T-K07-013 · komirka · рядок 20
 
 **Книга каже, дослівно:**
@@ -177,7 +477,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -220,7 +550,7 @@
 
 ---
 
-<!-- fc id:T-K07-017 sha:e501e2ce src:kartky/k07-panika.md:24 klas:F -->
+<!-- fc id:T-K07-017 sha:e501e2ce src:kartky/k07-panika.md:24 klas:A -->
 ### T-K07-017 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -229,7 +559,22 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+- **Дослівно з джерела:**
+  > const char *caption = "Task watchdog got triggered. "
+  >                       "The following tasks/users did not reset the watchdog in time:";
+  > …
+  >     ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
+  > …
+  > ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
+  > ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
+Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`, тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить, і саме там винуватець.
+Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок уваги — у розділі 26 і додатку D.
+Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а книга друкувала один.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -256,7 +601,7 @@
 
 ---
 
-<!-- fc id:T-K07-019 sha:7474c60a src:kartky/k07-panika.md:28 klas:F -->
+<!-- fc id:T-K07-019 sha:7474c60a src:kartky/k07-panika.md:28 klas:A -->
 ### T-K07-019 · proza · рядок 28
 
 **Книга каже, дослівно:**
@@ -265,7 +610,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c та .../esp_system/port/arch/xtensa/panic_arch.c
+- **Дослівно з джерела:**
+  > (panic.c)
+  > panic_print_str("Guru Meditation Error: Core ");
+  > panic_print_dec(info->core);
+  > panic_print_str(" panic'ed (");
+  > panic_print_str(info->reason);
+  > panic_print_str("). ");
+  > 
+  > (panic_arch.c)
+  > static const char *reason[] = {
+  >     "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
+  >     "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
+  >     "Privileged", "LoadStoreAlignment", …
+  >     "InstrFetchProhibited", …
+  >     "LoadProhibited", "StoreProhibited", …
+  > };
+  > info->description = "Exception was unhandled.";
+  > 
+  > static const char *pseudo_reason[] = { …
+  >     "Interrupt wdt timeout on CPU0",
+  >     "Interrupt wdt timeout on CPU1",
+  >     "Cache error", };
+  > info->description = NULL;
+  > 
+  > panic_print_str("Cache disabled but cached memory region accessed");
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці, а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
+Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення про кеш теж дослівне.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 

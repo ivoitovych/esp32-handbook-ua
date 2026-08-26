@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/17-esptool.md`
 
-Одиниць твердження: **145**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **151**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -2015,16 +2015,41 @@
 
 ---
 
-<!-- fc id:T-17-103 sha:30d662b6 src:manual/17-esptool.md:239 klas:F -->
+<!-- fc id:T-17-103 sha:36e4678e src:manual/17-esptool.md:239 klas:A -->
 ### T-17-103 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
-> **`A fatal error occurred: Failed to connect to ESP32: Timed out waiting for packet header`**
+> **`A fatal error occurred: Failed to connect to ESP32: No serial data received.`**
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
@@ -2041,8 +2066,72 @@
 
 ---
 
-<!-- fc id:T-17-105 sha:81eb3b69 src:manual/17-esptool.md:246 klas:F -->
+<!-- fc id:T-17-105 sha:7eae188f src:manual/17-esptool.md:246 klas:F -->
 ### T-17-105 · proza · рядок 246
+
+**Книга каже, дослівно:**
+
+> Друга половина рядка залежить від версії.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-106 sha:a9001ab8 src:manual/17-esptool.md:246 klas:A -->
+### T-17-106 · proza · рядок 246
+
+**Книга каже, дослівно:**
+
+> `No serial data received.` — esptool v4 і v5; `Timed out waiting for packet header` — старіші v3, які ще трапляються в готових складаннях і в чужих інструкціях.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-17-107 sha:2936ba3a src:manual/17-esptool.md:246 klas:F -->
+### T-17-107 · proza · рядок 246
+
+**Книга каже, дослівно:**
+
+> Причина в обох випадках та сама, і шукати варто за початком рядка — `Failed to connect`.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-108 sha:81eb3b69 src:manual/17-esptool.md:252 klas:F -->
+### T-17-108 · proza · рядок 252
 
 **Книга каже, дослівно:**
 
@@ -2054,8 +2143,8 @@
 
 ---
 
-<!-- fc id:T-17-106 sha:c018ab70 src:manual/17-esptool.md:248 klas:F -->
-### T-17-106 · proza · рядок 248
+<!-- fc id:T-17-109 sha:c018ab70 src:manual/17-esptool.md:254 klas:F -->
+### T-17-109 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -2067,8 +2156,8 @@
 
 ---
 
-<!-- fc id:T-17-107 sha:1070199a src:manual/17-esptool.md:248 klas:F -->
-### T-17-107 · proza · рядок 248
+<!-- fc id:T-17-110 sha:1070199a src:manual/17-esptool.md:254 klas:F -->
+### T-17-110 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -2080,8 +2169,8 @@
 
 ---
 
-<!-- fc id:T-17-108 sha:7c5d9fa9 src:manual/17-esptool.md:251 klas:F -->
-### T-17-108 · proza · рядок 251
+<!-- fc id:T-17-111 sha:7c5d9fa9 src:manual/17-esptool.md:257 klas:F -->
+### T-17-111 · proza · рядок 257
 
 **Книга каже, дослівно:**
 
@@ -2093,8 +2182,8 @@
 
 ---
 
-<!-- fc id:T-17-109 sha:d0ad404c src:manual/17-esptool.md:253 klas:F -->
-### T-17-109 · proza · рядок 253
+<!-- fc id:T-17-112 sha:d0ad404c src:manual/17-esptool.md:259 klas:F -->
+### T-17-112 · proza · рядок 259
 
 **Книга каже, дослівно:**
 
@@ -2106,8 +2195,8 @@
 
 ---
 
-<!-- fc id:T-17-110 sha:cf4197d0 src:manual/17-esptool.md:253 klas:F -->
-### T-17-110 · proza · рядок 253
+<!-- fc id:T-17-113 sha:cf4197d0 src:manual/17-esptool.md:259 klas:F -->
+### T-17-113 · proza · рядок 259
 
 **Книга каже, дослівно:**
 
@@ -2119,8 +2208,8 @@
 
 ---
 
-<!-- fc id:T-17-111 sha:e7619250 src:manual/17-esptool.md:256 klas:F -->
-### T-17-111 · proza · рядок 256
+<!-- fc id:T-17-114 sha:e7619250 src:manual/17-esptool.md:262 klas:A -->
+### T-17-114 · proza · рядок 262
 
 **Книга каже, дослівно:**
 
@@ -2128,12 +2217,37 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-17-112 sha:c6ae817f src:manual/17-esptool.md:258 klas:F -->
-### T-17-112 · proza · рядок 258
+<!-- fc id:T-17-115 sha:c6ae817f src:manual/17-esptool.md:264 klas:F -->
+### T-17-115 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -2145,8 +2259,8 @@
 
 ---
 
-<!-- fc id:T-17-113 sha:dc7b5a5b src:manual/17-esptool.md:258 klas:F -->
-### T-17-113 · proza · рядок 258
+<!-- fc id:T-17-116 sha:dc7b5a5b src:manual/17-esptool.md:264 klas:F -->
+### T-17-116 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -2158,8 +2272,8 @@
 
 ---
 
-<!-- fc id:T-17-114 sha:ea00dd94 src:manual/17-esptool.md:258 klas:F -->
-### T-17-114 · proza · рядок 258
+<!-- fc id:T-17-117 sha:ea00dd94 src:manual/17-esptool.md:264 klas:F -->
+### T-17-117 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -2171,8 +2285,8 @@
 
 ---
 
-<!-- fc id:T-17-115 sha:acad2592 src:manual/17-esptool.md:258 klas:F -->
-### T-17-115 · proza · рядок 258
+<!-- fc id:T-17-118 sha:acad2592 src:manual/17-esptool.md:264 klas:F -->
+### T-17-118 · proza · рядок 264
 
 **Книга каже, дослівно:**
 
@@ -2184,8 +2298,8 @@
 
 ---
 
-<!-- fc id:T-17-116 sha:ec91ebc5 src:manual/17-esptool.md:263 klas:F -->
-### T-17-116 · proza · рядок 263
+<!-- fc id:T-17-119 sha:ec91ebc5 src:manual/17-esptool.md:269 klas:F -->
+### T-17-119 · proza · рядок 269
 
 **Книга каже, дослівно:**
 
@@ -2197,8 +2311,8 @@
 
 ---
 
-<!-- fc id:T-17-117 sha:290a4865 src:manual/17-esptool.md:265 klas:F -->
-### T-17-117 · proza · рядок 265
+<!-- fc id:T-17-120 sha:290a4865 src:manual/17-esptool.md:271 klas:F -->
+### T-17-120 · proza · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -2210,8 +2324,8 @@
 
 ---
 
-<!-- fc id:T-17-118 sha:5e738a7f src:manual/17-esptool.md:265 klas:F -->
-### T-17-118 · proza · рядок 265
+<!-- fc id:T-17-121 sha:5e738a7f src:manual/17-esptool.md:271 klas:F -->
+### T-17-121 · proza · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -2223,8 +2337,8 @@
 
 ---
 
-<!-- fc id:T-17-119 sha:c0befa74 src:manual/17-esptool.md:265 klas:F -->
-### T-17-119 · proza · рядок 265
+<!-- fc id:T-17-122 sha:c0befa74 src:manual/17-esptool.md:271 klas:F -->
+### T-17-122 · proza · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -2236,21 +2350,46 @@
 
 ---
 
-<!-- fc id:T-17-120 sha:7d544eb3 src:manual/17-esptool.md:269 klas:F -->
-### T-17-120 · proza · рядок 269
+<!-- fc id:T-17-123 sha:c229b138 src:manual/17-esptool.md:275 klas:A -->
+### T-17-123 · proza · рядок 275
 
 **Книга каже, дослівно:**
 
-> **`This chip is ESP32-S3 not ESP32`**
+> **`This chip is ESP32-S3, not ESP32.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
-<!-- fc id:T-17-121 sha:2d9087c4 src:manual/17-esptool.md:271 klas:F -->
-### T-17-121 · proza · рядок 271
+<!-- fc id:T-17-124 sha:2d9087c4 src:manual/17-esptool.md:277 klas:F -->
+### T-17-124 · proza · рядок 277
 
 **Книга каже, дослівно:**
 
@@ -2262,8 +2401,8 @@
 
 ---
 
-<!-- fc id:T-17-122 sha:efdb570a src:manual/17-esptool.md:271 klas:F -->
-### T-17-122 · proza · рядок 271
+<!-- fc id:T-17-125 sha:efdb570a src:manual/17-esptool.md:277 klas:F -->
+### T-17-125 · proza · рядок 277
 
 **Книга каже, дослівно:**
 
@@ -2275,8 +2414,8 @@
 
 ---
 
-<!-- fc id:T-17-123 sha:8a18dd3e src:manual/17-esptool.md:274 klas:F -->
-### T-17-123 · proza · рядок 274
+<!-- fc id:T-17-126 sha:8a18dd3e src:manual/17-esptool.md:280 klas:F -->
+### T-17-126 · proza · рядок 280
 
 **Книга каже, дослівно:**
 
@@ -2288,8 +2427,8 @@
 
 ---
 
-<!-- fc id:T-17-124 sha:f7560ce0 src:manual/17-esptool.md:276 klas:F -->
-### T-17-124 · proza · рядок 276
+<!-- fc id:T-17-127 sha:f7560ce0 src:manual/17-esptool.md:282 klas:F -->
+### T-17-127 · proza · рядок 282
 
 **Книга каже, дослівно:**
 
@@ -2301,8 +2440,8 @@
 
 ---
 
-<!-- fc id:T-17-125 sha:567f0570 src:manual/17-esptool.md:276 klas:A -->
-### T-17-125 · proza · рядок 276
+<!-- fc id:T-17-128 sha:567f0570 src:manual/17-esptool.md:282 klas:A -->
+### T-17-128 · proza · рядок 282
 
 **Книга каже, дослівно:**
 
@@ -2327,8 +2466,8 @@
 
 ---
 
-<!-- fc id:T-17-126 sha:f93a70ab src:manual/17-esptool.md:281 klas:F -->
-### T-17-126 · proza · рядок 281
+<!-- fc id:T-17-129 sha:f93a70ab src:manual/17-esptool.md:287 klas:F -->
+### T-17-129 · proza · рядок 287
 
 **Книга каже, дослівно:**
 
@@ -2340,8 +2479,8 @@
 
 ---
 
-<!-- fc id:T-17-127 sha:c2ed87c0 src:manual/17-esptool.md:283 klas:A -->
-### T-17-127 · kod · рядок 283
+<!-- fc id:T-17-130 sha:c2ed87c0 src:manual/17-esptool.md:289 klas:A -->
+### T-17-130 · kod · рядок 289
 
 **Книга каже, дослівно:**
 
@@ -2375,8 +2514,8 @@
 
 ---
 
-<!-- fc id:T-17-128 sha:e196de7b src:manual/17-esptool.md:284 klas:A -->
-### T-17-128 · kod-ryadok · рядок 284
+<!-- fc id:T-17-131 sha:e196de7b src:manual/17-esptool.md:290 klas:A -->
+### T-17-131 · kod-ryadok · рядок 290
 
 **Книга каже, дослівно:**
 
@@ -2408,8 +2547,8 @@
 
 ---
 
-<!-- fc id:T-17-129 sha:10d41f6e src:manual/17-esptool.md:287 klas:A -->
-### T-17-129 · proza · рядок 287
+<!-- fc id:T-17-132 sha:10d41f6e src:manual/17-esptool.md:293 klas:A -->
+### T-17-132 · proza · рядок 293
 
 **Книга каже, дослівно:**
 
@@ -2434,8 +2573,8 @@
 
 ---
 
-<!-- fc id:T-17-130 sha:6ac44b20 src:manual/17-esptool.md:287 klas:F -->
-### T-17-130 · proza · рядок 287
+<!-- fc id:T-17-133 sha:6ac44b20 src:manual/17-esptool.md:293 klas:F -->
+### T-17-133 · proza · рядок 293
 
 **Книга каже, дослівно:**
 
@@ -2447,8 +2586,8 @@
 
 ---
 
-<!-- fc id:T-17-131 sha:59239464 src:manual/17-esptool.md:291 klas:F -->
-### T-17-131 · proza · рядок 291
+<!-- fc id:T-17-134 sha:59239464 src:manual/17-esptool.md:297 klas:F -->
+### T-17-134 · proza · рядок 297
 
 **Книга каже, дослівно:**
 
@@ -2460,12 +2599,50 @@
 
 ---
 
-<!-- fc id:T-17-132 sha:36eba84f src:manual/17-esptool.md:294 klas:F -->
-### T-17-132 · proza · рядок 294
+<!-- fc id:T-17-135 sha:391b6f3d src:manual/17-esptool.md:300 klas:A -->
+### T-17-135 · proza · рядок 300
 
 **Книга каже, дослівно:**
 
-> **`Stub is disabled` / `Failed to run stub`**
+> **`Failed to start stub flasher.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-17-136 sha:2d2315ba src:manual/17-esptool.md:300 klas:F -->
+### T-17-136 · proza · рядок 300
+
+**Книга каже, дослівно:**
+
+> There was no response.`**
 
 **Доказ**
 
@@ -2473,8 +2650,8 @@
 
 ---
 
-<!-- fc id:T-17-133 sha:6f4d2986 src:manual/17-esptool.md:296 klas:F -->
-### T-17-133 · proza · рядок 296
+<!-- fc id:T-17-137 sha:6f4d2986 src:manual/17-esptool.md:302 klas:F -->
+### T-17-137 · proza · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -2486,8 +2663,8 @@
 
 ---
 
-<!-- fc id:T-17-134 sha:4a61aa2a src:manual/17-esptool.md:296 klas:F -->
-### T-17-134 · proza · рядок 296
+<!-- fc id:T-17-138 sha:4a61aa2a src:manual/17-esptool.md:302 klas:F -->
+### T-17-138 · proza · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -2499,8 +2676,8 @@
 
 ---
 
-<!-- fc id:T-17-135 sha:6c0640de src:manual/17-esptool.md:296 klas:F -->
-### T-17-135 · proza · рядок 296
+<!-- fc id:T-17-139 sha:6c0640de src:manual/17-esptool.md:302 klas:F -->
+### T-17-139 · proza · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -2512,8 +2689,59 @@
 
 ---
 
-<!-- fc id:T-17-136 sha:2a9519b0 src:manual/17-esptool.md:302 klas:F -->
-### T-17-136 · proza · рядок 302
+<!-- fc id:T-17-140 sha:0df8e570 src:manual/17-esptool.md:306 klas:A -->
+### T-17-140 · proza · рядок 306
+
+**Книга каже, дослівно:**
+
+> Сусіднє попередження `Stub flasher has been disabled for compatibility, set --no-stub to suppress this warning.` — не помилка: `esptool` сам вимкнув stub і працює далі.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
+
+---
+
+<!-- fc id:T-17-141 sha:d286f7b3 src:manual/17-esptool.md:310 klas:F -->
+### T-17-141 · proza · рядок 310
+
+**Книга каже, дослівно:**
+
+> У v4 ті самі рядки коротші — `Failed to start stub.` Шукати варто за словом `stub`, а не за повним реченням.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-17-142 sha:2a9519b0 src:manual/17-esptool.md:315 klas:F -->
+### T-17-142 · proza · рядок 315
 
 **Книга каже, дослівно:**
 
@@ -2525,8 +2753,8 @@
 
 ---
 
-<!-- fc id:T-17-137 sha:918d6503 src:manual/17-esptool.md:302 klas:F -->
-### T-17-137 · proza · рядок 302
+<!-- fc id:T-17-143 sha:918d6503 src:manual/17-esptool.md:315 klas:F -->
+### T-17-143 · proza · рядок 315
 
 **Книга каже, дослівно:**
 
@@ -2538,8 +2766,8 @@
 
 ---
 
-<!-- fc id:T-17-138 sha:313ef396 src:manual/17-esptool.md:306 klas:F -->
-### T-17-138 · proza · рядок 306
+<!-- fc id:T-17-144 sha:313ef396 src:manual/17-esptool.md:319 klas:F -->
+### T-17-144 · proza · рядок 319
 
 **Книга каже, дослівно:**
 
@@ -2551,8 +2779,8 @@
 
 ---
 
-<!-- fc id:T-17-139 sha:e977c57d src:manual/17-esptool.md:306 klas:F -->
-### T-17-139 · proza · рядок 306
+<!-- fc id:T-17-145 sha:e977c57d src:manual/17-esptool.md:319 klas:F -->
+### T-17-145 · proza · рядок 319
 
 **Книга каже, дослівно:**
 
@@ -2564,8 +2792,8 @@
 
 ---
 
-<!-- fc id:T-17-140 sha:2d322667 src:manual/17-esptool.md:313 klas:F -->
-### T-17-140 · proza · рядок 313
+<!-- fc id:T-17-146 sha:2d322667 src:manual/17-esptool.md:326 klas:F -->
+### T-17-146 · proza · рядок 326
 
 **Книга каже, дослівно:**
 
@@ -2577,8 +2805,8 @@
 
 ---
 
-<!-- fc id:T-17-141 sha:8eda1231 src:manual/17-esptool.md:315 klas:F -->
-### T-17-141 · proza · рядок 315
+<!-- fc id:T-17-147 sha:8eda1231 src:manual/17-esptool.md:328 klas:F -->
+### T-17-147 · proza · рядок 328
 
 **Книга каже, дослівно:**
 
@@ -2590,8 +2818,8 @@
 
 ---
 
-<!-- fc id:T-17-142 sha:a7f08f37 src:manual/17-esptool.md:317 klas:F -->
-### T-17-142 · proza · рядок 317
+<!-- fc id:T-17-148 sha:a7f08f37 src:manual/17-esptool.md:330 klas:F -->
+### T-17-148 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2603,8 +2831,8 @@
 
 ---
 
-<!-- fc id:T-17-143 sha:0de9cf8b src:manual/17-esptool.md:317 klas:F -->
-### T-17-143 · proza · рядок 317
+<!-- fc id:T-17-149 sha:0de9cf8b src:manual/17-esptool.md:330 klas:F -->
+### T-17-149 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2616,8 +2844,8 @@
 
 ---
 
-<!-- fc id:T-17-144 sha:42368b26 src:manual/17-esptool.md:320 klas:A -->
-### T-17-144 · proza · рядок 320
+<!-- fc id:T-17-150 sha:42368b26 src:manual/17-esptool.md:333 klas:A -->
+### T-17-150 · proza · рядок 333
 
 **Книга каже, дослівно:**
 
@@ -2651,8 +2879,8 @@
 
 ---
 
-<!-- fc id:T-17-145 sha:33a8f7c8 src:manual/17-esptool.md:322 klas:F -->
-### T-17-145 · proza · рядок 322
+<!-- fc id:T-17-151 sha:33a8f7c8 src:manual/17-esptool.md:335 klas:F -->
+### T-17-151 · proza · рядок 335
 
 **Книга каже, дослівно:**
 

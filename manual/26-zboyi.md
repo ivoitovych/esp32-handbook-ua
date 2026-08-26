@@ -102,8 +102,9 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 **Task Watchdog Timer (TWDT).**
 
 ```
-E (5234) task_wdt: Task watchdog got triggered.
-E (5234) task_wdt: - IDLE0 (CPU 0)
+E (5234) task_wdt: Task watchdog got triggered. The following tasks/users
+did not reset the watchdog in time:
+E (5234) task_wdt:  - IDLE0 (CPU 0)
 E (5234) task_wdt: Tasks currently running:
 E (5234) task_wdt: CPU 0: my_task
 ```
@@ -111,6 +112,20 @@ E (5234) task_wdt: CPU 0: my_task
 Означає: задача не віддавала керування занадто довго. За замовчуванням
 стежать за IDLE-задачами — якщо IDLE не отримала часу, значить, хтось
 зайняв ядро повністю.
+
+::: uvaha
+**Два переліки в цьому дампі — різні, і плутати їх дорого.**
+
+Після першого рядка йдуть ті, хто **не встиг погодувати** watchdog. У
+типовому випадку це `IDLE0` — тобто потерпілий, а не винуватець.
+
+`Tasks currently running:` — те, що виконувалося в момент спрацювання.
+Ось тут і стоїть винуватець: `my_task` зайняв ядро й не дав IDLE
+запуститися.
+
+Шукати треба ім'я з **другого** переліку. Перший лише каже, на якому
+ядрі стало погано.
+:::
 
 Типова причина — цикл без затримки:
 

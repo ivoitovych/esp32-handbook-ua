@@ -695,16 +695,41 @@
 
 ---
 
-<!-- fc id:T-09-054 sha:7002b15e src:manual/09-pidklyuchennya.md:96 klas:F -->
+<!-- fc id:T-09-054 sha:57ed544a src:manual/09-pidklyuchennya.md:96 klas:A -->
 ### T-09-054 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
-> Метрові тонкі кабелі дають просадку напруги, і прошивка обривається на `MD5 does not match`.
+> Метрові тонкі кабелі дають просадку напруги, і прошивка обривається на `MD5 of file does not match data in flash!`.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Дослівно з джерела:**
+  > (v5 loader.py)
+  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
+  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
+  >        if successful_slip else "No serial data received.")
+  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
+  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
+  > log.warn("Stub flasher has been disabled for compatibility, "
+  >          "set --no-stub to suppress this warning.")
+  > 
+  > (cmds.py)
+  > raise FatalError("MD5 of file does not match data in flash!")
+  > 
+  > (v4.8.1 loader.py — для порівняння)
+  > "This chip is %s not %s. Wrong --chip argument?"
+  > "Failed to start stub. There was no response."
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
+`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
+`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
+Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
+- **Прохід:** pass-10-povidomlennya
 
 ---
 
