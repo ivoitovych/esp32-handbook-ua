@@ -543,7 +543,7 @@
 
 ---
 
-<!-- fc id:T-27-031 sha:e3294ed3 src:manual/27-jtag.md:79 klas:C -->
+<!-- fc id:T-27-031 sha:e3294ed3 src:manual/27-jtag.md:79 klas:A -->
 ### T-27-031 · tablycya · рядок 79
 
 **Книга каже, дослівно:**
@@ -552,14 +552,23 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** ESP32 Series Datasheet, розділ «Pin Definitions» (таблиця альтернативних функцій IO_MUX). Звідси недосяжний — політика egress
-- **Що шукати в джерелі:** у таблиці IO_MUX знайти рядки GPIO13 і GPIO14 і звірити альтернативну функцію: очікується MTCK для GPIO13 і MTMS для GPIO14
-- **Нотатка:** Друга половина таблиці лишається незакритою, і це записано, а не приховано.
-Мапінг `MTCK`/`MTMS` на `GPIO13`/`GPIO14` не трапився в жодному з досяжних звідси джерел: ані в заголовках `soc/`, ані в документації esptool, ані в посібнику з JTAG-налагодження ESP-IDF, ані в описі ESP-Prog. Він живе в таблиці IO_MUX самого datasheet.
-Спокуса поставити тут клас `A` була найбільшою за всі двадцять проходів: мапінг відомий кожному, хто хоч раз чіпав JTAG на ESP32, і жоден читач не засумнівався б. Саме для таких моментів і написане правило: клас `A` лише тоді, коли текст джерела справді отримано.
-Практична вага помилки тут, до речі, невелика: переплутані `TCK` і `TMS` дають непрацюючий JTAG, а не спалену плату. Але реєстр не сортує чесність за ціною помилки.
-- **Прохід:** pass-20-jtag-obvyazka
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/register/soc/io_mux_reg.h
+- **Дослівно з джерела:**
+  > #define PERIPHS_IO_MUX_MTDI_U             (DR_REG_IO_MUX_BASE +0x34)
+  > #define IO_MUX_GPIO12_REG                    PERIPHS_IO_MUX_MTDI_U
+  > #define PERIPHS_IO_MUX_MTCK_U             (DR_REG_IO_MUX_BASE +0x38)
+  > #define IO_MUX_GPIO13_REG                    PERIPHS_IO_MUX_MTCK_U
+  > #define PERIPHS_IO_MUX_MTMS_U             (DR_REG_IO_MUX_BASE +0x30)
+  > #define IO_MUX_GPIO14_REG                    PERIPHS_IO_MUX_MTMS_U
+  > #define PERIPHS_IO_MUX_MTDO_U             (DR_REG_IO_MUX_BASE +0x3c)
+  > #define IO_MUX_GPIO15_REG                    PERIPHS_IO_MUX_MTDO_U
+  > #define FUNC_MTDI_MTDI                              0
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Прохід 20 закрив два піни з чотирьох і два свідомо відправив у наряд, бо йшов від документації, де таблиця JTAG-пінів підставляється директивою і в сирому `.rst` не читається.
+Тут узято інше джерело, і воно однозначніше: у самому заголовку IOMUX ім'я регістра **є** іменем сигналу JTAG. `IO_MUX_GPIO12_REG` дорівнює `PERIPHS_IO_MUX_MTDI_U` — тобто GPIO12 і MTDI це один і той самий вивід, а `FUNC_MTDI_MTDI = 0` каже, що JTAG — функція нуль, тобто типова після скидання.
+Усі чотири рядки таблиці розділу 27 звірено: TMS `GPIO14`, TDI `GPIO12`, TCK `GPIO13`, TDO `GPIO15`. Розбіжностей немає. Два пункти наряду проходу 20 закрито.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
@@ -584,7 +593,7 @@
 
 ---
 
-<!-- fc id:T-27-033 sha:8041ede0 src:manual/27-jtag.md:81 klas:C -->
+<!-- fc id:T-27-033 sha:8041ede0 src:manual/27-jtag.md:81 klas:A -->
 ### T-27-033 · tablycya · рядок 81
 
 **Книга каже, дослівно:**
@@ -593,14 +602,23 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** ESP32 Series Datasheet, розділ «Pin Definitions» (таблиця альтернативних функцій IO_MUX). Звідси недосяжний — політика egress
-- **Що шукати в джерелі:** у таблиці IO_MUX знайти рядки GPIO13 і GPIO14 і звірити альтернативну функцію: очікується MTCK для GPIO13 і MTMS для GPIO14
-- **Нотатка:** Друга половина таблиці лишається незакритою, і це записано, а не приховано.
-Мапінг `MTCK`/`MTMS` на `GPIO13`/`GPIO14` не трапився в жодному з досяжних звідси джерел: ані в заголовках `soc/`, ані в документації esptool, ані в посібнику з JTAG-налагодження ESP-IDF, ані в описі ESP-Prog. Він живе в таблиці IO_MUX самого datasheet.
-Спокуса поставити тут клас `A` була найбільшою за всі двадцять проходів: мапінг відомий кожному, хто хоч раз чіпав JTAG на ESP32, і жоден читач не засумнівався б. Саме для таких моментів і написане правило: клас `A` лише тоді, коли текст джерела справді отримано.
-Практична вага помилки тут, до речі, невелика: переплутані `TCK` і `TMS` дають непрацюючий JTAG, а не спалену плату. Але реєстр не сортує чесність за ціною помилки.
-- **Прохід:** pass-20-jtag-obvyazka
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/register/soc/io_mux_reg.h
+- **Дослівно з джерела:**
+  > #define PERIPHS_IO_MUX_MTDI_U             (DR_REG_IO_MUX_BASE +0x34)
+  > #define IO_MUX_GPIO12_REG                    PERIPHS_IO_MUX_MTDI_U
+  > #define PERIPHS_IO_MUX_MTCK_U             (DR_REG_IO_MUX_BASE +0x38)
+  > #define IO_MUX_GPIO13_REG                    PERIPHS_IO_MUX_MTCK_U
+  > #define PERIPHS_IO_MUX_MTMS_U             (DR_REG_IO_MUX_BASE +0x30)
+  > #define IO_MUX_GPIO14_REG                    PERIPHS_IO_MUX_MTMS_U
+  > #define PERIPHS_IO_MUX_MTDO_U             (DR_REG_IO_MUX_BASE +0x3c)
+  > #define IO_MUX_GPIO15_REG                    PERIPHS_IO_MUX_MTDO_U
+  > #define FUNC_MTDI_MTDI                              0
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Прохід 20 закрив два піни з чотирьох і два свідомо відправив у наряд, бо йшов від документації, де таблиця JTAG-пінів підставляється директивою і в сирому `.rst` не читається.
+Тут узято інше джерело, і воно однозначніше: у самому заголовку IOMUX ім'я регістра **є** іменем сигналу JTAG. `IO_MUX_GPIO12_REG` дорівнює `PERIPHS_IO_MUX_MTDI_U` — тобто GPIO12 і MTDI це один і той самий вивід, а `FUNC_MTDI_MTDI = 0` каже, що JTAG — функція нуль, тобто типова після скидання.
+Усі чотири рядки таблиці розділу 27 звірено: TMS `GPIO14`, TDI `GPIO12`, TCK `GPIO13`, TDO `GPIO15`. Розбіжностей немає. Два пункти наряду проходу 20 закрито.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 

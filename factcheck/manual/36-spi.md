@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/36-spi.md`
 
-Одиниць твердження: **122**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **127**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -854,12 +854,12 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-056 sha:f871807b src:manual/36-spi.md:80 klas:A -->
+<!-- fc id:T-36-056 sha:ecc19346 src:manual/36-spi.md:80 klas:A -->
 ### T-36-056 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
-> **На рідних пінах** контролера швидкість максимальна.
+> **На рідних пінах** контролера межа — 80 МГц.
 
 **Доказ**
 
@@ -878,12 +878,12 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-057 sha:18ac2d0a src:manual/36-spi.md:80 klas:A -->
+<!-- fc id:T-36-057 sha:a4ae936e src:manual/36-spi.md:80 klas:A -->
 ### T-36-057 · proza · рядок 80
 
 **Книга каже, дослівно:**
 
-> **Через матрицю GPIO** (розділ 04) додається затримка, і межа знижується приблизно вдвічі — це та ціна, яку платять за свободу вибору пінів.
+> **Через матрицю GPIO** (розділ 04) — 40 МГц: рівно вдвічі, і це та ціна, яку платять за свободу вибору пінів.
 
 **Доказ**
 
@@ -902,8 +902,123 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-058 sha:8c459e5d src:manual/36-spi.md:84 klas:E -->
+<!-- fc id:T-36-058 sha:c2791def src:manual/36-spi.md:84 klas:E -->
 ### T-36-058 · proza · рядок 84
+
+**Книга каже, дослівно:**
+
+> Але ціна ця сплачується не завжди.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-059 sha:a82c89d8 src:manual/36-spi.md:84 klas:A -->
+### T-36-059 · proza · рядок 84
+
+**Книга каже, дослівно:**
+
+> **На 40 МГц і нижче різниці немає взагалі** — матриця поводиться так само, як рідні піни.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+- **Дослівно з джерела:**
+  > Most of ESP32's peripheral signals have a direct connection to their
+  > dedicated IO_MUX pins. However, the signals can also be routed to any
+  > other available pins using the less direct GPIO matrix. If at least one
+  > signal is routed through the GPIO matrix, then all signals will be
+  > routed through it.
+  > 
+  > The GPIO matrix introduces flexibility of routing but also brings the
+  > following disadvantages:
+  > - Allows signals with clock frequencies only up to 40 MHz, as opposed
+  >   to 80 MHz if IO_MUX pins are used.
+  > 
+  > When an SPI Host is set to 40 MHz or lower frequencies, routing SPI
+  > pins via the GPIO matrix will behave the same compared to routing them
+  > via IOMUX.
+  > 
+  > {IDF_TARGET_SPI2_IOMUX_PIN_MISO: … esp32c3="2" …}
+  > {IDF_TARGET_SPI2_IOMUX_PIN_CS:   … esp32c3="10" …}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Книга писала «через матрицю межа знижується приблизно вдвічі». Число правильне (40 проти 80), але слово «приблизно» ховало те, що читачеві потрібне найбільше: **нижче 40 МГц різниці немає жодної**.
+Різниця між двома формулюваннями практична. Перше змушує підбирати рідні піни завжди — і платити за це розведенням плати. Друге каже прямо: для microSD, дисплеїв і датчиків, тобто для майже всього в цій книзі, питання рідних пінів не стоїть узагалі.
+Додано й правило «все або нічого»: досить однієї лінії поза рідними пінами, щоб через матрицю пішли всі. Проміжного стану немає, і «майже рідний» набір дає ту саму межу, що й довільний. Без цього читач природно вирішує, що виграє потроху за кожен рідний пін.
+Виправлено в розділах 36 (двічі: виклад і підсумок) і 04. Заразом підстановки документації підтвердили рідні піни C3 з другого боку: `MISO` = `GPIO2`, `CS` = `GPIO10` — те саме, що в `spi_pins.h`.
+- **Прохід:** pass-24-zsuvy-i-matrycya
+
+---
+
+<!-- fc id:T-36-060 sha:d78527db src:manual/36-spi.md:84 klas:E -->
+### T-36-060 · proza · рядок 84
+
+**Книга каже, дослівно:**
+
+> Тобто для microSD, дисплеїв і датчиків, тобто для майже всього в цій книзі, питання «чи мої піни рідні» практичного значення не має.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-061 sha:6d4c6bc4 src:manual/36-spi.md:89 klas:A -->
+### T-36-061 · proza · рядок 89
+
+**Книга каже, дослівно:**
+
+> Ще одна деталь, яку легко не помітити: **достатньо однієї лінії поза рідними пінами, щоб через матрицю пішли всі**.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+- **Дослівно з джерела:**
+  > Most of ESP32's peripheral signals have a direct connection to their
+  > dedicated IO_MUX pins. However, the signals can also be routed to any
+  > other available pins using the less direct GPIO matrix. If at least one
+  > signal is routed through the GPIO matrix, then all signals will be
+  > routed through it.
+  > 
+  > The GPIO matrix introduces flexibility of routing but also brings the
+  > following disadvantages:
+  > - Allows signals with clock frequencies only up to 40 MHz, as opposed
+  >   to 80 MHz if IO_MUX pins are used.
+  > 
+  > When an SPI Host is set to 40 MHz or lower frequencies, routing SPI
+  > pins via the GPIO matrix will behave the same compared to routing them
+  > via IOMUX.
+  > 
+  > {IDF_TARGET_SPI2_IOMUX_PIN_MISO: … esp32c3="2" …}
+  > {IDF_TARGET_SPI2_IOMUX_PIN_CS:   … esp32c3="10" …}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Книга писала «через матрицю межа знижується приблизно вдвічі». Число правильне (40 проти 80), але слово «приблизно» ховало те, що читачеві потрібне найбільше: **нижче 40 МГц різниці немає жодної**.
+Різниця між двома формулюваннями практична. Перше змушує підбирати рідні піни завжди — і платити за це розведенням плати. Друге каже прямо: для microSD, дисплеїв і датчиків, тобто для майже всього в цій книзі, питання рідних пінів не стоїть узагалі.
+Додано й правило «все або нічого»: досить однієї лінії поза рідними пінами, щоб через матрицю пішли всі. Проміжного стану немає, і «майже рідний» набір дає ту саму межу, що й довільний. Без цього читач природно вирішує, що виграє потроху за кожен рідний пін.
+Виправлено в розділах 36 (двічі: виклад і підсумок) і 04. Заразом підстановки документації підтвердили рідні піни C3 з другого боку: `MISO` = `GPIO2`, `CS` = `GPIO10` — те саме, що в `spi_pins.h`.
+- **Прохід:** pass-24-zsuvy-i-matrycya
+
+---
+
+<!-- fc id:T-36-062 sha:b7fc2e0f src:manual/36-spi.md:89 klas:F -->
+### T-36-062 · proza · рядок 89
+
+**Книга каже, дослівно:**
+
+> Проміжного стану немає, і «майже рідний» набір пінів дає ту саму межу 40 МГц, що й повністю довільний.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-36-063 sha:8c459e5d src:manual/36-spi.md:94 klas:E -->
+### T-36-063 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -915,8 +1030,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-059 sha:440fcfa3 src:manual/36-spi.md:84 klas:E -->
-### T-36-059 · proza · рядок 84
+<!-- fc id:T-36-064 sha:440fcfa3 src:manual/36-spi.md:94 klas:E -->
+### T-36-064 · proza · рядок 94
 
 **Книга каже, дослівно:**
 
@@ -928,8 +1043,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-060 sha:e12191cb src:manual/36-spi.md:87 klas:F -->
-### T-36-060 · proza · рядок 87
+<!-- fc id:T-36-065 sha:e12191cb src:manual/36-spi.md:97 klas:F -->
+### T-36-065 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -941,8 +1056,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-061 sha:93acada7 src:manual/36-spi.md:87 klas:E -->
-### T-36-061 · proza · рядок 87
+<!-- fc id:T-36-066 sha:93acada7 src:manual/36-spi.md:97 klas:E -->
+### T-36-066 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -954,8 +1069,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-062 sha:17b08a0c src:manual/36-spi.md:93 klas:K -->
-### T-36-062 · kod · рядок 93
+<!-- fc id:T-36-067 sha:17b08a0c src:manual/36-spi.md:103 klas:K -->
+### T-36-067 · kod · рядок 103
 
 **Книга каже, дослівно:**
 
@@ -1006,8 +1121,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-063 sha:e4881333 src:manual/36-spi.md:95 klas:A -->
-### T-36-063 · kod-ryadok · рядок 95
+<!-- fc id:T-36-068 sha:e4881333 src:manual/36-spi.md:105 klas:A -->
+### T-36-068 · kod-ryadok · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1158,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-064 sha:139b516d src:manual/36-spi.md:96 klas:F -->
-### T-36-064 · kod-ryadok · рядок 96
+<!-- fc id:T-36-069 sha:139b516d src:manual/36-spi.md:106 klas:F -->
+### T-36-069 · kod-ryadok · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -1056,8 +1171,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-065 sha:4bc757ac src:manual/36-spi.md:97 klas:A -->
-### T-36-065 · kod-ryadok · рядок 97
+<!-- fc id:T-36-070 sha:4bc757ac src:manual/36-spi.md:107 klas:A -->
+### T-36-070 · kod-ryadok · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -1093,8 +1208,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-066 sha:514ab3f3 src:manual/36-spi.md:98 klas:F -->
-### T-36-066 · kod-ryadok · рядок 98
+<!-- fc id:T-36-071 sha:514ab3f3 src:manual/36-spi.md:108 klas:F -->
+### T-36-071 · kod-ryadok · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -1106,8 +1221,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-067 sha:2ab54084 src:manual/36-spi.md:99 klas:F -->
-### T-36-067 · kod-ryadok · рядок 99
+<!-- fc id:T-36-072 sha:2ab54084 src:manual/36-spi.md:109 klas:F -->
+### T-36-072 · kod-ryadok · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -1119,8 +1234,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-068 sha:32358bdf src:manual/36-spi.md:100 klas:F -->
-### T-36-068 · kod-ryadok · рядок 100
+<!-- fc id:T-36-073 sha:32358bdf src:manual/36-spi.md:110 klas:F -->
+### T-36-073 · kod-ryadok · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -1132,8 +1247,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-069 sha:77cebc65 src:manual/36-spi.md:102 klas:A -->
-### T-36-069 · kod-ryadok · рядок 102
+<!-- fc id:T-36-074 sha:77cebc65 src:manual/36-spi.md:112 klas:A -->
+### T-36-074 · kod-ryadok · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -1161,8 +1276,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-070 sha:ecc8ae71 src:manual/36-spi.md:105 klas:F -->
-### T-36-070 · kod-ryadok · рядок 105
+<!-- fc id:T-36-075 sha:ecc8ae71 src:manual/36-spi.md:115 klas:F -->
+### T-36-075 · kod-ryadok · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -1174,8 +1289,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-071 sha:0c8398fb src:manual/36-spi.md:106 klas:F -->
-### T-36-071 · kod-ryadok · рядок 106
+<!-- fc id:T-36-076 sha:0c8398fb src:manual/36-spi.md:116 klas:F -->
+### T-36-076 · kod-ryadok · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -1187,8 +1302,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-072 sha:ac435de6 src:manual/36-spi.md:107 klas:A -->
-### T-36-072 · kod-ryadok · рядок 107
+<!-- fc id:T-36-077 sha:ac435de6 src:manual/36-spi.md:117 klas:A -->
+### T-36-077 · kod-ryadok · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -1224,8 +1339,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-073 sha:36828936 src:manual/36-spi.md:108 klas:F -->
-### T-36-073 · kod-ryadok · рядок 108
+<!-- fc id:T-36-078 sha:36828936 src:manual/36-spi.md:118 klas:F -->
+### T-36-078 · kod-ryadok · рядок 118
 
 **Книга каже, дослівно:**
 
@@ -1237,8 +1352,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-074 sha:3a842f5a src:manual/36-spi.md:111 klas:A -->
-### T-36-074 · kod-ryadok · рядок 111
+<!-- fc id:T-36-079 sha:3a842f5a src:manual/36-spi.md:121 klas:A -->
+### T-36-079 · kod-ryadok · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -1266,8 +1381,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-075 sha:144bbe3b src:manual/36-spi.md:115 klas:A -->
-### T-36-075 · kod-ryadok · рядок 115
+<!-- fc id:T-36-080 sha:144bbe3b src:manual/36-spi.md:125 klas:A -->
+### T-36-080 · kod-ryadok · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -1295,8 +1410,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-076 sha:bdc6d9e0 src:manual/36-spi.md:118 klas:F -->
-### T-36-076 · proza · рядок 118
+<!-- fc id:T-36-081 sha:bdc6d9e0 src:manual/36-spi.md:128 klas:F -->
+### T-36-081 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -1308,8 +1423,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-077 sha:79639d5a src:manual/36-spi.md:118 klas:E -->
-### T-36-077 · proza · рядок 118
+<!-- fc id:T-36-082 sha:79639d5a src:manual/36-spi.md:128 klas:E -->
+### T-36-082 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -1321,8 +1436,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-078 sha:68e43f7b src:manual/36-spi.md:121 klas:F -->
-### T-36-078 · proza · рядок 121
+<!-- fc id:T-36-083 sha:68e43f7b src:manual/36-spi.md:131 klas:F -->
+### T-36-083 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -1334,8 +1449,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-079 sha:45437be3 src:manual/36-spi.md:126 klas:E -->
-### T-36-079 · proza · рядок 126
+<!-- fc id:T-36-084 sha:45437be3 src:manual/36-spi.md:136 klas:E -->
+### T-36-084 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -1347,8 +1462,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-080 sha:e9a09396 src:manual/36-spi.md:129 klas:E -->
-### T-36-080 · proza · рядок 129
+<!-- fc id:T-36-085 sha:e9a09396 src:manual/36-spi.md:139 klas:E -->
+### T-36-085 · proza · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -1360,8 +1475,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-081 sha:65a6eae0 src:manual/36-spi.md:131 klas:F -->
-### T-36-081 · proza · рядок 131
+<!-- fc id:T-36-086 sha:65a6eae0 src:manual/36-spi.md:141 klas:F -->
+### T-36-086 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1373,8 +1488,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-082 sha:54abc578 src:manual/36-spi.md:134 klas:K -->
-### T-36-082 · kod · рядок 134
+<!-- fc id:T-36-087 sha:54abc578 src:manual/36-spi.md:144 klas:K -->
+### T-36-087 · kod · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -1404,8 +1519,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-083 sha:fde835ee src:manual/36-spi.md:138 klas:F -->
-### T-36-083 · proza · рядок 138
+<!-- fc id:T-36-088 sha:fde835ee src:manual/36-spi.md:148 klas:F -->
+### T-36-088 · proza · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -1417,8 +1532,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-084 sha:19a5eb78 src:manual/36-spi.md:138 klas:E -->
-### T-36-084 · proza · рядок 138
+<!-- fc id:T-36-089 sha:19a5eb78 src:manual/36-spi.md:148 klas:E -->
+### T-36-089 · proza · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -1430,8 +1545,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-085 sha:9d15bf1a src:manual/36-spi.md:144 klas:F -->
-### T-36-085 · proza · рядок 144
+<!-- fc id:T-36-090 sha:9d15bf1a src:manual/36-spi.md:154 klas:F -->
+### T-36-090 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1443,8 +1558,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-086 sha:5defd1b1 src:manual/36-spi.md:144 klas:F -->
-### T-36-086 · proza · рядок 144
+<!-- fc id:T-36-091 sha:5defd1b1 src:manual/36-spi.md:154 klas:F -->
+### T-36-091 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -1456,8 +1571,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-087 sha:a0ca2c3c src:manual/36-spi.md:147 klas:F -->
-### T-36-087 · proza · рядок 147
+<!-- fc id:T-36-092 sha:a0ca2c3c src:manual/36-spi.md:157 klas:F -->
+### T-36-092 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1469,8 +1584,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-088 sha:54e778ad src:manual/36-spi.md:147 klas:E -->
-### T-36-088 · proza · рядок 147
+<!-- fc id:T-36-093 sha:54e778ad src:manual/36-spi.md:157 klas:E -->
+### T-36-093 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1482,8 +1597,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-089 sha:c0b08d64 src:manual/36-spi.md:151 klas:F -->
-### T-36-089 · proza · рядок 151
+<!-- fc id:T-36-094 sha:c0b08d64 src:manual/36-spi.md:161 klas:F -->
+### T-36-094 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1495,8 +1610,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-090 sha:713918ed src:manual/36-spi.md:151 klas:E -->
-### T-36-090 · proza · рядок 151
+<!-- fc id:T-36-095 sha:713918ed src:manual/36-spi.md:161 klas:E -->
+### T-36-095 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1508,8 +1623,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-091 sha:aa51a579 src:manual/36-spi.md:155 klas:E -->
-### T-36-091 · proza · рядок 155
+<!-- fc id:T-36-096 sha:aa51a579 src:manual/36-spi.md:165 klas:E -->
+### T-36-096 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1521,8 +1636,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-092 sha:3fec2e5c src:manual/36-spi.md:155 klas:E -->
-### T-36-092 · proza · рядок 155
+<!-- fc id:T-36-097 sha:3fec2e5c src:manual/36-spi.md:165 klas:E -->
+### T-36-097 · proza · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1534,8 +1649,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-093 sha:77359921 src:manual/36-spi.md:158 klas:F -->
-### T-36-093 · proza · рядок 158
+<!-- fc id:T-36-098 sha:77359921 src:manual/36-spi.md:168 klas:F -->
+### T-36-098 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -1547,8 +1662,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-094 sha:f906627c src:manual/36-spi.md:164 klas:F -->
-### T-36-094 · tablycya-shapka · рядок 164
+<!-- fc id:T-36-099 sha:f906627c src:manual/36-spi.md:174 klas:F -->
+### T-36-099 · tablycya-shapka · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -1560,8 +1675,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-095 sha:9f4c2a5b src:manual/36-spi.md:165 klas:F -->
-### T-36-095 · komirka · рядок 165
+<!-- fc id:T-36-100 sha:9f4c2a5b src:manual/36-spi.md:175 klas:F -->
+### T-36-100 · komirka · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1573,8 +1688,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-096 sha:47924046 src:manual/36-spi.md:165 klas:F -->
-### T-36-096 · komirka · рядок 165
+<!-- fc id:T-36-101 sha:47924046 src:manual/36-spi.md:175 klas:F -->
+### T-36-101 · komirka · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1586,8 +1701,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-097 sha:8e4ac920 src:manual/36-spi.md:166 klas:F -->
-### T-36-097 · komirka · рядок 166
+<!-- fc id:T-36-102 sha:8e4ac920 src:manual/36-spi.md:176 klas:F -->
+### T-36-102 · komirka · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -1599,8 +1714,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-098 sha:88e28272 src:manual/36-spi.md:166 klas:F -->
-### T-36-098 · komirka · рядок 166
+<!-- fc id:T-36-103 sha:88e28272 src:manual/36-spi.md:176 klas:F -->
+### T-36-103 · komirka · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -1612,8 +1727,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-099 sha:ad2a20bc src:manual/36-spi.md:167 klas:F -->
-### T-36-099 · komirka · рядок 167
+<!-- fc id:T-36-104 sha:ad2a20bc src:manual/36-spi.md:177 klas:F -->
+### T-36-104 · komirka · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1625,8 +1740,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-100 sha:fe66155c src:manual/36-spi.md:167 klas:F -->
-### T-36-100 · komirka · рядок 167
+<!-- fc id:T-36-105 sha:fe66155c src:manual/36-spi.md:177 klas:F -->
+### T-36-105 · komirka · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1638,8 +1753,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-101 sha:f427c359 src:manual/36-spi.md:168 klas:F -->
-### T-36-101 · komirka · рядок 168
+<!-- fc id:T-36-106 sha:f427c359 src:manual/36-spi.md:178 klas:F -->
+### T-36-106 · komirka · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1651,8 +1766,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-102 sha:e67d35a3 src:manual/36-spi.md:168 klas:F -->
-### T-36-102 · komirka · рядок 168
+<!-- fc id:T-36-107 sha:e67d35a3 src:manual/36-spi.md:178 klas:F -->
+### T-36-107 · komirka · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1664,8 +1779,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-103 sha:5ddd7e73 src:manual/36-spi.md:169 klas:F -->
-### T-36-103 · komirka · рядок 169
+<!-- fc id:T-36-108 sha:5ddd7e73 src:manual/36-spi.md:179 klas:F -->
+### T-36-108 · komirka · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1677,8 +1792,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-104 sha:11a45f5d src:manual/36-spi.md:169 klas:F -->
-### T-36-104 · komirka · рядок 169
+<!-- fc id:T-36-109 sha:11a45f5d src:manual/36-spi.md:179 klas:F -->
+### T-36-109 · komirka · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1690,8 +1805,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-105 sha:84417e83 src:manual/36-spi.md:170 klas:F -->
-### T-36-105 · komirka · рядок 170
+<!-- fc id:T-36-110 sha:84417e83 src:manual/36-spi.md:180 klas:F -->
+### T-36-110 · komirka · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1703,8 +1818,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-106 sha:7d93c96f src:manual/36-spi.md:170 klas:F -->
-### T-36-106 · komirka · рядок 170
+<!-- fc id:T-36-111 sha:7d93c96f src:manual/36-spi.md:180 klas:F -->
+### T-36-111 · komirka · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1716,8 +1831,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-107 sha:e8553070 src:manual/36-spi.md:173 klas:E -->
-### T-36-107 · proza · рядок 173
+<!-- fc id:T-36-112 sha:e8553070 src:manual/36-spi.md:183 klas:E -->
+### T-36-112 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1729,8 +1844,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-108 sha:9af4ac10 src:manual/36-spi.md:176 klas:E -->
-### T-36-108 · proza · рядок 176
+<!-- fc id:T-36-113 sha:9af4ac10 src:manual/36-spi.md:186 klas:E -->
+### T-36-113 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1742,8 +1857,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-109 sha:178b7c3f src:manual/36-spi.md:179 klas:E -->
-### T-36-109 · proza · рядок 179
+<!-- fc id:T-36-114 sha:178b7c3f src:manual/36-spi.md:189 klas:E -->
+### T-36-114 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1755,8 +1870,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-110 sha:c4c8a3dc src:manual/36-spi.md:179 klas:E -->
-### T-36-110 · proza · рядок 179
+<!-- fc id:T-36-115 sha:c4c8a3dc src:manual/36-spi.md:189 klas:E -->
+### T-36-115 · proza · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -1768,8 +1883,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-111 sha:4701845c src:manual/36-spi.md:185 klas:F -->
-### T-36-111 · proza · рядок 185
+<!-- fc id:T-36-116 sha:4701845c src:manual/36-spi.md:195 klas:F -->
+### T-36-116 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1781,8 +1896,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-112 sha:5ff6ea36 src:manual/36-spi.md:185 klas:F -->
-### T-36-112 · proza · рядок 185
+<!-- fc id:T-36-117 sha:5ff6ea36 src:manual/36-spi.md:195 klas:F -->
+### T-36-117 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1794,8 +1909,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-113 sha:58094afa src:manual/36-spi.md:185 klas:F -->
-### T-36-113 · proza · рядок 185
+<!-- fc id:T-36-118 sha:58094afa src:manual/36-spi.md:195 klas:F -->
+### T-36-118 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1807,8 +1922,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-114 sha:35b028da src:manual/36-spi.md:185 klas:F -->
-### T-36-114 · proza · рядок 185
+<!-- fc id:T-36-119 sha:35b028da src:manual/36-spi.md:195 klas:F -->
+### T-36-119 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1820,8 +1935,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-115 sha:409f6bd4 src:manual/36-spi.md:185 klas:F -->
-### T-36-115 · proza · рядок 185
+<!-- fc id:T-36-120 sha:409f6bd4 src:manual/36-spi.md:195 klas:F -->
+### T-36-120 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1833,8 +1948,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-116 sha:7b6c367c src:manual/36-spi.md:185 klas:E -->
-### T-36-116 · proza · рядок 185
+<!-- fc id:T-36-121 sha:7b6c367c src:manual/36-spi.md:195 klas:E -->
+### T-36-121 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1846,8 +1961,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-117 sha:ecc91c25 src:manual/36-spi.md:194 klas:F -->
-### T-36-117 · proza · рядок 194
+<!-- fc id:T-36-122 sha:ecc91c25 src:manual/36-spi.md:204 klas:F -->
+### T-36-122 · proza · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -1859,8 +1974,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-118 sha:b875f588 src:manual/36-spi.md:196 klas:E -->
-### T-36-118 · proza · рядок 196
+<!-- fc id:T-36-123 sha:b875f588 src:manual/36-spi.md:206 klas:E -->
+### T-36-123 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1872,8 +1987,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-119 sha:a52be068 src:manual/36-spi.md:199 klas:F -->
-### T-36-119 · proza · рядок 199
+<!-- fc id:T-36-124 sha:a52be068 src:manual/36-spi.md:209 klas:F -->
+### T-36-124 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -1885,32 +2000,46 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-120 sha:6c218cdc src:manual/36-spi.md:201 klas:A -->
-### T-36-120 · proza · рядок 201
+<!-- fc id:T-36-125 sha:09d90778 src:manual/36-spi.md:211 klas:A -->
+### T-36-125 · proza · рядок 211
 
 **Книга каже, дослівно:**
 
-> Через матрицю GPIO максимальна швидкість приблизно вдвічі нижча, ніж на рідних пінах.
+> Через матрицю GPIO межа 40 МГц замість 80; на 40 МГц і нижче різниці немає жодної.
 
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
 - **Дослівно з джерела:**
-  > - Increases the input delay of the MISO signal, which makes MISO setup time violations more likely.
-  >   If SPI needs to operate at high speeds, use dedicated IO_MUX pins.
-  > - Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
-  > …
-  > When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the GPIO matrix
-  > will behave the same compared to routing them via IOMUX.
+  > Most of ESP32's peripheral signals have a direct connection to their
+  > dedicated IO_MUX pins. However, the signals can also be routed to any
+  > other available pins using the less direct GPIO matrix. If at least one
+  > signal is routed through the GPIO matrix, then all signals will be
+  > routed through it.
+  > 
+  > The GPIO matrix introduces flexibility of routing but also brings the
+  > following disadvantages:
+  > - Allows signals with clock frequencies only up to 40 MHz, as opposed
+  >   to 80 MHz if IO_MUX pins are used.
+  > 
+  > When an SPI Host is set to 40 MHz or lower frequencies, routing SPI
+  > pins via the GPIO matrix will behave the same compared to routing them
+  > via IOMUX.
+  > 
+  > {IDF_TARGET_SPI2_IOMUX_PIN_MISO: … esp32c3="2" …}
+  > {IDF_TARGET_SPI2_IOMUX_PIN_CS:   … esp32c3="10" …}
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Точно підтверджує «приблизно вдвічі» в розділі 36 і додатку A: 40 проти 80 МГц. Другий абзац додає корисне уточнення, якого в книзі немає і яке варте наступного проходу: до 40 МГц різниці між маршрутами немає взагалі.
-- **Прохід:** pass-02-povedinka
+- **Нотатка:** Книга писала «через матрицю межа знижується приблизно вдвічі». Число правильне (40 проти 80), але слово «приблизно» ховало те, що читачеві потрібне найбільше: **нижче 40 МГц різниці немає жодної**.
+Різниця між двома формулюваннями практична. Перше змушує підбирати рідні піни завжди — і платити за це розведенням плати. Друге каже прямо: для microSD, дисплеїв і датчиків, тобто для майже всього в цій книзі, питання рідних пінів не стоїть узагалі.
+Додано й правило «все або нічого»: досить однієї лінії поза рідними пінами, щоб через матрицю пішли всі. Проміжного стану немає, і «майже рідний» набір дає ту саму межу, що й довільний. Без цього читач природно вирішує, що виграє потроху за кожен рідний пін.
+Виправлено в розділах 36 (двічі: виклад і підсумок) і 04. Заразом підстановки документації підтвердили рідні піни C3 з другого боку: `MISO` = `GPIO2`, `CS` = `GPIO10` — те саме, що в `spi_pins.h`.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-36-121 sha:acf3401b src:manual/36-spi.md:204 klas:A -->
-### T-36-121 · proza · рядок 204
+<!-- fc id:T-36-126 sha:acf3401b src:manual/36-spi.md:214 klas:A -->
+### T-36-126 · proza · рядок 214
 
 **Книга каже, дослівно:**
 
@@ -1938,8 +2067,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-122 sha:bc757115 src:manual/36-spi.md:206 klas:E -->
-### T-36-122 · proza · рядок 206
+<!-- fc id:T-36-127 sha:bc757115 src:manual/36-spi.md:216 klas:E -->
+### T-36-127 · proza · рядок 216
 
 **Книга каже, дослівно:**
 

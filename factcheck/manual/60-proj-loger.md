@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/60-proj-loger.md`
 
-Одиниць твердження: **137**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **140**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -457,7 +457,7 @@
 
 ---
 
-<!-- fc id:T-60-032 sha:3daa915e src:manual/60-proj-loger.md:46 klas:F -->
+<!-- fc id:T-60-032 sha:3daa915e src:manual/60-proj-loger.md:46 klas:A -->
 ### T-60-032 · komirka · рядок 46
 
 **Книга каже, дослівно:**
@@ -466,11 +466,38 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-60-033 sha:f0e5e49f src:manual/60-proj-loger.md:46 klas:F -->
+<!-- fc id:T-60-033 sha:f0e5e49f src:manual/60-proj-loger.md:46 klas:A -->
 ### T-60-033 · komirka · рядок 46
 
 **Книга каже, дослівно:**
@@ -479,11 +506,38 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-60-034 sha:428aeadd src:manual/60-proj-loger.md:47 klas:F -->
+<!-- fc id:T-60-034 sha:428aeadd src:manual/60-proj-loger.md:47 klas:A -->
 ### T-60-034 · komirka · рядок 47
 
 **Книга каже, дослівно:**
@@ -492,11 +546,38 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-60-035 sha:fcf60801 src:manual/60-proj-loger.md:47 klas:F -->
+<!-- fc id:T-60-035 sha:fcf60801 src:manual/60-proj-loger.md:47 klas:A -->
 ### T-60-035 · komirka · рядок 47
 
 **Книга каже, дослівно:**
@@ -505,7 +586,34 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
@@ -561,7 +669,7 @@
 
 ---
 
-<!-- fc id:T-60-040 sha:cd06b540 src:manual/60-proj-loger.md:50 klas:F -->
+<!-- fc id:T-60-040 sha:cd06b540 src:manual/60-proj-loger.md:50 klas:A -->
 ### T-60-040 · komirka · рядок 50
 
 **Книга каже, дослівно:**
@@ -570,11 +678,38 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-60-041 sha:556efc25 src:manual/60-proj-loger.md:50 klas:F -->
+<!-- fc id:T-60-041 sha:556efc25 src:manual/60-proj-loger.md:50 klas:A -->
 ### T-60-041 · komirka · рядок 50
 
 **Книга каже, дослівно:**
@@ -583,11 +718,38 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-60-042 sha:1c06c4e9 src:manual/60-proj-loger.md:51 klas:F -->
+<!-- fc id:T-60-042 sha:1c06c4e9 src:manual/60-proj-loger.md:51 klas:A -->
 ### T-60-042 · komirka · рядок 51
 
 **Книга каже, дослівно:**
@@ -596,11 +758,38 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-60-043 sha:dcea22ca src:manual/60-proj-loger.md:51 klas:F -->
+<!-- fc id:T-60-043 sha:dcea22ca src:manual/60-proj-loger.md:51 klas:A -->
 ### T-60-043 · komirka · рядок 51
 
 **Книга каже, дослівно:**
@@ -609,12 +798,105 @@
 
 **Доказ**
 
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
+
+---
+
+<!-- fc id:T-60-044 sha:43bd8072 src:manual/60-proj-loger.md:54 klas:A -->
+### T-60-044 · proza · рядок 54
+
+**Книга каже, дослівно:**
+
+> [[classic]] Четвірка `18`/`23`/`19`/`5` на classic — це рідні піни SPI3 (VSPI) один в один.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
+
+---
+
+<!-- fc id:T-60-045 sha:b8cb5c30 src:manual/60-proj-loger.md:54 klas:F -->
+### T-60-045 · proza · рядок 54
+
+**Книга каже, дослівно:**
+
+> [[C3]] На C3 рідними лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2`, а він уже пішов під ключ дільника.
+
+**Доказ**
+
 - **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-60-044 sha:6c208dfa src:manual/60-proj-loger.md:55 klas:A -->
-### T-60-044 · proza · рядок 55
+<!-- fc id:T-60-046 sha:57e3b369 src:manual/60-proj-loger.md:54 klas:F -->
+### T-60-046 · proza · рядок 54
+
+**Книга каже, дослівно:**
+
+> Для microSD це не коштує нічого — межа матриці 40 МГц (розділ 36).
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-60-047 sha:6c208dfa src:manual/60-proj-loger.md:60 klas:A -->
+### T-60-047 · proza · рядок 60
 
 **Книга каже, дослівно:**
 
@@ -646,8 +928,8 @@
 
 ---
 
-<!-- fc id:T-60-045 sha:2c26e8f8 src:manual/60-proj-loger.md:60 klas:A -->
-### T-60-045 · proza · рядок 60
+<!-- fc id:T-60-048 sha:2c26e8f8 src:manual/60-proj-loger.md:65 klas:A -->
+### T-60-048 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -668,8 +950,8 @@
 
 ---
 
-<!-- fc id:T-60-046 sha:69d3aa6b src:manual/60-proj-loger.md:60 klas:F -->
-### T-60-046 · proza · рядок 60
+<!-- fc id:T-60-049 sha:69d3aa6b src:manual/60-proj-loger.md:65 klas:A -->
+### T-60-049 · proza · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -677,12 +959,39 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-60-047 sha:6770ffab src:manual/60-proj-loger.md:66 klas:E -->
-### T-60-047 · proza · рядок 66
+<!-- fc id:T-60-050 sha:6770ffab src:manual/60-proj-loger.md:71 klas:E -->
+### T-60-050 · proza · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -694,8 +1003,8 @@
 
 ---
 
-<!-- fc id:T-60-048 sha:d5b2eb5a src:manual/60-proj-loger.md:66 klas:F -->
-### T-60-048 · proza · рядок 66
+<!-- fc id:T-60-051 sha:d5b2eb5a src:manual/60-proj-loger.md:71 klas:F -->
+### T-60-051 · proza · рядок 71
 
 **Книга каже, дослівно:**
 
@@ -707,8 +1016,8 @@
 
 ---
 
-<!-- fc id:T-60-049 sha:cd431346 src:manual/60-proj-loger.md:71 klas:F -->
-### T-60-049 · proza · рядок 71
+<!-- fc id:T-60-052 sha:cd431346 src:manual/60-proj-loger.md:76 klas:F -->
+### T-60-052 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -720,8 +1029,8 @@
 
 ---
 
-<!-- fc id:T-60-050 sha:a9b481b9 src:manual/60-proj-loger.md:71 klas:E -->
-### T-60-050 · proza · рядок 71
+<!-- fc id:T-60-053 sha:a9b481b9 src:manual/60-proj-loger.md:76 klas:E -->
+### T-60-053 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -733,8 +1042,8 @@
 
 ---
 
-<!-- fc id:T-60-051 sha:728d95b8 src:manual/60-proj-loger.md:71 klas:E -->
-### T-60-051 · proza · рядок 71
+<!-- fc id:T-60-054 sha:728d95b8 src:manual/60-proj-loger.md:76 klas:E -->
+### T-60-054 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -746,8 +1055,8 @@
 
 ---
 
-<!-- fc id:T-60-052 sha:90a056ff src:manual/60-proj-loger.md:79 klas:E -->
-### T-60-052 · proza · рядок 79
+<!-- fc id:T-60-055 sha:90a056ff src:manual/60-proj-loger.md:84 klas:E -->
+### T-60-055 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -759,8 +1068,8 @@
 
 ---
 
-<!-- fc id:T-60-053 sha:3da23978 src:manual/60-proj-loger.md:79 klas:F -->
-### T-60-053 · proza · рядок 79
+<!-- fc id:T-60-056 sha:3da23978 src:manual/60-proj-loger.md:84 klas:F -->
+### T-60-056 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -772,8 +1081,8 @@
 
 ---
 
-<!-- fc id:T-60-054 sha:618e4824 src:manual/60-proj-loger.md:81 klas:K -->
-### T-60-054 · kod · рядок 81
+<!-- fc id:T-60-057 sha:618e4824 src:manual/60-proj-loger.md:86 klas:K -->
+### T-60-057 · kod · рядок 86
 
 **Книга каже, дослівно:**
 
@@ -801,8 +1110,8 @@
 
 ---
 
-<!-- fc id:T-60-055 sha:913f8132 src:manual/60-proj-loger.md:82 klas:C -->
-### T-60-055 · schema-zvyazok · рядок 82
+<!-- fc id:T-60-058 sha:913f8132 src:manual/60-proj-loger.md:87 klas:C -->
+### T-60-058 · schema-zvyazok · рядок 87
 
 **Книга каже, дослівно:**
 
@@ -818,8 +1127,8 @@
 
 ---
 
-<!-- fc id:T-60-056 sha:e6f1a6a7 src:manual/60-proj-loger.md:83 klas:F -->
-### T-60-056 · schema-zvyazok · рядок 83
+<!-- fc id:T-60-059 sha:e6f1a6a7 src:manual/60-proj-loger.md:88 klas:F -->
+### T-60-059 · schema-zvyazok · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -831,8 +1140,8 @@
 
 ---
 
-<!-- fc id:T-60-057 sha:a1efd7c9 src:manual/60-proj-loger.md:84 klas:F -->
-### T-60-057 · schema-zvyazok · рядок 84
+<!-- fc id:T-60-060 sha:a1efd7c9 src:manual/60-proj-loger.md:89 klas:F -->
+### T-60-060 · schema-zvyazok · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -844,8 +1153,8 @@
 
 ---
 
-<!-- fc id:T-60-058 sha:6b711a92 src:manual/60-proj-loger.md:85 klas:F -->
-### T-60-058 · schema-zvyazok · рядок 85
+<!-- fc id:T-60-061 sha:6b711a92 src:manual/60-proj-loger.md:90 klas:F -->
+### T-60-061 · schema-zvyazok · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -857,8 +1166,8 @@
 
 ---
 
-<!-- fc id:T-60-059 sha:3d5502e9 src:manual/60-proj-loger.md:96 klas:E -->
-### T-60-059 · proza · рядок 96
+<!-- fc id:T-60-062 sha:3d5502e9 src:manual/60-proj-loger.md:101 klas:E -->
+### T-60-062 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -870,8 +1179,8 @@
 
 ---
 
-<!-- fc id:T-60-060 sha:259eae72 src:manual/60-proj-loger.md:96 klas:F -->
-### T-60-060 · proza · рядок 96
+<!-- fc id:T-60-063 sha:259eae72 src:manual/60-proj-loger.md:101 klas:F -->
+### T-60-063 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -883,8 +1192,8 @@
 
 ---
 
-<!-- fc id:T-60-061 sha:a503da18 src:manual/60-proj-loger.md:96 klas:F -->
-### T-60-061 · proza · рядок 96
+<!-- fc id:T-60-064 sha:a503da18 src:manual/60-proj-loger.md:101 klas:F -->
+### T-60-064 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -896,8 +1205,8 @@
 
 ---
 
-<!-- fc id:T-60-062 sha:9eb66891 src:manual/60-proj-loger.md:100 klas:F -->
-### T-60-062 · proza · рядок 100
+<!-- fc id:T-60-065 sha:9eb66891 src:manual/60-proj-loger.md:105 klas:F -->
+### T-60-065 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
@@ -909,8 +1218,8 @@
 
 ---
 
-<!-- fc id:T-60-063 sha:99a575e7 src:manual/60-proj-loger.md:105 klas:F -->
-### T-60-063 · proza · рядок 105
+<!-- fc id:T-60-066 sha:99a575e7 src:manual/60-proj-loger.md:110 klas:F -->
+### T-60-066 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -922,8 +1231,8 @@
 
 ---
 
-<!-- fc id:T-60-064 sha:195b9722 src:manual/60-proj-loger.md:110 klas:F -->
-### T-60-064 · proza · рядок 110
+<!-- fc id:T-60-067 sha:195b9722 src:manual/60-proj-loger.md:115 klas:F -->
+### T-60-067 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -935,8 +1244,8 @@
 
 ---
 
-<!-- fc id:T-60-065 sha:2513a78d src:manual/60-proj-loger.md:116 klas:E -->
-### T-60-065 · proza · рядок 116
+<!-- fc id:T-60-068 sha:2513a78d src:manual/60-proj-loger.md:121 klas:E -->
+### T-60-068 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -948,8 +1257,8 @@
 
 ---
 
-<!-- fc id:T-60-066 sha:51d55f35 src:manual/60-proj-loger.md:116 klas:E -->
-### T-60-066 · proza · рядок 116
+<!-- fc id:T-60-069 sha:51d55f35 src:manual/60-proj-loger.md:121 klas:E -->
+### T-60-069 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -961,8 +1270,8 @@
 
 ---
 
-<!-- fc id:T-60-067 sha:911b825f src:manual/60-proj-loger.md:120 klas:K -->
-### T-60-067 · kod · рядок 120
+<!-- fc id:T-60-070 sha:911b825f src:manual/60-proj-loger.md:125 klas:K -->
+### T-60-070 · kod · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -993,12 +1302,39 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h, .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
+  > #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
+  > #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
+  > 
+  > (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
+  > #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
+  > #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
+  > #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
+  > #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
+  > #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
+  >                                      #define MSPI_IOMUX_PIN_NUM_HD   12
+  >                                      #define MSPI_IOMUX_PIN_NUM_WP   13
+  >                                      #define MSPI_IOMUX_PIN_NUM_CS0  14
+  >                                      #define MSPI_IOMUX_PIN_NUM_CLK  15
+  >                                      #define MSPI_IOMUX_PIN_NUM_MOSI 16
+  >                                      #define MSPI_IOMUX_PIN_NUM_MISO 17
+  > 
+  > (esp32c3/soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 22
+  > #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це дослівно рідні піни SPI3 (VSPI).
+Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при цьому нульова, і чому саме — у наступному записі.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-60-068 sha:f9fbb83e src:manual/60-proj-loger.md:146 klas:F -->
-### T-60-068 · proza · рядок 146
+<!-- fc id:T-60-071 sha:f9fbb83e src:manual/60-proj-loger.md:151 klas:F -->
+### T-60-071 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1010,8 +1346,8 @@
 
 ---
 
-<!-- fc id:T-60-069 sha:04d77d98 src:manual/60-proj-loger.md:146 klas:F -->
-### T-60-069 · proza · рядок 146
+<!-- fc id:T-60-072 sha:04d77d98 src:manual/60-proj-loger.md:151 klas:F -->
+### T-60-072 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1023,8 +1359,8 @@
 
 ---
 
-<!-- fc id:T-60-070 sha:c59f8ae8 src:manual/60-proj-loger.md:146 klas:E -->
-### T-60-070 · proza · рядок 146
+<!-- fc id:T-60-073 sha:c59f8ae8 src:manual/60-proj-loger.md:151 klas:E -->
+### T-60-073 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1036,8 +1372,8 @@
 
 ---
 
-<!-- fc id:T-60-071 sha:65e265f5 src:manual/60-proj-loger.md:152 klas:E -->
-### T-60-071 · proza · рядок 152
+<!-- fc id:T-60-074 sha:65e265f5 src:manual/60-proj-loger.md:157 klas:E -->
+### T-60-074 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -1049,8 +1385,8 @@
 
 ---
 
-<!-- fc id:T-60-072 sha:5b607b9b src:manual/60-proj-loger.md:157 klas:F -->
-### T-60-072 · proza · рядок 157
+<!-- fc id:T-60-075 sha:5b607b9b src:manual/60-proj-loger.md:162 klas:F -->
+### T-60-075 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1062,8 +1398,8 @@
 
 ---
 
-<!-- fc id:T-60-073 sha:077ad9d7 src:manual/60-proj-loger.md:157 klas:A -->
-### T-60-073 · proza · рядок 157
+<!-- fc id:T-60-076 sha:077ad9d7 src:manual/60-proj-loger.md:162 klas:A -->
+### T-60-076 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -1083,8 +1419,8 @@
 
 ---
 
-<!-- fc id:T-60-074 sha:047a7bc6 src:manual/60-proj-loger.md:160 klas:K -->
-### T-60-074 · kod · рядок 160
+<!-- fc id:T-60-077 sha:047a7bc6 src:manual/60-proj-loger.md:165 klas:K -->
+### T-60-077 · kod · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -1109,8 +1445,8 @@
 
 ---
 
-<!-- fc id:T-60-075 sha:84ff3f5f src:manual/60-proj-loger.md:167 klas:A -->
-### T-60-075 · proza · рядок 167
+<!-- fc id:T-60-078 sha:84ff3f5f src:manual/60-proj-loger.md:172 klas:A -->
+### T-60-078 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -1130,8 +1466,8 @@
 
 ---
 
-<!-- fc id:T-60-076 sha:60e50665 src:manual/60-proj-loger.md:167 klas:F -->
-### T-60-076 · proza · рядок 167
+<!-- fc id:T-60-079 sha:60e50665 src:manual/60-proj-loger.md:172 klas:F -->
+### T-60-079 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -1143,8 +1479,8 @@
 
 ---
 
-<!-- fc id:T-60-077 sha:33b09b68 src:manual/60-proj-loger.md:172 klas:K -->
-### T-60-077 · kod · рядок 172
+<!-- fc id:T-60-080 sha:33b09b68 src:manual/60-proj-loger.md:177 klas:K -->
+### T-60-080 · kod · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1198,8 +1534,8 @@
 
 ---
 
-<!-- fc id:T-60-078 sha:36e9dc05 src:manual/60-proj-loger.md:180 klas:F -->
-### T-60-078 · kod-ryadok · рядок 180
+<!-- fc id:T-60-081 sha:36e9dc05 src:manual/60-proj-loger.md:185 klas:F -->
+### T-60-081 · kod-ryadok · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -1211,8 +1547,8 @@
 
 ---
 
-<!-- fc id:T-60-079 sha:96e47c3f src:manual/60-proj-loger.md:191 klas:F -->
-### T-60-079 · kod-ryadok · рядок 191
+<!-- fc id:T-60-082 sha:96e47c3f src:manual/60-proj-loger.md:196 klas:F -->
+### T-60-082 · kod-ryadok · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1224,8 +1560,8 @@
 
 ---
 
-<!-- fc id:T-60-080 sha:11e7a3b4 src:manual/60-proj-loger.md:196 klas:F -->
-### T-60-080 · kod-ryadok · рядок 196
+<!-- fc id:T-60-083 sha:11e7a3b4 src:manual/60-proj-loger.md:201 klas:F -->
+### T-60-083 · kod-ryadok · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1237,8 +1573,8 @@
 
 ---
 
-<!-- fc id:T-60-081 sha:86c1b4b6 src:manual/60-proj-loger.md:201 klas:E -->
-### T-60-081 · proza · рядок 201
+<!-- fc id:T-60-084 sha:86c1b4b6 src:manual/60-proj-loger.md:206 klas:E -->
+### T-60-084 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1250,8 +1586,8 @@
 
 ---
 
-<!-- fc id:T-60-082 sha:d34c43c3 src:manual/60-proj-loger.md:203 klas:F -->
-### T-60-082 · proza · рядок 203
+<!-- fc id:T-60-085 sha:d34c43c3 src:manual/60-proj-loger.md:208 klas:F -->
+### T-60-085 · proza · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1263,8 +1599,8 @@
 
 ---
 
-<!-- fc id:T-60-083 sha:c226a03c src:manual/60-proj-loger.md:207 klas:E -->
-### T-60-083 · proza · рядок 207
+<!-- fc id:T-60-086 sha:c226a03c src:manual/60-proj-loger.md:212 klas:E -->
+### T-60-086 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1276,8 +1612,8 @@
 
 ---
 
-<!-- fc id:T-60-084 sha:f0958dca src:manual/60-proj-loger.md:213 klas:K -->
-### T-60-084 · kod · рядок 213
+<!-- fc id:T-60-087 sha:f0958dca src:manual/60-proj-loger.md:218 klas:K -->
+### T-60-087 · kod · рядок 218
 
 **Книга каже, дослівно:**
 
@@ -1322,8 +1658,8 @@
 
 ---
 
-<!-- fc id:T-60-085 sha:e249c82c src:manual/60-proj-loger.md:215 klas:F -->
-### T-60-085 · kod-ryadok · рядок 215
+<!-- fc id:T-60-088 sha:e249c82c src:manual/60-proj-loger.md:220 klas:F -->
+### T-60-088 · kod-ryadok · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -1335,8 +1671,8 @@
 
 ---
 
-<!-- fc id:T-60-086 sha:fa5319b8 src:manual/60-proj-loger.md:221 klas:A -->
-### T-60-086 · kod-ryadok · рядок 221
+<!-- fc id:T-60-089 sha:fa5319b8 src:manual/60-proj-loger.md:226 klas:A -->
+### T-60-089 · kod-ryadok · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1364,8 +1700,8 @@
 
 ---
 
-<!-- fc id:T-60-087 sha:ad6f9b2c src:manual/60-proj-loger.md:227 klas:A -->
-### T-60-087 · kod-ryadok · рядок 227
+<!-- fc id:T-60-090 sha:ad6f9b2c src:manual/60-proj-loger.md:232 klas:A -->
+### T-60-090 · kod-ryadok · рядок 232
 
 **Книга каже, дослівно:**
 
@@ -1393,8 +1729,8 @@
 
 ---
 
-<!-- fc id:T-60-088 sha:4b6bd1c9 src:manual/60-proj-loger.md:234 klas:K -->
-### T-60-088 · kod · рядок 234
+<!-- fc id:T-60-091 sha:4b6bd1c9 src:manual/60-proj-loger.md:239 klas:K -->
+### T-60-091 · kod · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -1423,8 +1759,8 @@
 
 ---
 
-<!-- fc id:T-60-089 sha:f0c8956e src:manual/60-proj-loger.md:245 klas:F -->
-### T-60-089 · kod-ryadok · рядок 245
+<!-- fc id:T-60-092 sha:f0c8956e src:manual/60-proj-loger.md:250 klas:F -->
+### T-60-092 · kod-ryadok · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -1436,8 +1772,8 @@
 
 ---
 
-<!-- fc id:T-60-090 sha:17341195 src:manual/60-proj-loger.md:247 klas:F -->
-### T-60-090 · kod-ryadok · рядок 247
+<!-- fc id:T-60-093 sha:17341195 src:manual/60-proj-loger.md:252 klas:F -->
+### T-60-093 · kod-ryadok · рядок 252
 
 **Книга каже, дослівно:**
 
@@ -1449,8 +1785,8 @@
 
 ---
 
-<!-- fc id:T-60-091 sha:d99dbbfc src:manual/60-proj-loger.md:254 klas:F -->
-### T-60-091 · proza · рядок 254
+<!-- fc id:T-60-094 sha:d99dbbfc src:manual/60-proj-loger.md:259 klas:F -->
+### T-60-094 · proza · рядок 259
 
 **Книга каже, дослівно:**
 
@@ -1462,8 +1798,8 @@
 
 ---
 
-<!-- fc id:T-60-092 sha:a161b206 src:manual/60-proj-loger.md:257 klas:E -->
-### T-60-092 · proza · рядок 257
+<!-- fc id:T-60-095 sha:a161b206 src:manual/60-proj-loger.md:262 klas:E -->
+### T-60-095 · proza · рядок 262
 
 **Книга каже, дослівно:**
 
@@ -1475,8 +1811,8 @@
 
 ---
 
-<!-- fc id:T-60-093 sha:b0cfdae4 src:manual/60-proj-loger.md:257 klas:E -->
-### T-60-093 · proza · рядок 257
+<!-- fc id:T-60-096 sha:b0cfdae4 src:manual/60-proj-loger.md:262 klas:E -->
+### T-60-096 · proza · рядок 262
 
 **Книга каже, дослівно:**
 
@@ -1488,8 +1824,8 @@
 
 ---
 
-<!-- fc id:T-60-094 sha:5619cd9a src:manual/60-proj-loger.md:260 klas:E -->
-### T-60-094 · proza · рядок 260
+<!-- fc id:T-60-097 sha:5619cd9a src:manual/60-proj-loger.md:265 klas:E -->
+### T-60-097 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -1501,8 +1837,8 @@
 
 ---
 
-<!-- fc id:T-60-095 sha:1ee7e676 src:manual/60-proj-loger.md:260 klas:F -->
-### T-60-095 · proza · рядок 260
+<!-- fc id:T-60-098 sha:1ee7e676 src:manual/60-proj-loger.md:265 klas:F -->
+### T-60-098 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -1514,8 +1850,8 @@
 
 ---
 
-<!-- fc id:T-60-096 sha:69c60ed0 src:manual/60-proj-loger.md:266 klas:K -->
-### T-60-096 · kod · рядок 266
+<!-- fc id:T-60-099 sha:69c60ed0 src:manual/60-proj-loger.md:271 klas:K -->
+### T-60-099 · kod · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -1554,8 +1890,8 @@
 
 ---
 
-<!-- fc id:T-60-097 sha:08a000e8 src:manual/60-proj-loger.md:269 klas:F -->
-### T-60-097 · kod-ryadok · рядок 269
+<!-- fc id:T-60-100 sha:08a000e8 src:manual/60-proj-loger.md:274 klas:F -->
+### T-60-100 · kod-ryadok · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -1567,8 +1903,8 @@
 
 ---
 
-<!-- fc id:T-60-098 sha:ab40e8e7 src:manual/60-proj-loger.md:270 klas:F -->
-### T-60-098 · kod-ryadok · рядок 270
+<!-- fc id:T-60-101 sha:ab40e8e7 src:manual/60-proj-loger.md:275 klas:F -->
+### T-60-101 · kod-ryadok · рядок 275
 
 **Книга каже, дослівно:**
 
@@ -1580,8 +1916,8 @@
 
 ---
 
-<!-- fc id:T-60-099 sha:3fd6a686 src:manual/60-proj-loger.md:273 klas:A -->
-### T-60-099 · kod-ryadok · рядок 273
+<!-- fc id:T-60-102 sha:3fd6a686 src:manual/60-proj-loger.md:278 klas:A -->
+### T-60-102 · kod-ryadok · рядок 278
 
 **Книга каже, дослівно:**
 
@@ -1609,8 +1945,8 @@
 
 ---
 
-<!-- fc id:T-60-100 sha:34ad95d5 src:manual/60-proj-loger.md:274 klas:F -->
-### T-60-100 · kod-ryadok · рядок 274
+<!-- fc id:T-60-103 sha:34ad95d5 src:manual/60-proj-loger.md:279 klas:F -->
+### T-60-103 · kod-ryadok · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -1622,8 +1958,8 @@
 
 ---
 
-<!-- fc id:T-60-101 sha:c5771474 src:manual/60-proj-loger.md:275 klas:F -->
-### T-60-101 · kod-ryadok · рядок 275
+<!-- fc id:T-60-104 sha:c5771474 src:manual/60-proj-loger.md:280 klas:F -->
+### T-60-104 · kod-ryadok · рядок 280
 
 **Книга каже, дослівно:**
 
@@ -1635,8 +1971,8 @@
 
 ---
 
-<!-- fc id:T-60-102 sha:ad07f2d7 src:manual/60-proj-loger.md:280 klas:C -->
-### T-60-102 · proza · рядок 280
+<!-- fc id:T-60-105 sha:ad07f2d7 src:manual/60-proj-loger.md:285 klas:C -->
+### T-60-105 · proza · рядок 285
 
 **Книга каже, дослівно:**
 
@@ -1652,8 +1988,8 @@
 
 ---
 
-<!-- fc id:T-60-103 sha:fac610a6 src:manual/60-proj-loger.md:283 klas:E -->
-### T-60-103 · proza · рядок 283
+<!-- fc id:T-60-106 sha:fac610a6 src:manual/60-proj-loger.md:288 klas:E -->
+### T-60-106 · proza · рядок 288
 
 **Книга каже, дослівно:**
 
@@ -1665,8 +2001,8 @@
 
 ---
 
-<!-- fc id:T-60-104 sha:b4495bba src:manual/60-proj-loger.md:286 klas:F -->
-### T-60-104 · proza · рядок 286
+<!-- fc id:T-60-107 sha:b4495bba src:manual/60-proj-loger.md:291 klas:F -->
+### T-60-107 · proza · рядок 291
 
 **Книга каже, дослівно:**
 
@@ -1678,8 +2014,8 @@
 
 ---
 
-<!-- fc id:T-60-105 sha:83a8e3da src:manual/60-proj-loger.md:291 klas:F -->
-### T-60-105 · proza · рядок 291
+<!-- fc id:T-60-108 sha:83a8e3da src:manual/60-proj-loger.md:296 klas:F -->
+### T-60-108 · proza · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -1691,8 +2027,8 @@
 
 ---
 
-<!-- fc id:T-60-106 sha:6f45d6d6 src:manual/60-proj-loger.md:293 klas:F -->
-### T-60-106 · tablycya-shapka · рядок 293
+<!-- fc id:T-60-109 sha:6f45d6d6 src:manual/60-proj-loger.md:298 klas:F -->
+### T-60-109 · tablycya-shapka · рядок 298
 
 **Книга каже, дослівно:**
 
@@ -1704,8 +2040,8 @@
 
 ---
 
-<!-- fc id:T-60-107 sha:a6f4ae9a src:manual/60-proj-loger.md:294 klas:F -->
-### T-60-107 · komirka · рядок 294
+<!-- fc id:T-60-110 sha:a6f4ae9a src:manual/60-proj-loger.md:299 klas:F -->
+### T-60-110 · komirka · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -1717,8 +2053,8 @@
 
 ---
 
-<!-- fc id:T-60-108 sha:17288f9c src:manual/60-proj-loger.md:294 klas:C -->
-### T-60-108 · komirka · рядок 294
+<!-- fc id:T-60-111 sha:17288f9c src:manual/60-proj-loger.md:299 klas:C -->
+### T-60-111 · komirka · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -1734,8 +2070,8 @@
 
 ---
 
-<!-- fc id:T-60-109 sha:2d0a41b2 src:manual/60-proj-loger.md:294 klas:F -->
-### T-60-109 · komirka · рядок 294
+<!-- fc id:T-60-112 sha:2d0a41b2 src:manual/60-proj-loger.md:299 klas:F -->
+### T-60-112 · komirka · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -1747,8 +2083,8 @@
 
 ---
 
-<!-- fc id:T-60-110 sha:b201f1de src:manual/60-proj-loger.md:295 klas:A -->
-### T-60-110 · komirka · рядок 295
+<!-- fc id:T-60-113 sha:b201f1de src:manual/60-proj-loger.md:300 klas:A -->
+### T-60-113 · komirka · рядок 300
 
 **Книга каже, дослівно:**
 
@@ -1770,8 +2106,8 @@
 
 ---
 
-<!-- fc id:T-60-111 sha:68da1621 src:manual/60-proj-loger.md:295 klas:A -->
-### T-60-111 · komirka · рядок 295
+<!-- fc id:T-60-114 sha:68da1621 src:manual/60-proj-loger.md:300 klas:A -->
+### T-60-114 · komirka · рядок 300
 
 **Книга каже, дослівно:**
 
@@ -1793,8 +2129,8 @@
 
 ---
 
-<!-- fc id:T-60-112 sha:7bf88644 src:manual/60-proj-loger.md:295 klas:A -->
-### T-60-112 · komirka · рядок 295
+<!-- fc id:T-60-115 sha:7bf88644 src:manual/60-proj-loger.md:300 klas:A -->
+### T-60-115 · komirka · рядок 300
 
 **Книга каже, дослівно:**
 
@@ -1816,8 +2152,8 @@
 
 ---
 
-<!-- fc id:T-60-113 sha:772fb917 src:manual/60-proj-loger.md:296 klas:F -->
-### T-60-113 · komirka · рядок 296
+<!-- fc id:T-60-116 sha:772fb917 src:manual/60-proj-loger.md:301 klas:F -->
+### T-60-116 · komirka · рядок 301
 
 **Книга каже, дослівно:**
 
@@ -1829,8 +2165,8 @@
 
 ---
 
-<!-- fc id:T-60-114 sha:ef81a4da src:manual/60-proj-loger.md:296 klas:F -->
-### T-60-114 · komirka · рядок 296
+<!-- fc id:T-60-117 sha:ef81a4da src:manual/60-proj-loger.md:301 klas:F -->
+### T-60-117 · komirka · рядок 301
 
 **Книга каже, дослівно:**
 
@@ -1842,8 +2178,8 @@
 
 ---
 
-<!-- fc id:T-60-115 sha:386c98cf src:manual/60-proj-loger.md:296 klas:F -->
-### T-60-115 · komirka · рядок 296
+<!-- fc id:T-60-118 sha:386c98cf src:manual/60-proj-loger.md:301 klas:F -->
+### T-60-118 · komirka · рядок 301
 
 **Книга каже, дослівно:**
 
@@ -1855,8 +2191,8 @@
 
 ---
 
-<!-- fc id:T-60-116 sha:9084f4d4 src:manual/60-proj-loger.md:297 klas:F -->
-### T-60-116 · komirka · рядок 297
+<!-- fc id:T-60-119 sha:9084f4d4 src:manual/60-proj-loger.md:302 klas:F -->
+### T-60-119 · komirka · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -1868,8 +2204,8 @@
 
 ---
 
-<!-- fc id:T-60-117 sha:d5314759 src:manual/60-proj-loger.md:297 klas:F -->
-### T-60-117 · komirka · рядок 297
+<!-- fc id:T-60-120 sha:d5314759 src:manual/60-proj-loger.md:302 klas:F -->
+### T-60-120 · komirka · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -1881,8 +2217,8 @@
 
 ---
 
-<!-- fc id:T-60-118 sha:4b86eaef src:manual/60-proj-loger.md:297 klas:F -->
-### T-60-118 · komirka · рядок 297
+<!-- fc id:T-60-121 sha:4b86eaef src:manual/60-proj-loger.md:302 klas:F -->
+### T-60-121 · komirka · рядок 302
 
 **Книга каже, дослівно:**
 
@@ -1894,8 +2230,8 @@
 
 ---
 
-<!-- fc id:T-60-119 sha:7ebdd2fb src:manual/60-proj-loger.md:298 klas:F -->
-### T-60-119 · komirka · рядок 298
+<!-- fc id:T-60-122 sha:7ebdd2fb src:manual/60-proj-loger.md:303 klas:F -->
+### T-60-122 · komirka · рядок 303
 
 **Книга каже, дослівно:**
 
@@ -1907,8 +2243,8 @@
 
 ---
 
-<!-- fc id:T-60-120 sha:fa15cd97 src:manual/60-proj-loger.md:298 klas:D -->
-### T-60-120 · komirka · рядок 298
+<!-- fc id:T-60-123 sha:fa15cd97 src:manual/60-proj-loger.md:303 klas:D -->
+### T-60-123 · komirka · рядок 303
 
 **Книга каже, дослівно:**
 
@@ -1950,8 +2286,8 @@
 
 ---
 
-<!-- fc id:T-60-121 sha:3a61fcae src:manual/60-proj-loger.md:301 klas:D -->
-### T-60-121 · proza · рядок 301
+<!-- fc id:T-60-124 sha:3a61fcae src:manual/60-proj-loger.md:306 klas:D -->
+### T-60-124 · proza · рядок 306
 
 **Книга каже, дослівно:**
 
@@ -1993,8 +2329,8 @@
 
 ---
 
-<!-- fc id:T-60-122 sha:f90b83e5 src:manual/60-proj-loger.md:303 klas:D -->
-### T-60-122 · proza · рядок 303
+<!-- fc id:T-60-125 sha:f90b83e5 src:manual/60-proj-loger.md:308 klas:D -->
+### T-60-125 · proza · рядок 308
 
 **Книга каже, дослівно:**
 
@@ -2036,8 +2372,8 @@
 
 ---
 
-<!-- fc id:T-60-123 sha:c426e030 src:manual/60-proj-loger.md:307 klas:F -->
-### T-60-123 · proza · рядок 307
+<!-- fc id:T-60-126 sha:c426e030 src:manual/60-proj-loger.md:312 klas:F -->
+### T-60-126 · proza · рядок 312
 
 **Книга каже, дослівно:**
 
@@ -2049,8 +2385,8 @@
 
 ---
 
-<!-- fc id:T-60-124 sha:45833f6d src:manual/60-proj-loger.md:310 klas:E -->
-### T-60-124 · proza · рядок 310
+<!-- fc id:T-60-127 sha:45833f6d src:manual/60-proj-loger.md:315 klas:E -->
+### T-60-127 · proza · рядок 315
 
 **Книга каже, дослівно:**
 
@@ -2062,8 +2398,8 @@
 
 ---
 
-<!-- fc id:T-60-125 sha:30cc6798 src:manual/60-proj-loger.md:314 klas:E -->
-### T-60-125 · proza · рядок 314
+<!-- fc id:T-60-128 sha:30cc6798 src:manual/60-proj-loger.md:319 klas:E -->
+### T-60-128 · proza · рядок 319
 
 **Книга каже, дослівно:**
 
@@ -2075,8 +2411,8 @@
 
 ---
 
-<!-- fc id:T-60-126 sha:e71331a3 src:manual/60-proj-loger.md:314 klas:E -->
-### T-60-126 · proza · рядок 314
+<!-- fc id:T-60-129 sha:e71331a3 src:manual/60-proj-loger.md:319 klas:E -->
+### T-60-129 · proza · рядок 319
 
 **Книга каже, дослівно:**
 
@@ -2088,8 +2424,8 @@
 
 ---
 
-<!-- fc id:T-60-127 sha:cfdb4c7e src:manual/60-proj-loger.md:319 klas:C -->
-### T-60-127 · proza · рядок 319
+<!-- fc id:T-60-130 sha:cfdb4c7e src:manual/60-proj-loger.md:324 klas:C -->
+### T-60-130 · proza · рядок 324
 
 **Книга каже, дослівно:**
 
@@ -2105,8 +2441,8 @@
 
 ---
 
-<!-- fc id:T-60-128 sha:20a65322 src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-128 · proza · рядок 325
+<!-- fc id:T-60-131 sha:20a65322 src:manual/60-proj-loger.md:330 klas:F -->
+### T-60-131 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2118,8 +2454,8 @@
 
 ---
 
-<!-- fc id:T-60-129 sha:6d2dba14 src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-129 · proza · рядок 325
+<!-- fc id:T-60-132 sha:6d2dba14 src:manual/60-proj-loger.md:330 klas:F -->
+### T-60-132 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2131,8 +2467,8 @@
 
 ---
 
-<!-- fc id:T-60-130 sha:195b951b src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-130 · proza · рядок 325
+<!-- fc id:T-60-133 sha:195b951b src:manual/60-proj-loger.md:330 klas:F -->
+### T-60-133 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2144,8 +2480,8 @@
 
 ---
 
-<!-- fc id:T-60-131 sha:126b1d9d src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-131 · proza · рядок 325
+<!-- fc id:T-60-134 sha:126b1d9d src:manual/60-proj-loger.md:330 klas:F -->
+### T-60-134 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2157,8 +2493,8 @@
 
 ---
 
-<!-- fc id:T-60-132 sha:3b7a50dc src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-132 · proza · рядок 325
+<!-- fc id:T-60-135 sha:3b7a50dc src:manual/60-proj-loger.md:330 klas:F -->
+### T-60-135 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2170,8 +2506,8 @@
 
 ---
 
-<!-- fc id:T-60-133 sha:58500cd8 src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-133 · proza · рядок 325
+<!-- fc id:T-60-136 sha:58500cd8 src:manual/60-proj-loger.md:330 klas:F -->
+### T-60-136 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2183,8 +2519,8 @@
 
 ---
 
-<!-- fc id:T-60-134 sha:7f1d478f src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-134 · proza · рядок 325
+<!-- fc id:T-60-137 sha:7f1d478f src:manual/60-proj-loger.md:330 klas:F -->
+### T-60-137 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2196,8 +2532,8 @@
 
 ---
 
-<!-- fc id:T-60-135 sha:47cb735d src:manual/60-proj-loger.md:325 klas:F -->
-### T-60-135 · proza · рядок 325
+<!-- fc id:T-60-138 sha:47cb735d src:manual/60-proj-loger.md:330 klas:F -->
+### T-60-138 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2209,8 +2545,8 @@
 
 ---
 
-<!-- fc id:T-60-136 sha:7fa10fa1 src:manual/60-proj-loger.md:325 klas:E -->
-### T-60-136 · proza · рядок 325
+<!-- fc id:T-60-139 sha:7fa10fa1 src:manual/60-proj-loger.md:330 klas:E -->
+### T-60-139 · proza · рядок 330
 
 **Книга каже, дослівно:**
 
@@ -2222,8 +2558,8 @@
 
 ---
 
-<!-- fc id:T-60-137 sha:985bc47c src:manual/60-proj-loger.md:340 klas:F -->
-### T-60-137 · proza · рядок 340
+<!-- fc id:T-60-140 sha:985bc47c src:manual/60-proj-loger.md:345 klas:F -->
+### T-60-140 · proza · рядок 345
 
 **Книга каже, дослівно:**
 

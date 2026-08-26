@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/16-boot.md`
 
-Одиниць твердження: **87**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **95**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -419,7 +419,7 @@
 
 ---
 
-<!-- fc id:T-16-028 sha:30495adc src:manual/16-boot.md:70 klas:F -->
+<!-- fc id:T-16-028 sha:30495adc src:manual/16-boot.md:70 klas:A -->
 ### T-16-028 · tablycya · рядок 70
 
 **Книга каже, дослівно:**
@@ -428,11 +428,52 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
+- **Дослівно з джерела:**
+  > (Kconfig.projbuild)
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     hex
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     # the first 2 sectors are reserved for the key manager with AES-XTS
+  >     #   (flash encryption) purpose
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > (startup.rst)
+  > .. only:: esp32
+  >    … If :doc:`/security/secure-boot-v1` is in use then the first 4 kB
+  >    sector of flash is used to store secure boot IV and digest of the
+  >    bootloader image. Otherwise, this sector is unused.
+  > .. only:: esp32s2
+  >    … The 4 kB sector of flash before this address is unused.
+  > .. only:: SOC_KEY_MANAGER_SUPPORTED
+  >    … The 8 kB sector of flash before this address is reserved for the
+  >    key manager for use with flash encryption (AES-XTS).
+  > 
+  > (esptool/targets/)
+  > esp32.py:   BOOTLOADER_FLASH_OFFSET = 0x1000
+  > esp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32p4.py: BOOTLOADER_FLASH_OFFSET = 0x2000  # First 2 sectors reserved for FE
+  > esp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > (S2 успадковує 0x1000 від ESP32ROM; H2 — 0x0 від ESP32C6ROM;
+  >  C2 — 0x0 від ESP32C3ROM)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig ESP-IDF і розбір цілей esptool — і збіг дослівний, включно з успадкуванням для S2, H2 і C2. Твердження книги «значення задає ROM і в ESP-IDF не налаштовується» теж дослівне: воно є в довідці Kconfig.
+Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок від `0x0` до `0x1000` зарезервовано під потреби ROM». ROM-бутлоадер живе в кремнії й у флеші не займає нічого. Насправді на classic цей сектор належить IV і дайджестові Secure Boot v1 — а без secure boot просто не використовується; на S2 не використовується завжди.
+Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання заведено в `factcheck/SPROSTOVANE.md`. Заразом таблиця в `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для P4, C5 і H4, який у розділі 16 є з проходу 6.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-16-029 sha:5904e9bb src:manual/16-boot.md:71 klas:F -->
+<!-- fc id:T-16-029 sha:5904e9bb src:manual/16-boot.md:71 klas:A -->
 ### T-16-029 · tablycya · рядок 71
 
 **Книга каже, дослівно:**
@@ -441,11 +482,52 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
+- **Дослівно з джерела:**
+  > (Kconfig.projbuild)
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     hex
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     # the first 2 sectors are reserved for the key manager with AES-XTS
+  >     #   (flash encryption) purpose
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > (startup.rst)
+  > .. only:: esp32
+  >    … If :doc:`/security/secure-boot-v1` is in use then the first 4 kB
+  >    sector of flash is used to store secure boot IV and digest of the
+  >    bootloader image. Otherwise, this sector is unused.
+  > .. only:: esp32s2
+  >    … The 4 kB sector of flash before this address is unused.
+  > .. only:: SOC_KEY_MANAGER_SUPPORTED
+  >    … The 8 kB sector of flash before this address is reserved for the
+  >    key manager for use with flash encryption (AES-XTS).
+  > 
+  > (esptool/targets/)
+  > esp32.py:   BOOTLOADER_FLASH_OFFSET = 0x1000
+  > esp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32p4.py: BOOTLOADER_FLASH_OFFSET = 0x2000  # First 2 sectors reserved for FE
+  > esp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > (S2 успадковує 0x1000 від ESP32ROM; H2 — 0x0 від ESP32C6ROM;
+  >  C2 — 0x0 від ESP32C3ROM)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig ESP-IDF і розбір цілей esptool — і збіг дослівний, включно з успадкуванням для S2, H2 і C2. Твердження книги «значення задає ROM і в ESP-IDF не налаштовується» теж дослівне: воно є в довідці Kconfig.
+Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок від `0x0` до `0x1000` зарезервовано під потреби ROM». ROM-бутлоадер живе в кремнії й у флеші не займає нічого. Насправді на classic цей сектор належить IV і дайджестові Secure Boot v1 — а без secure boot просто не використовується; на S2 не використовується завжди.
+Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання заведено в `factcheck/SPROSTOVANE.md`. Заразом таблиця в `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для P4, C5 і H4, який у розділі 16 є з проходу 6.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-16-030 sha:f3920dcd src:manual/16-boot.md:72 klas:F -->
+<!-- fc id:T-16-030 sha:f3920dcd src:manual/16-boot.md:72 klas:A -->
 ### T-16-030 · tablycya · рядок 72
 
 **Книга каже, дослівно:**
@@ -454,16 +536,57 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
+- **Дослівно з джерела:**
+  > (Kconfig.projbuild)
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     hex
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     # the first 2 sectors are reserved for the key manager with AES-XTS
+  >     #   (flash encryption) purpose
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > (startup.rst)
+  > .. only:: esp32
+  >    … If :doc:`/security/secure-boot-v1` is in use then the first 4 kB
+  >    sector of flash is used to store secure boot IV and digest of the
+  >    bootloader image. Otherwise, this sector is unused.
+  > .. only:: esp32s2
+  >    … The 4 kB sector of flash before this address is unused.
+  > .. only:: SOC_KEY_MANAGER_SUPPORTED
+  >    … The 8 kB sector of flash before this address is reserved for the
+  >    key manager for use with flash encryption (AES-XTS).
+  > 
+  > (esptool/targets/)
+  > esp32.py:   BOOTLOADER_FLASH_OFFSET = 0x1000
+  > esp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32p4.py: BOOTLOADER_FLASH_OFFSET = 0x2000  # First 2 sectors reserved for FE
+  > esp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > (S2 успадковує 0x1000 від ESP32ROM; H2 — 0x0 від ESP32C6ROM;
+  >  C2 — 0x0 від ESP32C3ROM)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig ESP-IDF і розбір цілей esptool — і збіг дослівний, включно з успадкуванням для S2, H2 і C2. Твердження книги «значення задає ROM і в ESP-IDF не налаштовується» теж дослівне: воно є в довідці Kconfig.
+Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок від `0x0` до `0x1000` зарезервовано під потреби ROM». ROM-бутлоадер живе в кремнії й у флеші не займає нічого. Насправді на classic цей сектор належить IV і дайджестові Secure Boot v1 — а без secure boot просто не використовується; на S2 не використовується завжди.
+Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання заведено в `factcheck/SPROSTOVANE.md`. Заразом таблиця в `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для P4, C5 і H4, який у розділі 16 є з проходу 6.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-16-031 sha:b53a9542 src:manual/16-boot.md:74 klas:E -->
+<!-- fc id:T-16-031 sha:c22fedd2 src:manual/16-boot.md:74 klas:E -->
 ### T-16-031 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
-> Причина в кожному рядку своя.
+> Причина в кожному рядку своя, і в першому вона не та, про яку зазвичай думають.
 
 **Доказ**
 
@@ -471,25 +594,66 @@
 
 ---
 
-<!-- fc id:T-16-032 sha:f2457584 src:manual/16-boot.md:74 klas:F -->
+<!-- fc id:T-16-032 sha:b1de2763 src:manual/16-boot.md:74 klas:A -->
 ### T-16-032 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
-> У classic і S2 проміжок від `0x0` до `0x1000` зарезервовано під потреби ROM.
+> [[classic]] На classic перший сектор (`0x0`–`0x1000`) відведено під **IV і дайджест Secure Boot v1**; коли secure boot не ввімкнено — а це звичайний випадок — сектор просто не використовується.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
+- **Дослівно з джерела:**
+  > (Kconfig.projbuild)
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     hex
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     # the first 2 sectors are reserved for the key manager with AES-XTS
+  >     #   (flash encryption) purpose
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > (startup.rst)
+  > .. only:: esp32
+  >    … If :doc:`/security/secure-boot-v1` is in use then the first 4 kB
+  >    sector of flash is used to store secure boot IV and digest of the
+  >    bootloader image. Otherwise, this sector is unused.
+  > .. only:: esp32s2
+  >    … The 4 kB sector of flash before this address is unused.
+  > .. only:: SOC_KEY_MANAGER_SUPPORTED
+  >    … The 8 kB sector of flash before this address is reserved for the
+  >    key manager for use with flash encryption (AES-XTS).
+  > 
+  > (esptool/targets/)
+  > esp32.py:   BOOTLOADER_FLASH_OFFSET = 0x1000
+  > esp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32p4.py: BOOTLOADER_FLASH_OFFSET = 0x2000  # First 2 sectors reserved for FE
+  > esp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > (S2 успадковує 0x1000 від ESP32ROM; H2 — 0x0 від ESP32C6ROM;
+  >  C2 — 0x0 від ESP32C3ROM)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig ESP-IDF і розбір цілей esptool — і збіг дослівний, включно з успадкуванням для S2, H2 і C2. Твердження книги «значення задає ROM і в ESP-IDF не налаштовується» теж дослівне: воно є в довідці Kconfig.
+Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок від `0x0` до `0x1000` зарезервовано під потреби ROM». ROM-бутлоадер живе в кремнії й у флеші не займає нічого. Насправді на classic цей сектор належить IV і дайджестові Secure Boot v1 — а без secure boot просто не використовується; на S2 не використовується завжди.
+Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання заведено в `factcheck/SPROSTOVANE.md`. Заразом таблиця в `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для P4, C5 і H4, який у розділі 16 є з проходу 6.
+- **Прохід:** pass-24-zsuvy-i-matrycya
 
 ---
 
-<!-- fc id:T-16-033 sha:393584e3 src:manual/16-boot.md:74 klas:E -->
+<!-- fc id:T-16-033 sha:f4c2a592 src:manual/16-boot.md:74 klas:F -->
 ### T-16-033 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
-> У наступному поколінні його прибрали.
+> [[S2]] На S2 він не використовується взагалі ніколи.
 
 **Доказ**
 
@@ -497,12 +661,12 @@
 
 ---
 
-<!-- fc id:T-16-034 sha:9acd9157 src:manual/16-boot.md:74 klas:E -->
+<!-- fc id:T-16-034 sha:04eedad6 src:manual/16-boot.md:74 klas:F -->
 ### T-16-034 · proza · рядок 74
 
 **Книга каже, дослівно:**
 
-> У найновішому — перші два сектори віддані під ключі апаратного шифрування флешу, і бутлоадер знову зсунувся.
+> У наступному поколінні зайвий сектор прибрали, і бутлоадер став на `0x0`.
 
 **Доказ**
 
@@ -510,8 +674,62 @@
 
 ---
 
-<!-- fc id:T-16-035 sha:1c71192c src:manual/16-boot.md:80 klas:A -->
-### T-16-035 · proza · рядок 80
+<!-- fc id:T-16-035 sha:93217872 src:manual/16-boot.md:74 klas:A -->
+### T-16-035 · proza · рядок 74
+
+**Книга каже, дослівно:**
+
+> У найновішому — перші два сектори (8 КБ) віддані менеджерові ключів апаратного шифрування флешу (AES-XTS), і бутлоадер зсунувся вдруге.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
+- **Дослівно з джерела:**
+  > (Kconfig.projbuild)
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     hex
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     # the first 2 sectors are reserved for the key manager with AES-XTS
+  >     #   (flash encryption) purpose
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  >     help
+  >         Offset address that 2nd bootloader will be flashed to.
+  >         The value is determined by the ROM bootloader.
+  >         It's not configurable in ESP-IDF.
+  > 
+  > (startup.rst)
+  > .. only:: esp32
+  >    … If :doc:`/security/secure-boot-v1` is in use then the first 4 kB
+  >    sector of flash is used to store secure boot IV and digest of the
+  >    bootloader image. Otherwise, this sector is unused.
+  > .. only:: esp32s2
+  >    … The 4 kB sector of flash before this address is unused.
+  > .. only:: SOC_KEY_MANAGER_SUPPORTED
+  >    … The 8 kB sector of flash before this address is reserved for the
+  >    key manager for use with flash encryption (AES-XTS).
+  > 
+  > (esptool/targets/)
+  > esp32.py:   BOOTLOADER_FLASH_OFFSET = 0x1000
+  > esp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c3.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0
+  > esp32p4.py: BOOTLOADER_FLASH_OFFSET = 0x2000  # First 2 sectors reserved for FE
+  > esp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000
+  > (S2 успадковує 0x1000 від ESP32ROM; H2 — 0x0 від ESP32C6ROM;
+  >  C2 — 0x0 від ESP32C3ROM)
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig ESP-IDF і розбір цілей esptool — і збіг дослівний, включно з успадкуванням для S2, H2 і C2. Твердження книги «значення задає ROM і в ESP-IDF не налаштовується» теж дослівне: воно є в довідці Kconfig.
+Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок від `0x0` до `0x1000` зарезервовано під потреби ROM». ROM-бутлоадер живе в кремнії й у флеші не займає нічого. Насправді на classic цей сектор належить IV і дайджестові Secure Boot v1 — а без secure boot просто не використовується; на S2 не використовується завжди.
+Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання заведено в `factcheck/SPROSTOVANE.md`. Заразом таблиця в `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для P4, C5 і H4, який у розділі 16 є з проходу 6.
+- **Прохід:** pass-24-zsuvy-i-matrycya
+
+---
+
+<!-- fc id:T-16-036 sha:1c71192c src:manual/16-boot.md:84 klas:A -->
+### T-16-036 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -538,8 +756,8 @@
 
 ---
 
-<!-- fc id:T-16-036 sha:f5be32d6 src:manual/16-boot.md:80 klas:A -->
-### T-16-036 · proza · рядок 80
+<!-- fc id:T-16-037 sha:f5be32d6 src:manual/16-boot.md:84 klas:A -->
+### T-16-037 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -566,8 +784,8 @@
 
 ---
 
-<!-- fc id:T-16-037 sha:24750ec2 src:manual/16-boot.md:85 klas:E -->
-### T-16-037 · proza · рядок 85
+<!-- fc id:T-16-038 sha:24750ec2 src:manual/16-boot.md:89 klas:E -->
+### T-16-038 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -579,8 +797,8 @@
 
 ---
 
-<!-- fc id:T-16-038 sha:7780ccef src:manual/16-boot.md:85 klas:F -->
-### T-16-038 · proza · рядок 85
+<!-- fc id:T-16-039 sha:7780ccef src:manual/16-boot.md:89 klas:F -->
+### T-16-039 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -592,8 +810,8 @@
 
 ---
 
-<!-- fc id:T-16-039 sha:50435e63 src:manual/16-boot.md:91 klas:E -->
-### T-16-039 · proza · рядок 91
+<!-- fc id:T-16-040 sha:50435e63 src:manual/16-boot.md:95 klas:E -->
+### T-16-040 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -605,8 +823,8 @@
 
 ---
 
-<!-- fc id:T-16-040 sha:34472fe4 src:manual/16-boot.md:91 klas:F -->
-### T-16-040 · proza · рядок 91
+<!-- fc id:T-16-041 sha:34472fe4 src:manual/16-boot.md:95 klas:F -->
+### T-16-041 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -618,8 +836,8 @@
 
 ---
 
-<!-- fc id:T-16-041 sha:a123154f src:manual/16-boot.md:91 klas:F -->
-### T-16-041 · proza · рядок 91
+<!-- fc id:T-16-042 sha:a123154f src:manual/16-boot.md:95 klas:F -->
+### T-16-042 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -631,8 +849,8 @@
 
 ---
 
-<!-- fc id:T-16-042 sha:b57ee9e2 src:manual/16-boot.md:91 klas:F -->
-### T-16-042 · proza · рядок 91
+<!-- fc id:T-16-043 sha:b57ee9e2 src:manual/16-boot.md:95 klas:F -->
+### T-16-043 · proza · рядок 95
 
 **Книга каже, дослівно:**
 
@@ -644,8 +862,8 @@
 
 ---
 
-<!-- fc id:T-16-043 sha:2e8a35eb src:manual/16-boot.md:98 klas:A -->
-### T-16-043 · proza · рядок 98
+<!-- fc id:T-16-044 sha:2e8a35eb src:manual/16-boot.md:102 klas:A -->
+### T-16-044 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -666,8 +884,8 @@
 
 ---
 
-<!-- fc id:T-16-044 sha:22d5057d src:manual/16-boot.md:98 klas:D -->
-### T-16-044 · proza · рядок 98
+<!-- fc id:T-16-045 sha:22d5057d src:manual/16-boot.md:102 klas:D -->
+### T-16-045 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -692,8 +910,8 @@
 
 ---
 
-<!-- fc id:T-16-045 sha:c95b1a3f src:manual/16-boot.md:98 klas:F -->
-### T-16-045 · proza · рядок 98
+<!-- fc id:T-16-046 sha:c95b1a3f src:manual/16-boot.md:102 klas:F -->
+### T-16-046 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -705,8 +923,197 @@
 
 ---
 
-<!-- fc id:T-16-046 sha:99ffdfc9 src:manual/16-boot.md:103 klas:E -->
-### T-16-046 · proza · рядок 103
+<!-- fc id:T-16-047 sha:ed9083b2 src:manual/16-boot.md:107 klas:F -->
+### T-16-047 · proza · рядок 107
+
+**Книга каже, дослівно:**
+
+> Тут варта уваги асиметрія: адреса бутлоадера задана ROM і не налаштовується, а адреса таблиці розділів — звичайний параметр (`CONFIG_PARTITION_TABLE_OFFSET`), який **можна** зсунути.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-16-048 sha:bbad0666 src:manual/16-boot.md:107 klas:E -->
+### T-16-048 · proza · рядок 107
+
+**Книга каже, дослівно:**
+
+> Це не дрібниця, бо саме цим зсувом лікують наступну проблему.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-16-049 sha:13fb9aa2 src:manual/16-boot.md:113 klas:A -->
+### T-16-049 · proza · рядок 113
+
+**Книга каже, дослівно:**
+
+> **Простір бутлоадера — це проміжок до таблиці розділів, і він скінченний.** [[classic]] На classic це `0x8000 − 0x1000 = 0x7000` (28 КБ); на S3 і C3, де бутлоадер починається з нуля, — цілі `0x8000` (32 КБ).
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst, .../docs/en/api-guides/bootloader.rst, .../components/partition_table/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > (partition-tables.rst)
+  > The partition table length is 0xC00 bytes, as we allow a maximum of 95
+  > entries. An MD5 checksum, used for checking the integrity of the
+  > partition table at runtime, is appended after the table data. Thus, the
+  > partition table occupies an entire flash sector, which size is 0x1000
+  > (4 KB). As a result, any partition following it must be at least
+  > located at (default offset) + 0x1000.
+  > 
+  > (Kconfig.projbuild)
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  >     help
+  >         The address of partition table (by default 0x8000).
+  >         Allows you to move the partition table, it gives more space
+  >         for the bootloader.
+  > 
+  > (bootloader.rst)
+  > When using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the
+  > size limit is … bytes.
+  > If the bootloader binary is too large, then the bootloader build will
+  > fail with an error "Bootloader binary size [..] is too large for
+  > partition table offset".
+  > Options to work around this are:
+  > - Set bootloader compiler optimization back to "Size" …
+  > - Reduce bootloader log level …
+  > - Set CONFIG_PARTITION_TABLE_OFFSET to a higher value than 0x8000 …
+  >   no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET
+  >   + 0x1000.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`: «типовий ліміт розміру самої таблиці — `0x7000` (28 672 байти)».
+`0x7000` до таблиці не має стосунку. Це `0x8000 − 0x1000` — простір, який лишається **бутлоадерові** на classic. Власна довжина таблиці — `0xC00`, тобто 95 записів плюс MD5, і навіть вона займає цілий сектор лише тому, що флеш стирається секторами.
+Плутанина не безневинна: з неї випливає, ніби в таблицю влізає приблизно 900 розділів, і ніби вправа «зробити більше розділів» — безкоштовна. Насправді ліміт 95, а `0x7000` вичерпується не розділами, а Secure Boot і рівнем логу бутлоадера.
+Виправлено; обидва хибні формулювання заведено в реєстр спростованого і випробувано впровадженням у розділ 04 — знаходяться одразу.
+Заразом додано в книгу три речі, яких не було ніде: ліміт 95 записів (розділ 18), скінченність простору бутлоадера з дослівним рядком помилки збірання і ліками в порядку дешевизни (розділ 16), і асиметрія «зсув бутлоадера задає ROM, зсув таблиці — звичайний параметр» (розділ 16). Остання практично важлива: саме зсувом таблиці лікують нестачу місця під бутлоадер.
+- **Прохід:** pass-24-zsuvy-i-matrycya
+
+---
+
+<!-- fc id:T-16-050 sha:b0215fc8 src:manual/16-boot.md:117 klas:E -->
+### T-16-050 · proza · рядок 117
+
+**Книга каже, дослівно:**
+
+> Звичайному бутлоадеру цього з великим запасом.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-16-051 sha:7515725f src:manual/16-boot.md:117 klas:A -->
+### T-16-051 · proza · рядок 117
+
+**Книга каже, дослівно:**
+
+> Але шифрування флешу, Secure Boot і піднятий рівень логу бутлоадера додають відчутно, і збірка падає з `Bootloader binary size [..] is too large for partition table offset`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst, .../docs/en/api-guides/bootloader.rst, .../components/partition_table/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > (partition-tables.rst)
+  > The partition table length is 0xC00 bytes, as we allow a maximum of 95
+  > entries. An MD5 checksum, used for checking the integrity of the
+  > partition table at runtime, is appended after the table data. Thus, the
+  > partition table occupies an entire flash sector, which size is 0x1000
+  > (4 KB). As a result, any partition following it must be at least
+  > located at (default offset) + 0x1000.
+  > 
+  > (Kconfig.projbuild)
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  >     help
+  >         The address of partition table (by default 0x8000).
+  >         Allows you to move the partition table, it gives more space
+  >         for the bootloader.
+  > 
+  > (bootloader.rst)
+  > When using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the
+  > size limit is … bytes.
+  > If the bootloader binary is too large, then the bootloader build will
+  > fail with an error "Bootloader binary size [..] is too large for
+  > partition table offset".
+  > Options to work around this are:
+  > - Set bootloader compiler optimization back to "Size" …
+  > - Reduce bootloader log level …
+  > - Set CONFIG_PARTITION_TABLE_OFFSET to a higher value than 0x8000 …
+  >   no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET
+  >   + 0x1000.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`: «типовий ліміт розміру самої таблиці — `0x7000` (28 672 байти)».
+`0x7000` до таблиці не має стосунку. Це `0x8000 − 0x1000` — простір, який лишається **бутлоадерові** на classic. Власна довжина таблиці — `0xC00`, тобто 95 записів плюс MD5, і навіть вона займає цілий сектор лише тому, що флеш стирається секторами.
+Плутанина не безневинна: з неї випливає, ніби в таблицю влізає приблизно 900 розділів, і ніби вправа «зробити більше розділів» — безкоштовна. Насправді ліміт 95, а `0x7000` вичерпується не розділами, а Secure Boot і рівнем логу бутлоадера.
+Виправлено; обидва хибні формулювання заведено в реєстр спростованого і випробувано впровадженням у розділ 04 — знаходяться одразу.
+Заразом додано в книгу три речі, яких не було ніде: ліміт 95 записів (розділ 18), скінченність простору бутлоадера з дослівним рядком помилки збірання і ліками в порядку дешевизни (розділ 16), і асиметрія «зсув бутлоадера задає ROM, зсув таблиці — звичайний параметр» (розділ 16). Остання практично важлива: саме зсувом таблиці лікують нестачу місця під бутлоадер.
+- **Прохід:** pass-24-zsuvy-i-matrycya
+
+---
+
+<!-- fc id:T-16-052 sha:e5db7dcc src:manual/16-boot.md:122 klas:A -->
+### T-16-052 · proza · рядок 122
+
+**Книга каже, дослівно:**
+
+> Ліки в порядку дешевизни: повернути оптимізацію бутлоадера на «Size», знизити його рівень логу, і лише потім — відсунути таблицю розділів на адресу більшу за `0x8000`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > For this reason a partition table is flashed to
+  > (:ref:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash.
+  > …
+  > In both cases the factory app is flashed at offset 0x10000.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Вихідний .rst документації ESP-IDF — те, з чого зроблено docs.espressif.com, який із цього середовища не дістається.
+- **Прохід:** pass-01-tverde-yadro
+
+---
+
+<!-- fc id:T-16-053 sha:66180914 src:manual/16-boot.md:122 klas:D -->
+### T-16-053 · proza · рядок 122
+
+**Книга каже, дослівно:**
+
+> Останнє тягне за собою перерахунок явних зсувів у CSV: жоден розділ не може починатися раніше ніж нова адреса таблиці плюс `0x1000`.
+
+**Доказ**
+
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
+
+---
+
+<!-- fc id:T-16-054 sha:99ffdfc9 src:manual/16-boot.md:129 klas:E -->
+### T-16-054 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -718,8 +1125,8 @@
 
 ---
 
-<!-- fc id:T-16-047 sha:53494bdf src:manual/16-boot.md:103 klas:F -->
-### T-16-047 · proza · рядок 103
+<!-- fc id:T-16-055 sha:53494bdf src:manual/16-boot.md:129 klas:F -->
+### T-16-055 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -731,8 +1138,8 @@
 
 ---
 
-<!-- fc id:T-16-048 sha:36fdba60 src:manual/16-boot.md:103 klas:F -->
-### T-16-048 · proza · рядок 103
+<!-- fc id:T-16-056 sha:36fdba60 src:manual/16-boot.md:129 klas:F -->
+### T-16-056 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -744,8 +1151,8 @@
 
 ---
 
-<!-- fc id:T-16-049 sha:6f9388d2 src:manual/16-boot.md:109 klas:F -->
-### T-16-049 · proza · рядок 109
+<!-- fc id:T-16-057 sha:6f9388d2 src:manual/16-boot.md:135 klas:F -->
+### T-16-057 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -757,8 +1164,8 @@
 
 ---
 
-<!-- fc id:T-16-050 sha:4a5d1bee src:manual/16-boot.md:109 klas:F -->
-### T-16-050 · proza · рядок 109
+<!-- fc id:T-16-058 sha:4a5d1bee src:manual/16-boot.md:135 klas:F -->
+### T-16-058 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -770,8 +1177,8 @@
 
 ---
 
-<!-- fc id:T-16-051 sha:17b0b9ca src:manual/16-boot.md:114 klas:K -->
-### T-16-051 · kod · рядок 114
+<!-- fc id:T-16-059 sha:17b0b9ca src:manual/16-boot.md:140 klas:K -->
+### T-16-059 · kod · рядок 140
 
 **Книга каже, дослівно:**
 
@@ -819,8 +1226,8 @@
 
 ---
 
-<!-- fc id:T-16-052 sha:490ee98b src:manual/16-boot.md:115 klas:A -->
-### T-16-052 · kod-ryadok · рядок 115
+<!-- fc id:T-16-060 sha:490ee98b src:manual/16-boot.md:141 klas:A -->
+### T-16-060 · kod-ryadok · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -855,8 +1262,8 @@
 
 ---
 
-<!-- fc id:T-16-053 sha:cafabedc src:manual/16-boot.md:129 klas:E -->
-### T-16-053 · proza · рядок 129
+<!-- fc id:T-16-061 sha:cafabedc src:manual/16-boot.md:155 klas:E -->
+### T-16-061 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -868,8 +1275,8 @@
 
 ---
 
-<!-- fc id:T-16-054 sha:8c83e86c src:manual/16-boot.md:129 klas:F -->
-### T-16-054 · proza · рядок 129
+<!-- fc id:T-16-062 sha:8c83e86c src:manual/16-boot.md:155 klas:F -->
+### T-16-062 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -881,8 +1288,8 @@
 
 ---
 
-<!-- fc id:T-16-055 sha:9687babe src:manual/16-boot.md:129 klas:E -->
-### T-16-055 · proza · рядок 129
+<!-- fc id:T-16-063 sha:9687babe src:manual/16-boot.md:155 klas:E -->
+### T-16-063 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -894,8 +1301,8 @@
 
 ---
 
-<!-- fc id:T-16-056 sha:50f40ab5 src:manual/16-boot.md:129 klas:E -->
-### T-16-056 · proza · рядок 129
+<!-- fc id:T-16-064 sha:50f40ab5 src:manual/16-boot.md:155 klas:E -->
+### T-16-064 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -907,8 +1314,8 @@
 
 ---
 
-<!-- fc id:T-16-057 sha:b91c3393 src:manual/16-boot.md:129 klas:E -->
-### T-16-057 · proza · рядок 129
+<!-- fc id:T-16-065 sha:b91c3393 src:manual/16-boot.md:155 klas:E -->
+### T-16-065 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -920,8 +1327,8 @@
 
 ---
 
-<!-- fc id:T-16-058 sha:e5f9555a src:manual/16-boot.md:137 klas:K -->
-### T-16-058 · kod · рядок 137
+<!-- fc id:T-16-066 sha:e5f9555a src:manual/16-boot.md:163 klas:K -->
+### T-16-066 · kod · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -959,8 +1366,8 @@
 
 ---
 
-<!-- fc id:T-16-059 sha:5b0e39f3 src:manual/16-boot.md:138 klas:A -->
-### T-16-059 · kod-ryadok · рядок 138
+<!-- fc id:T-16-067 sha:5b0e39f3 src:manual/16-boot.md:164 klas:A -->
+### T-16-067 · kod-ryadok · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -995,8 +1402,8 @@
 
 ---
 
-<!-- fc id:T-16-060 sha:2987ec81 src:manual/16-boot.md:142 klas:F -->
-### T-16-060 · proza · рядок 142
+<!-- fc id:T-16-068 sha:2987ec81 src:manual/16-boot.md:168 klas:F -->
+### T-16-068 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -1008,8 +1415,8 @@
 
 ---
 
-<!-- fc id:T-16-061 sha:dfc19c84 src:manual/16-boot.md:146 klas:K -->
-### T-16-061 · kod · рядок 146
+<!-- fc id:T-16-069 sha:dfc19c84 src:manual/16-boot.md:172 klas:K -->
+### T-16-069 · kod · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -1037,8 +1444,8 @@
 
 ---
 
-<!-- fc id:T-16-062 sha:c68e2346 src:manual/16-boot.md:147 klas:A -->
-### T-16-062 · kod-ryadok · рядок 147
+<!-- fc id:T-16-070 sha:c68e2346 src:manual/16-boot.md:173 klas:A -->
+### T-16-070 · kod-ryadok · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -1063,8 +1470,8 @@
 
 ---
 
-<!-- fc id:T-16-063 sha:3098ca78 src:manual/16-boot.md:151 klas:E -->
-### T-16-063 · proza · рядок 151
+<!-- fc id:T-16-071 sha:3098ca78 src:manual/16-boot.md:177 klas:E -->
+### T-16-071 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1076,8 +1483,8 @@
 
 ---
 
-<!-- fc id:T-16-064 sha:120fecd6 src:manual/16-boot.md:151 klas:E -->
-### T-16-064 · proza · рядок 151
+<!-- fc id:T-16-072 sha:120fecd6 src:manual/16-boot.md:177 klas:E -->
+### T-16-072 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1089,8 +1496,8 @@
 
 ---
 
-<!-- fc id:T-16-065 sha:65aa20e8 src:manual/16-boot.md:154 klas:E -->
-### T-16-065 · proza · рядок 154
+<!-- fc id:T-16-073 sha:65aa20e8 src:manual/16-boot.md:180 klas:E -->
+### T-16-073 · proza · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1102,8 +1509,8 @@
 
 ---
 
-<!-- fc id:T-16-066 sha:df92f5bb src:manual/16-boot.md:156 klas:K -->
-### T-16-066 · kod · рядок 156
+<!-- fc id:T-16-074 sha:df92f5bb src:manual/16-boot.md:182 klas:K -->
+### T-16-074 · kod · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -1131,8 +1538,8 @@
 
 ---
 
-<!-- fc id:T-16-067 sha:4878c76b src:manual/16-boot.md:161 klas:F -->
-### T-16-067 · proza · рядок 161
+<!-- fc id:T-16-075 sha:4878c76b src:manual/16-boot.md:187 klas:F -->
+### T-16-075 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1144,8 +1551,8 @@
 
 ---
 
-<!-- fc id:T-16-068 sha:f07d9e1c src:manual/16-boot.md:164 klas:E -->
-### T-16-068 · proza · рядок 164
+<!-- fc id:T-16-076 sha:f07d9e1c src:manual/16-boot.md:190 klas:E -->
+### T-16-076 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1157,8 +1564,8 @@
 
 ---
 
-<!-- fc id:T-16-069 sha:c41ad640 src:manual/16-boot.md:164 klas:E -->
-### T-16-069 · proza · рядок 164
+<!-- fc id:T-16-077 sha:c41ad640 src:manual/16-boot.md:190 klas:E -->
+### T-16-077 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1170,8 +1577,8 @@
 
 ---
 
-<!-- fc id:T-16-070 sha:e41e916a src:manual/16-boot.md:164 klas:F -->
-### T-16-070 · proza · рядок 164
+<!-- fc id:T-16-078 sha:e41e916a src:manual/16-boot.md:190 klas:F -->
+### T-16-078 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1183,8 +1590,8 @@
 
 ---
 
-<!-- fc id:T-16-071 sha:dafca624 src:manual/16-boot.md:170 klas:F -->
-### T-16-071 · proza · рядок 170
+<!-- fc id:T-16-079 sha:dafca624 src:manual/16-boot.md:196 klas:F -->
+### T-16-079 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1196,8 +1603,8 @@
 
 ---
 
-<!-- fc id:T-16-072 sha:68faec6e src:manual/16-boot.md:170 klas:F -->
-### T-16-072 · proza · рядок 170
+<!-- fc id:T-16-080 sha:68faec6e src:manual/16-boot.md:196 klas:F -->
+### T-16-080 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1209,8 +1616,8 @@
 
 ---
 
-<!-- fc id:T-16-073 sha:7c2cf10c src:manual/16-boot.md:175 klas:E -->
-### T-16-073 · proza · рядок 175
+<!-- fc id:T-16-081 sha:7c2cf10c src:manual/16-boot.md:201 klas:E -->
+### T-16-081 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1222,8 +1629,8 @@
 
 ---
 
-<!-- fc id:T-16-074 sha:64b7ef66 src:manual/16-boot.md:177 klas:F -->
-### T-16-074 · proza · рядок 177
+<!-- fc id:T-16-082 sha:64b7ef66 src:manual/16-boot.md:203 klas:F -->
+### T-16-082 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1235,8 +1642,8 @@
 
 ---
 
-<!-- fc id:T-16-075 sha:5b9eaf66 src:manual/16-boot.md:184 klas:F -->
-### T-16-075 · proza · рядок 184
+<!-- fc id:T-16-083 sha:5b9eaf66 src:manual/16-boot.md:210 klas:F -->
+### T-16-083 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1248,8 +1655,8 @@
 
 ---
 
-<!-- fc id:T-16-076 sha:68f8f3aa src:manual/16-boot.md:184 klas:E -->
-### T-16-076 · proza · рядок 184
+<!-- fc id:T-16-084 sha:68f8f3aa src:manual/16-boot.md:210 klas:E -->
+### T-16-084 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -1261,8 +1668,8 @@
 
 ---
 
-<!-- fc id:T-16-077 sha:3c680211 src:manual/16-boot.md:189 klas:F -->
-### T-16-077 · proza · рядок 189
+<!-- fc id:T-16-085 sha:3c680211 src:manual/16-boot.md:215 klas:F -->
+### T-16-085 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1274,8 +1681,8 @@
 
 ---
 
-<!-- fc id:T-16-078 sha:b34d888e src:manual/16-boot.md:189 klas:F -->
-### T-16-078 · proza · рядок 189
+<!-- fc id:T-16-086 sha:b34d888e src:manual/16-boot.md:215 klas:F -->
+### T-16-086 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1287,8 +1694,8 @@
 
 ---
 
-<!-- fc id:T-16-079 sha:b1352204 src:manual/16-boot.md:196 klas:E -->
-### T-16-079 · proza · рядок 196
+<!-- fc id:T-16-087 sha:b1352204 src:manual/16-boot.md:222 klas:E -->
+### T-16-087 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1300,8 +1707,8 @@
 
 ---
 
-<!-- fc id:T-16-080 sha:6b942f91 src:manual/16-boot.md:196 klas:F -->
-### T-16-080 · proza · рядок 196
+<!-- fc id:T-16-088 sha:6b942f91 src:manual/16-boot.md:222 klas:F -->
+### T-16-088 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1313,8 +1720,8 @@
 
 ---
 
-<!-- fc id:T-16-081 sha:7c8641d9 src:manual/16-boot.md:196 klas:F -->
-### T-16-081 · proza · рядок 196
+<!-- fc id:T-16-089 sha:7c8641d9 src:manual/16-boot.md:222 klas:F -->
+### T-16-089 · proza · рядок 222
 
 **Книга каже, дослівно:**
 
@@ -1326,8 +1733,8 @@
 
 ---
 
-<!-- fc id:T-16-082 sha:96d636c6 src:manual/16-boot.md:205 klas:E -->
-### T-16-082 · proza · рядок 205
+<!-- fc id:T-16-090 sha:96d636c6 src:manual/16-boot.md:231 klas:E -->
+### T-16-090 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -1339,8 +1746,8 @@
 
 ---
 
-<!-- fc id:T-16-083 sha:85240d7d src:manual/16-boot.md:205 klas:E -->
-### T-16-083 · proza · рядок 205
+<!-- fc id:T-16-091 sha:85240d7d src:manual/16-boot.md:231 klas:E -->
+### T-16-091 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -1352,12 +1759,12 @@
 
 ---
 
-<!-- fc id:T-16-084 sha:be649b20 src:manual/16-boot.md:208 klas:A -->
-### T-16-084 · proza · рядок 208
+<!-- fc id:T-16-092 sha:871f576d src:manual/16-boot.md:234 klas:A -->
+### T-16-092 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
-> Адреса бутлоадера залежить від сімейства, адреса таблиці розділів — `0x8000` завжди.
+> Адреса бутлоадера залежить від сімейства і задана ROM; адреса таблиці розділів на всіх сімействах однакова — `0x8000`, якщо її свідомо не пересунули.
 
 **Доказ**
 
@@ -1374,8 +1781,8 @@
 
 ---
 
-<!-- fc id:T-16-085 sha:d25421b7 src:manual/16-boot.md:211 klas:E -->
-### T-16-085 · proza · рядок 211
+<!-- fc id:T-16-093 sha:d25421b7 src:manual/16-boot.md:238 klas:E -->
+### T-16-093 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -1387,8 +1794,8 @@
 
 ---
 
-<!-- fc id:T-16-086 sha:6555a300 src:manual/16-boot.md:214 klas:E -->
-### T-16-086 · proza · рядок 214
+<!-- fc id:T-16-094 sha:6555a300 src:manual/16-boot.md:241 klas:E -->
+### T-16-094 · proza · рядок 241
 
 **Книга каже, дослівно:**
 
@@ -1400,8 +1807,8 @@
 
 ---
 
-<!-- fc id:T-16-087 sha:a59da32e src:manual/16-boot.md:214 klas:E -->
-### T-16-087 · proza · рядок 214
+<!-- fc id:T-16-095 sha:a59da32e src:manual/16-boot.md:241 klas:E -->
+### T-16-095 · proza · рядок 241
 
 **Книга каже, дослівно:**
 

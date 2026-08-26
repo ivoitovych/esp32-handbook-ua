@@ -57,25 +57,45 @@ v6.0.2, розділ «ESP-IDF Versions». Звірено 2026-08-26.
 
 | Сімейство | Зсув бутлоадера |
 |---|---|
-| ESP32 (classic) | `0x1000` |
-| ESP32-S2 | `0x1000` |
-| ESP32-S3 | `0x0` |
-| ESP32-C3 та новіші RISC-V | `0x0` |
+| ESP32 (classic), ESP32-S2 | `0x1000` |
+| ESP32-S3, C2, C3, C6, H2 | `0x0` |
+| ESP32-P4, C5, H4 | `0x2000` |
 
-Причина різниці: у classic і S2 проміжок `0x0`–`0x1000` відведено під
-потреби ROM-бутлоадера, у пізніших сімействах — ні.
+Причина різниці **не** та, що зазвичай припускають («під потреби ROM»).
+На classic перший сектор відведено під IV і дайджест Secure Boot v1, а
+без secure boot просто не використовується; на S2 не використовується
+завжди. На P4, C5 і H4 перші два сектори (8 КБ) належать менеджерові
+ключів для шифрування флешу AES-XTS.
+
+Значення задає ROM, і в ESP-IDF воно не налаштовується: у довідці до
+`CONFIG_BOOTLOADER_OFFSET_IN_FLASH` сказано дослівно «The value is
+determined by the ROM bootloader. It's not configurable in ESP-IDF.»
 
 Практичний наслідок: команда `write-flash 0x1000 bootloader.bin`,
 скопійована з інструкції для ESP32 classic, кладе бутлоадер S3 не туди,
 і плата не стартує. Це одна з найчастіших причин «прошив — і мовчить».
-Джерело: ESP-IDF Programming Guide v6.0.2, «Bootloader» для esp32 і esp32s3.
+Джерело: `components/bootloader/Kconfig.projbuild` і
+`docs/en/api-guides/startup.rst`, ESP-IDF `release/v5.5`;
+`esptool/targets/esp32*.py` (`BOOTLOADER_FLASH_OFFSET`).
 Звірено 2026-08-26.
 
 **Таблиця розділів — зсув `0x8000` на всіх сімействах.**
-Займає цілий сектор флешу — `0x1000` (4 КБ), тому наступний розділ не може
-починатися раніше ніж `0x9000`. Типовий ліміт розміру самої таблиці —
-`0x7000` (28 672 байти) при зсуві бутлоадера `0x1000`.
-Джерело: ESP-IDF Programming Guide v6.0.2, «Partition Tables».
+На відміну від зсуву бутлоадера це **типове** значення, а не апаратне:
+`CONFIG_PARTITION_TABLE_OFFSET` можна змінити, і саме так дають
+бутлоадеру більше місця.
+
+Таблиця займає цілий сектор флешу — `0x1000` (4 КБ), тому наступний
+розділ не може починатися раніше ніж `0x9000`. Власна довжина таблиці —
+`0xC00` (3072 байти), тобто максимум **95 записів** плюс контрольна сума
+MD5.
+
+`0x7000` (28 672 байти) — це не ліміт таблиці, а простір, який лишається
+**бутлоадерові** на classic при типових зсувах (`0x8000 − 0x1000`).
+Перевищення дає помилку збірання `Bootloader binary size [..] is too
+large for partition table offset`.
+Джерело: `docs/en/api-guides/partition-tables.rst` («The partition table
+length is 0xC00 bytes, as we allow a maximum of 95 entries») і
+`docs/en/api-guides/bootloader.rst`, ESP-IDF `release/v5.5`.
 Звірено 2026-08-26.
 
 ---

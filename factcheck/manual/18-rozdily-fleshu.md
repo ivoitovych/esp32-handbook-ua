@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/18-rozdily-fleshu.md`
 
-Одиниць твердження: **123**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **125**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -93,8 +93,85 @@
 
 ---
 
-<!-- fc id:T-18-007 sha:cc195a29 src:manual/18-rozdily-fleshu.md:19 klas:E -->
+<!-- fc id:T-18-007 sha:564e9856 src:manual/18-rozdily-fleshu.md:19 klas:A -->
 ### T-18-007 · proza · рядок 19
+
+**Книга каже, дослівно:**
+
+> Сама таблиця крихітна: `0xC00` байтів, тобто **не більше 95 записів**, плюс контрольна сума MD5 після них.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst, .../docs/en/api-guides/bootloader.rst, .../components/partition_table/Kconfig.projbuild
+- **Дослівно з джерела:**
+  > (partition-tables.rst)
+  > The partition table length is 0xC00 bytes, as we allow a maximum of 95
+  > entries. An MD5 checksum, used for checking the integrity of the
+  > partition table at runtime, is appended after the table data. Thus, the
+  > partition table occupies an entire flash sector, which size is 0x1000
+  > (4 KB). As a result, any partition following it must be at least
+  > located at (default offset) + 0x1000.
+  > 
+  > (Kconfig.projbuild)
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  >     help
+  >         The address of partition table (by default 0x8000).
+  >         Allows you to move the partition table, it gives more space
+  >         for the bootloader.
+  > 
+  > (bootloader.rst)
+  > When using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the
+  > size limit is … bytes.
+  > If the bootloader binary is too large, then the bootloader build will
+  > fail with an error "Bootloader binary size [..] is too large for
+  > partition table offset".
+  > Options to work around this are:
+  > - Set bootloader compiler optimization back to "Size" …
+  > - Reduce bootloader log level …
+  > - Set CONFIG_PARTITION_TABLE_OFFSET to a higher value than 0x8000 …
+  >   no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET
+  >   + 0x1000.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`: «типовий ліміт розміру самої таблиці — `0x7000` (28 672 байти)».
+`0x7000` до таблиці не має стосунку. Це `0x8000 − 0x1000` — простір, який лишається **бутлоадерові** на classic. Власна довжина таблиці — `0xC00`, тобто 95 записів плюс MD5, і навіть вона займає цілий сектор лише тому, що флеш стирається секторами.
+Плутанина не безневинна: з неї випливає, ніби в таблицю влізає приблизно 900 розділів, і ніби вправа «зробити більше розділів» — безкоштовна. Насправді ліміт 95, а `0x7000` вичерпується не розділами, а Secure Boot і рівнем логу бутлоадера.
+Виправлено; обидва хибні формулювання заведено в реєстр спростованого і випробувано впровадженням у розділ 04 — знаходяться одразу.
+Заразом додано в книгу три речі, яких не було ніде: ліміт 95 записів (розділ 18), скінченність простору бутлоадера з дослівним рядком помилки збірання і ліками в порядку дешевизни (розділ 16), і асиметрія «зсув бутлоадера задає ROM, зсув таблиці — звичайний параметр» (розділ 16). Остання практично важлива: саме зсувом таблиці лікують нестачу місця під бутлоадер.
+- **Прохід:** pass-24-zsuvy-i-matrycya
+
+---
+
+<!-- fc id:T-18-008 sha:f3faaf6a src:manual/18-rozdily-fleshu.md:19 klas:D -->
+### T-18-008 · proza · рядок 19
+
+**Книга каже, дослівно:**
+
+> Займає вона при цьому цілий сектор флешу — 4 КБ, — бо стирати флеш можна тільки секторами.
+
+**Доказ**
+
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Дослівно з джерела:**
+  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  > nvs               0x9000 + 0x6000          = 0xF000
+  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  > 0x10000 / 1024                             = 64 КБ
+  > 
+  > сектор 0x1000 / 1024 = 4 КБ
+- **Спосіб і дата:** make arytmetyka, 2026-08-26
+- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
+Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
+Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
+- **Прохід:** pass-19-adresy-flesh
+
+---
+
+<!-- fc id:T-18-009 sha:cc195a29 src:manual/18-rozdily-fleshu.md:23 klas:E -->
+### T-18-009 · proza · рядок 23
 
 **Книга каже, дослівно:**
 
@@ -106,8 +183,8 @@
 
 ---
 
-<!-- fc id:T-18-008 sha:f337b884 src:manual/18-rozdily-fleshu.md:21 klas:F -->
-### T-18-008 · tablycya-shapka · рядок 21
+<!-- fc id:T-18-010 sha:f337b884 src:manual/18-rozdily-fleshu.md:25 klas:F -->
+### T-18-010 · tablycya-shapka · рядок 25
 
 **Книга каже, дослівно:**
 
@@ -119,8 +196,8 @@
 
 ---
 
-<!-- fc id:T-18-009 sha:606ac6dd src:manual/18-rozdily-fleshu.md:22 klas:F -->
-### T-18-009 · komirka · рядок 22
+<!-- fc id:T-18-011 sha:606ac6dd src:manual/18-rozdily-fleshu.md:26 klas:F -->
+### T-18-011 · komirka · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -132,8 +209,8 @@
 
 ---
 
-<!-- fc id:T-18-010 sha:f47ce163 src:manual/18-rozdily-fleshu.md:22 klas:F -->
-### T-18-010 · komirka · рядок 22
+<!-- fc id:T-18-012 sha:f47ce163 src:manual/18-rozdily-fleshu.md:26 klas:F -->
+### T-18-012 · komirka · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -145,8 +222,8 @@
 
 ---
 
-<!-- fc id:T-18-011 sha:15620348 src:manual/18-rozdily-fleshu.md:22 klas:F -->
-### T-18-011 · komirka · рядок 22
+<!-- fc id:T-18-013 sha:15620348 src:manual/18-rozdily-fleshu.md:26 klas:F -->
+### T-18-013 · komirka · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -158,8 +235,8 @@
 
 ---
 
-<!-- fc id:T-18-012 sha:8f0dd715 src:manual/18-rozdily-fleshu.md:22 klas:F -->
-### T-18-012 · komirka · рядок 22
+<!-- fc id:T-18-014 sha:8f0dd715 src:manual/18-rozdily-fleshu.md:26 klas:F -->
+### T-18-014 · komirka · рядок 26
 
 **Книга каже, дослівно:**
 
@@ -171,8 +248,8 @@
 
 ---
 
-<!-- fc id:T-18-013 sha:5f9bc8f0 src:manual/18-rozdily-fleshu.md:23 klas:F -->
-### T-18-013 · komirka · рядок 23
+<!-- fc id:T-18-015 sha:5f9bc8f0 src:manual/18-rozdily-fleshu.md:27 klas:F -->
+### T-18-015 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
@@ -184,8 +261,8 @@
 
 ---
 
-<!-- fc id:T-18-014 sha:789c88b9 src:manual/18-rozdily-fleshu.md:23 klas:F -->
-### T-18-014 · komirka · рядок 23
+<!-- fc id:T-18-016 sha:789c88b9 src:manual/18-rozdily-fleshu.md:27 klas:F -->
+### T-18-016 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
@@ -197,8 +274,8 @@
 
 ---
 
-<!-- fc id:T-18-015 sha:fc7a2431 src:manual/18-rozdily-fleshu.md:23 klas:A -->
-### T-18-015 · komirka · рядок 23
+<!-- fc id:T-18-017 sha:fc7a2431 src:manual/18-rozdily-fleshu.md:27 klas:A -->
+### T-18-017 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
@@ -228,8 +305,8 @@
 
 ---
 
-<!-- fc id:T-18-016 sha:d76b708c src:manual/18-rozdily-fleshu.md:23 klas:F -->
-### T-18-016 · komirka · рядок 23
+<!-- fc id:T-18-018 sha:d76b708c src:manual/18-rozdily-fleshu.md:27 klas:F -->
+### T-18-018 · komirka · рядок 27
 
 **Книга каже, дослівно:**
 
@@ -241,8 +318,8 @@
 
 ---
 
-<!-- fc id:T-18-017 sha:94bcae2e src:manual/18-rozdily-fleshu.md:24 klas:F -->
-### T-18-017 · komirka · рядок 24
+<!-- fc id:T-18-019 sha:94bcae2e src:manual/18-rozdily-fleshu.md:28 klas:F -->
+### T-18-019 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -254,8 +331,8 @@
 
 ---
 
-<!-- fc id:T-18-018 sha:98e8369f src:manual/18-rozdily-fleshu.md:24 klas:F -->
-### T-18-018 · komirka · рядок 24
+<!-- fc id:T-18-020 sha:98e8369f src:manual/18-rozdily-fleshu.md:28 klas:F -->
+### T-18-020 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -267,8 +344,8 @@
 
 ---
 
-<!-- fc id:T-18-019 sha:9df43b5f src:manual/18-rozdily-fleshu.md:24 klas:A -->
-### T-18-019 · komirka · рядок 24
+<!-- fc id:T-18-021 sha:9df43b5f src:manual/18-rozdily-fleshu.md:28 klas:A -->
+### T-18-021 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -298,8 +375,8 @@
 
 ---
 
-<!-- fc id:T-18-020 sha:59fff70d src:manual/18-rozdily-fleshu.md:24 klas:A -->
-### T-18-020 · komirka · рядок 24
+<!-- fc id:T-18-022 sha:59fff70d src:manual/18-rozdily-fleshu.md:28 klas:A -->
+### T-18-022 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
@@ -329,8 +406,8 @@
 
 ---
 
-<!-- fc id:T-18-021 sha:0923797f src:manual/18-rozdily-fleshu.md:27 klas:E -->
-### T-18-021 · proza · рядок 27
+<!-- fc id:T-18-023 sha:0923797f src:manual/18-rozdily-fleshu.md:31 klas:E -->
+### T-18-023 · proza · рядок 31
 
 **Книга каже, дослівно:**
 
@@ -342,8 +419,8 @@
 
 ---
 
-<!-- fc id:T-18-022 sha:50b4dd7d src:manual/18-rozdily-fleshu.md:29 klas:D -->
-### T-18-022 · proza · рядок 29
+<!-- fc id:T-18-024 sha:50b4dd7d src:manual/18-rozdily-fleshu.md:33 klas:D -->
+### T-18-024 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -368,8 +445,8 @@
 
 ---
 
-<!-- fc id:T-18-023 sha:6ad702cc src:manual/18-rozdily-fleshu.md:29 klas:F -->
-### T-18-023 · proza · рядок 29
+<!-- fc id:T-18-025 sha:6ad702cc src:manual/18-rozdily-fleshu.md:33 klas:F -->
+### T-18-025 · proza · рядок 33
 
 **Книга каже, дослівно:**
 
@@ -381,8 +458,8 @@
 
 ---
 
-<!-- fc id:T-18-024 sha:4eca33d4 src:manual/18-rozdily-fleshu.md:33 klas:F -->
-### T-18-024 · proza · рядок 33
+<!-- fc id:T-18-026 sha:4eca33d4 src:manual/18-rozdily-fleshu.md:37 klas:F -->
+### T-18-026 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -394,8 +471,8 @@
 
 ---
 
-<!-- fc id:T-18-025 sha:20700e13 src:manual/18-rozdily-fleshu.md:33 klas:F -->
-### T-18-025 · proza · рядок 33
+<!-- fc id:T-18-027 sha:20700e13 src:manual/18-rozdily-fleshu.md:37 klas:F -->
+### T-18-027 · proza · рядок 37
 
 **Книга каже, дослівно:**
 
@@ -407,8 +484,8 @@
 
 ---
 
-<!-- fc id:T-18-026 sha:ded12860 src:manual/18-rozdily-fleshu.md:37 klas:F -->
-### T-18-026 · proza · рядок 37
+<!-- fc id:T-18-028 sha:ded12860 src:manual/18-rozdily-fleshu.md:41 klas:F -->
+### T-18-028 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -420,8 +497,8 @@
 
 ---
 
-<!-- fc id:T-18-027 sha:76acd34b src:manual/18-rozdily-fleshu.md:37 klas:E -->
-### T-18-027 · proza · рядок 37
+<!-- fc id:T-18-029 sha:76acd34b src:manual/18-rozdily-fleshu.md:41 klas:E -->
+### T-18-029 · proza · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -433,8 +510,8 @@
 
 ---
 
-<!-- fc id:T-18-028 sha:b16e6cfe src:manual/18-rozdily-fleshu.md:42 klas:F -->
-### T-18-028 · proza · рядок 42
+<!-- fc id:T-18-030 sha:b16e6cfe src:manual/18-rozdily-fleshu.md:46 klas:F -->
+### T-18-030 · proza · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -446,8 +523,8 @@
 
 ---
 
-<!-- fc id:T-18-029 sha:f936f28f src:manual/18-rozdily-fleshu.md:42 klas:E -->
-### T-18-029 · proza · рядок 42
+<!-- fc id:T-18-031 sha:f936f28f src:manual/18-rozdily-fleshu.md:46 klas:E -->
+### T-18-031 · proza · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -459,8 +536,8 @@
 
 ---
 
-<!-- fc id:T-18-030 sha:12c0dae9 src:manual/18-rozdily-fleshu.md:46 klas:E -->
-### T-18-030 · proza · рядок 46
+<!-- fc id:T-18-032 sha:12c0dae9 src:manual/18-rozdily-fleshu.md:50 klas:E -->
+### T-18-032 · proza · рядок 50
 
 **Книга каже, дослівно:**
 
@@ -472,8 +549,8 @@
 
 ---
 
-<!-- fc id:T-18-031 sha:2af2e0ef src:manual/18-rozdily-fleshu.md:48 klas:K -->
-### T-18-031 · kod · рядок 48
+<!-- fc id:T-18-033 sha:2af2e0ef src:manual/18-rozdily-fleshu.md:52 klas:K -->
+### T-18-033 · kod · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -501,8 +578,8 @@
 
 ---
 
-<!-- fc id:T-18-032 sha:5793a2bb src:manual/18-rozdily-fleshu.md:49 klas:D -->
-### T-18-032 · kod-ryadok · рядок 49
+<!-- fc id:T-18-034 sha:5793a2bb src:manual/18-rozdily-fleshu.md:53 klas:D -->
+### T-18-034 · kod-ryadok · рядок 53
 
 **Книга каже, дослівно:**
 
@@ -527,8 +604,8 @@
 
 ---
 
-<!-- fc id:T-18-033 sha:4438754b src:manual/18-rozdily-fleshu.md:50 klas:F -->
-### T-18-033 · kod-ryadok · рядок 50
+<!-- fc id:T-18-035 sha:4438754b src:manual/18-rozdily-fleshu.md:54 klas:F -->
+### T-18-035 · kod-ryadok · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -540,8 +617,8 @@
 
 ---
 
-<!-- fc id:T-18-034 sha:9c3fadfd src:manual/18-rozdily-fleshu.md:53 klas:E -->
-### T-18-034 · proza · рядок 53
+<!-- fc id:T-18-036 sha:9c3fadfd src:manual/18-rozdily-fleshu.md:57 klas:E -->
+### T-18-036 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -553,8 +630,8 @@
 
 ---
 
-<!-- fc id:T-18-035 sha:170e004e src:manual/18-rozdily-fleshu.md:53 klas:F -->
-### T-18-035 · proza · рядок 53
+<!-- fc id:T-18-037 sha:170e004e src:manual/18-rozdily-fleshu.md:57 klas:F -->
+### T-18-037 · proza · рядок 57
 
 **Книга каже, дослівно:**
 
@@ -566,8 +643,8 @@
 
 ---
 
-<!-- fc id:T-18-036 sha:efe25d4b src:manual/18-rozdily-fleshu.md:58 klas:E -->
-### T-18-036 · proza · рядок 58
+<!-- fc id:T-18-038 sha:efe25d4b src:manual/18-rozdily-fleshu.md:62 klas:E -->
+### T-18-038 · proza · рядок 62
 
 **Книга каже, дослівно:**
 
@@ -579,8 +656,8 @@
 
 ---
 
-<!-- fc id:T-18-037 sha:8348b7b2 src:manual/18-rozdily-fleshu.md:60 klas:K -->
-### T-18-037 · kod · рядок 60
+<!-- fc id:T-18-039 sha:8348b7b2 src:manual/18-rozdily-fleshu.md:64 klas:K -->
+### T-18-039 · kod · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -616,8 +693,8 @@
 
 ---
 
-<!-- fc id:T-18-038 sha:40c8d5dd src:manual/18-rozdily-fleshu.md:68 klas:F -->
-### T-18-038 · proza · рядок 68
+<!-- fc id:T-18-040 sha:40c8d5dd src:manual/18-rozdily-fleshu.md:72 klas:F -->
+### T-18-040 · proza · рядок 72
 
 **Книга каже, дослівно:**
 
@@ -629,8 +706,8 @@
 
 ---
 
-<!-- fc id:T-18-039 sha:d9cb149f src:manual/18-rozdily-fleshu.md:72 klas:F -->
-### T-18-039 · proza · рядок 72
+<!-- fc id:T-18-041 sha:d9cb149f src:manual/18-rozdily-fleshu.md:76 klas:F -->
+### T-18-041 · proza · рядок 76
 
 **Книга каже, дослівно:**
 
@@ -642,8 +719,8 @@
 
 ---
 
-<!-- fc id:T-18-040 sha:d8851079 src:manual/18-rozdily-fleshu.md:75 klas:A -->
-### T-18-040 · proza · рядок 75
+<!-- fc id:T-18-042 sha:d8851079 src:manual/18-rozdily-fleshu.md:79 klas:A -->
+### T-18-042 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -673,8 +750,8 @@
 
 ---
 
-<!-- fc id:T-18-041 sha:2cfd4562 src:manual/18-rozdily-fleshu.md:75 klas:A -->
-### T-18-041 · proza · рядок 75
+<!-- fc id:T-18-043 sha:2cfd4562 src:manual/18-rozdily-fleshu.md:79 klas:A -->
+### T-18-043 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -704,8 +781,8 @@
 
 ---
 
-<!-- fc id:T-18-042 sha:14b13bf4 src:manual/18-rozdily-fleshu.md:75 klas:E -->
-### T-18-042 · proza · рядок 75
+<!-- fc id:T-18-044 sha:14b13bf4 src:manual/18-rozdily-fleshu.md:79 klas:E -->
+### T-18-044 · proza · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -717,8 +794,8 @@
 
 ---
 
-<!-- fc id:T-18-043 sha:801f2aae src:manual/18-rozdily-fleshu.md:81 klas:A -->
-### T-18-043 · proza · рядок 81
+<!-- fc id:T-18-045 sha:801f2aae src:manual/18-rozdily-fleshu.md:85 klas:A -->
+### T-18-045 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -752,8 +829,8 @@
 
 ---
 
-<!-- fc id:T-18-044 sha:16a9ef2e src:manual/18-rozdily-fleshu.md:81 klas:F -->
-### T-18-044 · proza · рядок 81
+<!-- fc id:T-18-046 sha:16a9ef2e src:manual/18-rozdily-fleshu.md:85 klas:F -->
+### T-18-046 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -765,8 +842,8 @@
 
 ---
 
-<!-- fc id:T-18-045 sha:d288675c src:manual/18-rozdily-fleshu.md:81 klas:E -->
-### T-18-045 · proza · рядок 81
+<!-- fc id:T-18-047 sha:d288675c src:manual/18-rozdily-fleshu.md:85 klas:E -->
+### T-18-047 · proza · рядок 85
 
 **Книга каже, дослівно:**
 
@@ -778,8 +855,8 @@
 
 ---
 
-<!-- fc id:T-18-046 sha:25ea8296 src:manual/18-rozdily-fleshu.md:88 klas:E -->
-### T-18-046 · proza · рядок 88
+<!-- fc id:T-18-048 sha:25ea8296 src:manual/18-rozdily-fleshu.md:92 klas:E -->
+### T-18-048 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -791,8 +868,8 @@
 
 ---
 
-<!-- fc id:T-18-047 sha:52530cd3 src:manual/18-rozdily-fleshu.md:88 klas:E -->
-### T-18-047 · proza · рядок 88
+<!-- fc id:T-18-049 sha:52530cd3 src:manual/18-rozdily-fleshu.md:92 klas:E -->
+### T-18-049 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -804,8 +881,8 @@
 
 ---
 
-<!-- fc id:T-18-048 sha:4935de88 src:manual/18-rozdily-fleshu.md:93 klas:E -->
-### T-18-048 · proza · рядок 93
+<!-- fc id:T-18-050 sha:4935de88 src:manual/18-rozdily-fleshu.md:97 klas:E -->
+### T-18-050 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -817,8 +894,8 @@
 
 ---
 
-<!-- fc id:T-18-049 sha:d7ea3d3a src:manual/18-rozdily-fleshu.md:93 klas:F -->
-### T-18-049 · proza · рядок 93
+<!-- fc id:T-18-051 sha:d7ea3d3a src:manual/18-rozdily-fleshu.md:97 klas:F -->
+### T-18-051 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -830,8 +907,8 @@
 
 ---
 
-<!-- fc id:T-18-050 sha:77e191f6 src:manual/18-rozdily-fleshu.md:97 klas:E -->
-### T-18-050 · proza · рядок 97
+<!-- fc id:T-18-052 sha:77e191f6 src:manual/18-rozdily-fleshu.md:101 klas:E -->
+### T-18-052 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -843,8 +920,8 @@
 
 ---
 
-<!-- fc id:T-18-051 sha:9eef63be src:manual/18-rozdily-fleshu.md:97 klas:A -->
-### T-18-051 · proza · рядок 97
+<!-- fc id:T-18-053 sha:9eef63be src:manual/18-rozdily-fleshu.md:101 klas:A -->
+### T-18-053 · proza · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -872,8 +949,8 @@
 
 ---
 
-<!-- fc id:T-18-052 sha:7d517b9b src:manual/18-rozdily-fleshu.md:102 klas:E -->
-### T-18-052 · proza · рядок 102
+<!-- fc id:T-18-054 sha:7d517b9b src:manual/18-rozdily-fleshu.md:106 klas:E -->
+### T-18-054 · proza · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -885,8 +962,8 @@
 
 ---
 
-<!-- fc id:T-18-053 sha:4b78fd12 src:manual/18-rozdily-fleshu.md:102 klas:E -->
-### T-18-053 · proza · рядок 102
+<!-- fc id:T-18-055 sha:4b78fd12 src:manual/18-rozdily-fleshu.md:106 klas:E -->
+### T-18-055 · proza · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -898,8 +975,8 @@
 
 ---
 
-<!-- fc id:T-18-054 sha:bdb800c3 src:manual/18-rozdily-fleshu.md:105 klas:K -->
-### T-18-054 · kod · рядок 105
+<!-- fc id:T-18-056 sha:bdb800c3 src:manual/18-rozdily-fleshu.md:109 klas:K -->
+### T-18-056 · kod · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -935,8 +1012,8 @@
 
 ---
 
-<!-- fc id:T-18-055 sha:f3349b99 src:manual/18-rozdily-fleshu.md:109 klas:A -->
-### T-18-055 · kod-ryadok · рядок 109
+<!-- fc id:T-18-057 sha:f3349b99 src:manual/18-rozdily-fleshu.md:113 klas:A -->
+### T-18-057 · kod-ryadok · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -964,8 +1041,8 @@
 
 ---
 
-<!-- fc id:T-18-056 sha:601ab80f src:manual/18-rozdily-fleshu.md:112 klas:F -->
-### T-18-056 · kod-ryadok · рядок 112
+<!-- fc id:T-18-058 sha:601ab80f src:manual/18-rozdily-fleshu.md:116 klas:F -->
+### T-18-058 · kod-ryadok · рядок 116
 
 **Книга каже, дослівно:**
 
@@ -977,8 +1054,8 @@
 
 ---
 
-<!-- fc id:T-18-057 sha:201bdc14 src:manual/18-rozdily-fleshu.md:116 klas:A -->
-### T-18-057 · proza · рядок 116
+<!-- fc id:T-18-059 sha:201bdc14 src:manual/18-rozdily-fleshu.md:120 klas:A -->
+### T-18-059 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -1006,8 +1083,8 @@
 
 ---
 
-<!-- fc id:T-18-058 sha:e101ea2e src:manual/18-rozdily-fleshu.md:116 klas:E -->
-### T-18-058 · proza · рядок 116
+<!-- fc id:T-18-060 sha:e101ea2e src:manual/18-rozdily-fleshu.md:120 klas:E -->
+### T-18-060 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -1019,8 +1096,8 @@
 
 ---
 
-<!-- fc id:T-18-059 sha:92317196 src:manual/18-rozdily-fleshu.md:116 klas:F -->
-### T-18-059 · proza · рядок 116
+<!-- fc id:T-18-061 sha:92317196 src:manual/18-rozdily-fleshu.md:120 klas:F -->
+### T-18-061 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -1032,8 +1109,8 @@
 
 ---
 
-<!-- fc id:T-18-060 sha:b3d9bf8d src:manual/18-rozdily-fleshu.md:125 klas:F -->
-### T-18-060 · proza · рядок 125
+<!-- fc id:T-18-062 sha:b3d9bf8d src:manual/18-rozdily-fleshu.md:129 klas:F -->
+### T-18-062 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -1045,8 +1122,8 @@
 
 ---
 
-<!-- fc id:T-18-061 sha:5b298442 src:manual/18-rozdily-fleshu.md:128 klas:F -->
-### T-18-061 · tablycya-shapka · рядок 128
+<!-- fc id:T-18-063 sha:5b298442 src:manual/18-rozdily-fleshu.md:132 klas:F -->
+### T-18-063 · tablycya-shapka · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -1058,8 +1135,8 @@
 
 ---
 
-<!-- fc id:T-18-062 sha:e168a5c0 src:manual/18-rozdily-fleshu.md:129 klas:F -->
-### T-18-062 · komirka · рядок 129
+<!-- fc id:T-18-064 sha:e168a5c0 src:manual/18-rozdily-fleshu.md:133 klas:F -->
+### T-18-064 · komirka · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -1071,8 +1148,8 @@
 
 ---
 
-<!-- fc id:T-18-063 sha:34872fc8 src:manual/18-rozdily-fleshu.md:129 klas:F -->
-### T-18-063 · komirka · рядок 129
+<!-- fc id:T-18-065 sha:34872fc8 src:manual/18-rozdily-fleshu.md:133 klas:F -->
+### T-18-065 · komirka · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -1084,8 +1161,8 @@
 
 ---
 
-<!-- fc id:T-18-064 sha:136b11ff src:manual/18-rozdily-fleshu.md:129 klas:F -->
-### T-18-064 · komirka · рядок 129
+<!-- fc id:T-18-066 sha:136b11ff src:manual/18-rozdily-fleshu.md:133 klas:F -->
+### T-18-066 · komirka · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -1097,8 +1174,8 @@
 
 ---
 
-<!-- fc id:T-18-065 sha:e9f3c2f3 src:manual/18-rozdily-fleshu.md:130 klas:F -->
-### T-18-065 · komirka · рядок 130
+<!-- fc id:T-18-067 sha:e9f3c2f3 src:manual/18-rozdily-fleshu.md:134 klas:F -->
+### T-18-067 · komirka · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -1110,8 +1187,8 @@
 
 ---
 
-<!-- fc id:T-18-066 sha:bd591c14 src:manual/18-rozdily-fleshu.md:130 klas:F -->
-### T-18-066 · komirka · рядок 130
+<!-- fc id:T-18-068 sha:bd591c14 src:manual/18-rozdily-fleshu.md:134 klas:F -->
+### T-18-068 · komirka · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -1123,8 +1200,8 @@
 
 ---
 
-<!-- fc id:T-18-067 sha:27ed2cb4 src:manual/18-rozdily-fleshu.md:130 klas:F -->
-### T-18-067 · komirka · рядок 130
+<!-- fc id:T-18-069 sha:27ed2cb4 src:manual/18-rozdily-fleshu.md:134 klas:F -->
+### T-18-069 · komirka · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -1136,8 +1213,8 @@
 
 ---
 
-<!-- fc id:T-18-068 sha:7c5fc24e src:manual/18-rozdily-fleshu.md:131 klas:F -->
-### T-18-068 · komirka · рядок 131
+<!-- fc id:T-18-070 sha:7c5fc24e src:manual/18-rozdily-fleshu.md:135 klas:F -->
+### T-18-070 · komirka · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -1149,8 +1226,8 @@
 
 ---
 
-<!-- fc id:T-18-069 sha:8b7abf4b src:manual/18-rozdily-fleshu.md:131 klas:F -->
-### T-18-069 · komirka · рядок 131
+<!-- fc id:T-18-071 sha:8b7abf4b src:manual/18-rozdily-fleshu.md:135 klas:F -->
+### T-18-071 · komirka · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -1162,8 +1239,8 @@
 
 ---
 
-<!-- fc id:T-18-070 sha:6a505c3a src:manual/18-rozdily-fleshu.md:131 klas:F -->
-### T-18-070 · komirka · рядок 131
+<!-- fc id:T-18-072 sha:6a505c3a src:manual/18-rozdily-fleshu.md:135 klas:F -->
+### T-18-072 · komirka · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -1175,8 +1252,8 @@
 
 ---
 
-<!-- fc id:T-18-071 sha:7a364c66 src:manual/18-rozdily-fleshu.md:132 klas:F -->
-### T-18-071 · komirka · рядок 132
+<!-- fc id:T-18-073 sha:7a364c66 src:manual/18-rozdily-fleshu.md:136 klas:F -->
+### T-18-073 · komirka · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -1188,8 +1265,8 @@
 
 ---
 
-<!-- fc id:T-18-072 sha:34b80b5e src:manual/18-rozdily-fleshu.md:132 klas:F -->
-### T-18-072 · komirka · рядок 132
+<!-- fc id:T-18-074 sha:34b80b5e src:manual/18-rozdily-fleshu.md:136 klas:F -->
+### T-18-074 · komirka · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -1201,8 +1278,8 @@
 
 ---
 
-<!-- fc id:T-18-073 sha:3764ddb1 src:manual/18-rozdily-fleshu.md:132 klas:F -->
-### T-18-073 · komirka · рядок 132
+<!-- fc id:T-18-075 sha:3764ddb1 src:manual/18-rozdily-fleshu.md:136 klas:F -->
+### T-18-075 · komirka · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -1214,8 +1291,8 @@
 
 ---
 
-<!-- fc id:T-18-074 sha:c0ee355e src:manual/18-rozdily-fleshu.md:133 klas:F -->
-### T-18-074 · komirka · рядок 133
+<!-- fc id:T-18-076 sha:c0ee355e src:manual/18-rozdily-fleshu.md:137 klas:F -->
+### T-18-076 · komirka · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -1227,8 +1304,8 @@
 
 ---
 
-<!-- fc id:T-18-075 sha:2d821c96 src:manual/18-rozdily-fleshu.md:133 klas:F -->
-### T-18-075 · komirka · рядок 133
+<!-- fc id:T-18-077 sha:2d821c96 src:manual/18-rozdily-fleshu.md:137 klas:F -->
+### T-18-077 · komirka · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -1240,8 +1317,8 @@
 
 ---
 
-<!-- fc id:T-18-076 sha:97b8e259 src:manual/18-rozdily-fleshu.md:133 klas:F -->
-### T-18-076 · komirka · рядок 133
+<!-- fc id:T-18-078 sha:97b8e259 src:manual/18-rozdily-fleshu.md:137 klas:F -->
+### T-18-078 · komirka · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -1253,8 +1330,8 @@
 
 ---
 
-<!-- fc id:T-18-077 sha:ad08a567 src:manual/18-rozdily-fleshu.md:134 klas:F -->
-### T-18-077 · komirka · рядок 134
+<!-- fc id:T-18-079 sha:ad08a567 src:manual/18-rozdily-fleshu.md:138 klas:F -->
+### T-18-079 · komirka · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -1266,8 +1343,8 @@
 
 ---
 
-<!-- fc id:T-18-078 sha:0c51c182 src:manual/18-rozdily-fleshu.md:134 klas:F -->
-### T-18-078 · komirka · рядок 134
+<!-- fc id:T-18-080 sha:0c51c182 src:manual/18-rozdily-fleshu.md:138 klas:F -->
+### T-18-080 · komirka · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -1279,8 +1356,8 @@
 
 ---
 
-<!-- fc id:T-18-079 sha:d37a8a60 src:manual/18-rozdily-fleshu.md:134 klas:F -->
-### T-18-079 · komirka · рядок 134
+<!-- fc id:T-18-081 sha:d37a8a60 src:manual/18-rozdily-fleshu.md:138 klas:F -->
+### T-18-081 · komirka · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -1292,8 +1369,8 @@
 
 ---
 
-<!-- fc id:T-18-080 sha:b5482ecd src:manual/18-rozdily-fleshu.md:137 klas:E -->
-### T-18-080 · proza · рядок 137
+<!-- fc id:T-18-082 sha:b5482ecd src:manual/18-rozdily-fleshu.md:141 klas:E -->
+### T-18-082 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1305,8 +1382,8 @@
 
 ---
 
-<!-- fc id:T-18-081 sha:c6ab43f6 src:manual/18-rozdily-fleshu.md:137 klas:E -->
-### T-18-081 · proza · рядок 137
+<!-- fc id:T-18-083 sha:c6ab43f6 src:manual/18-rozdily-fleshu.md:141 klas:E -->
+### T-18-083 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -1318,8 +1395,8 @@
 
 ---
 
-<!-- fc id:T-18-082 sha:009fe204 src:manual/18-rozdily-fleshu.md:143 klas:F -->
-### T-18-082 · proza · рядок 143
+<!-- fc id:T-18-084 sha:009fe204 src:manual/18-rozdily-fleshu.md:147 klas:F -->
+### T-18-084 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -1331,8 +1408,8 @@
 
 ---
 
-<!-- fc id:T-18-083 sha:784039ff src:manual/18-rozdily-fleshu.md:143 klas:E -->
-### T-18-083 · proza · рядок 143
+<!-- fc id:T-18-085 sha:784039ff src:manual/18-rozdily-fleshu.md:147 klas:E -->
+### T-18-085 · proza · рядок 147
 
 **Книга каже, дослівно:**
 
@@ -1344,8 +1421,8 @@
 
 ---
 
-<!-- fc id:T-18-084 sha:8278d069 src:manual/18-rozdily-fleshu.md:147 klas:K -->
-### T-18-084 · kod · рядок 147
+<!-- fc id:T-18-086 sha:8278d069 src:manual/18-rozdily-fleshu.md:151 klas:K -->
+### T-18-086 · kod · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1381,8 +1458,8 @@
 
 ---
 
-<!-- fc id:T-18-085 sha:2568a317 src:manual/18-rozdily-fleshu.md:148 klas:A -->
-### T-18-085 · kod-ryadok · рядок 148
+<!-- fc id:T-18-087 sha:2568a317 src:manual/18-rozdily-fleshu.md:152 klas:A -->
+### T-18-087 · kod-ryadok · рядок 152
 
 **Книга каже, дослівно:**
 
@@ -1416,8 +1493,8 @@
 
 ---
 
-<!-- fc id:T-18-086 sha:706a6f2e src:manual/18-rozdily-fleshu.md:151 klas:F -->
-### T-18-086 · proza · рядок 151
+<!-- fc id:T-18-088 sha:706a6f2e src:manual/18-rozdily-fleshu.md:155 klas:F -->
+### T-18-088 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -1429,8 +1506,8 @@
 
 ---
 
-<!-- fc id:T-18-087 sha:bb45cfb1 src:manual/18-rozdily-fleshu.md:151 klas:E -->
-### T-18-087 · proza · рядок 151
+<!-- fc id:T-18-089 sha:bb45cfb1 src:manual/18-rozdily-fleshu.md:155 klas:E -->
+### T-18-089 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -1442,8 +1519,8 @@
 
 ---
 
-<!-- fc id:T-18-088 sha:62ee5911 src:manual/18-rozdily-fleshu.md:156 klas:E -->
-### T-18-088 · proza · рядок 156
+<!-- fc id:T-18-090 sha:62ee5911 src:manual/18-rozdily-fleshu.md:160 klas:E -->
+### T-18-090 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1455,8 +1532,8 @@
 
 ---
 
-<!-- fc id:T-18-089 sha:2dd189cd src:manual/18-rozdily-fleshu.md:156 klas:F -->
-### T-18-089 · proza · рядок 156
+<!-- fc id:T-18-091 sha:2dd189cd src:manual/18-rozdily-fleshu.md:160 klas:F -->
+### T-18-091 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1468,8 +1545,8 @@
 
 ---
 
-<!-- fc id:T-18-090 sha:3408b516 src:manual/18-rozdily-fleshu.md:156 klas:E -->
-### T-18-090 · proza · рядок 156
+<!-- fc id:T-18-092 sha:3408b516 src:manual/18-rozdily-fleshu.md:160 klas:E -->
+### T-18-092 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1481,8 +1558,8 @@
 
 ---
 
-<!-- fc id:T-18-091 sha:fdd40a10 src:manual/18-rozdily-fleshu.md:156 klas:F -->
-### T-18-091 · proza · рядок 156
+<!-- fc id:T-18-093 sha:fdd40a10 src:manual/18-rozdily-fleshu.md:160 klas:F -->
+### T-18-093 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1494,8 +1571,8 @@
 
 ---
 
-<!-- fc id:T-18-092 sha:38b96c9d src:manual/18-rozdily-fleshu.md:165 klas:E -->
-### T-18-092 · proza · рядок 165
+<!-- fc id:T-18-094 sha:38b96c9d src:manual/18-rozdily-fleshu.md:169 klas:E -->
+### T-18-094 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -1507,8 +1584,8 @@
 
 ---
 
-<!-- fc id:T-18-093 sha:0e9d20cb src:manual/18-rozdily-fleshu.md:165 klas:E -->
-### T-18-093 · proza · рядок 165
+<!-- fc id:T-18-095 sha:0e9d20cb src:manual/18-rozdily-fleshu.md:169 klas:E -->
+### T-18-095 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -1520,8 +1597,8 @@
 
 ---
 
-<!-- fc id:T-18-094 sha:b760318d src:manual/18-rozdily-fleshu.md:165 klas:F -->
-### T-18-094 · proza · рядок 165
+<!-- fc id:T-18-096 sha:b760318d src:manual/18-rozdily-fleshu.md:169 klas:F -->
+### T-18-096 · proza · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -1533,8 +1610,8 @@
 
 ---
 
-<!-- fc id:T-18-095 sha:f48a238f src:manual/18-rozdily-fleshu.md:174 klas:E -->
-### T-18-095 · proza · рядок 174
+<!-- fc id:T-18-097 sha:f48a238f src:manual/18-rozdily-fleshu.md:178 klas:E -->
+### T-18-097 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1546,8 +1623,8 @@
 
 ---
 
-<!-- fc id:T-18-096 sha:231194c9 src:manual/18-rozdily-fleshu.md:174 klas:E -->
-### T-18-096 · proza · рядок 174
+<!-- fc id:T-18-098 sha:231194c9 src:manual/18-rozdily-fleshu.md:178 klas:E -->
+### T-18-098 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1559,8 +1636,8 @@
 
 ---
 
-<!-- fc id:T-18-097 sha:7ab66916 src:manual/18-rozdily-fleshu.md:177 klas:K -->
-### T-18-097 · kod · рядок 177
+<!-- fc id:T-18-099 sha:7ab66916 src:manual/18-rozdily-fleshu.md:181 klas:K -->
+### T-18-099 · kod · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -1574,8 +1651,8 @@
 
 ---
 
-<!-- fc id:T-18-098 sha:bc634816 src:manual/18-rozdily-fleshu.md:181 klas:E -->
-### T-18-098 · proza · рядок 181
+<!-- fc id:T-18-100 sha:bc634816 src:manual/18-rozdily-fleshu.md:185 klas:E -->
+### T-18-100 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -1587,8 +1664,8 @@
 
 ---
 
-<!-- fc id:T-18-099 sha:a7b51adc src:manual/18-rozdily-fleshu.md:183 klas:F -->
-### T-18-099 · proza · рядок 183
+<!-- fc id:T-18-101 sha:a7b51adc src:manual/18-rozdily-fleshu.md:187 klas:F -->
+### T-18-101 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1600,8 +1677,8 @@
 
 ---
 
-<!-- fc id:T-18-100 sha:473a8f0b src:manual/18-rozdily-fleshu.md:183 klas:A -->
-### T-18-100 · proza · рядок 183
+<!-- fc id:T-18-102 sha:473a8f0b src:manual/18-rozdily-fleshu.md:187 klas:A -->
+### T-18-102 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1635,8 +1712,8 @@
 
 ---
 
-<!-- fc id:T-18-101 sha:d95fc6fa src:manual/18-rozdily-fleshu.md:183 klas:F -->
-### T-18-101 · proza · рядок 183
+<!-- fc id:T-18-103 sha:d95fc6fa src:manual/18-rozdily-fleshu.md:187 klas:F -->
+### T-18-103 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1648,8 +1725,8 @@
 
 ---
 
-<!-- fc id:T-18-102 sha:6364cfd3 src:manual/18-rozdily-fleshu.md:183 klas:E -->
-### T-18-102 · proza · рядок 183
+<!-- fc id:T-18-104 sha:6364cfd3 src:manual/18-rozdily-fleshu.md:187 klas:E -->
+### T-18-104 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1661,8 +1738,8 @@
 
 ---
 
-<!-- fc id:T-18-103 sha:85fee83d src:manual/18-rozdily-fleshu.md:191 klas:E -->
-### T-18-103 · proza · рядок 191
+<!-- fc id:T-18-105 sha:85fee83d src:manual/18-rozdily-fleshu.md:195 klas:E -->
+### T-18-105 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1674,8 +1751,8 @@
 
 ---
 
-<!-- fc id:T-18-104 sha:18b9a9fd src:manual/18-rozdily-fleshu.md:191 klas:E -->
-### T-18-104 · proza · рядок 191
+<!-- fc id:T-18-106 sha:18b9a9fd src:manual/18-rozdily-fleshu.md:195 klas:E -->
+### T-18-106 · proza · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -1687,8 +1764,8 @@
 
 ---
 
-<!-- fc id:T-18-105 sha:9eebc20f src:manual/18-rozdily-fleshu.md:196 klas:E -->
-### T-18-105 · proza · рядок 196
+<!-- fc id:T-18-107 sha:9eebc20f src:manual/18-rozdily-fleshu.md:200 klas:E -->
+### T-18-107 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1700,8 +1777,8 @@
 
 ---
 
-<!-- fc id:T-18-106 sha:e6335668 src:manual/18-rozdily-fleshu.md:196 klas:E -->
-### T-18-106 · proza · рядок 196
+<!-- fc id:T-18-108 sha:e6335668 src:manual/18-rozdily-fleshu.md:200 klas:E -->
+### T-18-108 · proza · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -1713,8 +1790,8 @@
 
 ---
 
-<!-- fc id:T-18-107 sha:40d6c1dc src:manual/18-rozdily-fleshu.md:202 klas:E -->
-### T-18-107 · proza · рядок 202
+<!-- fc id:T-18-109 sha:40d6c1dc src:manual/18-rozdily-fleshu.md:206 klas:E -->
+### T-18-109 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1726,8 +1803,8 @@
 
 ---
 
-<!-- fc id:T-18-108 sha:9b05e136 src:manual/18-rozdily-fleshu.md:202 klas:F -->
-### T-18-108 · proza · рядок 202
+<!-- fc id:T-18-110 sha:9b05e136 src:manual/18-rozdily-fleshu.md:206 klas:F -->
+### T-18-110 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1739,8 +1816,8 @@
 
 ---
 
-<!-- fc id:T-18-109 sha:56304439 src:manual/18-rozdily-fleshu.md:209 klas:F -->
-### T-18-109 · proza · рядок 209
+<!-- fc id:T-18-111 sha:56304439 src:manual/18-rozdily-fleshu.md:213 klas:F -->
+### T-18-111 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1752,8 +1829,8 @@
 
 ---
 
-<!-- fc id:T-18-110 sha:863a7fb3 src:manual/18-rozdily-fleshu.md:211 klas:D -->
-### T-18-110 · proza · рядок 211
+<!-- fc id:T-18-112 sha:863a7fb3 src:manual/18-rozdily-fleshu.md:215 klas:D -->
+### T-18-112 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1795,8 +1872,8 @@
 
 ---
 
-<!-- fc id:T-18-111 sha:32ebab82 src:manual/18-rozdily-fleshu.md:211 klas:F -->
-### T-18-111 · proza · рядок 211
+<!-- fc id:T-18-113 sha:32ebab82 src:manual/18-rozdily-fleshu.md:215 klas:F -->
+### T-18-113 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1808,8 +1885,8 @@
 
 ---
 
-<!-- fc id:T-18-112 sha:52f12d51 src:manual/18-rozdily-fleshu.md:211 klas:D -->
-### T-18-112 · proza · рядок 211
+<!-- fc id:T-18-114 sha:52f12d51 src:manual/18-rozdily-fleshu.md:215 klas:D -->
+### T-18-114 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1851,8 +1928,8 @@
 
 ---
 
-<!-- fc id:T-18-113 sha:5b4060f0 src:manual/18-rozdily-fleshu.md:211 klas:E -->
-### T-18-113 · proza · рядок 211
+<!-- fc id:T-18-115 sha:5b4060f0 src:manual/18-rozdily-fleshu.md:215 klas:E -->
+### T-18-115 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1864,8 +1941,8 @@
 
 ---
 
-<!-- fc id:T-18-114 sha:b8548325 src:manual/18-rozdily-fleshu.md:211 klas:E -->
-### T-18-114 · proza · рядок 211
+<!-- fc id:T-18-116 sha:b8548325 src:manual/18-rozdily-fleshu.md:215 klas:E -->
+### T-18-116 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1877,8 +1954,8 @@
 
 ---
 
-<!-- fc id:T-18-115 sha:535138f3 src:manual/18-rozdily-fleshu.md:219 klas:F -->
-### T-18-115 · proza · рядок 219
+<!-- fc id:T-18-117 sha:535138f3 src:manual/18-rozdily-fleshu.md:223 klas:F -->
+### T-18-117 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -1890,8 +1967,8 @@
 
 ---
 
-<!-- fc id:T-18-116 sha:255c3b69 src:manual/18-rozdily-fleshu.md:219 klas:F -->
-### T-18-116 · proza · рядок 219
+<!-- fc id:T-18-118 sha:255c3b69 src:manual/18-rozdily-fleshu.md:223 klas:F -->
+### T-18-118 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -1903,8 +1980,8 @@
 
 ---
 
-<!-- fc id:T-18-117 sha:e612ab0d src:manual/18-rozdily-fleshu.md:219 klas:F -->
-### T-18-117 · proza · рядок 219
+<!-- fc id:T-18-119 sha:e612ab0d src:manual/18-rozdily-fleshu.md:223 klas:F -->
+### T-18-119 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -1916,8 +1993,8 @@
 
 ---
 
-<!-- fc id:T-18-118 sha:a369ddd0 src:manual/18-rozdily-fleshu.md:219 klas:E -->
-### T-18-118 · proza · рядок 219
+<!-- fc id:T-18-120 sha:a369ddd0 src:manual/18-rozdily-fleshu.md:223 klas:E -->
+### T-18-120 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -1929,8 +2006,8 @@
 
 ---
 
-<!-- fc id:T-18-119 sha:11073fc5 src:manual/18-rozdily-fleshu.md:229 klas:F -->
-### T-18-119 · proza · рядок 229
+<!-- fc id:T-18-121 sha:11073fc5 src:manual/18-rozdily-fleshu.md:233 klas:F -->
+### T-18-121 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -1942,8 +2019,8 @@
 
 ---
 
-<!-- fc id:T-18-120 sha:1a134448 src:manual/18-rozdily-fleshu.md:232 klas:E -->
-### T-18-120 · proza · рядок 232
+<!-- fc id:T-18-122 sha:1a134448 src:manual/18-rozdily-fleshu.md:236 klas:E -->
+### T-18-122 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1955,8 +2032,8 @@
 
 ---
 
-<!-- fc id:T-18-121 sha:c0b50278 src:manual/18-rozdily-fleshu.md:232 klas:F -->
-### T-18-121 · proza · рядок 232
+<!-- fc id:T-18-123 sha:c0b50278 src:manual/18-rozdily-fleshu.md:236 klas:F -->
+### T-18-123 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -1968,8 +2045,8 @@
 
 ---
 
-<!-- fc id:T-18-122 sha:b3601380 src:manual/18-rozdily-fleshu.md:235 klas:E -->
-### T-18-122 · proza · рядок 235
+<!-- fc id:T-18-124 sha:b3601380 src:manual/18-rozdily-fleshu.md:239 klas:E -->
+### T-18-124 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -1981,8 +2058,8 @@
 
 ---
 
-<!-- fc id:T-18-123 sha:68676e42 src:manual/18-rozdily-fleshu.md:237 klas:E -->
-### T-18-123 · proza · рядок 237
+<!-- fc id:T-18-125 sha:68676e42 src:manual/18-rozdily-fleshu.md:241 klas:E -->
+### T-18-125 · proza · рядок 241
 
 **Книга каже, дослівно:**
 
