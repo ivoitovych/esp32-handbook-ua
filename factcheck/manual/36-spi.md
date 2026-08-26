@@ -1006,7 +1006,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-063 sha:e4881333 src:manual/36-spi.md:95 klas:F -->
+<!-- fc id:T-36-063 sha:e4881333 src:manual/36-spi.md:95 klas:A -->
 ### T-36-063 · kod-ryadok · рядок 95
 
 **Книга каже, дослівно:**
@@ -1015,7 +1015,31 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 
@@ -1032,7 +1056,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-065 sha:4bc757ac src:manual/36-spi.md:97 klas:F -->
+<!-- fc id:T-36-065 sha:4bc757ac src:manual/36-spi.md:97 klas:A -->
 ### T-36-065 · kod-ryadok · рядок 97
 
 **Книга каже, дослівно:**
@@ -1041,7 +1065,31 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 
@@ -1139,7 +1187,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-072 sha:ac435de6 src:manual/36-spi.md:107 klas:F -->
+<!-- fc id:T-36-072 sha:ac435de6 src:manual/36-spi.md:107 klas:A -->
 ### T-36-072 · kod-ryadok · рядок 107
 
 **Книга каже, дослівно:**
@@ -1148,7 +1196,31 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 

@@ -51,11 +51,35 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 
-<!-- fc id:T-33-004 sha:3fad3578 src:manual/33-peryferiya-kod.md:12 klas:F -->
+<!-- fc id:T-33-004 sha:3fad3578 src:manual/33-peryferiya-kod.md:12 klas:A -->
 ### T-33-004 · kod-ryadok · рядок 12
 
 **Книга каже, дослівно:**
@@ -64,7 +88,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 
@@ -188,11 +236,35 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 
-<!-- fc id:T-33-014 sha:f96f77cb src:manual/33-peryferiya-kod.md:29 klas:F -->
+<!-- fc id:T-33-014 sha:f96f77cb src:manual/33-peryferiya-kod.md:29 klas:A -->
 ### T-33-014 · kod-ryadok · рядок 29
 
 **Книга каже, дослівно:**
@@ -201,7 +273,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 
@@ -655,7 +751,7 @@
 
 ---
 
-<!-- fc id:T-33-038 sha:f0c21116 src:manual/33-peryferiya-kod.md:97 klas:F -->
+<!-- fc id:T-33-038 sha:f0c21116 src:manual/33-peryferiya-kod.md:97 klas:A -->
 ### T-33-038 · kod-ryadok · рядок 97
 
 **Книга каже, дослівно:**
@@ -664,7 +760,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 
@@ -762,7 +882,7 @@
 
 ---
 
-<!-- fc id:T-33-045 sha:b9fc8ae0 src:manual/33-peryferiya-kod.md:107 klas:F -->
+<!-- fc id:T-33-045 sha:b9fc8ae0 src:manual/33-peryferiya-kod.md:107 klas:A -->
 ### T-33-045 · kod-ryadok · рядок 107
 
 **Книга каже, дослівно:**
@@ -771,7 +891,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/ {esp_driver_i2c,esp_driver_spi,esp_driver_uart,esp_driver_ledc,esp_driver_gpio}/include/driver/ {i2c_master.h,spi_common.h,spi_master.h,uart.h,ledc.h,gpio.h}
+- **Дослівно з джерела:**
+  > Звірено вісім структур, усі поля, які книга ініціалізує:
+  > 
+  > i2c_master_bus_config_t        6 полів книги ⊂ 11 у заголовку
+  > i2c_device_config_t            3 ⊂ 17
+  > spi_bus_config_t               6 ⊂ 18
+  > spi_device_interface_config_t  4 ⊂ 16
+  > uart_config_t                  6 ⊂ 11
+  > ledc_timer_config_t            4 ⊂ 16
+  > ledc_channel_config_t          5 ⊂ 10
+  > gpio_config_t                  5 ⊂ 6
+  > 
+  > Жодного імені поза заголовком.
+- **Спосіб і дата:** curl raw.githubusercontent + зіставлення `tools/polya.py`, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у 39 іменах. Це не дрібниця: імена полів конфігураційних структур — саме те, що тихо змінюється між версіями ESP-IDF, і саме те, що читач набирає дослівно з книжкової сторінки.
+Головне тут не результат, а те, що він тепер постійний. `tools/polya.py` стоїть у `make check` і бере перелік полів із заголовків, а не з книги. Якби перелік брався з книги, перевірка була б тавтологією: приклад завжди узгоджений сам із собою.
+Випробувано підкинутою вадою: заміна `.sda_io_num` на `.sda_gpio_num` дає
+
+    manual/35-i2c.md:110: у `i2c_master_bus_config_t` немає поля
+    `sda_gpio_num`
+
+На чистому дереві — тиша.
+- **Прохід:** pass-21-polya-struktur
 
 ---
 
