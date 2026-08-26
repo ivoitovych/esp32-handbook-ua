@@ -147,7 +147,7 @@ Bluetooth), на якому тримається чимало старих пр�
 **ESP32-S2 не має Bluetooth узагалі** — ні classic, ні BLE.
 
 **PSRAM підтримують лише classic, S2 і S3.** У C3, C6 і H2 прапорця
-`SOC_SPIRAM_SUPPORTED` немає: зовнішньої психічної пам'яті там не буде
+`SOC_SPIRAM_SUPPORTED` немає: зовнішньої псевдостатичної пам'яті там не буде
 за жодних умов.
 
 Джерело: `espressif/esp-idf` v5.2.1, `components/soc/*/include/soc/soc_caps.h`.

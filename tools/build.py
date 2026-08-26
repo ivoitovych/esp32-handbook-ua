@@ -99,6 +99,13 @@ RE_DIV_OPEN = re.compile(r"^:::+\s*([a-z-]+)\s*$")
 RE_DIV_CLOSE = re.compile(r"^:::+\s*$")
 RE_SCOPE = re.compile(r"\[\[([^\]\[]+)\]\]")
 
+# Український апостроф. У джерелах пишеться звичайний ' — його зручно
+# набирати; у книзі має стояти типографський ’ (U+2019), бо прямий —
+# це друкарська машинка, а не набір.
+# Умова «кирилиця з обох боків» сама виключає код: у C і в оболонці
+# навколо лапки кирилиці не буває.
+RE_APOSTROF = re.compile(r"(?<=[а-щьюяїієґА-ЩЬЮЯЇІЄҐ])'(?=[а-щьюяїієґА-ЩЬЮЯЇІЄҐ])")
+
 
 def preprocess(md: str, src: Path) -> str:
     """Розгортає проєктну розмітку в raw-typst, який pandoc пропускає наскрізь."""
@@ -138,7 +145,7 @@ def preprocess(md: str, src: Path) -> str:
                 p.strip() for p in m.group(1).split(",")) + '")`{=typst}',
             line,
         )
-        out.append(linkify(line))
+        out.append(linkify(RE_APOSTROF.sub("\u2019", line)))
 
     if stack:
         sys.exit(f"{src}: не закрито блок(и) {stack}")
