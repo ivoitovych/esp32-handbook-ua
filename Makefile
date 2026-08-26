@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck budgets check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck budgets arytmetyka check \
         check-attribution preview clean
 
 PY := python3
@@ -49,7 +49,10 @@ linkcheck:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck budgets check-attribution
+check: linkcheck budgets arytmetyka check-attribution
+
+arytmetyka:
+	@python3 tools/arytmetyka.py
 
 check-attribution:
 	@sh -c '. ./.githooks/identity.conf; \
