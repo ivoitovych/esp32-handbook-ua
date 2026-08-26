@@ -310,7 +310,7 @@
   set document(title: meta.title, author: meta.author-full)
   set page(
     paper: "a4",
-    margin: (x: 14mm, y: 13mm),
+    margin: (x: 12mm, y: 11mm),
     header: none,
     footer: context {
       set text(font: font-sans, size: 0.72em, fill: dim)
@@ -320,24 +320,27 @@
       )
     },
   )
-  show: base-styles.with(size: 11pt, leading: 0.68em)
+  show: base-styles.with(size: 10pt, leading: 0.58em)
+  set par(spacing: 0.85em)
   show heading: set text(font: font-sans, fill: ink, hyphenate: false)
   show heading: set par(justify: false)
-  // Кожна картка ярусу 0 починається з нової сторінки (Р9: строго одна сторінка).
+  show table: set block(spacing: 0.85em)
+  show raw.where(block: true): set block(spacing: 0.85em)
+  // Кожна картка ярусу 0 починається з нової сторінки (Р9: одна сторінка).
   show heading.where(level: 2): it => {
     pagebreak(weak: true)
-    block(above: 0em, below: 0.9em)[
-      #set text(size: 1.55em, weight: 700)
+    block(above: 0em, below: 0.7em)[
+      #set text(size: 1.5em, weight: 700)
       #it.body
-      #v(0.3em, weak: true)
+      #v(0.25em, weak: true)
       #line(length: 100%, stroke: 1.2pt + ink)
     ]
   }
-  show heading.where(level: 3): it => block(above: 1.1em, below: 0.45em)[
+  show heading.where(level: 3): it => block(above: 0.95em, below: 0.35em)[
     #set text(size: 1.05em, weight: 700)
     #it.body
   ]
-  show heading.where(level: 4): it => block(above: 0.9em, below: 0.35em)[
+  show heading.where(level: 4): it => block(above: 0.8em, below: 0.3em)[
     #set text(size: 0.96em, weight: 600)
     #it.body
   ]
