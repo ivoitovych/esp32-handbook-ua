@@ -36,10 +36,18 @@ arduino_esp32:
   note: "опубліковано 2026-07-22"
 
 vscode_extension:
-  version: "поточна"
-  status: UNVERIFIED
+  version: "2.2.0"
+  status: verified
+  checked: 2026-08-26
+  note: >-
+    офіційне розширення ESP-IDF від Espressif; ідентифікатор
+    espressif.esp-idf-extension
 
 platformio_pioarduino:
-  version: "?"
-  status: UNVERIFIED
-  note: "community-форк platform-espressif32; офіційна платформа застаріла"
+  version: "55.03.311"
+  status: verified
+  checked: 2026-08-26
+  note: >-
+    community-форк platform-espressif32; офіційна платформа PlatformIO
+    відстала і не має підтримки Arduino core 3.x. Версія знята з гілки
+    main; у проєкті пінується конкретний тег релізу
