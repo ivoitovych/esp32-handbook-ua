@@ -211,6 +211,82 @@ def _match_bracket(typ: str, start: int) -> int:
     return n - 1
 
 
+def tablycya_versij() -> str:
+    """Таблиця версій тулчейну як фрагмент typst (Р4).
+
+    Версії живуть у toolchain-baseline.yaml і потрапляють у книгу лише
+    звідти. Кожен рядок несе стан звірки: незвірене друкується з видимою
+    позначкою, щоб читач бачив різницю між звіреним і згаданим.
+    """
+    cfg = yaml.safe_load((ROOT / "toolchain-baseline.yaml").read_text(encoding="utf-8"))
+    revisiya = cfg.pop("revision", "—")
+
+    NAZVY = {
+        "esp_idf": "ESP-IDF",
+        "esp_idf_fallback": "ESP-IDF, запасна гілка",
+        "esptool": "esptool",
+        "arduino_esp32": "Arduino core для ESP32",
+        "vscode_extension": "Розширення ESP-IDF для VS Code",
+        "platformio_pioarduino": "pioarduino (форк platform-espressif32)",
+    }
+
+    ryadky = []
+    for kljuch, dani in cfg.items():
+        if not isinstance(dani, dict):
+            continue
+        nazva = NAZVY.get(kljuch, kljuch)
+        versiya = str(dani.get("version", "?"))
+        zvireno = str(dani.get("status", "")).lower() == "verified"
+        stan = (f'звірено {dani.get("checked", "")}' if zvireno
+                else "#text(weight: 700)[НЕ ЗВІРЕНО]")
+        note = str(dani.get("note", "")).strip().replace("\n", " ")
+        note = " ".join(note.split())
+        ryadky.append((nazva, versiya, stan, note))
+
+    out = [
+        "#block(breakable: true)[",
+        "  #text(font: font-sans, size: 1.05em, weight: 700)[Версії тулчейну]",
+        f"  #h(1fr) #text(size: 0.85em, fill: dim)[ревізія {revisiya}]",
+        "  #v(0.5em)",
+        "  #table(",
+        "    columns: (auto, auto, auto),",
+        "    inset: (x: 0.5em, y: 0.42em),",
+        "    stroke: (x, y) => (top: if y == 0 { 0.9pt } else if y == 1 "
+        "{ 0.6pt } else { 0.3pt + luma(72%) }, bottom: 0pt),",
+        "    [Що], [Версія], [Стан],",
+    ]
+    for nazva, versiya, stan, _ in ryadky:
+        out.append(f"    [{esc_typ(nazva)}], [`{esc_typ(versiya)}`], [{stan}],")
+    out.append("  )")
+    out.append("]")
+    out.append("")
+
+    prymitky = [(n, t) for n, _, _, t in ryadky if t]
+    if prymitky:
+        out.append("#block(above: 0.9em)[")
+        out.append("  #set text(size: 0.9em)")
+        for nazva, note in prymitky:
+            out.append(f"  #strong[{esc_typ(nazva)}.] {esc_typ(note)}\n")
+        out.append("]")
+        out.append("")
+
+    out.append("Ці значення не переписуються в тексті розділів (Р4): вони "
+               "живуть у файлі #raw(\"toolchain-baseline.yaml\") і "
+               "потрапляють у книгу лише звідси. Рядок із позначкою "
+               "#text(weight: 700)[НЕ ЗВІРЕНО] означає, що значення вжите, "
+               "але з першоджерелом не звірене — довіряти йому як решті "
+               "не можна.")
+    out.append("")
+    return "\n".join(out)
+
+
+def esc_typ(s: str) -> str:
+    """Екранує символи, що мають значення в розмітці typst."""
+    for ch in ("\\", "#", "$", "*", "_", "[", "]", "<", ">", "@"):
+        s = s.replace(ch, "\\" + ch)
+    return s
+
+
 def esc(s: str) -> str:
     return s.replace("\\", "\\\\").replace('"', '\\"')
 
@@ -274,6 +350,13 @@ def build(name: str, cfg: dict, meta: dict) -> Path:
                 ")",
                 "",
             ]
+        if part.get("generated") == "toolchain":
+            seq += 1
+            frag = tdir / f"{seq:03d}-toolchain.typ"
+            frag.write_text(IMPORT + "\n\n" + tablycya_versij(), encoding="utf-8")
+            frags.append(frag)
+            root.append(f'#include "{frag.name}"')
+
         for rel in files:
             src = ROOT / rel
             if not src.exists():

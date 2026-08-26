@@ -67,6 +67,7 @@ targets:
       - title: "Частина IV. Інструментарій"
         blurb: >-
           ESP-IDF як нормативне ядро, Arduino як швидкий шлях, і чесна межа між ними.
+        generated: toolchain
         files:
           - manual/11-idf.md
           - manual/12-arduino.md
