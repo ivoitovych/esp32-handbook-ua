@@ -1,0 +1,210 @@
+# Прохід 38 — шматки 9, 10 і 11 пулу: команди, піни, API/адреси/лог.
+#
+# 85 одиниць у трьох агентів. Тут — **тільки те, що я звірив сам**,
+# дослівною цитатою з джерела, отриманою в цій сесії. Решта звітів
+# лежить у `factcheck/PEREVIRYTY.md` і чекає на повторну перевірку.
+#
+# Межа проведена свідомо. Клас `A` означає «цитату справді отримано», а
+# не «агент повідомив, що отримав». Різниця сьогодні коштувала:
+# я вніс у розділ 25 команду `idf.py monitor --save-log log.txt` за
+# звітом агента, пішов перевіряти підпис — і виявив, що це прапорець
+# без значення. Помилка була б у друкованій книзі.
+
+- nazva: "GPIO11 на C3 — це майданчик VDD_SPI, живлення флешу"
+  zbih: "майданчик у\\s*\\n?матриці називається `VDD_SPI`|VDD_SPI_AS_GPIO|окремо `GPIO11` — це живлення флешу|Рахуйте `GPIO11` серед зайнятих"
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h,
+    .../components/efuse/esp32c3/esp_efuse_table.csv,
+    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst
+  cytata: |
+    (io_mux_reg.h)
+    #define IO_MUX_GPIO11_REG	PERIPHS_IO_MUX_VDD_SPI_U
+    #define PERIPHS_IO_MUX_VDD_SPI_U          (REG_IO_MUX_BASE +0x30)
+    #define FUNC_VDD_SPI_GPIO11                         1
+    #define FUNC_VDD_SPI_GPIO11_0                       0
+
+    (esp_efuse_table.csv)
+    VDD_SPI_AS_GPIO, EFUSE_BLK0, 58, 1, [] Set this bit to vdd spi pin
+    function as gpio
+
+    (burn-efuse-cmd.rst)
+    - 'VDD_SPI_AS_GPIO' (Set this bit to vdd spi pin function as gpio)
+      0b0 -> 0b1
+  sposib: >-
+    curl raw.githubusercontent — прогалину подав агент пулу (шматок 10),
+    джерело перевірене М1 самостійно, 2026-08-26
+  notatka: >-
+    **Прогалина в арифметиці самої книги, і саме тому цінна.**
+
+    Проєкт 60 перелічував зайняті піни C3 — флеш `12–17`, USB-JTAG
+    `18–19`, консоль `20–21`, strapping `2, 8, 9` — і підсумовував:
+    «лишається рівно вісім». Але 22 − 13 = 9. Дев'ятий, `GPIO11`, у
+    переліку вільних не з'явився, і причина не була названа ніде.
+
+    Висновок книги правильний, **обґрунтування — ні**. Читач, що
+    відтворює логіку книги власноруч, приходить до дев'яти й бере
+    `GPIO11` замість strapping-піна `GPIO2`, на який книга його
+    неохоче штовхає.
+
+    А `GPIO11` — це вивід, з якого живиться флеш. Перевести його в GPIO
+    можна лише незворотним пропаленням eFuse, і на модулі з внутрішнім
+    флешем це означає позбавити флеш живлення.
+
+    Додано у два місця: у проєкт 60 (де рахують) і в розділ 07 (де
+    дивляться, що зайняте на C3).
+
+    Окремо варте уваги те, **як** воно ховалося: у `esp32c3.inc`
+    колонка коментаря для `GPIO11` порожня. Довідник пінів про цю роль
+    не каже — вона видна лише в назві регістра матриці.
+
+- nazva: "Драйвер I²C називає причину в консолі, а не мовчить"
+  zbih: "i2c_new_master_bus\\(1049\\): invalid SDA/SCL pin number|називає причину в консолі|мовчазним воно\\s*\\n?стає лише тоді"
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c,
+    .../components/esp_common/include/esp_check.h,
+    .../Kconfig
+  cytata: |
+    (i2c_master.c:1049)
+    ESP_RETURN_ON_FALSE(GPIO_IS_VALID_GPIO(bus_config->sda_io_num) &&
+        GPIO_IS_VALID_GPIO(bus_config->scl_io_num), ESP_ERR_INVALID_ARG,
+        TAG, "invalid SDA/SCL pin number");
+
+    (esp_check.h — варіант, що діє типово)
+    #define ESP_RETURN_ON_FALSE(a, err_code, log_tag, format, ...) do { \
+            if (unlikely(!(a))) { \
+                ESP_LOGE(log_tag, "%s(%d): " format, __FUNCTION__, __LINE__ ...); \
+                return err_code; \
+            } \
+        } while(0)
+
+    (Kconfig)
+    config COMPILER_OPTIMIZATION_CHECKS_SILENT
+        bool "Disable messages in ESP_RETURN_ON_* and ESP_EXIT_ON_* macros"
+        default n
+  sposib: >-
+    curl raw.githubusercontent (перевірено М1 після зауваження агента
+    шматка 11), 2026-08-26
+  notatka: >-
+    Книга писала, що схема з `GPIO22` на S3 «не запрацює **й помилки не
+    дасть**», і тут же — що виклик поверне `ESP_ERR_INVALID_ARG`. Два
+    твердження в одному реченні суперечать одне одному.
+
+    Джерело вирішує суперечку на користь другого: мовчазний варіант
+    макроса вмикається лише опцією `COMPILER_OPTIMIZATION_CHECKS_SILENT`,
+    а вона типово `n`. Тобто в консолі стоїть готовий діагноз із
+    назвою функції та номером рядка.
+
+    Виправлення важливіше за факт: книга посилала читача шукати мовчазну
+    ваду там, де в логу лежить готова відповідь. Тепер сказано, за яких
+    умов воно **справді** стає мовчазним — коли код повернення не
+    перевіряють і лог гортають повз.
+
+- nazva: "ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR"
+  zbih: "ESP_DRAM_LOGE|переривання вимкнені або всередині ISR|DRAM_STR\\(\"mij_teg\"\\)"
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h
+  cytata: |
+    /**
+     * @brief Macros to output logs when the cache is disabled.
+     * Unlike normal logging macros, it's possible to use this macro when
+     * interrupts are disabled or inside an ISR.
+     * Placing log strings in DRAM reduces available DRAM, so only use
+     * when absolutely essential.
+     *
+     * Usage: `ESP_DRAM_LOGE(DRAM_STR("my_tag"), "format", ...)
+     */
+    #define ESP_DRAM_LOGE(tag, format, ...) ...
+  sposib: >-
+    curl raw.githubusercontent (перевірено М1 після зауваження агента
+    шматка 11), 2026-08-26
+  notatka: >-
+    Книга давала категоричне «в ISR не можна `printf` і `ESP_LOGx`».
+    Правило правильне, але ESP-IDF возить із собою саме той інструмент,
+    який потрібен, коли правило заважає, — і книга про нього мовчала.
+
+    Це четвертий випадок за два дні, коли категоричність книги
+    приховувала виняток, названий у джерелі в тому самому абзаці. Перші
+    три: `GPIO6–11` без `16–17`, «шість пінів, крапка», «не бачить м'які
+    поверхні» замість вимоги площі.
+
+    Ціна винятку взята з джерела дослівно й у книгу перенесена: рядки в
+    DRAM, DRAM мало, «лише коли без цього ніяк».
+
+- nazva: "На RISC-V рядка Backtrace немає — його будує монітор"
+  zbih: "рядка `Backtrace:` у дампі немає\\s*\\n?взагалі|CONFIG_ESP_SYSTEM_USE_EH_FRAME|розмір\\s*\\n?образу росте на 20–100"
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/fatal-errors.rst
+  cytata: |
+    .. only:: CONFIG_IDF_TARGET_ARCH_RISCV
+
+        Core  0 register dump:
+        MEPC    : 0x420048b4  RA      : 0x420048b4  SP      : 0x3fc8f2f0 ...
+        (жодного рядка Backtrace: у дампі)
+
+    Moreover, IDF Monitor is also capable of generating and printing a
+    backtrace thanks to the stack dump provided by the board in the
+    panic handler.
+
+    While the backtrace above is very handy, it requires the user to use
+    IDF Monitor. Thus, in order to generate and print a backtrace while
+    using another monitor program, it is possible to activate
+    ``CONFIG_ESP_SYSTEM_USE_EH_FRAME`` option from the menuconfig, under
+    the "Backtracing method" menu.
+
+    the option's drawback is that it results in an increase of the
+    compiled binary's size (ranging from 20% to 100% increase in size)
+  sposib: >-
+    curl raw.githubusercontent (перевірено М1 після зауваження агента
+    шматка 9), 2026-08-26
+  notatka: >-
+    Два різні механізми під однією назвою. На Xtensa чип друкує
+    `Backtrace: 0x…:0x…`, монітор перекладає адреси. На RISC-V чип не
+    друкує ланцюжка взагалі — монітор **відновлює** його зі знімка
+    стека.
+
+    Наслідок для читача різкий: лог з C3, знятий через `screen`, не
+    містить ланцюжка викликів і не міститиме його ніколи. Розшифровувати
+    нічого. На classic у тій самій ситуації адреси є, і `addr2line`
+    відпрацює потім.
+
+    Розділ 26 вчив знімати лог у файл і розшифровувати пізніше — порада,
+    що на половині сімейств книги не працює. Тепер це сказано, і сказано
+    з виходом: `CONFIG_ESP_SYSTEM_USE_EH_FRAME`, з ціною в 20–100 %
+    розміру образу.
+
+- nazva: "Режим завантаження словами друкує ROM, не esptool"
+  zbih: "Режим словами\\s*\\n?— `SPI_FAST_FLASH_BOOT`|друкує сам ROM|У виводі\\s*\\n?`esptool` цього рядка немає"
+  klas: A
+  dzherelo: >-
+    https://raw.githubusercontent.com/espressif/esptool/master/esptool/{cmds,loader,__init__}.py
+  cytata: |
+    Пошук рядків `SPI_FAST_FLASH_BOOT` і `DOWNLOAD_BOOT` у трьох файлах,
+    що формують увесь вивід esptool:
+
+        cmds.py       0 збігів
+        loader.py     0 збігів
+        __init__.py   0 збігів
+  sposib: >-
+    curl raw.githubusercontent + grep (перевірено М1 після зауваження
+    агента шматка 9), 2026-08-26
+  notatka: >-
+    **Знову власна помилка, і знову в додатку D.** Я написав «`esptool`
+    друкує режим словами» у блоці, доданому проходом 36 — тобто дві
+    правки поспіль в одному абзаці, обидві хибні в приписуванні.
+
+    Рядок `boot:0x13 (SPI_FAST_FLASH_BOOT)` друкує ROM у boot-лог по
+    UART. Книга наводить його прикладом за десять рядків нижче, у
+    підрозділі «Типовий boot-лог» — тобто джерело правильної відповіді
+    стояло на тій самій сторінці.
+
+    Доказ негативний, і це рідкість у реєстрі: він показує **відсутність**
+    рядка в усьому виводі інструмента. Такий доказ слабший за цитату й
+    залежить від того, що переглянуто всі три файли, які щось друкують.
+    Записую з цим застереженням явно.
+
+    Урок той самий, що в проходах 26 і 35: помилка не в числі, а в тому,
+    **хто це каже**. Тричі поспіль.

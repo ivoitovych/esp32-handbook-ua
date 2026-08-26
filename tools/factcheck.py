@@ -390,6 +390,45 @@ def rozbyty_alternatyvy(vzirets: str) -> list[str]:
 # цитату поруч.
 SHYROKA_ALTERNATYVA = 4
 
+
+def prychyna(chastyna: str, teksty: list[str]) -> str:
+    """Чому альтернатива не зачепила нічого — здогад, не вирок.
+
+    Перебираємо послаблення взірця по одному. Те, від якого він оживає,
+    і називає ваду. Три з них узято з випадків, що вже траплялися:
+
+      регістр   — велика літера на початку речення. Двоє супровідників
+                  наступили на це незалежно протягом години;
+      перенос   — текст книги переносить рядок там, де взірець чекав
+                  пробіл. З'являється, коли взірець пишуть, дивлячись у
+                  зверстаний вигляд, а не в джерело;
+      пробіли   — зайвий або відсутній пробіл усередині.
+
+    Четвертий випадок — коли не оживає нічого: текст книги змінився
+    після написання доказу. Це не вада взірця, а робота, яку треба
+    зробити: перевірити, чи доказ ще стосується нового формулювання.
+    """
+    try:
+        if any(re.search(chastyna, x, re.S | re.I) for x in teksty):
+            return "оживає без урахування регістру — велика літера"
+    except re.error:
+        return "недійсний взірець сам по собі"
+    bez_perenosu = [re.sub(r"\s+", " ", x) for x in teksty]
+    ch_plaskyy = re.sub(r"\\s\*\\n\?|\\s\+|\\n", " ", chastyna)
+    try:
+        if any(re.search(ch_plaskyy, x, re.S | re.I) for x in bez_perenosu):
+            return "оживає на злитих пробілах — перенос рядка в книзі"
+    except re.error:
+        pass
+    # Голова взірця — перші літери до першого спецсимволу. Якщо навіть
+    # вона не трапляється ніде, предмет із книги зник, а не з'їхав.
+    holova = re.split(r"[\\(\[.*+?{|^$]", chastyna, 1)[0].strip()
+    if len(holova) >= 4 and not any(holova.lower() in x.lower()
+                                    for x in teksty):
+        return f"у книзі немає навіть «{holova}» — текст змінився"
+    return "початок є, решта розійшлася — звірити з новим текстом"
+
+
 def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
     """Усі докази, що взагалі підпадають під це твердження.
 
@@ -545,7 +584,7 @@ def sketch() -> int:
     # Обидві занижують або завищують покриття мовчки, і жоден чек на них
     # не падає. Тому це звіт, а не ворота: судити, чи 12 збігів широкі,
     # може лише той, хто бачить цитату.
-    mertvi: list[tuple[dict, str]] = []
+    mertvi: list[tuple[dict, str, str]] = []
     shyroki: list[tuple[dict, str, int]] = []
     for z in dokazy:
         vz = z.get("zbih")
@@ -563,14 +602,15 @@ def sketch() -> int:
                 continue
             n = sum(1 for x in usi_teksty if r.search(x))
             if n == 0:
-                mertvi.append((z, ch))
+                mertvi.append((z, ch, prychyna(ch, usi_teksty)))
             elif n >= SHYROKA_ALTERNATYVA:
                 shyroki.append((z, ch, n))
     if mertvi:
         print(f"\n⚠ альтернатив без жодного збігу: {len(mertvi)}")
-        for z, ch in mertvi:
+        for z, ch, ch_prychyna in mertvi:
             print(f"    {z.get('nazva','?')}  ({z.get('_prokhid')})"
-                  f"\n        ↳ {ch}")
+                  f"\n        ↳ {ch}"
+                  f"\n          ({ch_prychyna})")
     if shyroki and "-v" in sys.argv:
         print(f"\nальтернатив від {SHYROKA_ALTERNATYVA} збігів: "
               f"{len(shyroki)}")

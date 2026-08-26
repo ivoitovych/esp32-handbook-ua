@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/07-gpio.md`
 
-Одиниць твердження: **135**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **137**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -1557,12 +1557,12 @@
 
 ---
 
-<!-- fc id:T-07-075 sha:405c002f src:manual/07-gpio.md:149 klas:A -->
+<!-- fc id:T-07-075 sha:203497bf src:manual/07-gpio.md:149 klas:A -->
 ### T-07-075 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
-> [[C3]] На C3 — `GPIO12`–`GPIO17`.
+> [[C3]] На C3 — `GPIO12`–`GPIO17`, і окремо `GPIO11`: його майданчик у матриці називається `VDD_SPI`, тобто це вивід живлення самої флеш-пам'яті, а не звичайний пін.
 
 **Доказ**
 
@@ -1593,8 +1593,80 @@
 
 ---
 
-<!-- fc id:T-07-076 sha:9a2e525e src:manual/07-gpio.md:152 klas:F -->
-### T-07-076 · proza · рядок 152
+<!-- fc id:T-07-076 sha:d9afb982 src:manual/07-gpio.md:149 klas:A -->
+### T-07-076 · proza · рядок 149
+
+**Книга каже, дослівно:**
+
+> Перевести його в GPIO можна лише пропаленням eFuse `VDD_SPI_AS_GPIO` — незворотним (картка К11), і на модулі з внутрішнім флешем це забирає в флешу живлення.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h, .../components/efuse/esp32c3/esp_efuse_table.csv, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst
+- **Дослівно з джерела:**
+  > (io_mux_reg.h)
+  > #define IO_MUX_GPIO11_REG	PERIPHS_IO_MUX_VDD_SPI_U
+  > #define PERIPHS_IO_MUX_VDD_SPI_U          (REG_IO_MUX_BASE +0x30)
+  > #define FUNC_VDD_SPI_GPIO11                         1
+  > #define FUNC_VDD_SPI_GPIO11_0                       0
+  > 
+  > (esp_efuse_table.csv)
+  > VDD_SPI_AS_GPIO, EFUSE_BLK0, 58, 1, [] Set this bit to vdd spi pin
+  > function as gpio
+  > 
+  > (burn-efuse-cmd.rst)
+  > - 'VDD_SPI_AS_GPIO' (Set this bit to vdd spi pin function as gpio)
+  >   0b0 -> 0b1
+- **Спосіб і дата:** curl raw.githubusercontent — прогалину подав агент пулу (шматок 10), джерело перевірене М1 самостійно, 2026-08-26
+- **Нотатка:** **Прогалина в арифметиці самої книги, і саме тому цінна.**
+Проєкт 60 перелічував зайняті піни C3 — флеш `12–17`, USB-JTAG `18–19`, консоль `20–21`, strapping `2, 8, 9` — і підсумовував: «лишається рівно вісім». Але 22 − 13 = 9. Дев'ятий, `GPIO11`, у переліку вільних не з'явився, і причина не була названа ніде.
+Висновок книги правильний, **обґрунтування — ні**. Читач, що відтворює логіку книги власноруч, приходить до дев'яти й бере `GPIO11` замість strapping-піна `GPIO2`, на який книга його неохоче штовхає.
+А `GPIO11` — це вивід, з якого живиться флеш. Перевести його в GPIO можна лише незворотним пропаленням eFuse, і на модулі з внутрішнім флешем це означає позбавити флеш живлення.
+Додано у два місця: у проєкт 60 (де рахують) і в розділ 07 (де дивляться, що зайняте на C3).
+Окремо варте уваги те, **як** воно ховалося: у `esp32c3.inc` колонка коментаря для `GPIO11` порожня. Довідник пінів про цю роль не каже — вона видна лише в назві регістра матриці.
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-07-077 sha:8b178734 src:manual/07-gpio.md:149 klas:A -->
+### T-07-077 · proza · рядок 149
+
+**Книга каже, дослівно:**
+
+> Рахуйте `GPIO11` серед зайнятих.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h, .../components/efuse/esp32c3/esp_efuse_table.csv, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst
+- **Дослівно з джерела:**
+  > (io_mux_reg.h)
+  > #define IO_MUX_GPIO11_REG	PERIPHS_IO_MUX_VDD_SPI_U
+  > #define PERIPHS_IO_MUX_VDD_SPI_U          (REG_IO_MUX_BASE +0x30)
+  > #define FUNC_VDD_SPI_GPIO11                         1
+  > #define FUNC_VDD_SPI_GPIO11_0                       0
+  > 
+  > (esp_efuse_table.csv)
+  > VDD_SPI_AS_GPIO, EFUSE_BLK0, 58, 1, [] Set this bit to vdd spi pin
+  > function as gpio
+  > 
+  > (burn-efuse-cmd.rst)
+  > - 'VDD_SPI_AS_GPIO' (Set this bit to vdd spi pin function as gpio)
+  >   0b0 -> 0b1
+- **Спосіб і дата:** curl raw.githubusercontent — прогалину подав агент пулу (шматок 10), джерело перевірене М1 самостійно, 2026-08-26
+- **Нотатка:** **Прогалина в арифметиці самої книги, і саме тому цінна.**
+Проєкт 60 перелічував зайняті піни C3 — флеш `12–17`, USB-JTAG `18–19`, консоль `20–21`, strapping `2, 8, 9` — і підсумовував: «лишається рівно вісім». Але 22 − 13 = 9. Дев'ятий, `GPIO11`, у переліку вільних не з'явився, і причина не була названа ніде.
+Висновок книги правильний, **обґрунтування — ні**. Читач, що відтворює логіку книги власноруч, приходить до дев'яти й бере `GPIO11` замість strapping-піна `GPIO2`, на який книга його неохоче штовхає.
+А `GPIO11` — це вивід, з якого живиться флеш. Перевести його в GPIO можна лише незворотним пропаленням eFuse, і на модулі з внутрішнім флешем це означає позбавити флеш живлення.
+Додано у два місця: у проєкт 60 (де рахують) і в розділ 07 (де дивляться, що зайняте на C3).
+Окремо варте уваги те, **як** воно ховалося: у `esp32c3.inc` колонка коментаря для `GPIO11` порожня. Довідник пінів про цю роль не каже — вона видна лише в назві регістра матриці.
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-07-078 sha:9a2e525e src:manual/07-gpio.md:156 klas:F -->
+### T-07-078 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1606,8 +1678,8 @@
 
 ---
 
-<!-- fc id:T-07-077 sha:5638f14b src:manual/07-gpio.md:152 klas:A -->
-### T-07-077 · proza · рядок 152
+<!-- fc id:T-07-079 sha:5638f14b src:manual/07-gpio.md:156 klas:A -->
+### T-07-079 · proza · рядок 156
 
 **Книга каже, дослівно:**
 
@@ -1642,8 +1714,8 @@
 
 ---
 
-<!-- fc id:T-07-078 sha:f1266858 src:manual/07-gpio.md:156 klas:F -->
-### T-07-078 · proza · рядок 156
+<!-- fc id:T-07-080 sha:f1266858 src:manual/07-gpio.md:160 klas:F -->
+### T-07-080 · proza · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1655,8 +1727,8 @@
 
 ---
 
-<!-- fc id:T-07-079 sha:6a801047 src:manual/07-gpio.md:162 klas:B -->
-### T-07-079 · proza · рядок 162
+<!-- fc id:T-07-081 sha:6a801047 src:manual/07-gpio.md:166 klas:B -->
+### T-07-081 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -1683,8 +1755,8 @@
 
 ---
 
-<!-- fc id:T-07-080 sha:2b119dd6 src:manual/07-gpio.md:164 klas:E -->
-### T-07-080 · proza · рядок 164
+<!-- fc id:T-07-082 sha:2b119dd6 src:manual/07-gpio.md:168 klas:E -->
+### T-07-082 · proza · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -1696,8 +1768,8 @@
 
 ---
 
-<!-- fc id:T-07-081 sha:2dbf225d src:manual/07-gpio.md:167 klas:E -->
-### T-07-081 · proza · рядок 167
+<!-- fc id:T-07-083 sha:2dbf225d src:manual/07-gpio.md:171 klas:E -->
+### T-07-083 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -1709,8 +1781,8 @@
 
 ---
 
-<!-- fc id:T-07-082 sha:9b7ec34b src:manual/07-gpio.md:167 klas:B -->
-### T-07-082 · proza · рядок 167
+<!-- fc id:T-07-084 sha:9b7ec34b src:manual/07-gpio.md:171 klas:B -->
+### T-07-084 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -1737,8 +1809,8 @@
 
 ---
 
-<!-- fc id:T-07-083 sha:1d981589 src:manual/07-gpio.md:167 klas:E -->
-### T-07-083 · proza · рядок 167
+<!-- fc id:T-07-085 sha:1d981589 src:manual/07-gpio.md:171 klas:E -->
+### T-07-085 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -1750,8 +1822,8 @@
 
 ---
 
-<!-- fc id:T-07-084 sha:7997d730 src:manual/07-gpio.md:171 klas:E -->
-### T-07-084 · proza · рядок 171
+<!-- fc id:T-07-086 sha:7997d730 src:manual/07-gpio.md:175 klas:E -->
+### T-07-086 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -1763,8 +1835,8 @@
 
 ---
 
-<!-- fc id:T-07-085 sha:dc856329 src:manual/07-gpio.md:173 klas:F -->
-### T-07-085 · proza · рядок 173
+<!-- fc id:T-07-087 sha:dc856329 src:manual/07-gpio.md:177 klas:F -->
+### T-07-087 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -1776,8 +1848,8 @@
 
 ---
 
-<!-- fc id:T-07-086 sha:4d958fd4 src:manual/07-gpio.md:178 klas:F -->
-### T-07-086 · proza · рядок 178
+<!-- fc id:T-07-088 sha:4d958fd4 src:manual/07-gpio.md:182 klas:F -->
+### T-07-088 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -1789,8 +1861,8 @@
 
 ---
 
-<!-- fc id:T-07-087 sha:213a514e src:manual/07-gpio.md:182 klas:A -->
-### T-07-087 · proza · рядок 182
+<!-- fc id:T-07-089 sha:213a514e src:manual/07-gpio.md:186 klas:A -->
+### T-07-089 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -1818,8 +1890,8 @@
 
 ---
 
-<!-- fc id:T-07-088 sha:0038f55f src:manual/07-gpio.md:186 klas:A -->
-### T-07-088 · proza · рядок 186
+<!-- fc id:T-07-090 sha:0038f55f src:manual/07-gpio.md:190 klas:A -->
+### T-07-090 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1843,8 +1915,8 @@
 
 ---
 
-<!-- fc id:T-07-089 sha:97c124bb src:manual/07-gpio.md:186 klas:A -->
-### T-07-089 · proza · рядок 186
+<!-- fc id:T-07-091 sha:97c124bb src:manual/07-gpio.md:190 klas:A -->
+### T-07-091 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -1868,8 +1940,8 @@
 
 ---
 
-<!-- fc id:T-07-090 sha:4fe5b2b1 src:manual/07-gpio.md:190 klas:A -->
-### T-07-090 · proza · рядок 190
+<!-- fc id:T-07-092 sha:4fe5b2b1 src:manual/07-gpio.md:194 klas:A -->
+### T-07-092 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1897,8 +1969,8 @@
 
 ---
 
-<!-- fc id:T-07-091 sha:cf5a8129 src:manual/07-gpio.md:190 klas:E -->
-### T-07-091 · proza · рядок 190
+<!-- fc id:T-07-093 sha:cf5a8129 src:manual/07-gpio.md:194 klas:E -->
+### T-07-093 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1910,8 +1982,8 @@
 
 ---
 
-<!-- fc id:T-07-092 sha:4abe4c19 src:manual/07-gpio.md:194 klas:A -->
-### T-07-092 · proza · рядок 194
+<!-- fc id:T-07-094 sha:4abe4c19 src:manual/07-gpio.md:198 klas:A -->
+### T-07-094 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1946,8 +2018,8 @@
 
 ---
 
-<!-- fc id:T-07-093 sha:e9ad2932 src:manual/07-gpio.md:198 klas:A -->
-### T-07-093 · proza · рядок 198
+<!-- fc id:T-07-095 sha:e9ad2932 src:manual/07-gpio.md:202 klas:A -->
+### T-07-095 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1978,8 +2050,8 @@
 
 ---
 
-<!-- fc id:T-07-094 sha:48af3317 src:manual/07-gpio.md:201 klas:F -->
-### T-07-094 · tablycya-shapka · рядок 201
+<!-- fc id:T-07-096 sha:48af3317 src:manual/07-gpio.md:205 klas:F -->
+### T-07-096 · tablycya-shapka · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1991,8 +2063,8 @@
 
 ---
 
-<!-- fc id:T-07-095 sha:2d6128fe src:manual/07-gpio.md:202 klas:A -->
-### T-07-095 · komirka · рядок 202
+<!-- fc id:T-07-097 sha:2d6128fe src:manual/07-gpio.md:206 klas:A -->
+### T-07-097 · komirka · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -2030,8 +2102,8 @@
 
 ---
 
-<!-- fc id:T-07-096 sha:7d1d509e src:manual/07-gpio.md:202 klas:A -->
-### T-07-096 · komirka · рядок 202
+<!-- fc id:T-07-098 sha:7d1d509e src:manual/07-gpio.md:206 klas:A -->
+### T-07-098 · komirka · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -2069,8 +2141,8 @@
 
 ---
 
-<!-- fc id:T-07-097 sha:7afccfc4 src:manual/07-gpio.md:203 klas:A -->
-### T-07-097 · komirka · рядок 203
+<!-- fc id:T-07-099 sha:7afccfc4 src:manual/07-gpio.md:207 klas:A -->
+### T-07-099 · komirka · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -2108,8 +2180,8 @@
 
 ---
 
-<!-- fc id:T-07-098 sha:69208de8 src:manual/07-gpio.md:203 klas:A -->
-### T-07-098 · komirka · рядок 203
+<!-- fc id:T-07-100 sha:69208de8 src:manual/07-gpio.md:207 klas:A -->
+### T-07-100 · komirka · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -2147,8 +2219,8 @@
 
 ---
 
-<!-- fc id:T-07-099 sha:8435c691 src:manual/07-gpio.md:206 klas:F -->
-### T-07-099 · proza · рядок 206
+<!-- fc id:T-07-101 sha:8435c691 src:manual/07-gpio.md:210 klas:F -->
+### T-07-101 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -2160,8 +2232,8 @@
 
 ---
 
-<!-- fc id:T-07-100 sha:21828d34 src:manual/07-gpio.md:208 klas:A -->
-### T-07-100 · proza · рядок 208
+<!-- fc id:T-07-102 sha:21828d34 src:manual/07-gpio.md:212 klas:A -->
+### T-07-102 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -2193,8 +2265,8 @@
 
 ---
 
-<!-- fc id:T-07-101 sha:4838050a src:manual/07-gpio.md:211 klas:F -->
-### T-07-101 · proza · рядок 211
+<!-- fc id:T-07-103 sha:4838050a src:manual/07-gpio.md:215 klas:F -->
+### T-07-103 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -2206,8 +2278,8 @@
 
 ---
 
-<!-- fc id:T-07-102 sha:e9e0e554 src:manual/07-gpio.md:214 klas:F -->
-### T-07-102 · proza · рядок 214
+<!-- fc id:T-07-104 sha:e9e0e554 src:manual/07-gpio.md:218 klas:F -->
+### T-07-104 · proza · рядок 218
 
 **Книга каже, дослівно:**
 
@@ -2219,8 +2291,8 @@
 
 ---
 
-<!-- fc id:T-07-103 sha:89f377b7 src:manual/07-gpio.md:219 klas:A -->
-### T-07-103 · proza · рядок 219
+<!-- fc id:T-07-105 sha:89f377b7 src:manual/07-gpio.md:223 klas:A -->
+### T-07-105 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -2255,8 +2327,8 @@
 
 ---
 
-<!-- fc id:T-07-104 sha:08617839 src:manual/07-gpio.md:219 klas:E -->
-### T-07-104 · proza · рядок 219
+<!-- fc id:T-07-106 sha:08617839 src:manual/07-gpio.md:223 klas:E -->
+### T-07-106 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -2268,8 +2340,8 @@
 
 ---
 
-<!-- fc id:T-07-105 sha:99a46388 src:manual/07-gpio.md:219 klas:E -->
-### T-07-105 · proza · рядок 219
+<!-- fc id:T-07-107 sha:99a46388 src:manual/07-gpio.md:223 klas:E -->
+### T-07-107 · proza · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -2281,8 +2353,8 @@
 
 ---
 
-<!-- fc id:T-07-106 sha:7af574ff src:manual/07-gpio.md:224 klas:F -->
-### T-07-106 · proza · рядок 224
+<!-- fc id:T-07-108 sha:7af574ff src:manual/07-gpio.md:228 klas:F -->
+### T-07-108 · proza · рядок 228
 
 **Книга каже, дослівно:**
 
@@ -2294,8 +2366,8 @@
 
 ---
 
-<!-- fc id:T-07-107 sha:6d5fd871 src:manual/07-gpio.md:226 klas:A -->
-### T-07-107 · proza · рядок 226
+<!-- fc id:T-07-109 sha:6d5fd871 src:manual/07-gpio.md:230 klas:A -->
+### T-07-109 · proza · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -2320,8 +2392,8 @@
 
 ---
 
-<!-- fc id:T-07-108 sha:6f074d3a src:manual/07-gpio.md:226 klas:E -->
-### T-07-108 · proza · рядок 226
+<!-- fc id:T-07-110 sha:6f074d3a src:manual/07-gpio.md:230 klas:E -->
+### T-07-110 · proza · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -2333,8 +2405,8 @@
 
 ---
 
-<!-- fc id:T-07-109 sha:16fc615f src:manual/07-gpio.md:232 klas:E -->
-### T-07-109 · proza · рядок 232
+<!-- fc id:T-07-111 sha:16fc615f src:manual/07-gpio.md:236 klas:E -->
+### T-07-111 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -2346,8 +2418,8 @@
 
 ---
 
-<!-- fc id:T-07-110 sha:1c767126 src:manual/07-gpio.md:235 klas:F -->
-### T-07-110 · proza · рядок 235
+<!-- fc id:T-07-112 sha:1c767126 src:manual/07-gpio.md:239 klas:F -->
+### T-07-112 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -2359,8 +2431,8 @@
 
 ---
 
-<!-- fc id:T-07-111 sha:dae5d714 src:manual/07-gpio.md:239 klas:F -->
-### T-07-111 · proza · рядок 239
+<!-- fc id:T-07-113 sha:dae5d714 src:manual/07-gpio.md:243 klas:F -->
+### T-07-113 · proza · рядок 243
 
 **Книга каже, дослівно:**
 
@@ -2372,8 +2444,8 @@
 
 ---
 
-<!-- fc id:T-07-112 sha:2e6e5ae0 src:manual/07-gpio.md:242 klas:F -->
-### T-07-112 · proza · рядок 242
+<!-- fc id:T-07-114 sha:2e6e5ae0 src:manual/07-gpio.md:246 klas:F -->
+### T-07-114 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -2385,8 +2457,8 @@
 
 ---
 
-<!-- fc id:T-07-113 sha:d3fff0e3 src:manual/07-gpio.md:242 klas:E -->
-### T-07-113 · proza · рядок 242
+<!-- fc id:T-07-115 sha:d3fff0e3 src:manual/07-gpio.md:246 klas:E -->
+### T-07-115 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -2398,8 +2470,8 @@
 
 ---
 
-<!-- fc id:T-07-114 sha:bbf00d41 src:manual/07-gpio.md:247 klas:E -->
-### T-07-114 · proza · рядок 247
+<!-- fc id:T-07-116 sha:bbf00d41 src:manual/07-gpio.md:251 klas:E -->
+### T-07-116 · proza · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -2411,8 +2483,8 @@
 
 ---
 
-<!-- fc id:T-07-115 sha:be7c4eb1 src:manual/07-gpio.md:249 klas:A -->
-### T-07-115 · proza · рядок 249
+<!-- fc id:T-07-117 sha:be7c4eb1 src:manual/07-gpio.md:253 klas:A -->
+### T-07-117 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -2435,8 +2507,8 @@
 
 ---
 
-<!-- fc id:T-07-116 sha:8f937bea src:manual/07-gpio.md:249 klas:E -->
-### T-07-116 · proza · рядок 249
+<!-- fc id:T-07-118 sha:8f937bea src:manual/07-gpio.md:253 klas:E -->
+### T-07-118 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -2448,8 +2520,8 @@
 
 ---
 
-<!-- fc id:T-07-117 sha:34181297 src:manual/07-gpio.md:253 klas:F -->
-### T-07-117 · proza · рядок 253
+<!-- fc id:T-07-119 sha:34181297 src:manual/07-gpio.md:257 klas:F -->
+### T-07-119 · proza · рядок 257
 
 **Книга каже, дослівно:**
 
@@ -2461,8 +2533,8 @@
 
 ---
 
-<!-- fc id:T-07-118 sha:28de41c4 src:manual/07-gpio.md:256 klas:F -->
-### T-07-118 · proza · рядок 256
+<!-- fc id:T-07-120 sha:28de41c4 src:manual/07-gpio.md:260 klas:F -->
+### T-07-120 · proza · рядок 260
 
 **Книга каже, дослівно:**
 
@@ -2474,8 +2546,8 @@
 
 ---
 
-<!-- fc id:T-07-119 sha:61a59398 src:manual/07-gpio.md:259 klas:F -->
-### T-07-119 · proza · рядок 259
+<!-- fc id:T-07-121 sha:61a59398 src:manual/07-gpio.md:263 klas:F -->
+### T-07-121 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -2487,8 +2559,8 @@
 
 ---
 
-<!-- fc id:T-07-120 sha:ae8000cc src:manual/07-gpio.md:261 klas:E -->
-### T-07-120 · proza · рядок 261
+<!-- fc id:T-07-122 sha:ae8000cc src:manual/07-gpio.md:265 klas:E -->
+### T-07-122 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -2500,8 +2572,8 @@
 
 ---
 
-<!-- fc id:T-07-121 sha:035a38f6 src:manual/07-gpio.md:267 klas:E -->
-### T-07-121 · proza · рядок 267
+<!-- fc id:T-07-123 sha:035a38f6 src:manual/07-gpio.md:271 klas:E -->
+### T-07-123 · proza · рядок 271
 
 **Книга каже, дослівно:**
 
@@ -2513,8 +2585,8 @@
 
 ---
 
-<!-- fc id:T-07-122 sha:e43399df src:manual/07-gpio.md:269 klas:F -->
-### T-07-122 · proza · рядок 269
+<!-- fc id:T-07-124 sha:e43399df src:manual/07-gpio.md:273 klas:F -->
+### T-07-124 · proza · рядок 273
 
 **Книга каже, дослівно:**
 
@@ -2526,8 +2598,8 @@
 
 ---
 
-<!-- fc id:T-07-123 sha:9e2b2c79 src:manual/07-gpio.md:273 klas:E -->
-### T-07-123 · proza · рядок 273
+<!-- fc id:T-07-125 sha:9e2b2c79 src:manual/07-gpio.md:277 klas:E -->
+### T-07-125 · proza · рядок 277
 
 **Книга каже, дослівно:**
 
@@ -2539,8 +2611,8 @@
 
 ---
 
-<!-- fc id:T-07-124 sha:a06a92ec src:manual/07-gpio.md:277 klas:E -->
-### T-07-124 · proza · рядок 277
+<!-- fc id:T-07-126 sha:a06a92ec src:manual/07-gpio.md:281 klas:E -->
+### T-07-126 · proza · рядок 281
 
 **Книга каже, дослівно:**
 
@@ -2552,8 +2624,8 @@
 
 ---
 
-<!-- fc id:T-07-125 sha:38f59818 src:manual/07-gpio.md:277 klas:F -->
-### T-07-125 · proza · рядок 277
+<!-- fc id:T-07-127 sha:38f59818 src:manual/07-gpio.md:281 klas:F -->
+### T-07-127 · proza · рядок 281
 
 **Книга каже, дослівно:**
 
@@ -2565,8 +2637,8 @@
 
 ---
 
-<!-- fc id:T-07-126 sha:b0fde932 src:manual/07-gpio.md:277 klas:E -->
-### T-07-126 · proza · рядок 277
+<!-- fc id:T-07-128 sha:b0fde932 src:manual/07-gpio.md:281 klas:E -->
+### T-07-128 · proza · рядок 281
 
 **Книга каже, дослівно:**
 
@@ -2578,8 +2650,8 @@
 
 ---
 
-<!-- fc id:T-07-127 sha:909499e7 src:manual/07-gpio.md:282 klas:E -->
-### T-07-127 · proza · рядок 282
+<!-- fc id:T-07-129 sha:909499e7 src:manual/07-gpio.md:286 klas:E -->
+### T-07-129 · proza · рядок 286
 
 **Книга каже, дослівно:**
 
@@ -2591,8 +2663,8 @@
 
 ---
 
-<!-- fc id:T-07-128 sha:4006ed63 src:manual/07-gpio.md:282 klas:E -->
-### T-07-128 · proza · рядок 282
+<!-- fc id:T-07-130 sha:4006ed63 src:manual/07-gpio.md:286 klas:E -->
+### T-07-130 · proza · рядок 286
 
 **Книга каже, дослівно:**
 
@@ -2604,8 +2676,8 @@
 
 ---
 
-<!-- fc id:T-07-129 sha:00d10011 src:manual/07-gpio.md:288 klas:B -->
-### T-07-129 · proza · рядок 288
+<!-- fc id:T-07-131 sha:00d10011 src:manual/07-gpio.md:292 klas:B -->
+### T-07-131 · proza · рядок 292
 
 **Книга каже, дослівно:**
 
@@ -2632,8 +2704,8 @@
 
 ---
 
-<!-- fc id:T-07-130 sha:8252205d src:manual/07-gpio.md:290 klas:A -->
-### T-07-130 · proza · рядок 290
+<!-- fc id:T-07-132 sha:8252205d src:manual/07-gpio.md:294 klas:A -->
+### T-07-132 · proza · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -2653,8 +2725,8 @@
 
 ---
 
-<!-- fc id:T-07-131 sha:6af50605 src:manual/07-gpio.md:290 klas:E -->
-### T-07-131 · proza · рядок 290
+<!-- fc id:T-07-133 sha:6af50605 src:manual/07-gpio.md:294 klas:E -->
+### T-07-133 · proza · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -2666,8 +2738,8 @@
 
 ---
 
-<!-- fc id:T-07-132 sha:eca754e3 src:manual/07-gpio.md:294 klas:B -->
-### T-07-132 · proza · рядок 294
+<!-- fc id:T-07-134 sha:eca754e3 src:manual/07-gpio.md:298 klas:B -->
+### T-07-134 · proza · рядок 298
 
 **Книга каже, дослівно:**
 
@@ -2694,8 +2766,8 @@
 
 ---
 
-<!-- fc id:T-07-133 sha:2accc23f src:manual/07-gpio.md:296 klas:A -->
-### T-07-133 · proza · рядок 296
+<!-- fc id:T-07-135 sha:2accc23f src:manual/07-gpio.md:300 klas:A -->
+### T-07-135 · proza · рядок 300
 
 **Книга каже, дослівно:**
 
@@ -2714,8 +2786,8 @@
 
 ---
 
-<!-- fc id:T-07-134 sha:101667fc src:manual/07-gpio.md:299 klas:E -->
-### T-07-134 · proza · рядок 299
+<!-- fc id:T-07-136 sha:101667fc src:manual/07-gpio.md:303 klas:E -->
+### T-07-136 · proza · рядок 303
 
 **Книга каже, дослівно:**
 
@@ -2727,8 +2799,8 @@
 
 ---
 
-<!-- fc id:T-07-135 sha:3521c982 src:manual/07-gpio.md:302 klas:E -->
-### T-07-135 · proza · рядок 302
+<!-- fc id:T-07-137 sha:3521c982 src:manual/07-gpio.md:306 klas:E -->
+### T-07-137 · proza · рядок 306
 
 **Книга каже, дослівно:**
 

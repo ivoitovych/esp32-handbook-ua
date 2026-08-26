@@ -1152,12 +1152,12 @@
 
 ---
 
-<!-- fc id:T-08-085 sha:134f8094 src:manual/08-platy.md:166 klas:F -->
+<!-- fc id:T-08-085 sha:681a2a7b src:manual/08-platy.md:166 klas:F -->
 ### T-08-085 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
-> На власній платі не забудьте вивести **піни для прошивки**: `TX`, `RX`, `GPIO0`, `EN`, `3V3`, `GND`.
+> На власній платі не забудьте вивести **піни для прошивки**: `TX`, `RX`, пін входу в бутлоадер ([[classic]] [[S2]] [[S3]] `GPIO0`, [[C3]] [[C6]] [[H2]] `GPIO9`), `EN`, `3V3`, `GND`.
 
 **Доказ**
 
@@ -1191,8 +1191,8 @@
 
 ---
 
-<!-- fc id:T-08-088 sha:ad208cee src:manual/08-platy.md:175 klas:F -->
-### T-08-088 · proza · рядок 175
+<!-- fc id:T-08-088 sha:ad208cee src:manual/08-platy.md:176 klas:F -->
+### T-08-088 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -1204,8 +1204,8 @@
 
 ---
 
-<!-- fc id:T-08-089 sha:06f6271a src:manual/08-platy.md:178 klas:E -->
-### T-08-089 · proza · рядок 178
+<!-- fc id:T-08-089 sha:06f6271a src:manual/08-platy.md:179 klas:E -->
+### T-08-089 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -1217,8 +1217,8 @@
 
 ---
 
-<!-- fc id:T-08-090 sha:9dca9a09 src:manual/08-platy.md:180 klas:F -->
-### T-08-090 · proza · рядок 180
+<!-- fc id:T-08-090 sha:9dca9a09 src:manual/08-platy.md:181 klas:F -->
+### T-08-090 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -1230,8 +1230,8 @@
 
 ---
 
-<!-- fc id:T-08-091 sha:be7c43d2 src:manual/08-platy.md:182 klas:F -->
-### T-08-091 · proza · рядок 182
+<!-- fc id:T-08-091 sha:be7c43d2 src:manual/08-platy.md:183 klas:F -->
+### T-08-091 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -1243,8 +1243,8 @@
 
 ---
 
-<!-- fc id:T-08-092 sha:f12a3cd0 src:manual/08-platy.md:184 klas:E -->
-### T-08-092 · proza · рядок 184
+<!-- fc id:T-08-092 sha:f12a3cd0 src:manual/08-platy.md:185 klas:E -->
+### T-08-092 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -1256,8 +1256,8 @@
 
 ---
 
-<!-- fc id:T-08-093 sha:fa43b6a8 src:manual/08-platy.md:186 klas:E -->
-### T-08-093 · proza · рядок 186
+<!-- fc id:T-08-093 sha:fa43b6a8 src:manual/08-platy.md:187 klas:E -->
+### T-08-093 · proza · рядок 187
 
 **Книга каже, дослівно:**
 

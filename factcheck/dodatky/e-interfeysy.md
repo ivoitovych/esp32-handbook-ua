@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/e-interfeysy.md`
 
-Одиниць твердження: **151**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **154**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -71,12 +71,12 @@
 
 ---
 
-<!-- fc id:T-E-006 sha:dcae0ce9 src:dodatky/e-interfeysy.md:12 klas:A -->
+<!-- fc id:T-E-006 sha:346d9a96 src:dodatky/e-interfeysy.md:12 klas:A -->
 ### T-E-006 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> BME280 / BMP280 · Адреса → `0x76`, `0x77`
+> BME280 · Адреса → `0x76`, `0x77`
 
 **Доказ**
 
@@ -103,12 +103,12 @@
 
 ---
 
-<!-- fc id:T-E-007 sha:3f3e6545 src:dodatky/e-interfeysy.md:12 klas:C -->
+<!-- fc id:T-E-007 sha:f1937071 src:dodatky/e-interfeysy.md:12 klas:C -->
 ### T-E-007 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> BME280 / BMP280 · Що дає → тиск, T, вологість
+> BME280 · Що дає → тиск, T, вологість
 
 **Доказ**
 
@@ -120,12 +120,12 @@
 
 ---
 
-<!-- fc id:T-E-008 sha:e2458664 src:dodatky/e-interfeysy.md:12 klas:C -->
+<!-- fc id:T-E-008 sha:7fe3b697 src:dodatky/e-interfeysy.md:12 klas:C -->
 ### T-E-008 · komirka · рядок 12
 
 **Книга каже, дослівно:**
 
-> BME280 / BMP280 · Бібліотека → реєстр IDF; Adafruit BME280
+> BME280 · Бібліотека → реєстр IDF; Adafruit BME280
 
 **Доказ**
 
@@ -137,8 +137,74 @@
 
 ---
 
-<!-- fc id:T-E-009 sha:5f4e30c5 src:dodatky/e-interfeysy.md:13 klas:A -->
+<!-- fc id:T-E-009 sha:b50cc0b0 src:dodatky/e-interfeysy.md:13 klas:A -->
 ### T-E-009 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> BMP280 · Адреса → `0x76`, `0x77`
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — заголовки драйверів: adafruit/Adafruit_BME280_Library, adafruit/Adafruit_SHT31, claws/BH1750, adafruit/RTClib (RTC_DS3231.cpp), adafruit/Adafruit_MPU6050, adafruit/Adafruit_BNO055, adafruit/Adafruit_INA219, adafruit/Adafruit_VL53L0X, adafruit/Adafruit_SSD1306, adafruit/Adafruit-MCP23017-Arduino-Library
+- **Дослівно з джерела:**
+  > #define BME280_ADDRESS           (0x77)   // Primary I2C Address
+  > #define BME280_ADDRESS_ALTERNATE (0x76)   // Alternate Address
+  > #define SHT31_DEFAULT_ADDR        0x44
+  > BH1750(byte addr = 0x23);   // README: ADDR низький → 0x23, високий → 0x5C
+  > #define DS3231_ADDRESS            0x68
+  > #define MPU6050_I2CADDR_DEFAULT   0x68    // w/ AD0 low
+  > #define BNO055_ADDRESS_A         (0x28)
+  > #define BNO055_ADDRESS_B         (0x29)
+  > #define INA219_ADDRESS           (0x40)   // 1000000 (A0+A1=GND)
+  > #define VL53L0X_I2C_ADDR          0x29
+  > #define SCREEN_ADDRESS            0x3D    // 0x3D for 128x64, 0x3C for 128x32
+  > #define MCP23XXX_ADDR             0x20    // Default I2C Address
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у всіх тринадцяти рядках. Це найпряміша до використання таблиця книги: читач бере адресу й вписує в код, тож помилка тут коштувала б годин без жодної підказки, у чому річ.
+Діапазони підтверджені механізмом, а не переліком: `MCP23XXX_ADDR` = `0x20` плюс три адресні піни дає рівно `0x20`–`0x27`, як у книзі; те саме в PCF8574 і в AT24Cxx (`0x50`–`0x57`).
+Підтверджено й блок уваги про конфлікт: `DS3231_ADDRESS` і `MPU6050_I2CADDR_DEFAULT` — обидва `0x68` дослівно, а перемичка `AD0` дає MPU6050 адресу `0x69`.
+- **Прохід:** pass-16-interfeysy
+
+---
+
+<!-- fc id:T-E-010 sha:b0a3aae8 src:dodatky/e-interfeysy.md:13 klas:C -->
+### T-E-010 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> BMP280 · Що дає → тиск, T — **без** вологості
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
+- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
+- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-E-011 sha:fd9683f6 src:dodatky/e-interfeysy.md:13 klas:C -->
+### T-E-011 · komirka · рядок 13
+
+**Книга каже, дослівно:**
+
+> BMP280 · Бібліотека → Adafruit BMP280
+
+**Доказ**
+
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
+- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
+- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
+- **Прохід:** pass-03-nedostupni
+
+---
+
+<!-- fc id:T-E-012 sha:5f4e30c5 src:dodatky/e-interfeysy.md:14 klas:A -->
+### T-E-012 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
@@ -169,8 +235,8 @@
 
 ---
 
-<!-- fc id:T-E-010 sha:11669d9f src:dodatky/e-interfeysy.md:13 klas:A -->
-### T-E-010 · komirka · рядок 13
+<!-- fc id:T-E-013 sha:11669d9f src:dodatky/e-interfeysy.md:14 klas:A -->
+### T-E-013 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
@@ -198,8 +264,8 @@
 
 ---
 
-<!-- fc id:T-E-011 sha:57cc4434 src:dodatky/e-interfeysy.md:13 klas:E -->
-### T-E-011 · komirka · рядок 13
+<!-- fc id:T-E-014 sha:57cc4434 src:dodatky/e-interfeysy.md:14 klas:E -->
+### T-E-014 · komirka · рядок 14
 
 **Книга каже, дослівно:**
 
@@ -217,8 +283,8 @@
 
 ---
 
-<!-- fc id:T-E-012 sha:3a822c76 src:dodatky/e-interfeysy.md:14 klas:A -->
-### T-E-012 · komirka · рядок 14
+<!-- fc id:T-E-015 sha:3a822c76 src:dodatky/e-interfeysy.md:15 klas:A -->
+### T-E-015 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
@@ -249,8 +315,8 @@
 
 ---
 
-<!-- fc id:T-E-013 sha:1899b23c src:dodatky/e-interfeysy.md:14 klas:D -->
-### T-E-013 · komirka · рядок 14
+<!-- fc id:T-E-016 sha:1899b23c src:dodatky/e-interfeysy.md:15 klas:D -->
+### T-E-016 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
@@ -292,8 +358,8 @@
 
 ---
 
-<!-- fc id:T-E-014 sha:60e52cde src:dodatky/e-interfeysy.md:14 klas:D -->
-### T-E-014 · komirka · рядок 14
+<!-- fc id:T-E-017 sha:60e52cde src:dodatky/e-interfeysy.md:15 klas:D -->
+### T-E-017 · komirka · рядок 15
 
 **Книга каже, дослівно:**
 
@@ -335,8 +401,8 @@
 
 ---
 
-<!-- fc id:T-E-015 sha:6004e5d0 src:dodatky/e-interfeysy.md:15 klas:C -->
-### T-E-015 · komirka · рядок 15
+<!-- fc id:T-E-018 sha:6004e5d0 src:dodatky/e-interfeysy.md:16 klas:C -->
+### T-E-018 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -352,8 +418,8 @@
 
 ---
 
-<!-- fc id:T-E-016 sha:450710eb src:dodatky/e-interfeysy.md:15 klas:C -->
-### T-E-016 · komirka · рядок 15
+<!-- fc id:T-E-019 sha:450710eb src:dodatky/e-interfeysy.md:16 klas:C -->
+### T-E-019 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -371,8 +437,8 @@
 
 ---
 
-<!-- fc id:T-E-017 sha:aeaa568e src:dodatky/e-interfeysy.md:15 klas:F -->
-### T-E-017 · komirka · рядок 15
+<!-- fc id:T-E-020 sha:aeaa568e src:dodatky/e-interfeysy.md:16 klas:F -->
+### T-E-020 · komirka · рядок 16
 
 **Книга каже, дослівно:**
 
@@ -384,8 +450,8 @@
 
 ---
 
-<!-- fc id:T-E-018 sha:274457e9 src:dodatky/e-interfeysy.md:16 klas:A -->
-### T-E-018 · komirka · рядок 16
+<!-- fc id:T-E-021 sha:274457e9 src:dodatky/e-interfeysy.md:17 klas:A -->
+### T-E-021 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
@@ -416,8 +482,8 @@
 
 ---
 
-<!-- fc id:T-E-019 sha:d5040300 src:dodatky/e-interfeysy.md:16 klas:A -->
-### T-E-019 · komirka · рядок 16
+<!-- fc id:T-E-022 sha:d5040300 src:dodatky/e-interfeysy.md:17 klas:A -->
+### T-E-022 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
@@ -442,8 +508,8 @@
 
 ---
 
-<!-- fc id:T-E-020 sha:6181e702 src:dodatky/e-interfeysy.md:16 klas:E -->
-### T-E-020 · komirka · рядок 16
+<!-- fc id:T-E-023 sha:6181e702 src:dodatky/e-interfeysy.md:17 klas:E -->
+### T-E-023 · komirka · рядок 17
 
 **Книга каже, дослівно:**
 
@@ -461,8 +527,8 @@
 
 ---
 
-<!-- fc id:T-E-021 sha:04902e5b src:dodatky/e-interfeysy.md:17 klas:A -->
-### T-E-021 · komirka · рядок 17
+<!-- fc id:T-E-024 sha:04902e5b src:dodatky/e-interfeysy.md:18 klas:A -->
+### T-E-024 · komirka · рядок 18
 
 **Книга каже, дослівно:**
 
@@ -493,8 +559,8 @@
 
 ---
 
-<!-- fc id:T-E-022 sha:825b180a src:dodatky/e-interfeysy.md:17 klas:F -->
-### T-E-022 · komirka · рядок 17
+<!-- fc id:T-E-025 sha:825b180a src:dodatky/e-interfeysy.md:18 klas:F -->
+### T-E-025 · komirka · рядок 18
 
 **Книга каже, дослівно:**
 
@@ -506,8 +572,8 @@
 
 ---
 
-<!-- fc id:T-E-023 sha:b55c4a45 src:dodatky/e-interfeysy.md:17 klas:F -->
-### T-E-023 · komirka · рядок 17
+<!-- fc id:T-E-026 sha:b55c4a45 src:dodatky/e-interfeysy.md:18 klas:F -->
+### T-E-026 · komirka · рядок 18
 
 **Книга каже, дослівно:**
 
@@ -519,8 +585,8 @@
 
 ---
 
-<!-- fc id:T-E-024 sha:3a9afe05 src:dodatky/e-interfeysy.md:18 klas:C -->
-### T-E-024 · komirka · рядок 18
+<!-- fc id:T-E-027 sha:3a9afe05 src:dodatky/e-interfeysy.md:19 klas:C -->
+### T-E-027 · komirka · рядок 19
 
 **Книга каже, дослівно:**
 
@@ -536,8 +602,8 @@
 
 ---
 
-<!-- fc id:T-E-025 sha:b0502556 src:dodatky/e-interfeysy.md:18 klas:F -->
-### T-E-025 · komirka · рядок 18
+<!-- fc id:T-E-028 sha:b0502556 src:dodatky/e-interfeysy.md:19 klas:F -->
+### T-E-028 · komirka · рядок 19
 
 **Книга каже, дослівно:**
 
@@ -549,8 +615,8 @@
 
 ---
 
-<!-- fc id:T-E-026 sha:bf63dda1 src:dodatky/e-interfeysy.md:18 klas:F -->
-### T-E-026 · komirka · рядок 18
+<!-- fc id:T-E-029 sha:bf63dda1 src:dodatky/e-interfeysy.md:19 klas:F -->
+### T-E-029 · komirka · рядок 19
 
 **Книга каже, дослівно:**
 
@@ -562,8 +628,8 @@
 
 ---
 
-<!-- fc id:T-E-027 sha:d621df80 src:dodatky/e-interfeysy.md:19 klas:C -->
-### T-E-027 · komirka · рядок 19
+<!-- fc id:T-E-030 sha:d621df80 src:dodatky/e-interfeysy.md:20 klas:C -->
+### T-E-030 · komirka · рядок 20
 
 **Книга каже, дослівно:**
 
@@ -579,8 +645,8 @@
 
 ---
 
-<!-- fc id:T-E-028 sha:eca8e7cb src:dodatky/e-interfeysy.md:19 klas:F -->
-### T-E-028 · komirka · рядок 19
+<!-- fc id:T-E-031 sha:eca8e7cb src:dodatky/e-interfeysy.md:20 klas:F -->
+### T-E-031 · komirka · рядок 20
 
 **Книга каже, дослівно:**
 
@@ -592,8 +658,8 @@
 
 ---
 
-<!-- fc id:T-E-029 sha:031a738c src:dodatky/e-interfeysy.md:19 klas:F -->
-### T-E-029 · komirka · рядок 19
+<!-- fc id:T-E-032 sha:031a738c src:dodatky/e-interfeysy.md:20 klas:F -->
+### T-E-032 · komirka · рядок 20
 
 **Книга каже, дослівно:**
 
@@ -605,8 +671,8 @@
 
 ---
 
-<!-- fc id:T-E-030 sha:974da9fb src:dodatky/e-interfeysy.md:20 klas:A -->
-### T-E-030 · komirka · рядок 20
+<!-- fc id:T-E-033 sha:974da9fb src:dodatky/e-interfeysy.md:21 klas:A -->
+### T-E-033 · komirka · рядок 21
 
 **Книга каже, дослівно:**
 
@@ -632,8 +698,8 @@
 
 ---
 
-<!-- fc id:T-E-031 sha:a6fff190 src:dodatky/e-interfeysy.md:20 klas:A -->
-### T-E-031 · komirka · рядок 20
+<!-- fc id:T-E-034 sha:a6fff190 src:dodatky/e-interfeysy.md:21 klas:A -->
+### T-E-034 · komirka · рядок 21
 
 **Книга каже, дослівно:**
 
@@ -659,8 +725,8 @@
 
 ---
 
-<!-- fc id:T-E-032 sha:caaaf18d src:dodatky/e-interfeysy.md:20 klas:A -->
-### T-E-032 · komirka · рядок 20
+<!-- fc id:T-E-035 sha:caaaf18d src:dodatky/e-interfeysy.md:21 klas:A -->
+### T-E-035 · komirka · рядок 21
 
 **Книга каже, дослівно:**
 
@@ -686,8 +752,8 @@
 
 ---
 
-<!-- fc id:T-E-033 sha:af561b9a src:dodatky/e-interfeysy.md:21 klas:A -->
-### T-E-033 · komirka · рядок 21
+<!-- fc id:T-E-036 sha:af561b9a src:dodatky/e-interfeysy.md:22 klas:A -->
+### T-E-036 · komirka · рядок 22
 
 **Книга каже, дослівно:**
 
@@ -718,8 +784,8 @@
 
 ---
 
-<!-- fc id:T-E-034 sha:84958947 src:dodatky/e-interfeysy.md:21 klas:A -->
-### T-E-034 · komirka · рядок 21
+<!-- fc id:T-E-037 sha:84958947 src:dodatky/e-interfeysy.md:22 klas:A -->
+### T-E-037 · komirka · рядок 22
 
 **Книга каже, дослівно:**
 
@@ -742,8 +808,8 @@
 
 ---
 
-<!-- fc id:T-E-035 sha:7da6b06b src:dodatky/e-interfeysy.md:21 klas:F -->
-### T-E-035 · komirka · рядок 21
+<!-- fc id:T-E-038 sha:7da6b06b src:dodatky/e-interfeysy.md:22 klas:F -->
+### T-E-038 · komirka · рядок 22
 
 **Книга каже, дослівно:**
 
@@ -755,8 +821,8 @@
 
 ---
 
-<!-- fc id:T-E-036 sha:9ec27075 src:dodatky/e-interfeysy.md:22 klas:A -->
-### T-E-036 · komirka · рядок 22
+<!-- fc id:T-E-039 sha:9ec27075 src:dodatky/e-interfeysy.md:23 klas:A -->
+### T-E-039 · komirka · рядок 23
 
 **Книга каже, дослівно:**
 
@@ -787,8 +853,8 @@
 
 ---
 
-<!-- fc id:T-E-037 sha:55153a86 src:dodatky/e-interfeysy.md:22 klas:A -->
-### T-E-037 · komirka · рядок 22
+<!-- fc id:T-E-040 sha:55153a86 src:dodatky/e-interfeysy.md:23 klas:A -->
+### T-E-040 · komirka · рядок 23
 
 **Книга каже, дослівно:**
 
@@ -811,8 +877,8 @@
 
 ---
 
-<!-- fc id:T-E-038 sha:49d948f0 src:dodatky/e-interfeysy.md:22 klas:F -->
-### T-E-038 · komirka · рядок 22
+<!-- fc id:T-E-041 sha:49d948f0 src:dodatky/e-interfeysy.md:23 klas:F -->
+### T-E-041 · komirka · рядок 23
 
 **Книга каже, дослівно:**
 
@@ -824,8 +890,8 @@
 
 ---
 
-<!-- fc id:T-E-039 sha:7d4b5654 src:dodatky/e-interfeysy.md:23 klas:A -->
-### T-E-039 · komirka · рядок 23
+<!-- fc id:T-E-042 sha:7d4b5654 src:dodatky/e-interfeysy.md:24 klas:A -->
+### T-E-042 · komirka · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -856,8 +922,8 @@
 
 ---
 
-<!-- fc id:T-E-040 sha:302952a9 src:dodatky/e-interfeysy.md:23 klas:F -->
-### T-E-040 · komirka · рядок 23
+<!-- fc id:T-E-043 sha:302952a9 src:dodatky/e-interfeysy.md:24 klas:F -->
+### T-E-043 · komirka · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -869,8 +935,8 @@
 
 ---
 
-<!-- fc id:T-E-041 sha:ef9fcd2b src:dodatky/e-interfeysy.md:23 klas:F -->
-### T-E-041 · komirka · рядок 23
+<!-- fc id:T-E-044 sha:ef9fcd2b src:dodatky/e-interfeysy.md:24 klas:F -->
+### T-E-044 · komirka · рядок 24
 
 **Книга каже, дослівно:**
 
@@ -882,8 +948,8 @@
 
 ---
 
-<!-- fc id:T-E-042 sha:ed48c80e src:dodatky/e-interfeysy.md:24 klas:A -->
-### T-E-042 · komirka · рядок 24
+<!-- fc id:T-E-045 sha:ed48c80e src:dodatky/e-interfeysy.md:25 klas:A -->
+### T-E-045 · komirka · рядок 25
 
 **Книга каже, дослівно:**
 
@@ -914,8 +980,8 @@
 
 ---
 
-<!-- fc id:T-E-043 sha:0edbf47b src:dodatky/e-interfeysy.md:24 klas:F -->
-### T-E-043 · komirka · рядок 24
+<!-- fc id:T-E-046 sha:0edbf47b src:dodatky/e-interfeysy.md:25 klas:F -->
+### T-E-046 · komirka · рядок 25
 
 **Книга каже, дослівно:**
 
@@ -927,8 +993,8 @@
 
 ---
 
-<!-- fc id:T-E-044 sha:9f46567b src:dodatky/e-interfeysy.md:28 klas:A -->
-### T-E-044 · proza · рядок 28
+<!-- fc id:T-E-047 sha:9f46567b src:dodatky/e-interfeysy.md:29 klas:A -->
+### T-E-047 · proza · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -959,8 +1025,8 @@
 
 ---
 
-<!-- fc id:T-E-045 sha:50f4c8ac src:dodatky/e-interfeysy.md:28 klas:F -->
-### T-E-045 · proza · рядок 28
+<!-- fc id:T-E-048 sha:50f4c8ac src:dodatky/e-interfeysy.md:29 klas:F -->
+### T-E-048 · proza · рядок 29
 
 **Книга каже, дослівно:**
 
@@ -972,8 +1038,8 @@
 
 ---
 
-<!-- fc id:T-E-046 sha:cf3f864a src:dodatky/e-interfeysy.md:35 klas:F -->
-### T-E-046 · proza · рядок 35
+<!-- fc id:T-E-049 sha:cf3f864a src:dodatky/e-interfeysy.md:36 klas:F -->
+### T-E-049 · proza · рядок 36
 
 **Книга каже, дослівно:**
 
@@ -985,8 +1051,8 @@
 
 ---
 
-<!-- fc id:T-E-047 sha:f78815d4 src:dodatky/e-interfeysy.md:37 klas:F -->
-### T-E-047 · tablycya-shapka · рядок 37
+<!-- fc id:T-E-050 sha:f78815d4 src:dodatky/e-interfeysy.md:38 klas:F -->
+### T-E-050 · tablycya-shapka · рядок 38
 
 **Книга каже, дослівно:**
 
@@ -998,8 +1064,8 @@
 
 ---
 
-<!-- fc id:T-E-048 sha:6f5fce38 src:dodatky/e-interfeysy.md:38 klas:A -->
-### T-E-048 · komirka · рядок 38
+<!-- fc id:T-E-051 sha:6f5fce38 src:dodatky/e-interfeysy.md:39 klas:A -->
+### T-E-051 · komirka · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -1030,8 +1096,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-049 sha:5524a220 src:dodatky/e-interfeysy.md:38 klas:F -->
-### T-E-049 · komirka · рядок 38
+<!-- fc id:T-E-052 sha:5524a220 src:dodatky/e-interfeysy.md:39 klas:F -->
+### T-E-052 · komirka · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1109,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-050 sha:f129922d src:dodatky/e-interfeysy.md:38 klas:F -->
-### T-E-050 · komirka · рядок 38
+<!-- fc id:T-E-053 sha:f129922d src:dodatky/e-interfeysy.md:39 klas:F -->
+### T-E-053 · komirka · рядок 39
 
 **Книга каже, дослівно:**
 
@@ -1056,8 +1122,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-051 sha:adfd8b57 src:dodatky/e-interfeysy.md:39 klas:F -->
-### T-E-051 · komirka · рядок 39
+<!-- fc id:T-E-054 sha:adfd8b57 src:dodatky/e-interfeysy.md:40 klas:F -->
+### T-E-054 · komirka · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -1069,8 +1135,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-052 sha:dfb7b32b src:dodatky/e-interfeysy.md:39 klas:F -->
-### T-E-052 · komirka · рядок 39
+<!-- fc id:T-E-055 sha:dfb7b32b src:dodatky/e-interfeysy.md:40 klas:F -->
+### T-E-055 · komirka · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -1082,8 +1148,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-053 sha:f30ebfb1 src:dodatky/e-interfeysy.md:39 klas:F -->
-### T-E-053 · komirka · рядок 39
+<!-- fc id:T-E-056 sha:f30ebfb1 src:dodatky/e-interfeysy.md:40 klas:F -->
+### T-E-056 · komirka · рядок 40
 
 **Книга каже, дослівно:**
 
@@ -1095,8 +1161,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-054 sha:8f11bd59 src:dodatky/e-interfeysy.md:40 klas:E -->
-### T-E-054 · komirka · рядок 40
+<!-- fc id:T-E-057 sha:8f11bd59 src:dodatky/e-interfeysy.md:41 klas:E -->
+### T-E-057 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -1108,8 +1174,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-055 sha:59f2f000 src:dodatky/e-interfeysy.md:40 klas:E -->
-### T-E-055 · komirka · рядок 40
+<!-- fc id:T-E-058 sha:59f2f000 src:dodatky/e-interfeysy.md:41 klas:E -->
+### T-E-058 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -1121,8 +1187,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-056 sha:223f57f7 src:dodatky/e-interfeysy.md:40 klas:A -->
-### T-E-056 · komirka · рядок 40
+<!-- fc id:T-E-059 sha:223f57f7 src:dodatky/e-interfeysy.md:41 klas:A -->
+### T-E-059 · komirka · рядок 41
 
 **Книга каже, дослівно:**
 
@@ -1152,8 +1218,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-057 sha:d5eed7a0 src:dodatky/e-interfeysy.md:41 klas:C -->
-### T-E-057 · komirka · рядок 41
+<!-- fc id:T-E-060 sha:d5eed7a0 src:dodatky/e-interfeysy.md:42 klas:C -->
+### T-E-060 · komirka · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -1169,8 +1235,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-058 sha:2d0a3f04 src:dodatky/e-interfeysy.md:41 klas:C -->
-### T-E-058 · komirka · рядок 41
+<!-- fc id:T-E-061 sha:2d0a3f04 src:dodatky/e-interfeysy.md:42 klas:C -->
+### T-E-061 · komirka · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -1186,8 +1252,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-059 sha:94c061f0 src:dodatky/e-interfeysy.md:41 klas:C -->
-### T-E-059 · komirka · рядок 41
+<!-- fc id:T-E-062 sha:94c061f0 src:dodatky/e-interfeysy.md:42 klas:C -->
+### T-E-062 · komirka · рядок 42
 
 **Книга каже, дослівно:**
 
@@ -1203,8 +1269,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-060 sha:33326c46 src:dodatky/e-interfeysy.md:42 klas:C -->
-### T-E-060 · komirka · рядок 42
+<!-- fc id:T-E-063 sha:33326c46 src:dodatky/e-interfeysy.md:43 klas:C -->
+### T-E-063 · komirka · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -1220,8 +1286,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-061 sha:b83467dd src:dodatky/e-interfeysy.md:42 klas:C -->
-### T-E-061 · komirka · рядок 42
+<!-- fc id:T-E-064 sha:b83467dd src:dodatky/e-interfeysy.md:43 klas:C -->
+### T-E-064 · komirka · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -1237,8 +1303,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-062 sha:a588779e src:dodatky/e-interfeysy.md:42 klas:C -->
-### T-E-062 · komirka · рядок 42
+<!-- fc id:T-E-065 sha:a588779e src:dodatky/e-interfeysy.md:43 klas:C -->
+### T-E-065 · komirka · рядок 43
 
 **Книга каже, дослівно:**
 
@@ -1254,8 +1320,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-063 sha:dc8f7e30 src:dodatky/e-interfeysy.md:43 klas:F -->
-### T-E-063 · komirka · рядок 43
+<!-- fc id:T-E-066 sha:dc8f7e30 src:dodatky/e-interfeysy.md:44 klas:F -->
+### T-E-066 · komirka · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -1267,8 +1333,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-064 sha:722a12f0 src:dodatky/e-interfeysy.md:43 klas:F -->
-### T-E-064 · komirka · рядок 43
+<!-- fc id:T-E-067 sha:722a12f0 src:dodatky/e-interfeysy.md:44 klas:F -->
+### T-E-067 · komirka · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -1280,8 +1346,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-065 sha:e12a5df8 src:dodatky/e-interfeysy.md:43 klas:F -->
-### T-E-065 · komirka · рядок 43
+<!-- fc id:T-E-068 sha:e12a5df8 src:dodatky/e-interfeysy.md:44 klas:F -->
+### T-E-068 · komirka · рядок 44
 
 **Книга каже, дослівно:**
 
@@ -1293,8 +1359,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-066 sha:27d739d6 src:dodatky/e-interfeysy.md:44 klas:F -->
-### T-E-066 · komirka · рядок 44
+<!-- fc id:T-E-069 sha:27d739d6 src:dodatky/e-interfeysy.md:45 klas:F -->
+### T-E-069 · komirka · рядок 45
 
 **Книга каже, дослівно:**
 
@@ -1306,8 +1372,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-067 sha:3ec6e643 src:dodatky/e-interfeysy.md:44 klas:F -->
-### T-E-067 · komirka · рядок 44
+<!-- fc id:T-E-070 sha:3ec6e643 src:dodatky/e-interfeysy.md:45 klas:F -->
+### T-E-070 · komirka · рядок 45
 
 **Книга каже, дослівно:**
 
@@ -1319,8 +1385,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-068 sha:8f789500 src:dodatky/e-interfeysy.md:44 klas:F -->
-### T-E-068 · komirka · рядок 44
+<!-- fc id:T-E-071 sha:8f789500 src:dodatky/e-interfeysy.md:45 klas:F -->
+### T-E-071 · komirka · рядок 45
 
 **Книга каже, дослівно:**
 
@@ -1332,8 +1398,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-069 sha:39070e8a src:dodatky/e-interfeysy.md:45 klas:F -->
-### T-E-069 · komirka · рядок 45
+<!-- fc id:T-E-072 sha:39070e8a src:dodatky/e-interfeysy.md:46 klas:F -->
+### T-E-072 · komirka · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -1345,8 +1411,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-070 sha:1aa5f02d src:dodatky/e-interfeysy.md:45 klas:F -->
-### T-E-070 · komirka · рядок 45
+<!-- fc id:T-E-073 sha:1aa5f02d src:dodatky/e-interfeysy.md:46 klas:F -->
+### T-E-073 · komirka · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -1358,8 +1424,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-071 sha:5de71916 src:dodatky/e-interfeysy.md:45 klas:F -->
-### T-E-071 · komirka · рядок 45
+<!-- fc id:T-E-074 sha:5de71916 src:dodatky/e-interfeysy.md:46 klas:F -->
+### T-E-074 · komirka · рядок 46
 
 **Книга каже, дослівно:**
 
@@ -1371,8 +1437,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-072 sha:4371340c src:dodatky/e-interfeysy.md:46 klas:F -->
-### T-E-072 · komirka · рядок 46
+<!-- fc id:T-E-075 sha:4371340c src:dodatky/e-interfeysy.md:47 klas:F -->
+### T-E-075 · komirka · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -1384,8 +1450,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-073 sha:e486f0a5 src:dodatky/e-interfeysy.md:46 klas:F -->
-### T-E-073 · komirka · рядок 46
+<!-- fc id:T-E-076 sha:e486f0a5 src:dodatky/e-interfeysy.md:47 klas:F -->
+### T-E-076 · komirka · рядок 47
 
 **Книга каже, дослівно:**
 
@@ -1397,8 +1463,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-074 sha:c89cdd6b src:dodatky/e-interfeysy.md:47 klas:E -->
-### T-E-074 · komirka · рядок 47
+<!-- fc id:T-E-077 sha:c89cdd6b src:dodatky/e-interfeysy.md:48 klas:E -->
+### T-E-077 · komirka · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -1410,8 +1476,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-075 sha:95e8ad21 src:dodatky/e-interfeysy.md:47 klas:E -->
-### T-E-075 · komirka · рядок 47
+<!-- fc id:T-E-078 sha:95e8ad21 src:dodatky/e-interfeysy.md:48 klas:E -->
+### T-E-078 · komirka · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -1423,8 +1489,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-076 sha:ffad2970 src:dodatky/e-interfeysy.md:47 klas:E -->
-### T-E-076 · komirka · рядок 47
+<!-- fc id:T-E-079 sha:ffad2970 src:dodatky/e-interfeysy.md:48 klas:E -->
+### T-E-079 · komirka · рядок 48
 
 **Книга каже, дослівно:**
 
@@ -1436,8 +1502,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-077 sha:91a5608b src:dodatky/e-interfeysy.md:48 klas:F -->
-### T-E-077 · komirka · рядок 48
+<!-- fc id:T-E-080 sha:91a5608b src:dodatky/e-interfeysy.md:49 klas:F -->
+### T-E-080 · komirka · рядок 49
 
 **Книга каже, дослівно:**
 
@@ -1449,8 +1515,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-078 sha:ebbcf551 src:dodatky/e-interfeysy.md:48 klas:F -->
-### T-E-078 · komirka · рядок 48
+<!-- fc id:T-E-081 sha:ebbcf551 src:dodatky/e-interfeysy.md:49 klas:F -->
+### T-E-081 · komirka · рядок 49
 
 **Книга каже, дослівно:**
 
@@ -1462,8 +1528,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-079 sha:0053b4f8 src:dodatky/e-interfeysy.md:48 klas:F -->
-### T-E-079 · komirka · рядок 48
+<!-- fc id:T-E-082 sha:0053b4f8 src:dodatky/e-interfeysy.md:49 klas:F -->
+### T-E-082 · komirka · рядок 49
 
 **Книга каже, дослівно:**
 
@@ -1475,8 +1541,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-080 sha:508da6ef src:dodatky/e-interfeysy.md:51 klas:E -->
-### T-E-080 · proza · рядок 51
+<!-- fc id:T-E-083 sha:508da6ef src:dodatky/e-interfeysy.md:52 klas:E -->
+### T-E-083 · proza · рядок 52
 
 **Книга каже, дослівно:**
 
@@ -1488,8 +1554,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-081 sha:e5d00b74 src:dodatky/e-interfeysy.md:53 klas:A -->
-### T-E-081 · proza · рядок 53
+<!-- fc id:T-E-084 sha:e5d00b74 src:dodatky/e-interfeysy.md:54 klas:A -->
+### T-E-084 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -1520,8 +1586,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-082 sha:2ec41b36 src:dodatky/e-interfeysy.md:53 klas:F -->
-### T-E-082 · proza · рядок 53
+<!-- fc id:T-E-085 sha:2ec41b36 src:dodatky/e-interfeysy.md:54 klas:F -->
+### T-E-085 · proza · рядок 54
 
 **Книга каже, дослівно:**
 
@@ -1533,8 +1599,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-083 sha:2584d17b src:dodatky/e-interfeysy.md:60 klas:F -->
-### T-E-083 · proza · рядок 60
+<!-- fc id:T-E-086 sha:2584d17b src:dodatky/e-interfeysy.md:61 klas:F -->
+### T-E-086 · proza · рядок 61
 
 **Книга каже, дослівно:**
 
@@ -1546,8 +1612,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-084 sha:58e2d28c src:dodatky/e-interfeysy.md:62 klas:F -->
-### T-E-084 · tablycya-shapka · рядок 62
+<!-- fc id:T-E-087 sha:58e2d28c src:dodatky/e-interfeysy.md:63 klas:F -->
+### T-E-087 · tablycya-shapka · рядок 63
 
 **Книга каже, дослівно:**
 
@@ -1559,8 +1625,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-085 sha:94d7dcf5 src:dodatky/e-interfeysy.md:63 klas:E -->
-### T-E-085 · komirka · рядок 63
+<!-- fc id:T-E-088 sha:94d7dcf5 src:dodatky/e-interfeysy.md:64 klas:E -->
+### T-E-088 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -1572,8 +1638,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-086 sha:2aae51ca src:dodatky/e-interfeysy.md:63 klas:E -->
-### T-E-086 · komirka · рядок 63
+<!-- fc id:T-E-089 sha:2aae51ca src:dodatky/e-interfeysy.md:64 klas:E -->
+### T-E-089 · komirka · рядок 64
 
 **Книга каже, дослівно:**
 
@@ -1585,8 +1651,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-087 sha:855aa221 src:dodatky/e-interfeysy.md:64 klas:C -->
-### T-E-087 · komirka · рядок 64
+<!-- fc id:T-E-090 sha:855aa221 src:dodatky/e-interfeysy.md:65 klas:C -->
+### T-E-090 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -1602,8 +1668,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-088 sha:c547b848 src:dodatky/e-interfeysy.md:64 klas:C -->
-### T-E-088 · komirka · рядок 64
+<!-- fc id:T-E-091 sha:c547b848 src:dodatky/e-interfeysy.md:65 klas:C -->
+### T-E-091 · komirka · рядок 65
 
 **Книга каже, дослівно:**
 
@@ -1619,8 +1685,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-089 sha:3f504a93 src:dodatky/e-interfeysy.md:65 klas:F -->
-### T-E-089 · komirka · рядок 65
+<!-- fc id:T-E-092 sha:3f504a93 src:dodatky/e-interfeysy.md:66 klas:F -->
+### T-E-092 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -1632,8 +1698,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-090 sha:0612861d src:dodatky/e-interfeysy.md:65 klas:F -->
-### T-E-090 · komirka · рядок 65
+<!-- fc id:T-E-093 sha:0612861d src:dodatky/e-interfeysy.md:66 klas:F -->
+### T-E-093 · komirka · рядок 66
 
 **Книга каже, дослівно:**
 
@@ -1645,8 +1711,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-091 sha:b8877b39 src:dodatky/e-interfeysy.md:66 klas:E -->
-### T-E-091 · komirka · рядок 66
+<!-- fc id:T-E-094 sha:b8877b39 src:dodatky/e-interfeysy.md:67 klas:E -->
+### T-E-094 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -1658,8 +1724,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-092 sha:053289b4 src:dodatky/e-interfeysy.md:66 klas:E -->
-### T-E-092 · komirka · рядок 66
+<!-- fc id:T-E-095 sha:053289b4 src:dodatky/e-interfeysy.md:67 klas:E -->
+### T-E-095 · komirka · рядок 67
 
 **Книга каже, дослівно:**
 
@@ -1671,8 +1737,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-093 sha:5b51dcfb src:dodatky/e-interfeysy.md:67 klas:F -->
-### T-E-093 · komirka · рядок 67
+<!-- fc id:T-E-096 sha:5b51dcfb src:dodatky/e-interfeysy.md:68 klas:F -->
+### T-E-096 · komirka · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -1684,8 +1750,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-094 sha:896f6358 src:dodatky/e-interfeysy.md:67 klas:F -->
-### T-E-094 · komirka · рядок 67
+<!-- fc id:T-E-097 sha:896f6358 src:dodatky/e-interfeysy.md:68 klas:F -->
+### T-E-097 · komirka · рядок 68
 
 **Книга каже, дослівно:**
 
@@ -1697,8 +1763,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-095 sha:cac54e4e src:dodatky/e-interfeysy.md:68 klas:E -->
-### T-E-095 · komirka · рядок 68
+<!-- fc id:T-E-098 sha:cac54e4e src:dodatky/e-interfeysy.md:69 klas:E -->
+### T-E-098 · komirka · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -1710,8 +1776,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-096 sha:48ea03d4 src:dodatky/e-interfeysy.md:68 klas:E -->
-### T-E-096 · komirka · рядок 68
+<!-- fc id:T-E-099 sha:48ea03d4 src:dodatky/e-interfeysy.md:69 klas:E -->
+### T-E-099 · komirka · рядок 69
 
 **Книга каже, дослівно:**
 
@@ -1723,8 +1789,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-097 sha:5155a527 src:dodatky/e-interfeysy.md:69 klas:E -->
-### T-E-097 · komirka · рядок 69
+<!-- fc id:T-E-100 sha:5155a527 src:dodatky/e-interfeysy.md:70 klas:E -->
+### T-E-100 · komirka · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -1736,8 +1802,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-098 sha:e2c081b0 src:dodatky/e-interfeysy.md:69 klas:E -->
-### T-E-098 · komirka · рядок 69
+<!-- fc id:T-E-101 sha:e2c081b0 src:dodatky/e-interfeysy.md:70 klas:E -->
+### T-E-101 · komirka · рядок 70
 
 **Книга каже, дослівно:**
 
@@ -1749,8 +1815,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-099 sha:e19753d0 src:dodatky/e-interfeysy.md:74 klas:F -->
-### T-E-099 · proza · рядок 74
+<!-- fc id:T-E-102 sha:e19753d0 src:dodatky/e-interfeysy.md:75 klas:F -->
+### T-E-102 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
@@ -1762,8 +1828,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-100 sha:929d7feb src:dodatky/e-interfeysy.md:76 klas:F -->
-### T-E-100 · tablycya-shapka · рядок 76
+<!-- fc id:T-E-103 sha:929d7feb src:dodatky/e-interfeysy.md:77 klas:F -->
+### T-E-103 · tablycya-shapka · рядок 77
 
 **Книга каже, дослівно:**
 
@@ -1775,8 +1841,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-101 sha:63e06b9b src:dodatky/e-interfeysy.md:77 klas:C -->
-### T-E-101 · komirka · рядок 77
+<!-- fc id:T-E-104 sha:63e06b9b src:dodatky/e-interfeysy.md:78 klas:C -->
+### T-E-104 · komirka · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -1792,8 +1858,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-102 sha:8665749b src:dodatky/e-interfeysy.md:77 klas:C -->
-### T-E-102 · komirka · рядок 77
+<!-- fc id:T-E-105 sha:8665749b src:dodatky/e-interfeysy.md:78 klas:C -->
+### T-E-105 · komirka · рядок 78
 
 **Книга каже, дослівно:**
 
@@ -1809,8 +1875,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-103 sha:a1c587ef src:dodatky/e-interfeysy.md:78 klas:F -->
-### T-E-103 · komirka · рядок 78
+<!-- fc id:T-E-106 sha:a1c587ef src:dodatky/e-interfeysy.md:79 klas:F -->
+### T-E-106 · komirka · рядок 79
 
 **Книга каже, дослівно:**
 
@@ -1822,8 +1888,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-104 sha:dfa3ce29 src:dodatky/e-interfeysy.md:83 klas:F -->
-### T-E-104 · proza · рядок 83
+<!-- fc id:T-E-107 sha:dfa3ce29 src:dodatky/e-interfeysy.md:84 klas:F -->
+### T-E-107 · proza · рядок 84
 
 **Книга каже, дослівно:**
 
@@ -1835,8 +1901,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-105 sha:7371b723 src:dodatky/e-interfeysy.md:85 klas:E -->
-### T-E-105 · tablycya · рядок 85
+<!-- fc id:T-E-108 sha:7371b723 src:dodatky/e-interfeysy.md:86 klas:E -->
+### T-E-108 · tablycya · рядок 86
 
 **Книга каже, дослівно:**
 
@@ -1848,8 +1914,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-106 sha:31ba3159 src:dodatky/e-interfeysy.md:87 klas:C -->
-### T-E-106 · tablycya · рядок 87
+<!-- fc id:T-E-109 sha:31ba3159 src:dodatky/e-interfeysy.md:88 klas:C -->
+### T-E-109 · tablycya · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -1865,8 +1931,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-107 sha:e1da2f4a src:dodatky/e-interfeysy.md:88 klas:C -->
-### T-E-107 · tablycya · рядок 88
+<!-- fc id:T-E-110 sha:e1da2f4a src:dodatky/e-interfeysy.md:89 klas:C -->
+### T-E-110 · tablycya · рядок 89
 
 **Книга каже, дослівно:**
 
@@ -1882,8 +1948,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-108 sha:e67a29db src:dodatky/e-interfeysy.md:89 klas:E -->
-### T-E-108 · tablycya · рядок 89
+<!-- fc id:T-E-111 sha:e67a29db src:dodatky/e-interfeysy.md:90 klas:E -->
+### T-E-111 · tablycya · рядок 90
 
 **Книга каже, дослівно:**
 
@@ -1895,8 +1961,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-109 sha:8929fec1 src:dodatky/e-interfeysy.md:90 klas:E -->
-### T-E-109 · tablycya · рядок 90
+<!-- fc id:T-E-112 sha:8929fec1 src:dodatky/e-interfeysy.md:91 klas:E -->
+### T-E-112 · tablycya · рядок 91
 
 **Книга каже, дослівно:**
 
@@ -1908,8 +1974,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-110 sha:d063a502 src:dodatky/e-interfeysy.md:91 klas:E -->
-### T-E-110 · tablycya · рядок 91
+<!-- fc id:T-E-113 sha:d063a502 src:dodatky/e-interfeysy.md:92 klas:E -->
+### T-E-113 · tablycya · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -1921,8 +1987,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-111 sha:754f537d src:dodatky/e-interfeysy.md:95 klas:E -->
-### T-E-111 · proza · рядок 95
+<!-- fc id:T-E-114 sha:754f537d src:dodatky/e-interfeysy.md:96 klas:E -->
+### T-E-114 · proza · рядок 96
 
 **Книга каже, дослівно:**
 
@@ -1934,8 +2000,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-112 sha:d058b8f8 src:dodatky/e-interfeysy.md:97 klas:F -->
-### T-E-112 · tablycya-shapka · рядок 97
+<!-- fc id:T-E-115 sha:d058b8f8 src:dodatky/e-interfeysy.md:98 klas:F -->
+### T-E-115 · tablycya-shapka · рядок 98
 
 **Книга каже, дослівно:**
 
@@ -1947,8 +2013,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-113 sha:c6e013aa src:dodatky/e-interfeysy.md:98 klas:F -->
-### T-E-113 · komirka · рядок 98
+<!-- fc id:T-E-116 sha:c6e013aa src:dodatky/e-interfeysy.md:99 klas:F -->
+### T-E-116 · komirka · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -1960,8 +2026,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-114 sha:68634053 src:dodatky/e-interfeysy.md:98 klas:F -->
-### T-E-114 · komirka · рядок 98
+<!-- fc id:T-E-117 sha:68634053 src:dodatky/e-interfeysy.md:99 klas:F -->
+### T-E-117 · komirka · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -1973,8 +2039,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-115 sha:e83535cc src:dodatky/e-interfeysy.md:99 klas:F -->
-### T-E-115 · komirka · рядок 99
+<!-- fc id:T-E-118 sha:e83535cc src:dodatky/e-interfeysy.md:100 klas:F -->
+### T-E-118 · komirka · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -1986,8 +2052,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-116 sha:b327d32d src:dodatky/e-interfeysy.md:99 klas:F -->
-### T-E-116 · komirka · рядок 99
+<!-- fc id:T-E-119 sha:b327d32d src:dodatky/e-interfeysy.md:100 klas:F -->
+### T-E-119 · komirka · рядок 100
 
 **Книга каже, дослівно:**
 
@@ -1999,8 +2065,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-117 sha:2aedf206 src:dodatky/e-interfeysy.md:100 klas:F -->
-### T-E-117 · komirka · рядок 100
+<!-- fc id:T-E-120 sha:2aedf206 src:dodatky/e-interfeysy.md:101 klas:F -->
+### T-E-120 · komirka · рядок 101
 
 **Книга каже, дослівно:**
 
@@ -2012,8 +2078,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-118 sha:06d56aa5 src:dodatky/e-interfeysy.md:105 klas:F -->
-### T-E-118 · tablycya-shapka · рядок 105
+<!-- fc id:T-E-121 sha:06d56aa5 src:dodatky/e-interfeysy.md:106 klas:F -->
+### T-E-121 · tablycya-shapka · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -2025,8 +2091,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-119 sha:5a46b695 src:dodatky/e-interfeysy.md:106 klas:F -->
-### T-E-119 · komirka · рядок 106
+<!-- fc id:T-E-122 sha:5a46b695 src:dodatky/e-interfeysy.md:107 klas:F -->
+### T-E-122 · komirka · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -2038,8 +2104,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-120 sha:2a40ffab src:dodatky/e-interfeysy.md:106 klas:F -->
-### T-E-120 · komirka · рядок 106
+<!-- fc id:T-E-123 sha:2a40ffab src:dodatky/e-interfeysy.md:107 klas:F -->
+### T-E-123 · komirka · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -2051,8 +2117,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-121 sha:70c43f02 src:dodatky/e-interfeysy.md:107 klas:F -->
-### T-E-121 · komirka · рядок 107
+<!-- fc id:T-E-124 sha:70c43f02 src:dodatky/e-interfeysy.md:108 klas:F -->
+### T-E-124 · komirka · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -2064,8 +2130,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-122 sha:92e46f9c src:dodatky/e-interfeysy.md:107 klas:F -->
-### T-E-122 · komirka · рядок 107
+<!-- fc id:T-E-125 sha:92e46f9c src:dodatky/e-interfeysy.md:108 klas:F -->
+### T-E-125 · komirka · рядок 108
 
 **Книга каже, дослівно:**
 
@@ -2077,8 +2143,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-123 sha:c29a7095 src:dodatky/e-interfeysy.md:108 klas:F -->
-### T-E-123 · komirka · рядок 108
+<!-- fc id:T-E-126 sha:c29a7095 src:dodatky/e-interfeysy.md:109 klas:F -->
+### T-E-126 · komirka · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -2090,8 +2156,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-124 sha:2edcffe2 src:dodatky/e-interfeysy.md:108 klas:F -->
-### T-E-124 · komirka · рядок 108
+<!-- fc id:T-E-127 sha:2edcffe2 src:dodatky/e-interfeysy.md:109 klas:F -->
+### T-E-127 · komirka · рядок 109
 
 **Книга каже, дослівно:**
 
@@ -2103,8 +2169,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-125 sha:25d38211 src:dodatky/e-interfeysy.md:109 klas:F -->
-### T-E-125 · komirka · рядок 109
+<!-- fc id:T-E-128 sha:25d38211 src:dodatky/e-interfeysy.md:110 klas:F -->
+### T-E-128 · komirka · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -2116,8 +2182,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-126 sha:7a8a7c1e src:dodatky/e-interfeysy.md:109 klas:F -->
-### T-E-126 · komirka · рядок 109
+<!-- fc id:T-E-129 sha:7a8a7c1e src:dodatky/e-interfeysy.md:110 klas:F -->
+### T-E-129 · komirka · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -2129,8 +2195,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-127 sha:af56f9d9 src:dodatky/e-interfeysy.md:110 klas:E -->
-### T-E-127 · komirka · рядок 110
+<!-- fc id:T-E-130 sha:af56f9d9 src:dodatky/e-interfeysy.md:111 klas:E -->
+### T-E-130 · komirka · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -2142,8 +2208,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-128 sha:54d7c2be src:dodatky/e-interfeysy.md:110 klas:E -->
-### T-E-128 · komirka · рядок 110
+<!-- fc id:T-E-131 sha:54d7c2be src:dodatky/e-interfeysy.md:111 klas:E -->
+### T-E-131 · komirka · рядок 111
 
 **Книга каже, дослівно:**
 
@@ -2155,8 +2221,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-129 sha:6718e2ac src:dodatky/e-interfeysy.md:111 klas:E -->
-### T-E-129 · komirka · рядок 111
+<!-- fc id:T-E-132 sha:6718e2ac src:dodatky/e-interfeysy.md:112 klas:E -->
+### T-E-132 · komirka · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -2168,8 +2234,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-130 sha:b7388bb6 src:dodatky/e-interfeysy.md:111 klas:E -->
-### T-E-130 · komirka · рядок 111
+<!-- fc id:T-E-133 sha:b7388bb6 src:dodatky/e-interfeysy.md:112 klas:E -->
+### T-E-133 · komirka · рядок 112
 
 **Книга каже, дослівно:**
 
@@ -2181,8 +2247,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-131 sha:a6161f9a src:dodatky/e-interfeysy.md:112 klas:F -->
-### T-E-131 · komirka · рядок 112
+<!-- fc id:T-E-134 sha:a6161f9a src:dodatky/e-interfeysy.md:113 klas:F -->
+### T-E-134 · komirka · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -2194,8 +2260,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-132 sha:32214f7d src:dodatky/e-interfeysy.md:112 klas:F -->
-### T-E-132 · komirka · рядок 112
+<!-- fc id:T-E-135 sha:32214f7d src:dodatky/e-interfeysy.md:113 klas:F -->
+### T-E-135 · komirka · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -2207,8 +2273,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-133 sha:909ea86e src:dodatky/e-interfeysy.md:113 klas:F -->
-### T-E-133 · komirka · рядок 113
+<!-- fc id:T-E-136 sha:909ea86e src:dodatky/e-interfeysy.md:114 klas:F -->
+### T-E-136 · komirka · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -2220,8 +2286,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-134 sha:dc6772ec src:dodatky/e-interfeysy.md:113 klas:F -->
-### T-E-134 · komirka · рядок 113
+<!-- fc id:T-E-137 sha:dc6772ec src:dodatky/e-interfeysy.md:114 klas:F -->
+### T-E-137 · komirka · рядок 114
 
 **Книга каже, дослівно:**
 
@@ -2233,8 +2299,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-135 sha:70d1ab2b src:dodatky/e-interfeysy.md:114 klas:E -->
-### T-E-135 · komirka · рядок 114
+<!-- fc id:T-E-138 sha:70d1ab2b src:dodatky/e-interfeysy.md:115 klas:E -->
+### T-E-138 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -2246,8 +2312,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-136 sha:82b294d2 src:dodatky/e-interfeysy.md:114 klas:E -->
-### T-E-136 · komirka · рядок 114
+<!-- fc id:T-E-139 sha:82b294d2 src:dodatky/e-interfeysy.md:115 klas:E -->
+### T-E-139 · komirka · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -2259,8 +2325,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-137 sha:b65fc0a5 src:dodatky/e-interfeysy.md:119 klas:A -->
-### T-E-137 · proza · рядок 119
+<!-- fc id:T-E-140 sha:b65fc0a5 src:dodatky/e-interfeysy.md:120 klas:A -->
+### T-E-140 · proza · рядок 120
 
 **Книга каже, дослівно:**
 
@@ -2292,8 +2358,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-138 sha:8d32b02f src:dodatky/e-interfeysy.md:121 klas:E -->
-### T-E-138 · tablycya · рядок 121
+<!-- fc id:T-E-141 sha:8d32b02f src:dodatky/e-interfeysy.md:122 klas:E -->
+### T-E-141 · tablycya · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -2305,8 +2371,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-139 sha:c8c1f60e src:dodatky/e-interfeysy.md:123 klas:E -->
-### T-E-139 · tablycya · рядок 123
+<!-- fc id:T-E-142 sha:c8c1f60e src:dodatky/e-interfeysy.md:124 klas:E -->
+### T-E-142 · tablycya · рядок 124
 
 **Книга каже, дослівно:**
 
@@ -2318,8 +2384,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-140 sha:d6e27376 src:dodatky/e-interfeysy.md:124 klas:E -->
-### T-E-140 · tablycya · рядок 124
+<!-- fc id:T-E-143 sha:d6e27376 src:dodatky/e-interfeysy.md:125 klas:E -->
+### T-E-143 · tablycya · рядок 125
 
 **Книга каже, дослівно:**
 
@@ -2331,8 +2397,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-141 sha:17f8b064 src:dodatky/e-interfeysy.md:125 klas:F -->
-### T-E-141 · tablycya · рядок 125
+<!-- fc id:T-E-144 sha:17f8b064 src:dodatky/e-interfeysy.md:126 klas:F -->
+### T-E-144 · tablycya · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -2344,8 +2410,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-142 sha:fcd63e03 src:dodatky/e-interfeysy.md:126 klas:E -->
-### T-E-142 · tablycya · рядок 126
+<!-- fc id:T-E-145 sha:fcd63e03 src:dodatky/e-interfeysy.md:127 klas:E -->
+### T-E-145 · tablycya · рядок 127
 
 **Книга каже, дослівно:**
 
@@ -2357,8 +2423,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-143 sha:fb2090c8 src:dodatky/e-interfeysy.md:127 klas:E -->
-### T-E-143 · tablycya · рядок 127
+<!-- fc id:T-E-146 sha:fb2090c8 src:dodatky/e-interfeysy.md:128 klas:E -->
+### T-E-146 · tablycya · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -2370,8 +2436,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-144 sha:06362e64 src:dodatky/e-interfeysy.md:131 klas:A -->
-### T-E-144 · proza · рядок 131
+<!-- fc id:T-E-147 sha:06362e64 src:dodatky/e-interfeysy.md:132 klas:A -->
+### T-E-147 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -2405,8 +2471,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-145 sha:66b89da4 src:dodatky/e-interfeysy.md:131 klas:E -->
-### T-E-145 · proza · рядок 131
+<!-- fc id:T-E-148 sha:66b89da4 src:dodatky/e-interfeysy.md:132 klas:E -->
+### T-E-148 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -2418,8 +2484,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-146 sha:dcd5dd7e src:dodatky/e-interfeysy.md:134 klas:F -->
-### T-E-146 · proza · рядок 134
+<!-- fc id:T-E-149 sha:dcd5dd7e src:dodatky/e-interfeysy.md:135 klas:F -->
+### T-E-149 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -2431,8 +2497,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-147 sha:4bb5ebd8 src:dodatky/e-interfeysy.md:134 klas:E -->
-### T-E-147 · proza · рядок 134
+<!-- fc id:T-E-150 sha:4bb5ebd8 src:dodatky/e-interfeysy.md:135 klas:E -->
+### T-E-150 · proza · рядок 135
 
 **Книга каже, дослівно:**
 
@@ -2444,8 +2510,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-148 sha:107a64bc src:dodatky/e-interfeysy.md:137 klas:F -->
-### T-E-148 · proza · рядок 137
+<!-- fc id:T-E-151 sha:107a64bc src:dodatky/e-interfeysy.md:138 klas:F -->
+### T-E-151 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -2457,8 +2523,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-149 sha:abdd0a3f src:dodatky/e-interfeysy.md:137 klas:E -->
-### T-E-149 · proza · рядок 137
+<!-- fc id:T-E-152 sha:abdd0a3f src:dodatky/e-interfeysy.md:138 klas:E -->
+### T-E-152 · proza · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -2470,8 +2536,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-150 sha:b357ccb9 src:dodatky/e-interfeysy.md:140 klas:E -->
-### T-E-150 · proza · рядок 140
+<!-- fc id:T-E-153 sha:b357ccb9 src:dodatky/e-interfeysy.md:141 klas:E -->
+### T-E-153 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -2483,8 +2549,8 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-151 sha:f5b849f3 src:dodatky/e-interfeysy.md:144 klas:F -->
-### T-E-151 · proza · рядок 144
+<!-- fc id:T-E-154 sha:f5b849f3 src:dodatky/e-interfeysy.md:145 klas:F -->
+### T-E-154 · proza · рядок 145
 
 **Книга каже, дослівно:**
 

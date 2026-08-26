@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/31-freertos.md`
 
-Одиниць твердження: **93**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **99**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -1085,8 +1085,137 @@
 
 ---
 
-<!-- fc id:T-31-066 sha:87a953a3 src:manual/31-freertos.md:200 klas:K -->
-### T-31-066 · kod · рядок 200
+<!-- fc id:T-31-066 sha:c54690cc src:manual/31-freertos.md:199 klas:A -->
+### T-31-066 · proza · рядок 199
+
+**Книга каже, дослівно:**
+
+> **Один виняток із заборони на лог, і він потрібен саме тоді, коли все інше не працює.** ESP-IDF має набір `ESP_DRAM_LOGE`, `ESP_DRAM_LOGW` і далі за рівнями.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h
+- **Дослівно з джерела:**
+  > /**
+  >  * @brief Macros to output logs when the cache is disabled.
+  >  * Unlike normal logging macros, it's possible to use this macro when
+  >  * interrupts are disabled or inside an ISR.
+  >  * Placing log strings in DRAM reduces available DRAM, so only use
+  >  * when absolutely essential.
+  >  *
+  >  * Usage: `ESP_DRAM_LOGE(DRAM_STR("my_tag"), "format", ...)
+  >  */
+  > #define ESP_DRAM_LOGE(tag, format, ...) ...
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 11), 2026-08-26
+- **Нотатка:** Книга давала категоричне «в ISR не можна `printf` і `ESP_LOGx`». Правило правильне, але ESP-IDF возить із собою саме той інструмент, який потрібен, коли правило заважає, — і книга про нього мовчала.
+Це четвертий випадок за два дні, коли категоричність книги приховувала виняток, названий у джерелі в тому самому абзаці. Перші три: `GPIO6–11` без `16–17`, «шість пінів, крапка», «не бачить м'які поверхні» замість вимоги площі.
+Ціна винятку взята з джерела дослівно й у книгу перенесена: рядки в DRAM, DRAM мало, «лише коли без цього ніяк».
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-31-067 sha:440211f9 src:manual/31-freertos.md:199 klas:A -->
+### T-31-067 · proza · рядок 199
+
+**Книга каже, дослівно:**
+
+> Заголовок `esp_log.h` каже про них дослівно: «на відміну від звичайних макросів логування, цей можна вживати, коли переривання вимкнені або всередині ISR».
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h
+- **Дослівно з джерела:**
+  > /**
+  >  * @brief Macros to output logs when the cache is disabled.
+  >  * Unlike normal logging macros, it's possible to use this macro when
+  >  * interrupts are disabled or inside an ISR.
+  >  * Placing log strings in DRAM reduces available DRAM, so only use
+  >  * when absolutely essential.
+  >  *
+  >  * Usage: `ESP_DRAM_LOGE(DRAM_STR("my_tag"), "format", ...)
+  >  */
+  > #define ESP_DRAM_LOGE(tag, format, ...) ...
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 11), 2026-08-26
+- **Нотатка:** Книга давала категоричне «в ISR не можна `printf` і `ESP_LOGx`». Правило правильне, але ESP-IDF возить із собою саме той інструмент, який потрібен, коли правило заважає, — і книга про нього мовчала.
+Це четвертий випадок за два дні, коли категоричність книги приховувала виняток, названий у джерелі в тому самому абзаці. Перші три: `GPIO6–11` без `16–17`, «шість пінів, крапка», «не бачить м'які поверхні» замість вимоги площі.
+Ціна винятку взята з джерела дослівно й у книгу перенесена: рядки в DRAM, DRAM мало, «лише коли без цього ніяк».
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-31-068 sha:1256a3f9 src:manual/31-freertos.md:205 klas:E -->
+### T-31-068 · proza · рядок 205
+
+**Книга каже, дослівно:**
+
+> Ціна названа там само: рядки лягають у DRAM, а її мало, — тож використовувати «лише коли без цього ніяк».
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-31-069 sha:6027e481 src:manual/31-freertos.md:205 klas:A -->
+### T-31-069 · proza · рядок 205
+
+**Книга каже, дослівно:**
+
+> Тег теж мусить бути в DRAM: `ESP_DRAM_LOGE(DRAM_STR("mij_teg"), "...")`.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h
+- **Дослівно з джерела:**
+  > /**
+  >  * @brief Macros to output logs when the cache is disabled.
+  >  * Unlike normal logging macros, it's possible to use this macro when
+  >  * interrupts are disabled or inside an ISR.
+  >  * Placing log strings in DRAM reduces available DRAM, so only use
+  >  * when absolutely essential.
+  >  *
+  >  * Usage: `ESP_DRAM_LOGE(DRAM_STR("my_tag"), "format", ...)
+  >  */
+  > #define ESP_DRAM_LOGE(tag, format, ...) ...
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 11), 2026-08-26
+- **Нотатка:** Книга давала категоричне «в ISR не можна `printf` і `ESP_LOGx`». Правило правильне, але ESP-IDF возить із собою саме той інструмент, який потрібен, коли правило заважає, — і книга про нього мовчала.
+Це четвертий випадок за два дні, коли категоричність книги приховувала виняток, названий у джерелі в тому самому абзаці. Перші три: `GPIO6–11` без `16–17`, «шість пінів, крапка», «не бачить м'які поверхні» замість вимоги площі.
+Ціна винятку взята з джерела дослівно й у книгу перенесена: рядки в DRAM, DRAM мало, «лише коли без цього ніяк».
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-31-070 sha:cee74a8d src:manual/31-freertos.md:209 klas:E -->
+### T-31-070 · proza · рядок 209
+
+**Книга каже, дослівно:**
+
+> Це інструмент для відлагодження, а не для роботи.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-31-071 sha:f84ae609 src:manual/31-freertos.md:209 klas:E -->
+### T-31-071 · proza · рядок 209
+
+**Книга каже, дослівно:**
+
+> Але коли ISR поводиться незрозуміло, а покласти в чергу нема чого, він єдиний.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-31-072 sha:87a953a3 src:manual/31-freertos.md:215 klas:K -->
+### T-31-072 · kod · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -1115,8 +1244,8 @@
 
 ---
 
-<!-- fc id:T-31-067 sha:9cd7f34f src:manual/31-freertos.md:204 klas:A -->
-### T-31-067 · kod-ryadok · рядок 204
+<!-- fc id:T-31-073 sha:9cd7f34f src:manual/31-freertos.md:219 klas:A -->
+### T-31-073 · kod-ryadok · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1138,8 +1267,8 @@
 
 ---
 
-<!-- fc id:T-31-068 sha:ac8daf50 src:manual/31-freertos.md:205 klas:A -->
-### T-31-068 · kod-ryadok · рядок 205
+<!-- fc id:T-31-074 sha:ac8daf50 src:manual/31-freertos.md:220 klas:A -->
+### T-31-074 · kod-ryadok · рядок 220
 
 **Книга каже, дослівно:**
 
@@ -1161,8 +1290,8 @@
 
 ---
 
-<!-- fc id:T-31-069 sha:48075782 src:manual/31-freertos.md:209 klas:A -->
-### T-31-069 · proza · рядок 209
+<!-- fc id:T-31-075 sha:48075782 src:manual/31-freertos.md:224 klas:A -->
+### T-31-075 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1184,8 +1313,8 @@
 
 ---
 
-<!-- fc id:T-31-070 sha:1b28ad63 src:manual/31-freertos.md:209 klas:F -->
-### T-31-070 · proza · рядок 209
+<!-- fc id:T-31-076 sha:1b28ad63 src:manual/31-freertos.md:224 klas:F -->
+### T-31-076 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1197,8 +1326,8 @@
 
 ---
 
-<!-- fc id:T-31-071 sha:11cc8e46 src:manual/31-freertos.md:209 klas:A -->
-### T-31-071 · proza · рядок 209
+<!-- fc id:T-31-077 sha:11cc8e46 src:manual/31-freertos.md:224 klas:A -->
+### T-31-077 · proza · рядок 224
 
 **Книга каже, дослівно:**
 
@@ -1220,8 +1349,8 @@
 
 ---
 
-<!-- fc id:T-31-072 sha:aa96715a src:manual/31-freertos.md:215 klas:E -->
-### T-31-072 · proza · рядок 215
+<!-- fc id:T-31-078 sha:aa96715a src:manual/31-freertos.md:230 klas:E -->
+### T-31-078 · proza · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -1233,8 +1362,8 @@
 
 ---
 
-<!-- fc id:T-31-073 sha:77b3e0ed src:manual/31-freertos.md:215 klas:E -->
-### T-31-073 · proza · рядок 215
+<!-- fc id:T-31-079 sha:77b3e0ed src:manual/31-freertos.md:230 klas:E -->
+### T-31-079 · proza · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -1246,8 +1375,8 @@
 
 ---
 
-<!-- fc id:T-31-074 sha:2dd64dec src:manual/31-freertos.md:219 klas:A -->
-### T-31-074 · proza · рядок 219
+<!-- fc id:T-31-080 sha:2dd64dec src:manual/31-freertos.md:234 klas:A -->
+### T-31-080 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -1276,8 +1405,8 @@
 
 ---
 
-<!-- fc id:T-31-075 sha:cb41e800 src:manual/31-freertos.md:219 klas:F -->
-### T-31-075 · proza · рядок 219
+<!-- fc id:T-31-081 sha:cb41e800 src:manual/31-freertos.md:234 klas:F -->
+### T-31-081 · proza · рядок 234
 
 **Книга каже, дослівно:**
 
@@ -1289,8 +1418,8 @@
 
 ---
 
-<!-- fc id:T-31-076 sha:1bed70d5 src:manual/31-freertos.md:225 klas:E -->
-### T-31-076 · proza · рядок 225
+<!-- fc id:T-31-082 sha:1bed70d5 src:manual/31-freertos.md:240 klas:E -->
+### T-31-082 · proza · рядок 240
 
 **Книга каже, дослівно:**
 
@@ -1302,8 +1431,8 @@
 
 ---
 
-<!-- fc id:T-31-077 sha:1da805d2 src:manual/31-freertos.md:227 klas:K -->
-### T-31-077 · kod · рядок 227
+<!-- fc id:T-31-083 sha:1da805d2 src:manual/31-freertos.md:242 klas:K -->
+### T-31-083 · kod · рядок 242
 
 **Книга каже, дослівно:**
 
@@ -1329,8 +1458,8 @@
 
 ---
 
-<!-- fc id:T-31-078 sha:13c28b77 src:manual/31-freertos.md:230 klas:F -->
-### T-31-078 · kod-ryadok · рядок 230
+<!-- fc id:T-31-084 sha:13c28b77 src:manual/31-freertos.md:245 klas:F -->
+### T-31-084 · kod-ryadok · рядок 245
 
 **Книга каже, дослівно:**
 
@@ -1342,8 +1471,8 @@
 
 ---
 
-<!-- fc id:T-31-079 sha:2bdfbaae src:manual/31-freertos.md:233 klas:E -->
-### T-31-079 · proza · рядок 233
+<!-- fc id:T-31-085 sha:2bdfbaae src:manual/31-freertos.md:248 klas:E -->
+### T-31-085 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1355,8 +1484,8 @@
 
 ---
 
-<!-- fc id:T-31-080 sha:163f52fe src:manual/31-freertos.md:233 klas:E -->
-### T-31-080 · proza · рядок 233
+<!-- fc id:T-31-086 sha:163f52fe src:manual/31-freertos.md:248 klas:E -->
+### T-31-086 · proza · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -1368,8 +1497,8 @@
 
 ---
 
-<!-- fc id:T-31-081 sha:0573d901 src:manual/31-freertos.md:239 klas:E -->
-### T-31-081 · proza · рядок 239
+<!-- fc id:T-31-087 sha:0573d901 src:manual/31-freertos.md:254 klas:E -->
+### T-31-087 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -1381,8 +1510,8 @@
 
 ---
 
-<!-- fc id:T-31-082 sha:5adc071c src:manual/31-freertos.md:241 klas:E -->
-### T-31-082 · proza · рядок 241
+<!-- fc id:T-31-088 sha:5adc071c src:manual/31-freertos.md:256 klas:E -->
+### T-31-088 · proza · рядок 256
 
 **Книга каже, дослівно:**
 
@@ -1394,8 +1523,8 @@
 
 ---
 
-<!-- fc id:T-31-083 sha:3635e455 src:manual/31-freertos.md:243 klas:E -->
-### T-31-083 · proza · рядок 243
+<!-- fc id:T-31-089 sha:3635e455 src:manual/31-freertos.md:258 klas:E -->
+### T-31-089 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -1407,8 +1536,8 @@
 
 ---
 
-<!-- fc id:T-31-084 sha:71179c5d src:manual/31-freertos.md:246 klas:E -->
-### T-31-084 · proza · рядок 246
+<!-- fc id:T-31-090 sha:71179c5d src:manual/31-freertos.md:261 klas:E -->
+### T-31-090 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -1420,8 +1549,8 @@
 
 ---
 
-<!-- fc id:T-31-085 sha:b83b5cb4 src:manual/31-freertos.md:248 klas:E -->
-### T-31-085 · proza · рядок 248
+<!-- fc id:T-31-091 sha:b83b5cb4 src:manual/31-freertos.md:263 klas:E -->
+### T-31-091 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -1433,8 +1562,8 @@
 
 ---
 
-<!-- fc id:T-31-086 sha:8922c4eb src:manual/31-freertos.md:250 klas:E -->
-### T-31-086 · proza · рядок 250
+<!-- fc id:T-31-092 sha:8922c4eb src:manual/31-freertos.md:265 klas:E -->
+### T-31-092 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -1446,8 +1575,8 @@
 
 ---
 
-<!-- fc id:T-31-087 sha:f02a263f src:manual/31-freertos.md:253 klas:A -->
-### T-31-087 · proza · рядок 253
+<!-- fc id:T-31-093 sha:f02a263f src:manual/31-freertos.md:268 klas:A -->
+### T-31-093 · proza · рядок 268
 
 **Книга каже, дослівно:**
 
@@ -1469,8 +1598,8 @@
 
 ---
 
-<!-- fc id:T-31-088 sha:272c94c9 src:manual/31-freertos.md:258 klas:E -->
-### T-31-088 · proza · рядок 258
+<!-- fc id:T-31-094 sha:272c94c9 src:manual/31-freertos.md:273 klas:E -->
+### T-31-094 · proza · рядок 273
 
 **Книга каже, дослівно:**
 
@@ -1482,8 +1611,8 @@
 
 ---
 
-<!-- fc id:T-31-089 sha:caf51e23 src:manual/31-freertos.md:260 klas:E -->
-### T-31-089 · proza · рядок 260
+<!-- fc id:T-31-095 sha:caf51e23 src:manual/31-freertos.md:275 klas:E -->
+### T-31-095 · proza · рядок 275
 
 **Книга каже, дослівно:**
 
@@ -1495,8 +1624,8 @@
 
 ---
 
-<!-- fc id:T-31-090 sha:845c22bb src:manual/31-freertos.md:262 klas:E -->
-### T-31-090 · proza · рядок 262
+<!-- fc id:T-31-096 sha:845c22bb src:manual/31-freertos.md:277 klas:E -->
+### T-31-096 · proza · рядок 277
 
 **Книга каже, дослівно:**
 
@@ -1508,8 +1637,8 @@
 
 ---
 
-<!-- fc id:T-31-091 sha:058ed39f src:manual/31-freertos.md:264 klas:E -->
-### T-31-091 · proza · рядок 264
+<!-- fc id:T-31-097 sha:058ed39f src:manual/31-freertos.md:279 klas:E -->
+### T-31-097 · proza · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -1521,8 +1650,8 @@
 
 ---
 
-<!-- fc id:T-31-092 sha:72e699d5 src:manual/31-freertos.md:264 klas:E -->
-### T-31-092 · proza · рядок 264
+<!-- fc id:T-31-098 sha:72e699d5 src:manual/31-freertos.md:279 klas:E -->
+### T-31-098 · proza · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -1534,8 +1663,8 @@
 
 ---
 
-<!-- fc id:T-31-093 sha:5878c064 src:manual/31-freertos.md:266 klas:E -->
-### T-31-093 · proza · рядок 266
+<!-- fc id:T-31-099 sha:5878c064 src:manual/31-freertos.md:281 klas:E -->
+### T-31-099 · proza · рядок 281
 
 **Книга каже, дослівно:**
 

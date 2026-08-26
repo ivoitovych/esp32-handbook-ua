@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/d-panik.md`
 
-Одиниць твердження: **192**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **194**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -2017,12 +2017,39 @@
 
 ---
 
-<!-- fc id:T-D-101 sha:b79ca497 src:dodatky/d-panik.md:126 klas:F -->
+<!-- fc id:T-D-101 sha:cb8c16e6 src:dodatky/d-panik.md:126 klas:A -->
 ### T-D-101 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
-> `esptool` друкує режим словами — `SPI_FAST_FLASH_BOOT`, `DOWNLOAD_BOOT(…)` — і це розшифровка від того, хто має право її робити.
+> Режим словами — `SPI_FAST_FLASH_BOOT`, `DOWNLOAD_BOOT(…)` — друкує сам ROM, і це розшифровка від того, хто має право її робити.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{cmds,loader,__init__}.py
+- **Дослівно з джерела:**
+  > Пошук рядків `SPI_FAST_FLASH_BOOT` і `DOWNLOAD_BOOT` у трьох файлах,
+  > що формують увесь вивід esptool:
+  > 
+  >     cmds.py       0 збігів
+  >     loader.py     0 збігів
+  >     __init__.py   0 збігів
+- **Спосіб і дата:** curl raw.githubusercontent + grep (перевірено М1 після зауваження агента шматка 9), 2026-08-26
+- **Нотатка:** **Знову власна помилка, і знову в додатку D.** Я написав «`esptool` друкує режим словами» у блоці, доданому проходом 36 — тобто дві правки поспіль в одному абзаці, обидві хибні в приписуванні.
+Рядок `boot:0x13 (SPI_FAST_FLASH_BOOT)` друкує ROM у boot-лог по UART. Книга наводить його прикладом за десять рядків нижче, у підрозділі «Типовий boot-лог» — тобто джерело правильної відповіді стояло на тій самій сторінці.
+Доказ негативний, і це рідкість у реєстрі: він показує **відсутність** рядка в усьому виводі інструмента. Такий доказ слабший за цитату й залежить від того, що переглянуто всі три файли, які щось друкують. Записую з цим застереженням явно.
+Урок той самий, що в проходах 26 і 35: помилка не в числі, а в тому, **хто це каже**. Тричі поспіль.
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-D-102 sha:8e5c7618 src:dodatky/d-panik.md:130 klas:F -->
+### T-D-102 · proza · рядок 130
+
+**Книга каже, дослівно:**
+
+> Друкує він її в **boot-лог по UART** (приклад одразу нижче), тобто видно її в моніторі: `idf.py monitor`, `screen`, `picocom`.
 
 **Доказ**
 
@@ -2030,8 +2057,35 @@
 
 ---
 
-<!-- fc id:T-D-102 sha:d39312ec src:dodatky/d-panik.md:133 klas:K -->
-### T-D-102 · kod · рядок 133
+<!-- fc id:T-D-103 sha:478f40ad src:dodatky/d-panik.md:130 klas:A -->
+### T-D-103 · proza · рядок 130
+
+**Книга каже, дослівно:**
+
+> У виводі `esptool` цього рядка немає — esptool скидає чип і виходить, лог після скидання читає вже монітор.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{cmds,loader,__init__}.py
+- **Дослівно з джерела:**
+  > Пошук рядків `SPI_FAST_FLASH_BOOT` і `DOWNLOAD_BOOT` у трьох файлах,
+  > що формують увесь вивід esptool:
+  > 
+  >     cmds.py       0 збігів
+  >     loader.py     0 збігів
+  >     __init__.py   0 збігів
+- **Спосіб і дата:** curl raw.githubusercontent + grep (перевірено М1 після зауваження агента шматка 9), 2026-08-26
+- **Нотатка:** **Знову власна помилка, і знову в додатку D.** Я написав «`esptool` друкує режим словами» у блоці, доданому проходом 36 — тобто дві правки поспіль в одному абзаці, обидві хибні в приписуванні.
+Рядок `boot:0x13 (SPI_FAST_FLASH_BOOT)` друкує ROM у boot-лог по UART. Книга наводить його прикладом за десять рядків нижче, у підрозділі «Типовий boot-лог» — тобто джерело правильної відповіді стояло на тій самій сторінці.
+Доказ негативний, і це рідкість у реєстрі: він показує **відсутність** рядка в усьому виводі інструмента. Такий доказ слабший за цитату й залежить від того, що переглянуто всі три файли, які щось друкують. Записую з цим застереженням явно.
+Урок той самий, що в проходах 26 і 35: помилка не в числі, а в тому, **хто це каже**. Тричі поспіль.
+- **Прохід:** pass-38-pul-shmatky-9-11
+
+---
+
+<!-- fc id:T-D-104 sha:d39312ec src:dodatky/d-panik.md:138 klas:K -->
+### T-D-104 · kod · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -2080,8 +2134,8 @@
 
 ---
 
-<!-- fc id:T-D-103 sha:490ee98b src:dodatky/d-panik.md:134 klas:A -->
-### T-D-103 · kod-ryadok · рядок 134
+<!-- fc id:T-D-105 sha:490ee98b src:dodatky/d-panik.md:139 klas:A -->
+### T-D-105 · kod-ryadok · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -2116,8 +2170,8 @@
 
 ---
 
-<!-- fc id:T-D-104 sha:825633b5 src:dodatky/d-panik.md:149 klas:F -->
-### T-D-104 · proza · рядок 149
+<!-- fc id:T-D-106 sha:825633b5 src:dodatky/d-panik.md:154 klas:F -->
+### T-D-106 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -2129,8 +2183,8 @@
 
 ---
 
-<!-- fc id:T-D-105 sha:0ebdcddf src:dodatky/d-panik.md:153 klas:E -->
-### T-D-105 · proza · рядок 153
+<!-- fc id:T-D-107 sha:0ebdcddf src:dodatky/d-panik.md:158 klas:E -->
+### T-D-107 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -2142,8 +2196,8 @@
 
 ---
 
-<!-- fc id:T-D-106 sha:3d92627f src:dodatky/d-panik.md:153 klas:E -->
-### T-D-106 · proza · рядок 153
+<!-- fc id:T-D-108 sha:3d92627f src:dodatky/d-panik.md:158 klas:E -->
+### T-D-108 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -2155,8 +2209,8 @@
 
 ---
 
-<!-- fc id:T-D-107 sha:0590c64d src:dodatky/d-panik.md:158 klas:F -->
-### T-D-107 · proza · рядок 158
+<!-- fc id:T-D-109 sha:0590c64d src:dodatky/d-panik.md:163 klas:F -->
+### T-D-109 · proza · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -2168,8 +2222,8 @@
 
 ---
 
-<!-- fc id:T-D-108 sha:fbdc8285 src:dodatky/d-panik.md:160 klas:F -->
-### T-D-108 · tablycya-shapka · рядок 160
+<!-- fc id:T-D-110 sha:fbdc8285 src:dodatky/d-panik.md:165 klas:F -->
+### T-D-110 · tablycya-shapka · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -2181,8 +2235,8 @@
 
 ---
 
-<!-- fc id:T-D-109 sha:a63a39c2 src:dodatky/d-panik.md:161 klas:A -->
-### T-D-109 · komirka · рядок 161
+<!-- fc id:T-D-111 sha:a63a39c2 src:dodatky/d-panik.md:166 klas:A -->
+### T-D-111 · komirka · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -2207,8 +2261,8 @@
 
 ---
 
-<!-- fc id:T-D-110 sha:ad4c17ec src:dodatky/d-panik.md:161 klas:A -->
-### T-D-110 · komirka · рядок 161
+<!-- fc id:T-D-112 sha:ad4c17ec src:dodatky/d-panik.md:166 klas:A -->
+### T-D-112 · komirka · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -2233,8 +2287,8 @@
 
 ---
 
-<!-- fc id:T-D-111 sha:0164e3bb src:dodatky/d-panik.md:162 klas:A -->
-### T-D-111 · komirka · рядок 162
+<!-- fc id:T-D-113 sha:0164e3bb src:dodatky/d-panik.md:167 klas:A -->
+### T-D-113 · komirka · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -2259,8 +2313,8 @@
 
 ---
 
-<!-- fc id:T-D-112 sha:2d07f5b7 src:dodatky/d-panik.md:162 klas:A -->
-### T-D-112 · komirka · рядок 162
+<!-- fc id:T-D-114 sha:2d07f5b7 src:dodatky/d-panik.md:167 klas:A -->
+### T-D-114 · komirka · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -2285,8 +2339,8 @@
 
 ---
 
-<!-- fc id:T-D-113 sha:2bc6cd2b src:dodatky/d-panik.md:163 klas:A -->
-### T-D-113 · komirka · рядок 163
+<!-- fc id:T-D-115 sha:2bc6cd2b src:dodatky/d-panik.md:168 klas:A -->
+### T-D-115 · komirka · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -2311,8 +2365,8 @@
 
 ---
 
-<!-- fc id:T-D-114 sha:b805a263 src:dodatky/d-panik.md:163 klas:A -->
-### T-D-114 · komirka · рядок 163
+<!-- fc id:T-D-116 sha:b805a263 src:dodatky/d-panik.md:168 klas:A -->
+### T-D-116 · komirka · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -2337,8 +2391,8 @@
 
 ---
 
-<!-- fc id:T-D-115 sha:47044db6 src:dodatky/d-panik.md:164 klas:A -->
-### T-D-115 · komirka · рядок 164
+<!-- fc id:T-D-117 sha:47044db6 src:dodatky/d-panik.md:169 klas:A -->
+### T-D-117 · komirka · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -2363,8 +2417,8 @@
 
 ---
 
-<!-- fc id:T-D-116 sha:6a21db9c src:dodatky/d-panik.md:164 klas:A -->
-### T-D-116 · komirka · рядок 164
+<!-- fc id:T-D-118 sha:6a21db9c src:dodatky/d-panik.md:169 klas:A -->
+### T-D-118 · komirka · рядок 169
 
 **Книга каже, дослівно:**
 
@@ -2389,8 +2443,8 @@
 
 ---
 
-<!-- fc id:T-D-117 sha:168149c9 src:dodatky/d-panik.md:165 klas:A -->
-### T-D-117 · komirka · рядок 165
+<!-- fc id:T-D-119 sha:168149c9 src:dodatky/d-panik.md:170 klas:A -->
+### T-D-119 · komirka · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -2415,8 +2469,8 @@
 
 ---
 
-<!-- fc id:T-D-118 sha:e514eca1 src:dodatky/d-panik.md:165 klas:A -->
-### T-D-118 · komirka · рядок 165
+<!-- fc id:T-D-120 sha:e514eca1 src:dodatky/d-panik.md:170 klas:A -->
+### T-D-120 · komirka · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -2441,8 +2495,8 @@
 
 ---
 
-<!-- fc id:T-D-119 sha:2f309750 src:dodatky/d-panik.md:166 klas:A -->
-### T-D-119 · komirka · рядок 166
+<!-- fc id:T-D-121 sha:2f309750 src:dodatky/d-panik.md:171 klas:A -->
+### T-D-121 · komirka · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -2467,8 +2521,8 @@
 
 ---
 
-<!-- fc id:T-D-120 sha:e82565ff src:dodatky/d-panik.md:166 klas:A -->
-### T-D-120 · komirka · рядок 166
+<!-- fc id:T-D-122 sha:e82565ff src:dodatky/d-panik.md:171 klas:A -->
+### T-D-122 · komirka · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -2493,8 +2547,8 @@
 
 ---
 
-<!-- fc id:T-D-121 sha:c946c98e src:dodatky/d-panik.md:167 klas:A -->
-### T-D-121 · komirka · рядок 167
+<!-- fc id:T-D-123 sha:c946c98e src:dodatky/d-panik.md:172 klas:A -->
+### T-D-123 · komirka · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -2517,8 +2571,8 @@
 
 ---
 
-<!-- fc id:T-D-122 sha:4adb2806 src:dodatky/d-panik.md:167 klas:A -->
-### T-D-122 · komirka · рядок 167
+<!-- fc id:T-D-124 sha:4adb2806 src:dodatky/d-panik.md:172 klas:A -->
+### T-D-124 · komirka · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -2541,8 +2595,8 @@
 
 ---
 
-<!-- fc id:T-D-123 sha:45fbc80e src:dodatky/d-panik.md:168 klas:A -->
-### T-D-123 · komirka · рядок 168
+<!-- fc id:T-D-125 sha:45fbc80e src:dodatky/d-panik.md:173 klas:A -->
+### T-D-125 · komirka · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -2565,8 +2619,8 @@
 
 ---
 
-<!-- fc id:T-D-124 sha:f25a0f20 src:dodatky/d-panik.md:168 klas:A -->
-### T-D-124 · komirka · рядок 168
+<!-- fc id:T-D-126 sha:f25a0f20 src:dodatky/d-panik.md:173 klas:A -->
+### T-D-126 · komirka · рядок 173
 
 **Книга каже, дослівно:**
 
@@ -2589,8 +2643,8 @@
 
 ---
 
-<!-- fc id:T-D-125 sha:930379a1 src:dodatky/d-panik.md:172 klas:E -->
-### T-D-125 · proza · рядок 172
+<!-- fc id:T-D-127 sha:930379a1 src:dodatky/d-panik.md:177 klas:E -->
+### T-D-127 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -2602,8 +2656,8 @@
 
 ---
 
-<!-- fc id:T-D-126 sha:6a177d47 src:dodatky/d-panik.md:174 klas:A -->
-### T-D-126 · proza · рядок 174
+<!-- fc id:T-D-128 sha:6a177d47 src:dodatky/d-panik.md:179 klas:A -->
+### T-D-128 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -2626,8 +2680,8 @@
 
 ---
 
-<!-- fc id:T-D-127 sha:3a4f06b3 src:dodatky/d-panik.md:177 klas:E -->
-### T-D-127 · proza · рядок 177
+<!-- fc id:T-D-129 sha:3a4f06b3 src:dodatky/d-panik.md:182 klas:E -->
+### T-D-129 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -2639,8 +2693,8 @@
 
 ---
 
-<!-- fc id:T-D-128 sha:898ac6ac src:dodatky/d-panik.md:177 klas:F -->
-### T-D-128 · proza · рядок 177
+<!-- fc id:T-D-130 sha:898ac6ac src:dodatky/d-panik.md:182 klas:F -->
+### T-D-130 · proza · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -2652,8 +2706,8 @@
 
 ---
 
-<!-- fc id:T-D-129 sha:ea9dc162 src:dodatky/d-panik.md:184 klas:F -->
-### T-D-129 · tablycya-shapka · рядок 184
+<!-- fc id:T-D-131 sha:ea9dc162 src:dodatky/d-panik.md:189 klas:F -->
+### T-D-131 · tablycya-shapka · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -2665,8 +2719,8 @@
 
 ---
 
-<!-- fc id:T-D-130 sha:3f7f05f2 src:dodatky/d-panik.md:185 klas:A -->
-### T-D-130 · komirka · рядок 185
+<!-- fc id:T-D-132 sha:3f7f05f2 src:dodatky/d-panik.md:190 klas:A -->
+### T-D-132 · komirka · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -2708,8 +2762,8 @@
 
 ---
 
-<!-- fc id:T-D-131 sha:e1369196 src:dodatky/d-panik.md:185 klas:A -->
-### T-D-131 · komirka · рядок 185
+<!-- fc id:T-D-133 sha:e1369196 src:dodatky/d-panik.md:190 klas:A -->
+### T-D-133 · komirka · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -2751,8 +2805,8 @@
 
 ---
 
-<!-- fc id:T-D-132 sha:8bc4f39c src:dodatky/d-panik.md:186 klas:A -->
-### T-D-132 · komirka · рядок 186
+<!-- fc id:T-D-134 sha:8bc4f39c src:dodatky/d-panik.md:191 klas:A -->
+### T-D-134 · komirka · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -2794,8 +2848,8 @@
 
 ---
 
-<!-- fc id:T-D-133 sha:28cc86f2 src:dodatky/d-panik.md:186 klas:A -->
-### T-D-133 · komirka · рядок 186
+<!-- fc id:T-D-135 sha:28cc86f2 src:dodatky/d-panik.md:191 klas:A -->
+### T-D-135 · komirka · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -2837,8 +2891,8 @@
 
 ---
 
-<!-- fc id:T-D-134 sha:65e5b66a src:dodatky/d-panik.md:187 klas:A -->
-### T-D-134 · komirka · рядок 187
+<!-- fc id:T-D-136 sha:65e5b66a src:dodatky/d-panik.md:192 klas:A -->
+### T-D-136 · komirka · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -2880,8 +2934,8 @@
 
 ---
 
-<!-- fc id:T-D-135 sha:89d4b0ed src:dodatky/d-panik.md:187 klas:A -->
-### T-D-135 · komirka · рядок 187
+<!-- fc id:T-D-137 sha:89d4b0ed src:dodatky/d-panik.md:192 klas:A -->
+### T-D-137 · komirka · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -2923,8 +2977,8 @@
 
 ---
 
-<!-- fc id:T-D-136 sha:0e5b84a2 src:dodatky/d-panik.md:188 klas:A -->
-### T-D-136 · komirka · рядок 188
+<!-- fc id:T-D-138 sha:0e5b84a2 src:dodatky/d-panik.md:193 klas:A -->
+### T-D-138 · komirka · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -2966,8 +3020,8 @@
 
 ---
 
-<!-- fc id:T-D-137 sha:b8918b59 src:dodatky/d-panik.md:188 klas:A -->
-### T-D-137 · komirka · рядок 188
+<!-- fc id:T-D-139 sha:b8918b59 src:dodatky/d-panik.md:193 klas:A -->
+### T-D-139 · komirka · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -3009,8 +3063,8 @@
 
 ---
 
-<!-- fc id:T-D-138 sha:c4d149ff src:dodatky/d-panik.md:189 klas:A -->
-### T-D-138 · komirka · рядок 189
+<!-- fc id:T-D-140 sha:c4d149ff src:dodatky/d-panik.md:194 klas:A -->
+### T-D-140 · komirka · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -3052,8 +3106,8 @@
 
 ---
 
-<!-- fc id:T-D-139 sha:46508737 src:dodatky/d-panik.md:189 klas:A -->
-### T-D-139 · komirka · рядок 189
+<!-- fc id:T-D-141 sha:46508737 src:dodatky/d-panik.md:194 klas:A -->
+### T-D-141 · komirka · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -3095,8 +3149,8 @@
 
 ---
 
-<!-- fc id:T-D-140 sha:d96111a7 src:dodatky/d-panik.md:190 klas:A -->
-### T-D-140 · komirka · рядок 190
+<!-- fc id:T-D-142 sha:d96111a7 src:dodatky/d-panik.md:195 klas:A -->
+### T-D-142 · komirka · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -3138,8 +3192,8 @@
 
 ---
 
-<!-- fc id:T-D-141 sha:439a9b98 src:dodatky/d-panik.md:190 klas:A -->
-### T-D-141 · komirka · рядок 190
+<!-- fc id:T-D-143 sha:439a9b98 src:dodatky/d-panik.md:195 klas:A -->
+### T-D-143 · komirka · рядок 195
 
 **Книга каже, дослівно:**
 
@@ -3181,8 +3235,8 @@
 
 ---
 
-<!-- fc id:T-D-142 sha:7c359228 src:dodatky/d-panik.md:191 klas:A -->
-### T-D-142 · komirka · рядок 191
+<!-- fc id:T-D-144 sha:7c359228 src:dodatky/d-panik.md:196 klas:A -->
+### T-D-144 · komirka · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -3211,8 +3265,8 @@
 
 ---
 
-<!-- fc id:T-D-143 sha:4c606b3e src:dodatky/d-panik.md:191 klas:A -->
-### T-D-143 · komirka · рядок 191
+<!-- fc id:T-D-145 sha:4c606b3e src:dodatky/d-panik.md:196 klas:A -->
+### T-D-145 · komirka · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -3241,8 +3295,8 @@
 
 ---
 
-<!-- fc id:T-D-144 sha:8712f714 src:dodatky/d-panik.md:192 klas:A -->
-### T-D-144 · komirka · рядок 192
+<!-- fc id:T-D-146 sha:8712f714 src:dodatky/d-panik.md:197 klas:A -->
+### T-D-146 · komirka · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -3284,8 +3338,8 @@
 
 ---
 
-<!-- fc id:T-D-145 sha:4e40193e src:dodatky/d-panik.md:192 klas:A -->
-### T-D-145 · komirka · рядок 192
+<!-- fc id:T-D-147 sha:4e40193e src:dodatky/d-panik.md:197 klas:A -->
+### T-D-147 · komirka · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -3307,8 +3361,8 @@
 
 ---
 
-<!-- fc id:T-D-146 sha:a66ac160 src:dodatky/d-panik.md:197 klas:E -->
-### T-D-146 · tablycya · рядок 197
+<!-- fc id:T-D-148 sha:a66ac160 src:dodatky/d-panik.md:202 klas:E -->
+### T-D-148 · tablycya · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -3320,8 +3374,8 @@
 
 ---
 
-<!-- fc id:T-D-147 sha:9e0b8e4a src:dodatky/d-panik.md:199 klas:F -->
-### T-D-147 · tablycya · рядок 199
+<!-- fc id:T-D-149 sha:9e0b8e4a src:dodatky/d-panik.md:204 klas:F -->
+### T-D-149 · tablycya · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -3333,8 +3387,8 @@
 
 ---
 
-<!-- fc id:T-D-148 sha:f82d7189 src:dodatky/d-panik.md:200 klas:F -->
-### T-D-148 · tablycya · рядок 200
+<!-- fc id:T-D-150 sha:f82d7189 src:dodatky/d-panik.md:205 klas:F -->
+### T-D-150 · tablycya · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -3346,8 +3400,8 @@
 
 ---
 
-<!-- fc id:T-D-149 sha:74974165 src:dodatky/d-panik.md:201 klas:F -->
-### T-D-149 · tablycya · рядок 201
+<!-- fc id:T-D-151 sha:74974165 src:dodatky/d-panik.md:206 klas:F -->
+### T-D-151 · tablycya · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -3359,8 +3413,8 @@
 
 ---
 
-<!-- fc id:T-D-150 sha:b89ae2bf src:dodatky/d-panik.md:202 klas:A -->
-### T-D-150 · tablycya · рядок 202
+<!-- fc id:T-D-152 sha:b89ae2bf src:dodatky/d-panik.md:207 klas:A -->
+### T-D-152 · tablycya · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -3386,8 +3440,8 @@
 
 ---
 
-<!-- fc id:T-D-151 sha:6ef4b75c src:dodatky/d-panik.md:205 klas:F -->
-### T-D-151 · proza · рядок 205
+<!-- fc id:T-D-153 sha:6ef4b75c src:dodatky/d-panik.md:210 klas:F -->
+### T-D-153 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -3399,8 +3453,8 @@
 
 ---
 
-<!-- fc id:T-D-152 sha:f710df6f src:dodatky/d-panik.md:207 klas:C -->
-### T-D-152 · proza · рядок 207
+<!-- fc id:T-D-154 sha:f710df6f src:dodatky/d-panik.md:212 klas:C -->
+### T-D-154 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -3416,8 +3470,8 @@
 
 ---
 
-<!-- fc id:T-D-153 sha:4c0a3cc5 src:dodatky/d-panik.md:207 klas:A -->
-### T-D-153 · proza · рядок 207
+<!-- fc id:T-D-155 sha:4c0a3cc5 src:dodatky/d-panik.md:212 klas:A -->
+### T-D-155 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -3459,8 +3513,8 @@
 
 ---
 
-<!-- fc id:T-D-154 sha:7ff566f8 src:dodatky/d-panik.md:210 klas:E -->
-### T-D-154 · proza · рядок 210
+<!-- fc id:T-D-156 sha:7ff566f8 src:dodatky/d-panik.md:215 klas:E -->
+### T-D-156 · proza · рядок 215
 
 **Книга каже, дослівно:**
 
@@ -3472,8 +3526,8 @@
 
 ---
 
-<!-- fc id:T-D-155 sha:d09dfd9d src:dodatky/d-panik.md:216 klas:E -->
-### T-D-155 · proza · рядок 216
+<!-- fc id:T-D-157 sha:d09dfd9d src:dodatky/d-panik.md:221 klas:E -->
+### T-D-157 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -3485,8 +3539,8 @@
 
 ---
 
-<!-- fc id:T-D-156 sha:655ff0e7 src:dodatky/d-panik.md:218 klas:K -->
-### T-D-156 · kod · рядок 218
+<!-- fc id:T-D-158 sha:655ff0e7 src:dodatky/d-panik.md:223 klas:K -->
+### T-D-158 · kod · рядок 223
 
 **Книга каже, дослівно:**
 
@@ -3519,8 +3573,8 @@
 
 ---
 
-<!-- fc id:T-D-157 sha:a1afa6b3 src:dodatky/d-panik.md:221 klas:F -->
-### T-D-157 · kod-ryadok · рядок 221
+<!-- fc id:T-D-159 sha:a1afa6b3 src:dodatky/d-panik.md:226 klas:F -->
+### T-D-159 · kod-ryadok · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -3532,8 +3586,8 @@
 
 ---
 
-<!-- fc id:T-D-158 sha:b8253fd9 src:dodatky/d-panik.md:226 klas:A -->
-### T-D-158 · proza · рядок 226
+<!-- fc id:T-D-160 sha:b8253fd9 src:dodatky/d-panik.md:231 klas:A -->
+### T-D-160 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -3560,8 +3614,8 @@
 
 ---
 
-<!-- fc id:T-D-159 sha:d413fc69 src:dodatky/d-panik.md:226 klas:A -->
-### T-D-159 · proza · рядок 226
+<!-- fc id:T-D-161 sha:d413fc69 src:dodatky/d-panik.md:231 klas:A -->
+### T-D-161 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -3588,8 +3642,8 @@
 
 ---
 
-<!-- fc id:T-D-160 sha:15a9044c src:dodatky/d-panik.md:226 klas:A -->
-### T-D-160 · proza · рядок 226
+<!-- fc id:T-D-162 sha:15a9044c src:dodatky/d-panik.md:231 klas:A -->
+### T-D-162 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -3616,8 +3670,8 @@
 
 ---
 
-<!-- fc id:T-D-161 sha:12db62c5 src:dodatky/d-panik.md:231 klas:E -->
-### T-D-161 · proza · рядок 231
+<!-- fc id:T-D-163 sha:12db62c5 src:dodatky/d-panik.md:236 klas:E -->
+### T-D-163 · proza · рядок 236
 
 **Книга каже, дослівно:**
 
@@ -3629,8 +3683,8 @@
 
 ---
 
-<!-- fc id:T-D-162 sha:77e4f2d7 src:dodatky/d-panik.md:233 klas:E -->
-### T-D-162 · proza · рядок 233
+<!-- fc id:T-D-164 sha:77e4f2d7 src:dodatky/d-panik.md:238 klas:E -->
+### T-D-164 · proza · рядок 238
 
 **Книга каже, дослівно:**
 
@@ -3642,8 +3696,8 @@
 
 ---
 
-<!-- fc id:T-D-163 sha:113645cd src:dodatky/d-panik.md:235 klas:K -->
-### T-D-163 · kod · рядок 235
+<!-- fc id:T-D-165 sha:113645cd src:dodatky/d-panik.md:240 klas:K -->
+### T-D-165 · kod · рядок 240
 
 **Книга каже, дослівно:**
 
@@ -3687,8 +3741,8 @@
 
 ---
 
-<!-- fc id:T-D-164 sha:61ffbc10 src:dodatky/d-panik.md:239 klas:E -->
-### T-D-164 · proza · рядок 239
+<!-- fc id:T-D-166 sha:61ffbc10 src:dodatky/d-panik.md:244 klas:E -->
+### T-D-166 · proza · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -3700,8 +3754,8 @@
 
 ---
 
-<!-- fc id:T-D-165 sha:ef04690f src:dodatky/d-panik.md:244 klas:E -->
-### T-D-165 · tablycya · рядок 244
+<!-- fc id:T-D-167 sha:ef04690f src:dodatky/d-panik.md:249 klas:E -->
+### T-D-167 · tablycya · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -3713,8 +3767,8 @@
 
 ---
 
-<!-- fc id:T-D-166 sha:200e947a src:dodatky/d-panik.md:246 klas:A -->
-### T-D-166 · tablycya · рядок 246
+<!-- fc id:T-D-168 sha:200e947a src:dodatky/d-panik.md:251 klas:A -->
+### T-D-168 · tablycya · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -3738,8 +3792,8 @@
 
 ---
 
-<!-- fc id:T-D-167 sha:6747d938 src:dodatky/d-panik.md:247 klas:A -->
-### T-D-167 · tablycya · рядок 247
+<!-- fc id:T-D-169 sha:6747d938 src:dodatky/d-panik.md:252 klas:A -->
+### T-D-169 · tablycya · рядок 252
 
 **Книга каже, дослівно:**
 
@@ -3763,8 +3817,8 @@
 
 ---
 
-<!-- fc id:T-D-168 sha:0e926220 src:dodatky/d-panik.md:248 klas:A -->
-### T-D-168 · tablycya · рядок 248
+<!-- fc id:T-D-170 sha:0e926220 src:dodatky/d-panik.md:253 klas:A -->
+### T-D-170 · tablycya · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -3788,8 +3842,8 @@
 
 ---
 
-<!-- fc id:T-D-169 sha:c629c9be src:dodatky/d-panik.md:249 klas:A -->
-### T-D-169 · tablycya · рядок 249
+<!-- fc id:T-D-171 sha:c629c9be src:dodatky/d-panik.md:254 klas:A -->
+### T-D-171 · tablycya · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -3831,8 +3885,8 @@
 
 ---
 
-<!-- fc id:T-D-170 sha:69aa2c68 src:dodatky/d-panik.md:250 klas:F -->
-### T-D-170 · tablycya · рядок 250
+<!-- fc id:T-D-172 sha:69aa2c68 src:dodatky/d-panik.md:255 klas:F -->
+### T-D-172 · tablycya · рядок 255
 
 **Книга каже, дослівно:**
 
@@ -3844,8 +3898,8 @@
 
 ---
 
-<!-- fc id:T-D-171 sha:4dc00872 src:dodatky/d-panik.md:251 klas:A -->
-### T-D-171 · tablycya · рядок 251
+<!-- fc id:T-D-173 sha:4dc00872 src:dodatky/d-panik.md:256 klas:A -->
+### T-D-173 · tablycya · рядок 256
 
 **Книга каже, дослівно:**
 
@@ -3873,8 +3927,8 @@
 
 ---
 
-<!-- fc id:T-D-172 sha:1e8945f3 src:dodatky/d-panik.md:254 klas:A -->
-### T-D-172 · proza · рядок 254
+<!-- fc id:T-D-174 sha:1e8945f3 src:dodatky/d-panik.md:259 klas:A -->
+### T-D-174 · proza · рядок 259
 
 **Книга каже, дослівно:**
 
@@ -3898,8 +3952,8 @@
 
 ---
 
-<!-- fc id:T-D-173 sha:7076a5df src:dodatky/d-panik.md:254 klas:A -->
-### T-D-173 · proza · рядок 254
+<!-- fc id:T-D-175 sha:7076a5df src:dodatky/d-panik.md:259 klas:A -->
+### T-D-175 · proza · рядок 259
 
 **Книга каже, дослівно:**
 
@@ -3923,8 +3977,8 @@
 
 ---
 
-<!-- fc id:T-D-174 sha:dbf57f9c src:dodatky/d-panik.md:258 klas:A -->
-### T-D-174 · proza · рядок 258
+<!-- fc id:T-D-176 sha:dbf57f9c src:dodatky/d-panik.md:263 klas:A -->
+### T-D-176 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -3948,8 +4002,8 @@
 
 ---
 
-<!-- fc id:T-D-175 sha:68e01a8c src:dodatky/d-panik.md:258 klas:F -->
-### T-D-175 · proza · рядок 258
+<!-- fc id:T-D-177 sha:68e01a8c src:dodatky/d-panik.md:263 klas:F -->
+### T-D-177 · proza · рядок 263
 
 **Книга каже, дослівно:**
 
@@ -3961,8 +4015,8 @@
 
 ---
 
-<!-- fc id:T-D-176 sha:123d0b6e src:dodatky/d-panik.md:261 klas:A -->
-### T-D-176 · proza · рядок 261
+<!-- fc id:T-D-178 sha:123d0b6e src:dodatky/d-panik.md:266 klas:A -->
+### T-D-178 · proza · рядок 266
 
 **Книга каже, дослівно:**
 
@@ -3986,8 +4040,8 @@
 
 ---
 
-<!-- fc id:T-D-177 sha:290e2e50 src:dodatky/d-panik.md:261 klas:E -->
-### T-D-177 · proza · рядок 261
+<!-- fc id:T-D-179 sha:290e2e50 src:dodatky/d-panik.md:266 klas:E -->
+### T-D-179 · proza · рядок 266
 
 **Книга каже, дослівно:**
 
@@ -3999,8 +4053,8 @@
 
 ---
 
-<!-- fc id:T-D-178 sha:0140364c src:dodatky/d-panik.md:265 klas:A -->
-### T-D-178 · proza · рядок 265
+<!-- fc id:T-D-180 sha:0140364c src:dodatky/d-panik.md:270 klas:A -->
+### T-D-180 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -4024,8 +4078,8 @@
 
 ---
 
-<!-- fc id:T-D-179 sha:a135e9c8 src:dodatky/d-panik.md:265 klas:F -->
-### T-D-179 · proza · рядок 265
+<!-- fc id:T-D-181 sha:a135e9c8 src:dodatky/d-panik.md:270 klas:F -->
+### T-D-181 · proza · рядок 270
 
 **Книга каже, дослівно:**
 
@@ -4037,8 +4091,8 @@
 
 ---
 
-<!-- fc id:T-D-180 sha:760e202b src:dodatky/d-panik.md:269 klas:A -->
-### T-D-180 · proza · рядок 269
+<!-- fc id:T-D-182 sha:760e202b src:dodatky/d-panik.md:274 klas:A -->
+### T-D-182 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -4066,8 +4120,8 @@
 
 ---
 
-<!-- fc id:T-D-181 sha:cbdc8d7f src:dodatky/d-panik.md:274 klas:F -->
-### T-D-181 · proza · рядок 274
+<!-- fc id:T-D-183 sha:cbdc8d7f src:dodatky/d-panik.md:279 klas:F -->
+### T-D-183 · proza · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -4079,8 +4133,8 @@
 
 ---
 
-<!-- fc id:T-D-182 sha:61db3e19 src:dodatky/d-panik.md:274 klas:F -->
-### T-D-182 · proza · рядок 274
+<!-- fc id:T-D-184 sha:61db3e19 src:dodatky/d-panik.md:279 klas:F -->
+### T-D-184 · proza · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -4092,8 +4146,8 @@
 
 ---
 
-<!-- fc id:T-D-183 sha:8d7da41f src:dodatky/d-panik.md:274 klas:F -->
-### T-D-183 · proza · рядок 274
+<!-- fc id:T-D-185 sha:8d7da41f src:dodatky/d-panik.md:279 klas:F -->
+### T-D-185 · proza · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -4105,8 +4159,8 @@
 
 ---
 
-<!-- fc id:T-D-184 sha:223bf487 src:dodatky/d-panik.md:274 klas:E -->
-### T-D-184 · proza · рядок 274
+<!-- fc id:T-D-186 sha:223bf487 src:dodatky/d-panik.md:279 klas:E -->
+### T-D-186 · proza · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -4118,8 +4172,8 @@
 
 ---
 
-<!-- fc id:T-D-185 sha:6a7c80ec src:dodatky/d-panik.md:274 klas:F -->
-### T-D-185 · proza · рядок 274
+<!-- fc id:T-D-187 sha:6a7c80ec src:dodatky/d-panik.md:279 klas:F -->
+### T-D-187 · proza · рядок 279
 
 **Книга каже, дослівно:**
 
@@ -4131,8 +4185,8 @@
 
 ---
 
-<!-- fc id:T-D-186 sha:4304fde6 src:dodatky/d-panik.md:282 klas:F -->
-### T-D-186 · proza · рядок 282
+<!-- fc id:T-D-188 sha:4304fde6 src:dodatky/d-panik.md:287 klas:F -->
+### T-D-188 · proza · рядок 287
 
 **Книга каже, дослівно:**
 
@@ -4144,8 +4198,8 @@
 
 ---
 
-<!-- fc id:T-D-187 sha:91a1f9a6 src:dodatky/d-panik.md:282 klas:E -->
-### T-D-187 · proza · рядок 282
+<!-- fc id:T-D-189 sha:91a1f9a6 src:dodatky/d-panik.md:287 klas:E -->
+### T-D-189 · proza · рядок 287
 
 **Книга каже, дослівно:**
 
@@ -4157,8 +4211,8 @@
 
 ---
 
-<!-- fc id:T-D-188 sha:00df861d src:dodatky/d-panik.md:286 klas:F -->
-### T-D-188 · proza · рядок 286
+<!-- fc id:T-D-190 sha:00df861d src:dodatky/d-panik.md:291 klas:F -->
+### T-D-190 · proza · рядок 291
 
 **Книга каже, дослівно:**
 
@@ -4170,8 +4224,8 @@
 
 ---
 
-<!-- fc id:T-D-189 sha:9a6f1773 src:dodatky/d-panik.md:291 klas:E -->
-### T-D-189 · proza · рядок 291
+<!-- fc id:T-D-191 sha:9a6f1773 src:dodatky/d-panik.md:296 klas:E -->
+### T-D-191 · proza · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -4183,8 +4237,8 @@
 
 ---
 
-<!-- fc id:T-D-190 sha:c50282dd src:dodatky/d-panik.md:291 klas:E -->
-### T-D-190 · proza · рядок 291
+<!-- fc id:T-D-192 sha:c50282dd src:dodatky/d-panik.md:296 klas:E -->
+### T-D-192 · proza · рядок 296
 
 **Книга каже, дослівно:**
 
@@ -4196,8 +4250,8 @@
 
 ---
 
-<!-- fc id:T-D-191 sha:71f2dcf5 src:dodatky/d-panik.md:294 klas:F -->
-### T-D-191 · proza · рядок 294
+<!-- fc id:T-D-193 sha:71f2dcf5 src:dodatky/d-panik.md:299 klas:F -->
+### T-D-193 · proza · рядок 299
 
 **Книга каже, дослівно:**
 
@@ -4209,8 +4263,8 @@
 
 ---
 
-<!-- fc id:T-D-192 sha:d8b5c935 src:dodatky/d-panik.md:294 klas:E -->
-### T-D-192 · proza · рядок 294
+<!-- fc id:T-D-194 sha:d8b5c935 src:dodatky/d-panik.md:299 klas:E -->
+### T-D-194 · proza · рядок 299
 
 **Книга каже, дослівно:**
 

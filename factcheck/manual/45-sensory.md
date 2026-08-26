@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/45-sensory.md`
 
-Одиниць твердження: **80**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **84**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -477,12 +477,12 @@
 
 ---
 
-<!-- fc id:T-45-031 sha:33f60816 src:manual/45-sensory.md:75 klas:E -->
+<!-- fc id:T-45-031 sha:31a5065f src:manual/45-sensory.md:75 klas:F -->
 ### T-45-031 · proza · рядок 75
 
 **Книга каже, дослівно:**
 
-> Обмеження ультразвуку: не бачить м'які й похилі поверхні, залежить від температури повітря, конус вимірювання широкий.
+> **Обмеження, яке вирішує, чи годиться датчик узагалі.** Специфікація вимагає ціль **площею від 0.5 м²** — це квадрат приблизно 70×70 см — і поверхню якомога рівнішу.
 
 **Доказ**
 
@@ -490,8 +490,60 @@
 
 ---
 
-<!-- fc id:T-45-032 sha:ead84544 src:manual/45-sensory.md:78 klas:F -->
-### T-45-032 · proza · рядок 78
+<!-- fc id:T-45-032 sha:2a17512d src:manual/45-sensory.md:75 klas:E -->
+### T-45-032 · proza · рядок 75
+
+**Книга каже, дослівно:**
+
+> Менша ціль дає то показ, то нуль, і жодної ознаки несправності при цьому немає.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-45-033 sha:d209abb5 src:manual/45-sensory.md:80 klas:F -->
+### T-45-033 · proza · рядок 80
+
+**Книга каже, дослівно:**
+
+> Практично це викреслює три задачі, у яких HC-SR04 беруть найчастіше: рівень води у вузькому баку, присутність людини в проході, відстань до руки чи дверцят.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-45-034 sha:59ffce0b src:manual/45-sensory.md:80 klas:E -->
+### T-45-034 · proza · рядок 80
+
+**Книга каже, дослівно:**
+
+> У всіх трьох ціль менша за 0.5 м².
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-45-035 sha:4abe54ad src:manual/45-sensory.md:84 klas:E -->
+### T-45-035 · proza · рядок 84
+
+**Книга каже, дослівно:**
+
+> Решта обмежень ультразвуку: похилі поверхні відбивають убік, м'які поглинають, показ залежить від температури повітря, конус вимірювання широкий.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-45-036 sha:ead84544 src:manual/45-sensory.md:88 klas:F -->
+### T-45-036 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -503,8 +555,8 @@
 
 ---
 
-<!-- fc id:T-45-033 sha:1e1cfee5 src:manual/45-sensory.md:78 klas:E -->
-### T-45-033 · proza · рядок 78
+<!-- fc id:T-45-037 sha:1e1cfee5 src:manual/45-sensory.md:88 klas:E -->
+### T-45-037 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -516,8 +568,8 @@
 
 ---
 
-<!-- fc id:T-45-034 sha:b08e4e7b src:manual/45-sensory.md:78 klas:E -->
-### T-45-034 · proza · рядок 78
+<!-- fc id:T-45-038 sha:b08e4e7b src:manual/45-sensory.md:88 klas:E -->
+### T-45-038 · proza · рядок 88
 
 **Книга каже, дослівно:**
 
@@ -529,8 +581,8 @@
 
 ---
 
-<!-- fc id:T-45-035 sha:07c8b23f src:manual/45-sensory.md:82 klas:F -->
-### T-45-035 · proza · рядок 82
+<!-- fc id:T-45-039 sha:07c8b23f src:manual/45-sensory.md:92 klas:F -->
+### T-45-039 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -542,8 +594,8 @@
 
 ---
 
-<!-- fc id:T-45-036 sha:c45bf34b src:manual/45-sensory.md:82 klas:E -->
-### T-45-036 · proza · рядок 82
+<!-- fc id:T-45-040 sha:c45bf34b src:manual/45-sensory.md:92 klas:E -->
+### T-45-040 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -555,8 +607,8 @@
 
 ---
 
-<!-- fc id:T-45-037 sha:ed1ff776 src:manual/45-sensory.md:82 klas:E -->
-### T-45-037 · proza · рядок 82
+<!-- fc id:T-45-041 sha:ed1ff776 src:manual/45-sensory.md:92 klas:E -->
+### T-45-041 · proza · рядок 92
 
 **Книга каже, дослівно:**
 
@@ -568,8 +620,8 @@
 
 ---
 
-<!-- fc id:T-45-038 sha:5e2cd7d1 src:manual/45-sensory.md:89 klas:F -->
-### T-45-038 · proza · рядок 89
+<!-- fc id:T-45-042 sha:5e2cd7d1 src:manual/45-sensory.md:99 klas:F -->
+### T-45-042 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -581,8 +633,8 @@
 
 ---
 
-<!-- fc id:T-45-039 sha:fa828b48 src:manual/45-sensory.md:89 klas:E -->
-### T-45-039 · proza · рядок 89
+<!-- fc id:T-45-043 sha:fa828b48 src:manual/45-sensory.md:99 klas:E -->
+### T-45-043 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -594,8 +646,8 @@
 
 ---
 
-<!-- fc id:T-45-040 sha:8856f975 src:manual/45-sensory.md:89 klas:E -->
-### T-45-040 · proza · рядок 89
+<!-- fc id:T-45-044 sha:8856f975 src:manual/45-sensory.md:99 klas:E -->
+### T-45-044 · proza · рядок 99
 
 **Книга каже, дослівно:**
 
@@ -607,8 +659,8 @@
 
 ---
 
-<!-- fc id:T-45-041 sha:ca24635b src:manual/45-sensory.md:92 klas:F -->
-### T-45-041 · proza · рядок 92
+<!-- fc id:T-45-045 sha:ca24635b src:manual/45-sensory.md:102 klas:F -->
+### T-45-045 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -620,8 +672,8 @@
 
 ---
 
-<!-- fc id:T-45-042 sha:a05495f4 src:manual/45-sensory.md:92 klas:E -->
-### T-45-042 · proza · рядок 92
+<!-- fc id:T-45-046 sha:a05495f4 src:manual/45-sensory.md:102 klas:E -->
+### T-45-046 · proza · рядок 102
 
 **Книга каже, дослівно:**
 
@@ -633,8 +685,8 @@
 
 ---
 
-<!-- fc id:T-45-043 sha:88545a12 src:manual/45-sensory.md:96 klas:E -->
-### T-45-043 · proza · рядок 96
+<!-- fc id:T-45-047 sha:88545a12 src:manual/45-sensory.md:106 klas:E -->
+### T-45-047 · proza · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -646,8 +698,8 @@
 
 ---
 
-<!-- fc id:T-45-044 sha:d582c0f3 src:manual/45-sensory.md:96 klas:E -->
-### T-45-044 · proza · рядок 96
+<!-- fc id:T-45-048 sha:d582c0f3 src:manual/45-sensory.md:106 klas:E -->
+### T-45-048 · proza · рядок 106
 
 **Книга каже, дослівно:**
 
@@ -659,8 +711,8 @@
 
 ---
 
-<!-- fc id:T-45-045 sha:4f140978 src:manual/45-sensory.md:100 klas:E -->
-### T-45-045 · proza · рядок 100
+<!-- fc id:T-45-049 sha:4f140978 src:manual/45-sensory.md:110 klas:E -->
+### T-45-049 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -672,8 +724,8 @@
 
 ---
 
-<!-- fc id:T-45-046 sha:648bb12a src:manual/45-sensory.md:100 klas:E -->
-### T-45-046 · proza · рядок 100
+<!-- fc id:T-45-050 sha:648bb12a src:manual/45-sensory.md:110 klas:E -->
+### T-45-050 · proza · рядок 110
 
 **Книга каже, дослівно:**
 
@@ -685,8 +737,8 @@
 
 ---
 
-<!-- fc id:T-45-047 sha:c7750d94 src:manual/45-sensory.md:107 klas:F -->
-### T-45-047 · proza · рядок 107
+<!-- fc id:T-45-051 sha:c7750d94 src:manual/45-sensory.md:117 klas:F -->
+### T-45-051 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -698,8 +750,8 @@
 
 ---
 
-<!-- fc id:T-45-048 sha:7cfc8b8b src:manual/45-sensory.md:107 klas:A -->
-### T-45-048 · proza · рядок 107
+<!-- fc id:T-45-052 sha:7cfc8b8b src:manual/45-sensory.md:117 klas:A -->
+### T-45-052 · proza · рядок 117
 
 **Книга каже, дослівно:**
 
@@ -718,8 +770,8 @@
 
 ---
 
-<!-- fc id:T-45-049 sha:024e5599 src:manual/45-sensory.md:111 klas:E -->
-### T-45-049 · proza · рядок 111
+<!-- fc id:T-45-053 sha:024e5599 src:manual/45-sensory.md:121 klas:E -->
+### T-45-053 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -731,8 +783,8 @@
 
 ---
 
-<!-- fc id:T-45-050 sha:84afa568 src:manual/45-sensory.md:111 klas:E -->
-### T-45-050 · proza · рядок 111
+<!-- fc id:T-45-054 sha:84afa568 src:manual/45-sensory.md:121 klas:E -->
+### T-45-054 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -744,8 +796,8 @@
 
 ---
 
-<!-- fc id:T-45-051 sha:526d2b40 src:manual/45-sensory.md:118 klas:F -->
-### T-45-051 · proza · рядок 118
+<!-- fc id:T-45-055 sha:526d2b40 src:manual/45-sensory.md:128 klas:F -->
+### T-45-055 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -757,8 +809,8 @@
 
 ---
 
-<!-- fc id:T-45-052 sha:d1a6cace src:manual/45-sensory.md:118 klas:E -->
-### T-45-052 · proza · рядок 118
+<!-- fc id:T-45-056 sha:d1a6cace src:manual/45-sensory.md:128 klas:E -->
+### T-45-056 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -770,8 +822,8 @@
 
 ---
 
-<!-- fc id:T-45-053 sha:7785706c src:manual/45-sensory.md:122 klas:F -->
-### T-45-053 · proza · рядок 122
+<!-- fc id:T-45-057 sha:7785706c src:manual/45-sensory.md:132 klas:F -->
+### T-45-057 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -783,8 +835,8 @@
 
 ---
 
-<!-- fc id:T-45-054 sha:766b49cb src:manual/45-sensory.md:122 klas:E -->
-### T-45-054 · proza · рядок 122
+<!-- fc id:T-45-058 sha:766b49cb src:manual/45-sensory.md:132 klas:E -->
+### T-45-058 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -796,8 +848,8 @@
 
 ---
 
-<!-- fc id:T-45-055 sha:b3106cdf src:manual/45-sensory.md:122 klas:E -->
-### T-45-055 · proza · рядок 122
+<!-- fc id:T-45-059 sha:b3106cdf src:manual/45-sensory.md:132 klas:E -->
+### T-45-059 · proza · рядок 132
 
 **Книга каже, дослівно:**
 
@@ -809,8 +861,8 @@
 
 ---
 
-<!-- fc id:T-45-056 sha:e2b7c624 src:manual/45-sensory.md:126 klas:E -->
-### T-45-056 · proza · рядок 126
+<!-- fc id:T-45-060 sha:e2b7c624 src:manual/45-sensory.md:136 klas:E -->
+### T-45-060 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -822,8 +874,8 @@
 
 ---
 
-<!-- fc id:T-45-057 sha:76e959f7 src:manual/45-sensory.md:126 klas:E -->
-### T-45-057 · proza · рядок 126
+<!-- fc id:T-45-061 sha:76e959f7 src:manual/45-sensory.md:136 klas:E -->
+### T-45-061 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -835,8 +887,8 @@
 
 ---
 
-<!-- fc id:T-45-058 sha:002e174c src:manual/45-sensory.md:131 klas:F -->
-### T-45-058 · proza · рядок 131
+<!-- fc id:T-45-062 sha:002e174c src:manual/45-sensory.md:141 klas:F -->
+### T-45-062 · proza · рядок 141
 
 **Книга каже, дослівно:**
 
@@ -848,8 +900,8 @@
 
 ---
 
-<!-- fc id:T-45-059 sha:4626ef98 src:manual/45-sensory.md:135 klas:K -->
-### T-45-059 · kod · рядок 135
+<!-- fc id:T-45-063 sha:4626ef98 src:manual/45-sensory.md:145 klas:K -->
+### T-45-063 · kod · рядок 145
 
 **Книга каже, дослівно:**
 
@@ -864,8 +916,8 @@
 
 ---
 
-<!-- fc id:T-45-060 sha:2561e953 src:manual/45-sensory.md:140 klas:E -->
-### T-45-060 · proza · рядок 140
+<!-- fc id:T-45-064 sha:2561e953 src:manual/45-sensory.md:150 klas:E -->
+### T-45-064 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -877,8 +929,8 @@
 
 ---
 
-<!-- fc id:T-45-061 sha:5b5a8c52 src:manual/45-sensory.md:140 klas:E -->
-### T-45-061 · proza · рядок 140
+<!-- fc id:T-45-065 sha:5b5a8c52 src:manual/45-sensory.md:150 klas:E -->
+### T-45-065 · proza · рядок 150
 
 **Книга каже, дослівно:**
 
@@ -890,8 +942,8 @@
 
 ---
 
-<!-- fc id:T-45-062 sha:c46fe763 src:manual/45-sensory.md:145 klas:E -->
-### T-45-062 · proza · рядок 145
+<!-- fc id:T-45-066 sha:c46fe763 src:manual/45-sensory.md:155 klas:E -->
+### T-45-066 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -903,8 +955,8 @@
 
 ---
 
-<!-- fc id:T-45-063 sha:43f74f18 src:manual/45-sensory.md:145 klas:E -->
-### T-45-063 · proza · рядок 145
+<!-- fc id:T-45-067 sha:43f74f18 src:manual/45-sensory.md:155 klas:E -->
+### T-45-067 · proza · рядок 155
 
 **Книга каже, дослівно:**
 
@@ -916,8 +968,8 @@
 
 ---
 
-<!-- fc id:T-45-064 sha:0c0b30fb src:manual/45-sensory.md:149 klas:E -->
-### T-45-064 · proza · рядок 149
+<!-- fc id:T-45-068 sha:0c0b30fb src:manual/45-sensory.md:159 klas:E -->
+### T-45-068 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -929,8 +981,8 @@
 
 ---
 
-<!-- fc id:T-45-065 sha:b1f7746f src:manual/45-sensory.md:151 klas:E -->
-### T-45-065 · proza · рядок 151
+<!-- fc id:T-45-069 sha:b1f7746f src:manual/45-sensory.md:161 klas:E -->
+### T-45-069 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -942,8 +994,8 @@
 
 ---
 
-<!-- fc id:T-45-066 sha:1cedf1a7 src:manual/45-sensory.md:156 klas:E -->
-### T-45-066 · proza · рядок 156
+<!-- fc id:T-45-070 sha:1cedf1a7 src:manual/45-sensory.md:166 klas:E -->
+### T-45-070 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -955,8 +1007,8 @@
 
 ---
 
-<!-- fc id:T-45-067 sha:0145e3dd src:manual/45-sensory.md:156 klas:E -->
-### T-45-067 · proza · рядок 156
+<!-- fc id:T-45-071 sha:0145e3dd src:manual/45-sensory.md:166 klas:E -->
+### T-45-071 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -968,8 +1020,8 @@
 
 ---
 
-<!-- fc id:T-45-068 sha:eca9dad9 src:manual/45-sensory.md:161 klas:E -->
-### T-45-068 · proza · рядок 161
+<!-- fc id:T-45-072 sha:eca9dad9 src:manual/45-sensory.md:171 klas:E -->
+### T-45-072 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -981,8 +1033,8 @@
 
 ---
 
-<!-- fc id:T-45-069 sha:26a78710 src:manual/45-sensory.md:166 klas:E -->
-### T-45-069 · proza · рядок 166
+<!-- fc id:T-45-073 sha:26a78710 src:manual/45-sensory.md:176 klas:E -->
+### T-45-073 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -994,8 +1046,8 @@
 
 ---
 
-<!-- fc id:T-45-070 sha:440777a9 src:manual/45-sensory.md:168 klas:E -->
-### T-45-070 · proza · рядок 168
+<!-- fc id:T-45-074 sha:440777a9 src:manual/45-sensory.md:178 klas:E -->
+### T-45-074 · proza · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -1007,8 +1059,8 @@
 
 ---
 
-<!-- fc id:T-45-071 sha:c3e1b386 src:manual/45-sensory.md:170 klas:A -->
-### T-45-071 · proza · рядок 170
+<!-- fc id:T-45-075 sha:c3e1b386 src:manual/45-sensory.md:180 klas:A -->
+### T-45-075 · proza · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -1030,8 +1082,8 @@
 
 ---
 
-<!-- fc id:T-45-072 sha:267273b7 src:manual/45-sensory.md:174 klas:F -->
-### T-45-072 · proza · рядок 174
+<!-- fc id:T-45-076 sha:267273b7 src:manual/45-sensory.md:184 klas:F -->
+### T-45-076 · proza · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -1043,8 +1095,8 @@
 
 ---
 
-<!-- fc id:T-45-073 sha:ab32b5f8 src:manual/45-sensory.md:177 klas:E -->
-### T-45-073 · proza · рядок 177
+<!-- fc id:T-45-077 sha:ab32b5f8 src:manual/45-sensory.md:187 klas:E -->
+### T-45-077 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1056,8 +1108,8 @@
 
 ---
 
-<!-- fc id:T-45-074 sha:2bd4ee43 src:manual/45-sensory.md:177 klas:E -->
-### T-45-074 · proza · рядок 177
+<!-- fc id:T-45-078 sha:2bd4ee43 src:manual/45-sensory.md:187 klas:E -->
+### T-45-078 · proza · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -1069,8 +1121,8 @@
 
 ---
 
-<!-- fc id:T-45-075 sha:35fe4286 src:manual/45-sensory.md:184 klas:C -->
-### T-45-075 · proza · рядок 184
+<!-- fc id:T-45-079 sha:35fe4286 src:manual/45-sensory.md:194 klas:C -->
+### T-45-079 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1086,8 +1138,8 @@
 
 ---
 
-<!-- fc id:T-45-076 sha:0f871e08 src:manual/45-sensory.md:186 klas:B -->
-### T-45-076 · proza · рядок 186
+<!-- fc id:T-45-080 sha:0f871e08 src:manual/45-sensory.md:196 klas:B -->
+### T-45-080 · proza · рядок 196
 
 **Книга каже, дослівно:**
 
@@ -1114,8 +1166,8 @@
 
 ---
 
-<!-- fc id:T-45-077 sha:cb932d41 src:manual/45-sensory.md:188 klas:E -->
-### T-45-077 · proza · рядок 188
+<!-- fc id:T-45-081 sha:cb932d41 src:manual/45-sensory.md:198 klas:E -->
+### T-45-081 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1127,8 +1179,8 @@
 
 ---
 
-<!-- fc id:T-45-078 sha:905f181d src:manual/45-sensory.md:191 klas:E -->
-### T-45-078 · proza · рядок 191
+<!-- fc id:T-45-082 sha:905f181d src:manual/45-sensory.md:201 klas:E -->
+### T-45-082 · proza · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -1140,8 +1192,8 @@
 
 ---
 
-<!-- fc id:T-45-079 sha:9cb51310 src:manual/45-sensory.md:193 klas:E -->
-### T-45-079 · proza · рядок 193
+<!-- fc id:T-45-083 sha:9cb51310 src:manual/45-sensory.md:203 klas:E -->
+### T-45-083 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -1153,8 +1205,8 @@
 
 ---
 
-<!-- fc id:T-45-080 sha:966b98a2 src:manual/45-sensory.md:195 klas:E -->
-### T-45-080 · proza · рядок 195
+<!-- fc id:T-45-084 sha:966b98a2 src:manual/45-sensory.md:205 klas:E -->
+### T-45-084 · proza · рядок 205
 
 **Книга каже, дослівно:**
 

@@ -338,12 +338,12 @@
 
 ---
 
-<!-- fc id:T-COM-023 sha:e2d499f5 src:inserts/components-2026-08.md:28 klas:F -->
+<!-- fc id:T-COM-023 sha:2286219e src:inserts/components-2026-08.md:28 klas:F -->
 ### T-COM-023 · komirka · рядок 28
 
 **Книга каже, дослівно:**
 
-> HC-SR04 · Чому → ⛔ 5 В на `ECHO`; не бачить м'які поверхні
+> HC-SR04 · Чому → ⛔ 5 В на `ECHO`; ціль від 0.5 м² і рівна
 
 **Доказ**
 
