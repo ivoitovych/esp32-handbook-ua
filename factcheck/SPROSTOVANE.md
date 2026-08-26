@@ -131,6 +131,21 @@
   prokhid: 24
   vynyatky: [factcheck/, reviews/]
 
+- shcho: Розшифровка boot:0x4 і boot:0x0 на C3 складанням бітів
+  zbih: 'boot:0x4` — `GPIO9`|`boot:0x0` на C3 варто впізнавати|коректний вхід у download mode'
+  chomu: >-
+    ROM класифікує значення цілком, а не пін за піном.
+    `soc/boot_mode.h`: `ETS_IS_FLASH_BOOT()` це `IS_1XXX || IS_0100`,
+    тобто `0x4` — флеш-завантаження; `ETS_IS_JOINT_DOWNLOAD_BOOT()` це
+    `IS_00XX`, тобто `0x0`–`0x3` — завантаження. Наївне складання
+    «біт — пін» із документації esptool із правилами strapping дає
+    протилежний висновок і помиляється.
+  zamist: >-
+    дивитися на рядок у дужках (`SPI_FAST_FLASH_BOOT`, `DOWNLOAD_BOOT(…)`),
+    а не розшифровувати число самотужки
+  prokhid: 35
+  vynyatky: [factcheck/, reviews/, zvyazok/, dodatky/d-panik.md]
+
 - shcho: ADC2 при Wi-Fi нібито віддає сміття
   zbih: 'ADC2 не працює, коли увімкнено Wi-Fi|повертає помилку або сміття|починає віддавати дурницю'
   chomu: >-

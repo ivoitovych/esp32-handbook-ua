@@ -1,6 +1,6 @@
 # Фактчекінг: `dodatky/d-panik.md`
 
-Одиниць твердження: **184**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **192**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-D-003 sha:fa25e155 src:dodatky/d-panik.md:8 klas:F -->
+<!-- fc id:T-D-003 sha:fa25e155 src:dodatky/d-panik.md:8 klas:A -->
 ### T-D-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -41,7 +41,32 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > typedef enum {
+  >     NO_MEAN                =  0,
+  >     POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+  >     SW_RESET               =  3,    /**<3, Software reset digital core*/
+  >     OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+  >     DEEPSLEEP_RESET        =  5,
+  >     SDIO_RESET             =  6,    /**<6, Reset by SLC module*/
+  >     TG0WDT_SYS_RESET       =  7,
+  >     TG1WDT_SYS_RESET       =  8,
+  >     RTCWDT_SYS_RESET       =  9,
+  >     INTRUSION_RESET        = 10,
+  >     TGWDT_CPU_RESET        = 11,
+  >     SW_CPU_RESET           = 12,
+  >     RTCWDT_CPU_RESET       = 13,
+  >     EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+  >     RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage
+  >                                           is not stable*/
+  >     RTCWDT_RTC_RESET       = 16
+  > } RESET_REASON;
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 7), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Усі шістнадцять рядків таблиці додатка D звірено поштучно з переліком у ROM-заголовку: і числа, і назви, і те, що `0xf` — це саме нестабільна напруга живлення («Reset when the vdd voltage is not stable»).
+Це закриває найдовшу таблицю додатка одним доказом і, головне, підтверджує три значення, які книга називає найчастішими: `0x1` норма, `0xc` після паніки, `0xf` живлення.
+- **Прохід:** pass-35-vlasna-pomylka-boot
 
 ---
 
@@ -1769,12 +1794,43 @@
 
 ---
 
-<!-- fc id:T-D-091 sha:074ec9b4 src:dodatky/d-panik.md:102 klas:F -->
-### T-D-091 · proza · рядок 102
+<!-- fc id:T-D-091 sha:39ad5166 src:dodatky/d-panik.md:105 klas:A -->
+### T-D-091 · proza · рядок 105
 
 **Книга каже, дослівно:**
 
-> Тобто на C3 `boot:0xc` — обидва високі, звичайний старт; `boot:0x4` — `GPIO9` низький при високому `GPIO8`, тобто коректний вхід у download mode.
+> **Далі значення не розшифровуються, і це свідоме рішення.**
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/boot_mode.h
+- **Дослівно з джерела:**
+  > #define IS_1XXX(v)   (((v)&0x08)==0x08)
+  > #define IS_00XX(v)   (((v)&0x0c)==0x00)
+  > #define IS_0100(v)   (((v)&0x0f)==0x04)
+  > 
+  > #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || \
+  >                               IS_0100(BOOT_MODE_GET()))
+  > #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+  > #define ETS_IS_UART_BOOT()   IS_0111(BOOT_MODE_GET())
+- **Спосіб і дата:** знайдено агентом пулу (шматок 7), перевірено М1 власним curl, 2026-08-26
+- **Нотатка:** **Виправлення власної помилки проходу 26, і найнеприємніше за весь фактчекінг.**
+У проході 26 я додав у додаток D розшифровку: «на C3 `boot:0xc` — обидва високі, звичайний старт; `boot:0x4` — коректний вхід у download mode», і окремо «`boot:0x0` — та сама недійсна комбінація».
+Два з трьох тверджень хибні. За власними макросами ROM `0x4` — це `IS_0100`, тобто **флеш-завантаження**, а `0x0` — `IS_00XX`, тобто **завантаження**, і жодної «недійсної комбінації» в цій класифікації немає.
+Як це сталося. Я взяв таблицю «біт — пін» із документації esptool, склав із правилами strapping розділу 07 і вивів значення. Обидва джерела правильні; **висновок із їхнього складання — ні**. Місток між рівнем пінів і класифікацією значень лежить у technical reference manual, якого звідси немає, і я цього не помітив.
+Це рівно та вада, яку прохід 26 сам і назвав: правильні числа, хибний напрямок висновку. Назвати її й одразу вчинити — гірше, ніж не назвати.
+Виправлено вилученням розшифровки. Замість неї в книзі стоїть пояснення, чому її там немає, і порада дивитися на рядок у дужках, який друкує сам `esptool`. Формулювання заведено в `factcheck/SPROSTOVANE.md`.
+- **Прохід:** pass-35-vlasna-pomylka-boot
+
+---
+
+<!-- fc id:T-D-092 sha:48c40874 src:dodatky/d-panik.md:107 klas:F -->
+### T-D-092 · proza · рядок 107
+
+**Книга каже, дослівно:**
+
+> Спокусливо взяти цю таблицю бітів, скласти з нею правила strapping із розділу 07 і дістати «`boot:0x4` означає ось це».
 
 **Доказ**
 
@@ -1782,12 +1838,12 @@
 
 ---
 
-<!-- fc id:T-D-092 sha:37911804 src:dodatky/d-panik.md:106 klas:F -->
-### T-D-092 · proza · рядок 106
+<!-- fc id:T-D-093 sha:05cd2fbd src:dodatky/d-panik.md:107 klas:E -->
+### T-D-093 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
-> А `boot:0x0` на C3 варто впізнавати окремо: обидва піни низькі — це та сама **недійсна комбінація**, про яку попереджає розділ 07.
+> Так робити не можна, і книга це вже пробувала: попередня редакція цього абзацу так і зробила й помилилася у двох випадках із трьох.
 
 **Доказ**
 
@@ -1795,12 +1851,12 @@
 
 ---
 
-<!-- fc id:T-D-093 sha:87d3ccb4 src:dodatky/d-panik.md:106 klas:F -->
-### T-D-093 · proza · рядок 106
+<!-- fc id:T-D-094 sha:82e2cab4 src:dodatky/d-panik.md:112 klas:E -->
+### T-D-094 · proza · рядок 112
 
 **Книга каже, дослівно:**
 
-> Поведінка після неї непередбачувана, і шукати причину треба не в прошивці, а в тому, що тримає `GPIO8` унизу.
+> Причина в тому, що ROM класифікує **значення цілком**, а не пін за піном, і його власні макроси не збігаються з наївним складанням.
 
 **Доказ**
 
@@ -1808,8 +1864,174 @@
 
 ---
 
-<!-- fc id:T-D-094 sha:d39312ec src:dodatky/d-panik.md:113 klas:K -->
-### T-D-094 · kod · рядок 113
+<!-- fc id:T-D-095 sha:54121873 src:dodatky/d-panik.md:112 klas:A -->
+### T-D-095 · proza · рядок 112
+
+**Книга каже, дослівно:**
+
+> У `soc/boot_mode.h` видно, що `0x4` потрапляє в `ETS_IS_FLASH_BOOT`, а не в завантаження по UART:
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/boot_mode.h
+- **Дослівно з джерела:**
+  > #define IS_1XXX(v)   (((v)&0x08)==0x08)
+  > #define IS_00XX(v)   (((v)&0x0c)==0x00)
+  > #define IS_0100(v)   (((v)&0x0f)==0x04)
+  > 
+  > #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || \
+  >                               IS_0100(BOOT_MODE_GET()))
+  > #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+  > #define ETS_IS_UART_BOOT()   IS_0111(BOOT_MODE_GET())
+- **Спосіб і дата:** знайдено агентом пулу (шматок 7), перевірено М1 власним curl, 2026-08-26
+- **Нотатка:** **Виправлення власної помилки проходу 26, і найнеприємніше за весь фактчекінг.**
+У проході 26 я додав у додаток D розшифровку: «на C3 `boot:0xc` — обидва високі, звичайний старт; `boot:0x4` — коректний вхід у download mode», і окремо «`boot:0x0` — та сама недійсна комбінація».
+Два з трьох тверджень хибні. За власними макросами ROM `0x4` — це `IS_0100`, тобто **флеш-завантаження**, а `0x0` — `IS_00XX`, тобто **завантаження**, і жодної «недійсної комбінації» в цій класифікації немає.
+Як це сталося. Я взяв таблицю «біт — пін» із документації esptool, склав із правилами strapping розділу 07 і вивів значення. Обидва джерела правильні; **висновок із їхнього складання — ні**. Місток між рівнем пінів і класифікацією значень лежить у technical reference manual, якого звідси немає, і я цього не помітив.
+Це рівно та вада, яку прохід 26 сам і назвав: правильні числа, хибний напрямок висновку. Назвати її й одразу вчинити — гірше, ніж не назвати.
+Виправлено вилученням розшифровки. Замість неї в книзі стоїть пояснення, чому її там немає, і порада дивитися на рядок у дужках, який друкує сам `esptool`. Формулювання заведено в `factcheck/SPROSTOVANE.md`.
+- **Прохід:** pass-35-vlasna-pomylka-boot
+
+---
+
+<!-- fc id:T-D-096 sha:f94620f6 src:dodatky/d-panik.md:117 klas:K -->
+### T-D-096 · kod · рядок 117
+
+**Книга каже, дослівно:**
+
+> ```c
+> #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || IS_0100(BOOT_MODE_GET()))
+> #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/boot_mode.h
+- **Дослівно з джерела:**
+  > #define IS_1XXX(v)   (((v)&0x08)==0x08)
+  > #define IS_00XX(v)   (((v)&0x0c)==0x00)
+  > #define IS_0100(v)   (((v)&0x0f)==0x04)
+  > 
+  > #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || \
+  >                               IS_0100(BOOT_MODE_GET()))
+  > #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+  > #define ETS_IS_UART_BOOT()   IS_0111(BOOT_MODE_GET())
+- **Спосіб і дата:** знайдено агентом пулу (шматок 7), перевірено М1 власним curl, 2026-08-26
+- **Нотатка:** **Виправлення власної помилки проходу 26, і найнеприємніше за весь фактчекінг.**
+У проході 26 я додав у додаток D розшифровку: «на C3 `boot:0xc` — обидва високі, звичайний старт; `boot:0x4` — коректний вхід у download mode», і окремо «`boot:0x0` — та сама недійсна комбінація».
+Два з трьох тверджень хибні. За власними макросами ROM `0x4` — це `IS_0100`, тобто **флеш-завантаження**, а `0x0` — `IS_00XX`, тобто **завантаження**, і жодної «недійсної комбінації» в цій класифікації немає.
+Як це сталося. Я взяв таблицю «біт — пін» із документації esptool, склав із правилами strapping розділу 07 і вивів значення. Обидва джерела правильні; **висновок із їхнього складання — ні**. Місток між рівнем пінів і класифікацією значень лежить у technical reference manual, якого звідси немає, і я цього не помітив.
+Це рівно та вада, яку прохід 26 сам і назвав: правильні числа, хибний напрямок висновку. Назвати її й одразу вчинити — гірше, ніж не назвати.
+Виправлено вилученням розшифровки. Замість неї в книзі стоїть пояснення, чому її там немає, і порада дивитися на рядок у дужках, який друкує сам `esptool`. Формулювання заведено в `factcheck/SPROSTOVANE.md`.
+- **Прохід:** pass-35-vlasna-pomylka-boot
+
+---
+
+<!-- fc id:T-D-097 sha:c7aacb1e src:dodatky/d-panik.md:118 klas:A -->
+### T-D-097 · kod-ryadok · рядок 118
+
+**Книга каже, дослівно:**
+
+> #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || IS_0100(BOOT_MODE_GET()))
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/boot_mode.h
+- **Дослівно з джерела:**
+  > #define IS_1XXX(v)   (((v)&0x08)==0x08)
+  > #define IS_00XX(v)   (((v)&0x0c)==0x00)
+  > #define IS_0100(v)   (((v)&0x0f)==0x04)
+  > 
+  > #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || \
+  >                               IS_0100(BOOT_MODE_GET()))
+  > #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+  > #define ETS_IS_UART_BOOT()   IS_0111(BOOT_MODE_GET())
+- **Спосіб і дата:** знайдено агентом пулу (шматок 7), перевірено М1 власним curl, 2026-08-26
+- **Нотатка:** **Виправлення власної помилки проходу 26, і найнеприємніше за весь фактчекінг.**
+У проході 26 я додав у додаток D розшифровку: «на C3 `boot:0xc` — обидва високі, звичайний старт; `boot:0x4` — коректний вхід у download mode», і окремо «`boot:0x0` — та сама недійсна комбінація».
+Два з трьох тверджень хибні. За власними макросами ROM `0x4` — це `IS_0100`, тобто **флеш-завантаження**, а `0x0` — `IS_00XX`, тобто **завантаження**, і жодної «недійсної комбінації» в цій класифікації немає.
+Як це сталося. Я взяв таблицю «біт — пін» із документації esptool, склав із правилами strapping розділу 07 і вивів значення. Обидва джерела правильні; **висновок із їхнього складання — ні**. Місток між рівнем пінів і класифікацією значень лежить у technical reference manual, якого звідси немає, і я цього не помітив.
+Це рівно та вада, яку прохід 26 сам і назвав: правильні числа, хибний напрямок висновку. Назвати її й одразу вчинити — гірше, ніж не назвати.
+Виправлено вилученням розшифровки. Замість неї в книзі стоїть пояснення, чому її там немає, і порада дивитися на рядок у дужках, який друкує сам `esptool`. Формулювання заведено в `factcheck/SPROSTOVANE.md`.
+- **Прохід:** pass-35-vlasna-pomylka-boot
+
+---
+
+<!-- fc id:T-D-098 sha:dd16d217 src:dodatky/d-panik.md:119 klas:F -->
+### T-D-098 · kod-ryadok · рядок 119
+
+**Книга каже, дослівно:**
+
+> #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-099 sha:155c310b src:dodatky/d-panik.md:122 klas:E -->
+### T-D-099 · proza · рядок 122
+
+**Книга каже, дослівно:**
+
+> Тобто відповідність «біт — пін» із документації esptool і класифікація значень у ROM — це два різні рівні, і місток між ними лежить у technical reference manual, а не в тому, що доступне звідси.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-100 sha:53e5395e src:dodatky/d-panik.md:126 klas:A -->
+### T-D-100 · proza · рядок 126
+
+**Книга каже, дослівно:**
+
+> Практично: **дивіться на рядок у дужках**, а не на число.
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/boot_mode.h
+- **Дослівно з джерела:**
+  > #define IS_1XXX(v)   (((v)&0x08)==0x08)
+  > #define IS_00XX(v)   (((v)&0x0c)==0x00)
+  > #define IS_0100(v)   (((v)&0x0f)==0x04)
+  > 
+  > #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || \
+  >                               IS_0100(BOOT_MODE_GET()))
+  > #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+  > #define ETS_IS_UART_BOOT()   IS_0111(BOOT_MODE_GET())
+- **Спосіб і дата:** знайдено агентом пулу (шматок 7), перевірено М1 власним curl, 2026-08-26
+- **Нотатка:** **Виправлення власної помилки проходу 26, і найнеприємніше за весь фактчекінг.**
+У проході 26 я додав у додаток D розшифровку: «на C3 `boot:0xc` — обидва високі, звичайний старт; `boot:0x4` — коректний вхід у download mode», і окремо «`boot:0x0` — та сама недійсна комбінація».
+Два з трьох тверджень хибні. За власними макросами ROM `0x4` — це `IS_0100`, тобто **флеш-завантаження**, а `0x0` — `IS_00XX`, тобто **завантаження**, і жодної «недійсної комбінації» в цій класифікації немає.
+Як це сталося. Я взяв таблицю «біт — пін» із документації esptool, склав із правилами strapping розділу 07 і вивів значення. Обидва джерела правильні; **висновок із їхнього складання — ні**. Місток між рівнем пінів і класифікацією значень лежить у technical reference manual, якого звідси немає, і я цього не помітив.
+Це рівно та вада, яку прохід 26 сам і назвав: правильні числа, хибний напрямок висновку. Назвати її й одразу вчинити — гірше, ніж не назвати.
+Виправлено вилученням розшифровки. Замість неї в книзі стоїть пояснення, чому її там немає, і порада дивитися на рядок у дужках, який друкує сам `esptool`. Формулювання заведено в `factcheck/SPROSTOVANE.md`.
+- **Прохід:** pass-35-vlasna-pomylka-boot
+
+---
+
+<!-- fc id:T-D-101 sha:b79ca497 src:dodatky/d-panik.md:126 klas:F -->
+### T-D-101 · proza · рядок 126
+
+**Книга каже, дослівно:**
+
+> `esptool` друкує режим словами — `SPI_FAST_FLASH_BOOT`, `DOWNLOAD_BOOT(…)` — і це розшифровка від того, хто має право її робити.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-D-102 sha:d39312ec src:dodatky/d-panik.md:133 klas:K -->
+### T-D-102 · kod · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -1858,8 +2080,8 @@
 
 ---
 
-<!-- fc id:T-D-095 sha:490ee98b src:dodatky/d-panik.md:114 klas:A -->
-### T-D-095 · kod-ryadok · рядок 114
+<!-- fc id:T-D-103 sha:490ee98b src:dodatky/d-panik.md:134 klas:A -->
+### T-D-103 · kod-ryadok · рядок 134
 
 **Книга каже, дослівно:**
 
@@ -1894,8 +2116,8 @@
 
 ---
 
-<!-- fc id:T-D-096 sha:825633b5 src:dodatky/d-panik.md:129 klas:F -->
-### T-D-096 · proza · рядок 129
+<!-- fc id:T-D-104 sha:825633b5 src:dodatky/d-panik.md:149 klas:F -->
+### T-D-104 · proza · рядок 149
 
 **Книга каже, дослівно:**
 
@@ -1907,8 +2129,8 @@
 
 ---
 
-<!-- fc id:T-D-097 sha:0ebdcddf src:dodatky/d-panik.md:133 klas:E -->
-### T-D-097 · proza · рядок 133
+<!-- fc id:T-D-105 sha:0ebdcddf src:dodatky/d-panik.md:153 klas:E -->
+### T-D-105 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -1920,8 +2142,8 @@
 
 ---
 
-<!-- fc id:T-D-098 sha:3d92627f src:dodatky/d-panik.md:133 klas:E -->
-### T-D-098 · proza · рядок 133
+<!-- fc id:T-D-106 sha:3d92627f src:dodatky/d-panik.md:153 klas:E -->
+### T-D-106 · proza · рядок 153
 
 **Книга каже, дослівно:**
 
@@ -1933,8 +2155,8 @@
 
 ---
 
-<!-- fc id:T-D-099 sha:0590c64d src:dodatky/d-panik.md:138 klas:F -->
-### T-D-099 · proza · рядок 138
+<!-- fc id:T-D-107 sha:0590c64d src:dodatky/d-panik.md:158 klas:F -->
+### T-D-107 · proza · рядок 158
 
 **Книга каже, дослівно:**
 
@@ -1946,8 +2168,8 @@
 
 ---
 
-<!-- fc id:T-D-100 sha:fbdc8285 src:dodatky/d-panik.md:140 klas:F -->
-### T-D-100 · tablycya-shapka · рядок 140
+<!-- fc id:T-D-108 sha:fbdc8285 src:dodatky/d-panik.md:160 klas:F -->
+### T-D-108 · tablycya-shapka · рядок 160
 
 **Книга каже, дослівно:**
 
@@ -1959,8 +2181,8 @@
 
 ---
 
-<!-- fc id:T-D-101 sha:a63a39c2 src:dodatky/d-panik.md:141 klas:A -->
-### T-D-101 · komirka · рядок 141
+<!-- fc id:T-D-109 sha:a63a39c2 src:dodatky/d-panik.md:161 klas:A -->
+### T-D-109 · komirka · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -1985,8 +2207,8 @@
 
 ---
 
-<!-- fc id:T-D-102 sha:ad4c17ec src:dodatky/d-panik.md:141 klas:A -->
-### T-D-102 · komirka · рядок 141
+<!-- fc id:T-D-110 sha:ad4c17ec src:dodatky/d-panik.md:161 klas:A -->
+### T-D-110 · komirka · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -2011,8 +2233,8 @@
 
 ---
 
-<!-- fc id:T-D-103 sha:0164e3bb src:dodatky/d-panik.md:142 klas:A -->
-### T-D-103 · komirka · рядок 142
+<!-- fc id:T-D-111 sha:0164e3bb src:dodatky/d-panik.md:162 klas:A -->
+### T-D-111 · komirka · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -2037,8 +2259,8 @@
 
 ---
 
-<!-- fc id:T-D-104 sha:2d07f5b7 src:dodatky/d-panik.md:142 klas:A -->
-### T-D-104 · komirka · рядок 142
+<!-- fc id:T-D-112 sha:2d07f5b7 src:dodatky/d-panik.md:162 klas:A -->
+### T-D-112 · komirka · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -2063,8 +2285,8 @@
 
 ---
 
-<!-- fc id:T-D-105 sha:2bc6cd2b src:dodatky/d-panik.md:143 klas:A -->
-### T-D-105 · komirka · рядок 143
+<!-- fc id:T-D-113 sha:2bc6cd2b src:dodatky/d-panik.md:163 klas:A -->
+### T-D-113 · komirka · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -2089,8 +2311,8 @@
 
 ---
 
-<!-- fc id:T-D-106 sha:b805a263 src:dodatky/d-panik.md:143 klas:A -->
-### T-D-106 · komirka · рядок 143
+<!-- fc id:T-D-114 sha:b805a263 src:dodatky/d-panik.md:163 klas:A -->
+### T-D-114 · komirka · рядок 163
 
 **Книга каже, дослівно:**
 
@@ -2115,8 +2337,8 @@
 
 ---
 
-<!-- fc id:T-D-107 sha:47044db6 src:dodatky/d-panik.md:144 klas:A -->
-### T-D-107 · komirka · рядок 144
+<!-- fc id:T-D-115 sha:47044db6 src:dodatky/d-panik.md:164 klas:A -->
+### T-D-115 · komirka · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -2141,8 +2363,8 @@
 
 ---
 
-<!-- fc id:T-D-108 sha:6a21db9c src:dodatky/d-panik.md:144 klas:A -->
-### T-D-108 · komirka · рядок 144
+<!-- fc id:T-D-116 sha:6a21db9c src:dodatky/d-panik.md:164 klas:A -->
+### T-D-116 · komirka · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -2167,8 +2389,8 @@
 
 ---
 
-<!-- fc id:T-D-109 sha:168149c9 src:dodatky/d-panik.md:145 klas:A -->
-### T-D-109 · komirka · рядок 145
+<!-- fc id:T-D-117 sha:168149c9 src:dodatky/d-panik.md:165 klas:A -->
+### T-D-117 · komirka · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -2193,8 +2415,8 @@
 
 ---
 
-<!-- fc id:T-D-110 sha:e514eca1 src:dodatky/d-panik.md:145 klas:A -->
-### T-D-110 · komirka · рядок 145
+<!-- fc id:T-D-118 sha:e514eca1 src:dodatky/d-panik.md:165 klas:A -->
+### T-D-118 · komirka · рядок 165
 
 **Книга каже, дослівно:**
 
@@ -2219,8 +2441,8 @@
 
 ---
 
-<!-- fc id:T-D-111 sha:2f309750 src:dodatky/d-panik.md:146 klas:A -->
-### T-D-111 · komirka · рядок 146
+<!-- fc id:T-D-119 sha:2f309750 src:dodatky/d-panik.md:166 klas:A -->
+### T-D-119 · komirka · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -2245,8 +2467,8 @@
 
 ---
 
-<!-- fc id:T-D-112 sha:e82565ff src:dodatky/d-panik.md:146 klas:A -->
-### T-D-112 · komirka · рядок 146
+<!-- fc id:T-D-120 sha:e82565ff src:dodatky/d-panik.md:166 klas:A -->
+### T-D-120 · komirka · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -2271,8 +2493,8 @@
 
 ---
 
-<!-- fc id:T-D-113 sha:c946c98e src:dodatky/d-panik.md:147 klas:A -->
-### T-D-113 · komirka · рядок 147
+<!-- fc id:T-D-121 sha:c946c98e src:dodatky/d-panik.md:167 klas:A -->
+### T-D-121 · komirka · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -2295,8 +2517,8 @@
 
 ---
 
-<!-- fc id:T-D-114 sha:4adb2806 src:dodatky/d-panik.md:147 klas:A -->
-### T-D-114 · komirka · рядок 147
+<!-- fc id:T-D-122 sha:4adb2806 src:dodatky/d-panik.md:167 klas:A -->
+### T-D-122 · komirka · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -2319,8 +2541,8 @@
 
 ---
 
-<!-- fc id:T-D-115 sha:45fbc80e src:dodatky/d-panik.md:148 klas:A -->
-### T-D-115 · komirka · рядок 148
+<!-- fc id:T-D-123 sha:45fbc80e src:dodatky/d-panik.md:168 klas:A -->
+### T-D-123 · komirka · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -2343,8 +2565,8 @@
 
 ---
 
-<!-- fc id:T-D-116 sha:f25a0f20 src:dodatky/d-panik.md:148 klas:A -->
-### T-D-116 · komirka · рядок 148
+<!-- fc id:T-D-124 sha:f25a0f20 src:dodatky/d-panik.md:168 klas:A -->
+### T-D-124 · komirka · рядок 168
 
 **Книга каже, дослівно:**
 
@@ -2367,8 +2589,8 @@
 
 ---
 
-<!-- fc id:T-D-117 sha:930379a1 src:dodatky/d-panik.md:152 klas:E -->
-### T-D-117 · proza · рядок 152
+<!-- fc id:T-D-125 sha:930379a1 src:dodatky/d-panik.md:172 klas:E -->
+### T-D-125 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -2380,8 +2602,8 @@
 
 ---
 
-<!-- fc id:T-D-118 sha:6a177d47 src:dodatky/d-panik.md:154 klas:A -->
-### T-D-118 · proza · рядок 154
+<!-- fc id:T-D-126 sha:6a177d47 src:dodatky/d-panik.md:174 klas:A -->
+### T-D-126 · proza · рядок 174
 
 **Книга каже, дослівно:**
 
@@ -2404,8 +2626,8 @@
 
 ---
 
-<!-- fc id:T-D-119 sha:3a4f06b3 src:dodatky/d-panik.md:157 klas:E -->
-### T-D-119 · proza · рядок 157
+<!-- fc id:T-D-127 sha:3a4f06b3 src:dodatky/d-panik.md:177 klas:E -->
+### T-D-127 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -2417,8 +2639,8 @@
 
 ---
 
-<!-- fc id:T-D-120 sha:898ac6ac src:dodatky/d-panik.md:157 klas:F -->
-### T-D-120 · proza · рядок 157
+<!-- fc id:T-D-128 sha:898ac6ac src:dodatky/d-panik.md:177 klas:F -->
+### T-D-128 · proza · рядок 177
 
 **Книга каже, дослівно:**
 
@@ -2430,8 +2652,8 @@
 
 ---
 
-<!-- fc id:T-D-121 sha:ea9dc162 src:dodatky/d-panik.md:164 klas:F -->
-### T-D-121 · tablycya-shapka · рядок 164
+<!-- fc id:T-D-129 sha:ea9dc162 src:dodatky/d-panik.md:184 klas:F -->
+### T-D-129 · tablycya-shapka · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -2443,8 +2665,8 @@
 
 ---
 
-<!-- fc id:T-D-122 sha:3f7f05f2 src:dodatky/d-panik.md:165 klas:A -->
-### T-D-122 · komirka · рядок 165
+<!-- fc id:T-D-130 sha:3f7f05f2 src:dodatky/d-panik.md:185 klas:A -->
+### T-D-130 · komirka · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -2486,8 +2708,8 @@
 
 ---
 
-<!-- fc id:T-D-123 sha:e1369196 src:dodatky/d-panik.md:165 klas:A -->
-### T-D-123 · komirka · рядок 165
+<!-- fc id:T-D-131 sha:e1369196 src:dodatky/d-panik.md:185 klas:A -->
+### T-D-131 · komirka · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -2529,8 +2751,8 @@
 
 ---
 
-<!-- fc id:T-D-124 sha:8bc4f39c src:dodatky/d-panik.md:166 klas:A -->
-### T-D-124 · komirka · рядок 166
+<!-- fc id:T-D-132 sha:8bc4f39c src:dodatky/d-panik.md:186 klas:A -->
+### T-D-132 · komirka · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -2572,8 +2794,8 @@
 
 ---
 
-<!-- fc id:T-D-125 sha:28cc86f2 src:dodatky/d-panik.md:166 klas:A -->
-### T-D-125 · komirka · рядок 166
+<!-- fc id:T-D-133 sha:28cc86f2 src:dodatky/d-panik.md:186 klas:A -->
+### T-D-133 · komirka · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -2615,8 +2837,8 @@
 
 ---
 
-<!-- fc id:T-D-126 sha:65e5b66a src:dodatky/d-panik.md:167 klas:A -->
-### T-D-126 · komirka · рядок 167
+<!-- fc id:T-D-134 sha:65e5b66a src:dodatky/d-panik.md:187 klas:A -->
+### T-D-134 · komirka · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -2658,8 +2880,8 @@
 
 ---
 
-<!-- fc id:T-D-127 sha:89d4b0ed src:dodatky/d-panik.md:167 klas:A -->
-### T-D-127 · komirka · рядок 167
+<!-- fc id:T-D-135 sha:89d4b0ed src:dodatky/d-panik.md:187 klas:A -->
+### T-D-135 · komirka · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -2701,8 +2923,8 @@
 
 ---
 
-<!-- fc id:T-D-128 sha:0e5b84a2 src:dodatky/d-panik.md:168 klas:A -->
-### T-D-128 · komirka · рядок 168
+<!-- fc id:T-D-136 sha:0e5b84a2 src:dodatky/d-panik.md:188 klas:A -->
+### T-D-136 · komirka · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -2744,8 +2966,8 @@
 
 ---
 
-<!-- fc id:T-D-129 sha:b8918b59 src:dodatky/d-panik.md:168 klas:A -->
-### T-D-129 · komirka · рядок 168
+<!-- fc id:T-D-137 sha:b8918b59 src:dodatky/d-panik.md:188 klas:A -->
+### T-D-137 · komirka · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -2787,8 +3009,8 @@
 
 ---
 
-<!-- fc id:T-D-130 sha:c4d149ff src:dodatky/d-panik.md:169 klas:A -->
-### T-D-130 · komirka · рядок 169
+<!-- fc id:T-D-138 sha:c4d149ff src:dodatky/d-panik.md:189 klas:A -->
+### T-D-138 · komirka · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -2830,8 +3052,8 @@
 
 ---
 
-<!-- fc id:T-D-131 sha:46508737 src:dodatky/d-panik.md:169 klas:A -->
-### T-D-131 · komirka · рядок 169
+<!-- fc id:T-D-139 sha:46508737 src:dodatky/d-panik.md:189 klas:A -->
+### T-D-139 · komirka · рядок 189
 
 **Книга каже, дослівно:**
 
@@ -2873,8 +3095,8 @@
 
 ---
 
-<!-- fc id:T-D-132 sha:d96111a7 src:dodatky/d-panik.md:170 klas:A -->
-### T-D-132 · komirka · рядок 170
+<!-- fc id:T-D-140 sha:d96111a7 src:dodatky/d-panik.md:190 klas:A -->
+### T-D-140 · komirka · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -2916,8 +3138,8 @@
 
 ---
 
-<!-- fc id:T-D-133 sha:439a9b98 src:dodatky/d-panik.md:170 klas:A -->
-### T-D-133 · komirka · рядок 170
+<!-- fc id:T-D-141 sha:439a9b98 src:dodatky/d-panik.md:190 klas:A -->
+### T-D-141 · komirka · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -2959,8 +3181,8 @@
 
 ---
 
-<!-- fc id:T-D-134 sha:7c359228 src:dodatky/d-panik.md:171 klas:A -->
-### T-D-134 · komirka · рядок 171
+<!-- fc id:T-D-142 sha:7c359228 src:dodatky/d-panik.md:191 klas:A -->
+### T-D-142 · komirka · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -2989,8 +3211,8 @@
 
 ---
 
-<!-- fc id:T-D-135 sha:4c606b3e src:dodatky/d-panik.md:171 klas:A -->
-### T-D-135 · komirka · рядок 171
+<!-- fc id:T-D-143 sha:4c606b3e src:dodatky/d-panik.md:191 klas:A -->
+### T-D-143 · komirka · рядок 191
 
 **Книга каже, дослівно:**
 
@@ -3019,8 +3241,8 @@
 
 ---
 
-<!-- fc id:T-D-136 sha:8712f714 src:dodatky/d-panik.md:172 klas:A -->
-### T-D-136 · komirka · рядок 172
+<!-- fc id:T-D-144 sha:8712f714 src:dodatky/d-panik.md:192 klas:A -->
+### T-D-144 · komirka · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -3062,8 +3284,8 @@
 
 ---
 
-<!-- fc id:T-D-137 sha:4e40193e src:dodatky/d-panik.md:172 klas:A -->
-### T-D-137 · komirka · рядок 172
+<!-- fc id:T-D-145 sha:4e40193e src:dodatky/d-panik.md:192 klas:A -->
+### T-D-145 · komirka · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -3085,8 +3307,8 @@
 
 ---
 
-<!-- fc id:T-D-138 sha:a66ac160 src:dodatky/d-panik.md:177 klas:E -->
-### T-D-138 · tablycya · рядок 177
+<!-- fc id:T-D-146 sha:a66ac160 src:dodatky/d-panik.md:197 klas:E -->
+### T-D-146 · tablycya · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -3098,8 +3320,8 @@
 
 ---
 
-<!-- fc id:T-D-139 sha:9e0b8e4a src:dodatky/d-panik.md:179 klas:F -->
-### T-D-139 · tablycya · рядок 179
+<!-- fc id:T-D-147 sha:9e0b8e4a src:dodatky/d-panik.md:199 klas:F -->
+### T-D-147 · tablycya · рядок 199
 
 **Книга каже, дослівно:**
 
@@ -3111,8 +3333,8 @@
 
 ---
 
-<!-- fc id:T-D-140 sha:f82d7189 src:dodatky/d-panik.md:180 klas:F -->
-### T-D-140 · tablycya · рядок 180
+<!-- fc id:T-D-148 sha:f82d7189 src:dodatky/d-panik.md:200 klas:F -->
+### T-D-148 · tablycya · рядок 200
 
 **Книга каже, дослівно:**
 
@@ -3124,8 +3346,8 @@
 
 ---
 
-<!-- fc id:T-D-141 sha:74974165 src:dodatky/d-panik.md:181 klas:F -->
-### T-D-141 · tablycya · рядок 181
+<!-- fc id:T-D-149 sha:74974165 src:dodatky/d-panik.md:201 klas:F -->
+### T-D-149 · tablycya · рядок 201
 
 **Книга каже, дослівно:**
 
@@ -3137,8 +3359,8 @@
 
 ---
 
-<!-- fc id:T-D-142 sha:b89ae2bf src:dodatky/d-panik.md:182 klas:F -->
-### T-D-142 · tablycya · рядок 182
+<!-- fc id:T-D-150 sha:b89ae2bf src:dodatky/d-panik.md:202 klas:A -->
+### T-D-150 · tablycya · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -3146,12 +3368,26 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/fatal-errors.rst
+- **Дослівно з джерела:**
+  > Backtrace: 0x400e14ed:0x3ffb5030 0x400d0802:0x3ffb5050
+  > 0x400e14ed: app_main at /Users/user/esp/example/main/main.cpp:36
+  > 
+  > 0x400d0802: main_task at /Users/user/esp/esp-idf/components/…/cpu_start.c:470
+- **Спосіб і дата:** перевірено М1 власним curl після знахідки агента пулу (шматок 7), 2026-08-26
+- **Нотатка:** **Знахідку агента відхилено, і причина варта запису.**
+Агент навів речення з `fatal-errors.rst` — «Fatal error location is the top line, and subsequent lines show the call stack» — і зробив висновок, що книга радить читати в протилежний бік.
+Це не так. Книга каже: «Нижній кадр — де почалося, верхній — де впало». Тобто про **розташування** кадрів книга каже те саме, що джерело: збій угорі, зовнішній виклик унизу. Розшифрований приклад це підтверджує дослівно — `app_main` (де впало) стоїть першим, `main_task` (хто викликав) під ним.
+Розходиться не факт, а **порада, з якого кінця починати**. ESP-IDF радить починати з верхнього рядка, книга — простежити ланцюг від початку виконання. Обидві поради сумісні з тією самою розкладкою.
+Лишаю як є: для того, хто вперше бачить backtrace, рух від відомого (звідки все почалося) до невідомого (де впало) зрозуміліший. Але записую сам факт розбіжності порад — якщо колись знадобиться, у книзі є місце для одного речення про рекомендацію ESP-IDF.
+Ширший висновок для роботи з пулом: **звіт агента — знахідка, а не вирок**. Три з чотирьох його розбіжностей були справжні; ця — ні, і відрізнити можна було лише повторною перевіркою джерела.
+- **Прохід:** pass-35-vlasna-pomylka-boot
 
 ---
 
-<!-- fc id:T-D-143 sha:6ef4b75c src:dodatky/d-panik.md:185 klas:F -->
-### T-D-143 · proza · рядок 185
+<!-- fc id:T-D-151 sha:6ef4b75c src:dodatky/d-panik.md:205 klas:F -->
+### T-D-151 · proza · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -3163,8 +3399,8 @@
 
 ---
 
-<!-- fc id:T-D-144 sha:f710df6f src:dodatky/d-panik.md:187 klas:C -->
-### T-D-144 · proza · рядок 187
+<!-- fc id:T-D-152 sha:f710df6f src:dodatky/d-panik.md:207 klas:C -->
+### T-D-152 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -3180,8 +3416,8 @@
 
 ---
 
-<!-- fc id:T-D-145 sha:4c0a3cc5 src:dodatky/d-panik.md:187 klas:A -->
-### T-D-145 · proza · рядок 187
+<!-- fc id:T-D-153 sha:4c0a3cc5 src:dodatky/d-panik.md:207 klas:A -->
+### T-D-153 · proza · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -3223,8 +3459,8 @@
 
 ---
 
-<!-- fc id:T-D-146 sha:7ff566f8 src:dodatky/d-panik.md:190 klas:E -->
-### T-D-146 · proza · рядок 190
+<!-- fc id:T-D-154 sha:7ff566f8 src:dodatky/d-panik.md:210 klas:E -->
+### T-D-154 · proza · рядок 210
 
 **Книга каже, дослівно:**
 
@@ -3236,8 +3472,8 @@
 
 ---
 
-<!-- fc id:T-D-147 sha:d09dfd9d src:dodatky/d-panik.md:196 klas:E -->
-### T-D-147 · proza · рядок 196
+<!-- fc id:T-D-155 sha:d09dfd9d src:dodatky/d-panik.md:216 klas:E -->
+### T-D-155 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -3249,8 +3485,8 @@
 
 ---
 
-<!-- fc id:T-D-148 sha:655ff0e7 src:dodatky/d-panik.md:198 klas:K -->
-### T-D-148 · kod · рядок 198
+<!-- fc id:T-D-156 sha:655ff0e7 src:dodatky/d-panik.md:218 klas:K -->
+### T-D-156 · kod · рядок 218
 
 **Книга каже, дослівно:**
 
@@ -3283,8 +3519,8 @@
 
 ---
 
-<!-- fc id:T-D-149 sha:a1afa6b3 src:dodatky/d-panik.md:201 klas:F -->
-### T-D-149 · kod-ryadok · рядок 201
+<!-- fc id:T-D-157 sha:a1afa6b3 src:dodatky/d-panik.md:221 klas:F -->
+### T-D-157 · kod-ryadok · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -3296,8 +3532,8 @@
 
 ---
 
-<!-- fc id:T-D-150 sha:b8253fd9 src:dodatky/d-panik.md:206 klas:A -->
-### T-D-150 · proza · рядок 206
+<!-- fc id:T-D-158 sha:b8253fd9 src:dodatky/d-panik.md:226 klas:A -->
+### T-D-158 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -3324,8 +3560,8 @@
 
 ---
 
-<!-- fc id:T-D-151 sha:d413fc69 src:dodatky/d-panik.md:206 klas:A -->
-### T-D-151 · proza · рядок 206
+<!-- fc id:T-D-159 sha:d413fc69 src:dodatky/d-panik.md:226 klas:A -->
+### T-D-159 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -3352,8 +3588,8 @@
 
 ---
 
-<!-- fc id:T-D-152 sha:15a9044c src:dodatky/d-panik.md:206 klas:A -->
-### T-D-152 · proza · рядок 206
+<!-- fc id:T-D-160 sha:15a9044c src:dodatky/d-panik.md:226 klas:A -->
+### T-D-160 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -3380,8 +3616,8 @@
 
 ---
 
-<!-- fc id:T-D-153 sha:12db62c5 src:dodatky/d-panik.md:211 klas:E -->
-### T-D-153 · proza · рядок 211
+<!-- fc id:T-D-161 sha:12db62c5 src:dodatky/d-panik.md:231 klas:E -->
+### T-D-161 · proza · рядок 231
 
 **Книга каже, дослівно:**
 
@@ -3393,8 +3629,8 @@
 
 ---
 
-<!-- fc id:T-D-154 sha:77e4f2d7 src:dodatky/d-panik.md:213 klas:E -->
-### T-D-154 · proza · рядок 213
+<!-- fc id:T-D-162 sha:77e4f2d7 src:dodatky/d-panik.md:233 klas:E -->
+### T-D-162 · proza · рядок 233
 
 **Книга каже, дослівно:**
 
@@ -3406,8 +3642,8 @@
 
 ---
 
-<!-- fc id:T-D-155 sha:113645cd src:dodatky/d-panik.md:215 klas:K -->
-### T-D-155 · kod · рядок 215
+<!-- fc id:T-D-163 sha:113645cd src:dodatky/d-panik.md:235 klas:K -->
+### T-D-163 · kod · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -3451,8 +3687,8 @@
 
 ---
 
-<!-- fc id:T-D-156 sha:61ffbc10 src:dodatky/d-panik.md:219 klas:E -->
-### T-D-156 · proza · рядок 219
+<!-- fc id:T-D-164 sha:61ffbc10 src:dodatky/d-panik.md:239 klas:E -->
+### T-D-164 · proza · рядок 239
 
 **Книга каже, дослівно:**
 
@@ -3464,8 +3700,8 @@
 
 ---
 
-<!-- fc id:T-D-157 sha:ef04690f src:dodatky/d-panik.md:224 klas:E -->
-### T-D-157 · tablycya · рядок 224
+<!-- fc id:T-D-165 sha:ef04690f src:dodatky/d-panik.md:244 klas:E -->
+### T-D-165 · tablycya · рядок 244
 
 **Книга каже, дослівно:**
 
@@ -3477,8 +3713,8 @@
 
 ---
 
-<!-- fc id:T-D-158 sha:200e947a src:dodatky/d-panik.md:226 klas:A -->
-### T-D-158 · tablycya · рядок 226
+<!-- fc id:T-D-166 sha:200e947a src:dodatky/d-panik.md:246 klas:A -->
+### T-D-166 · tablycya · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -3502,8 +3738,8 @@
 
 ---
 
-<!-- fc id:T-D-159 sha:6747d938 src:dodatky/d-panik.md:227 klas:A -->
-### T-D-159 · tablycya · рядок 227
+<!-- fc id:T-D-167 sha:6747d938 src:dodatky/d-panik.md:247 klas:A -->
+### T-D-167 · tablycya · рядок 247
 
 **Книга каже, дослівно:**
 
@@ -3527,8 +3763,8 @@
 
 ---
 
-<!-- fc id:T-D-160 sha:0e926220 src:dodatky/d-panik.md:228 klas:A -->
-### T-D-160 · tablycya · рядок 228
+<!-- fc id:T-D-168 sha:0e926220 src:dodatky/d-panik.md:248 klas:A -->
+### T-D-168 · tablycya · рядок 248
 
 **Книга каже, дослівно:**
 
@@ -3552,8 +3788,8 @@
 
 ---
 
-<!-- fc id:T-D-161 sha:c629c9be src:dodatky/d-panik.md:229 klas:A -->
-### T-D-161 · tablycya · рядок 229
+<!-- fc id:T-D-169 sha:c629c9be src:dodatky/d-panik.md:249 klas:A -->
+### T-D-169 · tablycya · рядок 249
 
 **Книга каже, дослівно:**
 
@@ -3595,8 +3831,8 @@
 
 ---
 
-<!-- fc id:T-D-162 sha:69aa2c68 src:dodatky/d-panik.md:230 klas:F -->
-### T-D-162 · tablycya · рядок 230
+<!-- fc id:T-D-170 sha:69aa2c68 src:dodatky/d-panik.md:250 klas:F -->
+### T-D-170 · tablycya · рядок 250
 
 **Книга каже, дослівно:**
 
@@ -3608,8 +3844,8 @@
 
 ---
 
-<!-- fc id:T-D-163 sha:4dc00872 src:dodatky/d-panik.md:231 klas:A -->
-### T-D-163 · tablycya · рядок 231
+<!-- fc id:T-D-171 sha:4dc00872 src:dodatky/d-panik.md:251 klas:A -->
+### T-D-171 · tablycya · рядок 251
 
 **Книга каже, дослівно:**
 
@@ -3637,8 +3873,8 @@
 
 ---
 
-<!-- fc id:T-D-164 sha:1e8945f3 src:dodatky/d-panik.md:234 klas:A -->
-### T-D-164 · proza · рядок 234
+<!-- fc id:T-D-172 sha:1e8945f3 src:dodatky/d-panik.md:254 klas:A -->
+### T-D-172 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -3662,8 +3898,8 @@
 
 ---
 
-<!-- fc id:T-D-165 sha:7076a5df src:dodatky/d-panik.md:234 klas:A -->
-### T-D-165 · proza · рядок 234
+<!-- fc id:T-D-173 sha:7076a5df src:dodatky/d-panik.md:254 klas:A -->
+### T-D-173 · proza · рядок 254
 
 **Книга каже, дослівно:**
 
@@ -3687,8 +3923,8 @@
 
 ---
 
-<!-- fc id:T-D-166 sha:dbf57f9c src:dodatky/d-panik.md:238 klas:A -->
-### T-D-166 · proza · рядок 238
+<!-- fc id:T-D-174 sha:dbf57f9c src:dodatky/d-panik.md:258 klas:A -->
+### T-D-174 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -3712,8 +3948,8 @@
 
 ---
 
-<!-- fc id:T-D-167 sha:68e01a8c src:dodatky/d-panik.md:238 klas:F -->
-### T-D-167 · proza · рядок 238
+<!-- fc id:T-D-175 sha:68e01a8c src:dodatky/d-panik.md:258 klas:F -->
+### T-D-175 · proza · рядок 258
 
 **Книга каже, дослівно:**
 
@@ -3725,8 +3961,8 @@
 
 ---
 
-<!-- fc id:T-D-168 sha:123d0b6e src:dodatky/d-panik.md:241 klas:A -->
-### T-D-168 · proza · рядок 241
+<!-- fc id:T-D-176 sha:123d0b6e src:dodatky/d-panik.md:261 klas:A -->
+### T-D-176 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -3750,8 +3986,8 @@
 
 ---
 
-<!-- fc id:T-D-169 sha:290e2e50 src:dodatky/d-panik.md:241 klas:E -->
-### T-D-169 · proza · рядок 241
+<!-- fc id:T-D-177 sha:290e2e50 src:dodatky/d-panik.md:261 klas:E -->
+### T-D-177 · proza · рядок 261
 
 **Книга каже, дослівно:**
 
@@ -3763,8 +3999,8 @@
 
 ---
 
-<!-- fc id:T-D-170 sha:0140364c src:dodatky/d-panik.md:245 klas:A -->
-### T-D-170 · proza · рядок 245
+<!-- fc id:T-D-178 sha:0140364c src:dodatky/d-panik.md:265 klas:A -->
+### T-D-178 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -3788,8 +4024,8 @@
 
 ---
 
-<!-- fc id:T-D-171 sha:a135e9c8 src:dodatky/d-panik.md:245 klas:F -->
-### T-D-171 · proza · рядок 245
+<!-- fc id:T-D-179 sha:a135e9c8 src:dodatky/d-panik.md:265 klas:F -->
+### T-D-179 · proza · рядок 265
 
 **Книга каже, дослівно:**
 
@@ -3801,8 +4037,8 @@
 
 ---
 
-<!-- fc id:T-D-172 sha:760e202b src:dodatky/d-panik.md:249 klas:A -->
-### T-D-172 · proza · рядок 249
+<!-- fc id:T-D-180 sha:760e202b src:dodatky/d-panik.md:269 klas:A -->
+### T-D-180 · proza · рядок 269
 
 **Книга каже, дослівно:**
 
@@ -3830,8 +4066,8 @@
 
 ---
 
-<!-- fc id:T-D-173 sha:cbdc8d7f src:dodatky/d-panik.md:254 klas:F -->
-### T-D-173 · proza · рядок 254
+<!-- fc id:T-D-181 sha:cbdc8d7f src:dodatky/d-panik.md:274 klas:F -->
+### T-D-181 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -3843,8 +4079,8 @@
 
 ---
 
-<!-- fc id:T-D-174 sha:61db3e19 src:dodatky/d-panik.md:254 klas:F -->
-### T-D-174 · proza · рядок 254
+<!-- fc id:T-D-182 sha:61db3e19 src:dodatky/d-panik.md:274 klas:F -->
+### T-D-182 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -3856,8 +4092,8 @@
 
 ---
 
-<!-- fc id:T-D-175 sha:8d7da41f src:dodatky/d-panik.md:254 klas:F -->
-### T-D-175 · proza · рядок 254
+<!-- fc id:T-D-183 sha:8d7da41f src:dodatky/d-panik.md:274 klas:F -->
+### T-D-183 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -3869,8 +4105,8 @@
 
 ---
 
-<!-- fc id:T-D-176 sha:223bf487 src:dodatky/d-panik.md:254 klas:E -->
-### T-D-176 · proza · рядок 254
+<!-- fc id:T-D-184 sha:223bf487 src:dodatky/d-panik.md:274 klas:E -->
+### T-D-184 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -3882,8 +4118,8 @@
 
 ---
 
-<!-- fc id:T-D-177 sha:6a7c80ec src:dodatky/d-panik.md:254 klas:F -->
-### T-D-177 · proza · рядок 254
+<!-- fc id:T-D-185 sha:6a7c80ec src:dodatky/d-panik.md:274 klas:F -->
+### T-D-185 · proza · рядок 274
 
 **Книга каже, дослівно:**
 
@@ -3895,8 +4131,8 @@
 
 ---
 
-<!-- fc id:T-D-178 sha:4304fde6 src:dodatky/d-panik.md:262 klas:F -->
-### T-D-178 · proza · рядок 262
+<!-- fc id:T-D-186 sha:4304fde6 src:dodatky/d-panik.md:282 klas:F -->
+### T-D-186 · proza · рядок 282
 
 **Книга каже, дослівно:**
 
@@ -3908,8 +4144,8 @@
 
 ---
 
-<!-- fc id:T-D-179 sha:91a1f9a6 src:dodatky/d-panik.md:262 klas:E -->
-### T-D-179 · proza · рядок 262
+<!-- fc id:T-D-187 sha:91a1f9a6 src:dodatky/d-panik.md:282 klas:E -->
+### T-D-187 · proza · рядок 282
 
 **Книга каже, дослівно:**
 
@@ -3921,8 +4157,8 @@
 
 ---
 
-<!-- fc id:T-D-180 sha:00df861d src:dodatky/d-panik.md:266 klas:F -->
-### T-D-180 · proza · рядок 266
+<!-- fc id:T-D-188 sha:00df861d src:dodatky/d-panik.md:286 klas:F -->
+### T-D-188 · proza · рядок 286
 
 **Книга каже, дослівно:**
 
@@ -3934,8 +4170,8 @@
 
 ---
 
-<!-- fc id:T-D-181 sha:9a6f1773 src:dodatky/d-panik.md:271 klas:E -->
-### T-D-181 · proza · рядок 271
+<!-- fc id:T-D-189 sha:9a6f1773 src:dodatky/d-panik.md:291 klas:E -->
+### T-D-189 · proza · рядок 291
 
 **Книга каже, дослівно:**
 
@@ -3947,8 +4183,8 @@
 
 ---
 
-<!-- fc id:T-D-182 sha:c50282dd src:dodatky/d-panik.md:271 klas:E -->
-### T-D-182 · proza · рядок 271
+<!-- fc id:T-D-190 sha:c50282dd src:dodatky/d-panik.md:291 klas:E -->
+### T-D-190 · proza · рядок 291
 
 **Книга каже, дослівно:**
 
@@ -3960,8 +4196,8 @@
 
 ---
 
-<!-- fc id:T-D-183 sha:71f2dcf5 src:dodatky/d-panik.md:274 klas:F -->
-### T-D-183 · proza · рядок 274
+<!-- fc id:T-D-191 sha:71f2dcf5 src:dodatky/d-panik.md:294 klas:F -->
+### T-D-191 · proza · рядок 294
 
 **Книга каже, дослівно:**
 
@@ -3973,8 +4209,8 @@
 
 ---
 
-<!-- fc id:T-D-184 sha:d8b5c935 src:dodatky/d-panik.md:274 klas:E -->
-### T-D-184 · proza · рядок 274
+<!-- fc id:T-D-192 sha:d8b5c935 src:dodatky/d-panik.md:294 klas:E -->
+### T-D-192 · proza · рядок 294
 
 **Книга каже, дослівно:**
 
