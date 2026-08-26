@@ -36,6 +36,65 @@ NOTE_CLASSES = {
 }
 
 RE_HEADING = re.compile(r"^(#{1,5})(\s)")
+
+# Перехресні посилання «розділ 21» і «картка К5» у джерелах пишуться
+# звичайним текстом — так їх зручно читати й правити. У книзі вони мають
+# бути посиланнями на якорі (Р7): і клікабельними в PDF, і перевірюваними
+# через linkcheck. Перетворення робиться тут, а не в джерелах.
+RE_ROZDIL = re.compile(r"\b(розділ(?:и|ів|ах|у|і)?)\s+((?:\d{2}|\d)"
+                       r"(?:\s*(?:,|та|і|—|–)\s*(?:\d{2}|\d))*)\b")
+RE_KARTKA = re.compile(r"\b(картк(?:а|и|у|ою|ах|ам)?)\s+(К\d{1,2})\b")
+RE_NUM = re.compile(r"\d{1,2}")
+
+
+def _slug_maps() -> tuple[dict, dict]:
+    """Номер розділу → слаг, номер картки → слаг. З імен файлів і якорів."""
+    rozdily, kartky = {}, {}
+    for f in sorted((ROOT / "manual").glob("*.md")):
+        num = f.name.split("-", 1)[0]
+        m = RE_ANCHOR_DEF.search(f.read_text(encoding="utf-8"))
+        if m and num.isdigit():
+            rozdily[int(num)] = m.group(1)
+    for f in sorted((ROOT / "kartky").glob("k*.md")):
+        num = f.name[1:3]
+        m = RE_ANCHOR_DEF.search(f.read_text(encoding="utf-8"))
+        if m and num.isdigit():
+            kartky[int(num)] = m.group(1)
+    return rozdily, kartky
+
+
+RE_ANCHOR_DEF = re.compile(r"\{#([a-z0-9][a-z0-9-]*)\}")
+_ROZDILY, _KARTKY = None, None
+
+
+def linkify(line: str) -> str:
+    """Замінює «розділ 21» і «картку К5» на посилання на відповідні якорі."""
+    global _ROZDILY, _KARTKY
+    if _ROZDILY is None:
+        _ROZDILY, _KARTKY = _slug_maps()
+
+    def rozdil(m):
+        slova = m.group(2)
+        nums = RE_NUM.findall(slova)
+        # посилання ставимо лише коли всі номери відомі
+        if not all(int(n) in _ROZDILY for n in nums):
+            return m.group(0)
+        out, pos = [], 0
+        for mm in RE_NUM.finditer(slova):
+            out.append(slova[pos:mm.start()])
+            n = int(mm.group(0))
+            out.append(f"[{mm.group(0)}](#{_ROZDILY[n]})")
+            pos = mm.end()
+        out.append(slova[pos:])
+        return m.group(1) + " " + "".join(out)
+
+    def kartka(m):
+        n = int(m.group(2)[1:])
+        if n not in _KARTKY:
+            return m.group(0)
+        return f"{m.group(1)} [{m.group(2)}](#{_KARTKY[n]})"
+
+    return RE_KARTKA.sub(kartka, RE_ROZDIL.sub(rozdil, line))
 RE_DIV_OPEN = re.compile(r"^:::+\s*([a-z-]+)\s*$")
 RE_DIV_CLOSE = re.compile(r"^:::+\s*$")
 RE_SCOPE = re.compile(r"\[\[([^\]\[]+)\]\]")
@@ -79,7 +138,7 @@ def preprocess(md: str, src: Path) -> str:
                 p.strip() for p in m.group(1).split(",")) + '")`{=typst}',
             line,
         )
-        out.append(line)
+        out.append(linkify(line))
 
     if stack:
         sys.exit(f"{src}: не закрито блок(и) {stack}")
