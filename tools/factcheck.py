@@ -371,21 +371,78 @@ def stale() -> int:
     return 0
 
 
+NARYAD = FC / "NARYAD-nedostupni.md"
+
+
 def blocked() -> int:
-    """Джерела класу C — те, що має закрити людина з відкритим доступом."""
-    dzherela = Counter()
+    """Наряд на винос: усе, що впирається в недосяжне звідси джерело.
+
+    Клас C — не «не перевірили», а «перевірити звідси неможливо». Різниця
+    між ними головна: перше закривається роботою тут, друге не
+    закривається ніколи, скільки не працюй, і мусить поїхати в інше
+    середовище.
+
+    Тому команда не просто рахує, а **пише документ**, придатний віддати
+    людині з відкритим доступом: джерело, скільки тверджень від нього
+    залежать, що саме в ньому шукати і які твердження книги це закриє.
+    Уся підготовча робота вже зроблена — лишається відкрити документ.
+    """
+    grupy: dict[str, dict] = {}
     for z in zbir_usikh():
         if z["klas"] != "C":
             continue
-        m = re.search(r"\*\*Джерело:\*\*\s*(\S+)", z["tilo"])
-        if m:
-            dzherela[m.group(1)] += 1
-    if not dzherela:
+        mu = re.search(r"\*\*Джерело:\*\*[ \t]*(.+)", z["tilo"])
+        u = " ".join(mu.group(1).split()) if mu else "—"
+        sh = (re.search(r"\*\*Що шукати в джерелі:\*\*\s*(.+)", z["tilo"]) or [None, ""])[1]
+        m = re.search(r"\*\*Книга каже, дослівно:\*\*\n\n(.+?)\n\n\*\*Доказ", z["tilo"], re.S)
+        txt = " ".join(m.group(1).replace("> ", "").split()) if m else ""
+        g = grupy.setdefault(u, {"shukaty": set(), "tverdzhennya": []})
+        if sh:
+            g["shukaty"].add(sh.strip())
+        g["tverdzhennya"].append((z["id"], z["src"], txt))
+
+    if not grupy:
         print("записів класу C немає")
         return 0
-    print(f"\nджерел, недоступних із цього середовища: {len(dzherela)}\n")
-    for u, n in dzherela.most_common():
-        print(f"  {n:>4} тверджень   {u}")
+
+    vsjogo = sum(len(g["tverdzhennya"]) for g in grupy.values())
+    ryadky = [
+        "# Наряд: джерела, недосяжні з цього середовища\n",
+        "**Це не перелік помилок.** Це перелік тверджень книги, які "
+        "неможливо звірити з першоджерелом із контейнера, де книга "
+        "робилася: політика egress відповідає `403` на домени виробників "
+        "і стандартів.\n",
+        "Кожен пункт підготовано до закриття: named джерело, що саме в "
+        "ньому шукати, і які саме твердження книги від нього залежать. "
+        "Людині з відкритим доступом лишається відкрити документ і "
+        "звірити — робота вимірюється хвилинами на джерело.\n",
+        "Закриті пункти повертаються сюди як докази класу `A` або `B` у "
+        "`factcheck/dokazy/`, після чого цей файл перегенеровується "
+        "(`tools/factcheck.py blocked`) і коротшає.\n",
+        f"Станом на генерацію: **{vsjogo}** тверджень від "
+        f"**{len(grupy)}** джерел.\n",
+        "---\n",
+    ]
+    for u, g in sorted(grupy.items(), key=lambda kv: -len(kv[1]["tverdzhennya"])):
+        ryadky.append(f"## {u}\n")
+        ryadky.append(f"Залежить тверджень: **{len(g['tverdzhennya'])}**\n")
+        if g["shukaty"]:
+            ryadky.append("**Що шукати:**\n")
+            for s in sorted(g["shukaty"]):
+                ryadky.append(f"- {s}")
+            ryadky.append("")
+        ryadky.append("| Твердження | Де в книзі | Дослівно |")
+        ryadky.append("|---|---|---|")
+        for ident, src, txt in g["tverdzhennya"]:
+            t = txt.replace("|", "\\|")[:160]
+            ryadky.append(f"| `{ident}` | `{src}` | {t} |")
+        ryadky.append("\n---\n")
+    NARYAD.write_text("\n".join(ryadky), encoding="utf-8")
+
+    print(f"\n{NARYAD.relative_to(ROOT)}: {vsjogo} тверджень від "
+          f"{len(grupy)} джерел\n")
+    for u, g in sorted(grupy.items(), key=lambda kv: -len(kv[1]["tverdzhennya"])):
+        print(f"  {len(g['tverdzhennya']):>4}   {u}")
     return 0
 
 
