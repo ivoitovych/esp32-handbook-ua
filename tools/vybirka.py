@@ -50,7 +50,11 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 import yaml
+
+import vyvantazh
 
 ROOT = Path(__file__).resolve().parent.parent
 GRUPY = ("manual", "kartky", "dodatky", "inserts")
@@ -134,18 +138,16 @@ ZVIT = ROOT / "factcheck" / "MIRA-E.md"
 
 def zvesty(katalog: Path) -> int:
     """Звести вивантаження випадкової вибірки в міру з похибкою."""
-    zap: list[dict] = []
-    bidy: list[str] = []
-    for f in sorted(katalog.glob("*.yaml")):
-        try:
-            recs = yaml.safe_load(f.read_text(encoding="utf-8")) or []
-        except yaml.YAMLError:
-            bidy.append(f.name)
-            continue
-        for z in recs:
-            if isinstance(z, dict):
-                z["_hto"] = f.stem.split("-")[0]
-                zap.append(z)
+    # Перший прогін цієї міри втратив 40 із 160 одиниць на зламаному
+    # YAML — і втратив **не випадково**: обидва помічники, чиї файли
+    # впали, давали найвищу частку «має референта». Тобто мовчазна
+    # втрата зсувала саме те число, яке міряють, і зсувала вниз.
+    #
+    # Звідси `tools/vyvantazh.py`: механічне лагодження того, що
+    # написано, і поіменний перелік полагодженого.
+    zap, polagodzheni, bidy = vyvantazh.chytaty(katalog)
+    for z in zap:
+        z["_hto"] = str(z.get("_fayl", "?")).split("-")[0]
 
     n = len(zap)
     if not n:
@@ -220,6 +222,14 @@ def zvesty(katalog: Path) -> int:
 Це не привід відкинути міру. Порядок величини вона встановлює твердо:
 йдеться про **сотні** хибно віднесених одиниць, не про десяток.
 """]
+    if polagodzheni:
+        r.append("\n## Полагоджені вивантаження\n")
+        r.append("Механічно виправлено (значення взято в лапки), вміст "
+                 "не змінено: "
+                 + ", ".join(f"`{b}`" for b in polagodzheni) + ".\n")
+        r.append("Причина в брифінгу супровідника, не в помічниках: "
+                 "формат вимагав писати двокрапку всередині значення. "
+                 "Див. `tools/vyvantazh.py`.\n")
     if bidy:
         r.append("\nНе розібралися й пропущені: "
                  + ", ".join(f"`{b}`" for b in bidy) + ".\n")
