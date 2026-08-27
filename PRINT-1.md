@@ -119,4 +119,24 @@ means "no signal to check against" — not "verified".
   records landed by the final sweep. Each such record says so in its
   own `sposib` field.
 
-Errata for this print run are keyed to `v1.0-print-1`.
+## Errata
+
+Errata for this print run live in `ERRATA.md`, under the heading
+**Ревізія 2026-08-27**, which is the date printed on the reverse of the
+title page.
+
+That date is what a reader can see. What makes a correction *checkable*
+is the source behind it, and that is the branch:
+
+    backup/main-2026-08-27-1313Z-printed  →  7715504
+
+Anyone can build that commit and get the same PDF, the same page, and
+the same line — so a correction can be verified rather than taken on
+trust. This is the branch's real purpose: not a safety copy, but the
+anchor an erratum points at.
+
+The branch is a marker, not a line of development. Corrections go to
+`main` and are recorded as rows in `ERRATA.md`; the branch never moves.
+
+If the tag `v1.0-print-1` is created later, it should point at the same
+commit — `7715504` — so that both names mean one thing.
