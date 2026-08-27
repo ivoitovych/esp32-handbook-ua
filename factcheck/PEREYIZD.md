@@ -175,3 +175,49 @@
 врятує, бо контекст сам потребуватиме контексту. За нинішнім розбором
 це вузький хвіст, не половина черги — але сказати, що його не буде,
 було б неправдою.
+
+---
+
+## Inventory: what is actually in `factcheck/`
+
+Taken before any rewriting, so the size of the job is known rather than
+guessed.
+
+| Kind | Files | Size | What happens to it |
+|---|---:|---:|---|
+| **generated** | 10 | 365 KB | translate the *generator*, the file rebuilds itself |
+| **technology** | 8 | 190 KB | rewrite in English, one at a time |
+| **data registry** | 2 | 25 KB | stays data; only its prose header is rewritten |
+| **spent work orders** | 6 | 61 KB | delete — finished and reproducible |
+| **session state** | 13 | 95 KB | extract the durable lessons, then archive |
+
+Every generated file opens with «Генерується `tools/…`. Правити вручну
+нема сенсу», so **365 KB never needs hand-translation.** The real work
+is eight documents.
+
+**Nothing is deleted until its durable content has moved.** The lessons
+in these files were bought with waves that cost real money; a
+translation must not become their loss.
+
+## Glossary: the slang, and what it should have been
+
+The problem was never the Ukrainian language. It was inventing words
+where ordinary ones exist.
+
+| Slang used | English | What it actually is |
+|---|---|---|
+| наряд | **work order** | a batch of claims for one worker |
+| помічник | **worker** | the cheap model that runs a batch |
+| посадка | **import** | writing evidence into the registry |
+| присуд | **verdict** | an assertion that no source exists |
+| прохід | **pass** | one traversal of the queue |
+| штурм / вибірка | **sweep** / **sample** | targeted vs random, and only the random one yields quotable percentages |
+| холостий взірець | **dead pattern** | matches no claim at all |
+| комірка | **table cell** | — |
+| одиниця | **claim** | the smallest checkable statement |
+| `zbih` | **match pattern** | internal: the regex binding evidence to claims |
+
+`наряд` was Soviet-industrial vocabulary picked up without thinking;
+`комірка` is just a table cell. In English the natural terms are plain,
+which is the point: **a term that needs explaining is a term that hides
+something.**
