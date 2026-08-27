@@ -124,12 +124,10 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ```ini
 [env]
+platform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip
 framework = arduino
 monitor_speed = 115200
 lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2
-
-[env]
-platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
 
 [env:classic]
 board = esp32dev
@@ -139,13 +137,29 @@ board = esp32-s3-devkitc-1
 build_flags = -DHAS_PSRAM
 ```
 
+**Спільна секція одна.** `[env]` без імені — це загальні налаштування,
+які успадковують усі середовища; імена робочих середовищ (`[env:classic]`,
+`[env:s3]`) мають бути різні. Двох секцій `[env]` в одному файлі не
+буває — друга не додає до першої, і поводиться це не так, як здається.
+
 Рядок `platform` винесено в спільну секцію навмисно: дві плати мають
 збиратися **однією** платформою, інакше різниця між середовищами
 перестає бути різницею плат. Для S3 це не косметика — офіційна
 платформа його новіші ревізії просто не знає.
 
-Секція `[env]` — спільне для всіх. Збирання конкретного середовища —
-вибором у панелі PlatformIO або `pio run -e s3`.
+**Тут стоїть тег, а не `stable`**, і це та сама вимога, що й вище: файл,
+який можна скопіювати, має збиратися однаково завтра й через рік.
+Мітка `stable` для швидкої спроби зручна, але відтворюваності не дає:
+
+```ini
+; швидкий старт, НЕ відтворювано — платформа може змінитися будь-коли
+platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+```
+
+Номер тегу — з таблиці версій у частині IV (Р4).
+
+Збирання конкретного середовища — вибором у панелі PlatformIO або
+`pio run -e s3`.
 
 Для виробу це зручно й іншим чином: окремі середовища для
 налагоджувальної збірки (докладний лог) і робочої (мінімум логу,
