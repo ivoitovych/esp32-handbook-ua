@@ -106,10 +106,113 @@ ZAHOLOVOK = """# Наряд: сліди класу `E`, які можна від
 """
 
 
+ZVIT = ROOT / "factcheck" / "SLIDY.md"
+KANDYDATY = ROOT / "factcheck" / "leady-kandydaty.yaml"
+
+PIDPYSY_V = {
+    "znayshov": "Джерело знайдено",
+    "ne_znayshov": "Здогад не підтвердився",
+    "nedosyazhne": "Документ звідси недосяжний",
+}
+
+
+def zvesty(katalogy: list[str]) -> int:
+    """Звести відпрацьовані сліди, пропустивши `znayshov` через шар 3."""
+    import vyvantazh
+    import yaml
+
+    zap = []
+    for k in katalogy:
+        chastyna, _, _ = vyvantazh.chytaty(Path(k))
+        zap += chastyna
+
+    kand = [{"nazva": str(z.get("odynycya", "?")),
+             "dzherelo": str(z.get("dzherelo", "")).strip(),
+             "cytata": str(z.get("cytata", "")),
+             "zvidky": z.get("_fayl", "?")}
+            for z in zap if str(z.get("verdykt")) == "znayshov"]
+    KANDYDATY.write_text(
+        "# Кандидати з відпрацьованих слідів. **Не реєстр.**\n"
+        "# Клас присвоює супровідник, і лише після шару 3.\n"
+        + yaml.safe_dump(kand, allow_unicode=True, sort_keys=False),
+        encoding="utf-8")
+
+    stany: dict[str, str] = {}
+    if kand:
+        try:
+            import citaty
+            naslidky, _ = citaty.perevirka(True, [KANDYDATY])
+            stany = {str(n.get("nazva")): str(n.get("stan"))
+                     for n in naslidky}
+        except ImportError:
+            pass
+    vystoyalo = [k for k in kand if stany.get(k["nazva"]) == "ok"]
+
+    c: dict[str, int] = {}
+    for z in zap:
+        v = str(z.get("verdykt", "?"))
+        c[v] = c.get(v, 0) + 1
+
+    r = [f"""# Відпрацьовані сліди класу `E`
+
+**Генерується** `tools/leady.py --zvit`. Наряд —
+`factcheck/NARYAD-leady.md`.
+
+Слід (`ideya`) — це здогад попереднього помічника про те, де шукати.
+Тут — що з нього вийшло, коли по ньому справді пішли.
+
+## Результат
+
+Відповідей: **{len(zap)}**.
+
+| Вердикт | Скільки |
+|---|---|"""]
+    for k in ("znayshov", "ne_znayshov", "nedosyazhne"):
+        r.append(f"| {PIDPYSY_V[k]} | {c.get(k, 0)} |")
+    r.append("")
+    r.append(f"\nІз **{len(kand)}** заявлених `znayshov` третій шар "
+             f"витримали **{len(vystoyalo)}**. Решта — не докази: "
+             f"цитати за названою адресою немає.\n")
+    r.append("`ne_znayshov` тут — **не** провал помічника, а спростування "
+             "здогаду: документ прочитано, місця в ньому немає. Здогад "
+             "ніхто не перевіряв, коли записував, тож частина їх хибна "
+             "за побудовою.\n")
+
+    if vystoyalo:
+        r.append("\n## Витримали третій шар — кандидати в реєстр\n")
+        r.append("Дослівність доведено машиною. **Чи підпирає цитата саме "
+                 "це твердження — вирішує супровідник** (шар 2), і доти "
+                 "жоден із них не є доказом.\n")
+        r.append("| Одиниця | Джерело |")
+        r.append("|---|---|")
+        for k in vystoyalo:
+            dz = k["dzherelo"]
+            r.append(f"| `{k['nazva']}` | [`{dz.rsplit('/', 1)[-1]}`]({dz}) |")
+        r.append("")
+
+    ne = [z for z in zap if str(z.get("verdykt")) == "ne_znayshov"]
+    if ne:
+        r.append("\n## Здогади, що не підтвердилися\n")
+        r.append("| Одиниця | Що дивилися |")
+        r.append("|---|---|")
+        for z in ne:
+            r.append(f"| `{z.get('odynycya', '?')}` | "
+                     f"{str(z.get('komentar', '')).strip()[:130]} |")
+        r.append("")
+
+    ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
+    print(f"leady: відповідей {len(zap)}, заявлено {len(kand)}, "
+          f"витримали шар 3 {len(vystoyalo)} → {ZVIT.relative_to(ROOT)}")
+    return 0
+
+
 def main() -> int:
     if len(sys.argv) < 2:
         print(__doc__)
         return 2
+    if "--zvit" in sys.argv:
+        i = sys.argv.index("--zvit")
+        return zvesty(sys.argv[i + 1:])
     import vyvantazh
 
     # Кілька каталогів: сліди дає і штурм, і міра, і кожна наступна
