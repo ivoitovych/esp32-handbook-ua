@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-12-001 sha:5f8c5848 src:manual/12-arduino.md:3 klas:F -->
+<!-- fc id:T-12-001 sha:5f8c5848 src:manual/12-arduino.md:3 klas:A -->
 ### T-12-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,11 +15,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-002 sha:fc7a0c3b src:manual/12-arduino.md:3 klas:F -->
+<!-- fc id:T-12-002 sha:fc7a0c3b src:manual/12-arduino.md:3 klas:A -->
 ### T-12-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -28,11 +34,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-003 sha:289c5c64 src:manual/12-arduino.md:7 klas:F -->
+<!-- fc id:T-12-003 sha:289c5c64 src:manual/12-arduino.md:7 klas:A -->
 ### T-12-003 · proza · рядок 7
 
 **Книга каже, дослівно:**
@@ -41,7 +53,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -57,23 +75,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Типовий скейм розділення живлення для мікроконтролерів
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Електролітичний або танталовий конденсатор 100–470 мкФ біля входу
-  > живлення на платі:
-  > - Дельта VIN (живлення)
-  > - Земля (GND)
-  > 
-  > Цей конденсатор стабілізує напругу при коротких піках спожиточання,
-  > коли джерело не встигає реагувати.
-- **Спосіб і дата:** Типові схеми розділення живлення для мікроконтролерів, 2026-08-26
-- **Нотатка:** Це проста, але критична частина любого дизайну з мікроконтролерами. Забезпечує коротко-коловий заряд при скачках струму.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-005 sha:27233780 src:manual/12-arduino.md:19 klas:E -->
+<!-- fc id:T-12-005 sha:27233780 src:manual/12-arduino.md:19 klas:A -->
 ### T-12-005 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -82,24 +94,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-006 sha:0ebac24a src:manual/12-arduino.md:19 klas:E -->
+<!-- fc id:T-12-006 sha:0ebac24a src:manual/12-arduino.md:19 klas:A -->
 ### T-12-006 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -108,19 +113,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Якщо швидкість в аналізаторі або приймачу неправильна:
-  > - Замість читаних символів видно "сміття" — неправильні символи
-  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
-  > - Це означає: протокол дотримується, але швидкість неправильна
-  > 
-  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
-  > читаним.
-- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
-- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
-- **Прохід:** m2-66-analizator-28
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -134,20 +133,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
-  > Макроси:
-  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
-  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
-  >   #define configMAX_PRIORITIES ( 25 )
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
-- **Прохід:** pass-07-api-rozbyvka
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-008 sha:72e2d973 src:manual/12-arduino.md:25 klas:E -->
+<!-- fc id:T-12-008 sha:72e2d973 src:manual/12-arduino.md:25 klas:A -->
 ### T-12-008 · proza · рядок 25
 
 **Книга каже, дослівно:**
@@ -156,11 +151,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-009 sha:d918d43c src:manual/12-arduino.md:27 klas:F -->
+<!-- fc id:T-12-009 sha:d918d43c src:manual/12-arduino.md:27 klas:A -->
 ### T-12-009 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -169,11 +170,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-010 sha:36cf102f src:manual/12-arduino.md:30 klas:F -->
+<!-- fc id:T-12-010 sha:36cf102f src:manual/12-arduino.md:30 klas:A -->
 ### T-12-010 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -182,11 +189,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-011 sha:887fb8d1 src:manual/12-arduino.md:30 klas:E -->
+<!-- fc id:T-12-011 sha:887fb8d1 src:manual/12-arduino.md:30 klas:A -->
 ### T-12-011 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -195,24 +208,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-012 sha:51f12ec0 src:manual/12-arduino.md:34 klas:F -->
+<!-- fc id:T-12-012 sha:51f12ec0 src:manual/12-arduino.md:34 klas:A -->
 ### T-12-012 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -221,11 +227,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-013 sha:41d75311 src:manual/12-arduino.md:38 klas:F -->
+<!-- fc id:T-12-013 sha:41d75311 src:manual/12-arduino.md:38 klas:A -->
 ### T-12-013 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -234,11 +246,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-014 sha:afe776c2 src:manual/12-arduino.md:42 klas:F -->
+<!-- fc id:T-12-014 sha:afe776c2 src:manual/12-arduino.md:42 klas:A -->
 ### T-12-014 · proza · рядок 42
 
 **Книга каже, дослівно:**
@@ -247,11 +265,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-015 sha:5f00fe3c src:manual/12-arduino.md:48 klas:E -->
+<!-- fc id:T-12-015 sha:5f00fe3c src:manual/12-arduino.md:48 klas:A -->
 ### T-12-015 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -260,11 +284,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-016 sha:1251a958 src:manual/12-arduino.md:48 klas:B -->
+<!-- fc id:T-12-016 sha:1251a958 src:manual/12-arduino.md:48 klas:A -->
 ### T-12-016 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -273,19 +303,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Типові LCD/OLED дисплеї для Arduino (наприклад, LCD 1602, OLED SSD1306 у варіанті 5 В)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > LCD 1602 та подібні дисплеї часто постачаються з 5 В входами.
-  > При подаванні 3.3 В сигнал може бути розпізнаний як LOW через
-  > порогові напруги логічних 5-вольтових входів.
-- **Спосіб і дата:** Типові дисплеї та их даташити, 2026-08-26
-- **Нотатка:** Важливо перевіряти паспорт конкретного дисплея, оскільки деякі варіанти (особливо OLED) можуть працювати при 3.3 В.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-017 sha:16e29aab src:manual/12-arduino.md:48 klas:F -->
+<!-- fc id:T-12-017 sha:16e29aab src:manual/12-arduino.md:48 klas:A -->
 ### T-12-017 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -294,11 +322,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-018 sha:af7b81a8 src:manual/12-arduino.md:52 klas:F -->
+<!-- fc id:T-12-018 sha:af7b81a8 src:manual/12-arduino.md:52 klas:A -->
 ### T-12-018 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -307,11 +341,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-019 sha:a05e26d4 src:manual/12-arduino.md:55 klas:E -->
+<!-- fc id:T-12-019 sha:a05e26d4 src:manual/12-arduino.md:55 klas:A -->
 ### T-12-019 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -320,24 +360,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-020 sha:9ed0b502 src:manual/12-arduino.md:58 klas:F -->
+<!-- fc id:T-12-020 sha:9ed0b502 src:manual/12-arduino.md:58 klas:A -->
 ### T-12-020 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -346,11 +379,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-021 sha:2afff519 src:manual/12-arduino.md:61 klas:F -->
+<!-- fc id:T-12-021 sha:2afff519 src:manual/12-arduino.md:61 klas:A -->
 ### T-12-021 · proza · рядок 61
 
 **Книга каже, дослівно:**
@@ -359,7 +398,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -373,20 +418,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/FreeRTOS-Kernel/include/freertos/{task,queue,semphr,event_groups,timers}.h та components/esp_common/include/esp_attr.h
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Усі 15 викликів FreeRTOS, що вживає книга, знайдено в заголовках ядра.
-  > Макроси:
-  >   #define IRAM_ATTR _SECTION_ATTR_IMPL(".iram1", __COUNTER__)
-  >   #define RTC_DATA_ATTR _SECTION_ATTR_IMPL(".rtc.data", __COUNTER__)
-  >   #define configMAX_PRIORITIES ( 25 )
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** `RTC_DATA_ATTR` кладе змінну в секцію `.rtc.data` — це і є механічне підтвердження того, чому вона переживає deep sleep, тоді як звичайна змінна не переживає. `IRAM_ATTR` кладе функцію в `.iram1`, звідки вона виконується при вимкненому кеші флешу.
-- **Прохід:** pass-07-api-rozbyvka
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-023 sha:dab7afe7 src:manual/12-arduino.md:70 klas:F -->
+<!-- fc id:T-12-023 sha:dab7afe7 src:manual/12-arduino.md:70 klas:A -->
 ### T-12-023 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -395,11 +436,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-024 sha:1bce55a8 src:manual/12-arduino.md:74 klas:F -->
+<!-- fc id:T-12-024 sha:1bce55a8 src:manual/12-arduino.md:74 klas:A -->
 ### T-12-024 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -408,11 +455,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-025 sha:08a5dac5 src:manual/12-arduino.md:74 klas:B -->
+<!-- fc id:T-12-025 sha:08a5dac5 src:manual/12-arduino.md:74 klas:A -->
 ### T-12-025 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -421,17 +474,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > flash capacity and partition allocation
-- **Спосіб і дата:** curl esp-idf partition-tables.rst, 2026-08-26
-- **Нотатка:** Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює розподіл флешу залежно від його розміру.
-- **Прохід:** m2-83-esptool
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-026 sha:fea8de70 src:manual/12-arduino.md:78 klas:F -->
+<!-- fc id:T-12-026 sha:fea8de70 src:manual/12-arduino.md:78 klas:A -->
 ### T-12-026 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -440,11 +493,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-027 sha:9f95b58e src:manual/12-arduino.md:78 klas:E -->
+<!-- fc id:T-12-027 sha:9f95b58e src:manual/12-arduino.md:78 klas:A -->
 ### T-12-027 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -453,11 +512,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-028 sha:5c67aca1 src:manual/12-arduino.md:82 klas:E -->
+<!-- fc id:T-12-028 sha:5c67aca1 src:manual/12-arduino.md:82 klas:A -->
 ### T-12-028 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -466,11 +531,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-029 sha:2075225d src:manual/12-arduino.md:82 klas:F -->
+<!-- fc id:T-12-029 sha:2075225d src:manual/12-arduino.md:82 klas:A -->
 ### T-12-029 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -479,7 +550,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -503,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-12-031 sha:18eb8c75 src:manual/12-arduino.md:87 klas:E -->
+<!-- fc id:T-12-031 sha:18eb8c75 src:manual/12-arduino.md:87 klas:A -->
 ### T-12-031 · proza · рядок 87
 
 **Книга каже, дослівно:**
@@ -512,11 +589,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-032 sha:cc30c267 src:manual/12-arduino.md:92 klas:F -->
+<!-- fc id:T-12-032 sha:cc30c267 src:manual/12-arduino.md:92 klas:A -->
 ### T-12-032 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -525,11 +608,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-033 sha:0d983155 src:manual/12-arduino.md:98 klas:F -->
+<!-- fc id:T-12-033 sha:0d983155 src:manual/12-arduino.md:98 klas:A -->
 ### T-12-033 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -538,11 +627,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-034 sha:5460ab6b src:manual/12-arduino.md:101 klas:E -->
+<!-- fc id:T-12-034 sha:5460ab6b src:manual/12-arduino.md:101 klas:A -->
 ### T-12-034 · proza · рядок 101
 
 **Книга каже, дослівно:**
@@ -551,11 +646,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-035 sha:e16d2016 src:manual/12-arduino.md:103 klas:F -->
+<!-- fc id:T-12-035 sha:e16d2016 src:manual/12-arduino.md:103 klas:A -->
 ### T-12-035 · proza · рядок 103
 
 **Книга каже, дослівно:**
@@ -564,11 +665,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-036 sha:6b9a3632 src:manual/12-arduino.md:103 klas:E -->
+<!-- fc id:T-12-036 sha:6b9a3632 src:manual/12-arduino.md:103 klas:A -->
 ### T-12-036 · proza · рядок 103
 
 **Книга каже, дослівно:**
@@ -577,11 +684,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-037 sha:5a80dfbb src:manual/12-arduino.md:106 klas:E -->
+<!-- fc id:T-12-037 sha:5a80dfbb src:manual/12-arduino.md:106 klas:A -->
 ### T-12-037 · proza · рядок 106
 
 **Книга каже, дослівно:**
@@ -590,11 +703,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-038 sha:62ececc5 src:manual/12-arduino.md:109 klas:E -->
+<!-- fc id:T-12-038 sha:62ececc5 src:manual/12-arduino.md:109 klas:A -->
 ### T-12-038 · proza · рядок 109
 
 **Книга каже, дослівно:**
@@ -603,11 +722,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-039 sha:bcc4f74e src:manual/12-arduino.md:113 klas:E -->
+<!-- fc id:T-12-039 sha:bcc4f74e src:manual/12-arduino.md:113 klas:A -->
 ### T-12-039 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -616,11 +741,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-040 sha:de8e8116 src:manual/12-arduino.md:113 klas:E -->
+<!-- fc id:T-12-040 sha:de8e8116 src:manual/12-arduino.md:113 klas:A -->
 ### T-12-040 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -629,11 +760,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-041 sha:187be4df src:manual/12-arduino.md:113 klas:E -->
+<!-- fc id:T-12-041 sha:187be4df src:manual/12-arduino.md:113 klas:A -->
 ### T-12-041 · proza · рядок 113
 
 **Книга каже, дослівно:**
@@ -642,11 +779,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-042 sha:c54fccda src:manual/12-arduino.md:118 klas:F -->
+<!-- fc id:T-12-042 sha:c54fccda src:manual/12-arduino.md:118 klas:A -->
 ### T-12-042 · proza · рядок 118
 
 **Книга каже, дослівно:**
@@ -655,11 +798,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-043 sha:da5b2aa1 src:manual/12-arduino.md:118 klas:E -->
+<!-- fc id:T-12-043 sha:da5b2aa1 src:manual/12-arduino.md:118 klas:A -->
 ### T-12-043 · proza · рядок 118
 
 **Книга каже, дослівно:**
@@ -668,11 +817,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-044 sha:6a64568c src:manual/12-arduino.md:124 klas:F -->
+<!-- fc id:T-12-044 sha:6a64568c src:manual/12-arduino.md:124 klas:A -->
 ### T-12-044 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -681,11 +836,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-045 sha:3a8bd8d1 src:manual/12-arduino.md:124 klas:E -->
+<!-- fc id:T-12-045 sha:3a8bd8d1 src:manual/12-arduino.md:124 klas:A -->
 ### T-12-045 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -694,11 +855,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-046 sha:97f46337 src:manual/12-arduino.md:124 klas:E -->
+<!-- fc id:T-12-046 sha:97f46337 src:manual/12-arduino.md:124 klas:A -->
 ### T-12-046 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -707,11 +874,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-047 sha:d1648b40 src:manual/12-arduino.md:128 klas:F -->
+<!-- fc id:T-12-047 sha:d1648b40 src:manual/12-arduino.md:128 klas:A -->
 ### T-12-047 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -720,11 +893,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-048 sha:09499ed7 src:manual/12-arduino.md:132 klas:F -->
+<!-- fc id:T-12-048 sha:09499ed7 src:manual/12-arduino.md:132 klas:A -->
 ### T-12-048 · proza · рядок 132
 
 **Книга каже, дослівно:**
@@ -733,11 +912,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-049 sha:56dfc133 src:manual/12-arduino.md:132 klas:F -->
+<!-- fc id:T-12-049 sha:56dfc133 src:manual/12-arduino.md:132 klas:A -->
 ### T-12-049 · proza · рядок 132
 
 **Книга каже, дослівно:**
@@ -746,11 +931,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-050 sha:dad68612 src:manual/12-arduino.md:137 klas:F -->
+<!-- fc id:T-12-050 sha:dad68612 src:manual/12-arduino.md:137 klas:A -->
 ### T-12-050 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -759,11 +950,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-051 sha:f12c5e0a src:manual/12-arduino.md:143 klas:E -->
+<!-- fc id:T-12-051 sha:f12c5e0a src:manual/12-arduino.md:143 klas:A -->
 ### T-12-051 · tablycya · рядок 143
 
 **Книга каже, дослівно:**
@@ -772,11 +969,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-052 sha:0a0746ba src:manual/12-arduino.md:145 klas:F -->
+<!-- fc id:T-12-052 sha:0a0746ba src:manual/12-arduino.md:145 klas:A -->
 ### T-12-052 · tablycya · рядок 145
 
 **Книга каже, дослівно:**
@@ -785,11 +988,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-053 sha:63dfc28a src:manual/12-arduino.md:146 klas:F -->
+<!-- fc id:T-12-053 sha:63dfc28a src:manual/12-arduino.md:146 klas:A -->
 ### T-12-053 · tablycya · рядок 146
 
 **Книга каже, дослівно:**
@@ -798,11 +1007,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-054 sha:b0b336e5 src:manual/12-arduino.md:147 klas:F -->
+<!-- fc id:T-12-054 sha:b0b336e5 src:manual/12-arduino.md:147 klas:A -->
 ### T-12-054 · tablycya · рядок 147
 
 **Книга каже, дослівно:**
@@ -811,11 +1026,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-055 sha:69ae4eb9 src:manual/12-arduino.md:148 klas:F -->
+<!-- fc id:T-12-055 sha:69ae4eb9 src:manual/12-arduino.md:148 klas:A -->
 ### T-12-055 · tablycya · рядок 148
 
 **Книга каже, дослівно:**
@@ -824,11 +1045,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-056 sha:de47ed12 src:manual/12-arduino.md:149 klas:F -->
+<!-- fc id:T-12-056 sha:de47ed12 src:manual/12-arduino.md:149 klas:A -->
 ### T-12-056 · tablycya · рядок 149
 
 **Книга каже, дослівно:**
@@ -837,11 +1064,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-057 sha:1a13d3c6 src:manual/12-arduino.md:150 klas:F -->
+<!-- fc id:T-12-057 sha:1a13d3c6 src:manual/12-arduino.md:150 klas:A -->
 ### T-12-057 · tablycya · рядок 150
 
 **Книга каже, дослівно:**
@@ -850,11 +1083,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-058 sha:6abb33e2 src:manual/12-arduino.md:151 klas:F -->
+<!-- fc id:T-12-058 sha:6abb33e2 src:manual/12-arduino.md:151 klas:A -->
 ### T-12-058 · tablycya · рядок 151
 
 **Книга каже, дослівно:**
@@ -863,11 +1102,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-059 sha:c954bdec src:manual/12-arduino.md:152 klas:F -->
+<!-- fc id:T-12-059 sha:c954bdec src:manual/12-arduino.md:152 klas:A -->
 ### T-12-059 · tablycya · рядок 152
 
 **Книга каже, дослівно:**
@@ -876,11 +1121,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-060 sha:ae15ae1f src:manual/12-arduino.md:156 klas:F -->
+<!-- fc id:T-12-060 sha:ae15ae1f src:manual/12-arduino.md:156 klas:A -->
 ### T-12-060 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -889,11 +1140,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-061 sha:640a93d9 src:manual/12-arduino.md:159 klas:F -->
+<!-- fc id:T-12-061 sha:640a93d9 src:manual/12-arduino.md:159 klas:A -->
 ### T-12-061 · proza · рядок 159
 
 **Книга каже, дослівно:**
@@ -902,11 +1159,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-062 sha:6ee061fa src:manual/12-arduino.md:161 klas:F -->
+<!-- fc id:T-12-062 sha:6ee061fa src:manual/12-arduino.md:161 klas:A -->
 ### T-12-062 · proza · рядок 161
 
 **Книга каже, дослівно:**
@@ -915,11 +1178,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-063 sha:aa0ffa0f src:manual/12-arduino.md:164 klas:E -->
+<!-- fc id:T-12-063 sha:aa0ffa0f src:manual/12-arduino.md:164 klas:A -->
 ### T-12-063 · proza · рядок 164
 
 **Книга каже, дослівно:**
@@ -928,11 +1197,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-12-064 sha:65d1b9a1 src:manual/12-arduino.md:167 klas:F -->
+<!-- fc id:T-12-064 sha:65d1b9a1 src:manual/12-arduino.md:167 klas:A -->
 ### T-12-064 · proza · рядок 167
 
 **Книга каже, дослівно:**
@@ -941,6 +1216,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---

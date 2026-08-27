@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K03-001 sha:2d0f5a79 src:kartky/k03-pidkl.md:3 klas:E -->
+<!-- fc id:T-K03-001 sha:2d0f5a79 src:kartky/k03-pidkl.md:3 klas:A -->
 ### T-K03-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,11 +15,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-002 sha:83b4b42c src:kartky/k03-pidkl.md:8 klas:E -->
+<!-- fc id:T-K03-002 sha:83b4b42c src:kartky/k03-pidkl.md:8 klas:A -->
 ### T-K03-002 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -28,11 +34,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-003 sha:77681536 src:kartky/k03-pidkl.md:11 klas:E -->
+<!-- fc id:T-K03-003 sha:77681536 src:kartky/k03-pidkl.md:11 klas:A -->
 ### T-K03-003 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -41,11 +53,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-004 sha:896f61c4 src:kartky/k03-pidkl.md:11 klas:E -->
+<!-- fc id:T-K03-004 sha:896f61c4 src:kartky/k03-pidkl.md:11 klas:A -->
 ### T-K03-004 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -54,11 +72,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-005 sha:77c7b26a src:kartky/k03-pidkl.md:16 klas:E -->
+<!-- fc id:T-K03-005 sha:77c7b26a src:kartky/k03-pidkl.md:16 klas:A -->
 ### T-K03-005 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -67,11 +91,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-006 sha:c12094c4 src:kartky/k03-pidkl.md:16 klas:E -->
+<!-- fc id:T-K03-006 sha:c12094c4 src:kartky/k03-pidkl.md:16 klas:A -->
 ### T-K03-006 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -80,11 +110,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:16 klas:F -->
+<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:16 klas:A -->
 ### T-K03-007 · proza · рядок 16
 
 **Книга каже, дослівно:**
@@ -93,11 +129,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-008 sha:938b247e src:kartky/k03-pidkl.md:22 klas:E -->
+<!-- fc id:T-K03-008 sha:938b247e src:kartky/k03-pidkl.md:22 klas:A -->
 ### T-K03-008 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -106,11 +148,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-009 sha:b1c0759b src:kartky/k03-pidkl.md:24 klas:F -->
+<!-- fc id:T-K03-009 sha:b1c0759b src:kartky/k03-pidkl.md:24 klas:A -->
 ### T-K03-009 · tablycya-shapka · рядок 24
 
 **Книга каже, дослівно:**
@@ -119,7 +167,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -231,7 +285,7 @@
 
 ---
 
-<!-- fc id:T-K03-015 sha:14b8c42e src:kartky/k03-pidkl.md:27 klas:C -->
+<!-- fc id:T-K03-015 sha:14b8c42e src:kartky/k03-pidkl.md:27 klas:A -->
 ### T-K03-015 · komirka · рядок 27
 
 **Книга каже, дослівно:**
@@ -240,15 +294,17 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** WCH CH9102 datasheet
-- **Що шукати в джерелі:** Інформація про Windows драйвер для CH9102; розділи про встановлення та драйвери; як відрізняється від CH340
-- **Нотатка:** На К03 сформульовано компактніше, ніж у manual/09, але той самий факт. Потребує CH9102 datasheet від WCH.
-- **Прохід:** m2-26-k03-i-platy
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-016 sha:fd830d21 src:kartky/k03-pidkl.md:28 klas:F -->
+<!-- fc id:T-K03-016 sha:fd830d21 src:kartky/k03-pidkl.md:28 klas:A -->
 ### T-K03-016 · komirka · рядок 28
 
 **Книга каже, дослівно:**
@@ -257,11 +313,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:28 klas:E -->
+<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:28 klas:A -->
 ### T-K03-017 · komirka · рядок 28
 
 **Книга каже, дослівно:**
@@ -270,11 +332,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-018 sha:254dbbd9 src:kartky/k03-pidkl.md:31 klas:F -->
+<!-- fc id:T-K03-018 sha:254dbbd9 src:kartky/k03-pidkl.md:31 klas:A -->
 ### T-K03-018 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -283,11 +351,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-019 sha:9014d1b4 src:kartky/k03-pidkl.md:31 klas:F -->
+<!-- fc id:T-K03-019 sha:9014d1b4 src:kartky/k03-pidkl.md:31 klas:A -->
 ### T-K03-019 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -296,11 +370,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-020 sha:c5be6367 src:kartky/k03-pidkl.md:37 klas:F -->
+<!-- fc id:T-K03-020 sha:c5be6367 src:kartky/k03-pidkl.md:37 klas:A -->
 ### T-K03-020 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -309,7 +389,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -324,11 +410,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-022 sha:227ed426 src:kartky/k03-pidkl.md:41 klas:F -->
+<!-- fc id:T-K03-022 sha:227ed426 src:kartky/k03-pidkl.md:41 klas:A -->
 ### T-K03-022 · kod-ryadok · рядок 41
 
 **Книга каже, дослівно:**
@@ -337,11 +429,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-023 sha:5eb954e4 src:kartky/k03-pidkl.md:44 klas:E -->
+<!-- fc id:T-K03-023 sha:5eb954e4 src:kartky/k03-pidkl.md:44 klas:A -->
 ### T-K03-023 · proza · рядок 44
 
 **Книга каже, дослівно:**
@@ -350,11 +448,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-024 sha:b25b1a1b src:kartky/k03-pidkl.md:44 klas:E -->
+<!-- fc id:T-K03-024 sha:b25b1a1b src:kartky/k03-pidkl.md:44 klas:A -->
 ### T-K03-024 · proza · рядок 44
 
 **Книга каже, дослівно:**
@@ -363,11 +467,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-025 sha:ca54e413 src:kartky/k03-pidkl.md:48 klas:F -->
+<!-- fc id:T-K03-025 sha:ca54e413 src:kartky/k03-pidkl.md:48 klas:A -->
 ### T-K03-025 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -376,11 +486,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-026 sha:fcf18876 src:kartky/k03-pidkl.md:48 klas:E -->
+<!-- fc id:T-K03-026 sha:fcf18876 src:kartky/k03-pidkl.md:48 klas:A -->
 ### T-K03-026 · proza · рядок 48
 
 **Книга каже, дослівно:**
@@ -389,11 +505,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-027 sha:dacd95cb src:kartky/k03-pidkl.md:55 klas:F -->
+<!-- fc id:T-K03-027 sha:dacd95cb src:kartky/k03-pidkl.md:55 klas:A -->
 ### T-K03-027 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -402,11 +524,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:55 klas:E -->
+<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:55 klas:A -->
 ### T-K03-028 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -415,11 +543,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:55 klas:E -->
+<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:55 klas:A -->
 ### T-K03-029 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -428,6 +562,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---

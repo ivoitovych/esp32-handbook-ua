@@ -11,12 +11,17 @@
   2. джерело не є файлом самої книги (крім класу E й позначених
      внутрішніх звірок — див. нижче);
   3. клас A або B має непорожню cytata;
-  4. клас E не стоїть на твердженні з числом, адресою чи GPIO
+  4. взірець `zbih` компілюється — і цілком, і кожною альтернативою;
+  5. клас E не стоїть на твердженні з числом, адресою чи GPIO
      — це не помилка, а привід переглянути: покажчик і власне
      вимірювання автора законно лишаються E.
 """
 import glob, os, re, sys
 import yaml
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), "tools"))
+import factcheck  # розбір альтернатив взірця беремо в М1
 
 KNYHA = re.compile(r'\b(manual|dodatky|kartky)/[a-z0-9]')
 VNUTRISHNYA = re.compile(r'^\s*ВНУТРІШНЯ ЗВІРКА')
@@ -49,6 +54,21 @@ def perevirka(shlyakh):
                 bidy.append(('ВНУТРІШНЯ ЗВІРКА ПІД КЛАСОМ ' + klas, nazva, ''))
             else:
                 bidy.append(('КНИГА ЯК ВЛАСНЕ ДЖЕРЕЛО', nazva, klas))
+        # Взірець, що не компілюється, — не просто мертвий запис.
+        # Він валить `factcheck.py sketch` для ВСЬОГО реєстру, тобто
+        # ламає рендер обом супровідникам. Три таких приїхали хвилею 1
+        # (сирий текст книги з `**жирним**` у полі `zbih`: зірочка на
+        # нульовій позиції — «nothing to repeat»), і через них жодна з
+        # двох хвиль не з'явилася в підрахунку класів, хоч усі докази
+        # були на місці. Тому умова блокуюча.
+        vzir = str(z.get('zbih', ''))
+        if vzir:
+            try:
+                re.compile(vzir)
+                for alt in factcheck.rozbyty_alternatyvy(vzir):
+                    re.compile(alt)
+            except re.error as e:
+                bidy.append(('ВЗІРЕЦЬ НЕ КОМПІЛЮЄТЬСЯ: %s' % e, nazva, ''))
         if klas in ('A', 'B') and not cytata:
             bidy.append(('КЛАС %s БЕЗ ЦИТАТИ' % klas, nazva, ''))
         if klas == 'E' and SYGNAL.search(nazva) and not POKAZHCHYK.search(nazva):

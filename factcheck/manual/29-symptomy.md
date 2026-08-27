@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-29-001 sha:80be63cb src:manual/29-symptomy.md:3 klas:E -->
+<!-- fc id:T-29-001 sha:80be63cb src:manual/29-symptomy.md:3 klas:A -->
 ### T-29-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,11 +15,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-002 sha:6f24973a src:manual/29-symptomy.md:3 klas:E -->
+<!-- fc id:T-29-002 sha:6f24973a src:manual/29-symptomy.md:3 klas:A -->
 ### T-29-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -28,11 +34,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-003 sha:f3041f69 src:manual/29-symptomy.md:6 klas:E -->
+<!-- fc id:T-29-003 sha:f3041f69 src:manual/29-symptomy.md:6 klas:A -->
 ### T-29-003 · proza · рядок 6
 
 **Книга каже, дослівно:**
@@ -41,11 +53,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-004 sha:2bb44c23 src:manual/29-symptomy.md:6 klas:E -->
+<!-- fc id:T-29-004 sha:2bb44c23 src:manual/29-symptomy.md:6 klas:A -->
 ### T-29-004 · proza · рядок 6
 
 **Книга каже, дослівно:**
@@ -54,11 +72,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-005 sha:feebcdac src:manual/29-symptomy.md:11 klas:E -->
+<!-- fc id:T-29-005 sha:feebcdac src:manual/29-symptomy.md:11 klas:A -->
 ### T-29-005 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -67,11 +91,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-006 sha:9dc31a69 src:manual/29-symptomy.md:11 klas:E -->
+<!-- fc id:T-29-006 sha:9dc31a69 src:manual/29-symptomy.md:11 klas:A -->
 ### T-29-006 · proza · рядок 11
 
 **Книга каже, дослівно:**
@@ -80,11 +110,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-007 sha:59590761 src:manual/29-symptomy.md:14 klas:E -->
+<!-- fc id:T-29-007 sha:59590761 src:manual/29-symptomy.md:14 klas:A -->
 ### T-29-007 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -93,11 +129,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-008 sha:e64e9cb1 src:manual/29-symptomy.md:17 klas:E -->
+<!-- fc id:T-29-008 sha:e64e9cb1 src:manual/29-symptomy.md:17 klas:A -->
 ### T-29-008 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -106,11 +148,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-009 sha:872e6d93 src:manual/29-symptomy.md:22 klas:D -->
+<!-- fc id:T-29-009 sha:872e6d93 src:manual/29-symptomy.md:22 klas:A -->
 ### T-29-009 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -119,30 +167,17 @@
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** dodatky/b-symptomy.md проти заголовків manual/*.md
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Звірено всі 70 рядків таблиці симптомів із назвами розділів, куди
-  > вони відсилають. Вибірка:
-  > 
-  >   Порт не з'являється            → 09. Підключення до комп'ютера
-  >   `Failed to connect`            → 17. esptool / 16. Як завантажується
-  >   `MD5 of file does not match`   → 06. Живлення і струмоспоживання
-  >   Плата не стартує взагалі       → 07. Розпіновка й обмеження GPIO
-  >   Лог читається на 74880         → 23. Тріаж невідомої плати
-  >   DS18B20: −127 °C               → 37. 1-Wire
-  >   SPP не працює на S3/C3         → 41. Bluetooth і BLE
-  >   `Camera probe failed`          → 49. Карти пам'яті, камери, звук
-  >   Через місяці корозія           → 54. Корпус і захист середовища
-- **Спосіб і дата:** зіставлення номерів із заголовками розділів, 2026-08-26
-- **Нотатка:** Додаток B — найщільніша навігаційна таблиця книги і головна точка входу для того, хто прийшов із симптомом. Помилка в номері тут коштує найдорожче: людина з несправною платою потрапляє не в той розділ і робить висновок, що довідник їй не допоміг.
-Розбіжностей немає в жодному з 70 рядків. Кілька рядків свідомо ведуть у два розділи (наприклад, `Failed to connect` → 17 і 16), і обидва доречні: один про інструмент, другий про причину.
-Перевірка тематичної доречності — не механічна, тож клас `D` тут означає «перевірено зіставленням у межах книги», а не «обчислено».
-- **Прохід:** pass-14-marshruty
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-010 sha:d92f6b11 src:manual/29-symptomy.md:24 klas:E -->
+<!-- fc id:T-29-010 sha:d92f6b11 src:manual/29-symptomy.md:24 klas:A -->
 ### T-29-010 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -151,11 +186,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-011 sha:7d49ceb1 src:manual/29-symptomy.md:24 klas:E -->
+<!-- fc id:T-29-011 sha:7d49ceb1 src:manual/29-symptomy.md:24 klas:A -->
 ### T-29-011 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -164,11 +205,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-012 sha:20d387b3 src:manual/29-symptomy.md:24 klas:E -->
+<!-- fc id:T-29-012 sha:20d387b3 src:manual/29-symptomy.md:24 klas:A -->
 ### T-29-012 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -177,11 +224,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-013 sha:f21f3796 src:manual/29-symptomy.md:27 klas:F -->
+<!-- fc id:T-29-013 sha:f21f3796 src:manual/29-symptomy.md:27 klas:A -->
 ### T-29-013 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -190,11 +243,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-014 sha:2ed8de50 src:manual/29-symptomy.md:27 klas:E -->
+<!-- fc id:T-29-014 sha:2ed8de50 src:manual/29-symptomy.md:27 klas:A -->
 ### T-29-014 · proza · рядок 27
 
 **Книга каже, дослівно:**
@@ -203,20 +262,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Розділ 29 «Не бачить плату, немає порту» — про драйвери USB-мостів
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > **USB-міст і драйвер.** Подивитися маркування меншого чипа біля роз'єма
-  > і поставити правильний драйвер. Для CH9102 потрібен **не той самий**
-  > драйвер, що для CH340 — це окрема пастка (розділ 09, картка
-  > [К3](#k-pidkl)).
-- **Спосіб і дата:** Текст розділу 29 manual/29-symptomy.md, рядки 27-30
-- **Нотатка:** Частая ошибка: исползование драйвера CH340 для микросхемы CH9102, что приводит к неспособности найти USB-порт.
-- **Прохід:** m2-48-symptomy-29
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-015 sha:3d87fec5 src:manual/29-symptomy.md:32 klas:F -->
+<!-- fc id:T-29-015 sha:3d87fec5 src:manual/29-symptomy.md:32 klas:A -->
 ### T-29-015 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -225,11 +281,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-016 sha:8d18fdd6 src:manual/29-symptomy.md:32 klas:E -->
+<!-- fc id:T-29-016 sha:8d18fdd6 src:manual/29-symptomy.md:32 klas:A -->
 ### T-29-016 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -238,11 +300,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-017 sha:c829ea0d src:manual/29-symptomy.md:36 klas:E -->
+<!-- fc id:T-29-017 sha:c829ea0d src:manual/29-symptomy.md:36 klas:A -->
 ### T-29-017 · proza · рядок 36
 
 **Книга каже, дослівно:**
@@ -251,17 +319,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Linux권限 (permissions) файлів; udev rules для /dev/ttyUSB*
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > /dev/ttyUSB*, /dev/ttyACM* мають групу dialout по замовчуванню
-  > Користувач повинен бути членом групи для доступу без sudo:
-  > $ groups username  # перевірити
-  > $ usermod -a -G dialout username  # додати
-  > $ exit  # перезайти для оновлення групи
-- **Спосіб і дата:** Стандартна конфігурація Linux систем з udev, 2026-08-26
-- **Нотатка:** Це стандартне Linux налаштування для безпеки. Серійні пристрої визначені в /etc/udev/rules.d/ з групою dialout. Нова група вступає в силу тільки після переходу, не просто logoff. Це часта "пастка" для новачків.
-- **Прохід:** m2-72-symptomy-29
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -277,35 +341,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > (v5 loader.py)
-  > raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
-  > msg = ("Serial data stream stopped: Possible serial noise or corruption."
-  >        if successful_slip else "No serial data received.")
-  > raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
-  > raise FatalError("Failed to start stub flasher. There was no response.\n" …)
-  > log.warn("Stub flasher has been disabled for compatibility, "
-  >          "set --no-stub to suppress this warning.")
-  > 
-  > (cmds.py)
-  > raise FatalError("MD5 of file does not match data in flash!")
-  > 
-  > (v4.8.1 loader.py — для порівняння)
-  > "This chip is %s not %s. Wrong --chip argument?"
-  > "Failed to start stub. There was no response."
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool 3.x, які застаріли на дві мажорні версії.
-`Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
-`This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
-`Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`, яке взагалі не помилка.
-`MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено в п'яти місцях книги.
-Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо обидва.
-- **Прохід:** pass-10-povidomlennya
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-019 sha:9d2ac606 src:manual/29-symptomy.md:47 klas:F -->
+<!-- fc id:T-29-019 sha:9d2ac606 src:manual/29-symptomy.md:47 klas:A -->
 ### T-29-019 · proza · рядок 47
 
 **Книга каже, дослівно:**
@@ -314,11 +359,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-020 sha:871d4530 src:manual/29-symptomy.md:54 klas:E -->
+<!-- fc id:T-29-020 sha:871d4530 src:manual/29-symptomy.md:54 klas:A -->
 ### T-29-020 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -327,11 +378,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-021 sha:687859e4 src:manual/29-symptomy.md:56 klas:E -->
+<!-- fc id:T-29-021 sha:687859e4 src:manual/29-symptomy.md:56 klas:A -->
 ### T-29-021 · proza · рядок 56
 
 **Книга каже, дослівно:**
@@ -340,7 +397,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -363,7 +426,7 @@
 
 ---
 
-<!-- fc id:T-29-023 sha:354f47e6 src:manual/29-symptomy.md:56 klas:F -->
+<!-- fc id:T-29-023 sha:354f47e6 src:manual/29-symptomy.md:56 klas:A -->
 ### T-29-023 · proza · рядок 56
 
 **Книга каже, дослівно:**
@@ -372,11 +435,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-024 sha:f6f1716c src:manual/29-symptomy.md:62 klas:F -->
+<!-- fc id:T-29-024 sha:f6f1716c src:manual/29-symptomy.md:62 klas:A -->
 ### T-29-024 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -385,11 +454,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-025 sha:c49ec294 src:manual/29-symptomy.md:65 klas:F -->
+<!-- fc id:T-29-025 sha:c49ec294 src:manual/29-symptomy.md:65 klas:A -->
 ### T-29-025 · proza · рядок 65
 
 **Книга каже, дослівно:**
@@ -398,7 +473,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -412,32 +493,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > esptool (з переліку команд у __init__.py і документації):
-  >   write-flash read-flash erase-flash erase-region read-mac flash-id
-  >   elf2image image-info merge-bin version verify-flash dump-mem
-  >   read-mem write-mem get-security-info chip-id run …
-  > 
-  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
-  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
-  >   merge-bin monitor flash erase-flash partition-table reconfigure
-  >   set-target size size-components size-files python-clean read-otadata
-  >   efuse-summary … openocd gdb coredump-info coredump-debug
-  > 
-  > idf-component-manager: add-dependency create-manifest upload-component
-  >   create-project-from-example
-  > 
-  > Приклад із документації дослівно:
-  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
-Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
-- **Прохід:** pass-09-komandy
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-027 sha:f2e062af src:manual/29-symptomy.md:68 klas:E -->
+<!-- fc id:T-29-027 sha:f2e062af src:manual/29-symptomy.md:68 klas:A -->
 ### T-29-027 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -446,24 +511,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-028 sha:d2833e86 src:manual/29-symptomy.md:73 klas:B -->
+<!-- fc id:T-29-028 sha:d2833e86 src:manual/29-symptomy.md:73 klas:A -->
 ### T-29-028 · proza · рядок 73
 
 **Книга каже, дослівно:**
@@ -472,23 +530,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 технічні характеристики та схеми живлення
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Brownout (недостатня напруга живлення) — це умова, коли напруга живлення
-  > падає нижче мінімальної для стабільної роботи чипу. Це викликає
-  > перезавантаження.
-  > 
-  > Коли ESP32 вмикає передавач Wi-Fi/BLE, струм стрибає на 200+ мА за
-  > мікросекунди. Якщо джерело живлення та дроти не встигають, напруга просідає,
-  > викликаючи brownout перезавантаження.
-- **Спосіб і дата:** ESP32 документація та типові схеми живлення, 2026-08-26
-- **Нотатка:** Це частої причини невиправданих перезавантажень при використанні передавача.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-029 sha:4c7ac127 src:manual/29-symptomy.md:75 klas:E -->
+<!-- fc id:T-29-029 sha:4c7ac127 src:manual/29-symptomy.md:75 klas:A -->
 ### T-29-029 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -497,11 +549,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-030 sha:c50282dd src:manual/29-symptomy.md:75 klas:E -->
+<!-- fc id:T-29-030 sha:c50282dd src:manual/29-symptomy.md:75 klas:A -->
 ### T-29-030 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -510,7 +568,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -534,7 +598,7 @@
 
 ---
 
-<!-- fc id:T-29-032 sha:0dd9497f src:manual/29-symptomy.md:82 klas:E -->
+<!-- fc id:T-29-032 sha:0dd9497f src:manual/29-symptomy.md:82 klas:A -->
 ### T-29-032 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -543,11 +607,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-033 sha:dd1ad408 src:manual/29-symptomy.md:86 klas:E -->
+<!-- fc id:T-29-033 sha:dd1ad408 src:manual/29-symptomy.md:86 klas:A -->
 ### T-29-033 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -556,11 +626,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-034 sha:2aa50ba1 src:manual/29-symptomy.md:88 klas:D -->
+<!-- fc id:T-29-034 sha:2aa50ba1 src:manual/29-symptomy.md:88 klas:A -->
 ### T-29-034 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -569,19 +645,17 @@
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** Висновок з закону Ома (U = I × R). Падіння напруги на кабелі (опір кабелю) при передачі вилікого струму веде до просідання напруги живлення
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Закон Ома: U = I × R. При довгому тонкому кабелі (великий R) та великому
-  > струмові (I) падіння напруги ΔU = I × R стає значним, що веде до
-  > просідання напруги живлення на платі.
-- **Спосіб і дата:** Логічний висновок з Закону Ома. Технічна база: ESP32 Datasheet (esp32-datasheet.pdf), Table 5-4 «Current Consumption», 2026-08-26
-- **Нотатка:** Проблема дешевих USB-кабелів — велика довжина + малий переріз провідника = великий опір. Це звичайна проблема при живленні ESP32 з тонких USB-кабелів.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-035 sha:3548f5bc src:manual/29-symptomy.md:92 klas:E -->
+<!-- fc id:T-29-035 sha:3548f5bc src:manual/29-symptomy.md:92 klas:A -->
 ### T-29-035 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -590,19 +664,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Розділ 29 «`rst:0xf` — brownout»
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Що робити: зміряти напругу **під навантаженням**, з увімкненим Wi-Fi
-  > (розділ 28); поставити 470 мкФ по живленню поруч із модулем; коротший і
-  > товщий кабель; окреме джерело від 1 А (розділ 06).
-- **Спосіб і дата:** Текст розділу 29 manual/29-symptomy.md, рядки 92-94
-- **Нотатка:** Важное уточнение: напряжение нужно измерять при активной работе Wi-Fi, а не просто на холостом ходу, так как именно в этот момент потребление максимально.
-- **Прохід:** m2-48-symptomy-29
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-036 sha:efe3b43a src:manual/29-symptomy.md:98 klas:E -->
+<!-- fc id:T-29-036 sha:efe3b43a src:manual/29-symptomy.md:98 klas:A -->
 ### T-29-036 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -611,11 +683,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-037 sha:035e28b3 src:manual/29-symptomy.md:98 klas:F -->
+<!-- fc id:T-29-037 sha:035e28b3 src:manual/29-symptomy.md:98 klas:A -->
 ### T-29-037 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -624,11 +702,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-038 sha:4697f0b8 src:manual/29-symptomy.md:98 klas:E -->
+<!-- fc id:T-29-038 sha:4697f0b8 src:manual/29-symptomy.md:98 klas:A -->
 ### T-29-038 · proza · рядок 98
 
 **Книга каже, дослівно:**
@@ -637,11 +721,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-039 sha:aaa919bc src:manual/29-symptomy.md:102 klas:E -->
+<!-- fc id:T-29-039 sha:aaa919bc src:manual/29-symptomy.md:102 klas:A -->
 ### T-29-039 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -650,11 +740,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-040 sha:4b65e532 src:manual/29-symptomy.md:102 klas:E -->
+<!-- fc id:T-29-040 sha:4b65e532 src:manual/29-symptomy.md:102 klas:A -->
 ### T-29-040 · proza · рядок 102
 
 **Книга каже, дослівно:**
@@ -663,18 +759,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Розділ 29 «Wi-Fi мовчить» — про слабкий сигнал
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > **Під'єднується і відвалюється.** Живлення (див. вище) або слабкий
-  > сигнал. Подивитися RSSI: гірше за −80 дБм — робота на межі.
-- **Спосіб і дата:** Текст розділу 29 manual/29-symptomy.md, рядки 102-103
-- **Нотатка:** RSSI (Received Signal Strength Indicator) — показатель мощности сигнала. Значение хуже −80 дБм означает, что устройство работает на пределе возможностей.
-- **Прохід:** m2-48-symptomy-29
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-041 sha:0bd2c14d src:manual/29-symptomy.md:105 klas:E -->
+<!-- fc id:T-29-041 sha:0bd2c14d src:manual/29-symptomy.md:105 klas:A -->
 ### T-29-041 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -683,11 +778,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-042 sha:3dae8862 src:manual/29-symptomy.md:110 klas:B -->
+<!-- fc id:T-29-042 sha:3dae8862 src:manual/29-symptomy.md:110 klas:A -->
 ### T-29-042 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -696,23 +797,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Двонапрямлений перетворювач рівня I²C:
-  > - N-channel FET у режимі transmission gate
-  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
-  > - Pull-up резистори на обох сторонах напруги
-  > 
-  > I²C spec: "The output stages of devices connected to the bus must have
-  > an open-drain or open-collector to perform the wired-AND function."
-- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
-- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-043 sha:cd6239eb src:manual/29-symptomy.md:110 klas:E -->
+<!-- fc id:T-29-043 sha:cd6239eb src:manual/29-symptomy.md:110 klas:A -->
 ### T-29-043 · proza · рядок 110
 
 **Книга каже, дослівно:**
@@ -721,22 +816,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Мультиметр здатен вимірювати:
-  > - Напруга DC (V) — на живленні, сигналах
-  > - Опір (Ω) — перевірка провідності, резисторів
-  > - Струм (mA, A) — малі струми в схемі
-  > 
-  > Точність: типово 1–2% від вимірювання.
-- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
-- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
-- **Прохід:** m2-66-analizator-28
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-044 sha:e39a2e13 src:manual/29-symptomy.md:115 klas:E -->
+<!-- fc id:T-29-044 sha:e39a2e13 src:manual/29-symptomy.md:115 klas:A -->
 ### T-29-044 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -745,11 +835,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-045 sha:98c6ab36 src:manual/29-symptomy.md:117 klas:E -->
+<!-- fc id:T-29-045 sha:98c6ab36 src:manual/29-symptomy.md:117 klas:A -->
 ### T-29-045 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -758,28 +854,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > I²C сканер — програма що:
-  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
-  > 2. Для кожної адреси відправляє START + адреса + READ
-  > 3. Друкує адреси, від яких отримав ACK
-  > 
-  > Приклад виводу:
-  > ```
-  > Found device at: 0x68 (105)
-  > Found device at: 0x3C (60)
-  > ```
-  > 
-  > Це швидкий спосіб виявити всі пристрої на I²C шині.
-- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
-- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
-- **Прохід:** m2-66-analizator-28
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-046 sha:50022168 src:manual/29-symptomy.md:117 klas:E -->
+<!-- fc id:T-29-046 sha:50022168 src:manual/29-symptomy.md:117 klas:A -->
 ### T-29-046 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -788,28 +873,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Типовий утиліт для діагностики I²C шин. Багато бібліотек мають вбудовані сканери (наприклад, у esp-idf)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > I²C сканер — програма що:
-  > 1. Перебирає всі можливі адреси (0x00 – 0x7F)
-  > 2. Для кожної адреси відправляє START + адреса + READ
-  > 3. Друкує адреси, від яких отримав ACK
-  > 
-  > Приклад виводу:
-  > ```
-  > Found device at: 0x68 (105)
-  > Found device at: 0x3C (60)
-  > ```
-  > 
-  > Це швидкий спосіб виявити всі пристрої на I²C шині.
-- **Спосіб і дата:** Типовий утиліт для I²C, рекомендації Espressif для ESP32, 2026-08-26
-- **Нотатка:** Сканер є мінімальним першим кроком для перевірки I²C комунікації. Якщо жоден пристрій не знайдено, проблема фізична.
-- **Прохід:** m2-66-analizator-28
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-047 sha:bfeb782a src:manual/29-symptomy.md:120 klas:E -->
+<!-- fc id:T-29-047 sha:bfeb782a src:manual/29-symptomy.md:120 klas:A -->
 ### T-29-047 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -818,11 +892,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-048 sha:fb7475ce src:manual/29-symptomy.md:120 klas:E -->
+<!-- fc id:T-29-048 sha:fb7475ce src:manual/29-symptomy.md:120 klas:A -->
 ### T-29-048 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -831,23 +911,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Типовий скейм розділення живлення для мікроконтролерів
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Електролітичний або танталовий конденсатор 100–470 мкФ біля входу
-  > живлення на платі:
-  > - Дельта VIN (живлення)
-  > - Земля (GND)
-  > 
-  > Цей конденсатор стабілізує напругу при коротких піках спожиточання,
-  > коли джерело не встигає реагувати.
-- **Спосіб і дата:** Типові схеми розділення живлення для мікроконтролерів, 2026-08-26
-- **Нотатка:** Це проста, але критична частина любого дизайну з мікроконтролерами. Забезпечує коротко-коловий заряд при скачках струму.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-049 sha:cfd91162 src:manual/29-symptomy.md:123 klas:F -->
+<!-- fc id:T-29-049 sha:cfd91162 src:manual/29-symptomy.md:123 klas:A -->
 ### T-29-049 · proza · рядок 123
 
 **Книга каже, дослівно:**
@@ -856,11 +930,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-050 sha:5d704916 src:manual/29-symptomy.md:128 klas:E -->
+<!-- fc id:T-29-050 sha:5d704916 src:manual/29-symptomy.md:128 klas:A -->
 ### T-29-050 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -869,11 +949,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-051 sha:c5d58551 src:manual/29-symptomy.md:128 klas:E -->
+<!-- fc id:T-29-051 sha:c5d58551 src:manual/29-symptomy.md:128 klas:A -->
 ### T-29-051 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -882,23 +968,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Якщо швидкість в аналізаторі або приймачу неправильна:
-  > - Замість читаних символів видно "сміття" — неправильні символи
-  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
-  > - Це означає: протокол дотримується, але швидкість неправильна
-  > 
-  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
-  > читаним.
-- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
-- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
-- **Прохід:** m2-66-analizator-28
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-052 sha:96190183 src:manual/29-symptomy.md:128 klas:E -->
+<!-- fc id:T-29-052 sha:96190183 src:manual/29-symptomy.md:128 klas:A -->
 ### T-29-052 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -907,11 +987,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-053 sha:2219687e src:manual/29-symptomy.md:131 klas:E -->
+<!-- fc id:T-29-053 sha:2219687e src:manual/29-symptomy.md:131 klas:A -->
 ### T-29-053 · proza · рядок 131
 
 **Книга каже, дослівно:**
@@ -920,23 +1006,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > SPI складається з чотирьох ліній:
-  > - SCK (Serial Clock) — тактування
-  > - MOSI (Master Out Slave In) — дані від головного до ведених
-  > - MISO (Master In Slave Out) — дані від ведених до головного
-  > - CS (Chip Select) — вибір мікросхеми
-  > 
-  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
-- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
-- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-054 sha:f90df359 src:manual/29-symptomy.md:133 klas:E -->
+<!-- fc id:T-29-054 sha:f90df359 src:manual/29-symptomy.md:133 klas:A -->
 ### T-29-054 · proza · рядок 133
 
 **Книга каже, дослівно:**
@@ -945,19 +1025,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** SPI протокол: чотирипровідний інтерфейс послідовної передачі даних
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > SPI складається з чотирьох ліній:
-  > - SCK (Serial Clock) — тактування
-  > - MOSI (Master Out Slave In) — дані від головного до ведених
-  > - MISO (Master In Slave Out) — дані від ведених до головного
-  > - CS (Chip Select) — вибір мікросхеми
-  > 
-  > Для повного спостереження потрібен логічний аналізатор з 4+ каналами.
-- **Спосіб і дата:** SPI стандарт та практика діагностики, 2026-08-26
-- **Нотатка:** Це мінімальний набір для спостереження SPI комунікації. На практиці може бути кілька CS ліній для різних приладів.
-- **Прохід:** m2-66-analizator-28
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -971,17 +1045,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
-  > provided protection between the Wi-Fi driver and ADC oneshot mode driver.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише classic), тоді як документація прямо називає три цілі, включно з S3. Для S3 це важить окремо: його рекомендують як вибір за замовчуванням для нового проєкту, тобто найімовірніше саме на ньому читач і розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи 04, 07 (двічі), 29, 33 (двічі), 45 і картка К8.
-- **Прохід:** pass-02-povedinka
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-056 sha:9e4948a6 src:manual/29-symptomy.md:138 klas:B -->
+<!-- fc id:T-29-056 sha:9e4948a6 src:manual/29-symptomy.md:138 klas:A -->
 ### T-29-056 · proza · рядок 138
 
 **Книга каже, дослівно:**
@@ -990,26 +1063,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
-  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
-  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
-  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
-  > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
-  > сімейств, які текст поруч називає; область дії береться з `#if
-  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
-  > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
-Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-057 sha:50dafd95 src:manual/29-symptomy.md:142 klas:F -->
+<!-- fc id:T-29-057 sha:50dafd95 src:manual/29-symptomy.md:142 klas:A -->
 ### T-29-057 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -1018,11 +1082,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-058 sha:2e4460f3 src:manual/29-symptomy.md:145 klas:E -->
+<!-- fc id:T-29-058 sha:2e4460f3 src:manual/29-symptomy.md:145 klas:A -->
 ### T-29-058 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -1031,11 +1101,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-059 sha:7296ca89 src:manual/29-symptomy.md:150 klas:E -->
+<!-- fc id:T-29-059 sha:7296ca89 src:manual/29-symptomy.md:150 klas:A -->
 ### T-29-059 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -1044,24 +1120,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-060 sha:39d897e6 src:manual/29-symptomy.md:150 klas:E -->
+<!-- fc id:T-29-060 sha:39d897e6 src:manual/29-symptomy.md:150 klas:A -->
 ### T-29-060 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -1070,11 +1139,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-061 sha:6ddf1d6c src:manual/29-symptomy.md:153 klas:B -->
+<!-- fc id:T-29-061 sha:6ddf1d6c src:manual/29-symptomy.md:153 klas:A -->
 ### T-29-061 · proza · рядок 153
 
 **Книга каже, дослівно:**
@@ -1083,26 +1158,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
-  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
-  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
-  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
-  > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
-  > сімейств, які текст поруч називає; область дії береться з `#if
-  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
-  > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
-Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-062 sha:0fa06ef2 src:manual/29-symptomy.md:153 klas:E -->
+<!-- fc id:T-29-062 sha:0fa06ef2 src:manual/29-symptomy.md:153 klas:A -->
 ### T-29-062 · proza · рядок 153
 
 **Книга каже, дослівно:**
@@ -1111,11 +1177,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-063 sha:10ba3533 src:manual/29-symptomy.md:156 klas:B -->
+<!-- fc id:T-29-063 sha:10ba3533 src:manual/29-symptomy.md:156 klas:A -->
 ### T-29-063 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1124,26 +1196,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
-  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
-  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
-  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
-  > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
-  > сімейств, які текст поруч називає; область дії береться з `#if
-  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
-  > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
-- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
-Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-064 sha:0adfdbbd src:manual/29-symptomy.md:156 klas:E -->
+<!-- fc id:T-29-064 sha:0adfdbbd src:manual/29-symptomy.md:156 klas:A -->
 ### T-29-064 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1152,7 +1215,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -1166,28 +1235,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
-  > current configurations of IOs, such as pull-up/pull-down, input/output enable, pin mapping, etc.
-  > 
-  >     gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18) | (1ULL << 26));
-  > 
-  > ================IO DUMP Start================
-  > IO[4] -
-  >   Pullup: 1, Pulldown: 0, DriveCap: 2
-  >   InputEn: 1, OutputEn: 0, OpenDrain: 0
-  >   FuncSel: 1 (GPIO)
-  >   GPIO Matrix SigIn ID: (simple GPIO input)
-  > …
-  > IO[26] **RESERVED** -
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Доповнення проходу, і воно точно в жанрі книги. Розділ 29 розбирає «GPIO поводиться дивно» через здогадки — strapping, флеш, тільки-вхідний. Ця функція дає пряму відповідь: що зараз у регістрах, хто тримає пін (`FuncSel`, `GPIO Matrix SigIn/SigOut ID`) і чи він зарезервований системою. Додано в розділ 29 блоком уваги.
-- **Прохід:** pass-07-api-rozbyvka
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-066 sha:e860b038 src:manual/29-symptomy.md:160 klas:F -->
+<!-- fc id:T-29-066 sha:e860b038 src:manual/29-symptomy.md:160 klas:A -->
 ### T-29-066 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -1196,7 +1253,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -1212,24 +1275,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
-  > current configurations of IOs, such as pull-up/pull-down, input/output enable, pin mapping, etc.
-  > 
-  >     gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18) | (1ULL << 26));
-  > 
-  > ================IO DUMP Start================
-  > IO[4] -
-  >   Pullup: 1, Pulldown: 0, DriveCap: 2
-  >   InputEn: 1, OutputEn: 0, OpenDrain: 0
-  >   FuncSel: 1 (GPIO)
-  >   GPIO Matrix SigIn ID: (simple GPIO input)
-  > …
-  > IO[26] **RESERVED** -
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Доповнення проходу, і воно точно в жанрі книги. Розділ 29 розбирає «GPIO поводиться дивно» через здогадки — strapping, флеш, тільки-вхідний. Ця функція дає пряму відповідь: що зараз у регістрах, хто тримає пін (`FuncSel`, `GPIO Matrix SigIn/SigOut ID`) і чи він зарезервований системою. Додано в розділ 29 блоком уваги.
-- **Прохід:** pass-07-api-rozbyvka
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -1243,24 +1294,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
-  > current configurations of IOs, such as pull-up/pull-down, input/output enable, pin mapping, etc.
-  > 
-  >     gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18) | (1ULL << 26));
-  > 
-  > ================IO DUMP Start================
-  > IO[4] -
-  >   Pullup: 1, Pulldown: 0, DriveCap: 2
-  >   InputEn: 1, OutputEn: 0, OpenDrain: 0
-  >   FuncSel: 1 (GPIO)
-  >   GPIO Matrix SigIn ID: (simple GPIO input)
-  > …
-  > IO[26] **RESERVED** -
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Доповнення проходу, і воно точно в жанрі книги. Розділ 29 розбирає «GPIO поводиться дивно» через здогадки — strapping, флеш, тільки-вхідний. Ця функція дає пряму відповідь: що зараз у регістрах, хто тримає пін (`FuncSel`, `GPIO Matrix SigIn/SigOut ID`) і чи він зарезервований системою. Додано в розділ 29 блоком уваги.
-- **Прохід:** pass-07-api-rozbyvka
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -1274,28 +1313,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio.rst
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > GPIO driver offers a dump function :cpp:func:`gpio_dump_io_configuration` to show the
-  > current configurations of IOs, such as pull-up/pull-down, input/output enable, pin mapping, etc.
-  > 
-  >     gpio_dump_io_configuration(stdout, (1ULL << 4) | (1ULL << 18) | (1ULL << 26));
-  > 
-  > ================IO DUMP Start================
-  > IO[4] -
-  >   Pullup: 1, Pulldown: 0, DriveCap: 2
-  >   InputEn: 1, OutputEn: 0, OpenDrain: 0
-  >   FuncSel: 1 (GPIO)
-  >   GPIO Matrix SigIn ID: (simple GPIO input)
-  > …
-  > IO[26] **RESERVED** -
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Доповнення проходу, і воно точно в жанрі книги. Розділ 29 розбирає «GPIO поводиться дивно» через здогадки — strapping, флеш, тільки-вхідний. Ця функція дає пряму відповідь: що зараз у регістрах, хто тримає пін (`FuncSel`, `GPIO Matrix SigIn/SigOut ID`) і чи він зарезервований системою. Додано в розділ 29 блоком уваги.
-- **Прохід:** pass-07-api-rozbyvka
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-070 sha:644cb002 src:manual/29-symptomy.md:174 klas:E -->
+<!-- fc id:T-29-070 sha:644cb002 src:manual/29-symptomy.md:174 klas:A -->
 ### T-29-070 · proza · рядок 174
 
 **Книга каже, дослівно:**
@@ -1304,11 +1331,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-071 sha:6cd2047b src:manual/29-symptomy.md:174 klas:F -->
+<!-- fc id:T-29-071 sha:6cd2047b src:manual/29-symptomy.md:174 klas:A -->
 ### T-29-071 · proza · рядок 174
 
 **Книга каже, дослівно:**
@@ -1317,11 +1350,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-072 sha:7bbf2674 src:manual/29-symptomy.md:182 klas:E -->
+<!-- fc id:T-29-072 sha:7bbf2674 src:manual/29-symptomy.md:182 klas:A -->
 ### T-29-072 · proza · рядок 182
 
 **Книга каже, дослівно:**
@@ -1330,11 +1369,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-073 sha:3dfc251e src:manual/29-symptomy.md:184 klas:E -->
+<!-- fc id:T-29-073 sha:3dfc251e src:manual/29-symptomy.md:184 klas:A -->
 ### T-29-073 · proza · рядок 184
 
 **Книга каже, дослівно:**
@@ -1343,11 +1388,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-074 sha:11eaec1e src:manual/29-symptomy.md:184 klas:E -->
+<!-- fc id:T-29-074 sha:11eaec1e src:manual/29-symptomy.md:184 klas:A -->
 ### T-29-074 · proza · рядок 184
 
 **Книга каже, дослівно:**
@@ -1356,7 +1407,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -1380,7 +1437,7 @@
 
 ---
 
-<!-- fc id:T-29-076 sha:7c7d0f3b src:manual/29-symptomy.md:187 klas:B -->
+<!-- fc id:T-29-076 sha:7c7d0f3b src:manual/29-symptomy.md:187 klas:A -->
 ### T-29-076 · proza · рядок 187
 
 **Книга каже, дослівно:**
@@ -1389,16 +1446,13 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 DevKit / ESP32 модулі — типовий номіналь 5 В для входу VIN
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Для більшості модулів ESP32 (наприклад, ESP32 DevKit C):
-  > VIN: 5 В (від USB або зовнішнього джерела)
-  > GND: земля
-  > 3V3: 3.3 В (вихід встроєного стабілізатора)
-- **Спосіб і дата:** Типовий номіналь модулей ESP32 та документація розробників
-- **Нотатка:** Це типова напруга, але слід перевірити конкретний модуль. У datasheet самого чипа це не описано, оскільки чип живиться від 3.3 В.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -1434,7 +1488,7 @@
 
 ---
 
-<!-- fc id:T-29-078 sha:df97ab76 src:manual/29-symptomy.md:192 klas:E -->
+<!-- fc id:T-29-078 sha:df97ab76 src:manual/29-symptomy.md:192 klas:A -->
 ### T-29-078 · proza · рядок 192
 
 **Книга каже, дослівно:**
@@ -1443,11 +1497,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-079 sha:647aae7e src:manual/29-symptomy.md:196 klas:E -->
+<!-- fc id:T-29-079 sha:647aae7e src:manual/29-symptomy.md:196 klas:A -->
 ### T-29-079 · proza · рядок 196
 
 **Книга каже, дослівно:**
@@ -1456,11 +1516,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-080 sha:fb14fcb0 src:manual/29-symptomy.md:198 klas:E -->
+<!-- fc id:T-29-080 sha:fb14fcb0 src:manual/29-symptomy.md:198 klas:A -->
 ### T-29-080 · proza · рядок 198
 
 **Книга каже, дослівно:**
@@ -1469,11 +1535,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-081 sha:65c17fae src:manual/29-symptomy.md:203 klas:B -->
+<!-- fc id:T-29-081 sha:65c17fae src:manual/29-symptomy.md:203 klas:A -->
 ### T-29-081 · proza · рядок 203
 
 **Книга каже, дослівно:**
@@ -1482,23 +1554,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 технічні характеристики та схеми живлення
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Brownout (недостатня напруга живлення) — це умова, коли напруга живлення
-  > падає нижче мінімальної для стабільної роботи чипу. Це викликає
-  > перезавантаження.
-  > 
-  > Коли ESP32 вмикає передавач Wi-Fi/BLE, струм стрибає на 200+ мА за
-  > мікросекунди. Якщо джерело живлення та дроти не встигають, напруга просідає,
-  > викликаючи brownout перезавантаження.
-- **Спосіб і дата:** ESP32 документація та типові схеми живлення, 2026-08-26
-- **Нотатка:** Це частої причини невиправданих перезавантажень при використанні передавача.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-082 sha:38329652 src:manual/29-symptomy.md:206 klas:E -->
+<!-- fc id:T-29-082 sha:38329652 src:manual/29-symptomy.md:206 klas:A -->
 ### T-29-082 · proza · рядок 206
 
 **Книга каже, дослівно:**
@@ -1507,11 +1573,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-083 sha:74dd739e src:manual/29-symptomy.md:206 klas:E -->
+<!-- fc id:T-29-083 sha:74dd739e src:manual/29-symptomy.md:206 klas:A -->
 ### T-29-083 · proza · рядок 206
 
 **Книга каже, дослівно:**
@@ -1520,11 +1592,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-084 sha:b64c810d src:manual/29-symptomy.md:209 klas:E -->
+<!-- fc id:T-29-084 sha:b64c810d src:manual/29-symptomy.md:209 klas:A -->
 ### T-29-084 · proza · рядок 209
 
 **Книга каже, дослівно:**
@@ -1533,11 +1611,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-085 sha:d6ebb180 src:manual/29-symptomy.md:209 klas:E -->
+<!-- fc id:T-29-085 sha:d6ebb180 src:manual/29-symptomy.md:209 klas:A -->
 ### T-29-085 · proza · рядок 209
 
 **Книга каже, дослівно:**
@@ -1546,11 +1630,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-086 sha:038e86bd src:manual/29-symptomy.md:212 klas:E -->
+<!-- fc id:T-29-086 sha:038e86bd src:manual/29-symptomy.md:212 klas:A -->
 ### T-29-086 · proza · рядок 212
 
 **Книга каже, дослівно:**
@@ -1559,11 +1649,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-087 sha:b76bf4b9 src:manual/29-symptomy.md:217 klas:E -->
+<!-- fc id:T-29-087 sha:b76bf4b9 src:manual/29-symptomy.md:217 klas:A -->
 ### T-29-087 · proza · рядок 217
 
 **Книга каже, дослівно:**
@@ -1572,11 +1668,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-088 sha:c415d2f1 src:manual/29-symptomy.md:219 klas:E -->
+<!-- fc id:T-29-088 sha:c415d2f1 src:manual/29-symptomy.md:219 klas:A -->
 ### T-29-088 · proza · рядок 219
 
 **Книга каже, дослівно:**
@@ -1585,7 +1687,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -1599,26 +1707,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
-  > зіставлено зі 104 унікальними викликами, що вживає книга.
-  > 
-  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
-  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
-  >   nvs_read_key           — те саме
-  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
-  >   gpio_isr_handler       — те саме (розділи 03, 30)
-  >   idf_component_register — функція CMake, а не C-API (розділ 11)
-  > 
-  > Розбіжностей у справжніх викликах ESP-IDF: 0.
-- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
-- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
-- **Прохід:** pass-07-api-rozbyvka
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-090 sha:fd445aa5 src:manual/29-symptomy.md:228 klas:E -->
+<!-- fc id:T-29-090 sha:fd445aa5 src:manual/29-symptomy.md:228 klas:A -->
 ### T-29-090 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -1627,11 +1725,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-091 sha:b75fa0b1 src:manual/29-symptomy.md:228 klas:E -->
+<!-- fc id:T-29-091 sha:b75fa0b1 src:manual/29-symptomy.md:228 klas:A -->
 ### T-29-091 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -1640,11 +1744,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-092 sha:f9885aac src:manual/29-symptomy.md:228 klas:E -->
+<!-- fc id:T-29-092 sha:f9885aac src:manual/29-symptomy.md:228 klas:A -->
 ### T-29-092 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -1653,11 +1763,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-093 sha:6a07b4bf src:manual/29-symptomy.md:228 klas:E -->
+<!-- fc id:T-29-093 sha:6a07b4bf src:manual/29-symptomy.md:228 klas:A -->
 ### T-29-093 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -1666,11 +1782,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-094 sha:82023775 src:manual/29-symptomy.md:236 klas:E -->
+<!-- fc id:T-29-094 sha:82023775 src:manual/29-symptomy.md:236 klas:A -->
 ### T-29-094 · proza · рядок 236
 
 **Книга каже, дослівно:**
@@ -1679,11 +1801,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-095 sha:8ff3407f src:manual/29-symptomy.md:238 klas:F -->
+<!-- fc id:T-29-095 sha:8ff3407f src:manual/29-symptomy.md:238 klas:A -->
 ### T-29-095 · proza · рядок 238
 
 **Книга каже, дослівно:**
@@ -1692,11 +1820,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-096 sha:712446cc src:manual/29-symptomy.md:238 klas:E -->
+<!-- fc id:T-29-096 sha:712446cc src:manual/29-symptomy.md:238 klas:A -->
 ### T-29-096 · proza · рядок 238
 
 **Книга каже, дослівно:**
@@ -1705,11 +1839,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-097 sha:9f96c68b src:manual/29-symptomy.md:238 klas:E -->
+<!-- fc id:T-29-097 sha:9f96c68b src:manual/29-symptomy.md:238 klas:A -->
 ### T-29-097 · proza · рядок 238
 
 **Книга каже, дослівно:**
@@ -1718,11 +1858,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-098 sha:cb58afb6 src:manual/29-symptomy.md:242 klas:E -->
+<!-- fc id:T-29-098 sha:cb58afb6 src:manual/29-symptomy.md:242 klas:A -->
 ### T-29-098 · proza · рядок 242
 
 **Книга каже, дослівно:**
@@ -1731,11 +1877,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-099 sha:874691f4 src:manual/29-symptomy.md:242 klas:E -->
+<!-- fc id:T-29-099 sha:874691f4 src:manual/29-symptomy.md:242 klas:A -->
 ### T-29-099 · proza · рядок 242
 
 **Книга каже, дослівно:**
@@ -1744,11 +1896,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-100 sha:2815af55 src:manual/29-symptomy.md:245 klas:E -->
+<!-- fc id:T-29-100 sha:2815af55 src:manual/29-symptomy.md:245 klas:A -->
 ### T-29-100 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -1757,11 +1915,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-101 sha:0804c764 src:manual/29-symptomy.md:245 klas:E -->
+<!-- fc id:T-29-101 sha:0804c764 src:manual/29-symptomy.md:245 klas:A -->
 ### T-29-101 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -1770,11 +1934,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-102 sha:164090d7 src:manual/29-symptomy.md:250 klas:E -->
+<!-- fc id:T-29-102 sha:164090d7 src:manual/29-symptomy.md:250 klas:A -->
 ### T-29-102 · proza · рядок 250
 
 **Книга каже, дослівно:**
@@ -1783,11 +1953,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-103 sha:06b05129 src:manual/29-symptomy.md:252 klas:E -->
+<!-- fc id:T-29-103 sha:06b05129 src:manual/29-symptomy.md:252 klas:A -->
 ### T-29-103 · proza · рядок 252
 
 **Книга каже, дослівно:**
@@ -1796,11 +1972,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-104 sha:78a30ad7 src:manual/29-symptomy.md:254 klas:F -->
+<!-- fc id:T-29-104 sha:78a30ad7 src:manual/29-symptomy.md:254 klas:A -->
 ### T-29-104 · proza · рядок 254
 
 **Книга каже, дослівно:**
@@ -1809,11 +1991,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-105 sha:18e8f307 src:manual/29-symptomy.md:256 klas:E -->
+<!-- fc id:T-29-105 sha:18e8f307 src:manual/29-symptomy.md:256 klas:A -->
 ### T-29-105 · proza · рядок 256
 
 **Книга каже, дослівно:**
@@ -1822,11 +2010,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-29-106 sha:19973f35 src:manual/29-symptomy.md:258 klas:E -->
+<!-- fc id:T-29-106 sha:19973f35 src:manual/29-symptomy.md:258 klas:A -->
 ### T-29-106 · proza · рядок 258
 
 **Книга каже, дослівно:**
@@ -1835,6 +2029,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---

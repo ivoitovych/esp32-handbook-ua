@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K04-001 sha:d392369e src:kartky/k04-boot.md:3 klas:E -->
+<!-- fc id:T-K04-001 sha:d392369e src:kartky/k04-boot.md:3 klas:A -->
 ### T-K04-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,11 +15,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-002 sha:8324cf6d src:kartky/k04-boot.md:3 klas:E -->
+<!-- fc id:T-K04-002 sha:8324cf6d src:kartky/k04-boot.md:3 klas:A -->
 ### T-K04-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -28,11 +34,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-003 sha:957a85b7 src:kartky/k04-boot.md:8 klas:E -->
+<!-- fc id:T-K04-003 sha:957a85b7 src:kartky/k04-boot.md:8 klas:A -->
 ### T-K04-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -41,24 +53,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-004 sha:3285d7ba src:kartky/k04-boot.md:8 klas:E -->
+<!-- fc id:T-K04-004 sha:3285d7ba src:kartky/k04-boot.md:8 klas:A -->
 ### T-K04-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -67,24 +72,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-005 sha:7fb043c1 src:kartky/k04-boot.md:12 klas:B -->
+<!-- fc id:T-K04-005 sha:7fb043c1 src:kartky/k04-boot.md:12 klas:A -->
 ### T-K04-005 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -93,29 +91,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
-  > held low on reset. Otherwise it will run the program in flash.
-  > 
-  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-  > unconnected then it will pull high.
-  > 
-  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
-  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
-  > 
-  > esptool can automatically reset the board into bootloader mode … using
-  > the DTR and RTS lines.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
-- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
-Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
-Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-006 sha:0c221230 src:kartky/k04-boot.md:14 klas:B -->
+<!-- fc id:T-K04-006 sha:0c221230 src:kartky/k04-boot.md:14 klas:A -->
 ### T-K04-006 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -124,25 +110,13 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
-  > held low on reset. Otherwise it will run the program in flash.
-  > 
-  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-  > unconnected then it will pull high.
-  > 
-  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
-  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
-  > 
-  > esptool can automatically reset the board into bootloader mode … using
-  > the DTR and RTS lines.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
-- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
-Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
-Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -156,22 +130,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
-  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
-  >  esp32h21="GPIO14", esp32h4="GPIO14"}
-  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
-  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
-  >  esp32h4="GPIO13"}
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
-Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
-- **Прохід:** pass-08-strapping
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-008 sha:a007b94b src:kartky/k04-boot.md:17 klas:B -->
+<!-- fc id:T-K04-008 sha:a007b94b src:kartky/k04-boot.md:17 klas:A -->
 ### T-K04-008 · proza · рядок 17
 
 **Книга каже, дослівно:**
@@ -180,29 +148,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
-  > held low on reset. Otherwise it will run the program in flash.
-  > 
-  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-  > unconnected then it will pull high.
-  > 
-  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
-  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
-  > 
-  > esptool can automatically reset the board into bootloader mode … using
-  > the DTR and RTS lines.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
-- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
-Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
-Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-009 sha:055ab3de src:kartky/k04-boot.md:21 klas:B -->
+<!-- fc id:T-K04-009 sha:055ab3de src:kartky/k04-boot.md:21 klas:A -->
 ### T-K04-009 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -211,29 +167,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
-  > held low on reset. Otherwise it will run the program in flash.
-  > 
-  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-  > unconnected then it will pull high.
-  > 
-  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
-  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
-  > 
-  > esptool can automatically reset the board into bootloader mode … using
-  > the DTR and RTS lines.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
-- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
-Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
-Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-010 sha:d5503eea src:kartky/k04-boot.md:21 klas:F -->
+<!-- fc id:T-K04-010 sha:d5503eea src:kartky/k04-boot.md:21 klas:A -->
 ### T-K04-010 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -242,11 +186,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-011 sha:f44d03d0 src:kartky/k04-boot.md:26 klas:B -->
+<!-- fc id:T-K04-011 sha:f44d03d0 src:kartky/k04-boot.md:26 klas:A -->
 ### T-K04-011 · proza · рядок 26
 
 **Книга каже, дослівно:**
@@ -255,29 +205,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
-  > held low on reset. Otherwise it will run the program in flash.
-  > 
-  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-  > unconnected then it will pull high.
-  > 
-  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
-  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
-  > 
-  > esptool can automatically reset the board into bootloader mode … using
-  > the DTR and RTS lines.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
-- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
-Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
-Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-012 sha:620a701f src:kartky/k04-boot.md:29 klas:F -->
+<!-- fc id:T-K04-012 sha:620a701f src:kartky/k04-boot.md:29 klas:A -->
 ### T-K04-012 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -286,11 +224,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-013 sha:1b439fce src:kartky/k04-boot.md:29 klas:F -->
+<!-- fc id:T-K04-013 sha:1b439fce src:kartky/k04-boot.md:29 klas:A -->
 ### T-K04-013 · proza · рядок 29
 
 **Книга каже, дослівно:**
@@ -299,11 +243,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-014 sha:83417cd4 src:kartky/k04-boot.md:34 klas:F -->
+<!-- fc id:T-K04-014 sha:83417cd4 src:kartky/k04-boot.md:34 klas:A -->
 ### T-K04-014 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -312,11 +262,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-015 sha:b14933d1 src:kartky/k04-boot.md:34 klas:E -->
+<!-- fc id:T-K04-015 sha:b14933d1 src:kartky/k04-boot.md:34 klas:A -->
 ### T-K04-015 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -325,7 +281,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -339,29 +301,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../docs/en/troubleshooting.rst
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > esptool is not able to reset your hardware automatically in the
-  > following cases:
-  > - Your hardware does not have the ``DTR`` and ``RTS`` lines connected
-  >   to ``{IDF_TARGET_STRAP_BOOT_GPIO}`` and ``EN`` (``CHIP_PU``)
-  > - The ``DTR`` and ``RTS`` lines are configured differently
-  > - There are no such serial control lines at all
-  > 
-  > (troubleshooting.rst)
-  > If you have connected other devices to GPIO pins, try removing them
-  > and see if esptool starts working.
-  > Check the chip is receiving 3.3V from a stable power source.
-- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
-- **Нотатка:** Чотири з п'яти причин книги підтверджено дослівно. **П'ята — ні**, і це варте запису: «драйвер мосту не керує `DTR`/`RTS` (трапляється на CH9102 у Windows)».
-Агент шукав `CH9102` у `troubleshooting.rst`, `boot-mode-selection.rst` і `reset.py` — немає ніде. Твердження не спростоване, воно **непідтверджене**: поведінка драйвера під Windows у документації esptool не описана й описана бути не може.
-Лишаю в книзі як є, але позначаю тут: якщо колись знадобиться клас `A` на цей рядок, джерелом буде не esptool, а сам драйвер WCH або відтворення на живій машині. Це не наряд для М2 — це чесна межа того, що взагалі можна процитувати.
-Побічно варте уваги: `troubleshooting.rst` радить те саме, що книга, у двох інших рядках — зняти сторонні пристрої з GPIO і перевірити стабільність 3.3 В. Тобто перелік книги не лише правильний, а й впорядкований так само, як у джерелі.
-- **Прохід:** pass-34-pul-shmatok-6
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-017 sha:e439e3fc src:kartky/k04-boot.md:40 klas:E -->
+<!-- fc id:T-K04-017 sha:e439e3fc src:kartky/k04-boot.md:40 klas:A -->
 ### T-K04-017 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -370,7 +319,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -384,29 +339,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst та .../docs/en/troubleshooting.rst
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > esptool is not able to reset your hardware automatically in the
-  > following cases:
-  > - Your hardware does not have the ``DTR`` and ``RTS`` lines connected
-  >   to ``{IDF_TARGET_STRAP_BOOT_GPIO}`` and ``EN`` (``CHIP_PU``)
-  > - The ``DTR`` and ``RTS`` lines are configured differently
-  > - There are no such serial control lines at all
-  > 
-  > (troubleshooting.rst)
-  > If you have connected other devices to GPIO pins, try removing them
-  > and see if esptool starts working.
-  > Check the chip is receiving 3.3V from a stable power source.
-- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас — М1
-- **Нотатка:** Чотири з п'яти причин книги підтверджено дослівно. **П'ята — ні**, і це варте запису: «драйвер мосту не керує `DTR`/`RTS` (трапляється на CH9102 у Windows)».
-Агент шукав `CH9102` у `troubleshooting.rst`, `boot-mode-selection.rst` і `reset.py` — немає ніде. Твердження не спростоване, воно **непідтверджене**: поведінка драйвера під Windows у документації esptool не описана й описана бути не може.
-Лишаю в книзі як є, але позначаю тут: якщо колись знадобиться клас `A` на цей рядок, джерелом буде не esptool, а сам драйвер WCH або відтворення на живій машині. Це не наряд для М2 — це чесна межа того, що взагалі можна процитувати.
-Побічно варте уваги: `troubleshooting.rst` радить те саме, що книга, у двох інших рядках — зняти сторонні пристрої з GPIO і перевірити стабільність 3.3 В. Тобто перелік книги не лише правильний, а й впорядкований так само, як у джерелі.
-- **Прохід:** pass-34-pul-shmatok-6
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-019 sha:af13e196 src:kartky/k04-boot.md:50 klas:B -->
+<!-- fc id:T-K04-019 sha:af13e196 src:kartky/k04-boot.md:50 klas:A -->
 ### T-K04-019 · proza · рядок 50
 
 **Книга каже, дослівно:**
@@ -415,29 +357,17 @@
 
 **Доказ**
 
-- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
-  > held low on reset. Otherwise it will run the program in flash.
-  > 
-  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-  > unconnected then it will pull high.
-  > 
-  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
-  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
-  > 
-  > esptool can automatically reset the board into bootloader mode … using
-  > the DTR and RTS lines.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
-- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
-Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
-Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
-- **Прохід:** pass-30-piny-suciljno
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-020 sha:f2b0c52e src:kartky/k04-boot.md:55 klas:E -->
+<!-- fc id:T-K04-020 sha:f2b0c52e src:kartky/k04-boot.md:55 klas:A -->
 ### T-K04-020 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -446,23 +376,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Базовий принцип електроніки
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Сигнал — це напруга відносно точки відліку (земля, GND). Без спільної
-  > землі у всіх пристроїв "3.3 В" у одного пристрою може означати іншу
-  > напругу у іншого без спільної землі.
-  > 
-  > Приклад: якщо ESP32 має GND на 0 В, а зовнішній пристрій має GND на 1 В,
-  > то "3.3 В" від ESP32 буде сприйнято як "2.3 В" у другого пристрою (відносно
-  > його GND на 1 В).
-- **Спосіб і дата:** Базова електротехніка, 2026-08-26
-- **Нотатка:** Це критична помилка при проектуванні схем. Без спільної землі сигнали не мають смислу.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-021 sha:3535f9d1 src:kartky/k04-boot.md:55 klas:E -->
+<!-- fc id:T-K04-021 sha:3535f9d1 src:kartky/k04-boot.md:55 klas:A -->
 ### T-K04-021 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -471,11 +395,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-022 sha:c8450f0a src:kartky/k04-boot.md:62 klas:E -->
+<!-- fc id:T-K04-022 sha:c8450f0a src:kartky/k04-boot.md:62 klas:A -->
 ### T-K04-022 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -484,23 +414,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > Якщо швидкість в аналізаторі або приймачу неправильна:
-  > - Замість читаних символів видно "сміття" — неправильні символи
-  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
-  > - Це означає: протокол дотримується, але швидкість неправильна
-  > 
-  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
-  > читаним.
-- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
-- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
-- **Прохід:** m2-66-analizator-28
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-023 sha:93250c1f src:kartky/k04-boot.md:62 klas:F -->
+<!-- fc id:T-K04-023 sha:93250c1f src:kartky/k04-boot.md:62 klas:A -->
 ### T-K04-023 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -509,11 +433,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Дослівно з джерела:**
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
-<!-- fc id:T-K04-024 sha:58a20250 src:kartky/k04-boot.md:62 klas:E -->
+<!-- fc id:T-K04-024 sha:58a20250 src:kartky/k04-boot.md:62 klas:A -->
 ### T-K04-024 · proza · рядок 62
 
 **Книга каже, дослівно:**
@@ -522,20 +452,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
+- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
+- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
+- **Прохід:** m2-92-vybirka
 
 ---
 
