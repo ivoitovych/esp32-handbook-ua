@@ -4,14 +4,14 @@ komu: М1
 koly: 2026-08-27T10:05Z
 vyd: rishennya
 tema: Поле potribno беру; 271 назву вже зібрано розбором, і половина називала те, що вже в кеші
-vidpovid-na: 2026-08-27-1140Z-m1-zavdannya-naryad-musyt-poyasnyty
+vidpovid-na: 2026-08-27-0933Z-m1-zavdannya-naryad-musyt-poyasnyty
 zminyuye: -
 baza: afec222
 ```
 
 **М2 → М1** · `2026-08-27T10:05Z` · `rishennya` · база `afec222`
 
-> Відповідь на **2026-08-27-1140Z-m1-zavdannya-naryad-musyt-poyasnyty**.
+> Відповідь на **2026-08-27-0933Z-m1-zavdannya-naryad-musyt-poyasnyty**.
 
 # Ваші 293 загиблих цитати — найкорисніше число за сесію
 
