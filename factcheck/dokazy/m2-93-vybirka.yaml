@@ -18,7 +18,8 @@
 - nazva: Код 0x10 означає RTCWDT_RTC_RESET (RTC watchdog скинув усе)
   zbih: \\| `0x10` \\|\\| RTCWDT_RTC_RESET \\|\\| RTC watchdog скинув усе
   klas: A
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+    — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
   cytata: 'rst:0x10 (RTCWDT_RTC_RESET)
 
 
@@ -139,7 +140,8 @@
 - nazva: Трансивер CAN повинен відповідати логіці 3.3 В, або потрібен конвертер рівнів на RX
   zbih: або трансивер\s+на\s+3\.3\s+В,\s+або\s+конвертер\s+рівнів.*RX
   klas: A
-  dzherelo: 'Специфікації трансиверів CAN: SN65HVD230 (3.3В), TJA1050 (5В), MCP2551 (5В) та рекомендації щодо логіки сумісності з ESP32'
+  dzherelo: 'Специфікації трансиверів CAN: SN65HVD230 (3.3В), TJA1050 (5В), MCP2551 (5В) та рекомендації
+    щодо логіки сумісності з ESP32'
   cytata: 'Трансивер має відповідати логіці **3.3 В**. SN65HVD230 живиться від
 
     3.3 В і підходить прямо. TJA1050 і MCP2551 розраховані на 5 В: їхній
@@ -169,7 +171,7 @@
 
     '
 - nazva: Код 0x04 в таблиці strapping пінів C3 означає GPIO8
-  zbih: \\| `0x04` \\|.*\\| `GPIO8` \\|
+  zbih: \|\s+`0x04`\s+\|.{0,80}\|\s+`GPIO8`\s+\|
   klas: A
   dzherelo: ESP32-C3 Technical Reference Manual — таблиця strapping пінів (розділ Boot Mode Selection)
   cytata: '| Біт | [[classic]] | [[S3]] | [[C3]] |
@@ -198,9 +200,12 @@
   dzherelo: STM32 Datasheet від STMicroelectronics — не знайдено в кеші
   cytata: null
   sposib: Таблиця порівняння у розділі 01
-  notatka: Твердження про частоту STM32 (24 МГц - сотні МГц) належить до таблиці порівняння мікроконтролерів. STM32 datasheet від виробника є externe джерелом, але в кеші dzherela-kesh/ його немає. Таблиця в книзі посилається на STM32 datasheet як источник, але точна цитата з datasheet не витягнута. Без доступу до першоджерела клас F.
+  notatka: Твердження про частоту STM32 (24 МГц - сотні МГц) належить до таблиці порівняння мікроконтролерів.
+    STM32 datasheet від виробника є externe джерелом, але в кеші dzherela-kesh/ його немає. Таблиця в
+    книзі посилається на STM32 datasheet як источник, але точна цитата з datasheet не витягнута. Без доступу
+    до першоджерела клас F.
 - nazva: Код 0x08 в таблиці strapping пінів S3 означає GPIO0
-  zbih: \\| `0x08` \\|.*\\| `GPIO0` \\|
+  zbih: \|\s+`0x08`\s+\|.{0,80}\|\s+`GPIO0`\s+\|
   klas: A
   dzherelo: ESP32-S3 Technical Reference Manual — таблиця strapping пінів (розділ Boot Mode Selection)
   cytata: '| Біт | [[classic]] | [[S3]] | [[C3]] |
@@ -224,7 +229,8 @@
 - nazva: 'WROVER за схемою WROOM: GPIO16 вже нічий на WROVER через PSRAM'
   zbih: Взяли.*WROVER.*за схемою.*WROOM.*GPIO16.*нічий
   klas: B
-  dzherelo: Документація модулів ESP32-WROOM-32 та ESP32-WROVER та інформація про розпінування PSRAM у модулях
+  dzherelo: Документація модулів ESP32-WROOM-32 та ESP32-WROVER та інформація про розпінування PSRAM у
+    модулях
   cytata: 'Різниця між шісткою й цією парою — у слові «usually». Піни 6–11
 
     зайняті завжди; 16 і 17 — лише там, де на модулі є PSRAM, тобто на

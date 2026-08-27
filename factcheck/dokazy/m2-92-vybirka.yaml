@@ -8,7 +8,7 @@
   notatka: Це інженерне судження автора книги на основі аналізу boot процесу, але не документується у
     жодному офіційному джерелі Espressif. Клас E.
 - nazva: 'T-D-042: Код скидання 0xe — EXT_CPU_RESET'
-  zbih: '| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |'
+  zbih: \|\s+`0xe`\s+\|\s+EXT_CPU_RESET\s+\|\s+APP\s+CPU\s+скинутий\s+PRO\s+CPU\s+\|\s+норма\s+\|
   klas: A
   dzherelo: 'Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)'
   cytata: 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
@@ -67,7 +67,7 @@
   notatka: Це логічне випливання з того, що ESP32 працює на 3.3 В, але жодне офіційне джерело Espressif
     не вказує явно вимогу трансивера 3.3 В для промислових шин. Клас E.
 - nazva: 'T-K06-024: Код скидання 0x10 — RTCWDT_RTC_RESET'
-  zbih: '| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе, разом з RTC |'
+  zbih: \|\s+`0x10`\s+\|\s+RTCWDT_RTC_RESET\s+\|\s+RTC\s+watchdog\s+скинув\s+усе,\s+разом\s+з\s+RTC\s+\|
   klas: A
   dzherelo: 'Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)'
   cytata: 0x10 | RTCWDT_RTC_RESET | RTC watchdog скинув усе
@@ -75,7 +75,7 @@
   notatka: RTC watchdog може скидати весь чип, включаючи RTC модуль. Це критичне питання для deep sleep
     та RTC операцій.
 - nazva: 'T-D-022: Код скидання 0x7 — TG0WDT_SYS_RESET'
-  zbih: '| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |'
+  zbih: \|\s+`0x7`\s+\|\s+TG0WDT_SYS_RESET\s+\|\s+watchdog\s+таймера\s+0\s+\|\s+розділ\s+32\s+\|
   klas: A
   dzherelo: 'Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)'
   cytata: 0x7 | TG0WDT_SYS_RESET | watchdog таймера 0
@@ -92,14 +92,14 @@
   notatka: ESP32-C3 має всього 400 КБ SRAM. Це основне обмеження для вибору цього чипу. Вбудова Wi-Fi,
     BLE та TLS стеку залишає мало місця.
 - nazva: 'T-D-030: Код скидання 0xa — INTRUSION_RESET'
-  zbih: '| `0xa` | INTRUSION_RESET | детектор втручання | рідко |'
+  zbih: \|\s+`0xa`\s+\|\s+INTRUSION_RESET\s+\|\s+детектор\s+втручання\s+\|\s+рідко\s+\|
   klas: A
   dzherelo: 'Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)'
   cytata: 0xa | INTRUSION_RESET | детектор втручання
   sposib: Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
   notatka: INTRUSION_RESET — код для скидання, спричиненого детектором втручання у кристалі ESP32
 - nazva: 'T-30-056: Розподіл пам''яті: 16 КБ і більше — PSRAM'
-  zbih: '| 16 КБ і більше | PSRAM |'
+  zbih: \|\s+16\s+КБ\s+і\s+більше\s+\|\s+PSRAM\s+\|
   klas: A
   dzherelo: Espressif Systems, ESP32 Series Datasheet (dzherela-kesh/21953a2f-esp32_datasheet_en.pdf),
     розділ Memory Configuration або Memory Overview
