@@ -20,7 +20,7 @@
 | Напис | Чип | Що це значить практично |
 |---|---|---|
 | `ESP32-WROOM-32` | ESP32 classic | двоядерний Xtensa, без PSRAM |
-| `ESP32-WROOM-32D`, `-32E` | ESP32 classic | пізніші ревізії, той самий код |
+| `ESP32-WROOM-32D`, `-32E` | ESP32 classic | пізніші ревізії; **суфікс `R2` означає 2 МБ PSRAM** |
 | `ESP32-WROVER`, `-B`, `-E` | ESP32 classic | те саме + PSRAM |
 | `ESP32-S3-WROOM-1` | ESP32-S3 | двоядерний, native USB |
 | `ESP32-C3-MINI-1` | ESP32-C3 | одноядерний RISC-V |
