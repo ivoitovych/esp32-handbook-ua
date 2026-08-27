@@ -39,6 +39,106 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Номери GPIO книги дійсні для сімейств, яким приписані
   zbih: GPIO 6–11|GPIO 32–39|GPIO 34–39|`GPIO0`–`GPIO4`|GPIO 6, 7, 8, 9, 10, 11|`GPIO34`|`GPIO4`
   klas: B
@@ -117,7 +217,8 @@
     \ driven Low, silences boot messages printed by the ROM\n  bootloader. |\n\n(маска GPIO_STRAP,\
     \ esp32)\n0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4\n0x08 - GPIO2   0x10 - GPIO0\
     \           0x20 - MTDI (GPIO12)\n"
-  sposib: curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де
     кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12`
     · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
@@ -139,7 +240,8 @@
     \ driven Low, silences boot messages printed by the ROM\n  bootloader. |\n\n(маска GPIO_STRAP,\
     \ esp32)\n0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4\n0x08 - GPIO2   0x10 - GPIO0\
     \           0x20 - MTDI (GPIO12)\n"
-  method: curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна
     комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` ·
     що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
@@ -179,7 +281,8 @@
     pullup or pulldown functions.
 
     '
-  sposib: curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не
     з переказу.
 
@@ -224,7 +327,8 @@
     pullup or pulldown functions.
 
     '
-  method: curl raw.githubusercontent (повторно, проходи 12 і 25), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Три найважливіші пінові правила classic, звірені кожне зі свого джерела, а не з переказу.
 
     «6–11 зайняті флешем» — не рекомендація, а перелік `MSPI_IOMUX_*`: саме цими шістьма чип
@@ -263,7 +367,8 @@
     the DTR and RTS lines.
 
     '
-  sposib: curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування,
     кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити
     BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
@@ -301,7 +406,8 @@
     the DTR and RTS lines.
 
     '
-  method: curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування,
     кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити
     BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
@@ -336,7 +442,8 @@
     ADC1_GPIO3_CHANNEL 3   ADC1_GPIO4_CHANNEL 4
 
     '
-  sposib: curl raw.githubusercontent (повторно, проходи 25 і 26), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Додаток A робить із двох звірених фактів висновок, і висновок правильний у неочевидний
     бік: типова обв''язка I²C на C3 завантаженню **не заважає**. Підтяжки тягнуть обидві лінії
     вгору, а потрібно саме `GPIO8` високий; `GPIO9` високий означає звичайний старт.
@@ -371,7 +478,8 @@
     ADC1_GPIO3_CHANNEL 3   ADC1_GPIO4_CHANNEL 4
 
     '
-  method: curl raw.githubusercontent (повторно, проходи 25 і 26), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Додаток A робить із двох звірених фактів висновок, і висновок правильний у неочевидний
     бік: типова обв''язка I²C на C3 завантаженню **не заважає**. Підтяжки тягнуть обидві лінії
     вгору, а потрібно саме `GPIO8` високий; `GPIO9` високий означає звичайний старт.

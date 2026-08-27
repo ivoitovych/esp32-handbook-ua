@@ -38,6 +38,46 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Таблиці адрес прошивки — три рядки на три сімейства
   zbih: bootloader · [^→]+→ `0x[12]000`|`bootloader\.bin` · [^→]+→ `0x[12]000`|partition table
     · [^→]+→ `0x8000`|`partition-table\.bin` · [^→]+→ `0x8000`|застосунок[^→]*· [^→]+→ `0x10000`|`nvs`
@@ -52,7 +92,8 @@
     \n    default 0x8000\n\n(partition-tables.rst)\n* At a 0x10000 (64 KB) offset in the flash\
     \ is the app labelled\n  \"factory\". The bootloader runs this app by default.\nnvs, \
     \     data, nvs,     0x9000,  0x6000,\n"
-  sposib: curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки
     К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові
     в трьох місцях.
@@ -78,7 +119,8 @@
     \n    default 0x8000\n\n(partition-tables.rst)\n* At a 0x10000 (64 KB) offset in the flash\
     \ is the app labelled\n  \"factory\". The bootloader runs this app by default.\nnvs, \
     \     data, nvs,     0x9000,  0x6000,\n"
-  method: curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки
     К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові
     в трьох місцях.
@@ -108,7 +150,8 @@
     \    } while(0)\n#else\n… _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)\n#endif\n\
     \n/**\n * … In comparison with ESP_ERROR_CHECK(), this prints the same error\n * message\
     \ but isn't terminating the program.\n */\n"
-  sposib: curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося
     точнішим, ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка
     макроса — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
@@ -136,7 +179,8 @@
     \    } while(0)\n#else\n… _esp_error_check_failed(err_rc_, __FILE__, __LINE__, …)\n#endif\n\
     \n/**\n * … In comparison with ESP_ERROR_CHECK(), this prints the same error\n * message\
     \ but isn't terminating the program.\n */\n"
-  method: curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Твердження розділу 32 звірено на рівні реалізації, а не опису, і воно виявилося точнішим,
     ніж я очікував: «`ESP_ERROR_CHECK` — це `assert`» буквально так і є. Перша гілка макроса
     — `#ifdef NDEBUG`, і в ній перевірка **зникає цілком**, лишаючи `(void) sizeof(err_rc_)`.
@@ -194,7 +238,8 @@
     \ tag, format, ##__VA_ARGS__)\n\n(log.html.rst)\nThe maximum verbosity level which is\
     \ compiled into the binary is set\nby CONFIG_LOG_MAXIMUM_LEVEL. The runtime level can\
     \ be lowered further\nwith esp_log_level_set().\n"
-  sposib: curl raw.githubusercontent (повторно, прохід 25 щодо `Maximum log verbosity`), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Пара тверджень розділу 25, які легко сплутати між собою, і книга їх розводить
     правильно.
 
@@ -219,7 +264,8 @@
     \ tag, format, ##__VA_ARGS__)\n\n(log.html.rst)\nThe maximum verbosity level which is\
     \ compiled into the binary is set\nby CONFIG_LOG_MAXIMUM_LEVEL. The runtime level can\
     \ be lowered further\nwith esp_log_level_set().\n"
-  method: curl raw.githubusercontent (повторно, прохід 25 щодо `Maximum log verbosity`), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Пара тверджень розділу 25, які легко сплутати між собою, і книга їх розводить правильно.
 
     Виклик **вище** рівня збирання прибирає препроцесор — саме тому `ESP_LOGD` у гарячому
@@ -263,7 +309,8 @@
     esp_vfs_fat_spiflash_mount_rw_wl.
 
     '
-  sposib: curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Усі названі книгою константи існують дослівно. Прохід 7 звіряв виклики; ці — коди
     повернення, і вони живуть у тих самих заголовках.
 
@@ -302,7 +349,8 @@
     esp_vfs_fat_spiflash_mount_rw_wl.
 
     '
-  method: curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Усі названі книгою константи існують дослівно. Прохід 7 звіряв виклики; ці — коди
     повернення, і вони живуть у тих самих заголовках.
 

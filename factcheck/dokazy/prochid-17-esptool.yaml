@@ -15,6 +15,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-17-051: Файл, менший за очікуваний, — це обірваний дамп,'
   zbih: Файл,\s+менший\s+за\s+очікуваний,\s+—\s+це
   klas: A
@@ -22,9 +36,9 @@
   cytata: 'Expected {block_len} byte block, got {len(r)} bytes
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Файл менший за очікуваний означає обриваний дамп, а не стиснення
   title: 'T-17-051: Файл, менший за очікуваний, — це обірваний дамп,'
   match: Файл,\s+менший\s+за\s+очікуваний,\s+—\s+це
@@ -33,9 +47,9 @@
   quote: 'Expected {block_len} byte block, got {len(r)} bytes
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Файл менший за очікуваний означає обриваний дамп, а не стиснення
 - nazva: 'T-17-064: Воно **вже ввімкнене** за замовчуванням, тож у звичайній'
   zbih: Воно\s+\*\*вже\s+ввімкнене\*\*\s+за
@@ -44,9 +58,9 @@
   cytata: 'Compress data during transfer (default unless --no-stub is specified)
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Стиснення ввімкнене за замовчуванням, прапорець у звичайній команді нічого не змінює
   title: 'T-17-064: Воно **вже ввімкнене** за замовчуванням, тож у звичайній'
   match: Воно\s+\*\*вже\s+ввімкнене\*\*\s+за
@@ -55,9 +69,9 @@
   quote: 'Compress data during transfer (default unless --no-stub is specified)
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Стиснення ввімкнене за замовчуванням, прапорець у звичайній команді нічого не змінює
 - nazva: 'T-17-066: Користь від стиснення там подвійна: менше байтів пройшло'
   zbih: Користь\s+від\s+стиснення\s+там
@@ -66,9 +80,9 @@
   cytata: 'Compress data during transfer
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Стиснення зменшує обсяг даних через кабель і зменшує ймовірність корупції
   title: 'T-17-066: Користь від стиснення там подвійна: менше байтів пройшло'
   match: Користь\s+від\s+стиснення\s+там
@@ -77,9 +91,9 @@
   quote: 'Compress data during transfer
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Стиснення зменшує обсяг даних через кабель і зменшує ймовірність корупції
 - nazva: 'T-17-071: Швидкість тут не той параметр, на якому варто'
   zbih: Швидкість\s+тут\s+не\s+той
@@ -88,9 +102,9 @@
   cytata: 'Serial port baud rate used when flashing
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Швидкість передачі є функцією чипа і кабелю, а не критичним параметром для економії
     часу
   title: 'T-17-071: Швидкість тут не той параметр, на якому варто'
@@ -100,9 +114,9 @@
   quote: 'Serial port baud rate used when flashing
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Швидкість передачі є функцією чипа і кабелю, а не критичним параметром для економії
     часу
 - nazva: 'T-17-074: Адреси залежать від сімейства чипа — таблиця в'
@@ -112,9 +126,9 @@
   cytata: 'BOOTLOADER_FLASH_OFFSET = 0x1000
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Адреси залежать від сімейства чипа - ESP32 має 0x1000, інші чипи 0x0
   title: 'T-17-074: Адреси залежать від сімейства чипа — таблиця в'
   match: Адреси\s+залежать\s+від\s+сімейства
@@ -123,9 +137,9 @@
   quote: 'BOOTLOADER_FLASH_OFFSET = 0x1000
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Адреси залежать від сімейства чипа - ESP32 має 0x1000, інші чипи 0x0
 - nazva: 'T-17-118: Друга половина рядка залежить від версії.'
   zbih: Друга\s+половина\s+рядка\s+залежить
@@ -134,9 +148,9 @@
   cytata: '''esptool v{__version__}''
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''Версія рядка залежить від версії esptool'''
   title: 'T-17-118: Друга половина рядка залежить від версії.'
   match: Друга\s+половина\s+рядка\s+залежить
@@ -145,9 +159,9 @@
   quote: '''esptool v{__version__}''
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''Версія рядка залежить від версії esptool'''
 - nazva: 'T-17-149: There was no response.`**'
   zbih: There\s+was\s+no\s+response\.`\*\*
@@ -156,9 +170,9 @@
   cytata: 'Serial data stream stopped: Possible serial noise or corruption
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Помилка синхронізації - немає відповіді від чипа
   title: 'T-17-149: There was no response.`**'
   match: There\s+was\s+no\s+response\.`\*\*
@@ -167,7 +181,7 @@
   quote: 'Serial data stream stopped: Possible serial noise or corruption
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Помилка синхронізації - немає відповіді від чипа

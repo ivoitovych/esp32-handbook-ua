@@ -10,6 +10,10 @@
 
 
 
+
+
+
+
 - nazva: 'T-C-075: `-i` обов''язковий: без нього inline-кадри зникають.'
   zbih: '`\-i`\s+обов''язковий:\s+без\s+нього'
   klas: A
@@ -17,9 +21,9 @@
   cytata: '(inlined by) inner_dont_crash
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: флаг -i входить до складу -pfiaC; документ показує розшифровані inline-кадри з
     цим флагом
   title: 'T-C-075: `-i` обов''язковий: без нього inline-кадри зникають.'
@@ -29,9 +33,9 @@
   quote: '(inlined by) inner_dont_crash
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: флаг -i входить до складу -pfiaC; документ показує розшифровані inline-кадри з цим
     флагом
 - nazva: 'T-C-092: `/dev/ttyUSB*` — зовнішній міст.'
@@ -41,9 +45,9 @@
   cytata: 'For Linux users, if the port name is /dev/ttyUSB0
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ підтверджує, що /dev/ttyUSB* є портом зовнішнього USB-to-UART моста
   title: 'T-C-092: `/dev/ttyUSB*` — зовнішній міст.'
   match: '`/dev/ttyUSB\*`\s+—\s+зовнішній\s+міст\.'
@@ -52,7 +56,7 @@
   quote: 'For Linux users, if the port name is /dev/ttyUSB0
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що /dev/ttyUSB* є портом зовнішнього USB-to-UART моста

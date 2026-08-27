@@ -9,6 +9,8 @@
 # широкий взірець бреше, довгий ламається.
 
 
+
+
 - nazva: 'T-K11-008: **Не вмикати Flash Encryption і Secure Boot «щоб'
   zbih: \*\*Не\s+вмикати\s+Flash\s+Encryption
   klas: A
@@ -18,9 +20,9 @@
     the ``{IDF_TARGET_CRYPT_CNT}`` eFuse bits.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: write-protect в release-режиме означает невозможность изменения этих параметров
     после активации
   title: 'T-K11-008: **Не вмикати Flash Encryption і Secure Boot «щоб'
@@ -32,8 +34,8 @@
     the ``{IDF_TARGET_CRYPT_CNT}`` eFuse bits.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: write-protect в release-режиме означает невозможность изменения этих параметров после
     активации

@@ -33,6 +33,56 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-07-055: **Практичне правило:** strapping-піни можна використовувати, але як **виходи**,'
   zbih: \*\*Практичне\s+правило:\*\*\s+strapping\-піни\s+можна
   klas: A
@@ -41,9 +91,9 @@
     ``GPIO_STRAP_REG`` register for bootstrap pin states.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: strapping pins дійсно використовуються як входи під час завантаження, що дозволяє
     використовувати їх як виходи в нормальній роботі
   title: 'T-07-055: **Практичне правило:** strapping-піни можна використовувати, але як **виходи**,'
@@ -54,9 +104,9 @@
     register for bootstrap pin states.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: strapping pins дійсно використовуються як входи під час завантаження, що дозволяє
     використовувати їх як виходи в нормальній роботі
 - nazva: 'T-07-005: При скиданні ROM-бутлоадер має вирішити, звідки завантажуватися.'
@@ -67,9 +117,9 @@
     ``GPIO_STRAP_REG`` register for bootstrap pin states.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ROM-бутлоадер дійсно читає стан GPIO для вибору режиму завантаження
   title: 'T-07-005: При скиданні ROM-бутлоадер має вирішити, звідки завантажуватися.'
   match: При\s+скиданні\s+ROM\-бутлоадер\s+має
@@ -79,9 +129,9 @@
     register for bootstrap pin states.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ROM-бутлоадер дійсно читає стан GPIO для вибору режиму завантаження
 - nazva: 'T-07-006: Джерелом рішення служать кілька звичайних GPIO, стан яких'
   zbih: Джерелом\s+рішення\s+служать\s+кілька
@@ -91,9 +141,9 @@
     ``GPIO_STRAP_REG`` register for bootstrap pin states.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджено, що GPIO служать джерелом рішення для завантаження
   title: 'T-07-006: Джерелом рішення служать кілька звичайних GPIO, стан яких'
   match: Джерелом\s+рішення\s+служать\s+кілька
@@ -103,9 +153,9 @@
     register for bootstrap pin states.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджено, що GPIO служать джерелом рішення для завантаження
 - nazva: 'T-07-065: Спроба їх використати підвішує чип або псує вміст'
   zbih: Спроба\s+їх\s+використати\s+підвішує
@@ -115,9 +165,9 @@
     on the module and therefore should not be used for other purposes.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Довідник стверджує, що спроба їх використати підвішує чип або псує флеш; документація
     вказує, що їх не слід використовувати для інших цілей
   title: 'T-07-065: Спроба їх використати підвішує чип або псує вміст'
@@ -128,9 +178,9 @@
     on the module and therefore should not be used for other purposes.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Довідник стверджує, що спроба їх використати підвішує чип або псує флеш; документація
     вказує, що їх не слід використовувати для інших цілей
 - nazva: 'T-07-067: Ніколи, за жодних умов, у жодному проєкті.'
@@ -141,9 +191,9 @@
     on the module and therefore should not be used for other purposes.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Категоричне правило в довіднику про заборону підтверджується рекомендацією ESP-IDF
     не використовувати ці піни
   title: 'T-07-067: Ніколи, за жодних умов, у жодному проєкті.'
@@ -154,9 +204,9 @@
     on the module and therefore should not be used for other purposes.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Категоричне правило в довіднику про заборону підтверджується рекомендацією ESP-IDF
     не використовувати ці піни
 - nazva: 'T-07-069: Різниця між шісткою й цією парою — у'
@@ -167,9 +217,9 @@
     on the module
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: GPIO 6-11 названі без слова "usually", GPIO 16-17 названі зі словом "usually" -
     розрізняються саме цим словом
   title: 'T-07-069: Різниця між шісткою й цією парою — у'
@@ -180,9 +230,9 @@
     on the module
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO 6-11 названі без слова "usually", GPIO 16-17 названі зі словом "usually" - розрізняються
     саме цим словом
 - nazva: 'T-07-072: Практично це означає, що правило «шість пінів» безпечне'
@@ -193,9 +243,9 @@
     on the module and therefore should not be used for other purposes.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Слово "usually" підтверджує, що безпека залежить від типу модуля - потрібно знати,
     який модуль тримаєте
   title: 'T-07-072: Практично це означає, що правило «шість пінів» безпечне'
@@ -206,9 +256,9 @@
     on the module and therefore should not be used for other purposes.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Слово "usually" підтверджує, що безпека залежить від типу модуля - потрібно знати,
     який модуль тримаєте
 - nazva: 'T-07-083: Друге важливіше, бо менш очевидне.'
@@ -219,9 +269,9 @@
     or pulldown functions.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Друге обмеження (відсутність pull-up/pull-down) менш очевидне, ніж перше (input-only)
   title: 'T-07-083: Друге важливіше, бо менш очевидне.'
   match: Друге\s+важливіше,\s+бо\s+менш
@@ -231,9 +281,9 @@
     or pulldown functions.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Друге обмеження (відсутність pull-up/pull-down) менш очевидне, ніж перше (input-only)
 - nazva: 'T-07-085: Виглядає як несправний пін або несправна кнопка.'
   zbih: Виглядає\s+як\s+несправний\s+пін
@@ -243,9 +293,9 @@
     or pulldown functions.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Кнопка на GPIO без зовнішнього резистора підтягування виглядає як несправна
   title: 'T-07-085: Виглядає як несправний пін або несправна кнопка.'
   match: Виглядає\s+як\s+несправний\s+пін
@@ -255,9 +305,9 @@
     or pulldown functions.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Кнопка на GPIO без зовнішнього резистора підтягування виглядає як несправна
 - nazva: 'T-07-086: Налаштуванням у коді це не змінюється: апаратної схеми'
   zbih: 'Налаштуванням\s+у\s+коді\s+це\s+не\s+змінюється:'
@@ -266,9 +316,9 @@
   cytata: 'do not have software-enabled pullup or pulldown functions
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Апаратна особливість GPIO34-39 - відсутність pull-up/pull-down не може бути змінена
     налаштуванням коду
   title: 'T-07-086: Налаштуванням у коді це не змінюється: апаратної схеми'
@@ -278,9 +328,9 @@
   quote: 'do not have software-enabled pullup or pulldown functions
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Апаратна особливість GPIO34-39 - відсутність pull-up/pull-down не може бути змінена
     налаштуванням коду
 - nazva: 'T-07-093: Людина шукає помилку в коді вимірювання, а справа'
@@ -291,9 +341,9 @@
     or pulldown functions.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Задача встановлення датчика на GPIO34-39 вимагає правильного вибору піна, не налаштування
     коду
   title: 'T-07-093: Людина шукає помилку в коді вимірювання, а справа'
@@ -304,9 +354,9 @@
     or pulldown functions.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Задача встановлення датчика на GPIO34-39 вимагає правильного вибору піна, не налаштування
     коду
 - nazva: 'T-07-107: Використати їх під щось інше можна, але тоді'
@@ -316,9 +366,9 @@
   cytata: 'TXD & RXD are usually used for flashing and debugging.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Використання GPIO1/GPIO3 для інших цілей втрачає важливість для діагностики
   title: 'T-07-107: Використати їх під щось інше можна, але тоді'
   match: Використати\s+їх\s+під\s+щось
@@ -327,9 +377,9 @@
   quote: 'TXD & RXD are usually used for flashing and debugging.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Використання GPIO1/GPIO3 для інших цілей втрачає важливість для діагностики
 - nazva: 'T-07-108: Правило: чіпати UART0 тільки тоді, коли пінів справді'
   zbih: Правило:\s+чіпати\s+UART0\s+тільки
@@ -338,9 +388,9 @@
   cytata: 'TXD & RXD are usually used for flashing and debugging.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: GPIO1 і GPIO3 зарезервовані для консолі, рекомендація дотримуватись, лише крайній
     випадок використання
   title: 'T-07-108: Правило: чіпати UART0 тільки тоді, коли пінів справді'
@@ -350,9 +400,9 @@
   quote: 'TXD & RXD are usually used for flashing and debugging.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO1 і GPIO3 зарезервовані для консолі, рекомендація дотримуватись, лише крайній
     випадок використання
 - nazva: 'T-07-136: Strapping-піни краще використовувати як виходи й лишати вільними'
@@ -363,9 +413,9 @@
     pins. For more information, please refer to `ESP32 datasheet`
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Strapping-піни читаються при старті, тому їх краще використовувати як виходи, не
     входи, щоб не зіпсувати boot-режим
   title: 'T-07-136: Strapping-піни краще використовувати як виходи й лишати вільними'
@@ -376,9 +426,9 @@
     pins. For more information, please refer to `ESP32 datasheet`
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Strapping-піни читаються при старті, тому їх краще використовувати як виходи, не входи,
     щоб не зіпсувати boot-режим
 - nazva: 'T-07-045: | | Головний пін | Другий пін для'
@@ -389,9 +439,9 @@
     pins.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Таблиця в довіднику показує різні комбінації strapping пінів для входу в бутлоадер
   title: 'T-07-045: | | Головний пін | Другий пін для'
   match: \|\s+\|\s+Головний\s+пін
@@ -401,9 +451,9 @@
     pins.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Таблиця в довіднику показує різні комбінації strapping пінів для входу в бутлоадер
 - nazva: 'T-07-053: На classic і S3 такої комбінації немає —'
   zbih: На\s+classic\s+і\s+S3
@@ -413,9 +463,9 @@
     pins. For more information, please refer to `ESP32 datasheet`
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Classic ESP32 має специфічні комбінації strapping пінів для download mode, відмінні
     від S3
   title: 'T-07-053: На classic і S3 такої комбінації немає —'
@@ -426,9 +476,9 @@
     pins. For more information, please refer to `ESP32 datasheet`
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Classic ESP32 має специфічні комбінації strapping пінів для download mode, відмінні
     від S3
 - nazva: 'T-07-064: Вони **виведені на гребінку** більшості плат, підписані як'
@@ -439,9 +489,9 @@
     integrated on the module and therefore should not be used for other purposes.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Попередження про те, що ці піни виведені на гребінку як звичайні GPIO, але насправді
     зайняті флешем
   title: 'T-07-064: Вони **виведені на гребінку** більшості плат, підписані як'
@@ -452,9 +502,9 @@
     integrated on the module and therefore should not be used for other purposes.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Попередження про те, що ці піни виведені на гребінку як звичайні GPIO, але насправді
     зайняті флешем
 - nazva: 'T-07-066: Правило категоричне: [[classic]] шість пінів 6–11 не існують.'
@@ -465,9 +515,9 @@
     integrated on the module and therefore should not be used for other purposes.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: GPIO6-11 - категоричне правило, вони не існують для використання, зайняті флешем
   title: 'T-07-066: Правило категоричне: [[classic]] шість пінів 6–11 не існують.'
   match: Правило\s+категоричне:\s+\[\[classic\]\]\s+шість
@@ -477,9 +527,9 @@
     integrated on the module and therefore should not be used for other purposes.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO6-11 - категоричне правило, вони не існують для використання, зайняті флешем
 - nazva: 'T-07-071: На голому `WROOM-32` вони вільні.'
   zbih: На\s+голому\s+`WROOM\-32`\s+вони
@@ -489,9 +539,9 @@
     on the module
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Слово "usually" означає, що на модулях без PSRAM (WROOM-32) GPIO16-17 можуть бути
     вільні
   title: 'T-07-071: На голому `WROOM-32` вони вільні.'
@@ -502,9 +552,9 @@
     on the module
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Слово "usually" означає, що на модулях без PSRAM (WROOM-32) GPIO16-17 можуть бути
     вільні
 - nazva: 'T-07-078: [[S3]] Це найпоширеніша причина «купив S3 із 16'
@@ -516,9 +566,9 @@
     chip, GPIO33 ~ GPIO37 are also not recommended for other uses.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: S3 з Octal PSRAM (N16R8) використовує додаткові піни GPIO33-37, тому менше доступних
     пінів ніж classic
   title: 'T-07-078: [[S3]] Це найпоширеніша причина «купив S3 із 16'
@@ -530,9 +580,9 @@
     chip, GPIO33 ~ GPIO37 are also not recommended for other uses.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S3 з Octal PSRAM (N16R8) використовує додаткові піни GPIO33-37, тому менше доступних
     пінів ніж classic
 - nazva: 'T-07-080: Перед проєктуванням плати на S3 варто точно знати,'
@@ -544,9 +594,9 @@
     to SPIIO4 ~ SPIIO7
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: N8 (з Octal PSRAM) і N16R8 (з 16МБ Octal PSRAM) мають різні набори пінів
   title: 'T-07-080: Перед проєктуванням плати на S3 варто точно знати,'
   match: Перед\s+проєктуванням\s+плати\s+на
@@ -557,9 +607,9 @@
     to SPIIO4 ~ SPIIO7
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: N8 (з Octal PSRAM) і N16R8 (з 16МБ Octal PSRAM) мають різні набори пінів
 - nazva: 'T-07-087: У пізніших сімействах (S3, C3) тільки-вхідних пінів немає'
   zbih: У\s+пізніших\s+сімействах\s+\(S3,
@@ -568,9 +618,9 @@
   cytata: 'The {IDF_TARGET_NAME} chip features 45 physical GPIO pins
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: S3 і C3 мають більше доступних пінів і немає тільки-вхідних пінів, на відміну від
     classic
   title: 'T-07-087: У пізніших сімействах (S3, C3) тільки-вхідних пінів немає'
@@ -580,9 +630,9 @@
   quote: 'The {IDF_TARGET_NAME} chip features 45 physical GPIO pins
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S3 і C3 мають більше доступних пінів і немає тільки-вхідних пінів, на відміну від
     classic
 - nazva: 'T-07-101: Більше ніде в лінійці DAC немає (розділи 04'
@@ -592,9 +642,9 @@
   cytata: 'The {IDF_TARGET_NAME} chip features 34 physical GPIO pins
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ESP32 classic - єдиний чип в лінійці з DAC на GPIO25 і GPIO26, інші сімейства DAC
     не мають
   title: 'T-07-101: Більше ніде в лінійці DAC немає (розділи 04'
@@ -604,9 +654,9 @@
   quote: 'The {IDF_TARGET_NAME} chip features 34 physical GPIO pins
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32 classic - єдиний чип в лінійці з DAC на GPIO25 і GPIO26, інші сімейства DAC
     не мають
 - nazva: 'T-07-104: Для всіх трьох матриця GPIO не діє: це'
@@ -617,9 +667,9 @@
     or pulldown functions.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Аналогові функції (ADC, DAC, Touch) не керуються матрицею GPIO, вони з'єднані з
     конкретними пінами
   title: 'T-07-104: Для всіх трьох матриця GPIO не діє: це'
@@ -630,9 +680,9 @@
     or pulldown functions.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Аналогові функції (ADC, DAC, Touch) не керуються матрицею GPIO, вони з'єднані з конкретними
     пінами
 - nazva: 'T-07-121: **Чип із більшою кількістю пінів** — S3 має'
@@ -643,9 +693,9 @@
     ~ GPIO48)
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: S3 має 45 GPIO пінів проти 34 на classic ESP32, значно більше доступних пінів
   title: 'T-07-121: **Чип із більшою кількістю пінів** — S3 має'
   match: \*\*Чип\s+із\s+більшою\s+кількістю
@@ -655,7 +705,7 @@
     ~ GPIO48)
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S3 має 45 GPIO пінів проти 34 на classic ESP32, значно більше доступних пінів

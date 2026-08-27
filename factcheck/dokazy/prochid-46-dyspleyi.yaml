@@ -14,6 +14,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-46-043: Це незручно і ламається при оновленні бібліотеки; варто'
   zbih: Це\s+незручно\s+і\s+ламається
   klas: A
@@ -22,9 +34,9 @@
     kept within the TFT_eSPI folder.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що конфігурація ламається при оновленні бібліотеки
   title: 'T-46-043: Це незручно і ламається при оновленні бібліотеки; варто'
   match: Це\s+незручно\s+і\s+ламається
@@ -34,9 +46,9 @@
     kept within the TFT_eSPI folder.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що конфігурація ламається при оновленні бібліотеки
 - nazva: 'T-46-046: LVGL дає красиві інтерфейси і коштує ресурсів.'
   zbih: LVGL\s+дає\s+красиві\s+інтерфейси
@@ -45,9 +57,9 @@
   cytata: 'At a bare minimum needs only 32kB RAM and 128kB Flash, a frame buffer
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що LVGL дає інтерфейси та потребує ресурсів
   title: 'T-46-046: LVGL дає красиві інтерфейси і коштує ресурсів.'
   match: LVGL\s+дає\s+красиві\s+інтерфейси
@@ -56,9 +68,9 @@
   quote: 'At a bare minimum needs only 32kB RAM and 128kB Flash, a frame buffer
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що LVGL дає інтерфейси та потребує ресурсів
 - nazva: 'T-46-038: **U8g2** — монохромні дисплеї.'
   zbih: \*\*U8g2\*\*\s+—\s+монохромні\s+дисплеї\.
@@ -67,9 +79,9 @@
   cytata: 'U8g2 is a monochrome graphics library for embedded devices.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що U8g2 працює з монохромними дисплеями
   title: 'T-46-038: **U8g2** — монохромні дисплеї.'
   match: \*\*U8g2\*\*\s+—\s+монохромні\s+дисплеї\.
@@ -78,9 +90,9 @@
   quote: 'U8g2 is a monochrome graphics library for embedded devices.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що U8g2 працює з монохромними дисплеями
 - nazva: 'T-46-042: Особливість, що дивує: конфігурація (модель дисплея, піни) задається'
   zbih: Особливість,\s+що\s+дивує:\s+конфігурація
@@ -90,9 +102,9 @@
     defined inside the library. They can NOT be defined in the Arduino sketch.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що конфігурація задається всередині бібліотеки, а не в проєкті
   title: 'T-46-042: Особливість, що дивує: конфігурація (модель дисплея, піни) задається'
   match: Особливість,\s+що\s+дивує:\s+конфігурація
@@ -102,9 +114,9 @@
     defined inside the library. They can NOT be defined in the Arduino sketch.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що конфігурація задається всередині бібліотеки, а не в проєкті
 - nazva: 'T-46-055: **Кодування.** Рядки в коді — UTF-8; бібліотека має'
   zbih: \*\*Кодування\.\*\*\s+Рядки\s+в\s+коді
@@ -113,9 +125,9 @@
   cytata: 'Character arrays and Strings in UTF-8 format are supported.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: TFT_eSPI підтримує UTF-8 кодування для рядків
   title: 'T-46-055: **Кодування.** Рядки в коді — UTF-8; бібліотека має'
   match: \*\*Кодування\.\*\*\s+Рядки\s+в\s+коді
@@ -124,9 +136,9 @@
   quote: 'Character arrays and Strings in UTF-8 format are supported.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: TFT_eSPI підтримує UTF-8 кодування для рядків
 - nazva: 'T-46-068: Правильний спосіб читання — **PCNT** (розділ 33): апаратний'
   zbih: Правильний\s+спосіб\s+читання\s+—
@@ -136,9 +148,9 @@
     noise from the signal.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: PCNT модуль має вбудований фільтр для видалення шумів (дребезгу)
   title: 'T-46-068: Правильний спосіб читання — **PCNT** (розділ 33): апаратний'
   match: Правильний\s+спосіб\s+читання\s+—
@@ -148,7 +160,7 @@
     noise from the signal.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: PCNT модуль має вбудований фільтр для видалення шумів (дребезгу)

@@ -14,6 +14,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-59-079: Різниця виникає лише тоді, коли в старшому байті'
   zbih: Різниця\s+виникає\s+лише\s+тоді,
   klas: A
@@ -31,9 +43,9 @@
     calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Коефіцієнти H4 і H5 вимагають знакового розширення через (int8_t), що включає 7-й
     біт (біт знаку). На екземплярах з цим бітом, встановленим у reg_data[3] або reg_data[5],
     коефіцієнти мають правильне від'ємне значення, інакше вологість неправильна при правильних
@@ -55,9 +67,9 @@
     calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Коефіцієнти H4 і H5 вимагають знакового розширення через (int8_t), що включає 7-й
     біт (біт знаку). На екземплярах з цим бітом, встановленим у reg_data[3] або reg_data[5],
     коефіцієнти мають правильне від'ємне значення, інакше вологість неправильна при правильних

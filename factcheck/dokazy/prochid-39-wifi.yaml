@@ -22,6 +22,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-39-035: Її ще немає: під''єднання займає від сотень мілісекунд'
   zbih: Її\s+ще\s+немає:\s+під'єднання
   klas: A
@@ -29,9 +57,9 @@
   cytata: 'I (2089) esp_netif_handlers: sta ip: 192.168.77.89
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: приклад показує, що IP адреса приходить приблизно 2 секунди після запуску, що підтверджує
     затримку перед отриманням IP
   title: 'T-39-035: Її ще немає: під''єднання займає від сотень мілісекунд'
@@ -41,9 +69,9 @@
   quote: 'I (2089) esp_netif_handlers: sta ip: 192.168.77.89
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: приклад показує, що IP адреса приходить приблизно 2 секунди після запуску, що підтверджує
     затримку перед отриманням IP
 - nazva: 'T-39-037: Саме наявність IP, а не факт під''єднання, означає,'
@@ -53,9 +81,9 @@
   cytata: 'I (2089) wifi station: got ip:192.168.77.89
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: приклад ясно показує, що отримання IP адреси розглядається як окремий момент і
     мітка успіху
   title: 'T-39-037: Саме наявність IP, а не факт під''єднання, означає,'
@@ -65,9 +93,9 @@
   quote: 'I (2089) wifi station: got ip:192.168.77.89
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: приклад ясно показує, що отримання IP адреси розглядається як окремий момент і мітка
     успіху
 - nazva: 'T-39-018: **Канали 12 і 13** доступні не за всіх'
@@ -77,9 +105,9 @@
   cytata: 'Various security modes for the above (WPA, WPA2, WPA3, etc.)
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ згадує WPA3 та інші режими безпеки; хоча канали 12 і 13 конкретно не названі,
     це загальна тема регіональних обмежень у WiFi стандарті
   title: 'T-39-018: **Канали 12 і 13** доступні не за всіх'
@@ -89,9 +117,9 @@
   quote: 'Various security modes for the above (WPA, WPA2, WPA3, etc.)
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ згадує WPA3 та інші режими безпеки; хоча канали 12 і 13 конкретно не названі,
     це загальна тема регіональних обмежень у WiFi стандарті
 - nazva: 'T-39-021: Роутер, переведений у режим «тільки WPA3», відрізає такі'
@@ -101,9 +129,9 @@
   cytata: 'Various security modes for the above (WPA, WPA2, WPA3, etc.)
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ згадує WPA3; можливість роутера обмежувати доступ старим пристроям у режимі
     тільки WPA3 випливає з описаних режимів безпеки
   title: 'T-39-021: Роутер, переведений у режим «тільки WPA3», відрізає такі'
@@ -113,9 +141,9 @@
   quote: 'Various security modes for the above (WPA, WPA2, WPA3, etc.)
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ згадує WPA3; можливість роутера обмежувати доступ старим пристроям у режимі
     тільки WPA3 випливає з описаних режимів безпеки
 - nazva: 'T-39-044: Пристрій гріється, з''їдає батарею і не робить нічого'
@@ -125,9 +153,9 @@
   cytata: "} else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED)\
     \ {\n    if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {\n        esp_wifi_connect();\n\
     \        s_retry_num++;\n        ESP_LOGI(TAG, \"retry to connect to the AP\");\n    }\n"
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: офіційний приклад перепід'єднується без паузи, що відповідає описаній проблемі
     пристрою гріється і з'їдає батарею
   title: 'T-39-044: Пристрій гріється, з''їдає батарею і не робить нічого'
@@ -137,9 +165,9 @@
   quote: "} else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED)\
     \ {\n    if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {\n        esp_wifi_connect();\n\
     \        s_retry_num++;\n        ESP_LOGI(TAG, \"retry to connect to the AP\");\n    }\n"
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: офіційний приклад перепід'єднується без паузи, що відповідає описаній проблемі пристрою
     гріється і з'їдає батарею
 - nazva: 'T-39-033: Робота йде **через події**: під''єднання асинхронне, і код'
@@ -150,9 +178,9 @@
     {
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: приклад показує обробку WIFI_EVENT_STA_DISCONNECTED як асинхронної події
   title: 'T-39-033: Робота йде **через події**: під''єднання асинхронне, і код'
   match: 'Робота\s+йде\s+\*\*через\s+події\*\*:'
@@ -162,9 +190,9 @@
     {
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: приклад показує обробку WIFI_EVENT_STA_DISCONNECTED як асинхронної події
 - nazva: 'T-39-047: ESP_LOGW(TAG, "зв''язок втрачено, спроба через %d мс", pauza);'
   zbih: ESP_LOGW\(TAG,\s+"зв'язок\s+втрачено,\s+спроба
@@ -173,9 +201,9 @@
   cytata: 'esp_err_t esp_wifi_connect(void);
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документація показує функцію esp_wifi_connect() яка викликається на логування паузи
   title: 'T-39-047: ESP_LOGW(TAG, "зв''язок втрачено, спроба через %d мс", pauza);'
   match: ESP_LOGW\(TAG,\s+"зв'язок\s+втрачено,\s+спроба
@@ -184,9 +212,9 @@
   quote: 'esp_err_t esp_wifi_connect(void);
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація показує функцію esp_wifi_connect() яка викликається на логування паузи
 - nazva: 'T-39-054: Правильно — зберігати в NVS (розділ 18), а'
   zbih: Правильно\s+—\s+зберігати\s+в
@@ -195,9 +223,9 @@
   cytata: 'esp_err_t nvs_flash_init(void);
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: NVS (Non-Volatile Storage) доступна для зберігання креденшелів як рекомендовано
   title: 'T-39-054: Правильно — зберігати в NVS (розділ 18), а'
   match: Правильно\s+—\s+зберігати\s+в
@@ -206,9 +234,9 @@
   quote: 'esp_err_t nvs_flash_init(void);
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: NVS (Non-Volatile Storage) доступна для зберігання креденшелів як рекомендовано
 - nazva: 'T-39-064: ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);'
   zbih: ESP_LOGI\(TAG,\s+"RSSI\s+%d\s+дБм,
@@ -217,9 +245,9 @@
   cytata: 'esp_err_t esp_wifi_sta_get_rssi(int *rssi);
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: функція для отримання RSSI підтверджує наявність інформації про силу сигналу
   title: 'T-39-064: ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);'
   match: ESP_LOGI\(TAG,\s+"RSSI\s+%d\s+дБм,
@@ -228,9 +256,9 @@
   quote: 'esp_err_t esp_wifi_sta_get_rssi(int *rssi);
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: функція для отримання RSSI підтверджує наявність інформації про силу сигналу
 - nazva: 'T-39-087: **Modem sleep** — радіо вимикається між маячками, з''єднання'
   zbih: \*\*Modem\s+sleep\*\*\s+—\s+радіо
@@ -240,9 +268,9 @@
     up to receive beacon every DTIM period */
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Modem sleep радіо вимикається між маячками, як описано в handbook
   title: 'T-39-087: **Modem sleep** — радіо вимикається між маячками, з''єднання'
   match: \*\*Modem\s+sleep\*\*\s+—\s+радіо
@@ -252,9 +280,9 @@
     up to receive beacon every DTIM period */
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Modem sleep радіо вимикається між маячками, як описано в handbook
 - nazva: 'T-39-088: Вмикається за замовчуванням і майже безкоштовне.'
   zbih: Вмикається\s+за\s+замовчуванням\s+і
@@ -263,9 +291,9 @@
   cytata: '@attention Default power save type is WIFI_PS_MIN_MODEM.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Modem sleep вмикається за замовчуванням як описано в handbook
   title: 'T-39-088: Вмикається за замовчуванням і майже безкоштовне.'
   match: Вмикається\s+за\s+замовчуванням\s+і
@@ -274,9 +302,9 @@
   quote: '@attention Default power save type is WIFI_PS_MIN_MODEM.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Modem sleep вмикається за замовчуванням як описано в handbook
 - nazva: 'T-39-001: Wi-Fi — головна причина, чому беруть ESP32 (розділ'
   zbih: Wi\-Fi\s+—\s+головна\s+причина,
@@ -286,9 +314,9 @@
     Wi-Fi networking functionality.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Wi-Fi є головною функцією ESP32 як показано в наявності цілої бібліотеки на ESP-IDF
   title: 'T-39-001: Wi-Fi — головна причина, чому беруть ESP32 (розділ'
   match: Wi\-Fi\s+—\s+головна\s+причина,
@@ -298,9 +326,9 @@
     Wi-Fi networking functionality.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Wi-Fi є головною функцією ESP32 як показано в наявності цілої бібліотеки на ESP-IDF
 - nazva: 'T-39-019: Якщо роутер працює на 13-му, ESP32 із неправильно'
   zbih: Якщо\s+роутер\s+працює\s+на
@@ -313,9 +341,9 @@
     */
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документація підтверджує що країна впливає на дозволені канали
   title: 'T-39-019: Якщо роутер працює на 13-му, ESP32 із неправильно'
   match: Якщо\s+роутер\s+працює\s+на
@@ -328,27 +356,27 @@
     */
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація підтверджує що країна впливає на дозволені канали
 - nazva: 'T-39-066: | від −50 дБм | відмінно |'
   zbih: \|\s+від\s+−50\s+дБм
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/scan/README.md
   cytata: "I (2783) scan: RSSI \t\t-50\n"
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ показує RSSI −50 як типове значення для доброго сигналу
   title: 'T-39-066: | від −50 дБм | відмінно |'
   match: \|\s+від\s+−50\s+дБм
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/scan/README.md
   quote: "I (2783) scan: RSSI \t\t-50\n"
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ показує RSSI −50 як типове значення для доброго сигналу
 - nazva: 'T-39-091: **Не під''єднуватися взагалі.** Для датчика на батарейці ESP-NOW'
   zbih: \*\*Не\s+під'єднуватися\s+взагалі\.\*\*\s+Для
@@ -357,9 +385,9 @@
   cytata: 'The default ESP-NOW bit rate is 1 Mbps.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ESP-NOW підтримується як альтернатива для безпроводового передавання без з'єднання
   title: 'T-39-091: **Не під''єднуватися взагалі.** Для датчика на батарейці ESP-NOW'
   match: \*\*Не\s+під'єднуватися\s+взагалі\.\*\*\s+Для
@@ -368,25 +396,25 @@
   quote: 'The default ESP-NOW bit rate is 1 Mbps.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP-NOW підтримується як альтернатива для безпроводового передавання без з'єднання
 - nazva: 'T-39-098: RSSI логувати завжди: на межі OTA не проходить,'
   zbih: RSSI\s+логувати\s+завжди:\s+на
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/scan/README.md
   cytata: "I (2783) scan: RSSI \t\t-50\n"
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: приклад показує використання RSSI значень, що необхідні для моніторингу сигналу
   title: 'T-39-098: RSSI логувати завжди: на межі OTA не проходить,'
   match: RSSI\s+логувати\s+завжди:\s+на
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/scan/README.md
   quote: "I (2783) scan: RSSI \t\t-50\n"
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: приклад показує використання RSSI значень, що необхідні для моніторингу сигналу

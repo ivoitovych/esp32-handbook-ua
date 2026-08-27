@@ -9,6 +9,8 @@
 # широкий взірець бреше, довгий ламається.
 
 
+
+
 - nazva: 'T-E-125: WS2812 / SK6812 · Як → **RMT**, не'
   zbih: WS2812\s+/\s+SK6812\s+·\s+Як
   klas: A
@@ -17,9 +19,9 @@
     strip
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ESP-IDF документація підтверджує, що WS2812 керується через RMT, не програмно
   title: 'T-E-125: WS2812 / SK6812 · Як → **RMT**, не'
   match: WS2812\s+/\s+SK6812\s+·\s+Як
@@ -28,7 +30,7 @@
   quote: 'rmt/led_strip demonstrates how to use the RMT peripheral to drive a WS2812 LED strip
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP-IDF документація підтверджує, що WS2812 керується через RMT, не програмно

@@ -11,6 +11,12 @@
 
 
 
+
+
+
+
+
+
 - nazva: 'T-19-023: Схема з двох слотів без `factory` — робоча'
   zbih: Схема\s+з\s+двох\s+слотів\s+без
   klas: A
@@ -18,9 +24,9 @@
   cytata: 'Factory app, two OTA definitions
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Документація описує схему з двома OTA слотами, але вона ВКЛЮЧАЄ factory партицію,
     а не без неї
   title: 'T-19-023: Схема з двох слотів без `factory` — робоча'
@@ -30,9 +36,9 @@
   quote: 'Factory app, two OTA definitions
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документація описує схему з двома OTA слотами, але вона ВКЛЮЧАЄ factory партицію,
     а не без неї
 - nazva: 'T-19-013: Пристрій виконується зі слоту `ota_0`.'
@@ -42,9 +48,9 @@
   cytata: 'the first available OTA slot (usually ``ota_0``) is booted
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Цитата про ota_0 як слот завантаження дослівно присутня в документації OTA
   title: 'T-19-013: Пристрій виконується зі слоту `ota_0`.'
   match: Пристрій\s+виконується\s+зі\s+слоту
@@ -53,9 +59,9 @@
   quote: 'the first available OTA slot (usually ``ota_0``) is booted
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Цитата про ota_0 як слот завантаження дослівно присутня в документації OTA
 - nazva: 'T-19-014: Приходить оновлення — воно записується в `ota_1`, при'
   zbih: Приходить\s+оновлення\s+—\s+воно
@@ -65,9 +71,9 @@
     selected for booting
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Документація підтверджує, що оновлення записується в ota_1 (невиконуваний слот),
     а робоча прошивка не порушується
   title: 'T-19-014: Приходить оновлення — воно записується в `ota_1`, при'
@@ -78,8 +84,8 @@
     for booting
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документація підтверджує, що оновлення записується в ota_1 (невиконуваний слот), а
     робоча прошивка не порушується

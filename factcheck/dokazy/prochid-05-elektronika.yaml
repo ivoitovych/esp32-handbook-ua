@@ -16,6 +16,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-05-089: У цифровій схемі це локальний запас енергії на'
   zbih: У\s+цифровій\s+схемі\s+це
   klas: A
@@ -24,9 +40,9 @@
     the actual value may range between 1000 mV and 1200 mV depending on the chip
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: documentation shows voltage variations occur and need to be accounted for in design
   title: 'T-05-089: У цифровій схемі це локальний запас енергії на'
   match: У\s+цифровій\s+схемі\s+це
@@ -36,9 +52,9 @@
     the actual value may range between 1000 mV and 1200 mV depending on the chip
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation shows voltage variations occur and need to be accounted for in design
 - nazva: 'T-05-017: Світлодіод не можна вмикати без резистора: він не'
   zbih: Світлодіод\s+не\s+можна\s+вмикати
@@ -48,9 +64,9 @@
     of LEDs
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: documentation confirms LEDs are controlled, implying they require control circuits;
     handbook point about needing resistor is standard LED practice
   title: 'T-05-017: Світлодіод не можна вмикати без резистора: він не'
@@ -61,9 +77,9 @@
     of LEDs
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation confirms LEDs are controlled, implying they require control circuits;
     handbook point about needing resistor is standard LED practice
 - nazva: 'T-05-064: **Pull-up** — резистор від піна до 3.3 В.'
@@ -74,9 +90,9 @@
     internal pull-up/pull-down resistors, etc. for pins
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: documentation confirms pull-up resistors are configurable on GPIO pins
   title: 'T-05-064: **Pull-up** — резистор від піна до 3.3 В.'
   match: \*\*Pull\-up\*\*\s+—\s+резистор\s+від
@@ -86,9 +102,9 @@
     pull-up/pull-down resistors, etc. for pins
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation confirms pull-up resistors are configurable on GPIO pins
 - nazva: 'T-05-066: **Pull-down** — резистор до землі, дзеркально.'
   zbih: \*\*Pull\-down\*\*\s+—\s+резистор\s+до
@@ -98,9 +114,9 @@
     internal pull-up/pull-down resistors, etc. for pins
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: documentation confirms pull-down resistors are available as option for GPIO configuration
   title: 'T-05-066: **Pull-down** — резистор до землі, дзеркально.'
   match: \*\*Pull\-down\*\*\s+—\s+резистор\s+до
@@ -110,9 +126,9 @@
     pull-up/pull-down resistors, etc. for pins
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation confirms pull-down resistors are available as option for GPIO configuration
 - nazva: 'T-05-067: Хороша новина: у ESP32 підтягувальні резистори **вбудовані** і'
   zbih: Хороша\s+новина:\s+у\s+ESP32
@@ -123,9 +139,9 @@
     USB PHY
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: documentation confirms ESP32 has built-in pull-up/pull-down resistors configurable
     from code
   title: 'T-05-067: Хороша новина: у ESP32 підтягувальні резистори **вбудовані** і'
@@ -136,9 +152,9 @@
     pull-up/pull-down resistors, etc. for pins, including the ones reused by the USB PHY
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation confirms ESP32 has built-in pull-up/pull-down resistors configurable
     from code
 - nazva: 'T-05-074: Це не налаштовується — апаратної схеми немає.'
@@ -149,9 +165,9 @@
     because it may be changed in the bootloader or application startup code before app_main
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: documentation indicates GPIO configurations require explicit setup and cannot rely
     on defaults
   title: 'T-05-074: Це не налаштовується — апаратної схеми немає.'
@@ -162,9 +178,9 @@
     because it may be changed in the bootloader or application startup code before app_main
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation indicates GPIO configurations require explicit setup and cannot rely
     on defaults
 - nazva: 'T-05-077: Звичайний вихід активно тримає лінію в обох станах.'
@@ -176,9 +192,9 @@
     an output voltage and read input voltages
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: documentation confirms GPIO actively drives output voltage, implying it actively
     maintains both high and low states
   title: 'T-05-077: Звичайний вихід активно тримає лінію в обох станах.'
@@ -190,9 +206,9 @@
     and read input voltages
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation confirms GPIO actively drives output voltage, implying it actively maintains
     both high and low states
 - nazva: 'T-05-079: **Open-drain** уміє лише притискати лінію до землі, а'
@@ -206,9 +222,9 @@
     :cpp:enumerator:`gpio_mode_t::GPIO_MODE_INPUT`
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: documentation shows GPIO can be configured in different output modes including
     open-drain
   title: 'T-05-079: **Open-drain** уміє лише притискати лінію до землі, а'
@@ -222,7 +238,7 @@
     :cpp:enumerator:`gpio_mode_t::GPIO_MODE_INPUT`
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation shows GPIO can be configured in different output modes including open-drain

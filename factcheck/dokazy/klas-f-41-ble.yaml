@@ -18,6 +18,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-41-007: Проєкт на SPP, що переїжджає на S3, доведеться'
   zbih: Проєкт\s+на\s+SPP,\s+що
   klas: A
@@ -26,9 +46,9 @@
     RFCOMM protocol, enabling RS-232-style data transmission over Bluetooth.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: SPP is Classic Bluetooth only; S3 supports only BLE, so projects moving to S3 must
     be rewritten
   title: 'T-41-007: Проєкт на SPP, що переїжджає на S3, доведеться'
@@ -39,9 +59,9 @@
     RFCOMM protocol, enabling RS-232-style data transmission over Bluetooth.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: SPP is Classic Bluetooth only; S3 supports only BLE, so projects moving to S3 must
     be rewritten
 - nazva: 'T-41-011: Де є · BLE → уся лінійка, крім'
@@ -55,9 +75,9 @@
     * - ESP32-C6\n  - Y\n  - Y\n  - Y\n  - Y\n  - \\–\n  - \\–\n  - Y\n* - ESP32-C61\n  -\
     \ Y\n  - Y\n  - Y\n  - Y\n  - \\–\n  - \\–\n  - Y\n* - ESP32-H2\n  - Y\n  - Y\n  - Y\n\
     \  - Y\n  - \\–\n  - \\–\n  - \\–\n"
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: BLE support table shows ESP32, S3, C2, C3, C5, C6, C61, H2, H4 - notably S2 is
     absent
   title: 'T-41-011: Де є · BLE → уся лінійка, крім'
@@ -71,9 +91,9 @@
     \ - ESP32-C6\n  - Y\n  - Y\n  - Y\n  - Y\n  - \\–\n  - \\–\n  - Y\n* - ESP32-C61\n  -\
     \ Y\n  - Y\n  - Y\n  - Y\n  - \\–\n  - \\–\n  - Y\n* - ESP32-H2\n  - Y\n  - Y\n  - Y\n\
     \  - Y\n  - \\–\n  - \\–\n  - \\–\n"
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: BLE support table shows ESP32, S3, C2, C3, C5, C6, C61, H2, H4 - notably S2 is absent
 - nazva: 'T-41-015: Швидкість · BLE → десятки кбіт/с'
   zbih: Швидкість\s+·\s+BLE\s+→
@@ -84,9 +104,9 @@
     Bluetooth protocol with a lower data transfer rate compared to Bluetooth Classic.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: BLE has lower data transfer rate than Classic (though specific "tens of kbits/s"
     not stated)
   title: 'T-41-015: Швидкість · BLE → десятки кбіт/с'
@@ -98,9 +118,9 @@
     Bluetooth protocol with a lower data transfer rate compared to Bluetooth Classic.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: BLE has lower data transfer rate than Classic (though specific "tens of kbits/s" not
     stated)
 - nazva: 'T-41-019: Спарювання · BLE → не обов''язкове'
@@ -111,9 +131,9 @@
     bonded=0
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: BLE connection logs show encrypted=0, authenticated=0, bonded=0, proving pairing/bonding
     not obligatory
   title: 'T-41-019: Спарювання · BLE → не обов''язкове'
@@ -124,9 +144,9 @@
     bonded=0
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: BLE connection logs show encrypted=0, authenticated=0, bonded=0, proving pairing/bonding
     not obligatory
 - nazva: 'T-41-038: Тоді пристрій самоописовий — будь-який універсальний BLE-застосунок покаже'
@@ -141,9 +161,9 @@
     data, enabling cross-manufacturer communication.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Підтверджує, що стандартні GATT послуги дозволяють універсальним додаткам розпізнавати
     та виводити осмислені значення без кастомного клієнта
   title: 'T-41-038: Тоді пристрій самоописовий — будь-який універсальний BLE-застосунок покаже'
@@ -158,9 +178,9 @@
     data, enabling cross-manufacturer communication.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує, що стандартні GATT послуги дозволяють універсальним додаткам розпізнавати
     та виводити осмислені значення без кастомного клієнта
 - nazva: 'T-41-040: В ESP-IDF два стеки BLE, і вибір між'
@@ -170,9 +190,9 @@
   cytata: 'ESP-IDF supports two host stacks: **Bluedroid** and **NimBLE**.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Прямо підтверджує наявність двох стеків BLE в ESP-IDF
   title: 'T-41-040: В ESP-IDF два стеки BLE, і вибір між'
   match: В\s+ESP\-IDF\s+два\s+стеки
@@ -181,9 +201,9 @@
   quote: 'ESP-IDF supports two host stacks: **Bluedroid** and **NimBLE**.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Прямо підтверджує наявність двох стеків BLE в ESP-IDF
 - nazva: 'T-41-041: **Bluedroid** — повний стек, підтримує і Classic, і'
   zbih: \*\*Bluedroid\*\*\s+—\s+повний\s+стек,
@@ -193,9 +213,9 @@
     LE. Recommended for applications that require both technologies.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Підтверджує повний стек Bluedroid, що підтримує Classic і BLE
   title: 'T-41-041: **Bluedroid** — повний стек, підтримує і Classic, і'
   match: \*\*Bluedroid\*\*\s+—\s+повний\s+стек,
@@ -205,9 +225,9 @@
     LE. Recommended for applications that require both technologies.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує повний стек Bluedroid, що підтримує Classic і BLE
 - nazva: 'T-41-043: **NimBLE** — тільки BLE, компактніший, займає в рази'
   zbih: \*\*NimBLE\*\*\s+—\s+тільки\s+BLE,
@@ -216,9 +236,9 @@
   cytata: 'Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Підтверджує NimBLE як BLE-тільки компактніший стек з меншим RAM і флешем
   title: 'T-41-043: **NimBLE** — тільки BLE, компактніший, займає в рази'
   match: \*\*NimBLE\*\*\s+—\s+тільки\s+BLE,
@@ -227,9 +247,9 @@
   quote: 'Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує NimBLE як BLE-тільки компактніший стек з меншим RAM і флешем
 - nazva: 'T-41-049: **Wi-Fi і Bluetooth одночасно** працюють, але ділять одне'
   zbih: \*\*Wi\-Fi\s+і\s+Bluetooth\s+одночасно\*\*
@@ -240,9 +260,9 @@
     engaged in data transmission or reception.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Підтверджує, що Wi-Fi і Bluetooth ділять одне радіо і конкурують за час
   title: 'T-41-049: **Wi-Fi і Bluetooth одночасно** працюють, але ділять одне'
   match: \*\*Wi\-Fi\s+і\s+Bluetooth\s+одночасно\*\*
@@ -253,9 +273,9 @@
     engaged in data transmission or reception.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує, що Wi-Fi і Bluetooth ділять одне радіо і конкурують за час
 - nazva: 'T-41-054: BLE спроєктований для батарейок, і його головний параметр'
   zbih: BLE\s+спроєктований\s+для\s+батарейок,
@@ -266,9 +286,9 @@
     of Things (IoT), such as smart switches or sensors
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Підтверджує, що BLE спроєктований для низької енергоефективності; інтервал реклами
     важливий для оптимізації
   title: 'T-41-054: BLE спроєктований для батарейок, і його головний параметр'
@@ -280,9 +300,9 @@
     (IoT), such as smart switches or sensors
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує, що BLE спроєктований для низької енергоефективності; інтервал реклами
     важливий для оптимізації
 - nazva: 'T-41-078: Для BLE-проєкту брати NimBLE: різниця в пам''яті вирішальна'
@@ -292,9 +312,9 @@
   cytata: 'Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Документація стверджує, що NimBLE вимагає менше пам'яті в принципі, але не зазначає,
     що ця різниця "вирішальна" саме для C3. Більш того, в таблиці підтримки чипів показано,
     що обидва стеки (Bluedroid і NimBLE) підтримуються на C3.
@@ -305,9 +325,9 @@
   quote: 'Although both support Bluetooth LE, ESP-NimBLE requires less heap and flash size.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документація стверджує, що NimBLE вимагає менше пам'яті в принципі, але не зазначає,
     що ця різниця "вирішальна" саме для C3. Більш того, в таблиці підтримки чипів показано,
     що обидва стеки (Bluedroid і NimBLE) підтримуються на C3.

@@ -28,6 +28,86 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Рядки помилок з'єднання — Failed to connect і сусіди
   zbih: '`Failed to connect`|`Invalid head of packet`|`Device or resource busy`|`Permission
     denied`|шукати варто за початком рядка'
@@ -55,7 +135,8 @@
     Device or resource busy: ''/dev/ttyUSB0'' — порт зайнятий іншою програмою
 
     '
-  sposib: curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність:
     та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина,
     дія, розділ), у розділах 09, 17 і 25.
@@ -90,7 +171,8 @@
     Device or resource busy: ''/dev/ttyUSB0'' — порт зайнятий іншою програмою
 
     '
-  method: curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Прохід 10 звірив ці рядки й виправив шість вигаданих. Тут лише розширено досяжність:
     та сама четвірка живе в таблиці симптомів додатка B по три комірки на рядок (причина,
     дія, розділ), у розділах 09, 17 і 25.
@@ -125,7 +207,8 @@
     did not reset the watchdog in time:
 
     '
-  sposib: curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D
     і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
 
@@ -160,7 +243,8 @@
     did not reset the watchdog in time:
 
     '
-  method: curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в
     розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
 
@@ -219,7 +303,8 @@
     This chip is {detected}, not {requested}. Wrong --chip argument?
 
     '
-  sposib: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Чотири твердження розділу 17, які досі не мали доказу, бо стояли не в блоках коду,
     а в поясненнях: механізм stub, автоскидання через `DTR`/`RTS`, повідомлення про розбіжність
     чипа і причина «застосунок пише в UART».
@@ -254,7 +339,8 @@
     This chip is {detected}, not {requested}. Wrong --chip argument?
 
     '
-  method: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Чотири твердження розділу 17, які досі не мали доказу, бо стояли не в блоках коду,
     а в поясненнях: механізм stub, автоскидання через `DTR`/`RTS`, повідомлення про розбіжність
     чипа і причина «застосунок пише в UART».
@@ -277,7 +363,8 @@
     \ 0xFF bytes.\nOptions such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``\n\
     are used to set the corresponding values in the image header, exactly\nas they would be\
     \ when flashing.\n"
-  sposib: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда `merge-bin`
     без `--chip` не запускалася. Виправлення вже в тексті; цей запис доводить решту абзацу,
     який тоді лишився без доказу: обов''язковість `--chip` і **причина** її (порту немає,
@@ -298,7 +385,8 @@
     \ 0xFF bytes.\nOptions such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq``\n\
     are used to set the corresponding values in the image header, exactly\nas they would be\
     \ when flashing.\n"
-  method: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Прохід 9 знайшов тут найгрубішу помилку книги — надрукована команда `merge-bin` без
     `--chip` не запускалася. Виправлення вже в тексті; цей запис доводить решту абзацу, який
     тоді лишився без доказу: обов''язковість `--chip` і **причина** її (порту немає, визначати

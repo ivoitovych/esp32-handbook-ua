@@ -24,6 +24,38 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом:'
   zbih: У\s+проєкті\s+ESP\-IDF\s+розбивка
   klas: A
@@ -32,9 +64,9 @@
     menuconfig) and then build the project
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що розбивка задається текстовим CSV файлом
   title: 'T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом:'
   match: У\s+проєкті\s+ESP\-IDF\s+розбивка
@@ -44,9 +76,9 @@
     menuconfig) and then build the project
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що розбивка задається текстовим CSV файлом
 - nazva: 'T-18-080: У складі ESP-IDF · SPIFFS → так'
   zbih: У\s+складі\s+ESP\-IDF\s+·\s+SPIFFS
@@ -55,9 +87,9 @@
   cytata: 'spiffs (0x82) is for :doc:`/api-reference/storage/spiffs`
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: SPIFFS є частиною ESP-IDF, наведено посилання на внутрішню документацію
   title: 'T-18-080: У складі ESP-IDF · SPIFFS → так'
   match: У\s+складі\s+ESP\-IDF\s+·\s+SPIFFS
@@ -66,9 +98,9 @@
   quote: 'spiffs (0x82) is for :doc:`/api-reference/storage/spiffs`
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: SPIFFS є частиною ESP-IDF, наведено посилання на внутрішню документацію
 - nazva: 'T-18-088: Після цього розділ у меню з''являється, а тип'
   zbih: Після\s+цього\s+розділ\s+у
@@ -77,9 +109,9 @@
   cytata: 'littlefs (0x83) is for LittleFS filesystem
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що littlefs є дійсним типом розділу в CSV
   title: 'T-18-088: Після цього розділ у меню з''являється, а тип'
   match: Після\s+цього\s+розділ\s+у
@@ -88,9 +120,9 @@
   quote: 'littlefs (0x83) is for LittleFS filesystem
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що littlefs є дійсним типом розділу в CSV
 - nazva: 'T-18-103: **Взяти готову розбивку з більшим розділом застосунку** для'
   zbih: \*\*Взяти\s+готову\s+розбивку\s+з
@@ -100,9 +132,9 @@
     menu (idf.py menuconfig) and choose one of the simple predefined partition tables
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує наявність готових розбивок різних розмірів
   title: 'T-18-103: **Взяти готову розбивку з більшим розділом застосунку** для'
   match: \*\*Взяти\s+готову\s+розбивку\s+з
@@ -112,9 +144,9 @@
     menu (idf.py menuconfig) and choose one of the simple predefined partition tables
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує наявність готових розбивок різних розмірів
 - nazva: 'T-18-106: Якщо нова прошивка розрахована на іншу розбивку, вона'
   zbih: Якщо\s+нова\s+прошивка\s+розрахована
@@ -124,9 +156,9 @@
     according to the old partition table.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує ризик перезапису даних при зміні розбивки
   title: 'T-18-106: Якщо нова прошивка розрахована на іншу розбивку, вона'
   match: Якщо\s+нова\s+прошивка\s+розрахована
@@ -136,9 +168,9 @@
     according to the old partition table.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує ризик перезапису даних при зміні розбивки
 - nazva: 'T-18-107: Практично це означає: **розбивку треба обирати з запасом'
   zbih: Практично\s+це\s+означає:\s+\*\*розбивку
@@ -149,9 +181,9 @@
     to erase the entire flash contents.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує важливість раннього вибору розбивки
   title: 'T-18-107: Практично це означає: **розбивку треба обирати з запасом'
   match: Практично\s+це\s+означає:\s+\*\*розбивку
@@ -162,9 +194,9 @@
     to erase the entire flash contents.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує важливість раннього вибору розбивки
 - nazva: 'T-18-108: Змінити її потім можна лише з фізичним доступом'
   zbih: Змінити\s+її\s+потім\s+можна
@@ -174,9 +206,9 @@
     aligned to 0x10000 (64 KB) boundary.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: показує, що зміна розбивки потребує перепрошивки
   title: 'T-18-108: Змінити її потім можна лише з фізичним доступом'
   match: Змінити\s+її\s+потім\s+можна
@@ -186,9 +218,9 @@
     aligned to 0x10000 (64 KB) boundary.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: показує, що зміна розбивки потребує перепрошивки
 - nazva: 'T-18-109: Другий наслідок того самого: якщо ви змінили розбивку,'
   zbih: 'Другий\s+наслідок\s+того\s+самого:'
@@ -198,9 +230,9 @@
     according to the old partition table.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує ризик конфлікту даних при зміні розбивки
   title: 'T-18-109: Другий наслідок того самого: якщо ви змінили розбивку,'
   match: 'Другий\s+наслідок\s+того\s+самого:'
@@ -210,9 +242,9 @@
     according to the old partition table.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує ризик конфлікту даних при зміні розбивки
 - nazva: 'T-18-003: Це та частина системи, яку більшість не чіпає'
   zbih: Це\s+та\s+частина\s+системи,
@@ -222,9 +254,9 @@
     else), subtype and the offset in flash where the partition is loaded.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що розбивка - це те, що більшість не змінює, поки застосунок не переріс
   title: 'T-18-003: Це та частина системи, яку більшість не чіпає'
   match: Це\s+та\s+частина\s+системи,
@@ -234,9 +266,9 @@
     else), subtype and the offset in flash where the partition is loaded.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що розбивка - це те, що більшість не змінює, поки застосунок не переріс
 - nazva: 'T-18-009: Типова розбивка для пристрою без OTA виглядає так:'
   zbih: Типова\s+розбивка\s+для\s+пристрою
@@ -247,9 +279,9 @@
     0x10000, 1M,
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: наведено типову розбивку без OTA
   title: 'T-18-009: Типова розбивка для пристрою без OTA виглядає так:'
   match: Типова\s+розбивка\s+для\s+пристрою
@@ -260,9 +292,9 @@
     0x10000, 1M,
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: наведено типову розбивку без OTA
 - nazva: 'T-18-010: | Назва | Тип | Підтип | Зсув'
   zbih: \|\s+Назва\s+\|\s+Тип\s+\|\s+Підтип
@@ -271,9 +303,9 @@
   cytata: 'Name,   Type, SubType, Offset,  Size, Flags
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує формат таблиці розділів з колонками Назва, Тип, Підтип, Зсув, Розмір
   title: 'T-18-010: | Назва | Тип | Підтип | Зсув'
   match: \|\s+Назва\s+\|\s+Тип\s+\|\s+Підтип
@@ -282,9 +314,9 @@
   quote: 'Name,   Type, SubType, Offset,  Size, Flags
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує формат таблиці розділів з колонками Назва, Тип, Підтип, Зсув, Розмір
 - nazva: 'T-18-015: `phy_init` · Тип → data'
   zbih: '`phy_init`\s+·\s+Тип\s+→'
@@ -293,9 +325,9 @@
   cytata: 'phy_init, data, phy,     0xf000,  0x1000,
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: phy_init має тип data у таблиці розділів
   title: 'T-18-015: `phy_init` · Тип → data'
   match: '`phy_init`\s+·\s+Тип\s+→'
@@ -304,9 +336,9 @@
   quote: 'phy_init, data, phy,     0xf000,  0x1000,
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: phy_init має тип data у таблиці розділів
 - nazva: 'T-18-016: `phy_init` · Підтип → phy'
   zbih: '`phy_init`\s+·\s+Підтип\s+→'
@@ -315,9 +347,9 @@
   cytata: 'phy_init, data, phy,     0xf000,  0x1000,
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: phy_init має підтип phy у таблиці розділів
   title: 'T-18-016: `phy_init` · Підтип → phy'
   match: '`phy_init`\s+·\s+Підтип\s+→'
@@ -326,9 +358,9 @@
   quote: 'phy_init, data, phy,     0xf000,  0x1000,
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: phy_init має підтип phy у таблиці розділів
 - nazva: 'T-18-019: `factory` · Тип → app'
   zbih: '`factory`\s+·\s+Тип\s+→'
@@ -337,9 +369,9 @@
   cytata: 'factory,  app,  factory, 0x10000, 1M,
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: factory має тип app у таблиці розділів
   title: 'T-18-019: `factory` · Тип → app'
   match: '`factory`\s+·\s+Тип\s+→'
@@ -348,9 +380,9 @@
   quote: 'factory,  app,  factory, 0x10000, 1M,
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: factory має тип app у таблиці розділів
 - nazva: 'T-18-020: `factory` · Підтип → factory'
   zbih: '`factory`\s+·\s+Підтип\s+→'
@@ -359,9 +391,9 @@
   cytata: 'factory,  app,  factory, 0x10000, 1M,
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: factory має підтип factory у таблиці розділів
   title: 'T-18-020: `factory` · Підтип → factory'
   match: '`factory`\s+·\s+Підтип\s+→'
@@ -370,9 +402,9 @@
   quote: 'factory,  app,  factory, 0x10000, 1M,
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: factory має підтип factory у таблиці розділів
 - nazva: 'T-18-028: **`phy_init`** зберігає калібрувальні дані радіо.'
   zbih: \*\*`phy_init`\*\*\s+зберігає\s+калібрувальні\s+дані
@@ -382,9 +414,9 @@
     per-device, instead of in firmware.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що phy_init зберігає калібрувальні дані радіо
   title: 'T-18-028: **`phy_init`** зберігає калібрувальні дані радіо.'
   match: \*\*`phy_init`\*\*\s+зберігає\s+калібрувальні\s+дані
@@ -394,7 +426,7 @@
     per-device, instead of in firmware.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що phy_init зберігає калібрувальні дані радіо

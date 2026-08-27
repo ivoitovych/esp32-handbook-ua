@@ -20,6 +20,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-02-042: Wi-Fi · ESP32 → так'
   zbih: Wi\-Fi\s+·\s+ESP32\s+→
   klas: A
@@ -27,9 +51,9 @@
   cytata: '#define SOC_WIFI_SUPPORTED          1
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ESP32 has WiFi support defined in SoC capabilities
   title: 'T-02-042: Wi-Fi · ESP32 → так'
   match: Wi\-Fi\s+·\s+ESP32\s+→
@@ -38,9 +62,9 @@
   quote: '#define SOC_WIFI_SUPPORTED          1
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32 has WiFi support defined in SoC capabilities
 - nazva: 'T-02-043: Wi-Fi · S2 → так'
   zbih: Wi\-Fi\s+·\s+S2\s+→
@@ -49,9 +73,9 @@
   cytata: '#define SOC_WIFI_SUPPORTED              1
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: S2 has WiFi support defined in SoC capabilities
   title: 'T-02-043: Wi-Fi · S2 → так'
   match: Wi\-Fi\s+·\s+S2\s+→
@@ -60,9 +84,9 @@
   quote: '#define SOC_WIFI_SUPPORTED              1
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S2 has WiFi support defined in SoC capabilities
 - nazva: 'T-02-044: Wi-Fi · S3 → так'
   zbih: Wi\-Fi\s+·\s+S3\s+→
@@ -71,9 +95,9 @@
   cytata: '#define SOC_WIFI_SUPPORTED              1
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: S3 has WiFi support defined in SoC capabilities
   title: 'T-02-044: Wi-Fi · S3 → так'
   match: Wi\-Fi\s+·\s+S3\s+→
@@ -82,9 +106,9 @@
   quote: '#define SOC_WIFI_SUPPORTED              1
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S3 has WiFi support defined in SoC capabilities
 - nazva: 'T-02-047: Wi-Fi · H2 → **ні**'
   zbih: Wi\-Fi\s+·\s+H2\s+→
@@ -94,9 +118,9 @@
     hardware */
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: H2 SoC capabilities file shows only BLE support, no WIFI_SUPPORTED macro
   title: 'T-02-047: Wi-Fi · H2 → **ні**'
   match: Wi\-Fi\s+·\s+H2\s+→
@@ -106,9 +130,9 @@
     hardware */
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: H2 SoC capabilities file shows only BLE support, no WIFI_SUPPORTED macro
 - nazva: 'T-02-054: BLE · ESP32 → так'
   zbih: BLE\s+·\s+ESP32\s+→
@@ -118,9 +142,9 @@
     hardware */
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ESP32 has BLE support defined in SoC capabilities
   title: 'T-02-054: BLE · ESP32 → так'
   match: BLE\s+·\s+ESP32\s+→
@@ -130,9 +154,9 @@
     hardware */
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32 has BLE support defined in SoC capabilities
 - nazva: 'T-02-055: BLE · S2 → **ні**'
   zbih: BLE\s+·\s+S2\s+→
@@ -141,9 +165,9 @@
   cytata: '#define SOC_WIFI_SUPPORTED              1
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: S2 SoC capabilities file shows only WiFi support, no BLE_SUPPORTED macro
   title: 'T-02-055: BLE · S2 → **ні**'
   match: BLE\s+·\s+S2\s+→
@@ -152,9 +176,9 @@
   quote: '#define SOC_WIFI_SUPPORTED              1
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S2 SoC capabilities file shows only WiFi support, no BLE_SUPPORTED macro
 - nazva: 'T-02-057: BLE · C3 → так'
   zbih: BLE\s+·\s+C3\s+→
@@ -164,9 +188,9 @@
     hardware */
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: C3 has BLE support defined in SoC capabilities
   title: 'T-02-057: BLE · C3 → так'
   match: BLE\s+·\s+C3\s+→
@@ -176,9 +200,9 @@
     hardware */
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: C3 has BLE support defined in SoC capabilities
 - nazva: 'T-02-096: **Переноситься майже завжди:** код на ESP-IDF, написаний через'
   zbih: \*\*Переноситься\s+майже\s+завжди:\*\*\s+код
@@ -188,9 +212,9 @@
     of ESP chips.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: FreeRTOS is a common base across all ESP chips, supporting portable application
     code
   title: 'T-02-096: **Переноситься майже завжди:** код на ESP-IDF, написаний через'
@@ -201,9 +225,9 @@
     of ESP chips.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: FreeRTOS is a common base across all ESP chips, supporting portable application code
 - nazva: 'T-02-099: Перенесення проєкту на інший чип в ESP-IDF починається'
   zbih: Перенесення\s+проєкту\s+на\s+інший
@@ -214,9 +238,9 @@
     This command sets the current project target.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Потвердив comando set-target для перемикання чипа проєкту
   title: 'T-02-099: Перенесення проєкту на інший чип в ESP-IDF починається'
   match: Перенесення\s+проєкту\s+на\s+інший
@@ -227,9 +251,9 @@
     This command sets the current project target.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Потвердив comando set-target для перемикання чипа проєкту
 - nazva: 'T-02-103: Усі налаштування, зроблені через `menuconfig`, повертаються до типових.'
   zbih: Усі\s+налаштування,\s+зроблені\s+через
@@ -239,9 +263,9 @@
     file from scratch.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Коли set-target перестворює sdkconfig з нуля, усі налаштування menuconfig повертаються
     до типових
   title: 'T-02-103: Усі налаштування, зроблені через `menuconfig`, повертаються до типових.'
@@ -252,9 +276,9 @@
     from scratch.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Коли set-target перестворює sdkconfig з нуля, усі налаштування menuconfig повертаються
     до типових
 - nazva: 'T-02-105: Але зроблене без збереження `sdkconfig.defaults` доведеться налаштовувати
@@ -269,9 +293,9 @@
     yet been set in the sdkconfig file.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Потвердив що sdkconfig.defaults зберігає налаштування при перестворенні конфігурації
   title: 'T-02-105: Але зроблене без збереження `sdkconfig.defaults` доведеться налаштовувати
     заново.'
@@ -285,7 +309,7 @@
     yet been set in the sdkconfig file.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Потвердив що sdkconfig.defaults зберігає налаштування при перестворенні конфігурації

@@ -12,6 +12,14 @@
 
 
 
+
+
+
+
+
+
+
+
 - nazva: 'T-11-001: ESP-IDF (Espressif IoT Development Framework) — офіційний фреймворк'
   zbih: ESP\-IDF\s+\(Espressif\s+IoT\s+Development
   klas: A
@@ -20,9 +28,9 @@
     and macOS.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що ESP-IDF — офіційний фреймворк Espressif
   title: 'T-11-001: ESP-IDF (Espressif IoT Development Framework) — офіційний фреймворк'
   match: ESP\-IDF\s+\(Espressif\s+IoT\s+Development
@@ -32,9 +40,9 @@
     and macOS.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що ESP-IDF — офіційний фреймворк Espressif
 - nazva: 'T-11-013: **Windows.** Офіційний інсталятор ESP-IDF Tools Installer ставить усе'
   zbih: \*\*Windows\.\*\*\s+Офіційний\s+інсталятор\s+ESP\-IDF
@@ -44,9 +52,9 @@
     Tools Installer process.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує існування ESP-IDF Tools Installer для Windows
   title: 'T-11-013: **Windows.** Офіційний інсталятор ESP-IDF Tools Installer ставить усе'
   match: \*\*Windows\.\*\*\s+Офіційний\s+інсталятор\s+ESP\-IDF
@@ -56,9 +64,9 @@
     Tools Installer process.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує існування ESP-IDF Tools Installer для Windows
 - nazva: 'T-11-025: Спокуса прописати `export.sh` у `.bashrc` є в усіх,'
   zbih: Спокуса\s+прописати\s+`export\.sh`\s+у
@@ -68,9 +76,9 @@
     it is not recommended. Doing so activates IDF virtual environment in every terminal session
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що додавання export.sh до профілю shell не рекомендується, що погіршує
     роботу
   title: 'T-11-025: Спокуса прописати `export.sh` у `.bashrc` є в усіх,'
@@ -81,9 +89,9 @@
     is not recommended. Doing so activates IDF virtual environment in every terminal session
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що додавання export.sh до профілю shell не рекомендується, що погіршує
     роботу
 - nazva: 'T-11-112: `set-target` стирає `sdkconfig`; у git кладеться `sdkconfig.defaults`.'
@@ -94,9 +102,9 @@
     file from scratch. The old sdkconfig file will be saved as sdkconfig.old.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Confirms that set-target clears sdkconfig. Documentation also recommends placing
     CONFIG_IDF_TARGET in sdkconfig.defaults for reproducibility.
   title: 'T-11-112: `set-target` стирає `sdkconfig`; у git кладеться `sdkconfig.defaults`.'
@@ -107,8 +115,8 @@
     from scratch. The old sdkconfig file will be saved as sdkconfig.old.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Confirms that set-target clears sdkconfig. Documentation also recommends placing CONFIG_IDF_TARGET
     in sdkconfig.defaults for reproducibility.

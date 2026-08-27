@@ -28,6 +28,46 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-30-073: Функція, яка може спрацювати в цей момент —'
   zbih: Функція,\s+яка\s+може\s+спрацювати
   klas: A
@@ -35,9 +75,9 @@
   cytata: 'IRAM (Instruction RAM) is memory that is connected to the CPU''s instruction bus
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ підтверджує наявність IRAM
   title: 'T-30-073: Функція, яка може спрацювати в цей момент —'
   match: Функція,\s+яка\s+може\s+спрацювати
@@ -46,9 +86,9 @@
   quote: 'IRAM (Instruction RAM) is memory that is connected to the CPU''s instruction bus
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує наявність IRAM
 - nazva: 'T-30-023: Розмір стека задається при створенні задачі — числом,'
   zbih: Розмір\s+стека\s+задається\s+при
@@ -57,9 +97,9 @@
   cytata: 'each RTOS task has its own stack
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ підтверджує, що кожна задача має власний стек
   title: 'T-30-023: Розмір стека задається при створенні задачі — числом,'
   match: Розмір\s+стека\s+задається\s+при
@@ -68,9 +108,9 @@
   quote: 'each RTOS task has its own stack
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що кожна задача має власний стек
 - nazva: 'T-30-026: Переповнення стека на мікроконтролері не дає ні винятку,'
   zbih: Переповнення\s+стека\s+на\s+мікроконтролері
@@ -79,9 +119,9 @@
   cytata: 'each RTOS task has its own stack
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ підтверджує, що кожна задача має власний стек
   title: 'T-30-026: Переповнення стека на мікроконтролері не дає ні винятку,'
   match: Переповнення\s+стека\s+на\s+мікроконтролері
@@ -90,9 +130,9 @@
   quote: 'each RTOS task has its own stack
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що кожна задача має власний стек
 - nazva: 'T-30-027: Задача просто пише за межі свого стека —'
   zbih: Задача\s+просто\s+пише\s+за
@@ -101,9 +141,9 @@
   cytata: 'each RTOS task has its own stack
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ підтверджує, що кожна задача має власний стек
   title: 'T-30-027: Задача просто пише за межі свого стека —'
   match: Задача\s+просто\s+пише\s+за
@@ -112,9 +152,9 @@
   quote: 'each RTOS task has its own stack
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що кожна задача має власний стек
 - nazva: 'T-30-030: Що з''їдає стек несподівано багато:'
   zbih: Що\s+з'їдає\s+стек\s+несподівано
@@ -123,9 +163,9 @@
   cytata: 'each RTOS task has its own stack
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ підтверджує, що кожна задача має власний стек
   title: 'T-30-030: Що з''їдає стек несподівано багато:'
   match: Що\s+з'їдає\s+стек\s+несподівано
@@ -134,9 +174,9 @@
   quote: 'each RTOS task has its own stack
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що кожна задача має власний стек
 - nazva: 'T-30-076: IRAM небагато, і кожна така функція займає її'
   zbih: IRAM\s+небагато,\s+і\s+кожна\s+така
@@ -146,9 +186,9 @@
     instead.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує обмеженість IRAM
   title: 'T-30-076: IRAM небагато, і кожна така функція займає її'
   match: IRAM\s+небагато,\s+і\s+кожна\s+така
@@ -158,9 +198,9 @@
     instead.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує обмеженість IRAM
 - nazva: 'T-30-085: **32-бітне читання й запис вирівняного слова атомарні** апаратно.'
   zbih: \*\*32\-бітне\s+читання\s+й\s+запис
@@ -170,9 +210,9 @@
     reads and writes
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що 32-бітне читання й запис атомарні
   title: 'T-30-085: **32-бітне читання й запис вирівняного слова атомарні** апаратно.'
   match: \*\*32\-бітне\s+читання\s+й\s+запис
@@ -182,9 +222,9 @@
     and writes
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що 32-бітне читання й запис атомарні
 - nazva: 'T-30-087: Складніші структури — ні.'
   zbih: Складніші\s+структури\s+—\s+ні\.
@@ -194,9 +234,9 @@
     reads and writes, any other type of access will generate a fatal LoadStoreError exception.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що складніші структури не атомарні
   title: 'T-30-087: Складніші структури — ні.'
   match: Складніші\s+структури\s+—\s+ні\.
@@ -206,9 +246,9 @@
     and writes, any other type of access will generate a fatal LoadStoreError exception.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що складніші структури не атомарні
 - nazva: 'T-30-004: `app_main` викликається як звичайна задача FreeRTOS.'
   zbih: '`app_main`\s+викликається\s+як\s+звичайна'
@@ -217,9 +257,9 @@
   cytata: '``app_main`` function is called from the ``main`` task.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: app_main викликається як звичайна задача FreeRTOS
   title: 'T-30-004: `app_main` викликається як звичайна задача FreeRTOS.'
   match: '`app_main`\s+викликається\s+як\s+звичайна'
@@ -228,9 +268,9 @@
   quote: '``app_main`` function is called from the ``main`` task.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: app_main викликається як звичайна задача FreeRTOS
 - nazva: 'T-30-006: **`app_main` може завершитися.** І це нормально: система продовжує'
   zbih: \*\*`app_main`\s+може\s+завершитися\.\*\*\s+І
@@ -240,9 +280,9 @@
     terminates).
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що app_main може завершитися й це нормально
   title: 'T-30-006: **`app_main` може завершитися.** І це нормально: система продовжує'
   match: \*\*`app_main`\s+може\s+завершитися\.\*\*\s+І
@@ -252,9 +292,9 @@
     terminates).
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що app_main може завершитися й це нормально
 - nazva: 'T-30-007: Задача `app_main` просто зникає, звільняючи свій стек.'
   zbih: Задача\s+`app_main`\s+просто\s+зникає,
@@ -263,9 +303,9 @@
   cytata: 'This task will self delete when ``app_main`` returns
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: задача app_main зникає й звільняє свій стек
   title: 'T-30-007: Задача `app_main` просто зникає, звільняючи свій стек.'
   match: Задача\s+`app_main`\s+просто\s+зникає,
@@ -274,9 +314,9 @@
   quote: 'This task will self delete when ``app_main`` returns
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: задача app_main зникає й звільняє свій стек
 - nazva: 'T-30-016: **Статична.** Глобальні змінні й `static`.'
   zbih: \*\*Статична\.\*\*\s+Глобальні\s+змінні\s+й
@@ -286,9 +326,9 @@
     the linker into Internal SRAM as data memory.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує глобальні змінні й static як статична пам'ять
   title: 'T-30-016: **Статична.** Глобальні змінні й `static`.'
   match: \*\*Статична\.\*\*\s+Глобальні\s+змінні\s+й
@@ -298,9 +338,9 @@
     linker into Internal SRAM as data memory.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує глобальні змінні й static як статична пам'ять
 - nazva: 'T-30-021: **Купа.** `malloc` і `new`.'
   zbih: \*\*Купа\.\*\*\s+`malloc`\s+і\s+`new`\.
@@ -310,9 +350,9 @@
     can be used for heap allocation
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підтверджує, що купа використовує malloc й new
   title: 'T-30-021: **Купа.** `malloc` і `new`.'
   match: \*\*Купа\.\*\*\s+`malloc`\s+і\s+`new`\.
@@ -322,9 +362,9 @@
     can be used for heap allocation
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що купа використовує malloc й new
 - nazva: 'T-30-032: **Великі буфери — не на стек.** `static` або'
   zbih: \*\*Великі\s+буфери\s+—\s+не
@@ -335,9 +375,9 @@
     DMA buffers in static variables rather than in the stack.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: великі буфери - не на стек
   title: 'T-30-032: **Великі буфери — не на стек.** `static` або'
   match: \*\*Великі\s+буфери\s+—\s+не
@@ -348,9 +388,9 @@
     DMA buffers in static variables rather than in the stack.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: великі буфери - не на стек
 - nazva: 'T-30-041: Купа на ESP32 не однорідна (розділ 03), і'
   zbih: Купа\s+на\s+ESP32\s+не
@@ -360,9 +400,9 @@
     heaps with different capabilities.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: купа на ESP32 не однорідна, malloc може повернути NULL
   title: 'T-30-041: Купа на ESP32 не однорідна (розділ 03), і'
   match: Купа\s+на\s+ESP32\s+не
@@ -372,9 +412,9 @@
     heaps with different capabilities.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: купа на ESP32 не однорідна, malloc може повернути NULL
 - nazva: 'T-30-047: **Не та область.** Буфер для DMA має бути'
   zbih: \*\*Не\s+та\s+область\.\*\*\s+Буфер
@@ -384,9 +424,9 @@
     hardware DMA engines
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: буфер для DMA має бути доступним контролеру, звичайний malloc не придатний
   title: 'T-30-047: **Не та область.** Буфер для DMA має бути'
   match: \*\*Не\s+та\s+область\.\*\*\s+Буфер
@@ -396,9 +436,9 @@
     hardware DMA engines
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: буфер для DMA має бути доступним контролеру, звичайний malloc не придатний
 - nazva: 'T-30-067: Коли вільно 40 КБ, а найбільший блок —'
   zbih: Коли\s+вільно\s+40\s+КБ,
@@ -407,9 +447,9 @@
   cytata: 'This memory can be used interchangeably with :ref:`DRAM`
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: фрагментація - коли вільно 40 КБ, а найбільший блок 2 КБ
   title: 'T-30-067: Коли вільно 40 КБ, а найбільший блок —'
   match: Коли\s+вільно\s+40\s+КБ,
@@ -418,9 +458,9 @@
   quote: 'This memory can be used interchangeably with :ref:`DRAM`
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: фрагментація - коли вільно 40 КБ, а найбільший блок 2 КБ
 - nazva: 'T-30-086: Тому проста передача одного значення (прапорець, ціле число)'
   zbih: Тому\s+проста\s+передача\s+одного
@@ -430,9 +470,9 @@
     reads and writes
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: проста передача одного значення через volatile працює
   title: 'T-30-086: Тому проста передача одного значення (прапорець, ціле число)'
   match: Тому\s+проста\s+передача\s+одного
@@ -442,9 +482,9 @@
     and writes
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: проста передача одного значення через volatile працює
 - nazva: 'T-30-101: Результат `malloc` перевіряти завжди.'
   zbih: Результат\s+`malloc`\s+перевіряти\s+завжди\.
@@ -454,9 +494,9 @@
     can be used for heap allocation without any special consideration.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: результат malloc треба перевіряти завжди
   title: 'T-30-101: Результат `malloc` перевіряти завжди.'
   match: Результат\s+`malloc`\s+перевіряти\s+завжди\.
@@ -466,9 +506,9 @@
     can be used for heap allocation without any special consideration.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: результат malloc треба перевіряти завжди
 - nazva: 'T-30-102: `volatile` не робить операцію атомарною.'
   zbih: '`volatile`\s+не\s+робить\s+операцію'
@@ -478,9 +518,9 @@
     reads and writes
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: volatile не робить операцію атомарною
   title: 'T-30-102: `volatile` не робить операцію атомарною.'
   match: '`volatile`\s+не\s+робить\s+операцію'
@@ -490,7 +530,7 @@
     and writes
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: volatile не робить операцію атомарною

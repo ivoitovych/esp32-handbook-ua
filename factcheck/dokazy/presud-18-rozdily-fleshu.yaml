@@ -9,6 +9,8 @@
 # широкий взірець бреше, довгий ламається.
 
 
+
+
 - nazva: 'T-18-024: **Застосунок починається з `0x10000`** — це не випадкове'
   zbih: \*\*Застосунок\s+починається\s+з\s+`0x10000`\*\*
   klas: A
@@ -16,9 +18,9 @@
   cytata: 'In both cases the factory app is flashed at offset 0x10000
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: прямо підтверджує, що застосунок починається з адреси 0x10000
   title: 'T-18-024: **Застосунок починається з `0x10000`** — це не випадкове'
   match: \*\*Застосунок\s+починається\s+з\s+`0x10000`\*\*
@@ -27,7 +29,7 @@
   quote: 'In both cases the factory app is flashed at offset 0x10000
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: прямо підтверджує, що застосунок починається з адреси 0x10000

@@ -16,6 +16,14 @@
 
 
 
+
+
+
+
+
+
+
+
 - nazva: DAC на S2 — GPIO17 і GPIO18; розділ 07 виправлено
   zbih: на classic це `GPIO25` і `GPIO26`, на S2|`GPIO25` у S2 не просто не має DAC|піни в
     них \*\*різні\*\*
@@ -26,7 +34,8 @@
     \      26\n\n(esp32s2/dac_channel.h)\n#define DAC_CHAN0_GPIO_NUM      17\n#define DAC_CHAN1_GPIO_NUM\
     \      18\n\n(esp32s2/soc_caps.h)\n#define SOC_GPIO_VALID_GPIO_MASK\n    (0x7FFFFFFFFFFFULL\
     \ & ~(0ULL | BIT22 | BIT23 | BIT24 | BIT25))\n"
-  sposib: curl raw.githubusercontent (повторно, прохід 17), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Друге місце тієї самої помилки. Розділ 07 писав «DAC є лише в classic і S2, на
     `GPIO25` і `GPIO26`» — вірно для classic, хибно для S2 двічі: там DAC на `GPIO17`/`GPIO18`,
     а `GPIO25` не існує взагалі.
@@ -50,7 +59,8 @@
     \      26\n\n(esp32s2/dac_channel.h)\n#define DAC_CHAN0_GPIO_NUM      17\n#define DAC_CHAN1_GPIO_NUM\
     \      18\n\n(esp32s2/soc_caps.h)\n#define SOC_GPIO_VALID_GPIO_MASK\n    (0x7FFFFFFFFFFFULL\
     \ & ~(0ULL | BIT22 | BIT23 | BIT24 | BIT25))\n"
-  method: curl raw.githubusercontent (повторно, прохід 17), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Друге місце тієї самої помилки. Розділ 07 писав «DAC є лише в classic і S2, на `GPIO25`
     і `GPIO26`» — вірно для classic, хибно для S2 двічі: там DAC на `GPIO17`/`GPIO18`, а `GPIO25`
     не існує взагалі.
@@ -71,7 +81,8 @@
     espressif/esptool — перелік команд у __init__.py
   cytata: "idf.py ACTIONS: … menuconfig … efuse-summary … set-target size\n  size-components\
     \ openocd gdb coredump-info coredump-debug …\nespefuse: підкоманда summary (лише читання)\n"
-  sposib: curl raw.githubusercontent (повторно, проходи 9 і 11), 2026-08-26
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   notatka: 'Не нова звірка, а розширення досяжності наявної. `espefuse summary` і `idf.py
     menuconfig` перевірені ще в проході 9, але взірець написаний під блоки коду й не діставав
     до згадок у прозі — «`espefuse summary` (лише читання, нічого не пропалює)» у розділах
@@ -87,7 +98,8 @@
     — перелік команд у __init__.py
   quote: "idf.py ACTIONS: … menuconfig … efuse-summary … set-target size\n  size-components\
     \ openocd gdb coredump-info coredump-debug …\nespefuse: підкоманда summary (лише читання)\n"
-  method: curl raw.githubusercontent (повторно, проходи 9 і 11), 2026-08-26
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
   note: 'Не нова звірка, а розширення досяжності наявної. `espefuse summary` і `idf.py menuconfig`
     перевірені ще в проході 9, але взірець написаний під блоки коду й не діставав до згадок
     у прозі — «`espefuse summary` (лише читання, нічого не пропалює)» у розділах 20, 24 і

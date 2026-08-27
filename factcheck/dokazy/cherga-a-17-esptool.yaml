@@ -10,6 +10,10 @@
 
 
 
+
+
+
+
 - nazva: 'T-17-061: Аргументи йдуть парами: адреса, файл.'
   zbih: Аргументи\s+йдуть\s+парами:\s+адреса,
   klas: A
@@ -18,9 +22,9 @@
     and file name
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: 'Цитата дослівно присутня в документації esptool. Українська версія "Аргументи
     йдуть парами: адреса, файл" є точним перекладом'
   title: 'T-17-061: Аргументи йдуть парами: адреса, файл.'
@@ -31,9 +35,9 @@
     and file name
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: 'Цитата дослівно присутня в документації esptool. Українська версія "Аргументи йдуть
     парами: адреса, файл" є точним перекладом'
 - nazva: 'T-17-063: `-z` вмикає стиснення при передачі.'
@@ -44,9 +48,9 @@
     ``-u/--no-compress`` option disables this behaviour
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Документація каже, що стиснення увімкнено за замовчуванням. Цитата в наказі говорить
     "-z вмикає стиснення", але документація використовує -u для вимкнення, а не -z для вмикнення
   title: 'T-17-063: `-z` вмикає стиснення при передачі.'
@@ -57,8 +61,8 @@
     option disables this behaviour
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документація каже, що стиснення увімкнено за замовчуванням. Цитата в наказі говорить
     "-z вмикає стиснення", але документація використовує -u для вимкнення, а не -z для вмикнення

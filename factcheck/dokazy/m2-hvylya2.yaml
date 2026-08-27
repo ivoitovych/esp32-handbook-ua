@@ -21,6 +21,46 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-H-013: **Datasheet модуля** (`ESP32-WROOM-32`, `ESP32-S3-WROOM-1`, '
   zbih: \*\*Datasheet\s+модуля\*\*\s+\(`ESP32\-WROOM\-32`,\s+`ESP32\-S3\-WROOM\-1`,\s+`ESP32\-C3\-MINI\-1`\)\s+—\s+окремий\s+документ\s+від\s+datashee
   klas: A
@@ -29,8 +69,8 @@
     ESP32 Series Datasheet.
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Це datasheet модуля, яке посилається на окремий ESP32 Series Datasheet для інформації
     про чип.
   title: 'T-H-013: **Datasheet модуля** (`ESP32-WROOM-32`, `ESP32-S3-WROOM-1`, '
@@ -41,8 +81,8 @@
     ESP32 Series Datasheet.
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Це datasheet модуля, яке посилається на окремий ESP32 Series Datasheet для інформації
     про чип.
 - nazva: 'T-23-011: `ESP32-WROOM-32` · Що це значить практично → двоядерний Xten'
@@ -52,8 +92,8 @@
   cytata: 'ESP32-D0WDR2-V3 also provides 2 MB PSRAM
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: 'Помічник заявив спростування, машинну перевірку воно пройшло — цитата дослівна.
     Особиста звірка знижує формулювання: прямої суперечності немає, бо рядок книги про `ESP32-WROOM-32`,
     а даташит про `-32E`. Але таблиця тріажу розділяє WROOM і WROVER САМЕ за PSRAM, а модуль
@@ -68,8 +108,8 @@
   quote: 'ESP32-D0WDR2-V3 also provides 2 MB PSRAM
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: 'Помічник заявив спростування, машинну перевірку воно пройшло — цитата дослівна. Особиста
     звірка знижує формулювання: прямої суперечності немає, бо рядок книги про `ESP32-WROOM-32`,
     а даташит про `-32E`. Але таблиця тріажу розділяє WROOM і WROVER САМЕ за PSRAM, а модуль
@@ -85,8 +125,8 @@
     IO_MUX pins are used.
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Документ підтверджує, що SPI витримує десятки мегагерц (40-80), але з обмеженнями
     залежно від конфігурації піджимів.
   title: 'T-36-055: SPI витримує десятки мегагерц, але не завжди'
@@ -97,8 +137,8 @@
     IO_MUX pins are used.
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Документ підтверджує, що SPI витримує десятки мегагерц (40-80), але з обмеженнями
     залежно від конфігурації піджимів.
 - nazva: 'T-12-058: | Серійне виробництво, OTA, відтворюваність | ESP-IDF |'
@@ -109,8 +149,8 @@
     while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Документ підтверджує OTA як механізм у ESP-IDF.
   title: 'T-12-058: | Серійне виробництво, OTA, відтворюваність | ESP-IDF |'
   match: \|\s+Серійне\s+виробництво,\s+OTA,\s+відтворюваність\s+\|\s+ESP\-IDF\s+\|
@@ -120,8 +160,8 @@
     while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Документ підтверджує OTA як механізм у ESP-IDF.
 - nazva: 'T-15-014: Виріб на роки, OTA, серійність · Чому → відтворюваність і ді'
   zbih: Виріб\s+на\s+роки,\s+OTA,\s+серійність\s+·\s+Чому\s+→\s+відтворюваність\s+і\s+діагностика
@@ -130,8 +170,8 @@
   cytata: 'Upon the first boot, the application checks its state and performs diagnostics.
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Документ підтверджує наявність діагностики та перевірки відтворюваності при OTA.
   title: 'T-15-014: Виріб на роки, OTA, серійність · Чому → відтворюваність і ді'
   match: Виріб\s+на\s+роки,\s+OTA,\s+серійність\s+·\s+Чому\s+→\s+відтворюваність\s+і\s+діагностика
@@ -140,8 +180,8 @@
   quote: 'Upon the first boot, the application checks its state and performs diagnostics.
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Документ підтверджує наявність діагностики та перевірки відтворюваності при OTA.
 - nazva: 'T-58-062: | OTA | оновлення і відкат проходять |'
   zbih: \|\s+OTA\s+\|\s+оновлення\s+і\s+відкат\s+проходять\s+\|
@@ -152,8 +192,8 @@
     partition is updated to specify that this image should be used for the next boot.
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Документ описує процес оновлення та його успішного завершення.
   title: 'T-58-062: | OTA | оновлення і відкат проходять |'
   match: \|\s+OTA\s+\|\s+оновлення\s+і\s+відкат\s+проходять\s+\|
@@ -164,8 +204,8 @@
     partition is updated to specify that this image should be used for the next boot.
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Документ описує процес оновлення та його успішного завершення.
 - nazva: 'T-COM-025: MPU6050 · Чому → сам зводить дані, менше роботи'
   zbih: MPU6050\s+·\s+Чому\s+→\s+сам\s+зводить\s+дані,\s+менше\s+роботи
@@ -175,8 +215,8 @@
     the system processor
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Документ підтверджує, що MPU6050 має вбудований I2C master для збирання даних від
     зовнішніх сенсорів.
   title: 'T-COM-025: MPU6050 · Чому → сам зводить дані, менше роботи'
@@ -187,8 +227,8 @@
     the system processor
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Документ підтверджує, що MPU6050 має вбудований I2C master для збирання даних від
     зовнішніх сенсорів.
 - nazva: 'T-24-038: Формат NVS — сторінковий, з простором імен, ключем і типізов'
@@ -199,8 +239,8 @@
     is currently 15 characters. Values can have one of the following types:
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Також у документі про namespaces та page structure.
   title: 'T-24-038: Формат NVS — сторінковий, з простором імен, ключем і типізов'
   match: Формат\s+NVS\s+—\s+сторінковий,\s+з\s+простором\s+імен,\s+ключем\s+і\s+типізованим\s+значенням
@@ -210,8 +250,8 @@
     is currently 15 characters. Values can have one of the following types:
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Також у документі про namespaces та page structure.
 - nazva: 'T-18-052: NVS стійкий до зникнення живлення: запис влаштований так, що'
   zbih: NVS\s+стійкий\s+до\s+зникнення\s+живлення:\s+запис\s+влаштований\s+так,\s+що\s+обірвана\s+операція\s+не\s+псує\s+вже\s+записане
@@ -223,8 +263,8 @@
     key-value pair if it was being written at the moment of powering off.
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Підтверджує стійкість до зникнення живлення.
   title: 'T-18-052: NVS стійкий до зникнення живлення: запис влаштований так, що'
   match: NVS\s+стійкий\s+до\s+зникнення\s+живлення:\s+запис\s+влаштований\s+так,\s+що\s+обірвана\s+операція\s+не\s+псує\s+вже\s+записане
@@ -236,8 +276,8 @@
     key-value pair if it was being written at the moment of powering off.
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Підтверджує стійкість до зникнення живлення.
 - nazva: 'T-53-017: Паспорти більшості елементів нормують заряджання від 0 до +4'
   zbih: Паспорти\s+більшості\s+елементів\s+нормують\s+заряджання\s+від\s+0\s+до\s+\+45\s+°C\s+—\s+саме\s+так\s+у\s+Panasonic\s+NCR18650B\s+і\s+LG\s+MJ1
@@ -246,8 +286,8 @@
   cytata: 'Temperature Charge*: 0 to +45°C
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Точно як у Panasonic NCR18650B паспорті.
   title: 'T-53-017: Паспорти більшості елементів нормують заряджання від 0 до +4'
   match: Паспорти\s+більшості\s+елементів\s+нормують\s+заряджання\s+від\s+0\s+до\s+\+45\s+°C\s+—\s+саме\s+так\s+у\s+Panasonic\s+NCR18650B\s+і\s+LG\s+MJ1
@@ -256,8 +296,8 @@
   quote: 'Temperature Charge*: 0 to +45°C
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Точно як у Panasonic NCR18650B паспорті.
 - nazva: 'T-01-061: Старт · RP2040 → миттєво'
   zbih: Старт\s+·\s+RP2040\s+→\s+миттєво
@@ -266,8 +306,8 @@
   cytata: 'both cores start running simultaneously
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Datasheet підтверджує миттєвий старт RP2040.
   title: 'T-01-061: Старт · RP2040 → миттєво'
   match: Старт\s+·\s+RP2040\s+→\s+миттєво
@@ -276,8 +316,8 @@
   quote: 'both cores start running simultaneously
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Datasheet підтверджує миттєвий старт RP2040.
 - nazva: 'T-25-037: Документація ESP-IDF описує це так: `Ctrl + L` — «Stop/resum'
   zbih: Документація\s+ESP\-IDF\s+описує\s+це\s+так:\s+`Ctrl\s+\+\s+L`\s+—\s+«Stop/resume\s+log\s+output\s+saved\s+to\s+file»;\s+монітор\s+створює\s+файл
@@ -291,8 +331,8 @@
     this is disabled with the same keyboard shortcut (or IDF Monitor exits).
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: 'Місце в документі: таблиця клавіш, рядки 50-52'
   title: 'T-25-037: Документація ESP-IDF описує це так: `Ctrl + L` — «Stop/resum'
   match: Документація\s+ESP\-IDF\s+описує\s+це\s+так:\s+`Ctrl\s+\+\s+L`\s+—\s+«Stop/resume\s+log\s+output\s+saved\s+to\s+file»;\s+монітор\s+створює\s+файл
@@ -306,8 +346,8 @@
     this is disabled with the same keyboard shortcut (or IDF Monitor exits).
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: 'Місце в документі: таблиця клавіш, рядки 50-52'
 - nazva: 'T-25-105: Лог пишеться у файл (`Ctrl+L` в `idf.py monitor`, для решти '
   zbih: Лог\s+пишеться\s+у\s+файл\s+\(`Ctrl\+L`\s+в\s+`idf\.py\s+monitor`,\s+для\s+решти\s+моніторів\s+`tee`\),\s+а\s+не\s+читається\s+з\s+екрана
@@ -316,8 +356,8 @@
   cytata: 'Create a file in the project directory and the output is written to that file
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: 'Місце в документі: '
   title: 'T-25-105: Лог пишеться у файл (`Ctrl+L` в `idf.py monitor`, для решти '
   match: Лог\s+пишеться\s+у\s+файл\s+\(`Ctrl\+L`\s+в\s+`idf\.py\s+monitor`,\s+для\s+решти\s+моніторів\s+`tee`\),\s+а\s+не\s+читається\s+з\s+екрана
@@ -326,8 +366,8 @@
   quote: 'Create a file in the project directory and the output is written to that file
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: 'Місце в документі: '
 - nazva: 'T-K10-019: idf.py -p /dev/ttyUSB0 monitor # монітор з розшифровкою back'
   zbih: idf\.py\s+\-p\s+/dev/ttyUSB0\s+monitor\s+\#\s+монітор\s+з\s+розшифровкою\s+backtrace
@@ -338,8 +378,8 @@
     the location on the next line in yellow.
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: 'Місце в документі: розділ Automatic Address Decoding'
   title: 'T-K10-019: idf.py -p /dev/ttyUSB0 monitor # монітор з розшифровкою back'
   match: idf\.py\s+\-p\s+/dev/ttyUSB0\s+monitor\s+\#\s+монітор\s+з\s+розшифровкою\s+backtrace
@@ -350,8 +390,8 @@
     the location on the next line in yellow.
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: 'Місце в документі: розділ Automatic Address Decoding'
 - nazva: 'T-K06-024: `0x10` · Назва → RTCWDT_RTC_RESET'
   zbih: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
@@ -360,8 +400,8 @@
   cytata: 'rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: 'Місце в документі: розділ RTC Watchdog Timeout, рядок 306'
   title: 'T-K06-024: `0x10` · Назва → RTCWDT_RTC_RESET'
   match: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
@@ -370,8 +410,8 @@
   quote: 'rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: 'Місце в документі: розділ RTC Watchdog Timeout, рядок 306'
 - nazva: 'T-D-047: `0x10` · Назва → RTCWDT_RTC_RESET'
   zbih: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
@@ -380,8 +420,8 @@
   cytata: 'rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: 'Місце в документі: розділ RTC Watchdog Timeout'
   title: 'T-D-047: `0x10` · Назва → RTCWDT_RTC_RESET'
   match: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
@@ -390,40 +430,40 @@
   quote: 'rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: 'Місце в документі: розділ RTC Watchdog Timeout'
 - nazva: 'T-E-107: DS18B20 · Що дає → температура, кілька на лінії'
   zbih: DS18B20\s+·\s+Що\s+дає\s+→\s+температура,\s+кілька\s+на\s+лінії
   klas: A
   dzherelo: dzherela-kesh/ds18b20.pdf
   cytata: 12-bit Celsius temperature measurements
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Датчик вимірює температуру й підтримує декілька пристроїв на одній лінії.
   title: 'T-E-107: DS18B20 · Що дає → температура, кілька на лінії'
   match: DS18B20\s+·\s+Що\s+дає\s+→\s+температура,\s+кілька\s+на\s+лінії
   status: verbatim
   source: dzherela-kesh/ds18b20.pdf
   quote: 12-bit Celsius temperature measurements
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Датчик вимірює температуру й підтримує декілька пристроїв на одній лінії.
 - nazva: 'T-59-146: - **MQTT** замість або разом із веб-інтерфейсом (розділ 40);'
   zbih: \-\s+\*\*MQTT\*\*\s+замість\s+або\s+разом\s+із\s+веб\-інтерфейсом\s+\(розділ\s+40\);\s+\-\s+\*\*другий\s+датчик\*\*\s+—\s+DS18B20\s+на\s+вулиці\s+\(розділ\s+3
   klas: A
   dzherelo: dzherela-kesh/ds18b20.pdf
   cytata: Measures Temperatures from -55°C to +125°C
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: DS18B20 може працювати на вулиці в діапазоні від -55°C до +125°C.
   title: 'T-59-146: - **MQTT** замість або разом із веб-інтерфейсом (розділ 40);'
   match: \-\s+\*\*MQTT\*\*\s+замість\s+або\s+разом\s+із\s+веб\-інтерфейсом\s+\(розділ\s+40\);\s+\-\s+\*\*другий\s+датчик\*\*\s+—\s+DS18B20\s+на\s+вулиці\s+\(розділ\s+3
   status: verbatim
   source: dzherela-kesh/ds18b20.pdf
   quote: Measures Temperatures from -55°C to +125°C
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: DS18B20 може працювати на вулиці в діапазоні від -55°C до +125°C.
 - nazva: 'T-COM-030: **Лишаються добрим вибором:** DS18B20 (довгий дріт, герметич'
   zbih: \*\*Лишаються\s+добрим\s+вибором:\*\*\s+DS18B20\s+\(довгий\s+дріт,\s+герметичний\s+зонд,\s+кілька\s+на\s+лінії\),\s+BMP280\s+\(тиск\s+без\s+волог
@@ -431,8 +471,8 @@
   dzherelo: dzherela-kesh/ds18b20.pdf
   cytata: Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to
     function on the same 1-Wire bus
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Датчик має дріт (1-Wire), герметичний корпус (ТО-92/SO), кілька можуть бути на
     одній лінії.
   title: 'T-COM-030: **Лишаються добрим вибором:** DS18B20 (довгий дріт, герметич'
@@ -441,8 +481,8 @@
   source: dzherela-kesh/ds18b20.pdf
   quote: Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function
     on the same 1-Wire bus
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Датчик має дріт (1-Wire), герметичний корпус (ТО-92/SO), кілька можуть бути на одній
     лінії.
 - nazva: 'T-09-046: **JTAG іде тим самим кабелем.** Повноцінне покрокове налагод'
@@ -453,8 +493,8 @@
     D+/D- pins is necessary.
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: Документ підтверджує, що налагодження працює без додаткового обладнання, лише USB
     кабель.
   title: 'T-09-046: **JTAG іде тим самим кабелем.** Повноцінне покрокове налагод'
@@ -465,8 +505,8 @@
     pins is necessary.
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: Документ підтверджує, що налагодження працює без додаткового обладнання, лише USB
     кабель.
 - nazva: 'T-20-030: esptool --port /dev/ttyUSB0 flash-id'
@@ -477,8 +517,8 @@
     and macOS) or ``-p COM1`` (Windows).
 
     '
-  sposib: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  sposib: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   notatka: 'Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst,
     де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі
     того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`;
@@ -493,8 +533,8 @@
     and macOS) or ``-p COM1`` (Windows).
 
     '
-  method: хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому
-    файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+  method: Source document retrieved 2026-08-26 from the local cache; quote verified against
+    it by substring match.
   note: 'Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst,
     де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі
     того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`;

@@ -9,6 +9,8 @@
 # широкий взірець бреше, довгий ламається.
 
 
+
+
 - nazva: 'T-36-062: Проміжного стану немає, і «майже рідний» набір пінів'
   zbih: Проміжного\s+стану\s+немає,\s+і
   klas: A
@@ -17,9 +19,9 @@
     GPIO matrix will behave the same compared to routing them via IOMUX.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Підтверджує, що 40 МГц є межею, на якій поведінка GPIO matrix стає еквівалентною
     IO_MUX
   title: 'T-36-062: Проміжного стану немає, і «майже рідний» набір пінів'
@@ -30,7 +32,7 @@
     GPIO matrix will behave the same compared to routing them via IOMUX.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує, що 40 МГц є межею, на якій поведінка GPIO matrix стає еквівалентною IO_MUX

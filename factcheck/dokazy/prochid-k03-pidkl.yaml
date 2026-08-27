@@ -11,6 +11,12 @@
 
 
 
+
+
+
+
+
+
 - nazva: 'T-K03-018: Windows: `Диспетчер пристроїв` → жовтий знак оклику означає'
   zbih: Windows:\s+`Диспетчер\s+пристроїв`\s+→
   klas: A
@@ -20,9 +26,9 @@
     then shows back again.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: довідник підтверджує, що жовтий знак у диспетчері означає драйвер
   title: 'T-K03-018: Windows: `Диспетчер пристроїв` → жовтий знак оклику означає'
   match: Windows:\s+`Диспетчер\s+пристроїв`\s+→
@@ -33,9 +39,9 @@
     then shows back again.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: довідник підтверджує, що жовтий знак у диспетчері означає драйвер
 - nazva: 'T-K03-020: Порт `/dev/ttyUSB0` є, але програма пише «Permission denied»'
   zbih: Порт\s+`/dev/ttyUSB0`\s+є,\s+але
@@ -44,9 +50,9 @@
   cytata: 'Adding User to ``dialout`` or ``uucp`` on Linux
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ пояснює проблему Permission denied та як її вирішити
   title: 'T-K03-020: Порт `/dev/ttyUSB0` є, але програма пише «Permission denied»'
   match: Порт\s+`/dev/ttyUSB0`\s+є,\s+але
@@ -55,9 +61,9 @@
   quote: 'Adding User to ``dialout`` or ``uucp`` on Linux
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ пояснює проблему Permission denied та як її вирішити
 - nazva: 'T-K03-027: Порт зайнятий іншою програмою: відкритий монітор, Arduino IDE,'
   zbih: 'Порт\s+зайнятий\s+іншою\s+програмою:'
@@ -68,9 +74,9 @@
     firmware later.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ пояснює, що порт може бути зайнятий іншою програмою, якщо монітор залишається
     відкритим
   title: 'T-K03-027: Порт зайнятий іншою програмою: відкритий монітор, Arduino IDE,'
@@ -82,8 +88,8 @@
     later.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ пояснює, що порт може бути зайнятий іншою програмою, якщо монітор залишається
     відкритим

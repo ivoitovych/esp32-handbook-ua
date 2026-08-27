@@ -21,6 +21,32 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-34-044: На коротких лініях працює і без них; на'
   zbih: На\s+коротких\s+лініях\s+працює
   klas: A
@@ -28,9 +54,9 @@
   cytata: 'Interface Connection Options
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''документація обговорює резистори в RS485 ланцюгу'''
   title: 'T-34-044: На коротких лініях працює і без них; на'
   match: На\s+коротких\s+лініях\s+працює
@@ -39,9 +65,9 @@
   quote: 'Interface Connection Options
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''документація обговорює резистори в RS485 ланцюгу'''
 - nazva: 'T-34-045: Багато модулів мають термінатор на платі, іноді припаяний'
   zbih: Багато\s+модулів\s+мають\s+термінатор\s+на\s+платі,\s+іноді
@@ -51,9 +77,9 @@
     that the hardware receives when the bit UART_RS485_CONF_REG.UART_RS485TX_RX_EN is set.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''багато модулів мають термінатор на платі'''
   title: 'T-34-045: Багато модулів мають термінатор на платі, іноді припаяний'
   match: Багато\s+модулів\s+мають\s+термінатор\s+на\s+платі,\s+іноді
@@ -63,9 +89,9 @@
     that the hardware receives when the bit UART_RS485_CONF_REG.UART_RS485TX_RX_EN is set.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''багато модулів мають термінатор на платі'''
 - nazva: 'T-34-048: Якщо обмін не йде — поміняти місцями.'
   zbih: Якщо\s+обмін\s+не\s+йде
@@ -74,9 +100,9 @@
   cytata: 'Interface Connection Options
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''якщо обмін не йде - поміняти місцями'''
   title: 'T-34-048: Якщо обмін не йде — поміняти місцями.'
   match: Якщо\s+обмін\s+не\s+йде
@@ -85,9 +111,9 @@
   quote: 'Interface Connection Options
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''якщо обмін не йде - поміняти місцями'''
 - nazva: 'T-34-049: Це безпечно і розв''язує половину випадків.'
   zbih: Це\s+безпечно\s+і\s+розв'язує
@@ -96,9 +122,9 @@
   cytata: 'This circuit is preferable because it allows for collision detection
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''це безпечно і розв''язує половину випадків'''
   title: 'T-34-049: Це безпечно і розв''язує половину випадків.'
   match: Це\s+безпечно\s+і\s+розв'язує
@@ -107,9 +133,9 @@
   quote: 'This circuit is preferable because it allows for collision detection
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''це безпечно і розв''язує половину випадків'''
 - nazva: 'T-34-001: UART — найстаріший і найнадійніший спосіб з''єднати два'
   zbih: UART\s+—\s+найстаріший\s+і
@@ -120,9 +146,9 @@
     asynchronous serial communication interfaces
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''UART - надійний спосіб з''єднати пристрої'''
   title: 'T-34-001: UART — найстаріший і найнадійніший спосіб з''єднати два'
   match: UART\s+—\s+найстаріший\s+і
@@ -133,9 +159,9 @@
     asynchronous serial communication interfaces
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''UART - надійний спосіб з''єднати пристрої'''
 - nazva: 'T-34-002: Два дроти, жодного протоколу поверх, працює завжди.'
   zbih: Два\s+дроти,\s+жодного\s+протоколу
@@ -145,9 +171,9 @@
     data exchange among different devices
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''простий обмін двома дротами'''
   title: 'T-34-002: Два дроти, жодного протоколу поверх, працює завжди.'
   match: Два\s+дроти,\s+жодного\s+протоколу
@@ -157,9 +183,9 @@
     data exchange among different devices
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''простий обмін двома дротами'''
 - nazva: 'T-34-004: [[classic]] ESP32 classic має три контролери UART, S3'
   zbih: \[\[classic\]\]\s+ESP32\s+classic\s+має
@@ -168,9 +194,9 @@
   cytata: 'The {IDF_TARGET_NAME} chip has {IDF_TARGET_SOC_UART_HP_NUM} UART controllers
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''документація про кількість UART контролерів, але не з конкретними числами для
     класичного, S3, C3'''
   title: 'T-34-004: [[classic]] ESP32 classic має три контролери UART, S3'
@@ -180,9 +206,9 @@
   quote: 'The {IDF_TARGET_NAME} chip has {IDF_TARGET_SOC_UART_HP_NUM} UART controllers
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''документація про кількість UART контролерів, але не з конкретними числами для класичного,
     S3, C3'''
 - nazva: 'T-34-020: **Розмір буфера драйвера має значення.** Дані приходять, поки'
@@ -193,9 +219,9 @@
     moves the data from the TX ring buffer to the TX FIFO buffer in the background
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: розмір буфера має значення, дані можуть бути втрачені при переповненні
   title: 'T-34-020: **Розмір буфера драйвера має значення.** Дані приходять, поки'
   match: \*\*Розмір\s+буфера\s+драйвера\s+має
@@ -205,9 +231,9 @@
     moves the data from the TX ring buffer to the TX FIFO buffer in the background
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: розмір буфера має значення, дані можуть бути втрачені при переповненні
 - nazva: 'T-34-030: Звичайний UART працює на десятки сантиметрів.'
   zbih: Звичайний\s+UART\s+працює\s+на
@@ -217,9 +243,9 @@
     data exchange among different devices
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: звичайний UART працює на близькі відстані
   title: 'T-34-030: Звичайний UART працює на десятки сантиметрів.'
   match: Звичайний\s+UART\s+працює\s+на
@@ -229,9 +255,9 @@
     data exchange among different devices
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: звичайний UART працює на близькі відстані
 - nazva: 'T-34-041: Перемкнути напрямок відразу після нього означає обрізати власну'
   zbih: Перемкнути\s+напрямок\s+відразу\s+після\s+нього\s+означає\s+обрізати\s+власну\s+посилку\s+посередині\.
@@ -244,9 +270,9 @@
     RTS pin (logic 0)
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: тут описано, як контролюється напрямок і можна обрізати посилку
   title: 'T-34-041: Перемкнути напрямок відразу після нього означає обрізати власну'
   match: Перемкнути\s+напрямок\s+відразу\s+після\s+нього\s+означає\s+обрізати\s+власну\s+посилку\s+посередині\.
@@ -259,9 +285,9 @@
     RTS pin (logic 0)
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: тут описано, як контролюється напрямок і можна обрізати посилку
 - nazva: 'T-34-055: ESP-IDF має штатний компонент `esp-modbus` для обох ролей:'
   zbih: ESP\-IDF\s+має\s+штатний\s+компонент
@@ -270,9 +296,9 @@
   cytata: 'The Espressif ESP-Modbus Library (esp-modbus) supports Modbus communication
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: про компонент esp-modbus у ESP-IDF
   title: 'T-34-055: ESP-IDF має штатний компонент `esp-modbus` для обох ролей:'
   match: ESP\-IDF\s+має\s+штатний\s+компонент
@@ -281,9 +307,9 @@
   quote: 'The Espressif ESP-Modbus Library (esp-modbus) supports Modbus communication
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: про компонент esp-modbus у ESP-IDF
 - nazva: 'T-34-070: Буфер драйвера робити з запасом: переповнення губить дані'
   zbih: Буфер\s+драйвера\s+робити\s+з
@@ -293,9 +319,9 @@
     store.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ описує FIFO overflow як проблему
   title: 'T-34-070: Буфер драйвера робити з запасом: переповнення губить дані'
   match: Буфер\s+драйвера\s+робити\s+з
@@ -305,9 +331,9 @@
     store.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ описує FIFO overflow як проблему
 - nazva: 'T-34-036: Напрямком керує окремий пін `DE`/`RE`:'
   zbih: Напрямком\s+керує\s+окремий\s+пін
@@ -317,9 +343,9 @@
     to achieve half-duplex communication.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документ описує керування напрямком через DE/RE пін
   title: 'T-34-036: Напрямком керує окремий пін `DE`/`RE`:'
   match: Напрямком\s+керує\s+окремий\s+пін
@@ -329,7 +355,7 @@
     to achieve half-duplex communication.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ описує керування напрямком через DE/RE пін

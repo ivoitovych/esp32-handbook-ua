@@ -9,6 +9,8 @@
 # широкий взірець бреше, довгий ламається.
 
 
+
+
 - nazva: 'T-35-028: Стандартні швидкості — 100 кГц і 400 кГц.'
   zbih: Стандартні\s+швидкості\s+—\s+100
   klas: A
@@ -17,9 +19,9 @@
     can go up to 100 kHz and 400 kHz respectively.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Стандартні швидкості I2C підтверджені документацією ESP-IDF
   title: 'T-35-028: Стандартні швидкості — 100 кГц і 400 кГц.'
   match: Стандартні\s+швидкості\s+—\s+100
@@ -29,7 +31,7 @@
     can go up to 100 kHz and 400 kHz respectively.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Стандартні швидкості I2C підтверджені документацією ESP-IDF

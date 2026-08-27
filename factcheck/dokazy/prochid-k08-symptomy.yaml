@@ -20,6 +20,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-K08-021: 6 · Що робити → перший дамп після'
   zbih: 6\s+·\s+Що\s+робити
   klas: A
@@ -27,9 +51,9 @@
   cytata: 'Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: перший дамп після живлення розпочинає backtrace
   title: 'T-K08-021: 6 · Що робити → перший дамп після'
   match: 6\s+·\s+Що\s+робити
@@ -38,9 +62,9 @@
   quote: 'Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: перший дамп після живлення розпочинає backtrace
 - nazva: 'T-K08-026: 8 · Найчастіша причина → немає підтягування або'
   zbih: 8\s+·\s+Найчастіша\s+причина
@@ -50,9 +74,9 @@
     clock line (SCL), pulled up by resistors.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документація підтверджує необхідність підтягування та спільної землі для I2C
   title: 'T-K08-026: 8 · Найчастіша причина → немає підтягування або'
   match: 8\s+·\s+Найчастіша\s+причина
@@ -62,9 +86,9 @@
     line (SCL), pulled up by resistors.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація підтверджує необхідність підтягування та спільної землі для I2C
 - nazva: 'T-K08-008: 2 · Найчастіша причина → плата не в'
   zbih: 2\s+·\s+Найчастіша\s+причина\s+→\s+плата
@@ -75,9 +99,9 @@
     ``RESET`` button once.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
   title: 'T-K08-008: 2 · Найчастіша причина → плата не в'
   match: 2\s+·\s+Найчастіша\s+причина\s+→\s+плата
@@ -88,9 +112,9 @@
     ``RESET`` button once.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
 - nazva: 'T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не'
   zbih: 3\s+·\s+Найчастіша\s+причина\s+→\s+адреса
@@ -100,9 +124,9 @@
     in the flash.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
   title: 'T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не'
   match: 3\s+·\s+Найчастіша\s+причина\s+→\s+адреса
@@ -112,9 +136,9 @@
     in the flash.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
 - nazva: 'T-K08-019: 6 · Симптом → Boot loop'
   zbih: 6\s+·\s+Симптом\s+→
@@ -124,9 +148,9 @@
     by the panic handler when a fatal error occurs.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: boot loop може бути результатом паніки в застосунку, як описано в документації
   title: 'T-K08-019: 6 · Симптом → Boot loop'
   match: 6\s+·\s+Симптом\s+→
@@ -136,9 +160,9 @@
     the panic handler when a fatal error occurs.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: boot loop може бути результатом паніки в застосунку, як описано в документації
 - nazva: 'T-K08-020: 6 · Найчастіша причина → паніка в застосунку'
   zbih: 6\s+·\s+Найчастіша\s+причина
@@ -147,9 +171,9 @@
   cytata: 'Panic reason: abort() was called
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: паніка в застосунку дійсно є частою причиною boot loop
   title: 'T-K08-020: 6 · Найчастіша причина → паніка в застосунку'
   match: 6\s+·\s+Найчастіша\s+причина
@@ -158,9 +182,9 @@
   quote: 'Panic reason: abort() was called
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: паніка в застосунку дійсно є частою причиною boot loop
 - nazva: 'T-K08-035: 11 · Найчастіша причина → вони зайняті флешем'
   zbih: 11\s+·\s+Найчастіша\s+причина
@@ -179,9 +203,9 @@
     #define MSPI_IOMUX_PIN_NUM_CS0      11
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує,
     що вони зайняті флешем
   title: 'T-K08-035: 11 · Найчастіша причина → вони зайняті флешем'
@@ -201,8 +225,8 @@
     #define MSPI_IOMUX_PIN_NUM_CS0      11
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує, що
     вони зайняті флешем

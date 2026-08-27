@@ -10,6 +10,10 @@
 
 
 
+
+
+
+
 - nazva: 'T-08-004: Це те, що ставлять на власну плату у'
   zbih: Це\s+те,\s+що\s+ставлять
   klas: A
@@ -17,9 +21,9 @@
   cytata: 'Development Boards
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Розробницькі плати будуються на основі модулів з власною схемою живлення і розв'язки
   title: 'T-08-004: Це те, що ставлять на власну плату у'
   match: Це\s+те,\s+що\s+ставлять
@@ -28,9 +32,9 @@
   quote: 'Development Boards
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Розробницькі плати будуються на основі модулів з власною схемою живлення і розв'язки
 - nazva: 'T-08-024: **Міст USB-UART.** Створює порт у системі.'
   zbih: \*\*Міст\s+USB\-UART\.\*\*\s+Створює\s+порт
@@ -40,9 +44,9 @@
     control lines of the USB to serial converter chip, i.e., FTDI, CP210x, or CH340x.
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Міст USB-UART використовує мікросхеми, які керуються комп'ютером через DTR/RTS
     лінії
   title: 'T-08-024: **Міст USB-UART.** Створює порт у системі.'
@@ -53,7 +57,7 @@
     control lines of the USB to serial converter chip, i.e., FTDI, CP210x, or CH340x.
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Міст USB-UART використовує мікросхеми, які керуються комп'ютером через DTR/RTS лінії

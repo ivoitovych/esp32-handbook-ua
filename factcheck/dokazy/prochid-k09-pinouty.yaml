@@ -14,6 +14,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-K09-004: | **6, 7, 8, 9, 10, 11** |'
   zbih: \|\s+\*\*6,\s+7,\s+8,
   klas: A
@@ -31,9 +43,9 @@
     #define MSPI_IOMUX_PIN_NUM_CS0      11
 
     '
-  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: піни 6-11 визначені як MSPI для флеш-пам'яті і не повинні використовуватися
   title: 'T-K09-004: | **6, 7, 8, 9, 10, 11** |'
   match: \|\s+\*\*6,\s+7,\s+8,
@@ -52,7 +64,7 @@
     #define MSPI_IOMUX_PIN_NUM_CS0      11
 
     '
-  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
-    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
-    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: піни 6-11 визначені як MSPI для флеш-пам'яті і не повинні використовуватися
