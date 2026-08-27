@@ -1,4 +1,4 @@
-- id: T-02-108: ESP32-C5 з Wi-Fi у двох діапазонах
+- id: "T-02-108: ESP32-C5 з Wi-Fi у двох діапазонах"
   verdykt: pidtverdzheno
   fayl: esp32-c5_datasheet_en.pdf
   cytata: |
@@ -6,11 +6,11 @@
   de: Фронтиспис та розділ Features (Wi-Fi)
   notatka: Датаsheet прямо підтверджує наявність Wi-Fi у двох діапазонах (2.4 ГГц та 5 ГГц)
 
-- id: Wi-Fi 5 ГГц доступний тільки на ESP32-C5
+- id: "Wi-Fi 5 ГГц доступний тільки на ESP32-C5"
   verdykt: ne_znayshov
   dyvyvsya: esp32-c5_datasheet_en.pdf, grep "5 GHz", 20 влучань, але документ розповідає тільки про C5, не порівнює з іншими чипами
 
-- id: T-02-135 — Мережа 5 ГГц, чип C5
+- id: "T-02-135 — Мережа 5 ГГц, чип C5"
   verdykt: pidtverdzheno
   fayl: esp32-c5_datasheet_en.pdf
   cytata: |
@@ -18,11 +18,11 @@
   de: розділ 4.3.1.2 5 GHz Transmitter
   notatka: Датаsheet підтверджує наявність 5 ГГц мережі на чипі C5
 
-- id: Стан GPIO читається один раз при відпусканні скидання
+- id: "Стан GPIO читається один раз при відпусканні скидання"
   verdykt: ne_znayshov
   dyvyvsya: a4dbe955-bootloader.rst, grep "GPIO", 12 влучань, але це загальна документація ESP-IDF англійською мовою
 
-- id: Дамп флешу починається з адреси 0x0 і містить бутлоадер
+- id: "Дамп флешу починається з адреси 0x0 і містить бутлоадер"
   verdykt: pidtverdzheno
   fayl: a4dbe955-bootloader.rst
   cytata: |
@@ -30,7 +30,7 @@
   de: розділ Bootloader Size, рядок 152
   notatka: Датаsheet підтверджує, що бутлоадер розташовується на адресі 0x0
 
-- id: GPIO12 з високим рівнем — правильне налаштування на модулях з 1.8В фле
+- id: "GPIO12 з високим рівнем — правильне налаштування на модулях з 1.8В фле"
   verdykt: pidtverdzheno
   fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
   cytata: |
@@ -38,6 +38,6 @@
   de: розділ про strapping pins, GPIO12 (MTDI)
   notatka: GPIO12 як MTDI контролює напругу VDD_SDIO; коли висока (1), напруга 1.8В від внутрішнього LDO
 
-- id: Порівняльна таблиця — числа, ще не звірені жодною стороною
+- id: "Порівняльна таблиця — числа, ще не звірені жодною стороною"
   verdykt: ne_znayshov
   dyvyvsya: rp2040.pdf, pdftotext, 5MB PDF, таблиці є але порівняння ESP32 чипів з ATmega або іншими не знайдено, це документація RP2040 мікроконтролера Raspberry Pi

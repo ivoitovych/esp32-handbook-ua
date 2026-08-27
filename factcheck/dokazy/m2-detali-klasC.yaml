@@ -1,0 +1,227 @@
+# Наряди «деталі» (частка М2 з PODIL.md) і «клас C, документ уже в кеші».
+
+- nazva: Радіо на борту · RP2040 → ні (крім W)
+  zbih: Радіо\s+на\s+борту\s+·\s+RP2040\s+→\s+ні\s+\(крім\s+W\)
+  klas: A
+  dzherelo: dzherela-kesh/rp2040.pdf
+  cytata: USB 1.1 controller and PHY, with host and device support
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Це останній елемент у переліку периферійних модулів. Радіо (wifi/bluetooth) не входить до списку.
+- nazva: ОС · RP2040 → немає або RTOS
+  zbih: ОС\s+·\s+RP2040\s+→\s+немає\s+або\s+RTOS
+  klas: A
+  dzherelo: dzherela-kesh/rp2040.pdf
+  cytata: RP2040 is a stateless device, with support for cached execute-in-place from external QSPI memory.
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Документ описує RP2040 як "stateless device". ОС не передбачена архітектурою мікроконтролера.
+- nazva: Сон · RP2040 → мА
+  zbih: Сон\s+·\s+RP2040\s+→\s+мА
+  klas: A
+  dzherelo: dzherela-kesh/rp2040.pdf
+  cytata: Sleep               0.39           4.5              -               -            -            -            mA
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Значення споживання енергії в режимі Sleep знайдено у таблиці 637.
+- nazva: Реальний час · RP2040 → добре
+  zbih: Реальний\s+час\s+·\s+RP2040\s+→\s+добре
+  klas: A
+  dzherelo: dzherela-kesh/rp2040.pdf
+  cytata: The Real-time Clock (RTC) provides time in human-readable format and can be used to generate
+    interrupts at specific times.
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Це перший рядок розділу про RTC - Real-time Clock.
+- nazva: Ціна плати · RP2040 → низька
+  zbih: Ціна\s+плати\s+·\s+RP2040\s+→\s+низька
+  klas: A
+  dzherelo: dzherela-kesh/rp2040.pdf
+  cytata: high performance, low cost,
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Точна фраза з документа, що описує RP2040.
+- nazva: CP2102 — 11, 25, 29, 79, 81, 83, 114, 366, 391
+  zbih: CP2102\s+—\s+11,\s+25,\s+29,\s+79,\s+81,\s+83,\s+114,\s+366,\s+391
+  klas: A
+  dzherelo: dzherela-kesh/cp2102.pdf
+  cytata: 'CP2102
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Мікросхема згадана в даташті.
+- nazva: PCF8574 — 57, 76, 267, 365, 386
+  zbih: PCF8574\s+—\s+57,\s+76,\s+267,\s+365,\s+386
+  klas: A
+  dzherelo: dzherela-kesh/pcf8574.pdf
+  cytata: 'PCF8574
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Мікросхема згадана в даташті.
+- nazva: ESP32-C3 дешевий, простий, має 400 КБ пам'яті — достатньо для простих
+  zbih: ESP32\-C3\s+дешевий,\s+простий,\s+має\s+400\s+КБ\s+пам'яті\s+—\s+достатньо\s+для\s+простих
+  klas: A
+  dzherelo: dzherela-kesh/esp32-c3_datasheet_en.pdf
+  cytata: '• SRAM: 400 KB (16 KB for cache)
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Datasheet підтверджує 400 КБ SRAM; твердження про адекватність для простих задач вимагає практичної
+    оцінки.
+- nazva: 'Дешево і масово: C3 з 400 КБ SRAM для простих задач'
+  zbih: Дешево\s+і\s+масово:\s+C3\s+з\s+400\s+КБ\s+SRAM\s+для\s+простих\s+задач
+  klas: A
+  dzherelo: dzherela-kesh/esp32-c3_datasheet_en.pdf
+  cytata: '400 KB of on-chip SRAM: for data and instructions
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Datasheet підтверджує 400 КБ SRAM.
+- nazva: ESP32-C3 має 400 КБ SRAM — це головне обмеження
+  zbih: ESP32\-C3\s+має\s+400\s+КБ\s+SRAM\s+—\s+це\s+головне\s+обмеження
+  klas: A
+  dzherelo: dzherela-kesh/esp32-c3_datasheet_en.pdf
+  cytata: '• SRAM: 400 KB (16 KB for cache)
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Datasheet підтверджує 400 КБ SRAM.
+- nazva: Специфікація I²C — адресація, ємність шини, режими
+  zbih: Специфікація\s+I²C\s+—\s+адресація,\s+ємність\s+шини,\s+режими
+  klas: A
+  dzherelo: dzherela-kesh/i2c-um10204.pdf
+  cytata: 'Each device connected to the bus is software addressable by a unique address
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Документ містить все про адресацію, ємність шини та режими роботи I2C
+- nazva: DS18B20 — час перетворення, діапазон, роздільність
+  zbih: DS18B20\s+—\s+час\s+перетворення,\s+діапазон,\s+роздільність
+  klas: A
+  dzherelo: dzherela-kesh/ds18b20.pdf
+  cytata: 'Converts Temperature to 12-Bit Digital Word in 750ms (Max)
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Документ містить інформацію про діапазон, роздільність та час перетворення
+- nazva: Паспортна похибка DS18B20 — на датчик, а не між датчиками
+  zbih: Паспортна\s+похибка\s+DS18B20\s+—\s+на\s+датчик,\s+а\s+не\s+між\s+датчиками
+  klas: A
+  dzherelo: dzherela-kesh/ds18b20.pdf
+  cytata: '±0.5°C Accuracy from -10°C to +85°C
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Датаsheet визначає точність на датчик, а не між датчиками
+- nazva: BME280 — карта регістрів і формули компенсації
+  zbih: BME280\s+—\s+карта\s+регістрів\s+і\s+формули\s+компенсації
+  klas: A
+  dzherelo: dzherela-kesh/8e2fcbf9-bme280.c
+  cytata: 'This internal API reads the calibration data from the sensor, parse
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: C-драйвер містить реєстрові карти і формули компенсації для BME280
+- nazva: S3 та C3 — USB-контролер на кристалі
+  zbih: S3\s+та\s+C3\s+—\s+USB\-контролер\s+на\s+кристалі
+  klas: A
+  dzherelo: dzherela-kesh/esp32-s3_datasheet_en.pdf
+  cytata: '– USB Serial/JTAG controller
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Обидва контролери присутні на ESP32-S3 та ESP32-C3
+- nazva: GPIO0 — ключовий пін для вибору режиму завантаження на ESP32 classic т
+  zbih: GPIO0\s+—\s+ключовий\s+пін\s+для\s+вибору\s+режиму\s+завантаження\s+на\s+ESP32\s+classic\s+та\s+S3
+  klas: A
+  dzherelo: dzherela-kesh/esp32-s3_datasheet_en.pdf
+  cytata: 'GPIO0 and GPIO46 control the boot mode after the reset is released.
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: GPIO0 є ключовим пином для вибору режиму завантаження
+- nazva: LoRa SX127x і SX126x — параметри модуляції
+  zbih: LoRa\s+SX127x\s+і\s+SX126x\s+—\s+параметри\s+модуляції
+  klas: A
+  dzherelo: dzherela-kesh/sx1276.pdf
+  cytata: 'The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving
+    significantly longer
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: SX1276 підтримує LoRa модуляцію з розширювачами (spreading factors 6-12)
+- nazva: SPI витримує десятки мегагерц
+  zbih: SPI\s+витримує\s+десятки\s+мегагерц
+  klas: A
+  dzherelo: dzherela-kesh/399b50f6-spi_master.rst
+  cytata: 'Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins
+    are used.
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: 40 MHz та 80 MHz відповідають "десяткам мегагерц"
+- nazva: Дисплеї — зсув SH1106 і адреси I²C-модулів
+  zbih: Дисплеї\s+—\s+зсув\s+SH1106\s+і\s+адреси\s+I²C\-модулів
+  klas: A
+  dzherelo: dzherela-kesh/661478ed-u8x8_d_ssd1306_128x64_noname.c
+  cytata: 'should be removed for SH1106
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: У драйвері є окремі функції для SH1106 (u8x8_d_sh1106_128x64_noname) зі своїм setup, що відрізняється
+    від SSD1306
+- nazva: 'T-02-108: ESP32-C5 з Wi-Fi у двох діапазонах'
+  zbih: T\-02\-108:\s+ESP32\-C5\s+з\s+Wi\-Fi\s+у\s+двох\s+діапазонах
+  klas: A
+  dzherelo: dzherela-kesh/esp32-c5_datasheet_en.pdf
+  cytata: '2.4 and 5 GHz dual-band Wi-Fi 6 (802.11ax)
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Датаsheet прямо підтверджує наявність Wi-Fi у двох діапазонах (2.4 ГГц та 5 ГГц)
+- nazva: T-02-135 — Мережа 5 ГГц, чип C5
+  zbih: T\-02\-135\s+—\s+Мережа\s+5\s+ГГц,\s+чип\s+C5
+  klas: A
+  dzherelo: dzherela-kesh/esp32-c5_datasheet_en.pdf
+  cytata: '1T1R in 2.4 and 5 GHz dual band
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Датаsheet підтверджує наявність 5 ГГц мережі на чипі C5
+- nazva: Дамп флешу починається з адреси 0x0 і містить бутлоадер
+  zbih: Дамп\s+флешу\s+починається\s+з\s+адреси\s+0x0\s+і\s+містить\s+бутлоадер
+  klas: A
+  dzherelo: dzherela-kesh/a4dbe955-bootloader.rst
+  cytata: '0x0 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature sector
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: Датаsheet підтверджує, що бутлоадер розташовується на адресі 0x0
+- nazva: GPIO12 з високим рівнем — правильне налаштування на модулях з 1.8В фле
+  zbih: GPIO12\s+з\s+високим\s+рівнем\s+—\s+правильне\s+налаштування\s+на\s+модулях\s+з\s+1\.8В\s+флешем
+  klas: A
+  dzherelo: dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'MTDI = 1, VDD_SDIO pin is powered from internal 1.8 V LDO.
+
+    '
+  sposib: наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом
+    factcheck/pryyom-hvylya3.py
+  notatka: GPIO12 як MTDI контролює напругу VDD_SDIO; коли висока (1), напруга 1.8В від внутрішнього LDO

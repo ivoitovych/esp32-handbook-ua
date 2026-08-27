@@ -34,7 +34,7 @@ URL не підмінили.
 | Файл | sha256 | Байтів | Коли | URL |
 |---|---|---|---|---|
 | `atmega328p.pdf` | `b9b9d83cda56a95d999ea8d54fe5a540748ae9020e5e7ae19b913d384ba9320e` | 33319446 | 2026-08-26 | <https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf> |
-| `bh1750.pdf` | `190cbb7fcedf92c1d863888f50440114f0c3c048997bdbb97aa027a31a5495c3` | 427456 | 2026-08-26 | <https://www.pololu.com/file/0J1112/BH1750FVI.pdf> |
+| ~~`bh1750.pdf`~~ ВИЛУЧЕНО, див. нижче | `190cbb7fcedf92c1d863888f50440114f0c3c048997bdbb97aa027a31a5495c3` | 427456 | 2026-08-26 | <https://www.pololu.com/file/0J1112/BH1750FVI.pdf> |
 | `bme280.pdf` | `a2ccdb449fec94380742fe8eec851a11d9bd4142252d332b34682b4deecd7d89` | 1663806 | 2026-08-26 | <https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf> |
 | `bmp280.pdf` | `473ff27d9df698b4757e36b36209f83b9f637b592c999d5fabe2a9453a488da6` | 1162932 | 2026-08-26 | <https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf> |
 | `cdc-acm.c` | `0c9bca8f51278dcb87a952889cbd23f459cf0ea8d2a3d84cd2b8a2d08a941029` | 61131 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/class/cdc-acm.c> |
@@ -79,3 +79,28 @@ URL не підмінили.
 | `sx1276.pdf` | `6c24c19ee54309633d4a9057bb8663d1aacdb7f456bebcc6973728a07bd7854e` | 3268248 | 2026-08-26 | — |
 | `tp4056.pdf` | `cdafa22618e7221fa93b8d432237cafb246a515606eef2672f50230d5ae205ce` | 60920 | 2026-08-26 | <https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf> |
 | `vtc6.pdf` | `ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08` | 275509 | 2026-08-26 | <https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx> |
+
+
+## Вилучене з кешу
+
+**`bh1750.pdf` — 2026-08-27.** За адресою
+<https://www.pololu.com/file/0J1112/BH1750FVI.pdf> лежить не даташит
+BH1750, а **схема A-Star 32U4** (у тексті піни PE6/INT6/AIN0 — це
+ATmega32U4). Справжній PDF, справжній постачальник, адреса обіцяє
+одне, всередині інше.
+
+Жодна наша перевірка цього не бачила: файл відкривається, цитата з
+нього звірилася б підрядком успішно, ім'я в полі джерела виглядало б
+правильним. Спіймав помічник, який чесно написав `ne_znayshov` і
+пояснив, що бачить.
+
+Доказів, які на нього спираються, немає: єдиний запис зі словом
+`bh1750` цитує заголовок бібліотеки `claws/BH1750` з GitHub, а не цей
+PDF.
+
+Перевірка на цей рід — `factcheck/kesh-zvirka-m2.py`. Вона не ворота:
+на 67 файлах дає близько 16 скарг, більшість хибні. Читати очима, один
+раз на документ.
+
+Справжній даташит BH1750FVI ще треба знайти — `mouser.com` обриває
+з'єднання.
