@@ -1,0 +1,265 @@
+- id: T-A-069
+  rid: pozyciya
+  chomu: технічне пояснення поняття strapping
+
+- id: T-B-209
+  rid: pozyciya
+  chomu: діагностика причини невміщення BLE
+
+- id: T-B-256
+  rid: pozyciya
+  chomu: пояснення причини корозії
+
+- id: T-B-084
+  rid: pozyciya
+  chomu: порада щодо зовнішнього живлення
+
+- id: T-C-073
+  rid: ne-tverdzhennya
+  chomu: приклад командного рядка
+
+- id: T-D-094
+  rid: pozyciya
+  chomu: пояснення поведінки ROM
+
+- id: T-D-051
+  rid: dzherelo-ye
+  shukaty: ROM datasheet чи документація ESP32, значення rst регістра
+  chomu: конкретне значення регістра від виробника
+
+- id: T-E-155
+  rid: pozyciya
+  chomu: оцінка значущості робочих прикладів
+
+- id: T-E-102
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці компонентів
+
+- id: T-G-083
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-123
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-013
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-051
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-H-007
+  rid: pozyciya
+  chomu: порада щодо перевірки версії документації
+
+- id: T-Z-047
+  rid: ne-tverdzhennya
+  chomu: рядок предметного покажчика
+
+- id: T-Z-130
+  rid: ne-tverdzhennya
+  chomu: рядок предметного покажчика
+
+- id: T-COM-043
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці компонентів
+
+- id: T-REG-003
+  rid: pozyciya
+  chomu: заява про свідоме рішення щодо змісту вкладиша
+
+- id: T-UA--003
+  rid: pozyciya
+  chomu: загальне спостереження про темп змін цін
+
+- id: T-K02-026
+  rid: pozyciya
+  chomu: оцінка наслідків неправильного резервного копіювання
+
+- id: T-K05-025
+  rid: pozyciya
+  chomu: порада щодо опції --no-stub
+
+- id: T-K08-016
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці симптомів
+
+- id: T-K09-006
+  rid: ne-tverdzhennya
+  chomu: таблиця з pin-ами та режимами strapping
+
+- id: T-K11-001
+  rid: ne-tverdzhennya
+  chomu: вступний рядок до переліку незворотних дій
+
+- id: T-K13-012
+  rid: ne-tverdzhennya
+  chomu: рядок схеми діагностики
+
+- id: T-K14-029
+  rid: ne-tverdzhennya
+  chomu: таблиця з назвами мікросхем
+
+- id: T-K15-041
+  rid: pozyciya
+  chomu: порада щодо обробки партії під час налагодження
+
+- id: T-00-085
+  rid: pozyciya
+  chomu: порада щодо перевірки актуальних значень з документацією
+
+- id: T-00-040
+  rid: ne-tverdzhennya
+  chomu: опис процедури перевірки розділу, навігаційна інформація
+
+- id: T-01-110
+  rid: pozyciya
+  chomu: оцінка доцільності радіо функціоналу
+
+- id: T-01-073
+  rid: ne-tverdzhennya
+  chomu: рядок порівняльної таблиці плат
+
+- id: T-02-143
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці порівняння можливостей Bluetooth
+
+- id: T-02-066
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці наявності USB
+
+- id: T-03-015
+  rid: pozyciya
+  chomu: пояснення архітектурної переваги двоядерності
+
+- id: T-04-005
+  rid: ne-tverdzhennya
+  chomu: вступне твердження до розділу про периферію
+
+- id: T-04-047
+  rid: ne-tverdzhennya
+  chomu: заголовок таблиці блоків
+
+- id: T-05-086
+  rid: ne-tverdzhennya
+  chomu: рядок переліку можливих проблем з обміном даних
+
+- id: T-05-001
+  rid: ne-tverdzhennya
+  chomu: вступне твердження до розділу про електроніку
+
+- id: T-06-096
+  rid: pozyciya
+  chomu: аналіз типової помилки в розрахунках споживання енергії
+
+- id: T-06-028
+  rid: pozyciya
+  chomu: пояснення фізичної причини вимог до джерела живлення
+
+- id: T-07-110
+  rid: ne-tverdzhennya
+  chomu: міжрозділова кросс-референція
+
+- id: T-08-076
+  rid: pozyciya
+  chomu: нормативна вимога до складу партії виробів
+
+- id: T-08-003
+  rid: dzherelo-ye
+  shukaty: datasheet ESP32 модуля, опис компонентів
+  chomu: технічна дефініція структури модуля
+
+- id: T-09-094
+  rid: pozyciya
+  chomu: діагностика причини нестабільного з'єднання
+
+- id: T-09-045
+  rid: pozyciya
+  chomu: твердження про відповідність стандарту USB CDC
+
+- id: T-10-011
+  rid: ne-tverdzhennya
+  chomu: описання наслідків неправильного припаювання
+
+- id: T-11-007
+  rid: ne-tverdzhennya
+  chomu: вступне твердження до переліку компонентів IDF
+
+- id: T-11-014
+  rid: pozyciya
+  chomu: рекомендація найпростішого способу встановлення для Windows
+
+- id: T-12-048
+  rid: ne-tverdzhennya
+  chomu: опис варіанту інтеграції Arduino в ESP-IDF
+
+- id: T-13-034
+  rid: ne-tverdzhennya
+  chomu: кросс-референція до таблиці версій
+
+- id: T-13-074
+  rid: pozyciya
+  chomu: порада щодо best practice пінінгу версій
+
+- id: T-14-047
+  rid: ne-tverdzhennya
+  chomu: рядок чеклисту налагодження
+
+- id: T-14-016
+  rid: ne-tverdzhennya
+  chomu: крайтерії вибору у схемі прийняття рішення
+
+- id: T-15-011
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці порівняння підходів
+
+- id: T-16-048
+  rid: ne-tverdzhennya
+  chomu: кросс-референція до іншої проблеми
+
+- id: T-17-045
+  rid: ne-tverdzhennya
+  chomu: описання значущості команди у розділі
+
+- id: T-17-139
+  rid: ne-tverdzhennya
+  chomu: заголовок проблеми з режимом download
+
+- id: T-18-081
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці файлових систем
+
+- id: T-18-037
+  rid: ne-tverdzhennya
+  chomu: кросс-референція до розділу форензики
+
+- id: T-19-089
+  rid: pozyciya
+  chomu: діагностика проблеми з розміром образу
+
+- id: T-20-061
+  rid: ne-tverdzhennya
+  chomu: умовний крок в алгоритмі налагодження
+
+- id: T-20-041
+  rid: ne-tverdzhennya
+  chomu: описання контексту проблеми для розподілених систем
+
+- id: T-21-005
+  rid: ne-tverdzhennya
+  chomu: дія з кросс-референцією
+
+- id: T-22-056
+  rid: ne-tverdzhennya
+  chomu: описання результату аналізу
+
+- id: T-22-037
+  rid: ne-tverdzhennya
+  chomu: інструкція щодо налаштування вимірювання
+
+- id: T-23-096
+  rid: pozyciya
+  chomu: уточнення щодо обсягу послуг розділу про тріаж

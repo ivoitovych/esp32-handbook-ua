@@ -1,0 +1,263 @@
+- id: T-A-036
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика з цифровою навігацією
+
+- id: T-B-191
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці симптомів, структурна навігація
+
+- id: T-B-242
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці з посиланням на розділ
+
+- id: T-B-065
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці симптомів
+
+- id: T-B-173
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці з структурною навігацією
+
+- id: T-C-125
+  rid: ne-tverdzhennya
+  chomu: команда, не твердження про факт
+
+- id: T-D-166
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Interrupt Service Routine documentation
+
+- id: T-E-132
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці компонентів з навігацією
+
+- id: T-E-084
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці компонентів
+
+- id: T-F-013
+  rid: dzherelo-ye
+  shukaty: Linux kernel documentation, USB device drivers
+
+- id: T-G-108
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-150
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-035
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-075
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-H-035
+  rid: pozyciya
+  chomu: метакоментар про структуру документа, позиція редактора
+
+- id: T-Z-114
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика з номерами сторінок
+
+- id: T-COM-010
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці компонентів
+
+- id: T-REG-009
+  rid: dzherelo-ye
+  shukaty: Regional Radio Regulations (ITU), FCC, ETSI frequency allocations
+
+- id: T-UA--019
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці поточних пропозицій на ринку
+
+- id: T-K02-008
+  rid: pozyciya
+  chomu: інструкція-рада від автора про документування
+
+- id: T-K04-012
+  rid: ne-tverdzhennya
+  chomu: крок процедури завантаження, не твердження
+
+- id: T-K07-020
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Memory Allocation and Panic Handler documentation
+
+- id: T-K08-001
+  rid: pozyciya
+  chomu: пояснення методики організації розділу, позиція про принцип
+
+- id: T-K10-020
+  rid: ne-tverdzhennya
+  chomu: команда, не твердження
+
+- id: T-K12-019
+  rid: pozyciya
+  chomu: рада про економічність, оцінка вартості й доцільності
+
+- id: T-K13-041
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці
+
+- id: T-K15-022
+  rid: pozyciya
+  chomu: пояснення методики перевірки, позиція про підхід
+
+- id: T-00-070
+  rid: ne-tverdzhennya
+  chomu: уточнення границь документа, навігація
+
+- id: T-00-027
+  rid: ne-tverdzhennya
+  chomu: пояснення алгоритму класифікації, методичний виклад
+
+- id: T-01-098
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Release Notes and Version Compatibility
+
+- id: T-01-004
+  rid: dzherelo-ye
+  shukaty: ESP32 Series Datasheet, power consumption specifications
+
+- id: T-02-119
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці
+
+- id: T-02-028
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці технічних параметрів
+
+- id: T-03-006
+  rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual, Dual-Core Architecture
+
+- id: T-04-065
+  rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual, Cryptography Engine
+
+- id: T-04-027
+  rid: ne-tverdzhennya
+  chomu: навігаційна пара
+
+- id: T-05-064
+  rid: ne-tverdzhennya
+  chomu: визначення терміну, навколишній контекст
+
+- id: T-05-119
+  rid: ne-tverdzhennya
+  chomu: заголовок розділу, план переліку
+
+- id: T-06-063
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Power Management API documentation
+
+- id: T-06-014
+  rid: ne-tverdzhennya
+  chomu: образна характеристика, ідіоматичний вираз
+
+- id: T-07-007
+  rid: ne-tverdzhennya
+  chomu: опис послідовності ініціалізації, не твердження
+
+- id: T-07-004
+  rid: ne-tverdzhennya
+  chomu: пояснення методики викладу, не твердження про факт
+
+- id: T-08-033
+  rid: dzherelo-ye
+  shukaty: ESP32-DevKitC V4, 38 пінів, Espressif
+
+- id: T-09-077
+  rid: dzherelo-ye
+  shukaty: POSIX Serial Port documentation, device access synchronization
+
+- id: T-09-029
+  rid: ne-tverdzhennya
+  chomu: образна характеристика проблеми, не твердження
+
+- id: T-10-056
+  rid: ne-tverdzhennya
+  chomu: посилання на матеріал, навігація
+
+- id: T-10-035
+  rid: ne-tverdzhennya
+  chomu: рекомендація інструменту, не твердження про факт
+
+- id: T-11-011
+  rid: pozyciya
+  chomu: філософія інструменту, позиція про вибір
+
+- id: T-11-039
+  rid: pozyciya
+  chomu: рада про версійність, оцінка доцільності старих версій
+
+- id: T-12-017
+  rid: dzherelo-ye
+  shukaty: ESP-IDF and Arduino component registry documentation
+
+- id: T-13-006
+  rid: dzherelo-ye
+  shukaty: PlatformIO Arduino core repository and community documentation
+
+- id: T-13-031
+  rid: ne-tverdzhennya
+  chomu: пояснення часу виявлення помилки, не твердження про факт
+
+- id: T-14-074
+  rid: ne-tverdzhennya
+  chomu: таблиця вибору інструменту, критерії
+
+- id: T-15-006
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці підходів
+
+- id: T-15-043
+  rid: ne-tverdzhennya
+  chomu: пояснення обмежень фреймворку, не твердження
+
+- id: T-16-014
+  rid: ne-tverdzhennya
+  chomu: заголовок розділу, навігація
+
+- id: T-17-107
+  rid: ne-tverdzhennya
+  chomu: умовна дія, не твердження про факт
+
+- id: T-18-065
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці
+
+- id: T-18-116
+  rid: ne-tverdzhennya
+  chomu: рядок переліку, описуючий остаток
+
+- id: T-19-075
+  rid: ne-tverdzhennya
+  chomu: опис інструменту, не твердження про факт
+
+- id: T-19-045
+  rid: dzherelo-ye
+  shukaty: ESP-IDF OTA Update API documentation
+
+- id: T-20-020
+  rid: dzherelo-ye
+  shukaty: ESP32 Secure Boot and Flash Encryption documentation
+
+- id: T-21-069
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці
+
+- id: T-21-031
+  rid: dzherelo-ye
+  shukaty: ESP-IDF System Documentation, MAC address logging
+
+- id: T-22-018
+  rid: pozyciya
+  chomu: рада про порядок дій, позиція про найкращу практику
+
+- id: T-23-077
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці діагностики

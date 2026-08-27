@@ -1,0 +1,213 @@
+- id: T-A-060
+  rid: ne-tverdzhennya
+  chomu: навігаційна позначка посилання
+- id: T-B-204
+  rid: ne-tverdzhennya
+  chomu: рядок симптому діагностичний опис
+- id: T-B-250
+  rid: ne-tverdzhennya
+  chomu: рядок симптому причина
+- id: T-B-078
+  rid: ne-tverdzhennya
+  chomu: рядок симптому порада дії
+- id: T-B-183
+  rid: ne-tverdzhennya
+  chomu: посилання номер розділу
+- id: T-C-040
+  rid: pozyciya
+  chomu: оцінка утильності значень в таблиці
+- id: T-D-190
+  rid: pozyciya
+  chomu: рекомендація найкраще зберігати разом
+- id: T-E-145
+  rid: dzherelo-ye
+  shukaty: схема типова
+  chomu: таблиця компонентів електросхеми конкретна кількість
+- id: T-E-096
+  rid: dzherelo-ye
+  shukaty: PMS5003 SDS011 датчики дані пилові частинки
+  chomu: назви датчиків їх можливості
+- id: T-F-020
+  rid: pozyciya
+  chomu: рекомендація оновлювати флеш варто
+- id: T-G-117
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію переклад терміну
+- id: T-G-163
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію абревіатура розшифровка
+- id: T-G-045
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію переклад технічного терміну
+- id: T-H-044
+  rid: ne-tverdzhennya
+  chomu: загальне твердження про джерела методологія
+- id: T-Z-036
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика сторінки
+- id: T-Z-124
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика сторінки
+- id: T-COM-031
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці компонентів
+- id: T-REG-019
+  rid: dzherelo-ye
+  shukaty: LoRa Module Specification
+  chomu: специфікація нормативна вимога до модуля
+- id: T-UA--033
+  rid: ne-tverdzhennya
+  chomu: інформація про ринок доставка тижні
+- id: T-K02-015
+  rid: ne-tverdzhennya
+  chomu: процедурна інструкція дізнатися обсяг
+- id: T-K04-024
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet
+  chomu: технічна вимога режим завантаження чипа
+- id: T-K07-032
+  rid: pozyciya
+  chomu: рекомендація найкраще зберігати elf з прошивкою
+- id: T-K08-008
+  rid: ne-tverdzhennya
+  chomu: діагностична найчастіша причина помилка
+- id: T-K10-039
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet
+  chomu: технічна специфікація тип USB порту
+- id: T-K13-005
+  rid: pozyciya
+  chomu: рекомендація порядок дій вимірювання мультиметром
+- id: T-K14-011
+  rid: ne-tverdzhennya
+  chomu: таблиця перевірка сигналів умова
+- id: T-K15-031
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці діагностики версія помилка
+- id: T-00-079
+  rid: ne-tverdzhennya
+  chomu: спостереження про пошук мовою англійською
+- id: T-00-036
+  rid: ne-tverdzhennya
+  chomu: твердження про статус роботи реєстр
+- id: T-01-106
+  rid: pozyciya
+  chomu: рекомендація зібрати офлайн-комплект заздалегідь
+- id: T-01-058
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet
+  chomu: характеристика швидкості завантаження чипа
+- id: T-02-136
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet
+  chomu: специфікація чипа підтримка діапазону
+- id: T-02-043
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet
+  chomu: матриця функцій чипа та інтерфейсів
+- id: T-03-011
+  rid: dzherelo-ye
+  shukaty: ESP32-C3 C6 H2 S2 одноядерні
+  chomu: специфікація архітектури процесора ядра
+- id: T-04-092
+  rid: dzherelo-ye
+  shukaty: I2S ESP32 classic кількість каналів
+  chomu: характеристика апаратного інтерфейсу
+- id: T-04-043
+  rid: dzherelo-ye
+  shukaty: PCNT лічильник імпульсів енкодер витратомір
+  chomu: описання апаратної функції можливості
+- id: T-05-079
+  rid: ne-tverdzhennya
+  chomu: пояснення принципу роботи open-drain вивіду
+- id: T-05-014
+  rid: ne-tverdzhennya
+  chomu: пояснення принципу живлення струмовідбір
+- id: T-06-084
+  rid: ne-tverdzhennya
+  chomu: заголовок прикладу коду засинання
+- id: T-06-018
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці режимів споживання
+- id: T-07-093
+  rid: ne-tverdzhennya
+  chomu: діагностичне спостереження вибір піна
+- id: T-08-070
+  rid: pozyciya
+  chomu: спостереження якість платнесправність
+- id: T-08-044
+  rid: dzherelo-ye
+  shukaty: ESP32-S3 USB роз'єми native UART
+  chomu: специфікація кількість та тип портів
+- id: T-09-090
+  rid: ne-tverdzhennya
+  chomu: типова конфігурація підключення кабель хаб
+- id: T-09-038
+  rid: ne-tverdzhennya
+  chomu: діагностична порада dmesg драйвер
+- id: T-10-065
+  rid: ne-tverdzhennya
+  chomu: принцип обмеження струму захист платити
+- id: T-11-043
+  rid: ne-tverdzhennya
+  chomu: спостереження практичне перебудування образу
+- id: T-11-107
+  rid: ne-tverdzhennya
+  chomu: принцип виробу супровід роки
+- id: T-12-042
+  rid: dzherelo-ye
+  shukaty: Arduino ESP-IDF версія 4.x 6.x статус альфа
+  chomu: інформація про версію статус
+- id: T-12-027
+  rid: ne-tverdzhennya
+  chomu: оцінка ризику перебудування через роки
+- id: T-13-068
+  rid: ne-tverdzhennya
+  chomu: описання можливості інструменту Arduino IDE
+- id: T-14-043
+  rid: ne-tverdzhennya
+  chomu: твердження про обсяг справ в довіднику
+- id: T-14-001
+  rid: ne-tverdzhennya
+  chomu: категорійна класифікація інструментів
+- id: T-15-069
+  rid: ne-tverdzhennya
+  chomu: принцип розвідка прототип виріб
+- id: T-15-002
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці завдання та інструменти
+- id: T-16-033
+  rid: dzherelo-ye
+  shukaty: ESP32-S2 функція не використовується
+  chomu: специфікація чипа відсутність функції
+- id: T-17-130
+  rid: ne-tverdzhennya
+  chomu: інструкція трублшутинг знизити baud
+- id: T-18-075
+  rid: dzherelo-ye
+  shukaty: FAT швидкість запису заповнення
+  chomu: характеристика файлової системи
+- id: T-18-023
+  rid: ne-tverdzhennya
+  chomu: редакційна інструкція про прочитання таблиці
+- id: T-19-082
+  rid: pozyciya
+  chomu: оцінка найнадійніший спосіб обслуговування
+- id: T-20-052
+  rid: ne-tverdzhennya
+  chomu: діагностична інструкція перший дамп
+- id: T-20-028
+  rid: ne-tverdzhennya
+  chomu: посилання на процедурну картку
+- id: T-21-078
+  rid: ne-tverdzhennya
+  chomu: рядок діагностичної таблиці версія помилка
+- id: T-22-005
+  rid: ne-tverdzhennya
+  chomu: твердження про наслідки втрати часу
+- id: T-22-004
+  rid: ne-tverdzhennya
+  chomu: твердження про наслідки втрати історії
+- id: T-23-090
+  rid: ne-tverdzhennya
+  chomu: посилання номер розділу короткий замикання

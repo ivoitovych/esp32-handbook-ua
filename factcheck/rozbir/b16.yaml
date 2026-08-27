@@ -1,0 +1,188 @@
+- id: T-A-066
+  rid: ne-tverdzhennya
+- id: T-B-208
+  rid: ne-tverdzhennya
+- id: T-B-254
+  rid: pozyciya
+  chomu: діагностична рекомендація щодо розв'язування проблеми зв'язку
+- id: T-B-082
+  rid: ne-tverdzhennya
+- id: T-C-053
+  rid: ne-tverdzhennya
+- id: T-D-092
+  rid: pozyciya
+  chomu: попередження про помилкову інтерпретацію таблиці бітів
+- id: T-D-001
+  rid: ne-tverdzhennya
+- id: T-E-153
+  rid: pozyciya
+  chomu: суб'єктивна оцінка якості компонентів на ринку
+- id: T-E-100
+  rid: dzherelo-ye
+  shukaty: SIM800 / SIM7600 модулі спецификації
+  chomu: модулі та їхні можливості для стільникового зв'язку - технічні параметри
+- id: T-F-026
+  rid: ne-tverdzhennya
+- id: T-G-121
+  rid: ne-tverdzhennya
+- id: T-G-168
+  rid: ne-tverdzhennya
+- id: T-G-049
+  rid: ne-tverdzhennya
+- id: T-H-005
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Programming Guide офіціальна документація
+  chomu: це основна документація фреймворку від розробника
+- id: T-Z-041
+  rid: ne-tverdzhennya
+- id: T-Z-128
+  rid: ne-tverdzhennya
+- id: T-COM-036
+  rid: dzherelo-ye
+  shukaty: DRV8825 драйвер моторів специфікація струм та мікрокроки
+  chomu: електричні параметри та можливості замінника чипа
+- id: T-REG-024
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Programming Guide regulatory налаштування каналів потужність
+  chomu: документована функціональність регіональних обмежень фреймворку
+- id: T-UA--037
+  rid: ne-tverdzhennya
+- id: T-K02-024
+  rid: ne-tverdzhennya
+- id: T-K05-022
+  rid: ne-tverdzhennya
+- id: T-K08-013
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet reset причини коди rst значення
+  chomu: код помилки в логу відповідає документованому коду reset
+- id: T-K09-004
+  rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual GPIO pin allocation flash reserved
+  chomu: технічні обмеження на використання GPIO пінів занятих флешем
+- id: T-K11-010
+  rid: pozyciya
+  chomu: порада про безпеку при тестуванні схем та плат
+- id: T-K13-009
+  rid: ne-tverdzhennya
+- id: T-K14-027
+  rid: ne-tverdzhennya
+- id: T-K15-036
+  rid: pozyciya
+  chomu: аналіз архітектурних наслідків єдиного ключа для безпеки
+- id: T-00-083
+  rid: ne-tverdzhennya
+- id: T-00-038
+  rid: ne-tverdzhennya
+- id: T-01-008
+  rid: pozyciya
+  chomu: спостереження про поведінку користувачів при виборі розв'язків
+- id: T-01-070
+  rid: pozyciya
+  chomu: оцінка можливостей STM32 для роботи реального часу
+- id: T-02-141
+  rid: pozyciya
+  chomu: аналіз причин архітектурних рішень в розробці плат
+- id: T-02-055
+  rid: dzherelo-ye
+  shukaty: ESP32-S2 datasheet BLE підтримка можливості
+  chomu: технічна характеристика чипа про наявність функції
+- id: T-03-002
+  rid: pozyciya
+  chomu: педагогічне пояснення коли розуміння архітектури стає необхідним
+- id: T-04-096
+  rid: dzherelo-ye
+  shukaty: ESP32-C6 datasheet I²S інтерфейси кількість
+  chomu: технічна характеристика кількості інтерфейсів на чипі
+- id: T-04-003
+  rid: ne-tverdzhennya
+- id: T-05-084
+  rid: dzherelo-ye
+  shukaty: Electronics Fundamentals textbook common ground signal voltage reference
+  chomu: фундаментальний принцип електроніки з конкретним числовим значенням
+- id: T-05-132
+  rid: pozyciya
+  chomu: рекомендація про вибір схемного рішення для навантажень
+- id: T-06-091
+  rid: ne-tverdzhennya
+- id: T-06-025
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet spozhyvannya nerivnomirne dynamichnyi strum
+  chomu: характеристика споживання енергії чипа
+- id: T-07-107
+  rid: pozyciya
+  chomu: пояснення наслідків неправильного використання GPIO для діагностики
+- id: T-08-074
+  rid: pozyciya
+  chomu: спостереження про архітектуру плат та їхні відмінності
+- id: T-08-051
+  rid: dzherelo-ye
+  shukaty: OV2640 camera board ESP32 pins GPIO0 USB специфікація
+  chomu: фізичні та електричні характеристики конкретної платформи
+- id: T-09-092
+  rid: pozyciya
+  chomu: діагностичне пояснення стану платформи при проблемах
+- id: T-09-043
+  rid: dzherelo-ye
+  shukaty: POSIX Serial Interface Specification USB CDC ACM device driver
+  chomu: назви пристроїв залежать від типу драйвера та операційної системи
+- id: T-10-009
+  rid: pozyciya
+  chomu: оцінка надійності та довголіття інструменту
+- id: T-11-052
+  rid: ne-tverdzhennya
+- id: T-11-112
+  rid: dzherelo-ye
+  shukaty: ESP-IDF build system set-target sdkconfig поведінка
+  chomu: документована поведінка команди ESP-IDF при зміні цілі build
+- id: T-12-046
+  rid: pozyciya
+  chomu: оцінка придатності Arduino IDE для навчання та реальних проектів
+- id: T-12-032
+  rid: pozyciya
+  chomu: рекомендація щодо вирішення проблем сумісності бібліотек
+- id: T-13-072
+  rid: dzherelo-ye
+  shukaty: PlatformIO GitHub repository Arduino core version history release notes
+  chomu: інформація про версійність та відставання офіційної платформи
+- id: T-14-005
+  rid: ne-tverdzhennya
+- id: T-14-014
+  rid: dzherelo-ye
+  shukaty: MicroPython documentation garbage collection timing determinism REPL
+  chomu: архітектурне обмеження недетермінізму в REPL при автоматичній очистці пам'яті
+- id: T-15-071
+  rid: pozyciya
+  chomu: рекомендація про порядок налагодження перед початком роботи з фреймворком
+- id: T-15-055
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Programming Guide datasheet TRM Technical Reference Manual
+  chomu: офіціальні документи фреймворку та технічні посібники чипів
+- id: T-16-043
+  rid: ne-tverdzhennya
+- id: T-17-135
+  rid: ne-tverdzhennya
+- id: T-18-079
+  rid: dzherelo-ye
+  shukaty: ESP-IDF components LittleFS вбудований окремий
+  chomu: інформація про наявність та розташування компонента у складі фреймворку
+- id: T-18-032
+  rid: ne-tverdzhennya
+- id: T-19-085
+  rid: pozyciya
+  chomu: аналіз типової помилки користувачів при завантаженні файлів образів
+- id: T-20-007
+  rid: dzherelo-ye
+  shukaty: Flash memory JEDEC specification SPI NAND destructive overwrite behavior
+  chomu: характеристика поведінки та можливостей флеш-пам'яті
+- id: T-20-006
+  rid: ne-tverdzhennya
+- id: T-21-082
+  rid: pozyciya
+  chomu: аналіз факторів що впливають на відтворюваність збірки образів
+- id: T-22-052
+  rid: ne-tverdzhennya
+- id: T-22-035
+  rid: ne-tverdzhennya
+- id: T-23-007
+  rid: pozyciya
+  chomu: рекомендація про перевірку інформації безпосередньо на устаткуванні

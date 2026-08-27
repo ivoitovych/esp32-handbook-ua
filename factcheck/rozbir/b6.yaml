@@ -1,83 +1,186 @@
 - id: T-A-045
   rid: ne-tverdzhennya
   chomu: рядок таблиці - обмеження на пін
-
 - id: T-B-194
   rid: ne-tverdzhennya
   chomu: рядок таблиці симптомів
-
 - id: T-B-245
   rid: ne-tverdzhennya
   chomu: рядок таблиці симптомів
-
 - id: T-B-072
   rid: ne-tverdzhennya
   chomu: рядок таблиці симптомів
-
 - id: T-B-176
   rid: ne-tverdzhennya
   chomu: рядок таблиці симптомів
-
 - id: T-C-003
-  rid: dzherelo-ye
-  shukaty: документація Python v4 або Arduino
-  chomu: технічна специфікація версії
-
+  rid: ne-rozibrav
 - id: T-D-177
   rid: pozyciya
   chomu: порада щодо пошуку в коді
-
 - id: T-E-137
   rid: dzherelo-ye
   shukaty: документація чипів A4988 та DRV8825
   chomu: технічна характеристика мікросхем
-
 - id: T-E-088
-  rid: dzherelo-ye
-  shukaty: документація бібліотеки Adafruit або SPI стандарт
-  chomu: технічна специфікація режимів SPI
-
+  rid: pozyciya
+  chomu: спостереження про параметри бібліотек
 - id: T-F-004
   rid: pozyciya
   chomu: загальне спостереження про причини несправностей
-
+- id: T-G-111
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+- id: T-G-156
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+- id: T-G-038
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
 - id: T-G-080
   rid: ne-tverdzhennya
   chomu: рядок глосарію
-
 - id: T-H-038
   rid: pozyciya
   chomu: порада щодо оцінки джерел
-
 - id: T-Z-117
   rid: ne-tverdzhennya
   chomu: рядок показчика GPIO з номерами сторінок
-
 - id: T-COM-015
   rid: pozyciya
   chomu: порада щодо вибору модуля за умовою
-
 - id: T-REG-001
   rid: ne-tverdzhennya
   chomu: метадані документа - номер ревізії
-
 - id: T-UA--025
   rid: ne-tverdzhennya
   chomu: рядок таблиці компонентів
-
 - id: T-K02-011
   rid: pozyciya
   chomu: інструкція для діагностики
-
 - id: T-K04-002
   rid: pozyciya
   chomu: порада про нормальне поведінку плати
-
 - id: T-K07-024
   rid: ne-tverdzhennya
   chomu: заголовок процедури з умовою
-
 - id: T-K08-053
   rid: pozyciya
   chomu: загальне твердження про причину
-
+- id: T-K10-031
+  rid: ne-rozibrav
+- id: T-K12-022
+  rid: pozyciya
+  chomu: порада щодо дешевих компонентів
+- id: T-K13-044
+  rid: pozyciya
+  chomu: відрізнення поведінки плати від чипа
+- id: T-K15-025
+  rid: ne-rozibrav
+- id: T-00-073
+  rid: pozyciya
+  chomu: рекомендована послідовність навчання
+- id: T-00-030
+  rid: pozyciya
+  chomu: філософське спостереження про твердження
+- id: T-01-101
+  rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual
+  chomu: офіційний документ з описом регістрів
+- id: T-01-038
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці з характеристиками чипа
+- id: T-02-123
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці з вибором чипа
+- id: T-02-031
+  rid: dzherelo-ye
+  shukaty: ESP32-S2 Datasheet
+  chomu: технічна характеристика з числовим значенням
+- id: T-03-071
+  rid: ne-rozibrav
+- id: T-04-068
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці периферії
+- id: T-04-032
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці з посиланням на варіант чипа
+- id: T-05-067
+  rid: pozyciya
+  chomu: загальне спостереження про можливість ESP32
+- id: T-05-123
+  rid: pozyciya
+  chomu: порада щодо пайки
+- id: T-06-006
+  rid: pozyciya
+  chomu: загальне спостереження про розробники платів
+- id: T-06-129
+  rid: pozyciya
+  chomu: рекомендація компонентів для типової проблеми
+- id: T-07-078
+  rid: ne-rozibrav
+- id: T-08-062
+  rid: pozyciya
+  chomu: порада щодо діагностики з мікроскопом
+- id: T-08-036
+  rid: ne-tverdzhennya
+  chomu: назва популярної варіанти плати
+- id: T-09-084
+  rid: ne-rozibrav
+- id: T-09-032
+  rid: pozyciya
+  chomu: рекомендація як робити висновки про плату
+- id: T-10-059
+  rid: ne-rozibrav
+- id: T-10-039
+  rid: ne-rozibrav
+- id: T-11-098
+  rid: pozyciya
+  chomu: спостереження про поведінку IDE
+- id: T-12-036
+  rid: ne-rozibrav
+- id: T-12-020
+  rid: pozyciya
+  chomu: вказівка на неповинність переносу знань
+- id: T-13-061
+  rid: pozyciya
+  chomu: рекомендація щодо вибору плати
+- id: T-14-037
+  rid: ne-rozibrav
+- id: T-14-078
+  rid: ne-rozibrav
+- id: T-15-064
+  rid: ne-rozibrav
+- id: T-15-046
+  rid: ne-rozibrav
+- id: T-16-017
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці режимів завантаження
+- id: T-17-121
+  rid: ne-tverdzhennya
+  chomu: заголовок помилки/проблеми
+- id: T-18-068
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці порівняння файлових систем
+- id: T-18-124
+  rid: pozyciya
+  chomu: рекомендація щодо вибору файлової системи
+- id: T-19-009
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці розділів флешу
+- id: T-19-048
+  rid: pozyciya
+  chomu: порада щодо критерію успіху OTA
+- id: T-20-021
+  rid: ne-rozibrav
+- id: T-21-072
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці з версійною інформацією
+- id: T-21-036
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці типів перевірок
+- id: T-22-021
+  rid: pozyciya
+  chomu: порада щодо того, що записувати
+- id: T-23-080
+  rid: ne-rozibrav

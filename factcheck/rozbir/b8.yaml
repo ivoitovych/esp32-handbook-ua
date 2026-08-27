@@ -1,0 +1,175 @@
+- id: T-A-053
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet, розділ про ADC
+- id: T-B-196
+  rid: ne-tverdzhennya
+- id: T-B-247
+  rid: pozyciya
+  chomu: рекомендація щодо синхронізації доступу
+- id: T-B-074
+  rid: dzherelo-ye
+  shukaty: ESP32 Hardware Design Guidelines, розділ про вимоги до живлення
+- id: T-B-179
+  rid: pozyciya
+  chomu: практична порада для діагностики датчиків
+- id: T-C-029
+  rid: ne-tverdzhennya
+- id: T-D-181
+  rid: pozyciya
+  chomu: аналогія для пояснення поведінки функції
+- id: T-E-140
+  rid: ne-tverdzhennya
+- id: T-E-091
+  rid: dzherelo-ye
+  shukaty: Datasheet GPS модулів NEO-6M / NEO-8M
+- id: T-F-016
+  rid: ne-tverdzhennya
+- id: T-G-113
+  rid: ne-tverdzhennya
+- id: T-G-158
+  rid: ne-tverdzhennya
+- id: T-G-041
+  rid: ne-tverdzhennya
+- id: T-H-040
+  rid: ne-tverdzhennya
+- id: T-Z-027
+  rid: ne-tverdzhennya
+- id: T-Z-119
+  rid: ne-tverdzhennya
+- id: T-COM-017
+  rid: ne-tverdzhennya
+- id: T-REG-013
+  rid: dzherelo-ye
+  shukaty: FCC Regulations 47 CFR Part 15
+- id: T-UA--002
+  rid: pozyciya
+  chomu: editorska позиція щодо змісту вкладиша
+- id: T-K02-013
+  rid: pozyciya
+  chomu: діагностична процедура для перевірки живлення
+- id: T-K04-020
+  rid: dzherelo-ye
+  shukaty: ESP32-CAM board datasheet / schematic
+- id: T-K07-027
+  rid: dzherelo-ye
+  shukaty: ESP-IDF документація, інструменти для кожної архітектури
+- id: T-K08-003
+  rid: ne-tverdzhennya
+- id: T-K10-034
+  rid: ne-tverdzhennya
+- id: T-K12-024
+  rid: pozyciya
+  chomu: рекомендація комплекту необхідних інструментів
+- id: T-K14-006
+  rid: pozyciya
+  chomu: порада щодо верифікації рівнів сигналу
+- id: T-K15-027
+  rid: ne-tverdzhennya
+- id: T-00-077
+  rid: ne-tverdzhennya
+- id: T-00-032
+  rid: pozyciya
+  chomu: спостереження про особливості саморозпізнання класу
+- id: T-01-005
+  rid: pozyciya
+  chomu: визначення першочергового джерела непорозумінь
+- id: T-01-048
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet, розділ Memory
+- id: T-02-126
+  rid: pozyciya
+  chomu: обґрунтування вибору Bluetooth Classic
+- id: T-02-033
+  rid: dzherelo-ye
+  shukaty: ESP32-C3 Datasheet, SRAM specification
+- id: T-03-076
+  rid: pozyciya
+  chomu: пояснення як читати адреси в panic dump
+- id: T-04-070
+  rid: dzherelo-ye
+  shukaty: ESP32-S3 Datasheet, UART peripherals
+- id: T-04-036
+  rid: ne-tverdzhennya
+- id: T-05-008
+  rid: pozyciya
+  chomu: фундаментальне пояснення електричного струму
+- id: T-05-125
+  rid: pozyciya
+  chomu: мета-порада про профілактику ESD пошкоджень
+- id: T-06-073
+  rid: pozyciya
+  chomu: рекомендація обрати інший GPIO замість регулювання рівня
+- id: T-06-001
+  rid: pozyciya
+  chomu: оцінка цінності розділу про живлення
+- id: T-07-083
+  rid: pozyciya
+  chomu: визначення важливості другого аспекту
+- id: T-08-005
+  rid: ne-tverdzhennya
+- id: T-08-039
+  rid: dzherelo-ye
+  shukaty: Board datasheets та marketing materials
+- id: T-09-086
+  rid: pozyciya
+  chomu: діагностичне пояснення симптому
+- id: T-09-034
+  rid: dzherelo-ye
+  shukaty: FTDI FT232RL documentation, chip authentication
+- id: T-10-061
+  rid: pozyciya
+  chomu: порада про поширені помилки паяння
+- id: T-10-042
+  rid: pozyciya
+  chomu: рекомендація мати набір номіналів компонентів
+- id: T-11-100
+  rid: pozyciya
+  chomu: пояснення поведінки IDE при успішній збірці
+- id: T-12-038
+  rid: pozyciya
+  chomu: спостереження про відмінності Arduino ініціалізації
+- id: T-12-003
+  rid: pozyciya
+  chomu: пояснення обмежень Arduino порівняно з ESP-IDF
+- id: T-13-063
+  rid: pozyciya
+  chomu: порада про конфлікти змінних середовища
+- id: T-14-039
+  rid: pozyciya
+  chomu: рекомендація перевіряти логіку під час доставки
+- id: T-14-008
+  rid: ne-tverdzhennya
+- id: T-15-007
+  rid: ne-tverdzhennya
+- id: T-15-048
+  rid: pozyciya
+  chomu: опис можливостей порівняно з іншими варіантами
+- id: T-16-020
+  rid: pozyciya
+  chomu: пояснення класу проблем із strapping-пінами
+- id: T-17-123
+  rid: pozyciya
+  chomu: порада що не робити під час налагодження
+- id: T-18-070
+  rid: dzherelo-ye
+  shukaty: LittleFS Technical Reference Manual
+- id: T-18-015
+  rid: ne-tverdzhennya
+- id: T-19-078
+  rid: pozyciya
+  chomu: пояснення процесу OTA-оновлення з веб-сторінки
+- id: T-20-046
+  rid: pozyciya
+  chomu: досвід-заснована порада про часу гранич умовах
+- id: T-20-023
+  rid: pozyciya
+  chomu: рекомендація тестування лише на резервній платі
+- id: T-21-074
+  rid: ne-tverdzhennya
+- id: T-21-038
+  rid: pozyciya
+  chomu: спостереження про межові умови в партіях
+- id: T-22-027
+  rid: ne-tverdzhennya
+- id: T-23-082
+  rid: ne-tverdzhennya

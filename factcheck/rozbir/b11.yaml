@@ -144,7 +144,7 @@
 
 - id: T-05-078
   rid: dzherelo-ye
-  shukaty: основи електроніки — основний закон короткого замикання
+  shukaty: IEC 60908 logic levels — конфлікт двох виходів
 
 - id: T-05-013
   rid: pozyciya

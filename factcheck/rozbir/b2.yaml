@@ -1,0 +1,229 @@
+- id: T-A-032
+  rid: ne-tverdzhennya
+
+- id: T-B-190
+  rid: ne-tverdzhennya
+
+- id: T-B-241
+  rid: ne-tverdzhennya
+
+- id: T-B-063
+  rid: ne-tverdzhennya
+
+- id: T-B-171
+  rid: ne-tverdzhennya
+
+- id: T-C-123
+  rid: ne-tverdzhennya
+
+- id: T-D-046
+  rid: ne-tverdzhennya
+
+- id: T-E-131
+  rid: ne-tverdzhennya
+
+- id: T-E-083
+  rid: dzherelo-ye
+  shukaty: SSD16xx datasheet - режими дисплея
+
+- id: T-F-011
+  rid: ne-tverdzhennya
+
+- id: T-G-107
+  rid: ne-tverdzhennya
+
+- id: T-G-010
+  rid: ne-tverdzhennya
+
+- id: T-G-034
+  rid: ne-tverdzhennya
+
+- id: T-G-074
+  rid: ne-tverdzhennya
+
+- id: T-H-034
+  rid: pozyciya
+  chomu: рекомендація порядку пошуку - останнім, з перевіркою дати
+
+- id: T-Z-113
+  rid: ne-tverdzhennya
+
+- id: T-COM-009
+  rid: pozyciya
+  chomu: рекомендація коли використовувати - для навчання
+
+- id: T-REG-008
+  rid: pozyciya
+  chomu: твердження про різниці між країнами без конкретики
+
+- id: T-UA--018
+  rid: ne-tverdzhennya
+
+- id: T-K02-007
+  rid: pozyciya
+  chomu: рекомендація як правильно знімати плату
+
+- id: T-K03-002
+  rid: pozyciya
+  chomu: спостереження про якість дешевих кабелів
+
+- id: T-K07-003
+  rid: ne-tverdzhennya
+
+- id: T-K08-051
+  rid: pozyciya
+  chomu: порада про методику тестування - одна зміна за раз
+
+- id: T-K10-018
+  rid: ne-tverdzhennya
+
+- id: T-K12-018
+  rid: ne-tverdzhennya
+
+- id: T-K13-040
+  rid: ne-tverdzhennya
+
+- id: T-K15-021
+  rid: pozyciya
+  chomu: порада про обов'язковість кроків
+
+- id: T-00-068
+  rid: ne-tverdzhennya
+
+- id: T-00-026
+  rid: pozyciya
+  chomu: висновок про розмір класу E і спосіб його окреслення
+
+- id: T-01-097
+  rid: pozyciya
+  chomu: рекомендація обирати версію відповідно до плати
+
+- id: T-01-003
+  rid: pozyciya
+  chomu: спостереження про незвичність архітектури для програмістів з великих систем
+
+- id: T-02-118
+  rid: ne-tverdzhennya
+
+- id: T-02-027
+  rid: dzherelo-ye
+  shukaty: ESP32-C3 Series Datasheet - частота для C3 160 МГц
+
+- id: T-03-067
+  rid: pozyciya
+  chomu: порада - не потрібно знати таблицю напам'ять, але корисно вміти читати адреси
+
+- id: T-04-064
+  rid: pozyciya
+  chomu: твердження про можливість обміну з дорослими контролерами
+
+- id: T-04-026
+  rid: ne-tverdzhennya
+
+- id: T-05-063
+  rid: pozyciya
+  chomu: технічна вимога - потрібен підтягувальний резистор
+
+- id: T-05-118
+  rid: pozyciya
+  chomu: спостереження про можливу непередбачену поведінку плати
+
+- id: T-06-062
+  rid: pozyciya
+  chomu: твердження про поведінку чипа під час сну
+
+- id: T-06-123
+  rid: pozyciya
+  chomu: спостереження про якість дешевих клонів і перегрівання стабілізатора
+
+- id: T-07-067
+  rid: pozyciya
+  chomu: категорична порада - ніколи не робити
+
+- id: T-07-003
+  rid: ne-tverdzhennya
+
+- id: T-08-029
+  rid: ne-tverdzhennya
+
+- id: T-09-075
+  rid: pozyciya
+  chomu: спостереження про витрачаний час
+
+- id: T-09-026
+  rid: ne-tverdzhennya
+
+- id: T-10-055
+  rid: ne-tverdzhennya
+
+- id: T-10-034
+  rid: pozyciya
+  chomu: твердження про наслідки відсутності інструменту
+
+- id: T-11-095
+  rid: pozyciya
+  chomu: рекомендація другого варіанту як надійнішого
+
+- id: T-11-037
+  rid: ne-tverdzhennya
+
+- id: T-12-015
+  rid: pozyciya
+  chomu: твердження про головну причину проблем з бібліотеками
+
+- id: T-13-058
+  rid: pozyciya
+  chomu: рекомендація - PlatformIO краще для Arduino
+
+- id: T-13-030
+  rid: pozyciya
+  chomu: порада завжди пінити версію платформи
+
+- id: T-14-073
+  rid: pozyciya
+  chomu: рекомендація як перевірити монтаж за допомогою ESPHome
+
+- id: T-15-005
+  rid: ne-tverdzhennya
+
+- id: T-15-041
+  rid: ne-tverdzhennya
+
+- id: T-16-013
+  rid: pozyciya
+  chomu: твердження про поведінку піна після завантаження
+
+- id: T-17-106
+  rid: ne-tverdzhennya
+
+- id: T-18-064
+  rid: ne-tverdzhennya
+
+- id: T-18-115
+  rid: pozyciya
+  chomu: твердження про кількість залишкового місця на флеші
+
+- id: T-19-008
+  rid: ne-tverdzhennya
+
+- id: T-19-040
+  rid: pozyciya
+  chomu: вимога до прошивки - сама має підтвердити справність
+
+- id: T-20-015
+  rid: pozyciya
+  chomu: твердження про фізичне запалювання біта
+
+- id: T-21-068
+  rid: ne-tverdzhennya
+
+- id: T-21-029
+  rid: pozyciya
+  chomu: пояснення необхідності set -e для контролю помилок
+
+- id: T-22-017
+  rid: pozyciya
+  chomu: спостереження про кількість знімків за тиждень
+
+- id: T-23-076
+  rid: ne-tverdzhennya

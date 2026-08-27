@@ -1,0 +1,271 @@
+- id: T-A-056
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-B-202
+  rid: ne-tverdzhennya
+  chomu: "навігація — розділ"
+
+- id: T-B-004
+  rid: pozyciya
+  chomu: рекомендація процедури
+
+- id: T-B-076
+  rid: ne-tverdzhennya
+  chomu: "навігація — розділ"
+
+- id: T-B-181
+  rid: ne-tverdzhennya
+  chomu: "навігація — таблиця"
+
+- id: T-C-036
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці команд
+
+- id: T-D-050
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet - panic codes
+  chomu: "коди паніки: 0x1, 0xc, 0xf"
+
+- id: T-E-142
+  rid: ne-tverdzhennya
+  chomu: "навігація — розділ"
+
+- id: T-E-093
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-F-018
+  rid: dzherelo-ye
+  shukaty: розгортання на флешці
+  chomu: виміряна характеристика часу
+
+- id: T-G-115
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-G-161
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-G-043
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-H-042
+  rid: ne-rozibrav
+
+- id: T-Z-031
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-Z-121
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-COM-026
+  rid: pozyciya
+  chomu: рекомендація вибору датчика
+
+- id: T-REG-015
+  rid: dzherelo-ye
+  shukaty: Wi-Fi regulatory specifications
+  chomu: нормативна вимога регіональних каналів
+
+- id: T-UA--031
+  rid: ne-rozibrav
+
+- id: T-K02-001
+  rid: ne-tverdzhennya
+  chomu: "навігація — інструкція"
+
+- id: T-K04-022
+  rid: pozyciya
+  chomu: рекомендація команди
+
+- id: T-K07-030
+  rid: dzherelo-ye
+  shukaty: ESP32 panic diagnostics
+  chomu: технічна характеристика PC
+
+- id: T-K08-006
+  rid: ne-tverdzhennya
+  chomu: "навігація — посилання"
+
+- id: T-K10-036
+  rid: pozyciya
+  chomu: команда установлення прав
+
+- id: T-K12-026
+  rid: pozyciya
+  chomu: оцінка необхідності інтернету
+
+- id: T-K14-008
+  rid: ne-tverdzhennya
+  chomu: "навігація — таблиця"
+
+- id: T-K15-029
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-00-007
+  rid: pozyciya
+  chomu: опис принципів довідника
+
+- id: T-00-034
+  rid: pozyciya
+  chomu: оцінка обсягу непровірених тверджень
+
+- id: T-01-104
+  rid: pozyciya
+  chomu: оцінка корисності ресурсу
+
+- id: T-01-053
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-02-130
+  rid: dzherelo-ye
+  shukaty: battery life specifications
+  chomu: характеристика батарейки на роки
+
+- id: T-02-035
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці з числами
+
+- id: T-03-009
+  rid: dzherelo-ye
+  shukaty: FreeRTOS scheduling on ESP32
+  chomu: технічна характеристика задачі
+
+- id: T-04-072
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці з числами
+
+- id: T-04-041
+  rid: ne-tverdzhennya
+  chomu: пояснення терміна
+
+- id: T-05-077
+  rid: dzherelo-ye
+  shukaty: GPIO output characteristics
+  chomu: технічна характеристика виходу
+
+- id: T-05-127
+  rid: dzherelo-ye
+  shukaty: voltage measurement principles
+  chomu: технічний принцип електроніки
+
+- id: T-06-008
+  rid: ne-rozibrav
+
+- id: T-06-016
+  rid: pozyciya
+  chomu: рекомендація пам тримати порядки
+
+- id: T-07-086
+  rid: dzherelo-ye
+  shukaty: GPIO hardware configuration
+  chomu: технічна характеристика схеми
+
+- id: T-08-068
+  rid: pozyciya
+  chomu: оцінка часу хвилина на плату
+
+- id: T-08-041
+  rid: pozyciya
+  chomu: оцінка ефективності
+
+- id: T-09-088
+  rid: pozyciya
+  chomu: інструкція діагностики
+
+- id: T-09-036
+  rid: dzherelo-ye
+  shukaty: FT232 driver detection issues
+  chomu: випадок з FT232 та драйвером
+
+- id: T-10-063
+  rid: pozyciya
+  chomu: рекомендація не економити
+
+- id: T-11-041
+  rid: pozyciya
+  chomu: рекомендація версій з умовою
+
+- id: T-11-102
+  rid: ne-rozibrav
+
+- id: T-12-040
+  rid: pozyciya
+  chomu: рекомендація перевірити дату
+
+- id: T-12-024
+  rid: dzherelo-ye
+  shukaty: Arduino IDE specifications
+  chomu: характеристика Arduino core
+
+- id: T-13-066
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-14-041
+  rid: pozyciya
+  chomu: оцінка безпеки навчального
+
+- id: T-14-010
+  rid: pozyciya
+  chomu: оцінка корисності REPL
+
+- id: T-15-067
+  rid: dzherelo-ye
+  shukaty: deployment time measurements
+  chomu: виміряні часи розгортання
+
+- id: T-15-050
+  rid: ne-rozibrav
+
+- id: T-16-025
+  rid: dzherelo-ye
+  shukaty: ESP32 boot pin behavior
+  chomu: технічна характеристика pull-up
+
+- id: T-17-128
+  rid: ne-rozibrav
+
+- id: T-18-073
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-18-019
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-19-080
+  rid: pozyciya
+  chomu: рекомендація безпеки
+
+- id: T-20-049
+  rid: pozyciya
+  chomu: інструкція з посиланням
+
+- id: T-20-026
+  rid: pozyciya
+  chomu: оцінка страховки дампу
+
+- id: T-21-076
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-22-047
+  rid: pozyciya
+  chomu: інструкція перевірки
+
+- id: T-22-030
+  rid: pozyciya
+  chomu: принцип надійності
+
+- id: T-23-084
+  rid: ne-tverdzhennya
+  chomu: "навігація — посилання"
+
