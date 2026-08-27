@@ -1,0 +1,261 @@
+- id: T-A-006
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-A-081
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-B-224
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-B-005
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-B-124
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці діагностики
+
+- id: T-C-088
+  rid: ne-tverdzhennya
+  chomu: команда з коментарем
+
+- id: T-D-131
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-D-080
+  rid: ne-rozibrav
+
+- id: T-E-049
+  rid: ne-rozibrav
+
+- id: T-E-114
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці
+
+- id: T-G-094
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-G-132
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-G-002
+  rid: pozyciya
+  chomu: висловлення мовної політики, авторський вибір
+
+- id: T-G-062
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-H-019
+  rid: ne-tverdzhennya
+  chomu: опис структури файлів
+
+- id: T-Z-066
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика з номером сторінки
+
+- id: T-Z-154
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика з номерами сторінок
+
+- id: T-COM-068
+  rid: pozyciya
+  chomu: тримачі, запобігання паянню — практична рекомендація
+
+- id: T-UA--005
+  rid: ne-tverdzhennya
+  chomu: опис редакційного процесу
+
+- id: T-K01-025
+  rid: ne-tverdzhennya
+  chomu: рядок діагностики
+
+- id: T-K03-009
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-K06-029
+  rid: dzherelo-ye
+  shukaty: код помилки rst:0xf
+
+- id: T-K08-035
+  rid: ne-tverdzhennya
+  chomu: рядок діагностики
+
+- id: T-K09-021
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці пінаутів
+
+- id: T-K12-006
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці обладнання
+
+- id: T-K13-022
+  rid: pozyciya
+  chomu: оцінка ефективності рішення (половина випадків)
+
+- id: T-K15-006
+  rid: ne-tverdzhennya
+  chomu: елемент чек-листу
+
+- id: T-00-053
+  rid: ne-tverdzhennya
+  chomu: опис змісту розділу
+
+- id: T-00-013
+  rid: pozyciya
+  chomu: авторське твердження про серйозну ваду
+
+- id: T-01-082
+  rid: pozyciya
+  chomu: рекомендація щодо вибору чипа
+
+- id: T-01-016
+  rid: pozyciya
+  chomu: оцінка переваг вбудованого модуля
+
+- id: T-02-099
+  rid: ne-tverdzhennya
+  chomu: опис процесу міграції
+
+- id: T-02-012
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці характеристик
+
+- id: T-03-052
+  rid: ne-tverdzhennya
+  chomu: опис джерел тактування
+
+- id: T-03-029
+  rid: dzherelo-ye
+  shukaty: розмір кеш-пам'яті, RAM розмір
+
+- id: T-04-141
+  rid: dzherelo-ye
+  shukaty: кількість переривань на частоту
+
+- id: T-05-004
+  rid: ne-tverdzhennya
+  chomu: визначення терміна
+
+- id: T-05-100
+  rid: ne-tverdzhennya
+  chomu: опис властивості конденсатора
+
+- id: T-05-037
+  rid: ne-tverdzhennya
+  chomu: опис схеми підключення
+
+- id: T-06-106
+  rid: ne-tverdzhennya
+  chomu: опис методу вимірювання
+
+- id: T-06-041
+  rid: pozyciya
+  chomu: авторське твердження про місце помилки
+
+- id: T-07-128
+  rid: dzherelo-ye
+  shukaty: пінаут, збіжність з datasheet
+
+- id: T-08-090
+  rid: ne-tverdzhennya
+  chomu: примітка про плату DevKit
+
+- id: T-09-062
+  rid: pozyciya
+  chomu: рекомендація зберігання
+
+- id: T-09-106
+  rid: ne-tverdzhennya
+  chomu: опис переваги MAC адреси
+
+- id: T-10-045
+  rid: pozyciya
+  chomu: загальне правило економії
+
+- id: T-10-021
+  rid: ne-tverdzhennya
+  chomu: порівняння вартості ремонту
+
+- id: T-11-009
+  rid: ne-tverdzhennya
+  chomu: опис компонентів ESP-IDF
+
+- id: T-11-021
+  rid: ne-tverdzhennya
+  chomu: інструкція підготовки терміналу
+
+- id: T-12-061
+  rid: ne-tverdzhennya
+  chomu: опис поведінки функцій в Arduino
+
+- id: T-13-005
+  rid: dzherelo-ye
+  shukaty: Arduino core версія, відстача від PlatformIO
+
+- id: T-13-014
+  rid: pozyciya
+  chomu: авторська рекомендація про фіксацію версій
+
+- id: T-14-058
+  rid: ne-tverdzhennya
+  chomu: рядок порівняння часу розробки
+
+- id: T-14-030
+  rid: pozyciya
+  chomu: практична рекомендація для швидкої розробки
+
+- id: T-15-027
+  rid: pozyciya
+  chomu: оцінка цінності прототипу
+
+- id: T-16-078
+  rid: ne-tverdzhennya
+  chomu: посилання на картку
+
+- id: T-17-066
+  rid: ne-tverdzhennya
+  chomu: опис переваги стиснення
+
+- id: T-17-018
+  rid: ne-tverdzhennya
+  chomu: опис стану команди на новій версії
+
+- id: T-18-094
+  rid: dzherelo-ye
+  shukaty: гарантії вбудованої флеш-пам'яті
+
+- id: T-19-059
+  rid: ne-tverdzhennya
+  chomu: опис процесу OTA обновлення
+
+- id: T-19-017
+  rid: ne-tverdzhennya
+  chomu: опис схеми переключення прошивки
+
+- id: T-20-077
+  rid: ne-tverdzhennya
+  chomu: посилання на картку
+
+- id: T-21-056
+  rid: pozyciya
+  chomu: рекомендація щодо MAC замість серійного номера
+
+- id: T-21-093
+  rid: ne-tverdzhennya
+  chomu: опис причин відмови в партії
+
+- id: T-22-069
+  rid: ne-tverdzhennya
+  chomu: опис бази для порівняння даних
+
+- id: T-23-058
+  rid: ne-tverdzhennya
+  chomu: посилання на картку

@@ -1,0 +1,225 @@
+- id: T-A-010
+  rid: ne-tverdzhennya
+
+- id: T-A-083
+  rid: ne-tverdzhennya
+
+- id: T-B-226
+  rid: pozyciya
+  chomu: рекомендація дії для вирішення проблеми падіння
+
+- id: T-B-039
+  rid: ne-tverdzhennya
+
+- id: T-B-002
+  rid: pozyciya
+  chomu: порада-принцип для уникнення плаваючих багів
+
+- id: T-C-090
+  rid: ne-tverdzhennya
+
+- id: T-D-148
+  rid: ne-tverdzhennya
+  chomu: заголовок таблиці
+
+- id: T-D-083
+  rid: dzherelo-ye
+
+- id: T-E-057
+  rid: ne-tverdzhennya
+
+- id: T-E-116
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці застосувань
+
+- id: T-G-096
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-134
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-023
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-064
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-H-022
+  rid: dzherelo-ye
+
+- id: T-Z-001
+  rid: ne-tverdzhennya
+  chomu: правило індексу
+
+- id: T-Z-157
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-COM-075
+  rid: ne-tverdzhennya
+
+- id: T-UA--007
+  rid: pozyciya
+  chomu: оцінка вартості способу замовлення
+
+- id: T-K01-028
+  rid: ne-tverdzhennya
+
+- id: T-K03-001
+  rid: pozyciya
+  chomu: рекомендація послідовності пошуку проблем
+
+- id: T-K06-031
+  rid: dzherelo-ye
+
+- id: T-K08-037
+  rid: ne-tverdzhennya
+
+- id: T-K09-025
+  rid: dzherelo-ye
+
+- id: T-K12-008
+  rid: ne-tverdzhennya
+
+- id: T-K13-024
+  rid: pozyciya
+  chomu: рекомендація щодо вибору типу хабу
+
+- id: T-K15-010
+  rid: ne-tverdzhennya
+
+- id: T-00-056
+  rid: dzherelo-ye
+
+- id: T-00-015
+  rid: dzherelo-ye
+
+- id: T-01-085
+  rid: pozyciya
+  chomu: оцінка чипів як різних класів
+
+- id: T-01-018
+  rid: dzherelo-ye
+
+- id: T-02-103
+  rid: dzherelo-ye
+
+- id: T-02-014
+  rid: ne-tverdzhennya
+  chomu: таблиця
+
+- id: T-03-055
+  rid: dzherelo-ye
+
+- id: T-03-032
+  rid: dzherelo-ye
+
+- id: T-04-147
+  rid: pozyciya
+  chomu: оцінка проблеми як частої на пізніх етапах
+
+- id: T-05-006
+  rid: dzherelo-ye
+
+- id: T-05-102
+  rid: pozyciya
+  chomu: рекомендація коли використовувати транзистор
+
+- id: T-05-041
+  rid: pozyciya
+  chomu: оцінка ризику помилки при з'єднанні однакових роз'ємів
+
+- id: T-06-110
+  rid: dzherelo-ye
+
+- id: T-06-043
+  rid: ne-tverdzhennya
+
+- id: T-07-133
+  rid: dzherelo-ye
+
+- id: T-08-092
+  rid: pozyciya
+  chomu: рекомендація про кількість типів плат
+
+- id: T-09-065
+  rid: ne-tverdzhennya
+
+- id: T-09-011
+  rid: pozyciya
+  chomu: уточнення про умови (порт ≠ живий чип)
+
+- id: T-10-047
+  rid: ne-tverdzhennya
+  chomu: заголовок списку
+
+- id: T-10-023
+  rid: dzherelo-ye
+
+- id: T-11-082
+  rid: dzherelo-ye
+
+- id: T-11-024
+  rid: dzherelo-ye
+
+- id: T-12-063
+  rid: dzherelo-ye
+
+- id: T-13-046
+  rid: dzherelo-ye
+
+- id: T-13-016
+  rid: pozyciya
+  chomu: принцип відтворюваності при однаковому оточенні
+
+- id: T-14-062
+  rid: ne-tverdzhennya
+  chomu: таблиця
+
+- id: T-14-032
+  rid: pozyciya
+  chomu: практичний прийом використання ESPHome
+
+- id: T-15-029
+  rid: dzherelo-ye
+
+- id: T-16-081
+  rid: ne-tverdzhennya
+  chomu: список умов
+
+- id: T-17-071
+  rid: pozyciya
+  chomu: порада про неприцільну економію на швидкості
+
+- id: T-17-025
+  rid: ne-tverdzhennya
+
+- id: T-18-096
+  rid: dzherelo-ye
+
+- id: T-19-065
+  rid: dzherelo-ye
+
+- id: T-19-020
+  rid: dzherelo-ye
+
+- id: T-20-079
+  rid: ne-tverdzhennya
+
+- id: T-21-058
+  rid: pozyciya
+  chomu: порада про помітку плат для документації
+
+- id: T-21-097
+  rid: dzherelo-ye
+
+- id: T-22-008
+  rid: pozyciya
+  chomu: оцінка правила як надмірного
+
+- id: T-23-060
+  rid: ne-tverdzhennya

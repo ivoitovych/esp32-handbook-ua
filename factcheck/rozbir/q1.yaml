@@ -1,0 +1,245 @@
+- id: T-A-098
+  rid: ne-tverdzhennya
+
+- id: T-A-073
+  rid: ne-tverdzhennya
+
+- id: T-B-212
+  rid: dzherelo-ye
+  shukaty: BLE GATT caching specifications
+
+- id: T-B-259
+  rid: dzherelo-ye
+  shukaty: Strain relief and vibration specifications
+
+- id: T-B-087
+  rid: dzherelo-ye
+  shukaty: ESP32 sleep current specifications
+
+- id: T-C-076
+  rid: ne-tverdzhennya
+
+- id: T-D-108
+  rid: dzherelo-ye
+  shukaty: Panic trace analysis documentation
+
+- id: T-D-055
+  rid: ne-tverdzhennya
+
+- id: T-E-018
+  rid: dzherelo-ye
+  shukaty: DS3231 datasheet, I2C address
+
+- id: T-E-105
+  rid: dzherelo-ye
+  shukaty: One-wire protocol specifications, pull-up resistor values
+
+- id: T-G-087
+  rid: ne-tverdzhennya
+
+- id: T-G-125
+  rid: ne-tverdzhennya
+
+- id: T-G-174
+  rid: dzherelo-ye
+  shukaty: PWM duty cycle definitions, signal processing standards
+
+- id: T-G-054
+  rid: ne-tverdzhennya
+
+- id: T-H-010
+  rid: ne-tverdzhennya
+
+- id: T-Z-057
+  rid: ne-tverdzhennya
+
+- id: T-Z-003
+  rid: ne-tverdzhennya
+
+- id: T-COM-003
+  rid: dzherelo-ye
+  shukaty: Publishing standards for separate inserts
+
+- id: T-REG-028
+  rid: dzherelo-ye
+  shukaty: Radio frequency regulatory standards by region
+
+- id: T-K01-005
+  rid: ne-tverdzhennya
+
+- id: T-K02-005
+  rid: pozyciya
+  chomu: інструкція методу розбирання, рекомендація автора
+
+- id: T-K05-035
+  rid: pozyciya
+  chomu: авторська уточнення про критерії успіху
+
+- id: T-K08-019
+  rid: ne-tverdzhennya
+
+- id: T-K09-011
+  rid: dzherelo-ye
+  shukaty: ESP32 ADC2 specifications, Wi-Fi interference
+
+- id: T-K11-016
+  rid: pozyciya
+  chomu: авторський висновок про необхідність рівневого конвертера
+
+- id: T-K13-016
+  rid: dzherelo-ye
+  shukaty: ESP32 power supply specifications under load
+
+- id: T-K14-033
+  rid: dzherelo-ye
+  shukaty: PCB ground plane design principles
+
+- id: T-K15-044
+  rid: ne-tverdzhennya
+
+- id: T-00-088
+  rid: pozyciya
+  chomu: авторський поради про тлумачення датованого матеріалу
+
+- id: T-00-043
+  rid: pozyciya
+  chomu: авторське визнання про помилки і причини в довідниці
+
+- id: T-01-010
+  rid: dzherelo-ye
+  shukaty: Module certification status documentation
+
+- id: T-02-003
+  rid: pozyciya
+  chomu: авторське пояснення про рівень деталізації різних сімейств
+
+- id: T-02-146
+  rid: pozyciya
+  chomu: авторська оцінка значимості архітектури для різних типів кода
+
+- id: T-02-083
+  rid: pozyciya
+  chomu: авторське уточнення про причину відсутності функції
+
+- id: T-03-020
+  rid: pozyciya
+  chomu: авторська оцінка впливу на бюджет
+
+- id: T-04-129
+  rid: dzherelo-ye
+  shukaty: Hardware peripheral access documentation
+
+- id: T-04-056
+  rid: pozyciya
+  chomu: авторське оцінювання підходящості периферії для завдання
+
+- id: T-05-088
+  rid: dzherelo-ye
+  shukaty: Capacitor charge storage specifications
+
+- id: T-05-023
+  rid: dzherelo-ye
+  shukaty: ESP32 pin current output specifications
+
+- id: T-06-100
+  rid: pozyciya
+  chomu: авторська оцінка практичного впливу на тривалість роботи
+
+- id: T-06-032
+  rid: dzherelo-ye
+  shukaty: Power supply datasheet specifications and transient response
+
+- id: T-07-115
+  rid: pozyciya
+  chomu: авторське судження про достатність кількості GPIO
+
+- id: T-08-079
+  rid: pozyciya
+  chomu: авторська рекомендація про найшвидший метод
+
+- id: T-08-054
+  rid: pozyciya
+  chomu: авторське порівняння компромісів готових плат
+
+- id: T-09-097
+  rid: pozyciya
+  chomu: авторське рекомендація про найкращу практику при отладці незнайомого заліза
+
+- id: T-09-048
+  rid: dzherelo-ye
+  shukaty: Bridge board electrical isolation specifications
+
+- id: T-10-001
+  rid: ne-tverdzhennya
+
+- id: T-11-062
+  rid: pozyciya
+  chomu: авторське рекомендація про версійний контроль SDK файлів
+
+- id: T-11-001
+  rid: dzherelo-ye
+  shukaty: Espressif IoT Development Framework documentation
+
+- id: T-12-051
+  rid: ne-tverdzhennya
+
+- id: T-13-037
+  rid: pozyciya
+  chomu: авторське рекомендація про параметризацію плат у PlatformIO
+
+- id: T-13-077
+  rid: pozyciya
+  chomu: авторська оцінка надійності використання ESP-IDF безпосередньо
+
+- id: T-14-050
+  rid: ne-tverdzhennya
+
+- id: T-14-019
+  rid: pozyciya
+  chomu: авторське описання підходу без написання коду
+
+- id: T-15-018
+  rid: dzherelo-ye
+  shukaty: Stack and core control requirements documentation
+
+- id: T-16-005
+  rid: dzherelo-ye
+  shukaty: Bootloader behavior specifications
+
+- id: T-17-052
+  rid: dzherelo-ye
+  shukaty: esptool high-speed serial reading specifications
+
+- id: T-17-017
+  rid: pozyciya
+  chomu: авторське спостереження про версійну асиметрію в документації
+
+- id: T-18-084
+  rid: pozyciya
+  chomu: авторське спостереження про типову помилку при пошуку LittleFS
+
+- id: T-18-044
+  rid: dzherelo-ye
+  shukaty: Memory alignment build configuration specifications
+
+- id: T-19-094
+  rid: ne-tverdzhennya
+
+- id: T-20-065
+  rid: pozyciya
+  chomu: авторське діагностичне міркування про причини відмови
+
+- id: T-21-041
+  rid: dzherelo-ye
+  shukaty: Serial number uniqueness requirements for manufacturing
+
+- id: T-21-085
+  rid: ne-tverdzhennya
+
+- id: T-22-059
+  rid: pozyciya
+  chomu: авторська рекомендація про організацію сховища даних
+
+- id: T-22-040
+  rid: pozyciya
+  chomu: авторське пояснення мети базової лінії порівняння

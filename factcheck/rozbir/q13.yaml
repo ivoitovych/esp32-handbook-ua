@@ -1,0 +1,226 @@
+- id: T-A-012
+  rid: dzherelo-ye
+
+- id: T-A-086
+  rid: dzherelo-ye
+
+- id: T-B-228
+  rid: dzherelo-ye
+
+- id: T-B-041
+  rid: dzherelo-ye
+
+- id: T-B-160
+  rid: dzherelo-ye
+
+- id: T-C-092
+  rid: dzherelo-ye
+
+- id: T-D-150
+  rid: ne-tverdzhennya
+
+- id: T-E-119
+  rid: dzherelo-ye
+
+- id: T-E-063
+  rid: dzherelo-ye
+
+- id: T-E-118
+  rid: ne-tverdzhennya
+
+- id: T-G-098
+  rid: ne-tverdzhennya
+
+- id: T-G-136
+  rid: ne-tverdzhennya
+
+- id: T-G-025
+  rid: ne-tverdzhennya
+
+- id: T-G-066
+  rid: ne-tverdzhennya
+
+- id: T-H-025
+  rid: dzherelo-ye
+
+- id: T-Z-100
+  rid: ne-tverdzhennya
+
+- id: T-Z-166
+  rid: ne-tverdzhennya
+
+- id: T-COM-077
+  rid: ne-tverdzhennya
+
+- id: T-UA--009
+  rid: pozyciya
+  chomu: рекомендація як діяти, оцінка значущості
+
+- id: T-K01-034
+  rid: pozyciya
+  chomu: порада яким способом діяти
+
+- id: T-K03-019
+  rid: pozyciya
+  chomu: порада для діагностики
+
+- id: T-K06-035
+  rid: dzherelo-ye
+
+- id: T-K08-039
+  rid: pozyciya
+  chomu: порада яким способом діяти
+
+- id: T-K09-027
+  rid: ne-tverdzhennya
+
+- id: T-K12-010
+  rid: ne-tverdzhennya
+
+- id: T-K13-026
+  rid: pozyciya
+  chomu: порада про вартість і час
+
+- id: T-K15-013
+  rid: ne-tverdzhennya
+
+- id: T-00-058
+  rid: pozyciya
+  chomu: оцінка частотності проблеми
+
+- id: T-00-017
+  rid: ne-tverdzhennya
+
+- id: T-01-087
+  rid: dzherelo-ye
+
+- id: T-01-021
+  rid: dzherelo-ye
+
+- id: T-02-105
+  rid: pozyciya
+  chomu: порада про послідовність дій
+
+- id: T-02-016
+  rid: dzherelo-ye
+
+- id: T-03-057
+  rid: pozyciya
+  chomu: порада про вивід від налаштування
+
+- id: T-03-034
+  rid: ne-tverdzhennya
+
+- id: T-04-152
+  rid: pozyciya
+  chomu: оцінка обмеження проєкту
+
+- id: T-05-050
+  rid: ne-tverdzhennya
+
+- id: T-05-109
+  rid: pozyciya
+  chomu: оцінка значущості для конкретного випадку
+
+- id: T-06-050
+  rid: pozyciya
+  chomu: рекомендація і оцінка ефективності
+
+- id: T-06-113
+  rid: dzherelo-ye
+
+- id: T-06-045
+  rid: ne-tverdzhennya
+
+- id: T-07-136
+  rid: pozyciya
+  chomu: рекомендація як використовувати
+
+- id: T-08-016
+  rid: dzherelo-ye
+
+- id: T-09-068
+  rid: pozyciya
+  chomu: рекомендація дії
+
+- id: T-09-107
+  rid: pozyciya
+  chomu: оцінка того, що порт означає
+
+- id: T-10-049
+  rid: pozyciya
+  chomu: оцінка природи дефектів
+
+- id: T-10-026
+  rid: pozyciya
+  chomu: описання результату вибору налаштування
+
+- id: T-11-084
+  rid: pozyciya
+  chomu: оцінка корисності інтерфейсу
+
+- id: T-11-026
+  rid: pozyciya
+  chomu: рекомендація способу роботи
+
+- id: T-12-005
+  rid: dzherelo-ye
+
+- id: T-13-048
+  rid: pozyciya
+  chomu: оцінка важливості для конкретної платформи
+
+- id: T-13-018
+  rid: dzherelo-ye
+
+- id: T-14-064
+  rid: dzherelo-ye
+
+- id: T-14-034
+  rid: pozyciya
+  chomu: рекомендація послідовності розробки
+
+- id: T-15-031
+  rid: pozyciya
+  chomu: оцінка можливості залишити на старому API
+
+- id: T-16-084
+  rid: pozyciya
+  chomu: оцінка симптому
+
+- id: T-17-075
+  rid: pozyciya
+  chomu: оцінка частотності помилки
+
+- id: T-17-033
+  rid: dzherelo-ye
+
+- id: T-18-098
+  rid: ne-tverdzhennya
+
+- id: T-19-067
+  rid: pozyciya
+  chomu: оцінка ризику безпеки
+
+- id: T-19-023
+  rid: dzherelo-ye
+
+- id: T-20-082
+  rid: pozyciya
+  chomu: рекомендація про живлення
+
+- id: T-21-004
+  rid: pozyciya
+  chomu: оцінка методу прошивки для розробки та виробництва
+
+- id: T-21-001
+  rid: pozyciya
+  chomu: оцінка складності завдань
+
+- id: T-22-010
+  rid: pozyciya
+  chomu: рекомендація як фотографувати
+
+- id: T-23-062
+  rid: pozyciya
+  chomu: рекомендація способу діагностики

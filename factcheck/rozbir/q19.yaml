@@ -1,0 +1,263 @@
+- id: T-A-023
+  rid: pozyciya
+  chomu: порада про обмеження
+
+- id: T-B-187
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-B-237
+  rid: pozyciya
+  chomu: опис причини
+
+- id: T-B-059
+  rid: dzherelo-ye
+  shukaty: datasheet, параметр baudrate 74880
+
+- id: T-B-168
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці навігації
+
+- id: T-C-099
+  rid: ne-tverdzhennya
+  chomu: команда
+
+- id: T-D-043
+  rid: dzherelo-ye
+  shukaty: datasheet, код помилки 0xe
+
+- id: T-E-126
+  rid: ne-tverdzhennya
+  chomu: навігація на розділ
+
+- id: T-E-080
+  rid: dzherelo-ye
+  shukaty: W5500 datasheet, режим 0
+
+- id: T-F-002
+  rid: pozyciya
+  chomu: порада про офлайн
+
+- id: T-G-104
+  rid: ne-tverdzhennya
+  chomu: рядок словника
+
+- id: T-G-142
+  rid: ne-tverdzhennya
+  chomu: рядок словника
+
+- id: T-G-031
+  rid: ne-tverdzhennya
+  chomu: рядок словника
+
+- id: T-G-003
+  rid: ne-tverdzhennya
+  chomu: заголовок розділу
+
+- id: T-H-031
+  rid: pozyciya
+  chomu: рекомендація вибрати джерело
+
+- id: T-Z-111
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-COM-091
+  rid: pozyciya
+  chomu: список матеріалів для ремонту
+
+- id: T-REG-005
+  rid: pozyciya
+  chomu: опис методу проверки
+
+- id: T-UA--014
+  rid: pozyciya
+  chomu: порада про пошук
+
+- id: T-K01-040
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці навігації
+
+- id: T-K03-026
+  rid: pozyciya
+  chomu: спостереження про поведінку
+
+- id: T-K06-043
+  rid: dzherelo-ye
+  shukaty: datasheet, baudrate 115200
+
+- id: T-K08-048
+  rid: ne-tverdzhennya
+  chomu: навігація
+
+- id: T-K09-037
+  rid: pozyciya
+  chomu: спостереження про піни
+
+- id: T-K12-017
+  rid: dzherelo-ye
+  shukaty: номіналу резисторів і конденсаторів
+
+- id: T-K13-036
+  rid: pozyciya
+  chomu: оцінка
+
+- id: T-K15-018
+  rid: ne-tverdzhennya
+  chomu: навігація
+
+- id: T-00-065
+  rid: pozyciya
+  chomu: пояснення правила
+
+- id: T-00-023
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці класифікації
+
+- id: T-01-094
+  rid: pozyciya
+  chomu: архітектурні переваги
+
+- id: T-01-030
+  rid: pozyciya
+  chomu: область застосування
+
+- id: T-02-115
+  rid: pozyciya
+  chomu: спостереження про чипи
+
+- id: T-02-024
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet, частота 240
+
+- id: T-03-064
+  rid: pozyciya
+  chomu: опис підходу програмування
+
+- id: T-03-044
+  rid: pozyciya
+  chomu: спостереження про наслідок
+
+- id: T-04-018
+  rid: ne-tverdzhennya
+  chomu: заголовок розділу
+
+- id: T-05-060
+  rid: pozyciya
+  chomu: спостереження про цифровий вхід
+
+- id: T-05-115
+  rid: pozyciya
+  chomu: типова поведінка модулів
+
+- id: T-06-059
+  rid: ne-tverdzhennya
+  chomu: заголовок режиму
+
+- id: T-06-120
+  rid: dzherelo-ye
+  shukaty: datasheet, ефективність 85-95%
+
+- id: T-07-060
+  rid: pozyciya
+  chomu: спостереження про кнопку
+
+- id: T-07-032
+  rid: pozyciya
+  chomu: спостереження про залежність від модуля
+
+- id: T-08-026
+  rid: pozyciya
+  chomu: спостереження про плати
+
+- id: T-09-072
+  rid: ne-tverdzhennya
+  chomu: команда
+
+- id: T-09-001
+  rid: pozyciya
+  chomu: рамка викладу розділу
+
+- id: T-10-052
+  rid: pozyciya
+  chomu: порада про організацію
+
+- id: T-10-031
+  rid: pozyciya
+  chomu: порада про найменший спосіб
+
+- id: T-11-092
+  rid: pozyciya
+  chomu: спостереження про реєстр
+
+- id: T-11-034
+  rid: dzherelo-ye
+  shukaty: документація Arduino, період support 12 місяців
+
+- id: T-12-011
+  rid: pozyciya
+  chomu: оцінка нормальності
+
+- id: T-13-055
+  rid: pozyciya
+  chomu: опис можливості
+
+- id: T-13-027
+  rid: pozyciya
+  chomu: спостереження про версії
+
+- id: T-14-070
+  rid: pozyciya
+  chomu: рамка викладу про інструменти
+
+- id: T-15-058
+  rid: pozyciya
+  chomu: спостереження про залежності
+
+- id: T-15-038
+  rid: pozyciya
+  chomu: порада про наслідки
+
+- id: T-16-010
+  rid: ne-tverdzhennya
+  chomu: заголовок етапу
+
+- id: T-17-092
+  rid: pozyciya
+  chomu: спостереження про обов'язковість
+
+- id: T-18-058
+  rid: ne-tverdzhennya
+  chomu: код/команда
+
+- id: T-18-107
+  rid: pozyciya
+  chomu: спостереження про архітектурне рішення
+
+- id: T-19-073
+  rid: pozyciya
+  chomu: опис наступного рівня захисту
+
+- id: T-19-035
+  rid: pozyciya
+  chomu: спостереження про стан пристрою
+
+- id: T-20-093
+  rid: pozyciya
+  chomu: спостереження про діагностику
+
+- id: T-21-065
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-21-022
+  rid: pozyciya
+  chomu: спостереження про масштабованість
+
+- id: T-22-014
+  rid: pozyciya
+  chomu: порада про документування
+
+- id: T-23-073
+  rid: pozyciya
+  chomu: спостереження про виведення контактів

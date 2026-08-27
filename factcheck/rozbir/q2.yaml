@@ -1,0 +1,233 @@
+- id: T-A-099
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика — пінаут
+
+- id: T-A-074
+  rid: dzherelo-ye
+  shukaty: datasheet, pinout
+
+- id: T-B-213
+  rid: ne-tverdzhennya
+
+- id: T-B-260
+  rid: ne-tverdzhennya
+
+- id: T-B-088
+  rid: ne-tverdzhennya
+
+- id: T-C-079
+  rid: ne-tverdzhennya
+
+- id: T-D-022
+  rid: ne-tverdzhennya
+
+- id: T-D-060
+  rid: pozyciya
+  chomu: інтерпретація, пояснення феномену
+
+- id: T-E-019
+  rid: ne-tverdzhennya
+
+- id: T-E-106
+  rid: ne-tverdzhennya
+
+- id: T-G-004
+  rid: ne-tverdzhennya
+
+- id: T-G-126
+  rid: ne-tverdzhennya
+
+- id: T-G-175
+  rid: pozyciya
+  chomu: рекомендація щодо термінології
+
+- id: T-G-055
+  rid: ne-tverdzhennya
+
+- id: T-H-011
+  rid: ne-tverdzhennya
+
+- id: T-Z-058
+  rid: ne-tverdzhennya
+
+- id: T-Z-143
+  rid: ne-tverdzhennya
+
+- id: T-COM-045
+  rid: ne-tverdzhennya
+
+- id: T-REG-029
+  rid: pozyciya
+  chomu: інструкція щодо вимоги
+
+- id: T-K01-016
+  rid: pozyciya
+  chomu: порада щодо процесу перевірки
+
+- id: T-K02-006
+  rid: pozyciya
+  chomu: інструкція щодо спостереження
+
+- id: T-K05-037
+  rid: dzherelo-ye
+  shukaty: firmware flashing guide
+
+- id: T-K08-021
+  rid: ne-tverdzhennya
+
+- id: T-K09-012
+  rid: dzherelo-ye
+  shukaty: datasheet, GPIO pins
+
+- id: T-K11-019
+  rid: dzherelo-ye
+  shukaty: datasheet, hardware constraints
+
+- id: T-K13-018
+  rid: ne-tverdzhennya
+
+- id: T-K14-034
+  rid: dzherelo-ye
+  shukaty: circuit analysis reference
+
+- id: T-K15-045
+  rid: pozyciya
+  chomu: рекомендація щодо найважливіших деталей
+
+- id: T-00-089
+  rid: dzherelo-ye
+  shukaty: handbook introduction, minimum kit
+
+- id: T-00-044
+  rid: pozyciya
+  chomu: аналіз обмежень автоматики
+
+- id: T-01-011
+  rid: dzherelo-ye
+  shukaty: ESP32 hardware types
+
+- id: T-02-092
+  rid: pozyciya
+  chomu: судження щодо впливу на прикладний код
+
+- id: T-02-147
+  rid: ne-tverdzhennya
+
+- id: T-02-084
+  rid: dzherelo-ye
+  shukaty: Bluetooth profile compatibility, datasheet
+
+- id: T-03-021
+  rid: ne-tverdzhennya
+
+- id: T-04-131
+  rid: ne-tverdzhennya
+
+- id: T-04-057
+  rid: dzherelo-ye
+  shukaty: RMT peripheral, WS2812 LED control
+
+- id: T-05-089
+  rid: ne-tverdzhennya
+
+- id: T-05-024
+  rid: dzherelo-ye
+  shukaty: datasheet, GPIO electrical characteristics
+
+- id: T-06-101
+  rid: pozyciya
+  chomu: вимога до перевірки вимірюванням
+
+- id: T-06-033
+  rid: pozyciya
+  chomu: інтерпретація технічної характеристики
+
+- id: T-07-116
+  rid: ne-tverdzhennya
+
+- id: T-08-080
+  rid: pozyciya
+  chomu: оцінка придатності для одиничних виробів
+
+- id: T-08-055
+  rid: pozyciya
+  chomu: судження про якість клонів
+
+- id: T-09-098
+  rid: pozyciya
+  chomu: оцінка шкідливості дешевого хаба
+
+- id: T-09-050
+  rid: dzherelo-ye
+  shukaty: S3-DevKitC-1 documentation
+
+- id: T-10-002
+  rid: ne-tverdzhennya
+
+- id: T-11-063
+  rid: pozyciya
+  chomu: рекомендація щодо помилки
+
+- id: T-11-002
+  rid: dzherelo-ye
+  shukaty: handbook introduction, IDF section
+
+- id: T-12-052
+  rid: ne-tverdzhennya
+
+- id: T-13-038
+  rid: ne-tverdzhennya
+
+- id: T-13-009
+  rid: dzherelo-ye
+  shukaty: Arduino platform compatibility matrix
+
+- id: T-14-051
+  rid: ne-tverdzhennya
+
+- id: T-14-020
+  rid: ne-tverdzhennya
+
+- id: T-15-019
+  rid: ne-tverdzhennya
+
+- id: T-16-006
+  rid: dzherelo-ye
+  shukaty: ROM bootloader, datasheet
+
+- id: T-17-056
+  rid: ne-tverdzhennya
+
+- id: T-17-151
+  rid: pozyciya
+  chomu: оцінка, що це не працює на деяких клонах
+
+- id: T-18-085
+  rid: dzherelo-ye
+  shukaty: LittleFS component documentation
+
+- id: T-18-004
+  rid: pozyciya
+  chomu: оцінка складності й ризику
+
+- id: T-19-095
+  rid: dzherelo-ye
+  shukaty: OTA update mechanism, dual slots
+
+- id: T-20-066
+  rid: pozyciya
+  chomu: оцінка важливості кроку
+
+- id: T-21-042
+  rid: dzherelo-ye
+  shukaty: serial communication best practices
+
+- id: T-21-086
+  rid: ne-tverdzhennya
+
+- id: T-22-060
+  rid: pozyciya
+  chomu: вимога до формату назви
+
+- id: T-22-041
+  rid: ne-tverdzhennya

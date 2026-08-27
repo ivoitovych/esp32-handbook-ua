@@ -1,0 +1,263 @@
+- id: T-A-021
+  rid: dzherelo-ye
+  shukaty: Документація про strapping пінів
+
+- id: T-A-095
+  rid: pozyciya
+  chomu: Оцінна судження про вартість плутанини
+
+- id: T-B-233
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці симптомів, покажчик
+
+- id: T-B-048
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці помилок
+
+- id: T-B-167
+  rid: dzherelo-ye
+  shukaty: Окреме джерело про проблему Серво та падіння плати
+
+- id: T-C-098
+  rid: ne-tverdzhennya
+  chomu: Команда інструмента
+
+- id: T-D-157
+  rid: dzherelo-ye
+  shukaty: Документація про Task WDT
+
+- id: T-E-125
+  rid: pozyciya
+  chomu: Рекомендація як реалізувати WS2812
+
+- id: T-E-068
+  rid: dzherelo-ye
+  shukaty: Бібліотека RF24
+
+- id: T-F-001
+  rid: ne-tverdzhennya
+  chomu: Вступне питання розділу
+
+- id: T-G-103
+  rid: ne-tverdzhennya
+  chomu: Рядок глосарію
+
+- id: T-G-141
+  rid: ne-tverdzhennya
+  chomu: Рядок глосарію
+
+- id: T-G-030
+  rid: ne-tverdzhennya
+  chomu: Рядок глосарію
+
+- id: T-G-071
+  rid: ne-tverdzhennya
+  chomu: Рядок глосарію
+
+- id: T-H-030
+  rid: dzherelo-ye
+  shukaty: Programming Guide ESP32 вашої версії
+
+- id: T-Z-110
+  rid: ne-tverdzhennya
+  chomu: Рядок покажчика GPIO, перелік сторінок
+
+- id: T-COM-090
+  rid: pozyciya
+  chomu: Рекомендація що завжди закуповувати
+
+- id: T-COM-087
+  rid: pozyciya
+  chomu: Оцінка поріжу, судження про якість
+
+- id: T-UA--013
+  rid: pozyciya
+  chomu: Рекомендація купувати з запасом і перевіряти
+
+- id: T-K01-039
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці діагностики
+
+- id: T-K03-025
+  rid: pozyciya
+  chomu: Рекомендація-заборона не запускати через sudo
+
+- id: T-K06-041
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці помилок завантажувача
+
+- id: T-K08-045
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці з числовими даними
+
+- id: T-K09-036
+  rid: dzherelo-ye
+  shukaty: Технічна характеристика pinaV strapping
+
+- id: T-K12-016
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці інструментів
+
+- id: T-K13-033
+  rid: dzherelo-ye
+  shukaty: Технічне правило про живлення двигунів і серво
+
+- id: T-K15-017
+  rid: ne-tverdzhennya
+  chomu: Чекбокс з позначкою
+
+- id: T-00-064
+  rid: ne-tverdzhennya
+  chomu: Пояснення позначок і правила розчитування
+
+- id: T-00-022
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці шифру помилок
+
+- id: T-01-092
+  rid: pozyciya
+  chomu: Опис ролі контролера, практика
+
+- id: T-01-029
+  rid: pozyciya
+  chomu: Рекомендація беріть STM32 якщо потрібна гарантирована реакція
+
+- id: T-02-114
+  rid: dzherelo-ye
+  shukaty: Дані про відставання на ринку новых чипів і підтримки
+
+- id: T-02-022
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці даних про чипи
+
+- id: T-03-063
+  rid: pozyciya
+  chomu: Рекомендація оптимальної стратегії пробудження
+
+- id: T-03-043
+  rid: dzherelo-ye
+  shukaty: Технічна характеристика поведінки процесора
+
+- id: T-04-017
+  rid: pozyciya
+  chomu: Рекомендація звіряти з карткою, а не з інтуїцією
+
+- id: T-05-059
+  rid: pozyciya
+  chomu: Рекомендація тримати компоненти запасом
+
+- id: T-05-114
+  rid: dzherelo-ye
+  shukaty: Технічне правило електроніки про котушку й діод
+
+- id: T-06-058
+  rid: pozyciya
+  chomu: Рекомендація коли вимикати систему
+
+- id: T-06-119
+  rid: pozyciya
+  chomu: Оцінка прийнятності в залежності від джерела живлення
+
+- id: T-07-059
+  rid: dzherelo-ye
+  shukaty: Технічна характеристика pull-up резисторів
+
+- id: T-07-026
+  rid: pozyciya
+  chomu: Рекомендація діагностичного кроку
+
+- id: T-08-024
+  rid: ne-tverdzhennya
+  chomu: Визначення з таблиці типів інтерфейсів
+
+- id: T-09-007
+  rid: dzherelo-ye
+  shukaty: Опис архітектури моста USB-UART
+
+- id: T-09-013
+  rid: ne-tverdzhennya
+  chomu: Заголовок таблиці маркування
+
+- id: T-10-006
+  rid: ne-tverdzhennya
+  chomu: Елемент переліку вимірювань
+
+- id: T-10-003
+  rid: pozyciya
+  chomu: Висловлення принципу економії інструментів
+
+- id: T-11-090
+  rid: dzherelo-ye
+  shukaty: Дані про версійність компонентів у реєстрі
+
+- id: T-11-033
+  rid: ne-tverdzhennya
+  chomu: Заголовок таблиці перевірки версії
+
+- id: T-12-002
+  rid: dzherelo-ye
+  shukaty: Архітектура платформи Arduino для ESP32
+
+- id: T-13-054
+  rid: pozyciya
+  chomu: Висловлення переваги для виробничої практики
+
+- id: T-13-003
+  rid: pozyciya
+  chomu: Метависказування про нетипову ситуацію
+
+- id: T-14-069
+  rid: ne-tverdzhennya
+  chomu: Рядок таблиці порівняння платформ
+
+- id: T-15-057
+  rid: ne-tverdzhennya
+  chomu: Заголовок розділу з переліком ресурсів
+
+- id: T-15-037
+  rid: pozyciya
+  chomu: Рекомендація порядку дій для діагностики
+
+- id: T-16-095
+  rid: pozyciya
+  chomu: Оцінка значення діагностичної інформації
+
+- id: T-17-090
+  rid: ne-tverdzhennya
+  chomu: Опис функції команди
+
+- id: T-18-055
+  rid: pozyciya
+  chomu: Висловлення про прийнятність практики
+
+- id: T-18-106
+  rid: dzherelo-ye
+  shukaty: Наслідки несумісності розбивки з прошивкою
+
+- id: T-19-072
+  rid: dzherelo-ye
+  shukaty: Технічна інформація про управління сертифікатами
+
+- id: T-19-034
+  rid: dzherelo-ye
+  shukaty: Описання гіршого сценарію OTA оновлення
+
+- id: T-20-092
+  rid: dzherelo-ye
+  shukaty: Методологія аналізу boot loop за дампом логу
+
+- id: T-21-064
+  rid: ne-tverdzhennya
+  chomu: Заголовок таблиці серійних номерів і дат
+
+- id: T-21-021
+  rid: pozyciya
+  chomu: Рекомендація узяти значення з sdkconfig
+
+- id: T-22-013
+  rid: ne-tverdzhennya
+  chomu: Твердження про властивість DIP-перемикачів
+
+- id: T-23-071
+  rid: pozyciya
+  chomu: Рекомендація що потрібно знати перед призначенням піна

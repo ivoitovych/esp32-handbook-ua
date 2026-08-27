@@ -1,0 +1,261 @@
+- id: T-A-017
+  rid: ne-tverdzhennya
+
+- id: T-A-092
+  rid: dzherelo-ye
+  shukaty: технічна специфікація драйвера
+  chomu: твердження про функцію конкретного драйвера
+
+- id: T-B-231
+  rid: dzherelo-ye
+  shukaty: документація malloc або системна поведінка пам'яті
+  chomu: технічна причина-наслідок помилки
+
+- id: T-B-046
+  rid: dzherelo-ye
+  shukaty: технічна документація або аналіз помилок
+  chomu: твердження про причину помилки magic byte
+
+- id: T-B-165
+  rid: ne-tverdzhennya
+
+- id: T-C-096
+  rid: ne-tverdzhennya
+
+- id: T-D-154
+  rid: dzherelo-ye
+  shukaty: документація або технічний розпис пам'яті
+  chomu: твердження про адреси пам'яті й структури
+
+- id: T-E-123
+  rid: ne-tverdzhennya
+
+- id: T-E-066
+  rid: ne-tverdzhennya
+
+- id: T-F-005
+  rid: ne-tverdzhennya
+
+- id: T-G-101
+  rid: ne-tverdzhennya
+
+- id: T-G-139
+  rid: ne-tverdzhennya
+
+- id: T-G-028
+  rid: ne-tverdzhennya
+
+- id: T-G-069
+  rid: ne-tverdzhennya
+
+- id: T-H-028
+  rid: pozyciya
+  chomu: оцінка швидкості, судження автора
+
+- id: T-Z-009
+  rid: ne-tverdzhennya
+
+- id: T-Z-194
+  rid: ne-tverdzhennya
+
+- id: T-COM-005
+  rid: ne-tverdzhennya
+
+- id: T-UA--012
+  rid: pozyciya
+  chomu: характеристика мережі, судження що там можна знайти
+
+- id: T-K01-037
+  rid: ne-tverdzhennya
+
+- id: T-K03-023
+  rid: ne-tverdzhennya
+
+- id: T-K06-039
+  rid: dzherelo-ye
+  shukaty: документація поведінки застосунку або логування
+  chomu: твердження про технічний стан системи
+
+- id: T-K08-043
+  rid: ne-tverdzhennya
+
+- id: T-K09-034
+  rid: pozyciya
+  chomu: порада про пріоритет, судження автора про важливість
+
+- id: T-K12-014
+  rid: ne-tverdzhennya
+
+- id: T-K13-030
+  rid: pozyciya
+  chomu: рекомендація як знизити споживання
+
+- id: T-K15-015
+  rid: ne-tverdzhennya
+
+- id: T-00-061
+  rid: ne-tverdzhennya
+
+- id: T-00-020
+  rid: ne-tverdzhennya
+
+- id: T-01-090
+  rid: dzherelo-ye
+  shukaty: технічна специфікація мікроконтролерів цього класу
+  chomu: твердження про наявність або відсутність проблем
+
+- id: T-01-027
+  rid: pozyciya
+  chomu: оцінка того, що відрізняє довідник від реклами
+
+- id: T-02-110
+  rid: dzherelo-ye
+  shukaty: документація ESP32-C61
+  chomu: технічна характеристика чипа
+
+- id: T-02-019
+  rid: ne-tverdzhennya
+
+- id: T-03-061
+  rid: dzherelo-ye
+  shukaty: поточні характеристики ESP32
+  chomu: технічна специфікація споживання
+
+- id: T-03-041
+  rid: dzherelo-ye
+  shukaty: архітектура ESP32, флеш і кеш
+  chomu: твердження про розміщення коду й виконання
+
+- id: T-04-001
+  rid: dzherelo-ye
+  shukaty: технічна документація периферії
+  chomu: визначення функцій апаратних блоків
+
+- id: T-05-055
+  rid: dzherelo-ye
+  shukaty: технічна специфікація дільників
+  chomu: твердження про придатність для певних сигналів
+
+- id: T-05-112
+  rid: dzherelo-ye
+  shukaty: схеми захисту від зворотних імпульсів
+  chomu: технічне рішення з конкретним компонентом (1N4007)
+
+- id: T-06-053
+  rid: pozyciya
+  chomu: рекомендація про живлення й знизження споживання
+
+- id: T-06-116
+  rid: dzherelo-ye
+  shukaty: технічна характеристика плат розробки
+  chomu: твердження про наявність LDO на платах
+
+- id: T-06-048
+  rid: pozyciya
+  chomu: оцінка якості стабілізатора на клонах
+
+- id: T-07-023
+  rid: pozyciya
+  chomu: судження про важливість наслідку для діагностики
+
+- id: T-08-021
+  rid: pozyciya
+  chomu: оцінка того, що кожна з п'яти речей важлива
+
+- id: T-09-005
+  rid: dzherelo-ye
+  shukaty: технічна документація UART
+  chomu: визначення інтерфейсу й його характеристик
+
+- id: T-09-111
+  rid: pozyciya
+  chomu: порада проти використання sudo, судження про наслідки
+
+- id: T-10-004
+  rid: pozyciya
+  chomu: рекомендація й оцінка важливості мультиметра
+
+- id: T-10-029
+  rid: ne-tverdzhennya
+
+- id: T-11-089
+  rid: dzherelo-ye
+  shukaty: як git забезпечує відтворюваність проєкту
+  chomu: твердження про роль файлу в git
+
+- id: T-11-004
+  rid: pozyciya
+  chomu: судження про причину вибору
+
+- id: T-12-009
+  rid: dzherelo-ye
+  shukaty: документація FreeRTOS, структура loop
+  chomu: технічне пояснення про стек і пріоритет
+
+- id: T-13-052
+  rid: ne-tverdzhennya
+
+- id: T-13-024
+  rid: dzherelo-ye
+  shukaty: таблиця версій, Arduino 2.x
+  chomu: твердження про версію й підтримку чипів
+
+- id: T-14-067
+  rid: pozyciya
+  chomu: оцінка придатності MicroPython
+
+- id: T-15-004
+  rid: pozyciya
+  chomu: судження про найкоротший шлях до результату
+
+- id: T-15-035
+  rid: pozyciya
+  chomu: рекомендація уникнути помилки
+
+- id: T-16-089
+  rid: pozyciya
+  chomu: порада не дивитися код без вимірювання напруги
+
+- id: T-17-085
+  rid: pozyciya
+  chomu: рекомендація про точність й безпеку
+
+- id: T-17-039
+  rid: dzherelo-ye
+  shukaty: як esptool обробляє сімейство й ревізію
+  chomu: технічне пояснення поведінки
+
+- id: T-18-103
+  rid: pozyciya
+  chomu: рекомендація взяти готову розбивку
+
+- id: T-19-069
+  rid: dzherelo-ye
+  shukaty: технічні вимоги до OTA - HTTPS, сертифікат
+  chomu: твердження про мінімум для безпеки
+
+- id: T-19-032
+  rid: pozyciya
+  chomu: оцінка вартості місця проти поїздки
+
+- id: T-20-090
+  rid: dzherelo-ye
+  shukaty: як дамп забезпечує оборотність операцій
+  chomu: твердження про унікальну роль дампу
+
+- id: T-21-062
+  rid: dzherelo-ye
+  shukaty: фізичний устрій корпусу, наліпки
+  chomu: фактичне твердження про те, чого не може бути
+
+- id: T-21-016
+  rid: pozyciya
+  chomu: судження про можливість передати операцію людині
+
+- id: T-22-002
+  rid: pozyciya
+  chomu: оцінка цінності моменту й можливості фіксації
+
+- id: T-23-069
+  rid: pozyciya
+  chomu: рекомендація про послідовність операцій
