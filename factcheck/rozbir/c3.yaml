@@ -1,263 +1,195 @@
 - id: T-B-201
   rid: pozyciya
   chomu: дія, рекомендація щодо поведінки при проблемі
-
 - id: T-G-160
   rid: ne-tverdzhennya
   chomu: рядок глосарія — розшифровка абревіатури
-
 - id: T-K07-029
   rid: dzherelo-ye
   shukaty: ESP-IDF Programming Guide, розділ про .elf файли та символи
-
 - id: T-02-129
   rid: pozyciya
   chomu: рекомендація щодо вибору чипа для батарейки
-
 - id: T-08-067
   rid: pozyciya
   chomu: совіт перевірити boot-лог при діагностиці
-
 - id: T-14-040
   rid: pozyciya
   chomu: авторське судження про найкращий спосіб поділитися проєктом
-
-- id: T-20-025
-  rid: ne-tverdzhennya
-  chomu: посилання на розділ, навігація в текстові
-
 - id: T-23-032
   rid: ne-tverdzhennya
   chomu: інструкція, порядок дій при діагностиці
-
 - id: T-24-045
   rid: pozyciya
   chomu: авторське судження про найшвидший спосіб зрозуміти функціонал
-
 - id: T-24-065
   rid: dzherelo-ye
   shukaty: ESP32 datasheet, розмір флеш-пам'яті
-
 - id: T-24-023
   rid: dzherelo-ye
   shukaty: ESP-IDF, інформація про версію та дату збирання
-
 - id: T-25-054
   rid: dzherelo-ye
   shukaty: ESP-IDF Programming Guide, поведінка компілятора щодо видалення коду
-
 - id: T-25-089
   rid: pozyciya
   chomu: совіт щодо місця пошуку помилки при синхронізації
-
 - id: T-25-102
   rid: pozyciya
   chomu: рекомендація щодо оптимального рівня логування
-
 - id: T-26-049
   rid: pozyciya
   chomu: авторське судження про корисність нижніх лог-рядків
-
 - id: T-26-084
   rid: dzherelo-ye
   shukaty: ESP32 datasheet, характеристика піку споживання струму при ввімкненні радіо
-
 - id: T-26-118
   rid: dzherelo-ye
   shukaty: ESP-IDF Technical Reference, значення регістра EXCVADDR
-
 - id: T-26-036
   rid: ne-tverdzhennya
   chomu: інструкція, метод завантаження логу з іншого пристрою
-
 - id: T-27-010
   rid: pozyciya
   chomu: авторське спостереження про еволюцію налагодження JTAG
-
 - id: T-28-057
   rid: dzherelo-ye
   shukaty: Oscilloscope Manual, технічна характеристика входу
-
 - id: T-28-075
   rid: pozyciya
   chomu: совіт використання світлодіода для діагностики
-
 - id: T-28-025
   rid: dzherelo-ye
   shukaty: Multimeter Technical Reference, метод вимірювання статики
-
 - id: T-28-053
   rid: dzherelo-ye
   shukaty: Oscilloscope Reference Manual, вимірювання форми сигналу
-
 - id: T-29-060
   rid: ne-tverdzhennya
   chomu: посилання на розділ, навігація в текстові
-
 - id: T-29-090
   rid: dzherelo-ye
   shukaty: Debugging Guide, поняття про стабільно відтворюваний збій
-
 - id: T-29-013
   rid: pozyciya
   chomu: рекомендація щодо встановлення драйверу USB-мосту
-
 - id: T-30-042
   rid: dzherelo-ye
   shukaty: Memory Management Guide, визначення фрагментації пам'яті
-
 - id: T-30-076
   rid: dzherelo-ye
   shukaty: ESP32 datasheet, характеристика обмеженості IRAM
-
 - id: T-30-101
   rid: pozyciya
   chomu: рекомендація перевіряти результат malloc
-
 - id: T-30-035
   rid: dzherelo-ye
   shukaty: FreeRTOS API Reference, поведінка функції отримання мінімуму пам'яті
-
 - id: T-31-063
   rid: pozyciya
   chomu: рекомендація щодо довжини ISR
-
 - id: T-31-097
   rid: pozyciya
   chomu: правило щодо структури ISR — мінімум операцій
-
 - id: T-31-030
   rid: dzherelo-ye
   shukaty: ESP-IDF Programming Guide, розподіл ядер та розташування app_main
-
 - id: T-32-068
   rid: ne-tverdzhennya
   chomu: шапка таблиці порівняння методів вимірювання точності
-
 - id: T-32-001
   rid: pozyciya
   chomu: авторське спостереження про різницю між прототипом та виробом
-
 - id: T-33-044
   rid: ne-tverdzhennya
   chomu: рядок коду — приклад синтаксису
-
 - id: T-33-075
   rid: pozyciya
   chomu: авторське судження про правильний спосіб читання ІЧ-пультів
-
 - id: T-33-106
   rid: pozyciya
   chomu: совіт щодо довжини проводів для якості сигналу
-
 - id: T-33-035
   rid: dzherelo-ye
   shukaty: ESP32 datasheet, призначення апаратних таймерів
-
 - id: T-34-058
   rid: dzherelo-ye
   shukaty: UART Protocol Reference, можливість контролю посилки та контрольної суми
-
 - id: T-34-002
   rid: pozyciya
   chomu: авторське судження про простоту UART
-
 - id: T-35-006
   rid: dzherelo-ye
   shukaty: I2C Specification, фізична природа pull-up резисторів
-
 - id: T-35-086
   rid: pozyciya
   chomu: совіт щодо діагностики — залишити один пристрій
-
 - id: T-35-038
   rid: pozyciya
   chomu: авторське судження про заміну логічного аналізатора
-
 - id: T-36-083
   rid: dzherelo-ye
   shukaty: ESP32 SPI Driver API Reference, автоматичне керування CS
-
 - id: T-36-118
   rid: pozyciya
   chomu: совіт щодо перевірки CS на аналізаторі
-
 - id: T-36-027
   rid: ne-tverdzhennya
   chomu: рядок таблиці — стан сигналу в спокої
-
 - id: T-36-058
   rid: pozyciya
   chomu: авторське спостереження про ціну навичок
-
 - id: T-37-007
   rid: dzherelo-ye
   shukaty: One-Wire Sensor Reference, датчик температури DS18B20
-
 - id: T-37-033
   rid: dzherelo-ye
   shukaty: Sensor Calibration Guide, процес калібрування датчиків
-
 - id: T-38-069
   rid: pozyciya
   chomu: рекомендація щодо спільної землі в CAN-шині
-
 - id: T-38-012
   rid: dzherelo-ye
   shukaty: CAN Protocol Reference, приклад ідентифікатора повідомлення
-
 - id: T-38-040
   rid: ne-tverdzhennya
   chomu: рядок коду — приклад синтаксису DLC
-
 - id: T-39-066
   rid: ne-tverdzhennya
   chomu: рядок таблиці — рівень сигналу та якість Wi-Fi
-
 - id: T-39-089
   rid: pozyciya
   chomu: рекомендація щодо зменшення частоти передавання для економії енергії
-
 - id: T-39-023
   rid: dzherelo-ye
   shukaty: IEEE 802.11, обмеження одного каналу одночасно
-
 - id: T-40-053
   rid: dzherelo-ye
   shukaty: MQTT Protocol Specification, архітектура брокера та топіків
-
 - id: T-40-076
   rid: dzherelo-ye
   shukaty: MQTT Security Specification, вразливість при незашифрованому обміні
-
 - id: T-40-096
   rid: ne-tverdzhennya
   chomu: рядок таблиці — порівняння методів доступу до пристрою
-
 - id: T-40-024
   rid: dzherelo-ye
   shukaty: REST API Reference Manual, затримки опитування
-
 - id: T-41-053
   rid: pozyciya
   chomu: рекомендація вимикати BLE коли не треба для економії пам'яті
-
 - id: T-41-073
   rid: dzherelo-ye
   shukaty: Bluetooth Specification, управління параметрами з'єднання з боку телефону
-
 - id: T-41-016
   rid: ne-tverdzhennya
   chomu: рядок таблиці — порівняння споживання Bluetooth Classic та BLE
-
 - id: T-41-036
   rid: dzherelo-ye
   shukaty: Bluetooth GATT Specification, стандартизація BLE UART сервісу
-
 - id: T-42-049
   rid: dzherelo-ye
   shukaty: ESP-NOW Security Reference, вразливість до прослуховування та спуфінгу
-
 - id: T-42-068
   rid: pozyciya
   chomu: рекомендація щодо фіксації каналу при використанні ESP-NOW

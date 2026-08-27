@@ -1,277 +1,192 @@
-# Розбір одиниць без документа — 66 позицій, 10 за раз
-
-- id: T-A-054
-  rid: ne-tverdzhennya
-  chomu: обмеження в картці розпиновки (таблиця)
-
 - id: T-G-114
   rid: ne-tverdzhennya
   chomu: рядок глосарію
-
 - id: T-K04-021
   rid: dzherelo-ye
   shukaty: ESP32 datasheet або даташит мікросхеми завантажувача — режим download mode поведінка
-
 - id: T-01-050
   rid: ne-tverdzhennya
   chomu: рядок порівняльної таблиці платформ (RAM)
-
-- id: T-07-085
-  rid: ne-tverdzhennya
-  chomu: описання однієї з діагностичних ознак (у контексті усталеного списку)
-
 - id: T-13-064
   rid: pozyciya
   chomu: рекомендація до практики (не змішувати у одному вікні)
-
 - id: T-20-047
   rid: dzherelo-ye
   shukaty: ESP32 Series Datasheet — сумісність дампів між сімействами
-
 - id: T-23-029
   rid: pozyciya
   chomu: переквалифікація діагностичної ознаки (заголовок з тире, авторське судження)
-
 - id: T-24-006
   rid: pozyciya
   chomu: установка роботи з файлом замість пристрою (авторська рамка викладу)
-
 - id: T-24-063
   rid: dzherelo-ye
   shukaty: ESP-IDF Technical Reference Manual — образи прошивки й їх точність
-
-# Друга партія (11–20)
-
 - id: T-24-020
   rid: ne-tverdzhennya
   chomu: рядок коду/команди (приклад синтаксису)
-
 - id: T-25-051
   rid: dzherelo-ye
   shukaty: ESP-IDF вихідний код або документація — конвенція TAG у логуванні
-
 - id: T-25-087
   rid: pozyciya
   chomu: описання класичної пастки в отладці (авторське спостереження)
-
 - id: T-25-019
   rid: ne-tverdzhennya
   chomu: описання вихідного формату інструмента (PuTTY)
-
 - id: T-25-043
   rid: pozyciya
   chomu: авторське розрізнення практик по часу роботи
-
 - id: T-26-081
   rid: ne-tverdzhennya
   chomu: вступ до переліку помилок (навігаційна фраза)
-
 - id: T-26-116
   rid: pozyciya
   chomu: визначення й практичний висновок про відтворювальність (авторське судження)
-
 - id: T-26-033
   rid: ne-tverdzhennya
   chomu: висновок про властивість об'єкту (адреси) у контексті технічного списку
-
 - id: T-27-071
   rid: pozyciya
   chomu: оцінка ситуації як рідкої, але реальної (авторське судження)
-
 - id: T-27-043
   rid: pozyciya
   chomu: порівняння інструментів за вартістю (лог дешевше JTAG для більшості задач)
-
-# Третя партія (21–30)
-
 - id: T-28-073
   rid: ne-tverdzhennya
   chomu: рядок переліку варіантів налагодження (пункт списку)
-
 - id: T-28-021
   rid: ne-tverdzhennya
   chomu: пункт переліку можливих несправностей (навігація/структура)
-
 - id: T-28-049
   rid: dzherelo-ye
   shukaty: Sampling Reference — частота вибірки щонайменше вчетверо
-
 - id: T-29-058
   rid: pozyciya
   chomu: практична рекомендація до аналогових вимірювань (авторське судження)
-
 - id: T-29-087
   rid: ne-tverdzhennya
   chomu: короткий висновок у контексті списку діагностики (вставка інформації)
-
 - id: T-29-105
   rid: pozyciya
   chomu: практична рекомендація (мінімальний приклад як метод розділення проблем)
-
 - id: T-30-039
   rid: pozyciya
   chomu: аналіз часових залежностей між причиною й симптомом (авторське розуміння)
-
 - id: T-30-071
   rid: dzherelo-ye
   shukaty: ESP32 Series Datasheet, Memory Architecture — виконання з флешу через кеш
-
 - id: T-30-099
   rid: dzherelo-ye
   shukaty: FreeRTOS Kernel reference manual — динамічне виділення пам'яті й фрагментація
-
 - id: T-30-032
   rid: pozyciya
   chomu: практична рекомендація щодо розташування буферів (уникати стеку для великих структур)
-
-# Четверта партія (31–40)
-
 - id: T-31-058
   rid: ne-tverdzhennya
   chomu: визначення терміна в контексті FreeRTOS
-
 - id: T-31-095
   rid: ne-tverdzhennya
   chomu: авторське визначення поведінки високого пріоритету у планувальнику
-
 - id: T-31-027
   rid: ne-tverdzhennya
   chomu: висновок про поведінку планувальника (вставка пояснення)
-
 - id: T-32-066
   rid: dzherelo-ye
   shukaty: FreeRTOS Kernel reference manual — interrupt priority levels
-
 - id: T-32-089
   rid: pozyciya
   chomu: практичне розуміння watchdog як інструмента (коли й як його "годувати")
-
 - id: T-33-042
   rid: ne-tverdzhennya
   chomu: рядок коду прикладу
-
 - id: T-33-071
   rid: pozyciya
   chomu: авторське уточнення про довільність номера піна в прикладах
-
 - id: T-33-103
   rid: ne-tverdzhennya
   chomu: короткий висновок у контексті порівняння методів
-
 - id: T-33-029
   rid: ne-tverdzhennya
   chomu: вступ до переліку варіантів для задач (навігаційна фраза)
-
 - id: T-34-006
   rid: pozyciya
   chomu: рекомендація щодо використання UART (втрачення можливостей при перепризначенні)
-
-# П'ята партія (41–50)
-
 - id: T-34-015
   rid: ne-tverdzhennya
   chomu: рядок коду конфігурації
-
 - id: T-35-046
   rid: ne-tverdzhennya
   chomu: вставка інформації про датчики (пункт переліку)
-
 - id: T-35-084
   rid: ne-tverdzhennya
   chomu: пункт переліку інструментів для діагностики
-
 - id: T-35-035
   rid: ne-tverdzhennya
   chomu: описання функції сканера (пояснення в контексті)
-
 - id: T-36-010
   rid: ne-tverdzhennya
   chomu: рядок таблиці назв сигналів SPI
-
 - id: T-36-116
   rid: ne-tverdzhennya
   chomu: пункт переліку вимог до підключення
-
 - id: T-36-025
   rid: ne-tverdzhennya
   chomu: рядок таблиці/картки конфігурації SPI
-
 - id: T-36-051
   rid: pozyciya
   chomu: авторське уточнення про інтерпретацію неправильної конфігурації (як симптом)
-
 - id: T-37-056
   rid: pozyciya
   chomu: рекомендація до монтажу й експлуатації датчиків (авторське судження)
-
 - id: T-37-032
   rid: dzherelo-ye
   shukaty: 1-Wire protocol specification — пошук датчиків за адресами
-
-# Шоста партія (51–60)
-
 - id: T-38-065
   rid: pozyciya
   chomu: розпізнання найчастішої помилки при запуску CAN (авторське спостереження)
-
 - id: T-38-087
   rid: dzherelo-ye
   shukaty: ISO 11898 CAN specification — ACK bit і підтвердження пакетів
-
 - id: T-38-035
   rid: dzherelo-ye
   shukaty: ISO 11898 CAN specification — baud rate на всіх вузлах
-
 - id: T-39-064
   rid: ne-tverdzhennya
   chomu: рядок коду логування
-
 - id: T-39-087
   rid: ne-tverdzhennya
   chomu: визначення режиму Modem sleep у WiFi контексту
-
 - id: T-39-021
   rid: dzherelo-ye
   shukaty: WPA3 specification — сумісність із WPA2 пристроями
-
 - id: T-40-051
   rid: dzherelo-ye
   shukaty: MQTT specification — легкість й надійність протоколу
-
 - id: T-40-074
   rid: pozyciya
   chomu: авторське описання автоматичного виявлення мертвих вузлів (функціональна особливість)
-
 - id: T-40-094
   rid: ne-tverdzhennya
   chomu: рядок таблиці порівняння протоколів
-
 - id: T-40-022
   rid: ne-tverdzhennya
   chomu: описання технічного вибору між варіантами (вставка пояснення)
-
-# Сьома партія (61–66)
-
 - id: T-41-051
   rid: pozyciya
   chomu: рекомендація щодо обмежень одночасної роботи BLE
-
 - id: T-41-069
   rid: ne-tverdzhennya
   chomu: описання типових застосунків для розробки (пункт переліку)
-
 - id: T-41-015
   rid: ne-tverdzhennya
   chomu: рядок таблиці швидкостей протоколів
-
 - id: T-41-034
   rid: dzherelo-ye
   shukaty: Bluetooth Core Specification — standard 16-bit vs custom 128-bit UUIDs
-
 - id: T-42-047
   rid: ne-tverdzhennya
   chomu: рядок коду ESP-NOW
-
 - id: T-42-006
   rid: ne-tverdzhennya
   chomu: висновок про функціональність ESP-NOW у контексті переліку

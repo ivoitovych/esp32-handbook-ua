@@ -2,13 +2,8 @@
   rid: ne-tverdzhennya
 - id: T-Z-030
   rid: ne-tverdzhennya
-- id: T-K12-025
-  rid: ne-rozibrav
 - id: T-04-071
   rid: ne-tverdzhennya
-- id: T-09-035
-  rid: pozyciya
-  chomu: історичне спостереження про поведінку драйверів
 - id: T-15-049
   rid: pozyciya
   chomu: судження про порівняльні характеристики
