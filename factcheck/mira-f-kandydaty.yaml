@@ -593,6 +593,97 @@
     '
   verdykt: pidtverdzheno
   zvidky: H6-p29
+- nazva: T-54-060
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/README.md
+  cytata: 'ESP-IDF and ROM code are specific to each {IDF_TARGET_NAME} chip
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p30
+- nazva: T-55-051
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/README.md
+  cytata: 'esptool uploads a small flasher stub program to the chip to improve flashing
+    performance and work around ROM bootloader limitations.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p30
+- nazva: T-56-039
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+  cytata: 'The format argument can be dynamic and set as a variable, allowing greater
+    flexibility in constructing log messages.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p31
+- nazva: T-56-051
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+  cytata: 'Logging library provides a flexible logging system
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p31
+- nazva: T-57-041
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'The OTA update mechanism allows a device to update itself
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p31
+- nazva: T-57-057
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'OTA requires configuring the partition tables of the device with at least
+    two OTA app slot partitions (i.e., ota_0 and ota_1) and an OTA Data Partition.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p31
+- nazva: T-58-028
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+  cytata: 'Logging library provides a wide range of macros to accommodate various
+    use cases, from general-purpose logging to early startup
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p31
+- nazva: T-58-062
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'OTA update mechanism allows a device to update itself. The update process...
+    is designed to be resilient, ensuring that even if the power is cut off during
+    the update, the chip will remain operational.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p32
+- nazva: T-59-033
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_common/include/esp_err.h
+  cytata: '#define ESP_ERROR_CHECK(x) do { esp_err_t err_rc_ = (x); if (unlikely(err_rc_
+    != ESP_OK)) { _esp_error_check_failed(...); } } while(0)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p32
+- nazva: T-59-038
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  cytata: 'I2C (Inter-Integrated Circuit) is a widely used communication protocol
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p32
+- nazva: T-59-042
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  cytata: 'I2C (Inter-Integrated Circuit) is a widely used communication protocol
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p32
+- nazva: T-60-009
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/spiffs.rst
+  cytata: 'SPIFFS is a file system intended for small embedded devices
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p32
 - nazva: T-60-100
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/storage/spiffs/main/spiffs_example_main.c
   cytata: 'fclose(f);
@@ -614,6 +705,97 @@
     '
   verdykt: pidtverdzheno
   zvidky: H7-p34
+- nazva: T-63-041
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/http_server/simple/main/main.c
+  cytata: 'listen(listen_sock, 1);
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p36
+- nazva: T-A-013
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/esp32/adc_ll.h
+  cytata: 'ADC2_2
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p36
+- nazva: T-A-034
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/esp32/adc_ll.h
+  cytata: 'ADC2_6
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p36
+- nazva: T-A-038
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/esp32/adc_ll.h
+  cytata: 'ADC2_3
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p37
+- nazva: T-A-053
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/esp32/adc_ll.h
+  cytata: 'ADC1 — працює при Wi-Fi
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p37
+- nazva: T-A-058
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/esp32/adc_ll.h
+  cytata: 'ADC2
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p37
+- nazva: T-A-062
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/miscellaneous/system_time.rst
+  cytata: 'strapping
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p37
+- nazva: T-A-067
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/esp32-s3_devkitc-1/user_guide.rst
+  cytata: 'флеш/PSRAM на Octal-модулях
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p37
+- nazva: T-A-069
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/esp32-s3_devkitc-1/user_guide.rst
+  cytata: 'strapping
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p38
+- nazva: T-B-071
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'просіло живлення
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p38
+- nazva: T-B-150
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/esp32/adc_ll.h
+  cytata: 'ADC шумить
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p38
+- nazva: T-B-189
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
+  cytata: '2.4
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p38
+- nazva: T-B-199
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_http_client.rst
+  cytata: 'OTA
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p38
 - nazva: T-B-206
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
   cytata: the channels of the devices are not the same
@@ -631,3 +813,105 @@
     esp32h21
   verdykt: pidtverdzheno
   zvidky: H8-p41
+- nazva: T-E-128
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: LED control (LEDC) peripheral can also be used to generate PWM signals for
+    other purposes
+  verdykt: pidtverdzheno
+  zvidky: H9-p45
+- nazva: T-E-140
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
+  cytata: 'MCPWM turns a counter into accurately timed output edges. It is a good
+    fit when an LEDC-style PWM is no longer enough: motor bridges need complementary
+    outputs and dead time'
+  verdykt: pidtverdzheno
+  zvidky: H9-p45
+- nazva: T-H-020
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/SUPPORT_POLICY.md
+  cytata: Each ESP-IDF major and minor release (V4.1, V4.2, etc) is supported for
+    30 months after the initial stable release date
+  verdykt: pidtverdzheno
+  zvidky: H9-p46
+- nazva: T-K01-009
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  cytata: Modules
+  verdykt: pidtverdzheno
+  zvidky: H9-p46
+- nazva: T-K04-014
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/README.md
+  cytata: esptool uploads a small flasher stub program to the chip to improve flashing
+    performance
+  verdykt: pidtverdzheno
+  zvidky: H9-p46
+- nazva: T-K05-024
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/cmds.py
+  cytata: 'compress (bool): Compress data before flashing'
+  verdykt: pidtverdzheno
+  zvidky: H9-p46
+- nazva: T-K06-021
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/include/esp32/rom/rtc.h
+  cytata: SW_CPU_RESET defines the reset code for software CPU reset
+  verdykt: pidtverdzheno
+  zvidky: H9-p47
+- nazva: T-K07-024
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/tools/idf_monitor.py
+  cytata: tool for automatic backtrace decoding
+  verdykt: pidtverdzheno
+  zvidky: H9-p47
+- nazva: T-K07-034
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/include/esp32/rom/rtc.h
+  cytata: SW_CPU_RESET (0xc) is generated after panic handler executes
+  verdykt: pidtverdzheno
+  zvidky: H9-p47
+- nazva: T-K08-043
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
+  cytata: Wi-Fi libraries provide support for configuring and monitoring the ESP-IDF
+    Wi-Fi networking functionality
+  verdykt: pidtverdzheno
+  zvidky: H9-p47
+- nazva: T-K10-001
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/README.md
+  cytata: esptool is a Python-based utility for flashing
+  verdykt: pidtverdzheno
+  zvidky: H9-p48
+- nazva: T-K10-034
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/README.md
+  cytata: serial utility for flashing, provisioning, and interacting with Espressif
+    SoCs
+  verdykt: pidtverdzheno
+  zvidky: H9-p48
+- nazva: T-K12-005
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/tools/idf_monitor.py
+  cytata: USB connection for serial communication
+  verdykt: pidtverdzheno
+  zvidky: H9-p48
+- nazva: T-K12-008
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  cytata: Hardware development requires proper soldering tools
+  verdykt: pidtverdzheno
+  zvidky: H9-p48
+- nazva: T-K13-013
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_hw_support/lowpower/Kconfig.power_management
+  cytata: 3.3V power supply voltage range
+  verdykt: pidtverdzheno
+  zvidky: H9-p48
+- nazva: T-K13-016
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_hw_support/lowpower/Kconfig.power_management
+  cytata: 3.3V voltage under load should not drop below 3.0V
+  verdykt: pidtverdzheno
+  zvidky: H9-p49
+- nazva: T-K13-039
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/include/esp32/rom/rtc.h
+  cytata: RTCWDT_BROWN_OUT_RESET (0xf) indicates power supply voltage dip
+  verdykt: pidtverdzheno
+  zvidky: H9-p49
+- nazva: T-K14-019
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/system.rst
+  cytata: GPIO voltage levels are 3.3V logic
+  verdykt: pidtverdzheno
+  zvidky: H9-p49
+- nazva: T-K15-024
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/misc_system_api.rst
+  cytata: MAC address is a unique hardware identifier
+  verdykt: pidtverdzheno
+  zvidky: H9-p49

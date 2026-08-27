@@ -312,13 +312,29 @@ def main() -> int:
         r.append("Хвиля з однаковими стовпчиками в усіх — підозріла. "
                  "Помічник, у якого все підтверджено, або знайшов "
                  "документ на кожне твердження, або не шукав жодного.\n")
-        r.append("| Помічник | підтв. | сперечається | не знайшов | недосяжне |")
-        r.append("|---|---|---|---|---|")
+        # Остання колонка — вирішальна. Кількість «підтверджено» нічого
+        # не каже, доки не видно, скільки з тих цитат справді стоять у
+        # документі: у першому ж придатному прогоні один помічник дав
+        # 16 підтверджень і **нуль** дослівних цитат, інший — 3 і три.
+        r.append("| Помічник | підтв. | сперечається | не знайшов "
+                 "| недосяжне | цитат дослівних |")
+        r.append("|---|---|---|---|---|---|")
+        shar3: dict[str, list[int]] = collections.defaultdict(
+            lambda: [0, 0])
+        for z in zap:
+            if not str(z.get("cytata", "")).strip():
+                continue
+            h = str(z.get("_fayl", "?")).split("-")[0]
+            shar3[h][1] += 1
+            if stany.get(str(z.get("odynycya"))) == "ok":
+                shar3[h][0] += 1
         for hto in sorted(po_hto):
             k = po_hto[hto]
+            ok, vsjogo = shar3.get(hto, [0, 0])
+            chastka = f"{ok}/{vsjogo} ({ok / vsjogo:.0%})" if vsjogo else "—"
             r.append(f"| `{hto}` | {k['pidtverdzheno']} "
                      f"| {k['sperechayetsya']} | {k['ne_znayshov']} "
-                     f"| {k['nedosyazhne']} |")
+                     f"| {k['nedosyazhne']} | {chastka} |")
         r.append("")
 
     if polagodzheni:
