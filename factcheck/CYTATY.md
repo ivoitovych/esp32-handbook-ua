@@ -16,9 +16,9 @@
 | `у кеші заглушка` | сервер віддав HTML із кодом 200 замість PDF |
 | `звірено очима` | витягання тексту руйнує структуру; звірив супровідник, причина названа |
 
-Записів доказів: **1323**. Звірено дослівно: **321**. Не знайдено: **87**. Джерело не в кеші: **215**. Нема чого звіряти: **676**.
+Записів доказів: **1324**. Звірено дослівно: **321**. Не знайдено: **88**. Джерело не в кеші: **215**. Нема чого звіряти: **676**.
 
-Станом на 2026-08-27 20:51 UTC.
+Станом на 2026-08-27 20:53 UTC.
 
 
 ## клас E на твердженні з числом — перевірити — 24
@@ -50,7 +50,7 @@
 | T-60-123: Запис на картку займає 400 мс | `m2-94-vybirka` | клас E, а в назві число з одиницею |
 | Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні | `m2-95-vybirka` | клас E, а в назві число з одиницею |
 
-## **не знайдено** — 87
+## **не знайдено** — 88
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -124,6 +124,7 @@
 | Драйвер I²C називає причину в консолі, а не мовчить | `pass-38-pul-shmatky-9-11` | 2 з 7 рядків: «config COMPILER_OPTIMIZATION_CHECKS_SILENT…»; «bool "Disable messages in ESP_RETURN_ON_* and ESP_EXIT_ON_* macros"…» |
 | ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR | `pass-38-pul-shmatky-9-11` | 2 з 5 рядків: «* interrupts are disabled or inside an ISR.…»; «* when absolutely essential.…» |
 | На RISC-V рядка Backtrace немає — його будує монітор | `pass-38-pul-shmatky-9-11` | 2 з 12 рядків: «Moreover, IDF Monitor is also capable of generating and printing a…»; «IDF Monitor. Thus, in order to generate and print a backtrace while…» |
+| sdkconfig.defaults рекомендовано тримати в системі контролю версій | `pass-45-sdkconfig-defaults` | 1 з 1 рядків: «It is recommended to commit sdkconfig.defaults for providing baseline …» |
 | T-17-118: Друга половина рядка залежить від версії. | `prochid-17-esptool` | 1 з 1 рядків: «'esptool v{__version__}'…» |
 | T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом: | `prochid-18-rozdily-fleshu` | 1 з 1 рядків: «If you configure the partition table CSV name in the project configura…» |
 | T-18-080: У складі ESP-IDF · SPIFFS → так | `prochid-18-rozdily-fleshu` | 1 з 1 рядків: «spiffs (0x82) is for :doc:`/api-reference/storage/spiffs`…» |
