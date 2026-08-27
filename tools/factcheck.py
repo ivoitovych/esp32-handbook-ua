@@ -868,8 +868,42 @@ def vorota() -> int:
     for z in g:
         print(f"   ✗ спростоване твердження: {z.get('nazva','?')} "
               f"({z.get('_prokhid')})")
-    print(f"factcheck-vorota: спростованих (G) {len(g)}")
-    return 1 if g else 0
+
+    # Друга обіцянка docstring, якої тут **не було**: доказ, що не
+    # зачепив жодної одиниці.
+    #
+    # Знайдено зовнішньою рецензією: опис казав про дві перевірки,
+    # реалізація робила одну. Це гірше за відсутню перевірку — читач
+    # контракту вважає інваріант захищеним, а він не захищений ніким.
+    #
+    # Правило, яке з цього випливає: **на кожен інваріант має бути
+    # рівно один авторитетний перевіряч, і опис не є перевірячем.**
+    teksty: list[str] = []
+    for grupa in GRUPY:
+        for f in sorted((ROOT / grupa).glob("*.md")):
+            for _vyd, txt, _ln in rozbyty(f.read_text(encoding="utf-8")):
+                teksty.append(txt)
+
+    holosti = []
+    for z in dokazy:
+        vz = str(z.get("zbih", ""))
+        if not vz:
+            continue
+        try:
+            rx = re.compile(vz)
+        except re.error as e:
+            print(f"   ✗ взірець не компілюється: {z.get('nazva','?')} "
+                  f"({z.get('_prokhid')}) — {e}")
+            holosti.append(z)
+            continue
+        if not any(rx.search(t) for t in teksty):
+            holosti.append(z)
+            print(f"   ✗ доказ нічого не зачепив: {z.get('nazva','?')} "
+                  f"({z.get('_prokhid')})")
+
+    print(f"factcheck-vorota: спростованих (G) {len(g)}, "
+          f"холостих доказів {len(holosti)}")
+    return 1 if (g or holosti) else 0
 
 
 def vzirets() -> int:
