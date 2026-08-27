@@ -266,4 +266,50 @@
     230400, вище тримають лише деякі
   prokhid: 38
   vynyatky: [factcheck/, reviews/, docs/fakty.md, zvyazok/]
+
+- shcho: PSRAM нібито підтримують лише classic, S2 і S3
+  zbih: 'PSRAM\s+підтримують\s+лише|PSRAM\s+—\s+лише\s+classic'
+  chomu: >-
+    Перелік був вичерпним тоді, коли його склали, і закритий словом
+    «лише». `external-ram.rst` рядок 12 має `esp32p4="64 MB"`, тобто P4
+    підтримує PSRAM, і його адресний простір удвічі більший за S3.
+    Той самий рід, що WROOM-32E: вичерпний перелік старіє мовчки, коли
+    виходить новий чип.
+  zamist: >-
+    Із чипів таблиці PSRAM підтримують classic, S2 і S3; поза таблицею
+    його має ще й P4, з найбільшим адресним простором — 64 МБ
+  prokhid: 42
+  vynyatky: [factcheck/, reviews/, docs/fakty.md, zvyazok/]
+
+- shcho: Зіпсований сектор NVS нібито стирається одразу
+  zbih: 'Зіпсований\s+NVS\.\*\*\s+Стирається'
+  chomu: >-
+    `nvs_flash.rst` рядок 336: `The corresponding flash sector will not
+    be erased immediately and will be kept along with sectors in
+    uninitialized state for later use. This may be useful for
+    debugging.` Сектор лишають **навмисне**, саме щоб можна було
+    подивитися, що сталося. Ціна помилки лягає на того, хто знімає дамп
+    із поламаного пристрою: за старою редакцією він вирішить, що
+    зіпсованого сектора вже немає, і не піде його шукати.
+  zamist: >-
+    Звичний вихід — стерти й переініціалізувати розділ, але зіпсований
+    сектор лишається на флеші; дамп варто знімати до переініціалізації
+  prokhid: 42
+  vynyatky: [factcheck/, reviews/, docs/fakty.md, zvyazok/]
+
+- shcho: Правило udev нібито є в комплекті ESP-IDF і ставиться саме
+  zbih: 'в\s+ESP-IDF\s+воно\s*\n?\s*є\s+в\s+комплекті'
+  chomu: >-
+    `configure-builtin-jtag.rst` рядок 70 каже протилежне: `On Linux
+    adding OpenOCD udev rules is required and is done by placing the
+    following udev rules file … in the /etc/udev/rules.d folder.`
+    Офіційна інструкція веде на сховище й вимагає покласти файл руками.
+    Найслабша з трьох знахідок М2 — файл фізично може бути на диску
+    разом із тулчейном, — але обіцянка «робити нічого не треба» проти
+    інструкції «зробіть» вирішується проти нас.
+  zamist: >-
+    Покласти `60-openocd.rules` зі сховища espressif/openocd-esp32
+    у /etc/udev/rules.d руками; робиться один раз
+  prokhid: 42
+  vynyatky: [factcheck/, reviews/, docs/fakty.md, zvyazok/]
 ```
