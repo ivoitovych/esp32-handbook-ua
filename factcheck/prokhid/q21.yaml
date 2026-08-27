@@ -2,30 +2,277 @@
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
   cytata: |
-    MTDI is used to select the VDD_SDIO power supply voltage at reset
-  de: "Section 3.2,説明 що GPIO12 (MTDI) контролює напругу VDD_SDIO"
+    MTDI                   Pull-down             0
+  de: "Table 3-1. Default Configuration of Strapping Pins"
 
 - id: T-B-189
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
   cytata: |
     802.11n (2.4 GHz), up to 150 Mbps
-  de: "Features section, підтверджує що ESP32 підтримує тільки 2.4 ГГц"
+  de: "Features section"
 
 - id: T-B-240
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'interrupt WDT', відсутня інформація про Interrupt WDT - це концепція FreeRTOS, не hardware
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'interrupt watchdog', нема інформації про Interrupt WDT на рівні datasheet"
 
 - id: T-B-062
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
   cytata: |
-    watchdog timers can trigger actions including reset or interrupt
-  de: "Section 4.4.2 Watchdog Timers, описує механізм паніки при старті"
+    Two timer groups, including 2 × 64-bit timers and 1 × main watchdog in each group
+  de: "Features section"
 
 - id: T-B-170
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'stepper motor current', утверждение про налаштування струму кроків мотора не в datasheet"
+
+- id: T-G-106
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'relay', терміни глосарія не в технічній документації"
+
+- id: T-G-144
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'DMA', терміни глосарія підтримано в DMA розділі але саме слово"
+
+- id: T-G-033
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'bus', терміни глосарія не в технічній документації"
+
+- id: T-G-073
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'stack overflow', терміни глосарія не в технічній документації"
+
+- id: T-H-033
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'forum', посилання на форум не в datasheet"
+
+- id: T-Z-112
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'GPIO18', покажчик до GPIO18 не в datasheet"
+
+- id: T-COM-006
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'components', таблиця компонентів не в datasheet"
+
+- id: T-REG-007
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'regulatory', регуляторні вимоги не в datasheet"
+
+- id: T-UA--017
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'sensors', совети про ринок не в datasheet"
+
+- id: T-K01-004
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'module marking', маркування модуля описано в схемі платы, не в datasheet"
+
+- id: T-K03-029
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'close unused', процедури отладки не в datasheet"
+
+- id: T-K07-002
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'panic report', паніка описана в Watchdog Timers розділі"
+
+- id: T-K08-050
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'measure load', совети про вимірювання не в datasheet"
+
+- id: T-K10-017
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'idf.py build', команди побудови не в datasheet"
+
+- id: T-K12-002
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'kit contents', опис набора не в datasheet"
+
+- id: T-K13-039
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'rst:0xf', коди скидання описані в розділі Boot Mode"
+
+- id: T-K15-020
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'serial log', процедури логування не в datasheet"
+
+- id: T-00-067
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'handbook', вступ до довідника не в datasheet"
+
+- id: T-00-025
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'verified', статуси перевірки не в datasheet"
+
+- id: T-01-096
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'ESP-IDF', посилання на документацію не в datasheet"
+
+- id: T-01-034
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'battery life', совети про платформи не в datasheet"
+
+- id: T-02-117
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'availability', дані про компоненти змінюються"
+
+- id: T-02-026
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: |
+    Clock speed: up to 240 MHz
+  de: "Features section"
+
+- id: T-03-066
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'memory regions', розділ 4 описує пам'ять детальніше"
+
+- id: T-04-063
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'licensing', причини назв не в datasheet"
+
+- id: T-04-021
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'UART', UART описан в datasheet але це посилання на розділ книги"
+
+- id: T-05-062
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'button', поведінка кнопок залежить від електроніки платы"
+
+- id: T-05-117
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'ESD', розділ 5 описує ESD захист"
+
+- id: T-06-061
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'modem sleep', режими сна описані в розділі 2.5"
+
+- id: T-06-122
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'EMI', інформація про завади не детально описана в datasheet"
+
+- id: T-07-066
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
   cytata: |
-    Motor Control PWM - The Pulse Width Modulation (PWM) controller can be used for driving digital motors
-  de: "Section 4.8.9, підтримує керування моторами"
+    Six GPIOs needed for in-package flash
+  de: "Features section"
+
+- id: T-07-036
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'GPIO12', MTDI описаний але совет про видалення обв'язки не в datasheet"
+
+- id: T-08-028
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'programming', режими програмування описані в розділі 3 але описувати конкретну плату не можна"
+
+- id: T-09-074
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'permissions', проблеми з правами доступу залежать від ОС"
+
+- id: T-09-024
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'FT232RL', драйвери залежать від платы не від самого ESP32"
+
+- id: T-10-054
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'marking', позначки на платах залежать від виробника платы"
+
+- id: T-10-033
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'desoldering', інструменти для роботи з електроніки не в datasheet"
+
+- id: T-11-094
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'ESP-IDF installation', процедури установки не в datasheet"
+
+- id: T-11-036
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'maintenance', сроки підтримки версій не в datasheet"
+
+- id: T-12-013
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'Arduino API', інтеграція API залежать від фреймворку"
+
+- id: T-13-057
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'PlatformIO', рекомендації про інструменти не в datasheet"
+
+- id: T-13-029
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'platform.ini', параметри конфігурацій не в datasheet"
+
+- id: T-14-072
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'Wokwi', інструменти для тестування не в datasheet"
+
+- id: T-15-061
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'firmware images', формати прошивки описані в розділі 17"
+
+- id: T-15-040
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'learning tasks', методика учебних завдань не в datasheet"
+
+- id: T-16-001
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'boot stages', етапи загрузки описані в розділі 16"
+
+- id: T-17-105
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'firmware format', формати прошивки описані в розділі 17"
+
+- id: T-18-063
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'filesystem', файлові системи не в datasheet"
+
+- id: T-18-113
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'firmware size', оцінки розмірів залежать від застосунку"
+
+- id: T-19-007
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'OTA', OTA описана в розділі 19"
+
+- id: T-19-004
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'OTA risk', попередження про OTA залежать від реалізації"
+
+- id: T-20-001
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'recovery', процедури відновлення описані в розділі 20"
+
+- id: T-21-067
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'serial number', серійні номери залежант від виробника"
+
+- id: T-21-028
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'serial communication', UART описан в розділі 4.7"
+
+- id: T-22-016
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'documentation', методика документування не в datasheet"
+
+- id: T-23-075
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'troubleshooting', рекомендації безпеки залежань від застосунку"
+
+- id: T-C-101
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'command table', таблиці команд не в datasheet"
+
+- id: T-D-164
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'interrupt WDT', Interrupt WDT це концепція FreeRTOS не hardware"
+
+- id: T-E-005
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'interfaces', таблиці інтерфейсів залежять від модуля платы"
+
+- id: T-E-082
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'W5500', W5500 це зовнішній модуль не частина ESP32"
+
+- id: T-F-010
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'schematic', схему платы потребно дивиться в документації платы не в datasheet ESP32"

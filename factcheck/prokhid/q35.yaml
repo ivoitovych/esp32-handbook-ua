@@ -1,0 +1,165 @@
+- id: T-A-064
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: |
+    By default, the USB function is enabled for USB pins (i.e., GPIO19 and GPIO20)
+  de: "Table 2-1, ESP32-S3 Pin Descriptions - підтверджує GPIO19/GPIO20 як USB_D- та USB_D+"
+
+- id: T-B-207
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, esp32-s3_datasheet_en.pdf, grep -i "ESP-NOW\|channel" 0 влучань; це рекомендація по налагоджуванню, не технічна деталь чипа
+
+- id: T-B-253
+  verdykt: ne_znayshov
+  dyvyvsya: це загальна фізична властивість металевого екранування, не специфічна технічна деталь datasheet
+
+- id: T-B-081
+  verdykt: ne_znayshov
+  dyvyvsya: це базовий принцип електричної цілісності контакту GND, залежна від конкретної конструкції схеми, не технічна деталь чипа
+
+- id: T-C-052
+  verdykt: ne_znayshov
+  dyvyvsya: це команда інструменту idf.py, описана в документації инструмента, не технічне твердження про чип
+
+- id: T-D-090
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, esp32-s3_datasheet_en.pdf, grep -i "panic.*bit\|bit.*GPIO" 0 влучань; коди паніки - це програмна деталь, не описана у datasheet чипа
+
+- id: T-D-194
+  verdykt: ne_znayshov
+  dyvyvsya: це методологічна рекомендація для налагоджування, не технічна деталь чипа
+
+- id: T-E-152
+  verdykt: ne_znayshov
+  dyvyvsya: це описання інтерфейсу Arduino IDE, не технічне твердження про чип
+
+- id: T-E-099
+  verdykt: ne_znayshov
+  dyvyvsya: це таблиця швидкостей зв'язку для різних зовнішніх модулів, залежна від модуля, не технічна деталь ESP32
+
+- id: T-F-025
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація по тестуванню без мережі, не технічне твердження про чип
+
+- id: T-G-120
+  verdykt: ne_znayshov
+  dyvyvsya: це глосарій внутри книги, визначення англійського терміна, не технічне твердження
+
+- id: T-G-167
+  verdykt: ne_znayshov
+  dyvyvsya: це глосарій внутри книги, розшифровка абревіатури THT/SMD, не технічне твердження
+
+- id: T-G-048
+  verdykt: ne_znayshov
+  dyvyvsya: це глосарій внутри книги, визначення терміна припій, не технічне твердження
+
+- id: T-H-045
+  verdykt: ne_znayshov
+  dyvyvsya: це посилання на інформацію про ліцензування всередину репозиторію книги, не технічне твердження
+
+- id: T-Z-039
+  verdykt: ne_znayshov
+  dyvyvsya: це запис у показчику книги, посилання на сторінки про DRV8833, не технічне твердження
+
+- id: T-Z-127
+  verdykt: ne_znayshov
+  dyvyvsya: це запис у показчику книги, посилання на функцію gpio_install_isr_service та сторінку, не технічне твердження
+
+- id: T-COM-035
+  verdykt: ne_znayshov
+  dyvyvsya: це таблиця компонентів у розділі внутри книги, класифікація типу двигуна, не технічне твердження про ESP32
+
+- id: T-REG-023
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація по процесу перевірки та закупівлі, не технічне твердження про чип
+
+- id: T-UA--036
+  verdykt: ne_znayshov
+  dyvyvsya: це практична рекомендація про стратегію замовлення компонентів, не технічне твердження про ESP32
+
+- id: T-K02-023
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація про організацію файлів і каталогів для проєкту, не технічне твердження про чип
+
+- id: T-K05-001
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація про можливість прошити образ, не технічне твердження про чип
+
+- id: T-K07-036
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація по діагностиці паніки, не технічне твердження про чип
+
+- id: T-K08-012
+  verdykt: ne_znayshov
+  dyvyvsya: це таблиця діагностики в швидкій допомозі, посилання на розділи книги
+
+- id: T-K11-009
+  verdykt: ne_znayshov
+  dyvyvsya: це попередження про безповоротність операцій Flash Encryption, не технічна деталь datasheet
+
+- id: T-K13-008
+  verdykt: ne_znayshov
+  dyvyvsya: це таблиця вимірювань напруги для діагностики, не технічне твердження про ESP32
+
+- id: T-K14-024
+  verdykt: ne_znayshov
+  dyvyvsya: це практична рекомендація про наявність запасних компонентів, не технічне твердження
+
+- id: T-K15-035
+  verdykt: ne_znayshov
+  dyvyvsya: це попередження про загальний образ та конфігурацію для кількох пристроїв, не технічне твердження про чип
+
+- id: T-00-082
+  verdykt: ne_znayshov
+  dyvyvsya: це опис того як генерується таблиця версій у книзі, метаморфоза про структуру довідника
+
+- id: T-00-037
+  verdykt: ne_znayshov
+  dyvyvsya: це опис автоматичних перевірок в проєкті, метаморфоза про організацію роботи
+
+- id: T-01-007
+  verdykt: ne_znayshov
+  dyvyvsya: це визначення терміна SoC/Кристал в контексті ESP32, не технічне твердження
+
+- id: T-01-068
+  verdykt: ne_znayshov
+  dyvyvsya: це таблиця порівняння можливостей для різних платформ, оцінка "посередньо" субективна та залежна від контексту застосування
+
+- id: T-02-140
+  verdykt: ne_znayshov
+  dyvyvsya: це практична рекомендація про вибір плат для парку, не технічне твердження про ESP32
+
+- id: T-02-054
+  verdykt: pidtverdzheno
+  fayl: 21953a2f-esp32_datasheet_en.pdf
+  cytata: |
+    Compliant with Bluetooth v4.2 BR/EDR and Bluetooth LE specifications
+  de: "Product Overview - підтверджує що ESP32 підтримує BLE"
+
+- id: T-03-001
+  verdykt: ne_znayshov
+  dyvyvsya: це введення до розділу про архітектуру, опис мети розділу, не технічне твердження
+
+- id: T-04-095
+  verdykt: ne_znayshov
+  dyvyvsya: це таблиця порівняння периферії між чипами, внутрішня інформація у книзі, не твердження з datasheet
+
+- id: T-04-046
+  verdykt: ne_znayshov
+  dyvyvsya: це внутрішня таблиця периферії у книзі, посилання на розділ, не технічне твердження про чип
+
+- id: T-05-083
+  verdykt: ne_znayshov
+  dyvyvsya: це пояснення фізичного принципу open-drain шин, загальна праксис, не специфічна деталь ESP32
+
+- id: T-05-131
+  verdykt: ne_znayshov
+  dyvyvsya: це практична рекомендація про конденсатори, залежна від конкретної схеми, не технічна деталь чипа
+
+- id: T-06-090
+  verdykt: ne_znayshov
+  dyvyvsya: це методологія розрахунку споживання енергії за циклом, залежна від конкретного застосування
+
+- id: T-06-024
+  verdykt: ne_znayshov
+  dyvyvsya: це пояснення про нерівномірне споживання енергії, базовий принцип, не специфічна деталь datasheet

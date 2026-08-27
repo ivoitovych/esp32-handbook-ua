@@ -1,0 +1,127 @@
+- id: T-A-060
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: |
+    GPIO0 listed in Table 3-1 as "Default Configuration of Strapping Pins" with "Weak pull-up" default configuration
+  de: Table 3-1, Section 3 Boot Configurations
+- id: T-B-204
+  verdykt: ne_znayshov
+  dyvyvsya: це опис поведінки WiFi під час перепід'єднання, загальна практика, а не специфічне твердження в даташиті
+- id: T-B-250
+  verdykt: ne_znayshov
+  dyvyvsya: це методологічна рекомендація для розв'язування проблем у корпусі, не технічна спецификація чипа
+- id: T-B-078
+  verdykt: ne_znayshov
+  dyvyvsya: це практична рекомендація про електроживлення для двигуна, базована на загальних принципах електроніки, а не специфічних даташитах
+- id: T-B-183
+  verdykt: ne_znayshov
+  dyvyvsya: це загальна порада про датчики, що цінність вимірювань залежить від розташування, але не являється специфічним твердженням про датчик
+- id: T-C-040
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація про опції інструменту esptool, не технічна спецификація чипа
+- id: T-D-190
+  verdykt: ne_znayshov
+  dyvyvsya: це методологія збереження .elf файлів для налагоджування, не технічна властивість чипа
+- id: T-E-145
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація проєктування схеми для вимірювання акумулятора, а не технічна спецификація чипа
+- id: T-E-096
+  verdykt: ne_znayshov
+  dyvyvsya: це перелік можливостей датчиків, посилання на розділи книги для деталей
+- id: T-F-020
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація про оновлення офлайн-флешки, методологія розробки, а не технічна спецификація
+- id: T-G-117
+  verdykt: ne_znayshov
+  dyvyvsya: це запис у глосарії книги, перекладання терміна
+- id: T-G-163
+  verdykt: ne_znayshov
+  dyvyvsya: це запис у глосарії книги, визначення абревіатури
+- id: T-G-045
+  verdykt: ne_znayshov
+  dyvyvsya: це запис у глосарії книги, визначення терміна
+- id: T-H-044
+  verdykt: ne_znayshov
+  dyvyvsya: це посилання на методологію книги щодо джерел, не технічна спецификація
+- id: T-Z-036
+  verdykt: ne_znayshov
+  dyvyvsya: це запис у покажчику книги, посилання на сторінки
+- id: T-Z-124
+  verdykt: ne_znayshov
+  dyvyvsya: це запис у покажчику книги, посилання на сторінки
+- id: T-COM-031
+  verdykt: ne_znayshov
+  dyvyvsya: це заголовок таблиці компонентів, посилання в межах книги
+- id: T-REG-019
+  verdykt: ne_znayshov
+  dyvyvsya: це порада про регіональні обмеження LoRa, загальна практика, а не специфічне твердження про чип
+- id: T-UA--033
+  verdykt: ne_znayshov
+  dyvyvsya: це інформація про умови поставки на українському ринку, а не технічна спецификація
+- id: T-K02-015
+  verdykt: ne_znayshov
+  dyvyvsya: це методологія читання дампу флешу з esptool, наприклад, не технічна властивість чипа
+- id: T-K04-024
+  verdykt: ne_znayshov
+  dyvyvsya: це практична порада про strapping-піни під час завантаження, а не специфічне твердження про чип
+- id: T-K07-032
+  verdykt: ne_znayshov
+  dyvyvsya: це методологія збереження .elf файлів для налагоджування, не технічна властивість
+- id: T-K08-008
+  verdykt: ne_znayshov
+  dyvyvsya: це порада з розв'язування проблем, а не твердження про технічну властивість
+- id: T-K10-039
+  verdykt: ne_znayshov
+  dyvyvsya: це інформація про интерфейс пристрою, посилання на розділи книги
+- id: T-K13-005
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація про послідовність використання мультиметра, методологія налагоджування
+- id: T-K14-011
+  verdykt: ne_znayshov
+  dyvyvsya: це порада про перевірку рівнів сигналу при наявності регулятора, методологія налагоджування
+- id: T-K15-031
+  verdykt: ne_znayshov
+  dyvyvsya: це порада з розв'язування проблем із UART/послідовним портом
+- id: T-00-079
+  verdykt: ne_znayshov
+  dyvyvsya: це коментар про пошук термінів в англійській мові, методологічна нотація
+- id: T-00-036
+  verdykt: ne_znayshov
+  dyvyvsya: це метакоментар про стан розробки довідника, а не технічна спецификація
+- id: T-01-106
+  verdykt: ne_znayshov
+  dyvyvsya: це рекомендація про підготовку офлайн-комплекту, методологія розробки
+- id: T-01-058
+  verdykt: ne_znayshov
+  dyvyvsya: це порівняння часу старту різних платформ у таблиці, а не специфічне твердження про чип
+- id: T-02-136
+  verdykt: ne_znayshov
+  dyvyvsya: це порада вибору чипа за можливостями, посилання на таблицю в межах книги
+- id: T-02-043
+  verdykt: pidtverdzheno
+  fayl: esp32-s2_datasheet_en.pdf
+  cytata: Wi-Fi radio module is included
+  de: Overview section - Wi-Fi specification
+- id: T-03-011
+  verdykt: pidtverdzheno
+  fayl: esp32-s2_datasheet_en.pdf
+  cytata: Xtensa single-core 32-bit LX7 microprocessor
+  de: Overview - microprocessor specifications
+- id: T-04-092
+  verdykt: ne_znayshov
+  dyvyvsya: це кількісна таблиця періферії, перелік функцій, посилання на ESP-IDF soc_caps.h
+- id: T-04-043
+  verdykt: ne_znayshov
+  dyvyvsya: це опис функціональності PCNT периферії, посилання на можливості чипа
+- id: T-05-079
+  verdykt: ne_znayshov
+  dyvyvsya: це електронна термінологія, визначення типу выводу
+- id: T-05-014
+  verdykt: ne_znayshov
+  dyvyvsya: це базовий принцип електроніки/закон Ома, не специфічне твердження про чип
+- id: T-06-084
+  verdykt: ne_znayshov
+  dyvyvsya: це приклад коду для засинання, посилання на розділ книги
+- id: T-06-018
+  verdykt: ne_znayshov
+  dyvyvsya: це заголовок таблиці режимів живлення, посилання в межах книги

@@ -1,239 +1,198 @@
-- cytata: '| 15 | **strapping (MTDO)** | ADC2_3 | T3 | вільний з обережністю |'
-  fayl: a-pinouty.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-A-040
-  verdykt: pidtverdzheno
-- cytata: '| Лог читається на 74880 | це **ESP8266**, не ESP32 | звірити маркування
-    | 23 |'
-  fayl: b-symptomy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-B-192
-  verdykt: pidtverdzheno
-- cytata: '| Система стоїть | висока пріоритетна задача без блокування | знизити або
-    блокувати | 31 |'
-  fayl: b-symptomy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-B-243
-  verdykt: pidtverdzheno
-- cytata: '| Boot loop | brownout | живлення | 06, К13 |'
-  fayl: b-symptomy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-B-066
-  verdykt: pidtverdzheno
-- cytata: '| Дисплей зсунутий на 2 пікселі | це SH1106, не SSD1306 | режим у бібліотеці
-    | 46 |'
-  fayl: b-symptomy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-B-174
-  verdykt: pidtverdzheno
-- cytata: Розмір файлу має **точно** дорівнювати запитаному. Менший — обірваний
-  fayl: c-komandy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-C-014
-  verdykt: pidtverdzheno
-- cytata: '| Повідомлення | Причина | Розділ |'
-  fayl: d-panik.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-D-167
-  verdykt: pidtverdzheno
-- cytata: '| Енкодер | **PCNT**, не переривання | 33 |'
-  fayl: e-interfeysy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-E-133
-  verdykt: pidtverdzheno
-- cytata: '| E-paper (SSD16xx) | 0 | електронний папір | GxEPD2 |'
-  fayl: e-interfeysy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-E-085
-  verdykt: pidtverdzheno
-- dyvyvsya: f-oflayn.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-F-014
   verdykt: ne_znayshov
-- cytata: '| струм | current |'
-  fayl: g-glosariy.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-G-109
-  verdykt: pidtverdzheno
-- cytata: '| I²S | Inter-IC Sound |'
-  fayl: g-glosariy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-G-153
-  verdykt: pidtverdzheno
-- cytata: '| стабілізатор | voltage regulator |'
-  fayl: g-glosariy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-G-036
-  verdykt: pidtverdzheno
-- cytata: '| взаємне блокування | deadlock |'
-  fayl: g-glosariy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-G-076
-  verdykt: pidtverdzheno
-- dyvyvsya: h-dzherela.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-H-036
   verdykt: ne_znayshov
-- cytata: GPIO22 — 149, 310, 326, 335
-  fayl: z-pokazhchyk.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-Z-115
-  verdykt: pidtverdzheno
-- cytata: '| DevKit V1 / DOIT | дешева заміна попередньої | **буває 30- і 38-піновою
-    — різні плати** |'
-  fayl: components-2026-08.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-COM-011
-  verdykt: pidtverdzheno
-- dyvyvsya: regulatory-2026-08.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-REG-010
   verdykt: ne_znayshov
-- cytata: '| Модуль S3 | `N8` чи `N16R8` — різна кількість вільних пінів |'
-  fayl: ua-market-2026-08.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-UA--020
-  verdykt: pidtverdzheno
-- dyvyvsya: k02-stan.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-K02-009
   verdykt: ne_znayshov
-- dyvyvsya: k04-boot.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-K04-013
   verdykt: ne_znayshov
-- cytata: Backtrace — це ланцюжок адрес. Сам по собі він нечитний; його треба
-  fayl: k07-panika.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-K07-021
-  verdykt: pidtverdzheno
-- dyvyvsya: k08-symptomy.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-K08-002
   verdykt: ne_znayshov
-- cytata: '`idf.py monitor`: вийти — `Ctrl+]`. Скинути плату — `Ctrl+T`, потім `Ctrl+R`.'
-  fayl: k10-komandy.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-K10-028
-  verdykt: pidtverdzheno
-- dyvyvsya: k12-komplekt.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-K12-020
   verdykt: ne_znayshov
-- cytata: '| Стабілізатор гарячий | перевантаження або пробій |'
-  fayl: k13-zhyvlennya.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-K13-042
-  verdykt: pidtverdzheno
-- cytata: '| № | MAC | Версія | Дата | Контроль | Примітка |'
-  fayl: k15-seriyna.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-K15-023
-  verdykt: pidtverdzheno
-- dyvyvsya: 00-pro-dovidnyk.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-00-071
   verdykt: ne_znayshov
-- dyvyvsya: 00-pro-dovidnyk.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-00-028
   verdykt: ne_znayshov
-- cytata: '**Datasheet** сімейства — електричні параметри, межі, розводка. Те, що'
-  fayl: 01-platforma.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-01-099
-  verdykt: pidtverdzheno
-- dyvyvsya: 01-platforma.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-01-035
   verdykt: ne_znayshov
-- cytata: '| Перший проєкт, навчання | classic | найбільше прикладів і статей |'
-  fayl: 02-chipy.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-02-120
-  verdykt: pidtverdzheno
-- cytata: '| Частота, МГц | 240 | 240 | 240 | 160 | 160 | 96 |'
-  fayl: 02-chipy.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-02-029
-  verdykt: pidtverdzheno
-- dyvyvsya: 03-soc.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-03-007
   verdykt: ne_znayshov
-- dyvyvsya: 04-peryferiya.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-04-066
   verdykt: ne_znayshov
-- cytata: '| SDMMC | картки пам''яті на повній швидкості | 49 |'
-  fayl: 04-peryferiya.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-04-030
-  verdykt: pidtverdzheno
-- dyvyvsya: 05-elektronika.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-05-065
   verdykt: ne_znayshov
-- dyvyvsya: 05-elektronika.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-05-121
   verdykt: ne_znayshov
-- dyvyvsya: 06-zhyvlennya.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-06-065
   verdykt: ne_znayshov
-- cytata: '`rst:0xf` означає живлення. Читати код при ньому марно.'
-  fayl: 06-zhyvlennya.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-06-126
-  verdykt: pidtverdzheno
-- cytata: Різниця між шісткою й цією парою — у слові «usually». Піни 6–11 зайняті
-  fayl: 07-gpio.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-07-069
-  verdykt: pidtverdzheno
-- dyvyvsya: 07-gpio.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-07-053
   verdykt: ne_znayshov
-- dyvyvsya: 08-platy.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-08-034
   verdykt: ne_znayshov
-- cytata: lsof /dev/ttyUSB0
-  fayl: 09-pidklyuchennya.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-09-080
-  verdykt: pidtverdzheno
-- dyvyvsya: 09-pidklyuchennya.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-09-030
   verdykt: ne_znayshov
-- dyvyvsya: 10-instrumenty.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-10-057
   verdykt: ne_znayshov
-- dyvyvsya: 10-instrumenty.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-10-036
   verdykt: ne_znayshov
-- dyvyvsya: 11-idf.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-11-012
   verdykt: ne_znayshov
-- dyvyvsya: 11-idf.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-11-040
   verdykt: ne_znayshov
-- dyvyvsya: 12-arduino.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-12-018
   verdykt: ne_znayshov
-- dyvyvsya: 13-pio.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-13-007
   verdykt: ne_znayshov
-- cytata: 'Для `pioarduino` пінування — це заміна мітки `stable` на **тег релізу**:'
-  fayl: 13-pio.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-13-032
-  verdykt: pidtverdzheno
-- dyvyvsya: 14-shvydki-shlyakhy.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-14-075
   verdykt: ne_znayshov
-- dyvyvsya: 15-oflayn.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-15-062
   verdykt: ne_znayshov
-- cytata: '**Arduino** — сорок рядків, працює за півгодини. Бібліотека датчика'
-  fayl: 15-oflayn.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-15-044
-  verdykt: pidtverdzheno
-- cytata: '| `GPIO0` при скиданні | Куди піде ROM |'
-  fayl: 16-boot.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-16-015
-  verdykt: pidtverdzheno
-- dyvyvsya: 17-esptool.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-17-108
   verdykt: ne_znayshov
-- cytata: налаштування, збережені креденшели Wi-Fi, лічильники. Воно переживає
-  fayl: 18-rozdily-fleshu.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-18-066
-  verdykt: pidtverdzheno
-- dyvyvsya: 18-rozdily-fleshu.md, пошук по ключових словах не дав результату
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-18-119
   verdykt: ne_znayshov
-- dyvyvsya: 19-ota.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-19-076
   verdykt: ne_znayshov
-- dyvyvsya: 19-ota.md, пошук по ключових словах не дав результату
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-19-046
   verdykt: ne_znayshov
-- cytata: 'Коротка відповідь: майже ні. Все, що лежить у флеші, лікується'
-  fayl: 20-bekap.md
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-20-002
-  verdykt: pidtverdzheno
-- cytata: idf.py merge-bin -o vyrib-v1.4.bin
-  fayl: 21-seriyna.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-21-070
-  verdykt: pidtverdzheno
-- cytata: «Прошилося без помилок» — не критерій приймання. Мінімальний контроль,
-  fayl: 21-seriyna.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-21-032
-  verdykt: pidtverdzheno
-- cytata: Фото показує, як воно виглядало. Текстовий запис показує, як воно було
-  fayl: 22-zberezhennya-stanu.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-22-019
-  verdykt: pidtverdzheno
-- cytata: '| Чип відповідає, лог осмислений | робочий пристрій з прошивкою | розділ
-    24 |'
-  fayl: 23-triazh.md
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, потребує ручної перевірки
   id: T-23-078
-  verdykt: pidtverdzheno
+  verdykt: ne_znayshov

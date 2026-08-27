@@ -1,0 +1,198 @@
+- id: T-A-072
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; це посилання на примітку всередину розділу про піни книги
+- id: T-B-211
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; посилання на розділ книги, не технічне твердження про зовнішній документ
+- id: T-B-258
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; посилання на розділ книги про корозію - внутрішнє
+- id: T-B-086
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічна рекомендація про платах розробки; властивість апаратури, загальна практика
+- id: T-C-075
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; це поведінка інструменту esptool, а не технічна властивість ESP32 чипа
+- id: T-D-107
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, grep -i "panic.*message.*millisecond" 0 влучань; внутрішня деталь
+- id: T-D-054
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічна рекомендація щодо логування в app_main
+- id: T-E-157
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологія вибору бібліотеки, не технічна спецификація
+- id: T-E-104
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; посилання на розділ про companion-схему у книзі
+- id: T-G-085
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; запис у глосарії книги - визначення терміна
+- id: T-G-124
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; запис у глосарії - визначення англійського терміна
+- id: T-G-172
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; опис системи позначень у книзі, дотримання стандартів SI
+- id: T-G-053
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; це заголовок таблиці глосарію всередину книги
+- id: T-H-009
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання змісту розділу про джерела всередину книги
+- id: T-Z-056
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; запис у покажчику книги - внутрішня організація матеріалу
+- id: T-Z-135
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; запис у покажчику книги - посилання на визначення типу
+- id: T-COM-002
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; метаінформація про файл вставок компонентів
+- id: T-REG-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання змісту розділу про регуляції всередину книги
+- id: T-UA--039
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; посилання на додаток про джерела даних у книзі
+- id: T-K02-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічна рекомендація щодо фотографування плати
+- id: T-K05-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; деталь про версії esptool, а не технічна властивість чипа
+- id: T-K08-018
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; рекомендація щодо живлення - методологія, залежна від схеми
+- id: T-K09-010
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; внутрішня інформація книги про GPIO ADC1 - позначка
+- id: T-K11-014
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; загальна електроніка знань про рівні напруги, не ESP32-специфічне
+- id: T-K13-015
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічна рекомендація про стабілізатор
+- id: T-K14-032
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологія діагностики проблем із заземленням
+- id: T-K15-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологія масового програмування плат
+- id: T-00-087
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання структури вишиків книги - внутрішня організація
+- id: T-00-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання процесу перевірки та збирання книги
+- id: T-01-112
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; рекомендація про архітектуру мікроконтролерів
+- id: T-01-075
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; порівняльна таблиця плат з книги, внутрішня організація
+- id: T-02-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання вибору чипів у розділі
+- id: T-02-078
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; пояснення методології використання чисел з таблиці
+- id: T-03-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; загальна методологічна спостереження
+- id: T-04-124
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; пояснення про значення числа при проєктуванні
+- id: T-04-055
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; суб'єктивна оцінка RMT блоку
+- id: T-05-009
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; визначення фізичного поняття опір - загальна інформація
+- id: T-05-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; фізичний принцип про світлодіоди
+- id: T-06-099
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; твердження про продуктивність ESP-NOW без конкретних чисел
+- id: T-06-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; критика помилки в саморобних виробах
+- id: T-07-113
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; кількість пінів залежить від варіанту чипа й зовнішніх факторів
+- id: T-08-078
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічний опис шляхів розробки
+- id: T-08-053
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; перелік промислових плат з дисплеєм
+- id: T-09-096
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; рекомендація про USB концентратор
+- id: T-09-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання розділу про підключення
+- id: T-10-013
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; рекомендація про паяльник - фізична теплопередача
+- id: T-11-061
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання файлу конфігурації ESP-IDF
+- id: T-11-114
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання елемента UI інструменту menuconfig
+- id: T-12-050
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологія міграції з Arduino на ESP-IDF
+- id: T-13-036
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; описання файлу конфігурації platformio
+- id: T-13-076
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; рекомендація про управління конфігурацією в git
+- id: T-14-049
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; таблиця платформ - внутрішня організація книги
+- id: T-14-018
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологія перевірки модуля I2C
+- id: T-15-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; рекомендація про вибір інструменту
+- id: T-16-058
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; операційна процедура скидання плати
+- id: T-17-051
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; пояснення про формат дампа файлу
+- id: T-17-149
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; текст англійської помилки з esptool
+- id: T-18-083
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічна рекомендація щодо конфігурації
+- id: T-18-040
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; рекомендація щодо адресації розділів флешу
+- id: T-19-091
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; діагностика проблеми OTA
+- id: T-20-064
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічна діагностика boot loop
+- id: T-20-044
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; твердження про сумісність MAC адрес
+- id: T-21-084
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічна спостереження про послідовне програмування
+- id: T-22-058
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; часова деталь про екран, залежить від модуля дисплея
+- id: T-22-039
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; внутрішня деталь про збереження стану
+- id: T-23-098
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet.pdf, 0 влучань; методологічна властивість порядку дій

@@ -1,0 +1,203 @@
+- id: T-A-056
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "free GPIO" - 0 влучань
+- id: T-B-202
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "reboot without network" - 0 влучань
+- id: T-B-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "minimal test" - 0 влучань
+- id: T-B-076
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "reboot wifi" - 0 влучань
+- id: T-B-181
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "sensor heat" - 0 влучань
+- id: T-C-036
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "esp32s3" - 0 влучань
+- id: T-D-050
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "panic code" - 0 влучань
+- id: T-E-142
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "buttons" - 0 влучань
+- id: T-E-093
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "MAX485" - 0 влучань
+- id: T-F-018
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "flash copy hour" - 0 влучань
+- id: T-G-115
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "peak current" - 0 влучань
+- id: T-G-161
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "Real-Time Clock" - 1 влучання; це дефініція,
+    не технічна спецификація
+- id: T-G-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "switch transistor" - 0 влучань
+- id: T-H-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "repository address" - 0 влучань
+- id: T-Z-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "CONFIG_IDF_TARGET_ESP32S3" - 0 влучань
+- id: T-Z-121
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "GPIO4" - 1 влучання; це запис покажчику,
+    не технічна спецификація
+- id: T-COM-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "soil humidity sensor" - 0 влучань
+- id: T-REG-015
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "Wi-Fi channels regulatory" - 0 влучань
+- id: T-UA--031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "counterfeited modules" - 0 влучань
+- id: T-K02-001
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "before first change" - 0 влучань
+- id: T-K04-022
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "baud rate 115200" - 0 влучань
+- id: T-K07-030
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "panic reason PC" - 0 влучань
+- id: T-K08-006
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "other cable" - 0 влучань
+- id: T-K10-036
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "usermod dialout" - 0 влучань
+- id: T-K12-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "internet in field" - 0 влучань
+- id: T-K14-008
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "stabilizer 3.3V" - 0 влучань
+- id: T-K15-029
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "version v1.4" - 0 влучань
+- id: T-00-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "gathered in one place" - 0 влучань
+- id: T-00-034
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "thousand statements" - 0 влучань
+- id: T-01-104
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "most useful resource" - 0 влучань
+- id: T-01-053
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "FreeRTOS" - 1 влучання; це базова інформація
+    про ОС
+- id: T-02-130
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "battery years" - 0 влучань
+- id: T-02-035
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "H2 SRAM 320" - 0 влучань
+- id: T-03-009
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "core 0 radio" - 0 влучань
+- id: T-04-072
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "C6 UART" - 0 влучань
+- id: T-04-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "RMT remote control" - 1 влучання; це периферія
+    описана у таблиці
+- id: T-05-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "GPIO push-pull output" - 0 влучань
+- id: T-05-127
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "voltage common ground" - 0 влучань
+- id: T-06-008
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "simplest power path" - 0 влучань
+- id: T-06-016
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "orders magnitude" - 0 влучань
+- id: T-07-086
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "GPIO hardware scheme" - 0 влучань
+- id: T-08-068
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "one minute test board" - 0 влучань
+- id: T-08-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "ten seconds errors" - 0 влучань
+- id: T-09-088
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "device detected port created" - 0 влучань
+- id: T-09-036
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "FT232 driver" - 0 влучань
+- id: T-10-063
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "multimeter soldering iron" - 0 влучань
+- id: T-11-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "older version library" - 0 влучань
+- id: T-11-102
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "advantage visible later" - 0 влучань
+- id: T-12-040
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "example date version" - 0 влучань
+- id: T-12-024
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "Arduino core firmware size" - 0 влучань
+- id: T-13-066
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "situation what to take" - 0 влучань
+- id: T-14-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "learning invaluable" - 0 влучань
+- id: T-14-010
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "REPL interactive" - 0 влучань
+- id: T-15-067
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "laptop flash kit hour" - 0 влучань
+- id: T-15-050
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "different questions" - 0 влучань
+- id: T-16-025
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "strapping pin boot" - 1 влучання; це описано
+    у розділі Boot
+- id: T-17-128
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "written not transmitted" - 0 влучань
+- id: T-18-073
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "LittleFS speed degrade" - 0 влучань
+- id: T-18-019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "factory partition app" - 0 влучань
+- id: T-19-080
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "OTA password authentication" - 0 влучань
+- id: T-20-049
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "check chip before" - 0 влучань
+- id: T-20-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "full flash dump" - 0 влучань
+- id: T-21-076
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "date 2026-08-26" - 0 влучань
+- id: T-22-047
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "file size flash" - 0 влучань
+- id: T-22-030
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "rely written" - 0 влучань
+- id: T-23-084
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep "invalid header" - 0 влучань
