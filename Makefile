@@ -71,6 +71,13 @@ zvyazok:
 citaty:
 	@$(PY) tools/citaty.py --zvit
 
+# Модальність: припис у книзі проти дозволу в джерелі. Звіт, не
+# ворота — припис може бути обґрунтованим, і судить це людина.
+# Знайшов цей рід не інструмент, а помічник; інструмент дописано
+# після, і його перша редакція давала 88 % хибних спрацювань.
+modalnist:
+	@$(PY) tools/modalnist.py
+
 # Кальки з російської. Ворота, а не звіт: перелік короткий і містить
 # лише однозначні заміни, тож знахідка тут — завжди помилка.
 kalky:
@@ -136,7 +143,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty kalky budgets arytmetyka check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
