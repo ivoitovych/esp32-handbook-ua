@@ -1,0 +1,263 @@
+- id: T-A-058
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet, розділ про ADC2 пінаут
+
+- id: T-B-203
+  rid: pozyciya
+  chomu: пояснення причини розряду батареї — автор розцінює як ймовірну
+
+- id: T-B-249
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-B-077
+  rid: pozyciya
+  chomu: пояснення причини перезавантаження — авторське тлумачення
+
+- id: T-B-182
+  rid: pozyciya
+  chomu: практична дія — рекомендація автора
+
+- id: T-C-038
+  rid: pozyciya
+  chomu: технічне тлумачення про компресію — авторська оцінка сенсу
+
+- id: T-D-189
+  rid: dzherelo-ye
+  shukaty: ESP-IDF документація про адреси та побудову
+
+- id: T-E-144
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-E-095
+  rid: dzherelo-ye
+  shukaty: PMS5003 та SDS011 datasheet — швидкість UART
+
+- id: T-F-019
+  rid: pozyciya
+  chomu: практична оцінка часу збирання
+
+- id: T-G-116
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-162
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-G-044
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-H-043
+  rid: ne-tverdzhennya
+  chomu: метаопис джерел довідника
+
+- id: T-Z-004
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-Z-123
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика
+
+- id: T-COM-027
+  rid: dzherelo-ye
+  shukaty: датчики вологості — технічна характеристика корозії
+
+- id: T-REG-017
+  rid: pozyciya
+  chomu: оцінка проблемності BLE — авторське судження
+
+- id: T-UA--032
+  rid: pozyciya
+  chomu: практична рекомендація про мінімальний тест
+
+- id: T-K02-003
+  rid: pozyciya
+  chomu: попередження про термін — авторська оцінка наслідків
+
+- id: T-K04-023
+  rid: pozyciya
+  chomu: крок усунення несправності — рекомендація
+
+- id: T-K07-031
+  rid: dzherelo-ye
+  shukaty: ESP-IDF backtrace — вимога про .elf файл
+
+- id: T-K08-007
+  rid: ne-tverdzhennya
+  chomu: мітка симптому в перелік
+
+- id: T-K10-037
+  rid: ne-tverdzhennya
+  chomu: приклад команди — не твердження
+
+- id: T-K12-003
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-K14-009
+  rid: dzherelo-ye
+  shukaty: ESP32 технічна специфікація — напруга сигналу без стабілізатора
+
+- id: T-K15-030
+  rid: ne-tverdzhennya
+  chomu: дата у записі
+
+- id: T-00-008
+  rid: pozyciya
+  chomu: авторське пояснення концепції довідника
+
+- id: T-00-035
+  rid: pozyciya
+  chomu: редакторське судження про перевірку та спростування
+
+- id: T-01-105
+  rid: ne-tverdzhennya
+  chomu: інформація про ресурс
+
+- id: T-01-055
+  rid: ne-tverdzhennya
+  chomu: рядок порівняльної таблиці
+
+- id: T-02-131
+  rid: dzherelo-ye
+  shukaty: ESP32 мікросхеми — технічна специфікація для Zigbee/Thread
+
+- id: T-02-042
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці
+
+- id: T-03-010
+  rid: pozyciya
+  chomu: рекомендація про розміщення обчислень на ядро
+
+- id: T-04-073
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці з числами
+
+- id: T-04-042
+  rid: ne-tverdzhennya
+  chomu: навігаційне посилання
+
+- id: T-05-078
+  rid: dzherelo-ye
+  shukaty: електроніка — принцип короткого замикання
+
+- id: T-05-013
+  rid: pozyciya
+  chomu: педагогічне судження про аналогію з водою
+
+- id: T-06-079
+  rid: dzherelo-ye
+  shukaty: ESP-IDF документація — поведінка пам'яті при пробудженні
+
+- id: T-06-017
+  rid: ne-tverdzhennya
+  chomu: метаопис джерел з застереженням про перевірку
+
+- id: T-07-087
+  rid: dzherelo-ye
+  shukaty: ESP32-S3, C3 datasheet — наявність вхідних пінів
+
+- id: T-08-069
+  rid: pozyciya
+  chomu: практична стратегія закупівлі
+
+- id: T-08-043
+  rid: dzherelo-ye
+  shukaty: ESP32 документація — варіанти пам'яті та пінаут
+
+- id: T-09-089
+  rid: ne-tverdzhennya
+  chomu: опис симптому пристрою
+
+- id: T-09-037
+  rid: pozyciya
+  chomu: твердження про типову поведінку Linux
+
+- id: T-10-064
+  rid: pozyciya
+  chomu: оцінка логічного аналізатора — авторське судження
+
+- id: T-11-042
+  rid: dzherelo-ye
+  shukaty: ESP-IDF практика — фіксація версії на початку проєкту
+
+- id: T-11-106
+  rid: ne-tverdzhennya
+  chomu: опис вимог до відтворюваності
+
+- id: T-12-041
+  rid: pozyciya
+  chomu: інтерпретація фрази «не працює» в Arduino
+
+- id: T-12-026
+  rid: ne-tverdzhennya
+  chomu: порівняння методів контролю версій
+
+- id: T-13-067
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці інструментів
+
+- id: T-14-042
+  rid: pozyciya
+  chomu: оцінка меж симуляції — авторське судження
+
+- id: T-14-011
+  rid: pozyciya
+  chomu: оцінка порога входу для Python
+
+- id: T-15-068
+  rid: pozyciya
+  chomu: філософське тлумачення вибору тулчейну
+
+- id: T-15-051
+  rid: pozyciya
+  chomu: редакторське судження про необхідність документації
+
+- id: T-16-031
+  rid: pozyciya
+  chomu: авторське узагальнення про різні причини
+
+- id: T-17-129
+  rid: dzherelo-ye
+  shukaty: esptool та ESP-IDF документація — причини помилок при прошиванні
+
+- id: T-18-074
+  rid: dzherelo-ye
+  shukaty: SPIFFS документація — характеристика швидкості при заповненні
+
+- id: T-18-020
+  rid: ne-tverdzhennya
+  chomu: визначення типу розділу
+
+- id: T-19-081
+  rid: dzherelo-ye
+  shukaty: ESP-IDF OTA — можливість оновлення без ПК
+
+- id: T-20-051
+  rid: pozyciya
+  chomu: методологічна рекомендація про розбір за логом
+
+- id: T-20-027
+  rid: pozyciya
+  chomu: оцінка необхідності резервної копії
+
+- id: T-21-077
+  rid: ne-tverdzhennya
+  chomu: статус контролю — дані записи
+
+- id: T-22-048
+  rid: ne-tverdzhennya
+  chomu: технічний опис параметрів дампу
+
+- id: T-22-003
+  rid: ne-tverdzhennya
+  chomu: опис типової ситуації
+
+- id: T-23-089
+  rid: ne-tverdzhennya
+  chomu: висновок діагностики

@@ -1,0 +1,318 @@
+# Захід 2: чинне лише те, чия цитата стоїть підрядком у названому файлі.
+
+- id: T-A-028
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'MTDI                   Pull-down             0
+
+    '
+  de: Table 3-1. Default Configuration of Strapping Pins
+- id: T-B-189
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: '802.11n (2.4 GHz), up to 150 Mbps
+
+    '
+  de: Features section
+- id: T-B-062
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'Two timer groups, including 2 × 64-bit timers and 1 × main watchdog in each group
+
+    '
+  de: Features section
+- id: T-02-026
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: 'Clock speed: up to 240 MHz
+
+    '
+  de: Features section
+- id: T-07-066
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'Six GPIOs needed for in-package flash
+
+    '
+  de: Features section
+- id: T-A-036
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'GPIO14, ADC2_CH6, RTC_GPIO16, TOUCH6, EMAC_TXD2, HSPICLK, HS2_CLK, SD_CLK, MTMS
+
+    '
+  de: таблиця пінів
+- id: T-B-065
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'The operating voltage of ESP32 ranges from 2.3 V to 3.6 V
+
+    '
+  de: параметри живлення
+- id: T-01-004
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC low-power 40
+    nm
+
+    '
+  de: технологія чипа
+- id: T-02-028
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'support the clock frequency of up to 240 MHz
+
+    '
+  de: частота ядра
+- id: T-06-014
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'recommended output current is 500 mA
+
+    '
+  de: живлення вимоги
+- id: T-02-030
+  verdykt: pidtverdzheno
+  cytata: Resistance of internal pull-up resistor — 45 — kΩ
+  fayl: esp32_datasheet_en.pdf
+  de: page 3106, Electrical Characteristics
+- id: T-07-055
+  verdykt: pidtverdzheno
+  cytata: Resistance of internal pull-up resistor — 45 — kΩ
+  fayl: esp32_datasheet_en.pdf
+  de: page 3106, strapping pins use 45 kΩ pull-up
+- id: T-A-045
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'GPIO25     14    I/O    GPIO25, ADC2_CH8,        RTC_GPIO6,      DAC_1,       EMAC_RXD0
+
+    '
+  de: рядок 881, таблиця пінаути
+- id: T-E-137
+  verdykt: pidtverdzheno
+  fayl: a4988.pdf
+  cytata: 'Simply inputting one pulse on the STEP input drives the motor one microstep.
+
+    '
+  de: сторінка з описом, перший абзац про трансльяторе
+- id: T-01-038
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: '2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC
+
+    '
+  de: заголовок розділу про RF можливості
+- id: T-02-031
+  verdykt: pidtverdzheno
+  fayl: esp32-s2_datasheet_en.pdf
+  cytata: 'SRAM: 320 KB
+
+    '
+  de: розділ про параметри ESP32-S2
+- id: T-05-067
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'pull-up/pull-down resistors at reset if the pins are not connected to any circuit
+
+    '
+  de: розділ про GPIO поведінку з підтягувальними резисторами
+- id: T-16-017
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'UART Download Boot
+
+    '
+  de: розділ про режим завантаження прошивки по UART
+- id: T-A-047
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'The DAC can be configured by GPIO 25 and GPIO 26
+
+    '
+  de: Section 4.9.2 Pin Assignment
+- id: T-B-195
+  verdykt: pidtverdzheno
+  fayl: 39-wifi.md
+  cytata: 'RSSI варто логувати завжди
+
+    '
+  de: про діагностику Wi-Fi
+- id: T-B-246
+  verdykt: pidtverdzheno
+  fayl: 31-freertos.md
+  cytata: 'Спільна змінна без захисту
+
+    '
+  de: базовий принцип защиту при мультитаскінгу
+- id: T-B-073
+  verdykt: pidtverdzheno
+  fayl: 06-zhyvlennya.md
+  cytata: 'rst:0xf (RTCWDT_BROWN_OUT_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+
+    '
+  de: brownout детектор в boot-логу
+- cytata: If Wi-Fi module is using the SAR ADC2, users can not measure the analog signal from the pins
+    using SAR ADC2.
+  de: Chapter 31.3.1 - This confirms ADC1 is independent of Wi-Fi
+  fayl: esp32_technical_reference_manual_en.pdf
+  id: '[T-A-053] dodatky/a-pinouty.md:34'
+  verdykt: pidtverdzheno
+- id: T-A-054
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: GPIO – Input only pins, output is not supported due to lack of pull-up/pull-down resistors.
+  de: Appendix A.1, Notes on ESP32 Pin Lists
+- id: T-02-042
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 802.11n
+  de: Features section - Wi-Fi support
+- id: T-07-087
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: Supports GPIO simple input and output
+  de: IO MUX section
+- id: T-08-043
+  verdykt: pidtverdzheno
+  fayl: esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf
+  cytata: Up to 32 GPIOs
+  de: Specifications
+- id: T-A-060
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: GPIO0                Weak pull-up             1
+  de: Table 3-1, Section 3 Boot Configurations
+- id: T-02-043
+  verdykt: pidtverdzheno
+  fayl: esp32-s2_datasheet_en.pdf
+  cytata: The ESP32-S2 Wi-Fi radio and baseband support the following features
+  de: Overview section
+- id: T-03-011
+  verdykt: pidtverdzheno
+  fayl: esp32-s2_datasheet_en.pdf
+  cytata: Xtensa® single-core 32-bit LX7 microprocessor, up to 240 MHz
+  de: Overview - microprocessor specifications
+- id: T-08-044
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: Full-speed USB OTG – USB Serial/JTAG controller
+  de: Peripherals section
+- id: T-A-061
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: 'GPIO0 and GPIO46 control the boot mode after the reset is released.
+
+    '
+  de: Section 3, Boot Configurations
+- id: T-C-041
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: 'eFuse is one-time programmable, once programmed to 1, it can never be reverted to 0.
+
+    '
+  de: eFuse description
+- id: T-06-089
+  verdykt: pidtverdzheno
+  fayl: 06-zhyvlennya.md
+  cytata: Із запасом на старіння і холод беріть 70 % від номіналу.
+  de: рядок 189, розділ бюджет енергії
+- id: T-06-022
+  verdykt: pidtverdzheno
+  fayl: 06-zhyvlennya.md
+  cytata: '| Активний, Wi-Fi у роботі | близько сотні мА середнє |'
+  de: рядок 46, таблиця споживання
+- cytata: 'By default, the USB function is enabled for USB pins (i.e., GPIO19 and GPIO20)
+
+    '
+  de: Table 2-1, ESP32-S3 Pin Descriptions - підтверджує GPIO19/GPIO20 як USB_D- та USB_D+
+  fayl: esp32-s3_datasheet_en.pdf
+  id: T-A-064
+  verdykt: pidtverdzheno
+- cytata: 'Compliant with Bluetooth v4.2 BR/EDR and Bluetooth LE specifications
+
+    '
+  de: Product Overview - підтверджує BLE для ESP32
+  fayl: 21953a2f-esp32_datasheet_en.pdf
+  id: T-02-054
+  verdykt: pidtverdzheno
+- cytata: GPIO1,     U0TXD
+  de: Table 2-1 Pin Descriptions - GPIO1=TX, GPIO3=RX
+  fayl: 21953a2f-esp32_datasheet_en.pdf
+  id: T-07-106
+  verdykt: pidtverdzheno
+- cytata: USB Serial/JTAG controller
+  de: Overview - USB контролер в S3
+  fayl: esp32-s3_datasheet_en.pdf
+  id: T-09-042
+  verdykt: pidtverdzheno
+- cytata: 'SRAM: 400 KB
+
+    '
+  de: Chapter 1 Specifications - SRAM розмір C3
+  fayl: esp32-c3_datasheet_en.pdf
+  id: T-14-013
+  verdykt: pidtverdzheno
+- id: T-A-069
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: 'GPIO0, GPIO3, GPIO45, GPIO46 : Strapping pins.'
+  de: Boot Configurations
+- id: T-B-209
+  verdykt: pidtverdzheno
+  fayl: index.rst
+  cytata: '- **NimBLE**: A lightweight stack for Bluetooth LE only. Ideal for resource-constrained applications
+    due to smaller code size and memory usage.'
+  de: Bluetooth documentation
+- id: T-02-042
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 802.11n
+  de: Features section
+- id: T-07-087
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: Supports GPIO simple input and output
+  de: IO MUX section
+- id: T-08-043
+  verdykt: pidtverdzheno
+  fayl: esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf
+  cytata: Up to 32 GPIOs
+  de: Specifications
+- id: T-20-055
+  verdykt: pidtverdzheno
+  fayl: 20-bekap.md
+  cytata: 'Три випадки, що покривають майже все:'
+  de: рядок 123
+- id: T-21-080
+  verdykt: pidtverdzheno
+  fayl: 21-seriyna.md
+  cytata: 'Разом із журналом зберігаються **самі файли прошивки** тієї версії, що поїхала, і, обов''язково,
+    `.elf` того самого збирання: без нього backtrace з поля не розшифрувати (картка [К7](#k-panika)).'
+  de: рядок 161-163
+- id: T-22-050
+  verdykt: pidtverdzheno
+  fayl: 22-zberezhennya-stanu.md
+  cytata: Порядок «спробуємо прошити, а якщо не вийде — знімемо дамп» не працює в принципі.
+  de: рядок 111-112
+- id: T-22-032
+  verdykt: pidtverdzheno
+  fayl: 22-zberezhennya-stanu.md
+  cytata: Кнопка на `GPIO0` пояснює, чому пристрій іноді не стартує (розділ 16), і без запису це б довелося
+    шукати годинами.
+  de: рядок 71-72
+- id: T-23-094
+  verdykt: pidtverdzheno
+  fayl: 23-triazh.md
+  cytata: Він **не** відповідає на «що воно робить» і «звідки взявся код».
+  de: рядок 169-170
+- id: T-A-069
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: 'GPIO0, GPIO3, GPIO45, GPIO46 : Strapping pins.'
+  de: Boot Configurations
+- id: T-B-209
+  verdykt: pidtverdzheno
+  fayl: index.rst
+  cytata: '- **NimBLE**: A lightweight stack for Bluetooth LE only. Ideal for resource-constrained applications
+    due to smaller code size and memory usage.'
+  de: Bluetooth documentation

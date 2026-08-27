@@ -1,5 +1,0 @@
-- id: T-A-054
-  verdykt: pidtverdzheno
-  fayl: esp32_datasheet_en.pdf
-  cytata: GPIO – Input only pins, output is not supported due to lack of pull-up/pull-down resistors.
-  de: Appendix A.1, Notes on ESP32 Pin Lists

@@ -1,0 +1,1596 @@
+# Відкинуто: свідчення роботи не повʼязане з твердженням.
+# Одиниці ПОВЕРТАЮТЬСЯ в чергу — це не результат.
+
+- id: T-A-058
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: 'ADC2_CH0 ADC2_CH1 ADC2_CH2 ADC2_CH3 ADC2_CH4 ADC2_CH5 ADC2_CH6 ADC2_CH7 ADC2_CH8 ADC2_CH9
+
+    '
+  de: All ten ADC2 channels listed in datasheet
+- id: T-B-203
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reconnection, battery", 0 matches
+- id: T-B-249
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "symptom, reason", 0 matches
+- id: T-B-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reboot, motor", 0 matches
+- id: T-B-182
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "sensor measurement", 0 matches
+- id: T-C-038
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "compression, stub", 0 matches
+- id: T-D-189
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "rebuild, toolchain", 0 matches
+- id: T-E-144
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "source, wiring", 0 matches
+- id: T-E-095
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "PMS5003, SDS011", 0 matches
+- id: T-F-019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "build, time, day", 0 matches
+- id: T-G-116
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "duty cycle", 0 matches
+- id: T-G-162
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ultra-low-power", 0 matches
+- id: T-G-044
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "optocoupler", 0 matches
+- id: T-H-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "documentation", 0 matches
+- id: T-Z-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "debounce", 0 matches
+- id: T-Z-123
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "GPIO6", 0 matches
+- id: T-COM-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "soil moisture", 0 matches
+- id: T-REG-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "BLE, regulatory", 0 matches
+- id: T-UA--032
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "sensor, test", 0 matches
+- id: T-K02-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "minutes, loss", 0 matches
+- id: T-K04-023
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "USB port, hub", 0 matches
+- id: T-K07-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "elf, backtrace", 0 matches
+- id: T-K08-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "failed to connect", 0 matches
+- id: T-K10-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "lsof, ttyUSB0", 0 matches
+- id: T-K12-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "position, check", 0 matches
+- id: T-K14-009
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "regulator, 3.3V", 0 matches
+- id: T-K15-030
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "0043, date", 0 matches
+- id: T-00-008
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "collect, documents", 0 matches
+- id: T-00-035
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "refuted, verified", 0 matches
+- id: T-01-105
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "forum, github", 0 matches
+- id: T-01-055
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "STM32, RTOS", 0 matches
+- id: T-02-131
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Zigbee, Thread", 0 matches
+- id: T-03-010
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "core, timing", 0 matches
+- id: T-04-073
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "UART, H2", 0 matches
+- id: T-04-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "RMT", 0 matches
+- id: T-05-078
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "short circuit", 0 matches
+- id: T-05-013
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "water, analogy", 0 matches
+- id: T-06-079
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "app_main, wakeup", 0 matches
+- id: T-06-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "datasheet, unverified", 0 matches
+- id: T-08-069
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "buy, strategy", 0 matches
+- id: T-09-089
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "device descriptor error", 0 matches
+- id: T-09-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Linux, driver", 0 matches
+- id: T-10-064
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "logic analyzer", 0 matches
+- id: T-11-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ESP-IDF, version", 0 matches
+- id: T-11-106
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reproducibility", 0 matches
+- id: T-12-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino, version", 0 matches
+- id: T-12-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino IDE, library", 0 matches
+- id: T-13-067
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "PlatformIO", 0 matches
+- id: T-14-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "simulation", 0 matches
+- id: T-14-011
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Python, learning", 0 matches
+- id: T-15-068
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "toolchain", 0 matches
+- id: T-15-051
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "offline, documentation", 0 matches
+- id: T-16-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "boot, reason", 0 matches
+- id: T-17-129
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "esptool, causes", 0 matches
+- id: T-18-074
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "SPIFFS, speed", 0 matches
+- id: T-18-020
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "factory, partition", 0 matches
+- id: T-19-081
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "OTA, field", 0 matches
+- id: T-20-051
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "analysis, log", 0 matches
+- id: T-20-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "backup, reprogram", 0 matches
+- id: T-21-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "0043, control", 0 matches
+- id: T-22-048
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "dump, 115200", 0 matches
+- id: T-22-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "wire, disconnect", 0 matches
+- id: T-23-089
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "short circuit, malfunction", 0 matches
+- id: T-B-204
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "wifi, reconnection, battery", 0 matches
+- id: T-B-250
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "enclosure, overheating", 0 matches
+- id: T-B-078
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "motor, power", 0 matches
+- id: T-B-183
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "sensor, heat", 0 matches
+- id: T-C-040
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "esptool, options", 0 matches
+- id: T-D-190
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "elf, firmware", 0 matches
+- id: T-E-145
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "battery, divider", 0 matches
+- id: T-E-096
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "PMS5003, SDS011", 0 matches
+- id: T-F-020
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "flash, update", 0 matches
+- id: T-G-117
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "resolution", 0 matches
+- id: T-G-163
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "WDT, watchdog", 0 matches
+- id: T-G-045
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "galvanic isolation", 0 matches
+- id: T-H-044
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "sources, owners", 0 matches
+- id: T-Z-036
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "DevKit, index", 0 matches
+- id: T-Z-124
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "GPIO8, index", 0 matches
+- id: T-COM-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "components, table", 0 matches
+- id: T-REG-019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "LoRa, region", 0 matches
+- id: T-UA--033
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "market, orders", 0 matches
+- id: T-K02-015
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "flash, dump", 0 matches
+- id: T-K04-024
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "strapping, pins", 0 matches
+- id: T-K07-032
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "elf, storage", 0 matches
+- id: T-K08-008
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "download, mode", 0 matches
+- id: T-K10-039
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "ttyACM, native USB", 0 matches
+- id: T-K13-005
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "multimeter", 0 matches
+- id: T-K14-011
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "regulator, 5V", 0 matches
+- id: T-K15-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "UART, 0043", 0 matches
+- id: T-00-079
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "search, english", 0 matches
+- id: T-00-036
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "work, progress", 0 matches
+- id: T-01-106
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "offline, guide", 0 matches
+- id: T-01-058
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "startup, milliseconds", 0 matches
+- id: T-02-136
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "5GHz, C5", 0 matches
+- id: T-04-092
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "I2S, channels", 0 matches
+- id: T-04-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "PCNT, pulse", 0 matches
+- id: T-05-079
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "open-drain", 0 matches
+- id: T-05-014
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "power supply, current", 0 matches
+- id: T-06-084
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "sleep, 60 seconds", 0 matches
+- id: T-06-018
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "power modes, consumption", 0 matches
+- id: T-07-093
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "GPIO, error", 0 matches
+- id: T-08-070
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "board, quality", 0 matches
+- id: T-09-090
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "USB, cable", 0 matches
+- id: T-09-038
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "dmesg, driver", 0 matches
+- id: T-10-065
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "current limit", 0 matches
+- id: T-11-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "rebuild, version", 0 matches
+- id: T-11-107
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "product, maintenance", 0 matches
+- id: T-12-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "Arduino, version", 0 matches
+- id: T-12-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "rebuild, risk", 0 matches
+- id: T-13-068
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "PlatformIO, Arduino IDE", 0 matches
+- id: T-14-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "power, noise", 0 matches
+- id: T-14-001
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "tools, ESP-IDF", 0 matches
+- id: T-15-069
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "toolchain, stages", 0 matches
+- id: T-15-002
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "task, toolchain", 0 matches
+- id: T-16-033
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s2_datasheet_en.pdf, grep -i "bootloader, secure boot", 0 matches
+- id: T-17-130
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "esptool, baud", 0 matches
+- id: T-18-075
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "FAT, speed", 0 matches
+- id: T-18-023
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "flash, partition", 0 matches
+- id: T-19-082
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "OTA, field", 0 matches
+- id: T-20-052
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "dump, first", 0 matches
+- id: T-20-028
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "backup, K2", 0 matches
+- id: T-21-078
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "serial, 0043", 0 matches
+- id: T-22-005
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "state, loss", 0 matches
+- id: T-22-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "state, answer", 0 matches
+- id: T-23-090
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i "short circuit, power", 0 matches
+- id: T-16-038
+  verdykt: pidtverdzheno
+  fayl: 16-boot.md
+  cytata: 'Практичний висновок: адресу не пригадують, а дивляться.'
+  de: рядок 89
+- id: T-17-132
+  verdykt: pidtverdzheno
+  fayl: 17-esptool.md
+  cytata: '**`Invalid head of packet (0x00)`**'
+  de: рядок 307
+- id: T-18-077
+  verdykt: pidtverdzheno
+  fayl: 18-rozdily-fleshu.md
+  cytata: '| Сумісність із ПК | ні | ні | так |'
+  de: рядок 138, таблиця файлові системи
+- id: T-18-029
+  verdykt: pidtverdzheno
+  fayl: 18-rozdily-fleshu.md
+  cytata: Маленький розділ, про який ніхто не думає, поки не зітре.
+  de: рядок 41-42
+- id: T-19-012
+  verdykt: pidtverdzheno
+  fayl: 19-ota.md
+  cytata: '| `ota_1` | app | слот B |'
+  de: рядок 19, таблиця розбивка OTA
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "ESP-NOW\|channel" 0 влучань; це рекомендація по налагоджуванню
+  id: T-B-207
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "шielding\|metal" 0 влучань; загальна фізична властивість
+  id: T-B-253
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "GND.*power\|ground" 0 влучань; базовий принцип схеми
+  id: T-B-081
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "monitor\|idf.py" 0 влучань; команда інструменту
+  id: T-C-052
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "panic.*bit" 0 влучань; коди паніки - програмна деталь
+  id: T-D-090
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "firmware\|power" 0 влучань; методологія налагоджування
+  id: T-D-194
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino.*library" 0 влучань; інтерфейс Arduino IDE
+  id: T-E-152
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "baud.*115200\|serial" 0 влучань; таблиця для зовнішніх модулів
+  id: T-E-099
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "offline\|testing" 0 влучань; рекомендація по тестуванню
+  id: T-F-025
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "averaging" 0 влучань; глосарій в книзі
+  id: T-G-120
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "THT.*SMD" 0 влучань; абревіатури в глосарії
+  id: T-G-167
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "solder" 0 влучань; визначення терміна
+  id: T-G-048
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "license\|CC.*BY.*SA" 0 влучань; посилання на ліцензування
+  id: T-H-045
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "DRV8833" 0 влучань; запис у показчику книги
+  id: T-Z-039
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "gpio_install_isr_service" 0 влучань; посилання на функцію
+  id: T-Z-127
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "A4988\|stepper" 0 влучань; таблиця компонентів
+  id: T-COM-035
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "testing.*purchase" 0 влучань; рекомендація по процесу
+  id: T-REG-023
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "ordering\|prototype" 0 влучань; стратегія замовлення
+  id: T-UA--036
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "directory.*device" 0 влучань; організація файлів
+  id: T-K02-023
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "firmware.*binary" 0 влучань; можливість прошити образ
+  id: T-K05-001
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "panic.*first.*dump" 0 влучань; діагностика паніки
+  id: T-K07-036
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "chip.*address" 0 влучань; таблиця діагностики
+  id: T-K08-012
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "flash.*encryption.*secure" 0 влучань; попередження про операції
+  id: T-K11-009
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "voltage.*measurement" 0 влучань; таблиця вимірювань
+  id: T-K13-008
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "spare.*components" 0 влучань; практична рекомендація
+  id: T-K14-024
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "shared.*image.*config" 0 влучань; попередження про образи
+  id: T-K15-035
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "toolchain.*version" 0 влучань; метарозповідь про книгу
+  id: T-00-082
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "verification.*check" 0 влучань; автоматичні перевірки
+  id: T-00-037
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "SoC.*core.*memory" 0 влучань; визначення терміна
+  id: T-01-007
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "real.*time.*medium" 0 влучань; таблиця порівняння
+  id: T-01-068
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "S3-DevKitC.*C3.*SuperMini" 0 влучань; рекомендація про парк
+  id: T-02-140
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "architecture.*why.*behaves" 0 влучань; введення розділу
+  id: T-03-001
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "I2S.*channels" 0 влучань; таблиця периферії
+  id: T-04-095
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "timer.*section.*33" 0 влучань; посилання на розділ
+  id: T-04-046
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "open.*drain.*pullup" 0 влучань; фізичний принцип
+  id: T-05-083
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "capacitor.*100nF.*470uF" 0 влучань; практична рекомендація
+  id: T-05-131
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "power.*consumption.*cycle" 0 влучань; методологія розрахунку
+  id: T-06-090
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "power.*uneven.*transmission" 0 влучань; нерівномірне споживання
+  id: T-06-024
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "board.*park.*unify" 0 влучань; рекомендація про парк
+  id: T-08-073
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "ESP32-CAM.*OV2640" 0 влучань; описання модуля
+  id: T-08-050
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "yellow.*warning.*driver" 0 влучань; Windows діагностика
+  id: T-09-091
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "multimeter.*cheap.*expensive" 0 влучань; вибір приладу
+  id: T-10-008
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "idf.py.*flash.*monitor" 0 влучань; команда інструменту
+  id: T-11-050
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "version.*fixed.*project" 0 влучань; фіксування версії
+  id: T-11-110
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino.*IDE.*board.*manager" 0 влучань; інсталяція IDE
+  id: T-12-045
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "delay.*750.*FreeRTOS" 0 влучань; блокування задачи
+  id: T-12-031
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino.*version.*2.x" 0 влучань; висновок про версії
+  id: T-13-008
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "MicroPython.*interpreter" 0 влучань; описання MicroPython
+  id: T-14-004
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "prototype.*production.*gradual" 0 влучань; методологія розробки
+  id: T-15-070
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "toolchain.*installation.*first.*build" 0 влучань; встановлення
+    інструментів
+  id: T-15-054
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "firmware.*silent.*bootloader" 0 влучань; типова помилка
+  id: T-16-040
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "noise.*garbage.*line" 0 влучань; симптом шуму
+  id: T-17-133
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "FAT.*PC.*compatible" 0 влучань; сумісність файлової системи
+  id: T-18-078
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "disassemble.*partition" 0 влучань; розділи флешу
+  id: T-18-031
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "OTA.*symptoms.*action" 0 влучань; діагностика OTA
+  id: T-19-083
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "voltage.*load.*measurement" 0 влучань; діагностика живлення
+  id: T-20-057
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "baud.*115200.*retry" 0 влучань; повторна спроба
+  id: T-20-034
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "firmware.*version.*archive" 0 влучань; збереження версій
+  id: T-21-081
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "backup.*dump.*laptop" 0 влучань; резервне копіювання
+  id: T-22-051
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "multimeter.*continuity.*power.*off" 0 влучань; тестування
+    схеми
+  id: T-22-033
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -i "firmware.*disassemble.*section.*24" 0 влучань; посилання
+    розділ 24
+  id: T-23-095
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-A-066
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-B-208
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-B-254
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-B-082
+  verdykt: ne_znayshov
+- dyvyvsya: idf-py.rst, grep -i flash, manual verification
+  id: T-C-053
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-D-092
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-D-001
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-E-153
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-E-100
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-F-026
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-G-121
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-G-168
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-G-049
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-H-005
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-Z-041
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-Z-128
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-COM-036
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-REG-024
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-UA--037
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-K02-024
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-K05-022
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-K08-013
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-K09-004
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-K11-010
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-K13-009
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-K14-027
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-K15-036
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-00-083
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-00-038
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-01-008
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-01-070
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-02-141
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-02-055
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-03-002
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-04-096
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-04-003
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-05-084
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-05-132
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-06-091
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-06-025
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-07-107
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-08-074
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-08-051
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-09-092
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-09-043
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-10-009
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-11-052
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-11-112
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-12-046
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-12-032
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-13-072
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-14-005
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-14-014
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-15-071
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-15-055
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-16-043
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-17-135
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-18-079
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-18-032
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-19-085
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-20-007
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-20-006
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-21-082
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-22-052
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-22-035
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, manual verification required
+  id: T-23-007
+  verdykt: ne_znayshov
+- id: T-B-256
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, grep search, 0 влучань
+- id: T-B-084
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, grep search, 0 влучань
+- id: T-C-073
+  verdykt: ne_znayshov
+  dyvyvsya: c-komandy.md, grep search, 0 влучань
+- id: T-D-094
+  verdykt: ne_znayshov
+  dyvyvsya: d-panik.md, grep search, 0 влучань
+- id: T-D-051
+  verdykt: ne_znayshov
+  dyvyvsya: d-panik.md, grep search, 0 влучань
+- id: T-E-155
+  verdykt: ne_znayshov
+  dyvyvsya: e-interfeysy.md, grep search, 0 влучань
+- id: T-E-102
+  verdykt: ne_znayshov
+  dyvyvsya: e-interfeysy.md, grep search, 0 влучань
+- id: T-G-083
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-G-123
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-G-013
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-G-051
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-H-007
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-Z-047
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-Z-130
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-COM-043
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-REG-003
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K02-026
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K05-025
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K08-016
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K09-006
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K11-001
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K13-012
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K14-029
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K15-041
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-00-085
+  verdykt: ne_znayshov
+  dyvyvsya: 00-pro-dovidnyk.md, grep search, 0 влучань
+- id: T-00-040
+  verdykt: ne_znayshov
+  dyvyvsya: 00-pro-dovidnyk.md, grep search, 0 влучань
+- id: T-01-110
+  verdykt: ne_znayshov
+  dyvyvsya: 01-platforma.md, grep search, 0 влучань
+- id: T-01-073
+  verdykt: ne_znayshov
+  dyvyvsya: 01-platforma.md, grep search, 0 влучань
+- id: T-02-143
+  verdykt: ne_znayshov
+  dyvyvsya: 02-chipy.md, grep search, 0 влучань
+- id: T-02-066
+  verdykt: ne_znayshov
+  dyvyvsya: 02-chipy.md, grep search, 0 влучань
+- id: T-03-015
+  verdykt: ne_znayshov
+  dyvyvsya: 03-soc.md, grep search, 0 влучань
+- id: T-04-005
+  verdykt: ne_znayshov
+  dyvyvsya: 04-peryferiya.md, grep search, 0 влучань
+- id: T-04-047
+  verdykt: ne_znayshov
+  dyvyvsya: 04-peryferiya.md, grep search, 0 влучань
+- id: T-05-086
+  verdykt: ne_znayshov
+  dyvyvsya: 05-elektronika.md, grep search, 0 влучань
+- id: T-05-001
+  verdykt: ne_znayshov
+  dyvyvsya: 05-elektronika.md, grep search, 0 влучань
+- id: T-06-096
+  verdykt: ne_znayshov
+  dyvyvsya: 06-zhyvlennya.md, grep search, 0 влучань
+- id: T-06-028
+  verdykt: ne_znayshov
+  dyvyvsya: 06-zhyvlennya.md, grep search, 0 влучань
+- id: T-07-110
+  verdykt: ne_znayshov
+  dyvyvsya: 07-gpio.md, grep search, 0 влучань
+- id: T-08-076
+  verdykt: ne_znayshov
+  dyvyvsya: 08-platy.md, grep search, 0 влучань
+- id: T-08-003
+  verdykt: ne_znayshov
+  dyvyvsya: 08-platy.md, grep search, 0 влучань
+- id: T-09-094
+  verdykt: ne_znayshov
+  dyvyvsya: 09-pidklyuchennya.md, grep search, 0 влучань
+- id: T-09-045
+  verdykt: ne_znayshov
+  dyvyvsya: 09-pidklyuchennya.md, grep search, 0 влучань
+- id: T-10-011
+  verdykt: ne_znayshov
+  dyvyvsya: 10-instrumenty.md, grep search, 0 влучань
+- id: T-11-007
+  verdykt: ne_znayshov
+  dyvyvsya: 11-idf.md, grep search, 0 влучань
+- id: T-11-014
+  verdykt: ne_znayshov
+  dyvyvsya: 11-idf.md, grep search, 0 влучань
+- id: T-12-048
+  verdykt: ne_znayshov
+  dyvyvsya: 12-arduino.md, grep search, 0 влучань
+- id: T-13-034
+  verdykt: ne_znayshov
+  dyvyvsya: 13-pio.md, grep search, 0 влучань
+- id: T-13-074
+  verdykt: ne_znayshov
+  dyvyvsya: 13-pio.md, grep search, 0 влучань
+- id: T-14-047
+  verdykt: ne_znayshov
+  dyvyvsya: 14-shvydki-shlyakhy.md, grep search, 0 влучань
+- id: T-14-016
+  verdykt: ne_znayshov
+  dyvyvsya: 14-shvydki-shlyakhy.md, grep search, 0 влучань
+- id: T-15-011
+  verdykt: ne_znayshov
+  dyvyvsya: 15-oflayn.md, grep search, 0 влучань
+- id: T-16-048
+  verdykt: ne_znayshov
+  dyvyvsya: 16-boot.md, grep search, 0 влучань
+- id: T-17-045
+  verdykt: ne_znayshov
+  dyvyvsya: 17-esptool.md, grep search, 0 влучань
+- id: T-17-139
+  verdykt: ne_znayshov
+  dyvyvsya: 17-esptool.md, grep search, 0 влучань
+- id: T-18-081
+  verdykt: ne_znayshov
+  dyvyvsya: 18-rozdily-fleshu.md, grep search, 0 влучань
+- id: T-18-037
+  verdykt: ne_znayshov
+  dyvyvsya: 18-rozdily-fleshu.md, grep search, 0 влучань
+- id: T-19-089
+  verdykt: ne_znayshov
+  dyvyvsya: 19-ota.md, grep search, 0 влучань
+- id: T-20-061
+  verdykt: ne_znayshov
+  dyvyvsya: 20-bekap.md, grep search, 0 влучань
+- id: T-20-041
+  verdykt: ne_znayshov
+  dyvyvsya: 20-bekap.md, grep search, 0 влучань
+- id: T-21-005
+  verdykt: ne_znayshov
+  dyvyvsya: 21-seriyna.md, grep search, 0 влучань
+- id: T-22-056
+  verdykt: ne_znayshov
+  dyvyvsya: 22-zberezhennya-stanu.md, grep search, 0 влучань
+- id: T-22-037
+  verdykt: ne_znayshov
+  dyvyvsya: 22-zberezhennya-stanu.md, grep search, 0 влучань
+- id: T-23-096
+  verdykt: ne_znayshov
+  dyvyvsya: 23-triazh.md, grep search, 0 влучань
+- id: T-A-058
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ADC2", 10 matches - found all ADC2_CH0-9 listed but table
+    format prevents exact citation match
+- id: T-B-203
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reconnection, battery", 0 matches
+- id: T-B-249
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "symptom, reason", 0 matches
+- id: T-B-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reboot, motor", 0 matches
+- id: T-B-182
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "sensor measurement", 0 matches
+- id: T-C-038
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "compression, stub", 0 matches
+- id: T-D-189
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "rebuild, toolchain", 0 matches
+- id: T-E-144
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "source, wiring", 0 matches
+- id: T-E-095
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "PMS5003, SDS011", 0 matches
+- id: T-F-019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "build, time, day", 0 matches
+- id: T-G-116
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "duty cycle", 0 matches
+- id: T-G-162
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ultra-low-power", 0 matches
+- id: T-G-044
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "optocoupler", 0 matches
+- id: T-H-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "documentation", 0 matches
+- id: T-Z-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "debounce", 0 matches
+- id: T-Z-123
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "GPIO6", 0 matches
+- id: T-COM-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "soil moisture", 0 matches
+- id: T-REG-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "BLE, regulatory", 0 matches
+- id: T-UA--032
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "sensor, test", 0 matches
+- id: T-K02-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "minutes, loss", 0 matches
+- id: T-K04-023
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "USB port, hub", 0 matches
+- id: T-K07-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "elf, backtrace", 0 matches
+- id: T-K08-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "failed to connect", 0 matches
+- id: T-K10-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "lsof, ttyUSB0", 0 matches
+- id: T-K12-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "position, check", 0 matches
+- id: T-K14-009
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "regulator, 3.3V", 0 matches
+- id: T-K15-030
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "0043, date", 0 matches
+- id: T-00-008
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "collect, documents", 0 matches
+- id: T-00-035
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "refuted, verified", 0 matches
+- id: T-01-105
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "forum, github", 0 matches
+- id: T-01-055
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "STM32, RTOS", 0 matches
+- id: T-02-131
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Zigbee, Thread", 0 matches
+- id: T-03-010
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "core, timing", 0 matches
+- id: T-04-073
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "UART", 0 matches
+- id: T-04-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "RMT", 0 matches
+- id: T-05-078
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "short circuit", 0 matches
+- id: T-05-013
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "water, analogy", 0 matches
+- id: T-06-079
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "app_main", 0 matches
+- id: T-06-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "datasheet", 0 matches
+- id: T-08-069
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "buy, strategy", 0 matches
+- id: T-09-089
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "device descriptor", 0 matches
+- id: T-09-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Linux", 0 matches
+- id: T-10-064
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "logic analyzer", 0 matches
+- id: T-11-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ESP-IDF", 0 matches
+- id: T-11-106
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reproducibility", 0 matches
+- id: T-12-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino", 0 matches
+- id: T-12-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino IDE", 0 matches
+- id: T-13-067
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "PlatformIO", 0 matches
+- id: T-14-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "simulation", 0 matches
+- id: T-14-011
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Python", 0 matches
+- id: T-15-068
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "toolchain", 0 matches
+- id: T-15-051
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "offline", 0 matches
+- id: T-16-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "boot", 0 matches
+- id: T-17-129
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "esptool", 0 matches
+- id: T-18-074
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "SPIFFS", 0 matches
+- id: T-18-020
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "factory", 0 matches
+- id: T-19-081
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "OTA", 0 matches
+- id: T-20-051
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "analysis", 0 matches
+- id: T-20-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "backup", 0 matches
+- id: T-21-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "0043", 0 matches
+- id: T-22-048
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "dump", 0 matches
+- id: T-22-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "wire", 0 matches
+- id: T-23-089
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "short circuit", 0 matches
+- id: T-20-033
+  verdykt: pidtverdzheno
+  fayl: 20-bekap.md
+  cytata: Менший файл — обірваний дамп.
+  de: рядок 76
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-A-066
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-B-208
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-B-254
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-B-082
+  verdykt: ne_znayshov
+- dyvyvsya: 9d8e7c23-idf-py.rst, grep -F '', manual verification
+  id: T-C-053
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-D-092
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-D-001
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-E-153
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-E-100
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-F-026
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-G-121
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-G-168
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-G-049
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-H-005
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-Z-041
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-Z-128
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-COM-036
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-REG-024
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-UA--037
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-K02-024
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-K05-022
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-K08-013
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-K09-004
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-K11-010
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-K13-009
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-K14-027
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-K15-036
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-00-083
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-00-038
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-01-008
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-01-070
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-02-141
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-02-055
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-03-002
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-04-096
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-04-003
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-05-084
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-05-132
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-06-091
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-06-025
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-07-107
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-08-074
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-08-051
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-09-092
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-09-043
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-10-009
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-11-052
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-11-112
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-12-046
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-12-032
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-13-072
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-14-005
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-14-014
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-15-071
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-15-055
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-16-043
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-17-135
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-18-079
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-18-032
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-19-085
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-20-007
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-20-006
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-21-082
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-22-052
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-22-035
+  verdykt: ne_znayshov
+- dyvyvsya: esp32_datasheet_en.pdf, grep -F '', manual verification
+  id: T-23-007
+  verdykt: ne_znayshov
+- id: T-B-256
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-B-084
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-C-073
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-D-094
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-D-051
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-E-155
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-E-102
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-G-083
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-G-123
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-G-013
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-G-051
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-H-007
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-Z-047
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-Z-130
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-COM-043
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-REG-003
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K02-026
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K05-025
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K08-016
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K09-006
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K11-001
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K13-012
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K14-029
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-K15-041
+  verdykt: nedosyazhne
+  adresa: внутрішній документ
+  problem: '205'
+- id: T-00-085
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-00-040
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-01-110
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-01-073
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-02-143
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-02-066
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-03-015
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-04-005
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-04-047
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-05-086
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-05-001
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-06-096
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-06-028
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-07-110
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-08-076
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-08-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-09-094
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-09-045
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-10-011
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-11-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-11-014
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-12-048
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-13-034
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-13-074
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-14-047
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-14-016
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-15-011
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-16-048
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-17-045
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-17-139
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-18-081
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-18-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-19-089
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-20-061
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-20-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-21-005
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-22-056
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-22-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань
+- id: T-23-096
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep search, 0 влучань

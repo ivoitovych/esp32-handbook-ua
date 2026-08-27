@@ -1,6 +1,0 @@
-- cytata: If Wi-Fi module is using the SAR ADC2, users can not measure the analog signal from the pins
-    using SAR ADC2.
-  de: Chapter 31.3.1 - This confirms ADC1 is independent of Wi-Fi
-  fayl: esp32_technical_reference_manual_en.pdf
-  id: '[T-A-053] dodatky/a-pinouty.md:34'
-  verdykt: pidtverdzheno

@@ -1,0 +1,263 @@
+- id: T-A-028
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-B-189
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet, технічна характеристика — які частоти радіомодуля
+
+- id: T-B-240
+  rid: pozyciya
+  chomu: причина проблеми, пояснення явища
+
+- id: T-B-062
+  rid: ne-tverdzhennya
+  chomu: метод діагностики, рядок інструкції
+
+- id: T-B-170
+  rid: pozyciya
+  chomu: рекомендація щодо налаштування перед запуском
+
+- id: T-C-101
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці порівняння версій
+
+- id: T-D-164
+  rid: ne-tverdzhennya
+  chomu: означення терміна в контексті опису паніки
+
+- id: T-E-005
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці інтерфейсів
+
+- id: T-E-082
+  rid: ne-tverdzhennya
+  chomu: рядок довідника компонент-бібліотека
+
+- id: T-F-010
+  rid: pozyciya
+  chomu: авторське судження про важливість pinout для роботи з платою
+
+- id: T-G-106
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія — переклад терміна
+
+- id: T-G-144
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія — розшифровка абревіатури
+
+- id: T-G-033
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія — переклад терміна
+
+- id: T-G-073
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія — переклад терміна
+
+- id: T-H-033
+  rid: ne-tverdzhennya
+  chomu: назва й опис джерела, навігація до розділу
+
+- id: T-Z-112
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика — перелік сторінок
+
+- id: T-COM-006
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці вибору компонентів
+
+- id: T-REG-007
+  rid: ne-tverdzhennya
+  chomu: навіска до регуляторного розділу, вступна фраза
+
+- id: T-UA--017
+  rid: pozyciya
+  chomu: рекомендація-рада щодо піддержання запасів компонентів
+
+- id: T-K01-004
+  rid: pozyciya
+  chomu: авторське судження про головне джерело істини — це порада як користуватися платою
+
+- id: T-K03-029
+  rid: ne-tverdzhennya
+  chomu: крок в інструкції, рядок чеклісту
+
+- id: T-K07-002
+  rid: ne-tverdzhennya
+  chomu: означення того, що такий звіт
+
+- id: T-K08-050
+  rid: pozyciya
+  chomu: рекомендація методики діагностики
+
+- id: T-K10-017
+  rid: ne-tverdzhennya
+  chomu: рядок коду в інструкції, не твердження
+
+- id: T-K12-002
+  rid: ne-tverdzhennya
+  chomu: назва вступу розділу
+
+- id: T-K13-039
+  rid: ne-tverdzhennya
+  chomu: рядок довідника значення регістра
+
+- id: T-K15-020
+  rid: ne-tverdzhennya
+  chomu: рядок чеклісту/інструкції
+
+- id: T-00-067
+  rid: ne-tverdzhennya
+  chomu: інструкція, навігація по розділах
+
+- id: T-00-025
+  rid: ne-tverdzhennya
+  chomu: рядок легенди таблиці
+
+- id: T-01-096
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Programming Guide — назва офіційної документації
+
+- id: T-01-034
+  rid: pozyciya
+  chomu: авторське судження про ефективність платформи для певного застосунку
+
+- id: T-02-117
+  rid: ne-tverdzhennya
+  chomu: посилання на зовнішній вкладиш, навігація
+
+- id: T-02-026
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці технічних характеристик — число без контексту твердження
+
+- id: T-03-066
+  rid: dzherelo-ye
+  shukaty: пам'ять ESP32, datasheet — діапазони адрес
+
+- id: T-04-063
+  rid: pozyciya
+  chomu: авторське пояснення причини розходження в назвах
+
+- id: T-04-021
+  rid: ne-tverdzhennya
+  chomu: посилання на розділ, навігація
+
+- id: T-05-062
+  rid: ne-tverdzhennya
+  chomu: техніко-схемотехнічна констатація факту, не авторське судження
+
+- id: T-05-117
+  rid: dzherelo-ye
+  shukaty: захист входу мікросхеми від розряду — електроніка, datasheet
+
+- id: T-06-061
+  rid: ne-tverdzhennya
+  chomu: означення режиму Modem sleep
+
+- id: T-06-122
+  rid: ne-tverdzhennya
+  chomu: причинно-наслідкове пояснення властивостей генератора
+
+- id: T-07-066
+  rid: dzherelo-ye
+  shukaty: ESP32 classic datasheet — який GPIO існує на чипі
+
+- id: T-07-036
+  rid: ne-tverdzhennya
+  chomu: схемотехнічна констатація способу керування піном
+
+- id: T-08-028
+  rid: pozyciya
+  chomu: опис переваги методу програмування без натисків кнопок
+
+- id: T-09-074
+  rid: ne-tverdzhennya
+  chomu: опис явища які відбулося внаслідок помилки з дозволами
+
+- id: T-09-024
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці відповідності пристроїв до драйверів
+
+- id: T-10-054
+  rid: ne-tverdzhennya
+  chomu: посилання на розділ, констатація факту що позначка не гарантує стан
+
+- id: T-10-033
+  rid: ne-tverdzhennya
+  chomu: опис функцій інструментів, технічна констатація
+
+- id: T-11-094
+  rid: ne-tverdzhennya
+  chomu: опис можливостей розширення — констатація функціоналу
+
+- id: T-11-036
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці часових рамок підтримки — число без контексту судження
+
+- id: T-12-013
+  rid: pozyciya
+  chomu: практична рекомендація для розробника — порада як писати код
+
+- id: T-13-057
+  rid: pozyciya
+  chomu: рекомендація вибору інструменту для роботи з ESP-IDF
+
+- id: T-13-029
+  rid: ne-tverdzhennya
+  chomu: пояснення значення поля конфігурації
+
+- id: T-14-072
+  rid: ne-tverdzhennya
+  chomu: опис варіантів тестування, посилання на розділи
+
+- id: T-15-061
+  rid: ne-tverdzhennya
+  chomu: опис того що потрібно зберігати, посилання на розділи
+
+- id: T-15-040
+  rid: pozyciya
+  chomu: методична рекомендація щодо вивчення платформи — як організувати навчання
+
+- id: T-16-001
+  rid: ne-tverdzhennya
+  chomu: вступна констатація структури запуску чипа
+
+- id: T-17-105
+  rid: ne-tverdzhennya
+  chomu: опис формату для певної аудиторії — практична рекомендація
+
+- id: T-18-063
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці файлових систем
+
+- id: T-18-113
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці вимог по розміру прошивки
+
+- id: T-19-007
+  rid: ne-tverdzhennya
+  chomu: рядок довідника типів розділів флешу
+
+- id: T-19-004
+  rid: ne-tverdzhennya
+  chomu: констатація ризику невірного OTA — явище без авторського судження
+
+- id: T-20-001
+  rid: ne-tverdzhennya
+  chomu: вступна фраза розділу, посилання на частите запитання
+
+- id: T-21-067
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці серійних номерів — метаданні про дату
+
+- id: T-21-028
+  rid: ne-tverdzhennya
+  chomu: введення до списку важливих речей
+
+- id: T-22-016
+  rid: ne-tverdzhennya
+  chomu: пояснення явища при зберіганні фото
+
+- id: T-23-075
+  rid: pozyciya
+  chomu: авторське судження про безпеку методу триажу за відсутності приладу
