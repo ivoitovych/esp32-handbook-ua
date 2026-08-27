@@ -1,0 +1,151 @@
+- id: T-A-061
+  rid: ne-tverdzhennya
+- id: T-B-205
+  rid: ne-tverdzhennya
+- id: T-B-251
+  rid: pozyciya
+  chomu: Рекомендація дії, коли пристрій не працює у корпусі
+- id: T-B-079
+  rid: ne-tverdzhennya
+- id: T-C-050
+  rid: ne-tverdzhennya
+- id: T-C-041
+  rid: dzherelo-ye
+- id: T-D-192
+  rid: pozyciya
+  chomu: Пояснення логіки причин та наслідків
+- id: T-E-148
+  rid: ne-tverdzhennya
+- id: T-E-097
+  rid: dzherelo-ye
+- id: T-F-021
+  rid: pozyciya
+  chomu: Рекомендація для офлайнового сценарію
+- id: T-G-118
+  rid: ne-tverdzhennya
+- id: T-G-012
+  rid: ne-tverdzhennya
+- id: T-G-046
+  rid: ne-tverdzhennya
+- id: T-H-003
+  rid: dzherelo-ye
+- id: T-Z-037
+  rid: ne-tverdzhennya
+- id: T-Z-125
+  rid: ne-tverdzhennya
+- id: T-COM-032
+  rid: dzherelo-ye
+- id: T-REG-021
+  rid: dzherelo-ye
+- id: T-UA--034
+  rid: pozyciya
+  chomu: Рекомендація щодо планування проєкту
+- id: T-K02-021
+  rid: pozyciya
+  chomu: Вказання на перевірку результату
+- id: T-K05-012
+  rid: ne-tverdzhennya
+- id: T-K07-033
+  rid: dzherelo-ye
+- id: T-K08-009
+  rid: ne-tverdzhennya
+- id: T-K10-040
+  rid: ne-tverdzhennya
+- id: T-K13-006
+  rid: ne-tverdzhennya
+- id: T-K14-016
+  rid: dzherelo-ye
+- id: T-K15-032
+  rid: ne-tverdzhennya
+- id: T-00-080
+  rid: pozyciya
+  chomu: Стильне правило щодо названий команд та функцій
+- id: T-00-003
+  rid: pozyciya
+  chomu: Рекомендація щодо використання курсу та довідника
+- id: T-01-107
+  rid: pozyciya
+  chomu: Обґрунтування необхідності документації в полі
+- id: T-01-060
+  rid: dzherelo-ye
+- id: T-02-137
+  rid: dzherelo-ye
+- id: T-02-044
+  rid: dzherelo-ye
+- id: T-03-012
+  rid: dzherelo-ye
+- id: T-04-093
+  rid: dzherelo-ye
+- id: T-04-044
+  rid: ne-tverdzhennya
+- id: T-05-080
+  rid: dzherelo-ye
+- id: T-05-015
+  rid: pozyciya
+  chomu: Аналогія для пояснення проблеми з дротами
+- id: T-06-087
+  rid: pozyciya
+  chomu: Рекомендація щодо розрахунків для автономних пристроїв
+- id: T-06-021
+  rid: dzherelo-ye
+- id: T-07-009
+  rid: ne-tverdzhennya
+- id: T-08-071
+  rid: pozyciya
+  chomu: Порада щодо діагностики на дешевому етапі
+- id: T-08-045
+  rid: dzherelo-ye
+- id: T-09-008
+  rid: dzherelo-ye
+- id: T-09-039
+  rid: dzherelo-ye
+- id: T-10-066
+  rid: pozyciya
+  chomu: Рекомендація щодо вибору та кількості компонентів
+- id: T-11-044
+  rid: dzherelo-ye
+- id: T-11-108
+  rid: pozyciya
+  chomu: Оцінка ролі Arduino core для прототипування
+- id: T-12-043
+  rid: dzherelo-ye
+- id: T-12-028
+  rid: pozyciya
+  chomu: Оцінка якості сторонніх бібліотек
+- id: T-13-069
+  rid: ne-tverdzhennya
+- id: T-14-044
+  rid: dzherelo-ye
+- id: T-14-002
+  rid: pozyciya
+  chomu: Оцінка швидкості розробки різних підходів
+- id: T-15-009
+  rid: ne-tverdzhennya
+- id: T-15-052
+  rid: pozyciya
+  chomu: Рекомендація щодо часу збірки
+- id: T-16-003
+  rid: pozyciya
+  chomu: Оцінка цінності теоретичних знань для діагностики
+- id: T-17-131
+  rid: dzherelo-ye
+- id: T-18-076
+  rid: dzherelo-ye
+- id: T-18-028
+  rid: dzherelo-ye
+- id: T-19-011
+  rid: dzherelo-ye
+- id: T-20-054
+  rid: ne-tverdzhennya
+- id: T-20-032
+  rid: pozyciya
+  chomu: Вказання на перевірку розміру файлу
+- id: T-21-079
+  rid: dzherelo-ye
+- id: T-22-006
+  rid: ne-tverdzhennya
+- id: T-22-031
+  rid: pozyciya
+  chomu: Обґрунтування прискіпливості до запису
+- id: T-23-093
+  rid: dzherelo-ye

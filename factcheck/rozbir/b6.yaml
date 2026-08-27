@@ -1,0 +1,83 @@
+- id: T-A-045
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці - обмеження на пін
+
+- id: T-B-194
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці симптомів
+
+- id: T-B-245
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці симптомів
+
+- id: T-B-072
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці симптомів
+
+- id: T-B-176
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці симптомів
+
+- id: T-C-003
+  rid: dzherelo-ye
+  shukaty: документація Python v4 або Arduino
+  chomu: технічна специфікація версії
+
+- id: T-D-177
+  rid: pozyciya
+  chomu: порада щодо пошуку в коді
+
+- id: T-E-137
+  rid: dzherelo-ye
+  shukaty: документація чипів A4988 та DRV8825
+  chomu: технічна характеристика мікросхем
+
+- id: T-E-088
+  rid: dzherelo-ye
+  shukaty: документація бібліотеки Adafruit або SPI стандарт
+  chomu: технічна специфікація режимів SPI
+
+- id: T-F-004
+  rid: pozyciya
+  chomu: загальне спостереження про причини несправностей
+
+- id: T-G-080
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-H-038
+  rid: pozyciya
+  chomu: порада щодо оцінки джерел
+
+- id: T-Z-117
+  rid: ne-tverdzhennya
+  chomu: рядок показчика GPIO з номерами сторінок
+
+- id: T-COM-015
+  rid: pozyciya
+  chomu: порада щодо вибору модуля за умовою
+
+- id: T-REG-001
+  rid: ne-tverdzhennya
+  chomu: метадані документа - номер ревізії
+
+- id: T-UA--025
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці компонентів
+
+- id: T-K02-011
+  rid: pozyciya
+  chomu: інструкція для діагностики
+
+- id: T-K04-002
+  rid: pozyciya
+  chomu: порада про нормальне поведінку плати
+
+- id: T-K07-024
+  rid: ne-tverdzhennya
+  chomu: заголовок процедури з умовою
+
+- id: T-K08-053
+  rid: pozyciya
+  chomu: загальне твердження про причину
+

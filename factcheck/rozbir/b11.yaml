@@ -64,7 +64,7 @@
 
 - id: T-COM-027
   rid: dzherelo-ye
-  shukaty: датчики вологості — технічна характеристика корозії
+  shukaty: PMS5003 datasheet — коросія резистивних датчиків
 
 - id: T-REG-017
   rid: pozyciya
@@ -100,7 +100,7 @@
 
 - id: T-K14-009
   rid: dzherelo-ye
-  shukaty: ESP32 технічна специфікація — напруга сигналу без стабілізатора
+  shukaty: ESP32 datasheet — логічні рівні сигналу 3.3V
 
 - id: T-K15-030
   rid: ne-tverdzhennya
@@ -124,7 +124,7 @@
 
 - id: T-02-131
   rid: dzherelo-ye
-  shukaty: ESP32 мікросхеми — технічна специфікація для Zigbee/Thread
+  shukaty: ESP32-C6 datasheet — підтримка Zigbee і Thread
 
 - id: T-02-042
   rid: ne-tverdzhennya
@@ -144,7 +144,7 @@
 
 - id: T-05-078
   rid: dzherelo-ye
-  shukaty: електроніка — принцип короткого замикання
+  shukaty: основи електроніки — основний закон короткого замикання
 
 - id: T-05-013
   rid: pozyciya
@@ -168,7 +168,7 @@
 
 - id: T-08-043
   rid: dzherelo-ye
-  shukaty: ESP32 документація — варіанти пам'яті та пінаут
+  shukaty: ESP32 datasheet — варіанти з префіксом N8, N16R8
 
 - id: T-09-089
   rid: ne-tverdzhennya
@@ -228,7 +228,7 @@
 
 - id: T-18-074
   rid: dzherelo-ye
-  shukaty: SPIFFS документація — характеристика швидкості при заповненні
+  shukaty: ESP-IDF SPIFFS — падіння швидкості під час заповнення
 
 - id: T-18-020
   rid: ne-tverdzhennya
