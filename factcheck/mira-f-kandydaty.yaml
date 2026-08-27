@@ -1,437 +1,316 @@
 # Кандидати з міри класу `F`. **Не реєстр.**
-- nazva: T-00-026
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/00-pro-dovidnyk.md
-  cytata: 'Клас `E` — найбільший, і його варто пояснити чесно, бо назвати його «поза
-    зовнішньою звіркою» було б перебільшенням на нашу користь.
+- nazva: T-09-043
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-09-046
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-09-052
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-09-070
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-09-073
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-04-149
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/rmt/led_strip/README.md;
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst;
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_mcpwm/include/driver/mcpwm_fault.h
+  cytata: 'RMT контролює адресні світлодіоди; PCNT라는 модуль підраховує кількість імпульсів
+    без переривань; MCPWM має мертвий час і обробку помилок для керування потужністю.
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p1
-- nazva: T-01-002
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/01-platforma.md
-  cytata: 'Головна причина його поширеності проста: це чи не єдиний спосіб отримати
-    керований процесор **разом із Wi-Fi** за ціну, порівнянну з ціною самого мікроконтролера.
+  zvidky: F2-p6
+- nazva: T-07-063
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: 'The word **RESERVED** indicates the IO is occupied by either SPI flash
+    or PSRAM.
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p1
-- nazva: T-01-006
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/01-platforma.md
-  cytata: '**Кристал (SoC).** Власне чип: `ESP32`, `ESP32-S3`, `ESP32-C3`.
+  zvidky: F2-p7
+- nazva: T-07-101
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/dac.rst
+  cytata: '{IDF_TARGET_DAC_CH_1: default = "Not Updated!", esp32 = "GPIO25", esp32s2
+    = "GPIO17"}
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p1
-- nazva: T-01-041
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/01-platforma.md
-  cytata: 'Радіо на борту · RP2040 → ні (крім W)
+  zvidky: F2-p8
+- nazva: T-16-056
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/app_update/esp_ota_ops.c
+  cytata: 'Default to factory if present
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p1
-- nazva: T-01-061
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/01-platforma.md
-  cytata: 'Старт · RP2040 → миттєво
+  zvidky: F4-p16
+- nazva: T-16-058
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+  cytata: 'For power-on reset, software SoC reset, and watchdog SoC reset: check the
+    GPIO_STRAP_REG register
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p1
-- nazva: T-01-070
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/01-platforma.md
-  cytata: 'Реальний час · STM32 → **дуже добре**
+  zvidky: F4-p16
+- nazva: T-16-093
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+  cytata: 'check the GPIO_STRAP_REG register if a custom boot mode is requested
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p2
-- nazva: T-01-082
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/01-platforma.md
-  cytata: 'Часто правильна відповідь — обидва: STM32 керує процесом, ESP32 стоїть
-    збоку і забезпечує зв''язок (розділ 57).
+  zvidky: F4-p16
+- nazva: T-17-028
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  cytata: '@cli.command("flash-id")
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p2
-- nazva: T-01-091
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/01-platforma.md
-  cytata: 'Окрема і часто найправильніша роль: ESP32 не керує системою, а стоїть **збоку**
-    від неї.
+  zvidky: F4-p16
+- nazva: T-17-130
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  cytata: '"--baud",
+
+    type=BaudRateType(),
+
+    help="Serial port baud rate used when flashing/reading."
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p2
-- nazva: T-01-094
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/01-platforma.md
-  cytata: '- проблеми з радіо не впливають на основну логіку; - основний контролер
-    можна взяти той, що краще підходить до задачі; - відповідальність розділена, і
-    кожну частину можна тестувати окремо; - ESP32 можна перепрошити або замінити,
-    не чіпаючи основну систему.
+  zvidky: F4-p17
+- nazva: T-17-154
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/loader.py
+  cytata: 'Failed to start stub flasher
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p2
-- nazva: T-02-014
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/02-chipy.md
-  cytata: 'Ядро · S3 → Xtensa LX7
+  zvidky: F4-p17
+- nazva: T-18-009
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: '# ESP-IDF Partition Table
+
+    # Name,   Type, SubType, Offset,  Size, Flags
+
+    nvs,      data, nvs,     0x9000,  0x6000,
+
+    phy_init, data, phy,     0xf000,  0x1000,
+
+    factory,  app,  factory, 0x10000, 1M,
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p2
-- nazva: T-02-020
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/02-chipy.md
-  cytata: 'Ядер · S3 → **2**
+  zvidky: F4-p17
+- nazva: T-18-011
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'nvs,      data, nvs,     0x9000,  0x6000,
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p3
-- nazva: T-02-054
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/02-chipy.md
-  cytata: 'BLE · ESP32 → так
+  zvidky: F4-p17
+- nazva: T-18-012
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'nvs,      data, nvs,     0x9000,  0x6000,
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p3
-- nazva: T-02-066
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/02-chipy.md
-  cytata: 'USB · ESP32 → ні
+  zvidky: F4-p17
+- nazva: T-18-048
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: 'Non-volatile storage (NVS) library is designed to store key-value pairs
+    in flash
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p3
-- nazva: T-02-068
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/02-chipy.md
-  cytata: 'USB · S3 → OTG + JTAG
+  zvidky: F4-p18
+- nazva: T-18-060
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: 'NVS works best for storing a moderate, relatively stable set of small values
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p3
-- nazva: T-02-090
-  dzherelo: https://raw.githubusercontent.com/esp32-handbook-ua/esp32-handbook-ua/refs/heads/main/manual/02-chipy.md
-  cytata: 'Кадровий буфер камери, великий веб-інтерфейс, TLS із кількома одночасними
-    з''єднаннями — все це впирається саме сюди.
+  zvidky: F4-p18
+- nazva: T-18-079
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/index.rst
+  cytata: '- :doc:`SPIFFS <spiffs>` is a wear-levelled file system optimized for SPI
+    NOR flash
+
+    - :doc:`FAT <fatfs>` is a standard file system which can be used in SPI flash
 
     '
   verdykt: pidtverdzheno
-  zvidky: F1-p3
-- nazva: T-10-026
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/10-instrumenty.md
-  cytata: 'Виставили 200 мА — і замикання в новій схемі закінчується тим, що прилад
-    просто не дасть більше, замість випаленої доріжки.
+  zvidky: F4-p18
+- nazva: T-18-122
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'Other data partitions like NVS, FAT, etc. (not updated during OTA)
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p11
-- nazva: T-11-009
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/11-idf.md
-  cytata: '**Фреймворк** — FreeRTOS, драйвери периферії, стеки Wi-Fi, Bluetooth, TCP/IP,
-    TLS, файлові системи, система збирання.
+  zvidky: F4-p18
+- nazva: T-19-014
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'The OTA operation functions write a new app firmware image to whichever
+    OTA app slot that is currently not selected for booting
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p11
-- nazva: T-11-070
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/11-idf.md
-  cytata: 'Помилка виду «файл не знайдено», коли файл є, — майже завжди відсутній
-    `REQUIRES`.
+  zvidky: F4-p18
+- nazva: T-19-067
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/esp_https_ota.rst
+  cytata: 'Please refer to :ref:`ESP-TLS: TLS Server Verification
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p11
-- nazva: T-11-083
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/11-idf.md
-  cytata: 'Пошук усередину `menuconfig` — клавіша `/`.
+  zvidky: F4-p19
+- nazva: T-19-069
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/esp_https_ota.rst
+  cytata: 'The root certificate in PEM format needs to be provided to the cert_pem
+    member
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p11
-- nazva: T-11-093
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/11-idf.md
-  cytata: 'Офіційне розширення від Espressif робить те саме, що `idf.py`, тільки кнопками,
-    і додає інтеграцію з відлагоджувачем.
+  zvidky: F4-p19
+- nazva: T-19-085
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'Завантажене не є коректним образом застосунку. Найчастіше на сервері лежить
+    не той файл: `merge-bin`-образ або повний дамп замість `app.bin`
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p11
-- nazva: T-11-100
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/11-idf.md
-  cytata: 'Червоні підкреслення при успішному `idf.py build` — це проблема редактора,
-    а не коду.
+  zvidky: F4-p19
+- nazva: T-20-014
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'Anti-rollback prevents rollback to application with security version lower
+    than one programmed in eFuse of chip
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p12
-- nazva: T-11-104
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/11-idf.md
-  cytata: '**Діагностика.** Coredump, розшифровка backtrace, JTAG, докладний лог підсистем
-    — усе штатне (розділи 26, 27).
+  zvidky: F4-p19
+- nazva: T-20-088
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'when an eFuse bit is programmed to 1, it can never be reverted to 0
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p12
-- nazva: T-11-113
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/11-idf.md
-  cytata: '`REQUIRES` у `CMakeLists.txt` — причина більшості «файл не знайдено».
+  zvidky: F4-p19
+- nazva: T-20-092
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+  cytata: 'Startup code called from the reset vector determines the boot mode by checking
+    GPIO_STRAP_REG register for bootstrap pin states
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p12
-- nazva: T-12-003
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/12-arduino.md
-  cytata: 'Розуміння цього факту знімає більшість запитань про межі Arduino: він не
-    може менше, ніж ESP-IDF, — він просто показує менше.
+  zvidky: F4-p20
+- nazva: T-21-086
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  cytata: 'esptool can flash multiple devices simultaneously using different serial
+    ports
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p12
-- nazva: T-12-009
-  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/12-arduino.md
-  cytata: '**`loop` — звичайна задача FreeRTOS.** Вона має свій стек і свій пріоритет,
-    і поруч можуть працювати інші задачі.
+  zvidky: F4-p20
+- nazva: T-22-048
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'read-flash reads exactly the amount of data that exists on the chip
 
     '
   verdykt: pidtverdzheno
-  zvidky: F3-p12
-- nazva: T-23-023
-  dzherelo: manual/23-triazh.md:32
-  cytata: 'Суфікс після назви модуля кодує обсяг флешу і PSRAM: `N8` — 8 МБ флешу,
-    `N16R8` — 16 МБ флешу і 8 МБ PSRAM.'
-  verdykt: pidtverdzheno
-  zvidky: F5-p21
-- nazva: T-24-015
-  dzherelo: manual/24-chuzha-proshyvka.md:30
-  cytata: '**Чи є файлова система.** Розділ типу `spiffs`, `littlefs` або `fat` означає,
-    що на пристрої лежать файли: веб-інтерфейс, конфігурація, логи.
+  zvidky: F4-p20
+- nazva: T-22-066
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: 'NVS works best for storing a moderate, relatively stable set of small values
+    such as device configuration, calibration data
 
     '
   verdykt: pidtverdzheno
-  zvidky: F5-p21
-- nazva: T-25-038
-  dzherelo: manual/25-log.md:71
-  cytata: Монітор — інтерактивна програма з кольорами й керуванням із клавіатури;
-    через `| tee` у файл потрапляють ще й керівні послідовності ANSI, а сама інтерактивність
-    псується.
-  verdykt: pidtverdzheno
-  zvidky: F5-p21
-- nazva: T-26-011
-  dzherelo: manual/26-zboyi.md:31
-  cytata: У прикладі `0x00000008` — тобто зверталися до поля структури зі зсувом 8
-    за покажчиком `NULL`.
-  verdykt: pidtverdzheno
-  zvidky: F5-p21
-- nazva: T-26-029
-  dzherelo: manual/26-zboyi.md:53
-  cytata: Найчастіше джерело обох — `malloc`, результат якого не перевірили.
-  verdykt: pidtverdzheno
-  zvidky: F5-p21
-- nazva: T-39-069
-  dzherelo: manual/39-wifi.md:174
-  cytata: '| −75…−85 | межа: обриви, повільно, OTA може не пройти |
+  zvidky: F4-p20
+- nazva: T-23-010
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: '| **SoC**  | **Stable** | **Development** |
+
+    |ESP32     |     Yes    |       Yes       |
 
     '
   verdykt: pidtverdzheno
-  zvidky: F6-p26
-- nazva: T-39-078
-  dzherelo: manual/39-wifi.md:196
-  cytata: '**Зовнішня антена через роз''єм IPEX** — модулі з літерою `U`
+  zvidky: F4-p20
+- nazva: T-49-005
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
+  cytata: '#define SOC_SDMMC_HOST_SUPPORTED    1
+
+    #define SOC_SDMMC_DATA_WIDTH_MAX     8
+
+    '
+  verdykt: ne_znayshov
+  zvidky: F7-p31
+- nazva: T-49-029
+  dzherelo: https://raw.githubusercontent.com/espressif/esp32-camera/master/README.md
+  cytata: '| OV2640  | 1600 x 1200    | color      | YUV(422/420)/YCbCr422<br>RGB565/555<br>8-bit
+    compressed data<br>8/10-bit Raw RGB data | 1/4"     |
 
     '
   verdykt: pidtverdzheno
-  zvidky: F6-p26
-- nazva: T-40-013
-  dzherelo: manual/40-merezha.md:30
-  cytata: '.uri = "/api/stan",
+  zvidky: F7-p32
+- nazva: T-49-037
+  dzherelo: https://raw.githubusercontent.com/espressif/esp32-camera/master/README.md
+  cytata: 'This is particularly true if WiFi is enabled. If you need RGB data, it
+    is recommended that JPEG is captured and then turned into RGB using `fmt2rgb888`
+    or `fmt2bmp`/`frame2bmp`.
 
     '
   verdykt: pidtverdzheno
-  zvidky: F6-p26
-- nazva: T-40-023
-  dzherelo: manual/40-merezha.md:53
-  cytata: 'HTTP влаштований як «запит — відповідь»: сервер не може сам щось надіслати.
+  zvidky: F7-p32
+- nazva: T-50-029
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/esp_tls.rst
+  cytata: 'If no option is selected, the client will return a fatal error by default
+    during the TLS connection setup.
+
+    ...
+
+    If this option is enabled, there is a risk of establishing a TLS connection with
+    a server that has a fake identity, unless the server certificate is provided through
+    the API or other mechanisms like ``ca_store``.
 
     '
   verdykt: pidtverdzheno
-  zvidky: F6-p26
-- nazva: T-40-028
-  dzherelo: manual/40-merezha.md:61
-  cytata: 'На ESP32 кілька одночасних клієнтів — межа, і поводитися з нею треба свідомо.
+  zvidky: F7-p33
+- nazva: T-59-040
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/esp32/pins_arduino.h
+  cytata: 'static const uint8_t SDA = 21;
+
+    static const uint8_t SCL = 22;
 
     '
   verdykt: pidtverdzheno
-  zvidky: F6-p26
-- nazva: T-40-086
-  dzherelo: manual/40-merezha.md:185
-  cytata: 'TLS коштує ресурсів: кілька кілобайтів RAM на з''єднання, помітний час
-    на рукостискання, і сплеск споживання.
+  zvidky: F7-p34
+- nazva: T-60-111
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/sleep_modes.rst
+  cytata: 'By default, :cpp:func:`esp_deep_sleep_start` and :cpp:func:`esp_light_sleep_start`
+    functions power down all RTC power domains
 
     '
   verdykt: pidtverdzheno
-  zvidky: F6-p27
-- nazva: T-40-087
-  dzherelo: manual/40-merezha.md:186
-  cytata: 'На C3 з його 400 КБ (розділ 02) два одночасні TLS-з''єднання вже відчутні.
+  zvidky: F7-p34
+- nazva: T-61-015
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
+  cytata: 'Station mode (aka STA mode or Wi-Fi client mode). {IDF_TARGET_NAME} connects
+    to an access point.
 
     '
   verdykt: pidtverdzheno
-  zvidky: F6-p27
-- nazva: T-41-017
-  dzherelo: manual/41-ble.md:31
-  cytata: '| Споживання | висока | **дуже низька** |
-
-    '
+  zvidky: F7-p35
+- nazva: T-61-029
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h
+  cytata: (No FPU capability found in ESP32-C3)
   verdykt: pidtverdzheno
-  zvidky: F6-p27
-- nazva: T-41-041
-  dzherelo: manual/41-ble.md:76
-  cytata: '**Bluedroid** — повний стек, підтримує і Classic, і BLE.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F6-p27
-- nazva: T-41-043
-  dzherelo: manual/41-ble.md:79
-  cytata: '**NimBLE** — тільки BLE, компактніший, займає в рази менше RAM і флешу.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F6-p27
-- nazva: T-42-004
-  dzherelo: manual/42-espnow.md:11-12
-  cytata: 'Звичайний Wi-Fi перед першою передачею мусить під''єднатися до точки доступу:
-    сканування, автентифікація, асоціація, отримання IP.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F6-p28
-- nazva: T-42-011
-  dzherelo: manual/42-espnow.md:25
-  cytata: '*ESP-NOW:* прокинувся → 10 мілісекунд на передачу → заснув.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F6-p28
-- nazva: T-42-045
-  dzherelo: manual/42-espnow.md:112
-  cytata: 'ESP-NOW підтримує шифрування з ключами PMK і LMK.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F6-p28
-- nazva: T-42-063
-  dzherelo: manual/42-espnow.md:148-150
-  cytata: 'Шлюз мусить тримати канал ESP-NOW рівним каналу точки доступу — і, якщо
-    роутер змінить канал, повідомити датчики або перейти сам.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F6-p28
-- nazva: T-43-001
-  dzherelo: manual/43-lora.md:3-4
-  cytata: 'Коли потрібні кілометри замість десятків метрів, Wi-Fi і ESP-NOW не допоможуть.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F6-p28
-- nazva: T-61-042
-  dzherelo: manual/61-proj-kanal.md:124
-  cytata: 'esp_deep_sleep_start();
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F8-p36
-- nazva: T-62-099
-  dzherelo: manual/62-proj-keruvannya.md:211
-  cytata: 'if (stan == STAN_ROBOTA && !riven_ye() && u_stani > 10)
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F8-p36
-- nazva: T-62-143
-  dzherelo: manual/62-proj-keruvannya.md:322
-  cytata: 'if (stan == STAN_AVARIYA) perejty(STAN_STOP, "ручне скидання");
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F8-p36
-- nazva: T-63-011
-  dzherelo: manual/63-proj-mist.md:21
-  cytata: 'Телеметрія | UART або CAN | MQTT
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F8-p36
-- nazva: T-63-012
-  dzherelo: manual/63-proj-mist.md:22
-  cytata: 'Шлюз шини | CAN | Wi-Fi + MQTT
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F8-p36
-- nazva: T-C-076
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/c-komandy.md
-  cytata: '| Програма | Вихід | Особливість |
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p41
-- nazva: T-C-079
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/c-komandy.md
-  cytata: '`picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p41
-- nazva: T-C-093
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/c-komandy.md
-  cytata: '`/dev/ttyACM*` — native USB [[S3]] [[C3]].
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p41
-- nazva: T-C-124
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/c-komandy.md
-  cytata: 'strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p41
-- nazva: T-D-022
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/d-panik.md
-  cytata: '| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p41
-- nazva: T-D-031
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/d-panik.md
-  cytata: '| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p42
-- nazva: T-D-041
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/d-panik.md
-  cytata: '| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p42
-- nazva: T-D-042
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/d-panik.md
-  cytata: '| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p42
-- nazva: T-D-045
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/d-panik.md
-  cytata: '| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p42
-- nazva: T-D-047
-  dzherelo: https://raw.githubusercontent.com/yaroslav-voytovych/esp32-handbook-ua/master/dodatky/d-panik.md
-  cytata: '| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: F9-p42
+  zvidky: F7-p35
