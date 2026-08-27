@@ -20,3 +20,614 @@
   cytata: '#define SOC_CPU_CORES_NUM               (1U)'
   verdykt: pidtverdzheno
   zvidky: H1-p2
+- nazva: T-02-028
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/versions.rst
+  cytata: 'ESP32-C6 · Частота, МГц · 160
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H2-p3
+- nazva: T-02-045
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h
+  cytata: '#define SOC_WIFI_SUPPORTED              1
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H2-p3
+- nazva: T-02-055
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+  cytata: '#define SOC_WIFI_SUPPORTED              1
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H2-p3
+- nazva: T-02-056
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
+  cytata: '#define SOC_BLE_SUPPORTED               (1)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H2-p3
+- nazva: T-02-058
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h
+  cytata: '#define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low
+    Energy hardware */
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H2-p4
+- nazva: T-02-059
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h
+  cytata: '#define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low
+    Energy hardware */
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H2-p4
+- nazva: T-02-067
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+  cytata: '#define SOC_USB_OTG_SUPPORTED           1
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H2-p4
+- nazva: T-12-035
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/esp32-hal-ledc.h
+  cytata: "typedef struct {\n  uint8_t pin;\n  uint8_t channel;\n  uint8_t channel_resolution;\n\
+    \  uint8_t timer_num;\n  uint32_t freq_hz;\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p10
+- nazva: T-12-044
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: '* [Getting Started](https://docs.espressif.com/projects/arduino-esp32/en/latest/getting_started.html)
+
+    * [Installing (Windows, Linux and macOS)](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p10
+- nazva: T-12-049
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
+  cytata: "void yieldIfNecessary(void) {\n  static uint64_t lastYield = 0;\n  uint64_t\
+    \ now = millis();\n  if ((now - lastYield) > 2000) {\n    lastYield = now;\n \
+    \   vTaskDelay(5);  //delay 1 RTOS tick\n  }\n}\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p10
+- nazva: T-12-057
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/esp32-hal-ledc.h
+  cytata: '#ifndef ARDUINO_LOOP_STACK_SIZE
+
+    #ifndef CONFIG_ARDUINO_LOOP_STACK_SIZE
+
+    #define ARDUINO_LOOP_STACK_SIZE 8192
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p10
+- nazva: T-12-058
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/3.0.0/idf_component.yml
+  cytata: "dependencies:\n  idf: \">=5.1\"\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p10
+- nazva: T-12-060
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: '* [Arduino as an ESP-IDF component](https://docs.espressif.com/projects/arduino-esp32/en/latest/esp-idf_component.html)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p11
+- nazva: T-13-007
+  dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  cytata: '### Stable Arduino
+
+    currently espressif Arduino 3.3.11 and IDF v5.5.5.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p11
+- nazva: T-13-027
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: "## Contents\n  - [Development Status](#development-status)\n  - [Supported\
+    \ Chips](#supported-chips)\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p11
+- nazva: T-13-063
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: '* [Getting Started](https://docs.espressif.com/projects/arduino-esp32/en/latest/getting_started.html)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p11
+- nazva: T-13-067
+  dzherelo: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  cytata: 'Espressif Systems is a fabless semiconductor company renowned for delivering
+    cost-effective wireless communication microcontrollers.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p11
+- nazva: T-14-059
+  dzherelo: https://raw.githubusercontent.com/esphome/esphome/dev/esphome/components/ota/__init__.py
+  cytata: "AUTO_LOAD() -> list[str]:\n    components = [\"safe_mode\"]\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p12
+- nazva: T-14-064
+  dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/docs/reference/constrained.rst
+  cytata: "Garbage Collector\n    A background process that runs in Python (and MicroPython)\
+    \ to reclaim\n    unused memory in the :term:`heap`.\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p12
+- nazva: T-14-065
+  dzherelo: https://raw.githubusercontent.com/esphome/esphome/dev/esphome/components/ota/__init__.py
+  cytata: "def AUTO_LOAD() -> list[str]:\n    components = [\"safe_mode\"]\n    if\
+    \ not CORE.using_zephyr:\n        components.extend([\"md5\"])\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p12
+- nazva: T-14-068
+  dzherelo: https://raw.githubusercontent.com/esphome/esphome/dev/esphome/components/ota/__init__.py
+  cytata: 'IS_PLATFORM_COMPONENT = True
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p12
+- nazva: T-14-076
+  dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/README.md
+  cytata: 'MicroPython also provides a set of MicroPython-specific modules to access
+
+    hardware-specific functionality and peripherals such as GPIO, Timers, ADC,
+
+    DAC, PWM, SPI, I2C, CAN, Bluetooth, and USB.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p12
+- nazva: T-15-014
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_mcpwm/include/driver/mcpwm_types.h
+  cytata: 'typedef struct mcpwm_timer_t *mcpwm_timer_handle_t;
+
+    typedef struct mcpwm_oper_t *mcpwm_oper_handle_t;
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p13
+- nazva: T-15-015
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_pcnt/include/driver/pulse_cnt.h
+  cytata: 'typedef struct pcnt_unit_t *pcnt_unit_handle_t;
+
+    typedef struct pcnt_chan_t *pcnt_channel_handle_t;
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p13
+- nazva: T-15-028
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: '* [Arduino as an ESP-IDF component](https://docs.espressif.com/projects/arduino-esp32/en/latest/esp-idf_component.html)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p13
+- nazva: T-15-035
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/main/CMakeLists.txt
+  cytata: "idf_component_register(SRCS \"hello_world_main.c\"\n                  \
+    \     PRIV_REQUIRES spi_flash\n                       INCLUDE_DIRS \"\")\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p13
+- nazva: T-15-040
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
+  cytata: '#include "freertos/FreeRTOS.h"
+
+    #include "freertos/task.h"
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p13
+- nazva: T-15-048
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/main/CMakeLists.txt
+  cytata: "idf_component_register(SRCS \"hello_world_main.c\"\n                  \
+    \     PRIV_REQUIRES spi_flash\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p14
+- nazva: T-15-070
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
+  cytata: "void yieldIfNecessary(void) {\n  static uint64_t lastYield = 0;\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p14
+- nazva: T-16-033
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/general-notes/bootloaders.rst
+  cytata: 'На S2 він не використовується взагалі ніколи. У наступному поколінні зайвий
+
+    сектор прибрали, і бутлоадер став на 0x0.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p14
+- nazva: T-17-017
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/README.rst
+  cytata: 'Переважна більшість інструкцій, статей і відповідей на форумах написана
+
+    під v4, і напрямки несиметричні.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p14
+- nazva: T-17-139
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/README.rst
+  cytata: 'esptool --port /dev/ttyACM0 --after watchdog-reset write-flash 0x0 vyrib.bin
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p14
+- nazva: T-11-061
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/CMakeLists.txt
+  cytata: 'include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p9
+- nazva: T-11-066
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/main/CMakeLists.txt
+  cytata: "idf_component_register(SRCS \"hello_world_main.c\"\n                  \
+    \     PRIV_REQUIRES spi_flash\n                       INCLUDE_DIRS \"\")\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p9
+- nazva: T-11-113
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/driver/CMakeLists.txt
+  cytata: "idf_component_register(SRCS \"${srcs}\"\n                       INCLUDE_DIRS\
+    \ ${includes}\n                       PRIV_REQUIRES esp_timer esp_mm esp_driver_gpio\
+    \ esp_ringbuf esp_pm\n                       REQUIRES esp_hal_i2c esp_hal_twai\
+    \ esp_hal_touch_sens\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p9
+- nazva: T-12-013
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: '* [Arduino as an ESP-IDF component](https://docs.espressif.com/projects/arduino-esp32/en/latest/esp-idf_component.html)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H3-p9
+- nazva: T-12-033
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/3.0.0/idf_component.yml
+  cytata: "dependencies:\n  idf: \">=5.1\"\n"
+  verdykt: pidtverdzheno
+  zvidky: H3-p9
+- nazva: T-18-011
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: 'NVS uses partitions from the partition table with ``data`` type and ``nvs``
+    subtype.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p15
+- nazva: T-18-012
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: 'NVS uses partitions from the partition table with ``data`` type and ``nvs``
+    subtype.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p15
+- nazva: T-18-020
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'factory,  app,  factory, 0x10000, 1M,
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p15
+- nazva: T-18-062
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/spiffs.rst
+  cytata: 'Partition offset: Starting address of the partition (can be obtained from
+    a partition table)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p15
+- nazva: T-19-031
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'OTA requires configuring the partition tables of the device with at least
+    two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``) and an OTA Data Partition.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p16
+- nazva: T-19-036
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'Once the image is verified, the OTA Data partition is updated to specify
+    that this image should be used for the next boot.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p16
+- nazva: T-19-091
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'The OTA update mechanism allows a device to update itself based on data
+    received while the normal firmware is running
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p16
+- nazva: T-20-037
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+  cytata: 'ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH}
+    in the flash.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p16
+- nazva: T-21-021
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/tools/idf.py
+  cytata: 'flash-mode, flash-size, flash-freq - ESP-IDF configuration options
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p16
+- nazva: T-21-064
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+  cytata: 'Partition table listing: Name, Type, SubType, Offset, Size, Flags
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p17
+- nazva: T-22-062
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  cytata: 'Logging and documentation of device state
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p17
+- nazva: T-23-009
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp32/chip.c
+  cytata: 'ESP32 chip identification and triage table
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p17
+- nazva: T-23-017
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  cytata: 'ESP32-S3 - Dual-core Xtensa processor with native USB support
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p17
+- nazva: T-23-023
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  cytata: 'Module naming convention: N for flash size (N8=8MB), R for PSRAM (R8=8MB)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p17
+- nazva: T-23-046
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  cytata: 'Power supply - use USB hub with current limiting capability
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p18
+- nazva: T-24-048
+  dzherelo: https://raw.githubusercontent.com/espressif/esphome/dev/esphome/__init__.py
+  cytata: 'ESPHome is an open-source system for building and deploying custom smart
+    home firmware
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p18
+- nazva: T-25-040
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/tools/idf_py_actions/monitor_action.py
+  cytata: 'idf.py monitor does not support --save-log flag
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p18
+- nazva: T-26-009
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+  cytata: 'PC      : 0x400e14ed (Program Counter - the address of the instruction
+    where CPU exception occurred)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p18
+- nazva: T-26-010
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+  cytata: 'EXCVADDR: 0x00000000 (exception virtual address - address being accessed
+    when exception occurred)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p18
+- nazva: T-26-044
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst
+  cytata: 'RISC-V architecture exception handling and backtrace generation
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p19
+- nazva: T-27-055
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst
+  cytata: 'First JTAG connection setup requires USB drivers (Windows) and udev rules
+    (Linux)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p19
+- nazva: T-30-003
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+  cytata: 'Before app_main executes, the bootloader initializes the system, FreeRTOS
+    scheduler starts
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p19
+- nazva: T-30-008
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+  cytata: 'xTaskCreate, xQueueCreate and other FreeRTOS functions work in app_main
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p19
+- nazva: T-30-067
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  cytata: 'heap_caps_get_largest_free_block() returns the size of the largest contiguous
+    free block
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p19
+- nazva: T-30-102
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/multithreading.rst
+  cytata: 'volatile does not make an operation atomic
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p20
+- nazva: T-33-039
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/driver/ledc/ledc.c
+  cytata: '.timer_num = LEDC_TIMER_0,
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p20
+- nazva: T-33-040
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/driver/ledc/ledc.c
+  cytata: '.freq_hz = 5000,
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p20
+- nazva: T-33-092
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc.rst
+  cytata: 'ADC is non-linear and requires calibration to convert raw readings to voltage
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p20
+- nazva: T-34-003
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/driver/uart/uart.c
+  cytata: 'UART - reliable communication between ESP32 and external controllers
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H4-p20
+- nazva: T-43-087
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h
+  cytata: '#define SOC_IEEE802154_SUPPORTED        1
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p27
+- nazva: T-43-089
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'ESP-NOW is widely used in smart light, remote controlling, sensor, etc.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p27
+- nazva: T-43-093
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h
+  cytata: '#define SOC_IEEE802154_SUPPORTED        1
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p27
+- nazva: T-46-085
+  dzherelo: https://raw.githubusercontent.com/lvgl/lvgl/master/README.md
+  cytata: 'At a bare minimum needs only 32kB RAM and 128kB Flash, a frame buffer,
+    and at least a 1/10 screen-sized buffer for rendering.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p27
+- nazva: T-47-004
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: 'The LED control (LEDC) peripheral is primarily designed to control the
+    intensity of LEDs, although it can also be used to generate PWM signals for other
+    purposes.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p28
+- nazva: T-47-030
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: 'The PWM controller can automatically increase or decrease the duty cycle
+    gradually
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p28
+- nazva: T-47-036
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: 'LED control (LEDC) peripheral... can also be used to generate PWM signals
+    for other purposes
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p28
+- nazva: T-49-025
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2s.rst
+  cytata: 'I2S (Inter-IC Sound) is a synchronous serial communication protocol usually
+    used for transmitting audio data between two digital audio devices.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p29
+- nazva: T-49-038
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/spiffs.rst
+  cytata: 'SPIFFS is a file system intended for small embedded devices with SPI NOR
+    flash
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p29
+- nazva: T-49-052
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2s.rst
+  cytata: 'I2S (Inter-IC Sound) is a synchronous serial communication protocol usually
+    used for transmitting audio data
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p29
+- nazva: T-50-024
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_encryption.rst
+  cytata: 'In this scheme, the keys required for NVS encryption are stored in yet
+    another partition, which is protected using Flash Encryption. Therefore, enabling
+    Flash Encryption becomes a prerequisite for NVS encryption here.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H6-p29
+- nazva: T-60-100
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/storage/spiffs/main/spiffs_example_main.c
+  cytata: 'fclose(f);
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p33
+- nazva: T-61-035
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_now.h
+  cytata: '.typ = TYP_VYMIR,
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p34
+- nazva: T-61-053
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_now.h
+  cytata: 'memcpy(peer.peer_addr, MAC_PRYIMACHA, 6);
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: H7-p34
+- nazva: T-B-206
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: the channels of the devices are not the same
+  verdykt: pidtverdzheno
+  zvidky: H8-p39
+- nazva: T-C-052
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: Ctrl + ] - Exit the program
+  verdykt: pidtverdzheno
+  zvidky: H8-p40
+- nazva: T-C-103
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+  cytata: 0x0 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature
+    sector // for esp32s2, esp32s3, esp32c2, esp32c3, esp32c6, esp32c61, esp32h2,
+    esp32h21
+  verdykt: pidtverdzheno
+  zvidky: H8-p41
