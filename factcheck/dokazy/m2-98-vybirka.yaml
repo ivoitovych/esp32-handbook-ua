@@ -1,80 +1,179 @@
 # М2, одиниці з завдання /tmp/a8.txt (12 одиниць).
 
-- nazva: "SCL пін розпиновки I2C: GPIO22 на ESP32 classic та GPIO9 на ESP32-S3"
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'SCL пін розпиновки I2C: GPIO22 на ESP32 classic та GPIO9 на ESP32-S3'
   zbih: 'SCL\s+──┬────────\s+SCL\s+classic: GPIO22\s+S3: GPIO9'
   klas: C
-  dzherelo: "GPIO матриця в esp_idf, I2C драйвер"
-  shukaty: "Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c"
-  notatka: "Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий вибір пінів. Потребує перевірки, чи це значення за замовчуванням."
-
-- nazva: "Покажчик до GPIO8 в розділі z-pokazhchyk"
-  zbih: 'GPIO8 — 13–14, 24, 72–73, 118, 205, 326, 335, 364–365, 380'
+  dzherelo: GPIO матриця в esp_idf, I2C драйвер
+  shukaty: Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
+  notatka: Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє
+    гнучкий вибір пінів. Потребує перевірки, чи це значення за замовчуванням.
+  title: 'SCL пін розпиновки I2C: GPIO22 на ESP32 classic та GPIO9 на ESP32-S3'
+  match: 'SCL\s+──┬────────\s+SCL\s+classic: GPIO22\s+S3: GPIO9'
+  status: named-unreachable
+  source: GPIO матриця в esp_idf, I2C драйвер
+  note: Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий
+    вибір пінів. Потребує перевірки, чи це значення за замовчуванням.
+  look_for: Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
+- nazva: Покажчик до GPIO8 в розділі z-pokazhchyk
+  zbih: GPIO8 — 13–14, 24, 72–73, 118, 205, 326, 335, 364–365, 380
   klas: E
-  notatka: "Це внутрішній покажчик переліку сторінок в самій книзі. Вичислюється механічно при компіляції книги, не має зовнішнього джерела."
-
-- nazva: "Код помилки 0xc: програмне скидання ядра"
+  notatka: Це внутрішній покажчик переліку сторінок в самій книзі. Вичислюється механічно
+    при компіляції книги, не має зовнішнього джерела.
+  title: Покажчик до GPIO8 в розділі z-pokazhchyk
+  match: GPIO8 — 13–14, 24, 72–73, 118, 205, 326, 335, 364–365, 380
+  status: no-external-signal
+  note: Це внутрішній покажчик переліку сторінок в самій книзі. Вичислюється механічно при
+    компіляції книги, не має зовнішнього джерела.
+- nazva: 'Код помилки 0xc: програмне скидання ядра'
   zbih: '`0xc` · Що сталося → програмне скидання ядра'
   klas: C
-  dzherelo: "CPU exception codes / panic handler у esp-idf"
-  shukaty: "Таблиця Guru Meditation Error кодів у fatal-errors.rst"
-  notatka: "Код 0xc потребує перевірки в контексті CPU exception codes, не програмних кодів помилок ESP_ERR_*. Це архітектурний код процесора Xtensa."
-
-- nazva: "Arduino IDE часто копіює код під AVR без адаптування до ESP32"
-  zbih: "Багато написано під AVR і перенесено формально:\\s+блокувальні затримки в мілісекунди, робота з пам'яттю в розрахунку на 2 КБ RAM, ігнорування"
+  dzherelo: CPU exception codes / panic handler у esp-idf
+  shukaty: Таблиця Guru Meditation Error кодів у fatal-errors.rst
+  notatka: Код 0xc потребує перевірки в контексті CPU exception codes, не програмних кодів
+    помилок ESP_ERR_*. Це архітектурний код процесора Xtensa.
+  title: 'Код помилки 0xc: програмне скидання ядра'
+  match: '`0xc` · Що сталося → програмне скидання ядра'
+  status: named-unreachable
+  source: CPU exception codes / panic handler у esp-idf
+  note: Код 0xc потребує перевірки в контексті CPU exception codes, не програмних кодів помилок
+    ESP_ERR_*. Це архітектурний код процесора Xtensa.
+  look_for: Таблиця Guru Meditation Error кодів у fatal-errors.rst
+- nazva: Arduino IDE часто копіює код під AVR без адаптування до ESP32
+  zbih: Багато написано під AVR і перенесено формально:\s+блокувальні затримки в мілісекунди,
+    робота з пам'яттю в розрахунку на 2 КБ RAM, ігнорування
   klas: C
-  dzherelo: "Arduino документація та ESP-IDF Programming Guide"
-  shukaty: "Документація про портування коду AVR на ESP32, обмеження пам'яті AVR"
-  notatka: "Твердження про типові проблеми портування Arduino коду з AVR. Логіка витримується: мікроконтролери AVR мають обмежену пам'ять (2 КБ SRAM на Atmega328) та використовують блокувальні delay(). Потребує офіційної цитати для класу B."
-
-- nazva: "Покажчик до GPIO3 в розділі z-pokazhchyk"
-  zbih: 'GPIO3 — 14, 72, 75, 335, 337'
+  dzherelo: Arduino документація та ESP-IDF Programming Guide
+  shukaty: Документація про портування коду AVR на ESP32, обмеження пам'яті AVR
+  notatka: 'Твердження про типові проблеми портування Arduino коду з AVR. Логіка витримується:
+    мікроконтролери AVR мають обмежену пам''ять (2 КБ SRAM на Atmega328) та використовують
+    блокувальні delay(). Потребує офіційної цитати для класу B.'
+  title: Arduino IDE часто копіює код під AVR без адаптування до ESP32
+  match: Багато написано під AVR і перенесено формально:\s+блокувальні затримки в мілісекунди,
+    робота з пам'яттю в розрахунку на 2 КБ RAM, ігнорування
+  status: named-unreachable
+  source: Arduino документація та ESP-IDF Programming Guide
+  note: 'Твердження про типові проблеми портування Arduino коду з AVR. Логіка витримується:
+    мікроконтролери AVR мають обмежену пам''ять (2 КБ SRAM на Atmega328) та використовують
+    блокувальні delay(). Потребує офіційної цитати для класу B.'
+  look_for: Документація про портування коду AVR на ESP32, обмеження пам'яті AVR
+- nazva: Покажчик до GPIO3 в розділі z-pokazhchyk
+  zbih: GPIO3 — 14, 72, 75, 335, 337
   klas: E
-  notatka: "Це внутрішній покажчик переліку сторінок в самій книзі. Вичислюється механічно при компіляції книги, не має зовнішнього джерела."
-
-- nazva: "SDA пін розпиновки I2C: GPIO21 на ESP32 classic та GPIO8 на ESP32-S3"
+  notatka: Це внутрішній покажчик переліку сторінок в самій книзі. Вичислюється механічно
+    при компіляції книги, не має зовнішнього джерела.
+  title: Покажчик до GPIO3 в розділі z-pokazhchyk
+  match: GPIO3 — 14, 72, 75, 335, 337
+  status: no-external-signal
+  note: Це внутрішній покажчик переліку сторінок в самій книзі. Вичислюється механічно при
+    компіляції книги, не має зовнішнього джерела.
+- nazva: 'SDA пін розпиновки I2C: GPIO21 на ESP32 classic та GPIO8 на ESP32-S3'
   zbih: 'SDA\s+──┬────────\s+SDA\s+classic: GPIO21\s+S3: GPIO8'
   klas: C
-  dzherelo: "GPIO матриця в esp_idf, I2C драйвер"
-  shukaty: "Таблиця розпиновки I2C у документації ESP32 та ESP32-S3"
-  notatka: "Аналогічно SCL (T-59-042), твердження про розпиновку I2C. Потребує перевірки у esp_idf документації."
-
-- nazva: "GPIO12 утримується високим в схемі ESP32"
-  zbih: 'Достатньо зняти те, що тримає `GPIO12` високим\.'
+  dzherelo: GPIO матриця в esp_idf, I2C драйвер
+  shukaty: Таблиця розпиновки I2C у документації ESP32 та ESP32-S3
+  notatka: Аналогічно SCL (T-59-042), твердження про розпиновку I2C. Потребує перевірки у
+    esp_idf документації.
+  title: 'SDA пін розпиновки I2C: GPIO21 на ESP32 classic та GPIO8 на ESP32-S3'
+  match: 'SDA\s+──┬────────\s+SDA\s+classic: GPIO21\s+S3: GPIO8'
+  status: named-unreachable
+  source: GPIO матриця в esp_idf, I2C драйвер
+  note: Аналогічно SCL (T-59-042), твердження про розпиновку I2C. Потребує перевірки у esp_idf
+    документації.
+  look_for: Таблиця розпиновки I2C у документації ESP32 та ESP32-S3
+- nazva: GPIO12 утримується високим в схемі ESP32
+  zbih: Достатньо зняти те, що тримає `GPIO12` високим\.
   klas: C
-  dzherelo: "Електрична схема ESP32 або технічна документація про pull-up резистори"
-  shukaty: "GPIO pull-up/pull-down конфігурація для GPIO12 в datasheet"
-  notatka: "Твердження про фізичний стан GPIO12 з pull-up резистором. Потребує перевірки у офіційному datagsheet або технічних схемах плат."
-
-- nazva: "Таблиця GPIO0 при скиданні розпиновки та ROM адреси"
-  zbih: '\|\s*`GPIO0` при скиданні\s*\|\s*Куди піде ROM\s*\|'
+  dzherelo: Електрична схема ESP32 або технічна документація про pull-up резистори
+  shukaty: GPIO pull-up/pull-down конфігурація для GPIO12 в datasheet
+  notatka: Твердження про фізичний стан GPIO12 з pull-up резистором. Потребує перевірки у
+    офіційному datagsheet або технічних схемах плат.
+  title: GPIO12 утримується високим в схемі ESP32
+  match: Достатньо зняти те, що тримає `GPIO12` високим\.
+  status: named-unreachable
+  source: Електрична схема ESP32 або технічна документація про pull-up резистори
+  note: Твердження про фізичний стан GPIO12 з pull-up резистором. Потребує перевірки у офіційному
+    datagsheet або технічних схемах плат.
+  look_for: GPIO pull-up/pull-down конфігурація для GPIO12 в datasheet
+- nazva: Таблиця GPIO0 при скиданні розпиновки та ROM адреси
+  zbih: \|\s*`GPIO0` при скиданні\s*\|\s*Куди піде ROM\s*\|
   klas: E
-  notatka: "Це заголовок таблиці з самої книги, яка описує залежність ROM адреси від стану GPIO0 при скиданні. Таблиця з книги не є зовнішнім джерелом."
-
-- nazva: "ESP32 і його варіанти не підтримують 5 ГГц Wi-Fi, крім ESP32-C5"
-  zbih: '\*\*ESP32 не бачить мережі 5 ГГц\.\*\*\s+Уся лінійка, крім ESP32-C5, працює тільки в діапазоні 2\.4 ГГц'
+  notatka: Це заголовок таблиці з самої книги, яка описує залежність ROM адреси від стану
+    GPIO0 при скиданні. Таблиця з книги не є зовнішнім джерелом.
+  title: Таблиця GPIO0 при скиданні розпиновки та ROM адреси
+  match: \|\s*`GPIO0` при скиданні\s*\|\s*Куди піде ROM\s*\|
+  status: no-external-signal
+  note: Це заголовок таблиці з самої книги, яка описує залежність ROM адреси від стану GPIO0
+    при скиданні. Таблиця з книги не є зовнішнім джерелом.
+- nazva: ESP32 і його варіанти не підтримують 5 ГГц Wi-Fi, крім ESP32-C5
+  zbih: \*\*ESP32 не бачить мережі 5 ГГц\.\*\*\s+Уся лінійка, крім ESP32-C5, працює тільки
+    в діапазоні 2\.4 ГГц
   klas: B
-  dzherelo: "ESP32 Series Datasheet v5.3 (2.4 GHz Wi-Fi only)"
-  cytata: "2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC — ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip"
-  sposib: "pdftotext -layout з esp32_datasheet_en.pdf, 2026-08-26"
-  notatka: "Підтверджено в datasheet ESP32 про 2.4 ГГц. ESP32-C5 офіційно підтримує 6 ГГц — тверджується в офіційній документації Espressif, але в кеші не знайдено."
-
-- nazva: "GPIO0 — ключовий пін для вибору режиму завантаження на ESP32 classic та S3"
+  dzherelo: ESP32 Series Datasheet v5.3 (2.4 GHz Wi-Fi only)
+  cytata: 2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC — ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth
+    combo chip
+  sposib: pdftotext -layout з esp32_datasheet_en.pdf, 2026-08-26
+  notatka: Підтверджено в datasheet ESP32 про 2.4 ГГц. ESP32-C5 офіційно підтримує 6 ГГц —
+    тверджується в офіційній документації Espressif, але в кеші не знайдено.
+  title: ESP32 і його варіанти не підтримують 5 ГГц Wi-Fi, крім ESP32-C5
+  match: \*\*ESP32 не бачить мережі 5 ГГц\.\*\*\s+Уся лінійка, крім ESP32-C5, працює тільки
+    в діапазоні 2\.4 ГГц
+  status: derived
+  source: ESP32 Series Datasheet v5.3 (2.4 GHz Wi-Fi only)
+  quote: 2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC — ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth
+    combo chip
+  method: pdftotext -layout з esp32_datasheet_en.pdf, 2026-08-26
+  note: Підтверджено в datasheet ESP32 про 2.4 ГГц. ESP32-C5 офіційно підтримує 6 ГГц — тверджується
+    в офіційній документації Espressif, але в кеші не знайдено.
+- nazva: GPIO0 — ключовий пін для вибору режиму завантаження на ESP32 classic та S3
   zbih: 'Ключовий — `GPIO0` \[\[classic\]\] \[\[S3\]\]:'
   klas: C
-  dzherelo: "ESP32 та ESP32-S3 Datasheet, розділ про boot mode selection"
-  shukaty: "GPIO pin functions, boot mode control"
-  notatka: "Твердження про GPIO0 як ключовий контрольний пін для boot режимів. Це стандартна функція ESP32 архітектури, що підтверджується datasheet."
-
-- nazva: "Суфікс в назві ESP32 плати кодує обсяг флеш та PSRAM: N8, N16R8 і т.д."
-  zbih: "Суфікс кодує пам'ять: `N8` — 8 МБ флешу; `N16R8` — 16 МБ флешу і 8 МБ PSRAM\\."
+  dzherelo: ESP32 та ESP32-S3 Datasheet, розділ про boot mode selection
+  shukaty: GPIO pin functions, boot mode control
+  notatka: Твердження про GPIO0 як ключовий контрольний пін для boot режимів. Це стандартна
+    функція ESP32 архітектури, що підтверджується datasheet.
+  title: GPIO0 — ключовий пін для вибору режиму завантаження на ESP32 classic та S3
+  match: 'Ключовий — `GPIO0` \[\[classic\]\] \[\[S3\]\]:'
+  status: named-unreachable
+  source: ESP32 та ESP32-S3 Datasheet, розділ про boot mode selection
+  note: Твердження про GPIO0 як ключовий контрольний пін для boot режимів. Це стандартна функція
+    ESP32 архітектури, що підтверджується datasheet.
+  look_for: GPIO pin functions, boot mode control
+- nazva: 'Суфікс в назві ESP32 плати кодує обсяг флеш та PSRAM: N8, N16R8 і т.д.'
+  zbih: 'Суфікс кодує пам''ять: `N8` — 8 МБ флешу; `N16R8` — 16 МБ флешу і 8 МБ PSRAM\.'
   klas: C
-  dzherelo: "Офіційна номенклатура Espressif для ESP32 вариантів"
-  shukaty: "Документація по порядку номерів та кодування суфіксів ESP32 модулів"
-  notatka: "Твердження про конвенцію назив ESP32 варіантів. Потребує перевірки у офіційних документах Espressif про номенклатуру модулів та плат."
-
-- nazva: "На ESP32-C3 з 400 КБ доступної пам'яті MicroPython інтерпретатор залишає мало місця"
-  zbih: "Пам'ять з'їдається інтерпретатором: на C3 з 400 КБ місця лишається небагато\\."
+  dzherelo: Офіційна номенклатура Espressif для ESP32 вариантів
+  shukaty: Документація по порядку номерів та кодування суфіксів ESP32 модулів
+  notatka: Твердження про конвенцію назив ESP32 варіантів. Потребує перевірки у офіційних
+    документах Espressif про номенклатуру модулів та плат.
+  title: 'Суфікс в назві ESP32 плати кодує обсяг флеш та PSRAM: N8, N16R8 і т.д.'
+  match: 'Суфікс кодує пам''ять: `N8` — 8 МБ флешу; `N16R8` — 16 МБ флешу і 8 МБ PSRAM\.'
+  status: named-unreachable
+  source: Офіційна номенклатура Espressif для ESP32 вариантів
+  note: Твердження про конвенцію назив ESP32 варіантів. Потребує перевірки у офіційних документах
+    Espressif про номенклатуру модулів та плат.
+  look_for: Документація по порядку номерів та кодування суфіксів ESP32 модулів
+- nazva: На ESP32-C3 з 400 КБ доступної пам'яті MicroPython інтерпретатор залишає мало місця
+  zbih: 'Пам''ять з''їдається інтерпретатором: на C3 з 400 КБ місця лишається небагато\.'
   klas: C
-  dzherelo: "MicroPython офіційна документація та ESP32-C3 Datasheet"
-  shukaty: "Розподіл пам'яті MicroPython firmware на ESP32-C3"
-  notatka: "Твердження про розподіл пам'яті при запуску MicroPython на C3 (256 КБ SRAM). Потребує перевірки розміру binary та фактичного розподілу heap/stack."
+  dzherelo: MicroPython офіційна документація та ESP32-C3 Datasheet
+  shukaty: Розподіл пам'яті MicroPython firmware на ESP32-C3
+  notatka: Твердження про розподіл пам'яті при запуску MicroPython на C3 (256 КБ SRAM). Потребує
+    перевірки розміру binary та фактичного розподілу heap/stack.
+  title: На ESP32-C3 з 400 КБ доступної пам'яті MicroPython інтерпретатор залишає мало місця
+  match: 'Пам''ять з''їдається інтерпретатором: на C3 з 400 КБ місця лишається небагато\.'
+  status: named-unreachable
+  source: MicroPython офіційна документація та ESP32-C3 Datasheet
+  note: Твердження про розподіл пам'яті при запуску MicroPython на C3 (256 КБ SRAM). Потребує
+    перевірки розміру binary та фактичного розподілу heap/stack.
+  look_for: Розподіл пам'яті MicroPython firmware на ESP32-C3

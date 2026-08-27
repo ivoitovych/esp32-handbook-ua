@@ -8,6 +8,26 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-30-073: Функція, яка може спрацювати в цей момент —'
   zbih: Функція,\s+яка\s+може\s+спрацювати
   klas: A
@@ -19,6 +39,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документ підтверджує наявність IRAM
+  title: 'T-30-073: Функція, яка може спрацювати в цей момент —'
+  match: Функція,\s+яка\s+може\s+спрацювати
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'IRAM (Instruction RAM) is memory that is connected to the CPU''s instruction bus
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документ підтверджує наявність IRAM
 - nazva: 'T-30-023: Розмір стека задається при створенні задачі — числом,'
   zbih: Розмір\s+стека\s+задається\s+при
   klas: A
@@ -30,6 +61,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документ підтверджує, що кожна задача має власний стек
+  title: 'T-30-023: Розмір стека задається при створенні задачі — числом,'
+  match: Розмір\s+стека\s+задається\s+при
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'each RTOS task has its own stack
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документ підтверджує, що кожна задача має власний стек
 - nazva: 'T-30-026: Переповнення стека на мікроконтролері не дає ні винятку,'
   zbih: Переповнення\s+стека\s+на\s+мікроконтролері
   klas: A
@@ -41,6 +83,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документ підтверджує, що кожна задача має власний стек
+  title: 'T-30-026: Переповнення стека на мікроконтролері не дає ні винятку,'
+  match: Переповнення\s+стека\s+на\s+мікроконтролері
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'each RTOS task has its own stack
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документ підтверджує, що кожна задача має власний стек
 - nazva: 'T-30-027: Задача просто пише за межі свого стека —'
   zbih: Задача\s+просто\s+пише\s+за
   klas: A
@@ -52,6 +105,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документ підтверджує, що кожна задача має власний стек
+  title: 'T-30-027: Задача просто пише за межі свого стека —'
+  match: Задача\s+просто\s+пише\s+за
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'each RTOS task has its own stack
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документ підтверджує, що кожна задача має власний стек
 - nazva: 'T-30-030: Що з''їдає стек несподівано багато:'
   zbih: Що\s+з'їдає\s+стек\s+несподівано
   klas: A
@@ -63,6 +127,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документ підтверджує, що кожна задача має власний стек
+  title: 'T-30-030: Що з''їдає стек несподівано багато:'
+  match: Що\s+з'їдає\s+стек\s+несподівано
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'each RTOS task has its own stack
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документ підтверджує, що кожна задача має власний стек
 - nazva: 'T-30-076: IRAM небагато, і кожна така функція займає її'
   zbih: IRAM\s+небагато,\s+і\s+кожна\s+така
   klas: A
@@ -75,6 +150,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує обмеженість IRAM
+  title: 'T-30-076: IRAM небагато, і кожна така функція займає її'
+  match: IRAM\s+небагато,\s+і\s+кожна\s+така
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/memory-types.rst
+  quote: 'As IRAM is limited, most of an application''s binary code must be placed into IROM
+    instead.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує обмеженість IRAM
 - nazva: 'T-30-085: **32-бітне читання й запис вирівняного слова атомарні** апаратно.'
   zbih: \*\*32\-бітне\s+читання\s+й\s+запис
   klas: A
@@ -87,6 +174,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що 32-бітне читання й запис атомарні
+  title: 'T-30-085: **32-бітне читання й запис вирівняного слова атомарні** апаратно.'
+  match: \*\*32\-бітне\s+читання\s+й\s+запис
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads
+    and writes
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що 32-бітне читання й запис атомарні
 - nazva: 'T-30-087: Складніші структури — ні.'
   zbih: Складніші\s+структури\s+—\s+ні\.
   klas: A
@@ -99,6 +198,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що складніші структури не атомарні
+  title: 'T-30-087: Складніші структури — ні.'
+  match: Складніші\s+структури\s+—\s+ні\.
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads
+    and writes, any other type of access will generate a fatal LoadStoreError exception.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що складніші структури не атомарні
 - nazva: 'T-30-004: `app_main` викликається як звичайна задача FreeRTOS.'
   zbih: '`app_main`\s+викликається\s+як\s+звичайна'
   klas: A
@@ -110,6 +221,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: app_main викликається як звичайна задача FreeRTOS
+  title: 'T-30-004: `app_main` викликається як звичайна задача FreeRTOS.'
+  match: '`app_main`\s+викликається\s+як\s+звичайна'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  quote: '``app_main`` function is called from the ``main`` task.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: app_main викликається як звичайна задача FreeRTOS
 - nazva: 'T-30-006: **`app_main` може завершитися.** І це нормально: система продовжує'
   zbih: \*\*`app_main`\s+може\s+завершитися\.\*\*\s+І
   klas: A
@@ -122,6 +244,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що app_main може завершитися й це нормально
+  title: 'T-30-006: **`app_main` може завершитися.** І це нормально: система продовжує'
+  match: \*\*`app_main`\s+може\s+завершитися\.\*\*\s+І
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  quote: 'The ``app_main`` function is allowed to return at any point (i.e., before the application
+    terminates).
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що app_main може завершитися й це нормально
 - nazva: 'T-30-007: Задача `app_main` просто зникає, звільняючи свій стек.'
   zbih: Задача\s+`app_main`\s+просто\s+зникає,
   klas: A
@@ -133,6 +267,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: задача app_main зникає й звільняє свій стек
+  title: 'T-30-007: Задача `app_main` просто зникає, звільняючи свій стек.'
+  match: Задача\s+`app_main`\s+просто\s+зникає,
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  quote: 'This task will self delete when ``app_main`` returns
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: задача app_main зникає й звільняє свій стек
 - nazva: 'T-30-016: **Статична.** Глобальні змінні й `static`.'
   zbih: \*\*Статична\.\*\*\s+Глобальні\s+змінні\s+й
   klas: A
@@ -145,6 +290,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує глобальні змінні й static як статична пам'ять
+  title: 'T-30-016: **Статична.** Глобальні змінні й `static`.'
+  match: \*\*Статична\.\*\*\s+Глобальні\s+змінні\s+й
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/memory-types.rst
+  quote: 'Non-constant static data (.data) and zero-initialized data (.bss) is placed by the
+    linker into Internal SRAM as data memory.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує глобальні змінні й static як статична пам'ять
 - nazva: 'T-30-021: **Купа.** `malloc` і `new`.'
   zbih: \*\*Купа\.\*\*\s+`malloc`\s+і\s+`new`\.
   klas: A
@@ -157,6 +314,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що купа використовує malloc й new
+  title: 'T-30-021: **Купа.** `malloc` і `new`.'
+  match: \*\*Купа\.\*\*\s+`malloc`\s+і\s+`new`\.
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'For most purposes, the C Standard Library''s ``malloc()`` and ``free()`` functions
+    can be used for heap allocation
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що купа використовує malloc й new
 - nazva: 'T-30-032: **Великі буфери — не на стек.** `static` або'
   zbih: \*\*Великі\s+буфери\s+—\s+не
   klas: A
@@ -170,6 +339,19 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: великі буфери - не на стек
+  title: 'T-30-032: **Великі буфери — не на стек.** `static` або'
+  match: \*\*Великі\s+буфери\s+—\s+не
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/memory-types.rst
+  quote: 'Most peripheral DMA controllers (e.g., SPI, sdmmc, etc.) have requirements that
+    sending/receiving buffers should be placed in DRAM and word-aligned. We suggest to place
+    DMA buffers in static variables rather than in the stack.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: великі буфери - не на стек
 - nazva: 'T-30-041: Купа на ESP32 не однорідна (розділ 03), і'
   zbih: Купа\s+на\s+ESP32\s+не
   klas: A
@@ -182,6 +364,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: купа на ESP32 не однорідна, malloc може повернути NULL
+  title: 'T-30-041: Купа на ESP32 не однорідна (розділ 03), і'
+  match: Купа\s+на\s+ESP32\s+не
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'Because {IDF_TARGET_NAME} uses multiple types of RAM, it also contains multiple
+    heaps with different capabilities.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: купа на ESP32 не однорідна, malloc може повернути NULL
 - nazva: 'T-30-047: **Не та область.** Буфер для DMA має бути'
   zbih: \*\*Не\s+та\s+область\.\*\*\s+Буфер
   klas: A
@@ -194,6 +388,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: буфер для DMA має бути доступним контролеру, звичайний malloc не придатний
+  title: 'T-30-047: **Не та область.** Буфер для DMA має бути'
+  match: \*\*Не\s+та\s+область\.\*\*\s+Буфер
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable for use with
+    hardware DMA engines
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: буфер для DMA має бути доступним контролеру, звичайний malloc не придатний
 - nazva: 'T-30-067: Коли вільно 40 КБ, а найбільший блок —'
   zbih: Коли\s+вільно\s+40\s+КБ,
   klas: A
@@ -205,6 +411,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: фрагментація - коли вільно 40 КБ, а найбільший блок 2 КБ
+  title: 'T-30-067: Коли вільно 40 КБ, а найбільший блок —'
+  match: Коли\s+вільно\s+40\s+КБ,
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/memory-types.rst
+  quote: 'This memory can be used interchangeably with :ref:`DRAM`
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: фрагментація - коли вільно 40 КБ, а найбільший блок 2 КБ
 - nazva: 'T-30-086: Тому проста передача одного значення (прапорець, ціле число)'
   zbih: Тому\s+проста\s+передача\s+одного
   klas: A
@@ -217,6 +434,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: проста передача одного значення через volatile працює
+  title: 'T-30-086: Тому проста передача одного значення (прапорець, ціле число)'
+  match: Тому\s+проста\s+передача\s+одного
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads
+    and writes
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: проста передача одного значення через volatile працює
 - nazva: 'T-30-101: Результат `malloc` перевіряти завжди.'
   zbih: Результат\s+`malloc`\s+перевіряти\s+завжди\.
   klas: A
@@ -229,6 +458,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: результат malloc треба перевіряти завжди
+  title: 'T-30-101: Результат `malloc` перевіряти завжди.'
+  match: Результат\s+`malloc`\s+перевіряти\s+завжди\.
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'For most purposes, the C Standard Library''s ``malloc()`` and ``free()`` functions
+    can be used for heap allocation without any special consideration.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: результат malloc треба перевіряти завжди
 - nazva: 'T-30-102: `volatile` не робить операцію атомарною.'
   zbih: '`volatile`\s+не\s+робить\s+операцію'
   klas: A
@@ -241,3 +482,15 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: volatile не робить операцію атомарною
+  title: 'T-30-102: `volatile` не робить операцію атомарною.'
+  match: '`volatile`\s+не\s+робить\s+операцію'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+  quote: 'Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads
+    and writes
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: volatile не робить операцію атомарною

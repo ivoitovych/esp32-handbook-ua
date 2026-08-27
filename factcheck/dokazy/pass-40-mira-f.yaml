@@ -20,32 +20,6 @@
 # рядок `soc_caps.h` того самого сімейства. Найчистіший вид доказу, який
 # у нас буває.
 
-- nazva: Можливості сімейств за soc_caps.h — ядра, Wi-Fi, BLE, USB
-  zbih: 'Ядер · C3 → 1|Ядер · H2 → 1|Wi-Fi · C3 → так|BLE · S3 → так|BLE · C6 → так|BLE · H2 → так|USB · S2 → OTG'
-  klas: A
-  # П'ять адрес виписано повністю, а не фігурними дужками: скорочення
-  # `{a,b,c}` тут розгорталося правильно, а перевірка все одно казала
-  # «одне джерело не в кеші». Замість шукати причину в чужому шляху —
-  # явний перелік: він і читається однозначніше.
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h,
-    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h,
-    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h,
-    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h,
-    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
-  cytata: |
-    #define SOC_CPU_CORES_NUM               (1U)
-    #define SOC_WIFI_SUPPORTED              1
-    #define SOC_BLE_SUPPORTED               (1)
-    #define SOC_USB_OTG_SUPPORTED           1
-  sposib: >-
-    Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3.
-    Наявність макроса в заголовку конкретного сімейства — і є твердження
-    про це сімейство.
-  notatka: >-
-    Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`,
-    `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без
-    цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
 
 # ── Відкинуто шаром 2: цитата дослівна, але доводить не те ─────────────
 #
@@ -91,26 +65,95 @@
 
 # ── Частково: клас B з названою недоведеною половиною ──────────────────
 
+
+- nazva: Можливості сімейств за soc_caps.h — ядра, Wi-Fi, BLE, USB
+  zbih: Ядер · C3 → 1|Ядер · H2 → 1|Wi-Fi · C3 → так|BLE · S3 → так|BLE · C6 → так|BLE · H2
+    → так|USB · S2 → OTG
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h,
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h,
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h,
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h,
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+  cytata: '#define SOC_CPU_CORES_NUM               (1U)
+
+    #define SOC_WIFI_SUPPORTED              1
+
+    #define SOC_BLE_SUPPORTED               (1)
+
+    #define SOC_USB_OTG_SUPPORTED           1
+
+    '
+  sposib: Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність
+    макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+  notatka: Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`,
+    `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати
+    комірку іншого чипа.
+  title: Можливості сімейств за soc_caps.h — ядра, Wi-Fi, BLE, USB
+  match: Ядер · C3 → 1|Ядер · H2 → 1|Wi-Fi · C3 → так|BLE · S3 → так|BLE · C6 → так|BLE ·
+    H2 → так|USB · S2 → OTG
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h,
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h,
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h,
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h,
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+  quote: '#define SOC_CPU_CORES_NUM               (1U)
+
+    #define SOC_WIFI_SUPPORTED              1
+
+    #define SOC_BLE_SUPPORTED               (1)
+
+    #define SOC_USB_OTG_SUPPORTED           1
+
+    '
+  method: Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність
+    макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+  note: Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`,
+    `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати
+    комірку іншого чипа.
 - nazva: Вбудований ADC нелінійний
-  zbih: 'Вбудований ADC нелінійний і шумний'
+  zbih: Вбудований ADC нелінійний і шумний
   klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/Kconfig
-  cytata: |
-    This option will allow the ADC calibration component to use Lookup Tables to correct for non-linear behavior
-  sposib: Отримано в цій сесії, витяг дослівний.
-  notatka: >-
-    Нелінійність доведена: ESP-IDF має окремий механізм калібрування
-    саме проти неї. **Шум — ні.** Друга половина твердження цим рядком
-    не підпирається, і клас `B` покриває лише першу.
+  cytata: 'This option will allow the ADC calibration component to use Lookup Tables to correct
+    for non-linear behavior
 
+    '
+  sposib: Отримано в цій сесії, витяг дослівний.
+  notatka: 'Нелінійність доведена: ESP-IDF має окремий механізм калібрування саме проти неї.
+    **Шум — ні.** Друга половина твердження цим рядком не підпирається, і клас `B` покриває
+    лише першу.'
+  title: Вбудований ADC нелінійний
+  match: Вбудований ADC нелінійний і шумний
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/Kconfig
+  quote: 'This option will allow the ADC calibration component to use Lookup Tables to correct
+    for non-linear behavior
+
+    '
+  method: Отримано в цій сесії, витяг дослівний.
+  note: 'Нелінійність доведена: ESP-IDF має окремий механізм калібрування саме проти неї.
+    **Шум — ні.** Друга половина твердження цим рядком не підпирається, і клас `B` покриває
+    лише першу.'
 - nazva: main — теж компонент ESP-IDF
   zbih: '`main` — теж компонент, просто особливий'
   klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/main/CMakeLists.txt
-  cytata: |
-    idf_component_register(SRCS "hello_world_main.c"
+  cytata: 'idf_component_register(SRCS "hello_world_main.c"
+
+    '
   sposib: Отримано в цій сесії, витяг дослівний.
-  notatka: >-
-    `main` реєструється тим самим викликом, що й будь-який компонент, —
-    звідси «теж компонент». Чим саме він **особливий** (неявні
-    залежності від усіх інших), цей рядок не показує.
+  notatka: '`main` реєструється тим самим викликом, що й будь-який компонент, — звідси «теж
+    компонент». Чим саме він **особливий** (неявні залежності від усіх інших), цей рядок не
+    показує.'
+  title: main — теж компонент ESP-IDF
+  match: '`main` — теж компонент, просто особливий'
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/main/CMakeLists.txt
+  quote: 'idf_component_register(SRCS "hello_world_main.c"
+
+    '
+  method: Отримано в цій сесії, витяг дослівний.
+  note: '`main` реєструється тим самим викликом, що й будь-який компонент, — звідси «теж компонент».
+    Чим саме він **особливий** (неявні залежності від усіх інших), цей рядок не показує.'

@@ -8,6 +8,7 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
 - nazva: 'T-25-051: Один тег на файл або на логічний модуль;'
   zbih: Один\s+тег\s+на\s+файл
   klas: A
@@ -20,3 +21,14 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: Document confirms TAG logging convention; quote found in ESP-IDF documentation
     examples
+  title: 'T-25-051: Один тег на файл або на логічний модуль;'
+  match: Один\s+тег\s+на\s+файл
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/error-handling.rst
+  quote: 'static const char* TAG = "Test";
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: Document confirms TAG logging convention; quote found in ESP-IDF documentation examples

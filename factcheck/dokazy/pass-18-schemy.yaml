@@ -12,97 +12,195 @@
 # клас `A` упав із 803 до 657. Різниця — це блоки, які раніше рахувалися
 # звіреними на підставі доказу для одного рядка всередині.
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: BME280 — адреси, ідентифікатор чипа, регістр
-  zbih: '0x76|0x77|REG_ID     0xD0|id != 0x60|очікували 0x60'
+  zbih: 0x76|0x77|REG_ID     0xD0|id != 0x60|очікували 0x60
   klas: A
   dzherelo: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
-  cytata: |
-    #define BME280_CHIP_ID          UINT8_C(0x60)
+  cytata: '#define BME280_CHIP_ID          UINT8_C(0x60)
+
     #define BME280_I2C_ADDR_PRIM    UINT8_C(0x76)
+
     #define BME280_I2C_ADDR_SEC     UINT8_C(0x77)
+
     #define BME280_REG_CHIP_ID      UINT8_C(0xD0)
+
+    '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і
-    порівнює відповідь із `0x60` — рівно те, що оголошує офіційний
-    драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
+  notatka: 'Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і порівнює відповідь
+    із `0x60` — рівно те, що оголошує офіційний драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
 
-    Це саме той доказ, який раніше приписували **всій** схемі проєкту 59,
-    включно з рядком про `GPIO22`. Datasheet датчика ніколи не міг би
-    підтвердити наявність піна в S3 — тепер він і не претендує: покриває
-    рядки про датчик, і лише їх.
+    Це саме той доказ, який раніше приписували **всій** схемі проєкту 59, включно з рядком
+    про `GPIO22`. Datasheet датчика ніколи не міг би підтвердити наявність піна в S3 — тепер
+    він і не претендує: покриває рядки про датчик, і лише їх.'
+  title: BME280 — адреси, ідентифікатор чипа, регістр
+  match: 0x76|0x77|REG_ID     0xD0|id != 0x60|очікували 0x60
+  status: verbatim
+  source: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280_defs.h
+  quote: '#define BME280_CHIP_ID          UINT8_C(0x60)
 
+    #define BME280_I2C_ADDR_PRIM    UINT8_C(0x76)
+
+    #define BME280_I2C_ADDR_SEC     UINT8_C(0x77)
+
+    #define BME280_REG_CHIP_ID      UINT8_C(0xD0)
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Обидва кінці дроту сходяться. Код проєкту 59 читає регістр `0xD0` і порівнює відповідь
+    із `0x60` — рівно те, що оголошує офіційний драйвер Bosch. Адреси `0x76`/`0x77` теж дослівні.
+
+    Це саме той доказ, який раніше приписували **всій** схемі проєкту 59, включно з рядком
+    про `GPIO22`. Datasheet датчика ніколи не міг би підтвердити наявність піна в S3 — тепер
+    він і не претендує: покриває рядки про датчик, і лише їх.'
 - nazva: DS18B20 повертає −127 при відсутності зв'язку
-  zbih: '−127|-127'
+  zbih: −127|-127
   klas: A
   dzherelo: https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
-  cytata: |
-    #define DEVICE_DISCONNECTED_C -127
+  cytata: '#define DEVICE_DISCONNECTED_C -127
+
+    '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Симптом «DS18B20 показує −127 °C» книга подає в таблиці додатка B і
-    в розділі 37 як ознаку відсутнього зв'язку. Значення дослівне: це
-    константа бібліотеки, яку повертає драйвер, коли датчик не
-    відповідає.
+  notatka: 'Симптом «DS18B20 показує −127 °C» книга подає в таблиці додатка B і в розділі
+    37 як ознаку відсутнього зв''язку. Значення дослівне: це константа бібліотеки, яку повертає
+    драйвер, коли датчик не відповідає.
 
-    Практично важливо саме те, що це **не виміряна температура**, а
-    маркер помилки: −127 у логу означає обрив, підтяжку або живлення, а
-    не мороз.
+    Практично важливо саме те, що це **не виміряна температура**, а маркер помилки: −127 у
+    логу означає обрив, підтяжку або живлення, а не мороз.'
+  title: DS18B20 повертає −127 при відсутності зв'язку
+  match: −127|-127
+  status: verbatim
+  source: https://raw.githubusercontent.com/milesburton/Arduino-Temperature-Control-Library/master/DallasTemperature.h
+  quote: '#define DEVICE_DISCONNECTED_C -127
 
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Симптом «DS18B20 показує −127 °C» книга подає в таблиці додатка B і в розділі 37
+    як ознаку відсутнього зв''язку. Значення дослівне: це константа бібліотеки, яку повертає
+    драйвер, коли датчик не відповідає.
+
+    Практично важливо саме те, що це **не виміряна температура**, а маркер помилки: −127 у
+    логу означає обрив, підтяжку або живлення, а не мороз.'
 - nazva: Підтягування I²C — діапазон, а не одне число
-  zbih: 'ESP-IDF\s*рекомендує \*\*2–5 кОм\*\*|що вища частота, то менший резистор|не менше 1 кОм'
+  zbih: ESP-IDF\s*рекомендує \*\*2–5 кОм\*\*|що вища частота, то менший резистор|не менше
+    1 кОм
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/i2c.rst
-  cytata: |
-    The recommended value for pull-up resistors usually ranges from 1 kΩ to 10 kΩ.
+  cytata: 'The recommended value for pull-up resistors usually ranges from 1 kΩ to 10 kΩ.
+
 
     Keep in mind that the higher the frequency, the smaller the pull-up resistor
+
     should be (but not less than 1 kΩ). Indeed, large resistors will decline the
+
     current, which will increase the clock switching time and reduce the frequency.
+
     A range of 2 kΩ to 5 kΩ is recommended…
 
+
     enable_internal_pullup … Note: This is not strong enough to pullup buses under
+
     high-speed frequency. A suitable external pullup is recommended.
+
+    '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Доповнення. Книга скрізь називала 4.7 кОм, і це число всередині
-    рекомендованого діапазону — тобто не помилка. Але подавалося воно як
-    єдине правильне, без залежності, яка й пояснює, коли воно не працює.
+  notatka: 'Доповнення. Книга скрізь називала 4.7 кОм, і це число всередині рекомендованого
+    діапазону — тобто не помилка. Але подавалося воно як єдине правильне, без залежності,
+    яка й пояснює, коли воно не працює.
 
-    Тепер названо діапазон (2–5 кОм, припустимо 1–10) і правило: що вища
-    частота, то менший резистор, але не менше 1 кОм. Це замикає пораду з
-    розділу 34 «на 400 кГц зменшуйте до 2.2 кОм», яка досі стояла без
-    обґрунтування.
+    Тепер названо діапазон (2–5 кОм, припустимо 1–10) і правило: що вища частота, то менший
+    резистор, але не менше 1 кОм. Це замикає пораду з розділу 34 «на 400 кГц зменшуйте до
+    2.2 кОм», яка досі стояла без обґрунтування.
 
-    Заразом підтверджено твердження книги про вбудоване підтягування:
-    документація прямо каже, що його не вистачає на високій частоті.
+    Заразом підтверджено твердження книги про вбудоване підтягування: документація прямо каже,
+    що його не вистачає на високій частоті.'
+  title: Підтягування I²C — діапазон, а не одне число
+  match: ESP-IDF\s*рекомендує \*\*2–5 кОм\*\*|що вища частота, то менший резистор|не менше
+    1 кОм
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/i2c.rst
+  quote: 'The recommended value for pull-up resistors usually ranges from 1 kΩ to 10 kΩ.
 
+
+    Keep in mind that the higher the frequency, the smaller the pull-up resistor
+
+    should be (but not less than 1 kΩ). Indeed, large resistors will decline the
+
+    current, which will increase the clock switching time and reduce the frequency.
+
+    A range of 2 kΩ to 5 kΩ is recommended…
+
+
+    enable_internal_pullup … Note: This is not strong enough to pullup buses under
+
+    high-speed frequency. A suitable external pullup is recommended.
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Доповнення. Книга скрізь називала 4.7 кОм, і це число всередині рекомендованого діапазону
+    — тобто не помилка. Але подавалося воно як єдине правильне, без залежності, яка й пояснює,
+    коли воно не працює.
+
+    Тепер названо діапазон (2–5 кОм, припустимо 1–10) і правило: що вища частота, то менший
+    резистор, але не менше 1 кОм. Це замикає пораду з розділу 34 «на 400 кГц зменшуйте до
+    2.2 кОм», яка досі стояла без обґрунтування.
+
+    Заразом підтверджено твердження книги про вбудоване підтягування: документація прямо каже,
+    що його не вистачає на високій частоті.'
 - nazva: Проєкт 62 свідомо на classic через тільки-вхідний GPIO34
-  zbih: 'бо `GPIO34` там \*\*тільки\s*вхідний\*\*|не може випадково подати сигнал на реле|тільки-вхідних пінів немає взагалі'
+  zbih: бо `GPIO34` там \*\*тільки\s*вхідний\*\*|не може випадково подати сигнал на реле|тільки-вхідних
+    пінів немає взагалі
   klas: B
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
-  cytata: |
-    esp32:   SOC_GPIO_VALID_OUTPUT_GPIO_MASK
-               (SOC_GPIO_VALID_GPIO_MASK & ~(BIT34|BIT35|BIT36|BIT37|BIT38|BIT39))
-    esp32s3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK (SOC_GPIO_VALID_GPIO_MASK)
-    esp32c3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK SOC_GPIO_VALID_GPIO_MASK
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+  cytata: "esp32:   SOC_GPIO_VALID_OUTPUT_GPIO_MASK\n           (SOC_GPIO_VALID_GPIO_MASK\
+    \ & ~(BIT34|BIT35|BIT36|BIT37|BIT38|BIT39))\nesp32s3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK\
+    \ (SOC_GPIO_VALID_GPIO_MASK)\nesp32c3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK SOC_GPIO_VALID_GPIO_MASK\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Проєкт 62 не мав переліку складових узагалі, тож `tools/piny.py` його
-    піни не перевіряв: файл нічого собі не приписував. Додано перелік і
-    таблицю пінів на три сімейства — і разом із ними названо причину
-    вибору.
+  notatka: 'Проєкт 62 не мав переліку складових узагалі, тож `tools/piny.py` його піни не
+    перевіряв: файл нічого собі не приписував. Додано перелік і таблицю пінів на три сімейства
+    — і разом із ними названо причину вибору.
 
-    Причина механічна, і вона видна прямо в масках. На classic
-    `GPIO34`–`GPIO39` вирізані з маски **виходів**: пін фізично не вміє
-    бути виходом. Для проєкту, де помилка в коді заливає приміщення, це
-    не дрібниця — датчик рівня сидить на піні, який неможливо випадково
+    Причина механічна, і вона видна прямо в масках. На classic `GPIO34`–`GPIO39` вирізані
+    з маски **виходів**: пін фізично не вміє бути виходом. Для проєкту, де помилка в коді
+    заливає приміщення, це не дрібниця — датчик рівня сидить на піні, який неможливо випадково
     перетворити на джерело сигналу.
 
-    На S3 і C3 маски виходу й входу збігаються, тільки-вхідних пінів
-    немає, і цю властивість там не отримати. Тому вибір classic у цьому
-    проєкті — рішення, а не інерція; так і записано.
+    На S3 і C3 маски виходу й входу збігаються, тільки-вхідних пінів немає, і цю властивість
+    там не отримати. Тому вибір classic у цьому проєкті — рішення, а не інерція; так і записано.
 
-    Клас `B`: маски отримано дослівно, висновок про безпекову властивість
-    із них випливає однозначно, але сам він — міркування, а не цитата.
+    Клас `B`: маски отримано дослівно, висновок про безпекову властивість із них випливає
+    однозначно, але сам він — міркування, а не цитата.'
+  title: Проєкт 62 свідомо на classic через тільки-вхідний GPIO34
+  match: бо `GPIO34` там \*\*тільки\s*вхідний\*\*|не може випадково подати сигнал на реле|тільки-вхідних
+    пінів немає взагалі
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/soc_caps.h
+  quote: "esp32:   SOC_GPIO_VALID_OUTPUT_GPIO_MASK\n           (SOC_GPIO_VALID_GPIO_MASK &\
+    \ ~(BIT34|BIT35|BIT36|BIT37|BIT38|BIT39))\nesp32s3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK (SOC_GPIO_VALID_GPIO_MASK)\n\
+    esp32c3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK SOC_GPIO_VALID_GPIO_MASK\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Проєкт 62 не мав переліку складових узагалі, тож `tools/piny.py` його піни не перевіряв:
+    файл нічого собі не приписував. Додано перелік і таблицю пінів на три сімейства — і разом
+    із ними названо причину вибору.
+
+    Причина механічна, і вона видна прямо в масках. На classic `GPIO34`–`GPIO39` вирізані
+    з маски **виходів**: пін фізично не вміє бути виходом. Для проєкту, де помилка в коді
+    заливає приміщення, це не дрібниця — датчик рівня сидить на піні, який неможливо випадково
+    перетворити на джерело сигналу.
+
+    На S3 і C3 маски виходу й входу збігаються, тільки-вхідних пінів немає, і цю властивість
+    там не отримати. Тому вибір classic у цьому проєкті — рішення, а не інерція; так і записано.
+
+    Клас `B`: маски отримано дослівно, висновок про безпекову властивість із них випливає
+    однозначно, але сам він — міркування, а не цитата.'

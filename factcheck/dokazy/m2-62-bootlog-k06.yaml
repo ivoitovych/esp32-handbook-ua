@@ -5,13 +5,29 @@
   cytata: After reset, the second line printed by the {IDF_TARGET_NAME} ROM (at 115200bps)
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: Основна бод-рейт для ROM bootloader ESP32.
+  title: 'T-K06-001: Монітор на 115200 бод для читання boot-логу'
+  match: 115200 бод.*натиснути.*EN
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: After reset, the second line printed by the {IDF_TARGET_NAME} ROM (at 115200bps)
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Основна бод-рейт для ROM bootloader ESP32.
 - nazva: 'T-K06-005: rst: — причина останнього скидання чипа'
   zbih: '`rst:` — .*причина'
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: '``rst:0xNN (REASON)`` is an enumerated value (and description) of the reason for the reset.'
+  cytata: '``rst:0xNN (REASON)`` is an enumerated value (and description) of the reason for
+    the reset.'
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: Поле rst містить код причини скидання.
+  title: 'T-K06-005: rst: — причина останнього скидання чипа'
+  match: '`rst:` — .*причина'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: '``rst:0xNN (REASON)`` is an enumerated value (and description) of the reason for
+    the reset.'
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Поле rst містить код причини скидання.
 - nazva: 'T-K06-009: 0x1 (POWERON_RESET) — подано живлення або натиснуто EN'
   zbih: 0x1.*POWERON_RESET
   klas: A
@@ -19,6 +35,13 @@
   cytata: rst:0x1 (POWERON_RESET),boot:0x3
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: Приклад лога з boot.rst показує 0x1 = POWERON_RESET.
+  title: 'T-K06-009: 0x1 (POWERON_RESET) — подано живлення або натиснуто EN'
+  match: 0x1.*POWERON_RESET
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: rst:0x1 (POWERON_RESET),boot:0x3
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Приклад лога з boot.rst показує 0x1 = POWERON_RESET.
 - nazva: 'T-K06-026: boot: — куди пішов чип (SPI_FAST_FLASH_BOOT або DOWNLOAD_BOOT)'
   zbih: '`boot:` — куди пішов чип'
   klas: A
@@ -26,14 +49,29 @@
   cytata: '``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.'
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: Дві основні boot-моди описані в boot.rst.
+  title: 'T-K06-026: boot: — куди пішов чип (SPI_FAST_FLASH_BOOT або DOWNLOAD_BOOT)'
+  match: '`boot:` — куди пішов чип'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: '``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.'
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Дві основні boot-моди описані в boot.rst.
 - nazva: 'T-K06-038: Garbage символи при 115200 означають ESP8266; на 74880 читається'
   zbih: не 115200.*74880.*ESP8266
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: 'The ESP8266 boot rom writes a log to the UART when booting. The timing is a little bit unusual:
-    ``74880 baud``'
+  cytata: 'The ESP8266 boot rom writes a log to the UART when booting. The timing is a little
+    bit unusual: ``74880 baud``'
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: ESP8266 ROM на 74880 бод — істотна відмінність від ESP32.
+  title: 'T-K06-038: Garbage символи при 115200 означають ESP8266; на 74880 читається'
+  match: не 115200.*74880.*ESP8266
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: 'The ESP8266 boot rom writes a log to the UART when booting. The timing is a little
+    bit unusual: ``74880 baud``'
+  method: curl raw.githubusercontent, 2026-08-26
+  note: ESP8266 ROM на 74880 бод — істотна відмінність від ESP32.
 - nazva: 'T-K06-045: На 115200 нічого, на 74880 осмислений текст — це ESP8266'
   zbih: 74880.*осмислений текст.*ESP8266
   klas: A
@@ -41,3 +79,10 @@
   cytata: The ESP8266 boot rom writes a log to the UART when booting at ``74880 baud``
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: Диагностичний метод розпізнавання за baudrate.
+  title: 'T-K06-045: На 115200 нічого, на 74880 осмислений текст — це ESP8266'
+  match: 74880.*осмислений текст.*ESP8266
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: The ESP8266 boot rom writes a log to the UART when booting at ``74880 baud``
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Диагностичний метод розпізнавання за baudrate.

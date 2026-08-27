@@ -8,6 +8,22 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом:'
   zbih: У\s+проєкті\s+ESP\-IDF\s+розбивка
   klas: A
@@ -20,6 +36,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що розбивка задається текстовим CSV файлом
+  title: 'T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом:'
+  match: У\s+проєкті\s+ESP\-IDF\s+розбивка
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'If you configure the partition table CSV name in the project configuration (idf.py
+    menuconfig) and then build the project
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що розбивка задається текстовим CSV файлом
 - nazva: 'T-18-080: У складі ESP-IDF · SPIFFS → так'
   zbih: У\s+складі\s+ESP\-IDF\s+·\s+SPIFFS
   klas: A
@@ -31,6 +59,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: SPIFFS є частиною ESP-IDF, наведено посилання на внутрішню документацію
+  title: 'T-18-080: У складі ESP-IDF · SPIFFS → так'
+  match: У\s+складі\s+ESP\-IDF\s+·\s+SPIFFS
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'spiffs (0x82) is for :doc:`/api-reference/storage/spiffs`
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: SPIFFS є частиною ESP-IDF, наведено посилання на внутрішню документацію
 - nazva: 'T-18-088: Після цього розділ у меню з''являється, а тип'
   zbih: Після\s+цього\s+розділ\s+у
   klas: A
@@ -42,6 +81,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що littlefs є дійсним типом розділу в CSV
+  title: 'T-18-088: Після цього розділ у меню з''являється, а тип'
+  match: Після\s+цього\s+розділ\s+у
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'littlefs (0x83) is for LittleFS filesystem
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що littlefs є дійсним типом розділу в CSV
 - nazva: 'T-18-103: **Взяти готову розбивку з більшим розділом застосунку** для'
   zbih: \*\*Взяти\s+готову\s+розбивку\s+з
   klas: A
@@ -54,6 +104,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує наявність готових розбивок різних розмірів
+  title: 'T-18-103: **Взяти готову розбивку з більшим розділом застосунку** для'
+  match: \*\*Взяти\s+готову\s+розбивку\s+з
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'The simplest way to use the partition table is to open the project configuration
+    menu (idf.py menuconfig) and choose one of the simple predefined partition tables
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує наявність готових розбивок різних розмірів
 - nazva: 'T-18-106: Якщо нова прошивка розрахована на іншу розбивку, вона'
   zbih: Якщо\s+нова\s+прошивка\s+розрахована
   klas: A
@@ -66,6 +128,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує ризик перезапису даних при зміні розбивки
+  title: 'T-18-106: Якщо нова прошивка розрахована на іншу розбивку, вона'
+  match: Якщо\s+нова\s+прошивка\s+розрахована
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'Note that updating the partition table does not erase data that may have been stored
+    according to the old partition table.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує ризик перезапису даних при зміні розбивки
 - nazva: 'T-18-107: Практично це означає: **розбивку треба обирати з запасом'
   zbih: Практично\s+це\s+означає:\s+\*\*розбивку
   klas: A
@@ -79,6 +153,19 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує важливість раннього вибору розбивки
+  title: 'T-18-107: Практично це означає: **розбивку треба обирати з запасом'
+  match: Практично\s+це\s+означає:\s+\*\*розбивку
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'Note that updating the partition table does not erase data that may have been stored
+    according to the old partition table. You can use idf.py erase-flash (or esptool erase-flash)
+    to erase the entire flash contents.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує важливість раннього вибору розбивки
 - nazva: 'T-18-108: Змінити її потім можна лише з фізичним доступом'
   zbih: Змінити\s+її\s+потім\s+можна
   klas: A
@@ -91,6 +178,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: показує, що зміна розбивки потребує перепрошивки
+  title: 'T-18-108: Змінити її потім можна лише з фізичним доступом'
+  match: Змінити\s+її\s+потім\s+можна
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'If Secure Boot V1 is enabled, then the partition of type app needs to have size
+    aligned to 0x10000 (64 KB) boundary.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: показує, що зміна розбивки потребує перепрошивки
 - nazva: 'T-18-109: Другий наслідок того самого: якщо ви змінили розбивку,'
   zbih: 'Другий\s+наслідок\s+того\s+самого:'
   klas: A
@@ -103,6 +202,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує ризик конфлікту даних при зміні розбивки
+  title: 'T-18-109: Другий наслідок того самого: якщо ви змінили розбивку,'
+  match: 'Другий\s+наслідок\s+того\s+самого:'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'Note that updating the partition table does not erase data that may have been stored
+    according to the old partition table.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує ризик конфлікту даних при зміні розбивки
 - nazva: 'T-18-003: Це та частина системи, яку більшість не чіпає'
   zbih: Це\s+та\s+частина\s+системи,
   klas: A
@@ -115,6 +226,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що розбивка - це те, що більшість не змінює, поки застосунок не переріс
+  title: 'T-18-003: Це та частина системи, яку більшість не чіпає'
+  match: Це\s+та\s+частина\s+системи,
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'Each entry in the partition table has a name (label), type (app, data, or something
+    else), subtype and the offset in flash where the partition is loaded.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що розбивка - це те, що більшість не змінює, поки застосунок не переріс
 - nazva: 'T-18-009: Типова розбивка для пристрою без OTA виглядає так:'
   zbih: Типова\s+розбивка\s+для\s+пристрою
   klas: A
@@ -128,6 +251,19 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: наведено типову розбивку без OTA
+  title: 'T-18-009: Типова розбивка для пристрою без OTA виглядає так:'
+  match: Типова\s+розбивка\s+для\s+пристрою
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: '# ESP-IDF Partition Table # Name,   Type, SubType, Offset,  Size, Flags nvs,      data,
+    nvs,     0x9000,  0x6000, phy_init, data, phy,     0xf000,  0x1000, factory,  app,  factory,
+    0x10000, 1M,
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: наведено типову розбивку без OTA
 - nazva: 'T-18-010: | Назва | Тип | Підтип | Зсув'
   zbih: \|\s+Назва\s+\|\s+Тип\s+\|\s+Підтип
   klas: A
@@ -139,6 +275,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує формат таблиці розділів з колонками Назва, Тип, Підтип, Зсув, Розмір
+  title: 'T-18-010: | Назва | Тип | Підтип | Зсув'
+  match: \|\s+Назва\s+\|\s+Тип\s+\|\s+Підтип
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'Name,   Type, SubType, Offset,  Size, Flags
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує формат таблиці розділів з колонками Назва, Тип, Підтип, Зсув, Розмір
 - nazva: 'T-18-015: `phy_init` · Тип → data'
   zbih: '`phy_init`\s+·\s+Тип\s+→'
   klas: A
@@ -150,6 +297,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: phy_init має тип data у таблиці розділів
+  title: 'T-18-015: `phy_init` · Тип → data'
+  match: '`phy_init`\s+·\s+Тип\s+→'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'phy_init, data, phy,     0xf000,  0x1000,
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: phy_init має тип data у таблиці розділів
 - nazva: 'T-18-016: `phy_init` · Підтип → phy'
   zbih: '`phy_init`\s+·\s+Підтип\s+→'
   klas: A
@@ -161,6 +319,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: phy_init має підтип phy у таблиці розділів
+  title: 'T-18-016: `phy_init` · Підтип → phy'
+  match: '`phy_init`\s+·\s+Підтип\s+→'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'phy_init, data, phy,     0xf000,  0x1000,
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: phy_init має підтип phy у таблиці розділів
 - nazva: 'T-18-019: `factory` · Тип → app'
   zbih: '`factory`\s+·\s+Тип\s+→'
   klas: A
@@ -172,6 +341,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: factory має тип app у таблиці розділів
+  title: 'T-18-019: `factory` · Тип → app'
+  match: '`factory`\s+·\s+Тип\s+→'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'factory,  app,  factory, 0x10000, 1M,
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: factory має тип app у таблиці розділів
 - nazva: 'T-18-020: `factory` · Підтип → factory'
   zbih: '`factory`\s+·\s+Підтип\s+→'
   klas: A
@@ -183,6 +363,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: factory має підтип factory у таблиці розділів
+  title: 'T-18-020: `factory` · Підтип → factory'
+  match: '`factory`\s+·\s+Підтип\s+→'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'factory,  app,  factory, 0x10000, 1M,
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: factory має підтип factory у таблиці розділів
 - nazva: 'T-18-028: **`phy_init`** зберігає калібрувальні дані радіо.'
   zbih: \*\*`phy_init`\*\*\s+зберігає\s+калібрувальні\s+дані
   klas: A
@@ -195,3 +386,15 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що phy_init зберігає калібрувальні дані радіо
+  title: 'T-18-028: **`phy_init`** зберігає калібрувальні дані радіо.'
+  match: \*\*`phy_init`\*\*\s+зберігає\s+калібрувальні\s+дані
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'phy (1) is for storing PHY initialisation data. This allows PHY to be configured
+    per-device, instead of in firmware.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що phy_init зберігає калібрувальні дані радіо

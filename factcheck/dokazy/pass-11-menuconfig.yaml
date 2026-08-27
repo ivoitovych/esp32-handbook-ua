@@ -9,197 +9,264 @@
 # Джерело — самі файли Kconfig, тобто те, з чого menuconfig і будує
 # дерево. Це першоджерело в буквальному сенсі: рендер меню є похідним.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Дерево menuconfig — корінь і Component config
-  zbih: 'Serial flasher config|Partition Table`|Component config` → `ESP System Settings|Component config` → `Core dump|Component config` → `ESP PSRAM|Три перші пункти меню'
+  zbih: Serial flasher config|Partition Table`|Component config` → `ESP System Settings|Component
+    config` → `Core dump|Component config` → `ESP PSRAM|Три перші пункти меню
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig
-    та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild,
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild,
     components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
-  cytata: |
-    (Kconfig — корінь)
-    mainmenu "Espressif IoT Development Framework Configuration"
-        menu "Build type"
-        menu "Compiler options"
-        menu "Component config"
-
-    (Kconfig.projbuild — потрапляють у корінь)
-    esptool_py:        menu "Serial flasher config"
-    partition_table:   menu "Partition Table"
-    bootloader:        menu "Bootloader config"
-
-    (Kconfig — потрапляють у Component config)
-    esp_system:  menu "ESP System Settings"
-    espcoredump: menu "Core dump"
-    esp_psram:   menu "ESP PSRAM"
-    log:         menu "Log"
-    bt:          menu "Bluetooth"
-    freertos:    menu "FreeRTOS"
+  cytata: "(Kconfig — корінь)\nmainmenu \"Espressif IoT Development Framework Configuration\"\
+    \n    menu \"Build type\"\n    menu \"Compiler options\"\n    menu \"Component config\"\
+    \n\n(Kconfig.projbuild — потрапляють у корінь)\nesptool_py:        menu \"Serial flasher\
+    \ config\"\npartition_table:   menu \"Partition Table\"\nbootloader:        menu \"Bootloader\
+    \ config\"\n\n(Kconfig — потрапляють у Component config)\nesp_system:  menu \"ESP System\
+    \ Settings\"\nespcoredump: menu \"Core dump\"\nesp_psram:   menu \"ESP PSRAM\"\nlog: \
+    \        menu \"Log\"\nbt:          menu \"Bluetooth\"\nfreertos:    menu \"FreeRTOS\"\
+    \n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Виправлення таблиці розділу 11: частина рядків називала пункт без
-    шляху, і читач мусив здогадуватися, чи це корінь, чи `Component
-    config`. Тепер шлях повний скрізь, а правило назване: `Kconfig.projbuild`
-    компонента йде в корінь, звичайний `Kconfig` — у `Component config`.
+  notatka: 'Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач
+    мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а
+    правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у
+    `Component config`.
 
-    Практичний наслідок правила: у корені лежить те, що стосується
-    збірки й прошивки взагалі, а не окремого компонента. Це пояснює,
-    чому `Serial flasher config` не всередині `Component config`.
+    Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі,
+    а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component
+    config`.'
+  title: Дерево menuconfig — корінь і Component config
+  match: Serial flasher config|Partition Table`|Component config` → `ESP System Settings|Component
+    config` → `Core dump|Component config` → `ESP PSRAM|Три перші пункти меню
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig та components/{esptool_py,partition_table,bootloader}/Kconfig.projbuild,
+    components/{esp_system,espcoredump,esp_psram,log,bt,freertos}/Kconfig
+  quote: "(Kconfig — корінь)\nmainmenu \"Espressif IoT Development Framework Configuration\"\
+    \n    menu \"Build type\"\n    menu \"Compiler options\"\n    menu \"Component config\"\
+    \n\n(Kconfig.projbuild — потрапляють у корінь)\nesptool_py:        menu \"Serial flasher\
+    \ config\"\npartition_table:   menu \"Partition Table\"\nbootloader:        menu \"Bootloader\
+    \ config\"\n\n(Kconfig — потрапляють у Component config)\nesp_system:  menu \"ESP System\
+    \ Settings\"\nespcoredump: menu \"Core dump\"\nesp_psram:   menu \"ESP PSRAM\"\nlog: \
+    \        menu \"Log\"\nbt:          menu \"Bluetooth\"\nfreertos:    menu \"FreeRTOS\"\
+    \n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Виправлення таблиці розділу 11: частина рядків називала пункт без шляху, і читач
+    мусив здогадуватися, чи це корінь, чи `Component config`. Тепер шлях повний скрізь, а
+    правило назване: `Kconfig.projbuild` компонента йде в корінь, звичайний `Kconfig` — у
+    `Component config`.
 
+    Практичний наслідок правила: у корені лежить те, що стосується збірки й прошивки взагалі,
+    а не окремого компонента. Це пояснює, чому `Serial flasher config` не всередині `Component
+    config`.'
 - nazva: Меню логування зветься Log, а не Log output
-  zbih: 'Component config` → `Log` → `Log Level|`Log` → `Log Level'
+  zbih: Component config` → `Log` → `Log Level|`Log` → `Log Level
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig
     та .../components/log/Kconfig.level
-  cytata: |
-    (log/Kconfig)
-    menu "Log"
-        …
-        rsource "./Kconfig.level"
-
-    (log/Kconfig.level)
-    menu "Log Level"
-        choice LOG_DEFAULT_LEVEL
-            bool "Default log verbosity"
-            default LOG_DEFAULT_LEVEL_INFO
+  cytata: "(log/Kconfig)\nmenu \"Log\"\n    …\n    rsource \"./Kconfig.level\"\n\n(log/Kconfig.level)\n\
+    menu \"Log Level\"\n    choice LOG_DEFAULT_LEVEL\n        bool \"Default log verbosity\"\
+    \n        default LOG_DEFAULT_LEVEL_INFO\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Виправлення у двох місцях (розділи 11 і 25). Меню зветься `Log`, і
-    рівні лежать не в ньому безпосередньо, а в підменю `Log Level`. Назва
-    `Log output` — від старіших версій ESP-IDF.
+  notatka: 'Виправлення у двох місцях (розділи 11 і 25). Меню зветься `Log`, і рівні лежать
+    не в ньому безпосередньо, а в підменю `Log Level`. Назва `Log output` — від старіших версій
+    ESP-IDF.
 
-    Сам пункт `Default log verbosity` існує дослівно, і типове значення
-    справді `Info` — це книга стверджувала правильно.
+    Сам пункт `Default log verbosity` існує дослівно, і типове значення справді `Info` — це
+    книга стверджувала правильно.'
+  title: Меню логування зветься Log, а не Log output
+  match: Component config` → `Log` → `Log Level|`Log` → `Log Level
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig
+    та .../components/log/Kconfig.level
+  quote: "(log/Kconfig)\nmenu \"Log\"\n    …\n    rsource \"./Kconfig.level\"\n\n(log/Kconfig.level)\n\
+    menu \"Log Level\"\n    choice LOG_DEFAULT_LEVEL\n        bool \"Default log verbosity\"\
+    \n        default LOG_DEFAULT_LEVEL_INFO\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Виправлення у двох місцях (розділи 11 і 25). Меню зветься `Log`, і рівні лежать не
+    в ньому безпосередньо, а в підменю `Log Level`. Назва `Log output` — від старіших версій
+    ESP-IDF.
 
+    Сам пункт `Default log verbosity` існує дослівно, і типове значення справді `Info` — це
+    книга стверджувала правильно.'
 - nazva: Maximum log verbosity — стеля компіляції окремо від типового рівня
-  zbih: 'Maximum log verbosity|Same as default|мовчки не робить\s*нічого|до чого можна підняти в runtime|dynamic log level changes'
+  zbih: Maximum log verbosity|Same as default|мовчки не робить\s*нічого|до чого можна підняти
+    в runtime|dynamic log level changes
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level
     та .../components/log/Kconfig.level_settings
-  cytata: |
-    choice LOG_DEFAULT_LEVEL
-        bool "Default log verbosity"
-        help
-            By default, this setting limits which log statements
-            are compiled into the program. For example, selecting
-            "Warning" would mean that changing log level to "Debug"
-            at runtime will not be possible. To allow increasing log
-            level above the default at runtime, see the next option.
-
-    choice LOG_MAXIMUM_LEVEL
-        bool "Maximum log verbosity"
-        default LOG_MAXIMUM_EQUALS_DEFAULT
-        help
-            This config option sets the highest log verbosity that it's possible to select
-            at runtime by calling esp_log_level_set(). This level may be higher than
-            the default verbosity level which is set when the app starts up.
-        config LOG_MAXIMUM_EQUALS_DEFAULT
-            bool "Same as default"
-
-    (Kconfig.level_settings)
-    config LOG_DYNAMIC_LEVEL_CONTROL
-        bool "Enable dynamic log level changes at runtime"
-        default y
+  cytata: "choice LOG_DEFAULT_LEVEL\n    bool \"Default log verbosity\"\n    help\n      \
+    \  By default, this setting limits which log statements\n        are compiled into the\
+    \ program. For example, selecting\n        \"Warning\" would mean that changing log level\
+    \ to \"Debug\"\n        at runtime will not be possible. To allow increasing log\n   \
+    \     level above the default at runtime, see the next option.\n\nchoice LOG_MAXIMUM_LEVEL\n\
+    \    bool \"Maximum log verbosity\"\n    default LOG_MAXIMUM_EQUALS_DEFAULT\n    help\n\
+    \        This config option sets the highest log verbosity that it's possible to select\n\
+    \        at runtime by calling esp_log_level_set(). This level may be higher than\n  \
+    \      the default verbosity level which is set when the app starts up.\n    config LOG_MAXIMUM_EQUALS_DEFAULT\n\
+    \        bool \"Same as default\"\n\n(Kconfig.level_settings)\nconfig LOG_DYNAMIC_LEVEL_CONTROL\n\
+    \    bool \"Enable dynamic log level changes at runtime\"\n    default y\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Доповнення, і воно закриває реальну пастку. Книга правильно писала,
-    що підняти рівень у runtime можна лише для того, що не вирізане при
-    компіляції, — але єдиним виходом називала «збирати з `Debug`». Це
-    псує головне: пристрій починає сипати логом постійно.
+  notatka: 'Доповнення, і воно закриває реальну пастку. Книга правильно писала, що підняти
+    рівень у runtime можна лише для того, що не вирізане при компіляції, — але єдиним виходом
+    називала «збирати з `Debug`». Це псує головне: пристрій починає сипати логом постійно.
 
-    `Maximum log verbosity` розводить два різні поняття: `Default` —
-    з чим прошивка стартує, `Maximum` — до чого її можна підняти на
-    ходу. Пара `Default = Info`, `Maximum = Debug` дає рівно те, чого
-    хоче розділ 25: тихий пристрій, який на команду піднімає
-    детальність окремої підсистеми без перезбирання.
+    `Maximum log verbosity` розводить два різні поняття: `Default` — з чим прошивка стартує,
+    `Maximum` — до чого її можна підняти на ходу. Пара `Default = Info`, `Maximum = Debug`
+    дає рівно те, чого хоче розділ 25: тихий пристрій, який на команду піднімає детальність
+    окремої підсистеми без перезбирання.
 
-    Важлива подробиця, теж із джерела: типове значення `Maximum` —
-    `Same as default`, тобто запасу за замовчуванням немає й вмикати
-    його треба свідомо. Саме тому пастка й трапляється.
+    Важлива подробиця, теж із джерела: типове значення `Maximum` — `Same as default`, тобто
+    запасу за замовчуванням немає й вмикати його треба свідомо. Саме тому пастка й трапляється.
 
-    `esp_log_level_set` при цьому працює типово: `LOG_DYNAMIC_LEVEL_CONTROL`
-    має `default y`.
+    `esp_log_level_set` при цьому працює типово: `LOG_DYNAMIC_LEVEL_CONTROL` має `default
+    y`.'
+  title: Maximum log verbosity — стеля компіляції окремо від типового рівня
+  match: Maximum log verbosity|Same as default|мовчки не робить\s*нічого|до чого можна підняти
+    в runtime|dynamic log level changes
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level
+    та .../components/log/Kconfig.level_settings
+  quote: "choice LOG_DEFAULT_LEVEL\n    bool \"Default log verbosity\"\n    help\n       \
+    \ By default, this setting limits which log statements\n        are compiled into the\
+    \ program. For example, selecting\n        \"Warning\" would mean that changing log level\
+    \ to \"Debug\"\n        at runtime will not be possible. To allow increasing log\n   \
+    \     level above the default at runtime, see the next option.\n\nchoice LOG_MAXIMUM_LEVEL\n\
+    \    bool \"Maximum log verbosity\"\n    default LOG_MAXIMUM_EQUALS_DEFAULT\n    help\n\
+    \        This config option sets the highest log verbosity that it's possible to select\n\
+    \        at runtime by calling esp_log_level_set(). This level may be higher than\n  \
+    \      the default verbosity level which is set when the app starts up.\n    config LOG_MAXIMUM_EQUALS_DEFAULT\n\
+    \        bool \"Same as default\"\n\n(Kconfig.level_settings)\nconfig LOG_DYNAMIC_LEVEL_CONTROL\n\
+    \    bool \"Enable dynamic log level changes at runtime\"\n    default y\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Доповнення, і воно закриває реальну пастку. Книга правильно писала, що підняти рівень
+    у runtime можна лише для того, що не вирізане при компіляції, — але єдиним виходом називала
+    «збирати з `Debug`». Це псує головне: пристрій починає сипати логом постійно.
 
+    `Maximum log verbosity` розводить два різні поняття: `Default` — з чим прошивка стартує,
+    `Maximum` — до чого її можна підняти на ходу. Пара `Default = Info`, `Maximum = Debug`
+    дає рівно те, чого хоче розділ 25: тихий пристрій, який на команду піднімає детальність
+    окремої підсистеми без перезбирання.
+
+    Важлива подробиця, теж із джерела: типове значення `Maximum` — `Same as default`, тобто
+    запасу за замовчуванням немає й вмикати його треба свідомо. Саме тому пастка й трапляється.
+
+    `esp_log_level_set` при цьому працює типово: `LOG_DYNAMIC_LEVEL_CONTROL` має `default
+    y`.'
 - nazva: Відкат вмикається в підменю Application Rollback
-  zbih: 'Application Rollback|Enable app rollback support'
+  zbih: Application Rollback|Enable app rollback support
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.app_rollback
-  cytata: |
-    menu "Application Rollback"
-        config BOOTLOADER_APP_ROLLBACK_ENABLE
-            bool "Enable app rollback support"
-        …
-            bool "Enable app anti-rollback support"
+  cytata: "menu \"Application Rollback\"\n    config BOOTLOADER_APP_ROLLBACK_ENABLE\n    \
+    \    bool \"Enable app rollback support\"\n    …\n        bool \"Enable app anti-rollback\
+    \ support\"\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Виправлення розділу 19: книга давала `Bootloader config` →
-    `App rollback support`, пропускаючи рівень підменю. Насправді
-    `Bootloader config` → `Application Rollback` → `Enable app rollback
-    support`.
+  notatka: 'Виправлення розділу 19: книга давала `Bootloader config` → `App rollback support`,
+    пропускаючи рівень підменю. Насправді `Bootloader config` → `Application Rollback` → `Enable
+    app rollback support`.
 
-    Поруч видно `Enable app anti-rollback support` — інший механізм
-    (заборона встановлювати старішу версію через eFuse), якого книга не
-    описує й не плутає з відкатом. Розбіжності немає, зафіксовано на
-    майбутнє.
+    Поруч видно `Enable app anti-rollback support` — інший механізм (заборона встановлювати
+    старішу версію через eFuse), якого книга не описує й не плутає з відкатом. Розбіжності
+    немає, зафіксовано на майбутнє.'
+  title: Відкат вмикається в підменю Application Rollback
+  match: Application Rollback|Enable app rollback support
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.app_rollback
+  quote: "menu \"Application Rollback\"\n    config BOOTLOADER_APP_ROLLBACK_ENABLE\n     \
+    \   bool \"Enable app rollback support\"\n    …\n        bool \"Enable app anti-rollback\
+    \ support\"\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Виправлення розділу 19: книга давала `Bootloader config` → `App rollback support`,
+    пропускаючи рівень підменю. Насправді `Bootloader config` → `Application Rollback` → `Enable
+    app rollback support`.
 
+    Поруч видно `Enable app anti-rollback support` — інший механізм (заборона встановлювати
+    старішу версію через eFuse), якого книга не описує й не плутає з відкатом. Розбіжності
+    немає, зафіксовано на майбутнє.'
 - nazva: Рівні оптимізації компілятора
-  zbih: 'Optimization Level|Debug without optimization \(-O0\)|Debug \(-Og\)|Optimize for size'
+  zbih: Optimization Level|Debug without optimization \(-O0\)|Debug \(-Og\)|Optimize for size
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig
-  cytata: |
-    menu "Compiler options"
-        choice COMPILER_OPTIMIZATION
-            prompt "Optimization Level"
-            default COMPILER_OPTIMIZATION_DEBUG
-            config COMPILER_OPTIMIZATION_DEBUG
-                bool "Debug (-Og)"
-            config COMPILER_OPTIMIZATION_SIZE
-                bool "Optimize for size (-Os with GCC, -Oz with Clang)"
-            config COMPILER_OPTIMIZATION_PERF
-                bool "Optimize for performance (-O2)"
-            config COMPILER_OPTIMIZATION_NONE
-                bool "Debug without optimization (-O0)"
+  cytata: "menu \"Compiler options\"\n    choice COMPILER_OPTIMIZATION\n        prompt \"\
+    Optimization Level\"\n        default COMPILER_OPTIMIZATION_DEBUG\n        config COMPILER_OPTIMIZATION_DEBUG\n\
+    \            bool \"Debug (-Og)\"\n        config COMPILER_OPTIMIZATION_SIZE\n       \
+    \     bool \"Optimize for size (-Os with GCC, -Oz with Clang)\"\n        config COMPILER_OPTIMIZATION_PERF\n\
+    \            bool \"Optimize for performance (-O2)\"\n        config COMPILER_OPTIMIZATION_NONE\n\
+    \            bool \"Debug without optimization (-O0)\"\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Розділ 27 підтверджено дослівно, включно з твердженням, що
-    `Debug (-Og)` — це і є значення за замовчуванням
-    (`default COMPILER_OPTIMIZATION_DEBUG`).
+  notatka: 'Розділ 27 підтверджено дослівно, включно з твердженням, що `Debug (-Og)` — це
+    і є значення за замовчуванням (`default COMPILER_OPTIMIZATION_DEBUG`).
 
-    У таблиці розділу 11 рядок був скорочений до `Compiler options` →
-    `-Os`, тобто пропускав рівень `Optimization Level`; уточнено.
+    У таблиці розділу 11 рядок був скорочений до `Compiler options` → `-Os`, тобто пропускав
+    рівень `Optimization Level`; уточнено.'
+  title: Рівні оптимізації компілятора
+  match: Optimization Level|Debug without optimization \(-O0\)|Debug \(-Og\)|Optimize for
+    size
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/Kconfig
+  quote: "menu \"Compiler options\"\n    choice COMPILER_OPTIMIZATION\n        prompt \"Optimization\
+    \ Level\"\n        default COMPILER_OPTIMIZATION_DEBUG\n        config COMPILER_OPTIMIZATION_DEBUG\n\
+    \            bool \"Debug (-Og)\"\n        config COMPILER_OPTIMIZATION_SIZE\n       \
+    \     bool \"Optimize for size (-Os with GCC, -Oz with Clang)\"\n        config COMPILER_OPTIMIZATION_PERF\n\
+    \            bool \"Optimize for performance (-O2)\"\n        config COMPILER_OPTIMIZATION_NONE\n\
+    \            bool \"Debug without optimization (-O0)\"\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Розділ 27 підтверджено дослівно, включно з твердженням, що `Debug (-Og)` — це і є
+    значення за замовчуванням (`default COMPILER_OPTIMIZATION_DEBUG`).
 
+    У таблиці розділу 11 рядок був скорочений до `Compiler options` → `-Os`, тобто пропускав
+    рівень `Optimization Level`; уточнено.'
 - nazva: Хост Bluetooth і перевірка переповнення стека
-  zbih: 'configCHECK_FOR_STACK_OVERFLOW|Check using canary bytes \(Method 2\)|`Bluetooth` →'
+  zbih: configCHECK_FOR_STACK_OVERFLOW|Check using canary bytes \(Method 2\)|`Bluetooth` →
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig
     та .../components/bt/Kconfig
-  cytata: |
-    (freertos/Kconfig)
-    menu "FreeRTOS"
-        menu "Kernel"
-            choice FREERTOS_CHECK_STACKOVERFLOW
-                prompt "configCHECK_FOR_STACK_OVERFLOW"
-                default FREERTOS_CHECK_STACKOVERFLOW_CANARY
-                    bool "Check using canary bytes (Method 2)"
-
-    (bt/Kconfig)
-    menu "Bluetooth"
-        choice BT_HOST
-            prompt "Host"
-                bool "Bluedroid - Dual-mode"
-                bool "NimBLE - BLE only"
-                bool "Disabled"
+  cytata: "(freertos/Kconfig)\nmenu \"FreeRTOS\"\n    menu \"Kernel\"\n        choice FREERTOS_CHECK_STACKOVERFLOW\n\
+    \            prompt \"configCHECK_FOR_STACK_OVERFLOW\"\n            default FREERTOS_CHECK_STACKOVERFLOW_CANARY\n\
+    \                bool \"Check using canary bytes (Method 2)\"\n\n(bt/Kconfig)\nmenu \"\
+    Bluetooth\"\n    choice BT_HOST\n        prompt \"Host\"\n            bool \"Bluedroid\
+    \ - Dual-mode\"\n            bool \"NimBLE - BLE only\"\n            bool \"Disabled\"\
+    \n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Без розбіжностей. Розділ 41 називає `Component config` → `Bluetooth`
-    → `Host`, і саме так меню й влаштоване; назви варіантів
-    (`Bluedroid - Dual-mode`, `NimBLE - BLE only`) підтверджують і те, що
-    книга каже про призначення кожного.
+  notatka: 'Без розбіжностей. Розділ 41 називає `Component config` → `Bluetooth` → `Host`,
+    і саме так меню й влаштоване; назви варіантів (`Bluedroid - Dual-mode`, `NimBLE - BLE
+    only`) підтверджують і те, що книга каже про призначення кожного.
 
-    Шлях до `configCHECK_FOR_STACK_OVERFLOW` у розділі 30 теж перевірено
-    цим проходом і теж без розбіжностей — але доказ на нього вже стояв
-    із проходу 6, тож реєстр залишає сильніший наявний. Витяг наведено
-    тут як другу, незалежну звірку того самого місця.
+    Шлях до `configCHECK_FOR_STACK_OVERFLOW` у розділі 30 теж перевірено цим проходом і теж
+    без розбіжностей — але доказ на нього вже стояв із проходу 6, тож реєстр залишає сильніший
+    наявний. Витяг наведено тут як другу, незалежну звірку того самого місця.'
+  title: Хост Bluetooth і перевірка переповнення стека
+  match: configCHECK_FOR_STACK_OVERFLOW|Check using canary bytes \(Method 2\)|`Bluetooth`
+    →
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig
+    та .../components/bt/Kconfig
+  quote: "(freertos/Kconfig)\nmenu \"FreeRTOS\"\n    menu \"Kernel\"\n        choice FREERTOS_CHECK_STACKOVERFLOW\n\
+    \            prompt \"configCHECK_FOR_STACK_OVERFLOW\"\n            default FREERTOS_CHECK_STACKOVERFLOW_CANARY\n\
+    \                bool \"Check using canary bytes (Method 2)\"\n\n(bt/Kconfig)\nmenu \"\
+    Bluetooth\"\n    choice BT_HOST\n        prompt \"Host\"\n            bool \"Bluedroid\
+    \ - Dual-mode\"\n            bool \"NimBLE - BLE only\"\n            bool \"Disabled\"\
+    \n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Без розбіжностей. Розділ 41 називає `Component config` → `Bluetooth` → `Host`, і
+    саме так меню й влаштоване; назви варіантів (`Bluedroid - Dual-mode`, `NimBLE - BLE only`)
+    підтверджують і те, що книга каже про призначення кожного.
+
+    Шлях до `configCHECK_FOR_STACK_OVERFLOW` у розділі 30 теж перевірено цим проходом і теж
+    без розбіжностей — але доказ на нього вже стояв із проходу 6, тож реєстр залишає сильніший
+    наявний. Витяг наведено тут як другу, незалежну звірку того самого місця.'

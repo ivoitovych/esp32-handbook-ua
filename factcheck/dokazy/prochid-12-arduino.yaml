@@ -8,6 +8,8 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
+
 - nazva: 'T-12-005: насправді відбувається таке: ESP-IDF стартує звичайним чином, створює'
   zbih: насправді\s+відбувається\s+таке:\s+ESP\-IDF
   klas: A
@@ -18,6 +20,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: ESP-IDF app_main creates FreeRTOS loopTask, setup() called once, loop() in infinite
+    for loop
+  title: 'T-12-005: насправді відбувається таке: ESP-IDF стартує звичайним чином, створює'
+  match: насправді\s+відбувається\s+таке:\s+ESP\-IDF
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/cores/esp32/main.cpp
+  quote: "xTaskCreateUniversal(loopTask, \"loopTask\",\n  getArduinoLoopTaskStackSize(), NULL,\
+    \ 1,\n  &loopTaskHandle, ARDUINO_RUNNING_CORE);\n"
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: ESP-IDF app_main creates FreeRTOS loopTask, setup() called once, loop() in infinite
     for loop
 - nazva: 'T-12-059: | Прототип уже є, треба довести до виробу'
   zbih: \|\s+Прототип\s+уже\s+є,
@@ -31,6 +44,18 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує можливість використання Arduino як компонента ESP-IDF для переведення
     прототипу до виробництва
+  title: 'T-12-059: | Прототип уже є, треба довести до виробу'
+  match: \|\s+Прототип\s+уже\s+є,
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  quote: 'Arduino as an ESP-IDF component
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує можливість використання Arduino як компонента ESP-IDF для переведення
+    прототипу до виробництва
 - nazva: 'T-12-064: Прототип на Arduino доводиться до виробу підключенням Arduino'
   zbih: Прототип\s+на\s+Arduino\s+доводиться\s+до\s+виробу\s+підключенням\s+Arduino\s+компонентом\s+ESP\-IDF,\s+а
   klas: A
@@ -43,3 +68,15 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує, що прототип на Arduino можна привести до виробництва підключенням
     його як компонента ESP-IDF без переписування
+  title: 'T-12-064: Прототип на Arduino доводиться до виробу підключенням Arduino'
+  match: Прототип\s+на\s+Arduino\s+доводиться\s+до\s+виробу\s+підключенням\s+Arduino\s+компонентом\s+ESP\-IDF,\s+а
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  quote: 'Arduino as an ESP-IDF component
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує, що прототип на Arduino можна привести до виробництва підключенням його
+    як компонента ESP-IDF без переписування

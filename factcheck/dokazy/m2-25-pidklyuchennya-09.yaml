@@ -1,8 +1,18 @@
+
+
+
+
+
+
+
+
+
+
 - nazva: CP2102 · Windows — драйвер від SiLabs
   zbih: '`CP2102`.*драйвер із сайту SiLabs'
   klas: A
-  dzherelo: Silicon Labs, CP2102/9 SINGLE-CHIP USB-TO-UART BRIDGE, datasheet, розділ 9 «CP2102/9 Device
-    Drivers» і «9.1. Virtual COM Port Drivers»
+  dzherelo: Silicon Labs, CP2102/9 SINGLE-CHIP USB-TO-UART BRIDGE, datasheet, розділ 9 «CP2102/9
+    Device Drivers» і «9.1. Virtual COM Port Drivers»
   cytata: 'Virtual COM Port Device Drivers
 
     - Works with existing COM port PC Applications
@@ -22,75 +32,180 @@
     http://www.silabs.com/support/Pages/software-downloads.aspx.
 
     '
-  sposib: PDF /home/ubuntu/dzherela-cache/cp2102.pdf, pdftotext -layout, grep "Virtual COM Port\|Windows\|Silicon
-    Laboratories", 2026-08-26
-  notatka: Документ явно вказує на Virtual COM Port драйвери для Windows від Silicon Laboratories. Посилання
-    на сайт SiLabs підтверджує, що це офіційні драйвери від виробника, як стверджує книга.
+  sposib: PDF /home/ubuntu/dzherela-cache/cp2102.pdf, pdftotext -layout, grep "Virtual COM
+    Port\|Windows\|Silicon Laboratories", 2026-08-26
+  notatka: Документ явно вказує на Virtual COM Port драйвери для Windows від Silicon Laboratories.
+    Посилання на сайт SiLabs підтверджує, що це офіційні драйвери від виробника, як стверджує
+    книга.
+  title: CP2102 · Windows — драйвер від SiLabs
+  match: '`CP2102`.*драйвер із сайту SiLabs'
+  status: verbatim
+  source: Silicon Labs, CP2102/9 SINGLE-CHIP USB-TO-UART BRIDGE, datasheet, розділ 9 «CP2102/9
+    Device Drivers» і «9.1. Virtual COM Port Drivers»
+  quote: 'Virtual COM Port Device Drivers
+
+    - Works with existing COM port PC Applications
+
+    - Royalty-free distribution license
+
+    - Windows 8/7/Vista/Server 2003/XP/2000
+
+
+    Royalty-free Virtual COM Port (VCP) device drivers provided by Silicon
+
+    Laboratories allow a CP2102/9-based device to appear to the PC''s
+
+
+    The latest drivers are available at
+
+    http://www.silabs.com/support/Pages/software-downloads.aspx.
+
+    '
+  method: PDF /home/ubuntu/dzherela-cache/cp2102.pdf, pdftotext -layout, grep "Virtual COM
+    Port\|Windows\|Silicon Laboratories", 2026-08-26
+  note: Документ явно вказує на Virtual COM Port драйвери для Windows від Silicon Laboratories.
+    Посилання на сайт SiLabs підтверджує, що це офіційні драйвери від виробника, як стверджує
+    книга.
 - nazva: CH340 · Windows — драйвер від WCH
   zbih: '`CH340`.*драйвер із сайту WCH'
   klas: B
   dzherelo: WCH, CH340 USB to serial chip, datasheet (english), розділи «Introduction» і «Features»
-  cytata: "USB to serial chip CH340\n\nFeatures:\n● Totally compatible with serial application program\
-    \ in computer endpoint\n  Windows operation system.\n● Software compatible with CH341, using drive\
-    \ of CH341 directly.\n\nhttp://wch.cn\n"
-  sposib: PDF /home/ubuntu/dzherela-cache/ch340.pdf, pdftotext -layout, grep "Windows\|compatible", 2026-08-26
-  notatka: Документ підтверджує сумісність з Windows, але не називає явно драйвер від WCH. Зазначено сумісність
-    з CH341 драйвером. URL wch.cn вказує на виробника WCH. Для класу A потребувалася б явна посилання
-    на драйвер від WCH для Windows у datasheet.
+  cytata: "USB to serial chip CH340\n\nFeatures:\n● Totally compatible with serial application\
+    \ program in computer endpoint\n  Windows operation system.\n● Software compatible with\
+    \ CH341, using drive of CH341 directly.\n\nhttp://wch.cn\n"
+  sposib: PDF /home/ubuntu/dzherela-cache/ch340.pdf, pdftotext -layout, grep "Windows\|compatible",
+    2026-08-26
+  notatka: Документ підтверджує сумісність з Windows, але не називає явно драйвер від WCH.
+    Зазначено сумісність з CH341 драйвером. URL wch.cn вказує на виробника WCH. Для класу
+    A потребувалася б явна посилання на драйвер від WCH для Windows у datasheet.
+  title: CH340 · Windows — драйвер від WCH
+  match: '`CH340`.*драйвер із сайту WCH'
+  status: derived
+  source: WCH, CH340 USB to serial chip, datasheet (english), розділи «Introduction» і «Features»
+  quote: "USB to serial chip CH340\n\nFeatures:\n● Totally compatible with serial application\
+    \ program in computer endpoint\n  Windows operation system.\n● Software compatible with\
+    \ CH341, using drive of CH341 directly.\n\nhttp://wch.cn\n"
+  method: PDF /home/ubuntu/dzherela-cache/ch340.pdf, pdftotext -layout, grep "Windows\|compatible",
+    2026-08-26
+  note: Документ підтверджує сумісність з Windows, але не називає явно драйвер від WCH. Зазначено
+    сумісність з CH341 драйвером. URL wch.cn вказує на виробника WCH. Для класу A потребувалася
+    б явна посилання на драйвер від WCH для Windows у datasheet.
 - nazva: CH9102 · Windows — окремий драйвер (не CH340)
   zbih: '`CH9102`.*окремий.*драйвер'
   klas: C
   dzherelo: WCH CH9102 / CH9102F datasheet
-  shukaty: Інформація про Windows драйвер для CH9102; розділи про драйвери та встановлення на Windows;
-    як він відрізняється від CH340
-  notatka: CH9102 datasheet не дістається з dzherela-cache. Потребує окремого завантаження з wch.cn. Книга
-    стверджує, що CH9102 потребує окремого драйвера від CH340 для Windows.
+  shukaty: Інформація про Windows драйвер для CH9102; розділи про драйвери та встановлення
+    на Windows; як він відрізняється від CH340
+  notatka: CH9102 datasheet не дістається з dzherela-cache. Потребує окремого завантаження
+    з wch.cn. Книга стверджує, що CH9102 потребує окремого драйвера від CH340 для Windows.
+  title: CH9102 · Windows — окремий драйвер (не CH340)
+  match: '`CH9102`.*окремий.*драйвер'
+  status: named-unreachable
+  source: WCH CH9102 / CH9102F datasheet
+  note: CH9102 datasheet не дістається з dzherela-cache. Потребує окремого завантаження з
+    wch.cn. Книга стверджує, що CH9102 потребує окремого драйвера від CH340 для Windows.
+  look_for: Інформація про Windows драйвер для CH9102; розділи про драйвери та встановлення
+    на Windows; як він відрізняється від CH340
 - nazva: FT232RL · Windows — драйвер FTDI
   zbih: '`FT232RL`.*драйвер FTDI'
   klas: C
   dzherelo: FTDI FT232RL USB UART IC datasheet
   shukaty: Інформація про Windows драйвер для FT232RL; розділи про драйвери та встановлення
-  notatka: FT232RL datasheet не дістається з dzherela-cache. Потребує окремого завантаження з ftdichip.com.
-    Книга говорить про драйвер FTDI для Windows.
+  notatka: FT232RL datasheet не дістається з dzherela-cache. Потребує окремого завантаження
+    з ftdichip.com. Книга говорить про драйвер FTDI для Windows.
+  title: FT232RL · Windows — драйвер FTDI
+  match: '`FT232RL`.*драйвер FTDI'
+  status: named-unreachable
+  source: FTDI FT232RL USB UART IC datasheet
+  note: FT232RL datasheet не дістається з dzherela-cache. Потребує окремого завантаження з
+    ftdichip.com. Книга говорить про драйвер FTDI для Windows.
+  look_for: Інформація про Windows драйвер для FT232RL; розділи про драйвери та встановлення
 - nazva: CH9102 — окрема пастка (схожий на CH340, але інший драйвер)
   zbih: CH9102.*окрема.*пастка.*CH340
   klas: C
   dzherelo: WCH CH9102 / CH9102F datasheet та CH340 datasheet для порівняння
-  shukaty: Інформація про фізичну схожість CH9102 з CH340; упаковки, розташування піків; відмінності у
-    драйвері та встановленні
-  notatka: 'CH9102 datasheet не дістається. Це спеціальний випадок, як пояснює книга: CH9102 часто стоїть
-    на платах з позначкою CH340, але потребує іншого драйвера, що викликає плутанину та помилки користувачів.'
+  shukaty: Інформація про фізичну схожість CH9102 з CH340; упаковки, розташування піків; відмінності
+    у драйвері та встановленні
+  notatka: 'CH9102 datasheet не дістається. Це спеціальний випадок, як пояснює книга: CH9102
+    часто стоїть на платах з позначкою CH340, але потребує іншого драйвера, що викликає плутанину
+    та помилки користувачів.'
+  title: CH9102 — окрема пастка (схожий на CH340, але інший драйвер)
+  match: CH9102.*окрема.*пастка.*CH340
+  status: named-unreachable
+  source: WCH CH9102 / CH9102F datasheet та CH340 datasheet для порівняння
+  note: 'CH9102 datasheet не дістається. Це спеціальний випадок, як пояснює книга: CH9102
+    часто стоїть на платах з позначкою CH340, але потребує іншого драйвера, що викликає плутанину
+    та помилки користувачів.'
+  look_for: Інформація про фізичну схожість CH9102 з CH340; упаковки, розташування піків;
+    відмінності у драйвері та встановленні
 - nazva: Драйвер CH340 на CH9102 — не працює
   zbih: драйвер CH340.*не працює
   klas: E
   dzherelo: не застосовується
   cytata: Людина ставить драйвер CH340, він не працює, і виникає висновок «плата бракована».
   sposib: не застосовується
-  notatka: 'Це не факт про мікросхему, а опис поведінки користувача та його висновку. Редакційна порада
-    про частину лікування проблеми в налаштування, не в залізі. Клас E: редакційне рішення, порада.'
+  notatka: 'Це не факт про мікросхему, а опис поведінки користувача та його висновку. Редакційна
+    порада про частину лікування проблеми в налаштування, не в залізі. Клас E: редакційне
+    рішення, порада.'
+  title: Драйвер CH340 на CH9102 — не працює
+  match: драйвер CH340.*не працює
+  status: no-external-signal
+  source: не застосовується
+  quote: Людина ставить драйвер CH340, він не працює, і виникає висновок «плата бракована».
+  method: не застосовується
+  note: 'Це не факт про мікросхему, а опис поведінки користувача та його висновку. Редакційна
+    порада про частину лікування проблеми в налаштування, не в залізі. Клас E: редакційне
+    рішення, порада.'
 - nazva: Різні плати — різні імена портів
   zbih: різні.*імена.*портів
   klas: E
   dzherelo: не застосовується
-  cytata: Один і той самий комп'ютер може дати `/dev/ttyUSB0` одній платі й `/dev/ttyUSB1` іншій, і після
-    перевтикання номери міняються.
+  cytata: Один і той самий комп'ютер може дати `/dev/ttyUSB0` одній платі й `/dev/ttyUSB1`
+    іншій, і після перевтикання номери міняються.
   sposib: не застосовується
-  notatka: 'Це поведінка операційної системи Linux при переборі портів, а не факт про мікросхему. Редакційна
-    порада користувачам. Клас E: редакційне рішення, поза зовнішньою звіркою.'
+  notatka: 'Це поведінка операційної системи Linux при переборі портів, а не факт про мікросхему.
+    Редакційна порада користувачам. Клас E: редакційне рішення, поза зовнішньою звіркою.'
+  title: Різні плати — різні імена портів
+  match: різні.*імена.*портів
+  status: no-external-signal
+  source: не застосовується
+  quote: Один і той самий комп'ютер може дати `/dev/ttyUSB0` одній платі й `/dev/ttyUSB1`
+    іншій, і після перевтикання номери міняються.
+  method: не застосовується
+  note: 'Це поведінка операційної системи Linux при переборі портів, а не факт про мікросхему.
+    Редакційна порада користувачам. Клас E: редакційне рішення, поза зовнішньою звіркою.'
 - nazva: S3 та C3 — USB-контролер на кристалі
   zbih: S3.*C3.*USB-контролер.*кристалі
   klas: C
   dzherelo: Espressif ESP32-S3 datasheet та ESP32-C3 datasheet
-  shukaty: Розділи про інтеграцію USB контролера на кристалі; розділи «Features» та «Electrical Characteristics»;
-    архітектура та периферійні модулі
-  notatka: Потребує окремих datasheet'ів для ESP32-S3 та ESP32-C3 від Espressif. Основний esp32-datasheet.pdf
-    не містить цієї інформації. Книга говорить про наявність вбудованого USB контролера на цих чипах,
-    що дозволяє прямідне підключення до комп'ютера без зовнішнього мосту USB-UART.
+  shukaty: Розділи про інтеграцію USB контролера на кристалі; розділи «Features» та «Electrical
+    Characteristics»; архітектура та периферійні модулі
+  notatka: Потребує окремих datasheet'ів для ESP32-S3 та ESP32-C3 від Espressif. Основний
+    esp32-datasheet.pdf не містить цієї інформації. Книга говорить про наявність вбудованого
+    USB контролера на цих чипах, що дозволяє прямідне підключення до комп'ютера без зовнішнього
+    мосту USB-UART.
+  title: S3 та C3 — USB-контролер на кристалі
+  match: S3.*C3.*USB-контролер.*кристалі
+  status: named-unreachable
+  source: Espressif ESP32-S3 datasheet та ESP32-C3 datasheet
+  note: Потребує окремих datasheet'ів для ESP32-S3 та ESP32-C3 від Espressif. Основний esp32-datasheet.pdf
+    не містить цієї інформації. Книга говорить про наявність вбудованого USB контролера на
+    цих чипах, що дозволяє прямідне підключення до комп'ютера без зовнішнього мосту USB-UART.
+  look_for: Розділи про інтеграцію USB контролера на кристалі; розділи «Features» та «Electrical
+    Characteristics»; архітектура та периферійні модулі
 - nazva: CH9102 — окремий драйвер від CH340 (резюме)
   zbih: CH9102 потребує іншого драйвера
   klas: C
   dzherelo: WCH CH9102 / CH9102F datasheet та драйверне забезпечення
-  shukaty: Порівняння драйверів CH340 та CH9102; їхні відмінності та несумісність на рівні драйвера та
-    встановлення
-  notatka: Це те саме твердження, що T-09-027, але коротша версія у розділі резюме. Потребує CH9102 datasheet
-    та інформації про драйвери для обох чипів.
+  shukaty: Порівняння драйверів CH340 та CH9102; їхні відмінності та несумісність на рівні
+    драйвера та встановлення
+  notatka: Це те саме твердження, що T-09-027, але коротша версія у розділі резюме. Потребує
+    CH9102 datasheet та інформації про драйвери для обох чипів.
+  title: CH9102 — окремий драйвер від CH340 (резюме)
+  match: CH9102 потребує іншого драйвера
+  status: named-unreachable
+  source: WCH CH9102 / CH9102F datasheet та драйверне забезпечення
+  note: Це те саме твердження, що T-09-027, але коротша версія у розділі резюме. Потребує
+    CH9102 datasheet та інформації про драйвери для обох чипів.
+  look_for: Порівняння драйверів CH340 та CH9102; їхні відмінності та несумісність на рівні
+    драйвера та встановлення

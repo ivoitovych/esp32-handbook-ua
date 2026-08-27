@@ -8,6 +8,18 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-K08-021: 6 · Що робити → перший дамп після'
   zbih: 6\s+·\s+Що\s+робити
   klas: A
@@ -19,6 +31,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: перший дамп після живлення розпочинає backtrace
+  title: 'T-K08-021: 6 · Що робити → перший дамп після'
+  match: 6\s+·\s+Що\s+робити
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  quote: 'Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: перший дамп після живлення розпочинає backtrace
 - nazva: 'T-K08-026: 8 · Найчастіша причина → немає підтягування або'
   zbih: 8\s+·\s+Найчастіша\s+причина
   klas: A
@@ -31,6 +54,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документація підтверджує необхідність підтягування та спільної землі для I2C
+  title: 'T-K08-026: 8 · Найчастіша причина → немає підтягування або'
+  match: 8\s+·\s+Найчастіша\s+причина
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  quote: 'I2C uses two bidirectional open-drain lines: serial data line (SDA) and serial clock
+    line (SCL), pulled up by resistors.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документація підтверджує необхідність підтягування та спільної землі для I2C
 - nazva: 'T-K08-008: 2 · Найчастіша причина → плата не в'
   zbih: 2\s+·\s+Найчастіша\s+причина\s+→\s+плата
   klas: A
@@ -44,6 +79,19 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
+  title: 'T-K08-008: 2 · Найчастіша причина → плата не в'
+  match: 2\s+·\s+Найчастіша\s+причина\s+→\s+плата
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  quote: 'If the device does not support the auto download mode, you need to get into the
+    download mode manually. To do so, press and hold the ``BOOT`` button and then press the
+    ``RESET`` button once.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
 - nazva: 'T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не'
   zbih: 3\s+·\s+Найчастіша\s+причина\s+→\s+адреса
   klas: A
@@ -56,6 +104,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
+  title: 'T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не'
+  match: 3\s+·\s+Найчастіша\s+причина\s+→\s+адреса
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+  quote: 'ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH}
+    in the flash.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
 - nazva: 'T-K08-019: 6 · Симптом → Boot loop'
   zbih: 6\s+·\s+Симптом\s+→
   klas: A
@@ -68,6 +128,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: boot loop може бути результатом паніки в застосунку, як описано в документації
+  title: 'T-K08-019: 6 · Симптом → Boot loop'
+  match: 6\s+·\s+Симптом\s+→
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  quote: 'A core dump is a set of software state information that is automatically saved by
+    the panic handler when a fatal error occurs.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: boot loop може бути результатом паніки в застосунку, як описано в документації
 - nazva: 'T-K08-020: 6 · Найчастіша причина → паніка в застосунку'
   zbih: 6\s+·\s+Найчастіша\s+причина
   klas: A
@@ -79,6 +151,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: паніка в застосунку дійсно є частою причиною boot loop
+  title: 'T-K08-020: 6 · Найчастіша причина → паніка в застосунку'
+  match: 6\s+·\s+Найчастіша\s+причина
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  quote: 'Panic reason: abort() was called
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: паніка в застосунку дійсно є частою причиною boot loop
 - nazva: 'T-K08-035: 11 · Найчастіша причина → вони зайняті флешем'
   zbih: 11\s+·\s+Найчастіша\s+причина
   klas: A
@@ -101,3 +184,25 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує,
     що вони зайняті флешем
+  title: 'T-K08-035: 11 · Найчастіша причина → вони зайняті флешем'
+  match: 11\s+·\s+Найчастіша\s+причина
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
+  quote: '#define MSPI_IOMUX_PIN_NUM_CLK      6
+
+    #define MSPI_IOMUX_PIN_NUM_MISO     7
+
+    #define MSPI_IOMUX_PIN_NUM_MOSI     8
+
+    #define MSPI_IOMUX_PIN_NUM_HD       9
+
+    #define MSPI_IOMUX_PIN_NUM_WP       10
+
+    #define MSPI_IOMUX_PIN_NUM_CS0      11
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує, що
+    вони зайняті флешем

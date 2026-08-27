@@ -8,6 +8,7 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
 - nazva: 'T-16-056: Якщо є лише `factory` — беруть його.'
   zbih: Якщо\s+є\s+лише\s+`factory`
   klas: A
@@ -20,3 +21,15 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: Quote found in partition-tables.rst confirming that bootloader executes factory
     app when OTA data is empty
+  title: 'T-16-056: Якщо є лише `factory` — беруть його.'
+  match: Якщо\s+є\s+лише\s+`factory`
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'If "ota data" is empty, it will execute the factory app.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: Quote found in partition-tables.rst confirming that bootloader executes factory app
+    when OTA data is empty

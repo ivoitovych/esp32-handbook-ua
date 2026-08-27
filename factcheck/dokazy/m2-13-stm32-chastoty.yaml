@@ -1,24 +1,55 @@
+
+
+
 - nazva: Нижня межа частот STM32 — 24 МГц у Value line
   zbih: Частота\s+·\s+STM32\s+→\s+24\s+МГц\s+–\s+сотні\s+МГц
   klas: B
   dzherelo: STMicroelectronics, сторінка лінійки STM32F100 Value line — https://www.st.com/en/microcontrollers-microprocessors/stm32f100-value-line.html
     (нижня межа); сторінка STM32 High Performance MCUs — https://www.st.com/en/microcontrollers-microprocessors/stm32-high-performance-mcus.html
     (верхня)
-  cytata: "STM32F100 Value line:\n\"Based on the Arm® Cortex®-M3 core running at up to 24 MHz, the STM32\n\
-    \ Value line offers an excellent cost-performance-…\"\n\nSTM32 High Performance MCUs:\n\"The STM32H7RS\
-    \ is a bootflash-based MCU powered by a Cortex®-M7 core\n running up to 600 MHz, with 64 KB of user\
-    \ flash and 620 KB of\n flexible SRAM.\"\n"
-  sposib: Chrome із цієї машини, st.com, 2026-08-26 (curl отримує тайм-аут через відбиток TLS; Chrome
-    проходить)
-  notatka: '**Нижня межа збігається дослівно:** 24 МГц — це STM32F100 Value line на Cortex-M3, і ST називає
-    її на власній сторінці лінійки.
+  cytata: "STM32F100 Value line:\n\"Based on the Arm® Cortex®-M3 core running at up to 24\
+    \ MHz, the STM32\n Value line offers an excellent cost-performance-…\"\n\nSTM32 High Performance\
+    \ MCUs:\n\"The STM32H7RS is a bootflash-based MCU powered by a Cortex®-M7 core\n running\
+    \ up to 600 MHz, with 64 KB of user flash and 620 KB of\n flexible SRAM.\"\n"
+  sposib: Chrome із цієї машини, st.com, 2026-08-26 (curl отримує тайм-аут через відбиток
+    TLS; Chrome проходить)
+  notatka: '**Нижня межа збігається дослівно:** 24 МГц — це STM32F100 Value line на Cortex-M3,
+    і ST називає її на власній сторінці лінійки.
 
-    **Верхня межа застаріла.** Книга каже 550 МГц; станом на звірку ST подає STM32H7RS на Cortex-M7 із
-    частотою **до 600 МГц**. 550 МГц — це стеля ліній STM32H72x/H73x, тобто попереднє покоління.
+    **Верхня межа застаріла.** Книга каже 550 МГц; станом на звірку ST подає STM32H7RS на
+    Cortex-M7 із частотою **до 600 МГц**. 550 МГц — це стеля ліній STM32H72x/H73x, тобто попереднє
+    покоління.
 
-    Клас `B`, а не `A`: обидві цитати дослівні, але твердження книги — про **діапазон лінійки загалом**,
-    і воно складене з двох сторінок, а не взяте з однієї. Крім того, верхня половина не збігається, тож
-    дослівним підтвердженням це не є.
+    Клас `B`, а не `A`: обидві цитати дослівні, але твердження книги — про **діапазон лінійки
+    загалом**, і воно складене з двох сторінок, а не взяте з однієї. Крім того, верхня половина
+    не збігається, тож дослівним підтвердженням це не є.
 
-    Розбіжність винесено окремою знахідкою: розділ 01 за М1. | Взірець перебудовано з тексту одиниці реєстру
-    2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+    Розбіжність винесено окремою знахідкою: розділ 01 за М1. | Взірець перебудовано з тексту
+    одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не
+    чіпав нічого.'
+  title: Нижня межа частот STM32 — 24 МГц у Value line
+  match: Частота\s+·\s+STM32\s+→\s+24\s+МГц\s+–\s+сотні\s+МГц
+  status: derived
+  source: STMicroelectronics, сторінка лінійки STM32F100 Value line — https://www.st.com/en/microcontrollers-microprocessors/stm32f100-value-line.html
+    (нижня межа); сторінка STM32 High Performance MCUs — https://www.st.com/en/microcontrollers-microprocessors/stm32-high-performance-mcus.html
+    (верхня)
+  quote: "STM32F100 Value line:\n\"Based on the Arm® Cortex®-M3 core running at up to 24 MHz,\
+    \ the STM32\n Value line offers an excellent cost-performance-…\"\n\nSTM32 High Performance\
+    \ MCUs:\n\"The STM32H7RS is a bootflash-based MCU powered by a Cortex®-M7 core\n running\
+    \ up to 600 MHz, with 64 KB of user flash and 620 KB of\n flexible SRAM.\"\n"
+  method: Chrome із цієї машини, st.com, 2026-08-26 (curl отримує тайм-аут через відбиток
+    TLS; Chrome проходить)
+  note: '**Нижня межа збігається дослівно:** 24 МГц — це STM32F100 Value line на Cortex-M3,
+    і ST називає її на власній сторінці лінійки.
+
+    **Верхня межа застаріла.** Книга каже 550 МГц; станом на звірку ST подає STM32H7RS на
+    Cortex-M7 із частотою **до 600 МГц**. 550 МГц — це стеля ліній STM32H72x/H73x, тобто попереднє
+    покоління.
+
+    Клас `B`, а не `A`: обидві цитати дослівні, але твердження книги — про **діапазон лінійки
+    загалом**, і воно складене з двох сторінок, а не взяте з однієї. Крім того, верхня половина
+    не збігається, тож дослівним підтвердженням це не є.
+
+    Розбіжність винесено окремою знахідкою: розділ 01 за М1. | Взірець перебудовано з тексту
+    одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не
+    чіпав нічого.'

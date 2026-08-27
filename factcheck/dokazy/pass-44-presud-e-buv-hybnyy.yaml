@@ -35,30 +35,54 @@
 # > доказу. Різниця в тому, що хибне підтвердження ловить третій шар,
 # > а хибний присуд **не ловить ніхто**: одиниця просто зникає з черги.
 
+
 - nazva: Таблиця розділів лежить за зсувом 0x8000
-  zbih: 'Таблиця розділів лежить на'
+  zbih: Таблиця розділів лежить на
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-  cytata: |
-    a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash
-  sposib: >-
-    `curl` на `raw.githubusercontent.com`, гілка `master`, рядок 9.
-    Документ отримано в цій сесії, витяг наведено дослівно. Другий шар
-    зроблено супровідником: витяг звірено з твердженням.
-  notatka: >-
-    Було закрито присудом «джерела не існує». Джерело існує, лежить у
-    штатній документації й називає те саме число.
+  cytata: 'a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`)
+    0x8000 in the flash
 
+    '
+  sposib: '`curl` на `raw.githubusercontent.com`, гілка `master`, рядок 9. Документ отримано
+    в цій сесії, витяг наведено дослівно. Другий шар зроблено супровідником: витяг звірено
+    з твердженням.'
+  notatka: Було закрито присудом «джерела не існує». Джерело існує, лежить у штатній документації
+    й називає те саме число.
+  title: Таблиця розділів лежить за зсувом 0x8000
+  match: Таблиця розділів лежить на
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`)
+    0x8000 in the flash
+
+    '
+  method: '`curl` на `raw.githubusercontent.com`, гілка `master`, рядок 9. Документ отримано
+    в цій сесії, витяг наведено дослівно. Другий шар зроблено супровідником: витяг звірено
+    з твердженням.'
+  note: Було закрито присудом «джерела не існує». Джерело існує, лежить у штатній документації
+    й називає те саме число.
 - nazva: SPI через матрицю обмежений 40 МГц замість 80 на рідних пінах
-  zbih: 'SPI через матрицю обмежений'
+  zbih: SPI через матрицю обмежений
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst
-  cytata: |
-    Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
-  sposib: >-
-    `curl` на `raw.githubusercontent.com`, гілка `master`, рядок 482.
-    Документ отримано в цій сесії, витяг наведено дослівно. Другий шар
-    зроблено супровідником.
-  notatka: >-
-    Обидва числа книги — 40 і 80 МГц — стоять у документі в тому самому
-    протиставленні. Присуд «джерела не існує» був хибний.
+  cytata: 'Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if
+    IO_MUX pins are used.
+
+    '
+  sposib: '`curl` на `raw.githubusercontent.com`, гілка `master`, рядок 482. Документ отримано
+    в цій сесії, витяг наведено дослівно. Другий шар зроблено супровідником.'
+  notatka: Обидва числа книги — 40 і 80 МГц — стоять у документі в тому самому протиставленні.
+    Присуд «джерела не існує» був хибний.
+  title: SPI через матрицю обмежений 40 МГц замість 80 на рідних пінах
+  match: SPI через матрицю обмежений
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst
+  quote: 'Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if
+    IO_MUX pins are used.
+
+    '
+  method: '`curl` на `raw.githubusercontent.com`, гілка `master`, рядок 482. Документ отримано
+    в цій сесії, витяг наведено дослівно. Другий шар зроблено супровідником.'
+  note: Обидва числа книги — 40 і 80 МГц — стоять у документі в тому самому протиставленні.
+    Присуд «джерела не існує» був хибний.

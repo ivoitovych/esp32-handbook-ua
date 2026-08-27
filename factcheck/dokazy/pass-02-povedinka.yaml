@@ -8,150 +8,317 @@
 # якими документація позначає, до яких цілей стосується рядок. Саме ці
 # позначки дали дві знахідки проходу.
 
+
+
+
+
+
+
+
+
 - nazva: ADC2 конфліктує з Wi-Fi на classic, S2 і S3 — не лише на classic
-  zbih: 'ADC2 не працює|ADC2 недоступний|Використано ADC2 при|недоступність ADC2'
+  zbih: ADC2 не працює|ADC2 недоступний|Використано ADC2 при|недоступність ADC2
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
-  cytata: |
-    :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
+  cytata: ':esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read`
+    has
+
     provided protection between the Wi-Fi driver and ADC oneshot mode driver.
-  sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише
-    classic), тоді як документація прямо називає три цілі, включно з S3.
-    Для S3 це важить окремо: його рекомендують як вибір за замовчуванням
-    для нового проєкту, тобто найімовірніше саме на ньому читач і
-    розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи
-    04, 07 (двічі), 29, 33 (двічі), 45 і картка К8.
 
+    '
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: 'Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише classic), тоді
+    як документація прямо називає три цілі, включно з S3. Для S3 це важить окремо: його рекомендують
+    як вибір за замовчуванням для нового проєкту, тобто найімовірніше саме на ньому читач
+    і розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи 04, 07 (двічі), 29,
+    33 (двічі), 45 і картка К8.'
+  title: ADC2 конфліктує з Wi-Fi на classic, S2 і S3 — не лише на classic
+  match: ADC2 не працює|ADC2 недоступний|Використано ADC2 при|недоступність ADC2
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+  quote: ':esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read`
+    has
+
+    provided protection between the Wi-Fi driver and ADC oneshot mode driver.
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише classic), тоді як
+    документація прямо називає три цілі, включно з S3. Для S3 це важить окремо: його рекомендують
+    як вибір за замовчуванням для нового проєкту, тобто найімовірніше саме на ньому читач
+    і розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи 04, 07 (двічі), 29,
+    33 (двічі), 45 і картка К8.'
 - nazva: На C3 ADC2 непридатний через апаратну ваду, а не через Wi-Fi
-  zbih: 'ADC2 на C3 непридатний|разовий режим не підтримується'
+  zbih: ADC2 на C3 непридатний|разовий режим не підтримується
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
-  cytata: |
-    :esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware limitations.
-    The results are not stable. This issue can be found in `ESP32-C3 Series SoC Errata`.
-    For compatibility, you can enable :ref:`CONFIG_ADC_ONESHOT_FORCE_USE_ADC2_ON_C3` to force use ADC2.
-  sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Знахідка проходу, і серйозніша за попередню. Картка К9 і додаток A
-    подавали `GPIO5` на C3 як звичайний аналоговий вхід. Насправді
-    разовий режим ADC2 на C3 в ESP-IDF вимкнено через ваду кремнію, і
-    ввімкнути його можна лише примусовим перемикачем. Читач, який заклав
-    цей пін в аналогову частину плати, отримав би нестабільні показання
-    без жодного повідомлення. Виправлено в картці К9 і додатку A, де
-    тепер сказано прямо: на C3 аналоговий вхід — це GPIO0–GPIO4.
+  cytata: ':esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware limitations.
 
+    The results are not stable. This issue can be found in `ESP32-C3 Series SoC Errata`.
+
+    For compatibility, you can enable :ref:`CONFIG_ADC_ONESHOT_FORCE_USE_ADC2_ON_C3` to force
+    use ADC2.
+
+    '
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: 'Знахідка проходу, і серйозніша за попередню. Картка К9 і додаток A подавали `GPIO5`
+    на C3 як звичайний аналоговий вхід. Насправді разовий режим ADC2 на C3 в ESP-IDF вимкнено
+    через ваду кремнію, і ввімкнути його можна лише примусовим перемикачем. Читач, який заклав
+    цей пін в аналогову частину плати, отримав би нестабільні показання без жодного повідомлення.
+    Виправлено в картці К9 і додатку A, де тепер сказано прямо: на C3 аналоговий вхід — це
+    GPIO0–GPIO4.'
+  title: На C3 ADC2 непридатний через апаратну ваду, а не через Wi-Fi
+  match: ADC2 на C3 непридатний|разовий режим не підтримується
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
+  quote: ':esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware limitations.
+
+    The results are not stable. This issue can be found in `ESP32-C3 Series SoC Errata`.
+
+    For compatibility, you can enable :ref:`CONFIG_ADC_ONESHOT_FORCE_USE_ADC2_ON_C3` to force
+    use ADC2.
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Знахідка проходу, і серйозніша за попередню. Картка К9 і додаток A подавали `GPIO5`
+    на C3 як звичайний аналоговий вхід. Насправді разовий режим ADC2 на C3 в ESP-IDF вимкнено
+    через ваду кремнію, і ввімкнути його можна лише примусовим перемикачем. Читач, який заклав
+    цей пін в аналогову частину плати, отримав би нестабільні показання без жодного повідомлення.
+    Виправлено в картці К9 і додатку A, де тепер сказано прямо: на C3 аналоговий вхід — це
+    GPIO0–GPIO4.'
 - nazva: Матриця GPIO обмежує SPI до 40 МГц проти 80 МГц на IOMUX
-  zbih: 'матриц\w+ GPIO.{0,120}(вдвічі|затримк)|IO_MUX|рідних пінах'
+  zbih: матриц\w+ GPIO.{0,120}(вдвічі|затримк)|IO_MUX|рідних пінах
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
-  cytata: |
-    - Increases the input delay of the MISO signal, which makes MISO setup time violations more likely.
-      If SPI needs to operate at high speeds, use dedicated IO_MUX pins.
-    - Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
-    …
-    When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the GPIO matrix
-    will behave the same compared to routing them via IOMUX.
+  cytata: "- Increases the input delay of the MISO signal, which makes MISO setup time violations\
+    \ more likely.\n  If SPI needs to operate at high speeds, use dedicated IO_MUX pins.\n\
+    - Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX\
+    \ pins are used.\n…\nWhen an SPI Host is set to 40 MHz or lower frequencies, routing SPI\
+    \ pins via the GPIO matrix\nwill behave the same compared to routing them via IOMUX.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Точно підтверджує «приблизно вдвічі» в розділі 36 і додатку A: 40
-    проти 80 МГц. Другий абзац додає корисне уточнення, якого в книзі
-    немає і яке варте наступного проходу: до 40 МГц різниці між
-    маршрутами немає взагалі.
-
+  notatka: 'Точно підтверджує «приблизно вдвічі» в розділі 36 і додатку A: 40 проти 80 МГц.
+    Другий абзац додає корисне уточнення, якого в книзі немає і яке варте наступного проходу:
+    до 40 МГц різниці між маршрутами немає взагалі.'
+  title: Матриця GPIO обмежує SPI до 40 МГц проти 80 МГц на IOMUX
+  match: матриц\w+ GPIO.{0,120}(вдвічі|затримк)|IO_MUX|рідних пінах
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+  quote: "- Increases the input delay of the MISO signal, which makes MISO setup time violations\
+    \ more likely.\n  If SPI needs to operate at high speeds, use dedicated IO_MUX pins.\n\
+    - Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX\
+    \ pins are used.\n…\nWhen an SPI Host is set to 40 MHz or lower frequencies, routing SPI\
+    \ pins via the GPIO matrix\nwill behave the same compared to routing them via IOMUX.\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Точно підтверджує «приблизно вдвічі» в розділі 36 і додатку A: 40 проти 80 МГц. Другий
+    абзац додає корисне уточнення, якого в книзі немає і яке варте наступного проходу: до
+    40 МГц різниці між маршрутами немає взагалі.'
 - nazva: TWAI сумісний з ISO 11898-1 і потребує зовнішнього трансивера
-  zbih: 'TWAI.{0,80}(Two-Wire|назва інша)|не має трансивера|[Тт]рансивер обов|Трансивер має відповідати'
+  zbih: TWAI.{0,80}(Two-Wire|назва інша)|не має трансивера|[Тт]рансивер обов|Трансивер має
+    відповідати
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
-  cytata: |
-    It is compatible with the frame structure defined in the ISO 11898-1 standard and supports
+  cytata: 'It is compatible with the frame structure defined in the ISO 11898-1 standard and
+    supports
+
     both standard frames with 11-bit identifiers and extended frames with 29-bit identifiers.
-    …
-    The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver. Therefore, an external
-    transceiver is required to connect to a TWAI bus.
-  sposib: curl raw.githubusercontent, 2026-08-26
 
+    …
+
+    The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver. Therefore, an external
+
+    transceiver is required to connect to a TWAI bus.
+
+    '
+  sposib: curl raw.githubusercontent, 2026-08-26
+  title: TWAI сумісний з ISO 11898-1 і потребує зовнішнього трансивера
+  match: TWAI.{0,80}(Two-Wire|назва інша)|не має трансивера|[Тт]рансивер обов|Трансивер має
+    відповідати
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+  quote: 'It is compatible with the frame structure defined in the ISO 11898-1 standard and
+    supports
+
+    both standard frames with 11-bit identifiers and extended frames with 29-bit identifiers.
+
+    …
+
+    The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver. Therefore, an external
+
+    transceiver is required to connect to a TWAI bus.
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
 - nazva: CAN FD не підтримується жодним із сімейств книги
-  zbih: 'CAN FD жодне з сімейств|SOC_TWAI_SUPPORT_FD'
+  zbih: CAN FD жодне з сімейств|SOC_TWAI_SUPPORT_FD
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
-  cytata: |
-    The TWAI controllers on the {IDF_TARGET_NAME} are **not compatible with FD format frames
-    and will interpret such frames as errors.**
-  sposib: >-
-    curl raw.githubusercontent для .rst; окремо перевірено відсутність
-    SOC_TWAI_SUPPORT_FD у soc_caps.h усіх шести цілей, 2026-08-26
-  notatka: >-
-    Знахідка проходу — прогалина, а не помилка. Книга не згадувала CAN FD
-    взагалі, тоді як наслідок польовий: FD-кадр сприймається як помилка,
-    тобто вузол не просто мовчить, а **псує чужу шину**, як вузол із
-    неправильною швидкістю. Для книги, яка окремо вчить під'єднуватися до
-    чужої працюючої системи, це істотно. Додано блок у розділ 38 із
-    вказівкою перевіряти `SOC_TWAI_SUPPORT_FD` для свого чипа.
+  cytata: 'The TWAI controllers on the {IDF_TARGET_NAME} are **not compatible with FD format
+    frames
 
+    and will interpret such frames as errors.**
+
+    '
+  sposib: curl raw.githubusercontent для .rst; окремо перевірено відсутність SOC_TWAI_SUPPORT_FD
+    у soc_caps.h усіх шести цілей, 2026-08-26
+  notatka: 'Знахідка проходу — прогалина, а не помилка. Книга не згадувала CAN FD взагалі,
+    тоді як наслідок польовий: FD-кадр сприймається як помилка, тобто вузол не просто мовчить,
+    а **псує чужу шину**, як вузол із неправильною швидкістю. Для книги, яка окремо вчить
+    під''єднуватися до чужої працюючої системи, це істотно. Додано блок у розділ 38 із вказівкою
+    перевіряти `SOC_TWAI_SUPPORT_FD` для свого чипа.'
+  title: CAN FD не підтримується жодним із сімейств книги
+  match: CAN FD жодне з сімейств|SOC_TWAI_SUPPORT_FD
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
+  quote: 'The TWAI controllers on the {IDF_TARGET_NAME} are **not compatible with FD format
+    frames
+
+    and will interpret such frames as errors.**
+
+    '
+  method: curl raw.githubusercontent для .rst; окремо перевірено відсутність SOC_TWAI_SUPPORT_FD
+    у soc_caps.h усіх шести цілей, 2026-08-26
+  note: 'Знахідка проходу — прогалина, а не помилка. Книга не згадувала CAN FD взагалі, тоді
+    як наслідок польовий: FD-кадр сприймається як помилка, тобто вузол не просто мовчить,
+    а **псує чужу шину**, як вузол із неправильною швидкістю. Для книги, яка окремо вчить
+    під''єднуватися до чужої працюючої системи, це істотно. Додано блок у розділ 38 із вказівкою
+    перевіряти `SOC_TWAI_SUPPORT_FD` для свого чипа.'
 - nazva: ESP32 у ролі веденого I²C не вміє розтягувати SCL
-  zbih: 'сам ESP32 у ролі веденого|розтягувати `SCL` не вміє'
+  zbih: сам ESP32 у ролі веденого|розтягувати `SCL` не вміє
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/i2c.rst
-  cytata: |
-    The ESP32 I2C controller does not support clock stretching when operating as a slave.
-    Therefore, in addition to driver configuration, the application layer should pay attention
-    to speed matching and synchronization between master and slave devices: if the master
-    processes too fast while the slave responds slowly, communication errors or data loss may occur.
-  sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Прогалина, знайдена проходом. Розділ 35 описував розтягування лише з
-    боку ведучого — і це було правильно, але однобоко. Зворотний бік
-    важливий для companion-схеми (розділ 57), де ESP32 саме й прикидається
-    веденим для чужої системи. Додано блок уваги з практичним наслідком:
-    синхронізацію доводиться робити рівнем вище.
+  cytata: 'The ESP32 I2C controller does not support clock stretching when operating as a
+    slave.
 
+    Therefore, in addition to driver configuration, the application layer should pay attention
+
+    to speed matching and synchronization between master and slave devices: if the master
+
+    processes too fast while the slave responds slowly, communication errors or data loss
+    may occur.
+
+    '
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: 'Прогалина, знайдена проходом. Розділ 35 описував розтягування лише з боку ведучого
+    — і це було правильно, але однобоко. Зворотний бік важливий для companion-схеми (розділ
+    57), де ESP32 саме й прикидається веденим для чужої системи. Додано блок уваги з практичним
+    наслідком: синхронізацію доводиться робити рівнем вище.'
+  title: ESP32 у ролі веденого I²C не вміє розтягувати SCL
+  match: сам ESP32 у ролі веденого|розтягувати `SCL` не вміє
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/i2c.rst
+  quote: 'The ESP32 I2C controller does not support clock stretching when operating as a slave.
+
+    Therefore, in addition to driver configuration, the application layer should pay attention
+
+    to speed matching and synchronization between master and slave devices: if the master
+
+    processes too fast while the slave responds slowly, communication errors or data loss
+    may occur.
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Прогалина, знайдена проходом. Розділ 35 описував розтягування лише з боку ведучого
+    — і це було правильно, але однобоко. Зворотний бік важливий для companion-схеми (розділ
+    57), де ESP32 саме й прикидається веденим для чужої системи. Додано блок уваги з практичним
+    наслідком: синхронізацію доводиться робити рівнем вище.'
 - nazva: Механізм відкату OTA і його стани
-  zbih: 'ESP_OTA_IMG_PENDING_VERIFY|esp_ota_mark_app_valid_cancel_rollback|[Aa]pp rollback\s+support'
+  zbih: ESP_OTA_IMG_PENDING_VERIFY|esp_ota_mark_app_valid_cancel_rollback|[Aa]pp rollback\s+support
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
-  cytata: |
-    * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
-      running application with the state ``ESP_OTA_IMG_VALID``.
-    * The application has critical errors …, :cpp:func:`esp_ota_mark_app_invalid_rollback_and_reboot`
-      marks the running application with the state ``ESP_OTA_IMG_INVALID`` and reset.
-    * If the :ref:`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE` option is set, and a reset occurs without
-      calling either function then the application is rolled back.
-    …
-        if (ota_state == ESP_OTA_IMG_PENDING_VERIFY) {
+  cytata: "* The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback`\
+    \ marks the\n  running application with the state ``ESP_OTA_IMG_VALID``.\n* The application\
+    \ has critical errors …, :cpp:func:`esp_ota_mark_app_invalid_rollback_and_reboot`\n  marks\
+    \ the running application with the state ``ESP_OTA_IMG_INVALID`` and reset.\n* If the\
+    \ :ref:`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE` option is set, and a reset occurs without\n\
+    \  calling either function then the application is rolled back.\n…\n    if (ota_state\
+    \ == ESP_OTA_IMG_PENDING_VERIFY) {\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Підтверджує весь механізм, описаний у розділі 19, включно з ключовою
-    тезою: скидання без виклику підтвердження призводить до відкату.
-
+  notatka: 'Підтверджує весь механізм, описаний у розділі 19, включно з ключовою тезою: скидання
+    без виклику підтвердження призводить до відкату.'
+  title: Механізм відкату OTA і його стани
+  match: ESP_OTA_IMG_PENDING_VERIFY|esp_ota_mark_app_valid_cancel_rollback|[Aa]pp rollback\s+support
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
+  quote: "* The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback`\
+    \ marks the\n  running application with the state ``ESP_OTA_IMG_VALID``.\n* The application\
+    \ has critical errors …, :cpp:func:`esp_ota_mark_app_invalid_rollback_and_reboot`\n  marks\
+    \ the running application with the state ``ESP_OTA_IMG_INVALID`` and reset.\n* If the\
+    \ :ref:`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE` option is set, and a reset occurs without\n\
+    \  calling either function then the application is rolled back.\n…\n    if (ota_state\
+    \ == ESP_OTA_IMG_PENDING_VERIFY) {\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Підтверджує весь механізм, описаний у розділі 19, включно з ключовою тезою: скидання
+    без виклику підтвердження призводить до відкату.'
 - nazva: Вміст RTC-пам'яті переживає deep sleep
-  zbih: 'RTC_DATA_ATTR|переживає сон тільки RTC|RTC RAM'
+  zbih: RTC_DATA_ATTR|переживає сон тільки RTC|RTC RAM
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
-  cytata: |
-    If some variables in the program are placed into RTC SLOW memory (for example, using
-    ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
-    This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
-  sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу:
-    «за замовчуванням» — тобто збереження можна й вимкнути, і на чипах,
-    де є лише RTC FAST, усі три атрибути йдуть туди ж.
+  cytata: 'If some variables in the program are placed into RTC SLOW memory (for example,
+    using
 
+    ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+
+    This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+
+    '
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: 'Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням»
+    — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути
+    йдуть туди ж.'
+  title: Вміст RTC-пам'яті переживає deep sleep
+  match: RTC_DATA_ATTR|переживає сон тільки RTC|RTC RAM
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+  quote: 'If some variables in the program are placed into RTC SLOW memory (for example, using
+
+    ``RTC_DATA_ATTR`` attribute), RTC SLOW memory will be kept powered on by default.
+
+    This can be overridden using :cpp:func:`esp_sleep_pd_config` function, if desired.
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Підтверджує розділи 06 і 60. Уточнення, варте наступного проходу: «за замовчуванням»
+    — тобто збереження можна й вимкнути, і на чипах, де є лише RTC FAST, усі три атрибути
+    йдуть туди ж.'
 - nazva: Частота і розрядність LEDC пов'язані обернено
-  zbih: 'Частота і розрядність пов.язані|що вища частота, то менше розрядів'
+  zbih: Частота і розрядність пов.язані|що вища частота, то менше розрядів
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/ledc.rst
-  cytata: |
-    The frequency and the duty resolution are interdependent. The higher the PWM frequency,
+  cytata: 'The frequency and the duty resolution are interdependent. The higher the PWM frequency,
+
     the lower the duty resolution which is available, and vice versa.
+
     …
+
     The LEDC driver offers a helper function :cpp:func:`ledc_find_suitable_duty_resolution`
+
     to find the maximum possible resolution for the timer, given the source clock frequency
+
     and the desired PWM signal frequency.
+
+    '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Дослівно підтверджує формулювання розділу 33. Друге речення —
-    кандидат на доповнення в наступному проході: у драйвері є готова
-    функція, яка рахує максимальну роздільність, і книга про неї мовчить.
+  notatka: 'Дослівно підтверджує формулювання розділу 33. Друге речення — кандидат на доповнення
+    в наступному проході: у драйвері є готова функція, яка рахує максимальну роздільність,
+    і книга про неї мовчить.'
+  title: Частота і розрядність LEDC пов'язані обернено
+  match: Частота і розрядність пов.язані|що вища частота, то менше розрядів
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/ledc.rst
+  quote: 'The frequency and the duty resolution are interdependent. The higher the PWM frequency,
+
+    the lower the duty resolution which is available, and vice versa.
+
+    …
+
+    The LEDC driver offers a helper function :cpp:func:`ledc_find_suitable_duty_resolution`
+
+    to find the maximum possible resolution for the timer, given the source clock frequency
+
+    and the desired PWM signal frequency.
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Дослівно підтверджує формулювання розділу 33. Друге речення — кандидат на доповнення
+    в наступному проході: у драйвері є готова функція, яка рахує максимальну роздільність,
+    і книга про неї мовчить.'

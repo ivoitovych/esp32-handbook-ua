@@ -3,118 +3,153 @@
 # 15 одиниць, розбіжностей нуль. Прохід цінний не новими фактами, а
 # двома чесними «не підтверджується» — і обидва варті окремого рядка.
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Асиметрія двох зсувів і те, що esptool не перевіряє адресу
-  zbih: 'адреса бутлоадера задана ROM і не\s*\n?налаштовується|`idf\.py flash` знає її сам|не має підстав скаржитися: він робить рівно те, що просили|покласти бутлоадер у порожнє місце|адреса бутлоадера набирається з голови'
+  zbih: 'адреса бутлоадера задана ROM і не\s*\n?налаштовується|`idf\.py flash` знає її сам|не
+    має підстав скаржитися: він робить рівно те, що просили|покласти бутлоадер у порожнє місце|адреса
+    бутлоадера набирається з голови'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild,
-    .../components/partition_table/Kconfig.projbuild,
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
-  cytata: |
-    config BOOTLOADER_OFFSET_IN_FLASH
-        …
-        help
-            Offset address that 2nd bootloader will be flashed to.
-            The value is determined by the ROM bootloader.
-            It's not configurable in ESP-IDF.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild,
+    .../components/partition_table/Kconfig.projbuild, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+  cytata: "config BOOTLOADER_OFFSET_IN_FLASH\n    …\n    help\n        Offset address that\
+    \ 2nd bootloader will be flashed to.\n        The value is determined by the ROM bootloader.\n\
+    \        It's not configurable in ESP-IDF.\n\nconfig PARTITION_TABLE_OFFSET\n    hex \"\
+    Offset of partition table\"\n    default 0x8000\n    help\n        The address of partition\
+    \ table (by default 0x8000).\n        Allows you to move the partition table, it gives\
+    \ more space\n        for the bootloader.\n\n(basic-commands.rst)\nThe next arguments\
+    \ to ``write-flash`` are one or more pairs of offset\n(address) and file name. Consult\
+    \ your SDK documentation to determine\nthe files to flash at which offsets.\n"
+  sposib: curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів Kconfig поспіль:
+    один каже «визначається ROM, не налаштовується», другий — «дозволяє пересунути».
 
-    config PARTITION_TABLE_OFFSET
-        hex "Offset of partition table"
-        default 0x8000
-        help
-            The address of partition table (by default 0x8000).
-            Allows you to move the partition table, it gives more space
-            for the bootloader.
+    Друга половина сильніша й пояснює найдорожчу помилку розділу 17: `write-flash` бере **пари
+    «адреса — файл»** і відсилає читача до документації SDK. Тобто інструмент не має і не
+    може мати уявлення, чи правильна адреса, — він робить рівно те, що просили, і мовчить.'
+  title: Асиметрія двох зсувів і те, що esptool не перевіряє адресу
+  match: 'адреса бутлоадера задана ROM і не\s*\n?налаштовується|`idf\.py flash` знає її сам|не
+    має підстав скаржитися: він робить рівно те, що просили|покласти бутлоадер у порожнє місце|адреса
+    бутлоадера набирається з голови'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild,
+    .../components/partition_table/Kconfig.projbuild, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+  quote: "config BOOTLOADER_OFFSET_IN_FLASH\n    …\n    help\n        Offset address that\
+    \ 2nd bootloader will be flashed to.\n        The value is determined by the ROM bootloader.\n\
+    \        It's not configurable in ESP-IDF.\n\nconfig PARTITION_TABLE_OFFSET\n    hex \"\
+    Offset of partition table\"\n    default 0x8000\n    help\n        The address of partition\
+    \ table (by default 0x8000).\n        Allows you to move the partition table, it gives\
+    \ more space\n        for the bootloader.\n\n(basic-commands.rst)\nThe next arguments\
+    \ to ``write-flash`` are one or more pairs of offset\n(address) and file name. Consult\
+    \ your SDK documentation to determine\nthe files to flash at which offsets.\n"
+  method: curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас
+    — М1
+  note: 'Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів Kconfig поспіль:
+    один каже «визначається ROM, не налаштовується», другий — «дозволяє пересунути».
 
-    (basic-commands.rst)
-    The next arguments to ``write-flash`` are one or more pairs of offset
-    (address) and file name. Consult your SDK documentation to determine
-    the files to flash at which offsets.
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Асиметрія, додана в проході 24, підтверджена дослівно з двох файлів
-    Kconfig поспіль: один каже «визначається ROM, не налаштовується»,
-    другий — «дозволяє пересунути».
-
-    Друга половина сильніша й пояснює найдорожчу помилку розділу 17:
-    `write-flash` бере **пари «адреса — файл»** і відсилає читача до
-    документації SDK. Тобто інструмент не має і не може мати уявлення,
-    чи правильна адреса, — він робить рівно те, що просили, і мовчить.
-
+    Друга половина сильніша й пояснює найдорожчу помилку розділу 17: `write-flash` бере **пари
+    «адреса — файл»** і відсилає читача до документації SDK. Тобто інструмент не має і не
+    може мати уявлення, чи правильна адреса, — він робить рівно те, що просили, і мовчить.'
 - nazva: erase-flash, flash-id і коли стирання справді потрібне
-  zbih: '`erase-flash` знищує \*\*весь\*\* флеш|`flash-id` показує те, що каже сама мікросхема|залишки старої розбивки заважають новій таблиці|Перевірити версію `esptool` \*\*перш ніж\*\*'
+  zbih: '`erase-flash` знищує \*\*весь\*\* флеш|`flash-id` показує те, що каже сама мікросхема|залишки
+    старої розбивки заважають новій таблиці|Перевірити версію `esptool` \*\*перш ніж\*\*'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst,
-    .../docs/en/migration-guide.rst,
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst
-  cytata: |
-    (basic-commands.rst)
-    Read SPI Flash ID: ``flash-id``
-    Example output:
-        Manufacturer: e0
-        Device: 4016
-        Detected flash size: 4MB
-
-    To erase the entire flash chip (all data replaced with 0xFF bytes):
-        esptool erase-flash
-
-    (nvs_flash.rst)
-    if an NVS partition is truncated (for example, when the partition
-    table layout is changed), its contents should be erased.
-
-    (migration-guide.rst)
-    All the commands and options have been renamed to use ``-`` instead
-    of ``_`` as a separator (e.g., ``write_flash`` -> ``write-flash``).
-    Old command and option names are **deprecated**.
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Найцінніше — перший пункт переліку «коли `erase-flash` справді
-    потрібен». Книга називала його з досвіду; `nvs_flash.rst` каже те
-    саме прямо: обрізаний при зміні розбивки розділ NVS **треба**
-    стерти. Порада з практики збіглася з вимогою документації.
-
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst,
+    .../docs/en/migration-guide.rst, https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: "(basic-commands.rst)\nRead SPI Flash ID: ``flash-id``\nExample output:\n    Manufacturer:\
+    \ e0\n    Device: 4016\n    Detected flash size: 4MB\n\nTo erase the entire flash chip\
+    \ (all data replaced with 0xFF bytes):\n    esptool erase-flash\n\n(nvs_flash.rst)\nif\
+    \ an NVS partition is truncated (for example, when the partition\ntable layout is changed),\
+    \ its contents should be erased.\n\n(migration-guide.rst)\nAll the commands and options\
+    \ have been renamed to use ``-`` instead\nof ``_`` as a separator (e.g., ``write_flash``\
+    \ -> ``write-flash``).\nOld command and option names are **deprecated**.\n"
+  sposib: curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Найцінніше — перший пункт переліку «коли `erase-flash` справді потрібен». Книга
+    називала його з досвіду; `nvs_flash.rst` каже те саме прямо: обрізаний при зміні розбивки
+    розділ NVS **треба** стерти. Порада з практики збіглася з вимогою документації.'
+  title: erase-flash, flash-id і коли стирання справді потрібне
+  match: '`erase-flash` знищує \*\*весь\*\* флеш|`flash-id` показує те, що каже сама мікросхема|залишки
+    старої розбивки заважають новій таблиці|Перевірити версію `esptool` \*\*перш ніж\*\*'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst,
+    .../docs/en/migration-guide.rst, https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst
+  quote: "(basic-commands.rst)\nRead SPI Flash ID: ``flash-id``\nExample output:\n    Manufacturer:\
+    \ e0\n    Device: 4016\n    Detected flash size: 4MB\n\nTo erase the entire flash chip\
+    \ (all data replaced with 0xFF bytes):\n    esptool erase-flash\n\n(nvs_flash.rst)\nif\
+    \ an NVS partition is truncated (for example, when the partition\ntable layout is changed),\
+    \ its contents should be erased.\n\n(migration-guide.rst)\nAll the commands and options\
+    \ have been renamed to use ``-`` instead\nof ``_`` as a separator (e.g., ``write_flash``\
+    \ -> ``write-flash``).\nOld command and option names are **deprecated**.\n"
+  method: curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас
+    — М1
+  note: 'Найцінніше — перший пункт переліку «коли `erase-flash` справді потрібен». Книга називала
+    його з досвіду; `nvs_flash.rst` каже те саме прямо: обрізаний при зміні розбивки розділ
+    NVS **треба** стерти. Порада з практики збіглася з вимогою документації.'
 - nazva: Автоскидання не працює — перелік причин, крім однієї
-  zbih: 'схема, що смикає `GPIO0` і `EN` сигналами `DTR`/`RTS`|плата без такої схеми взагалі|живлення просідає під час скидання'
+  zbih: схема, що смикає `GPIO0` і `EN` сигналами `DTR`/`RTS`|плата без такої схеми взагалі|живлення
+    просідає під час скидання
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
     та .../docs/en/troubleshooting.rst
-  cytata: |
-    esptool is not able to reset your hardware automatically in the
-    following cases:
-    - Your hardware does not have the ``DTR`` and ``RTS`` lines connected
-      to ``{IDF_TARGET_STRAP_BOOT_GPIO}`` and ``EN`` (``CHIP_PU``)
-    - The ``DTR`` and ``RTS`` lines are configured differently
-    - There are no such serial control lines at all
+  cytata: "esptool is not able to reset your hardware automatically in the\nfollowing cases:\n\
+    - Your hardware does not have the ``DTR`` and ``RTS`` lines connected\n  to ``{IDF_TARGET_STRAP_BOOT_GPIO}``\
+    \ and ``EN`` (``CHIP_PU``)\n- The ``DTR`` and ``RTS`` lines are configured differently\n\
+    - There are no such serial control lines at all\n\n(troubleshooting.rst)\nIf you have\
+    \ connected other devices to GPIO pins, try removing them\nand see if esptool starts working.\n\
+    Check the chip is receiving 3.3V from a stable power source.\n"
+  sposib: curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Чотири з п''яти причин книги підтверджено дослівно. **П''ята — ні**, і це варте
+    запису: «драйвер мосту не керує `DTR`/`RTS` (трапляється на CH9102 у Windows)».
 
-    (troubleshooting.rst)
-    If you have connected other devices to GPIO pins, try removing them
-    and see if esptool starts working.
-    Check the chip is receiving 3.3V from a stable power source.
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Чотири з п'яти причин книги підтверджено дослівно. **П'ята — ні**, і
-    це варте запису: «драйвер мосту не керує `DTR`/`RTS` (трапляється на
-    CH9102 у Windows)».
+    Агент шукав `CH9102` у `troubleshooting.rst`, `boot-mode-selection.rst` і `reset.py` —
+    немає ніде. Твердження не спростоване, воно **непідтверджене**: поведінка драйвера під
+    Windows у документації esptool не описана й описана бути не може.
 
-    Агент шукав `CH9102` у `troubleshooting.rst`, `boot-mode-selection.rst`
-    і `reset.py` — немає ніде. Твердження не спростоване, воно
-    **непідтверджене**: поведінка драйвера під Windows у документації
-    esptool не описана й описана бути не може.
+    Лишаю в книзі як є, але позначаю тут: якщо колись знадобиться клас `A` на цей рядок, джерелом
+    буде не esptool, а сам драйвер WCH або відтворення на живій машині. Це не наряд для М2
+    — це чесна межа того, що взагалі можна процитувати.
 
-    Лишаю в книзі як є, але позначаю тут: якщо колись знадобиться клас
-    `A` на цей рядок, джерелом буде не esptool, а сам драйвер WCH або
-    відтворення на живій машині. Це не наряд для М2 — це чесна межа
-    того, що взагалі можна процитувати.
+    Побічно варте уваги: `troubleshooting.rst` радить те саме, що книга, у двох інших рядках
+    — зняти сторонні пристрої з GPIO і перевірити стабільність 3.3 В. Тобто перелік книги
+    не лише правильний, а й впорядкований так само, як у джерелі.'
+  title: Автоскидання не працює — перелік причин, крім однієї
+  match: схема, що смикає `GPIO0` і `EN` сигналами `DTR`/`RTS`|плата без такої схеми взагалі|живлення
+    просідає під час скидання
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+    та .../docs/en/troubleshooting.rst
+  quote: "esptool is not able to reset your hardware automatically in the\nfollowing cases:\n\
+    - Your hardware does not have the ``DTR`` and ``RTS`` lines connected\n  to ``{IDF_TARGET_STRAP_BOOT_GPIO}``\
+    \ and ``EN`` (``CHIP_PU``)\n- The ``DTR`` and ``RTS`` lines are configured differently\n\
+    - There are no such serial control lines at all\n\n(troubleshooting.rst)\nIf you have\
+    \ connected other devices to GPIO pins, try removing them\nand see if esptool starts working.\n\
+    Check the chip is receiving 3.3V from a stable power source.\n"
+  method: curl raw.githubusercontent через агента пулу (шматок 6), 2026-08-26; взірець і клас
+    — М1
+  note: 'Чотири з п''яти причин книги підтверджено дослівно. **П''ята — ні**, і це варте запису:
+    «драйвер мосту не керує `DTR`/`RTS` (трапляється на CH9102 у Windows)».
 
-    Побічно варте уваги: `troubleshooting.rst` радить те саме, що книга,
-    у двох інших рядках — зняти сторонні пристрої з GPIO і перевірити
-    стабільність 3.3 В. Тобто перелік книги не лише правильний, а й
-    впорядкований так само, як у джерелі.
+    Агент шукав `CH9102` у `troubleshooting.rst`, `boot-mode-selection.rst` і `reset.py` —
+    немає ніде. Твердження не спростоване, воно **непідтверджене**: поведінка драйвера під
+    Windows у документації esptool не описана й описана бути не може.
+
+    Лишаю в книзі як є, але позначаю тут: якщо колись знадобиться клас `A` на цей рядок, джерелом
+    буде не esptool, а сам драйвер WCH або відтворення на живій машині. Це не наряд для М2
+    — це чесна межа того, що взагалі можна процитувати.
+
+    Побічно варте уваги: `troubleshooting.rst` радить те саме, що книга, у двох інших рядках
+    — зняти сторонні пристрої з GPIO і перевірити стабільність 3.3 В. Тобто перелік книги
+    не лише правильний, а й впорядкований так само, як у джерелі.'

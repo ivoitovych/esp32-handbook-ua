@@ -8,6 +8,51 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-G-036: | стабілізатор | voltage regulator |'
   zbih: \|\s+стабілізатор\s+\|\s+voltage
   klas: A
@@ -19,6 +64,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: voltage regulator — standard English electronics term, confirmed in ESP-IDF documentation
+  title: 'T-G-036: | стабілізатор | voltage regulator |'
+  match: \|\s+стабілізатор\s+\|\s+voltage
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ldo_regulator.rst
+  quote: 'Low Dropout Voltage Regulator (LDO)
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: voltage regulator — standard English electronics term, confirmed in ESP-IDF documentation
 - nazva: 'T-G-085: | відтворюване збирання | reproducible build |'
   zbih: \|\s+відтворюване\s+збирання\s+\|
   klas: A
@@ -31,6 +87,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: reproducible build — confirmed in ESP-IDF API guides
+  title: 'T-G-085: | відтворюване збирання | reproducible build |'
+  match: \|\s+відтворюване\s+збирання\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/reproducible-builds.rst
+  quote: 'When reproducible builds are enabled, the application built with ESP-IDF does not
+    depend on the build environment
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: reproducible build — confirmed in ESP-IDF API guides
 - nazva: 'T-G-054: | прошивка | firmware |'
   zbih: \|\s+прошивка\s+\|\s+firmware
   klas: A
@@ -42,6 +110,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: firmware — confirmed in ESP-IDF getting started documentation
+  title: 'T-G-054: | прошивка | firmware |'
+  match: \|\s+прошивка\s+\|\s+firmware
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  quote: 'building and flashing firmware onto an {IDF_TARGET_NAME} board
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: firmware — confirmed in ESP-IDF getting started documentation
 - nazva: 'T-G-055: | образ | image, binary |'
   zbih: \|\s+образ\s+\|\s+image,
   klas: A
@@ -53,6 +132,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: image, binary — confirmed in esptool documentation describing firmware images
+  title: 'T-G-055: | образ | image, binary |'
+  match: \|\s+образ\s+\|\s+image,
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/index.rst
+  quote: 'Prepare binary executable images ready for flashing
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: image, binary — confirmed in esptool documentation describing firmware images
 - nazva: 'T-G-056: | збирання | build |'
   zbih: \|\s+збирання\s+\|\s+build
   klas: A
@@ -64,6 +154,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: build — confirmed in ESP-IDF documentation section on building projects
+  title: 'T-G-056: | збирання | build |'
+  match: \|\s+збирання\s+\|\s+build
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  quote: 'Build Your First Project
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: build — confirmed in ESP-IDF documentation section on building projects
 - nazva: 'T-G-061: | пріоритет | priority |'
   zbih: \|\s+пріоритет\s+\|\s+priority
   klas: A
@@ -75,6 +176,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: priority — confirmed in FreeRTOS task priority documentation
+  title: 'T-G-061: | пріоритет | priority |'
+  match: \|\s+пріоритет\s+\|\s+priority
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  quote: 'Priority
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: priority — confirmed in FreeRTOS task priority documentation
 - nazva: 'T-G-062: | черга | queue |'
   zbih: \|\s+черга\s+\|\s+queue
   klas: A
@@ -86,6 +198,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: queue — confirmed in FreeRTOS queue API documentation; xQueueCreateWithCaps function
+  title: 'T-G-062: | черга | queue |'
+  match: \|\s+черга\s+\|\s+queue
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Queue API
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: queue — confirmed in FreeRTOS queue API documentation; xQueueCreateWithCaps function
 - nazva: 'T-G-063: | семафор | semaphore |'
   zbih: \|\s+семафор\s+\|\s+semaphore
   klas: A
@@ -97,6 +220,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: semaphore — confirmed as dedicated section in FreeRTOS API documentation
+  title: 'T-G-063: | семафор | semaphore |'
+  match: \|\s+семафор\s+\|\s+semaphore
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Semaphore API
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: semaphore — confirmed as dedicated section in FreeRTOS API documentation
 - nazva: 'T-G-064: | м''ютекс | mutex |'
   zbih: \|\s+м'ютекс\s+\|\s+mutex
   klas: A
@@ -108,6 +242,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: mutex — confirmed in FreeRTOS documentation discussing mutual exclusion
+  title: 'T-G-064: | м''ютекс | mutex |'
+  match: \|\s+м'ютекс\s+\|\s+mutex
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'mutexes or spinlocks if they require mutual exclusion
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: mutex — confirmed in FreeRTOS documentation discussing mutual exclusion
 - nazva: 'T-G-065: | група подій | event group |'
   zbih: \|\s+група\s+подій\s+\|
   klas: A
@@ -119,6 +264,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: event group — confirmed as dedicated section in FreeRTOS API documentation
+  title: 'T-G-065: | група подій | event group |'
+  match: \|\s+група\s+подій\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Event Group API
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: event group — confirmed as dedicated section in FreeRTOS API documentation
 - nazva: 'T-G-066: | переривання | interrupt |'
   zbih: \|\s+переривання\s+\|\s+interrupt
   klas: A
@@ -130,6 +286,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: interrupt — confirmed in FreeRTOS scheduler and interrupt handling documentation
+  title: 'T-G-066: | переривання | interrupt |'
+  match: \|\s+переривання\s+\|\s+interrupt
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Time slicing is governed by a tick interrupt
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: interrupt — confirmed in FreeRTOS scheduler and interrupt handling documentation
 - nazva: 'T-G-068: | критична секція | critical section |'
   zbih: \|\s+критична\s+секція\s+\|
   klas: A
@@ -141,6 +308,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: critical section — confirmed as dedicated section in FreeRTOS documentation
+  title: 'T-G-068: | критична секція | critical section |'
+  match: \|\s+критична\s+секція\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'Critical Sections
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: critical section — confirmed as dedicated section in FreeRTOS documentation
 - nazva: 'T-G-074: | атомарна операція | atomic operation |'
   zbih: \|\s+атомарна\s+операція\s+\|
   klas: A
@@ -153,6 +331,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: atomic operation — confirmed in FreeRTOS critical section and spinlock documentation
+  title: 'T-G-074: | атомарна операція | atomic operation |'
+  match: \|\s+атомарна\s+операція\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap
+    instruction
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: atomic operation — confirmed in FreeRTOS critical section and spinlock documentation
 - nazva: 'T-G-076: | взаємне блокування | deadlock |'
   zbih: \|\s+взаємне\s+блокування\s+\|
   klas: A
@@ -164,6 +354,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: deadlock — confirmed in FreeRTOS critical section documentation
+  title: 'T-G-076: | взаємне блокування | deadlock |'
+  match: \|\s+взаємне\s+блокування\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'avoid deadlocking when entering critical sections recursively
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: deadlock — confirmed in FreeRTOS critical section documentation
 - nazva: 'T-G-077: | зворотний виклик | callback |'
   zbih: \|\s+зворотний\s+виклик\s+\|
   klas: A
@@ -175,6 +376,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: callback — confirmed in FreeRTOS supplemental features documentation
+  title: 'T-G-077: | зворотний виклик | callback |'
+  match: \|\s+зворотний\s+виклик\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_additions.rst
+  quote: 'TLSP Deletion callbacks are run automatically when a task is deleted
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: callback — confirmed in FreeRTOS supplemental features documentation
 - nazva: 'T-G-088: | точка доступу | access point |'
   zbih: \|\s+точка\s+доступу\s+\|
   klas: A
@@ -187,6 +399,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: точка доступу - це Access Point, підтверджено в документації ESP-IDF
+  title: 'T-G-088: | точка доступу | access point |'
+  match: \|\s+точка\s+доступу\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  quote: 'This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver
+    of ESP for connecting to an Access Point.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: точка доступу - це Access Point, підтверджено в документації ESP-IDF
 - nazva: 'T-G-089: | станція, клієнт | station |'
   zbih: \|\s+станція,\s+клієнт\s+\|
   klas: A
@@ -198,6 +422,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: станція - це Station, підтверджено в документації ESP-IDF
+  title: 'T-G-089: | станція, клієнт | station |'
+  match: \|\s+станція,\s+клієнт\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  quote: 'This example shows how to use the Wi-Fi Station functionality
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: станція - це Station, підтверджено в документації ESP-IDF
 - nazva: 'T-G-090: | канал | channel |'
   zbih: \|\s+канал\s+\|\s+channel
   klas: A
@@ -209,6 +444,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: канал - це channel, підтверджено в логах ESP-IDF
+  title: 'T-G-090: | канал | channel |'
+  match: \|\s+канал\s+\|\s+channel
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  quote: 'connected with #!/bin/test, aid = 1, channel 6, BW20, bssid = ac:9e:17:7e:31:40
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: канал - це channel, підтверджено в логах ESP-IDF
 - nazva: 'T-G-091: | рівень сигналу | RSSI, signal strength |'
   zbih: \|\s+рівень\s+сигналу\s+\|
   klas: A
@@ -220,6 +466,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: рівень сигналу - це rssi (signal strength), підтверджено в логах ESP-IDF
+  title: 'T-G-091: | рівень сигналу | RSSI, signal strength |'
+  match: \|\s+рівень\s+сигналу\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
+  quote: 'security type: 3, phy: bgn, rssi: -68
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: рівень сигналу - це rssi (signal strength), підтверджено в логах ESP-IDF
 - nazva: 'T-G-094: | дальність | range |'
   zbih: \|\s+дальність\s+\|\s+range
   klas: A
@@ -231,6 +488,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: дальність - це distance, підтверджено в документації ESP-IDF FTM
+  title: 'T-G-094: | дальність | range |'
+  match: \|\s+дальність\s+\|\s+range
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/ftm/README.md
+  quote: 'Estimated Distance - 5.07 meters
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: дальність - це distance, підтверджено в документації ESP-IDF FTM
 - nazva: 'T-G-095: | маячок | beacon |'
   zbih: \|\s+маячок\s+\|\s+beacon
   klas: A
@@ -243,6 +511,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: маячок - це beacon frame, підтверджено в ESP-IDF WiFi header
+  title: 'T-G-095: | маячок | beacon |'
+  match: \|\s+маячок\s+\|\s+beacon
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
+  quote: 'If the station does not receive a beacon frame from the connected SoftAP during
+    the inactive time
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: маячок - це beacon frame, підтверджено в ESP-IDF WiFi header
 - nazva: 'T-G-098: | топік | topic |'
   zbih: \|\s+топік\s+\|\s+topic
   klas: A
@@ -254,6 +534,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: топік - це topic, підтверджено в логах ESP-IDF MQTT
+  title: 'T-G-098: | топік | topic |'
+  match: \|\s+топік\s+\|\s+topic
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  quote: 'TOPIC=/topic/qos0
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: топік - це topic, підтверджено в логах ESP-IDF MQTT
 - nazva: 'T-G-099: | підписка | subscription |'
   zbih: \|\s+підписка\s+\|\s+subscription
   klas: A
@@ -265,6 +556,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підписка - це subscribe, підтверджено в документації ESP-IDF MQTT
+  title: 'T-G-099: | підписка | subscription |'
+  match: \|\s+підписка\s+\|\s+subscription
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  quote: 'sent subscribe successful
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підписка - це subscribe, підтверджено в документації ESP-IDF MQTT
 - nazva: 'T-G-100: | публікація | publish |'
   zbih: \|\s+публікація\s+\|\s+publish
   klas: A
@@ -276,6 +578,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: публікація - це publish, підтверджено в логах ESP-IDF MQTT
+  title: 'T-G-100: | публікація | publish |'
+  match: \|\s+публікація\s+\|\s+publish
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  quote: 'sent publish successful, msg_id=41464
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: публікація - це publish, підтверджено в логах ESP-IDF MQTT
 - nazva: 'T-G-101: | сертифікат | certificate |'
   zbih: \|\s+сертифікат\s+\|\s+certificate
   klas: A
@@ -287,6 +600,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: сертифікат - це certificate, підтверджено в документації ESP-IDF MQTT
+  title: 'T-G-101: | сертифікат | certificate |'
+  match: \|\s+сертифікат\s+\|\s+certificate
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/mqtt/README.md
+  quote: 'TLS connection with server verification using the certificate bundle
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: сертифікат - це certificate, підтверджено в документації ESP-IDF MQTT
 - nazva: 'T-G-102: | центр сертифікації | certificate authority, CA |'
   zbih: \|\s+центр\s+сертифікації\s+\|
   klas: A
@@ -298,6 +622,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: центр сертифікації - це certificate authority, підтверджено в документації ESP-IDF
+  title: 'T-G-102: | центр сертифікації | certificate authority, CA |'
+  match: \|\s+центр\s+сертифікації\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/esp_crt_bundle.rst
+  quote: 'Certificate Authorities (CAs) from the bundle
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: центр сертифікації - це certificate authority, підтверджено в документації ESP-IDF
 - nazva: 'T-G-103: | рукостискання | handshake |'
   zbih: \|\s+рукостискання\s+\|\s+handshake
   klas: A
@@ -309,6 +644,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: рукостискання - це handshake, підтверджено в документації ESP-IDF
+  title: 'T-G-103: | рукостискання | handshake |'
+  match: \|\s+рукостискання\s+\|\s+handshake
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/esp_crt_bundle.rst
+  quote: 'during the TLS handshake
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: рукостискання - це handshake, підтверджено в документації ESP-IDF
 - nazva: 'T-G-104: | широкомовна розсилка | broadcast |'
   zbih: \|\s+широкомовна\s+розсилка\s+\|
   klas: A
@@ -320,6 +666,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: широкомовна розсилка - це broadcast, підтверджено в ESP-IDF WiFi header
+  title: 'T-G-104: | широкомовна розсилка | broadcast |'
+  match: \|\s+широкомовна\s+розсилка\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
+  quote: 'req->allow_broadcast
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: широкомовна розсилка - це broadcast, підтверджено в ESP-IDF WiFi header
 - nazva: 'T-G-108: | напруга | voltage |'
   zbih: \|\s+напруга\s+\|\s+voltage
   klas: A
@@ -331,6 +688,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: напруга - це voltage, підтверджено в документації ESP-IDF ADC
+  title: 'T-G-108: | напруга | voltage |'
+  match: \|\s+напруга\s+\|\s+voltage
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  quote: 'measuring analog signals from multiple input channels
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: напруга - це voltage, підтверджено в документації ESP-IDF ADC
 - nazva: 'T-G-109: | струм | current |'
   zbih: \|\s+струм\s+\|\s+current
   klas: A
@@ -342,6 +710,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: струм - це current, підтверджено в документації ESP-IDF
+  title: 'T-G-109: | струм | current |'
+  match: \|\s+струм\s+\|\s+current
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
+  quote: 'higher current consumption
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: струм - це current, підтверджено в документації ESP-IDF
 - nazva: 'T-G-111: | потужність | power |'
   zbih: \|\s+потужність\s+\|\s+power
   klas: A
@@ -354,6 +733,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: потужність - це power, підтверджено в документації ESP-IDF
+  title: 'T-G-111: | потужність | power |'
+  match: \|\s+потужність\s+\|\s+power
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
+  quote: 'put the chip into Light-sleep mode to run an application at smallest possible power
+    consumption
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: потужність - це power, підтверджено в документації ESP-IDF
 - nazva: 'T-G-116: | коефіцієнт заповнення | duty cycle |'
   zbih: \|\s+коефіцієнт\s+заповнення\s+\|
   klas: A
@@ -365,6 +756,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: коефіцієнт заповнення - це duty cycle, підтверджено в документації ESP-IDF LEDC
+  title: 'T-G-116: | коефіцієнт заповнення | duty cycle |'
+  match: \|\s+коефіцієнт\s+заповнення\s+\|
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  quote: 'The range of the duty cycle values passed to functions depends on selected duty_resolution
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: коефіцієнт заповнення - це duty cycle, підтверджено в документації ESP-IDF LEDC
 - nazva: 'T-G-117: | роздільність | resolution |'
   zbih: \|\s+роздільність\s+\|\s+resolution
   klas: A
@@ -376,6 +778,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: роздільність - це resolution, підтверджено в документації ESP-IDF ADC
+  title: 'T-G-117: | роздільність | resolution |'
+  match: \|\s+роздільність\s+\|\s+resolution
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  quote: 'resolution of the ADC result
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: роздільність - це resolution, підтверджено в документації ESP-IDF ADC
 - nazva: 'T-G-118: | точність | accuracy |'
   zbih: \|\s+точність\s+\|\s+accuracy
   klas: A
@@ -387,6 +800,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: точність - це accuracy, підтверджено в документації ESP-IDF ADC калібрування
+  title: 'T-G-118: | точність | accuracy |'
+  match: \|\s+точність\s+\|\s+accuracy
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  quote: 'get more accurate output results
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: точність - це accuracy, підтверджено в документації ESP-IDF ADC калібрування
 - nazva: 'T-G-119: | калібрування | calibration |'
   zbih: \|\s+калібрування\s+\|\s+calibration
   klas: A
@@ -398,6 +822,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: калібрування - це calibration, підтверджено в документації ESP-IDF
+  title: 'T-G-119: | калібрування | calibration |'
+  match: \|\s+калібрування\s+\|\s+calibration
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  quote: 'ADC calibration driver to minimize the effect of different reference voltages
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: калібрування - це calibration, підтверджено в документації ESP-IDF
 - nazva: 'T-G-120: | усереднення | averaging |'
   zbih: \|\s+усереднення\s+\|\s+averaging
   klas: A
@@ -409,6 +844,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: усереднення - це averaging/multisampling, підтверджено в документації ESP-IDF
+  title: 'T-G-120: | усереднення | averaging |'
+  match: \|\s+усереднення\s+\|\s+averaging
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  quote: 'multisampling may also be used to further mitigate the effects of noise
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: усереднення - це averaging/multisampling, підтверджено в документації ESP-IDF
 - nazva: 'T-G-121: | шум | noise |'
   zbih: \|\s+шум\s+\|\s+noise
   klas: A
@@ -420,6 +866,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: шум - це noise, підтверджено в документації ESP-IDF ADC
+  title: 'T-G-121: | шум | noise |'
+  match: \|\s+шум\s+\|\s+noise
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/adc_calibration.rst
+  quote: 'Minimize Noise
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: шум - це noise, підтверджено в документації ESP-IDF ADC
 - nazva: 'T-G-141: | IDF | IoT Development Framework |'
   zbih: \|\s+IDF\s+\|\s+IoT
   klas: A
@@ -432,6 +889,17 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: IDF = Espressif IoT Development Framework підтверджено офіційною документацією
     ESP-IDF
+  title: 'T-G-141: | IDF | IoT Development Framework |'
+  match: \|\s+IDF\s+\|\s+IoT
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst
+  quote: 'Espressif IoT Development Framework
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: IDF = Espressif IoT Development Framework підтверджено офіційною документацією ESP-IDF
 - nazva: 'T-G-142: | RTOS | Real-Time Operating System |'
   zbih: \|\s+RTOS\s+\|\s+Real\-Time
   klas: A
@@ -444,6 +912,17 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: RTOS = real-time operating system підтверджено у офіційній документації FreeRTOS
     ESP-IDF
+  title: 'T-G-142: | RTOS | Real-Time Operating System |'
+  match: \|\s+RTOS\s+\|\s+Real\-Time
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  quote: 'FreeRTOS is an open source RTOS (real-time operating system)
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: RTOS = real-time operating system підтверджено у офіційній документації FreeRTOS ESP-IDF
 - nazva: 'T-G-150: | UART | Universal Asynchronous Receiver/Transmitter |'
   zbih: \|\s+UART\s+\|\s+Universal
   klas: A
@@ -455,6 +934,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації
+    ESP-IDF
+  title: 'T-G-150: | UART | Universal Asynchronous Receiver/Transmitter |'
+  match: \|\s+UART\s+\|\s+Universal
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+  quote: 'Universal Asynchronous Receiver/Transmitter (UART)
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації
     ESP-IDF
 - nazva: 'T-G-163: | WDT | Watchdog Timer |'
   zbih: \|\s+WDT\s+\|\s+Watchdog
@@ -468,6 +959,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: WDT як Watchdog Timer підтверджено у офіційній документації ESP-IDF
+  title: 'T-G-163: | WDT | Watchdog Timer |'
+  match: \|\s+WDT\s+\|\s+Watchdog
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
+  quote: 'The purpose of a watchdog timer is to monitor the system''s operation and automatically
+    recover from software or hardware faults by restarting the system
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: WDT як Watchdog Timer підтверджено у офіційній документації ESP-IDF
 - nazva: 'T-G-146: | OTA | Over-The-Air (оновлення) |'
   zbih: \|\s+OTA\s+\|\s+Over\-The\-Air
   klas: A
@@ -479,6 +982,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: OTA = Over-The-Air підтверджено у заголовку офіційної документації ESP-IDF
+  title: 'T-G-146: | OTA | Over-The-Air (оновлення) |'
+  match: \|\s+OTA\s+\|\s+Over\-The\-Air
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  quote: 'Over The Air Updates (OTA)
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: OTA = Over-The-Air підтверджено у заголовку офіційної документації ESP-IDF
 - nazva: 'T-G-153: | I²S | Inter-IC Sound |'
   zbih: \|\s+I²S\s+\|\s+Inter\-IC
   klas: A
@@ -490,6 +1004,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: I²S = Inter-IC Sound підтверджено у заголовку офіційної документації ESP-IDF
+  title: 'T-G-153: | I²S | Inter-IC Sound |'
+  match: \|\s+I²S\s+\|\s+Inter\-IC
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2s.rst
+  quote: 'Inter-IC Sound (I2S)
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: I²S = Inter-IC Sound підтверджено у заголовку офіційної документації ESP-IDF
 - nazva: 'T-G-155: | JTAG | Joint Test Action Group (інтерфейс'
   zbih: \|\s+JTAG\s+\|\s+Joint
   klas: A
@@ -501,6 +1026,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: JTAG = Joint Test Action Group підтверджено у документації налагодження ESP-IDF
+  title: 'T-G-155: | JTAG | Joint Test Action Group (інтерфейс'
+  match: \|\s+JTAG\s+\|\s+Joint
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+  quote: 'JTAG (Joint Test Action Group) interface
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: JTAG = Joint Test Action Group підтверджено у документації налагодження ESP-IDF
 - nazva: 'T-G-162: | ULP | Ultra-Low-Power (співпроцесор) |'
   zbih: \|\s+ULP\s+\|\s+Ultra\-Low\-Power
   klas: A
@@ -512,3 +1048,14 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: ULP = Ultra-Low-Power підтверджено у документації ESP-IDF
+  title: 'T-G-162: | ULP | Ultra-Low-Power (співпроцесор) |'
+  match: \|\s+ULP\s+\|\s+Ultra\-Low\-Power
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp.rst
+  quote: 'Ultra Low Power (ULP) coprocessor
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: ULP = Ultra-Low-Power підтверджено у документації ESP-IDF

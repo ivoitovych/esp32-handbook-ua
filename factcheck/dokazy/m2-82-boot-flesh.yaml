@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 - nazva: Етап 1 — ROM bootloader зашитий у кремній
   zbih: Етап 1.*ROM bootloader.*кремній
   klas: A
@@ -6,8 +14,18 @@
 
     '
   sposib: curl esptool boot-mode-selection.rst, 2026-08-26
-  notatka: 'Текст одиниці T-16-004 констатує ROM bootloader у read-only memory у кремнії. Джерело підтверджує:
-    The ROM bootloader is in read-only memory.'
+  notatka: 'Текст одиниці T-16-004 констатує ROM bootloader у read-only memory у кремнії.
+    Джерело підтверджує: The ROM bootloader is in read-only memory.'
+  title: Етап 1 — ROM bootloader зашитий у кремній
+  match: Етап 1.*ROM bootloader.*кремній
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: 'The ROM bootloader is in read-only memory (ROM) on the ESP32 chip.
+
+    '
+  method: curl esptool boot-mode-selection.rst, 2026-08-26
+  note: 'Текст одиниці T-16-004 констатує ROM bootloader у read-only memory у кремнії. Джерело
+    підтверджує: The ROM bootloader is in read-only memory.'
 - nazva: Етап 2 — другий бутлоадер bootloader.bin у флеші
   zbih: Етап 2.*другий бутлоадер.*bootloader
   klas: B
@@ -16,19 +34,41 @@
 
     '
   sposib: curl esptool boot-mode-selection.rst, 2026-08-26
-  notatka: 'Послідовність: ROM (етап 1), потім другий бутлоадер з флешу (етап 2). Джерело підтверджує
+  notatka: 'Послідовність: ROM (етап 1), потім другий бутлоадер з флешу (етап 2). Джерело
+    підтверджує послідовність етапів.'
+  title: Етап 2 — другий бутлоадер bootloader.bin у флеші
+  match: Етап 2.*другий бутлоадер.*bootloader
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: 'After reset, the second line printed by the ESP32 ROM is a reset & boot mode message.
+
+    '
+  method: curl esptool boot-mode-selection.rst, 2026-08-26
+  note: 'Послідовність: ROM (етап 1), потім другий бутлоадер з флешу (етап 2). Джерело підтверджує
     послідовність етапів.'
 - nazva: Адреса bootloader.bin для ESP32 чипів — 0x1000
   zbih: Останнє\s+тягне\s+за\s+собою\s+перерахунок\s+явних\s+зсувів\s+у\s+CSV:\s+жоден\s+розділ\s+не\s+може\s+починатися\s+раніше\s+ніж\s+нова\s+адреса|\[\[classic\]\]\s+Адреса\s+`0x1000`\s+тут\s+—\s+знову\s+classic,\s+і\s+тепер\s+вона\s+узгоджена\s+з\s+`\-\-chip\s+esp32`\s+у\s+тому\s+ж\s+рядку;\s+для\s+і|У\s+ручному\s+варіанті\s+адреса\s+бутлоадера\s+набирається\s+з\s+голови,\s+і\s+саме\s+там\s+роблять\s+помилку:\s+`0x1000`\s+на\s+S3\s+дає\s+обра|⚠\s+У\s+команді\s+вище\s+стоїть\s+`0x1000`\s+—\s+адреса\s+\*\*classic\s+і\s+S2\*\*
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
+  cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000",
+    esp32p4="0x2000"}
 
     '
   sposib: curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
-  notatka: 'Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує: esp32="0x1000". | Взірець
-    перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці)
-    і не чіпав нічого.'
+  notatka: 'Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує: esp32="0x1000".
+    | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку
+    книги (риски таблиці) і не чіпав нічого.'
+  title: Адреса bootloader.bin для ESP32 чипів — 0x1000
+  match: Останнє\s+тягне\s+за\s+собою\s+перерахунок\s+явних\s+зсувів\s+у\s+CSV:\s+жоден\s+розділ\s+не\s+може\s+починатися\s+раніше\s+ніж\s+нова\s+адреса|\[\[classic\]\]\s+Адреса\s+`0x1000`\s+тут\s+—\s+знову\s+classic,\s+і\s+тепер\s+вона\s+узгоджена\s+з\s+`\-\-chip\s+esp32`\s+у\s+тому\s+ж\s+рядку;\s+для\s+і|У\s+ручному\s+варіанті\s+адреса\s+бутлоадера\s+набирається\s+з\s+голови,\s+і\s+саме\s+там\s+роблять\s+помилку:\s+`0x1000`\s+на\s+S3\s+дає\s+обра|⚠\s+У\s+команді\s+вище\s+стоїть\s+`0x1000`\s+—\s+адреса\s+\*\*classic\s+і\s+S2\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
+
+    '
+  method: curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
+  note: 'Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує: esp32="0x1000".
+    | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку
+    книги (риски таблиці) і не чіпав нічого.'
 - nazva: GPIO0 як ключовий strapping-пін для вибору режиму завантаження
   zbih: '`GPIO0`\s+·\s+Що\s+задає\s+→\s+звичайний\s+старт\s+або\s+download\s+mode|\|\s+`DOWNLOAD_BOOT\(UART0/UART1/\.\.\.\)`\s+\|\s+download\s+mode,\s+`GPIO0`\s+низький\s+\||GPIO0\s+→\s+білий\s+→\s+кнопка\s+на\s+землю\s+\(⚠\s+strapping!\)|\-\s+`GPIO0`\s+вільний\s+\(підтягнутий\s+вгору\)\s+→\s+звичайний\s+старт\s+застосунку;\s+\-\s+`GPIO0`\s+притиснутий\s+до\s+землі\s+→\s+download'
   klas: B
@@ -37,9 +77,20 @@
 
     '
   sposib: curl esptool boot-mode-selection.rst, grep GPIO0, 2026-08-26
-  notatka: 'Текст називає GPIO0 ключовим для режиму завантаження. Джерело показує GPIO0 з кодом 0x10.
-    | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги
-    (риски таблиці) і не чіпав нічого.'
+  notatka: 'Текст називає GPIO0 ключовим для режиму завантаження. Джерело показує GPIO0 з
+    кодом 0x10. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався
+    під розмітку книги (риски таблиці) і не чіпав нічого.'
+  title: GPIO0 як ключовий strapping-пін для вибору режиму завантаження
+  match: '`GPIO0`\s+·\s+Що\s+задає\s+→\s+звичайний\s+старт\s+або\s+download\s+mode|\|\s+`DOWNLOAD_BOOT\(UART0/UART1/\.\.\.\)`\s+\|\s+download\s+mode,\s+`GPIO0`\s+низький\s+\||GPIO0\s+→\s+білий\s+→\s+кнопка\s+на\s+землю\s+\(⚠\s+strapping!\)|\-\s+`GPIO0`\s+вільний\s+\(підтягнутий\s+вгору\)\s+→\s+звичайний\s+старт\s+застосунку;\s+\-\s+`GPIO0`\s+притиснутий\s+до\s+землі\s+→\s+download'
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: '0x10  - GPIO0
+
+    '
+  method: curl esptool boot-mode-selection.rst, grep GPIO0, 2026-08-26
+  note: 'Текст називає GPIO0 ключовим для режиму завантаження. Джерело показує GPIO0 з кодом
+    0x10. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під
+    розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: Таблиця розділів з адресами nvs 0x9000 та factory 0x10000
   zbih: '`nvs`\s+·\s+Зсув\s+→\s+`0x9000`|`factory`\s+·\s+Зсув\s+→\s+`0x10000`|Адреса\s+`0x9000`\s+—\s+початок\s+розділу\s+`nvs`\s+у\s+стандартній\s+розбивці;\s+звірити\s+зі\s+своєю\s+таблицею\s+розділів\s+\(розділ\s+18\)|esptool\s+\-\-port\s+PORT\s+erase\-region\s+0x9000\s+0x6000\s+\#\s+лише\s+NVS'
   klas: A
@@ -50,9 +101,22 @@
 
     '
   sposib: curl esp-idf partition-tables.rst, grep partition, 2026-08-26
-  notatka: 'Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory на
-    0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку
-    книги (риски таблиці) і не чіпав нічого.'
+  notatka: 'Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000,
+    factory на 0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній
+    писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+  title: Таблиця розділів з адресами nvs 0x9000 та factory 0x10000
+  match: '`nvs`\s+·\s+Зсув\s+→\s+`0x9000`|`factory`\s+·\s+Зсув\s+→\s+`0x10000`|Адреса\s+`0x9000`\s+—\s+початок\s+розділу\s+`nvs`\s+у\s+стандартній\s+розбивці;\s+звірити\s+зі\s+своєю\s+таблицею\s+розділів\s+\(розділ\s+18\)|esptool\s+\-\-port\s+PORT\s+erase\-region\s+0x9000\s+0x6000\s+\#\s+лише\s+NVS'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'nvs,      data, nvs,     0x9000,  0x6000,
+
+    factory,  app,  factory, 0x10000, 1M,
+
+    '
+  method: curl esp-idf partition-tables.rst, grep partition, 2026-08-26
+  note: 'Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory
+    на 0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався
+    під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: Розділи ota_0 та ota_1 у таблиці розділів для OTA
   zbih: '`ota_0`.*`ota_1`'
   klas: A
@@ -63,4 +127,16 @@
 
     '
   sposib: curl esp-idf partition-tables.rst, grep ota_, 2026-08-26
-  notatka: Текст посилається на ota_0 та ota_1 у таблиці розділів. Джерело підтверджує їхню наявність.
+  notatka: Текст посилається на ota_0 та ota_1 у таблиці розділів. Джерело підтверджує їхню
+    наявність.
+  title: Розділи ota_0 та ota_1 у таблиці розділів для OTA
+  match: '`ota_0`.*`ota_1`'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'ota_0,    app,  ota_0,   0x20000,  1M,
+
+    ota_1,    app,  ota_1,   0x120000, 1M,
+
+    '
+  method: curl esp-idf partition-tables.rst, grep ota_, 2026-08-26
+  note: Текст посилається на ota_0 та ota_1 у таблиці розділів. Джерело підтверджує їхню наявність.

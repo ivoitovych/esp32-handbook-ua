@@ -13,117 +13,194 @@
 # координатору. Так само «3.7 В номінальна» з T-53-003 не збігається:
 # усі шість джерел дають 3.6 В. Обидва — розбіжності, не докази.
 
+
+
+
+
+
+
+
+
+
 - nazva: Ємність ходових елементів 18650 — від 2500 до 3500 мА·год
-  zbih: 'Ємність ходових елементів — від 2500 до\s+3500 мА·год\.'
+  zbih: Ємність ходових елементів — від 2500 до\s+3500 мА·год\.
   klas: A
-  dzherelo: >-
-    Специфікації елементів: Samsung SDI INR18650-25R і -30Q, Panasonic
-    NCR18650B, LG Chem INR18650-MJ1, Murata US18650VTC6
-  cytata: |
-    Samsung INR18650-25R:   Typical Capacity 2500mAh
+  dzherelo: 'Специфікації елементів: Samsung SDI INR18650-25R і -30Q, Panasonic NCR18650B,
+    LG Chem INR18650-MJ1, Murata US18650VTC6'
+  cytata: 'Samsung INR18650-25R:   Typical Capacity 2500mAh
+
     Samsung INR18650-30Q:   Typical Capacity 3000mAh
+
     Murata US18650VTC6:     Nominal Capacity* 3120 mAh
+
     Panasonic NCR18650B:    Rated capacity Min. 3200mAh
+
     LG INR18650 MJ1:        Lithium Ion INR18650 MJ1 3500mAh
-  sposib: >-
-    PDF виробників із дзеркал, кеш `samsung25r.pdf`, `samsung30q.pdf`,
-    `ncr18650b.pdf`, `lgmj1.pdf`, `vtc6.pdf`; реєстр
-    `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
-  notatka: >-
-    Виправлення попереднього формулювання. Книга казала «типово
-    2000-3000 мА·год», і верхня межа була занижена: три дуже поширені
-    елементи її перевищують — NCR18650B (3200 мін.), VTC6 (3120), MJ1
-    (3500).
 
-    Нижню межу теж підняв: 2000 мА·год серед ходових елементів не
-    трапилося в жодній із шести перевірених специфікацій. Найменший —
-    Samsung 25R на 2500, і він узятий саме як струмовий, а не ємнісний.
+    '
+  sposib: PDF виробників із дзеркал, кеш `samsung25r.pdf`, `samsung30q.pdf`, `ncr18650b.pdf`,
+    `lgmj1.pdf`, `vtc6.pdf`; реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: 'Виправлення попереднього формулювання. Книга казала «типово 2000-3000 мА·год»,
+    і верхня межа була занижена: три дуже поширені елементи її перевищують — NCR18650B (3200
+    мін.), VTC6 (3120), MJ1 (3500).
 
-    Діапазон 2500-3500 покривають п'ять специфікацій із п'яти, тож клас
-    `A`, а не `B`.
+    Нижню межу теж підняв: 2000 мА·год серед ходових елементів не трапилося в жодній із шести
+    перевірених специфікацій. Найменший — Samsung 25R на 2500, і він узятий саме як струмовий,
+    а не ємнісний.
 
+    Діапазон 2500-3500 покривають п''ять специфікацій із п''яти, тож клас `A`, а не `B`.'
+  title: Ємність ходових елементів 18650 — від 2500 до 3500 мА·год
+  match: Ємність ходових елементів — від 2500 до\s+3500 мА·год\.
+  status: verbatim
+  source: 'Специфікації елементів: Samsung SDI INR18650-25R і -30Q, Panasonic NCR18650B, LG
+    Chem INR18650-MJ1, Murata US18650VTC6'
+  quote: 'Samsung INR18650-25R:   Typical Capacity 2500mAh
+
+    Samsung INR18650-30Q:   Typical Capacity 3000mAh
+
+    Murata US18650VTC6:     Nominal Capacity* 3120 mAh
+
+    Panasonic NCR18650B:    Rated capacity Min. 3200mAh
+
+    LG INR18650 MJ1:        Lithium Ion INR18650 MJ1 3500mAh
+
+    '
+  method: PDF виробників із дзеркал, кеш `samsung25r.pdf`, `samsung30q.pdf`, `ncr18650b.pdf`,
+    `lgmj1.pdf`, `vtc6.pdf`; реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: 'Виправлення попереднього формулювання. Книга казала «типово 2000-3000 мА·год», і
+    верхня межа була занижена: три дуже поширені елементи її перевищують — NCR18650B (3200
+    мін.), VTC6 (3120), MJ1 (3500).
+
+    Нижню межу теж підняв: 2000 мА·год серед ходових елементів не трапилося в жодній із шести
+    перевірених специфікацій. Найменший — Samsung 25R на 2500, і він узятий саме як струмовий,
+    а не ємнісний.
+
+    Діапазон 2500-3500 покривають п''ять специфікацій із п''яти, тож клас `A`, а не `B`.'
 - nazva: Номінальна напруга 18650 — 3.6 В, а не 3.7
-  zbih: '\*\*Номінальна — 3\.6 В, а не 3\.7\.\*\*'
+  zbih: \*\*Номінальна — 3\.6 В, а не 3\.7\.\*\*
   klas: A
-  dzherelo: >-
-    Специфікації Samsung SDI INR18650-25R і -30Q, LG Chem INR18650-MJ1 і
-    HG2, Murata US18650VTC6
-  cytata: |
-    Samsung INR18650-25R:  Nominal Voltage (V)  3.6 / 3.64
-    Samsung INR18650-30Q:  Nominal Voltage (V)  3.60 / 3.61
-    LG INR18650 HG2:       Nominal Voltage      3.60V
-    LG INR18650 MJ1:       Nominal Voltage Average 3.635V
-    Murata US18650VTC6:    Nominal Voltage      3.6 V
-  sposib: >-
-    PDF виробників із дзеркал, кеш `samsung25r.pdf`, `samsung30q.pdf`,
-    `lghg2.pdf`, `lgmj1.pdf`, `vtc6.pdf`, pdftotext -layout, 2026-08-26
-  notatka: >-
-    П'ять специфікацій із п'яти дають 3.6 В (або 3.60-3.64), жодна не
-    дає 3.7. «3.7 В» — округлення, що прижилося в обігу; книга його
-    повторювала.
-
-    Похибка мала й практично нешкідлива, але вона накопичується там, де
-    номінал множать: розрахунок запасу енергії в мА·год × В дає на
-    3 % більше, ніж є.
-
-- nazva: Паспортна межа розряду 18650 — 2.5 В, а не 3.0
-  zbih: 'Паспортна межа розряду —\s+2\.5 В, а в частини елементів 2\.0 В\.'
-  klas: A
-  dzherelo: >-
-    Специфікації Samsung SDI INR18650-25R, Panasonic NCR18650B, Murata
+  dzherelo: Специфікації Samsung SDI INR18650-25R і -30Q, LG Chem INR18650-MJ1 і HG2, Murata
     US18650VTC6
-  cytata: |
-    Murata US18650VTC6:  Discharge: 0.2 ItA (600 mA), 2.0 V cutoff at 23deg.C
-    Samsung INR18650-25R / Panasonic NCR18650B: End voltage (cut off) 2.5V
-  sposib: >-
-    PDF виробників із дзеркал, кеш `samsung25r.pdf`, `ncr18650b.pdf`,
-    `vtc6.pdf`, pdftotext -layout, 2026-08-26
-  notatka: >-
-    Стара редакція книги казала «2.5-3.0 В розряджений» і «акумулятор
-    дає від 4.2 до 3.0 В». Друге твердження неточне: 3.0 В — це де
-    зупиняється **перетворювач**, а не елемент. Сам елемент за паспортом
-    іде до 2.5 В, а VTC6 і HG2 — до 2.0 В.
+  cytata: 'Samsung INR18650-25R:  Nominal Voltage (V)  3.6 / 3.64
 
-    Різниця має практичний бік, тому переписано з поясненням, а не
-    просто числом: між 3.0 і 2.5 В лишається невикористаний залишок.
-    Він невеликий за енергією, бо крива внизу крута, і платиться за
-    нього ресурсом елемента — тож правильна порада не «вибирати до
-    кінця», а знати, що межа схеми й межа елемента різні.
+    Samsung INR18650-30Q:  Nominal Voltage (V)  3.60 / 3.61
 
-- nazva: Заряджання 18650 нижче 0 °C — Panasonic NCR18650B і LG MJ1
-  zbih: '\*\*Не заряджати нижче 0 °C\.\*\*'
+    LG INR18650 HG2:       Nominal Voltage      3.60V
+
+    LG INR18650 MJ1:       Nominal Voltage Average 3.635V
+
+    Murata US18650VTC6:    Nominal Voltage      3.6 V
+
+    '
+  sposib: PDF виробників із дзеркал, кеш `samsung25r.pdf`, `samsung30q.pdf`, `lghg2.pdf`,
+    `lgmj1.pdf`, `vtc6.pdf`, pdftotext -layout, 2026-08-26
+  notatka: 'П''ять специфікацій із п''яти дають 3.6 В (або 3.60-3.64), жодна не дає 3.7. «3.7
+    В» — округлення, що прижилося в обігу; книга його повторювала.
+
+    Похибка мала й практично нешкідлива, але вона накопичується там, де номінал множать: розрахунок
+    запасу енергії в мА·год × В дає на 3 % більше, ніж є.'
+  title: Номінальна напруга 18650 — 3.6 В, а не 3.7
+  match: \*\*Номінальна — 3\.6 В, а не 3\.7\.\*\*
+  status: verbatim
+  source: Специфікації Samsung SDI INR18650-25R і -30Q, LG Chem INR18650-MJ1 і HG2, Murata
+    US18650VTC6
+  quote: 'Samsung INR18650-25R:  Nominal Voltage (V)  3.6 / 3.64
+
+    Samsung INR18650-30Q:  Nominal Voltage (V)  3.60 / 3.61
+
+    LG INR18650 HG2:       Nominal Voltage      3.60V
+
+    LG INR18650 MJ1:       Nominal Voltage Average 3.635V
+
+    Murata US18650VTC6:    Nominal Voltage      3.6 V
+
+    '
+  method: PDF виробників із дзеркал, кеш `samsung25r.pdf`, `samsung30q.pdf`, `lghg2.pdf`,
+    `lgmj1.pdf`, `vtc6.pdf`, pdftotext -layout, 2026-08-26
+  note: 'П''ять специфікацій із п''яти дають 3.6 В (або 3.60-3.64), жодна не дає 3.7. «3.7
+    В» — округлення, що прижилося в обігу; книга його повторювала.
+
+    Похибка мала й практично нешкідлива, але вона накопичується там, де номінал множать: розрахунок
+    запасу енергії в мА·год × В дає на 3 % більше, ніж є.'
+- nazva: Паспортна межа розряду 18650 — 2.5 В, а не 3.0
+  zbih: Паспортна межа розряду —\s+2\.5 В, а в частини елементів 2\.0 В\.
   klas: A
-  dzherelo: >-
-    Panasonic NCR18650B, датшит SANYO/Panasonic — розділ
-    «Specifications», рядок «Temperature»; LG INR18650MJ1, специфікація
-    LG Chem — розділ «Precautions», рядок «Battery must be charged at
-    operating temperature range»
-  cytata: |
-    [NCR18650B]
-    Temperature   Charge*: 0 to +45°C
-                  Discharge: -20 to +60°C
-                  Storage: -20 to +50°C
-    * At temperatures below 10°C, charge at a 0.25C rate.
+  dzherelo: Специфікації Samsung SDI INR18650-25R, Panasonic NCR18650B, Murata US18650VTC6
+  cytata: 'Murata US18650VTC6:  Discharge: 0.2 ItA (600 mA), 2.0 V cutoff at 23deg.C
 
-    [INR18650MJ1]
-    Battery must be charged at operating temperature range 0 ~ 45℃.
-    Battery must be discharged at operating temperature range -20 ~ 60℃.
-  sposib: >-
-    PDF Panasonic/SANYO, кеш `ncr18650b.pdf` (batteryspace.com), і PDF
-    LG Chem, кеш `lgmj1.pdf` (enerpower.de), pdftotext -layout,
-    2026-08-26
-  notatka: >-
-    Клас `A`: нижня межа заряджання «0 °C» — дослівна цифра з двох
-    незалежних виробників, а не округлення. NCR18650B додає нюанс,
-    якого немає в книзі: нижче +10 °C заряджати треба зменшеним струмом
-    (0.25C), а не просто «можна/не можна» по один бік нуля.
+    Samsung INR18650-25R / Panasonic NCR18650B: End voltage (cut off) 2.5V
 
-    **Одне джерело суперечить:** LG INR18650HG2 (кеш `lghg2.pdf`, той
-    самий каталог batteryspace.com) у розділі «Precautions» дає інше
-    число: `Battery must be charged at operating temperature range
-    -5 ~ 50℃`. За специфікацією виробника цей конкретний елемент
-    можна заряджати аж до −5 °C. Це не робить правило книги
-    небезпечним — «0 °C» лишається консервативнішим і безпечним
-    порогом для будь-якого з трьох елементів, — але означає, що «0 °C»
-    не універсальна фізична межа літію, а безпечний спільний знаменник,
-    підтверджений двома джерелами з трьох.
+    '
+  sposib: PDF виробників із дзеркал, кеш `samsung25r.pdf`, `ncr18650b.pdf`, `vtc6.pdf`, pdftotext
+    -layout, 2026-08-26
+  notatka: 'Стара редакція книги казала «2.5-3.0 В розряджений» і «акумулятор дає від 4.2
+    до 3.0 В». Друге твердження неточне: 3.0 В — це де зупиняється **перетворювач**, а не
+    елемент. Сам елемент за паспортом іде до 2.5 В, а VTC6 і HG2 — до 2.0 В.
+
+    Різниця має практичний бік, тому переписано з поясненням, а не просто числом: між 3.0
+    і 2.5 В лишається невикористаний залишок. Він невеликий за енергією, бо крива внизу крута,
+    і платиться за нього ресурсом елемента — тож правильна порада не «вибирати до кінця»,
+    а знати, що межа схеми й межа елемента різні.'
+  title: Паспортна межа розряду 18650 — 2.5 В, а не 3.0
+  match: Паспортна межа розряду —\s+2\.5 В, а в частини елементів 2\.0 В\.
+  status: verbatim
+  source: Специфікації Samsung SDI INR18650-25R, Panasonic NCR18650B, Murata US18650VTC6
+  quote: 'Murata US18650VTC6:  Discharge: 0.2 ItA (600 mA), 2.0 V cutoff at 23deg.C
+
+    Samsung INR18650-25R / Panasonic NCR18650B: End voltage (cut off) 2.5V
+
+    '
+  method: PDF виробників із дзеркал, кеш `samsung25r.pdf`, `ncr18650b.pdf`, `vtc6.pdf`, pdftotext
+    -layout, 2026-08-26
+  note: 'Стара редакція книги казала «2.5-3.0 В розряджений» і «акумулятор дає від 4.2 до
+    3.0 В». Друге твердження неточне: 3.0 В — це де зупиняється **перетворювач**, а не елемент.
+    Сам елемент за паспортом іде до 2.5 В, а VTC6 і HG2 — до 2.0 В.
+
+    Різниця має практичний бік, тому переписано з поясненням, а не просто числом: між 3.0
+    і 2.5 В лишається невикористаний залишок. Він невеликий за енергією, бо крива внизу крута,
+    і платиться за нього ресурсом елемента — тож правильна порада не «вибирати до кінця»,
+    а знати, що межа схеми й межа елемента різні.'
+- nazva: Заряджання 18650 нижче 0 °C — Panasonic NCR18650B і LG MJ1
+  zbih: \*\*Не заряджати нижче 0 °C\.\*\*
+  klas: A
+  dzherelo: Panasonic NCR18650B, датшит SANYO/Panasonic — розділ «Specifications», рядок «Temperature»;
+    LG INR18650MJ1, специфікація LG Chem — розділ «Precautions», рядок «Battery must be charged
+    at operating temperature range»
+  cytata: "[NCR18650B]\nTemperature   Charge*: 0 to +45°C\n              Discharge: -20 to\
+    \ +60°C\n              Storage: -20 to +50°C\n* At temperatures below 10°C, charge at\
+    \ a 0.25C rate.\n\n[INR18650MJ1]\nBattery must be charged at operating temperature range\
+    \ 0 ~ 45℃.\nBattery must be discharged at operating temperature range -20 ~ 60℃.\n"
+  sposib: PDF Panasonic/SANYO, кеш `ncr18650b.pdf` (batteryspace.com), і PDF LG Chem, кеш
+    `lgmj1.pdf` (enerpower.de), pdftotext -layout, 2026-08-26
+  notatka: 'Клас `A`: нижня межа заряджання «0 °C» — дослівна цифра з двох незалежних виробників,
+    а не округлення. NCR18650B додає нюанс, якого немає в книзі: нижче +10 °C заряджати треба
+    зменшеним струмом (0.25C), а не просто «можна/не можна» по один бік нуля.
+
+    **Одне джерело суперечить:** LG INR18650HG2 (кеш `lghg2.pdf`, той самий каталог batteryspace.com)
+    у розділі «Precautions» дає інше число: `Battery must be charged at operating temperature
+    range -5 ~ 50℃`. За специфікацією виробника цей конкретний елемент можна заряджати аж
+    до −5 °C. Це не робить правило книги небезпечним — «0 °C» лишається консервативнішим і
+    безпечним порогом для будь-якого з трьох елементів, — але означає, що «0 °C» не універсальна
+    фізична межа літію, а безпечний спільний знаменник, підтверджений двома джерелами з трьох.'
+  title: Заряджання 18650 нижче 0 °C — Panasonic NCR18650B і LG MJ1
+  match: \*\*Не заряджати нижче 0 °C\.\*\*
+  status: verbatim
+  source: Panasonic NCR18650B, датшит SANYO/Panasonic — розділ «Specifications», рядок «Temperature»;
+    LG INR18650MJ1, специфікація LG Chem — розділ «Precautions», рядок «Battery must be charged
+    at operating temperature range»
+  quote: "[NCR18650B]\nTemperature   Charge*: 0 to +45°C\n              Discharge: -20 to\
+    \ +60°C\n              Storage: -20 to +50°C\n* At temperatures below 10°C, charge at\
+    \ a 0.25C rate.\n\n[INR18650MJ1]\nBattery must be charged at operating temperature range\
+    \ 0 ~ 45℃.\nBattery must be discharged at operating temperature range -20 ~ 60℃.\n"
+  method: PDF Panasonic/SANYO, кеш `ncr18650b.pdf` (batteryspace.com), і PDF LG Chem, кеш
+    `lgmj1.pdf` (enerpower.de), pdftotext -layout, 2026-08-26
+  note: 'Клас `A`: нижня межа заряджання «0 °C» — дослівна цифра з двох незалежних виробників,
+    а не округлення. NCR18650B додає нюанс, якого немає в книзі: нижче +10 °C заряджати треба
+    зменшеним струмом (0.25C), а не просто «можна/не можна» по один бік нуля.
+
+    **Одне джерело суперечить:** LG INR18650HG2 (кеш `lghg2.pdf`, той самий каталог batteryspace.com)
+    у розділі «Precautions» дає інше число: `Battery must be charged at operating temperature
+    range -5 ~ 50℃`. За специфікацією виробника цей конкретний елемент можна заряджати аж
+    до −5 °C. Це не робить правило книги небезпечним — «0 °C» лишається консервативнішим і
+    безпечним порогом для будь-якого з трьох елементів, — але означає, що «0 °C» не універсальна
+    фізична межа літію, а безпечний спільний знаменник, підтверджений двома джерелами з трьох.'

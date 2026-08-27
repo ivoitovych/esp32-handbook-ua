@@ -8,6 +8,11 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
+
+
+
+
 - nazva: 'T-14-005: Ви прошиваєте його один раз, далі працюєте з'
   zbih: Ви\s+прошиваєте\s+його\s+один
   klas: A
@@ -19,6 +24,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: MicroPython provides interactive console (REPL) for immediate code execution
+  title: 'T-14-005: Ви прошиваєте його один раз, далі працюєте з'
+  match: Ви\s+прошиваєте\s+його\s+один
+  status: verbatim
+  source: https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
+  quote: 'REPL (Python prompt) over UART0 and/or the integrated USB peripheral
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: MicroPython provides interactive console (REPL) for immediate code execution
 - nazva: 'T-14-015: Частина периферії доступна частково.'
   zbih: Частина\s+периферії\s+доступна\s+частково\.
   klas: A
@@ -31,6 +47,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: MicroPython supports specific peripherals but not all hardware features are available
+  title: 'T-14-015: Частина периферії доступна частково.'
+  match: Частина\s+периферії\s+доступна\s+частково\.
+  status: verbatim
+  source: https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
+  quote: 'The machine module with GPIO, UART, SPI, software I2C, ADC, DAC, PWM, TouchPad,
+    WDT and Timer.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: MicroPython supports specific peripherals but not all hardware features are available
 - nazva: 'T-14-071: **Розвідка заліза** — MicroPython у консолі: чи відповідає'
   zbih: \*\*Розвідка\s+заліза\*\*\s+—\s+MicroPython
   klas: A
@@ -46,4 +74,20 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: MicroPython REPL з auto-completion дозволяє дослідити доступні модулі; з машинними
+    модулями можна проверити і2ц адреси та параметри датчиків
+  title: 'T-14-071: **Розвідка заліза** — MicroPython у консолі: чи відповідає'
+  match: \*\*Розвідка\s+заліза\*\*\s+—\s+MicroPython
+  status: verbatim
+  source: https://raw.githubusercontent.com/micropython/micropython/master/docs/reference/repl.rst
+  quote: 'While typing a command at the REPL, if the line typed so far corresponds to
+
+    the beginning of the name of something, then pressing TAB will show
+
+    possible things that could be entered.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: MicroPython REPL з auto-completion дозволяє дослідити доступні модулі; з машинними
     модулями можна проверити і2ц адреси та параметри датчиків

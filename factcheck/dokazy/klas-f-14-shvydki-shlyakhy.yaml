@@ -8,6 +8,7 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
 - nazva: 'T-14-053: Треба писати код · MicroPython → так, Python'
   zbih: Треба\s+писати\s+код\s+·\s+MicroPython
   klas: A
@@ -19,4 +20,16 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: 'Self-evident: MicroPython IS Python implementation; code must be written in Python
+    language by definition.'
+  title: 'T-14-053: Треба писати код · MicroPython → так, Python'
+  match: Треба\s+писати\s+код\s+·\s+MicroPython
+  status: verbatim
+  source: https://raw.githubusercontent.com/micropython/micropython/master/README.md
+  quote: 'MicroPython implements the entire Python 3.4 syntax
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: 'Self-evident: MicroPython IS Python implementation; code must be written in Python
     language by definition.'

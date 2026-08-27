@@ -1,3 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: '0x1: Що сталося → подано живлення або EN'
   zbih: '`0x1`.*Що сталося.*подано живлення'
   klas: A
@@ -6,9 +25,20 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: Коментар enum'у переводиться як «скидання від подачі напруги на Vbat». EN (enable) — пін вмикання
-    чипа, без якого скидання неможливе. Книга інтерпретує це як «подано живлення або EN», що відповідає
-    суті Vbat reset.
+  notatka: Коментар enum'у переводиться як «скидання від подачі напруги на Vbat». EN (enable)
+    — пін вмикання чипа, без якого скидання неможливе. Книга інтерпретує це як «подано живлення
+    або EN», що відповідає суті Vbat reset.
+  title: '0x1: Що сталося → подано живлення або EN'
+  match: '`0x1`.*Що сталося.*подано живлення'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Коментар enum'у переводиться як «скидання від подачі напруги на Vbat». EN (enable)
+    — пін вмикання чипа, без якого скидання неможливе. Книга інтерпретує це як «подано живлення
+    або EN», що відповідає суті Vbat reset.
 - nazva: '0x1: Що робити → норма'
   zbih: '`0x1`.*Що робити.*норма'
   klas: B
@@ -17,8 +47,18 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: Скидання при вмиканні (POWERON_RESET) — нормальний сценарій. Не помилка, не проблема. Книга
-    правильно називає це нормою.
+  notatka: Скидання при вмиканні (POWERON_RESET) — нормальний сценарій. Не помилка, не проблема.
+    Книга правильно називає це нормою.
+  title: '0x1: Що робити → норма'
+  match: '`0x1`.*Що робити.*норма'
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'POWERON_RESET          =  1,    /**<1, Vbat power on reset*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Скидання при вмиканні (POWERON_RESET) — нормальний сценарій. Не помилка, не проблема.
+    Книга правильно називає це нормою.
 - nazva: '0x3: Назва → SW_RESET'
   zbih: '`0x3`.*Назва.*SW_RESET'
   klas: A
@@ -28,6 +68,15 @@
     '
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: 'Пряма відповідність: 0x3 = SW_RESET. Неме розходження між книгою й enum''ом.'
+  title: '0x3: Назва → SW_RESET'
+  match: '`0x3`.*Назва.*SW_RESET'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'SW_RESET               =  3,    /**<3, Software reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Пряма відповідність: 0x3 = SW_RESET. Неме розходження між книгою й enum''ом.'
 - nazva: '0x3: Що робити → норма, якщо ваша'
   zbih: '`0x3`.*Що робити.*норма, якщо'
   klas: B
@@ -36,9 +85,20 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: Програмне скидання — нормально, якщо ви його викликали (esp_restart()). Якщо ви його не викликали,
-    то причина невідома. Книга коректно застерігає слід «якщо ваша» (тобто якщо код був), що надає логічне
-    припущення.
+  notatka: Програмне скидання — нормально, якщо ви його викликали (esp_restart()). Якщо ви
+    його не викликали, то причина невідома. Книга коректно застерігає слід «якщо ваша» (тобто
+    якщо код був), що надає логічне припущення.
+  title: '0x3: Що робити → норма, якщо ваша'
+  match: '`0x3`.*Що робити.*норма, якщо'
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'SW_RESET               =  3,    /**<3, Software reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Програмне скидання — нормально, якщо ви його викликали (esp_restart()). Якщо ви його
+    не викликали, то причина невідома. Книга коректно застерігає слід «якщо ваша» (тобто якщо
+    код був), що надає логічне припущення.
 - nazva: '0x4: Назва → OWDT_RESET'
   zbih: '`0x4`.*Назва.*OWDT_RESET'
   klas: A
@@ -47,7 +107,17 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Пряма відповідність: 0x4 = OWDT_RESET. Коментар вказує на legacy (застарілість) watchdog''а,
+  notatka: 'Пряма відповідність: 0x4 = OWDT_RESET. Коментар вказує на legacy (застарілість)
+    watchdog''а, що добре корелює з наступним рядком про застарілість.'
+  title: '0x4: Назва → OWDT_RESET'
+  match: '`0x4`.*Назва.*OWDT_RESET'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Пряма відповідність: 0x4 = OWDT_RESET. Коментар вказує на legacy (застарілість) watchdog''а,
     що добре корелює з наступним рядком про застарілість.'
 - nazva: '0x4: Що сталося → застарілий watchdog'
   zbih: '`0x4`.*Що сталося.*застарілий'
@@ -57,8 +127,18 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: Слово «Legacy» в коментарі enum'у переводиться як «застарілий». Книга дослівно передає цей
-    сенс.
+  notatka: Слово «Legacy» в коментарі enum'у переводиться як «застарілий». Книга дослівно
+    передає цей сенс.
+  title: '0x4: Що сталося → застарілий watchdog'
+  match: '`0x4`.*Що сталося.*застарілий'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Слово «Legacy» в коментарі enum'у переводиться як «застарілий». Книга дослівно передає
+    цей сенс.
 - nazva: '0x4: Що робити → рідко'
   zbih: '`0x4`.*Що робити.*рідко'
   klas: B
@@ -67,8 +147,18 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: Застарілий компонент використовується рідко в новому коді. Випливає однозначно з позначки Legacy
-    в enum'і.
+  notatka: Застарілий компонент використовується рідко в новому коді. Випливає однозначно
+    з позначки Legacy в enum'і.
+  title: '0x4: Що робити → рідко'
+  match: '`0x4`.*Що робити.*рідко'
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'OWDT_RESET             =  4,    /**<4, Legacy watch dog reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Застарілий компонент використовується рідко в новому коді. Випливає однозначно з позначки
+    Legacy в enum'і.
 - nazva: '0x5: Назва → DEEPSLEEP_RESET'
   zbih: '`0x5`.*Назва.*DEEPSLEEP_RESET'
   klas: A
@@ -78,6 +168,15 @@
     '
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: 'Пряма відповідність: 0x5 = DEEPSLEEP_RESET. Коментар згадує Deep Sleep.'
+  title: '0x5: Назва → DEEPSLEEP_RESET'
+  match: '`0x5`.*Назва.*DEEPSLEEP_RESET'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Пряма відповідність: 0x5 = DEEPSLEEP_RESET. Коментар згадує Deep Sleep.'
 - nazva: '0x5: Що сталося → прокинувся з deep sleep'
   zbih: '`0x5`.*Що сталося.*прокинувся'
   klas: A
@@ -86,8 +185,18 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: Коментар DEEPSLEEP_RESET говорить про Deep Sleep. Прокинення (wake-up) — це сенс скидання при
-    виході з deep sleep режиму.
+  notatka: Коментар DEEPSLEEP_RESET говорить про Deep Sleep. Прокинення (wake-up) — це сенс
+    скидання при виході з deep sleep режиму.
+  title: '0x5: Що сталося → прокинувся з deep sleep'
+  match: '`0x5`.*Що сталося.*прокинувся'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Коментар DEEPSLEEP_RESET говорить про Deep Sleep. Прокинення (wake-up) — це сенс скидання
+    при виході з deep sleep режиму.
 - nazva: '0x5: Що робити → норма'
   zbih: '`0x5`.*Що робити.*норма'
   klas: B
@@ -97,6 +206,15 @@
     '
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: Скидання при прокинуванні з deep sleep — нормальна операція, не помилка.
+  title: '0x5: Що робити → норма'
+  match: '`0x5`.*Що робити.*норма'
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'DEEPSLEEP_RESET        =  5,    /**<3, Deep Sleep reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Скидання при прокинуванні з deep sleep — нормальна операція, не помилка.
 - nazva: '0x6: Назва → SDIO_RESET'
   zbih: '`0x6`.*Назва.*SDIO_RESET'
   klas: A
@@ -106,6 +224,15 @@
     '
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: 'Пряма відповідність: 0x6 = SDIO_RESET.'
+  title: '0x6: Назва → SDIO_RESET'
+  match: '`0x6`.*Назва.*SDIO_RESET'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Пряма відповідність: 0x6 = SDIO_RESET.'
 - nazva: '0x6: Що сталося → скидання модулем SLC'
   zbih: '`0x6`.*Що сталося.*SLC'
   klas: A
@@ -114,8 +241,18 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: Коментар enum'у прямо говорить «Reset by SLC module». Книга переводить як «скидання модулем
-    SLC», що дослівно.
+  notatka: Коментар enum'у прямо говорить «Reset by SLC module». Книга переводить як «скидання
+    модулем SLC», що дослівно.
+  title: '0x6: Що сталося → скидання модулем SLC'
+  match: '`0x6`.*Що сталося.*SLC'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: Коментар enum'у прямо говорить «Reset by SLC module». Книга переводить як «скидання
+    модулем SLC», що дослівно.
 - nazva: '0x6: Що робити → рідко'
   zbih: '`0x6`.*Що робити.*рідко'
   klas: B
@@ -124,7 +261,18 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: SDIO (SD Input/Output) — периферійне обладнання. Скидання ним рідкісне в типовому застосуванні.
+  notatka: SDIO (SD Input/Output) — периферійне обладнання. Скидання ним рідкісне в типовому
+    застосуванні.
+  title: '0x6: Що робити → рідко'
+  match: '`0x6`.*Що робити.*рідко'
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'SDIO_RESET             =  6,    /**<6, Reset by SLC module, reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: SDIO (SD Input/Output) — периферійне обладнання. Скидання ним рідкісне в типовому
+    застосуванні.
 - nazva: '0x7: Що сталося → watchdog таймера 0'
   zbih: '`0x7`.*Що сталося.*таймера 0'
   klas: A
@@ -133,8 +281,18 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Коментар: «Timer Group0 Watch dog reset». TG0 = Timer Group 0. Книга інтерпретує як «watchdog
-    таймера 0», що дослівно відповідає enum''у.'
+  notatka: 'Коментар: «Timer Group0 Watch dog reset». TG0 = Timer Group 0. Книга інтерпретує
+    як «watchdog таймера 0», що дослівно відповідає enum''у.'
+  title: '0x7: Що сталося → watchdog таймера 0'
+  match: '`0x7`.*Що сталося.*таймера 0'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'TG0WDT_SYS_RESET       =  7,    /**<7, Timer Group0 Watch dog reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Коментар: «Timer Group0 Watch dog reset». TG0 = Timer Group 0. Книга інтерпретує
+    як «watchdog таймера 0», що дослівно відповідає enum''у.'
 - nazva: '0x8: Назва → TG1WDT_SYS_RESET'
   zbih: '`0x8`.*Назва.*TG1WDT_SYS_RESET'
   klas: A
@@ -144,6 +302,15 @@
     '
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: 'Пряма відповідність: 0x8 = TG1WDT_SYS_RESET. TG1 = Timer Group 1.'
+  title: '0x8: Назва → TG1WDT_SYS_RESET'
+  match: '`0x8`.*Назва.*TG1WDT_SYS_RESET'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Пряма відповідність: 0x8 = TG1WDT_SYS_RESET. TG1 = Timer Group 1.'
 - nazva: '0x8: Що сталося → watchdog таймера 1'
   zbih: '`0x8`.*Що сталося.*таймера 1'
   klas: A
@@ -152,7 +319,18 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Коментар: «Timer Group1 Watch dog reset». Книга інтерпретує як «watchdog таймера 1», дослівно.'
+  notatka: 'Коментар: «Timer Group1 Watch dog reset». Книга інтерпретує як «watchdog таймера
+    1», дослівно.'
+  title: '0x8: Що сталося → watchdog таймера 1'
+  match: '`0x8`.*Що сталося.*таймера 1'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'TG1WDT_SYS_RESET       =  8,    /**<8, Timer Group1 Watch dog reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Коментар: «Timer Group1 Watch dog reset». Книга інтерпретує як «watchdog таймера
+    1», дослівно.'
 - nazva: '0x9: Назва → RTCWDT_SYS_RESET'
   zbih: '`0x9`.*Назва.*RTCWDT_SYS_RESET'
   klas: A
@@ -162,6 +340,15 @@
     '
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: 'Пряма відповідність: 0x9 = RTCWDT_SYS_RESET. RTC = Real Time Clock.'
+  title: '0x9: Назва → RTCWDT_SYS_RESET'
+  match: '`0x9`.*Назва.*RTCWDT_SYS_RESET'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Пряма відповідність: 0x9 = RTCWDT_SYS_RESET. RTC = Real Time Clock.'
 - nazva: '0x9: Що сталося → RTC watchdog'
   zbih: '`0x9`.*Що сталося.*RTC'
   klas: A
@@ -171,6 +358,15 @@
     '
   sposib: curl raw.githubusercontent, 2026-08-26
   notatka: 'Коментар: «RTC Watch dog Reset». Книга дослівно передає це як «RTC watchdog».'
+  title: '0x9: Що сталося → RTC watchdog'
+  match: '`0x9`.*Що сталося.*RTC'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'RTCWDT_SYS_RESET       =  9,    /**<9, RTC Watch dog Reset digital core*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Коментар: «RTC Watch dog Reset». Книга дослівно передає це як «RTC watchdog».'
 - nazva: '0xa: Назва → INTRUSION_RESET'
   zbih: '`0xa`.*Назва.*INTRUSION_RESET'
   klas: A
@@ -179,5 +375,15 @@
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Пряма відповідність: 0xa (10 в hex) = INTRUSION_RESET. У коментарі є typo (Instrusion замість
-    Intrusion), але назва enum''у чітка.'
+  notatka: 'Пряма відповідність: 0xa (10 в hex) = INTRUSION_RESET. У коментарі є typo (Instrusion
+    замість Intrusion), але назва enum''у чітка.'
+  title: '0xa: Назва → INTRUSION_RESET'
+  match: '`0xa`.*Назва.*INTRUSION_RESET'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+  quote: 'INTRUSION_RESET        = 10,    /**<10, Instrusion tested to reset CPU*/
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Пряма відповідність: 0xa (10 в hex) = INTRUSION_RESET. У коментарі є typo (Instrusion
+    замість Intrusion), але назва enum''у чітка.'

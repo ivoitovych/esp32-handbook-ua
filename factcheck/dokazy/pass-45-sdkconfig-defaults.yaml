@@ -34,20 +34,32 @@
 # «recommended», «may», «typically».
 
 - nazva: sdkconfig.defaults рекомендовано тримати в системі контролю версій
-  zbih: 'Саме він\s+має лежати в git'
+  zbih: Саме він\s+має лежати в git
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
-  cytata: |
-    It is recommended to commit sdkconfig.defaults for providing baseline configurations.
-  sposib: >-
-    `curl` на `raw.githubusercontent.com`, гілка `master`. Документ
-    отримано в цій сесії, витяг наведено дослівно. Другий шар зроблено
-    супровідником: витяг звірено з твердженням, і межу проведено.
-  notatka: >-
-    Підтверджує **позитивну** половину: `sdkconfig.defaults` тримати в
-    git рекомендовано джерелом. Заперечна половина («а не
-    `sdkconfig`») джерелом **не підтверджується**: там сказано
-    `may or may not be added`. Це обґрунтована позиція автора, і
-    наступний абзац книги називає причину — конфлікти при злитті.
-    Записано тут навмисно, щоб наступний прохід не порахував заборону
-    задокументованою.
+  cytata: 'It is recommended to commit sdkconfig.defaults for providing baseline configurations.
+
+    '
+  sposib: '`curl` на `raw.githubusercontent.com`, гілка `master`. Документ отримано в цій
+    сесії, витяг наведено дослівно. Другий шар зроблено супровідником: витяг звірено з твердженням,
+    і межу проведено.'
+  notatka: 'Підтверджує **позитивну** половину: `sdkconfig.defaults` тримати в git рекомендовано
+    джерелом. Заперечна половина («а не `sdkconfig`») джерелом **не підтверджується**: там
+    сказано `may or may not be added`. Це обґрунтована позиція автора, і наступний абзац книги
+    називає причину — конфлікти при злитті. Записано тут навмисно, щоб наступний прохід не
+    порахував заборону задокументованою.'
+  title: sdkconfig.defaults рекомендовано тримати в системі контролю версій
+  match: Саме він\s+має лежати в git
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
+  quote: 'It is recommended to commit sdkconfig.defaults for providing baseline configurations.
+
+    '
+  method: '`curl` на `raw.githubusercontent.com`, гілка `master`. Документ отримано в цій
+    сесії, витяг наведено дослівно. Другий шар зроблено супровідником: витяг звірено з твердженням,
+    і межу проведено.'
+  note: 'Підтверджує **позитивну** половину: `sdkconfig.defaults` тримати в git рекомендовано
+    джерелом. Заперечна половина («а не `sdkconfig`») джерелом **не підтверджується**: там
+    сказано `may or may not be added`. Це обґрунтована позиція автора, і наступний абзац книги
+    називає причину — конфлікти при злитті. Записано тут навмисно, щоб наступний прохід не
+    порахував заборону задокументованою.'

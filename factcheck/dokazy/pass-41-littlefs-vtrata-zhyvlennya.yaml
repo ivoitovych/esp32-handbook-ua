@@ -23,17 +23,28 @@
 #    файлі й виявився прямішим за той, що навів помічник.
 
 - nazva: Оновлення файлу не фіксується до sync або close
-  zbih: 'Жодна файлова система на вбудованому флеші'
+  zbih: Жодна файлова система на вбудованому флеші
   klas: A
   dzherelo: https://raw.githubusercontent.com/littlefs-project/littlefs/master/README.md
-  cytata: |
-    file updates are not actually committed to the filesystem until sync or close is called on the file
-  sposib: >-
-    `curl` на `raw.githubusercontent.com`, гілка `master`, рядок 113.
-    Документ отримано в цій сесії, витяг наведено дослівно — звідси
-    клас `A`.
-  notatka: >-
-    Підтверджує твердження книги про найобережнішу з поширених ФС:
-    littlefs дає атомарність операцій і відкат до останнього справного
-    стану, але сам незавершений запис не зберігає. Формулювання в
-    книзі лишено без змін.
+  cytata: 'file updates are not actually committed to the filesystem until sync or close is
+    called on the file
+
+    '
+  sposib: '`curl` на `raw.githubusercontent.com`, гілка `master`, рядок 113. Документ отримано
+    в цій сесії, витяг наведено дослівно — звідси клас `A`.'
+  notatka: 'Підтверджує твердження книги про найобережнішу з поширених ФС: littlefs дає атомарність
+    операцій і відкат до останнього справного стану, але сам незавершений запис не зберігає.
+    Формулювання в книзі лишено без змін.'
+  title: Оновлення файлу не фіксується до sync або close
+  match: Жодна файлова система на вбудованому флеші
+  status: verbatim
+  source: https://raw.githubusercontent.com/littlefs-project/littlefs/master/README.md
+  quote: 'file updates are not actually committed to the filesystem until sync or close is
+    called on the file
+
+    '
+  method: '`curl` на `raw.githubusercontent.com`, гілка `master`, рядок 113. Документ отримано
+    в цій сесії, витяг наведено дослівно — звідси клас `A`.'
+  note: 'Підтверджує твердження книги про найобережнішу з поширених ФС: littlefs дає атомарність
+    операцій і відкат до останнього справного стану, але сам незавершений запис не зберігає.
+    Формулювання в книзі лишено без змін.'

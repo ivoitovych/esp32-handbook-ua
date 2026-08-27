@@ -9,25 +9,6 @@
 # коду й не діставали до згадок у прозі, комірках і чеклістах. Це той
 # самий важіль, що в проході 22, тільки застосований суцільно.
 
-- nazva: Іменування й версії esptool — version, esptool.py, дефіси проти підкреслень
-  zbih: 'esptool version`|esptool\.py version`|виклик · v[45] →|Версія `esptool` залежить не від вашого вибору|у v4 інакшого імені немає'
-  klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
-    та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
-  cytata: |
-    (перехід на v5)
-    The `esptool.py` name is kept as an alias; the recommended entry point
-    is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
-    `erase-flash`, `merge-bin`. The underscore forms are deprecated and
-    print a warning.
-  sposib: curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
-  notatka: >-
-    Не нова звірка. Іменування перевірено в проході 9, несиметричність
-    міграції — у проході 6 (і записана в реєстр спростованого). Тут лише
-    розширено досяжність на прозу й таблиці: «Перевірити своє: `esptool
-    version`» у картках К5, К10 і додатку C, рядки таблиці «виклик · v4 /
-    v5», а також попередження, що в v4 імені `esptool` без `.py` немає.
 
 # ⚠ ПОМИЛКА ЦЬОГО ДОКАЗУ — виявлена в проході 36, лишена як зразок.
 #
@@ -45,143 +26,287 @@
 # зразка виводу.
 #
 # Взірець звужено до `flash-id` — половини, яка лишилася правдивою.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: Іменування й версії esptool — version, esptool.py, дефіси проти підкреслень
+  zbih: esptool version`|esptool\.py version`|виклик · v[45] →|Версія `esptool` залежить не
+    від вашого вибору|у v4 інакшого імені немає
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
+    та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+  cytata: '(перехід на v5)
+
+    The `esptool.py` name is kept as an alias; the recommended entry point
+
+    is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
+
+    `erase-flash`, `merge-bin`. The underscore forms are deprecated and
+
+    print a warning.
+
+    '
+  sposib: curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
+  notatka: 'Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції —
+    у проході 6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу
+    й таблиці: «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці
+    «виклик · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.'
+  title: Іменування й версії esptool — version, esptool.py, дефіси проти підкреслень
+  match: esptool version`|esptool\.py version`|виклик · v[45] →|Версія `esptool` залежить
+    не від вашого вибору|у v4 інакшого імені немає
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
+    та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
+  quote: '(перехід на v5)
+
+    The `esptool.py` name is kept as an alias; the recommended entry point
+
+    is `esptool`. Command names use dashes: `write-flash`, `read-flash`,
+
+    `erase-flash`, `merge-bin`. The underscore forms are deprecated and
+
+    print a warning.
+
+    '
+  method: curl raw.githubusercontent (повторно, проходи 9 і 15), 2026-08-26
+  note: 'Не нова звірка. Іменування перевірено в проході 9, несиметричність міграції — у проході
+    6 (і записана в реєстр спростованого). Тут лише розширено досяжність на прозу й таблиці:
+    «Перевірити своє: `esptool version`» у картках К5, К10 і додатку C, рядки таблиці «виклик
+    · v4 / v5», а також попередження, що в v4 імені `esptool` без `.py` немає.'
 - nazva: flash-id як засіб упізнати перемаркований модуль
   zbih: '`flash-id` називає обсяг|`flash-id` показує 2 МБ'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
     та .../advanced-commands.rst
-  cytata: |
-    chip-id     Read Chip ID
+  cytata: 'chip-id     Read Chip ID
+
     flash-id    Read SPI flash manufacturer and device ID
 
+
     The flash-id command outputs the manufacturer and device ID of the
+
     flash chip, together with the detected flash size.
+
+    '
   sposib: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-  notatka: >-
-    `flash-id` існує і робить те, що книга обіцяє: друкує виробника,
-    ідентифікатор і **виявлений обсяг** флешу. Розширення досяжності на
-    розділ 08 («`flash-id` показує 2 МБ там, де за написом має бути 4»)
-    і на картку К1, де це крок тріажу.
+  notatka: '`flash-id` існує і робить те, що книга обіцяє: друкує виробника, ідентифікатор
+    і **виявлений обсяг** флешу. Розширення досяжності на розділ 08 («`flash-id` показує 2
+    МБ там, де за написом має бути 4») і на картку К1, де це крок тріажу.
 
-    Друга половина доказу — про `chip-id` — виявилася хибною; див.
-    примітку над записом і `pass-36-chip-id.yaml`.
+    Друга половина доказу — про `chip-id` — виявилася хибною; див. примітку над записом і
+    `pass-36-chip-id.yaml`.'
+  title: flash-id як засіб упізнати перемаркований модуль
+  match: '`flash-id` називає обсяг|`flash-id` показує 2 МБ'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+    та .../advanced-commands.rst
+  quote: 'chip-id     Read Chip ID
 
+    flash-id    Read SPI flash manufacturer and device ID
+
+
+    The flash-id command outputs the manufacturer and device ID of the
+
+    flash chip, together with the detected flash size.
+
+    '
+  method: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  note: '`flash-id` існує і робить те, що книга обіцяє: друкує виробника, ідентифікатор і
+    **виявлений обсяг** флешу. Розширення досяжності на розділ 08 («`flash-id` показує 2 МБ
+    там, де за написом має бути 4») і на картку К1, де це крок тріажу.
+
+    Друга половина доказу — про `chip-id` — виявилася хибною; див. примітку над записом і
+    `pass-36-chip-id.yaml`.'
 - nazva: idf.py monitor — вихід Ctrl+], скидання через Ctrl+T
-  zbih: 'idf\.py monitor` · Вихід → `Ctrl\+\]`|розшифровує backtrace; скидання `Ctrl\+T`, `Ctrl\+R`|вийти — `Ctrl\+\]`|робить це автоматично, якщо запущений'
+  zbih: idf\.py monitor` · Вихід → `Ctrl\+\]`|розшифровує backtrace; скидання `Ctrl\+T`, `Ctrl\+R`|вийти
+    — `Ctrl\+\]`|робить це автоматично, якщо запущений
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
-  cytata: |
-    * - Ctrl + ]
-      - Exit the program
-    * - Ctrl + T
-      - Menu escape key
-      - Press and follow it by one of the keys given below.
-    * - * Ctrl + R
-      - Reset target board via RTS
-      - Reset the target board and re-starts the application via the RTS
-        line (if connected).
-    * - * Ctrl + P
-      - Reset target into bootloader to pause app via RTS and DTR lines
-
-    If an ESP-IDF app crashes and panics, a register dump and backtrace
-    are produced… IDF Monitor … looks up each address in the ELF file.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: "* - Ctrl + ]\n  - Exit the program\n* - Ctrl + T\n  - Menu escape key\n  - Press\
+    \ and follow it by one of the keys given below.\n* - * Ctrl + R\n  - Reset target board\
+    \ via RTS\n  - Reset the target board and re-starts the application via the RTS\n    line\
+    \ (if connected).\n* - * Ctrl + P\n  - Reset target into bootloader to pause app via RTS\
+    \ and DTR lines\n\nIf an ESP-IDF app crashes and panics, a register dump and backtrace\n\
+    are produced… IDF Monitor … looks up each address in the ELF file.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Звірено дослівно, розбіжностей немає — включно з тонкістю, яку легко
-    записати неправильно: `Ctrl+R` не самостійна комбінація, а **друга**
-    клавіша після `Ctrl+T`. Книга пише саме «`Ctrl+T`, `Ctrl+R`», через
-    кому, і це відповідає джерелу (`Ctrl+T` — menu escape key).
+  notatka: 'Звірено дослівно, розбіжностей немає — включно з тонкістю, яку легко записати
+    неправильно: `Ctrl+R` не самостійна комбінація, а **друга** клавіша після `Ctrl+T`. Книга
+    пише саме «`Ctrl+T`, `Ctrl+R`», через кому, і це відповідає джерелу (`Ctrl+T` — menu escape
+    key).
 
-    Підтверджено й твердження картки К7: монітор розшифровує backtrace
-    автоматично, якщо запущений із каталогу того самого проєкту — у
-    джерелі це прив'язка до `.elf` того збирання.
+    Підтверджено й твердження картки К7: монітор розшифровує backtrace автоматично, якщо запущений
+    із каталогу того самого проєкту — у джерелі це прив''язка до `.elf` того збирання.'
+  title: idf.py monitor — вихід Ctrl+], скидання через Ctrl+T
+  match: idf\.py monitor` · Вихід → `Ctrl\+\]`|розшифровує backtrace; скидання `Ctrl\+T`,
+    `Ctrl\+R`|вийти — `Ctrl\+\]`|робить це автоматично, якщо запущений
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
+  quote: "* - Ctrl + ]\n  - Exit the program\n* - Ctrl + T\n  - Menu escape key\n  - Press\
+    \ and follow it by one of the keys given below.\n* - * Ctrl + R\n  - Reset target board\
+    \ via RTS\n  - Reset the target board and re-starts the application via the RTS\n    line\
+    \ (if connected).\n* - * Ctrl + P\n  - Reset target into bootloader to pause app via RTS\
+    \ and DTR lines\n\nIf an ESP-IDF app crashes and panics, a register dump and backtrace\n\
+    are produced… IDF Monitor … looks up each address in the ELF file.\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Звірено дослівно, розбіжностей немає — включно з тонкістю, яку легко записати неправильно:
+    `Ctrl+R` не самостійна комбінація, а **друга** клавіша після `Ctrl+T`. Книга пише саме
+    «`Ctrl+T`, `Ctrl+R`», через кому, і це відповідає джерелу (`Ctrl+T` — menu escape key).
 
+    Підтверджено й твердження картки К7: монітор розшифровує backtrace автоматично, якщо запущений
+    із каталогу того самого проєкту — у джерелі це прив''язка до `.elf` того збирання.'
 - nazva: espefuse палить в один бік; остання перепона — слово BURN
-  zbih: 'записує біти лише в один бік|назад ніколи|espefuse burn-\*`|набрати слово `BURN`|--do-not-confirm'
+  zbih: записує біти лише в один бік|назад ніколи|espefuse burn-\*`|набрати слово `BURN`|--do-not-confirm
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
-  cytata: |
-    ``espefuse`` is a tool for communicating with Espressif chips for the
-    purpose of reading/writing ("burning") the one-time-programmable
-    eFuses. Burning occurs only in one direction from 0 to 1 (never
-    cleared 1->0).
-
-    .. warning::
-        Because eFuse is one-time-programmable, it is possible to
-        permanently damage or "brick" your {IDF_TARGET_NAME} using this
-        tool. Use it with great care.
-
-    - ``--do-not-confirm`` - Do not pause for confirmation before
-      permanently writing eFuses. Use with caution. If this option is not
-      used, a manual confirmation step is required, you need to enter the
-      word ``BURN`` to continue burning.
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+  cytata: "``espefuse`` is a tool for communicating with Espressif chips for the\npurpose\
+    \ of reading/writing (\"burning\") the one-time-programmable\neFuses. Burning occurs only\
+    \ in one direction from 0 to 1 (never\ncleared 1->0).\n\n.. warning::\n    Because eFuse\
+    \ is one-time-programmable, it is possible to\n    permanently damage or \"brick\" your\
+    \ {IDF_TARGET_NAME} using this\n    tool. Use it with great care.\n\n- ``--do-not-confirm``\
+    \ - Do not pause for confirmation before\n  permanently writing eFuses. Use with caution.\
+    \ If this option is not\n  used, a manual confirmation step is required, you need to enter\
+    \ the\n  word ``BURN`` to continue burning.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Твердження картки К11 звірено, і формулювання уточнено за джерелом:
-    не просто «не скидаються назад», а «лише в один бік, з 0 у 1» — так
-    видно механізм, а не лише наслідок.
+  notatka: 'Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто
+    «не скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
 
-    Доповнення, якого не було ніде: **остання перепона — набрати слово
-    `BURN`**. Це важливо у двох напрямках. Читач, що злякався картки,
-    знає, що випадковим натисканням нічого не спалить. І він же знає, що
-    `--do-not-confirm` у чужому скрипті означає плату, яка згорить без
-    питання, — а саме чужі скрипти в цій книзі розбираються окремо.
+    Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо
+    у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не
+    спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить
+    без питання, — а саме чужі скрипти в цій книзі розбираються окремо.'
+  title: espefuse палить в один бік; остання перепона — слово BURN
+  match: записує біти лише в один бік|назад ніколи|espefuse burn-\*`|набрати слово `BURN`|--do-not-confirm
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/index.rst
+  quote: "``espefuse`` is a tool for communicating with Espressif chips for the\npurpose of\
+    \ reading/writing (\"burning\") the one-time-programmable\neFuses. Burning occurs only\
+    \ in one direction from 0 to 1 (never\ncleared 1->0).\n\n.. warning::\n    Because eFuse\
+    \ is one-time-programmable, it is possible to\n    permanently damage or \"brick\" your\
+    \ {IDF_TARGET_NAME} using this\n    tool. Use it with great care.\n\n- ``--do-not-confirm``\
+    \ - Do not pause for confirmation before\n  permanently writing eFuses. Use with caution.\
+    \ If this option is not\n  used, a manual confirmation step is required, you need to enter\
+    \ the\n  word ``BURN`` to continue burning.\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Твердження картки К11 звірено, і формулювання уточнено за джерелом: не просто «не
+    скидаються назад», а «лише в один бік, з 0 у 1» — так видно механізм, а не лише наслідок.
 
+    Доповнення, якого не було ніде: **остання перепона — набрати слово `BURN`**. Це важливо
+    у двох напрямках. Читач, що злякався картки, знає, що випадковим натисканням нічого не
+    спалить. І він же знає, що `--do-not-confirm` у чужому скрипті означає плату, яка згорить
+    без питання, — а саме чужі скрипти в цій книзі розбираються окремо.'
 - nazva: erase-flash стирає весь чип, включно з NVS і калібруванням
-  zbih: '`erase-flash` знищує NVS|Після `erase-flash` або перепрошивки|Після `erase-flash` нічого немає|`erase-flash` — тільки після дампа|За адресою `0x8000` порожньо'
+  zbih: '`erase-flash` знищує NVS|Після `erase-flash` або перепрошивки|Після `erase-flash`
+    нічого немає|`erase-flash` — тільки після дампа|За адресою `0x8000` порожньо'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
-  cytata: |
-    Erase Flash: ``erase-flash`` & ``erase-region``
-
-    To erase the entire flash chip (all data replaced with 0xFF bytes):
-
-        esptool erase-flash
-
-    To erase a region of the flash, starting at address 0x20000 with
-    length 16 kB (0x4000 bytes):
-
-        esptool erase-region 0x20000 0x4000
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+  cytata: "Erase Flash: ``erase-flash`` & ``erase-region``\n\nTo erase the entire flash chip\
+    \ (all data replaced with 0xFF bytes):\n\n    esptool erase-flash\n\nTo erase a region\
+    \ of the flash, starting at address 0x20000 with\nlength 16 kB (0x4000 bytes):\n\n   \
+    \ esptool erase-region 0x20000 0x4000\n"
   sposib: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-  notatka: >-
-    «Весь чип, усе замінюється на `0xFF`» — цього досить, щоб твердження
-    книги випливало однозначно: NVS, `phy_init` і таблиця розділів лежать
-    у тому самому флеші, отже зникають разом з усім.
+  notatka: '«Весь чип, усе замінюється на `0xFF`» — цього досить, щоб твердження книги випливало
+    однозначно: NVS, `phy_init` і таблиця розділів лежать у тому самому флеші, отже зникають
+    разом з усім.
 
-    Звідси ж і симптом розділу 16 «за адресою `0x8000` порожньо після
-    `erase-flash` без наступної повної прошивки»: `0xFF` — це і є
-    порожньо, і бутлоадер не знаходить таблиці.
+    Звідси ж і симптом розділу 16 «за адресою `0x8000` порожньо після `erase-flash` без наступної
+    повної прошивки»: `0xFF` — це і є порожньо, і бутлоадер не знаходить таблиці.
 
-    Розширення досяжності на картки К2, К8, К11, К15 і розділ 20, де те
-    саме твердження живе в різних формах.
+    Розширення досяжності на картки К2, К8, К11, К15 і розділ 20, де те саме твердження живе
+    в різних формах.'
+  title: erase-flash стирає весь чип, включно з NVS і калібруванням
+  match: '`erase-flash` знищує NVS|Після `erase-flash` або перепрошивки|Після `erase-flash`
+    нічого немає|`erase-flash` — тільки після дампа|За адресою `0x8000` порожньо'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+  quote: "Erase Flash: ``erase-flash`` & ``erase-region``\n\nTo erase the entire flash chip\
+    \ (all data replaced with 0xFF bytes):\n\n    esptool erase-flash\n\nTo erase a region\
+    \ of the flash, starting at address 0x20000 with\nlength 16 kB (0x4000 bytes):\n\n   \
+    \ esptool erase-region 0x20000 0x4000\n"
+  method: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  note: '«Весь чип, усе замінюється на `0xFF`» — цього досить, щоб твердження книги випливало
+    однозначно: NVS, `phy_init` і таблиця розділів лежать у тому самому флеші, отже зникають
+    разом з усім.
 
+    Звідси ж і симптом розділу 16 «за адресою `0x8000` порожньо після `erase-flash` без наступної
+    повної прошивки»: `0xFF` — це і є порожньо, і бутлоадер не знаходить таблиці.
+
+    Розширення досяжності на картки К2, К8, К11, К15 і розділ 20, де те саме твердження живе
+    в різних формах.'
 - nazva: merge-bin дає один образ на адресу 0x0 незалежно від сімейства
-  zbih: 'зібраний `merge-bin` · [^→]+→ `0x0`|адреса завжди `0x0`, незалежно від сімейства|Зібрано \*\*один образ\*\* через `merge-bin`|Є лише `\.bin`-файли — `esptool --chip … merge-bin`'
+  zbih: зібраний `merge-bin` · [^→]+→ `0x0`|адреса завжди `0x0`, незалежно від сімейства|Зібрано
+    \*\*один образ\*\* через `merge-bin`|Є лише `\.bin`-файли — `esptool --chip … merge-bin`
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
     (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
-  cytata: |
-    The merge-bin command will merge multiple binary files (of any kind)
+  cytata: 'The merge-bin command will merge multiple binary files (of any kind)
+
     into a single file that can be flashed to a device later. Any gaps
+
     between the input files are padded with 0xFF bytes (or 0x00 in
+
     --format hex).
 
-    (idf-py.rst)
-    …create a single binary file ``merged-binary.[bin|hex]`` in the build
-    folder, which can then be flashed later.
-  sposib: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-  notatka: >-
-    Твердження книги випливає з механіки прямо: якщо злиття доповнює
-    проміжки до суцільного образу від нуля, то зсуви вже всередині файлу,
-    і прошивати його треба на `0x0` — на будь-якому чипі.
 
-    Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 →
-    `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча
-    сусідня таблиця для окремих файлів має три різні адреси. Ця пара
-    таблиць — головне, що картка К10 і додаток C мусять донести, і тепер
-    вона звірена в обох.
+    (idf-py.rst)
+
+    …create a single binary file ``merged-binary.[bin|hex]`` in the build
+
+    folder, which can then be flashed later.
+
+    '
+  sposib: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  notatka: 'Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного
+    образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому
+    чипі.
+
+    Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6,
+    H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має
+    три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести,
+    і тепер вона звірена в обох.'
+  title: merge-bin дає один образ на адресу 0x0 незалежно від сімейства
+  match: зібраний `merge-bin` · [^→]+→ `0x0`|адреса завжди `0x0`, незалежно від сімейства|Зібрано
+    \*\*один образ\*\* через `merge-bin`|Є лише `\.bin`-файли — `esptool --chip … merge-bin`
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+    (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
+  quote: 'The merge-bin command will merge multiple binary files (of any kind)
+
+    into a single file that can be flashed to a device later. Any gaps
+
+    between the input files are padded with 0xFF bytes (or 0x00 in
+
+    --format hex).
+
+
+    (idf-py.rst)
+
+    …create a single binary file ``merged-binary.[bin|hex]`` in the build
+
+    folder, which can then be flashed later.
+
+    '
+  method: curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+  note: 'Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного
+    образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому
+    чипі.
+
+    Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6,
+    H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має
+    три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести,
+    і тепер вона звірена в обох.'

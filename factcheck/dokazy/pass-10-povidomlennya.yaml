@@ -11,210 +11,366 @@
 #
 # Прохід дав шість виправлень.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Формат паніки Guru Meditation і назви винятків
-  zbih: "Guru Meditation Error: Core|LoadProhibited|StoreProhibited|InstrFetchProhibited|IllegalInstruction|LoadStoreAlignment|IntegerDivideByZero|Exception was unhandled|Cache disabled but cached memory region accessed"
+  zbih: 'Guru Meditation Error: Core|LoadProhibited|StoreProhibited|InstrFetchProhibited|IllegalInstruction|LoadStoreAlignment|IntegerDivideByZero|Exception
+    was unhandled|Cache disabled but cached memory region accessed'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c
     та .../esp_system/port/arch/xtensa/panic_arch.c
-  cytata: |
-    (panic.c)
-    panic_print_str("Guru Meditation Error: Core ");
-    panic_print_dec(info->core);
-    panic_print_str(" panic'ed (");
-    panic_print_str(info->reason);
-    panic_print_str("). ");
-
-    (panic_arch.c)
-    static const char *reason[] = {
-        "IllegalInstruction", "Syscall", "InstructionFetchError", "LoadStoreError",
-        "Level1Interrupt", "Alloca", "IntegerDivideByZero", "PCValue",
-        "Privileged", "LoadStoreAlignment", …
-        "InstrFetchProhibited", …
-        "LoadProhibited", "StoreProhibited", …
-    };
-    info->description = "Exception was unhandled.";
-
-    static const char *pseudo_reason[] = { …
-        "Interrupt wdt timeout on CPU0",
-        "Interrupt wdt timeout on CPU1",
-        "Cache error", };
-    info->description = NULL;
-
-    panic_print_str("Cache disabled but cached memory region accessed");
+  cytata: "(panic.c)\npanic_print_str(\"Guru Meditation Error: Core \");\npanic_print_dec(info->core);\n\
+    panic_print_str(\" panic'ed (\");\npanic_print_str(info->reason);\npanic_print_str(\"\
+    ). \");\n\n(panic_arch.c)\nstatic const char *reason[] = {\n    \"IllegalInstruction\"\
+    , \"Syscall\", \"InstructionFetchError\", \"LoadStoreError\",\n    \"Level1Interrupt\"\
+    , \"Alloca\", \"IntegerDivideByZero\", \"PCValue\",\n    \"Privileged\", \"LoadStoreAlignment\"\
+    , …\n    \"InstrFetchProhibited\", …\n    \"LoadProhibited\", \"StoreProhibited\", …\n\
+    };\ninfo->description = \"Exception was unhandled.\";\n\nstatic const char *pseudo_reason[]\
+    \ = { …\n    \"Interrupt wdt timeout on CPU0\",\n    \"Interrupt wdt timeout on CPU1\"\
+    ,\n    \"Cache error\", };\ninfo->description = NULL;\n\npanic_print_str(\"Cache disabled\
+    \ but cached memory region accessed\");\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Нуль розбіжностей, і в тонкому місці. Книга друкує
-    `Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception
-    was unhandled.` — з крапкою й реченням у кінці, а
-    `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і
-    поводиться код: для звичайних винятків `description` виставлено, для
-    псевдопричин він `NULL`.
+  notatka: 'Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core
+    0 panic''ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці,
+    а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для
+    звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
 
-    Усі вісім назв винятків із таблиці додатка D є в масиві `reason`
-    дослівно. Повідомлення про кеш теж дослівне.
+    Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення
+    про кеш теж дослівне.'
+  title: Формат паніки Guru Meditation і назви винятків
+  match: 'Guru Meditation Error: Core|LoadProhibited|StoreProhibited|InstrFetchProhibited|IllegalInstruction|LoadStoreAlignment|IntegerDivideByZero|Exception
+    was unhandled|Cache disabled but cached memory region accessed'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c
+    та .../esp_system/port/arch/xtensa/panic_arch.c
+  quote: "(panic.c)\npanic_print_str(\"Guru Meditation Error: Core \");\npanic_print_dec(info->core);\n\
+    panic_print_str(\" panic'ed (\");\npanic_print_str(info->reason);\npanic_print_str(\"\
+    ). \");\n\n(panic_arch.c)\nstatic const char *reason[] = {\n    \"IllegalInstruction\"\
+    , \"Syscall\", \"InstructionFetchError\", \"LoadStoreError\",\n    \"Level1Interrupt\"\
+    , \"Alloca\", \"IntegerDivideByZero\", \"PCValue\",\n    \"Privileged\", \"LoadStoreAlignment\"\
+    , …\n    \"InstrFetchProhibited\", …\n    \"LoadProhibited\", \"StoreProhibited\", …\n\
+    };\ninfo->description = \"Exception was unhandled.\";\n\nstatic const char *pseudo_reason[]\
+    \ = { …\n    \"Interrupt wdt timeout on CPU0\",\n    \"Interrupt wdt timeout on CPU1\"\
+    ,\n    \"Cache error\", };\ninfo->description = NULL;\n\npanic_print_str(\"Cache disabled\
+    \ but cached memory region accessed\");\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Нуль розбіжностей, і в тонкому місці. Книга друкує `Guru Meditation Error: Core 0
+    panic''ed (LoadProhibited). Exception was unhandled.` — з крапкою й реченням у кінці,
+    а `… (Interrupt wdt timeout on CPU0)` — **без** нього. Саме так і поводиться код: для
+    звичайних винятків `description` виставлено, для псевдопричин він `NULL`.
 
+    Усі вісім назв винятків із таблиці додатка D є в масиві `reason` дослівно. Повідомлення
+    про кеш теж дослівне.'
 - nazva: Дамп Task WDT — два різні переліки
-  zbih: 'The following tasks/users|did not reset the watchdog in time|Tasks currently running|Переліків тут \*\*два|перший перелік|не встиг(ли)? погодувати'
+  zbih: The following tasks/users|did not reset the watchdog in time|Tasks currently running|Переліків
+    тут \*\*два|перший перелік|не встиг(ли)? погодувати
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
-  cytata: |
-    const char *caption = "Task watchdog got triggered. "
-                          "The following tasks/users did not reset the watchdog in time:";
-    …
-        ESP_EARLY_LOGE(TAG, " - %s%s", name, cpu);
-    …
-    ESP_EARLY_LOGE(TAG, "%s", DRAM_STR("Tasks currently running:"));
-    ESP_EARLY_LOGE(TAG, "CPU %d: %s", x, pcTaskGetName(...));
+  cytata: "const char *caption = \"Task watchdog got triggered. \"\n                     \
+    \ \"The following tasks/users did not reset the watchdog in time:\";\n…\n    ESP_EARLY_LOGE(TAG,\
+    \ \" - %s%s\", name, cpu);\n…\nESP_EARLY_LOGE(TAG, \"%s\", DRAM_STR(\"Tasks currently\
+    \ running:\"));\nESP_EARLY_LOGE(TAG, \"CPU %d: %s\", x, pcTaskGetName(...));\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Виправлення. Книга обрізала перший рядок на «Task watchdog got
-    triggered.» — а обрізане саме те речення, яке пояснює різницю між
-    двома переліками в дампі.
+  notatka: 'Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а
+    обрізане саме те речення, яке пояснює різницю між двома переліками в дампі.
 
-    Перший перелік — ті, хто **не встиг погодувати** watchdog; у
-    типовому випадку це `IDLE0`, тобто потерпілий. Другий,
-    `Tasks currently running:`, — те, що виконувалося в цю мить, і саме
-    там винуватець.
+    Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`,
+    тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить,
+    і саме там винуватець.
 
-    Книга цю різницю знала («рядок `Tasks currently running` називає
-    винуватця»), але друкувала лог, з якого її не видно. Тепер
-    надруковано повний рядок, а тлумачення винесено в блок уваги —
-    у розділі 26 і додатку D.
+    Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала
+    лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок
+    уваги — у розділі 26 і додатку D.
 
-    Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після
-    двокрапки тега, а книга друкувала один.
+    Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а
+    книга друкувала один.'
+  title: Дамп Task WDT — два різні переліки
+  match: The following tasks/users|did not reset the watchdog in time|Tasks currently running|Переліків
+    тут \*\*два|перший перелік|не встиг(ли)? погодувати
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+  quote: "const char *caption = \"Task watchdog got triggered. \"\n                      \"\
+    The following tasks/users did not reset the watchdog in time:\";\n…\n    ESP_EARLY_LOGE(TAG,\
+    \ \" - %s%s\", name, cpu);\n…\nESP_EARLY_LOGE(TAG, \"%s\", DRAM_STR(\"Tasks currently\
+    \ running:\"));\nESP_EARLY_LOGE(TAG, \"CPU %d: %s\", x, pcTaskGetName(...));\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Виправлення. Книга обрізала перший рядок на «Task watchdog got triggered.» — а обрізане
+    саме те речення, яке пояснює різницю між двома переліками в дампі.
 
+    Перший перелік — ті, хто **не встиг погодувати** watchdog; у типовому випадку це `IDLE0`,
+    тобто потерпілий. Другий, `Tasks currently running:`, — те, що виконувалося в цю мить,
+    і саме там винуватець.
+
+    Книга цю різницю знала («рядок `Tasks currently running` називає винуватця»), але друкувала
+    лог, з якого її не видно. Тепер надруковано повний рядок, а тлумачення винесено в блок
+    уваги — у розділі 26 і додатку D.
+
+    Заразом виправлено відступ: формат `" - %s%s"` дає два пробіли після двокрапки тега, а
+    книга друкувала один.'
 - nazva: Повідомлення бутлоадера про образ і розділи
-  zbih: 'has invalid magic byte|Factory app partition is not bootable|invalid magic number|Failed to verify partition table|ota data partition invalid|Image hash failed'
+  zbih: has invalid magic byte|Factory app partition is not bootable|invalid magic number|Failed
+    to verify partition table|ota data partition invalid|Image hash failed
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
-  cytata: |
-    FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)", src_addr);
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+  cytata: 'FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)",
+    src_addr);
+
     ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+
     ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+
     ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+
     ESP_LOGE(TAG, "Failed to verify partition table");
+
     ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+
+    '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Виправлення. П'ять із шести рядків книга подавала правильно, шостий —
-    `image has invalid SHA256` — не існує взагалі. Насправді ESP-IDF
-    друкує `Image hash failed - image is corrupt`.
+  notatka: 'Виправлення. П''ять із шести рядків книга подавала правильно, шостий — `image
+    has invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed -
+    image is corrupt`.
 
-    Це саме той випадок, заради якого прохід і робився: читач із
-    пошкодженим образом шукав у логу рядок, якого там ніколи не буде.
+    Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав
+    у логу рядок, якого там ніколи не буде.
 
-    Заразом рядки в таблиці додатка D доповнено до повного вигляду —
-    з `(nothing flashed here?)` і `falling back to factory`, — бо саме
-    хвіст рядка каже, що бутлоадер зробив далі.
+    Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)`
+    і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.'
+  title: Повідомлення бутлоадера про образ і розділи
+  match: has invalid magic byte|Factory app partition is not bootable|invalid magic number|Failed
+    to verify partition table|ota data partition invalid|Image hash failed
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader_support/src/{esp_image_format,bootloader_utility,flash_partitions}.c
+  quote: 'FAIL_LOAD("image at 0x%"PRIx32" has invalid magic byte (nothing flashed here?)",
+    src_addr);
 
+    ESP_LOGE(TAG, "Image hash failed - image is corrupt");
+
+    ESP_LOGE(TAG, "Factory app partition%s", not_bootable);   // " is not bootable"
+
+    ESP_LOGE(TAG, "partition %d invalid magic number 0x%x", num_parts, part->magic);
+
+    ESP_LOGE(TAG, "Failed to verify partition table");
+
+    ESP_LOGE(TAG, "ota data partition invalid, falling back to factory");
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Виправлення. П''ять із шести рядків книга подавала правильно, шостий — `image has
+    invalid SHA256` — не існує взагалі. Насправді ESP-IDF друкує `Image hash failed - image
+    is corrupt`.
+
+    Це саме той випадок, заради якого прохід і робився: читач із пошкодженим образом шукав
+    у логу рядок, якого там ніколи не буде.
+
+    Заразом рядки в таблиці додатка D доповнено до повного вигляду — з `(nothing flashed here?)`
+    і `falling back to factory`, — бо саме хвіст рядка каже, що бутлоадер зробив далі.'
 - nazva: Розбіжність обсягу флешу — два різні рядки й різні наслідки
-  zbih: 'Detected size|smaller than the size in the binary image header|Probe failed|Using the size in the binary image header|Реальний флеш \*\*менший\*\*'
+  zbih: Detected size|smaller than the size in the binary image header|Probe failed|Using
+    the size in the binary image header|Реальний флеш \*\*менший\*\*
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
-  cytata: |
-    ESP_EARLY_LOGE(TAG, "Detected size(%dk) smaller than the size in the binary image "
-                        "header(%dk). Probe failed.", default_chip.size/1024, legacy_chip->chip_size/1024);
-    ESP_EARLY_LOGW(TAG, "Detected size(%dk) larger than the size in the binary image "
-                        "header(%dk). Using the size in the binary image header.", …);
+  cytata: "ESP_EARLY_LOGE(TAG, \"Detected size(%dk) smaller than the size in the binary image\
+    \ \"\n                    \"header(%dk). Probe failed.\", default_chip.size/1024, legacy_chip->chip_size/1024);\n\
+    ESP_EARLY_LOGW(TAG, \"Detected size(%dk) larger than the size in the binary image \"\n\
+    \                    \"header(%dk). Using the size in the binary image header.\", …);\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Виправлення. Книга друкувала `Flash chip size mismatch` — рядка з
-    такою назвою в ESP-IDF немає ніде.
+  notatka: 'Виправлення. Книга друкувала `Flash chip size mismatch` — рядка з такою назвою
+    в ESP-IDF немає ніде.
 
-    Справжні рядки не лише інші, а ще й **два**, з протилежними
-    наслідками. Реальний флеш менший за налаштований — фатально, проба
-    зупиняється (`ESP_LOGE`). Більший — лише попередження (`ESP_LOGW`),
-    система працює, надлишок не використовується.
+    Справжні рядки не лише інші, а ще й **два**, з протилежними наслідками. Реальний флеш
+    менший за налаштований — фатально, проба зупиняється (`ESP_LOGE`). Більший — лише попередження
+    (`ESP_LOGW`), система працює, надлишок не використовується.
 
-    Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала
-    обидва випадки одним рядком і одним наслідком; тепер вони розділені.
+    Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала обидва випадки одним
+    рядком і одним наслідком; тепер вони розділені.'
+  title: Розбіжність обсягу флешу — два різні рядки й різні наслідки
+  match: Detected size|smaller than the size in the binary image header|Probe failed|Using
+    the size in the binary image header|Реальний флеш \*\*менший\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
+  quote: "ESP_EARLY_LOGE(TAG, \"Detected size(%dk) smaller than the size in the binary image\
+    \ \"\n                    \"header(%dk). Probe failed.\", default_chip.size/1024, legacy_chip->chip_size/1024);\n\
+    ESP_EARLY_LOGW(TAG, \"Detected size(%dk) larger than the size in the binary image \"\n\
+    \                    \"header(%dk). Using the size in the binary image header.\", …);\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Виправлення. Книга друкувала `Flash chip size mismatch` — рядка з такою назвою в
+    ESP-IDF немає ніде.
 
+    Справжні рядки не лише інші, а ще й **два**, з протилежними наслідками. Реальний флеш
+    менший за налаштований — фатально, проба зупиняється (`ESP_LOGE`). Більший — лише попередження
+    (`ESP_LOGW`), система працює, надлишок не використовується.
+
+    Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала обидва випадки одним
+    рядком і одним наслідком; тепер вони розділені.'
 - nazva: Помилки купи розрізняють бік переповнення
-  zbih: 'CORRUPT HEAP|Bad tail|Bad head|канарки|stack overflow in task X has been detected'
+  zbih: CORRUPT HEAP|Bad tail|Bad head|канарки|stack overflow in task X has been detected
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c
     та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
-  cytata: |
-    MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n", …);
-    MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n", …);
+  cytata: 'MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n",
+    …);
+
+    MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n",
+    …);
+
 
     #define ERR_STR1 "***ERROR*** A stack overflow in task "
+
     #define ERR_STR2 " has been detected."
+
+    '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Доповнення, і практично корисне. Книга мала один рядок
-    `CORRUPT HEAP`, тоді як купа каже, **з якого боку** писали повз:
-    `Bad tail` — за кінець блоку (класичне переповнення буфера),
-    `Bad head` — перед початком (від'ємний індекс, арифметика
-    покажчиків).
+  notatka: 'Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як
+    купа каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення
+    буфера), `Bad head` — перед початком (від''ємний індекс, арифметика покажчиків).
 
-    Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком
-    уваги разом із поясненням, що адреса в рядку — це адреса канарки,
-    тобто край блоку.
+    Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням,
+    що адреса в рядку — це адреса канарки, тобто край блоку.
 
-    Рядок про переповнення стека доповнено до повного:
-    `… has been detected.`
+    Рядок про переповнення стека доповнено до повного: `… has been detected.`'
+  title: Помилки купи розрізняють бік переповнення
+  match: CORRUPT HEAP|Bad tail|Bad head|канарки|stack overflow in task X has been detected
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/heap/multi_heap_poisoning.c
+    та .../freertos/FreeRTOS-Kernel/portable/xtensa/port.c
+  quote: 'MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad head at %p. Expected 0x%08x got 0x%08x\n",
+    …);
 
+    MULTI_HEAP_STDERR_PRINTF("CORRUPT HEAP: Bad tail at %p. Expected 0x%08x got 0x%08x\n",
+    …);
+
+
+    #define ERR_STR1 "***ERROR*** A stack overflow in task "
+
+    #define ERR_STR2 " has been detected."
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Доповнення, і практично корисне. Книга мала один рядок `CORRUPT HEAP`, тоді як купа
+    каже, **з якого боку** писали повз: `Bad tail` — за кінець блоку (класичне переповнення
+    буфера), `Bad head` — перед початком (від''ємний індекс, арифметика покажчиків).
+
+    Це звужує пошук удвічі й не коштує нічого. Додано в додаток D блоком уваги разом із поясненням,
+    що адреса в рядку — це адреса канарки, тобто край блоку.
+
+    Рядок про переповнення стека доповнено до повного: `… has been detected.`'
 - nazva: Тексти помилок esptool змінилися між версіями
-  zbih: 'No serial data received|Failed to start stub flasher|This chip is ESP32-S3, not ESP32|Wrong chip argument|MD5 of file does not match|Stub flasher has been disabled'
+  zbih: No serial data received|Failed to start stub flasher|This chip is ESP32-S3, not ESP32|Wrong
+    chip argument|MD5 of file does not match|Stub flasher has been disabled
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py
     та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
-  cytata: |
-    (v5 loader.py)
-    raise FatalError(f"Failed to connect to {self.CHIP_NAME}: {last_error}" …)
-    msg = ("Serial data stream stopped: Possible serial noise or corruption."
-           if successful_slip else "No serial data received.")
-    raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?")
-    raise FatalError("Failed to start stub flasher. There was no response.\n" …)
-    log.warn("Stub flasher has been disabled for compatibility, "
-             "set --no-stub to suppress this warning.")
-
-    (cmds.py)
-    raise FatalError("MD5 of file does not match data in flash!")
-
-    (v4.8.1 loader.py — для порівняння)
-    "This chip is %s not %s. Wrong --chip argument?"
-    "Failed to start stub. There was no response."
+  cytata: "(v5 loader.py)\nraise FatalError(f\"Failed to connect to {self.CHIP_NAME}: {last_error}\"\
+    \ …)\nmsg = (\"Serial data stream stopped: Possible serial noise or corruption.\"\n  \
+    \     if successful_slip else \"No serial data received.\")\nraise FatalError(f\"This\
+    \ chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?\")\nraise FatalError(\"\
+    Failed to start stub flasher. There was no response.\\n\" …)\nlog.warn(\"Stub flasher\
+    \ has been disabled for compatibility, \"\n         \"set --no-stub to suppress this warning.\"\
+    )\n\n(cmds.py)\nraise FatalError(\"MD5 of file does not match data in flash!\")\n\n(v4.8.1\
+    \ loader.py — для порівняння)\n\"This chip is %s not %s. Wrong --chip argument?\"\n\"\
+    Failed to start stub. There was no response.\"\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Чотири виправлення разом, і всі однакової природи: книга наводила
-    тексти esptool 3.x, які застаріли на дві мажорні версії.
+  notatka: 'Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool
+    3.x, які застаріли на дві мажорні версії.
 
-    `Timed out waiting for packet header` → `No serial data received.`
-    Це найчастіша помилка взагалі, і книга сама називає її найчастішою.
+    `Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка
+    взагалі, і книга сама називає її найчастішою.
 
-    `This chip is X not Y` → `This chip is X, not Y. Wrong chip
-    argument?` — з комою, якої не було, і без дефісів у `--chip`
-    (у v4 було `Wrong --chip argument?`).
+    `This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої
+    не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
 
-    `Stub is disabled` / `Failed to run stub` → таких рядків немає
-    зовсім; є `Failed to start stub flasher.` і окреме попередження
-    `Stub flasher has been disabled for compatibility…`, яке взагалі не
-    помилка.
+    `Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start
+    stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`,
+    яке взагалі не помилка.
 
-    `MD5 does not match` — теж не існує як рядок: у тексті
-    `MD5 of file does not match data in flash!` немає підрядка
-    `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено
-    в п'яти місцях книги.
+    `MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data
+    in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено
+    в п''яти місцях книги.
 
-    Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5
-    у командах, але тексти помилок лишалися від старішої версії. Тепер
-    там, де формулювання розійшлися помітно, названо обидва.
+    Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти
+    помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо
+    обидва.'
+  title: Тексти помилок esptool змінилися між версіями
+  match: No serial data received|Failed to start stub flasher|This chip is ESP32-S3, not ESP32|Wrong
+    chip argument|MD5 of file does not match|Stub flasher has been disabled
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/esptool/{loader,cmds}.py
+    та https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py
+  quote: "(v5 loader.py)\nraise FatalError(f\"Failed to connect to {self.CHIP_NAME}: {last_error}\"\
+    \ …)\nmsg = (\"Serial data stream stopped: Possible serial noise or corruption.\"\n  \
+    \     if successful_slip else \"No serial data received.\")\nraise FatalError(f\"This\
+    \ chip is {chip_type}, not {self.CHIP_NAME}. Wrong chip argument?\")\nraise FatalError(\"\
+    Failed to start stub flasher. There was no response.\\n\" …)\nlog.warn(\"Stub flasher\
+    \ has been disabled for compatibility, \"\n         \"set --no-stub to suppress this warning.\"\
+    )\n\n(cmds.py)\nraise FatalError(\"MD5 of file does not match data in flash!\")\n\n(v4.8.1\
+    \ loader.py — для порівняння)\n\"This chip is %s not %s. Wrong --chip argument?\"\n\"\
+    Failed to start stub. There was no response.\"\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Чотири виправлення разом, і всі однакової природи: книга наводила тексти esptool
+    3.x, які застаріли на дві мажорні версії.
 
+    `Timed out waiting for packet header` → `No serial data received.` Це найчастіша помилка
+    взагалі, і книга сама називає її найчастішою.
+
+    `This chip is X not Y` → `This chip is X, not Y. Wrong chip argument?` — з комою, якої
+    не було, і без дефісів у `--chip` (у v4 було `Wrong --chip argument?`).
+
+    `Stub is disabled` / `Failed to run stub` → таких рядків немає зовсім; є `Failed to start
+    stub flasher.` і окреме попередження `Stub flasher has been disabled for compatibility…`,
+    яке взагалі не помилка.
+
+    `MD5 does not match` — теж не існує як рядок: у тексті `MD5 of file does not match data
+    in flash!` немає підрядка `MD5 does not match`. Тобто пошук у логу давав порожньо. Виправлено
+    в п''яти місцях книги.
+
+    Висновок ширший за самі рядки: книга вже розрізняє синтаксис v4 і v5 у командах, але тексти
+    помилок лишалися від старішої версії. Тепер там, де формулювання розійшлися помітно, названо
+    обидва.'
 - nazva: Camera probe failed — повний вигляд рядка
-  zbih: 'Camera probe failed'
+  zbih: Camera probe failed
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c
-  cytata: |
-    ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
+  cytata: 'ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
+
+    '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Без виправлення: те, що друкує книга, — точний початок справжнього
-    рядка, тож пошук у логу спрацює. Зафіксовано повний вигляд, бо код
-    помилки в хвості рядка часто й називає причину.
+  notatka: 'Без виправлення: те, що друкує книга, — точний початок справжнього рядка, тож
+    пошук у логу спрацює. Зафіксовано повний вигляд, бо код помилки в хвості рядка часто й
+    називає причину.'
+  title: Camera probe failed — повний вигляд рядка
+  match: Camera probe failed
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c
+  quote: 'ESP_LOGE(TAG, "Camera probe failed with error 0x%x(%s)", err, esp_err_to_name(err));
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Без виправлення: те, що друкує книга, — точний початок справжнього рядка, тож пошук
+    у логу спрацює. Зафіксовано повний вигляд, бо код помилки в хвості рядка часто й називає
+    причину.'

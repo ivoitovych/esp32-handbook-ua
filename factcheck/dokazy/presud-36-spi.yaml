@@ -8,6 +8,7 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
 - nazva: 'T-36-062: Проміжного стану немає, і «майже рідний» набір пінів'
   zbih: Проміжного\s+стану\s+немає,\s+і
   klas: A
@@ -21,3 +22,15 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: Підтверджує, що 40 МГц є межею, на якій поведінка GPIO matrix стає еквівалентною
     IO_MUX
+  title: 'T-36-062: Проміжного стану немає, і «майже рідний» набір пінів'
+  match: Проміжного\s+стану\s+немає,\s+і
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst
+  quote: 'When an SPI Host is set to 40 MHz or lower frequencies, routing SPI pins via the
+    GPIO matrix will behave the same compared to routing them via IOMUX.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: Підтверджує, що 40 МГц є межею, на якій поведінка GPIO matrix стає еквівалентною IO_MUX

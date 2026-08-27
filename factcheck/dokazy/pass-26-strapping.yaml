@@ -7,152 +7,225 @@
 # Розбіжностей нуль. Але знайшлися три речі, яких у книзі не було ніде, і
 # всі три — з розряду «читач упреться в це на власній платі».
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Рівні strapping і недійсна комбінація — усі сімейства
-  zbih: '`GPIO2` низький або вільний|`GPIO46` низький або вільний|`GPIO8` \*\*високим\*\*|`GPIO8` = 0\s*\n?і `GPIO9` = 0 недійсна|другий пін ігнорується|Комбінація `GPIO8` = 0'
+  zbih: '`GPIO2` низький або вільний|`GPIO46` низький або вільний|`GPIO8` \*\*високим\*\*|`GPIO8`
+    = 0\s*\n?і `GPIO9` = 0 недійсна|другий пін ігнорується|Комбінація `GPIO8` = 0'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
-     esp32s2="GPIO0", esp32s3="GPIO0", …}
-    {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
-     esp32s2="GPIO46", esp32s3="GPIO46", …}
-
-    .. only:: esp32 or esp32s2 or esp32s3
-       {STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,
-       or driven Low, in order to enter the serial bootloader.
-
-    .. only:: esp32c3 or esp32c2 or esp32h2 or esp32c6 or …
-       {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
-       serial bootloader reliably. The strapping combination of
-       {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and
-       will trigger unexpected behavior.
-
-    In normal boot mode ({STRAP_BOOT_GPIO} high), {STRAP_BOOT_2_GPIO}
-    is ignored.
-
-    {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-    unconnected then it will pull high.
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: "{IDF_TARGET_STRAP_BOOT_GPIO:default=\"GPIO9\", esp32=\"GPIO0\",\n esp32s2=\"GPIO0\"\
+    , esp32s3=\"GPIO0\", …}\n{IDF_TARGET_STRAP_BOOT_2_GPIO:default=\"GPIO8\", esp32=\"GPIO2\"\
+    ,\n esp32s2=\"GPIO46\", esp32s3=\"GPIO46\", …}\n\n.. only:: esp32 or esp32s2 or esp32s3\n\
+    \   {STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,\n   or driven Low,\
+    \ in order to enter the serial bootloader.\n\n.. only:: esp32c3 or esp32c2 or esp32h2\
+    \ or esp32c6 or …\n   {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter\
+    \ the\n   serial bootloader reliably. The strapping combination of\n   {STRAP_BOOT_2_GPIO}\
+    \ = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and\n   will trigger unexpected behavior.\n\
+    \nIn normal boot mode ({STRAP_BOOT_GPIO} high), {STRAP_BOOT_2_GPIO}\nis ignored.\n\n{STRAP_BOOT_GPIO}\
+    \ has an internal pullup resistor, so if it is left\nunconnected then it will pull high.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Таблиця розділу 07 «Другий strapping-пін працює на S3 і C3 у
-    протилежні боки» звірена цілком, рядок за рядком, і збіглася вся —
-    включно з найтоншим: поняття «недійсна комбінація» існує лише для
-    RISC-V сімейств, а на classic і S3 неправильний рівень другого піна
-    просто не пускає в download mode.
+  notatka: 'Таблиця розділу 07 «Другий strapping-пін працює на S3 і C3 у протилежні боки»
+    звірена цілком, рядок за рядком, і збіглася вся — включно з найтоншим: поняття «недійсна
+    комбінація» існує лише для RISC-V сімейств, а на classic і S3 неправильний рівень другого
+    піна просто не пускає в download mode.
 
-    Директиви `.. only::` тут кращі за будь-який переказ: вони прямо
-    перелічують, до яких чипів яке правило належить, і книга поділила
-    сімейства саме так.
+    Директиви `.. only::` тут кращі за будь-який переказ: вони прямо перелічують, до яких
+    чипів яке правило належить, і книга поділила сімейства саме так.
 
-    Підтверджено й твердження «у звичайному режимі другий пін
-    ігнорується взагалі — на всіх сімействах»: у джерелі це окреме
-    речення, поза обома `.. only::`.
+    Підтверджено й твердження «у звичайному режимі другий пін ігнорується взагалі — на всіх
+    сімействах»: у джерелі це окреме речення, поза обома `.. only::`.'
+  title: Рівні strapping і недійсна комбінація — усі сімейства
+  match: '`GPIO2` низький або вільний|`GPIO46` низький або вільний|`GPIO8` \*\*високим\*\*|`GPIO8`
+    = 0\s*\n?і `GPIO9` = 0 недійсна|другий пін ігнорується|Комбінація `GPIO8` = 0'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: "{IDF_TARGET_STRAP_BOOT_GPIO:default=\"GPIO9\", esp32=\"GPIO0\",\n esp32s2=\"GPIO0\"\
+    , esp32s3=\"GPIO0\", …}\n{IDF_TARGET_STRAP_BOOT_2_GPIO:default=\"GPIO8\", esp32=\"GPIO2\"\
+    ,\n esp32s2=\"GPIO46\", esp32s3=\"GPIO46\", …}\n\n.. only:: esp32 or esp32s2 or esp32s3\n\
+    \   {STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,\n   or driven Low,\
+    \ in order to enter the serial bootloader.\n\n.. only:: esp32c3 or esp32c2 or esp32h2\
+    \ or esp32c6 or …\n   {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter\
+    \ the\n   serial bootloader reliably. The strapping combination of\n   {STRAP_BOOT_2_GPIO}\
+    \ = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and\n   will trigger unexpected behavior.\n\
+    \nIn normal boot mode ({STRAP_BOOT_GPIO} high), {STRAP_BOOT_2_GPIO}\nis ignored.\n\n{STRAP_BOOT_GPIO}\
+    \ has an internal pullup resistor, so if it is left\nunconnected then it will pull high.\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Таблиця розділу 07 «Другий strapping-пін працює на S3 і C3 у протилежні боки» звірена
+    цілком, рядок за рядком, і збіглася вся — включно з найтоншим: поняття «недійсна комбінація»
+    існує лише для RISC-V сімейств, а на classic і S3 неправильний рівень другого піна просто
+    не пускає в download mode.
 
+    Директиви `.. only::` тут кращі за будь-який переказ: вони прямо перелічують, до яких
+    чипів яке правило належить, і книга поділила сімейства саме так.
+
+    Підтверджено й твердження «у звичайному режимі другий пін ігнорується взагалі — на всіх
+    сімействах»: у джерелі це окреме речення, поза обома `.. only::`.'
 - nazva: Внутрішнє підтягування strapping — 45 кОм, кнопці треба 10 кОм
-  zbih: 'Внутрішнє підтягування тут — 45 кОм|45 кОм — це слабко|сильна підтяжка вниз, 10 кОм на землю'
+  zbih: Внутрішнє підтягування тут — 45 кОм|45 кОм — це слабко|сильна підтяжка вниз, 10 кОм
+    на землю
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    .. warning::
-
-       The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down
-       resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins). If you
-       want to connect a switch button to enter the boot mode, this has to
-       be a strong pull-down. For example a 10k resistor to GND.
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: ".. warning::\n\n   The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down\n\
+    \   resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins). If you\n   want to connect\
+    \ a switch button to enter the boot mode, this has to\n   be a strong pull-down. For example\
+    \ a 10k resistor to GND.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Доповнення, і саме те, якого бракувало найбільше. Книга багато разів
-    каже «пін має внутрішнє підтягування», але **номінала не називала
-    ніде** — а без номінала порада безкорисна для того, хто розводить
-    власну плату.
+  notatka: 'Доповнення, і саме те, якого бракувало найбільше. Книга багато разів каже «пін
+    має внутрішнє підтягування», але **номінала не називала ніде** — а без номінала порада
+    безкорисна для того, хто розводить власну плату.
 
-    45 кОм — слабко. Кнопка `BOOT`, зроблена простим перемикачем на
-    землю, конкурує з цим підтягуванням і на довгій доріжці або при
-    наводці може не пересилити його надійно. Документація дає й
-    номінал ліків: 10 кОм на землю.
+    45 кОм — слабко. Кнопка `BOOT`, зроблена простим перемикачем на землю, конкурує з цим
+    підтягуванням і на довгій доріжці або при наводці може не пересилити його надійно. Документація
+    дає й номінал ліків: 10 кОм на землю.
 
-    Це не «запас про всяк випадок», а пряма рекомендація джерела, і в
-    книзі вона тепер стоїть як така. Додано в розділ 07 після правила
-    «strapping-піни — лише як виходи».
+    Це не «запас про всяк випадок», а пряма рекомендація джерела, і в книзі вона тепер стоїть
+    як така. Додано в розділ 07 після правила «strapping-піни — лише як виходи».'
+  title: Внутрішнє підтягування strapping — 45 кОм, кнопці треба 10 кОм
+  match: Внутрішнє підтягування тут — 45 кОм|45 кОм — це слабко|сильна підтяжка вниз, 10 кОм
+    на землю
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: ".. warning::\n\n   The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down\n\
+    \   resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins). If you\n   want to connect\
+    \ a switch button to enter the boot mode, this has to\n   be a strong pull-down. For example\
+    \ a 10k resistor to GND.\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Доповнення, і саме те, якого бракувало найбільше. Книга багато разів каже «пін має
+    внутрішнє підтягування», але **номінала не називала ніде** — а без номінала порада безкорисна
+    для того, хто розводить власну плату.
 
+    45 кОм — слабко. Кнопка `BOOT`, зроблена простим перемикачем на землю, конкурує з цим
+    підтягуванням і на довгій доріжці або при наводці може не пересилити його надійно. Документація
+    дає й номінал ліків: 10 кОм на землю.
+
+    Це не «запас про всяк випадок», а пряма рекомендація джерела, і в книзі вона тепер стоїть
+    як така. Додано в розділ 07 після правила «strapping-піни — лише як виходи».'
 - nazva: GPIO12 має внутрішнє підтягування вниз — безпечний за замовчуванням
-  zbih: 'сам пін має внутрішнє підтягування вниз|не під.єднаний `GPIO12` = низький = 3.3 В|високим його робить \*\*тільки те, що'
+  zbih: сам пін має внутрішнє підтягування вниз|не під.єднаний `GPIO12` = низький = 3.3 В|високим
+    його робить \*\*тільки те, що
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
-      default 3.3V. Has internal pull-down, so unconnected = Low = 3.3V.
-      May prevent flashing and/or booting if 3.3V flash is used and this
-      pin is pulled high, causing the flash to brownout. …
-    | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
-      bootloader. Has an internal pull-up, so unconnected = High = normal
-      output.
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: "| 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not\n  default 3.3V.\
+    \ Has internal pull-down, so unconnected = Low = 3.3V.\n  May prevent flashing and/or\
+    \ booting if 3.3V flash is used and this\n  pin is pulled high, causing the flash to brownout.\
+    \ …\n| 15 (MTDO) | If driven Low, silences boot messages printed by the ROM\n  bootloader.\
+    \ Has an internal pull-up, so unconnected = High = normal\n  output.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Твердження книги про `GPIO15` («має внутрішнє підтягування вгору,
-    тому не під'єднаний = високий») звірене дослівно — воно збігається з
-    джерелом слово в слово.
+  notatka: 'Твердження книги про `GPIO15` («має внутрішнє підтягування вгору, тому не під''єднаний
+    = високий») звірене дослівно — воно збігається з джерелом слово в слово.
 
-    А от про `GPIO12` книга напрямку підтягування **не називала**, хоча
-    присвятила пінові цілий блок «незворотне». Це прогалина з наслідком:
-    без неї виходить, ніби пін небезпечний сам собою, і незрозуміло,
-    чому порада «зняти обв'язку» взагалі має спрацювати.
+    А от про `GPIO12` книга напрямку підтягування **не називала**, хоча присвятила пінові
+    цілий блок «незворотне». Це прогалина з наслідком: без неї виходить, ніби пін небезпечний
+    сам собою, і незрозуміло, чому порада «зняти обв''язку» взагалі має спрацювати.
 
-    Насправді підтягування вниз, тобто **чип безпечний за
-    замовчуванням**, а високим `GPIO12` робить лише те, що причепили
-    ззовні. Додано — і саме цим замикається логіка всього блоку.
+    Насправді підтягування вниз, тобто **чип безпечний за замовчуванням**, а високим `GPIO12`
+    робить лише те, що причепили ззовні. Додано — і саме цим замикається логіка всього блоку.'
+  title: GPIO12 має внутрішнє підтягування вниз — безпечний за замовчуванням
+  match: сам пін має внутрішнє підтягування вниз|не під.єднаний `GPIO12` = низький = 3.3 В|високим
+    його робить \*\*тільки те, що
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: "| 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not\n  default 3.3V.\
+    \ Has internal pull-down, so unconnected = Low = 3.3V.\n  May prevent flashing and/or\
+    \ booting if 3.3V flash is used and this\n  pin is pulled high, causing the flash to brownout.\
+    \ …\n| 15 (MTDO) | If driven Low, silences boot messages printed by the ROM\n  bootloader.\
+    \ Has an internal pull-up, so unconnected = High = normal\n  output.\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Твердження книги про `GPIO15` («має внутрішнє підтягування вгору, тому не під''єднаний
+    = високий») звірене дослівно — воно збігається з джерелом слово в слово.
 
+    А от про `GPIO12` книга напрямку підтягування **не називала**, хоча присвятила пінові
+    цілий блок «незворотне». Це прогалина з наслідком: без неї виходить, ніби пін небезпечний
+    сам собою, і незрозуміло, чому порада «зняти обв''язку» взагалі має спрацювати.
+
+    Насправді підтягування вниз, тобто **чип безпечний за замовчуванням**, а високим `GPIO12`
+    робить лише те, що причепили ззовні. Додано — і саме цим замикається логіка всього блоку.'
 - nazva: Маска GPIO_STRAP — усі шість бітів classic і два біти решти
-  zbih: '`0x0[1248]`=`GPIO|`0x[12]0`=`GPIO|\| `0x0[1248]` \| `GPIO|\| `0x[12]0` \| `GPIO|Найцінніший біт — `0x20`|На решті сімейств маска коротша|обрано непідтримуваний режим|DOWNLOAD_BOOT\(UART0|DOWNLOAD\(USB/UART0\)|SPI_FAST_FLASH_BOOT` \| звичайний старт|другий strapping-пін високий, коли головний низький|бітова маска регістра `GPIO_STRAP`'
+  zbih: '`0x0[1248]`=`GPIO|`0x[12]0`=`GPIO|\| `0x0[1248]` \| `GPIO|\| `0x[12]0` \| `GPIO|Найцінніший
+    біт — `0x20`|На решті сімейств маска коротша|обрано непідтримуваний режим|DOWNLOAD_BOOT\(UART0|DOWNLOAD\(USB/UART0\)|SPI_FAST_FLASH_BOOT`
+    \| звичайний старт|другий strapping-пін високий, коли головний низький|бітова маска регістра
+    `GPIO_STRAP`'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    ``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as
-    represented in the GPIO_STRAP register.
-
-    .. only:: esp32
-       -  ``0x01`` - GPIO5
-       -  ``0x02`` - MTDO (GPIO15)
-       -  ``0x04`` - GPIO4
-       -  ``0x08`` - GPIO2
-       -  ``0x10`` - GPIO0
-       -  ``0x20`` - MTDI (GPIO12)
-
-    .. only:: not esp32
-       - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}
-       - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}
-
-    If the pin was high on reset, the bit value will be set. If it was low
-    on reset, the bit will be cleared.
-
-    -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or
-       ``DOWNLOAD(USB/UART0)`` — … download flashing mode
-    -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
-    -  Other modes (including ``SPI_FLASH_BOOT``, ``SDIO_REI_FEO_V1_BOOT``,
-       ``ATE_BOOT``) may be shown here. This indicates an unsupported boot
-       mode has been selected. Consult the strapping pins shown above (in
-       most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}
-       has been pulled high when {STRAP_BOOT_GPIO} is low).
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: "``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as\nrepresented\
+    \ in the GPIO_STRAP register.\n\n.. only:: esp32\n   -  ``0x01`` - GPIO5\n   -  ``0x02``\
+    \ - MTDO (GPIO15)\n   -  ``0x04`` - GPIO4\n   -  ``0x08`` - GPIO2\n   -  ``0x10`` - GPIO0\n\
+    \   -  ``0x20`` - MTDI (GPIO12)\n\n.. only:: not esp32\n   - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}\n\
+    \   - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}\n\nIf the pin was high on reset, the bit\
+    \ value will be set. If it was low\non reset, the bit will be cleared.\n\n-  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)``\
+    \ or\n   ``DOWNLOAD(USB/UART0)`` — … download flashing mode\n-  ``SPI_FAST_FLASH_BOOT``\
+    \ - This is the normal SPI flash boot mode.\n-  Other modes (including ``SPI_FLASH_BOOT``,\
+    \ ``SDIO_REI_FEO_V1_BOOT``,\n   ``ATE_BOOT``) may be shown here. This indicates an unsupported\
+    \ boot\n   mode has been selected. Consult the strapping pins shown above (in\n   most\
+    \ cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}\n   has been pulled high\
+    \ when {STRAP_BOOT_GPIO} is low).\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони
-    названі однаково і збігаються з джерелом усі. Разом із ними
-    підтвердився і розбір двох найчастіших значень: `0x13` = `0x01` +
-    `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+  notatka: 'Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі
+    однаково і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших
+    значень: `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download
+    mode).
 
     Два доповнення.
 
-    **Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`,
-    `ATE_BOOT` — рядки, яких у таблиці додатка D не було, тож читач, що
-    їх побачив, не знаходив у книзі нічого. Джерело називає й причину: у
-    переважній більшості випадків другий strapping-пін високий, коли
-    головний низький.
+    **Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки,
+    яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого.
+    Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий,
+    коли головний низький.
 
-    **Маска на решті сімейств.** Книга давала біти лише для classic, хоча
-    S3 і C3 — фокусні чипи. Додано таблицю двох бітів і, головне,
-    впізнавання `boot:0x0` на C3: обидва піни низькі, тобто та сама
-    недійсна комбінація — видима в логу, без осцилографа.
+    **Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні
+    чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни
+    низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.'
+  title: Маска GPIO_STRAP — усі шість бітів classic і два біти решти
+  match: '`0x0[1248]`=`GPIO|`0x[12]0`=`GPIO|\| `0x0[1248]` \| `GPIO|\| `0x[12]0` \| `GPIO|Найцінніший
+    біт — `0x20`|На решті сімейств маска коротша|обрано непідтримуваний режим|DOWNLOAD_BOOT\(UART0|DOWNLOAD\(USB/UART0\)|SPI_FAST_FLASH_BOOT`
+    \| звичайний старт|другий strapping-пін високий, коли головний низький|бітова маска регістра
+    `GPIO_STRAP`'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: "``boot:0xNN (DESCRIPTION)`` is the hex value of the strapping pins, as\nrepresented\
+    \ in the GPIO_STRAP register.\n\n.. only:: esp32\n   -  ``0x01`` - GPIO5\n   -  ``0x02``\
+    \ - MTDO (GPIO15)\n   -  ``0x04`` - GPIO4\n   -  ``0x08`` - GPIO2\n   -  ``0x10`` - GPIO0\n\
+    \   -  ``0x20`` - MTDI (GPIO12)\n\n.. only:: not esp32\n   - ``0x04`` - {IDF_TARGET_STRAP_BOOT_2_GPIO}\n\
+    \   - ``0x08`` - {IDF_TARGET_STRAP_BOOT_GPIO}\n\nIf the pin was high on reset, the bit\
+    \ value will be set. If it was low\non reset, the bit will be cleared.\n\n-  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)``\
+    \ or\n   ``DOWNLOAD(USB/UART0)`` — … download flashing mode\n-  ``SPI_FAST_FLASH_BOOT``\
+    \ - This is the normal SPI flash boot mode.\n-  Other modes (including ``SPI_FLASH_BOOT``,\
+    \ ``SDIO_REI_FEO_V1_BOOT``,\n   ``ATE_BOOT``) may be shown here. This indicates an unsupported\
+    \ boot\n   mode has been selected. Consult the strapping pins shown above (in\n   most\
+    \ cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}\n   has been pulled high\
+    \ when {STRAP_BOOT_GPIO} is low).\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Шість бітів classic звірено поштучно — у картці К6 й у додатку D вони названі однаково
+    і збігаються з джерелом усі. Разом із ними підтвердився і розбір двох найчастіших значень:
+    `0x13` = `0x01` + `0x02` + `0x10` (норма), `0x3` = те саме без `GPIO0` (download mode).
+
+    Два доповнення.
+
+    **Непідтримувані режими.** `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` — рядки,
+    яких у таблиці додатка D не було, тож читач, що їх побачив, не знаходив у книзі нічого.
+    Джерело називає й причину: у переважній більшості випадків другий strapping-пін високий,
+    коли головний низький.
+
+    **Маска на решті сімейств.** Книга давала біти лише для classic, хоча S3 і C3 — фокусні
+    чипи. Додано таблицю двох бітів і, головне, впізнавання `boot:0x0` на C3: обидва піни
+    низькі, тобто та сама недійсна комбінація — видима в логу, без осцилографа.'

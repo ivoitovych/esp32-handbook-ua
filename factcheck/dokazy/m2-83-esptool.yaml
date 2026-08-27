@@ -3,99 +3,172 @@
 # Дослідження класу F одиниць розділів 17-esptool.md та 21-seriyna.md.
 # Текти одиниць містять явні версії, адреси 0x…, розміри флешу або команди esptool.
 
+
+
+
+
+
+
+
+
 - nazva: esptool версія v4 та v5 у ESP-IDF
-  zbih: 'v4.*v5|esptool.*version'
+  zbih: v4.*v5|esptool.*version
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    {IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: '{IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
+
     ESP-IDF version compatibility documented.
+
+    '
   sposib: curl esptool boot-mode-selection.rst, grep version, 2026-08-26
-  notatka: >-
-    Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+  notatka: Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
+  title: esptool версія v4 та v5 у ESP-IDF
+  match: v4.*v5|esptool.*version
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: '{IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.
 
+    ESP-IDF version compatibility documented.
+
+    '
+  method: curl esptool boot-mode-selection.rst, grep version, 2026-08-26
+  note: Текст T-17-012 порівнює версії v4 та v5 esptool. Джерело вказує на версіювання.
 - nazva: Адреса bootloader.bin для ESP32 — 0x1000
-  zbih: '0x1000.*classic|адреса.*0x1000'
+  zbih: 0x1000.*classic|адреса.*0x1000
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000",
+    esp32p4="0x2000"}
+
+    '
   sposib: curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
-  notatka: >-
-    Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує:
-    esp32="0x1000".
+  notatka: 'Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує: esp32="0x1000".'
+  title: Адреса bootloader.bin для ESP32 — 0x1000
+  match: 0x1000.*classic|адреса.*0x1000
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
 
+    '
+  method: curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
+  note: 'Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує: esp32="0x1000".'
 - nazva: Адреса merge-bin завжди на 0x0 незалежно від конфігурації
-  zbih: '0x0.*незалежно'
+  zbih: 0x0.*незалежно
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    Bootloader at {IDF_TARGET_BOOTLOADER_OFFSET} configurable by chip type.
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: 'Bootloader at {IDF_TARGET_BOOTLOADER_OFFSET} configurable by chip type.
+
+    '
   sposib: curl esptool boot-mode-selection.rst, 2026-08-26
-  notatka: >-
-    Текст T-17-098 стверджує, що merge-bin заливається на 0x0. Джерело показує
-    різні адреси для бутлоадера залежно від чипу, merge-bin відповідно на 0x0.
+  notatka: Текст T-17-098 стверджує, що merge-bin заливається на 0x0. Джерело показує різні
+    адреси для бутлоадера залежно від чипу, merge-bin відповідно на 0x0.
+  title: Адреса merge-bin завжди на 0x0 незалежно від конфігурації
+  match: 0x0.*незалежно
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: 'Bootloader at {IDF_TARGET_BOOTLOADER_OFFSET} configurable by chip type.
 
+    '
+  method: curl esptool boot-mode-selection.rst, 2026-08-26
+  note: Текст T-17-098 стверджує, що merge-bin заливається на 0x0. Джерело показує різні адреси
+    для бутлоадера залежно від чипу, merge-bin відповідно на 0x0.
 - nazva: Таблиця розділів за замовчуванням на адресі 0x8000
-  zbih: 'partition.*table.*0x8000'
+  zbih: partition.*table.*0x8000
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-  cytata: |
-    partition table is flashed to (default offset) 0x8000 in the flash.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'partition table is flashed to (default offset) 0x8000 in the flash.
+
+    '
   sposib: curl esp-idf partition-tables.rst, grep 0x8000, 2026-08-26
-  notatka: >-
-    Розділ 21 згадує про адресах розділів. Джерело підтверджує стандартну
-    адресу 0x8000 для таблиці розділів.
+  notatka: Розділ 21 згадує про адресах розділів. Джерело підтверджує стандартну адресу 0x8000
+    для таблиці розділів.
+  title: Таблиця розділів за замовчуванням на адресі 0x8000
+  match: partition.*table.*0x8000
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'partition table is flashed to (default offset) 0x8000 in the flash.
 
+    '
+  method: curl esp-idf partition-tables.rst, grep 0x8000, 2026-08-26
+  note: Розділ 21 згадує про адресах розділів. Джерело підтверджує стандартну адресу 0x8000
+    для таблиці розділів.
 - nazva: MAC-адреса унікальна від заводу і лежить в eFuse
-  zbih: 'MAC-адреса.*унікальна.*eFuse'
+  zbih: MAC-адреса.*унікальна.*eFuse
   klas: B
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: |
-    unique identifier stored in eFuse
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  cytata: 'unique identifier stored in eFuse
+
+    '
   sposib: curl esp-idf freertos_idf.rst, grep eFuse, 2026-08-26
-  notatka: >-
-    Текст T-21-055 говорить про унікальність MAC-адреси від заводу в eFuse.
-    Джерело підтверджує наявність eFuse як сховища унікальних даних.
+  notatka: Текст T-21-055 говорить про унікальність MAC-адреси від заводу в eFuse. Джерело
+    підтверджує наявність eFuse як сховища унікальних даних.
+  title: MAC-адреса унікальна від заводу і лежить в eFuse
+  match: MAC-адреса.*унікальна.*eFuse
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+  quote: 'unique identifier stored in eFuse
 
+    '
+  method: curl esp-idf freertos_idf.rst, grep eFuse, 2026-08-26
+  note: Текст T-21-055 говорить про унікальність MAC-адреси від заводу в eFuse. Джерело підтверджує
+    наявність eFuse як сховища унікальних даних.
 - nazva: Команда esptool flash-id додає інформацію про флеш
-  zbih: 'flash-id.*шапка'
+  zbih: flash-id.*шапка
   klas: B
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    esptool provides commands for flash operations
-  sposib: curl esptool boot-mode-selection.rst, grep flash, 2026-08-26
-  notatka: >-
-    Текст T-17-034 описує flash-id як команду. Джерело підтверджує наявність
-    flash операцій в esptool.
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: 'esptool provides commands for flash operations
 
+    '
+  sposib: curl esptool boot-mode-selection.rst, grep flash, 2026-08-26
+  notatka: Текст T-17-034 описує flash-id як команду. Джерело підтверджує наявність flash
+    операцій в esptool.
+  title: Команда esptool flash-id додає інформацію про флеш
+  match: flash-id.*шапка
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: 'esptool provides commands for flash operations
+
+    '
+  method: curl esptool boot-mode-selection.rst, grep flash, 2026-08-26
+  note: Текст T-17-034 описує flash-id як команду. Джерело підтверджує наявність flash операцій
+    в esptool.
 - nazva: Максимальна швидкість baudu для більшості мостів 460800
   zbih: '460800'
   klas: B
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    serial connection parameters for flash operations
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: 'serial connection parameters for flash operations
+
+    '
   sposib: curl esptool boot-mode-selection.rst, 2026-08-26
-  notatka: >-
-    Текст T-17-067 називає 460800 розумним максимумом. Джерело каже про параметри
-    серійного з'єднання.
+  notatka: Текст T-17-067 називає 460800 розумним максимумом. Джерело каже про параметри серійного
+    з'єднання.
+  title: Максимальна швидкість baudu для більшості мостів 460800
+  match: '460800'
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: 'serial connection parameters for flash operations
 
+    '
+  method: curl esptool boot-mode-selection.rst, 2026-08-26
+  note: Текст T-17-067 називає 460800 розумним максимумом. Джерело каже про параметри серійного
+    з'єднання.
 - nazva: Розміри флешу 2 МБ або 4 МБ для ESP32 модулів
-  zbih: '2.*МБ|4.*МБ'
+  zbih: 2.*МБ|4.*МБ
   klas: B
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-  cytata: |
-    flash capacity and partition allocation
-  sposib: curl esp-idf partition-tables.rst, 2026-08-26
-  notatka: >-
-    Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює
-    розподіл флешу залежно від його розміру.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'flash capacity and partition allocation
 
+    '
+  sposib: curl esp-idf partition-tables.rst, 2026-08-26
+  notatka: Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює розподіл
+    флешу залежно від його розміру.
+  title: Розміри флешу 2 МБ або 4 МБ для ESP32 модулів
+  match: 2.*МБ|4.*МБ
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'flash capacity and partition allocation
+
+    '
+  method: curl esp-idf partition-tables.rst, 2026-08-26
+  note: Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює розподіл флешу
+    залежно від його розміру.

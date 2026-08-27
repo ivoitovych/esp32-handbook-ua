@@ -8,6 +8,27 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-13-024: Запис `espressif32 @ 6.5.0` збереться — і дасть'
   zbih: Запис\s+`espressif32\s+@\s+6\.5\.0`
   klas: A
@@ -19,6 +40,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: запис espressif32 @ без версії дає Arduino 2.x
+  title: 'T-13-024: Запис `espressif32 @ 6.5.0` збереться — і дасть'
+  match: Запис\s+`espressif32\s+@\s+6\.5\.0`
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  quote: '"version": "~3.20017.0"
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: запис espressif32 @ без версії дає Arduino 2.x
 - nazva: 'T-13-025: `pioarduino` розповсюджується не через реєстр PlatformIO, а архівом'
   zbih: '`pioarduino`\s+розповсюджується\s+не\s+через'
   klas: A
@@ -30,6 +62,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: pioarduino розповсюджується через архив релізу, не через реєстр
+  title: 'T-13-025: `pioarduino` розповсюджується не через реєстр PlatformIO, а архівом'
+  match: '`pioarduino`\s+розповсюджується\s+не\s+через'
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
+  quote: '"version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: pioarduino розповсюджується через архив релізу, не через реєстр
 - nazva: 'T-13-006: Форк називається **pioarduino** і супроводжується спільнотою.'
   zbih: Форк\s+називається\s+\*\*pioarduino\*\*\s+і
   klas: A
@@ -41,6 +84,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтверджує існування форку pioarduino, підтримуваного спільнотою
+  title: 'T-13-006: Форк називається **pioarduino** і супроводжується спільнотою.'
+  match: Форк\s+називається\s+\*\*pioarduino\*\*\s+і
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  quote: '# pioarduino (p)eople (i)nitiated (o)ptimized (arduino)
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтверджує існування форку pioarduino, підтримуваного спільнотою
 - nazva: 'T-13-014: **Версії фіксуються в проєкті.** Це головне.'
   zbih: \*\*Версії\s+фіксуються\s+в\s+проєкті\.\*\*
   klas: A
@@ -58,6 +112,23 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: показує, що версії можуть бути зафіксовані в проєкті
+  title: 'T-13-014: **Версії фіксуються в проєкті.** Це головне.'
+  match: \*\*Версії\s+фіксуються\s+в\s+проєкті\.\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  quote: '[env:esp32doit-devkit-v1]
+
+    platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: показує, що версії можуть бути зафіксовані в проєкті
 - nazva: 'T-13-020: Весь проєкт описується одним файлом:'
   zbih: Весь\s+проєкт\s+описується\s+одним
   klas: A
@@ -75,6 +146,23 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: весь проєкт описується в platformio.ini файлі
+  title: 'T-13-020: Весь проєкт описується одним файлом:'
+  match: Весь\s+проєкт\s+описується\s+одним
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  quote: '[env:esp32doit-devkit-v1]
+
+    platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: весь проєкт описується в platformio.ini файлі
 - nazva: 'T-13-002: Для ESP32 воно дає те, чого не дає'
   zbih: Для\s+ESP32\s+воно\s+дає
   klas: A
@@ -86,6 +174,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: платформа дає фіксовані версії компонентів у platform.json
+  title: 'T-13-002: Для ESP32 воно дає те, чого не дає'
+  match: Для\s+ESP32\s+воно\s+дає
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  quote: '"version": "7.0.1"
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: платформа дає фіксовані версії компонентів у platform.json
 - nazva: 'T-13-004: Підтримка ESP32 у PlatformIO забезпечується платформою `platform-espressif32`.'
   zbih: Підтримка\s+ESP32\s+у\s+PlatformIO
   klas: A
@@ -97,6 +196,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: підтримка ESP32 у PlatformIO забезпечується платформою platform-espressif32
+  title: 'T-13-004: Підтримка ESP32 у PlatformIO забезпечується платформою `platform-espressif32`.'
+  match: Підтримка\s+ESP32\s+у\s+PlatformIO
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  quote: '"name": "espressif32"
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: підтримка ESP32 у PlatformIO забезпечується платформою platform-espressif32
 - nazva: 'T-13-005: Офіційна платформа від PlatformIO **відстала** від Arduino core:'
   zbih: Офіційна\s+платформа\s+від\s+PlatformIO
   klas: A
@@ -108,6 +218,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: офіційна платформа використовує Arduino 2.x версію (~3.20017.0)
+  title: 'T-13-005: Офіційна платформа від PlatformIO **відстала** від Arduino core:'
+  match: Офіційна\s+платформа\s+від\s+PlatformIO
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/platform.json
+  quote: '"version": "~3.20017.0"
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: офіційна платформа використовує Arduino 2.x версію (~3.20017.0)
 - nazva: 'T-13-007: Він підтримує актуальні версії Arduino core і нові'
   zbih: Він\s+підтримує\s+актуальні\s+версії
   klas: A
@@ -119,6 +240,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: pioarduino підтримує Arduino 3.3.11 із новими сімействами чипів
+  title: 'T-13-007: Він підтримує актуальні версії Arduino core і нові'
+  match: Він\s+підтримує\s+актуальні\s+версії
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/platform.json
+  quote: '"version": "https://github.com/espressif/arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz"
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: pioarduino підтримує Arduino 3.3.11 із новими сімействами чипів
 - nazva: 'T-13-015: `platformio.ini` лежить у git і повністю описує, чим'
   zbih: '`platformio\.ini`\s+лежить\s+у\s+git'
   klas: A
@@ -134,6 +266,21 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: platformio.ini описує, чим збирається проєкт
+  title: 'T-13-015: `platformio.ini` лежить у git і повністю описує, чим'
+  match: '`platformio\.ini`\s+лежить\s+у\s+git'
+  status: verbatim
+  source: https://raw.githubusercontent.com/platformio/platform-espressif32/master/examples/arduino-blink/platformio.ini
+  quote: 'platform = espressif32
+
+    framework = arduino
+
+    board = esp32doit-devkit-v1
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: platformio.ini описує, чим збирається проєкт
 - nazva: 'T-13-029: **`platform`.** Тут — джерело платформи, а не лише'
   zbih: \*\*`platform`\.\*\*\s+Тут\s+—\s+джерело
   klas: A
@@ -145,6 +292,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: platform specifies URL source of the platform
+  title: 'T-13-029: **`platform`.** Тут — джерело платформи, а не лише'
+  match: \*\*`platform`\.\*\*\s+Тут\s+—\s+джерело
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  quote: 'platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: platform specifies URL source of the platform
 - nazva: 'T-13-032: Для `pioarduino` пінування — це заміна мітки `stable`'
   zbih: Для\s+`pioarduino`\s+пінування\s+—
   klas: A
@@ -156,6 +314,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: pioarduino uses release version tags for pinning
+  title: 'T-13-032: Для `pioarduino` пінування — це заміна мітки `stable`'
+  match: Для\s+`pioarduino`\s+пінування\s+—
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  quote: 'pio project init --board esp32dev
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: pioarduino uses release version tags for pinning
 - nazva: 'T-13-048: Для S3 це не косметика — офіційна платформа'
   zbih: Для\s+S3\s+це\s+не
   klas: A
@@ -167,3 +336,14 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: pio command is used to manage environments and build specific boards
+  title: 'T-13-048: Для S3 це не косметика — офіційна платформа'
+  match: Для\s+S3\s+це\s+не
+  status: verbatim
+  source: https://raw.githubusercontent.com/pioarduino/platform-espressif32/master/README.md
+  quote: 'pio project init --board esp32dev
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: pio command is used to manage environments and build specific boards

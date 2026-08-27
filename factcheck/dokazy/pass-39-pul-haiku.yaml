@@ -24,165 +24,310 @@
 # ловить її лише третій шар: читач, що пішов би за посиланням, не
 # знайшов би нічого.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Рядки режиму завантаження — перелік із документації esptool
-  zbih: "Режим словами\\s*\\n?— `SPI_FAST_FLASH_BOOT`|друкує сам ROM|У виводі\\s*\\n?`esptool` цього рядка немає|DOWNLOAD_BOOT\\(…\\)"
+  zbih: Режим словами\s*\n?— `SPI_FAST_FLASH_BOOT`|друкує сам ROM|У виводі\s*\n?`esptool`
+    цього рядка немає|DOWNLOAD_BOOT\(…\)
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    A number of boot mode strings can be shown depending on which bits are set:
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: 'A number of boot mode strings can be shown depending on which bits are set:
 
-    -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or ``DOWNLOAD(USB/UART0)`` - {IDF_TARGET_NAME} is in download flashing mode (suitable for esptool)
+
+    -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or ``DOWNLOAD(USB/UART0)`` - {IDF_TARGET_NAME}
+    is in download flashing mode (suitable for esptool)
+
     -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
-  sposib: >-
-    помічник пулу (S1, Haiku), цитата звірена `tools/citaty.py`,
-    контекст прочитаний М1, 2026-08-26
-  notatka: >-
-    Доповнює доказ проходу 38, і показово, **як** доповнює.
 
-    Помічник подав ці рядки як підтвердження книжкового «`esptool`
-    друкує режим словами» — тобто того самого, що я в проході 38
-    визнав своєю помилкою. Третій шар цитату пропустив: вона дослівна.
+    '
+  sposib: помічник пулу (S1, Haiku), цитата звірена `tools/citaty.py`, контекст прочитаний
+    М1, 2026-08-26
+  notatka: 'Доповнює доказ проходу 38, і показово, **як** доповнює.
 
-    І він мав рацію її пропустити. Рядки справді є — у документації
-    esptool, у розділі про читання **boot-логу чипа**. Стоять вони
-    відразу після опису бітової маски `boot:0x13`, тобто описують те,
-    що друкує ROM, а не те, що друкує esptool.
+    Помічник подав ці рядки як підтвердження книжкового «`esptool` друкує режим словами» —
+    тобто того самого, що я в проході 38 визнав своєю помилкою. Третій шар цитату пропустив:
+    вона дослівна.
 
-    Це другий шар у чистому вигляді: цитата справжня, джерело
-    авторитетне, а твердження, яке вона нібито підпирає, — хибне.
-    Різницю видно лише з контексту навколо цитати.
+    І він мав рацію її пропустити. Рядки справді є — у документації esptool, у розділі про
+    читання **boot-логу чипа**. Стоять вони відразу після опису бітової маски `boot:0x13`,
+    тобто описують те, що друкує ROM, а не те, що друкує esptool.
 
-    Тепер у книзі перелік названо тим, чим він є, і має власне джерело.
+    Це другий шар у чистому вигляді: цитата справжня, джерело авторитетне, а твердження, яке
+    вона нібито підпирає, — хибне. Різницю видно лише з контексту навколо цитати.
 
+    Тепер у книзі перелік названо тим, чим він є, і має власне джерело.'
+  title: Рядки режиму завантаження — перелік із документації esptool
+  match: Режим словами\s*\n?— `SPI_FAST_FLASH_BOOT`|друкує сам ROM|У виводі\s*\n?`esptool`
+    цього рядка немає|DOWNLOAD_BOOT\(…\)
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: 'A number of boot mode strings can be shown depending on which bits are set:
+
+
+    -  ``DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2)`` or ``DOWNLOAD(USB/UART0)`` - {IDF_TARGET_NAME}
+    is in download flashing mode (suitable for esptool)
+
+    -  ``SPI_FAST_FLASH_BOOT`` - This is the normal SPI flash boot mode.
+
+    '
+  method: помічник пулу (S1, Haiku), цитата звірена `tools/citaty.py`, контекст прочитаний
+    М1, 2026-08-26
+  note: 'Доповнює доказ проходу 38, і показово, **як** доповнює.
+
+    Помічник подав ці рядки як підтвердження книжкового «`esptool` друкує режим словами» —
+    тобто того самого, що я в проході 38 визнав своєю помилкою. Третій шар цитату пропустив:
+    вона дослівна.
+
+    І він мав рацію її пропустити. Рядки справді є — у документації esptool, у розділі про
+    читання **boot-логу чипа**. Стоять вони відразу після опису бітової маски `boot:0x13`,
+    тобто описують те, що друкує ROM, а не те, що друкує esptool.
+
+    Це другий шар у чистому вигляді: цитата справжня, джерело авторитетне, а твердження, яке
+    вона нібито підпирає, — хибне. Різницю видно лише з контексту навколо цитати.
+
+    Тепер у книзі перелік названо тим, чим він є, і має власне джерело.'
 - nazva: Пін входу в бутлоадер за сімействами — підстановки esptool
-  zbih: 'пін входу в\s*\n?бутлоадер|\*\*пін входу в\s*\n?\*\*бутлоадер|`GPIO0`, \[\[C3\]\] \[\[C6\]\] \[\[H2\]\] — `GPIO9`|Третій із них залежить від сімейства'
+  zbih: пін входу в\s*\n?бутлоадер|\*\*пін входу в\s*\n?\*\*бутлоадер|`GPIO0`, \[\[C3\]\]
+    \[\[C6\]\] \[\[H2\]\] — `GPIO9`|Третій із них залежить від сімейства
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0", esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28", esp32h21="GPIO14", esp32h4="GPIO14", esp32s31="GPIO61"}
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: '{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0", esp32s2="GPIO0",
+    esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28", esp32h21="GPIO14", esp32h4="GPIO14",
+    esp32s31="GPIO61"}
 
-    The {IDF_TARGET_NAME} will enter the serial bootloader when {IDF_TARGET_STRAP_BOOT_GPIO} is held low on reset. Otherwise it will run the program in flash.
 
-    Many boards use a button marked "Flash" (or "BOOT" on some Espressif development boards) that pulls {IDF_TARGET_STRAP_BOOT_GPIO} low when pressed.
-  sposib: >-
-    помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`,
-    2026-08-26
-  notatka: >-
-    Підстава для виправлення розділів 08 і 52: шість площадок для
-    прошивки називали `GPIO0` без позначки сімейства, а `GPIO0` — це
-    значення для classic, S2 і S3. Для C3, C6 і H2 діє типове `GPIO9`.
+    The {IDF_TARGET_NAME} will enter the serial bootloader when {IDF_TARGET_STRAP_BOOT_GPIO}
+    is held low on reset. Otherwise it will run the program in flash.
 
-    Ціна помилки конкретна: книга ж сама радить брати C3 для власної
-    плати. Читач розводить площадку на `GPIO0`, вона нічого не робить,
-    а піна, який справді потрібен, на платі немає.
 
-    Варта уваги дрібниця в підстановці: для C3 перевизначення немає, діє
-    `default="GPIO9"`. Те саме спостереження вже записано в проході 33 —
-    два незалежні помічники дійшли до нього з різних боків.
+    Many boards use a button marked "Flash" (or "BOOT" on some Espressif development boards)
+    that pulls {IDF_TARGET_STRAP_BOOT_GPIO} low when pressed.
 
+    '
+  sposib: помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
+  notatka: 'Підстава для виправлення розділів 08 і 52: шість площадок для прошивки називали
+    `GPIO0` без позначки сімейства, а `GPIO0` — це значення для classic, S2 і S3. Для C3,
+    C6 і H2 діє типове `GPIO9`.
+
+    Ціна помилки конкретна: книга ж сама радить брати C3 для власної плати. Читач розводить
+    площадку на `GPIO0`, вона нічого не робить, а піна, який справді потрібен, на платі немає.
+
+    Варта уваги дрібниця в підстановці: для C3 перевизначення немає, діє `default="GPIO9"`.
+    Те саме спостереження вже записано в проході 33 — два незалежні помічники дійшли до нього
+    з різних боків.'
+  title: Пін входу в бутлоадер за сімействами — підстановки esptool
+  match: пін входу в\s*\n?бутлоадер|\*\*пін входу в\s*\n?\*\*бутлоадер|`GPIO0`, \[\[C3\]\]
+    \[\[C6\]\] \[\[H2\]\] — `GPIO9`|Третій із них залежить від сімейства
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: '{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0", esp32s2="GPIO0",
+    esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28", esp32h21="GPIO14", esp32h4="GPIO14",
+    esp32s31="GPIO61"}
+
+
+    The {IDF_TARGET_NAME} will enter the serial bootloader when {IDF_TARGET_STRAP_BOOT_GPIO}
+    is held low on reset. Otherwise it will run the program in flash.
+
+
+    Many boards use a button marked "Flash" (or "BOOT" on some Espressif development boards)
+    that pulls {IDF_TARGET_STRAP_BOOT_GPIO} low when pressed.
+
+    '
+  method: помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
+  note: 'Підстава для виправлення розділів 08 і 52: шість площадок для прошивки називали `GPIO0`
+    без позначки сімейства, а `GPIO0` — це значення для classic, S2 і S3. Для C3, C6 і H2
+    діє типове `GPIO9`.
+
+    Ціна помилки конкретна: книга ж сама радить брати C3 для власної плати. Читач розводить
+    площадку на `GPIO0`, вона нічого не робить, а піна, який справді потрібен, на платі немає.
+
+    Варта уваги дрібниця в підстановці: для C3 перевизначення немає, діє `default="GPIO9"`.
+    Те саме спостереження вже записано в проході 33 — два незалежні помічники дійшли до нього
+    з різних боків.'
 - nazva: Внутрішнє підтягування 45 кОм на піні входу в бутлоадер
-  zbih: '45 кОм'
+  zbih: 45 кОм
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
-  cytata: |
-    .. warning::
-
-       The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins).
-  sposib: >-
-    помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`,
-    2026-08-26
-  notatka: >-
-    Третє незалежне підтвердження числа 45 кОм, і цього разу дослівною
-    цитатою з попередження, а не переказом. Прохід 26 виводив його з
-    того самого документа, але цитату записав неточно — саме такий
-    запис третій шар і має ловити.
-
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: ".. warning::\n\n   The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down\
+    \ resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins).\n"
+  sposib: помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
+  notatka: Третє незалежне підтвердження числа 45 кОм, і цього разу дослівною цитатою з попередження,
+    а не переказом. Прохід 26 виводив його з того самого документа, але цитату записав неточно
+    — саме такий запис третій шар і має ловити.
+  title: Внутрішнє підтягування 45 кОм на піні входу в бутлоадер
+  match: 45 кОм
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: ".. warning::\n\n   The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down\
+    \ resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins).\n"
+  method: помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
+  note: Третє незалежне підтвердження числа 45 кОм, і цього разу дослівною цитатою з попередження,
+    а не переказом. Прохід 26 виводив його з того самого документа, але цитату записав неточно
+    — саме такий запис третій шар і має ловити.
 - nazva: GPIO16 і GPIO17 на classic живляться з домену VDD_SDIO
-  zbih: "домену `VDD_SDIO`|ESP_PD_DOMAIN_VDDSDIO|Домен у сні\\s*\\n?вимикається"
+  zbih: домену `VDD_SDIO`|ESP_PD_DOMAIN_VDDSDIO|Домен у сні\s*\n?вимикається
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
-  cytata: |
-    Before entering Light-sleep mode, check if any GPIO pin to be driven is part of the {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If so, this power domain must be configured to remain ON during sleep.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+  cytata: "Before entering Light-sleep mode, check if any GPIO pin to be driven is part of\
+    \ the {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If so, this power domain must be configured\
+    \ to remain ON during sleep.\n\nFor example, on ESP32-WROOM-32 board, GPIO16 and GPIO17\
+    \ are linked to {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If they are configured to\
+    \ remain high during Light-sleep, the power domain should be configured to remain powered\
+    \ ON. This can be done with :cpp:func:`esp_sleep_pd_config()`::\n\n    esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO,\
+    \ ESP_PD_OPTION_ON);\n"
+  sposib: помічник пулу (S2, Haiku); контекст прочитаний М1 перед унесенням, 2026-08-26
+  notatka: '**Прогалина, знайдена побічно, і мало не сприйнята за суперечність.**
 
-    For example, on ESP32-WROOM-32 board, GPIO16 and GPIO17 are linked to {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If they are configured to remain high during Light-sleep, the power domain should be configured to remain powered ON. This can be done with :cpp:func:`esp_sleep_pd_config()`::
+    Помічник подав цю цитату до одиниці про `GPIO16`/`GPIO17`, зайняті флешем і PSRAM. З першого
+    погляду виглядало, ніби джерело заперечує моє власне виправлення проходу 33: там сказано,
+    що ці два піни зайняті **лише на модулях із PSRAM**, а тут ідеться про `WROOM-32`, у якого
+    PSRAM немає.
 
-        esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO, ESP_PD_OPTION_ON);
-  sposib: >-
-    помічник пулу (S2, Haiku); контекст прочитаний М1 перед унесенням,
-    2026-08-26
-  notatka: >-
-    **Прогалина, знайдена побічно, і мало не сприйнята за суперечність.**
+    Прочитане цілком, воно каже інше й про інше. Мова не про зайнятість шиною, а про **домен
+    живлення**: на classic ці піни живляться з `VDD_SDIO`, і в light sleep домен вимикається.
+    Пін, виставлений високим, тихо просідає.
 
-    Помічник подав цю цитату до одиниці про `GPIO16`/`GPIO17`, зайняті
-    флешем і PSRAM. З першого погляду виглядало, ніби джерело
-    заперечує моє власне виправлення проходу 33: там сказано, що ці два
-    піни зайняті **лише на модулях із PSRAM**, а тут ідеться про
-    `WROOM-32`, у якого PSRAM немає.
+    Обидва твердження правдиві й не перетинаються. Але прочитати довелося весь абзац, а не
+    рядок, який збігся, — і це рівно те, чого третій шар не вміє і не має вміти.
 
-    Прочитане цілком, воно каже інше й про інше. Мова не про зайнятість
-    шиною, а про **домен живлення**: на classic ці піни живляться з
-    `VDD_SDIO`, і в light sleep домен вимикається. Пін, виставлений
-    високим, тихо просідає.
+    Наслідок для читача неприємний саме тим, що виглядає як несправність заліза: реле відпускає
+    в сні, а вимірювання показують, що керівний пін «високий». Додано в розділ 06 разом із
+    рядком лікування й ціною цього рядка.'
+  title: GPIO16 і GPIO17 на classic живляться з домену VDD_SDIO
+  match: домену `VDD_SDIO`|ESP_PD_DOMAIN_VDDSDIO|Домен у сні\s*\n?вимикається
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/sleep_modes.rst
+  quote: "Before entering Light-sleep mode, check if any GPIO pin to be driven is part of\
+    \ the {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If so, this power domain must be configured\
+    \ to remain ON during sleep.\n\nFor example, on ESP32-WROOM-32 board, GPIO16 and GPIO17\
+    \ are linked to {IDF_TARGET_SPI_POWER_DOMAIN} power domain. If they are configured to\
+    \ remain high during Light-sleep, the power domain should be configured to remain powered\
+    \ ON. This can be done with :cpp:func:`esp_sleep_pd_config()`::\n\n    esp_sleep_pd_config(ESP_PD_DOMAIN_VDDSDIO,\
+    \ ESP_PD_OPTION_ON);\n"
+  method: помічник пулу (S2, Haiku); контекст прочитаний М1 перед унесенням, 2026-08-26
+  note: '**Прогалина, знайдена побічно, і мало не сприйнята за суперечність.**
 
-    Обидва твердження правдиві й не перетинаються. Але прочитати
-    довелося весь абзац, а не рядок, який збігся, — і це рівно те, чого
-    третій шар не вміє і не має вміти.
+    Помічник подав цю цитату до одиниці про `GPIO16`/`GPIO17`, зайняті флешем і PSRAM. З першого
+    погляду виглядало, ніби джерело заперечує моє власне виправлення проходу 33: там сказано,
+    що ці два піни зайняті **лише на модулях із PSRAM**, а тут ідеться про `WROOM-32`, у якого
+    PSRAM немає.
 
-    Наслідок для читача неприємний саме тим, що виглядає як несправність
-    заліза: реле відпускає в сні, а вимірювання показують, що керівний
-    пін «високий». Додано в розділ 06 разом із рядком лікування й ціною
-    цього рядка.
+    Прочитане цілком, воно каже інше й про інше. Мова не про зайнятість шиною, а про **домен
+    живлення**: на classic ці піни живляться з `VDD_SDIO`, і в light sleep домен вимикається.
+    Пін, виставлений високим, тихо просідає.
 
+    Обидва твердження правдиві й не перетинаються. Але прочитати довелося весь абзац, а не
+    рядок, який збігся, — і це рівно те, чого третій шар не вміє і не має вміти.
+
+    Наслідок для читача неприємний саме тим, що виглядає як несправність заліза: реле відпускає
+    в сні, а вимірювання показують, що керівний пін «високий». Додано в розділ 06 разом із
+    рядком лікування й ціною цього рядка.'
 - nazva: GPIO5 на classic — CS апаратного VSPI
   zbih: '`CS` — вихід, у спокої високий|Вихід на реле · classic'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
-  cytata: |
-    #define VSPI_IOMUX_PIN_NUM_CS   5
-  sposib: >-
-    помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`,
-    2026-08-26
-  notatka: >-
-    Закриває другу половину знахідки проходу 33 про `GPIO5`. Там
-    доведено, що це strapping-пін; тут — що він же типовий `CS`
-    апаратного VSPI, тобто проєкт 62 бере його не випадково, а тому, що
-    це рідний вивід шини.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
+  cytata: '#define VSPI_IOMUX_PIN_NUM_CS   5
 
-    Разом ці два факти й дають оцінку ризику, яку книга наводить: пін
-    strapping, але в ролі `CS` він у спокої високий, а strapping на
-    ньому задає таймінги SDIO-веденого, яких у проєкті немає.
+    '
+  sposib: помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
+  notatka: 'Закриває другу половину знахідки проходу 33 про `GPIO5`. Там доведено, що це strapping-пін;
+    тут — що він же типовий `CS` апаратного VSPI, тобто проєкт 62 бере його не випадково,
+    а тому, що це рідний вивід шини.
 
+    Разом ці два факти й дають оцінку ризику, яку книга наводить: пін strapping, але в ролі
+    `CS` він у спокої високий, а strapping на ньому задає таймінги SDIO-веденого, яких у проєкті
+    немає.'
+  title: GPIO5 на classic — CS апаратного VSPI
+  match: '`CS` — вихід, у спокої високий|Вихід на реле · classic'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
+  quote: '#define VSPI_IOMUX_PIN_NUM_CS   5
+
+    '
+  method: помічник пулу (S2, Haiku), цитата звірена `tools/citaty.py`, 2026-08-26
+  note: 'Закриває другу половину знахідки проходу 33 про `GPIO5`. Там доведено, що це strapping-пін;
+    тут — що він же типовий `CS` апаратного VSPI, тобто проєкт 62 бере його не випадково,
+    а тому, що це рідний вивід шини.
+
+    Разом ці два факти й дають оцінку ризику, яку книга наводить: пін strapping, але в ролі
+    `CS` він у спокої високий, а strapping на ньому задає таймінги SDIO-веденого, яких у проєкті
+    немає.'
 - nazva: Сила драйвера GPIO — типова середня, і файл лежить не там
-  zbih: 'силу драйвера'
+  zbih: силу драйвера
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/gpio_types.h
-  cytata: |
-    GPIO_DRIVE_CAP_0       = 0,    /*!< Pad drive capability: weak          */
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/gpio_types.h
+  cytata: 'GPIO_DRIVE_CAP_0       = 0,    /*!< Pad drive capability: weak          */
+
     GPIO_DRIVE_CAP_1       = 1,    /*!< Pad drive capability: stronger      */
+
     GPIO_DRIVE_CAP_2       = 2,    /*!< Pad drive capability: medium */
+
     GPIO_DRIVE_CAP_DEFAULT = 2,    /*!< Pad drive capability: medium */
+
     GPIO_DRIVE_CAP_3       = 3,    /*!< Pad drive capability: strongest     */
-  sposib: >-
-    адресу виправлено М1 після того, як третій шар відкинув ту, що
-    подали помічники, 2026-08-26
-  notatka: >-
-    **Найкорисніша відмова першого прогону, і не через факт.**
 
-    Адресу `components/esp_hal_gpio/include/hal/gpio_types.h` назвали
-    два різні помічники в різні дні — сильна модель учора й дешева
-    сьогодні. За нею `404`. Файл лежить у
-    `components/hal/include/hal/gpio_types.h`.
+    '
+  sposib: адресу виправлено М1 після того, як третій шар відкинув ту, що подали помічники,
+    2026-08-26
+  notatka: '**Найкорисніша відмова першого прогону, і не через факт.**
 
-    Зміст цитати при цьому правильний до символу. Тобто обидві моделі
-    правильно **пам'ятали** вміст і неправильно вгадали шлях, і жодна
-    перевірка, крім третього шару, цього не бачить: цитата дослівна,
-    факт вірний, посилання веде в нікуди.
+    Адресу `components/esp_hal_gpio/include/hal/gpio_types.h` назвали два різні помічники
+    в різні дні — сильна модель учора й дешева сьогодні. За нею `404`. Файл лежить у `components/hal/include/hal/gpio_types.h`.
 
-    Для друкованої книги це відмова першого роду: читач іде за
-    посиланням і не знаходить нічого, а перевірити інакше не може.
+    Зміст цитати при цьому правильний до символу. Тобто обидві моделі правильно **пам''ятали**
+    вміст і неправильно вгадали шлях, і жодна перевірка, крім третього шару, цього не бачить:
+    цитата дослівна, факт вірний, посилання веде в нікуди.
+
+    Для друкованої книги це відмова першого роду: читач іде за посиланням і не знаходить нічого,
+    а перевірити інакше не може.'
+  title: Сила драйвера GPIO — типова середня, і файл лежить не там
+  match: силу драйвера
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/gpio_types.h
+  quote: 'GPIO_DRIVE_CAP_0       = 0,    /*!< Pad drive capability: weak          */
+
+    GPIO_DRIVE_CAP_1       = 1,    /*!< Pad drive capability: stronger      */
+
+    GPIO_DRIVE_CAP_2       = 2,    /*!< Pad drive capability: medium */
+
+    GPIO_DRIVE_CAP_DEFAULT = 2,    /*!< Pad drive capability: medium */
+
+    GPIO_DRIVE_CAP_3       = 3,    /*!< Pad drive capability: strongest     */
+
+    '
+  method: адресу виправлено М1 після того, як третій шар відкинув ту, що подали помічники,
+    2026-08-26
+  note: '**Найкорисніша відмова першого прогону, і не через факт.**
+
+    Адресу `components/esp_hal_gpio/include/hal/gpio_types.h` назвали два різні помічники
+    в різні дні — сильна модель учора й дешева сьогодні. За нею `404`. Файл лежить у `components/hal/include/hal/gpio_types.h`.
+
+    Зміст цитати при цьому правильний до символу. Тобто обидві моделі правильно **пам''ятали**
+    вміст і неправильно вгадали шлях, і жодна перевірка, крім третього шару, цього не бачить:
+    цитата дослівна, факт вірний, посилання веде в нікуди.
+
+    Для друкованої книги це відмова першого роду: читач іде за посиланням і не знаходить нічого,
+    а перевірити інакше не може.'

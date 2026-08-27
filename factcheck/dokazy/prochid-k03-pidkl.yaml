@@ -8,6 +8,9 @@
 # у всьому реєстрі. Це компроміс між двома законами:
 # широкий взірець бреше, довгий ламається.
 
+
+
+
 - nazva: 'T-K03-018: Windows: `Диспетчер пристроїв` → жовтий знак оклику означає'
   zbih: Windows:\s+`Диспетчер\s+пристроїв`\s+→
   klas: A
@@ -21,6 +24,19 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: довідник підтверджує, що жовтий знак у диспетчері означає драйвер
+  title: 'T-K03-018: Windows: `Диспетчер пристроїв` → жовтий знак оклику означає'
+  match: Windows:\s+`Диспетчер\s+пристроїв`\s+→
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  quote: 'Check the list of identified COM ports in the Windows Device Manager. Disconnect
+    {IDF_TARGET_NAME} and connect it back, to verify which port disappears from the list and
+    then shows back again.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: довідник підтверджує, що жовтий знак у диспетчері означає драйвер
 - nazva: 'T-K03-020: Порт `/dev/ttyUSB0` є, але програма пише «Permission denied»'
   zbih: Порт\s+`/dev/ttyUSB0`\s+є,\s+але
   klas: A
@@ -32,6 +48,17 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документ пояснює проблему Permission denied та як її вирішити
+  title: 'T-K03-020: Порт `/dev/ttyUSB0` є, але програма пише «Permission denied»'
+  match: Порт\s+`/dev/ttyUSB0`\s+є,\s+але
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  quote: 'Adding User to ``dialout`` or ``uucp`` on Linux
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документ пояснює проблему Permission denied та як її вирішити
 - nazva: 'T-K03-027: Порт зайнятий іншою програмою: відкритий монітор, Arduino IDE,'
   zbih: 'Порт\s+зайнятий\s+іншою\s+програмою:'
   klas: A
@@ -45,4 +72,18 @@
     машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: документ пояснює, що порт може бути зайнятий іншою програмою, якщо монітор залишається
+    відкритим
+  title: 'T-K03-027: Порт зайнятий іншою програмою: відкритий монітор, Arduino IDE,'
+  match: 'Порт\s+зайнятий\s+іншою\s+програмою:'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  quote: 'Close the serial terminal after verification that communication is working. If you
+    keep the terminal session open, the serial port will be inaccessible for uploading firmware
+    later.
+
+    '
+  method: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  note: документ пояснює, що порт може бути зайнятий іншою програмою, якщо монітор залишається
     відкритим

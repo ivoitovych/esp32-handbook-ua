@@ -10,302 +10,598 @@
 # JTAG і периферія з коду. Разом 39 одиниць, розбіжностей нуль, одна
 # змістовна прогалина.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: JTAG на classic — чотири піни, два з них strapping
-  zbih: '`GPIO12` і `GPIO15` — це водночас strapping-піни|Адаптер, під.єднаний до `GPIO12`|він займає чотири піни, два з яких — strapping|`GPIO12` заважає старту'
+  zbih: '`GPIO12` і `GPIO15` — це водночас strapping-піни|Адаптер, під.єднаний до `GPIO12`|він
+    займає чотири піни, два з яких — strapping|`GPIO12` заважає старту'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst
-    та .../docs/en/api-reference/peripherals/gpio/esp32.inc,
-    .../docs/en/api-guides/jtag-debugging/esp32.inc
-  cytata: |
-    (esp32.inc, jtag-pins)
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst
+    та .../docs/en/api-reference/peripherals/gpio/esp32.inc, .../docs/en/api-guides/jtag-debugging/esp32.inc
+  cytata: '(esp32.inc, jtag-pins)
+
     * - MTDO / GPIO15  - TDO
+
     * - MTDI / GPIO12  - TDI
+
     * - MTCK / GPIO13  - TCK
+
     * - MTMS / GPIO14  - TMS
 
+
     (gpio/esp32.inc)
+
     Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO)
+
     are strapping pins.
 
+
     (tips-and-quirks.rst)
+
     The MTDI pin of ESP32, being among four pins used for JTAG
-    communication, is also one of ESP32's bootstrapping pins. On power up
-    ESP32 is sampling binary level on MTDI to set it's internal voltage
+
+    communication, is also one of ESP32''s bootstrapping pins. On power up
+
+    ESP32 is sampling binary level on MTDI to set it''s internal voltage
+
     regulator used to supply power to external SPI flash chip. If binary
+
     level on MDTI pin on power up is low, the voltage regulator is set to
+
     deliver 3.3 V, if it is high, then the voltage is set to 1.8 V. …
+
     Once JTAG is connected, it overrides the pull-up or pull-down
+
     resistor that is supposed to do the bootstrapping.
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Найцінніше тут — останнє речення `tips-and-quirks.rst`: **під'єднаний
-    JTAG перекриває той самий резистор, який мав зробити strapping**. Це
-    механізм, якого книзі бракувало: вона казала «адаптер може утримувати
-    пін високим», а джерело каже сильніше — адаптер узагалі відбирає в
-    підтягування право голосу.
 
-    Тобто порада розділу 27 «від'єднати адаптер і перевірити, що плата
-    стартує без нього» — не обхідний шлях, а єдиний спосіб побачити
-    справжній рівень strapping.
+    '
+  sposib: curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Найцінніше тут — останнє речення `tips-and-quirks.rst`: **під''єднаний JTAG перекриває
+    той самий резистор, який мав зробити strapping**. Це механізм, якого книзі бракувало:
+    вона казала «адаптер може утримувати пін високим», а джерело каже сильніше — адаптер узагалі
+    відбирає в підтягування право голосу.
 
-    Прохід 24 закрив ці піни з `io_mux_reg.h` (де ім'я регістра є іменем
-    сигналу); тут вони підтверджені вдруге з документації, і додався
-    механізм.
+    Тобто порада розділу 27 «від''єднати адаптер і перевірити, що плата стартує без нього»
+    — не обхідний шлях, а єдиний спосіб побачити справжній рівень strapping.
 
-- nazva: USB-JTAG і вбудований відлагоджувач — піни по сімействах
-  zbih: 'USB-JTAG займає конкретні піни|`GPIO18` і `GPIO19` на C3|`GPIO19`, `GPIO20`|спалив `JTAG_DISABLE`'
-  klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst
-    та .../docs/en/security/secure-boot-v2.rst
-  cytata: |
-    {IDF_TARGET_JTAG_PIN_Dneg: … esp32c3="GPIO18", esp32s3="GPIO19", …}
-    {IDF_TARGET_JTAG_PIN_Dpos: … esp32c3="GPIO19", esp32s3="GPIO20", …}
+    Прохід 24 закрив ці піни з `io_mux_reg.h` (де ім''я регістра є іменем сигналу); тут вони
+    підтверджені вдруге з документації, і додався механізм.'
+  title: JTAG на classic — чотири піни, два з них strapping
+  match: '`GPIO12` і `GPIO15` — це водночас strapping-піни|Адаптер, під.єднаний до `GPIO12`|він
+    займає чотири піни, два з яких — strapping|`GPIO12` заважає старту'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst
+    та .../docs/en/api-reference/peripherals/gpio/esp32.inc, .../docs/en/api-guides/jtag-debugging/esp32.inc
+  quote: '(esp32.inc, jtag-pins)
 
-    (secure-boot-v2.rst)
-    By default, when Secure Boot is enabled, JTAG debugging is disabled
-    via eFuse. The bootloader does this on the first boot, at the same
-    time it enables Secure Boot.
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Піни збіглися. Але друга половина запису важливіша: Secure Boot
-    вимикає JTAG **сам**, при першому ж старті, без окремої команди.
+    * - MTDO / GPIO15  - TDO
 
-    Книга писала «якщо попередній власник спалив `JTAG_DISABLE` **або**
-    ввімкнув Secure Boot» — і це «або» тепер підтверджене джерелом, а не
-    здогадкою. Для розділу 24 (чужа прошивка) це прямий наслідок: на
-    пристрої з Secure Boot відлагоджувача не буде ніколи, і шукати
-    несправність адаптера немає сенсу.
+    * - MTDI / GPIO12  - TDI
 
-- nazva: DAC, ADC-затухання й обв'язка входу — розділ 33
-  zbih: 'Канал 1 → `GPIO25`|Канал 2 → `GPIO26`|Канал 1 → `GPIO17`|Канал 2 → `GPIO18`|з максимальним затуханням доступний майже весь|\*\*Конденсатор\*\* 100 нФ від входу до землі|На classic `GPIO8` брати не можна взагалі'
-  klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst,
-    .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
-  cytata: |
-    (dac.rst)
-    {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
-    {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+    * - MTCK / GPIO13  - TCK
 
-    (adc_calibration.rst)
-    Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
-    voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
-    the attenuation of ADC is set to 11 dB, and input voltage higher than
-    2800 mV is not supported.
+    * - MTMS / GPIO14  - TMS
 
-    The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
-    discrepancies in ADC readings. Depending on the usage scenario, you
-    may need to connect a bypass capacitor (e.g., a 100 nF ceramic
-    capacitor) to the ADC input pad in use, to minimize noise.
 
     (gpio/esp32.inc)
+
+    Strapping pin: GPIO0, GPIO2, GPIO5, GPIO12 (MTDI), and GPIO15 (MTDO)
+
+    are strapping pins.
+
+
+    (tips-and-quirks.rst)
+
+    The MTDI pin of ESP32, being among four pins used for JTAG
+
+    communication, is also one of ESP32''s bootstrapping pins. On power up
+
+    ESP32 is sampling binary level on MTDI to set it''s internal voltage
+
+    regulator used to supply power to external SPI flash chip. If binary
+
+    level on MDTI pin on power up is low, the voltage regulator is set to
+
+    deliver 3.3 V, if it is high, then the voltage is set to 1.8 V. …
+
+    Once JTAG is connected, it overrides the pull-up or pull-down
+
+    resistor that is supposed to do the bootstrapping.
+
+    '
+  method: curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас
+    — М1
+  note: 'Найцінніше тут — останнє речення `tips-and-quirks.rst`: **під''єднаний JTAG перекриває
+    той самий резистор, який мав зробити strapping**. Це механізм, якого книзі бракувало:
+    вона казала «адаптер може утримувати пін високим», а джерело каже сильніше — адаптер узагалі
+    відбирає в підтягування право голосу.
+
+    Тобто порада розділу 27 «від''єднати адаптер і перевірити, що плата стартує без нього»
+    — не обхідний шлях, а єдиний спосіб побачити справжній рівень strapping.
+
+    Прохід 24 закрив ці піни з `io_mux_reg.h` (де ім''я регістра є іменем сигналу); тут вони
+    підтверджені вдруге з документації, і додався механізм.'
+- nazva: USB-JTAG і вбудований відлагоджувач — піни по сімействах
+  zbih: USB-JTAG займає конкретні піни|`GPIO18` і `GPIO19` на C3|`GPIO19`, `GPIO20`|спалив
+    `JTAG_DISABLE`
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst
+    та .../docs/en/security/secure-boot-v2.rst
+  cytata: '{IDF_TARGET_JTAG_PIN_Dneg: … esp32c3="GPIO18", esp32s3="GPIO19", …}
+
+    {IDF_TARGET_JTAG_PIN_Dpos: … esp32c3="GPIO19", esp32s3="GPIO20", …}
+
+
+    (secure-boot-v2.rst)
+
+    By default, when Secure Boot is enabled, JTAG debugging is disabled
+
+    via eFuse. The bootloader does this on the first boot, at the same
+
+    time it enables Secure Boot.
+
+    '
+  sposib: curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Піни збіглися. Але друга половина запису важливіша: Secure Boot вимикає JTAG **сам**,
+    при першому ж старті, без окремої команди.
+
+    Книга писала «якщо попередній власник спалив `JTAG_DISABLE` **або** ввімкнув Secure Boot»
+    — і це «або» тепер підтверджене джерелом, а не здогадкою. Для розділу 24 (чужа прошивка)
+    це прямий наслідок: на пристрої з Secure Boot відлагоджувача не буде ніколи, і шукати
+    несправність адаптера немає сенсу.'
+  title: USB-JTAG і вбудований відлагоджувач — піни по сімействах
+  match: USB-JTAG займає конкретні піни|`GPIO18` і `GPIO19` на C3|`GPIO19`, `GPIO20`|спалив
+    `JTAG_DISABLE`
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst
+    та .../docs/en/security/secure-boot-v2.rst
+  quote: '{IDF_TARGET_JTAG_PIN_Dneg: … esp32c3="GPIO18", esp32s3="GPIO19", …}
+
+    {IDF_TARGET_JTAG_PIN_Dpos: … esp32c3="GPIO19", esp32s3="GPIO20", …}
+
+
+    (secure-boot-v2.rst)
+
+    By default, when Secure Boot is enabled, JTAG debugging is disabled
+
+    via eFuse. The bootloader does this on the first boot, at the same
+
+    time it enables Secure Boot.
+
+    '
+  method: curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас
+    — М1
+  note: 'Піни збіглися. Але друга половина запису важливіша: Secure Boot вимикає JTAG **сам**,
+    при першому ж старті, без окремої команди.
+
+    Книга писала «якщо попередній власник спалив `JTAG_DISABLE` **або** ввімкнув Secure Boot»
+    — і це «або» тепер підтверджене джерелом, а не здогадкою. Для розділу 24 (чужа прошивка)
+    це прямий наслідок: на пристрої з Secure Boot відлагоджувача не буде ніколи, і шукати
+    несправність адаптера немає сенсу.'
+- nazva: DAC, ADC-затухання й обв'язка входу — розділ 33
+  zbih: Канал 1 → `GPIO25`|Канал 2 → `GPIO26`|Канал 1 → `GPIO17`|Канал 2 → `GPIO18`|з максимальним
+    затуханням доступний майже весь|\*\*Конденсатор\*\* 100 нФ від входу до землі|На classic
+    `GPIO8` брати не можна взагалі
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst,
+    .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+  cytata: '(dac.rst)
+
+    {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+
+    {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+
+
+    (adc_calibration.rst)
+
+    Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+
+    voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+
+    the attenuation of ADC is set to 11 dB, and input voltage higher than
+
+    2800 mV is not supported.
+
+
+    The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+
+    discrepancies in ADC readings. Depending on the usage scenario, you
+
+    may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+
+    capacitor) to the ADC input pad in use, to minimize noise.
+
+
+    (gpio/esp32.inc)
+
     SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+
     and PSRAM integrated on the module and therefore should not be used
+
     for other purposes.
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Таблиця DAC підтверджена втретє й з третього джерела — після
-    `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який
-    двічі в цій книзі був записаний неправильно, три незалежні
-    підтвердження не забагато.
 
-    Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В»
-    насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга
-    каже це якісно й не бреше, але числа варті того, щоб колись стати
-    таблицею.
+    '
+  sposib: curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у
+    проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно,
+    три незалежні підтвердження не забагато.
 
-    Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як
-    зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів
-    `WROVER` це неповно. Записую як завдання, не як виправлення: рядок
-    джерела каже «usually», і потрібна перевірка за конкретним модулем.
+    Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11
+    дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того,
+    щоб колись стати таблицею.
 
+    Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM
+    на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання,
+    не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.'
+  title: DAC, ADC-затухання й обв'язка входу — розділ 33
+  match: Канал 1 → `GPIO25`|Канал 2 → `GPIO26`|Канал 1 → `GPIO17`|Канал 2 → `GPIO18`|з максимальним
+    затуханням доступний майже весь|\*\*Конденсатор\*\* 100 нФ від входу до землі|На classic
+    `GPIO8` брати не можна взагалі
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst,
+    .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
+  quote: '(dac.rst)
+
+    {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+
+    {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+
+
+    (adc_calibration.rst)
+
+    Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+
+    voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+
+    the attenuation of ADC is set to 11 dB, and input voltage higher than
+
+    2800 mV is not supported.
+
+
+    The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+
+    discrepancies in ADC readings. Depending on the usage scenario, you
+
+    may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+
+    capacitor) to the ADC input pad in use, to minimize noise.
+
+
+    (gpio/esp32.inc)
+
+    SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+
+    and PSRAM integrated on the module and therefore should not be used
+
+    for other purposes.
+
+    '
+  method: curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас
+    — М1
+  note: 'Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході
+    23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно,
+    три незалежні підтвердження не забагато.
+
+    Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11
+    дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того,
+    щоб колись стати таблицею.
+
+    Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM
+    на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання,
+    не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.'
 - nazva: LISTEN_ONLY і NO_ACK — режими TWAI дослівно
-  zbih: 'TWAI_MODE_LISTEN_ONLY|TWAI_MODE_NO_ACK|не порада для акуратних, а спосіб не зіпсувати чужу шину|правильний спосіб знайомитися з чужою шиною|Трансивер обов.язковий'
+  zbih: TWAI_MODE_LISTEN_ONLY|TWAI_MODE_NO_ACK|не порада для акуратних, а спосіб не зіпсувати
+    чужу шину|правильний спосіб знайомитися з чужою шиною|Трансивер обов.язковий
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h
     та .../docs/en/api-reference/peripherals/twai.rst
-  cytata: |
-    TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence
-                                  the bus (No transmissions or
-                                  acknowledgments) but can receive
-                                  messages */
-    TWAI_MODE_NO_ACK,        /**< Transmission does not require
-                                  acknowledgment. Use this mode for self
-                                  testing */
+  cytata: "TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence\n        \
+    \                      the bus (No transmissions or\n                              acknowledgments)\
+    \ but can receive\n                              messages */\nTWAI_MODE_NO_ACK,      \
+    \  /**< Transmission does not require\n                              acknowledgment. Use\
+    \ this mode for self\n                              testing */\n\n(twai.rst)\nThe {IDF_TARGET_NAME}\
+    \ does not integrate an internal TWAI transceiver.\nTherefore, an external transceiver\
+    \ is required to connect to a TWAI\nbus.\n"
+  sposib: curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Опис `LISTEN_ONLY` у заголовку сильніший за формулювання книги: не просто «слухає»,
+    а **не впливає на шину зовсім** — ні передачею, ні підтвердженням. Саме друге й робить
+    режим безпечним для чужої машини: вузол, що підтверджує чужі кадри, уже втручається.
 
-    (twai.rst)
-    The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.
-    Therefore, an external transceiver is required to connect to a TWAI
-    bus.
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Опис `LISTEN_ONLY` у заголовку сильніший за формулювання книги: не
-    просто «слухає», а **не впливає на шину зовсім** — ні передачею, ні
-    підтвердженням. Саме друге й робить режим безпечним для чужої
-    машини: вузол, що підтверджує чужі кадри, уже втручається.
+    «Трансивер обов''язковий» підтверджено. Друга половина того ж твердження — «має бути на
+    3.3 В, інакше спалить пін» — потребує datasheet, і агент чесно виніс її окремо. Вона в
+    наряді М2.'
+  title: LISTEN_ONLY і NO_ACK — режими TWAI дослівно
+  match: TWAI_MODE_LISTEN_ONLY|TWAI_MODE_NO_ACK|не порада для акуратних, а спосіб не зіпсувати
+    чужу шину|правильний спосіб знайомитися з чужою шиною|Трансивер обов.язковий
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h
+    та .../docs/en/api-reference/peripherals/twai.rst
+  quote: "TWAI_MODE_LISTEN_ONLY,   /**< The TWAI controller will not influence\n         \
+    \                     the bus (No transmissions or\n                              acknowledgments)\
+    \ but can receive\n                              messages */\nTWAI_MODE_NO_ACK,      \
+    \  /**< Transmission does not require\n                              acknowledgment. Use\
+    \ this mode for self\n                              testing */\n\n(twai.rst)\nThe {IDF_TARGET_NAME}\
+    \ does not integrate an internal TWAI transceiver.\nTherefore, an external transceiver\
+    \ is required to connect to a TWAI\nbus.\n"
+  method: curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас
+    — М1
+  note: 'Опис `LISTEN_ONLY` у заголовку сильніший за формулювання книги: не просто «слухає»,
+    а **не впливає на шину зовсім** — ні передачею, ні підтвердженням. Саме друге й робить
+    режим безпечним для чужої машини: вузол, що підтверджує чужі кадри, уже втручається.
 
-    «Трансивер обов'язковий» підтверджено. Друга половина того ж
-    твердження — «має бути на 3.3 В, інакше спалить пін» — потребує
-    datasheet, і агент чесно виніс її окремо. Вона в наряді М2.
-
+    «Трансивер обов''язковий» підтверджено. Друга половина того ж твердження — «має бути на
+    3.3 В, інакше спалить пін» — потребує datasheet, і агент чесно виніс її окремо. Вона в
+    наряді М2.'
 - nazva: Рівні логу, esp_err_to_name і монітор — розділ 25
-  zbih: '`Default log verbosity` \| рівень, з яким прошивка стартує|`esp_err_to_name` перетворює число на читабельне|в лозі буде `0x105`|розшифровує backtrace\*\* у назви функцій'
+  zbih: '`Default log verbosity` \| рівень, з яким прошивка стартує|`esp_err_to_name` перетворює
+    число на читабельне|в лозі буде `0x105`|розшифровує backtrace\*\* у назви функцій'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level,
-    .../components/esp_common/include/esp_err.h,
-    .../components/esp_driver_i2c/include/driver/i2c_master.h,
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level,
+    .../components/esp_common/include/esp_err.h, .../components/esp_driver_i2c/include/driver/i2c_master.h,
     .../docs/en/api-guides/tools/idf-monitor.rst
-  cytata: |
-    (Kconfig.level)
-    choice LOG_DEFAULT_LEVEL
-        bool "Default log verbosity"
-        default LOG_DEFAULT_LEVEL_INFO
+  cytata: "(Kconfig.level)\nchoice LOG_DEFAULT_LEVEL\n    bool \"Default log verbosity\"\n\
+    \    default LOG_DEFAULT_LEVEL_INFO\n\n(esp_err.h)\nconst char *esp_err_to_name(esp_err_t\
+    \ code);\n#define ESP_ERR_NOT_FOUND           0x105\n\n(i2c_master.h)\n*      - ESP_ERR_NOT_FOUND:\
+    \ I2C probe failed, doesn't find the device\n*        with specific address you gave.\n\
+    \n(idf-monitor.rst)\nWhenever the chip outputs a hexadecimal address that points to\n\
+    executable code, IDF monitor looks up the location in the source code\n(file name and\
+    \ line number) and prints the location on the next line\nin yellow.\n"
+  sposib: curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Збіг, вартий окремої згадки: книга бере `0x105` як приклад нерозшифрованого коду
+    помилки, і `0x105` — це саме `ESP_ERR_NOT_FOUND`, який повертає `i2c_master_probe`, коли
+    пристрою на шині немає. Тобто приклад книги випадково (чи ні) точно збігся з найчастішим
+    випадком, у якому читач це число й побачить.
 
-    (esp_err.h)
-    const char *esp_err_to_name(esp_err_t code);
-    #define ESP_ERR_NOT_FOUND           0x105
+    Так само підтверджено, що монітор шукає адресу у **вихідному коді** й друкує файл і рядок
+    — це те, що книга називає «розшифровує backtrace».'
+  title: Рівні логу, esp_err_to_name і монітор — розділ 25
+  match: '`Default log verbosity` \| рівень, з яким прошивка стартує|`esp_err_to_name` перетворює
+    число на читабельне|в лозі буде `0x105`|розшифровує backtrace\*\* у назви функцій'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level,
+    .../components/esp_common/include/esp_err.h, .../components/esp_driver_i2c/include/driver/i2c_master.h,
+    .../docs/en/api-guides/tools/idf-monitor.rst
+  quote: "(Kconfig.level)\nchoice LOG_DEFAULT_LEVEL\n    bool \"Default log verbosity\"\n\
+    \    default LOG_DEFAULT_LEVEL_INFO\n\n(esp_err.h)\nconst char *esp_err_to_name(esp_err_t\
+    \ code);\n#define ESP_ERR_NOT_FOUND           0x105\n\n(i2c_master.h)\n*      - ESP_ERR_NOT_FOUND:\
+    \ I2C probe failed, doesn't find the device\n*        with specific address you gave.\n\
+    \n(idf-monitor.rst)\nWhenever the chip outputs a hexadecimal address that points to\n\
+    executable code, IDF monitor looks up the location in the source code\n(file name and\
+    \ line number) and prints the location on the next line\nin yellow.\n"
+  method: curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26; взірець і клас
+    — М1
+  note: 'Збіг, вартий окремої згадки: книга бере `0x105` як приклад нерозшифрованого коду
+    помилки, і `0x105` — це саме `ESP_ERR_NOT_FOUND`, який повертає `i2c_master_probe`, коли
+    пристрою на шині немає. Тобто приклад книги випадково (чи ні) точно збігся з найчастішим
+    випадком, у якому читач це число й побачить.
 
-    (i2c_master.h)
-    *      - ESP_ERR_NOT_FOUND: I2C probe failed, doesn't find the device
-    *        with specific address you gave.
-
-    (idf-monitor.rst)
-    Whenever the chip outputs a hexadecimal address that points to
-    executable code, IDF monitor looks up the location in the source code
-    (file name and line number) and prints the location on the next line
-    in yellow.
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 1), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Збіг, вартий окремої згадки: книга бере `0x105` як приклад
-    нерозшифрованого коду помилки, і `0x105` — це саме
-    `ESP_ERR_NOT_FOUND`, який повертає `i2c_master_probe`, коли пристрою
-    на шині немає. Тобто приклад книги випадково (чи ні) точно збігся з
-    найчастішим випадком, у якому читач це число й побачить.
-
-    Так само підтверджено, що монітор шукає адресу у **вихідному коді** й
-    друкує файл і рядок — це те, що книга називає «розшифровує backtrace».
-
+    Так само підтверджено, що монітор шукає адресу у **вихідному коді** й друкує файл і рядок
+    — це те, що книга називає «розшифровує backtrace».'
 - nazva: Типова розбивка флешу — зсуви, розміри й суфікси
-  zbih: '`nvs` · Зсув → `0x9000`|`nvs` · Розмір → `0x6000`|`phy_init` · Розмір → `0x1000`|застосунок іде на `0x10000`|Розмір записується числом|Адреса `0x9000` — початок розділу `nvs`|Таблиця розділів лежить на `0x8000` і друкується в boot-лозі'
+  zbih: '`nvs` · Зсув → `0x9000`|`nvs` · Розмір → `0x6000`|`phy_init` · Розмір → `0x1000`|застосунок
+    іде на `0x10000`|Розмір записується числом|Адреса `0x9000` — початок розділу `nvs`|Таблиця
+    розділів лежить на `0x8000` і друкується в boot-лозі'
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
     та .../components/bootloader_support/src/bootloader_utility.c
-  cytata: |
-    # ESP-IDF Partition Table
+  cytata: '# ESP-IDF Partition Table
+
     # Name,   Type, SubType, Offset,  Size, Flags
+
     nvs,      data, nvs,     0x9000,  0x6000,
+
     phy_init, data, phy,     0xf000,  0x1000,
+
     factory,  app,  factory, 0x10000, 1M,
+
 
     In both cases the factory app is flashed at offset 0x10000.
 
+
     Sizes and offsets can be specified as decimal numbers, hex numbers
+
     with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+
     bytes).
 
+
     (bootloader_utility.c)
+
     ESP_LOGI(TAG, "Partition Table:");
+
     ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+
     …
+
     ESP_LOGI(TAG, "End of partition table");
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Уся типова розбивка книги збіглася з тією, що друкує сама
-    документація ESP-IDF, — рядок у рядок.
 
-    Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими
-    таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого
-    пристрою видно в boot-лозі без жодних інструментів; тепер це
-    підтверджено не документацією, а самою функцією, яка це друкує.
+    '
+  sposib: curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF,
+    — рядок у рядок.
 
+    Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог.
+    Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів;
+    тепер це підтверджено не документацією, а самою функцією, яка це друкує.'
+  title: Типова розбивка флешу — зсуви, розміри й суфікси
+  match: '`nvs` · Зсув → `0x9000`|`nvs` · Розмір → `0x6000`|`phy_init` · Розмір → `0x1000`|застосунок
+    іде на `0x10000`|Розмір записується числом|Адреса `0x9000` — початок розділу `nvs`|Таблиця
+    розділів лежить на `0x8000` і друкується в boot-лозі'
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
+    та .../components/bootloader_support/src/bootloader_utility.c
+  quote: '# ESP-IDF Partition Table
+
+    # Name,   Type, SubType, Offset,  Size, Flags
+
+    nvs,      data, nvs,     0x9000,  0x6000,
+
+    phy_init, data, phy,     0xf000,  0x1000,
+
+    factory,  app,  factory, 0x10000, 1M,
+
+
+    In both cases the factory app is flashed at offset 0x10000.
+
+
+    Sizes and offsets can be specified as decimal numbers, hex numbers
+
+    with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
+
+    bytes).
+
+
+    (bootloader_utility.c)
+
+    ESP_LOGI(TAG, "Partition Table:");
+
+    ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
+
+    …
+
+    ESP_LOGI(TAG, "End of partition table");
+
+    '
+  method: curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас
+    — М1
+  note: 'Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, —
+    рядок у рядок.
+
+    Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог.
+    Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів;
+    тепер це підтверджено не документацією, а самою функцією, яка це друкує.'
 - nazva: Зміна розбивки, erase-flash і незворотність
-  zbih: 'Після зміни розбивки повна прошивка робиться з попереднім `erase-flash`|`erase-flash` без дампа незворотний|`erase-flash` такий болючий'
+  zbih: Після зміни розбивки повна прошивка робиться з попереднім `erase-flash`|`erase-flash`
+    без дампа незворотний|`erase-flash` такий болючий
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
     та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
-  cytata: |
-    (partition-tables.rst)
-    Note that updating the partition table does not erase data that may
-    have been stored according to the old partition table. You can use
-    ``idf.py erase-flash`` (or ``esptool.py erase_flash``) to erase the
-    entire flash contents.
+  cytata: "(partition-tables.rst)\nNote that updating the partition table does not erase data\
+    \ that may\nhave been stored according to the old partition table. You can use\n``idf.py\
+    \ erase-flash`` (or ``esptool.py erase_flash``) to erase the\nentire flash contents.\n\
+    \n(basic-commands.rst)\nTo erase the entire flash chip (all data replaced with 0xFF bytes):\n\
+    \    esptool erase-flash\n"
+  sposib: curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Порада книги підтверджена з обох боків: документація прямо каже, що зміна таблиці
+    **не стирає** даних за старою розбивкою, а `erase-flash` замінює все на `0xFF`.
 
-    (basic-commands.rst)
-    To erase the entire flash chip (all data replaced with 0xFF bytes):
-        esptool erase-flash
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Порада книги підтверджена з обох боків: документація прямо каже, що
-    зміна таблиці **не стирає** даних за старою розбивкою, а `erase-flash`
-    замінює все на `0xFF`.
+    Агент чесно позначив, що «незворотний» — висновок книги, а не речення джерела. Погоджуюся
+    й лишаю клас `A`: із «все замінюється на `0xFF`» незворотність випливає однозначно, а
+    не правдоподібно. Межа між `A` і `B` тут саме в цьому — чи є інший можливий висновок.
+    Тут немає.'
+  title: Зміна розбивки, erase-flash і незворотність
+  match: Після зміни розбивки повна прошивка робиться з попереднім `erase-flash`|`erase-flash`
+    без дампа незворотний|`erase-flash` такий болючий
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst
+    та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
+  quote: "(partition-tables.rst)\nNote that updating the partition table does not erase data\
+    \ that may\nhave been stored according to the old partition table. You can use\n``idf.py\
+    \ erase-flash`` (or ``esptool.py erase_flash``) to erase the\nentire flash contents.\n\
+    \n(basic-commands.rst)\nTo erase the entire flash chip (all data replaced with 0xFF bytes):\n\
+    \    esptool erase-flash\n"
+  method: curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас
+    — М1
+  note: 'Порада книги підтверджена з обох боків: документація прямо каже, що зміна таблиці
+    **не стирає** даних за старою розбивкою, а `erase-flash` замінює все на `0xFF`.
 
-    Агент чесно позначив, що «незворотний» — висновок книги, а не речення
-    джерела. Погоджуюся й лишаю клас `A`: із «все замінюється на `0xFF`»
-    незворотність випливає однозначно, а не правдоподібно. Межа між `A` і
-    `B` тут саме в цьому — чи є інший можливий висновок. Тут немає.
-
+    Агент чесно позначив, що «незворотний» — висновок книги, а не речення джерела. Погоджуюся
+    й лишаю клас `A`: із «все замінюється на `0xFF`» незворотність випливає однозначно, а
+    не правдоподібно. Межа між `A` і `B` тут саме в цьому — чи є інший можливий висновок.
+    Тут немає.'
 - nazva: Буфер у PSRAM без MALLOC_CAP_SPIRAM — і що це коштує
-  zbih: 'буфер на 64 КБ опиниться в PSRAM \*\*без\*\* жодного `MALLOC_CAP_SPIRAM`|`DRAM_ATTR`|Вимикати цю перевірку \(`No checking`\)'
+  zbih: буфер на 64 КБ опиниться в PSRAM \*\*без\*\* жодного `MALLOC_CAP_SPIRAM`|`DRAM_ATTR`|Вимикати
+    цю перевірку \(`No checking`\)
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/mem_alloc.rst,
-    .../docs/en/api-guides/external-ram.rst,
-    .../components/esp_common/include/esp_attr.h,
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/mem_alloc.rst,
+    .../docs/en/api-guides/external-ram.rst, .../components/esp_common/include/esp_attr.h,
     .../components/freertos/Kconfig.freertos
-  cytata: |
-    (mem_alloc.rst)
-    Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable
-    for use with hardware DMA engines (for example SPI and I2S). This
-    capability flag excludes any external PSRAM.
+  cytata: "(mem_alloc.rst)\nUse the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable\n\
+    for use with hardware DMA engines (for example SPI and I2S). This\ncapability flag excludes\
+    \ any external PSRAM.\n\n(external-ram.rst)\nwhen accessing large chunks of data (> 32\
+    \ KB), the cache can be\ninsufficient, and speeds will fall back to the access speed of\
+    \ the\nexternal RAM.\n\n(esp_attr.h)\n// Forces data into DRAM instead of flash\n#define\
+    \ DRAM_ATTR _SECTION_ATTR_IMPL(\".dram1\", __COUNTER__)\n\n(Kconfig.freertos)\nconfig\
+    \ FREERTOS_CHECK_STACKOVERFLOW_NONE\n    bool \"No checking\"\n    help\n        Do not\
+    \ check for stack overflows\n        (configCHECK_FOR_STACK_OVERFLOW = 0)\n"
+  sposib: curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас
+    — М1
+  notatka: 'Обидві застороги книги про буфер у PSRAM підтверджено окремо, і кожна зі свого
+    джерела: `MALLOC_CAP_DMA` **виключає** зовнішню пам''ять, а швидкість падає до швидкості
+    зовнішньої шини на блоках понад 32 КБ.
 
-    (external-ram.rst)
-    when accessing large chunks of data (> 32 KB), the cache can be
-    insufficient, and speeds will fall back to the access speed of the
-    external RAM.
+    Тобто буфер на 64 КБ, який туди потрапив сам, справді втрачає обидві властивості, які
+    автор від нього чекав. Прохід 25 знайшов саме цей механізм; тут він доведений із документації,
+    а не лише з Kconfig.
 
-    (esp_attr.h)
-    // Forces data into DRAM instead of flash
-    #define DRAM_ATTR _SECTION_ATTR_IMPL(".dram1", __COUNTER__)
+    Агент окремо зауважив, що «погана угода» про вимкнення перевірки стека — редакційна оцінка,
+    а не речення джерела. Це правильне зауваження, і саме тому в записі процитовано лише фактичну
+    передумову: `No checking` справді вимикає виявлення цілком.'
+  title: Буфер у PSRAM без MALLOC_CAP_SPIRAM — і що це коштує
+  match: буфер на 64 КБ опиниться в PSRAM \*\*без\*\* жодного `MALLOC_CAP_SPIRAM`|`DRAM_ATTR`|Вимикати
+    цю перевірку \(`No checking`\)
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/mem_alloc.rst,
+    .../docs/en/api-guides/external-ram.rst, .../components/esp_common/include/esp_attr.h,
+    .../components/freertos/Kconfig.freertos
+  quote: "(mem_alloc.rst)\nUse the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable\n\
+    for use with hardware DMA engines (for example SPI and I2S). This\ncapability flag excludes\
+    \ any external PSRAM.\n\n(external-ram.rst)\nwhen accessing large chunks of data (> 32\
+    \ KB), the cache can be\ninsufficient, and speeds will fall back to the access speed of\
+    \ the\nexternal RAM.\n\n(esp_attr.h)\n// Forces data into DRAM instead of flash\n#define\
+    \ DRAM_ATTR _SECTION_ATTR_IMPL(\".dram1\", __COUNTER__)\n\n(Kconfig.freertos)\nconfig\
+    \ FREERTOS_CHECK_STACKOVERFLOW_NONE\n    bool \"No checking\"\n    help\n        Do not\
+    \ check for stack overflows\n        (configCHECK_FOR_STACK_OVERFLOW = 0)\n"
+  method: curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас
+    — М1
+  note: 'Обидві застороги книги про буфер у PSRAM підтверджено окремо, і кожна зі свого джерела:
+    `MALLOC_CAP_DMA` **виключає** зовнішню пам''ять, а швидкість падає до швидкості зовнішньої
+    шини на блоках понад 32 КБ.
 
-    (Kconfig.freertos)
-    config FREERTOS_CHECK_STACKOVERFLOW_NONE
-        bool "No checking"
-        help
-            Do not check for stack overflows
-            (configCHECK_FOR_STACK_OVERFLOW = 0)
-  sposib: >-
-    curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26;
-    взірець і клас — М1
-  notatka: >-
-    Обидві застороги книги про буфер у PSRAM підтверджено окремо, і кожна
-    зі свого джерела: `MALLOC_CAP_DMA` **виключає** зовнішню пам'ять, а
-    швидкість падає до швидкості зовнішньої шини на блоках понад 32 КБ.
+    Тобто буфер на 64 КБ, який туди потрапив сам, справді втрачає обидві властивості, які
+    автор від нього чекав. Прохід 25 знайшов саме цей механізм; тут він доведений із документації,
+    а не лише з Kconfig.
 
-    Тобто буфер на 64 КБ, який туди потрапив сам, справді втрачає обидві
-    властивості, які автор від нього чекав. Прохід 25 знайшов саме цей
-    механізм; тут він доведений із документації, а не лише з Kconfig.
-
-    Агент окремо зауважив, що «погана угода» про вимкнення перевірки
-    стека — редакційна оцінка, а не речення джерела. Це правильне
-    зауваження, і саме тому в записі процитовано лише фактичну
-    передумову: `No checking` справді вимикає виявлення цілком.
+    Агент окремо зауважив, що «погана угода» про вимкнення перевірки стека — редакційна оцінка,
+    а не речення джерела. Це правильне зауваження, і саме тому в записі процитовано лише фактичну
+    передумову: `No checking` справді вимикає виявлення цілком.'

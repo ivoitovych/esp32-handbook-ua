@@ -13,139 +13,199 @@
 # збіг перевірено за назвою файлу в порталі — DS_SX1276-7-8-9_W_APP_V7,
 # 132 сторінки, Rev. 4 - March 2015.
 
-- nazva: Робочий діапазон SF у LoRa — 7…12, а SF6 окремий режим
-  zbih: 'робочий діапазон \*\*7…12\*\*|Апаратно існує ще й SF6'
-  klas: A
-  dzherelo: >-
-    SX1276/77/78/79 Datasheet, Rev. 4 (March 2015), розділ 4.1.1.2
-    «Spreading Factor», Table 13 «Range of Spreading Factors», с. 27
-  cytata: |
-    Table 13 Range of Spreading Factors
-      SpreadingFactor   Spreading Factor    LoRa Demodulator
-      (RegModulationCfg) (Chips / symbol)        SNR
-            6                  64               -5 dB
-            7                 128              -7.5 dB
-            8                 256               -10 dB
-            9                 512             -12.5 dB
-           10                1024               -15 dB
-           11                2048             -17.5 dB
-           12                4096               -20 dB
 
-    Spreading Factor 6
-    SF = 6 Is a special use case for the highest data rate transmission possible
-    with the LoRa modem. To this end several settings must be activated in the
-    SX1276/77/78/79 registers when it is in use:
-      Set SpreadingFactor = 6 in RegModemConfig2
-      The header must be set to Implicit mode.
-      Set the bit field DetectionOptimize of register RegLoRaDetectOptimize to "0b101".
-      Write 0x0C in the register RegDetectionThreshold.
-  sposib: >-
-    PDF Semtech (DS_SX1276-7-8-9_W_APP_V7, 132 с.) через дзеркало
-    cdn-shop.adafruit.com, pdftotext -layout, 2026-08-26
-  notatka: >-
-    Розділ 43 звірено дослівно, включно з обґрунтуванням «чому діапазон
-    названо від сімки»: SF6 справді вимагає неявного заголовка й власних
-    налаштувань детектування, і справді не вмикається «просто меншим
-    числом». Книга формулює це точніше за наряд, який просив звірити
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: Робочий діапазон SF у LoRa — 7…12, а SF6 окремий режим
+  zbih: робочий діапазон \*\*7…12\*\*|Апаратно існує ще й SF6
+  klas: A
+  dzherelo: SX1276/77/78/79 Datasheet, Rev. 4 (March 2015), розділ 4.1.1.2 «Spreading Factor»,
+    Table 13 «Range of Spreading Factors», с. 27
+  cytata: "Table 13 Range of Spreading Factors\n  SpreadingFactor   Spreading Factor    LoRa\
+    \ Demodulator\n  (RegModulationCfg) (Chips / symbol)        SNR\n        6           \
+    \       64               -5 dB\n        7                 128              -7.5 dB\n \
+    \       8                 256               -10 dB\n        9                 512    \
+    \         -12.5 dB\n       10                1024               -15 dB\n       11    \
+    \            2048             -17.5 dB\n       12                4096               -20\
+    \ dB\n\nSpreading Factor 6\nSF = 6 Is a special use case for the highest data rate transmission\
+    \ possible\nwith the LoRa modem. To this end several settings must be activated in the\n\
+    SX1276/77/78/79 registers when it is in use:\n  Set SpreadingFactor = 6 in RegModemConfig2\n\
+    \  The header must be set to Implicit mode.\n  Set the bit field DetectionOptimize of\
+    \ register RegLoRaDetectOptimize to \"0b101\".\n  Write 0x0C in the register RegDetectionThreshold.\n"
+  sposib: PDF Semtech (DS_SX1276-7-8-9_W_APP_V7, 132 с.) через дзеркало cdn-shop.adafruit.com,
+    pdftotext -layout, 2026-08-26
+  notatka: 'Розділ 43 звірено дослівно, включно з обґрунтуванням «чому діапазон названо від
+    сімки»: SF6 справді вимагає неявного заголовка й власних налаштувань детектування, і справді
+    не вмикається «просто меншим числом». Книга формулює це точніше за наряд, який просив
+    звірити «діапазон 7…12».
+
+    Заразом підтверджено дві сусідні тези розділу. Чутливість зростає з SF: на смузі 62.5
+    кГц −121 дБм при SF6 проти −139 дБм при SF12. І час ефіру росте різко: кількість чипів
+    на символ подвоюється на кожному кроці, 64 → 4096.
+
+    Ще одна вимога розділу — «обидва боки мусять мати однакові параметри» — стверджена джерелом
+    прямо: «SpreadingFactor must be known in advance on both transmit and receive sides of
+    the link as different spreading factors are orthogonal to each other».'
+  title: Робочий діапазон SF у LoRa — 7…12, а SF6 окремий режим
+  match: робочий діапазон \*\*7…12\*\*|Апаратно існує ще й SF6
+  status: verbatim
+  source: SX1276/77/78/79 Datasheet, Rev. 4 (March 2015), розділ 4.1.1.2 «Spreading Factor»,
+    Table 13 «Range of Spreading Factors», с. 27
+  quote: "Table 13 Range of Spreading Factors\n  SpreadingFactor   Spreading Factor    LoRa\
+    \ Demodulator\n  (RegModulationCfg) (Chips / symbol)        SNR\n        6           \
+    \       64               -5 dB\n        7                 128              -7.5 dB\n \
+    \       8                 256               -10 dB\n        9                 512    \
+    \         -12.5 dB\n       10                1024               -15 dB\n       11    \
+    \            2048             -17.5 dB\n       12                4096               -20\
+    \ dB\n\nSpreading Factor 6\nSF = 6 Is a special use case for the highest data rate transmission\
+    \ possible\nwith the LoRa modem. To this end several settings must be activated in the\n\
+    SX1276/77/78/79 registers when it is in use:\n  Set SpreadingFactor = 6 in RegModemConfig2\n\
+    \  The header must be set to Implicit mode.\n  Set the bit field DetectionOptimize of\
+    \ register RegLoRaDetectOptimize to \"0b101\".\n  Write 0x0C in the register RegDetectionThreshold.\n"
+  method: PDF Semtech (DS_SX1276-7-8-9_W_APP_V7, 132 с.) через дзеркало cdn-shop.adafruit.com,
+    pdftotext -layout, 2026-08-26
+  note: 'Розділ 43 звірено дослівно, включно з обґрунтуванням «чому діапазон названо від сімки»:
+    SF6 справді вимагає неявного заголовка й власних налаштувань детектування, і справді не
+    вмикається «просто меншим числом». Книга формулює це точніше за наряд, який просив звірити
     «діапазон 7…12».
 
-    Заразом підтверджено дві сусідні тези розділу. Чутливість зростає з
-    SF: на смузі 62.5 кГц −121 дБм при SF6 проти −139 дБм при SF12.
-    І час ефіру росте різко: кількість чипів на символ подвоюється на
-    кожному кроці, 64 → 4096.
+    Заразом підтверджено дві сусідні тези розділу. Чутливість зростає з SF: на смузі 62.5
+    кГц −121 дБм при SF6 проти −139 дБм при SF12. І час ефіру росте різко: кількість чипів
+    на символ подвоюється на кожному кроці, 64 → 4096.
 
-    Ще одна вимога розділу — «обидва боки мусять мати однакові
-    параметри» — стверджена джерелом прямо: «SpreadingFactor must be
-    known in advance on both transmit and receive sides of the link as
-    different spreading factors are orthogonal to each other».
-
+    Ще одна вимога розділу — «обидва боки мусять мати однакові параметри» — стверджена джерелом
+    прямо: «SpreadingFactor must be known in advance on both transmit and receive sides of
+    the link as different spreading factors are orthogonal to each other».'
 - nazva: Ширша смуга — швидше й менш далеко
-  zbih: '\*\*Bandwidth\*\* — ширша смуга означає швидше і менш далеко'
+  zbih: \*\*Bandwidth\*\* — ширша смуга означає швидше і менш далеко
   klas: A
-  dzherelo: >-
-    SX1276/77/78/79 Datasheet, Rev. 4, Table 15 «LoRa Bandwidth Options»
-    (с. 28) і Table 8 «Receiver Specifications» (RFS_L10_HF, RFS_L62_HF)
-  cytata: |
-    Table 15 LoRa Bandwidth Options
-      Bandwidth (kHz)   Spreading Factor   Coding rate   Nominal Rb (bps)
-            7.8               12               4/5             18
-           15.6               12               4/5             37
-           62.5               12               4/5            146
-            125               12               4/5            293
-            250               12               4/5            586
-            500               12               4/5           1172
+  dzherelo: SX1276/77/78/79 Datasheet, Rev. 4, Table 15 «LoRa Bandwidth Options» (с. 28) і
+    Table 8 «Receiver Specifications» (RFS_L10_HF, RFS_L62_HF)
+  cytata: "Table 15 LoRa Bandwidth Options\n  Bandwidth (kHz)   Spreading Factor   Coding\
+    \ rate   Nominal Rb (bps)\n        7.8               12               4/5            \
+    \ 18\n       15.6               12               4/5             37\n       62.5     \
+    \          12               4/5            146\n        125               12         \
+    \      4/5            293\n        250               12               4/5            586\n\
+    \        500               12               4/5           1172\n\nRF sensitivity, Long-Range\
+    \ Mode, 10.4 kHz bandwidth:  SF = 11   -146 dBm\nRF sensitivity, Long-Range Mode, 62.5\
+    \ kHz bandwidth:  SF = 11   -137 dBm\n"
+  sposib: PDF Semtech через дзеркало cdn-shop.adafruit.com, pdftotext -layout, 2026-08-26
+  notatka: 'Обидві половини твердження мають окреме число. «Швидше» — Table 15: від 18 біт/с
+    на 7.8 кГц до 1172 біт/с на 500 кГц при тих самих SF і швидкості коду. «Менш далеко» —
+    таблиця чутливості: при однаковому SF11 вужча смуга дає −146 дБм, ширша −137 дБм, тобто
+    9 дБ програшу в бюджеті лінії.
 
-    RF sensitivity, Long-Range Mode, 10.4 kHz bandwidth:  SF = 11   -146 dBm
-    RF sensitivity, Long-Range Mode, 62.5 kHz bandwidth:  SF = 11   -137 dBm
-  sposib: >-
-    PDF Semtech через дзеркало cdn-shop.adafruit.com, pdftotext -layout,
-    2026-08-26
-  notatka: >-
-    Обидві половини твердження мають окреме число. «Швидше» — Table 15:
-    від 18 біт/с на 7.8 кГц до 1172 біт/с на 500 кГц при тих самих SF і
-    швидкості коду. «Менш далеко» — таблиця чутливості: при однаковому
-    SF11 вужча смуга дає −146 дБм, ширша −137 дБм, тобто 9 дБ програшу
-    в бюджеті лінії.
+    Джерело підтверджує й рамку розділу: керованих параметрів справді три, і воно називає
+    ті самі — «spreading factor, modulation bandwidth and error coding rate».'
+  title: Ширша смуга — швидше й менш далеко
+  match: \*\*Bandwidth\*\* — ширша смуга означає швидше і менш далеко
+  status: verbatim
+  source: SX1276/77/78/79 Datasheet, Rev. 4, Table 15 «LoRa Bandwidth Options» (с. 28) і Table
+    8 «Receiver Specifications» (RFS_L10_HF, RFS_L62_HF)
+  quote: "Table 15 LoRa Bandwidth Options\n  Bandwidth (kHz)   Spreading Factor   Coding rate\
+    \   Nominal Rb (bps)\n        7.8               12               4/5             18\n\
+    \       15.6               12               4/5             37\n       62.5          \
+    \     12               4/5            146\n        125               12              \
+    \ 4/5            293\n        250               12               4/5            586\n\
+    \        500               12               4/5           1172\n\nRF sensitivity, Long-Range\
+    \ Mode, 10.4 kHz bandwidth:  SF = 11   -146 dBm\nRF sensitivity, Long-Range Mode, 62.5\
+    \ kHz bandwidth:  SF = 11   -137 dBm\n"
+  method: PDF Semtech через дзеркало cdn-shop.adafruit.com, pdftotext -layout, 2026-08-26
+  note: 'Обидві половини твердження мають окреме число. «Швидше» — Table 15: від 18 біт/с
+    на 7.8 кГц до 1172 біт/с на 500 кГц при тих самих SF і швидкості коду. «Менш далеко» —
+    таблиця чутливості: при однаковому SF11 вужча смуга дає −146 дБм, ширша −137 дБм, тобто
+    9 дБ програшу в бюджеті лінії.
 
-    Джерело підтверджує й рамку розділу: керованих параметрів справді
-    три, і воно називає ті самі — «spreading factor, modulation
-    bandwidth and error coding rate».
-
+    Джерело підтверджує й рамку розділу: керованих параметрів справді три, і воно називає
+    ті самі — «spreading factor, modulation bandwidth and error coding rate».'
 - nazva: RFM69 не є LoRa-модулем
-  zbih: '\*\*RFM69 — це не LoRa\.\*\*'
+  zbih: \*\*RFM69 — це не LoRa\.\*\*
   klas: A
-  dzherelo: >-
-    RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product
-    Features»; для порівняння — SX1276/77/78/79 Datasheet Rev. 4,
-    «Key Product Features»
-  cytata: |
-    RFM69HCW — KEY PRODUCT FEATURES
-      FSK Bit rates up to 300 kb/s
-      FSK, GFSK, MSK, GMSK and OOK modulations
+  dzherelo: RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product Features»;
+    для порівняння — SX1276/77/78/79 Datasheet Rev. 4, «Key Product Features»
+  cytata: "RFM69HCW — KEY PRODUCT FEATURES\n  FSK Bit rates up to 300 kb/s\n  FSK, GFSK, MSK,\
+    \ GMSK and OOK modulations\n\n(слово «LoRa» у документі RFM69HCW не трапляється жодного\
+    \ разу)\n\nSX1276/77/78/79 — KEY PRODUCT FEATURES\n  LoRa(TM) Modem\n  168 dB maximum\
+    \ link budget\n"
+  sposib: PDF HopeRF через cdn-shop.adafruit.com; PDF Semtech там само; pdftotext -layout,
+    2026-08-26
+  notatka: 'Виправлення помилки роду, а не числа. Стара редакція розділу подавала «**SX1262
+    / RFM69HCW**» одним рядком переліку LoRa-модулів — тобто ставила поруч чип, що вміє LoRa,
+    і модуль, що не вміє її взагалі.
 
-    (слово «LoRa» у документі RFM69HCW не трапляється жодного разу)
+    Ціна помилки для читача висока й підступна. RFM69 коштує приблизно як RFM95, називається
+    схоже, продається поруч. Купивши його за цим рядком, читач не зв''яжеться з жодним LoRa-вузлом
+    — а симптом буде той самий, що в двох інших несправностей, які розділ уже описує: тиша
+    при різних SF і тиша при несправній антені. Бібліотека теж не підкаже: RadioLib підтримує
+    і SX127x/SX126x, і RF69, тож код збереться й запуститься.
 
-    SX1276/77/78/79 — KEY PRODUCT FEATURES
-      LoRa(TM) Modem
-      168 dB maximum link budget
-  sposib: >-
-    PDF HopeRF через cdn-shop.adafruit.com; PDF Semtech там само;
-    pdftotext -layout, 2026-08-26
-  notatka: >-
-    Виправлення помилки роду, а не числа. Стара редакція розділу подавала
-    «**SX1262 / RFM69HCW**» одним рядком переліку LoRa-модулів — тобто
-    ставила поруч чип, що вміє LoRa, і модуль, що не вміє її взагалі.
+    Заведено у `factcheck/SPROSTOVANE-m2.md` зі взірцем.'
+  title: RFM69 не є LoRa-модулем
+  match: \*\*RFM69 — це не LoRa\.\*\*
+  status: verbatim
+  source: RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділ «Key Product Features»; для
+    порівняння — SX1276/77/78/79 Datasheet Rev. 4, «Key Product Features»
+  quote: "RFM69HCW — KEY PRODUCT FEATURES\n  FSK Bit rates up to 300 kb/s\n  FSK, GFSK, MSK,\
+    \ GMSK and OOK modulations\n\n(слово «LoRa» у документі RFM69HCW не трапляється жодного\
+    \ разу)\n\nSX1276/77/78/79 — KEY PRODUCT FEATURES\n  LoRa(TM) Modem\n  168 dB maximum\
+    \ link budget\n"
+  method: PDF HopeRF через cdn-shop.adafruit.com; PDF Semtech там само; pdftotext -layout,
+    2026-08-26
+  note: 'Виправлення помилки роду, а не числа. Стара редакція розділу подавала «**SX1262 /
+    RFM69HCW**» одним рядком переліку LoRa-модулів — тобто ставила поруч чип, що вміє LoRa,
+    і модуль, що не вміє її взагалі.
 
-    Ціна помилки для читача висока й підступна. RFM69 коштує приблизно
-    як RFM95, називається схоже, продається поруч. Купивши його за цим
-    рядком, читач не зв'яжеться з жодним LoRa-вузлом — а симптом буде
-    той самий, що в двох інших несправностей, які розділ уже описує:
-    тиша при різних SF і тиша при несправній антені. Бібліотека теж не
-    підкаже: RadioLib підтримує і SX127x/SX126x, і RF69, тож код
-    збереться й запуститься.
+    Ціна помилки для читача висока й підступна. RFM69 коштує приблизно як RFM95, називається
+    схоже, продається поруч. Купивши його за цим рядком, читач не зв''яжеться з жодним LoRa-вузлом
+    — а симптом буде той самий, що в двох інших несправностей, які розділ уже описує: тиша
+    при різних SF і тиша при несправній антені. Бібліотека теж не підкаже: RadioLib підтримує
+    і SX127x/SX126x, і RF69, тож код збереться й запуститься.
 
-    Заведено у `factcheck/SPROSTOVANE-m2.md` зі взірцем.
-
+    Заведено у `factcheck/SPROSTOVANE-m2.md` зі взірцем.'
 - nazva: SX1262 ефективніший за SX1276 — числа не отримано
   zbih: 'новіше покоління Semtech: те саме LoRa, менше споживання'
   klas: C
-  dzherelo: >-
-    SX1261/SX1262 Datasheet (Semtech), файл у порталі —
-    60852689.DS_SX1261_2 V2-2.pdf, 100 с. Сторінка виробу:
-    https://www.semtech.com/products/wireless-rf/lora-connect/sx1262
-  shukaty: >-
-    таблиця споживання (Rx та Tx) SX1262 проти таблиці споживання
-    SX1276 з DS_SX1276-7-8-9_W_APP_V7: очікується помітно менший струм
-    прийому в SX1262. Потрібні обидва числа з їхніми умовами вимірювання
-  notatka: >-
-    Чесний `C`, а не натягнутий `A`. Порівняльні числа не отримано:
-    semtech.com віддає datasheet лише через портал Salesforce, який
-    вимагає натиснути «Download» у браузері; дзеркал саме на SX1261-2
-    не знайшлося, тоді як SX1276 знайшовся одразу.
+  dzherelo: 'SX1261/SX1262 Datasheet (Semtech), файл у порталі — 60852689.DS_SX1261_2 V2-2.pdf,
+    100 с. Сторінка виробу: https://www.semtech.com/products/wireless-rf/lora-connect/sx1262'
+  shukaty: 'таблиця споживання (Rx та Tx) SX1262 проти таблиці споживання SX1276 з DS_SX1276-7-8-9_W_APP_V7:
+    очікується помітно менший струм прийому в SX1262. Потрібні обидва числа з їхніми умовами
+    вимірювання'
+  notatka: 'Чесний `C`, а не натягнутий `A`. Порівняльні числа не отримано: semtech.com віддає
+    datasheet лише через портал Salesforce, який вимагає натиснути «Download» у браузері;
+    дзеркал саме на SX1261-2 не знайшлося, тоді як SX1276 знайшовся одразу.
 
-    Твердження майже напевно правильне — SX126x і подають як
-    ефективніше покоління, — але «майже напевно» це не клас `A`. Те, що
-    я тримав у руках datasheet сусіднього чипа, підстави не додає.
+    Твердження майже напевно правильне — SX126x і подають як ефективніше покоління, — але
+    «майже напевно» це не клас `A`. Те, що я тримав у руках datasheet сусіднього чипа, підстави
+    не додає.
 
-    Це стосується й `T-COM-053` («ефективніший за SX1276») у
-    `inserts/components-2026-08.md` — файл М1, тому там лишається як є.
+    Це стосується й `T-COM-053` («ефективніший за SX1276») у `inserts/components-2026-08.md`
+    — файл М1, тому там лишається як є.'
+  title: SX1262 ефективніший за SX1276 — числа не отримано
+  match: 'новіше покоління Semtech: те саме LoRa, менше споживання'
+  status: named-unreachable
+  source: 'SX1261/SX1262 Datasheet (Semtech), файл у порталі — 60852689.DS_SX1261_2 V2-2.pdf,
+    100 с. Сторінка виробу: https://www.semtech.com/products/wireless-rf/lora-connect/sx1262'
+  note: 'Чесний `C`, а не натягнутий `A`. Порівняльні числа не отримано: semtech.com віддає
+    datasheet лише через портал Salesforce, який вимагає натиснути «Download» у браузері;
+    дзеркал саме на SX1261-2 не знайшлося, тоді як SX1276 знайшовся одразу.
+
+    Твердження майже напевно правильне — SX126x і подають як ефективніше покоління, — але
+    «майже напевно» це не клас `A`. Те, що я тримав у руках datasheet сусіднього чипа, підстави
+    не додає.
+
+    Це стосується й `T-COM-053` («ефективніший за SX1276») у `inserts/components-2026-08.md`
+    — файл М1, тому там лишається як є.'
+  look_for: 'таблиця споживання (Rx та Tx) SX1262 проти таблиці споживання SX1276 з DS_SX1276-7-8-9_W_APP_V7:
+    очікується помітно менший струм прийому в SX1262. Потрібні обидва числа з їхніми умовами
+    вимірювання'

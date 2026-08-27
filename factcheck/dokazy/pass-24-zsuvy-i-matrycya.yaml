@@ -10,245 +10,382 @@
 # «чому саме так». Пояснення читач запам'ятовує краще за число і носить
 # із собою далі; хибне пояснення живе довше за хибне число.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Зсув бутлоадера по сімействах — числа праві, причина хибна
-  zbih: 'ESP32 classic, ESP32-S2 \| `0x1000`|ESP32-S3, C3, C6, H2 \| `0x0`|ESP32-P4, C5, H4 \| `0x2000`|Secure Boot v1\*\*; коли secure boot|менеджерові ключів апаратного шифрування'
+  zbih: ESP32 classic, ESP32-S2 \| `0x1000`|ESP32-S3, C3, C6, H2 \| `0x0`|ESP32-P4, C5, H4
+    \| `0x2000`|Secure Boot v1\*\*; коли secure boot|менеджерові ключів апаратного шифрування
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
-    та .../docs/en/api-guides/startup.rst;
-    https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
-  cytata: |
-    (Kconfig.projbuild)
-    config BOOTLOADER_OFFSET_IN_FLASH
-        hex
-        default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
-        # the first 2 sectors are reserved for the key manager with AES-XTS
-        #   (flash encryption) purpose
-        default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
-        default 0x0
-        help
-            Offset address that 2nd bootloader will be flashed to.
-            The value is determined by the ROM bootloader.
-            It's not configurable in ESP-IDF.
-
-    (startup.rst)
-    .. only:: esp32
-       … If :doc:`/security/secure-boot-v1` is in use then the first 4 kB
-       sector of flash is used to store secure boot IV and digest of the
-       bootloader image. Otherwise, this sector is unused.
-    .. only:: esp32s2
-       … The 4 kB sector of flash before this address is unused.
-    .. only:: SOC_KEY_MANAGER_SUPPORTED
-       … The 8 kB sector of flash before this address is reserved for the
-       key manager for use with flash encryption (AES-XTS).
-
-    (esptool/targets/)
-    esp32.py:   BOOTLOADER_FLASH_OFFSET = 0x1000
-    esp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0
-    esp32c3.py: BOOTLOADER_FLASH_OFFSET = 0x0
-    esp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0
-    esp32p4.py: BOOTLOADER_FLASH_OFFSET = 0x2000  # First 2 sectors reserved for FE
-    esp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000
-    esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000
-    (S2 успадковує 0x1000 від ESP32ROM; H2 — 0x0 від ESP32C6ROM;
-     C2 — 0x0 від ESP32C3ROM)
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+    та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
+  cytata: "(Kconfig.projbuild)\nconfig BOOTLOADER_OFFSET_IN_FLASH\n    hex\n    default 0x1000\
+    \ if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2\n    # the first 2 sectors are reserved for\
+    \ the key manager with AES-XTS\n    #   (flash encryption) purpose\n    default 0x2000\
+    \ if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4\n    default 0x0\n\
+    \    help\n        Offset address that 2nd bootloader will be flashed to.\n        The\
+    \ value is determined by the ROM bootloader.\n        It's not configurable in ESP-IDF.\n\
+    \n(startup.rst)\n.. only:: esp32\n   … If :doc:`/security/secure-boot-v1` is in use then\
+    \ the first 4 kB\n   sector of flash is used to store secure boot IV and digest of the\n\
+    \   bootloader image. Otherwise, this sector is unused.\n.. only:: esp32s2\n   … The 4\
+    \ kB sector of flash before this address is unused.\n.. only:: SOC_KEY_MANAGER_SUPPORTED\n\
+    \   … The 8 kB sector of flash before this address is reserved for the\n   key manager\
+    \ for use with flash encryption (AES-XTS).\n\n(esptool/targets/)\nesp32.py:   BOOTLOADER_FLASH_OFFSET\
+    \ = 0x1000\nesp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0\nesp32c3.py: BOOTLOADER_FLASH_OFFSET\
+    \ = 0x0\nesp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0\nesp32p4.py: BOOTLOADER_FLASH_OFFSET\
+    \ = 0x2000  # First 2 sectors reserved for FE\nesp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000\n\
+    esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000\n(S2 успадковує 0x1000 від ESP32ROM; H2 —\
+    \ 0x0 від ESP32C6ROM;\n C2 — 0x0 від ESP32C3ROM)\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig
-    ESP-IDF і розбір цілей esptool — і збіг дослівний, включно з
-    успадкуванням для S2, H2 і C2. Твердження книги «значення задає ROM і
-    в ESP-IDF не налаштовується» теж дослівне: воно є в довідці Kconfig.
+  notatka: 'Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig ESP-IDF і розбір
+    цілей esptool — і збіг дослівний, включно з успадкуванням для S2, H2 і C2. Твердження
+    книги «значення задає ROM і в ESP-IDF не налаштовується» теж дослівне: воно є в довідці
+    Kconfig.
 
-    Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок
-    від `0x0` до `0x1000` зарезервовано під потреби ROM». ROM-бутлоадер
-    живе в кремнії й у флеші не займає нічого. Насправді на classic цей
-    сектор належить IV і дайджестові Secure Boot v1 — а без secure boot
-    просто не використовується; на S2 не використовується завжди.
+    Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок від `0x0` до `0x1000`
+    зарезервовано під потреби ROM». ROM-бутлоадер живе в кремнії й у флеші не займає нічого.
+    Насправді на classic цей сектор належить IV і дайджестові Secure Boot v1 — а без secure
+    boot просто не використовується; на S2 не використовується завжди.
 
-    Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання
-    заведено в `factcheck/SPROSTOVANE.md`. Заразом таблиця в
-    `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для
-    P4, C5 і H4, який у розділі 16 є з проходу 6.
+    Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання заведено в `factcheck/SPROSTOVANE.md`.
+    Заразом таблиця в `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для
+    P4, C5 і H4, який у розділі 16 є з проходу 6.'
+  title: Зсув бутлоадера по сімействах — числа праві, причина хибна
+  match: ESP32 classic, ESP32-S2 \| `0x1000`|ESP32-S3, C3, C6, H2 \| `0x0`|ESP32-P4, C5, H4
+    \| `0x2000`|Secure Boot v1\*\*; коли secure boot|менеджерові ключів апаратного шифрування
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
+    та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
+  quote: "(Kconfig.projbuild)\nconfig BOOTLOADER_OFFSET_IN_FLASH\n    hex\n    default 0x1000\
+    \ if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2\n    # the first 2 sectors are reserved for\
+    \ the key manager with AES-XTS\n    #   (flash encryption) purpose\n    default 0x2000\
+    \ if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4\n    default 0x0\n\
+    \    help\n        Offset address that 2nd bootloader will be flashed to.\n        The\
+    \ value is determined by the ROM bootloader.\n        It's not configurable in ESP-IDF.\n\
+    \n(startup.rst)\n.. only:: esp32\n   … If :doc:`/security/secure-boot-v1` is in use then\
+    \ the first 4 kB\n   sector of flash is used to store secure boot IV and digest of the\n\
+    \   bootloader image. Otherwise, this sector is unused.\n.. only:: esp32s2\n   … The 4\
+    \ kB sector of flash before this address is unused.\n.. only:: SOC_KEY_MANAGER_SUPPORTED\n\
+    \   … The 8 kB sector of flash before this address is reserved for the\n   key manager\
+    \ for use with flash encryption (AES-XTS).\n\n(esptool/targets/)\nesp32.py:   BOOTLOADER_FLASH_OFFSET\
+    \ = 0x1000\nesp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0\nesp32c3.py: BOOTLOADER_FLASH_OFFSET\
+    \ = 0x0\nesp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0\nesp32p4.py: BOOTLOADER_FLASH_OFFSET\
+    \ = 0x2000  # First 2 sectors reserved for FE\nesp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000\n\
+    esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000\n(S2 успадковує 0x1000 від ESP32ROM; H2 —\
+    \ 0x0 від ESP32C6ROM;\n C2 — 0x0 від ESP32C3ROM)\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig ESP-IDF і розбір
+    цілей esptool — і збіг дослівний, включно з успадкуванням для S2, H2 і C2. Твердження
+    книги «значення задає ROM і в ESP-IDF не налаштовується» теж дослівне: воно є в довідці
+    Kconfig.
 
+    Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок від `0x0` до `0x1000`
+    зарезервовано під потреби ROM». ROM-бутлоадер живе в кремнії й у флеші не займає нічого.
+    Насправді на classic цей сектор належить IV і дайджестові Secure Boot v1 — а без secure
+    boot просто не використовується; на S2 не використовується завжди.
+
+    Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання заведено в `factcheck/SPROSTOVANE.md`.
+    Заразом таблиця в `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для
+    P4, C5 і H4, який у розділі 16 є з проходу 6.'
 - nazva: Таблиця розділів — 0xC00 і 95 записів; 0x7000 належить бутлоадерові
-  zbih: 'не більше 95 записів|максимум \*\*95 записів\*\*|`0xC00`|too large for partition table offset|Простір бутлоадера — це проміжок'
+  zbih: не більше 95 записів|максимум \*\*95 записів\*\*|`0xC00`|too large for partition table
+    offset|Простір бутлоадера — це проміжок
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst,
-    .../docs/en/api-guides/bootloader.rst,
-    .../components/partition_table/Kconfig.projbuild
-  cytata: |
-    (partition-tables.rst)
-    The partition table length is 0xC00 bytes, as we allow a maximum of 95
-    entries. An MD5 checksum, used for checking the integrity of the
-    partition table at runtime, is appended after the table data. Thus, the
-    partition table occupies an entire flash sector, which size is 0x1000
-    (4 KB). As a result, any partition following it must be at least
-    located at (default offset) + 0x1000.
-
-    (Kconfig.projbuild)
-    config PARTITION_TABLE_OFFSET
-        hex "Offset of partition table"
-        default 0x8000
-        help
-            The address of partition table (by default 0x8000).
-            Allows you to move the partition table, it gives more space
-            for the bootloader.
-
-    (bootloader.rst)
-    When using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the
-    size limit is … bytes.
-    If the bootloader binary is too large, then the bootloader build will
-    fail with an error "Bootloader binary size [..] is too large for
-    partition table offset".
-    Options to work around this are:
-    - Set bootloader compiler optimization back to "Size" …
-    - Reduce bootloader log level …
-    - Set CONFIG_PARTITION_TABLE_OFFSET to a higher value than 0x8000 …
-      no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET
-      + 0x1000.
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst,
+    .../docs/en/api-guides/bootloader.rst, .../components/partition_table/Kconfig.projbuild
+  cytata: "(partition-tables.rst)\nThe partition table length is 0xC00 bytes, as we allow\
+    \ a maximum of 95\nentries. An MD5 checksum, used for checking the integrity of the\n\
+    partition table at runtime, is appended after the table data. Thus, the\npartition table\
+    \ occupies an entire flash sector, which size is 0x1000\n(4 KB). As a result, any partition\
+    \ following it must be at least\nlocated at (default offset) + 0x1000.\n\n(Kconfig.projbuild)\n\
+    config PARTITION_TABLE_OFFSET\n    hex \"Offset of partition table\"\n    default 0x8000\n\
+    \    help\n        The address of partition table (by default 0x8000).\n        Allows\
+    \ you to move the partition table, it gives more space\n        for the bootloader.\n\n\
+    (bootloader.rst)\nWhen using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the\n\
+    size limit is … bytes.\nIf the bootloader binary is too large, then the bootloader build\
+    \ will\nfail with an error \"Bootloader binary size [..] is too large for\npartition table\
+    \ offset\".\nOptions to work around this are:\n- Set bootloader compiler optimization\
+    \ back to \"Size\" …\n- Reduce bootloader log level …\n- Set CONFIG_PARTITION_TABLE_OFFSET\
+    \ to a higher value than 0x8000 …\n  no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET\n\
+    \  + 0x1000.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`:
-    «типовий ліміт розміру самої таблиці — `0x7000` (28 672 байти)».
+  notatka: 'Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`: «типовий ліміт
+    розміру самої таблиці — `0x7000` (28 672 байти)».
 
-    `0x7000` до таблиці не має стосунку. Це `0x8000 − 0x1000` — простір,
-    який лишається **бутлоадерові** на classic. Власна довжина таблиці —
-    `0xC00`, тобто 95 записів плюс MD5, і навіть вона займає цілий сектор
-    лише тому, що флеш стирається секторами.
+    `0x7000` до таблиці не має стосунку. Це `0x8000 − 0x1000` — простір, який лишається **бутлоадерові**
+    на classic. Власна довжина таблиці — `0xC00`, тобто 95 записів плюс MD5, і навіть вона
+    займає цілий сектор лише тому, що флеш стирається секторами.
 
-    Плутанина не безневинна: з неї випливає, ніби в таблицю влізає
-    приблизно 900 розділів, і ніби вправа «зробити більше розділів» —
-    безкоштовна. Насправді ліміт 95, а `0x7000` вичерпується не розділами,
-    а Secure Boot і рівнем логу бутлоадера.
+    Плутанина не безневинна: з неї випливає, ніби в таблицю влізає приблизно 900 розділів,
+    і ніби вправа «зробити більше розділів» — безкоштовна. Насправді ліміт 95, а `0x7000`
+    вичерпується не розділами, а Secure Boot і рівнем логу бутлоадера.
 
-    Виправлено; обидва хибні формулювання заведено в реєстр спростованого
-    і випробувано впровадженням у розділ 04 — знаходяться одразу.
+    Виправлено; обидва хибні формулювання заведено в реєстр спростованого і випробувано впровадженням
+    у розділ 04 — знаходяться одразу.
 
-    Заразом додано в книгу три речі, яких не було ніде: ліміт 95 записів
-    (розділ 18), скінченність простору бутлоадера з дослівним рядком
-    помилки збірання і ліками в порядку дешевизни (розділ 16), і
-    асиметрія «зсув бутлоадера задає ROM, зсув таблиці — звичайний
-    параметр» (розділ 16). Остання практично важлива: саме зсувом таблиці
-    лікують нестачу місця під бутлоадер.
+    Заразом додано в книгу три речі, яких не було ніде: ліміт 95 записів (розділ 18), скінченність
+    простору бутлоадера з дослівним рядком помилки збірання і ліками в порядку дешевизни (розділ
+    16), і асиметрія «зсув бутлоадера задає ROM, зсув таблиці — звичайний параметр» (розділ
+    16). Остання практично важлива: саме зсувом таблиці лікують нестачу місця під бутлоадер.'
+  title: Таблиця розділів — 0xC00 і 95 записів; 0x7000 належить бутлоадерові
+  match: не більше 95 записів|максимум \*\*95 записів\*\*|`0xC00`|too large for partition
+    table offset|Простір бутлоадера — це проміжок
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst,
+    .../docs/en/api-guides/bootloader.rst, .../components/partition_table/Kconfig.projbuild
+  quote: "(partition-tables.rst)\nThe partition table length is 0xC00 bytes, as we allow a\
+    \ maximum of 95\nentries. An MD5 checksum, used for checking the integrity of the\npartition\
+    \ table at runtime, is appended after the table data. Thus, the\npartition table occupies\
+    \ an entire flash sector, which size is 0x1000\n(4 KB). As a result, any partition following\
+    \ it must be at least\nlocated at (default offset) + 0x1000.\n\n(Kconfig.projbuild)\n\
+    config PARTITION_TABLE_OFFSET\n    hex \"Offset of partition table\"\n    default 0x8000\n\
+    \    help\n        The address of partition table (by default 0x8000).\n        Allows\
+    \ you to move the partition table, it gives more space\n        for the bootloader.\n\n\
+    (bootloader.rst)\nWhen using the default CONFIG_PARTITION_TABLE_OFFSET value 0x8000, the\n\
+    size limit is … bytes.\nIf the bootloader binary is too large, then the bootloader build\
+    \ will\nfail with an error \"Bootloader binary size [..] is too large for\npartition table\
+    \ offset\".\nOptions to work around this are:\n- Set bootloader compiler optimization\
+    \ back to \"Size\" …\n- Reduce bootloader log level …\n- Set CONFIG_PARTITION_TABLE_OFFSET\
+    \ to a higher value than 0x8000 …\n  no partition has an offset lower than CONFIG_PARTITION_TABLE_OFFSET\n\
+    \  + 0x1000.\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Друга хибна причина, і цього разу вона мешкала в `docs/fakty.md`: «типовий ліміт
+    розміру самої таблиці — `0x7000` (28 672 байти)».
 
+    `0x7000` до таблиці не має стосунку. Це `0x8000 − 0x1000` — простір, який лишається **бутлоадерові**
+    на classic. Власна довжина таблиці — `0xC00`, тобто 95 записів плюс MD5, і навіть вона
+    займає цілий сектор лише тому, що флеш стирається секторами.
+
+    Плутанина не безневинна: з неї випливає, ніби в таблицю влізає приблизно 900 розділів,
+    і ніби вправа «зробити більше розділів» — безкоштовна. Насправді ліміт 95, а `0x7000`
+    вичерпується не розділами, а Secure Boot і рівнем логу бутлоадера.
+
+    Виправлено; обидва хибні формулювання заведено в реєстр спростованого і випробувано впровадженням
+    у розділ 04 — знаходяться одразу.
+
+    Заразом додано в книгу три речі, яких не було ніде: ліміт 95 записів (розділ 18), скінченність
+    простору бутлоадера з дослівним рядком помилки збірання і ліками в порядку дешевизни (розділ
+    16), і асиметрія «зсув бутлоадера задає ROM, зсув таблиці — звичайний параметр» (розділ
+    16). Остання практично важлива: саме зсувом таблиці лікують нестачу місця під бутлоадер.'
 - nazva: JTAG-піни classic — усі чотири з таблиці IOMUX
-  zbih: 'TMS \| `GPIO14`|TDI \| `GPIO12`|TCK \| `GPIO13`|TDO \| `GPIO15`'
+  zbih: TMS \| `GPIO14`|TDI \| `GPIO12`|TCK \| `GPIO13`|TDO \| `GPIO15`
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/register/soc/io_mux_reg.h
-  cytata: |
-    #define PERIPHS_IO_MUX_MTDI_U             (DR_REG_IO_MUX_BASE +0x34)
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/register/soc/io_mux_reg.h
+  cytata: '#define PERIPHS_IO_MUX_MTDI_U             (DR_REG_IO_MUX_BASE +0x34)
+
     #define IO_MUX_GPIO12_REG                    PERIPHS_IO_MUX_MTDI_U
+
     #define PERIPHS_IO_MUX_MTCK_U             (DR_REG_IO_MUX_BASE +0x38)
+
     #define IO_MUX_GPIO13_REG                    PERIPHS_IO_MUX_MTCK_U
+
     #define PERIPHS_IO_MUX_MTMS_U             (DR_REG_IO_MUX_BASE +0x30)
+
     #define IO_MUX_GPIO14_REG                    PERIPHS_IO_MUX_MTMS_U
+
     #define PERIPHS_IO_MUX_MTDO_U             (DR_REG_IO_MUX_BASE +0x3c)
+
     #define IO_MUX_GPIO15_REG                    PERIPHS_IO_MUX_MTDO_U
+
     #define FUNC_MTDI_MTDI                              0
+
+    '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Прохід 20 закрив два піни з чотирьох і два свідомо відправив у наряд,
-    бо йшов від документації, де таблиця JTAG-пінів підставляється
-    директивою і в сирому `.rst` не читається.
+  notatka: 'Прохід 20 закрив два піни з чотирьох і два свідомо відправив у наряд, бо йшов
+    від документації, де таблиця JTAG-пінів підставляється директивою і в сирому `.rst` не
+    читається.
 
-    Тут узято інше джерело, і воно однозначніше: у самому заголовку IOMUX
-    ім'я регістра **є** іменем сигналу JTAG. `IO_MUX_GPIO12_REG` дорівнює
-    `PERIPHS_IO_MUX_MTDI_U` — тобто GPIO12 і MTDI це один і той самий
-    вивід, а `FUNC_MTDI_MTDI = 0` каже, що JTAG — функція нуль, тобто
-    типова після скидання.
+    Тут узято інше джерело, і воно однозначніше: у самому заголовку IOMUX ім''я регістра **є**
+    іменем сигналу JTAG. `IO_MUX_GPIO12_REG` дорівнює `PERIPHS_IO_MUX_MTDI_U` — тобто GPIO12
+    і MTDI це один і той самий вивід, а `FUNC_MTDI_MTDI = 0` каже, що JTAG — функція нуль,
+    тобто типова після скидання.
 
-    Усі чотири рядки таблиці розділу 27 звірено: TMS `GPIO14`, TDI
-    `GPIO12`, TCK `GPIO13`, TDO `GPIO15`. Розбіжностей немає. Два пункти
-    наряду проходу 20 закрито.
+    Усі чотири рядки таблиці розділу 27 звірено: TMS `GPIO14`, TDI `GPIO12`, TCK `GPIO13`,
+    TDO `GPIO15`. Розбіжностей немає. Два пункти наряду проходу 20 закрито.'
+  title: JTAG-піни classic — усі чотири з таблиці IOMUX
+  match: TMS \| `GPIO14`|TDI \| `GPIO12`|TCK \| `GPIO13`|TDO \| `GPIO15`
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/register/soc/io_mux_reg.h
+  quote: '#define PERIPHS_IO_MUX_MTDI_U             (DR_REG_IO_MUX_BASE +0x34)
 
+    #define IO_MUX_GPIO12_REG                    PERIPHS_IO_MUX_MTDI_U
+
+    #define PERIPHS_IO_MUX_MTCK_U             (DR_REG_IO_MUX_BASE +0x38)
+
+    #define IO_MUX_GPIO13_REG                    PERIPHS_IO_MUX_MTCK_U
+
+    #define PERIPHS_IO_MUX_MTMS_U             (DR_REG_IO_MUX_BASE +0x30)
+
+    #define IO_MUX_GPIO14_REG                    PERIPHS_IO_MUX_MTMS_U
+
+    #define PERIPHS_IO_MUX_MTDO_U             (DR_REG_IO_MUX_BASE +0x3c)
+
+    #define IO_MUX_GPIO15_REG                    PERIPHS_IO_MUX_MTDO_U
+
+    #define FUNC_MTDI_MTDI                              0
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Прохід 20 закрив два піни з чотирьох і два свідомо відправив у наряд, бо йшов від
+    документації, де таблиця JTAG-пінів підставляється директивою і в сирому `.rst` не читається.
+
+    Тут узято інше джерело, і воно однозначніше: у самому заголовку IOMUX ім''я регістра **є**
+    іменем сигналу JTAG. `IO_MUX_GPIO12_REG` дорівнює `PERIPHS_IO_MUX_MTDI_U` — тобто GPIO12
+    і MTDI це один і той самий вивід, а `FUNC_MTDI_MTDI = 0` каже, що JTAG — функція нуль,
+    тобто типова після скидання.
+
+    Усі чотири рядки таблиці розділу 27 звірено: TMS `GPIO14`, TDI `GPIO12`, TCK `GPIO13`,
+    TDO `GPIO15`. Розбіжностей немає. Два пункти наряду проходу 20 закрито.'
 - nazva: Піновий план проєкту 60 — обидва сімейства
-  zbih: 'ADC дільника · (classic|C3) →|Ключ дільника \(вихід\) · (classic|C3) →|SPI `SCK` / `MOSI` / `MISO` · (classic|C3) →|SPI `CS` microSD · (classic|C3) →|Четвірка `18`/`23`/`19`/`5` на classic|ADC_CHANNEL_6   // GPIO34 = ADC1_6|ADC_CHANNEL_3   // GPIO3|Лишається рівно вісім безумовно вільних'
+  zbih: ADC дільника · (classic|C3) →|Ключ дільника \(вихід\) · (classic|C3) →|SPI `SCK` /
+    `MOSI` / `MISO` · (classic|C3) →|SPI `CS` microSD · (classic|C3) →|Четвірка `18`/`23`/`19`/`5`
+    на classic|ADC_CHANNEL_6   // GPIO34 = ADC1_6|ADC_CHANNEL_3   // GPIO3|Лишається рівно
+    вісім безумовно вільних
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h,
-    .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h,
-    .../components/soc/esp32c3/include/soc/soc_caps.h
-  cytata: |
-    (esp32/adc_channel.h)          (esp32c3/adc_channel.h)
-    #define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3
-    #define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3
-
-    (esp32/spi_pins.h)             (esp32c3/spi_pins.h)
-    #define VSPI_IOMUX_PIN_NUM_CLK  18   #define SPI2_IOMUX_PIN_NUM_CLK  6
-    #define VSPI_IOMUX_PIN_NUM_MOSI 23   #define SPI2_IOMUX_PIN_NUM_MOSI 7
-    #define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO 2
-    #define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10
-    #define SPI3_IOMUX_PIN_NUM_CLK  VSPI_IOMUX_PIN_NUM_CLK
-                                         #define MSPI_IOMUX_PIN_NUM_HD   12
-                                         #define MSPI_IOMUX_PIN_NUM_WP   13
-                                         #define MSPI_IOMUX_PIN_NUM_CS0  14
-                                         #define MSPI_IOMUX_PIN_NUM_CLK  15
-                                         #define MSPI_IOMUX_PIN_NUM_MOSI 16
-                                         #define MSPI_IOMUX_PIN_NUM_MISO 17
-
-    (esp32c3/soc_caps.h)
-    #define SOC_GPIO_PIN_COUNT                 22
-    #define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h,
+    .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+  cytata: "(esp32/adc_channel.h)          (esp32c3/adc_channel.h)\n#define ADC1_GPIO34_CHANNEL\
+    \ 6  #define ADC1_GPIO3_CHANNEL      3\n#define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM\
+    \ 3\n\n(esp32/spi_pins.h)             (esp32c3/spi_pins.h)\n#define VSPI_IOMUX_PIN_NUM_CLK\
+    \  18   #define SPI2_IOMUX_PIN_NUM_CLK  6\n#define VSPI_IOMUX_PIN_NUM_MOSI 23   #define\
+    \ SPI2_IOMUX_PIN_NUM_MOSI 7\n#define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO\
+    \ 2\n#define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10\n#define SPI3_IOMUX_PIN_NUM_CLK\
+    \  VSPI_IOMUX_PIN_NUM_CLK\n                                     #define MSPI_IOMUX_PIN_NUM_HD\
+    \   12\n                                     #define MSPI_IOMUX_PIN_NUM_WP   13\n    \
+    \                                 #define MSPI_IOMUX_PIN_NUM_CS0  14\n               \
+    \                      #define MSPI_IOMUX_PIN_NUM_CLK  15\n                          \
+    \           #define MSPI_IOMUX_PIN_NUM_MOSI 16\n                                     #define\
+    \ MSPI_IOMUX_PIN_NUM_MISO 17\n\n(esp32c3/soc_caps.h)\n#define SOC_GPIO_PIN_COUNT     \
+    \            22\n#define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут
-    він звірений цілком, а не вибірково. Розбіжностей немає:
-    `ADC_CHANNEL_6` на classic це справді `GPIO34`, `ADC_CHANNEL_3` на C3
-    це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` — це
-    дослівно рідні піни SPI3 (VSPI).
+  notatka: 'Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений
+    цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`,
+    `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` —
+    це дослівно рідні піни SPI3 (VSPI).
 
-    Підтвердилося й твердження, на якому тримається весь наголос розділу:
-    у C3 рівно 22 піни, `GPIO12`–`GPIO17` зайняті флешем (це видно з
-    `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме 12–17), і після консолі,
-    USB-JTAG та strapping лишається вісім вільних при потрібних дев'яти.
+    Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни,
+    `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме
+    12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев''яти.
 
-    Одне спостереження варте було додати в книгу. На C3 рідними в проєкті
-    лишилися тільки `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий
-    strapping-пін, який проєкт уже витратив на ключ дільника. Тобто
-    тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна при
-    цьому нульова, і чому саме — у наступному записі.
+    Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки
+    `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив
+    на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна
+    при цьому нульова, і чому саме — у наступному записі.'
+  title: Піновий план проєкту 60 — обидва сімейства
+  match: ADC дільника · (classic|C3) →|Ключ дільника \(вихід\) · (classic|C3) →|SPI `SCK`
+    / `MOSI` / `MISO` · (classic|C3) →|SPI `CS` microSD · (classic|C3) →|Четвірка `18`/`23`/`19`/`5`
+    на classic|ADC_CHANNEL_6   // GPIO34 = ADC1_6|ADC_CHANNEL_3   // GPIO3|Лишається рівно
+    вісім безумовно вільних
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32c3}/include/soc/adc_channel.h,
+    .../components/soc/{esp32,esp32c3}/include/soc/spi_pins.h, .../components/soc/esp32c3/include/soc/soc_caps.h
+  quote: "(esp32/adc_channel.h)          (esp32c3/adc_channel.h)\n#define ADC1_GPIO34_CHANNEL\
+    \ 6  #define ADC1_GPIO3_CHANNEL      3\n#define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM\
+    \ 3\n\n(esp32/spi_pins.h)             (esp32c3/spi_pins.h)\n#define VSPI_IOMUX_PIN_NUM_CLK\
+    \  18   #define SPI2_IOMUX_PIN_NUM_CLK  6\n#define VSPI_IOMUX_PIN_NUM_MOSI 23   #define\
+    \ SPI2_IOMUX_PIN_NUM_MOSI 7\n#define VSPI_IOMUX_PIN_NUM_MISO 19   #define SPI2_IOMUX_PIN_NUM_MISO\
+    \ 2\n#define VSPI_IOMUX_PIN_NUM_CS    5   #define SPI2_IOMUX_PIN_NUM_CS  10\n#define SPI3_IOMUX_PIN_NUM_CLK\
+    \  VSPI_IOMUX_PIN_NUM_CLK\n                                     #define MSPI_IOMUX_PIN_NUM_HD\
+    \   12\n                                     #define MSPI_IOMUX_PIN_NUM_WP   13\n    \
+    \                                 #define MSPI_IOMUX_PIN_NUM_CS0  14\n               \
+    \                      #define MSPI_IOMUX_PIN_NUM_CLK  15\n                          \
+    \           #define MSPI_IOMUX_PIN_NUM_MOSI 16\n                                     #define\
+    \ MSPI_IOMUX_PIN_NUM_MISO 17\n\n(esp32c3/soc_caps.h)\n#define SOC_GPIO_PIN_COUNT     \
+    \            22\n#define SOC_GPIO_VALID_GPIO_MASK  ((1U<<SOC_GPIO_PIN_COUNT) - 1)\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Проєкт 60 після проходу 17 має піновий план на два сімейства, і тут він звірений
+    цілком, а не вибірково. Розбіжностей немає: `ADC_CHANNEL_6` на classic це справді `GPIO34`,
+    `ADC_CHANNEL_3` на C3 це справді `GPIO3`, а класична четвірка SPI `18`/`23`/`19`/`5` —
+    це дослівно рідні піни SPI3 (VSPI).
 
+    Підтвердилося й твердження, на якому тримається весь наголос розділу: у C3 рівно 22 піни,
+    `GPIO12`–`GPIO17` зайняті флешем (це видно з `MSPI_IOMUX_PIN_NUM_*`, де перелічені саме
+    12–17), і після консолі, USB-JTAG та strapping лишається вісім вільних при потрібних дев''яти.
+
+    Одне спостереження варте було додати в книгу. На C3 рідними в проєкті лишилися тільки
+    `SCK` і `MOSI`: рідний `MISO` там `GPIO2` — той самий strapping-пін, який проєкт уже витратив
+    на ключ дільника. Тобто тіснота C3 коштує не лише пінів, а й рідної розпіновки SPI. Ціна
+    при цьому нульова, і чому саме — у наступному записі.'
 - nazva: Матриця GPIO і SPI — 40 проти 80 МГц, і коли різниці немає
-  zbih: 'межа — 80 МГц|межа 40 МГц замість 80|На 40 МГц і нижче різниці немає|достатньо однієї лінії поза\s*\n?рідними пінами|обмежений 40 МГц замість 80'
+  zbih: межа — 80 МГц|межа 40 МГц замість 80|На 40 МГц і нижче різниці немає|достатньо однієї
+    лінії поза\s*\n?рідними пінами|обмежений 40 МГц замість 80
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
-  cytata: |
-    Most of ESP32's peripheral signals have a direct connection to their
-    dedicated IO_MUX pins. However, the signals can also be routed to any
-    other available pins using the less direct GPIO matrix. If at least one
-    signal is routed through the GPIO matrix, then all signals will be
-    routed through it.
-
-    The GPIO matrix introduces flexibility of routing but also brings the
-    following disadvantages:
-    - Allows signals with clock frequencies only up to 40 MHz, as opposed
-      to 80 MHz if IO_MUX pins are used.
-
-    When an SPI Host is set to 40 MHz or lower frequencies, routing SPI
-    pins via the GPIO matrix will behave the same compared to routing them
-    via IOMUX.
-
-    {IDF_TARGET_SPI2_IOMUX_PIN_MISO: … esp32c3="2" …}
-    {IDF_TARGET_SPI2_IOMUX_PIN_CS:   … esp32c3="10" …}
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+  cytata: "Most of ESP32's peripheral signals have a direct connection to their\ndedicated\
+    \ IO_MUX pins. However, the signals can also be routed to any\nother available pins using\
+    \ the less direct GPIO matrix. If at least one\nsignal is routed through the GPIO matrix,\
+    \ then all signals will be\nrouted through it.\n\nThe GPIO matrix introduces flexibility\
+    \ of routing but also brings the\nfollowing disadvantages:\n- Allows signals with clock\
+    \ frequencies only up to 40 MHz, as opposed\n  to 80 MHz if IO_MUX pins are used.\n\n\
+    When an SPI Host is set to 40 MHz or lower frequencies, routing SPI\npins via the GPIO\
+    \ matrix will behave the same compared to routing them\nvia IOMUX.\n\n{IDF_TARGET_SPI2_IOMUX_PIN_MISO:\
+    \ … esp32c3=\"2\" …}\n{IDF_TARGET_SPI2_IOMUX_PIN_CS:   … esp32c3=\"10\" …}\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: >-
-    Книга писала «через матрицю межа знижується приблизно вдвічі». Число
-    правильне (40 проти 80), але слово «приблизно» ховало те, що читачеві
-    потрібне найбільше: **нижче 40 МГц різниці немає жодної**.
+  notatka: 'Книга писала «через матрицю межа знижується приблизно вдвічі». Число правильне
+    (40 проти 80), але слово «приблизно» ховало те, що читачеві потрібне найбільше: **нижче
+    40 МГц різниці немає жодної**.
 
-    Різниця між двома формулюваннями практична. Перше змушує підбирати
-    рідні піни завжди — і платити за це розведенням плати. Друге каже
-    прямо: для microSD, дисплеїв і датчиків, тобто для майже всього в цій
-    книзі, питання рідних пінів не стоїть узагалі.
+    Різниця між двома формулюваннями практична. Перше змушує підбирати рідні піни завжди —
+    і платити за це розведенням плати. Друге каже прямо: для microSD, дисплеїв і датчиків,
+    тобто для майже всього в цій книзі, питання рідних пінів не стоїть узагалі.
 
-    Додано й правило «все або нічого»: досить однієї лінії поза рідними
-    пінами, щоб через матрицю пішли всі. Проміжного стану немає, і
-    «майже рідний» набір дає ту саму межу, що й довільний. Без цього
-    читач природно вирішує, що виграє потроху за кожен рідний пін.
+    Додано й правило «все або нічого»: досить однієї лінії поза рідними пінами, щоб через
+    матрицю пішли всі. Проміжного стану немає, і «майже рідний» набір дає ту саму межу, що
+    й довільний. Без цього читач природно вирішує, що виграє потроху за кожен рідний пін.
 
-    Виправлено в розділах 36 (двічі: виклад і підсумок) і 04. Заразом
-    підстановки документації підтвердили рідні піни C3 з другого боку:
-    `MISO` = `GPIO2`, `CS` = `GPIO10` — те саме, що в `spi_pins.h`.
+    Виправлено в розділах 36 (двічі: виклад і підсумок) і 04. Заразом підстановки документації
+    підтвердили рідні піни C3 з другого боку: `MISO` = `GPIO2`, `CS` = `GPIO10` — те саме,
+    що в `spi_pins.h`.'
+  title: Матриця GPIO і SPI — 40 проти 80 МГц, і коли різниці немає
+  match: межа — 80 МГц|межа 40 МГц замість 80|На 40 МГц і нижче різниці немає|достатньо однієї
+    лінії поза\s*\n?рідними пінами|обмежений 40 МГц замість 80
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/spi_master.rst
+  quote: "Most of ESP32's peripheral signals have a direct connection to their\ndedicated\
+    \ IO_MUX pins. However, the signals can also be routed to any\nother available pins using\
+    \ the less direct GPIO matrix. If at least one\nsignal is routed through the GPIO matrix,\
+    \ then all signals will be\nrouted through it.\n\nThe GPIO matrix introduces flexibility\
+    \ of routing but also brings the\nfollowing disadvantages:\n- Allows signals with clock\
+    \ frequencies only up to 40 MHz, as opposed\n  to 80 MHz if IO_MUX pins are used.\n\n\
+    When an SPI Host is set to 40 MHz or lower frequencies, routing SPI\npins via the GPIO\
+    \ matrix will behave the same compared to routing them\nvia IOMUX.\n\n{IDF_TARGET_SPI2_IOMUX_PIN_MISO:\
+    \ … esp32c3=\"2\" …}\n{IDF_TARGET_SPI2_IOMUX_PIN_CS:   … esp32c3=\"10\" …}\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Книга писала «через матрицю межа знижується приблизно вдвічі». Число правильне (40
+    проти 80), але слово «приблизно» ховало те, що читачеві потрібне найбільше: **нижче 40
+    МГц різниці немає жодної**.
+
+    Різниця між двома формулюваннями практична. Перше змушує підбирати рідні піни завжди —
+    і платити за це розведенням плати. Друге каже прямо: для microSD, дисплеїв і датчиків,
+    тобто для майже всього в цій книзі, питання рідних пінів не стоїть узагалі.
+
+    Додано й правило «все або нічого»: досить однієї лінії поза рідними пінами, щоб через
+    матрицю пішли всі. Проміжного стану немає, і «майже рідний» набір дає ту саму межу, що
+    й довільний. Без цього читач природно вирішує, що виграє потроху за кожен рідний пін.
+
+    Виправлено в розділах 36 (двічі: виклад і підсумок) і 04. Заразом підстановки документації
+    підтвердили рідні піни C3 з другого боку: `MISO` = `GPIO2`, `CS` = `GPIO10` — те саме,
+    що в `spi_pins.h`.'

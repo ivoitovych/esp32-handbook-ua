@@ -11,85 +11,108 @@
 # четверта категорія з проходу 26: не число і не пояснення, а
 # **напрямок висновку**.
 
-- nazva: "chip-id на сімействі ESP32 повертає попередження, а не Chip ID"
-  zbih: 'Чому не `chip-id`|успадкована від ESP8266, у якого справді був окремий Chip ID|has no chip ID\. Reading MAC address instead|`chip_id`, `flash_id`'
+
+
+
+
+
+
+
+- nazva: chip-id на сімействі ESP32 повертає попередження, а не Chip ID
+  zbih: Чому не `chip-id`|успадкована від ESP8266, у якого справді був окремий Chip ID|has
+    no chip ID\. Reading MAC address instead|`chip_id`, `flash_id`
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/esptool/cmds.py,
-    .../esptool/loader.py, .../esptool/targets/esp8266.py
-  cytata: |
-    (cmds.py)
-    def chip_id(esp: ESPLoader) -> None:
-        """
-        Read and display the Chip ID of the ESP device if available,
-        otherwise fall back to displaying the MAC address.
-        """
-        try:
-            chipid = esp.chip_id()
-            log.print(f"Chip ID: {chipid:#010x}")
-        except NotSupportedError:
-            log.warn(f"{esp.CHIP_NAME} has no chip ID. "
-                     "Reading MAC address instead.")
-            read_mac(esp)
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/cmds.py, .../esptool/loader.py,
+    .../esptool/targets/esp8266.py
+  cytata: "(cmds.py)\ndef chip_id(esp: ESPLoader) -> None:\n    \"\"\"\n    Read and display\
+    \ the Chip ID of the ESP device if available,\n    otherwise fall back to displaying the\
+    \ MAC address.\n    \"\"\"\n    try:\n        chipid = esp.chip_id()\n        log.print(f\"\
+    Chip ID: {chipid:#010x}\")\n    except NotSupportedError:\n        log.warn(f\"{esp.CHIP_NAME}\
+    \ has no chip ID. \"\n                 \"Reading MAC address instead.\")\n        read_mac(esp)\n\
+    \n(loader.py — базовий клас ESPLoader)\ndef chip_id(self):\n    raise NotSupportedError(self,\
+    \ \"Function chip_id\")\n\n(targets/esp8266.py — єдине перевизначення в дереві)\ndef chip_id(self):\n\
+    \    \"\"\"\n    Read Chip ID from efuse - the equivalent of the SDK\n    system_get_chip_id()\
+    \ func\n    \"\"\"\n    id0 = self.read_reg(self.ESP_OTP_MAC0)\n    id1 = self.read_reg(self.ESP_OTP_MAC1)\n\
+    \    return (id0 >> 24) | ((id1 & 0xFFFFFF) << 8)\n"
+  sposib: curl raw.githubusercontent — знахідку подав агент пулу (шматок 8), джерело перевірене
+    М1 самостійно, 2026-08-26
+  notatka: '`chip_id()` визначено рівно в двох місцях усього дерева `esptool`: у базовому
+    класі, де він кидає `NotSupportedError`, і в `esp8266.py`, де він справді читає efuse.
+    Жоден цільовий клас сімейства ESP32 його не перевизначає.
 
-    (loader.py — базовий клас ESPLoader)
-    def chip_id(self):
-        raise NotSupportedError(self, "Function chip_id")
+    Отже підкоманда — залишок від ESP8266, у якого окремий Chip ID був. На ESP32 вона друкує
+    попередження і MAC.'
+  title: chip-id на сімействі ESP32 повертає попередження, а не Chip ID
+  match: Чому не `chip-id`|успадкована від ESP8266, у якого справді був окремий Chip ID|has
+    no chip ID\. Reading MAC address instead|`chip_id`, `flash_id`
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/esptool/cmds.py, .../esptool/loader.py,
+    .../esptool/targets/esp8266.py
+  quote: "(cmds.py)\ndef chip_id(esp: ESPLoader) -> None:\n    \"\"\"\n    Read and display\
+    \ the Chip ID of the ESP device if available,\n    otherwise fall back to displaying the\
+    \ MAC address.\n    \"\"\"\n    try:\n        chipid = esp.chip_id()\n        log.print(f\"\
+    Chip ID: {chipid:#010x}\")\n    except NotSupportedError:\n        log.warn(f\"{esp.CHIP_NAME}\
+    \ has no chip ID. \"\n                 \"Reading MAC address instead.\")\n        read_mac(esp)\n\
+    \n(loader.py — базовий клас ESPLoader)\ndef chip_id(self):\n    raise NotSupportedError(self,\
+    \ \"Function chip_id\")\n\n(targets/esp8266.py — єдине перевизначення в дереві)\ndef chip_id(self):\n\
+    \    \"\"\"\n    Read Chip ID from efuse - the equivalent of the SDK\n    system_get_chip_id()\
+    \ func\n    \"\"\"\n    id0 = self.read_reg(self.ESP_OTP_MAC0)\n    id1 = self.read_reg(self.ESP_OTP_MAC1)\n\
+    \    return (id0 >> 24) | ((id1 & 0xFFFFFF) << 8)\n"
+  method: curl raw.githubusercontent — знахідку подав агент пулу (шматок 8), джерело перевірене
+    М1 самостійно, 2026-08-26
+  note: '`chip_id()` визначено рівно в двох місцях усього дерева `esptool`: у базовому класі,
+    де він кидає `NotSupportedError`, і в `esp8266.py`, де він справді читає efuse. Жоден
+    цільовий клас сімейства ESP32 його не перевизначає.
 
-    (targets/esp8266.py — єдине перевизначення в дереві)
-    def chip_id(self):
-        """
-        Read Chip ID from efuse - the equivalent of the SDK
-        system_get_chip_id() func
-        """
-        id0 = self.read_reg(self.ESP_OTP_MAC0)
-        id1 = self.read_reg(self.ESP_OTP_MAC1)
-        return (id0 >> 24) | ((id1 & 0xFFFFFF) << 8)
-  sposib: >-
-    curl raw.githubusercontent — знахідку подав агент пулу (шматок 8),
-    джерело перевірене М1 самостійно, 2026-08-26
-  notatka: >-
-    `chip_id()` визначено рівно в двох місцях усього дерева `esptool`: у
-    базовому класі, де він кидає `NotSupportedError`, і в `esp8266.py`,
-    де він справді читає efuse. Жоден цільовий клас сімейства ESP32 його
-    не перевизначає.
-
-    Отже підкоманда — залишок від ESP8266, у якого окремий Chip ID був.
-    На ESP32 вона друкує попередження і MAC.
-
+    Отже підкоманда — залишок від ESP8266, у якого окремий Chip ID був. На ESP32 вона друкує
+    попередження і MAC.'
 - nazva: Сімейство, ревізію, кристал і MAC друкує преамбула з'єднання
-  zbih: 'преамбула з.єднання|Chip type:\s+ESP32-D0WD-V3|шапк[ауи] з.єднання|шапка `esptool`|друкує шапку з тим, що знайшов'
+  zbih: преамбула з.єднання|Chip type:\s+ESP32-D0WD-V3|шапк[ауи] з.єднання|шапка `esptool`|друкує
+    шапку з тим, що знайшов
   klas: A
-  dzherelo: >-
-    https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
-  cytata: |
-    # 2) Print the chip info
-    ...
-    else:
-        log.print(f"{'Chip type:':<20}{esp.get_chip_description()}")
-        log.print(f"{'Features:':<20}{', '.join(esp.get_chip_features())}")
-        log.print(f"{'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz")
-        usb_mode = esp.get_usb_mode()
-        if usb_mode is not None:
-            log.print(f"{'USB mode:':<20}{usb_mode}")
-        read_mac(esp)
-  sposib: >-
-    curl raw.githubusercontent, перевірено М1, 2026-08-26
-  notatka: >-
-    Цей блок виконується **до** виклику підкоманди й не залежить від
-    того, яка вона. Тому будь-яка команда, що взагалі під'єдналася, уже
-    назвала сімейство, ревізію, частоту кристала й MAC.
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  cytata: "# 2) Print the chip info\n...\nelse:\n    log.print(f\"{'Chip type:':<20}{esp.get_chip_description()}\"\
+    )\n    log.print(f\"{'Features:':<20}{', '.join(esp.get_chip_features())}\")\n    log.print(f\"\
+    {'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz\")\n    usb_mode = esp.get_usb_mode()\n\
+    \    if usb_mode is not None:\n        log.print(f\"{'USB mode:':<20}{usb_mode}\")\n \
+    \   read_mac(esp)\n"
+  sposib: curl raw.githubusercontent, перевірено М1, 2026-08-26
+  notatka: 'Цей блок виконується **до** виклику підкоманди й не залежить від того, яка вона.
+    Тому будь-яка команда, що взагалі під''єдналася, уже назвала сімейство, ревізію, частоту
+    кристала й MAC.
 
-    Практичний наслідок для книги виявився ширшим за виправлення:
-    правило «перша команда для незнайомої плати» тепер `flash-id` не
-    тому, що вона краще ідентифікує чип, а тому, що вона додає до
-    безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
+    Практичний наслідок для книги виявився ширшим за виправлення: правило «перша команда для
+    незнайомої плати» тепер `flash-id` не тому, що вона краще ідентифікує чип, а тому, що
+    вона додає до безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
 
-    Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки
-    К1 і К10, додаток C, дві вкладки. Формулювання заведено в
-    `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою старої
-    фрази в розділ 23 — знаходиться.
+    Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки К1 і К10, додаток C,
+    дві вкладки. Формулювання заведено в `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою
+    старої фрази в розділ 23 — знаходиться.
 
-    Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17
-    тепер **пояснює**, чому команди краще не вживати, і мусить цитувати
-    її назву.
+    Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17 тепер **пояснює**, чому
+    команди краще не вживати, і мусить цитувати її назву.'
+  title: Сімейство, ревізію, кристал і MAC друкує преамбула з'єднання
+  match: преамбула з.єднання|Chip type:\s+ESP32-D0WD-V3|шапк[ауи] з.єднання|шапка `esptool`|друкує
+    шапку з тим, що знайшов
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  quote: "# 2) Print the chip info\n...\nelse:\n    log.print(f\"{'Chip type:':<20}{esp.get_chip_description()}\"\
+    )\n    log.print(f\"{'Features:':<20}{', '.join(esp.get_chip_features())}\")\n    log.print(f\"\
+    {'Crystal frequency:':<20}{esp.get_crystal_freq()}MHz\")\n    usb_mode = esp.get_usb_mode()\n\
+    \    if usb_mode is not None:\n        log.print(f\"{'USB mode:':<20}{usb_mode}\")\n \
+    \   read_mac(esp)\n"
+  method: curl raw.githubusercontent, перевірено М1, 2026-08-26
+  note: 'Цей блок виконується **до** виклику підкоманди й не залежить від того, яка вона.
+    Тому будь-яка команда, що взагалі під''єдналася, уже назвала сімейство, ревізію, частоту
+    кристала й MAC.
+
+    Практичний наслідок для книги виявився ширшим за виправлення: правило «перша команда для
+    незнайомої плати» тепер `flash-id` не тому, що вона краще ідентифікує чип, а тому, що
+    вона додає до безкоштовної шапки те єдине, чого в шапці немає, — обсяг флешу.
+
+    Виправлено в одинадцяти місцях: розділи 08, 17, 20, 21, 23, картки К1 і К10, додаток C,
+    дві вкладки. Формулювання заведено в `factcheck/SPROSTOVANE.md`, взірець випробувано вставкою
+    старої фрази в розділ 23 — знаходиться.
+
+    Виняток у взірці на `manual/17-esptool.md` навмисний: розділ 17 тепер **пояснює**, чому
+    команди краще не вживати, і мусить цитувати її назву.'
