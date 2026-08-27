@@ -59,7 +59,7 @@
     не каже — вона видна лише в назві регістра матриці.
 
 - nazva: "Драйвер I²C називає причину в консолі, а не мовчить"
-  zbih: "i2c_new_master_bus\\(1049\\): invalid SDA/SCL pin number|називає причину в консолі|мовчазним воно\\s*\\n?стає лише тоді"
+  zbih: "i2c_new_master_bus\\(1049\\): invalid SDA/SCL pin number|називає причину в консолі|[Мм]овчазним воно\\s*\\n?стає лише тоді"
   klas: A
   dzherelo: >-
     https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c,

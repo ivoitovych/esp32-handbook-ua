@@ -61,7 +61,7 @@
     маршрутами немає взагалі.
 
 - nazva: TWAI сумісний з ISO 11898-1 і потребує зовнішнього трансивера
-  zbih: 'TWAI.{0,80}(Two-Wire|назва інша)|не має трансивера|трансивер обов|Трансивер має відповідати'
+  zbih: 'TWAI.{0,80}(Two-Wire|назва інша)|не має трансивера|[Тт]рансивер обов|Трансивер має відповідати'
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/twai.rst
   cytata: |
@@ -108,7 +108,7 @@
     синхронізацію доводиться робити рівнем вище.
 
 - nazva: Механізм відкату OTA і його стани
-  zbih: 'ESP_OTA_IMG_PENDING_VERIFY|esp_ota_mark_app_valid_cancel_rollback|App rollback support'
+  zbih: 'ESP_OTA_IMG_PENDING_VERIFY|esp_ota_mark_app_valid_cancel_rollback|[Aa]pp rollback\s+support'
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
   cytata: |
