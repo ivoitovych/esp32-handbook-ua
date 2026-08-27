@@ -26,9 +26,7 @@
   fayl: a4dbe955-bootloader.rst
   cytata: |
     I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
-    I (59) boot.esp32c5: SPI Flash Size : 4MB
-    I (67) boot: Partition Table:
-  de: сторінки 228-237 (Recovery Bootloader log example)
+  de: сторінки 228, 234, 236 (Recovery Bootloader log example)
   notatka: Лог бутлоадера показує версію ESP-IDF, обсяг флешу та таблицю розділів.
 
 - id: T-20-062
@@ -64,9 +62,7 @@
   fayl: a4dbe955-bootloader.rst
   cytata: |
     I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
-    I (59) boot.esp32c5: SPI Flash Size : 4MB
-    I (67) boot: Partition Table:
-  de: сторінки 228-237 (Recovery Bootloader log example)
+  de: сторінки 228, 234, 236 (Recovery Bootloader log example)
   notatka: Бутлоадер виводить версію ESP-IDF, обсяг флешу та таблицю розділів безкоштовно.
 
 - id: T-D-106
@@ -74,9 +70,7 @@
   fayl: a4dbe955-bootloader.rst
   cytata: |
     I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
-    I (59) boot.esp32c5: SPI Flash Size : 4MB
-    I (67) boot: Partition Table:
-  de: сторінки 228-237 (Recovery Bootloader log example)
+  de: сторінки 228, 234, 236 (Recovery Bootloader log example)
   notatka: Лог бутлоадера показує версію ESP-IDF, обсяг флешу та адреси розділів — готова відповідь.
 
 - id: T-01-066

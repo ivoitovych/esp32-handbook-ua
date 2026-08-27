@@ -89,7 +89,24 @@ KLYUCHI: list[tuple[str, str]] = [
     (r"\bGPIO\b", "gpio.rst"),
     (r"\beFuse\b", "burn-efuse-cmd"),
     (r"монітор|idf\.py monitor", "idf-monitor.rst"),
-    (r"ESP32-C3", "esp32c3.inc"),
+    # Додано після докачування 2026-08-27. Урок дорожчий за самі ключі:
+    # завантажити документ мало. Я докачав тринадцять даташитів, і
+    # число одиниць «з файлом у кеші» не зрушило взагалі — бо ключа
+    # для них не було, і підбір їх не бачив. Кеш і підбір — це одна
+    # річ у двох місцях, і поповнювати треба обидва.
+    (r"\bESP8266\b|\bESP-12\b|\bESP-01\b", "esp8266"),
+    (r"\bESP32-S3-WROOM-1\b", "esp32-s3-wroom-1"),
+    (r"\bESP32-C3-MINI-1\b", "esp32-c3-mini-1"),
+    (r"\bESP32-WROVER\b", "esp32-wrover-e"),
+    (r"\bESP32-WROOM-32D\b", "esp32-wroom-32d"),
+    (r"\bTCA9548A?\b", "tca9548a"),
+    (r"\bULN2003A?\b", "uln2003"),
+    (r"\bADS1256\b", "ads1256"),
+    (r"\bESP32-P4\b", "esp32-p4"),
+    (r"\bESP32-S2\b", "esp32-s2_datasheet"),
+    (r"\bESP32-S3\b", "esp32-s3_datasheet"),
+    (r"\bESP32-C5\b", "esp32-c5"),
+    (r"ESP32-C3", "esp32-c3_datasheet|esp32c3.inc"),
 ]
 
 
@@ -136,9 +153,39 @@ def kesh_fayly() -> list[str]:
     return sorted(p.name for p in KESH.iterdir() if p.is_file())
 
 
+# Ключ, що називає ДЕТАЛЬ, завжди конкретніший за ключ, що називає
+# тему. `DS18B20` каже, який саме документ відповість; `GPIO` каже
+# лише, про що мова.
+#
+# Спершу підбір брав ПЕРШИЙ ключ, що збігся, а перелік ішов у довільному
+# порядку — і загальні ключі стояли попереду. Наслідок побачив,
+# докачавши тринадцять даташитів: число одиниць «з файлом у кеші»
+# зрушило з 426 на 428, і лише два нових документи взагалі знайшли
+# собі одиниці. Решту одинадцять перехопили `бутлоадер`, `скидання`,
+# `GPIO` — ключі, що стояли вище.
+#
+# Ознака конкретності проста й перевірювана: у взірці є цифра,
+# тобто номер деталі. Тематичні слова цифр не містять.
+SPEC = re.compile(r"\d")
+
+
 def pidibraty(tekst: str, fayly: list[str]) -> list[str]:
-    """Файли першого ключа, що збігся. Ключ може вести до кількох."""
+    """Файли найконкретнішого ключа, що збігся.
+
+    Два проходи: спершу ключі з номером деталі, потім тематичні.
+    Порядок усередині кожного рівня лишається як у переліку.
+    """
+    for riven in (True, False):
+        z = poshuk_riven(tekst, fayly, riven)
+        if z:
+            return z
+    return []
+
+
+def poshuk_riven(tekst: str, fayly: list[str], spec: bool) -> list[str]:
     for vzir, chastky in KLYUCHI:
+        if bool(SPEC.search(vzir)) != spec:
+            continue
         if re.search(vzir, tekst, re.I):
             znaydeni = []
             for chastka in chastky.split("|"):

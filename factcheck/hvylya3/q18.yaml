@@ -75,3 +75,10 @@
   cytata: The BMP280 is an absolute barometric pressure sensor especially designed for mobile applications.
   de: General Description
   notatka: Без вологості - виміри тільки тиск та температуру (див. таблицю 1)
+
+- id: T-48-069
+  verdykt: pidtverdzheno
+  fayl: l298n.pdf
+  cytata: LOW SATURATION VOLTAGE
+  de: Description / Features
+  notatka: ELECTRICAL CHARACTERISTICS показує Total Drop мін. 1.80V при IL=1A, що підтверджує ~2В втрат

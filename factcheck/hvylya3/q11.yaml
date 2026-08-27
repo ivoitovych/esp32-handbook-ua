@@ -21,3 +21,79 @@
 - id: T-27-065
   verdykt: ne_znayshov
   dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'більшість.*помилок', 0 влучань
+
+- id: T-27-070
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'потреб', 0 влучань
+
+- id: T-27-038
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'пастка|trap', 0 влучань
+
+- id: T-27-075
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'більшість', 0 влучань
+
+- id: T-04-118
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'otg', 0 влучань
+
+- id: T-G-155
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'joint.*test.*action', 0 влучань
+
+- id: T-10-037
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'адаптер|adapter', 0 влучань
+
+- id: T-04-120
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'usb.*c6|c6.*jtag', 0 влучань
+
+- id: T-11-104
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'coredump|backtrace', 0 влучань
+
+- id: T-02-071
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'serial-jtag|h2', 0 влучань
+
+- id: T-27-061
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'піни.*зайняті|pins.*occupied', 0 влучань
+
+- id: T-K11-004
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'помилковий біт', 0 влучань
+
+- id: T-04-119
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'usb.*c3|c3.*jtag', 0 влучань
+
+- id: T-27-020
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'переналаштовані|reconfigured', 0 влучань
+
+- id: T-02-069
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'c3.*serial', 0 влучань
+
+- id: T-02-068
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 's3.*otg', 0 влучань
+
+- id: T-A-029
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'tck', 0 влучань
+
+- id: T-04-121
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'usb.*h2|h2.*jtag', 0 влучань
+
+- id: T-02-138
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'без адаптера', 0 влучань
+
+- id: T-27-027
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'classic.*вбудованого', 0 влучань

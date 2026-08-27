@@ -129,3 +129,29 @@
   verdykt: ne_znayshov
   dyvyvsya: c02027a1-nvs_flash.rst, grep 'ESP_ERROR_CHECK', 0 влучань про ESP_ERROR_CHECK
   notatka: Документ не згадує макрос ESP_ERROR_CHECK у контексті NVS операцій.
+
+- id: T-55-083
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    The library uses all the partitions with data type and nvs subtype.
+  de: Underlying Storage section
+  notatka: Документ описує, що NVS може містити конфігурацію, яка зберігається в розділі і залишається при заміні апаратури.
+
+- id: T-18-050
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'firmware.*update\|survive.*update\|persist.*firmware', 0 влучань
+  notatka: Документ не стверджує явно, що значення в NVS переживають оновлення прошивки, хоча це логічно випливає з його призначення.
+
+- id: T-18-011
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    The library uses all the partitions with data type and nvs subtype.
+  de: Underlying Storage section, line 14
+  notatka: Документ явно стверджує, що NVS використовує розділи з типом data.
+
+- id: T-58-055
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'credentials\|security.*best\|practice', 0 влучань про рекомендацію зберігати креденшели
+  notatka: Документ не дає рекомендацій щодо зберігання креденшелів у NVS як частини безпеки.

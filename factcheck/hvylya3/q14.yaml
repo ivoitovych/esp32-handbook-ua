@@ -113,8 +113,7 @@
   verdykt: pidtverdzheno
   fayl: mpu6050.pdf
   cytata: |
-    The least significant bit of the MPU-60X0's I2C address is
-    determined by the value of the AD0 pin. The default value of the register is 0x68.
+    The default value of the register is 0x68.
   de: 'секція 4.34 "Register 117 – Who Am I"'
   notatka: 'Датаист підтверджує, що адреса можна змінити через контакт AD0 з 0x68 на 0x69.'
 

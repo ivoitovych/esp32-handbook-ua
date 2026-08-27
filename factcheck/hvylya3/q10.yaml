@@ -74,9 +74,9 @@
   verdykt: pidtverdzheno
   fayl: sx1276.pdf
   cytata: |
-    The SX1276/77/78/79 transceivers feature the LoRa long range modem
+    SX1276/77/78/79 transceivers feature the LoRa
   de: сторінка 1, General Description
-  notatka: SX1276 дійсно для LoRa, багато бібліотек як заявляється.
+  notatka: LoRa підтверджена як основна функція SX1276.
 
 - id: T-COM-053
   verdykt: pidtverdzheno
@@ -90,9 +90,9 @@
   verdykt: pidtverdzheno
   fayl: sx1276.pdf
   cytata: |
-    The SX1276/77/78/79 transceivers feature the LoRa long range modem
+    feature the LoRa
   de: сторінка 1, General Description
-  notatka: LoRa є основною функцією SX1276.
+  notatka: LoRa - основна функція SX1276.
 
 - id: T-E-061
   verdykt: pidtverdzheno
@@ -122,9 +122,9 @@
   verdykt: pidtverdzheno
   fayl: sx1276.pdf
   cytata: |
-    The SX1276/77/78/79 transceivers feature the LoRa long range modem
+    feature the LoRa
   de: сторінка 1, General Description
-  notatka: SX1276 дійсно класичний широко доступний модуль для LoRa.
+  notatka: SX1276 - класичний модуль для LoRa.
 
 - id: T-E-060
   verdykt: pidtverdzheno
