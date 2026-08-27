@@ -470,7 +470,7 @@
 
 ---
 
-<!-- fc id:T-12-029 sha:2075225d src:manual/12-arduino.md:82 klas:F -->
+<!-- fc id:T-12-029 sha:2075225d src:manual/12-arduino.md:82 klas:C -->
 ### T-12-029 · proza · рядок 82
 
 **Книга каже, дослівно:**
@@ -479,7 +479,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** Arduino документація та ESP-IDF Programming Guide
+- **Що шукати в джерелі:** Документація про портування коду AVR на ESP32, обмеження пам'яті AVR
+- **Нотатка:** Твердження про типові проблеми портування Arduino коду з AVR. Логіка витримується: мікроконтролери AVR мають обмежену пам'ять (2 КБ SRAM на Atmega328) та використовують блокувальні delay(). Потребує офіційної цитати для класу B.
+- **Прохід:** m2-98-vybirka
 
 ---
 
@@ -854,7 +858,7 @@
 
 ---
 
-<!-- fc id:T-12-058 sha:6abb33e2 src:manual/12-arduino.md:151 klas:F -->
+<!-- fc id:T-12-058 sha:6abb33e2 src:manual/12-arduino.md:151 klas:A -->
 ### T-12-058 · tablycya · рядок 151
 
 **Книга каже, дослівно:**
@@ -863,7 +867,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Документ підтверджує OTA як механізм у ESP-IDF.
+- **Прохід:** m2-hvylya2
 
 ---
 

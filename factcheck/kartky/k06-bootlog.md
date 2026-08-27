@@ -476,7 +476,7 @@
 
 ---
 
-<!-- fc id:T-K06-024 sha:9338f26b src:kartky/k06-bootlog.md:24 klas:F -->
+<!-- fc id:T-K06-024 sha:9338f26b src:kartky/k06-bootlog.md:24 klas:A -->
 ### T-K06-024 · komirka · рядок 24
 
 **Книга каже, дослівно:**
@@ -485,7 +485,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/569e266f-fatal-errors.rst
+- **Дослівно з джерела:**
+  > rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Місце в документі: розділ RTC Watchdog Timeout, рядок 306
+- **Прохід:** m2-hvylya2
 
 ---
 

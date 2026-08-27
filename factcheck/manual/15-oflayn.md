@@ -175,7 +175,7 @@
 
 ---
 
-<!-- fc id:T-15-014 sha:a6a8ecd6 src:manual/15-oflayn.md:15 klas:F -->
+<!-- fc id:T-15-014 sha:a6a8ecd6 src:manual/15-oflayn.md:15 klas:A -->
 ### T-15-014 · komirka · рядок 15
 
 **Книга каже, дослівно:**
@@ -184,7 +184,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > Upon the first boot, the application checks its state and performs diagnostics.
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Документ підтверджує наявність діагностики та перевірки відтворюваності при OTA.
+- **Прохід:** m2-hvylya2
 
 ---
 

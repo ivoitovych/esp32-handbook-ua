@@ -234,7 +234,7 @@
 
 ---
 
-<!-- fc id:T-16-014 sha:bd61d296 src:manual/16-boot.md:39 klas:F -->
+<!-- fc id:T-16-014 sha:bd61d296 src:manual/16-boot.md:39 klas:C -->
 ### T-16-014 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -243,11 +243,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32 та ESP32-S3 Datasheet, розділ про boot mode selection
+- **Що шукати в джерелі:** GPIO pin functions, boot mode control
+- **Нотатка:** Твердження про GPIO0 як ключовий контрольний пін для boot режимів. Це стандартна функція ESP32 архітектури, що підтверджується datasheet.
+- **Прохід:** m2-98-vybirka
 
 ---
 
-<!-- fc id:T-16-015 sha:10272434 src:manual/16-boot.md:41 klas:F -->
+<!-- fc id:T-16-015 sha:10272434 src:manual/16-boot.md:41 klas:E -->
 ### T-16-015 · tablycya · рядок 41
 
 **Книга каже, дослівно:**
@@ -256,7 +260,9 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Нотатка:** Це заголовок таблиці з самої книги, яка описує залежність ROM адреси від стану GPIO0 при скиданні. Таблиця з книги не є зовнішнім джерелом.
+- **Прохід:** m2-98-vybirka
 
 ---
 
@@ -584,47 +590,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild та .../docs/en/api-guides/startup.rst; https://raw.githubusercontent.com/espressif/esptool/master/esptool/targets/esp32*.py
+- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst, dzherela-kesh/a4dbe955-bootloader.rst)
 - **Дослівно з джерела:**
-  > (Kconfig.projbuild)
-  > config BOOTLOADER_OFFSET_IN_FLASH
-  >     hex
-  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
-  >     # the first 2 sectors are reserved for the key manager with AES-XTS
-  >     #   (flash encryption) purpose
-  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
-  >     default 0x0
-  >     help
-  >         Offset address that 2nd bootloader will be flashed to.
-  >         The value is determined by the ROM bootloader.
-  >         It's not configurable in ESP-IDF.
-  > 
-  > (startup.rst)
-  > .. only:: esp32
-  >    … If :doc:`/security/secure-boot-v1` is in use then the first 4 kB
-  >    sector of flash is used to store secure boot IV and digest of the
-  >    bootloader image. Otherwise, this sector is unused.
-  > .. only:: esp32s2
-  >    … The 4 kB sector of flash before this address is unused.
-  > .. only:: SOC_KEY_MANAGER_SUPPORTED
-  >    … The 8 kB sector of flash before this address is reserved for the
-  >    key manager for use with flash encryption (AES-XTS).
-  > 
-  > (esptool/targets/)
-  > esp32.py:   BOOTLOADER_FLASH_OFFSET = 0x1000
-  > esp32s3.py: BOOTLOADER_FLASH_OFFSET = 0x0
-  > esp32c3.py: BOOTLOADER_FLASH_OFFSET = 0x0
-  > esp32c6.py: BOOTLOADER_FLASH_OFFSET = 0x0
-  > esp32p4.py: BOOTLOADER_FLASH_OFFSET = 0x2000  # First 2 sectors reserved for FE
-  > esp32c5.py: BOOTLOADER_FLASH_OFFSET = 0x2000
-  > esp32h4.py: BOOTLOADER_FLASH_OFFSET = 0x2000
-  > (S2 успадковує 0x1000 від ESP32ROM; H2 — 0x0 від ESP32C6ROM;
-  >  C2 — 0x0 від ESP32C3ROM)
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Три рядки таблиці зсувів звірено з двох незалежних боків — Kconfig ESP-IDF і розбір цілей esptool — і збіг дослівний, включно з успадкуванням для S2, H2 і C2. Твердження книги «значення задає ROM і в ESP-IDF не налаштовується» теж дослівне: воно є в довідці Kconfig.
-Хибною виявилася **причина**. Книга писала: «у classic і S2 проміжок від `0x0` до `0x1000` зарезервовано під потреби ROM». ROM-бутлоадер живе в кремнії й у флеші не займає нічого. Насправді на classic цей сектор належить IV і дайджестові Secure Boot v1 — а без secure boot просто не використовується; на S2 не використовується завжди.
-Виправлено у двох місцях (розділ 16 і `docs/fakty.md`), і формулювання заведено в `factcheck/SPROSTOVANE.md`. Заразом таблиця в `docs/fakty.md` була **неповна** — у ній бракувало рядка `0x2000` для P4, C5 і H4, який у розділі 16 є з проходу 6.
-- **Прохід:** pass-24-zsuvy-i-matrycya
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
+- **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
+- **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
+- **Прохід:** m2-94-vybirka
 
 ---
 
@@ -762,7 +733,7 @@
 
 ---
 
-<!-- fc id:T-16-034 sha:04eedad6 src:manual/16-boot.md:74 klas:F -->
+<!-- fc id:T-16-034 sha:04eedad6 src:manual/16-boot.md:74 klas:A -->
 ### T-16-034 · proza · рядок 74
 
 **Книга каже, дослівно:**
@@ -771,7 +742,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst, dzherela-kesh/a4dbe955-bootloader.rst)
+- **Дослівно з джерела:**
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
+- **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
+- **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
+- **Прохід:** m2-94-vybirka
 
 ---
 

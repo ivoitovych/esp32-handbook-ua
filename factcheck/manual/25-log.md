@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-25-037 sha:43ab6004 src:manual/25-log.md:67 klas:F -->
+<!-- fc id:T-25-037 sha:43ab6004 src:manual/25-log.md:67 klas:A -->
 ### T-25-037 · proza · рядок 67
 
 **Книга каже, дослівно:**
@@ -616,7 +616,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Дослівно з джерела:**
+  > * Ctrl + L
+  > - Stop/resume log output saved to file
+  > - Create a file in the project directory and the output is written to that file until this is disabled with the same keyboard shortcut (or IDF Monitor exits).
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Місце в документі: таблиця клавіш, рядки 50-52
+- **Прохід:** m2-hvylya2
 
 ---
 
@@ -2060,7 +2068,7 @@
 
 ---
 
-<!-- fc id:T-25-105 sha:45552ee9 src:manual/25-log.md:244 klas:F -->
+<!-- fc id:T-25-105 sha:45552ee9 src:manual/25-log.md:244 klas:A -->
 ### T-25-105 · proza · рядок 244
 
 **Книга каже, дослівно:**
@@ -2069,7 +2077,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Дослівно з джерела:**
+  > Create a file in the project directory and the output is written to that file
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Місце в документі: 
+- **Прохід:** m2-hvylya2
 
 ---
 

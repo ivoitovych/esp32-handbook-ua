@@ -675,7 +675,7 @@
 
 ---
 
-<!-- fc id:T-59-033 sha:56b9597c src:manual/59-proj-monitor.md:64 klas:F -->
+<!-- fc id:T-59-033 sha:56b9597c src:manual/59-proj-monitor.md:64 klas:A -->
 ### T-59-033 · proza · рядок 64
 
 **Книга каже, дослівно:**
@@ -684,7 +684,31 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c, .../components/esp_common/include/esp_check.h, .../Kconfig
+- **Дослівно з джерела:**
+  > (i2c_master.c:1049)
+  > ESP_RETURN_ON_FALSE(GPIO_IS_VALID_GPIO(bus_config->sda_io_num) &&
+  >     GPIO_IS_VALID_GPIO(bus_config->scl_io_num), ESP_ERR_INVALID_ARG,
+  >     TAG, "invalid SDA/SCL pin number");
+  > 
+  > (esp_check.h — варіант, що діє типово)
+  > #define ESP_RETURN_ON_FALSE(a, err_code, log_tag, format, ...) do { \
+  >         if (unlikely(!(a))) { \
+  >             ESP_LOGE(log_tag, "%s(%d): " format, __FUNCTION__, __LINE__ ...); \
+  >             return err_code; \
+  >         } \
+  >     } while(0)
+  > 
+  > (Kconfig)
+  > config COMPILER_OPTIMIZATION_CHECKS_SILENT
+  >     bool "Disable messages in ESP_RETURN_ON_* and ESP_EXIT_ON_* macros"
+  >     default n
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 11), 2026-08-26
+- **Нотатка:** Книга писала, що схема з `GPIO22` на S3 «не запрацює **й помилки не дасть**», і тут же — що виклик поверне `ESP_ERR_INVALID_ARG`. Два твердження в одному реченні суперечать одне одному.
+Джерело вирішує суперечку на користь другого: мовчазний варіант макроса вмикається лише опцією `COMPILER_OPTIMIZATION_CHECKS_SILENT`, а вона типово `n`. Тобто в консолі стоїть готовий діагноз із назвою функції та номером рядка.
+Виправлення важливіше за факт: книга посилала читача шукати мовчазну ваду там, де в логу лежить готова відповідь. Тепер сказано, за яких умов воно **справді** стає мовчазним — коли код повернення не перевіряють і лог гортають повз.
+- **Прохід:** pass-38-pul-shmatky-9-11
 
 ---
 
@@ -745,10 +769,10 @@
 **Доказ**
 
 - **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Джерело:** GPIO матриця в esp_idf, I2C драйвер
+- **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
+- **Нотатка:** Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий вибір пінів. Потребує перевірки, чи це значення за замовчуванням.
+- **Прохід:** m2-98-vybirka
 
 ---
 
@@ -790,7 +814,7 @@
 
 ---
 
-<!-- fc id:T-59-040 sha:0979f9d3 src:manual/59-proj-monitor.md:82 klas:F -->
+<!-- fc id:T-59-040 sha:0979f9d3 src:manual/59-proj-monitor.md:82 klas:C -->
 ### T-59-040 · schema-zvyazok · рядок 82
 
 **Книга каже, дослівно:**
@@ -799,7 +823,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** GPIO матриця в esp_idf, I2C драйвер
+- **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3
+- **Нотатка:** Аналогічно SCL (T-59-042), твердження про розпиновку I2C. Потребує перевірки у esp_idf документації.
+- **Прохід:** m2-98-vybirka
 
 ---
 
@@ -816,7 +844,7 @@
 
 ---
 
-<!-- fc id:T-59-042 sha:ea4f9ec1 src:manual/59-proj-monitor.md:84 klas:F -->
+<!-- fc id:T-59-042 sha:ea4f9ec1 src:manual/59-proj-monitor.md:84 klas:C -->
 ### T-59-042 · schema-zvyazok · рядок 84
 
 **Книга каже, дослівно:**
@@ -825,7 +853,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** GPIO матриця в esp_idf, I2C драйвер
+- **Що шукати в джерелі:** Таблиця розпиновки I2C у документації ESP32 та ESP32-S3, або i2c_master.c
+- **Нотатка:** Твердження про жорстку розпиновку пін SCL, але в esp_idf GPIO матриця дозволяє гнучкий вибір пінів. Потребує перевірки, чи це значення за замовчуванням.
+- **Прохід:** m2-98-vybirka
 
 ---
 
@@ -2173,22 +2205,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
-  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
-  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > rst:0x10 (RTCWDT_RTC_RESET)
   > 
-  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
-  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
-  >   nvs_read_key           — те саме
-  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
-  >   gpio_isr_handler       — те саме (розділи 03, 30)
-  >   idf_component_register — функція CMake, а не C-API (розділ 11)
-  > 
-  > Розбіжностей у справжніх викликах ESP-IDF: 0.
-- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
-- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
-- **Прохід:** pass-07-api-rozbyvka
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 
@@ -2439,7 +2469,7 @@
 
 ---
 
-<!-- fc id:T-59-114 sha:99584848 src:manual/59-proj-monitor.md:366 klas:F -->
+<!-- fc id:T-59-114 sha:99584848 src:manual/59-proj-monitor.md:366 klas:E -->
 ### T-59-114 · proza · рядок 366
 
 **Книга каже, дослівно:**
@@ -2448,7 +2478,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** немає зовнішнього джерела
+- **Спосіб і дата:** перевірка в контексті manual/59-proj-monitor.md:366
+- **Нотатка:** Це твердження про загальну практику програмування: стек має обмежений розмір, велику пам'ять беруть з heap'у. Зовнішнього документа, який би це підтверджував, не існує — це фундаментальна властивість архітектури ESP32.
+- **Прохід:** m2-94-vybirka
 
 ---
 
@@ -3156,7 +3190,7 @@
 
 ---
 
-<!-- fc id:T-59-146 sha:26ecb42f src:manual/59-proj-monitor.md:444 klas:C -->
+<!-- fc id:T-59-146 sha:26ecb42f src:manual/59-proj-monitor.md:444 klas:A -->
 ### T-59-146 · proza · рядок 444
 
 **Книга каже, дослівно:**
@@ -3165,10 +3199,12 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.analog.com/ (DS18B20 Datasheet, Maxim Integrated)
-- **Що шукати в джерелі:** таблиця часу перетворення за роздільністю (9 біт ≈ 93.75 мс, 12 біт ≈ 750 мс); робочий діапазон −55…+125 °C; налаштування роздільності 9–12 біт; вимога підтягувального резистора 4.7 кОм; розділ про паразитне живлення й обмеження на кількість пристроїв; 64-бітний унікальний ROM-код.
-- **Нотатка:** Значення −127 °C, яке книга називає кодом помилки, у datasheet відсутнє: це домовленість бібліотеки `DallasTemperature` (`DEVICE_DISCONNECTED_C`). Окремий пункт для наступного проходу — його можна закрити класом A з GitHub, бо бібліотека відкрита.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Дослівно з джерела:**
+  > Measures Temperatures from -55°C to +125°C
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** DS18B20 може працювати на вулиці в діапазоні від -55°C до +125°C.
+- **Прохід:** m2-hvylya2
 
 ---

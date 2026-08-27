@@ -431,7 +431,7 @@
 
 ---
 
-<!-- fc id:T-19-027 sha:7be3bc35 src:manual/19-ota.md:43 klas:F -->
+<!-- fc id:T-19-027 sha:7be3bc35 src:manual/19-ota.md:43 klas:C -->
 ### T-19-027 · proza · рядок 43
 
 **Книга каже, дослівно:**
@@ -440,7 +440,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Спосіб і дата:** Емпіричне вимірювання або документація IDF про розміри компонентів
+- **Що шукати в джерелі:** Розмір прошивки, Wi-Fi, TLS, веб-сервер, OTA слот
+- **Нотатка:** Твердження про розмір прошивки з конкретними компонентами. Це емпіричне спостереження, джерелом має бути практичне вимірювання або документація IDF. Не знайшов первинного джерела.
+- **Прохід:** m2-97-vybirka
 
 ---
 
@@ -623,17 +627,19 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.app_rollback
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/ota.rst
 - **Дослівно з джерела:**
-  > menu "Application Rollback"
-  >     config BOOTLOADER_APP_ROLLBACK_ENABLE
-  >         bool "Enable app rollback support"
-  >     …
-  >         bool "Enable app anti-rollback support"
+  > * The application works fine, :cpp:func:`esp_ota_mark_app_valid_cancel_rollback` marks the
+  >   running application with the state ``ESP_OTA_IMG_VALID``.
+  > * The application has critical errors …, :cpp:func:`esp_ota_mark_app_invalid_rollback_and_reboot`
+  >   marks the running application with the state ``ESP_OTA_IMG_INVALID`` and reset.
+  > * If the :ref:`CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE` option is set, and a reset occurs without
+  >   calling either function then the application is rolled back.
+  > …
+  >     if (ota_state == ESP_OTA_IMG_PENDING_VERIFY) {
 - **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Виправлення розділу 19: книга давала `Bootloader config` → `App rollback support`, пропускаючи рівень підменю. Насправді `Bootloader config` → `Application Rollback` → `Enable app rollback support`.
-Поруч видно `Enable app anti-rollback support` — інший механізм (заборона встановлювати старішу версію через eFuse), якого книга не описує й не плутає з відкатом. Розбіжності немає, зафіксовано на майбутнє.
-- **Прохід:** pass-11-menuconfig
+- **Нотатка:** Підтверджує весь механізм, описаний у розділі 19, включно з ключовою тезою: скидання без виклику підтвердження призводить до відкату.
+- **Прохід:** pass-02-povedinka
 
 ---
 

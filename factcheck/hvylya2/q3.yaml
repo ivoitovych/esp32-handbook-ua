@@ -1,0 +1,41 @@
+- id: T-50-017
+  verdykt: ne_znayshov
+
+- id: T-24-033
+  verdykt: ne_znayshov
+
+- id: T-24-043
+  verdykt: ne_znayshov
+
+- id: T-24-038
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length is currently 15 characters. Values can have one of the following types:
+  de: розділ "Keys and Values"
+  notatka: Також у документі про namespaces та page structure.
+
+- id: T-18-050
+  verdykt: ne_znayshov
+
+- id: T-18-052
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    The library does try to recover from conditions when flash memory is in an inconsistent state. In particular, one should be able to power off the device at any point and time and then power it back on. This should not result in loss of data, except for the new key-value pair if it was being written at the moment of powering off.
+  de: розділ "Security, Tampering, and Robustness"
+  notatka: Підтверджує стійкість до зникнення живлення.
+
+- id: T-53-017
+  verdykt: pidtverdzheno
+  fayl: ncr18650b.pdf
+  cytata: |
+    Temperature Charge*: 0 to +45°C
+  de: Specifications (таблиця)
+  notatka: Точно як у Panasonic NCR18650B паспорті.
+
+- id: T-60-006
+  verdykt: ne_znayshov
+
+- id: T-Z-042
+  verdykt: ne_znayshov

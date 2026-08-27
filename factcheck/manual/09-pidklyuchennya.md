@@ -791,7 +791,7 @@
 
 ---
 
-<!-- fc id:T-09-046 sha:a0a9fc6a src:manual/09-pidklyuchennya.md:80 klas:F -->
+<!-- fc id:T-09-046 sha:a0a9fc6a src:manual/09-pidklyuchennya.md:80 klas:A -->
 ### T-09-046 · proza · рядок 80
 
 **Книга каже, дослівно:**
@@ -800,7 +800,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/71ff84df-configure-builtin-jtag.rst
+- **Дослівно з джерела:**
+  > can be debugged without any additional chip. Only a USB cable connected to the D+/D- pins is necessary.
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що налагодження працює без додаткового обладнання, лише USB кабель.
+- **Прохід:** m2-hvylya2
 
 ---
 

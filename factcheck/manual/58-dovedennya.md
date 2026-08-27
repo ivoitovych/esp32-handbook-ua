@@ -940,7 +940,7 @@
 
 ---
 
-<!-- fc id:T-58-062 sha:da6e14e5 src:manual/58-dovedennya.md:137 klas:F -->
+<!-- fc id:T-58-062 sha:da6e14e5 src:manual/58-dovedennya.md:137 klas:A -->
 ### T-58-062 · tablycya · рядок 137
 
 **Книга каже, дослівно:**
@@ -949,7 +949,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Документ описує процес оновлення та його успішного завершення.
+- **Прохід:** m2-hvylya2
 
 ---
 

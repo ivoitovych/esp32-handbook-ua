@@ -27,12 +27,6 @@
   sposib: PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
   notatka: GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO
     функціональністю.
-- nazva: Перевірка GPIO15 обв'язки коштує простого скидання плати
-  zbih: зняти обв.язку з .GPIO15
-  klas: B
-  dzherelo: ESP32 Series Datasheet v5.3, Pin Definitions Table та Boot Mode Selection
-  notatka: 'Випливає з архітектури strapping-пінів: їх значення читається при скиданні. Класифіковано
-    як B (однозначний висновок).'
 - nazva: На модулях з флешем 1.8 В це правильне налаштування для SDIO
   zbih: 1\.8 В.*флеш.*правильне
   klas: B
@@ -42,11 +36,6 @@
     '
   notatka: 'Випливає з таблиці живлення: якщо флеш всередину модуля працює на 1.8 В, то весь чип має правильно
     налаштуватися. Класифіковано як B.'
-- nazva: Правило categoric - GPIO6-11 на classic не існують для користувача
-  zbih: шість пінів 6.*11 не існують
-  klas: A
-  dzherelo: ESP32 Series Datasheet v5.3, Table 6-21 та Pin Definitions
-  notatka: Чітке твердження про недоступність цих пінів. Підтверджено datasheet.
 - nazva: ADC1 и ADC2 не рівноправні у использовании
   zbih: ADC1.*ADC2|два аналого\|не рівноправні
   klas: A
@@ -92,26 +81,8 @@
 
     '
   notatka: Перелік обмежень для classic ESP32. Кожне число має джерело у datasheet.
-- nazva: Strapping-піни можна використовувати як виходи, але з обережністю
-  zbih: strapping-піни можна використовувати.*виходи
-  klas: B
-  dzherelo: ESP32 Series Datasheet v5.3, Table 6-21 GPIO Input/Output and Function Selection
-  notatka: Strapping-піни можна повторно використати як виходи після завантаження, але потрібно уважати
-    на їх значення при перезавантаженні.
-- nazva: Вхід, кнопка чи датчик на strapping-піні спричиняє випадкові збої при перезавантаженні
-  zbih: Вхід.*strapping-піні|датчик.*strapping\|раз на десять
-  klas: B
-  dzherelo: ESP32 Series Datasheet v5.3, Boot Mode Selection section
-  notatka: Випливає з того, що strapping-піни читаються при завантаженні. Помилкове значення може заблокувати
-    потрібний режим.
 - nazva: 'Таблиця завантаження: GPIO0/GPIO15 комбінації для режимів'
   zbih: Головний пін.*режиму
   klas: C
   dzherelo: ESP32 Series Datasheet v5.3, Table 6-22 Boot Mode Selection
   notatka: Таблиця містить точні комбінації GPIO рівнів для кожного режиму.
-- nazva: 'Правило для strapping: використовуй як виходи, ті що не використовуються разу до завантаження'
-  zbih: Практичне правило.*strapping
-  klas: B
-  dzherelo: ESP32 Series Datasheet v5.3, Boot Mode Selection
-  notatka: Практичний поради на основі розуміння коли та як читаються strapping-піни. Клас B як однозначний
-    висновок.

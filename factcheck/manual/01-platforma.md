@@ -992,7 +992,7 @@
 
 ---
 
-<!-- fc id:T-01-061 sha:763ce585 src:manual/01-platforma.md:94 klas:F -->
+<!-- fc id:T-01-061 sha:763ce585 src:manual/01-platforma.md:94 klas:A -->
 ### T-01-061 · komirka · рядок 94
 
 **Книга каже, дослівно:**
@@ -1001,7 +1001,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/rp2040.pdf
+- **Дослівно з джерела:**
+  > both cores start running simultaneously
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Datasheet підтверджує миттєвий старт RP2040.
+- **Прохід:** m2-hvylya2
 
 ---
 

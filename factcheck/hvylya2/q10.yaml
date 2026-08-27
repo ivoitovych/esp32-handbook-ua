@@ -1,0 +1,36 @@
+- id: T-60-012
+  verdykt: ne_znayshov
+
+- id: T-59-139
+  verdykt: ne_znayshov
+
+- id: T-45-019
+  verdykt: ne_znayshov
+
+- id: T-44-005
+  verdykt: ne_znayshov
+
+- id: T-08-006
+  verdykt: ne_znayshov
+
+- id: T-H-013
+  verdykt: pidtverdzheno
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    For more information on ESP32-D0WD-V3 and ESP32-D0WDR2-V3 chip, please refer to ESP32 Series Datasheet.
+  de: сторінка 3, Module Overview
+  notatka: Це datasheet модуля, яке посилається на окремий ESP32 Series Datasheet для інформації про чип.
+
+- id: T-23-011
+  verdykt: sperechayetsya
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    ESP32-D0WDR2-V3 also provides 2 MB PSRAM
+  de: сторінка 2, Features
+  notatka: Datasheet показує, що варіант D0WDR2-V3 МАЄ PSRAM, що суперечить твердженню про відсутність PSRAM.
+
+- id: T-01-009
+  verdykt: ne_znayshov
+
+- id: T-04-106
+  verdykt: ne_znayshov

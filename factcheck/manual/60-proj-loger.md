@@ -2256,7 +2256,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
+- **Дослівно з джерела:**
+  > rst:0x10 (RTCWDT_RTC_RESET)
+  > 
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 
@@ -2670,7 +2684,7 @@
 
 ---
 
-<!-- fc id:T-60-123 sha:772fb917 src:manual/60-proj-loger.md:316 klas:F -->
+<!-- fc id:T-60-123 sha:772fb917 src:manual/60-proj-loger.md:316 klas:E -->
 ### T-60-123 · komirka · рядок 316
 
 **Книга каже, дослівно:**
@@ -2679,7 +2693,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** немає зовнішнього джерела
+- **Спосіб і дата:** перевірка табличних даних у розділі 60, 2026-08-27
+- **Нотатка:** Це власне вимірювання автора в проекті logger (manual/60-proj-loger.md:316). Таблиця показує емпіричні дані з конкретної апаратури й конфігурації. Зовнішнього документа для цього вимірювання не існує — це результат експерименту.
+- **Прохід:** m2-94-vybirka
 
 ---
 
