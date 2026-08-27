@@ -1,0 +1,89 @@
+- nazva: T-E-067 — NRF24L01 · радіо 2.4 ГГц
+  zbih: NRF24L01.*радіо 2\.4 ГГц
+  klas: E
+  dzherelo: Модуль NRF24L01 — загальновідомо; джерела NRF24L01 Datasheet у доступі немає
+  notatka: Таблиця інтерфейсів (додаток e-interfeysy.md) описує NRF24L01 як радіомодуль на 2.4 ГГц. Це
+    технічна специфікація самого модуля.
+- nazva: T-D-025 — `0x8` код помилки, watchdog таймера 1
+  zbih: \| `0x8` \| TG1WDT_SYS_RESET
+  klas: A
+  dzherelo: 'ESP-IDF компонент esp_system, rtc.h: https://github.com/espressif/esp-idf/blob/master/components/esp_system/include/esp_system/rtc.h'
+  cytata: 'TG1WDT_SYS_RESET = 8,    /**<8, Timer Group1 Watch dog reset digital core*/
+
+    '
+  sposib: curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
+  notatka: Код 0x8 прямо визначений у rtc.h як TG1WDT_SYS_RESET.
+- nazva: T-30-067 — фрагментація пам'яті
+  zbih: Коли вільно 40 КБ.*2 КБ.*фрагментація.*malloc\(8192\)
+  klas: F
+  dzherelo: Зовнішнього джерела не знайдено
+  shukaty: ESP-IDF Programming Guide розділ про управління пам'яттю або Linux kernel docs про фрагментацію
+  notatka: Твердження описує коректну концепцію фрагментації пам'яті і точний приклад (40 КБ вільно, але
+    найбільший блок 2 КБ). Але як окреме твердження потребує підтвердження від джерела, а не лише логічного
+    висновку.
+- nazva: T-53-043 — Buck-boost конвертер для акумулятора
+  zbih: Buck-boost.*єдиний спосіб.*акумулятора.*повністю.*3\.0 В
+  klas: F
+  dzherelo: Зовнішнього джерела не знайдено
+  shukaty: Даташит типового buck-boost конвертера (наприклад, TI BQ25570), посібник з Li-ion батарей,
+    або техдокументація за стандартом IEC 61960
+  notatka: 'Твердження коректне: buck-boost конвертер (на відміну від простого step-down) дозволяє розрядити
+    Li-ion батарею нижче її мінімальної вихідної напруги. Але як затвердження потребує підтвердження від
+    конкретного технічного документа.'
+- nazva: T-Z-123 — GPIO6 у індексі
+  zbih: GPIO6 — 21, 27, 53, 73, 76, 154, 182, 335, 349, 369
+  klas: E
+  dzherelo: Не застосовується
+  notatka: Це внутрішній індекс, посилання на розділи самої книги. Не потребує зовнішнього джерела. Перевірка
+    актуальності — чи GPIO6 дійсно згадується в розділах 21, 27, 53, 73, 76, 154, 182, 335, 349, 369.
+- nazva: T-02-135 — Мережа 5 ГГц, чип C5
+  zbih: Мережа 5 ГГц.*C5
+  klas: C
+  dzherelo: Специфікація ESP32-C5 від Espressif (https://www.espressif.com)
+  shukaty: ESP32-C5 Features and Specifications, розділи про Wi-Fi
+  notatka: С5 — єдиний чип у лінійці ESP32, що підтримує Wi-Fi 5 ГГц (802.11ac). Твердження вірне, але
+    цитата з офіційної специфікації не знайдена у доступних документах.
+- nazva: T-38-012 — CAN вузол публікує температуру з ідентифікатором
+  zbih: Вузол публікує температуру.*ідентифікатором.*0x180.*хто хоче.*слухає
+  klas: C
+  dzherelo: 'ISO 11898-1, Road vehicles — Controller area network (CAN), Part 1: Data link layer and physical
+    signalling'
+  notatka: 'Названо справжній стандарт, але це платний документ ISO, як і IEC 60529 — тексту не маю. Тому
+    C, не B: висновок про семантику видавця-підписника може бути правильним, але засновку в записі немає,
+    і читач його не перевірить.'
+- nazva: T-D-046 — `0xf` код помилки RTCWDT_BROWN_OUT_RESET
+  zbih: \| `0xf` \| RTCWDT_BROWN_OUT_RESET.*просіло живлення.*розділ 06
+  klas: A
+  dzherelo: 'ESP-IDF компонент esp_system, rtc.h: https://github.com/espressif/esp-idf/blob/master/components/esp_system/include/esp_system/rtc.h'
+  cytata: 'RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+
+    '
+  sposib: curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
+  notatka: Код 0xf (15) прямо визначений як RTCWDT_BROWN_OUT_RESET. Причина — нестабільне живлення.
+- nazva: T-23-023 — Суфікс модуля кодує обсяг флешу й PSRAM
+  zbih: Суфікс.*модуля кодує.*флешу.*PSRAM.*N8.*N16R8
+  klas: C
+  dzherelo: Специфікація маркування модулів ESP32 від Espressif (https://www.espressif.com)
+  shukaty: ESP32 Module Naming Convention або відповідну документацію про суфікси
+  notatka: N8 = 8 МБ флешу, N16R8 = 16 МБ флешу + 8 МБ PSRAM. Це стандартна конвенція Espressif. Твердження
+    точне, але цитата з офіційної документації не знайдена у доступних документах.
+- nazva: T-02-148 — Рекомендації вибору чипа
+  zbih: Для нового проєкту типова.*S3.*навчання.*classic.*дешевого.*C3.*400 КБ
+  klas: F
+  dzherelo: Зовнішнього джерела не знайдено
+  shukaty: ESP32 Series Datasheet або ESP-IDF Programming Guide з порівняльною таблицею чипів, специфікація
+    пам'яті (Classic — 160 КБ SRAM, C3 — 400 КБ)
+  notatka: Рекомендація базується на параметрах чипів (S3 має два ядра й PSRAM, C3 — компактний з 400
+    КБ SRAM). Але як окремий висновок потребує джерела з порівнянням використовуваних випадків.
+- nazva: T-Z-115 — GPIO22 у індексі
+  zbih: GPIO22 — 149, 310, 326, 335
+  klas: E
+  dzherelo: Не застосовується
+  notatka: Це внутрішній індекс, посилання на розділи самої книги. Не потребує зовнішнього джерела. Перевірка
+    актуальності — чи GPIO22 дійсно згадується в розділах 149, 310, 326, 335.
+- nazva: T-Z-112 — GPIO18 у індексі
+  zbih: GPIO18 — 75, 172, 206, 335
+  klas: E
+  dzherelo: Не застосовується
+  notatka: Це внутрішній індекс, посилання на розділи самої книги. Не потребує зовнішнього джерела. Перевірка
+    актуальності — чи GPIO18 дійсно згадується в розділах 75, 172, 206, 335.
