@@ -140,6 +140,31 @@ RE_NE_TVERDZHENNYA = re.compile(
     re.I)
 
 
+KANDYDATY = ROOT / "factcheck" / "vybirka-kandydaty.yaml"
+
+
+def tretiy_shar_vybirky(zap: list[dict]) -> tuple[int, int]:
+    """Скільки заявлених `znayshov` справді стоять за названою адресою."""
+    kand = [{"nazva": str(z.get("odynycya", "?")),
+             "dzherelo": str(z.get("dzherelo", "")).strip(),
+             "cytata": str(z.get("cytata", "")),
+             "zvidky": z.get("_fayl", "?")}
+            for z in zap if str(z.get("verdykt")) == "znayshov"]
+    if not kand:
+        return 0, 0
+    KANDYDATY.write_text(
+        "# Кандидати `znayshov` із **випадкової** вибірки. Не реєстр:\n"
+        "# їх перевіряє третій шар перед тим, як число піде у звіт.\n"
+        + yaml.safe_dump(kand, allow_unicode=True, sort_keys=False),
+        encoding="utf-8")
+    try:
+        import citaty
+    except ImportError:
+        return 0, len(kand)
+    naslidky, _ = citaty.perevirka(True, [KANDYDATY])
+    return (sum(1 for x in naslidky if x.get("stan") == "ok"), len(kand))
+
+
 def zvesty(katalog: Path) -> int:
     """Звести вивантаження випадкової вибірки в міру з похибкою."""
     # Перший прогін цієї міри втратив 40 із 160 одиниць на зламаному
@@ -178,6 +203,22 @@ def zvesty(katalog: Path) -> int:
     c = collections.Counter(str(z.get("verdykt", "?")) for z in zap)
     maye_referenta = c["znayshov"] + c["ideya"]
     pozyciya = c["spravdi-e"] - ne_tverdzhennya
+
+    # `znayshov` із вибірки теж проходить третій шар. Спершу цього не
+    # робилося — перевіряли лише штурм, — і це була діра: саме ці
+    # записи дають найгучнішу частину відповіді, і саме на них тисне
+    # наряд.
+    #
+    # Знахідка М2: наряд «випробуй присуд» читається як «спростуй
+    # присуд», і тиск виробляє вигадані спростування так само справно,
+    # як тиск «знайди джерело» виробляв джерела.
+    #
+    # **Але на підсумок це не впливає, і не випадково.** Провалена
+    # цитата не доводить, що референта немає, — вона доводить, що його
+    # не здобули. Тобто одиниця падає з `znayshov` у `ideya`, а обидва
+    # стани рахуються як «має референт». Міра стійка до цієї вади за
+    # побудовою: тиск переставляє одиниці між кошиками, не додаючи їх.
+    vystoyalo, zayavleno = tretiy_shar_vybirky(zap)
 
     def promizhok(k: int) -> tuple[float, float]:
         """Вілсонів проміжок 95%. Для часток біля 0 нормальний бреше."""
@@ -231,6 +272,11 @@ def zvesty(katalog: Path) -> int:
 | `ideya` — джерело назване, не здобуте | {c['ideya']} | {c['ideya'] / n:.0%} |
 | `spravdi-e` — позиція автора, референта немає | {pozyciya} | {pozyciya / n:.0%} |
 | **не твердження взагалі** — заголовок, самоопис книги | {ne_tverdzhennya} | {ne_tverdzhennya / n:.0%} |
+
+Із {zayavleno} заявлених `znayshov` третій шар витримали **{vystoyalo}**.
+Решту зараховано як `ideya`: провалена цитата доводить, що джерела **не
+здобули**, а не що його немає. На підсумок це не впливає — обидва стани
+рахуються як «має референт», і саме тому міра стійка до тиску наряду.
 
 **Має зовнішній референт: {maye_referenta} з {n} = {maye_referenta / n:.0%}**
 (95% Вілсон: {nyz:.0%}–{verh:.0%}).

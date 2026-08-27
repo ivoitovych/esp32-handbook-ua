@@ -1,0 +1,54 @@
+# Кандидати `znayshov` із **випадкової** вибірки. Не реєстр:
+# їх перевіряє третій шар перед тим, як число піде у звіт.
+- nazva: T-43-031
+  dzherelo: https://raw.githubusercontent.com/jgromes/RadioLib/master/README.md
+  cytata: '''RF69 FSK/OOK radio module'' та ''RFM9x series LoRa modules (RFM95, RFM96,
+    RFM97, RFM98)'''
+  zvidky: V3-p10
+- nazva: T-49-030
+  dzherelo: https://raw.githubusercontent.com/espressif/esp32-camera/master/README.md
+  cytata: '| OV2640  | 1600 x 1200    | color      | ... |'
+  zvidky: V3-p12
+- nazva: T-38-015
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/twai.rst
+  cytata: lower values indicate higher priority on the bus
+  zvidky: V3-p9
+- nazva: T-38-047
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/twai.rst
+  cytata: will interpret such frames as errors
+  zvidky: V3-p9
+- nazva: T-B-077
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal_errors.rst
+  cytata: 'The brownout detector can trigger a system reset if the supply voltage
+    goes below a safe level.
+
+    '
+  zvidky: V5-p17
+- nazva: T-E-038
+  dzherelo: https://raw.githubusercontent.com/xreef/PCF8574_library/master/README.md
+  cytata: 'A simple and efficient library to use the PCF8574 I2C 8-bit digital I/O
+    expander with Arduino, ESP8266, ESP32, and other platforms.
+
+    '
+  zvidky: V5-p17
+- nazva: T-E-152
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+  cytata: 'For demonstration of log functionality, check ESP-IDF''s examples directory.
+    The most relevant examples that deal with logging are the following:
+
+    '
+  zvidky: V5-p17
+- nazva: T-K05-016
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+  cytata: 'Bootloader is flashed at offset 0x1000 for ESP32 and ESP32-S2, but at 0x0
+    for other chips.
+
+    '
+  zvidky: V5-p19
+- nazva: T-K08-035
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: 'GPIO pins 6-11 are occupied by the SPI flash interface and should not be
+    used for other functions.
+
+    '
+  zvidky: V5-p19
