@@ -6,8 +6,40 @@ commercial print run, so that errata can be keyed to it.
 It is a **first attempt**: the text is believed correct, not proven
 complete.
 
-    commit  285b3e0
+    commit  7715504
     date    2026-08-27
+
+## Sent to print
+
+**2026-08-27 — ordered.** A5, two copies, from commit `7715504`,
+pinned by the branch `backup/main-2026-08-27-1313Z-printed`.
+
+Two copies is the smallest run the printer offers in this format. That
+is deliberate: this is a first attempt, and the one question no check
+in this repository can answer is how the book reads on paper. Body
+type is 9.6 pt on a 118 mm measure — a normal book size, but nobody
+has yet held a printed page in poor light.
+
+Formats considered and rejected before ordering:
+
+* **Scaling A5 → A4 at the print shop.** Keeps all 448 pages, enlarges
+  type to 13.6 pt, and stretches the measure to 167 mm — over 90
+  characters per line, which reads worse, not better. A 448-page A4
+  volume is also the wrong object to carry into the field.
+* **Re-typesetting for A4.** Would cut the book to roughly 230–260
+  pages, but only with two columns of about 80 mm; the hundreds of
+  code blocks and wide tables in this book do not fit that measure.
+  Every page would need re-checking.
+* **Larger type within A5.** Measured: 10.2 pt gives 486 pages
+  (30.4 signatures), 10.8 pt gives 513 (32.1). Cheap to do — one
+  number — and the honest option **if the printed copies turn out to
+  read small.** That decision waits for the paper.
+
+## Earlier pin, superseded
+
+`backup/main-2026-08-27-1211Z` → `285b3e0` carries the same text but a
+title page dated **2026-08-26**, one day stale. It was created before
+that was noticed. Kept for history; not the printed state.
 
 ## How this state is pinned
 
@@ -16,7 +48,7 @@ credentials are scoped to branches, and the tag push was refused with
 HTTP 403. A branch serves the same purpose, so the exact state sent to
 print is pinned by one:
 
-    backup/main-2026-08-27-1211Z   →   285b3e0
+    backup/main-2026-08-27-1313Z-printed   →   7715504
 
 **Reason for the backup: first attempt at the first print run.** The
 branch is a marker, not a line of development. Nothing should be
@@ -26,7 +58,7 @@ committed onto it; if this print run needs corrections, they belong on
 To also create the proper tag, from any checkout whose credentials
 allow tag pushes:
 
-    git tag -a v1.0-print-1 285b3e0 -F PRINT-1.md
+    git tag -a v1.0-print-1 7715504 -F PRINT-1.md
     git push origin v1.0-print-1
 
 ## Print specification
@@ -37,7 +69,9 @@ allow tag pushes:
 | `esp32-kartky.pdf` | 15 pages |
 | `esp32-proekty.pdf` | 32 pages |
 | Toolchain | pandoc 3.1.3, typst 0.15.0 |
-| Source fingerprint | `792d9a1b02ec5a9c` |
+| Body type | 9.6 pt on a 118 mm measure |
+| Format, run | A5, 2 copies |
+| Source fingerprint | `ecb726f53d76a59c` |
 
 ## Release gates, all green at this commit
 
