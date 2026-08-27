@@ -1,0 +1,21 @@
+# Суцільний прохід — h-dzherela.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-H-017: **`github.com/espressif/esp-idf`** — сам фреймворк.'
+  zbih: \*\*`github\.com/espressif/esp\-idf`\*\*\s+—\s+сам\s+фреймворк\.
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/README.md
+  cytata: 'github.com/espressif/esp-idf
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Confirmed - the readme identifies the project location as github.com/espressif/esp-idf
