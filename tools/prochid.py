@@ -54,42 +54,63 @@ PAKETIV_NA_NARYAD = 10
 # **Ключ використовується лише тут, у генераторі. У наряд потрапляє
 # тільки тема й адреса.** Назва файлу книги не пишеться в наряд ніколи:
 # саме вона перетворила попередню хвилю на 249 самопосилань.
+#
+# **Порожній рядок означає «кандидата немає», і пакет так і скаже.**
+# Перша редакція мовчки не друкувала рядок про кандидата, тимчасом як
+# шапка обіцяла його «для кожного пакета». Помічник, що дістав такий
+# наряд, відмовився працювати — і мав рацію. Це той самий дефект, що
+# раніше знайшли в `vorota` й `mira_f`: **документ обіцяє те, чого код
+# не робить.** Обіцянка мусить або справджуватися, або бути знята.
 TEMY: dict[str, tuple[str, str]] = {
     "05": ("основи електроніки", ""),
-    "06": ("живлення", ""),
-    "07": ("GPIO", "components/esp_driver_gpio/include/driver/gpio.h"),
-    "08": ("плати розробки", "docs/en/hw-reference/index.rst"),
-    "09": ("підключення до комп'ютера", "docs/en/get-started/establish-serial-connection.rst"),
-    "11": ("ESP-IDF: збирання й конфігурація", "docs/en/api-guides/build-system.rst"),
-    "12": ("Arduino на ESP32", ""),
+    "06": ("живлення", "I:docs/en/api-reference/system/power_management.rst"),
+    "07": ("GPIO", "I:components/esp_driver_gpio/include/driver/gpio.h"),
+    "08": ("плати розробки", "I:docs/en/hw-reference/index.rst"),
+    "09": ("підключення до комп'ютера", "I:docs/en/get-started/establish-serial-connection.rst"),
+    "11": ("ESP-IDF: збирання й конфігурація", "I:docs/en/api-guides/build-system.rst"),
+    "12": ("Arduino на ESP32", "A:docs/en/guides/core_debug.rst"),
     "13": ("PlatformIO", ""),
     "14": ("швидкі шляхи", ""),
-    "16": ("завантаження й boot", "docs/en/api-guides/startup.rst"),
-    "17": ("esptool", ""),
-    "18": ("розділи флешу", "docs/en/api-guides/partition-tables.rst"),
-    "19": ("OTA", "docs/en/api-reference/system/ota.rst"),
-    "20": ("резервні копії", ""),
-    "21": ("серійна прошивка", ""),
-    "25": ("журнал і монітор", "docs/en/api-guides/tools/idf-monitor.rst"),
-    "30": ("пам'ять", "docs/en/api-reference/system/mem_alloc.rst"),
-    "33": ("периферія в коді", ""),
-    "35": ("I²C", "docs/en/api-reference/peripherals/i2c.rst"),
-    "36": ("SPI", "docs/en/api-reference/peripherals/spi_master.rst"),
-    "37": ("1-Wire і DS18B20", ""),
-    "42": ("ESP-NOW", "docs/en/api-reference/network/esp_now.rst"),
-    "43": ("LoRa", ""),
+    "16": ("завантаження й boot", "I:docs/en/api-guides/startup.rst"),
+    "17": ("esptool", "E:docs/en/esptool/basic-commands.rst"),
+    "18": ("розділи флешу", "I:docs/en/api-guides/partition-tables.rst"),
+    "19": ("OTA", "I:docs/en/api-reference/system/ota.rst"),
+    "20": ("резервні копії", "E:docs/en/esptool/basic-commands.rst"),
+    "21": ("серійна прошивка", "E:docs/en/esptool/basic-commands.rst"),
+    "25": ("журнал і монітор", "I:docs/en/api-guides/tools/idf-monitor.rst"),
+    "30": ("пам'ять", "I:docs/en/api-reference/system/mem_alloc.rst"),
+    "33": ("периферія в коді", "I:docs/en/api-reference/peripherals/index.rst"),
+    "35": ("I²C", "I:docs/en/api-reference/peripherals/i2c.rst"),
+    "36": ("SPI", "I:docs/en/api-reference/peripherals/spi_master.rst"),
+    "37": ("1-Wire і DS18B20", "I:docs/en/api-reference/peripherals/rmt.rst"),
+    "42": ("ESP-NOW", "I:docs/en/api-reference/network/esp_now.rst"),
+    "43": ("LoRa", "R:README.md"),
     "45": ("датчики", ""),
-    "46": ("дисплеї", ""),
+    "46": ("дисплеї", "U:README.md"),
     "47": ("ключі й навантаження", ""),
-    "50": ("безпека", "docs/en/security/flash-encryption.rst"),
-    "58": ("журналювання у виробі", ""),
+    "50": ("безпека", "I:docs/en/security/flash-encryption.rst"),
+    "58": ("журналювання у виробі", "I:docs/en/api-reference/system/log.rst"),
     "59": ("проєкт: монітор", ""),
     "60": ("проєкт: логер", ""),
     "61": ("проєкт: канал", ""),
     "62": ("проєкт: керування", ""),
     "63": ("проєкт: міст", ""),
 }
-BAZA_IDF = "https://raw.githubusercontent.com/espressif/esp-idf/master/"
+BAZY = {
+    "I": "https://raw.githubusercontent.com/espressif/esp-idf/master/",
+    "E": "https://raw.githubusercontent.com/espressif/esptool/master/",
+    "A": "https://raw.githubusercontent.com/espressif/arduino-esp32/master/",
+    "R": "https://raw.githubusercontent.com/jgromes/RadioLib/master/",
+    "U": "https://raw.githubusercontent.com/olikraus/u8g2/master/",
+}
+
+BEZ_KANDYDATA = (
+    "**Документа-кандидата немає.** Тему не покриває жодне зі сховищ, "
+    "названих у шапці, настільки прямо, щоб назвати файл наперед. Обери "
+    "документ сам із того переліку й назви в `dzherelo` саме той, який "
+    "відкривав. Якщо жоден не підходить — це чесне `nedosyazhne` з назвою "
+    "документа, який був би потрібен."
+)
 
 
 def tema_dlya(fayl: str) -> tuple[str, str]:
@@ -98,7 +119,10 @@ def tema_dlya(fayl: str) -> tuple[str, str]:
     tema, dok = TEMY.get(pref, ("", ""))
     if not tema:
         tema = "різне"
-    return tema, (BAZA_IDF + dok if dok else "")
+    if not dok:
+        return tema, ""
+    baza, shlyah = dok.split(":", 1)
+    return tema, BAZY[baza] + shlyah
 
 SHAPKA = """# Наряд {nomer}: суцільний прохід — {skilky} одиниць
 
@@ -120,12 +144,17 @@ SHAPKA = """# Наряд {nomer}: суцільний прохід — {skilky} �
 
 ## Пакет — це одна тема
 
-Одиниці в пакеті питають про одне. Для кожного пакета нижче названо
-**документ-кандидат**: почни з нього, завантаж один раз і прочитай, а
-вже потім проходь одиниці. Не шукай новий документ під кожен рядок.
+Одиниці в пакеті питають про одне. Де для теми відомий **документ-кандидат**,
+його названо просто під заголовком пакета: почни з нього, завантаж один
+раз і прочитай, а вже потім проходь одиниці. Не шукай новий документ під
+кожен рядок.
 
 Кандидат — здогад, не вирок. Якщо він виявився не тим, візьми інший і
 назви в `dzherelo` саме той, який відкривав.
+
+**Де кандидата немає, у пакеті так і написано.** Це не пропуск і не
+привід зупинитися: обери документ сам зі сховищ, названих нижче. Наряд
+не обіцяє кандидата там, де його не має.
 
 **Джерелом ніколи не є довідник, який ти перевіряєш.** Адреса з
 `esp32-handbook`, `ivoitovych` чи `voytovych` відкидається механічно
@@ -229,8 +258,8 @@ def main() -> int:
         for j, (fayl, odyn) in enumerate(chastyna, 1):
             tema, dok = tema_dlya(fayl)
             r.append(f"\n## Пакет {j} · тема: {tema}\n")
-            if dok:
-                r.append(f"Документ-кандидат: `{dok}`\n")
+            r.append(f"Документ-кандидат: `{dok}`\n" if dok
+                     else BEZ_KANDYDATA + "\n")
             for u in odyn:
                 r.append(f"**`{u['id']}`**\n")
                 r.append(f"> {u['tekst']}\n")
