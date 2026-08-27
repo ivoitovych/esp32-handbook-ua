@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-18-001 sha:81b76c44 src:manual/18-rozdily-fleshu.md:3 klas:F -->
+<!-- fc id:T-18-001 sha:81b76c44 src:manual/18-rozdily-fleshu.md:3 klas:A -->
 ### T-18-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,7 +15,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/a4dbe955-bootloader.rst
+- **Дослівно з джерела:**
+  > Select the application partition to boot, based on the partition table and ota_data (if any);
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що флеш містить partition table та різні області, хоча явно не описує всі компоненти.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -206,7 +212,7 @@
 
 ---
 
-<!-- fc id:T-18-011 sha:606ac6dd src:manual/18-rozdily-fleshu.md:26 klas:F -->
+<!-- fc id:T-18-011 sha:606ac6dd src:manual/18-rozdily-fleshu.md:26 klas:A -->
 ### T-18-011 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -215,11 +221,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > The library uses all the partitions with data type and nvs subtype.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ явно стверджує, що NVS використовує розділи з типом data.
+- **Прохід:** m2-hvylya3
 
 ---
 
-<!-- fc id:T-18-012 sha:f47ce163 src:manual/18-rozdily-fleshu.md:26 klas:F -->
+<!-- fc id:T-18-012 sha:f47ce163 src:manual/18-rozdily-fleshu.md:26 klas:A -->
 ### T-18-012 · komirka · рядок 26
 
 **Книга каже, дослівно:**
@@ -228,7 +240,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > The library uses all the partitions with data type and nvs subtype.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що NVS використовує розділи з типом data та підтипом nvs.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -560,7 +578,7 @@
 
 ---
 
-<!-- fc id:T-18-026 sha:4eca33d4 src:manual/18-rozdily-fleshu.md:37 klas:F -->
+<!-- fc id:T-18-026 sha:4eca33d4 src:manual/18-rozdily-fleshu.md:37 klas:A -->
 ### T-18-026 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -569,7 +587,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що NVS — сховище пар ключ-значення. Приклади з wifi-намеспейсом і лічильником перезавантажень також знайдені.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -691,20 +715,13 @@
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
-- **Спосіб і дата:** make arytmetyka, 2026-08-26
-- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
-Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
-Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
-- **Прохід:** pass-19-adresy-flesh
+  > python gen_esp32part.py input_partitions.csv binary_partitions.bin
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує команду gen_esp32part.py
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -734,7 +751,7 @@
 
 ---
 
-<!-- fc id:T-18-035 sha:4438754b src:manual/18-rozdily-fleshu.md:54 klas:F -->
+<!-- fc id:T-18-035 sha:4438754b src:manual/18-rozdily-fleshu.md:54 klas:A -->
 ### T-18-035 · kod-ryadok · рядок 54
 
 **Книга каже, дослівно:**
@@ -743,7 +760,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Дослівно з джерела:**
+  > python gen_esp32part.py input_partitions.csv binary_partitions.bin
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує команду gen_esp32part.py
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1038,7 +1061,7 @@
 
 ---
 
-<!-- fc id:T-18-048 sha:25ea8296 src:manual/18-rozdily-fleshu.md:92 klas:F -->
+<!-- fc id:T-18-048 sha:25ea8296 src:manual/18-rozdily-fleshu.md:92 klas:A -->
 ### T-18-048 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -1047,7 +1070,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що NVS — сховище пар ключ-значення з підтримкою намеспейсів.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1285,7 +1314,7 @@
 
 ---
 
-<!-- fc id:T-18-061 sha:92317196 src:manual/18-rozdily-fleshu.md:120 klas:F -->
+<!-- fc id:T-18-061 sha:92317196 src:manual/18-rozdily-fleshu.md:120 klas:A -->
 ### T-18-061 · proza · рядок 120
 
 **Книга каже, дослівно:**
@@ -1294,7 +1323,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > The partition can be used to store data that is not expected to change, such as calibration data or factory settings.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ явно згадує, що калібрування може зберігатися у спеціальному розділі, не очікуючи змін.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2116,7 +2151,7 @@
 
 ---
 
-<!-- fc id:T-18-105 sha:85fee83d src:manual/18-rozdily-fleshu.md:195 klas:F -->
+<!-- fc id:T-18-105 sha:85fee83d src:manual/18-rozdily-fleshu.md:195 klas:A -->
 ### T-18-105 · proza · рядок 195
 
 **Книга каже, дослівно:**
@@ -2125,7 +2160,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що OTA оновлює лише образ застосунку, таблиця розділів не оновлюється.
+- **Прохід:** m2-hvylya3
 
 ---
 

@@ -759,7 +759,7 @@
 
 ---
 
-<!-- fc id:T-58-050 sha:66283cb7 src:manual/58-dovedennya.md:111 klas:F -->
+<!-- fc id:T-58-050 sha:66283cb7 src:manual/58-dovedennya.md:111 klas:A -->
 ### T-58-050 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -768,7 +768,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The main purpose of the application rollback is to keep the device working after the update.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** OTA має функцію відкату для збереження роботи пристрою
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -985,7 +991,7 @@
 
 ---
 
-<!-- fc id:T-58-065 sha:49247935 src:manual/58-dovedennya.md:142 klas:F -->
+<!-- fc id:T-58-065 sha:49247935 src:manual/58-dovedennya.md:142 klas:A -->
 ### T-58-065 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -994,7 +1000,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > If a power loss or an unexpected crash occurs at the time of the first boot of a new application, it will roll back the application.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує вплив втрати живлення на OTA
+- **Прохід:** m2-hvylya3
 
 ---
 

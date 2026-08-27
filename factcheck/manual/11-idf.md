@@ -1287,7 +1287,7 @@
 
 ---
 
-<!-- fc id:T-11-066 sha:f1cf37ab src:manual/11-idf.md:169 klas:F -->
+<!-- fc id:T-11-066 sha:f1cf37ab src:manual/11-idf.md:169 klas:B -->
 ### T-11-066 · proza · рядок 169
 
 **Книга каже, дослівно:**
@@ -1296,7 +1296,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/main/CMakeLists.txt
+- **Дослівно з джерела:**
+  > idf_component_register(SRCS "hello_world_main.c"
+- **Спосіб і дата:** Отримано в цій сесії, витяг дослівний.
+- **Нотатка:** `main` реєструється тим самим викликом, що й будь-який компонент, — звідси «теж компонент». Чим саме він **особливий** (неявні залежності від усіх інших), цей рядок не показує.
+- **Прохід:** pass-40-mira-f
 
 ---
 
@@ -1984,7 +1990,7 @@
 
 ---
 
-<!-- fc id:T-11-097 sha:4d081911 src:manual/11-idf.md:244 klas:F -->
+<!-- fc id:T-11-097 sha:4d081911 src:manual/11-idf.md:244 klas:A -->
 ### T-11-097 · proza · рядок 244
 
 **Книга каже, дослівно:**
@@ -1993,7 +1999,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Дослівно з джерела:**
+  > Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує вбудований монітор з розшифровкою backtrace адрес.
+- **Прохід:** m2-hvylya3
 
 ---
 

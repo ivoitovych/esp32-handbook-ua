@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-01-009 sha:cd03828d src:manual/01-platforma.md:21 klas:F -->
+<!-- fc id:T-01-009 sha:cd03828d src:manual/01-platforma.md:21 klas:A -->
 ### T-01-009 · proza · рядок 21
 
 **Книга каже, дослівно:**
@@ -132,7 +132,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > 40 MHz crystal oscillator
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що модуль містить кварц, флеш і антену у металевому корпусі
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -451,7 +457,7 @@
 
 ---
 
-<!-- fc id:T-01-031 sha:062e0342 src:manual/01-platforma.md:75 klas:F -->
+<!-- fc id:T-01-031 sha:062e0342 src:manual/01-platforma.md:75 klas:B -->
 ### T-01-031 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -460,7 +466,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/Kconfig
+- **Дослівно з джерела:**
+  > This option will allow the ADC calibration component to use Lookup Tables to correct for non-linear behavior
+- **Спосіб і дата:** Отримано в цій сесії, витяг дослівний.
+- **Нотатка:** Нелінійність доведена: ESP-IDF має окремий механізм калібрування саме проти неї. **Шум — ні.** Друга половина твердження цим рядком не підпирається, і клас `B` покриває лише першу.
+- **Прохід:** pass-40-mira-f
 
 ---
 

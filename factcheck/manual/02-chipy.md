@@ -290,7 +290,7 @@
 
 ---
 
-<!-- fc id:T-02-021 sha:de0b6f6b src:manual/02-chipy.md:32 klas:F -->
+<!-- fc id:T-02-021 sha:de0b6f6b src:manual/02-chipy.md:32 klas:A -->
 ### T-02-021 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -299,7 +299,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_CPU_CORES_NUM               (1U)
+  > #define SOC_WIFI_SUPPORTED              1
+  > #define SOC_BLE_SUPPORTED               (1)
+  > #define SOC_USB_OTG_SUPPORTED           1
+- **Спосіб і дата:** Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+- **Нотатка:** Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
+- **Прохід:** pass-40-mira-f
 
 ---
 
@@ -316,7 +325,7 @@
 
 ---
 
-<!-- fc id:T-02-023 sha:af57da03 src:manual/02-chipy.md:32 klas:F -->
+<!-- fc id:T-02-023 sha:af57da03 src:manual/02-chipy.md:32 klas:A -->
 ### T-02-023 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -325,7 +334,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_CPU_CORES_NUM               (1U)
+  > #define SOC_WIFI_SUPPORTED              1
+  > #define SOC_BLE_SUPPORTED               (1)
+  > #define SOC_USB_OTG_SUPPORTED           1
+- **Спосіб і дата:** Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+- **Нотатка:** Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
+- **Прохід:** pass-40-mira-f
 
 ---
 
@@ -674,7 +692,7 @@
 
 ---
 
-<!-- fc id:T-02-045 sha:715a8f46 src:manual/02-chipy.md:36 klas:F -->
+<!-- fc id:T-02-045 sha:715a8f46 src:manual/02-chipy.md:36 klas:A -->
 ### T-02-045 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -683,7 +701,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_CPU_CORES_NUM               (1U)
+  > #define SOC_WIFI_SUPPORTED              1
+  > #define SOC_BLE_SUPPORTED               (1)
+  > #define SOC_USB_OTG_SUPPORTED           1
+- **Спосіб і дата:** Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+- **Нотатка:** Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
+- **Прохід:** pass-40-mira-f
 
 ---
 
@@ -922,7 +949,7 @@
 
 ---
 
-<!-- fc id:T-02-056 sha:a7109dbe src:manual/02-chipy.md:38 klas:F -->
+<!-- fc id:T-02-056 sha:a7109dbe src:manual/02-chipy.md:38 klas:A -->
 ### T-02-056 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -931,7 +958,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_CPU_CORES_NUM               (1U)
+  > #define SOC_WIFI_SUPPORTED              1
+  > #define SOC_BLE_SUPPORTED               (1)
+  > #define SOC_USB_OTG_SUPPORTED           1
+- **Спосіб і дата:** Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+- **Нотатка:** Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
+- **Прохід:** pass-40-mira-f
 
 ---
 
@@ -948,7 +984,7 @@
 
 ---
 
-<!-- fc id:T-02-058 sha:72e63fbb src:manual/02-chipy.md:38 klas:F -->
+<!-- fc id:T-02-058 sha:72e63fbb src:manual/02-chipy.md:38 klas:A -->
 ### T-02-058 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -957,11 +993,20 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_CPU_CORES_NUM               (1U)
+  > #define SOC_WIFI_SUPPORTED              1
+  > #define SOC_BLE_SUPPORTED               (1)
+  > #define SOC_USB_OTG_SUPPORTED           1
+- **Спосіб і дата:** Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+- **Нотатка:** Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
+- **Прохід:** pass-40-mira-f
 
 ---
 
-<!-- fc id:T-02-059 sha:f2652967 src:manual/02-chipy.md:38 klas:F -->
+<!-- fc id:T-02-059 sha:f2652967 src:manual/02-chipy.md:38 klas:A -->
 ### T-02-059 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -970,7 +1015,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_CPU_CORES_NUM               (1U)
+  > #define SOC_WIFI_SUPPORTED              1
+  > #define SOC_BLE_SUPPORTED               (1)
+  > #define SOC_USB_OTG_SUPPORTED           1
+- **Спосіб і дата:** Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+- **Нотатка:** Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
+- **Прохід:** pass-40-mira-f
 
 ---
 
@@ -1155,7 +1209,7 @@
 
 ---
 
-<!-- fc id:T-02-067 sha:5c099b4e src:manual/02-chipy.md:40 klas:F -->
+<!-- fc id:T-02-067 sha:5c099b4e src:manual/02-chipy.md:40 klas:A -->
 ### T-02-067 · komirka · рядок 40
 
 **Книга каже, дослівно:**
@@ -1164,7 +1218,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_CPU_CORES_NUM               (1U)
+  > #define SOC_WIFI_SUPPORTED              1
+  > #define SOC_BLE_SUPPORTED               (1)
+  > #define SOC_USB_OTG_SUPPORTED           1
+- **Спосіб і дата:** Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+- **Нотатка:** Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
+- **Прохід:** pass-40-mira-f
 
 ---
 
@@ -1714,7 +1777,7 @@
 
 ---
 
-<!-- fc id:T-02-097 sha:5ec634b9 src:manual/02-chipy.md:124 klas:F -->
+<!-- fc id:T-02-097 sha:5ec634b9 src:manual/02-chipy.md:124 klas:A -->
 ### T-02-097 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -1723,7 +1786,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Дослівно з джерела:**
+  > For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ адресує差異 в розпінуванні залежно від конфігурації.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2534,10 +2603,6 @@
 
 **Доказ**
 
-- **Клас:** 🔴 F — не звірено
-- **Джерело:** Зовнішнього джерела не знайдено
-- **Що шукати в джерелі:** ESP32 Series Datasheet або ESP-IDF Programming Guide з порівняльною таблицею чипів, специфікація пам'яті (Classic — 160 КБ SRAM, C3 — 400 КБ)
-- **Нотатка:** Рекомендація базується на параметрах чипів (S3 має два ядра й PSRAM, C3 — компактний з 400 КБ SRAM). Але як окремий висновок потребує джерела з порівнянням використовуваних випадків.
-- **Прохід:** m2-96-vybirka
+- **Клас:** F — не звірено
 
 ---

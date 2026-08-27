@@ -1595,28 +1595,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
-  > esptool (з переліку команд у __init__.py і документації):
-  >   write-flash read-flash erase-flash erase-region read-mac flash-id
-  >   elf2image image-info merge-bin version verify-flash dump-mem
-  >   read-mem write-mem get-security-info chip-id run …
-  > 
-  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
-  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
-  >   merge-bin monitor flash erase-flash partition-table reconfigure
-  >   set-target size size-components size-files python-clean read-otadata
-  >   efuse-summary … openocd gdb coredump-info coredump-debug
-  > 
-  > idf-component-manager: add-dependency create-manifest upload-component
-  >   create-project-from-example
-  > 
-  > Приклад із документації дослівно:
-  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
-Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
-- **Прохід:** pass-09-komandy
+  > idf.py monitor
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1725,7 +1709,7 @@
 
 ---
 
-<!-- fc id:T-C-067 sha:249fc25a src:dodatky/c-komandy.md:136 klas:F -->
+<!-- fc id:T-C-067 sha:249fc25a src:dodatky/c-komandy.md:136 klas:A -->
 ### T-C-067 · kod-ryadok · рядок 136
 
 **Книга каже, дослівно:**
@@ -1734,7 +1718,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Дослівно з джерела:**
+  > idf.py monitor
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2798,20 +2788,13 @@
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
-- **Спосіб і дата:** make arytmetyka, 2026-08-26
-- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
-Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
-Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
-- **Прохід:** pass-19-adresy-flesh
+  > python gen_esp32part.py input_partitions.csv binary_partitions.bin
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує команду gen_esp32part.py
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2841,7 +2824,7 @@
 
 ---
 
-<!-- fc id:T-C-121 sha:4438754b src:dodatky/c-komandy.md:213 klas:F -->
+<!-- fc id:T-C-121 sha:4438754b src:dodatky/c-komandy.md:213 klas:A -->
 ### T-C-121 · kod-ryadok · рядок 213
 
 **Книга каже, дослівно:**
@@ -2850,7 +2833,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Дослівно з джерела:**
+  > python gen_esp32part.py input_partitions.csv binary_partitions.bin
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує команду gen_esp32part.py
+- **Прохід:** m2-hvylya3
 
 ---
 

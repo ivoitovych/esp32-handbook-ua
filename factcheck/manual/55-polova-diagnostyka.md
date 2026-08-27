@@ -1224,7 +1224,7 @@
 
 ---
 
-<!-- fc id:T-55-083 sha:bf92c313 src:manual/55-polova-diagnostyka.md:176 klas:F -->
+<!-- fc id:T-55-083 sha:bf92c313 src:manual/55-polova-diagnostyka.md:176 klas:A -->
 ### T-55-083 · proza · рядок 176
 
 **Книга каже, дослівно:**
@@ -1233,7 +1233,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > The library uses all the partitions with data type and nvs subtype.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує, що NVS може містити конфігурацію, яка зберігається в розділі і залишається при заміні апаратури.
+- **Прохід:** m2-hvylya3
 
 ---
 

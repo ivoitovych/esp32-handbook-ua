@@ -2096,7 +2096,7 @@
 
 ---
 
-<!-- fc id:T-G-145 sha:085325db src:dodatky/g-glosariy.md:179 klas:F -->
+<!-- fc id:T-G-145 sha:085325db src:dodatky/g-glosariy.md:179 klas:A -->
 ### T-G-145 · tablycya · рядок 179
 
 **Книга каже, дослівно:**
@@ -2105,7 +2105,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > Non-volatile storage (NVS)
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ використовує "Non-volatile storage (NVS)" як основне поняття, що збігається з акронімом.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2122,7 +2128,7 @@
 
 ---
 
-<!-- fc id:T-G-147 sha:a9fca5a8 src:dodatky/g-glosariy.md:181 klas:F -->
+<!-- fc id:T-G-147 sha:a9fca5a8 src:dodatky/g-glosariy.md:181 klas:A -->
 ### T-G-147 · tablycya · рядок 181
 
 **Книга каже, дослівно:**
@@ -2131,7 +2137,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/66dc1dae-adc_oneshot.rst
+- **Дослівно з джерела:**
+  > Analog to Digital Converter (ADC)
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ використовує правильну термінологію.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2321,7 +2333,7 @@
 
 ---
 
-<!-- fc id:T-G-159 sha:f0f64376 src:dodatky/g-glosariy.md:193 klas:F -->
+<!-- fc id:T-G-159 sha:f0f64376 src:dodatky/g-glosariy.md:193 klas:A -->
 ### T-G-159 · tablycya · рядок 193
 
 **Книга каже, дослівно:**
@@ -2330,7 +2342,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Дослівно з джерела:**
+  > external PSRAM (Psuedostatic RAM) memory
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Хоча написано як "Psuedostatic" без дефіса, це той же термін.
+- **Прохід:** m2-hvylya3
 
 ---
 

@@ -1065,7 +1065,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-059 sha:43fb7ee2 src:manual/38-can.md:143 klas:F -->
+<!-- fc id:T-38-059 sha:43fb7ee2 src:manual/38-can.md:143 klas:A -->
 ### T-38-059 · proza · рядок 143
 
 **Книга каже, дослівно:**
@@ -1074,7 +1074,13 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Дослівно з джерела:**
+  > The TWAI controller can detect errors caused by bus interference or corrupted frames that do not conform to the frame format. It implements a fault isolation mechanism using transmit and receive error counters (TEC and REC).
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ каже про автоматичне стеження за помилками та лічильники.
+- **Прохід:** m2-hvylya3
 
 ---
 

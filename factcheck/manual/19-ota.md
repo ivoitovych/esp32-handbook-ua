@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-19-001 sha:609f0617 src:manual/19-ota.md:3 klas:F -->
+<!-- fc id:T-19-001 sha:609f0617 src:manual/19-ota.md:3 klas:A -->
 ### T-19-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,7 +15,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ визначає OTA як механізм оновлення без фізичного доступу.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -70,7 +76,7 @@
 
 ---
 
-<!-- fc id:T-19-005 sha:76464490 src:manual/19-ota.md:13 klas:F -->
+<!-- fc id:T-19-005 sha:76464490 src:manual/19-ota.md:13 klas:A -->
 ### T-19-005 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -79,7 +85,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Розбивка для OTA вимагає щонайменше двох розділів (ota_0 та ota_1)
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -386,7 +398,7 @@
 
 ---
 
-<!-- fc id:T-19-024 sha:9fb277d5 src:manual/19-ota.md:41 klas:F -->
+<!-- fc id:T-19-024 sha:9fb277d5 src:manual/19-ota.md:41 klas:A -->
 ### T-19-024 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -395,7 +407,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що застосунок займає місце двічі в двох OTA слотах.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -461,7 +479,7 @@
 
 ---
 
-<!-- fc id:T-19-029 sha:7678b715 src:manual/19-ota.md:51 klas:F -->
+<!-- fc id:T-19-029 sha:7678b715 src:manual/19-ota.md:51 klas:A -->
 ### T-19-029 · proza · рядок 51
 
 **Книга каже, дослівно:**
@@ -470,7 +488,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що OTA оновлює лише образ застосунку.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1127,7 +1151,7 @@
 
 ---
 
-<!-- fc id:T-19-062 sha:588b1000 src:manual/19-ota.md:135 klas:F -->
+<!-- fc id:T-19-062 sha:588b1000 src:manual/19-ota.md:135 klas:A -->
 ### T-19-062 · proza · рядок 135
 
 **Книга каже, дослівно:**
@@ -1136,7 +1160,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що OTA передбачає отримання даних (radio reception) та запис у флеш.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1488,7 +1518,7 @@
 
 ---
 
-<!-- fc id:T-19-086 sha:e0ec9d02 src:manual/19-ota.md:186 klas:F -->
+<!-- fc id:T-19-086 sha:e0ec9d02 src:manual/19-ota.md:186 klas:A -->
 ### T-19-086 · proza · рядок 186
 
 **Книга каже, дослівно:**
@@ -1497,7 +1527,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/a4dbe955-bootloader.rst
+- **Дослівно з джерела:**
+  > The OTA (over the air) update process can flash new apps in the field but cannot flash a new bootloader.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що OTA оновлює тільки додаток, не бутлоадер.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1675,7 +1711,7 @@
 
 ---
 
-<!-- fc id:T-19-097 sha:12fe0ec3 src:manual/19-ota.md:211 klas:F -->
+<!-- fc id:T-19-097 sha:12fe0ec3 src:manual/19-ota.md:211 klas:A -->
 ### T-19-097 · proza · рядок 211
 
 **Книга каже, дослівно:**
@@ -1684,11 +1720,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The following code serves detect the initial boot for an application after the OTA update. Upon the first boot, the application checks its state and performs diagnostics. If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback to confirm the operability of the application.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ каже, що функцію підтвердження потрібно викликати ПІСЛЯ виконання діагностики, а не на початку.
+- **Прохід:** m2-hvylya3
 
 ---
 
-<!-- fc id:T-19-098 sha:726f7ae8 src:manual/19-ota.md:215 klas:F -->
+<!-- fc id:T-19-098 sha:726f7ae8 src:manual/19-ota.md:215 klas:A -->
 ### T-19-098 · proza · рядок 215
 
 **Книга каже, дослівно:**
@@ -1697,7 +1739,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ каже, що OTA оновлює лише образ застосунку й OTA Data partition, але не таблицю розділів.
+- **Прохід:** m2-hvylya3
 
 ---
 

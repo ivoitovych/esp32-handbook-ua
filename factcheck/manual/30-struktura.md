@@ -848,7 +848,7 @@
 
 ---
 
-<!-- fc id:T-30-050 sha:e8467fbc src:manual/30-struktura.md:138 klas:F -->
+<!-- fc id:T-30-050 sha:e8467fbc src:manual/30-struktura.md:138 klas:A -->
 ### T-30-050 · proza · рядок 138
 
 **Книга каже, дослівно:**
@@ -857,7 +857,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Дослівно з джерела:**
+  > The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує, як PSRAM поводиться в контексті обмежень.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -913,7 +919,7 @@
 
 ---
 
-<!-- fc id:T-30-052 sha:ace55095 src:manual/30-struktura.md:144 klas:F -->
+<!-- fc id:T-30-052 sha:ace55095 src:manual/30-struktura.md:144 klas:A -->
 ### T-30-052 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -922,7 +928,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Дослівно з джерела:**
+  > This allows any application to use the external RAM without having to rewrite the code to use ``heap_caps_malloc(..., MALLOC_CAP_SPIRAM)``.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ каже, що malloc уже вміє віддавати PSRAM.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1315,11 +1327,7 @@
 
 **Доказ**
 
-- **Клас:** 🔴 F — не звірено
-- **Джерело:** Зовнішнього джерела не знайдено
-- **Що шукати в джерелі:** ESP-IDF Programming Guide розділ про управління пам'яттю або Linux kernel docs про фрагментацію
-- **Нотатка:** Твердження описує коректну концепцію фрагментації пам'яті і точний приклад (40 КБ вільно, але найбільший блок 2 КБ). Але як окреме твердження потребує підтвердження від джерела, а не лише логічного висновку.
-- **Прохід:** m2-96-vybirka
+- **Клас:** F — не звірено
 
 ---
 

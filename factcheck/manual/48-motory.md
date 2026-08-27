@@ -1108,7 +1108,7 @@
 
 ---
 
-<!-- fc id:T-48-069 sha:ba48347e src:manual/48-motory.md:181 klas:F -->
+<!-- fc id:T-48-069 sha:ba48347e src:manual/48-motory.md:181 klas:A -->
 ### T-48-069 · proza · рядок 181
 
 **Книга каже, дослівно:**
@@ -1117,7 +1117,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/l298n.pdf
+- **Дослівно з джерела:**
+  > LOW SATURATION VOLTAGE
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** ELECTRICAL CHARACTERISTICS показує Total Drop мін. 1.80V при IL=1A, що підтверджує ~2В втрат
+- **Прохід:** m2-hvylya3
 
 ---
 

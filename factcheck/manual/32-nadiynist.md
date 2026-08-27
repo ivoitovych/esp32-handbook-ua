@@ -1185,7 +1185,7 @@
 
 ---
 
-<!-- fc id:T-32-052 sha:188d8fa0 src:manual/32-nadiynist.md:140 klas:F -->
+<!-- fc id:T-32-052 sha:188d8fa0 src:manual/32-nadiynist.md:140 klas:A -->
 ### T-32-052 · proza · рядок 140
 
 **Книга каже, дослівно:**
@@ -1194,7 +1194,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > The library does try to recover from conditions when flash memory is in an inconsistent state. In particular, one should be able to power off the device at any point and time and then power it back on. This should not result in loss of data, except for the new key-value pair if it was being written at the moment of powering off.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ явно стверджує, що NVS стійкий до незавершених записів завдяки дизайну.
+- **Прохід:** m2-hvylya3
 
 ---
 

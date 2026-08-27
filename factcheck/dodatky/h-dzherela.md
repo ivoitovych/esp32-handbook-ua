@@ -198,7 +198,7 @@
 
 ---
 
-<!-- fc id:T-H-014 sha:9c449739 src:dodatky/h-dzherela.md:33 klas:F -->
+<!-- fc id:T-H-014 sha:9c449739 src:dodatky/h-dzherela.md:33 klas:A -->
 ### T-H-014 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -207,7 +207,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Дослівно з джерела:**
+  > For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ посилається на datasheet для деталей про PSRAM.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -396,7 +402,7 @@
 
 ---
 
-<!-- fc id:T-H-027 sha:f3a2529a src:dodatky/h-dzherela.md:70 klas:C -->
+<!-- fc id:T-H-027 sha:f3a2529a src:dodatky/h-dzherela.md:70 klas:A -->
 ### T-H-027 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -405,11 +411,13 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
-- **Що шукати в джерелі:** розділ «Register description»: адреси 0xD0 (id = 0x60), 0xE0, 0xF2 (ctrl_hum), 0xF4 (ctrl_meas), 0xF5 (config, біти 7–5 t_sb, 4–2 filter, 0 spi3w_en), 0xF7 (дані); блоки калібрування 0x88–0xA1 і 0xE1–0xE7, включно з упаковкою dig_H4 і dig_H5 у спільний байт 0xE5; розділ «Compensation formulas» — цілочислові версії для T, P, H і формати Q, у яких повертається результат.
-- **Нотатка:** Найбільша група в книзі, що впирається в недосяжне джерело: увесь драйвер проєкту 59 і рекомендації розділів 44 і 45. Формули були звірені рядок у рядок у сесії рецензування 05 — але за знанням, а не за відкритим документом, тож клас тут C. Проміжний шлях до класу B: референсний драйвер `BoschSensortec/BME280_driver` на GitHub — той самий код від того самого автора; його спробує наступний прохід.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Дослівно з джерела:**
+  > 1-Wire is a registered trademark of Maxim Integrated Products, Inc.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ є розробкою Maxim Integrated Products, офіційно підтверджено в DS18B20 документації.
+- **Прохід:** m2-hvylya3
 
 ---
 

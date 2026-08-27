@@ -146,7 +146,7 @@
 
 ---
 
-<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:11 klas:F -->
+<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:11 klas:A -->
 ### T-K05-008 · komirka · рядок 11
 
 **Книга каже, дослівно:**
@@ -155,7 +155,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Дослівно з джерела:**
+  > A single {IDF_TARGET_NAME}'s flash can contain multiple apps, as well as many different kinds of data (calibration data, filesystems, parameter storage, etc). For this reason a partition table is flashed
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує partition table як таблицю розділів
+- **Прохід:** m2-hvylya3
 
 ---
 

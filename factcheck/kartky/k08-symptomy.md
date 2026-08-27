@@ -473,7 +473,7 @@
 
 ---
 
-<!-- fc id:T-K08-028 sha:f3bd0dbc src:kartky/k08-symptomy.md:15 klas:F -->
+<!-- fc id:T-K08-028 sha:f3bd0dbc src:kartky/k08-symptomy.md:15 klas:A -->
 ### T-K08-028 · komirka · рядок 15
 
 **Книга каже, дослівно:**
@@ -482,7 +482,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/66dc1dae-adc_oneshot.rst
+- **Дослівно з джерела:**
+  > This function may fail when the ADC is in use by other drivers/peripherals, and return :c:macro:`ESP_ERR_TIMEOUT`. Under this condition, the ADC raw result is invalid.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що ADC може повертати неправильні дані.
+- **Прохід:** m2-hvylya3
 
 ---
 

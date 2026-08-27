@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-20-005 sha:6b268f8b src:manual/20-bekap.md:5 klas:F -->
+<!-- fc id:T-20-005 sha:6b268f8b src:manual/20-bekap.md:5 klas:A -->
 ### T-20-005 · proza · рядок 5
 
 **Книга каже, дослівно:**
@@ -67,7 +67,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Дослівно з джерела:**
+  > This is an irreversible operation!
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує незворотність запису.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -200,7 +206,7 @@
 
 ---
 
-<!-- fc id:T-20-014 sha:40e6e1b3 src:manual/20-bekap.md:34 klas:F -->
+<!-- fc id:T-20-014 sha:40e6e1b3 src:manual/20-bekap.md:34 klas:A -->
 ### T-20-014 · proza · рядок 34
 
 **Книга каже, дослівно:**
@@ -209,7 +215,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Дослівно з джерела:**
+  > eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will have no effect.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Підтверджує, що повернути біт у нуль неможливо.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -748,7 +760,7 @@
 
 ---
 
-<!-- fc id:T-20-043 sha:49ca9e02 src:manual/20-bekap.md:99 klas:F -->
+<!-- fc id:T-20-043 sha:49ca9e02 src:manual/20-bekap.md:99 klas:A -->
 ### T-20-043 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -757,7 +769,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Дослівно з джерела:**
+  > Longer eFuses (MAC addresses, keys) can be set with this command, but it's better to use a specific command (``burn-custom-mac``, ``burn-key``) for a specific field.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що MAC-адреса зберігається в eFuse.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1587,7 +1605,7 @@
 
 ---
 
-<!-- fc id:T-20-088 sha:17e4c2ab src:manual/20-bekap.md:186 klas:F -->
+<!-- fc id:T-20-088 sha:17e4c2ab src:manual/20-bekap.md:186 klas:A -->
 ### T-20-088 · proza · рядок 186
 
 **Книга каже, дослівно:**
@@ -1596,7 +1614,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Дослівно з джерела:**
+  > This is an irreversible operation!
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує незворотність запису eFuse.
+- **Прохід:** m2-hvylya3
 
 ---
 

@@ -166,7 +166,7 @@
 
 ---
 
-<!-- fc id:T-K09-009 sha:e3e28f1d src:kartky/k09-pinouty.md:15 klas:F -->
+<!-- fc id:T-K09-009 sha:e3e28f1d src:kartky/k09-pinouty.md:15 klas:A -->
 ### T-K09-009 · tablycya · рядок 15
 
 **Книга каже, дослівно:**
@@ -175,7 +175,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_DAC_CH_1: default = "Not Updated!", esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: default = "Not Updated!", esp32 = "GPIO26", esp32s2 = "GPIO18"}
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** GPIO25 і GPIO26 — дійсно єдині DAC-виходи на ESP32
+- **Прохід:** m2-hvylya3
 
 ---
 

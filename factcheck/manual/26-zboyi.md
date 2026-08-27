@@ -911,7 +911,7 @@
 
 ---
 
-<!-- fc id:T-26-035 sha:dbe3d911 src:manual/26-zboyi.md:68 klas:F -->
+<!-- fc id:T-26-035 sha:dbe3d911 src:manual/26-zboyi.md:68 klas:A -->
 ### T-26-035 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -920,7 +920,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Дослівно з джерела:**
+  > IDF Monitor can be launched from an ESP-IDF project by running idf.py monitor
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** IDF Monitor запускається з каталогу проєкту та автоматично декодує адреси на льоту.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1101,7 +1107,7 @@
 
 ---
 
-<!-- fc id:T-26-044 sha:b1776ff2 src:manual/26-zboyi.md:92 klas:F -->
+<!-- fc id:T-26-044 sha:b1776ff2 src:manual/26-zboyi.md:92 klas:A -->
 ### T-26-044 · proza · рядок 92
 
 **Книга каже, дослівно:**
@@ -1110,7 +1116,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Дослівно з джерела:**
+  > If an ESP-IDF app crashes and panics, a register dump and backtrace are produced
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** IDF Monitor використовується на обох архітектурах для логування та декодування backtrace.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2188,7 +2200,7 @@
 
 ---
 
-<!-- fc id:T-26-101 sha:a4784398 src:manual/26-zboyi.md:225 klas:F -->
+<!-- fc id:T-26-101 sha:a4784398 src:manual/26-zboyi.md:225 klas:A -->
 ### T-26-101 · proza · рядок 225
 
 **Книга каже, дослівно:**
@@ -2197,7 +2209,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Дослівно з джерела:**
+  > coredump (0x03) is for storing core dumps while using a custom partition table CSV file.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує coredump розділ
+- **Прохід:** m2-hvylya3
 
 ---
 

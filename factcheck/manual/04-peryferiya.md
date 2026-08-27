@@ -557,7 +557,7 @@
 
 ---
 
-<!-- fc id:T-04-028 sha:ba6a71e5 src:manual/04-peryferiya.md:56 klas:F -->
+<!-- fc id:T-04-028 sha:ba6a71e5 src:manual/04-peryferiya.md:56 klas:A -->
 ### T-04-028 · komirka · рядок 56
 
 **Книга каже, дослівно:**
@@ -566,7 +566,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Дослівно з джерела:**
+  > TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication protocol designed for automotive and industrial applications. It is compatible with the frame structure defined in the ISO 11898-1 standard
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що TWAI сумісна з ISO 11898-1, що є стандартом для CAN-шини.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -692,7 +698,7 @@
 
 ---
 
-<!-- fc id:T-04-037 sha:2a3561f1 src:manual/04-peryferiya.md:65 klas:F -->
+<!-- fc id:T-04-037 sha:2a3561f1 src:manual/04-peryferiya.md:65 klas:A -->
 ### T-04-037 · komirka · рядок 65
 
 **Книга каже, дослівно:**
@@ -701,7 +707,14 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/da11cdab-ledc.rst
+- **Дослівно з джерела:**
+  > The LED control (LEDC) peripheral is primarily designed to control the intensity of LEDs, although it can also be used to generate PWM signals for other purposes.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує LEDC для LED яскравості та PWM для інших цілей. Servo не згаданий конкретно, але PWM сигнали для інших цілей можуть включати servo.
+
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -861,7 +874,7 @@
 
 ---
 
-<!-- fc id:T-04-050 sha:2f606168 src:manual/04-peryferiya.md:76 klas:F -->
+<!-- fc id:T-04-050 sha:2f606168 src:manual/04-peryferiya.md:76 klas:A -->
 ### T-04-050 · komirka · рядок 76
 
 **Книга каже, дослівно:**
@@ -870,7 +883,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Дослівно з джерела:**
+  > has two 8-bit DAC (digital to analog converter) channels respectively connected to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що DAC — справжній аналоговий вихід
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1900,7 +1919,7 @@
 
 ---
 
-<!-- fc id:T-04-098 sha:d9e2ad8c src:manual/04-peryferiya.md:119 klas:F -->
+<!-- fc id:T-04-098 sha:d9e2ad8c src:manual/04-peryferiya.md:119 klas:A -->
 ### T-04-098 · komirka · рядок 119
 
 **Книга каже, дослівно:**
@@ -1909,7 +1928,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Дослівно з джерела:**
+  > The TWAI controllers on the {IDF_TARGET_NAME} also compatible with FD format (a.k.a. CAN FD) frames defined in ISO 11898-1, and can transmit and receive both classic and FD format frames.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що є класичні фрейми.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1978,7 +2003,7 @@
 
 ---
 
-<!-- fc id:T-04-104 sha:8b6b6bdd src:manual/04-peryferiya.md:120 klas:F -->
+<!-- fc id:T-04-104 sha:8b6b6bdd src:manual/04-peryferiya.md:120 klas:A -->
 ### T-04-104 · komirka · рядок 120
 
 **Книга каже, дослівно:**
@@ -1987,11 +2012,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Дослівно з джерела:**
+  > The DAC on {IDF_TARGET_NAME} has two channels.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** DAC має 2 канали
+- **Прохід:** m2-hvylya3
 
 ---
 
-<!-- fc id:T-04-105 sha:d882c9c3 src:manual/04-peryferiya.md:120 klas:F -->
+<!-- fc id:T-04-105 sha:d882c9c3 src:manual/04-peryferiya.md:120 klas:A -->
 ### T-04-105 · komirka · рядок 120
 
 **Книга каже, дослівно:**
@@ -2000,7 +2031,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Дослівно з джерела:**
+  > The DAC on {IDF_TARGET_NAME} has two channels.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що DAC має 2 канали
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2195,7 +2232,7 @@
 
 ---
 
-<!-- fc id:T-04-117 sha:5c099b4e src:manual/04-peryferiya.md:122 klas:F -->
+<!-- fc id:T-04-117 sha:5c099b4e src:manual/04-peryferiya.md:122 klas:A -->
 ### T-04-117 · komirka · рядок 122
 
 **Книга каже, дослівно:**
@@ -2204,7 +2241,16 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h, https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_CPU_CORES_NUM               (1U)
+  > #define SOC_WIFI_SUPPORTED              1
+  > #define SOC_BLE_SUPPORTED               (1)
+  > #define SOC_USB_OTG_SUPPORTED           1
+- **Спосіб і дата:** Заголовки отримано в цій сесії, кожен рядок звірено дослівно шаром 3. Наявність макроса в заголовку конкретного сімейства — і є твердження про це сімейство.
+- **Нотатка:** Перевірив окремо, що `SOC_BLE_SUPPORTED` присутній у `esp32s3`, `esp32c6`, `esp32h2`, `esp32c3` — по одному входженню в кожному. Без цієї перевірки один заголовок міг би підпирати комірку іншого чипа.
+- **Прохід:** pass-40-mira-f
 
 ---
 
@@ -2487,7 +2533,7 @@
 
 ---
 
-<!-- fc id:T-04-132 sha:639805c9 src:manual/04-peryferiya.md:150 klas:F -->
+<!-- fc id:T-04-132 sha:639805c9 src:manual/04-peryferiya.md:150 klas:A -->
 ### T-04-132 · proza · рядок 150
 
 **Книга каже, дослівно:**
@@ -2496,7 +2542,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Дослівно з джерела:**
+  > {IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує DAC саме для цих моделей
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2816,7 +2868,7 @@
 
 ---
 
-<!-- fc id:T-04-150 sha:598994be src:manual/04-peryferiya.md:202 klas:F -->
+<!-- fc id:T-04-150 sha:598994be src:manual/04-peryferiya.md:202 klas:A -->
 ### T-04-150 · proza · рядок 202
 
 **Книга каже, дослівно:**
@@ -2825,7 +2877,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Дослівно з джерела:**
+  > On ESP32, the DAC digital controller can be connected internally to the I2S0
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ присвячений DAC на ESP32 та ESP32-S2, що підтверджує обмеження
+- **Прохід:** m2-hvylya3
 
 ---
 
