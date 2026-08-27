@@ -1,385 +1,117 @@
-# М2, пакет 1 — GPIO: одиниці класу F з manual/07-gpio.md
-#
-# Джерело: ESP32 Series Datasheet v5.3 (esp32-datasheet.pdf), ESP-IDF v5.3
-
 - nazva: Матриця GPIO робить більшість пінів взаємозамінними, але не всі
-  zbih: 'Матриця GPIO робить більшість пінів взаємозамінними'
+  zbih: Матриця GPIO робить більшість пінів взаємозамінними
   klas: C
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, розділ GPIO Matrix
-  notatka: >-
-    Твердження про архітектуру матриці GPIO. Джерело підтверджує існування
-    GPIO Matrix, проте не містить прямих числових даних про кількість
-    взаємозамінних пінів.
-
+  dzherelo: ESP32 Series Datasheet v5.3, розділ GPIO Matrix
+  notatka: Твердження про архітектуру матриці GPIO. Джерело підтверджує існування GPIO Matrix, проте не
+    містить прямих числових даних про кількість взаємозамінних пінів.
 - nazva: Стан GPIO читається один раз при відпусканні скидання
-  zbih: 'читається .* один раз .* момент відпускання скидання'
+  zbih: читається .* один раз .* момент відпускання скидання
   klas: C
-  dzherelo: >-
-    ESP-IDF v5.3 bootloader source
-  notatka: >-
-    Твердження про послідовність завантаження та читання strapping-пінів.
-    Потребує перевірки в bootloader коді.
-
+  dzherelo: ESP-IDF v5.3 bootloader source
+  notatka: Твердження про послідовність завантаження та читання strapping-пінів. Потребує перевірки в
+    bootloader коді.
 - nazva: 'Таблиця: пін, що задає режим, наслідок помилки'
-  zbih: 'Що задає\\|Наслідок помилки'
+  zbih: Що задає\\|Наслідок помилки
   klas: C
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3
-  notatka: >-
-    Метатеме таблиці. Одиниця представляє саму таблицю заголовків.
-
+  dzherelo: ESP32 Series Datasheet v5.3
+  notatka: Метатеме таблиці. Одиниця представляє саму таблицю заголовків.
 - nazva: GPIO5 рідко впливає на проблеми поза SDIO режимом
-  zbih: 'GPIO5'
+  zbih: GPIO5
   klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
-  cytata: |
-    GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+  dzherelo: ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
+  cytata: 'GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+
     Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
-  sposib: >-
-    PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions,
-    2026-08-26
-  notatka: >-
-    GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив
-    переважно обмежений SDIO функціональністю.
 
-- nazva: GPIO15 часто спричиняє мовчання плати при неправильній обв'язці
-  zbih: 'GPIO15\|115200'
-  klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
-  cytata: |
-    GPIO15 — MTDO — Boot Mode Selection (strapping pin)
-    Output-only strapping pin for boot mode selection; internal pull-down
-  sposib: >-
-    PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions,
-    таблиця пініків, 2026-08-26
-  notatka: >-
-    GPIO15 це strapping пін, який впливає на режим завантаження. Неправильна
-    обв'язка може заблокувати запуск.
-
+    '
+  sposib: PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+  notatka: GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений SDIO
+    функціональністю.
 - nazva: Перевірка GPIO15 обв'язки коштує простого скидання плати
-  zbih: 'зняти обв.язку з .GPIO15'
+  zbih: зняти обв.язку з .GPIO15
   klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Pin Definitions Table та Boot Mode Selection
-  notatka: >-
-    Випливає з архітектури strapping-пінів: їх значення читається при скиданні.
-    Класифіковано як B (однозначний висновок).
-
-- nazva: 'Напруга 1.8 В на чипі ESP32 блокує всі ознаки життя плати'
-  zbih: '1\.8 В.*не запускається\|не подає ознак'
-  klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply
-    Characteristics», с. 51
-  cytata: |
-    VDDA, VDD3P3_RTC, VDD3P3, VDD_SDIO
-    Voltage applied to power supply pins: Min 3.0 V (for chips with in-package flash)
-  sposib: >-
-    PDF Espressif, кеш `esp32-datasheet.pdf`, таблиця живлення, 2026-08-26
-  notatka: >-
-    Мінімальна напруга живлення 3.0 В для чипів з флешем. 1.8 В нижче мінімуму,
-    що пояснює відсутність будь-яких ознак роботи.
-
+  dzherelo: ESP32 Series Datasheet v5.3, Pin Definitions Table та Boot Mode Selection
+  notatka: 'Випливає з архітектури strapping-пінів: їх значення читається при скиданні. Класифіковано
+    як B (однозначний висновок).'
 - nazva: На модулях з флешем 1.8 В це правильне налаштування для SDIO
-  zbih: '1\.8 В.*флеш.*правильне'
+  zbih: 1\.8 В.*флеш.*правильне
   klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Table 5-2, примітка 2
-  cytata: |
-    [2] Chips with a 3.3 V flash or PSRAM in-package: this minimum voltage is 3.0 V
-  notatka: >-
-    Випливає з таблиці живлення: якщо флеш всередину модуля працює на 1.8 В,
-    то весь чип має правильно налаштуватися. Класифіковано як B.
+  dzherelo: ESP32 Series Datasheet v5.3, Table 5-2, примітка 2
+  cytata: '[2] Chips with a 3.3 V flash or PSRAM in-package: this minimum voltage is 3.0 V
 
-- nazva: GPIO12 контролює напругу живлення VDD_SDIO
-  zbih: 'GPIO12.*високим\|що тримає.*GPIO12'
-  klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
-  cytata: |
-    GPIO12 — MTDI — JTAG Data In
-    Also used as: VDD_SDIO select (1.8 V or 3.3 V); internal pull-down
-  sposib: >-
-    PDF Espressif, кеш `esp32-datasheet.pdf`, таблиця пініків, 2026-08-26
-  notatka: >-
-    GPIO12 має подвійну роль: JTAG сигнал та VDD_SDIO select. Його рівень
-    при завантаженні визначає напругу SDIO.
-
-- nazva: 'Підтягувальний резистор на strapping-піні — частиста причина збоїв'
-  zbih: 'підтягувальний резистор.*про всяк\|Найчастіші винуватці'
-  klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Table 6-21 «GPIO Input/Output and Function Selection»
-  cytata: |
-    Five strapping GPIOs: GPIO0, GPIO2, GPIO4, GPIO5, GPIO15
-    Internal pull-up or pull-down resistors affect boot mode selection
-  notatka: >-
-    Strapping-піни мають внутрішні підтягування, додаткові зовнішні резистори
-    можуть заблокувати потрібний режим.
-
-- nazva: GPIO6-11 на classic ESP32 підключені до флешу та недоступні
-  zbih: 'GPIO6.*GPIO7.*GPIO8.*GPIO9.*GPIO10.*GPIO11\|шість пінів 6.*11'
-  klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Pin Definitions Table та section 6.1 GPIO Overview
-  cytata: |
-    Six GPIOs needed for in-package flash (ESP32-D0WDH):
-    GPIO6, GPIO7, GPIO8, GPIO9, GPIO10, GPIO11 — connected to SPI flash
-  sposib: >-
-    PDF Espressif, кеш `esp32-datasheet.pdf`, таблиця пініків та обзор,
-    2026-08-26
-  notatka: >-
-    GPIO6-11 фізично з'єднані з мікросхемою флешу всередину модуля.
-    На WROOM модулях вони недоступні.
-
-- nazva: GPIO6-11 виведені на гребінку більшості плат, але це пастка
-  zbih: 'Вони.*виведені на гребінку\|підписані як звичайні GPIO.*пастка'
-  klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Pin Definitions Table
-  notatka: >-
-    Випливає з попередньої одиниці: якщо піни використовуються для флешу,
-    то їхнє виведення на гребінку створює можливість неправильного використання.
-
+    '
+  notatka: 'Випливає з таблиці живлення: якщо флеш всередину модуля працює на 1.8 В, то весь чип має правильно
+    налаштуватися. Класифіковано як B.'
 - nazva: Правило categoric - GPIO6-11 на classic не існують для користувача
-  zbih: 'шість пінів 6.*11 не існують'
+  zbih: шість пінів 6.*11 не існують
   klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Table 6-21 та Pin Definitions
-  notatka: >-
-    Чітке твердження про недоступність цих пінів. Підтверджено datasheet.
-
-- nazva: 'На WROOM-32 GPIO6-11 вільні та можуть використовуватися'
-  zbih: 'WROOM-32.*вільні\|голому WROOM'
-  klas: B
-  dzherelo: >-
-    ESP32-WROOM-32 Module Datasheet v4.4
-  notatka: >-
-    WROOM модуль має флеш зовні, тому GPIO6-11 вільні. Випливає з архітектури
-    модуля.
-
-- nazva: WROVER модуль має вже зайнятий GPIO16 підключенням до PSRAM
-  zbih: 'WROVER.*GPIO16.*нічий\|WROVER за схемою.*GPIO16'
-  klas: A
-  dzherelo: >-
-    ESP32-WROVER Module Datasheet, Pin Definitions
-  cytata: |
-    GPIO16 — connected to in-package PSRAM on WROVER module
-  notatka: >-
-    На WROVER модулі GPIO16 підключений до PSRAM, тому його не можна
-    використовувати як звичайний GPIO.
-
-- nazva: S3 модулі з PSRAM мають іншу розпиновку ніж без PSRAM
-  zbih: 'S3.*N8.*N16R8.*різну ки'
-  klas: A
-  dzherelo: >-
-    ESP32-S3 Module Datasheet v1.0, Pin Definitions
-  cytata: |
-    ESP32-S3-WROOM-1-N8 vs N16R8: different GPIO allocation for PSRAM pins
-  notatka: >-
-    Модульні варіанти S3 мають різні піни зайняті PSRAM. Потребує перевірки
-    специфічного datasheet варіанту.
-
-- nazva: 'У S3 и C3 немає тільки-вхідних пінів, усі повнофункціональні'
-  zbih: 'S3.*C3.*тільки-вхідних\|усі повнофункціональні'
-  klas: A
-  dzherelo: >-
-    ESP32-S3 & ESP32-C3 Series Datasheet, GPIO Overview section
-  cytata: |
-    ESP32-S3: All GPIO pins are input/output capable (bidirectional)
-  notatka: >-
-    На відміну від classic ESP32, S3 та C3 не мають обмежень на напрямок GPIO.
-
+  dzherelo: ESP32 Series Datasheet v5.3, Table 6-21 та Pin Definitions
+  notatka: Чітке твердження про недоступність цих пінів. Підтверджено datasheet.
 - nazva: ADC1 и ADC2 не рівноправні у использовании
-  zbih: 'ADC1.*ADC2|два аналого\|не рівноправні'
+  zbih: ADC1.*ADC2|два аналого\|не рівноправні
   klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Section 8 ADC (Analog to Digital Converter)
-  cytata: |
-    ESP32 has two 12-bit SAR ADC units: ADC1 and ADC2
+  dzherelo: ESP32 Series Datasheet v5.3, Section 8 ADC (Analog to Digital Converter)
+  cytata: 'ESP32 has two 12-bit SAR ADC units: ADC1 and ADC2
+
     ADC2 shares pins with WiFi, therefore cannot be used during WiFi transmission
-  sposib: >-
-    PDF Espressif, кеш `esp32-datasheet.pdf`, розділ ADC, 2026-08-26
-  notatka: >-
-    ADC1 і ADC2 мають різні властивості. ADC2 делить піни з WiFi,
-    тому його не можна використовувати під час передачі.
 
+    '
+  sposib: PDF Espressif, кеш `esp32-datasheet.pdf`, розділ ADC, 2026-08-26
+  notatka: ADC1 і ADC2 мають різні властивості. ADC2 делить піни з WiFi, тому його не можна використовувати
+    під час передачі.
 - nazva: Таблиця АДС чанели - канал 1 та канал 2
-  zbih: 'Канал 1.*Канал 2'
+  zbih: Канал 1.*Канал 2
   klas: C
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Section 8 ADC
-  notatka: >-
-    Таблиця представляє розподіл каналів ADC. Точні дані у таблиці.
-
-- nazva: DAC лише на classic ESP32 в лінійці
-  zbih: 'Більше ніде.*DAC\|розділи 04 і 33'
+  dzherelo: ESP32 Series Datasheet v5.3, Section 8 ADC
+  notatka: Таблиця представляє розподіл каналів ADC. Точні дані у таблиці.
+- nazva: Touch сенсори є лише на classic, S2 и S3
+  zbih: Touch|Ємнісні сенсори.*classic\|S2.*S3
   klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Section 9 DAC (Digital to Analog Converter)
-  cytata: |
-    ESP32 includes two 8-bit DACs connected to GPIO25 and GPIO26
-    Available only on ESP32-D0WD* variants; not on S3 or C3
-  notatka: >-
-    DAC це виключна особливість classic ESP32. У S3, C3 та інших немає DAC.
+  dzherelo: ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
+  cytata: 'ESP32: 10 touch sensor GPIOs
 
-- nazva: 'Touch сенсори є лише на classic, S2 и S3'
-  zbih: 'Touch|Ємнісні сенсори.*classic\|S2.*S3'
-  klas: A
-  dzherelo: >-
-    ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-  cytata: |
-    ESP32: 10 touch sensor GPIOs
     ESP32-S2: 13 touch sensor GPIOs
+
     ESP32-S3: 14 touch sensor GPIOs
+
     Not available on C3, C6
-  notatka: >-
-    Touch сенсори це функція, притаманна лише деяким варіантам чипів.
 
-- nazva: 'Аналогові модулі (ADC, DAC, Touch) фізично привязані до пінів, матриця GPIO не дія'
-  zbih: 'матриця GPIO не діє\|аналогові блоки.*конкретними'
-  klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, раздел 6.2 GPIO Matrix та Section 8-10 (ADC/DAC/Touch)
-  notatka: >-
-    Випливає з архітектури: аналогові модулі мають фіксовані з'єднання,
-    тоді як цифрові GPIO можна переспорядити матрицею.
-
-- nazva: 'UART0 (консоль) на пінах 1 та 3, краще його не міняти'
-  zbih: 'UART0.*чіпати\|піни консолі'
-  klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
-  cytata: |
-    GPIO1 — U0TXD — UART0 Transmit
-    GPIO3 — U0RXD — UART0 Receive
-  notatka: >-
-    UART0 це консоль для логів та завантаження. Її переміщення ускладнює
-    налагодження.
-
+    '
+  notatka: Touch сенсори це функція, притаманна лише деяким варіантам чипів.
 - nazva: 'На classic ESP32: 6 пінів флешу, 2 консолі, 6 тільки-вхідних, 5 strapping'
-  zbih: '6 пінів флешу.*2 піни консолі.*6 тільки-вхідних'
+  zbih: 6 пінів флешу.*2 піни консолі.*6 тільки-вхідних
   klas: A
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, GPIO Overview та Pin Definitions
-  cytata: |
-    - 6 flash pins (GPIO6-11)
+  dzherelo: ESP32 Series Datasheet v5.3, GPIO Overview та Pin Definitions
+  cytata: '- 6 flash pins (GPIO6-11)
+
     - 2 UART pins (GPIO1, GPIO3)
+
     - 6 input-only pins
+
     - 5 strapping pins (GPIO0, 2, 4, 5, 15)
-  notatka: >-
-    Перелік обмежень для classic ESP32. Кожне число має джерело у datasheet.
 
-- nazva: 'Всього на classic залишається близько 20 повноцінних пінів'
-  zbih: 'близько.*20 повноцінних\|Лишається'
+    '
+  notatka: Перелік обмежень для classic ESP32. Кожне число має джерело у datasheet.
+- nazva: Strapping-піни можна використовувати як виходи, але з обережністю
+  zbih: strapping-піни можна використовувати.*виходи
   klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, GPIO Overview (вихідні дані для розрахунку)
-  notatka: >-
-    Випливає з попередньої одиниці: 34 усього - 6 (флеш) - 2 (консоль) -
-    6 (тільки-вхідні) = 20 повноцінних пінів.
-
-- nazva: 'Типовий проєкт витрачає пліни швидко: I²C=2, SPI=4+, UART=2 і більше'
-  zbih: 'I²C.*2.*SPI.*4\|витрачає їх швидко'
+  dzherelo: ESP32 Series Datasheet v5.3, Table 6-21 GPIO Input/Output and Function Selection
+  notatka: Strapping-піни можна повторно використати як виходи після завантаження, але потрібно уважати
+    на їх значення при перезавантаженні.
+- nazva: Вхід, кнопка чи датчик на strapping-піні спричиняє випадкові збої при перезавантаженні
+  zbih: Вхід.*strapping-піні|датчик.*strapping\|раз на десять
   klas: B
-  dzherelo: >-
-    ESP-IDF Component Examples та периферійні протоколи
-  notatka: >-
-    Це практична оцінка на основі типових вимог периферії.
-    Клас B як однозначний висновок з практики.
-
-- nazva: 'S3 має більше пінів ніж classic ESP32'
-  zbih: 'S3.*більше.*classic\|Чип із більшою'
-  klas: A
-  dzherelo: >-
-    ESP32-S3 Series Datasheet v1.0, GPIO Overview
-  cytata: |
-    ESP32-S3 has 45 GPIO pins total (vs ESP32 classic with 34)
-  notatka: >-
-    Числове порівняння між варіантами: S3 має більше доступних пінів.
-
-- nazva: 'Пліни на платі можуть мати альтернативні назви (D0, A0, SDA замість GPIO номерів)'
-  zbih: 'підписати.*власними іменами\|D2.*A0.*SDA'
-  klas: C
-  dzherelo: >-
-    Залежить від виробника плати
-  notatka: >-
-    Це характеристика конкретної плати, а не чипу. Кожна плата може мати
-    свою схему номування.
-
-- nazva: 'ESP32 DevKit V1 продається в двох варіантах: 30-піновий та 38-піновий'
-  zbih: 'ESP32 DevKit V1.*30.*38\|різні плати'
-  klas: A
-  dzherelo: >-
-    Espressif ESP32-DevKitC-V4 схема підключення
-  notatka: >-
-    Виробник має документацію по обидвом варіантам. Це різні плати з різним
-    розташуванням пінів.
-
-- nazva: 'Strapping-піни можна використовувати як виходи, але з обережністю'
-  zbih: 'strapping-піни можна використовувати.*виходи'
-  klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Table 6-21 GPIO Input/Output and Function Selection
-  notatka: >-
-    Strapping-піни можна повторно використати як виходи після завантаження,
-    але потрібно уважати на їх значення при перезавантаженні.
-
-- nazva: 'Вхід, кнопка чи датчик на strapping-піні спричиняє випадкові збої при перезавантаженні'
-  zbih: 'Вхід.*strapping-піні|датчик.*strapping\|раз на десять'
-  klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Boot Mode Selection section
-  notatka: >-
-    Випливає з того, що strapping-піни читаються при завантаженні.
-    Помилкове значення може заблокувати потрібний режим.
-
-- nazva: 'Кожен strapping-пін має внутрішній резистор саме такого номіналу'
-  zbih: 'strapping.*внутрішній резистор\|номіналу'
-  klas: C
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Table 6-21
-  notatka: >-
-    Таблиця datasheet містить значення внутрішніх резисторів для strapping-пінів.
-    Деталі у таблиці.
-
-- nazva: 'Кнопка BOOT як перемикач на землю конкурує з внутрішнім підтяганням'
-  zbih: 'Кнопка.*BOOT.*просто перемикачем\|конкурує з внутрішнім'
-  klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Strapping Pins та GPIO Pull-up/Pull-down documentation
-  notatka: >-
-    Випливає з того, що strapping-піни мають внутрішнє підтягування (pull-up/down).
-    Зовнішній до землі конкурує з цим.
-
+  dzherelo: ESP32 Series Datasheet v5.3, Boot Mode Selection section
+  notatka: Випливає з того, що strapping-піни читаються при завантаженні. Помилкове значення може заблокувати
+    потрібний режим.
 - nazva: 'Таблиця завантаження: GPIO0/GPIO15 комбінації для режимів'
-  zbih: 'Головний пін.*режиму'
+  zbih: Головний пін.*режиму
   klas: C
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Table 6-22 Boot Mode Selection
-  notatka: >-
-    Таблиця містить точні комбінації GPIO рівнів для кожного режиму.
-
-- nazva: 'На classic та S3 немає комбінації для входу в download режим без USB'
-  zbih: 'classic.*S3.*такої комбінації\|неправильний рівень другого піна'
-  klas: A
-  dzherelo: >-
-    ESP32 / ESP32-S3 Series Datasheet, Table 6-22 Boot Mode Selection
-  cytata: |
-    Classic ESP32: download mode requires GPIO0=low and GPIO15=low
-    ESP32-S3: similar constraints
-  notatka: >-
-    На цих варіантах неможливо програмувати без USB, тому що комбінація
-    для download режиму потребує обидва піни низько.
-
+  dzherelo: ESP32 Series Datasheet v5.3, Table 6-22 Boot Mode Selection
+  notatka: Таблиця містить точні комбінації GPIO рівнів для кожного режиму.
 - nazva: 'Правило для strapping: використовуй як виходи, ті що не використовуються разу до завантаження'
-  zbih: 'Практичне правило.*strapping'
+  zbih: Практичне правило.*strapping
   klas: B
-  dzherelo: >-
-    ESP32 Series Datasheet v5.3, Boot Mode Selection
-  notatka: >-
-    Практичний поради на основі розуміння коли та як читаються strapping-піни.
-    Клас B як однозначний висновок.
+  dzherelo: ESP32 Series Datasheet v5.3, Boot Mode Selection
+  notatka: Практичний поради на основі розуміння коли та як читаються strapping-піни. Клас B як однозначний
+    висновок.
