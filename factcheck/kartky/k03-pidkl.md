@@ -280,7 +280,7 @@
 
 ---
 
-<!-- fc id:T-K03-018 sha:254dbbd9 src:kartky/k03-pidkl.md:31 klas:F -->
+<!-- fc id:T-K03-018 sha:254dbbd9 src:kartky/k03-pidkl.md:31 klas:A -->
 ### T-K03-018 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -289,7 +289,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > Check the list of identified COM ports in the Windows Device Manager. Disconnect {IDF_TARGET_NAME} and connect it back, to verify which port disappears from the list and then shows back again.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** довідник підтверджує, що жовтий знак у диспетчері означає драйвер
+- **Прохід:** prochid-k03-pidkl
 
 ---
 
@@ -306,7 +312,7 @@
 
 ---
 
-<!-- fc id:T-K03-020 sha:c5be6367 src:kartky/k03-pidkl.md:37 klas:F -->
+<!-- fc id:T-K03-020 sha:c5be6367 src:kartky/k03-pidkl.md:37 klas:A -->
 ### T-K03-020 · proza · рядок 37
 
 **Книга каже, дослівно:**
@@ -315,7 +321,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > Adding User to ``dialout`` or ``uucp`` on Linux
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документ пояснює проблему Permission denied та як її вирішити
+- **Прохід:** prochid-k03-pidkl
 
 ---
 
@@ -399,7 +411,7 @@
 
 ---
 
-<!-- fc id:T-K03-027 sha:dacd95cb src:kartky/k03-pidkl.md:55 klas:F -->
+<!-- fc id:T-K03-027 sha:dacd95cb src:kartky/k03-pidkl.md:55 klas:A -->
 ### T-K03-027 · proza · рядок 55
 
 **Книга каже, дослівно:**
@@ -408,7 +420,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > Close the serial terminal after verification that communication is working. If you keep the terminal session open, the serial port will be inaccessible for uploading firmware later.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документ пояснює, що порт може бути зайнятий іншою програмою, якщо монітор залишається відкритим
+- **Прохід:** prochid-k03-pidkl
 
 ---
 

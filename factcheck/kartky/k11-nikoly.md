@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-K11-008 sha:410af712 src:kartky/k11-nikoly.md:18 klas:E -->
+<!-- fc id:T-K11-008 sha:410af712 src:kartky/k11-nikoly.md:18 klas:A -->
 ### T-K11-008 · proza · рядок 18
 
 **Книга каже, дослівно:**
@@ -186,7 +186,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/security/flash-encryption.rst
+- **Дослівно з джерела:**
+  > For :ref:`flash-enc-release-mode`, the second stage bootloader sets all the eFuse bits set under development mode as well as ``DIS_DOWNLOAD_MANUAL_ENCRYPT``. It also write-protects the ``{IDF_TARGET_CRYPT_CNT}`` eFuse bits.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** write-protect в release-режиме означает невозможность изменения этих параметров после активации
+- **Прохід:** prochid-k11-nikoly
 
 ---
 

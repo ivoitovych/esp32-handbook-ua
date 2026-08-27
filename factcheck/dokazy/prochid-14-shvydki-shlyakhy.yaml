@@ -1,0 +1,49 @@
+# Суцільний прохід — 14-shvydki-shlyakhy.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-14-005: Ви прошиваєте його один раз, далі працюєте з'
+  zbih: Ви\s+прошиваєте\s+його\s+один
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
+  cytata: 'REPL (Python prompt) over UART0 and/or the integrated USB peripheral
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: MicroPython provides interactive console (REPL) for immediate code execution
+- nazva: 'T-14-015: Частина периферії доступна частково.'
+  zbih: Частина\s+периферії\s+доступна\s+частково\.
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
+  cytata: 'The machine module with GPIO, UART, SPI, software I2C, ADC, DAC, PWM, TouchPad,
+    WDT and Timer.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: MicroPython supports specific peripherals but not all hardware features are available
+- nazva: 'T-14-071: **Розвідка заліза** — MicroPython у консолі: чи відповідає'
+  zbih: \*\*Розвідка\s+заліза\*\*\s+—\s+MicroPython
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/docs/reference/repl.rst
+  cytata: 'While typing a command at the REPL, if the line typed so far corresponds to
+
+    the beginning of the name of something, then pressing TAB will show
+
+    possible things that could be entered.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: MicroPython REPL з auto-completion дозволяє дослідити доступні модулі; з машинними
+    модулями можна проверити і2ц адреси та параметри датчиків

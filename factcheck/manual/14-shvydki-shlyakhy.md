@@ -69,7 +69,7 @@
 
 ---
 
-<!-- fc id:T-14-005 sha:46d93393 src:manual/14-shvydki-shlyakhy.md:12 klas:E -->
+<!-- fc id:T-14-005 sha:46d93393 src:manual/14-shvydki-shlyakhy.md:12 klas:A -->
 ### T-14-005 · proza · рядок 12
 
 **Книга каже, дослівно:**
@@ -78,7 +78,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
+- **Дослівно з джерела:**
+  > REPL (Python prompt) over UART0 and/or the integrated USB peripheral
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** MicroPython provides interactive console (REPL) for immediate code execution
+- **Прохід:** prochid-14-shvydki-shlyakhy
 
 ---
 
@@ -223,7 +229,7 @@
 
 ---
 
-<!-- fc id:T-14-015 sha:6efff622 src:manual/14-shvydki-shlyakhy.md:32 klas:E -->
+<!-- fc id:T-14-015 sha:6efff622 src:manual/14-shvydki-shlyakhy.md:32 klas:A -->
 ### T-14-015 · proza · рядок 32
 
 **Книга каже, дослівно:**
@@ -232,7 +238,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/micropython/micropython/master/ports/esp32/README.md
+- **Дослівно з джерела:**
+  > The machine module with GPIO, UART, SPI, software I2C, ADC, DAC, PWM, TouchPad, WDT and Timer.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** MicroPython supports specific peripherals but not all hardware features are available
+- **Прохід:** prochid-14-shvydki-shlyakhy
 
 ---
 
@@ -1019,7 +1031,7 @@
 
 ---
 
-<!-- fc id:T-14-071 sha:cdbeaffd src:manual/14-shvydki-shlyakhy.md:147 klas:F -->
+<!-- fc id:T-14-071 sha:cdbeaffd src:manual/14-shvydki-shlyakhy.md:147 klas:A -->
 ### T-14-071 · proza · рядок 147
 
 **Книга каже, дослівно:**
@@ -1028,7 +1040,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/micropython/micropython/master/docs/reference/repl.rst
+- **Дослівно з джерела:**
+  > While typing a command at the REPL, if the line typed so far corresponds to
+  > the beginning of the name of something, then pressing TAB will show
+  > possible things that could be entered.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** MicroPython REPL з auto-completion дозволяє дослідити доступні модулі; з машинними модулями можна проверити і2ц адреси та параметри датчиків
+- **Прохід:** prochid-14-shvydki-shlyakhy
 
 ---
 

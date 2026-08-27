@@ -45,7 +45,7 @@
 
 ---
 
-<!-- fc id:T-30-004 sha:4f3e0c86 src:manual/30-struktura.md:14 klas:F -->
+<!-- fc id:T-30-004 sha:4f3e0c86 src:manual/30-struktura.md:14 klas:A -->
 ### T-30-004 · proza · рядок 14
 
 **Книга каже, дослівно:**
@@ -54,7 +54,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+- **Дослівно з джерела:**
+  > ``app_main`` function is called from the ``main`` task.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** app_main викликається як звичайна задача FreeRTOS
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -71,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-30-006 sha:b667f384 src:manual/30-struktura.md:19 klas:F -->
+<!-- fc id:T-30-006 sha:b667f384 src:manual/30-struktura.md:19 klas:A -->
 ### T-30-006 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -80,11 +86,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+- **Дослівно з джерела:**
+  > The ``app_main`` function is allowed to return at any point (i.e., before the application terminates).
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** підтверджує, що app_main може завершитися й це нормально
+- **Прохід:** prochid-30-struktura
 
 ---
 
-<!-- fc id:T-30-007 sha:8c045e3f src:manual/30-struktura.md:19 klas:F -->
+<!-- fc id:T-30-007 sha:8c045e3f src:manual/30-struktura.md:19 klas:A -->
 ### T-30-007 · proza · рядок 19
 
 **Книга каже, дослівно:**
@@ -93,7 +105,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+- **Дослівно з джерела:**
+  > This task will self delete when ``app_main`` returns
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** задача app_main зникає й звільняє свій стек
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -265,7 +283,7 @@
 
 ---
 
-<!-- fc id:T-30-016 sha:0f0ef2c2 src:manual/30-struktura.md:46 klas:F -->
+<!-- fc id:T-30-016 sha:0f0ef2c2 src:manual/30-struktura.md:46 klas:A -->
 ### T-30-016 · proza · рядок 46
 
 **Книга каже, дослівно:**
@@ -274,7 +292,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/memory-types.rst
+- **Дослівно з джерела:**
+  > Non-constant static data (.data) and zero-initialized data (.bss) is placed by the linker into Internal SRAM as data memory.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** підтверджує глобальні змінні й static як статична пам'ять
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -330,7 +354,7 @@
 
 ---
 
-<!-- fc id:T-30-021 sha:e8ac56e3 src:manual/30-struktura.md:52 klas:F -->
+<!-- fc id:T-30-021 sha:e8ac56e3 src:manual/30-struktura.md:52 klas:A -->
 ### T-30-021 · proza · рядок 52
 
 **Книга каже, дослівно:**
@@ -339,7 +363,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > For most purposes, the C Standard Library's ``malloc()`` and ``free()`` functions can be used for heap allocation
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** підтверджує, що купа використовує malloc й new
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -356,7 +386,7 @@
 
 ---
 
-<!-- fc id:T-30-023 sha:c6d7d762 src:manual/30-struktura.md:57 klas:E -->
+<!-- fc id:T-30-023 sha:c6d7d762 src:manual/30-struktura.md:57 klas:A -->
 ### T-30-023 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -365,7 +395,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > each RTOS task has its own stack
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документ підтверджує, що кожна задача має власний стек
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -418,7 +454,7 @@
 
 ---
 
-<!-- fc id:T-30-026 sha:f7a5daed src:manual/30-struktura.md:66 klas:E -->
+<!-- fc id:T-30-026 sha:f7a5daed src:manual/30-struktura.md:66 klas:A -->
 ### T-30-026 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -427,11 +463,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > each RTOS task has its own stack
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документ підтверджує, що кожна задача має власний стек
+- **Прохід:** prochid-30-struktura
 
 ---
 
-<!-- fc id:T-30-027 sha:86458de5 src:manual/30-struktura.md:66 klas:E -->
+<!-- fc id:T-30-027 sha:86458de5 src:manual/30-struktura.md:66 klas:A -->
 ### T-30-027 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -440,7 +482,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > each RTOS task has its own stack
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документ підтверджує, що кожна задача має власний стек
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -500,7 +548,7 @@
 
 ---
 
-<!-- fc id:T-30-030 sha:62f76bc8 src:manual/30-struktura.md:75 klas:E -->
+<!-- fc id:T-30-030 sha:62f76bc8 src:manual/30-struktura.md:75 klas:A -->
 ### T-30-030 · proza · рядок 75
 
 **Книга каже, дослівно:**
@@ -509,7 +557,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > each RTOS task has its own stack
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документ підтверджує, що кожна задача має власний стек
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -526,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-30-032 sha:f46728c8 src:manual/30-struktura.md:86 klas:F -->
+<!-- fc id:T-30-032 sha:f46728c8 src:manual/30-struktura.md:86 klas:A -->
 ### T-30-032 · proza · рядок 86
 
 **Книга каже, дослівно:**
@@ -535,7 +589,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/memory-types.rst
+- **Дослівно з джерела:**
+  > Most peripheral DMA controllers (e.g., SPI, sdmmc, etc.) have requirements that sending/receiving buffers should be placed in DRAM and word-aligned. We suggest to place DMA buffers in static variables rather than in the stack.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** великі буфери - не на стек
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -699,7 +759,7 @@
 
 ---
 
-<!-- fc id:T-30-041 sha:bcdbf291 src:manual/30-struktura.md:112 klas:F -->
+<!-- fc id:T-30-041 sha:bcdbf291 src:manual/30-struktura.md:112 klas:A -->
 ### T-30-041 · proza · рядок 112
 
 **Книга каже, дослівно:**
@@ -708,7 +768,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > Because {IDF_TARGET_NAME} uses multiple types of RAM, it also contains multiple heaps with different capabilities.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** купа на ESP32 не однорідна, malloc може повернути NULL
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -790,7 +856,7 @@
 
 ---
 
-<!-- fc id:T-30-047 sha:af79aca0 src:manual/30-struktura.md:129 klas:F -->
+<!-- fc id:T-30-047 sha:af79aca0 src:manual/30-struktura.md:129 klas:A -->
 ### T-30-047 · proza · рядок 129
 
 **Книга каже, дослівно:**
@@ -799,7 +865,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > Use the ``MALLOC_CAP_DMA`` flag to allocate memory which is suitable for use with hardware DMA engines
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** буфер для DMA має бути доступним контролеру, звичайний malloc не придатний
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -1318,7 +1390,7 @@
 
 ---
 
-<!-- fc id:T-30-067 sha:d52f1ea5 src:manual/30-struktura.md:176 klas:F -->
+<!-- fc id:T-30-067 sha:d52f1ea5 src:manual/30-struktura.md:176 klas:A -->
 ### T-30-067 · proza · рядок 176
 
 **Книга каже, дослівно:**
@@ -1327,7 +1399,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/memory-types.rst
+- **Дослівно з джерела:**
+  > This memory can be used interchangeably with :ref:`DRAM`
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** фрагментація - коли вільно 40 КБ, а найбільший блок 2 КБ
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -1432,7 +1510,7 @@
 
 ---
 
-<!-- fc id:T-30-073 sha:a8346dff src:manual/30-struktura.md:197 klas:E -->
+<!-- fc id:T-30-073 sha:a8346dff src:manual/30-struktura.md:197 klas:A -->
 ### T-30-073 · proza · рядок 197
 
 **Книга каже, дослівно:**
@@ -1441,7 +1519,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > IRAM (Instruction RAM) is memory that is connected to the CPU's instruction bus
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документ підтверджує наявність IRAM
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -1510,7 +1594,7 @@
 
 ---
 
-<!-- fc id:T-30-076 sha:274d7cce src:manual/30-struktura.md:207 klas:E -->
+<!-- fc id:T-30-076 sha:274d7cce src:manual/30-struktura.md:207 klas:A -->
 ### T-30-076 · proza · рядок 207
 
 **Книга каже, дослівно:**
@@ -1519,7 +1603,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/memory-types.rst
+- **Дослівно з джерела:**
+  > As IRAM is limited, most of an application's binary code must be placed into IROM instead.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** підтверджує обмеженість IRAM
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -1652,7 +1742,7 @@
 
 ---
 
-<!-- fc id:T-30-085 sha:5bcfe49a src:manual/30-struktura.md:231 klas:E -->
+<!-- fc id:T-30-085 sha:5bcfe49a src:manual/30-struktura.md:231 klas:A -->
 ### T-30-085 · proza · рядок 231
 
 **Книга каже, дослівно:**
@@ -1661,11 +1751,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads and writes
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** підтверджує, що 32-бітне читання й запис атомарні
+- **Прохід:** prochid-30-struktura
 
 ---
 
-<!-- fc id:T-30-086 sha:38e10f93 src:manual/30-struktura.md:231 klas:F -->
+<!-- fc id:T-30-086 sha:38e10f93 src:manual/30-struktura.md:231 klas:A -->
 ### T-30-086 · proza · рядок 231
 
 **Книга каже, дослівно:**
@@ -1674,11 +1770,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads and writes
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** проста передача одного значення через volatile працює
+- **Прохід:** prochid-30-struktura
 
 ---
 
-<!-- fc id:T-30-087 sha:42e5df0c src:manual/30-struktura.md:231 klas:E -->
+<!-- fc id:T-30-087 sha:42e5df0c src:manual/30-struktura.md:231 klas:A -->
 ### T-30-087 · proza · рядок 231
 
 **Книга каже, дослівно:**
@@ -1687,7 +1789,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads and writes, any other type of access will generate a fatal LoadStoreError exception.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** підтверджує, що складніші структури не атомарні
+- **Прохід:** prochid-30-struktura
 
 ---
 
@@ -1954,7 +2062,7 @@
 
 ---
 
-<!-- fc id:T-30-101 sha:21874c85 src:manual/30-struktura.md:269 klas:F -->
+<!-- fc id:T-30-101 sha:21874c85 src:manual/30-struktura.md:269 klas:A -->
 ### T-30-101 · proza · рядок 269
 
 **Книга каже, дослівно:**
@@ -1963,11 +2071,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > For most purposes, the C Standard Library's ``malloc()`` and ``free()`` functions can be used for heap allocation without any special consideration.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** результат malloc треба перевіряти завжди
+- **Прохід:** prochid-30-struktura
 
 ---
 
-<!-- fc id:T-30-102 sha:b09b18e3 src:manual/30-struktura.md:271 klas:F -->
+<!-- fc id:T-30-102 sha:b09b18e3 src:manual/30-struktura.md:271 klas:A -->
 ### T-30-102 · proza · рядок 271
 
 **Книга каже, дослівно:**
@@ -1976,6 +2090,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst
+- **Дослівно з джерела:**
+  > Memory allocated with ``MALLOC_CAP_32BIT`` can **only** be accessed via 32-bit reads and writes
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** volatile не робить операцію атомарною
+- **Прохід:** prochid-30-struktura
 
 ---

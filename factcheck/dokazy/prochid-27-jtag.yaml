@@ -1,0 +1,47 @@
+# Суцільний прохід — 27-jtag.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-27-002: Відлагоджувач показує все: поточне значення будь-якої змінної, вміст'
+  zbih: Відлагоджувач\s+показує\s+все:\s+поточне
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+  cytata: 'figuring out a bug that is caused by two threads, running even simultaneously on
+    two different CPU cores, can take a long time when all you have are printf() statements.
+    A better (and in many cases quicker) way to debug such problems is by using a debugger
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: документація підтверджує що відлагоджувач дає більше інформації ніж логи
+- nazva: 'T-27-044: Коли справді варте: складна помилка з пошкодженням пам''яті,'
+  zbih: Коли\s+справді\s+варте:\s+складна
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+  cytata: 'A better (and in many cases quicker) way to debug such problems is by using a debugger,
+    connected to the processors over a debug port
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: документація показує що відлагоджувач корисний для складних помилок
+- nazva: 'T-27-020: Якщо в проєкті ці піни переналаштовані під щось'
+  zbih: Якщо\s+в\s+проєкті\s+ці
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/tips-and-quirks.rst
+  cytata: 'JTAG communication will likely fail, if configuration of JTAG pins is changed by
+    a user application.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: документ підтверджує, що USB-JTAG перестає працювати при зміні конфігурації пінів

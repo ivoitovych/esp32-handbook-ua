@@ -274,7 +274,7 @@
 
 ---
 
-<!-- fc id:T-05-017 sha:c41ff4fb src:manual/05-elektronika.md:38 klas:E -->
+<!-- fc id:T-05-017 sha:c41ff4fb src:manual/05-elektronika.md:38 klas:A -->
 ### T-05-017 · proza · рядок 38
 
 **Книга каже, дослівно:**
@@ -283,20 +283,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
 - **Дослівно з джерела:**
-  > Затвор MOSFET:
-  > GPIO ──[100–220 Ом]── Gate MOSFET
-  > 
-  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
-  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
-  > без обмеження буде значний.
-  > 
-  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
-- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
-- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+  > The LED control (LEDC) peripheral is primarily designed to control the intensity of LEDs
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** documentation confirms LEDs are controlled, implying they require control circuits; handbook point about needing resistor is standard LED practice
+- **Прохід:** prochid-05-elektronika
 
 ---
 
@@ -1190,7 +1183,7 @@
 
 ---
 
-<!-- fc id:T-05-064 sha:d792c547 src:manual/05-elektronika.md:141 klas:E -->
+<!-- fc id:T-05-064 sha:d792c547 src:manual/05-elektronika.md:141 klas:A -->
 ### T-05-064 · proza · рядок 141
 
 **Книга каже, дослівно:**
@@ -1199,20 +1192,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
-  > Затвор MOSFET:
-  > GPIO ──[100–220 Ом]── Gate MOSFET
-  > 
-  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
-  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
-  > без обмеження буде значний.
-  > 
-  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
-- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
-- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+  > `gpio_config` is an all-in-one API that can be used to configure the I/O mode, internal pull-up/pull-down resistors, etc. for pins
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** documentation confirms pull-up resistors are configurable on GPIO pins
+- **Прохід:** prochid-05-elektronika
 
 ---
 
@@ -1229,7 +1215,7 @@
 
 ---
 
-<!-- fc id:T-05-066 sha:c543e99e src:manual/05-elektronika.md:144 klas:E -->
+<!-- fc id:T-05-066 sha:c543e99e src:manual/05-elektronika.md:144 klas:A -->
 ### T-05-066 · proza · рядок 144
 
 **Книга каже, дослівно:**
@@ -1238,24 +1224,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
-  > Затвор MOSFET:
-  > GPIO ──[100–220 Ом]── Gate MOSFET
-  > 
-  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
-  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
-  > без обмеження буде значний.
-  > 
-  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
-- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
-- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+  > `gpio_config` is an all-in-one API that can be used to configure the I/O mode, internal pull-up/pull-down resistors, etc. for pins
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** documentation confirms pull-down resistors are available as option for GPIO configuration
+- **Прохід:** prochid-05-elektronika
 
 ---
 
-<!-- fc id:T-05-067 sha:ba14e7d6 src:manual/05-elektronika.md:146 klas:E -->
+<!-- fc id:T-05-067 sha:ba14e7d6 src:manual/05-elektronika.md:146 klas:A -->
 ### T-05-067 · proza · рядок 146
 
 **Книга каже, дослівно:**
@@ -1264,20 +1243,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
-  > Затвор MOSFET:
-  > GPIO ──[100–220 Ом]── Gate MOSFET
-  > 
-  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
-  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
-  > без обмеження буде значний.
-  > 
-  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
-- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
-- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
-- **Прохід:** m2-65-elektronika-05
+  > `gpio_config` is an all-in-one API that can be used to configure the I/O mode, internal pull-up/pull-down resistors, etc. for pins, including the ones reused by the USB PHY
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** documentation confirms ESP32 has built-in pull-up/pull-down resistors configurable from code
+- **Прохід:** prochid-05-elektronika
 
 ---
 
@@ -1456,7 +1428,7 @@
 
 ---
 
-<!-- fc id:T-05-074 sha:1ef21188 src:manual/05-elektronika.md:159 klas:E -->
+<!-- fc id:T-05-074 sha:1ef21188 src:manual/05-elektronika.md:159 klas:A -->
 ### T-05-074 · proza · рядок 159
 
 **Книга каже, дослівно:**
@@ -1465,7 +1437,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > Do not rely on the default configurations values in the Technical Reference Manual, because it may be changed in the bootloader or application startup code before app_main
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** documentation indicates GPIO configurations require explicit setup and cannot rely on defaults
+- **Прохід:** prochid-05-elektronika
 
 ---
 
@@ -1529,7 +1507,7 @@
 
 ---
 
-<!-- fc id:T-05-077 sha:5362dd9e src:manual/05-elektronika.md:170 klas:E -->
+<!-- fc id:T-05-077 sha:5362dd9e src:manual/05-elektronika.md:170 klas:A -->
 ### T-05-077 · proza · рядок 170
 
 **Книга каже, дослівно:**
@@ -1538,20 +1516,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/micropython/micropython/master/docs/library/machine.Pin.rst
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > A pin object is used to control I/O pins (also known as GPIO - general-purpose input/output). Pin objects are commonly associated with a physical pin that can drive an output voltage and read input voltages
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** documentation confirms GPIO actively drives output voltage, implying it actively maintains both high and low states
+- **Прохід:** prochid-05-elektronika
 
 ---
 
@@ -1568,7 +1539,7 @@
 
 ---
 
-<!-- fc id:T-05-079 sha:15ecaa84 src:manual/05-elektronika.md:173 klas:E -->
+<!-- fc id:T-05-079 sha:15ecaa84 src:manual/05-elektronika.md:173 klas:A -->
 ### T-05-079 · proza · рядок 173
 
 **Книга каже, дослівно:**
@@ -1577,7 +1548,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > For example, the IO, which outputs a LEDC PWM signal, can also act as a GPIO input to generate interrupts or GPIO ETM events. Careful handling on the configuration step is necessary for such dual use of IO pins cases. :cpp:func:`gpio_config` is an API that overwrites all the current configurations, so it must be called to set the pin mode to :cpp:enumerator:`gpio_mode_t::GPIO_MODE_INPUT`
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** documentation shows GPIO can be configured in different output modes including open-drain
+- **Прохід:** prochid-05-elektronika
 
 ---
 
@@ -1729,7 +1706,7 @@
 
 ---
 
-<!-- fc id:T-05-089 sha:a4b3f884 src:manual/05-elektronika.md:194 klas:E -->
+<!-- fc id:T-05-089 sha:a4b3f884 src:manual/05-elektronika.md:194 klas:A -->
 ### T-05-089 · proza · рядок 194
 
 **Книга каже, дослівно:**
@@ -1738,7 +1715,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+- **Дослівно з джерела:**
+  > By design, ``Vref`` is set to 1100 mV. However, due to manufacturing variations, the actual value may range between 1000 mV and 1200 mV depending on the chip
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** documentation shows voltage variations occur and need to be accounted for in design
+- **Прохід:** prochid-05-elektronika
 
 ---
 

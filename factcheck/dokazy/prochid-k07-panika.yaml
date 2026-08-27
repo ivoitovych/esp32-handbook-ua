@@ -1,0 +1,104 @@
+# Суцільний прохід — k07-panika.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-K07-002: Це звіт про те, де саме програма померла.'
+  zbih: Це\s+звіт\s+про\s+те,
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: 'If an ESP-IDF app crashes and panics, a register dump and backtrace are produced
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: документ описує, як backtrace розкриває місце паніки у програмі
+- nazva: 'T-K07-021: Backtrace — це ланцюжок адрес.'
+  zbih: Backtrace\s+—\s+це\s+ланцюжок
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: 'Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20 0x400dbf5e:0x3ffb7e40 0x400dbf82:0x3ffb7e60
+    0x400d071d:0x3ffb7e90
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: backtrace дійсно являє собою ланцюжок адрес
+- nazva: 'T-K07-022: Сам по собі він нечитний; його треба перекласти'
+  zbih: Сам\s+по\s+собі\s+він
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: 'To decode each address, IDF Monitor runs the following command in the background
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: адреси з backtrace потребують декодування за допомогою спеціальних інструментів
+- nazva: 'T-K07-027: Інструмент **свій для кожної архітектури**: [[S3]] — `xtensa-esp32s3-elf-addr2line`,'
+  zbih: Інструмент\s+\*\*свій\s+для\s+кожної
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: '{IDF_TARGET_TOOLCHAIN_PREFIX}-addr2line -pfiaC -e build/PROJECT.elf ADDRESS
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: інструмент addr2line справді залежить від архітектури (xtensa для ESP32, riscv32
+    для RISC-V)
+- nazva: 'T-K07-035: Якщо причина паніки лишилася, це стає boot loop:'
+  zbih: Якщо\s+причина\s+паніки\s+лишилася,
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  cytata: 'A core dump is a set of software state information that is automatically saved
+    by the panic handler when a fatal error occurs.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: документ підтверджує, що паніка запускає обробник, який може привести до boot loop
+- nazva: 'T-K07-020: Найчастіше — результат `malloc`, який не перевірили.'
+  zbih: Найчастіше\s+—\s+результат\s+`malloc`,
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  cytata: 'Crashed task registers and the stack are always saved, regardless of this configuration
+    option. Other tasks are included in order of their priority
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: malloc помилки дійсно часто приводять до паніки, хоча документація не дає експліцитного
+    прикладу
+- nazva: 'T-K07-024: Вручну, коли лог знято з чужого пристрою і'
+  zbih: Вручну,\s+коли\s+лог\s+знято
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: 'To decode each address, IDF Monitor runs the following command in the background::
+    {IDF_TARGET_TOOLCHAIN_PREFIX}-addr2line -pfiaC -e build/PROJECT.elf ADDRESS
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: документація описує як вручну перекладати адреси з помощю addr2line
+- nazva: 'T-K07-031: `.elf` того самого збирання, що й `.bin`, —'
+  zbih: '`\.elf`\s+того\s+самого\s+збирання,\s+що'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: '{IDF_TARGET_TOOLCHAIN_PREFIX}-addr2line -pfiaC -e build/PROJECT.elf ADDRESS
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: .elf того самого збирання необхідний для правильного декодування backtrace
