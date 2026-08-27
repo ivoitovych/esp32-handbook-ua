@@ -915,3 +915,28 @@
   cytata: MAC address is a unique hardware identifier
   verdykt: pidtverdzheno
   zvidky: H9-p49
+- nazva: T-REG-016
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
+  cytata: Wi-Fi 5 GHz support is available on specific chip models
+  verdykt: pidtverdzheno
+  zvidky: H9-p50
+- nazva: T-Z-026
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+  cytata: Serial communication interface with USB-UART bridge
+  verdykt: pidtverdzheno
+  zvidky: H9-p50
+- nazva: T-Z-044
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: ESP-NOW is a connectionless Wi-Fi communication protocol
+  verdykt: pidtverdzheno
+  zvidky: H9-p50
+- nazva: T-Z-110
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: GPIO pins provide digital input/output functionality
+  verdykt: pidtverdzheno
+  zvidky: H9-p50
+- nazva: T-Z-153
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  cytata: I2C peripheral devices can expand GPIO port capabilities
+  verdykt: pidtverdzheno
+  zvidky: H9-p50
