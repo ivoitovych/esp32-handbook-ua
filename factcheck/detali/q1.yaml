@@ -1,0 +1,34 @@
+- id: T-01-041
+  verdykt: pidtverdzheno
+  fayl: rp2040.pdf
+  cytata: USB 1.1 controller and PHY, with host and device support
+  de: сторінка 10, розділ 1.2 Summary, Key features
+  notatka: Це останній елемент у переліку периферійних модулів. Радіо (wifi/bluetooth) не входить до списку.
+
+- id: T-01-056
+  verdykt: pidtverdzheno
+  fayl: rp2040.pdf
+  cytata: RP2040 is a stateless device, with support for cached execute-in-place from external QSPI memory.
+  de: сторінка 9, розділ 1.2 Summary
+  notatka: Документ описує RP2040 як "stateless device". ОС не передбачена архітектурою мікроконтролера.
+
+- id: T-01-066
+  verdykt: pidtverdzheno
+  fayl: rp2040.pdf
+  cytata: Sleep               0.39           4.5              -               -            -            -            mA
+  de: сторінка 623-624, таблиця 637 "Power Consumption"
+  notatka: Значення споживання енергії в режимі Sleep знайдено у таблиці 637.
+
+- id: T-01-071
+  verdykt: pidtverdzheno
+  fayl: rp2040.pdf
+  cytata: The Real-time Clock (RTC) provides time in human-readable format and can be used to generate interrupts at specific times.
+  de: сторінка 548, розділ 4.8 RTC
+  notatka: Це перший рядок розділу про RTC - Real-time Clock.
+
+- id: T-01-076
+  verdykt: pidtverdzheno
+  fayl: rp2040.pdf
+  cytata: high performance, low cost,
+  de: сторінка 9, розділ 1.2 Summary
+  notatka: Точна фраза з документа, що описує RP2040.

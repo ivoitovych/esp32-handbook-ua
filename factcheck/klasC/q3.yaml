@@ -1,0 +1,27 @@
+- id: CH9102 · Windows — окремий драйвер (не CH340)
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/ch340.pdf, grep -i 'CH9102', 0 влучань; ch340.pdf contains datasheet for CH340 chip only, no mention of CH9102
+
+- id: CH9102 — окрема пастка (схожий на CH340, але інший драйвер)
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/ch340.pdf, grep -i 'CH9102\|driver', 0 релевантних влучань; document discusses CH340 only, no information about CH9102 compatibility or differences
+
+- id: CH9102 — окремий драйвер від CH340 (резюме)
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/ch340.pdf, grep -i 'CH9102\|separate.*driver', 0 влучань; Ch340.pdf datasheet has no section comparing CH9102 to CH340 or discussing separate drivers
+
+- id: K03 CH9102/CH9102F · Windows окремий драйвер
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/ch340.pdf, grep -i 'CH9102\|CH9102F\|Windows.*driver', 0 влучань; datasheet covers only CH340, not CH9102 or CH9102F
+
+- id: DS3231 і BH1750 — джерела недосяжні з цієї мережі
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/bh1750.pdf appears to be circuit schematic, grep -i 'DS3231\|BH1750\|inaccessible\|network', 0 влучань; document does not discuss either DS3231 or BH1750 or network accessibility
+
+- id: Фейковий USB-міст · клони CP2102 і FT232
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/cp2102.pdf, grep -i 'fake\|clone\|counterfeit\|FT232', 0 влучань; CP2102 datasheet contains no discussion of fake chips or FT232 clones
+
+- id: Li-ion і TP4056 — напруги, ємність, захист
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/tp4056.pdf, grep -i 'capacity\|protection\|voltage.*specifications', mentions 4.2V charge voltage only; document is TP4056 charger datasheet, not general Li-ion battery specifications or DW01 protection info

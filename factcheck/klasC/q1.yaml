@@ -1,0 +1,3 @@
+- id: GPIO5 для поплавкового вимикача на ESP32-C3
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/esp32-c3_datasheet_en.pdf, grep -i 'GPIO5', знайдено як I/O/T pin у таблицях, але про поплавковий вимикач не йдеться

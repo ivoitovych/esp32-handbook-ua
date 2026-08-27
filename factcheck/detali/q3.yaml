@@ -1,0 +1,19 @@
+- id: T-E-072
+  verdykt: ne_znayshov
+  dyvyvsya: max31855.pdf, grep -i 'SPI Mode|режим.*0', 0 влучань
+
+- id: T-E-074
+  verdykt: ne_znayshov
+  dyvyvsya: max31855.pdf, grep -i 'Adafruit', 0 влучань
+
+- id: T-Z-026
+  verdykt: ne_znayshov
+  dyvyvsya: ch340.pdf, невмісне — файл має 6 сторінок, запитувалося 11 25 79 83 87 114 180 366 391
+
+- id: T-Z-153
+  verdykt: ne_znayshov
+  dyvyvsya: mcp23017.pdf, невмісне — файл має 42 сторінки, запитувалося 57 76 365 386
+
+- id: T-01-065
+  verdykt: ne_znayshov
+  dyvyvsya: 5df69a15-sleep_modes.rst, grep -i 'STM32|stm', 0 влучань

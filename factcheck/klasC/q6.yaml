@@ -1,0 +1,4 @@
+- id: T-23-023 — Суфікс модуля кодує обсяг флешу й PSRAM
+  verdykt: ne_znayshov
+  dyvyvsya: |
+    dzherela-kesh/56497005-external-ram.rst відкрив; у документі про конфігурацію зовнішної RAM (PSRAM) у ESP-IDF; шуката: T-23-023, Суфікс, naming convention; про номенклатуру модулів не йдеться.
