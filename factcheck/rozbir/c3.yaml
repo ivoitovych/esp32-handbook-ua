@@ -26,8 +26,12 @@
   rid: dzherelo-ye
   shukaty: ESP32 datasheet, розмір флеш-пам'яті
 - id: T-24-023
-  rid: dzherelo-ye
-  shukaty: ESP-IDF, інформація про версію та дату збирання
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF, інформація про версію та дату збирання
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-25-054
   rid: dzherelo-ye
   shukaty: ESP-IDF Programming Guide, поведінка компілятора щодо видалення коду
@@ -44,8 +48,12 @@
   rid: dzherelo-ye
   shukaty: ESP32 datasheet, характеристика піку споживання струму при ввімкненні радіо
 - id: T-26-118
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Technical Reference, значення регістра EXCVADDR
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF Technical Reference, значення регістра EXCVADDR
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-26-036
   rid: ne-tverdzhennya
   chomu: інструкція, метод завантаження логу з іншого пристрою
@@ -53,29 +61,49 @@
   rid: pozyciya
   chomu: авторське спостереження про еволюцію налагодження JTAG
 - id: T-28-057
-  rid: dzherelo-ye
-  shukaty: Oscilloscope Manual, технічна характеристика входу
+  rid: ne-rozibrav
+  bulo-shukaty: Oscilloscope Manual, технічна характеристика входу
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-28-075
   rid: pozyciya
   chomu: совіт використання світлодіода для діагностики
 - id: T-28-025
-  rid: dzherelo-ye
-  shukaty: Multimeter Technical Reference, метод вимірювання статики
+  rid: ne-rozibrav
+  bulo-shukaty: Multimeter Technical Reference, метод вимірювання статики
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-28-053
-  rid: dzherelo-ye
-  shukaty: Oscilloscope Reference Manual, вимірювання форми сигналу
+  rid: ne-rozibrav
+  bulo-shukaty: Oscilloscope Reference Manual, вимірювання форми сигналу
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-29-060
   rid: ne-tverdzhennya
   chomu: посилання на розділ, навігація в текстові
 - id: T-29-090
-  rid: dzherelo-ye
-  shukaty: Debugging Guide, поняття про стабільно відтворюваний збій
+  rid: ne-rozibrav
+  bulo-shukaty: Debugging Guide, поняття про стабільно відтворюваний збій
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-29-013
   rid: pozyciya
   chomu: рекомендація щодо встановлення драйверу USB-мосту
 - id: T-30-042
-  rid: dzherelo-ye
-  shukaty: Memory Management Guide, визначення фрагментації пам'яті
+  rid: ne-rozibrav
+  bulo-shukaty: Memory Management Guide, визначення фрагментації пам'яті
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-30-076
   rid: dzherelo-ye
   shukaty: ESP32 datasheet, характеристика обмеженості IRAM
@@ -83,8 +111,12 @@
   rid: pozyciya
   chomu: рекомендація перевіряти результат malloc
 - id: T-30-035
-  rid: dzherelo-ye
-  shukaty: FreeRTOS API Reference, поведінка функції отримання мінімуму пам'яті
+  rid: ne-rozibrav
+  bulo-shukaty: FreeRTOS API Reference, поведінка функції отримання мінімуму пам'яті
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-31-063
   rid: pozyciya
   chomu: рекомендація щодо довжини ISR
@@ -113,8 +145,12 @@
   rid: dzherelo-ye
   shukaty: ESP32 datasheet, призначення апаратних таймерів
 - id: T-34-058
-  rid: dzherelo-ye
-  shukaty: UART Protocol Reference, можливість контролю посилки та контрольної суми
+  rid: ne-rozibrav
+  bulo-shukaty: UART Protocol Reference, можливість контролю посилки та контрольної суми
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-34-002
   rid: pozyciya
   chomu: авторське судження про простоту UART
@@ -143,14 +179,22 @@
   rid: dzherelo-ye
   shukaty: One-Wire Sensor Reference, датчик температури DS18B20
 - id: T-37-033
-  rid: dzherelo-ye
-  shukaty: Sensor Calibration Guide, процес калібрування датчиків
+  rid: ne-rozibrav
+  bulo-shukaty: Sensor Calibration Guide, процес калібрування датчиків
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-38-069
   rid: pozyciya
   chomu: рекомендація щодо спільної землі в CAN-шині
 - id: T-38-012
-  rid: dzherelo-ye
-  shukaty: CAN Protocol Reference, приклад ідентифікатора повідомлення
+  rid: ne-rozibrav
+  bulo-shukaty: CAN Protocol Reference, приклад ідентифікатора повідомлення
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-38-040
   rid: ne-tverdzhennya
   chomu: рядок коду — приклад синтаксису DLC
@@ -173,8 +217,12 @@
   rid: ne-tverdzhennya
   chomu: рядок таблиці — порівняння методів доступу до пристрою
 - id: T-40-024
-  rid: dzherelo-ye
-  shukaty: REST API Reference Manual, затримки опитування
+  rid: ne-rozibrav
+  bulo-shukaty: REST API Reference Manual, затримки опитування
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-41-053
   rid: pozyciya
   chomu: рекомендація вимикати BLE коли не треба для економії пам'яті
@@ -188,8 +236,12 @@
   rid: dzherelo-ye
   shukaty: Bluetooth GATT Specification, стандартизація BLE UART сервісу
 - id: T-42-049
-  rid: dzherelo-ye
-  shukaty: ESP-NOW Security Reference, вразливість до прослуховування та спуфінгу
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-NOW Security Reference, вразливість до прослуховування та спуфінгу
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-42-068
   rid: pozyciya
   chomu: рекомендація щодо фіксації каналу при використанні ESP-NOW

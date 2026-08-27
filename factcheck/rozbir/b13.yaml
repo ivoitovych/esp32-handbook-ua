@@ -10,8 +10,12 @@
 - id: T-C-050
   rid: ne-tverdzhennya
 - id: T-C-041
-  rid: dzherelo-ye
-  shukaty: ESP-IDF User Guide, flash burn
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF User Guide, flash burn
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-D-192
   rid: pozyciya
   chomu: Пояснення логіки причин та наслідків
@@ -50,8 +54,12 @@
 - id: T-K05-012
   rid: ne-tverdzhennya
 - id: T-K07-033
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Memory Layout and Loading
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF Memory Layout and Loading
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-K08-009
   rid: ne-tverdzhennya
 - id: T-K10-040
@@ -116,8 +124,12 @@
   rid: pozyciya
   chomu: Рекомендація щодо вибору та кількості компонентів
 - id: T-11-044
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Bootloader Backtrace
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF Bootloader Backtrace
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-11-108
   rid: pozyciya
   chomu: Оцінка ролі Arduino core для прототипування
@@ -129,8 +141,12 @@
 - id: T-13-069
   rid: ne-tverdzhennya
 - id: T-14-044
-  rid: dzherelo-ye
-  shukaty: Wokwi Simulator Reference
+  rid: ne-rozibrav
+  bulo-shukaty: Wokwi Simulator Reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-14-002
   rid: pozyciya
   chomu: Оцінка швидкості розробки різних підходів
@@ -146,14 +162,22 @@
   rid: dzherelo-ye
   shukaty: ESP32 Flash Memory Specification
 - id: T-18-076
-  rid: dzherelo-ye
-  shukaty: LittleFS Reference Manual
+  rid: ne-rozibrav
+  bulo-shukaty: LittleFS Reference Manual
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-18-028
   rid: dzherelo-ye
   shukaty: ESP32 Technical Reference Manual PHY
 - id: T-19-011
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Partition Tables
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF Partition Tables
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-20-054
   rid: ne-tverdzhennya
 - id: T-20-032

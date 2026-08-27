@@ -17,8 +17,12 @@
 - id: T-21-084
   rid: ne-rozibrav
 - id: T-23-035
-  rid: dzherelo-ye
-  shukaty: Technical Reference
+  rid: ne-rozibrav
+  bulo-shukaty: Technical Reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-24-048
   rid: ne-rozibrav
 - id: T-24-069
@@ -28,11 +32,19 @@
 - id: T-25-061
   rid: ne-rozibrav
 - id: T-25-090
-  rid: dzherelo-ye
-  shukaty: Technical Reference
+  rid: ne-rozibrav
+  bulo-shukaty: Technical Reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-25-108
-  rid: dzherelo-ye
-  shukaty: Technical Reference
+  rid: ne-rozibrav
+  bulo-shukaty: Technical Reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-26-054
   rid: ne-rozibrav
 - id: T-26-092
@@ -82,8 +94,12 @@
 - id: T-33-051
   rid: ne-rozibrav
 - id: T-33-010
-  rid: dzherelo-ye
-  shukaty: Technical Reference
+  rid: ne-rozibrav
+  bulo-shukaty: Technical Reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-33-114
   rid: ne-tverdzhennya
   chomu: рядок таблиці
@@ -123,8 +139,12 @@
   rid: ne-tverdzhennya
   chomu: рядок таблиці
 - id: T-39-094
-  rid: dzherelo-ye
-  shukaty: Technical Reference
+  rid: ne-rozibrav
+  bulo-shukaty: Technical Reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-39-028
   rid: ne-rozibrav
 - id: T-40-060

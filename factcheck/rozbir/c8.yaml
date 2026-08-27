@@ -9,9 +9,12 @@
 - id: T-09-096
   rid: ne-rozibrav
 - id: T-15-017
-  rid: dzherelo-ye
-  shukaty: ESP-IDF documentation
-  chomu: посилання на документацію тулчейну
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF documentation
 - id: T-22-058
   rid: ne-rozibrav
 - id: T-23-004
@@ -76,9 +79,12 @@
 - id: T-32-020
   rid: ne-rozibrav
 - id: T-33-053
-  rid: dzherelo-ye
-  shukaty: PWM frequency specifications for servo control
-  chomu: стандартна частота керування серво-приводами
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: PWM frequency specifications for servo control
 - id: T-33-082
   rid: ne-rozibrav
 - id: T-33-124

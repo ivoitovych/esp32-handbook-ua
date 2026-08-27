@@ -1,258 +1,199 @@
 - id: T-A-100
   rid: ne-tverdzhennya
   chomu: рядок індексу — пін-ауту
-
 - id: T-A-076
   rid: pozyciya
   chomu: порада про перевірку перед розводкою; мультивибір модуля це суджен­ня автора
-
 - id: T-B-214
   rid: ne-tverdzhennya
   chomu: навігаційне посилання на розділ
-
 - id: T-B-261
   rid: ne-tverdzhennya
   chomu: навігаційне посилання на розділ
-
 - id: T-B-091
   rid: ne-tverdzhennya
   chomu: навігаційне посилання на розділ
-
 - id: T-C-080
   rid: ne-tverdzhennya
   chomu: команда й опція з навігацією на описи
-
 - id: T-D-109
   rid: ne-tverdzhennya
   chomu: методологічна примітка про дослівність кода
-
 - id: T-D-062
   rid: pozyciya
   chomu: порада про лікування способом зняття обв'язки; це судження автора
-
 - id: T-E-020
   rid: ne-tverdzhennya
   chomu: рядок індексу — посилання на бібліотеку
-
 - id: T-E-003
   rid: ne-rozibrav
-
 - id: T-G-088
   rid: ne-tverdzhennya
   chomu: рядок глосарія — таблиця термінів
-
 - id: T-G-127
   rid: ne-tverdzhennya
   chomu: рядок глосарія — таблиця термінів
-
 - id: T-G-016
   rid: ne-tverdzhennya
   chomu: рядок глосарія — таблиця термінів
-
 - id: T-G-056
   rid: ne-tverdzhennya
   chomu: рядок глосарія — таблиця термінів
-
 - id: T-H-012
   rid: dzherelo-ye
   shukaty: ESP32 Technical Reference Manual, Peripheral details
   chomu: посилання на документ для пояснення поведінки периферії
-
 - id: T-Z-059
   rid: ne-tverdzhennya
   chomu: рядок індексу — посилання на сторінки
-
 - id: T-Z-144
   rid: ne-tverdzhennya
   chomu: рядок індексу — посилання на сторінки
-
 - id: T-COM-047
   rid: pozyciya
   chomu: оцінка правильного вибору напруги; це судження автора про доцільність
-
 - id: T-REG-030
   rid: ne-rozibrav
-
 - id: T-K01-020
   rid: ne-rozibrav
-
 - id: T-K03-003
   rid: pozyciya
   chomu: рекомендація способу перевірки; це авторська пропозиція тестування
-
 - id: T-K05-038
   rid: pozyciya
   chomu: авторська порада про порядок дій — до чого робити, перш ніж те
-
 - id: T-K08-023
   rid: ne-tverdzhennya
   chomu: рядок індексу з посиланням на причину
-
 - id: T-K09-014
   rid: ne-tverdzhennya
   chomu: навігаційне посилання на додаток
-
 - id: T-K11-020
   rid: pozyciya
   chomu: авторське пояснення помилкової інтерпретації пін-ауту; це судження про значення
-
 - id: T-K13-019
   rid: pozyciya
   chomu: авторське вказання на важливість; це судження про релевантність
-
 - id: T-K14-035
   rid: ne-tverdzhennya
   chomu: заголовок процедури — вводна до кроків що слідують
-
 - id: T-K15-047
   rid: pozyciya
   chomu: авторська рекомендація про порядок введення в вироб; це судження про розумний крок
-
 - id: T-00-090
   rid: pozyciya
   chomu: авторська оцінка вартості; це судження про порівняльну суму витрат
-
 - id: T-00-045
   rid: ne-tverdzhennya
   chomu: пояснення методологічної властивості механічної звірки
-
 - id: T-01-012
   rid: ne-tverdzhennya
   chomu: визначення / характеристика об'єкта
-
 - id: T-02-093
   rid: ne-rozibrav
-
 - id: T-02-148
   rid: pozyciya
   chomu: типова відповідь як судження автора; це рекомендація вибору за сценарієм
-
 - id: T-02-085
   rid: ne-rozibrav
-
 - id: T-03-022
   rid: dzherelo-ye
   shukaty: ESP32 Datasheet, Memory section — IRAM (Instruction RAM)
   chomu: технічна характеристика пам'яті — призначення IRAM
-
 - id: T-04-006
   rid: ne-rozibrav
-
 - id: T-04-058
   rid: ne-rozibrav
-
 - id: T-05-090
   rid: dzherelo-ye
   shukaty: ESP32 Datasheet, Power Consumption — стрибок споживання при вмиканні передавача
   chomu: числова характеристика часової шкали переходу
-
 - id: T-05-027
   rid: pozyciya
   chomu: авторське судження про те, що не є робочим орієнтиром; це оцінка практичності
-
 - id: T-06-102
   rid: pozyciya
   chomu: авторська максима про вимірювання; це судження про розсуджувальність
-
 - id: T-06-003
   rid: ne-tverdzhennya
   chomu: пояснення причини складності; це методологічна примітка
-
 - id: T-07-118
   rid: pozyciya
   chomu: авторська оцінка доцільності та видів застосування; це судження про придатність
-
 - id: T-08-082
   rid: pozyciya
   chomu: авторське пояснення причини вибору модуля; це судження про доцільність
-
 - id: T-08-056
   rid: pozyciya
   chomu: авторська оцінка якості; це судження про недобір продукту
-
 - id: T-09-099
   rid: ne-rozibrav
-
 - id: T-09-051
   rid: ne-rozibrav
-
 - id: T-10-015
   rid: pozyciya
   chomu: авторська оцінка флюсу; це судження про трансформацію процесу
-
 - id: T-11-008
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Documentation, Getting Started — Toolchain installation
-  chomu: технічне визначення компонентів тулчейну
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF Documentation, Getting Started — Toolchain installation
 - id: T-11-003
   rid: ne-rozibrav
-
 - id: T-12-053
   rid: ne-tverdzhennya
   chomu: рядок таблиці - порівняння варіантів
-
 - id: T-13-039
-  rid: dzherelo-ye
-  shukaty: PlatformIO User Guide, build_flags parameter
-  chomu: технічне визначення параметра компіляції
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: PlatformIO User Guide, build_flags parameter
 - id: T-13-010
   rid: ne-tverdzhennya
   chomu: методологічна примітка про застарівання документа
-
 - id: T-14-052
   rid: ne-tverdzhennya
   chomu: рядок таблиці - навколишні посилання
-
 - id: T-14-003
   rid: ne-tverdzhennya
   chomu: описання мети розділу - оглядова інформація
-
 - id: T-15-021
   rid: pozyciya
   chomu: авторське вказання на важливість; це судження про релевантність для сценарію
-
 - id: T-16-061
   rid: ne-tverdzhennya
   chomu: методологічна примітка про глибину тексту
-
 - id: T-17-005
   rid: ne-tverdzhennya
   chomu: вводна до процедури діагностики
-
 - id: T-17-152
   rid: pozyciya
   chomu: авторський обхід проблеми; це рекомендація при невдачі
-
 - id: T-18-005
   rid: dzherelo-ye
   shukaty: ESP32 Technical Reference Manual, Partition Table CSV format
   chomu: технічна специфікація структури записів таблиці розділів
-
 - id: T-18-047
   rid: pozyciya
   chomu: авторське судження про необхідність CSV; це оцінка типової потреби
-
 - id: T-19-096
   rid: pozyciya
   chomu: авторське заспокоєння; це судження про наслідки обриву
-
 - id: T-20-068
   rid: ne-tverdzhennya
   chomu: процедурна вимога-умова до дії
-
 - id: T-21-043
   rid: ne-tverdzhennya
   chomu: вводна до опису правильної схеми
-
 - id: T-21-087
   rid: pozyciya
   chomu: авторська оцінка економічності; це судження про вартість варіанту
-
 - id: T-22-062
   rid: ne-rozibrav
-
 - id: T-22-042
   rid: pozyciya
   chomu: авторське попередження про незворотність; це судження про відновлюваність

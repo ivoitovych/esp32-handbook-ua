@@ -1,260 +1,192 @@
 - id: T-A-108
   rid: pozyciya
   chomu: авторська оцінка прийнятої практики в прикладах
-
 - id: T-A-079
   rid: ne-tverdzhennya
   chomu: навігація — посилання на розділ про strapping
-
 - id: T-B-220
   rid: ne-tverdzhennya
   chomu: покажчик симптому з посиланням на розділ
-
 - id: T-B-266
   rid: pozyciya
   chomu: авторська позиція про порядок дій
-
 - id: T-B-120
   rid: ne-tverdzhennya
   chomu: покажчик симптому з вказівкою причини
-
 - id: T-C-082
   rid: ne-tverdzhennya
   chomu: навігація — команда і клавіші виходу
-
 - id: T-D-025
   rid: ne-tverdzhennya
   chomu: навігація — посилання на розділ
-
 - id: T-D-065
   rid: dzherelo-ye
   shukaty: ESP32 classic datasheet — біти регістра
-
 - id: T-E-026
   rid: ne-tverdzhennya
   chomu: покажчик — посилання на бібліотеку
-
 - id: T-E-109
   rid: ne-tverdzhennya
   chomu: покажчик — назва функції DS2431 з вказівкою на EEPROM
-
-
 - id: T-G-090
   rid: ne-tverdzhennya
   chomu: рядок глосарію — переклад терміна
-
 - id: T-G-129
   rid: ne-tverdzhennya
   chomu: рядок глосарію — переклад терміна
-
 - id: T-G-019
   rid: ne-tverdzhennya
   chomu: рядок глосарію — переклад термін
-
 - id: T-G-058
   rid: ne-tverdzhennya
   chomu: рядок глосарію — переклад терміна
-
 - id: T-H-015
   rid: dzherelo-ye
   shukaty: ESP32 Hardware Design Guidelines — вимоги до розводки
-
 - id: T-Z-061
   rid: ne-tverdzhennya
   chomu: рядок покажчика помилок
-
 - id: T-Z-149
   rid: ne-tverdzhennya
   chomu: рядок покажчика флагів пам'яті
-
 - id: T-COM-052
   rid: ne-tverdzhennya
   chomu: покажчик компонента з вказівкою на LoRa
-
 - id: T-REG-031
   rid: ne-rozibrav
-
 - id: T-K01-001
   rid: pozyciya
   chomu: авторська позиція як розпочати тріаж
-
-
 - id: T-K03-005
   rid: ne-tverdzhennya
   chomu: питання тріажу
-
 - id: T-K05-003
   rid: ne-tverdzhennya
   chomu: шапка таблиці
-
 - id: T-K08-027
   rid: ne-tverdzhennya
   chomu: покажчик рішення
-
 - id: T-K09-001
   rid: ne-tverdzhennya
   chomu: навігація на додаток
-
 - id: T-K11-022
   rid: pozyciya
   chomu: авторське правило/рекомендація
-
 - id: T-K13-001
   rid: pozyciya
   chomu: авторське спостереження про типові проблеми
-
 - id: T-K14-037
   rid: ne-tverdzhennya
   chomu: питання тріажу з відповіддю
-
 - id: T-00-048
   rid: pozyciya
   chomu: авторське припущення про читача
-
 - id: T-00-010
   rid: pozyciya
   chomu: авторська оцінка цілей книги
-
 - id: T-01-078
   rid: pozyciya
   chomu: авторське порівняння платформ
-
-
 - id: T-01-002
   rid: dzherelo-ye
   shukaty: ESP32 datasheet — характеристики процесора, Wi-Fi, ціна
-
 - id: T-02-095
   rid: ne-rozibrav
-
 - id: T-02-009
   rid: ne-tverdzhennya
   chomu: правило форматування документа
-
 - id: T-02-090
   rid: dzherelo-ye
   shukaty: ESP32 datasheet — обмеження DRAM на PSRAM, камера, TLS
-
 - id: T-03-024
   rid: ne-tverdzhennya
   chomu: визначення терміна DRAM
-
 - id: T-04-135
   rid: pozyciya
   chomu: авторське спостереження про масштабування проєктів
-
 - id: T-04-060
   rid: dzherelo-ye
   shukaty: ESP32 datasheet — можливість читання накопичених значень без переривань
-
 - id: T-05-094
   rid: ne-rozibrav
-
 - id: T-05-031
   rid: pozyciya
   chomu: авторське спостереження про вибір напрямку світлодіода
-
 - id: T-06-012
   rid: dzherelo-ye
   shukaty: ESP32 datasheet — схема живлення, стабілізатор
-
-
 - id: T-06-034
   rid: dzherelo-ye
   shukaty: ESP32 datasheet — детектор зниження напруги
-
 - id: T-07-122
   rid: pozyciya
   chomu: авторська архітектурна рекомендація
-
 - id: T-08-084
   rid: pozyciya
   chomu: авторське судження про економічну доцільність
-
 - id: T-09-057
   rid: ne-tverdzhennya
   chomu: відповідь у тріажі
-
 - id: T-09-101
   rid: ne-rozibrav
-
 - id: T-09-053
   rid: ne-rozibrav
-
 - id: T-10-017
   rid: pozyciya
   chomu: авторське судження про важливість інструмента
-
 - id: T-11-067
   rid: ne-tverdzhennya
   chomu: заголовок для прикладу коду
-
 - id: T-11-017
   rid: ne-tverdzhennya
   chomu: команда, не твердження
-
 - id: T-12-055
   rid: ne-tverdzhennya
   chomu: рядок таблиці порівняння фреймворків
-
-
 - id: T-13-041
   rid: ne-tverdzhennya
   chomu: визначення параметра конфігурації
-
 - id: T-13-001
   rid: ne-tverdzhennya
   chomu: визначення інструмента PlatformIO
-
 - id: T-14-054
   rid: ne-tverdzhennya
   chomu: порівняння в таблиці фреймворків
-
 - id: T-14-026
   rid: pozyciya
   chomu: авторське судження про обмеженість YAML для складної логіки
-
 - id: T-15-024
   rid: pozyciya
   chomu: авторська методологія розробки прототипу
-
 - id: T-16-068
   rid: pozyciya
   chomu: авторське описання мети процесу завантаження
-
 - id: T-17-062
   rid: ne-rozibrav
-
 - id: T-17-155
   rid: ne-rozibrav
-
 - id: T-18-089
   rid: ne-rozibrav
-
 - id: T-19-052
   rid: ne-tverdzhennya
   chomu: заголовок для прикладу коду
-
-
 - id: T-19-014
-  rid: dzherelo-ye
-  shukaty: ESP-IDF документація OTA — поведінка запису в ota_1
-
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF документація OTA — поведінка запису в ota_1
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-20-071
   rid: pozyciya
   chomu: авторський вердикт про неможливість відновлення
-
 - id: T-21-045
   rid: ne-rozibrav
-
 - id: T-21-089
   rid: ne-rozibrav
-
 - id: T-22-064
   rid: pozyciya
   chomu: авторське судження про умови безпеки резервної копії
-
 - id: T-23-005
   rid: ne-tverdzhennya
   chomu: навігація — порядок розділів в процесі тріажу
-

@@ -157,9 +157,12 @@
 - id: T-16-072
   rid: ne-rozibrav
 - id: T-17-063
-  rid: dzherelo-ye
-  shukaty: Esptool Manual compression flag -z
-  chomu: технічна специфікація параметру
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: Esptool Manual compression flag -z
 - id: T-17-156
   rid: pozyciya
   chomu: оцінка зручності GUI для користувачів

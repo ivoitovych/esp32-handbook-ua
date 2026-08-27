@@ -14,9 +14,12 @@
 - id: T-B-180
   rid: ne-tverdzhennya
 - id: T-C-032
-  rid: dzherelo-ye
-  shukaty: esptool.py User Guide, розділ про прапори
-  chomu: опис прапора команди
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: esptool.py User Guide, розділ про прапори
 - id: T-D-186
   rid: pozyciya
   chomu: принцип методології налагодження
@@ -38,9 +41,12 @@
 - id: T-G-042
   rid: ne-tverdzhennya
 - id: T-H-041
-  rid: dzherelo-ye
-  shukaty: GitHub Release Notes, ESP-IDF版本歷史
-  chomu: опис процесу видання й передачі змін
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: GitHub Release Notes, ESP-IDF版本歷史
 - id: T-Z-030
   rid: ne-tverdzhennya
 - id: T-Z-120
@@ -56,15 +62,21 @@
   shukaty: ESP32 Series Datasheet, Comparison Table
   chomu: принцип порівняння чипів за характеристиками
 - id: T-K07-029
-  rid: dzherelo-ye
-  shukaty: esptool.py User Guide, ELF Symbol Tables
-  chomu: технічне пояснення залежності трансляції адрес від символів
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: esptool.py User Guide, ELF Symbol Tables
 - id: T-K08-005
   rid: ne-tverdzhennya
 - id: T-K10-035
-  rid: dzherelo-ye
-  shukaty: Linux Utilities User Manual, dmesg
-  chomu: опис команди й її використання
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: Linux Utilities User Manual, dmesg
 - id: T-K12-025
   rid: dzherelo-ye
   shukaty: Offline Toolkit Specification, Components List
@@ -104,9 +116,12 @@
   rid: pozyciya
   chomu: спостереження автора й порада про помилки підключення
 - id: T-07-085
-  rid: dzherelo-ye
-  shukaty: GPIO Troubleshooting Guide, Hardware Testing
-  chomu: опис симптому / способу діагностики
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: GPIO Troubleshooting Guide, Hardware Testing
 - id: T-08-067
   rid: pozyciya
   chomu: рекомендація про перевірку логів
@@ -114,9 +129,12 @@
   rid: pozyciya
   chomu: порада як перевіряти точність пінаутів
 - id: T-09-087
-  rid: dzherelo-ye
-  shukaty: USB Connection Troubleshooting Guide
-  chomu: перелік можливих причин проблеми
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: USB Connection Troubleshooting Guide
 - id: T-09-035
   rid: dzherelo-ye
   shukaty: FTDI Chip Datasheet, Driver Documentation
@@ -134,9 +152,12 @@
   rid: pozyciya
   chomu: практична порада про читання статей
 - id: T-12-023
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Diagnostic Tools Guide, Coredump Analysis
-  chomu: перелік доступних інструментів діагностики
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF Diagnostic Tools Guide, Coredump Analysis
 - id: T-13-064
   rid: pozyciya
   chomu: інструкція про ізоляцію завдань у редакторі

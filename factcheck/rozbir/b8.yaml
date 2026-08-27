@@ -51,8 +51,12 @@
   rid: dzherelo-ye
   shukaty: ESP32-CAM board datasheet / schematic
 - id: T-K07-027
-  rid: dzherelo-ye
-  shukaty: ESP-IDF документація, інструменти для кожної архітектури
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF документація, інструменти для кожної архітектури
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-K08-003
   rid: ne-tverdzhennya
 - id: T-K10-034

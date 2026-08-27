@@ -1,273 +1,217 @@
 - id: T-A-024
   rid: ne-tverdzhennya
   chomu: рядок покажчика
-
 - id: T-B-188
   rid: ne-tverdzhennya
   chomu: рядок покажчика симптомів
-
 - id: T-B-239
   rid: ne-tverdzhennya
   chomu: рядок покажчика
-
 - id: T-B-060
   rid: ne-tverdzhennya
   chomu: рядок покажчика
-
 - id: T-B-169
   rid: ne-tverdzhennya
   chomu: рядок покажчика симптомів
-
 - id: T-C-100
   rid: ne-tverdzhennya
   chomu: команда, не твердження
-
 - id: T-D-163
   rid: pozyciya
   chomu: автор висловлює розпізнавання, що діагностика не є смертельною
-
 - id: T-E-128
   rid: ne-tverdzhennya
   chomu: рядок покажчика
-
 - id: T-E-081
   rid: ne-tverdzhennya
   chomu: рядок покажчика
-
 - id: T-F-009
   rid: pozyciya
   chomu: автор висловлює спостереження про поширену помилку
-
 - id: T-G-105
   rid: ne-tverdzhennya
   chomu: рядок глосарія
-
 - id: T-G-143
   rid: ne-tverdzhennya
   chomu: рядок глосарія
-
 - id: T-G-032
   rid: ne-tverdzhennya
   chomu: рядок глосарія
-
 - id: T-G-072
   rid: ne-tverdzhennya
   chomu: рядок глосарія
-
 - id: T-H-032
   rid: pozyciya
   chomu: автор дає пораду, коли звертатися до Issues репозиторію
-
 - id: T-Z-010
   rid: ne-tverdzhennya
   chomu: рядок покажчика
-
 - id: T-COM-092
   rid: pozyciya
   chomu: автор дає пораду щодо запасання датчиків
-
 - id: T-REG-006
   rid: pozyciya
   chomu: авторська позиція щодо визначення радіопередавача
-
 - id: T-UA--016
   rid: pozyciya
   chomu: автор позиціонує де дешеве нормальне
-
 - id: T-K01-043
   rid: ne-tverdzhennya
   chomu: рядок таблиці триажу
-
 - id: T-K03-028
   rid: dzherelo-ye
   shukaty: USB specification
   chomu: технічна характеристика портів
-
 - id: T-K06-044
   rid: pozyciya
   chomu: автор діагностичне спостереження про швидкість
-
 - id: T-K08-049
   rid: pozyciya
   chomu: автор висловлює пораду про пріоритет живлення та спостереження про причини
-
 - id: T-K09-003
   rid: ne-tverdzhennya
   chomu: шапка таблиці
-
 - id: T-K12-001
   rid: ne-tverdzhennya
   chomu: навігація, посилання на інший розділ
-
 - id: T-K13-038
   rid: ne-tverdzhennya
   chomu: шапка таблиці
-
 - id: T-K15-019
   rid: ne-tverdzhennya
   chomu: рядок чек-листа
-
 - id: T-00-066
   rid: ne-tverdzhennya
   chomu: навігаційне твердження про структуру
-
 - id: T-00-024
   rid: ne-tverdzhennya
   chomu: рядок таблиці класифікацій
-
 - id: T-01-095
   rid: ne-tverdzhennya
   chomu: навігаційне посилання
-
 - id: T-01-033
   rid: pozyciya
   chomu: авторське характеризування особливостей споживання ESP32
-
 - id: T-02-116
   rid: pozyciya
   chomu: автор висловлює аргумент щодо вибору чипа
-
 - id: T-02-025
   rid: ne-tverdzhennya
   chomu: рядок таблиці характеристик
-
 - id: T-03-065
   rid: pozyciya
   chomu: автор дає пораду щодо коли братися за складний код
-
 - id: T-03-046
   rid: pozyciya
   chomu: авторське уточнення про область застосування
-
 - id: T-04-019
   rid: ne-tverdzhennya
   chomu: шапка таблиці
-
 - id: T-05-061
   rid: dzherelo-ye
   shukaty: ESP32 ADC datasheet
   chomu: технічна характеристика АЦП
-
 - id: T-05-116
   rid: dzherelo-ye
   shukaty: IEC 61000-4-2 ESD standard
   chomu: фізичне визначення явища
-
 - id: T-06-060
   rid: pozyciya
   chomu: авторське описання стану
-
 - id: T-06-121
   rid: pozyciya
   chomu: автор висловлює позицію про правильність вибору
-
 - id: T-07-065
   rid: dzherelo-ye
   shukaty: ESP32 datasheet
   chomu: технічне обмеження чипа
-
 - id: T-07-035
   rid: pozyciya
   chomu: авторське спостереження про практику діагностики
-
 - id: T-08-027
   rid: dzherelo-ye
   shukaty: ESP32 reference design schematic
   chomu: конкретна схема кола авторесету
-
 - id: T-09-073
   rid: pozyciya
   chomu: автор висловлює спостереження про поширену практику
-
 - id: T-09-002
   rid: pozyciya
   chomu: авторське спостереження про складність завдання
-
 - id: T-10-053
   rid: pozyciya
   chomu: автор дає практичну пораду
-
 - id: T-10-032
   rid: ne-tverdzhennya
   chomu: навігаційне посилання
-
 - id: T-11-093
-  rid: dzherelo-ye
-  shukaty: ESP-IDF VS Code extension manual
-  chomu: функціональне описання розширення
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF VS Code extension manual
 - id: T-11-035
   rid: ne-tverdzhennya
   chomu: рядок конфігураційної таблиці
-
 - id: T-12-012
-  rid: dzherelo-ye
-  shukaty: ESP-IDF FreeRTOS scheduler documentation
-  chomu: технічна характеристика планувальника
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF FreeRTOS scheduler documentation
 - id: T-13-056
   rid: pozyciya
   chomu: авторське спостереження з застереженнями
-
 - id: T-13-028
   rid: ne-tverdzhennya
   chomu: навігаційне посилання на розбір
-
 - id: T-14-071
   rid: pozyciya
   chomu: авторська методика розвідки
-
 - id: T-15-060
   rid: ne-tverdzhennya
   chomu: інструкція по організації файлів
-
 - id: T-15-039
   rid: pozyciya
   chomu: авторське судження про цінність вправи
-
 - id: T-16-011
   rid: dzherelo-ye
   shukaty: ESP32 bootloader specification
   chomu: технічне описання процесу завантаження
-
 - id: T-17-093
   rid: pozyciya
   chomu: авторське спостереження про зручність передачі
-
 - id: T-18-062
   rid: dzherelo-ye
   shukaty: ESP32-IDF partition table specification
   chomu: технічна вимога до організації сховища файлів
-
 - id: T-18-108
-  rid: dzherelo-ye
-  shukaty: ESP-IDF OTA manual
-  chomu: технічна особливість перепрограмування розділів
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF OTA manual
 - id: T-19-074
   rid: pozyciya
   chomu: авторська рекомендація про послідовність вивчення
-
 - id: T-19-003
   rid: pozyciya
   chomu: авторське характеризування функції OTA
-
 - id: T-20-012
   rid: pozyciya
   chomu: авторська діагностика причин проблеми
-
 - id: T-21-066
   rid: ne-tverdzhennya
   chomu: рядок покажчика версій
-
 - id: T-21-023
   rid: ne-tverdzhennya
   chomu: навігаційне посилання на код
-
 - id: T-22-015
   rid: pozyciya
   chomu: авторська рекомендація про фотографування
-
 - id: T-23-074
   rid: pozyciya
   chomu: авторська рекомендація методики тестування пінів

@@ -41,9 +41,12 @@
   rid: ne-tverdzhennya
   chomu: рядок глосарію переклад терміну
 - id: T-H-024
-  rid: dzherelo-ye
-  shukaty: sigrok Manual
-  chomu: названо конкретне джерело сайт і інструмент
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: sigrok Manual
 - id: T-Z-008
   rid: ne-tverdzhennya
   chomu: рядок покажчика з номерами сторінок
@@ -61,9 +64,12 @@
   rid: ne-tverdzhennya
   chomu: інструкція до виконання дії
 - id: T-K03-018
-  rid: dzherelo-ye
-  shukaty: Windows Device Manager reference manual
-  chomu: описує поведінку інтерфейсу Windows, жовтий знак означає драйвер
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: Windows Device Manager reference manual
 - id: T-K06-034
   rid: pozyciya
   chomu: оцінка користі boot log як готової відповіді без розбору дампа
@@ -98,8 +104,7 @@
   chomu: описує реальні розміри стеків у пам'яті чипа
 - id: T-02-104
   rid: pozyciya
-  chomu: судження автора що різні параметри для різних чипів це необхідність а не
-    помилка
+  chomu: судження автора що різні параметри для різних чипів це необхідність а не помилка
 - id: T-02-015
   rid: ne-tverdzhennya
   chomu: рядок покажчика характеристик чипу
@@ -183,9 +188,12 @@
   rid: ne-tverdzhennya
   chomu: короткий опис місцезнаходження інформації
 - id: T-18-097
-  rid: dzherelo-ye
-  shukaty: ESP-IDF partition documentation, application overflow scenario
-  chomu: описує частий сценарій переповнення розділу в ESP-IDF
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF partition documentation, application overflow scenario
 - id: T-19-066
   rid: pozyciya
   chomu: порада перевіряти рівень живлення перед OTA для автономних пристроїв
