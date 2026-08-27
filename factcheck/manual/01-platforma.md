@@ -708,7 +708,7 @@
 
 ---
 
-<!-- fc id:T-01-045 sha:40c8ea93 src:manual/01-platforma.md:91 klas:C -->
+<!-- fc id:T-01-045 sha:40c8ea93 src:manual/01-platforma.md:91 klas:B -->
 ### T-01-045 · komirka · рядок 91
 
 **Книга каже, дослівно:**
@@ -717,11 +717,23 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip), лінійка STM32 (ST)
-- **Що шукати в джерелі:** RP2040: максимальна тактова частота 133 МГц і обсяг SRAM 264 КБ; ATmega328P: 16 МГц і 2 КБ SRAM; STM32: нижня і верхня межі частот у лінійці (від F0 до H7).
-- **Нотатка:** Таблиця розділу 01 порівнює ESP32 з чужими платформами, і числа в ній — чужі. Помилка тут не зіпсує плату, але підриває довіру до решти, тож група лишається в наряді.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** STMicroelectronics, сторінка лінійки STM32F100 Value line — https://www.st.com/en/microcontrollers-microprocessors/stm32f100-value-line.html (нижня межа); сторінка STM32 High Performance MCUs — https://www.st.com/en/microcontrollers-microprocessors/stm32-high-performance-mcus.html (верхня)
+- **Дослівно з джерела:**
+  > STM32F100 Value line:
+  > "Based on the Arm® Cortex®-M3 core running at up to 24 MHz, the STM32
+  >  Value line offers an excellent cost-performance-…"
+  > 
+  > STM32 High Performance MCUs:
+  > "The STM32H7RS is a bootflash-based MCU powered by a Cortex®-M7 core
+  >  running up to 600 MHz, with 64 KB of user flash and 620 KB of
+  >  flexible SRAM."
+- **Спосіб і дата:** Chrome із цієї машини, st.com, 2026-08-26 (curl отримує тайм-аут через відбиток TLS; Chrome проходить)
+- **Нотатка:** **Нижня межа збігається дослівно:** 24 МГц — це STM32F100 Value line на Cortex-M3, і ST називає її на власній сторінці лінійки.
+**Верхня межа застаріла.** Книга каже 550 МГц; станом на звірку ST подає STM32H7RS на Cortex-M7 із частотою **до 600 МГц**. 550 МГц — це стеля ліній STM32H72x/H73x, тобто попереднє покоління.
+Клас `B`, а не `A`: обидві цитати дослівні, але твердження книги — про **діапазон лінійки загалом**, і воно складене з двох сторінок, а не взяте з однієї. Крім того, верхня половина не збігається, тож дослівним підтвердженням це не є.
+Розбіжність винесено окремою знахідкою: розділ 01 за М1. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-13-stm32-chastoty
 
 ---
 

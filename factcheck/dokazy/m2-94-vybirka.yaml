@@ -38,13 +38,14 @@
     — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві
     є, але воно номінал у пораді, а не величина з паспорта.'
 - nazva: 'T-D-043: 0xe = EXT_CPU_RESET, норма'
-  zbih: '`0xe`.*EXT_CPU_RESET.*APP.*CPU.*норма'
+  zbih: '`0xe`\s+·\s+Що\s+сталося\s+→\s+APP\s+CPU\s+скинутий\s+PRO\s+CPU'
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
   cytata: EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
   sposib: curl raw.githubusercontent.com, grep, 2026-08-26
-  notatka: Код 0xe (14 у десяткових) = EXT_CPU_RESET. Коментар показує, що це сценарій, коли PRO CPU скидає
-    APP CPU. На дуал-кор системах це нормальна операція, не помилка.
+  notatka: 'Код 0xe (14 у десяткових) = EXT_CPU_RESET. Коментар показує, що це сценарій, коли PRO CPU
+    скидає APP CPU. На дуал-кор системах це нормальна операція, не помилка. | Взірець перебудовано з тексту
+    одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: 'T-16-034: У наступному поколінні бутлоадер став на `0x0`'
   zbih: У\s+наступному\s+поколінні|бутлоадер\s+став\s+на\s+`0x0`
   klas: A

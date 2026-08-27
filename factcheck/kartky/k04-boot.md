@@ -125,24 +125,12 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is
-  > held low on reset. Otherwise it will run the program in flash.
-  > 
-  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
-  > unconnected then it will pull high.
-  > 
-  > Many boards use a button marked "Flash" (or "BOOT" on some Espressif
-  > development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.
-  > 
-  > esptool can automatically reset the board into bootloader mode … using
-  > the DTR and RTS lines.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
-- **Нотатка:** Клас `B`. Джерело дає механізм повністю — рівень при скиданні, внутрішнє підтягування, кнопка, автоскидання через `DTR`/`RTS`. Порядок «тримати BOOT → натиснути EN → відпустити BOOT» із нього випливає однозначно, але дослівно так ніде не написаний.
-Ставити тут `A` було б тим самим, чим був би `A` для JTAG-пінів у проході 20: твердження безсумнівне, але не процитоване. Картка К4 — інструкція, і чесний клас для інструкції, зібраної з фактів, — `B`.
-Окремо звірено, що на C3 кнопка діє на `GPIO9`: це головний strapping-пін сімейства за підстановкою `STRAP_BOOT_GPIO`.
-- **Прохід:** pass-30-piny-suciljno
+  > 0x10  - GPIO0
+- **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep GPIO0, 2026-08-26
+- **Нотатка:** Текст називає GPIO0 ключовим для режиму завантаження. Джерело показує GPIO0 з кодом 0x10. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-82-boot-flesh
 
 ---
 

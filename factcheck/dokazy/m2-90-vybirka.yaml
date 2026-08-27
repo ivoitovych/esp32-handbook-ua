@@ -111,7 +111,7 @@
   notatka: Як T-Z-114, це просто покажчик, де в книзі згадується GPIO15. Не є технічним твердженням, яке
     потребує зовнішнього джерела. Класифіковано як E.
 - nazva: Код скидання 0xa — INTRUSION_RESET (детектор втручання), рідко трапляється
-  zbih: 0xa.*INTRUSION_RESET.*рідко
+  zbih: '`0xa`\s+·\s+Назва\s+→\s+INTRUSION_RESET|`0xa`\s+·\s+Що\s+робити\s+→\s+рідко'
   klas: A
   dzherelo: https://github.com/espressif/esp-idf/blob/master/components/esp_rom/include/esp32/rom/rtc.h
     — ESP-IDF, ESP32 ROM Header, Reset Reason Enumeration
@@ -119,9 +119,10 @@
 
     '
   sposib: curl repo github.com/espressif/esp-idf, читання rtc.h header, 2026-08-27
-  notatka: Таблиця в додатку d-panik правильно наводить коди скидання (reset reasons) для ESP32. Код 0xa
-    = 10 в десятковій систем відповідає INTRUSION_RESET — детектору втручання в чип. Це дійсно рідкісна
-    причина скидання. Визначення є в файлі rtc.h в компонентах ESP-IDF.
+  notatka: 'Таблиця в додатку d-panik правильно наводить коди скидання (reset reasons) для ESP32. Код
+    0xa = 10 в десятковій систем відповідає INTRUSION_RESET — детектору втручання в чип. Це дійсно рідкісна
+    причина скидання. Визначення є в файлі rtc.h в компонентах ESP-IDF. | Взірець перебудовано з тексту
+    одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: На ESP32-C3 з 400 КБ два одночасні TLS-з'єднання створюють помітне навантаження
   zbih: На C3.*400 КБ.*TLS
   klas: C

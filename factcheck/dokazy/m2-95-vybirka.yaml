@@ -21,7 +21,7 @@
   notatka: Код 0x10 (16 у десятковій) дійсно названий RTCWDT_RTC_RESET. Таблиця розділу D дає повну відповідність
     з enum RESET_REASON з ROM-заголовка.
 - nazva: Код скидання 0xc означає скидання ядра з коду
-  zbih: 0xc.*SW_CPU_RESET.*скидання ядра з коду
+  zbih: '`0xc`\s+·\s+Що\s+сталося\s+→\s+скидання\s+ядра\s+з\s+коду;\s+часто\s+після\s+паніки'
   klas: B
   dzherelo: https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h
     — RESET_REASON enum, значення 12
@@ -30,7 +30,9 @@
     '
   sposib: GitHub ESP-IDF, rom/rtc.h, 2026-08-27
   notatka: 'Код 0xc (12 у десятковій) — це SW_CPU_RESET, програмне скидання ядра. Частина про «часто після
-    паніки» логічна: паніка часто викликається assert() або explicit reset, який видається як 0xc.'
+    паніки» логічна: паніка часто викликається assert() або explicit reset, який видається як 0xc. | Взірець
+    перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці)
+    і не чіпав нічого.'
 - nazva: ESP-NOW використовує той самий діапазон частот, що Wi-Fi 2.4 ГГц
   zbih: ESP-NOW.*той самий діапазон, що Wi-Fi 2\.4 ГГц
   klas: B

@@ -412,12 +412,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Джерело:** dzherela-kesh/sx1276.pdf
 - **Дослівно з джерела:**
-  > 1-Wire is a registered trademark of Maxim Integrated Products, Inc.
-- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
-- **Нотатка:** Документ є розробкою Maxim Integrated Products, офіційно підтверджено в DS18B20 документації.
-- **Прохід:** m2-hvylya3
+  > The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving significantly longer
+- **Спосіб і дата:** наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py
+- **Нотатка:** SX1276 підтримує LoRa модуляцію з розширювачами (spreading factors 6-12) | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-detali-klasC
 
 ---
 

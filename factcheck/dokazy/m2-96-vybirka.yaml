@@ -9,14 +9,15 @@
     не формальна: E ховає одиницю з наряду назавжди, C лишає її в наряді з полем shukaty.'
   shukaty: 'nrf24l01p datasheet: infocenter.nordicsemi.com'
 - nazva: T-D-025 — `0x8` код помилки, watchdog таймера 1
-  zbih: \| `0x8` \| TG1WDT_SYS_RESET
+  zbih: '`0x8`\s+·\s+Що\s+сталося\s+→\s+спрацював\s+watchdog\s+таймера\s+1|`0x8`\s+·\s+Що\s+сталося\s+→\s+watchdog\s+таймера\s+1'
   klas: A
   dzherelo: 'ESP-IDF компонент esp_system, rtc.h: https://github.com/espressif/esp-idf/blob/master/components/esp_system/include/esp_system/rtc.h'
   cytata: 'TG1WDT_SYS_RESET = 8,    /**<8, Timer Group1 Watch dog reset digital core*/
 
     '
   sposib: curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
-  notatka: Код 0x8 прямо визначений у rtc.h як TG1WDT_SYS_RESET.
+  notatka: 'Код 0x8 прямо визначений у rtc.h як TG1WDT_SYS_RESET. | Взірець перебудовано з тексту одиниці
+    реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: T-Z-123 — GPIO6 у індексі
   zbih: GPIO6 — 21, 27, 53, 73, 76, 154, 182, 335, 349, 369
   klas: E
@@ -39,14 +40,16 @@
     C, не B: висновок про семантику видавця-підписника може бути правильним, але засновку в записі немає,
     і читач його не перевірить.'
 - nazva: T-D-046 — `0xf` код помилки RTCWDT_BROWN_OUT_RESET
-  zbih: \| `0xf` \| RTCWDT_BROWN_OUT_RESET.*просіло живлення.*розділ 06
+  zbih: Далі\s+за\s+`rst:`\s+\(картка\s+\[К6\]\(\#k\-bootlog\)\):\s+`0xf`\s+—\s+живлення\s+\(розділ\s+06\);\s+`0xc`\s+—\s+паніка\s+\(розділ\s+26\);\s+`0x7`/`0x8|`0xf`\s+·\s+Що\s+сталося\s+→\s+\*\*просіло\s+живлення\*\*|`rst:0xf`\s+·\s+Причина\s+→\s+\*\*просіло\s+живлення\*\*|`0xf`\s+·\s+Що\s+сталося\s+→\s+\*\*просіло\s+живлення\*\*
   klas: A
   dzherelo: 'ESP-IDF компонент esp_system, rtc.h: https://github.com/espressif/esp-idf/blob/master/components/esp_system/include/esp_system/rtc.h'
   cytata: 'RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
 
     '
   sposib: curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
-  notatka: Код 0xf (15) прямо визначений як RTCWDT_BROWN_OUT_RESET. Причина — нестабільне живлення.
+  notatka: 'Код 0xf (15) прямо визначений як RTCWDT_BROWN_OUT_RESET. Причина — нестабільне живлення. |
+    Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски
+    таблиці) і не чіпав нічого.'
 - nazva: T-23-023 — Суфікс модуля кодує обсяг флешу й PSRAM
   zbih: Суфікс.*модуля кодує.*флешу.*PSRAM.*N8.*N16R8
   klas: C

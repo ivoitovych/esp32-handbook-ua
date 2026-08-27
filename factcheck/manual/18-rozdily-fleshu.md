@@ -260,29 +260,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > # ESP-IDF Partition Table
-  > # Name,   Type, SubType, Offset,  Size, Flags
   > nvs,      data, nvs,     0x9000,  0x6000,
-  > phy_init, data, phy,     0xf000,  0x1000,
   > factory,  app,  factory, 0x10000, 1M,
-  > 
-  > In both cases the factory app is flashed at offset 0x10000.
-  > 
-  > Sizes and offsets can be specified as decimal numbers, hex numbers
-  > with the prefix 0x, or size multipliers K or M (1024 and 1024*1024
-  > bytes).
-  > 
-  > (bootloader_utility.c)
-  > ESP_LOGI(TAG, "Partition Table:");
-  > ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Length");
-  > …
-  > ESP_LOGI(TAG, "End of partition table");
-- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 2), 2026-08-26; взірець і клас — М1
-- **Нотатка:** Уся типова розбивка книги збіглася з тією, що друкує сама документація ESP-IDF, — рядок у рядок.
-Окремо цінне: агент знайшов **у коді бутлоадера** рядки, якими таблиця друкується в лог. Книга обіцяє читачеві, що розбивку чужого пристрою видно в boot-лозі без жодних інструментів; тепер це підтверджено не документацією, а самою функцією, яка це друкує.
-- **Прохід:** pass-32-pul-shmatky-1-3
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, grep partition, 2026-08-26
+- **Нотатка:** Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory на 0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-82-boot-flesh
 
 ---
 
@@ -451,24 +435,13 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv та .../components/partition_table/gen_esp32part.py
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > # Name,   Type, SubType, Offset,  Size, Flags
-  > nvs,      data, nvs,     ,        0x6000,
-  > phy_init, data, phy,     ,        0x1000,
-  > factory,  app,  factory, ,        1M,
-  > 
-  > (gen_esp32part.py)
-  > ALIGNMENT = {
-  >     APP_TYPE: 0x10000,
-  >     DATA_TYPE: 0x1000,
-  >     BOOTLOADER_TYPE: 0x1000,
-  >     PARTITION_TABLE_TYPE: 0x1000,
-  > }
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Підтверджує таблицю розділу 18 повністю: `nvs` розміром `0x6000`, `phy_init` розміром `0x1000`, `factory` 1 МБ — і, головне, вирівнювання: розділи типу `app` на 64 КБ, типу `data` на 4 КБ. Саме ці два числа книга називає вимогою апаратного відображення пам'яті.
-Окремо зафіксовано для наступних ревізій: у розбивці з OTA (`partitions_two_ota.csv`) `nvs` уже `0x4000`, і додається `otadata` розміром `0x2000`. Книга цієї розбивки таблицею не подає, тож розбіжності немає, але сума службових областей до `0x10000` сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
-- **Прохід:** pass-07-api-rozbyvka
+  > nvs,      data, nvs,     0x9000,  0x6000,
+  > factory,  app,  factory, 0x10000, 1M,
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, grep partition, 2026-08-26
+- **Нотатка:** Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory на 0x10000. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-82-boot-flesh
 
 ---
 
@@ -837,13 +810,24 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv та .../components/partition_table/gen_esp32part.py
 - **Дослівно з джерела:**
-  > nvs,      data, nvs,     0x9000,  0x6000,
-  > factory,  app,  factory, 0x10000, 1M,
-- **Спосіб і дата:** curl esp-idf partition-tables.rst, grep partition, 2026-08-26
-- **Нотатка:** Розділ 18 показує типову таблицю розділів. Джерело підтверджує: nvs на 0x9000, factory на 0x10000.
-- **Прохід:** m2-82-boot-flesh
+  > # Name,   Type, SubType, Offset,  Size, Flags
+  > nvs,      data, nvs,     ,        0x6000,
+  > phy_init, data, phy,     ,        0x1000,
+  > factory,  app,  factory, ,        1M,
+  > 
+  > (gen_esp32part.py)
+  > ALIGNMENT = {
+  >     APP_TYPE: 0x10000,
+  >     DATA_TYPE: 0x1000,
+  >     BOOTLOADER_TYPE: 0x1000,
+  >     PARTITION_TABLE_TYPE: 0x1000,
+  > }
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує таблицю розділу 18 повністю: `nvs` розміром `0x6000`, `phy_init` розміром `0x1000`, `factory` 1 МБ — і, головне, вирівнювання: розділи типу `app` на 64 КБ, типу `data` на 4 КБ. Саме ці два числа книга називає вимогою апаратного відображення пам'яті.
+Окремо зафіксовано для наступних ревізій: у розбивці з OTA (`partitions_two_ota.csv`) `nvs` уже `0x4000`, і додається `otadata` розміром `0x2000`. Книга цієї розбивки таблицею не подає, тож розбіжності немає, але сума службових областей до `0x10000` сходиться саме так — і це підтверджує «близько 64 КБ» у розділі 19.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 

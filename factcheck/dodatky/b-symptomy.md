@@ -1698,7 +1698,7 @@
 
 ---
 
-<!-- fc id:T-B-071 sha:f20f6420 src:dodatky/b-symptomy.md:50 klas:F -->
+<!-- fc id:T-B-071 sha:f20f6420 src:dodatky/b-symptomy.md:50 klas:A -->
 ### T-B-071 · komirka · рядок 50
 
 **Книга каже, дослівно:**
@@ -1707,7 +1707,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ESP-IDF компонент esp_system, rtc.h: https://github.com/espressif/esp-idf/blob/master/components/esp_system/include/esp_system/rtc.h
+- **Дослівно з джерела:**
+  > RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+- **Спосіб і дата:** curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
+- **Нотатка:** Код 0xf (15) прямо визначений як RTCWDT_BROWN_OUT_RESET. Причина — нестабільне живлення. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-96-vybirka
 
 ---
 
@@ -4739,7 +4745,7 @@
 
 ---
 
-<!-- fc id:T-B-218 sha:e667e32e src:dodatky/b-symptomy.md:113 klas:F -->
+<!-- fc id:T-B-218 sha:e667e32e src:dodatky/b-symptomy.md:113 klas:A -->
 ### T-B-218 · komirka · рядок 113
 
 **Книга каже, дослівно:**
@@ -4748,7 +4754,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Дослівно з джерела:**
+  > The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving significantly longer
+- **Спосіб і дата:** наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py
+- **Нотатка:** SX1276 підтримує LoRa модуляцію з розширювачами (spreading factors 6-12) | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-detali-klasC
 
 ---
 
