@@ -261,6 +261,29 @@ def main() -> int:
     else:
         r.append("Жодне заявлене спростування третій шар не витримало.\n")
 
+    # Розклад по помічниках. Не косметика: у зламаній хвилі різниця між
+    # чесною роботою й штампуванням була видна саме тут — один помічник
+    # дав 5 підтверджень і 20 «не знайшов», інший 25 із 25. Середнє по
+    # хвилі приховувало обох.
+    po_hto: dict[str, collections.Counter] = collections.defaultdict(
+        collections.Counter)
+    for z in zap:
+        po_hto[str(z.get("_fayl", "?")).split("-")[0]][
+            str(z.get("verdykt", "?"))] += 1
+    if len(po_hto) > 1:
+        r.append("\n## Розклад по помічниках\n")
+        r.append("Хвиля з однаковими стовпчиками в усіх — підозріла. "
+                 "Помічник, у якого все підтверджено, або знайшов "
+                 "документ на кожне твердження, або не шукав жодного.\n")
+        r.append("| Помічник | підтв. | сперечається | не знайшов | недосяжне |")
+        r.append("|---|---|---|---|---|")
+        for hto in sorted(po_hto):
+            k = po_hto[hto]
+            r.append(f"| `{hto}` | {k['pidtverdzheno']} "
+                     f"| {k['sperechayetsya']} | {k['ne_znayshov']} "
+                     f"| {k['nedosyazhne']} |")
+        r.append("")
+
     if polagodzheni:
         r.append("\nПолагоджено механічно: "
                  + ", ".join(f"`{b}`" for b in polagodzheni) + ".\n")
