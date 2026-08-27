@@ -475,6 +475,68 @@ def formatuvaty_dokaz(z: dict | None) -> str:
     return "\n".join(ch) + "\n"
 
 
+def dослівно_і_контекст(ryadky: list[str], ln: int) -> tuple[str, str]:
+    """Сирий рядок книги та його оточення.
+
+    **Навіщо.** Досі картка несла лише рендер одиниці —
+    `BME280 · Адреса → 0x76` — під заголовком «Книга каже, дослівно».
+    Такого рядка в книзі немає, тож заголовок брехав, а картку не можна
+    було віддати ані людині, ані помічникові: щоб зрозуміти твердження,
+    треба було лізти в книгу.
+
+    Ціна цього була вимірна. Три сесії поспіль ми записували роди
+    хибних тривог — «поділ відрізає застереження», «комірка без
+    контексту», «суперечка про ступінь» — і всі вони одна причина:
+    **виконавець судив половину думки.** Одинадцять заявлених
+    суперечностей, жодної справжньої.
+
+    **Що вважається контекстом.** Для рядка таблиці — найближчий
+    заголовок вище, речення перед таблицею, шапка таблиці й сама
+    таблиця. Для прози — абзац і сусідні абзаци.
+
+    Номер рядка тут — єдина річ, якій довіряють, і вона ненадійна: М2
+    поміряли, що він застарілий у 1311 одиницях із 8090. Тому функція
+    **не падає** на хибному номері: поза межами файлу вона чесно
+    віддає порожнє, і картка це показує.
+    """
+    i = ln - 1
+    if not (0 <= i < len(ryadky)):
+        return "", ""
+    doslivno = ryadky[i].rstrip()
+
+    # Межі: назад до заголовка або порожнього рядка перед абзацом,
+    # уперед до кінця абзацу чи таблиці.
+    poch = i
+    while poch > 0:
+        pop = ryadky[poch - 1].rstrip()
+        if pop.startswith("#"):
+            break
+        if not pop and not doslivno.startswith("|"):
+            break
+        if not pop and poch < i and not ryadky[poch].startswith("|"):
+            break
+        poch -= 1
+    kin = i
+    while kin + 1 < len(ryadky):
+        nast = ryadky[kin + 1].rstrip()
+        if not nast or nast.startswith("#"):
+            break
+        kin += 1
+
+    # Заголовок розділу дає темі ім'я, а без імені комірка таблиці
+    # читається як набір слів.
+    zah = ""
+    for j in range(poch, -1, -1):
+        if ryadky[j].startswith("#"):
+            zah = ryadky[j].rstrip()
+            break
+
+    tilo = [r.rstrip() for r in ryadky[poch:kin + 1]]
+    if zah and zah not in tilo:
+        tilo = [zah, ""] + tilo
+    return doslivno, "\n".join(tilo).strip()
+
+
 def sketch() -> int:
     FC.mkdir(exist_ok=True)
     dokazy = zavantazhyty_dokazy()
@@ -492,7 +554,9 @@ def sketch() -> int:
     usi_teksty: list[str] = []
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
-            odynyci = rozbyty(f.read_text(encoding="utf-8"))
+            tekst_knyhy = f.read_text(encoding="utf-8")
+            ryadky_knyhy = tekst_knyhy.split("\n")
+            odynyci = rozbyty(tekst_knyhy)
             cil = shlyakh_reyestru(f)
             cil.parent.mkdir(parents=True, exist_ok=True)
             pre = prefiks(f)
@@ -538,11 +602,25 @@ def sketch() -> int:
                 else:
                     klas = "F"
                 cyt = "\n".join("> " + x for x in txt.split("\n"))
+                # Картка мусить бути самодостатньою: її віддають людині
+                # або виконавцеві **без** доступу до книги. Тому поруч
+                # із коротким викладом стоять сирий рядок і оточення.
+                syryy, kontekst = dослівно_і_контекст(ryadky_knyhy, ln)
+                dodatkovo = ""
+                if syryy and syryy.strip() != txt.strip():
+                    dodatkovo += ("**Дослівно з книги**\n\n"
+                                  f"```\n{syryy}\n```\n\n")
+                if kontekst:
+                    dodatkovo += ("**Контекст**\n\n"
+                                  f"```\n{kontekst}\n```\n\n")
+                elif not syryy:
+                    dodatkovo += ("**Контекст:** номер рядка застарів — "
+                                  "рядок за ним у книзі не знайдено.\n\n")
                 chastyny.append(
                     f"<!-- fc id:{ident} sha:{h} "
                     f"src:{f.relative_to(ROOT)}:{ln} klas:{klas} -->\n"
-                    f"### {ident} · {vyd} · рядок {ln}\n\n"
-                    f"**Книга каже, дослівно:**\n\n{cyt}\n\n"
+                    f"### {ident} · {vyd} · `{f.relative_to(ROOT)}`\n\n"
+                    f"**Твердження, коротко**\n\n{cyt}\n\n{dodatkovo}"
                     f"{formatuvaty_dokaz(z)}\n---\n"
                 )
                 vsjogo += 1

@@ -232,3 +232,94 @@ where ordinary ones exist.
 `комірка` is just a table cell. In English the natural terms are plain,
 which is the point: **a term that needs explaining is a term that hides
 something.**
+
+---
+
+## Stage 7 — the file names themselves
+
+The slang is not only inside the documents. It **is** the documents:
+
+    POMICHNYKY.md   NARYAD-vybirka.md   SHTURM-E.md   MIRA-E.md
+    PODIL.md        PROKHID-POVNYY.md   SLIDY.md      PEREYIZD.md
+    dokazy/  rozbir/  prokhid/  doslidy/  znimky/  hvylya2/
+
+And so are the tools: `naryad_f.py`, `prochid_zvid.py`,
+`prochid_posadka.py`, `posadka_c.py`, `znimok.py`, `mira_f.py`,
+`shturm.py`, `vybirka.py`.
+
+A repository whose file names need a glossary cannot be handed to
+anyone. Renaming is therefore not cosmetics — it is the same defect as
+the card that needed the book to be understood.
+
+### Mapping
+
+**Documents that stay (technology):**
+
+| Now | Becomes |
+|---|---|
+| `ARKHITEKTURA.md` | `ARCHITECTURE.md` |
+| `POMICHNYKY.md` | `WORKERS.md` |
+| `METODYKA.md` | `METHOD.md` |
+| `SPROSTOVANE.md` | `REFUTED.md` |
+| `UROKY-M2.md` | `LESSONS.md` |
+| `PEREYIZD.md` | `MIGRATION.md` |
+| `SCHEMA.md` | `SCHEMA.md` — already plain |
+
+**Generated reports:**
+
+| Now | Becomes |
+|---|---|
+| `CYTATY.md` | `QUOTES.md` |
+| `SHTURM-E.md` | `SWEEP-NO-SIGNAL.md` |
+| `MIRA-E.md` · `MIRA-F.md` | `MEASURE-NO-SIGNAL.md` · `MEASURE-UNCHECKED.md` |
+| `PODIL.md` | `SPLIT.md` |
+| `SLIDY.md` | `TRACES.md` |
+| `KNYHA-PROTY-DZHEREL.md` | `BOOK-VS-SOURCES.md` |
+
+**Directories:**
+
+| Now | Becomes |
+|---|---|
+| `dokazy/` | `evidence/` |
+| `rozbir/` | `triage/` |
+| `prokhid/` · `prokhid-vidkydka/` | `pass/` · `pass-rejected/` |
+| `doslidy/` | `experiments/` |
+| `znimky/` | `snapshots/` |
+| `detali/` · `klasC/` | `details/` · `class-c/` |
+
+`manual/`, `dodatky/`, `kartky/`, `inserts/` **keep their names**: they
+mirror the book's own directory layout, and renaming them would break
+that correspondence for a Ukrainian book.
+
+**Tools:**
+
+| Now | Becomes |
+|---|---|
+| `naryad_f.py` | `brief_unchecked.py` |
+| `prochid_zvid.py` | `verify_quotes.py` |
+| `prochid_posadka.py` | `import_evidence.py` |
+| `posadka_c.py` | `import_unreachable.py` |
+| `znimok.py` | `snapshot.py` |
+| `imena.py` | `rename_fields.py` |
+| `bez_slenhu.py` | `strip_jargon.py` |
+| `mira_f.py` | `measure.py` |
+| `shturm.py` · `vybirka.py` | `sweep.py` · `sample.py` |
+| `modalnist.py` | `modality.py` |
+| `citaty.py` · `sprostovane.py` | `quotes.py` · `refuted.py` |
+
+### Order, and why this order
+
+Renames are done in three batches, safest first, each verified before
+the next:
+
+1. **Spent work orders** — deleted, not renamed. `NARYAD-*.md`,
+   `hvylya2/`, `hvylya3/`: finished waves, reproducible from tools.
+   Their durable findings move into `WORKERS.md` first.
+2. **Data directories and generated reports** — nothing imports them by
+   name except a handful of path constants.
+3. **Tools** — riskiest: every rename is an import to update, and the
+   `Makefile` names them. Done last, one at a time, `make check` after
+   each.
+
+After every batch: `tools/snapshot.py … --zvirty`. Zero lost claims or
+the batch is reverted.
