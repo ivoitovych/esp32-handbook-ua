@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-K10-001 sha:56ac242d src:kartky/k10-komandy.md:3 klas:A -->
+<!-- fc id:T-K10-001 sha:56ac242d src:kartky/k10-komandy.md:3 klas:F -->
 ### T-K10-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,13 +15,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -35,12 +29,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -103,12 +111,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
+- **Прохід:** m2-hvylya2
 
 ---
 
@@ -122,12 +130,23 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The read-flash command allows reading back the contents of flash. The arguments to the
+  > command are an address, a size, and a file path to output to. For example, to read a full
+  > 2MB of attached flash:
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin
+  > 
+  > Size can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in
+  > example can be replaced with ``2M``.
+  > 
+  > It is also possible to autodetect flash size by using ``ALL`` as size.
+  > 
+  >     esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -141,12 +160,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The preferred way to invoke esptool command-line tools has changed. Instead of running
+  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
+  > - ``esptool.py`` → ``esptool``
+  > - ``espefuse.py`` → ``espefuse``
+  > …
+  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
+  > (e.g., ``write_flash`` -> ``write-flash``).
+  > 
+  > Old command and option names are **deprecated**, meaning they will work for now with a
+  > warning, but will be removed in the next major release.
+  > 
+  > This change affects most of the commands and the following options: ``--flash_size``,
+  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
+  > …
+  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -160,16 +193,32 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-K10-009 sha:d6945e3a src:kartky/k10-komandy.md:14 klas:A -->
+<!-- fc id:T-K10-009 sha:d6945e3a src:kartky/k10-komandy.md:14 klas:F -->
 ### T-K10-009 · kod-ryadok · рядок 14
 
 **Книга каже, дослівно:**
@@ -178,17 +227,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-010 sha:931ffa15 src:kartky/k10-komandy.md:15 klas:A -->
+<!-- fc id:T-K10-010 sha:931ffa15 src:kartky/k10-komandy.md:15 klas:F -->
 ### T-K10-010 · kod-ryadok · рядок 15
 
 **Книга каже, дослівно:**
@@ -197,13 +240,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -217,12 +254,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > rst:0x10 (RTCWDT_RTC_RESET)
+  > 
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 
@@ -267,12 +312,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code (file name and line number) and prints the location on the next line in yellow.
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Місце в документі: розділ Automatic Address Decoding
+- **Прохід:** m2-hvylya2
 
 ---
 
@@ -286,12 +331,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -305,12 +366,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -324,16 +401,32 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
-<!-- fc id:T-K10-017 sha:5e640044 src:kartky/k10-komandy.md:26 klas:A -->
+<!-- fc id:T-K10-017 sha:5e640044 src:kartky/k10-komandy.md:26 klas:F -->
 ### T-K10-017 · kod-ryadok · рядок 26
 
 **Книга каже, дослівно:**
@@ -342,17 +435,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-018 sha:399d8dd5 src:kartky/k10-komandy.md:27 klas:A -->
+<!-- fc id:T-K10-018 sha:399d8dd5 src:kartky/k10-komandy.md:27 klas:F -->
 ### T-K10-018 · kod-ryadok · рядок 27
 
 **Книга каже, дослівно:**
@@ -361,13 +448,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -381,16 +462,16 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code (file name and line number) and prints the location on the next line in yellow.
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Місце в документі: розділ Automatic Address Decoding
+- **Прохід:** m2-hvylya2
 
 ---
 
-<!-- fc id:T-K10-020 sha:7879c453 src:kartky/k10-komandy.md:29 klas:A -->
+<!-- fc id:T-K10-020 sha:7879c453 src:kartky/k10-komandy.md:29 klas:F -->
 ### T-K10-020 · kod-ryadok · рядок 29
 
 **Книга каже, дослівно:**
@@ -399,13 +480,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -419,12 +494,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -438,12 +529,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -457,12 +564,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esptool (з переліку команд у __init__.py і документації):
+  >   write-flash read-flash erase-flash erase-region read-mac flash-id
+  >   elf2image image-info merge-bin version verify-flash dump-mem
+  >   read-mem write-mem get-security-info chip-id run …
+  > 
+  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
+  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
+  >   merge-bin monitor flash erase-flash partition-table reconfigure
+  >   set-target size size-components size-files python-clean read-otadata
+  >   efuse-summary … openocd gdb coredump-info coredump-debug
+  > 
+  > idf-component-manager: add-dependency create-manifest upload-component
+  >   create-project-from-example
+  > 
+  > Приклад із документації дослівно:
+  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
+Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -476,12 +599,19 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -495,12 +625,19 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The command ``idf.py merge-bin`` will merge the bootloader, partition table,
+  > the application itself, and other partitions (if there are any) according to
+  > the project configuration and create a single binary file
+  > ``merged-binary.[bin|hex]`` in the build folder, which can then be flashed later.
+  > 
+  > Example usage:
+  >   idf.py merge-bin -o my-merged-binary.bin -f raw
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, яке прибирає цілий клас помилок. Книга вчила лише `esptool merge-bin` із адресами, набраними вручну, — і сама ж на сусідній сторінці попереджає, що `0x1000` на S3 дає образ, який прошивається без скарг і не стартує.
+`idf.py merge-bin` цієї можливості не лишає: адреса бутлоадера, чип, режим і частота флешу беруться з конфігурації того самого проєкту. Правило, додане в книгу: є проєкт — `idf.py merge-bin`; є лише `.bin`-файли — `esptool --chip … merge-bin`.
+- **Прохід:** pass-09-komandy
 
 ---
 
@@ -514,12 +651,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -533,16 +678,30 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/tools/idf-monitor.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > * - Ctrl + ]
+  >   - Exit the program
+  > * - Ctrl + T
+  >   - Menu escape key
+  >   - Press and follow it by one of the keys given below.
+  > * - * Ctrl + R
+  >   - Reset target board via RTS
+  >   - Reset the target board and re-starts the application via the RTS
+  >     line (if connected).
+  > * - * Ctrl + P
+  >   - Reset target into bootloader to pause app via RTS and DTR lines
+  > 
+  > If an ESP-IDF app crashes and panics, a register dump and backtrace
+  > are produced… IDF Monitor … looks up each address in the ELF file.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено дослівно, розбіжностей немає — включно з тонкістю, яку легко записати неправильно: `Ctrl+R` не самостійна комбінація, а **друга** клавіша після `Ctrl+T`. Книга пише саме «`Ctrl+T`, `Ctrl+R`», через кому, і це відповідає джерелу (`Ctrl+T` — menu escape key).
+Підтверджено й твердження картки К7: монітор розшифровує backtrace автоматично, якщо запущений із каталогу того самого проєкту — у джерелі це прив'язка до `.elf` того збирання.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
-<!-- fc id:T-K10-028 sha:51eec05c src:kartky/k10-komandy.md:41 klas:A -->
+<!-- fc id:T-K10-028 sha:51eec05c src:kartky/k10-komandy.md:41 klas:F -->
 ### T-K10-028 · proza · рядок 41
 
 **Книга каже, дослівно:**
@@ -551,13 +710,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -574,17 +727,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-030 sha:746a4901 src:kartky/k10-komandy.md:44 klas:A -->
+<!-- fc id:T-K10-030 sha:746a4901 src:kartky/k10-komandy.md:44 klas:F -->
 ### T-K10-030 · kod-ryadok · рядок 44
 
 **Книга каже, дослівно:**
@@ -593,17 +740,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-031 sha:d4bff93f src:kartky/k10-komandy.md:45 klas:A -->
+<!-- fc id:T-K10-031 sha:d4bff93f src:kartky/k10-komandy.md:45 klas:F -->
 ### T-K10-031 · kod-ryadok · рядок 45
 
 **Книга каже, дослівно:**
@@ -612,17 +753,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-032 sha:c8e23e02 src:kartky/k10-komandy.md:46 klas:A -->
+<!-- fc id:T-K10-032 sha:c8e23e02 src:kartky/k10-komandy.md:46 klas:F -->
 ### T-K10-032 · kod-ryadok · рядок 46
 
 **Книга каже, дослівно:**
@@ -631,13 +766,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -655,17 +784,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-034 sha:805c4c57 src:kartky/k10-komandy.md:52 klas:A -->
+<!-- fc id:T-K10-034 sha:805c4c57 src:kartky/k10-komandy.md:52 klas:F -->
 ### T-K10-034 · kod-ryadok · рядок 52
 
 **Книга каже, дослівно:**
@@ -674,17 +797,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-035 sha:65b20b9d src:kartky/k10-komandy.md:53 klas:A -->
+<!-- fc id:T-K10-035 sha:65b20b9d src:kartky/k10-komandy.md:53 klas:F -->
 ### T-K10-035 · kod-ryadok · рядок 53
 
 **Книга каже, дослівно:**
@@ -693,17 +810,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-036 sha:459deb70 src:kartky/k10-komandy.md:54 klas:A -->
+<!-- fc id:T-K10-036 sha:459deb70 src:kartky/k10-komandy.md:54 klas:F -->
 ### T-K10-036 · kod-ryadok · рядок 54
 
 **Книга каже, дослівно:**
@@ -712,17 +823,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-037 sha:04c7f41f src:kartky/k10-komandy.md:55 klas:A -->
+<!-- fc id:T-K10-037 sha:04c7f41f src:kartky/k10-komandy.md:55 klas:F -->
 ### T-K10-037 · kod-ryadok · рядок 55
 
 **Книга каже, дослівно:**
@@ -731,17 +836,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-038 sha:4ffb7aee src:kartky/k10-komandy.md:58 klas:A -->
+<!-- fc id:T-K10-038 sha:4ffb7aee src:kartky/k10-komandy.md:58 klas:E -->
 ### T-K10-038 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -750,17 +849,18 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Картка К10, рядок 58 — це визначення пристроїв Linux, а не факти про мікросхеми.
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > `/dev/ttyUSB*` — зовнішній міст (CP2102, CH340).
+  > `/dev/ttyACM*` — native USB [[S3]] [[C3]].
+- **Спосіб і дата:** Прямий текст файлу `kartky/k10-komandy.md`, рядки 58-59
+- **Нотатка:** Твердження про інтерфейси операційної системи Linux та відповідність пристроїв мікросхемам, але не про властивості самих мікросхем (кількість пінів, напруга, інтерфейс тощо).
+- **Прохід:** m2-34-dodatky-reshta
 
 ---
 
-<!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:58 klas:A -->
+<!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:58 klas:F -->
 ### T-K10-039 · proza · рядок 58
 
 **Книга каже, дослівно:**
@@ -769,17 +869,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 klas:A -->
+<!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 klas:F -->
 ### T-K10-040 · tablycya-shapka · рядок 63
 
 **Книга каже, дослівно:**
@@ -788,13 +882,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -808,12 +896,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -827,12 +929,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst, dzherela-kesh/a4dbe955-bootloader.rst)
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
+- **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
+- **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
+- **Прохід:** m2-94-vybirka
 
 ---
 
@@ -846,12 +948,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -922,12 +1038,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -941,12 +1071,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -960,12 +1104,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild, .../components/partition_table/Kconfig.projbuild, .../docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > config BOOTLOADER_OFFSET_IN_FLASH
+  >     default 0x1000 if IDF_TARGET_ESP32 || IDF_TARGET_ESP32S2
+  >     default 0x2000 if IDF_TARGET_ESP32P4 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32H4
+  >     default 0x0
+  > 
+  > config PARTITION_TABLE_OFFSET
+  >     hex "Offset of partition table"
+  >     default 0x8000
+  > 
+  > (partition-tables.rst)
+  > * At a 0x10000 (64 KB) offset in the flash is the app labelled
+  >   "factory". The bootloader runs this app by default.
+  > nvs,      data, nvs,     0x9000,  0x6000,
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
+Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
+`nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
+- **Прохід:** pass-31-adresy-i-api
 
 ---
 
@@ -979,12 +1137,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---
 
@@ -998,12 +1164,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst, dzherela-kesh/a4dbe955-bootloader.rst)
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
+- **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
+- **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
+- **Прохід:** m2-94-vybirka
 
 ---
 
@@ -1017,11 +1183,19 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > The merge-bin command will merge multiple binary files (of any kind)
+  > into a single file that can be flashed to a device later. Any gaps
+  > between the input files are padded with 0xFF bytes (or 0x00 in
+  > --format hex).
+  > 
+  > (idf-py.rst)
+  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
+  > folder, which can then be flashed later.
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
+Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
+- **Прохід:** pass-28-komandy-suciljno
 
 ---

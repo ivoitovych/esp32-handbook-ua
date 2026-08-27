@@ -136,28 +136,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/{basic-commands,advanced-commands,basic-options,advanced-options}.rst та tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py в esp-idf release/v5.5, плюс idf-component-manager/idf_extensions.py
+- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
-  > esptool (з переліку команд у __init__.py і документації):
-  >   write-flash read-flash erase-flash erase-region read-mac flash-id
-  >   elf2image image-info merge-bin version verify-flash dump-mem
-  >   read-mem write-mem get-security-info chip-id run …
-  > 
-  > idf.py (з ACTIONS у core_ext/serial_ext/debug_ext):
-  >   all(alias build) app app-flash bootloader clean fullclean menuconfig
-  >   merge-bin monitor flash erase-flash partition-table reconfigure
-  >   set-target size size-components size-files python-clean read-otadata
-  >   efuse-summary … openocd gdb coredump-info coredump-debug
-  > 
-  > idf-component-manager: add-dependency create-manifest upload-component
-  >   create-project-from-example
-  > 
-  > Приклад із документації дослівно:
-  >   esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Суцільна перевірка, як у проході 7: узято всі команди, що книга друкує, а не сумнівні. Крім трьох виправлень вище, розбіжностей немає — включно з `read-flash 0 ALL`, яке дослівно збігається з прикладом документації, і `idf.py build`, що є псевдонімом до `all` (`'aliases': ['build']` у `core_ext.py`).
-Заразом підтверджено дві дрібниці, які книга стверджує в інших розділах: типова швидкість esptool — 115200, а 74880 названо «usual baud rate used by the ESP8266» для boot-логу. Друге підтверджує картку К6 з іншого боку, ніж прохід 8.
-- **Прохід:** pass-09-komandy
+  > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
+- **Прохід:** m2-hvylya2
 
 ---
 
@@ -372,26 +356,15 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Джерело:** https://github.com/espressif/esp-idf/blob/master/docs/en/api-guides/bootloader.rst — ESP-IDF, API Guide, Bootloader (Partition table offset calculation)
 - **Дослівно з джерела:**
-  > The preferred way to invoke esptool command-line tools has changed. Instead of running
-  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
-  > - ``esptool.py`` → ``esptool``
-  > - ``espefuse.py`` → ``espefuse``
-  > …
-  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
-  > (e.g., ``write_flash`` -> ``write-flash``).
-  > 
-  > Old command and option names are **deprecated**, meaning they will work for now with a
-  > warning, but will be removed in the next major release.
-  > 
-  > This change affects most of the commands and the following options: ``--flash_size``,
-  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
-  > …
-  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
-- **Прохід:** pass-06-komandy-strapping
+  > .. Above is calculated as:
+  >     0x1000 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature sector // for esp32
+  >     0x0 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature sector // for esp32s2, esp32s3, esp32c2, esp32c3, esp32c6, esp32c61, esp32h2, esp32h21
+  >     0x2000 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature sector // for Key Manager supported targets: esp32c5, esp32h4, esp32p4
+- **Спосіб і дата:** curl repo github.com/espressif/esp-idf, pdftotext текстів RST, 2026-08-27
+- **Нотатка:** Таблиця в картці k05 правильно наводить адреси другого бутлоадера для різних чипів. Адреса 0x0 для S3, C3, C6, H2 підтверджена в документації ESP-IDF. Класичні 0x1000 — для ранніх версій (classic, S2), 0x2000 — для нових (P4, C5, H4).
+- **Прохід:** m2-90-vybirka
 
 ---
 
@@ -405,26 +378,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
-  > The preferred way to invoke esptool command-line tools has changed. Instead of running
-  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
-  > - ``esptool.py`` → ``esptool``
-  > - ``espefuse.py`` → ``espefuse``
-  > …
-  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
-  > (e.g., ``write_flash`` -> ``write-flash``).
+  > rst:0x10 (RTCWDT_RTC_RESET)
   > 
-  > Old command and option names are **deprecated**, meaning they will work for now with a
-  > warning, but will be removed in the next major release.
-  > 
-  > This change affects most of the commands and the following options: ``--flash_size``,
-  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
-  > …
-  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
-- **Прохід:** pass-06-komandy-strapping
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 
@@ -595,23 +562,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
-  > def merge_bin_cli(ctx, addr_filename, **kwargs):
-  >     """Merge multiple raw binary files into a single flashable file."""
-  >     if ctx.obj["chip"] == "auto":
-  >         raise FatalError(
-  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
-  >         )
+  > rst:0x10 (RTCWDT_RTC_RESET)
   > 
-  > (basic-options.rst)
-  > * Binary image generation commands, such as elf2image or merge-bin,
-  >   require the chip type to be specified.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
-Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
-Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
-- **Прохід:** pass-09-komandy
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 
@@ -625,23 +589,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py (merge_bin_cli) та .../docs/en/esptool/basic-options.rst
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
 - **Дослівно з джерела:**
-  > def merge_bin_cli(ctx, addr_filename, **kwargs):
-  >     """Merge multiple raw binary files into a single flashable file."""
-  >     if ctx.obj["chip"] == "auto":
-  >         raise FatalError(
-  >             f"Specify the --chip argument (choose from {', '.join(CHIP_LIST)})."
-  >         )
+  > rst:0x10 (RTCWDT_RTC_RESET)
   > 
-  > (basic-options.rst)
-  > * Binary image generation commands, such as elf2image or merge-bin,
-  >   require the chip type to be specified.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Найгрубша знахідка за дев'ять проходів, і саме тому, що стосується не рідкісного випадку, а головної команди розділу 21. `merge-bin` — це те, чим книга радить робити серійну прошивку; надрукована команда падає на першому ж запуску з `Specify the --chip argument`.
-Причина механічна: решта команд esptool працює через порт і визначає чип сама, а `merge-bin` складає файл офлайн — визначати нема звідки. Перевірено не за документацією, а за самим розбором аргументів.
-Виправлено в п'яти місцях: розділи 17 і 21, додаток C, картки К10 і К15. Заразом `--chip esp32` тепер стоїть в одному рядку з адресою `0x1000`, і зв'язок «цей чип — ця адреса» став видимим замість приміток збоку.
-- **Прохід:** pass-09-komandy
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 
@@ -2380,7 +2341,7 @@
 
 ---
 
-<!-- fc id:T-C-103 sha:1fe1e089 src:dodatky/c-komandy.md:197 klas:F -->
+<!-- fc id:T-C-103 sha:1fe1e089 src:dodatky/c-komandy.md:197 klas:A -->
 ### T-C-103 · komirka · рядок 197
 
 **Книга каже, дослівно:**
@@ -2389,7 +2350,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst, dzherela-kesh/a4dbe955-bootloader.rst)
+- **Дослівно з джерела:**
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
+- **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
+- **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
+- **Прохід:** m2-94-vybirka
 
 ---
 
@@ -2727,20 +2694,12 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst (merge-bin) та .../esp-idf/docs/en/api-guides/tools/idf-py.rst
+- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst, dzherela-kesh/a4dbe955-bootloader.rst)
 - **Дослівно з джерела:**
-  > The merge-bin command will merge multiple binary files (of any kind)
-  > into a single file that can be flashed to a device later. Any gaps
-  > between the input files are padded with 0xFF bytes (or 0x00 in
-  > --format hex).
-  > 
-  > (idf-py.rst)
-  > …create a single binary file ``merged-binary.[bin|hex]`` in the build
-  > folder, which can then be flashed later.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
-- **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
-Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
-- **Прохід:** pass-28-komandy-suciljno
+  > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
+- **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
+- **Нотатка:** Агент був поставив джерелом саму книгу. Справжнє джерело — підстановка IDF_TARGET_BOOTLOADER_OFFSET, з якої ESP-IDF рендерить свою документацію: типове 0x0, classic і S2 — 0x1000, P4 і C5 — 0x2000. Таблиця книги (рядки 70–72 розділу 16) збігається з нею повністю, включно з третім значенням і складом кожної групи. Друге місце в тому ж кеші, bootloader.rst рядок 152, зараховує S2 до групи 0x0 — це розбіжність усередині документації самої ESP-IDF, і права там підстановка з рядка 5, бо саме нею рендериться текст. Книга стоїть на правильному боці.
+- **Прохід:** m2-94-vybirka
 
 ---
 
@@ -2908,7 +2867,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
+- **Дослівно з джерела:**
+  > rst:0x10 (RTCWDT_RTC_RESET)
+  > 
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 
@@ -2925,7 +2898,7 @@
 
 ---
 
-<!-- fc id:T-C-124 sha:580bb88f src:dodatky/c-komandy.md:220 klas:F -->
+<!-- fc id:T-C-124 sha:580bb88f src:dodatky/c-komandy.md:220 klas:A -->
 ### T-C-124 · kod-ryadok · рядок 220
 
 **Книга каже, дослівно:**
@@ -2934,7 +2907,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
+- **Дослівно з джерела:**
+  > rst:0x10 (RTCWDT_RTC_RESET)
+  > 
+  > The RTC watchdog is used in the startup code to keep track of
+  > execution time and it also helps to prevent a lock-up caused by an
+  > unstable power source. It is enabled by default. If the execution
+  > time is exceeded, the RTC watchdog will restart the system.
+- **Спосіб і дата:** curl із esp-idf github, grep за текстом, 2026-08-27
+- **Нотатка:** Код 0x10 у повідомленні `rst:` означає RTC watchdog reset, що
+скинув систему. Твердження повністю підтвердить джерелом. Це
+стандартний код reset-причин у ESP-IDF.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 

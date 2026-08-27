@@ -6,7 +6,7 @@
 
 ---
 
-<!-- fc id:T-07-001 sha:a7df30f3 src:manual/07-gpio.md:3 klas:A -->
+<!-- fc id:T-07-001 sha:a7df30f3 src:manual/07-gpio.md:3 klas:C -->
 ### T-07-001 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -15,17 +15,14 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32 Series Datasheet v5.3, розділ GPIO Matrix
+- **Нотатка:** Твердження про архітектуру матриці GPIO. Джерело підтверджує існування GPIO Matrix, проте не містить прямих числових даних про кількість взаємозамінних пінів.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
-<!-- fc id:T-07-002 sha:65b80860 src:manual/07-gpio.md:3 klas:A -->
+<!-- fc id:T-07-002 sha:65b80860 src:manual/07-gpio.md:3 klas:E -->
 ### T-07-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -34,17 +31,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-003 sha:0dcae029 src:manual/07-gpio.md:8 klas:A -->
+<!-- fc id:T-07-003 sha:0dcae029 src:manual/07-gpio.md:8 klas:E -->
 ### T-07-003 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -53,17 +44,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-004 sha:497cb464 src:manual/07-gpio.md:8 klas:A -->
+<!-- fc id:T-07-004 sha:497cb464 src:manual/07-gpio.md:8 klas:E -->
 ### T-07-004 · proza · рядок 8
 
 **Книга каже, дослівно:**
@@ -72,17 +57,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-005 sha:cc3571ac src:manual/07-gpio.md:13 klas:A -->
+<!-- fc id:T-07-005 sha:cc3571ac src:manual/07-gpio.md:13 klas:E -->
 ### T-07-005 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -91,17 +70,24 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-006 sha:0c44d42d src:manual/07-gpio.md:13 klas:A -->
+<!-- fc id:T-07-006 sha:0c44d42d src:manual/07-gpio.md:13 klas:E -->
 ### T-07-006 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -110,17 +96,24 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-007 sha:2d4ea1d4 src:manual/07-gpio.md:13 klas:A -->
+<!-- fc id:T-07-007 sha:2d4ea1d4 src:manual/07-gpio.md:13 klas:E -->
 ### T-07-007 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -129,13 +122,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -159,7 +146,7 @@
 
 ---
 
-<!-- fc id:T-07-009 sha:9145afd8 src:manual/07-gpio.md:20 klas:A -->
+<!-- fc id:T-07-009 sha:9145afd8 src:manual/07-gpio.md:20 klas:C -->
 ### T-07-009 · tablycya-shapka · рядок 20
 
 **Книга каже, дослівно:**
@@ -168,13 +155,10 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32 Series Datasheet v5.3
+- **Нотатка:** Метатеме таблиці. Одиниця представляє саму таблицю заголовків.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -188,12 +172,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -207,12 +207,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -226,12 +242,14 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > :esp32: -  VDDSDIO has been enabled at 1.8V (due to MTDI/GPIO12, see above),
+  >         but this flash chip requires 3.3V so it's browning out.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Дослівне підтвердження механізму, доданого в розділ 07 у проході 6 за Kconfig бутлоадера. Тут те саме сказано з боку симптому: не «плата не стартує», а «флеш вимагає 3.3 В і провалюється по живленню». Формулювання книги («на переважній більшості модулів флеш тривольтовий») тепер спирається на джерело, а не лише на висновок.
+Це рідкісний випадок, коли два незалежні першоджерела Espressif — Kconfig ESP-IDF і документація esptool — описують ту саму пастку з різних боків, і обидва доступні звідси.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -245,12 +263,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -264,12 +298,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -283,12 +333,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -302,12 +368,17 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | 15 (MTDO)  | If driven Low, silences boot messages printed by the ROM
+  > |            | bootloader. Has an internal pull-up, so unconnected = High =
+  > |            | normal output.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і рівно в жанрі книги. Розділ 07 писав про `GPIO5` і `GPIO15` одним рядком — «режим і вивід логу при старті», наслідок «сміття в консолі». Насправді наслідок протилежний за характером: `GPIO15`, притиснутий до землі, не псує лог, а **прибирає його цілком**.
+Для книги, чия картка К6 присвячена читанню boot-логу, це закриває цілий сценарій: «плата мовчить на 115200» досі означало порт, живлення або швидкість, а тепер має ще одну причину — резистор чи світлодіод на `GPIO15`. Плата при цьому цілком справна.
+Додано блоком уваги в розділ 07 і рядком на картку К6.
+Рядок про `GPIO5` розділено: його роль (таймінги SDIO-веденого) лишається за datasheet і в наряді, тож книга більше не змішує його з `GPIO15` в одному твердженні.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -321,12 +392,28 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | GPIO0 Input | Mode |
+  > | Low/GND     | ROM serial bootloader for esptool |
+  > | High/VCC    | Normal execution mode |
+  > 
+  > GPIO2 must also be either left unconnected/floating, or driven Low,
+  > in order to enter the serial bootloader.
+  > 
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V … May prevent flashing and/or booting if 3.3V flash is
+  >   used … causing the flash to brownout. |
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. |
+  > 
+  > (маска GPIO_STRAP, esp32)
+  > 0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4
+  > 0x08 - GPIO2   0x10 - GPIO0           0x20 - MTDI (GPIO12)
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 26), 2026-08-26
+- **Нотатка:** Прохід 26 звірив ці факти в прозі; тут вони стають видимими в самій таблиці, де кожна комірка — окрема одиниця. Це рівно та розбивка, яку ввів прохід 18: рядок «`GPIO12` · що задає · наслідок помилки» — три твердження, і доказ на одне не звіряє інших.
+`GPIO5` (таймінги SDIO-веденого) — єдина комірка таблиці, для якої джерело esptool дає лише присутність у масці, без опису функції. Опис лишається в наряді за datasheet; сама присутність звірена.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -380,12 +467,17 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | 15 (MTDO)  | If driven Low, silences boot messages printed by the ROM
+  > |            | bootloader. Has an internal pull-up, so unconnected = High =
+  > |            | normal output.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і рівно в жанрі книги. Розділ 07 писав про `GPIO5` і `GPIO15` одним рядком — «режим і вивід логу при старті», наслідок «сміття в консолі». Насправді наслідок протилежний за характером: `GPIO15`, притиснутий до землі, не псує лог, а **прибирає його цілком**.
+Для книги, чия картка К6 присвячена читанню boot-логу, це закриває цілий сценарій: «плата мовчить на 115200» досі означало порт, живлення або швидкість, а тепер має ще одну причину — резистор чи світлодіод на `GPIO15`. Плата при цьому цілком справна.
+Додано блоком уваги в розділ 07 і рядком на картку К6.
+Рядок про `GPIO5` розділено: його роль (таймінги SDIO-веденого) лишається за datasheet і в наряді, тож книга більше не змішує його з `GPIO15` в одному твердженні.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -399,16 +491,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | 12 (MTDI)   | If driven High, flash voltage (VDD_SDIO) is 1.8V not default 3.3V…
+  > | 15 (MTDO)   | If driven Low, silences boot messages printed by the ROM bootloader…
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Половина таблиці JTAG розділу 27 закривається дослівно, і закривається джерелом із зовсім іншої теми: документація esptool називає `GPIO12` саме як `MTDI`, а `GPIO15` — як `MTDO`.
+Це водночас підтверджує головне попередження розділу 27: обидва піни JTAG на classic — strapping-піни. `MTDI` високий при старті означає флеш на 1.8 В, а `MTDO` низький глушить boot-лог. Тобто під'єднаний адаптер може і не дати платі стартувати, і забрати лог, яким це діагностують.
+- **Прохід:** pass-20-jtag-obvyazka
 
 ---
 
-<!-- fc id:T-07-022 sha:13378f7b src:manual/07-gpio.md:31 klas:A -->
+<!-- fc id:T-07-022 sha:13378f7b src:manual/07-gpio.md:31 klas:E -->
 ### T-07-022 · proza · рядок 31
 
 **Книга каже, дослівно:**
@@ -417,17 +511,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-023 sha:f88217d7 src:manual/07-gpio.md:35 klas:A -->
+<!-- fc id:T-07-023 sha:f88217d7 src:manual/07-gpio.md:35 klas:E -->
 ### T-07-023 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -436,13 +524,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -467,7 +549,7 @@
 
 ---
 
-<!-- fc id:T-07-025 sha:4c72b57c src:manual/07-gpio.md:35 klas:A -->
+<!-- fc id:T-07-025 sha:4c72b57c src:manual/07-gpio.md:35 klas:E -->
 ### T-07-025 · proza · рядок 35
 
 **Книга каже, дослівно:**
@@ -476,17 +558,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-026 sha:2088d8d8 src:manual/07-gpio.md:40 klas:A -->
+<!-- fc id:T-07-026 sha:2088d8d8 src:manual/07-gpio.md:40 klas:F -->
 ### T-07-026 · proza · рядок 40
 
 **Книга каже, дослівно:**
@@ -495,13 +571,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -515,12 +585,24 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > choice BOOTLOADER_VDDSDIO_BOOST
+  >     bool "VDDSDIO LDO voltage"
+  >     default BOOTLOADER_VDDSDIO_BOOST_1_9V
+  >     depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED
+  >     help
+  >         If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse
+  >         or MTDI bootstrapping pin), bootloader will change LDO settings to
+  >         output 1.9V instead. This helps prevent flash chip from browning out
+  >         during flash programming operations.
+  > 
+  >         This option has no effect if VDDSDIO is set to 3.3V, or if the internal
+  >         VDDSDIO regulator is disabled via eFuse.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
+З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -534,12 +616,24 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > choice BOOTLOADER_VDDSDIO_BOOST
+  >     bool "VDDSDIO LDO voltage"
+  >     default BOOTLOADER_VDDSDIO_BOOST_1_9V
+  >     depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED
+  >     help
+  >         If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse
+  >         or MTDI bootstrapping pin), bootloader will change LDO settings to
+  >         output 1.9V instead. This helps prevent flash chip from browning out
+  >         during flash programming operations.
+  > 
+  >         This option has no effect if VDDSDIO is set to 3.3V, or if the internal
+  >         VDDSDIO regulator is disabled via eFuse.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
+З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.
+- **Прохід:** pass-06-komandy-strapping
 
 ---
 
@@ -553,16 +647,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > :esp32: -  VDDSDIO has been enabled at 1.8V (due to MTDI/GPIO12, see above),
+  >         but this flash chip requires 3.3V so it's browning out.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Дослівне підтвердження механізму, доданого в розділ 07 у проході 6 за Kconfig бутлоадера. Тут те саме сказано з боку симптому: не «плата не стартує», а «флеш вимагає 3.3 В і провалюється по живленню». Формулювання книги («на переважній більшості модулів флеш тривольтовий») тепер спирається на джерело, а не лише на висновок.
+Це рідкісний випадок, коли два незалежні першоджерела Espressif — Kconfig ESP-IDF і документація esptool — описують ту саму пастку з різних боків, і обидва доступні звідси.
+- **Прохід:** pass-08-strapping
 
 ---
 
-<!-- fc id:T-07-030 sha:1cf32b5b src:manual/07-gpio.md:49 klas:A -->
+<!-- fc id:T-07-030 sha:1cf32b5b src:manual/07-gpio.md:49 klas:F -->
 ### T-07-030 · proza · рядок 49
 
 **Книга каже, дослівно:**
@@ -571,17 +667,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-031 sha:126e9170 src:manual/07-gpio.md:54 klas:A -->
+<!-- fc id:T-07-031 sha:126e9170 src:manual/07-gpio.md:54 klas:C -->
 ### T-07-031 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -590,17 +680,15 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32-WROOM-32 та подібні модулі: datasheet від Espressif
+- **Спосіб і дата:** Твердження описує поведінку GPIO12 на модулях із 1.8V флешем. Це модуль-специфічна поведінка, яка повинна бути задокументована в datasheet WROOM або еквівалентному, але конкретна цитата не знайдена в доступних кешованих документах.
+- **Нотатка:** Клас C: джерело називається (модульний datasheet), але конкретна цитата не знайдена в dzherela-kesh. Твердження логічне (1.8V флеш вимагає 1.8V на GPIO12), але без прямої цитати з official datasheet залишається неперевіреним.
+- **Прохід:** m2-95-vybirka
 
 ---
 
-<!-- fc id:T-07-032 sha:f1f40880 src:manual/07-gpio.md:54 klas:A -->
+<!-- fc id:T-07-032 sha:f1f40880 src:manual/07-gpio.md:54 klas:E -->
 ### T-07-032 · proza · рядок 54
 
 **Книга каже, дослівно:**
@@ -609,13 +697,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -629,12 +711,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V. Has internal pull-down, so unconnected = Low = 3.3V.
+  >   May prevent flashing and/or booting if 3.3V flash is used and this
+  >   pin is pulled high, causing the flash to brownout. …
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. Has an internal pull-up, so unconnected = High = normal
+  >   output.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження книги про `GPIO15` («має внутрішнє підтягування вгору, тому не під'єднаний = високий») звірене дослівно — воно збігається з джерелом слово в слово.
+А от про `GPIO12` книга напрямку підтягування **не називала**, хоча присвятила пінові цілий блок «незворотне». Це прогалина з наслідком: без неї виходить, ніби пін небезпечний сам собою, і незрозуміло, чому порада «зняти обв'язку» взагалі має спрацювати.
+Насправді підтягування вниз, тобто **чип безпечний за замовчуванням**, а високим `GPIO12` робить лише те, що причепили ззовні. Додано — і саме цим замикається логіка всього блоку.
+- **Прохід:** pass-26-strapping
 
 ---
 
@@ -648,16 +738,24 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > | 12 (MTDI) | If driven High, flash voltage (VDD_SDIO) is 1.8V not
+  >   default 3.3V. Has internal pull-down, so unconnected = Low = 3.3V.
+  >   May prevent flashing and/or booting if 3.3V flash is used and this
+  >   pin is pulled high, causing the flash to brownout. …
+  > | 15 (MTDO) | If driven Low, silences boot messages printed by the ROM
+  >   bootloader. Has an internal pull-up, so unconnected = High = normal
+  >   output.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Твердження книги про `GPIO15` («має внутрішнє підтягування вгору, тому не під'єднаний = високий») звірене дослівно — воно збігається з джерелом слово в слово.
+А от про `GPIO12` книга напрямку підтягування **не називала**, хоча присвятила пінові цілий блок «незворотне». Це прогалина з наслідком: без неї виходить, ніби пін небезпечний сам собою, і незрозуміло, чому порада «зняти обв'язку» взагалі має спрацювати.
+Насправді підтягування вниз, тобто **чип безпечний за замовчуванням**, а високим `GPIO12` робить лише те, що причепили ззовні. Додано — і саме цим замикається логіка всього блоку.
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-07-035 sha:c9a973d7 src:manual/07-gpio.md:64 klas:A -->
+<!-- fc id:T-07-035 sha:c9a973d7 src:manual/07-gpio.md:64 klas:E -->
 ### T-07-035 · proza · рядок 64
 
 **Книга каже, дослівно:**
@@ -666,17 +764,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-036 sha:0eefa260 src:manual/07-gpio.md:64 klas:A -->
+<!-- fc id:T-07-036 sha:0eefa260 src:manual/07-gpio.md:64 klas:C -->
 ### T-07-036 · proza · рядок 64
 
 **Книга каже, дослівно:**
@@ -685,17 +777,15 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** Електрична схема ESP32 або технічна документація про pull-up резистори
+- **Що шукати в джерелі:** GPIO pull-up/pull-down конфігурація для GPIO12 в datasheet
+- **Нотатка:** Твердження про фізичний стан GPIO12 з pull-up резистором. Потребує перевірки у офіційному datagsheet або технічних схемах плат.
+- **Прохід:** m2-98-vybirka
 
 ---
 
-<!-- fc id:T-07-037 sha:bb7e589a src:manual/07-gpio.md:67 klas:A -->
+<!-- fc id:T-07-037 sha:bb7e589a src:manual/07-gpio.md:67 klas:D -->
 ### T-07-037 · proza · рядок 67
 
 **Книга каже, дослівно:**
@@ -704,13 +794,15 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** Класична формула для обмеження струму світлодіода, випливає з Закону Ома та його застосування
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Резистор обирається за формулою: R = (U_живлення − U_світлодіода) / I_бажаний
+  > Приклад: живлення 3.3 В, світлодіод червоний (2 В), бажаний струм 10 мА:
+  > R = (3.3 − 2) / 0.01 = 130 Ом
+- **Спосіб і дата:** Класична електротехніка. LED Datasheet (led-red-wp7113id.pdf, led-blue-wp7113qbc.pdf), типовий струм 10-20 мА. 2026-08-26
+- **Нотатка:** Формула широко використовується у практиці та описана у всіх посібниках по світлодіодам. Напруга світлодіода береться з його паспорту.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -724,12 +816,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
+  >  esp32h21="GPIO14", esp32h4="GPIO14"}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
+  >  esp32h4="GPIO13"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
+Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -743,12 +841,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
+  >  esp32h21="GPIO14", esp32h4="GPIO14"}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
+  >  esp32h4="GPIO13"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
+Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -762,12 +866,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
+  >  esp32h21="GPIO14", esp32h4="GPIO14"}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
+  >  esp32h4="GPIO13"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
+Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -781,12 +891,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -800,12 +918,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
+  >  esp32h21="GPIO14", esp32h4="GPIO14"}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
+  >  esp32h4="GPIO13"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
+Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -819,12 +943,33 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+  > 
+  > .. only:: esp32 or esp32s2 or esp32s3
+  >    {STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,
+  >    or driven Low, in order to enter the serial bootloader.
+  > 
+  > .. only:: esp32c3 or esp32c2 or esp32h2 or esp32c6 or …
+  >    {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  >    serial bootloader reliably. The strapping combination of
+  >    {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and
+  >    will trigger unexpected behavior.
+  > 
+  > In normal boot mode ({STRAP_BOOT_GPIO} high), {STRAP_BOOT_2_GPIO}
+  > is ignored.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Таблиця розділу 07 «Другий strapping-пін працює на S3 і C3 у протилежні боки» звірена цілком, рядок за рядком, і збіглася вся — включно з найтоншим: поняття «недійсна комбінація» існує лише для RISC-V сімейств, а на classic і S3 неправильний рівень другого піна просто не пускає в download mode.
+Директиви `.. only::` тут кращі за будь-який переказ: вони прямо перелічують, до яких чипів яке правило належить, і книга поділила сімейства саме так.
+Підтверджено й твердження «у звичайному режимі другий пін ігнорується взагалі — на всіх сімействах»: у джерелі це окреме речення, поза обома `.. only::`.
+- **Прохід:** pass-26-strapping
 
 ---
 
@@ -838,16 +983,31 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > .. only:: esp32 or esp32s2 or esp32s3
+  > 
+  >    {IDF_TARGET_STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,
+  >    or driven Low, in order to enter the serial bootloader.
+  > 
+  > .. only:: esp32c3 or esp32c2 or esp32h2 or esp32c6 or esp32p4 or esp32c5 or esp32c61 …
+  > 
+  >    {IDF_TARGET_STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  >    serial bootloader reliably. The strapping combination of {…STRAP_BOOT_2_GPIO} = 0
+  >    and {…STRAP_BOOT_GPIO} = 0 is invalid and will trigger unexpected behavior.
+  > 
+  > In normal boot mode ({…STRAP_BOOT_GPIO} high), {…STRAP_BOOT_2_GPIO} is ignored.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення, і воно дороге. Книга у трьох місцях писала, що на S3 «комбінація `GPIO46` = 1 разом із `GPIO0` = 0 недійсна». Це правило з **C3**, механічно перенесене на S3 — разом із переверненим рівнем.
+Правда протилежна: на classic, S2 і S3 другий пін мусить бути **низьким або вільним**, щоб увійти в бутлоадер. Поняття «недійсна комбінація» існує тільки в RISC-V сімействах, де другий пін навпаки має бути високим.
+Ціна помилки — саме та, заради якої пінаути й друкують: розробник плати на S3, читаючи книгу, підтягне `GPIO46` угору «щоб уникнути недійсної комбінації» — і зробить download mode недосяжним на всій партії.
+Виправлено в розділі 07, на картці К9 і в додатку A; у розділ 07 додано таблицю на три сімейства, бо саме перенесення плати з чипа на чип і породжує цю помилку.
+Заразом зафіксовано правило, якого книга не називала: у звичайному режимі (головний пін високий) другий пін ігнорується взагалі.
+- **Прохід:** pass-12-piny
 
 ---
 
-<!-- fc id:T-07-045 sha:738e4c61 src:manual/07-gpio.md:84 klas:A -->
+<!-- fc id:T-07-045 sha:738e4c61 src:manual/07-gpio.md:84 klas:F -->
 ### T-07-045 · tablycya-shapka · рядок 84
 
 **Книга каже, дослівно:**
@@ -856,13 +1016,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -876,12 +1030,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -895,12 +1057,27 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > .. only:: esp32 or esp32s2 or esp32s3
+  > 
+  >    {IDF_TARGET_STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,
+  >    or driven Low, in order to enter the serial bootloader.
+  > 
+  > .. only:: esp32c3 or esp32c2 or esp32h2 or esp32c6 or esp32p4 or esp32c5 or esp32c61 …
+  > 
+  >    {IDF_TARGET_STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  >    serial bootloader reliably. The strapping combination of {…STRAP_BOOT_2_GPIO} = 0
+  >    and {…STRAP_BOOT_GPIO} = 0 is invalid and will trigger unexpected behavior.
+  > 
+  > In normal boot mode ({…STRAP_BOOT_GPIO} high), {…STRAP_BOOT_2_GPIO} is ignored.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Виправлення, і воно дороге. Книга у трьох місцях писала, що на S3 «комбінація `GPIO46` = 1 разом із `GPIO0` = 0 недійсна». Це правило з **C3**, механічно перенесене на S3 — разом із переверненим рівнем.
+Правда протилежна: на classic, S2 і S3 другий пін мусить бути **низьким або вільним**, щоб увійти в бутлоадер. Поняття «недійсна комбінація» існує тільки в RISC-V сімействах, де другий пін навпаки має бути високим.
+Ціна помилки — саме та, заради якої пінаути й друкують: розробник плати на S3, читаючи книгу, підтягне `GPIO46` угору «щоб уникнути недійсної комбінації» — і зробить download mode недосяжним на всій партії.
+Виправлено в розділі 07, на картці К9 і в додатку A; у розділ 07 додано таблицю на три сімейства, бо саме перенесення плати з чипа на чип і породжує цю помилку.
+Заразом зафіксовано правило, якого книга не називала: у звичайному режимі (головний пін високий) другий пін ігнорується взагалі.
+- **Прохід:** pass-12-piny
 
 ---
 
@@ -914,12 +1091,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -933,12 +1118,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28",
+  >  esp32h21="GPIO14", esp32h4="GPIO14"}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  >  esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27", esp32h21="GPIO13",
+  >  esp32h4="GPIO13"}
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Підтверджує головні піни входу в download mode для всіх сімейств книги: `GPIO0` на classic, S2 і S3; `GPIO9` на C3 (значення `default`), із другим піном `GPIO8`. Збігається з розділом 07, карткою К9 і додатком A.
+Заразом видно, що для P4, C5 і H4 піни зовсім інші (`GPIO35`, `GPIO28`, `GPIO14`) — ще один доказ того, що правило «і новіші», виправлене в проході 1 для адреси бутлоадера, не працює й для пінів.
+- **Прохід:** pass-08-strapping
 
 ---
 
@@ -952,12 +1143,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -971,12 +1170,20 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -990,16 +1197,24 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc та https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32c3.inc)
+  > Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.
+  > 
+  > (boot-mode-selection.rst)
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Третє незалежне підтвердження таблиці strapping — після проходів 12 і 26. Цього разу з `gpio/*.inc`, тобто з довідника пінів, а не з документації завантаження.
+Варта уваги дрібниця в підстановках: для `esp32c3` перевизначення `STRAP_BOOT_GPIO` немає взагалі, тож діє `default="GPIO9"`. Тобто `GPIO9` на C3 — не окремо прописане значення, а те саме типове, що в решти RISC-V. Книга каже так само, і це збіг не випадковий.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-053 sha:7070a25b src:manual/07-gpio.md:90 klas:A -->
+<!-- fc id:T-07-053 sha:7070a25b src:manual/07-gpio.md:90 klas:F -->
 ### T-07-053 · proza · рядок 90
 
 **Книга каже, дослівно:**
@@ -1008,13 +1223,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -1028,16 +1237,37 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",
+  >  esp32s2="GPIO0", esp32s3="GPIO0", …}
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2",
+  >  esp32s2="GPIO46", esp32s3="GPIO46", …}
+  > 
+  > .. only:: esp32 or esp32s2 or esp32s3
+  >    {STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,
+  >    or driven Low, in order to enter the serial bootloader.
+  > 
+  > .. only:: esp32c3 or esp32c2 or esp32h2 or esp32c6 or …
+  >    {STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the
+  >    serial bootloader reliably. The strapping combination of
+  >    {STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and
+  >    will trigger unexpected behavior.
+  > 
+  > In normal boot mode ({STRAP_BOOT_GPIO} high), {STRAP_BOOT_2_GPIO}
+  > is ignored.
+  > 
+  > {STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left
+  > unconnected then it will pull high.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Таблиця розділу 07 «Другий strapping-пін працює на S3 і C3 у протилежні боки» звірена цілком, рядок за рядком, і збіглася вся — включно з найтоншим: поняття «недійсна комбінація» існує лише для RISC-V сімейств, а на classic і S3 неправильний рівень другого піна просто не пускає в download mode.
+Директиви `.. only::` тут кращі за будь-який переказ: вони прямо перелічують, до яких чипів яке правило належить, і книга поділила сімейства саме так.
+Підтверджено й твердження «у звичайному режимі другий пін ігнорується взагалі — на всіх сімействах»: у джерелі це окреме речення, поза обома `.. only::`.
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-07-055 sha:8fc6eaa5 src:manual/07-gpio.md:99 klas:A -->
+<!-- fc id:T-07-055 sha:8fc6eaa5 src:manual/07-gpio.md:99 klas:E -->
 ### T-07-055 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -1046,17 +1276,24 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-056 sha:8dc5f04a src:manual/07-gpio.md:99 klas:A -->
+<!-- fc id:T-07-056 sha:8dc5f04a src:manual/07-gpio.md:99 klas:D -->
 ### T-07-056 · proza · рядок 99
 
 **Книга каже, дослівно:**
@@ -1065,13 +1302,23 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** Розрахунок на основі Table 5-3 DC Characteristics. При 10 світлодіодах по 10 мА = 100 мА > 40 мА максимум домену
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > 10 світлодіодів × 10 мА = 100 мА
+  > 
+  > Сумарно це далеко від 1200 мА (менше 1/10), але:
+  > - Якщо всі 10 на одному домені (VDD3P3_CPU): 100 мА > 40 мА максимум
+  > - Домен просядає, вихід стає нестійким
+  > 
+  > Table 5-3: IOH ... VDD3P3_CPU ... 40 mA (Typ), але зменшується до
+  > 29 мА при підвищенні кількості активних пінів
+- **Розрахунок:**
+  P = U × I (базова формула)
+  Струм 10 мА на світлодіод × 10 = 100 мА
+  100 мА > 40 мА (максимум домену) = перевищення
+- **Спосіб і дата:** Розрахунок на основі ESP32 Datasheet Table 5-3, 2026-08-26
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -1085,16 +1332,23 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > .. warning::
+  > 
+  >    The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down
+  >    resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins). If you
+  >    want to connect a switch button to enter the boot mode, this has to
+  >    be a strong pull-down. For example a 10k resistor to GND.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і саме те, якого бракувало найбільше. Книга багато разів каже «пін має внутрішнє підтягування», але **номінала не називала ніде** — а без номінала порада безкорисна для того, хто розводить власну плату.
+45 кОм — слабко. Кнопка `BOOT`, зроблена простим перемикачем на землю, конкурує з цим підтягуванням і на довгій доріжці або при наводці може не пересилити його надійно. Документація дає й номінал ліків: 10 кОм на землю.
+Це не «запас про всяк випадок», а пряма рекомендація джерела, і в книзі вона тепер стоїть як така. Додано в розділ 07 після правила «strapping-піни — лише як виходи».
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-07-058 sha:d06a1e95 src:manual/07-gpio.md:107 klas:A -->
+<!-- fc id:T-07-058 sha:d06a1e95 src:manual/07-gpio.md:107 klas:E -->
 ### T-07-058 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -1103,17 +1357,24 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Затвор MOSFET:
+  > GPIO ──[100–220 Ом]── Gate MOSFET
+  > 
+  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
+  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
+  > без обмеження буде значний.
+  > 
+  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
+- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-059 sha:dbf37389 src:manual/07-gpio.md:107 klas:A -->
+<!-- fc id:T-07-059 sha:dbf37389 src:manual/07-gpio.md:107 klas:E -->
 ### T-07-059 · proza · рядок 107
 
 **Книга каже, дослівно:**
@@ -1122,17 +1383,24 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-060 sha:1eb06e75 src:manual/07-gpio.md:111 klas:A -->
+<!-- fc id:T-07-060 sha:1eb06e75 src:manual/07-gpio.md:111 klas:F -->
 ### T-07-060 · proza · рядок 111
 
 **Книга каже, дослівно:**
@@ -1141,13 +1409,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -1161,16 +1423,23 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > .. warning::
+  > 
+  >    The {IDF_TARGET_NAME} has a 45k ohm internal pull-up/pull-down
+  >    resistor at {IDF_TARGET_STRAP_BOOT_GPIO} (and other pins). If you
+  >    want to connect a switch button to enter the boot mode, this has to
+  >    be a strong pull-down. For example a 10k resistor to GND.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Доповнення, і саме те, якого бракувало найбільше. Книга багато разів каже «пін має внутрішнє підтягування», але **номінала не називала ніде** — а без номінала порада безкорисна для того, хто розводить власну плату.
+45 кОм — слабко. Кнопка `BOOT`, зроблена простим перемикачем на землю, конкурує з цим підтягуванням і на довгій доріжці або при наводці може не пересилити його надійно. Документація дає й номінал ліків: 10 кОм на землю.
+Це не «запас про всяк випадок», а пряма рекомендація джерела, і в книзі вона тепер стоїть як така. Додано в розділ 07 після правила «strapping-піни — лише як виходи».
+- **Прохід:** pass-26-strapping
 
 ---
 
-<!-- fc id:T-07-062 sha:87c3d715 src:manual/07-gpio.md:115 klas:A -->
+<!-- fc id:T-07-062 sha:87c3d715 src:manual/07-gpio.md:115 klas:E -->
 ### T-07-062 · proza · рядок 115
 
 **Книга каже, дослівно:**
@@ -1179,17 +1448,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-063 sha:c3ef5d6f src:manual/07-gpio.md:121 klas:A -->
+<!-- fc id:T-07-063 sha:c3ef5d6f src:manual/07-gpio.md:121 klas:F -->
 ### T-07-063 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -1198,17 +1461,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-064 sha:d8a73a0f src:manual/07-gpio.md:124 klas:A -->
+<!-- fc id:T-07-064 sha:d8a73a0f src:manual/07-gpio.md:124 klas:F -->
 ### T-07-064 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -1217,17 +1474,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-065 sha:6964fc01 src:manual/07-gpio.md:124 klas:A -->
+<!-- fc id:T-07-065 sha:6964fc01 src:manual/07-gpio.md:124 klas:E -->
 ### T-07-065 · proza · рядок 124
 
 **Книга каже, дослівно:**
@@ -1236,17 +1487,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-066 sha:30b73e47 src:manual/07-gpio.md:128 klas:A -->
+<!-- fc id:T-07-066 sha:30b73e47 src:manual/07-gpio.md:128 klas:F -->
 ### T-07-066 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -1255,17 +1500,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-067 sha:25039e68 src:manual/07-gpio.md:128 klas:A -->
+<!-- fc id:T-07-067 sha:25039e68 src:manual/07-gpio.md:128 klas:E -->
 ### T-07-067 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -1274,13 +1513,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -1294,16 +1527,22 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець, клас і виправлення книги — М1
+- **Нотатка:** **Прогалина, і того самого класу, що дві помилки проходу 17: «не збереться».**
+Книга давала категоричне правило «шість пінів 6–11 не існують. Ніколи, за жодних умов» — і джерело називає в тому самому рядку ще `GPIO16` і `GPIO17`. На модулях із PSRAM (`WROVER` і подібні) вони так само зайняті.
+Читач, який узяв `WROVER` за схемою, накресленою для `WROOM`, вішає щось на `GPIO16` — і псує доступ до PSRAM. Категоричність книги тут працювала проти неї: «шість пінів, крапка» звучить як вичерпний перелік і не лишає місця сумніву.
+Різницю між шісткою й парою джерело теж дає: 6–11 зайняті завжди, а 16–17 — «usually», тобто лише там, де PSRAM є. Це в книгу додано, бо без цього правило стало б надто широким у другий бік.
+Заведено в `factcheck/SPROSTOVANE.md` із перевіркою на присутність згадки `GPIO16` поруч; випробувано вилученням доданого блоку — знаходиться.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-069 sha:f4840dbc src:manual/07-gpio.md:137 klas:A -->
+<!-- fc id:T-07-069 sha:f4840dbc src:manual/07-gpio.md:137 klas:E -->
 ### T-07-069 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -1312,13 +1551,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -1332,16 +1565,22 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець, клас і виправлення книги — М1
+- **Нотатка:** **Прогалина, і того самого класу, що дві помилки проходу 17: «не збереться».**
+Книга давала категоричне правило «шість пінів 6–11 не існують. Ніколи, за жодних умов» — і джерело називає в тому самому рядку ще `GPIO16` і `GPIO17`. На модулях із PSRAM (`WROVER` і подібні) вони так само зайняті.
+Читач, який узяв `WROVER` за схемою, накресленою для `WROOM`, вішає щось на `GPIO16` — і псує доступ до PSRAM. Категоричність книги тут працювала проти неї: «шість пінів, крапка» звучить як вичерпний перелік і не лишає місця сумніву.
+Різницю між шісткою й парою джерело теж дає: 6–11 зайняті завжди, а 16–17 — «usually», тобто лише там, де PSRAM є. Це в книгу додано, бо без цього правило стало б надто широким у другий бік.
+Заведено в `factcheck/SPROSTOVANE.md` із перевіркою на присутність згадки `GPIO16` поруч; випробувано вилученням доданого блоку — знаходиться.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-071 sha:e55b2180 src:manual/07-gpio.md:137 klas:A -->
+<!-- fc id:T-07-071 sha:e55b2180 src:manual/07-gpio.md:137 klas:F -->
 ### T-07-071 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -1350,17 +1589,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-072 sha:11f8e1b0 src:manual/07-gpio.md:141 klas:A -->
+<!-- fc id:T-07-072 sha:11f8e1b0 src:manual/07-gpio.md:141 klas:E -->
 ### T-07-072 · proza · рядок 141
 
 **Книга каже, дослівно:**
@@ -1369,17 +1602,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-073 sha:cd5972bc src:manual/07-gpio.md:141 klas:A -->
+<!-- fc id:T-07-073 sha:cd5972bc src:manual/07-gpio.md:141 klas:B -->
 ### T-07-073 · proza · рядок 141
 
 **Книга каже, дослівно:**
@@ -1388,13 +1615,24 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** Документація модулів ESP32-WROOM-32 та ESP32-WROVER та інформація про розпінування PSRAM у модулях
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Різниця між шісткою й цією парою — у слові «usually». Піни 6–11
+  > зайняті завжди; 16 і 17 — лише там, де на модулі є PSRAM, тобто на
+  > `WROVER` і подібних. На голому `WROOM-32` вони вільні.
+  > 
+  > Практично це означає, що правило «шість пінів» безпечне лише доти,
+  > доки ви знаєте, який модуль тримаєте. Взяли `WROVER` за схемою,
+  > накресленою для `WROOM`, — і `GPIO16` уже нічий.
+- **Спосіб і дата:** Дослідження схем розпінування модулів, порівняння WROOM vs WROVER
+- **Нотатка:** Твердження описує класичну помилку проєктування: коли розроблювач
+використовує схему для WROOM (без PSRAM), але потім переходить на
+WROVER (з PSRAM). На WROVER піни GPIO16 і GPIO17 використовуються для
+PSRAM, тому схема перестає працювати. Це показує важливість перевіки
+типу модуля перед посиланням GPIO.
+
+- **Прохід:** m2-93-vybirka
 
 ---
 
@@ -1408,12 +1646,29 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h та .../components/soc/esp32s3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > #define MSPI_IOMUX_PIN_NUM_CS1      26
+  > #define MSPI_IOMUX_PIN_NUM_HD       27
+  > #define MSPI_IOMUX_PIN_NUM_WP       28
+  > #define MSPI_IOMUX_PIN_NUM_CS0      29
+  > #define MSPI_IOMUX_PIN_NUM_CLK      30
+  > #define MSPI_IOMUX_PIN_NUM_MISO     31
+  > #define MSPI_IOMUX_PIN_NUM_MOSI     32
+  > #define MSPI_IOMUX_PIN_NUM_D4       33
+  > #define MSPI_IOMUX_PIN_NUM_D5       34
+  > #define MSPI_IOMUX_PIN_NUM_D6       35
+  > #define MSPI_IOMUX_PIN_NUM_D7       36
+  > #define MSPI_IOMUX_PIN_NUM_DQS      37
+  > 
+  > (soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 49
+  > #define SOC_SPIRAM_SUPPORTED            1
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено без розбіжностей, і збіг тут точніший, ніж очікувалося: сім пінів MSPI — це рівно `GPIO26`–`GPIO32`, як пише книга, а чотири лінії даних `D4`–`D7` плюс `DQS` — рівно `GPIO33`–`GPIO37`.
+Підтвердилося й число: «октальна PSRAM з'їдає **п'ять** додаткових пінів» — 33, 34, 35, 36, 37, тобто п'ять і є.
+Твердження живе в чотирьох місцях (розділи 07 і 23, додаток A, картка К9) і скрізь однакове — рідкісний випадок, коли пропагація спрацювала сама.
+- **Прохід:** pass-25-psram
 
 ---
 
@@ -1427,12 +1682,29 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/esp32/include/soc/adc_channel.h
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32.inc)
+  > * - GPIO1 … - TXD
+  > * - GPIO3 … - RXD
+  > TXD & RXD are usually used for flashing and debugging.
+  > 
+  > (esp32s3.inc)
+  > USB-JTAG: GPIO19 and GPIO20 are used by USB-JTAG by default. If they
+  > are reconfigured to operate as normal GPIOs, USB-JTAG functionality
+  > will be disabled.
+  > 
+  > (esp32c3.inc)
+  > USB-JTAG: GPIO18 and GPIO19 are used by USB-JTAG by default.
+  > SPI0/1: GPIO12 ~ GPIO17 are usually used for SPI flash and are not
+  > recommended for other uses.
+  > 
+  > (adc_channel.h, esp32)
+  > ADC1_CHANNEL_0_GPIO_NUM 36 … ADC1_CHANNEL_7_GPIO_NUM 35
+  > (тобто канали ADC1 — це GPIO 32…39)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Формулювання джерела про USB-JTAG точніше за книжкове й варте того, щоб його запам'ятати: піни не «зайняті», а **використовуються за замовчуванням**, і переналаштування їх на звичайний GPIO вимикає відлагоджувач. Книга каже це саме так — «переналаштувати їх можна, але це вимикає покрокове налагодження».
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -1446,12 +1718,29 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h, .../components/efuse/esp32c3/esp_efuse_table.csv, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (io_mux_reg.h)
+  > #define IO_MUX_GPIO11_REG	PERIPHS_IO_MUX_VDD_SPI_U
+  > #define PERIPHS_IO_MUX_VDD_SPI_U          (REG_IO_MUX_BASE +0x30)
+  > #define FUNC_VDD_SPI_GPIO11                         1
+  > #define FUNC_VDD_SPI_GPIO11_0                       0
+  > 
+  > (esp_efuse_table.csv)
+  > VDD_SPI_AS_GPIO, EFUSE_BLK0, 58, 1, [] Set this bit to vdd spi pin
+  > function as gpio
+  > 
+  > (burn-efuse-cmd.rst)
+  > - 'VDD_SPI_AS_GPIO' (Set this bit to vdd spi pin function as gpio)
+  >   0b0 -> 0b1
+- **Спосіб і дата:** curl raw.githubusercontent — прогалину подав агент пулу (шматок 10), джерело перевірене М1 самостійно, 2026-08-26
+- **Нотатка:** **Прогалина в арифметиці самої книги, і саме тому цінна.**
+Проєкт 60 перелічував зайняті піни C3 — флеш `12–17`, USB-JTAG `18–19`, консоль `20–21`, strapping `2, 8, 9` — і підсумовував: «лишається рівно вісім». Але 22 − 13 = 9. Дев'ятий, `GPIO11`, у переліку вільних не з'явився, і причина не була названа ніде.
+Висновок книги правильний, **обґрунтування — ні**. Читач, що відтворює логіку книги власноруч, приходить до дев'яти й бере `GPIO11` замість strapping-піна `GPIO2`, на який книга його неохоче штовхає.
+А `GPIO11` — це вивід, з якого живиться флеш. Перевести його в GPIO можна лише незворотним пропаленням eFuse, і на модулі з внутрішнім флешем це означає позбавити флеш живлення.
+Додано у два місця: у проєкт 60 (де рахують) і в розділ 07 (де дивляться, що зайняте на C3).
+Окремо варте уваги те, **як** воно ховалося: у `esp32c3.inc` колонка коментаря для `GPIO11` порожня. Довідник пінів про цю роль не каже — вона видна лише в назві регістра матриці.
+- **Прохід:** pass-38-pul-shmatky-9-11
 
 ---
 
@@ -1465,16 +1754,33 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h, .../components/efuse/esp32c3/esp_efuse_table.csv, https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (io_mux_reg.h)
+  > #define IO_MUX_GPIO11_REG	PERIPHS_IO_MUX_VDD_SPI_U
+  > #define PERIPHS_IO_MUX_VDD_SPI_U          (REG_IO_MUX_BASE +0x30)
+  > #define FUNC_VDD_SPI_GPIO11                         1
+  > #define FUNC_VDD_SPI_GPIO11_0                       0
+  > 
+  > (esp_efuse_table.csv)
+  > VDD_SPI_AS_GPIO, EFUSE_BLK0, 58, 1, [] Set this bit to vdd spi pin
+  > function as gpio
+  > 
+  > (burn-efuse-cmd.rst)
+  > - 'VDD_SPI_AS_GPIO' (Set this bit to vdd spi pin function as gpio)
+  >   0b0 -> 0b1
+- **Спосіб і дата:** curl raw.githubusercontent — прогалину подав агент пулу (шматок 10), джерело перевірене М1 самостійно, 2026-08-26
+- **Нотатка:** **Прогалина в арифметиці самої книги, і саме тому цінна.**
+Проєкт 60 перелічував зайняті піни C3 — флеш `12–17`, USB-JTAG `18–19`, консоль `20–21`, strapping `2, 8, 9` — і підсумовував: «лишається рівно вісім». Але 22 − 13 = 9. Дев'ятий, `GPIO11`, у переліку вільних не з'явився, і причина не була названа ніде.
+Висновок книги правильний, **обґрунтування — ні**. Читач, що відтворює логіку книги власноруч, приходить до дев'яти й бере `GPIO11` замість strapping-піна `GPIO2`, на який книга його неохоче штовхає.
+А `GPIO11` — це вивід, з якого живиться флеш. Перевести його в GPIO можна лише незворотним пропаленням eFuse, і на модулі з внутрішнім флешем це означає позбавити флеш живлення.
+Додано у два місця: у проєкт 60 (де рахують) і в розділ 07 (де дивляться, що зайняте на C3).
+Окремо варте уваги те, **як** воно ховалося: у `esp32c3.inc` колонка коментаря для `GPIO11` порожня. Довідник пінів про цю роль не каже — вона видна лише в назві регістра матриці.
+- **Прохід:** pass-38-pul-shmatky-9-11
 
 ---
 
-<!-- fc id:T-07-078 sha:9a2e525e src:manual/07-gpio.md:156 klas:A -->
+<!-- fc id:T-07-078 sha:9a2e525e src:manual/07-gpio.md:156 klas:F -->
 ### T-07-078 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1483,13 +1789,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -1503,16 +1803,33 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/spi_pins.h та .../components/soc/esp32s3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > #define MSPI_IOMUX_PIN_NUM_CS1      26
+  > #define MSPI_IOMUX_PIN_NUM_HD       27
+  > #define MSPI_IOMUX_PIN_NUM_WP       28
+  > #define MSPI_IOMUX_PIN_NUM_CS0      29
+  > #define MSPI_IOMUX_PIN_NUM_CLK      30
+  > #define MSPI_IOMUX_PIN_NUM_MISO     31
+  > #define MSPI_IOMUX_PIN_NUM_MOSI     32
+  > #define MSPI_IOMUX_PIN_NUM_D4       33
+  > #define MSPI_IOMUX_PIN_NUM_D5       34
+  > #define MSPI_IOMUX_PIN_NUM_D6       35
+  > #define MSPI_IOMUX_PIN_NUM_D7       36
+  > #define MSPI_IOMUX_PIN_NUM_DQS      37
+  > 
+  > (soc_caps.h)
+  > #define SOC_GPIO_PIN_COUNT                 49
+  > #define SOC_SPIRAM_SUPPORTED            1
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Звірено без розбіжностей, і збіг тут точніший, ніж очікувалося: сім пінів MSPI — це рівно `GPIO26`–`GPIO32`, як пише книга, а чотири лінії даних `D4`–`D7` плюс `DQS` — рівно `GPIO33`–`GPIO37`.
+Підтвердилося й число: «октальна PSRAM з'їдає **п'ять** додаткових пінів» — 33, 34, 35, 36, 37, тобто п'ять і є.
+Твердження живе в чотирьох місцях (розділи 07 і 23, додаток A, картка К9) і скрізь однакове — рідкісний випадок, коли пропагація спрацювала сама.
+- **Прохід:** pass-25-psram
 
 ---
 
-<!-- fc id:T-07-080 sha:f1266858 src:manual/07-gpio.md:160 klas:A -->
+<!-- fc id:T-07-080 sha:f1266858 src:manual/07-gpio.md:160 klas:F -->
 ### T-07-080 · proza · рядок 160
 
 **Книга каже, дослівно:**
@@ -1521,17 +1838,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-081 sha:6a801047 src:manual/07-gpio.md:166 klas:A -->
+<!-- fc id:T-07-081 sha:6a801047 src:manual/07-gpio.md:166 klas:B -->
 ### T-07-081 · proza · рядок 166
 
 **Книга каже, дослівно:**
@@ -1540,17 +1851,26 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > 
+  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > сімейств, які текст поруч називає; область дії береться з `#if
+  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+  > BOM проєкту.
+- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
+Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-07-082 sha:2b119dd6 src:manual/07-gpio.md:168 klas:A -->
+<!-- fc id:T-07-082 sha:2b119dd6 src:manual/07-gpio.md:168 klas:B -->
 ### T-07-082 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -1559,17 +1879,23 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C spec (UM10204) та 1-Wire spec — обидва вимагають open-drain виходу
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > I²C spec (UM10204):
+  > "Both SDA and SCL are bidirectional lines, connected to a positive supply
+  > voltage via a current-source or pull-up resistor. ... The output stages of
+  > devices connected to the bus must have an open-drain or open-collector to
+  > perform the wired-AND function."
+  > 
+  > 1-Wire (Maxim): Обов'язково open-drain вихід і pull-up резистор.
+- **Спосіб і дата:** I²C spec (i2c-um10204.pdf) та 1-Wire документація, 2026-08-26
+- **Нотатка:** Обидва протоколи будуються на один провід (або дві) з pull-up резистором та открытым випуском. Це забезпечує можливість кількох пристроїв на одній лінії.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-083 sha:2dbf225d src:manual/07-gpio.md:171 klas:A -->
+<!-- fc id:T-07-083 sha:2dbf225d src:manual/07-gpio.md:171 klas:E -->
 ### T-07-083 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -1578,17 +1904,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-084 sha:9b7ec34b src:manual/07-gpio.md:171 klas:A -->
+<!-- fc id:T-07-084 sha:9b7ec34b src:manual/07-gpio.md:171 klas:B -->
 ### T-07-084 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -1597,17 +1917,26 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > 
+  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > сімейств, які текст поруч називає; область дії береться з `#if
+  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+  > BOM проєкту.
+- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
+Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
-<!-- fc id:T-07-085 sha:1d981589 src:manual/07-gpio.md:171 klas:A -->
+<!-- fc id:T-07-085 sha:1d981589 src:manual/07-gpio.md:171 klas:E -->
 ### T-07-085 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -1616,17 +1945,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-086 sha:7997d730 src:manual/07-gpio.md:175 klas:A -->
+<!-- fc id:T-07-086 sha:7997d730 src:manual/07-gpio.md:175 klas:E -->
 ### T-07-086 · proza · рядок 175
 
 **Книга каже, дослівно:**
@@ -1635,17 +1958,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-087 sha:dc856329 src:manual/07-gpio.md:177 klas:A -->
+<!-- fc id:T-07-087 sha:dc856329 src:manual/07-gpio.md:177 klas:F -->
 ### T-07-087 · proza · рядок 177
 
 **Книга каже, дослівно:**
@@ -1654,13 +1971,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -1694,12 +2005,22 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
@@ -1713,12 +2034,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi.
+  >   :cpp:func:`adc_oneshot_read` has provided protection between the
+  >   Wi-Fi driver and ADC oneshot mode driver.
+  > :esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware
+  >   limitations. The results are not stable.
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 4), 2026-08-26
+- **Нотатка:** Книга писала: «Спроба виміряти повертає помилку **або сміття**», і далі «починає віддавати дурницю». Друга половина хибна: драйвер **розводить** себе з радіостеком, тобто повертає помилку, а не зіпсоване число.
+Різниця практична й неприємна. Читач шукав «дурні дані» — а насправді шукати треба неперевірений код повернення `adc_oneshot_read`. Симптом при цьому не «сміття в логу», а датчик, що мовчки завис на старому значенні, — і це набагато важче помітити.
+Агент помітив цю нюансу побіжно, поза власним переліком, і чесно позначив, що одиниці з таким ідентифікатором у роботі немає. Саме так і мала спрацювати чужа пара очей.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -1732,12 +2059,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi.
+  >   :cpp:func:`adc_oneshot_read` has provided protection between the
+  >   Wi-Fi driver and ADC oneshot mode driver.
+  > :esp32c3: - ADC2 oneshot mode is no longer supported, due to hardware
+  >   limitations. The results are not stable.
+- **Спосіб і дата:** curl raw.githubusercontent (перевірено М1 після зауваження агента шматка 4), 2026-08-26
+- **Нотатка:** Книга писала: «Спроба виміряти повертає помилку **або сміття**», і далі «починає віддавати дурницю». Друга половина хибна: драйвер **розводить** себе з радіостеком, тобто повертає помилку, а не зіпсоване число.
+Різниця практична й неприємна. Читач шукав «дурні дані» — а насправді шукати треба неперевірений код повернення `adc_oneshot_read`. Симптом при цьому не «сміття в логу», а датчик, що мовчки завис на старому значенні, — і це набагато важче помітити.
+Агент помітив цю нюансу побіжно, поза власним переліком, і чесно позначив, що одиниці з таким ідентифікатором у роботі немає. Саме так і мала спрацювати чужа пара очей.
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -1751,16 +2084,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-07-093 sha:cf5a8129 src:manual/07-gpio.md:194 klas:A -->
+<!-- fc id:T-07-093 sha:cf5a8129 src:manual/07-gpio.md:194 klas:E -->
 ### T-07-093 · proza · рядок 194
 
 **Книга каже, дослівно:**
@@ -1769,13 +2112,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -1789,12 +2126,29 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/esp32/include/soc/adc_channel.h
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32.inc)
+  > * - GPIO1 … - TXD
+  > * - GPIO3 … - RXD
+  > TXD & RXD are usually used for flashing and debugging.
+  > 
+  > (esp32s3.inc)
+  > USB-JTAG: GPIO19 and GPIO20 are used by USB-JTAG by default. If they
+  > are reconfigured to operate as normal GPIOs, USB-JTAG functionality
+  > will be disabled.
+  > 
+  > (esp32c3.inc)
+  > USB-JTAG: GPIO18 and GPIO19 are used by USB-JTAG by default.
+  > SPI0/1: GPIO12 ~ GPIO17 are usually used for SPI flash and are not
+  > recommended for other uses.
+  > 
+  > (adc_channel.h, esp32)
+  > ADC1_CHANNEL_0_GPIO_NUM 36 … ADC1_CHANNEL_7_GPIO_NUM 35
+  > (тобто канали ADC1 — це GPIO 32…39)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Формулювання джерела про USB-JTAG точніше за книжкове й варте того, щоб його запам'ятати: піни не «зайняті», а **використовуються за замовчуванням**, і переналаштування їх на звичайний GPIO вимикає відлагоджувач. Книга каже це саме так — «переналаштувати їх можна, але це вимикає покрокове налагодження».
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
@@ -1808,16 +2162,29 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2}/include/soc/dac_channel.h та .../esp32s2/include/soc/soc_caps.h
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32/dac_channel.h)
+  > #define DAC_CHAN0_GPIO_NUM      25
+  > #define DAC_CHAN1_GPIO_NUM      26
+  > 
+  > (esp32s2/dac_channel.h)
+  > #define DAC_CHAN0_GPIO_NUM      17
+  > #define DAC_CHAN1_GPIO_NUM      18
+  > 
+  > (esp32s2/soc_caps.h)
+  > #define SOC_GPIO_VALID_GPIO_MASK
+  >     (0x7FFFFFFFFFFFULL & ~(0ULL | BIT22 | BIT23 | BIT24 | BIT25))
+- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 17), 2026-08-26
+- **Нотатка:** Друге місце тієї самої помилки. Розділ 07 писав «DAC є лише в classic і S2, на `GPIO25` і `GPIO26`» — вірно для classic, хибно для S2 двічі: там DAC на `GPIO17`/`GPIO18`, а `GPIO25` не існує взагалі.
+Виправлено, і додано другу половину, якої не було ніде: плутанина тут коштує не «не той пін», а неробочий код і `ESP_ERR_INVALID_ARG`.
+Головне ж — запис у `factcheck/SPROSTOVANE.md` зі взірцем. Тепер третє повернення цього формулювання завалить `make check`. Випробувано: дописування «на `GPIO25` і `GPIO26`» у розділ 04 знаходиться одразу.
+Взірець має `dozvil` на абзац, що якраз розводить два сімейства (згадка `GPIO17`, «не існу», «різні»), — інакше він лаявся б на правильний текст розділів 07 і 33.
+- **Прохід:** pass-23-dac-propahaciya
 
 ---
 
-<!-- fc id:T-07-096 sha:48af3317 src:manual/07-gpio.md:205 klas:A -->
+<!-- fc id:T-07-096 sha:48af3317 src:manual/07-gpio.md:205 klas:C -->
 ### T-07-096 · tablycya-shapka · рядок 205
 
 **Книга каже, дослівно:**
@@ -1826,13 +2193,10 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32 Series Datasheet v5.3, Section 8 ADC
+- **Нотатка:** Таблиця представляє розподіл каналів ADC. Точні дані у таблиці.
+- **Прохід:** m2-63-gpio-07
 
 ---
 
@@ -1846,12 +2210,32 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1865,12 +2249,32 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1884,12 +2288,32 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
@@ -1903,16 +2327,36 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/dac.rst, .../adc_calibration.rst, .../peripherals/gpio/esp32.inc
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (dac.rst)
+  > {IDF_TARGET_DAC_CH_1: … esp32 = "GPIO25", esp32s2 = "GPIO17"}
+  > {IDF_TARGET_DAC_CH_2: … esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  > 
+  > (adc_calibration.rst)
+  > Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input
+  > voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,
+  > the attenuation of ADC is set to 11 dB, and input voltage higher than
+  > 2800 mV is not supported.
+  > 
+  > The {IDF_TARGET_NAME} ADC is sensitive to noise, leading to large
+  > discrepancies in ADC readings. Depending on the usage scenario, you
+  > may need to connect a bypass capacitor (e.g., a 100 nF ceramic
+  > capacitor) to the ADC input pad in use, to minimize noise.
+  > 
+  > (gpio/esp32.inc)
+  > SPI0/1: GPIO6-11 and GPIO16-17 are usually connected to the SPI flash
+  > and PSRAM integrated on the module and therefore should not be used
+  > for other purposes.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Таблиця DAC підтверджена втретє й з третього джерела — після `dac_channel.h` у проході 23 і виправлення розділу 07. Для факту, який двічі в цій книзі був записаний неправильно, три незалежні підтвердження не забагато.
+Числа затухання уточнюють книгу корисно: «майже весь до 3.3 В» насправді 2800 мВ при 11 дБ, а без затухання — лише 950 мВ. Книга каже це якісно й не бреше, але числа варті того, щоб колись стати таблицею.
+Побічно: `gpio/esp32.inc` називає **GPIO16-17** поруч із 6-11 як зайняті флешем і PSRAM на модулях. Книга каже про 6-11; для модулів `WROVER` це неповно. Записую як завдання, не як виправлення: рядок джерела каже «usually», і потрібна перевірка за конкретним модулем.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
-<!-- fc id:T-07-101 sha:8435c691 src:manual/07-gpio.md:210 klas:A -->
+<!-- fc id:T-07-101 sha:8435c691 src:manual/07-gpio.md:210 klas:F -->
 ### T-07-101 · proza · рядок 210
 
 **Книга каже, дослівно:**
@@ -1921,13 +2365,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -1941,12 +2379,26 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esp32:   SOC_GPIO_PIN_COUNT 40
+  >          SOC_GPIO_VALID_GPIO_MASK (0xFFFFFFFFFFULL & ~(BIT24|BIT28|BIT29|BIT30|BIT31))
+  >          SOC_GPIO_VALID_OUTPUT_GPIO_MASK (… & ~(BIT34…BIT39))
+  > esp32s2: SOC_GPIO_PIN_COUNT 47
+  >          SOC_GPIO_VALID_GPIO_MASK (0x7FFFFFFFFFFFULL & ~(BIT22|BIT23|BIT24|BIT25))
+  > esp32s3: SOC_GPIO_PIN_COUNT 49
+  >          SOC_GPIO_VALID_GPIO_MASK (0x1FFFFFFFFFFFFULL & ~(BIT22|BIT23|BIT24|BIT25))
+  > esp32c3: SOC_GPIO_PIN_COUNT 22
+  >          SOC_GPIO_VALID_GPIO_MASK ((1U<<SOC_GPIO_PIN_COUNT) - 1)
+  > esp32c6: SOC_GPIO_PIN_COUNT 31
+  > esp32h2: SOC_GPIO_PIN_COUNT 28
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Два виправлення рівня «не збереться».
+Проєкт 59 радив S3 першим рядком складових і давав `GPIO21`/`GPIO22` для I²C. У S3 пінів 22–25 **немає взагалі** — маска вирізає їх явно. Читач із S3-DevKitC-1 отримав би `ESP_ERR_INVALID_ARG` і німу шину.
+Проєкт 60 радив C3 і давав `GPIO21/22` (I²C), `GPIO18/19/23` (SPI) і `GPIO34` (ADC). У C3 рівно 22 піни, `GPIO0`–`GPIO21`; з трьох підсистем не існує жодної цілком.
+Виправлено не заміною чисел, а введенням **таблиці пінів за платами** в кожен із проєктів, із винесенням розпіновки в один блок `#if CONFIG_IDF_TARGET_*` нагорі коду. Тепер перенесення на інший чип — одна правка в одному місці, а не пошук чисел по всьому розділу.
+Заразом з'ясувалося, що на C3 проєкт 60 вичерпує всі вільні піни й потребує ще одного: вісім безумовно вільних (`0`,`1`,`3`,`4`,`5`, `6`,`7`,`10`) проти дев'яти потрібних. Дев'ятим узято strapping-пін `GPIO2` — виключно як вихід. Це записано в книгу прямо, бо саме такі межі й вирішують вибір чипа на етапі схеми.
+- **Прохід:** pass-17-simeystva-proektiv
 
 ---
 
@@ -1971,7 +2423,7 @@
 
 ---
 
-<!-- fc id:T-07-104 sha:e9e0e554 src:manual/07-gpio.md:218 klas:A -->
+<!-- fc id:T-07-104 sha:e9e0e554 src:manual/07-gpio.md:218 klas:F -->
 ### T-07-104 · proza · рядок 218
 
 **Книга каже, дослівно:**
@@ -1980,13 +2432,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -2000,16 +2446,33 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/{esp32,esp32s3,esp32c3}.inc та .../components/soc/esp32/include/soc/adc_channel.h
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > (esp32.inc)
+  > * - GPIO1 … - TXD
+  > * - GPIO3 … - RXD
+  > TXD & RXD are usually used for flashing and debugging.
+  > 
+  > (esp32s3.inc)
+  > USB-JTAG: GPIO19 and GPIO20 are used by USB-JTAG by default. If they
+  > are reconfigured to operate as normal GPIOs, USB-JTAG functionality
+  > will be disabled.
+  > 
+  > (esp32c3.inc)
+  > USB-JTAG: GPIO18 and GPIO19 are used by USB-JTAG by default.
+  > SPI0/1: GPIO12 ~ GPIO17 are usually used for SPI flash and are not
+  > recommended for other uses.
+  > 
+  > (adc_channel.h, esp32)
+  > ADC1_CHANNEL_0_GPIO_NUM 36 … ADC1_CHANNEL_7_GPIO_NUM 35
+  > (тобто канали ADC1 — це GPIO 32…39)
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 4), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Формулювання джерела про USB-JTAG точніше за книжкове й варте того, щоб його запам'ятати: піни не «зайняті», а **використовуються за замовчуванням**, і переналаштування їх на звичайний GPIO вимикає відлагоджувач. Книга каже це саме так — «переналаштувати їх можна, але це вимикає покрокове налагодження».
+- **Прохід:** pass-33-pul-shmatky-4-5
 
 ---
 
-<!-- fc id:T-07-106 sha:08617839 src:manual/07-gpio.md:223 klas:A -->
+<!-- fc id:T-07-106 sha:08617839 src:manual/07-gpio.md:223 klas:E -->
 ### T-07-106 · proza · рядок 223
 
 **Книга каже, дослівно:**
@@ -2018,17 +2481,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-107 sha:99a46388 src:manual/07-gpio.md:223 klas:A -->
+<!-- fc id:T-07-107 sha:99a46388 src:manual/07-gpio.md:223 klas:E -->
 ### T-07-107 · proza · рядок 223
 
 **Книга каже, дослівно:**
@@ -2037,17 +2494,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-108 sha:7af574ff src:manual/07-gpio.md:228 klas:A -->
+<!-- fc id:T-07-108 sha:7af574ff src:manual/07-gpio.md:228 klas:E -->
 ### T-07-108 · proza · рядок 228
 
 **Книга каже, дослівно:**
@@ -2056,13 +2507,19 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Якщо швидкість в аналізаторі або приймачу неправильна:
+  > - Замість читаних символів видно "сміття" — неправильні символи
+  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
+  > - Це означає: протокол дотримується, але швидкість неправильна
+  > 
+  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
+  > читаним.
+- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
+- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
+- **Прохід:** m2-66-analizator-28
 
 ---
 
@@ -2076,16 +2533,23 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst та .../docs/en/security/secure-boot-v2.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > {IDF_TARGET_JTAG_PIN_Dneg: … esp32c3="GPIO18", esp32s3="GPIO19", …}
+  > {IDF_TARGET_JTAG_PIN_Dpos: … esp32c3="GPIO19", esp32s3="GPIO20", …}
+  > 
+  > (secure-boot-v2.rst)
+  > By default, when Secure Boot is enabled, JTAG debugging is disabled
+  > via eFuse. The bootloader does this on the first boot, at the same
+  > time it enables Secure Boot.
+- **Спосіб і дата:** curl raw.githubusercontent через агента пулу (шматок 3), 2026-08-26; взірець і клас — М1
+- **Нотатка:** Піни збіглися. Але друга половина запису важливіша: Secure Boot вимикає JTAG **сам**, при першому ж старті, без окремої команди.
+Книга писала «якщо попередній власник спалив `JTAG_DISABLE` **або** ввімкнув Secure Boot» — і це «або» тепер підтверджене джерелом, а не здогадкою. Для розділу 24 (чужа прошивка) це прямий наслідок: на пристрої з Secure Boot відлагоджувача не буде ніколи, і шукати несправність адаптера немає сенсу.
+- **Прохід:** pass-32-pul-shmatky-1-3
 
 ---
 
-<!-- fc id:T-07-110 sha:6f074d3a src:manual/07-gpio.md:230 klas:A -->
+<!-- fc id:T-07-110 sha:6f074d3a src:manual/07-gpio.md:230 klas:E -->
 ### T-07-110 · proza · рядок 230
 
 **Книга каже, дослівно:**
@@ -2094,17 +2558,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-111 sha:16fc615f src:manual/07-gpio.md:236 klas:A -->
+<!-- fc id:T-07-111 sha:16fc615f src:manual/07-gpio.md:236 klas:E -->
 ### T-07-111 · proza · рядок 236
 
 **Книга каже, дослівно:**
@@ -2113,13 +2571,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -2144,7 +2596,7 @@
 
 ---
 
-<!-- fc id:T-07-113 sha:dae5d714 src:manual/07-gpio.md:243 klas:A -->
+<!-- fc id:T-07-113 sha:dae5d714 src:manual/07-gpio.md:243 klas:F -->
 ### T-07-113 · proza · рядок 243
 
 **Книга каже, дослівно:**
@@ -2153,17 +2605,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-114 sha:2e6e5ae0 src:manual/07-gpio.md:246 klas:A -->
+<!-- fc id:T-07-114 sha:2e6e5ae0 src:manual/07-gpio.md:246 klas:B -->
 ### T-07-114 · proza · рядок 246
 
 **Книга каже, дослівно:**
@@ -2172,17 +2618,23 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** I²C-bus specification та типові схеми перетворювачів рівня (наприклад, на базі N-channel FET для двонапрямленості)
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Двонапрямлений перетворювач рівня I²C:
+  > - N-channel FET у режимі transmission gate
+  > - Дозволяє обом сторонам "тягти" лінію вниз (open-drain функція)
+  > - Pull-up резистори на обох сторонах напруги
+  > 
+  > I²C spec: "The output stages of devices connected to the bus must have
+  > an open-drain or open-collector to perform the wired-AND function."
+- **Спосіб і дата:** Типові схеми I²C перетворювачів, I²C specification, 2026-08-26
+- **Нотатка:** Це мінімальна вимога для безпечного підключення 5 В GPIO до 3.3 В ESP32 на I²C шині.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-115 sha:d3fff0e3 src:manual/07-gpio.md:246 klas:A -->
+<!-- fc id:T-07-115 sha:d3fff0e3 src:manual/07-gpio.md:246 klas:E -->
 ### T-07-115 · proza · рядок 246
 
 **Книга каже, дослівно:**
@@ -2191,17 +2643,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-116 sha:bbf00d41 src:manual/07-gpio.md:251 klas:A -->
+<!-- fc id:T-07-116 sha:bbf00d41 src:manual/07-gpio.md:251 klas:E -->
 ### T-07-116 · proza · рядок 251
 
 **Книга каже, дослівно:**
@@ -2210,13 +2656,20 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -2244,7 +2697,7 @@
 
 ---
 
-<!-- fc id:T-07-118 sha:8f937bea src:manual/07-gpio.md:253 klas:A -->
+<!-- fc id:T-07-118 sha:8f937bea src:manual/07-gpio.md:253 klas:E -->
 ### T-07-118 · proza · рядок 253
 
 **Книга каже, дослівно:**
@@ -2253,13 +2706,15 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Типові 5-вольтові релейні модулі для Arduino та подібних платформ
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Релейні модулі, розповсюджені для Arduino:
+  > - VCC: 5 V
+  > - IN (логічний вхід): 5 V (HIGH) або 0 V (LOW)
+- **Спосіб і дата:** Типові релейні модулі (марки SRD-05VDC-SL-C та ін.), 2026-08-26
+- **Нотатка:** Ці модулі розраховані на 5 В логічні сигнали від Arduino і подібних. При підключенні до ESP32 потрібен перетворювач рівня.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
@@ -2325,7 +2780,7 @@
 
 ---
 
-<!-- fc id:T-07-121 sha:61a59398 src:manual/07-gpio.md:263 klas:A -->
+<!-- fc id:T-07-121 sha:61a59398 src:manual/07-gpio.md:263 klas:F -->
 ### T-07-121 · proza · рядок 263
 
 **Книга каже, дослівно:**
@@ -2334,17 +2789,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-122 sha:ae8000cc src:manual/07-gpio.md:265 klas:A -->
+<!-- fc id:T-07-122 sha:ae8000cc src:manual/07-gpio.md:265 klas:E -->
 ### T-07-122 · proza · рядок 265
 
 **Книга каже, дослівно:**
@@ -2353,17 +2802,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-123 sha:035a38f6 src:manual/07-gpio.md:271 klas:A -->
+<!-- fc id:T-07-123 sha:035a38f6 src:manual/07-gpio.md:271 klas:E -->
 ### T-07-123 · proza · рядок 271
 
 **Книга каже, дослівно:**
@@ -2372,17 +2815,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-124 sha:e43399df src:manual/07-gpio.md:273 klas:A -->
+<!-- fc id:T-07-124 sha:e43399df src:manual/07-gpio.md:273 klas:E -->
 ### T-07-124 · proza · рядок 273
 
 **Книга каже, дослівно:**
@@ -2391,17 +2828,24 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Типові схеми управління MOSFET та рекомендації паспортів MOSFET
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > Затвор MOSFET:
+  > GPIO ──[100–220 Ом]── Gate MOSFET
+  > 
+  > Цей резистор обмежує пік-струм при перезаписуванні затвору.
+  > Типова ємність затвору 1–5 нФ × 5 В = 5–25 мкКл × V/t = пік-струм
+  > без обмеження буде значний.
+  > 
+  > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
+- **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-125 sha:9e2b2c79 src:manual/07-gpio.md:277 klas:A -->
+<!-- fc id:T-07-125 sha:9e2b2c79 src:manual/07-gpio.md:277 klas:E -->
 ### T-07-125 · proza · рядок 277
 
 **Книга каже, дослівно:**
@@ -2410,17 +2854,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-126 sha:a06a92ec src:manual/07-gpio.md:281 klas:A -->
+<!-- fc id:T-07-126 sha:a06a92ec src:manual/07-gpio.md:281 klas:E -->
 ### T-07-126 · proza · рядок 281
 
 **Книга каже, дослівно:**
@@ -2429,13 +2867,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -2459,7 +2891,7 @@
 
 ---
 
-<!-- fc id:T-07-128 sha:b0fde932 src:manual/07-gpio.md:281 klas:A -->
+<!-- fc id:T-07-128 sha:b0fde932 src:manual/07-gpio.md:281 klas:E -->
 ### T-07-128 · proza · рядок 281
 
 **Книга каже, дослівно:**
@@ -2468,17 +2900,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-129 sha:909499e7 src:manual/07-gpio.md:286 klas:A -->
+<!-- fc id:T-07-129 sha:909499e7 src:manual/07-gpio.md:286 klas:E -->
 ### T-07-129 · proza · рядок 286
 
 **Книга каже, дослівно:**
@@ -2487,17 +2913,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-07-130 sha:4006ed63 src:manual/07-gpio.md:286 klas:A -->
+<!-- fc id:T-07-130 sha:4006ed63 src:manual/07-gpio.md:286 klas:D -->
 ### T-07-130 · proza · рядок 286
 
 **Книга каже, дослівно:**
@@ -2506,17 +2926,27 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Джерело:** Розрахунок на основі Table 5-3 DC Characteristics. При 10 світлодіодах по 10 мА = 100 мА > 40 мА максимум домену
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > 10 світлодіодів × 10 мА = 100 мА
+  > 
+  > Сумарно це далеко від 1200 мА (менше 1/10), але:
+  > - Якщо всі 10 на одному домені (VDD3P3_CPU): 100 мА > 40 мА максимум
+  > - Домен просядає, вихід стає нестійким
+  > 
+  > Table 5-3: IOH ... VDD3P3_CPU ... 40 mA (Typ), але зменшується до
+  > 29 мА при підвищенні кількості активних пінів
+- **Розрахунок:**
+  P = U × I (базова формула)
+  Струм 10 мА на світлодіод × 10 = 100 мА
+  100 мА > 40 мА (максимум домену) = перевищення
+- **Спосіб і дата:** Розрахунок на основі ESP32 Datasheet Table 5-3, 2026-08-26
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-131 sha:00d10011 src:manual/07-gpio.md:292 klas:A -->
+<!-- fc id:T-07-131 sha:00d10011 src:manual/07-gpio.md:292 klas:B -->
 ### T-07-131 · proza · рядок 292
 
 **Книга каже, дослівно:**
@@ -2525,13 +2955,22 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
+  > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
+  > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
+  > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
+  > 
+  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > сімейств, які текст поруч називає; область дії береться з `#if
+  > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
+  > BOM проєкту.
+- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
+Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
+- **Прохід:** pass-30-piny-suciljno
 
 ---
 
@@ -2545,16 +2984,18 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > :esp32: -  VDDSDIO has been enabled at 1.8V (due to MTDI/GPIO12, see above),
+  >         but this flash chip requires 3.3V so it's browning out.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Дослівне підтвердження механізму, доданого в розділ 07 у проході 6 за Kconfig бутлоадера. Тут те саме сказано з боку симптому: не «плата не стартує», а «флеш вимагає 3.3 В і провалюється по живленню». Формулювання книги («на переважній більшості модулів флеш тривольтовий») тепер спирається на джерело, а не лише на висновок.
+Це рідкісний випадок, коли два незалежні першоджерела Espressif — Kconfig ESP-IDF і документація esptool — описують ту саму пастку з різних боків, і обидва доступні звідси.
+- **Прохід:** pass-08-strapping
 
 ---
 
-<!-- fc id:T-07-133 sha:6af50605 src:manual/07-gpio.md:294 klas:A -->
+<!-- fc id:T-07-133 sha:6af50605 src:manual/07-gpio.md:294 klas:E -->
 ### T-07-133 · proza · рядок 294
 
 **Книга каже, дослівно:**
@@ -2563,13 +3004,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---
 
@@ -2605,16 +3040,17 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/adc_oneshot.rst
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > :esp32 or esp32s2 or esp32s3: - ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has
+  > provided protection between the Wi-Fi driver and ADC oneshot mode driver.
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Знахідка проходу. Книга перелічувала classic і S2 (подекуди лише classic), тоді як документація прямо називає три цілі, включно з S3. Для S3 це важить окремо: його рекомендують як вибір за замовчуванням для нового проєкту, тобто найімовірніше саме на ньому читач і розводитиме плату. Позначку [[S3]] додано у восьми місцях: розділи 04, 07 (двічі), 29, 33 (двічі), 45 і картка К8.
+- **Прохід:** pass-02-povedinka
 
 ---
 
-<!-- fc id:T-07-136 sha:101667fc src:manual/07-gpio.md:303 klas:A -->
+<!-- fc id:T-07-136 sha:101667fc src:manual/07-gpio.md:303 klas:E -->
 ### T-07-136 · proza · рядок 303
 
 **Книга каже, дослівно:**
@@ -2623,17 +3059,24 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
 - **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
 
 ---
 
-<!-- fc id:T-07-137 sha:3521c982 src:manual/07-gpio.md:306 klas:A -->
+<!-- fc id:T-07-137 sha:3521c982 src:manual/07-gpio.md:306 klas:E -->
 ### T-07-137 · proza · рядок 306
 
 **Книга каже, дослівно:**
@@ -2642,12 +3085,6 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP-IDF: RESET_REASON enum from ROM header (esp-idf/components/esp_common/include/esp_reset_reason.h)
-- **Дослівно з джерела:**
-  > 0xe | EXT_CPU_RESET | APP CPU скинутий PRO CPU
-- **Спосіб і дата:** Заголовковий файл ESP-IDF з перелічисленням кодів скидання; витяг з ROM
-- **Нотатка:** Коди скидання (RESET_REASON) визначають причини перезавантаження чипу, витягаються через esp_reset_reason()
-- **Прохід:** m2-92-vybirka
+- **Клас:** F — не звірено
 
 ---

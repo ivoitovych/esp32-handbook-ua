@@ -675,7 +675,7 @@
 
 ---
 
-<!-- fc id:T-D-036 sha:382d166f src:dodatky/d-panik.md:21 klas:F -->
+<!-- fc id:T-D-036 sha:382d166f src:dodatky/d-panik.md:21 klas:C -->
 ### T-D-036 · komirka · рядок 21
 
 **Книга каже, дослівно:**
@@ -684,7 +684,11 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** CPU exception codes / panic handler у esp-idf
+- **Що шукати в джерелі:** Таблиця Guru Meditation Error кодів у fatal-errors.rst
+- **Нотатка:** Код 0xc потребує перевірки в контексті CPU exception codes, не програмних кодів помилок ESP_ERR_*. Це архітектурний код процесора Xtensa.
+- **Прохід:** m2-98-vybirka
 
 ---
 
@@ -701,7 +705,7 @@
 
 ---
 
-<!-- fc id:T-D-038 sha:b265b468 src:dodatky/d-panik.md:22 klas:F -->
+<!-- fc id:T-D-038 sha:b265b468 src:dodatky/d-panik.md:22 klas:B -->
 ### T-D-038 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -710,7 +714,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h — RESET_REASON enum, значення 13
+- **Дослівно з джерела:**
+  > RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+- **Спосіб і дата:** https://github.com clone, grep RTCWDT_CPU_RESET, 2026-08-27
+- **Нотатка:** Кодування коду скидання відповідає ROM-заголовку ESP-IDF. Таблиця в розділі D подає всі коди з цього enum без змін. Код 0xd (13 у десятковій) дійсно названий RTCWDT_CPU_RESET.
+- **Прохід:** m2-95-vybirka
 
 ---
 
@@ -734,7 +744,7 @@
 
 ---
 
-<!-- fc id:T-D-040 sha:cc29d27d src:dodatky/d-panik.md:22 klas:F -->
+<!-- fc id:T-D-040 sha:cc29d27d src:dodatky/d-panik.md:22 klas:A -->
 ### T-D-040 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -743,11 +753,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > RTCWDT_CPU_RESET       = 13,    /**<13, RTC Watch dog Reset CPU*/
+- **Спосіб і дата:** curl raw.githubusercontent.com, grep, 2026-08-26
+- **Нотатка:** Код 0xd (13 у десяткових) = RTCWDT_CPU_RESET. Коментар підтверджує, що це RTC watchdog скидання CPU. Книга направляє на розділ 32 для детальної інформації.
+- **Прохід:** m2-94-vybirka
 
 ---
 
-<!-- fc id:T-D-041 sha:5964cff8 src:dodatky/d-panik.md:23 klas:F -->
+<!-- fc id:T-D-041 sha:5964cff8 src:dodatky/d-panik.md:23 klas:A -->
 ### T-D-041 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -756,7 +772,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
+- **Дослівно з джерела:**
+  > EXT_CPU_RESET          = 14,    /**<14, for APP CPU, reset by PRO CPU*/
+- **Спосіб і дата:** curl raw.githubusercontent.com, grep, 2026-08-27
+- **Нотатка:** Код 0xe (14 у десяткових) = EXT_CPU_RESET. Це сценарій, коли один процесор (PRO CPU) скидає інший (APP CPU).
+- **Прохід:** m2-94-vybirka
 
 ---
 
@@ -848,7 +870,7 @@
 
 ---
 
-<!-- fc id:T-D-047 sha:9338f26b src:dodatky/d-panik.md:25 klas:F -->
+<!-- fc id:T-D-047 sha:9338f26b src:dodatky/d-panik.md:25 klas:A -->
 ### T-D-047 · komirka · рядок 25
 
 **Книга каже, дослівно:**
@@ -857,7 +879,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/569e266f-fatal-errors.rst
+- **Дослівно з джерела:**
+  > rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Місце в документі: розділ RTC Watchdog Timeout, рядок 306
+- **Прохід:** m2-hvylya2
 
 ---
 
@@ -1705,7 +1733,7 @@
 
 ---
 
-<!-- fc id:T-D-081 sha:82e1a535 src:dodatky/d-panik.md:88 klas:F -->
+<!-- fc id:T-D-081 sha:82e1a535 src:dodatky/d-panik.md:88 klas:E -->
 ### T-D-081 · proza · рядок 88
 
 **Книга каже, дослівно:**
@@ -1714,7 +1742,10 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Спосіб і дата:** Авторське спостереження про діагностичну цінність біту GPIO4 в boot масці; жодне офіційне джерело не розглядає GPIO4 як 'другий за цінністю'
+- **Нотатка:** Це інженерне судження автора книги на основі аналізу boot процесу, але не документується у жодному офіційному джерелі Espressif. Клас E.
+- **Прохід:** m2-92-vybirka
 
 ---
 
@@ -1876,7 +1907,7 @@
 
 ---
 
-<!-- fc id:T-D-089 sha:2e453577 src:dodatky/d-panik.md:99 klas:F -->
+<!-- fc id:T-D-089 sha:2e453577 src:dodatky/d-panik.md:99 klas:B -->
 ### T-D-089 · komirka · рядок 99
 
 **Книга каже, дослівно:**
@@ -1885,7 +1916,21 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://github.com/espressif/esp-idf/blob/release/v5.2/docs/en/advanced-topics/boot-mode-selection.rst — boot mode selection documentation, strapping pins definitions
+- **Дослівно з джерела:**
+  > {IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp8266="GPIO0", esp32="GPIO0",
+  > esp32s2="GPIO0", esp32s3="GPIO0", esp32p4="GPIO35", esp32c5="GPIO28"}
+  > 
+  > {IDF_TARGET_STRAP_BOOT_2_GPIO:default="GPIO8", esp32="GPIO2", esp32s2="GPIO46",
+  > esp32s3="GPIO46", esp32p4="GPIO36", esp32c5="GPIO27"}
+  > 
+  > Для чіпів «не esp32» (включно C3):
+  > - 0x04 - {IDF_TARGET_STRAP_BOOT_2_GPIO}
+  > - 0x08 - {IDF_TARGET_STRAP_BOOT_GPIO}
+- **Спосіб і дата:** GitHub ESP-IDF boot-mode-selection.rst, 2026-08-27
+- **Нотатка:** Код 0x08 означає основний boot GPIO, який за замовчуванням GPIO9. Оскільки C3 не має явного перевизначення цього значення в файлі, він використовує default GPIO9. Аналогічно 0x04 → GPIO8. Таблиця в розділі D правильно показує це відображення.
+- **Прохід:** m2-95-vybirka
 
 ---
 

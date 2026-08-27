@@ -179,7 +179,7 @@
 
 ---
 
-<!-- fc id:T-H-013 sha:9191c24f src:dodatky/h-dzherela.md:33 klas:F -->
+<!-- fc id:T-H-013 sha:9191c24f src:dodatky/h-dzherela.md:33 klas:A -->
 ### T-H-013 · proza · рядок 33
 
 **Книга каже, дослівно:**
@@ -188,7 +188,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > For more information on ESP32-D0WD-V3 and ESP32-D0WDR2-V3 chip, please refer to ESP32 Series Datasheet.
+- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Нотатка:** Це datasheet модуля, яке посилається на окремий ESP32 Series Datasheet для інформації про чип.
+- **Прохід:** m2-hvylya2
 
 ---
 
