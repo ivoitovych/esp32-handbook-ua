@@ -1,0 +1,316 @@
+# Кандидати з міри класу `F`. **Не реєстр.**
+- nazva: T-09-043
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-09-046
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-09-052
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-09-070
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-09-073
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/
+  cytata: ''''''
+  verdykt: ne_znayshov
+  zvidky: F2-p10
+- nazva: T-04-149
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/rmt/led_strip/README.md;
+    https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst;
+    https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_mcpwm/include/driver/mcpwm_fault.h
+  cytata: 'RMT контролює адресні світлодіоди; PCNT라는 модуль підраховує кількість імпульсів
+    без переривань; MCPWM має мертвий час і обробку помилок для керування потужністю.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F2-p6
+- nazva: T-07-063
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: 'The word **RESERVED** indicates the IO is occupied by either SPI flash
+    or PSRAM.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F2-p7
+- nazva: T-07-101
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/dac.rst
+  cytata: '{IDF_TARGET_DAC_CH_1: default = "Not Updated!", esp32 = "GPIO25", esp32s2
+    = "GPIO17"}
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F2-p8
+- nazva: T-16-056
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/app_update/esp_ota_ops.c
+  cytata: 'Default to factory if present
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p16
+- nazva: T-16-058
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+  cytata: 'For power-on reset, software SoC reset, and watchdog SoC reset: check the
+    GPIO_STRAP_REG register
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p16
+- nazva: T-16-093
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+  cytata: 'check the GPIO_STRAP_REG register if a custom boot mode is requested
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p16
+- nazva: T-17-028
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  cytata: '@cli.command("flash-id")
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p16
+- nazva: T-17-130
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  cytata: '"--baud",
+
+    type=BaudRateType(),
+
+    help="Serial port baud rate used when flashing/reading."
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p17
+- nazva: T-17-154
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/loader.py
+  cytata: 'Failed to start stub flasher
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p17
+- nazva: T-18-009
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: '# ESP-IDF Partition Table
+
+    # Name,   Type, SubType, Offset,  Size, Flags
+
+    nvs,      data, nvs,     0x9000,  0x6000,
+
+    phy_init, data, phy,     0xf000,  0x1000,
+
+    factory,  app,  factory, 0x10000, 1M,
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p17
+- nazva: T-18-011
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'nvs,      data, nvs,     0x9000,  0x6000,
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p17
+- nazva: T-18-012
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'nvs,      data, nvs,     0x9000,  0x6000,
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p17
+- nazva: T-18-048
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: 'Non-volatile storage (NVS) library is designed to store key-value pairs
+    in flash
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p18
+- nazva: T-18-060
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: 'NVS works best for storing a moderate, relatively stable set of small values
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p18
+- nazva: T-18-079
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/index.rst
+  cytata: '- :doc:`SPIFFS <spiffs>` is a wear-levelled file system optimized for SPI
+    NOR flash
+
+    - :doc:`FAT <fatfs>` is a standard file system which can be used in SPI flash
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p18
+- nazva: T-18-122
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'Other data partitions like NVS, FAT, etc. (not updated during OTA)
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p18
+- nazva: T-19-014
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'The OTA operation functions write a new app firmware image to whichever
+    OTA app slot that is currently not selected for booting
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p18
+- nazva: T-19-067
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/esp_https_ota.rst
+  cytata: 'Please refer to :ref:`ESP-TLS: TLS Server Verification
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p19
+- nazva: T-19-069
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/esp_https_ota.rst
+  cytata: 'The root certificate in PEM format needs to be provided to the cert_pem
+    member
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p19
+- nazva: T-19-085
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'Завантажене не є коректним образом застосунку. Найчастіше на сервері лежить
+    не той файл: `merge-bin`-образ або повний дамп замість `app.bin`
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p19
+- nazva: T-20-014
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'Anti-rollback prevents rollback to application with security version lower
+    than one programmed in eFuse of chip
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p19
+- nazva: T-20-088
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ota.rst
+  cytata: 'when an eFuse bit is programmed to 1, it can never be reverted to 0
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p19
+- nazva: T-20-092
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+  cytata: 'Startup code called from the reset vector determines the boot mode by checking
+    GPIO_STRAP_REG register for bootstrap pin states
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p20
+- nazva: T-21-086
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
+  cytata: 'esptool can flash multiple devices simultaneously using different serial
+    ports
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p20
+- nazva: T-22-048
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'read-flash reads exactly the amount of data that exists on the chip
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p20
+- nazva: T-22-066
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: 'NVS works best for storing a moderate, relatively stable set of small values
+    such as device configuration, calibration data
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p20
+- nazva: T-23-010
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+  cytata: '| **SoC**  | **Stable** | **Development** |
+
+    |ESP32     |     Yes    |       Yes       |
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F4-p20
+- nazva: T-49-005
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
+  cytata: '#define SOC_SDMMC_HOST_SUPPORTED    1
+
+    #define SOC_SDMMC_DATA_WIDTH_MAX     8
+
+    '
+  verdykt: ne_znayshov
+  zvidky: F7-p31
+- nazva: T-49-029
+  dzherelo: https://raw.githubusercontent.com/espressif/esp32-camera/master/README.md
+  cytata: '| OV2640  | 1600 x 1200    | color      | YUV(422/420)/YCbCr422<br>RGB565/555<br>8-bit
+    compressed data<br>8/10-bit Raw RGB data | 1/4"     |
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F7-p32
+- nazva: T-49-037
+  dzherelo: https://raw.githubusercontent.com/espressif/esp32-camera/master/README.md
+  cytata: 'This is particularly true if WiFi is enabled. If you need RGB data, it
+    is recommended that JPEG is captured and then turned into RGB using `fmt2rgb888`
+    or `fmt2bmp`/`frame2bmp`.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F7-p32
+- nazva: T-50-029
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/esp_tls.rst
+  cytata: 'If no option is selected, the client will return a fatal error by default
+    during the TLS connection setup.
+
+    ...
+
+    If this option is enabled, there is a risk of establishing a TLS connection with
+    a server that has a fake identity, unless the server certificate is provided through
+    the API or other mechanisms like ``ca_store``.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F7-p33
+- nazva: T-59-040
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/esp32/pins_arduino.h
+  cytata: 'static const uint8_t SDA = 21;
+
+    static const uint8_t SCL = 22;
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F7-p34
+- nazva: T-60-111
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/sleep_modes.rst
+  cytata: 'By default, :cpp:func:`esp_deep_sleep_start` and :cpp:func:`esp_light_sleep_start`
+    functions power down all RTC power domains
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F7-p34
+- nazva: T-61-015
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_wifi.rst
+  cytata: 'Station mode (aka STA mode or Wi-Fi client mode). {IDF_TARGET_NAME} connects
+    to an access point.
+
+    '
+  verdykt: pidtverdzheno
+  zvidky: F7-p35
+- nazva: T-61-029
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h
+  cytata: (No FPU capability found in ESP32-C3)
+  verdykt: pidtverdzheno
+  zvidky: F7-p35
