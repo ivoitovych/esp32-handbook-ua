@@ -3,278 +3,276 @@
   fayl: esp32_datasheet_en.pdf
   cytata: |
     GPIO14, ADC2_CH6, RTC_GPIO16, TOUCH6, EMAC_TXD2, HSPICLK, HS2_CLK, SD_CLK, MTMS
-  de: таблиця пінів ESP32
+  de: таблиця пінів
 
 - id: T-B-191
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про Wi-Fi канали 12-13 регіональні обмеження не стоїть в datasheet
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-B-242
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про Interrupt WDT не міститься в datasheet, це частина FreeRTOS
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-B-065
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
   cytata: |
     The operating voltage of ESP32 ranges from 2.3 V to 3.6 V
-  de: детектор впадіння напруги
+  de: параметри живлення
 
 - id: T-B-173
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про SH1106 vs SSD1306 дисплеї не стоїть в datasheet, це периферія
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-C-125
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, команда esptool strings не в datasheet, це утиліта
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-D-166
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про ISR timeout не в datasheet
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-E-132
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, HC-SR501 датчик PIR не в datasheet ESP32
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-E-084
   verdykt: ne_znayshov
-  dyvyvsya: ssd1306.pdf, E-paper SSD16xx типи дисплеїв
+  dyvyvsya: ssd1306.pdf
 
 - id: T-F-013
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про Linux драйвери не в datasheet
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-G-108
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, глосарій терміну напруга voltage
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-G-150
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, глосарій UART
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-G-035
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, глосарій живлення power supply
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-G-075
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, глосарій гонка race condition
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-H-035
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, джерела й посилання вказівки на пошук інформації
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-Z-114
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, покажчик посилання на GPIO21
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-COM-010
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про ESP32-DevKitC V4 плату характеристики
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-REG-009
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, регіональні обмеження на частоти
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-UA--019
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, українські платформні характеристики
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-K02-008
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, картка документування
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-K04-012
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, картка завантаження BOOT процес
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-K07-020
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, картка паніки malloc
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-K08-001
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, картка симптомів
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-K10-020
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, картка команд idf.py
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-K12-019
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, картка комплекту мультиметр
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-K13-041
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, картка живлення при двигуні
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-K15-022
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, картка серійна прошивка
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-00-070
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, про довідник FreeRTOS
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-00-027
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, про довідник класи перевірки
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-01-098
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, версії документації
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-01-004
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
   cytata: |
-    The operating voltage of ESP32 ranges from 2.3 V to 3.6 V. When using a single-power supply, the recommended voltage of the power supply is 3.3 V, and its recommended output current is 500 mA or
-    1 core at 240 MHz
-  de: частота CPU ESP32
+    ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC low-power 40 nm
+  de: технологія чипа
 
 - id: T-02-119
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, чип класифікація classic для першого проєкту
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-02-028
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
   cytata: |
-    The operating voltage of ESP32 ranges from 2.3 V to 3.6 V. When using a single-power supply, the recommended voltage of the power supply is 3.3 V, and its recommended output current is 500 mA or
-    have a maximum CPU frequency of 240 MHz
-  de: частота CPU ESP32
+    support the clock frequency of up to 240 MHz
+  de: частота ядра
 
 - id: T-03-006
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про двоядерну архітектуру ядро 0
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-04-065
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, апаратна криптографія
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-04-027
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, I²S інтерфейс
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-05-064
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, Pull-up резистор
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-05-119
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, способи убити плату
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-06-063
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, режими енергоспоживання
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-06-014
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
   cytata: |
-    recommended output current is 500 mA or
+    recommended output current is 500 mA
   de: живлення вимоги
 
 - id: T-07-007
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, GPIO0 GPIO2 strapping pins
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-07-004
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, обмеження GPIO пінів
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-08-033
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, плата ESP32-DevKitC V4
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-09-077
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, UART порт один процес
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-09-029
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, імена портів
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-10-056
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інструменти картки
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-10-035
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, лупа мікроскоп
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-11-011
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, редактор вибір
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-11-039
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, версії ESP-IDF підтримка
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-12-017
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, реєстр компонентів
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-13-006
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, pioarduino форк
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-13-031
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, помилка прошивки в полі
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-14-074
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, ESP-IDF для виробу
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-15-006
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, розвідка датчика
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-15-043
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, межа логіки
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-16-014
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, GPIO0 завантаження
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-17-107
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, esptool bin файли
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-18-065
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, SPIFFS файлова система
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-18-116
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, розділи флешу
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-19-075
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, ArduinoOTA оновлення
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-19-045
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, OTA підтвердження
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-20-020
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, secure boot підписи
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-21-069
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, серійна прошивка MAC
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-21-031
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, MAC ідентифікатор
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-22-018
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, збереження стану
+  dyvyvsya: esp32_datasheet_en.pdf
 
 - id: T-23-077
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, тріаж діагностика
+  dyvyvsya: esp32_datasheet_en.pdf

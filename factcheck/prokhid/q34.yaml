@@ -1,175 +1,35 @@
-- id: T-A-062
+- id: T-06-089
   verdykt: pidtverdzheno
-  fayl: a-pinouty.md
-  cytata: "| 3 | **strapping** |"
-  de: "рядок 49, таблиця GPIO обмеження на ESP32-S3"
-- id: T-B-206
+  fayl: 06-zhyvlennya.md
+  cytata: Із запасом на старіння і холод беріть 70 % від номіналу.
+  de: рядок 189, розділ бюджет енергії
+- id: T-06-022
   verdykt: pidtverdzheno
-  fayl: b-symptomy.md
-  cytata: "| ESP-NOW: працювало на столі | роутер змінив канал | фіксувати канал | 42 |"
-  de: "рядок 110, таблиця мережа"
-- id: T-B-252
+  fayl: 06-zhyvlennya.md
+  cytata: '| Активний, Wi-Fi у роботі | близько сотні мА середнє |'
+  de: рядок 46, таблиця споживання
+- id: T-07-096
   verdykt: pidtverdzheno
-  fayl: b-symptomy.md
-  cytata: "| На столі працює, у корпусі ні | перегрів | вентиляція, менша потужність | 54 |"
-  de: "рядок 134, таблиця корпус і поле"
-- id: T-B-080
+  fayl: 07-gpio.md
+  cytata: "| | Канал 1 | Канал 2 |"
+  de: "рядок 205, таблиця DAC піни"
+- id: T-08-072
   verdykt: pidtverdzheno
-  fayl: b-symptomy.md
-  cytata: "| Працює від USB, не від БЖ | немає спільної землі | з'єднати `GND` | 05 |"
-  de: "рядок 54, таблиця живлення"
-- id: T-C-051
+  fayl: 08-platy.md
+  cytata: "Конкретні магазини, ціни й наявність — у датованому вкладиші ринку, не тут (Р5)."
+  de: "рядок 128-129"
+- id: T-08-046
   verdykt: pidtverdzheno
-  fayl: c-komandy.md
-  cytata: "idf.py -p /dev/ttyUSB0 flash"
-  de: "рядок 109, розділ збирання і прошивка"
-- id: T-D-004
+  fayl: 08-platy.md
+  cytata: "Половина питань «чому на S3 нічого не працює» знімається переставлянням кабелю."
+  de: "рядок 74-75"
+- id: T-09-009
   verdykt: pidtverdzheno
-  fayl: d-panik.md
-  cytata: "| Код | Назва | Що сталося | Що робити |"
-  de: "рядок 10, таблиця причини скидання"
-- id: T-D-193
+  fayl: 09-pidklyuchennya.md
+  cytata: "Він робить дві речі: передає дані і, через сигнали `DTR`/`RTS`, керує входом у режим прошивки (розділ 16)."
+  de: "рядок 19-20"
+- id: T-09-040
   verdykt: pidtverdzheno
-  fayl: d-panik.md
-  cytata: "Швидке відсікання: залити свідомо справний мінімальний образ\n(`hello_world`)."
-  de: "рядок 299-300, розділ Boot loop"
-- id: T-E-151
-  verdykt: pidtverdzheno
-  fayl: e-interfeysy.md
-  cytata: "Менший вибір, вища якість, фіксовані версії (розділ 11)."
-  de: "рядок 134, розділ куди дивитися за бібліотекою"
-- id: T-E-098
-  verdykt: pidtverdzheno
-  fayl: e-interfeysy.md
-  cytata: "| MH-Z19 | 9600 | CO₂ |"
-  de: "рядок 69, таблиця UART"
-- id: T-F-022
-  verdykt: pidtverdzheno
-  fayl: f-oflayn.md
-  cytata: "1. Створити новий проєкт із шаблону."
-  de: "рядок 99, розділ перевірка готовності"
-- id: T-G-119
-  verdykt: pidtverdzheno
-  fayl: g-glosariy.md
-  cytata: "| калібрування | calibration |"
-  de: "рядок 145, таблиця вимірювання"
-- id: T-G-166
-  verdykt: pidtverdzheno
-  fayl: g-glosariy.md
-  cytata: "| SSR | Solid-State Relay |"
-  de: "рядок 200, таблиця електроніка"
-- id: T-G-047
-  verdykt: pidtverdzheno
-  fayl: g-glosariy.md
-  cytata: "| оплітка для випаювання | desoldering wick |"
-  de: "рядок 61, таблиця матеріали"
-- id: T-H-004
-  verdykt: pidtverdzheno
-  fayl: h-dzherela.md
-  cytata: "Це не формальність: у полі різниця між звіреним і згаданим з пам'яті вирішує, чи можна довіритися рядку."
-  de: "рядок 12-13, блок примітка про звірку"
-- id: T-Z-038
-  verdykt: pidtverdzheno
-  fayl: z-pokazhchyk.md
-  cytata: "DMA — 50, 52, 55–56, 188, 220, 222, 281, 368, 398"
-  de: "рядок 154, показчик"
-- id: T-Z-011
-  verdykt: pidtverdzheno
-  fayl: z-pokazhchyk.md
-  cytata: "серво — 32, 54, 203–204, 207, 274–277, 369, 389"
-  de: "рядок 45, показчик"
-- id: T-COM-033
-  verdykt: pidtverdzheno
-  fayl: components-2026-08.md
-  cytata: "| DRV8833 | двигун постійного струму | TB6612FNG |"
-  de: "рядок 42, таблиця драйвери й ключі"
-- id: T-REG-022
-  verdykt: pidtverdzheno
-  fayl: regulatory-2026-08.md
-  cytata: "Модуль на діапазон, дозволений в іншій частині світу, — це не «працює гірше», а використання чужої смуги."
-  de: "рядок 49-50, блок незворотне"
-- id: T-UA--035
-  verdykt: pidtverdzheno
-  fayl: ua-market-2026-08.md
-  cytata: "Практичний прийом: **критичні компоненти замовляти в перший день проєкту**, паралельно з роботою над рештою."
-  de: "рядок 80-82, розділ терміни й планування"
-- id: T-K02-022
-  verdykt: pidtverdzheno
-  fayl: k02-stan.md
-  cytata: "Файл, менший за очікуваний, — обірваний дамп, а не «стисненіший»."
-  de: "рядок 43, розділ перевірити результат"
-- id: T-K05-018
-  verdykt: pidtverdzheno
-  fayl: k05-proshyvka.md
-  cytata: "Спершу визначити чип (картка К1), потім брати адресу."
-  de: "рядок 18-19, блок nezvorotne"
-- id: T-K07-034
-  verdykt: pidtverdzheno
-  fayl: k07-panika.md
-  cytata: "Після паніки чип скидається — і в логу з'являється `rst:0xc`."
-  de: "рядок 64, розділ коли паніка не перша"
-- id: T-K08-010
-  verdykt: pidtverdzheno
-  fayl: k08-symptomy.md
-  cytata: "| 3 | Прошилося, плата мовчить | адреса бутлоадера не та для цього чипа | звірити чип і адресу → К5 |"
-  de: "рядок 10, таблиця топ-15 несправностей"
-- id: T-K11-008
-  verdykt: pidtverdzheno
-  fayl: k11-nikoly.md
-  cytata: "**Не вмикати Flash Encryption і Secure Boot «щоб подивитися».** В release-режимі це односторонні двері: чип перестає приймати непідписані прошивки, а флеш стає нечитним поза цим конкретним чипом."
-  de: "рядок 18-20, блок nezvorotne"
-- id: T-K13-007
-  verdykt: pidtverdzheno
-  fayl: k13-zhyvlennya.md
-  cytata: "| 1 | `3V3`–`GND`, прозвонка, живлення **вимкнене** | не дзвенить |"
-  de: "рядок 22, таблиця чотири вимірювання"
-- id: T-K14-020
-  verdykt: pidtverdzheno
-  fayl: k14-rivni.md
-  cytata: "Годиться: повільні однонапрямлені сигнали."
-  de: "рядок 41"
-- id: T-K15-033
-  verdykt: pidtverdzheno
-  fayl: k15-seriyna.md
-  cytata: "**Спільний образ ≠ спільна конфігурація.**"
-  de: "рядок 49, блок nezvorotne"
-- id: T-00-081
-  verdykt: pidtverdzheno
-  fayl: 00-pro-dovidnyk.md
-  cytata: "Кожне значення в довіднику прив'язане до конкретних версій тулчейну."
-  de: "рядок 200, розділ версії інструментів"
-- id: T-00-004
-  verdykt: pidtverdzheno
-  fayl: 00-pro-dovidnyk.md
-  cytata: "Лінійне читання — лише один зі способів користуватися цією книгою, і не найчастіший."
-  de: "рядок 9-10"
-- id: T-01-108
-  verdykt: pidtverdzheno
-  fayl: 01-platforma.md
-  cytata: "Кристал, модуль і плата — три різні речі; істина написана на модулі."
-  de: "рядок 178, розділ що з цього треба запам'ятати"
-- id: T-01-062
-  verdykt: pidtverdzheno
-  fayl: 01-platforma.md
-  cytata: "| Старт | мілісекунди | миттєво | миттєво | миттєво | десятки секунд |"
-  de: "рядок 95, таблиця порівняння"
-- id: T-02-139
-  verdykt: pidtverdzheno
-  fayl: 02-chipy.md
-  cytata: "Якщо ви робите більше одного пристрою, варто звести парк до **двох** позицій: одна «робоча конячка» і одна дешева для простих вузлів."
-  de: "рядок 188-189, розділ практична порада про парк плат"
-- id: T-02-047
-  verdykt: pidtverdzheno
-  fayl: 02-chipy.md
-  cytata: "| Wi-Fi | так | так | так | так | **Wi-Fi 6** | **ні** |"
-  de: "рядок 37, таблиця можливості чипів"
-- id: T-03-013
-  verdykt: pidtverdzheno
-  fayl: 03-soc.md
-  cytata: "Це одна з реальних цін дешевизни C3."
-  de: "рядок 28-29"
-- id: T-04-094
-  verdykt: pidtverdzheno
-  fayl: 04-peryferiya.md
-  cytata: "| I²S | 2 | 1 | 2 | 1 | 1 | 1 |"
-  de: "рядок 119, таблиця периферія в чипах"
+  fayl: 09-pidklyuchennya.md
+  cytata: "Прив'язуватися до номера в скриптах — джерело сюрпризів."
+  de: "рядок 63-64"

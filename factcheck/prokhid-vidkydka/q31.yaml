@@ -1,0 +1,249 @@
+# Відхилено 2026-08-27: вердикт ne_znayshov без звʼязаного свідчення роботи.
+# Помічники називали в dyvyvsya один спільний даташит на всі теми.
+# Одиниці ПОВЕРТАЮТЬСЯ в чергу; це не результат.
+
+- id: T-B-203
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reconnection, battery", 0 matches - troubleshooting symptom
+    not in hardware datasheet
+- id: T-B-249
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "symptom, reason", 0 matches - table header, book editorial
+- id: T-B-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reboot, motor", 0 matches - troubleshooting advice, not hardware
+    spec
+- id: T-B-182
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "sensor measurement", 0 matches - usage advice, not hardware
+    specification
+- id: T-C-038
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "compression, stub", 0 matches - software build explanation,
+    not hardware
+- id: T-D-189
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "rebuild, toolchain", 0 matches - build system explanation,
+    not hardware
+- id: T-E-144
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "source, wiring", 0 matches - table header, book editorial
+- id: T-E-095
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "PMS5003, SDS011", 0 matches - sensor specs from other manufacturers,
+    not ESP32
+- id: T-F-019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "build, time, day", 0 matches - build time estimate, not hardware
+    specification
+- id: T-G-116
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "duty cycle", 0 matches - glossary translation, not technical
+    fact
+- id: T-G-162
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ultra-low-power", 0 matches - glossary entry, not verifiable
+    specification
+- id: T-G-044
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "optocoupler", 0 matches - glossary translation, not technical
+    fact
+- id: T-H-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "documentation", 0 matches - meta-statement about sources,
+    not verifiable
+- id: T-Z-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "debounce", 0 matches - index entry with page numbers, not
+    technical specification
+- id: T-Z-123
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "GPIO6", 0 matches - index entry (GPIO6 is internal flash-connected
+    pin)
+- id: T-COM-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "soil moisture", 0 matches - component characteristic, not
+    ESP32 specification
+- id: T-REG-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "BLE, regulatory", 0 matches - regulatory/market assessment,
+    not hardware fact
+- id: T-UA--032
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "sensor, test", 0 matches - guidance/instruction, not verifiable
+    technical specification
+- id: T-K02-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "minutes, loss", 0 matches - motivational text, not technical
+    specification
+- id: T-K04-023
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "USB port, hub", 0 matches - troubleshooting advice, not hardware
+    specification
+- id: T-K07-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "elf, backtrace", 0 matches - debugging tool advice, not hardware
+    specification
+- id: T-K08-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "failed to connect", 0 matches - symptom label, not technical
+    specification
+- id: T-K10-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "lsof, ttyUSB0", 0 matches - command example, not hardware
+    specification
+- id: T-K12-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "position, check", 0 matches - table header, book editorial
+    structure
+- id: T-K14-009
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "regulator, 3.3V", 0 matches - power supply requirement/design
+    guideline
+- id: T-K15-030
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "0043, date", 0 matches - timestamp/metadata entry, not verifiable
+    fact
+- id: T-00-008
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "collect, documents", 0 matches - handbook meta-description,
+    not technical fact
+- id: T-00-035
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "refuted, verified", 0 matches - editorial/explanatory text,
+    not verifiable
+- id: T-01-105
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "forum, github", 0 matches - resource recommendation, not
+    hardware specification
+- id: T-01-055
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "STM32, RTOS", 0 matches - platform comparison table, not
+    ESP32 specification
+- id: T-02-131
+  verdykt: nedosyazhne
+  dyvyvsya: https://www.espressif.com/en/products/socs/esp32-c6 - C6 and H2 datasheets not in accessible
+    cache
+- id: T-03-010
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "core, timing", 0 matches - performance guidance, not hardware
+    specification
+- id: T-04-073
+  verdykt: nedosyazhne
+  dyvyvsya: https://www.espressif.com/en/products/socs/esp32-h2 - H2 datasheet not in accessible cache
+- id: T-04-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "RMT", 0 matches - handbook cross-reference, not external
+    fact
+- id: T-05-078
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "short circuit", 0 matches - electrical principle/physics,
+    not hardware specification
+- id: T-05-013
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "water, analogy", 0 matches - educational metaphor, not technical
+    fact
+- id: T-06-079
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "app_main, wakeup", 0 matches - ESP-IDF behavior, not in hardware
+    datasheet
+- id: T-06-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "datasheet, unverified", 0 matches - source disclaimer, not
+    verifiable fact
+- id: T-08-069
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "buy, strategy", 0 matches - practical recommendation, not
+    hardware specification
+- id: T-09-089
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "device descriptor error", 0 matches - USB/OS troubleshooting,
+    not hardware spec
+- id: T-09-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Linux, driver", 0 matches - operating system support information,
+    not hardware fact
+- id: T-10-064
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "logic analyzer", 0 matches - tool recommendation, not hardware
+    specification
+- id: T-11-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ESP-IDF, version", 0 matches - software development practice,
+    not hardware
+- id: T-11-106
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "reproducibility", 0 matches - software best practice, not
+    hardware specification
+- id: T-12-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino, version", 0 matches - software ecosystem note, not
+    hardware fact
+- id: T-12-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Arduino IDE, library", 0 matches - software version management,
+    not hardware
+- id: T-13-067
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "PlatformIO", 0 matches - tool recommendation, not hardware
+    specification
+- id: T-14-042
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "simulation", 0 matches - simulation limitation note, not
+    hardware fact
+- id: T-14-011
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "Python, learning", 0 matches - educational claim, not verifiable
+    specification
+- id: T-15-068
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "toolchain", 0 matches - development philosophy, not hardware
+    specification
+- id: T-15-051
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "offline, documentation", 0 matches - documentation importance
+    note, not hardware fact
+- id: T-16-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "boot, reason", 0 matches - boot diagnostics note, not hardware
+    specification
+- id: T-17-129
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "esptool, causes", 0 matches - common troubleshooting causes,
+    not hardware spec
+- id: T-18-074
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "SPIFFS, speed", 0 matches - file system performance, not
+    hardware specification
+- id: T-18-020
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "factory, partition", 0 matches - partition types are software
+    concept, not datasheet content
+- id: T-19-081
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "OTA, field", 0 matches - OTA method description, not hardware
+    specification
+- id: T-20-051
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "analysis, log", 0 matches - diagnostic principle, not hardware
+    fact
+- id: T-20-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "backup, reprogram", 0 matches - backup importance note, not
+    hardware specification
+- id: T-21-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "0043, control", 0 matches - timestamp/metadata entry, not
+    verifiable technical fact
+- id: T-22-048
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "dump, 115200", 0 matches - serial troubleshooting tips, not
+    hardware specification
+- id: T-22-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "wire, disconnect", 0 matches - practical note about hardware
+    setup, not specification
+- id: T-23-089
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "short circuit, malfunction", 0 matches - troubleshooting
+    conclusion, not hardware fact

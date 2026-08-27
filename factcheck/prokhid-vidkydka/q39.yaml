@@ -1,0 +1,268 @@
+# Відхилено 2026-08-27: вердикт ne_znayshov без звʼязаного свідчення роботи.
+# Помічники називали в dyvyvsya один спільний даташит на всі теми.
+# Одиниці ПОВЕРТАЮТЬСЯ в чергу; це не результат.
+
+- id: T-A-071
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-B-210
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-B-257
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-B-085
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-C-074
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-D-098
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-D-052
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-E-156
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-E-103
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-G-084
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-G-007
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-G-171
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-G-052
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-H-008
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-Z-055
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-Z-012
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-COM-044
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-REG-026
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-UA--004
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-K02-027
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-K05-026
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-K08-017
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-K09-007
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-K11-002
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-K13-013
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-K14-031
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-K15-042
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-00-086
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-00-041
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-01-111
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-01-074
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-02-144
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-02-073
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-03-016
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-04-116
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-04-048
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-05-087
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-05-002
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-06-097
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-06-029
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-07-111
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-08-077
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-08-004
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-09-095
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-09-003
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-10-012
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-11-060
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-11-113
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-12-049
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-13-035
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-13-075
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-14-048
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-14-017
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-15-012
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-16-056
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-17-050
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-17-140
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-18-082
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-18-038
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-19-090
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-20-063
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-20-042
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-21-006
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-22-057
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-22-038
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'
+- id: T-23-097
+  verdykt: ne_znayshov
+  dyvyvsya: 'esp32_datasheet_en.pdf: practical troubleshooting advice and general guidance, not found
+    in technical specifications'

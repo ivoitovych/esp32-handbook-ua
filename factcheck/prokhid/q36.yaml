@@ -1,0 +1,7 @@
+- dyvyvsya: 06-zhyvlennya.md, grep -i 'Порахувати', 0 точних влучань
+  id: T-06-091
+  verdykt: ne_znayshov
+- cytata: Споживання ESP32 **нерівномірне**.
+  fayl: 06-zhyvlennya.md
+  id: T-06-025
+  verdykt: pidtverdzheno

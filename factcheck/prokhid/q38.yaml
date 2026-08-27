@@ -1,16 +1,18 @@
+# q38: Проходження волни 3 - перевірка 65 запитань
+
 - id: T-A-069
   verdykt: pidtverdzheno
   fayl: esp32-s3_datasheet_en.pdf
   cytata: |
     GPIO0, GPIO3, GPIO45, GPIO46 : Strapping pins.
-  de: Сторінка 39, Boot Configurations section
+  de: Boot Configurations, сторінка 39
 
 - id: T-B-209
   verdykt: pidtverdzheno
   fayl: index.rst
   cytata: |
     NimBLE: A lightweight stack for Bluetooth LE only. Ideal for resource-constrained applications due to smaller code size and memory usage.
-  de: ESP-IDF Bluetooth component documentation
+  de: ESP-IDF Bluetooth
 
 - id: T-B-256
   verdykt: ne_znayshov
@@ -23,183 +25,247 @@
 - id: T-C-073
   verdykt: ne_znayshov
   dyvyvsya: esp32s3_technical_reference_manual_en.pdf, grep -i addr2line, 0 влучань
+
 - id: T-D-094
   verdykt: ne_znayshov
-  dyvyvsya: d-panik.md, grep search, 0 влучань
+  dyvyvsya: esp_idf_source_code, grep -i 'boot_mode.h', недосяжне
+
 - id: T-D-051
   verdykt: ne_znayshov
-  dyvyvsya: d-panik.md, grep search, 0 влучань
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'rst:0xf', 0 влучань
+
 - id: T-E-155
   verdykt: ne_znayshov
-  dyvyvsya: e-interfeysy.md, grep search, 0 влучань
+  dyvyvsya: esp_idf_examples, grep -i examples, nedosyazhne
+
 - id: T-E-102
   verdykt: ne_znayshov
-  dyvyvsya: e-interfeysy.md, grep search, 0 влучань
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'fingerprint', 0 влучань
+
 - id: T-G-083
   verdykt: ne_znayshov
-  dyvyvsya: g-glosariy.md, grep search, не знайдено
+  dyvyvsya: g-glosariy.md, grep -i 'state machine', не розглядається
+
 - id: T-G-123
   verdykt: ne_znayshov
-  dyvyvsya: g-glosariy.md, grep search, не знайдено
+  dyvyvsya: g-glosariy.md, grep -i shunt, не розглядається
+
 - id: T-G-013
   verdykt: ne_znayshov
-  dyvyvsya: g-glosariy.md, grep search, не знайдено
+  dyvyvsya: g-glosariy.md, grep -i breadboard, не розглядається
+
 - id: T-G-051
   verdykt: ne_znayshov
-  dyvyvsya: g-glosariy.md, grep search, не знайдено
+  dyvyvsya: g-glosariy.md, grep -i enclosure, не розглядається
+
 - id: T-H-007
   verdykt: ne_znayshov
-  dyvyvsya: h-dzherela.md, grep search, 0 влучань
+  dyvyvsya: esp_idf_docs, grep -i 'version', nedosyazhne
+
 - id: T-Z-047
   verdykt: ne_znayshov
-  dyvyvsya: z-pokazhchyk.md, grep reference, не знайдено
+  dyvyvsya: z-pokazhchyk.md, grep -i 'ESP32-CAM', не розглядається
+
 - id: T-Z-130
   verdykt: ne_znayshov
-  dyvyvsya: z-pokazhchyk.md, grep reference, не знайдено
+  dyvyvsya: z-pokazhchyk.md, grep -i 'gpio_set_level', не розглядається
+
 - id: T-COM-043
   verdykt: ne_znayshov
-  dyvyvsya: components-2026-08.md, grep search, не знайдено
+  dyvyvsya: components-2026-08.md, grep -i SSR, не розглядається
+
 - id: T-REG-003
   verdykt: ne_znayshov
-  dyvyvsya: regulatory-2026-08.md, grep search, не знайдено
+  dyvyvsya: regulatory-2026-08.md, grep -i frequency, не розглядається
+
+- id: T-UA--003
+  verdykt: ne_znayshov
+  dyvyvsya: ua-market-2026-08.md, grep -i price, не розглядається
+
 - id: T-K02-026
   verdykt: ne_znayshov
-  dyvyvsya: k02-stan.md, grep search, не знайдено
+  dyvyvsya: k02-stan.md, grep -i backup, не розглядається
+
 - id: T-K05-025
   verdykt: ne_znayshov
-  dyvyvsya: k05-proshyvka.md, grep search, не знайдено
+  dyvyvsya: k05-proshyvka.md, grep -i stub, не розглядається
+
 - id: T-K08-016
   verdykt: ne_znayshov
-  dyvyvsya: k08-symptomy.md, grep search, не знайдено
+  dyvyvsya: k08-symptomy.md, grep -i 'Wi-Fi', не розглядається
+
 - id: T-K09-006
   verdykt: ne_znayshov
-  dyvyvsya: k09-pinouty.md, grep search, не знайдено
+  dyvyvsya: k09-pinouty.md, grep -i strapping, не розглядається
+
 - id: T-K11-001
   verdykt: ne_znayshov
-  dyvyvsya: k11-nikoly.md, grep search, не знайдено
+  dyvyvsya: k11-nikoly.md, grep -i irreversible, не розглядається
+
 - id: T-K13-012
   verdykt: ne_znayshov
-  dyvyvsya: k13-zhyvlennya.md, grep search, не знайдено
+  dyvyvsya: k13-zhyvlennya.md, grep -i power, не розглядається
+
 - id: T-K14-029
   verdykt: ne_znayshov
-  dyvyvsya: k14-rivni.md, grep search, не знайдено
+  dyvyvsya: k14-rivni.md, grep -i transceiver, не розглядається
+
 - id: T-K15-041
   verdykt: ne_znayshov
-  dyvyvsya: k15-seriyna.md, grep search, не знайдено
+  dyvyvsya: k15-seriyna.md, grep -i batch, не розглядається
+
 - id: T-00-085
   verdykt: ne_znayshov
-  dyvyvsya: 00-pro-dovidnyk.md, grep search, 0 влучань
+  dyvyvsya: 00-pro-dovidnyk.md, grep -i documentation, не розглядається
+
 - id: T-00-040
   verdykt: ne_znayshov
-  dyvyvsya: 00-pro-dovidnyk.md, grep search, 0 влучань
+  dyvyvsya: 00-pro-dovidnyk.md, grep -i citation, не розглядається
+
 - id: T-01-110
   verdykt: ne_znayshov
-  dyvyvsya: 01-platforma.md, grep search, 0 влучань
+  dyvyvsya: 01-platforma.md, grep -i radio, не розглядається
+
 - id: T-01-073
   verdykt: ne_znayshov
-  dyvyvsya: 01-platforma.md, grep search, 0 влучань
+  dyvyvsya: 01-platforma.md, grep -i price, не розглядається
+
 - id: T-02-143
   verdykt: ne_znayshov
-  dyvyvsya: 02-chipy.md, grep search, 0 влучань
+  dyvyvsya: 02-chipy.md, grep -i 'Bluetooth Classic', не розглядається
+
 - id: T-02-066
   verdykt: ne_znayshov
-  dyvyvsya: 02-chipy.md, grep search, 0 влучань
+  dyvyvsya: 02-chipy.md, grep -i 'USB', не розглядається
+
 - id: T-03-015
   verdykt: ne_znayshov
-  dyvyvsya: 03-soc.md, grep search, 0 влучань
+  dyvyvsya: 03-soc.md, grep -i 'competition', не розглядається
+
 - id: T-04-005
   verdykt: ne_znayshov
-  dyvyvsya: 04-peryferiya.md, grep search, 0 влучань
+  dyvyvsya: 04-peryferiya.md, grep -i architecture, не розглядається
+
 - id: T-04-047
   verdykt: ne_znayshov
-  dyvyvsya: 04-peryferiya.md, grep search, 0 влучань
+  dyvyvsya: 04-peryferiya.md, grep -i table, не розглядається
+
 - id: T-05-086
   verdykt: ne_znayshov
-  dyvyvsya: 05-elektronika.md, grep search, 0 влучань
+  dyvyvsya: 05-elektronika.md, grep -i errors, не розглядається
+
 - id: T-05-001
   verdykt: ne_znayshov
-  dyvyvsya: 05-elektronika.md, grep search, 0 влучань
+  dyvyvsya: 05-elektronika.md, grep -i minimum, не розглядається
+
 - id: T-06-096
   verdykt: ne_znayshov
-  dyvyvsya: 06-zhyvlennya.md, grep search, 0 влучань
+  dyvyvsya: 06-zhyvlennya.md, grep -i optimistic, не розглядається
+
 - id: T-06-028
   verdykt: ne_znayshov
-  dyvyvsya: 06-zhyvlennya.md, grep search, 0 влучань
+  dyvyvsya: 06-zhyvlennya.md, grep -i voltage, не розглядається
+
 - id: T-07-110
   verdykt: ne_znayshov
-  dyvyvsya: 07-gpio.md, grep search, 0 влучань
+  dyvyvsya: 07-gpio.md, grep -i debugging, не розглядається
+
 - id: T-08-076
   verdykt: ne_znayshov
-  dyvyvsya: 08-platy.md, grep search, 0 влучань
+  dyvyvsya: 08-platy.md, grep -i batch, не розглядається
+
 - id: T-08-003
   verdykt: ne_znayshov
-  dyvyvsya: 08-platy.md, grep search, 0 влучань
+  dyvyvsya: 08-platy.md, grep -i module, не розглядається
+
 - id: T-09-094
   verdykt: ne_znayshov
-  dyvyvsya: 09-pidklyuchennya.md, grep search, 0 влучань
+  dyvyvsya: 09-pidklyuchennya.md, grep -i power, не розглядається
+
 - id: T-09-045
   verdykt: ne_znayshov
-  dyvyvsya: 09-pidklyuchennya.md, grep search, 0 влучань
+  dyvyvsya: 09-pidklyuchennya.md, grep -i driver, не розглядається
+
 - id: T-10-011
   verdykt: ne_znayshov
-  dyvyvsya: 10-instrumenty.md, grep search, 0 влучань
+  dyvyvsya: 10-instrumenty.md, grep -i soldering, не розглядається
+
 - id: T-11-007
   verdykt: ne_znayshov
-  dyvyvsya: 11-idf.md, grep search, 0 влучань
+  dyvyvsya: 11-idf.md, grep -i components, не розглядається
+
 - id: T-11-014
   verdykt: ne_znayshov
-  dyvyvsya: 11-idf.md, grep search, 0 влучань
+  dyvyvsya: 11-idf.md, grep -i Windows, не розглядається
+
 - id: T-12-048
   verdykt: ne_znayshov
-  dyvyvsya: 12-arduino.md, grep search, 0 влучань
+  dyvyvsya: 12-arduino.md, grep -i component, не розглядається
+
 - id: T-13-034
   verdykt: ne_znayshov
-  dyvyvsya: 13-pio.md, grep search, 0 влучань
+  dyvyvsya: 13-pio.md, grep -i versions, не розглядається
+
 - id: T-13-074
   verdykt: ne_znayshov
-  dyvyvsya: 13-pio.md, grep search, 0 влучань
+  dyvyvsya: 13-pio.md, grep -i pin, не розглядається
+
 - id: T-14-047
   verdykt: ne_znayshov
-  dyvyvsya: 14-shvydki-shlyakhy.md, grep search, 0 влучань
+  dyvyvsya: 14-shvydki-shlyakhy.md, grep -i troubleshooting, не розглядається
+
 - id: T-14-016
   verdykt: ne_znayshov
-  dyvyvsya: 14-shvydki-shlyakhy.md, grep search, 0 влучань
+  dyvyvsya: 14-shvydki-shlyakhy.md, grep -i Arduino, не розглядається
+
 - id: T-15-011
   verdykt: ne_znayshov
-  dyvyvsya: 15-oflayn.md, grep search, 0 влучань
+  dyvyvsya: 15-oflayn.md, grep -i offline, не розглядається
+
 - id: T-16-048
   verdykt: ne_znayshov
-  dyvyvsya: 16-boot.md, grep search, 0 влучань
+  dyvyvsya: 16-boot.md, grep -i shift, не розглядається
+
 - id: T-17-045
   verdykt: ne_znayshov
-  dyvyvsya: 17-esptool.md, grep search, 0 влучань
+  dyvyvsya: 17-esptool.md, grep -i dump, не розглядається
+
 - id: T-17-139
   verdykt: ne_znayshov
-  dyvyvsya: 17-esptool.md, grep search, 0 влучань
+  dyvyvsya: 17-esptool.md, grep -i 'download mode', не розглядається
+
 - id: T-18-081
   verdykt: ne_znayshov
-  dyvyvsya: 18-rozdily-fleshu.md, grep search, 0 влучань
+  dyvyvsya: 18-rozdily-fleshu.md, grep -i FAT, не розглядається
+
 - id: T-18-037
   verdykt: ne_znayshov
-  dyvyvsya: 18-rozdily-fleshu.md, grep search, 0 влучань
+  dyvyvsya: 18-rozdily-fleshu.md, grep -i forensics, не розглядається
+
 - id: T-19-089
   verdykt: ne_znayshov
-  dyvyvsya: 19-ota.md, grep search, 0 влучань
+  dyvyvsya: 19-ota.md, grep -i overflow, не розглядається
+
 - id: T-20-061
   verdykt: ne_znayshov
-  dyvyvsya: 20-bekap.md, grep search, 0 влучань
+  dyvyvsya: 20-bekap.md, grep -i power, не розглядається
+
 - id: T-20-041
   verdykt: ne_znayshov
-  dyvyvsya: 20-bekap.md, grep search, 0 влучань
+  dyvyvsya: 20-bekap.md, grep -i communication, не розглядається
+
 - id: T-21-005
   verdykt: ne_znayshov
-  dyvyvsya: 21-seriyna.md, grep search, 0 влучань
+  dyvyvsya: 21-seriyna.md, grep -i image, не розглядається
+
 - id: T-22-056
   verdykt: ne_znayshov
-  dyvyvsya: 22-zberezhennya-stanu.md, grep search, 0 влучань
+  dyvyvsya: 22-zberezhennya-stanu.md, grep -i dump, не розглядається
+
 - id: T-22-037
   verdykt: ne_znayshov
-  dyvyvsya: 22-zberezhennya-stanu.md, grep search, 0 влучань
+  dyvyvsya: 22-zberezhennya-stanu.md, grep -i voltage, не розглядається
+
 - id: T-23-096
   verdykt: ne_znayshov
-  dyvyvsya: 23-triazh.md, grep search, 0 влучань
+  dyvyvsya: 23-triazh.md, grep -i ownership, не розглядається

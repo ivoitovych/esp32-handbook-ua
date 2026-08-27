@@ -1,3 +1,7 @@
+# Відхилено 2026-08-27: вердикт ne_znayshov без звʼязаного свідчення роботи.
+# Помічники називали в dyvyvsya один спільний даташит на всі теми.
+# Одиниці ПОВЕРТАЮТЬСЯ в чергу; це не результат.
+
 - id: T-A-056
   verdykt: ne_znayshov
   dyvyvsya: esp32_datasheet_en.pdf, grep "free GPIO" - 0 влучань
@@ -33,8 +37,7 @@
   dyvyvsya: esp32_datasheet_en.pdf, grep "peak current" - 0 влучань
 - id: T-G-161
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, grep "Real-Time Clock" - 1 влучання; це дефініція,
-    не технічна спецификація
+  dyvyvsya: esp32_datasheet_en.pdf, grep "Real-Time Clock" - 1 влучання; це дефініція, не технічна спецификація
 - id: T-G-043
   verdykt: ne_znayshov
   dyvyvsya: esp32_datasheet_en.pdf, grep "switch transistor" - 0 влучань
@@ -46,8 +49,7 @@
   dyvyvsya: esp32_datasheet_en.pdf, grep "CONFIG_IDF_TARGET_ESP32S3" - 0 влучань
 - id: T-Z-121
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, grep "GPIO4" - 1 влучання; це запис покажчику,
-    не технічна спецификація
+  dyvyvsya: esp32_datasheet_en.pdf, grep "GPIO4" - 1 влучання; це запис покажчику, не технічна спецификація
 - id: T-COM-026
   verdykt: ne_znayshov
   dyvyvsya: esp32_datasheet_en.pdf, grep "soil humidity sensor" - 0 влучань
@@ -92,8 +94,7 @@
   dyvyvsya: esp32_datasheet_en.pdf, grep "most useful resource" - 0 влучань
 - id: T-01-053
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, grep "FreeRTOS" - 1 влучання; це базова інформація
-    про ОС
+  dyvyvsya: esp32_datasheet_en.pdf, grep "FreeRTOS" - 1 влучання; це базова інформація про ОС
 - id: T-02-130
   verdykt: ne_znayshov
   dyvyvsya: esp32_datasheet_en.pdf, grep "battery years" - 0 влучань
@@ -108,8 +109,7 @@
   dyvyvsya: esp32_datasheet_en.pdf, grep "C6 UART" - 0 влучань
 - id: T-04-041
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, grep "RMT remote control" - 1 влучання; це периферія
-    описана у таблиці
+  dyvyvsya: esp32_datasheet_en.pdf, grep "RMT remote control" - 1 влучання; це периферія описана у таблиці
 - id: T-05-077
   verdykt: ne_znayshov
   dyvyvsya: esp32_datasheet_en.pdf, grep "GPIO push-pull output" - 0 влучань
@@ -169,8 +169,7 @@
   dyvyvsya: esp32_datasheet_en.pdf, grep "different questions" - 0 влучань
 - id: T-16-025
   verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, grep "strapping pin boot" - 1 влучання; це описано
-    у розділі Boot
+  dyvyvsya: esp32_datasheet_en.pdf, grep "strapping pin boot" - 1 влучання; це описано у розділі Boot
 - id: T-17-128
   verdykt: ne_znayshov
   dyvyvsya: esp32_datasheet_en.pdf, grep "written not transmitted" - 0 влучань

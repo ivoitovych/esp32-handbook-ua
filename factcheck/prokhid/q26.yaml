@@ -1,281 +1,42 @@
 - id: T-A-045
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
-  cytata: |
-    GPIO25     14    I/O    GPIO25, ADC2_CH8,        RTC_GPIO6,      DAC_1,       EMAC_RXD0
+  cytata: 'GPIO25     14    I/O    GPIO25, ADC2_CH8,        RTC_GPIO6,      DAC_1,       EMAC_RXD0
+
+    '
   de: рядок 881, таблиця пінаути
-
-- id: T-B-194
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'supply\|power', проблеми підключення не описані як технічна характеристика
-
-- id: T-B-245
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, пошук по розділам - це посилання на документацію, не технічне твердження
-
-- id: T-B-072
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендації з обслуговування та розв'язання проблем не описані в даташиті
-
-- id: T-B-176
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, проблеми з відображенням кирилиці - це проблема бібліотеки/шрифту, не чипа
-
-- id: T-C-003
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, команды v4 - це рекомендація по інструментам, не технічна характеристика чипа
-
-- id: T-D-177
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, поради з пошуку помилок в коді - це рекомендація, не технічні дані
-
 - id: T-E-137
   verdykt: pidtverdzheno
   fayl: a4988.pdf
-  cytata: |
-    Simply inputting one pulse on the STEP input drives the motor one microstep.
+  cytata: 'Simply inputting one pulse on the STEP input drives the motor one microstep.
+
+    '
   de: сторінка з описом, перший абзац про трансльяторе
-
-- id: T-E-088
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про режими Adafruit SPI_MODE0 - це рекомендація бібліотеки, не даташиту
-
-- id: T-F-004
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, інформація про пакування залізо - це не технічні параметри ESP32
-
-- id: T-G-111
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, переклад терміну "потужність" - це не технічне твердження про чип, а термінологія
-
-- id: T-G-156
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, переклад акроніму LDO - це не твердження про технічні параметри
-
-- id: T-G-038
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, переклад "підвищувальний перетворювач" - це терміналогія, не технічні дані
-
-- id: T-G-080
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, переклад терміну "файлова система" - це термінологія, не технічні параметри
-
-- id: T-H-038
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про дату статті - це методика, не технічне твердження
-
-- id: T-Z-117
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, посилання на сторінки GPIO26 - це внутрішня посилання книги, не твердження про технічні параметри
-
-- id: T-COM-015
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про камеру ESP32-CAM - це не технічні параметри чипа
-
-- id: T-REG-001
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, позначення ревізії вкладиша - це не технічне твердження про функціональність
-
-- id: T-UA--025
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, описання реле - це не про параметри ESP32, а про периферійний пристрій
-
-- id: T-K02-011
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про вимірювання опорів - це процедура тестування, не технічні параметри
-
-- id: T-K04-002
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про нормальну ситуацію - це рекомендація, не технічна характеристика
-
-- id: T-K07-024
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про отримання лога - це процедура діагностики, не твердження про чип
-
-- id: T-K08-053
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про симптом - це рекомендація з обслуговування, не технічні параметри
-
-- id: T-K10-031
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, команда screen - це про операційну систему Linux, не про ESP32
-
-- id: T-K12-022
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про вибір компонентів - це поріз, не технічна характеристика чипа
-
-- id: T-K13-044
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про споживання в режимі сну - це проблема плати розробки, а не чипа
-
-- id: T-K15-025
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, версія чіпу - це не твердження про функціональність чипа
-
-- id: T-00-073
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про написання прошивки - це методика розробки, не твердження про технічні параметри
-
-- id: T-00-030
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, міркування про твердження - це філософське твердження, не технічна характеристика
-
-- id: T-01-101
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, визначення TRM - це категоризація документів, не твердження про параметри чипа
-
 - id: T-01-038
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
-  cytata: |
-    2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC
+  cytata: '2.4 GHz Wi-Fi + Bluetooth® + Bluetooth LE SoC
+
+    '
   de: заголовок розділу про RF можливості
-
-- id: T-02-123
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про вартість - це комерційна інформація, не технічна характеристика
-
 - id: T-02-031
   verdykt: pidtverdzheno
   fayl: esp32-s2_datasheet_en.pdf
-  cytata: |
-    SRAM: 320 KB
+  cytata: 'SRAM: 320 KB
+
+    '
   de: розділ про параметри ESP32-S2
-
-- id: T-03-071
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про архітектуру радіостека - це стосується програмного забезпечення, не датаваіту чипа
-
-- id: T-04-068
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, кількість портів UART - потрібна перевірка, але нема точного числа у самому даташиті
-
-- id: T-04-032
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, характеристика USB OTG для S3 - потрібен S3 датаваіт для перевірки
-
 - id: T-05-067
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
-  cytata: |
-    pull-up/pull-down resistors at reset if the pins are not connected to any circuit
+  cytata: 'pull-up/pull-down resistors at reset if the pins are not connected to any circuit
+
+    '
   de: розділ про GPIO поведінку з підтягувальними резисторами
-
-- id: T-05-123
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, поради про припаювання - це практична рекомендація, не технічна характеристика чипа
-
-- id: T-06-006
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про способи живлення - це описання плати розробки, не даташиту чипа
-
-- id: T-06-129
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про конденсатор - це рекомендація для схеми живлення, не твердження про чип
-
-- id: T-07-078
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про кількість пінів S3 - потрібен S3 датаваіт
-
-- id: T-08-062
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про якість паїння - це практична порада, не технічна характеристика
-
-- id: T-08-036
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, описання клону плати - це інформація про виробника плати, не про чип
-
-- id: T-09-084
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, команда Linux dmesg - це про операційну систему, не про ESP32
-
-- id: T-09-032
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про конектор - це довідка, не технічна характеристика чипа
-
-- id: T-10-059
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про інтернет у полі - це рекомендація, не технічна характеристика
-
-- id: T-10-039
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, список інструментів - це довідка для розробника, не технічна характеристика чипа
-
-- id: T-11-098
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, проблема з IntelliSense - це про IDE, не про ESP32
-
-- id: T-12-036
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про старий код - це рекомендація про версіонування, не технічна характеристика
-
-- id: T-12-020
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, описання Arduino API - це про бібліотеку, не про чип
-
-- id: T-13-061
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про плату - це методика вибору, не технічна характеристика
-
-- id: T-14-037
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, описання Wokwi - це про симулятор, не про ESP32
-
-- id: T-14-078
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про Wokwi - це про симулятор, не про реальні параметри чипа
-
-- id: T-15-064
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про те, для чого зроблені - це загальне твердження, не технічне
-
-- id: T-15-046
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, метафора про стелю - це не технічна характеристика
-
 - id: T-16-017
   verdykt: pidtverdzheno
   fayl: esp32_datasheet_en.pdf
-  cytata: |
-    UART Download Boot
+  cytata: 'UART Download Boot
+
+    '
   de: розділ про режим завантаження прошивки по UART
-
-- id: T-17-121
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, помилка операційної системи - це про Linux права доступу, не про ESP32
-
-- id: T-18-068
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про SPIFFS - потрібна перевірка в документації SPI
-
-- id: T-18-124
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про LittleFS - це рекомендація для програмного забезпечення, не технічна характеристика чипа
-
-- id: T-19-009
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, позначення типу ota_0 - це внутрішня структура, не технічна характеристика
-
-- id: T-19-048
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, критерій тестування - це рекомендація, не технічна характеристика
-
-- id: T-20-021
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про дамп - це рекомендація для відновлення, не технічна характеристика
-
-- id: T-21-072
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, версія мікрокоду - це не технічна характеристика чипа
-
-- id: T-21-036
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, описання функціональної перевірки - це методика тестування, не технічна характеристика
-
-- id: T-22-021
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про сигнал vs колір - це рекомендація для програмування, не про чип
-
-- id: T-23-080
-  verdykt: ne_znayshov
-  dyvyvsya: esp32_datasheet_en.pdf, твердження про стан чипа - це рекомендація для діагностики, не технічна характеристика

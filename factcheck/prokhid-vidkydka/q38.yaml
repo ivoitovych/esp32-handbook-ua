@@ -1,0 +1,199 @@
+# Відхилено 2026-08-27: вердикт ne_znayshov без звʼязаного свідчення роботи.
+# Помічники називали в dyvyvsya один спільний даташит на всі теми.
+# Одиниці ПОВЕРТАЮТЬСЯ в чергу; це не результат.
+
+- id: T-A-069
+  verdykt: ne_znayshov
+  dyvyvsya: a-pinouty.md, grep search, 0 влучань
+- id: T-B-209
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, grep search, 0 влучань
+- id: T-B-256
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, grep search, 0 влучань
+- id: T-B-084
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, grep search, 0 влучань
+- id: T-C-073
+  verdykt: ne_znayshov
+  dyvyvsya: c-komandy.md, grep search, 0 влучань
+- id: T-D-094
+  verdykt: ne_znayshov
+  dyvyvsya: d-panik.md, grep search, 0 влучань
+- id: T-D-051
+  verdykt: ne_znayshov
+  dyvyvsya: d-panik.md, grep search, 0 влучань
+- id: T-E-155
+  verdykt: ne_znayshov
+  dyvyvsya: e-interfeysy.md, grep search, 0 влучань
+- id: T-E-102
+  verdykt: ne_znayshov
+  dyvyvsya: e-interfeysy.md, grep search, 0 влучань
+- id: T-G-083
+  verdykt: ne_znayshov
+  dyvyvsya: g-glosariy.md, grep -i термін, 0 влучань
+- id: T-G-123
+  verdykt: ne_znayshov
+  dyvyvsya: g-glosariy.md, grep -i термін, 0 влучань
+- id: T-G-013
+  verdykt: ne_znayshov
+  dyvyvsya: g-glosariy.md, grep -i термін, 0 влучань
+- id: T-G-051
+  verdykt: ne_znayshov
+  dyvyvsya: g-glosariy.md, grep -i термін, 0 влучань
+- id: T-H-007
+  verdykt: ne_znayshov
+  dyvyvsya: h-dzherela.md, grep search, 0 влучань
+- id: T-Z-047
+  verdykt: ne_znayshov
+  dyvyvsya: z-pokazhchyk.md, grep search, 0 влучань
+- id: T-Z-130
+  verdykt: ne_znayshov
+  dyvyvsya: z-pokazhchyk.md, grep search, 0 влучань
+- id: T-COM-043
+  verdykt: ne_znayshov
+  dyvyvsya: components-2026-08.md, grep search, 0 влучань
+- id: T-REG-003
+  verdykt: ne_znayshov
+  dyvyvsya: regulatory-2026-08.md, grep search, 0 влучань
+- id: T-K02-026
+  verdykt: ne_znayshov
+  dyvyvsya: k02-stan.md, grep search, 0 влучань
+- id: T-K05-025
+  verdykt: ne_znayshov
+  dyvyvsya: k05-proshyvka.md, grep search, 0 влучань
+- id: T-K08-016
+  verdykt: ne_znayshov
+  dyvyvsya: k08-symptomy.md, grep search, 0 влучань
+- id: T-K09-006
+  verdykt: ne_znayshov
+  dyvyvsya: k09-pinouty.md, grep search, 0 влучань
+- id: T-K11-001
+  verdykt: ne_znayshov
+  dyvyvsya: k11-nikoly.md, grep search, 0 влучань
+- id: T-K13-012
+  verdykt: ne_znayshov
+  dyvyvsya: k13-zhyvlennya.md, grep search, 0 влучань
+- id: T-K14-029
+  verdykt: ne_znayshov
+  dyvyvsya: k14-rivni.md, grep search, 0 влучань
+- id: T-K15-041
+  verdykt: ne_znayshov
+  dyvyvsya: k15-seriyna.md, grep search, 0 влучань
+- id: T-00-085
+  verdykt: ne_znayshov
+  dyvyvsya: 00-pro-dovidnyk.md, grep search, 0 влучань
+- id: T-00-040
+  verdykt: ne_znayshov
+  dyvyvsya: 00-pro-dovidnyk.md, grep search, 0 влучань
+- id: T-01-110
+  verdykt: ne_znayshov
+  dyvyvsya: 01-platforma.md, grep search, 0 влучань
+- id: T-01-073
+  verdykt: ne_znayshov
+  dyvyvsya: 01-platforma.md, grep search, 0 влучань
+- id: T-02-143
+  verdykt: ne_znayshov
+  dyvyvsya: 02-chipy.md, grep search, 0 влучань
+- id: T-02-066
+  verdykt: ne_znayshov
+  dyvyvsya: 02-chipy.md, grep search, 0 влучань
+- id: T-03-015
+  verdykt: ne_znayshov
+  dyvyvsya: 03-soc.md, grep search, 0 влучань
+- id: T-04-005
+  verdykt: ne_znayshov
+  dyvyvsya: 04-peryferiya.md, grep search, 0 влучань
+- id: T-04-047
+  verdykt: ne_znayshov
+  dyvyvsya: 04-peryferiya.md, grep search, 0 влучань
+- id: T-05-086
+  verdykt: ne_znayshov
+  dyvyvsya: 05-elektronika.md, grep search, 0 влучань
+- id: T-05-001
+  verdykt: ne_znayshov
+  dyvyvsya: 05-elektronika.md, grep search, 0 влучань
+- id: T-06-096
+  verdykt: ne_znayshov
+  dyvyvsya: 06-zhyvlennya.md, grep search, 0 влучань
+- id: T-06-028
+  verdykt: ne_znayshov
+  dyvyvsya: 06-zhyvlennya.md, grep search, 0 влучань
+- id: T-07-110
+  verdykt: ne_znayshov
+  dyvyvsya: 07-gpio.md, grep search, 0 влучань
+- id: T-08-076
+  verdykt: ne_znayshov
+  dyvyvsya: 08-platy.md, grep search, 0 влучань
+- id: T-08-003
+  verdykt: ne_znayshov
+  dyvyvsya: 08-platy.md, grep search, 0 влучань
+- id: T-09-094
+  verdykt: ne_znayshov
+  dyvyvsya: 09-pidklyuchennya.md, grep search, 0 влучань
+- id: T-09-045
+  verdykt: ne_znayshov
+  dyvyvsya: 09-pidklyuchennya.md, grep search, 0 влучань
+- id: T-10-011
+  verdykt: ne_znayshov
+  dyvyvsya: 10-instrumenty.md, grep search, 0 влучань
+- id: T-11-007
+  verdykt: ne_znayshov
+  dyvyvsya: 11-idf.md, grep search, 0 влучань
+- id: T-11-014
+  verdykt: ne_znayshov
+  dyvyvsya: 11-idf.md, grep search, 0 влучань
+- id: T-12-048
+  verdykt: ne_znayshov
+  dyvyvsya: 12-arduino.md, grep search, 0 влучань
+- id: T-13-034
+  verdykt: ne_znayshov
+  dyvyvsya: 13-pio.md, grep search, 0 влучань
+- id: T-13-074
+  verdykt: ne_znayshov
+  dyvyvsya: 13-pio.md, grep search, 0 влучань
+- id: T-14-047
+  verdykt: ne_znayshov
+  dyvyvsya: 14-shvydki-shlyakhy.md, grep search, 0 влучань
+- id: T-14-016
+  verdykt: ne_znayshov
+  dyvyvsya: 14-shvydki-shlyakhy.md, grep search, 0 влучань
+- id: T-15-011
+  verdykt: ne_znayshov
+  dyvyvsya: 15-oflayn.md, grep search, 0 влучань
+- id: T-16-048
+  verdykt: ne_znayshov
+  dyvyvsya: 16-boot.md, grep search, 0 влучань
+- id: T-17-045
+  verdykt: ne_znayshov
+  dyvyvsya: 17-esptool.md, grep search, 0 влучань
+- id: T-17-139
+  verdykt: ne_znayshov
+  dyvyvsya: 17-esptool.md, grep search, 0 влучань
+- id: T-18-081
+  verdykt: ne_znayshov
+  dyvyvsya: 18-rozdily-fleshu.md, grep search, 0 влучань
+- id: T-18-037
+  verdykt: ne_znayshov
+  dyvyvsya: 18-rozdily-fleshu.md, grep search, 0 влучань
+- id: T-19-089
+  verdykt: ne_znayshov
+  dyvyvsya: 19-ota.md, grep search, 0 влучань
+- id: T-20-061
+  verdykt: ne_znayshov
+  dyvyvsya: 20-bekap.md, grep search, 0 влучань
+- id: T-20-041
+  verdykt: ne_znayshov
+  dyvyvsya: 20-bekap.md, grep search, 0 влучань
+- id: T-21-005
+  verdykt: ne_znayshov
+  dyvyvsya: 21-seriyna.md, grep search, 0 влучань
+- id: T-22-056
+  verdykt: ne_znayshov
+  dyvyvsya: 22-zberezhennya-stanu.md, grep search, 0 влучань
+- id: T-22-037
+  verdykt: ne_znayshov
+  dyvyvsya: 22-zberezhennya-stanu.md, grep search, 0 влучань
+- id: T-23-096
+  verdykt: ne_znayshov
+  dyvyvsya: 23-triazh.md, grep search, 0 влучань

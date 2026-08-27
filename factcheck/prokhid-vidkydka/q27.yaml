@@ -1,0 +1,190 @@
+# Відхилено 2026-08-27: вердикт ne_znayshov без звʼязаного свідчення роботи.
+# Помічники називали в dyvyvsya один спільний даташит на всі теми.
+# Одиниці ПОВЕРТАЮТЬСЯ в чергу; це не результат.
+
+- id: T-B-177
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'cyrillic', 0 влучань
+- id: T-C-028
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'praporec', 0 влучань
+- id: T-D-179
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'pointer arithmetic', 0 влучань
+- id: T-E-138
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'A4988', 0 влучань
+- id: T-E-090
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'device', 0 влучань
+- id: T-F-015
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'cartky', 0 влучань
+- id: T-G-112
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'capacitance', 0 влучань
+- id: T-G-157
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'BMS', 0 влучань
+- id: T-G-040
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'level shifter', 0 влучань
+- id: T-G-081
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'dump', 0 влучань
+- id: T-H-039
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'repository', 0 влучань
+- id: T-Z-118
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'GPIO3', 0 влучань
+- id: T-COM-016
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'ESP32-CAM', 0 влучань
+- id: T-REG-002
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'regulatory', 0 влучань
+- id: T-UA--026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'microSD', 0 влучань
+- id: T-K02-012
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'stan', 0 влучань
+- id: T-K04-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'boot', 0 влучань
+- id: T-K07-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'addr2line', 0 влучань
+- id: T-K08-054
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'symptomy', 0 влучань
+- id: T-K10-032
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'picocom', 0 влучань
+- id: T-K12-023
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'komplekt', 0 влучань
+- id: T-K14-005
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'rivni', 0 влучань
+- id: T-K15-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'seriyna', 0 влучань
+- id: T-00-074
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'payaty', 0 влучань
+- id: T-00-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'klas E', 0 влучань
+- id: T-01-102
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'tolstyy dokument', 0 влучань
+- id: T-01-040
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'radio', 0 влучань
+- id: T-02-125
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'Bluetooth Classic', 0 влучань
+- id: T-02-032
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'SRAM', 0 влучань
+- id: T-03-072
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'single-core', 0 влучань
+- id: T-04-069
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'UART', 0 влучань
+- id: T-04-033
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'USB OTG', 0 влучань
+- id: T-05-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'current', 0 влучань
+- id: T-05-124
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'static', 0 влучань
+- id: T-06-069
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'sleep power domain', 0 влучань
+- id: T-06-132
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'energy budget', 0 влучань
+- id: T-07-080
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'N8 N16R8', 0 влучань
+- id: T-08-063
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'batch verify', 0 влучань
+- id: T-08-038
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'board pinout', 0 влучань
+- id: T-09-085
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'cable', 0 влучань
+- id: T-09-033
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'chip near connector', 0 влучань
+- id: T-10-060
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'consumables', 0 влучань
+- id: T-10-040
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'resistors capacitors', 0 влучань
+- id: T-11-099
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'ESP-IDF version', 0 влучань
+- id: T-12-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'libraries', 0 влучань
+- id: T-12-021
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'prototyping', 0 влучань
+- id: T-13-062
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'PlatformIO conflict', 0 влучань
+- id: T-14-038
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'hardware', 0 влучань
+- id: T-14-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'MicroPython', 0 влучань
+- id: T-15-065
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'appendix', 0 влучань
+- id: T-15-047
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'offline', 0 влучань
+- id: T-16-019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'strapping pins', 0 влучань
+- id: T-17-122
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'dialout group', 0 влучань
+- id: T-18-069
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'FAT', 0 влучань
+- id: T-18-010
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'partition table', 0 влучань
+- id: T-19-010
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'OTA slot', 0 влучань
+- id: T-20-045
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'phy_init', 0 влучань
+- id: T-20-022
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'encryption', 0 влучань
+- id: T-21-073
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'serial number', 0 влучань
+- id: T-21-037
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'firmware', 0 влучань
+- id: T-22-026
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'color', 0 влучань
+- id: T-23-081
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'boot loop', 0 влучань

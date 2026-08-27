@@ -1,0 +1,187 @@
+# Відхилено 2026-08-27: вердикт ne_znayshov без звʼязаного свідчення роботи.
+# Помічники називали в dyvyvsya один спільний даташит на всі теми.
+# Одиниці ПОВЕРТАЮТЬСЯ в чергу; це не результат.
+
+- id: T-B-191
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, Wi-Fi регіональні канали
+- id: T-B-242
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, ISR Interrupt WDT
+- id: T-B-173
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, SH1106 SSD1306 дисплей
+- id: T-C-125
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, esptool strings утиліта
+- id: T-D-166
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, ISR паніка
+- id: T-E-132
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, PIR HC-SR501
+- id: T-E-084
+  verdykt: ne_znayshov
+  dyvyvsya: ssd1306.pdf, E-paper дисплей
+- id: T-F-013
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, Linux драйвери
+- id: T-G-108
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, глосарій напруга
+- id: T-G-150
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, глосарій UART
+- id: T-G-035
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, глосарій живлення
+- id: T-G-075
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, глосарій гонка
+- id: T-H-035
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, джерела посилання
+- id: T-Z-114
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, покажчик GPIO21
+- id: T-COM-010
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, ESP32-DevKitC V4
+- id: T-REG-009
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, регіональні частоти
+- id: T-UA--019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, українськаий ринок
+- id: T-K02-008
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, картка К2
+- id: T-K04-012
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, картка К4
+- id: T-K07-020
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, картка К7
+- id: T-K08-001
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, картка К8
+- id: T-K10-020
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, картка К10
+- id: T-K12-019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, картка К12
+- id: T-K13-041
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, картка К13
+- id: T-K15-022
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, картка К15
+- id: T-00-070
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, про довідник
+- id: T-00-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, про довідник класи
+- id: T-01-098
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, документація версії
+- id: T-02-119
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, чип класифікація
+- id: T-03-006
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, двоядерна архітектура
+- id: T-04-065
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, криптографія
+- id: T-04-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, I2S інтерфейс
+- id: T-05-064
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, Pull-up резистор
+- id: T-05-119
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, способи пошкодити
+- id: T-06-063
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, режими сну
+- id: T-07-007
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, GPIO0 GPIO2
+- id: T-07-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, обмеження GPIO
+- id: T-08-033
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, плата DevKitC
+- id: T-09-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, UART порт
+- id: T-09-029
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, імена портів
+- id: T-10-056
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, інструменти
+- id: T-10-035
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, лупа
+- id: T-11-011
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, редактор
+- id: T-11-039
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, версії IDF
+- id: T-12-017
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, реєстр
+- id: T-13-006
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, pioarduino
+- id: T-13-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, помилка поле
+- id: T-14-074
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, ESP-IDF виріб
+- id: T-15-006
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, розвідка
+- id: T-15-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, межа логіки
+- id: T-16-014
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, GPIO0 завантаження
+- id: T-17-107
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, esptool bin
+- id: T-18-065
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, SPIFFS
+- id: T-18-116
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, розділи
+- id: T-19-075
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, ArduinoOTA
+- id: T-19-045
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, OTA підтвердження
+- id: T-20-020
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, secure boot
+- id: T-21-069
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, серійна MAC
+- id: T-21-031
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, MAC ідентифікатор
+- id: T-22-018
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, збереження
+- id: T-23-077
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, тріаж
