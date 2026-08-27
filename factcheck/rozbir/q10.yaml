@@ -1,290 +1,255 @@
 - id: T-A-009
   rid: ne-tverdzhennya
   chomu: примітка до таблиці
-
 - id: T-A-082
   rid: ne-tverdzhennya
   chomu: примітка до таблиці
-
 - id: T-B-225
   rid: dzherelo-ye
   shukaty: ESP32 Technical Reference Manual
   chomu: технічна характеристика поведінки системи
-
 - id: T-B-001
   rid: ne-tverdzhennya
   chomu: опис структури картки та навігація до розділу
-
 - id: T-B-125
   rid: ne-tverdzhennya
   chomu: навігація до розділу
-
 - id: T-C-089
   rid: ne-tverdzhennya
   chomu: командний рядок для отримання інформації
-
 - id: T-D-034
   rid: ne-tverdzhennya
   chomu: навігація до розділу
-
 - id: T-D-081
   rid: dzherelo-ye
   shukaty: ESP32 panic codes reference manual
   chomu: числова характеристика кодів паніки
-
 - id: T-E-050
   rid: ne-tverdzhennya
   chomu: заголовок таблиці
-
 - id: T-E-115
   rid: ne-tverdzhennya
   chomu: рядок таблиці
-
 - id: T-G-095
   rid: ne-tverdzhennya
   chomu: рядок глоссарія
-
 - id: T-G-133
   rid: ne-tverdzhennya
   chomu: рядок глоссарія
-
 - id: T-G-022
   rid: ne-tverdzhennya
   chomu: рядок глоссарія
-
 - id: T-G-063
   rid: ne-tverdzhennya
   chomu: рядок глоссарія
-
 - id: T-H-020
   rid: pozyciya
   chomu: оцінка ресурсу, рекомендація де шукати відповіді
-
 - id: T-Z-007
   rid: ne-tverdzhennya
   chomu: рядок предметного індексу з номерами сторінок
-
 - id: T-Z-156
   rid: ne-tverdzhennya
   chomu: рядок предметного індексу з номерами сторінок
-
 - id: T-COM-069
   rid: ne-tverdzhennya
   chomu: заголовок таблиці
-
 - id: T-UA--006
   rid: pozyciya
   chomu: рекомендація де купувати, судження автора про переваги
-
 - id: T-K01-027
   rid: dzherelo-ye
   shukaty: ESP32 Series Datasheet
   chomu: опис технічної поведінки системи при завантаженні
-
 - id: T-K03-016
   rid: dzherelo-ye
   shukaty: ESP32 S3 C3 USB specifications
   chomu: технічна характеристика наявності чипа
-
 - id: T-K06-030
   rid: pozyciya
   chomu: дієтичний алгоритм пошуку помилок, порада від автора
-
 - id: T-K08-036
   rid: pozyciya
   chomu: практична рекомендація щодо роботи з пінами
-
 - id: T-K09-024
   rid: pozyciya
   chomu: практична рекомендація про демонтаж
-
 - id: T-K12-007
   rid: dzherelo-ye
   shukaty: Soldering iron specifications datasheet
   chomu: технічні параметри обладнання
-
 - id: T-K13-023
   rid: pozyciya
   chomu: рекомендація щодо типу під'єднання
-
 - id: T-K15-008
   rid: ne-tverdzhennya
   chomu: крок в інструкції
-
 - id: T-00-055
   rid: dzherelo-ye
   shukaty: ESP32 handbook structure guide
   chomu: опис структури документа
-
 - id: T-00-014
   rid: dzherelo-ye
   shukaty: ESP32 handbook verification guide
   chomu: опис методів перевірки застосованих у документі
-
 - id: T-01-084
   rid: pozyciya
   chomu: фреймворк для вибору, авторське рішення
-
 - id: T-01-017
   rid: dzherelo-ye
   shukaty: ESP32 radio specifications datasheet
   chomu: технічна характеристика можливостей чипа
-
 - id: T-02-102
-  rid: dzherelo-ye
-  shukaty: ESP-IDF set-target command reference
-  chomu: опис поведінки команди
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF set-target command reference
 - id: T-02-013
   rid: dzherelo-ye
   shukaty: ESP32-S2 processor core specifications datasheet
   chomu: технічна характеристика процесора
-
 - id: T-03-054
   rid: dzherelo-ye
   shukaty: ESP32 RTC specifications datasheet
   chomu: числова характеристика точності генератора
-
 - id: T-03-031
   rid: dzherelo-ye
   shukaty: ESP32 feature comparison table datasheet
   chomu: технічна інформація про наявність компонента
-
 - id: T-04-143
   rid: ne-tverdzhennya
   chomu: введення до списку
-
 - id: T-05-005
   rid: pozyciya
   chomu: авторське пояснення концепту, рамка розуміння
-
 - id: T-05-101
-  rid: dzherelo-ye
-  shukaty: Electronic Components Technical Reference
-  chomu: технічне описання поведінки компонента
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: Electronic Components Technical Reference
 - id: T-05-038
-  rid: dzherelo-ye
-  shukaty: Digital signal definition technical reference
-  chomu: технічне визначення поняття
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: Digital signal definition technical reference
 - id: T-06-109
   rid: pozyciya
   chomu: оцінка того що необхідно для аналізу
-
 - id: T-06-042
   rid: pozyciya
   chomu: оцінка характеристик компонента
-
 - id: T-07-129
   rid: pozyciya
   chomu: рекомендований метод перевірки
-
 - id: T-08-091
   rid: dzherelo-ye
   shukaty: ESP32-CAM hardware specifications datasheet
   chomu: технічна характеристика обладнання
-
 - id: T-09-063
   rid: pozyciya
   chomu: авторське спостереження про практичне життя
-
 - id: T-09-010
-  rid: dzherelo-ye
-  shukaty: USB-Serial bridge specifications technical reference
-  chomu: технічний висновок про архітектуру системи
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: USB-Serial bridge specifications technical reference
 - id: T-10-046
   rid: pozyciya
   chomu: авторське суддження про обладнання
-
 - id: T-10-022
   rid: pozyciya
   chomu: оцінка співвідношення вартості й користі
-
 - id: T-11-073
   rid: ne-tverdzhennya
   chomu: заголовок таблиці
-
 - id: T-11-023
-  rid: dzherelo-ye
-  shukaty: ESP-IDF tools environment setup documentation
-  chomu: технічне описання результату команди
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF tools environment setup documentation
 - id: T-12-062
   rid: pozyciya
   chomu: авторська оцінка переваг і недоліків платформи
-
 - id: T-13-045
-  rid: dzherelo-ye
-  shukaty: PlatformIO Configuration Reference Manual
-  chomu: технічне пояснення структури конфігураційного файлу
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: PlatformIO Configuration Reference Manual
 - id: T-13-015
-  rid: dzherelo-ye
-  shukaty: PlatformIO Project Guide
-  chomu: технічне твердження про роль файлу конфігурації
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: PlatformIO Project Guide
 - id: T-14-061
-  rid: dzherelo-ye
-  shukaty: MicroPython Reference Manual
-  chomu: технічне рішення про вибір платформи
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: MicroPython Reference Manual
 - id: T-14-031
   rid: ne-tverdzhennya
   chomu: опис сценарію використання
-
 - id: T-15-028
-  rid: dzherelo-ye
-  shukaty: ESP-IDF project structure documentation
-  chomu: технічне пояснення результатів переходу
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF project structure documentation
 - id: T-16-079
   rid: dzherelo-ye
   shukaty: ESP32 Hardware Design Guide
   chomu: технічне пояснення конструкції плати
-
 - id: T-17-070
   rid: pozyciya
   chomu: практична рекомендація параметрів з'єднання
-
 - id: T-17-163
   rid: dzherelo-ye
   shukaty: ESP32 Flash Memory Technical Reference
   chomu: технічне описання процесу перевірки
-
 - id: T-18-095
-  rid: dzherelo-ye
-  shukaty: LittleFS filesystem specifications documentation
-  chomu: технічне пояснення відмінності в гарантіях
-
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: LittleFS filesystem specifications documentation
 - id: T-19-063
   rid: dzherelo-ye
   shukaty: OTA power consumption specifications datasheet
   chomu: технічна характеристика енергоспоживання
-
 - id: T-19-018
   rid: dzherelo-ye
   shukaty: ESP32 OTA Technical Reference
   chomu: технічне описання механізму захисту
-
 - id: T-20-078
   rid: ne-tverdzhennya
   chomu: статистичне замічання з посиланням
-
 - id: T-21-057
   rid: pozyciya
   chomu: авторська оцінка ефективності методу
-
 - id: T-21-094
   rid: pozyciya
   chomu: рекомендація використання одного файлу
-
 - id: T-22-070
   rid: dzherelo-ye
   shukaty: ESP32 Memory Dump Technical Reference
   chomu: технічне описання процесу перевірки
-
 - id: T-23-059
   rid: ne-tverdzhennya
   chomu: статистичне замічання з посиланням

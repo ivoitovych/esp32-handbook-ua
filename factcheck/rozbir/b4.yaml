@@ -45,8 +45,12 @@
 - id: T-K04-013
   rid: ne-tverdzhennya
 - id: T-K07-021
-  rid: dzherelo-ye
-  shukaty: ESP-IDF або GDB документація про backtrace
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF або GDB документація про backtrace
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-K08-002
   rid: ne-tverdzhennya
 - id: T-K10-028
@@ -149,8 +153,12 @@
   rid: pozyciya
   chomu: позиціонування OTA як зручного методу для монтованих плат
 - id: T-19-046
-  rid: dzherelo-ye
-  shukaty: ESP-IDF OTA Update API документація
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF OTA Update API документація
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-20-002
   rid: ne-rozibrav
 - id: T-21-070

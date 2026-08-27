@@ -155,9 +155,12 @@
   rid: ne-tverdzhennya
   chomu: принцип виробу супровід роки
 - id: T-12-042
-  rid: dzherelo-ye
-  shukaty: Arduino Manual
-  chomu: інформація про версію статус
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: Arduino Manual
 - id: T-12-027
   rid: ne-tverdzhennya
   chomu: оцінка ризику перебудування через роки

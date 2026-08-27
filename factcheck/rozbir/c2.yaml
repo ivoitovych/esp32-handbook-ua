@@ -3,9 +3,12 @@
 - id: T-G-124
   rid: ne-tverdzhennya
 - id: T-K05-031
-  rid: dzherelo-ye
-  shukaty: ESP-IDF документація
-  chomu: версія та функції
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF документація
 - id: T-01-075
   rid: ne-rozibrav
 - id: T-07-113
@@ -33,9 +36,12 @@
 - id: T-25-101
   rid: ne-rozibrav
 - id: T-25-047
-  rid: dzherelo-ye
-  shukaty: ESP-IDF документація
-  chomu: версія та функції
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF документація
 - id: T-26-083
   rid: ne-rozibrav
 - id: T-26-117

@@ -26,8 +26,12 @@
   rid: ne-tverdzhennya
   chomu: рядок коду/команди (приклад синтаксису)
 - id: T-25-051
-  rid: dzherelo-ye
-  shukaty: ESP-IDF вихідний код або документація — конвенція TAG у логуванні
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF вихідний код або документація — конвенція TAG у логуванні
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-25-087
   rid: pozyciya
   chomu: описання класичної пастки в отладці (авторське спостереження)
@@ -59,8 +63,12 @@
   rid: ne-tverdzhennya
   chomu: пункт переліку можливих несправностей (навігація/структура)
 - id: T-28-049
-  rid: dzherelo-ye
-  shukaty: Sampling Reference — частота вибірки щонайменше вчетверо
+  rid: ne-rozibrav
+  bulo-shukaty: Sampling Reference — частота вибірки щонайменше вчетверо
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-29-058
   rid: pozyciya
   chomu: практична рекомендація до аналогових вимірювань (авторське судження)
@@ -77,8 +85,12 @@
   rid: dzherelo-ye
   shukaty: ESP32 Series Datasheet, Memory Architecture — виконання з флешу через кеш
 - id: T-30-099
-  rid: dzherelo-ye
-  shukaty: FreeRTOS Kernel reference manual — динамічне виділення пам'яті й фрагментація
+  rid: ne-rozibrav
+  bulo-shukaty: FreeRTOS Kernel reference manual — динамічне виділення пам'яті й фрагментація
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-30-032
   rid: pozyciya
   chomu: практична рекомендація щодо розташування буферів (уникати стеку для великих структур)
@@ -92,8 +104,12 @@
   rid: ne-tverdzhennya
   chomu: висновок про поведінку планувальника (вставка пояснення)
 - id: T-32-066
-  rid: dzherelo-ye
-  shukaty: FreeRTOS Kernel reference manual — interrupt priority levels
+  rid: ne-rozibrav
+  bulo-shukaty: FreeRTOS Kernel reference manual — interrupt priority levels
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-32-089
   rid: pozyciya
   chomu: практичне розуміння watchdog як інструмента (коли й як його "годувати")

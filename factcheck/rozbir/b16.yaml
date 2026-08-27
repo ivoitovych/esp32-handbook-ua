@@ -96,9 +96,12 @@
 - id: T-04-003
   rid: ne-tverdzhennya
 - id: T-05-084
-  rid: dzherelo-ye
-  shukaty: Electronics Fundamentals textbook common ground signal voltage reference
-  chomu: фундаментальний принцип електроніки з конкретним числовим значенням
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: Electronics Fundamentals textbook common ground signal voltage reference
 - id: T-05-132
   rid: pozyciya
   chomu: рекомендація про вибір схемного рішення для навантажень
@@ -131,9 +134,12 @@
 - id: T-11-052
   rid: ne-tverdzhennya
 - id: T-11-112
-  rid: dzherelo-ye
-  shukaty: ESP-IDF build system set-target sdkconfig поведінка
-  chomu: документована поведінка команди ESP-IDF при зміні цілі build
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF build system set-target sdkconfig поведінка
 - id: T-12-046
   rid: pozyciya
   chomu: оцінка придатності Arduino IDE для навчання та реальних проектів
@@ -147,9 +153,12 @@
 - id: T-14-005
   rid: ne-tverdzhennya
 - id: T-14-014
-  rid: dzherelo-ye
-  shukaty: MicroPython Reference Manual garbage collection behavior
-  chomu: архітектурне обмеження недетермінізму в REPL при автоматичній очистці пам'яті
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: MicroPython Reference Manual garbage collection behavior
 - id: T-15-071
   rid: pozyciya
   chomu: рекомендація про порядок налагодження перед початком роботи з фреймворком
@@ -162,9 +171,12 @@
 - id: T-17-135
   rid: ne-tverdzhennya
 - id: T-18-079
-  rid: dzherelo-ye
-  shukaty: ESP-IDF components LittleFS вбудований окремий
-  chomu: інформація про наявність та розташування компонента у складі фреймворку
+  rid: ne-rozibrav
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  bulo-shukaty: ESP-IDF components LittleFS вбудований окремий
 - id: T-18-032
   rid: ne-tverdzhennya
 - id: T-19-085

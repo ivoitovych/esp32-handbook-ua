@@ -1,260 +1,207 @@
 - id: T-A-114
   rid: ne-tverdzhennya
   chomu: перехідна фраза, навігація
-
 - id: T-A-003
   rid: pozyciya
   chomu: оцінка пріоритету — судження про важливість
-
 - id: T-B-222
   rid: ne-tverdzhennya
   chomu: рядок таблиці
-
 - id: T-B-268
   rid: pozyciya
   chomu: дефініція від автора, як називається класифікація збою
-
 - id: T-B-122
   rid: ne-tverdzhennya
   chomu: рядок таблиці
-
 - id: T-C-085
   rid: ne-rozibrav
-
 - id: T-D-028
   rid: ne-tverdzhennya
   chomu: навігаційний рядок
-
 - id: T-D-073
   rid: ne-tverdzhennya
   chomu: перехідна фраза
-
 - id: T-E-001
   rid: ne-tverdzhennya
   chomu: опис таблиці
-
 - id: T-E-111
   rid: ne-tverdzhennya
   chomu: шапка таблиці
-
 - id: T-G-092
   rid: ne-tverdzhennya
   chomu: рядок глосарію
-
 - id: T-G-130
   rid: ne-tverdzhennya
   chomu: рядок глосарію
-
 - id: T-G-021
   rid: ne-tverdzhennya
   chomu: рядок глосарію
-
 - id: T-G-060
   rid: ne-tverdzhennya
   chomu: рядок глосарію
-
 - id: T-H-017
-  rid: dzherelo-ye
-  shukaty: ESP-IDF GitHub repository
-
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF GitHub repository
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-Z-064
   rid: ne-tverdzhennya
   chomu: рядок покажчика
-
 - id: T-Z-151
   rid: ne-tverdzhennya
   chomu: рядок покажчика
-
 - id: T-COM-061
   rid: ne-tverdzhennya
   chomu: рядок таблиці
-
 - id: T-REG-033
   rid: ne-tverdzhennya
   chomu: навігація до розділу
-
 - id: T-K01-003
   rid: pozyciya
   chomu: порада — дирекція послідовності
-
 - id: T-K03-007
   rid: ne-rozibrav
-
 - id: T-K06-007
   rid: ne-tverdzhennya
   chomu: шапка таблиці
-
 - id: T-K08-032
   rid: pozyciya
   chomu: висновок про частотність причини
-
 - id: T-K09-017
   rid: ne-tverdzhennya
   chomu: рядок таблиці
-
 - id: T-K11-027
   rid: pozyciya
   chomu: порада — що не робити
-
 - id: T-K13-003
   rid: pozyciya
   chomu: судження про послідовність, рамка викладу
-
 - id: T-K14-039
   rid: pozyciya
   chomu: оцінка економічності
-
 - id: T-00-050
   rid: ne-tverdzhennya
   chomu: опис вимог читача
-
 - id: T-00-011
   rid: pozyciya
   chomu: оцінка якості рецензування — застереження
-
 - id: T-01-080
   rid: pozyciya
   chomu: порівняння переваг STM32 — судження
-
 - id: T-01-014
   rid: pozyciya
   chomu: судження про ненадійність написів на платах
-
 - id: T-02-098
   rid: ne-tverdzhennya
   chomu: список того, що не переноситься
-
 - id: T-02-002
   rid: pozyciya
   chomu: оцінка значимості помилки
-
 - id: T-03-003
   rid: dzherelo-ye
   shukaty: ESP32 Datasheet — кількість ядер
-
 - id: T-03-027
   rid: ne-tverdzhennya
   chomu: поясняння про регіони пам'яті
-
 - id: T-04-137
   rid: pozyciya
   chomu: оцінка жорсткості обмеження
-
 - id: T-04-062
   rid: pozyciya
   chomu: рекомендація щодо функцій
-
 - id: T-05-011
   rid: ne-tverdzhennya
   chomu: коротке визначення, не твердження
-
 - id: T-05-033
-  rid: dzherelo-ye
-  shukaty: ESP-IDF параметри драйвера за замовчуванням
-
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF параметри драйвера за замовчуванням
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-06-104
   rid: pozyciya
   chomu: оцінка дешевизни інструменту
-
 - id: T-06-036
   rid: ne-tverdzhennya
   chomu: заголовок методу
-
 - id: T-07-125
   rid: pozyciya
   chomu: порада — які документи шукати
-
 - id: T-08-087
   rid: ne-tverdzhennya
   chomu: описання наслідків
-
 - id: T-09-060
   rid: pozyciya
   chomu: висновок про значимість товстого кабелю
-
 - id: T-09-104
   rid: ne-rozibrav
-
 - id: T-09-055
   rid: ne-tverdzhennya
   chomu: стан рівнозначності
-
 - id: T-10-019
   rid: pozyciya
   chomu: порада про запас
-
 - id: T-11-070
-  rid: dzherelo-ye
-  shukaty: ESP-IDF помилка про REQUIRES
-
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF помилка про REQUIRES
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-11-019
   rid: pozyciya
   chomu: пояснення про обмеження
-
 - id: T-12-059
   rid: ne-tverdzhennya
   chomu: рядок матриці вибору
-
 - id: T-13-043
   rid: ne-tverdzhennya
   chomu: опис сценарію
-
 - id: T-13-012
   rid: pozyciya
   chomu: порада про перевірку
-
 - id: T-14-056
   rid: ne-tverdzhennya
   chomu: рядок таблиці
-
 - id: T-14-028
   rid: pozyciya
   chomu: оцінка розміру прошивки
-
 - id: T-15-001
   rid: ne-tverdzhennya
   chomu: опис розділу
-
 - id: T-16-076
   rid: ne-tverdzhennya
   chomu: опис феномена
-
 - id: T-17-064
   rid: ne-tverdzhennya
   chomu: пояснення про прапорець
-
 - id: T-17-157
   rid: ne-tverdzhennya
   chomu: описання практичного підходу
-
 - id: T-18-092
   rid: pozyciya
   chomu: оцінка витрат шару
-
 - id: T-19-055
   rid: ne-tverdzhennya
   chomu: рядок коду
-
 - id: T-19-099
   rid: ne-tverdzhennya
   chomu: опис методу підготовки
-
 - id: T-20-009
   rid: ne-tverdzhennya
   chomu: опис поведінки системи
-
 - id: T-21-048
   rid: ne-tverdzhennya
   chomu: опис інструменту
-
 - id: T-21-091
   rid: pozyciya
   chomu: судження про доцільність
-
 - id: T-22-067
   rid: ne-tverdzhennya
   chomu: опис послідовності
-
 - id: T-23-053
   rid: pozyciya
   chomu: порада — що робити, щоб розпізнати

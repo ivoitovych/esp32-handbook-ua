@@ -62,8 +62,12 @@
   id: T-K02-006
   rid: pozyciya
 - id: T-K05-037
-  rid: dzherelo-ye
-  shukaty: firmware flashing guide
+  rid: ne-rozibrav
+  bulo-shukaty: firmware flashing guide
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - chomu: навігація — посилання
   id: T-K08-021
   rid: ne-tverdzhennya
@@ -77,8 +81,12 @@
   id: T-K13-018
   rid: ne-tverdzhennya
 - id: T-K14-034
-  rid: dzherelo-ye
-  shukaty: circuit analysis reference
+  rid: ne-rozibrav
+  bulo-shukaty: circuit analysis reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - chomu: рекомендація щодо найважливіших деталей
   id: T-K15-045
   rid: pozyciya
@@ -143,8 +151,12 @@
   id: T-11-063
   rid: pozyciya
 - id: T-11-002
-  rid: dzherelo-ye
-  shukaty: ESP-IDF Official Documentation
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF Official Documentation
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - chomu: шапка таблиці — варіант
   id: T-12-052
   rid: ne-tverdzhennya
@@ -152,8 +164,12 @@
   id: T-13-038
   rid: ne-tverdzhennya
 - id: T-13-009
-  rid: dzherelo-ye
-  shukaty: Arduino Reference
+  rid: ne-rozibrav
+  bulo-shukaty: Arduino Reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - chomu: рядок таблиці — опція
   id: T-14-051
   rid: ne-tverdzhennya
@@ -179,14 +195,22 @@
   id: T-18-004
   rid: pozyciya
 - id: T-19-095
-  rid: dzherelo-ye
-  shukaty: OTA Update API Reference
+  rid: ne-rozibrav
+  bulo-shukaty: OTA Update API Reference
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - chomu: оцінка важливості кроку
   id: T-20-066
   rid: pozyciya
 - id: T-21-042
-  rid: dzherelo-ye
-  shukaty: Serial Protocol Best Practices Guide
+  rid: ne-rozibrav
+  bulo-shukaty: Serial Protocol Best Practices Guide
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - chomu: опис параллельної роботи
   id: T-21-086
   rid: ne-tverdzhennya

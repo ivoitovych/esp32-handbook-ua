@@ -1,253 +1,220 @@
 - id: T-A-012
   rid: ne-tverdzhennya
   chomu: перелік пунктів із нумерацією
-
 - id: T-A-086
   rid: ne-tverdzhennya
   chomu: перелік номерів пунктів
-
 - id: T-B-228
   rid: dzherelo-ye
   shukaty: ESP32 Technical Reference Manual, додаток B — Симптоми
-
 - id: T-B-041
   rid: ne-rozibrav
-
 - id: T-B-160
   rid: dzherelo-ye
   shukaty: ESP32 Technical Reference Manual, додаток B — Симптоми
-
 - id: T-C-092
   rid: ne-rozibrav
-
 - id: T-D-150
   rid: ne-tverdzhennya
   chomu: шапка таблиці з назвою стовпця
-
 - id: T-E-119
   rid: dzherelo-ye
   shukaty: ESP32 Technical Reference Manual, додаток E — Інтерфейси
-
 - id: T-E-063
   rid: dzherelo-ye
   shukaty: ESP32 Technical Reference Manual, додаток E — Інтерфейси
-
 - id: T-E-118
   rid: ne-tverdzhennya
   chomu: шапка таблиці з назвами стовпців
-
 - id: T-G-098
   rid: ne-tverdzhennya
   chomu: рядок глосарія
-
 - id: T-G-136
   rid: ne-tverdzhennya
   chomu: рядок глосарія
-
 - id: T-G-025
   rid: ne-tverdzhennya
   chomu: рядок глосарія
-
 - id: T-G-066
   rid: ne-tverdzhennya
   chomu: рядок глосарія
-
 - id: T-H-025
-  rid: dzherelo-ye
-  shukaty: KiCad Manual — розробка друкованих плат
-
+  rid: ne-rozibrav
+  bulo-shukaty: KiCad Manual — розробка друкованих плат
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-Z-100
-  rid: dzherelo-ye
-  shukaty: ESP-IDF документація — API функцій
-
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF документація — API функцій
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-Z-166
-  rid: dzherelo-ye
-  shukaty: ESP-IDF документація — команди
-
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF документація — команди
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-COM-077
   rid: ne-tverdzhennya
   chomu: рядок таблиці компонентів
-
 - id: T-UA--009
   rid: pozyciya
   chomu: рекомендація як перевіряти
-
 - id: T-K01-034
   rid: pozyciya
   chomu: порада про послідовність дій при завантаженні
-
 - id: T-K03-019
   rid: pozyciya
   chomu: порада для діагностики під'єднання
-
 - id: T-K06-035
   rid: ne-rozibrav
-
 - id: T-K08-039
   rid: pozyciya
   chomu: рекомендація як діагностувати проблему
-
 - id: T-K09-027
   rid: ne-tverdzhennya
   chomu: рядок таблиці розпіновки
-
 - id: T-K12-010
   rid: ne-tverdzhennya
   chomu: рядок таблиці комплекту
-
 - id: T-K13-026
   rid: pozyciya
   chomu: оцінка вартості та швидкості монтажу
-
 - id: T-K15-013
   rid: ne-tverdzhennya
   chomu: рядок таблиці з позначкою
-
 - id: T-00-058
   rid: ne-rozibrav
-
 - id: T-00-017
   rid: ne-tverdzhennya
   chomu: описання структури реєстру, не твердження
-
 - id: T-01-087
   rid: dzherelo-ye
   shukaty: ESP32 Datasheet — мікроконтролер
-
 - id: T-01-021
-  rid: dzherelo-ye
-  shukaty: FreeRTOS вбудований в ESP-IDF
-
+  rid: ne-rozibrav
+  bulo-shukaty: FreeRTOS вбудований в ESP-IDF
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-02-105
   rid: pozyciya
   chomu: рекомендація про налаштування sdkconfig
-
 - id: T-02-016
   rid: dzherelo-ye
   shukaty: ESP32 Datasheet — архітектура ядра
-
 - id: T-03-057
   rid: ne-rozibrav
-
 - id: T-03-034
   rid: ne-tverdzhennya
   chomu: описання явища фрагментації
-
 - id: T-04-152
   rid: pozyciya
   chomu: оцінка обмеження кількості пінів
-
 - id: T-05-050
   rid: ne-tverdzhennya
   chomu: назва компоненту та його схема
-
 - id: T-05-109
   rid: pozyciya
   chomu: оцінка значущості конденсатора для конкретного випадку
-
 - id: T-06-050
   rid: pozyciya
   chomu: рекомендація щодо кабелю та оцінка ефективності
-
 - id: T-06-113
   rid: dzherelo-ye
   shukaty: ESP32 Hardware Reference — схема плати
-
 - id: T-06-045
   rid: ne-tverdzhennya
   chomu: рядок переліку причин
-
 - id: T-07-136
   rid: pozyciya
   chomu: рекомендація як використовувати strapping-піни
-
 - id: T-08-016
   rid: dzherelo-ye
   shukaty: ESP32-S3 Datasheet — позначення чипа — таблиця суфіксів
-
 - id: T-09-068
   rid: pozyciya
   chomu: рекомендація дії після під'єднання
-
 - id: T-09-107
   rid: ne-rozibrav
-
 - id: T-10-049
   rid: pozyciya
   chomu: оцінка природи дефектів пайки
-
 - id: T-10-026
   rid: pozyciya
   chomu: описання результату вибору обмеження струму
-
 - id: T-11-084
   rid: pozyciya
   chomu: оцінка корисності клавіші в інтерфейсі menuconfig
-
 - id: T-11-026
   rid: pozyciya
   chomu: рекомендація способу активації версії
-
 - id: T-12-005
-  rid: dzherelo-ye
-  shukaty: Arduino API на базі ESP-IDF
-
+  rid: ne-rozibrav
+  bulo-shukaty: Arduino API на базі ESP-IDF
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-13-048
   rid: ne-rozibrav
-
 - id: T-13-018
-  rid: dzherelo-ye
-  shukaty: PlatformIO Manual — менеджер бібліотек
-
+  rid: ne-rozibrav
+  bulo-shukaty: PlatformIO Manual — менеджер бібліотек
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-14-064
-  rid: dzherelo-ye
-  shukaty: MicroPython Reference Manual
-
+  rid: ne-rozibrav
+  bulo-shukaty: MicroPython Reference Manual
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-14-034
   rid: pozyciya
   chomu: рекомендація послідовності розробки
-
 - id: T-15-031
   rid: ne-rozibrav
-
 - id: T-16-084
   rid: pozyciya
   chomu: оцінка симптому як несправної плати
-
 - id: T-17-075
   rid: ne-rozibrav
-
 - id: T-17-033
   rid: ne-rozibrav
-
 - id: T-18-098
   rid: ne-tverdzhennya
   chomu: рядок про помилку компіляції
-
 - id: T-19-067
   rid: pozyciya
   chomu: оцінка ризику безпеки HTTP оновлення
-
 - id: T-19-023
-  rid: dzherelo-ye
-  shukaty: ESP-IDF архітектура OTA
-
+  rid: ne-rozibrav
+  bulo-shukaty: ESP-IDF архітектура OTA
+  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
+    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
+    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
+    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
 - id: T-20-082
   rid: pozyciya
   chomu: рекомендація щодо живлення для надійності
-
 - id: T-21-004
   rid: pozyciya
   chomu: оцінка методу прошивки для розробки та виробництва
-
 - id: T-21-001
   rid: pozyciya
   chomu: оцінка складності завдань прошивки
-
 - id: T-22-010
   rid: pozyciya
   chomu: рекомендація як фотографувати плату
-
 - id: T-23-062
   rid: pozyciya
   chomu: рекомендація способу діагностики
