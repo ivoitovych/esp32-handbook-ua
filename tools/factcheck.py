@@ -872,11 +872,72 @@ def vorota() -> int:
     return 1 if g else 0
 
 
+def vzirets() -> int:
+    """Скільки одиниць реєстру зачепить цей взірець.
+
+        tools/factcheck.py vzirets '<регулярний вираз>'
+
+    ## Навіщо окрема команда на три рядки коду
+
+    Бо без неї перевіряють **не тим джерелом**, і я зробив це тричі за
+    вечір, знаючи про пастку й описавши її сам.
+
+    Взірець `zbih` зіставляється з **текстом одиниці реєстру**, а не з
+    розміткою книги. Для прози це те саме, і саме тому помилка не
+    впадає в око. Для комірки таблиці — ні:
+
+        книга:   | Частота | 160–240 МГц | 16 МГц | 133 МГц |
+        реєстр:  Частота · RP2040 → 133 МГц
+
+    Взірець `\\| 133 МГц \\|` збігається з книгою й **не збігається ні з
+    чим** у реєстрі. Перевірка `grep` по `manual/` каже «усе гаразд», і
+    доказ тихо не зачіпає нічого.
+
+    М2 на цій самій пастці мало не видалили 124 справні записи, бо
+    писали швидшу перевірку по тексту книги. Правило записане в
+    `docs/DESIGN.md` як `Р-ЗВІРКА`. Правила виявилося замало: доки
+    зробити правильно було дорожче, ніж `grep`, я щоразу робив `grep`.
+
+    Тому команда. Тепер правильне дешевше за неправильне.
+    """
+    if len(sys.argv) < 3:
+        print("вжиток: tools/factcheck.py vzirets '<вираз>'")
+        return 2
+    vyraz = sys.argv[2]
+    try:
+        rx = re.compile(vyraz)
+    except re.error as e:
+        print(f"негодящий вираз: {e}")
+        return 2
+
+    zbihy: list[tuple[str, str]] = []
+    for g in GRUPY:
+        for f in sorted((ROOT / g).glob("*.md")):
+            for _vyd, txt, _ln in rozbyty(f.read_text(encoding="utf-8")):
+                if rx.search(txt):
+                    zbihy.append((f.name, txt))
+
+    print(f"взірець зачіпає одиниць: {len(zbihy)}")
+    if not zbihy:
+        print("  ⚠ ХОЛОСТИЙ — жодної одиниці. Доказ із таким взірцем "
+              "нічого не звіряє.")
+        return 1
+    if len(zbihy) > 12:
+        print("  ⚠ ЗАШИРОКИЙ? Широкий взірець небезпечніший за "
+              "відсутній: він мовчки позначає «звірено» те, чого не "
+              "звіряв.")
+    for imya, txt in zbihy[:12]:
+        print(f"    {imya}: {txt.strip()[:88]}")
+    if len(zbihy) > 12:
+        print(f"    … ще {len(zbihy) - 12}")
+    return 0
+
+
 def main() -> int:
     cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
     return {"sketch": sketch, "status": status, "stale": stale,
             "blocked": blocked, "cherga": cherga, "vorota": vorota,
-            "shukaty": shukaty}.get(cmd, status)()
+            "shukaty": shukaty, "vzirets": vzirets}.get(cmd, status)()
 
 
 if __name__ == "__main__":
