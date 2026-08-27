@@ -1,0 +1,102 @@
+# Перевірка Q16
+
+# ДОКУМЕНТ: dzherela-kesh/51b28bff-idf-monitor.rst
+
+- id: T-K03-027
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'Arduino\|port held\|another program', 0 влучань
+
+- id: T-09-049
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'native USB\|reopen', 0 влучань
+
+- id: T-25-038
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: Stop/resume log output saved to file
+  de: Keyboard Shortcuts таблиця, рядок про Ctrl+L
+  notatka: Документ описує Ctrl+L як спосіб зберігання логу у файл замість перенаправлення.
+
+- id: T-23-064
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i '115200\|baud\|EN button', 0 влучань
+
+- id: T-17-125
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'Arduino\|screen\|port held', 0 влучань
+
+- id: T-C-067
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: idf.py monitor
+  de: розділ на початку: "IDF Monitor can be launched from an ESP-IDF project by running idf.py monitor"
+  notatka: IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
+
+- id: T-25-005
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'table.*monitor\|коли він', 0 влучань
+
+- id: T-27-055
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'udev\|windows drivers\|конфлікт', 0 влучань
+
+- id: T-29-019
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'BOOT.*EN\|--no-stub\|strapping', 0 влучань
+
+- id: T-09-078
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'Arduino\|PlatformIO\|винуватець\|забутий', 0 влучань
+
+- id: T-25-036
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: Stop/resume log output saved to file
+  de: Keyboard Shortcuts таблиця, рядок про Ctrl+L
+  notatka: Ctrl+L це "власний спосіб" ліпший за перенаправлення через tee.
+
+- id: T-26-044
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: If an ESP-IDF app crashes and panics, a register dump and backtrace are produced
+  de: розділ Automatic Address Decoding, для RISC-V та Xtensa
+  notatka: IDF Monitor використовується на обох архітектурах для логування та декодування backtrace.
+
+- id: T-26-035
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: IDF Monitor can be launched from an ESP-IDF project by running idf.py monitor
+  de: на початку розділу Introduction
+  notatka: IDF Monitor запускається з каталогу проєкту та автоматично декодує адреси на льоту.
+
+- id: T-K04-014
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'waiting for download', 0 влучань
+
+- id: T-25-006
+  verdykt: ne_znayshov
+  dyvyvsya: 51b28bff-idf-monitor.rst, grep -i 'коли він\|when\|use cases', 0 влучань
+
+- id: T-11-097
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code
+  de: розділ ESP-IDF-specific Features, Automatic Address Decoding
+  notatka: Документ описує вбудований монітор з розшифровкою backtrace адрес.
+
+# ДОКУМЕНТ: dzherela-kesh/max31855.pdf
+
+- id: T-E-073
+  verdykt: pidtverdzheno
+  fayl: max31855.pdf
+  cytata: Thermocouple-to-Digital Converter
+  de: титульна сторінка, заголовок
+  notatka: MAX31855 це конвертер для термопар.
+
+- id: T-E-072
+  verdykt: ne_znayshov
+  dyvyvsya: max31855.pdf, grep -i 'mode.*0\|режим', 0 влучань
+
+- id: T-E-074
+  verdykt: ne_znayshov
+  dyvyvsya: max31855.pdf, grep -i 'Adafruit\|library\|software', 0 влучань

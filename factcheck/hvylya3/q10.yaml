@@ -1,0 +1,135 @@
+- id: T-63-012
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'gateway\|шлюз', 0 влучань
+
+- id: T-04-102
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'ESP32-C6\|C6.*2\|TWAI.*controller.*2', 0 влучань
+
+- id: T-37-012
+  verdykt: ne_znayshov
+  dyvyvsya: ds18b20.pdf, grep -i 'counterfeit\|fake\|підробка', 0 влучань
+
+- id: T-H-027
+  verdykt: pidtverdzheno
+  fayl: ds18b20.pdf
+  cytata: |
+    1-Wire is a registered trademark of Maxim Integrated Products, Inc.
+  de: сторінка 1, розділ Description
+  notatka: Документ є розробкою Maxim Integrated Products, офіційно підтверджено в DS18B20 документації.
+
+- id: T-37-002
+  verdykt: pidtverdzheno
+  fayl: ds18b20.pdf
+  cytata: |
+    Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function on the same 1-Wire bus. Thus, it is simple to use one microprocessor to control many DS18B20s distributed over a large area.
+  de: сторінка 1, розділ Description
+  notatka: Документ описує можливість використовувати кілька DS18B20 на одній шині.
+
+- id: T-COM-085
+  verdykt: pidtverdzheno
+  fayl: ds18b20.pdf
+  cytata: |
+    ±0.5°C Accuracy from -10°C to +85°C
+  de: сторінка 1, Features раздел
+  notatka: Паспортна похибка точно ±0.5°C у діапазоні -10…+85°C.
+
+- id: T-45-013
+  verdykt: pidtverdzheno
+  fayl: ds18b20.pdf
+  cytata: |
+    Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function on the same 1-Wire bus.
+  de: сторінка 1, Description
+  notatka: Підтверджує можливість мати кілька датчиків на одній лінії.
+
+- id: T-COM-083
+  verdykt: ne_znayshov
+  dyvyvsya: ds18b20.pdf, grep -i 'divergence\|counterfeit\|1.5\|差异', 0 влучань
+
+- id: T-60-014
+  verdykt: ne_znayshov
+  dyvyvsya: ds18b20.pdf, grep -i 'quantity\|package\|count\|зонді', 0 влучань
+
+- id: T-56-025
+  verdykt: pidtverdzheno
+  fayl: ds18b20.pdf
+  cytata: |
+    Available in 8-Pin SO (150 mils), 8-Pin µSOP, and 3-Pin TO-92 Packages
+  de: сторінка 1, Description
+  notatka: Доступні в герметичних пакетах (SO, µSOP, TO-92), що дозволяє використовувати в герметичних зондах.
+
+- id: T-37-016
+  verdykt: pidtverdzheno
+  fayl: ds18b20.pdf
+  cytata: |
+    ±0.5°C Accuracy from -10°C to +85°C
+  de: сторінка 1, Features
+  notatka: Точне знаходження паспортної похибки в документі.
+
+- id: T-Z-040
+  verdykt: ne_znayshov
+  dyvyvsya: ds18b20.pdf, grep -i 'index\|page\|contents', 0 влучань
+
+- id: T-COM-055
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    The SX1276/77/78/79 transceivers feature the LoRa long range modem
+  de: сторінка 1, General Description
+  notatka: SX1276 дійсно для LoRa, багато бібліотек як заявляється.
+
+- id: T-COM-053
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    LoRaTM Modem
+  de: сторінка 1, Key Product Features
+  notatka: Підтверджує можливості LoRa.
+
+- id: T-COM-054
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    The SX1276/77/78/79 transceivers feature the LoRa long range modem
+  de: сторінка 1, General Description
+  notatka: LoRa є основною функцією SX1276.
+
+- id: T-E-061
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    LoRaTM Modem
+  de: сторінка 1, Key Product Features
+  notatka: LoRa підтримується.
+
+- id: T-E-062
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    LoRaTM Modem
+  de: сторінка 1, Key Product Features
+  notatka: LoRa підтримується як основний модем.
+
+- id: T-43-022
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    SX1276/77/78/79
+  de: сторінка 1, Title and Product Description
+  notatka: Документ про чип SX1276, на якому будуються модулі RFM95.
+
+- id: T-43-021
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    The SX1276/77/78/79 transceivers feature the LoRa long range modem
+  de: сторінка 1, General Description
+  notatka: SX1276 дійсно класичний широко доступний модуль для LoRa.
+
+- id: T-E-060
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    LoRaTM Modem
+  de: сторінка 1, Key Product Features
+  notatka: LoRa підтримується.

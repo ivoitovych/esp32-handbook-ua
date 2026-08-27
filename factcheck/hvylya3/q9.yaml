@@ -1,0 +1,130 @@
+- id: T-B-136
+  verdykt: sperechayetsya
+  fayl: 5827f9c3-twai.rst
+  cytata: |
+    - **Error Active**: When both TEC and REC are less than 96, the node is in the active error state, meaning normal operation. The node participates in bus communication and sends **active error flags** when errors are detected to actively report them.
+    - **Error Warning**: When either TEC or REC is greater than or equal to 96 but both are less than 128, the node is in the warning error state. Errors may exist but the node behavior remains unchanged.
+    - **Error Passive**: When either TEC or REC is greater than or equal to 128, the node enters the passive error state. It can still communicate on the bus but sends only one **passive error flag** when detecting errors.
+    - **Bus Off**: When **TEC** is greater than or equal to 256, the node enters the bus off (offline) state. The node is effectively disconnected and does not affect the bus. It remains offline until recovery is triggered by software.
+  de: рядки 358-361
+  notatka: Поведінка вузла РІЗНА залежно від його стану, а не однакова всюди.
+
+- id: T-04-099
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'S2', 0 влучань
+
+- id: T-B-137
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'розділ|раздел|section', 0 влучань відносно розділу 38 як окремої теми
+
+- id: T-38-066
+  verdykt: sperechayetsya
+  fayl: 5827f9c3-twai.rst
+  cytata: |
+    For single-node testing, you can directly short the TX and RX pins to omit the transceiver.
+  de: рядок 52
+  notatka: Один вузол може працювати для тестування, так що твердження про обов'язкові двоє вузлів неправильне.
+
+- id: T-04-100
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'S3', 0 влучань
+
+- id: T-B-134
+  verdykt: pidtverdzheno
+  fayl: 5827f9c3-twai.rst
+  cytata: |
+    It implements a fault isolation mechanism using transmit and receive error counters (TEC and REC).
+  de: рядок 356-357
+  notatka: Документ каже про лічильники помилок TEC та REC.
+
+- id: T-15-015
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'тулчейн|toolchain|esp-idf', 0 влучань
+
+- id: T-04-098
+  verdykt: pidtverdzheno
+  fayl: 5827f9c3-twai.rst
+  cytata: |
+    The TWAI controllers on the {IDF_TARGET_NAME} also compatible with FD format (a.k.a. CAN FD) frames defined in ISO 11898-1, and can transmit and receive both classic and FD format frames.
+  de: рядок 20
+  notatka: Документ підтверджує, що є класичні фрейми.
+
+- id: T-11-103
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'arduino', 0 влучань
+
+- id: T-12-014
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'arduino api', 0 влучань
+
+- id: T-COM-046
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'SN65HVD230|sn65hvd', 0 влучань
+
+- id: T-B-133
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'два вузла|two nodes|two devices', 0 влучань
+
+- id: T-04-028
+  verdykt: pidtverdzheno
+  fayl: 5827f9c3-twai.rst
+  cytata: |
+    TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication protocol designed for automotive and industrial applications. It is compatible with the frame structure defined in the ISO 11898-1 standard
+  de: рядок 16
+  notatka: Документ підтверджує, що TWAI сумісна з ISO 11898-1, що є стандартом для CAN-шини.
+
+- id: T-04-029
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'розділ 38|section 38|раздел 38', 0 влучань
+
+- id: T-B-132
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'один вузол|single node|one node', 0 влучань через помилки
+
+- id: T-63-080
+  verdykt: pidtverdzheno
+  fayl: 5827f9c3-twai.rst
+  cytata: |
+    The TWAI controller hardware can filter messages based on their ID to reduce software and hardware overhead, thereby improving node efficiency.
+  de: рядок 305-306
+  notatka: Документ підтверджує фільтрацію за ідентифікаторами на боці CAN.
+
+- id: T-04-103
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'H2', 0 влучань
+
+- id: T-15-016
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'MCPWM, PCNT, TWAI', 0 влучань
+
+- id: T-04-101
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'C3', 0 влучань
+
+- id: T-12-056
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'MCPWM|PCNT|ESP-IDF або', 0 влучань
+
+- id: T-63-061
+  verdykt: pidtverdzheno
+  fayl: 5827f9c3-twai.rst
+  cytata: |
+    - :cpp:member:`twai_onchip_node_config_t::flags::enable_listen_only`: Configures the node in listen-only mode. In this mode, the node only receives and does not transmit any dominant bits, including ACK and error frames.
+  de: рядок 91
+  notatка: Документ описує режим LISTEN_ONLY.
+
+- id: T-38-059
+  verdykt: pidtverdzheno
+  fayl: 5827f9c3-twai.rst
+  cytata: |
+    The TWAI controller can detect errors caused by bus interference or corrupted frames that do not conform to the frame format. It implements a fault isolation mechanism using transmit and receive error counters (TEC and REC).
+  de: рядок 356-357
+  notatka: Документ каже про автоматичне стеження за помилками та лічильники.
+
+- id: T-COM-048
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'MCP2551|tja1050', 0 влучань
+
+- id: T-38-011
+  verdykt: ne_znayshov
+  dyvyvsya: 5827f9c3-twai.rst, grep -i 'інформація|information|яка інформація', 0 влучань

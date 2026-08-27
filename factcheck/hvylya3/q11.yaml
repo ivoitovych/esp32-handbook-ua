@@ -1,0 +1,23 @@
+- id: T-A-033
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'tms', 0 влучань
+
+- id: T-50-047
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'dump', 0 влучань
+
+- id: T-20-016
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'втратити', 0 влучань
+
+- id: T-27-059
+  verdykt: sperechayetsya
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  cytata: |
+    On Linux adding OpenOCD udev rules is required and is done by placing the following `udev rules file <https://github.com/espressif/openocd-esp32/blob/master/contrib/60-openocd.rules>`_ in the ``/etc/udev/rules.d`` folder.
+  de: розділ Configure USB Drivers, абзац про Linux
+  notatka: Документ говорить про завантаження з openocd-esp32, а не про ESP-IDF комплект
+
+- id: T-27-065
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'більшість.*помилок', 0 влучань

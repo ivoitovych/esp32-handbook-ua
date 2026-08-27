@@ -1,0 +1,77 @@
+- id: T-25-039
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'idf.py monitor', 0 влучань
+
+- id: T-D-036
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i '0xc|core reset', 0 влучань
+
+- id: T-16-093
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'strapping', 0 влучань
+
+- id: T-17-147
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'hard-reset|ESP32.*C6.*H2', 0 влучань
+
+- id: T-K04-010
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'EN button|reset button', 0 влучань
+
+- id: T-26-085
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep '0xc', 0 влучань
+
+- id: T-C-033
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'before no-reset', 0 влучань
+
+- id: T-59-055
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep 'REG_RESET.*0xE0', 0 влучань
+
+- id: T-K06-021
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep '0xc', 0 влучань
+
+- id: T-C-039
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'default-reset|hard-reset', 0 влучань
+
+- id: T-16-022
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'strapping|millisecond', 0 влучань
+
+- id: T-58-020
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'app_main|reset reason', 0 влучань
+
+- id: T-62-143
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'manual reset', 0 влучань
+
+- id: T-D-032
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i '0xb|TGWDT_CPU_RESET', 0 влучань
+
+- id: T-27-068
+  verdykt: ne_znayshov
+  dyvyvsya: 569e266f-fatal-errors.rst, grep -i 'backtrace|coredump', 0 влучань
+
+- id: T-E-010
+  verdykt: pidtverdzheno
+  fayl: bmp280.pdf
+  cytata: The BMP280 is an absolute barometric pressure sensor especially designed for mobile applications.
+  de: General Description
+  notatka: Таблиця 1 показує Pressure resolution (0.16 Pa) та Temperature resolution (0.01°C), але немає humidity
+
+- id: T-E-011
+  verdykt: ne_znayshov
+  dyvyvsya: bmp280.pdf, grep -i 'adafruit', 0 влучань
+
+- id: T-45-011
+  verdykt: pidtverdzheno
+  fayl: bmp280.pdf
+  cytata: The BMP280 is an absolute barometric pressure sensor especially designed for mobile applications.
+  de: General Description
+  notatka: Без вологості - виміри тільки тиск та температуру (див. таблицю 1)

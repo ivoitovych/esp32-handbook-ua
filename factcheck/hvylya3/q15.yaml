@@ -1,0 +1,87 @@
+- id: T-07-104
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'matrix.*analog|матриця.*аналог', 0 влучань
+
+- id: T-55-040
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'burned|спаленого|мертв', 0 влучань
+
+- id: T-35-079
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'synchron|данн.*готов', 0 влучань
+
+- id: T-07-064
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'header|гребінк|exposed', 0 влучань
+
+- id: T-08-032
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'takes.*pin|займа.*пін|free.*indicator', 0 влучань
+
+- id: T-01-023
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'matrix.*signal.*any.*pin|будь-який.*сигнал', 0 влучань
+
+- id: T-Z-002
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'index|pokaz|forty|сорок', 0 влучань
+
+- id: T-G-149
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep 'General-Purpose Input/Output', 0 влучань
+
+- id: T-04-148
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'digital.*interface|аналогові.*не.*зачіпа', 0 влучань
+
+- id: T-31-081
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'time.*comparison|section 33', 0 влучань
+
+- id: T-07-001
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'interchangeable|взаємозамінн', 0 влучань
+
+- id: T-A-059
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'limitation|обмежен', 0 влучань
+
+- id: T-A-119
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'carries.*signal|transfer.*signal|матриця.*переносить', 0 влучань
+
+- id: T-34-008
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'free.*matrix|вільні', 0 влучань
+
+- id: T-08-031
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'LED.*GPIO|світлодіод', 0 влучань
+
+- id: T-06-086
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'wakeup.*timer.*RTC.*ULP.*touch|розбудити', 0 влучань
+
+- id: T-A-077
+  verdykt: ne_znayshov
+  dyvyvsya: 4ddc5239-gpio.rst, grep -i 'limitation|обмежен', 0 влучань
+
+- id: T-01-063
+  verdykt: ne_znayshov
+  dyvyvsya: 5df69a15-sleep_modes.rst, grep -E '[0-9]+.*μA|[0-9]+.*мкА|ESP32.*current', 0 влучань
+
+- id: T-01-065
+  verdykt: ne_znayshov
+  dyvyvsya: 5df69a15-sleep_modes.rst, grep -i 'STM32|STM', 0 влучань
+
+- id: T-E-027
+  verdykt: pidtverdzheno
+  fayl: ina219.pdf
+  cytata: |
+    Table 1. INA219 Address Pins and Slave Addresses
+                                A1              A0                 SLAVE ADDRESS
+                               GND             GND                      1000000
+  de: сторінка з описом I2C адрес, таблиця 1
+  notatka: |
+    1000000 у двійковій системі = 0x40 у шістнадцятковій, це перша адреса з набору.
+    Подальші адреси від 1000000 до 1001111 (0x40 до 0x4F) дають варіанти 0x40+

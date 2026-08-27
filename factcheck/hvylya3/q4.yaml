@@ -1,0 +1,91 @@
+- id: T-B-199
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'ping', 0 влучань
+
+- id: T-13-065
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'PlatformIO|platformio', 0 влучань
+
+- id: T-19-005
+  verdykt: pidtverdzheno
+  fayl: 1c119dba-ota.rst
+  cytata: |
+    at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+  de: OTA Process Overview, Application subsection
+  notatka: Розбивка для OTA вимагає щонайменше двох розділів (ota_0 та ota_1)
+
+- id: T-18-046
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'typical|variant|обсяг', 0 влучань
+
+- id: T-50-036
+  verdykt: pidtverdzheno
+  fayl: 1c119dba-ota.rst
+  cytata: |
+    The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running
+  de: OTA Process Overview
+  notatka: OTA описано як механізм, через який пристрій отримує дані для оновлення
+
+- id: T-39-069
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'RSSI\|−75\|−85', 0 влучань
+
+- id: T-19-028
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'before.*ship\|закласти\|до першого', 0 влучань
+
+- id: T-39-098
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'log.*RSSI\|边界.*OTA', 0 влучань
+
+- id: T-14-024
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'web.*interface\|home.*automation\|automation', 0 влучань
+
+- id: T-58-050
+  verdykt: pidtverdzheno
+  fayl: 1c119dba-ota.rst
+  cytata: |
+    The main purpose of the application rollback is to keep the device working after the update.
+  de: App Rollback section
+  notatka: OTA має функцію відкату для збереження роботи пристрою
+
+- id: T-14-059
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'MicroPython', 0 влучань
+
+- id: T-14-060
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'ESPHome', 0 влучань
+
+- id: T-18-125
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'chosen\|select\|once\|physical.*access', 0 влучань
+
+- id: T-58-065
+  verdykt: pidtverdzheno
+  fayl: 1c119dba-ota.rst
+  cytata: |
+    If a power loss or an unexpected crash occurs at the time of the first boot of a new application, it will roll back the application.
+  de: Unexpected Reset section
+  notatka: Документ описує вплив втрати живлення на OTA
+
+- id: T-19-031
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'field\|deployment\|production', 0 влучань
+
+- id: T-E-077
+  verdykt: ne_znayshov
+  dyvyvsya: max6675.pdf, grep -i 'adafruit', 0 влучань
+
+- id: T-E-075
+  verdykt: ne_znayshov
+  dyvyvsya: max6675.pdf, grep -i 'mode\|режим', 0 влучань
+
+- id: T-E-076
+  verdykt: ne_znayshov
+  dyvyvsya: max6675.pdf, grep -i 'cheap\|cost\|дешев', 0 влучань
+
+- id: T-Z-153
+  verdykt: ne_znayshov
+  dyvyvsya: mcp23017.pdf, grep -E '57|76|365|386', 0 влучань

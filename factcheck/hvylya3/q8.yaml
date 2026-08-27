@@ -1,0 +1,131 @@
+- id: T-23-012
+  verdykt: pidtverdzheno
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    ESP32-D0WD-V3 or ESP32-D0WDR2-V3 embedded, Xtensa dual-core 32-bit LX6 microprocessor
+  de: sторінка 1, розділ CPU and On-Chip Memory
+  notatka: |
+    Datasheet підтверджує, що WROOM-32E/UE містять класичні чипи ESP32 серії D0WD.
+
+- id: T-08-020
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'WROVER', 0 влучань
+  notatka: |
+    Datasheet тільки для WROOM-32E/UE, не містить інформації про WROVER модулі для порівняння.
+
+- id: T-G-148
+  verdykt: ne_znayshov
+  dyvyvsya: da11cdab-ledc.rst, grep 'Pulse-Width Modulation', 0 влучань
+  notatka: |
+    Документ про LEDC екстенсивно обговорює PWM, але не визначає абревіатуру як "Pulse-Width Modulation".
+
+- id: T-04-038
+  verdykt: ne_znayshov
+  dyvyvsya: da11cdab-ledc.rst, grep -E 'раздел|section|chapter', без номерації розділів
+  notatka: |
+    Файл ledc.rst - це технічна документація без нумерації розділів (не є розділом книги).
+
+- id: T-48-049
+  verdykt: ne_znayshov
+  dyvyvsya: da11cdab-ledc.rst, grep -E 'раздел|section|chapter', без номерації розділів
+  notatka: |
+    LEDC .rst документ не має номерованих розділів як у книзі.
+
+- id: T-04-037
+  verdykt: pidtverdzheno
+  fayl: da11cdab-ledc.rst
+  cytata: |
+    The LED control (LEDC) peripheral is primarily designed to control the intensity of LEDs, although it can also be used to generate PWM signals for other purposes.
+  de: Introduction section
+  notatka: |
+    Документ підтверджує LEDC для LED яскравості та PWM для інших цілей. Servo не згаданий конкретно, але PWM сигнали для інших цілей можуть включати servo.
+
+- id: T-46-036
+  verdykt: ne_znayshov
+  dyvyvsya: da11cdab-ledc.rst, grep -i 'backlight|display|liquid crystal|LCD', 0 влучань
+  notatka: |
+    LEDC документ не містить інформації про управління дисплейною підсвіткою, це питання дизайну систем, а не документація про LEDC.
+
+- id: T-04-039
+  verdykt: ne_znayshov
+  dyvyvsya: da11cdab-ledc.rst, grep -i 'MCPWM|motor|dead time|emergency', 0 влучань
+  notatka: |
+    MCPWM не згадується в документації LEDC, це окремий периферійний модуль.
+
+- id: T-12-035
+  verdykt: ne_znayshov
+  dyvyvsya: da11cdab-ledc.rst, grep -i 'Arduino|API|signature', 0 влучань
+  notatka: |
+    LEDC .rst документація не містить інформації про Arduino API або зміни сигнатур функцій.
+
+- id: T-E-139
+  verdykt: ne_znayshov
+  dyvyvsya: da11cdab-ledc.rst, grep -i 'DRV8833|TB6612|motor driver', 0 влучань
+  notatka: |
+    LEDC документація не містить інформації про конкретні мікросхеми драйверів моторів.
+
+- id: T-48-022
+  verdykt: ne_znayshov
+  dyvyvsya: da11cdab-ledc.rst, grep -E 'раздел|section|chapter', без номерації розділів
+  notatka: |
+    LEDC документація .rst не має номерованих розділів, посилання на "розділ 04" або "розділ 33" неможливо перевірити.
+
+- id: T-COM-067
+  verdykt: ne_znayshov
+  dyvyvsya: ncr18650b.pdf, grep -i 'holder|terminal|soldered', 0 влучань
+  notatka: |
+    NCR18650B datasheet - це інформація про клітинку, а не про тримачі або компоненти пайки виводів.
+
+- id: T-COM-066
+  verdykt: ne_znayshov
+  dyvyvsya: ncr18650b.pdf, grep -i 'protected|BMS|protection', 0 влучань
+  notatka: |
+    Datasheet для сирої клітинки NCR18650B, інформація про "protected" батареї або BMS не міститься.
+
+- id: T-60-020
+  verdykt: ne_znayshov
+  dyvyvsya: ncr18650b.pdf, grep -i 'protected|BMS|protection', 0 влучань
+  notatka: |
+    Datasheet для батареї без захисту, інформація про версію "з захистом" не присутня.
+
+- id: T-COM-065
+  verdykt: ne_znayshov
+  dyvyvsya: ncr18650b.pdf, grep -i 'protected|BMS|protection', 0 влучань
+  notatka: |
+    NCR18650B datasheet описує базову клітинку, не версію "protected".
+
+- id: T-UA--024
+  verdykt: ne_znayshov
+  dyvyvsya: ncr18650b.pdf, grep -i 'protected|genuine|capacity|BMS', 0 влучань
+  notatka: |
+    NCR18650B - це конкретна модель клітинки, питання про захист та справжність ємності - це комерційне питання, не технічне.
+
+- id: T-06-088
+  verdykt: pidtverdzheno
+  fayl: ncr18650b.pdf
+  cytata: |
+    Rated capacity(1) Min. 3200mAh Capacity(2) Min. 3250mAh Typ. 3350mAh
+  de: Specifications section
+  notatka: |
+    NCR18650B має ємність 3200-3350 мАч, що входить у диапазон "2500-3500 мА·год" з handbook.
+
+- id: T-60-021
+  verdykt: ne_znayshov
+  dyvyvsya: ncr18650b.pdf, grep -i 'protected|BMS|protection|section', 0 влучань
+  notatka: |
+    Datasheet для сирої клітинки без інформації про захист та посилань на розділи книги.
+
+- id: T-K13-037
+  verdykt: ne_znayshov
+  dyvyvsya: ncr18650b.pdf, grep -i 'divide|transistor|buck|boost|LDO|discharge|charge.*0|sleep|current', 0 влучань
+  notatka: |
+    NCR18650B datasheet - інформація про батарею, не про схемні рішення дільника, регуляторів напруги та управління сном.
+
+- id: T-60-006
+  verdykt: pidtverdzheno
+  fayl: ncr18650b.pdf
+  cytata: |
+    Discharge: CC 1C, 2.50V cut-off at 25°C
+  de: Specifications and Charge Characteristics
+  notatka: |
+    Datasheet підтверджує, що 18650 може забезпечити тривалу роботу при розташуванні вимірювачами, як описано в handbook.

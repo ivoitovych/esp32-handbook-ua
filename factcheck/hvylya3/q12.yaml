@@ -1,0 +1,83 @@
+- id: T-02-070
+  verdykt: ne_znayshov
+  dyvyvsya: 71ff84df-configure-builtin-jtag.rst, grep -i 'C6.*Serial-JTAG|Serial-JTAG.*C6', 0 влучань
+
+- id: T-COM-013
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'SuperMini|простий дешевий', 0 влучань
+
+- id: T-02-006
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'дешевий малий|компактно', 0 влучань
+
+- id: T-08-047
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'SuperMini', 0 влучань
+
+- id: T-K01-013
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'RISC-V|одноядерний', 0 влучань
+
+- id: T-23-018
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'MINI-1.*ESP32-C3|ESP32-C3.*MINI-1', 0 влучань
+
+- id: T-23-019
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'одноядерний|RISC-V|практично', 0 влучань
+
+- id: T-08-015
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'Особливості|малий|дешевий', 0 влучань
+
+- id: T-K01-012
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'MINI-1.*Чип|Чип.*MINI-1', 0 влучань
+
+- id: T-Z-045
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'ESP32-C3.*364|364.*ESP32-C3', 0 влучань
+
+- id: T-01-006
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'Кристал|SoC|власне чип', 0 влучань
+
+- id: T-08-014
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'MINI-1.*Чип|Чип.*C3', 0 влучань
+
+- id: T-Z-046
+  verdykt: ne_znayshov
+  dyvyvsya: 776c3ac3-esp32c3.inc, grep -i 'MINI-1.*7.*79|401', 0 влучань
+
+- id: T-53-081
+  verdykt: ne_znayshov
+  dyvyvsya: tp4056.pdf, grep -i 'protection|захист|обов.язковий', 0 влучань
+
+- id: T-60-065
+  verdykt: ne_znayshov
+  dyvyvsya: tp4056.pdf, grep -i '18650|захист|buck-boost', 0 влучань
+
+- id: T-Z-176
+  verdykt: ne_znayshov
+  dyvyvsya: tp4056.pdf, grep -i '298|301|334|336', 0 влучань
+
+- id: T-60-022
+  verdykt: ne_znayshov
+  dyvyvsya: tp4056.pdf, grep -i 'з захистом|защита|1.*quantity', 0 влучань
+
+- id: T-60-023
+  verdykt: ne_znayshov
+  dyvyvsya: tp4056.pdf, grep -i 'захист|примітка|розділ', 0 влучань
+
+- id: T-UA--021
+  verdykt: ne_znayshov
+  dyvyvsya: tp4056.pdf, grep -i 'захист|без|видно|мікросхеми', 0 влучань
+
+- id: T-COM-059
+  verdykt: ne_znayshov
+  dyvyvsya: tp4056.pdf, grep -i 'з захистом|заряд|Li-ion', 0 влучань
+
+- id: T-COM-060
+  verdykt: ne_znayshov
+  dyvyvsya: tp4056.pdf, grep -i 'без захисту|виглядає|мікросхеми', 0 влучань

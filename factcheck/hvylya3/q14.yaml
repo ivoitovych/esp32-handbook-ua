@@ -1,0 +1,124 @@
+- id: T-C-007
+  verdykt: sperechayetsya
+  fayl: 2217d639-basic-commands.rst
+  cytata: |
+    esptool read-mac
+  de: 'секція "Read Built-in MAC Address: ``read-mac``", рядок 262'
+  notatka: 'Книга каже "esptool --port /dev/ttyUSB0 read-mac", але документ показує просто "esptool read-mac" без вказання порту.'
+
+- id: T-K10-001
+  verdykt: pidtverdzheno
+  fayl: 2217d639-basic-commands.rst
+  cytata: |
+    esptool erase-flash
+  de: 'секція "Erase Flash: ``erase-flash`` & ``erase-region``", рядок 236'
+  notatka: 'Документ підтверджує синтаксис esptool v5 з дефісами, без .py.'
+
+- id: T-K01-033
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'chip|чип|see', 0 влучань"
+  notatka: 'Документ не розповідає про те, що станеться, якщо esptool не бачить чип - це тема для розділу про тріаж.'
+
+- id: T-C-021
+  verdykt: sperechayetsya
+  fayl: 2217d639-basic-commands.rst
+  cytata: |
+    esptool erase-flash
+  de: 'секція "Erase Flash: ``erase-flash`` & ``erase-region``", рядок 236'
+  notatka: 'Книга каже "esptool --port PORT erase-flash", але документ показує просто "esptool erase-flash".'
+
+- id: T-20-013
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'header|шапка|connection', 0 влучань"
+  notatka: 'Документ не розповідає про "шапку з''єднання" - це концепція з інших розділів.'
+
+- id: T-17-036
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'ESP32|family|warnings', 0 влучань"
+  notatka: 'Документ не розповідає про особливості сімейства ESP32 або попередження esptool.'
+
+- id: T-08-088
+  verdykt: pidtverdzheno
+  fayl: 2217d639-basic-commands.rst
+  cytata: |
+    esptool flash-id
+  de: 'секція "Read SPI Flash ID: ``flash-id``", рядок 271'
+  notatka: 'Документ показує flash-id команду, яка виводить інформацію про флеш.'
+
+- id: T-23-052
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'header|шапка|prints before', 0 влучань"
+  notatka: 'Документ не розповідає про шапку з''єднання та її вміст.'
+
+- id: T-23-100
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'module|marking|match', 0 влучань"
+  notatka: 'Документ не розповідає про позначки на модулях та їхнє звірення.'
+
+- id: T-COM-080
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'smaller|менше|less than', 0 влучань"
+  notatka: 'Документ показує лише синтаксис flash-id, без інформації про проблеми з розміром.'
+
+- id: T-17-077
+  verdykt: sperechayetsya
+  fayl: 2217d639-basic-commands.rst
+  cytata: |
+    esptool erase-flash
+  de: 'секція "Erase Flash: ``erase-flash`` & ``erase-region``", рядок 236'
+  notatka: 'Книга каже "esptool --port /dev/ttyUSB0 erase-flash", але документ показує просто "esptool erase-flash".'
+
+- id: T-21-027
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'grep|pipe', 0 влучань"
+  notatka: 'Документ не показує використання grep у поєднанні з read-mac командою.'
+
+- id: T-K10-010
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'baud|115200', 0 влучань"
+  notatka: 'Документ не розповідає про параметр --baud 115200.'
+
+- id: T-11-058
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'idf.py|erase', 0 влучань"
+  notatka: 'Документ не розповідає про idf.py команди.'
+
+- id: T-23-030
+  verdykt: ne_znayshov
+  dyvyvsya: "2217d639-basic-commands.rst, grep -i 'family|сімейство|step|крок', 0 влучань"
+  notatka: 'Документ не розповідає про те, як esptool називає сімейство при підключенні.'
+
+- id: T-17-034
+  verdykt: pidtverdzheno
+  fayl: 2217d639-basic-commands.rst
+  cytata: |
+    esptool flash-id
+  de: 'секція "Read SPI Flash ID: ``flash-id``", рядок 271'
+  notatka: 'Документ описує flash-id як команду, яка показує флеш інформацію.'
+
+- id: T-K10-009
+  verdykt: sperechayetsya
+  fayl: 2217d639-basic-commands.rst
+  cytata: |
+    esptool erase-flash
+  de: 'секція "Erase Flash: ``erase-flash`` & ``erase-region``", рядок 236'
+  notatka: 'Книга каже "esptool --port /dev/ttyUSB0 erase-flash", але документ показує просто "esptool erase-flash".'
+
+- id: T-COM-024
+  verdykt: ne_znayshov
+  dyvyvsya: "mpu6050.pdf, grep -i 'BNO055|orientation|рекомендація', 0 влучань"
+  notatka: 'Датаист MPU6050 не містить рекомендацій щодо використання інших сенсорів.'
+
+- id: T-E-048
+  verdykt: pidtverdzheno
+  fayl: mpu6050.pdf
+  cytata: |
+    The least significant bit of the MPU-60X0's I2C address is
+    determined by the value of the AD0 pin. The default value of the register is 0x68.
+  de: 'секція 4.34 "Register 117 – Who Am I"'
+  notatka: 'Датаист підтверджує, що адреса можна змінити через контакт AD0 з 0x68 на 0x69.'
+
+- id: T-Z-162
+  verdykt: ne_znayshov
+  dyvyvsya: "pcf8574.pdf, grep -E '57|76|267|365|386', 0 влучань"
+  notatka: 'Датаист PCF8574 не містить індексу чи тих же номерів сторінок, що вказані в книзі.'
