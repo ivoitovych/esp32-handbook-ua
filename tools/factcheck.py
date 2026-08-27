@@ -475,6 +475,24 @@ def formatuvaty_dokaz(z: dict | None) -> str:
     return "\n".join(ch) + "\n"
 
 
+def ohorozha(vmist: str) -> str:
+    """A fence longer than any backtick run inside the content.
+
+    The context of a code claim **is** a fenced block, so wrapping it in
+    ``` closes the wrapper at the inner fence and the rest of the card
+    renders as loose text. Caught on `T-K01-030` by generating a single
+    file instead of the whole registry.
+
+    Markdown allows any fence of three or more backticks, and a longer
+    one may contain a shorter one — so the fence is chosen from the
+    content rather than fixed.
+    """
+    naydovsha = 0
+    for shmatok in re.findall(r"`+", vmist):
+        naydovsha = max(naydovsha, len(shmatok))
+    return "`" * max(3, naydovsha + 1)
+
+
 def dослівно_і_контекст(ryadky: list[str], ln: int,
                         tekst: str = "") -> tuple[str, str]:
     """Сирий рядок книги та його оточення.
@@ -584,8 +602,24 @@ def sketch() -> int:
     # Тексти всіх одиниць — для окремого аудиту кожної альтернативи
     # взірця. Тримати їх коштує пам'яті, але дешевше, ніж другий обхід.
     usi_teksty: list[str] = []
+    # `--only <substring>` limits the run to matching book files.
+    #
+    # Rebuilding the whole registry takes about half an hour, and a
+    # format change that is wrong is only visible at the end of it.
+    # Twice today a defect survived a full run: the card locator read a
+    # stale line number, and the first fix searched for a key that lives
+    # in the table header and so never matched.
+    #
+    # A format change is now tried on one file first. The rule is the
+    # project's own `Р-ЗВІРКА`: test the instrument, then apply it.
+    lyshe = None
+    if "--only" in sys.argv:
+        lyshe = sys.argv[sys.argv.index("--only") + 1]
+
     for g in GRUPY:
         for f in sorted((ROOT / g).glob("*.md")):
+            if lyshe and lyshe not in str(f):
+                continue
             tekst_knyhy = f.read_text(encoding="utf-8")
             ryadky_knyhy = tekst_knyhy.split("\n")
             odynyci = rozbyty(tekst_knyhy)
@@ -640,11 +674,13 @@ def sketch() -> int:
                 syryy, kontekst = dослівно_і_контекст(ryadky_knyhy, ln, txt)
                 dodatkovo = ""
                 if syryy and syryy.strip() != txt.strip():
+                    o = ohorozha(syryy)
                     dodatkovo += ("**Дослівно з книги**\n\n"
-                                  f"```\n{syryy}\n```\n\n")
+                                  f"{o}\n{syryy}\n{o}\n\n")
                 if kontekst:
+                    o = ohorozha(kontekst)
                     dodatkovo += ("**Контекст**\n\n"
-                                  f"```\n{kontekst}\n```\n\n")
+                                  f"{o}\n{kontekst}\n{o}\n\n")
                 elif not syryy:
                     dodatkovo += ("**Контекст:** номер рядка застарів — "
                                   "рядок за ним у книзі не знайдено.\n\n")
