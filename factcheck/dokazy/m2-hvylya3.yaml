@@ -173,7 +173,7 @@
   notatka: Доступні в герметичних пакетах (SO, µSOP, TO-92), що дозволяє використовувати в герметичних
     зондах.
 - nazva: 'T-37-016: Паспортна похибка DS18B20 — **±0.5 °C у діапазоні −10…+85 °C'
-  zbih: Паспортна\s+похибка\s+DS18B20\s+—\s+\*\*±0\.5\s+°C\s+у\s+діапазоні\s+−10…\+85\s+°C\*\*,\s+і\s+поза\s+цим\s+діапазоном\s+вона\s+більша:\s+паспорт\s+зад
+  zbih: Паспортна\s+похибка\s+DS18B20
   klas: A
   dzherelo: 'Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV: 042208
     — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: dzherela-kesh/ds18b20.pdf)'
