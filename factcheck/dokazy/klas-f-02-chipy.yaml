@@ -101,3 +101,45 @@
     а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
   notatka: FreeRTOS is a common base across all ESP chips, supporting portable application
     code
+- nazva: 'T-02-099: Перенесення проєкту на інший чип в ESP-IDF починається'
+  zbih: Перенесення\s+проєкту\s+на\s+інший
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
+  cytata: 'idf.py set-target <target>
+
+    This command sets the current project target.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Потвердив comando set-target для перемикання чипа проєкту
+- nazva: 'T-02-103: Усі налаштування, зроблені через `menuconfig`, повертаються до типових.'
+  zbih: Усі\s+налаштування,\s+зроблені\s+через
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
+  cytata: 'idf.py set-target will clear the build directory and re-generate the sdkconfig
+    file from scratch.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Коли set-target перестворює sdkconfig з нуля, усі налаштування menuconfig повертаються
+    до типових
+- nazva: 'T-02-105: Але зроблене без збереження `sdkconfig.defaults` доведеться налаштовувати
+    заново.'
+  zbih: Але\s+зроблене\s+без\s+збереження
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
+  cytata: 'For example projects or other projects where you dont want to specify a full sdkconfig
+    configuration, but you do want to override some key values from the ESP-IDF defaults,
+    it is possible to create a file sdkconfig.defaults in the project directory. This file
+    will be used when creating a new config from scratch, or when any new config value hasnt
+    yet been set in the sdkconfig file.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Потвердив що sdkconfig.defaults зберігає налаштування при перестворенні конфігурації

@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/00-pro-dovidnyk.md`
 
-Одиниць твердження: **90**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **105**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -219,7 +219,7 @@
 
 ---
 
-<!-- fc id:T-00-014 sha:e7721e26 src:manual/00-pro-dovidnyk.md:39 klas:E -->
+<!-- fc id:T-00-014 sha:e7721e26 src:manual/00-pro-dovidnyk.md:39 klas:C -->
 ### T-00-014 · proza · рядок 39
 
 **Книга каже, дослівно:**
@@ -228,7 +228,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32 handbook verification guide
+- **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
+- **Що шукати в джерелі:** ESP32 handbook verification guide
+- **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
+- **Прохід:** cherga-c-00-pro-dovidnyk
 
 ---
 
@@ -531,8 +536,216 @@
 
 ---
 
-<!-- fc id:T-00-037 sha:e6933147 src:manual/00-pro-dovidnyk.md:80 klas:E -->
-### T-00-037 · proza · рядок 80
+<!-- fc id:T-00-037 sha:8ded7efd src:manual/00-pro-dovidnyk.md:82 klas:E -->
+### T-00-037 · proza · рядок 82
+
+**Книга каже, дослівно:**
+
+> Найгірший стан для читача — не «джерела не знайшли», а **«до цього рядка ніхто не дійшов»**.
+
+**Доказ**
+
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Дослівно з джерела:**
+  > При включенні платі:
+  > 1. Мікроконтролер почне завантажуватися
+  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
+  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
+  > 4. MOSFET затвор отримує невідомий рівень напруги
+  > 
+  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
+  > буде налаштований в LOW.
+- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
+- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
+- **Прохід:** m2-65-elektronika-05
+
+---
+
+<!-- fc id:T-00-038 sha:1f86e528 src:manual/00-pro-dovidnyk.md:82 klas:E -->
+### T-00-038 · proza · рядок 82
+
+**Книга каже, дослівно:**
+
+> Перше можна зважити, друге — ні.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-039 sha:bac0a7c0 src:manual/00-pro-dovidnyk.md:85 klas:E -->
+### T-00-039 · proza · рядок 85
+
+**Книга каже, дослівно:**
+
+> Тому проведено окрему роботу: пройти **всю решту**, по одному разу кожну одиницю, і записати не лише вердикт, а **адресу документа, який для цього відкривали** — включно з тими одиницями, де нічого не знайшлося.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-040 sha:c7b4d776 src:manual/00-pro-dovidnyk.md:85 klas:E -->
+### T-00-040 · proza · рядок 85
+
+**Книга каже, дослівно:**
+
+> «Не знайшов» без названого документа не рахується взагалі: такий запис відкидається механічно, бо він не є ані знахідкою, ані свідченням її відсутності.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-041 sha:397bbe9a src:manual/00-pro-dovidnyk.md:92 klas:E -->
+### T-00-041 · proza · рядок 92
+
+**Книга каже, дослівно:**
+
+> Із цього випливає, що саме ми маємо право стверджувати — і чого не маємо.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-042 sha:64fba6d2 src:manual/00-pro-dovidnyk.md:92 klas:E -->
+### T-00-042 · proza · рядок 92
+
+**Книга каже, дослівно:**
+
+> **Не** «кожне твердження звірено з джерелом»: це було б неправдою.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-043 sha:d0b04a00 src:manual/00-pro-dovidnyk.md:96 klas:E -->
+### T-00-043 · proza · рядок 96
+
+**Книга каже, дослівно:**
+
+> > **Кожну пройдену одиницю звірено щонайменше з одним профільним > документом, і адресу цього документа записано.**
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-044 sha:c3c80a76 src:manual/00-pro-dovidnyk.md:99 klas:E -->
+### T-00-044 · proza · рядок 99
+
+**Книга каже, дослівно:**
+
+> Друге твердження вужче за перше, зате в ньому є адреса, за якою читач може перевірити нас самих.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-045 sha:de770547 src:manual/00-pro-dovidnyk.md:102 klas:E -->
+### T-00-045 · proza · рядок 102
+
+**Книга каже, дослівно:**
+
+> Ціна цієї чесності видима в числах.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-046 sha:a4e5c8a6 src:manual/00-pro-dovidnyk.md:102 klas:E -->
+### T-00-046 · proza · рядок 102
+
+**Книга каже, дослівно:**
+
+> Помічники, що виконували прохід, **заявили** близько 850 підтверджень; після механічної звірки цитати з документом — качаємо його ще раз і шукаємо витяг символ за символом — підтвердженими лишилися **374**.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-047 sha:5c14ecfe src:manual/00-pro-dovidnyk.md:102 klas:E -->
+### T-00-047 · proza · рядок 102
+
+**Книга каже, дослівно:**
+
+> Решта загинула не через нечесність, а через переказ замість цитати, склеєні з різних місць уривки й посилання на сусідній файл того самого проєкту.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-048 sha:777010bd src:manual/00-pro-dovidnyk.md:102 klas:E -->
+### T-00-048 · proza · рядок 102
+
+**Книга каже, дослівно:**
+
+> Усі вони викинуті, і жодне з них у книгу не потрапило.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-049 sha:17cf9200 src:manual/00-pro-dovidnyk.md:110 klas:E -->
+### T-00-049 · proza · рядок 110
+
+**Книга каже, дослівно:**
+
+> Прохід також показав межу самого методу.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-050 sha:e1c3ca8b src:manual/00-pro-dovidnyk.md:110 klas:F -->
+### T-00-050 · proza · рядок 110
+
+**Книга каже, дослівно:**
+
+> Коли всі одиниці однієї теми звіряються з одним профільним документом, `не знайдено` означає рівно одне: **«цього немає в тому документі»**, а не «цього немає ніде».
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-051 sha:127301cd src:manual/00-pro-dovidnyk.md:110 klas:E -->
+### T-00-051 · proza · рядок 110
+
+**Книга каже, дослівно:**
+
+> Так воно й записане в реєстрі.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-00-052 sha:e6933147 src:manual/00-pro-dovidnyk.md:115 klas:E -->
+### T-00-052 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -544,8 +757,8 @@
 
 ---
 
-<!-- fc id:T-00-038 sha:7d5cf4a9 src:manual/00-pro-dovidnyk.md:80 klas:E -->
-### T-00-038 · proza · рядок 80
+<!-- fc id:T-00-053 sha:7d5cf4a9 src:manual/00-pro-dovidnyk.md:115 klas:E -->
+### T-00-053 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -557,8 +770,8 @@
 
 ---
 
-<!-- fc id:T-00-039 sha:ab486569 src:manual/00-pro-dovidnyk.md:80 klas:E -->
-### T-00-039 · proza · рядок 80
+<!-- fc id:T-00-054 sha:ab486569 src:manual/00-pro-dovidnyk.md:115 klas:E -->
+### T-00-054 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -570,8 +783,8 @@
 
 ---
 
-<!-- fc id:T-00-040 sha:c4961875 src:manual/00-pro-dovidnyk.md:80 klas:E -->
-### T-00-040 · proza · рядок 80
+<!-- fc id:T-00-055 sha:c4961875 src:manual/00-pro-dovidnyk.md:115 klas:E -->
+### T-00-055 · proza · рядок 115
 
 **Книга каже, дослівно:**
 
@@ -583,8 +796,8 @@
 
 ---
 
-<!-- fc id:T-00-041 sha:757745cf src:manual/00-pro-dovidnyk.md:87 klas:E -->
-### T-00-041 · proza · рядок 87
+<!-- fc id:T-00-056 sha:757745cf src:manual/00-pro-dovidnyk.md:122 klas:E -->
+### T-00-056 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -596,8 +809,8 @@
 
 ---
 
-<!-- fc id:T-00-042 sha:b45169e6 src:manual/00-pro-dovidnyk.md:87 klas:E -->
-### T-00-042 · proza · рядок 87
+<!-- fc id:T-00-057 sha:b45169e6 src:manual/00-pro-dovidnyk.md:122 klas:E -->
+### T-00-057 · proza · рядок 122
 
 **Книга каже, дослівно:**
 
@@ -609,8 +822,8 @@
 
 ---
 
-<!-- fc id:T-00-043 sha:72bd0005 src:manual/00-pro-dovidnyk.md:93 klas:E -->
-### T-00-043 · proza · рядок 93
+<!-- fc id:T-00-058 sha:72bd0005 src:manual/00-pro-dovidnyk.md:128 klas:E -->
+### T-00-058 · proza · рядок 128
 
 **Книга каже, дослівно:**
 
@@ -622,8 +835,8 @@
 
 ---
 
-<!-- fc id:T-00-044 sha:b8f98bb9 src:manual/00-pro-dovidnyk.md:96 klas:E -->
-### T-00-044 · proza · рядок 96
+<!-- fc id:T-00-059 sha:b8f98bb9 src:manual/00-pro-dovidnyk.md:131 klas:E -->
+### T-00-059 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -635,8 +848,8 @@
 
 ---
 
-<!-- fc id:T-00-045 sha:fda2eb5d src:manual/00-pro-dovidnyk.md:96 klas:E -->
-### T-00-045 · proza · рядок 96
+<!-- fc id:T-00-060 sha:fda2eb5d src:manual/00-pro-dovidnyk.md:131 klas:E -->
+### T-00-060 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -648,8 +861,8 @@
 
 ---
 
-<!-- fc id:T-00-046 sha:3525f07f src:manual/00-pro-dovidnyk.md:96 klas:E -->
-### T-00-046 · proza · рядок 96
+<!-- fc id:T-00-061 sha:3525f07f src:manual/00-pro-dovidnyk.md:131 klas:E -->
+### T-00-061 · proza · рядок 131
 
 **Книга каже, дослівно:**
 
@@ -661,8 +874,8 @@
 
 ---
 
-<!-- fc id:T-00-047 sha:fa56fa45 src:manual/00-pro-dovidnyk.md:102 klas:E -->
-### T-00-047 · proza · рядок 102
+<!-- fc id:T-00-062 sha:fa56fa45 src:manual/00-pro-dovidnyk.md:137 klas:E -->
+### T-00-062 · proza · рядок 137
 
 **Книга каже, дослівно:**
 
@@ -687,8 +900,8 @@
 
 ---
 
-<!-- fc id:T-00-048 sha:0d93dcde src:manual/00-pro-dovidnyk.md:109 klas:E -->
-### T-00-048 · proza · рядок 109
+<!-- fc id:T-00-063 sha:0d93dcde src:manual/00-pro-dovidnyk.md:144 klas:E -->
+### T-00-063 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -700,8 +913,8 @@
 
 ---
 
-<!-- fc id:T-00-049 sha:55725df7 src:manual/00-pro-dovidnyk.md:109 klas:E -->
-### T-00-049 · proza · рядок 109
+<!-- fc id:T-00-064 sha:55725df7 src:manual/00-pro-dovidnyk.md:144 klas:E -->
+### T-00-064 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -713,8 +926,8 @@
 
 ---
 
-<!-- fc id:T-00-050 sha:c5d4a28a src:manual/00-pro-dovidnyk.md:109 klas:E -->
-### T-00-050 · proza · рядок 109
+<!-- fc id:T-00-065 sha:c5d4a28a src:manual/00-pro-dovidnyk.md:144 klas:E -->
+### T-00-065 · proza · рядок 144
 
 **Книга каже, дослівно:**
 
@@ -726,8 +939,8 @@
 
 ---
 
-<!-- fc id:T-00-051 sha:e583abf8 src:manual/00-pro-dovidnyk.md:113 klas:A -->
-### T-00-051 · proza · рядок 113
+<!-- fc id:T-00-066 sha:e583abf8 src:manual/00-pro-dovidnyk.md:148 klas:A -->
+### T-00-066 · proza · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -745,8 +958,8 @@
 
 ---
 
-<!-- fc id:T-00-052 sha:fff0d660 src:manual/00-pro-dovidnyk.md:113 klas:E -->
-### T-00-052 · proza · рядок 113
+<!-- fc id:T-00-067 sha:fff0d660 src:manual/00-pro-dovidnyk.md:148 klas:E -->
+### T-00-067 · proza · рядок 148
 
 **Книга каже, дослівно:**
 
@@ -758,8 +971,8 @@
 
 ---
 
-<!-- fc id:T-00-053 sha:ba9b0c68 src:manual/00-pro-dovidnyk.md:119 klas:E -->
-### T-00-053 · proza · рядок 119
+<!-- fc id:T-00-068 sha:ba9b0c68 src:manual/00-pro-dovidnyk.md:154 klas:E -->
+### T-00-068 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -784,8 +997,8 @@
 
 ---
 
-<!-- fc id:T-00-054 sha:d2e3c244 src:manual/00-pro-dovidnyk.md:119 klas:E -->
-### T-00-054 · proza · рядок 119
+<!-- fc id:T-00-069 sha:d2e3c244 src:manual/00-pro-dovidnyk.md:154 klas:E -->
+### T-00-069 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -809,8 +1022,8 @@
 
 ---
 
-<!-- fc id:T-00-055 sha:c2c7b492 src:manual/00-pro-dovidnyk.md:126 klas:E -->
-### T-00-055 · proza · рядок 126
+<!-- fc id:T-00-070 sha:c2c7b492 src:manual/00-pro-dovidnyk.md:161 klas:C -->
+### T-00-070 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -818,12 +1031,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32 handbook structure guide
+- **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
+- **Що шукати в джерелі:** ESP32 handbook structure guide
+- **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
+- **Прохід:** cherga-c-00-pro-dovidnyk
 
 ---
 
-<!-- fc id:T-00-056 sha:2c1532b4 src:manual/00-pro-dovidnyk.md:126 klas:E -->
-### T-00-056 · proza · рядок 126
+<!-- fc id:T-00-071 sha:2c1532b4 src:manual/00-pro-dovidnyk.md:161 klas:E -->
+### T-00-071 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -835,8 +1053,8 @@
 
 ---
 
-<!-- fc id:T-00-057 sha:71bc4286 src:manual/00-pro-dovidnyk.md:131 klas:E -->
-### T-00-057 · proza · рядок 131
+<!-- fc id:T-00-072 sha:71bc4286 src:manual/00-pro-dovidnyk.md:166 klas:E -->
+### T-00-072 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -848,8 +1066,8 @@
 
 ---
 
-<!-- fc id:T-00-058 sha:b8f57d7d src:manual/00-pro-dovidnyk.md:131 klas:E -->
-### T-00-058 · proza · рядок 131
+<!-- fc id:T-00-073 sha:b8f57d7d src:manual/00-pro-dovidnyk.md:166 klas:E -->
+### T-00-073 · proza · рядок 166
 
 **Книга каже, дослівно:**
 
@@ -861,8 +1079,8 @@
 
 ---
 
-<!-- fc id:T-00-059 sha:7a88a7cf src:manual/00-pro-dovidnyk.md:136 klas:E -->
-### T-00-059 · proza · рядок 136
+<!-- fc id:T-00-074 sha:7a88a7cf src:manual/00-pro-dovidnyk.md:171 klas:E -->
+### T-00-074 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -874,8 +1092,8 @@
 
 ---
 
-<!-- fc id:T-00-060 sha:d360f996 src:manual/00-pro-dovidnyk.md:136 klas:E -->
-### T-00-060 · proza · рядок 136
+<!-- fc id:T-00-075 sha:d360f996 src:manual/00-pro-dovidnyk.md:171 klas:E -->
+### T-00-075 · proza · рядок 171
 
 **Книга каже, дослівно:**
 
@@ -887,8 +1105,8 @@
 
 ---
 
-<!-- fc id:T-00-061 sha:7c922b00 src:manual/00-pro-dovidnyk.md:141 klas:E -->
-### T-00-061 · proza · рядок 141
+<!-- fc id:T-00-076 sha:7c922b00 src:manual/00-pro-dovidnyk.md:176 klas:E -->
+### T-00-076 · proza · рядок 176
 
 **Книга каже, дослівно:**
 
@@ -900,8 +1118,8 @@
 
 ---
 
-<!-- fc id:T-00-062 sha:001a355e src:manual/00-pro-dovidnyk.md:146 klas:A -->
-### T-00-062 · proza · рядок 146
+<!-- fc id:T-00-077 sha:001a355e src:manual/00-pro-dovidnyk.md:181 klas:A -->
+### T-00-077 · proza · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -919,8 +1137,8 @@
 
 ---
 
-<!-- fc id:T-00-063 sha:4f78810f src:manual/00-pro-dovidnyk.md:150 klas:F -->
-### T-00-063 · proza · рядок 150
+<!-- fc id:T-00-078 sha:4f78810f src:manual/00-pro-dovidnyk.md:185 klas:F -->
+### T-00-078 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -932,8 +1150,8 @@
 
 ---
 
-<!-- fc id:T-00-064 sha:8ff3fc7c src:manual/00-pro-dovidnyk.md:150 klas:F -->
-### T-00-064 · proza · рядок 150
+<!-- fc id:T-00-079 sha:8ff3fc7c src:manual/00-pro-dovidnyk.md:185 klas:F -->
+### T-00-079 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -945,8 +1163,8 @@
 
 ---
 
-<!-- fc id:T-00-065 sha:cacc6d3d src:manual/00-pro-dovidnyk.md:150 klas:E -->
-### T-00-065 · proza · рядок 150
+<!-- fc id:T-00-080 sha:cacc6d3d src:manual/00-pro-dovidnyk.md:185 klas:E -->
+### T-00-080 · proza · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -958,8 +1176,8 @@
 
 ---
 
-<!-- fc id:T-00-066 sha:4e52735b src:manual/00-pro-dovidnyk.md:157 klas:E -->
-### T-00-066 · proza · рядок 157
+<!-- fc id:T-00-081 sha:4e52735b src:manual/00-pro-dovidnyk.md:192 klas:E -->
+### T-00-081 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -971,8 +1189,8 @@
 
 ---
 
-<!-- fc id:T-00-067 sha:a48b4e78 src:manual/00-pro-dovidnyk.md:157 klas:E -->
-### T-00-067 · proza · рядок 157
+<!-- fc id:T-00-082 sha:a48b4e78 src:manual/00-pro-dovidnyk.md:192 klas:E -->
+### T-00-082 · proza · рядок 192
 
 **Книга каже, дослівно:**
 
@@ -984,8 +1202,8 @@
 
 ---
 
-<!-- fc id:T-00-068 sha:c8801058 src:manual/00-pro-dovidnyk.md:159 klas:E -->
-### T-00-068 · proza · рядок 159
+<!-- fc id:T-00-083 sha:c8801058 src:manual/00-pro-dovidnyk.md:194 klas:E -->
+### T-00-083 · proza · рядок 194
 
 **Книга каже, дослівно:**
 
@@ -1010,8 +1228,8 @@
 
 ---
 
-<!-- fc id:T-00-069 sha:177df715 src:manual/00-pro-dovidnyk.md:163 klas:E -->
-### T-00-069 · proza · рядок 163
+<!-- fc id:T-00-084 sha:177df715 src:manual/00-pro-dovidnyk.md:198 klas:E -->
+### T-00-084 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1023,8 +1241,8 @@
 
 ---
 
-<!-- fc id:T-00-070 sha:2cce9b69 src:manual/00-pro-dovidnyk.md:163 klas:F -->
-### T-00-070 · proza · рядок 163
+<!-- fc id:T-00-085 sha:2cce9b69 src:manual/00-pro-dovidnyk.md:198 klas:F -->
+### T-00-085 · proza · рядок 198
 
 **Книга каже, дослівно:**
 
@@ -1036,8 +1254,8 @@
 
 ---
 
-<!-- fc id:T-00-071 sha:4024eb35 src:manual/00-pro-dovidnyk.md:167 klas:E -->
-### T-00-071 · proza · рядок 167
+<!-- fc id:T-00-086 sha:4024eb35 src:manual/00-pro-dovidnyk.md:202 klas:E -->
+### T-00-086 · proza · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -1049,8 +1267,8 @@
 
 ---
 
-<!-- fc id:T-00-072 sha:8da6e695 src:manual/00-pro-dovidnyk.md:170 klas:E -->
-### T-00-072 · proza · рядок 170
+<!-- fc id:T-00-087 sha:8da6e695 src:manual/00-pro-dovidnyk.md:205 klas:E -->
+### T-00-087 · proza · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1075,8 +1293,8 @@
 
 ---
 
-<!-- fc id:T-00-073 sha:4019b65c src:manual/00-pro-dovidnyk.md:174 klas:F -->
-### T-00-073 · proza · рядок 174
+<!-- fc id:T-00-088 sha:4019b65c src:manual/00-pro-dovidnyk.md:209 klas:F -->
+### T-00-088 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -1088,8 +1306,8 @@
 
 ---
 
-<!-- fc id:T-00-074 sha:ebef26ae src:manual/00-pro-dovidnyk.md:178 klas:E -->
-### T-00-074 · proza · рядок 178
+<!-- fc id:T-00-089 sha:ebef26ae src:manual/00-pro-dovidnyk.md:213 klas:E -->
+### T-00-089 · proza · рядок 213
 
 **Книга каже, дослівно:**
 
@@ -1101,8 +1319,8 @@
 
 ---
 
-<!-- fc id:T-00-075 sha:daec2753 src:manual/00-pro-dovidnyk.md:181 klas:E -->
-### T-00-075 · proza · рядок 181
+<!-- fc id:T-00-090 sha:daec2753 src:manual/00-pro-dovidnyk.md:216 klas:E -->
+### T-00-090 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1114,8 +1332,8 @@
 
 ---
 
-<!-- fc id:T-00-076 sha:b1afe5fc src:manual/00-pro-dovidnyk.md:186 klas:B -->
-### T-00-076 · proza · рядок 186
+<!-- fc id:T-00-091 sha:b1afe5fc src:manual/00-pro-dovidnyk.md:221 klas:B -->
+### T-00-091 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1139,8 +1357,8 @@
 
 ---
 
-<!-- fc id:T-00-077 sha:8a71991a src:manual/00-pro-dovidnyk.md:186 klas:E -->
-### T-00-077 · proza · рядок 186
+<!-- fc id:T-00-092 sha:8a71991a src:manual/00-pro-dovidnyk.md:221 klas:E -->
+### T-00-092 · proza · рядок 221
 
 **Книга каже, дослівно:**
 
@@ -1152,8 +1370,8 @@
 
 ---
 
-<!-- fc id:T-00-078 sha:aa1d8846 src:manual/00-pro-dovidnyk.md:191 klas:A -->
-### T-00-078 · proza · рядок 191
+<!-- fc id:T-00-093 sha:aa1d8846 src:manual/00-pro-dovidnyk.md:226 klas:A -->
+### T-00-093 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1172,8 +1390,8 @@
 
 ---
 
-<!-- fc id:T-00-079 sha:2eaeb63c src:manual/00-pro-dovidnyk.md:191 klas:E -->
-### T-00-079 · proza · рядок 191
+<!-- fc id:T-00-094 sha:2eaeb63c src:manual/00-pro-dovidnyk.md:226 klas:E -->
+### T-00-094 · proza · рядок 226
 
 **Книга каже, дослівно:**
 
@@ -1185,8 +1403,8 @@
 
 ---
 
-<!-- fc id:T-00-080 sha:7d69ebcd src:manual/00-pro-dovidnyk.md:195 klas:F -->
-### T-00-080 · proza · рядок 195
+<!-- fc id:T-00-095 sha:7d69ebcd src:manual/00-pro-dovidnyk.md:230 klas:F -->
+### T-00-095 · proza · рядок 230
 
 **Книга каже, дослівно:**
 
@@ -1198,8 +1416,8 @@
 
 ---
 
-<!-- fc id:T-00-081 sha:446584df src:manual/00-pro-dovidnyk.md:200 klas:E -->
-### T-00-081 · proza · рядок 200
+<!-- fc id:T-00-096 sha:446584df src:manual/00-pro-dovidnyk.md:235 klas:E -->
+### T-00-096 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -1211,8 +1429,8 @@
 
 ---
 
-<!-- fc id:T-00-082 sha:b32b965c src:manual/00-pro-dovidnyk.md:200 klas:F -->
-### T-00-082 · proza · рядок 200
+<!-- fc id:T-00-097 sha:b32b965c src:manual/00-pro-dovidnyk.md:235 klas:F -->
+### T-00-097 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -1224,8 +1442,8 @@
 
 ---
 
-<!-- fc id:T-00-083 sha:9cb2e638 src:manual/00-pro-dovidnyk.md:200 klas:E -->
-### T-00-083 · proza · рядок 200
+<!-- fc id:T-00-098 sha:9cb2e638 src:manual/00-pro-dovidnyk.md:235 klas:E -->
+### T-00-098 · proza · рядок 235
 
 **Книга каже, дослівно:**
 
@@ -1237,8 +1455,8 @@
 
 ---
 
-<!-- fc id:T-00-084 sha:32f9d316 src:manual/00-pro-dovidnyk.md:205 klas:E -->
-### T-00-084 · proza · рядок 205
+<!-- fc id:T-00-099 sha:32f9d316 src:manual/00-pro-dovidnyk.md:240 klas:E -->
+### T-00-099 · proza · рядок 240
 
 **Книга каже, дослівно:**
 
@@ -1250,8 +1468,8 @@
 
 ---
 
-<!-- fc id:T-00-085 sha:555bfede src:manual/00-pro-dovidnyk.md:205 klas:E -->
-### T-00-085 · proza · рядок 205
+<!-- fc id:T-00-100 sha:555bfede src:manual/00-pro-dovidnyk.md:240 klas:E -->
+### T-00-100 · proza · рядок 240
 
 **Книга каже, дослівно:**
 
@@ -1263,8 +1481,8 @@
 
 ---
 
-<!-- fc id:T-00-086 sha:44a84293 src:manual/00-pro-dovidnyk.md:211 klas:E -->
-### T-00-086 · proza · рядок 211
+<!-- fc id:T-00-101 sha:44a84293 src:manual/00-pro-dovidnyk.md:246 klas:E -->
+### T-00-101 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -1276,8 +1494,8 @@
 
 ---
 
-<!-- fc id:T-00-087 sha:dfcedfb2 src:manual/00-pro-dovidnyk.md:211 klas:E -->
-### T-00-087 · proza · рядок 211
+<!-- fc id:T-00-102 sha:dfcedfb2 src:manual/00-pro-dovidnyk.md:246 klas:E -->
+### T-00-102 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -1289,8 +1507,8 @@
 
 ---
 
-<!-- fc id:T-00-088 sha:4671eee4 src:manual/00-pro-dovidnyk.md:211 klas:E -->
-### T-00-088 · proza · рядок 211
+<!-- fc id:T-00-103 sha:4671eee4 src:manual/00-pro-dovidnyk.md:246 klas:E -->
+### T-00-103 · proza · рядок 246
 
 **Книга каже, дослівно:**
 
@@ -1302,8 +1520,8 @@
 
 ---
 
-<!-- fc id:T-00-089 sha:d8ff3906 src:manual/00-pro-dovidnyk.md:218 klas:E -->
-### T-00-089 · proza · рядок 218
+<!-- fc id:T-00-104 sha:d8ff3906 src:manual/00-pro-dovidnyk.md:253 klas:C -->
+### T-00-104 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
@@ -1311,12 +1529,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32 Getting Started Guide
+- **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
+- **Що шукати в джерелі:** ESP32 Getting Started Guide
+- **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
+- **Прохід:** cherga-c-00-pro-dovidnyk
 
 ---
 
-<!-- fc id:T-00-090 sha:629dbdc0 src:manual/00-pro-dovidnyk.md:218 klas:E -->
-### T-00-090 · proza · рядок 218
+<!-- fc id:T-00-105 sha:629dbdc0 src:manual/00-pro-dovidnyk.md:253 klas:E -->
+### T-00-105 · proza · рядок 253
 
 **Книга каже, дослівно:**
 
