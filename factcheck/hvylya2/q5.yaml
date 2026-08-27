@@ -1,0 +1,31 @@
+- id: T-01-061
+  verdykt: pidtverdzheno
+  fayl: rp2040.pdf
+  cytata: |
+    both cores start running simultaneously
+  de: розділ 2.3.1.1 CPUID
+  notatka: Datasheet підтверджує миттєвий старт RP2040.
+
+- id: T-23-018
+  verdykt: ne_znayshov
+
+- id: T-Z-046
+  verdykt: ne_znayshov
+
+- id: T-08-047
+  verdykt: ne_znayshov
+
+- id: T-A-038
+  verdykt: ne_znayshov
+
+- id: T-49-053
+  verdykt: ne_znayshov
+
+- id: T-04-012
+  verdykt: ne_znayshov
+
+- id: T-A-055
+  verdykt: ne_znayshov
+
+- id: T-29-057
+  verdykt: ne_znayshov

@@ -1,0 +1,50 @@
+- id: T-K13-044
+  verdykt: ne_znayshov
+
+- id: T-25-037
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: |
+    * Ctrl + L
+    - Stop/resume log output saved to file
+    - Create a file in the project directory and the output is written to that file until this is disabled with the same keyboard shortcut (or IDF Monitor exits).
+  de: таблиця клавіш, рядки 50-52
+
+- id: T-25-105
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: |
+    Create a file in the project directory and the output is written to that file
+
+- id: T-09-049
+  verdykt: ne_znayshov
+
+- id: T-K10-019
+  verdykt: pidtverdzheno
+  fayl: 51b28bff-idf-monitor.rst
+  cytata: |
+    Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code (file name and line number) and prints the location on the next line in yellow.
+  de: розділ Automatic Address Decoding
+
+- id: T-K04-010
+  verdykt: ne_znayshov
+
+- id: T-K06-024
+  verdykt: pidtverdzheno
+  fayl: 569e266f-fatal-errors.rst
+  cytata: |
+    rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+  de: розділ RTC Watchdog Timeout, рядок 306
+
+- id: T-K06-021
+  verdykt: ne_znayshov
+
+- id: T-16-022
+  verdykt: ne_znayshov
+
+- id: T-D-047
+  verdykt: pidtverdzheno
+  fayl: 569e266f-fatal-errors.rst
+  cytata: |
+    rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
+  de: розділ RTC Watchdog Timeout

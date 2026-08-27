@@ -1,0 +1,61 @@
+# Хвиля 2 — Партія 1 (одиниці 1-5)
+
+- id: T-36-055
+  verdykt: pidtverdzheno
+  fayl: 399b50f6-spi_master.rst
+  cytata: |
+    Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
+  de: SPI Master Driver, розділ про GPIO matrix
+  notatka: Документ підтверджує, що SPI витримує десятки мегагерц (40-80), але з обмеженнями залежно від конфігурації піджимів.
+
+- id: T-B-199
+  verdykt: ne_znayshov
+  de: dzherela-kesh/1c119dba-ota.rst не містить інформації про сценарії, де пінги ходять, але OTA не працює
+
+- id: T-12-058
+  verdykt: pidtverdzheno
+  fayl: 1c119dba-ota.rst
+  cytata: |
+    The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+  de: Розділ OTA Process Overview
+  notatka: Документ підтверджує OTA як механізм у ESP-IDF.
+
+- id: T-14-060
+  verdykt: ne_znayshov
+  de: dzherela-kesh/1c119dba-ota.rst не містить посилань на ESPHome
+
+- id: T-15-008
+  verdykt: ne_znayshov
+  de: dzherela-kesh/1c119dba-ota.rst не містить інформації про типові датчики з телеметрією або веб-інтерфейс
+
+- id: T-15-014
+  verdykt: pidtverdzheno
+  fayl: 1c119dba-ota.rst
+  cytata: |
+    Upon the first boot, the application checks its state and performs diagnostics.
+  de: Розділ App Rollback
+  notatka: Документ підтверджує наявність діагностики та перевірки відтворюваності при OTA.
+
+- id: T-58-062
+  verdykt: pidtverdzheno
+  fayl: 1c119dba-ota.rst
+  cytata: |
+    The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+  de: Розділ OTA Data Partition
+  notatka: Документ описує процес оновлення та його успішного завершення.
+
+- id: T-14-024
+  verdykt: ne_znayshov
+  de: dzherela-kesh/1c119dba-ota.rst не містить посилань на веб-інтерфейс, відновлення зв'язку або інтеграцію з системами домашньої автоматизації
+
+- id: T-57-069
+  verdykt: ne_znayshov
+  de: dzherela-kesh/1c119dba-ota.rst не містить інформації про унікальні ключі, закладені наперед
+
+- id: T-COM-025
+  verdykt: pidtverdzheno
+  fayl: mpu6050.pdf
+  cytata: |
+    allowing the devices to gather a full set of sensor data without intervention from the system processor
+  de: Overview, абзац про MotionFusion algorithms
+  notatka: Документ підтверджує, що MPU6050 має вбудований I2C master для збирання даних від зовнішніх сенсорів.

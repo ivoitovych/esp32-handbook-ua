@@ -74,7 +74,14 @@ KLYUCHI: list[tuple[str, str]] = [
     (r"\bADC\b", "adc_oneshot.rst"),
     (r"\bDAC\b", "dac.rst"),
     (r"паніка|panic|Guru Meditation|скидання|reset", "fatal-errors.rst"),
-    (r"esptool|прошив|flash_id|read_flash", "basic-commands.rst"),
+    # Один ключ може вести до кількох файлів: документація esptool
+    # розкладена на команди й глобальні опції, і твердження про
+    # `esptool --port /dev/ttyUSB0 flash-id` не перевіряється жодним
+    # із них поодинці. Перша хвиля дала на цьому одинадцять
+    # `ne_znayshov` поспіль — не тому, що джерела немає, а тому, що
+    # наряд показав половину джерела.
+    (r"esptool|прошив|flash_id|read_flash",
+     "basic-commands.rst|basic-options.rst|advanced-options.rst"),
     (r"\bGPIO\b", "gpio.rst"),
     (r"\beFuse\b", "burn-efuse-cmd"),
     (r"монітор|idf\.py monitor", "idf-monitor.rst"),
@@ -86,14 +93,18 @@ def kesh_fayly() -> list[str]:
     return sorted(p.name for p in KESH.iterdir() if p.is_file())
 
 
-def pidibraty(tekst: str, fayly: list[str]) -> str | None:
-    """Перший ключ, що збігся і має файл у кеші."""
-    for vzir, chastka in KLYUCHI:
+def pidibraty(tekst: str, fayly: list[str]) -> list[str]:
+    """Файли першого ключа, що збігся. Ключ може вести до кількох."""
+    for vzir, chastky in KLYUCHI:
         if re.search(vzir, tekst, re.I):
-            for f in fayly:
-                if chastka.lower() in f.lower():
-                    return f
-    return None
+            znaydeni = []
+            for chastka in chastky.split("|"):
+                for f in fayly:
+                    if chastka.lower() in f.lower() and f not in znaydeni:
+                        znaydeni.append(f)
+            if znaydeni:
+                return znaydeni
+    return []
 
 
 def main() -> int:
@@ -112,7 +123,8 @@ def main() -> int:
     for o in vsi:
         f = pidibraty(o["tekst"], fayly)
         if f:
-            o["fayl"] = f
+            o["fayl"] = f[0]
+            o["fayly"] = f
             z_faylom.append(o)
         else:
             bez_faylu += 1

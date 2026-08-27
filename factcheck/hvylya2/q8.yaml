@@ -1,0 +1,42 @@
+- id: T-09-021
+  verdykt: ne_znayshov
+
+- id: T-60-014
+  verdykt: ne_znayshov
+
+- id: T-Z-040
+  verdykt: ne_znayshov
+
+- id: T-E-107
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/ds18b20.pdf
+  cytata: 12-bit Celsius temperature measurements
+  de: сторінка 1, DESCRIPTION
+  notatka: Датчик вимірює температуру й підтримує декілька пристроїв на одній лінії.
+
+- id: T-59-146
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/ds18b20.pdf
+  cytata: Measures Temperatures from -55°C to +125°C
+  de: сторінка 1, Features
+  notatka: DS18B20 може працювати на вулиці в діапазоні від -55°C до +125°C.
+
+- id: T-COM-030
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/ds18b20.pdf
+  cytata: Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function on the same 1-Wire bus
+  de: сторінка 2, OVERVIEW
+  notatka: Датчик має дріт (1-Wire), герметичний корпус (ТО-92/SO), кілька можуть бути на одній лінії.
+
+- id: T-48-022
+  verdykt: ne_znayshov
+
+- id: T-33-059
+  verdykt: ne_znayshov
+
+- id: T-04-038
+  verdykt: ne_znayshov
+
+- id: T-Z-162
+  verdykt: ne_znayshov
+

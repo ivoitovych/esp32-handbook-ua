@@ -21,17 +21,25 @@ from __future__ import annotations
 
 import re
 import sys
-import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 KESH = ROOT / "dzherela-kesh"
+sys.path.insert(0, str(ROOT / "tools"))
+
 import yaml
+import citaty  # витягання тексту беремо в М1, а не пишемо втретє
 
 _kesh_tekst: dict[str, str] = {}
 
 
 def normal(s: str) -> str:
+    # Розмітка reStructuredText — оформлення, не зміст. `:cpp:func:` та
+    # зворотні лапки навколо імені функції стоять у джерелі й не стоять
+    # ні в книзі, ні в тому, що бачить читач. Знімати їх — це звести
+    # два записи того самого рядка, а не послабити звірку.
+    s = re.sub(r":[a-z:]+:`~?([^`]+)`", r"\1", s)
+    s = re.sub(r"``([^`]+)``", r"\1", s)
     s = s.replace("­", "").replace("‑", "-")
     s = re.sub(r"[–—−]", "-", s)
     s = re.sub(r"[’‘`´]", "'", s)
@@ -42,19 +50,23 @@ def normal(s: str) -> str:
 
 
 def tekst_fayla(imya: str) -> str | None:
+    # Помічник пише то `ds18b20.pdf`, то `dzherela-kesh/ds18b20.pdf` —
+    # у наряді ім'я стоїть із текою. Обидва варіанти правильні по суті,
+    # і відхиляти за це означало б рахувати чесну роботу за брехню.
+    imya = imya.strip().split("/")[-1]
     if imya in _kesh_tekst:
         return _kesh_tekst[imya]
     p = KESH / imya
     if not p.exists():
         return None
-    if p.suffix.lower() == ".pdf":
-        try:
-            t = subprocess.run(["pdftotext", "-layout", str(p), "-"],
-                               capture_output=True, text=True, timeout=120).stdout
-        except Exception:
-            return None
-    else:
-        t = p.read_text(encoding="utf-8", errors="replace")
+    # `citaty.tekst_dzherela` віддає PDF у двох виглядах одразу:
+    # порядок читання плюс рядки таблиць, відновлені за координатами
+    # слів. Мій колишній `pdftotext -layout` на двоколонковій сторінці
+    # вставляв текст сусідньої колонки посеред речення — і чесна
+    # цитата падала. Три записи цієї хвилі впали саме так.
+    t = citaty.tekst_dzherela(p)
+    if t is None:
+        return None
     _kesh_tekst[imya] = normal(t)
     return _kesh_tekst[imya]
 
