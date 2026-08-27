@@ -93,6 +93,10 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("vyzhyly", type=Path)
     p.add_argument("--pysaty", action="store_true")
+    # Префікс імені файлу. **Обов'язково різний для різної хвилі.**
+    # Без нього друга посадка мовчки переписує файли першої: так
+    # 335 доказів проходу стали 324, і помітив це лише перелік.
+    p.add_argument("--prefiks", default="prochid")
     a = p.parse_args()
 
     reyestr: dict[str, dict] = {}
@@ -152,9 +156,9 @@ def main() -> int:
 
     kudy = ROOT / "factcheck" / "dokazy"
     for fayl, zapys in sorted(posadka.items()):
-        shlyakh = kudy / f"prochid-{fayl}.yaml"
+        shlyakh = kudy / f"{a.prefiks}-{fayl}.yaml"
         shapka = (
-            f"# Суцільний прохід — {fayl}.\n"
+            f"# Посадка {a.prefiks} — {fayl}.\n"
             f"#\n"
             f"# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише\n"
             f"# те, що пережило третій шар: цитата знайшлася в названому\n"
