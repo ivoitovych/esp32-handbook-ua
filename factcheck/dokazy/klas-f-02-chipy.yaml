@@ -1,0 +1,103 @@
+# Посадка klas-f — 02-chipy.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-02-042: Wi-Fi · ESP32 → так'
+  zbih: Wi\-Fi\s+·\s+ESP32\s+→
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
+  cytata: '#define SOC_WIFI_SUPPORTED          1
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: ESP32 has WiFi support defined in SoC capabilities
+- nazva: 'T-02-043: Wi-Fi · S2 → так'
+  zbih: Wi\-Fi\s+·\s+S2\s+→
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+  cytata: '#define SOC_WIFI_SUPPORTED              1
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: S2 has WiFi support defined in SoC capabilities
+- nazva: 'T-02-044: Wi-Fi · S3 → так'
+  zbih: Wi\-Fi\s+·\s+S3\s+→
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
+  cytata: '#define SOC_WIFI_SUPPORTED              1
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: S3 has WiFi support defined in SoC capabilities
+- nazva: 'T-02-047: Wi-Fi · H2 → **ні**'
+  zbih: Wi\-Fi\s+·\s+H2\s+→
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h
+  cytata: '#define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy
+    hardware */
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: H2 SoC capabilities file shows only BLE support, no WIFI_SUPPORTED macro
+- nazva: 'T-02-054: BLE · ESP32 → так'
+  zbih: BLE\s+·\s+ESP32\s+→
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
+  cytata: '#define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy
+    hardware */
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: ESP32 has BLE support defined in SoC capabilities
+- nazva: 'T-02-055: BLE · S2 → **ні**'
+  zbih: BLE\s+·\s+S2\s+→
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+  cytata: '#define SOC_WIFI_SUPPORTED              1
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: S2 SoC capabilities file shows only WiFi support, no BLE_SUPPORTED macro
+- nazva: 'T-02-057: BLE · C3 → так'
+  zbih: BLE\s+·\s+C3\s+→
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h
+  cytata: '#define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy
+    hardware */
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: C3 has BLE support defined in SoC capabilities
+- nazva: 'T-02-096: **Переноситься майже завжди:** код на ESP-IDF, написаний через'
+  zbih: \*\*Переноситься\s+майже\s+завжди:\*\*\s+код
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+  cytata: 'The FreeRTOS kernel is ported to all architectures (i.e., Xtensa and RISC-V) available
+    of ESP chips.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: FreeRTOS is a common base across all ESP chips, supporting portable application
+    code

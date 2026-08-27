@@ -1,0 +1,975 @@
+- id: T-B-189
+  klas: F
+  tekst: Мережі немає в списку · Дія → ESP32 бачить лише 2.4
+  shukaty: ESP32 datasheet, технічна характеристика — які частоти радіомодуля
+- id: T-03-066
+  klas: E
+  tekst: Кожна область пам'яті має свій діапазон адрес.
+  shukaty: пам'ять ESP32, datasheet — діапазони адрес
+- id: T-05-117
+  klas: E
+  tekst: Розряд із пальця легко пробиває вхід мікросхеми.
+  shukaty: захист входу мікросхеми від розряду — електроніка, datasheet
+- id: T-D-050
+  klas: F
+  tekst: 'Три, що трапляються постійно: `0x1` (норма), `0xc` (після паніки), `0xf`
+    (живлення).'
+  shukaty: ESP32 datasheet
+- id: T-K07-030
+  klas: F
+  tekst: Лишається причина паніки і `PC` — цього досить, щоб відрізнити збій у власному
+    коді від збою в стеку Wi-Fi, але не досить для рядка.
+  shukaty: ESP32 datasheet
+- id: T-02-130
+  klas: F
+  tekst: Батарейка на роки, без Wi-Fi · Чому → немає Wi-Fi, дуже низьке споживання
+  shukaty: ESP32 datasheet
+- id: T-16-025
+  klas: E
+  tekst: Підтягнутий вгору при старті — і плата не стартує взагалі, без жодного повідомлення.
+  shukaty: ESP32 datasheet
+- id: T-A-058
+  klas: F
+  tekst: '**ADC2** (не працює при Wi-Fi): 0, 2, 4, 12, 13, 14, 15, 25, 26, 27.'
+  shukaty: ESP32 datasheet, розділ про ADC2 пінаут
+- id: T-E-095
+  klas: F
+  tekst: PMS5003, SDS011 · Швидкість → 9600
+  shukaty: PMS5003 та SDS011 datasheet — швидкість UART
+- id: T-COM-027
+  klas: E
+  tekst: Резистивний датчик вологості ґрунту · Чому → резистивні кородують за місяці
+  shukaty: PMS5003 datasheet — коросія резистивних датчиків
+- id: T-K14-009
+  klas: C
+  tekst: Немає стабілізатора · Сигнали → 3.3 В — прямо
+  shukaty: ESP32 datasheet — логічні рівні сигналу 3.3V
+- id: T-02-131
+  klas: F
+  tekst: Zigbee, Thread, Matter · Чип → C6 або H2
+  shukaty: ESP32-C6 datasheet — підтримка Zigbee і Thread
+- id: T-08-043
+  klas: F
+  tekst: Варіанти за пам'яттю (`N8`, `N16R8`) визначають, скільки пінів лишиться (розділ
+    07).
+  shukaty: ESP32 datasheet — варіанти з префіксом N8, N16R8
+- id: T-E-145
+  klas: E
+  tekst: '| Дільник напруги акумулятора | 2 резистори + **ключ** (розділ 53) |'
+  shukaty: Schematic Datasheet
+- id: T-K04-024
+  klas: E
+  tekst: Зняти всі дроти зі strapping-пінів — під час старту вони мають бути вільні.
+  shukaty: ESP32 Datasheet
+- id: T-K10-039
+  klas: F
+  tekst: '`/dev/ttyACM*` — native USB [[S3]] [[C3]].'
+  shukaty: ESP32 Datasheet
+- id: T-01-058
+  klas: F
+  tekst: Старт · ESP32 → мілісекунди
+  shukaty: ESP32 Datasheet
+- id: T-02-136
+  klas: E
+  tekst: Мережа 5 ГГц · Чому → решта лінійки 5 ГГц не бачить
+  shukaty: ESP32 Datasheet
+- id: T-02-043
+  klas: F
+  tekst: Wi-Fi · S2 → так
+  shukaty: ESP32 Datasheet
+- id: T-03-011
+  klas: F
+  tekst: '[[C3]] C3, C6, H2 і S2 **одноядерні**.'
+  shukaty: ESP32 Datasheet
+- id: T-04-092
+  klas: F
+  tekst: I²S · classic → 2
+  shukaty: ESP32 Datasheet
+- id: T-04-043
+  klas: E
+  tekst: 'PCNT · Що це → апаратний лічильник імпульсів: енкодери, витратоміри'
+  shukaty: ESP32 Datasheet
+- id: T-08-044
+  klas: E
+  tekst: '[[S3]] Має **два USB-роз''єми**: один на native USB чипа, другий на міст
+    USB-UART.'
+  shukaty: ESP32 Datasheet
+- id: T-16-033
+  klas: F
+  tekst: '[[S2]] На S2 він не використовується взагалі ніколи.'
+  shukaty: ESP32 Datasheet
+- id: T-E-097
+  klas: E
+  tekst: MH-Z19 · Швидкість → 9600
+  shukaty: MH-Z19B NDIR CO2 Sensor Datasheet
+- id: T-COM-032
+  klas: E
+  tekst: DRV8833 · Для чого → двигун постійного струму
+  shukaty: DRV8833 Dual H-Bridge Motor Driver Datasheet
+- id: T-01-060
+  klas: F
+  tekst: Старт · STM32 → миттєво
+  shukaty: STM32 Series Datasheet Startup Time
+- id: T-02-137
+  klas: F
+  tekst: Налагодження без адаптера · Чип → S3, C3
+  shukaty: ESP32-S3 and ESP32-C3 Series Datasheet
+- id: T-02-044
+  klas: F
+  tekst: Wi-Fi · S3 → так
+  shukaty: ESP32-S3 Series Datasheet
+- id: T-03-012
+  klas: E
+  tekst: Там радіостек і ваш код ділять один процесор, і затримки від радіо помітніші.
+  shukaty: ESP32 Technical Reference Manual
+- id: T-04-093
+  klas: F
+  tekst: I²S · S2 → 1
+  shukaty: ESP32-S2 Series Datasheet I²S
+- id: T-06-021
+  klas: E
+  tekst: '| Активний, радіо вимкнене | десятки мА |'
+  shukaty: ESP32 Series Datasheet Power Consumption
+- id: T-08-045
+  klas: E
+  tekst: Вони дають різні порти і роблять різне.
+  shukaty: ESP32 Technical Reference Manual UART
+- id: T-E-099
+  klas: F
+  tekst: A6 / SIM800 / SIM7600 · Швидкість → 115200
+  shukaty: Module datasheets (SIM800/SIM7600) — baud rate specification
+- id: T-14-013
+  klas: C
+  tekst: 'Пам''ять з''їдається інтерпретатором: на C3 з 400 КБ місця лишається небагато.'
+  shukaty: ESP32-C3 Series Datasheet — SRAM size specification
+- id: T-K08-013
+  klas: F
+  tekst: 4 · Симптом → `rst:0xf` у логу
+  shukaty: ESP32 datasheet reset причини коди rst значення
+- id: T-02-055
+  klas: F
+  tekst: BLE · S2 → **ні**
+  shukaty: ESP32-S2 datasheet BLE підтримка можливості
+- id: T-04-096
+  klas: F
+  tekst: I²S · C6 → 1
+  shukaty: ESP32-C6 datasheet I²S інтерфейси кількість
+- id: T-06-025
+  klas: F
+  tekst: Споживання ESP32 **нерівномірне**.
+  shukaty: ESP32 datasheet spozhyvannya nerivnomirne dynamichnyi strum
+- id: T-15-055
+  klas: E
+  tekst: '**Документація.** ESP-IDF Programming Guide (доступний для завантаження
+    цілком), datasheet усіх сімейств, з якими працюєте, TRM на основне.'
+  shukaty: ESP-IDF Programming Guide datasheet TRM Technical Reference Manual
+- id: T-D-051
+  klas: F
+  tekst: '`rst:0xf` — це **живлення**, не помилка в коді.'
+  shukaty: ROM datasheet чи документація ESP32, значення rst регістра
+- id: T-08-003
+  klas: E
+  tekst: Модуль — кристал плюс кварц, флеш, антена й обв'язка в екранованому корпусі.
+  shukaty: datasheet ESP32 модуля, опис компонентів
+- id: T-H-008
+  klas: F
+  tekst: '**Datasheet сімейства** — електричні параметри, межі, розводка виводів,
+    таблиці strapping.'
+  shukaty: ESP32 Series Datasheet
+- id: T-02-144
+  klas: F
+  tekst: S2 без Bluetooth узагалі.
+  shukaty: ESP32-S2 Series Datasheet
+- id: T-03-016
+  klas: E
+  tekst: Код, написаний як один потік, використає одне ядро й лишить друге простоювати.
+  shukaty: ESP32 Technical Reference Manual
+- id: T-E-083
+  klas: F
+  tekst: E-paper (SSD16xx) · Режим → 0
+  shukaty: SSD16xx datasheet - режими дисплея
+- id: T-02-027
+  klas: F
+  tekst: Частота, МГц · C3 → 160
+  shukaty: ESP32-C3 Series Datasheet - частота для C3 160 МГц
+- id: T-01-004
+  klas: E
+  tekst: Тут — чип за кілька доларів, який стартує за мілісекунди, споживає мікроампери
+    уві сні й не має операційної системи, яку треба адмініструвати.
+  shukaty: ESP32 Series Datasheet, power consumption specifications
+- id: T-03-006
+  klas: F
+  tekst: '**Ядро 0** зайняте стеком Wi-Fi і Bluetooth.'
+  shukaty: ESP32 Technical Reference Manual, Dual-Core Architecture
+- id: T-04-065
+  klas: E
+  tekst: '**Апаратна криптографія** робить TLS придатним до використання.'
+  shukaty: ESP32 Technical Reference Manual, Cryptography Engine
+- id: T-20-020
+  klas: E
+  tekst: Після ввімкнення чип перестає приймати непідписані прошивки, а вміст флешу
+    стає нечитним поза цим екземпляром чипа.
+  shukaty: ESP32 Series Datasheet, Security chapter on Secure Boot
+- id: T-01-099
+  klas: E
+  tekst: '**Datasheet** сімейства — електричні параметри, межі, розводка.'
+  shukaty: Datasheet сімейства ESP32, розділи про параметри та розводку
+- id: T-02-029
+  klas: F
+  tekst: Частота, МГц · H2 → 96
+  shukaty: ESP32-H2 Datasheet, частота процесора
+- id: T-04-066
+  klas: E
+  tekst: Без прискорювачів рукостискання на мікроконтролері триває неприйнятно довго.
+  shukaty: ESP32 Datasheet, розділ про SPI handshaking accelerators
+- id: T-06-065
+  klas: E
+  tekst: Прокидання швидке, і програма продовжує з того самого місця.
+  shukaty: ESP32 Datasheet про режим пробудження та RTC
+- id: T-06-126
+  klas: F
+  tekst: '`rst:0xf` означає живлення.'
+  shukaty: ESP32 Datasheet, коди скидання та RTC wake
+- id: T-02-030
+  klas: F
+  tekst: SRAM, КБ · ESP32 → 520
+  shukaty: ESP32 Technical Reference Manual, memory specifications
+- id: T-01-101
+  klas: E
+  tekst: '**Technical Reference Manual (TRM)** — опис регістрів і периферії на низькому
+    рівні.'
+  shukaty: ESP32 Technical Reference Manual
+- id: T-02-031
+  klas: F
+  tekst: SRAM, КБ · S2 → 320
+  shukaty: ESP32-S2 Datasheet
+- id: T-01-102
+  klas: E
+  tekst: Товстий документ, який читають не підряд, а за покажчиком, коли треба зрозуміти,
+    чому периферія поводиться саме так.
+  shukaty: ESP32 Technical Reference Manual
+- id: T-01-040
+  klas: F
+  tekst: Радіо на борту · STM32 → ні (крім WB/WL)
+  shukaty: STM32 Datasheet
+- id: T-02-032
+  klas: F
+  tekst: SRAM, КБ · S3 → 512
+  shukaty: ESP32-S3 Datasheet
+- id: T-04-069
+  klas: E
+  tekst: UART · S2 → 2
+  shukaty: ESP32-S2 Datasheet
+- id: T-20-045
+  klas: F
+  tekst: '**Калібрувальні дані радіо** (`phy_init`) специфічні для екземпляра чипа.'
+  shukaty: ESP32 Datasheet
+- id: T-20-022
+  klas: E
+  tekst: 'Знятий після — марний: він зашифрований ключем, який не покидає чип.'
+  shukaty: ESP32 Datasheet
+- id: T-A-053
+  klas: F
+  tekst: 32, 33 · Примітка → **ADC1 — працює при Wi-Fi**
+  shukaty: ESP32 Datasheet, розділ про ADC
+- id: T-B-074
+  klas: E
+  tekst: Перезавантаження при Wi-Fi · Причина → джерело не тягне піків
+  shukaty: ESP32 Hardware Design Guidelines, розділ про вимоги до живлення
+- id: T-E-091
+  klas: E
+  tekst: GPS NEO-6M / NEO-8M · Швидкість → 9600
+  shukaty: Datasheet GPS модулів NEO-6M / NEO-8M
+- id: T-K04-020
+  klas: E
+  tekst: '[[classic]] На платах ESP32-CAM кнопки `BOOT` немає взагалі: `GPIO0` з''єднується
+    з `GND` перемичкою на самій платі.'
+  shukaty: ESP32-CAM board datasheet / schematic
+- id: T-01-048
+  klas: F
+  tekst: RAM · ESP32 → сотні КБ
+  shukaty: ESP32 Datasheet, розділ Memory
+- id: T-02-033
+  klas: F
+  tekst: SRAM, КБ · C3 → 400
+  shukaty: ESP32-C3 Datasheet, SRAM specification
+- id: T-04-070
+  klas: E
+  tekst: UART · S3 → 3
+  shukaty: ESP32-S3 Datasheet, UART peripherals
+- id: T-08-039
+  klas: E
+  tekst: Назва в оголошенні однакова, пінаути — ні.
+  shukaty: Board datasheets та marketing materials
+- id: T-18-070
+  klas: E
+  tekst: Знос флешу · LittleFS → вирівнюється власним механізмом
+  shukaty: LittleFS Technical Reference Manual
+- id: T-A-054
+  klas: E
+  tekst: 34–39 · Обмеження → **тільки вхід, без підтягування**
+  shukaty: ESP32 datasheet або технічна документація чипа
+- id: T-E-141
+  klas: E
+  tekst: Кнопки · Як → вхід із підтягуванням, антидребезг
+  shukaty: datasheet ESP32 про GPIO з підтягуванням, антидребезг
+- id: T-E-092
+  klas: E
+  tekst: GPS NEO-6M / NEO-8M · Що дає → координати, точний час (NMEA)
+  shukaty: u-blox NEO-6M Datasheet, GPS Capabilities
+- id: T-K02-014
+  klas: E
+  tekst: Ці чотири числа — єдина база для порівняння, якщо потім щось зміниться.
+  shukaty: ESP32 Series Datasheet, Comparison Table
+- id: T-06-077
+  klas: F
+  tekst: '**ULP.** Основні ядра сплять, крихітний співпроцесор працює: міряє, порівнює,
+    будить систему за умовою (розділ 03).'
+  shukaty: ESP32 Series Datasheet, ULP Coprocessor
+- id: T-09-035
+  klas: E
+  tekst: Історично драйвери FTDI вміли робити підроблені чипи непрацездатними.
+  shukaty: FTDI Chip Datasheet, Driver Documentation
+- id: T-20-047
+  klas: E
+  tekst: Дамп із чипа одного сімейства не заливається на інше сімейство взагалі.
+  shukaty: ESP32 Chip Families Datasheet, Memory Dump Compatibility
+- id: T-K04-021
+  klas: E
+  tekst: Після прошивки перемичку обов'язково зняти, інакше плата так і лишиться в
+    download mode.
+  shukaty: ESP32 datasheet або даташит мікросхеми завантажувача — режим download mode
+    поведінка
+- id: T-20-047
+  klas: E
+  tekst: Дамп із чипа одного сімейства не заливається на інше сімейство взагалі.
+  shukaty: ESP32 Series Datasheet — сумісність дампів між сімействами
+- id: T-24-063
+  klas: E
+  tekst: Перезібрати «такий самий» образ пізніше майже ніколи не виходить точно; збережений
+    файл не вимагає нічого, крім місця на диску (розділ 21).
+  shukaty: ESP-IDF Technical Reference Manual — образи прошивки й їх точність
+- id: T-30-071
+  klas: E
+  tekst: Код виконується з флешу через кеш.
+  shukaty: ESP32 Series Datasheet, Memory Architecture — виконання з флешу через кеш
+- id: T-04-124
+  klas: E
+  tekst: Саме це число має значення при проєктуванні; у datasheet наведено більше.
+  shukaty: ESP32 Technical Reference Manual, розділ про периферію
+- id: T-23-037
+  klas: E
+  tekst: Між `3V3` і `GND` не має бути короткого замикання.
+  shukaty: ESP32 datasheet, розділ про живлення й електричні характеристики
+- id: T-33-056
+  klas: F
+  tekst: Серво живиться **окремо**, не від піна 3V3 плати.
+  shukaty: datasheet серво, розділ про живлення й максимальний струм
+- id: T-36-123
+  klas: E
+  tekst: Режим SPI — причина класичного «повертає нулі»; правильний зазначений у datasheet,
+    перебір чотирьох займає хвилину.
+  shukaty: пристрою SPI datasheet, розділ про таймування й режими передачі
+- id: T-07-113
+  klas: F
+  tekst: Лишається близько **20 повноцінних** пінів, з яких п'ять — strapping і потребують
+    уваги.
+  shukaty: ESP32 datasheet, розділ GPIO — кількість пінів
+- id: T-29-059
+  klas: E
+  tekst: '**Це strapping-пін.** Стан при старті визначає режим завантаження.'
+  shukaty: ESP32 datasheet, розділ Strapping Pins
+- id: T-24-065
+  klas: E
+  tekst: '**Чи є дамп і чи він перевірений?** Розмір файлу дорівнює обсягу флешу.'
+  shukaty: ESP32 datasheet, розмір флеш-пам'яті
+- id: T-26-084
+  klas: E
+  tekst: З'являється найчастіше в момент увімкнення радіо, бо саме там піковий струм.
+  shukaty: ESP32 datasheet, характеристика піку споживання струму при ввімкненні радіо
+- id: T-33-035
+  klas: E
+  tekst: '**Апаратні таймери** потрібні там, де важлива точність незалежно від завантаження
+    системи, — переривання формується апаратно.'
+  shukaty: ESP32 datasheet, призначення апаратних таймерів
+- id: T-29-039
+  klas: E
+  tekst: '**Під''єднується і відвалюється.** Живлення (див. вище) або слабкий сигнал.'
+  shukaty: ESP32 Datasheet — USB connection indicators
+- id: T-33-112
+  klas: F
+  tekst: Справжній аналоговий вихід, 8 розрядів, два канали.
+  shukaty: ESP32 Datasheet — DAC specifications
+- id: T-34-003
+  klas: F
+  tekst: Саме тому це основний канал між ESP32 і «дорослим» контролером (розділ 57),
+    і саме тому консоль зроблена на ньому.
+  shukaty: ESP32 Datasheet — UART features
+- id: T-36-084
+  klas: F
+  tekst: Для великих передач — кадр дисплея, блок з картки — DMA передає дані без
+    участі процесора.
+  shukaty: ESP32 Datasheet — SPI DMA transfers
+- id: T-37-009
+  klas: E
+  tekst: 'Три виводи: `GND`, `DQ` (дані), `VDD` (живлення).'
+  shukaty: 1-Wire Datasheet — device pinout
+- id: T-38-006
+  klas: E
+  tekst: '**Немає адрес отримувача.** Пакет має **ідентифікатор** — не адресу пристрою,
+    а тип повідомлення.'
+  shukaty: CAN Datasheet — frame structure and identifiers
+- id: T-41-017
+  klas: F
+  tekst: Споживання · BLE → **дуже низька**
+  shukaty: BLE Datasheet — power consumption
+- id: T-02-034
+  klas: F
+  tekst: SRAM, КБ · C6 → 512
+  shukaty: ESP32 datasheet, розділ Memory, специфікація SRAM для C6
+- id: T-25-104
+  klas: E
+  tekst: 115200 — швидкість ROM, вона не залежить від застосунку.
+  shukaty: ESP32 datasheet, швидкість UART у ROM
+- id: T-29-040
+  klas: E
+  tekst: 'Подивитися RSSI: гірше за −80 дБм — робота на межі.'
+  shukaty: ESP32 Technical Reference Manual
+- id: T-37-010
+  klas: E
+  tekst: 'Продається у двох виглядах: чип у корпусі TO-92 і герметичний зонд у металевій
+    гільзі на кабелі.'
+  shukaty: DS18B20 Datasheet
+- id: T-35-092
+  klas: E
+  tekst: Адреса в datasheet буває 8-бітною; сканер знімає це питання.
+  shukaty: I2C датчик Datasheet — 8-бітна адреса
+- id: T-37-038
+  klas: E
+  tekst: Інакше через рік невідомо, який із чотирьох датчиків де.
+  shukaty: OneWire/DS18B20 Datasheet — паразитне живлення
+- id: T-38-017
+  klas: C
+  tekst: 'Потрібна зовнішня мікросхема: SN65HVD230, TJA1050, MCP2551 або аналог.'
+  shukaty: CAN трансцейвер Datasheet — SN65HVD230, TJA1050, MCP2551
+- id: T-38-019
+  klas: C
+  tekst: SN65HVD230 живиться від 3.3 В і підходить прямо.
+  shukaty: SN65HVD230 datasheet
+- id: T-B-087
+  klas: C
+  tekst: Сон 20 мА замість 20 мкА · Дія → власний монтаж
+  shukaty: ESP32 datasheet - Sleep current
+- id: T-E-018
+  klas: C
+  tekst: DS3231 · Адреса → `0x68`
+  shukaty: DS3231 datasheet
+- id: T-K09-011
+  klas: F
+  tekst: '| 0, 2, 4, 12–15, 25–27 | ADC2 — **не працює при увімкненому Wi-Fi** |'
+  shukaty: ESP32 datasheet - ADC2 specifications
+- id: T-K13-016
+  klas: F
+  tekst: 4 · Що міряти → **`3V3` під навантаженням, Wi-Fi увімкнений**
+  shukaty: ESP32 datasheet - Power specifications
+- id: T-05-023
+  klas: E
+  tekst: Пін ESP32 віддає обмежений струм, і найпоширеніше уявлення про це неточне
+    **в обидва боки**.
+  shukaty: ESP32 datasheet - Pin current specifications
+- id: T-06-032
+  klas: E
+  tekst: Причина в тому, що паспортний мінімум передбачає джерело, яке справді тримає
+    свої 500 мА на сплеску; дешевий блок із написом «500 мА» просідає задовго до цього.
+  shukaty: Power supply datasheet - current ratings
+- id: T-B-225
+  klas: E
+  tekst: Падає через дні роботи · Причина → фрагментація купи
+  shukaty: ESP32 Technical Reference Manual
+- id: T-D-081
+  klas: E
+  tekst: Другий за цінністю — `0x04`.
+  shukaty: ESP32 panic codes reference manual
+- id: T-K01-027
+  klas: E
+  tekst: '- Один рядок, тиша, знову той самий рядок → boot loop.'
+  shukaty: ESP32 Series Datasheet
+- id: T-K12-007
+  klas: E
+  tekst: '| Паяльник із терморегулятором | 60 Вт, жало «скіс» 2–3 мм |'
+  shukaty: Soldering iron specifications datasheet
+- id: T-01-017
+  klas: F
+  tekst: '**Радіо на кристалі.** Wi-Fi і Bluetooth без зовнішніх мікросхем.'
+  shukaty: ESP32 radio specifications datasheet
+- id: T-02-013
+  klas: F
+  tekst: Ядро · S2 → Xtensa LX7
+  shukaty: ESP32-S2 processor core specifications datasheet
+- id: T-03-054
+  klas: E
+  tekst: Годинник реального часу, побудований на внутрішньому RC-генераторі, за добу
+    набігає помітну похибку.
+  shukaty: ESP32 RTC specifications datasheet
+- id: T-03-031
+  klas: F
+  tekst: Є лише в classic, S2 і S3 (розділ 02).
+  shukaty: ESP32 feature comparison table datasheet
+- id: T-08-091
+  klas: F
+  tekst: ESP32-CAM не має USB-роз'єму й потребує окремого програматора.
+  shukaty: ESP32-CAM hardware specifications datasheet
+- id: T-16-079
+  klas: F
+  tekst: 'Прошивати вручну кнопками незручно, тому на платах ставлять схему авторесету:
+    два транзистори, керовані сигналами `DTR` і `RTS` USB-мосту.'
+  shukaty: ESP32 Hardware Design Guide
+- id: T-17-163
+  klas: E
+  tekst: Розмір файлу звіряється з обсягом флешу одразу.
+  shukaty: ESP32 Flash Memory Technical Reference
+- id: T-19-063
+  klas: E
+  tekst: Споживання в цей час вище за звичайне робоче.
+  shukaty: OTA power consumption specifications datasheet
+- id: T-19-018
+  klas: E
+  tekst: Обрив зв'язку посеред завантаження, зникнення живлення, зіпсований файл —
+    усе це втрачає лише недописаний образ у неактивному слоті.
+  shukaty: ESP32 OTA Technical Reference
+- id: T-22-070
+  klas: E
+  tekst: Дамп перевіряється за розміром одразу і копіюється в друге місце до початку
+    роботи.
+  shukaty: ESP32 Memory Dump Technical Reference
+- id: T-01-086
+  klas: E
+  tekst: 'Pi — комп''ютер із Linux: файлова система, що псується від зникнення живлення,
+    десятки секунд на завантаження, споживання у ватах.'
+  shukaty: Raspberry Pi datasheet
+- id: T-01-020
+  klas: F
+  tekst: Тут вміщається стек TCP/IP, TLS, веб-сервер і ще лишається місце на власну
+    логіку.
+  shukaty: ESP32 datasheet
+- id: T-03-056
+  klas: E
+  tekst: '**Динамічне керування частотою** (DFS) дозволяє системі самій знижувати
+    частоту, коли роботи немає, і піднімати під навантаженням.'
+  shukaty: ESP32 Technical Reference Manual, DFS feature
+- id: T-04-149
+  klas: F
+  tekst: RMT керує адресними світлодіодами апаратно; PCNT рахує імпульси без переривань;
+    MCPWM дає мертвий час і аварійне вимкнення для силових каскадів.
+  shukaty: ESP32 Technical Reference Manual, RMT PCNT MCPWM peripherals
+- id: T-B-228
+  klas: E
+  tekst: Падає в випадковому місці · Причина → переповнення стека задачі
+  shukaty: ESP32 Technical Reference Manual, додаток B — Симптоми
+- id: T-B-160
+  klas: E
+  tekst: Реле вмикається при старті · Причина → вхід ключа висить при завантаженні
+  shukaty: ESP32 Technical Reference Manual, додаток B — Симптоми
+- id: T-E-119
+  klas: F
+  tekst: INMP441 · Що дає → цифровий мікрофон
+  shukaty: ESP32 Technical Reference Manual, додаток E — Інтерфейси
+- id: T-E-063
+  klas: C
+  tekst: SX1262 · Режим → 0
+  shukaty: ESP32 Technical Reference Manual, додаток E — Інтерфейси
+- id: T-01-087
+  klas: E
+  tekst: 'ESP32 — мікроконтролер: стартує миттєво, живе на батарейці, не має чого
+    ламати при вимиканні.'
+  shukaty: ESP32 Datasheet — мікроконтролер
+- id: T-02-016
+  klas: F
+  tekst: Ядро · C6 → RISC-V
+  shukaty: ESP32 Datasheet — архітектура ядра
+- id: T-08-016
+  klas: C
+  tekst: 'Суфікс кодує пам''ять: `N8` — 8 МБ флешу; `N16R8` — 16 МБ флешу і 8 МБ PSRAM.'
+  shukaty: ESP32-S3 Datasheet — позначення чипа — таблиця суфіксів
+- id: T-A-087
+  klas: F
+  tekst: 0–4 · Обмеження → ADC1
+  shukaty: datasheet ESP32 — діапазон ADC1 піни
+- id: T-E-120
+  klas: F
+  tekst: INMP441 · Примітка → без аналогової обв'язки
+  shukaty: INMP441 datasheet, технічні характеристики
+- id: T-E-064
+  klas: C
+  tekst: SX1262 · Що дає → LoRa, новіший
+  shukaty: SX1262 datasheet, LoRa модуль
+- id: T-02-017
+  klas: F
+  tekst: Ядро · H2 → RISC-V
+  shukaty: ESP32-H2 datasheet — RISC-V архітектура
+- id: T-03-058
+  klas: E
+  tekst: 'Окрема частина кристала, що лишається живою, коли основні ядра сплять:'
+  shukaty: ESP32 Technical Reference Manual — RTC крайня архітектура
+- id: T-06-114
+  klas: C
+  tekst: Плата, яка в deep sleep показує 20 мА замість 20 мкА, — це не несправний
+    чип.
+  shukaty: ESP32 Technical Reference Manual — характеристики deep sleep
+- id: T-08-001
+  klas: E
+  tekst: Між кристалом і тим, що лежить на столі, — два шари, і кожен додає своїх
+    особливостей (розділ 01).
+  shukaty: ESP32 Technical Reference Manual — архітектура модуля
+- id: T-16-085
+  klas: F
+  tekst: Від подачі живлення до `app_main` — типово десятки мілісекунд.
+  shukaty: ESP32 Technical Reference Manual — тайминги bootloader
+- id: T-19-068
+  klas: E
+  tekst: Для пристрою, що стоїть у полі, це не теоретична загроза.
+  shukaty: ESP32 Technical Reference Manual — OTA безпека
+- id: T-19-026
+  klas: F
+  tekst: Два слоти по 1.5 МБ — це 3 МБ, і на файлову систему лишається менш ніж мегабайт.
+  shukaty: ESP32 Technical Reference Manual — OTA память
+- id: T-22-011
+  klas: E
+  tekst: Маркування модуля — головне джерело істини про те, що це взагалі таке (розділ
+    23), і воно легко стирається пальцями і спиртом.
+  shukaty: ESP32 Series Datasheet — маркування модулів
+- id: T-A-016
+  klas: E
+  tekst: 3 · Обмеження → UART0 RX
+  shukaty: ESP32 Technical Reference Manual — UART pin constraints
+- id: T-A-088
+  klas: F
+  tekst: 5 · Обмеження → ADC2
+  shukaty: ESP32 Technical Reference Manual — ADC2 pin constraints
+- id: T-E-121
+  klas: F
+  tekst: MAX98357A · Що дає → підсилювач класу D
+  shukaty: MAX98357A datasheet — клас D підсилювача
+- id: T-K09-031
+  klas: F
+  tekst: '| 5 | ADC2 — **не використовувати**, апаратна вада |'
+  shukaty: ESP32 Technical Reference Manual — ADC2 hardware limitation
+- id: T-02-109
+  klas: F
+  tekst: Знімає обмеження, через яке ESP32 не бачить сучасні 5-гігагерцові мережі.
+  shukaty: ESP32 Technical Reference Manual — 5GHz WiFi support
+- id: T-03-036
+  klas: F
+  tekst: '*Не та область.* Буфер для DMA має лежати в DRAM, доступній контролеру DMA.'
+  shukaty: ESP32 Technical Reference Manual — DMA memory requirements
+- id: T-07-022
+  klas: E
+  tekst: Пін має внутрішнє підтягування вгору, тому не під'єднаний = високий = звичайний
+    вивід.
+  shukaty: ESP32 Technical Reference Manual — GPIO pull-up behavior
+- id: T-16-087
+  klas: E
+  tekst: Найпідступніша поведінка при старті — коли живлення просідає саме в момент
+    увімкнення радіо, вже після успішного завантаження.
+  shukaty: ESP32 Technical Reference Manual — power supply specifications
+- id: T-D-154
+  klas: C
+  tekst: Близько нуля (`0x0`–`0x40`) → розіменування `NULL` зі зсувом поля структури.
+  shukaty: ESP32 Series Datasheet, Memory Management chapter
+- id: T-02-110
+  klas: F
+  tekst: '**ESP32-C61** — здешевлений варіант у тому ж напрямку, що C6.'
+  shukaty: ESP32-C6 Series Datasheet
+- id: T-03-061
+  klas: E
+  tekst: Але споживає він мікроампери.
+  shukaty: ESP32 Series Datasheet, Power Management
+- id: T-03-041
+  klas: E
+  tekst: Код лежить у флеші, а виконується процесором через кеш.
+  shukaty: ESP32 Series Datasheet, System Architecture
+- id: T-04-001
+  klas: E
+  tekst: 'Периферія — це апаратні блоки всередині чипа, які роблять роботу без участі
+    процесора: передають байти по UART, генерують імпульси PWM, міряють напругу.'
+  shukaty: ESP32 Series Datasheet, Peripherals chapter
+- id: T-A-094
+  klas: E
+  tekst: П'ятий пін як аналоговий закладати не можна.
+  shukaty: ESP32 datasheets, GPIO pin capabilities
+- id: T-E-067
+  klas: C
+  tekst: NRF24L01 · Що дає → радіо 2.4 ГГц
+  shukaty: NRF24L01 datasheet, RF specifications
+- id: T-02-113
+  klas: E
+  tekst: Розрахований на графіку, відео й інтерфейси; зв'язок додається окремим чипом.
+  shukaty: ESP32 S3 datasheet, processor capabilities
+- id: T-02-020
+  klas: F
+  tekst: Ядер · S3 → **2**
+  shukaty: ESP32 S3 datasheet, core specifications
+- id: T-07-058
+  klas: E
+  tekst: Кожен strapping-пін має внутрішній резистор саме такого номіналу.
+  shukaty: ESP32 datasheet, strapping pins, internal pull-up/pull-down specifications
+- id: T-A-021
+  klas: F
+  tekst: 5 · Обмеження → **strapping**
+  shukaty: ESP32 Datasheet, rozdzil Strapping Pins
+- id: T-K09-036
+  klas: E
+  tekst: Пін із позначкою «тільки вхід» не стає виходом від налаштування в коді.
+  shukaty: ESP32 Datasheet, Input-only GPIO pins
+- id: T-07-059
+  klas: E
+  tekst: Він задає стан за замовчуванням, коли до піна нічого не під'єднано, — і саме
+    тому вільний пін поводиться передбачувано.
+  shukaty: ESP32 Datasheet, pull-up rezystory na GPIO
+- id: T-B-059
+  klas: E
+  tekst: Лог читається на 74880 · Дія → звірити маркування
+  shukaty: datasheet ESP32, baudrate 74880
+- id: T-D-043
+  klas: F
+  tekst: '`0xe` · Що робити → норма'
+  shukaty: ESP32 datasheet, код помилки 0xe
+- id: T-E-080
+  klas: E
+  tekst: W5500 · Режим → 0
+  shukaty: W5500 datasheet, режим 0
+- id: T-K06-043
+  klas: E
+  tekst: Рядки ROM завжди йдуть на **115200** — і незалежно від швидкості застосунку,
+    і незалежно від кварцу на платі.
+  shukaty: ESP32 datasheet, baudrate ROM 115200
+- id: T-02-024
+  klas: F
+  tekst: Частота, МГц · ESP32 → 240
+  shukaty: ESP32 datasheet, частота 240 МГц
+- id: T-06-120
+  klas: F
+  tekst: '**Buck** (понижувальний імпульсний) — ефективність 85–95 %.'
+  shukaty: Buck converter datasheet, ефективність 85-95%
+- id: T-A-074
+  klas: E
+  tekst: Тільки-вхідних пінів немає — усі повнофункціональні.
+  shukaty: datasheet, pinout
+- id: T-K09-012
+  klas: E
+  tekst: 'Вільні без застережень: **4, 13, 14, 16, 17, 18, 19, 21, 22, 23, 25, 26,
+    27, 32, 33**.'
+  shukaty: datasheet, GPIO pins
+- id: T-K11-019
+  klas: E
+  tekst: Будь-яка спроба їх використати підвішує чип або псує вміст флешу.
+  shukaty: datasheet, hardware constraints
+- id: T-02-084
+  klas: F
+  tekst: 'Практичний наслідок: профіль SPP — послідовний порт по Bluetooth, на якому
+    тримається безліч старих проєктів і на який розраховують дешеві термінальні застосунки
+    для телефона, — на S3 і C3 недоступний у принципі.'
+  shukaty: Bluetooth profile compatibility, datasheet
+- id: T-05-024
+  klas: C
+  tekst: '**40 мА — це типова віддача на максимальній силі драйвера**, а не гранично
+    допустиме значення.'
+  shukaty: datasheet, GPIO electrical characteristics
+- id: T-09-050
+  klas: E
+  tekst: '[[S3]] Плати S3-DevKitC-1 мають **два** USB-роз''єми: один іде на native
+    USB чипа, другий — на звичайний міст USB-UART.'
+  shukaty: ESP32-S3 DevKit Datasheet
+- id: T-16-006
+  klas: E
+  tekst: 'Саме тому плата з повністю стертим флешем все одно подає ознаки життя: ROM
+    живий.'
+  shukaty: ROM bootloader, datasheet
+- id: T-18-085
+  klas: E
+  tekst: 'Його там немає: на відміну від SPIFFS і FAT, LittleFS **не входить до ESP-IDF**
+    і ставиться з реєстру компонентів:'
+  shukaty: LittleFS Component Datasheet
+- id: T-05-061
+  klas: E
+  tekst: 'Він читає **випадкове значення**: ловить наводки і перемикається сам.'
+  shukaty: ESP32 ADC datasheet
+- id: T-H-012
+  klas: E
+  tekst: Товстий документ, який читають за покажчиком, коли треба зрозуміти, чому
+    периферія поводиться саме так.
+  shukaty: ESP32 Technical Reference Manual, Peripheral details
+- id: T-03-022
+  klas: E
+  tekst: '- **IRAM** (instruction RAM) — звідси виконується код.'
+  shukaty: ESP32 Datasheet, Memory section — IRAM (Instruction RAM)
+- id: T-05-090
+  klas: F
+  tekst: Коли ESP32 вмикає передавач, споживання стрибає за мікросекунди.
+  shukaty: ESP32 Datasheet, Power Consumption — стрибок споживання при вмиканні передавача
+- id: T-18-005
+  klas: E
+  tekst: 'Це список записів, кожен з яких каже: назва, тип, підтип, адреса початку,
+    розмір.'
+  shukaty: ESP32 Technical Reference Manual, Partition Table CSV format
+- id: T-A-101
+  klas: E
+  tekst: UART0 TX / RX · [[C3]] → 21 / 20
+  shukaty: ESP32-C3 Series Datasheet, UART pin configuration
+- id: T-A-078
+  klas: F
+  tekst: 2 · Обмеження → **strapping**
+  shukaty: ESP32-C3 Series Datasheet, strapping pins section
+- id: T-B-219
+  klas: F
+  tekst: 'LoRa: нічого не чути · Дія → однакові SF/BW/CR'
+  shukaty: RFM95/RFM69 LoRa Module Datasheet, modulation parameters
+- id: T-E-025
+  klas: F
+  tekst: BNO055 · Що дає → готова орієнтація
+  shukaty: BNO055 datasheet, sensor specifications
+- id: T-COM-051
+  klas: C
+  tekst: MAX485 · Застереження → брати версію на 3.3 В
+  shukaty: MAX485 datasheet, voltage specifications
+- id: T-K14-036
+  klas: E
+  tekst: Напруга на виводі живлення модуля — та, що очікуєте? 2.
+  shukaty: ESP32 Series Datasheet, power supply specifications
+- id: T-01-001
+  klas: F
+  tekst: ESP32 — сімейство мікроконтролерів із вбудованим радіо, яке зробила китайська
+    компанія Espressif.
+  shukaty: ESP32 Series Datasheet, product overview
+- id: T-03-023
+  klas: E
+  tekst: 'Сюди потрапляє те, що має працювати швидко або має бути доступним, коли
+    флеш недоступний: обробники переривань, критичні функції.'
+  shukaty: ESP32 Series Datasheet, memory sections IRAM/DRAM
+- id: T-04-007
+  klas: E
+  tekst: 'Тут між периферією і пінами стоїть **комутаційна матриця**: майже будь-який
+    сигнал майже будь-якого блоку можна вивести на майже будь-який пін — програмно,
+    без перепаювання.'
+  shukaty: ESP32 Technical Reference Manual, IO MUX and GPIO matrix
+- id: T-04-059
+  klas: E
+  tekst: '**PCNT** рахує імпульси сам.'
+  shukaty: ESP32 Technical Reference Manual, PCNT peripheral
+- id: T-05-029
+  klas: E
+  tekst: Тому розрахунок «межа 40, беру 35 із запасом» на кількох активних пінах виходить
+    за реальне значення, точно дотримуючись арифметики.
+  shukaty: ESP32 Series Datasheet, GPIO maximum current specs
+- id: T-06-011
+  klas: F
+  tekst: '**Пін `3V3`.** Це **вихід** стабілізатора.'
+  shukaty: ESP32 Series Datasheet, power pins and regulator
+- id: T-21-088
+  klas: E
+  tekst: 'Обмеження — живлення хаба: чотири плати, що одночасно пишуть у флеш, дають
+    помітний струм.'
+  shukaty: ESP32 Series Datasheet, power supply capabilities
+- id: T-D-065
+  klas: F
+  tekst: '[[classic]] Для ESP32 classic біти такі:'
+  shukaty: ESP32 classic datasheet — біти регістра
+- id: T-H-015
+  klas: E
+  tekst: '**Hardware Design Guidelines** — вимоги до розводки: зона антени, живлення,
+    розв''язувальні конденсатори.'
+  shukaty: ESP32 Hardware Design Guidelines — вимоги до розводки
+- id: T-01-002
+  klas: F
+  tekst: 'Головна причина його поширеності проста: це чи не єдиний спосіб отримати
+    керований процесор **разом із Wi-Fi** за ціну, порівнянну з ціною самого мікроконтролера.'
+  shukaty: ESP32 datasheet — характеристики процесора, Wi-Fi, ціна
+- id: T-02-090
+  klas: F
+  tekst: Кадровий буфер камери, великий веб-інтерфейс, TLS із кількома одночасними
+    з'єднаннями — все це впирається саме сюди.
+  shukaty: ESP32 datasheet — обмеження DRAM на PSRAM, камера, TLS
+- id: T-04-060
+  klas: E
+  tekst: 'Енкодер, витратомір, лічильник обертів — усе це не потребує переривань на
+    кожен імпульс: процесор просто читає накопичене значення, коли йому зручно.'
+  shukaty: ESP32 datasheet — можливість читання накопичених значень без переривань
+- id: T-06-012
+  klas: E
+  tekst: Подавати сюди зовнішні 3.3 В можна, але тоді бортовий стабілізатор має лишатися
+    без входу — інакше два джерела працюють одне проти одного.
+  shukaty: ESP32 datasheet — схема живлення, стабілізатор
+- id: T-06-034
+  klas: E
+  tekst: У чипі є вбудований детектор зниження напруги.
+  shukaty: ESP32 datasheet — детектор зниження напруги
+- id: T-02-091
+  klas: F
+  tekst: ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і решта нової лінійки
+    — на RISC-V.
+  shukaty: ESP32 Series Datasheet, chip architecture
+- id: T-03-026
+  klas: E
+  tekst: Все інше при глибокому сні втрачається.
+  shukaty: ESP32 Series Datasheet, deep sleep mode
+- id: T-06-035
+  klas: E
+  tekst: Коли напруга падає нижче порогу, він примусово скидає чип, щоб той не працював
+    у невизначеному стані й не пошкодив вміст флешу.
+  shukaty: ESP32 Series Datasheet, voltage regulator
+- id: T-03-003
+  klas: F
+  tekst: '[[classic]] [[S3]] ESP32 classic і S3 мають **два ядра**.'
+  shukaty: ESP32 Datasheet — кількість ядер
+- id: T-D-129
+  klas: E
+  tekst: 'Реальний флеш **більший** — лише попередження: система працює, просто надлишок
+    не використовується.'
+  shukaty: ESP32 Series Datasheet характеристики SRAM
+- id: T-K06-002
+  klas: E
+  tekst: Перші рядки друкує ROM, і саме вони кажуть, чому плата поводиться так, як
+    поводиться.
+  shukaty: ESP32 Technical Reference Manual ROM boot меню
+- id: T-K09-018
+  klas: F
+  tekst: '| **0, 3, 45, 46** | strapping |'
+  shukaty: ESP32 Series Datasheet strapping pins
+- id: T-02-011
+  klas: F
+  tekst: '| | ESP32 | S2 | S3 | C3 | C6 | H2 |'
+  shukaty: ESP32 Series Datasheet варіанти чипів таблиця
+- id: T-03-028
+  klas: E
+  tekst: '**Зовнішня флеш** — те, де лежить прошивка.'
+  shukaty: ESP32 Technical Reference Manual архітектура пам'яті
+- id: T-04-140
+  klas: E
+  tekst: '**Переривання і час процесора.** Периферія працює апаратно, але результати
+    хтось має забирати.'
+  shukaty: ESP32 Technical Reference Manual периферія апаратна
+- id: T-05-098
+  klas: E
+  tekst: Конденсатор 470 мкФ між `3V3` і `GND` поруч із модулем — найдешевше розв'язання
+    найчастішої проблеми в усій книзі.
+  shukaty: ESP32 hardware design guide конденсатор живлення
+- id: T-06-040
+  klas: F
+  tekst: '`rst:0xf` — це **живлення**.'
+  shukaty: ESP32 Series Datasheet регістр rst значення
+- id: T-07-126
+  klas: E
+  tekst: Плати з однаковою назвою бувають різними.
+  shukaty: ESP32-DevKitC datasheet варіанти плати
+- id: T-08-089
+  klas: E
+  tekst: «DevKit V1» буває 30- і 38-піновий — це різні плати.
+  shukaty: ESP32-DevKit V1 Reference Manual піни розташування
+- id: T-23-055
+  klas: E
+  tekst: Менший за очікуваний для цього модуля — клон із меншою пам'яттю.
+  shukaty: ESP32 Series Datasheet memory identification clones
+- id: T-07-128
+  klas: E
+  tekst: Пінаут, знайдений за назвою, може не відповідати тому, що у вас у руках.
+  shukaty: пінаут, збіжність з datasheet
