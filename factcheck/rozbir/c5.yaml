@@ -35,6 +35,10 @@
 - id: T-24-068
   rid: ne-rozibrav
 
+- id: T-24-026
+  rid: pozyciya
+  chomu: порада використовувати теги замість відсутної документації
+
 - id: T-25-004
   rid: ne-tverdzhennya
   chomu: загальна характеристика, що всі інструменти роблять те саме
@@ -97,8 +101,7 @@
   chomu: правило керування пам'яттю на платформі ESP32
 
 - id: T-30-079
-  rid: dzherelo-ye
-  shukaty: C Standard, volatile qualifier
+  rid: ne-rozibrav
 
 - id: T-30-001
   rid: ne-rozibrav
@@ -224,11 +227,10 @@
 
 - id: T-41-055
   rid: dzherelo-ye
-  shukaty: BLE advertising interval вплив на пошук пристрою
+  shukaty: Bluetooth Core Specification
 
 - id: T-41-075
-  rid: dzherelo-ye
-  shukaty: BLE кешування структури сервісів телефоном
+  rid: ne-rozibrav
 
 - id: T-41-018
   rid: ne-tverdzhennya
