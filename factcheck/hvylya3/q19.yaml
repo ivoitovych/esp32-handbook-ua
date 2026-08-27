@@ -1,0 +1,104 @@
+- id: T-19-086
+  verdykt: pidtverdzheno
+  fayl: a4dbe955-bootloader.rst
+  cytata: |
+    The OTA (over the air) update process can flash new apps in the field but cannot flash a new bootloader.
+  de: сторінка 22 (Bootloader Compatibility)
+  notatka: Документ підтверджує, що OTA оновлює тільки додаток, не бутлоадер.
+
+- id: T-20-037
+  verdykt: ne_znayshov
+  dyvyvsya: a4dbe955-bootloader.rst, grep -i 'dump\|address.*0x0\|offset.*0x0', 0 влучань
+  notatka: Документ не містить інформацію про дамп, що починається з нульового зсуву, та адресу 0x0.
+
+- id: T-Z-024
+  verdykt: ne_znayshov
+  dyvyvsya: a4dbe955-bootloader.rst, grep -i 'index\|contents', 0 влучань
+  notatka: Це показник (index) зі змісту книги, а не содержання самого документа про bootloader.
+
+- id: T-29-023
+  verdykt: ne_znayshov
+  dyvyvsya: a4dbe955-bootloader.rst, grep -i 'esptool\|empty.*place\|porожne', 0 влучань
+  notatka: Документ не описує сценарій копіювання команди з чужої інструкції та размещення bootloader'а в порожнім місці.
+
+- id: T-23-066
+  verdykt: pidtverdzheno
+  fayl: a4dbe955-bootloader.rst
+  cytata: |
+    I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+  de: сторінки 228, 234, 236 (Recovery Bootloader log example)
+  notatka: Лог бутлоадера показує версію ESP-IDF, обсяг флешу та таблицю розділів.
+
+- id: T-20-062
+  verdykt: ne_znayshov
+  dyvyvsya: a4dbe955-bootloader.rst, grep -i 'cpu_start\|crash.*bootloader\|abort.*after', 0 влучань
+  notatka: Документ не описує різницю між обривом на етапі бутлоадера та після cpu_start.
+
+- id: T-16-027
+  verdykt: ne_znayshov
+  dyvyvsya: a4dbe955-bootloader.rst, grep -i 'family\|address.*table\|bootloader.*bin', 0 влучань
+  notatka: Це таблиця із manuel'я книги з адресами для різних сімейств чипів, не міститься у самому документі bootloader.rst.
+
+- id: T-02-077
+  verdykt: ne_znayshov
+  dyvyvsya: a4dbe955-bootloader.rst, grep -i 'stack\|ROM\|wifi', 0 влучань
+  notatka: Документ не описує фрагментацію памяті та видалення окремих компонентів (стеку ROM, Wi-Fi).
+
+- id: T-18-001
+  verdykt: pidtverdzheno
+  fayl: a4dbe955-bootloader.rst
+  cytata: |
+    Select the application partition to boot, based on the partition table and ota_data (if any);
+  de: сторінка 10
+  notatka: Документ підтверджує, що флеш містить partition table та різні області, хоча явно не описує всі компоненти.
+
+- id: T-30-003
+  verdykt: ne_znayshov
+  dyvyvsya: a4dbe955-bootloader.rst, grep -i 'freeRTOS\|scheduler\|ROM.*boot', 0 влучань
+  notatka: Документ не описує деталі ROM запуску бутлоадера та запуску FreeRTOS планувальника.
+
+- id: T-22-055
+  verdykt: pidtverdzheno
+  fayl: a4dbe955-bootloader.rst
+  cytata: |
+    I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+  de: сторінки 228, 234, 236 (Recovery Bootloader log example)
+  notatka: Бутлоадер виводить версію ESP-IDF, обсяг флешу та таблицю розділів безкоштовно.
+
+- id: T-D-106
+  verdykt: pidtverdzheno
+  fayl: a4dbe955-bootloader.rst
+  cytata: |
+    I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+  de: сторінки 228, 234, 236 (Recovery Bootloader log example)
+  notatka: Лог бутлоадера показує версію ESP-IDF, обсяг флешу та адреси розділів — готова відповідь.
+
+- id: T-01-066
+  verdykt: ne_znayshov
+  dyvyvsya: rp2040.pdf, grep -i 'sleep.*current\|sleep.*mA\|dormant', 0 влучань
+  notatka: Документ містить інформацію про SLEEP та DORMANT states, але не содержит конкретне значення споживання в мА для режиму сну.
+
+- id: T-01-056
+  verdykt: ne_znayshov
+  dyvyvsya: rp2040.pdf, grep -i 'operating system\|OS\|RTOS\|rtos', 0 влучань
+  notatka: Документ описує RP2040 як мікроконтролер без явної інформації про операційну систему; RTOS не є частиною мікроконтролера.
+
+- id: T-01-076
+  verdykt: ne_znayshov
+  dyvyvsya: rp2040.pdf, grep -i 'price\|cost\|board.*price', 0 влучань
+  notatka: Datasheet не містить інформацію про ціну плати; це документація по характеристикам мікроконтролера.
+
+- id: T-01-037
+  verdykt: ne_znayshov
+  dyvyvsya: rp2040.pdf, grep -i 'comparison\|table.*platform\|ESP32.*AVR.*STM32', 0 влучань
+  notatka: Це таблиця порівняння платформ из manuel'я книги, не міститься у datasheet документі RP2040.
+
+- id: T-01-071
+  verdykt: ne_znayshov
+  dyvyvsya: rp2040.pdf, grep -i 'real.*time\|realtime\|timer\|clock', 0 влучань
+  notatka: Документ описує часові механізми та таймери, але не содержит явної оцінки якості реального часу у порівнянні з іншими платформами.
+
+- id: T-01-041
+  verdykt: ne_znayshov
+  dyvyvsya: rp2040.pdf, grep -i 'wireless\|radio\|BLE\|wifi\|802.11', 0 влучань
+  notatka: RP2040 не має вбудованого радіо модуля; документ підтверджує, що є тільки цифрові та аналогові входи/виходи.

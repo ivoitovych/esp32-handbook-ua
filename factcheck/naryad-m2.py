@@ -23,7 +23,11 @@
 Тобто наряд не забороняє брехати. Він робить брехню дорожчою за
 роботу, а не дешевшою.
 
-    factcheck/naryad-m2.py <скільки> <насіння>
+    factcheck/naryad-m2.py <скільки> <насіння> [<ім'я-хвилі>]
+
+Ім'я хвилі стає ім'ям файлу. Без нього наряд писався в те саме місце,
+і хвиля 3 затерла наряд хвилі 2 — а наряд це запис про те, ЯК здобуто
+докази, тож затирати його означає втратити пояснення до них.
 """
 from __future__ import annotations
 
@@ -80,27 +84,114 @@ KLYUCHI: list[tuple[str, str]] = [
     # із них поодинці. Перша хвиля дала на цьому одинадцять
     # `ne_znayshov` поспіль — не тому, що джерела немає, а тому, що
     # наряд показав половину джерела.
-    (r"esptool|прошив|flash_id|read_flash",
+    (r"esptool\b|flash[_-]id|read[_-]flash|write[_-]flash|erase[_-]flash",
      "basic-commands.rst|basic-options.rst|advanced-options.rst"),
     (r"\bGPIO\b", "gpio.rst"),
     (r"\beFuse\b", "burn-efuse-cmd"),
     (r"монітор|idf\.py monitor", "idf-monitor.rst"),
-    (r"ESP32-C3", "esp32c3.inc"),
+    # Додано після докачування 2026-08-27. Урок дорожчий за самі ключі:
+    # завантажити документ мало. Я докачав тринадцять даташитів, і
+    # число одиниць «з файлом у кеші» не зрушило взагалі — бо ключа
+    # для них не було, і підбір їх не бачив. Кеш і підбір — це одна
+    # річ у двох місцях, і поповнювати треба обидва.
+    (r"\bESP8266\b|\bESP-12\b|\bESP-01\b", "esp8266"),
+    (r"\bESP32-S3-WROOM-1\b", "esp32-s3-wroom-1"),
+    (r"\bESP32-C3-MINI-1\b", "esp32-c3-mini-1"),
+    (r"\bESP32-WROVER\b", "esp32-wrover-e"),
+    (r"\bESP32-WROOM-32D\b", "esp32-wroom-32d"),
+    (r"\bTCA9548A?\b", "tca9548a"),
+    (r"\bULN2003A?\b", "uln2003"),
+    (r"\bADS1256\b", "ads1256"),
+    (r"\bESP32-P4\b", "esp32-p4"),
+    (r"\bESP32-S2\b", "esp32-s2_datasheet"),
+    (r"\bESP32-S3\b", "esp32-s3_datasheet"),
+    (r"\bESP32-C5\b", "esp32-c5"),
+    (r"ESP32-C3", "esp32-c3_datasheet|esp32c3.inc"),
 ]
+
+
+# --- Другий закон: названий документ має бути ЗДАТНИЙ відповісти -----
+#
+# Хвиля 2 дала 78 «не знайшов» зі 98, і половина з них — не відсутність
+# джерела, а мій хибний підбір. Ключ `GPIO` є і в твердженні про
+# залізо, і в назві `gpio.rst`; збіг є, відповіді немає. Черга 1 дала
+# 11 із 11 «не знайшов» саме так.
+#
+# Різниця, яку треба провести: посібник з API відповідає ПРО API —
+# які функції, які аргументи, який порядок викликів. Твердження про
+# залізо — скільки контролерів, який пін, яка напруга — там не
+# описане й не має бути.
+
+ZALIZO = re.compile(
+    r"\d+\s*(?:МГц|кГц|Гц|мА|мкА|А\b|В\b|мВ|КБ|МБ|ГБ|°C|Ом|кОм|мс|мкс|нс)"
+    r"|GPIO\s*\d+|пін\w*\s+\d+|розпіновк|корпус|кристал|кварц"
+    r"|даташит|datasheet|модул\w+\s+(?:на|з)\b|напруг|струм|температур", re.I)
+
+API = re.compile(
+    r"`(?:esp_|xTask|vTask|nvs_|i2c_|spi_|gpio_|uart_|CONFIG_)[A-Za-z0-9_]*`"
+    r"|menuconfig|Kconfig|ESP_ERROR_CHECK|виклик\w*\s+функц|аргумент", re.I)
+
+# Документ-посібник з API впізнається за розширенням і теками ESP-IDF.
+POSIBNYK = re.compile(r"\.rst$", re.I)
+DANI = re.compile(r"\.(pdf|inc|csv)$|soc_caps|io_mux|spi_pins|_defs\.h$", re.I)
+
+
+def prydatnyy(tekst: str, fayl: str) -> bool:
+    """Чи здатен цей документ відповісти на це твердження.
+
+    Правило одне й навмисно грубе: твердження про залізо, у якому
+    немає жодної ознаки API, до посібника з API не йде. Помилка тут
+    коштує одну пропущену одиницю; помилка в інший бік коштує
+    помічникові повний обхід документа заради «не знайшов».
+    """
+    if POSIBNYK.search(fayl) and ZALIZO.search(tekst) and not API.search(tekst):
+        return False
+    return True
 
 
 def kesh_fayly() -> list[str]:
     return sorted(p.name for p in KESH.iterdir() if p.is_file())
 
 
+# Ключ, що називає ДЕТАЛЬ, завжди конкретніший за ключ, що називає
+# тему. `DS18B20` каже, який саме документ відповість; `GPIO` каже
+# лише, про що мова.
+#
+# Спершу підбір брав ПЕРШИЙ ключ, що збігся, а перелік ішов у довільному
+# порядку — і загальні ключі стояли попереду. Наслідок побачив,
+# докачавши тринадцять даташитів: число одиниць «з файлом у кеші»
+# зрушило з 426 на 428, і лише два нових документи взагалі знайшли
+# собі одиниці. Решту одинадцять перехопили `бутлоадер`, `скидання`,
+# `GPIO` — ключі, що стояли вище.
+#
+# Ознака конкретності проста й перевірювана: у взірці є цифра,
+# тобто номер деталі. Тематичні слова цифр не містять.
+SPEC = re.compile(r"\d")
+
+
 def pidibraty(tekst: str, fayly: list[str]) -> list[str]:
-    """Файли першого ключа, що збігся. Ключ може вести до кількох."""
+    """Файли найконкретнішого ключа, що збігся.
+
+    Два проходи: спершу ключі з номером деталі, потім тематичні.
+    Порядок усередині кожного рівня лишається як у переліку.
+    """
+    for riven in (True, False):
+        z = poshuk_riven(tekst, fayly, riven)
+        if z:
+            return z
+    return []
+
+
+def poshuk_riven(tekst: str, fayly: list[str], spec: bool) -> list[str]:
     for vzir, chastky in KLYUCHI:
+        if bool(SPEC.search(vzir)) != spec:
+            continue
         if re.search(vzir, tekst, re.I):
             znaydeni = []
             for chastka in chastky.split("|"):
                 for f in fayly:
-                    if chastka.lower() in f.lower() and f not in znaydeni:
+                    if (chastka.lower() in f.lower() and f not in znaydeni
+                            and prydatnyy(tekst, f)):
                         znaydeni.append(f)
             if znaydeni:
                 return znaydeni
@@ -110,6 +201,7 @@ def pidibraty(tekst: str, fayly: list[str]) -> list[str]:
 def main() -> int:
     skilky = int(sys.argv[1]) if len(sys.argv) > 1 else 60
     nasinnya = int(sys.argv[2]) if len(sys.argv) > 2 else 20260827
+    imya = sys.argv[3] if len(sys.argv) > 3 else "hvylya2"
 
     fayly = kesh_fayly()
     vsi = []
@@ -138,7 +230,7 @@ def main() -> int:
     print(f"  без файлу (в наряд НЕ йдуть): {bez_faylu}")
     print(f"  відібрано: {len(vybrani)}, насіння {nasinnya}")
 
-    out = ROOT / "factcheck" / "naryad-m2-hvylya2.yaml"
+    out = ROOT / "factcheck" / ("naryad-m2-%s.yaml" % imya)
     import yaml
     out.write_text(yaml.dump(vybrani, allow_unicode=True, sort_keys=False,
                              default_flow_style=False, width=100),

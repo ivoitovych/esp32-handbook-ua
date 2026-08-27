@@ -146,7 +146,7 @@
 
 ---
 
-<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:11 klas:F -->
+<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:11 klas:A -->
 ### T-K05-008 · komirka · рядок 11
 
 **Книга каже, дослівно:**
@@ -155,7 +155,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Дослівно з джерела:**
+  > A single {IDF_TARGET_NAME}'s flash can contain multiple apps, as well as many different kinds of data (calibration data, filesystems, parameter storage, etc). For this reason a partition table is flashed
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ описує partition table як таблицю розділів
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -460,8 +466,8 @@
 - **Дослівно з джерела:**
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000"}
 - **Спосіб і дата:** curl esptool boot-mode-selection.rst, grep BOOTLOADER_OFFSET, 2026-08-26
-- **Нотатка:** Текст T-17-096 називає адресу 0x1000 для classic. Джерело підтверджує: esp32="0x1000".
-- **Прохід:** m2-83-esptool
+- **Нотатка:** Таблиця розділу 16 показує адреси. Для ESP32: 0x1000. Джерело вказує: esp32="0x1000". | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-82-boot-flesh
 
 ---
 

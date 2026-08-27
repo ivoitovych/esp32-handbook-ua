@@ -1,0 +1,123 @@
+- id: T-49-064
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'camera', 0 влучань
+
+- id: T-30-052
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/56497005-external-ram.rst
+  cytata: |
+    This allows any application to use the external RAM without having to rewrite the code to use ``heap_caps_malloc(..., MALLOC_CAP_SPIRAM)``.
+  de: рядок 104
+  notatka: Документ каже, що malloc уже вміє віддавати PSRAM.
+
+- id: T-02-145
+  verdykt: sperechayetsya
+  fayl: dzherela-kesh/56497005-external-ram.rst
+  cytata: |
+    {IDF_TARGET_PSRAM_VADDR_SIZE:default="Value not updated", esp32="4 MB", esp32s2="10.5 MB", esp32s3="32 MB", esp32p4="64 MB"}
+  de: рядок 12
+  notatka: ESP32P4 також підтримує PSRAM, а не тільки classic, S2, S3.
+
+- id: T-A-067
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/56497005-external-ram.rst
+  cytata: |
+    PSRAM access speed may be faster than flash access, so the overall application performance may be better. For example, if the PSRAM is an Octal mode (8-line PSRAM) and is configured to 80 MHz, then it is faster than a Quad flash (4-line flash) which is configured to 80 MHz.
+  de: рядок 183, розділ Benefits of XiP from PSRAM
+  notatka: Документ згадує octal PSRAM на цих чипах.
+
+- id: T-08-018
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'wrover', 0 влучань
+
+- id: T-46-085
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'lvgl\|frame buffer\|display', 0 влучань
+
+- id: T-03-069
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep '0x400d\|0x3ffb\|0x3f4', 0 влучань
+
+- id: T-02-122
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'usb-jtag\|two cores\|dual core', 0 влучань
+
+- id: T-A-065
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/56497005-external-ram.rst
+  cytata: |
+    The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
+  de: рядок 14
+  notatka: Документ згадує обмеження для флеш/PSRAM.
+
+- id: T-G-159
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/56497005-external-ram.rst
+  cytata: |
+    external PSRAM (Psuedostatic RAM) memory
+  de: рядок 14
+  notatka: Хоча написано як "Psuedostatic" без дефіса, це той же термін.
+
+- id: T-30-050
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/56497005-external-ram.rst
+  cytata: |
+    The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
+  de: рядок 14
+  notatka: Документ описує, як PSRAM поводиться в контексті обмежень.
+
+- id: T-08-011
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'wrover\|features', 0 влучань
+
+- id: T-23-015
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'wrover\|practicality\|practical meaning', 0 влучань
+
+- id: T-H-014
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/56497005-external-ram.rst
+  cytata: |
+    For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
+  de: рядок 41
+  notatka: Документ посилається на datasheet для деталей про PSRAM.
+
+- id: T-02-097
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/56497005-external-ram.rst
+  cytata: |
+    For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
+  de: рядок 41
+  notatka: Документ адресує差異 в розпінуванні залежно від конфігурації.
+
+- id: T-46-049
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'partial buffer\|classic esp32', 0 влучань
+
+- id: T-A-041
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'pin 16\|pin 17\|wrover', 0 влучань
+
+- id: T-K01-009
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'wrover\|triage', 0 влучань
+
+- id: T-49-057
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'camera\|mandatory\|solution', 0 влучань
+
+- id: T-49-034
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'frame.*rate\|framerate\|fps', 0 влучань
+
+- id: T-49-035
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'limited.*frame\|small frame.*buffer', 0 влучань
+
+- id: T-08-019
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'module.*gpio.*unavailable\|pins.*occupied', 0 влучань
+
+- id: T-K09-016
+  verdykt: ne_znayshov
+  dyvyvsya: 56497005-external-ram.rst, grep -i 'pin.*26.*32\|don.*touch', 0 влучань

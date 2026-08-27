@@ -1,0 +1,112 @@
+- id: T-B-148
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'noise|шум|averaging|усереднення', 0 влучань
+
+- id: T-A-034
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'gpio 14|pin 14|ADC2_6', 0 влучань
+
+- id: T-A-049
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'gpio 27|pin 27|ADC2_7', 0 влучань
+
+- id: T-49-053
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'noisy|non-linear|нелінійний', 0 влучань
+
+- id: T-29-057
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'non-linear|нелінійний', 0 влучань
+
+
+- id: T-03-060
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'ULP capabilities|ULP can do', 0 влучань
+
+- id: T-01-031
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'linear|noisy|noise|шумн', 0 влучань
+
+- id: T-B-149
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i '16.*64|16-64|sixteen.*sixty', 0 влучань
+
+- id: T-04-012
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'DAC.*touch|touch.*DAC|hard.*wired', 0 влучань
+
+- id: T-B-142
+  verdykt: pidtverdzheno
+  fayl: 66dc1dae-adc_oneshot.rst
+  cytata: |
+    ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has provided protection between the Wi-Fi driver and ADC oneshot mode driver.
+  de: Hardware Limitations section
+  notatka: Документ підтверджує конфлікт ADC2 з Wi-Fi.
+
+
+- id: T-B-150
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'раздел 33|section 33|noise', 0 влучань
+
+- id: T-B-147
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'раздел 33|section 33|linear', 0 влучань
+
+- id: T-A-030
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'gpio 13|pin 13|ADC2_4', 0 влучань
+
+- id: T-33-092
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'linear|nonlinear|multiply|множен', 0 влучань
+
+- id: T-E-079
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'ADS1256|MCP3208|external.*adc', 0 влучань
+
+
+- id: T-A-046
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'gpio 25|pin 25|ADC2_8', 0 влучань
+
+- id: T-28-055
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'analog signal|noise|line|шум', 0 влучань
+
+- id: T-COM-063
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'LDO|regulator|power supply', 0 влучань
+
+- id: T-A-055
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'gpio 34|gpio 39|ADC1 pin', 0 влучань
+
+- id: T-K08-028
+  verdykt: pidtverdzheno
+  fayl: 66dc1dae-adc_oneshot.rst
+  cytata: |
+    This function may fail when the ADC is in use by other drivers/peripherals, and return :c:macro:`ESP_ERR_TIMEOUT`. Under this condition, the ADC raw result is invalid.
+  de: Read Conversion Result section
+  notatka: Документ підтверджує, що ADC може повертати неправильні дані.
+
+
+- id: T-A-038
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'gpio 15|pin 15|ADC2_3', 0 влучань
+
+- id: T-B-143
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'move to adc1|transfer to adc1', 0 влучань
+
+- id: T-G-147
+  verdykt: pidtverdzheno
+  fayl: 66dc1dae-adc_oneshot.rst
+  cytata: |
+    Analog to Digital Converter (ADC)
+  de: Title
+  notatka: Документ використовує правильну термінологію.
+
+- id: T-B-144
+  verdykt: ne_znayshov
+  dyvyvsya: 66dc1dae-adc_oneshot.rst, grep -i 'section 07|section 33|chapter 7|chapter 33', 0 влучань
+

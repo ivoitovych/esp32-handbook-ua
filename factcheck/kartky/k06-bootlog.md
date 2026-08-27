@@ -414,7 +414,7 @@
 
 ---
 
-<!-- fc id:T-K06-021 sha:21e68d08 src:kartky/k06-bootlog.md:22 klas:F -->
+<!-- fc id:T-K06-021 sha:21e68d08 src:kartky/k06-bootlog.md:22 klas:B -->
 ### T-K06-021 · komirka · рядок 22
 
 **Книга каже, дослівно:**
@@ -423,7 +423,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://github.com/espressif/esp-idf/blob/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h — RESET_REASON enum, значення 12
+- **Дослівно з джерела:**
+  > SW_CPU_RESET           = 12,    /**<12, Software reset CPU*/
+- **Спосіб і дата:** GitHub ESP-IDF, rom/rtc.h, 2026-08-27
+- **Нотатка:** Код 0xc (12 у десятковій) — це SW_CPU_RESET, програмне скидання ядра. Частина про «часто після паніки» логічна: паніка часто викликається assert() або explicit reset, який видається як 0xc. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-95-vybirka
 
 ---
 
@@ -463,7 +469,7 @@
 
 ---
 
-<!-- fc id:T-K06-023 sha:00c236fb src:kartky/k06-bootlog.md:23 klas:F -->
+<!-- fc id:T-K06-023 sha:00c236fb src:kartky/k06-bootlog.md:23 klas:A -->
 ### T-K06-023 · komirka · рядок 23
 
 **Книга каже, дослівно:**
@@ -472,7 +478,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ESP-IDF компонент esp_system, rtc.h: https://github.com/espressif/esp-idf/blob/master/components/esp_system/include/esp_system/rtc.h
+- **Дослівно з джерела:**
+  > RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+- **Спосіб і дата:** curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
+- **Нотатка:** Код 0xf (15) прямо визначений як RTCWDT_BROWN_OUT_RESET. Причина — нестабільне живлення. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-96-vybirka
 
 ---
 

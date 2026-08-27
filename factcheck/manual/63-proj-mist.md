@@ -1205,7 +1205,7 @@
 
 ---
 
-<!-- fc id:T-63-061 sha:05909696 src:manual/63-proj-mist.md:201 klas:F -->
+<!-- fc id:T-63-061 sha:05909696 src:manual/63-proj-mist.md:201 klas:A -->
 ### T-63-061 · proza · рядок 201
 
 **Книга каже, дослівно:**
@@ -1214,7 +1214,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Дослівно з джерела:**
+  > - :cpp:member:`twai_onchip_node_config_t::flags::enable_listen_only`: Configures the node in listen-only mode. In this mode, the node only receives and does not transmit any dominant bits, including ACK and error frames.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Місце в документі: рядок 91
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1472,7 +1478,7 @@
 
 ---
 
-<!-- fc id:T-63-080 sha:20ab681f src:manual/63-proj-mist.md:251 klas:F -->
+<!-- fc id:T-63-080 sha:20ab681f src:manual/63-proj-mist.md:251 klas:A -->
 ### T-63-080 · proza · рядок 251
 
 **Книга каже, дослівно:**
@@ -1481,6 +1487,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Дослівно з джерела:**
+  > The TWAI controller hardware can filter messages based on their ID to reduce software and hardware overhead, thereby improving node efficiency.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує фільтрацію за ідентифікаторами на боці CAN.
+- **Прохід:** m2-hvylya3
 
 ---

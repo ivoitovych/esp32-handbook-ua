@@ -1,0 +1,47 @@
+- id: S3 та C3 — USB-контролер на кристалі
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: |
+    – USB Serial/JTAG controller
+  de: розділ Features
+  notatka: Обидва контролери присутні на ESP32-S3 та ESP32-C3
+
+- id: GPIO5 для поплавкового вимикача на ESP32-S3
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, GPIO5 описано як звичайний GPIO з функціями ADC1_CH4 та TOUCH5, але про поплавковий вимикач не йдеться
+
+- id: GPIO0 — ключовий пін для вибору режиму завантаження на ESP32 classic та S3
+  verdykt: pidtverdzheno
+  fayl: esp32-s3_datasheet_en.pdf
+  cytata: |
+    GPIO0 and GPIO46 control the boot mode after the reset is released.
+  de: розділ 3.1 Chip Boot Mode Control
+  notatka: GPIO0 є ключовим пином для вибору режиму завантаження
+
+- id: SX1262 ефективніший за SX1276 — числа не отримано
+  verdykt: ne_znayshov
+  dyvyvsya: sx1276.pdf, документ містить лише SX1276/SX1277/SX1278/SX1279, але SX1262 не згадується, тому порівняння неможливо
+
+- id: LoRa SX127x і SX126x — параметри модуляції
+  verdykt: pidtverdzheno
+  fayl: sx1276.pdf
+  cytata: |
+    The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving significantly longer
+  de: розділ 4.1 The LoRaTM Modem
+  notatka: SX1276 підтримує LoRa модуляцію з розширювачами (spreading factors 6-12)
+
+- id: SPI витримує десятки мегагерц
+  verdykt: pidtverdzheno
+  fayl: 399b50f6-spi_master.rst
+  cytata: |
+    Allows signals with clock frequencies only up to 40 MHz, as opposed to 80 MHz if IO_MUX pins are used.
+  de: розділ про GPIO matrix
+  notatka: 40 MHz та 80 MHz відповідають "десяткам мегагерц"
+
+- id: Дисплеї — зсув SH1106 і адреси I²C-модулів
+  verdykt: pidtverdzheno
+  fayl: 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  cytata: |
+    should be removed for SH1106
+  de: рядок коментаря в коді
+  notatka: У драйвері є окремі функції для SH1106 (u8x8_d_sh1106_128x64_noname) зі своїм setup, що відрізняється від SSD1306

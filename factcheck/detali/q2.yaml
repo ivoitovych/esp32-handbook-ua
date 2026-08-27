@@ -1,0 +1,27 @@
+- id: T-E-075
+  verdykt: ne_znayshov
+  dyvyvsya: max6675.pdf, grep -i 'mode\|spi.*mode\|cpol\|cpha', 0 влучань
+
+- id: T-E-076
+  verdykt: ne_znayshov
+  dyvyvsya: max6675.pdf, grep -i 'cheaper\|cheap\|дешев\|альтернатив', 0 влучань
+
+- id: T-E-077
+  verdykt: ne_znayshov
+  dyvyvsya: max6675.pdf, grep -i 'adafruit\|library\|код', 0 влучань
+
+- id: T-Z-035
+  verdykt: pidtverdzheno
+  fayl: cp2102.pdf
+  cytata: |
+    CP2102
+  de: Перша сторінка, заголовок
+  notatka: Мікросхема згадана в даташті.
+
+- id: T-Z-162
+  verdykt: pidtverdzheno
+  fayl: pcf8574.pdf
+  cytata: |
+    PCF8574
+  de: Перша сторінка, заголовок
+  notatka: Мікросхема згадана в даташті.

@@ -1,0 +1,83 @@
+- id: T-K15-034
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'identical|twenty|serial|unique|personality', 0 влучань
+
+- id: T-17-079
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'radio|calibration.*radio|wifi.*credentials', 0 влучань
+
+- id: T-17-053
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'read.*separate.*section|read.*chunk|read.*nvs.*only', 0 влучань
+
+- id: T-20-072
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'foreign.*device|other.*device|stranger|first.*time', 0 влучань
+
+- id: T-39-054
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'provisioning|input.*provisioning', 0 влучань
+
+- id: T-32-065
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'write.*stops|write.*pause|write.*execution|write.*halt', 0 влучань
+
+- id: T-21-096
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'common.*image|shared.*image|unique.*nvs|different.*layers', 0 влучань
+
+- id: T-61-056
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'keys.*read.*nvs|read.*keys.*nvs|encryption.*keys', 0 влучань
+
+- id: T-18-051
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'one.*image.*hundred|single.*image.*many|image.*multiple.*boards', 0 влучань
+
+- id: T-K08-047
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'erased.*calibration|common.*cause|reason|symptom', 0 влучань
+
+- id: T-50-068
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'key.*code|hardcoded.*key|five.*minute', 0 влучань
+
+- id: T-50-027
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'encryption.*key.*flash|opentext|unencrypted.*key', 0 влучань
+
+- id: T-21-046
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'unique.*configuration|per.*instance|instance.*specific', 0 влучань
+
+- id: T-18-054
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'corrupted.*nvs|damaged.*response|erase.*reinit', 0 влучань
+
+- id: T-63-054
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'parameter.*store|settings.*store|store.*configuration', 0 влучань
+
+- id: T-50-026
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    data can still be stored in encrypted form if NVS encryption is used together with {IDF_TARGET_NAME} flash encryption
+  de: строка 97, в розділі Security, Tampering, and Robustness
+  notatka: Документ підтверджує, що шифрування NVS має сенс разом з Flash Encryption.
+
+- id: T-50-022
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'default.*plaintext|default.*unencrypted|default.*open.*text', 0 влучань
+
+- id: T-18-122
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'survive.*update|survive.*firmware|persist.*update|across.*update', 0 влучань
+
+- id: T-24-040
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'parser|third.*party|decode.*format', 0 влучань
+
+- id: T-18-060
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep -i 'overflow|full.*nvs|unexpected', 0 влучань

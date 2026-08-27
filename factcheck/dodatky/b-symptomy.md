@@ -1698,7 +1698,7 @@
 
 ---
 
-<!-- fc id:T-B-071 sha:f20f6420 src:dodatky/b-symptomy.md:50 klas:F -->
+<!-- fc id:T-B-071 sha:f20f6420 src:dodatky/b-symptomy.md:50 klas:A -->
 ### T-B-071 · komirka · рядок 50
 
 **Книга каже, дослівно:**
@@ -1707,7 +1707,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** ESP-IDF компонент esp_system, rtc.h: https://github.com/espressif/esp-idf/blob/master/components/esp_system/include/esp_system/rtc.h
+- **Дослівно з джерела:**
+  > RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not stable*/
+- **Спосіб і дата:** curl з github.com/espressif/esp-idf, grep з rtc.h, 2026-08-26
+- **Нотатка:** Код 0xf (15) прямо визначений як RTCWDT_BROWN_OUT_RESET. Причина — нестабільне живлення. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-96-vybirka
 
 ---
 
@@ -3195,7 +3201,7 @@
 
 ---
 
-<!-- fc id:T-B-134 sha:2f72b877 src:dodatky/b-symptomy.md:75 klas:F -->
+<!-- fc id:T-B-134 sha:2f72b877 src:dodatky/b-symptomy.md:75 klas:A -->
 ### T-B-134 · komirka · рядок 75
 
 **Книга каже, дослівно:**
@@ -3204,7 +3210,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Дослівно з джерела:**
+  > It implements a fault isolation mechanism using transmit and receive error counters (TEC and REC).
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ каже про лічильники помилок TEC та REC.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -3341,7 +3353,7 @@
 
 ---
 
-<!-- fc id:T-B-142 sha:556f1db3 src:dodatky/b-symptomy.md:83 klas:F -->
+<!-- fc id:T-B-142 sha:556f1db3 src:dodatky/b-symptomy.md:83 klas:A -->
 ### T-B-142 · komirka · рядок 83
 
 **Книга каже, дослівно:**
@@ -3350,7 +3362,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/66dc1dae-adc_oneshot.rst
+- **Дослівно з джерела:**
+  > ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has provided protection between the Wi-Fi driver and ADC oneshot mode driver.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує конфлікт ADC2 з Wi-Fi.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -4075,22 +4093,11 @@
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings» і Table 5-3 «DC Characteristics», с. 51
 - **Дослівно з джерела:**
-  > Table 5-1. Absolute Maximum Ratings
-  > Parameter                                    Description              Min    Max   Unit
-  > VDDA, VDD3P3, VDD3P3_RTC,
-  > VDD3P3_CPU, VDD_SDIO                  Allowed input voltage          –0.3    3.6    V
-  > 
-  > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause
-  > permanent damage to the device.
-  > 
-  > Table 5-3. DC Characteristics (3.3 V, 25 °C)
-  > VIH   High-level input voltage    0.75 × VDD   —   VDD + 0.3   V
-  > VIL   Low-level input voltage           –0.3   —   0.25 × VDD  V
-  > 
-  > [2] Maximum VIH = VDD(max) + 0.5 V or 5.5 V, which ever is lower.
-- **Спосіб і дата:** PDF Espressif, кеш `esp32-datasheet.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
-- **Нотатка:** Попередження книги дістає нарешті числову підставу, і вона сильніша за «логіка 3.3 В». Джерело нормує **абсолютний максимум** входу як 3.6 В і прямо каже, що вище — `permanent damage`. П'ять вольтів це перевищення на 1.4 В, тобто не «поза рекомендованим», а поза гранично допустимим.
-Друга половина, потрібна для картки К14: поріг високого рівня — `0.75 × VDD`, тобто близько 2.5 В при 3.3 В живлення. Тому п'ятивольтовий вихід читається як логічна одиниця й «начебто працює» — доки пін не деградує. Це пояснює найпідступніше в цій несправності: вона не миттєва.
+  > Allowed input voltage –0.3 3.6 V
+  > VIH High-level input voltage 0.75 × VDD 1 — VDD 1 + 0.3 V
+  > VIL Low-level input voltage –0.3 — 0.25 × VDD 1 V
+- **Спосіб і дата:** tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Заголовки таблиць і рядок про permanent damage я додавав від себе. Одиниця після VDD — це номер виноски в документі, не множник.
 - **Прохід:** m2-06-napruga-mezhi
 
 ---
@@ -4738,7 +4745,7 @@
 
 ---
 
-<!-- fc id:T-B-218 sha:e667e32e src:dodatky/b-symptomy.md:113 klas:F -->
+<!-- fc id:T-B-218 sha:e667e32e src:dodatky/b-symptomy.md:113 klas:A -->
 ### T-B-218 · komirka · рядок 113
 
 **Книга каже, дослівно:**
@@ -4747,7 +4754,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Дослівно з джерела:**
+  > The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving significantly longer
+- **Спосіб і дата:** наряди «деталі» і «клас C», 2026-08-27; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py
+- **Нотатка:** SX1276 підтримує LoRa модуляцію з розширювачами (spreading factors 6-12) | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Прохід:** m2-detali-klasC
 
 ---
 

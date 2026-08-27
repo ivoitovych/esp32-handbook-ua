@@ -1,0 +1,81 @@
+- id: T-COM-018
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'DHT22\|DHT11\|SHT3x\|recommend', 0 влучань
+
+- id: T-44-005
+  verdykt: pidtverdzheno
+  fayl: 8e2fcbf9-bme280.c
+  cytata: |
+    /*! @file bme280.c
+     * @brief Sensor driver for BME280 sensor
+     */
+  de: рядки 39-41, заголовок файлу
+  notatka: Файл є драйвером BME280, що підтверджує це як реальний модуль.
+
+- id: T-E-007
+  verdykt: pidtverdzheno
+  fayl: 8e2fcbf9-bme280.c
+  cytata: |
+    /* Array to store the pressure, temperature and humidity data read from
+     * the sensor
+     */
+  de: рядки 718-720, коментар у функції bme280_get_sensor_data
+  notatka: Вказує на три вимірювання - тиск, температуру, вологість.
+
+- id: T-E-008
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'library\|registry\|IDF\|Adafruit', 0 влучань
+
+- id: T-45-019
+  verdykt: pidtverdzheno
+  fayl: 8e2fcbf9-bme280.c
+  cytata: |
+    static uint32_t compensate_pressure(const struct bme280_uncomp_data *uncomp_data,
+  de: рядок 1281 та 1332, функція компенсації атмосферного тиску
+  notatka: Вказує на вимірювання атмосферного тиску.
+
+- id: T-59-045
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'resistor\|резистор\|pullup\|pull-up', 0 влучань
+
+- id: T-60-112
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'мілі\|мікро\|consumption\|current', 0 влучань (C файл не містить даних про споживання)
+
+- id: T-60-012
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'quantity\|кількість\|number', 0 влучань
+
+- id: T-13-055
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'adafruit\|lib_deps\|registry', 0 влучань
+
+- id: T-59-071
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'BME280 знайдено\|found and configured', 0 влучань (лог-рядок належить до коду застосування)
+
+- id: T-59-139
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'BME280 знайдено\|found and configured', 0 влучань (те ж саме, що T-59-071)
+
+- id: T-Z-023
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'page\|сторінка\|105\|215', 0 влучань (це числові індекси книги, не тексту драйвера)
+
+- id: T-45-079
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'DHT22\|порівняння\|гірший\|worse', 0 влучань (порівняння сенсорів не міститься у драйвері)
+
+- id: T-45-004
+  verdykt: ne_znayshov
+  dyvyvsya: 8e2fcbf9-bme280.c, grep -i 'DHT22\|SHT3x\|параметри\|порівняння', 0 влучань (порівняння сенсорів не міститься у драйвері)
+
+- id: T-44-054
+  verdykt: pidtverdzheno
+  fayl: 8e2fcbf9-bme280.c
+  cytata: |
+    /* Read the chip-id of bme280 sensor */
+    rslt = bme280_get_regs(BME280_REG_CHIP_ID, &chip_id, 1, dev);
+  de: рядки 418-419, функція ініціалізації датчика
+  notatka: Підтверджує існування регістру ідентифікації, специфічні значення 0xD0/0x60 у заголовному файлі.
+

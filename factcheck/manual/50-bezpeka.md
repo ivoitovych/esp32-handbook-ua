@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-50-026 sha:ecb77fc0 src:manual/50-bezpeka.md:66 klas:F -->
+<!-- fc id:T-50-026 sha:ecb77fc0 src:manual/50-bezpeka.md:66 klas:A -->
 ### T-50-026 · proza · рядок 66
 
 **Книга каже, дослівно:**
@@ -379,7 +379,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Дослівно з джерела:**
+  > data can still be stored in encrypted form if NVS encryption is used together with {IDF_TARGET_NAME} flash encryption
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що шифрування NVS має сенс разом з Flash Encryption.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -512,7 +518,7 @@
 
 ---
 
-<!-- fc id:T-50-036 sha:5da2fab6 src:manual/50-bezpeka.md:89 klas:F -->
+<!-- fc id:T-50-036 sha:5da2fab6 src:manual/50-bezpeka.md:89 klas:A -->
 ### T-50-036 · proza · рядок 89
 
 **Книга каже, дослівно:**
@@ -521,7 +527,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** OTA описано як механізм, через який пристрій отримує дані для оновлення
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -629,7 +641,7 @@
 
 ---
 
-<!-- fc id:T-50-045 sha:ff39a4a9 src:manual/50-bezpeka.md:108 klas:F -->
+<!-- fc id:T-50-045 sha:ff39a4a9 src:manual/50-bezpeka.md:108 klas:A -->
 ### T-50-045 · proza · рядок 108
 
 **Книга каже, дослівно:**
@@ -638,7 +650,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Дослівно з джерела:**
+  > eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will have no effect.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує, що біти пропалюються фізично й не скидаються.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -932,7 +950,7 @@
 
 ---
 
-<!-- fc id:T-50-067 sha:b662f0eb src:manual/50-bezpeka.md:176 klas:F -->
+<!-- fc id:T-50-067 sha:b662f0eb src:manual/50-bezpeka.md:176 klas:A -->
 ### T-50-067 · proza · рядок 176
 
 **Книга каже, дослівно:**
@@ -941,7 +959,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Дослівно з джерела:**
+  > The verification of signed OTA updates can be performed even without enabling hardware secure boot.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ підтверджує наявність механізмів безпеки для OTA.
+- **Прохід:** m2-hvylya3
 
 ---
 

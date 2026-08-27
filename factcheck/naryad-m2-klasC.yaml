@@ -1,0 +1,256 @@
+- id: SX1262 ефективніший за SX1276 — числа не отримано
+  prokhid: m2-03-semtech-lora
+  tekst: SX1262 ефективніший за SX1276 — числа не отримано
+  dzherelo: 'SX1261/SX1262 Datasheet (Semtech), файл у порталі — 60852689.DS_SX1261_2 V2-2.pdf, 100 с.
+    Сторінка виробу: https://www.semtech.com/products/wireless-r'
+  fayl: sx1276.pdf
+  klas: C
+- id: DS3231 і BH1750 — джерела недосяжні з цієї мережі
+  prokhid: m2-09-hc-sr04
+  tekst: DS3231 і BH1750 — джерела недосяжні з цієї мережі
+  dzherelo: DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet Maxim Integrated (нині
+    Analog Devices) — https://www.analog.com/en/products/ds323
+  fayl: bh1750.pdf
+  klas: C
+- id: DS3231 має власну батарейку — джерело недосяжне з цієї мережі
+  prokhid: m2-23-proekty-60-62
+  tekst: DS3231 має власну батарейку — джерело недосяжне з цієї мережі
+  dzherelo: DS3231 Extremely Accurate I2C-Integrated RTC/TCXO/Crystal, datasheet Maxim Integrated (нині
+    Analog Devices) — https://www.analog.com/en/products/ds323
+  fayl: i2c-um10204.pdf
+  klas: C
+- id: CH9102 · Windows — окремий драйвер (не CH340)
+  prokhid: m2-25-pidklyuchennya-09
+  tekst: CH9102 · Windows — окремий драйвер (не CH340)
+  dzherelo: WCH CH9102 / CH9102F datasheet
+  fayl: ch340.pdf
+  klas: C
+- id: CH9102 — окрема пастка (схожий на CH340, але інший драйвер)
+  prokhid: m2-25-pidklyuchennya-09
+  tekst: CH9102 — окрема пастка (схожий на CH340, але інший драйвер)
+  dzherelo: WCH CH9102 / CH9102F datasheet та CH340 datasheet для порівняння
+  fayl: ch340.pdf
+  klas: C
+- id: S3 та C3 — USB-контролер на кристалі
+  prokhid: m2-25-pidklyuchennya-09
+  tekst: S3 та C3 — USB-контролер на кристалі
+  dzherelo: Espressif ESP32-S3 datasheet та ESP32-C3 datasheet
+  fayl: esp32-s3_datasheet_en.pdf
+  klas: C
+- id: CH9102 — окремий драйвер від CH340 (резюме)
+  prokhid: m2-25-pidklyuchennya-09
+  tekst: CH9102 — окремий драйвер від CH340 (резюме)
+  dzherelo: WCH CH9102 / CH9102F datasheet та драйверне забезпечення
+  fayl: ch340.pdf
+  klas: C
+- id: K03 CH9102/CH9102F · Windows окремий драйвер
+  prokhid: m2-26-k03-i-platy
+  tekst: K03 CH9102/CH9102F · Windows окремий драйвер
+  dzherelo: WCH CH9102 datasheet
+  fayl: ch340.pdf
+  klas: C
+- id: Фейковий USB-міст · клони CP2102 і FT232
+  prokhid: m2-26-k03-i-platy
+  tekst: Фейковий USB-міст · клони CP2102 і FT232
+  dzherelo: FTDI datasheet для FT232 та CP2102 datasheet для CP2102
+  fayl: cp2102.pdf
+  klas: C
+- id: Стан GPIO читається один раз при відпусканні скидання
+  prokhid: m2-63-gpio-07
+  tekst: Стан GPIO читається один раз при відпусканні скидання
+  dzherelo: ESP-IDF v5.3 bootloader source
+  fayl: a4dbe955-bootloader.rst
+  klas: C
+- id: GPIO5 для поплавкового вимикача на ESP32-S3
+  prokhid: m2-67-proj-62
+  tekst: GPIO5 для поплавкового вимикача на ESP32-S3
+  dzherelo: не знайшов datasheet ESP32-S3 у dzherela-kesh
+  fayl: esp32-s3_datasheet_en.pdf
+  klas: C
+- id: GPIO5 для поплавкового вимикача на ESP32-C3
+  prokhid: m2-67-proj-62
+  tekst: GPIO5 для поплавкового вимикача на ESP32-C3
+  dzherelo: не знайшов datasheet ESP32-C3 у dzherela-kesh
+  fayl: esp32-c3_datasheet_en.pdf
+  klas: C
+- id: SPI витримує десятки мегагерц
+  prokhid: m2-80-shyny
+  tekst: SPI витримує десятки мегагерц
+  dzherelo: шукати
+  fayl: 399b50f6-spi_master.rst
+  klas: C
+- id: 'ESP32-C3 дешевий, простий, має 400 КБ пам''яті — достатньо для простих '
+  prokhid: m2-90-vybirka
+  tekst: ESP32-C3 дешевий, простий, має 400 КБ пам'яті — достатньо для простих проєктів
+  dzherelo: ESP32-C3 datasheet або ESP-IDF документація про характеристики чипів — не знайдено в dzherela-kesh
+    конкретного документа з 400 КБ
+  fayl: esp32-c3_datasheet_en.pdf
+  klas: C
+- id: На ESP32-C3 з 400 КБ два одночасні TLS-з'єднання створюють помітне нав
+  prokhid: m2-90-vybirka
+  tekst: На ESP32-C3 з 400 КБ два одночасні TLS-з'єднання створюють помітне навантаження
+  dzherelo: ESP-IDF Programming Guide, mbedTLS memory footprint / ESP-TLS — оцінка пам'яті на з'єднання;
+    цитати не дістав
+  fayl: esp32-c3_datasheet_en.pdf
+  klas: C
+- id: Помилка 0xc (SW_CPU_RESET) — типово після паніки
+  prokhid: m2-91-vybirka
+  tekst: Помилка 0xc (SW_CPU_RESET) — типово після паніки
+  dzherelo: ESP32 документація про режими скидання та обробку помилок; Практичний досвід налагодження
+    паніки ESP32
+  fayl: 569e266f-fatal-errors.rst
+  klas: C
+- id: 'T-02-108: ESP32-C5 з Wi-Fi у двох діапазонах'
+  prokhid: m2-92-vybirka
+  tekst: 'T-02-108: ESP32-C5 з Wi-Fi у двох діапазонах'
+  dzherelo: Espressif Systems, ESP32-C5 Series Datasheet
+  fayl: esp32-c5_datasheet_en.pdf
+  klas: C
+- id: 'Дешево і масово: C3 з 400 КБ SRAM для простих задач'
+  prokhid: m2-93-vybirka
+  tekst: 'Дешево і масово: C3 з 400 КБ SRAM для простих задач'
+  dzherelo: ESP32-C3 Datasheet — розмір SRAM у специфікаціях
+  fayl: esp32-c3_datasheet_en.pdf
+  klas: C
+- id: 'T-41-044: Для BLE беріть NimBLE, C3 має 400 КБ'
+  prokhid: m2-94-vybirka
+  tekst: 'T-41-044: Для BLE беріть NimBLE, C3 має 400 КБ'
+  dzherelo: ESP32-C3 Technical Specifications, NimBLE vs Bluedroid stack size comparison (standard Espressif
+    documentation)
+  fayl: esp32-c3_datasheet_en.pdf
+  klas: C
+- id: GPIO12 з високим рівнем — правильне налаштування на модулях з 1.8В фле
+  prokhid: m2-95-vybirka
+  tekst: GPIO12 з високим рівнем — правильне налаштування на модулях з 1.8В флешем
+  dzherelo: 'ESP32-WROOM-32 та подібні модулі: datasheet від Espressif'
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  klas: C
+- id: Wi-Fi 5 ГГц доступний тільки на ESP32-C5
+  prokhid: m2-95-vybirka
+  tekst: Wi-Fi 5 ГГц доступний тільки на ESP32-C5
+  dzherelo: ESP32-C5 datasheet від Espressif
+  fayl: esp32-c5_datasheet_en.pdf
+  klas: C
+- id: ESP32-C3 має 400 КБ SRAM — це головне обмеження
+  prokhid: m2-95-vybirka
+  tekst: ESP32-C3 має 400 КБ SRAM — це головне обмеження
+  dzherelo: ESP32-C3 datasheet від Espressif
+  fayl: esp32-c3_datasheet_en.pdf
+  klas: C
+- id: DS3231 та MPU6050 мають однакову I2C адресу 0x68
+  prokhid: m2-95-vybirka
+  tekst: DS3231 та MPU6050 мають однакову I2C адресу 0x68
+  dzherelo: DS3231 Real-Time Clock datasheet — доступний від виробника; MPU-6050 Six-Axis Gyro and Accelerometer
+    datasheet
+  fayl: mpu6050.pdf
+  klas: C
+- id: T-02-135 — Мережа 5 ГГц, чип C5
+  prokhid: m2-96-vybirka
+  tekst: T-02-135 — Мережа 5 ГГц, чип C5
+  dzherelo: Специфікація ESP32-C5 від Espressif (https://www.espressif.com)
+  fayl: esp32-c5_datasheet_en.pdf
+  klas: C
+- id: T-23-023 — Суфікс модуля кодує обсяг флешу й PSRAM
+  prokhid: m2-96-vybirka
+  tekst: T-23-023 — Суфікс модуля кодує обсяг флешу й PSRAM
+  dzherelo: Специфікація маркування модулів ESP32 від Espressif (https://www.espressif.com)
+  fayl: 56497005-external-ram.rst
+  klas: C
+- id: Октальна PSRAM на S3 використовує п'ять додаткових пінів
+  prokhid: m2-97-vybirka
+  tekst: Октальна PSRAM на S3 використовує п'ять додаткових пінів
+  dzherelo: ''
+  fayl: 56497005-external-ram.rst
+  klas: C
+- id: Дамп флешу починається з адреси 0x0 і містить бутлоадер
+  prokhid: m2-97-vybirka
+  tekst: Дамп флешу починається з адреси 0x0 і містить бутлоадер
+  dzherelo: esptool.py documentation, розділ read_flash / basic-commands
+  fayl: a4dbe955-bootloader.rst
+  klas: C
+- id: 'SCL пін розпиновки I2C: GPIO22 на ESP32 classic та GPIO9 на ESP32-S3'
+  prokhid: m2-98-vybirka
+  tekst: 'SCL пін розпиновки I2C: GPIO22 на ESP32 classic та GPIO9 на ESP32-S3'
+  dzherelo: GPIO матриця в esp_idf, I2C драйвер
+  fayl: i2c-um10204.pdf
+  klas: C
+- id: 'Код помилки 0xc: програмне скидання ядра'
+  prokhid: m2-98-vybirka
+  tekst: 'Код помилки 0xc: програмне скидання ядра'
+  dzherelo: CPU exception codes / panic handler у esp-idf
+  fayl: 569e266f-fatal-errors.rst
+  klas: C
+- id: 'SDA пін розпиновки I2C: GPIO21 на ESP32 classic та GPIO8 на ESP32-S3'
+  prokhid: m2-98-vybirka
+  tekst: 'SDA пін розпиновки I2C: GPIO21 на ESP32 classic та GPIO8 на ESP32-S3'
+  dzherelo: GPIO матриця в esp_idf, I2C драйвер
+  fayl: i2c-um10204.pdf
+  klas: C
+- id: GPIO0 — ключовий пін для вибору режиму завантаження на ESP32 classic т
+  prokhid: m2-98-vybirka
+  tekst: GPIO0 — ключовий пін для вибору режиму завантаження на ESP32 classic та S3
+  dzherelo: ESP32 та ESP32-S3 Datasheet, розділ про boot mode selection
+  fayl: esp32-s3_datasheet_en.pdf
+  klas: C
+- id: 'Суфікс в назві ESP32 плати кодує обсяг флеш та PSRAM: N8, N16R8 і т.д.'
+  prokhid: m2-98-vybirka
+  tekst: 'Суфікс в назві ESP32 плати кодує обсяг флеш та PSRAM: N8, N16R8 і т.д.'
+  dzherelo: Офіційна номенклатура Espressif для ESP32 вариантів
+  fayl: 56497005-external-ram.rst
+  klas: C
+- id: На ESP32-C3 з 400 КБ доступної пам'яті MicroPython інтерпретатор залиш
+  prokhid: m2-98-vybirka
+  tekst: На ESP32-C3 з 400 КБ доступної пам'яті MicroPython інтерпретатор залишає мало місця
+  dzherelo: MicroPython офіційна документація та ESP32-C3 Datasheet
+  fayl: esp32-c3_datasheet_en.pdf
+  klas: C
+- id: BME280 — карта регістрів і формули компенсації
+  prokhid: pass-03-nedostupni
+  tekst: BME280 — карта регістрів і формули компенсації
+  dzherelo: https://www.bosch-sensortec.com/ (BME280 Datasheet, BST-BME280-DS002)
+  fayl: 8e2fcbf9-bme280.c
+  klas: C
+- id: DS18B20 — час перетворення, діапазон, роздільність
+  prokhid: pass-03-nedostupni
+  tekst: DS18B20 — час перетворення, діапазон, роздільність
+  dzherelo: https://www.analog.com/ (DS18B20 Datasheet, Maxim Integrated)
+  fayl: ds18b20.pdf
+  klas: C
+- id: Специфікація I²C — адресація, ємність шини, режими
+  prokhid: pass-03-nedostupni
+  tekst: Специфікація I²C — адресація, ємність шини, режими
+  dzherelo: https://www.nxp.com/docs/en/user-guide/UM10204.pdf (I²C-bus specification and user manual)
+  fayl: i2c-um10204.pdf
+  klas: C
+- id: Li-ion і TP4056 — напруги, ємність, захист
+  prokhid: pass-03-nedostupni
+  tekst: Li-ion і TP4056 — напруги, ємність, захист
+  dzherelo: https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
+  fayl: tp4056.pdf
+  klas: C
+- id: Дисплеї — зсув SH1106 і адреси I²C-модулів
+  prokhid: pass-03-nedostupni
+  tekst: Дисплеї — зсув SH1106 і адреси I²C-модулів
+  dzherelo: datasheet відповідних мікросхем (Solomon Systech, Bosch, Sensirion, ROHM, ST, TI, Microchip)
+  fayl: 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  klas: C
+- id: LoRa SX127x і SX126x — параметри модуляції
+  prokhid: pass-03-nedostupni
+  tekst: LoRa SX127x і SX126x — параметри модуляції
+  dzherelo: https://www.semtech.com/ (SX1276/SX1262 Datasheet)
+  fayl: sx1276.pdf
+  klas: C
+- id: Порівняльна таблиця — числа, ще не звірені жодною стороною
+  prokhid: pass-03-nedostupni
+  tekst: Порівняльна таблиця — числа, ще не звірені жодною стороною
+  dzherelo: https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf, ATmega328P datasheet (Microchip),
+    лінійка STM32 (ST)
+  fayl: rp2040.pdf
+  klas: C
+- id: Паспортна похибка DS18B20 — на датчик, а не між датчиками
+  prokhid: pass-37-ds18b20-porih
+  tekst: Паспортна похибка DS18B20 — на датчик, а не між датчиками
+  dzherelo: 'DS18B20 Programmable Resolution 1-Wire Digital Thermometer, Maxim Integrated / Analog Devices,
+    таблиця Electrical Characteristics, рядок `Thermometer '
+  fayl: ds18b20.pdf
+  klas: C

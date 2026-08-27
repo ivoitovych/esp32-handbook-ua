@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/13-pio.md`
 
-Одиниць твердження: **72**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **77**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -690,19 +690,17 @@
 
 ---
 
-<!-- fc id:T-13-044 sha:527078ef src:manual/13-pio.md:125 klas:K -->
+<!-- fc id:T-13-044 sha:c028fc5b src:manual/13-pio.md:125 klas:K -->
 ### T-13-044 · kod · рядок 125
 
 **Книга каже, дослівно:**
 
 > ```ini
 > [env]
+> platform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip
 > framework = arduino
 > monitor_speed = 115200
 > lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2
-> 
-> [env]
-> platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
 > 
 > [env:classic]
 > board = esp32dev
@@ -710,6 +708,114 @@
 > [env:s3]
 > board = esp32-s3-devkitc-1
 > build_flags = -DHAS_PSRAM
+> ```
+
+**Доказ**
+
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** raw.githubusercontent.com — наявність теґів і файли версій: espressif/esp-idf (components/esp_common/include/esp_idf_version.h), espressif/esptool (esptool/__init__.py), espressif/arduino-esp32 (platform.txt), pioarduino/platform-espressif32 (platform.json)
+- **Дослівно з джерела:**
+  > esp-idf v6.0.2  → 200,  v6.0.3 → 404      esp_idf_version.h: MAJOR 6 MINOR 0 PATCH 2
+  > esp-idf v5.5.5  → 200,  v5.5.6 → 404
+  > esptool v5.3.1  → 200,  v5.3.2 → 404      __init__.py: __version__ = "5.3.1"
+  > arduino-esp32 3.3.11 → 200, 3.3.12 → 404  platform.txt: version=3.3.11
+  > pioarduino 55.03.311 → 200, 55.03.312 → 404
+  >     platform.json: "version": "55.03.311"
+  >     і в ньому ж: .../arduino-esp32/releases/download/3.3.11/esp32-core-3.3.11.tar.xz
+- **Спосіб і дата:** curl raw.githubusercontent, коди відповіді + файли версій, 2026-08-26
+- **Нотатка:** Нуль розбіжностей. Кожна з чотирьох версій підтверджена двічі: існуванням теґа й номером усередині самого репозиторію на цьому теґу. Наступного теґа немає в жодного — тобто це справді найновіші, а не просто наявні.
+Окремо цінне спостереження: `platform.json` pioarduino 55.03.311 тягне саме `esp32-core-3.3.11`. Тобто два рядки таблиці версій книги узгоджені між собою не за збігом, а за побудовою — форк PlatformIO пінує рівно ту версію Arduino core, яку книга називає поточною.
+`toolchain-baseline.yaml` уже мав `status: verified` на всіх чотирьох; цей прохід перевірив, що позначка відповідає дійсності, а не лишилася від попередньої ревізії.
+- **Прохід:** pass-15-versiyi
+
+---
+
+<!-- fc id:T-13-045 sha:af92b07e src:manual/13-pio.md:140 klas:F -->
+### T-13-045 · proza · рядок 140
+
+**Книга каже, дослівно:**
+
+> **Спільна секція одна.** `[env]` без імені — це загальні налаштування, які успадковують усі середовища; імена робочих середовищ (`[env:classic]`, `[env:s3]`) мають бути різні.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-046 sha:90d170e3 src:manual/13-pio.md:140 klas:F -->
+### T-13-046 · proza · рядок 140
+
+**Книга каже, дослівно:**
+
+> Двох секцій `[env]` в одному файлі не буває — друга не додає до першої, і поводиться це не так, як здається.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-047 sha:262212b8 src:manual/13-pio.md:145 klas:F -->
+### T-13-047 · proza · рядок 145
+
+**Книга каже, дослівно:**
+
+> Рядок `platform` винесено в спільну секцію навмисно: дві плати мають збиратися **однією** платформою, інакше різниця між середовищами перестає бути різницею плат.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-048 sha:6c4a7027 src:manual/13-pio.md:145 klas:F -->
+### T-13-048 · proza · рядок 145
+
+**Книга каже, дослівно:**
+
+> Для S3 це не косметика — офіційна платформа його новіші ревізії просто не знає.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-049 sha:bc2c14ce src:manual/13-pio.md:150 klas:F -->
+### T-13-049 · proza · рядок 150
+
+**Книга каже, дослівно:**
+
+> **Тут стоїть тег, а не `stable`**, і це та сама вимога, що й вище: файл, який можна скопіювати, має збиратися однаково завтра й через рік.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-050 sha:326f3278 src:manual/13-pio.md:150 klas:F -->
+### T-13-050 · proza · рядок 150
+
+**Книга каже, дослівно:**
+
+> Мітка `stable` для швидкої спроби зручна, але відтворюваності не дає:
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-13-051 sha:7131bc02 src:manual/13-pio.md:154 klas:K -->
+### T-13-051 · kod · рядок 154
+
+**Книга каже, дослівно:**
+
+> ```ini
+> ; швидкий старт, НЕ відтворювано — платформа може змінитися будь-коли
+> platform = https://github.com/pioarduino/platform-espressif32/releases/download/stable/platform-espressif32.zip
 > ```
 
 **Доказ**
@@ -737,12 +843,12 @@
 
 ---
 
-<!-- fc id:T-13-045 sha:262212b8 src:manual/13-pio.md:142 klas:F -->
-### T-13-045 · proza · рядок 142
+<!-- fc id:T-13-052 sha:6619cb7d src:manual/13-pio.md:159 klas:E -->
+### T-13-052 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
-> Рядок `platform` винесено в спільну секцію навмисно: дві плати мають збиратися **однією** платформою, інакше різниця між середовищами перестає бути різницею плат.
+> Номер тегу — з таблиці версій у частині IV (Р4).
 
 **Доказ**
 
@@ -750,34 +856,8 @@
 
 ---
 
-<!-- fc id:T-13-046 sha:6c4a7027 src:manual/13-pio.md:142 klas:F -->
-### T-13-046 · proza · рядок 142
-
-**Книга каже, дослівно:**
-
-> Для S3 це не косметика — офіційна платформа його новіші ревізії просто не знає.
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-13-047 sha:f476ea82 src:manual/13-pio.md:147 klas:F -->
-### T-13-047 · proza · рядок 147
-
-**Книга каже, дослівно:**
-
-> Секція `[env]` — спільне для всіх.
-
-**Доказ**
-
-- **Клас:** F — не звірено
-
----
-
-<!-- fc id:T-13-048 sha:407ecd76 src:manual/13-pio.md:147 klas:F -->
-### T-13-048 · proza · рядок 147
+<!-- fc id:T-13-053 sha:407ecd76 src:manual/13-pio.md:161 klas:F -->
+### T-13-053 · proza · рядок 161
 
 **Книга каже, дослівно:**
 
@@ -789,8 +869,8 @@
 
 ---
 
-<!-- fc id:T-13-049 sha:47b4dc2c src:manual/13-pio.md:150 klas:E -->
-### T-13-049 · proza · рядок 150
+<!-- fc id:T-13-054 sha:47b4dc2c src:manual/13-pio.md:164 klas:E -->
+### T-13-054 · proza · рядок 164
 
 **Книга каже, дослівно:**
 
@@ -802,8 +882,8 @@
 
 ---
 
-<!-- fc id:T-13-050 sha:7c1dad7e src:manual/13-pio.md:156 klas:F -->
-### T-13-050 · proza · рядок 156
+<!-- fc id:T-13-055 sha:7c1dad7e src:manual/13-pio.md:170 klas:F -->
+### T-13-055 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -815,8 +895,8 @@
 
 ---
 
-<!-- fc id:T-13-051 sha:36a4b4be src:manual/13-pio.md:156 klas:F -->
-### T-13-051 · proza · рядок 156
+<!-- fc id:T-13-056 sha:36a4b4be src:manual/13-pio.md:170 klas:F -->
+### T-13-056 · proza · рядок 170
 
 **Книга каже, дослівно:**
 
@@ -828,8 +908,8 @@
 
 ---
 
-<!-- fc id:T-13-052 sha:830b1a26 src:manual/13-pio.md:161 klas:F -->
-### T-13-052 · proza · рядок 161
+<!-- fc id:T-13-057 sha:830b1a26 src:manual/13-pio.md:175 klas:F -->
+### T-13-057 · proza · рядок 175
 
 **Книга каже, дослівно:**
 
@@ -841,8 +921,8 @@
 
 ---
 
-<!-- fc id:T-13-053 sha:2b4c7e4e src:manual/13-pio.md:165 klas:F -->
-### T-13-053 · proza · рядок 165
+<!-- fc id:T-13-058 sha:2b4c7e4e src:manual/13-pio.md:179 klas:F -->
+### T-13-058 · proza · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -854,8 +934,8 @@
 
 ---
 
-<!-- fc id:T-13-054 sha:f0918098 src:manual/13-pio.md:169 klas:E -->
-### T-13-054 · proza · рядок 169
+<!-- fc id:T-13-059 sha:f0918098 src:manual/13-pio.md:183 klas:E -->
+### T-13-059 · proza · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -867,8 +947,8 @@
 
 ---
 
-<!-- fc id:T-13-055 sha:f8ccc59c src:manual/13-pio.md:172 klas:C -->
-### T-13-055 · proza · рядок 172
+<!-- fc id:T-13-060 sha:f8ccc59c src:manual/13-pio.md:186 klas:C -->
+### T-13-060 · proza · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -884,8 +964,8 @@
 
 ---
 
-<!-- fc id:T-13-056 sha:f1f3a5b4 src:manual/13-pio.md:176 klas:F -->
-### T-13-056 · proza · рядок 176
+<!-- fc id:T-13-061 sha:f1f3a5b4 src:manual/13-pio.md:190 klas:F -->
+### T-13-061 · proza · рядок 190
 
 **Книга каже, дослівно:**
 
@@ -897,8 +977,8 @@
 
 ---
 
-<!-- fc id:T-13-057 sha:6ef65336 src:manual/13-pio.md:179 klas:E -->
-### T-13-057 · proza · рядок 179
+<!-- fc id:T-13-062 sha:6ef65336 src:manual/13-pio.md:193 klas:E -->
+### T-13-062 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -923,8 +1003,8 @@
 
 ---
 
-<!-- fc id:T-13-058 sha:24b7726c src:manual/13-pio.md:179 klas:F -->
-### T-13-058 · proza · рядок 179
+<!-- fc id:T-13-063 sha:24b7726c src:manual/13-pio.md:193 klas:F -->
+### T-13-063 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -936,8 +1016,8 @@
 
 ---
 
-<!-- fc id:T-13-059 sha:71f8b903 src:manual/13-pio.md:179 klas:E -->
-### T-13-059 · proza · рядок 179
+<!-- fc id:T-13-064 sha:71f8b903 src:manual/13-pio.md:193 klas:E -->
+### T-13-064 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -949,8 +1029,8 @@
 
 ---
 
-<!-- fc id:T-13-060 sha:e09bc506 src:manual/13-pio.md:183 klas:E -->
-### T-13-060 · proza · рядок 183
+<!-- fc id:T-13-065 sha:e09bc506 src:manual/13-pio.md:197 klas:E -->
+### T-13-065 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -962,8 +1042,8 @@
 
 ---
 
-<!-- fc id:T-13-061 sha:f12c5e0a src:manual/13-pio.md:188 klas:E -->
-### T-13-061 · tablycya · рядок 188
+<!-- fc id:T-13-066 sha:f12c5e0a src:manual/13-pio.md:202 klas:E -->
+### T-13-066 · tablycya · рядок 202
 
 **Книга каже, дослівно:**
 
@@ -975,8 +1055,8 @@
 
 ---
 
-<!-- fc id:T-13-062 sha:a2387335 src:manual/13-pio.md:190 klas:F -->
-### T-13-062 · tablycya · рядок 190
+<!-- fc id:T-13-067 sha:a2387335 src:manual/13-pio.md:204 klas:F -->
+### T-13-067 · tablycya · рядок 204
 
 **Книга каже, дослівно:**
 
@@ -988,8 +1068,8 @@
 
 ---
 
-<!-- fc id:T-13-063 sha:7ebd085f src:manual/13-pio.md:191 klas:F -->
-### T-13-063 · tablycya · рядок 191
+<!-- fc id:T-13-068 sha:7ebd085f src:manual/13-pio.md:205 klas:F -->
+### T-13-068 · tablycya · рядок 205
 
 **Книга каже, дослівно:**
 
@@ -1001,8 +1081,8 @@
 
 ---
 
-<!-- fc id:T-13-064 sha:41c63667 src:manual/13-pio.md:192 klas:F -->
-### T-13-064 · tablycya · рядок 192
+<!-- fc id:T-13-069 sha:41c63667 src:manual/13-pio.md:206 klas:F -->
+### T-13-069 · tablycya · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -1014,8 +1094,8 @@
 
 ---
 
-<!-- fc id:T-13-065 sha:911cb2bf src:manual/13-pio.md:193 klas:F -->
-### T-13-065 · tablycya · рядок 193
+<!-- fc id:T-13-070 sha:911cb2bf src:manual/13-pio.md:207 klas:F -->
+### T-13-070 · tablycya · рядок 207
 
 **Книга каже, дослівно:**
 
@@ -1027,8 +1107,8 @@
 
 ---
 
-<!-- fc id:T-13-066 sha:90f5ca53 src:manual/13-pio.md:194 klas:F -->
-### T-13-066 · tablycya · рядок 194
+<!-- fc id:T-13-071 sha:90f5ca53 src:manual/13-pio.md:208 klas:F -->
+### T-13-071 · tablycya · рядок 208
 
 **Книга каже, дослівно:**
 
@@ -1040,8 +1120,8 @@
 
 ---
 
-<!-- fc id:T-13-067 sha:ee36c4b3 src:manual/13-pio.md:198 klas:F -->
-### T-13-067 · proza · рядок 198
+<!-- fc id:T-13-072 sha:ee36c4b3 src:manual/13-pio.md:212 klas:F -->
+### T-13-072 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1053,8 +1133,8 @@
 
 ---
 
-<!-- fc id:T-13-068 sha:03240a6a src:manual/13-pio.md:198 klas:E -->
-### T-13-068 · proza · рядок 198
+<!-- fc id:T-13-073 sha:03240a6a src:manual/13-pio.md:212 klas:E -->
+### T-13-073 · proza · рядок 212
 
 **Книга каже, дослівно:**
 
@@ -1066,8 +1146,8 @@
 
 ---
 
-<!-- fc id:T-13-069 sha:16ba4163 src:manual/13-pio.md:202 klas:E -->
-### T-13-069 · proza · рядок 202
+<!-- fc id:T-13-074 sha:16ba4163 src:manual/13-pio.md:216 klas:E -->
+### T-13-074 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1079,8 +1159,8 @@
 
 ---
 
-<!-- fc id:T-13-070 sha:b81ae778 src:manual/13-pio.md:202 klas:E -->
-### T-13-070 · proza · рядок 202
+<!-- fc id:T-13-075 sha:b81ae778 src:manual/13-pio.md:216 klas:E -->
+### T-13-075 · proza · рядок 216
 
 **Книга каже, дослівно:**
 
@@ -1092,8 +1172,8 @@
 
 ---
 
-<!-- fc id:T-13-071 sha:a1620013 src:manual/13-pio.md:205 klas:F -->
-### T-13-071 · proza · рядок 205
+<!-- fc id:T-13-076 sha:a1620013 src:manual/13-pio.md:219 klas:F -->
+### T-13-076 · proza · рядок 219
 
 **Книга каже, дослівно:**
 
@@ -1105,8 +1185,8 @@
 
 ---
 
-<!-- fc id:T-13-072 sha:07b465b5 src:manual/13-pio.md:207 klas:F -->
-### T-13-072 · proza · рядок 207
+<!-- fc id:T-13-077 sha:07b465b5 src:manual/13-pio.md:221 klas:F -->
+### T-13-077 · proza · рядок 221
 
 **Книга каже, дослівно:**
 

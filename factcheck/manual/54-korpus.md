@@ -856,14 +856,10 @@
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с. 51, разом із приміткою 3
 - **Дослівно з джерела:**
-  > T (note 3)   Operating temperature   Min –40   Max 125   °C
-  > 
-  > 3. The operating temperature of ESP32-U4WDH and ESP32-D0WDRH2-V3 ranges
-  >    from –40 °C to 85 °C, due to the in-package flash or PSRAM. For other
-  >    chips that have no in-package flash or PSRAM, their operating
-  >    temperature is –40 °C ~ 125 °C.
-- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
-- **Нотатка:** Примітка 3 називає причину, і причина — це і є суть виправлення розділу 54: стелю знижує флеш у корпусі, а не кремній. Там, де флеш у корпусі чипа (`U4WDH`, `D0WDRH2-V3`), стеля 85 °C; де його немає — 125 °C.
+  > T note 3 Operating temperature –40 — 125 °C
+  > 3. The operating temperature of ESP32-U4WDH and ESP32-D0WDRH2-V3 ranges from –40 °C to 85 °C, due to the
+- **Спосіб і дата:** tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Було `T (note 3)   Operating temperature   Min –40   Max 125   °C` — дужки навколо note й підписи Min/Max мої.
 - **Прохід:** m2-02-esp32-datasheet
 
 ---

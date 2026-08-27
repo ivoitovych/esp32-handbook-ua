@@ -1,0 +1,3162 @@
+- id: T-K03-027
+  src: kartky/k03-pidkl.md:55
+  tekst: 'Порт зайнятий іншою програмою: відкритий монітор, Arduino IDE, `screen`.'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-23-010
+  src: manual/23-triazh.md:21
+  tekst: '`ESP32-WROOM-32` · Чип → ESP32 classic'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-57-039
+  src: manual/57-vid-zadachi.md:103
+  tekst: '| аварійні блокування | веб-інтерфейс, OTA |'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-Z-032
+  src: dodatky/z-pokazhchyk.md:127
+  tekst: CONFIG_PARTITION_TABLE_OFFSET — 119
+  klas: F
+  fayl: 4aac28c3-partition-tables.rst
+  fayly:
+  - 4aac28c3-partition-tables.rst
+- id: T-18-035
+  src: manual/18-rozdily-fleshu.md:54
+  tekst: python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
+  klas: F
+  fayl: 4aac28c3-partition-tables.rst
+  fayly:
+  - 4aac28c3-partition-tables.rst
+- id: T-18-026
+  src: manual/18-rozdily-fleshu.md:37
+  tekst: '**`nvs` лежить перед застосунком.** Це сховище пар «ключ — значення»: налаштування, збережені
+    креденшели Wi-Fi, лічильники.'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-49-064
+  src: manual/49-kamera.md:170
+  tekst: Камера без PSRAM практично непрацездатна.
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-C-007
+  src: dodatky/c-komandy.md:16
+  tekst: esptool --port /dev/ttyUSB0 read-mac
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-18-061
+  src: manual/18-rozdily-fleshu.md:120
+  tekst: Якщо серед налаштувань є те, чого не відновити (серійний номер, калібрування), його місце не
+    в звичайному NVS, а в окремому розділі `data` тільки для читання, або в eFuse.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-19-097
+  src: manual/19-ota.md:211
+  tekst: Rollback — окремий механізм, і він працює лише тоді, коли підтвердження справності стоїть після
+    виконання реальної умови, а не на початку `app_main`.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-24-033
+  src: manual/24-chuzha-proshyvka.md:74
+  tekst: NVS зберігає конфігурацію конкретного екземпляра.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-COM-013
+  src: inserts/components-2026-08.md:19
+  tekst: ESP32-C3 SuperMini · Коли брати → простий дешевий вузол
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-B-136
+  src: dodatky/b-symptomy.md:76
+  tekst: 'CAN: не працює · Дія → однакова всюди'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-COM-018
+  src: inserts/components-2026-08.md:26
+  tekst: DHT11, DHT22 · Беріть → **BME280** або SHT3x
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-04-099
+  src: manual/04-peryferiya.md:119
+  tekst: TWAI (CAN) · S2 → 1
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-04-051
+  src: manual/04-peryferiya.md:76
+  tekst: DAC · Розділ → 33
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-30-052
+  src: manual/30-struktura.md:144
+  tekst: 'Друге, і саме воно частіше: коли PSRAM увімкнено, `malloc` **уже** вміє віддавати з неї.'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-07-101
+  src: manual/07-gpio.md:210
+  tekst: Більше ніде в лінійці DAC немає (розділи 04 і 33).
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-50-045
+  src: manual/50-bezpeka.md:108
+  tekst: Обидва реалізовані через **eFuse** — біти, які пропалюються фізично й не скидаються ніколи, жодною
+    командою, жодним програматором.
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-COM-067
+  src: inserts/components-2026-08.md:68
+  tekst: Тримач або елемент із привареними виводами · Для чого → 18650
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-E-010
+  src: dodatky/e-interfeysy.md:13
+  tekst: BMP280 · Що дає → тиск, T — **без** вологості
+  klas: C
+  fayl: bmp280.pdf
+  fayly:
+  - bmp280.pdf
+- id: T-02-006
+  src: manual/02-chipy.md:17
+  tekst: '**Коротко: ESP32-C3** як «дешевий малий» — коли треба недорого, компактно і без надмірностей.'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-09-049
+  src: manual/09-pidklyuchennya.md:83
+  tekst: Це нормальна поведінка native USB, а не несправність — але монітор порту при цьому доводиться
+    перевідкривати.
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-19-092
+  src: manual/19-ota.md:197
+  tekst: 'На межі покриття OTA не працює навіть тоді, коли звичайний обмін даними ще проходить: тут значно
+    більший обсяг і довша безперервна сесія.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-07-104
+  src: manual/07-gpio.md:218
+  tekst: 'Для всіх трьох матриця GPIO не діє: це аналогові блоки, фізично з''єднані з конкретними ніжками.'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-25-039
+  src: manual/25-log.md:76
+  tekst: 'Ключа командного рядка для цього в `idf.py monitor` **немає**: його параметри — `--print-filter`,
+    `--monitor-baud`, `--encrypted`, `--no-reset`, `--timestamps`, `--timestamp-format`, і жодного про
+    запис у файл.'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-E-077
+  src: dodatky/e-interfeysy.md:47
+  tekst: MAX6675 · Бібліотека → Adafruit MAX6675
+  klas: F
+  fayl: max6675.pdf
+  fayly:
+  - max6675.pdf
+- id: T-14-022
+  src: manual/14-shvydki-shlyakhy.md:75
+  tekst: 'Це повний опис робочого пристрою: під''єднання до Wi-Fi, читання датчика, віддача значень, веб-інтерфейс,
+    **OTA-оновлення з коробки**.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-G-148
+  src: dodatky/g-glosariy.md:182
+  tekst: '| PWM | Pulse-Width Modulation |'
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-55-040
+  src: manual/55-polova-diagnostyka.md:85
+  tekst: '**Спалений пін.** Один GPIO не працює, решта нормально.'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-50-024
+  src: manual/50-bezpeka.md:63
+  tekst: 'ESP-IDF підтримує шифрування NVS: ключі зберігаються в окремому розділі, а сам розділ захищається
+    Flash Encryption.'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-04-038
+  src: manual/04-peryferiya.md:65
+  tekst: LEDC · Розділ → 33
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-02-145
+  src: manual/02-chipy.md:198
+  tekst: PSRAM — лише classic, S2, S3.
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-B-148
+  src: dodatky/b-symptomy.md:85
+  tekst: ADC шумить · Причина → немає усереднення
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-08-017
+  src: manual/08-platy.md:20
+  tekst: Літера `U` в кінці (`WROOM-1U`) означає роз'єм під зовнішню антену замість друкованої.
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-A-034
+  src: dodatky/a-pinouty.md:25
+  tekst: 14 · ADC → ADC2_6
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-D-036
+  src: dodatky/d-panik.md:21
+  tekst: '`0xc` · Що сталося → програмне скидання ядра'
+  klas: C
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-19-086
+  src: manual/19-ota.md:186
+  tekst: Для OTA потрібен саме образ застосунку, без бутлоадера і таблиці розділів.
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-A-067
+  src: dodatky/a-pinouty.md:51
+  tekst: 33–37 · Обмеження → флеш/PSRAM на Octal-модулях
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-K01-006
+  src: kartky/k01-triazh.md:11
+  tekst: '`ESP32-WROOM-32` · Чип → ESP32 classic'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-E-011
+  src: dodatky/e-interfeysy.md:13
+  tekst: BMP280 · Бібліотека → Adafruit BMP280
+  klas: C
+  fayl: bmp280.pdf
+  fayly:
+  - bmp280.pdf
+- id: T-39-078
+  src: manual/39-wifi.md:196
+  tekst: '**Зовнішня антена через роз''єм IPEX** — модулі з літерою `U` (`WROOM-1U`).'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-19-036
+  src: manual/19-ota.md:65
+  tekst: Наступне OTA до нього вже не дійде.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-48-069
+  src: manual/48-motory.md:181
+  tekst: L298N втрачає близько двох вольтів на собі — для нового проєкту беріть DRV8833 або TB6612.
+  klas: F
+  fayl: l298n.pdf
+  fayly:
+  - l298n.pdf
+- id: T-A-049
+  src: dodatky/a-pinouty.md:33
+  tekst: 27 · ADC → ADC2_7
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-A-033
+  src: dodatky/a-pinouty.md:25
+  tekst: 14 · Обмеження → JTAG TMS
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-50-047
+  src: manual/50-bezpeka.md:113
+  tekst: '- дамп, знятий **до** ввімкнення, ще можна залити назад; знятий після — ні; - помилка в підготовці
+    ключів означає пристрій, який неможливо перепрошити; - налагодження ускладнюється: JTAG може бути
+    вимкнений; - у release-режимі зворотного шляху немає взагалі.'
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-44-005
+  src: manual/44-neznayomyy-modul.md:11
+  tekst: '`BME280`, `SSD1306`, `MAX485`, `A4988`.'
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-20-016
+  src: manual/20-bekap.md:38
+  tekst: 'Що можна втратити помилковим записом: доступ по JTAG, можливість увійти в download mode, можливість
+    прошивати чип узагалі, здатність читати флеш поза цим конкретним чипом.'
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-08-018
+  src: manual/08-platy.md:25
+  tekst: '[[classic]] `WROVER` має PSRAM, і вона займає піни.'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-B-137
+  src: dodatky/b-symptomy.md:76
+  tekst: 'CAN: не працює · Розділ → 38'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-49-053
+  src: manual/49-kamera.md:140
+  tekst: 'Аналоговий шлях — мікрофон із підсилювачем на вхід ADC — теж працює, але дає гірший результат:
+    ADC шумний і нелінійний (розділ 33).'
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-COM-066
+  src: inserts/components-2026-08.md:67
+  tekst: 18650 **protected** · Застереження → або окрема BMS
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-04-105
+  src: manual/04-peryferiya.md:120
+  tekst: DAC · S2 → **2**
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-20-088
+  src: manual/20-bekap.md:186
+  tekst: Флеш лікується завжди. eFuse — ніколи.
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-B-197
+  src: dodatky/b-symptomy.md:106
+  tekst: Пінги ходять, OTA не проходить · Причина → межа покриття
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-24-011
+  src: manual/24-chuzha-proshyvka.md:21
+  tekst: python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
+  klas: F
+  fayl: 4aac28c3-partition-tables.rst
+  fayly:
+  - 4aac28c3-partition-tables.rst
+- id: T-B-198
+  src: dodatky/b-symptomy.md:106
+  tekst: Пінги ходять, OTA не проходить · Дія → RSSI гірше −80
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-18-009
+  src: manual/18-rozdily-fleshu.md:23
+  tekst: 'Типова розбивка для пристрою без OTA виглядає так:'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-38-066
+  src: manual/38-can.md:159
+  tekst: CAN потребує щонайменше двох — передані пакети нема кому підтверджувати, і передавач вважає це
+    помилкою.
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-22-066
+  src: manual/22-zberezhennya-stanu.md:155
+  tekst: У всіх інших випадках — від чужого виробу до власного пристрою, що пропрацював рік у полі і накопичив
+    у NVS налаштування, яких немає в жодному файлі, — етап обов'язковий.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-19-098
+  src: manual/19-ota.md:215
+  tekst: OTA не оновлює таблицю розділів.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-E-007
+  src: dodatky/e-interfeysy.md:12
+  tekst: BME280 · Що дає → тиск, T, вологість
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-60-020
+  src: manual/60-proj-loger.md:33
+  tekst: 18650 з захистом · Кількість → 1
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-48-049
+  src: manual/48-motory.md:123
+  tekst: Керування через LEDC (розділ 33).
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-04-100
+  src: manual/04-peryferiya.md:119
+  tekst: TWAI (CAN) · S3 → 1
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-35-079
+  src: manual/35-i2c.md:183
+  tekst: 'Якщо роль веденого потрібна, а встигати не гарантовано — синхронізацію доводиться робити рівнем
+    вище: окремою лінією «дані готові» на GPIO або перевіркою цілісності в самому протоколі.'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-COM-055
+  src: inserts/components-2026-08.md:57
+  tekst: SX1276 / RFM95 · Застереження → більше бібліотек і прикладів
+  klas: C
+  fayl: sx1276.pdf
+  fayly:
+  - sx1276.pdf
+- id: T-E-008
+  src: dodatky/e-interfeysy.md:12
+  tekst: BME280 · Бібліотека → реєстр IDF; Adafruit BME280
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-53-081
+  src: manual/53-akum.md:227
+  tekst: Захист акумулятора обов'язковий; TP4056 брати з захистом.
+  klas: C
+  fayl: tp4056.pdf
+  fayly:
+  - tp4056.pdf
+- id: T-46-007
+  src: manual/46-dyspleyi.md:10
+  tekst: OLED SSD1306 · Особливості → контраст, малий, дешевий
+  klas: C
+  fayl: 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  fayly:
+  - 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  - ssd1306.pdf
+- id: T-01-066
+  src: manual/01-platforma.md:95
+  tekst: Сон · RP2040 → мА
+  klas: F
+  fayl: rp2040.pdf
+  fayly:
+  - rp2040.pdf
+- id: T-K10-001
+  src: kartky/k10-komandy.md:3
+  tekst: Синтаксис esptool **v5** (дефіси, без `.py`).
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-20-010
+  src: manual/20-bekap.md:20
+  tekst: '**Зіпсований NVS.** Стирається і переініціалізується (розділ 18).'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-07-064
+  src: manual/07-gpio.md:124
+  tekst: Вони **виведені на гребінку** більшості плат, підписані як звичайні GPIO — і це чиста пастка.
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-B-134
+  src: dodatky/b-symptomy.md:75
+  tekst: 'CAN: лічильник помилок росте · Розділ → 38'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-27-059
+  src: manual/27-jtag.md:139
+  tekst: '**Права (Linux).** Потрібне правило udev для USB-JTAG; в ESP-IDF воно є в комплекті і ставиться
+    один раз. 3.'
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-27-065
+  src: manual/27-jtag.md:153
+  tekst: 'Варто сказати прямо, бо це економить дні: більшість помилок у практиці вбудованої розробки не
+    потребують JTAG.'
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-29-024
+  src: manual/29-symptomy.md:62
+  tekst: '**Залито не той файл.** Для OTA потрібен `app.bin`, а не `merge-bin`-образ; для повної прошивки
+    — навпаки.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-50-017
+  src: manual/50-bezpeka.md:40
+  tekst: Місце креденшелів — **NVS** (розділ 18), записаний окремо на кожен пристрій при виробництві (розділ
+    21).
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-56-018
+  src: manual/56-pasport.md:36
+  tekst: Налаштування.** Що зберігається в NVS, як задається, як скинути на заводські.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-45-019
+  src: manual/45-sensory.md:47
+  tekst: '**BMP280 / BME280** — атмосферний тиск.'
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-29-057
+  src: manual/29-symptomy.md:142
+  tekst: '**Не враховано нелінійність.** ADC у ESP32 нелінійний; без калібрування похибка помітна (розділ
+    33).'
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-K09-009
+  src: kartky/k09-pinouty.md:15
+  tekst: '| 25, 26 | єдині DAC-виходи |'
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-08-013
+  src: manual/08-platy.md:16
+  tekst: '`ESP32-S3-WROOM-1` · Особливості → сучасний вибір; варіанти за флешем і PSRAM'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-COM-053
+  src: inserts/components-2026-08.md:56
+  tekst: SX1262 · Застереження → ефективніший за SX1276
+  klas: C
+  fayl: sx1276.pdf
+  fayly:
+  - sx1276.pdf
+- id: T-15-013
+  src: manual/15-oflayn.md:15
+  tekst: Виріб на роки, OTA, серійність · Тулчейн → **ESP-IDF**
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-57-057
+  src: manual/57-vid-zadachi.md:161
+  tekst: '**Розбивку флешу з OTA** — навіть якщо OTA поки не потрібен.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-08-032
+  src: manual/08-platy.md:49
+  tekst: 'Той, що на GPIO, корисно знати за номером: він займає пін і дає безкоштовний індикатор.'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-19-062
+  src: manual/19-ota.md:135
+  tekst: OTA — це кілька хвилин безперервної роботи радіо на прийом плюс запис у флеш.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-03-060
+  src: manual/03-soc.md:144
+  tekst: 'ULP уміє небагато: прочитати ADC, перевірити пін, порівняти з порогом, розбудити основну систему,
+    якщо щось сталося.'
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-46-085
+  src: manual/46-dyspleyi.md:172
+  tekst: 'LVGL потребує кадрового буфера: практично це S3 із PSRAM.'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-01-031
+  src: manual/01-platforma.md:75
+  tekst: '**Аналогові вимірювання високої точності.** Вбудований ADC нелінійний і шумний; поруч працює
+    радіо.'
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-Z-174
+  src: dodatky/z-pokazhchyk.md:722
+  tekst: SSD1306 — 149, 257, 265, 268, 310, 369, 386
+  klas: C
+  fayl: 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  fayly:
+  - 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  - ssd1306.pdf
+- id: T-46-004
+  src: manual/46-dyspleyi.md:10
+  tekst: OLED SSD1306 · Розмір → 0.96–1.3"
+  klas: C
+  fayl: 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  fayly:
+  - 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  - ssd1306.pdf
+- id: T-G-146
+  src: dodatky/g-glosariy.md:180
+  tekst: '| OTA | Over-The-Air (оновлення) |'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-57-069
+  src: manual/57-vid-zadachi.md:188
+  tekst: Розбивка з OTA, контакти для прошивки й унікальні ключі закладаються наперед.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-20-037
+  src: manual/20-bekap.md:85
+  tekst: Адреса `0x0` — тому що дамп починається з нульового зсуву і містить усе, включно з бутлоадером
+    на його правильному місці для цього чипа.
+  klas: C
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-01-023
+  src: manual/01-platforma.md:53
+  tekst: Плюс матриця GPIO, яка дозволяє вивести майже будь-який сигнал майже на будь-який пін (розділ
+    04).
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-27-070
+  src: manual/27-jtag.md:160
+  tekst: JTAG потрібен там, де всі чотири нічого не дали і треба подивитися всередину пам'яті.
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-K01-033
+  src: kartky/k01-triazh.md:56
+  tekst: Якщо `esptool` не бачить чип — це ще не вирок платі.
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-37-012
+  src: manual/37-onewire.md:33
+  tekst: Ринок наповнений підробками DS18B20.
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-15-015
+  src: manual/15-oflayn.md:16
+  tekst: Потрібні MCPWM, PCNT, TWAI · Тулчейн → ESP-IDF
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-04-106
+  src: manual/04-peryferiya.md:120
+  tekst: DAC · S3 → ні
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-27-038
+  src: manual/27-jtag.md:85
+  tekst: Це класична пастка першого підключення JTAG до classic.
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-COM-054
+  src: inserts/components-2026-08.md:57
+  tekst: SX1276 / RFM95 · Для чого → LoRa
+  klas: C
+  fayl: sx1276.pdf
+  fayly:
+  - sx1276.pdf
+- id: T-B-149
+  src: dodatky/b-symptomy.md:85
+  tekst: ADC шумить · Дія → 16–64 відліки
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-E-061
+  src: dodatky/e-interfeysy.md:42
+  tekst: SX1276 / RFM95 · Що дає → LoRa
+  klas: C
+  fayl: sx1276.pdf
+  fayly:
+  - sx1276.pdf
+- id: T-08-007
+  src: manual/08-platy.md:13
+  tekst: '`ESP32-WROOM-32` · Особливості → базовий, без PSRAM. Найпоширеніший'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-32-052
+  src: manual/32-nadiynist.md:140
+  tekst: '**Незавершений запис у флеш.** NVS до цього стійкий за задумом; файлова система — залежить від
+    типу (розділ 18).'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-04-012
+  src: manual/04-peryferiya.md:31
+  tekst: '- **ADC, DAC і touch** прив''язані жорстко.'
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-19-001
+  src: manual/19-ota.md:3
+  tekst: OTA (over-the-air) — оновлення прошивки без фізичного доступу до плати.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-20-019
+  src: manual/20-bekap.md:48
+  tekst: '**Flash Encryption і Secure Boot у release-режимі.** Це односторонні двері, реалізовані через
+    ті самі eFuse.'
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-42-085
+  src: manual/42-espnow.md:219
+  tekst: Без шифрування це відкритий ефір; ключі зберігати в NVS, не в коді.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-42-054
+  src: manual/42-espnow.md:128
+  tekst: Місце ключів — NVS, записаний окремо на кожен пристрій (розділ 21).
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-01-056
+  src: manual/01-platforma.md:93
+  tekst: ОС · RP2040 → немає або RTOS
+  klas: F
+  fayl: rp2040.pdf
+  fayly:
+  - rp2040.pdf
+- id: T-03-069
+  src: manual/03-soc.md:165
+  tekst: '- адреса виду `0x400d....` — код, що виконується з флешу; - адреса виду `0x3ffb....` — дані
+    в DRAM, зазвичай стек; - адреса виду `0x3f4.....` — PSRAM; - адреса близько нуля (`0x0`–`0x40`) —
+    розіменування `NULL` зі зсувом поля структури.'
+  klas: C
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-18-012
+  src: manual/18-rozdily-fleshu.md:26
+  tekst: '`nvs` · Підтип → nvs'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-Z-024
+  src: dodatky/z-pokazhchyk.md:96
+  tekst: bootloader — 5, 15, 18, 26, 98, 117–120, 124–125, 135, 143, 373, 376, 381, 393
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-B-142
+  src: dodatky/b-symptomy.md:83
+  tekst: ADC читає дурницю · Причина → [[classic]] ADC2 при Wi-Fi
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-04-098
+  src: manual/04-peryferiya.md:119
+  tekst: TWAI (CAN) · classic → 1
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-59-045
+  src: manual/59-proj-monitor.md:88
+  tekst: Багато модулів BME280 мають власні резистори — тоді зовнішні не ставити.
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-23-017
+  src: manual/23-triazh.md:24
+  tekst: '`ESP32-S3-WROOM-1` · Що це значить практично → двоядерний, native USB'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-16-093
+  src: manual/16-boot.md:238
+  tekst: Стан strapping-пінів має значення рівно одну мілісекунду після скидання — і саме тому помилки
+    тут виглядають як містика.
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-25-038
+  src: manual/25-log.md:71
+  tekst: Монітор — інтерактивна програма з кольорами й керуванням із клавіатури; через `| tee` у файл
+    потрапляють ще й керівні послідовності ANSI, а сама інтерактивність псується.
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-04-050
+  src: manual/04-peryferiya.md:76
+  tekst: DAC · Що це → [[classic]] [[S2]] справжній аналоговий вихід
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-B-150
+  src: dodatky/b-symptomy.md:85
+  tekst: ADC шумить · Розділ → 33
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-08-008
+  src: manual/08-platy.md:14
+  tekst: '`ESP32-WROOM-32D`, `-32E` · Чип → classic'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-04-108
+  src: manual/04-peryferiya.md:120
+  tekst: DAC · C6 → ні
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-C-021
+  src: dodatky/c-komandy.md:45
+  tekst: 'esptool --port PORT erase-flash                  # ⛔ усе, спершу дамп'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-29-023
+  src: manual/29-symptomy.md:56
+  tekst: Команда, скопійована з чужої інструкції, кладе бутлоадер у порожнє місце, і `esptool` не має
+    підстав скаржитися.
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-COM-065
+  src: inserts/components-2026-08.md:67
+  tekst: 18650 **protected** · Для чого → акумулятор
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-27-075
+  src: manual/27-jtag.md:174
+  tekst: Більшість збоїв розбирається без JTAG узагалі.
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-23-064
+  src: manual/23-triazh.md:126
+  tekst: Монітор на 115200, натиснути `EN`.
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-19-029
+  src: manual/19-ota.md:51
+  tekst: OTA оновлює лише образ застосунку — таблиця розділів через OTA не оновлюється ніколи.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-18-048
+  src: manual/18-rozdily-fleshu.md:92
+  tekst: NVS (Non-Volatile Storage) — сховище пар «ключ — значення», розкладене по просторах імен.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-23-066
+  src: manual/23-triazh.md:129
+  tekst: 'За один цикл скидання звідси дістається: причина попереднього скидання, версія ESP-IDF, обсяг
+    флешу очима бутлоадера і **вся таблиця розділів з адресами**.'
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-04-118
+  src: manual/04-peryferiya.md:122
+  tekst: USB · S3 → OTG+JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-20-013
+  src: manual/20-bekap.md:28
+  tekst: 'Спільне в усьому переліку: доки чип відповідає `esptool` шапкою з''єднання, він живий.'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-11-103
+  src: manual/11-idf.md:263
+  tekst: '**Уся периферія доступна.** Блоки на кшталт MCPWM, PCNT, TWAI в Arduino доступні частково або
+    через сторонні обгортки (розділ 04).'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-Z-002
+  src: dodatky/z-pokazhchyk.md:5
+  tekst: 'Слова, які трапляються більш ніж на двох десятках сторінок, сюди не входять: покажчик, який
+    на «GPIO» дає сорок номерів, заважає більше, ніж допомагає.'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-20-062
+  src: manual/20-bekap.md:133
+  tekst: Обрив на етапі бутлоадера означає проблему з розділами або образом; обрив після `cpu_start` —
+    проблему в застосунку.
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-H-027
+  src: dodatky/h-dzherela.md:70
+  tekst: '**Документація на конкретні мікросхеми** — сайти виробників: Bosch Sensortec (BME280), Sensirion
+    (SHT3x), Semtech (SX127x/SX126x), Texas Instruments (драйвери, INA219), Maxim / Analog Devices (DS18B20,
+    MAX485).'
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-12-014
+  src: manual/12-arduino.md:42
+  tekst: 'Саме так робиться доступ до тих блоків периферії, яких немає в Arduino API: MCPWM, PCNT, TWAI,
+    тонке керування живленням.'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-B-147
+  src: dodatky/b-symptomy.md:84
+  tekst: ADC нелінійний · Розділ → 33
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-37-002
+  src: manual/37-onewire.md:3
+  tekst: Практично весь його світ для нас — це датчики температури DS18B20, і саме тому розділ короткий.
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-COM-024
+  src: inserts/components-2026-08.md:29
+  tekst: MPU6050 · Беріть → BNO055, де потрібна орієнтація
+  klas: F
+  fayl: mpu6050.pdf
+  fayly:
+  - mpu6050.pdf
+- id: T-60-112
+  src: manual/60-proj-loger.md:300
+  tekst: '**Живлення периферії вмикається ключем.** Модуль microSD, BME280 і RTC споживають уві сні —
+    разом це можуть бути мілі-, а не мікроампери.'
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-17-147
+  src: manual/17-esptool.md:335
+  tekst: На ESP32 classic, C6 і H2 цього режиму немає — там працює звичайне `hard-reset` по `RTS`.
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-16-027
+  src: manual/16-boot.md:68
+  tekst: '| Сімейство | Адреса `bootloader.bin` |'
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-03-045
+  src: manual/03-soc.md:92
+  tekst: Коли система пише в NVS або стирає сектор, кеш вимикається — і будь-яка функція, що в цей момент
+    має виконатися з флешу, впаде.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-08-047
+  src: manual/08-platy.md:77
+  tekst: '**ESP32-C3 SuperMini** — дуже мала й дуже дешева.'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-08-081
+  src: manual/08-platy.md:157
+  tekst: '**Модуль на власній платі.** Ви ставите `WROOM` і мінімальну обв''язку: стабілізатор, конденсатори,
+    роз''єм для прошивки.'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-60-012
+  src: manual/60-proj-loger.md:29
+  tekst: BME280 · Кількість → 1
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-02-122
+  src: manual/02-chipy.md:175
+  tekst: Новий серйозний проєкт · Чому → два ядра, USB-JTAG, PSRAM, актуальний
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-UA--024
+  src: inserts/ua-market-2026-08.md:57
+  tekst: '| 18650 | protected чи ні; чесна ємність |'
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-K01-013
+  src: kartky/k01-triazh.md:14
+  tekst: '`ESP32-C3-MINI-1` · Що це значить → одноядерний RISC-V'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-15-008
+  src: manual/15-oflayn.md:12
+  tekst: Типовий датчик із телеметрією · Чому → OTA і веб з коробки
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-E-075
+  src: dodatky/e-interfeysy.md:47
+  tekst: MAX6675 · Режим → 0
+  klas: F
+  fayl: max6675.pdf
+  fayly:
+  - max6675.pdf
+- id: T-04-037
+  src: manual/04-peryferiya.md:65
+  tekst: 'LEDC · Що це → PWM: яскравість світлодіодів, сервоприводи'
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-50-035
+  src: manual/50-bezpeka.md:83
+  tekst: Пристрій, що має жити роками, потребує механізму оновлення довірених сертифікатів — через OTA.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-G-155
+  src: dodatky/g-glosariy.md:189
+  tekst: '| JTAG | Joint Test Action Group (інтерфейс налагодження) |'
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-60-065
+  src: manual/60-proj-loger.md:102
+  tekst: 18650 ──[захист]──[TP4056]──┬── buck-boost 3.3 В ── ESP32 + периферія
+  klas: C
+  fayl: tp4056.pdf
+  fayly:
+  - tp4056.pdf
+- id: T-10-037
+  src: manual/10-instrumenty.md:81
+  tekst: '**JTAG-адаптер.** [[classic]] Потрібен лише для classic; на S3 і C3 вбудований (розділ 27).'
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-17-036
+  src: manual/17-esptool.md:84
+  tekst: 'У жодного чипа сімейства ESP32 його немає, і `esptool` на ньому відповідає попередженням:'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-30-072
+  src: manual/30-struktura.md:193
+  tekst: Під час операції з флешем (запис у NVS, стирання сектора) кеш вимикається, і виконання коду з
+    флешу неможливе (розділ 03).
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-20-014
+  src: manual/20-bekap.md:34
+  tekst: '**eFuse.** Це набір однорозрядних запобіжників у кремнії.'
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-24-043
+  src: manual/24-chuzha-proshyvka.md:98
+  tekst: Витягти розділ так само, як NVS.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-COM-046
+  src: inserts/components-2026-08.md:53
+  tekst: '**SN65HVD230** · Для чого → трансивер CAN'
+  klas: C
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-E-062
+  src: dodatky/e-interfeysy.md:42
+  tekst: SX1276 / RFM95 · Бібліотека → RadioLib, LoRa
+  klas: C
+  fayl: sx1276.pdf
+  fayly:
+  - sx1276.pdf
+- id: T-06-082
+  src: manual/06-zhyvlennya.md:171
+  tekst: Або в NVS — але NVS це запис у флеш, а флеш має обмежений ресурс запису.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-17-125
+  src: manual/17-esptool.md:297
+  tekst: 'Порт тримає інша програма: монітор, Arduino IDE, `screen`.'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-A-065
+  src: dodatky/a-pinouty.md:50
+  tekst: 26–32 · Обмеження → **флеш і PSRAM**
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-K15-011
+  src: kartky/k15-seriyna.md:28
+  tekst: '☐ · Чим → NVS: номер, ключі, калібрування'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-04-120
+  src: manual/04-peryferiya.md:122
+  tekst: USB · C6 → JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-Z-026
+  src: dodatky/z-pokazhchyk.md:105
+  tekst: CH340 — 11, 25, 79, 83, 87, 114, 180, 366, 391
+  klas: F
+  fayl: ch340.pdf
+  fayly:
+  - ch340.pdf
+- id: T-A-030
+  src: dodatky/a-pinouty.md:24
+  tekst: 13 · ADC → ADC2_4
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-23-016
+  src: manual/23-triazh.md:24
+  tekst: '`ESP32-S3-WROOM-1` · Чип → ESP32-S3'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-K01-011
+  src: kartky/k01-triazh.md:13
+  tekst: '`ESP32-S3-WROOM-1` · Що це значить → двоядерний, native USB'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-50-067
+  src: manual/50-bezpeka.md:176
+  tekst: '- креденшели в NVS, унікальні на екземпляр — не в коді; - жодних дефолтних паролів; пароль на
+    веб-інтерфейс і точку доступу; - HTTPS із перевіркою CA для всього, що йде назовні; - OTA тільки через
+    захищений канал; - BLE і ESP-NOW із шифруванням, якщо через них щось керується; - права пристрою обмежені
+    його роллю; - перевірка на стороні сервера, а не пристрою; - можливість відкликати конкретний пристрій;
+    - Flash Encryption і Secure Boot — свідомо, для серійного виробу, після випробування на платі, яку
+    не шкода.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-18-105
+  src: manual/18-rozdily-fleshu.md:195
+  tekst: '**Зміна розбивки несумісна з OTA-оновленням.** Пристрій у полі отримує через OTA лише новий
+    образ застосунку — таблиця розділів при цьому не оновлюється.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-B-133
+  src: dodatky/b-symptomy.md:75
+  tekst: 'CAN: лічильник помилок росте · Дія → потрібні двоє'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-06-088
+  src: manual/06-zhyvlennya.md:188
+  tekst: '**Ємність джерела.** Ходові елементи 18650 — від 2500 до 3500 мА·год (розділ 53).'
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-G-145
+  src: dodatky/g-glosariy.md:179
+  tekst: '| NVS | Non-Volatile Storage |'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-08-088
+  src: manual/08-platy.md:176
+  tekst: Модуль — джерело істини про те, що всередині; звіряти напис із шапкою і `flash-id`.
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-K04-010
+  src: kartky/k04-boot.md:21
+  tekst: Кнопка `EN` (іноді `RST`, `RESET`) — скидання.
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-33-092
+  src: manual/33-peryferiya-kod.md:224
+  tekst: '**Точність.** ADC ESP32 нелінійний, і сирі відліки не переводяться в вольти простим множенням.'
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-G-159
+  src: dodatky/g-glosariy.md:193
+  tekst: '| PSRAM | Pseudo-Static RAM |'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-G-149
+  src: dodatky/g-glosariy.md:183
+  tekst: '| GPIO | General-Purpose Input/Output |'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-K01-010
+  src: kartky/k01-triazh.md:13
+  tekst: '`ESP32-S3-WROOM-1` · Чип → ESP32-S3'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-C-067
+  src: dodatky/c-komandy.md:136
+  tekst: 'idf.py monitor              # з розшифровкою backtrace на льоту'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-04-148
+  src: manual/04-peryferiya.md:195
+  tekst: Матриця GPIO робить цифрові інтерфейси майже вільними у виборі пінів; аналогові блоки й піни
+    флешу вона не зачіпає.
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-01-063
+  src: manual/01-platforma.md:95
+  tekst: Сон · ESP32 → одиниці мкА
+  klas: F
+  fayl: 5df69a15-sleep_modes.rst
+  fayly:
+  - 5df69a15-sleep_modes.rst
+- id: T-39-076
+  src: manual/39-wifi.md:193
+  tekst: '**PCB-антена** — доріжка на платі модуля (`WROOM-1`).'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-59-131
+  src: manual/59-proj-monitor.md:412
+  tekst: '`ESP_ERROR_CHECK` тут стоїть лише навколо NVS і створення шини — того, без чого пристрій не
+    має сенсу.'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-COM-085
+  src: inserts/components-2026-08.md:95
+  tekst: Поріг для DS18B20 не випадковий і не збігається з паспортною похибкою.
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-46-036
+  src: manual/46-dyspleyi.md:47
+  tekst: Для пристрою на батарейці це головна стаття витрат, і керування підсвіткою через транзистор або
+    PWM — не оптимізація, а необхідність (розділ 06).
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-E-079
+  src: dodatky/e-interfeysy.md:48
+  tekst: ADS1256, MCP3208 · Що дає → зовнішній точний ADC
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-02-077
+  src: manual/02-chipy.md:52
+  tekst: Далі від цього ще відрізають своє бутлоадер, стек ROM, Wi-Fi і сам застосунок.
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-30-050
+  src: manual/30-struktura.md:138
+  tekst: '**PSRAM є, але поводиться не так, як гадають.** Тут два поширені непорозуміння, і вони протилежні.'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-18-001
+  src: manual/18-rozdily-fleshu.md:3
+  tekst: 'Флеш ESP32 — не один суцільний шматок пам''яті, а набір областей із різним призначенням: бутлоадер,
+    таблиця розділів, застосунок, сховище налаштувань, файлова система.'
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-26-101
+  src: manual/26-zboyi.md:225
+  tekst: Потребує розділу типу `coredump` у таблиці розділів (розділ 18).
+  klas: F
+  fayl: 4aac28c3-partition-tables.rst
+  fayly:
+  - 4aac28c3-partition-tables.rst
+- id: T-50-037
+  src: manual/50-bezpeka.md:89
+  tekst: Незахищений OTA означає, що будь-хто може залити свою прошивку.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-08-011
+  src: manual/08-platy.md:15
+  tekst: '`ESP32-WROVER`, `-B`, `-E` · Особливості → **з PSRAM**; частина пінів зайнята нею'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-23-013
+  src: manual/23-triazh.md:22
+  tekst: '`ESP32-WROOM-32D`, `-32E` · Що це значить практично → пізніші ревізії, той самий код'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-45-013
+  src: manual/45-sensory.md:31
+  tekst: '**DS18B20** — тільки температура, але на довгому дроті, у герметичному зонді, кілька на одній
+    лінії (розділ 37).'
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-55-083
+  src: manual/55-polova-diagnostyka.md:176
+  tekst: У NVS може лежати конфігурація, якої немає більше ніде, і після заміни плати вона знадобиться.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-23-015
+  src: manual/23-triazh.md:23
+  tekst: '`ESP32-WROVER`, `-B`, `-E` · Що це значить практично → те саме + PSRAM'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-11-104
+  src: manual/11-idf.md:266
+  tekst: '**Діагностика.** Coredump, розшифровка backtrace, JTAG, докладний лог підсистем — усе штатне
+    (розділи 26, 27).'
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-Z-176
+  src: dodatky/z-pokazhchyk.md:745
+  tekst: TP4056 — 298, 301, 334, 336
+  klas: C
+  fayl: tp4056.pdf
+  fayly:
+  - tp4056.pdf
+- id: T-08-009
+  src: manual/08-platy.md:14
+  tekst: '`ESP32-WROOM-32D`, `-32E` · Особливості → пізніші ревізії того самого'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-26-085
+  src: manual/26-zboyi.md:195
+  tekst: '`rst:0xc` — програмне скидання ядра, типово після паніки.'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-A-046
+  src: dodatky/a-pinouty.md:31
+  tekst: 25 · ADC → ADC2_8
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-08-012
+  src: manual/08-platy.md:16
+  tekst: '`ESP32-S3-WROOM-1` · Чип → S3'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-23-052
+  src: manual/23-triazh.md:104
+  tekst: Шапка з'єднання, яку `esptool` друкує перед будь-якою командою, називає сімейство, ревізію кремнію
+    і MAC (розділ 17).
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-39-072
+  src: manual/39-wifi.md:178
+  tekst: Пристрій із RSSI −82 успішно пінгується і навіть віддає невеликі пакети — але OTA-оновлення на
+    кілька сотень кілобайтів не проходить жодного разу (розділ 19).
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-04-150
+  src: manual/04-peryferiya.md:202
+  tekst: DAC — тільки classic і S2.
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-E-048
+  src: dodatky/e-interfeysy.md:29
+  tekst: Разом на одній шині — конфлікт; розв'язується перемичкою на MPU6050 (адреса `0x69`) або мультиплексором
+    (розділ 35).
+  klas: F
+  fayl: mpu6050.pdf
+  fayly:
+  - mpu6050.pdf
+- id: T-23-018
+  src: manual/23-triazh.md:25
+  tekst: '`ESP32-C3-MINI-1` · Чип → ESP32-C3'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-19-024
+  src: manual/19-ota.md:41
+  tekst: Головне проєктне обмеження OTA — **застосунок займає місце двічі**.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-F-008
+  src: dodatky/f-oflayn.md:21
+  tekst: Версія та сама, що у вашого IDF - [ ] **Datasheet** кожного сімейства, з яким працюєте - [ ]
+    **Technical Reference Manual** на основне сімейство - [ ] **Datasheet модуля** (WROOM-32, S3-WROOM-1,
+    C3-MINI-1) - [ ] **Схеми плат розробки**, які використовуєте - [ ] **Пінаути** — картинками, не закладками
+    браузера - [ ] Datasheet кожного датчика й модуля вашого проєкту
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-28-055
+  src: manual/28-analizator.md:102
+  tekst: '- **сигнал аналоговий** — вихід датчика, пульсації живлення, шум на лінії ADC; - **підозра на
+    форму, а не на дані** — завалені фронти через довгий дріт або велику ємність шини, дзвін, викиди;
+    - **треба побачити просадку живлення** в момент увімкнення радіо: це мілісекунди, мультиметр їх не
+    покаже; - **шина швидша**, ніж бере аналізатор.'
+  klas: C
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-E-073
+  src: dodatky/e-interfeysy.md:46
+  tekst: MAX31855 · Що дає → термопара
+  klas: F
+  fayl: max31855.pdf
+  fayly:
+  - max31855.pdf
+- id: T-B-199
+  src: dodatky/b-symptomy.md:106
+  tekst: Пінги ходять, OTA не проходить · Розділ → 19, 39
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-18-050
+  src: manual/18-rozdily-fleshu.md:97
+  tekst: 'Чому саме тут, а не в коді: значення в NVS переживає оновлення прошивки.'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-H-014
+  src: dodatky/h-dzherela.md:33
+  tekst: Саме він каже, які виводи доступні й скільки флешу та PSRAM усередині.
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-18-011
+  src: manual/18-rozdily-fleshu.md:26
+  tekst: '`nvs` · Тип → data'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-13-065
+  src: manual/13-pio.md:193
+  tekst: '| Виріб, OTA, серійність, довгий супровід | ESP-IDF (розділ 11) |'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-01-076
+  src: manual/01-platforma.md:97
+  tekst: Ціна плати · RP2040 → низька
+  klas: F
+  fayl: rp2040.pdf
+  fayly:
+  - rp2040.pdf
+- id: T-58-055
+  src: manual/58-dovedennya.md:121
+  tekst: '**Безпека**: креденшели в NVS, унікальні ключі, HTTPS із перевіркою (розділ 50).'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-20-005
+  src: manual/20-bekap.md:5
+  tekst: Практично незворотний лише один клас операцій — запис eFuse.
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-13-055
+  src: manual/13-pio.md:172
+  tekst: '**Бібліотека не знаходиться.** Ім''я в `lib_deps` має точно відповідати реєстру, разом з іменем
+    автора: `adafruit/Adafruit BME280 Library`, а не просто назва.'
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-19-005
+  src: manual/19-ota.md:13
+  tekst: 'Розбивка з OTA має **два розділи для застосунку** замість одного:'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-COM-063
+  src: inserts/components-2026-08.md:66
+  tekst: LDO з малим падінням · Для чого → тихе живлення для ADC
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-K15-034
+  src: kartky/k15-seriyna.md:51
+  tekst: 'Залити двадцятьом платам однаковий NVS означає двадцять пристроїв з однаковою особистістю: однаковий
+    серійний номер, однакові ключі.'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-04-039
+  src: manual/04-peryferiya.md:66
+  tekst: 'MCPWM · Що це → [[classic]] [[S3]] моторний PWM: мертвий час, аварійне вимкнення'
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-Z-042
+  src: dodatky/z-pokazhchyk.md:171
+  tekst: eFuse — 4, 27, 37, 74, 123, 131, 139–140, 142, 145, 159, 175, 206, 285, 335, 374
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-17-079
+  src: manual/17-esptool.md:184
+  tekst: У NVS лежать не лише ваші налаштування, а й калібрувальні дані радіо, збережені креденшели Wi-Fi
+    і конфігурація конкретного пристрою.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-K03-015
+  src: kartky/k03-pidkl.md:27
+  tekst: '`CH9102`, `CH9102F` · Драйвер → Windows: окремий, не той, що для CH340'
+  klas: C
+  fayl: ch340.pdf
+  fayly:
+  - ch340.pdf
+- id: T-25-005
+  src: manual/25-log.md:16
+  tekst: '| Монітор | Коли він | Вихід |'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-C-121
+  src: dodatky/c-komandy.md:213
+  tekst: python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
+  klas: F
+  fayl: 4aac28c3-partition-tables.rst
+  fayly:
+  - 4aac28c3-partition-tables.rst
+- id: T-00-062
+  src: manual/00-pro-dovidnyk.md:146
+  tekst: '**Незворотне.** Операція, яку не можна скасувати: перепалений eFuse, стертий флеш без дампа,
+    спалений пін.'
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-59-071
+  src: manual/59-proj-monitor.md:187
+  tekst: ESP_LOGI(TAG, "BME280 знайдено і налаштовано");
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-04-028
+  src: manual/04-peryferiya.md:56
+  tekst: TWAI · Що це → CAN-шина, сумісна з автомобільною
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-59-139
+  src: manual/59-proj-monitor.md:431
+  tekst: У лозі — `BME280 знайдено і налаштовано`.
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-18-046
+  src: manual/18-rozdily-fleshu.md:85
+  tekst: 'Там є типові варіанти: одна `factory`, дві OTA-області, варіанти під різні обсяги флешу.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-02-071
+  src: manual/02-chipy.md:40
+  tekst: USB · H2 → Serial-JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-46-027
+  src: manual/46-dyspleyi.md:24
+  tekst: '**OLED SSD1306** — типовий вибір для службової інформації.'
+  klas: C
+  fayl: 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  fayly:
+  - 661478ed-u8x8_d_ssd1306_128x64_noname.c
+  - ssd1306.pdf
+- id: T-30-003
+  src: manual/30-struktura.md:9
+  tekst: 'До того, як виконається перший рядок вашого коду, система вже зробила чимало (розділ 16): ROM
+    запустив бутлоадер, той знайшов і перевірив застосунок, ініціалізувалися тактування, купа, периферія
+    за замовчуванням, і **запустився планувальник FreeRTOS**.'
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-17-053
+  src: manual/17-esptool.md:129
+  tekst: 'Можна читати й окремий шматок — наприклад, лише розділ NVS:'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-04-029
+  src: manual/04-peryferiya.md:56
+  tekst: TWAI · Розділ → 38
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-A-055
+  src: dodatky/a-pinouty.md:35
+  tekst: 34–39 · ADC → ADC1
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-27-061
+  src: manual/27-jtag.md:139
+  tekst: '**Піни JTAG зайняті проєктом** — див. попередження вище. 5.'
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-23-019
+  src: manual/23-triazh.md:25
+  tekst: '`ESP32-C3-MINI-1` · Що це значить практично → одноядерний RISC-V'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-Z-023
+  src: dodatky/z-pokazhchyk.md:90
+  tekst: BME280 — 105–107, 215, 257, 259, 261, 264, 325–326, 328, 332, 334, 336, 340, 386, 402
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-20-043
+  src: manual/20-bekap.md:99
+  tekst: '**Не перенесеться MAC-адреса.** Вона зашита в eFuse кожного чипа, а не у флеші, і дампом не
+    копіюється.'
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-08-015
+  src: manual/08-platy.md:17
+  tekst: '`ESP32-C3-MINI-1` · Особливості → малий і дешевий'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-01-065
+  src: manual/01-platforma.md:95
+  tekst: Сон · STM32 → мкА
+  klas: F
+  fayl: 5df69a15-sleep_modes.rst
+  fayly:
+  - 5df69a15-sleep_modes.rst
+- id: T-27-055
+  src: manual/27-jtag.md:130
+  tekst: '**Перше під''єднання майже ніколи не працює з першого разу.** Драйвери USB у Windows, права
+    на пристрій у Linux (правила udev), конфлікт із відкритим монітором порту.'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-23-100
+  src: manual/23-triazh.md:183
+  tekst: Напис на модулі звіряється з шапкою `esptool`.
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-01-037
+  src: manual/01-platforma.md:89
+  tekst: '| | ESP32 | AVR (Arduino Uno) | STM32 | RP2040 | Raspberry Pi |'
+  klas: F
+  fayl: rp2040.pdf
+  fayly:
+  - rp2040.pdf
+- id: T-K11-004
+  src: kartky/k11-nikoly.md:7
+  tekst: Помилковий біт може назавжди відібрати JTAG, download mode або можливість перепрошивки.
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-29-019
+  src: manual/29-symptomy.md:47
+  tekst: 'Дії за порядком: увійти вручну кнопками `BOOT` + `EN` (картка [К4](#k-boot)) → закрити монітор,
+    який тримає порт → знизити `--baud 115200` → додати `--no-stub` → зняти обв''язку зі strapping-пінів
+    → під''єднати без хаба.'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-K01-012
+  src: kartky/k01-triazh.md:14
+  tekst: '`ESP32-C3-MINI-1` · Чип → ESP32-C3'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-09-109
+  src: manual/09-pidklyuchennya.md:226
+  tekst: CH9102 потребує іншого драйвера, ніж CH340, попри схожість.
+  klas: C
+  fayl: ch340.pdf
+  fayly:
+  - ch340.pdf
+- id: T-09-021
+  src: manual/09-pidklyuchennya.md:31
+  tekst: '`CH9102`, `CH9102F` · Windows → **окремий** драйвер, не той, що CH340'
+  klas: C
+  fayl: ch340.pdf
+  fayly:
+  - ch340.pdf
+- id: T-31-081
+  src: manual/31-freertos.md:234
+  tekst: Правильний спосіб — порівняння часу без жодного очікування; готовий зразок і решта роботи з GPIO
+    — розділ 33.
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-07-001
+  src: manual/07-gpio.md:3
+  tekst: Матриця GPIO робить більшість пінів взаємозамінними (розділ 04) — і саме через це легко забути,
+    що взаємозамінні **не всі**.
+  klas: C
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-COM-080
+  src: inserts/components-2026-08.md:89
+  tekst: '| Менша флеш | `flash-id` показує менше за заявлене |'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-A-059
+  src: dodatky/a-pinouty.md:46
+  tekst: '| GPIO | Обмеження | Примітка |'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-20-072
+  src: manual/20-bekap.md:154
+  tekst: 'Особливо це стосується чужого пристрою, який ви бачите вперше: там у NVS може лежати єдина копія
+    конфігурації, якої більше немає ніде.'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-33-059
+  src: manual/33-peryferiya-kod.md:142
+  tekst: '[[classic]] [[S3]] MCPWM зроблений для силової електроніки й уміє те, чого LEDC не вміє:'
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-60-021
+  src: manual/60-proj-loger.md:33
+  tekst: 18650 з захистом · Примітка → розділ 53
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-B-132
+  src: dodatky/b-symptomy.md:75
+  tekst: 'CAN: лічильник помилок росте · Причина → один вузол на шині'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-04-104
+  src: manual/04-peryferiya.md:120
+  tekst: DAC · classic → **2**
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-63-080
+  src: manual/63-proj-mist.md:251
+  tekst: '- **Modbus RTU ↔ TCP** зі штатним компонентом `esp-modbus` замість прозорого мосту (розділ 34);
+    - **Кілька послідовних портів** одночасно; - **Фільтрація** на боці CAN — приймати лише потрібні ідентифікатори,
+    не турбуючи процесор рештою; - **Буферизація у флеш** для мостів, де втрата даних неприйнятна; - **Companion-роль**
+    (розділ 57): міст як постійна частина великої системи, з паспортом і версіонуванням (розділ 56).'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-C-033
+  src: dodatky/c-komandy.md:69
+  tekst: '| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-09-078
+  src: manual/09-pidklyuchennya.md:148
+  tekst: 'Найчастіші винуватці: забутий відкритий монітор, Arduino IDE у фоні, `screen` у сусідньому терміналі,
+    PlatformIO.'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-A-119
+  src: dodatky/a-pinouty.md:136
+  tekst: Завдяки матриці GPIO будь-який із цих сигналів переноситься на інший пін (розділ 04).
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-59-055
+  src: manual/59-proj-monitor.md:121
+  tekst: '#define REG_RESET  0xE0'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-04-119
+  src: manual/04-peryferiya.md:122
+  tekst: USB · C3 → JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-39-054
+  src: manual/39-wifi.md:140
+  tekst: 'Правильно — зберігати в NVS (розділ 18), а вводити одним із способів provisioning:'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-17-077
+  src: manual/17-esptool.md:180
+  tekst: esptool --port /dev/ttyUSB0 erase-flash
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-50-036
+  src: manual/50-bezpeka.md:89
+  tekst: OTA — це канал, яким у пристрій потрапляє код.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-34-008
+  src: manual/34-uart.md:19
+  tekst: 'Решта портів вільні, і завдяки матриці GPIO їх можна вивести майже на будь-які піни (розділ
+    04):'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-Z-051
+  src: dodatky/z-pokazhchyk.md:205
+  tekst: ESP32-WROOM-32 — 7, 39, 79, 123, 152, 401
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-32-065
+  src: manual/32-nadiynist.md:166
+  tekst: '**Операції з флешем.** Запис у NVS зупиняє виконання коду з флешу (розділ 03).'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-21-096
+  src: manual/21-seriyna.md:202
+  tekst: Спільний образ і унікальний NVS — це два різні шари.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-18-003
+  src: manual/18-rozdily-fleshu.md:8
+  tekst: Це та частина системи, яку більшість не чіпає роками — рівно до дня, коли застосунок перестає
+    вміщатися у відведений розділ або треба додати OTA.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-K08-028
+  src: kartky/k08-symptomy.md:15
+  tekst: 9 · Симптом → ADC читає дурницю
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-60-022
+  src: manual/60-proj-loger.md:34
+  tekst: TP4056 **з захистом** · Кількість → 1
+  klas: C
+  fayl: tp4056.pdf
+  fayly:
+  - tp4056.pdf
+- id: T-A-038
+  src: dodatky/a-pinouty.md:26
+  tekst: 15 · ADC → ADC2_3
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-02-097
+  src: manual/02-chipy.md:124
+  tekst: '**Потребує уваги:** номери пінів — вони інші скрізь (картка [К9](#k-pinouty)); Bluetooth — див.
+    вище; обсяг пам''яті, якщо ви покладалися на PSRAM; периферія, якої в цільовому чипі просто немає.'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-04-132
+  src: manual/04-peryferiya.md:150
+  tekst: '**DAC є лише в classic і S2.** Справжній аналоговий вихід більше ніде не з''явився.'
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-COM-083
+  src: inserts/components-2026-08.md:92
+  tekst: '| Підробка DS18B20 | розбіжність понад **1.5 °C** між датчиками в кімнатній воді |'
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-27-020
+  src: manual/27-jtag.md:41
+  tekst: Якщо в проєкті ці піни переналаштовані під щось інше — USB-JTAG перестає працювати, і виглядає
+    це як «відлагоджувач раптом не під'єднується».
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-61-056
+  src: manual/61-proj-kanal.md:162
+  tekst: Ключі читаються **з NVS**, а не зашиті в код.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-39-069
+  src: manual/39-wifi.md:174
+  tekst: '| −75…−85 | межа: обриви, повільно, OTA може не пройти |'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-B-143
+  src: dodatky/b-symptomy.md:83
+  tekst: ADC читає дурницю · Дія → перенести на ADC1
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-18-051
+  src: manual/18-rozdily-fleshu.md:97
+  tekst: Один образ можна залити на сто плат, а різне для кожної записати в NVS окремо — основа серійного
+    виробництва (розділ 21).
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-25-036
+  src: manual/25-log.md:64
+  tekst: 'Для `idf.py monitor` є **власний спосіб**, і він кращий за перенаправлення: **`Ctrl+L`** просто
+    під час роботи.'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-K08-047
+  src: kartky/k08-symptomy.md:21
+  tekst: 15 · Найчастіша причина → стерто разом із калібруванням і NVS
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-K06-021
+  src: kartky/k06-bootlog.md:22
+  tekst: '`0xc` · Що сталося → скидання ядра з коду; часто після паніки'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-Z-052
+  src: dodatky/z-pokazhchyk.md:207
+  tekst: ESP32-WROOM-32D — 79, 152
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-04-103
+  src: manual/04-peryferiya.md:119
+  tekst: TWAI (CAN) · H2 → 1
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-22-055
+  src: manual/22-zberezhennya-stanu.md:125
+  tekst: Другий бутлоадер безкоштовно друкує версію ESP-IDF, обсяг флешу, який він бачить, і **всю таблицю
+    розділів з адресами** (розділ 16).
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-26-044
+  src: manual/26-zboyi.md:92
+  tekst: Тому **на RISC-V лог знімають `idf.py monitor`**, не чимось іншим.
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-Z-045
+  src: dodatky/z-pokazhchyk.md:179
+  tekst: ESP32-C3 — 7, 24, 39, 44, 80, 152, 364
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-01-071
+  src: manual/01-platforma.md:96
+  tekst: Реальний час · RP2040 → добре
+  klas: F
+  fayl: rp2040.pdf
+  fayly:
+  - rp2040.pdf
+- id: T-08-031
+  src: manual/08-platy.md:49
+  tekst: '**Світлодіоди.** Живлення і, часто, один на GPIO.'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-21-027
+  src: manual/21-seriyna.md:70
+  tekst: esptool --port "$PORT" read-mac | grep -i "MAC:"
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-33-119
+  src: manual/33-peryferiya-kod.md:272
+  tekst: Більше ніде в лінійці DAC немає (розділ 04).
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-G-147
+  src: dodatky/g-glosariy.md:181
+  tekst: '| ADC / DAC | Analog-to-Digital / Digital-to-Analog Converter |'
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-50-068
+  src: manual/50-bezpeka.md:189
+  tekst: Ключі в коді дістаються за п'ять хвилин; місце їм у NVS, унікальними на екземпляр.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-B-144
+  src: dodatky/b-symptomy.md:83
+  tekst: ADC читає дурницю · Розділ → 07, 33
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-04-049
+  src: manual/04-peryferiya.md:75
+  tekst: ADC · Розділ → 33
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-15-016
+  src: manual/15-oflayn.md:16
+  tekst: Потрібні MCPWM, PCNT, TWAI · Чому → повний доступ до периферії
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-K13-037
+  src: kartky/k13-zhyvlennya.md:61
+  tekst: '- **Дільник вимірювання напруги вмикати транзистором** — інакше він стає головним споживачем
+    уві сні - **Buck-boost, не LDO** — LDO відсікає половину ємності 18650 - **Плата розробки для сну
+    не годиться**: USB-міст, стабілізатор і світлодіод не сплять. 20 мА замість 20 мкА — це вони - **Не
+    заряджати літій нижче 0 °C**'
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-02-069
+  src: manual/02-chipy.md:40
+  tekst: USB · C3 → Serial-JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-04-101
+  src: manual/04-peryferiya.md:119
+  tekst: TWAI (CAN) · C3 → 1
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-K01-007
+  src: kartky/k01-triazh.md:11
+  tekst: '`ESP32-WROOM-32` · Що це значить → двоядерний Xtensa, без PSRAM'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-01-006
+  src: manual/01-platforma.md:18
+  tekst: '**Кристал (SoC).** Власне чип: `ESP32`, `ESP32-S3`, `ESP32-C3`.'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-43-022
+  src: manual/43-lora.md:35
+  tekst: '`RFM95` — це модуль на чипі `SX1276`, тому в бібліотеках вони взаємозамінні.'
+  klas: C
+  fayl: sx1276.pdf
+  fayly:
+  - sx1276.pdf
+- id: T-02-068
+  src: manual/02-chipy.md:40
+  tekst: USB · S3 → OTG + JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-50-027
+  src: manual/50-bezpeka.md:66
+  tekst: Без неї ключ шифрування NVS лежить у тому самому флеші.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-46-049
+  src: manual/46-dyspleyi.md:79
+  tekst: На класичному ESP32 без PSRAM він працює з частковими буферами й обмеженнями.
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-A-041
+  src: dodatky/a-pinouty.md:27
+  tekst: 16, 17 · Примітка → вільні; зайняті на WROVER (PSRAM)
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-Z-050
+  src: dodatky/z-pokazhchyk.md:203
+  tekst: ESP32-S3-WROOM-1 — 7, 39, 79, 152, 401
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-E-072
+  src: dodatky/e-interfeysy.md:46
+  tekst: MAX31855 · Режим → 0
+  klas: F
+  fayl: max31855.pdf
+  fayly:
+  - max31855.pdf
+- id: T-K01-009
+  src: kartky/k01-triazh.md:12
+  tekst: '`ESP32-WROVER` · Що це значить → + PSRAM; вона займає частину пінів'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-33-100
+  src: manual/33-peryferiya-kod.md:240
+  tekst: Калібрувальні коефіцієнти зашиті в eFuse кожного чипа на заводі — ця функція їх використовує.
+  klas: F
+  fayl: 19d515b8-burn-efuse-cmd.rst
+  fayly:
+  - 19d515b8-burn-efuse-cmd.rst
+- id: T-26-035
+  src: manual/26-zboyi.md:68
+  tekst: '**Автоматично.** `idf.py monitor`, запущений з каталогу проєкту, робить це на льоту: під дампом
+    одразу з''являються імена функцій і рядки.'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-60-023
+  src: manual/60-proj-loger.md:34
+  tekst: TP4056 **з захистом** · Примітка → розділ 53
+  klas: C
+  fayl: tp4056.pdf
+  fayly:
+  - tp4056.pdf
+- id: T-Z-153
+  src: dodatky/z-pokazhchyk.md:581
+  tekst: MCP23017 — 57, 76, 365, 386
+  klas: F
+  fayl: mcp23017.pdf
+  fayly:
+  - mcp23017.pdf
+- id: T-21-046
+  src: manual/21-seriyna.md:110
+  tekst: '**Унікальне** — конфігурація в NVS.'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-06-086
+  src: manual/06-zhyvlennya.md:182
+  tekst: Розбудити можуть таймер, RTC GPIO, ULP або touch — залежно від сімейства.
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-45-011
+  src: manual/45-sensory.md:27
+  tekst: '**BMP280** — те саме без вологості, дешевший.'
+  klas: C
+  fayl: bmp280.pdf
+  fayly:
+  - bmp280.pdf
+- id: T-12-035
+  src: manual/12-arduino.md:103
+  tekst: '**API периферії.** Функції керування PWM і аналоговим введенням змінили сигнатури.'
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-C-039
+  src: dodatky/c-komandy.md:79
+  tekst: '`--before default-reset` і `--after hard-reset` — теж значення за замовчуванням; писати їх,
+    щоб «керувати скиданням», сенсу немає.'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-K10-010
+  src: kartky/k10-komandy.md:15
+  tekst: 'esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-08-014
+  src: manual/08-platy.md:17
+  tekst: '`ESP32-C3-MINI-1` · Чип → C3'
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-11-058
+  src: manual/11-idf.md:138
+  tekst: '| `idf.py erase-flash` | стерти (⚠ спершу дамп, картка К2) |'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-UA--021
+  src: inserts/ua-market-2026-08.md:54
+  tekst: '| TP4056 | **з захистом чи без** — на фото видно дві додаткові мікросхеми |'
+  klas: C
+  fayl: tp4056.pdf
+  fayly:
+  - tp4056.pdf
+- id: T-01-041
+  src: manual/01-platforma.md:90
+  tekst: Радіо на борту · RP2040 → ні (крім W)
+  klas: F
+  fayl: rp2040.pdf
+  fayly:
+  - rp2040.pdf
+- id: T-A-029
+  src: dodatky/a-pinouty.md:24
+  tekst: 13 · Обмеження → JTAG TCK
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-60-006
+  src: manual/60-proj-loger.md:15
+  tekst: '**Живлення:** 18650, ціль — не менше трьох місяців при вимірюванні раз на 15 хвилин.'
+  klas: C
+  fayl: ncr18650b.pdf
+  fayly:
+  - ncr18650b.pdf
+- id: T-12-056
+  src: manual/12-arduino.md:149
+  tekst: '| Потрібні MCPWM, PCNT, TWAI | ESP-IDF або виклики IDF зі скетча |'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-19-028
+  src: manual/19-ota.md:51
+  tekst: Розбивку під OTA треба закласти **до того, як перший пристрій поїхав**.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-63-061
+  src: manual/63-proj-mist.md:201
+  tekst: Міст на CAN за замовчуванням має працювати в режимі **`LISTEN_ONLY`** (розділ 38).
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-04-121
+  src: manual/04-peryferiya.md:122
+  tekst: USB · H2 → JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-Z-035
+  src: dodatky/z-pokazhchyk.md:135
+  tekst: CP2102 — 11, 25, 29, 79, 81, 83, 114, 366, 391
+  klas: F
+  fayl: cp2102.pdf
+  fayly:
+  - cp2102.pdf
+- id: T-E-139
+  src: dodatky/e-interfeysy.md:115
+  tekst: DRV8833 / TB6612 · Як → PWM + напрямок
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-K04-014
+  src: kartky/k04-boot.md:34
+  tekst: Ознака успіху — у моніторі порту рядок виду `waiting for download`.
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-38-059
+  src: manual/38-can.md:143
+  tekst: CAN сам стежить за помилками й має лічильники.
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-60-014
+  src: manual/60-proj-loger.md:30
+  tekst: DS18B20 у зонді · Кількість → 1
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-A-018
+  src: dodatky/a-pinouty.md:20
+  tekst: 4 · ADC → ADC2_0
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-25-006
+  src: manual/25-log.md:17
+  tekst: '`idf.py monitor` · Коли він → працюєте зі своїм проєктом ESP-IDF'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-Z-162
+  src: dodatky/z-pokazhchyk.md:632
+  tekst: PCF8574 — 57, 76, 267, 365, 386
+  klas: F
+  fayl: pcf8574.pdf
+  fayly:
+  - pcf8574.pdf
+- id: T-39-098
+  src: manual/39-wifi.md:247
+  tekst: 'RSSI логувати завжди: на межі OTA не проходить, коли пінги ще ходять.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-14-024
+  src: manual/14-shvydki-shlyakhy.md:78
+  tekst: OTA, веб-інтерфейс, відновлення зв'язку, інтеграція з системами домашньої автоматизації — усе
+    вже є.
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-01-009
+  src: manual/01-platforma.md:21
+  tekst: '**Модуль.** Кристал плюс кварц, флеш-пам''ять, антена і обв''язка, залиті в екранований корпус
+    із металевою кришкою: `ESP32-WROOM-32`, `ESP32-S3-WROOM-1`, `ESP32-C3-MINI-1`.'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-16-022
+  src: manual/16-boot.md:53
+  tekst: 'Причому в коді все правильно, і в 99 % часу пін поводиться нормально: значення має лише мілісекунда
+    після скидання.'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-18-054
+  src: manual/18-rozdily-fleshu.md:106
+  tekst: Стандартна реакція на пошкоджений NVS — стерти і переініціалізувати.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-23-030
+  src: manual/23-triazh.md:51
+  tekst: 'Переходьте до кроку 4: `esptool` назве сімейство сам, щойно під''єднається.'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-D-106
+  src: dodatky/d-panik.md:154
+  tekst: 'Звідси безкоштовно читається: **версія ESP-IDF**, **обсяг флешу очима бутлоадера** і **вся таблиця
+    розділів з адресами** — готова відповідь на «що всередині чужого пристрою» (розділ 24).'
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-07-045
+  src: manual/07-gpio.md:84
+  tekst: '| | Головний пін | Другий пін для входу в бутлоадер |'
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-48-022
+  src: manual/48-motory.md:54
+  tekst: 'Використовується LEDC (розділ 33) або, для серйозних задач, **MCPWM** (розділ 04): він дає мертвий
+    час між плечима моста й апаратне аварійне вимкнення.'
+  klas: F
+  fayl: da11cdab-ledc.rst
+  fayly:
+  - da11cdab-ledc.rst
+- id: T-63-054
+  src: manual/63-proj-mist.md:157
+  tekst: 'Параметри йдуть у NVS (розділ 18):'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-COM-059
+  src: inserts/components-2026-08.md:64
+  tekst: TP4056 **з захистом** · Для чого → заряд Li-ion
+  klas: C
+  fayl: tp4056.pdf
+  fayly:
+  - tp4056.pdf
+- id: T-K10-009
+  src: kartky/k10-komandy.md:14
+  tekst: 'esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-56-025
+  src: manual/56-pasport.md:57
+  tekst: '**Перелік компонентів** із конкретними позначеннями: не «датчик температури», а `DS18B20 у герметичному
+    зонді, 3 м кабель`.'
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-43-021
+  src: manual/43-lora.md:35
+  tekst: '**SX1276 / RFM95** — класика, широко доступні, море бібліотек.'
+  klas: C
+  fayl: sx1276.pdf
+  fayly:
+  - sx1276.pdf
+- id: T-45-079
+  src: manual/45-sensory.md:194
+  tekst: DHT22 гірший за BME280 майже в усьому; для нового проєкту вибір інший.
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-02-138
+  src: manual/02-chipy.md:183
+  tekst: Налагодження без адаптера · Чому → вбудований USB-JTAG (розділ 27)
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-49-057
+  src: manual/49-kamera.md:152
+  tekst: '**PSRAM вирішує.** Для камери вона обов''язкова; для звуку й картки бажана.'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-58-020
+  src: manual/58-dovedennya.md:50
+  tekst: '**Причину скидання** першим рядком `app_main`.'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-E-060
+  src: dodatky/e-interfeysy.md:42
+  tekst: SX1276 / RFM95 · Режим → 0
+  klas: C
+  fayl: sx1276.pdf
+  fayly:
+  - sx1276.pdf
+- id: T-45-004
+  src: manual/45-sensory.md:12
+  tekst: 'Чесна оцінка: **DHT22 гірший за BME280 і SHT3x майже за всіма параметрами**, а коштує не набагато
+    менше.'
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-58-050
+  src: manual/58-dovedennya.md:111
+  tekst: '**OTA з відкатом**, якщо пристрій має оновлюватися.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-14-059
+  src: manual/14-shvydki-shlyakhy.md:136
+  tekst: OTA з коробки · MicroPython → ні
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-14-060
+  src: manual/14-shvydki-shlyakhy.md:136
+  tekst: OTA з коробки · ESPHome → **так**
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-27-027
+  src: manual/27-jtag.md:71
+  tekst: У classic вбудованого USB-JTAG немає.
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-62-143
+  src: manual/62-proj-keruvannya.md:322
+  tekst: if (stan == STAN_AVARIYA) perejty(STAN_STOP, "ручне скидання");
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-37-016
+  src: manual/37-onewire.md:41
+  tekst: Паспортна похибка DS18B20 — **±0.5 °C у діапазоні −10…+85 °C** і **±2 °C** поза ним.
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-Z-040
+  src: dodatky/z-pokazhchyk.md:160
+  tekst: DS18B20 — 149, 223, 261, 264, 310–311, 333–334, 336, 340, 369, 388, 402
+  klas: C
+  fayl: ds18b20.pdf
+  fayly:
+  - ds18b20.pdf
+- id: T-K05-004
+  src: kartky/k05-proshyvka.md:10
+  tekst: '`bootloader.bin` · Що це → другий бутлоадер'
+  klas: F
+  fayl: a4dbe955-bootloader.rst
+  fayly:
+  - a4dbe955-bootloader.rst
+- id: T-Z-060
+  src: dodatky/z-pokazhchyk.md:229
+  tekst: ESP_ERR_OTA_PARTITION_CONFLICT — 137
+  klas: F
+  fayl: 4aac28c3-partition-tables.rst
+  fayly:
+  - 4aac28c3-partition-tables.rst
+- id: T-02-070
+  src: manual/02-chipy.md:40
+  tekst: USB · C6 → Serial-JTAG
+  klas: F
+  fayl: 71ff84df-configure-builtin-jtag.rst
+  fayly:
+  - 71ff84df-configure-builtin-jtag.rst
+- id: T-K05-008
+  src: kartky/k05-proshyvka.md:11
+  tekst: '`partition-table.bin` · Що це → таблиця розділів'
+  klas: F
+  fayl: 4aac28c3-partition-tables.rst
+  fayly:
+  - 4aac28c3-partition-tables.rst
+- id: T-B-145
+  src: dodatky/b-symptomy.md:84
+  tekst: ADC нелінійний · Причина → немає калібрування
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-A-077
+  src: dodatky/a-pinouty.md:67
+  tekst: '| GPIO | Обмеження | Примітка |'
+  klas: F
+  fayl: 4ddc5239-gpio.rst
+  fayly:
+  - 4ddc5239-gpio.rst
+- id: T-11-097
+  src: manual/11-idf.md:244
+  tekst: '- **IntelliSense**, налаштований на конкретний чип: автодоповнення знає, які функції доступні
+    саме тут; - **налагодження в один клік** (розділ 27); - **перегляд регістрів периферії** з розшифровкою
+    бітових полів; - **вбудований монітор** із розшифровкою backtrace.'
+  klas: F
+  fayl: 51b28bff-idf-monitor.rst
+  fayly:
+  - 51b28bff-idf-monitor.rst
+- id: T-08-006
+  src: manual/08-platy.md:13
+  tekst: '`ESP32-WROOM-32` · Чип → classic'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-A-026
+  src: dodatky/a-pinouty.md:23
+  tekst: 12 · ADC → ADC2_5
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-07-071
+  src: manual/07-gpio.md:137
+  tekst: На голому `WROOM-32` вони вільні.
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-18-125
+  src: manual/18-rozdily-fleshu.md:241
+  tekst: 'Розбивку обирають один раз, на початку, з запасом: OTA її не оновлює, а зміна потім вимагає
+    фізичного доступу до кожного пристрою.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-23-012
+  src: manual/23-triazh.md:22
+  tekst: '`ESP32-WROOM-32D`, `-32E` · Чип → ESP32 classic'
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-58-065
+  src: manual/58-dovedennya.md:142
+  tekst: 'Випробування зникнення живлення варто робити **грубо**: вимикати живлення в довільні моменти,
+    багато разів, зокрема під час запису у флеш і під час OTA.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-COM-048
+  src: inserts/components-2026-08.md:54
+  tekst: TJA1050, MCP2551 · Для чого → трансивер CAN
+  klas: C
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-A-013
+  src: dodatky/a-pinouty.md:18
+  tekst: 2 · ADC → ADC2_2
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-49-034
+  src: manual/49-kamera.md:93
+  tekst: 'На класичному ESP32 з PSRAM реалістично: висока роздільність — одиниці кадрів на секунду; низька
+    — десятки.'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-04-107
+  src: manual/04-peryferiya.md:120
+  tekst: DAC · C3 → ні
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-50-026
+  src: manual/50-bezpeka.md:66
+  tekst: 'Важливо розуміти межу: шифрування NVS має сенс **разом із** Flash Encryption.'
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-D-032
+  src: dodatky/d-panik.md:20
+  tekst: '`0xb` · Назва → TGWDT_CPU_RESET'
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-E-027
+  src: dodatky/e-interfeysy.md:19
+  tekst: INA219 / INA226 · Адреса → `0x40`+
+  klas: C
+  fayl: ina219.pdf
+  fayly:
+  - ina219.pdf
+- id: T-38-011
+  src: manual/38-can.md:30
+  tekst: 'Наслідок для проєктування: у CAN ви думаєте не «хто кому надсилає», а «яка інформація існує
+    в системі».'
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-50-022
+  src: manual/50-bezpeka.md:60
+  tekst: NVS за замовчуванням лежить у флеші **відкритим текстом**.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-COM-060
+  src: inserts/components-2026-08.md:64
+  tekst: TP4056 **з захистом** · Застереження → ⛔ версія без захисту виглядає так само
+  klas: C
+  fayl: tp4056.pdf
+  fayly:
+  - tp4056.pdf
+- id: T-49-035
+  src: manual/49-kamera.md:97
+  tekst: 'Без PSRAM камера обмежена дуже маленькими кадрами: буфер просто нема де тримати (розділ 03).'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-18-122
+  src: manual/18-rozdily-fleshu.md:236
+  tekst: NVS переживає оновлення прошивки, і саме тому там живе все, що конкретне для екземпляра.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-19-031
+  src: manual/19-ota.md:57
+  tekst: 'Практично: якщо є хоч найменша ймовірність, що виріб доведеться оновлювати в полі, — OTA-розбивка
+    ставиться одразу, навіть якщо сама функція поки не написана.'
+  klas: F
+  fayl: 1c119dba-ota.rst
+  fayly:
+  - 1c119dba-ota.rst
+- id: T-08-019
+  src: manual/08-platy.md:25
+  tekst: На модулях із PSRAM частина GPIO недоступна, хоча на пінауті чипа вони є.
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-27-068
+  src: manual/27-jtag.md:156
+  tekst: Паніка — за backtrace і coredump (розділ 26).
+  klas: F
+  fayl: 569e266f-fatal-errors.rst
+  fayly:
+  - 569e266f-fatal-errors.rst
+- id: T-E-076
+  src: dodatky/e-interfeysy.md:47
+  tekst: MAX6675 · Що дає → термопара, дешевший
+  klas: F
+  fayl: max6675.pdf
+  fayly:
+  - max6675.pdf
+- id: T-44-054
+  src: manual/44-neznayomyy-modul.md:97
+  tekst: Для SPI — прочитати регістр ідентифікації, який є майже в кожної мікросхеми (в BME280 це `0xD0`,
+    що має повернути `0x60`).
+  klas: C
+  fayl: 8e2fcbf9-bme280.c
+  fayly:
+  - 8e2fcbf9-bme280.c
+  - 95d81a75-bme280_defs.h
+  - bme280.pdf
+- id: T-04-109
+  src: manual/04-peryferiya.md:120
+  tekst: DAC · H2 → ні
+  klas: F
+  fayl: f48eaf67-dac.rst
+  fayly:
+  - f48eaf67-dac.rst
+- id: T-Z-046
+  src: dodatky/z-pokazhchyk.md:181
+  tekst: ESP32-C3-MINI-1 — 7, 79, 152, 401
+  klas: F
+  fayl: 776c3ac3-esp32c3.inc
+  fayly:
+  - 776c3ac3-esp32c3.inc
+- id: T-63-012
+  src: manual/63-proj-mist.md:21
+  tekst: Шлюз шини · Один бік → CAN
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-49-066
+  src: manual/49-kamera.md:174
+  tekst: Цифровий мікрофон по I²S краще за аналоговий через ADC майже завжди.
+  klas: F
+  fayl: 66dc1dae-adc_oneshot.rst
+  fayly:
+  - 66dc1dae-adc_oneshot.rst
+- id: T-E-074
+  src: dodatky/e-interfeysy.md:46
+  tekst: MAX31855 · Бібліотека → Adafruit MAX31855
+  klas: F
+  fayl: max31855.pdf
+  fayly:
+  - max31855.pdf
+- id: T-K09-016
+  src: kartky/k09-pinouty.md:29
+  tekst: '| **26–32** | флеш і PSRAM. Не чіпати |'
+  klas: F
+  fayl: 56497005-external-ram.rst
+  fayly:
+  - 56497005-external-ram.rst
+- id: T-24-040
+  src: manual/24-chuzha-proshyvka.md:84
+  tekst: Для повного розбору є сторонні розбирачі формату NVS.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst
+- id: T-08-020
+  src: manual/08-platy.md:25
+  tekst: Тому проєкт, розведений під `WROOM`, не завжди переноситься на `WROVER` без змін — попри те,
+    що модулі однакові за розміром і виводами.
+  klas: F
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  fayly:
+  - d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- id: T-04-102
+  src: manual/04-peryferiya.md:119
+  tekst: TWAI (CAN) · C6 → **2**
+  klas: F
+  fayl: 5827f9c3-twai.rst
+  fayly:
+  - 5827f9c3-twai.rst
+- id: T-17-034
+  src: manual/17-esptool.md:80
+  tekst: '`flash-id` як перша команда зручна тим, що після шапки додає ще й те, що однаково знадобиться
+    далі: виробник і **обсяг** флешу.'
+  klas: F
+  fayl: 2217d639-basic-commands.rst
+  fayly:
+  - 2217d639-basic-commands.rst
+  - 9d5cf303-basic-options.rst
+  - a843db94-advanced-options.rst
+- id: T-18-060
+  src: manual/18-rozdily-fleshu.md:120
+  tekst: У прошивці, що йде в поле, цей код спрацює саме тоді, коли NVS переповнився — тобто несподівано,
+    у роботі.
+  klas: F
+  fayl: c02027a1-nvs_flash.rst
+  fayly:
+  - c02027a1-nvs_flash.rst

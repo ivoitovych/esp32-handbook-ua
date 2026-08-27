@@ -68,7 +68,7 @@
   > 
   > Опір 100–220 Ом обмежує цей дік-струм до розумних величин (~30–50 мА).
 - **Спосіб і дата:** Типові рекомендації в MOSFET datasheet та сучасна практика, 2026-08-26
-- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору.
+- **Нотатка:** Цей резистор захищає GPIO від перегрівання через розсіювання енергії в конденсаторі затвору. | Переглянуто 2026-08-27 у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа, який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.
 - **Прохід:** m2-65-elektronika-05
 
 ---
@@ -1124,7 +1124,7 @@
 
 ---
 
-<!-- fc id:T-A-065 sha:8d8d045c src:dodatky/a-pinouty.md:50 klas:F -->
+<!-- fc id:T-A-065 sha:8d8d045c src:dodatky/a-pinouty.md:50 klas:A -->
 ### T-A-065 · komirka · рядок 50
 
 **Книга каже, дослівно:**
@@ -1133,7 +1133,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Дослівно з джерела:**
+  > The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ згадує обмеження для флеш/PSRAM.
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -1150,7 +1156,7 @@
 
 ---
 
-<!-- fc id:T-A-067 sha:5ead256e src:dodatky/a-pinouty.md:51 klas:F -->
+<!-- fc id:T-A-067 sha:5ead256e src:dodatky/a-pinouty.md:51 klas:A -->
 ### T-A-067 · komirka · рядок 51
 
 **Книга каже, дослівно:**
@@ -1159,7 +1165,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Дослівно з джерела:**
+  > PSRAM access speed may be faster than flash access, so the overall application performance may be better. For example, if the PSRAM is an Octal mode (8-line PSRAM) and is configured to 80 MHz, then it is faster than a Quad flash (4-line flash) which is configured to 80 MHz.
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** Документ згадує octal PSRAM на цих чипах.
+- **Прохід:** m2-hvylya3
 
 ---
 

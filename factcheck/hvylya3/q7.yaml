@@ -1,0 +1,137 @@
+- id: T-23-010
+  verdykt: pidtverdzheno
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    At the core of the module is the ESP32-D0WD-V3 chip or ESP32-D0WDR2-V3 chip
+  de: раздел 1.2, Series Comparison
+  notatka: Вістниця описує, що в основі модуля WROOM-32E/32UE лежить ESP32-D0WD-V3 або ESP32-D0WDR2-V3, що є classic ESP32
+
+- id: T-08-017
+  verdykt: pidtverdzheno
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    ESP32-WROOM-32UE with a connector for an external antenna
+  de: раздел 1.2 Series Comparison
+  notatka: Документ підтверджує, що UE варіант має роз'єм для зовнішної антени
+
+- id: T-K01-006
+  verdykt: pidtverdzheno
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    At the core of the module is the ESP32-D0WD-V3 chip or ESP32-D0WDR2-V3 chip
+  de: раздел 1.2
+  notatka: Те саме, що T-23-010 - ESP32 classic
+
+- id: T-39-078
+  verdykt: pidtverdzheno
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    MHF I connector from I-PEX
+  de: раздел 10.2 Dimensions of External Antenna Connector, лінія про сумісність
+  notatka: Документ описує роз'єм типу I-PEX MHF I для зовнішної антени у модулях UE
+
+- id: T-08-013
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep 'ESP32-S3', 0 влучань
+  notatka: У документі про ESP32-WROOM-32E/32UE немає інформації про ESP32-S3-WROOM-1
+
+- id: T-08-007
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'WROOM-32[^E]', 0 влучань
+  notatka: Документ про WROOM-32E/32UE, а не про старіший WROOM-32 без букви
+
+- id: T-23-017
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'S3', 0 влучань
+  notatka: У документі нема інформації про ESP32-S3-WROOM-1 (це інший чип)
+
+- id: T-08-008
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'WROOM-32D', 0 влучань
+  notatka: Документ описує WROOM-32E та WROOM-32UE, але не WROOM-32D
+
+- id: T-08-081
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'minimum|minimal|schematics|circuit', 5 влучань
+  notatka: Документ не містить прикладу мінімальної обв'язки модуля WROOM
+
+- id: T-23-016
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'S3', 0 влучань
+  notatka: Немає інформації про ESP32-S3-WROOM-1
+
+- id: T-K01-011
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'S3', 0 влучань
+  notatka: Документ про WROOM-32E/32UE, не про S3-WROOM-1
+
+- id: T-K01-010
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'S3', 0 влучань
+  notatka: Немає інформації про ESP32-S3-WROOM-1
+
+- id: T-39-076
+  verdykt: pidtverdzheno
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    ESP32-WROOM-32E: On-board PCB antenna
+  de: раздел 1.1 Features, Antenna Options
+  notatka: Документ підтверджує, що WROOM-32E (модуль WROOM-1 версії E) має PCB-антену на платі
+
+- id: T-23-013
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'WROOM-32D', 0 влучань
+  notatka: Документ описує WROOM-32E та WROOM-32UE, але не WROOM-32D
+
+- id: T-08-009
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'WROOM-32D', 0 влучань
+  notatka: Документ не містить інформації про WROOM-32D
+
+- id: T-08-012
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'S3', 0 влучань
+  notatka: Документ не про S3-WROOM-1
+
+- id: T-F-008
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'datasheet|technical reference', 3 влучань
+  notatka: Запис в книзі посилається на datasheet як зовнішнє джерело, саме по собі це не є частиною datasheet-у
+
+- id: T-Z-051
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -E '7.*39.*79|7.*39.*123', 0 влучань
+  notatka: Запис посилається на індекс книги, який не є частиною datasheet модуля
+
+- id: T-Z-052
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'WROOM-32D', 0 влучань
+  notatka: Документ не містить WROOM-32D
+
+- id: T-K01-007
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'WROOM-32[^E]', 0 влучань
+  notatka: Документ про WROOM-32E/32UE, не про старіший WROOM-32
+
+- id: T-Z-050
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'S3', 0 влучань
+  notatka: Запис посилається на індекс книги про S3-WROOM-1, якого немає в документі
+
+- id: T-01-009
+  verdykt: pidtverdzheno
+  fayl: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: |
+    40 MHz crystal oscillator
+  de: раздел 1.1 Features, Integrated Components on Module
+  notatka: Документ підтверджує, що модуль містить кварц, флеш і антену у металевому корпусі
+
+- id: T-08-006
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'WROOM-32[^E]', 0 влучань
+  notatka: Документ про WROOM-32E/32UE, не про старіший WROOM-32
+
+- id: T-07-071
+  verdykt: ne_znayshov
+  dyvyvsya: d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf, grep -i 'GPIO\|pin.*free', 10 влучань
+  notatka: Документ розповідає про WROOM-32E/32UE, не про голий чип WROOM-32

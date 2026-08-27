@@ -346,27 +346,13 @@
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes» (с. 30) і Table 5-4 «Current Consumption Depending on RF Modes» (с. 52)
 - **Дослівно з джерела:**
-  > Table 4-2. Power Consumption by Power Modes
-  > Power mode      Description                                Power Consumption
-  > Modem-sleep     240 MHz  Dual-core chip(s)                 30 mA ~ 68 mA
-  >                 160 MHz  Dual-core chip(s)                 27 mA ~ 44 mA
-  >                 Normal speed: 80 MHz  Dual-core chip(s)    20 mA ~ 31 mA
-  > Light-sleep     -                                          0.8 mA
-  > Deep-sleep      The ULP coprocessor is powered up.         150 µA
-  >                 ULP sensor-monitored pattern               100 µA @1% duty
-  >                 RTC timer + RTC memory                     10 µA
-  > Hibernation     RTC timer only                             5 µA
-  > Power off       CHIP_PU is set to low level                1 µA
-  > 
-  > Table 5-4. Current Consumption Depending on RF Modes
-  > Transmit 802.11b, DSSS 1 Mbps, POUT = +19.5 dBm     Typ 240 mA
-  > Transmit 802.11g, OFDM 54 Mbps, POUT = +16 dBm      Typ 190 mA
-  > Transmit 802.11n, OFDM MCS7, POUT = +14 dBm         Typ 180 mA
-  > Receive 802.11b/g/n                                 Typ 95 ~ 100 mA
-- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
-- **Нотатка:** Таблиця розділу 06 подає порядки, і всі вони збігаються: deep sleep 10 мкА («одиниці — десятки мкА»), light sleep 0.8 мА («сотні мкА — одиниці мА»), активний без радіо 20-68 мА («десятки мА»), Wi-Fi у роботі 95-100 мА на прийомі («близько сотні мА»), піки передачі 180-240 мА («сотні мА»).
-Заразом знімається застереження, яке стояло над таблицею з проходу 1: «взято з документації сімейств і до першоджерела не звірено». Тепер звірено, і рядок про незвіреність у розділі 06 має піти — але розділ за М1, тож це в звіті, а не тут.
-Одна межа таблиці варта уваги й описана у звіті окремо: «одиниці — десятки мкА» справедливе для deep sleep із самим RTC (10 мкА). З увімкненим ULP це 150 мкА, тобто сотні. Книга ULP у цій таблиці не згадує, і рядок читається як «deep sleep узагалі».
+  > Modem-sleep 160 MHz
+  > * Dual-core chip(s) 30 mA ~ 68 mA
+  > The CPU is * Dual-core chip(s) 27 mA ~ 44 mA
+  > Dual-core chip(s) 20 mA ~ 31 mA
+  > Power off CHIP_PU is set to low level, the chip is powered down. 1 µA
+- **Спосіб і дата:** tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Рядки таблиці 4-2 у витягу розпадаються інакше, ніж на сторінці: опис режиму й числа не тримаються купи, а зірочка — це виноска. Лишаю як є, бо саме так воно в документі й лежить.
 - **Прохід:** m2-02-esp32-datasheet
 
 ---
@@ -409,27 +395,13 @@
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes» (с. 30) і Table 5-4 «Current Consumption Depending on RF Modes» (с. 52)
 - **Дослівно з джерела:**
-  > Table 4-2. Power Consumption by Power Modes
-  > Power mode      Description                                Power Consumption
-  > Modem-sleep     240 MHz  Dual-core chip(s)                 30 mA ~ 68 mA
-  >                 160 MHz  Dual-core chip(s)                 27 mA ~ 44 mA
-  >                 Normal speed: 80 MHz  Dual-core chip(s)    20 mA ~ 31 mA
-  > Light-sleep     -                                          0.8 mA
-  > Deep-sleep      The ULP coprocessor is powered up.         150 µA
-  >                 ULP sensor-monitored pattern               100 µA @1% duty
-  >                 RTC timer + RTC memory                     10 µA
-  > Hibernation     RTC timer only                             5 µA
-  > Power off       CHIP_PU is set to low level                1 µA
-  > 
-  > Table 5-4. Current Consumption Depending on RF Modes
-  > Transmit 802.11b, DSSS 1 Mbps, POUT = +19.5 dBm     Typ 240 mA
-  > Transmit 802.11g, OFDM 54 Mbps, POUT = +16 dBm      Typ 190 mA
-  > Transmit 802.11n, OFDM MCS7, POUT = +14 dBm         Typ 180 mA
-  > Receive 802.11b/g/n                                 Typ 95 ~ 100 mA
-- **Спосіб і дата:** curl PDF з espressif.com, pdftotext -layout, 2026-08-26
-- **Нотатка:** Таблиця розділу 06 подає порядки, і всі вони збігаються: deep sleep 10 мкА («одиниці — десятки мкА»), light sleep 0.8 мА («сотні мкА — одиниці мА»), активний без радіо 20-68 мА («десятки мА»), Wi-Fi у роботі 95-100 мА на прийомі («близько сотні мА»), піки передачі 180-240 мА («сотні мА»).
-Заразом знімається застереження, яке стояло над таблицею з проходу 1: «взято з документації сімейств і до першоджерела не звірено». Тепер звірено, і рядок про незвіреність у розділі 06 має піти — але розділ за М1, тож це в звіті, а не тут.
-Одна межа таблиці варта уваги й описана у звіті окремо: «одиниці — десятки мкА» справедливе для deep sleep із самим RTC (10 мкА). З увімкненим ULP це 150 мкА, тобто сотні. Книга ULP у цій таблиці не згадує, і рядок читається як «deep sleep узагалі».
+  > Modem-sleep 160 MHz
+  > * Dual-core chip(s) 30 mA ~ 68 mA
+  > The CPU is * Dual-core chip(s) 27 mA ~ 44 mA
+  > Dual-core chip(s) 20 mA ~ 31 mA
+  > Power off CHIP_PU is set to low level, the chip is powered down. 1 µA
+- **Спосіб і дата:** tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Рядки таблиці 4-2 у витягу розпадаються інакше, ніж на сторінці: опис режиму й числа не тримаються купи, а зірочка — це виноска. Лишаю як є, бо саме так воно в документі й лежить.
 - **Прохід:** m2-02-esp32-datasheet
 
 ---
@@ -549,12 +521,10 @@ Datasheet цю причину підтверджує з іншого боку: �
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с. 51
 - **Дослівно з джерела:**
-  > Table 5-2. Recommended Power Supply Characteristics
-  > Parameter   Description                              Min   Typ   Max   Unit
-  > IVDD        Current delivered by external power       0.5    —     —    A
-  >             supply
-- **Спосіб і дата:** PDF з кешу `esp32-datasheet.pdf`, pdftotext -layout, 2026-08-26
-- **Нотатка:** Книга подає це в зворотних лапках як цитату з datasheet, і форма підтверджена: рядок `IVDD, current delivered by external power supply, Min 0.5 A` — це те саме поле таблиці 5-2, переказане в один рядок комами замість табличних колонок. Числа й назва параметра збігаються точно.
+  > Current delivered by external power
+  > IV 0.5 — — A
+- **Спосіб і дата:** tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. У витягу індекс DD відривається від IV і йде окремим рядком, тому рядок значень читається як `IV 0.5 — — A`. Негарно, але це те, що там є; моє попереднє `IVDD  Current delivered by external power  0.5  —  —  A` було зібране з двох рядків в один.
 - **Прохід:** m2-21-zhyvlennya-06
 
 ---
@@ -1643,7 +1613,7 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 ---
 
-<!-- fc id:T-06-088 sha:0f436362 src:manual/06-zhyvlennya.md:188 klas:C -->
+<!-- fc id:T-06-088 sha:0f436362 src:manual/06-zhyvlennya.md:188 klas:A -->
 ### T-06-088 · proza · рядок 188
 
 **Книга каже, дослівно:**
@@ -1652,11 +1622,14 @@ Datasheet цю причину підтверджує з іншого боку: �
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Джерело:** https://www.analog.com/ (TP4056 і DW01 datasheet) та специфікації виробників елементів 18650
-- **Що шукати в джерелі:** для TP4056: типовий струм заряджання і резистор, яким він задається; склад варіанта із захистом (DW01 плюс подвійний MOSFET) і що саме він захищає. Для елементів: напруга повного заряду 4.2 В, номінальна 3.7 В, межа розряду, заборона заряджання нижче 0 °C і її причина (металізація літію).
-- **Нотатка:** Розділ 53 — найризикованіший у книзі з погляду наслідків, тож ця група має бути закрита першою, щойно з'явиться доступ.
-- **Прохід:** pass-03-nedostupni
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** dzherela-kesh/ncr18650b.pdf
+- **Дослівно з джерела:**
+  > Rated capacity(1) Min. 3200mAh Capacity(2) Min. 3250mAh Typ. 3350mAh
+- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Нотатка:** NCR18650B має ємність 3200-3350 мАч, що входить у диапазон "2500-3500 мА·год" з handbook.
+
+- **Прохід:** m2-hvylya3
 
 ---
 
@@ -2359,10 +2332,11 @@ Datasheet цю причину підтверджує з іншого боку: �
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
 - **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 (IVDD, Min 0.5 A) і Table 5-4 «Current Consumption Depending on RF Modes» (пік передачі до 240 мА)
 - **Дослівно з джерела:**
-  > Table 5-2: IVDD  Current delivered by external power supply  Min 0.5  —  —  A
-  > Table 5-4: Transmit 802.11b, DSSS 1 Mbps, POUT = +19.5 dBm    Typ 240 mA
-- **Спосіб і дата:** Той самий доказ, що вже застосовано в `m2-06-napruga-mezhi.yaml` до практично ідентичного речення розділу 06 («джерело для ESP32 з Wi-Fi має тягнути щонайменше 1 А») — тут те саме твердження повторено в підсумку розділу («Що з цього треба запам'ятати») іншими словами, без застереження про дешеві блоки.
-- **Нотатка:** На відміну від T-06-033 (де до висновку домішана емпірична теза про дешеві блоки — клас E), це формулювання чистіше: «джерело тягне 1 А, бо платить за піки» випливає з поєднання datasheet- мінімуму (0.5 А) і datasheet-піку передачі (до 240 мА) без додаткових редакційних тверджень. Клас B, як і в сестринському записі `m2-06-napruga-mezhi.yaml`.
+  > Current delivered by external power
+  > IV 0.5 — — A
+  > Transmit 802.11b, DSSS 1 Mbps, POUT = +19.5 dBm Typ 240 mA
+- **Спосіб і дата:** tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами слів), покомірково, 2026-08-27
+- **Нотатка:** Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ: я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`), яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за що я потім ловив помічників. Було два рядки з дописаними «Table 5-2:» і «Table 5-4:» на початку — таких префіксів у документі немає, це моя позначка місця. Місце тепер у полі sposib.
 - **Прохід:** m2-21-zhyvlennya-06
 
 ---

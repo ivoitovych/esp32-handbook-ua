@@ -1,0 +1,75 @@
+- id: T-E-072
+  src: dodatky/e-interfeysy.md:46
+  tekst: MAX31855 · Режим → 0
+  klas: F
+  fayl: max31855.pdf
+- id: T-E-074
+  src: dodatky/e-interfeysy.md:46
+  tekst: MAX31855 · Бібліотека → Adafruit MAX31855
+  klas: F
+  fayl: max31855.pdf
+- id: T-E-075
+  src: dodatky/e-interfeysy.md:47
+  tekst: MAX6675 · Режим → 0
+  klas: F
+  fayl: max6675.pdf
+- id: T-E-076
+  src: dodatky/e-interfeysy.md:47
+  tekst: MAX6675 · Що дає → термопара, дешевший
+  klas: F
+  fayl: max6675.pdf
+- id: T-E-077
+  src: dodatky/e-interfeysy.md:47
+  tekst: MAX6675 · Бібліотека → Adafruit MAX6675
+  klas: F
+  fayl: max6675.pdf
+- id: T-Z-026
+  src: dodatky/z-pokazhchyk.md:105
+  tekst: CH340 — 11, 25, 79, 83, 87, 114, 180, 366, 391
+  klas: F
+  fayl: ch340.pdf
+- id: T-Z-035
+  src: dodatky/z-pokazhchyk.md:135
+  tekst: CP2102 — 11, 25, 29, 79, 81, 83, 114, 366, 391
+  klas: F
+  fayl: cp2102.pdf
+- id: T-Z-153
+  src: dodatky/z-pokazhchyk.md:581
+  tekst: MCP23017 — 57, 76, 365, 386
+  klas: F
+  fayl: mcp23017.pdf
+- id: T-Z-162
+  src: dodatky/z-pokazhchyk.md:632
+  tekst: PCF8574 — 57, 76, 267, 365, 386
+  klas: F
+  fayl: pcf8574.pdf
+- id: T-01-041
+  src: manual/01-platforma.md:90
+  tekst: Радіо на борту · RP2040 → ні (крім W)
+  klas: F
+  fayl: rp2040.pdf
+- id: T-01-056
+  src: manual/01-platforma.md:93
+  tekst: ОС · RP2040 → немає або RTOS
+  klas: F
+  fayl: rp2040.pdf
+- id: T-01-065
+  src: manual/01-platforma.md:95
+  tekst: Сон · STM32 → мкА
+  klas: F
+  fayl: 5df69a15-sleep_modes.rst
+- id: T-01-066
+  src: manual/01-platforma.md:95
+  tekst: Сон · RP2040 → мА
+  klas: F
+  fayl: rp2040.pdf
+- id: T-01-071
+  src: manual/01-platforma.md:96
+  tekst: Реальний час · RP2040 → добре
+  klas: F
+  fayl: rp2040.pdf
+- id: T-01-076
+  src: manual/01-platforma.md:97
+  tekst: Ціна плати · RP2040 → низька
+  klas: F
+  fayl: rp2040.pdf

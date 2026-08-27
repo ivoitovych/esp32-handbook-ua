@@ -1,0 +1,43 @@
+- id: "DS3231 має власну батарейку — джерело недосяжне з цієї мережі"
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/i2c-um10204.pdf, це загальна специфікація I2C, не містить інформації про DS3231 чи його батарійку
+
+- id: "SCL пін розпиновки I2C: GPIO22 на ESP32 classic та GPIO9 на ESP32-S3"
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/i2c-um10204.pdf, це загальна специфікація I2C, не містить інформації про GPIO піни для ESP32
+
+- id: "SDA пін розпиновки I2C: GPIO21 на ESP32 classic та GPIO8 на ESP32-S3"
+  verdykt: ne_znayshov
+  dyvyvsya: dzherela-kesh/i2c-um10204.pdf, це загальна специфікація I2C, не містить інформації про GPIO піни для ESP32-S3
+
+- id: "Специфікація I²C — адресація, ємність шини, режими"
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/i2c-um10204.pdf
+  cytata: |
+    Each device connected to the bus is software addressable by a unique address
+  de: розділи 2 (I2C-bus features), 3 (The I2C-bus protocol)
+  notatka: Документ містить все про адресацію, ємність шини та режими роботи I2C
+
+- id: "DS18B20 — час перетворення, діапазон, роздільність"
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/ds18b20.pdf
+  cytata: |
+    Converts Temperature to 12-Bit Digital Word in 750ms (Max)
+  de: Features section і Temperature Conversion Time table
+  notatka: Документ містить інформацію про діапазон, роздільність та час перетворення
+
+- id: "Паспортна похибка DS18B20 — на датчик, а не між датчиками"
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/ds18b20.pdf
+  cytata: |
+    ±0.5°C Accuracy from -10°C to +85°C
+  de: Features section, DS18B20 Typical Error Curve
+  notatka: Датаsheet визначає точність на датчик, а не між датчиками
+
+- id: "BME280 — карта регістрів і формули компенсації"
+  verdykt: pidtverdzheno
+  fayl: dzherela-kesh/8e2fcbf9-bme280.c
+  cytata: |
+    This internal API reads the calibration data from the sensor, parse
+  de: "driver code, functions: get_calib_data, parse_temp_press_calib_data, compensate_* functions"
+  notatka: C-драйвер містить реєстрові карти і формули компенсації для BME280

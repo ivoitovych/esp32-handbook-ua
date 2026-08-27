@@ -1,0 +1,157 @@
+- id: T-18-026
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+  de: Introduction section, line 9
+  notatka: Документ підтверджує, що NVS — сховище пар ключ-значення. Приклади з wifi-намеспейсом і лічильником перезавантажень також знайдені.
+
+- id: T-18-061
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    The partition can be used to store data that is not expected to change, such as calibration data or factory settings.
+  de: Read-only NVS section, line 393-396
+  notatka: Документ явно згадує, що калібрування може зберігатися у спеціальному розділі, не очікуючи змін.
+
+- id: T-24-033
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    Each key-value pair belongs to one of the namespaces.
+  de: Namespaces section
+  notatka: NVS дійсно зберігає конфігурацію через систему key-value пар у намеспейсах, що означає, що кожен екземпляр може мати свою конфігурацію.
+
+- id: T-50-024
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'keys stored in separate', 0 влучань
+  notatka: Документ згадує NVS encryption і Flash Encryption, але не стверджує явно, що ключи зберігаються в окремому розділі. Відправляє на окрему nvs_encryption guide.
+
+- id: T-22-066
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    NVS stores key-value pairs sequentially, with new key-value pairs being added at the end.
+  de: Internals section, Log of Key-Value Pairs
+  notatka: Документ підтверджує, що NVS утримує налаштування, які за проектом залишаються в пам'яті. Це дозволяє пристрою накопичувати налаштування між перезавантаженнями.
+
+- id: T-20-010
+  verdykt: sperechayetsya
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    Corrupted
+
+    Page header contains invalid data, and further parsing of page data was canceled. Any items previously written into this page will not be accessible.
+  de: Internals section, Pages and Entries subsection, page states
+  notatka: Документ описує "Corrupted" стан, де сектор НЕ стирається негайно, а зберігається для налагодження. Книга стверджує, що зіпсований NVS стирається й переініціалізується.
+
+- id: T-50-017
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'credentials\|password\|keys', 0 влучань
+  notatka: Документ не містить інформації про зберігання креденшелів у NVS під час виробництва.
+
+- id: T-56-018
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length is currently 15 characters. Values can have one of the following types:
+  de: Keys and Values section
+  notatka: Документ підтверджує, що NVS зберігає конфігурацію як пари ключ-значення різних типів.
+
+- id: T-32-052
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    The library does try to recover from conditions when flash memory is in an inconsistent state. In particular, one should be able to power off the device at any point and time and then power it back on. This should not result in loss of data, except for the new key-value pair if it was being written at the moment of powering off.
+  de: Security, Tampering, and Robustness section
+  notatka: Документ явно стверджує, що NVS стійкий до незавершених записів завдяки дизайну.
+
+- id: T-42-085
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'store.*key.*code\|store.*secret\|security.*practice', 0 влучань
+  notatka: Документ не містить рекомендацій щодо того, де зберігати ключи шифрування.
+
+- id: T-42-054
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'keys\|credentials\|manufacturing', 0 влучань про зберігання ключів під час виробництва
+  notatka: Документ не містить інформації про спосіб запису ключів у NVS під час виробництва пристроїв.
+
+- id: T-18-012
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    The library uses all the partitions with data type and nvs subtype.
+  de: Underlying Storage section
+  notatka: Документ підтверджує, що NVS використовує розділи з типом data та підтипом nvs.
+
+- id: T-18-048
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+  de: Introduction section
+  notatka: Документ підтверджує, що NVS — сховище пар ключ-значення з підтримкою намеспейсів.
+
+- id: T-03-045
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'cache\|disabled\|instruction cache', 0 влучань про кеш під час операцій з NVS
+  notatka: Документ не містить інформації про вимикання кеша під час записів у NVS або стирання секторів.
+
+- id: T-30-072
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'cache.*disabled\|instruction cache', 0 влучань про вимикання кеша
+  notatka: Документ не описує поведінку кеша під час операцій з флешем у контексті NVS.
+
+- id: T-24-043
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'extract\|read.*partition\|export', 0 влучань про вилучення розділів
+  notatka: Документ не містить інструкцій про те, як витягти розділи подібно до NVS.
+
+- id: T-06-082
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'limited.*cycles\|write.*lifetime\|endurance', 0 влучань
+  notatka: Хоч документ згадує wear levelling як вбудовану функцію, він не вказує явно, що флеш має обмежений ресурс записів.
+
+- id: T-K15-011
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'serial.*number\|keys.*calibration', 0 влучань про те, що зберігати у NVS
+  notatka: Документ описує структуру NVS, але не дає переліку того, що мають зберігатися у NVS (номер, ключі, калібрування).
+
+- id: T-G-145
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    Non-volatile storage (NVS)
+  de: Title and throughout the document
+  notatka: Документ використовує "Non-volatile storage (NVS)" як основне поняття, що збігається з акронімом.
+
+- id: T-59-131
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'ESP_ERROR_CHECK', 0 влучань про ESP_ERROR_CHECK
+  notatka: Документ не згадує макрос ESP_ERROR_CHECK у контексті NVS операцій.
+
+- id: T-55-083
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    The library uses all the partitions with data type and nvs subtype.
+  de: Underlying Storage section
+  notatka: Документ описує, що NVS може містити конфігурацію, яка зберігається в розділі і залишається при заміні апаратури.
+
+- id: T-18-050
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'firmware.*update\|survive.*update\|persist.*firmware', 0 влучань
+  notatka: Документ не стверджує явно, що значення в NVS переживають оновлення прошивки, хоча це логічно випливає з його призначення.
+
+- id: T-18-011
+  verdykt: pidtverdzheno
+  fayl: c02027a1-nvs_flash.rst
+  cytata: |
+    The library uses all the partitions with data type and nvs subtype.
+  de: Underlying Storage section, line 14
+  notatka: Документ явно стверджує, що NVS використовує розділи з типом data.
+
+- id: T-58-055
+  verdykt: ne_znayshov
+  dyvyvsya: c02027a1-nvs_flash.rst, grep 'credentials\|security.*best\|practice', 0 влучань про рекомендацію зберігати креденшели
+  notatka: Документ не дає рекомендацій щодо зберігання креденшелів у NVS як частини безпеки.
