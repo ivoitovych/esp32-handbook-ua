@@ -1,135 +1,87 @@
-# М2, джерело 1 наряду — ESP32 Series Datasheet v5.3.
-#
-# Наряд просив три речі: гранично допустимий струм на пін, робочий
-# діапазон температур і таблицю споживання за режимами.
-#
-# Тут — те, що джерело підтвердило. Те, чого воно НЕ підтвердило, лежить
-# у звіті `zvyazok/m2-…-vykonano.md`: три твердження розділів 05 і 47 про
-# струм піна виявилися хибними не в числі, а в тому, чим це число є.
-# Клас G на них свідомо не ставлю — розділи за М1, а `G` зупиняє його
-# випускні ворота. Рішення за ним.
-
 - nazva: Споживання ESP32 за режимами — порядки збігаються з Table 4-2
-  zbih: '\| Deep sleep \| одиниці — десятки мкА \||\| Light sleep \| сотні мкА — одиниці мА \||\| \*\*Піки при передачі Wi-Fi\*\* \| \*\*сотні мА, короткими сплесками\*\* \|'
+  zbih: \| Deep sleep \| одиниці — десятки мкА \||\| Light sleep \| сотні мкА — одиниці мА \||\| \*\*Піки
+    при передачі Wi-Fi\*\* \| \*\*сотні мА, короткими сплесками\*\* \|
   klas: A
-  dzherelo: >-
-    https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
-    — ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power
-    Modes» (с. 30) і Table 5-4 «Current Consumption Depending on RF
-    Modes» (с. 52)
-  cytata: |
-    Table 4-2. Power Consumption by Power Modes
-    Power mode      Description                                Power Consumption
-    Modem-sleep     240 MHz  Dual-core chip(s)                 30 mA ~ 68 mA
-                    160 MHz  Dual-core chip(s)                 27 mA ~ 44 mA
-                    Normal speed: 80 MHz  Dual-core chip(s)    20 mA ~ 31 mA
-    Light-sleep     -                                          0.8 mA
-    Deep-sleep      The ULP coprocessor is powered up.         150 µA
-                    ULP sensor-monitored pattern               100 µA @1% duty
-                    RTC timer + RTC memory                     10 µA
-    Hibernation     RTC timer only                             5 µA
-    Power off       CHIP_PU is set to low level                1 µA
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32
+    Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes» (с. 30) і Table 5-4 «Current Consumption
+    Depending on RF Modes» (с. 52)
+  cytata: 'Modem-sleep 160 MHz
 
-    Table 5-4. Current Consumption Depending on RF Modes
-    Transmit 802.11b, DSSS 1 Mbps, POUT = +19.5 dBm     Typ 240 mA
-    Transmit 802.11g, OFDM 54 Mbps, POUT = +16 dBm      Typ 190 mA
-    Transmit 802.11n, OFDM MCS7, POUT = +14 dBm         Typ 180 mA
-    Receive 802.11b/g/n                                 Typ 95 ~ 100 mA
-  sposib: curl PDF з espressif.com, pdftotext -layout, 2026-08-26
-  notatka: >-
-    Таблиця розділу 06 подає порядки, і всі вони збігаються: deep sleep
-    10 мкА («одиниці — десятки мкА»), light sleep 0.8 мА («сотні мкА —
-    одиниці мА»), активний без радіо 20-68 мА («десятки мА»), Wi-Fi у
-    роботі 95-100 мА на прийомі («близько сотні мА»), піки передачі
-    180-240 мА («сотні мА»).
+    * Dual-core chip(s) 30 mA ~ 68 mA
 
-    Заразом знімається застереження, яке стояло над таблицею з проходу
-    1: «взято з документації сімейств і до першоджерела не звірено». Тепер
-    звірено, і рядок про незвіреність у розділі 06 має піти — але розділ
-    за М1, тож це в звіті, а не тут.
+    The CPU is * Dual-core chip(s) 27 mA ~ 44 mA
 
-    Одна межа таблиці варта уваги й описана у звіті окремо: «одиниці —
-    десятки мкА» справедливе для deep sleep із самим RTC (10 мкА). З
-    увімкненим ULP це 150 мкА, тобто сотні. Книга ULP у цій таблиці не
-    згадує, і рядок читається як «deep sleep узагалі».
+    Dual-core chip(s) 20 mA ~ 31 mA
 
+    Power off CHIP_PU is set to low level, the chip is powered down. 1 µA
+
+    '
+  sposib: 'tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами
+    слів), покомірково, 2026-08-27'
+  notatka: 'Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ:
+    я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`),
+    яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за
+    що я потім ловив помічників. Рядки таблиці 4-2 у витягу розпадаються інакше, ніж на сторінці: опис
+    режиму й числа не тримаються купи, а зірочка — це виноска. Лишаю як є, бо саме так воно в документі
+    й лежить.'
 - nazva: Пін віддає більше, ніж приймає — IOH 40 мА проти IOL 28 мА
   zbih: '[Нн]а віддачу пін дає більше, ніж\s+на прийом'
   klas: A
-  dzherelo: >-
-    https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
-    — ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics
-    (3.3 V, 25 °C)», с. 51
-  cytata: |
-    IOH  High-level source current
-         (VDD = 3.3 V, VOH >= 2.64 V, output drive strength set to the maximum)
-           VDD3P3_CPU power domain    Typ 40 mA
-           VDD3P3_RTC power domain    Typ 40 mA
-           VDD_SDIO power domain      Typ 20 mA
-    IOL  Low-level sink current
-         (VDD = 3.3 V, VOL = 0.495 V, output drive strength set to the maximum)
-                                      Typ 28 mA
-  sposib: curl PDF з espressif.com, pdftotext -layout, 2026-08-26
-  notatka: >-
-    Асиметрія підтверджена: на максимальній силі драйвера пін віддає
-    40 мА і приймає 28 мА. Це та сама фраза розділу 05, і вона єдина з
-    трьох тверджень абзацу, яка витримала звірку.
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32
+    Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», с. 51
+  cytata: 'IOH VOH >= 2.64 V, — 40 — mA
 
-    Побічне, варте окремої уваги при проєктуванні: у домені VDD_SDIO
-    віддача вдвічі менша — 20 мА, не 40.
+    IOL (VDD 1 = 3.3 V, VOL = 0.495 V, — 28 — mA
 
+    '
+  sposib: 'tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами
+    слів), покомірково, 2026-08-27'
+  notatka: 'Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ:
+    я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`),
+    яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за
+    що я потім ловив помічників. Три рядки про домени живлення (VDD3P3_CPU, VDD3P3_RTC, VDD_SDIO) із підписом
+    `Typ` я вигадав повністю — у витягу таких рядків немає. Сам факт стоїть: IOH 40 мА, IOL 28 мА, і 40
+    — це не типове, а максимум при найбільшій силі драйвера, як і сказано в дужках.'
 - nazva: Робочий діапазон чипа ESP32 — від −40 до 125 °C
   zbih: 'Чип витримує більше: −40…\+125 °C'
   klas: A
-  dzherelo: >-
-    https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
-    — ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply
-    Characteristics», с. 51, разом із приміткою 3
-  cytata: |
-    T (note 3)   Operating temperature   Min –40   Max 125   °C
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf — ESP32
+    Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics», с. 51, разом із приміткою
+    3
+  cytata: 'T note 3 Operating temperature –40 — 125 °C
 
-    3. The operating temperature of ESP32-U4WDH and ESP32-D0WDRH2-V3 ranges
-       from –40 °C to 85 °C, due to the in-package flash or PSRAM. For other
-       chips that have no in-package flash or PSRAM, their operating
-       temperature is –40 °C ~ 125 °C.
-  sposib: curl PDF з espressif.com, pdftotext -layout, 2026-08-26
-  notatka: >-
-    Примітка 3 називає причину, і причина — це і є суть виправлення
-    розділу 54: стелю знижує флеш у корпусі, а не кремній. Там, де флеш
-    у корпусі чипа (`U4WDH`, `D0WDRH2-V3`), стеля 85 °C; де його немає —
-    125 °C.
+    3. The operating temperature of ESP32-U4WDH and ESP32-D0WDRH2-V3 ranges from –40 °C to 85 °C, due
+    to the
 
+    '
+  sposib: 'tools/citaty.py tekst_dzherela (pymupdf: порядок читання плюс рядки таблиць за координатами
+    слів), покомірково, 2026-08-27'
+  notatka: 'Цитату переписано покомірково з витягу документа. Попередня редакція була складена мною РУКАМИ:
+    я зливав колонки таблиці, вигадував вирівнювання й дописував підписи (`Typ`, `Min`, `Max`, `(SAC305)`),
+    яких у витягу немає, і подавав це як дослівну цитату. Числа були праві, цитата — ні. Це те саме, за
+    що я потім ловив помічників. Було `T (note 3)   Operating temperature   Min –40   Max 125   °C` —
+    дужки навколо note й підписи Min/Max мої.'
 - nazva: Діапазон модуля WROOM — 85 °C у версіях N, 105 °C у версіях H
-  zbih: 'версії `-H4` і `-H8` на \+105 °C|85 °C міряються одразу за\s+межами модуля'
+  zbih: версії `-H4` і `-H8` на \+105 °C|85 °C міряються одразу за\s+межами модуля
   klas: A
-  dzherelo: >-
-    https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
-    — ESP32-WROOM-32E & ESP32-WROOM-32UE Datasheet, Table 1 «Series
-    Comparison» (с. 8) і Table 14 «Recommended Operating Conditions»
-  cytata: |
-    Table 1: ESP32-WROOM-32E Series Comparison
-    Part Number              Flash              PSRAM            Ambient Temp. (°C)
-    ESP32-WROOM-32E-N4       4 MB (Quad SPI)    —                –40 ~ 85
-    ESP32-WROOM-32E-N8       8 MB (Quad SPI)    —                –40 ~ 85
-    ESP32-WROOM-32E-N16     16 MB (Quad SPI)    —                –40 ~ 85
-    ESP32-WROOM-32E-H4       4 MB (Quad SPI)    —                –40 ~ 105
-    ESP32-WROOM-32E-H8       8 MB (Quad SPI)    —                –40 ~ 105
-
-    3 Ambient temperature specifies the recommended temperature range of the
-      environment immediately outside the Espressif module.
-
-    Table 14: Recommended Operating Conditions
-    T   Operating ambient temperature   –40  …  85 (85 °C version) / 105 (105 °C version)  °C
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+    — ESP32-WROOM-32E & ESP32-WROOM-32UE Datasheet, Table 1 «Series Comparison» (с. 8) і Table 14 «Recommended
+    Operating Conditions»
+  cytata: "Table 1: ESP32-WROOM-32E Series Comparison\nPart Number              Flash              PSRAM\
+    \            Ambient Temp. (°C)\nESP32-WROOM-32E-N4       4 MB (Quad SPI)    —                –40\
+    \ ~ 85\nESP32-WROOM-32E-N8       8 MB (Quad SPI)    —                –40 ~ 85\nESP32-WROOM-32E-N16\
+    \     16 MB (Quad SPI)    —                –40 ~ 85\nESP32-WROOM-32E-H4       4 MB (Quad SPI)    —\
+    \                –40 ~ 105\nESP32-WROOM-32E-H8       8 MB (Quad SPI)    —                –40 ~ 105\n\
+    \n3 Ambient temperature specifies the recommended temperature range of the\n  environment immediately\
+    \ outside the Espressif module.\n\nTable 14: Recommended Operating Conditions\nT   Operating ambient\
+    \ temperature   –40  …  85 (85 °C version) / 105 (105 °C version)  °C\n"
   sposib: curl PDF з espressif.com, pdftotext -layout, 2026-08-26
-  notatka: >-
-    Джерело виправлення розділу 54. Дає три речі, яких у книзі не було.
+  notatka: 'Джерело виправлення розділу 54. Дає три речі, яких у книзі не було.
 
-    Перша: 85 °C — діапазон **модуля**, а не чипа. Друга: примітка 3
-    означує його як температуру середовища **одразу за межами модуля**,
-    тобто всередині корпусу виробу, а не надворі — саме та відстань, яку
-    розділ 54 і має пояснювати. Третя: версії `-H` на 105 °C існують, і
-    це дешевший хід, ніж перероблення корпусу.
+    Перша: 85 °C — діапазон **модуля**, а не чипа. Друга: примітка 3 означує його як температуру середовища
+    **одразу за межами модуля**, тобто всередині корпусу виробу, а не надворі — саме та відстань, яку
+    розділ 54 і має пояснювати. Третя: версії `-H` на 105 °C існують, і це дешевший хід, ніж перероблення
+    корпусу.
 
-    Стара редакція («це діапазон чипа, а не пристрою») хибна двічі:
-    цифра належить модулю, а чип витримує більше. Заведено у
-    `factcheck/SPROSTOVANE-m2.md`.
+    Стара редакція («це діапазон чипа, а не пристрою») хибна двічі: цифра належить модулю, а чип витримує
+    більше. Заведено у `factcheck/SPROSTOVANE-m2.md`.'
