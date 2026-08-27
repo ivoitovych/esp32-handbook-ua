@@ -1,7 +1,7 @@
 # М2, крок 10 — порівняльна таблиця розділу 01, комірки ATmega328P (AVR,
 # Arduino Uno). Джерело в кеші: `atmega328p.pdf` (Microchip,
 # ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet, DS40002061B). Наряд —
-# `factcheck/NARYAD-nedostupni.md`, група «RP2040, ATmega328P».
+# `factcheck/UNREACHABLE-SOURCES.md`, група «RP2040, ATmega328P».
 #
 # Межа кроку: рядок таблиці називається «AVR (Arduino Uno)», не
 # «ATmega328P» — це плата, а не голий кристал. Де книга стверджує щось

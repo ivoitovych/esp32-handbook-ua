@@ -7,11 +7,19 @@
 ---
 
 <!-- fc id:T-C-001 sha:76d16ded src:dodatky/c-komandy.md:3 klas:D -->
-### T-C-001 · proza · рядок 3
+### T-C-001 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Розгорнута версія картки [К10](#k-komandy).
+
+**Контекст**
+
+```
+# Додаток C. Повні шпаргалки команд {#dod-komandy}
+
+Розгорнута версія картки [К10](#k-komandy).
+```
 
 **Доказ**
 
@@ -35,11 +43,26 @@
 ---
 
 <!-- fc id:T-C-002 sha:5afd5f63 src:dodatky/c-komandy.md:5 klas:A -->
-### T-C-002 · proza · рядок 5
+### T-C-002 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Синтаксис esptool v5** (дефіси, без `.py`).
+
+**Дослівно з книги**
+
+```
+**Синтаксис esptool v5** (дефіси, без `.py`). Для v4 — підкреслення і
+```
+
+**Контекст**
+
+```
+# Додаток C. Повні шпаргалки команд {#dod-komandy}
+
+**Синтаксис esptool v5** (дефіси, без `.py`). Для v4 — підкреслення і
+суфікс `.py`. Перевірити своє: `esptool version`.
+```
 
 **Доказ**
 
@@ -68,11 +91,26 @@
 ---
 
 <!-- fc id:T-C-003 sha:644789be src:dodatky/c-komandy.md:5 klas:F -->
-### T-C-003 · proza · рядок 5
+### T-C-003 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для v4 — підкреслення і суфікс `.py`.
+
+**Дослівно з книги**
+
+```
+**Синтаксис esptool v5** (дефіси, без `.py`). Для v4 — підкреслення і
+```
+
+**Контекст**
+
+```
+# Додаток C. Повні шпаргалки команд {#dod-komandy}
+
+**Синтаксис esptool v5** (дефіси, без `.py`). Для v4 — підкреслення і
+суфікс `.py`. Перевірити своє: `esptool version`.
+```
 
 **Доказ**
 
@@ -81,11 +119,26 @@
 ---
 
 <!-- fc id:T-C-004 sha:6ac69acd src:dodatky/c-komandy.md:5 klas:A -->
-### T-C-004 · proza · рядок 5
+### T-C-004 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Перевірити своє: `esptool version`.
+
+**Дослівно з книги**
+
+```
+суфікс `.py`. Перевірити своє: `esptool version`.
+```
+
+**Контекст**
+
+```
+# Додаток C. Повні шпаргалки команд {#dod-komandy}
+
+**Синтаксис esptool v5** (дефіси, без `.py`). Для v4 — підкреслення і
+суфікс `.py`. Перевірити своє: `esptool version`.
+```
 
 **Доказ**
 
@@ -101,9 +154,9 @@
 ---
 
 <!-- fc id:T-C-005 sha:f3151be9 src:dodatky/c-komandy.md:12 klas:K -->
-### T-C-005 · kod · рядок 12
+### T-C-005 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > # сімейство, ревізію і MAC друкує шапка з'єднання — перед будь-якою
@@ -112,6 +165,20 @@
 > esptool --port /dev/ttyUSB0 read-mac
 > esptool version
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Розвідка
+
+```
+````
 
 **Доказ**
 
@@ -127,11 +194,22 @@
 ---
 
 <!-- fc id:T-C-006 sha:39838a17 src:dodatky/c-komandy.md:15 klas:A -->
-### T-C-006 · kod-ryadok · рядок 15
+### T-C-006 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port /dev/ttyUSB0 flash-id         # виробник і обсяг флешу
+
+**Контекст**
+
+````
+# командою; окремої команди для цього немає (розділ 17)
+
+esptool --port /dev/ttyUSB0 flash-id         # виробник і обсяг флешу
+esptool --port /dev/ttyUSB0 read-mac
+esptool version
+```
+````
 
 **Доказ**
 
@@ -139,18 +217,29 @@
 - **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
-- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
 - **Прохід:** m2-hvylya2
 
 ---
 
 <!-- fc id:T-C-007 sha:049fb9cd src:dodatky/c-komandy.md:16 klas:F -->
-### T-C-007 · kod-ryadok · рядок 16
+### T-C-007 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port /dev/ttyUSB0 read-mac
+
+**Контекст**
+
+````
+# командою; окремої команди для цього немає (розділ 17)
+
+esptool --port /dev/ttyUSB0 flash-id         # виробник і обсяг флешу
+esptool --port /dev/ttyUSB0 read-mac
+esptool version
+```
+````
 
 **Доказ**
 
@@ -159,11 +248,26 @@
 ---
 
 <!-- fc id:T-C-008 sha:fcbae1b9 src:dodatky/c-komandy.md:17 klas:A -->
-### T-C-008 · kod-ryadok · рядок 17
+### T-C-008 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool version
+
+**Дослівно з книги**
+
+```
+суфікс `.py`. Перевірити своє: `esptool version`.
+```
+
+**Контекст**
+
+```
+# Додаток C. Повні шпаргалки команд {#dod-komandy}
+
+**Синтаксис esptool v5** (дефіси, без `.py`). Для v4 — підкреслення і
+суфікс `.py`. Перевірити своє: `esptool version`.
+```
 
 **Доказ**
 
@@ -179,9 +283,9 @@
 ---
 
 <!-- fc id:T-C-009 sha:881f86c6 src:dodatky/c-komandy.md:22 klas:K -->
-### T-C-009 · kod · рядок 22
+### T-C-009 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
@@ -189,6 +293,25 @@
 > esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
 > esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Читання
+
+```
+esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+````
 
 **Доказ**
 
@@ -214,11 +337,24 @@
 ---
 
 <!-- fc id:T-C-010 sha:bb087e09 src:dodatky/c-komandy.md:23 klas:A -->
-### T-C-010 · kod-ryadok · рядок 23
+### T-C-010 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+
+**Контекст**
+
+````
+### Читання
+
+```
+esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+````
 
 **Доказ**
 
@@ -244,11 +380,24 @@
 ---
 
 <!-- fc id:T-C-011 sha:df2bf3b7 src:dodatky/c-komandy.md:24 klas:B -->
-### T-C-011 · kod-ryadok · рядок 24
+### T-C-011 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+
+**Контекст**
+
+````
+### Читання
+
+```
+esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+````
 
 **Доказ**
 
@@ -263,11 +412,24 @@
 ---
 
 <!-- fc id:T-C-012 sha:4353e19f src:dodatky/c-komandy.md:25 klas:D -->
-### T-C-012 · kod-ryadok · рядок 25
+### T-C-012 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+
+**Контекст**
+
+````
+### Читання
+
+```
+esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+````
 
 **Доказ**
 
@@ -288,38 +450,59 @@
 
 ---
 
-<!-- fc id:T-C-013 sha:88b7dfd4 src:dodatky/c-komandy.md:26 klas:D -->
-### T-C-013 · kod-ryadok · рядок 26
+<!-- fc id:T-C-013 sha:88b7dfd4 src:dodatky/c-komandy.md:26 klas:A -->
+### T-C-013 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
 
+**Контекст**
+
+````
+### Читання
+
+```
+esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+````
+
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
-- **Спосіб і дата:** make arytmetyka, 2026-08-26
-- **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
-Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
-Заразом видно, що «4 МБ мінус 64 КБ службових = 3.9 МБ» із розділу 18 — не округлення на око, а точний наслідок цієї ж розкладки.
-- **Прохід:** pass-19-adresy-flesh
+  > a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`) 0x8000 in the flash
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** esptool read-flash 0x8000 0x1000 — стандартний метод читання таблиці розділів з ESP-IDF
+- **Прохід:** presud-c-komandy
 
 ---
 
 <!-- fc id:T-C-014 sha:75b577e4 src:dodatky/c-komandy.md:29 klas:E -->
-### T-C-014 · proza · рядок 29
+### T-C-014 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Розмір файлу має **точно** дорівнювати запитаному.
+
+**Дослівно з книги**
+
+```
+Розмір файлу має **точно** дорівнювати запитаному. Менший — обірваний
+```
+
+**Контекст**
+
+```
+### Читання
+
+Розмір файлу має **точно** дорівнювати запитаному. Менший — обірваний
+дамп; повторити на `--baud 115200`.
+```
 
 **Доказ**
 
@@ -328,11 +511,26 @@
 ---
 
 <!-- fc id:T-C-015 sha:751b08c4 src:dodatky/c-komandy.md:29 klas:F -->
-### T-C-015 · proza · рядок 29
+### T-C-015 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Менший — обірваний дамп; повторити на `--baud 115200`.
+
+**Дослівно з книги**
+
+```
+Розмір файлу має **точно** дорівнювати запитаному. Менший — обірваний
+```
+
+**Контекст**
+
+```
+### Читання
+
+Розмір файлу має **точно** дорівнювати запитаному. Менший — обірваний
+дамп; повторити на `--baud 115200`.
+```
 
 **Доказ**
 
@@ -341,9 +539,9 @@
 ---
 
 <!-- fc id:T-C-016 sha:fcd6b026 src:dodatky/c-komandy.md:34 klas:K -->
-### T-C-016 · kod · рядок 34
+### T-C-016 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > esptool --port PORT --baud 460800 write-flash -z \
@@ -352,6 +550,22 @@
 > esptool --port PORT write-flash 0x0 merged.bin          # зібраний образ
 > esptool --port PORT verify-flash 0x10000 app.bin        # звірити
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Запис
+
+```
+esptool --port PORT --baud 460800 write-flash -z \
+  0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
+````
 
 **Доказ**
 
@@ -369,11 +583,21 @@
 ---
 
 <!-- fc id:T-C-017 sha:3f0f4284 src:dodatky/c-komandy.md:35 klas:A -->
-### T-C-017 · kod-ryadok · рядок 35
+### T-C-017 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT --baud 460800 write-flash -z \
+
+**Контекст**
+
+````
+### Запис
+
+```
+esptool --port PORT --baud 460800 write-flash -z \
+  0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
+````
 
 **Доказ**
 
@@ -396,11 +620,21 @@
 ---
 
 <!-- fc id:T-C-018 sha:c6c4971b src:dodatky/c-komandy.md:38 klas:A -->
-### T-C-018 · kod-ryadok · рядок 38
+### T-C-018 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT write-flash 0x0 merged.bin          # зібраний образ
+
+**Контекст**
+
+````
+### Запис
+
+esptool --port PORT write-flash 0x0 merged.bin          # зібраний образ
+esptool --port PORT verify-flash 0x10000 app.bin        # звірити
+```
+````
 
 **Доказ**
 
@@ -429,11 +663,21 @@
 ---
 
 <!-- fc id:T-C-019 sha:efde820e src:dodatky/c-komandy.md:39 klas:A -->
-### T-C-019 · kod-ryadok · рядок 39
+### T-C-019 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT verify-flash 0x10000 app.bin        # звірити
+
+**Контекст**
+
+````
+### Запис
+
+esptool --port PORT write-flash 0x0 merged.bin          # зібраний образ
+esptool --port PORT verify-flash 0x10000 app.bin        # звірити
+```
+````
 
 **Доказ**
 
@@ -464,14 +708,31 @@
 ---
 
 <!-- fc id:T-C-020 sha:00142e5e src:dodatky/c-komandy.md:44 klas:K -->
-### T-C-020 · kod · рядок 44
+### T-C-020 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > esptool --port PORT erase-flash                  # ⛔ усе, спершу дамп
 > esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Стирання
+
+```
+esptool --port PORT erase-flash                  # ⛔ усе, спершу дамп
+esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
+```
+````
 
 **Доказ**
 
@@ -487,11 +748,22 @@
 ---
 
 <!-- fc id:T-C-021 sha:2dca50d4 src:dodatky/c-komandy.md:45 klas:F -->
-### T-C-021 · kod-ryadok · рядок 45
+### T-C-021 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT erase-flash                  # ⛔ усе, спершу дамп
+
+**Контекст**
+
+````
+### Стирання
+
+```
+esptool --port PORT erase-flash                  # ⛔ усе, спершу дамп
+esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
+```
+````
 
 **Доказ**
 
@@ -500,11 +772,22 @@
 ---
 
 <!-- fc id:T-C-022 sha:9802b297 src:dodatky/c-komandy.md:46 klas:A -->
-### T-C-022 · kod-ryadok · рядок 46
+### T-C-022 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
+
+**Контекст**
+
+````
+### Стирання
+
+```
+esptool --port PORT erase-flash                  # ⛔ усе, спершу дамп
+esptool --port PORT erase-region 0x9000 0x6000   # лише NVS
+```
+````
 
 **Доказ**
 
@@ -520,14 +803,31 @@
 ---
 
 <!-- fc id:T-C-023 sha:56d01430 src:dodatky/c-komandy.md:51 klas:K -->
-### T-C-023 · kod · рядок 51
+### T-C-023 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
 >   0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Складання образу
+
+```
+esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
+  0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
+```
+````
 
 **Доказ**
 
@@ -550,11 +850,22 @@
 ---
 
 <!-- fc id:T-C-024 sha:ccf461f5 src:dodatky/c-komandy.md:52 klas:A -->
-### T-C-024 · kod-ryadok · рядок 52
+### T-C-024 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
+
+**Контекст**
+
+````
+### Складання образу
+
+```
+esptool --chip esp32 merge-bin -o vyrib.bin --flash-mode dio --flash-size 4MB \
+  0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
+```
+````
 
 **Доказ**
 
@@ -577,11 +888,28 @@
 ---
 
 <!-- fc id:T-C-025 sha:4b3d6fe1 src:dodatky/c-komandy.md:56 klas:A -->
-### T-C-025 · proza · рядок 56
+### T-C-025 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `--chip` тут **обов'язковий**: порту немає, автовизначенню нема звідки взятися.
+
+**Дослівно з книги**
+
+```
+`--chip` тут **обов'язковий**: порту немає, автовизначенню нема звідки
+```
+
+**Контекст**
+
+```
+### Складання образу
+
+`--chip` тут **обов'язковий**: порту немає, автовизначенню нема звідки
+взятися. Без нього esptool одразу відповідає `Specify the --chip
+argument`. Значення має збігатися з чипом, під який зібрано прошивку, — і
+з адресою бутлоадера з таблиці нижче.
+```
 
 **Доказ**
 
@@ -607,11 +935,28 @@
 ---
 
 <!-- fc id:T-C-026 sha:2ca78c71 src:dodatky/c-komandy.md:56 klas:A -->
-### T-C-026 · proza · рядок 56
+### T-C-026 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Без нього esptool одразу відповідає `Specify the --chip argument`.
+
+**Дослівно з книги**
+
+```
+`--chip` тут **обов'язковий**: порту немає, автовизначенню нема звідки
+```
+
+**Контекст**
+
+```
+### Складання образу
+
+`--chip` тут **обов'язковий**: порту немає, автовизначенню нема звідки
+взятися. Без нього esptool одразу відповідає `Specify the --chip
+argument`. Значення має збігатися з чипом, під який зібрано прошивку, — і
+з адресою бутлоадера з таблиці нижче.
+```
 
 **Доказ**
 
@@ -637,11 +982,28 @@
 ---
 
 <!-- fc id:T-C-027 sha:1bd7ba52 src:dodatky/c-komandy.md:56 klas:E -->
-### T-C-027 · proza · рядок 56
+### T-C-027 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Значення має збігатися з чипом, під який зібрано прошивку, — і з адресою бутлоадера з таблиці нижче.
+
+**Дослівно з книги**
+
+```
+`--chip` тут **обов'язковий**: порту немає, автовизначенню нема звідки
+```
+
+**Контекст**
+
+```
+### Складання образу
+
+`--chip` тут **обов'язковий**: порту немає, автовизначенню нема звідки
+взятися. Без нього esptool одразу відповідає `Specify the --chip
+argument`. Значення має збігатися з чипом, під який зібрано прошивку, — і
+з адресою бутлоадера з таблиці нижче.
+```
 
 **Доказ**
 
@@ -650,11 +1012,29 @@
 ---
 
 <!-- fc id:T-C-028 sha:36969ccb src:dodatky/c-komandy.md:63 klas:E -->
-### T-C-028 · tablycya · рядок 63
+### T-C-028 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Прапорець | Навіщо |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -663,11 +1043,29 @@
 ---
 
 <!-- fc id:T-C-029 sha:1d6f7adf src:dodatky/c-komandy.md:65 klas:F -->
-### T-C-029 · tablycya · рядок 65
+### T-C-029 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `--baud 115200` | коли обривається на високій швидкості |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -676,11 +1074,29 @@
 ---
 
 <!-- fc id:T-C-030 sha:4fb5cfd6 src:dodatky/c-komandy.md:66 klas:A -->
-### T-C-030 · tablycya · рядок 66
+### T-C-030 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -712,11 +1128,29 @@
 ---
 
 <!-- fc id:T-C-031 sha:fd864248 src:dodatky/c-komandy.md:67 klas:A -->
-### T-C-031 · tablycya · рядок 67
+### T-C-031 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `-u` | вимкнути стиснення |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -748,11 +1182,29 @@
 ---
 
 <!-- fc id:T-C-032 sha:602ee8fd src:dodatky/c-komandy.md:68 klas:F -->
-### T-C-032 · tablycya · рядок 68
+### T-C-032 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `--no-stub` | коли клон не приймає допоміжну програму |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -761,11 +1213,29 @@
 ---
 
 <!-- fc id:T-C-033 sha:d2f41919 src:dodatky/c-komandy.md:69 klas:F -->
-### T-C-033 · tablycya · рядок 69
+### T-C-033 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -774,11 +1244,29 @@
 ---
 
 <!-- fc id:T-C-034 sha:4528aa3a src:dodatky/c-komandy.md:70 klas:E -->
-### T-C-034 · tablycya · рядок 70
+### T-C-034 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -800,11 +1288,29 @@
 ---
 
 <!-- fc id:T-C-035 sha:83305673 src:dodatky/c-komandy.md:71 klas:A -->
-### T-C-035 · tablycya · рядок 71
+### T-C-035 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -820,11 +1326,29 @@
 ---
 
 <!-- fc id:T-C-036 sha:8e5b5b76 src:dodatky/c-komandy.md:72 klas:F -->
-### T-C-036 · tablycya · рядок 72
+### T-C-036 · tablycya · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `--chip esp32s3` | коли автовизначення заважає |
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+
+| Прапорець | Навіщо |
+|---|---|
+| `--baud 115200` | коли обривається на високій швидкості |
+| `-z` | стиснення при передачі. **Уже ввімкнене** — крім `--no-stub` |
+| `-u` | вимкнути стиснення |
+| `--no-stub` | коли клон не приймає допоміжну програму |
+| `--before no-reset` | коли на платі немає DTR/RTS і скидання робиться рукою |
+| `--after no-reset` | лишити чип у завантажувачі: кілька команд поспіль |
+| `--after watchdog-reset` | [[S3]] [[C3]] застряг у download mode через native USB |
+| `--chip esp32s3` | коли автовизначення заважає |
+```
 
 **Доказ**
 
@@ -833,11 +1357,28 @@
 ---
 
 <!-- fc id:T-C-037 sha:544b21a9 src:dodatky/c-komandy.md:74 klas:A -->
-### T-C-037 · proza · рядок 74
+### T-C-037 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Про `-z` варто знати точно: стиснення ввімкнене **за замовчуванням**, тож у звичайній команді цей прапорець нічого не змінює.
+
+**Дослівно з книги**
+
+```
+Про `-z` варто знати точно: стиснення ввімкнене **за замовчуванням**,
+```
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+Про `-z` варто знати точно: стиснення ввімкнене **за замовчуванням**,
+тож у звичайній команді цей прапорець нічого не змінює. Сенс він має
+рівно в одному випадку — разом із `--no-stub`, де стиснення типово
+вимкнене.
+```
 
 **Доказ**
 
@@ -869,11 +1410,28 @@
 ---
 
 <!-- fc id:T-C-038 sha:3fe48028 src:dodatky/c-komandy.md:74 klas:F -->
-### T-C-038 · proza · рядок 74
+### T-C-038 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Сенс він має рівно в одному випадку — разом із `--no-stub`, де стиснення типово вимкнене.
+
+**Дослівно з книги**
+
+```
+Про `-z` варто знати точно: стиснення ввімкнене **за замовчуванням**,
+```
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+Про `-z` варто знати точно: стиснення ввімкнене **за замовчуванням**,
+тож у звичайній команді цей прапорець нічого не змінює. Сенс він має
+рівно в одному випадку — разом із `--no-stub`, де стиснення типово
+вимкнене.
+```
 
 **Доказ**
 
@@ -882,11 +1440,27 @@
 ---
 
 <!-- fc id:T-C-039 sha:119466dc src:dodatky/c-komandy.md:79 klas:F -->
-### T-C-039 · proza · рядок 79
+### T-C-039 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `--before default-reset` і `--after hard-reset` — теж значення за замовчуванням; писати їх, щоб «керувати скиданням», сенсу немає.
+
+**Дослівно з книги**
+
+```
+`--before default-reset` і `--after hard-reset` — теж значення за
+```
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+`--before default-reset` і `--after hard-reset` — теж значення за
+замовчуванням; писати їх, щоб «керувати скиданням», сенсу немає. Корисні
+саме інші значення, наведені в таблиці.
+```
 
 **Доказ**
 
@@ -895,11 +1469,27 @@
 ---
 
 <!-- fc id:T-C-040 sha:e708ae5d src:dodatky/c-komandy.md:79 klas:E -->
-### T-C-040 · proza · рядок 79
+### T-C-040 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Корисні саме інші значення, наведені в таблиці.
+
+**Дослівно з книги**
+
+```
+`--before default-reset` і `--after hard-reset` — теж значення за
+```
+
+**Контекст**
+
+```
+### Корисні прапорці
+
+`--before default-reset` і `--after hard-reset` — теж значення за
+замовчуванням; писати їх, щоб «керувати скиданням», сенсу немає. Корисні
+саме інші значення, наведені в таблиці.
+```
 
 **Доказ**
 
@@ -908,11 +1498,28 @@
 ---
 
 <!-- fc id:T-C-041 sha:dbb08ae1 src:dodatky/c-komandy.md:86 klas:F -->
-### T-C-041 · proza · рядок 86
+### T-C-041 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `burn-*` пропалює біти **фізично й назавжди** (розділ 20).
+
+**Дослівно з книги**
+
+```
+Лише читання безпечне. `burn-*` пропалює біти **фізично й назавжди**
+```
+
+**Контекст**
+
+```
+## espefuse
+
+::: nezvorotne
+Лише читання безпечне. `burn-*` пропалює біти **фізично й назавжди**
+(розділ 20).
+:::
+```
 
 **Доказ**
 
@@ -921,13 +1528,29 @@
 ---
 
 <!-- fc id:T-C-042 sha:d25d8e19 src:dodatky/c-komandy.md:90 klas:K -->
-### T-C-042 · kod · рядок 90
+### T-C-042 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > espefuse --port PORT summary        # безпечно: подивитися стан
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## espefuse
+
+```
+espefuse --port PORT summary        # безпечно: подивитися стан
+```
+````
 
 **Доказ**
 
@@ -958,11 +1581,21 @@
 ---
 
 <!-- fc id:T-C-043 sha:cdc968e6 src:dodatky/c-komandy.md:91 klas:A -->
-### T-C-043 · kod-ryadok · рядок 91
+### T-C-043 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > espefuse --port PORT summary        # безпечно: подивитися стан
+
+**Контекст**
+
+````
+## espefuse
+
+```
+espefuse --port PORT summary        # безпечно: подивитися стан
+```
+````
 
 **Доказ**
 
@@ -993,9 +1626,9 @@
 ---
 
 <!-- fc id:T-C-044 sha:d06f73ae src:dodatky/c-komandy.md:98 klas:K -->
-### T-C-044 · kod · рядок 98
+### T-C-044 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > idf.py create-project imya
@@ -1003,6 +1636,25 @@
 > idf.py set-target esp32s3       # ⚠ стирає sdkconfig
 > idf.py menuconfig               # пошук усередині — клавіша /
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Проєкт
+
+```
+idf.py create-project imya
+idf.py create-component imya
+idf.py set-target esp32s3       # ⚠ стирає sdkconfig
+idf.py menuconfig               # пошук усередині — клавіша /
+```
+````
 
 **Доказ**
 
@@ -1033,11 +1685,24 @@
 ---
 
 <!-- fc id:T-C-045 sha:3e0a67c9 src:dodatky/c-komandy.md:99 klas:A -->
-### T-C-045 · kod-ryadok · рядок 99
+### T-C-045 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py create-project imya
+
+**Контекст**
+
+````
+### Проєкт
+
+```
+idf.py create-project imya
+idf.py create-component imya
+idf.py set-target esp32s3       # ⚠ стирає sdkconfig
+idf.py menuconfig               # пошук усередині — клавіша /
+```
+````
 
 **Доказ**
 
@@ -1068,11 +1733,24 @@
 ---
 
 <!-- fc id:T-C-046 sha:c06327b4 src:dodatky/c-komandy.md:100 klas:A -->
-### T-C-046 · kod-ryadok · рядок 100
+### T-C-046 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py create-component imya
+
+**Контекст**
+
+````
+### Проєкт
+
+```
+idf.py create-project imya
+idf.py create-component imya
+idf.py set-target esp32s3       # ⚠ стирає sdkconfig
+idf.py menuconfig               # пошук усередині — клавіша /
+```
+````
 
 **Доказ**
 
@@ -1103,11 +1781,24 @@
 ---
 
 <!-- fc id:T-C-047 sha:bb9f7106 src:dodatky/c-komandy.md:101 klas:A -->
-### T-C-047 · kod-ryadok · рядок 101
+### T-C-047 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py set-target esp32s3       # ⚠ стирає sdkconfig
+
+**Контекст**
+
+````
+### Проєкт
+
+```
+idf.py create-project imya
+idf.py create-component imya
+idf.py set-target esp32s3       # ⚠ стирає sdkconfig
+idf.py menuconfig               # пошук усередині — клавіша /
+```
+````
 
 **Доказ**
 
@@ -1138,11 +1829,24 @@
 ---
 
 <!-- fc id:T-C-048 sha:93619e04 src:dodatky/c-komandy.md:102 klas:A -->
-### T-C-048 · kod-ryadok · рядок 102
+### T-C-048 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py menuconfig               # пошук усередині — клавіша /
+
+**Контекст**
+
+````
+### Проєкт
+
+```
+idf.py create-project imya
+idf.py create-component imya
+idf.py set-target esp32s3       # ⚠ стирає sdkconfig
+idf.py menuconfig               # пошук усередині — клавіша /
+```
+````
 
 **Доказ**
 
@@ -1173,9 +1877,9 @@
 ---
 
 <!-- fc id:T-C-049 sha:4f12da8e src:dodatky/c-komandy.md:107 klas:K -->
-### T-C-049 · kod · рядок 107
+### T-C-049 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > idf.py build
@@ -1186,6 +1890,28 @@
 > idf.py fullclean                        # коли збирання поводиться дивно
 > idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Збирання і прошивка
+
+```
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+idf.py fullclean                        # коли збирання поводиться дивно
+idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+```
+````
 
 **Доказ**
 
@@ -1207,11 +1933,27 @@
 ---
 
 <!-- fc id:T-C-050 sha:343d9bab src:dodatky/c-komandy.md:108 klas:F -->
-### T-C-050 · kod-ryadok · рядок 108
+### T-C-050 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py build
+
+**Контекст**
+
+````
+### Збирання і прошивка
+
+```
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+idf.py fullclean                        # коли збирання поводиться дивно
+idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+```
+````
 
 **Доказ**
 
@@ -1220,11 +1962,27 @@
 ---
 
 <!-- fc id:T-C-051 sha:aaa1cf80 src:dodatky/c-komandy.md:109 klas:F -->
-### T-C-051 · kod-ryadok · рядок 109
+### T-C-051 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py -p /dev/ttyUSB0 flash
+
+**Контекст**
+
+````
+### Збирання і прошивка
+
+```
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+idf.py fullclean                        # коли збирання поводиться дивно
+idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+```
+````
 
 **Доказ**
 
@@ -1233,11 +1991,27 @@
 ---
 
 <!-- fc id:T-C-052 sha:770cf8b9 src:dodatky/c-komandy.md:110 klas:F -->
-### T-C-052 · kod-ryadok · рядок 110
+### T-C-052 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+
+**Контекст**
+
+````
+### Збирання і прошивка
+
+```
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+idf.py fullclean                        # коли збирання поводиться дивно
+idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+```
+````
 
 **Доказ**
 
@@ -1246,11 +2020,27 @@
 ---
 
 <!-- fc id:T-C-053 sha:7879c453 src:dodatky/c-komandy.md:111 klas:F -->
-### T-C-053 · kod-ryadok · рядок 111
+### T-C-053 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+
+**Контекст**
+
+````
+### Збирання і прошивка
+
+```
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+idf.py fullclean                        # коли збирання поводиться дивно
+idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+```
+````
 
 **Доказ**
 
@@ -1259,11 +2049,27 @@
 ---
 
 <!-- fc id:T-C-054 sha:5410fc3a src:dodatky/c-komandy.md:112 klas:A -->
-### T-C-054 · kod-ryadok · рядок 112
+### T-C-054 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+
+**Контекст**
+
+````
+### Збирання і прошивка
+
+```
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+idf.py fullclean                        # коли збирання поводиться дивно
+idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+```
+````
 
 **Доказ**
 
@@ -1294,11 +2100,27 @@
 ---
 
 <!-- fc id:T-C-055 sha:345eb1d8 src:dodatky/c-komandy.md:113 klas:A -->
-### T-C-055 · kod-ryadok · рядок 113
+### T-C-055 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py fullclean                        # коли збирання поводиться дивно
+
+**Контекст**
+
+````
+### Збирання і прошивка
+
+```
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+idf.py fullclean                        # коли збирання поводиться дивно
+idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+```
+````
 
 **Доказ**
 
@@ -1329,11 +2151,27 @@
 ---
 
 <!-- fc id:T-C-056 sha:42aea75b src:dodatky/c-komandy.md:114 klas:A -->
-### T-C-056 · kod-ryadok · рядок 114
+### T-C-056 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+
+**Контекст**
+
+````
+### Збирання і прошивка
+
+```
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py -p /dev/ttyUSB0 monitor          # вихід Ctrl+]
+idf.py -p /dev/ttyUSB0 flash monitor    # найчастіша команда
+idf.py -p /dev/ttyUSB0 app-flash        # лише застосунок, швидше
+idf.py fullclean                        # коли збирання поводиться дивно
+idf.py merge-bin -o vyrib.bin           # один образ; адреси — з конфігурації
+```
+````
 
 **Доказ**
 
@@ -1355,11 +2193,28 @@
 ---
 
 <!-- fc id:T-C-057 sha:46891766 src:dodatky/c-komandy.md:117 klas:A -->
-### T-C-057 · proza · рядок 117
+### T-C-057 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `idf.py merge-bin` кращий за `esptool merge-bin` завжди, коли проєкт під рукою: адресу бутлоадера, чип, режим і частоту флешу він бере з конфігурації, а не з набраного вручну рядка.
+
+**Дослівно з книги**
+
+```
+`idf.py merge-bin` кращий за `esptool merge-bin` завжди, коли проєкт під
+```
+
+**Контекст**
+
+```
+### Збирання і прошивка
+
+`idf.py merge-bin` кращий за `esptool merge-bin` завжди, коли проєкт під
+рукою: адресу бутлоадера, чип, режим і частоту флешу він бере з
+конфігурації, а не з набраного вручну рядка. Без `-o` результат —
+`build/merged-binary.bin`.
+```
 
 **Доказ**
 
@@ -1381,11 +2236,28 @@
 ---
 
 <!-- fc id:T-C-058 sha:850fe94c src:dodatky/c-komandy.md:117 klas:A -->
-### T-C-058 · proza · рядок 117
+### T-C-058 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Без `-o` результат — `build/merged-binary.bin`.
+
+**Дослівно з книги**
+
+```
+`idf.py merge-bin` кращий за `esptool merge-bin` завжди, коли проєкт під
+```
+
+**Контекст**
+
+```
+### Збирання і прошивка
+
+`idf.py merge-bin` кращий за `esptool merge-bin` завжди, коли проєкт під
+рукою: адресу бутлоадера, чип, режим і частоту флешу він бере з
+конфігурації, а не з набраного вручну рядка. Без `-o` результат —
+`build/merged-binary.bin`.
+```
 
 **Доказ**
 
@@ -1407,15 +2279,33 @@
 ---
 
 <!-- fc id:T-C-059 sha:e06292bb src:dodatky/c-komandy.md:124 klas:K -->
-### T-C-059 · kod · рядок 124
+### T-C-059 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > idf.py size                 # скільки зайнято флешу і RAM
 > idf.py size-components      # ХТО САМЕ займає — найкорисніша
 > idf.py size-files
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Аналіз
+
+```
+idf.py size                 # скільки зайнято флешу і RAM
+idf.py size-components      # ХТО САМЕ займає — найкорисніша
+idf.py size-files
+```
+````
 
 **Доказ**
 
@@ -1446,11 +2336,23 @@
 ---
 
 <!-- fc id:T-C-060 sha:0f34d83d src:dodatky/c-komandy.md:125 klas:A -->
-### T-C-060 · kod-ryadok · рядок 125
+### T-C-060 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py size                 # скільки зайнято флешу і RAM
+
+**Контекст**
+
+````
+### Аналіз
+
+```
+idf.py size                 # скільки зайнято флешу і RAM
+idf.py size-components      # ХТО САМЕ займає — найкорисніша
+idf.py size-files
+```
+````
 
 **Доказ**
 
@@ -1481,11 +2383,23 @@
 ---
 
 <!-- fc id:T-C-061 sha:ab73f933 src:dodatky/c-komandy.md:126 klas:A -->
-### T-C-061 · kod-ryadok · рядок 126
+### T-C-061 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py size-components      # ХТО САМЕ займає — найкорисніша
+
+**Контекст**
+
+````
+### Аналіз
+
+```
+idf.py size                 # скільки зайнято флешу і RAM
+idf.py size-components      # ХТО САМЕ займає — найкорисніша
+idf.py size-files
+```
+````
 
 **Доказ**
 
@@ -1516,11 +2430,23 @@
 ---
 
 <!-- fc id:T-C-062 sha:9136076f src:dodatky/c-komandy.md:127 klas:A -->
-### T-C-062 · kod-ryadok · рядок 127
+### T-C-062 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py size-files
+
+**Контекст**
+
+````
+### Аналіз
+
+```
+idf.py size                 # скільки зайнято флешу і RAM
+idf.py size-components      # ХТО САМЕ займає — найкорисніша
+idf.py size-files
+```
+````
 
 **Доказ**
 
@@ -1551,9 +2477,9 @@
 ---
 
 <!-- fc id:T-C-063 sha:d3c38986 src:dodatky/c-komandy.md:132 klas:K -->
-### T-C-063 · kod · рядок 132
+### T-C-063 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > idf.py coredump-info        # розбір coredump із флешу
@@ -1562,24 +2488,56 @@
 > idf.py monitor              # з розшифровкою backtrace на льоту
 > ```
 
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Діагностика
+
+```
+idf.py coredump-info        # розбір coredump із флешу
+idf.py coredump-debug       # GDB на збереженому стані
+idf.py openocd gdb          # покрокове налагодження (S3, C3)
+idf.py monitor              # з розшифровкою backtrace на льоту
+```
+````
+
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > idf.py monitor
-- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
 - **Прохід:** m2-hvylya3
 
 ---
 
 <!-- fc id:T-C-064 sha:48df8d47 src:dodatky/c-komandy.md:133 klas:A -->
-### T-C-064 · kod-ryadok · рядок 133
+### T-C-064 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py coredump-info        # розбір coredump із флешу
+
+**Контекст**
+
+````
+### Діагностика
+
+```
+idf.py coredump-info        # розбір coredump із флешу
+idf.py coredump-debug       # GDB на збереженому стані
+idf.py openocd gdb          # покрокове налагодження (S3, C3)
+idf.py monitor              # з розшифровкою backtrace на льоту
+```
+````
 
 **Доказ**
 
@@ -1610,11 +2568,24 @@
 ---
 
 <!-- fc id:T-C-065 sha:f88382bd src:dodatky/c-komandy.md:134 klas:A -->
-### T-C-065 · kod-ryadok · рядок 134
+### T-C-065 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py coredump-debug       # GDB на збереженому стані
+
+**Контекст**
+
+````
+### Діагностика
+
+```
+idf.py coredump-info        # розбір coredump із флешу
+idf.py coredump-debug       # GDB на збереженому стані
+idf.py openocd gdb          # покрокове налагодження (S3, C3)
+idf.py monitor              # з розшифровкою backtrace на льоту
+```
+````
 
 **Доказ**
 
@@ -1645,11 +2616,24 @@
 ---
 
 <!-- fc id:T-C-066 sha:b89c04ed src:dodatky/c-komandy.md:135 klas:A -->
-### T-C-066 · kod-ryadok · рядок 135
+### T-C-066 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py openocd gdb          # покрокове налагодження (S3, C3)
+
+**Контекст**
+
+````
+### Діагностика
+
+```
+idf.py coredump-info        # розбір coredump із флешу
+idf.py coredump-debug       # GDB на збереженому стані
+idf.py openocd gdb          # покрокове налагодження (S3, C3)
+idf.py monitor              # з розшифровкою backtrace на льоту
+```
+````
 
 **Доказ**
 
@@ -1680,11 +2664,24 @@
 ---
 
 <!-- fc id:T-C-067 sha:249fc25a src:dodatky/c-komandy.md:136 klas:A -->
-### T-C-067 · kod-ryadok · рядок 136
+### T-C-067 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py monitor              # з розшифровкою backtrace на льоту
+
+**Контекст**
+
+````
+### Діагностика
+
+```
+idf.py coredump-info        # розбір coredump із флешу
+idf.py coredump-debug       # GDB на збереженому стані
+idf.py openocd gdb          # покрокове налагодження (S3, C3)
+idf.py monitor              # з розшифровкою backtrace на льоту
+```
+````
 
 **Доказ**
 
@@ -1692,21 +2689,38 @@
 - **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > idf.py monitor
-- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
 - **Прохід:** m2-hvylya3
 
 ---
 
 <!-- fc id:T-C-068 sha:f027758e src:dodatky/c-komandy.md:141 klas:K -->
-### T-C-068 · kod · рядок 141
+### T-C-068 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > idf.py add-dependency "espressif/led_strip^3.0.3"
 > idf.py reconfigure
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+### Компоненти
+
+```
+idf.py add-dependency "espressif/led_strip^3.0.3"
+idf.py reconfigure
+```
+````
 
 **Доказ**
 
@@ -1737,11 +2751,22 @@
 ---
 
 <!-- fc id:T-C-069 sha:4f76e0f2 src:dodatky/c-komandy.md:142 klas:A -->
-### T-C-069 · kod-ryadok · рядок 142
+### T-C-069 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py add-dependency "espressif/led_strip^3.0.3"
+
+**Контекст**
+
+````
+### Компоненти
+
+```
+idf.py add-dependency "espressif/led_strip^3.0.3"
+idf.py reconfigure
+```
+````
 
 **Доказ**
 
@@ -1772,11 +2797,22 @@
 ---
 
 <!-- fc id:T-C-070 sha:bd18c568 src:dodatky/c-komandy.md:143 klas:A -->
-### T-C-070 · kod-ryadok · рядок 143
+### T-C-070 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py reconfigure
+
+**Контекст**
+
+````
+### Компоненти
+
+```
+idf.py add-dependency "espressif/led_strip^3.0.3"
+idf.py reconfigure
+```
+````
 
 **Доказ**
 
@@ -1807,15 +2843,33 @@
 ---
 
 <!-- fc id:T-C-071 sha:14ee9040 src:dodatky/c-komandy.md:148 klas:K -->
-### T-C-071 · kod · рядок 148
+### T-C-071 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > xtensa-esp32-elf-addr2line   -pfiaC -e build/app.elf 0x400d1234 0x400d5678
 > xtensa-esp32s3-elf-addr2line -pfiaC -e build/app.elf 0x42001234
 > riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Розшифровка backtrace вручну
+
+```
+xtensa-esp32-elf-addr2line   -pfiaC -e build/app.elf 0x400d1234 0x400d5678
+xtensa-esp32s3-elf-addr2line -pfiaC -e build/app.elf 0x42001234
+riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
+```
+````
 
 **Доказ**
 
@@ -1824,11 +2878,23 @@
 ---
 
 <!-- fc id:T-C-072 sha:5f267d8c src:dodatky/c-komandy.md:149 klas:F -->
-### T-C-072 · kod-ryadok · рядок 149
+### T-C-072 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > xtensa-esp32-elf-addr2line   -pfiaC -e build/app.elf 0x400d1234 0x400d5678
+
+**Контекст**
+
+````
+## Розшифровка backtrace вручну
+
+```
+xtensa-esp32-elf-addr2line   -pfiaC -e build/app.elf 0x400d1234 0x400d5678
+xtensa-esp32s3-elf-addr2line -pfiaC -e build/app.elf 0x42001234
+riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
+```
+````
 
 **Доказ**
 
@@ -1837,11 +2903,23 @@
 ---
 
 <!-- fc id:T-C-073 sha:f57b50fb src:dodatky/c-komandy.md:150 klas:F -->
-### T-C-073 · kod-ryadok · рядок 150
+### T-C-073 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > xtensa-esp32s3-elf-addr2line -pfiaC -e build/app.elf 0x42001234
+
+**Контекст**
+
+````
+## Розшифровка backtrace вручну
+
+```
+xtensa-esp32-elf-addr2line   -pfiaC -e build/app.elf 0x400d1234 0x400d5678
+xtensa-esp32s3-elf-addr2line -pfiaC -e build/app.elf 0x42001234
+riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
+```
+````
 
 **Доказ**
 
@@ -1850,11 +2928,23 @@
 ---
 
 <!-- fc id:T-C-074 sha:69e46646 src:dodatky/c-komandy.md:151 klas:F -->
-### T-C-074 · kod-ryadok · рядок 151
+### T-C-074 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
+
+**Контекст**
+
+````
+## Розшифровка backtrace вручну
+
+```
+xtensa-esp32-elf-addr2line   -pfiaC -e build/app.elf 0x400d1234 0x400d5678
+xtensa-esp32s3-elf-addr2line -pfiaC -e build/app.elf 0x42001234
+riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
+```
+````
 
 **Доказ**
 
@@ -1862,25 +2952,53 @@
 
 ---
 
-<!-- fc id:T-C-075 sha:2a969ef0 src:dodatky/c-komandy.md:154 klas:F -->
-### T-C-075 · proza · рядок 154
+<!-- fc id:T-C-075 sha:2a969ef0 src:dodatky/c-komandy.md:154 klas:A -->
+### T-C-075 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `-i` обов'язковий: без нього inline-кадри зникають.
 
+**Контекст**
+
+```
+## Розшифровка backtrace вручну
+
+`-i` обов'язковий: без нього inline-кадри зникають.
+```
+
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+- **Дослівно з джерела:**
+  > (inlined by) inner_dont_crash
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** флаг -i входить до складу -pfiaC; документ показує розшифровані inline-кадри з цим флагом
+- **Прохід:** prochid-c-komandy
 
 ---
 
 <!-- fc id:T-C-076 sha:828c36b3 src:dodatky/c-komandy.md:158 klas:F -->
-### T-C-076 · tablycya-shapka · рядок 158
+### T-C-076 · tablycya-shapka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Програма | Вихід | Особливість |
+
+**Контекст**
+
+```
+## Монітори портів
+
+
+| Програма | Вихід | Особливість |
+|---|---|---|
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
 
 **Доказ**
 
@@ -1889,11 +3007,31 @@
 ---
 
 <!-- fc id:T-C-077 sha:af9c4cd0 src:dodatky/c-komandy.md:159 klas:A -->
-### T-C-077 · komirka · рядок 159
+### T-C-077 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `idf.py monitor` · Вихід → `Ctrl+]`
+
+**Дослівно з книги**
+
+```
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+```
+
+**Контекст**
+
+```
+## Монітори портів
+
+
+| Програма | Вихід | Особливість |
+|---|---|---|
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
 
 **Доказ**
 
@@ -1922,11 +3060,31 @@
 ---
 
 <!-- fc id:T-C-078 sha:1b645088 src:dodatky/c-komandy.md:159 klas:A -->
-### T-C-078 · komirka · рядок 159
+### T-C-078 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `idf.py monitor` · Особливість → розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R`
+
+**Дослівно з книги**
+
+```
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+```
+
+**Контекст**
+
+```
+## Монітори портів
+
+
+| Програма | Вихід | Особливість |
+|---|---|---|
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
 
 **Доказ**
 
@@ -1955,11 +3113,31 @@
 ---
 
 <!-- fc id:T-C-079 sha:e7670044 src:dodatky/c-komandy.md:160 klas:F -->
-### T-C-079 · komirka · рядок 160
+### T-C-079 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `picocom -b 115200 /dev/ttyUSB0` · Вихід → `Ctrl+A`, `Ctrl+X`
+
+**Дослівно з книги**
+
+```
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+```
+
+**Контекст**
+
+```
+## Монітори портів
+
+
+| Програма | Вихід | Особливість |
+|---|---|---|
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
 
 **Доказ**
 
@@ -1968,11 +3146,31 @@
 ---
 
 <!-- fc id:T-C-080 sha:3e00cb93 src:dodatky/c-komandy.md:160 klas:F -->
-### T-C-080 · komirka · рядок 160
+### T-C-080 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `picocom -b 115200 /dev/ttyUSB0` · Особливість → найпростіший
+
+**Дослівно з книги**
+
+```
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+```
+
+**Контекст**
+
+```
+## Монітори портів
+
+
+| Програма | Вихід | Особливість |
+|---|---|---|
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
 
 **Доказ**
 
@@ -1981,11 +3179,31 @@
 ---
 
 <!-- fc id:T-C-081 sha:b668a28a src:dodatky/c-komandy.md:161 klas:F -->
-### T-C-081 · komirka · рядок 161
+### T-C-081 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `minicom -D /dev/ttyUSB0 -b 115200` · Вихід → `Ctrl+A`, `X`
+
+**Дослівно з книги**
+
+```
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+```
+
+**Контекст**
+
+```
+## Монітори портів
+
+
+| Програма | Вихід | Особливість |
+|---|---|---|
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
 
 **Доказ**
 
@@ -1994,11 +3212,31 @@
 ---
 
 <!-- fc id:T-C-082 sha:00c75e9e src:dodatky/c-komandy.md:162 klas:F -->
-### T-C-082 · komirka · рядок 162
+### T-C-082 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `screen /dev/ttyUSB0 115200` · Вихід → `Ctrl+A`, `K`
+
+**Дослівно з книги**
+
+```
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
+
+**Контекст**
+
+```
+## Монітори портів
+
+
+| Програма | Вихід | Особливість |
+|---|---|---|
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
 
 **Доказ**
 
@@ -2007,11 +3245,31 @@
 ---
 
 <!-- fc id:T-C-083 sha:a33fb442 src:dodatky/c-komandy.md:162 klas:F -->
-### T-C-083 · komirka · рядок 162
+### T-C-083 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `screen /dev/ttyUSB0 115200` · Особливість → є майже скрізь
+
+**Дослівно з книги**
+
+```
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
+
+**Контекст**
+
+```
+## Монітори портів
+
+
+| Програма | Вихід | Особливість |
+|---|---|---|
+| `idf.py monitor` | `Ctrl+]` | розшифровує backtrace; скидання `Ctrl+T`, `Ctrl+R` |
+| `picocom -b 115200 /dev/ttyUSB0` | `Ctrl+A`, `Ctrl+X` | найпростіший |
+| `minicom -D /dev/ttyUSB0 -b 115200` | `Ctrl+A`, `X` | |
+| `screen /dev/ttyUSB0 115200` | `Ctrl+A`, `K` | є майже скрізь |
+```
 
 **Доказ**
 
@@ -2020,13 +3278,29 @@
 ---
 
 <!-- fc id:T-C-084 sha:03ecbe4f src:dodatky/c-komandy.md:167 klas:K -->
-### T-C-084 · kod · рядок 167
+### T-C-084 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Монітори портів
+
+```
+picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
+```
+````
 
 **Доказ**
 
@@ -2035,11 +3309,21 @@
 ---
 
 <!-- fc id:T-C-085 sha:999b86b5 src:dodatky/c-komandy.md:168 klas:F -->
-### T-C-085 · kod-ryadok · рядок 168
+### T-C-085 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
+
+**Контекст**
+
+````
+## Монітори портів
+
+```
+picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
+```
+````
 
 **Доказ**
 
@@ -2048,9 +3332,9 @@
 ---
 
 <!-- fc id:T-C-086 sha:5bc221cd src:dodatky/c-komandy.md:173 klas:K -->
-### T-C-086 · kod · рядок 173
+### T-C-086 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > ls /dev/ttyUSB* /dev/ttyACM*     # що є
@@ -2059,6 +3343,26 @@
 > lsof /dev/ttyUSB0                # хто тримає порт
 > sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Порти
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # що є
+ls -l /dev/serial/by-id/         # стабільні імена для скриптів
+dmesg | tail -20                 # що ядро побачило
+lsof /dev/ttyUSB0                # хто тримає порт
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+```
+````
 
 **Доказ**
 
@@ -2067,11 +3371,25 @@
 ---
 
 <!-- fc id:T-C-087 sha:7140ef8e src:dodatky/c-komandy.md:174 klas:F -->
-### T-C-087 · kod-ryadok · рядок 174
+### T-C-087 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ls /dev/ttyUSB* /dev/ttyACM*     # що є
+
+**Контекст**
+
+````
+## Порти
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # що є
+ls -l /dev/serial/by-id/         # стабільні імена для скриптів
+dmesg | tail -20                 # що ядро побачило
+lsof /dev/ttyUSB0                # хто тримає порт
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+```
+````
 
 **Доказ**
 
@@ -2080,11 +3398,25 @@
 ---
 
 <!-- fc id:T-C-088 sha:583a0a4a src:dodatky/c-komandy.md:175 klas:F -->
-### T-C-088 · kod-ryadok · рядок 175
+### T-C-088 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ls -l /dev/serial/by-id/         # стабільні імена для скриптів
+
+**Контекст**
+
+````
+## Порти
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # що є
+ls -l /dev/serial/by-id/         # стабільні імена для скриптів
+dmesg | tail -20                 # що ядро побачило
+lsof /dev/ttyUSB0                # хто тримає порт
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+```
+````
 
 **Доказ**
 
@@ -2093,11 +3425,25 @@
 ---
 
 <!-- fc id:T-C-089 sha:88976550 src:dodatky/c-komandy.md:176 klas:F -->
-### T-C-089 · kod-ryadok · рядок 176
+### T-C-089 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > dmesg | tail -20                 # що ядро побачило
+
+**Контекст**
+
+````
+## Порти
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # що є
+ls -l /dev/serial/by-id/         # стабільні імена для скриптів
+dmesg | tail -20                 # що ядро побачило
+lsof /dev/ttyUSB0                # хто тримає порт
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+```
+````
 
 **Доказ**
 
@@ -2106,11 +3452,25 @@
 ---
 
 <!-- fc id:T-C-090 sha:04c7f41f src:dodatky/c-komandy.md:177 klas:F -->
-### T-C-090 · kod-ryadok · рядок 177
+### T-C-090 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > lsof /dev/ttyUSB0                # хто тримає порт
+
+**Контекст**
+
+````
+## Порти
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # що є
+ls -l /dev/serial/by-id/         # стабільні імена для скриптів
+dmesg | tail -20                 # що ядро побачило
+lsof /dev/ttyUSB0                # хто тримає порт
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+```
+````
 
 **Доказ**
 
@@ -2119,11 +3479,25 @@
 ---
 
 <!-- fc id:T-C-091 sha:459deb70 src:dodatky/c-komandy.md:178 klas:F -->
-### T-C-091 · kod-ryadok · рядок 178
+### T-C-091 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+
+**Контекст**
+
+````
+## Порти
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # що є
+ls -l /dev/serial/by-id/         # стабільні імена для скриптів
+dmesg | tail -20                 # що ядро побачило
+lsof /dev/ttyUSB0                # хто тримає порт
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+```
+````
 
 **Доказ**
 
@@ -2131,25 +3505,59 @@
 
 ---
 
-<!-- fc id:T-C-092 sha:b97a16ef src:dodatky/c-komandy.md:181 klas:F -->
-### T-C-092 · proza · рядок 181
+<!-- fc id:T-C-092 sha:b97a16ef src:dodatky/c-komandy.md:181 klas:A -->
+### T-C-092 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `/dev/ttyUSB*` — зовнішній міст.
 
+**Дослівно з книги**
+
+```
+`/dev/ttyUSB*` — зовнішній міст. `/dev/ttyACM*` — native USB [[S3]] [[C3]].
+```
+
+**Контекст**
+
+```
+## Порти
+
+`/dev/ttyUSB*` — зовнішній міст. `/dev/ttyACM*` — native USB [[S3]] [[C3]].
+```
+
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > For Linux users, if the port name is /dev/ttyUSB0
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+- **Нотатка:** документ підтверджує, що /dev/ttyUSB* є портом зовнішнього USB-to-UART моста
+- **Прохід:** prochid-c-komandy
 
 ---
 
 <!-- fc id:T-C-093 sha:2130100e src:dodatky/c-komandy.md:181 klas:F -->
-### T-C-093 · proza · рядок 181
+### T-C-093 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `/dev/ttyACM*` — native USB [[S3]] [[C3]].
+
+**Дослівно з книги**
+
+```
+`/dev/ttyUSB*` — зовнішній міст. `/dev/ttyACM*` — native USB [[S3]] [[C3]].
+```
+
+**Контекст**
+
+```
+## Порти
+
+`/dev/ttyUSB*` — зовнішній міст. `/dev/ttyACM*` — native USB [[S3]] [[C3]].
+```
 
 **Доказ**
 
@@ -2158,9 +3566,9 @@
 ---
 
 <!-- fc id:T-C-094 sha:f68e2f06 src:dodatky/c-komandy.md:185 klas:K -->
-### T-C-094 · kod · рядок 185
+### T-C-094 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > pio run                    # зібрати
@@ -2170,6 +3578,27 @@
 > pio run -t clean
 > pio pkg update
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## PlatformIO
+
+```
+pio run                    # зібрати
+pio run -e s3              # конкретне середовище
+pio run -t upload
+pio device monitor
+pio run -t clean
+pio pkg update
+```
+````
 
 **Доказ**
 
@@ -2178,11 +3607,26 @@
 ---
 
 <!-- fc id:T-C-095 sha:0b0001c2 src:dodatky/c-komandy.md:186 klas:F -->
-### T-C-095 · kod-ryadok · рядок 186
+### T-C-095 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > pio run                    # зібрати
+
+**Контекст**
+
+````
+## PlatformIO
+
+```
+pio run                    # зібрати
+pio run -e s3              # конкретне середовище
+pio run -t upload
+pio device monitor
+pio run -t clean
+pio pkg update
+```
+````
 
 **Доказ**
 
@@ -2191,11 +3635,26 @@
 ---
 
 <!-- fc id:T-C-096 sha:307983fc src:dodatky/c-komandy.md:187 klas:F -->
-### T-C-096 · kod-ryadok · рядок 187
+### T-C-096 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > pio run -e s3              # конкретне середовище
+
+**Контекст**
+
+````
+## PlatformIO
+
+```
+pio run                    # зібрати
+pio run -e s3              # конкретне середовище
+pio run -t upload
+pio device monitor
+pio run -t clean
+pio pkg update
+```
+````
 
 **Доказ**
 
@@ -2204,11 +3663,26 @@
 ---
 
 <!-- fc id:T-C-097 sha:82ea1803 src:dodatky/c-komandy.md:188 klas:F -->
-### T-C-097 · kod-ryadok · рядок 188
+### T-C-097 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > pio run -t upload
+
+**Контекст**
+
+````
+## PlatformIO
+
+```
+pio run                    # зібрати
+pio run -e s3              # конкретне середовище
+pio run -t upload
+pio device monitor
+pio run -t clean
+pio pkg update
+```
+````
 
 **Доказ**
 
@@ -2217,11 +3691,26 @@
 ---
 
 <!-- fc id:T-C-098 sha:364802c1 src:dodatky/c-komandy.md:189 klas:F -->
-### T-C-098 · kod-ryadok · рядок 189
+### T-C-098 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > pio device monitor
+
+**Контекст**
+
+````
+## PlatformIO
+
+```
+pio run                    # зібрати
+pio run -e s3              # конкретне середовище
+pio run -t upload
+pio device monitor
+pio run -t clean
+pio pkg update
+```
+````
 
 **Доказ**
 
@@ -2230,11 +3719,26 @@
 ---
 
 <!-- fc id:T-C-099 sha:1a074688 src:dodatky/c-komandy.md:190 klas:F -->
-### T-C-099 · kod-ryadok · рядок 190
+### T-C-099 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > pio run -t clean
+
+**Контекст**
+
+````
+## PlatformIO
+
+```
+pio run                    # зібрати
+pio run -e s3              # конкретне середовище
+pio run -t upload
+pio device monitor
+pio run -t clean
+pio pkg update
+```
+````
 
 **Доказ**
 
@@ -2243,11 +3747,26 @@
 ---
 
 <!-- fc id:T-C-100 sha:a092446e src:dodatky/c-komandy.md:191 klas:F -->
-### T-C-100 · kod-ryadok · рядок 191
+### T-C-100 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > pio pkg update
+
+**Контекст**
+
+````
+## PlatformIO
+
+```
+pio run                    # зібрати
+pio run -e s3              # конкретне середовище
+pio run -t upload
+pio device monitor
+pio run -t clean
+pio pkg update
+```
+````
 
 **Доказ**
 
@@ -2256,11 +3775,26 @@
 ---
 
 <!-- fc id:T-C-101 sha:3c153db1 src:dodatky/c-komandy.md:196 klas:F -->
-### T-C-101 · tablycya-shapka · рядок 196
+### T-C-101 · tablycya-shapka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2269,11 +3803,27 @@
 ---
 
 <!-- fc id:T-C-102 sha:03becf94 src:dodatky/c-komandy.md:197 klas:A -->
-### T-C-102 · komirka · рядок 197
+### T-C-102 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > bootloader · classic, S2 → `0x1000`
+
+**Дослівно з книги**
+
+```
+  0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
+```
+
+**Контекст**
+
+````
+### Запис
+
+```
+esptool --port PORT --baud 460800 write-flash -z \
+  0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
+````
 
 **Доказ**
 
@@ -2293,7 +3843,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -2302,11 +3852,32 @@
 ---
 
 <!-- fc id:T-C-103 sha:1fe1e089 src:dodatky/c-komandy.md:197 klas:A -->
-### T-C-103 · komirka · рядок 197
+### T-C-103 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > bootloader · S3, C3, C6, H2 → `0x0`
+
+**Дослівно з книги**
+
+```
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2321,11 +3892,32 @@
 ---
 
 <!-- fc id:T-C-104 sha:ddb10a79 src:dodatky/c-komandy.md:197 klas:A -->
-### T-C-104 · komirka · рядок 197
+### T-C-104 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > bootloader · P4, C5, H4 → `0x2000`
+
+**Дослівно з книги**
+
+```
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2345,7 +3937,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -2354,11 +3946,30 @@
 ---
 
 <!-- fc id:T-C-105 sha:a6442276 src:dodatky/c-komandy.md:198 klas:A -->
-### T-C-105 · komirka · рядок 198
+### T-C-105 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > таблиця розділів · classic, S2 → `0x8000`
+
+**Дослівно з книги**
+
+```
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+
+**Контекст**
+
+````
+### Читання
+
+```
+esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+````
 
 **Доказ**
 
@@ -2376,11 +3987,30 @@
 ---
 
 <!-- fc id:T-C-106 sha:21c0d046 src:dodatky/c-komandy.md:198 klas:A -->
-### T-C-106 · komirka · рядок 198
+### T-C-106 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > таблиця розділів · S3, C3, C6, H2 → `0x8000`
+
+**Дослівно з книги**
+
+```
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+
+**Контекст**
+
+````
+### Читання
+
+```
+esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+````
 
 **Доказ**
 
@@ -2398,11 +4028,30 @@
 ---
 
 <!-- fc id:T-C-107 sha:59461729 src:dodatky/c-komandy.md:198 klas:A -->
-### T-C-107 · komirka · рядок 198
+### T-C-107 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > таблиця розділів · P4, C5, H4 → `0x8000`
+
+**Дослівно з книги**
+
+```
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+
+**Контекст**
+
+````
+### Читання
+
+```
+esptool --port PORT read-flash 0 ALL dump.bin           # повний дамп
+esptool --port PORT read-flash 0 0x400000 dump.bin      # 4 МБ явно
+esptool --port PORT read-flash 0x9000 0x6000 nvs.bin    # лише NVS
+esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця розділів
+```
+````
 
 **Доказ**
 
@@ -2420,11 +4069,32 @@
 ---
 
 <!-- fc id:T-C-108 sha:55b5b58b src:dodatky/c-komandy.md:199 klas:A -->
-### T-C-108 · komirka · рядок 199
+### T-C-108 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > застосунок · classic, S2 → `0x10000`
+
+**Дослівно з книги**
+
+```
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2444,7 +4114,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -2453,11 +4123,32 @@
 ---
 
 <!-- fc id:T-C-109 sha:55a122c0 src:dodatky/c-komandy.md:199 klas:A -->
-### T-C-109 · komirka · рядок 199
+### T-C-109 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > застосунок · S3, C3, C6, H2 → `0x10000`
+
+**Дослівно з книги**
+
+```
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2477,7 +4168,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -2486,11 +4177,32 @@
 ---
 
 <!-- fc id:T-C-110 sha:eb3f0062 src:dodatky/c-komandy.md:199 klas:A -->
-### T-C-110 · komirka · рядок 199
+### T-C-110 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > застосунок · P4, C5, H4 → `0x10000`
+
+**Дослівно з книги**
+
+```
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2510,7 +4222,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -2519,11 +4231,32 @@
 ---
 
 <!-- fc id:T-C-111 sha:96022a5e src:dodatky/c-komandy.md:200 klas:A -->
-### T-C-111 · komirka · рядок 200
+### T-C-111 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `nvs` (типово) · classic, S2 → `0x9000`
+
+**Дослівно з книги**
+
+```
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2543,7 +4276,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -2552,11 +4285,32 @@
 ---
 
 <!-- fc id:T-C-112 sha:906f56bc src:dodatky/c-komandy.md:200 klas:A -->
-### T-C-112 · komirka · рядок 200
+### T-C-112 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `nvs` (типово) · S3, C3, C6, H2 → `0x9000`
+
+**Дослівно з книги**
+
+```
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2576,7 +4330,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -2585,11 +4339,32 @@
 ---
 
 <!-- fc id:T-C-113 sha:5efc2dcb src:dodatky/c-komandy.md:200 klas:A -->
-### T-C-113 · komirka · рядок 200
+### T-C-113 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `nvs` (типово) · P4, C5, H4 → `0x9000`
+
+**Дослівно з книги**
+
+```
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2609,7 +4384,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -2618,11 +4393,32 @@
 ---
 
 <!-- fc id:T-C-114 sha:ceaada41 src:dodatky/c-komandy.md:201 klas:A -->
-### T-C-114 · komirka · рядок 201
+### T-C-114 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > зібраний `merge-bin` · classic, S2 → `0x0`
+
+**Дослівно з книги**
+
+```
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2637,7 +4433,7 @@
   > (idf-py.rst)
   > …create a single binary file ``merged-binary.[bin|hex]`` in the build
   > folder, which can then be flashed later.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
 Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
 - **Прохід:** pass-28-komandy-suciljno
@@ -2645,11 +4441,32 @@
 ---
 
 <!-- fc id:T-C-115 sha:9feefdcc src:dodatky/c-komandy.md:201 klas:A -->
-### T-C-115 · komirka · рядок 201
+### T-C-115 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > зібраний `merge-bin` · S3, C3, C6, H2 → `0x0`
+
+**Дослівно з книги**
+
+```
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2664,11 +4481,32 @@
 ---
 
 <!-- fc id:T-C-116 sha:c94bfb00 src:dodatky/c-komandy.md:201 klas:A -->
-### T-C-116 · komirka · рядок 201
+### T-C-116 · komirka · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > зібраний `merge-bin` · P4, C5, H4 → `0x0`
+
+**Дослівно з книги**
+
+```
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| таблиця розділів | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| `nvs` (типово) | `0x9000` | `0x9000` | `0x9000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -2683,7 +4521,7 @@
   > (idf-py.rst)
   > …create a single binary file ``merged-binary.[bin|hex]`` in the build
   > folder, which can then be flashed later.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
 Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
 - **Прохід:** pass-28-komandy-suciljno
@@ -2691,11 +4529,28 @@
 ---
 
 <!-- fc id:T-C-117 sha:9ab6d1e4 src:dodatky/c-komandy.md:204 klas:A -->
-### T-C-117 · proza · рядок 204
+### T-C-117 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Адресу бутлоадера задає ROM чипа (`CONFIG_BOOTLOADER_OFFSET_IN_FLASH`), і в ESP-IDF вона не налаштовується.
+
+**Дослівно з книги**
+
+```
+Адресу бутлоадера задає ROM чипа (`CONFIG_BOOTLOADER_OFFSET_IN_FLASH`), і
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+Адресу бутлоадера задає ROM чипа (`CONFIG_BOOTLOADER_OFFSET_IN_FLASH`), і
+в ESP-IDF вона не налаштовується. Правила «що новіше, то ближче до нуля»
+немає: у P4, C5 і H4 перші два сектори віддані під ключі шифрування
+флешу, і бутлоадер зсунуто на `0x2000`.
+```
 
 **Доказ**
 
@@ -2719,11 +4574,28 @@
 ---
 
 <!-- fc id:T-C-118 sha:aa2e7ddd src:dodatky/c-komandy.md:204 klas:A -->
-### T-C-118 · proza · рядок 204
+### T-C-118 · proza · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Правила «що новіше, то ближче до нуля» немає: у P4, C5 і H4 перші два сектори віддані під ключі шифрування флешу, і бутлоадер зсунуто на `0x2000`.
+
+**Дослівно з книги**
+
+```
+Адресу бутлоадера задає ROM чипа (`CONFIG_BOOTLOADER_OFFSET_IN_FLASH`), і
+```
+
+**Контекст**
+
+```
+## Адреси у флеші
+
+Адресу бутлоадера задає ROM чипа (`CONFIG_BOOTLOADER_OFFSET_IN_FLASH`), і
+в ESP-IDF вона не налаштовується. Правила «що новіше, то ближче до нуля»
+немає: у P4, C5 і H4 перші два сектори віддані під ключі шифрування
+флешу, і бутлоадер зсунуто на `0x2000`.
+```
 
 **Доказ**
 
@@ -2747,14 +4619,31 @@
 ---
 
 <!-- fc id:T-C-119 sha:20c177db src:dodatky/c-komandy.md:211 klas:K -->
-### T-C-119 · kod · рядок 211
+### T-C-119 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > dd if=dump.bin of=pt.bin bs=1 skip=$((0x8000)) count=$((0x1000))
 > python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Розбір таблиці розділів із дампа
+
+```
+dd if=dump.bin of=pt.bin bs=1 skip=$((0x8000)) count=$((0x1000))
+python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
+```
+````
 
 **Доказ**
 
@@ -2762,18 +4651,29 @@
 - **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
-- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує команду gen_esp32part.py
 - **Прохід:** m2-hvylya3
 
 ---
 
 <!-- fc id:T-C-120 sha:d1458242 src:dodatky/c-komandy.md:212 klas:D -->
-### T-C-120 · kod-ryadok · рядок 212
+### T-C-120 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > dd if=dump.bin of=pt.bin bs=1 skip=$((0x8000)) count=$((0x1000))
+
+**Контекст**
+
+````
+## Розбір таблиці розділів із дампа
+
+```
+dd if=dump.bin of=pt.bin bs=1 skip=$((0x8000)) count=$((0x1000))
+python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
+```
+````
 
 **Доказ**
 
@@ -2795,11 +4695,22 @@
 ---
 
 <!-- fc id:T-C-121 sha:4438754b src:dodatky/c-komandy.md:213 klas:A -->
-### T-C-121 · kod-ryadok · рядок 213
+### T-C-121 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
+
+**Контекст**
+
+````
+## Розбір таблиці розділів із дампа
+
+```
+dd if=dump.bin of=pt.bin bs=1 skip=$((0x8000)) count=$((0x1000))
+python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
+```
+````
 
 **Доказ**
 
@@ -2807,22 +4718,40 @@
 - **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
-- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ описує команду gen_esp32part.py
 - **Прохід:** m2-hvylya3
 
 ---
 
 <!-- fc id:T-C-122 sha:9fd4791b src:dodatky/c-komandy.md:218 klas:K -->
-### T-C-122 · kod · рядок 218
+### T-C-122 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > strings -n 6 dump.bin | less
 > strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 > strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Розвідка чужої прошивки
+
+```
+strings -n 6 dump.bin | less
+strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
+strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
+```
+````
 
 **Доказ**
 
@@ -2845,11 +4774,23 @@
 ---
 
 <!-- fc id:T-C-123 sha:3e391da0 src:dodatky/c-komandy.md:219 klas:F -->
-### T-C-123 · kod-ryadok · рядок 219
+### T-C-123 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > strings -n 6 dump.bin | less
+
+**Контекст**
+
+````
+## Розвідка чужої прошивки
+
+```
+strings -n 6 dump.bin | less
+strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
+strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
+```
+````
 
 **Доказ**
 
@@ -2858,11 +4799,23 @@
 ---
 
 <!-- fc id:T-C-124 sha:580bb88f src:dodatky/c-komandy.md:220 klas:A -->
-### T-C-124 · kod-ryadok · рядок 220
+### T-C-124 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
+
+**Контекст**
+
+````
+## Розвідка чужої прошивки
+
+```
+strings -n 6 dump.bin | less
+strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
+strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
+```
+````
 
 **Доказ**
 
@@ -2885,11 +4838,23 @@
 ---
 
 <!-- fc id:T-C-125 sha:f102892d src:dodatky/c-komandy.md:221 klas:F -->
-### T-C-125 · kod-ryadok · рядок 221
+### T-C-125 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
+
+**Контекст**
+
+````
+## Розвідка чужої прошивки
+
+```
+strings -n 6 dump.bin | less
+strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
+strings -n 6 dump.bin | grep -iE "http|mqtt|ssid|pass"
+```
+````
 
 **Доказ**
 
@@ -2898,14 +4863,31 @@
 ---
 
 <!-- fc id:T-C-126 sha:51bbff59 src:dodatky/c-komandy.md:228 klas:K -->
-### T-C-126 · kod · рядок 228
+### T-C-126 · kod · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > nvs_partition_gen.py generate config-0042.csv nvs-0042.bin 0x6000
 > esptool --port PORT write-flash 0x9000 nvs-0042.bin
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Генерація NVS для серії
+
+```
+nvs_partition_gen.py generate config-0042.csv nvs-0042.bin 0x6000
+esptool --port PORT write-flash 0x9000 nvs-0042.bin
+```
+````
 
 **Доказ**
 
@@ -2934,11 +4916,22 @@
 ---
 
 <!-- fc id:T-C-127 sha:aa33e38e src:dodatky/c-komandy.md:229 klas:D -->
-### T-C-127 · kod-ryadok · рядок 229
+### T-C-127 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > nvs_partition_gen.py generate config-0042.csv nvs-0042.bin 0x6000
+
+**Контекст**
+
+````
+## Генерація NVS для серії
+
+```
+nvs_partition_gen.py generate config-0042.csv nvs-0042.bin 0x6000
+esptool --port PORT write-flash 0x9000 nvs-0042.bin
+```
+````
 
 **Доказ**
 
@@ -2960,11 +4953,22 @@
 ---
 
 <!-- fc id:T-C-128 sha:8fc5b038 src:dodatky/c-komandy.md:230 klas:A -->
-### T-C-128 · kod-ryadok · рядок 230
+### T-C-128 · kod-ryadok · `dodatky/c-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port PORT write-flash 0x9000 nvs-0042.bin
+
+**Контекст**
+
+````
+## Генерація NVS для серії
+
+```
+nvs_partition_gen.py generate config-0042.csv nvs-0042.bin 0x6000
+esptool --port PORT write-flash 0x9000 nvs-0042.bin
+```
+````
 
 **Доказ**
 

@@ -63,7 +63,8 @@ CIL = ROOT / "factcheck" / "NARYAD-vybirka.md"
 NASINNYA = 20260826
 
 RE_ZAHOLOVOK = re.compile(
-    r"<!-- fc id:(?P<id>[\w-]+) sha:\w+ src:(?P<src>[^\s]+) klas:(?P<klas>\w+) -->")
+    r"<!-- fc id:(?P<id>[\w-]+) sha:(?P<sha>\w+) src:(?P<src>[^\s]+) "
+    r"klas:(?P<klas>\w+) -->")
 RE_CYTATA = re.compile(r"^> (?P<t>.+)$", re.M)
 
 
@@ -82,14 +83,15 @@ def odynyci(klas: str) -> list[dict]:
         for f in sorted(katalog.glob("*.md")):
             tekst = f.read_text(encoding="utf-8")
             shmatky = RE_ZAHOLOVOK.split(tekst)
-            # `split` із групами віддає [до, id, src, klas, після, ...]
-            for i in range(1, len(shmatky), 4):
-                ident, src, k = shmatky[i], shmatky[i + 1], shmatky[i + 2]
+            # `split` із групами віддає [до, id, sha, src, klas, після, ...]
+            for i in range(1, len(shmatky), 5):
+                ident, sha = shmatky[i], shmatky[i + 1]
+                src, k = shmatky[i + 2], shmatky[i + 3]
                 if k != klas:
                     continue
-                tilo = shmatky[i + 3]
+                tilo = shmatky[i + 4]
                 m = RE_CYTATA.search(tilo)
-                out.append({"id": ident, "src": src,
+                out.append({"id": ident, "sha": sha, "src": src,
                             "tekst": m.group("t").strip() if m else ""})
     return out
 

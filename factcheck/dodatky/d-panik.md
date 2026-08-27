@@ -7,11 +7,26 @@
 ---
 
 <!-- fc id:T-D-001 sha:12851aa7 src:dodatky/d-panik.md:3 klas:E -->
-### T-D-001 · proza · рядок 3
+### T-D-001 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Розгорнута версія карток [К6](#k-bootlog) і [К7](#k-panika).
+
+**Дослівно з книги**
+
+```
+Розгорнута версія карток [К6](#k-bootlog) і [К7](#k-panika). Пояснення —
+```
+
+**Контекст**
+
+```
+# Додаток D. Boot-повідомлення, скидання, паніки {#dod-panik}
+
+Розгорнута версія карток [К6](#k-bootlog) і [К7](#k-panika). Пояснення —
+розділи 16 і 26.
+```
 
 **Доказ**
 
@@ -20,11 +35,26 @@
 ---
 
 <!-- fc id:T-D-002 sha:c9f6a4e2 src:dodatky/d-panik.md:3 klas:E -->
-### T-D-002 · proza · рядок 3
+### T-D-002 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Пояснення — розділи 16 і 26.
+
+**Дослівно з книги**
+
+```
+Розгорнута версія карток [К6](#k-bootlog) і [К7](#k-panika). Пояснення —
+```
+
+**Контекст**
+
+```
+# Додаток D. Boot-повідомлення, скидання, паніки {#dod-panik}
+
+Розгорнута версія карток [К6](#k-bootlog) і [К7](#k-panika). Пояснення —
+розділи 16 і 26.
+```
 
 **Доказ**
 
@@ -33,11 +63,19 @@
 ---
 
 <!-- fc id:T-D-003 sha:fa25e155 src:dodatky/d-panik.md:8 klas:A -->
-### T-D-003 · proza · рядок 8
+### T-D-003 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+```
 
 **Доказ**
 
@@ -71,11 +109,37 @@
 ---
 
 <!-- fc id:T-D-004 sha:1b3814f6 src:dodatky/d-panik.md:10 klas:F -->
-### T-D-004 · tablycya-shapka · рядок 10
+### T-D-004 · tablycya-shapka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Код | Назва | Що сталося | Що робити |
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -84,11 +148,43 @@
 ---
 
 <!-- fc id:T-D-005 sha:508894ad src:dodatky/d-panik.md:11 klas:A -->
-### T-D-005 · komirka · рядок 11
+### T-D-005 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x1` · Назва → POWERON_RESET
+
+**Дослівно з книги**
+
+```
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -103,11 +199,43 @@
 ---
 
 <!-- fc id:T-D-006 sha:d090e5b8 src:dodatky/d-panik.md:11 klas:A -->
-### T-D-006 · komirka · рядок 11
+### T-D-006 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x1` · Що сталося → подано живлення або `EN`
+
+**Дослівно з книги**
+
+```
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -122,11 +250,43 @@
 ---
 
 <!-- fc id:T-D-007 sha:7431c283 src:dodatky/d-panik.md:11 klas:B -->
-### T-D-007 · komirka · рядок 11
+### T-D-007 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x1` · Що робити → норма
+
+**Дослівно з книги**
+
+```
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -141,11 +301,43 @@
 ---
 
 <!-- fc id:T-D-008 sha:1baef394 src:dodatky/d-panik.md:12 klas:A -->
-### T-D-008 · komirka · рядок 12
+### T-D-008 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x3` · Назва → SW_RESET
+
+**Дослівно з книги**
+
+```
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -160,11 +352,43 @@
 ---
 
 <!-- fc id:T-D-009 sha:16e24570 src:dodatky/d-panik.md:12 klas:A -->
-### T-D-009 · komirka · рядок 12
+### T-D-009 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x3` · Що сталося → `esp_restart()` з коду
+
+**Дослівно з книги**
+
+```
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -189,11 +413,43 @@
 ---
 
 <!-- fc id:T-D-010 sha:03a89bab src:dodatky/d-panik.md:12 klas:B -->
-### T-D-010 · komirka · рядок 12
+### T-D-010 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x3` · Що робити → норма, якщо ваша
+
+**Дослівно з книги**
+
+```
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -208,11 +464,43 @@
 ---
 
 <!-- fc id:T-D-011 sha:7add9e17 src:dodatky/d-panik.md:13 klas:A -->
-### T-D-011 · komirka · рядок 13
+### T-D-011 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x4` · Назва → OWDT_RESET
+
+**Дослівно з книги**
+
+```
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -227,11 +515,43 @@
 ---
 
 <!-- fc id:T-D-012 sha:3ae2fadd src:dodatky/d-panik.md:13 klas:A -->
-### T-D-012 · komirka · рядок 13
+### T-D-012 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x4` · Що сталося → застарілий watchdog
+
+**Дослівно з книги**
+
+```
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -246,11 +566,43 @@
 ---
 
 <!-- fc id:T-D-013 sha:b04df11d src:dodatky/d-panik.md:13 klas:B -->
-### T-D-013 · komirka · рядок 13
+### T-D-013 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x4` · Що робити → рідко
+
+**Дослівно з книги**
+
+```
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -265,11 +617,43 @@
 ---
 
 <!-- fc id:T-D-014 sha:60cc5d87 src:dodatky/d-panik.md:14 klas:A -->
-### T-D-014 · komirka · рядок 14
+### T-D-014 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x5` · Назва → DEEPSLEEP_RESET
+
+**Дослівно з книги**
+
+```
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -284,11 +668,43 @@
 ---
 
 <!-- fc id:T-D-015 sha:d01aac01 src:dodatky/d-panik.md:14 klas:A -->
-### T-D-015 · komirka · рядок 14
+### T-D-015 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x5` · Що сталося → прокинувся з deep sleep
+
+**Дослівно з книги**
+
+```
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -303,11 +719,43 @@
 ---
 
 <!-- fc id:T-D-016 sha:0f8056b3 src:dodatky/d-panik.md:14 klas:B -->
-### T-D-016 · komirka · рядок 14
+### T-D-016 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x5` · Що робити → норма
+
+**Дослівно з книги**
+
+```
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -322,11 +770,43 @@
 ---
 
 <!-- fc id:T-D-017 sha:6624efb1 src:dodatky/d-panik.md:15 klas:A -->
-### T-D-017 · komirka · рядок 15
+### T-D-017 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x6` · Назва → SDIO_RESET
+
+**Дослівно з книги**
+
+```
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -341,11 +821,43 @@
 ---
 
 <!-- fc id:T-D-018 sha:8a61920f src:dodatky/d-panik.md:15 klas:A -->
-### T-D-018 · komirka · рядок 15
+### T-D-018 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x6` · Що сталося → скидання модулем SLC
+
+**Дослівно з книги**
+
+```
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -360,11 +872,43 @@
 ---
 
 <!-- fc id:T-D-019 sha:31ae5bdb src:dodatky/d-panik.md:15 klas:B -->
-### T-D-019 · komirka · рядок 15
+### T-D-019 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x6` · Що робити → рідко
+
+**Дослівно з книги**
+
+```
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -379,11 +923,43 @@
 ---
 
 <!-- fc id:T-D-020 sha:b13c24c5 src:dodatky/d-panik.md:16 klas:A -->
-### T-D-020 · komirka · рядок 16
+### T-D-020 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x7` · Назва → TG0WDT_SYS_RESET
+
+**Дослівно з книги**
+
+```
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -415,11 +991,43 @@
 ---
 
 <!-- fc id:T-D-021 sha:3f69134f src:dodatky/d-panik.md:16 klas:A -->
-### T-D-021 · komirka · рядок 16
+### T-D-021 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x7` · Що сталося → watchdog таймера 0
+
+**Дослівно з книги**
+
+```
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -434,11 +1042,43 @@
 ---
 
 <!-- fc id:T-D-022 sha:64d8d101 src:dodatky/d-panik.md:16 klas:F -->
-### T-D-022 · komirka · рядок 16
+### T-D-022 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x7` · Що робити → розділ 32
+
+**Дослівно з книги**
+
+```
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -447,11 +1087,43 @@
 ---
 
 <!-- fc id:T-D-023 sha:a4c80ac9 src:dodatky/d-panik.md:17 klas:A -->
-### T-D-023 · komirka · рядок 17
+### T-D-023 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x8` · Назва → TG1WDT_SYS_RESET
+
+**Дослівно з книги**
+
+```
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -466,11 +1138,43 @@
 ---
 
 <!-- fc id:T-D-024 sha:3253c52a src:dodatky/d-panik.md:17 klas:A -->
-### T-D-024 · komirka · рядок 17
+### T-D-024 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x8` · Що сталося → watchdog таймера 1
+
+**Дослівно з книги**
+
+```
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -485,11 +1189,43 @@
 ---
 
 <!-- fc id:T-D-025 sha:67e1a886 src:dodatky/d-panik.md:17 klas:F -->
-### T-D-025 · komirka · рядок 17
+### T-D-025 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x8` · Що робити → розділ 32
+
+**Дослівно з книги**
+
+```
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -498,11 +1234,43 @@
 ---
 
 <!-- fc id:T-D-026 sha:61c76aaf src:dodatky/d-panik.md:18 klas:A -->
-### T-D-026 · komirka · рядок 18
+### T-D-026 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x9` · Назва → RTCWDT_SYS_RESET
+
+**Дослівно з книги**
+
+```
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -517,11 +1285,43 @@
 ---
 
 <!-- fc id:T-D-027 sha:9b884225 src:dodatky/d-panik.md:18 klas:A -->
-### T-D-027 · komirka · рядок 18
+### T-D-027 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x9` · Що сталося → RTC watchdog
+
+**Дослівно з книги**
+
+```
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -536,11 +1336,43 @@
 ---
 
 <!-- fc id:T-D-028 sha:abc8094d src:dodatky/d-panik.md:18 klas:F -->
-### T-D-028 · komirka · рядок 18
+### T-D-028 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x9` · Що робити → розділ 32
+
+**Дослівно з книги**
+
+```
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -549,11 +1381,43 @@
 ---
 
 <!-- fc id:T-D-029 sha:3c9dd369 src:dodatky/d-panik.md:19 klas:A -->
-### T-D-029 · komirka · рядок 19
+### T-D-029 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xa` · Назва → INTRUSION_RESET
+
+**Дослівно з книги**
+
+```
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -568,11 +1432,43 @@
 ---
 
 <!-- fc id:T-D-030 sha:47e8e5d3 src:dodatky/d-panik.md:19 klas:A -->
-### T-D-030 · komirka · рядок 19
+### T-D-030 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xa` · Що сталося → детектор втручання
+
+**Дослівно з книги**
+
+```
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -587,11 +1483,43 @@
 ---
 
 <!-- fc id:T-D-031 sha:9064117d src:dodatky/d-panik.md:19 klas:A -->
-### T-D-031 · komirka · рядок 19
+### T-D-031 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xa` · Що робити → рідко
+
+**Дослівно з книги**
+
+```
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -606,11 +1534,43 @@
 ---
 
 <!-- fc id:T-D-032 sha:b1aea164 src:dodatky/d-panik.md:20 klas:F -->
-### T-D-032 · komirka · рядок 20
+### T-D-032 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xb` · Назва → TGWDT_CPU_RESET
+
+**Дослівно з книги**
+
+```
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -619,11 +1579,43 @@
 ---
 
 <!-- fc id:T-D-033 sha:ffe03c46 src:dodatky/d-panik.md:20 klas:A -->
-### T-D-033 · komirka · рядок 20
+### T-D-033 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xb` · Що сталося → watchdog скинув ядро
+
+**Дослівно з книги**
+
+```
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -639,11 +1631,43 @@
 ---
 
 <!-- fc id:T-D-034 sha:4184159d src:dodatky/d-panik.md:20 klas:F -->
-### T-D-034 · komirka · рядок 20
+### T-D-034 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xb` · Що робити → розділ 32
+
+**Дослівно з книги**
+
+```
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -652,11 +1676,43 @@
 ---
 
 <!-- fc id:T-D-035 sha:9b73d7e0 src:dodatky/d-panik.md:21 klas:A -->
-### T-D-035 · komirka · рядок 21
+### T-D-035 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xc` · Назва → SW_CPU_RESET
+
+**Дослівно з книги**
+
+```
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -688,11 +1744,43 @@
 ---
 
 <!-- fc id:T-D-036 sha:382d166f src:dodatky/d-panik.md:21 klas:C -->
-### T-D-036 · komirka · рядок 21
+### T-D-036 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xc` · Що сталося → програмне скидання ядра
+
+**Дослівно з книги**
+
+```
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -705,11 +1793,43 @@
 ---
 
 <!-- fc id:T-D-037 sha:63b241b6 src:dodatky/d-panik.md:21 klas:F -->
-### T-D-037 · komirka · рядок 21
+### T-D-037 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xc` · Що робити → **типово після паніки**
+
+**Дослівно з книги**
+
+```
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -718,11 +1838,43 @@
 ---
 
 <!-- fc id:T-D-038 sha:b265b468 src:dodatky/d-panik.md:22 klas:B -->
-### T-D-038 · komirka · рядок 22
+### T-D-038 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xd` · Назва → RTCWDT_CPU_RESET
+
+**Дослівно з книги**
+
+```
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -737,11 +1889,43 @@
 ---
 
 <!-- fc id:T-D-039 sha:e72beb66 src:dodatky/d-panik.md:22 klas:A -->
-### T-D-039 · komirka · рядок 22
+### T-D-039 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xd` · Що сталося → RTC watchdog скинув ядро
+
+**Дослівно з книги**
+
+```
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -757,11 +1941,43 @@
 ---
 
 <!-- fc id:T-D-040 sha:cc29d27d src:dodatky/d-panik.md:22 klas:A -->
-### T-D-040 · komirka · рядок 22
+### T-D-040 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xd` · Що робити → розділ 32
+
+**Дослівно з книги**
+
+```
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -776,11 +1992,43 @@
 ---
 
 <!-- fc id:T-D-041 sha:5964cff8 src:dodatky/d-panik.md:23 klas:A -->
-### T-D-041 · komirka · рядок 23
+### T-D-041 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xe` · Назва → EXT_CPU_RESET
+
+**Дослівно з книги**
+
+```
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -795,11 +2043,43 @@
 ---
 
 <!-- fc id:T-D-042 sha:111c70cc src:dodatky/d-panik.md:23 klas:A -->
-### T-D-042 · komirka · рядок 23
+### T-D-042 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xe` · Що сталося → APP CPU скинутий PRO CPU
+
+**Дослівно з книги**
+
+```
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -814,11 +2094,43 @@
 ---
 
 <!-- fc id:T-D-043 sha:47b3fdc0 src:dodatky/d-panik.md:23 klas:F -->
-### T-D-043 · komirka · рядок 23
+### T-D-043 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xe` · Що робити → норма
+
+**Дослівно з книги**
+
+```
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -827,11 +2139,43 @@
 ---
 
 <!-- fc id:T-D-044 sha:4f167746 src:dodatky/d-panik.md:24 klas:A -->
-### T-D-044 · komirka · рядок 24
+### T-D-044 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xf` · Назва → RTCWDT_BROWN_OUT_RESET
+
+**Дослівно з книги**
+
+```
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -863,11 +2207,43 @@
 ---
 
 <!-- fc id:T-D-045 sha:00c236fb src:dodatky/d-panik.md:24 klas:A -->
-### T-D-045 · komirka · рядок 24
+### T-D-045 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xf` · Що сталося → **просіло живлення**
+
+**Дослівно з книги**
+
+```
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -882,11 +2258,43 @@
 ---
 
 <!-- fc id:T-D-046 sha:3323a02f src:dodatky/d-panik.md:24 klas:F -->
-### T-D-046 · komirka · рядок 24
+### T-D-046 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0xf` · Що робити → ⚡ розділ 06
+
+**Дослівно з книги**
+
+```
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -895,11 +2303,43 @@
 ---
 
 <!-- fc id:T-D-047 sha:9338f26b src:dodatky/d-panik.md:25 klas:A -->
-### T-D-047 · komirka · рядок 25
+### T-D-047 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x10` · Назва → RTCWDT_RTC_RESET
+
+**Дослівно з книги**
+
+```
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -907,18 +2347,50 @@
 - **Джерело:** dzherela-kesh/569e266f-fatal-errors.rst
 - **Дослівно з джерела:**
   > rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
-- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Місце в документі: розділ RTC Watchdog Timeout, рядок 306
 - **Прохід:** m2-hvylya2
 
 ---
 
 <!-- fc id:T-D-048 sha:6938bd06 src:dodatky/d-panik.md:25 klas:A -->
-### T-D-048 · komirka · рядок 25
+### T-D-048 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x10` · Що сталося → RTC watchdog скинув усе
+
+**Дослівно з книги**
+
+```
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -934,11 +2406,43 @@
 ---
 
 <!-- fc id:T-D-049 sha:1e2b3315 src:dodatky/d-panik.md:25 klas:F -->
-### T-D-049 · komirka · рядок 25
+### T-D-049 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x10` · Що робити → розділ 32
+
+**Дослівно з книги**
+
+```
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Числові коди з ROM-заголовка ESP-IDF (enum `RESET_REASON`), [[classic]].
+
+| Код | Назва | Що сталося | Що робити |
+|---|---|---|---|
+| `0x1` | POWERON_RESET | подано живлення або `EN` | норма |
+| `0x3` | SW_RESET | `esp_restart()` з коду | норма, якщо ваша |
+| `0x4` | OWDT_RESET | застарілий watchdog | рідко |
+| `0x5` | DEEPSLEEP_RESET | прокинувся з deep sleep | норма |
+| `0x6` | SDIO_RESET | скидання модулем SLC | рідко |
+| `0x7` | TG0WDT_SYS_RESET | watchdog таймера 0 | розділ 32 |
+| `0x8` | TG1WDT_SYS_RESET | watchdog таймера 1 | розділ 32 |
+| `0x9` | RTCWDT_SYS_RESET | RTC watchdog | розділ 32 |
+| `0xa` | INTRUSION_RESET | детектор втручання | рідко |
+| `0xb` | TGWDT_CPU_RESET | watchdog скинув ядро | розділ 32 |
+| `0xc` | SW_CPU_RESET | програмне скидання ядра | **типово після паніки** |
+| `0xd` | RTCWDT_CPU_RESET | RTC watchdog скинув ядро | розділ 32 |
+| `0xe` | EXT_CPU_RESET | APP CPU скинутий PRO CPU | норма |
+| `0xf` | RTCWDT_BROWN_OUT_RESET | **просіло живлення** | ⚡ розділ 06 |
+| `0x10` | RTCWDT_RTC_RESET | RTC watchdog скинув усе | розділ 32 |
+```
 
 **Доказ**
 
@@ -947,11 +2451,26 @@
 ---
 
 <!-- fc id:T-D-050 sha:14e3db2f src:dodatky/d-panik.md:28 klas:F -->
-### T-D-050 · proza · рядок 28
+### T-D-050 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Три, що трапляються постійно: `0x1` (норма), `0xc` (після паніки), `0xf` (живлення).
+
+**Дослівно з книги**
+
+```
+Три, що трапляються постійно: `0x1` (норма), `0xc` (після паніки),
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+Три, що трапляються постійно: `0x1` (норма), `0xc` (після паніки),
+`0xf` (живлення).
+```
 
 **Доказ**
 
@@ -960,11 +2479,28 @@
 ---
 
 <!-- fc id:T-D-051 sha:95099304 src:dodatky/d-panik.md:32 klas:F -->
-### T-D-051 · proza · рядок 32
+### T-D-051 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `rst:0xf` — це **живлення**, не помилка в коді.
+
+**Дослівно з книги**
+
+```
+`rst:0xf` — це **живлення**, не помилка в коді. Скільки б ви не читали
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+::: zhyvlennya
+`rst:0xf` — це **живлення**, не помилка в коді. Скільки б ви не читали
+код, причина в джерелі, кабелі або конденсаторах (картка К13).
+:::
+```
 
 **Доказ**
 
@@ -973,11 +2509,28 @@
 ---
 
 <!-- fc id:T-D-052 sha:0517766f src:dodatky/d-panik.md:32 klas:E -->
-### T-D-052 · proza · рядок 32
+### T-D-052 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Скільки б ви не читали код, причина в джерелі, кабелі або конденсаторах (картка К13).
+
+**Дослівно з книги**
+
+```
+`rst:0xf` — це **живлення**, не помилка в коді. Скільки б ви не читали
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+::: zhyvlennya
+`rst:0xf` — це **живлення**, не помилка в коді. Скільки б ви не читали
+код, причина в джерелі, кабелі або конденсаторах (картка К13).
+:::
+```
 
 **Доказ**
 
@@ -986,11 +2539,25 @@
 ---
 
 <!-- fc id:T-D-053 sha:6f6a5a2e src:dodatky/d-panik.md:36 klas:A -->
-### T-D-053 · proza · рядок 36
+### T-D-053 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > З коду: `esp_reset_reason()`.
+
+**Дослівно з книги**
+
+```
+З коду: `esp_reset_reason()`. Логувати першим рядком `app_main`.
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+З коду: `esp_reset_reason()`. Логувати першим рядком `app_main`.
+```
 
 **Доказ**
 
@@ -1015,11 +2582,25 @@
 ---
 
 <!-- fc id:T-D-054 sha:a826fb3a src:dodatky/d-panik.md:36 klas:F -->
-### T-D-054 · proza · рядок 36
+### T-D-054 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Логувати першим рядком `app_main`.
+
+**Дослівно з книги**
+
+```
+З коду: `esp_reset_reason()`. Логувати першим рядком `app_main`.
+```
+
+**Контекст**
+
+```
+## Причини скидання: rst:
+
+З коду: `esp_reset_reason()`. Логувати першим рядком `app_main`.
+```
 
 **Доказ**
 
@@ -1028,11 +2609,25 @@
 ---
 
 <!-- fc id:T-D-055 sha:9789ed83 src:dodatky/d-panik.md:40 klas:E -->
-### T-D-055 · tablycya · рядок 40
+### T-D-055 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Значення | Що це |
+
+**Контекст**
+
+```
+## Режим завантаження: boot:
+
+
+| Значення | Що це |
+|---|---|
+| `SPI_FAST_FLASH_BOOT` | звичайний старт із флешу |
+| `DOWNLOAD_BOOT(UART0/UART1/...)` | download mode, `GPIO0` низький |
+| `DOWNLOAD(USB/UART0)` | те саме на чипах із власним USB |
+| `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` | **обрано непідтримуваний режим** |
+```
 
 **Доказ**
 
@@ -1041,11 +2636,25 @@
 ---
 
 <!-- fc id:T-D-056 sha:8e00aaa2 src:dodatky/d-panik.md:42 klas:A -->
-### T-D-056 · tablycya · рядок 42
+### T-D-056 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `SPI_FAST_FLASH_BOOT` | звичайний старт із флешу |
+
+**Контекст**
+
+```
+## Режим завантаження: boot:
+
+
+| Значення | Що це |
+|---|---|
+| `SPI_FAST_FLASH_BOOT` | звичайний старт із флешу |
+| `DOWNLOAD_BOOT(UART0/UART1/...)` | download mode, `GPIO0` низький |
+| `DOWNLOAD(USB/UART0)` | те саме на чипах із власним USB |
+| `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` | **обрано непідтримуваний режим** |
+```
 
 **Доказ**
 
@@ -1088,11 +2697,25 @@
 ---
 
 <!-- fc id:T-D-057 sha:bb0d0fd7 src:dodatky/d-panik.md:43 klas:A -->
-### T-D-057 · tablycya · рядок 43
+### T-D-057 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `DOWNLOAD_BOOT(UART0/UART1/...)` | download mode, `GPIO0` низький |
+
+**Контекст**
+
+```
+## Режим завантаження: boot:
+
+
+| Значення | Що це |
+|---|---|
+| `SPI_FAST_FLASH_BOOT` | звичайний старт із флешу |
+| `DOWNLOAD_BOOT(UART0/UART1/...)` | download mode, `GPIO0` низький |
+| `DOWNLOAD(USB/UART0)` | те саме на чипах із власним USB |
+| `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` | **обрано непідтримуваний режим** |
+```
 
 **Доказ**
 
@@ -1135,11 +2758,25 @@
 ---
 
 <!-- fc id:T-D-058 sha:d69814c1 src:dodatky/d-panik.md:44 klas:A -->
-### T-D-058 · tablycya · рядок 44
+### T-D-058 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `DOWNLOAD(USB/UART0)` | те саме на чипах із власним USB |
+
+**Контекст**
+
+```
+## Режим завантаження: boot:
+
+
+| Значення | Що це |
+|---|---|
+| `SPI_FAST_FLASH_BOOT` | звичайний старт із флешу |
+| `DOWNLOAD_BOOT(UART0/UART1/...)` | download mode, `GPIO0` низький |
+| `DOWNLOAD(USB/UART0)` | те саме на чипах із власним USB |
+| `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` | **обрано непідтримуваний режим** |
+```
 
 **Доказ**
 
@@ -1182,11 +2819,25 @@
 ---
 
 <!-- fc id:T-D-059 sha:d38efa56 src:dodatky/d-panik.md:45 klas:A -->
-### T-D-059 · tablycya · рядок 45
+### T-D-059 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` | **обрано непідтримуваний режим** |
+
+**Контекст**
+
+```
+## Режим завантаження: boot:
+
+
+| Значення | Що це |
+|---|---|
+| `SPI_FAST_FLASH_BOOT` | звичайний старт із флешу |
+| `DOWNLOAD_BOOT(UART0/UART1/...)` | download mode, `GPIO0` низький |
+| `DOWNLOAD(USB/UART0)` | те саме на чипах із власним USB |
+| `SPI_FLASH_BOOT`, `SDIO_REI_FEO_V1_BOOT`, `ATE_BOOT` | **обрано непідтримуваний режим** |
+```
 
 **Доказ**
 
@@ -1229,11 +2880,30 @@
 ---
 
 <!-- fc id:T-D-060 sha:010a7dfa src:dodatky/d-panik.md:47 klas:E -->
-### T-D-060 · proza · рядок 47
+### T-D-060 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Останній рядок трапляється рідко, і саме тому спантеличує: плата стартувала кудись, чого читач не шукав у жодній інструкції.
+
+**Дослівно з книги**
+
+```
+Останній рядок трапляється рідко, і саме тому спантеличує: плата
+```
+
+**Контекст**
+
+```
+## Режим завантаження: boot:
+
+Останній рядок трапляється рідко, і саме тому спантеличує: плата
+стартувала кудись, чого читач не шукав у жодній інструкції. Причина в
+переважній більшості випадків одна — **другий strapping-пін високий,
+коли головний низький**: [[classic]] `GPIO2` високий при низькому
+`GPIO0`. Тобто це не поломка, а комбінація, і лікується вона зняттям
+обв'язки з другого піна (розділ 07).
+```
 
 **Доказ**
 
@@ -1255,11 +2925,30 @@
 ---
 
 <!-- fc id:T-D-061 sha:3e300ed0 src:dodatky/d-panik.md:47 klas:A -->
-### T-D-061 · proza · рядок 47
+### T-D-061 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Причина в переважній більшості випадків одна — **другий strapping-пін високий, коли головний низький**: [[classic]] `GPIO2` високий при низькому `GPIO0`.
+
+**Дослівно з книги**
+
+```
+Останній рядок трапляється рідко, і саме тому спантеличує: плата
+```
+
+**Контекст**
+
+```
+## Режим завантаження: boot:
+
+Останній рядок трапляється рідко, і саме тому спантеличує: плата
+стартувала кудись, чого читач не шукав у жодній інструкції. Причина в
+переважній більшості випадків одна — **другий strapping-пін високий,
+коли головний низький**: [[classic]] `GPIO2` високий при низькому
+`GPIO0`. Тобто це не поломка, а комбінація, і лікується вона зняттям
+обв'язки з другого піна (розділ 07).
+```
 
 **Доказ**
 
@@ -1280,11 +2969,30 @@
 ---
 
 <!-- fc id:T-D-062 sha:f2710f9f src:dodatky/d-panik.md:47 klas:E -->
-### T-D-062 · proza · рядок 47
+### T-D-062 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Тобто це не поломка, а комбінація, і лікується вона зняттям обв'язки з другого піна (розділ 07).
+
+**Дослівно з книги**
+
+```
+Останній рядок трапляється рідко, і саме тому спантеличує: плата
+```
+
+**Контекст**
+
+```
+## Режим завантаження: boot:
+
+Останній рядок трапляється рідко, і саме тому спантеличує: плата
+стартувала кудись, чого читач не шукав у жодній інструкції. Причина в
+переважній більшості випадків одна — **другий strapping-пін високий,
+коли головний низький**: [[classic]] `GPIO2` високий при низькому
+`GPIO0`. Тобто це не поломка, а комбінація, і лікується вона зняттям
+обв'язки з другого піна (розділ 07).
+```
 
 **Доказ**
 
@@ -1293,11 +3001,27 @@
 ---
 
 <!-- fc id:T-D-063 sha:37e0f86d src:dodatky/d-panik.md:56 klas:E -->
-### T-D-063 · proza · рядок 56
+### T-D-063 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Найнедооціненіший рядок усього boot-логу.
+
+**Дослівно з книги**
+
+```
+Найнедооціненіший рядок усього boot-логу. Число після `boot:` — не
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Найнедооціненіший рядок усього boot-логу. Число після `boot:` — не
+код режиму, а **бітова маска регістра `GPIO_STRAP`**: рівні, які чип
+зафіксував на strapping-пінах у момент відпускання скидання.
+```
 
 **Доказ**
 
@@ -1306,11 +3030,27 @@
 ---
 
 <!-- fc id:T-D-064 sha:757a0843 src:dodatky/d-panik.md:56 klas:A -->
-### T-D-064 · proza · рядок 56
+### T-D-064 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Число після `boot:` — не код режиму, а **бітова маска регістра `GPIO_STRAP`**: рівні, які чип зафіксував на strapping-пінах у момент відпускання скидання.
+
+**Дослівно з книги**
+
+```
+Найнедооціненіший рядок усього boot-логу. Число після `boot:` — не
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Найнедооціненіший рядок усього boot-логу. Число після `boot:` — не
+код режиму, а **бітова маска регістра `GPIO_STRAP`**: рівні, які чип
+зафіксував на strapping-пінах у момент відпускання скидання.
+```
 
 **Доказ**
 
@@ -1340,11 +3080,19 @@
 ---
 
 <!-- fc id:T-D-065 sha:7c7d8833 src:dodatky/d-panik.md:60 klas:F -->
-### T-D-065 · proza · рядок 60
+### T-D-065 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[classic]] Для ESP32 classic біти такі:
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[classic]] Для ESP32 classic біти такі:
+```
 
 **Доказ**
 
@@ -1353,11 +3101,28 @@
 ---
 
 <!-- fc id:T-D-066 sha:7431ff81 src:dodatky/d-panik.md:62 klas:E -->
-### T-D-066 · tablycya · рядок 62
+### T-D-066 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Біт | Пін |
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[classic]] Для ESP32 classic біти такі:
+
+| Біт | Пін |
+|---|---|
+| `0x01` | `GPIO5` |
+| `0x02` | `GPIO15` (MTDO) |
+| `0x04` | `GPIO4` |
+| `0x08` | `GPIO2` |
+| `0x10` | `GPIO0` |
+| `0x20` | `GPIO12` (MTDI) |
+```
 
 **Доказ**
 
@@ -1366,11 +3131,28 @@
 ---
 
 <!-- fc id:T-D-067 sha:714c2e09 src:dodatky/d-panik.md:64 klas:A -->
-### T-D-067 · tablycya · рядок 64
+### T-D-067 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `0x01` | `GPIO5` |
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[classic]] Для ESP32 classic біти такі:
+
+| Біт | Пін |
+|---|---|
+| `0x01` | `GPIO5` |
+| `0x02` | `GPIO15` (MTDO) |
+| `0x04` | `GPIO4` |
+| `0x08` | `GPIO2` |
+| `0x10` | `GPIO0` |
+| `0x20` | `GPIO12` (MTDI) |
+```
 
 **Доказ**
 
@@ -1386,11 +3168,28 @@
 ---
 
 <!-- fc id:T-D-068 sha:681a141a src:dodatky/d-panik.md:65 klas:A -->
-### T-D-068 · tablycya · рядок 65
+### T-D-068 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `0x02` | `GPIO15` (MTDO) |
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[classic]] Для ESP32 classic біти такі:
+
+| Біт | Пін |
+|---|---|
+| `0x01` | `GPIO5` |
+| `0x02` | `GPIO15` (MTDO) |
+| `0x04` | `GPIO4` |
+| `0x08` | `GPIO2` |
+| `0x10` | `GPIO0` |
+| `0x20` | `GPIO12` (MTDI) |
+```
 
 **Доказ**
 
@@ -1407,11 +3206,28 @@
 ---
 
 <!-- fc id:T-D-069 sha:932a0e72 src:dodatky/d-panik.md:66 klas:A -->
-### T-D-069 · tablycya · рядок 66
+### T-D-069 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `0x04` | `GPIO4` |
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[classic]] Для ESP32 classic біти такі:
+
+| Біт | Пін |
+|---|---|
+| `0x01` | `GPIO5` |
+| `0x02` | `GPIO15` (MTDO) |
+| `0x04` | `GPIO4` |
+| `0x08` | `GPIO2` |
+| `0x10` | `GPIO0` |
+| `0x20` | `GPIO12` (MTDI) |
+```
 
 **Доказ**
 
@@ -1441,11 +3257,28 @@
 ---
 
 <!-- fc id:T-D-070 sha:ad51eef3 src:dodatky/d-panik.md:67 klas:A -->
-### T-D-070 · tablycya · рядок 67
+### T-D-070 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `0x08` | `GPIO2` |
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[classic]] Для ESP32 classic біти такі:
+
+| Біт | Пін |
+|---|---|
+| `0x01` | `GPIO5` |
+| `0x02` | `GPIO15` (MTDO) |
+| `0x04` | `GPIO4` |
+| `0x08` | `GPIO2` |
+| `0x10` | `GPIO0` |
+| `0x20` | `GPIO12` (MTDI) |
+```
 
 **Доказ**
 
@@ -1488,11 +3321,28 @@
 ---
 
 <!-- fc id:T-D-071 sha:64f2d662 src:dodatky/d-panik.md:68 klas:A -->
-### T-D-071 · tablycya · рядок 68
+### T-D-071 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `0x10` | `GPIO0` |
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[classic]] Для ESP32 classic біти такі:
+
+| Біт | Пін |
+|---|---|
+| `0x01` | `GPIO5` |
+| `0x02` | `GPIO15` (MTDO) |
+| `0x04` | `GPIO4` |
+| `0x08` | `GPIO2` |
+| `0x10` | `GPIO0` |
+| `0x20` | `GPIO12` (MTDI) |
+```
 
 **Доказ**
 
@@ -1535,11 +3385,28 @@
 ---
 
 <!-- fc id:T-D-072 sha:4456ba75 src:dodatky/d-panik.md:69 klas:A -->
-### T-D-072 · tablycya · рядок 69
+### T-D-072 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `0x20` | `GPIO12` (MTDI) |
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[classic]] Для ESP32 classic біти такі:
+
+| Біт | Пін |
+|---|---|
+| `0x01` | `GPIO5` |
+| `0x02` | `GPIO15` (MTDO) |
+| `0x04` | `GPIO4` |
+| `0x08` | `GPIO2` |
+| `0x10` | `GPIO0` |
+| `0x20` | `GPIO12` (MTDI) |
+```
 
 **Доказ**
 
@@ -1566,11 +3433,19 @@
 ---
 
 <!-- fc id:T-D-073 sha:b26aad81 src:dodatky/d-panik.md:71 klas:E -->
-### T-D-073 · proza · рядок 71
+### T-D-073 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Звідси читаються два найчастіші значення:
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Звідси читаються два найчастіші значення:
+```
 
 **Доказ**
 
@@ -1579,11 +3454,26 @@
 ---
 
 <!-- fc id:T-D-074 sha:91d5ab98 src:dodatky/d-panik.md:73 klas:A -->
-### T-D-074 · proza · рядок 73
+### T-D-074 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `boot:0x13` = `0x01` + `0x02` + `0x10` — `GPIO5`, `GPIO15` і `GPIO0` високі, решта низькі.
+
+**Дослівно з книги**
+
+```
+`boot:0x13` = `0x01` + `0x02` + `0x10` — `GPIO5`, `GPIO15` і `GPIO0`
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+`boot:0x13` = `0x01` + `0x02` + `0x10` — `GPIO5`, `GPIO15` і `GPIO0`
+високі, решта низькі. Нормальний старт.
+```
 
 **Доказ**
 
@@ -1599,11 +3489,26 @@
 ---
 
 <!-- fc id:T-D-075 sha:b8b5cfd0 src:dodatky/d-panik.md:76 klas:A -->
-### T-D-075 · proza · рядок 76
+### T-D-075 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `boot:0x3` = `0x01` + `0x02` — те саме, але **`GPIO0` низький**.
+
+**Дослівно з книги**
+
+```
+`boot:0x3` = `0x01` + `0x02` — те саме, але **`GPIO0` низький**. Звідси й
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+`boot:0x3` = `0x01` + `0x02` — те саме, але **`GPIO0` низький**. Звідси й
+download mode.
+```
 
 **Доказ**
 
@@ -1633,11 +3538,28 @@
 ---
 
 <!-- fc id:T-D-076 sha:bbfc62c6 src:dodatky/d-panik.md:80 klas:E -->
-### T-D-076 · proza · рядок 80
+### T-D-076 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Це перетворює здогадки на вимірювання.
+
+**Дослівно з книги**
+
+```
+Це перетворює здогадки на вимірювання. Уся книга повторює, що зовнішня
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+::: uvaha
+Це перетворює здогадки на вимірювання. Уся книга повторює, що зовнішня
+обв'язка на strapping-піні дає загадкові збої (розділи 07, 16) — а
+перевірити це можна прямо з логу, не беручи осцилографа.
+```
 
 **Доказ**
 
@@ -1646,11 +3568,28 @@
 ---
 
 <!-- fc id:T-D-077 sha:fcc6bd37 src:dodatky/d-panik.md:80 klas:D -->
-### T-D-077 · proza · рядок 80
+### T-D-077 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Уся книга повторює, що зовнішня обв'язка на strapping-піні дає загадкові збої (розділи 07, 16) — а перевірити це можна прямо з логу, не беручи осцилографа.
+
+**Дослівно з книги**
+
+```
+Це перетворює здогадки на вимірювання. Уся книга повторює, що зовнішня
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+::: uvaha
+Це перетворює здогадки на вимірювання. Уся книга повторює, що зовнішня
+обв'язка на strapping-піні дає загадкові збої (розділи 07, 16) — а
+перевірити це можна прямо з логу, не беручи осцилографа.
+```
 
 **Доказ**
 
@@ -1677,11 +3616,27 @@
 ---
 
 <!-- fc id:T-D-078 sha:16e19586 src:dodatky/d-panik.md:84 klas:A -->
-### T-D-078 · proza · рядок 84
+### T-D-078 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Найцінніший біт — `0x20`.
+
+**Дослівно з книги**
+
+```
+Найцінніший біт — `0x20`. Якщо він виставлений, `GPIO12` при старті був
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Найцінніший біт — `0x20`. Якщо він виставлений, `GPIO12` при старті був
+високим, а отже флеш отримав 1.8 В замість 3.3 В. На більшості модулів
+це і є причина мовчазної плати (розділ 07).
+```
 
 **Доказ**
 
@@ -1724,11 +3679,27 @@
 ---
 
 <!-- fc id:T-D-079 sha:babcdf0b src:dodatky/d-panik.md:84 klas:A -->
-### T-D-079 · proza · рядок 84
+### T-D-079 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Якщо він виставлений, `GPIO12` при старті був високим, а отже флеш отримав 1.8 В замість 3.3 В.
+
+**Дослівно з книги**
+
+```
+Найцінніший біт — `0x20`. Якщо він виставлений, `GPIO12` при старті був
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Найцінніший біт — `0x20`. Якщо він виставлений, `GPIO12` при старті був
+високим, а отже флеш отримав 1.8 В замість 3.3 В. На більшості модулів
+це і є причина мовчазної плати (розділ 07).
+```
 
 **Доказ**
 
@@ -1745,11 +3716,27 @@
 ---
 
 <!-- fc id:T-D-080 sha:7e109f92 src:dodatky/d-panik.md:84 klas:E -->
-### T-D-080 · proza · рядок 84
+### T-D-080 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > На більшості модулів це і є причина мовчазної плати (розділ 07).
+
+**Дослівно з книги**
+
+```
+Найцінніший біт — `0x20`. Якщо він виставлений, `GPIO12` при старті був
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Найцінніший біт — `0x20`. Якщо він виставлений, `GPIO12` при старті був
+високим, а отже флеш отримав 1.8 В замість 3.3 В. На більшості модулів
+це і є причина мовчазної плати (розділ 07).
+```
 
 **Доказ**
 
@@ -1758,11 +3745,29 @@
 ---
 
 <!-- fc id:T-D-081 sha:82e1a535 src:dodatky/d-panik.md:88 klas:E -->
-### T-D-081 · proza · рядок 88
+### T-D-081 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Другий за цінністю — `0x04`.
+
+**Дослівно з книги**
+
+```
+Другий за цінністю — `0x04`. `GPIO4` не керує режимом завантаження й у
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Другий за цінністю — `0x04`. `GPIO4` не керує режимом завантаження й у
+переліку strapping-пінів не значиться, але його рівень чип фіксує теж, і
+в масці він видимий. Для діагностики це безкоштовний зайвий канал
+спостереження.
+:::
+```
 
 **Доказ**
 
@@ -1774,11 +3779,29 @@
 ---
 
 <!-- fc id:T-D-082 sha:f52ac6ce src:dodatky/d-panik.md:88 klas:A -->
-### T-D-082 · proza · рядок 88
+### T-D-082 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `GPIO4` не керує режимом завантаження й у переліку strapping-пінів не значиться, але його рівень чип фіксує теж, і в масці він видимий.
+
+**Дослівно з книги**
+
+```
+Другий за цінністю — `0x04`. `GPIO4` не керує режимом завантаження й у
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Другий за цінністю — `0x04`. `GPIO4` не керує режимом завантаження й у
+переліку strapping-пінів не значиться, але його рівень чип фіксує теж, і
+в масці він видимий. Для діагностики це безкоштовний зайвий канал
+спостереження.
+:::
+```
 
 **Доказ**
 
@@ -1808,11 +3831,29 @@
 ---
 
 <!-- fc id:T-D-083 sha:75285290 src:dodatky/d-panik.md:88 klas:E -->
-### T-D-083 · proza · рядок 88
+### T-D-083 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для діагностики це безкоштовний зайвий канал спостереження.
+
+**Дослівно з книги**
+
+```
+Другий за цінністю — `0x04`. `GPIO4` не керує режимом завантаження й у
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Другий за цінністю — `0x04`. `GPIO4` не керує режимом завантаження й у
+переліку strapping-пінів не значиться, але його рівень чип фіксує теж, і
+в масці він видимий. Для діагностики це безкоштовний зайвий канал
+спостереження.
+:::
+```
 
 **Доказ**
 
@@ -1821,11 +3862,26 @@
 ---
 
 <!-- fc id:T-D-084 sha:227db658 src:dodatky/d-panik.md:94 klas:A -->
-### T-D-084 · proza · рядок 94
+### T-D-084 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і вони позначають ту саму пару, що вирішує режим:
+
+**Дослівно з книги**
+
+```
+[[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і
+вони позначають ту саму пару, що вирішує режим:
+```
 
 **Доказ**
 
@@ -1868,11 +3924,25 @@
 ---
 
 <!-- fc id:T-D-085 sha:57d15832 src:dodatky/d-panik.md:97 klas:F -->
-### T-D-085 · tablycya-shapka · рядок 97
+### T-D-085 · tablycya-shapka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Біт | [[classic]] | [[S3]] | [[C3]] |
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і
+вони позначають ту саму пару, що вирішує режим:
+
+| Біт | [[classic]] | [[S3]] | [[C3]] |
+|---|---|---|---|
+| `0x04` | — | `GPIO46` | `GPIO8` |
+| `0x08` | — | `GPIO0` | `GPIO9` |
+```
 
 **Доказ**
 
@@ -1881,11 +3951,31 @@
 ---
 
 <!-- fc id:T-D-086 sha:d8657519 src:dodatky/d-panik.md:98 klas:A -->
-### T-D-086 · komirka · рядок 98
+### T-D-086 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x04` · [[S3]] → `GPIO46`
+
+**Дослівно з книги**
+
+```
+| `0x04` | — | `GPIO46` | `GPIO8` |
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і
+вони позначають ту саму пару, що вирішує режим:
+
+| Біт | [[classic]] | [[S3]] | [[C3]] |
+|---|---|---|---|
+| `0x04` | — | `GPIO46` | `GPIO8` |
+| `0x08` | — | `GPIO0` | `GPIO9` |
+```
 
 **Доказ**
 
@@ -1906,11 +3996,31 @@
 ---
 
 <!-- fc id:T-D-087 sha:90b801d8 src:dodatky/d-panik.md:98 klas:A -->
-### T-D-087 · komirka · рядок 98
+### T-D-087 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x04` · [[C3]] → `GPIO8`
+
+**Дослівно з книги**
+
+```
+| `0x04` | — | `GPIO46` | `GPIO8` |
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і
+вони позначають ту саму пару, що вирішує режим:
+
+| Біт | [[classic]] | [[S3]] | [[C3]] |
+|---|---|---|---|
+| `0x04` | — | `GPIO46` | `GPIO8` |
+| `0x08` | — | `GPIO0` | `GPIO9` |
+```
 
 **Доказ**
 
@@ -1932,11 +4042,31 @@
 ---
 
 <!-- fc id:T-D-088 sha:4c9431b7 src:dodatky/d-panik.md:99 klas:A -->
-### T-D-088 · komirka · рядок 99
+### T-D-088 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x08` · [[S3]] → `GPIO0`
+
+**Дослівно з книги**
+
+```
+| `0x08` | — | `GPIO0` | `GPIO9` |
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і
+вони позначають ту саму пару, що вирішує режим:
+
+| Біт | [[classic]] | [[S3]] | [[C3]] |
+|---|---|---|---|
+| `0x04` | — | `GPIO46` | `GPIO8` |
+| `0x08` | — | `GPIO0` | `GPIO9` |
+```
 
 **Доказ**
 
@@ -1957,11 +4087,31 @@
 ---
 
 <!-- fc id:T-D-089 sha:2e453577 src:dodatky/d-panik.md:99 klas:B -->
-### T-D-089 · komirka · рядок 99
+### T-D-089 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `0x08` · [[C3]] → `GPIO9`
+
+**Дослівно з книги**
+
+```
+| `0x08` | — | `GPIO0` | `GPIO9` |
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+[[S3]] [[C3]] На решті сімейств маска коротша — у ній лише два біти, і
+вони позначають ту саму пару, що вирішує режим:
+
+| Біт | [[classic]] | [[S3]] | [[C3]] |
+|---|---|---|---|
+| `0x04` | — | `GPIO46` | `GPIO8` |
+| `0x08` | — | `GPIO0` | `GPIO9` |
+```
 
 **Доказ**
 
@@ -1984,11 +4134,19 @@
 ---
 
 <!-- fc id:T-D-090 sha:435efe85 src:dodatky/d-panik.md:102 klas:E -->
-### T-D-090 · proza · рядок 102
+### T-D-090 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Читається так само: біт виставлений — пін був високим.
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Читається так само: біт виставлений — пін був високим.
+```
 
 **Доказ**
 
@@ -1997,11 +4155,20 @@
 ---
 
 <!-- fc id:T-D-091 sha:39ad5166 src:dodatky/d-panik.md:105 klas:A -->
-### T-D-091 · proza · рядок 105
+### T-D-091 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Далі значення не розшифровуються, і це свідоме рішення.**
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+::: uvaha
+**Далі значення не розшифровуються, і це свідоме рішення.**
+```
 
 **Доказ**
 
@@ -2028,11 +4195,28 @@
 ---
 
 <!-- fc id:T-D-092 sha:48c40874 src:dodatky/d-panik.md:107 klas:F -->
-### T-D-092 · proza · рядок 107
+### T-D-092 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Спокусливо взяти цю таблицю бітів, скласти з нею правила strapping із розділу 07 і дістати «`boot:0x4` означає ось це».
+
+**Дослівно з книги**
+
+```
+Спокусливо взяти цю таблицю бітів, скласти з нею правила strapping із
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Спокусливо взяти цю таблицю бітів, скласти з нею правила strapping із
+розділу 07 і дістати «`boot:0x4` означає ось це». Так робити не можна, і
+книга це вже пробувала: попередня редакція цього абзацу так і зробила й
+помилилася у двох випадках із трьох.
+```
 
 **Доказ**
 
@@ -2041,11 +4225,28 @@
 ---
 
 <!-- fc id:T-D-093 sha:05cd2fbd src:dodatky/d-panik.md:107 klas:E -->
-### T-D-093 · proza · рядок 107
+### T-D-093 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Так робити не можна, і книга це вже пробувала: попередня редакція цього абзацу так і зробила й помилилася у двох випадках із трьох.
+
+**Дослівно з книги**
+
+```
+Спокусливо взяти цю таблицю бітів, скласти з нею правила strapping із
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Спокусливо взяти цю таблицю бітів, скласти з нею правила strapping із
+розділу 07 і дістати «`boot:0x4` означає ось це». Так робити не можна, і
+книга це вже пробувала: попередня редакція цього абзацу так і зробила й
+помилилася у двох випадках із трьох.
+```
 
 **Доказ**
 
@@ -2054,11 +4255,28 @@
 ---
 
 <!-- fc id:T-D-094 sha:82e2cab4 src:dodatky/d-panik.md:112 klas:E -->
-### T-D-094 · proza · рядок 112
+### T-D-094 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Причина в тому, що ROM класифікує **значення цілком**, а не пін за піном, і його власні макроси не збігаються з наївним складанням.
+
+**Дослівно з книги**
+
+```
+Причина в тому, що ROM класифікує **значення цілком**, а не пін за
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Причина в тому, що ROM класифікує **значення цілком**, а не пін за
+піном, і його власні макроси не збігаються з наївним складанням. У
+`soc/boot_mode.h` видно, що `0x4` потрапляє в `ETS_IS_FLASH_BOOT`, а не
+в завантаження по UART:
+```
 
 **Доказ**
 
@@ -2067,11 +4285,28 @@
 ---
 
 <!-- fc id:T-D-095 sha:54121873 src:dodatky/d-panik.md:112 klas:A -->
-### T-D-095 · proza · рядок 112
+### T-D-095 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > У `soc/boot_mode.h` видно, що `0x4` потрапляє в `ETS_IS_FLASH_BOOT`, а не в завантаження по UART:
+
+**Дослівно з книги**
+
+```
+Причина в тому, що ROM класифікує **значення цілком**, а не пін за
+```
+
+**Контекст**
+
+```
+### Саме число — це стани strapping-пінів
+
+Причина в тому, що ROM класифікує **значення цілком**, а не пін за
+піном, і його власні макроси не збігаються з наївним складанням. У
+`soc/boot_mode.h` видно, що `0x4` потрапляє в `ETS_IS_FLASH_BOOT`, а не
+в завантаження по UART:
+```
 
 **Доказ**
 
@@ -2098,14 +4333,28 @@
 ---
 
 <!-- fc id:T-D-096 sha:f94620f6 src:dodatky/d-panik.md:117 klas:K -->
-### T-D-096 · kod · рядок 117
+### T-D-096 · kod · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || IS_0100(BOOT_MODE_GET()))
 > #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+### Саме число — це стани strapping-пінів
+
+```c
+````
 
 **Доказ**
 
@@ -2132,11 +4381,20 @@
 ---
 
 <!-- fc id:T-D-097 sha:c7aacb1e src:dodatky/d-panik.md:118 klas:A -->
-### T-D-097 · kod-ryadok · рядок 118
+### T-D-097 · kod-ryadok · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > #define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || IS_0100(BOOT_MODE_GET()))
+
+**Контекст**
+
+````
+### Саме число — це стани strapping-пінів
+
+```c
+#define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || IS_0100(BOOT_MODE_GET()))
+````
 
 **Доказ**
 
@@ -2163,11 +4421,18 @@
 ---
 
 <!-- fc id:T-D-098 sha:dd16d217 src:dodatky/d-panik.md:119 klas:F -->
-### T-D-098 · kod-ryadok · рядок 119
+### T-D-098 · kod-ryadok · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > #define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+
+**Контекст**
+
+````
+#define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+```
+````
 
 **Доказ**
 
@@ -2176,11 +4441,27 @@
 ---
 
 <!-- fc id:T-D-099 sha:155c310b src:dodatky/d-panik.md:122 klas:E -->
-### T-D-099 · proza · рядок 122
+### T-D-099 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Тобто відповідність «біт — пін» із документації esptool і класифікація значень у ROM — це два різні рівні, і місток між ними лежить у technical reference manual, а не в тому, що доступне звідси.
+
+**Дослівно з книги**
+
+```
+Тобто відповідність «біт — пін» із документації esptool і класифікація
+```
+
+**Контекст**
+
+```
+#define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+
+Тобто відповідність «біт — пін» із документації esptool і класифікація
+значень у ROM — це два різні рівні, і місток між ними лежить у
+technical reference manual, а не в тому, що доступне звідси.
+```
 
 **Доказ**
 
@@ -2189,11 +4470,27 @@
 ---
 
 <!-- fc id:T-D-100 sha:53e5395e src:dodatky/d-panik.md:126 klas:A -->
-### T-D-100 · proza · рядок 126
+### T-D-100 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Практично: **дивіться на рядок у дужках**, а не на число.
+
+**Дослівно з книги**
+
+```
+Практично: **дивіться на рядок у дужках**, а не на число. Режим словами
+```
+
+**Контекст**
+
+```
+#define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+
+Практично: **дивіться на рядок у дужках**, а не на число. Режим словами
+— `SPI_FAST_FLASH_BOOT`, `DOWNLOAD_BOOT(…)` — друкує сам ROM, і це
+розшифровка від того, хто має право її робити.
+```
 
 **Доказ**
 
@@ -2220,11 +4517,27 @@
 ---
 
 <!-- fc id:T-D-101 sha:cb8c16e6 src:dodatky/d-panik.md:126 klas:A -->
-### T-D-101 · proza · рядок 126
+### T-D-101 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Режим словами — `SPI_FAST_FLASH_BOOT`, `DOWNLOAD_BOOT(…)` — друкує сам ROM, і це розшифровка від того, хто має право її робити.
+
+**Дослівно з книги**
+
+```
+Практично: **дивіться на рядок у дужках**, а не на число. Режим словами
+```
+
+**Контекст**
+
+```
+#define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+
+Практично: **дивіться на рядок у дужках**, а не на число. Режим словами
+— `SPI_FAST_FLASH_BOOT`, `DOWNLOAD_BOOT(…)` — друкує сам ROM, і це
+розшифровка від того, хто має право її робити.
+```
 
 **Доказ**
 
@@ -2247,11 +4560,29 @@
 ---
 
 <!-- fc id:T-D-102 sha:8e5c7618 src:dodatky/d-panik.md:130 klas:E -->
-### T-D-102 · proza · рядок 130
+### T-D-102 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Друкує він її в **boot-лог по UART** (приклад одразу нижче), тобто видно її в моніторі: `idf.py monitor`, `screen`, `picocom`.
+
+**Дослівно з книги**
+
+```
+Друкує він її в **boot-лог по UART** (приклад одразу нижче), тобто
+```
+
+**Контекст**
+
+```
+#define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+
+Друкує він її в **boot-лог по UART** (приклад одразу нижче), тобто
+видно її в моніторі: `idf.py monitor`, `screen`, `picocom`. У виводі
+`esptool` цього рядка немає — esptool скидає чип і виходить, лог після
+скидання читає вже монітор.
+:::
+```
 
 **Доказ**
 
@@ -2272,11 +4603,29 @@
 ---
 
 <!-- fc id:T-D-103 sha:478f40ad src:dodatky/d-panik.md:130 klas:A -->
-### T-D-103 · proza · рядок 130
+### T-D-103 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > У виводі `esptool` цього рядка немає — esptool скидає чип і виходить, лог після скидання читає вже монітор.
+
+**Дослівно з книги**
+
+```
+Друкує він її в **boot-лог по UART** (приклад одразу нижче), тобто
+```
+
+**Контекст**
+
+```
+#define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+
+Друкує він її в **boot-лог по UART** (приклад одразу нижче), тобто
+видно її в моніторі: `idf.py monitor`, `screen`, `picocom`. У виводі
+`esptool` цього рядка немає — esptool скидає чип і виходить, лог після
+скидання читає вже монітор.
+:::
+```
 
 **Доказ**
 
@@ -2299,9 +4648,9 @@
 ---
 
 <!-- fc id:T-D-104 sha:d39312ec src:dodatky/d-panik.md:138 klas:K -->
-### T-D-104 · kod · рядок 138
+### T-D-104 · kod · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
@@ -2319,6 +4668,34 @@
 > I (xxx) cpu_start: Pro cpu up.
 > ```
 
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Типовий boot-лог
+
+```
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+entry 0x400805e4
+I (29) boot: ESP-IDF v6.0.2 2nd stage bootloader
+I (33) boot.esp32: SPI Flash Size : 4MB
+I (52) boot: Partition Table:
+I (56) boot: ## Label            Usage      Type ST Offset   Length
+I (63) boot:  0 nvs              WiFi data    01 02 00009000 00006000
+I (70) boot:  1 phy_init         RF data      01 01 0000f000 00001000
+I (78) boot:  2 factory          factory app  00 00 00010000 00100000
+I (xxx) cpu_start: Pro cpu up.
+```
+````
+
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
@@ -2332,11 +4709,33 @@
 ---
 
 <!-- fc id:T-D-105 sha:490ee98b src:dodatky/d-panik.md:139 klas:A -->
-### T-D-105 · kod-ryadok · рядок 139
+### T-D-105 · kod-ryadok · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+
+**Контекст**
+
+````
+## Типовий boot-лог
+
+```
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+mode:DIO, clock div:2
+load:0x3fff0030,len:1344
+entry 0x400805e4
+I (29) boot: ESP-IDF v6.0.2 2nd stage bootloader
+I (33) boot.esp32: SPI Flash Size : 4MB
+I (52) boot: Partition Table:
+I (56) boot: ## Label            Usage      Type ST Offset   Length
+I (63) boot:  0 nvs              WiFi data    01 02 00009000 00006000
+I (70) boot:  1 phy_init         RF data      01 01 0000f000 00001000
+I (78) boot:  2 factory          factory app  00 00 00010000 00100000
+I (xxx) cpu_start: Pro cpu up.
+```
+````
 
 **Доказ**
 
@@ -2351,11 +4750,27 @@
 ---
 
 <!-- fc id:T-D-106 sha:825633b5 src:dodatky/d-panik.md:154 klas:A -->
-### T-D-106 · proza · рядок 154
+### T-D-106 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Звідси безкоштовно читається: **версія ESP-IDF**, **обсяг флешу очима бутлоадера** і **вся таблиця розділів з адресами** — готова відповідь на «що всередині чужого пристрою» (розділ 24).
+
+**Дослівно з книги**
+
+```
+Звідси безкоштовно читається: **версія ESP-IDF**, **обсяг флешу очима
+```
+
+**Контекст**
+
+```
+## Типовий boot-лог
+
+Звідси безкоштовно читається: **версія ESP-IDF**, **обсяг флешу очима
+бутлоадера** і **вся таблиця розділів з адресами** — готова відповідь на
+«що всередині чужого пристрою» (розділ 24).
+```
 
 **Доказ**
 
@@ -2363,18 +4778,33 @@
 - **Джерело:** dzherela-kesh/a4dbe955-bootloader.rst
 - **Дослівно з джерела:**
   > I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
-- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Лог бутлоадера показує версію ESP-IDF, обсяг флешу та адреси розділів — готова відповідь.
 - **Прохід:** m2-hvylya3
 
 ---
 
 <!-- fc id:T-D-107 sha:0ebdcddf src:dodatky/d-panik.md:158 klas:E -->
-### T-D-107 · proza · рядок 158
+### T-D-107 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Число в дужках — мілісекунди від старту.
+
+**Дослівно з книги**
+
+```
+Число в дужках — мілісекунди від старту. Стрибок показує, де прошивка
+```
+
+**Контекст**
+
+```
+## Типовий boot-лог
+
+Число в дужках — мілісекунди від старту. Стрибок показує, де прошивка
+задумалася.
+```
 
 **Доказ**
 
@@ -2396,11 +4826,26 @@
 ---
 
 <!-- fc id:T-D-108 sha:3d92627f src:dodatky/d-panik.md:158 klas:E -->
-### T-D-108 · proza · рядок 158
+### T-D-108 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Стрибок показує, де прошивка задумалася.
+
+**Дослівно з книги**
+
+```
+Число в дужках — мілісекунди від старту. Стрибок показує, де прошивка
+```
+
+**Контекст**
+
+```
+## Типовий boot-лог
+
+Число в дужках — мілісекунди від старту. Стрибок показує, де прошивка
+задумалася.
+```
 
 **Доказ**
 
@@ -2409,11 +4854,19 @@
 ---
 
 <!-- fc id:T-D-109 sha:0590c64d src:dodatky/d-panik.md:163 klas:E -->
-### T-D-109 · proza · рядок 163
+### T-D-109 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+```
 
 **Доказ**
 
@@ -2439,11 +4892,30 @@
 ---
 
 <!-- fc id:T-D-110 sha:fbdc8285 src:dodatky/d-panik.md:165 klas:F -->
-### T-D-110 · tablycya-shapka · рядок 165
+### T-D-110 · tablycya-shapka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Повідомлення | Причина | Розділ |
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2452,11 +4924,36 @@
 ---
 
 <!-- fc id:T-D-111 sha:a63a39c2 src:dodatky/d-panik.md:166 klas:A -->
-### T-D-111 · komirka · рядок 166
+### T-D-111 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `image at 0x… has invalid magic byte (nothing flashed here?)` · Причина → за адресою застосунку не образ
+
+**Дослівно з книги**
+
+```
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2478,11 +4975,36 @@
 ---
 
 <!-- fc id:T-D-112 sha:ad4c17ec src:dodatky/d-panik.md:166 klas:A -->
-### T-D-112 · komirka · рядок 166
+### T-D-112 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `image at 0x… has invalid magic byte (nothing flashed here?)` · Розділ → 18
+
+**Дослівно з книги**
+
+```
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2504,11 +5026,36 @@
 ---
 
 <!-- fc id:T-D-113 sha:0164e3bb src:dodatky/d-panik.md:167 klas:A -->
-### T-D-113 · komirka · рядок 167
+### T-D-113 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Factory app partition is not bootable` · Причина → застосунку немає
+
+**Дослівно з книги**
+
+```
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2530,11 +5077,36 @@
 ---
 
 <!-- fc id:T-D-114 sha:2d07f5b7 src:dodatky/d-panik.md:167 klas:A -->
-### T-D-114 · komirka · рядок 167
+### T-D-114 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Factory app partition is not bootable` · Розділ → К5
+
+**Дослівно з книги**
+
+```
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2556,11 +5128,36 @@
 ---
 
 <!-- fc id:T-D-115 sha:2bc6cd2b src:dodatky/d-panik.md:168 klas:A -->
-### T-D-115 · komirka · рядок 168
+### T-D-115 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `partition N invalid magic number 0x…` · Причина → немає таблиці розділів
+
+**Дослівно з книги**
+
+```
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2582,11 +5179,36 @@
 ---
 
 <!-- fc id:T-D-116 sha:b805a263 src:dodatky/d-panik.md:168 klas:A -->
-### T-D-116 · komirka · рядок 168
+### T-D-116 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `partition N invalid magic number 0x…` · Розділ → 18
+
+**Дослівно з книги**
+
+```
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2608,11 +5230,36 @@
 ---
 
 <!-- fc id:T-D-117 sha:47044db6 src:dodatky/d-panik.md:169 klas:A -->
-### T-D-117 · komirka · рядок 169
+### T-D-117 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Failed to verify partition table` · Причина → те саме
+
+**Дослівно з книги**
+
+```
+| `Failed to verify partition table` | те саме | 18 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2634,11 +5281,36 @@
 ---
 
 <!-- fc id:T-D-118 sha:6a21db9c src:dodatky/d-panik.md:169 klas:A -->
-### T-D-118 · komirka · рядок 169
+### T-D-118 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Failed to verify partition table` · Розділ → 18
+
+**Дослівно з книги**
+
+```
+| `Failed to verify partition table` | те саме | 18 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2660,11 +5332,36 @@
 ---
 
 <!-- fc id:T-D-119 sha:168149c9 src:dodatky/d-panik.md:170 klas:A -->
-### T-D-119 · komirka · рядок 170
+### T-D-119 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `ota data partition invalid, falling back to factory` · Причина → зіпсований `otadata`
+
+**Дослівно з книги**
+
+```
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2686,11 +5383,36 @@
 ---
 
 <!-- fc id:T-D-120 sha:e514eca1 src:dodatky/d-panik.md:170 klas:A -->
-### T-D-120 · komirka · рядок 170
+### T-D-120 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `ota data partition invalid, falling back to factory` · Розділ → 19
+
+**Дослівно з книги**
+
+```
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2712,11 +5434,36 @@
 ---
 
 <!-- fc id:T-D-121 sha:2f309750 src:dodatky/d-panik.md:171 klas:A -->
-### T-D-121 · komirka · рядок 171
+### T-D-121 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Image hash failed - image is corrupt` · Причина → образ пошкоджений
+
+**Дослівно з книги**
+
+```
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2738,11 +5485,36 @@
 ---
 
 <!-- fc id:T-D-122 sha:e82565ff src:dodatky/d-panik.md:171 klas:A -->
-### T-D-122 · komirka · рядок 171
+### T-D-122 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Image hash failed - image is corrupt` · Розділ → 17
+
+**Дослівно з книги**
+
+```
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2764,11 +5536,36 @@
 ---
 
 <!-- fc id:T-D-123 sha:c946c98e src:dodatky/d-panik.md:172 klas:A -->
-### T-D-123 · komirka · рядок 172
+### T-D-123 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` · Причина → конфігурація > реальний флеш
+
+**Дослівно з книги**
+
+```
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2788,11 +5585,36 @@
 ---
 
 <!-- fc id:T-D-124 sha:4adb2806 src:dodatky/d-panik.md:172 klas:A -->
-### T-D-124 · komirka · рядок 172
+### T-D-124 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` · Розділ → 08
+
+**Дослівно з книги**
+
+```
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2812,11 +5634,36 @@
 ---
 
 <!-- fc id:T-D-125 sha:45fbc80e src:dodatky/d-panik.md:173 klas:A -->
-### T-D-125 · komirka · рядок 173
+### T-D-125 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Detected size(…k) larger than … Using the size in the binary image header.` · Причина → конфігурація < реальний флеш; лише попередження
+
+**Дослівно з книги**
+
+```
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2836,11 +5683,36 @@
 ---
 
 <!-- fc id:T-D-126 sha:f25a0f20 src:dodatky/d-panik.md:173 klas:A -->
-### T-D-126 · komirka · рядок 173
+### T-D-126 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Detected size(…k) larger than … Using the size in the binary image header.` · Розділ → 08
+
+**Дослівно з книги**
+
+```
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -2860,11 +5732,20 @@
 ---
 
 <!-- fc id:T-D-127 sha:930379a1 src:dodatky/d-panik.md:177 klas:E -->
-### T-D-127 · proza · рядок 177
+### T-D-127 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Розбіжність обсягу флешу дає **два різні рядки, і наслідки різні**.
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+::: uvaha
+Розбіжність обсягу флешу дає **два різні рядки, і наслідки різні**.
+```
 
 **Доказ**
 
@@ -2873,11 +5754,26 @@
 ---
 
 <!-- fc id:T-D-128 sha:6a177d47 src:dodatky/d-panik.md:179 klas:A -->
-### T-D-128 · proza · рядок 179
+### T-D-128 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Реальний флеш **менший** за налаштований — фатально: бутлоадер зупиняє пробу, бо частина розділів фізично не існує.
+
+**Дослівно з книги**
+
+```
+Реальний флеш **менший** за налаштований — фатально: бутлоадер зупиняє
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Реальний флеш **менший** за налаштований — фатально: бутлоадер зупиняє
+пробу, бо частина розділів фізично не існує.
+```
 
 **Доказ**
 
@@ -2897,11 +5793,28 @@
 ---
 
 <!-- fc id:T-D-129 sha:3a4f06b3 src:dodatky/d-panik.md:182 klas:E -->
-### T-D-129 · proza · рядок 182
+### T-D-129 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Реальний флеш **більший** — лише попередження: система працює, просто надлишок не використовується.
+
+**Дослівно з книги**
+
+```
+Реальний флеш **більший** — лише попередження: система працює, просто
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Реальний флеш **більший** — лише попередження: система працює, просто
+надлишок не використовується. Саме цей випадок трапляється з клонами,
+що продаються як 16 МБ, а стають 4 МБ у конфігурації.
+:::
+```
 
 **Доказ**
 
@@ -2910,11 +5823,28 @@
 ---
 
 <!-- fc id:T-D-130 sha:898ac6ac src:dodatky/d-panik.md:182 klas:B -->
-### T-D-130 · proza · рядок 182
+### T-D-130 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Саме цей випадок трапляється з клонами, що продаються як 16 МБ, а стають 4 МБ у конфігурації.
+
+**Дослівно з книги**
+
+```
+Реальний флеш **більший** — лише попередження: система працює, просто
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Реальний флеш **більший** — лише попередження: система працює, просто
+надлишок не використовується. Саме цей випадок трапляється з клонами,
+що продаються як 16 МБ, а стають 4 МБ у конфігурації.
+:::
+```
 
 **Доказ**
 
@@ -2929,11 +5859,29 @@
 ---
 
 <!-- fc id:T-D-131 sha:ea9dc162 src:dodatky/d-panik.md:189 klas:F -->
-### T-D-131 · tablycya-shapka · рядок 189
+### T-D-131 · tablycya-shapka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Причина | Що заборонено | Що шукати |
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -2942,11 +5890,35 @@
 ---
 
 <!-- fc id:T-D-132 sha:3f7f05f2 src:dodatky/d-panik.md:190 klas:A -->
-### T-D-132 · komirka · рядок 190
+### T-D-132 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `LoadProhibited` · Що заборонено → читання з недійсної адреси
+
+**Дослівно з книги**
+
+```
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -2985,11 +5957,35 @@
 ---
 
 <!-- fc id:T-D-133 sha:e1369196 src:dodatky/d-panik.md:190 klas:A -->
-### T-D-133 · komirka · рядок 190
+### T-D-133 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `LoadProhibited` · Що шукати → `NULL` або звільнений покажчик
+
+**Дослівно з книги**
+
+```
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3028,11 +6024,35 @@
 ---
 
 <!-- fc id:T-D-134 sha:8bc4f39c src:dodatky/d-panik.md:191 klas:A -->
-### T-D-134 · komirka · рядок 191
+### T-D-134 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `StoreProhibited` · Що заборонено → запис за недійсною адресою
+
+**Дослівно з книги**
+
+```
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3071,11 +6091,35 @@
 ---
 
 <!-- fc id:T-D-135 sha:28cc86f2 src:dodatky/d-panik.md:191 klas:A -->
-### T-D-135 · komirka · рядок 191
+### T-D-135 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `StoreProhibited` · Що шукати → те саме, на запис
+
+**Дослівно з книги**
+
+```
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3114,11 +6158,35 @@
 ---
 
 <!-- fc id:T-D-136 sha:65e5b66a src:dodatky/d-panik.md:192 klas:A -->
-### T-D-136 · komirka · рядок 192
+### T-D-136 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `InstrFetchProhibited` · Що заборонено → перехід на недійсну адресу
+
+**Дослівно з книги**
+
+```
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3157,11 +6225,35 @@
 ---
 
 <!-- fc id:T-D-137 sha:89d4b0ed src:dodatky/d-panik.md:192 klas:A -->
-### T-D-137 · komirka · рядок 192
+### T-D-137 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `InstrFetchProhibited` · Що шукати → зіпсований покажчик на функцію
+
+**Дослівно з книги**
+
+```
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3200,11 +6292,35 @@
 ---
 
 <!-- fc id:T-D-138 sha:0e5b84a2 src:dodatky/d-panik.md:193 klas:A -->
-### T-D-138 · komirka · рядок 193
+### T-D-138 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `IllegalInstruction` · Що заборонено → виконання не-коду
+
+**Дослівно з книги**
+
+```
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3243,11 +6359,35 @@
 ---
 
 <!-- fc id:T-D-139 sha:b8918b59 src:dodatky/d-panik.md:193 klas:A -->
-### T-D-139 · komirka · рядок 193
+### T-D-139 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `IllegalInstruction` · Що шукати → переповнення стека
+
+**Дослівно з книги**
+
+```
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3286,11 +6426,35 @@
 ---
 
 <!-- fc id:T-D-140 sha:c4d149ff src:dodatky/d-panik.md:194 klas:A -->
-### T-D-140 · komirka · рядок 194
+### T-D-140 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `LoadStoreAlignment` · Що заборонено → невирівняний доступ
+
+**Дослівно з книги**
+
+```
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3329,11 +6493,35 @@
 ---
 
 <!-- fc id:T-D-141 sha:46508737 src:dodatky/d-panik.md:194 klas:A -->
-### T-D-141 · komirka · рядок 194
+### T-D-141 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `LoadStoreAlignment` · Що шукати → 32 біти з непарної адреси
+
+**Дослівно з книги**
+
+```
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3372,11 +6560,35 @@
 ---
 
 <!-- fc id:T-D-142 sha:d96111a7 src:dodatky/d-panik.md:195 klas:A -->
-### T-D-142 · komirka · рядок 195
+### T-D-142 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `IntegerDivideByZero` · Що заборонено → ділення на нуль
+
+**Дослівно з книги**
+
+```
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3415,11 +6627,35 @@
 ---
 
 <!-- fc id:T-D-143 sha:439a9b98 src:dodatky/d-panik.md:195 klas:A -->
-### T-D-143 · komirka · рядок 195
+### T-D-143 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `IntegerDivideByZero` · Що шукати → дільник із датчика без перевірки
+
+**Дослівно з книги**
+
+```
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3458,11 +6694,35 @@
 ---
 
 <!-- fc id:T-D-144 sha:7c359228 src:dodatky/d-panik.md:196 klas:A -->
-### T-D-144 · komirka · рядок 196
+### T-D-144 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Interrupt wdt timeout` · Що заборонено → переривання заблоковані задовго
+
+**Дослівно з книги**
+
+```
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3480,7 +6740,7 @@
   > (task_wdt.c)
   > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
   > did not reset the watchdog in time:
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
 Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
 - **Прохід:** pass-29-log-i-reshta-komand
@@ -3488,11 +6748,35 @@
 ---
 
 <!-- fc id:T-D-145 sha:4c606b3e src:dodatky/d-panik.md:196 klas:A -->
-### T-D-145 · komirka · рядок 196
+### T-D-145 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Interrupt wdt timeout` · Що шукати → довгий ISR, критична секція
+
+**Дослівно з книги**
+
+```
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3510,7 +6794,7 @@
   > (task_wdt.c)
   > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
   > did not reset the watchdog in time:
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
 Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
 - **Прохід:** pass-29-log-i-reshta-komand
@@ -3518,11 +6802,35 @@
 ---
 
 <!-- fc id:T-D-146 sha:8712f714 src:dodatky/d-panik.md:197 klas:A -->
-### T-D-146 · komirka · рядок 197
+### T-D-146 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Cache disabled but cached memory region accessed` · Що заборонено → доступ до флешу при вимкненому кеші
+
+**Дослівно з книги**
+
+```
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3561,11 +6869,35 @@
 ---
 
 <!-- fc id:T-D-147 sha:4e40193e src:dodatky/d-panik.md:197 klas:A -->
-### T-D-147 · komirka · рядок 197
+### T-D-147 · komirka · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Cache disabled but cached memory region accessed` · Що шукати → немає `IRAM_ATTR`
+
+**Дослівно з книги**
+
+```
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
+
+**Контекст**
+
+```
+## Причини паніки
+
+
+| Причина | Що заборонено | Що шукати |
+|---|---|---|
+| `LoadProhibited` | читання з недійсної адреси | `NULL` або звільнений покажчик |
+| `StoreProhibited` | запис за недійсною адресою | те саме, на запис |
+| `InstrFetchProhibited` | перехід на недійсну адресу | зіпсований покажчик на функцію |
+| `IllegalInstruction` | виконання не-коду | переповнення стека |
+| `LoadStoreAlignment` | невирівняний доступ | 32 біти з непарної адреси |
+| `IntegerDivideByZero` | ділення на нуль | дільник із датчика без перевірки |
+| `Interrupt wdt timeout` | переривання заблоковані задовго | довгий ISR, критична секція |
+| `Cache disabled but cached memory region accessed` | доступ до флешу при вимкненому кеші | немає `IRAM_ATTR` |
+```
 
 **Доказ**
 
@@ -3584,11 +6916,25 @@
 ---
 
 <!-- fc id:T-D-148 sha:a66ac160 src:dodatky/d-panik.md:202 klas:E -->
-### T-D-148 · tablycya · рядок 202
+### T-D-148 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Поле | Що означає |
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+
+| Поле | Що означає |
+|---|---|
+| `PC` | адреса інструкції, на якій упало — **де** |
+| `EXCVADDR` | адреса, за якою зверталися — **куди** |
+| `A1` | вказівник стека |
+| `Backtrace` | ланцюжок `адреса:стек`, читати знизу вгору |
+```
 
 **Доказ**
 
@@ -3597,11 +6943,25 @@
 ---
 
 <!-- fc id:T-D-149 sha:9e0b8e4a src:dodatky/d-panik.md:204 klas:F -->
-### T-D-149 · tablycya · рядок 204
+### T-D-149 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `PC` | адреса інструкції, на якій упало — **де** |
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+
+| Поле | Що означає |
+|---|---|
+| `PC` | адреса інструкції, на якій упало — **де** |
+| `EXCVADDR` | адреса, за якою зверталися — **куди** |
+| `A1` | вказівник стека |
+| `Backtrace` | ланцюжок `адреса:стек`, читати знизу вгору |
+```
 
 **Доказ**
 
@@ -3610,11 +6970,25 @@
 ---
 
 <!-- fc id:T-D-150 sha:f82d7189 src:dodatky/d-panik.md:205 klas:F -->
-### T-D-150 · tablycya · рядок 205
+### T-D-150 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `EXCVADDR` | адреса, за якою зверталися — **куди** |
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+
+| Поле | Що означає |
+|---|---|
+| `PC` | адреса інструкції, на якій упало — **де** |
+| `EXCVADDR` | адреса, за якою зверталися — **куди** |
+| `A1` | вказівник стека |
+| `Backtrace` | ланцюжок `адреса:стек`, читати знизу вгору |
+```
 
 **Доказ**
 
@@ -3623,11 +6997,25 @@
 ---
 
 <!-- fc id:T-D-151 sha:74974165 src:dodatky/d-panik.md:206 klas:C -->
-### T-D-151 · tablycya · рядок 206
+### T-D-151 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `A1` | вказівник стека |
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+
+| Поле | Що означає |
+|---|---|
+| `PC` | адреса інструкції, на якій упало — **де** |
+| `EXCVADDR` | адреса, за якою зверталися — **куди** |
+| `A1` | вказівник стека |
+| `Backtrace` | ланцюжок `адреса:стек`, читати знизу вгору |
+```
 
 **Доказ**
 
@@ -3639,11 +7027,25 @@
 ---
 
 <!-- fc id:T-D-152 sha:b89ae2bf src:dodatky/d-panik.md:207 klas:A -->
-### T-D-152 · tablycya · рядок 207
+### T-D-152 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `Backtrace` | ланцюжок `адреса:стек`, читати знизу вгору |
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+
+| Поле | Що означає |
+|---|---|
+| `PC` | адреса інструкції, на якій упало — **де** |
+| `EXCVADDR` | адреса, за якою зверталися — **куди** |
+| `A1` | вказівник стека |
+| `Backtrace` | ланцюжок `адреса:стек`, читати знизу вгору |
+```
 
 **Доказ**
 
@@ -3666,11 +7068,20 @@
 ---
 
 <!-- fc id:T-D-153 sha:6ef4b75c src:dodatky/d-panik.md:210 klas:A -->
-### T-D-153 · proza · рядок 210
+### T-D-153 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **`EXCVADDR` — найшвидша підказка.**
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+::: uvaha
+**`EXCVADDR` — найшвидша підказка.**
+```
 
 **Доказ**
 
@@ -3685,11 +7096,26 @@
 ---
 
 <!-- fc id:T-D-154 sha:f710df6f src:dodatky/d-panik.md:212 klas:C -->
-### T-D-154 · proza · рядок 212
+### T-D-154 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Близько нуля (`0x0`–`0x40`) → розіменування `NULL` зі зсувом поля структури.
+
+**Дослівно з книги**
+
+```
+Близько нуля (`0x0`–`0x40`) → розіменування `NULL` зі зсувом поля
+```
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+Близько нуля (`0x0`–`0x40`) → розіменування `NULL` зі зсувом поля
+структури. Це покриває більшість `LoadProhibited` на практиці.
+```
 
 **Доказ**
 
@@ -3702,11 +7128,26 @@
 ---
 
 <!-- fc id:T-D-155 sha:4c0a3cc5 src:dodatky/d-panik.md:212 klas:A -->
-### T-D-155 · proza · рядок 212
+### T-D-155 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Це покриває більшість `LoadProhibited` на практиці.
+
+**Дослівно з книги**
+
+```
+структури. Це покриває більшість `LoadProhibited` на практиці.
+```
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+Близько нуля (`0x0`–`0x40`) → розіменування `NULL` зі зсувом поля
+структури. Це покриває більшість `LoadProhibited` на практиці.
+```
 
 **Доказ**
 
@@ -3745,11 +7186,27 @@
 ---
 
 <!-- fc id:T-D-156 sha:7ff566f8 src:dodatky/d-panik.md:215 klas:E -->
-### T-D-156 · proza · рядок 215
+### T-D-156 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Схожа на осмислену адресу, але доступ заборонено → покажчик на вже звільнену пам'ять.
+
+**Дослівно з книги**
+
+```
+Схожа на осмислену адресу, але доступ заборонено → покажчик на вже
+```
+
+**Контекст**
+
+```
+## Читання дампа регістрів
+
+Схожа на осмислену адресу, але доступ заборонено → покажчик на вже
+звільнену пам'ять.
+:::
+```
 
 **Доказ**
 
@@ -3758,11 +7215,19 @@
 ---
 
 <!-- fc id:T-D-157 sha:d09dfd9d src:dodatky/d-panik.md:221 klas:E -->
-### T-D-157 · proza · рядок 221
+### T-D-157 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Task WDT** — задача не віддає керування:
+
+**Контекст**
+
+```
+## Watchdog: розрізнення
+
+**Task WDT** — задача не віддає керування:
+```
 
 **Доказ**
 
@@ -3771,9 +7236,9 @@
 ---
 
 <!-- fc id:T-D-158 sha:655ff0e7 src:dodatky/d-panik.md:223 klas:K -->
-### T-D-158 · kod · рядок 223
+### T-D-158 · kod · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > E (5234) task_wdt: Task watchdog got triggered. The following tasks/users
@@ -3782,6 +7247,26 @@
 > E (5234) task_wdt: Tasks currently running:
 > E (5234) task_wdt: CPU 0: my_task
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Watchdog: розрізнення
+
+```
+E (5234) task_wdt: Task watchdog got triggered. The following tasks/users
+did not reset the watchdog in time:
+E (5234) task_wdt:  - IDLE0 (CPU 0)
+E (5234) task_wdt: Tasks currently running:
+E (5234) task_wdt: CPU 0: my_task
+```
+````
 
 **Доказ**
 
@@ -3796,11 +7281,25 @@
 ---
 
 <!-- fc id:T-D-159 sha:a1afa6b3 src:dodatky/d-panik.md:226 klas:A -->
-### T-D-159 · kod-ryadok · рядок 226
+### T-D-159 · kod-ryadok · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > E (5234) task_wdt:  - IDLE0 (CPU 0)
+
+**Контекст**
+
+````
+## Watchdog: розрізнення
+
+```
+E (5234) task_wdt: Task watchdog got triggered. The following tasks/users
+did not reset the watchdog in time:
+E (5234) task_wdt:  - IDLE0 (CPU 0)
+E (5234) task_wdt: Tasks currently running:
+E (5234) task_wdt: CPU 0: my_task
+```
+````
 
 **Доказ**
 
@@ -3815,11 +7314,28 @@
 ---
 
 <!-- fc id:T-D-160 sha:b8253fd9 src:dodatky/d-panik.md:231 klas:A -->
-### T-D-160 · proza · рядок 231
+### T-D-160 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Переліків тут **два, і вони різні**.
+
+**Дослівно з книги**
+
+```
+Переліків тут **два, і вони різні**. Після першого рядка — ті, хто не
+```
+
+**Контекст**
+
+```
+## Watchdog: розрізнення
+
+Переліків тут **два, і вони різні**. Після першого рядка — ті, хто не
+встиг погодувати watchdog (`IDLE0` — потерпілий). Після
+`Tasks currently running:` — те, що виконувалося в цю мить, і саме там
+винуватець: `my_task`.
+```
 
 **Доказ**
 
@@ -3843,11 +7359,28 @@
 ---
 
 <!-- fc id:T-D-161 sha:d413fc69 src:dodatky/d-panik.md:231 klas:A -->
-### T-D-161 · proza · рядок 231
+### T-D-161 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Після першого рядка — ті, хто не встиг погодувати watchdog (`IDLE0` — потерпілий).
+
+**Дослівно з книги**
+
+```
+Переліків тут **два, і вони різні**. Після першого рядка — ті, хто не
+```
+
+**Контекст**
+
+```
+## Watchdog: розрізнення
+
+Переліків тут **два, і вони різні**. Після першого рядка — ті, хто не
+встиг погодувати watchdog (`IDLE0` — потерпілий). Після
+`Tasks currently running:` — те, що виконувалося в цю мить, і саме там
+винуватець: `my_task`.
+```
 
 **Доказ**
 
@@ -3863,11 +7396,28 @@
 ---
 
 <!-- fc id:T-D-162 sha:15a9044c src:dodatky/d-panik.md:231 klas:A -->
-### T-D-162 · proza · рядок 231
+### T-D-162 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Після `Tasks currently running:` — те, що виконувалося в цю мить, і саме там винуватець: `my_task`.
+
+**Дослівно з книги**
+
+```
+Переліків тут **два, і вони різні**. Після першого рядка — ті, хто не
+```
+
+**Контекст**
+
+```
+## Watchdog: розрізнення
+
+Переліків тут **два, і вони різні**. Після першого рядка — ті, хто не
+встиг погодувати watchdog (`IDLE0` — потерпілий). Після
+`Tasks currently running:` — те, що виконувалося в цю мить, і саме там
+винуватець: `my_task`.
+```
 
 **Доказ**
 
@@ -3891,11 +7441,19 @@
 ---
 
 <!-- fc id:T-D-163 sha:12db62c5 src:dodatky/d-panik.md:236 klas:E -->
-### T-D-163 · proza · рядок 236
+### T-D-163 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Це діагностика, а не смерть системи.
+
+**Контекст**
+
+```
+## Watchdog: розрізнення
+
+Це діагностика, а не смерть системи.
+```
 
 **Доказ**
 
@@ -3904,11 +7462,19 @@
 ---
 
 <!-- fc id:T-D-164 sha:77e4f2d7 src:dodatky/d-panik.md:238 klas:E -->
-### T-D-164 · proza · рядок 238
+### T-D-164 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Interrupt WDT** — переривання заблоковані:
+
+**Контекст**
+
+```
+## Watchdog: розрізнення
+
+**Interrupt WDT** — переривання заблоковані:
+```
 
 **Доказ**
 
@@ -3917,13 +7483,29 @@
 ---
 
 <!-- fc id:T-D-165 sha:113645cd src:dodatky/d-panik.md:240 klas:K -->
-### T-D-165 · kod · рядок 240
+### T-D-165 · kod · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Watchdog: розрізнення
+
+```
+Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
+```
+````
 
 **Доказ**
 
@@ -3962,11 +7544,26 @@
 ---
 
 <!-- fc id:T-D-166 sha:61ffbc10 src:dodatky/d-panik.md:244 klas:E -->
-### T-D-166 · proza · рядок 244
+### T-D-166 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Причини: важкий код в ISR, довга критична секція, виклик забороненого в ISR (розділ 31).
+
+**Дослівно з книги**
+
+```
+Значно серйозніший. Причини: важкий код в ISR, довга критична секція,
+```
+
+**Контекст**
+
+```
+## Watchdog: розрізнення
+
+Значно серйозніший. Причини: важкий код в ISR, довга критична секція,
+виклик забороненого в ISR (розділ 31).
+```
 
 **Доказ**
 
@@ -3975,11 +7572,36 @@
 ---
 
 <!-- fc id:T-D-167 sha:ef04690f src:dodatky/d-panik.md:249 klas:E -->
-### T-D-167 · tablycya · рядок 249
+### T-D-167 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Повідомлення | Причина |
+
+**Дослівно з книги**
+
+```
+| Повідомлення | Причина | Розділ |
+```
+
+**Контекст**
+
+```
+## Помилки бутлоадера
+
+Рядки нижче — дослівні з ESP-IDF; `%d`, `0x%x` і адреси підставляються.
+
+| Повідомлення | Причина | Розділ |
+|---|---|---|
+| `image at 0x… has invalid magic byte (nothing flashed here?)` | за адресою застосунку не образ | 18 |
+| `Factory app partition is not bootable` | застосунку немає | К5 |
+| `partition N invalid magic number 0x…` | немає таблиці розділів | 18 |
+| `Failed to verify partition table` | те саме | 18 |
+| `ota data partition invalid, falling back to factory` | зіпсований `otadata` | 19 |
+| `Image hash failed - image is corrupt` | образ пошкоджений | 17 |
+| `Detected size(…k) smaller than the size in the binary image header(…k). Probe failed.` | конфігурація > реальний флеш | 08 |
+| `Detected size(…k) larger than … Using the size in the binary image header.` | конфігурація < реальний флеш; лише попередження | 08 |
+```
 
 **Доказ**
 
@@ -3988,11 +7610,27 @@
 ---
 
 <!-- fc id:T-D-168 sha:200e947a src:dodatky/d-panik.md:251 klas:A -->
-### T-D-168 · tablycya · рядок 251
+### T-D-168 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+
+| Повідомлення | Причина |
+|---|---|
+| `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+| `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+| `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+| `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
+| `assert failed: ...` | порушено внутрішній інваріант |
+| `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
+```
 
 **Доказ**
 
@@ -4013,11 +7651,27 @@
 ---
 
 <!-- fc id:T-D-169 sha:6747d938 src:dodatky/d-panik.md:252 klas:A -->
-### T-D-169 · tablycya · рядок 252
+### T-D-169 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+
+| Повідомлення | Причина |
+|---|---|
+| `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+| `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+| `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+| `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
+| `assert failed: ...` | порушено внутрішній інваріант |
+| `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
+```
 
 **Доказ**
 
@@ -4038,11 +7692,27 @@
 ---
 
 <!-- fc id:T-D-170 sha:0e926220 src:dodatky/d-panik.md:253 klas:A -->
-### T-D-170 · tablycya · рядок 253
+### T-D-170 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+
+| Повідомлення | Причина |
+|---|---|
+| `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+| `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+| `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+| `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
+| `assert failed: ...` | порушено внутрішній інваріант |
+| `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
+```
 
 **Доказ**
 
@@ -4063,11 +7733,27 @@
 ---
 
 <!-- fc id:T-D-171 sha:c629c9be src:dodatky/d-panik.md:254 klas:A -->
-### T-D-171 · tablycya · рядок 254
+### T-D-171 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+
+| Повідомлення | Причина |
+|---|---|
+| `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+| `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+| `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+| `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
+| `assert failed: ...` | порушено внутрішній інваріант |
+| `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
+```
 
 **Доказ**
 
@@ -4106,11 +7792,27 @@
 ---
 
 <!-- fc id:T-D-172 sha:69aa2c68 src:dodatky/d-panik.md:255 klas:A -->
-### T-D-172 · tablycya · рядок 255
+### T-D-172 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `assert failed: ...` | порушено внутрішній інваріант |
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+
+| Повідомлення | Причина |
+|---|---|
+| `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+| `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+| `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+| `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
+| `assert failed: ...` | порушено внутрішній інваріант |
+| `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
+```
 
 **Доказ**
 
@@ -4127,11 +7829,27 @@
 ---
 
 <!-- fc id:T-D-173 sha:4dc00872 src:dodatky/d-panik.md:256 klas:A -->
-### T-D-173 · tablycya · рядок 256
+### T-D-173 · tablycya · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+
+| Повідомлення | Причина |
+|---|---|
+| `***ERROR*** A stack overflow in task X has been detected.` | замалий стек задачі |
+| `CORRUPT HEAP: Bad tail at 0x… Expected 0x… got 0x…` | запис **за** кінець блоку |
+| `CORRUPT HEAP: Bad head at 0x…` | запис **перед** початком блоку |
+| `Guru Meditation ... IllegalInstruction` | часто теж переповнення стека |
+| `assert failed: ...` | порушено внутрішній інваріант |
+| `heap_caps_malloc failed` | немає пам'яті або немає блоку потрібного розміру |
+```
 
 **Доказ**
 
@@ -4156,11 +7874,28 @@
 ---
 
 <!-- fc id:T-D-174 sha:1e8945f3 src:dodatky/d-panik.md:259 klas:A -->
-### T-D-174 · proza · рядок 259
+### T-D-174 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Bad head` і `Bad tail` — не однакові повідомлення.
+
+**Дослівно з книги**
+
+```
+`Bad head` і `Bad tail` — не однакові повідомлення. Купа тримає навколо
+```
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+::: uvaha
+`Bad head` і `Bad tail` — не однакові повідомлення. Купа тримає навколо
+кожного блоку контрольні слова-канарки, і зіпсована каже, з якого боку
+писали повз.
+```
 
 **Доказ**
 
@@ -4181,11 +7916,28 @@
 ---
 
 <!-- fc id:T-D-175 sha:7076a5df src:dodatky/d-panik.md:259 klas:A -->
-### T-D-175 · proza · рядок 259
+### T-D-175 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Купа тримає навколо кожного блоку контрольні слова-канарки, і зіпсована каже, з якого боку писали повз.
+
+**Дослівно з книги**
+
+```
+`Bad head` і `Bad tail` — не однакові повідомлення. Купа тримає навколо
+```
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+::: uvaha
+`Bad head` і `Bad tail` — не однакові повідомлення. Купа тримає навколо
+кожного блоку контрольні слова-канарки, і зіпсована каже, з якого боку
+писали повз.
+```
 
 **Доказ**
 
@@ -4206,11 +7958,20 @@
 ---
 
 <!-- fc id:T-D-176 sha:dbf57f9c src:dodatky/d-panik.md:263 klas:A -->
-### T-D-176 · proza · рядок 263
+### T-D-176 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Bad tail` — типове переповнення буфера: писали далі, ніж виділили.
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+`Bad tail` — типове переповнення буфера: писали далі, ніж виділили.
+Шукати `memcpy`, `sprintf`, цикл із `<=` замість `<`.
+```
 
 **Доказ**
 
@@ -4231,11 +7992,20 @@
 ---
 
 <!-- fc id:T-D-177 sha:68e01a8c src:dodatky/d-panik.md:263 klas:C -->
-### T-D-177 · proza · рядок 263
+### T-D-177 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Шукати `memcpy`, `sprintf`, цикл із `<=` замість `<`.
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+`Bad tail` — типове переповнення буфера: писали далі, ніж виділили.
+Шукати `memcpy`, `sprintf`, цикл із `<=` замість `<`.
+```
 
 **Доказ**
 
@@ -4247,11 +8017,27 @@
 ---
 
 <!-- fc id:T-D-178 sha:123d0b6e src:dodatky/d-panik.md:266 klas:A -->
-### T-D-178 · proza · рядок 266
+### T-D-178 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `Bad head` — писали **до** початку блоку: від'ємний індекс, зсув покажчика назад, звільнення чужої адреси.
+
+**Дослівно з книги**
+
+```
+`Bad head` — писали **до** початку блоку: від'ємний індекс, зсув
+```
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+`Bad head` — писали **до** початку блоку: від'ємний індекс, зсув
+покажчика назад, звільнення чужої адреси. Трапляється рідше й майже
+завжди означає помилку в арифметиці покажчиків.
+```
 
 **Доказ**
 
@@ -4272,11 +8058,27 @@
 ---
 
 <!-- fc id:T-D-179 sha:290e2e50 src:dodatky/d-panik.md:266 klas:E -->
-### T-D-179 · proza · рядок 266
+### T-D-179 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Трапляється рідше й майже завжди означає помилку в арифметиці покажчиків.
+
+**Дослівно з книги**
+
+```
+`Bad head` — писали **до** початку блоку: від'ємний індекс, зсув
+```
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+`Bad head` — писали **до** початку блоку: від'ємний індекс, зсув
+покажчика назад, звільнення чужої адреси. Трапляється рідше й майже
+завжди означає помилку в арифметиці покажчиків.
+```
 
 **Доказ**
 
@@ -4285,11 +8087,27 @@
 ---
 
 <!-- fc id:T-D-180 sha:0140364c src:dodatky/d-panik.md:270 klas:A -->
-### T-D-180 · proza · рядок 270
+### T-D-180 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Адреса в повідомленні — це адреса канарки, тобто край самого блоку.
+
+**Дослівно з книги**
+
+```
+Адреса в повідомленні — це адреса канарки, тобто край самого блоку. Її
+```
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+Адреса в повідомленні — це адреса канарки, тобто край самого блоку. Її
+можна порівняти з тим, що повернув `malloc`.
+:::
+```
 
 **Доказ**
 
@@ -4310,11 +8128,27 @@
 ---
 
 <!-- fc id:T-D-181 sha:a135e9c8 src:dodatky/d-panik.md:270 klas:C -->
-### T-D-181 · proza · рядок 270
+### T-D-181 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Її можна порівняти з тим, що повернув `malloc`.
+
+**Дослівно з книги**
+
+```
+Адреса в повідомленні — це адреса канарки, тобто край самого блоку. Її
+```
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+Адреса в повідомленні — це адреса канарки, тобто край самого блоку. Її
+можна порівняти з тим, що повернув `malloc`.
+:::
+```
 
 **Доказ**
 
@@ -4326,11 +8160,26 @@
 ---
 
 <!-- fc id:T-D-182 sha:760e202b src:dodatky/d-panik.md:274 klas:A -->
-### T-D-182 · proza · рядок 274
+### T-D-182 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Діагностика — розділ 30: `uxTaskGetStackHighWaterMark`, `heap_caps_get_largest_free_block`.
+
+**Дослівно з книги**
+
+```
+Діагностика — розділ 30: `uxTaskGetStackHighWaterMark`,
+```
+
+**Контекст**
+
+```
+## Помилки стека і купи
+
+Діагностика — розділ 30: `uxTaskGetStackHighWaterMark`,
+`heap_caps_get_largest_free_block`.
+```
 
 **Доказ**
 
@@ -4355,11 +8204,30 @@
 ---
 
 <!-- fc id:T-D-183 sha:cbdc8d7f src:dodatky/d-panik.md:279 klas:A -->
-### T-D-183 · proza · рядок 279
+### T-D-183 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні шляхи. 2.
+
+**Дослівно з книги**
+
+```
+1. **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні
+```
+
+**Контекст**
+
+```
+## Порядок розбору збою
+
+1. **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні
+   шляхи.
+2. **Причина паніки і `EXCVADDR`.** Часто відповідь уже тут.
+3. **Backtrace через `.elf`** того самого збирання. Знизу вгору.
+4. **Відтворити.** Збій, який не відтворюється, не полагоджений.
+5. Не відтворюється → coredump і логування переходів станів.
+```
 
 **Доказ**
 
@@ -4378,11 +8246,30 @@
 ---
 
 <!-- fc id:T-D-184 sha:61db3e19 src:dodatky/d-panik.md:279 klas:A -->
-### T-D-184 · proza · рядок 279
+### T-D-184 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Причина паніки і `EXCVADDR`.** Часто відповідь уже тут. 3.
+
+**Дослівно з книги**
+
+```
+1. **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні
+```
+
+**Контекст**
+
+```
+## Порядок розбору збою
+
+1. **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні
+   шляхи.
+2. **Причина паніки і `EXCVADDR`.** Часто відповідь уже тут.
+3. **Backtrace через `.elf`** того самого збирання. Знизу вгору.
+4. **Відтворити.** Збій, який не відтворюється, не полагоджений.
+5. Не відтворюється → coredump і логування переходів станів.
+```
 
 **Доказ**
 
@@ -4397,11 +8284,30 @@
 ---
 
 <!-- fc id:T-D-185 sha:8d7da41f src:dodatky/d-panik.md:279 klas:A -->
-### T-D-185 · proza · рядок 279
+### T-D-185 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Backtrace через `.elf`** того самого збирання.
+
+**Дослівно з книги**
+
+```
+3. **Backtrace через `.elf`** того самого збирання. Знизу вгору.
+```
+
+**Контекст**
+
+```
+## Порядок розбору збою
+
+1. **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні
+   шляхи.
+2. **Причина паніки і `EXCVADDR`.** Часто відповідь уже тут.
+3. **Backtrace через `.elf`** того самого збирання. Знизу вгору.
+4. **Відтворити.** Збій, який не відтворюється, не полагоджений.
+5. Не відтворюється → coredump і логування переходів станів.
+```
 
 **Доказ**
 
@@ -4424,11 +8330,30 @@
 ---
 
 <!-- fc id:T-D-186 sha:223bf487 src:dodatky/d-panik.md:279 klas:E -->
-### T-D-186 · proza · рядок 279
+### T-D-186 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Відтворити.** Збій, який не відтворюється, не полагоджений. 5.
+
+**Дослівно з книги**
+
+```
+1. **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні
+```
+
+**Контекст**
+
+```
+## Порядок розбору збою
+
+1. **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні
+   шляхи.
+2. **Причина паніки і `EXCVADDR`.** Часто відповідь уже тут.
+3. **Backtrace через `.elf`** того самого збирання. Знизу вгору.
+4. **Відтворити.** Збій, який не відтворюється, не полагоджений.
+5. Не відтворюється → coredump і логування переходів станів.
+```
 
 **Доказ**
 
@@ -4437,11 +8362,30 @@
 ---
 
 <!-- fc id:T-D-187 sha:6a7c80ec src:dodatky/d-panik.md:279 klas:A -->
-### T-D-187 · proza · рядок 279
+### T-D-187 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Не відтворюється → coredump і логування переходів станів.
+
+**Дослівно з книги**
+
+```
+5. Не відтворюється → coredump і логування переходів станів.
+```
+
+**Контекст**
+
+```
+## Порядок розбору збою
+
+1. **`rst:` у першому рядку.** Живлення, watchdog чи паніка — три різні
+   шляхи.
+2. **Причина паніки і `EXCVADDR`.** Часто відповідь уже тут.
+3. **Backtrace через `.elf`** того самого збирання. Знизу вгору.
+4. **Відтворити.** Збій, який не відтворюється, не полагоджений.
+5. Не відтворюється → coredump і логування переходів станів.
+```
 
 **Доказ**
 
@@ -4456,11 +8400,22 @@
 ---
 
 <!-- fc id:T-D-188 sha:4304fde6 src:dodatky/d-panik.md:287 klas:B -->
-### T-D-188 · proza · рядок 287
+### T-D-188 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Без `.elf` **того самого збирання** backtrace нерозшифровний.
+
+**Контекст**
+
+```
+## Порядок розбору збою
+
+::: nezvorotne
+Без `.elf` **того самого збирання** backtrace нерозшифровний.
+Перезібраний «такий самий» проєкт не підходить: адреси зсуваються від
+будь-якої зміни тулчейну чи бібліотеки.
+```
 
 **Доказ**
 
@@ -4475,11 +8430,28 @@
 ---
 
 <!-- fc id:T-D-189 sha:91a1f9a6 src:dodatky/d-panik.md:287 klas:E -->
-### T-D-189 · proza · рядок 287
+### T-D-189 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Перезібраний «такий самий» проєкт не підходить: адреси зсуваються від будь-якої зміни тулчейну чи бібліотеки.
+
+**Дослівно з книги**
+
+```
+Без `.elf` **того самого збирання** backtrace нерозшифровний.
+```
+
+**Контекст**
+
+```
+## Порядок розбору збою
+
+::: nezvorotne
+Без `.elf` **того самого збирання** backtrace нерозшифровний.
+Перезібраний «такий самий» проєкт не підходить: адреси зсуваються від
+будь-якої зміни тулчейну чи бібліотеки.
+```
 
 **Доказ**
 
@@ -4505,11 +8477,20 @@
 ---
 
 <!-- fc id:T-D-190 sha:00df861d src:dodatky/d-panik.md:291 klas:C -->
-### T-D-190 · proza · рядок 291
+### T-D-190 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `.elf` зберігається разом із кожним образом, що поїхав (розділ 21).
+
+**Контекст**
+
+```
+## Порядок розбору збою
+
+`.elf` зберігається разом із кожним образом, що поїхав (розділ 21).
+:::
+```
 
 **Доказ**
 
@@ -4521,11 +8502,26 @@
 ---
 
 <!-- fc id:T-D-191 sha:9a6f1773 src:dodatky/d-panik.md:296 klas:E -->
-### T-D-191 · proza · рядок 296
+### T-D-191 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Дивитися **найперший** дамп після подачі живлення: відкрити монітор, **потім** подати живлення.
+
+**Дослівно з книги**
+
+```
+Дивитися **найперший** дамп після подачі живлення: відкрити монітор,
+```
+
+**Контекст**
+
+```
+## Boot loop
+
+Дивитися **найперший** дамп після подачі живлення: відкрити монітор,
+**потім** подати живлення. У першому — причина, в решті — наслідки.
+```
 
 **Доказ**
 
@@ -4534,11 +8530,26 @@
 ---
 
 <!-- fc id:T-D-192 sha:c50282dd src:dodatky/d-panik.md:296 klas:E -->
-### T-D-192 · proza · рядок 296
+### T-D-192 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > У першому — причина, в решті — наслідки.
+
+**Дослівно з книги**
+
+```
+**потім** подати живлення. У першому — причина, в решті — наслідки.
+```
+
+**Контекст**
+
+```
+## Boot loop
+
+Дивитися **найперший** дамп після подачі живлення: відкрити монітор,
+**потім** подати живлення. У першому — причина, в решті — наслідки.
+```
 
 **Доказ**
 
@@ -4547,11 +8558,27 @@
 ---
 
 <!-- fc id:T-D-193 sha:71f2dcf5 src:dodatky/d-panik.md:299 klas:C -->
-### T-D-193 · proza · рядок 299
+### T-D-193 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Швидке відсікання: залити свідомо справний мінімальний образ (`hello_world`).
+
+**Дослівно з книги**
+
+```
+Швидке відсікання: залити свідомо справний мінімальний образ
+```
+
+**Контекст**
+
+```
+## Boot loop
+
+Швидке відсікання: залити свідомо справний мінімальний образ
+(`hello_world`). Працює — справа в прошивці; ні — у залізі чи живленні
+(розділ 20).
+```
 
 **Доказ**
 
@@ -4563,11 +8590,27 @@
 ---
 
 <!-- fc id:T-D-194 sha:d8b5c935 src:dodatky/d-panik.md:299 klas:E -->
-### T-D-194 · proza · рядок 299
+### T-D-194 · proza · `dodatky/d-panik.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Працює — справа в прошивці; ні — у залізі чи живленні (розділ 20).
+
+**Дослівно з книги**
+
+```
+Швидке відсікання: залити свідомо справний мінімальний образ
+```
+
+**Контекст**
+
+```
+## Boot loop
+
+Швидке відсікання: залити свідомо справний мінімальний образ
+(`hello_world`). Працює — справа в прошивці; ні — у залізі чи живленні
+(розділ 20).
+```
 
 **Доказ**
 

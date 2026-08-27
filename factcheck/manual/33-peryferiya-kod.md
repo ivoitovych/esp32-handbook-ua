@@ -7,11 +7,28 @@
 ---
 
 <!-- fc id:T-33-001 sha:6801c405 src:manual/33-peryferiya-kod.md:3 klas:E -->
-### T-33-001 · proza · рядок 3
+### T-33-001 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Практична робота з блоками, описаними оглядово в розділі 04.
+
+**Дослівно з книги**
+
+```
+Практична робота з блоками, описаними оглядово в розділі 04. Головна ідея
+```
+
+**Контекст**
+
+```
+# 33. Периферія з коду: GPIO, таймери, PWM, ADC {#peryferiya-kod}
+
+Практична робота з блоками, описаними оглядово в розділі 04. Головна ідея
+розділу: **більшість того, що виглядає як задача для коду, робиться
+апаратно** — і саме тому працює надійно незалежно від завантаження
+системи.
+```
 
 **Доказ**
 
@@ -20,11 +37,28 @@
 ---
 
 <!-- fc id:T-33-002 sha:47541b2b src:manual/33-peryferiya-kod.md:3 klas:E -->
-### T-33-002 · proza · рядок 3
+### T-33-002 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Головна ідея розділу: **більшість того, що виглядає як задача для коду, робиться апаратно** — і саме тому працює надійно незалежно від завантаження системи.
+
+**Дослівно з книги**
+
+```
+Практична робота з блоками, описаними оглядово в розділі 04. Головна ідея
+```
+
+**Контекст**
+
+```
+# 33. Периферія з коду: GPIO, таймери, PWM, ADC {#peryferiya-kod}
+
+Практична робота з блоками, описаними оглядово в розділі 04. Головна ідея
+розділу: **більшість того, що виглядає як задача для коду, робиться
+апаратно** — і саме тому працює надійно незалежно від завантаження
+системи.
+```
 
 **Доказ**
 
@@ -46,9 +80,9 @@
 ---
 
 <!-- fc id:T-33-003 sha:6723d0bf src:manual/33-peryferiya-kod.md:10 klas:K -->
-### T-33-003 · kod · рядок 10
+### T-33-003 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > gpio_config_t cfg = {
@@ -61,6 +95,30 @@
 > gpio_config(&cfg);
 > gpio_set_level(GPIO_NUM_2, 1);
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t cfg = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+    .mode = GPIO_MODE_OUTPUT,
+    .pull_up_en = GPIO_PULLUP_DISABLE,
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE,
+};
+gpio_config(&cfg);
+gpio_set_level(GPIO_NUM_2, 1);
+```
+````
 
 **Доказ**
 
@@ -86,11 +144,29 @@
 ---
 
 <!-- fc id:T-33-004 sha:3fad3578 src:manual/33-peryferiya-kod.md:12 klas:A -->
-### T-33-004 · kod-ryadok · рядок 12
+### T-33-004 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t cfg = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+    .mode = GPIO_MODE_OUTPUT,
+    .pull_up_en = GPIO_PULLUP_DISABLE,
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE,
+};
+gpio_config(&cfg);
+gpio_set_level(GPIO_NUM_2, 1);
+```
+````
 
 **Доказ**
 
@@ -123,11 +199,29 @@
 ---
 
 <!-- fc id:T-33-005 sha:4ea85d9b src:manual/33-peryferiya-kod.md:13 klas:F -->
-### T-33-005 · kod-ryadok · рядок 13
+### T-33-005 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .mode = GPIO_MODE_OUTPUT,
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t cfg = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+    .mode = GPIO_MODE_OUTPUT,
+    .pull_up_en = GPIO_PULLUP_DISABLE,
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE,
+};
+gpio_config(&cfg);
+gpio_set_level(GPIO_NUM_2, 1);
+```
+````
 
 **Доказ**
 
@@ -136,11 +230,29 @@
 ---
 
 <!-- fc id:T-33-006 sha:6bd988a2 src:manual/33-peryferiya-kod.md:14 klas:A -->
-### T-33-006 · kod-ryadok · рядок 14
+### T-33-006 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .pull_up_en = GPIO_PULLUP_DISABLE,
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t cfg = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+    .mode = GPIO_MODE_OUTPUT,
+    .pull_up_en = GPIO_PULLUP_DISABLE,
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE,
+};
+gpio_config(&cfg);
+gpio_set_level(GPIO_NUM_2, 1);
+```
+````
 
 **Доказ**
 
@@ -166,11 +278,29 @@
 ---
 
 <!-- fc id:T-33-007 sha:8c43cf59 src:manual/33-peryferiya-kod.md:15 klas:F -->
-### T-33-007 · kod-ryadok · рядок 15
+### T-33-007 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .pull_down_en = GPIO_PULLDOWN_DISABLE,
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t cfg = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+    .mode = GPIO_MODE_OUTPUT,
+    .pull_up_en = GPIO_PULLUP_DISABLE,
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE,
+};
+gpio_config(&cfg);
+gpio_set_level(GPIO_NUM_2, 1);
+```
+````
 
 **Доказ**
 
@@ -179,11 +309,29 @@
 ---
 
 <!-- fc id:T-33-008 sha:c0246957 src:manual/33-peryferiya-kod.md:16 klas:F -->
-### T-33-008 · kod-ryadok · рядок 16
+### T-33-008 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .intr_type = GPIO_INTR_DISABLE,
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t cfg = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+    .mode = GPIO_MODE_OUTPUT,
+    .pull_up_en = GPIO_PULLUP_DISABLE,
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE,
+};
+gpio_config(&cfg);
+gpio_set_level(GPIO_NUM_2, 1);
+```
+````
 
 **Доказ**
 
@@ -192,11 +340,29 @@
 ---
 
 <!-- fc id:T-33-009 sha:514324cb src:manual/33-peryferiya-kod.md:18 klas:A -->
-### T-33-009 · kod-ryadok · рядок 18
+### T-33-009 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > gpio_config(&cfg);
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t cfg = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+    .mode = GPIO_MODE_OUTPUT,
+    .pull_up_en = GPIO_PULLUP_DISABLE,
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE,
+};
+gpio_config(&cfg);
+gpio_set_level(GPIO_NUM_2, 1);
+```
+````
 
 **Доказ**
 
@@ -218,11 +384,29 @@
 ---
 
 <!-- fc id:T-33-010 sha:6602551b src:manual/33-peryferiya-kod.md:19 klas:F -->
-### T-33-010 · kod-ryadok · рядок 19
+### T-33-010 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > gpio_set_level(GPIO_NUM_2, 1);
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t cfg = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_2) | (1ULL << GPIO_NUM_4),
+    .mode = GPIO_MODE_OUTPUT,
+    .pull_up_en = GPIO_PULLUP_DISABLE,
+    .pull_down_en = GPIO_PULLDOWN_DISABLE,
+    .intr_type = GPIO_INTR_DISABLE,
+};
+gpio_config(&cfg);
+gpio_set_level(GPIO_NUM_2, 1);
+```
+````
 
 **Доказ**
 
@@ -231,11 +415,26 @@
 ---
 
 <!-- fc id:T-33-011 sha:bedbcc3c src:manual/33-peryferiya-kod.md:22 klas:F -->
-### T-33-011 · proza · рядок 22
+### T-33-011 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `pin_bit_mask` — бітова маска, тому кілька пінів налаштовуються однією дією.
+
+**Дослівно з книги**
+
+```
+`pin_bit_mask` — бітова маска, тому кілька пінів налаштовуються однією
+```
+
+**Контекст**
+
+```
+## GPIO
+
+`pin_bit_mask` — бітова маска, тому кілька пінів налаштовуються однією
+дією. `1ULL` обов'язково: на пінах вище 31 звичайний `1` переповниться.
+```
 
 **Доказ**
 
@@ -244,11 +443,26 @@
 ---
 
 <!-- fc id:T-33-012 sha:0cfd0d0f src:manual/33-peryferiya-kod.md:22 klas:A -->
-### T-33-012 · proza · рядок 22
+### T-33-012 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `1ULL` обов'язково: на пінах вище 31 звичайний `1` переповниться.
+
+**Дослівно з книги**
+
+```
+дією. `1ULL` обов'язково: на пінах вище 31 звичайний `1` переповниться.
+```
+
+**Контекст**
+
+```
+## GPIO
+
+`pin_bit_mask` — бітова маска, тому кілька пінів налаштовуються однією
+дією. `1ULL` обов'язково: на пінах вище 31 звичайний `1` переповниться.
+```
 
 **Доказ**
 
@@ -256,16 +470,16 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
 - **Дослівно з джерела:**
   > (1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1)
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 1ULL obovyazkovo - na pinakh vyshe 31 zvychaynyy 1 perepovnytsya - pidtverdzheno
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-013 sha:fbcbf58d src:manual/33-peryferiya-kod.md:27 klas:K -->
-### T-33-013 · kod · рядок 27
+### T-33-013 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > gpio_config_t in = {
@@ -275,6 +489,27 @@
 >     .intr_type = GPIO_INTR_NEGEDGE,
 > };
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t in = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_5),
+    .mode = GPIO_MODE_INPUT,
+    .pull_up_en = GPIO_PULLUP_ENABLE,
+    .intr_type = GPIO_INTR_NEGEDGE,
+};
+```
+````
 
 **Доказ**
 
@@ -300,11 +535,26 @@
 ---
 
 <!-- fc id:T-33-014 sha:f96f77cb src:manual/33-peryferiya-kod.md:29 klas:A -->
-### T-33-014 · kod-ryadok · рядок 29
+### T-33-014 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .pin_bit_mask = (1ULL << GPIO_NUM_5),
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t in = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_5),
+    .mode = GPIO_MODE_INPUT,
+    .pull_up_en = GPIO_PULLUP_ENABLE,
+    .intr_type = GPIO_INTR_NEGEDGE,
+};
+```
+````
 
 **Доказ**
 
@@ -337,11 +587,26 @@
 ---
 
 <!-- fc id:T-33-015 sha:99e0f537 src:manual/33-peryferiya-kod.md:30 klas:A -->
-### T-33-015 · kod-ryadok · рядок 30
+### T-33-015 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .mode = GPIO_MODE_INPUT,
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t in = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_5),
+    .mode = GPIO_MODE_INPUT,
+    .pull_up_en = GPIO_PULLUP_ENABLE,
+    .intr_type = GPIO_INTR_NEGEDGE,
+};
+```
+````
 
 **Доказ**
 
@@ -363,11 +628,26 @@
 ---
 
 <!-- fc id:T-33-016 sha:5502b7f2 src:manual/33-peryferiya-kod.md:31 klas:A -->
-### T-33-016 · kod-ryadok · рядок 31
+### T-33-016 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .pull_up_en = GPIO_PULLUP_ENABLE,
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t in = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_5),
+    .mode = GPIO_MODE_INPUT,
+    .pull_up_en = GPIO_PULLUP_ENABLE,
+    .intr_type = GPIO_INTR_NEGEDGE,
+};
+```
+````
 
 **Доказ**
 
@@ -393,11 +673,26 @@
 ---
 
 <!-- fc id:T-33-017 sha:aa23725a src:manual/33-peryferiya-kod.md:32 klas:F -->
-### T-33-017 · kod-ryadok · рядок 32
+### T-33-017 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .intr_type = GPIO_INTR_NEGEDGE,
+
+**Контекст**
+
+````
+## GPIO
+
+```c
+gpio_config_t in = {
+    .pin_bit_mask = (1ULL << GPIO_NUM_5),
+    .mode = GPIO_MODE_INPUT,
+    .pull_up_en = GPIO_PULLUP_ENABLE,
+    .intr_type = GPIO_INTR_NEGEDGE,
+};
+```
+````
 
 **Доказ**
 
@@ -406,11 +701,26 @@
 ---
 
 <!-- fc id:T-33-018 sha:be4ac34e src:manual/33-peryferiya-kod.md:36 klas:F -->
-### T-33-018 · proza · рядок 36
+### T-33-018 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Перед вибором піна — картка [К9](#k-pinouty): strapping, тільки-вхідні, зайняті флешем (розділ 07).
+
+**Дослівно з книги**
+
+```
+Перед вибором піна — картка [К9](#k-pinouty): strapping, тільки-вхідні,
+```
+
+**Контекст**
+
+```
+## GPIO
+
+Перед вибором піна — картка [К9](#k-pinouty): strapping, тільки-вхідні,
+зайняті флешем (розділ 07).
+```
 
 **Доказ**
 
@@ -419,11 +729,19 @@
 ---
 
 <!-- fc id:T-33-019 sha:e26a0015 src:manual/33-peryferiya-kod.md:41 klas:E -->
-### T-33-019 · proza · рядок 41
+### T-33-019 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Обробник має бути коротким: покласти в чергу й вийти (розділ 31).
+
+**Контекст**
+
+```
+### Переривання і антидребезг
+
+Обробник має бути коротким: покласти в чергу й вийти (розділ 31).
+```
 
 **Доказ**
 
@@ -432,9 +750,9 @@
 ---
 
 <!-- fc id:T-33-020 sha:e35f117f src:manual/33-peryferiya-kod.md:43 klas:K -->
-### T-33-020 · kod · рядок 43
+### T-33-020 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > static void IRAM_ATTR isr(void *arg) {
@@ -445,6 +763,24 @@
 > gpio_install_isr_service(0);
 > gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+### Переривання і антидребезг
+
+```c
+static void IRAM_ATTR isr(void *arg) {
+    uint32_t pin = (uint32_t)arg;
+    xQueueSendFromISR(cherga, &pin, NULL);
+}
+````
 
 **Доказ**
 
@@ -459,11 +795,23 @@
 ---
 
 <!-- fc id:T-33-021 sha:f9e24be5 src:manual/33-peryferiya-kod.md:46 klas:A -->
-### T-33-021 · kod-ryadok · рядок 46
+### T-33-021 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > xQueueSendFromISR(cherga, &pin, NULL);
+
+**Контекст**
+
+````
+### Переривання і антидребезг
+
+```c
+static void IRAM_ATTR isr(void *arg) {
+    uint32_t pin = (uint32_t)arg;
+    xQueueSendFromISR(cherga, &pin, NULL);
+}
+````
 
 **Доказ**
 
@@ -478,11 +826,21 @@
 ---
 
 <!-- fc id:T-33-022 sha:90827293 src:manual/33-peryferiya-kod.md:49 klas:F -->
-### T-33-022 · kod-ryadok · рядок 49
+### T-33-022 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > gpio_install_isr_service(0);
+
+**Контекст**
+
+````
+### Переривання і антидребезг
+
+gpio_install_isr_service(0);
+gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
+```
+````
 
 **Доказ**
 
@@ -491,11 +849,21 @@
 ---
 
 <!-- fc id:T-33-023 sha:77ee66f9 src:manual/33-peryferiya-kod.md:50 klas:A -->
-### T-33-023 · kod-ryadok · рядок 50
+### T-33-023 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
+
+**Контекст**
+
+````
+### Переривання і антидребезг
+
+gpio_install_isr_service(0);
+gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
+```
+````
 
 **Доказ**
 
@@ -503,18 +871,34 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
 - **Дослівно з джерела:**
   > gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** gpio_isr_handler_add vyzyv - pidtverdzheno v prykladi
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-024 sha:154027ff src:manual/33-peryferiya-kod.md:53 klas:E -->
-### T-33-024 · proza · рядок 53
+### T-33-024 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Механічна кнопка дає десятки перемикань за мілісекунди.
+
+**Дослівно з книги**
+
+```
+Механічна кнопка дає десятки перемикань за мілісекунди. Антидребезг
+```
+
+**Контекст**
+
+```
+### Переривання і антидребезг
+
+Механічна кнопка дає десятки перемикань за мілісекунди. Антидребезг
+робиться **не затримкою в ISR** (це прямий шлях до
+`Interrupt wdt timeout`), а порівнянням часу:
+```
 
 **Доказ**
 
@@ -523,11 +907,27 @@
 ---
 
 <!-- fc id:T-33-025 sha:c3f1cea7 src:manual/33-peryferiya-kod.md:53 klas:A -->
-### T-33-025 · proza · рядок 53
+### T-33-025 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Антидребезг робиться **не затримкою в ISR** (це прямий шлях до `Interrupt wdt timeout`), а порівнянням часу:
+
+**Дослівно з книги**
+
+```
+Механічна кнопка дає десятки перемикань за мілісекунди. Антидребезг
+```
+
+**Контекст**
+
+```
+### Переривання і антидребезг
+
+Механічна кнопка дає десятки перемикань за мілісекунди. Антидребезг
+робиться **не затримкою в ISR** (це прямий шлях до
+`Interrupt wdt timeout`), а порівнянням часу:
+```
 
 **Доказ**
 
@@ -545,7 +945,7 @@
   > (task_wdt.c)
   > E (…) task_wdt: Task watchdog got triggered. The following tasks/users
   > did not reset the watchdog in time:
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 10), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Рядки звірені в проході 10; тут вони стають видимими в картці К7, у додатку D і в розділах 20 і 26, де книга посилає читача «шукати `Guru Meditation` вище в лозі».
 Найважливіше з підтвердженого — розрізнення, на якому наполягає картка К7: `Task watchdog got triggered` **не паніка**. У джерелі це видно з рівня й місця: повідомлення друкує `task_wdt.c` через `ESP_LOGE`, тобто система працює далі, тоді як `Guru Meditation` друкує обробник паніки, після якого йде перезавантаження.
 - **Прохід:** pass-29-log-i-reshta-komand
@@ -553,9 +953,9 @@
 ---
 
 <!-- fc id:T-33-026 sha:7196915f src:manual/33-peryferiya-kod.md:57 klas:K -->
-### T-33-026 · kod · рядок 57
+### T-33-026 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > static int64_t ostannya;
@@ -567,6 +967,21 @@
 >     xQueueSendFromISR(cherga, &teper, NULL);
 > }
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+### Переривання і антидребезг
+
+```c
+static int64_t ostannya;
+````
 
 **Доказ**
 
@@ -581,11 +996,25 @@
 ---
 
 <!-- fc id:T-33-027 sha:2bfd44f4 src:manual/33-peryferiya-kod.md:64 klas:A -->
-### T-33-027 · kod-ryadok · рядок 64
+### T-33-027 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > xQueueSendFromISR(cherga, &teper, NULL);
+
+**Контекст**
+
+````
+### Переривання і антидребезг
+
+static void IRAM_ATTR isr(void *arg) {
+    int64_t teper = esp_timer_get_time();      // мікросекунди
+    if (teper - ostannya < 50000) return;      // 50 мс — ігнорувати
+    ostannya = teper;
+    xQueueSendFromISR(cherga, &teper, NULL);
+}
+```
+````
 
 **Доказ**
 
@@ -600,11 +1029,26 @@
 ---
 
 <!-- fc id:T-33-028 sha:ad224fe1 src:manual/33-peryferiya-kod.md:70 klas:A -->
-### T-33-028 · proza · рядок 70
+### T-33-028 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **`esp_timer`** — програмні таймери з мікросекундною роздільною здатністю.
+
+**Дослівно з книги**
+
+```
+**`esp_timer`** — програмні таймери з мікросекундною роздільною
+```
+
+**Контекст**
+
+```
+## Таймери
+
+**`esp_timer`** — програмні таймери з мікросекундною роздільною
+здатністю. Для більшості періодичних задач цього досить:
+```
 
 **Доказ**
 
@@ -628,11 +1072,26 @@
 ---
 
 <!-- fc id:T-33-029 sha:61f1d984 src:manual/33-peryferiya-kod.md:70 klas:A -->
-### T-33-029 · proza · рядок 70
+### T-33-029 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для більшості періодичних задач цього досить:
+
+**Дослівно з книги**
+
+```
+здатністю. Для більшості періодичних задач цього досить:
+```
+
+**Контекст**
+
+```
+## Таймери
+
+**`esp_timer`** — програмні таймери з мікросекундною роздільною
+здатністю. Для більшості періодичних задач цього досить:
+```
 
 **Доказ**
 
@@ -640,16 +1099,16 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
 - **Дослівно з джерела:**
   > Generating periodic alarms to complete periodic tasks
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Hardvarni tajmery dlya periodychnykh zavdan - pidtverdzheno dokumentaciyeyu GPTimer
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-030 sha:3915b0a4 src:manual/33-peryferiya-kod.md:73 klas:K -->
-### T-33-030 · kod · рядок 73
+### T-33-030 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > static void callback(void *arg) { /* коротко */ }
@@ -659,6 +1118,21 @@
 > esp_timer_create(&args, &t);
 > esp_timer_start_periodic(t, 1000000);   // раз на секунду
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## Таймери
+
+```c
+static void callback(void *arg) { /* коротко */ }
+````
 
 **Доказ**
 
@@ -683,11 +1157,23 @@
 ---
 
 <!-- fc id:T-33-031 sha:8319cb06 src:manual/33-peryferiya-kod.md:78 klas:A -->
-### T-33-031 · kod-ryadok · рядок 78
+### T-33-031 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esp_timer_create(&args, &t);
+
+**Контекст**
+
+````
+## Таймери
+
+esp_timer_create_args_t args = { .callback = callback, .name = "opyt" };
+esp_timer_handle_t t;
+esp_timer_create(&args, &t);
+esp_timer_start_periodic(t, 1000000);   // раз на секунду
+```
+````
 
 **Доказ**
 
@@ -712,11 +1198,26 @@
 ---
 
 <!-- fc id:T-33-032 sha:92cb7370 src:manual/33-peryferiya-kod.md:82 klas:A -->
-### T-33-032 · proza · рядок 82
+### T-33-032 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Обробники всіх `esp_timer` виконуються в одній задачі — довгий обробник затримує решту.
+
+**Дослівно з книги**
+
+```
+Обробники всіх `esp_timer` виконуються в одній задачі — довгий обробник
+```
+
+**Контекст**
+
+```
+## Таймери
+
+Обробники всіх `esp_timer` виконуються в одній задачі — довгий обробник
+затримує решту.
+```
 
 **Доказ**
 
@@ -740,11 +1241,27 @@
 ---
 
 <!-- fc id:T-33-033 sha:eb045fe4 src:manual/33-peryferiya-kod.md:85 klas:A -->
-### T-33-033 · proza · рядок 85
+### T-33-033 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **`esp_timer_get_time()`** повертає мікросекунди від старту у 64-бітному числі.
+
+**Дослівно з книги**
+
+```
+**`esp_timer_get_time()`** повертає мікросекунди від старту у 64-бітному
+```
+
+**Контекст**
+
+```
+## Таймери
+
+**`esp_timer_get_time()`** повертає мікросекунди від старту у 64-бітному
+числі. Це основний спосіб міряти час: переповнення не станеться за час
+життя пристрою.
+```
 
 **Доказ**
 
@@ -769,11 +1286,27 @@
 ---
 
 <!-- fc id:T-33-034 sha:360af588 src:manual/33-peryferiya-kod.md:85 klas:A -->
-### T-33-034 · proza · рядок 85
+### T-33-034 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Це основний спосіб міряти час: переповнення не станеться за час життя пристрою.
+
+**Дослівно з книги**
+
+```
+**`esp_timer_get_time()`** повертає мікросекунди від старту у 64-бітному
+```
+
+**Контекст**
+
+```
+## Таймери
+
+**`esp_timer_get_time()`** повертає мікросекунди від старту у 64-бітному
+числі. Це основний спосіб міряти час: переповнення не станеться за час
+життя пристрою.
+```
 
 **Доказ**
 
@@ -781,18 +1314,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
 - **Дослівно з джерела:**
   > The maximum count value depends on the bit width of the hardware timer (usually no less than 54 bits)
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Osnovnyi sposib miryaty chas - hardvarni tajmery z dovhoyu dozhyvayuchy bez perepolnenyya
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-035 sha:1525c224 src:manual/33-peryferiya-kod.md:89 klas:E -->
-### T-33-035 · proza · рядок 89
+### T-33-035 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Апаратні таймери** потрібні там, де важлива точність незалежно від завантаження системи, — переривання формується апаратно.
+
+**Дослівно з книги**
+
+```
+**Апаратні таймери** потрібні там, де важлива точність незалежно від
+```
+
+**Контекст**
+
+```
+## Таймери
+
+**Апаратні таймери** потрібні там, де важлива точність незалежно від
+завантаження системи, — переривання формується апаратно.
+```
 
 **Доказ**
 
@@ -814,9 +1362,9 @@
 ---
 
 <!-- fc id:T-33-036 sha:abc3c580 src:manual/33-peryferiya-kod.md:94 klas:K -->
-### T-33-036 · kod · рядок 94
+### T-33-036 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > ledc_timer_config_t tcfg = {
@@ -836,6 +1384,27 @@
 > };
 > ledc_channel_config(&ccfg);
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+```c
+ledc_timer_config_t tcfg = {
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .duty_resolution = LEDC_TIMER_13_BIT,
+    .timer_num = LEDC_TIMER_0,
+    .freq_hz = 5000,
+};
+ledc_timer_config(&tcfg);
+````
 
 **Доказ**
 
@@ -860,11 +1429,26 @@
 ---
 
 <!-- fc id:T-33-037 sha:105bb277 src:manual/33-peryferiya-kod.md:96 klas:F -->
-### T-33-037 · kod-ryadok · рядок 96
+### T-33-037 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .speed_mode = LEDC_LOW_SPEED_MODE,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+```c
+ledc_timer_config_t tcfg = {
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .duty_resolution = LEDC_TIMER_13_BIT,
+    .timer_num = LEDC_TIMER_0,
+    .freq_hz = 5000,
+};
+ledc_timer_config(&tcfg);
+````
 
 **Доказ**
 
@@ -873,11 +1457,26 @@
 ---
 
 <!-- fc id:T-33-038 sha:f0c21116 src:manual/33-peryferiya-kod.md:97 klas:A -->
-### T-33-038 · kod-ryadok · рядок 97
+### T-33-038 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .duty_resolution = LEDC_TIMER_13_BIT,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+```c
+ledc_timer_config_t tcfg = {
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .duty_resolution = LEDC_TIMER_13_BIT,
+    .timer_num = LEDC_TIMER_0,
+    .freq_hz = 5000,
+};
+ledc_timer_config(&tcfg);
+````
 
 **Доказ**
 
@@ -910,11 +1509,26 @@
 ---
 
 <!-- fc id:T-33-039 sha:44a45b93 src:manual/33-peryferiya-kod.md:98 klas:F -->
-### T-33-039 · kod-ryadok · рядок 98
+### T-33-039 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .timer_num = LEDC_TIMER_0,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+```c
+ledc_timer_config_t tcfg = {
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .duty_resolution = LEDC_TIMER_13_BIT,
+    .timer_num = LEDC_TIMER_0,
+    .freq_hz = 5000,
+};
+ledc_timer_config(&tcfg);
+````
 
 **Доказ**
 
@@ -923,11 +1537,26 @@
 ---
 
 <!-- fc id:T-33-040 sha:99171f13 src:manual/33-peryferiya-kod.md:99 klas:F -->
-### T-33-040 · kod-ryadok · рядок 99
+### T-33-040 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .freq_hz = 5000,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+```c
+ledc_timer_config_t tcfg = {
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .duty_resolution = LEDC_TIMER_13_BIT,
+    .timer_num = LEDC_TIMER_0,
+    .freq_hz = 5000,
+};
+ledc_timer_config(&tcfg);
+````
 
 **Доказ**
 
@@ -936,11 +1565,26 @@
 ---
 
 <!-- fc id:T-33-041 sha:d8b6e80c src:manual/33-peryferiya-kod.md:101 klas:A -->
-### T-33-041 · kod-ryadok · рядок 101
+### T-33-041 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ledc_timer_config(&tcfg);
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+```c
+ledc_timer_config_t tcfg = {
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .duty_resolution = LEDC_TIMER_13_BIT,
+    .timer_num = LEDC_TIMER_0,
+    .freq_hz = 5000,
+};
+ledc_timer_config(&tcfg);
+````
 
 **Доказ**
 
@@ -965,11 +1609,27 @@
 ---
 
 <!-- fc id:T-33-042 sha:80dd0543 src:manual/33-peryferiya-kod.md:104 klas:F -->
-### T-33-042 · kod-ryadok · рядок 104
+### T-33-042 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .gpio_num = GPIO_NUM_2,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+ledc_channel_config_t ccfg = {
+    .gpio_num = GPIO_NUM_2,
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .channel = LEDC_CHANNEL_0,
+    .timer_sel = LEDC_TIMER_0,
+    .duty = 4096,
+};
+ledc_channel_config(&ccfg);
+```
+````
 
 **Доказ**
 
@@ -978,11 +1638,26 @@
 ---
 
 <!-- fc id:T-33-043 sha:105bb277 src:manual/33-peryferiya-kod.md:105 klas:F -->
-### T-33-043 · kod-ryadok · рядок 105
+### T-33-043 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .speed_mode = LEDC_LOW_SPEED_MODE,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+```c
+ledc_timer_config_t tcfg = {
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .duty_resolution = LEDC_TIMER_13_BIT,
+    .timer_num = LEDC_TIMER_0,
+    .freq_hz = 5000,
+};
+ledc_timer_config(&tcfg);
+````
 
 **Доказ**
 
@@ -991,11 +1666,27 @@
 ---
 
 <!-- fc id:T-33-044 sha:e4df9707 src:manual/33-peryferiya-kod.md:106 klas:F -->
-### T-33-044 · kod-ryadok · рядок 106
+### T-33-044 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .channel = LEDC_CHANNEL_0,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+ledc_channel_config_t ccfg = {
+    .gpio_num = GPIO_NUM_2,
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .channel = LEDC_CHANNEL_0,
+    .timer_sel = LEDC_TIMER_0,
+    .duty = 4096,
+};
+ledc_channel_config(&ccfg);
+```
+````
 
 **Доказ**
 
@@ -1004,11 +1695,27 @@
 ---
 
 <!-- fc id:T-33-045 sha:b9fc8ae0 src:manual/33-peryferiya-kod.md:107 klas:A -->
-### T-33-045 · kod-ryadok · рядок 107
+### T-33-045 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .timer_sel = LEDC_TIMER_0,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+ledc_channel_config_t ccfg = {
+    .gpio_num = GPIO_NUM_2,
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .channel = LEDC_CHANNEL_0,
+    .timer_sel = LEDC_TIMER_0,
+    .duty = 4096,
+};
+ledc_channel_config(&ccfg);
+```
+````
 
 **Доказ**
 
@@ -1041,11 +1748,27 @@
 ---
 
 <!-- fc id:T-33-046 sha:d3cd0e78 src:manual/33-peryferiya-kod.md:108 klas:F -->
-### T-33-046 · kod-ryadok · рядок 108
+### T-33-046 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .duty = 4096,
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+ledc_channel_config_t ccfg = {
+    .gpio_num = GPIO_NUM_2,
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .channel = LEDC_CHANNEL_0,
+    .timer_sel = LEDC_TIMER_0,
+    .duty = 4096,
+};
+ledc_channel_config(&ccfg);
+```
+````
 
 **Доказ**
 
@@ -1054,11 +1777,27 @@
 ---
 
 <!-- fc id:T-33-047 sha:6dde17f4 src:manual/33-peryferiya-kod.md:110 klas:A -->
-### T-33-047 · kod-ryadok · рядок 110
+### T-33-047 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ledc_channel_config(&ccfg);
+
+**Контекст**
+
+````
+## LEDC: PWM для світлодіодів і серво
+
+ledc_channel_config_t ccfg = {
+    .gpio_num = GPIO_NUM_2,
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .channel = LEDC_CHANNEL_0,
+    .timer_sel = LEDC_TIMER_0,
+    .duty = 4096,
+};
+ledc_channel_config(&ccfg);
+```
+````
 
 **Доказ**
 
@@ -1083,11 +1822,26 @@
 ---
 
 <!-- fc id:T-33-048 sha:6a437dd9 src:manual/33-peryferiya-kod.md:113 klas:A -->
-### T-33-048 · proza · рядок 113
+### T-33-048 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Частота і розрядність пов'язані: що вища частота, то менше розрядів доступно. 5 кГц із 13 розрядами — робоче поєднання для світлодіодів.
+
+**Дослівно з книги**
+
+```
+Частота і розрядність пов'язані: що вища частота, то менше розрядів
+```
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+Частота і розрядність пов'язані: що вища частота, то менше розрядів
+доступно. 5 кГц із 13 розрядами — робоче поєднання для світлодіодів.
+```
 
 **Доказ**
 
@@ -1107,11 +1861,28 @@
 ---
 
 <!-- fc id:T-33-049 sha:1c6e3022 src:manual/33-peryferiya-kod.md:117 klas:A -->
-### T-33-049 · proza · рядок 117
+### T-33-049 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення.
+
+**Дослівно з книги**
+
+```
+Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення. Око
+```
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+::: uvaha
+Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення. Око
+сприймає яскравість логарифмічно: перехід від 10 % до 20 % видно, від
+80 % до 90 % — майже ні.
+```
 
 **Доказ**
 
@@ -1119,18 +1890,35 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
 - **Дослівно з джерела:**
   > The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Yaskravlist svitlodioda ne liniyna - pidtverdzheno teoriyu kvantu spryymanyya syatlova
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-050 sha:462e36b5 src:manual/33-peryferiya-kod.md:117 klas:D -->
-### T-33-050 · proza · рядок 117
+### T-33-050 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Око сприймає яскравість логарифмічно: перехід від 10 % до 20 % видно, від 80 % до 90 % — майже ні.
+
+**Дослівно з книги**
+
+```
+Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення. Око
+```
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+::: uvaha
+Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення. Око
+сприймає яскравість логарифмічно: перехід від 10 % до 20 % видно, від
+80 % до 90 % — майже ні.
+```
 
 **Доказ**
 
@@ -1158,11 +1946,21 @@
 ---
 
 <!-- fc id:T-33-051 sha:e20d58db src:manual/33-peryferiya-kod.md:121 klas:A -->
-### T-33-051 · proza · рядок 121
+### T-33-051 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Плавне згасання, зроблене лінійно, виглядає як різкий стрибок наприкінці.
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+Плавне згасання, зроблене лінійно, виглядає як різкий стрибок наприкінці.
+Лікується таблицею або квадратичною залежністю.
+:::
+```
 
 **Доказ**
 
@@ -1170,18 +1968,28 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
 - **Дослівно з джерела:**
   > In order to make human feel the LED is dimming or lighting linearly, the change in duty cycle should be non-linear
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Plyavne zgasannya liniarne vyglyadaye yak stribhok - pidtverdzheno gamma korektsiyi
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-052 sha:e3516a73 src:manual/33-peryferiya-kod.md:121 klas:E -->
-### T-33-052 · proza · рядок 121
+### T-33-052 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Лікується таблицею або квадратичною залежністю.
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+Плавне згасання, зроблене лінійно, виглядає як різкий стрибок наприкінці.
+Лікується таблицею або квадратичною залежністю.
+:::
+```
 
 **Доказ**
 
@@ -1190,11 +1998,29 @@
 ---
 
 <!-- fc id:T-33-053 sha:bdfa3b50 src:manual/33-peryferiya-kod.md:125 klas:C -->
-### T-33-053 · proza · рядок 125
+### T-33-053 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Серво** керується імпульсами 50 Гц: приблизно 1 мс — один край, 2 мс — інший, 1.5 мс — середина.
+
+**Дослівно з книги**
+
+```
+**Серво** керується імпульсами 50 Гц: приблизно 1 мс — один край,
+```
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+**Серво** керується імпульсами 50 Гц: приблизно 1 мс — один край,
+2 мс — інший, 1.5 мс — середина. Період при 50 Гц — 20 мс, тому значення
+`duty` рахується як `2^розрядність × тривалість / 20 мс`. Для
+16-розрядної роздільності це приблизно 3277 (1 мс), 4915 (1.5 мс) і
+6554 (2 мс).
+```
 
 **Доказ**
 
@@ -1207,11 +2033,29 @@
 ---
 
 <!-- fc id:T-33-054 sha:1a68cfd1 src:manual/33-peryferiya-kod.md:125 klas:D -->
-### T-33-054 · proza · рядок 125
+### T-33-054 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Період при 50 Гц — 20 мс, тому значення `duty` рахується як `2^розрядність × тривалість / 20 мс`.
+
+**Дослівно з книги**
+
+```
+**Серво** керується імпульсами 50 Гц: приблизно 1 мс — один край,
+```
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+**Серво** керується імпульсами 50 Гц: приблизно 1 мс — один край,
+2 мс — інший, 1.5 мс — середина. Період при 50 Гц — 20 мс, тому значення
+`duty` рахується як `2^розрядність × тривалість / 20 мс`. Для
+16-розрядної роздільності це приблизно 3277 (1 мс), 4915 (1.5 мс) і
+6554 (2 мс).
+```
 
 **Доказ**
 
@@ -1224,11 +2068,29 @@
 ---
 
 <!-- fc id:T-33-055 sha:9b0e16fa src:manual/33-peryferiya-kod.md:125 klas:A -->
-### T-33-055 · proza · рядок 125
+### T-33-055 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для 16-розрядної роздільності це приблизно 3277 (1 мс), 4915 (1.5 мс) і 6554 (2 мс).
+
+**Дослівно з книги**
+
+```
+**Серво** керується імпульсами 50 Гц: приблизно 1 мс — один край,
+```
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+**Серво** керується імпульсами 50 Гц: приблизно 1 мс — один край,
+2 мс — інший, 1.5 мс — середина. Період при 50 Гц — 20 мс, тому значення
+`duty` рахується як `2^розрядність × тривалість / 20 мс`. Для
+16-розрядної роздільності це приблизно 3277 (1 мс), 4915 (1.5 мс) і
+6554 (2 мс).
+```
 
 **Доказ**
 
@@ -1246,11 +2108,29 @@
 ---
 
 <!-- fc id:T-33-056 sha:3aa25745 src:manual/33-peryferiya-kod.md:132 klas:F -->
-### T-33-056 · proza · рядок 132
+### T-33-056 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Серво живиться **окремо**, не від піна 3V3 плати.
+
+**Дослівно з книги**
+
+```
+Серво живиться **окремо**, не від піна 3V3 плати. Навіть невелике
+```
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+::: zhyvlennya
+Серво живиться **окремо**, не від піна 3V3 плати. Навіть невелике
+серво в момент рушання бере сотні міліампер, і бортовий стабілізатор
+цього не витримує: пристрій перезавантажується по brownout саме тоді,
+коли механізм починає рух (розділ 06).
+```
 
 **Доказ**
 
@@ -1259,11 +2139,29 @@
 ---
 
 <!-- fc id:T-33-057 sha:2d20f028 src:manual/33-peryferiya-kod.md:132 klas:B -->
-### T-33-057 · proza · рядок 132
+### T-33-057 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Навіть невелике серво в момент рушання бере сотні міліампер, і бортовий стабілізатор цього не витримує: пристрій перезавантажується по brownout саме тоді, коли механізм починає рух (розділ 06).
+
+**Дослівно з книги**
+
+```
+Серво живиться **окремо**, не від піна 3V3 плати. Навіть невелике
+```
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+::: zhyvlennya
+Серво живиться **окремо**, не від піна 3V3 плати. Навіть невелике
+серво в момент рушання бере сотні міліампер, і бортовий стабілізатор
+цього не витримує: пристрій перезавантажується по brownout саме тоді,
+коли механізм починає рух (розділ 06).
+```
 
 **Доказ**
 
@@ -1284,11 +2182,20 @@
 ---
 
 <!-- fc id:T-33-058 sha:b1601e7b src:manual/33-peryferiya-kod.md:137 klas:A -->
-### T-33-058 · proza · рядок 137
+### T-33-058 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Спільна земля обов'язкова (розділ 48).
+
+**Контекст**
+
+```
+## LEDC: PWM для світлодіодів і серво
+
+Спільна земля обов'язкова (розділ 48).
+:::
+```
 
 **Доказ**
 
@@ -1296,18 +2203,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
 - **Дослівно з джерела:**
   > motor bridges need complementary outputs and dead time
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Spilna zemlya obovyazkova dlya mostykiv - pidtverdzheno v MCPWMdokumentaciyi
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-059 sha:681bc71a src:manual/33-peryferiya-kod.md:142 klas:A -->
-### T-33-059 · proza · рядок 142
+### T-33-059 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[classic]] [[S3]] MCPWM зроблений для силової електроніки й уміє те, чого LEDC не вміє:
+
+**Дослівно з книги**
+
+```
+[[classic]] [[S3]] MCPWM зроблений для силової електроніки й уміє те, чого
+```
+
+**Контекст**
+
+```
+## MCPWM: коли LEDC замало
+
+[[classic]] [[S3]] MCPWM зроблений для силової електроніки й уміє те, чого
+LEDC не вміє:
+```
 
 **Доказ**
 
@@ -1315,18 +2237,36 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
 - **Дослівно з джерела:**
   > MCPWM turns a counter into accurately timed output edges. It is a good fit when an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead time, inverters need synchronized phases
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** MCPWM має функції силової електроніки, яких немає в LEDC
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-060 sha:4b935177 src:manual/33-peryferiya-kod.md:145 klas:A -->
-### T-33-060 · proza · рядок 145
+### T-33-060 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > - **мертвий час** між верхнім і нижнім плечем моста — без нього обидва ключі на мить відкриті одночасно, і це наскрізний струм; - **апаратне аварійне вимкнення** за зовнішнім сигналом — швидше за будь-яку реакцію коду; - **синхронізація каналів**.
+
+**Дослівно з книги**
+
+```
+- **мертвий час** між верхнім і нижнім плечем моста — без нього обидва
+```
+
+**Контекст**
+
+```
+## MCPWM: коли LEDC замало
+
+- **мертвий час** між верхнім і нижнім плечем моста — без нього обидва
+  ключі на мить відкриті одночасно, і це наскрізний струм;
+- **апаратне аварійне вимкнення** за зовнішнім сигналом — швидше за
+  будь-яку реакцію коду;
+- **синхронізація каналів**.
+```
 
 **Доказ**
 
@@ -1334,18 +2274,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/mcpwm_gen.rst
 - **Дослівно з джерела:**
   > Dead time delays an output edge, leaving a short interval in which both switches in a half bridge are off
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Mertvyy chas zapobihaye naskriznomy strumevi - pidtverdzheno dokumentaciyeyu dead time
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-061 sha:db2ade05 src:manual/33-peryferiya-kod.md:151 klas:E -->
-### T-33-061 · proza · рядок 151
+### T-33-061 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для керування двигуном через мостовий драйвер це не зручність, а захист силового каскаду (розділ 48).
+
+**Дослівно з книги**
+
+```
+Для керування двигуном через мостовий драйвер це не зручність, а захист
+```
+
+**Контекст**
+
+```
+## MCPWM: коли LEDC замало
+
+Для керування двигуном через мостовий драйвер це не зручність, а захист
+силового каскаду (розділ 48).
+```
 
 **Доказ**
 
@@ -1354,11 +2309,26 @@
 ---
 
 <!-- fc id:T-33-062 sha:9bc36e29 src:manual/33-peryferiya-kod.md:156 klas:A -->
-### T-33-062 · proza · рядок 156
+### T-33-062 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > RMT задумувався для інфрачервоних пультів, а виявився універсальним формувачем імпульсних послідовностей із наносекундною точністю.
+
+**Дослівно з книги**
+
+```
+RMT задумувався для інфрачервоних пультів, а виявився універсальним
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+RMT задумувався для інфрачервоних пультів, а виявився універсальним
+формувачем імпульсних послідовностей із наносекундною точністю.
+```
 
 **Доказ**
 
@@ -1366,18 +2336,35 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
 - **Дослівно з джерела:**
   > The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared transceiver. However, due to the flexibility of its data format, RMT can be extended to a versatile and general-purpose transceiver
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** RMT розроблений для ІЧ пультів, але може бути універсальним генератором послідовностей
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-063 sha:2cf260ec src:manual/33-peryferiya-kod.md:159 klas:F -->
-### T-33-063 · proza · рядок 159
+### T-33-063 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Головне застосування — **адресні світлодіоди WS2812**.
+
+**Дослівно з книги**
+
+```
+Головне застосування — **адресні світлодіоди WS2812**. Їхній протокол
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+Головне застосування — **адресні світлодіоди WS2812**. Їхній протокол
+кодує біти тривалістю імпульсів у сотні наносекунд. Робити це в коді
+означає заборонити переривання на весь час передачі — і все одно
+отримати збої, коли втрутиться радіо.
+```
 
 **Доказ**
 
@@ -1386,11 +2373,28 @@
 ---
 
 <!-- fc id:T-33-064 sha:f25f29ea src:manual/33-peryferiya-kod.md:159 klas:E -->
-### T-33-064 · proza · рядок 159
+### T-33-064 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Їхній протокол кодує біти тривалістю імпульсів у сотні наносекунд.
+
+**Дослівно з книги**
+
+```
+Головне застосування — **адресні світлодіоди WS2812**. Їхній протокол
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+Головне застосування — **адресні світлодіоди WS2812**. Їхній протокол
+кодує біти тривалістю імпульсів у сотні наносекунд. Робити це в коді
+означає заборонити переривання на весь час передачі — і все одно
+отримати збої, коли втрутиться радіо.
+```
 
 **Доказ**
 
@@ -1399,11 +2403,28 @@
 ---
 
 <!-- fc id:T-33-065 sha:1f2196d8 src:manual/33-peryferiya-kod.md:159 klas:E -->
-### T-33-065 · proza · рядок 159
+### T-33-065 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Робити це в коді означає заборонити переривання на весь час передачі — і все одно отримати збої, коли втрутиться радіо.
+
+**Дослівно з книги**
+
+```
+Головне застосування — **адресні світлодіоди WS2812**. Їхній протокол
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+Головне застосування — **адресні світлодіоди WS2812**. Їхній протокол
+кодує біти тривалістю імпульсів у сотні наносекунд. Робити це в коді
+означає заборонити переривання на весь час передачі — і все одно
+отримати збої, коли втрутиться радіо.
+```
 
 **Доказ**
 
@@ -1412,11 +2433,19 @@
 ---
 
 <!-- fc id:T-33-066 sha:3f89b4eb src:manual/33-peryferiya-kod.md:164 klas:F -->
-### T-33-066 · proza · рядок 164
+### T-33-066 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > RMT формує послідовність апаратно: процесор віддає дані й вільний.
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+RMT формує послідовність апаратно: процесор віддає дані й вільний.
+```
 
 **Доказ**
 
@@ -1425,9 +2454,9 @@
 ---
 
 <!-- fc id:T-33-067 sha:aeef17bd src:manual/33-peryferiya-kod.md:166 klas:K -->
-### T-33-067 · kod · рядок 166
+### T-33-067 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > led_strip_handle_t strip;
@@ -1438,6 +2467,24 @@
 > led_strip_set_pixel(strip, 0, 255, 0, 0);
 > led_strip_refresh(strip);
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## RMT: точні імпульси апаратно
+
+```c
+led_strip_handle_t strip;
+led_strip_config_t scfg = { .strip_gpio_num = 18, .max_leds = 30 };
+led_strip_rmt_config_t rcfg = { .resolution_hz = 10 * 1000 * 1000 };
+led_strip_new_rmt_device(&scfg, &rcfg, &strip);
+````
 
 **Доказ**
 
@@ -1462,11 +2509,23 @@
 ---
 
 <!-- fc id:T-33-068 sha:0aeeb7f3 src:manual/33-peryferiya-kod.md:170 klas:A -->
-### T-33-068 · kod-ryadok · рядок 170
+### T-33-068 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > led_strip_new_rmt_device(&scfg, &rcfg, &strip);
+
+**Контекст**
+
+````
+## RMT: точні імпульси апаратно
+
+```c
+led_strip_handle_t strip;
+led_strip_config_t scfg = { .strip_gpio_num = 18, .max_leds = 30 };
+led_strip_rmt_config_t rcfg = { .resolution_hz = 10 * 1000 * 1000 };
+led_strip_new_rmt_device(&scfg, &rcfg, &strip);
+````
 
 **Доказ**
 
@@ -1491,11 +2550,21 @@
 ---
 
 <!-- fc id:T-33-069 sha:3ceebab0 src:manual/33-peryferiya-kod.md:172 klas:A -->
-### T-33-069 · kod-ryadok · рядок 172
+### T-33-069 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > led_strip_set_pixel(strip, 0, 255, 0, 0);
+
+**Контекст**
+
+````
+## RMT: точні імпульси апаратно
+
+led_strip_set_pixel(strip, 0, 255, 0, 0);
+led_strip_refresh(strip);
+```
+````
 
 **Доказ**
 
@@ -1520,11 +2589,21 @@
 ---
 
 <!-- fc id:T-33-070 sha:b2a1e46a src:manual/33-peryferiya-kod.md:173 klas:A -->
-### T-33-070 · kod-ryadok · рядок 173
+### T-33-070 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > led_strip_refresh(strip);
+
+**Контекст**
+
+````
+## RMT: точні імпульси апаратно
+
+led_strip_set_pixel(strip, 0, 255, 0, 0);
+led_strip_refresh(strip);
+```
+````
 
 **Доказ**
 
@@ -1549,11 +2628,29 @@
 ---
 
 <!-- fc id:T-33-071 sha:0a072e63 src:manual/33-peryferiya-kod.md:176 klas:E -->
-### T-33-071 · proza · рядок 176
+### T-33-071 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Номер піна в прикладі довільний — беріть свій за карткою [К9](#k-pinouty).
+
+**Дослівно з книги**
+
+```
+Номер піна в прикладі довільний — беріть свій за карткою
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+Номер піна в прикладі довільний — беріть свій за карткою
+[К9](#k-pinouty). На платах розробки з бортовим адресним світлодіодом він
+у кожної свій: [[C3]] на C3-DevKitM це `GPIO8`, [[S3]] на S3-DevKitC —
+`GPIO48`. [[classic]] На classic `GPIO8` брати не можна взагалі: там
+флеш (розділ 07).
+```
 
 **Доказ**
 
@@ -1562,11 +2659,29 @@
 ---
 
 <!-- fc id:T-33-072 sha:3eebc84f src:manual/33-peryferiya-kod.md:176 klas:A -->
-### T-33-072 · proza · рядок 176
+### T-33-072 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > На платах розробки з бортовим адресним світлодіодом він у кожної свій: [[C3]] на C3-DevKitM це `GPIO8`, [[S3]] на S3-DevKitC — `GPIO48`.
+
+**Дослівно з книги**
+
+```
+Номер піна в прикладі довільний — беріть свій за карткою
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+Номер піна в прикладі довільний — беріть свій за карткою
+[К9](#k-pinouty). На платах розробки з бортовим адресним світлодіодом він
+у кожної свій: [[C3]] на C3-DevKitM це `GPIO8`, [[S3]] на S3-DevKitC —
+`GPIO48`. [[classic]] На classic `GPIO8` брати не можна взагалі: там
+флеш (розділ 07).
+```
 
 **Доказ**
 
@@ -1583,11 +2698,29 @@
 ---
 
 <!-- fc id:T-33-073 sha:c630370e src:manual/33-peryferiya-kod.md:176 klas:A -->
-### T-33-073 · proza · рядок 176
+### T-33-073 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[classic]] На classic `GPIO8` брати не можна взагалі: там флеш (розділ 07).
+
+**Дослівно з книги**
+
+```
+Номер піна в прикладі довільний — беріть свій за карткою
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+Номер піна в прикладі довільний — беріть свій за карткою
+[К9](#k-pinouty). На платах розробки з бортовим адресним світлодіодом він
+у кожної свій: [[C3]] на C3-DevKitM це `GPIO8`, [[S3]] на S3-DevKitC —
+`GPIO48`. [[classic]] На classic `GPIO8` брати не можна взагалі: там
+флеш (розділ 07).
+```
 
 **Доказ**
 
@@ -1622,11 +2755,26 @@
 ---
 
 <!-- fc id:T-33-074 sha:be56e056 src:manual/33-peryferiya-kod.md:182 klas:A -->
-### T-33-074 · proza · рядок 182
+### T-33-074 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > RMT уміє й приймати — вимірювати тривалість вхідних імпульсів.
+
+**Дослівно з книги**
+
+```
+RMT уміє й приймати — вимірювати тривалість вхідних імпульсів. Це
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+RMT уміє й приймати — вимірювати тривалість вхідних імпульсів. Це
+правильний спосіб читати ІЧ-пульти й датчики з імпульсним виходом.
+```
 
 **Доказ**
 
@@ -1634,18 +2782,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
 - **Дослівно з джерела:**
   > The RMT receiver can sample incoming signals into RMT data format, and store the data in memory
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** RMT може приймати і вимірювати тривалість сигналів
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-075 sha:ee324ede src:manual/33-peryferiya-kod.md:182 klas:A -->
-### T-33-075 · proza · рядок 182
+### T-33-075 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Це правильний спосіб читати ІЧ-пульти й датчики з імпульсним виходом.
+
+**Дослівно з книги**
+
+```
+RMT уміє й приймати — вимірювати тривалість вхідних імпульсів. Це
+```
+
+**Контекст**
+
+```
+## RMT: точні імпульси апаратно
+
+RMT уміє й приймати — вимірювати тривалість вхідних імпульсів. Це
+правильний спосіб читати ІЧ-пульти й датчики з імпульсним виходом.
+```
 
 **Доказ**
 
@@ -1653,18 +2816,34 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > PCNT (Pulse Counter) module is designed to count the number of rising and/or falling edges of input signals
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'Pravylnyy sposib chytaty IR-pulty - pidtverdzheno PCNT aparatnym lichylnykom'
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-076 sha:48ff1940 src:manual/33-peryferiya-kod.md:187 klas:E -->
-### T-33-076 · proza · рядок 187
+### T-33-076 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Апаратний лічильник імпульсів.
+
+**Дослівно з книги**
+
+```
+Апаратний лічильник імпульсів. Енкодер, витратомір, лічильник обертів —
+```
+
+**Контекст**
+
+```
+## PCNT: рахувати без переривань
+
+Апаратний лічильник імпульсів. Енкодер, витратомір, лічильник обертів —
+усе це не потребує переривання на кожен імпульс: процесор читає
+накопичене, коли йому зручно.
+```
 
 **Доказ**
 
@@ -1673,11 +2852,27 @@
 ---
 
 <!-- fc id:T-33-077 sha:cb13812b src:manual/33-peryferiya-kod.md:187 klas:A -->
-### T-33-077 · proza · рядок 187
+### T-33-077 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Енкодер, витратомір, лічильник обертів — усе це не потребує переривання на кожен імпульс: процесор читає накопичене, коли йому зручно.
+
+**Дослівно з книги**
+
+```
+Апаратний лічильник імпульсів. Енкодер, витратомір, лічильник обертів —
+```
+
+**Контекст**
+
+```
+## PCNT: рахувати без переривань
+
+Апаратний лічильник імпульсів. Енкодер, витратомір, лічильник обертів —
+усе це не потребує переривання на кожен імпульс: процесор читає
+накопичене, коли йому зручно.
+```
 
 **Доказ**
 
@@ -1685,18 +2880,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > Decode quadrature signals into speed and direction
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'Enkoder, vytratomer - bez pereryvannya na kozhnyy impuls - pidtverdzheno'
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-078 sha:089f6d9c src:manual/33-peryferiya-kod.md:191 klas:D -->
-### T-33-078 · proza · рядок 191
+### T-33-078 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Перевага критична на високих частотах: десять тисяч імпульсів на секунду через переривання з'їдять помітну частину ядра; PCNT не з'їсть нічого.
+
+**Дослівно з книги**
+
+```
+Перевага критична на високих частотах: десять тисяч імпульсів на секунду
+```
+
+**Контекст**
+
+```
+## PCNT: рахувати без переривань
+
+Перевага критична на високих частотах: десять тисяч імпульсів на секунду
+через переривання з'їдять помітну частину ядра; PCNT не з'їсть нічого.
+```
 
 **Доказ**
 
@@ -1721,11 +2931,19 @@
 ---
 
 <!-- fc id:T-33-079 sha:a75f68d2 src:manual/33-peryferiya-kod.md:194 klas:A -->
-### T-33-079 · proza · рядок 194
+### T-33-079 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > PCNT уміє й апаратний фільтр коротких сплесків — антидребезг без коду.
+
+**Контекст**
+
+```
+## PCNT: рахувати без переривань
+
+PCNT уміє й апаратний фільтр коротких сплесків — антидребезг без коду.
+```
 
 **Доказ**
 
@@ -1733,16 +2951,16 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > PCNT unit is equipped with a separate glitch filter, which is helpful to remove noise from the signal
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'Aparatnyy filtr korotkykh spleskviv - antydrebezh bez kodu - pidtverdzheno'
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-080 sha:81a8f41e src:manual/33-peryferiya-kod.md:198 klas:K -->
-### T-33-080 · kod · рядок 198
+### T-33-080 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > adc_oneshot_unit_handle_t adc;
@@ -1758,6 +2976,23 @@
 > int raw;
 > adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## ADC
+
+```c
+adc_oneshot_unit_handle_t adc;
+adc_oneshot_unit_init_cfg_t ucfg = { .unit_id = ADC_UNIT_1 };
+adc_oneshot_new_unit(&ucfg, &adc);
+````
 
 **Доказ**
 
@@ -1782,11 +3017,22 @@
 ---
 
 <!-- fc id:T-33-081 sha:9778c836 src:manual/33-peryferiya-kod.md:201 klas:A -->
-### T-33-081 · kod-ryadok · рядок 201
+### T-33-081 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > adc_oneshot_new_unit(&ucfg, &adc);
+
+**Контекст**
+
+````
+## ADC
+
+```c
+adc_oneshot_unit_handle_t adc;
+adc_oneshot_unit_init_cfg_t ucfg = { .unit_id = ADC_UNIT_1 };
+adc_oneshot_new_unit(&ucfg, &adc);
+````
 
 **Доказ**
 
@@ -1811,11 +3057,23 @@
 ---
 
 <!-- fc id:T-33-082 sha:1c285707 src:manual/33-peryferiya-kod.md:204 klas:F -->
-### T-33-082 · kod-ryadok · рядок 204
+### T-33-082 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .bitwidth = ADC_BITWIDTH_DEFAULT,
+
+**Контекст**
+
+```
+## ADC
+
+adc_oneshot_chan_cfg_t ccfg = {
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+    .atten = ADC_ATTEN_DB_12,
+};
+adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
+```
 
 **Доказ**
 
@@ -1824,11 +3082,23 @@
 ---
 
 <!-- fc id:T-33-083 sha:f277858a src:manual/33-peryferiya-kod.md:205 klas:F -->
-### T-33-083 · kod-ryadok · рядок 205
+### T-33-083 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .atten = ADC_ATTEN_DB_12,
+
+**Контекст**
+
+```
+## ADC
+
+adc_oneshot_chan_cfg_t ccfg = {
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+    .atten = ADC_ATTEN_DB_12,
+};
+adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
+```
 
 **Доказ**
 
@@ -1837,11 +3107,23 @@
 ---
 
 <!-- fc id:T-33-084 sha:ba3dde5d src:manual/33-peryferiya-kod.md:207 klas:A -->
-### T-33-084 · kod-ryadok · рядок 207
+### T-33-084 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
+
+**Контекст**
+
+```
+## ADC
+
+adc_oneshot_chan_cfg_t ccfg = {
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+    .atten = ADC_ATTEN_DB_12,
+};
+adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
+```
 
 **Доказ**
 
@@ -1866,11 +3148,21 @@
 ---
 
 <!-- fc id:T-33-085 sha:eb26138c src:manual/33-peryferiya-kod.md:210 klas:A -->
-### T-33-085 · kod-ryadok · рядок 210
+### T-33-085 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
+
+**Контекст**
+
+````
+## ADC
+
+int raw;
+adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
+```
+````
 
 **Доказ**
 
@@ -1895,11 +3187,23 @@
 ---
 
 <!-- fc id:T-33-086 sha:6dd00f50 src:manual/33-peryferiya-kod.md:214 klas:A -->
-### T-33-086 · proza · рядок 214
+### T-33-086 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[classic]] [[S2]] [[S3]] **ADC2 не працює при увімкненому Wi-Fi** (розділ 07).
+
+**Контекст**
+
+```
+## ADC
+
+::: uvaha
+[[classic]] [[S2]] [[S3]] **ADC2 не працює при увімкненому Wi-Fi** (розділ 07).
+Симптом: датчик читається правильно, доки не викликано `esp_wifi_start`.
+Вимірювання переносяться на ADC1.
+:::
+```
 
 **Доказ**
 
@@ -1915,11 +3219,23 @@
 ---
 
 <!-- fc id:T-33-087 sha:f41a8143 src:manual/33-peryferiya-kod.md:214 klas:A -->
-### T-33-087 · proza · рядок 214
+### T-33-087 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Симптом: датчик читається правильно, доки не викликано `esp_wifi_start`.
+
+**Контекст**
+
+```
+## ADC
+
+::: uvaha
+[[classic]] [[S2]] [[S3]] **ADC2 не працює при увімкненому Wi-Fi** (розділ 07).
+Симптом: датчик читається правильно, доки не викликано `esp_wifi_start`.
+Вимірювання переносяться на ADC1.
+:::
+```
 
 **Доказ**
 
@@ -1944,11 +3260,23 @@
 ---
 
 <!-- fc id:T-33-088 sha:20d78c08 src:manual/33-peryferiya-kod.md:214 klas:F -->
-### T-33-088 · proza · рядок 214
+### T-33-088 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Вимірювання переносяться на ADC1.
+
+**Контекст**
+
+```
+## ADC
+
+::: uvaha
+[[classic]] [[S2]] [[S3]] **ADC2 не працює при увімкненому Wi-Fi** (розділ 07).
+Симптом: датчик читається правильно, доки не викликано `esp_wifi_start`.
+Вимірювання переносяться на ADC1.
+:::
+```
 
 **Доказ**
 
@@ -1957,11 +3285,28 @@
 ---
 
 <!-- fc id:T-33-089 sha:c19c555e src:manual/33-peryferiya-kod.md:219 klas:E -->
-### T-33-089 · proza · рядок 219
+### T-33-089 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Затухання (attenuation)** задає діапазон вхідної напруги.
+
+**Дослівно з книги**
+
+```
+**Затухання (attenuation)** задає діапазон вхідної напруги. Без нього
+```
+
+**Контекст**
+
+```
+## ADC
+
+**Затухання (attenuation)** задає діапазон вхідної напруги. Без нього
+ADC міряє лише невелику частину діапазону; з максимальним затуханням
+доступний майже весь до 3.3 В. Пам'ятайте: вхід не толерантний до
+перевищення — понад живлення подавати не можна.
+```
 
 **Доказ**
 
@@ -1970,11 +3315,28 @@
 ---
 
 <!-- fc id:T-33-090 sha:b512ca80 src:manual/33-peryferiya-kod.md:219 klas:A -->
-### T-33-090 · proza · рядок 219
+### T-33-090 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Без нього ADC міряє лише невелику частину діапазону; з максимальним затуханням доступний майже весь до 3.3 В.
+
+**Дослівно з книги**
+
+```
+**Затухання (attenuation)** задає діапазон вхідної напруги. Без нього
+```
+
+**Контекст**
+
+```
+## ADC
+
+**Затухання (attenuation)** задає діапазон вхідної напруги. Без нього
+ADC міряє лише невелику частину діапазону; з максимальним затуханням
+доступний майже весь до 3.3 В. Пам'ятайте: вхід не толерантний до
+перевищення — понад живлення подавати не можна.
+```
 
 **Доказ**
 
@@ -2009,11 +3371,28 @@
 ---
 
 <!-- fc id:T-33-091 sha:34c873e7 src:manual/33-peryferiya-kod.md:219 klas:A -->
-### T-33-091 · proza · рядок 219
+### T-33-091 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Пам'ятайте: вхід не толерантний до перевищення — понад живлення подавати не можна.
+
+**Дослівно з книги**
+
+```
+**Затухання (attenuation)** задає діапазон вхідної напруги. Без нього
+```
+
+**Контекст**
+
+```
+## ADC
+
+**Затухання (attenuation)** задає діапазон вхідної напруги. Без нього
+ADC міряє лише невелику частину діапазону; з максимальним затуханням
+доступний майже весь до 3.3 В. Пам'ятайте: вхід не толерантний до
+перевищення — понад живлення подавати не можна.
+```
 
 **Доказ**
 
@@ -2021,18 +3400,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
 - **Дослівно з джерела:**
   > By design, Vref is set to 1100 mV
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Vkhid ne tolerannyy do perevishennya - pidtverdzheno referenciynym napryazhennyam
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-092 sha:79580945 src:manual/33-peryferiya-kod.md:224 klas:F -->
-### T-33-092 · proza · рядок 224
+### T-33-092 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Точність.** ADC ESP32 нелінійний, і сирі відліки не переводяться в вольти простим множенням.
+
+**Дослівно з книги**
+
+```
+**Точність.** ADC ESP32 нелінійний, і сирі відліки не переводяться в
+```
+
+**Контекст**
+
+```
+## ADC
+
+**Точність.** ADC ESP32 нелінійний, і сирі відліки не переводяться в
+вольти простим множенням. Штатний шлях — калібрування:
+```
 
 **Доказ**
 
@@ -2041,11 +3435,26 @@
 ---
 
 <!-- fc id:T-33-093 sha:faa9bead src:manual/33-peryferiya-kod.md:224 klas:E -->
-### T-33-093 · proza · рядок 224
+### T-33-093 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Штатний шлях — калібрування:
+
+**Дослівно з книги**
+
+```
+вольти простим множенням. Штатний шлях — калібрування:
+```
+
+**Контекст**
+
+```
+## ADC
+
+**Точність.** ADC ESP32 нелінійний, і сирі відліки не переводяться в
+вольти простим множенням. Штатний шлях — калібрування:
+```
 
 **Доказ**
 
@@ -2054,9 +3463,9 @@
 ---
 
 <!-- fc id:T-33-094 sha:0bfeb273 src:manual/33-peryferiya-kod.md:227 klas:K -->
-### T-33-094 · kod · рядок 227
+### T-33-094 · kod · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > adc_cali_handle_t cali;
@@ -2070,6 +3479,27 @@
 > int mv;
 > adc_cali_raw_to_voltage(cali, raw, &mv);
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## ADC
+
+```c
+adc_cali_handle_t cali;
+adc_cali_curve_fitting_config_t cfg = {
+    .unit_id = ADC_UNIT_1,
+    .atten = ADC_ATTEN_DB_12,
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+};
+adc_cali_create_scheme_curve_fitting(&cfg, &cali);
+````
 
 **Доказ**
 
@@ -2094,11 +3524,26 @@
 ---
 
 <!-- fc id:T-33-095 sha:24960961 src:manual/33-peryferiya-kod.md:230 klas:F -->
-### T-33-095 · kod-ryadok · рядок 230
+### T-33-095 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .unit_id = ADC_UNIT_1,
+
+**Контекст**
+
+````
+## ADC
+
+```c
+adc_cali_handle_t cali;
+adc_cali_curve_fitting_config_t cfg = {
+    .unit_id = ADC_UNIT_1,
+    .atten = ADC_ATTEN_DB_12,
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+};
+adc_cali_create_scheme_curve_fitting(&cfg, &cali);
+````
 
 **Доказ**
 
@@ -2107,11 +3552,23 @@
 ---
 
 <!-- fc id:T-33-096 sha:f277858a src:manual/33-peryferiya-kod.md:231 klas:F -->
-### T-33-096 · kod-ryadok · рядок 231
+### T-33-096 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .atten = ADC_ATTEN_DB_12,
+
+**Контекст**
+
+```
+## ADC
+
+adc_oneshot_chan_cfg_t ccfg = {
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+    .atten = ADC_ATTEN_DB_12,
+};
+adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
+```
 
 **Доказ**
 
@@ -2120,11 +3577,23 @@
 ---
 
 <!-- fc id:T-33-097 sha:1c285707 src:manual/33-peryferiya-kod.md:232 klas:F -->
-### T-33-097 · kod-ryadok · рядок 232
+### T-33-097 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .bitwidth = ADC_BITWIDTH_DEFAULT,
+
+**Контекст**
+
+```
+## ADC
+
+adc_oneshot_chan_cfg_t ccfg = {
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+    .atten = ADC_ATTEN_DB_12,
+};
+adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
+```
 
 **Доказ**
 
@@ -2133,11 +3602,26 @@
 ---
 
 <!-- fc id:T-33-098 sha:8f9ffc26 src:manual/33-peryferiya-kod.md:234 klas:A -->
-### T-33-098 · kod-ryadok · рядок 234
+### T-33-098 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > adc_cali_create_scheme_curve_fitting(&cfg, &cali);
+
+**Контекст**
+
+````
+## ADC
+
+```c
+adc_cali_handle_t cali;
+adc_cali_curve_fitting_config_t cfg = {
+    .unit_id = ADC_UNIT_1,
+    .atten = ADC_ATTEN_DB_12,
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+};
+adc_cali_create_scheme_curve_fitting(&cfg, &cali);
+````
 
 **Доказ**
 
@@ -2162,11 +3646,21 @@
 ---
 
 <!-- fc id:T-33-099 sha:2a32eb67 src:manual/33-peryferiya-kod.md:237 klas:A -->
-### T-33-099 · kod-ryadok · рядок 237
+### T-33-099 · kod-ryadok · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > adc_cali_raw_to_voltage(cali, raw, &mv);
+
+**Контекст**
+
+````
+## ADC
+
+int mv;
+adc_cali_raw_to_voltage(cali, raw, &mv);
+```
+````
 
 **Доказ**
 
@@ -2191,11 +3685,26 @@
 ---
 
 <!-- fc id:T-33-100 sha:b338b2c7 src:manual/33-peryferiya-kod.md:240 klas:F -->
-### T-33-100 · proza · рядок 240
+### T-33-100 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Калібрувальні коефіцієнти зашиті в eFuse кожного чипа на заводі — ця функція їх використовує.
+
+**Дослівно з книги**
+
+```
+Калібрувальні коефіцієнти зашиті в eFuse кожного чипа на заводі —
+```
+
+**Контекст**
+
+```
+## ADC
+
+Калібрувальні коефіцієнти зашиті в eFuse кожного чипа на заводі —
+ця функція їх використовує.
+```
 
 **Доказ**
 
@@ -2204,11 +3713,19 @@
 ---
 
 <!-- fc id:T-33-101 sha:94e81fbb src:manual/33-peryferiya-kod.md:243 klas:E -->
-### T-33-101 · proza · рядок 243
+### T-33-101 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Боротьба з шумом**, у порядку дієвості:
+
+**Контекст**
+
+```
+## ADC
+
+**Боротьба з шумом**, у порядку дієвості:
+```
 
 **Доказ**
 
@@ -2217,11 +3734,29 @@
 ---
 
 <!-- fc id:T-33-102 sha:d9cb78d8 src:manual/33-peryferiya-kod.md:245 klas:E -->
-### T-33-102 · proza · рядок 245
+### T-33-102 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Усереднення** 16–64 відліків.
+
+**Дослівно з книги**
+
+```
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+```
+
+**Контекст**
+
+```
+## ADC
+
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+2. **Конденсатор** 100 нФ від входу до землі.
+3. **Тихе живлення** аналогової частини (розділ 53).
+4. **Коротші проводи** до джерела сигналу.
+5. **Зовнішній ADC** по SPI — коли потрібна справжня точність.
+```
 
 **Доказ**
 
@@ -2230,11 +3765,29 @@
 ---
 
 <!-- fc id:T-33-103 sha:836b0a38 src:manual/33-peryferiya-kod.md:245 klas:A -->
-### T-33-103 · proza · рядок 245
+### T-33-103 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Найдешевше і найдієвіше. 2.
+
+**Дослівно з книги**
+
+```
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+```
+
+**Контекст**
+
+```
+## ADC
+
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+2. **Конденсатор** 100 нФ від входу до землі.
+3. **Тихе живлення** аналогової частини (розділ 53).
+4. **Коротші проводи** до джерела сигналу.
+5. **Зовнішній ADC** по SPI — коли потрібна справжня точність.
+```
 
 **Доказ**
 
@@ -2242,18 +3795,36 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
 - **Дослівно з джерела:**
   > ADC calibration
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Naydeshevche i naydiyevishe - pidtverdzheno kalibruvannyan
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-104 sha:7d1e31c2 src:manual/33-peryferiya-kod.md:245 klas:A -->
-### T-33-104 · proza · рядок 245
+### T-33-104 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Конденсатор** 100 нФ від входу до землі. 3.
+
+**Дослівно з книги**
+
+```
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+```
+
+**Контекст**
+
+```
+## ADC
+
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+2. **Конденсатор** 100 нФ від входу до землі.
+3. **Тихе живлення** аналогової частини (розділ 53).
+4. **Коротші проводи** до джерела сигналу.
+5. **Зовнішній ADC** по SPI — коли потрібна справжня точність.
+```
 
 **Доказ**
 
@@ -2288,11 +3859,29 @@
 ---
 
 <!-- fc id:T-33-105 sha:f3f157b6 src:manual/33-peryferiya-kod.md:245 klas:E -->
-### T-33-105 · proza · рядок 245
+### T-33-105 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Тихе живлення** аналогової частини (розділ 53). 4.
+
+**Дослівно з книги**
+
+```
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+```
+
+**Контекст**
+
+```
+## ADC
+
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+2. **Конденсатор** 100 нФ від входу до землі.
+3. **Тихе живлення** аналогової частини (розділ 53).
+4. **Коротші проводи** до джерела сигналу.
+5. **Зовнішній ADC** по SPI — коли потрібна справжня точність.
+```
 
 **Доказ**
 
@@ -2301,11 +3890,29 @@
 ---
 
 <!-- fc id:T-33-106 sha:0ad8b2a1 src:manual/33-peryferiya-kod.md:245 klas:E -->
-### T-33-106 · proza · рядок 245
+### T-33-106 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Коротші проводи** до джерела сигналу. 5.
+
+**Дослівно з книги**
+
+```
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+```
+
+**Контекст**
+
+```
+## ADC
+
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+2. **Конденсатор** 100 нФ від входу до землі.
+3. **Тихе живлення** аналогової частини (розділ 53).
+4. **Коротші проводи** до джерела сигналу.
+5. **Зовнішній ADC** по SPI — коли потрібна справжня точність.
+```
 
 **Доказ**
 
@@ -2314,11 +3921,29 @@
 ---
 
 <!-- fc id:T-33-107 sha:7f1a82b2 src:manual/33-peryferiya-kod.md:245 klas:E -->
-### T-33-107 · proza · рядок 245
+### T-33-107 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Зовнішній ADC** по SPI — коли потрібна справжня точність.
+
+**Дослівно з книги**
+
+```
+5. **Зовнішній ADC** по SPI — коли потрібна справжня точність.
+```
+
+**Контекст**
+
+```
+## ADC
+
+1. **Усереднення** 16–64 відліків. Найдешевше і найдієвіше.
+2. **Конденсатор** 100 нФ від входу до землі.
+3. **Тихе живлення** аналогової частини (розділ 53).
+4. **Коротші проводи** до джерела сигналу.
+5. **Зовнішній ADC** по SPI — коли потрібна справжня точність.
+```
 
 **Доказ**
 
@@ -2337,11 +3962,30 @@
 ---
 
 <!-- fc id:T-33-108 sha:fa721a1e src:manual/33-peryferiya-kod.md:252 klas:D -->
-### T-33-108 · proza · рядок 252
+### T-33-108 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Вимірювання напруги акумулятора через дільник — класична задача, у якій дільник **сам розряджає акумулятор**.
+
+**Дослівно з книги**
+
+```
+Вимірювання напруги акумулятора через дільник — класична задача, у якій
+```
+
+**Контекст**
+
+```
+## ADC
+
+::: zhyvlennya
+Вимірювання напруги акумулятора через дільник — класична задача, у якій
+дільник **сам розряджає акумулятор**. Два резистори по 100 кОм — це
+200 кОм між плюсом і землею: при 3.6 В вони постійно беруть 18 мкА. Для
+пристрою, що споживає уві сні одиниці мікроампер, дільник стає головним
+джерелом розряду — більшим за сам чип.
+```
 
 **Доказ**
 
@@ -2369,11 +4013,30 @@
 ---
 
 <!-- fc id:T-33-109 sha:eb5a91e3 src:manual/33-peryferiya-kod.md:252 klas:D -->
-### T-33-109 · proza · рядок 252
+### T-33-109 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Два резистори по 100 кОм — це 200 кОм між плюсом і землею: при 3.6 В вони постійно беруть 18 мкА.
+
+**Дослівно з книги**
+
+```
+Вимірювання напруги акумулятора через дільник — класична задача, у якій
+```
+
+**Контекст**
+
+```
+## ADC
+
+::: zhyvlennya
+Вимірювання напруги акумулятора через дільник — класична задача, у якій
+дільник **сам розряджає акумулятор**. Два резистори по 100 кОм — це
+200 кОм між плюсом і землею: при 3.6 В вони постійно беруть 18 мкА. Для
+пристрою, що споживає уві сні одиниці мікроампер, дільник стає головним
+джерелом розряду — більшим за сам чип.
+```
 
 **Доказ**
 
@@ -2401,11 +4064,30 @@
 ---
 
 <!-- fc id:T-33-110 sha:d584a342 src:manual/33-peryferiya-kod.md:252 klas:D -->
-### T-33-110 · proza · рядок 252
+### T-33-110 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для пристрою, що споживає уві сні одиниці мікроампер, дільник стає головним джерелом розряду — більшим за сам чип.
+
+**Дослівно з книги**
+
+```
+Вимірювання напруги акумулятора через дільник — класична задача, у якій
+```
+
+**Контекст**
+
+```
+## ADC
+
+::: zhyvlennya
+Вимірювання напруги акумулятора через дільник — класична задача, у якій
+дільник **сам розряджає акумулятор**. Два резистори по 100 кОм — це
+200 кОм між плюсом і землею: при 3.6 В вони постійно беруть 18 мкА. Для
+пристрою, що споживає уві сні одиниці мікроампер, дільник стає головним
+джерелом розряду — більшим за сам чип.
+```
 
 **Доказ**
 
@@ -2433,11 +4115,27 @@
 ---
 
 <!-- fc id:T-33-111 sha:227a685f src:manual/33-peryferiya-kod.md:258 klas:D -->
-### T-33-111 · proza · рядок 258
+### T-33-111 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Лікується вмиканням дільника транзистором лише на час вимірювання (розділ 53).
+
+**Дослівно з книги**
+
+```
+Лікується вмиканням дільника транзистором лише на час вимірювання
+```
+
+**Контекст**
+
+```
+## ADC
+
+Лікується вмиканням дільника транзистором лише на час вимірювання
+(розділ 53).
+:::
+```
 
 **Доказ**
 
@@ -2465,11 +4163,26 @@
 ---
 
 <!-- fc id:T-33-112 sha:06cbcff5 src:manual/33-peryferiya-kod.md:264 klas:F -->
-### T-33-112 · proza · рядок 264
+### T-33-112 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Справжній аналоговий вихід, 8 розрядів, два канали.
+
+**Дослівно з книги**
+
+```
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+```
+
+**Контекст**
+
+```
+## DAC
+
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+сімействами:
+```
 
 **Доказ**
 
@@ -2478,11 +4191,26 @@
 ---
 
 <!-- fc id:T-33-113 sha:6b87ca03 src:manual/33-peryferiya-kod.md:264 klas:A -->
-### T-33-113 · proza · рядок 264
+### T-33-113 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Піни **різні** за сімействами:
+
+**Дослівно з книги**
+
+```
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+```
+
+**Контекст**
+
+```
+## DAC
+
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+сімействами:
+```
 
 **Доказ**
 
@@ -2490,18 +4218,32 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
 - **Дослівно з джерела:**
   > Do not rely on the default configurations values
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Piny rizni za simeystvamy - pidtverdzheno v dokumentaciyi GPIO
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-114 sha:48af3317 src:manual/33-peryferiya-kod.md:267 klas:C -->
-### T-33-114 · tablycya-shapka · рядок 267
+### T-33-114 · tablycya-shapka · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | | Канал 1 | Канал 2 |
+
+**Контекст**
+
+```
+## DAC
+
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+сімействами:
+
+| | Канал 1 | Канал 2 |
+|---|---|---|
+| [[classic]] | `GPIO25` | `GPIO26` |
+| [[S2]] | `GPIO17` | `GPIO18` |
+```
 
 **Доказ**
 
@@ -2513,11 +4255,31 @@
 ---
 
 <!-- fc id:T-33-115 sha:2d6128fe src:manual/33-peryferiya-kod.md:268 klas:A -->
-### T-33-115 · komirka · рядок 268
+### T-33-115 · komirka · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[classic]] · Канал 1 → `GPIO25`
+
+**Дослівно з книги**
+
+```
+| [[classic]] | `GPIO25` | `GPIO26` |
+```
+
+**Контекст**
+
+```
+## DAC
+
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+сімействами:
+
+| | Канал 1 | Канал 2 |
+|---|---|---|
+| [[classic]] | `GPIO25` | `GPIO26` |
+| [[S2]] | `GPIO17` | `GPIO18` |
+```
 
 **Доказ**
 
@@ -2552,11 +4314,31 @@
 ---
 
 <!-- fc id:T-33-116 sha:7d1d509e src:manual/33-peryferiya-kod.md:268 klas:A -->
-### T-33-116 · komirka · рядок 268
+### T-33-116 · komirka · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[classic]] · Канал 2 → `GPIO26`
+
+**Дослівно з книги**
+
+```
+| [[classic]] | `GPIO25` | `GPIO26` |
+```
+
+**Контекст**
+
+```
+## DAC
+
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+сімействами:
+
+| | Канал 1 | Канал 2 |
+|---|---|---|
+| [[classic]] | `GPIO25` | `GPIO26` |
+| [[S2]] | `GPIO17` | `GPIO18` |
+```
 
 **Доказ**
 
@@ -2591,11 +4373,31 @@
 ---
 
 <!-- fc id:T-33-117 sha:7afccfc4 src:manual/33-peryferiya-kod.md:269 klas:A -->
-### T-33-117 · komirka · рядок 269
+### T-33-117 · komirka · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[S2]] · Канал 1 → `GPIO17`
+
+**Дослівно з книги**
+
+```
+| [[S2]] | `GPIO17` | `GPIO18` |
+```
+
+**Контекст**
+
+```
+## DAC
+
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+сімействами:
+
+| | Канал 1 | Канал 2 |
+|---|---|---|
+| [[classic]] | `GPIO25` | `GPIO26` |
+| [[S2]] | `GPIO17` | `GPIO18` |
+```
 
 **Доказ**
 
@@ -2630,11 +4432,31 @@
 ---
 
 <!-- fc id:T-33-118 sha:69208de8 src:manual/33-peryferiya-kod.md:269 klas:A -->
-### T-33-118 · komirka · рядок 269
+### T-33-118 · komirka · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[S2]] · Канал 2 → `GPIO18`
+
+**Дослівно з книги**
+
+```
+| [[S2]] | `GPIO17` | `GPIO18` |
+```
+
+**Контекст**
+
+```
+## DAC
+
+Справжній аналоговий вихід, 8 розрядів, два канали. Піни **різні** за
+сімействами:
+
+| | Канал 1 | Канал 2 |
+|---|---|---|
+| [[classic]] | `GPIO25` | `GPIO26` |
+| [[S2]] | `GPIO17` | `GPIO18` |
+```
 
 **Доказ**
 
@@ -2669,11 +4491,26 @@
 ---
 
 <!-- fc id:T-33-119 sha:580c0d2a src:manual/33-peryferiya-kod.md:272 klas:F -->
-### T-33-119 · proza · рядок 272
+### T-33-119 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Більше ніде в лінійці DAC немає (розділ 04).
+
+**Дослівно з книги**
+
+```
+Більше ніде в лінійці DAC немає (розділ 04). Де потрібен на інших
+```
+
+**Контекст**
+
+```
+## DAC
+
+Більше ніде в лінійці DAC немає (розділ 04). Де потрібен на інших
+чипах — зовнішній ЦАП по I²C або згладжений PWM.
+```
 
 **Доказ**
 
@@ -2682,11 +4519,26 @@
 ---
 
 <!-- fc id:T-33-120 sha:c7206801 src:manual/33-peryferiya-kod.md:272 klas:B -->
-### T-33-120 · proza · рядок 272
+### T-33-120 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Де потрібен на інших чипах — зовнішній ЦАП по I²C або згладжений PWM.
+
+**Дослівно з книги**
+
+```
+Більше ніде в лінійці DAC немає (розділ 04). Де потрібен на інших
+```
+
+**Контекст**
+
+```
+## DAC
+
+Більше ніде в лінійці DAC немає (розділ 04). Де потрібен на інших
+чипах — зовнішній ЦАП по I²C або згладжений PWM.
+```
 
 **Доказ**
 
@@ -2707,11 +4559,29 @@
 ---
 
 <!-- fc id:T-33-121 sha:d7aa1bdc src:manual/33-peryferiya-kod.md:276 klas:A -->
-### T-33-121 · proza · рядок 276
+### T-33-121 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `GPIO25` і `GPIO26` на S2 **не існують узагалі**: у нього немає пінів 22–25.
+
+**Дослівно з книги**
+
+```
+`GPIO25` і `GPIO26` на S2 **не існують узагалі**: у нього немає пінів
+```
+
+**Контекст**
+
+```
+## DAC
+
+::: uvaha
+`GPIO25` і `GPIO26` на S2 **не існують узагалі**: у нього немає пінів
+22–25. Тобто помилитися тут не «майже те саме», а неробочий код і
+`ESP_ERR_INVALID_ARG` при налаштуванні.
+:::
+```
 
 **Доказ**
 
@@ -2734,11 +4604,29 @@
 ---
 
 <!-- fc id:T-33-122 sha:fb9fa4e3 src:manual/33-peryferiya-kod.md:276 klas:A -->
-### T-33-122 · proza · рядок 276
+### T-33-122 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Тобто помилитися тут не «майже те саме», а неробочий код і `ESP_ERR_INVALID_ARG` при налаштуванні.
+
+**Дослівно з книги**
+
+```
+`GPIO25` і `GPIO26` на S2 **не існують узагалі**: у нього немає пінів
+```
+
+**Контекст**
+
+```
+## DAC
+
+::: uvaha
+`GPIO25` і `GPIO26` на S2 **не існують узагалі**: у нього немає пінів
+22–25. Тобто помилитися тут не «майже те саме», а неробочий код і
+`ESP_ERR_INVALID_ARG` при налаштуванні.
+:::
+```
 
 **Доказ**
 
@@ -2757,7 +4645,7 @@
   > The wear levelling component … distributes wear across the whole
   > partition, and is used together with the FAT filesystem via
   > esp_vfs_fat_spiflash_mount_rw_wl.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 7), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Усі названі книгою константи існують дослівно. Прохід 7 звіряв виклики; ці — коди повернення, і вони живуть у тих самих заголовках.
 Твердження розділу 18 про `wear_levelling` підтверджується від протилежного: у документації FAT монтується через `esp_vfs_fat_spiflash_mount_rw_wl`, тобто саме через шар вирівнювання зносу, — отже сама FAT його не робить, як книга й пише.
 - **Прохід:** pass-31-adresy-i-api
@@ -2765,11 +4653,19 @@
 ---
 
 <!-- fc id:T-33-123 sha:89f289a2 src:manual/33-peryferiya-kod.md:283 klas:E -->
-### T-33-123 · proza · рядок 283
+### T-33-123 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Антидребезг — порівнянням часу, ніколи не затримкою в ISR.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Антидребезг — порівнянням часу, ніколи не затримкою в ISR.
+```
 
 **Доказ**
 
@@ -2778,11 +4674,19 @@
 ---
 
 <!-- fc id:T-33-124 sha:3b0d82f6 src:manual/33-peryferiya-kod.md:285 klas:A -->
-### T-33-124 · proza · рядок 285
+### T-33-124 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Яскравість світлодіода нелінійна щодо коефіцієнта заповнення.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Яскравість світлодіода нелінійна щодо коефіцієнта заповнення.
+```
 
 **Доказ**
 
@@ -2790,18 +4694,26 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
 - **Дослівно з джерела:**
   > The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Yaskravlist svitlodioda neliniyna - pidtverdzheno
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-125 sha:d229616c src:manual/33-peryferiya-kod.md:287 klas:E -->
-### T-33-125 · proza · рядок 287
+### T-33-125 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Серво живиться окремо; спільна земля обов'язкова.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Серво живиться окремо; спільна земля обов'язкова.
+```
 
 **Доказ**
 
@@ -2822,11 +4734,19 @@
 ---
 
 <!-- fc id:T-33-126 sha:c9c22960 src:manual/33-peryferiya-kod.md:289 klas:F -->
-### T-33-126 · proza · рядок 289
+### T-33-126 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > WS2812 керуються через RMT апаратно — у коді це робити не варто.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+WS2812 керуються через RMT апаратно — у коді це робити не варто.
+```
 
 **Доказ**
 
@@ -2835,11 +4755,19 @@
 ---
 
 <!-- fc id:T-33-127 sha:93141a0c src:manual/33-peryferiya-kod.md:291 klas:A -->
-### T-33-127 · proza · рядок 291
+### T-33-127 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > PCNT рахує імпульси без переривань і має апаратний антидребезг.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+PCNT рахує імпульси без переривань і має апаратний антидребезг.
+```
 
 **Доказ**
 
@@ -2847,18 +4775,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
 - **Дослівно з джерела:**
   > PCNT unit is equipped with a separate glitch filter
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** PCNT rakhuje impulsyuz bez pereryvanny - pidtverdzheno
 - **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
 <!-- fc id:T-33-128 sha:171ad095 src:manual/33-peryferiya-kod.md:293 klas:A -->
-### T-33-128 · proza · рядок 293
+### T-33-128 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[classic]] [[S2]] [[S3]] ADC2 не працює при Wi-Fi; ADC потребує калібрування й усереднення.
+
+**Дослівно з книги**
+
+```
+[[classic]] [[S2]] [[S3]] ADC2 не працює при Wi-Fi; ADC потребує калібрування й
+```
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+[[classic]] [[S2]] [[S3]] ADC2 не працює при Wi-Fi; ADC потребує калібрування й
+усереднення.
+```
 
 **Доказ**
 
@@ -2874,11 +4817,19 @@
 ---
 
 <!-- fc id:T-33-129 sha:679df6b2 src:manual/33-peryferiya-kod.md:296 klas:E -->
-### T-33-129 · proza · рядок 296
+### T-33-129 · proza · `manual/33-peryferiya-kod.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Дільник для вимірювання акумулятора розряджає акумулятор.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Дільник для вимірювання акумулятора розряджає акумулятор.
+```
 
 **Доказ**
 

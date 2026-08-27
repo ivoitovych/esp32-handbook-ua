@@ -7,11 +7,26 @@
 ---
 
 <!-- fc id:T-K10-001 sha:56ac242d src:kartky/k10-komandy.md:3 klas:A -->
-### T-K10-001 · proza · рядок 3
+### T-K10-001 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Синтаксис esptool **v5** (дефіси, без `.py`).
+
+**Дослівно з книги**
+
+```
+Синтаксис esptool **v5** (дефіси, без `.py`). Для v4 — підкреслення і
+```
+
+**Контекст**
+
+```
+# К10. Шпаргалка команд {#k-komandy}
+
+Синтаксис esptool **v5** (дефіси, без `.py`). Для v4 — підкреслення і
+суфікс `.py`: `esptool.py write_flash`. Перевірити своє: `esptool version`.
+```
 
 **Доказ**
 
@@ -19,18 +34,33 @@
 - **Джерело:** dzherela-kesh/2217d639-basic-commands.rst
 - **Дослівно з джерела:**
   > esptool erase-flash
-- **Спосіб і дата:** хвиля 3, наряд factcheck/NARYAD-m2-hvylya3.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya3.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Документ підтверджує синтаксис esptool v5 з дефісами, без .py.
 - **Прохід:** m2-hvylya3
 
 ---
 
 <!-- fc id:T-K10-002 sha:90dbd689 src:kartky/k10-komandy.md:3 klas:A -->
-### T-K10-002 · proza · рядок 3
+### T-K10-002 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для v4 — підкреслення і суфікс `.py`: `esptool.py write_flash`.
+
+**Дослівно з книги**
+
+```
+Синтаксис esptool **v5** (дефіси, без `.py`). Для v4 — підкреслення і
+```
+
+**Контекст**
+
+```
+# К10. Шпаргалка команд {#k-komandy}
+
+Синтаксис esptool **v5** (дефіси, без `.py`). Для v4 — підкреслення і
+суфікс `.py`: `esptool.py write_flash`. Перевірити своє: `esptool version`.
+```
 
 **Доказ**
 
@@ -59,11 +89,26 @@
 ---
 
 <!-- fc id:T-K10-003 sha:6ac69acd src:kartky/k10-komandy.md:3 klas:A -->
-### T-K10-003 · proza · рядок 3
+### T-K10-003 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Перевірити своє: `esptool version`.
+
+**Дослівно з книги**
+
+```
+суфікс `.py`: `esptool.py write_flash`. Перевірити своє: `esptool version`.
+```
+
+**Контекст**
+
+```
+# К10. Шпаргалка команд {#k-komandy}
+
+Синтаксис esptool **v5** (дефіси, без `.py`). Для v4 — підкреслення і
+суфікс `.py`: `esptool.py write_flash`. Перевірити своє: `esptool version`.
+```
 
 **Доказ**
 
@@ -79,9 +124,9 @@
 ---
 
 <!-- fc id:T-K10-004 sha:eec2887d src:kartky/k10-komandy.md:8 klas:K -->
-### T-K10-004 · kod · рядок 8
+### T-K10-004 · kod · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > # що за чип і ревізія — у шапці з'єднання перед будь-якою командою
@@ -94,6 +139,20 @@
 > esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
 >   0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## esptool
+
+```
+````
 
 **Доказ**
 
@@ -108,11 +167,27 @@
 ---
 
 <!-- fc id:T-K10-005 sha:8af1928d src:kartky/k10-komandy.md:10 klas:A -->
-### T-K10-005 · kod-ryadok · рядок 10
+### T-K10-005 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+
+**Контекст**
+
+````
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
+````
 
 **Доказ**
 
@@ -120,18 +195,34 @@
 - **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
-- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Помічник поставив ne_znayshov, і за своїм нарядом мав рацію: йому дали basic-commands.rst, де є `esptool flash-id` без опцій. Опція ж описана в basic-options.rst — сусідньому файлі того ж кешу, якого наряд не назвав. Заголовок розділу подає обидві форми, `--port` і `-p`; книга вживає довгу. Команда в книзі точна. Урок не про помічника, а про наряд: один ключ мусить вести до всіх файлів свого документа, бо документація esptool розкладена на команди й опції окремо.
 - **Прохід:** m2-hvylya2
 
 ---
 
 <!-- fc id:T-K10-006 sha:74ec190c src:kartky/k10-komandy.md:11 klas:A -->
-### T-K10-006 · kod-ryadok · рядок 11
+### T-K10-006 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+
+**Контекст**
+
+````
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
+````
 
 **Доказ**
 
@@ -157,11 +248,27 @@
 ---
 
 <!-- fc id:T-K10-007 sha:a177909e src:kartky/k10-komandy.md:12 klas:A -->
-### T-K10-007 · kod-ryadok · рядок 12
+### T-K10-007 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+
+**Контекст**
+
+````
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
+````
 
 **Доказ**
 
@@ -190,11 +297,27 @@
 ---
 
 <!-- fc id:T-K10-008 sha:94bd45fa src:kartky/k10-komandy.md:13 klas:A -->
-### T-K10-008 · kod-ryadok · рядок 13
+### T-K10-008 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+
+**Контекст**
+
+````
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
+````
 
 **Доказ**
 
@@ -225,11 +348,27 @@
 ---
 
 <!-- fc id:T-K10-009 sha:d6945e3a src:kartky/k10-komandy.md:14 klas:F -->
-### T-K10-009 · kod-ryadok · рядок 14
+### T-K10-009 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+
+**Контекст**
+
+````
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
+````
 
 **Доказ**
 
@@ -238,11 +377,27 @@
 ---
 
 <!-- fc id:T-K10-010 sha:931ffa15 src:kartky/k10-komandy.md:15 klas:F -->
-### T-K10-010 · kod-ryadok · рядок 15
+### T-K10-010 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+
+**Контекст**
+
+````
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
+````
 
 **Доказ**
 
@@ -251,11 +406,27 @@
 ---
 
 <!-- fc id:T-K10-011 sha:23a7fc4e src:kartky/k10-komandy.md:16 klas:A -->
-### T-K10-011 · kod-ryadok · рядок 16
+### T-K10-011 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+
+**Контекст**
+
+````
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
+````
 
 **Доказ**
 
@@ -278,11 +449,27 @@
 ---
 
 <!-- fc id:T-K10-012 sha:0c80ad13 src:kartky/k10-komandy.md:17 klas:A -->
-### T-K10-012 · schema-zvyazok · рядок 17
+### T-K10-012 · schema-zvyazok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > 0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+
+**Контекст**
+
+````
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
+````
 
 **Доказ**
 
@@ -297,9 +484,9 @@
 ---
 
 <!-- fc id:T-K10-013 sha:b9d2934d src:kartky/k10-komandy.md:22 klas:K -->
-### T-K10-013 · kod · рядок 22
+### T-K10-013 · kod · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > idf.py create-project my-project    # новий проєкт (назва латиницею)
@@ -315,24 +502,70 @@
 > idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
 > ```
 
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
+
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code (file name and line number) and prints the location on the next line in yellow.
-- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Місце в документі: розділ Automatic Address Decoding
 - **Прохід:** m2-hvylya2
 
 ---
 
 <!-- fc id:T-K10-014 sha:c4f6cb74 src:kartky/k10-komandy.md:23 klas:A -->
-### T-K10-014 · kod-ryadok · рядок 23
+### T-K10-014 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py create-project my-project    # новий проєкт (назва латиницею)
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -363,11 +596,31 @@
 ---
 
 <!-- fc id:T-K10-015 sha:bb9f7106 src:kartky/k10-komandy.md:24 klas:A -->
-### T-K10-015 · kod-ryadok · рядок 24
+### T-K10-015 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -398,11 +651,31 @@
 ---
 
 <!-- fc id:T-K10-016 sha:cc032d7c src:kartky/k10-komandy.md:25 klas:A -->
-### T-K10-016 · kod-ryadok · рядок 25
+### T-K10-016 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py menuconfig                   # налаштування
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -433,11 +706,31 @@
 ---
 
 <!-- fc id:T-K10-017 sha:5e640044 src:kartky/k10-komandy.md:26 klas:F -->
-### T-K10-017 · kod-ryadok · рядок 26
+### T-K10-017 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py build                        # зібрати
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -446,11 +739,31 @@
 ---
 
 <!-- fc id:T-K10-018 sha:399d8dd5 src:kartky/k10-komandy.md:27 klas:F -->
-### T-K10-018 · kod-ryadok · рядок 27
+### T-K10-018 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py -p /dev/ttyUSB0 flash        # залити
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -459,11 +772,31 @@
 ---
 
 <!-- fc id:T-K10-019 sha:e95261df src:kartky/k10-komandy.md:28 klas:A -->
-### T-K10-019 · kod-ryadok · рядок 28
+### T-K10-019 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -471,18 +804,38 @@
 - **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code (file name and line number) and prints the location on the next line in yellow.
-- **Спосіб і дата:** хвиля 2, наряд factcheck/NARYAD-m2-hvylya2.md; цитата звірена підрядком у названому файлі скриптом factcheck/pryyom-hvylya2.py, 2026-08-27
+- **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
 - **Нотатка:** Місце в документі: розділ Automatic Address Decoding
 - **Прохід:** m2-hvylya2
 
 ---
 
 <!-- fc id:T-K10-020 sha:7879c453 src:kartky/k10-komandy.md:29 klas:F -->
-### T-K10-020 · kod-ryadok · рядок 29
+### T-K10-020 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -491,11 +844,31 @@
 ---
 
 <!-- fc id:T-K10-021 sha:21c29912 src:kartky/k10-komandy.md:30 klas:A -->
-### T-K10-021 · kod-ryadok · рядок 30
+### T-K10-021 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py fullclean                    # коли збирання поводиться незрозуміло
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -526,11 +899,31 @@
 ---
 
 <!-- fc id:T-K10-022 sha:0f34d83d src:kartky/k10-komandy.md:31 klas:A -->
-### T-K10-022 · kod-ryadok · рядок 31
+### T-K10-022 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py size                         # скільки зайнято флешу і RAM
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -561,11 +954,31 @@
 ---
 
 <!-- fc id:T-K10-023 sha:48df8d47 src:kartky/k10-komandy.md:32 klas:A -->
-### T-K10-023 · kod-ryadok · рядок 32
+### T-K10-023 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py coredump-info                # розбір coredump із флешу
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -596,11 +1009,31 @@
 ---
 
 <!-- fc id:T-K10-024 sha:a2ff386f src:kartky/k10-komandy.md:33 klas:A -->
-### T-K10-024 · kod-ryadok · рядок 33
+### T-K10-024 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+
+**Контекст**
+
+````
+## idf.py
+
+```
+idf.py create-project my-project    # новий проєкт (назва латиницею)
+idf.py set-target esp32s3           # ⚠ стирає sdkconfig
+idf.py menuconfig                   # налаштування
+idf.py build                        # зібрати
+idf.py -p /dev/ttyUSB0 flash        # залити
+idf.py -p /dev/ttyUSB0 monitor      # монітор з розшифровкою backtrace
+idf.py -p /dev/ttyUSB0 flash monitor  # найчастіша команда
+idf.py fullclean                    # коли збирання поводиться незрозуміло
+idf.py size                         # скільки зайнято флешу і RAM
+idf.py coredump-info                # розбір coredump із флешу
+idf.py merge-bin -o all.bin         # один образ; адреси з конфігурації проєкту
+```
+````
 
 **Доказ**
 
@@ -622,11 +1055,26 @@
 ---
 
 <!-- fc id:T-K10-025 sha:0c9d449b src:kartky/k10-komandy.md:36 klas:A -->
-### T-K10-025 · proza · рядок 36
+### T-K10-025 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Є проєкт — `idf.py merge-bin` (адрес набирати не треба).
+
+**Дослівно з книги**
+
+```
+Є проєкт — `idf.py merge-bin` (адрес набирати не треба). Є лише
+```
+
+**Контекст**
+
+```
+## idf.py
+
+Є проєкт — `idf.py merge-bin` (адрес набирати не треба). Є лише
+`.bin`-файли — `esptool --chip … merge-bin` з адресами вище.
+```
 
 **Доказ**
 
@@ -648,11 +1096,26 @@
 ---
 
 <!-- fc id:T-K10-026 sha:f5cb6136 src:kartky/k10-komandy.md:36 klas:A -->
-### T-K10-026 · proza · рядок 36
+### T-K10-026 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Є лише `.bin`-файли — `esptool --chip … merge-bin` з адресами вище.
+
+**Дослівно з книги**
+
+```
+Є проєкт — `idf.py merge-bin` (адрес набирати не треба). Є лише
+```
+
+**Контекст**
+
+```
+## idf.py
+
+Є проєкт — `idf.py merge-bin` (адрес набирати не треба). Є лише
+`.bin`-файли — `esptool --chip … merge-bin` з адресами вище.
+```
 
 **Доказ**
 
@@ -667,7 +1130,7 @@
   > (idf-py.rst)
   > …create a single binary file ``merged-binary.[bin|hex]`` in the build
   > folder, which can then be flashed later.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
 Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
 - **Прохід:** pass-28-komandy-suciljno
@@ -675,11 +1138,25 @@
 ---
 
 <!-- fc id:T-K10-027 sha:c64c8733 src:kartky/k10-komandy.md:41 klas:A -->
-### T-K10-027 · proza · рядок 41
+### T-K10-027 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `idf.py monitor`: вийти — `Ctrl+]`.
+
+**Дослівно з книги**
+
+```
+`idf.py monitor`: вийти — `Ctrl+]`. Скинути плату — `Ctrl+T`, потім `Ctrl+R`.
+```
+
+**Контекст**
+
+```
+## Монітор
+
+`idf.py monitor`: вийти — `Ctrl+]`. Скинути плату — `Ctrl+T`, потім `Ctrl+R`.
+```
 
 **Доказ**
 
@@ -708,11 +1185,25 @@
 ---
 
 <!-- fc id:T-K10-028 sha:51eec05c src:kartky/k10-komandy.md:41 klas:F -->
-### T-K10-028 · proza · рядок 41
+### T-K10-028 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Скинути плату — `Ctrl+T`, потім `Ctrl+R`.
+
+**Дослівно з книги**
+
+```
+`idf.py monitor`: вийти — `Ctrl+]`. Скинути плату — `Ctrl+T`, потім `Ctrl+R`.
+```
+
+**Контекст**
+
+```
+## Монітор
+
+`idf.py monitor`: вийти — `Ctrl+]`. Скинути плату — `Ctrl+T`, потім `Ctrl+R`.
+```
 
 **Доказ**
 
@@ -721,15 +1212,33 @@
 ---
 
 <!-- fc id:T-K10-029 sha:ab211d67 src:kartky/k10-komandy.md:43 klas:K -->
-### T-K10-029 · kod · рядок 43
+### T-K10-029 · kod · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > minicom -D /dev/ttyUSB0 -b 115200    # вийти: Ctrl+A, потім X
 > screen /dev/ttyUSB0 115200           # вийти: Ctrl+A, потім K
 > picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Монітор
+
+```
+minicom -D /dev/ttyUSB0 -b 115200    # вийти: Ctrl+A, потім X
+screen /dev/ttyUSB0 115200           # вийти: Ctrl+A, потім K
+picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
+```
+````
 
 **Доказ**
 
@@ -738,11 +1247,23 @@
 ---
 
 <!-- fc id:T-K10-030 sha:746a4901 src:kartky/k10-komandy.md:44 klas:F -->
-### T-K10-030 · kod-ryadok · рядок 44
+### T-K10-030 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > minicom -D /dev/ttyUSB0 -b 115200    # вийти: Ctrl+A, потім X
+
+**Контекст**
+
+````
+## Монітор
+
+```
+minicom -D /dev/ttyUSB0 -b 115200    # вийти: Ctrl+A, потім X
+screen /dev/ttyUSB0 115200           # вийти: Ctrl+A, потім K
+picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
+```
+````
 
 **Доказ**
 
@@ -751,11 +1272,23 @@
 ---
 
 <!-- fc id:T-K10-031 sha:d4bff93f src:kartky/k10-komandy.md:45 klas:F -->
-### T-K10-031 · kod-ryadok · рядок 45
+### T-K10-031 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > screen /dev/ttyUSB0 115200           # вийти: Ctrl+A, потім K
+
+**Контекст**
+
+````
+## Монітор
+
+```
+minicom -D /dev/ttyUSB0 -b 115200    # вийти: Ctrl+A, потім X
+screen /dev/ttyUSB0 115200           # вийти: Ctrl+A, потім K
+picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
+```
+````
 
 **Доказ**
 
@@ -764,11 +1297,23 @@
 ---
 
 <!-- fc id:T-K10-032 sha:c8e23e02 src:kartky/k10-komandy.md:46 klas:F -->
-### T-K10-032 · kod-ryadok · рядок 46
+### T-K10-032 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
+
+**Контекст**
+
+````
+## Монітор
+
+```
+minicom -D /dev/ttyUSB0 -b 115200    # вийти: Ctrl+A, потім X
+screen /dev/ttyUSB0 115200           # вийти: Ctrl+A, потім K
+picocom -b 115200 /dev/ttyUSB0       # вийти: Ctrl+A, потім Ctrl+X
+```
+````
 
 **Доказ**
 
@@ -777,9 +1322,9 @@
 ---
 
 <!-- fc id:T-K10-033 sha:c5afa127 src:kartky/k10-komandy.md:51 klas:K -->
-### T-K10-033 · kod · рядок 51
+### T-K10-033 · kod · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```
 > ls /dev/ttyUSB* /dev/ttyACM*     # Linux: що є
@@ -787,6 +1332,25 @@
 > sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
 > lsof /dev/ttyUSB0                # хто тримає порт
 > ```
+
+**Дослівно з книги**
+
+````
+```
+````
+
+**Контекст**
+
+````
+## Порт
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # Linux: що є
+dmesg | tail                     # що ядро побачило при під'єднанні
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+lsof /dev/ttyUSB0                # хто тримає порт
+```
+````
 
 **Доказ**
 
@@ -795,11 +1359,24 @@
 ---
 
 <!-- fc id:T-K10-034 sha:805c4c57 src:kartky/k10-komandy.md:52 klas:F -->
-### T-K10-034 · kod-ryadok · рядок 52
+### T-K10-034 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ls /dev/ttyUSB* /dev/ttyACM*     # Linux: що є
+
+**Контекст**
+
+````
+## Порт
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # Linux: що є
+dmesg | tail                     # що ядро побачило при під'єднанні
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+lsof /dev/ttyUSB0                # хто тримає порт
+```
+````
 
 **Доказ**
 
@@ -808,11 +1385,24 @@
 ---
 
 <!-- fc id:T-K10-035 sha:65b20b9d src:kartky/k10-komandy.md:53 klas:F -->
-### T-K10-035 · kod-ryadok · рядок 53
+### T-K10-035 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > dmesg | tail                     # що ядро побачило при під'єднанні
+
+**Контекст**
+
+````
+## Порт
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # Linux: що є
+dmesg | tail                     # що ядро побачило при під'єднанні
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+lsof /dev/ttyUSB0                # хто тримає порт
+```
+````
 
 **Доказ**
 
@@ -821,11 +1411,24 @@
 ---
 
 <!-- fc id:T-K10-036 sha:459deb70 src:kartky/k10-komandy.md:54 klas:F -->
-### T-K10-036 · kod-ryadok · рядок 54
+### T-K10-036 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+
+**Контекст**
+
+````
+## Порт
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # Linux: що є
+dmesg | tail                     # що ядро побачило при під'єднанні
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+lsof /dev/ttyUSB0                # хто тримає порт
+```
+````
 
 **Доказ**
 
@@ -834,11 +1437,24 @@
 ---
 
 <!-- fc id:T-K10-037 sha:04c7f41f src:kartky/k10-komandy.md:55 klas:F -->
-### T-K10-037 · kod-ryadok · рядок 55
+### T-K10-037 · kod-ryadok · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > lsof /dev/ttyUSB0                # хто тримає порт
+
+**Контекст**
+
+````
+## Порт
+
+```
+ls /dev/ttyUSB* /dev/ttyACM*     # Linux: що є
+dmesg | tail                     # що ядро побачило при під'єднанні
+sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в систему
+lsof /dev/ttyUSB0                # хто тримає порт
+```
+````
 
 **Доказ**
 
@@ -847,11 +1463,20 @@
 ---
 
 <!-- fc id:T-K10-038 sha:4ffb7aee src:kartky/k10-komandy.md:58 klas:E -->
-### T-K10-038 · proza · рядок 58
+### T-K10-038 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `/dev/ttyUSB*` — зовнішній міст (CP2102, CH340).
+
+**Контекст**
+
+```
+## Порт
+
+`/dev/ttyUSB*` — зовнішній міст (CP2102, CH340).
+`/dev/ttyACM*` — native USB [[S3]] [[C3]].
+```
 
 **Доказ**
 
@@ -867,11 +1492,20 @@
 ---
 
 <!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:58 klas:F -->
-### T-K10-039 · proza · рядок 58
+### T-K10-039 · proza · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `/dev/ttyACM*` — native USB [[S3]] [[C3]].
+
+**Контекст**
+
+```
+## Порт
+
+`/dev/ttyUSB*` — зовнішній міст (CP2102, CH340).
+`/dev/ttyACM*` — native USB [[S3]] [[C3]].
+```
 
 **Доказ**
 
@@ -880,11 +1514,25 @@
 ---
 
 <!-- fc id:T-K10-040 sha:3c153db1 src:kartky/k10-komandy.md:63 klas:F -->
-### T-K10-040 · tablycya-shapka · рядок 63
+### T-K10-040 · tablycya-shapka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > | Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -893,11 +1541,31 @@
 ---
 
 <!-- fc id:T-K10-041 sha:03becf94 src:kartky/k10-komandy.md:64 klas:A -->
-### T-K10-041 · komirka · рядок 64
+### T-K10-041 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > bootloader · classic, S2 → `0x1000`
+
+**Дослівно з книги**
+
+```
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -917,7 +1585,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -926,11 +1594,31 @@
 ---
 
 <!-- fc id:T-K10-042 sha:1fe1e089 src:kartky/k10-komandy.md:64 klas:A -->
-### T-K10-042 · komirka · рядок 64
+### T-K10-042 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > bootloader · S3, C3, C6, H2 → `0x0`
+
+**Дослівно з книги**
+
+```
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -945,11 +1633,31 @@
 ---
 
 <!-- fc id:T-K10-043 sha:ddb10a79 src:kartky/k10-komandy.md:64 klas:A -->
-### T-K10-043 · komirka · рядок 64
+### T-K10-043 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > bootloader · P4, C5, H4 → `0x2000`
+
+**Дослівно з книги**
+
+```
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -969,7 +1677,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -978,11 +1686,31 @@
 ---
 
 <!-- fc id:T-K10-044 sha:4e987ef9 src:kartky/k10-komandy.md:65 klas:A -->
-### T-K10-044 · komirka · рядок 65
+### T-K10-044 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > partition table · classic, S2 → `0x8000`
+
+**Дослівно з книги**
+
+```
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -997,11 +1725,31 @@
 ---
 
 <!-- fc id:T-K10-045 sha:8c7b7a5f src:kartky/k10-komandy.md:65 klas:A -->
-### T-K10-045 · komirka · рядок 65
+### T-K10-045 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > partition table · S3, C3, C6, H2 → `0x8000`
+
+**Дослівно з книги**
+
+```
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -1016,11 +1764,31 @@
 ---
 
 <!-- fc id:T-K10-046 sha:cb052eb6 src:kartky/k10-komandy.md:65 klas:A -->
-### T-K10-046 · komirka · рядок 65
+### T-K10-046 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > partition table · P4, C5, H4 → `0x8000`
+
+**Дослівно з книги**
+
+```
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -1035,11 +1803,31 @@
 ---
 
 <!-- fc id:T-K10-047 sha:55b5b58b src:kartky/k10-komandy.md:66 klas:A -->
-### T-K10-047 · komirka · рядок 66
+### T-K10-047 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > застосунок · classic, S2 → `0x10000`
+
+**Дослівно з книги**
+
+```
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -1059,7 +1847,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -1068,11 +1856,31 @@
 ---
 
 <!-- fc id:T-K10-048 sha:55a122c0 src:kartky/k10-komandy.md:66 klas:A -->
-### T-K10-048 · komirka · рядок 66
+### T-K10-048 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > застосунок · S3, C3, C6, H2 → `0x10000`
+
+**Дослівно з книги**
+
+```
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -1092,7 +1900,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -1101,11 +1909,31 @@
 ---
 
 <!-- fc id:T-K10-049 sha:eb3f0062 src:kartky/k10-komandy.md:66 klas:A -->
-### T-K10-049 · komirka · рядок 66
+### T-K10-049 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > застосунок · P4, C5, H4 → `0x10000`
+
+**Дослівно з книги**
+
+```
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -1125,7 +1953,7 @@
   > * At a 0x10000 (64 KB) offset in the flash is the app labelled
   >   "factory". The bootloader runs this app by default.
   > nvs,      data, nvs,     0x9000,  0x6000,
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 24), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Прохід 24 звірив ці адреси в розділі 16; тут вони стають видимими в таблицях картки К5, картки К10 і додатка C, де кожна комірка — окрема одиниця, а таблиць три однакові в трьох місцях.
 Саме тут видно, навіщо розбивка на комірки: три рядки «застосунок · classic, S2 → `0x10000`», «S3, C3, C6, H2 → `0x10000`», «P4, C5, H4 → `0x10000`» виглядають надлишковими — і не є ними. Сусідня таблиця для бутлоадера має в тих самих трьох рядках **три різні адреси**, і читач, який побачив одну однакову колонку, мусить бачити й другу, різну, поруч.
 `nvs` на `0x9000` розміром `0x6000` — з типової розбивки самого ESP-IDF; арифметика (`0x9000` + `0x6000` = початок `phy_init`) перевіряється окремо в `tools/arytmetyka.py`.
@@ -1134,11 +1962,31 @@
 ---
 
 <!-- fc id:T-K10-050 sha:ceaada41 src:kartky/k10-komandy.md:67 klas:A -->
-### T-K10-050 · komirka · рядок 67
+### T-K10-050 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > зібраний `merge-bin` · classic, S2 → `0x0`
+
+**Дослівно з книги**
+
+```
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -1153,7 +2001,7 @@
   > (idf-py.rst)
   > …create a single binary file ``merged-binary.[bin|hex]`` in the build
   > folder, which can then be flashed later.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
 Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
 - **Прохід:** pass-28-komandy-suciljno
@@ -1161,11 +2009,31 @@
 ---
 
 <!-- fc id:T-K10-051 sha:9feefdcc src:kartky/k10-komandy.md:67 klas:A -->
-### T-K10-051 · komirka · рядок 67
+### T-K10-051 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > зібраний `merge-bin` · S3, C3, C6, H2 → `0x0`
+
+**Дослівно з книги**
+
+```
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -1180,11 +2048,31 @@
 ---
 
 <!-- fc id:T-K10-052 sha:c94bfb00 src:kartky/k10-komandy.md:67 klas:A -->
-### T-K10-052 · komirka · рядок 67
+### T-K10-052 · komirka · `kartky/k10-komandy.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > зібраний `merge-bin` · P4, C5, H4 → `0x0`
+
+**Дослівно з книги**
+
+```
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
+
+**Контекст**
+
+```
+## Адреси
+
+
+| Що | classic, S2 | S3, C3, C6, H2 | P4, C5, H4 |
+|---|---|---|---|
+| bootloader | `0x1000` | `0x0` | `0x2000` |
+| partition table | `0x8000` | `0x8000` | `0x8000` |
+| застосунок | `0x10000` | `0x10000` | `0x10000` |
+| зібраний `merge-bin` | `0x0` | `0x0` | `0x0` |
+```
 
 **Доказ**
 
@@ -1199,7 +2087,7 @@
   > (idf-py.rst)
   > …create a single binary file ``merged-binary.[bin|hex]`` in the build
   > folder, which can then be flashed later.
-- **Спосіб і дата:** curl raw.githubusercontent (повторно, прохід 9), 2026-08-26
+- **Спосіб і дата:** Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified by substring match.
 - **Нотатка:** Твердження книги випливає з механіки прямо: якщо злиття доповнює проміжки до суцільного образу від нуля, то зсуви вже всередині файлу, і прошивати його треба на `0x0` — на будь-якому чипі.
 Саме тому три рядки таблиці «зібраний `merge-bin` · classic, S2 → `0x0`», «S3, C3, C6, H2 → `0x0`», «P4, C5, H4 → `0x0`» однакові, хоча сусідня таблиця для окремих файлів має три різні адреси. Ця пара таблиць — головне, що картка К10 і додаток C мусять донести, і тепер вона звірена в обох.
 - **Прохід:** pass-28-komandy-suciljno

@@ -171,7 +171,7 @@
 
 ## Етап 6 — документи
 
-`SCHEMA.md`, `ARKHITEKTURA.md`, `POMICHNYKY.md`, `METODYKA.md`
+`SCHEMA.md`, `ARCHITECTURE.md`, `POMICHNYKY.md`, `METODYKA.md`
 переписуються під нову архітектуру. Робочий жаргон лишається **тільки
 тут** — це документи супровідника, і в них він доречний.
 
@@ -240,7 +240,7 @@ something.**
 The slang is not only inside the documents. It **is** the documents:
 
     POMICHNYKY.md   NARYAD-vybirka.md   SHTURM-E.md   MIRA-E.md
-    PODIL.md        PROKHID-POVNYY.md   SLIDY.md      PEREYIZD.md
+    PODIL.md        PROKHID-POVNYY.md   SLIDY.md      SPROSTOVANE.md
     dokazy/  rozbir/  prokhid/  doslidy/  znimky/  hvylya2/
 
 And so are the tools: `naryad_f.py`, `prochid_zvid.py`,
@@ -255,15 +255,16 @@ the card that needed the book to be understood.
 
 **Documents that stay (technology):**
 
-| Now | Becomes |
-|---|---|
-| `ARKHITEKTURA.md` | `ARCHITECTURE.md` |
-| `POMICHNYKY.md` | `WORKERS.md` |
-| `METODYKA.md` | `METHOD.md` |
-| `SPROSTOVANE.md` | `REFUTED.md` |
-| `UROKY-M2.md` | `LESSONS.md` |
-| `PEREYIZD.md` | `MIGRATION.md` |
-| `SCHEMA.md` | `SCHEMA.md` — already plain |
+| Now | Becomes | |
+|---|---|---|
+| `ARKHITEKTURA.md` | `ARCHITECTURE.md` | done |
+| `PEREYIZD.md` | `MIGRATION.md` | done |
+| `PEREVIRYTY.md` | `TO-VERIFY.md` | done |
+| `POMICHNYKY.md` | `WORKERS.md` | |
+| `METODYKA.md` | `METHOD.md` | |
+| `SPROSTOVANE.md` | `REFUTED.md` | |
+| `UROKY-M2.md` | `LESSONS.md` | M2's file — theirs to rename |
+| `SCHEMA.md` | `SCHEMA.md` | already plain |
 
 **Generated reports:**
 
@@ -312,14 +313,48 @@ that correspondence for a Ukrainian book.
 Renames are done in three batches, safest first, each verified before
 the next:
 
-1. **Spent work orders** — deleted, not renamed. `NARYAD-*.md`,
-   `hvylya2/`, `hvylya3/`: finished waves, reproducible from tools.
-   Their durable findings move into `WORKERS.md` first.
+1. **Spent work orders** — *was* "deleted, not renamed". Done, and the
+   plan was wrong twice in the same batch. See below.
 2. **Data directories and generated reports** — nothing imports them by
    name except a handful of path constants.
 3. **Tools** — riskiest: every rename is an import to update, and the
    `Makefile` names them. Done last, one at a time, `make check` after
    each.
 
-After every batch: `tools/snapshot.py … --zvirty`. Zero lost claims or
+After every batch: `tools/znimok.py … --zvirty`. Zero lost claims or
 the batch is reverted.
+
+### What batch 1 actually did, and what it got wrong
+
+Five renames, three archivals, no deletions:
+
+    ARKHITEKTURA.md          → ARCHITECTURE.md
+    PEREYIZD.md              → MIGRATION.md
+    PEREVIRYTY.md            → TO-VERIFY.md
+    NARYAD-nedostupni.md     → UNREACHABLE-SOURCES.md
+    NARYAD-m2-poyasnenyy.md  → WORK-ORDER-EXAMPLE.md
+    NARYAD-m2-{hvylya2,hvylya3,rozbir}.md → archive/
+
+The plan above called the `NARYAD-*.md` files "spent work orders,
+reproducible from tools" and said to delete them. Two were not:
+
+- **`NARYAD-nedostupni.md` is generated** — by `factcheck.py blocked`,
+  from class-`C` records. Deleting it would have deleted a report that
+  regenerates itself, which is harmless; but I had it filed as
+  hand-written, which means the *reason* I kept it was wrong, and next
+  time the same wrong reason could keep something that mattered.
+- **`NARYAD-m2-poyasnenyy.md` is a specimen.** It is the work order that
+  explains its gates instead of only forbidding, and dropping that
+  section is what brought self-citation back (2 of 120 → 0 of 85). The
+  document is the evidence for that measurement.
+
+The three archived ones carry at least one rule each that I could not
+find recorded anywhere else — `hvylya2`'s "a claim whose document is
+not in the cache never enters the order" among them. Archived rather
+than deleted until each rule is confirmed present in `WORKERS.md`.
+
+> The plan said *delete*, and the plan had never opened the files. An
+> inventory made from file names is a guess wearing a table's clothes.
+
+Batch 1 also broke four readers and none of them raised a word: see
+`RE_TVERDZHENNYA` in `tools/factcheck.py`.

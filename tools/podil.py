@@ -27,6 +27,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+
+import factcheck  # noqa: E402  — після правки sys.path
 FC = ROOT / "factcheck"
 GRUPY = ("manual", "kartky", "dodatky", "inserts")
 
@@ -61,10 +64,13 @@ KOSHYKY: list[tuple[str, str, str, re.Pattern]] = [
                 r'дБм|°C)')),
 ]
 
+# Хвіст узято з `factcheck.RE_TVERDZHENNYA`, а не переписано вдруге:
+# своя копія цього рядка вже одного разу мовчки перестала збігатися,
+# коли заголовок картки змінили.
 RE_F = re.compile(
     r'<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>[^\s:]+):(?P<ln>\d+) '
     r'klas:F -->\n### \S+ · (?P<vyd>\w+) · [^\n]*\n\n'
-    r'\*\*Книга каже, дослівно:\*\*\n\n(?P<txt>(?:> [^\n]*\n)+)')
+    + factcheck.RE_TVERDZHENNYA.pattern)
 
 
 def zibraty() -> tuple[list[dict], dict[str, list[dict]]]:

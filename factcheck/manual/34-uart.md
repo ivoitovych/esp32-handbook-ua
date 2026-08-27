@@ -7,11 +7,28 @@
 ---
 
 <!-- fc id:T-34-001 sha:405cf1a7 src:manual/34-uart.md:3 klas:A -->
-### T-34-001 · proza · рядок 3
+### T-34-001 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > UART — найстаріший і найнадійніший спосіб з'єднати два пристрої.
+
+**Дослівно з книги**
+
+```
+UART — найстаріший і найнадійніший спосіб з'єднати два пристрої. Два
+```
+
+**Контекст**
+
+```
+# 34. UART, RS-485, Modbus {#uart}
+
+UART — найстаріший і найнадійніший спосіб з'єднати два пристрої. Два
+дроти, жодного протоколу поверх, працює завжди. Саме тому це основний
+канал між ESP32 і «дорослим» контролером (розділ 57), і саме тому
+консоль зроблена на ньому.
+```
 
 **Доказ**
 
@@ -19,18 +36,35 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > A Universal Asynchronous Receiver/Transmitter (UART) is a hardware feature that handles communication (i.e., timing requirements and data framing) using widely-adopted asynchronous serial communication interfaces
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'UART - надійний спосіб з'єднати пристрої'
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-002 sha:096e0026 src:manual/34-uart.md:3 klas:A -->
-### T-34-002 · proza · рядок 3
+### T-34-002 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Два дроти, жодного протоколу поверх, працює завжди.
+
+**Дослівно з книги**
+
+```
+UART — найстаріший і найнадійніший спосіб з'єднати два пристрої. Два
+```
+
+**Контекст**
+
+```
+# 34. UART, RS-485, Modbus {#uart}
+
+UART — найстаріший і найнадійніший спосіб з'єднати два пристрої. Два
+дроти, жодного протоколу поверх, працює завжди. Саме тому це основний
+канал між ESP32 і «дорослим» контролером (розділ 57), і саме тому
+консоль зроблена на ньому.
+```
 
 **Доказ**
 
@@ -38,18 +72,35 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > A UART provides a widely adopted and cheap method to realize full-duplex or half-duplex data exchange among different devices
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'простий обмін двома дротами'
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-003 sha:9e409f4f src:manual/34-uart.md:3 klas:F -->
-### T-34-003 · proza · рядок 3
+### T-34-003 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Саме тому це основний канал між ESP32 і «дорослим» контролером (розділ 57), і саме тому консоль зроблена на ньому.
+
+**Дослівно з книги**
+
+```
+UART — найстаріший і найнадійніший спосіб з'єднати два пристрої. Два
+```
+
+**Контекст**
+
+```
+# 34. UART, RS-485, Modbus {#uart}
+
+UART — найстаріший і найнадійніший спосіб з'єднати два пристрої. Два
+дроти, жодного протоколу поверх, працює завжди. Саме тому це основний
+канал між ESP32 і «дорослим» контролером (розділ 57), і саме тому
+консоль зроблена на ньому.
+```
 
 **Доказ**
 
@@ -58,11 +109,26 @@
 ---
 
 <!-- fc id:T-34-004 sha:e30b590e src:manual/34-uart.md:10 klas:A -->
-### T-34-004 · proza · рядок 10
+### T-34-004 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > [[classic]] ESP32 classic має три контролери UART, S3 — три, C3 — два (розділ 04).
+
+**Дослівно з книги**
+
+```
+[[classic]] ESP32 classic має три контролери UART, S3 — три, C3 — два
+```
+
+**Контекст**
+
+```
+## Апаратні порти
+
+[[classic]] ESP32 classic має три контролери UART, S3 — три, C3 — два
+(розділ 04).
+```
 
 **Доказ**
 
@@ -70,18 +136,34 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > The {IDF_TARGET_NAME} chip has {IDF_TARGET_SOC_UART_HP_NUM} UART controllers
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'документація про кількість UART контролерів, але не з конкретними числами для класичного, S3, C3'
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-005 sha:33043f87 src:manual/34-uart.md:13 klas:E -->
-### T-34-005 · proza · рядок 13
+### T-34-005 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **UART0 зайнятий консоллю.** Через нього йде boot-лог і прошивка (розділ 16).
+
+**Дослівно з книги**
+
+```
+**UART0 зайнятий консоллю.** Через нього йде boot-лог і прошивка
+```
+
+**Контекст**
+
+```
+## Апаратні порти
+
+**UART0 зайнятий консоллю.** Через нього йде boot-лог і прошивка
+(розділ 16). Використати його під щось інше можна, але тоді ви втрачаєте
+і лог, і зручну прошивку — тобто саме те, чим діагностують проблеми.
+```
 
 **Доказ**
 
@@ -102,11 +184,27 @@
 ---
 
 <!-- fc id:T-34-006 sha:466d08cb src:manual/34-uart.md:13 klas:E -->
-### T-34-006 · proza · рядок 13
+### T-34-006 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Використати його під щось інше можна, але тоді ви втрачаєте і лог, і зручну прошивку — тобто саме те, чим діагностують проблеми.
+
+**Дослівно з книги**
+
+```
+**UART0 зайнятий консоллю.** Через нього йде boot-лог і прошивка
+```
+
+**Контекст**
+
+```
+## Апаратні порти
+
+**UART0 зайнятий консоллю.** Через нього йде boot-лог і прошивка
+(розділ 16). Використати його під щось інше можна, але тоді ви втрачаєте
+і лог, і зручну прошивку — тобто саме те, чим діагностують проблеми.
+```
 
 **Доказ**
 
@@ -115,11 +213,19 @@
 ---
 
 <!-- fc id:T-34-007 sha:1b266a8c src:manual/34-uart.md:17 klas:E -->
-### T-34-007 · proza · рядок 17
+### T-34-007 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Правило: чіпати UART0 лише тоді, коли пінів справді не лишилося.
+
+**Контекст**
+
+```
+## Апаратні порти
+
+Правило: чіпати UART0 лише тоді, коли пінів справді не лишилося.
+```
 
 **Доказ**
 
@@ -140,11 +246,26 @@
 ---
 
 <!-- fc id:T-34-008 sha:ba870d19 src:manual/34-uart.md:19 klas:F -->
-### T-34-008 · proza · рядок 19
+### T-34-008 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Решта портів вільні, і завдяки матриці GPIO їх можна вивести майже на будь-які піни (розділ 04):
+
+**Дослівно з книги**
+
+```
+Решта портів вільні, і завдяки матриці GPIO їх можна вивести майже на
+```
+
+**Контекст**
+
+```
+## Апаратні порти
+
+Решта портів вільні, і завдяки матриці GPIO їх можна вивести майже на
+будь-які піни (розділ 04):
+```
 
 **Доказ**
 
@@ -153,9 +274,9 @@
 ---
 
 <!-- fc id:T-34-009 sha:eaeb4494 src:manual/34-uart.md:22 klas:K -->
-### T-34-009 · kod · рядок 22
+### T-34-009 · kod · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > uart_config_t cfg = {
@@ -171,6 +292,33 @@
 > uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
 >              UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -195,11 +343,32 @@
 ---
 
 <!-- fc id:T-34-010 sha:0ecccdfd src:manual/34-uart.md:24 klas:F -->
-### T-34-010 · kod-ryadok · рядок 24
+### T-34-010 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .baud_rate = 115200,
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -208,11 +377,32 @@
 ---
 
 <!-- fc id:T-34-011 sha:de4a2194 src:manual/34-uart.md:25 klas:E -->
-### T-34-011 · kod-ryadok · рядок 25
+### T-34-011 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .data_bits = UART_DATA_8_BITS,
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -233,11 +423,32 @@
 ---
 
 <!-- fc id:T-34-012 sha:72283452 src:manual/34-uart.md:26 klas:E -->
-### T-34-012 · kod-ryadok · рядок 26
+### T-34-012 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .parity = UART_PARITY_DISABLE,
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -258,11 +469,32 @@
 ---
 
 <!-- fc id:T-34-013 sha:c088f2eb src:manual/34-uart.md:27 klas:E -->
-### T-34-013 · kod-ryadok · рядок 27
+### T-34-013 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .stop_bits = UART_STOP_BITS_1,
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -283,11 +515,32 @@
 ---
 
 <!-- fc id:T-34-014 sha:d5c483dd src:manual/34-uart.md:28 klas:A -->
-### T-34-014 · kod-ryadok · рядок 28
+### T-34-014 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -320,11 +573,32 @@
 ---
 
 <!-- fc id:T-34-015 sha:78289e1c src:manual/34-uart.md:29 klas:E -->
-### T-34-015 · kod-ryadok · рядок 29
+### T-34-015 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > .source_clk = UART_SCLK_DEFAULT,
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -345,11 +619,32 @@
 ---
 
 <!-- fc id:T-34-016 sha:a15a6798 src:manual/34-uart.md:31 klas:A -->
-### T-34-016 · kod-ryadok · рядок 31
+### T-34-016 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -374,11 +669,32 @@
 ---
 
 <!-- fc id:T-34-017 sha:db88189a src:manual/34-uart.md:32 klas:A -->
-### T-34-017 · kod-ryadok · рядок 32
+### T-34-017 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > uart_param_config(UART_NUM_1, &cfg);
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uart_config_t cfg = {
+    .baud_rate = 115200,
+    .data_bits = UART_DATA_8_BITS,
+    .parity = UART_PARITY_DISABLE,
+    .stop_bits = UART_STOP_BITS_1,
+    .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+    .source_clk = UART_SCLK_DEFAULT,
+};
+uart_driver_install(UART_NUM_1, 2048, 0, 0, NULL, 0);
+uart_param_config(UART_NUM_1, &cfg);
+uart_set_pin(UART_NUM_1, GPIO_NUM_17, GPIO_NUM_16,
+             UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+```
+````
 
 **Доказ**
 
@@ -403,15 +719,33 @@
 ---
 
 <!-- fc id:T-34-018 sha:4133379a src:manual/34-uart.md:39 klas:K -->
-### T-34-018 · kod · рядок 39
+### T-34-018 · kod · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > uint8_t buf[128];
 > int n = uart_read_bytes(UART_NUM_1, buf, sizeof(buf), pdMS_TO_TICKS(100));
 > if (n > 0) obrobyty(buf, n);
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uint8_t buf[128];
+int n = uart_read_bytes(UART_NUM_1, buf, sizeof(buf), pdMS_TO_TICKS(100));
+if (n > 0) obrobyty(buf, n);
+```
+````
 
 **Доказ**
 
@@ -436,11 +770,23 @@
 ---
 
 <!-- fc id:T-34-019 sha:4eb6ce85 src:manual/34-uart.md:42 klas:F -->
-### T-34-019 · kod-ryadok · рядок 42
+### T-34-019 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > if (n > 0) obrobyty(buf, n);
+
+**Контекст**
+
+````
+## Апаратні порти
+
+```c
+uint8_t buf[128];
+int n = uart_read_bytes(UART_NUM_1, buf, sizeof(buf), pdMS_TO_TICKS(100));
+if (n > 0) obrobyty(buf, n);
+```
+````
 
 **Доказ**
 
@@ -449,11 +795,27 @@
 ---
 
 <!-- fc id:T-34-020 sha:1523e3e9 src:manual/34-uart.md:46 klas:A -->
-### T-34-020 · proza · рядок 46
+### T-34-020 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Розмір буфера драйвера має значення.** Дані приходять, поки ваша задача зайнята чимось іншим; якщо буфер переповниться, вони губляться мовчки.
+
+**Дослівно з книги**
+
+```
+**Розмір буфера драйвера має значення.** Дані приходять, поки ваша задача
+```
+
+**Контекст**
+
+```
+## Апаратні порти
+
+::: uvaha
+**Розмір буфера драйвера має значення.** Дані приходять, поки ваша задача
+зайнята чимось іншим; якщо буфер переповниться, вони губляться мовчки.
+```
 
 **Доказ**
 
@@ -461,18 +823,35 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > When there is free space in the TX FIFO buffer, an interrupt service routine (ISR) moves the data from the TX ring buffer to the TX FIFO buffer in the background
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** розмір буфера має значення, дані можуть бути втрачені при переповненні
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-021 sha:4de53afa src:manual/34-uart.md:49 klas:D -->
-### T-34-021 · proza · рядок 49
+### T-34-021 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для потоку на 115200 бод це близько 11 КБ на секунду.
+
+**Дослівно з книги**
+
+```
+Для потоку на 115200 бод це близько 11 КБ на секунду. Буфер на 256 байтів
+```
+
+**Контекст**
+
+```
+## Апаратні порти
+
+Для потоку на 115200 бод це близько 11 КБ на секунду. Буфер на 256 байтів
+означає, що задача мусить читати частіше ніж кожні 22 мілісекунди — а
+вона цього не гарантує. 2 КБ і більше — розумний старт.
+:::
+```
 
 **Доказ**
 
@@ -511,11 +890,28 @@
 ---
 
 <!-- fc id:T-34-022 sha:7e8a9923 src:manual/34-uart.md:49 klas:D -->
-### T-34-022 · proza · рядок 49
+### T-34-022 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Буфер на 256 байтів означає, що задача мусить читати частіше ніж кожні 22 мілісекунди — а вона цього не гарантує. 2 КБ і більше — розумний старт.
+
+**Дослівно з книги**
+
+```
+Для потоку на 115200 бод це близько 11 КБ на секунду. Буфер на 256 байтів
+```
+
+**Контекст**
+
+```
+## Апаратні порти
+
+Для потоку на 115200 бод це близько 11 КБ на секунду. Буфер на 256 байтів
+означає, що задача мусить читати частіше ніж кожні 22 мілісекунди — а
+вона цього не гарантує. 2 КБ і більше — розумний старт.
+:::
+```
 
 **Доказ**
 
@@ -554,11 +950,26 @@
 ---
 
 <!-- fc id:T-34-023 sha:8ff21382 src:manual/34-uart.md:56 klas:E -->
-### T-34-023 · proza · рядок 56
+### T-34-023 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Не та швидкість.** Найчастіше.
+
+**Дослівно з книги**
+
+```
+**Не та швидкість.** Найчастіше. У моніторі — сміття зі стабільною
+```
+
+**Контекст**
+
+```
+## Що йде не так
+
+**Не та швидкість.** Найчастіше. У моніторі — сміття зі стабільною
+структурою (розділ 25).
+```
 
 **Доказ**
 
@@ -579,11 +990,26 @@
 ---
 
 <!-- fc id:T-34-024 sha:31504aa6 src:manual/34-uart.md:56 klas:E -->
-### T-34-024 · proza · рядок 56
+### T-34-024 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > У моніторі — сміття зі стабільною структурою (розділ 25).
+
+**Дослівно з книги**
+
+```
+**Не та швидкість.** Найчастіше. У моніторі — сміття зі стабільною
+```
+
+**Контекст**
+
+```
+## Що йде не так
+
+**Не та швидкість.** Найчастіше. У моніторі — сміття зі стабільною
+структурою (розділ 25).
+```
 
 **Доказ**
 
@@ -604,11 +1030,26 @@
 ---
 
 <!-- fc id:T-34-025 sha:29501eb4 src:manual/34-uart.md:59 klas:E -->
-### T-34-025 · proza · рядок 59
+### T-34-025 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Переплутані TX і RX.** Друга за частотою.
+
+**Дослівно з книги**
+
+```
+**Переплутані TX і RX.** Друга за частотою. З'єднання завжди
+```
+
+**Контекст**
+
+```
+## Що йде не так
+
+**Переплутані TX і RX.** Друга за частотою. З'єднання завжди
+перехресне: `TX` одного до `RX` другого.
+```
 
 **Доказ**
 
@@ -617,11 +1058,26 @@
 ---
 
 <!-- fc id:T-34-026 sha:53baba2c src:manual/34-uart.md:59 klas:F -->
-### T-34-026 · proza · рядок 59
+### T-34-026 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > З'єднання завжди перехресне: `TX` одного до `RX` другого.
+
+**Дослівно з книги**
+
+```
+**Переплутані TX і RX.** Друга за частотою. З'єднання завжди
+```
+
+**Контекст**
+
+```
+## Що йде не так
+
+**Переплутані TX і RX.** Друга за частотою. З'єднання завжди
+перехресне: `TX` одного до `RX` другого.
+```
 
 **Доказ**
 
@@ -630,11 +1086,26 @@
 ---
 
 <!-- fc id:T-34-027 sha:c9627eb4 src:manual/34-uart.md:62 klas:E -->
-### T-34-027 · proza · рядок 62
+### T-34-027 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Немає спільної землі.** Обмін не працює або йде з випадковими помилками (розділ 05).
+
+**Дослівно з книги**
+
+```
+**Немає спільної землі.** Обмін не працює або йде з випадковими
+```
+
+**Контекст**
+
+```
+## Що йде не так
+
+**Немає спільної землі.** Обмін не працює або йде з випадковими
+помилками (розділ 05).
+```
 
 **Доказ**
 
@@ -643,11 +1114,26 @@
 ---
 
 <!-- fc id:T-34-028 sha:7c404133 src:manual/34-uart.md:65 klas:B -->
-### T-34-028 · proza · рядок 65
+### T-34-028 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Різні логічні рівні.** Пристрій на 5 В подає 5 В на вхід ESP32 (розділ 47).
+
+**Дослівно з книги**
+
+```
+**Різні логічні рівні.** Пристрій на 5 В подає 5 В на вхід ESP32
+```
+
+**Контекст**
+
+```
+## Що йде не так
+
+**Різні логічні рівні.** Пристрій на 5 В подає 5 В на вхід ESP32
+(розділ 47).
+```
 
 **Доказ**
 
@@ -665,11 +1151,19 @@
 ---
 
 <!-- fc id:T-34-029 sha:9b1de374 src:manual/34-uart.md:68 klas:E -->
-### T-34-029 · proza · рядок 68
+### T-34-029 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Порт зайнятий консоллю** — випадково взяли UART0.
+
+**Контекст**
+
+```
+## Що йде не так
+
+**Порт зайнятий консоллю** — випадково взяли UART0.
+```
 
 **Доказ**
 
@@ -690,11 +1184,28 @@
 ---
 
 <!-- fc id:T-34-030 sha:39244fe0 src:manual/34-uart.md:72 klas:A -->
-### T-34-030 · proza · рядок 72
+### T-34-030 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Звичайний UART працює на десятки сантиметрів.
+
+**Дослівно з книги**
+
+```
+Звичайний UART працює на десятки сантиметрів. RS-485 передає той самий
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+Звичайний UART працює на десятки сантиметрів. RS-485 передає той самий
+сигнал диференціально — двома дротами з протилежними рівнями — і це дає
+**сотні метрів** та стійкість до завад. Стандарт промислової
+автоматики.
+```
 
 **Доказ**
 
@@ -702,18 +1213,35 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > A UART provides a widely adopted and cheap method to realize full-duplex or half-duplex data exchange among different devices
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** звичайний UART працює на близькі відстані
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-031 sha:ad470fae src:manual/34-uart.md:72 klas:A -->
-### T-34-031 · proza · рядок 72
+### T-34-031 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > RS-485 передає той самий сигнал диференціально — двома дротами з протилежними рівнями — і це дає **сотні метрів** та стійкість до завад.
+
+**Дослівно з книги**
+
+```
+Звичайний UART працює на десятки сантиметрів. RS-485 передає той самий
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+Звичайний UART працює на десятки сантиметрів. RS-485 передає той самий
+сигнал диференціально — двома дротами з протилежними рівнями — і це дає
+**сотні метрів** та стійкість до завад. Стандарт промислової
+автоматики.
+```
 
 **Доказ**
 
@@ -744,11 +1272,28 @@
 ---
 
 <!-- fc id:T-34-032 sha:a2f28f6d src:manual/34-uart.md:72 klas:E -->
-### T-34-032 · proza · рядок 72
+### T-34-032 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Стандарт промислової автоматики.
+
+**Дослівно з книги**
+
+```
+Звичайний UART працює на десятки сантиметрів. RS-485 передає той самий
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+Звичайний UART працює на десятки сантиметрів. RS-485 передає той самий
+сигнал диференціально — двома дротами з протилежними рівнями — і це дає
+**сотні метрів** та стійкість до завад. Стандарт промислової
+автоматики.
+```
 
 **Доказ**
 
@@ -757,11 +1302,26 @@
 ---
 
 <!-- fc id:T-34-033 sha:6902345f src:manual/34-uart.md:77 klas:C -->
-### T-34-033 · proza · рядок 77
+### T-34-033 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Потрібен трансивер: MAX485, SP3485 або аналог.
+
+**Дослівно з книги**
+
+```
+Потрібен трансивер: MAX485, SP3485 або аналог. MAX485 живиться від 5 В;
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+Потрібен трансивер: MAX485, SP3485 або аналог. MAX485 живиться від 5 В;
+для 3.3 В беруть версію на 3.3 В, інакше потрібне узгодження рівнів.
+```
 
 **Доказ**
 
@@ -774,11 +1334,26 @@
 ---
 
 <!-- fc id:T-34-034 sha:571d2d0c src:manual/34-uart.md:77 klas:B -->
-### T-34-034 · proza · рядок 77
+### T-34-034 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > MAX485 живиться від 5 В; для 3.3 В беруть версію на 3.3 В, інакше потрібне узгодження рівнів.
+
+**Дослівно з книги**
+
+```
+Потрібен трансивер: MAX485, SP3485 або аналог. MAX485 живиться від 5 В;
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+Потрібен трансивер: MAX485, SP3485 або аналог. MAX485 живиться від 5 В;
+для 3.3 В беруть версію на 3.3 В, інакше потрібне узгодження рівнів.
+```
 
 **Доказ**
 
@@ -796,11 +1371,20 @@
 ---
 
 <!-- fc id:T-34-035 sha:aee702d0 src:manual/34-uart.md:80 klas:E -->
-### T-34-035 · proza · рядок 80
+### T-34-035 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Напівдуплекс.** Лінія одна, тому в кожен момент говорить хтось один.
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+**Напівдуплекс.** Лінія одна, тому в кожен момент говорить хтось один.
+Напрямком керує окремий пін `DE`/`RE`:
+```
 
 **Доказ**
 
@@ -809,11 +1393,20 @@
 ---
 
 <!-- fc id:T-34-036 sha:9fe91835 src:manual/34-uart.md:80 klas:A -->
-### T-34-036 · proza · рядок 80
+### T-34-036 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Напрямком керує окремий пін `DE`/`RE`:
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+**Напівдуплекс.** Лінія одна, тому в кожен момент говорить хтось один.
+Напрямком керує окремий пін `DE`/`RE`:
+```
 
 **Доказ**
 
@@ -821,16 +1414,16 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > either DTR or RTS pin can be connected to the DE/~RE pin of the transceiver module to achieve half-duplex communication.
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ описує керування напрямком через DE/RE пін
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-037 sha:4659580a src:manual/34-uart.md:83 klas:K -->
-### T-34-037 · kod · рядок 83
+### T-34-037 · kod · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ```c
 > gpio_set_level(PIN_DE, 1);                    // передавання
@@ -838,6 +1431,25 @@
 > uart_wait_tx_done(UART_NUM_1, portMAX_DELAY); // ДОЧЕКАТИСЯ
 > gpio_set_level(PIN_DE, 0);                    // приймання
 > ```
+
+**Дослівно з книги**
+
+````
+```c
+````
+
+**Контекст**
+
+````
+## RS-485: той самий UART на сотні метрів
+
+```c
+gpio_set_level(PIN_DE, 1);                    // передавання
+uart_write_bytes(UART_NUM_1, data, len);
+uart_wait_tx_done(UART_NUM_1, portMAX_DELAY); // ДОЧЕКАТИСЯ
+gpio_set_level(PIN_DE, 0);                    // приймання
+```
+````
 
 **Доказ**
 
@@ -862,11 +1474,24 @@
 ---
 
 <!-- fc id:T-34-038 sha:d7a566be src:manual/34-uart.md:85 klas:A -->
-### T-34-038 · kod-ryadok · рядок 85
+### T-34-038 · kod-ryadok · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > uart_write_bytes(UART_NUM_1, data, len);
+
+**Контекст**
+
+````
+## RS-485: той самий UART на сотні метрів
+
+```c
+gpio_set_level(PIN_DE, 1);                    // передавання
+uart_write_bytes(UART_NUM_1, data, len);
+uart_wait_tx_done(UART_NUM_1, portMAX_DELAY); // ДОЧЕКАТИСЯ
+gpio_set_level(PIN_DE, 0);                    // приймання
+```
+````
 
 **Доказ**
 
@@ -891,11 +1516,29 @@
 ---
 
 <!-- fc id:T-34-039 sha:38b394a2 src:manual/34-uart.md:91 klas:A -->
-### T-34-039 · proza · рядок 91
+### T-34-039 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `uart_wait_tx_done` **обов'язковий**.
+
+**Дослівно з книги**
+
+```
+`uart_wait_tx_done` **обов'язковий**. `uart_write_bytes` лише кладе дані
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+::: nezvorotne
+`uart_wait_tx_done` **обов'язковий**. `uart_write_bytes` лише кладе дані
+в буфер і повертається одразу — фізична передача ще триває. Перемкнути
+напрямок відразу після нього означає обрізати власну посилку
+посередині.
+```
 
 **Доказ**
 
@@ -920,11 +1563,29 @@
 ---
 
 <!-- fc id:T-34-040 sha:03cc4670 src:manual/34-uart.md:91 klas:A -->
-### T-34-040 · proza · рядок 91
+### T-34-040 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > `uart_write_bytes` лише кладе дані в буфер і повертається одразу — фізична передача ще триває.
+
+**Дослівно з книги**
+
+```
+`uart_wait_tx_done` **обов'язковий**. `uart_write_bytes` лише кладе дані
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+::: nezvorotne
+`uart_wait_tx_done` **обов'язковий**. `uart_write_bytes` лише кладе дані
+в буфер і повертається одразу — фізична передача ще триває. Перемкнути
+напрямок відразу після нього означає обрізати власну посилку
+посередині.
+```
 
 **Доказ**
 
@@ -949,11 +1610,29 @@
 ---
 
 <!-- fc id:T-34-041 sha:41dd0a6c src:manual/34-uart.md:91 klas:A -->
-### T-34-041 · proza · рядок 91
+### T-34-041 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Перемкнути напрямок відразу після нього означає обрізати власну посилку посередині.
+
+**Дослівно з книги**
+
+```
+`uart_wait_tx_done` **обов'язковий**. `uart_write_bytes` лише кладе дані
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+::: nezvorotne
+`uart_wait_tx_done` **обов'язковий**. `uart_write_bytes` лише кладе дані
+в буфер і повертається одразу — фізична передача ще триває. Перемкнути
+напрямок відразу після нього означає обрізати власну посилку
+посередині.
+```
 
 **Доказ**
 
@@ -961,18 +1640,34 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > The DTR line is automatically controlled by the hardware directly under RS485 half-duplex mode, while the RTS line is software-controlled by the UART driver. Once the host starts writing data to the TX FIFO buffer, the UART driver automatically asserts the RTS pin (logic 1); once the last bit of the data has been transmitted, the driver de-asserts the RTS pin (logic 0)
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** тут описано, як контролюється напрямок і можна обрізати посилку
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-042 sha:2e56ebd0 src:manual/34-uart.md:96 klas:A -->
-### T-34-042 · proza · рядок 96
+### T-34-042 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Це найчастіша помилка при роботі з RS-485, і виглядає вона як «інколи губляться відповіді».
+
+**Дослівно з книги**
+
+```
+Це найчастіша помилка при роботі з RS-485, і виглядає вона як «інколи
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+Це найчастіша помилка при роботі з RS-485, і виглядає вона як «інколи
+губляться відповіді».
+:::
+```
 
 **Доказ**
 
@@ -1003,11 +1698,27 @@
 ---
 
 <!-- fc id:T-34-043 sha:f3383e4e src:manual/34-uart.md:100 klas:A -->
-### T-34-043 · proza · рядок 100
+### T-34-043 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Термінатори.** На обох кінцях лінії — резистор 120 Ом між лініями `A` і `B`.
+
+**Дослівно з книги**
+
+```
+**Термінатори.** На обох кінцях лінії — резистор 120 Ом між лініями `A`
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+**Термінатори.** На обох кінцях лінії — резистор 120 Ом між лініями `A`
+і `B`. На коротких лініях працює і без них; на довгих без термінаторів
+з'являються відбиття й помилки, які виглядають як випадкові збої.
+```
 
 **Доказ**
 
@@ -1024,11 +1735,27 @@
 ---
 
 <!-- fc id:T-34-044 sha:f3a2d1cf src:manual/34-uart.md:100 klas:A -->
-### T-34-044 · proza · рядок 100
+### T-34-044 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > На коротких лініях працює і без них; на довгих без термінаторів з'являються відбиття й помилки, які виглядають як випадкові збої.
+
+**Дослівно з книги**
+
+```
+**Термінатори.** На обох кінцях лінії — резистор 120 Ом між лініями `A`
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+**Термінатори.** На обох кінцях лінії — резистор 120 Ом між лініями `A`
+і `B`. На коротких лініях працює і без них; на довгих без термінаторів
+з'являються відбиття й помилки, які виглядають як випадкові збої.
+```
 
 **Доказ**
 
@@ -1036,18 +1763,28 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > Interface Connection Options
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'документація обговорює резистори в RS485 ланцюгу'
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-045 sha:1a6731a6 src:manual/34-uart.md:104 klas:A -->
-### T-34-045 · proza · рядок 104
+### T-34-045 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Багато модулів мають термінатор на платі, іноді припаяний намертво.
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+Багато модулів мають термінатор на платі, іноді припаяний намертво.
+Три пристрої з термінаторами на одній лінії — це втричі менший опір,
+ніж треба, і сигнал просідає.
+```
 
 **Доказ**
 
@@ -1055,18 +1792,34 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > This circuit does not allow for collision detection. It suppresses the null bytes that the hardware receives when the bit UART_RS485_CONF_REG.UART_RS485TX_RX_EN is set.
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'багато модулів мають термінатор на платі'
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-046 sha:2bfcc462 src:manual/34-uart.md:104 klas:E -->
-### T-34-046 · proza · рядок 104
+### T-34-046 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Три пристрої з термінаторами на одній лінії — це втричі менший опір, ніж треба, і сигнал просідає.
+
+**Дослівно з книги**
+
+```
+Багато модулів мають термінатор на платі, іноді припаяний намертво.
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+Багато модулів мають термінатор на платі, іноді припаяний намертво.
+Три пристрої з термінаторами на одній лінії — це втричі менший опір,
+ніж треба, і сигнал просідає.
+```
 
 **Доказ**
 
@@ -1086,11 +1839,27 @@
 ---
 
 <!-- fc id:T-34-047 sha:f84f390a src:manual/34-uart.md:108 klas:F -->
-### T-34-047 · proza · рядок 108
+### T-34-047 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Полярність.** Лінії `A` і `B` маркуються по-різному в різних виробників.
+
+**Дослівно з книги**
+
+```
+**Полярність.** Лінії `A` і `B` маркуються по-різному в різних
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+**Полярність.** Лінії `A` і `B` маркуються по-різному в різних
+виробників. Якщо обмін не йде — поміняти місцями. Це безпечно і
+розв'язує половину випадків.
+```
 
 **Доказ**
 
@@ -1099,11 +1868,27 @@
 ---
 
 <!-- fc id:T-34-048 sha:41309921 src:manual/34-uart.md:108 klas:A -->
-### T-34-048 · proza · рядок 108
+### T-34-048 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Якщо обмін не йде — поміняти місцями.
+
+**Дослівно з книги**
+
+```
+виробників. Якщо обмін не йде — поміняти місцями. Це безпечно і
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+**Полярність.** Лінії `A` і `B` маркуються по-різному в різних
+виробників. Якщо обмін не йде — поміняти місцями. Це безпечно і
+розв'язує половину випадків.
+```
 
 **Доказ**
 
@@ -1111,18 +1896,34 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > Interface Connection Options
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'якщо обмін не йде - поміняти місцями'
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-049 sha:e2d3420d src:manual/34-uart.md:108 klas:A -->
-### T-34-049 · proza · рядок 108
+### T-34-049 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Це безпечно і розв'язує половину випадків.
+
+**Дослівно з книги**
+
+```
+**Полярність.** Лінії `A` і `B` маркуються по-різному в різних
+```
+
+**Контекст**
+
+```
+## RS-485: той самий UART на сотні метрів
+
+**Полярність.** Лінії `A` і `B` маркуються по-різному в різних
+виробників. Якщо обмін не йде — поміняти місцями. Це безпечно і
+розв'язує половину випадків.
+```
 
 **Доказ**
 
@@ -1130,18 +1931,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > This circuit is preferable because it allows for collision detection
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'це безпечно і розв'язує половину випадків'
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-050 sha:4264ac23 src:manual/34-uart.md:114 klas:A -->
-### T-34-050 · proza · рядок 114
+### T-34-050 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Протокол поверх RS-485, стандарт промислового обладнання: лічильники, частотні перетворювачі, датчики, контролери.
+
+**Дослівно з книги**
+
+```
+Протокол поверх RS-485, стандарт промислового обладнання: лічильники,
+```
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+Протокол поверх RS-485, стандарт промислового обладнання: лічильники,
+частотні перетворювачі, датчики, контролери.
+```
 
 **Доказ**
 
@@ -1172,11 +1988,27 @@
 ---
 
 <!-- fc id:T-34-051 sha:fef35fc5 src:manual/34-uart.md:117 klas:E -->
-### T-34-051 · proza · рядок 117
+### T-34-051 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Модель проста: один ведучий (master), кілька ведених (slave), у кожного свій адресний номер від 1 до 247.
+
+**Дослівно з книги**
+
+```
+Модель проста: один ведучий (master), кілька ведених (slave), у кожного
+```
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+Модель проста: один ведучий (master), кілька ведених (slave), у кожного
+свій адресний номер від 1 до 247. Ведучий питає — ведений відповідає.
+Сам ведений не говорить ніколи.
+```
 
 **Доказ**
 
@@ -1185,11 +2017,27 @@
 ---
 
 <!-- fc id:T-34-052 sha:c29b5808 src:manual/34-uart.md:117 klas:E -->
-### T-34-052 · proza · рядок 117
+### T-34-052 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Ведучий питає — ведений відповідає.
+
+**Дослівно з книги**
+
+```
+свій адресний номер від 1 до 247. Ведучий питає — ведений відповідає.
+```
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+Модель проста: один ведучий (master), кілька ведених (slave), у кожного
+свій адресний номер від 1 до 247. Ведучий питає — ведений відповідає.
+Сам ведений не говорить ніколи.
+```
 
 **Доказ**
 
@@ -1198,11 +2046,21 @@
 ---
 
 <!-- fc id:T-34-053 sha:9a286814 src:manual/34-uart.md:117 klas:E -->
-### T-34-053 · proza · рядок 117
+### T-34-053 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Сам ведений не говорить ніколи.
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+Модель проста: один ведучий (master), кілька ведених (slave), у кожного
+свій адресний номер від 1 до 247. Ведучий питає — ведений відповідає.
+Сам ведений не говорить ніколи.
+```
 
 **Доказ**
 
@@ -1211,11 +2069,26 @@
 ---
 
 <!-- fc id:T-34-054 sha:bbb90e38 src:manual/34-uart.md:121 klas:E -->
-### T-34-054 · proza · рядок 121
+### T-34-054 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Дані — набір регістрів, доступ до яких дає жменя функцій: прочитати регістри зберігання, прочитати вхідні, записати один, записати кілька.
+
+**Дослівно з книги**
+
+```
+Дані — набір регістрів, доступ до яких дає жменя функцій: прочитати
+```
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+Дані — набір регістрів, доступ до яких дає жменя функцій: прочитати
+регістри зберігання, прочитати вхідні, записати один, записати кілька.
+```
 
 **Доказ**
 
@@ -1224,11 +2097,27 @@
 ---
 
 <!-- fc id:T-34-055 sha:6652258c src:manual/34-uart.md:124 klas:A -->
-### T-34-055 · proza · рядок 124
+### T-34-055 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > ESP-IDF має штатний компонент `esp-modbus` для обох ролей: ESP32 може бути й ведучим (опитувати обладнання), і веденим (виглядати як стандартний пристрій для чужої системи).
+
+**Дослівно з книги**
+
+```
+ESP-IDF має штатний компонент `esp-modbus` для обох ролей: ESP32 може
+```
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+ESP-IDF має штатний компонент `esp-modbus` для обох ролей: ESP32 може
+бути й ведучим (опитувати обладнання), і веденим (виглядати як
+стандартний пристрій для чужої системи).
+```
 
 **Доказ**
 
@@ -1236,18 +2125,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/protocols/modbus.rst
 - **Дослівно з джерела:**
   > The Espressif ESP-Modbus Library (esp-modbus) supports Modbus communication
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** про компонент esp-modbus у ESP-IDF
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-056 sha:832fb568 src:manual/34-uart.md:128 klas:E -->
-### T-34-056 · proza · рядок 128
+### T-34-056 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Друга роль часто найцінніша: ваш виріб стає доступним для будь-якої SCADA чи ПЛК без жодної домовленості про формат.
+
+**Дослівно з книги**
+
+```
+Друга роль часто найцінніша: ваш виріб стає доступним для будь-якої
+```
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+Друга роль часто найцінніша: ваш виріб стає доступним для будь-якої
+SCADA чи ПЛК без жодної домовленості про формат.
+```
 
 **Доказ**
 
@@ -1256,11 +2160,30 @@
 ---
 
 <!-- fc id:T-34-057 sha:c05ded58 src:manual/34-uart.md:132 klas:F -->
-### T-34-057 · proza · рядок 132
+### T-34-057 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > При налагодженні Modbus логічний аналізатор економить години (розділ 28).
+
+**Дослівно з книги**
+
+```
+При налагодженні Modbus логічний аналізатор економить години
+```
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+::: uvaha
+При налагодженні Modbus логічний аналізатор економить години
+(розділ 28). Видно одразу: чи вийшла посилка, чи відповів ведений, чи
+збігається контрольна сума, чи не обрізано кінець через ранній перехід
+на приймання.
+:::
+```
 
 **Доказ**
 
@@ -1269,11 +2192,30 @@
 ---
 
 <!-- fc id:T-34-058 sha:b66992f9 src:manual/34-uart.md:132 klas:E -->
-### T-34-058 · proza · рядок 132
+### T-34-058 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Видно одразу: чи вийшла посилка, чи відповів ведений, чи збігається контрольна сума, чи не обрізано кінець через ранній перехід на приймання.
+
+**Дослівно з книги**
+
+```
+При налагодженні Modbus логічний аналізатор економить години
+```
+
+**Контекст**
+
+```
+## Modbus RTU, оглядово
+
+::: uvaha
+При налагодженні Modbus логічний аналізатор економить години
+(розділ 28). Видно одразу: чи вийшла посилка, чи відповів ведений, чи
+збігається контрольна сума, чи не обрізано кінець через ранній перехід
+на приймання.
+:::
+```
 
 **Доказ**
 
@@ -1282,11 +2224,26 @@
 ---
 
 <!-- fc id:T-34-059 sha:f000932c src:manual/34-uart.md:140 klas:E -->
-### T-34-059 · proza · рядок 140
+### T-34-059 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Найпоширеніша роль UART у цій книзі: основний контролер робить свою роботу, ESP32 стоїть збоку і забезпечує зв'язок (розділ 01).
+
+**Дослівно з книги**
+
+```
+Найпоширеніша роль UART у цій книзі: основний контролер робить свою
+```
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+Найпоширеніша роль UART у цій книзі: основний контролер робить свою
+роботу, ESP32 стоїть збоку і забезпечує зв'язок (розділ 01).
+```
 
 **Доказ**
 
@@ -1307,11 +2264,19 @@
 ---
 
 <!-- fc id:T-34-060 sha:21cc984b src:manual/34-uart.md:143 klas:E -->
-### T-34-060 · proza · рядок 143
+### T-34-060 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Кілька практичних порад щодо власного протоколу на такій лінії:
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+Кілька практичних порад щодо власного протоколу на такій лінії:
+```
 
 **Доказ**
 
@@ -1320,11 +2285,27 @@
 ---
 
 <!-- fc id:T-34-061 sha:65196ee9 src:manual/34-uart.md:145 klas:A -->
-### T-34-061 · proza · рядок 145
+### T-34-061 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Текстовий формат простіший, ніж здається.** Рядки виду `GET TEMP\n` і `TEMP 23.5\n` налагоджуються звичайним монітором порту, без жодного інструменту.
+
+**Дослівно з книги**
+
+```
+**Текстовий формат простіший, ніж здається.** Рядки виду
+```
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+**Текстовий формат простіший, ніж здається.** Рядки виду
+`GET TEMP\n` і `TEMP 23.5\n` налагоджуються звичайним монітором порту, без
+жодного інструменту. Для обміну раз на секунду цього досить із запасом.
+```
 
 **Доказ**
 
@@ -1347,11 +2328,27 @@
 ---
 
 <!-- fc id:T-34-062 sha:5ac8c874 src:manual/34-uart.md:145 klas:E -->
-### T-34-062 · proza · рядок 145
+### T-34-062 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Для обміну раз на секунду цього досить із запасом.
+
+**Дослівно з книги**
+
+```
+жодного інструменту. Для обміну раз на секунду цього досить із запасом.
+```
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+**Текстовий формат простіший, ніж здається.** Рядки виду
+`GET TEMP\n` і `TEMP 23.5\n` налагоджуються звичайним монітором порту, без
+жодного інструменту. Для обміну раз на секунду цього досить із запасом.
+```
 
 **Доказ**
 
@@ -1360,11 +2357,27 @@
 ---
 
 <!-- fc id:T-34-063 sha:0539c95b src:manual/34-uart.md:149 klas:E -->
-### T-34-063 · proza · рядок 149
+### T-34-063 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Двійковий формат — коли треба часто або багато.** Тоді обов'язково: байт початку, довжина, контрольна сума.
+
+**Дослівно з книги**
+
+```
+**Двійковий формат — коли треба часто або багато.** Тоді обов'язково:
+```
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+**Двійковий формат — коли треба часто або багато.** Тоді обов'язково:
+байт початку, довжина, контрольна сума. Без них перше ж втрачене
+байтове зміщення розсинхронізує обмін назавжди.
+```
 
 **Доказ**
 
@@ -1373,11 +2386,27 @@
 ---
 
 <!-- fc id:T-34-064 sha:edbb6d64 src:manual/34-uart.md:149 klas:E -->
-### T-34-064 · proza · рядок 149
+### T-34-064 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Без них перше ж втрачене байтове зміщення розсинхронізує обмін назавжди.
+
+**Дослівно з книги**
+
+```
+**Двійковий формат — коли треба часто або багато.** Тоді обов'язково:
+```
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+**Двійковий формат — коли треба часто або багато.** Тоді обов'язково:
+байт початку, довжина, контрольна сума. Без них перше ж втрачене
+байтове зміщення розсинхронізує обмін назавжди.
+```
 
 **Доказ**
 
@@ -1386,11 +2415,26 @@
 ---
 
 <!-- fc id:T-34-065 sha:47e0ef43 src:manual/34-uart.md:153 klas:E -->
-### T-34-065 · proza · рядок 153
+### T-34-065 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Таймаут і відновлення.** Приймач має вміти викинути недобудований пакет і почати спочатку.
+
+**Дослівно з книги**
+
+```
+**Таймаут і відновлення.** Приймач має вміти викинути недобудований
+```
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+**Таймаут і відновлення.** Приймач має вміти викинути недобудований
+пакет і почати спочатку. Протокол без цього працює до першої завади.
+```
 
 **Доказ**
 
@@ -1399,11 +2443,26 @@
 ---
 
 <!-- fc id:T-34-066 sha:b5b55989 src:manual/34-uart.md:153 klas:E -->
-### T-34-066 · proza · рядок 153
+### T-34-066 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Протокол без цього працює до першої завади.
+
+**Дослівно з книги**
+
+```
+пакет і почати спочатку. Протокол без цього працює до першої завади.
+```
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+**Таймаут і відновлення.** Приймач має вміти викинути недобудований
+пакет і почати спочатку. Протокол без цього працює до першої завади.
+```
 
 **Доказ**
 
@@ -1412,11 +2471,27 @@
 ---
 
 <!-- fc id:T-34-067 sha:d42f3baf src:manual/34-uart.md:156 klas:F -->
-### T-34-067 · proza · рядок 156
+### T-34-067 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > **Обидві сторони мають переживати відсутність іншої.** Ні ESP32, ні основний контролер не повинні зависати, чекаючи відповіді, якої не буде (розділ 32).
+
+**Дослівно з книги**
+
+```
+**Обидві сторони мають переживати відсутність іншої.** Ні ESP32, ні
+```
+
+**Контекст**
+
+```
+## ESP32 як допоміжний контролер
+
+**Обидві сторони мають переживати відсутність іншої.** Ні ESP32, ні
+основний контролер не повинні зависати, чекаючи відповіді, якої не буде
+(розділ 32).
+```
 
 **Доказ**
 
@@ -1425,11 +2500,19 @@
 ---
 
 <!-- fc id:T-34-068 sha:37835226 src:manual/34-uart.md:162 klas:E -->
-### T-34-068 · proza · рядок 162
+### T-34-068 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > UART0 — це консоль; чіпати в останню чергу.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+UART0 — це консоль; чіпати в останню чергу.
+```
 
 **Доказ**
 
@@ -1451,11 +2534,19 @@
 ---
 
 <!-- fc id:T-34-069 sha:c50a5eff src:manual/34-uart.md:164 klas:E -->
-### T-34-069 · proza · рядок 164
+### T-34-069 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > TX до RX перехресно, спільна земля обов'язкова.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+TX до RX перехресно, спільна земля обов'язкова.
+```
 
 **Доказ**
 
@@ -1476,11 +2567,19 @@
 ---
 
 <!-- fc id:T-34-070 sha:e1533340 src:manual/34-uart.md:166 klas:A -->
-### T-34-070 · proza · рядок 166
+### T-34-070 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Буфер драйвера робити з запасом: переповнення губить дані мовчки.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Буфер драйвера робити з запасом: переповнення губить дані мовчки.
+```
 
 **Доказ**
 
@@ -1488,18 +2587,33 @@
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
   > The RX FIFO can trigger an interrupt when it receives more data than the FIFO can store.
-- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ описує FIFO overflow як проблему
 - **Прохід:** prochid-34-uart
 
 ---
 
 <!-- fc id:T-34-071 sha:80e45dec src:manual/34-uart.md:168 klas:A -->
-### T-34-071 · proza · рядок 168
+### T-34-071 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > RS-485: `uart_wait_tx_done` перед перемиканням напрямку, інакше посилка обрізається.
+
+**Дослівно з книги**
+
+```
+RS-485: `uart_wait_tx_done` перед перемиканням напрямку, інакше посилка
+```
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+RS-485: `uart_wait_tx_done` перед перемиканням напрямку, інакше посилка
+обрізається.
+```
 
 **Доказ**
 
@@ -1530,11 +2644,19 @@
 ---
 
 <!-- fc id:T-34-072 sha:a5f43788 src:manual/34-uart.md:171 klas:A -->
-### T-34-072 · proza · рядок 171
+### T-34-072 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Термінатори 120 Ом на кінцях лінії, і лише на кінцях.
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Термінатори 120 Ом на кінцях лінії, і лише на кінцях.
+```
 
 **Доказ**
 
@@ -1551,11 +2673,26 @@
 ---
 
 <!-- fc id:T-34-073 sha:4a0b63dd src:manual/34-uart.md:173 klas:E -->
-### T-34-073 · proza · рядок 173
+### T-34-073 · proza · `manual/34-uart.md`
 
-**Книга каже, дослівно:**
+**Твердження, коротко**
 
 > Свій протокол — краще текстовий; двійковий — тільки з довжиною і контрольною сумою.
+
+**Дослівно з книги**
+
+```
+Свій протокол — краще текстовий; двійковий — тільки з довжиною і
+```
+
+**Контекст**
+
+```
+## Що з цього треба запам'ятати
+
+Свій протокол — краще текстовий; двійковий — тільки з довжиною і
+контрольною сумою.
+```
 
 **Доказ**
 

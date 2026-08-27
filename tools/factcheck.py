@@ -53,6 +53,20 @@ RE_ZAPYS = re.compile(
 )
 
 
+# Один взірець на всіх, хто читає з картки **короткий виклад
+# твердження**. Раніше кожен споживач тримав свою копію рядка «Книга
+# каже, дослівно:». Заголовок змінився на «Твердження, коротко» — і
+# жоден із них не впав: `blocked`, `cherha`, `shukaty` та `podil.py`
+# мовчки почали знаходити порожньо, а звіти лишилися на вигляд
+# правильними.
+#
+# > Взірець, що читає чужий формат, мусить жити в одному місці з тим,
+# > хто цей формат пише. Копія взірця — це обіцянка не міняти формат,
+# > якої ніхто не давав.
+RE_TVERDZHENNYA = re.compile(
+    r"\*\*Твердження, коротко\*\*\n\n(?P<txt>(?:> [^\n]*\n)+)")
+
+
 def sha(text: str) -> str:
     return hashlib.sha256(" ".join(text.split()).encode("utf-8")).hexdigest()[:8]
 
@@ -830,7 +844,7 @@ def stale() -> int:
     return 0
 
 
-NARYAD = FC / "NARYAD-nedostupni.md"
+NARYAD = FC / "UNREACHABLE-SOURCES.md"
 
 
 def blocked() -> int:
@@ -853,7 +867,7 @@ def blocked() -> int:
         mu = re.search(r"\*\*Джерело:\*\*[ \t]*(.+)", z["tilo"])
         u = " ".join(mu.group(1).split()) if mu else "—"
         sh = (re.search(r"\*\*Що шукати в джерелі:\*\*\s*(.+)", z["tilo"]) or [None, ""])[1]
-        m = re.search(r"\*\*Книга каже, дослівно:\*\*\n\n(.+?)\n\n\*\*Доказ", z["tilo"], re.S)
+        m = RE_TVERDZHENNYA.search(z["tilo"])
         txt = " ".join(m.group(1).replace("> ", "").split()) if m else ""
         g = grupy.setdefault(u, {"shukaty": set(), "tverdzhennya": []})
         if sh:
@@ -944,8 +958,7 @@ def cherga() -> int:
     for z in zbir_usikh():
         if z["klas"] not in "CFG":
             continue
-        m = re.search(r"\*\*Книга каже, дослівно:\*\*\n\n(.+?)\n\n\*\*Доказ",
-                      z["tilo"], re.S)
+        m = RE_TVERDZHENNYA.search(z["tilo"])
         if not m:
             continue
         txt = m.group(1)
@@ -973,8 +986,7 @@ def shukaty() -> int:
     goloka = " ".join(sys.argv[2:]).lower()
     n = 0
     for z in zbir_usikh():
-        m = re.search(r"\*\*Книга каже, дослівно:\*\*\n\n(.+?)\n\n\*\*Доказ",
-                      z["tilo"], re.S)
+        m = RE_TVERDZHENNYA.search(z["tilo"])
         if not m:
             continue
         txt = " ".join(m.group(1).replace("> ", "").split())
