@@ -39,8 +39,8 @@
 - id: T-COM-017
   rid: ne-tverdzhennya
 - id: T-REG-013
-  rid: dzherelo-ye
-  shukaty: FCC Regulations 47 CFR Part 15
+  rid: pozyciya
+  chomu: пояснення як сертифікація впливає на вимоги
 - id: T-UA--002
   rid: pozyciya
   chomu: editorska позиція щодо змісту вкладиша

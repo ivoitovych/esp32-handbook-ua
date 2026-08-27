@@ -24,8 +24,8 @@
 
 - id: T-D-050
   rid: dzherelo-ye
-  shukaty: ESP32 datasheet - panic codes
-  chomu: "коди паніки: 0x1, 0xc, 0xf"
+  shukaty: ESP32 datasheet
+  chomu: коди паніки ESP32
 
 - id: T-E-142
   rid: ne-tverdzhennya
@@ -36,9 +36,8 @@
   chomu: шапка таблиці
 
 - id: T-F-018
-  rid: dzherelo-ye
-  shukaty: розгортання на флешці
-  chomu: виміряна характеристика часу
+  rid: pozyciya
+  chomu: оцінка часу розгортання
 
 - id: T-G-115
   rid: ne-tverdzhennya
@@ -85,7 +84,7 @@
 
 - id: T-K07-030
   rid: dzherelo-ye
-  shukaty: ESP32 panic diagnostics
+  shukaty: ESP32 datasheet
   chomu: технічна характеристика PC
 
 - id: T-K08-006
@@ -126,17 +125,15 @@
 
 - id: T-02-130
   rid: dzherelo-ye
-  shukaty: battery life specifications
-  chomu: характеристика батарейки на роки
+  shukaty: ESP32 datasheet
+  chomu: характеристика батарейки
 
 - id: T-02-035
   rid: ne-tverdzhennya
   chomu: шапка таблиці з числами
 
 - id: T-03-009
-  rid: dzherelo-ye
-  shukaty: FreeRTOS scheduling on ESP32
-  chomu: технічна характеристика задачі
+  rid: ne-rozibrav
 
 - id: T-04-072
   rid: ne-tverdzhennya
@@ -147,14 +144,10 @@
   chomu: пояснення терміна
 
 - id: T-05-077
-  rid: dzherelo-ye
-  shukaty: GPIO output characteristics
-  chomu: технічна характеристика виходу
+  rid: ne-rozibrav
 
 - id: T-05-127
-  rid: dzherelo-ye
-  shukaty: voltage measurement principles
-  chomu: технічний принцип електроніки
+  rid: ne-rozibrav
 
 - id: T-06-008
   rid: ne-rozibrav
@@ -164,9 +157,7 @@
   chomu: рекомендація пам тримати порядки
 
 - id: T-07-086
-  rid: dzherelo-ye
-  shukaty: GPIO hardware configuration
-  chomu: технічна характеристика схеми
+  rid: ne-rozibrav
 
 - id: T-08-068
   rid: pozyciya
@@ -182,7 +173,7 @@
 
 - id: T-09-036
   rid: dzherelo-ye
-  shukaty: FT232 driver detection issues
+  shukaty: FTDI FT232 driver
   chomu: випадок з FT232 та драйвером
 
 - id: T-10-063
@@ -203,7 +194,7 @@
 - id: T-12-024
   rid: dzherelo-ye
   shukaty: Arduino IDE specifications
-  chomu: характеристика Arduino core
+  chomu: розмір Arduino core
 
 - id: T-13-066
   rid: ne-tverdzhennya
@@ -218,16 +209,15 @@
   chomu: оцінка корисності REPL
 
 - id: T-15-067
-  rid: dzherelo-ye
-  shukaty: deployment time measurements
-  chomu: виміряні часи розгортання
+  rid: pozyciya
+  chomu: оцінка часів розгортання та збирання
 
 - id: T-15-050
   rid: ne-rozibrav
 
 - id: T-16-025
   rid: dzherelo-ye
-  shukaty: ESP32 boot pin behavior
+  shukaty: ESP32 datasheet
   chomu: технічна характеристика pull-up
 
 - id: T-17-128

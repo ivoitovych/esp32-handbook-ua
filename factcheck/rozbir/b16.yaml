@@ -142,13 +142,13 @@
   chomu: рекомендація щодо вирішення проблем сумісності бібліотек
 - id: T-13-072
   rid: dzherelo-ye
-  shukaty: PlatformIO GitHub repository Arduino core version history release notes
+  shukaty: Arduino Core Specification release notes version history
   chomu: інформація про версійність та відставання офіційної платформи
 - id: T-14-005
   rid: ne-tverdzhennya
 - id: T-14-014
   rid: dzherelo-ye
-  shukaty: MicroPython documentation garbage collection timing determinism REPL
+  shukaty: MicroPython Reference Manual garbage collection behavior
   chomu: архітектурне обмеження недетермінізму в REPL при автоматичній очистці пам'яті
 - id: T-15-071
   rid: pozyciya

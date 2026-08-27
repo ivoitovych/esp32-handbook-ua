@@ -15,13 +15,12 @@
   chomu: симптом і навігація до розділу
 
 - id: T-C-074
-  rid: dzherelo-ye
-  shukaty: документація esptool, посилання на адресу пам'яті 0x42001234
-  chomu: конкретна команда з адресою, рядок коду
+  rid: pozyciya
+  chomu: порада, як отримати символічне ім'я для адреси
 
 - id: T-D-098
   rid: dzherelo-ye
-  shukaty: файли ESP-IDF, заголовні файли з визначенням макроса
+  shukaty: ESP-IDF soc/esp_defs.h header file
   chomu: код макроса з назвою функції ETS_IS_JOINT_DOWNLOAD_BOOT
 
 - id: T-D-052
@@ -54,7 +53,7 @@
 
 - id: T-H-008
   rid: dzherelo-ye
-  shukaty: Datasheet сімейства ESP32, розділи електричні параметри, розводка виводів
+  shukaty: ESP32 Series Datasheet
   chomu: назва офіційного документа, технічні характеристики чипа
 
 - id: T-Z-055
@@ -86,9 +85,8 @@
   chomu: порада про зниження швидкості, рішення проблеми
 
 - id: T-K08-017
-  rid: dzherelo-ye
-  shukaty: джерело живлення для ESP32, технічна специфікація про пиковий струм
-  chomu: число («5»), техничне твердження про розсіяну потужність
+  rid: pozyciya
+  chomu: висновок про найчастішу причину, рекомендація про джерело живлення
 
 - id: T-K09-007
   rid: ne-tverdzhennya
@@ -99,14 +97,12 @@
   chomu: порада, послідовність дій
 
 - id: T-K13-013
-  rid: dzherelo-ye
-  shukaty: технічна специфікація напруги 3V3 для ESP32 на холостому ходу
-  chomu: число («3V3»), вимірювальна точка, технічна величина
+  rid: pozyciya
+  chomu: вказівка на вимірювальну точку, порада як контролювати
 
 - id: T-K14-031
-  rid: dzherelo-ye
-  shukaty: технічна вимога про спільне заземлення для цифрових схем
-  chomu: електроніка, фізична закономірність, техничне поясненння
+  rid: pozyciya
+  chomu: вимога електричної схеми, важливе поясненням про заземлення
 
 - id: T-K15-042
   rid: pozyciya
@@ -130,7 +126,7 @@
 
 - id: T-02-144
   rid: dzherelo-ye
-  shukaty: документація ESP32-S2, Bluetooth відсутність у специфікації
+  shukaty: ESP32-S2 Series Datasheet
   chomu: техничне твердження про відсутність функції
 
 - id: T-02-073
@@ -139,7 +135,7 @@
 
 - id: T-03-016
   rid: dzherelo-ye
-  shukaty: архітектура потоків ESP32, мультиядерність у документації
+  shukaty: ESP32 Technical Reference Manual
   chomu: техничне твердження про архітектуру CPU
 
 - id: T-04-116
@@ -179,27 +175,25 @@
   chomu: опис поняття, визначення що таке компонента на власній платі
 
 - id: T-09-095
-  rid: dzherelo-ye
-  shukaty: хаб USB з окремим живленням, технічна специфікація для рішення
-  chomu: техничне рішення конкретної проблеми із обладнанням
+  rid: pozyciya
+  chomu: рекомендація щодо обладнання для вирішення проблеми
 
 - id: T-09-003
   rid: ne-tverdzhennya
   chomu: навігація на картку К3, перелік порядку пошуку
 
 - id: T-10-012
-  rid: dzherelo-ye
-  shukaty: специфікація паяльника, потужність 60Вт, геометрія жала
-  chomu: числа (60 Вт, 2–3 мм), технічні параметри інструменту
+  rid: pozyciya
+  chomu: рекомендація щодо параметрів паяльника
 
 - id: T-11-060
   rid: dzherelo-ye
-  shukaty: документація menuconfig ESP-IDF, повернення типових значень
+  shukaty: ESP-IDF menuconfig documentation
   chomu: техничне твердження про поведінку конфігурацій
 
 - id: T-11-113
   rid: dzherelo-ye
-  shukaty: документація CMakeLists.txt у ESP-IDF, опис REQUIRES
+  shukaty: ESP-IDF CMakeLists documentation
   chomu: причина часто зустрічатися помилки при компіляції
 
 - id: T-12-049
@@ -228,7 +222,7 @@
 
 - id: T-16-056
   rid: dzherelo-ye
-  shukaty: структура розділів флешу ESP32, вибір образу factory
+  shukaty: ESP-IDF bootloader documentation
   chomu: техничне твердження про логіку завантажувача
 
 - id: T-17-050
@@ -249,7 +243,7 @@
 
 - id: T-19-090
   rid: dzherelo-ye
-  shukaty: документація OTA, технічна обмеженість зміни слоту дистанційно
+  shukaty: ESP-IDF OTA documentation
   chomu: техничне твердження про неможливість операції
 
 - id: T-20-063

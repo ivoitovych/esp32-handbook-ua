@@ -1,0 +1,233 @@
+- id: T-B-211
+  rid: ne-tverdzhennya
+
+- id: T-G-172
+  rid: ne-rozibrav
+
+- id: T-K08-018
+  rid: ne-rozibrav
+
+- id: T-02-007
+  rid: pozyciya
+  chomu: судження автора про переваги варіантів
+
+- id: T-08-078
+  rid: ne-tverdzhennya
+
+- id: T-14-049
+  rid: ne-tverdzhennya
+
+- id: T-20-044
+  rid: pozyciya
+  chomu: оцінка логіки технічної архітектури
+
+- id: T-23-033
+  rid: ne-tverdzhennya
+
+- id: T-24-046
+  rid: pozyciya
+  chomu: порада щодо послідовності дій при діагностиці
+
+- id: T-24-066
+  rid: pozyciya
+  chomu: висновок про наслідки відсутності інформації
+
+- id: T-24-024
+  rid: ne-rozibrav
+
+- id: T-25-056
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Logging — runtime log level control
+
+- id: T-25-012
+  rid: ne-tverdzhennya
+
+- id: T-25-103
+  rid: pozyciya
+  chomu: висновок про складність змін у дистрибутивах
+
+- id: T-26-051
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Build System — symbol address changes
+
+- id: T-26-088
+  rid: ne-tverdzhennya
+
+- id: T-26-119
+  rid: ne-rozibrav
+
+- id: T-26-039
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Tools — xtensa-esp32s3-elf-addr2line, riscv32-esp-elf-addr2line
+
+- id: T-27-013
+  rid: ne-tverdzhennya
+
+- id: T-28-058
+  rid: pozyciya
+  chomu: попередження про ризик пошкодження приладу
+
+- id: T-28-076
+  rid: ne-rozibrav
+
+- id: T-28-026
+  rid: ne-tverdzhennya
+
+- id: T-29-039
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet — USB connection indicators
+
+- id: T-29-062
+  rid: pozyciya
+  chomu: оцінка практичного використання пінів
+
+- id: T-29-091
+  rid: pozyciya
+  chomu: оцінка видимості симптому
+
+- id: T-29-001
+  rid: ne-tverdzhennya
+
+- id: T-30-043
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Memory Management — heap fragmentation
+
+- id: T-30-078
+  rid: ne-rozibrav
+
+- id: T-30-102
+  rid: ne-rozibrav
+
+- id: T-30-036
+  rid: pozyciya
+  chomu: рекомендація щодо розміру буфера
+
+- id: T-31-064
+  rid: dzherelo-ye
+  shukaty: FreeRTOS Reference — ISR restrictions
+
+- id: T-31-098
+  rid: ne-tverdzhennya
+
+- id: T-31-031
+  rid: ne-tverdzhennya
+
+- id: T-32-070
+  rid: ne-tverdzhennya
+
+- id: T-32-002
+  rid: pozyciya
+  chomu: висновок про обмеження прототипу без реальних умов
+
+- id: T-33-046
+  rid: ne-tverdzhennya
+
+- id: T-33-076
+  rid: ne-tverdzhennya
+
+- id: T-33-112
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet — DAC specifications
+
+- id: T-33-037
+  rid: ne-tverdzhennya
+
+- id: T-34-059
+  rid: pozyciya
+  chomu: оцінка ролі UART в архітектурі книги
+
+- id: T-34-003
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet — UART features
+
+- id: T-35-056
+  rid: ne-tverdzhennya
+
+- id: T-35-087
+  rid: ne-tverdzhennya
+
+- id: T-35-039
+  rid: pozyciya
+  chomu: оцінка ефективності вложених зусиль
+
+- id: T-36-084
+  rid: dzherelo-ye
+  shukaty: ESP32 Datasheet — SPI DMA transfers
+
+- id: T-36-119
+  rid: ne-tverdzhennya
+
+- id: T-36-029
+  rid: ne-tverdzhennya
+
+- id: T-36-060
+  rid: pozyciya
+  chomu: оцінка практичної значимості питання для більшості цільових застосунків
+
+- id: T-37-009
+  rid: dzherelo-ye
+  shukaty: 1-Wire Datasheet — device pinout
+
+- id: T-37-034
+  rid: pozyciya
+  chomu: рекомендація щодо маркування датчиків
+
+- id: T-38-006
+  rid: dzherelo-ye
+  shukaty: CAN Datasheet — frame structure and identifiers
+
+- id: T-38-013
+  rid: dzherelo-ye
+  shukaty: CAN Protocol Specification — pub-sub architecture
+
+- id: T-38-041
+  rid: ne-tverdzhennya
+
+- id: T-39-067
+  rid: ne-tverdzhennya
+
+- id: T-39-090
+  rid: pozyciya
+  chomu: оцінка постановки задачі, зміна які передбачає перепрограмування
+
+- id: T-39-026
+  rid: ne-tverdzhennya
+
+- id: T-40-054
+  rid: dzherelo-ye
+  shukaty: MQTT Protocol Specification — pub-sub architecture
+
+- id: T-40-077
+  rid: pozyciya
+  chomu: оцінка практичної важливості в польових умовах
+
+- id: T-40-097
+  rid: ne-rozibrav
+
+- id: T-40-026
+  rid: pozyciya
+  chomu: оцінка придатності інструменту для конкретного завдання
+
+- id: T-41-054
+  rid: dzherelo-ye
+  shukaty: BLE Specification — advertising interval
+
+- id: T-41-074
+  rid: dzherelo-ye
+  shukaty: GATT Specification and iOS requirements — caching behavior
+
+- id: T-41-017
+  rid: dzherelo-ye
+  shukaty: BLE Datasheet — power consumption
+
+- id: T-41-037
+  rid: pozyciya
+  chomu: рекомендація щодо архітектури GATT за принципом простоти
+
+- id: T-42-050
+  rid: pozyciya
+  chomu: оцінка придатності ESP-NOW для конкретного сценарію
+
+- id: T-42-069
+  rid: pozyciya
+  chomu: оцінка популярності підходу

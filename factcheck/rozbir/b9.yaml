@@ -1,0 +1,258 @@
+- id: T-A-054
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet або технічна документація чипа
+  chomu: технічна специфікація контакту (вхід без підтягування)
+
+- id: T-B-201
+  rid: pozyciya
+  chomu: рекомендація як обробляти помилку
+
+- id: T-B-248
+  rid: ne-tverdzhennya
+
+- id: T-B-075
+  rid: dzherelo-ye
+  shukaty: специфікація схеми живлення, даташит
+  chomu: електричні параметри (1 А, 470 мкФ) - числові характеристики
+
+- id: T-B-180
+  rid: ne-tverdzhennya
+
+- id: T-C-032
+  rid: dzherelo-ye
+  shukaty: esptool.py User Guide, розділ про прапори
+  chomu: опис прапора команди
+
+- id: T-D-186
+  rid: pozyciya
+  chomu: принцип методології налагодження
+
+- id: T-E-141
+  rid: dzherelo-ye
+  shukaty: datasheet ESP32 про GPIO з підтягуванням, антидребезг
+  chomu: технічна специфікація інтерфейсу
+
+- id: T-E-092
+  rid: dzherelo-ye
+  shukaty: u-blox NEO-6M Datasheet, GPS Capabilities
+  chomu: назва мікросхеми й її можливості (координати, время NMEA)
+
+- id: T-F-017
+  rid: pozyciya
+  chomu: рекомендація про місце зберігання офлайн-комплекту
+
+- id: T-G-114
+  rid: ne-tverdzhennya
+
+- id: T-G-160
+  rid: ne-tverdzhennya
+
+- id: T-G-042
+  rid: ne-tverdzhennya
+
+- id: T-H-041
+  rid: dzherelo-ye
+  shukaty: GitHub Release Notes, ESP-IDF版本歷史
+  chomu: опис процесу видання й передачі змін
+
+- id: T-Z-030
+  rid: ne-tverdzhennya
+
+- id: T-Z-120
+  rid: ne-tverdzhennya
+
+- id: T-COM-001
+  rid: ne-tverdzhennya
+
+- id: T-REG-014
+  rid: ne-tverdzhennya
+
+- id: T-UA--027
+  rid: ne-tverdzhennya
+
+- id: T-K02-014
+  rid: dzherelo-ye
+  shukaty: ESP32 Series Datasheet, Comparison Table
+  chomu: принцип порівняння чипів за характеристиками
+
+- id: T-K04-021
+  rid: pozyciya
+  chomu: інструкція про потрібні кроки після програмування
+
+- id: T-K07-029
+  rid: dzherelo-ye
+  shukaty: esptool.py User Guide, ELF Symbol Tables
+  chomu: технічне пояснення залежності трансляції адрес від символів
+
+- id: T-K08-005
+  rid: ne-tverdzhennya
+
+- id: T-K10-035
+  rid: dzherelo-ye
+  shukaty: Linux Utilities User Manual, dmesg
+  chomu: опис команди й її використання
+
+- id: T-K12-025
+  rid: dzherelo-ye
+  shukaty: Offline Toolkit Specification, Components List
+  chomu: опис компонентів офлайн-комплету
+
+- id: T-K14-007
+  rid: ne-tverdzhennya
+
+- id: T-K15-028
+  rid: ne-tverdzhennya
+
+- id: T-00-006
+  rid: pozyciya
+  chomu: твердження автора про цінність довідника
+
+- id: T-00-033
+  rid: ne-rozibrav
+
+- id: T-01-103
+  rid: ne-tverdzhennya
+
+- id: T-01-050
+  rid: ne-tverdzhennya
+
+- id: T-02-129
+  rid: ne-tverdzhennya
+
+- id: T-02-034
+  rid: ne-tverdzhennya
+
+- id: T-03-008
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Programming Guide, Core Assignment
+  chomu: технічний факт про розподіл ядер
+
+- id: T-04-071
+  rid: ne-tverdzhennya
+
+- id: T-04-040
+  rid: ne-tverdzhennya
+
+- id: T-05-074
+  rid: dzherelo-ye
+  shukaty: ESP32-DevKitC Reference Manual, Schematic
+  chomu: технічна констатація про наявність схеми
+
+- id: T-05-126
+  rid: ne-tverdzhennya
+
+- id: T-06-077
+  rid: dzherelo-ye
+  shukaty: ESP32 Series Datasheet, ULP Coprocessor
+  chomu: технічне описання можливості процесора
+
+- id: T-06-015
+  rid: pozyciya
+  chomu: спостереження автора й порада про помилки підключення
+
+- id: T-07-085
+  rid: dzherelo-ye
+  shukaty: GPIO Troubleshooting Guide, Hardware Testing
+  chomu: опис симптому / способу діагностики
+
+- id: T-08-067
+  rid: pozyciya
+  chomu: рекомендація про перевірку логів
+
+- id: T-08-040
+  rid: pozyciya
+  chomu: порада як перевіряти точність пінаутів
+
+- id: T-09-087
+  rid: dzherelo-ye
+  shukaty: USB Connection Troubleshooting Guide
+  chomu: перелік можливих причин проблеми
+
+- id: T-09-035
+  rid: dzherelo-ye
+  shukaty: FTDI Chip Datasheet, Driver Documentation
+  chomu: історичний факт про поведінку драйверів
+
+- id: T-10-062
+  rid: pozyciya
+  chomu: рекомендація про організацію комплекту інструментів
+
+- id: T-10-043
+  rid: pozyciya
+  chomu: оцінка (макетна плата - різниці майже немає)
+
+- id: T-11-101
+  rid: pozyciya
+  chomu: оцінка автора складності ESP-IDF
+
+- id: T-12-039
+  rid: pozyciya
+  chomu: практична порада про читання статей
+
+- id: T-12-023
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Diagnostic Tools Guide, Coredump Analysis
+  chomu: перелік доступних інструментів діагностики
+
+- id: T-13-064
+  rid: pozyciya
+  chomu: інструкція про ізоляцію завдань у редакторі
+
+- id: T-14-040
+  rid: pozyciya
+  chomu: рекомендація про спосіб поділу проєкту
+
+- id: T-14-009
+  rid: pozyciya
+  chomu: опис переваги швидкості циклу розробки
+
+- id: T-15-066
+  rid: pozyciya
+  chomu: рекомендація про місце зберігання офлайн-комплету
+
+- id: T-15-049
+  rid: pozyciya
+  chomu: висновок автора про рівність варіантів
+
+- id: T-16-021
+  rid: dzherelo-ye
+  shukaty: ESP32 Boot Mode Selection Guide, Strapping Pins
+  chomu: опис факторів що впливають на завантаження
+
+- id: T-17-126
+  rid: dzherelo-ye
+  shukaty: POSIX Serial Communications Programming Guide
+  chomu: технічний факт про обмеження доступу до порту
+
+- id: T-18-071
+  rid: ne-tverdzhennya
+
+- id: T-18-016
+  rid: ne-tverdzhennya
+
+- id: T-19-079
+  rid: pozyciya
+  chomu: оцінка зручності способу розповсюджень оновлень
+
+- id: T-20-047
+  rid: dzherelo-ye
+  shukaty: ESP32 Chip Families Datasheet, Memory Dump Compatibility
+  chomu: технічне обмеження несумісності дампів між сімействами
+
+- id: T-20-025
+  rid: pozyciya
+  chomu: класифікація типу проблеми (залізо vs прошивка)
+
+- id: T-21-075
+  rid: ne-tverdzhennya
+
+- id: T-21-040
+  rid: pozyciya
+  chomu: рекомендація про живлення серійної прошивки
+
+- id: T-22-029
+  rid: pozyciya
+  chomu: порада про невідповідність кольорів проводів
+
+- id: T-23-083
+  rid: ne-tverdzhennya

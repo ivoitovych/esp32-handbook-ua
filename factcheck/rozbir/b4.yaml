@@ -4,12 +4,13 @@
   rid: ne-tverdzhennya
 - id: T-B-243
   rid: pozyciya
+  chomu: діагностика причини систематичного зависання
 - id: T-B-066
   rid: ne-tverdzhennya
 - id: T-B-174
   rid: ne-tverdzhennya
 - id: T-C-014
-  rid: dzherelo-ye
+  rid: ne-rozibrav
 - id: T-D-167
   rid: ne-tverdzhennya
 - id: T-E-133
@@ -28,26 +29,31 @@
   rid: ne-tverdzhennya
 - id: T-H-036
   rid: dzherelo-ye
+  shukaty: статті про ESP32, опубліковані під ESP-IDF 4.x та Arduino core 2.x
 - id: T-Z-115
   rid: ne-tverdzhennya
 - id: T-COM-011
   rid: pozyciya
+  chomu: рекомендація вибору плати на основі ціни
 - id: T-REG-010
   rid: dzherelo-ye
+  shukaty: Regulatory Guide для ESP32, обмеження потужності передавача
 - id: T-UA--020
-  rid: dzherelo-ye
+  rid: ne-rozibrav
 - id: T-K02-009
-  rid: dzherelo-ye
+  rid: ne-rozibrav
 - id: T-K04-013
   rid: ne-tverdzhennya
 - id: T-K07-021
   rid: dzherelo-ye
+  shukaty: ESP-IDF або GDB документація про backtrace
 - id: T-K08-002
   rid: ne-tverdzhennya
 - id: T-K10-028
   rid: ne-tverdzhennya
 - id: T-K12-020
   rid: pozyciya
+  chomu: орієнтація при виборі паяльника без терморегулювання
 - id: T-K13-042
   rid: ne-tverdzhennya
 - id: T-K15-023
@@ -56,76 +62,102 @@
   rid: ne-tverdzhennya
 - id: T-00-028
   rid: pozyciya
+  chomu: уточнення правильної інтерпретації сигнальних брак
 - id: T-01-099
   rid: dzherelo-ye
+  shukaty: Datasheet сімейства ESP32, розділи про параметри та розводку
 - id: T-01-035
   rid: pozyciya
+  chomu: оцінка доцільності ESP32 для проектів без радіозв'язку
 - id: T-02-120
   rid: pozyciya
+  chomu: рекомендація щодо кількості доступних прикладів
 - id: T-02-029
   rid: dzherelo-ye
+  shukaty: ESP32-H2 Datasheet, частота процесора
 - id: T-03-007
   rid: pozyciya
+  chomu: пояснення механіки радіо в ESP32
 - id: T-04-066
   rid: dzherelo-ye
+  shukaty: ESP32 Datasheet, розділ про SPI handshaking accelerators
 - id: T-04-030
   rid: ne-tverdzhennya
 - id: T-05-065
-  rid: dzherelo-ye
+  rid: ne-rozibrav
 - id: T-05-121
   rid: pozyciya
+  chomu: попередження про поширену помилку зв'язання на Dupont роз'ємах
 - id: T-06-065
   rid: dzherelo-ye
+  shukaty: ESP32 Datasheet про режим пробудження та RTC
 - id: T-06-126
   rid: dzherelo-ye
+  shukaty: ESP32 Datasheet, коди скидання та RTC wake
 - id: T-07-069
   rid: ne-rozibrav
 - id: T-07-053
   rid: dzherelo-ye
+  shukaty: Datasheet для ESP32 classic та S3, режими завантаження
 - id: T-08-034
   rid: pozyciya
+  chomu: визначення стандарту інтерпретації терміна плата розробки
 - id: T-09-080
   rid: ne-tverdzhennya
 - id: T-09-030
   rid: dzherelo-ye
+  shukaty: Linux kernel документація про CDC-ACM та CH9102
 - id: T-10-057
   rid: pozyciya
+  chomu: переваги друкованих карток як навчального матеріалу
 - id: T-10-036
   rid: pozyciya
+  chomu: практична рекомендація щодо вибору дешевої USB-камери
 - id: T-11-012
   rid: pozyciya
+  chomu: оцінка VS Code розширення як зручної обгортки
 - id: T-11-040
   rid: pozyciya
+  chomu: рекомендація не використовувати master гілку розробки
 - id: T-12-018
   rid: pozyciya
+  chomu: обґрунтування вибору Arduino як швидкого рішення
 - id: T-13-007
-  rid: dzherelo-ye
+  rid: ne-rozibrav
 - id: T-13-032
-  rid: dzherelo-ye
+  rid: ne-rozibrav
 - id: T-14-075
   rid: pozyciya
+  chomu: критика невдалого вибору інструменту на неправильному етапі
 - id: T-15-062
   rid: pozyciya
+  chomu: рекомендація зберігати схеми як картинки замість веб-закладок
 - id: T-15-044
   rid: pozyciya
+  chomu: оцінка простоти Arduino для швидкого прототипування
 - id: T-16-015
   rid: ne-tverdzhennya
 - id: T-17-108
   rid: pozyciya
+  chomu: оцінка надійності локального проєкту ESP-IDF
 - id: T-18-066
-  rid: dzherelo-ye
+  rid: ne-rozibrav
 - id: T-18-119
   rid: pozyciya
+  chomu: економічна оцінка вартості модулів та переробки вироба
 - id: T-19-076
   rid: pozyciya
+  chomu: позиціонування OTA як зручного методу для монтованих плат
 - id: T-19-046
   rid: dzherelo-ye
+  shukaty: ESP-IDF OTA Update API документація
 - id: T-20-002
   rid: ne-rozibrav
 - id: T-21-070
   rid: ne-tverdzhennya
 - id: T-21-032
   rid: pozyciya
+  chomu: цінність встановлення критеріїв приймання вироба
 - id: T-22-019
   rid: ne-rozibrav
 - id: T-23-078

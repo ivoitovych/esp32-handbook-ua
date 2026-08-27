@@ -1,0 +1,169 @@
+- id: T-B-180
+  rid: ne-tverdzhennya
+- id: T-Z-030
+  rid: ne-tverdzhennya
+- id: T-K12-025
+  rid: ne-rozibrav
+- id: T-04-071
+  rid: ne-tverdzhennya
+- id: T-09-035
+  rid: pozyciya
+  chomu: історичне спостереження про поведінку драйверів
+- id: T-15-049
+  rid: pozyciya
+  chomu: судження про порівняльні характеристики
+- id: T-22-029
+  rid: pozyciya
+  chomu: принцип про кольори дротів у довільних виробах
+- id: T-23-036
+  rid: ne-tverdzhennya
+- id: T-24-051
+  rid: pozyciya
+  chomu: оцінка реалістичної межі
+- id: T-24-072
+  rid: pozyciya
+  chomu: типова відповідь про показники з кроків
+- id: T-24-004
+  rid: pozyciya
+  chomu: авторське визначення мети розділу
+- id: T-25-067
+  rid: pozyciya
+  chomu: твердження про межу компіляції
+- id: T-25-014
+  rid: ne-tverdzhennya
+- id: T-25-021
+  rid: pozyciya
+  chomu: обмеження інструменту screen
+- id: T-26-060
+  rid: pozyciya
+  chomu: застереження про помилку під час порівняння переліків
+- id: T-26-097
+  rid: ne-rozibrav
+- id: T-26-124
+  rid: pozyciya
+  chomu: принцип порядку дампу при налагодженні
+- id: T-26-047
+  rid: ne-tverdzhennya
+- id: T-27-022
+  rid: pozyciya
+  chomu: твердження про розширення VS Code для ESP-IDF
+- id: T-28-062
+  rid: ne-tverdzhennya
+- id: T-28-079
+  rid: pozyciya
+  chomu: статистичне твердження про несправності
+- id: T-28-031
+  rid: ne-tverdzhennya
+- id: T-29-043
+  rid: pozyciya
+  chomu: принцип про розподіл резисторів на шині
+- id: T-29-071
+  rid: ne-tverdzhennya
+- id: T-29-096
+  rid: ne-tverdzhennya
+- id: T-29-020
+  rid: pozyciya
+  chomu: твердження про ковариску ситуацію
+- id: T-30-048
+  rid: ne-tverdzhennya
+- id: T-30-084
+  rid: dzherelo-ye
+  shukaty: FreeRTOS Reference Manual, Synchronization — atomic operations and primitives
+- id: T-30-017
+  rid: ne-tverdzhennya
+- id: T-31-038
+  rid: pozyciya
+  chomu: твердження про відмову на двох ядрах
+- id: T-31-078
+  rid: pozyciya
+  chomu: типовий приклад правила про стислість переривань
+- id: T-31-009
+  rid: ne-tverdzhennya
+- id: T-32-046
+  rid: pozyciya
+  chomu: авторська рекомендація про логіку годування
+- id: T-32-075
+  rid: pozyciya
+  chomu: судження про переваги ESP32 у зв'язку
+- id: T-32-021
+  rid: pozyciya
+  chomu: вимога свідомого вибору замість за замовчуванням
+- id: T-33-005
+  rid: ne-tverdzhennya
+- id: T-33-083
+  rid: ne-tverdzhennya
+- id: T-33-125
+  rid: pozyciya
+  chomu: принцип окремого живлення серво та спільної землі
+- id: T-34-045
+  rid: pozyciya
+  chomu: твердження про монтаж термінаторів на модулях
+- id: T-34-065
+  rid: ne-tverdzhennya
+- id: T-34-026
+  rid: ne-tverdzhennya
+- id: T-35-069
+  rid: ne-tverdzhennya
+- id: T-35-012
+  rid: pozyciya
+  chomu: твердження про середину робочого діапазону
+- id: T-36-071
+  rid: ne-tverdzhennya
+- id: T-36-091
+  rid: dzherelo-ye
+  shukaty: ESP-IDF API Reference, SPI Module — available SPI host constants
+- id: T-36-122
+  rid: ne-tverdzhennya
+- id: T-36-034
+  rid: ne-tverdzhennya
+- id: T-36-066
+  rid: pozyciya
+  chomu: твердження про фізику помилок при підвищенні швидкості
+- id: T-37-015
+  rid: pozyciya
+  chomu: рекомендація рахувати поріг замість вгадування
+- id: T-38-045
+  rid: ne-tverdzhennya
+- id: T-38-073
+  rid: pozyciya
+  chomu: рекомендація перебрати значення у режимі LISTEN_ONLY
+- id: T-38-021
+  rid: pozyciya
+  chomu: твердження про доступність готових модулів на 5-вольтових трансиверах
+- id: T-39-005
+  rid: ne-tverdzhennya
+- id: T-39-074
+  rid: pozyciya
+  chomu: твердження про реальну дальність WiFi у приміщенні
+- id: T-39-096
+  rid: pozyciya
+  chomu: вимога працювати без мережі
+- id: T-39-036
+  rid: dzherelo-ye
+  shukaty: FreeRTOS Reference Manual, Event Groups — event group synchronization
+- id: T-40-063
+  rid: ne-tverdzhennya
+- id: T-40-082
+  rid: pozyciya
+  chomu: твердження про тривалість життя сертифіката CA
+- id: T-40-101
+  rid: pozyciya
+  chomu: рекомендація зашивати сертифікат CA замість сервера
+- id: T-40-035
+  rid: ne-tverdzhennya
+- id: T-41-058
+  rid: pozyciya
+  chomu: авторська рекомендація про інтервал оголошення BLE
+- id: T-41-079
+  rid: pozyciya
+  chomu: рекомендація про опис структури BLE окремими характеристиками
+- id: T-41-022
+  rid: ne-tverdzhennya
+- id: T-41-042
+  rid: pozyciya
+  chomu: твердження про вищу витрату пам'яті Bluetooth Classic
+- id: T-42-056
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Programming Guide, WiFi & ESP-NOW — shared radio channel
+- id: T-42-075
+  rid: ne-tverdzhennya

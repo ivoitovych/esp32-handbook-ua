@@ -1,0 +1,245 @@
+- id: T-B-248
+  rid: ne-tverdzhennya
+  chomu: навігаційне посилання на розділ
+
+- id: T-G-042
+  rid: ne-tverdzhennya
+  chomu: рядок глосарію
+
+- id: T-K08-005
+  rid: ne-tverdzhennya
+  chomu: рядок індексу або перелік причин
+
+- id: T-02-034
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet, розділ Memory, специфікація SRAM для C6
+
+- id: T-08-040
+  rid: pozyciya
+  chomu: порада перевіряти pinout перш ніж довіритися інтернет-джерелам
+
+- id: T-14-009
+  rid: pozyciya
+  chomu: оцінка переваги швидкого циклу розробки без компіляції
+
+- id: T-21-075
+  rid: ne-rozibrav
+
+- id: T-23-034
+  rid: ne-tverdzhennya
+  chomu: навігаційне посилання на розділ про ремонт
+
+- id: T-24-047
+  rid: ne-rozibrav
+
+- id: T-24-068
+  rid: ne-rozibrav
+
+- id: T-25-004
+  rid: ne-tverdzhennya
+  chomu: загальна характеристика, що всі інструменти роблять те саме
+
+- id: T-25-013
+  rid: ne-tverdzhennya
+  chomu: таблична довідка команди виходу
+
+- id: T-25-104
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet, швидкість UART у ROM
+
+- id: T-26-052
+  rid: ne-tverdzhennya
+  chomu: навігаційне посилання на розділ про прошивку в полі
+
+- id: T-26-090
+  rid: ne-tverdzhennya
+  chomu: приклад коду, не твердження
+
+- id: T-26-120
+  rid: ne-rozibrav
+
+- id: T-26-003
+  rid: ne-tverdzhennya
+  chomu: навігаційне посилання на карту
+
+- id: T-27-001
+  rid: pozyciya
+  chomu: порада про роль логування у діагностиці
+
+- id: T-28-059
+  rid: pozyciya
+  chomu: безпечна практика вимірювання - заземлення щупа
+
+- id: T-28-077
+  rid: ne-rozibrav
+
+- id: T-28-027
+  rid: pozyciya
+  chomu: оцінка вартості та ефективності USB-аналізатора
+
+- id: T-29-040
+  rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual
+
+- id: T-29-064
+  rid: ne-rozibrav
+
+- id: T-29-092
+  rid: pozyciya
+  chomu: методологія отримання повторюваного результату при діагностиці
+
+- id: T-29-002
+  rid: ne-tverdzhennya
+  chomu: навігаційна інструкція
+
+- id: T-30-044
+  rid: pozyciya
+  chomu: правило керування пам'яттю на платформі ESP32
+
+- id: T-30-079
+  rid: dzherelo-ye
+  shukaty: C Standard, volatile qualifier
+
+- id: T-30-001
+  rid: ne-rozibrav
+
+- id: T-31-034
+  rid: pozyciya
+  chomu: порада про закріплення задач на ядра за синхронізацією
+
+- id: T-31-006
+  rid: ne-tverdzhennya
+  chomu: приклад коду логування
+
+- id: T-31-099
+  rid: pozyciya
+  chomu: спостереження про двоядерність та синхронізацію
+
+- id: T-32-038
+  rid: pozyciya
+  chomu: описання типової поведінки розробника
+
+- id: T-32-071
+  rid: ne-tverdzhennya
+  chomu: таблична довідка про таймери
+
+- id: T-32-003
+  rid: ne-rozibrav
+
+- id: T-33-049
+  rid: ne-rozibrav
+
+- id: T-33-077
+  rid: pozyciya
+  chomu: порада використовувати апаратний лічильник замість переривань
+
+- id: T-33-113
+  rid: ne-tverdzhennya
+  chomu: заголовок розділу
+
+- id: T-33-039
+  rid: ne-tverdzhennya
+  chomu: приклад коду конфігурації
+
+- id: T-34-060
+  rid: ne-tverdzhennya
+  chomu: заголовок розділу порад
+
+- id: T-34-019
+  rid: ne-tverdzhennya
+  chomu: приклад коду обробки буфера
+
+- id: T-35-057
+  rid: ne-tverdzhennya
+  chomu: приклад коду I2C
+
+- id: T-35-088
+  rid: pozyciya
+  chomu: оцінка успішності діагностики на перших кроках
+
+- id: T-35-041
+  rid: ne-rozibrav
+
+- id: T-36-085
+  rid: ne-tverdzhennya
+  chomu: заголовок розділу вимог
+
+- id: T-36-120
+  rid: pozyciya
+  chomu: порада зменшення швидкості SPI для сумісності
+
+- id: T-36-030
+  rid: ne-tverdzhennya
+  chomu: таблична довідка про регістри
+
+- id: T-36-003
+  rid: ne-tverdzhennya
+  chomu: таблична шапка SPI ліній
+
+- id: T-37-010
+  rid: dzherelo-ye
+  shukaty: DS18B20 Datasheet
+
+- id: T-37-035
+  rid: dzherelo-ye
+  shukaty: 1-Wire Bus Specification
+
+- id: T-38-007
+  rid: dzherelo-ye
+  shukaty: CAN Protocol Specification
+
+- id: T-38-014
+  rid: dzherelo-ye
+  shukaty: CAN Protocol Specification
+
+- id: T-39-044
+  rid: ne-rozibrav
+
+- id: T-39-068
+  rid: ne-tverdzhennya
+  chomu: таблична довідка RSSI діапазонів
+
+- id: T-39-091
+  rid: pozyciya
+  chomu: порада енергозбереження використовуючи ESP-NOW
+
+- id: T-39-027
+  rid: ne-tverdzhennya
+  chomu: приклад коду SSID
+
+- id: T-40-059
+  rid: pozyciya
+  chomu: архітектурна рекомендація про структуру топіків
+
+- id: T-40-078
+  rid: ne-tverdzhennya
+  chomu: заголовок розділу мінімальної конфігурації
+
+- id: T-40-010
+  rid: pozyciya
+  chomu: оцінка зручності веб-інтерфейсу
+
+- id: T-40-027
+  rid: ne-rozibrav
+
+- id: T-41-055
+  rid: dzherelo-ye
+  shukaty: BLE advertising interval вплив на пошук пристрою
+
+- id: T-41-075
+  rid: dzherelo-ye
+  shukaty: BLE кешування структури сервісів телефоном
+
+- id: T-41-018
+  rid: ne-tverdzhennya
+  chomu: таблична довідка про спарювання
+
+- id: T-41-038
+  rid: pozyciya
+  chomu: порада про стандартні BLE профілі та самоописовість
+
+- id: T-42-051
+  rid: ne-rozibrav
+
+- id: T-42-072
+  rid: ne-rozibrav

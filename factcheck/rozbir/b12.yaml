@@ -21,7 +21,7 @@
   chomu: рекомендація найкраще зберігати разом
 - id: T-E-145
   rid: dzherelo-ye
-  shukaty: схема типова
+  shukaty: Schematic Datasheet
   chomu: таблиця компонентів електросхеми конкретна кількість
 - id: T-E-096
   rid: dzherelo-ye
@@ -107,15 +107,15 @@
   chomu: матриця функцій чипа та інтерфейсів
 - id: T-03-011
   rid: dzherelo-ye
-  shukaty: ESP32-C3 C6 H2 S2 одноядерні
+  shukaty: ESP32 Datasheet
   chomu: специфікація архітектури процесора ядра
 - id: T-04-092
   rid: dzherelo-ye
-  shukaty: I2S ESP32 classic кількість каналів
+  shukaty: ESP32 Datasheet
   chomu: характеристика апаратного інтерфейсу
 - id: T-04-043
   rid: dzherelo-ye
-  shukaty: PCNT лічильник імпульсів енкодер витратомір
+  shukaty: ESP32 Datasheet
   chomu: описання апаратної функції можливості
 - id: T-05-079
   rid: ne-tverdzhennya
@@ -137,7 +137,7 @@
   chomu: спостереження якість платнесправність
 - id: T-08-044
   rid: dzherelo-ye
-  shukaty: ESP32-S3 USB роз'єми native UART
+  shukaty: ESP32 Datasheet
   chomu: специфікація кількість та тип портів
 - id: T-09-090
   rid: ne-tverdzhennya
@@ -156,7 +156,7 @@
   chomu: принцип виробу супровід роки
 - id: T-12-042
   rid: dzherelo-ye
-  shukaty: Arduino ESP-IDF версія 4.x 6.x статус альфа
+  shukaty: Arduino Manual
   chomu: інформація про версію статус
 - id: T-12-027
   rid: ne-tverdzhennya
@@ -178,14 +178,14 @@
   chomu: шапка таблиці завдання та інструменти
 - id: T-16-033
   rid: dzherelo-ye
-  shukaty: ESP32-S2 функція не використовується
+  shukaty: ESP32 Datasheet
   chomu: специфікація чипа відсутність функції
 - id: T-17-130
   rid: ne-tverdzhennya
   chomu: інструкція трублшутинг знизити baud
 - id: T-18-075
   rid: dzherelo-ye
-  shukaty: FAT швидкість запису заповнення
+  shukaty: FAT Specification
   chomu: характеристика файлової системи
 - id: T-18-023
   rid: ne-tverdzhennya

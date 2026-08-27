@@ -35,8 +35,8 @@
   chomu: рядок таблиці компонентів
 
 - id: T-F-013
-  rid: dzherelo-ye
-  shukaty: Linux kernel documentation, USB device drivers
+  rid: ne-tverdzhennya
+  chomu: характеристика платформи без посилання на джерело
 
 - id: T-G-108
   rid: ne-tverdzhennya
@@ -67,8 +67,8 @@
   chomu: рядок таблиці компонентів
 
 - id: T-REG-009
-  rid: dzherelo-ye
-  shukaty: Regional Radio Regulations (ITU), FCC, ETSI frequency allocations
+  rid: pozyciya
+  chomu: рада про можливість, попередження про регіональні обмеження
 
 - id: T-UA--019
   rid: ne-tverdzhennya
@@ -168,11 +168,11 @@
 
 - id: T-08-033
   rid: dzherelo-ye
-  shukaty: ESP32-DevKitC V4, 38 пінів, Espressif
+  shukaty: ESP32-DevKitC V4 Getting Started Guide, board specifications
 
 - id: T-09-077
   rid: dzherelo-ye
-  shukaty: POSIX Serial Port documentation, device access synchronization
+  shukaty: POSIX Serial Port Specification, device drivers
 
 - id: T-09-029
   rid: ne-tverdzhennya
@@ -199,8 +199,8 @@
   shukaty: ESP-IDF and Arduino component registry documentation
 
 - id: T-13-006
-  rid: dzherelo-ye
-  shukaty: PlatformIO Arduino core repository and community documentation
+  rid: ne-tverdzhennya
+  chomu: опис факту існування форку, інформативне висловлення
 
 - id: T-13-031
   rid: ne-tverdzhennya
@@ -244,7 +244,7 @@
 
 - id: T-20-020
   rid: dzherelo-ye
-  shukaty: ESP32 Secure Boot and Flash Encryption documentation
+  shukaty: ESP32 Series Datasheet, Security chapter on Secure Boot
 
 - id: T-21-069
   rid: ne-tverdzhennya

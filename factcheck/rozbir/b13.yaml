@@ -11,7 +11,7 @@
   rid: ne-tverdzhennya
 - id: T-C-041
   rid: dzherelo-ye
-  shukaty: ESP-IDF burn команда
+  shukaty: ESP-IDF User Guide, flash burn
 - id: T-D-192
   rid: pozyciya
   chomu: Пояснення логіки причин та наслідків
@@ -19,7 +19,7 @@
   rid: ne-tverdzhennya
 - id: T-E-097
   rid: dzherelo-ye
-  shukaty: MH-Z19 datasheet
+  shukaty: MH-Z19B NDIR CO2 Sensor Datasheet
 - id: T-F-021
   rid: pozyciya
   chomu: Рекомендація для офлайнового сценарію
@@ -30,18 +30,17 @@
 - id: T-G-046
   rid: ne-tverdzhennya
 - id: T-H-003
-  rid: dzherelo-ye
-  shukaty: docs/fakty.md репозиторію
+  rid: ne-rozibrav
 - id: T-Z-037
   rid: ne-tverdzhennya
 - id: T-Z-125
   rid: ne-tverdzhennya
 - id: T-COM-032
   rid: dzherelo-ye
-  shukaty: DRV8833 datasheet
+  shukaty: DRV8833 Dual H-Bridge Motor Driver Datasheet
 - id: T-REG-021
   rid: dzherelo-ye
-  shukaty: LoRa регіональні частоти, FCC/ETSI стандарти
+  shukaty: ETSI EN303645 LoRa
 - id: T-UA--034
   rid: pozyciya
   chomu: Рекомендація щодо планування проєкту
@@ -52,7 +51,7 @@
   rid: ne-tverdzhennya
 - id: T-K07-033
   rid: dzherelo-ye
-  shukaty: ESP-IDF linker, адреси розподілу пам'яті
+  shukaty: ESP-IDF Memory Layout and Loading
 - id: T-K08-009
   rid: ne-tverdzhennya
 - id: T-K10-040
@@ -60,8 +59,7 @@
 - id: T-K13-006
   rid: ne-tverdzhennya
 - id: T-K14-016
-  rid: dzherelo-ye
-  shukaty: електроніка, дільник напруги
+  rid: ne-rozibrav
 - id: T-K15-032
   rid: ne-tverdzhennya
 - id: T-00-080
@@ -75,24 +73,23 @@
   chomu: Обґрунтування необхідності документації в полі
 - id: T-01-060
   rid: dzherelo-ye
-  shukaty: STM32 datasheet, час старту
+  shukaty: STM32 Series Datasheet Startup Time
 - id: T-02-137
   rid: dzherelo-ye
-  shukaty: ESP32-S3, ESP32-C3 datasheet
+  shukaty: ESP32-S3 and ESP32-C3 Series Datasheet
 - id: T-02-044
   rid: dzherelo-ye
-  shukaty: ESP32-S3 datasheet, Wi-Fi модуль
+  shukaty: ESP32-S3 Series Datasheet
 - id: T-03-012
   rid: dzherelo-ye
-  shukaty: ESP32 TRM, радіо та CPU розділення
+  shukaty: ESP32 Technical Reference Manual
 - id: T-04-093
   rid: dzherelo-ye
-  shukaty: ESP32-S2 datasheet, I²S периферія
+  shukaty: ESP32-S2 Series Datasheet I²S
 - id: T-04-044
   rid: ne-tverdzhennya
 - id: T-05-080
-  rid: dzherelo-ye
-  shukaty: електроніка, підтягувальний резистор
+  rid: ne-rozibrav
 - id: T-05-015
   rid: pozyciya
   chomu: Аналогія для пояснення проблеми з дротами
@@ -101,7 +98,7 @@
   chomu: Рекомендація щодо розрахунків для автономних пристроїв
 - id: T-06-021
   rid: dzherelo-ye
-  shukaty: ESP32 datasheet, споживання струму активний режим
+  shukaty: ESP32 Series Datasheet Power Consumption
 - id: T-07-009
   rid: ne-tverdzhennya
 - id: T-08-071
@@ -109,25 +106,23 @@
   chomu: Порада щодо діагностики на дешевому етапі
 - id: T-08-045
   rid: dzherelo-ye
-  shukaty: ESP32 інтерфейси, UART порти
+  shukaty: ESP32 Technical Reference Manual UART
 - id: T-09-008
   rid: dzherelo-ye
-  shukaty: ESP32 DevKit схема, USB міст
+  shukaty: ESP32 DevKit-C Guide
 - id: T-09-039
-  rid: dzherelo-ye
-  shukaty: OS документація, послідовні порти
+  rid: ne-rozibrav
 - id: T-10-066
   rid: pozyciya
   chomu: Рекомендація щодо вибору та кількості компонентів
 - id: T-11-044
   rid: dzherelo-ye
-  shukaty: ESP-IDF linker, backtrace адреси
+  shukaty: ESP-IDF Bootloader Backtrace
 - id: T-11-108
   rid: pozyciya
   chomu: Оцінка ролі Arduino core для прототипування
 - id: T-12-043
-  rid: dzherelo-ye
-  shukaty: документація
+  rid: ne-rozibrav
 - id: T-12-028
   rid: pozyciya
   chomu: Оцінка якості сторонніх бібліотек
@@ -135,7 +130,7 @@
   rid: ne-tverdzhennya
 - id: T-14-044
   rid: dzherelo-ye
-  shukaty: Wokwi симулятор, компоненти
+  shukaty: Wokwi Simulator Reference
 - id: T-14-002
   rid: pozyciya
   chomu: Оцінка швидкості розробки різних підходів
@@ -149,16 +144,16 @@
   chomu: Оцінка цінності теоретичних знань для діагностики
 - id: T-17-131
   rid: dzherelo-ye
-  shukaty: Flash пам'ять, помилки читання
+  shukaty: ESP32 Flash Memory Specification
 - id: T-18-076
   rid: dzherelo-ye
-  shukaty: LittleFS документація, ПК сумісність
+  shukaty: LittleFS Reference Manual
 - id: T-18-028
   rid: dzherelo-ye
-  shukaty: ESP32 TRM, PHY калібрування
+  shukaty: ESP32 Technical Reference Manual PHY
 - id: T-19-011
   rid: dzherelo-ye
-  shukaty: OTA розділи, типи додатків
+  shukaty: ESP-IDF Partition Tables
 - id: T-20-054
   rid: ne-tverdzhennya
 - id: T-20-032
@@ -166,12 +161,11 @@
   chomu: Вказання на перевірку розміру файлу
 - id: T-21-079
   rid: dzherelo-ye
-  shukaty: crash dump документація
+  shukaty: ESP32 Core Dump Specification
 - id: T-22-006
   rid: ne-tverdzhennya
 - id: T-22-031
   rid: pozyciya
   chomu: Обґрунтування прискіпливості до запису
 - id: T-23-093
-  rid: dzherelo-ye
-  shukaty: документація
+  rid: ne-rozibrav

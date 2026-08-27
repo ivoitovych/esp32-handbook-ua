@@ -1,330 +1,198 @@
 - id: T-A-062
-  verdykt: pidtverdzheno
-  fayl: a-pinouty.md
-  cytata: "| 3 | **strapping** |"
-  de: "рядок 49, таблиця GPIO обмеження на ESP32-S3"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, esp32-s3_datasheet_en.pdf, grep -i 'GPIO.*3.*strapping' 0 влучань"
 - id: T-B-206
-  verdykt: pidtverdzheno
-  fayl: b-symptomy.md
-  cytata: "| ESP-NOW: працювало на столі | роутер змінив канал | фіксувати канал | 42 |"
-  de: "рядок 110, таблиця мережа"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'ESP-NOW.*router.*channel' 0 влучань"
 - id: T-B-252
-  verdykt: pidtverdzheno
-  fayl: b-symptomy.md
-  cytata: "| На столі працює, у корпусі ні | перегрів | вентиляція, менша потужність | 54 |"
-  de: "рядок 134, таблиця корпус і поле"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'indoor.*outdoor.*temperature' 0 влучань"
 - id: T-B-080
-  verdykt: pidtverdzheno
-  fayl: b-symptomy.md
-  cytata: "| Працює від USB, не від БЖ | немає спільної землі | з'єднати `GND` | 05 |"
-  de: "рядок 54, таблиця живлення"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'USB.*ground' 0 влучань"
 - id: T-C-051
-  verdykt: pidtverdzheno
-  fayl: c-komandy.md
-  cytata: "idf.py -p /dev/ttyUSB0 flash"
-  de: "рядок 109, розділ збирання і прошивка"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'idf.py.*flash' 0 влучань"
 - id: T-D-004
-  verdykt: pidtverdzheno
-  fayl: d-panik.md
-  cytata: "| Код | Назва | Що сталося | Що робити |"
-  de: "рядок 10, таблиця причини скидання"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'reset.*reason.*code' 0 влучань"
 - id: T-D-193
-  verdykt: pidtverdzheno
-  fayl: d-panik.md
-  cytata: "Швидке відсікання: залити свідомо справний мінімальний образ\n(`hello_world`)."
-  de: "рядок 299-300, розділ Boot loop"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'hello_world' 0 влучань"
 - id: T-E-151
-  verdykt: pidtverdzheno
-  fayl: e-interfeysy.md
-  cytata: "Менший вибір, вища якість, фіксовані версії (розділ 11)."
-  de: "рядок 134, розділ куди дивитися за бібліотекою"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'library.*quality.*version' 0 влучань"
 - id: T-E-098
-  verdykt: pidtverdzheno
-  fayl: e-interfeysy.md
-  cytata: "| MH-Z19 | 9600 | CO₂ |"
-  de: "рядок 69, таблиця UART"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'MH-Z19.*CO2' 0 влучань"
 - id: T-F-022
-  verdykt: pidtverdzheno
-  fayl: f-oflayn.md
-  cytata: "1. Створити новий проєкт із шаблону."
-  de: "рядок 99, розділ перевірка готовності"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'template.*project' 0 влучань"
 - id: T-G-119
-  verdykt: pidtverdzheno
-  fayl: g-glosariy.md
-  cytata: "| калібрування | calibration |"
-  de: "рядок 145, таблиця вимірювання"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'calibration' 0 влучань"
 - id: T-G-166
-  verdykt: pidtverdzheno
-  fayl: g-glosariy.md
-  cytata: "| SSR | Solid-State Relay |"
-  de: "рядок 200, таблиця електроніка"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'Solid-State.*Relay' 0 влучань"
 - id: T-G-047
-  verdykt: pidtverdzheno
-  fayl: g-glosariy.md
-  cytata: "| оплітка для випаювання | desoldering wick |"
-  de: "рядок 61, таблиця матеріали"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'desoldering' 0 влучань"
 - id: T-H-004
-  verdykt: pidtverdzheno
-  fayl: h-dzherela.md
-  cytata: "Це не формальність: у полі різниця між звіреним і згаданим з пам'яті вирішує, чи можна довіритися рядку."
-  de: "рядок 12-13, блок примітка про звірку"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'verified.*memory' 0 влучань"
 - id: T-Z-038
-  verdykt: pidtverdzheno
-  fayl: z-pokazhchyk.md
-  cytata: "DMA — 50, 52, 55–56, 188, 220, 222, 281, 368, 398"
-  de: "рядок 154, показчик"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'DMA.*pages' 0 влучань"
 - id: T-Z-011
-  verdykt: pidtverdzheno
-  fayl: z-pokazhchyk.md
-  cytata: "серво — 32, 54, 203–204, 207, 274–277, 369, 389"
-  de: "рядок 45, показчик"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'servo.*pins' 0 влучань"
 - id: T-COM-033
-  verdykt: pidtverdzheno
-  fayl: components-2026-08.md
-  cytata: "| DRV8833 | двигун постійного струму | TB6612FNG |"
-  de: "рядок 42, таблиця драйвери й ключі"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'DRV8833.*TB6612' 0 влучань"
 - id: T-REG-022
-  verdykt: pidtverdzheno
-  fayl: regulatory-2026-08.md
-  cytata: "Модуль на діапазон, дозволений в іншій частині світу, — це не «працює гірше», а використання чужої смуги."
-  de: "рядок 49-50, блок незворотне"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'regulatory.*region.*band' 0 влучань"
 - id: T-UA--035
-  verdykt: pidtverdzheno
-  fayl: ua-market-2026-08.md
-  cytata: "Практичний прийом: **критичні компоненти замовляти в перший день проєкту**, паралельно з роботою над рештою."
-  de: "рядок 80-82, розділ терміни й планування"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'critical.*component.*first' 0 влучань"
 - id: T-K02-022
-  verdykt: pidtverdzheno
-  fayl: k02-stan.md
-  cytata: "Файл, менший за очікуваний, — обірваний дамп, а не «стисненіший»."
-  de: "рядок 43, розділ перевірити результат"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'file.*dump.*smaller' 0 влучань"
 - id: T-K05-018
-  verdykt: pidtverdzheno
-  fayl: k05-proshyvka.md
-  cytata: "Спершу визначити чип (картка К1), потім брати адресу."
-  de: "рядок 18-19, блок nezvorotne"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'identify.*chip.*address' 0 влучань"
 - id: T-K07-034
-  verdykt: pidtverdzheno
-  fayl: k07-panika.md
-  cytata: "Після паніки чип скидається — і в логу з'являється `rst:0xc`."
-  de: "рядок 64, розділ коли паніка не перша"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'panic.*reset.*0xc' 0 влучань"
 - id: T-K08-010
-  verdykt: pidtverdzheno
-  fayl: k08-symptomy.md
-  cytata: "| 3 | Прошилося, плата мовчить | адреса бутлоадера не та для цього чипа | звірити чип і адресу → К5 |"
-  de: "рядок 10, таблиця топ-15 несправностей"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'bootloader.*address' 0 влучань"
 - id: T-K11-008
-  verdykt: pidtverdzheno
-  fayl: k11-nikoly.md
-  cytata: "**Не вмикати Flash Encryption і Secure Boot «щоб подивитися».** В release-режимі це односторонні двері: чип перестає приймати непідписані прошивки, а флеш стає нечитним поза цим конкретним чипом."
-  de: "рядок 18-20, блок nezvorotne"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'Flash.*Encryption.*Secure.*Boot' 0 влучань"
 - id: T-K13-007
-  verdykt: pidtverdzheno
-  fayl: k13-zhyvlennya.md
-  cytata: "| 1 | `3V3`–`GND`, прозвонка, живлення **вимкнене** | не дзвенить |"
-  de: "рядок 22, таблиця чотири вимірювання"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'measurement.*3V3.*GND' 0 влучань"
 - id: T-K14-020
-  verdykt: pidtverdzheno
-  fayl: k14-rivni.md
-  cytata: "Годиться: повільні однонапрямлені сигнали."
-  de: "рядок 41"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'voltage.*level.*signal' 0 влучань"
 - id: T-K15-033
-  verdykt: pidtverdzheno
-  fayl: k15-seriyna.md
-  cytata: "**Спільний образ ≠ спільна конфігурація.**"
-  de: "рядок 49, блок nezvorotne"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'image.*configuration' 0 влучань"
 - id: T-00-081
-  verdykt: pidtverdzheno
-  fayl: 00-pro-dovidnyk.md
-  cytata: "Кожне значення в довіднику прив'язане до конкретних версій тулчейну."
-  de: "рядок 200, розділ версії інструментів"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'toolchain.*version' 0 влучань"
 - id: T-00-004
-  verdykt: pidtverdzheno
-  fayl: 00-pro-dovidnyk.md
-  cytata: "Лінійне читання — лише один зі способів користуватися цією книгою, і не найчастіший."
-  de: "рядок 9-10"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'linear.*reading' 0 влучань"
 - id: T-01-108
-  verdykt: pidtverdzheno
-  fayl: 01-platforma.md
-  cytata: "Кристал, модуль і плата — три різні речі; істина написана на модулі."
-  de: "рядок 178, розділ що з цього треба запам'ятати"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'crystal.*module.*board' 0 влучань"
 - id: T-01-062
-  verdykt: pidtverdzheno
-  fayl: 01-platforma.md
-  cytata: "| Старт | мілісекунди | миттєво | миттєво | миттєво | десятки секунд |"
-  de: "рядок 95, таблиця порівняння"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'startup.*time' 0 влучань"
 - id: T-02-139
-  verdykt: pidtverdzheno
-  fayl: 02-chipy.md
-  cytata: "Якщо ви робите більше одного пристрою, варто звести парк до **двох** позицій: одна «робоча конячка» і одна дешева для простих вузлів."
-  de: "рядок 188-189, розділ практична порада про парк плат"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'board.*pool.*positions' 0 влучань"
 - id: T-02-047
-  verdykt: pidtverdzheno
-  fayl: 02-chipy.md
-  cytata: "| Wi-Fi | так | так | так | так | **Wi-Fi 6** | **ні** |"
-  de: "рядок 37, таблиця можливості чипів"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, esp32-h2_datasheet_en.pdf, grep -i 'WiFi.*H2' 0 влучань"
 - id: T-03-013
-  verdykt: pidtverdzheno
-  fayl: 03-soc.md
-  cytata: "Це одна з реальних цін дешевизни C3."
-  de: "рядок 28-29"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32-c3_datasheet_en.pdf, grep -i 'price.*cost.*cheap' 0 влучань"
 - id: T-04-094
-  verdykt: pidtverdzheno
-  fayl: 04-peryferiya.md
-  cytata: "| I²S | 2 | 1 | 2 | 1 | 1 | 1 |"
-  de: "рядок 119, таблиця периферія в чипах"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32-s3_datasheet_en.pdf, grep -i 'I2S.*channels' 0 влучань"
 - id: T-04-045
-  verdykt: pidtverdzheno
-  fayl: 04-peryferiya.md
-  cytata: "| Таймери | апаратні таймери загального призначення | 33 |"
-  de: "рядок 70, таблиця керування сигналами"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'timer.*general.*purpose' 0 влучань"
 - id: T-05-081
-  verdykt: pidtverdzheno
-  fayl: 05-elektronika.md
-  cytata: "Тоді до неї можна чіпляти скільки завгодно пристроїв: хто завгодно може притиснути, а одиниця з'являється, коли всі відпустили."
-  de: "рядок 174-176"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'open-drain.*pull.*resistor' 0 влучань"
 - id: T-05-129
-  verdykt: pidtverdzheno
-  fayl: 05-elektronika.md
-  cytata: "Вхід без підтягування читає випадкове значення."
-  de: "рядок 281"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'floating.*input' 0 влучань"
 - id: T-06-089
-  verdykt: pidtverdzheno
-  fayl: 06-zhyvlennya.md
-  cytata: "Із запасом на старіння і холод беріть 70 % від номіналу."
-  de: "рядок 189, розділ бюджет енергії"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'battery.*capacity.*70%' 0 влучань"
 - id: T-06-022
-  verdykt: pidtverdzheno
-  fayl: 06-zhyvlennya.md
-  cytata: "| Активний, Wi-Fi у роботі | близько сотні мА середнє |"
-  de: "рядок 46, таблиця споживання"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'WiFi.*consumption.*current' 0 влучань"
 - id: T-07-096
-  verdykt: pidtverdzheno
-  fayl: 07-gpio.md
-  cytata: "| | Канал 1 | Канал 2 |"
-  de: "рядок 205, таблиця DAC піни"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'DAC.*channel' 0 влучань"
 - id: T-08-072
-  verdykt: pidtverdzheno
-  fayl: 08-platy.md
-  cytata: "Конкретні магазини, ціни й наявність — у датованому вкладиші ринку, не тут (Р5)."
-  de: "рядок 128-129"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'shop.*price.*market' 0 влучань"
 - id: T-08-046
-  verdykt: pidtverdzheno
-  fayl: 08-platy.md
-  cytata: "Половина питань «чому на S3 нічого не працює» знімається переставлянням кабелю."
-  de: "рядок 74-75"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'USB.*cable' 0 влучань"
 - id: T-09-009
-  verdykt: pidtverdzheno
-  fayl: 09-pidklyuchennya.md
-  cytata: "Він робить дві речі: передає дані і, через сигнали `DTR`/`RTS`, керує входом у режим прошивки (розділ 16)."
-  de: "рядок 19-20"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'UART.*DTR.*RTS' 0 влучань"
 - id: T-09-040
-  verdykt: pidtverdzheno
-  fayl: 09-pidklyuchennya.md
-  cytata: "Прив'язуватися до номера в скриптах — джерело сюрпризів."
-  de: "рядок 63-64"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'serial.*port.*number' 0 влучань"
 - id: T-10-067
-  verdykt: pidtverdzheno
-  fayl: 10-instrumenty.md
-  cytata: "У виїзний комплект кладуть витратні матеріали, а не лише інструмент."
-  de: "рядок 164"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'field.*kit.*material' 0 влучань"
 - id: T-11-049
-  verdykt: pidtverdzheno
-  fayl: 11-idf.md
-  cytata: "idf.py build                        # зібрати"
-  de: "рядок 122"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'idf.py.*build' 0 влучань"
 - id: T-11-109
-  verdykt: pidtverdzheno
-  fayl: 11-idf.md
-  cytata: "`export.sh` у кожному новому терміналі; свідомий псевдонім замість запису в `.bashrc`."
-  de: "рядок 281-282, розділ що з цього треба запам'ятати"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'export.*terminal' 0 влучань"
 - id: T-12-044
-  verdykt: pidtverdzheno
-  fayl: 12-arduino.md
-  cytata: "**Arduino IDE.** Найпростіший вхід."
-  de: "рядок 124"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'Arduino.*IDE' 0 влучань"
 - id: T-12-029
-  verdykt: pidtverdzheno
-  fayl: 12-arduino.md
-  cytata: "Багато написано під AVR і перенесено формально: блокувальні затримки в мілісекунди, робота з пам'яттю в розрахунку на 2 КБ RAM, ігнорування помилок шини."
-  de: "рядок 82-84"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'AVR.*library.*quality' 0 влучань"
 - id: T-13-071
-  verdykt: pidtverdzheno
-  fayl: 13-pio.md
-  cytata: "| Потрібні найновіші чипи або Arduino 3.x | pioarduino |"
-  de: "рядок 208, таблиця вибір платформи"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'PlatformIO.*Arduino' 0 влучань"
 - id: T-14-045
-  verdykt: pidtverdzheno
-  fayl: 14-shvydki-shlyakhy.md
-  cytata: "**Коли це правильний вибір.** Перевірити алгоритм; навчатися; показати приклад іншій людині; підготуватися, поки заліза немає."
-  de: "рядок 119-120"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'simulator.*algorithm' 0 влучань"
 - id: T-14-012
-  verdykt: pidtverdzheno
-  fayl: 14-shvydki-shlyakhy.md
-  cytata: "**Де межа.** Швидкість — десятки разів повільніше за C, і це відчутно на будь-чому інтенсивному."
-  de: "рядок 32-36"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'speed.*slow.*C' 0 влучань"
 - id: T-15-010
-  verdykt: pidtverdzheno
-  fayl: 15-oflayn.md
-  cytata: "| Плати ще немає | Wokwi | залізо не потрібне |"
-  de: "рядок 14, таблиця матриця вибору"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'offline.*hardware' 0 влучань"
 - id: T-15-053
-  verdykt: pidtverdzheno
-  fayl: 15-oflayn.md
-  cytata: "**Тулчейн, встановлений і перевірений.** Не «завантажений інсталятор», а встановлений і випробуваний збиранням хоча б одного проєкту."
-  de: "рядок 92-93"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'toolchain.*verify' 0 влучань"
 - id: T-16-038
-  verdykt: pidtverdzheno
-  fayl: 16-boot.md
-  cytata: "Практичний висновок: адресу не пригадують, а дивляться."
-  de: "рядок 89"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'boot.*address' 0 влучань"
 - id: T-17-132
-  verdykt: pidtverdzheno
-  fayl: 17-esptool.md
-  cytata: "**`Invalid head of packet (0x00)`**"
-  de: "рядок 307"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'Invalid.*packet' 0 влучань"
 - id: T-18-077
-  verdykt: pidtverdzheno
-  fayl: 18-rozdily-fleshu.md
-  cytata: "| Сумісність із ПК | ні | ні | так |"
-  de: "рядок 138, таблиця файлові системи"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'SPIFFS.*compatible' 0 влучань"
 - id: T-18-029
-  verdykt: pidtverdzheno
-  fayl: 18-rozdily-fleshu.md
-  cytata: "Маленький розділ, про який ніхто не думає, поки не зітре."
-  de: "рядок 41-42"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'small.*partition' 0 влучань"
 - id: T-19-012
-  verdykt: pidtverdzheno
-  fayl: 19-ota.md
-  cytata: "| `ota_1` | app | слот B |"
-  de: "рядок 19, таблиця розбивка OTA"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'OTA.*slot' 0 влучань"
 - id: T-20-055
-  verdykt: pidtverdzheno
-  fayl: 20-bekap.md
-  cytata: "Три випадки, що покривають майже все:"
-  de: "рядок 123"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'reset.*reason' 0 влучань"
 - id: T-20-033
-  verdykt: pidtverdzheno
-  fayl: 20-bekap.md
-  cytata: "Менший файл — обірваний дамп."
-  de: "рядок 76"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'dump.*file' 0 влучань"
 - id: T-21-080
-  verdykt: pidtverdzheno
-  fayl: 21-seriyna.md
-  cytata: "Разом із журналом зберігаються **самі файли прошивки** тієї версії, що поїхала, і, обов'язково, `.elf` того самого збирання: без нього backtrace з поля не розшифрувати (картка [К7](#k-panika))."
-  de: "рядок 161-163"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'firmware.*version.*elf' 0 влучань"
 - id: T-22-050
-  verdykt: pidtverdzheno
-  fayl: 22-zberezhennya-stanu.md
-  cytata: "Порядок «спробуємо прошити, а якщо не вийде — знімемо дамп» не працює в принципі."
-  de: "рядок 111-112"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'flash.*dump.*order' 0 влучань"
 - id: T-22-032
-  verdykt: pidtverdzheno
-  fayl: 22-zberezhennya-stanu.md
-  cytata: "Кнопка на `GPIO0` пояснює, чому пристрій іноді не стартує (розділ 16), і без запису це б довелося шукати годинами."
-  de: "рядок 71-72"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'GPIO0.*button' 0 влучань"
 - id: T-23-094
-  verdykt: pidtverdzheno
-  fayl: 23-triazh.md
-  cytata: "Він **не** відповідає на «що воно робить» і «звідки взявся код»."
-  de: "рядок 169-170"
+  verdykt: ne_znayshov
+  dyvyvsya: "esp32_datasheet_en.pdf, grep -i 'triage.*code' 0 влучань"

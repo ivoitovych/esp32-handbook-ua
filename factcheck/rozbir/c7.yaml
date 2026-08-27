@@ -1,0 +1,259 @@
+- id: T-B-075
+  rid: ne-rozibrav
+
+- id: T-H-041
+  rid: ne-tverdzhennya
+  chomu: інформація про процес видання
+
+- id: T-K10-035
+  rid: ne-tverdzhennya
+  chomu: приклад команди
+
+- id: T-03-008
+  rid: dzherelo-ye
+  shukaty: ESP-IDF FreeRTOS — Ядро, запуск app_main
+
+- id: T-09-087
+  rid: ne-tverdzhennya
+  chomu: перелік можливих причин
+
+- id: T-15-066
+  rid: pozyciya
+  chomu: рекомендація де тримати офлайн-комплект
+
+- id: T-21-040
+  rid: pozyciya
+  chomu: рекомендація про живлення при прошиванні
+
+- id: T-23-003
+  rid: ne-tverdzhennya
+  chomu: навігаційне посилання
+
+- id: T-24-049
+  rid: ne-rozibrav
+
+- id: T-24-070
+  rid: pozyciya
+  chomu: застереження про частини систем
+
+- id: T-24-028
+  rid: ne-tverdzhennya
+  chomu: перелік параметрів конфігурації
+
+- id: T-25-064
+  rid: ne-tverdzhennya
+  chomu: пояснення поведінки логування у прошивці
+
+- id: T-25-091
+  rid: dzherelo-ye
+  shukaty: ESP-IDF — кільцевий буфер, логування через HTTP
+
+- id: T-25-001
+  rid: pozyciya
+  chomu: позиція про роль логування
+
+- id: T-26-058
+  rid: ne-tverdzhennya
+  chomu: пояснення причини
+
+- id: T-26-094
+  rid: ne-tverdzhennya
+  chomu: опис спостереження
+
+- id: T-26-122
+  rid: dzherelo-ye
+  shukaty: ESP-IDF API Reference — Watchdog Timer
+
+- id: T-26-042
+  rid: dzherelo-ye
+  shukaty: ESP32-C3 Series — поведінка backtrace при screen/picocom
+
+- id: T-27-016
+  rid: ne-tverdzhennya
+  chomu: навігаційна фраза
+
+- id: T-28-060
+  rid: pozyciya
+  chomu: методологія діагностики периферії
+
+- id: T-28-010
+  rid: ne-tverdzhennya
+  chomu: таблиця характеристик інструментів
+
+- id: T-28-029
+  rid: ne-tverdzhennya
+  chomu: описання способу підключення логічного аналізатора
+
+- id: T-29-005
+  rid: pozyciya
+  chomu: рекомендація порядку дій при налагодженні
+
+- id: T-29-008
+  rid: pozyciya
+  chomu: рекомендація про мінімальні тести модулів
+
+- id: T-29-094
+  rid: ne-tverdzhennya
+  chomu: перехід до наступного розділу
+
+- id: T-29-016
+  rid: ne-tverdzhennya
+  chomu: описання симптому
+
+- id: T-30-046
+  rid: pozyciya
+  chomu: пояснення необхідності уникати фрагментації пам'яті
+
+- id: T-30-081
+  rid: ne-tverdzhennya
+  chomu: вводна фраза
+
+- id: T-30-011
+  rid: ne-rozibrav
+
+- id: T-31-036
+  rid: pozyciya
+  chomu: висновок про наслідок двоядерності
+
+- id: T-31-070
+  rid: pozyciya
+  chomu: визначення ролі інструменту налагодження
+
+- id: T-31-002
+  rid: dzherelo-ye
+  shukaty: ESP-IDF FreeRTOS
+
+- id: T-32-040
+  rid: ne-tverdzhennya
+  chomu: пояснення можливості явної підписки
+
+- id: T-32-073
+  rid: ne-tverdzhennya
+  chomu: таблиця характеристик систем
+
+- id: T-32-019
+  rid: pozyciya
+  chomu: принцип явної обробки помилок при виконанні
+
+- id: T-33-052
+  rid: ne-rozibrav
+
+- id: T-33-079
+  rid: dzherelo-ye
+  shukaty: ESP32 Series Datasheet — Pulse Counter (PCNT)
+
+- id: T-33-123
+  rid: pozyciya
+  chomu: рекомендація реалізації антидребезгу
+
+- id: T-34-004
+  rid: dzherelo-ye
+  shukaty: ESP32 Series Datasheet — UART контролери
+
+- id: T-34-063
+  rid: pozyciya
+  chomu: рекомендація про двійковий формат передачі
+
+- id: T-34-023
+  rid: ne-tverdzhennya
+  chomu: перелік причин помилок
+
+- id: T-35-065
+  rid: pozyciya
+  chomu: виняток для одного датчика на коротких проводах
+
+- id: T-35-092
+  rid: dzherelo-ye
+  shukaty: I2C датчик Datasheet — 8-бітна адреса
+
+- id: T-36-005
+  rid: ne-tverdzhennya
+  chomu: таблиця сигналів SPI
+
+- id: T-36-088
+  rid: dzherelo-ye
+  shukaty: ESP-IDF SPI API — max_transfer_sz конфігурація
+
+- id: T-36-014
+  rid: dzherelo-ye
+  shukaty: SPI specification — Chip Select
+
+- id: T-36-032
+  rid: ne-tverdzhennya
+  chomu: таблиця режимів SPI
+
+- id: T-36-064
+  rid: pozyciya
+  chomu: рекомендація про частоту на макетці
+
+- id: T-37-013
+  rid: ne-tverdzhennya
+  chomu: перелік ознак проблеми з OneWire
+
+- id: T-37-038
+  rid: dzherelo-ye
+  shukaty: OneWire/DS18B20 Datasheet — паразитне живлення
+
+- id: T-38-071
+  rid: ne-tverdzhennya
+  chomu: послідовність кроків при під'єднанні
+
+- id: T-38-017
+  rid: dzherelo-ye
+  shukaty: CAN трансцейвер Datasheet — SN65HVD230, TJA1050, MCP2551
+
+- id: T-39-047
+  rid: ne-tverdzhennya
+  chomu: приклад коду
+
+- id: T-39-071
+  rid: pozyciya
+  chomu: спостереження про різницю стану та функціональності зв'язку
+
+- id: T-39-010
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Wi-Fi — поведінка точки доступу на різних каналах
+
+- id: T-39-033
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Wi-Fi — асинхронні події підключення
+
+- id: T-40-061
+  rid: ne-tverdzhennya
+  chomu: приклад структури MQTT топіків
+
+- id: T-40-080
+  rid: dzherelo-ye
+  shukaty: ESP-IDF SSL/TLS — вбудовування сертифіката в прошивку
+
+- id: T-40-099
+  rid: pozyciya
+  chomu: оцінка mDNS як зручності, а не необхідності
+
+- id: T-40-029
+  rid: dzherelo-ye
+  shukaty: DHCP specification
+
+- id: T-41-005
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Bluetooth — отримання адреси
+
+- id: T-41-077
+  rid: dzherelo-ye
+  shukaty: ESP-IDF Bluetooth — Classic на C3, S3, SPP підтримка
+
+- id: T-41-020
+  rid: ne-tverdzhennya
+  chomu: таблиця характеристик пам'яті
+
+- id: T-41-040
+  rid: dzherelo-ye
+  shukaty: ESP-IDF BLE — два стеки
+
+- id: T-42-053
+  rid: pozyciya
+  chomu: застереження про безпеку ключів в коді
+
+- id: T-42-074
+  rid: pozyciya
+  chomu: рекомендація про джерело мітки часу

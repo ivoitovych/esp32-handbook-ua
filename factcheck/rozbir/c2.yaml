@@ -1,0 +1,145 @@
+- id: T-A-072
+  rid: ne-rozibrav
+- id: T-G-124
+  rid: ne-tverdzhennya
+- id: T-K05-031
+  rid: dzherelo-ye
+  shukaty: ESP-IDF документація
+  chomu: версія та функції
+- id: T-01-075
+  rid: ne-rozibrav
+- id: T-07-113
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet, розділ GPIO — кількість пінів
+  chomu: технічна характеристика
+- id: T-13-076
+  rid: pozyciya
+  chomu: конвенція структурування проекту
+- id: T-20-064
+  rid: ne-rozibrav
+- id: T-23-031
+  rid: ne-rozibrav
+- id: T-24-007
+  rid: ne-rozibrav
+- id: T-24-064
+  rid: ne-rozibrav
+- id: T-24-022
+  rid: ne-rozibrav
+- id: T-25-052
+  rid: ne-rozibrav
+- id: T-25-088
+  rid: pozyciya
+  chomu: оцінка та рекомендація
+- id: T-25-101
+  rid: ne-rozibrav
+- id: T-25-047
+  rid: dzherelo-ye
+  shukaty: ESP-IDF документація
+  chomu: версія та функції
+- id: T-26-083
+  rid: ne-rozibrav
+- id: T-26-117
+  rid: ne-rozibrav
+- id: T-26-034
+  rid: ne-rozibrav
+- id: T-27-009
+  rid: pozyciya
+  chomu: оцінка та рекомендація
+- id: T-28-054
+  rid: ne-rozibrav
+- id: T-28-074
+  rid: ne-rozibrav
+- id: T-28-022
+  rid: ne-rozibrav
+- id: T-28-052
+  rid: ne-rozibrav
+- id: T-29-059
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet, розділ Strapping Pins
+  chomu: режими завантаження
+- id: T-29-088
+  rid: ne-rozibrav
+- id: T-29-106
+  rid: ne-rozibrav
+- id: T-30-041
+  rid: ne-rozibrav
+- id: T-30-073
+  rid: ne-rozibrav
+- id: T-30-100
+  rid: ne-rozibrav
+- id: T-30-034
+  rid: ne-rozibrav
+- id: T-31-059
+  rid: ne-rozibrav
+- id: T-31-096
+  rid: pozyciya
+  chomu: оцінка та рекомендація
+- id: T-31-029
+  rid: pozyciya
+  chomu: оцінка та рекомендація
+- id: T-32-067
+  rid: ne-rozibrav
+- id: T-32-090
+  rid: ne-rozibrav
+- id: T-33-043
+  rid: ne-rozibrav
+- id: T-33-074
+  rid: ne-rozibrav
+- id: T-33-105
+  rid: ne-rozibrav
+- id: T-33-034
+  rid: ne-rozibrav
+- id: T-34-057
+  rid: ne-rozibrav
+- id: T-34-001
+  rid: ne-rozibrav
+- id: T-35-050
+  rid: ne-rozibrav
+- id: T-35-085
+  rid: ne-rozibrav
+- id: T-35-037
+  rid: ne-rozibrav
+- id: T-36-011
+  rid: ne-rozibrav
+- id: T-36-117
+  rid: ne-rozibrav
+- id: T-36-026
+  rid: ne-rozibrav
+- id: T-36-053
+  rid: ne-rozibrav
+- id: T-37-058
+  rid: ne-rozibrav
+- id: T-37-003
+  rid: ne-rozibrav
+- id: T-38-068
+  rid: ne-rozibrav
+- id: T-38-010
+  rid: ne-rozibrav
+- id: T-38-039
+  rid: ne-rozibrav
+- id: T-39-065
+  rid: ne-tverdzhennya
+- id: T-39-088
+  rid: ne-rozibrav
+- id: T-39-022
+  rid: ne-rozibrav
+- id: T-40-052
+  rid: ne-rozibrav
+- id: T-40-075
+  rid: ne-rozibrav
+- id: T-40-095
+  rid: ne-tverdzhennya
+- id: T-40-023
+  rid: ne-rozibrav
+- id: T-41-052
+  rid: ne-rozibrav
+- id: T-41-070
+  rid: ne-rozibrav
+- id: T-41-001
+  rid: ne-rozibrav
+- id: T-41-035
+  rid: ne-rozibrav
+- id: T-42-048
+  rid: ne-rozibrav
+- id: T-42-007
+  rid: ne-rozibrav

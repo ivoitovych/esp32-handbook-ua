@@ -51,24 +51,20 @@
   rid: ne-tverdzhennya
 
 - id: T-COM-012
-  rid: dzherelo-ye
-  shukaty: DevKit V1 DOIT кількість пінів
+  rid: ne-rozibrav
 
 - id: T-REG-011
-  rid: dzherelo-ye
-  shukaty: duty cycle обмеження частини діапазонів
+  rid: ne-rozibrav
 
 - id: T-UA--023
-  rid: dzherelo-ye
-  shukaty: LoRa модуль діапазон частот норми
+  rid: ne-rozibrav
 
 - id: T-K02-010
   rid: pozyciya
   chomu: спостереження про ненадійність кольорів дротів
 
 - id: T-K04-001
-  rid: dzherelo-ye
-  shukaty: плата режим прошивки самостійний перехід
+  rid: ne-rozibrav
 
 - id: T-K07-022
   rid: pozyciya
@@ -80,7 +76,7 @@
 
 - id: T-K10-030
   rid: dzherelo-ye
-  shukaty: minicom команда параметри ttyUSB0 115200
+  shukaty: minicom user manual, serial terminal parameters
 
 - id: T-K12-021
   rid: pozyciya
@@ -112,7 +108,7 @@
 
 - id: T-02-030
   rid: dzherelo-ye
-  shukaty: ESP32 SRAM 520
+  shukaty: ESP32 Technical Reference Manual, memory specifications
 
 - id: T-03-068
   rid: ne-tverdzhennya
@@ -127,12 +123,11 @@
   rid: ne-tverdzhennya
 
 - id: T-05-122
-  rid: dzherelo-ye
-  shukaty: паяння живлення потенціал жало вхід
+  rid: ne-rozibrav
 
 - id: T-06-066
   rid: dzherelo-ye
-  shukaty: периферія ESP32 вимкнена за замовчуванням
+  shukaty: ESP-IDF Power Management documentation
 
 - id: T-06-127
   rid: pozyciya
@@ -176,7 +171,7 @@
 
 - id: T-13-059
   rid: dzherelo-ye
-  shukaty: розвязків неспінена версія платформи бібліотеки
+  shukaty: PlatformIO or ESP-IDF dependency management documentation
 
 - id: T-14-036
   rid: ne-tverdzhennya
@@ -196,8 +191,7 @@
   rid: ne-tverdzhennya
 
 - id: T-17-118
-  rid: dzherelo-ye
-  shukaty: рядок залежить від версії
+  rid: ne-rozibrav
 
 - id: T-18-067
   rid: ne-tverdzhennya
@@ -208,15 +202,14 @@
 
 - id: T-19-077
   rid: dzherelo-ye
-  shukaty: OTA не годиться виробу локальна мережа
+  shukaty: ESP-IDF OTA Update documentation, deployment constraints
 
 - id: T-19-047
   rid: dzherelo-ye
-  shukaty: доказ контроль прошивки керування
+  shukaty: ESP-IDF OTA Update documentation
 
 - id: T-20-003
-  rid: dzherelo-ye
-  shukaty: флеш перепрошивка відновлення
+  rid: ne-rozibrav
 
 - id: T-21-071
   rid: ne-tverdzhennya
