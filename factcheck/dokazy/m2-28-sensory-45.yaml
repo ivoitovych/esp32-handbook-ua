@@ -1,145 +1,132 @@
-# М2: Сенсори, датчики й вимірювання.
-#
-# Джерела в кеші: `dht11.pdf` (Guangzhou Aosong), `dht22.pdf` (AM2303),
-# `hc-sr04.pdf` (Elecfreaks), `ina219.pdf` (TI), `ina226.pdf` (TI).
-# Реєстр — `factcheck/DZHERELA-m2.md`.
-#
-# Одиниці для параметрів датчиків (напруга, роздільність, інтерфейс).
-
 - nazva: DHT11 - дешевий датчик температури й вологості
-  zbih: '\*\*DHT11 і DHT22\.\*\*.*Дешеві, поширені'
+  zbih: \*\*DHT11 і DHT22\.\*\*.*Дешеві, поширені
   klas: E
   dzherelo: null
   cytata: null
   sposib: null
-  notatka: >-
-    Твердження про те, що DHT11 і DHT22 — дешеві й поширені, це оцінка ринку,
-    а не факт про датчик. Datasheet підтверджує параметри, а не комерційні характеристики.
-
+  notatka: Твердження про те, що DHT11 і DHT22 — дешеві й поширені, це оцінка ринку, а не факт про датчик.
+    Datasheet підтверджує параметри, а не комерційні характеристики.
 - nazva: DHT11 — роздільність вологості 1%RH
-  zbih: 'DHT11.*гірший:.*роздільність вологості цілими відсотками'
+  zbih: DHT11.*гірший:.*роздільність вологості цілими відсотками
   klas: A
-  dzherelo: >-
-    Aosong DHT11 Digital-output Relative Humidity & Temperature Sensor,
-    розділ про технічні параметри (分辨率)
-  cytata: |
-    DHT11 Technical Specifications:
-    Humidity Resolution: 1 %RH (цілими відсотками)
-    Temperature Resolution: 1 °C
-    Accuracy: ±5% RH (0-50°C)
-  sposib: >-
-    PDF Guangzhou Aosong, кеш `dht11.pdf`, pdftotext -layout, 2026-08-26
-  notatka: >-
-    DHT11 має гіршу роздільність, ніж DHT22: від 0.1 до 1 %RH.
-    Це делает його менш точним для вимірювань вологості.
+  dzherelo: Aosong DHT11 Digital-output Relative Humidity & Temperature Sensor, розділ про технічні параметри
+    (分辨率)
+  cytata: 'DHT11 Technical Specifications:
 
+    Humidity Resolution: 1 %RH (цілими відсотками)
+
+    Temperature Resolution: 1 °C
+
+    Accuracy: ±5% RH (0-50°C)
+
+    '
+  sposib: PDF Guangzhou Aosong, кеш `dht11.pdf`, pdftotext -layout, 2026-08-26
+  notatka: 'DHT11 має гіршу роздільність, ніж DHT22: від 0.1 до 1 %RH. Це делает його менш точним для
+    вимірювань вологості.'
 - nazva: HC-SR04 — ультразвуковий далекомір, 2–400 см
-  zbih: '\*\*HC-SR04\*\*.*ультразвуковий далекомір, 2–400 см'
+  zbih: \*\*HC-SR04\*\*.*ультразвуковий далекомір, 2–400 см
   klas: A
-  dzherelo: >-
-    Elecfreaks, Ultrasonic Ranging Module HC-SR04, Product Specifications
-  cytata: |
-    Ultrasonic Ranging Module HC-SR04 provides 2cm - 400cm non-contact
+  dzherelo: Elecfreaks, Ultrasonic Ranging Module HC-SR04, Product Specifications
+  cytata: 'Ultrasonic Ranging Module HC-SR04 provides 2cm - 400cm non-contact
+
     measurement function, the ranging accuracy can reach to 3mm.
 
-    Electric Parameter:
-    Max Range: 4m
-    Min Range: 2cm
-    Working Voltage: DC 5V
-  sposib: >-
-    PDF Elecfreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
-  notatka: >-
-    HC-SR04 офіційно підтримує дистанцію від 2 см до 4 м (400 см - спрощена оцінка).
-    Це стандартний модуль для ESP32 проектів.
 
+    Electric Parameter:
+
+    Max Range: 4m
+
+    Min Range: 2cm
+
+    Working Voltage: DC 5V
+
+    '
+  sposib: PDF Elecfreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+  notatka: HC-SR04 офіційно підтримує дистанцію від 2 см до 4 м (400 см - спрощена оцінка). Це стандартний
+    модуль для ESP32 проектів.
 - nazva: HC-SR04 — 5 В на виводі ECHO
-  zbih: 'HC-SR04 живиться від 5 В і видає.*5 В на виводі.*ECHO'
+  zbih: HC-SR04 живиться від 5 В і видає.*5 В на виводі.*ECHO
   klas: A
-  dzherelo: >-
-    Elecfreaks, Ultrasonic Ranging Module HC-SR04, Wire Connection Diagram
-    та Electric Parameters
-  cytata: |
-    Wire connecting direct as follows:
+  dzherelo: Elecfreaks, Ultrasonic Ranging Module HC-SR04, Wire Connection Diagram та Electric Parameters
+  cytata: 'Wire connecting direct as follows:
+
     - 5V Supply (Vcc)
+
     - Trigger Pulse Input (Trig)
+
     - Echo Pulse Output (Echo)
+
     - 0V Ground (GND)
 
-    Working Voltage: DC 5V
-    Echo Output Signal: Input TTL lever signal and the range in proportion
-  sposib: >-
-    PDF Elecfreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
-  notatka: >-
-    HC-SR04 живиться від 5 В і видає TTL-рівневий сигнал на echo.
-    Оскільки модуль на 5 В, то echo видає 5 В логічної одиниці.
-    Для ESP32 (3.3 В) потребує дільника напруги.
 
+    Working Voltage: DC 5V
+
+    Echo Output Signal: Input TTL lever signal and the range in proportion
+
+    '
+  sposib: PDF Elecfreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+  notatka: HC-SR04 живиться від 5 В і видає TTL-рівневий сигнал на echo. Оскільки модуль на 5 В, то echo
+    видає 5 В логічної одиниці. Для ESP32 (3.3 В) потребує дільника напруги.
 - nazva: HC-SR04 — дільник напруги 10кОм + 20кОм
-  zbih: 'Потрібен дільник.*10 кОм.*20 кОм'
+  zbih: Потрібен дільник.*10 кОм.*20 кОм
   klas: E
   dzherelo: null
   cytata: null
   sposib: null
-  notatka: >-
-    Це архітектурна порада про інтеграцію HC-SR04 з ESP32.
-    Розрахунок дільника (10кОм + 20кОм виділяє 5В → 1.67В) є практичним рішенням,
-    а не фактом про контролер HC-SR04.
-
+  notatka: 'Це архітектурна порада про інтеграцію HC-SR04 з ESP32. Розрахунок дільника (10кОм + 20кОм
+    виділяє 5В → 1.67В) є практичним рішенням, а не фактом про контролер HC-SR04. | Переглянуто 2026-08-27
+    у розборі 36 надмірних E. Клас E правильний: твердження про прийом проєктування, кількість у переліку
+    матеріалів або власне вимірювання проєкту — конкретної деталі чи стандарту не названо, отже документа,
+    який відповів би, не існує. Число в назві є, але воно номінал у пораді, а не величина з паспорта.'
 - nazva: HC-SR04 — 5 В на ECHO обов'язковий дільник
-  zbih: 'HC-SR04 видає 5 В на.*ECHO.*дільник обов''язковий'
+  zbih: HC-SR04 видає 5 В на.*ECHO.*дільник обов'язковий
   klas: A
-  dzherelo: >-
-    Elecfreaks, Ultrasonic Ranging Module HC-SR04
-  cytata: |
-    Working Voltage: DC 5V
-    Echo Output Signal: Input TTL lever signal and the range in proportion
-  sposib: >-
-    PDF Elecfreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
-  notatka: >-
-    Дублікат твердження про 5 В на ECHO. Крім самої напруги,
-    книга підкреслює необхідність дільника.
+  dzherelo: Elecfreaks, Ultrasonic Ranging Module HC-SR04
+  cytata: 'Working Voltage: DC 5V
 
+    Echo Output Signal: Input TTL lever signal and the range in proportion
+
+    '
+  sposib: PDF Elecfreaks, кеш `hc-sr04.pdf`, pdftotext -layout, 2026-08-26
+  notatka: Дублікат твердження про 5 В на ECHO. Крім самої напруги, книга підкреслює необхідність дільника.
 - nazva: INA219 — вимірювання струму й напруги по I²C
-  zbih: '\*\*INA219, INA226\*\*.*вимірювання.*по I²C.*вбудованим шунтом'
+  zbih: \*\*INA219, INA226\*\*.*вимірювання.*по I²C.*вбудованим шунтом
   klas: A
-  dzherelo: >-
-    Texas Instruments, INA219 Zerø-Drift, Bidirectional Current/Power Monitor
-    With I2C Interface, SBOS448G, розділ Features та Description
-  cytata: |
-    INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface
+  dzherelo: Texas Instruments, INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface,
+    SBOS448G, розділ Features та Description
+  cytata: 'INA219 Zerø-Drift, Bidirectional Current/Power Monitor With I2C Interface
+
 
     Features:
-    • Senses Bus Voltages from 0 to 26 V
-    • Reports Current, Voltage, and Power
-    • I2C- or SMBUS-compatible interface features 16 programmable addresses
-    • High Accuracy: 0.5% (Maximum) Over Temperature (INA219B)
-    • Calibration Registers
-  sposib: >-
-    PDF Texas Instruments, кеш `ina219.pdf`, pdftotext -layout, 2026-08-26
-  notatka: >-
-    INA219 офіційно вимірює струм по внутрішньому шунту (0.1Ω)
-    і напругу шини, з вбудованим I²C інтерфейсом.
-    Це підходить для вимірювання живлення в ESP32 проектах.
 
+    • Senses Bus Voltages from 0 to 26 V
+
+    • Reports Current, Voltage, and Power
+
+    • I2C- or SMBUS-compatible interface features 16 programmable addresses
+
+    • High Accuracy: 0.5% (Maximum) Over Temperature (INA219B)
+
+    • Calibration Registers
+
+    '
+  sposib: PDF Texas Instruments, кеш `ina219.pdf`, pdftotext -layout, 2026-08-26
+  notatka: INA219 офіційно вимірює струм по внутрішньому шунту (0.1Ω) і напругу шини, з вбудованим I²C
+    інтерфейсом. Це підходить для вимірювання живлення в ESP32 проектах.
 - nazva: Калібрування датчиків за відомою точкою
-  zbih: '\*\*Калібрувати за відомим\.\*\*.*Порівняти.*повіреним приладом'
+  zbih: \*\*Калібрувати за відомим\.\*\*.*Порівняти.*повіреним приладом
   klas: E
   dzherelo: null
   cytata: null
   sposib: null
-  notatka: >-
-    Це методологічна порада про правильне калібрування,
-    а не факт про конкретний датчик. Належить до розділу про практику вимірювань.
-
+  notatka: Це методологічна порада про правильне калібрування, а не факт про конкретний датчик. Належить
+    до розділу про практику вимірювань.
 - nazva: GPS модулі NMEA — UART, текстові речення
-  zbih: 'Модулі.*NEO-6M, NEO-8M.*UART.*самі надсилають.*NMEA'
+  zbih: Модулі.*NEO-6M, NEO-8M.*UART.*самі надсилають.*NMEA
   klas: C
-  dzherelo: >-
-    Datasheet GPS модулів серії NEO (Ublox)
+  dzherelo: Datasheet GPS модулів серії NEO (Ublox)
   cytata: null
-  sposib: >-
-    Документ не дістався. Потребує пошуку у даташиті u-blox NEO-6M або NEO-8M.
+  sposib: Документ не дістався. Потребує пошуку у даташиті u-blox NEO-6M або NEO-8M.
   shukaty: https://www.u-blox.com/sites/default/files/NEO-6_NEO-7_NEO-M8_DataSheet_%28UBX-13003221%29.pdf
-  notatka: >-
-    GPS модулі NEO дійсно передають потік NMEA речень по UART.
-    Це стандартний спосіб передачи даних від GPS модулів.
+  notatka: GPS модулі NEO дійсно передають потік NMEA речень по UART. Це стандартний спосіб передачи даних
+    від GPS модулів.
