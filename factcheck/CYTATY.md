@@ -16,26 +16,10 @@
 | `у кеші заглушка` | сервер віддав HTML із кодом 200 замість PDF |
 | `звірено очима` | витягання тексту руйнує структуру; звірив супровідник, причина названа |
 
-Записів доказів: **757**. Звірено дослівно: **122**. Не знайдено: **70**. Джерело не в кеші: **39**. Нема чого звіряти: **484**.
+Записів доказів: **753**. Звірено дослівно: **81**. Не знайдено: **67**. Джерело не в кеші: **83**. Нема чого звіряти: **486**.
 
-Станом на 2026-08-27 07:54 UTC.
+Станом на 2026-08-27 08:02 UTC.
 
-
-## **джерело вигадане** — 2
-
-| Доказ | Файл | Деталі |
-|---|---|---|
-| Wi-Fi канали 2.4 ГГц та регіональні обмеження | `m2-91-vybirka` | клас B, а джерело — не документ: «IEEE 802.11b/g стандарт та регуляторні вимоги (FCC, CE, ISED» |
-| T-33-054: Період при 50 Гц — 20 мс, формула duty | `m2-94-vybirka` | клас B, а джерело — не документ: «Сервомеханізм: стандартна частота 50 Гц, період = 1/50 = 20 » |
-
-## **хибний запис** — 4
-
-| Доказ | Файл | Деталі |
-|---|---|---|
-| STM32 має частоту від 24 МГц до сотень МГц | `m2-93-vybirka` | доказ класу F — F означає відсутність доказу |
-| T-30-067 — фрагментація пам'яті | `m2-96-vybirka` | доказ класу F — F означає відсутність доказу |
-| T-53-043 — Buck-boost конвертер для акумулятора | `m2-96-vybirka` | доказ класу F — F означає відсутність доказу |
-| T-02-148 — Рекомендації вибору чипа | `m2-96-vybirka` | доказ класу F — F означає відсутність доказу |
 
 ## клас E на твердженні з числом — перевірити — 36
 
@@ -78,30 +62,27 @@
 | Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні | `m2-95-vybirka` | клас E, а в назві число з одиницею |
 | T-E-067 — NRF24L01 · радіо 2.4 ГГц | `m2-96-vybirka` | клас E, а в назві число з одиницею |
 
-## **не знайдено** — 70
+## **не знайдено** — 67
 
 | Доказ | Файл | Деталі |
 |---|---|---|
+| Розпіновка JTAG classic — datasheet як друге джерело до io_mux_reg.h | `m2-01-esp32-datasheet-iomux` | 1 з 8 рядків: «MTCK    JTAG interface signals…» |
+| Споживання ESP32 за режимами — порядки збігаються з Table 4-2 | `m2-02-esp32-datasheet` | 7 з 16 рядків: «Modem-sleep     240 MHz  Dual-core chip(s)                 30 mA ~ 68 …»; «160 MHz  Dual-core chip(s)                 27 mA ~ 44 mA…»; «Power off       CHIP_PU is set to low level                1 µA…» |
+| Пін віддає більше, ніж приймає — IOH 40 мА проти IOL 28 мА | `m2-02-esp32-datasheet` | 3 з 5 рядків: «VDD3P3_CPU power domain    Typ 40 mA…»; «VDD3P3_RTC power domain    Typ 40 mA…»; «VDD_SDIO power domain      Typ 20 mA…» |
+| Робочий діапазон чипа ESP32 — від −40 до 125 °C | `m2-02-esp32-datasheet` | 1 з 5 рядків: «T (note 3)   Operating temperature   Min –40   Max 125   °C…» |
+| Абсолютний максимум входу — 3.6 В, тому 5 В убивають пін | `m2-06-napruga-mezhi` | 3 з 10 рядків: «VIH   High-level input voltage    0.75 × VDD   —   VDD + 0.3   V…»; «VIL   Low-level input voltage           –0.3   —   0.25 × VDD  V…»; «[2] Maximum VIH = VDD(max) + 0.5 V or 5.5 V, which ever is lower.…» |
+| Свинцевий припій плавиться нижче за безсвинцевий | `m2-17-pripiy-i-ip` | 1 з 7 рядків: «Sn96.5Ag3Cu0.5       217-220     (SAC305)…» |
+| «IVDD, current delivered by external power supply, Min 0.5 A» — дослівна цитата datasheet | `m2-21-zhyvlennya-06` | 1 з 3 рядків: «IVDD        Current delivered by external power       0.5    —     —  …» |
 | T-K06-045: На 115200 нічого, на 74880 осмислений текст — це ESP8266 | `m2-62-bootlog-k06` | 1 з 1 рядків: «The ESP8266 boot rom writes a log to the UART when booting at ``74880 …» |
 | Етап 1 — ROM bootloader зашитий у кремній | `m2-82-boot-flesh` | 1 з 1 рядків: «The ROM bootloader is in read-only memory (ROM) on the ESP32 chip.…» |
 | Етап 2 — другий бутлоадер bootloader.bin у флеші | `m2-82-boot-flesh` | 1 з 1 рядків: «After reset, the second line printed by the ESP32 ROM is a reset & boo…» |
 | Адреса bootloader.bin для ESP32 чипів — 0x1000 | `m2-82-boot-flesh` | 1 з 1 рядків: «{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="…» |
 | GPIO0 як ключовий strapping-пін для вибору режиму завантаження | `m2-82-boot-flesh` | 1 з 1 рядків: «0x10  - GPIO0…» |
-| Розділи ota_0 та ota_1 у таблиці розділів для OTA | `m2-82-boot-flesh` | 2 з 2 рядків: «ota_0,    app,  ota_0,   0x20000,  1M,…»; «ota_1,    app,  ota_1,   0x120000, 1M,…» |
 | esptool версія v4 та v5 у ESP-IDF | `m2-83-esptool` | 2 з 2 рядків: «{IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.…»; «ESP-IDF version compatibility documented.…» |
 | Адреса bootloader.bin для ESP32 — 0x1000 | `m2-83-esptool` | 1 з 1 рядків: «{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="…» |
 | Адреса merge-bin завжди на 0x0 незалежно від конфігурації | `m2-83-esptool` | 1 з 1 рядків: «Bootloader at {IDF_TARGET_BOOTLOADER_OFFSET} configurable by chip type…» |
-| Таблиця розділів за замовчуванням на адресі 0x8000 | `m2-83-esptool` | 1 з 1 рядків: «partition table is flashed to (default offset) 0x8000 in the flash.…» |
-| MAC-адреса унікальна від заводу і лежить в eFuse | `m2-83-esptool` | 1 з 1 рядків: «unique identifier stored in eFuse…» |
 | Команда esptool flash-id додає інформацію про флеш | `m2-83-esptool` | 1 з 1 рядків: «esptool provides commands for flash operations…» |
 | Максимальна швидкість baudu для більшості мостів 460800 | `m2-83-esptool` | 1 з 1 рядків: «serial connection parameters for flash operations…» |
-| Розміри флешу 2 МБ або 4 МБ для ESP32 модулів | `m2-83-esptool` | 1 з 1 рядків: «flash capacity and partition allocation…» |
-| Пріоритет задачі від 0 до configMAX_PRIORITIES мінус 1 | `m2-84-freertos` | 2 з 2 рядків: «Task priorities range from 0 (lowest) to configMAX_PRIORITIES - 1 (hig…»; «Vanilla FreeRTOS provides the following functions to create a task.…» |
-| Core 0 (PRO_CPU) переважно займає радіостек, Core 1 (APP_CPU) — застосунок | `m2-84-freertos` | 3 з 3 рядків: «Within ESP-IDF, Core 0 and Core 1 are sometimes referred to as PRO_CPU…»; «Typically, tasks responsible for protocol processing such as Wi-Fi are…»; «while the remainder of the application are pinned to Core 1.…» |
-| Функції FromISR єдині дозволені в обробнику переривання | `m2-84-freertos` | 1 з 1 рядків: «FromISR functions are ISR-safe variants of FreeRTOS APIs.…» |
-| Бітові прапори WIFI_OK та TIME_OK в event group | `m2-84-freertos` | 1 з 1 рядків: «Event group bits are used for task synchronization.…» |
-| Реле на GPIO при зависанні переходить в безпечний стан | `m2-84-freertos` | 1 з 1 рядків: «System recovery and restart mechanism through watchdog monitoring.…» |
-| Код 0x10 означає RTCWDT_RTC_RESET (RTC watchdog скинув усе) | `m2-93-vybirka` | 2 з 5 рядків: «rst:0x10 (RTCWDT_RTC_RESET)…»; «unstable power source. It is enabled by default. If the execution…» |
 | Перевірка переповнення стека і розмір стека app_main | `pass-01-tverde-yadro` | 3 з 8 рядків: «config ESP_MAIN_TASK_STACK_SIZE…»; «int "Main task stack size"…»; «default 3584…» |
 | На C3 ADC2 непридатний через апаратну ваду, а не через Wi-Fi | `pass-02-povedinka` | 1 з 3 рядків: «The results are not stable. This issue can be found in `ESP32-C3 Serie…» |
 | Strapping-піни за сімействами | `pass-08-strapping` | 2 з 6 рядків: «esp32h21="GPIO14", esp32h4="GPIO14"}…»; «esp32h4="GPIO13"}…» |
@@ -153,22 +134,57 @@
 | ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR | `pass-38-pul-shmatky-9-11` | 2 з 5 рядків: «* interrupts are disabled or inside an ISR.…»; «* when absolutely essential.…» |
 | На RISC-V рядка Backtrace немає — його будує монітор | `pass-38-pul-shmatky-9-11` | 2 з 12 рядків: «Moreover, IDF Monitor is also capable of generating and printing a…»; «IDF Monitor. Thus, in order to generate and print a backtrace while…» |
 
-## джерело не в кеші — 39
+## джерело не в кеші — 83
 
 | Доказ | Файл | Деталі |
 |---|---|---|
-| Розпіновка JTAG classic — datasheet як друге джерело до io_mux_reg.h | `m2-01-esp32-datasheet-iomux` | 1 джерел не в кеші |
-| Споживання ESP32 за режимами — порядки збігаються з Table 4-2 | `m2-02-esp32-datasheet` | 1 джерел не в кеші |
-| Пін віддає більше, ніж приймає — IOH 40 мА проти IOL 28 мА | `m2-02-esp32-datasheet` | 1 джерел не в кеші |
-| Робочий діапазон чипа ESP32 — від −40 до 125 °C | `m2-02-esp32-datasheet` | 1 джерел не в кеші |
-| Діапазон модуля WROOM — 85 °C у версіях N, 105 °C у версіях H | `m2-02-esp32-datasheet` | 1 джерел не в кеші |
-| Абсолютний максимум входу — 3.6 В, тому 5 В убивають пін | `m2-06-napruga-mezhi` | 1 джерел не в кеші |
 | Нижня межа частот STM32 — 24 МГц у Value line | `m2-13-stm32-chastoty` | 2 джерел не в кеші |
-| Свинцевий припій плавиться нижче за безсвинцевий | `m2-17-pripiy-i-ip` | 1 джерел не в кеші |
-| «IVDD, current delivered by external power supply, Min 0.5 A» — дослівна цитата datasheet | `m2-21-zhyvlennya-06` | 1 джерел не в кеші |
+| 0x1: Що сталося → подано живлення або EN | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x1: Що робити → норма | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x3: Назва → SW_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x3: Що робити → норма, якщо ваша | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x4: Назва → OWDT_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x4: Що сталося → застарілий watchdog | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x4: Що робити → рідко | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x5: Назва → DEEPSLEEP_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x5: Що сталося → прокинувся з deep sleep | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x5: Що робити → норма | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x6: Назва → SDIO_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x6: Що сталося → скидання модулем SLC | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x6: Що робити → рідко | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x7: Що сталося → watchdog таймера 0 | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x8: Назва → TG1WDT_SYS_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x8: Що сталося → watchdog таймера 1 | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x9: Назва → RTCWDT_SYS_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x9: Що сталося → RTC watchdog | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0xa: Назва → INTRUSION_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| T-D-153: EXCVADDR — найшвидша підказка | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-159: IDLE0 та Task Watchdog Timeout | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-172: assert failed як порушення інваріанта | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-183: rst: у першому рядку RTC Watchdog Timeout | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-184: Причина паніки і EXCVADDR | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-185: Backtrace через .elf за допомогою IDF Monitor | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-187: Coredump та логування переходів станів при невідтворюванні | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-188: Backtrace без .elf нерозшифровний | `m2-61-panik-b` | 1 джерел не в кеші |
+| Таблиця розділів з адресами nvs 0x9000 та factory 0x10000 | `m2-82-boot-flesh` | 1 джерел не в кеші |
+| Розділи ota_0 та ota_1 у таблиці розділів для OTA | `m2-82-boot-flesh` | 1 джерел не в кеші |
+| Таблиця розділів за замовчуванням на адресі 0x8000 | `m2-83-esptool` | 1 джерел не в кеші |
+| MAC-адреса унікальна від заводу і лежить в eFuse | `m2-83-esptool` | 1 джерел не в кеші |
+| Розміри флешу 2 МБ або 4 МБ для ESP32 модулів | `m2-83-esptool` | 1 джерел не в кеші |
+| Пріоритет задачі від 0 до configMAX_PRIORITIES мінус 1 | `m2-84-freertos` | 1 джерел не в кеші |
+| Core 0 (PRO_CPU) переважно займає радіостек, Core 1 (APP_CPU) — застосунок | `m2-84-freertos` | 1 джерел не в кеші |
+| Функції FromISR єдині дозволені в обробнику переривання | `m2-84-freertos` | 1 джерел не в кеші |
+| Бітові прапори WIFI_OK та TIME_OK в event group | `m2-84-freertos` | 1 джерел не в кеші |
+| Сторож (Watchdog) автоматично перезавантажує систему при зависанні | `m2-84-freertos` | 1 джерел не в кеші |
+| Реле на GPIO при зависанні переходить в безпечний стан | `m2-84-freertos` | 1 джерел не в кеші |
+| Task Watchdog Timer та Interrupt Watchdog Timer у ESP-IDF | `m2-84-freertos` | 1 джерел не в кеші |
 | I2C: на спокої обидві лінії мають бути HIGH (3.3 В). Якщо немає — поломаний резистор підтягування. | `m2-90-vybirka` | 1 джерел не в кеші |
 | Адреса bootloader.bin для S3, C3, C6, H2 — 0x0 | `m2-90-vybirka` | 1 джерел не в кеші |
 | Код скидання 0xa — INTRUSION_RESET (детектор втручання), рідко трапляється | `m2-90-vybirka` | 1 джерел не в кеші |
+| Код 0x10 означає RTCWDT_RTC_RESET (RTC watchdog скинув усе) | `m2-93-vybirka` | 1 джерел не в кеші |
+| T-D-040: 0xd = RTCWDT_CPU_RESET, що робити → розділ 32 | `m2-94-vybirka` | 1 джерел не в кеші |
+| T-D-043: 0xe = EXT_CPU_RESET, норма | `m2-94-vybirka` | 1 джерел не в кеші |
+| T-D-041: 0xe = EXT_CPU_RESET (Назва) | `m2-94-vybirka` | 1 джерел не в кеші |
 | Код скидання 0xd названий RTCWDT_CPU_RESET | `m2-95-vybirka` | 1 джерел не в кеші |
 | Код скидання 0x10 названий RTCWDT_RTC_RESET | `m2-95-vybirka` | 1 джерел не в кеші |
 | Код скидання 0xc означає скидання ядра з коду | `m2-95-vybirka` | 1 джерел не в кеші |
@@ -196,49 +212,26 @@
 | Номери GPIO книги дійсні для сімейств, яким приписані | `pass-30-piny-suciljno` | 1 джерел не в кеші |
 | Тільки-вхідні, консоль і USB-JTAG у довіднику пінів | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
 | Піновий план проєкту 62 — три сімейства, кожен пін вільний | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
+| Піни 34–39 classic не мають вбудованого підтягування | `pass-39-slidy` | 1 джерел не в кеші |
+| ESP-NOW — прийом через зареєстрований обробник | `pass-39-slidy` | 1 джерел не в кеші |
+| Вбудований USB — окремого моста немає | `pass-39-slidy` | 1 джерел не в кеші |
+| ESP-NOW — важка робота в обробнику шкодить | `pass-39-slidy` | 1 джерел не в кеші |
+| OTA — сертифікат сервера вбудовано в образ | `pass-39-slidy` | 1 джерел не в кеші |
+| Тільки-вхідні піни — ні драйвера, ні підтягування | `pass-39-slidy` | 1 джерел не в кеші |
+| Можливості сімейств за soc_caps.h — ядра, Wi-Fi, BLE, USB | `pass-40-mira-f` | 5 джерел не в кеші |
+| Вбудований ADC нелінійний | `pass-40-mira-f` | 1 джерел не в кеші |
+| main — теж компонент ESP-IDF | `pass-40-mira-f` | 1 джерел не в кеші |
 
-## звірено — 122
+## звірено — 81
 
 | Доказ | Файл | Деталі |
 |---|---|---|
-| 0x1: Що сталося → подано живлення або EN | `m2-60-panik-a` | 1 рядків |
-| 0x1: Що робити → норма | `m2-60-panik-a` | 1 рядків |
-| 0x3: Назва → SW_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x3: Що робити → норма, якщо ваша | `m2-60-panik-a` | 1 рядків |
-| 0x4: Назва → OWDT_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x4: Що сталося → застарілий watchdog | `m2-60-panik-a` | 1 рядків |
-| 0x4: Що робити → рідко | `m2-60-panik-a` | 1 рядків |
-| 0x5: Назва → DEEPSLEEP_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x5: Що сталося → прокинувся з deep sleep | `m2-60-panik-a` | 1 рядків |
-| 0x5: Що робити → норма | `m2-60-panik-a` | 1 рядків |
-| 0x6: Назва → SDIO_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x6: Що сталося → скидання модулем SLC | `m2-60-panik-a` | 1 рядків |
-| 0x6: Що робити → рідко | `m2-60-panik-a` | 1 рядків |
-| 0x7: Що сталося → watchdog таймера 0 | `m2-60-panik-a` | 1 рядків |
-| 0x8: Назва → TG1WDT_SYS_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x8: Що сталося → watchdog таймера 1 | `m2-60-panik-a` | 1 рядків |
-| 0x9: Назва → RTCWDT_SYS_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x9: Що сталося → RTC watchdog | `m2-60-panik-a` | 1 рядків |
-| 0xa: Назва → INTRUSION_RESET | `m2-60-panik-a` | 1 рядків |
-| T-D-153: EXCVADDR — найшвидша підказка | `m2-61-panik-b` | 1 рядків |
-| T-D-159: IDLE0 та Task Watchdog Timeout | `m2-61-panik-b` | 1 рядків |
-| T-D-172: assert failed як порушення інваріанта | `m2-61-panik-b` | 3 рядків |
-| T-D-183: rst: у першому рядку RTC Watchdog Timeout | `m2-61-panik-b` | 3 рядків |
-| T-D-184: Причина паніки і EXCVADDR | `m2-61-panik-b` | 1 рядків |
-| T-D-185: Backtrace через .elf за допомогою IDF Monitor | `m2-61-panik-b` | 5 рядків |
-| T-D-187: Coredump та логування переходів станів при невідтворюванні | `m2-61-panik-b` | 1 рядків |
-| T-D-188: Backtrace без .elf нерозшифровний | `m2-61-panik-b` | 1 рядків |
+| Діапазон модуля WROOM — 85 °C у версіях N, 105 °C у версіях H | `m2-02-esp32-datasheet` | 10 рядків |
 | T-K06-001: Монітор на 115200 бод для читання boot-логу | `m2-62-bootlog-k06` | 1 рядків |
 | T-K06-005: rst: — причина останнього скидання чипа | `m2-62-bootlog-k06` | 1 рядків |
 | T-K06-009: 0x1 (POWERON_RESET) — подано живлення або натиснуто EN | `m2-62-bootlog-k06` | 1 рядків |
 | T-K06-026: boot: — куди пішов чип (SPI_FAST_FLASH_BOOT або DOWNLOAD_BOOT) | `m2-62-bootlog-k06` | 1 рядків |
 | T-K06-038: Garbage символи при 115200 означають ESP8266; на 74880 читається | `m2-62-bootlog-k06` | 1 рядків |
-| Таблиця розділів з адресами nvs 0x9000 та factory 0x10000 | `m2-82-boot-flesh` | 2 рядків |
-| Сторож (Watchdog) автоматично перезавантажує систему при зависанні | `m2-84-freertos` | 2 рядків |
-| Task Watchdog Timer та Interrupt Watchdog Timer у ESP-IDF | `m2-84-freertos` | 3 рядків |
-| T-D-040: 0xd = RTCWDT_CPU_RESET, що робити → розділ 32 | `m2-94-vybirka` | 1 рядків |
-| T-D-043: 0xe = EXT_CPU_RESET, норма | `m2-94-vybirka` | 1 рядків |
-| T-D-041: 0xe = EXT_CPU_RESET (Назва) | `m2-94-vybirka` | 1 рядків |
 | Адреса другого бутлоадера задається ROM і має три значення | `pass-01-tverde-yadro` | 7 рядків |
 | Таблиця розділів лежить на 0x8000, застосунок на 0x10000 | `pass-01-tverde-yadro` | 3 рядків |
 | Коди причин скидання (RESET_REASON) | `pass-01-tverde-yadro` | 18 рядків |
@@ -314,17 +307,8 @@
 | GPIO16 і GPIO17 на classic живляться з домену VDD_SDIO | `pass-39-pul-haiku` | 3 рядків |
 | GPIO5 на classic — CS апаратного VSPI | `pass-39-pul-haiku` | 1 рядків |
 | Сила драйвера GPIO — типова середня, і файл лежить не там | `pass-39-pul-haiku` | 5 рядків |
-| Піни 34–39 classic не мають вбудованого підтягування | `pass-39-slidy` | 1 рядків |
-| ESP-NOW — прийом через зареєстрований обробник | `pass-39-slidy` | 1 рядків |
-| Вбудований USB — окремого моста немає | `pass-39-slidy` | 1 рядків |
-| ESP-NOW — важка робота в обробнику шкодить | `pass-39-slidy` | 1 рядків |
-| OTA — сертифікат сервера вбудовано в образ | `pass-39-slidy` | 1 рядків |
-| Тільки-вхідні піни — ні драйвера, ні підтягування | `pass-39-slidy` | 1 рядків |
-| Можливості сімейств за soc_caps.h — ядра, Wi-Fi, BLE, USB | `pass-40-mira-f` | 4 рядків |
-| Вбудований ADC нелінійний | `pass-40-mira-f` | 1 рядків |
-| main — теж компонент ESP-IDF | `pass-40-mira-f` | 1 рядків |
 
-## нема чого звіряти — 484
+## нема чого звіряти — 486
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -693,6 +677,7 @@
 | Практичний підхід SPI — почати з 1 МГц | `m2-91-vybirka` | немає придатних уривків |
 | GPIO12 у покажчику розділу Z | `m2-91-vybirka` | немає придатних уривків |
 | Поведінка ESP32 при 1.8В flash та неправильній конфігурації | `m2-91-vybirka` | немає придатних уривків |
+| Wi-Fi канали 2.4 ГГц та регіональні обмеження | `m2-91-vybirka` | немає придатних уривків |
 | Енергоспоживання ESP-NOW за цикл передачі | `m2-91-vybirka` | немає придатних уривків |
 | Доступність ESP-IDF функцій прямо з коду Arduino | `m2-91-vybirka` | немає придатних уривків |
 | Помилка 0xc (SW_CPU_RESET) — типово після паніки | `m2-91-vybirka` | немає придатних уривків |
@@ -725,6 +710,7 @@
 | T-16-034: У наступному поколінні бутлоадер став на `0x0` | `m2-94-vybirka` | немає URL |
 | T-K08-044: WiFi не під'єднується — пароль, канал 12–13 або 5 ГГц | `m2-94-vybirka` | немає придатних уривків |
 | T-Z-117: GPIO26 page references | `m2-94-vybirka` | немає придатних уривків |
+| T-33-054: Період при 50 Гц — 20 мс, формула duty | `m2-94-vybirka` | немає придатних уривків |
 | T-Z-113: GPIO2 page references | `m2-94-vybirka` | немає придатних уривків |
 | T-C-103: bootloader address table — S3, C3, C6, H2 at 0x0 | `m2-94-vybirka` | немає URL |
 | ESP-NOW використовує той самий діапазон частот, що Wi-Fi 2.4 ГГц | `m2-95-vybirka` | немає URL |
