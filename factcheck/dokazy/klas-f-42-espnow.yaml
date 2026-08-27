@@ -1,0 +1,103 @@
+# Посадка klas-f — 42-espnow.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-42-001: ESP-NOW — власний протокол Espressif для прямого обміну'
+  zbih: ESP\-NOW\s+—\s+власний\s+протокол
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined
+    by Espressif.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Документ каже "defined by Espressif", а не "власний протокол". Крім того, документ
+    не згадує ESP8266.
+- nazva: 'T-42-006: ESP-NOW не робить нічого з цього.'
+  zbih: ESP\-NOW\s+не\s+робить\s+нічого
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'ESP-NOW is a kind of connectionless Wi-Fi communication protocol that is defined
+    by Espressif. In ESP-NOW, application data is encapsulated in a vendor-specific action
+    frame and then transmitted from one Wi-Fi device to another without connection.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: ESP-NOW не потребує підключення до точки доступу, на відміну від звичайного Wi-Fi.
+    Слово "connectionless" підтверджує, що ESP-NOW не робить нічого з того, що потрібно для
+    звичайного Wi-Fi.
+- nazva: 'T-42-015: Кожен пристрій має унікальну MAC від заводу (розділ'
+  zbih: Кожен\s+пристрій\s+має\s+унікальну
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'As ESP-NOW is connectionless, the MAC header is a little different from that of
+    standard frames. The FromDS and ToDS bits of FrameControl field are both 0. The first
+    address field is set to the destination address. The second address field is set to the
+    source address. The third address field is set to broadcast address (0xff:0xff:0xff:0xff:0xff:0xff).
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Документ підтверджує, що MAC адреси використовуються як адреси в ESP-NOW (поля
+    destination address та source address).
+- nazva: 'T-42-027: Обробник прийому виконується в контексті **задачі** Wi-Fi, а'
+  zbih: Обробник\s+прийому\s+виконується\s+в
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'The receiving callback function also runs from the Wi-Fi task.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Документ явно говорить, що обробник прийому виконується в контексті задачі Wi-Fi,
+    а не в перериванні.
+- nazva: 'T-42-045: ESP-NOW підтримує шифрування з ключами PMK і LMK.'
+  zbih: ESP\-NOW\s+підтримує\s+шифрування\s+з
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'The Wi-Fi device maintains a Primary Master Key (PMK) and several Local Master
+    Keys (LMKs, each paired device has one LMK).
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Документ підтверджує, що ESP-NOW підтримує шифрування з використанням ключів PMK
+    і LMK.
+- nazva: 'T-42-048: Без шифрування ESP-NOW — це відкритий радіоефір.'
+  zbih: Без\s+шифрування\s+ESP\-NOW\s+—
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'If the LMK of the paired device is not set, the vendor-specific action frame will
+    not be encrypted.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Документ говорить, що без встановленого LMK рамка не шифруватиметься, що означає
+    передачу в відкритому вигляді.
+- nazva: 'T-42-060: Усі вузли на фіксованому каналі, Wi-Fi не використовується.'
+  zbih: Усі\s+вузли\s+на\s+фіксованому
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'You can send ESP-NOW data via both the Station and the SoftAP interface.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Tverdzennya kazhе, shcho Wi-Fi ne vykorystovuietsia, ale dokumentsiia pokazuie,
+    shcho mozhna vykorystovuvaty Stantsiju i SoftAP interfejsy
