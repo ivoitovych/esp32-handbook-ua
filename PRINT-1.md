@@ -6,16 +6,27 @@ commercial print run, so that errata can be keyed to it.
 It is a **first attempt**: the text is believed correct, not proven
 complete.
 
-    commit  7a10975
+    commit  285b3e0
     date    2026-08-27
 
-## Creating the tag
+## How this state is pinned
 
-The session that prepared this print run could not push tags — its
-credentials are scoped to branches. To create the tag from a checkout
-that can:
+The session that prepared this print run **could not push tags** — its
+credentials are scoped to branches, and the tag push was refused with
+HTTP 403. A branch serves the same purpose, so the exact state sent to
+print is pinned by one:
 
-    git tag -a v1.0-print-1 7a10975 -F PRINT-1.md
+    backup/main-2026-08-27-1211Z   →   285b3e0
+
+**Reason for the backup: first attempt at the first print run.** The
+branch is a marker, not a line of development. Nothing should be
+committed onto it; if this print run needs corrections, they belong on
+`main` and are recorded as errata against this state.
+
+To also create the proper tag, from any checkout whose credentials
+allow tag pushes:
+
+    git tag -a v1.0-print-1 285b3e0 -F PRINT-1.md
     git push origin v1.0-print-1
 
 ## Print specification
