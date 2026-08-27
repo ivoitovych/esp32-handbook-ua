@@ -1,204 +1,207 @@
 - id: T-A-017
   rid: ne-tverdzhennya
+  chomu: навігаційна позначка
 
 - id: T-A-092
-  rid: dzherelo-ye
-  shukaty: технічна специфікація драйвера
-  chomu: твердження про функцію конкретного драйвера
+  rid: ne-rozibrav
 
 - id: T-B-231
-  rid: dzherelo-ye
-  shukaty: документація malloc або системна поведінка пам'яті
-  chomu: технічна причина-наслідок помилки
+  rid: ne-rozibrav
 
 - id: T-B-046
-  rid: dzherelo-ye
-  shukaty: технічна документація або аналіз помилок
-  chomu: твердження про причину помилки magic byte
+  rid: ne-rozibrav
 
 - id: T-B-165
   rid: ne-tverdzhennya
+  chomu: індекс з посиланням на розділ
 
 - id: T-C-096
   rid: ne-tverdzhennya
+  chomu: приклад команди
 
 - id: T-D-154
   rid: dzherelo-ye
-  shukaty: документація або технічний розпис пам'яті
-  chomu: твердження про адреси пам'яті й структури
+  shukaty: ESP32 Series Datasheet, Memory Management chapter
+  chomu: твердження про адреси пам'яті
 
 - id: T-E-123
   rid: ne-tverdzhennya
+  chomu: визначення компонента
 
 - id: T-E-066
   rid: ne-tverdzhennya
+  chomu: індекс компонента
 
 - id: T-F-005
   rid: ne-tverdzhennya
+  chomu: пункт чек-листу
 
 - id: T-G-101
   rid: ne-tverdzhennya
+  chomu: запис глосарія
 
 - id: T-G-139
   rid: ne-tverdzhennya
+  chomu: заголовок таблиці глосарія
 
 - id: T-G-028
   rid: ne-tverdzhennya
+  chomu: запис глосарія
 
 - id: T-G-069
   rid: ne-tverdzhennya
+  chomu: запис глосарія
 
 - id: T-H-028
   rid: pozyciya
-  chomu: оцінка швидкості, судження автора
+  chomu: оцінка швидкості порядку
 
 - id: T-Z-009
   rid: ne-tverdzhennya
+  chomu: індекс з номерами сторінок
 
 - id: T-Z-194
   rid: ne-tverdzhennya
+  chomu: індекс компонента
 
 - id: T-COM-005
   rid: ne-tverdzhennya
+  chomu: навігація й опис розділу
 
 - id: T-UA--012
   rid: pozyciya
-  chomu: характеристика мережі, судження що там можна знайти
+  chomu: описання місцевих ринків
 
 - id: T-K01-037
   rid: ne-tverdzhennya
+  chomu: заголовок таблиці
 
 - id: T-K03-023
   rid: ne-tverdzhennya
+  chomu: навігаційна інструкція
 
 - id: T-K06-039
-  rid: dzherelo-ye
-  shukaty: документація поведінки застосунку або логування
-  chomu: твердження про технічний стан системи
+  rid: ne-rozibrav
 
 - id: T-K08-043
   rid: ne-tverdzhennya
+  chomu: індекс симптому
 
 - id: T-K09-034
   rid: pozyciya
-  chomu: порада про пріоритет, судження автора про важливість
+  chomu: порада про пріоритет інформації на платі
 
 - id: T-K12-014
   rid: ne-tverdzhennya
+  chomu: опис функцій приладу в таблиці
 
 - id: T-K13-030
   rid: pozyciya
-  chomu: рекомендація як знизити споживання
+  chomu: рекомендація про способи зниження споживання
 
 - id: T-K15-015
   rid: ne-tverdzhennya
+  chomu: пункт чек-листу
 
 - id: T-00-061
   rid: ne-tverdzhennya
+  chomu: описання розділу закупівлі
 
 - id: T-00-020
   rid: ne-tverdzhennya
+  chomu: визначення класу джерел
 
 - id: T-01-090
-  rid: dzherelo-ye
-  shukaty: технічна специфікація мікроконтролерів цього класу
-  chomu: твердження про наявність або відсутність проблем
+  rid: ne-rozibrav
 
 - id: T-01-027
   rid: pozyciya
-  chomu: оцінка того, що відрізняє довідник від реклами
+  chomu: судження про різницю між довідником й рекламою
 
 - id: T-02-110
   rid: dzherelo-ye
-  shukaty: документація ESP32-C61
-  chomu: технічна характеристика чипа
+  shukaty: ESP32-C6 Series Datasheet
+  chomu: твердження про варіант C6
 
 - id: T-02-019
   rid: ne-tverdzhennya
+  chomu: індекс кількості ядер
 
 - id: T-03-061
   rid: dzherelo-ye
-  shukaty: поточні характеристики ESP32
-  chomu: технічна специфікація споживання
+  shukaty: ESP32 Series Datasheet, Power Management
+  chomu: числова характеристика споживання
 
 - id: T-03-041
   rid: dzherelo-ye
-  shukaty: архітектура ESP32, флеш і кеш
-  chomu: твердження про розміщення коду й виконання
+  shukaty: ESP32 Series Datasheet, System Architecture
+  chomu: твердження про розташування коду
 
 - id: T-04-001
   rid: dzherelo-ye
-  shukaty: технічна документація периферії
-  chomu: визначення функцій апаратних блоків
+  shukaty: ESP32 Series Datasheet, Peripherals chapter
+  chomu: визначення функцій апаратури
 
 - id: T-05-055
-  rid: dzherelo-ye
-  shukaty: технічна специфікація дільників
-  chomu: твердження про придатність для певних сигналів
+  rid: ne-rozibrav
 
 - id: T-05-112
-  rid: dzherelo-ye
-  shukaty: схеми захисту від зворотних імпульсів
-  chomu: технічне рішення з конкретним компонентом (1N4007)
+  rid: ne-rozibrav
 
 - id: T-06-053
   rid: pozyciya
-  chomu: рекомендація про живлення й знизження споживання
+  chomu: рекомендація про джерело й модифікацію
 
 - id: T-06-116
   rid: dzherelo-ye
-  shukaty: технічна характеристика плат розробки
-  chomu: твердження про наявність LDO на платах
+  shukaty: ESP32 development boards reference
+  chomu: твердження про наявність LDO регулятора
 
 - id: T-06-048
   rid: pozyciya
-  chomu: оцінка якості стабілізатора на клонах
+  chomu: оцінка якості стабілізатора
 
 - id: T-07-023
   rid: pozyciya
-  chomu: судження про важливість наслідку для діагностики
+  chomu: судження про важливість наслідку
 
 - id: T-08-021
   rid: pozyciya
-  chomu: оцінка того, що кожна з п'яти речей важлива
+  chomu: оцінка впливу елементів плати
 
 - id: T-09-005
   rid: dzherelo-ye
-  shukaty: технічна документація UART
-  chomu: визначення інтерфейсу й його характеристик
+  shukaty: UART serial protocol specification
+  chomu: визначення інтерфейсу й характеристик
 
 - id: T-09-111
   rid: pozyciya
-  chomu: порада проти використання sudo, судження про наслідки
+  chomu: порада проти використання sudo
 
 - id: T-10-004
   rid: pozyciya
-  chomu: рекомендація й оцінка важливості мультиметра
+  chomu: рекомендація й оцінка важливості приладу
 
 - id: T-10-029
   rid: ne-tverdzhennya
+  chomu: опис функцій у списку приладів
 
 - id: T-11-089
-  rid: dzherelo-ye
-  shukaty: як git забезпечує відтворюваність проєкту
-  chomu: твердження про роль файлу в git
+  rid: ne-rozibrav
 
 - id: T-11-004
   rid: pozyciya
-  chomu: судження про причину вибору
+  chomu: судження про причини вибору
 
 - id: T-12-009
-  rid: dzherelo-ye
-  shukaty: документація FreeRTOS, структура loop
-  chomu: технічне пояснення про стек і пріоритет
+  rid: ne-rozibrav
 
 - id: T-13-052
   rid: ne-tverdzhennya
+  chomu: навігація до таблиці версій
 
 - id: T-13-024
-  rid: dzherelo-ye
-  shukaty: таблиця версій, Arduino 2.x
-  chomu: твердження про версію й підтримку чипів
+  rid: ne-rozibrav
 
 - id: T-14-067
   rid: pozyciya
@@ -206,56 +209,50 @@
 
 - id: T-15-004
   rid: pozyciya
-  chomu: судження про найкоротший шлях до результату
+  chomu: судження про швидкість до результату
 
 - id: T-15-035
   rid: pozyciya
-  chomu: рекомендація уникнути помилки
+  chomu: рекомендація послідовності вибору
 
 - id: T-16-089
   rid: pozyciya
-  chomu: порада не дивитися код без вимірювання напруги
+  chomu: порада про порядок діагностики
 
 - id: T-17-085
   rid: pozyciya
-  chomu: рекомендація про точність й безпеку
+  chomu: рекомендація про безпеку операції
 
 - id: T-17-039
-  rid: dzherelo-ye
-  shukaty: як esptool обробляє сімейство й ревізію
-  chomu: технічне пояснення поведінки
+  rid: ne-rozibrav
 
 - id: T-18-103
   rid: pozyciya
-  chomu: рекомендація взяти готову розбивку
+  chomu: рекомендація про вибір розбивки флешу
 
 - id: T-19-069
   rid: dzherelo-ye
-  shukaty: технічні вимоги до OTA - HTTPS, сертифікат
-  chomu: твердження про мінімум для безпеки
+  shukaty: RFC 5246 The TLS Protocol
+  chomu: технічне твердження про мінімум безпеки
 
 - id: T-19-032
   rid: pozyciya
-  chomu: оцінка вартості місця проти поїздки
+  chomu: оцінка економічності методу
 
 - id: T-20-090
-  rid: dzherelo-ye
-  shukaty: як дамп забезпечує оборотність операцій
-  chomu: твердження про унікальну роль дампу
+  rid: ne-rozibrav
 
 - id: T-21-062
-  rid: dzherelo-ye
-  shukaty: фізичний устрій корпусу, наліпки
-  chomu: фактичне твердження про те, чого не може бути
+  rid: ne-rozibrav
 
 - id: T-21-016
   rid: pozyciya
-  chomu: судження про можливість передати операцію людині
+  chomu: судження про спрощення операції
 
 - id: T-22-002
   rid: pozyciya
-  chomu: оцінка цінності моменту й можливості фіксації
+  chomu: оцінка цінності моменту
 
 - id: T-23-069
   rid: pozyciya
-  chomu: рекомендація про послідовність операцій
+  chomu: рекомендація послідовності операцій

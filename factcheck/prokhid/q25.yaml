@@ -1,0 +1,20 @@
+- id: T-A-002
+  verdykt: ne_znayshov
+  dyvyvsya: a-pinouty.md, це навігаційний елемент
+
+- id: T-B-193
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, це навігаційний елемент
+
+- id: T-B-244
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, потребує дослідження
+
+- id: T-B-070
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, це навігаційний елемент
+
+- id: T-B-175
+  verdykt: ne_znayshov
+  dyvyvsya: b-symptomy.md, потребує дослідження
+

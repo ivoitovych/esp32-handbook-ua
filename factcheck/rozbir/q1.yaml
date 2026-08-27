@@ -1,240 +1,270 @@
 - id: T-A-098
   rid: ne-tverdzhennya
+  chomu: шапка таблиці
 
 - id: T-A-073
   rid: ne-tverdzhennya
+  chomu: рядок покажчика
 
 - id: T-B-212
   rid: dzherelo-ye
-  shukaty: BLE GATT caching specifications
+  shukaty: BLE GATT specification
+  chomu: технічна характеристика поведінки iOS при кешуванні GATT
 
 - id: T-B-259
   rid: dzherelo-ye
   shukaty: Strain relief and vibration specifications
+  chomu: технічна вимога до конструкції при транспортуванні
 
 - id: T-B-087
   rid: dzherelo-ye
-  shukaty: ESP32 sleep current specifications
+  shukaty: ESP32 datasheet - Sleep current
+  chomu: числова характеристика режиму сну
 
 - id: T-C-076
   rid: ne-tverdzhennya
+  chomu: шапка таблиці
 
 - id: T-D-108
-  rid: dzherelo-ye
-  shukaty: Panic trace analysis documentation
+  rid: ne-rozibrav
 
 - id: T-D-055
   rid: ne-tverdzhennya
+  chomu: шапка таблиці
 
 - id: T-E-018
   rid: dzherelo-ye
-  shukaty: DS3231 datasheet, I2C address
+  shukaty: DS3231 datasheet
+  chomu: точна адреса мікросхеми на шині I2C
 
 - id: T-E-105
   rid: dzherelo-ye
-  shukaty: One-wire protocol specifications, pull-up resistor values
+  shukaty: One-wire bus specification
+  chomu: "технічні параметри шини: довжина кабелю і значення підтягування"
 
 - id: T-G-087
   rid: ne-tverdzhennya
+  chomu: шапка таблиці
 
 - id: T-G-125
   rid: ne-tverdzhennya
+  chomu: рядок глосарія
 
 - id: T-G-174
-  rid: dzherelo-ye
-  shukaty: PWM duty cycle definitions, signal processing standards
+  rid: pozyciya
+  chomu: авторське терміологічне уточнення про різницю між двома величинами
 
 - id: T-G-054
   rid: ne-tverdzhennya
+  chomu: рядок глосарія
 
 - id: T-H-010
   rid: ne-tverdzhennya
+  chomu: URL на джерело
 
 - id: T-Z-057
   rid: ne-tverdzhennya
+  chomu: рядок покажчика
 
 - id: T-Z-003
   rid: ne-tverdzhennya
+  chomu: навігаційний текст
 
 - id: T-COM-003
-  rid: dzherelo-ye
-  shukaty: Publishing standards for separate inserts
+  rid: ne-tverdzhennya
+  chomu: описання структури книги
 
 - id: T-REG-028
-  rid: dzherelo-ye
-  shukaty: Radio frequency regulatory standards by region
+  rid: ne-rozibrav
 
 - id: T-K01-005
   rid: ne-tverdzhennya
+  chomu: шапка таблиці
 
 - id: T-K02-005
   rid: pozyciya
-  chomu: інструкція методу розбирання, рекомендація автора
+  chomu: методичне керівництво автора для розбирання пристрою
 
 - id: T-K05-035
   rid: pozyciya
-  chomu: авторська уточнення про критерії успіху
+  chomu: авторське уточнення про критерії успішної прошивки
 
 - id: T-K08-019
   rid: ne-tverdzhennya
+  chomu: рядок покажчика
 
 - id: T-K09-011
   rid: dzherelo-ye
-  shukaty: ESP32 ADC2 specifications, Wi-Fi interference
+  shukaty: ESP32 datasheet - ADC2 specifications
+  chomu: технічна характеристика конфлікту ADC2 з Wi-Fi
 
 - id: T-K11-016
   rid: pozyciya
-  chomu: авторський висновок про необхідність рівневого конвертера
+  chomu: авторська технічна вимога до схеми підключення
 
 - id: T-K13-016
   rid: dzherelo-ye
-  shukaty: ESP32 power supply specifications under load
+  shukaty: ESP32 datasheet - Power specifications
+  chomu: специфічна технічна процедура вимірювання напруги під навантаженням
 
 - id: T-K14-033
   rid: dzherelo-ye
-  shukaty: PCB ground plane design principles
+  shukaty: PCB design guidelines
+  chomu: технічний принцип розділення земель при розв'язці
 
 - id: T-K15-044
   rid: ne-tverdzhennya
+  chomu: описання обсягу розділу
 
 - id: T-00-088
   rid: pozyciya
-  chomu: авторський поради про тлумачення датованого матеріалу
+  chomu: авторська порада про тлумачення застарілих матеріалів
 
 - id: T-00-043
   rid: pozyciya
-  chomu: авторське визнання про помилки і причини в довідниці
+  chomu: авторське визнання про якість книги та причини помилок
 
 - id: T-01-010
-  rid: dzherelo-ye
-  shukaty: Module certification status documentation
+  rid: ne-rozibrav
 
 - id: T-02-003
   rid: pozyciya
-  chomu: авторське пояснення про рівень деталізації різних сімейств
+  chomu: авторське пояснення про компроміс обсягу і деталізації
 
 - id: T-02-146
   rid: pozyciya
-  chomu: авторська оцінка значимості архітектури для різних типів кода
+  chomu: авторське судження про значимість архітектури для різних типів коду
 
 - id: T-02-083
   rid: pozyciya
-  chomu: авторське уточнення про причину відсутності функції
+  chomu: авторське уточнення природи відсутності апаратної функції
 
 - id: T-03-020
   rid: pozyciya
-  chomu: авторська оцінка впливу на бюджет
+  chomu: авторська оцінка впливу особливості на бюджет розробника
 
 - id: T-04-129
-  rid: dzherelo-ye
-  shukaty: Hardware peripheral access documentation
+  rid: pozyciya
+  chomu: авторське уточнення про доступність периферії для застосунків
 
 - id: T-04-056
   rid: pozyciya
-  chomu: авторське оцінювання підходящості периферії для завдання
+  chomu: авторське оцінювання універсальності периферії для завдань
 
 - id: T-05-088
-  rid: dzherelo-ye
-  shukaty: Capacitor charge storage specifications
+  rid: ne-rozibrav
 
 - id: T-05-023
   rid: dzherelo-ye
-  shukaty: ESP32 pin current output specifications
+  shukaty: ESP32 datasheet - Pin current specifications
+  chomu: технічна характеристика обмеження струму на виході піну
 
 - id: T-06-100
   rid: pozyciya
-  chomu: авторська оцінка практичного впливу на тривалість роботи
+  chomu: авторська практична оцінка впливу на тривалість батарейки
 
 - id: T-06-032
   rid: dzherelo-ye
-  shukaty: Power supply datasheet specifications and transient response
+  shukaty: Power supply datasheet - current ratings
+  chomu: технічна характеристика реальної здатності источника у перехідних режимах
 
 - id: T-07-115
   rid: pozyciya
-  chomu: авторське судження про достатність кількості GPIO
+  chomu: авторське судження про достатність кількості GPIO для проектів
 
 - id: T-08-079
   rid: pozyciya
-  chomu: авторська рекомендація про найшвидший метод
+  chomu: авторська рекомендація про найшвидший метод розбирання плати
 
 - id: T-08-054
   rid: pozyciya
-  chomu: авторське порівняння компромісів готових плат
+  chomu: авторське порівняння компромісів готових плат розробки
 
 - id: T-09-097
   rid: pozyciya
-  chomu: авторське рекомендація про найкращу практику при отладці незнайомого заліза
+  chomu: авторська рекомендація про найкращу практику при отладці незнайомого обладнання
 
 - id: T-09-048
   rid: dzherelo-ye
-  shukaty: Bridge board electrical isolation specifications
+  shukaty: Bridge board isolation specifications
+  chomu: технічна характеристика рівня ізоляції мостової плати
 
 - id: T-10-001
   rid: ne-tverdzhennya
+  chomu: описання мети розділу
 
 - id: T-11-062
   rid: pozyciya
-  chomu: авторське рекомендація про версійний контроль SDK файлів
+  chomu: авторська рекомендація про управління версіями SDK файлів
 
 - id: T-11-001
   rid: dzherelo-ye
-  shukaty: Espressif IoT Development Framework documentation
+  shukaty: ESP-IDF
+  chomu: визначення офіційного фреймворку компанії Espressif
 
 - id: T-12-051
   rid: ne-tverdzhennya
+  chomu: шапка таблиці
 
 - id: T-13-037
   rid: pozyciya
-  chomu: авторське рекомендація про параметризацію плат у PlatformIO
+  chomu: авторська рекомендація про параметризацію невідомих плат
 
 - id: T-13-077
   rid: pozyciya
-  chomu: авторська оцінка надійності використання ESP-IDF безпосередньо
+  chomu: авторське судження про надійність використання ESP-IDF без посередника
 
 - id: T-14-050
   rid: ne-tverdzhennya
+  chomu: рядок таблиці порівняння
 
 - id: T-14-019
   rid: pozyciya
-  chomu: авторське описання підходу без написання коду
+  chomu: авторське описання підходу, де розробник не пише код
 
 - id: T-15-018
   rid: dzherelo-ye
-  shukaty: Stack and core control requirements documentation
+  shukaty: ESP-IDF documentation - stack and core control
+  chomu: технічна вимога щодо контролю над розташуванням стеків
 
 - id: T-16-005
   rid: dzherelo-ye
-  shukaty: Bootloader behavior specifications
+  shukaty: ESP32 boot sequence specification
+  chomu: технічна характеристика поведінки bootloader при старті
 
 - id: T-17-052
   rid: dzherelo-ye
-  shukaty: esptool high-speed serial reading specifications
+  shukaty: esptool user guide
+  chomu: технічна характеристика обмежень при читанні флешу на високій швидкості
 
 - id: T-17-017
   rid: pozyciya
-  chomu: авторське спостереження про версійну асиметрію в документації
+  chomu: авторське спостереження про версійну асиметрію документації
 
 - id: T-18-084
   rid: pozyciya
-  chomu: авторське спостереження про типову помилку при пошуку LittleFS
+  chomu: авторське спостереження про типову помилку при пошуку системи файлів
 
 - id: T-18-044
   rid: dzherelo-ye
-  shukaty: Memory alignment build configuration specifications
+  shukaty: ESP-IDF menuconfig
+  chomu: технічна характеристика вирівнювання пам'яті у конфігурації
 
 - id: T-19-094
   rid: ne-tverdzhennya
+  chomu: умовна навігація до картки
 
 - id: T-20-065
   rid: pozyciya
   chomu: авторське діагностичне міркування про причини відмови
 
 - id: T-21-041
-  rid: dzherelo-ye
-  shukaty: Serial number uniqueness requirements for manufacturing
+  rid: pozyciya
+  chomu: авторське попередження про типову помилку в серійному виробництві
 
 - id: T-21-085
   rid: ne-tverdzhennya
+  chomu: заголовок списку варіантів
 
 - id: T-22-059
   rid: pozyciya
@@ -242,4 +272,4 @@
 
 - id: T-22-040
   rid: pozyciya
-  chomu: авторське пояснення мети базової лінії порівняння
+  chomu: авторське пояснення мети базової лінії для порівняння змін

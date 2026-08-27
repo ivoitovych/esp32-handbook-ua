@@ -81,8 +81,7 @@
   chomu: шапка таблиці
 
 - id: T-K06-029
-  rid: dzherelo-ye
-  shukaty: код помилки rst:0xf
+  rid: ne-rozibrav
 
 - id: T-K08-035
   rid: ne-tverdzhennya
@@ -133,12 +132,10 @@
   chomu: опис джерел тактування
 
 - id: T-03-029
-  rid: dzherelo-ye
-  shukaty: розмір кеш-пам'яті, RAM розмір
+  rid: ne-rozibrav
 
 - id: T-04-141
-  rid: dzherelo-ye
-  shukaty: кількість переривань на частоту
+  rid: ne-rozibrav
 
 - id: T-05-004
   rid: ne-tverdzhennya
@@ -197,8 +194,7 @@
   chomu: опис поведінки функцій в Arduino
 
 - id: T-13-005
-  rid: dzherelo-ye
-  shukaty: Arduino core версія, відстача від PlatformIO
+  rid: ne-rozibrav
 
 - id: T-13-014
   rid: pozyciya
@@ -229,8 +225,7 @@
   chomu: опис стану команди на новій версії
 
 - id: T-18-094
-  rid: dzherelo-ye
-  shukaty: гарантії вбудованої флеш-пам'яті
+  rid: ne-rozibrav
 
 - id: T-19-059
   rid: ne-tverdzhennya

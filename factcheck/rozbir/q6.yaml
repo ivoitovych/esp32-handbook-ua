@@ -1,241 +1,189 @@
 - id: T-A-109
   rid: ne-tverdzhennya
-  chomu: рядок таблиці з варіантами чипів — перелік опцій
-
+  chomu: рядок таблиці з варіантами чипів
 - id: T-A-080
-  rid: dzherelo-ye
-  shukaty: ESP32 технічна документація, GPIO піни, режим завантаження
-  chomu: вимога до логічного рівня піна 8 для download mode
-
+  rid: ne-rozibrav
 - id: T-B-221
-  rid: dzherelo-ye
-  shukaty: LoRa модуль, робота без антени, рекомендації виробника
-  chomu: технічна наслідок — модуль згоріває без антени
-
+  rid: ne-rozibrav
 - id: T-B-267
   rid: pozyciya
-  chomu: послідовність дій для діагностики, рекомендація автора
-
+  chomu: послідовність дій для діагностики
 - id: T-B-121
   rid: ne-tverdzhennya
-  chomu: рядок таблиці симптомів — елемент списку
-
+  chomu: рядок таблиці симптомів
 - id: T-C-083
-  rid: dzherelo-ye
-  shukaty: утиліта screen, команда terminal, конкретна синтаксис
-  chomu: специфічна команда з точними параметрами
-
+  rid: ne-rozibrav
 - id: T-D-127
-  rid: dzherelo-ye
-  shukaty: флеш-пам'ять, розміри, структури даних
-  chomu: технічна наслідок розбіжності розмірів
-
+  rid: ne-rozibrav
 - id: T-D-066
   rid: ne-tverdzhennya
-  chomu: рядок таблиці з заголовками стовпців
-
+  chomu: рядок таблиці з заголовками
 - id: T-E-046
   rid: ne-tverdzhennya
-  chomu: рядок глосарію — відповідність мікросхеми до типу пам'яті
-
+  chomu: рядок глосарію
 - id: T-E-110
-  rid: dzherelo-ye
-  shukaty: RS-485, трансивер, напруга живлення, специфікація
-  chomu: конкретна вимога до напруги 3.3 В для трансивера
-
+  rid: ne-rozibrav
 - id: T-G-091
   rid: ne-tverdzhennya
-  chomu: рядок глосарію — англійський термін і його визначення
-
+  chomu: рядок глосарію
 - id: T-G-008
   rid: ne-tverdzhennya
-  chomu: рядок глосарію з дефініцією терміна
-
+  chomu: рядок глосарію дефініція
 - id: T-G-020
   rid: ne-tverdzhennya
-  chomu: рядок глосарію з дефініцією
-
+  chomu: рядок глосарію дефініція
 - id: T-G-059
   rid: ne-tverdzhennya
-  chomu: рядок глосарію — переклад терміна
-
+  chomu: рядок глосарію переклад
 - id: T-H-016
   rid: pozyciya
-  chomu: рекомендація обов'язкового читання перед проектуванням
-
+  chomu: рекомендація обов'язкового читання
 - id: T-Z-062
   rid: ne-tverdzhennya
-  chomu: рядок покажчика — перелік номерів сторінок
-
+  chomu: рядок показчика перелік сторінок
 - id: T-Z-150
   rid: ne-tverdzhennya
-  chomu: рядок покажчика з номером сторінки
-
+  chomu: рядок показчика номер сторінки
 - id: T-COM-058
   rid: ne-tverdzhennya
-  chomu: рядок таблиці з назвами стовпців
-
+  chomu: рядок таблиці з заголовками
 - id: T-REG-032
   rid: pozyciya
-  chomu: автор радить продумати наслідки передачі даних до розгортання
-
+  chomu: автор радить продумати наслідки
 - id: T-K01-002
   rid: ne-tverdzhennya
-  chomu: опис структури документа — порядок читання
-
+  chomu: опис структури документа
 - id: T-K03-006
   rid: ne-tverdzhennya
-  chomu: відповідь у діаграмі рішень — елемент навігації
-
+  chomu: відповідь у діаграмі рішень
 - id: T-K06-006
   rid: ne-tverdzhennya
-  chomu: вступ до таблиці з посиланням на додаток
-
+  chomu: вступ до таблиці
 - id: T-K09-002
   rid: ne-tverdzhennya
-  chomu: опис розділу, введення до теми
-
+  chomu: опис розділу
 - id: T-K08-030
   rid: ne-tverdzhennya
-  chomu: рядок діаграми рішень — дія для певної умови
-
+  chomu: рядок діаграми рішень
 - id: T-K11-024
-  rid: dzherelo-ye
-  shukaty: електричні короткі замикання, живлення, захист схеми
-  chomu: технічна наслідок контакту без захисту
-
+  rid: ne-rozibrav
 - id: T-K13-002
   rid: pozyciya
-  chomu: спостереження про те, чому люди помилково читають код
-
+  chomu: спостереження про причини помилок
 - id: T-K14-038
   rid: ne-tverdzhennya
-  chomu: рядок списку діагностичних тестів
-
+  chomu: рядок діагностичних тестів
 - id: T-00-049
   rid: pozyciya
-  chomu: припущення автора про навички читача
-
+  chomu: припущення про навички читача
 - id: T-00-002
   rid: pozyciya
-  chomu: сценарій та контекст, що складає автор
-
+  chomu: сценарій та контекст автора
 - id: T-01-079
   rid: pozyciya
-  chomu: оцінка автора про коли Arduino має сенс
-
+  chomu: оцінка коли Arduino має сенс
 - id: T-01-013
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-02-096
   rid: pozyciya
-  chomu: узагальнення про те, що зазвичай переноситься між платформами
-
+  chomu: узагальнення про код що переноситься
 - id: T-02-010
   rid: ne-tverdzhennya
-
+  chomu: конвенція документа про позначки
 - id: T-02-091
   rid: dzherelo-ye
-
+  shukaty: ESP32 Series Datasheet, chip architecture
+  chomu: технічна специфікація архітектури чипів
 - id: T-03-026
   rid: dzherelo-ye
-
+  shukaty: ESP32 Series Datasheet, deep sleep mode
+  chomu: технічна специфікація режиму
 - id: T-04-136
   rid: ne-tverdzhennya
-
+  chomu: вступ до списку обмежень
 - id: T-04-061
   rid: dzherelo-ye
-
+  shukaty: ESP-IDF Programming Guide, Motor Control PWM
+  chomu: технічна специфікація модуля
 - id: T-05-095
   rid: pozyciya
   chomu: оцінка вартості компонента
-
 - id: T-05-003
   rid: ne-tverdzhennya
-
+  chomu: навігація пропоза пропустити розділ
 - id: T-06-103
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-06-035
   rid: dzherelo-ye
-
+  shukaty: ESP32 Series Datasheet, voltage regulator
+  chomu: технічна специфікація поведінки
 - id: T-07-123
   rid: pozyciya
-  chomu: принцип або правило автора про важливість pinout плати
-
+  chomu: принцип важливості pinout плати
 - id: T-08-086
   rid: pozyciya
   chomu: рекомендація дизайну для майбутнього
-
 - id: T-09-058
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-09-102
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-09-054
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-10-018
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-11-069
   rid: dzherelo-ye
-
+  shukaty: ESP-IDF Programming Guide, build system
+  chomu: технічна специфікація системи
 - id: T-11-018
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
+  chomu: технічна рекомендація
 - id: T-12-057
   rid: ne-tverdzhennya
-
+  chomu: рядок таблиці з категоріями
 - id: T-13-042
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-13-002
   rid: pozyciya
-  chomu: порівняння інструментів, оцінка переваг PIO
-
+  chomu: порівняння інструментів оцінка PIO
 - id: T-14-055
   rid: ne-tverdzhennya
-
+  chomu: рядок таблиці рішень
 - id: T-14-027
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-15-025
   rid: pozyciya
   chomu: пріоритизація значення швидкості
-
 - id: T-16-072
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-17-063
   rid: dzherelo-ye
-
+  shukaty: Esptool Manual compression flag -z
+  chomu: технічна специфікація параметру
 - id: T-17-156
   rid: pozyciya
-  chomu: оцінка зручності GUI flasher для певних користувачів
-
+  chomu: оцінка зручності GUI для користувачів
 - id: T-18-090
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-19-054
   rid: ne-tverdzhennya
-
+  chomu: рядок коду URL приклад
 - id: T-19-016
   rid: dzherelo-ye
-
+  shukaty: ESP-IDF Programming Guide, OTA updates
+  chomu: технічна специфікація OTA системи
 - id: T-20-073
   rid: pozyciya
   chomu: рекомендація оптимізації через вибіркове стирання
-
 - id: T-21-047
   rid: ne-tverdzhennya
-
+  chomu: опис типів даних перелік
 - id: T-21-090
-  rid: dzherelo-ye
-
+  rid: ne-rozibrav
 - id: T-22-065
   rid: ne-tverdzhennya
-
+  chomu: умовна наслідок твердження
 - id: T-23-006
   rid: dzherelo-ye
+  shukaty: ESP-IDF Programming Guide, factory reset
+  chomu: технічна вимога про порядок операцій

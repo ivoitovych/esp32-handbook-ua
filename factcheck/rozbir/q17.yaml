@@ -1,0 +1,255 @@
+- id: T-A-020
+  rid: ne-tverdzhennya
+  chomu: позначка стану піна у таблиці
+
+- id: T-A-094
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheets, GPIO pin capabilities
+  chomu: технічна характеристика піна — його режими роботи
+
+- id: T-B-232
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика — симптом та рекомендована дія
+
+- id: T-B-047
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика — симптом та дія
+
+- id: T-B-166
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика — симптом, причина, відповідь
+
+- id: T-C-097
+  rid: ne-tverdzhennya
+  chomu: команда, приклад використання
+
+- id: T-D-156
+  rid: ne-rozibrav
+
+- id: T-E-124
+  rid: ne-tverdzhennya
+  chomu: шапка таблиці
+
+- id: T-E-067
+  rid: dzherelo-ye
+  shukaty: NRF24L01 datasheet, RF specifications
+  chomu: технічна характеристика модуля — радіочастота
+
+- id: T-F-007
+  rid: ne-tverdzhennya
+  chomu: рядок списку, навігація до ресурсу
+
+- id: T-G-102
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія — визначення терміна
+
+- id: T-G-140
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-G-029
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-G-070
+  rid: ne-tverdzhennya
+  chomu: рядок глосарія
+
+- id: T-H-029
+  rid: pozyciya
+  chomu: рекомендація, де знайти приклади коду
+
+- id: T-Z-109
+  rid: ne-tverdzhennya
+  chomu: рядок покажчика — GPIO12 та сторінки, де він згадується
+
+- id: T-COM-089
+  rid: pozyciya
+  chomu: порада по швидкій перевірці партії обладнання
+
+- id: T-COM-084
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці — спосіб перевірки картки microSD
+
+- id: T-UA--001
+  rid: ne-tverdzhennya
+  chomu: заголовок, метаінформація про версію
+
+- id: T-K01-038
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці розпізнавання стану
+
+- id: T-K03-024
+  rid: pozyciya
+  chomu: авторське пояснення необхідності налаштування
+
+- id: T-K06-040
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці — симптом та відповідна карточка
+
+- id: T-K08-044
+  rid: ne-tverdzhennya
+  chomu: позначка у таблиці — номер та частий вибір причини
+
+- id: T-K09-035
+  rid: pozyciya
+  chomu: авторське уточнення розрізнення між схемою та платою
+
+- id: T-K12-015
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці — інструмент та дія
+
+- id: T-K13-032
+  rid: ne-rozibrav
+
+- id: T-K15-016
+  rid: ne-tverdzhennya
+  chomu: маркування кроку з навігацією до розділу
+
+- id: T-00-063
+  rid: ne-tverdzhennya
+  chomu: пояснення синтаксису книги, правили розмітки
+
+- id: T-00-021
+  rid: ne-tverdzhennya
+  chomu: рядок таблиці оцінок — визначення категорії B
+
+- id: T-01-091
+  rid: pozyciya
+  chomu: авторська оцінка ролі ESP32 у системах
+
+- id: T-01-028
+  rid: ne-rozibrav
+
+- id: T-02-113
+  rid: dzherelo-ye
+  shukaty: ESP32 S3 datasheet, processor capabilities
+  chomu: технічна характеристика чипа — його призначення
+
+- id: T-02-020
+  rid: dzherelo-ye
+  shukaty: ESP32 S3 datasheet, core specifications
+  chomu: кількість ядер — точна технічна характеристика
+
+- id: T-03-062
+  rid: pozyciya
+  chomu: приклад типового застосування ULP, авторське пояснення
+
+- id: T-03-042
+  rid: pozyciya
+  chomu: авторське спостереження про продуктивність кешу
+
+- id: T-04-002
+  rid: ne-rozibrav
+
+- id: T-05-057
+  rid: pozyciya
+  chomu: рекомендація про придбання конвертера, оцінка вартості та ефективності
+
+- id: T-05-113
+  rid: ne-rozibrav
+
+- id: T-06-055
+  rid: pozyciya
+  chomu: авторська оцінка неефективності одного з методів захисту
+
+- id: T-06-117
+  rid: pozyciya
+  chomu: авторська оцінка джерела живлення за якістю та шумом
+
+- id: T-07-058
+  rid: dzherelo-ye
+  shukaty: ESP32 datasheet, strapping pins, internal pull-up/pull-down specifications
+  chomu: технічна характеристика — номіналу резистора при strapping-пінах
+
+- id: T-07-025
+  rid: pozyciya
+  chomu: авторське пояснення поведінки плати в режимі мовчання
+
+- id: T-08-023
+  rid: pozyciya
+  chomu: авторська оцінка якості клонів порівняно з оригіналом
+
+- id: T-09-006
+  rid: ne-rozibrav
+
+- id: T-09-112
+  rid: pozyciya
+  chomu: авторська рекомендація — хуби з живленням допомагають, без живлення шкодять
+
+- id: T-10-005
+  rid: pozyciya
+  chomu: рекомендація на вибір мультиметра з певними функціями
+
+- id: T-10-030
+  rid: pozyciya
+  chomu: авторська оцінка вартості та цінності приладу для діагностики
+
+- id: T-11-010
+  rid: ne-tverdzhennya
+  chomu: список інструментів, навігація
+
+- id: T-11-005
+  rid: pozyciya
+  chomu: авторське твердження про унікальність ESP-IDF як платформи розробки
+
+- id: T-12-001
+  rid: ne-rozibrav
+
+- id: T-13-053
+  rid: ne-tverdzhennya
+  chomu: інструкція по складанню розривалася конкретного середовища
+
+- id: T-13-025
+  rid: ne-rozibrav
+
+- id: T-14-068
+  rid: pozyciya
+  chomu: авторська оцінка придатності ESPHome для виробництва
+
+- id: T-15-056
+  rid: pozyciya
+  chomu: рекомендація використовувати приклади з ESP-IDF як ресурс
+
+- id: T-15-036
+  rid: pozyciya
+  chomu: авторське пояснення проблеми одночасного вивчення фреймворку та сенсора
+
+- id: T-16-091
+  rid: ne-rozibrav
+
+- id: T-17-008
+  rid: ne-tverdzhennya
+  chomu: інструкція по використанню команди
+
+- id: T-17-040
+  rid: ne-rozibrav
+
+- id: T-18-104
+  rid: ne-tverdzhennya
+  chomu: дія/завдання у контексті розділу
+
+- id: T-19-071
+  rid: ne-rozibrav
+
+- id: T-19-033
+  rid: ne-rozibrav
+
+- id: T-20-091
+  rid: ne-tverdzhennya
+  chomu: інструкція про коли й як перевіряти розмір
+
+- id: T-21-063
+  rid: ne-tverdzhennya
+  chomu: пояснення формату файлу — один файл на партію, один рядок на плату
+
+- id: T-21-020
+  rid: ne-rozibrav
+
+- id: T-22-012
+  rid: pozyciya
+  chomu: авторська процедура документування — обов'язок зняти дроти, обґрунтування важливості фото
+
+- id: T-23-070
+  rid: pozyciya
+  chomu: авторське попередження про обережність з пінами

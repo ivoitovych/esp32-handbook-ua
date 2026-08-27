@@ -8,7 +8,7 @@
 
 - id: T-B-219
   rid: dzherelo-ye
-  shukaty: LoRa module documentation, SF/BW/CR parameters
+  shukaty: RFM95/RFM69 LoRa Module Datasheet, modulation parameters
 
 - id: T-B-265
   rid: pozyciya
@@ -120,7 +120,7 @@
 
 - id: T-01-001
   rid: dzherelo-ye
-  shukaty: Espressif company information, ESP32 product line
+  shukaty: ESP32 Series Datasheet, product overview
 
 - id: T-02-094
   rid: dzherelo-ye
@@ -164,7 +164,7 @@
 
 - id: T-07-121
   rid: dzherelo-ye
-  shukaty: ESP32-S3 vs ESP32 classic comparison, pin count
+  shukaty: ESP32-S3 Series Datasheet, pin configuration
 
 - id: T-08-083
   rid: dzherelo-ye
@@ -224,7 +224,7 @@
 
 - id: T-17-061
   rid: dzherelo-ye
-  shukaty: esptool.py documentation, command-line arguments
+  shukaty: esptool User Guide, command line reference
 
 - id: T-17-154
   rid: pozyciya

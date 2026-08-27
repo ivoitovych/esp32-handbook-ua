@@ -1,236 +1,263 @@
 - id: T-A-016
   rid: dzherelo-ye
-  shukaty: UART0 constraints documentation
+  shukaty: "ESP32 Technical Reference Manual — UART pin constraints"
 
 - id: T-A-088
   rid: dzherelo-ye
-  shukaty: ADC2 constraints documentation
+  shukaty: "ESP32 Technical Reference Manual — ADC2 pin constraints"
 
 - id: T-B-230
   rid: ne-tverdzhennya
+  chomu: "навігація до розділу — рядок симптому"
 
 - id: T-B-045
   rid: ne-tverdzhennya
+  chomu: "навігація до розділу — рядок симптому"
 
 - id: T-B-162
   rid: ne-tverdzhennya
+  chomu: "навігація до розділу — рядок симптому"
 
 - id: T-C-095
   rid: ne-tverdzhennya
+  chomu: "приклад команди з коментарем"
 
 - id: T-D-037
   rid: pozyciya
-  chomu: оцінка частоти виникнення ситуації
+  chomu: "оцінка частоти виникнення ситуації"
 
 - id: T-E-121
   rid: dzherelo-ye
-  shukaty: MAX98357A amplifier class D specifications
+  shukaty: "MAX98357A datasheet — клас D підсилювача"
 
 - id: T-E-065
   rid: dzherelo-ye
-  shukaty: SX1262 LoRa transceiver RadioLib documentation
+  shukaty: "SX1262 LoRa модуль RadioLib документація"
 
 - id: T-F-028
   rid: pozyciya
-  chomu: порада про кращий час тестування
+  chomu: "порада про кращий час тестування"
 
 - id: T-G-100
   rid: ne-tverdzhennya
+  chomu: "рядок глосарія — переклад терміна"
 
 - id: T-G-138
   rid: ne-tverdzhennya
+  chomu: "рядок глосарія — переклад терміна"
 
 - id: T-G-027
   rid: ne-tverdzhennya
+  chomu: "рядок глосарія — переклад терміна"
 
 - id: T-G-068
   rid: ne-tverdzhennya
+  chomu: "рядок глосарія — переклад терміна"
 
 - id: T-H-002
   rid: dzherelo-ye
-  shukaty: hardware documentation with numeric specifications
+  shukaty: "hardware documentation specifications numbers"
 
 - id: T-Z-108
   rid: ne-tverdzhennya
+  chomu: "рядок покажчика — перелік сторінок"
 
 - id: T-Z-175
   rid: ne-tverdzhennya
+  chomu: "рядок покажчика — перелік сторінок"
 
 - id: T-COM-004
   rid: ne-tverdzhennya
+  chomu: "інформаційний рядок про вміст вкладишу"
 
 - id: T-UA--011
   rid: pozyciya
-  chomu: оцінка придатності для різних типів закупівель
+  chomu: "оцінка придатності для різних типів закупівель"
 
 - id: T-K01-036
   rid: pozyciya
-  chomu: оцінка властивості операції (завжди можна повернути)
+  chomu: "характеристика операції, оцінка можливості повернення"
 
 - id: T-K03-022
   rid: ne-tverdzhennya
+  chomu: "приклад команди без твердження"
 
 - id: T-K06-037
   rid: ne-tverdzhennya
+  chomu: "заголовок таблиці"
 
 - id: T-K08-042
   rid: ne-tverdzhennya
+  chomu: "навігація до кроку розв'язування — рядок симптому"
 
 - id: T-K09-031
   rid: dzherelo-ye
-  shukaty: ADC2 hardware limitation documentation
+  shukaty: "ESP32 Technical Reference Manual — ADC2 hardware limitation"
 
 - id: T-K12-013
-  rid: pozyciya
-  chomu: порада щодо використання лабораторного БЖ з обмеженням струму
+  rid: ne-tverdzhennya
+  chomu: "рядок таблиці інструментів"
 
 - id: T-K13-029
   rid: pozyciya
-  chomu: рекомендація живлення 3.3В безпосередньо при слабкому стабілізаторі
+  chomu: "рекомендація живлення 3.3В при слабкому стабілізаторі"
 
 - id: T-K15-014
   rid: ne-tverdzhennya
+  chomu: "навігація до кроку процедури"
 
 - id: T-00-060
   rid: pozyciya
-  chomu: оцінка часового效果прочитання
+  chomu: "оцінка часової ефективності прочитання"
 
 - id: T-00-019
   rid: ne-tverdzhennya
+  chomu: "заголовок таблиці класифікації"
 
 - id: T-01-089
   rid: dzherelo-ye
-  shukaty: Linux filesystem and power management for unattended devices documentation
+  shukaty: "Linux Manual"
 
 - id: T-01-026
   rid: pozyciya
-  chomu: оцінка рівня ризику при роботі з платою
+  chomu: "оцінка рівня ризику при експериментах з платою"
 
 - id: T-02-109
   rid: dzherelo-ye
-  shukaty: ESP32 5GHz WiFi support documentation
+  shukaty: "ESP32 Technical Reference Manual — 5GHz WiFi support"
 
 - id: T-02-018
   rid: dzherelo-ye
-  shukaty: ESP32 dual-core architecture documentation
+  shukaty: "ESP32 dual-core processor specifications"
 
 - id: T-03-005
   rid: ne-tverdzhennya
+  chomu: "навігація до список розподілу за замовчуванням"
 
 - id: T-03-036
   rid: dzherelo-ye
-  shukaty: DMA memory requirements DRAM documentation
+  shukaty: "ESP32 Technical Reference Manual — DMA memory requirements"
 
 - id: T-04-009
   rid: pozyciya
-  chomu: оцінка переваг гнучкості пінів та програмного конфігурування
+  chomu: "перелік переваг гнучкості піна"
 
 - id: T-05-054
   rid: ne-tverdzhennya
+  chomu: "елемент таблиці або діаграми без смислу"
 
 - id: T-05-111
   rid: dzherelo-ye
-  shukaty: inductor voltage spike and transistor failure mechanism
+  shukaty: "Electronics design reference — inductor and transistor behavior"
 
 - id: T-06-052
   rid: pozyciya
-  chomu: рекомендація щодо живлення USB хаба
+  chomu: "рекомендація щодо живлення USB хаба"
 
 - id: T-06-115
   rid: pozyciya
-  chomu: оцінка необхідності власного монтажу для низького споживання
+  chomu: "оцінка необхідності власного монтажу для низького споживання"
 
 - id: T-06-047
   rid: ne-tverdzhennya
+  chomu: "рядок таблиці або список без розвернення"
 
 - id: T-07-022
   rid: dzherelo-ye
-  shukaty: GPIO internal pull-up resistor behavior documentation
+  shukaty: "ESP32 Technical Reference Manual — GPIO pull-up behavior"
 
 - id: T-08-002
   rid: ne-tverdzhennya
+  chomu: "вступ до розділу — навігаційний рядок"
 
 - id: T-09-070
   rid: dzherelo-ye
-  shukaty: Linux serial port group naming variations documentation
+  shukaty: "Linux Manual"
 
 - id: T-09-110
   rid: dzherelo-ye
-  shukaty: ESP32-S3 ESP32-C3 ttyACM port and DevKitC-1 dual ports documentation
+  shukaty: "ESP32 board technical specifications"
 
 - id: T-10-051
   rid: pozyciya
-  chomu: рекомендація антистатичного захисту браслетом або заземленням
+  chomu: "рекомендація антистатичного захисту"
 
 - id: T-10-028
   rid: ne-tverdzhennya
+  chomu: "назва інструменту з описом функції"
 
 - id: T-11-088
   rid: dzherelo-ye
-  shukaty: ESP-IDF idf_component.yml dependency management
+  shukaty: "ESP-IDF documentation — component management"
 
 - id: T-11-029
   rid: ne-tverdzhennya
+  chomu: "навігація до таблиці версій"
 
 - id: T-12-008
   rid: ne-tverdzhennya
+  chomu: "вступ до списку наслідків"
 
 - id: T-13-050
   rid: pozyciya
-  chomu: оцінка зручності проти відтворюваності при використанні stable тегу
+  chomu: "оцінка компромісу між зручністю і відтворюваністю"
 
 - id: T-13-020
   rid: ne-tverdzhennya
+  chomu: "вступ до описання проєкту"
 
 - id: T-14-066
-  rid: dzherelo-ye
-  shukaty: Wokwi simulation timing accuracy vs real hardware
+  rid: pozyciya
+  chomu: "порівняння точності Wokwi проти реального обладнання"
 
 - id: T-15-003
   rid: pozyciya
-  chomu: оцінка часу та засобу прототипування
+  chomu: "порівняння часу при виборі платформи"
 
 - id: T-15-034
   rid: pozyciya
-  chomu: оцінка переваги явного терміну роботи
+  chomu: "оцінка переваги явного терміну роботи"
 
 - id: T-16-087
   rid: dzherelo-ye
-  shukaty: power supply droop during radio startup documentation
+  shukaty: "ESP32 Technical Reference Manual — power supply specifications"
 
 - id: T-17-083
   rid: pozyciya
-  chomu: оцінка необхідності використання esptool
+  chomu: "оцінка необхідності використання esptool"
 
 - id: T-17-038
   rid: pozyciya
-  chomu: оцінка, що команда точна але не додає функціональності
+  chomu: "оцінка команди як точної але бесполезної"
 
 - id: T-18-101
   rid: pozyciya
-  chomu: рекомендації щодо оптимізації прошивки
+  chomu: "рекомендація щодо оптимізації розміру прошивки"
 
 - id: T-19-006
   rid: ne-tverdzhennya
+  chomu: "заголовок таблиці типів оновлень"
 
 - id: T-19-027
   rid: dzherelo-ye
-  shukaty: OTA update firmware size limits and slot management documentation
+  shukaty: "ESP-IDF documentation — OTA and partition management"
 
 - id: T-20-086
   rid: pozyciya
-  chomu: оцінка безпечності операції читання
+  chomu: "оцінка безпечності операції читання"
 
 - id: T-21-061
   rid: pozyciya
-  chomu: рекомендація щодо розташування наліпки
+  chomu: "рекомендація розташування наліпки"
 
 - id: T-21-013
   rid: ne-tverdzhennya
+  chomu: "навігація до процесу послідовного програмування"
 
 - id: T-22-001
   rid: ne-tverdzhennya
+  chomu: "вступ до розділу про чужий пристрій"
 
 - id: T-23-068
   rid: pozyciya
-  chomu: оцінка обмеження логу у виявленні функціональності
+  chomu: "оцінка обмеження логування у визначенні поведінки"

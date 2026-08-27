@@ -3,198 +3,264 @@
 
 - id: T-A-015
   rid: ne-tverdzhennya
+  chomu: рядок таблиці з числовим позначенням
 
 - id: T-A-087
   rid: dzherelo-ye
+  shukaty: datasheet ESP32 — діапазон ADC1 піни
 
 - id: T-B-229
   rid: pozyciya
+  chomu: рекомендація як вирішити проблему зі стеком
 
 - id: T-B-042
   rid: ne-tverdzhennya
+  chomu: шапка таблиці симптомів
 
 - id: T-B-161
   rid: pozyciya
+  chomu: практична рекомендація про резистор
 
 - id: T-C-093
   rid: dzherelo-ye
+  shukaty: ESP-IDF документація про портури — /dev/ttyACM*
 
 - id: T-D-151
   rid: ne-tverdzhennya
+  chomu: рядок таблиці паніки
 
 - id: T-E-120
   rid: dzherelo-ye
+  shukaty: INMP441 datasheet, технічні характеристики
 
 - id: T-E-064
   rid: dzherelo-ye
+  shukaty: SX1262 datasheet, LoRa модуль
 
 - id: T-F-027
   rid: pozyciya
+  chomu: твердження про спосіб розв'язання проблеми
 
 - id: T-G-099
   rid: ne-tverdzhennya
+  chomu: рядок глосарію
 
 - id: T-G-137
   rid: ne-tverdzhennya
+  chomu: рядок глосарію
 
 - id: T-G-026
   rid: ne-tverdzhennya
+  chomu: рядок глосарію
 
 - id: T-G-067
   rid: ne-tverdzhennya
+  chomu: рядок глосарію
 
 - id: T-H-026
   rid: ne-tverdzhennya
+  chomu: посилання на інший розділ
 
 - id: T-Z-106
   rid: ne-tverdzhennya
+  chomu: рядок покажчика з номерами сторінок
 
 - id: T-Z-173
   rid: ne-tverdzhennya
+  chomu: рядок покажчика з номерами сторінок
 
 - id: T-COM-078
   rid: ne-tverdzhennya
+  chomu: шапка таблиці компонентів
 
 - id: T-UA--010
   rid: pozyciya
+  chomu: характеристика способу закупівлі — дешевизна й швидкість
 
 - id: T-K01-035
   rid: pozyciya
+  chomu: порада про захист даних перед операціями
 
 - id: T-K03-020
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: це права доступу, а не апаратна несправність — об'яснення причини
 
 - id: T-K06-036
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: совет як читати bootlog для визначення місця зависання
 
 - id: T-K08-040
   rid: ne-tverdzhennya
+  chomu: рядок таблиці симптомів сенсорів
 
 - id: T-K09-028
   rid: ne-tverdzhennya
+  chomu: рядок таблиці pinout
 
 - id: T-K12-011
   rid: ne-tverdzhennya
+  chomu: шапка таблиці комплекту
 
 - id: T-K13-027
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: рекомендація припаяти керамічний конденсатор певної ємності
 
 - id: T-K15-001
   rid: pozyciya
+  chomu: рекомендація про відслідковування прошивок у партії
 
 - id: T-00-059
   rid: ne-tverdzhennya
+  chomu: заголовок розділу про типові помилки
 
 - id: T-00-018
   rid: ne-tverdzhennya
+  chomu: рядок оглавлення про структуру перевірки
 
 - id: T-01-088
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: мнение про типову помилку вибору платформи
 
 - id: T-01-025
   rid: pozyciya
+  chomu: оцінка вартості платформи розробки
 
 - id: T-02-107
   rid: pozyciya
+  chomu: опис застосування для простих масових виробів
 
 - id: T-02-017
   rid: dzherelo-ye
+  shukaty: ESP32-H2 datasheet — RISC-V архітектура
 
 - id: T-03-058
   rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual — RTC крайня архітектура
 
 - id: T-03-035
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: об'яснення механізму проблеми при утечках пам'яті
 
 - id: T-04-008
   rid: ne-tverdzhennya
+  chomu: вступ до розділу про периферію
 
 - id: T-05-051
   rid: pozyciya
+  chomu: оцінка способу передачі для повільних сигналів
 
 - id: T-05-110
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: класифікація типів електричного навантаження
 
 - id: T-06-051
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: практична рекомендація припаяти конденсатор певної ємності
 
 - id: T-06-114
   rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual — характеристики deep sleep
 
 - id: T-06-046
   rid: pozyciya
+  chomu: твердження про несправність джерела живлення
 
 - id: T-07-137
   rid: pozyciya
+  chomu: рекомендація перевірити фактичний pinout перед використанням
 
 - id: T-08-001
   rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual — архітектура модуля
 
 - id: T-09-069
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: технічне пояснення поведінки групи користувачів у UNIX системах
 
 - id: T-09-108
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: совет як швидко діагностувати кабель та його статистика частоти
 
 - id: T-10-050
   rid: pozyciya
+  chomu: оцінка якості робочого килимка
 
 - id: T-10-027
   rid: pozyciya
+  chomu: оцінка вартості приладу для роботи з платами
 
 - id: T-11-085
   rid: dzherelo-ye
+  shukaty: ESP-IDF реєстр компонентів Espressif
 
 - id: T-11-028
   rid: dzherelo-ye
+  shukaty: ESP-IDF Документація — файл toolchain-baseline.yaml
 
 - id: T-12-006
   rid: dzherelo-ye
+  shukaty: Arduino Reference Manual — Serial API
 
 - id: T-13-049
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: вимога використовувати тег замість "stable" для повторюваності
 
 - id: T-13-019
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: твердження про можливість PlatformIO підтримувати кілька фреймворків
 
 - id: T-14-065
   rid: ne-tverdzhennya
+  chomu: рядок таблиці порівняння можливостей фреймворків
 
 - id: T-14-035
   rid: pozyciya
+  chomu: оцінка економії часу при розробці на плоті замість пайці
 
 - id: T-15-033
   rid: pozyciya
+  chomu: описання переваги ітеративного підходу з робочим пристроєм
 
 - id: T-16-085
   rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual — тайминги bootloader
 
 - id: T-17-080
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: твердження про поведінку esptool, що перезбирання не повертає дані
 
 - id: T-17-003
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: опис функцій esptool, головного інструменту для роботи з ESP32
 
 - id: T-18-100
   rid: ne-tverdzhennya
+  chomu: введення до переліку варіантів дій
 
 - id: T-19-068
   rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual — OTA безпека
 
 - id: T-19-026
   rid: dzherelo-ye
+  shukaty: ESP32 Technical Reference Manual — OTA память
 
 - id: T-20-084
   rid: pozyciya
+  chomu: рекомендація про альтернативні способи підключення
 
 - id: T-21-060
   rid: ne-tverdzhennya
+  chomu: елемент переліку інформації для логування
 
 - id: T-21-002
-  rid: dzherelo-ye
+  rid: pozyciya
+  chomu: опис змін у роботі при масштабуванні від однієї плати до кількох десятків
 
 - id: T-22-011
   rid: dzherelo-ye
+  shukaty: ESP32 Series Datasheet — маркування модулів
 
 - id: T-23-065
   rid: ne-tverdzhennya
+  chomu: внутрішнє посилання на інший розділ

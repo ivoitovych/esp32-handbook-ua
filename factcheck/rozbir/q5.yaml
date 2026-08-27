@@ -223,16 +223,13 @@
   chomu: авторське описання мети процесу завантаження
 
 - id: T-17-062
-  rid: dzherelo-ye
-  shukaty: esptool документація — можливість кількох пар за один виклик
+  rid: ne-rozibrav
 
 - id: T-17-155
-  rid: dzherelo-ye
-  shukaty: Espressif Flash Download Tool — графічне розширення esptool
+  rid: ne-rozibrav
 
 - id: T-18-089
-  rid: dzherelo-ye
-  shukaty: реєстр версій — джерело номерів версій
+  rid: ne-rozibrav
 
 - id: T-19-052
   rid: ne-tverdzhennya
@@ -248,12 +245,10 @@
   chomu: авторський вердикт про неможливість відновлення
 
 - id: T-21-045
-  rid: dzherelo-ye
-  shukaty: esptool документація merge-bin — однаковість для партії
+  rid: ne-rozibrav
 
 - id: T-21-089
-  rid: dzherelo-ye
-  shukaty: Espressif Flash Download Tool — багатоплатне прошивання
+  rid: ne-rozibrav
 
 - id: T-22-064
   rid: pozyciya

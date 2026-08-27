@@ -35,9 +35,7 @@
   chomu: рядок індексу — посилання на бібліотеку
 
 - id: T-E-003
-  rid: dzherelo-ye
-  shukaty: технічна специфікація I²C або SPI — обсяг лінійок, кількість пристроїв, дистанція
-  chomu: числові характеристики протоколу
+  rid: ne-rozibrav
 
 - id: T-G-088
   rid: ne-tverdzhennya
@@ -57,8 +55,8 @@
 
 - id: T-H-012
   rid: dzherelo-ye
-  shukaty: техніко-орієнтований документ ESP-IDF або datasheet про периферію
-  chomu: посилання на джерело для пояснення поведінки периферії
+  shukaty: ESP32 Technical Reference Manual, Peripheral details
+  chomu: посилання на документ для пояснення поведінки периферії
 
 - id: T-Z-059
   rid: ne-tverdzhennya
@@ -73,14 +71,10 @@
   chomu: оцінка правильного вибору напруги; це судження автора про доцільність
 
 - id: T-REG-030
-  rid: dzherelo-ye
-  shukaty: регуляторні документи — діапазони, канальні плани, duty cycle, сертифікація
-  chomu: перелік елементів регуляторних вимог, які мають відповіді у зовнішніх документах
+  rid: ne-rozibrav
 
 - id: T-K01-020
-  rid: dzherelo-ye
-  shukaty: технічна процедура тестування, електротехнічні норми безпеки
-  chomu: конкретна послідовність дій для перевірки без корозії
+  rid: ne-rozibrav
 
 - id: T-K03-003
   rid: pozyciya
@@ -127,38 +121,30 @@
   chomu: визначення / характеристика об'єкта
 
 - id: T-02-093
-  rid: dzherelo-ye
-  shukaty: технічна документація про архітектури Xtensa і RISC-V, компіляцію коду
-  chomu: твердження про сумісність коду на архітектурах
+  rid: ne-rozibrav
 
 - id: T-02-148
   rid: pozyciya
   chomu: типова відповідь як судження автора; це рекомендація вибору за сценарієм
 
 - id: T-02-085
-  rid: dzherelo-ye
-  shukaty: ESP32 Classic, S3 і BLE документація — вимоги до переписування проєктів
-  chomu: технічна вимога про потребу переписування при міграції
+  rid: ne-rozibrav
 
 - id: T-03-022
   rid: dzherelo-ye
-  shukaty: ESP32 Datasheet або IDF документація про IRAM
+  shukaty: ESP32 Datasheet, Memory section — IRAM (Instruction RAM)
   chomu: технічна характеристика пам'яті — призначення IRAM
 
 - id: T-04-006
-  rid: dzherelo-ye
-  shukaty: архітектура типових мікроконтролерів, подання про periph binding
-  chomu: технічна специфікація — жорстка привязка периферії до пінів
+  rid: ne-rozibrav
 
 - id: T-04-058
-  rid: dzherelo-ye
-  shukaty: документація функціональності пристрою - можливість вимірювання імпульсів
-  chomu: технічна можливість пристрою
+  rid: ne-rozibrav
 
 - id: T-05-090
   rid: dzherelo-ye
-  shukaty: ESP32 datasheet — профіль потоку при вмиканні передавача
-  chomu: числова характеристика — мікросеквідність стрибка
+  shukaty: ESP32 Datasheet, Power Consumption — стрибок споживання при вмиканні передавача
+  chomu: числова характеристика часової шкали переходу
 
 - id: T-05-027
   rid: pozyciya
@@ -185,14 +171,10 @@
   chomu: авторська оцінка якості; це судження про недобір продукту
 
 - id: T-09-099
-  rid: dzherelo-ye
-  shukaty: ESP32 та кабельні документи про характеристики деградації сигналу
-  chomu: технічні наслідки — просадка, затримки, невдачі авторезету
+  rid: ne-rozibrav
 
 - id: T-09-051
-  rid: dzherelo-ye
-  shukaty: технічна документація про конвертери USB-UART
-  chomu: технічна специфікація — різні типи дають різні результати
+  rid: ne-rozibrav
 
 - id: T-10-015
   rid: pozyciya
@@ -200,13 +182,11 @@
 
 - id: T-11-008
   rid: dzherelo-ye
-  shukaty: ESP-IDF документація про тулчейн, архітектури Xtensa та RISC-V
-  chomu: технічне визначення та посилання на архітектурні відмінності
+  shukaty: ESP-IDF Documentation, Getting Started — Toolchain installation
+  chomu: технічне визначення компонентів тулчейну
 
 - id: T-11-003
-  rid: dzherelo-ye
-  shukaty: документація про тулчейни - обгортки та альтернативи
-  chomu: технічна характеристика зв'язку та обмежень
+  rid: ne-rozibrav
 
 - id: T-12-053
   rid: ne-tverdzhennya
@@ -214,7 +194,7 @@
 
 - id: T-13-039
   rid: dzherelo-ye
-  shukaty: PlatformIO документація про build_flags
+  shukaty: PlatformIO User Guide, build_flags parameter
   chomu: технічне визначення параметра компіляції
 
 - id: T-13-010
@@ -247,8 +227,8 @@
 
 - id: T-18-005
   rid: dzherelo-ye
-  shukaty: ESP32 flash partition table документація - структура записів
-  chomu: технічна специфікація структури даних
+  shukaty: ESP32 Technical Reference Manual, Partition Table CSV format
+  chomu: технічна специфікація структури записів таблиці розділів
 
 - id: T-18-047
   rid: pozyciya
@@ -271,9 +251,7 @@
   chomu: авторська оцінка економічності; це судження про вартість варіанту
 
 - id: T-22-062
-  rid: dzherelo-ye
-  shukaty: система контролю версій або робоче спорядження notatky.txt
-  chomu: технічна специфікація поведінки файлу під час роботи
+  rid: ne-rozibrav
 
 - id: T-22-042
   rid: pozyciya

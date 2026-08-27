@@ -1,0 +1,31 @@
+- id: T-A-028
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: |
+    MTDI is used to select the VDD_SDIO power supply voltage at reset
+  de: "Section 3.2,説明 що GPIO12 (MTDI) контролює напругу VDD_SDIO"
+
+- id: T-B-189
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: |
+    802.11n (2.4 GHz), up to 150 Mbps
+  de: "Features section, підтверджує що ESP32 підтримує тільки 2.4 ГГц"
+
+- id: T-B-240
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'interrupt WDT', відсутня інформація про Interrupt WDT - це концепція FreeRTOS, не hardware
+
+- id: T-B-062
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: |
+    watchdog timers can trigger actions including reset or interrupt
+  de: "Section 4.4.2 Watchdog Timers, описує механізм паніки при старті"
+
+- id: T-B-170
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: |
+    Motor Control PWM - The Pulse Width Modulation (PWM) controller can be used for driving digital motors
+  de: "Section 4.8.9, підтримує керування моторами"

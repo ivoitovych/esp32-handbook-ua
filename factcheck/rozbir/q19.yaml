@@ -12,7 +12,7 @@
 
 - id: T-B-059
   rid: dzherelo-ye
-  shukaty: datasheet, параметр baudrate 74880
+  shukaty: datasheet ESP32, baudrate 74880
 
 - id: T-B-168
   rid: ne-tverdzhennya
@@ -24,7 +24,7 @@
 
 - id: T-D-043
   rid: dzherelo-ye
-  shukaty: datasheet, код помилки 0xe
+  shukaty: ESP32 datasheet, код помилки 0xe
 
 - id: T-E-126
   rid: ne-tverdzhennya
@@ -84,7 +84,7 @@
 
 - id: T-K06-043
   rid: dzherelo-ye
-  shukaty: datasheet, baudrate 115200
+  shukaty: ESP32 datasheet, baudrate ROM 115200
 
 - id: T-K08-048
   rid: ne-tverdzhennya
@@ -95,8 +95,8 @@
   chomu: спостереження про піни
 
 - id: T-K12-017
-  rid: dzherelo-ye
-  shukaty: номіналу резисторів і конденсаторів
+  rid: pozyciya
+  chomu: рекомендація найчастіших значень
 
 - id: T-K13-036
   rid: pozyciya
@@ -128,7 +128,7 @@
 
 - id: T-02-024
   rid: dzherelo-ye
-  shukaty: ESP32 datasheet, частота 240
+  shukaty: ESP32 datasheet, частота 240 МГц
 
 - id: T-03-064
   rid: pozyciya
@@ -156,7 +156,7 @@
 
 - id: T-06-120
   rid: dzherelo-ye
-  shukaty: datasheet, ефективність 85-95%
+  shukaty: Buck converter datasheet, ефективність 85-95%
 
 - id: T-07-060
   rid: pozyciya
@@ -191,8 +191,8 @@
   chomu: спостереження про реєстр
 
 - id: T-11-034
-  rid: dzherelo-ye
-  shukaty: документація Arduino, період support 12 місяців
+  rid: ne-tverdzhennya
+  chomu: навігація з часовою характеристикою
 
 - id: T-12-011
   rid: pozyciya

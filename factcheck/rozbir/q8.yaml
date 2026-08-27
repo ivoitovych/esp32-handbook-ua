@@ -1,59 +1,74 @@
 - id: T-A-117
   rid: ne-tverdzhennya
+  chomu: описание симптома в списке
 - id: T-A-004
   rid: ne-tverdzhennya
+  chomu: инструкция следить за таблицами
 - id: T-B-223
   rid: ne-tverdzhennya
+  chomu: строка в индексе симптомов
 - id: T-B-269
   rid: pozyciya
   chomu: потреба вміти викликати збій перед закриттям питання
 - id: T-B-123
   rid: ne-tverdzhennya
+  chomu: строка в індексі симптомів
 - id: T-C-087
   rid: ne-tverdzhennya
+  chomu: команда для користувача
 - id: T-D-129
   rid: dzherelo-ye
-  shukaty: технічне твердження про реальний флеш; система працює з надлишком
+  shukaty: ESP32 Series Datasheet характеристики SRAM
 - id: T-D-076
   rid: ne-rozibrav
 - id: T-E-002
   rid: ne-tverdzhennya
+  chomu: навигація на розділ
 - id: T-E-112
   rid: pozyciya
   chomu: оцінка вибору трансивера
 - id: T-G-093
   rid: ne-tverdzhennya
+  chomu: рядок глосарію
 - id: T-G-131
   rid: ne-tverdzhennya
+  chomu: рядок глосарію
 - id: T-G-001
   rid: ne-tverdzhennya
+  chomu: опис назв у глосарії
 - id: T-G-061
   rid: ne-tverdzhennya
+  chomu: рядок глосарію
 - id: T-H-018
   rid: pozyciya
   chomu: оцінка того що цінне в джерелі
 - id: T-Z-065
   rid: ne-tverdzhennya
+  chomu: рядок індексу з номерами сторінок
 - id: T-Z-152
   rid: ne-tverdzhennya
+  chomu: рядок індексу компонента
 - id: T-COM-064
   rid: ne-tverdzhennya
+  chomu: навигаційна помітка
 - id: T-REG-034
   rid: pozyciya
-  chomu: судження що рішення про доцільність не техничне
+  chomu: судження про регуляторні рішення
 - id: T-K01-024
   rid: pozyciya
   chomu: совет як визначити живий чип
 - id: T-K03-008
   rid: ne-tverdzhennya
+  chomu: інструкція визначити компонент
 - id: T-K06-002
   rid: dzherelo-ye
-  shukaty: ROM емпо рядків при завантаженні чипа
+  shukaty: ESP32 Technical Reference Manual ROM boot меню
 - id: T-K08-033
   rid: ne-tverdzhennya
+  chomu: навигація на розділ
 - id: T-K09-018
   rid: dzherelo-ye
-  shukaty: Strapping пины ESP32: 0, 3, 45, 46
+  shukaty: ESP32 Series Datasheet strapping pins
 - id: T-K12-005
   rid: pozyciya
   chomu: рекомендація перевірити кабель перед виїздом
@@ -62,6 +77,7 @@
   chomu: рекомендація вибрати інший кабель
 - id: T-K15-005
   rid: ne-tverdzhennya
+  chomu: заголовок таблиці
 - id: T-00-052
   rid: pozyciya
   chomu: совет пропустити частину для знаючих читачів
@@ -78,44 +94,46 @@
   chomu: рекомендація що брати для нового проєкту
 - id: T-02-011
   rid: dzherelo-ye
-  shukaty: Таблиця с названиями чипов: ESP32, S2, S3, C3, C6, H2
+  shukaty: ESP32 Series Datasheet варіанти чипів таблиця
 - id: T-03-051
   rid: pozyciya
   chomu: совет як зменшити споживання
 - id: T-03-028
   rid: dzherelo-ye
-  shukaty: Архітектура памяті: зовнішня флеш де лежить прошивка
+  shukaty: ESP32 Technical Reference Manual архітектура пам'яті
 - id: T-04-140
   rid: dzherelo-ye
-  shukaty: Архітектура: периферія працює апаратно
+  shukaty: ESP32 Technical Reference Manual периферія апаратна
 - id: T-05-046
   rid: ne-tverdzhennya
+  chomu: заголовок розділу
 - id: T-05-098
   rid: dzherelo-ye
-  shukaty: Конденсатор 470 мкФ як розв'язання проблеми живлення
+  shukaty: ESP32 hardware design guide конденсатор живлення
 - id: T-05-035
   rid: dzherelo-ye
-  shukaty: Світлодіод на 20 мА границя розумного
+  shukaty: Electronics Manual світлодіод розрахунок тока
 - id: T-06-105
   rid: dzherelo-ye
-  shukaty: Характеристика приладів вимірювання: інерція не покаже піків
+  shukaty: Oscilloscope Manual інерція вимірювання
 - id: T-06-040
   rid: dzherelo-ye
-  shukaty: Регіст rst значення 0xf позначає живлення
+  shukaty: ESP32 Series Datasheet регістр rst значення
 - id: T-07-126
   rid: dzherelo-ye
-  shukaty: Платы з однаковою назвою можуть бути різними
+  shukaty: ESP32-DevKitC datasheet варіанти плати
 - id: T-08-089
   rid: dzherelo-ye
-  shukaty: DevKit V1 буває 30- та 38-піновий версії
+  shukaty: ESP32-DevKit V1 Reference Manual піни розташування
 - id: T-09-061
   rid: pozyciya
   chomu: рекомендація про важливість справних кабелів
 - id: T-09-105
   rid: dzherelo-ye
-  shukaty: USB шлях не залежить від порядку підключення
+  shukaty: USB 2.0 Specification device enumeration
 - id: T-10-044
   rid: ne-tverdzhennya
+  chomu: категоризація компонента
 - id: T-10-020
   rid: pozyciya
   chomu: совет про USB-хаб з власним живленням
@@ -127,50 +145,52 @@
   chomu: совет про нумерацію каталогу esp-idf
 - id: T-12-060
   rid: dzherelo-ye
-  shukaty: Arduino core як шар над ESP-IDF, функції доступні зі скетча
+  shukaty: Arduino Reference Arduino core архітектура
 - id: T-13-004
   rid: dzherelo-ye
-  shukaty: PlatformIO підтримка ESP32 через платформу platform-espressif32
+  shukaty: PlatformIO Espressif32 Platform Guide
 - id: T-13-013
   rid: pozyciya
   chomu: рекомендація як розуміти версійність документу
 - id: T-14-057
   rid: dzherelo-ye
-  shukaty: ESPHome час до першого результату - хвилини
+  shukaty: ESPHome User Guide час результату
 - id: T-14-029
   rid: pozyciya
-  chomu: совет коли використовувати датчик з передачею даних
+  chomu: совет коли використовувати датчик
 - id: T-15-026
   rid: pozyciya
-  chomu: рекомендація що фіксувати: таймінги, адреси, межи
+  chomu: рекомендація що фіксувати таймінги адреси межи
 - id: T-16-077
   rid: dzherelo-ye
-  shukaty: Дебагування: перший дамп містить причину проблеми
+  shukaty: ESP32 GDB debugger guide first dump
 - id: T-17-065
   rid: dzherelo-ye
-  shukaty: esptool параметр --no-stub та стиснення для клонів
+  shukaty: esptool User Manual параметри stubs
 - id: T-17-158
   rid: pozyciya
-  chomu: совет що складніше робити з командного рядка
+  chomu: совет що робити з командного рядка
 - id: T-18-093
   rid: ne-tverdzhennya
+  chomu: навигація на розділ
 - id: T-19-056
   rid: dzherelo-ye
-  shukaty: timeout_ms значення 10000 в коді
+  shukaty: ESP32 OTA Programming Guide config timeout
 - id: T-19-100
   rid: dzherelo-ye
-  shukaty: HTTP без перевірки сервера загроза безпеки - чужа прошивка
+  shukaty: ESP32 OTA Programming Guide HTTPS verify server
 - id: T-20-076
   rid: ne-tverdzhennya
+  chomu: заголовок списку порядку
 - id: T-21-054
   rid: pozyciya
-  chomu: оцінка компромісу між інструментами та ручною роботою
+  chomu: оцінка компромісу інструментів та роботи
 - id: T-21-092
   rid: pozyciya
   chomu: совет про процедуру роботи з платами
 - id: T-22-068
   rid: dzherelo-ye
-  shukaty: Захоплення сигналу, а не кольору дроту
+  shukaty: Logic Analyzer Reference Manual signal capture
 - id: T-23-055
   rid: dzherelo-ye
-  shukaty: Діагностика клонів: менша пам'ять у модулі
+  shukaty: ESP32 Series Datasheet memory identification clones

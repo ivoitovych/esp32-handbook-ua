@@ -1,6 +1,6 @@
 - id: T-A-021
   rid: dzherelo-ye
-  shukaty: Документація про strapping пінів
+  shukaty: ESP32 Datasheet, rozdzil Strapping Pins
 
 - id: T-A-095
   rid: pozyciya
@@ -15,8 +15,7 @@
   chomu: Рядок таблиці помилок
 
 - id: T-B-167
-  rid: dzherelo-ye
-  shukaty: Окреме джерело про проблему Серво та падіння плати
+  rid: ne-rozibrav
 
 - id: T-C-098
   rid: ne-tverdzhennya
@@ -24,15 +23,14 @@
 
 - id: T-D-157
   rid: dzherelo-ye
-  shukaty: Документація про Task WDT
+  shukaty: ESP-IDF dokumentatsiya, Task Watchdog Timer
 
 - id: T-E-125
   rid: pozyciya
   chomu: Рекомендація як реалізувати WS2812
 
 - id: T-E-068
-  rid: dzherelo-ye
-  shukaty: Бібліотека RF24
+  rid: ne-rozibrav
 
 - id: T-F-001
   rid: ne-tverdzhennya
@@ -56,7 +54,7 @@
 
 - id: T-H-030
   rid: dzherelo-ye
-  shukaty: Programming Guide ESP32 вашої версії
+  shukaty: ESP-IDF Programming Guide, versiya 3+
 
 - id: T-Z-110
   rid: ne-tverdzhennya
@@ -92,15 +90,15 @@
 
 - id: T-K09-036
   rid: dzherelo-ye
-  shukaty: Технічна характеристика pinaV strapping
+  shukaty: ESP32 Datasheet, Input-only GPIO pins
 
 - id: T-K12-016
   rid: ne-tverdzhennya
   chomu: Рядок таблиці інструментів
 
 - id: T-K13-033
-  rid: dzherelo-ye
-  shukaty: Технічне правило про живлення двигунів і серво
+  rid: pozyciya
+  chomu: Технічне правило про окреме живлення
 
 - id: T-K15-017
   rid: ne-tverdzhennya
@@ -123,8 +121,7 @@
   chomu: Рекомендація беріть STM32 якщо потрібна гарантирована реакція
 
 - id: T-02-114
-  rid: dzherelo-ye
-  shukaty: Дані про відставання на ринку новых чипів і підтримки
+  rid: ne-rozibrav
 
 - id: T-02-022
   rid: ne-tverdzhennya
@@ -135,8 +132,7 @@
   chomu: Рекомендація оптимальної стратегії пробудження
 
 - id: T-03-043
-  rid: dzherelo-ye
-  shukaty: Технічна характеристика поведінки процесора
+  rid: ne-rozibrav
 
 - id: T-04-017
   rid: pozyciya
@@ -147,8 +143,7 @@
   chomu: Рекомендація тримати компоненти запасом
 
 - id: T-05-114
-  rid: dzherelo-ye
-  shukaty: Технічне правило електроніки про котушку й діод
+  rid: ne-rozibrav
 
 - id: T-06-058
   rid: pozyciya
@@ -160,7 +155,7 @@
 
 - id: T-07-059
   rid: dzherelo-ye
-  shukaty: Технічна характеристика pull-up резисторів
+  shukaty: ESP32 Datasheet, pull-up rezystory na GPIO
 
 - id: T-07-026
   rid: pozyciya
@@ -172,7 +167,7 @@
 
 - id: T-09-007
   rid: dzherelo-ye
-  shukaty: Опис архітектури моста USB-UART
+  shukaty: ESP32 Datasheet, USB-UART intehrovani skhemy
 
 - id: T-09-013
   rid: ne-tverdzhennya
@@ -188,15 +183,14 @@
 
 - id: T-11-090
   rid: dzherelo-ye
-  shukaty: Дані про версійність компонентів у реєстрі
+  shukaty: ESP-IDF git reyestr, versiynist komponentiv
 
 - id: T-11-033
   rid: ne-tverdzhennya
   chomu: Заголовок таблиці перевірки версії
 
 - id: T-12-002
-  rid: dzherelo-ye
-  shukaty: Архітектура платформи Arduino для ESP32
+  rid: ne-rozibrav
 
 - id: T-13-054
   rid: pozyciya
@@ -232,19 +226,16 @@
 
 - id: T-18-106
   rid: dzherelo-ye
-  shukaty: Наслідки несумісності розбивки з прошивкою
+  shukaty: ESP-IDF dokumentatsiya, rozdily fleshu ta OTA
 
 - id: T-19-072
-  rid: dzherelo-ye
-  shukaty: Технічна інформація про управління сертифікатами
+  rid: ne-rozibrav
 
 - id: T-19-034
-  rid: dzherelo-ye
-  shukaty: Описання гіршого сценарію OTA оновлення
+  rid: ne-rozibrav
 
 - id: T-20-092
-  rid: dzherelo-ye
-  shukaty: Методологія аналізу boot loop за дампом логу
+  rid: ne-rozibrav
 
 - id: T-21-064
   rid: ne-tverdzhennya

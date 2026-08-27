@@ -1,0 +1,85 @@
+- id: T-A-045
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: |
+    GPIO25     14    I/O    GPIO25, ADC2_CH8,        RTC_GPIO6,      DAC_1,       EMAC_RXD0
+  de: рядок 881, таблиця пінаути
+
+- id: T-B-194
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'supply\|power', проблеми підключення не описані як технічна характеристика
+
+- id: T-B-245
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, пошук по розділам - це посилання на документацію, не технічне твердження
+
+- id: T-B-072
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, рекомендації з обслуговування та розв'язання проблем не описані в даташиті
+
+- id: T-B-176
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, проблеми з відображенням кирилиці - це проблема бібліотеки/шрифту, не чипа
+
+- id: T-C-003
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, команды v4 - це рекомендація по інструментам, не технічна характеристика чипа
+
+- id: T-D-177
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, поради з пошуку помилок в коді - це рекомендація, не технічні дані
+
+- id: T-E-137
+  verdykt: pidtverdzheno
+  fayl: a4988.pdf
+  cytata: |
+    Simply inputting one pulse on the STEP input drives the motor one microstep.
+  de: сторінка з описом, перший абзац про трансльяторе
+
+- id: T-E-088
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, інформація про режими Adafruit SPI_MODE0 - це рекомендація бібліотеки, не даташиту
+
+- id: T-F-004
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, інформація про пакування залізо - це не технічні параметри ESP32
+
+- id: T-G-111
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, переклад терміну "потужність" - це не технічне твердження про чип, а термінологія
+
+- id: T-G-156
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, переклад акроніму LDO - це не твердження про технічні параметри
+
+- id: T-G-038
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, переклад "підвищувальний перетворювач" - це терміналогія, не технічні дані
+
+- id: T-G-080
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, переклад терміну "файлова система" - це термінологія, не технічні параметри
+
+- id: T-H-038
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про дату статті - це методика, не технічне твердження
+
+- id: T-Z-117
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, посилання на сторінки GPIO26 - це внутрішня посилання книги, не твердження про технічні параметри
+
+- id: T-COM-015
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про камеру ESP32-CAM - це не технічні параметри чипа
+
+- id: T-REG-001
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, позначення ревізії вкладиша - це не технічне твердження про функціональність
+
+- id: T-UA--025
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, описання реле - це не про параметри ESP32, а про периферійний пристрій
+
+- id: T-K02-011
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, рекомендація про вимірювання опорів - це процедура тестування, не технічні параметри

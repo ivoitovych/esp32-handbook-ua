@@ -1,0 +1,21 @@
+- id: T-A-054
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: GPIO pins 34-39 are input-only. These pins do not feature an output driver or internal pull-up/pull-down circuitry.
+  de: Appendix A.1, Notes on ESP32 Pin Lists
+
+- id: T-B-201
+  verdykt: ne_znayshov
+  dyvyvsya: "dodatky/b-symptomy.md, grep -i 'Перезавантажується', це рекомендація, не технічне твердження"
+
+- id: T-B-248
+  verdykt: ne_znayshov
+  dyvyvsya: "dodatky/b-symptomy.md, grep -i 'Дані псуються', це рекомендація щодо синхронізації, не фактологічне твердження"
+
+- id: T-B-075
+  verdykt: ne_znayshov
+  dyvyvsya: "dodatky/b-symptomy.md, grep -i 'Перезавантаження при Wi-Fi', це рекомендація щодо живлення, не технічне твердження"
+
+- id: T-B-180
+  verdykt: ne_znayshov
+  dyvyvsya: "dodatky/b-symptomy.md, grep -i 'Датчик гріється', це посилання на розділ без специфічного твердження"
