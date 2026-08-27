@@ -1,0 +1,24 @@
+# Суцільний прохід — k11-nikoly.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-K11-008: **Не вмикати Flash Encryption і Secure Boot «щоб'
+  zbih: \*\*Не\s+вмикати\s+Flash\s+Encryption
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/security/flash-encryption.rst
+  cytata: 'For :ref:`flash-enc-release-mode`, the second stage bootloader sets all the eFuse
+    bits set under development mode as well as ``DIS_DOWNLOAD_MANUAL_ENCRYPT``. It also write-protects
+    the ``{IDF_TARGET_CRYPT_CNT}`` eFuse bits.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: write-protect в release-режиме означает невозможность изменения этих параметров
+    после активации

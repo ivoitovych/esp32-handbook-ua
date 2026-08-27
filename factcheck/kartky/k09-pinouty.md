@@ -58,7 +58,7 @@
 
 ---
 
-<!-- fc id:T-K09-004 sha:e2a47803 src:kartky/k09-pinouty.md:10 klas:E -->
+<!-- fc id:T-K09-004 sha:e2a47803 src:kartky/k09-pinouty.md:10 klas:A -->
 ### T-K09-004 · tablycya · рядок 10
 
 **Книга каже, дослівно:**
@@ -67,7 +67,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
+- **Дослівно з джерела:**
+  > #define MSPI_IOMUX_PIN_NUM_CLK      6
+  > #define MSPI_IOMUX_PIN_NUM_MISO     7
+  > #define MSPI_IOMUX_PIN_NUM_MOSI     8
+  > #define MSPI_IOMUX_PIN_NUM_HD       9
+  > #define MSPI_IOMUX_PIN_NUM_WP       10
+  > #define MSPI_IOMUX_PIN_NUM_CS0      11
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** піни 6-11 визначені як MSPI для флеш-пам'яті і не повинні використовуватися
+- **Прохід:** prochid-k09-pinouty
 
 ---
 

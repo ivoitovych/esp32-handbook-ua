@@ -19,7 +19,7 @@
 
 ---
 
-<!-- fc id:T-31-002 sha:6ced381a src:manual/31-freertos.md:3 klas:E -->
+<!-- fc id:T-31-002 sha:6ced381a src:manual/31-freertos.md:3 klas:A -->
 ### T-31-002 · proza · рядок 3
 
 **Книга каже, дослівно:**
@@ -28,7 +28,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+- **Дослівно з джерела:**
+  > FreeRTOS is an open source RTOS (real-time operating system) kernel that is integrated into ESP-IDF as a component. Thus, all ESP-IDF applications and many ESP-IDF components are written based on FreeRTOS.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** це не бібліотека, яку треба підключати - це середовище виконання
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -96,7 +102,7 @@
 
 ---
 
-<!-- fc id:T-31-006 sha:a70c9ecb src:manual/31-freertos.md:20 klas:F -->
+<!-- fc id:T-31-006 sha:a70c9ecb src:manual/31-freertos.md:20 klas:A -->
 ### T-31-006 · kod-ryadok · рядок 20
 
 **Книга каже, дослівно:**
@@ -105,7 +111,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+- **Дослівно з джерела:**
+  > ESP_LOGI(TAG, "Baud rate error %.1f%%. Requested: %d baud, actual: %d baud", error * 100, baud_req, baud_real);
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** ESP_LOGI макрос для логування з форматуванням
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -343,7 +355,7 @@
 
 ---
 
-<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:63 klas:E -->
+<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:63 klas:A -->
 ### T-31-020 · proza · рядок 63
 
 **Книга каже, дослівно:**
@@ -352,7 +364,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > The scheduler executes the highest priority ready-state task.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** планувальник завжди виконує найпріоритетнішу готову задачу
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -440,7 +458,7 @@
 
 ---
 
-<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:78 klas:E -->
+<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:78 klas:A -->
 ### T-31-027 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -449,7 +467,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Fixed Priority
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** правило планувальника -固定пріоритетний час планування
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -473,7 +497,7 @@
 
 ---
 
-<!-- fc id:T-31-029 sha:b6b1a89f src:manual/31-freertos.md:85 klas:E -->
+<!-- fc id:T-31-029 sha:b6b1a89f src:manual/31-freertos.md:85 klas:A -->
 ### T-31-029 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -482,7 +506,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Each task is given a constant priority upon creation. The scheduler executes the highest priority ready-state task.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** висока пріоритет означає швидку реакцію, коли задача готова, але вимагає передання керування
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -499,7 +529,7 @@
 
 ---
 
-<!-- fc id:T-31-031 sha:8ff92472 src:manual/31-freertos.md:94 klas:E -->
+<!-- fc id:T-31-031 sha:8ff92472 src:manual/31-freertos.md:94 klas:A -->
 ### T-31-031 · proza · рядок 94
 
 **Книга каже, дослівно:**
@@ -508,7 +538,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > xTaskCreatePinnedToCore creates a task with a particular core affinity
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** прив'язування задачі до ядра явно підтримується API
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -561,7 +597,7 @@
 
 ---
 
-<!-- fc id:T-31-034 sha:b67ba81b src:manual/31-freertos.md:101 klas:E -->
+<!-- fc id:T-31-034 sha:b67ba81b src:manual/31-freertos.md:101 klas:A -->
 ### T-31-034 · proza · рядок 101
 
 **Книга каже, дослівно:**
@@ -570,11 +606,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name PRO_CPU), where as the tasks handling the remainder of the application are pinned to Core 1
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Core 1 рекомендується для завдань, що не залежать від радіо і потребують точних таймінгів
+- **Прохід:** prochid-31-freertos
 
 ---
 
-<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:101 klas:E -->
+<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:101 klas:A -->
 ### T-31-035 · proza · рядок 101
 
 **Книга каже, дослівно:**
@@ -583,11 +625,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name PRO_CPU), where as the tasks handling the remainder of the application are pinned to Core 1
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Core 1 для важких та тривалих завдань щоб не заважати протокольній обробці на Core 0
+- **Прохід:** prochid-31-freertos
 
 ---
 
-<!-- fc id:T-31-036 sha:6c48d623 src:manual/31-freertos.md:105 klas:E -->
+<!-- fc id:T-31-036 sha:6c48d623 src:manual/31-freertos.md:105 klas:A -->
 ### T-31-036 · proza · рядок 105
 
 **Книга каже, дослівно:**
@@ -596,7 +644,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Although an SMP system allows threads to switch cores, there are scenarios where a thread must/should only run on a particular core. Therefore, threads in an SMP system also have a core affinity
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** двоядерність робить помилки синхронізації реальними через справжній паралелізм
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -955,7 +1009,7 @@
 
 ---
 
-<!-- fc id:T-31-055 sha:c73b142f src:manual/31-freertos.md:168 klas:E -->
+<!-- fc id:T-31-055 sha:c73b142f src:manual/31-freertos.md:168 klas:A -->
 ### T-31-055 · proza · рядок 168
 
 **Книга каже, дослівно:**
@@ -964,7 +1018,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Semaphore API
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** бінарний семафор - структура синхронізації, яка сигналить про подію
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -981,7 +1041,7 @@
 
 ---
 
-<!-- fc id:T-31-057 sha:eec8ea19 src:manual/31-freertos.md:171 klas:E -->
+<!-- fc id:T-31-057 sha:eec8ea19 src:manual/31-freertos.md:171 klas:A -->
 ### T-31-057 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -990,11 +1050,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Semaphore API
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** лічильний семафор - облік обмеженого ресурсу
+- **Прохід:** prochid-31-freertos
 
 ---
 
-<!-- fc id:T-31-058 sha:1b8c1efa src:manual/31-freertos.md:173 klas:E -->
+<!-- fc id:T-31-058 sha:1b8c1efa src:manual/31-freertos.md:173 klas:A -->
 ### T-31-058 · proza · рядок 173
 
 **Книга каже, дослівно:**
@@ -1003,11 +1069,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Event Group API
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** група подій - набір прапорців, на комбінацію яких можна чекати
+- **Прохід:** prochid-31-freertos
 
 ---
 
-<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 klas:F -->
+<!-- fc id:T-31-059 sha:599ea25d src:manual/31-freertos.md:173 klas:A -->
 ### T-31-059 · proza · рядок 173
 
 **Книга каже, дослівно:**
@@ -1016,7 +1088,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Event Group API
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** група подій зручна для очікування комбінацій умов, як Wi-Fi та SNTP разом
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -1088,7 +1166,7 @@
 
 ---
 
-<!-- fc id:T-31-063 sha:c27bfc67 src:manual/31-freertos.md:188 klas:E -->
+<!-- fc id:T-31-063 sha:c27bfc67 src:manual/31-freertos.md:188 klas:A -->
 ### T-31-063 · proza · рядок 188
 
 **Книга каже, дослівно:**
@@ -1097,7 +1175,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+- **Дослівно з джерела:**
+  > Designed for use in constrained environments during early startup, before the heap allocator or syscalls are initialized. These macros are commonly used in critical startup code or in critical sections where interrupts are disabled.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** ISR повинен бути коротким - читати, покласти в чергу, вийти
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -1247,7 +1331,7 @@
 
 ---
 
-<!-- fc id:T-31-070 sha:cee74a8d src:manual/31-freertos.md:209 klas:E -->
+<!-- fc id:T-31-070 sha:cee74a8d src:manual/31-freertos.md:209 klas:A -->
 ### T-31-070 · proza · рядок 209
 
 **Книга каже, дослівно:**
@@ -1256,22 +1340,17 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
 - **Дослівно з джерела:**
-  > Мультиметр здатен вимірювати:
-  > - Напруга DC (V) — на живленні, сигналах
-  > - Опір (Ω) — перевірка провідності, резисторів
-  > - Струм (mA, A) — малі струми в схемі
-  > 
-  > Точність: типово 1–2% від вимірювання.
-- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
-- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
-- **Прохід:** m2-66-analizator-28
+  > These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** логування в ISR - інструмент для відлагодження, а не для роботи
+- **Прохід:** prochid-31-freertos
 
 ---
 
-<!-- fc id:T-31-071 sha:f84ae609 src:manual/31-freertos.md:209 klas:E -->
+<!-- fc id:T-31-071 sha:f84ae609 src:manual/31-freertos.md:209 klas:A -->
 ### T-31-071 · proza · рядок 209
 
 **Книга каже, дослівно:**
@@ -1280,7 +1359,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+- **Дослівно з джерела:**
+  > These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** коли ISR поводиться незрозуміло, а покласти в чергу нема чого, логування - єдиний спосіб
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -1430,7 +1515,7 @@
 
 ---
 
-<!-- fc id:T-31-079 sha:77b3e0ed src:manual/31-freertos.md:230 klas:E -->
+<!-- fc id:T-31-079 sha:77b3e0ed src:manual/31-freertos.md:230 klas:A -->
 ### T-31-079 · proza · рядок 230
 
 **Книга каже, дослівно:**
@@ -1439,7 +1524,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Critical sections should be kept as short as possible
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** механічний контакт при натисканні дає десятки перемикань, але затримка в ISR неправильна
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -1539,7 +1630,7 @@
 
 ---
 
-<!-- fc id:T-31-085 sha:2bdfbaae src:manual/31-freertos.md:248 klas:E -->
+<!-- fc id:T-31-085 sha:2bdfbaae src:manual/31-freertos.md:248 klas:A -->
 ### T-31-085 · proza · рядок 248
 
 **Книга каже, дослівно:**
@@ -1548,7 +1639,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+- **Дослівно з джерела:**
+  > FreeRTOS Timer Task (Tmr Svc)
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** усі програмні таймери виконуються в одній службовій задачі
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -1604,7 +1701,7 @@
 
 ---
 
-<!-- fc id:T-31-090 sha:71179c5d src:manual/31-freertos.md:261 klas:E -->
+<!-- fc id:T-31-090 sha:71179c5d src:manual/31-freertos.md:261 klas:A -->
 ### T-31-090 · proza · рядок 261
 
 **Книга каже, дослівно:**
@@ -1613,7 +1710,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction provided by the ISA
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** спільна змінна без захисту на двох ядрах ламається одразу
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -1688,7 +1791,7 @@
 
 ---
 
-<!-- fc id:T-31-095 sha:caf51e23 src:manual/31-freertos.md:275 klas:E -->
+<!-- fc id:T-31-095 sha:caf51e23 src:manual/31-freertos.md:275 klas:A -->
 ### T-31-095 · proza · рядок 275
 
 **Книга каже, дослівно:**
@@ -1697,7 +1800,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
+- **Дослівно з джерела:**
+  > Each task is given a constant priority upon creation. The scheduler executes the highest priority ready-state task.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** висока пріоритет означає швидко відреагувати й заснути, а не постійно працювати
+- **Прохід:** prochid-31-freertos
 
 ---
 
@@ -1727,7 +1836,7 @@
 
 ---
 
-<!-- fc id:T-31-098 sha:72e699d5 src:manual/31-freertos.md:279 klas:E -->
+<!-- fc id:T-31-098 sha:72e699d5 src:manual/31-freertos.md:279 klas:A -->
 ### T-31-098 · proza · рядок 279
 
 **Книга каже, дослівно:**
@@ -1736,7 +1845,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+- **Дослівно з джерела:**
+  > These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** ніякого логування в ISR і пам'яті
+- **Прохід:** prochid-31-freertos
 
 ---
 

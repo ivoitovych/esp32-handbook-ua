@@ -190,7 +190,7 @@
 
 ---
 
-<!-- fc id:T-24-012 sha:1e071f0d src:manual/24-chuzha-proshyvka.md:24 klas:E -->
+<!-- fc id:T-24-012 sha:1e071f0d src:manual/24-chuzha-proshyvka.md:24 klas:A -->
 ### T-24-012 · proza · рядок 24
 
 **Книга каже, дослівно:**
@@ -199,7 +199,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > Each entry in the partition table has a name (label), type (app, data, or something else), subtype and the offset in flash where the partition is loaded.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** таблиця розділів надає адресу, розмір, тип кожного розділу, що дозволяє відповісти на кілька питань одразу
+- **Прохід:** prochid-24-chuzha-proshyvka
 
 ---
 
@@ -249,7 +255,7 @@
 
 ---
 
-<!-- fc id:T-24-015 sha:b66c9dc5 src:manual/24-chuzha-proshyvka.md:30 klas:F -->
+<!-- fc id:T-24-015 sha:b66c9dc5 src:manual/24-chuzha-proshyvka.md:30 klas:A -->
 ### T-24-015 · proza · рядок 30
 
 **Книга каже, дослівно:**
@@ -258,7 +264,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/spiffs.rst
+- **Дослівно з джерела:**
+  > SPIFFS is a file system intended for SPI NOR flash devices on embedded targets
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документація підтверджує, що spiffs та інші файлові системи на ESP32 зберігають файли (веб-інтерфейс, конфігурація тощо)
+- **Прохід:** prochid-24-chuzha-proshyvka
 
 ---
 
@@ -568,7 +580,7 @@
 
 ---
 
-<!-- fc id:T-24-035 sha:a83a6314 src:manual/24-chuzha-proshyvka.md:78 klas:E -->
+<!-- fc id:T-24-035 sha:a83a6314 src:manual/24-chuzha-proshyvka.md:78 klas:A -->
 ### T-24-035 · proza · рядок 78
 
 **Книга каже, дослівно:**
@@ -577,7 +589,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > Each entry in the partition table has a name (label), type (app, data, or something else), subtype and the offset in flash where the partition is loaded.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** адресу та розмір розділу можна отримати з таблиці розділів
+- **Прохід:** prochid-24-chuzha-proshyvka
 
 ---
 
@@ -929,7 +947,7 @@
 
 ---
 
-<!-- fc id:T-24-057 sha:a4f46dd1 src:manual/24-chuzha-proshyvka.md:140 klas:E -->
+<!-- fc id:T-24-057 sha:a4f46dd1 src:manual/24-chuzha-proshyvka.md:140 klas:A -->
 ### T-24-057 · proza · рядок 140
 
 **Книга каже, дослівно:**
@@ -938,7 +956,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/app_image_format.rst
+- **Дослівно з джерела:**
+  > The ``DROM`` segment of the application binary starts with the :cpp:type:`esp_app_desc_t` structure which carries specific fields describing the application
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** інформації достатньо для написання власної прошивки, яка буде супроводжуваною
+- **Прохід:** prochid-24-chuzha-proshyvka
 
 ---
 
@@ -1146,7 +1170,7 @@
 
 ---
 
-<!-- fc id:T-24-068 sha:60caff3a src:manual/24-chuzha-proshyvka.md:175 klas:E -->
+<!-- fc id:T-24-068 sha:60caff3a src:manual/24-chuzha-proshyvka.md:175 klas:A -->
 ### T-24-068 · proza · рядок 175
 
 **Книга каже, дослівно:**
@@ -1155,7 +1179,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/security/flash-encryption.rst
+- **Дослівно з джерела:**
+  > the {IDF_TARGET_NAME} will generate a random key that software cannot access or modify
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** ключ не покидає чип, а зміст не можна зрозуміти. Про залиття назад: в документації сказано про можливість рефлешення якщо є ключ, але суть про неможливість зрозуміння вмісту підтримується
+- **Прохід:** prochid-24-chuzha-proshyvka
 
 ---
 

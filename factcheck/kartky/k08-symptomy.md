@@ -116,7 +116,7 @@
 
 ---
 
-<!-- fc id:T-K08-008 sha:8b27f14c src:kartky/k08-symptomy.md:8 klas:E -->
+<!-- fc id:T-K08-008 sha:8b27f14c src:kartky/k08-symptomy.md:8 klas:A -->
 ### T-K08-008 · komirka · рядок 8
 
 **Книга каже, дослівно:**
@@ -125,7 +125,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > If the device does not support the auto download mode, you need to get into the download mode manually. To do so, press and hold the ``BOOT`` button and then press the ``RESET`` button once.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
+- **Прохід:** prochid-k08-symptomy
 
 ---
 
@@ -155,7 +161,7 @@
 
 ---
 
-<!-- fc id:T-K08-011 sha:4812427e src:kartky/k08-symptomy.md:9 klas:E -->
+<!-- fc id:T-K08-011 sha:4812427e src:kartky/k08-symptomy.md:9 klas:A -->
 ### T-K08-011 · komirka · рядок 9
 
 **Книга каже, дослівно:**
@@ -164,7 +170,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+- **Дослівно з джерела:**
+  > ESP-IDF second stage bootloader is located at the address {IDF_TARGET_CONFIG_BOOTLOADER_OFFSET_IN_FLASH} in the flash.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
+- **Прохід:** prochid-k08-symptomy
 
 ---
 
@@ -301,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-K08-019 sha:f7f26129 src:kartky/k08-symptomy.md:12 klas:E -->
+<!-- fc id:T-K08-019 sha:f7f26129 src:kartky/k08-symptomy.md:12 klas:A -->
 ### T-K08-019 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -310,11 +322,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+- **Дослівно з джерела:**
+  > A core dump is a set of software state information that is automatically saved by the panic handler when a fatal error occurs.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** boot loop може бути результатом паніки в застосунку, як описано в документації
+- **Прохід:** prochid-k08-symptomy
 
 ---
 
-<!-- fc id:T-K08-020 sha:f3d170d8 src:kartky/k08-symptomy.md:12 klas:E -->
+<!-- fc id:T-K08-020 sha:f3d170d8 src:kartky/k08-symptomy.md:12 klas:A -->
 ### T-K08-020 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -323,11 +341,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+- **Дослівно з джерела:**
+  > Panic reason: abort() was called
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** паніка в застосунку дійсно є частою причиною boot loop
+- **Прохід:** prochid-k08-symptomy
 
 ---
 
-<!-- fc id:T-K08-021 sha:9f98b9cf src:kartky/k08-symptomy.md:12 klas:E -->
+<!-- fc id:T-K08-021 sha:9f98b9cf src:kartky/k08-symptomy.md:12 klas:A -->
 ### T-K08-021 · komirka · рядок 12
 
 **Книга каже, дослівно:**
@@ -336,7 +360,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+- **Дослівно з джерела:**
+  > Backtrace: 0x400f360d:0x3ffb7e00 0x400dbf56:0x3ffb7e20
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** перший дамп після живлення розпочинає backtrace
+- **Прохід:** prochid-k08-symptomy
 
 ---
 
@@ -435,7 +465,7 @@
 
 ---
 
-<!-- fc id:T-K08-026 sha:dceae9d7 src:kartky/k08-symptomy.md:14 klas:E -->
+<!-- fc id:T-K08-026 sha:dceae9d7 src:kartky/k08-symptomy.md:14 klas:A -->
 ### T-K08-026 · komirka · рядок 14
 
 **Книга каже, дослівно:**
@@ -444,7 +474,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+- **Дослівно з джерела:**
+  > I2C uses two bidirectional open-drain lines: serial data line (SDA) and serial clock line (SCL), pulled up by resistors.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** документація підтверджує необхідність підтягування та спільної землі для I2C
+- **Прохід:** prochid-k08-symptomy
 
 ---
 
@@ -610,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-K08-035 sha:f2b297be src:kartky/k08-symptomy.md:17 klas:E -->
+<!-- fc id:T-K08-035 sha:f2b297be src:kartky/k08-symptomy.md:17 klas:A -->
 ### T-K08-035 · komirka · рядок 17
 
 **Книга каже, дослівно:**
@@ -619,7 +655,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h
+- **Дослівно з джерела:**
+  > #define MSPI_IOMUX_PIN_NUM_CLK      6
+  > #define MSPI_IOMUX_PIN_NUM_MISO     7
+  > #define MSPI_IOMUX_PIN_NUM_MOSI     8
+  > #define MSPI_IOMUX_PIN_NUM_HD       9
+  > #define MSPI_IOMUX_PIN_NUM_WP       10
+  > #define MSPI_IOMUX_PIN_NUM_CS0      11
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує, що вони зайняті флешем
+- **Прохід:** prochid-k08-symptomy
 
 ---
 

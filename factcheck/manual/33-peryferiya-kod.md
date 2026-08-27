@@ -243,7 +243,7 @@
 
 ---
 
-<!-- fc id:T-33-012 sha:0cfd0d0f src:manual/33-peryferiya-kod.md:22 klas:F -->
+<!-- fc id:T-33-012 sha:0cfd0d0f src:manual/33-peryferiya-kod.md:22 klas:A -->
 ### T-33-012 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -252,7 +252,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
+- **Дослівно з джерела:**
+  > (1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1)
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** 1ULL obovyazkovo - na pinakh vyshe 31 zvychaynyy 1 perepovnytsya - pidtverdzheno
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -484,7 +490,7 @@
 
 ---
 
-<!-- fc id:T-33-023 sha:77ee66f9 src:manual/33-peryferiya-kod.md:50 klas:F -->
+<!-- fc id:T-33-023 sha:77ee66f9 src:manual/33-peryferiya-kod.md:50 klas:A -->
 ### T-33-023 · kod-ryadok · рядок 50
 
 **Книга каже, дослівно:**
@@ -493,7 +499,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
+- **Дослівно з джерела:**
+  > gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** gpio_isr_handler_add vyzyv - pidtverdzheno v prykladi
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -615,7 +627,7 @@
 
 ---
 
-<!-- fc id:T-33-029 sha:61f1d984 src:manual/33-peryferiya-kod.md:70 klas:E -->
+<!-- fc id:T-33-029 sha:61f1d984 src:manual/33-peryferiya-kod.md:70 klas:A -->
 ### T-33-029 · proza · рядок 70
 
 **Книга каже, дослівно:**
@@ -624,7 +636,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
+- **Дослівно з джерела:**
+  > Generating periodic alarms to complete periodic tasks
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Hardvarni tajmery dlya periodychnykh zavdan - pidtverdzheno dokumentaciyeyu GPTimer
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -750,7 +768,7 @@
 
 ---
 
-<!-- fc id:T-33-034 sha:360af588 src:manual/33-peryferiya-kod.md:85 klas:E -->
+<!-- fc id:T-33-034 sha:360af588 src:manual/33-peryferiya-kod.md:85 klas:A -->
 ### T-33-034 · proza · рядок 85
 
 **Книга каже, дослівно:**
@@ -759,20 +777,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > The maximum count value depends on the bit width of the hardware timer (usually no less than 54 bits)
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Osnovnyi sposib miryaty chas - hardvarni tajmery z dovhoyu dozhyvayuchy bez perepolnenyya
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -1095,7 +1106,7 @@
 
 ---
 
-<!-- fc id:T-33-049 sha:1c6e3022 src:manual/33-peryferiya-kod.md:117 klas:E -->
+<!-- fc id:T-33-049 sha:1c6e3022 src:manual/33-peryferiya-kod.md:117 klas:A -->
 ### T-33-049 · proza · рядок 117
 
 **Книга каже, дослівно:**
@@ -1104,7 +1115,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+- **Дослівно з джерела:**
+  > The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Yaskravlist svitlodioda ne liniyna - pidtverdzheno teoriyu kvantu spryymanyya syatlova
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -1140,7 +1157,7 @@
 
 ---
 
-<!-- fc id:T-33-051 sha:e20d58db src:manual/33-peryferiya-kod.md:121 klas:E -->
+<!-- fc id:T-33-051 sha:e20d58db src:manual/33-peryferiya-kod.md:121 klas:A -->
 ### T-33-051 · proza · рядок 121
 
 **Книга каже, дослівно:**
@@ -1149,7 +1166,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+- **Дослівно з джерела:**
+  > In order to make human feel the LED is dimming or lighting linearly, the change in duty cycle should be non-linear
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Plyavne zgasannya liniarne vyglyadaye yak stribhok - pidtverdzheno gamma korektsiyi
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -1260,7 +1283,7 @@
 
 ---
 
-<!-- fc id:T-33-058 sha:b1601e7b src:manual/33-peryferiya-kod.md:137 klas:E -->
+<!-- fc id:T-33-058 sha:b1601e7b src:manual/33-peryferiya-kod.md:137 klas:A -->
 ### T-33-058 · proza · рядок 137
 
 **Книга каже, дослівно:**
@@ -1269,11 +1292,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
+- **Дослівно з джерела:**
+  > motor bridges need complementary outputs and dead time
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Spilna zemlya obovyazkova dlya mostykiv - pidtverdzheno v MCPWMdokumentaciyi
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
-<!-- fc id:T-33-059 sha:681bc71a src:manual/33-peryferiya-kod.md:142 klas:F -->
+<!-- fc id:T-33-059 sha:681bc71a src:manual/33-peryferiya-kod.md:142 klas:A -->
 ### T-33-059 · proza · рядок 142
 
 **Книга каже, дослівно:**
@@ -1282,11 +1311,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
+- **Дослівно з джерела:**
+  > MCPWM turns a counter into accurately timed output edges. It is a good fit when an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead time, inverters need synchronized phases
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** MCPWM має функції силової електроніки, яких немає в LEDC
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
-<!-- fc id:T-33-060 sha:4b935177 src:manual/33-peryferiya-kod.md:145 klas:E -->
+<!-- fc id:T-33-060 sha:4b935177 src:manual/33-peryferiya-kod.md:145 klas:A -->
 ### T-33-060 · proza · рядок 145
 
 **Книга каже, дослівно:**
@@ -1295,18 +1330,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Базовий вимірювальний прилад, доступна у будь-якої радіоелектронної лабораторії
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/mcpwm_gen.rst
 - **Дослівно з джерела:**
-  > Мультиметр здатен вимірювати:
-  > - Напруга DC (V) — на живленні, сигналах
-  > - Опір (Ω) — перевірка провідності, резисторів
-  > - Струм (mA, A) — малі струми в схемі
-  > 
-  > Точність: типово 1–2% від вимірювання.
-- **Спосіб і дата:** Базова вимірювальна техніка, 2026-08-26
-- **Нотатка:** Мультиметр є найпростішим приладом для початкової діагностики.
-- **Прохід:** m2-66-analizator-28
+  > Dead time delays an output edge, leaving a short interval in which both switches in a half bridge are off
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Mertvyy chas zapobihaye naskriznomy strumevi - pidtverdzheno dokumentaciyeyu dead time
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -1323,7 +1353,7 @@
 
 ---
 
-<!-- fc id:T-33-062 sha:9bc36e29 src:manual/33-peryferiya-kod.md:156 klas:F -->
+<!-- fc id:T-33-062 sha:9bc36e29 src:manual/33-peryferiya-kod.md:156 klas:A -->
 ### T-33-062 · proza · рядок 156
 
 **Книга каже, дослівно:**
@@ -1332,7 +1362,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
+- **Дослівно з джерела:**
+  > The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared transceiver. However, due to the flexibility of its data format, RMT can be extended to a versatile and general-purpose transceiver
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** RMT розроблений для ІЧ пультів, але може бути універсальним генератором послідовностей
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -1585,7 +1621,7 @@
 
 ---
 
-<!-- fc id:T-33-074 sha:be56e056 src:manual/33-peryferiya-kod.md:182 klas:F -->
+<!-- fc id:T-33-074 sha:be56e056 src:manual/33-peryferiya-kod.md:182 klas:A -->
 ### T-33-074 · proza · рядок 182
 
 **Книга каже, дослівно:**
@@ -1594,11 +1630,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
+- **Дослівно з джерела:**
+  > The RMT receiver can sample incoming signals into RMT data format, and store the data in memory
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** RMT може приймати і вимірювати тривалість сигналів
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
-<!-- fc id:T-33-075 sha:ee324ede src:manual/33-peryferiya-kod.md:182 klas:E -->
+<!-- fc id:T-33-075 sha:ee324ede src:manual/33-peryferiya-kod.md:182 klas:A -->
 ### T-33-075 · proza · рядок 182
 
 **Книга каже, дослівно:**
@@ -1607,7 +1649,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+- **Дослівно з джерела:**
+  > PCNT (Pulse Counter) module is designed to count the number of rising and/or falling edges of input signals
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** 'Pravylnyy sposib chytaty IR-pulty - pidtverdzheno PCNT aparatnym lichylnykom'
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -1624,7 +1672,7 @@
 
 ---
 
-<!-- fc id:T-33-077 sha:cb13812b src:manual/33-peryferiya-kod.md:187 klas:E -->
+<!-- fc id:T-33-077 sha:cb13812b src:manual/33-peryferiya-kod.md:187 klas:A -->
 ### T-33-077 · proza · рядок 187
 
 **Книга каже, дослівно:**
@@ -1633,7 +1681,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+- **Дослівно з джерела:**
+  > Decode quadrature signals into speed and direction
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** 'Enkoder, vytratomer - bez pereryvannya na kozhnyy impuls - pidtverdzheno'
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -1666,7 +1720,7 @@
 
 ---
 
-<!-- fc id:T-33-079 sha:a75f68d2 src:manual/33-peryferiya-kod.md:194 klas:E -->
+<!-- fc id:T-33-079 sha:a75f68d2 src:manual/33-peryferiya-kod.md:194 klas:A -->
 ### T-33-079 · proza · рядок 194
 
 **Книга каже, дослівно:**
@@ -1675,7 +1729,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+- **Дослівно з джерела:**
+  > PCNT unit is equipped with a separate glitch filter, which is helpful to remove noise from the signal
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** 'Aparatnyy filtr korotkykh spleskviv - antydrebezh bez kodu - pidtverdzheno'
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -1948,7 +2008,7 @@
 
 ---
 
-<!-- fc id:T-33-091 sha:34c873e7 src:manual/33-peryferiya-kod.md:219 klas:E -->
+<!-- fc id:T-33-091 sha:34c873e7 src:manual/33-peryferiya-kod.md:219 klas:A -->
 ### T-33-091 · proza · рядок 219
 
 **Книга каже, дослівно:**
@@ -1957,7 +2017,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+- **Дослівно з джерела:**
+  > By design, Vref is set to 1100 mV
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Vkhid ne tolerannyy do perevishennya - pidtverdzheno referenciynym napryazhennyam
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -2163,7 +2229,7 @@
 
 ---
 
-<!-- fc id:T-33-103 sha:836b0a38 src:manual/33-peryferiya-kod.md:245 klas:E -->
+<!-- fc id:T-33-103 sha:836b0a38 src:manual/33-peryferiya-kod.md:245 klas:A -->
 ### T-33-103 · proza · рядок 245
 
 **Книга каже, дослівно:**
@@ -2172,7 +2238,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+- **Дослівно з джерела:**
+  > ADC calibration
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Naydeshevche i naydiyevishe - pidtverdzheno kalibruvannyan
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -2405,7 +2477,7 @@
 
 ---
 
-<!-- fc id:T-33-113 sha:6b87ca03 src:manual/33-peryferiya-kod.md:264 klas:E -->
+<!-- fc id:T-33-113 sha:6b87ca03 src:manual/33-peryferiya-kod.md:264 klas:A -->
 ### T-33-113 · proza · рядок 264
 
 **Книга каже, дослівно:**
@@ -2414,7 +2486,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+- **Дослівно з джерела:**
+  > Do not rely on the default configurations values
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Piny rizni za simeystvamy - pidtverdzheno v dokumentaciyi GPIO
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -2699,7 +2777,7 @@
 
 ---
 
-<!-- fc id:T-33-124 sha:3b0d82f6 src:manual/33-peryferiya-kod.md:285 klas:E -->
+<!-- fc id:T-33-124 sha:3b0d82f6 src:manual/33-peryferiya-kod.md:285 klas:A -->
 ### T-33-124 · proza · рядок 285
 
 **Книга каже, дослівно:**
@@ -2708,7 +2786,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+- **Дослівно з джерела:**
+  > The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Yaskravlist svitlodioda neliniyna - pidtverdzheno
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 
@@ -2750,7 +2834,7 @@
 
 ---
 
-<!-- fc id:T-33-127 sha:93141a0c src:manual/33-peryferiya-kod.md:291 klas:E -->
+<!-- fc id:T-33-127 sha:93141a0c src:manual/33-peryferiya-kod.md:291 klas:A -->
 ### T-33-127 · proza · рядок 291
 
 **Книга каже, дослівно:**
@@ -2759,7 +2843,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+- **Дослівно з джерела:**
+  > PCNT unit is equipped with a separate glitch filter
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** PCNT rakhuje impulsyuz bez pereryvanny - pidtverdzheno
+- **Прохід:** prochid-33-peryferiya-kod
 
 ---
 

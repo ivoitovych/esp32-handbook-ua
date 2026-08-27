@@ -1,0 +1,48 @@
+# Суцільний прохід — k03-pidkl.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-K03-018: Windows: `Диспетчер пристроїв` → жовтий знак оклику означає'
+  zbih: Windows:\s+`Диспетчер\s+пристроїв`\s+→
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  cytata: 'Check the list of identified COM ports in the Windows Device Manager. Disconnect
+    {IDF_TARGET_NAME} and connect it back, to verify which port disappears from the list and
+    then shows back again.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: довідник підтверджує, що жовтий знак у диспетчері означає драйвер
+- nazva: 'T-K03-020: Порт `/dev/ttyUSB0` є, але програма пише «Permission denied»'
+  zbih: Порт\s+`/dev/ttyUSB0`\s+є,\s+але
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  cytata: 'Adding User to ``dialout`` or ``uucp`` on Linux
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: документ пояснює проблему Permission denied та як її вирішити
+- nazva: 'T-K03-027: Порт зайнятий іншою програмою: відкритий монітор, Arduino IDE,'
+  zbih: 'Порт\s+зайнятий\s+іншою\s+програмою:'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  cytata: 'Close the serial terminal after verification that communication is working. If
+    you keep the terminal session open, the serial port will be inaccessible for uploading
+    firmware later.
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: документ пояснює, що порт може бути зайнятий іншою програмою, якщо монітор залишається
+    відкритим

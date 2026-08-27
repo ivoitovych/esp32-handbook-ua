@@ -108,7 +108,7 @@
 
 ---
 
-<!-- fc id:T-09-007 sha:374a4078 src:manual/09-pidklyuchennya.md:13 klas:E -->
+<!-- fc id:T-09-007 sha:374a4078 src:manual/09-pidklyuchennya.md:13 klas:A -->
 ### T-09-007 · proza · рядок 13
 
 **Книга каже, дослівно:**
@@ -117,19 +117,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** UART протокол: послідовна передача 8 біт за заданою швидкістю
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
-  > Якщо швидкість в аналізаторі або приймачу неправильна:
-  > - Замість читаних символів видно "сміття" — неправильні символи
-  > - Але сміття має стабільну структуру (завжди той же гарлиць символів)
-  > - Це означає: протокол дотримується, але швидкість неправильна
-  > 
-  > Поправка: встановити правильну швидкість в аналізаторі, і текст стане
-  > читаним.
-- **Спосіб і дата:** UART діагностика та спостереження, 2026-08-26
-- **Нотатка:** Це швидкий спосіб виявити помилку швидкості — сміття з структурою означає правильний протокол, але неправильну швидкість.
-- **Прохід:** m2-66-analizator-28
+  > Below is the list of USB to serial converter chips installed on most of the {IDF_TARGET_NAME} boards produced by Espressif
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Document confirms existence of USB-to-UART bridge chips as separate converters
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 
@@ -159,7 +153,7 @@
 
 ---
 
-<!-- fc id:T-09-010 sha:9f305552 src:manual/09-pidklyuchennya.md:22 klas:F -->
+<!-- fc id:T-09-010 sha:9f305552 src:manual/09-pidklyuchennya.md:22 klas:A -->
 ### T-09-010 · proza · рядок 22
 
 **Книга каже, дослівно:**
@@ -168,7 +162,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > For boards with an installed USB-to-UART bridge, the connection between the personal computer and the bridge is USB and between the bridge and {IDF_TARGET_NAME} is UART.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** говорить про те, що міст створює підключення, а не ESP32
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 
@@ -651,7 +651,7 @@
 
 ---
 
-<!-- fc id:T-09-037 sha:09e91692 src:manual/09-pidklyuchennya.md:57 klas:E -->
+<!-- fc id:T-09-037 sha:09e91692 src:manual/09-pidklyuchennya.md:57 klas:A -->
 ### T-09-037 · proza · рядок 57
 
 **Книга каже, дослівно:**
@@ -660,7 +660,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > Under normal circumstances, the drivers should be bundled with an operating system and automatically installed upon connecting the board to the PC.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Document confirms Linux and other systems typically have drivers built in
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 
@@ -728,7 +734,7 @@
 
 ---
 
-<!-- fc id:T-09-042 sha:95e4b03d src:manual/09-pidklyuchennya.md:68 klas:E -->
+<!-- fc id:T-09-042 sha:95e4b03d src:manual/09-pidklyuchennya.md:68 klas:A -->
 ### T-09-042 · proza · рядок 68
 
 **Книга каже, дослівно:**
@@ -737,7 +743,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > The {IDF_TARGET_NAME} supports the USB peripheral. In this case, the USB-to-UART bridge is not needed and the device can be flashed directly.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Document confirms bridge is not needed for chips with USB support
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 
@@ -767,7 +779,7 @@
 
 ---
 
-<!-- fc id:T-09-045 sha:42f0a8ae src:manual/09-pidklyuchennya.md:77 klas:E -->
+<!-- fc id:T-09-045 sha:42f0a8ae src:manual/09-pidklyuchennya.md:77 klas:A -->
 ### T-09-045 · proza · рядок 77
 
 **Книга каже, дослівно:**
@@ -776,20 +788,13 @@
 
 **Доказ**
 
-- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
-- **Джерело:** Аналіз поведінки GPIO при старті мікроконтролера
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
-  > При включенні платі:
-  > 1. Мікроконтролер почне завантажуватися
-  > 2. GPIO ще не налаштований (це відбувається під час ініціалізації ПЗ)
-  > 3. Лінія GPIO знаходиться в невизначеному стані (паразитна ємність + шум)
-  > 4. MOSFET затвор отримує невідомий рівень напруги
-  > 
-  > Результат: навантаження може вмкнутися на мілісекунди до того, як GPIO
-  > буде налаштований в LOW.
-- **Спосіб і дата:** Аналіз процесу завантаження мікроконтролера, документація ESP32, 2026-08-26
-- **Нотатка:** Це видимість на реальні проблеми, якщо конструктор не розглядає етап ініціалізації.
-- **Прохід:** m2-65-elektronika-05
+  > The {IDF_TARGET_NAME} supports only *USB CDC and JTAG*.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Document confirms USB CDC standard support built into devices
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 
@@ -1166,7 +1171,7 @@
 
 ---
 
-<!-- fc id:T-09-069 sha:1a6e4d7e src:manual/09-pidklyuchennya.md:125 klas:E -->
+<!-- fc id:T-09-069 sha:1a6e4d7e src:manual/09-pidklyuchennya.md:125 klas:A -->
 ### T-09-069 · proza · рядок 125
 
 **Книга каже, дослівно:**
@@ -1175,11 +1180,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > Make sure you re-login to enable read and write permissions for the serial port.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** говорить про необхідність перезайти для застосування прав доступу
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 
-<!-- fc id:T-09-070 sha:59e49521 src:manual/09-pidklyuchennya.md:128 klas:F -->
+<!-- fc id:T-09-070 sha:59e49521 src:manual/09-pidklyuchennya.md:128 klas:A -->
 ### T-09-070 · proza · рядок 128
 
 **Книга каже, дослівно:**
@@ -1188,7 +1199,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > on Arch Linux this is done by adding the user to ``uucp`` group
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** говорить про групу uucp на Arch Linux
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 
@@ -1274,7 +1291,7 @@
 
 ---
 
-<!-- fc id:T-09-077 sha:daf30df3 src:manual/09-pidklyuchennya.md:148 klas:E -->
+<!-- fc id:T-09-077 sha:daf30df3 src:manual/09-pidklyuchennya.md:148 klas:A -->
 ### T-09-077 · proza · рядок 148
 
 **Книга каже, дослівно:**
@@ -1283,7 +1300,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > Close the serial terminal after verification that communication is working. If you keep the terminal session open, the serial port will be inaccessible for uploading firmware later.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** говорить про те, що порт неможливо використовувати, якщо його вже використовує інший процес
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 
@@ -1408,7 +1431,7 @@
 
 ---
 
-<!-- fc id:T-09-087 sha:9ecc9948 src:manual/09-pidklyuchennya.md:171 klas:E -->
+<!-- fc id:T-09-087 sha:9ecc9948 src:manual/09-pidklyuchennya.md:171 klas:A -->
 ### T-09-087 · proza · рядок 171
 
 **Книга каже, дослівно:**
@@ -1417,7 +1440,15 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+- **Дослівно з джерела:**
+  > If there is no log output, check
+  > - if the required power is supplied to {IDF_TARGET_NAME}
+  > - if the board was reset after starting the terminal program
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** говорить про живлення як одну з причин проблем
+- **Прохід:** prochid-09-pidklyuchennya
 
 ---
 

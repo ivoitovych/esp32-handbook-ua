@@ -1,0 +1,232 @@
+# Суцільний прохід — 33-peryferiya-kod.
+#
+# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+- nazva: 'T-33-012: `1ULL` обов''язково: на пінах вище 31 звичайний `1`'
+  zbih: '`1ULL`\s+обов''язково:\s+на\s+пінах'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
+  cytata: '(1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1)
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: 1ULL obovyazkovo - na pinakh vyshe 31 zvychaynyy 1 perepovnytsya - pidtverdzheno
+- nazva: 'T-33-023: gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);'
+  zbih: gpio_isr_handler_add\(GPIO_NUM_5,\s+isr,\s+\(void\s+\*\)GPIO_NUM_5\);
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
+  cytata: 'gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: gpio_isr_handler_add vyzyv - pidtverdzheno v prykladi
+- nazva: 'T-33-029: Для більшості періодичних задач цього досить:'
+  zbih: Для\s+більшості\s+періодичних\s+задач
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
+  cytata: 'Generating periodic alarms to complete periodic tasks
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Hardvarni tajmery dlya periodychnykh zavdan - pidtverdzheno dokumentaciyeyu GPTimer
+- nazva: 'T-33-034: Це основний спосіб міряти час: переповнення не станеться'
+  zbih: Це\s+основний\s+спосіб\s+міряти
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
+  cytata: 'The maximum count value depends on the bit width of the hardware timer (usually
+    no less than 54 bits)
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Osnovnyi sposib miryaty chas - hardvarni tajmery z dovhoyu dozhyvayuchy bez perepolnenyya
+- nazva: 'T-33-049: Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення.'
+  zbih: Яскравість\s+світлодіода\s+\*\*не\s+лінійна\*\*
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: 'The luminance perceived by human eyes does not have a linear relationship with
+    the PWM duty cycle
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Yaskravlist svitlodioda ne liniyna - pidtverdzheno teoriyu kvantu spryymanyya syatlova
+- nazva: 'T-33-051: Плавне згасання, зроблене лінійно, виглядає як різкий стрибок'
+  zbih: Плавне\s+згасання,\s+зроблене\s+лінійно,
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: 'In order to make human feel the LED is dimming or lighting linearly, the change
+    in duty cycle should be non-linear
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Plyavne zgasannya liniarne vyglyadaye yak stribhok - pidtverdzheno gamma korektsiyi
+- nazva: 'T-33-058: Спільна земля обов''язкова (розділ 48).'
+  zbih: Спільна\s+земля\s+обов'язкова\s+\(розділ
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
+  cytata: 'motor bridges need complementary outputs and dead time
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Spilna zemlya obovyazkova dlya mostykiv - pidtverdzheno v MCPWMdokumentaciyi
+- nazva: 'T-33-060: - **мертвий час** між верхнім і нижнім плечем'
+  zbih: \-\s+\*\*мертвий\s+час\*\*\s+між
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/mcpwm_gen.rst
+  cytata: 'Dead time delays an output edge, leaving a short interval in which both switches
+    in a half bridge are off
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Mertvyy chas zapobihaye naskriznomy strumevi - pidtverdzheno dokumentaciyeyu dead
+    time
+- nazva: 'T-33-075: Це правильний спосіб читати ІЧ-пульти й датчики з'
+  zbih: Це\s+правильний\s+спосіб\s+читати
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+  cytata: 'PCNT (Pulse Counter) module is designed to count the number of rising and/or falling
+    edges of input signals
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: '''Pravylnyy sposib chytaty IR-pulty - pidtverdzheno PCNT aparatnym lichylnykom'''
+- nazva: 'T-33-077: Енкодер, витратомір, лічильник обертів — усе це не'
+  zbih: Енкодер,\s+витратомір,\s+лічильник\s+обертів\s+—\s+усе\s+це\s+не\s+потребує\s+переривання
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+  cytata: 'Decode quadrature signals into speed and direction
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: '''Enkoder, vytratomer - bez pereryvannya na kozhnyy impuls - pidtverdzheno'''
+- nazva: 'T-33-079: PCNT уміє й апаратний фільтр коротких сплесків —'
+  zbih: PCNT\s+уміє\s+й\s+апаратний
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+  cytata: 'PCNT unit is equipped with a separate glitch filter, which is helpful to remove
+    noise from the signal
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: '''Aparatnyy filtr korotkykh spleskviv - antydrebezh bez kodu - pidtverdzheno'''
+- nazva: 'T-33-091: Пам''ятайте: вхід не толерантний до перевищення — понад'
+  zbih: Пам'ятайте:\s+вхід\s+не\s+толерантний
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  cytata: 'By design, Vref is set to 1100 mV
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Vkhid ne tolerannyy do perevishennya - pidtverdzheno referenciynym napryazhennyam
+- nazva: 'T-33-103: Найдешевше і найдієвіше. 2.'
+  zbih: Найдешевше\s+і\s+найдієвіше\.\s+2\.
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  cytata: 'ADC calibration
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Naydeshevche i naydiyevishe - pidtverdzheno kalibruvannyan
+- nazva: 'T-33-113: Піни **різні** за сімействами:'
+  zbih: 'Піни\s+\*\*різні\*\*\s+за\s+сімействами:'
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: 'Do not rely on the default configurations values
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Piny rizni za simeystvamy - pidtverdzheno v dokumentaciyi GPIO
+- nazva: 'T-33-124: Яскравість світлодіода нелінійна щодо коефіцієнта заповнення.'
+  zbih: Яскравість\s+світлодіода\s+нелінійна\s+щодо
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: 'The luminance perceived by human eyes does not have a linear relationship with
+    the PWM duty cycle
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: Yaskravlist svitlodioda neliniyna - pidtverdzheno
+- nazva: 'T-33-127: PCNT рахує імпульси без переривань і має апаратний'
+  zbih: PCNT\s+рахує\s+імпульси\s+без\s+переривань\s+і
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+  cytata: 'PCNT unit is equipped with a separate glitch filter
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: PCNT rakhuje impulsyuz bez pereryvanny - pidtverdzheno
+- nazva: 'T-33-059: [[classic]] [[S3]] MCPWM зроблений для силової електроніки й'
+  zbih: \[\[classic\]\]\s+\[\[S3\]\]\s+MCPWM\s+зроблений
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
+  cytata: 'MCPWM turns a counter into accurately timed output edges. It is a good fit when
+    an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead
+    time, inverters need synchronized phases
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: MCPWM має функції силової електроніки, яких немає в LEDC
+- nazva: 'T-33-062: RMT задумувався для інфрачервоних пультів, а виявився універсальним'
+  zbih: RMT\s+задумувався\s+для\s+інфрачервоних
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
+  cytata: 'The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared
+    transceiver. However, due to the flexibility of its data format, RMT can be extended to
+    a versatile and general-purpose transceiver
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: RMT розроблений для ІЧ пультів, але може бути універсальним генератором послідовностей
+- nazva: 'T-33-074: RMT уміє й приймати — вимірювати тривалість вхідних'
+  zbih: RMT\s+уміє\s+й\s+приймати
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
+  cytata: 'The RMT receiver can sample incoming signals into RMT data format, and store the
+    data in memory
+
+    '
+  sposib: 'Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком
+    машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна»,
+    а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.'
+  notatka: RMT може приймати і вимірювати тривалість сигналів
