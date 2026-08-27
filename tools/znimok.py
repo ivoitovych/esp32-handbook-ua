@@ -1,0 +1,111 @@
+#!/usr/bin/env python3
+"""Знімок прив'язок: до яких одиниць чіпляється кожен доказ **сьогодні**.
+
+## Навіщо це існує
+
+Формат картки міняється: одиниця перестане бути рендером
+(`BME280 · Адреса → 0x76`) і стане дослівним рядком книги
+(`| BME280 | `0x76`, `0x77` | … |`).
+
+Взірці `zbih` писані під **рендер** — усі 1337 доказів, з них 1265
+чіпляють саме комірки. Після зміни формату жоден із них не збігся б.
+
+Але доказ прив'язаний не до **тексту**, а до **одиниці**. Текст —
+лише спосіб її назвати. Тож якщо зафіксувати, яку одиницю кожен доказ
+називає **зараз**, то після зміни можна перебудувати взірець із нового
+тексту тієї самої одиниці — і **довести**, що прив'язка та сама.
+
+> Робота не переробляється — вона переїжджає. І переїзд перевірний:
+> знімок до й знімок після мають збігтися одиниця в одиницю.
+
+## Чому знімок мусить бути **до**, а не після
+
+Після зміни формату старі взірці не збігаються ні з чим, і питати
+«а що воно чіпляло?» буде нікого. Знімок — єдиний носій цього знання,
+і він мусить лежати в git до того, як щось зміниться.
+
+Це те саме, на чому я вже спіймався сьогодні: пересадив хвилю, стерши
+файли попередньої, і 335 доказів стали 324. Тоді врятував `git`. Тут
+рятувати буде нічому — рендер зникне з дерева зовсім.
+
+    tools/znimok.py <куди.json>          зняти
+    tools/znimok.py <куди.json> --zvirty звірити з поточним станом
+"""
+from __future__ import annotations
+
+import argparse
+import collections
+import json
+import re
+import sys
+from pathlib import Path
+
+import yaml
+
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "tools"))
+
+
+def zibraty() -> dict[str, list[str]]:
+    """Ключ — `файл-доказу::назва`, значення — впорядковані `id` одиниць."""
+    import vybirka
+
+    odyn = [u for k in "ABCDEFGK" for u in vybirka.odynyci(k)]
+    zv: dict[str, list[str]] = {}
+    for f in sorted((ROOT / "factcheck" / "dokazy").glob("*.yaml")):
+        try:
+            z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
+        except Exception:
+            continue
+        for i, r in enumerate(z):
+            if not isinstance(r, dict):
+                continue
+            vz = str(r.get("zbih", ""))
+            try:
+                rx = re.compile(vz)
+            except re.error:
+                continue
+            # Ключ містить порядковий номер: назви в межах файлу можуть
+            # повторюватися, і без номера два докази злилися б в один.
+            klyuch = f"{f.name}::{i}::{str(r.get('nazva'))[:60]}"
+            zv[klyuch] = sorted(u["id"] for u in odyn if rx.search(u["tekst"]))
+    return zv
+
+
+def main() -> int:
+    p = argparse.ArgumentParser()
+    p.add_argument("fayl", type=Path)
+    p.add_argument("--zvirty", action="store_true")
+    a = p.parse_args()
+
+    teper = zibraty()
+    if not a.zvirty:
+        a.fayl.write_text(
+            json.dumps(teper, ensure_ascii=False, indent=1, sort_keys=True),
+            encoding="utf-8")
+        pryv = sum(len(v) for v in teper.values())
+        pusti = sum(1 for v in teper.values() if not v)
+        print(f"знімок: доказів {len(teper)}, прив'язок {pryv}, "
+              f"з них холостих {pusti} → {a.fayl}")
+        return 0
+
+    bulo = json.loads(a.fayl.read_text(encoding="utf-8"))
+    znykly = [k for k in bulo if k not in teper]
+    novi = [k for k in teper if k not in bulo]
+    zminyly = {k: (bulo[k], teper[k]) for k in bulo
+               if k in teper and bulo[k] != teper[k]}
+    vtracheni = {k: sorted(set(v[0]) - set(v[1]))
+                 for k, v in zminyly.items() if set(v[0]) - set(v[1])}
+
+    print(f"доказів у знімку {len(bulo)}, зараз {len(teper)}")
+    print(f"  зникло записів     {len(znykly)}")
+    print(f"  нових записів      {len(novi)}")
+    print(f"  змінили прив'язку  {len(zminyly)}")
+    print(f"  **втратили одиниці** {len(vtracheni)}")
+    for k, v in list(vtracheni.items())[:12]:
+        print(f"     ✗ {k[:70]}\n        загубив: {', '.join(v[:6])}")
+    return 1 if (vtracheni or znykly) else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
