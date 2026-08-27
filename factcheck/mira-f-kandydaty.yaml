@@ -1,150 +1,22 @@
 # Кандидати з міри класу `F`. **Не реєстр.**
-- nazva: T-03-036
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/external-ram.rst
-  cytata: External RAM cannot be used as a place to store DMA transaction descriptors
-    or as a buffer for a DMA transfer to read from or write into. Therefore when External
-    RAM is enabled, any buffer that will be used in combination with DMA must be allocated
-    using heap_caps_malloc(size, MALLOC_CAP_DMA | MALLOC_CAP_INTERNAL)
+- nazva: T-01-031
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/Kconfig
+  cytata: This option will allow the ADC calibration component to use Lookup Tables
+    to correct for non-linear behavior in 11db attenuation.
   verdykt: pidtverdzheno
-  zvidky: G1-p5
-- nazva: T-03-062
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp.rst
-  cytata: The Ultra Low Power (ULP) coprocessor is designed to perform tasks while
-    the main CPU is in deep sleep mode, allowing for power savings and extended battery
-    life in applications... It can also wake up the main CPU when specific conditions
-    are met, such as when a sensor reading exceeds a predefined threshold
+  zvidky: H1-p1
+- nazva: T-01-041
+  dzherelo: https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/README.md
+  cytata: wireless support when building for `PICO_BOARD=pico_w`
   verdykt: pidtverdzheno
-  zvidky: G1-p5
-- nazva: T-K10-001
-  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/CHANGELOG.md
-  cytata: "The .py suffix is deprecated for the following scripts:\n  - esptool\n\
-    \  - espefuse\n  - espsecure\n  - esp_rfc2217_server\n"
-  verdykt: pidtverdzheno
-  zvidky: G10-p48
-- nazva: T-04-095
+  zvidky: H1-p1
+- nazva: T-02-021
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h
-  cytata: '#define SOC_I2S_SUPPORTED               1
-
-    '
+  cytata: '#define SOC_CPU_CORES_NUM               (1U)'
   verdykt: pidtverdzheno
-  zvidky: G2-p6
-- nazva: T-04-117
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
-  cytata: '#define SOC_USB_OTG_SUPPORTED           1
-
-    '
+  zvidky: H1-p2
+- nazva: T-02-023
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h
+  cytata: '#define SOC_CPU_CORES_NUM               (1U)'
   verdykt: pidtverdzheno
-  zvidky: G2-p6
-- nazva: T-11-061
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
-  cytata: 'This file will be used when creating a new config from scratch, or when
-    any new config value hasn''t yet been set in the ``sdkconfig`` file.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G2-p9
-- nazva: T-11-066
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
-  cytata: '"main" directory is a special component that contains source code for the
-    project itself.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G2-p9
-- nazva: T-11-113
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
-  cytata: 'REQUIRES is not actually required, but it is very often required to declare
-    what other components this component will use.
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G2-p9
-- nazva: T-35-049
-  dzherelo: https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_TCA9548A/main/README.rst
-  cytata: 'for channel in range(8):'
-  verdykt: pidtverdzheno
-  zvidky: G5-p21
-- nazva: T-41-040
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/bluetooth/index.rst
-  cytata: 'ESP-IDF supports two host stacks: **Bluedroid** and **NimBLE**.'
-  verdykt: pidtverdzheno
-  zvidky: G5-p25
-- nazva: T-41-043
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/bluetooth/index.rst
-  cytata: '**NimBLE**: A lightweight stack for Bluetooth LE only. Ideal for resource-constrained
-    applications due to smaller code size and memory usage.'
-  verdykt: pidtverdzheno
-  zvidky: G5-p25
-- nazva: T-63-041
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/sockets/tcp_server/main/tcp_server.c
-  cytata: 'err = listen(listen_sock, 1);
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G8-p36
-- nazva: T-A-013
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h
-  cytata: '#define ADC2_GPIO2_CHANNEL      2
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G8-p36
-- nazva: T-A-034
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h
-  cytata: '#define ADC2_GPIO14_CHANNEL     6
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G8-p36
-- nazva: T-A-038
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h
-  cytata: '#define ADC2_GPIO15_CHANNEL     3
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G8-p37
-- nazva: T-A-058
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h
-  cytata: '#define ADC2_GPIO0_CHANNEL      1
-
-    #define ADC2_GPIO2_CHANNEL      2
-
-    #define ADC2_GPIO4_CHANNEL      0
-
-    #define ADC2_GPIO12_CHANNEL     5
-
-    #define ADC2_GPIO13_CHANNEL     4
-
-    #define ADC2_GPIO14_CHANNEL     6
-
-    #define ADC2_GPIO15_CHANNEL     3
-
-    #define ADC2_GPIO25_CHANNEL     8
-
-    #define ADC2_GPIO26_CHANNEL     9
-
-    #define ADC2_GPIO27_CHANNEL     7
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G8-p37
-- nazva: T-B-071
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_rom/esp32/include/esp32/rom/rtc.h
-  cytata: 'RTCWDT_BROWN_OUT_RESET = 15,    /**<15, Reset when the vdd voltage is not
-    stable*/
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G8-p38
-- nazva: T-B-189
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
-  cytata: '#define SOC_WIFI_SUPPORTED          1
-
-    '
-  verdykt: pidtverdzheno
-  zvidky: G8-p38
-- nazva: T-C-052
-  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
-  cytata: "* - Ctrl + ]\n  - Exit the program\n"
-  verdykt: pidtverdzheno
-  zvidky: G8-p40
+  zvidky: H1-p2
