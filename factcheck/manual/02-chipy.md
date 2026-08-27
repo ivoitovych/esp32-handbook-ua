@@ -1,6 +1,6 @@
 # Фактчекінг: `manual/02-chipy.md`
 
-Одиниць твердження: **148**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
+Одиниць твердження: **150**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
 Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
 
@@ -251,7 +251,7 @@
 
 ---
 
-<!-- fc id:T-02-018 sha:0cb91d4a src:manual/02-chipy.md:32 klas:F -->
+<!-- fc id:T-02-018 sha:0cb91d4a src:manual/02-chipy.md:32 klas:C -->
 ### T-02-018 · komirka · рядок 32
 
 **Книга каже, дослівно:**
@@ -260,7 +260,12 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Джерело:** ESP32 dual-core processor specifications
+- **Спосіб і дата:** Розбір черги 2026-08-27. Документ названо розбором як конкретну деталь або стандарт із номером; звідси він недосяжний (даташити мікросхем на GitHub не лежать, платні стандарти — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
+- **Що шукати в джерелі:** ESP32 dual-core processor specifications
+- **Нотатка:** цитати немає; що саме шукати — у полі `shukaty`
+- **Прохід:** cherga-c-02-chipy
 
 ---
 
@@ -653,7 +658,7 @@
 
 ---
 
-<!-- fc id:T-02-042 sha:d887dabc src:manual/02-chipy.md:36 klas:F -->
+<!-- fc id:T-02-042 sha:d887dabc src:manual/02-chipy.md:36 klas:A -->
 ### T-02-042 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -662,11 +667,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_WIFI_SUPPORTED          1
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** ESP32 has WiFi support defined in SoC capabilities
+- **Прохід:** klas-f-02-chipy
 
 ---
 
-<!-- fc id:T-02-043 sha:8de930a4 src:manual/02-chipy.md:36 klas:F -->
+<!-- fc id:T-02-043 sha:8de930a4 src:manual/02-chipy.md:36 klas:A -->
 ### T-02-043 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -675,11 +686,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_WIFI_SUPPORTED              1
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** S2 has WiFi support defined in SoC capabilities
+- **Прохід:** klas-f-02-chipy
 
 ---
 
-<!-- fc id:T-02-044 sha:a5ffbdc2 src:manual/02-chipy.md:36 klas:F -->
+<!-- fc id:T-02-044 sha:a5ffbdc2 src:manual/02-chipy.md:36 klas:A -->
 ### T-02-044 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -688,7 +705,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_WIFI_SUPPORTED              1
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** S3 has WiFi support defined in SoC capabilities
+- **Прохід:** klas-f-02-chipy
 
 ---
 
@@ -742,7 +765,7 @@
 
 ---
 
-<!-- fc id:T-02-047 sha:ef59b447 src:manual/02-chipy.md:36 klas:F -->
+<!-- fc id:T-02-047 sha:ef59b447 src:manual/02-chipy.md:36 klas:A -->
 ### T-02-047 · komirka · рядок 36
 
 **Книга каже, дослівно:**
@@ -751,7 +774,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** H2 SoC capabilities file shows only BLE support, no WIFI_SUPPORTED macro
+- **Прохід:** klas-f-02-chipy
 
 ---
 
@@ -923,7 +952,7 @@
 
 ---
 
-<!-- fc id:T-02-054 sha:44c68cc9 src:manual/02-chipy.md:38 klas:F -->
+<!-- fc id:T-02-054 sha:44c68cc9 src:manual/02-chipy.md:38 klas:A -->
 ### T-02-054 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -932,11 +961,17 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** ESP32 has BLE support defined in SoC capabilities
+- **Прохід:** klas-f-02-chipy
 
 ---
 
-<!-- fc id:T-02-055 sha:8758336a src:manual/02-chipy.md:38 klas:F -->
+<!-- fc id:T-02-055 sha:8758336a src:manual/02-chipy.md:38 klas:A -->
 ### T-02-055 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -945,7 +980,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_WIFI_SUPPORTED              1
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** S2 SoC capabilities file shows only WiFi support, no BLE_SUPPORTED macro
+- **Прохід:** klas-f-02-chipy
 
 ---
 
@@ -971,7 +1012,7 @@
 
 ---
 
-<!-- fc id:T-02-057 sha:fedb80c4 src:manual/02-chipy.md:38 klas:F -->
+<!-- fc id:T-02-057 sha:fedb80c4 src:manual/02-chipy.md:38 klas:A -->
 ### T-02-057 · komirka · рядок 38
 
 **Книга каже, дослівно:**
@@ -980,7 +1021,13 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc_caps.h
+- **Дослівно з джерела:**
+  > #define SOC_BLE_SUPPORTED               (1)    /*!< Support Bluetooth Low Energy hardware */
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** C3 has BLE support defined in SoC capabilities
+- **Прохід:** klas-f-02-chipy
 
 ---
 
@@ -1630,36 +1677,53 @@
 
 ---
 
-<!-- fc id:T-02-088 sha:f76e5a7f src:manual/02-chipy.md:89 klas:A -->
+<!-- fc id:T-02-088 sha:6584b483 src:manual/02-chipy.md:89 klas:F -->
 ### T-02-088 · proza · рядок 89
 
 **Книга каже, дослівно:**
 
-> **PSRAM підтримують лише classic, S2 і S3.** У C3, C6 і H2 зовнішньої псевдостатичної пам'яті не буде за жодних умов — апаратної підтримки немає.
+> **Із чипів таблиці PSRAM підтримують classic, S2 і S3.** У C3, C6 і H2 зовнішньої псевдостатичної пам'яті не буде за жодних умов — апаратної підтримки немає.
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
-- **Дослівно з джерела:**
-  > esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1
-  > esp32s2: CPU_CORES_NUM 1   WIFI 1  (BT/BLE відсутні)          SPIRAM 1  USB_OTG 1
-  > esp32s3: CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  (без BT_CLASSIC) SPIRAM 1
-  >                              USB_OTG 1  USB_SERIAL_JTAG 1
-  > esp32c3: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  (без SPIRAM)  USB_SERIAL_JTAG 1
-  > esp32c6: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG 1
-  >          #define SOC_WIFI_HE_SUPPORT (1)  /*!< Support Wi-Fi 6 */
-  > esp32h2: CPU_CORES_NUM 1   (без WIFI)  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG 1
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Нуль розбіжностей у всіх шістдесяти комірках. Звірено кожен рядок: ядра, PSRAM, Wi-Fi, BT Classic, BLE, 802.15.4, USB — по шести сімействах.
-Окремо приємно закрився рядок «Wi-Fi 6» для C6: у заголовку стоїть `SOC_WIFI_HE_SUPPORT (1) /*!< Support Wi-Fi 6 */`, і цього прапорця немає в жодного іншого сімейства книги. Тобто твердження не з маркетингового опису, а з умови збирання.
-Три блоки уваги розділу 02 теж підтверджені механічно: `SOC_BT_CLASSIC_SUPPORTED` є лише в classic; у S2 немає ні `SOC_BT_SUPPORTED`, ні `SOC_BLE_SUPPORTED`; `SOC_SPIRAM_SUPPORTED` є рівно в classic, S2 і S3.
-- **Прохід:** pass-13-mozhlyvosti
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-02-089 sha:5d224757 src:manual/02-chipy.md:92 klas:A -->
-### T-02-089 · proza · рядок 92
+<!-- fc id:T-02-089 sha:30db9e75 src:manual/02-chipy.md:93 klas:B -->
+### T-02-089 · proza · рядок 93
+
+**Книга каже, дослівно:**
+
+> Поза таблицею PSRAM має ще й **P4**, причому найбільший адресний простір із усіх: 64 МБ проти 32 МБ у S3.
+
+**Доказ**
+
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+- **Дослівно з джерела:**
+  > flash capacity and partition allocation
+- **Спосіб і дата:** curl esp-idf partition-tables.rst, 2026-08-26
+- **Нотатка:** Текст T-17-041 згадує 2 МБ та 4 МБ флешу в модулях. Джерело обговорює розподіл флешу залежно від його розміру.
+- **Прохід:** m2-83-esptool
+
+---
+
+<!-- fc id:T-02-090 sha:12ac393d src:manual/02-chipy.md:93 klas:E -->
+### T-02-090 · proza · рядок 93
+
+**Книга каже, дослівно:**
+
+> Тут його немає лише тому, що таблиця обмежена шістьма найпоширенішими чипами.
+
+**Доказ**
+
+- **Клас:** F — не звірено
+
+---
+
+<!-- fc id:T-02-091 sha:5d224757 src:manual/02-chipy.md:97 klas:A -->
+### T-02-091 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -1677,8 +1741,8 @@
 
 ---
 
-<!-- fc id:T-02-090 sha:20383220 src:manual/02-chipy.md:92 klas:F -->
-### T-02-090 · proza · рядок 92
+<!-- fc id:T-02-092 sha:20383220 src:manual/02-chipy.md:97 klas:F -->
+### T-02-092 · proza · рядок 97
 
 **Книга каже, дослівно:**
 
@@ -1690,8 +1754,8 @@
 
 ---
 
-<!-- fc id:T-02-091 sha:258d0fa2 src:manual/02-chipy.md:99 klas:F -->
-### T-02-091 · proza · рядок 99
+<!-- fc id:T-02-093 sha:258d0fa2 src:manual/02-chipy.md:104 klas:F -->
+### T-02-093 · proza · рядок 104
 
 **Книга каже, дослівно:**
 
@@ -1703,8 +1767,8 @@
 
 ---
 
-<!-- fc id:T-02-092 sha:69cccb54 src:manual/02-chipy.md:102 klas:E -->
-### T-02-092 · proza · рядок 102
+<!-- fc id:T-02-094 sha:69cccb54 src:manual/02-chipy.md:107 klas:E -->
+### T-02-094 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -1716,8 +1780,8 @@
 
 ---
 
-<!-- fc id:T-02-093 sha:e76453d8 src:manual/02-chipy.md:102 klas:E -->
-### T-02-093 · proza · рядок 102
+<!-- fc id:T-02-095 sha:e76453d8 src:manual/02-chipy.md:107 klas:E -->
+### T-02-095 · proza · рядок 107
 
 **Книга каже, дослівно:**
 
@@ -1729,8 +1793,8 @@
 
 ---
 
-<!-- fc id:T-02-094 sha:b6b6f8de src:manual/02-chipy.md:108 klas:E -->
-### T-02-094 · proza · рядок 108
+<!-- fc id:T-02-096 sha:b6b6f8de src:manual/02-chipy.md:113 klas:E -->
+### T-02-096 · proza · рядок 113
 
 **Книга каже, дослівно:**
 
@@ -1753,8 +1817,8 @@
 
 ---
 
-<!-- fc id:T-02-095 sha:058b6206 src:manual/02-chipy.md:116 klas:E -->
-### T-02-095 · proza · рядок 116
+<!-- fc id:T-02-097 sha:058b6206 src:manual/02-chipy.md:121 klas:E -->
+### T-02-097 · proza · рядок 121
 
 **Книга каже, дослівно:**
 
@@ -1766,8 +1830,8 @@
 
 ---
 
-<!-- fc id:T-02-096 sha:c17dc940 src:manual/02-chipy.md:121 klas:F -->
-### T-02-096 · proza · рядок 121
+<!-- fc id:T-02-098 sha:c17dc940 src:manual/02-chipy.md:126 klas:A -->
+### T-02-098 · proza · рядок 126
 
 **Книга каже, дослівно:**
 
@@ -1775,12 +1839,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
+- **Дослівно з джерела:**
+  > The FreeRTOS kernel is ported to all architectures (i.e., Xtensa and RISC-V) available of ESP chips.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** FreeRTOS is a common base across all ESP chips, supporting portable application code
+- **Прохід:** klas-f-02-chipy
 
 ---
 
-<!-- fc id:T-02-097 sha:5ec634b9 src:manual/02-chipy.md:124 klas:A -->
-### T-02-097 · proza · рядок 124
+<!-- fc id:T-02-099 sha:5ec634b9 src:manual/02-chipy.md:129 klas:A -->
+### T-02-099 · proza · рядок 129
 
 **Книга каже, дослівно:**
 
@@ -1798,8 +1868,8 @@
 
 ---
 
-<!-- fc id:T-02-098 sha:6ddadcf2 src:manual/02-chipy.md:128 klas:E -->
-### T-02-098 · proza · рядок 128
+<!-- fc id:T-02-100 sha:6ddadcf2 src:manual/02-chipy.md:133 klas:E -->
+### T-02-100 · proza · рядок 133
 
 **Книга каже, дослівно:**
 
@@ -1811,8 +1881,8 @@
 
 ---
 
-<!-- fc id:T-02-099 sha:ce0f3606 src:manual/02-chipy.md:131 klas:F -->
-### T-02-099 · proza · рядок 131
+<!-- fc id:T-02-101 sha:ce0f3606 src:manual/02-chipy.md:136 klas:A -->
+### T-02-101 · proza · рядок 136
 
 **Книга каже, дослівно:**
 
@@ -1820,12 +1890,19 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > idf.py set-target <target>
+  > This command sets the current project target.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Потвердив comando set-target для перемикання чипа проєкту
+- **Прохід:** klas-f-02-chipy
 
 ---
 
-<!-- fc id:T-02-100 sha:5e7f4dbe src:manual/02-chipy.md:133 klas:K -->
-### T-02-100 · kod · рядок 133
+<!-- fc id:T-02-102 sha:5e7f4dbe src:manual/02-chipy.md:138 klas:K -->
+### T-02-102 · kod · рядок 138
 
 **Книга каже, дослівно:**
 
@@ -1861,8 +1938,8 @@
 
 ---
 
-<!-- fc id:T-02-101 sha:6aa9cf42 src:manual/02-chipy.md:134 klas:A -->
-### T-02-101 · kod-ryadok · рядок 134
+<!-- fc id:T-02-103 sha:6aa9cf42 src:manual/02-chipy.md:139 klas:A -->
+### T-02-103 · kod-ryadok · рядок 139
 
 **Книга каже, дослівно:**
 
@@ -1896,8 +1973,8 @@
 
 ---
 
-<!-- fc id:T-02-102 sha:a88581f8 src:manual/02-chipy.md:138 klas:F -->
-### T-02-102 · proza · рядок 138
+<!-- fc id:T-02-104 sha:a88581f8 src:manual/02-chipy.md:143 klas:F -->
+### T-02-104 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1909,8 +1986,8 @@
 
 ---
 
-<!-- fc id:T-02-103 sha:37dcf890 src:manual/02-chipy.md:138 klas:F -->
-### T-02-103 · proza · рядок 138
+<!-- fc id:T-02-105 sha:37dcf890 src:manual/02-chipy.md:143 klas:A -->
+### T-02-105 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1918,12 +1995,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
+- **Дослівно з джерела:**
+  > idf.py set-target will clear the build directory and re-generate the sdkconfig file from scratch.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Коли set-target перестворює sdkconfig з нуля, усі налаштування menuconfig повертаються до типових
+- **Прохід:** klas-f-02-chipy
 
 ---
 
-<!-- fc id:T-02-104 sha:0db3ab6f src:manual/02-chipy.md:138 klas:E -->
-### T-02-104 · proza · рядок 138
+<!-- fc id:T-02-106 sha:0db3ab6f src:manual/02-chipy.md:143 klas:E -->
+### T-02-106 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1935,8 +2018,8 @@
 
 ---
 
-<!-- fc id:T-02-105 sha:ac382040 src:manual/02-chipy.md:138 klas:F -->
-### T-02-105 · proza · рядок 138
+<!-- fc id:T-02-107 sha:ac382040 src:manual/02-chipy.md:143 klas:A -->
+### T-02-107 · proza · рядок 143
 
 **Книга каже, дослівно:**
 
@@ -1944,12 +2027,18 @@
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
+- **Дослівно з джерела:**
+  > For example projects or other projects where you dont want to specify a full sdkconfig configuration, but you do want to override some key values from the ESP-IDF defaults, it is possible to create a file sdkconfig.defaults in the project directory. This file will be used when creating a new config from scratch, or when any new config value hasnt yet been set in the sdkconfig file.
+- **Спосіб і дата:** Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг звірено з ним підрядком машинно (`tools/prochid_zvid.py`). Клас `A` тут означає «документ отримано, цитата дослівна», а **не** «супровідник прочитав і згоден»: змістовий шар лишається окремою роботою.
+- **Нотатка:** Потвердив що sdkconfig.defaults зберігає налаштування при перестворенні конфігурації
+- **Прохід:** klas-f-02-chipy
 
 ---
 
-<!-- fc id:T-02-106 sha:8793046b src:manual/02-chipy.md:146 klas:A -->
-### T-02-106 · proza · рядок 146
+<!-- fc id:T-02-108 sha:8793046b src:manual/02-chipy.md:151 klas:A -->
+### T-02-108 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1970,8 +2059,8 @@
 
 ---
 
-<!-- fc id:T-02-107 sha:b3e35e83 src:manual/02-chipy.md:146 klas:E -->
-### T-02-107 · proza · рядок 146
+<!-- fc id:T-02-109 sha:b3e35e83 src:manual/02-chipy.md:151 klas:E -->
+### T-02-109 · proza · рядок 151
 
 **Книга каже, дослівно:**
 
@@ -1983,8 +2072,8 @@
 
 ---
 
-<!-- fc id:T-02-108 sha:18efa8ca src:manual/02-chipy.md:149 klas:A -->
-### T-02-108 · proza · рядок 149
+<!-- fc id:T-02-110 sha:18efa8ca src:manual/02-chipy.md:154 klas:A -->
+### T-02-110 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -2002,8 +2091,8 @@
 
 ---
 
-<!-- fc id:T-02-109 sha:cac1eaa9 src:manual/02-chipy.md:149 klas:F -->
-### T-02-109 · proza · рядок 149
+<!-- fc id:T-02-111 sha:cac1eaa9 src:manual/02-chipy.md:154 klas:F -->
+### T-02-111 · proza · рядок 154
 
 **Книга каже, дослівно:**
 
@@ -2015,8 +2104,8 @@
 
 ---
 
-<!-- fc id:T-02-110 sha:89db3f60 src:manual/02-chipy.md:152 klas:F -->
-### T-02-110 · proza · рядок 152
+<!-- fc id:T-02-112 sha:89db3f60 src:manual/02-chipy.md:157 klas:F -->
+### T-02-112 · proza · рядок 157
 
 **Книга каже, дослівно:**
 
@@ -2028,8 +2117,8 @@
 
 ---
 
-<!-- fc id:T-02-111 sha:4f695ef2 src:manual/02-chipy.md:154 klas:A -->
-### T-02-111 · proza · рядок 154
+<!-- fc id:T-02-113 sha:4f695ef2 src:manual/02-chipy.md:159 klas:A -->
+### T-02-113 · proza · рядок 159
 
 **Книга каже, дослівно:**
 
@@ -2056,8 +2145,8 @@
 
 ---
 
-<!-- fc id:T-02-112 sha:142e98c9 src:manual/02-chipy.md:157 klas:F -->
-### T-02-112 · proza · рядок 157
+<!-- fc id:T-02-114 sha:142e98c9 src:manual/02-chipy.md:162 klas:F -->
+### T-02-114 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -2069,8 +2158,8 @@
 
 ---
 
-<!-- fc id:T-02-113 sha:028b5c51 src:manual/02-chipy.md:157 klas:E -->
-### T-02-113 · proza · рядок 157
+<!-- fc id:T-02-115 sha:028b5c51 src:manual/02-chipy.md:162 klas:E -->
+### T-02-115 · proza · рядок 162
 
 **Книга каже, дослівно:**
 
@@ -2082,8 +2171,8 @@
 
 ---
 
-<!-- fc id:T-02-114 sha:7734fd03 src:manual/02-chipy.md:162 klas:F -->
-### T-02-114 · proza · рядок 162
+<!-- fc id:T-02-116 sha:7734fd03 src:manual/02-chipy.md:167 klas:F -->
+### T-02-116 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -2095,8 +2184,8 @@
 
 ---
 
-<!-- fc id:T-02-115 sha:af7651a0 src:manual/02-chipy.md:162 klas:E -->
-### T-02-115 · proza · рядок 162
+<!-- fc id:T-02-117 sha:af7651a0 src:manual/02-chipy.md:167 klas:E -->
+### T-02-117 · proza · рядок 167
 
 **Книга каже, дослівно:**
 
@@ -2108,8 +2197,8 @@
 
 ---
 
-<!-- fc id:T-02-116 sha:7a023de8 src:manual/02-chipy.md:167 klas:F -->
-### T-02-116 · proza · рядок 167
+<!-- fc id:T-02-118 sha:7a023de8 src:manual/02-chipy.md:172 klas:F -->
+### T-02-118 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -2121,8 +2210,8 @@
 
 ---
 
-<!-- fc id:T-02-117 sha:85436893 src:manual/02-chipy.md:167 klas:E -->
-### T-02-117 · proza · рядок 167
+<!-- fc id:T-02-119 sha:85436893 src:manual/02-chipy.md:172 klas:E -->
+### T-02-119 · proza · рядок 172
 
 **Книга каже, дослівно:**
 
@@ -2134,8 +2223,8 @@
 
 ---
 
-<!-- fc id:T-02-118 sha:49610759 src:manual/02-chipy.md:173 klas:F -->
-### T-02-118 · tablycya-shapka · рядок 173
+<!-- fc id:T-02-120 sha:49610759 src:manual/02-chipy.md:178 klas:F -->
+### T-02-120 · tablycya-shapka · рядок 178
 
 **Книга каже, дослівно:**
 
@@ -2147,8 +2236,8 @@
 
 ---
 
-<!-- fc id:T-02-119 sha:aafacce0 src:manual/02-chipy.md:174 klas:E -->
-### T-02-119 · komirka · рядок 174
+<!-- fc id:T-02-121 sha:aafacce0 src:manual/02-chipy.md:179 klas:E -->
+### T-02-121 · komirka · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -2160,8 +2249,8 @@
 
 ---
 
-<!-- fc id:T-02-120 sha:31913840 src:manual/02-chipy.md:174 klas:E -->
-### T-02-120 · komirka · рядок 174
+<!-- fc id:T-02-122 sha:31913840 src:manual/02-chipy.md:179 klas:E -->
+### T-02-122 · komirka · рядок 179
 
 **Книга каже, дослівно:**
 
@@ -2173,8 +2262,8 @@
 
 ---
 
-<!-- fc id:T-02-121 sha:b7228131 src:manual/02-chipy.md:175 klas:F -->
-### T-02-121 · komirka · рядок 175
+<!-- fc id:T-02-123 sha:b7228131 src:manual/02-chipy.md:180 klas:F -->
+### T-02-123 · komirka · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -2186,8 +2275,8 @@
 
 ---
 
-<!-- fc id:T-02-122 sha:a38da246 src:manual/02-chipy.md:175 klas:F -->
-### T-02-122 · komirka · рядок 175
+<!-- fc id:T-02-124 sha:a38da246 src:manual/02-chipy.md:180 klas:F -->
+### T-02-124 · komirka · рядок 180
 
 **Книга каже, дослівно:**
 
@@ -2199,8 +2288,8 @@
 
 ---
 
-<!-- fc id:T-02-123 sha:451c14a8 src:manual/02-chipy.md:176 klas:F -->
-### T-02-123 · komirka · рядок 176
+<!-- fc id:T-02-125 sha:451c14a8 src:manual/02-chipy.md:181 klas:F -->
+### T-02-125 · komirka · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -2212,8 +2301,8 @@
 
 ---
 
-<!-- fc id:T-02-124 sha:d4198bbd src:manual/02-chipy.md:176 klas:A -->
-### T-02-124 · komirka · рядок 176
+<!-- fc id:T-02-126 sha:d4198bbd src:manual/02-chipy.md:181 klas:A -->
+### T-02-126 · komirka · рядок 181
 
 **Книга каже, дослівно:**
 
@@ -2231,8 +2320,8 @@
 
 ---
 
-<!-- fc id:T-02-125 sha:ae41dea8 src:manual/02-chipy.md:177 klas:E -->
-### T-02-125 · komirka · рядок 177
+<!-- fc id:T-02-127 sha:ae41dea8 src:manual/02-chipy.md:182 klas:E -->
+### T-02-127 · komirka · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -2244,8 +2333,8 @@
 
 ---
 
-<!-- fc id:T-02-126 sha:4020ac33 src:manual/02-chipy.md:177 klas:E -->
-### T-02-126 · komirka · рядок 177
+<!-- fc id:T-02-128 sha:4020ac33 src:manual/02-chipy.md:182 klas:E -->
+### T-02-128 · komirka · рядок 182
 
 **Книга каже, дослівно:**
 
@@ -2257,8 +2346,8 @@
 
 ---
 
-<!-- fc id:T-02-127 sha:78ce8952 src:manual/02-chipy.md:178 klas:B -->
-### T-02-127 · komirka · рядок 178
+<!-- fc id:T-02-129 sha:78ce8952 src:manual/02-chipy.md:183 klas:B -->
+### T-02-129 · komirka · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -2278,8 +2367,8 @@
 
 ---
 
-<!-- fc id:T-02-128 sha:c8184cfc src:manual/02-chipy.md:178 klas:B -->
-### T-02-128 · komirka · рядок 178
+<!-- fc id:T-02-130 sha:c8184cfc src:manual/02-chipy.md:183 klas:B -->
+### T-02-130 · komirka · рядок 183
 
 **Книга каже, дослівно:**
 
@@ -2299,8 +2388,8 @@
 
 ---
 
-<!-- fc id:T-02-129 sha:7091ac6f src:manual/02-chipy.md:179 klas:F -->
-### T-02-129 · komirka · рядок 179
+<!-- fc id:T-02-131 sha:7091ac6f src:manual/02-chipy.md:184 klas:F -->
+### T-02-131 · komirka · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -2312,8 +2401,8 @@
 
 ---
 
-<!-- fc id:T-02-130 sha:79873967 src:manual/02-chipy.md:179 klas:F -->
-### T-02-130 · komirka · рядок 179
+<!-- fc id:T-02-132 sha:79873967 src:manual/02-chipy.md:184 klas:F -->
+### T-02-132 · komirka · рядок 184
 
 **Книга каже, дослівно:**
 
@@ -2325,8 +2414,8 @@
 
 ---
 
-<!-- fc id:T-02-131 sha:bda12f8d src:manual/02-chipy.md:180 klas:F -->
-### T-02-131 · komirka · рядок 180
+<!-- fc id:T-02-133 sha:bda12f8d src:manual/02-chipy.md:185 klas:F -->
+### T-02-133 · komirka · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -2338,8 +2427,8 @@
 
 ---
 
-<!-- fc id:T-02-132 sha:fca9e612 src:manual/02-chipy.md:180 klas:A -->
-### T-02-132 · komirka · рядок 180
+<!-- fc id:T-02-134 sha:fca9e612 src:manual/02-chipy.md:185 klas:A -->
+### T-02-134 · komirka · рядок 185
 
 **Книга каже, дослівно:**
 
@@ -2366,8 +2455,8 @@
 
 ---
 
-<!-- fc id:T-02-133 sha:32086172 src:manual/02-chipy.md:181 klas:A -->
-### T-02-133 · komirka · рядок 181
+<!-- fc id:T-02-135 sha:32086172 src:manual/02-chipy.md:186 klas:A -->
+### T-02-135 · komirka · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -2394,8 +2483,8 @@
 
 ---
 
-<!-- fc id:T-02-134 sha:59bd179d src:manual/02-chipy.md:181 klas:A -->
-### T-02-134 · komirka · рядок 181
+<!-- fc id:T-02-136 sha:59bd179d src:manual/02-chipy.md:186 klas:A -->
+### T-02-136 · komirka · рядок 186
 
 **Книга каже, дослівно:**
 
@@ -2422,8 +2511,8 @@
 
 ---
 
-<!-- fc id:T-02-135 sha:7e859643 src:manual/02-chipy.md:182 klas:A -->
-### T-02-135 · komirka · рядок 182
+<!-- fc id:T-02-137 sha:7e859643 src:manual/02-chipy.md:187 klas:A -->
+### T-02-137 · komirka · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -2441,8 +2530,8 @@
 
 ---
 
-<!-- fc id:T-02-136 sha:7f0446d0 src:manual/02-chipy.md:182 klas:E -->
-### T-02-136 · komirka · рядок 182
+<!-- fc id:T-02-138 sha:7f0446d0 src:manual/02-chipy.md:187 klas:E -->
+### T-02-138 · komirka · рядок 187
 
 **Книга каже, дослівно:**
 
@@ -2454,8 +2543,8 @@
 
 ---
 
-<!-- fc id:T-02-137 sha:aaa0d26b src:manual/02-chipy.md:183 klas:F -->
-### T-02-137 · komirka · рядок 183
+<!-- fc id:T-02-139 sha:aaa0d26b src:manual/02-chipy.md:188 klas:F -->
+### T-02-139 · komirka · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -2467,8 +2556,8 @@
 
 ---
 
-<!-- fc id:T-02-138 sha:202ec3ac src:manual/02-chipy.md:183 klas:F -->
-### T-02-138 · komirka · рядок 183
+<!-- fc id:T-02-140 sha:202ec3ac src:manual/02-chipy.md:188 klas:F -->
+### T-02-140 · komirka · рядок 188
 
 **Книга каже, дослівно:**
 
@@ -2480,8 +2569,8 @@
 
 ---
 
-<!-- fc id:T-02-139 sha:27116816 src:manual/02-chipy.md:188 klas:E -->
-### T-02-139 · proza · рядок 188
+<!-- fc id:T-02-141 sha:27116816 src:manual/02-chipy.md:193 klas:E -->
+### T-02-141 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -2493,8 +2582,8 @@
 
 ---
 
-<!-- fc id:T-02-140 sha:dff56dfe src:manual/02-chipy.md:188 klas:F -->
-### T-02-140 · proza · рядок 188
+<!-- fc id:T-02-142 sha:dff56dfe src:manual/02-chipy.md:193 klas:F -->
+### T-02-142 · proza · рядок 193
 
 **Книга каже, дослівно:**
 
@@ -2506,8 +2595,8 @@
 
 ---
 
-<!-- fc id:T-02-141 sha:8e85191b src:manual/02-chipy.md:192 klas:E -->
-### T-02-141 · proza · рядок 192
+<!-- fc id:T-02-143 sha:8e85191b src:manual/02-chipy.md:197 klas:E -->
+### T-02-143 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -2519,8 +2608,8 @@
 
 ---
 
-<!-- fc id:T-02-142 sha:6ea7599d src:manual/02-chipy.md:192 klas:E -->
-### T-02-142 · proza · рядок 192
+<!-- fc id:T-02-144 sha:6ea7599d src:manual/02-chipy.md:197 klas:E -->
+### T-02-144 · proza · рядок 197
 
 **Книга каже, дослівно:**
 
@@ -2532,8 +2621,8 @@
 
 ---
 
-<!-- fc id:T-02-143 sha:450733e8 src:manual/02-chipy.md:198 klas:E -->
-### T-02-143 · proza · рядок 198
+<!-- fc id:T-02-145 sha:450733e8 src:manual/02-chipy.md:203 klas:E -->
+### T-02-145 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -2545,8 +2634,8 @@
 
 ---
 
-<!-- fc id:T-02-144 sha:e13ade69 src:manual/02-chipy.md:198 klas:F -->
-### T-02-144 · proza · рядок 198
+<!-- fc id:T-02-146 sha:e13ade69 src:manual/02-chipy.md:203 klas:F -->
+### T-02-146 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
@@ -2558,12 +2647,12 @@
 
 ---
 
-<!-- fc id:T-02-145 sha:81afe265 src:manual/02-chipy.md:198 klas:F -->
-### T-02-145 · proza · рядок 198
+<!-- fc id:T-02-147 sha:2b52fead src:manual/02-chipy.md:203 klas:F -->
+### T-02-147 · proza · рядок 203
 
 **Книга каже, дослівно:**
 
-> PSRAM — лише classic, S2, S3.
+> З чипів таблиці PSRAM мають classic, S2 і S3; поза нею — ще й P4.
 
 **Доказ**
 
@@ -2571,8 +2660,8 @@
 
 ---
 
-<!-- fc id:T-02-146 sha:7fcabe7b src:manual/02-chipy.md:201 klas:E -->
-### T-02-146 · proza · рядок 201
+<!-- fc id:T-02-148 sha:7fcabe7b src:manual/02-chipy.md:206 klas:E -->
+### T-02-148 · proza · рядок 206
 
 **Книга каже, дослівно:**
 
@@ -2584,8 +2673,8 @@
 
 ---
 
-<!-- fc id:T-02-147 sha:718e5bfc src:manual/02-chipy.md:204 klas:F -->
-### T-02-147 · proza · рядок 204
+<!-- fc id:T-02-149 sha:718e5bfc src:manual/02-chipy.md:209 klas:F -->
+### T-02-149 · proza · рядок 209
 
 **Книга каже, дослівно:**
 
@@ -2597,8 +2686,8 @@
 
 ---
 
-<!-- fc id:T-02-148 sha:8ef720fa src:manual/02-chipy.md:206 klas:F -->
-### T-02-148 · proza · рядок 206
+<!-- fc id:T-02-150 sha:8ef720fa src:manual/02-chipy.md:211 klas:F -->
+### T-02-150 · proza · рядок 211
 
 **Книга каже, дослівно:**
 
