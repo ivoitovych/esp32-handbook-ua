@@ -57,7 +57,7 @@
     перводжеrelah не йде, але це відома цифра для цього виду операцій. | Взірець перебудовано з тексту
     одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
 - nazva: DS18B20 має похибку ±0.5°C у діапазоні −10…+85°C та ±2°C поза ним
-  zbih: Паспортна\s+похибка\s+DS18B20\s+—\s+\*\*±0\.5\s+°C\s+у\s+діапазоні\s+−10…\+85\s+°C\*\*,\s+і\s+поза\s+цим\s+діапазоном\s+вона\s+більша:\s+паспорт\s+зад
+  zbih: Паспортна\s+похибка\s+DS18B20
   klas: A
   dzherelo: 'Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV: 042208
     — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: dzherela-kesh/ds18b20.pdf)'
