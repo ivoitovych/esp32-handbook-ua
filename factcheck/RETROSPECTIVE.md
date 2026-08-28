@@ -3,7 +3,7 @@
 A plan-versus-actual account of the fact-checking technology, written
 so that the next book does not have to rediscover any of it.
 
-**Figures below are dated `2026-08-28 19:xx UTC`** and come from
+**Figures below are dated `2026-08-28 19:43 UTC`** and come from
 `tools/factcheck.py status` and `tools/skhema.py`: **8110 claims (plus
 221 code blocks carried as context), 1360 evidence records, 92 book
 files, 53 tools.**
@@ -67,9 +67,14 @@ reader looks at first.
 This figure has now fallen twice, and both falls are the point:
 
     32.9 %  →  30.0 %   pattern leaks closed; 239 claims went back to F
-    30.0 %  →  29.0 %   leaks closed again, and D fell 140 → 93 when
-                        one arithmetic record stopped covering 27 units
-                        it never computed
+    30.0 %  →  29.0 %   more leaks closed, and `D` fell 140 → 93
+
+The first fall was traced to its cause. **The second was not**, and
+saying so is part of reporting it: 28 arithmetic records now cover 93
+units where they once covered 140, and narrowing one leaked pattern
+accounts for roughly 28 of the 47. The rest is unattributed. An
+unattributed movement in a coverage figure is a thing to chase, not a
+thing to round off.
 
 > A coverage number that only ever rises is a number nobody is checking.
 
