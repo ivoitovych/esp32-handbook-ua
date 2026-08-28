@@ -426,3 +426,63 @@ than deleted until each rule is confirmed present in `WORKERS.md`.
 
 Batch 1 also broke four readers and none of them raised a word: see
 `RE_TVERDZHENNYA` in `tools/factcheck.py`.
+
+---
+
+## Stage 8 — the names themselves, measured 2026-08-28
+
+The owner asked why script and field names are still transliterated
+Ukrainian. They are, and here is the exact size of what is left.
+
+### Fields: the expand phase is complete, the contract phase has not started
+
+| | |
+|---|---|
+| records carrying **both** names | 1337 of 1337 |
+| records carrying only Ukrainian | 0 |
+| `skhema.py` accepts both | yes |
+
+So the English names are fully in place. What remains is dropping the
+Ukrainian ones — and that is blocked by a measured fact:
+
+    tools reading Ukrainian field names directly   25
+      of them the other maintainer's               4
+    tools using the shared loader                   3
+    tools parsing YAML themselves                  26
+
+A normalising loader would free only three. The other twenty-five each
+need their field access converted. **That is the whole of the contract
+phase: mechanical, countable, and not uncertain.**
+
+It cannot be done unilaterally: dropping the old names breaks the other
+maintainer's four tools the moment it lands. It is the one step of this
+migration that both must take on the same day.
+
+### Tools: 43 of 52 still transliterated
+
+    English already   build, preview, review, linkcheck, budgets,
+                      bind_by_hash, claims, kod-stubs, pdf-smoke
+    to rename         43
+
+Each rename is an import and a `Makefile` line. The plan's own rule
+stands: last, one at a time, `make check` after each.
+
+### Directories: 11 of 17
+
+    dokazy → evidence      rozbir → triage        prokhid → pass
+    doslidy → experiments  znimky → snapshots     detali → details
+    klasC → class-c        hvylya2, hvylya3 → waves/…
+    prokhid-vidkydka → pass-rejected             slidy-m2 → theirs
+
+`manual`, `dodatky`, `kartky`, `inserts` keep their names: they mirror
+the book's own layout.
+
+### Why this is the honest order
+
+Fields before tools before directories, because a field name is read by
+code that a rename would also touch — doing them in the other order
+means touching the same twenty-five files twice.
+
+> The migration is not stalled for want of a decision. It is at the one
+> point where both maintainers must move together, and that is worth
+> saying plainly rather than letting it look like drift.
