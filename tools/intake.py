@@ -27,6 +27,30 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(
 import factcheck  # розбір альтернатив взірця беремо в М1
 
 KNYHA = re.compile(r'\b(manual|dodatky|kartky)/[a-z0-9]')
+
+# Книга як джерело, названа СЛОВАМИ, а не шляхом.
+#
+# `KNYHA` ловить лише `manual/…`, `dodatky/…`, `kartky/…`. Але джерело
+# пишуть і прозою: «Розділ 29 «Wi-Fi мовчить»», «Картка К13 (розділ 06)»,
+# «Додаток F, рядок 47». Це та сама книга, і для класу A чи B це те саме
+# самоцитування — а ворота його не бачили.
+#
+# Виміряно 2026-08-28: таких записів 15, і всі під класом E, тобто
+# жодного хибного звірення. Перевірку додано не через них, а через те,
+# що першого ж запису класу A з таким джерелом ворота б пропустили.
+#
+# Умова «і не називає зовнішнього документа» обов'язкова: «UM10204,
+# розділ 7.1» і «DHT11 datasheet, розділ параметрів» — це розділи ЧУЖИХ
+# документів, і їх тут ловити не можна.
+ROZDIL_KNYHY = re.compile(
+    r'(?:^|[^\w])(розділ|картка|картку|картки|додаток|вкладка)\s+'
+    r'[A-ZА-ЯЄІЇ0-9]', re.I)
+ZOVNISHNIY = re.compile(
+    r'datasheet|specification|reference manual|user manual|programming guide'
+    r'|documentation'
+    r'|UM\d|SBOS|DS\d|IEC\s*\d|ISO\s*\d|IEEE\s*\d|RFC\s*\d|Rev\.'
+    r'|esp-idf|espressif|esptool|nxp|texas|microchip|vishay|maxim|aosong'
+    r'|sitronix|solomon|invensense|silicon labs|raspberry|https?://', re.I)
 VNUTRISHNYA = re.compile(r'^\s*ВНУТРІШНЯ ЗВІРКА')
 # Контрольні рядки: до реєстру не належать і збігтися з ними взірець
 # не має права. Взірець, що збігається з усіма трьома, збігається й з
@@ -102,6 +126,11 @@ def perevirka(shlyakh):
                 bidy.append(('ВНУТРІШНЯ ЗВІРКА ПІД КЛАСОМ ' + klas, nazva, ''))
             else:
                 bidy.append(('КНИГА ЯК ВЛАСНЕ ДЖЕРЕЛО', nazva, klas))
+        if (klas in ('verbatim', 'derived')
+                and ROZDIL_KNYHY.search(dzherelo)
+                and not ZOVNISHNIY.search(dzherelo)):
+            bidy.append(('КНИГА ЯК ДЖЕРЕЛО, НАЗВАНА СЛОВАМИ', nazva,
+                         dzherelo[:40]))
         # Взірець, що не компілюється, — не просто мертвий запис.
         # Він валить `factcheck.py sketch` для ВСЬОГО реєстру, тобто
         # ламає рендер обом супровідникам. Три таких приїхали хвилею 1

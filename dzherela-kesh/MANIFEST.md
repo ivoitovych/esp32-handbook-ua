@@ -301,7 +301,7 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `gpio.rst` | `22e98c6beecd66bbad413748dc75a5047df5141e20a47748be276eab2ed5ce6d` | 10017 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst> |
 | `gpio_example_main.c` | `64cc3c1e28607dfa4ea411efe9c16cd83e07b93336ba9c499f8de530c5eabd67` | 4534 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c> |
 | `gptimer.rst` | `b905858318435572d27c068f501c60f51901c04ece5756c4ffe50b77386c6433` | 27339 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst> |
-| `hc-sr04.pdf` | `4ebdc3e1f70d84a1ca856d8fcd7f8b1f9e548a94e4012cd86d14ca0b30543b06` | 80625 | 2026-08-26 | <https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf> |
+| `7ec78bb8-HCSR04.pdf` | `4ebdc3e1f70d84a1ca856d8fcd7f8b1f9e548a94e4012cd86d14ca0b30543b06` | 80625 | 2026-08-26 | <https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf> |
 | `i2c-um10204.pdf` | `dc91f00f65584e06ef36e26c93bf9d91a95fb3c8a1830a9223e53caf678b36af` | 750958 | 2026-08-26 | <https://www.pololu.com/file/0J435/UM10204.pdf> |
 | `i2c.rst` | `39caf24f3f913292f8692dca67d295ca88c9c5201aa41fc489a10581fcedfcba` | 37533 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst> |
 | `i2s.rst` | `5274a975617950a9860ee528cf75cabfe0256d4c7ecdd6a040845d6f9bf49298` | 86349 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2s.rst> |
@@ -310,8 +310,8 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `ili9341.pdf` | `a9bbfdf6d078f54a6aca7a56cba91246905358d3a4ed738817bfd3f582b5741c` | 3667641 | 2026-08-26 | <https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf> |
 | `ina219.pdf` | `58004eda854d07478e6fc6f4398c114f60a3bcf18d4877471c7c1a306d1fa1cb` | 892731 | 2026-08-26 | <https://www.ti.com/lit/ds/symlink/ina219.pdf> |
 | `ina226.pdf` | `c9b67f886d4a5241a5e070723f7b61867409eeb27eed768b9cdd9cb17e03ca2d` | 1516957 | 2026-08-26 | <https://www.ti.com/lit/ds/symlink/ina226.pdf> |
-| `irf540.pdf` | `7002a04312724c95d050a716f5979ccd4f7dc42aed1b097d2685cd2df4327768` | 132342 | 2026-08-26 | <https://www.vishay.com/docs/91021/irf540.pdf> |
-| `irlz44.pdf` | `8dd82ac7164a38ee0019e0a289c7ae5e0db234c8c0c5bb8a406300b47a3e9c54` | 878484 | 2026-08-26 | <https://www.vishay.com/docs/91328/irlz44.pdf> |
+| `88df9ffe-irf540.pdf` | `7002a04312724c95d050a716f5979ccd4f7dc42aed1b097d2685cd2df4327768` | 132342 | 2026-08-26 | <https://www.vishay.com/docs/91021/irf540.pdf> |
+| `8a533279-irlz44.pdf` | `8dd82ac7164a38ee0019e0a289c7ae5e0db234c8c0c5bb8a406300b47a3e9c54` | 878484 | 2026-08-26 | <https://www.vishay.com/docs/91328/irlz44.pdf> |
 | `l298n.pdf` | `b499461614cbbec95227bc79e1da4bf21f0e0121d9f7f931b462cbe66fced4b3` | 611634 | 2026-08-26 | <https://www.sparkfun.com/datasheets/Robotics/L298_H_Bridge.pdf> |
 | `ldo_regulator.rst` | `c990aa81a666b41bfb1611df49a865a6b64372752e3379d6023b7374fc92cb01` | 4142 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ldo_regulator.rst> |
 | `led-blue-wp7113qbc.pdf` | `ff6fcadbd0c1616d3a2db19c43754dd22731ae50bc7efdc9c3c531c13487eca5` | 554587 | 2026-08-26 | <https://www.kingbrightusa.com/images/catalog/SPEC/WP7113QBC-D.pdf> |

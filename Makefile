@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage check release release-check \
+.PHONY: help setup all intake dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -103,6 +103,21 @@ vidtvornist:
 # жодна інша перевірка його не бачить.
 cache-vs-book:
 	@$(PY) tools/cache_vs_book.py --tykho
+
+# Ворота прийому (М2): чи придатний запис доказу до того, як стане
+# частиною реєстру. Компіляція взірця, теча, клас без цитати, книга як
+# власне джерело.
+#
+# Досі цієї цілі не було, і ворота не запускав НІХТО: `make check` був
+# зелений, поки перевірка з двадцятьма однією блокуючою знахідкою
+# просто не викликалася. Це не «лічильник показав нуль» — це рід
+# гірший: перевірка є, працює, і її не існує в обігу.
+#
+# У `check` НЕ додано навмисно: 21 знахідка справжня, і зробити ціле
+# `check` червоним одноосібно — це рішення за двох. Пропозицію
+# надіслано М1 2026-08-28T17:0xZ; додамо, коли розберемо ці 21.
+intake:
+	@$(PY) tools/intake.py
 
 # Шар 1 як скрипт (М2): чи стоїть твердження картки в книзі, чи стоїть
 # там контекст і — головне — **чи містить контекст своє твердження**.
