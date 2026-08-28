@@ -16,10 +16,10 @@
 - id: T-C-081
   rid: ne-rozibrav
   bulo-shukaty: minicom manual, command syntax reference
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «minicom manual, command
+    syntax reference». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
 - id: T-D-110
   rid: ne-tverdzhennya
   chomu: заголовок таблиці
@@ -68,10 +68,10 @@
 - id: T-K05-002
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF Getting Started Guide, firmware components
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Getting Started
+    Guide, firmware components». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
+    про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-K08-026
   rid: dzherelo-ye
   shukaty: ESP32 hardware design guidelines, power supply
@@ -102,10 +102,10 @@
 - id: T-02-094
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF reference, architecture-specific differences
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF reference,
+    architecture-specific differences». Одиниця лишається в черзі як `ne-rozibrav` — це не
+    присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-02-008
   rid: ne-tverdzhennya
   chomu: пояснення про рядки таблиці чипів
@@ -139,17 +139,17 @@
 - id: T-08-083
   rid: ne-rozibrav
   bulo-shukaty: FCC/CE certification standards, antenna design guides
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «FCC/CE certification
+    standards, antenna design guides». Одиниця лишається в черзі як `ne-rozibrav` — це не
+    присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-09-056
   rid: ne-rozibrav
   bulo-shukaty: USB cable standards, data vs power cable specifications
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «USB cable standards,
+    data vs power cable specifications». Одиниця лишається в черзі як `ne-rozibrav` — це не
+    присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-09-100
   rid: pozyciya
   chomu: авторське правило щодо вибору хаба
@@ -162,10 +162,10 @@
 - id: T-11-065
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF build system documentation, components concept
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF build system
+    documentation, components concept». Одиниця лишається в черзі як `ne-rozibrav` — це не
+    присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-11-015
   rid: ne-tverdzhennya
   chomu: заголовок розділу про Linux та macOS
@@ -190,41 +190,41 @@
 - id: T-16-063
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF boot logging, version information in logs
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF boot logging,
+    version information in logs». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
+    про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-17-061
   rid: ne-rozibrav
   bulo-shukaty: esptool User Guide, command line reference
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «esptool User Guide,
+    command line reference». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про
+    відсутність джерела, а відмова видавати тему за документ.'
 - id: T-17-154
   rid: pozyciya
   chomu: авторська порада про стратегію пошуку помилок
 - id: T-18-088
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF partition table, littlefs support
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF partition table,
+    littlefs support». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
 - id: T-18-049
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF NVS documentation, storage specifications
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF NVS documentation,
+    storage specifications». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про
+    відсутність джерела, а відмова видавати тему за документ.'
 - id: T-19-013
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF OTA documentation, slot configuration
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF OTA documentation,
+    slot configuration». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
 - id: T-20-069
   rid: pozyciya
   chomu: авторський наголос на обов'язковості умови

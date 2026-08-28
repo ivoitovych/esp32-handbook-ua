@@ -1,0 +1,49 @@
+- odynycya: T-04-022
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/README.md'
+  komentar: 'Шукав інформацію про I²C в ESP-IDF, не знайшов цитати "дві лінії, багато пристроїв"'
+
+- odynycya: T-C-089
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/torvalds/linux/master/Documentation/'
+  komentar: 'Шукав про dmesg у Linux kernel, не знайшов точної цитати'
+
+- odynycya: T-49-067
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_cam/'
+  komentar: 'Шукав про DMA буфери в ESP-IDF компонентах, не знайшов цитати'
+
+- odynycya: T-A-079
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/docs/'
+  komentar: 'Не знайшов рядка про "8 · Обмеження → strapping"'
+
+- odynycya: T-07-056
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/components/'
+  komentar: 'Шукав про strapping-піни, не знайшов цитати'
+
+- odynycya: T-45-042
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_MPU6050/master/README.md'
+  komentar: 'Шукав про MPU6050 в Adafruit, не знайшов цитати "акселерометр і гіроскоп, I²C"'
+
+- odynycya: T-K04-013
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esptool/master/README.md'
+  komentar: 'Шукав про BOOT-EN послідовність в esptool, не знайшов цитати'
+
+- odynycya: T-17-121
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esptool/master/README.md'
+  komentar: 'Шукав повідомлення "Permission denied" в esptool, не знайшов'
+
+- odynycya: T-63-012
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/components/'
+  komentar: 'Шукав про CAN протокол в ESP-IDF, не знайшов цитати'
+
+- odynycya: T-33-097
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/'
+  komentar: 'Шукав ADC_BITWIDTH_DEFAULT в ESP-IDF, не знайшов в документації'

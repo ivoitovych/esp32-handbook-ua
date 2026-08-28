@@ -56,7 +56,7 @@
 
 ---
 
-<!-- fc id:T-03-003 sha:6da19cd4 src:manual/03-soc.md:10 klas:F -->
+<!-- fc id:T-03-003 sha:6da19cd4 src:manual/03-soc.md:10 klas:B -->
 ### T-03-003 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -75,7 +75,14 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > dual-core
+- **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
+- **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+ДВА чипи в твердженні. ESP32: «dual-core», і поруч «2 cores at 240 MHz». S3 (source-cache/56713ff4-esp32-s3_datasheet_en.pdf): «Xtensa® 32-bit LX7 dual-core microprocessor». Обидва паспорти кажуть це своїм словом.
+- **Прохід:** m2-99-peryferiya-yadra
 
 ---
 
@@ -245,7 +252,7 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 ---
 
-<!-- fc id:T-03-011 sha:01a4a513 src:manual/03-soc.md:27 klas:F -->
+<!-- fc id:T-03-011 sha:01a4a513 src:manual/03-soc.md:27 klas:B -->
 ### T-03-011 · proza · `manual/03-soc.md`
 
 **Твердження, коротко**
@@ -264,7 +271,14 @@ PRO_CPU (ядро 0) і APP_CPU (ядро 1) — назви історичні �
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > Single-Core
+- **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
+- **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+ЧОТИРИ чипи в твердженні, і кожен має власний паспорт у кеші: C3 «Single-Core»; C6 (d4da9d47) «RISC-V single-core microprocessor»; H2 (7f786a8e) «RISC-V 32-bit single-core microprocessor»; S2 (fbdbc9b1) «single-core microprocessor (Xtensa® 32-bit LX7)». Клас derived, бо жоден окремий документ не каже про всі чотири.
+- **Прохід:** m2-99-peryferiya-yadra
 
 ---
 

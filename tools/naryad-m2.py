@@ -201,7 +201,7 @@ def poshuk_riven(tekst: str, fayly: list[str], spec: bool) -> list[str]:
 def main() -> int:
     skilky = int(sys.argv[1]) if len(sys.argv) > 1 else 60
     nasinnya = int(sys.argv[2]) if len(sys.argv) > 2 else 20260827
-    # Каталог хвилі: `factcheck/hvylya2` перейменовано на
+    # Каталог хвилі: `factcheck/wave2` перейменовано на
     # `factcheck/wave2`. Правило заміни цього рядка **не** зачепило, і
     # правильно: у коді воно вимагає скісної, бо в лапках стоять і
     # ключі словників, і мітки. Тут ім'я каталогу справді голе, тож
