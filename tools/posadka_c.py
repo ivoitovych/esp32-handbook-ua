@@ -76,6 +76,31 @@ def vzirets_dlya(tekst: str, vsi: list[str]) -> str | None:
     return None
 
 
+# Писач мусить писати **обидва** імені, доки триває переїзд.
+#
+# Перелік «хто читає старі імена» рахував читачів — і саме тому крок 1
+# виглядав завершеним. Але стиснення тримається не тим, що старі імена
+# прибрано, а тим, що їх **нема кому написати**: після `--stysnuty`
+# перша ж посадка повернула б їх назад, по одному наряду за раз, і
+# `znimok --zvirty` був би зелений того дня й червоний за тиждень.
+#
+# Знайшов це М2. Рядок нижче прибирається **разом** із прогоном
+# `--stysnuty`, не раніше й не пізніше.
+def obydva(z: dict) -> dict:
+    """Запис доказу з англійськими іменами поруч зі старими."""
+    MAPA = {"nazva": "title", "zbih": "match", "klas": "status",
+            "dzherelo": "source", "cytata": "quote", "sposib": "method",
+            "notatka": "note", "shukaty": "look_for",
+            "rozrakhunok": "calculation"}
+    SLOVO = {"A": "verbatim", "B": "derived", "C": "named-unreachable",
+             "D": "arithmetic", "E": "no-external-signal", "F": "unchecked",
+             "G": "refuted", "K": "code-context", "L": "looked-not-found"}
+    for st, nov in MAPA.items():
+        if st in z and nov not in z:
+            z[nov] = SLOVO.get(str(z[st]), z[st]) if st == "klas" else z[st]
+    return z
+
+
 def main() -> int:
     import factcheck
     import vybirka
@@ -97,7 +122,12 @@ def main() -> int:
         for r in yaml.safe_load(f.read_text(encoding="utf-8")) or []:
             if not isinstance(r, dict) or str(r.get("rid")) != "dzherelo-ye":
                 continue
-            sh = str(r.get("look_for", "")).strip()
+            # Розбір — **інша схема**, і вона не переїжджає: її ключі
+            # `id`, `rid`, `chomu`, `shukaty`. Переведення на англійські
+            # імена зачепило й це місце, і воно замовкло: `look_for` у
+            # 3221 записах розбору немає жодного разу, тож добір
+            # обирав нуль одиниць і не скаржився.
+            sh = str(r.get("shukaty", "")).strip()
             if RE_DOSYAZHNE.search(sh) or not RE_KONKRETNE.search(sh):
                 continue
             kandydaty.append((str(r.get("id")), sh))
@@ -117,7 +147,7 @@ def main() -> int:
             shyrokyy += 1
             continue
         fayl = u["src"].split("/")[-1].split(":")[0].removesuffix(".md")
-        posadka[fayl].append({
+        posadka[fayl].append(obydva({
             "nazva": f"{oid}: {' '.join(u['tekst'].split()[:8])}",
             "zbih": vz,
             "klas": "C",
@@ -131,7 +161,7 @@ def main() -> int:
                 "означає «джерело назване, цитати немає», а **не** "
                 "«перевірено»."),
             "notatka": "цитати немає; що саме шукати — у полі `shukaty`",
-        })
+        }))
 
     vsoho = sum(len(v) for v in posadka.values())
     print(f"кандидатів {len(kandydaty)} | придатних до посадки {vsoho} | "

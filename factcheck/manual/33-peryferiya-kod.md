@@ -721,6 +721,10 @@ static void IRAM_ATTR isr(void *arg) {
     uint32_t pin = (uint32_t)arg;
     xQueueSendFromISR(cherga, &pin, NULL);
 }
+
+gpio_install_isr_service(0);
+gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
+```
 ````
 
 **Доказ**
@@ -904,6 +908,14 @@ gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);
 
 ```c
 static int64_t ostannya;
+
+static void IRAM_ATTR isr(void *arg) {
+    int64_t teper = esp_timer_get_time();      // мікросекунди
+    if (teper - ostannya < 50000) return;      // 50 мс — ігнорувати
+    ostannya = teper;
+    xQueueSendFromISR(cherga, &teper, NULL);
+}
+```
 ````
 
 **Доказ**
@@ -1037,6 +1049,12 @@ static void IRAM_ATTR isr(void *arg) {
 
 ```c
 static void callback(void *arg) { /* коротко */ }
+
+esp_timer_create_args_t args = { .callback = callback, .name = "opyt" };
+esp_timer_handle_t t;
+esp_timer_create(&args, &t);
+esp_timer_start_periodic(t, 1000000);   // раз на секунду
+```
 ````
 
 **Доказ**
@@ -1266,6 +1284,16 @@ ledc_timer_config_t tcfg = {
     .freq_hz = 5000,
 };
 ledc_timer_config(&tcfg);
+
+ledc_channel_config_t ccfg = {
+    .gpio_num = GPIO_NUM_2,
+    .speed_mode = LEDC_LOW_SPEED_MODE,
+    .channel = LEDC_CHANNEL_0,
+    .timer_sel = LEDC_TIMER_0,
+    .duty = 4096,
+};
+ledc_channel_config(&ccfg);
+```
 ````
 
 **Доказ**
@@ -1874,6 +1902,8 @@ ledc_channel_config(&ccfg);
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** Обчислення: період = 1 / частота
+- **Розрахунок:**
+  період = 1 / частота;  1 / 50 Гц = 0.02 с = 20 мс
 - **Спосіб і дата:** 1 / 50 Гц = 0.02 с = 20 мс, 2026-08-27
 - **Нотатка:** М1 позначив джерело вигаданим, і мав рацію: «сервомеханізм: стандартна частота 50 Гц» — це міркування, а не адреса документа. Але й документ тут не потрібен: із 50 Гц період виводиться діленням. Клас D, зовнішнє джерело зайве. Саме твердження «серво чекає 50 Гц» — окрема одиниця, і вона лишається за даташитом серво (клас C).
 - **Прохід:** m2-94-vybirka
@@ -2219,6 +2249,10 @@ led_strip_handle_t strip;
 led_strip_config_t scfg = { .strip_gpio_num = 18, .max_leds = 30 };
 led_strip_rmt_config_t rcfg = { .resolution_hz = 10 * 1000 * 1000 };
 led_strip_new_rmt_device(&scfg, &rcfg, &strip);
+
+led_strip_set_pixel(strip, 0, 255, 0, 0);
+led_strip_refresh(strip);
+```
 ````
 
 **Доказ**
@@ -2673,6 +2707,16 @@ PCNT уміє й апаратний фільтр коротких сплескі
 adc_oneshot_unit_handle_t adc;
 adc_oneshot_unit_init_cfg_t ucfg = { .unit_id = ADC_UNIT_1 };
 adc_oneshot_new_unit(&ucfg, &adc);
+
+adc_oneshot_chan_cfg_t ccfg = {
+    .bitwidth = ADC_BITWIDTH_DEFAULT,
+    .atten = ADC_ATTEN_DB_12,
+};
+adc_oneshot_config_channel(adc, ADC_CHANNEL_6, &ccfg);
+
+int raw;
+adc_oneshot_read(adc, ADC_CHANNEL_6, &raw);
+```
 ````
 
 **Доказ**
@@ -3144,6 +3188,10 @@ adc_cali_curve_fitting_config_t cfg = {
     .bitwidth = ADC_BITWIDTH_DEFAULT,
 };
 adc_cali_create_scheme_curve_fitting(&cfg, &cali);
+
+int mv;
+adc_cali_raw_to_voltage(cali, raw, &mv);
+```
 ````
 
 **Доказ**

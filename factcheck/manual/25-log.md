@@ -1433,6 +1433,13 @@ ESP-IDF дає п'ять рівнів і поняття тега.
 
 ```c
 static const char *TAG = "PUMP";
+
+ESP_LOGE(TAG, "аварія: тиск %d поза межами", p);  // Error
+ESP_LOGW(TAG, "тиск близько до межі: %d", p);     // Warning
+ESP_LOGI(TAG, "насос увімкнено");                 // Info
+ESP_LOGD(TAG, "цикл %d, стан %d", i, state);      // Debug
+ESP_LOGV(TAG, "сирі дані: %02x", raw);            // Verbose
+```
 ````
 
 **Доказ**

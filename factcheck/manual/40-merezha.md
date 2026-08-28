@@ -260,6 +260,14 @@ Wi-Fi дає канал; далі треба вирішити, що по ньо�
 httpd_config_t cfg = HTTPD_DEFAULT_CONFIG();
 httpd_handle_t server = NULL;
 httpd_start(&server, &cfg);
+
+httpd_uri_t uri = {
+    .uri = "/api/stan",
+    .method = HTTP_GET,
+    .handler = stan_handler,
+};
+httpd_register_uri_handler(server, &uri);
+```
 ````
 
 **Доказ**
@@ -1543,6 +1551,9 @@ esp_mqtt_client_config_t cfg = {
 esp_mqtt_client_handle_t client = esp_mqtt_client_init(&cfg);
 esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, handler, NULL);
 esp_mqtt_client_start(client);
+
+esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
+```
 ````
 
 **Доказ**

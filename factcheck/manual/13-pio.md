@@ -1204,6 +1204,14 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 framework = arduino
 monitor_speed = 115200
 lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2
+
+[env:classic]
+board = esp32dev
+
+[env:s3]
+board = esp32-s3-devkitc-1
+build_flags = -DHAS_PSRAM
+```
 ````
 
 **Доказ**

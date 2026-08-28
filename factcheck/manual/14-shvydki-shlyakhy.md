@@ -151,6 +151,12 @@
 ```python
 from machine import Pin
 import time
+
+led = Pin(2, Pin.OUT)
+while True:
+    led.value(not led.value())
+    time.sleep(0.5)
+```
 ````
 
 **Доказ**
@@ -547,6 +553,23 @@ Python, поріг входу мінімальний.
 ```yaml
 esphome:
   name: datchyk-teplytsi
+
+esp32:
+  board: esp32dev
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+sensor:
+  - platform: bme280_i2c
+    temperature:
+      name: "Температура"
+    humidity:
+      name: "Вологість"
+    address: 0x76
+    update_interval: 60s
+```
 ````
 
 **Доказ**

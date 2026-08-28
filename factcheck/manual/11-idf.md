@@ -680,7 +680,6 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 alias idf6='. ~/esp/esp-idf-v6.0.2/export.sh'
 alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 ```
-:::
 ````
 
 **Доказ**

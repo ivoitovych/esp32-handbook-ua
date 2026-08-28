@@ -719,6 +719,16 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.4.bin
 ## Скрипт: те, що робить процес повторюваним
 
 ```sh
+#!/bin/sh
+set -e
+PORT="${1:?вкажіть порт: ./flash.sh /dev/ttyUSB0}"
+IMAGE=vyrib-v1.4.bin
+
+esptool --port "$PORT" --baud 460800 write-flash -z 0x0 "$IMAGE"
+esptool --port "$PORT" verify-flash 0x0 "$IMAGE"
+esptool --port "$PORT" read-mac | grep -i "MAC:"
+echo "OK: $PORT"
+```
 ````
 
 **Доказ**

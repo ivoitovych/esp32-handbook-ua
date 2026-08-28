@@ -1862,6 +1862,13 @@ boot loop (розділ 20) це означає блимання насосом 
 ```
    5 В ──── VCC модуля реле
    GND ──── GND модуля  (спільна з ESP32)
+
+GPIO25 ──┬──[220 Ом]──── IN модуля
+         │
+      [10 кОм]  ← напрямок підтяжки залежить від модуля, див. нижче
+         │
+       GND  або  3V3
+```
 ````
 
 **Доказ**
@@ -2895,6 +2902,19 @@ typedef enum {
     STAN_AVARIYA,       // помилка, потрібне ручне скидання
     STAN_BLOKUVANNYA,   // пауза після роботи
 } stan_t;
+
+static stan_t stan = STAN_STOP;
+static int64_t stan_vid;
+
+static void perejty(stan_t novyy, const char *prychyna) {
+    if (novyy == stan) return;
+    ESP_LOGI(TAG, "%s -> %s: %s", nazva(stan), nazva(novyy), prychyna);
+    stan = novyy;
+    stan_vid = esp_timer_get_time();
+    nasos_keruvaty(novyy == STAN_ROBOTA);
+    onovyty_indykaciyu();
+}
+```
 ````
 
 **Доказ**
@@ -3079,6 +3099,36 @@ static void perejty(stan_t novyy, const char *prychyna) {
 ## Захисти
 
 ```c
+#define MAX_ROBOTY_S     600      // 10 хвилин безперервно
+#define PAUZA_PISLYA_S   300      // 5 хвилин відпочинку
+#define ZV_YAZOK_TAIMAUT 120      // втрата зв'язку
+
+static void task_keruvannya(void *arg) {
+    esp_task_wdt_add(NULL);
+    while (1) {
+        esp_task_wdt_reset();
+        int64_t u_stani = (esp_timer_get_time() - stan_vid) / 1000000;
+
+        // 1. Аварійна кнопка — найвищий пріоритет
+        if (!gpio_get_level(PIN_STOP))
+            perejty(STAN_AVARIYA, "натиснуто СТОП");
+
+        // 2. Сухий хід: працюємо, а рівня немає
+        if (stan == STAN_ROBOTA && !riven_ye() && u_stani > 10)
+            perejty(STAN_AVARIYA, "сухий хід: немає рівня");
+
+        // 3. Ліміт часу безперервної роботи
+        if (stan == STAN_ROBOTA && u_stani > MAX_ROBOTY_S)
+            perejty(STAN_BLOKUVANNYA, "перевищено ліміт часу");
+
+        // 4. Кінець паузи
+        if (stan == STAN_BLOKUVANNYA && u_stani > PAUZA_PISLYA_S)
+            perejty(STAN_STOP, "пауза завершена");
+
+        vTaskDelay(pdMS_TO_TICKS(100));
+    }
+}
+```
 ````
 
 **Доказ**
@@ -4279,6 +4329,26 @@ static esp_err_t cmd_handler(httpd_req_t *req) {
     int n = httpd_req_recv(req, buf, sizeof(buf) - 1);
     if (n <= 0) return ESP_FAIL;
     buf[n] = 0;
+
+    if (strcmp(buf, "pusk") == 0) {
+        if (stan == STAN_AVARIYA)
+            httpd_resp_sendstr(req, "avariya: potriben skydannya");
+        else if (!riven_ye())
+            httpd_resp_sendstr(req, "nemaye rivnya");
+        else {
+            perejty(STAN_ROBOTA, "команда з мережі");
+            httpd_resp_sendstr(req, "ok");
+        }
+    } else if (strcmp(buf, "stop") == 0) {
+        perejty(STAN_STOP, "команда з мережі");
+        httpd_resp_sendstr(req, "ok");
+    } else if (strcmp(buf, "skydannya") == 0) {
+        if (stan == STAN_AVARIYA) perejty(STAN_STOP, "ручне скидання");
+        httpd_resp_sendstr(req, "ok");
+    }
+    return ESP_OK;
+}
+```
 ````
 
 **Доказ**

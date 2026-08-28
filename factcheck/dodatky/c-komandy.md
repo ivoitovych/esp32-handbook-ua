@@ -156,6 +156,12 @@
 ### Розвідка
 
 ```
+# сімейство, ревізію і MAC друкує шапка з'єднання — перед будь-якою
+# командою; окремої команди для цього немає (розділ 17)
+esptool --port /dev/ttyUSB0 flash-id         # виробник і обсяг флешу
+esptool --port /dev/ttyUSB0 read-mac
+esptool version
+```
 ````
 
 **Доказ**
@@ -513,6 +519,10 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 ```
 esptool --port PORT --baud 460800 write-flash -z \
   0x1000 bootloader.bin 0x8000 partition-table.bin 0x10000 app.bin
+
+esptool --port PORT write-flash 0x0 merged.bin          # зібраний образ
+esptool --port PORT verify-flash 0x10000 app.bin        # звірити
+```
 ````
 
 **Доказ**

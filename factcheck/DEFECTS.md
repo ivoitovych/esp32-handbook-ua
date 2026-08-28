@@ -21,7 +21,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Nine of the nineteen kinds below are one family. The check runs, it
+Nine of the twenty-one kinds below are one family. The check runs, it
 returns zero, and the zero means nothing — because it was never
 measuring the thing its name claims.
 
@@ -389,6 +389,49 @@ not just the fields a status demands (demonstrated on a fabricated
 state). Divergence between copies is checked by comparing all pairs;
 the contraction step removes the second copy for good.
 
+## 20. One unit carrying two claims
+
+**Symptom.** A unit states two things. Evidence settles one. The unit's
+class takes the **stronger half**, and nothing shows that the weaker
+half is unsourced — so the unit reads as fully verified.
+
+**Case.** Found by the other maintainer while closing six records:
+
+    "Modern routers often share one name across both bands"  ← no source
+    "ESP32 cannot see 5 GHz"                                 ← datasheet, p.1
+
+    "Lithium will not charge below 0 °C"   ← specification, verbatim
+    "and loses capacity in the cold"       ← a GRAPH in the Samsung 25R
+                                             sheet, and a graph is not a
+                                             substring of text
+
+> This is the mirror of the split defect. There, splitting **cut** a
+> thought in half and produced a false contradiction. Here, splitting
+> **fused** two thoughts and produces a false verification. The flaw is
+> the same one — the boundary of a unit — and no check asks about it.
+
+**Held by.** Nothing. The maintainer wrote it out in the note instead of
+hiding it in the class, which is the only defence available today.
+
+## 21. A boundary scan that does not know its own format
+
+**Symptom.** A tool walks text to find where a block ends, using a rule
+from one syntax while standing inside another.
+
+**Case.** The card's context stopped at the first blank line — correct
+for a paragraph, wrong inside a fenced code block, where a blank line is
+content. A panic dump was shown as **one line of eight**, while the card
+claimed to be giving surroundings.
+
+**58 cards, all of kind `kod`.** Invisible to every check we had, and
+found by the other maintainer's `layer1.py` asking a question neither of
+us had asked: *does the context contain its own claim?*
+
+> Kind 5 inside its own antidote: the block built to show a whole
+> thought was showing half of one.
+
+**Held by.** `layer1.py` — and the boundary scan is now fence-aware.
+
 ---
 
 ## What has no automatic check
@@ -400,6 +443,7 @@ Stated plainly, because a catalogue that hides its gaps is kind 3.
   field. Found by reading, twice.
 - **Kind 12** — nothing can tell whether a file was opened before it
   was classified.
+- **Kind 20** — nothing detects a unit that carries two claims.
 - **Kind 15** — caught only because two gates happened to disagree.
   The missing state it exposed is still missing.
 - **Layer 2 entirely** — whether a quote actually *supports* a claim is

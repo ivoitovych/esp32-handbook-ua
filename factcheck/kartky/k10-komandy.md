@@ -130,6 +130,16 @@
 ## esptool
 
 ```
+# що за чип і ревізія — у шапці з'єднання перед будь-якою командою
+esptool --port /dev/ttyUSB0 flash-id           # обсяг і виробник флешу
+esptool --port /dev/ttyUSB0 read-flash 0 ALL dump.bin      # повний дамп
+esptool --port /dev/ttyUSB0 write-flash -z 0x10000 app.bin # залити
+esptool --port /dev/ttyUSB0 verify-flash 0x10000 app.bin   # звірити
+esptool --port /dev/ttyUSB0 erase-flash        # стерти все (⚠ див. К2)
+esptool --port /dev/ttyUSB0 --baud 115200 ...  # повільніше, надійніше
+esptool --chip esp32 merge-bin -o all.bin --flash-mode dio \
+  0x1000 boot.bin 0x8000 pt.bin 0x10000 app.bin   # --chip обов'язковий; 0x1000 → classic/S2, інші чипи — див. таблицю
+```
 ````
 
 **Доказ**
