@@ -121,7 +121,16 @@ def perevirka(shlyakh):
         dzherelo = str(z.get('source', ''))
         cytata = str(z.get('quote', '')).strip()
 
-        if KNYHA.search(dzherelo) and klas != 'no-external-signal':
+        # `self-consistent` (клас `S`) — це **правильна** відповідь на
+        # «книга як власне джерело», а не порушення. Заведено М1
+        # 2026-08-28T19:15Z саме на ці 21 запис; вимагає шляху до файлу
+        # книги й проходить шар 3 проти книги, тож звірка тут не
+        # обіцянка, а зроблена робота.
+        #
+        # `no-external-signal` лишається дозволеним із іншої причини:
+        # там звірки не було й не буде.
+        if (KNYHA.search(dzherelo)
+                and klas not in ('no-external-signal', 'self-consistent')):
             if VNUTRISHNYA.match(dzherelo):
                 bidy.append(('ВНУТРІШНЯ ЗВІРКА ПІД КЛАСОМ ' + klas, nazva, ''))
             else:
