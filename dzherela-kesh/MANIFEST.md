@@ -318,7 +318,7 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `led-red-wp7113id.pdf` | `b5bb33f69c13fd92ab6d47a8fd71168b6e7ee685139c8f381957aeea9286c9da` | 362307 | 2026-08-26 | <https://www.kingbrightusa.com/images/catalog/SPEC/WP7113ID.pdf> |
 | `ledc.rst` | `b98e37635f4dba363025b4174bf1d548f3d89bdf751705e6f730a05bb7827ef3` | 23515 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst> |
 | `lghg2.pdf` | `13a74b9690c20f28f6ac36e12b06f8cce7b944d57c78682ff92131292f303b4f` | 345290 | 2026-08-26 | <https://www.batteryspace.com/prod-specs/9989.specs.pdf> |
-| `lgmj1.pdf` | `c43a6ba93862318906a7fe8f2e34593890b1aa340ee59ff87e81bcfd8f1e8fc7` | 334905 | 2026-08-26 | <https://enerpower.de/wp-content/uploads/2016/03/Specification_INR18650MJ1.pdf> |
+| `4e0880ce-Specification_INR18650MJ1.pdf` | `c43a6ba93862318906a7fe8f2e34593890b1aa340ee59ff87e81bcfd8f1e8fc7` | 334905 | 2026-08-26 | <https://enerpower.de/wp-content/uploads/2016/03/Specification_INR18650MJ1.pdf> |
 | `loader.py` | `0422e31127c8769c4a9486a28d5d668246fee143ab38320de7bbf6d6c11767aa` | 90127 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esptool/master/esptool/loader.py> |
 | `log.rst` | `0ac055b9da921788c10c23c9633cc17773b0a3d92e69c1f3814d12282d69699b` | 41899 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst> |
 | `machine.Pin.rst` | `bc97c94b8d09b0df4d3721ac0a79beb8ed0d41a8926c38cac727e7e93a6d45f7` | 12871 | 2026-08-27 | <https://raw.githubusercontent.com/micropython/micropython/master/docs/library/machine.Pin.rst> |
