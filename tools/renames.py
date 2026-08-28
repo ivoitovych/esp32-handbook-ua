@@ -86,7 +86,90 @@ TABLYCYA = {
 # тікаємо. Пропозиція піде листом.
 NE_CHIPATY = {"naryad-m2", "perevirka-tsytat-m2"}
 
-NEZMINNI = ("zvyazok/", "HISTORY.", "reviews/", ".git/", "__pycache__")
+# Каталоги. `manual`, `dodatky`, `kartky`, `inserts` лишаються: вони
+# повторюють будову самої книги, а книга українська.
+#
+# `zvyazok/` теж лишається, і з іншої причини: усередині 158 незмінних
+# листів, які посилаються одне на одного й на сам каталог. Перейменувати
+# його — значить або переписати незмінне, або лишити 417 мертвих
+# посилань. Це рішення за двох, і воно піде листом.
+KATALOHY = {
+    "factcheck/dokazy": "factcheck/evidence",
+    "factcheck/rozbir": "factcheck/triage",
+    "factcheck/prokhid-vidkydka": "factcheck/pass-rejected",
+    "factcheck/prokhid": "factcheck/pass",
+    "factcheck/doslidy": "factcheck/experiments",
+    "factcheck/znimky": "factcheck/snapshots",
+    "factcheck/detali": "factcheck/details",
+    "factcheck/klasC": "factcheck/class-c",
+    "factcheck/hvylya2": "factcheck/wave2",
+    "factcheck/hvylya3": "factcheck/wave3",
+    "factcheck/slidy-m2": "factcheck/leads-theirs",
+    "dzherela-kesh": "source-cache",
+}
+
+# Ім'я каталогу — це **складник шляху**, і тільки він. Дві редакції
+# цього правила були надто широкі, кожна по-своєму, і обидві варті
+# запису, бо обидві виглядали очевидно правильними.
+#
+# Перша дозволяла будь-яку межу слова, і `prokhid → pass` перетворило
+# місцеву змінну на ключове слово Python:
+#
+#     for (pass, nazva), ids in sorted(...)      SyntaxError
+#
+# Два файли перестали компілюватися. Показово, що жоден звіт цього б не
+# сказав: вони просто зникли б із переліку точок входу.
+#
+# Друга дозволяла «слово в лапках цілком». У прозі це слушно — там
+# `` `dokazy` `` і справді каталог. У коді ні: у лапках стоять і ключі
+# словників, і мітки. Вона перейменувала `n["detali"]` — ключ **звіту
+# помічника**, схеми, якої ніхто не переїжджав, — і `layer3 --zvit`
+# упав із `KeyError`; а тему `"detali"` в поділі черги перетворила на
+# `details` і мовчки зсунула звіт.
+#
+# > Заміна за лапками не знає, чи це шлях. Вона знає лише, що там лапки.
+#
+# Тому правило залежить від мови файлу. У коді шлях будується скісною
+# (`ROOT / "dokazy"` — 15 випадків із 15), і саме її ми й вимагаємо.
+_SHLYAKH = (r"(?<=/){imya}(?=[/\"'`\s)\],:]|$)"
+            r"|{imya}(?=/)")
+KRAY_U_PROZI = _SHLYAKH + r"|(?<=[\"'`]){imya}(?=[\"'`])"
+KRAY_U_KODI = _SHLYAKH + r"|(?<=/ [\"']){imya}(?=[\"'])"
+
+NEZMINNI = ("zvyazok/", "HISTORY.", "reviews/", ".git/", "__pycache__",
+            # Інструмент лежить у дереві, яке переписує. Перший прогін
+            # переписав власну таблицю каталогів на тотожність
+            # (`evidence → evidence`) і стер мапу.
+            "tools/renames.py")
+
+
+def katalohy(pary: dict[str, str], suho: bool) -> int:
+    """Перейменування каталогів — за межею шляху, а не за межею слова."""
+    for stare, nove in pary.items():
+        if not (ROOT / stare).exists():
+            print(f"  ! немає {stare}")
+            continue
+        print(f"  {stare}/ → {nove}/")
+        if not suho:
+            subprocess.run(["git", "mv", stare, nove], cwd=ROOT, check=True)
+
+    korotki = {s.split("/")[-1]: n.split("/")[-1] for s, n in pary.items()}
+    torknuto = 0
+    for p, vidn in obhid():
+        try:
+            t = st = p.read_text(encoding="utf-8")
+        except (UnicodeDecodeError, OSError):
+            continue
+        pravylo = KRAY_U_KODI if p.suffix == ".py" else KRAY_U_PROZI
+        n = 0
+        for stare, nove in sorted(korotki.items(), key=lambda x: -len(x[0])):
+            t, k = re.subn(pravylo.format(imya=re.escape(stare)), nove, t)
+            n += k
+        if n and t != st:
+            torknuto += 1
+            if not suho:
+                p.write_text(t, encoding="utf-8")
+    return torknuto
 
 
 def obhid():
@@ -167,7 +250,20 @@ def main() -> int:
     a.add_argument("--usi", action="store_true")
     a.add_argument("--pokazaty", action="store_true",
                    help="нічого не міняти, лише показати")
+    a.add_argument("--kataloh", action="append", default=[],
+                   help="перейменувати каталог (шлях від кореня)")
     o = a.parse_args()
+
+    if o.kataloh:
+        nev = set(o.kataloh) - set(KATALOHY)
+        if nev:
+            print(f"невідомі каталоги: {', '.join(sorted(nev))}")
+            return 2
+        pary = {k: v for k, v in KATALOHY.items() if k in o.kataloh}
+        print(f"каталогів: {len(pary)}"
+              f"{'  (СУХИЙ ПРОГІН)' if o.pokazaty else ''}")
+        print(f"файлів торкнуто: {katalohy(pary, suho=o.pokazaty)}")
+        return 0
 
     pary = ({k: v for k, v in TABLYCYA.items() if k in o.tilky}
             if o.tilky else TABLYCYA if (o.usi or o.pokazaty) else {})
