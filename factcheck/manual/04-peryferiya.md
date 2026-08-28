@@ -915,7 +915,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Джерело:** source-cache/5827f9c3-twai.rst
 - **Дослівно з джерела:**
   > TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication protocol designed for automotive and industrial applications. It is compatible with the frame structure defined in the ISO 11898-1 standard
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1272,7 +1272,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/da11cdab-ledc.rst
+- **Джерело:** source-cache/da11cdab-ledc.rst
 - **Дослівно з джерела:**
   > The LED control (LEDC) peripheral is primarily designed to control the intensity of LEDs, although it can also be used to generate PWM signals for other purposes.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1723,7 +1723,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Джерело:** source-cache/f48eaf67-dac.rst
 - **Дослівно з джерела:**
   > has two 8-bit DAC (digital to analog converter) channels respectively connected to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3488,7 +3488,7 @@ PWM теж можна, але саме ці функції рятують сил
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Джерело:** source-cache/5827f9c3-twai.rst
 - **Дослівно з джерела:**
   > The TWAI controllers on the {IDF_TARGET_NAME} also compatible with FD format (a.k.a. CAN FD) frames defined in ISO 11898-1, and can transmit and receive both classic and FD format frames.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3715,7 +3715,7 @@ PWM теж можна, але саме ці функції рятують сил
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Джерело:** source-cache/f48eaf67-dac.rst
 - **Дослівно з джерела:**
   > The DAC on {IDF_TARGET_NAME} has two channels.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3752,7 +3752,7 @@ PWM теж можна, але саме ці функції рятують сил
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Джерело:** source-cache/f48eaf67-dac.rst
 - **Дослівно з джерела:**
   > The DAC on {IDF_TARGET_NAME} has two channels.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -4625,7 +4625,7 @@ PWM теж можна, але саме ці функції рятують сил
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Джерело:** source-cache/f48eaf67-dac.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -5062,7 +5062,7 @@ DAC — тільки classic і S2. Touch — тільки classic, S2, S3.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Джерело:** source-cache/f48eaf67-dac.rst
 - **Дослівно з джерела:**
   > On ESP32, the DAC digital controller can be connected internally to the I2S0
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -5092,7 +5092,7 @@ DAC — тільки classic і S2. Touch — тільки classic, S2, S3.
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 10 touch sensors
-- **Спосіб і дата:** Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2 «14 touch sensing GPIOs» (dzherela-kesh/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох документів разом.
+- **Спосіб і дата:** Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2 «14 touch sensing GPIOs» (source-cache/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох документів разом.
 - **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
 2026-08-28. Було двоє негараздів, обидва мовчазні.
 ПЕРШЕ: клас стояв verbatim, а джерелом була проза без URL («ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section»). Шар 3 такий запис перевірити не міг.

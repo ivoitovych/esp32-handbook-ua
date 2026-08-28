@@ -44,7 +44,7 @@
   zbih: MCP23017 · Що дає → розширювач, 16 пінів
   klas: A
   dzherelo: 'Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features»
-    (кеш: dzherela-kesh/mcp23017.pdf)'
+    (кеш: source-cache/mcp23017.pdf)'
   cytata: "MCP23017/MCP23S17\n16-Bit I/O Expander with Serial Interface\n\nFeatures\n• 16-Bit Remote Bidirectional\
     \ I/O Port:\n  - I/O pins default to input\n"
   sposib: PDF Microchip, кеш `mcp23017.pdf`, pdftotext -layout, 2026-08-26
@@ -55,7 +55,7 @@
   match: MCP23017 · Що дає → розширювач, 16 пінів
   status: verbatim
   source: 'Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features»
-    (кеш: dzherela-kesh/mcp23017.pdf)'
+    (кеш: source-cache/mcp23017.pdf)'
   quote: "MCP23017/MCP23S17\n16-Bit I/O Expander with Serial Interface\n\nFeatures\n• 16-Bit Remote Bidirectional\
     \ I/O Port:\n  - I/O pins default to input\n"
   method: PDF Microchip, кеш `mcp23017.pdf`, pdftotext -layout, 2026-08-26
@@ -68,7 +68,7 @@
   zbih: TFT ILI9341 · Інтерфейс → SPI
   klas: A
   dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
-    Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: dzherela-kesh/ili9341.pdf)'
+    Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: source-cache/ili9341.pdf)'
   cytata: 'ILI9341
 
     a-Si TFT LCD Single Chip Driver
@@ -93,7 +93,7 @@
   match: TFT ILI9341 · Інтерфейс → SPI
   status: verbatim
   source: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
-    Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: dzherela-kesh/ili9341.pdf)'
+    Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: source-cache/ili9341.pdf)'
   quote: 'ILI9341
 
     a-Si TFT LCD Single Chip Driver

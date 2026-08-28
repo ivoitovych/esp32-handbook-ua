@@ -159,7 +159,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ncr18650b.pdf
+- **Джерело:** source-cache/ncr18650b.pdf
 - **Дослівно з джерела:**
   > Discharge: CC 1C, 2.50V cut-off at 25°C
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

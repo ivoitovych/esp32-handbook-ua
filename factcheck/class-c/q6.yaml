@@ -1,24 +1,24 @@
 - id: "T-23-023 — Суфікс модуля кодує обсяг флешу й PSRAM"
   verdykt: ne_znayshov
   dyvyvsya: |
-    dzherela-kesh/56497005-external-ram.rst; документ про ESP-IDF конфігурацію PSRAM; шуката: T-23-023, Суфікс, назва модуля; про номенклатуру не йдеться.
+    source-cache/56497005-external-ram.rst; документ про ESP-IDF конфігурацію PSRAM; шуката: T-23-023, Суфікс, назва модуля; про номенклатуру не йдеться.
 - id: "Октальна PSRAM на S3 використовує п'ять додаткових пінів"
   verdykt: ne_znayshov
   dyvyvsya: |
-    dzherela-kesh/56497005-external-ram.rst; документ про конфігурацію ESP-IDF; шуката: octal, PSRAM, S3, pins; про розпіновку PSRAM не йдеться.
+    source-cache/56497005-external-ram.rst; документ про конфігурацію ESP-IDF; шуката: octal, PSRAM, S3, pins; про розпіновку PSRAM не йдеться.
 - id: "Суфікс в назві ESP32 плати кодує обсяг флеш та PSRAM: N8, N16R8 і т.д."
   verdykt: ne_znayshov
   dyvyvsya: |
-    dzherela-kesh/56497005-external-ram.rst; документ про конфігурацію ESP-IDF; шуката: N8, N16R8, suffix, naming; про номенклатуру модулів не йдеться.
+    source-cache/56497005-external-ram.rst; документ про конфігурацію ESP-IDF; шуката: N8, N16R8, suffix, naming; про номенклатуру модулів не йдеться.
 - id: "Помилка 0xc (SW_CPU_RESET) — типово після паніки"
   verdykt: ne_znayshov
   dyvyvsya: |
-    dzherela-kesh/569e266f-fatal-errors.rst; документ про обробку помилок ESP-IDF; шуката: 0xc, SW_CPU_RESET, error code; цей код помилки не згадується.
+    source-cache/569e266f-fatal-errors.rst; документ про обробку помилок ESP-IDF; шуката: 0xc, SW_CPU_RESET, error code; цей код помилки не згадується.
 - id: "Код помилки 0xc: програмне скидання ядра"
   verdykt: ne_znayshov
   dyvyvsya: |
-    dzherela-kesh/569e266f-fatal-errors.rst; документ про обробку помилок ESP-IDF; шуката: 0xc, SW_CPU_RESET, software reset; про цей код не йдеться.
+    source-cache/569e266f-fatal-errors.rst; документ про обробку помилок ESP-IDF; шуката: 0xc, SW_CPU_RESET, software reset; про цей код не йдеться.
 - id: "DS3231 та MPU6050 мають однакову I2C адресу 0x68"
   verdykt: ne_znayshov
   dyvyvsya: |
-    dzherela-kesh/mpu6050.pdf; PDF підтверджує адресу 0x68 для MPU6050; про DS3231 в документі не йдеться.
+    source-cache/mpu6050.pdf; PDF підтверджує адресу 0x68 для MPU6050; про DS3231 в документі не йдеться.

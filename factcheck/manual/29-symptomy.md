@@ -1212,7 +1212,7 @@ ESP32 **не бачить мереж 5 ГГц** — це найчастіша п
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/i2c-um10204.pdf
+- **Джерело:** source-cache/i2c-um10204.pdf
 - **Дослівно з джерела:**
   > Each device connected to the bus is software addressable by a unique address
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

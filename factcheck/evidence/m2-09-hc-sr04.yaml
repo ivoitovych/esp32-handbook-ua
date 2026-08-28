@@ -27,7 +27,7 @@
     обов.язковий
   klas: B
   dzherelo: 'Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — «Electric Parameter» і «Wire connecting»
-    (кеш: dzherela-kesh/hc-sr04.pdf)'
+    (кеш: source-cache/hc-sr04.pdf)'
   cytata: "Wire connecting direct as following:\n  5V Supply\n  Trigger Pulse Input\n  Echo Pulse Output\n\
     \  0V Ground\n\nElectric Parameter\n  Working Voltage        DC 5 V\n  Echo Output Signal     Input\
     \ TTL lever signal and the range in proportion\n"
@@ -43,7 +43,7 @@
     обов.язковий
   status: derived
   source: 'Ultrasonic Ranging Module HC-SR04, datasheet ElecFreaks — «Electric Parameter» і «Wire connecting»
-    (кеш: dzherela-kesh/hc-sr04.pdf)'
+    (кеш: source-cache/hc-sr04.pdf)'
   quote: "Wire connecting direct as following:\n  5V Supply\n  Trigger Pulse Input\n  Echo Pulse Output\n\
     \  0V Ground\n\nElectric Parameter\n  Working Voltage        DC 5 V\n  Echo Output Signal     Input\
     \ TTL lever signal and the range in proportion\n"

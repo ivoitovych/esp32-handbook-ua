@@ -54,5 +54,5 @@
 
 **`T-30-067`**
 
-- де шукати (здогад, не перевірений): ESP-IDF Programming Guide, api-reference/system/mem_alloc.rst — розділ про фрагментацію купи; у кеші вже є dzherela-kesh/*-mem_alloc.rst
+- де шукати (здогад, не перевірений): ESP-IDF Programming Guide, api-reference/system/mem_alloc.rst — розділ про фрагментацію купи; у кеші вже є source-cache/*-mem_alloc.rst
 

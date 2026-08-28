@@ -13,7 +13,7 @@
   propozyciya: >-
     ESP-IDF Programming Guide, api-reference/system/mem_alloc.rst —
     розділ про фрагментацію купи; у кеші вже є
-    dzherela-kesh/*-mem_alloc.rst
+    source-cache/*-mem_alloc.rst
   notatka: >-
     Твердження: коли вільно 40 КБ найбільшим шматком 2 КБ, malloc(8192)
     не вдається. Це поведінка розподільника, і вона задокументована.
@@ -32,7 +32,7 @@
   propozyciya: >-
     ESP32 Series Datasheet і ESP32-C3 Series Datasheet — обсяги SRAM
     (classic 520 КБ, C3 400 КБ); перший у кеші
-    (dzherela-kesh/21953a2f-esp32_datasheet_en.pdf), другого немає
+    (source-cache/21953a2f-esp32_datasheet_en.pdf), другого немає
   notatka: >-
     Числа перевіряються, рекомендація «для нового проєкту брати S3» —
     позиція автора й перевірці не підлягає. Розділяти при відпрацюванні.

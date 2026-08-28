@@ -1966,7 +1966,7 @@ ESP32 як допоміжного (companion) контролера — вузл�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Джерело:** source-cache/19d515b8-burn-efuse-cmd.rst
 - **Дослівно з джерела:**
   > This is an irreversible operation!
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

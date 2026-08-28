@@ -106,8 +106,8 @@
   zbih: У\s+наступному\s+поколінні|бутлоадер\s+став\s+на\s+`0x0`
   klas: A
   dzherelo: 'ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst,
-    рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst,
-    dzherela-kesh/a4dbe955-bootloader.rst)'
+    рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst,
+    source-cache/a4dbe955-bootloader.rst)'
   cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000",
     esp32c5="0x2000", esp32s31="0x2000"}
 
@@ -123,8 +123,8 @@
   match: У\s+наступному\s+поколінні|бутлоадер\s+став\s+на\s+`0x0`
   status: verbatim
   source: 'ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst,
-    рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst,
-    dzherela-kesh/a4dbe955-bootloader.rst)'
+    рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst,
+    source-cache/a4dbe955-bootloader.rst)'
   quote: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000",
     esp32c5="0x2000", esp32s31="0x2000"}
 
@@ -244,8 +244,8 @@
   zbih: bootloader.*`0x0`|S3.*C3.*C6.*H2.*`0x0`
   klas: A
   dzherelo: 'ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst,
-    рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst,
-    dzherela-kesh/a4dbe955-bootloader.rst)'
+    рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst,
+    source-cache/a4dbe955-bootloader.rst)'
   cytata: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000",
     esp32c5="0x2000", esp32s31="0x2000"}
 
@@ -261,8 +261,8 @@
   match: bootloader.*`0x0`|S3.*C3.*C6.*H2.*`0x0`
   status: verbatim
   source: 'ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst,
-    рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst,
-    dzherela-kesh/a4dbe955-bootloader.rst)'
+    рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst,
+    source-cache/a4dbe955-bootloader.rst)'
   quote: '{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000",
     esp32c5="0x2000", esp32s31="0x2000"}
 

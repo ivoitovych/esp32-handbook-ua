@@ -1417,7 +1417,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > IDF Monitor can be launched from an ESP-IDF project by running idf.py monitor
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1699,7 +1699,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > If an ESP-IDF app crashes and panics, a register dump and backtrace are produced
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2909,7 +2909,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 - **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
 - **Джерело:** ESP32 документація про режими скидання та обробку помилок; Практичний досвід налагодження паніки ESP32
 - **Спосіб і дата:** Аналіз таблиці режимів скидання в розділі паніки
-- **Нотатка:** Твердження про те, що 0xc (SW_CPU_RESET) типово трапляється після паніки, базується на розумінні потоку паніки в ESP-IDF: коли виявлена помилка, ядро виконує дамп та програмне скидання. Однак у dzherela-kesh не знайдено точної цитати, яка б явно стверджувала це. Джерело логічне (паніка → скидання), але висловлено в практичних термінах, а не в офіційній документації. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Нотатка:** Твердження про те, що 0xc (SW_CPU_RESET) типово трапляється після паніки, базується на розумінні потоку паніки в ESP-IDF: коли виявлена помилка, ядро виконує дамп та програмне скидання. Однак у source-cache не знайдено точної цитати, яка б явно стверджувала це. Джерело логічне (паніка → скидання), але висловлено в практичних термінах, а не в офіційній документації. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
 - **Прохід:** m2-91-vybirka
 
 ---
@@ -3315,7 +3315,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > coredump (0x03) is for storing core dumps while using a custom partition table CSV file.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

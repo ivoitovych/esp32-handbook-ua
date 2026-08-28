@@ -499,7 +499,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с. 30 (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с. 30 (кеш: source-cache/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Table 4-2. Power Consumption by Power Modes
   > Power mode          Description                      Power Consumption
@@ -2423,7 +2423,7 @@ esp_deep_sleep_start();                          // назад не поверт
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ncr18650b.pdf
+- **Джерело:** source-cache/ncr18650b.pdf
 - **Дослівно з джерела:**
   > Rated capacity(1) Min. 3200mAh Capacity(2) Min. 3250mAh Typ. 3350mAh
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

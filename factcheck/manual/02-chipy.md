@@ -3610,7 +3610,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-c3_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > • SRAM: 400 KB (16 KB for cache)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -3808,7 +3808,7 @@ Espressif послідовно переходить на RISC-V у нових ч
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -4147,7 +4147,7 @@ idf.py set-target esp32s3
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-c5_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-c5_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 2.4 and 5 GHz dual-band Wi-Fi 6 (802.11ax)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -4642,7 +4642,7 @@ S3. Актуальна наявність — у датованому вклад
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-c3_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 400 KB of on-chip SRAM: for data and instructions
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -5138,7 +5138,7 @@ S3. Актуальна наявність — у датованому вклад
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-c5_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-c5_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 1T1R in 2.4 and 5 GHz dual band
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

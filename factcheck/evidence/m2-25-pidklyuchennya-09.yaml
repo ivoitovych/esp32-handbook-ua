@@ -58,7 +58,7 @@
   zbih: '`CH340`.*драйвер із сайту WCH'
   klas: B
   dzherelo: 'WCH, CH340 USB to serial chip, datasheet (english), розділи «Introduction» і «Features» (кеш:
-    dzherela-kesh/ch340.pdf)'
+    source-cache/ch340.pdf)'
   cytata: "USB to serial chip CH340\n\nFeatures:\n● Totally compatible with serial application program\
     \ in computer endpoint\n  Windows operation system.\n● Software compatible with CH341, using drive\
     \ of CH341 directly.\n\nhttp://wch.cn\n"
@@ -70,7 +70,7 @@
   match: '`CH340`.*драйвер із сайту WCH'
   status: derived
   source: 'WCH, CH340 USB to serial chip, datasheet (english), розділи «Introduction» і «Features» (кеш:
-    dzherela-kesh/ch340.pdf)'
+    source-cache/ch340.pdf)'
   quote: "USB to serial chip CH340\n\nFeatures:\n● Totally compatible with serial application program\
     \ in computer endpoint\n  Windows operation system.\n● Software compatible with CH341, using drive\
     \ of CH341 directly.\n\nhttp://wch.cn\n"

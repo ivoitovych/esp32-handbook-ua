@@ -96,7 +96,7 @@
   look_for: Розмір застосунку, Wi-Fi, TLS, флеш пам'ять
   sha:
   - 32ebab82
-  looked_at: 'dzherela-kesh/4aac28c3-partition-tables.rst і 709bb93a-partitions_singleapp.csv
+  looked_at: 'source-cache/4aac28c3-partition-tables.rst і 709bb93a-partitions_singleapp.csv
     відкрито: вони дають типовий РОЗМІР РОЗДІЛУ (factory 1M), а не розмір застосунку з Wi-Fi
     і TLS. Підперти ними твердження означало б навести не той документ. Первинного джерела
     на розмір застосунку не знайдено.'
@@ -130,7 +130,7 @@
   look_for: Модуль живлення, стабілізатор 5 В, мікросхема 3.3 В
   sha:
   - b49e05ea
-  looked_at: dzherela-kesh/ — шукано «regulator», «LDO», «AMS1117», «devkit»; esp32_datasheet_en.pdf
+  looked_at: source-cache/ — шукано «regulator», «LDO», «AMS1117», «devkit»; esp32_datasheet_en.pdf
     відкрито (живлення кристала 3.0–3.6 В там є, але це про кристал, не про топологію плати).
     Твердження про модулі взагалі; конкретного модуля не названо, тож і даташита немає.
 - nazva: Похибка датчика DS18B20 — два справні можуть розходитись до 1 °C
@@ -209,7 +209,7 @@
     означає, що документ отримано й цитата точна — він **не** означає, що супровідник прочитав
     уривок і погодився. Це окрема робота.
   notatka: 'Специфікація LG INR18650MJ1, розділ вимог безпеки: заряджати лише в 0–45 °C. Незалежно
-    те саме в Panasonic NCR18650B (`dzherela-kesh/ncr18650b.pdf`, «Temperature Charge*: 0
+    те саме в Panasonic NCR18650B (`source-cache/ncr18650b.pdf`, «Temperature Charge*: 0
     to +45°C») — два виробники, не один.
 
     МЕЖА: одиниця містить два твердження. Доведено перше — не заряджати нижче 0 °C. Друге
@@ -225,7 +225,7 @@
     означає, що документ отримано й цитата точна — він **не** означає, що супровідник прочитав
     уривок і погодився. Це окрема робота.
   note: 'Специфікація LG INR18650MJ1, розділ вимог безпеки: заряджати лише в 0–45 °C. Незалежно
-    те саме в Panasonic NCR18650B (`dzherela-kesh/ncr18650b.pdf`, «Temperature Charge*: 0
+    те саме в Panasonic NCR18650B (`source-cache/ncr18650b.pdf`, «Temperature Charge*: 0
     to +45°C») — два виробники, не один.
 
     МЕЖА: одиниця містить два твердження. Доведено перше — не заряджати нижче 0 °C. Друге
@@ -287,7 +287,7 @@
   look_for: Розмір прошивки, Wi-Fi, TLS, веб-сервер, OTA слот
   sha:
   - 7be3bc35
-  looked_at: 'те саме, що й для «застосунок від 1 МБ»: dzherela-kesh/4aac28c3-partition-tables.rst,
+  looked_at: 'те саме, що й для «застосунок від 1 МБ»: source-cache/4aac28c3-partition-tables.rst,
     709bb93a-partitions_singleapp.csv, 66e0626d-memory-types.rst. Усі три описують розділи
     й типи памʼяті, жоден — розмір прошивки з веб-інтерфейсом. Це емпіричний вимір, а не витяг
     із документа.'

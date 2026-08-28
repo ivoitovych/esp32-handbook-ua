@@ -2,7 +2,7 @@
   zbih: Радіо на борту · AVR \(Arduino Uno\) → ні
   klas: B
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features»
-    — «Peripheral Features» і «Special Microcontroller Features» (кеш: dzherela-kesh/atmega328p.pdf)'
+    — «Peripheral Features» і «Special Microcontroller Features» (кеш: source-cache/atmega328p.pdf)'
   cytata: 'The ATmega48A/PA/88A/PA/168A/PA/328/P provides the following features: 4K/8Kbytes of In-System
 
     Programmable Flash with Read-While-Write capabilities, 256/512/512/1Kbytes EEPROM, 512/1K/1K/2Kbytes
@@ -28,7 +28,7 @@
   match: Радіо на борту · AVR \(Arduino Uno\) → ні
   status: derived
   source: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features»
-    — «Peripheral Features» і «Special Microcontroller Features» (кеш: dzherela-kesh/atmega328p.pdf)'
+    — «Peripheral Features» і «Special Microcontroller Features» (кеш: source-cache/atmega328p.pdf)'
   quote: 'The ATmega48A/PA/88A/PA/168A/PA/328/P provides the following features: 4K/8Kbytes of In-System
 
     Programmable Flash with Read-While-Write capabilities, 256/512/512/1Kbytes EEPROM, 512/1K/1K/2Kbytes
@@ -56,7 +56,7 @@
   zbih: Частота · AVR \(Arduino Uno\) → 16 МГц
   klas: A
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples
-    of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades» (кеш: dzherela-kesh/atmega328p.pdf)'
+    of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades» (кеш: source-cache/atmega328p.pdf)'
   cytata: "Table 20-7.         Examples of UBRRn Settings for Commonly Used Oscillator Frequencies (Continued)\n\
     \                          fosc = 16.0000MHz                      fosc = 18.4320MHz              \
     \        fosc = 20.0000MHz\n\nSpeed Grade:\n                    ̶           0 - 4MHz@1.8 - 5.5V, 0\
@@ -73,7 +73,7 @@
   match: Частота · AVR \(Arduino Uno\) → 16 МГц
   status: verbatim
   source: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples
-    of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades» (кеш: dzherela-kesh/atmega328p.pdf)'
+    of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades» (кеш: source-cache/atmega328p.pdf)'
   quote: "Table 20-7.         Examples of UBRRn Settings for Commonly Used Oscillator Frequencies (Continued)\n\
     \                          fosc = 16.0000MHz                      fosc = 18.4320MHz              \
     \        fosc = 20.0000MHz\n\nSpeed Grade:\n                    ̶           0 - 4MHz@1.8 - 5.5V, 0\
@@ -92,7 +92,7 @@
   zbih: RAM · AVR \(Arduino Uno\) → 2 КБ
   klas: A
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features»
-    → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory» (кеш: dzherela-kesh/atmega328p.pdf)'
+    → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory» (кеш: source-cache/atmega328p.pdf)'
   cytata: "High Endurance Non-volatile Memory Segments\n            ̶               4/8/16/32KBytes of\
     \ In-System Self-Programmable Flash program memory\n            ̶               256/512/512/1KBytes\
     \ EEPROM\n            ̶               512/1K/1K/2KBytes Internal SRAM\n"
@@ -105,7 +105,7 @@
   match: RAM · AVR \(Arduino Uno\) → 2 КБ
   status: verbatim
   source: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features» →
-    «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory» (кеш: dzherela-kesh/atmega328p.pdf)'
+    «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory» (кеш: source-cache/atmega328p.pdf)'
   quote: "High Endurance Non-volatile Memory Segments\n            ̶               4/8/16/32KBytes of\
     \ In-System Self-Programmable Flash program memory\n            ̶               256/512/512/1KBytes\
     \ EEPROM\n            ̶               512/1K/1K/2KBytes Internal SRAM\n"
@@ -120,7 +120,7 @@
   zbih: ОС · AVR \(Arduino Uno\) → немає
   klas: B
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ
-    «Features» → «Special Microcontroller Features» (кеш: dzherela-kesh/atmega328p.pdf)'
+    «Features» → «Special Microcontroller Features» (кеш: source-cache/atmega328p.pdf)'
   cytata: "The ATmega48A/PA/88A/PA/168A/PA/328/P is a low power, CMOS 8-bit microcontrollers based on\
     \ the\nAVR® enhanced RISC architecture.\n\nSpecial Microcontroller Features\n                    ̶\
     \           Power-on Reset and Programmable Brown-out Detection\n                ̶               Internal\
@@ -138,7 +138,7 @@
   match: ОС · AVR \(Arduino Uno\) → немає
   status: derived
   source: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ
-    «Features» → «Special Microcontroller Features» (кеш: dzherela-kesh/atmega328p.pdf)'
+    «Features» → «Special Microcontroller Features» (кеш: source-cache/atmega328p.pdf)'
   quote: "The ATmega48A/PA/88A/PA/168A/PA/328/P is a low power, CMOS 8-bit microcontrollers based on the\n\
     AVR® enhanced RISC architecture.\n\nSpecial Microcontroller Features\n                    ̶      \
     \     Power-on Reset and Programmable Brown-out Detection\n                ̶               Internal\
@@ -158,7 +158,7 @@
   zbih: Старт · AVR \(Arduino Uno\) → миттєво
   klas: B
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up
-    Times for the Full Swing Crystal Oscillator Clock Selection» (кеш: dzherela-kesh/atmega328p.pdf)'
+    Times for the Full Swing Crystal Oscillator Clock Selection» (кеш: source-cache/atmega328p.pdf)'
   cytata: "Table 9-6.        Start-up Times for the Full Swing Crystal Oscillator Clock Selection\n  \
     \                                 Start-up Time from          Additional Delay\n Oscillator Source\
     \ /                Power-down and               from Reset\n Power Conditions                    \
@@ -176,7 +176,7 @@
   match: Старт · AVR \(Arduino Uno\) → миттєво
   status: derived
   source: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up
-    Times for the Full Swing Crystal Oscillator Clock Selection» (кеш: dzherela-kesh/atmega328p.pdf)'
+    Times for the Full Swing Crystal Oscillator Clock Selection» (кеш: source-cache/atmega328p.pdf)'
   quote: "Table 9-6.        Start-up Times for the Full Swing Crystal Oscillator Clock Selection\n   \
     \                                Start-up Time from          Additional Delay\n Oscillator Source\
     \ /                Power-down and               from Reset\n Power Conditions                    \
@@ -230,7 +230,7 @@
   zbih: Реальний час · AVR \(Arduino Uno\) → добре
   klas: B
   dzherelo: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt
-    Response Time» (кеш: dzherela-kesh/atmega328p.pdf)'
+    Response Time» (кеш: source-cache/atmega328p.pdf)'
   cytata: "7.7.1   Interrupt Response Time\n        The interrupt execution response for all the enabled\
     \ AVR interrupts is four clock cycles minimum. After four\n        clock cycles the program vector\
     \ address for the actual interrupt handling routine is executed.\n"
@@ -244,7 +244,7 @@
   match: Реальний час · AVR \(Arduino Uno\) → добре
   status: derived
   source: 'Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt
-    Response Time» (кеш: dzherela-kesh/atmega328p.pdf)'
+    Response Time» (кеш: source-cache/atmega328p.pdf)'
   quote: "7.7.1   Interrupt Response Time\n        The interrupt execution response for all the enabled\
     \ AVR interrupts is four clock cycles minimum. After four\n        clock cycles the program vector\
     \ address for the actual interrupt handling routine is executed.\n"
