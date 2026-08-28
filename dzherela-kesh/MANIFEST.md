@@ -158,6 +158,7 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `8d9da7d5-panic_arch.c` | `f9348f7bbc8ee4f9aedba25cb67004cf20bf6160b0bb006dff5a8093c664f8d5` | 10787 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/port/arch/xtensa/panic_arch.c> |
 | `8e2b6a6f-soc_caps.h` | `b2dfe6fdb0b8358c1e96ef88a0ea59d88ca589b2d7f281df97f6e2184aefcf26` | 25981 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32h2/include/soc/soc_caps.h> |
 | `8e2fcbf9-bme280.c` | `7de1e7d3082b85e90db1daa34573ba77553a7caf44e06e216de5216b7ed4fa12` | 51082 | 2026-08-28 | <https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c> |
+| `8ee48ffb-sn65hvd230.pdf` | `e98fc0c59168c035d7958111924dae7e21e46ab45bdfd6400aef048299d6d716` | 812033 | 2026-08-28 | <https://www.ti.com/lit/ds/symlink/sn65hvd230.pdf> |
 | `8ee76247-README.md` | `8da12d79012033d223c371eaf0134fc9e33c64ea82ff6bcc3082712818652fbf` | 6417 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/ftm/README.md> |
 | `8f716afa-README.md` | `5f585c2aec54b37f5d9cac12c51aa6766e9c97de7244b4e31195b3650e15a1fe` | 15096 | 2026-08-28 | <https://raw.githubusercontent.com/lvgl/lvgl/master/README.md> |
 | `8f7feb4c-mem_alloc.rst` | `cd79c74f6992e44b9f059e1f46ad19674d2226ad09e29ba06b44ed31b4f1d1b3` | 12661 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/mem_alloc.rst> |
@@ -237,6 +238,7 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf` | `4c7a345d1c1bfec34c38665639e39a7f43b79a35a12f6adcc2c7c0f83850f8b8` | 1230114 | 2026-08-28 | <https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf> |
 | `d8fe289d-ulp.rst` | `af73bb6f8071e0ab2fc6eb923f87719df033a58765f6eeda17018d3be06b4180` | 2155 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp.rst> |
 | `da11cdab-ledc.rst` | `098bef081c6e4c79202b6a8433124cc31ce67dddf76847a64f9bb3d739a3862e` | 21804 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/ledc.rst> |
+| `dab9954e-system_time.html` | `4abef438e63d41b3df5dd30f6af2613bef5fbc61c70b978cea359c7ef03eb1f4` | 92280 | 2026-08-28 | <https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/system_time.html> |
 | `dac_channel.h` | `a561529fc5840f6a8dc994ed234f01787d08dceffc769a6f9bd8a4c222133854` | 605 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2}/include/soc/dac_channel.h> |
 | `dee205c1-README.md` | `567ca1c81fa0fde6cc4230f010678fca4a0794ce9572d803dbbe2a1948bf2ac5` | 13676 | 2026-08-28 | <https://raw.githubusercontent.com/littlefs-project/littlefs/master/README.md> |
 | `df3a86c4-Kconfig.level_settings` | `6311d014025e49cad2bf5107f6442095f61d6e6b1ff71a73887c5463ed3c0991` | 6600 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/Kconfig.level_settings> |
@@ -371,5 +373,5 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `vtc6.pdf` | `ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08` | 275509 | 2026-08-26 | <https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx> |
 | `wdts.rst` | `aab5499bba67e15e1327504328a9aa74ab88c82cb90f9c27d500d5b5d773c6af` | 16181 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst> |
 
-Файлів: **363**, разом **139.9 МБ** (межа 1.0 ГБ).
+Файлів: **357**, разом **140.7 МБ** (межа 1.0 ГБ).
 
