@@ -1,5 +1,7 @@
 # Поділ незвіреного між супровідниками
 
+> **generated** — written by `tools/split_queue.py`; editing it by hand is wasted work
+
 **Генерується** `tools/split_queue.py --naryad`. Правити вручну нема сенсу.
 
 Поділ за одним питанням: **у якому джерелі лежить відповідь**. ESP-IDF, esptool і заголовки `soc/` дістаються з контейнера М1; datasheet мікросхем і електричні дані — ні, і це робота М2.

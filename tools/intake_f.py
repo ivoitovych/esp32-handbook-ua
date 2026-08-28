@@ -74,11 +74,29 @@ POTREBUYE = {
     "not_found": ("source",),
     "unreachable": ("source", "needed"),
     "advice": ("why",),
+    # Додано М1 разом зі спекою завдання. Обидва — не зручність, а
+    # **розрізнення, яке інакше зникає**:
+    #
+    #   truly_none          зовнішнього референта справді немає; це
+    #                       позиція автора. Не те саме, що `advice`
+    #                       («не дістав, але знаю де») і не те саме, що
+    #                       `not_found` («не зміг встановити»)
+    #   absent_from_source  документ отримано, і його МОВЧАННЯ і є
+    #                       доказ (клас `N`). Протилежність
+    #                       `not_found`: там не встановили, тут
+    #                       встановили саме відсутністю
+    #
+    # Звести їх до наявних означало б попросити помічника відповісти
+    # словом, яке каже не те, що він зробив, — і втратити різницю в
+    # обліку назавжди.
+    "truly_none": ("why",),
+    "absent_from_source": ("source", "absent"),
 }
 STARI_VERDYKTY = {
     "pidtverdzheno": "confirmed", "sperechayetsya": "disputes",
     "ne_znayshov": "not_found", "nedosyazhne": "unreachable",
     "porada": "advice",
+    "spravdi-e": "truly_none", "spravdi_e": "truly_none",
 }
 STARI_POLYA = {
     "odynycya": "unit", "verdykt": "verdict", "dzherelo": "source",

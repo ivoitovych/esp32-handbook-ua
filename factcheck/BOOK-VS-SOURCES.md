@@ -1,5 +1,7 @@
 # Книга проти джерел: 19 розбіжних цитат
 
+> **generated** — written by `tools/work_orders.py`; editing it by hand is wasted work
+
 **Генерується** `tools/work_orders.py --zvit`. Наряд —
 `factcheck/BRIEF-QUOTES.md`.
 

@@ -1,5 +1,7 @@
 # Відпрацьовані сліди класу `E`
 
+> **generated** — written by `tools/leads.py`; editing it by hand is wasted work
+
 **Генерується** `tools/leads.py --zvit`. Наряд —
 `factcheck/BRIEF-LEADS.md`.
 

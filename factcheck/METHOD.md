@@ -1,5 +1,7 @@
 # Fact-checking a book with a pool of cheap helpers
 
+> **canonical** — the decision lives here; there are to be no copies
+
 This document is **not about ESP32**. It is about the method, written so
 that it can be lifted onto another book, another subject, another
 language.
@@ -88,10 +90,10 @@ by number.
 
     A  primary verbatim    — source obtained, line quoted
     B  primary derived     — source obtained, conclusion unambiguous
-    N  proven absent       — source obtained, and the thing is NOT in it
+    N  absent-from-source  — source obtained; its SILENCE is the proof
     D  arithmetic          — checked by calculation
     C  named-unreachable   — source named, text not held
-    S  internal            — checked against ANOTHER PLACE IN THIS BOOK
+    S  self-consistent     — checked against ANOTHER PLACE IN THIS BOOK
     L  looked-not-found    — a document was opened; the source was not in it
     E  no external signal  — the text carries nothing checkable
     G  refuted             — the source says otherwise

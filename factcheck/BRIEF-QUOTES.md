@@ -39,7 +39,7 @@ a table, nor two sentences joined across an ellipsis.
 
 **Knowing the answer is not grounds for writing a quote.** If the fact is
 familiar but you cannot see the line in the document, that is
-`not-found`.
+`not_found`.
 
 It is not a failure and not a lesser result. It records where we have
 already looked, and those records are what let us print a sentence at
@@ -69,8 +69,8 @@ that class is right.
 |---|---|
 | `confirmed` | the existing class is correct |
 | `disputes` | the source contradicts the handbook |
-| `truly-none` | there really is no external referent: this is the author's position |
-| `undecided` | you cannot tell, and here is why |
+| `truly_none` | there really is no external referent: this is the author's position |
+| `not_found` | you could not tell — say what you read |
 
 An address inside this repository, or a chapter of the handbook cited as
 the source for a claim in the handbook, is rejected mechanically. If a
@@ -79,7 +79,7 @@ there is a class for it, and it is not a failure.
 
 ```yaml
 - unit: T-42-023
-  verdict: found
+  verdict: confirmed
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/...
   quote: |
     the verbatim line from the document
@@ -90,9 +90,13 @@ One entry per unit. Do not reorder or renumber the units. If you have
 nothing for a unit, still write an entry with the honest verdict — a
 missing entry is indistinguishable from work not done.
 
+**YAML:** if a value contains `: ` or starts with a quote mark, wrap the
+whole value in single quotes. Otherwise the file will not parse and the
+whole batch is lost, not just that entry.
+
 ---
 
-*Task spec `2124b174` · blocks: ORIENTATION, VERBATIM, HONEST-MISS, NETWORK, STUB, VERDICTS-VERDICT-TEST, NO-SELF-REFERENCE, FORMAT. Quote this version when reporting results from this wave.*
+*Task spec `18b84931` · blocks: ORIENTATION, VERBATIM, HONEST-MISS, NETWORK, STUB, VERDICTS-VERDICT-TEST, NO-SELF-REFERENCE, FORMAT. Quote this version when reporting results from this wave.*
 
 ## Пакет 1
 

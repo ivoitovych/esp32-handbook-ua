@@ -22,7 +22,7 @@
 
 1. довідник не є джерелом для себе;
 2. **ворота існують, і сказано, що саме вони відкидають**;
-3. `source` на кожен вердикт, включно з негативним.
+3. `dzherelo` на кожен вердикт, включно з негативним.
 
 ## Випадкова вибірка проти тематичної
 
@@ -46,7 +46,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import collections
 import re
 import sys
@@ -88,21 +87,6 @@ SHAPKA_RAMKA = """# Наряд {n}: {tema} — {k} одиниць
 SHAPKA_BLOKY = ['ORIENTATION', 'VERBATIM', 'HONEST-MISS', 'NETWORK', 'STUB', 'NO-SELF-REFERENCE', 'VERDICTS-EXTERNAL', 'ABSENCE', 'FORMAT']
 
 
-def shapka(**kw) -> str:
-    """Наряд: рамка цієї партії плюс спільні блоки завдання.
-
-    Підстановка **заміною**, а не `.format`: у рамці стоять
-    справжні фігурні дужки ESP-IDF (`{IDF_TARGET_...}`), і
-    `format` на них падає з KeyError.
-    """
-    import task_spec
-    ramka = SHAPKA_RAMKA
-    for k, v in kw.items():
-        ramka = ramka.replace("{" + k + "}", str(v))
-    return task_spec.sklasty(SHAPKA_BLOKY, zaholovok=ramka)
-
-
-
 RE_KONTEKST = re.compile(
     r"<!-- fc id:(?P<id>\S+) sha:\S+ src:\S+ klas:\S+ -->\n"
     r"### [^\n]*\n\n\*\*[^*\n]+\*\*\n\n(?P<tverd>(?:> [^\n]*\n)+)"
@@ -126,25 +110,38 @@ def konteksty() -> dict[str, str]:
     return out
 
 
-def versiya_zavdannya(rich: bool = False) -> str:
-    """Version of the task this run actually hands out.
+def versiya_naryadu(rich: bool = False) -> str:
+    """Відбиток усього, що бачить виконавець — вісім знаків.
 
-    The spec versions the shared blocks; this adds what the generator
-    puts on top of them. Right now that is one switch: whether each card
-    carries its surrounding book text.
-
-    A version narrower than its subject is worse than none — it looks
-    like control. My first attempt hashed only the local header and so
-    gave the SAME version to an order with per-card context and one
-    without: two different tasks under one number, and the difference
-    between them filed as noise.
+    Механізм один зі спекою завдання, а не другий поруч: `rich`
+    додає блок `CARD-PLACE` і оточення картки, тобто **міняє те, що
+    виконавець бачить**, і мусить міняти версію. Наряд з оточенням і без
+    нього — це дві різні технології, і книга прогонів має розрізняти їх,
+    а не записувати різницю в шум (знахідка М2).
     """
     import task_spec
-    return task_spec.versiya(SHAPKA_BLOKY,
-                             tekst=None) + ("+ctx" if rich else "")
+    bloky = SHAPKA_BLOKY + (["CARD-PLACE"] if rich else [])
+    return task_spec.versiya(bloky, shablon=SHAPKA_RAMKA
+                             + ("\n+kontekst" if rich else ""))
 
 
-def za_perelikom(a, vybirka) -> int:
+def shapka(**kw) -> str:
+    """Наряд: рамка цієї партії плюс спільні блоки завдання.
+
+    Підстановка **заміною**, а не `.format`: у рамці стоять
+    справжні фігурні дужки ESP-IDF (`{IDF_TARGET_...}`), і
+    `format` на них падає з KeyError.
+    """
+    import task_spec
+    ramka = SHAPKA_RAMKA
+    for k, v in kw.items():
+        ramka = ramka.replace("{" + k + "}", str(v))
+    return task_spec.sklasty(SHAPKA_BLOKY, zaholovok=ramka,
+                             shablon=SHAPKA_RAMKA)
+
+
+
+def za_perelikom(a, sample) -> int:
     """Ті самі одиниці, що в попередньому прогоні.
 
     ## Навіщо це окремо від `--vypadkovo`
@@ -168,7 +165,7 @@ def za_perelikom(a, vybirka) -> int:
     reyestr = {}
     for kl in ("A", "B", "C", "D", "E", "F", "G", "L", "S"):
         try:
-            for u in vybirka.odynyci(kl):
+            for u in sample.odynyci(kl):
                 reyestr[u["id"]] = dict(u, klas=kl)
         except Exception:
             continue
@@ -178,9 +175,9 @@ def za_perelikom(a, vybirka) -> int:
                if i in reyestr and reyestr[i]["klas"] != poperednye.get("queue")]
 
     (a.kudy / "vybirka.json").write_text(json.dumps(
-        {"task_version": versiya_zavdannya(a.rich),
+        {"order_version": versiya_naryadu(a.rich),
          "paired_with": str(a.z_pereliku.parent.name),
-         "prev_task_version": poperednye.get("task_version"),
+         "prev_order_version": poperednye.get("order_version"),
          "queue": poperednye.get("queue"), "sample_size": len(vzyato),
          "rich_cards": bool(a.rich),
          "units_gone": znykly, "units_left_queue": zminyly,
@@ -199,7 +196,7 @@ def za_perelikom(a, vybirka) -> int:
                 "це повноцінна відповідь.")
         r = [shapka(n=n, tema="випадкова вибірка (повтор попарно)",
                     k=len(ch), kandydat=kand),
-             f"\n<!-- task_version:{versiya_zavdannya(a.rich)} "
+             f"\n<!-- order_version:{versiya_naryadu(a.rich)} "
              f"paired:{a.z_pereliku.parent.name} -->\n"]
         for u in ch:
             r.append(f"\n**`{u['id']}`**\n")
@@ -215,42 +212,22 @@ def za_perelikom(a, vybirka) -> int:
     return 0
 
 
-def vypadkova(a, vybirka) -> int:
+
+def vypadkova(a) -> int:
     """Випадкова вибірка з усієї черги `F`, з насінням і переліком."""
     import json
     import random
 
-    usi = sorted(vybirka.odynyci("F"), key=lambda u: u["id"])
-    vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
+    import sample
 
-    # НАСІННЯ САМЕ ПО СОБІ ВИБІРКИ НЕ ВІДТВОРЮЄ.
-    #
-    # `sample` тягне з сукупності, і сукупність — черга `F` — міняється
-    # щоразу, коли хтось садить доказ. Те саме насіння на іншій черзі
-    # дає інші одиниці.
-    #
-    # Виміряно 2026-08-28: прогін із насінням 20260828 повторено того
-    # самого дня через сім годин і дав ІНШУ сотню. Уранці повтор давав
-    # ту саму — і це була правда рівно тієї хвилини.
-    #
-    # Тому записуються три речі, і кожна закриває свою дірку:
-    #   nasinnya          щоб повторити ЖЕРЕБ
-    #   population_sha    щоб побачити, що сукупність уже не та
-    #   vzyato            щоб мати самі одиниці, коли жереб не повторити
-    #
-    # Перелік `id` — єдине, що переживає зміну черги. Він слабший за
-    # насіння (не доводить, що жереб був чесний) і сильніший за нього
-    # (результат перераховний через місяць).
-    naselennya = hashlib.sha256(
-        "\n".join(u["id"] for u in usi).encode()).hexdigest()[:12]
+    usi = sorted(sample.odynyci("F"), key=lambda u: u["id"])
+    vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
-        {"task_version": versiya_zavdannya(a.rich),
-         "nasinnya": a.nasinnya, "population_sha": naselennya,
-         "z_cherhy": len(usi), "queue": "F", "sample_size": len(vzyato),
+        {"order_version": versiya_naryadu(getattr(a, "rich", False)),
+         "nasinnya": a.nasinnya, "z_cherhy": len(usi),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
-    kont = konteksty() if a.rich else {}
     n = 0
     for i in range(0, len(vzyato), a.na_naryad):
         ch = vzyato[i:i + a.na_naryad]
@@ -258,19 +235,26 @@ def vypadkova(a, vybirka) -> int:
         kand = ("**Документа-кандидата немає.** Ці одиниці взято "
                 "**випадково** з усієї черги, а не за темою, тож жодного "
                 "документа наперед не названо. Шукай сам — і якщо не "
-                "знайшов, `not_found` із адресою того, що відкривав, "
+                "знайшов, `ne_znayshov` із адресою того, що відкривав, "
                 "це повноцінна відповідь.")
+        rich = getattr(a, "rich", False)
         r = [shapka(n=n, tema=f"випадкова вибірка (насіння {a.nasinnya})",
                     k=len(ch), kandydat=kand),
-             f"\n<!-- seed:{a.nasinnya} -->\n"]
+             f"\n<!-- order_version:{versiya_naryadu(rich)} "
+             f"rich:{int(rich)} -->\n"]
+        kont = konteksty() if rich else {}
         for u in ch:
             r.append(f"\n**`{u['id']}`**\n")
             r.append(f"> {u['tekst']}\n")
-            if a.rich:
+            if rich:
+                # Оточення — з уже зрендерених карток, а не з книги
+                # вдруге: там воно обмежене й перевірене шаром 1.
                 k = kont.get(u["id"])
                 if k:
-                    r.append("\nОточення в книзі — щоб було видно, про що "
-                             "саме йдеться:\n\n```\n" + k + "\n```\n")
+                    r.append("\nОточення в книзі:\n")
+                    r.append("```\n" + k + "\n```\n")
+                import task_spec
+                r.append("\n" + task_spec.bloky()["CARD-PLACE"] + "\n")
         (a.kudy / f"f-{n:02d}.md").write_text("\n".join(r) + "\n",
                                               encoding="utf-8")
     print(f"нарядів {n}, одиниць {len(vzyato)} з {len(usi)} у черзі F; "
@@ -286,23 +270,25 @@ def main() -> int:
     p.add_argument("--na-naryad", type=int, default=10)
     p.add_argument("--vypadkovo", type=int, default=0,
                    help="взяти N одиниць випадково з усієї черги F")
+    p.add_argument("--z-pereliku", type=Path, default=None,
+                   help="take the same units as a previous run's "
+                        "vybirka.json — paired comparison of task versions")
+    p.add_argument("--rich-cards", action="store_true", dest="rich",
+                   help="кожна картка несе своє оточення в книзі й абзац "
+                        "про своє місце в потоці (М2)")
     p.add_argument("--nasinnya", type=int, default=0,
                    help="насіння; обов'язкове разом із --vypadkovo")
-    p.add_argument("--z-pereliku", type=Path, default=None,
-                   help="взяти ті самі одиниці, що в названому vybirka.json "
-                        "— для попарного порівняння версій наряду")
-    p.add_argument("--rich-cards", action="store_true", dest="rich",
-                   help="картка несе контекст із книги й своє місце в потоці")
     a = p.parse_args()
     if a.vypadkovo and not a.nasinnya:
         p.error("--vypadkovo без --nasinnya: дослід буде невідтворний")
     a.kudy.mkdir(parents=True, exist_ok=True)
 
     if a.z_pereliku:
-        return za_perelikom(a, vybirka)
+        import sample
+        return za_perelikom(a, sample)
 
     if a.vypadkovo:
-        return vypadkova(a, vybirka)
+        return vypadkova(a)
 
     za: dict[str, list[dict]] = collections.defaultdict(list)
     for u in sample.odynyci("F"):

@@ -123,8 +123,13 @@ def perevirka() -> list[str]:
         # копією: `N` випадав із «названих» і одразу з'являвся у
         # «відсутніх». Документ був правий, перевірка ні.
         #
-        # Це третій випадок того самого за добу, і найгостріший: копія
-        # жила всередині інструмента, побудованого проти копій.
+        # Формулювання М1, точніше за моє: перевірка **маскувала `N` до
+        # порівняння — і не побачила б виправлення, якого сама
+        # вимагала.**
+        #
+        # Знайшли ми це нарізно й полагодили однаково, з різницею в
+        # кілька хвилин. Копія жила всередині інструмента, побудованого
+        # проти копій.
         nazvani &= kod
         if len(nazvani) >= 4 and imya != VLASNYK["класи доказу"]:
             vidsutni = kod - nazvani
@@ -153,15 +158,26 @@ def perevirka() -> list[str]:
     except Exception as e:
         bidy.append(f"ворота не імпортуються: {str(e)[:60]}")
         znani = set()
+    # Вердикти більше не живуть у шаблоні інструмента: вони в
+    # `factcheck/TASK-SPEC.md`, звідки наряд їх складає. Перевірка
+    # читає **джерело**, а не одну з копій — інакше вона стереже
+    # копію й мовчить про решту.
     if znani:
-        for shabl in (ROOT / "tools" / "work_orders_f.py",):
-            t = shabl.read_text(encoding="utf-8")
-            vsi = set(re.findall(r"^\| `([a-z_]+)` \|", t, re.M))
+        try:
+            import task_spec
+            bloky = task_spec.bloky()
+        except Exception as e:
+            bidy.append(f"спека завдання не читається: {str(e)[:60]}")
+            bloky = {}
+        for imya, tekst in bloky.items():
+            if not imya.startswith("VERDICTS"):
+                continue
+            vsi = set(re.findall(r"^\| `([a-z_-]+)` \|", tekst, re.M))
             chuzhi = vsi - znani
             if chuzhi:
                 bidy.append(
-                    f"{shabl.name}: наряд пропонує вердикти {sorted(chuzhi)}, "
-                    f"яких ворота не перевіряють")
+                    f"TASK-SPEC [{imya}]: наряд пропонує вердикти "
+                    f"{sorted(chuzhi)}, яких ворота не перевіряють")
     return bidy
 
 

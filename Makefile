@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake docs run-gate dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
+.PHONY: help setup all intake docs run-gate dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 modality calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
         check-attribution preview clean
 
 PY := python3
@@ -112,6 +112,7 @@ cache-vs-book:
 # і це знайшлося читанням. Читання не масштабується й не працює в CI.
 docs:
 	@$(PY) tools/docs.py
+	@$(PY) tools/doc_kind.py --suvoro
 
 # Ворота прогонів помічників (М2). Тут лише самоперевірка: справжній
 # прогін потребує теки з відповідями. Заведено після того, як злиття
@@ -224,7 +225,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: self-checks intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage docs run-gate check-attribution
+check: self-checks docs run-gate intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage check-attribution
 
 arithmetic:
 	@python3 tools/arithmetic.py
@@ -258,6 +259,8 @@ self-checks:
 	@$(PY) tools/schema.py --samoperevirka
 	@$(PY) tools/leak.py --samoperevirka
 	@$(PY) tools/task_spec.py --samoperevirka
+	@$(PY) tools/maintenance.py --samoperevirka
+	@$(PY) tools/doc_kind.py --samoperevirka
 
 # Кожна точка входу технології, а не лише ті, що у воротах.
 #

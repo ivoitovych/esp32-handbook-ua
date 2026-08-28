@@ -1,5 +1,7 @@
 # What we set out to build, and what we actually have
 
+> **canonical** — the decision lives here; there are to be no copies
+
 A plan-versus-actual account of the fact-checking technology, written
 so that the next book does not have to rediscover any of it.
 
