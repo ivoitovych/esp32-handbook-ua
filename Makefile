@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -156,7 +156,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
@@ -168,6 +168,13 @@ arytmetyka:
 # й піде за ним у книгу.
 stale:
 	@python3 tools/factcheck.py stale
+
+# Схема запису доказу й контракт картки. Звіт, не ворота: чотирнадцять
+# порушень зараз чужі за походженням, і зупиняти на них випуск —
+# означало б зупиняти чужою роботою. Стане воротами, коли черга
+# спорожніє.
+skhema:
+	@python3 tools/skhema.py
 
 check-attribution:
 	@sh -c '. ./.githooks/identity.conf; \
