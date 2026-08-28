@@ -41,7 +41,40 @@ answers, and both are human or model work:
 * it is not a claim → say so in a card, so the next audit does not ask
   again.
 
-## Що робити з прогалиною — і чому статус мусить бути перевірюваним
+## Два роди обліку, і тільки разом вони дають «усе на місці»
+
+Рядок книги враховано, якщо про нього відомо одне з двох:
+
+* **картка** — рядок несе твердження, і воно в реєстрі;
+* **структурна підстава** — рядок є частиною будови книги, і скрипт
+  **це перевіряє**, а не припускає.
+
+Друге спершу пропонувалося робити картками зі статусом «не підлягає
+звірці». Від цього відмовилися, і причина варта запису.
+
+Картка, чий увесь зміст — «це заголовок», не несе нічого, чого скрипт
+не виведе сам із рядка. Дев'яносто одна така картка — церемонія, яка
+до того ж додає в реєстр **стверджувальний вердикт**, а такі в нас уже
+одного разу зібрали звалище (`ne-rozibrav`: 85–87 % виявилися
+звичайними судженнями).
+
+Структурна підстава сильніша за картку саме тим, що **перевіряється
+наново щоразу**. Картка може застаріти й мовчати; правило не може.
+
+## Що перевіряється, а не припускається
+
+Заголовок зараховується, лише якщо:
+
+* рядок збігається з `^#{1,6}\s`;
+* якщо в ньому є якір `{#…}` — усі посилання `](#якір)` у книзі
+  ведуть на наявні якорі;
+* якщо файл має номер у назві — номер у заголовку той самий;
+* якщо на розділ посилаються як «розділ NN» — такий розділ існує.
+
+Тобто «усе на місці» означає буквально: кожен рядок або має твердження
+в реєстрі, або є будовою книги, і будова несуперечлива.
+
+## Що робити з рештою прогалини
 
 Прогалину закривають картками. Але статус «не підлягає звірці» — це
 **стверджувальний вердикт**, а такі в нас уже одного разу зібрали
@@ -83,6 +116,44 @@ def zibraty_kartky() -> dict[str, set[int]]:
     return pokryti
 
 
+def perevirka_budovy() -> list[tuple[str, str]]:
+    """Чи будова книги несуперечлива — те, чим заголовок і можна звірити."""
+    yakori, posylannya, rozdily = set(), set(), {}
+    nomer_ne_zbig = []
+    for g in GRUPY:
+        katalog = ROOT / g
+        if not katalog.exists():
+            continue
+        for p in sorted(katalog.glob("*.md")):
+            t = p.read_text(encoding="utf-8")
+            yakori.update(re.findall(r"^#{1,6} .*\{#([^}]+)\}", t, re.M))
+            posylannya.update(re.findall(r"\]\(#([^)]+)\)", t))
+            m = re.match(r"(\d+)-", p.name)
+            if m and g == "manual":
+                rozdily[m.group(1).zfill(2)] = True
+                h = t.split("\n")[0]
+                hm = re.match(r"#\s*(\d+)\.", h)
+                if hm and hm.group(1).zfill(2) != m.group(1).zfill(2):
+                    nomer_ne_zbig.append(p.name)
+    byti = sorted(posylannya - yakori)
+    byti_rozdily = set()
+    for g in GRUPY:
+        katalog = ROOT / g
+        if not katalog.exists():
+            continue
+        for p in katalog.glob("*.md"):
+            for n in re.findall(r"розділ\w*\s+(\d{1,2})\b",
+                                p.read_text(encoding="utf-8")):
+                if n.zfill(2) not in rozdily:
+                    byti_rozdily.add(n)
+    return [
+        ("якорів заголовків", str(len(yakori))),
+        ("посилань на якір", "%d, битих %d" % (len(posylannya), len(byti))),
+        ("посилань «розділ NN»", "на неіснуючий розділ: %d" % len(byti_rozdily)),
+        ("номер файлу проти заголовка", "розбіжностей %d" % len(nomer_ne_zbig)),
+    ]
+
+
 def main(argv: list[str]) -> int:
     lyshe = None
     if "--fayl" in argv:
@@ -90,6 +161,9 @@ def main(argv: list[str]) -> int:
     dilyanky = "--dilyanky" in argv
     rody_rezhym = "--rody" in argv
     rody = defaultdict(list)
+    strukturni = 0
+    nevrakhovani: list[tuple] = []
+    SLUZHBOVI = ("prysvyata.md",)
 
     pokryti = zibraty_kartky()
     vsyoho = pokryto = 0
@@ -115,6 +189,14 @@ def main(argv: list[str]) -> int:
                 kinec = tochky[k + 1] if k + 1 < len(tochky) else len(ryadky) + 1
                 nakryti.update(range(poch, kinec))
             ne = [i for i in zmistovni if i not in nakryti]
+            for i in ne:
+                r = ryadky[i - 1]
+                if re.match(r"^#{1,6}\s", r):
+                    strukturni += 1
+                elif Path(vidn).name in SLUZHBOVI:
+                    strukturni += 1
+                else:
+                    nevrakhovani.append((vidn, i, r[:60]))
             if rody_rezhym:
                 for i in ne:
                     r = ryadky[i - 1]
@@ -159,6 +241,21 @@ def main(argv: list[str]) -> int:
             if k == "інше":
                 for f, i, t in rody[k][:10]:
                     print("        %s:%d  %s" % (f, i, t))
+
+    struktura = perevirka_budovy()
+    print("\nоблік рядків:")
+    print("   мають картку                 %5d" % pokryto)
+    print("   структурна підстава          %5d   (заголовки, службові сторінки)"
+          % strukturni)
+    print("   НЕ ВРАХОВАНО                 %5d" % len(nevrakhovani))
+    for vidn, i, t in nevrakhovani[:10]:
+        print("        %s:%d  %s" % (vidn, i, t))
+    print("\nбудова книги:")
+    for k, v in struktura:
+        print("   %-34s %s" % (k, v))
+    povno = 100 * (pokryto + strukturni) / max(1, vsyoho)
+    print("\n   УСЕ НА МІСЦІ: %.2f %% (%d із %d)"
+          % (povno, pokryto + strukturni, vsyoho))
 
     print("\npokryttya: змістовних рядків книги %d; накрито картками %d (%.1f %%); "
           "без картки %d"
