@@ -1,0 +1,25 @@
+- id: T-53-079
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf, grep -i 'measurement\|development\|board\|LED\|20mA', розділи з описом плати, повну інформацію про розробку на модулі не знайдено; 2368fbe2-power_management.rst, grep -i 'measurement\|development board', інформація про тестування на розробних платах відсутня
+
+- id: T-08-020
+  verdykt: pidtverdzheno
+  fayl: esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf
+  quote: |
+    Pins GPIO6 to GPIO11 on the ESP32-D0WD-V3/ESP32-D0WDR2-V3 chip are connected to the SPI flash integrated on the module and are not led out.
+  de: сторінка 12, примітка 2 до таблиці пінів
+
+- id: T-B-231
+  verdykt: pidtverdzheno
+  fayl: 1001fdc6-freertos.rst
+  quote: |
+    All FreeRTOS ports in ESP-IDF map FreeRTOS memory allocation or free calls (e.g., pvPortMalloc() and pvPortFree()) to ESP-IDF heap API (i.e., heap_caps_malloc and heap_caps_free).
+  de: розділ "FreeRTOS Heap" - механізм виділення пам'яті з врахуванням фрагментації
+
+- id: T-61-012
+  verdykt: ne_znayshov
+  dyvyvsya: 8504f18b-esp_now.rst, grep -i '10\|ms\|delay\|transmission', інформація про час передачі 10 мс не знайдена; 31a9c838-esp_now.h, grep -i 'transmission\|delay\|time', специфічна інформація про 10 мс не знайдена
+
+- id: T-11-018
+  verdykt: ne_znayshov
+  dyvyvsya: 08bbeb37-index.rst, grep -i 'branch\|version\|master', специфічна інформація про вказання гілки замість master не знайдена в цьому файлі

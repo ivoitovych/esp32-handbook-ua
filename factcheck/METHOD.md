@@ -132,6 +132,74 @@ When a check was finally written it found 6 genuine mismatches — and
 all six were that day's corrections, which is the best confirmation a
 check can give itself.
 
+
+---
+
+## 3-bis. Coverage: the layer that asks what is missing
+
+Three layers check what is **in** the registry. None of them asks what
+is **not**.
+
+The registry is generated from the book, so "does every unit have a
+card" is true by construction and worth nothing. The question that
+matters runs the other way:
+
+> **Does every line of the book become a unit?**
+
+Text the splitter never saw has no card, no class and no evidence — and
+does not appear in any count. It is not `unverified`; it is invisible. A
+book can report 100 % of its units checked while a chapter of it was
+never split at all.
+
+### Two kinds of accounting, and only together do they mean "in place"
+
+A line is accounted for if one of two things is known about it:
+
+* **a card** — the line carries a claim, and the claim is in the
+  registry;
+* **a structural ground** — the line is part of the book's construction,
+  and the script **verifies** that, rather than assuming it.
+
+The second was first proposed as cards with a status like "not subject
+to checking". That was rejected, and the reason is worth keeping.
+
+A card whose entire content is "this is a heading" carries nothing a
+script cannot derive from the line itself. Ninety-one such records add
+nothing to the registry but weight — and they introduce an **asserting
+verdict**, which on this project once collected a dumping ground
+(85–87 % of one such class turned out to be ordinary author's
+judgements).
+
+> **A structural ground is stronger than a card precisely because it is
+> re-checked on every run.** A card is written once and can go stale in
+> silence; a rule cannot. A heading that stops being a heading is
+> invisible to its card and visible to the script the same day.
+
+### The rule this generalises to
+
+> When a fact about the text can be **derived from the text**, it does
+> not need a record in the registry. A record is for a **judgement**
+> that cannot be derived.
+
+The registry then stays what it should be — a store of judgements and
+evidence — instead of a transcript of everything the book contains.
+
+**And the boundary, so the rule does not travel further than it should:**
+table cells and code lines keep their cards. A cell *carries a claim*
+("BME280 · Address → 0x76"); a heading does not. The line runs not
+along the shape of the row but along whether there is anything to prove.
+
+### Structure is verified, not assumed
+
+A heading counts only if the line matches a heading pattern, the anchors
+referenced elsewhere exist, the number in the title equals the number in
+the filename, and every "chapter NN" reference resolves.
+
+Measured on this book: 639 chapter references, 0 broken; 13 anchor
+links, 0 broken; 0 number mismatches. **The structural check finds
+nothing today** — it is a regression guard, and saying so is part of
+reporting it honestly.
+
 ---
 
 ## 4. Laws of writing a work order
@@ -350,6 +418,28 @@ other direction, flagged seven fabricated document names of which
   One number called "unreachable" hides that difference, and the
   remainder then looks like a debt when part of it is nobody's.
 
+- **A wrong machine-readable pointer is worse than prose.** Prose
+  honestly says "a human will work it out"; a pointer promises
+  verifiability and lies. Resolving 201 prose sources by name similarity
+  produced 172 pointers, of which **73 named the wrong document** —
+  a driver instead of a datasheet, one battery instead of another.
+  All 137 that did not verify were reverted.
+- **Resolve a source only by checking that the quote is actually
+  there**, never by "the name looks similar". The same rule as for
+  document names, approached from the other end.
+- **A URL can be recovered by verification even when it cannot be
+  derived.** Cache filenames carry eight hex characters of the URL's
+  hash, which is one-way — but candidate URLs can be generated and
+  hashed until one matches. Twenty-five of thirty-two were recovered
+  this way with certainty, where guessing by name had failed.
+- **The manifest can register the book as a source.** Seven book files
+  were removed from the cache and four came back with the next
+  download, because eight manifest rows pointed at the book's own raw
+  URLs. Removing the effect while leaving the cause is postponement,
+  not repair — and it was only noticed because the download ran again
+  the next day.
+
+
 ---
 
 ## 8. Working in pairs
@@ -407,3 +497,12 @@ next day — which is precisely the rule we demand of helpers.
 - **A pattern read from someone else's format must live in one place
   with whoever writes that format.** A copy of a pattern is a promise
   not to change the format that nobody made.
+- **A check that normalises presentation must not eat content.** A rule
+  joining hyphenated line breaks (`-\s*\n\s*` → nothing) also deleted
+  **em-dashes at end of line**, and 127 cards appeared to have a context
+  that did not contain their own claim. Join only a true word break:
+  a hyphen flush between letters.
+- **A context that does not contain its own claim is worse than no
+  context** — it tells the reviewer they hold the surroundings when they
+  hold someone else's. Layer 1 must check this, and nothing else will.
+
