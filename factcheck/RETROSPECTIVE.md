@@ -3,8 +3,21 @@
 A plan-versus-actual account of the fact-checking technology, written
 so that the next book does not have to rediscover any of it.
 
-Figures are from the registry at the time of writing: **8331 claims,
-1337 evidence records, 92 book files, 39 tools.**
+**Figures below are dated `2026-08-28 19:xx UTC`** and come from
+`tools/factcheck.py status` and `tools/skhema.py`: **8110 claims (plus
+221 code blocks carried as context), 1360 evidence records, 92 book
+files, 53 tools.**
+
+The date is not decoration. This file previously said "figures at the
+time of writing" **without naming the time**, and within two days every
+one of them had moved — claims by 221, records by 23, the verified share
+by a full point. A number with no date reads as current, is believed as
+current, and cannot be checked by anyone including its author.
+
+> **Every measured number in a document carries its date and the command
+> that produced it, or it does not belong in a document.** `README.md`
+> gets this right by holding commands instead of numbers; this file did
+> not.
 
 ---
 
@@ -32,20 +45,33 @@ something; this is not.
 
 | State | Claims | |
 |---|---:|---|
-| `A` verbatim — source retrieved and quoted | 2070 | 25.5 % |
-| `B` derived — source retrieved, claim follows | 219 | 2.7 % |
-| `D` arithmetic — settled by calculation | 140 | 1.7 % |
-| `C` named-unreachable — source named, not reachable here | 185 | 2.3 % |
-| `E` no external signal — editorial, nothing to check against | 3746 | 46.2 % |
-| `F` unchecked | 1750 | 21.6 % |
-| `K` code context | 221 | — |
+| State | Claims | | |
+|---|---:|---:|---|
+| `A` verbatim — source retrieved and quoted | 2032 | 25.1 % | |
+| `B` derived — source retrieved, claim follows | 226 | 2.8 % | |
+| `D` arithmetic — settled by calculation | 93 | 1.1 % | |
+| `C` named-unreachable — source named, not reachable here | 178 | 2.2 % | |
+| `S` internal — checked against another place in this book | 44 | 0.5 % | new |
+| `L` looked-not-found — a document was opened, nothing there | 8 | 0.1 % | new |
+| `E` no external signal — the rule fired, nothing checkable in the text | 3780 | 46.6 % | |
+| `F` unchecked | 1749 | 21.6 % | |
+| `K` code context | 221 | — | |
 
-**Verified against a source or a calculation: 2429, or 30.0 %.**
+**Verified against a source or a calculation: 2351, or 29.0 %.**
 
-This figure fell from 32.9 % when the pattern leaks of §8 were closed:
-239 claims stopped being "verified" and went back to unchecked, which
-is what they always were. A coverage number that only ever rises is a
-number nobody is checking.
+`S` is reported on its own line and **not** added to that figure. The
+book agreeing with itself is checkable and worth recording; it is not
+external verification, and folding it in would inflate the one number a
+reader looks at first.
+
+This figure has now fallen twice, and both falls are the point:
+
+    32.9 %  →  30.0 %   pattern leaks closed; 239 claims went back to F
+    30.0 %  →  29.0 %   leaks closed again, and D fell 140 → 93 when
+                        one arithmetic record stopped covering 27 units
+                        it never computed
+
+> A coverage number that only ever rises is a number nobody is checking.
 
 The honest sentence the book can print is *not* "everything is
 verified". It is: **every claim was looked at at least once, and the
