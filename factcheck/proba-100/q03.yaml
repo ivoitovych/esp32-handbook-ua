@@ -1,0 +1,39 @@
+- odynycya: T-59-103
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/http_server/
+
+- odynycya: T-49-064
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/
+
+- odynycya: T-04-120
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+
+- odynycya: T-E-124
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/
+
+- odynycya: T-59-129
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/protocols/http_server/
+
+- odynycya: T-16-017
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst
+
+- odynycya: T-K12-008
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/
+
+- odynycya: T-57-066
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/
+
+- odynycya: T-B-121
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/
+
+- odynycya: T-07-026
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/

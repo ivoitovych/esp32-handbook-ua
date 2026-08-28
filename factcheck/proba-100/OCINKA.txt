@@ -1,0 +1,31 @@
+вибірка 100 · відповідей 100 · без відповіді 0 · зайвих 0 · дублів 0
+
+вердикти:
+   ne_znayshov         71  (71.0 %)
+   pidtverdzheno       18  (18.0 %)
+   porada              10  (10.0 %)
+   nedosyazhne          1  ( 1.0 %)
+
+третій шар — цитати, що заявлені дослівними:
+   цитата дослівна              9
+   ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     8
+   документ не дістався         1
+
+порушень: 14
+   ✗ T-02-015    САМОПОСИЛАННЯ НА ДОВІДНИК    https://raw.githubusercontent.com/ivoitovych/e
+   ✗ T-02-087    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     (no SOC_BT_SUPPORTED in esp32s2/include/soc/so
+   ✗ T-15-016    ДОКУМЕНТ НЕ ДІСТАВСЯ         https://raw.githubusercontent.com/espressif/es
+   ✗ T-21-080    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     Since ROM is not part of the program ELF, it i
+   ✗ T-25-039    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     idf.py monitor --print-filter="xyz"
+To prevent
+   ✗ T-25-047    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     typedef enum {
+    ESP_LOG_NONE    = 0,
+    ES
+   ✗ T-26-117    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     A core dump contains snapshots of all tasks in
+   ✗ T-32-065    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     The library will attempt to perform recovery o
+   ✗ T-61-062    САМОПОСИЛАННЯ НА ДОВІДНИК    https://raw.githubusercontent.com/ivoitovych/e
+   ✗ T-E-011     САМОПОСИЛАННЯ НА ДОВІДНИК    https://raw.githubusercontent.com/ivoitovych/e
+   ✗ T-E-046     БРАКУЄ ПОЛІВ                 dzherelo
+   ✗ T-G-008     ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     The boot value is the hex value of the strappi
+   ✗ T-K08-024   САМОПОСИЛАННЯ НА ДОВІДНИК    https://raw.githubusercontent.com/ivoitovych/e
+   ✗ T-K09-017   ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     For modules with Octal SPI PSRAM, pins IO35, I

@@ -374,6 +374,16 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `wdts.rst` | `aab5499bba67e15e1327504328a9aa74ab88c82cb90f9c27d500d5b5d773c6af` | 16181 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst> |
 | `d4da9d47-esp32-c6_datasheet_en.pdf` | `372a5b42b2900c83ef4309149c8835e9ae2d1be19244995bf2fb83af4dc5edf1` | 975625 | 2026-08-28 | <https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf> |
 | `7f786a8e-esp32-h2_datasheet_en.pdf` | `2cb42839833eac06356fb197492b4ba42b85149dc0f3633467fab1c7b26eb243` | 784135 | 2026-08-28 | <https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf> |
+| `10e5f2d6-pio.h` | `b0b6dac4e44f41509b6ea8eee54c6e1086fe4ec294aeaec9e686cd4103cbe4e8` | 97408 | 2026-08-28 | <https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2_common/hardware_pio/include/hardware/pio.h> |
+| `08281685-ulp-risc-v.rst` | `161890e570cfebd864edd7fb08228a8910d87f88eb721cbcda649d8ca73259da` | 23978 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp-risc-v.rst> |
+| `63e4d767-board.py` | `ca323765b78b42c520b7ea8ab4544c3bd6ded4af6d5d45bd12600da2d9bab43c` | 5063 | 2026-08-28 | <https://raw.githubusercontent.com/platformio/platformio-core/master/platformio/platform/board.py> |
+| `f84107c3-README.md` | `83d26e8b0719523be76a7977b18bb9bb6c3b61bdae37d0495a212ee137067ef4` | 2537 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/README.md> |
+| `3d9d08c0-esp_log_level.h` | `dacf4694f0d6a02f99ac81b9429ee6d7ce73da22b812f6e9f10a3cba77d1852f` | 7114 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/log/include/esp_log_level.h> |
+| `898bc895-esp_log.h` | `66d27e0436cfe3c4ad6e63b4080d0966711a069e7679ba97e52dc4632c01538c` | 20702 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/log/include/esp_log.h> |
+| `a4c4a980-nvs_flash.rst` | `db348093d8f873a59e9b11a5ec6e1e81d8b8d03b92f2e02a5db44a03e2d853f0` | 37912 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst> |
+| `49a0967f-esp_now.h` | `6163bdf241788ba2883d57bf8da981364bd5c183cd3edab28e3d4d285eb03044` | 15823 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_now.h> |
+| `5ec0765a-8857` | `cc7408d556214b932fe423dd22f66f8713c7bb709d8c4912f17b973512f4de78` | 265075 | 2026-08-28 | <https://github.com/espressif/esp-idf/issues/8857> |
+| `36051003-esp_psram_impl_octal.c` | `bc3c1012ffe8bb6c5d60bf81ab6f6e1cc252a8f103ea575ea2951407146f25fc` | 18679 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_psram/esp32s3/esp_psram_impl_octal.c> |
 
 Файлів: **355**, разом **139.8 МБ** (межа 1.0 ГБ).
 Файлів: **357**, разом **140.7 МБ** (межа 1.0 ГБ).

@@ -1,0 +1,56 @@
+- odynycya: T-A-107
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/
+
+- odynycya: T-12-024
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/
+
+- odynycya: T-A-087
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/
+
+- odynycya: T-06-054
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/
+
+- odynycya: T-01-082
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/
+
+- odynycya: T-K01-011
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/
+
+- odynycya: T-62-104
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/
+
+- odynycya: T-44-035
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/
+
+- odynycya: T-25-047
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/log/include/esp_log_level.h
+  cytata: |
+    typedef enum {
+        ESP_LOG_NONE    = 0,
+        ESP_LOG_ERROR   = 1,
+        ESP_LOG_WARN    = 2,
+        ESP_LOG_INFO    = 3,
+        ESP_LOG_DEBUG   = 4,
+        ESP_LOG_VERBOSE = 5,
+        ESP_LOG_MAX     = 6,
+    } esp_log_level_t;
+  komentar: п'ять рівнів логування (ERROR, WARN, INFO, DEBUG, VERBOSE) плюс NONE; також вводиться поняття тегів для контролю рівнів за модулями
+
+- odynycya: T-25-039
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst
+  cytata: |
+    idf.py monitor --print-filter="xyz"
+    To prevent IDF Monitor from automatically resetting the target on connection, call IDF Monitor with the ``--no-reset`` option (e.g., ``idf.py monitor --no-reset``).
+    IDF Monitor can print a timestamp in the beginning of each line. The timestamp format can be changed by the ``--timestamp-format`` command line argument.
+    Create a file in the project directory and the output is written to that file until this is disabled with the same keyboard shortcut (or IDF Monitor exits).
+  komentar: основні параметри --print-filter, --no-reset, --timestamp-format підтримуються; запис до файлу здійснюється через Ctrl+L, а не параметр командного рядка
