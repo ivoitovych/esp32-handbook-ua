@@ -43,9 +43,9 @@
 запис, на який ніхто не відповів, друкує окремим розділом. Нестача —
 теж результат, і найнебезпечніший: вона виглядає як згода.
 
-    tools/naryad.py                    зібрати factcheck/BRIEF-QUOTES.md
-    tools/naryad.py --krim <каталог>   лише ті, на які ще не відповіли
-    tools/naryad.py --zvit <каталог>   звести відповіді помічників
+    tools/work_orders.py                    зібрати factcheck/BRIEF-QUOTES.md
+    tools/work_orders.py --krim <каталог>   лише ті, на які ще не відповіли
+    tools/work_orders.py --zvit <каталог>   звести відповіді помічників
 """
 from __future__ import annotations
 
@@ -64,7 +64,7 @@ NA_PAKET = 5
 
 ZAHOLOVOK = """# Наряд: {skilky} цитат, яких немає в джерелі
 
-**Генерується** `tools/naryad.py`. Питання **не** про цитату.
+**Генерується** `tools/work_orders.py`. Питання **не** про цитату.
 
 Третій шар уже сказав, що цитати за адресою немає. Причина відома і
 здебільшого та сама: супровідник **причепурив** цитату — скоротив
@@ -182,7 +182,7 @@ def zvesty(katalog: Path) -> int:
 
     r = [f"""# Книга проти джерел: {len(ochikuvano)} розбіжних цитат
 
-**Генерується** `tools/naryad.py --zvit`. Наряд —
+**Генерується** `tools/work_orders.py --zvit`. Наряд —
 `factcheck/BRIEF-QUOTES.md`.
 
 Третій шар сказав, що цих цитат немає за названою адресою. Питання тут
@@ -253,7 +253,7 @@ def zvesty(katalog: Path) -> int:
                  f"| {str(z.get('komentar', '')).strip()[:110]} |")
 
     ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"naryad: очікувано {len(ochikuvano)}, відповідей "
+    print(f"work_orders: очікувано {len(ochikuvano)}, відповідей "
           f"{len(ochikuvano) - len(znykli)}, спростувань "
           f"{len(sperechayutsya)}, без відповіді {len(znykli)} "
           f"→ {ZVIT.relative_to(ROOT)}")
@@ -303,7 +303,7 @@ def main() -> int:
         r.append(f"- третій шар: {str(n.get('detali', ''))[:150]}\n")
 
     CIL.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"naryad: записів {len(bidy)}, "
+    print(f"work_orders: записів {len(bidy)}, "
           f"пакетів {(len(bidy) + NA_PAKET - 1) // NA_PAKET} "
           f"→ {CIL.relative_to(ROOT)}")
     return 0

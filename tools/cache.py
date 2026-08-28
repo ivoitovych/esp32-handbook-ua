@@ -8,11 +8,11 @@
 Що робить. Кладе завантажене в `dzherela-kesh/`, рахує sha256 і пише
 рядок у `dzherela-kesh/MANIFEST.md`: URL, ім'я, розмір, хеш, дата.
 
-    tools/kesh.py <URL> [ім'я]   завантажити й записати в маніфест
-    tools/kesh.py --list         що вже є
-    tools/kesh.py --check        чи збігаються хеші з маніфестом
-    tools/kesh.py --size         скільки займає
-    tools/kesh.py --vidtvornist  чи може третя сторона звірити доказ
+    tools/cache.py <URL> [ім'я]   завантажити й записати в маніфест
+    tools/cache.py --list         що вже є
+    tools/cache.py --check        чи збігаються хеші з маніфестом
+    tools/cache.py --size         скільки займає
+    tools/cache.py --vidtvornist  чи може третя сторона звірити доказ
 
 ## Чому самі файли не комітяться
 
@@ -53,17 +53,17 @@ MEZHA_GB = 1.0
 
 ZAHOLOVOK = """# Кеш зовнішніх джерел — маніфест
 
-**Генерується** `tools/kesh.py`. Самі файли в git **не входять**: це
+**Генерується** `tools/cache.py`. Самі файли в git **не входять**: це
 чужий матеріал під копірайтом, і перевидавати його ми не маємо права
-(докладно — у шапці `tools/kesh.py`).
+(докладно — у шапці `tools/cache.py`).
 
 У git іде цей перелік. За ним будь-хто завантажує ті самі файли й
 звіряє `sha256`: збігся — читає дослівно те саме, що цитував автор
 доказу.
 
 ```sh
-tools/kesh.py <URL>      завантажити й записати сюди
-tools/kesh.py --check    звірити хеші наявних файлів
+tools/cache.py <URL>      завантажити й записати сюди
+tools/cache.py --check    звірити хеші наявних файлів
 ```
 
 | Файл | sha256 | Байтів | Коли | URL |
@@ -179,7 +179,7 @@ def zvirka() -> int:
             bidy += 1
         else:
             print(f"   ✓ {imya}")
-    print(f"kesh: записів {len(z)}, розбіжностей {bidy}")
+    print(f"cache: записів {len(z)}, розбіжностей {bidy}")
     return 1 if bidy else 0
 
 
@@ -189,14 +189,14 @@ def rozmir() -> int:
         return 0
     b = sum(p.stat().st_size for p in KESH.rglob("*") if p.is_file())
     gb = b / 1e9
-    print(f"kesh: {gb:.3f} ГБ із {MEZHA_GB} ГБ")
+    print(f"cache: {gb:.3f} ГБ із {MEZHA_GB} ГБ")
     if gb > MEZHA_GB:
         print("   · межу перевищено — вирішіть, що видалити")
     return 0
 
 
 def _fc():
-    """`factcheck` завантажується ліниво: `kesh.py` живе й без нього."""
+    """`factcheck` завантажується ліниво: `cache.py` живе й без нього."""
     import sys
     sys.path.insert(0, str(ROOT / "tools"))
     import factcheck

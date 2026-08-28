@@ -16,8 +16,8 @@
 на спірному перевірка починає брехати, а інструмент, який бреше, за
 тиждень перестають читати.
 
-    tools/kalky.py        перевірити текст книги
-    tools/kalky.py -v     показати рядок цілком
+    tools/calques.py        перевірити текст книги
+    tools/calques.py -v     показати рядок цілком
 """
 from __future__ import annotations
 
@@ -97,7 +97,7 @@ def main() -> int:
                               + (f"  ({chomu})" if chomu else ""))
                         if detalno:
                             print(f"        {r.strip()[:110]}")
-    print(f"kalky: файлів {fayliv}, взірців {len(KALKY)}, "
+    print(f"calques: файлів {fayliv}, взірців {len(KALKY)}, "
           f"знахідок {znaydeno}")
     return 1 if znaydeno else 0
 

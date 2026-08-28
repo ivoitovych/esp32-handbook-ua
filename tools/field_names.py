@@ -39,8 +39,8 @@
 | `shukaty` | `look_for` | що шукати в недосяжному документі |
 | `rozrakhunok` | `calculation` | обчислення для класу `arithmetic` |
 
-    tools/imena.py --rozshyryty   додати англійські поруч зі старими
-    tools/imena.py --zvirty       чи всі записи мають обидва набори
+    tools/field_names.py --rozshyryty   додати англійські поруч зі старими
+    tools/field_names.py --zvirty       чи всі записи мають обидва набори
 """
 from __future__ import annotations
 
@@ -127,9 +127,9 @@ def main() -> int:
             zminen += 1
 
     if a.zvirty:
-        print(f"imena: записів {zapysiv}, без англійських імен {nepovnyh}")
+        print(f"field_names: записів {zapysiv}, без англійських імен {nepovnyh}")
         return 1 if nepovnyh else 0
-    print(f"imena: розширено файлів {zminen}, записів {zapysiv}")
+    print(f"field_names: розширено файлів {zminen}, записів {zapysiv}")
     return 0
 
 

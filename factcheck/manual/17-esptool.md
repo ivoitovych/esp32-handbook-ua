@@ -1851,7 +1851,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 **Доказ**
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000
@@ -1887,7 +1887,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 **Доказ**
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
+- **Джерело:** tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
 - **Розрахунок:**
   таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
   nvs               0x9000 + 0x6000          = 0xF000

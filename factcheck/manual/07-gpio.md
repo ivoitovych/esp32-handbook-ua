@@ -2920,18 +2920,18 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
   > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
   > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
   > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > tools/pins.py: кожен номер GPIO у книзі звіряється з масками тих
   > сімейств, які текст поруч називає; область дії береться з `#if
   > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
   > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Спосіб і дата:** python3 tools/pins.py (у складі `make check`), 2026-08-26
 - **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
 Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
 - **Прохід:** pass-30-piny-suciljno
@@ -3021,18 +3021,18 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
   > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
   > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
   > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > tools/pins.py: кожен номер GPIO у книзі звіряється з масками тих
   > сімейств, які текст поруч називає; область дії береться з `#if
   > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
   > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Спосіб і дата:** python3 tools/pins.py (у складі `make check`), 2026-08-26
 - **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
 Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
 - **Прохід:** pass-30-piny-suciljno
@@ -4554,18 +4554,18 @@ datasheet чипа.
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
   > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
   > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
   > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > tools/pins.py: кожен номер GPIO у книзі звіряється з масками тих
   > сімейств, які текст поруч називає; область дії береться з `#if
   > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
   > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Спосіб і дата:** python3 tools/pins.py (у складі `make check`), 2026-08-26
 - **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
 Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
 - **Прохід:** pass-30-piny-suciljno

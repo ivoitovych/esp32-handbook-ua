@@ -20,8 +20,8 @@
 значення. Лише імена полів — і лише тих структур, що перелічені в
 `STRUKT`.
 
-    tools/polya.py        перевірити
-    tools/polya.py -v     показати всі знайдені пари структура → поле
+    tools/struct_fields.py        перевірити
+    tools/struct_fields.py -v     показати всі знайдені пари структура → поле
 """
 
 import re
@@ -96,7 +96,7 @@ def main() -> int:
 
     for z in zhahy:
         print(f"   • {z}")
-    print(f"polya: структур у переліку {len(struktury)}, "
+    print(f"struct_fields: структур у переліку {len(struktury)}, "
           f"перевірено полів {perevireno}, помилок {len(zhahy)}")
     return 1 if zhahy else 0
 

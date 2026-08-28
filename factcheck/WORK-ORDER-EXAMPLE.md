@@ -45,7 +45,7 @@
 
 Качай так, щоб файл потрапив у кеш і дістав запис у маніфесті:
 
-    python3 tools/kesh.py 'https://www.ti.com/lit/ds/symlink/sn65hvd230.pdf'
+    python3 tools/cache.py 'https://www.ti.com/lit/ds/symlink/sn65hvd230.pdf'
 
 Далі читай його звідти:
 

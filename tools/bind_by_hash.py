@@ -220,7 +220,7 @@ def main() -> int:
                      encoding="utf-8")
         print(f"  записано {imya}: {len(zap)} записів")
 
-    print("\nтепер: tools/znimok.py <знімок> --zvirty — має бути нуль змін")
+    print("\nтепер: tools/snapshot.py <знімок> --zvirty — має бути нуль змін")
     return 0
 
 

@@ -20,8 +20,8 @@ S3 не існує; проєкт 60 радив C3 і давав `GPIO22`, `GPIO2
     своєї колонки;
   · інакше — проти **всіх** сімейств, які файл називає у складових.
 
-    tools/piny.py        перевірити
-    tools/piny.py -v     показати, що визнано за область кожного рядка
+    tools/pins.py        перевірити
+    tools/pins.py -v     показати, що визнано за область кожного рядка
 """
 
 import re
@@ -207,7 +207,7 @@ def main() -> int:
 
     for z in dict.fromkeys(zhahy):
         print(f"   • {z}")
-    print(f"piny: перевірено згадок {perevireno}, помилок {len(set(zhahy))}")
+    print(f"pins: перевірено згадок {perevireno}, помилок {len(set(zhahy))}")
     return 1 if zhahy else 0
 
 

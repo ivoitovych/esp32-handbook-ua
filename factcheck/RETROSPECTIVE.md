@@ -266,10 +266,10 @@ than quoted as it stands.
 | Where | Promised | Did |
 |---|---|---|
 | `vorota` | two checks | one |
-| `prochid.py` | a candidate per packet | none, silently |
+| `sweep.py` | a candidate per packet | none, silently |
 | `stale` | compare the book's text | check the file exists |
 | card regex | four readers share the format | each kept a private copy |
-| `zvyazok.py` name pattern | a bad filename is a violation | the letter vanished from the ledger |
+| `correspondence.py` name pattern | a bad filename is a violation | the letter vanished from the ledger |
 
 The last one cost the most: **two of the second maintainer's letters
 were invisible to the correspondence protocol** — Cyrillic in the

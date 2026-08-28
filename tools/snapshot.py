@@ -52,8 +52,8 @@
 якір). Тут він виявився вдруге, з іншого боку, і коштував півгодини
 розбору. Тож він стоїть у двох місцях навмисно.
 
-    tools/znimok.py <куди.json>          зняти (за `sha`)
-    tools/znimok.py <куди.json> --zvirty звірити з поточним станом
+    tools/snapshot.py <куди.json>          зняти (за `sha`)
+    tools/snapshot.py <куди.json> --zvirty звірити з поточним станом
 """
 from __future__ import annotations
 

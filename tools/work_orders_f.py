@@ -24,7 +24,7 @@
 2. **ворота існують, і сказано, що саме вони відкидають**;
 3. `dzherelo` на кожен вердикт, включно з негативним.
 
-    tools/naryad_f.py <куди> [--na-naryad 10]
+    tools/work_orders_f.py <куди> [--na-naryad 10]
 """
 from __future__ import annotations
 

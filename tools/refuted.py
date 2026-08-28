@@ -15,8 +15,8 @@
 Наслідок для процесу: виправлення більше не може «недоїхати» тихо.
 Або воно доїхало скрізь, або збірка про це скаже.
 
-    tools/sprostovane.py        перевірити
-    tools/sprostovane.py -v     показати взірці
+    tools/refuted.py        перевірити
+    tools/refuted.py -v     показати взірці
 """
 
 import re
@@ -90,7 +90,7 @@ def main() -> int:
 
     for zh in zhahy:
         print(f"   • {zh}")
-    print(f"sprostovane: реєстрів {len(REYESTRY)}, взірців {len(zap)}, "
+    print(f"refuted: реєстрів {len(REYESTRY)}, взірців {len(zap)}, "
           f"файлів {perevireno}, знахідок {len(zhahy)}")
     return 1 if zhahy else 0
 

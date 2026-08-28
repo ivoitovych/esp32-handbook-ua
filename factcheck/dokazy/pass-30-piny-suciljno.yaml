@@ -4,7 +4,7 @@
 # шари ці різні за силою — тому й записів тут кілька, а не один.
 #
 #   1. **Існування піна** в названому сімействі — клас B, механічно:
-#      `tools/piny.py` звіряє кожне число з масками `soc_caps.h` при
+#      `tools/pins.py` звіряє кожне число з масками `soc_caps.h` при
 #      кожному `make check`.
 #   2. **Функція піна** (strapping, флеш, тільки-вхідний, ADC1/ADC2,
 #      DAC, JTAG) — клас A, з проходів 12, 20, 24, 25 і 26.
@@ -143,7 +143,7 @@
   zbih: GPIO 6–11|GPIO 32–39|GPIO 34–39|`GPIO0`–`GPIO4`|GPIO 6, 7, 8, 9, 10, 11|`GPIO34`|`GPIO4`
   klas: B
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
-    (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+    (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
   cytata: 'esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
 
     esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
@@ -153,7 +153,7 @@
     esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
 
 
-    tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+    tools/pins.py: кожен номер GPIO у книзі звіряється з масками тих
 
     сімейств, які текст поруч називає; область дії береться з `#if
 
@@ -162,7 +162,7 @@
     BOM проєкту.
 
     '
-  sposib: python3 tools/piny.py (у складі `make check`), 2026-08-26
+  sposib: python3 tools/pins.py (у складі `make check`), 2026-08-26
   notatka: 'Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане
     дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому
     сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
@@ -175,7 +175,7 @@
   match: GPIO 6–11|GPIO 32–39|GPIO 34–39|`GPIO0`–`GPIO4`|GPIO 6, 7, 8, 9, 10, 11|`GPIO34`|`GPIO4`
   status: derived
   source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
-    (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+    (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
   quote: 'esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
 
     esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
@@ -185,7 +185,7 @@
     esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
 
 
-    tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+    tools/pins.py: кожен номер GPIO у книзі звіряється з масками тих
 
     сімейств, які текст поруч називає; область дії береться з `#if
 
@@ -194,7 +194,7 @@
     BOM проєкту.
 
     '
-  method: python3 tools/piny.py (у складі `make check`), 2026-08-26
+  method: python3 tools/pins.py (у складі `make check`), 2026-08-26
   note: 'Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане
     дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому
     сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.

@@ -63,7 +63,7 @@
 Судити все одно має людина: чи припис обґрунтований, чи його треба
 пом'якшити. Тому це рядок звіту, а не зупинка випуску.
 
-    tools/modalnist.py [-v]
+    tools/modality.py [-v]
 """
 from __future__ import annotations
 
@@ -146,7 +146,7 @@ def main() -> int:
             print(f"   · {oid}: «{slovo}» у джерелі, припис у книзі")
             print(f"        {tekst[:96]}")
             print(f"        ← {fayl}")
-    print(f"modalnist: приписів проти дозволу в джерелі: {len(znayd)} "
+    print(f"modality: приписів проти дозволу в джерелі: {len(znayd)} "
           f"— судить людина, це не помилка сама по собі")
     return 0
 

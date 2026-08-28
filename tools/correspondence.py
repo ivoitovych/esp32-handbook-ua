@@ -202,7 +202,8 @@ def perevirka(suvoro: bool) -> int:
         for p in sorted(chekayemo, key=lambda p: p["koly"]):
             print(f"    {p['koly']}  → {p['vyd']}: {p['tema']}")
 
-    print(f"\nzvyazok: повідомлень {len(povid)}, порушень форми {len(bidy)}, "
+    print(f"\ncorrespondence: повідомлень {len(povid)}, "
+          f"порушень форми {len(bidy)}, "
           f"наш борг {len(nash_borh)}, чекаємо {len(chekayemo)}")
     if bidy:
         return 1
@@ -218,7 +219,7 @@ def indeks() -> int:
 
     ryadky = [
         "# Листування: покажчик\n",
-        "**Генерується** `tools/zvyazok.py --index`. Правити вручну нема "
+        "**Генерується** `tools/correspondence.py --index`. Правити вручну нема "
         "сенсу; формат і правила — `zvyazok/PROTOKOL.md`.\n",
         "| Коли (UTC) | Від | Вид | Тема | База | Відповідь |",
         "|---|---|---|---|---|---|",
@@ -236,7 +237,7 @@ def indeks() -> int:
             f"{p['tema']} | `{p['baza']}` | {stan} |")
 
     (KAT / "INDEX.md").write_text("\n".join(ryadky) + "\n", encoding="utf-8")
-    print(f"zvyazok: покажчик оновлено, повідомлень {len(povid)}")
+    print(f"correspondence: покажчик оновлено, повідомлень {len(povid)}")
     return 0
 
 
