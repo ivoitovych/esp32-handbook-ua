@@ -372,3 +372,4 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `wdts.rst` | `aab5499bba67e15e1327504328a9aa74ab88c82cb90f9c27d500d5b5d773c6af` | 16181 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst> |
 
 Файлів: **355**, разом **139.8 МБ** (межа 1.0 ГБ).
+
