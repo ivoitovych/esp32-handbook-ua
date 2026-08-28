@@ -178,6 +178,7 @@ def perevirka() -> list[str]:
                 bidy.append(
                     f"TASK-SPEC [{imya}]: наряд пропонує вердикти "
                     f"{sorted(chuzhi)}, яких ворота не перевіряють")
+    bidy += kesh_ne_v_git()
     return bidy
 
 
@@ -225,6 +226,36 @@ def main() -> int:
     print("\ndocs: керівних документів %d, розбіжностей %d"
           % (len(KERIVNI), len(bidy)))
     return 1 if bidy else 0
+
+
+def kesh_ne_v_git() -> list[str]:
+    """Жоден файл кешу, крім маніфесту, не має бути відстеженим.
+
+    Інцидент 2026-08-28: перейменування `dzherela-kesh` → `source-cache`
+    переписало в `.gitignore` **обидва** рядки на цей шлях, зокрема той,
+    чиїм предметом було старе ім'я. У контейнері, де робили
+    перейменування, старого каталогу вже не було, тож наслідку не було
+    видно взагалі. У другого супровідника він лишався — і 236 чужих
+    документів опинилися в індексі. Спіймано вчасно, у git не потрапило.
+
+    > Правило ігнорування для шляху — це твердження про всіх, у кого
+    > той шлях **ще є**. Перейменувати його означає зняти захист рівно
+    > там, де він потрібен, і ніколи там, де перейменування робили.
+
+    Тому це не перевірка `.gitignore`, а перевірка **наслідку**:
+    питаємо git, що він відстежує, а не читаємо правила й не віримо їм.
+    Рід 26 у `DEFECTS.md`.
+    """
+    import subprocess
+    r = subprocess.run(["git", "ls-files", "--", "source-cache",
+                        "dzherela-kesh"], cwd=ROOT,
+                       capture_output=True, text=True)
+    lyshni = [x for x in r.stdout.split()
+              if x and not x.endswith("/MANIFEST.md")]
+    if not lyshni:
+        return []
+    return [f"у git відстежено {len(lyshni)} файлів кешу — має бути лише "
+            f"MANIFEST.md; перші: {', '.join(lyshni[:3])}"]
 
 
 if __name__ == "__main__":
