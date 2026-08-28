@@ -134,8 +134,8 @@ def main() -> int:
             "nazva": f"{oid}: {' '.join(u['tekst'].split()[:8])}",
             "zbih": vz,
             "klas": "A",
-            "dzherelo": str(z["dzherelo"]).strip(),
-            "cytata": str(z["cytata"]).strip() + "\n",
+            "dzherelo": str(z["source"]).strip(),
+            "cytata": str(z["quote"]).strip() + "\n",
             "sposib": (
                 "Суцільний прохід 2026-08-27. Документ отримано в сесії, "
                 "витяг звірено з ним підрядком машинно "

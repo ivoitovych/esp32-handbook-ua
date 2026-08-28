@@ -97,7 +97,7 @@ def main() -> int:
         for r in yaml.safe_load(f.read_text(encoding="utf-8")) or []:
             if not isinstance(r, dict) or str(r.get("rid")) != "dzherelo-ye":
                 continue
-            sh = str(r.get("shukaty", "")).strip()
+            sh = str(r.get("look_for", "")).strip()
             if RE_DOSYAZHNE.search(sh) or not RE_KONKRETNE.search(sh):
                 continue
             kandydaty.append((str(r.get("id")), sh))

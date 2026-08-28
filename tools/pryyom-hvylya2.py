@@ -81,9 +81,9 @@ def perevirka(shlyakh: Path) -> list[tuple[str, str]]:
         if not isinstance(z, dict):
             bidy.append(("НЕ ЗАПИС", str(z)[:60]))
             continue
-        ident = str(z.get("id", z.get("nazva", "?")))[:40]
+        ident = str(z.get("id", z.get("title", "?")))[:40]
         verdykt = str(z.get("verdykt", "")).strip()
-        cyt = str(z.get("cytata", "")).strip()
+        cyt = str(z.get("quote", "")).strip()
         fayl = str(z.get("fayl", "")).strip()
 
         if verdykt not in ("pidtverdzheno", "sperechayetsya",

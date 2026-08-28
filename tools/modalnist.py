@@ -127,12 +127,12 @@ def main() -> int:
         for r in z:
             if not isinstance(r, dict) or str(r.get("klas")) not in ("A", "B"):
                 continue
-            cyt = str(r.get("cytata") or "")
+            cyt = str(r.get("quote") or "")
             m = RE_DOZVIL.search(cyt)
             if not m or RE_ZAHOLOVOK.search(cyt):
                 continue
             try:
-                rx = re.compile(str(r.get("zbih", "")))
+                rx = re.compile(str(r.get("match", "")))
             except re.error:
                 continue
             for u in odyn:

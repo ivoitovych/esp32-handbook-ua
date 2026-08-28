@@ -418,7 +418,7 @@ def klyuch(z: dict) -> tuple[str, str]:
     запис зникав і з «нічого не зачепив», і з «перекрито сильнішим» — а
     перший із цих переліків існує саме для того, щоб ловити хибний взірець.
     """
-    return (str(z.get("_prokhid", "?")), str(z.get("nazva", "?")))
+    return (str(z.get("_prokhid", "?")), str(z.get("title", "?")))
 
 
 def rozbyty_alternatyvy(vzirets: str) -> list[str]:
@@ -533,7 +533,7 @@ def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
     if tochni:
         return tochni
     return [z for z in zapysy
-            if z.get("zbih") and _vzirets(z["zbih"]).search(txt)]
+            if z.get("match") and _vzirets(z["match"]).search(txt)]
 
 
 # Взірців 1337, а внутрішній кеш `re` тримає 512: без власного кешу
@@ -560,19 +560,19 @@ def formatuvaty_dokaz(z: dict | None) -> str:
         return SHABLON_DOKAZU
     klas = z.get("klas", "F")
     ch = [f"**Доказ**\n", f"- **Клас:** {ZNAK.get(klas,'')} {klas} — {KLASY.get(klas,'')}"]
-    if z.get("dzherelo"):
+    if z.get("source"):
         ch.append(f"- **Джерело:** {z['dzherelo']}")
-    if z.get("cytata"):
-        tilo = "\n".join("  > " + x for x in str(z["cytata"]).rstrip().split("\n"))
+    if z.get("quote"):
+        tilo = "\n".join("  > " + x for x in str(z["quote"]).rstrip().split("\n"))
         ch.append(f"- **Дослівно з джерела:**\n{tilo}")
-    if z.get("rozrakhunok"):
-        tilo = "\n".join("  " + x for x in str(z["rozrakhunok"]).rstrip().split("\n"))
+    if z.get("calculation"):
+        tilo = "\n".join("  " + x for x in str(z["calculation"]).rstrip().split("\n"))
         ch.append(f"- **Розрахунок:**\n{tilo}")
-    if z.get("sposib"):
+    if z.get("method"):
         ch.append(f"- **Спосіб і дата:** {z['sposib']}")
-    if z.get("shukaty"):
+    if z.get("look_for"):
         ch.append(f"- **Що шукати в джерелі:** {z['shukaty']}")
-    if z.get("notatka"):
+    if z.get("note"):
         ch.append(f"- **Нотатка:** {z['notatka']}")
     ch.append(f"- **Прохід:** {z.get('_prokhid','—')}")
     return "\n".join(ch) + "\n"
@@ -861,7 +861,7 @@ def sketch() -> int:
     mertvi: list[tuple[dict, str, str]] = []
     shyroki: list[tuple[dict, str, int]] = []
     for z in dokazy:
-        vz = z.get("zbih")
+        vz = z.get("match")
         if not vz:
             continue
         chastyny = rozbyty_alternatyvy(vz)
@@ -1055,7 +1055,7 @@ def blocked() -> int:
         txt = " ".join(m.group(1).replace("> ", "").split()) if m else ""
         g = grupy.setdefault(u, {"shukaty": set(), "tverdzhennya": []})
         if sh:
-            g["shukaty"].add(sh.strip())
+            g["look_for"].add(sh.strip())
         g["tverdzhennya"].append((z["id"], z["src"], txt))
 
     if not grupy:
@@ -1083,9 +1083,9 @@ def blocked() -> int:
     for u, g in sorted(grupy.items(), key=lambda kv: -len(kv[1]["tverdzhennya"])):
         ryadky.append(f"## {u}\n")
         ryadky.append(f"Залежить тверджень: **{len(g['tverdzhennya'])}**\n")
-        if g["shukaty"]:
+        if g["look_for"]:
             ryadky.append("**Що шукати:**\n")
-            for s in sorted(g["shukaty"]):
+            for s in sorted(g["look_for"]):
                 ryadky.append(f"- {s}")
             ryadky.append("")
         ryadky.append("| Твердження | Де в книзі | Дослівно |")
@@ -1228,7 +1228,7 @@ def vorota() -> int:
 
     holosti = []
     for z in dokazy:
-        vz = str(z.get("zbih", ""))
+        vz = str(z.get("match", ""))
         if not vz:
             continue
         try:

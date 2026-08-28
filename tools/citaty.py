@@ -316,12 +316,12 @@ RE_DZHERELO_VSEREDYNI = re.compile(
 
 
 def dzherelo_vseredyni(z: dict) -> bool:
-    return bool(RE_DZHERELO_VSEREDYNI.search(str(z.get("dzherelo") or "")))
+    return bool(RE_DZHERELO_VSEREDYNI.search(str(z.get("source") or "")))
 
 
 def dzherelo_rozvyazne(z: dict) -> bool:
     """Чи в полі `dzherelo` названо документ, а не властивість світу."""
-    d = str(z.get("dzherelo") or "")
+    d = str(z.get("source") or "")
     return bool(RE_ADRESA.search(d)
                 or RE_ID_DOKUMENTA.search(d)
                 or RE_NAZVA_DOKUMENTA.search(d)
@@ -507,7 +507,7 @@ def dzherela_zapysu(z: dict) -> list[str]:
     Для `raw.githubusercontent.com` корінь — це власник, репозиторій і
     гілка; далі йде шлях у дереві, і саме його заміняє `...`.
     """
-    syryy = str(z.get("dzherelo") or "")
+    syryy = str(z.get("source") or "")
     povni = RE_URL.findall(syryy)
     out: list[str] = []
     for u in povni:
@@ -545,7 +545,7 @@ def perevirka(kachaty: bool,
         for z in zapysy:
             if not isinstance(z, dict):
                 continue
-            nazva = str(z.get("nazva", "?"))
+            nazva = str(z.get("title", "?"))
             # **Відсутність класу — не те саме, що клас `F`.**
             #
             # У реєстрі клас є завжди. У вивантаженні помічника його
@@ -576,7 +576,7 @@ def perevirka(kachaty: bool,
             # файл завантажується, а цитати, яку міг би звірити третій
             # шар, просто немає. Ворота проти цього одні: вимагати витяг
             # там, де клас його обіцяє.
-            if maye_klas and klas == "A" and not str(z.get("cytata") or
+            if maye_klas and klas == "A" and not str(z.get("quote") or
                                                      z.get("cytata-tablytsya")
                                                      or "").strip():
                 pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
@@ -666,7 +666,7 @@ def perevirka(kachaty: bool,
                 frahmenty = [[str(k).strip()] for k in tablychna
                              if str(k).strip()]
             else:
-                frahmenty = uryvky(str(z.get("cytata") or ""))
+                frahmenty = uryvky(str(z.get("quote") or ""))
             urly = dzherela_zapysu(z)
             if not frahmenty or not urly:
                 pidsumok["nichoho"] += 1

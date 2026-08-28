@@ -138,7 +138,7 @@ def tretiy_shar() -> dict[str, str]:
     except ImportError:
         return {}
     naslidky, _ = citaty.perevirka(True, [KANDYDATY])
-    return {str(n.get("nazva")): str(n.get("stan")) for n in naslidky}
+    return {str(n.get("title")): str(n.get("stan")) for n in naslidky}
 
 
 ZAHOLOVOK = """# Штурм класу `E`
@@ -200,8 +200,8 @@ def main() -> int:
     # потрапляє в реєстр неперевіреним». `citaty.py` вміє читати запис
     # без класу — це стан вивантаження помічника, а не брак.
     kand = [{"nazva": str(z.get("odynycya", "?")),
-             "dzherelo": str(z.get("dzherelo", "")).strip(),
-             "cytata": str(z.get("cytata", "")),
+             "dzherelo": str(z.get("source", "")).strip(),
+             "cytata": str(z.get("quote", "")),
              "syla": str(z.get("syla", "?")),
              "zvidky": z.get("_fayl", "?")}
             for z in zap if str(z.get("verdykt")) == "znayshov"]
@@ -216,7 +216,7 @@ def main() -> int:
     # з'явився б рядок «джерело знайдено» там, де джерела немає, — а
     # саме цього ця книга й обіцяла не робити.
     stany = tretiy_shar()
-    vystoyalo = sum(1 for k in kand if stany.get(k["nazva"]) == "ok")
+    vystoyalo = sum(1 for k in kand if stany.get(k["title"]) == "ok")
 
     r = [ZAHOLOVOK.rstrip("\n"), ""]
     r.append(f"Записів: **{len(zap)}**. "
@@ -243,7 +243,7 @@ def main() -> int:
             r.append("| Одиниця | Третій шар | Сила | Джерело | Що каже |")
             r.append("|---|---|---|---|---|")
             for z in grupa:
-                dz = str(z.get("dzherelo", "")).strip()
+                dz = str(z.get("source", "")).strip()
                 korotko = dz.rsplit("/", 1)[-1] if dz else "—"
                 r.append(f"| `{z.get('odynycya','?')}` "
                          f"| {STAN_PIDPYS.get(stany.get(str(z.get('odynycya'))), '?')} "

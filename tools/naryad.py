@@ -117,7 +117,7 @@ def zapysy() -> dict[tuple[str, str], dict]:
         try:
             for z in (yaml.safe_load(f.read_text(encoding="utf-8")) or []):
                 if isinstance(z, dict):
-                    rec[(f.stem, str(z.get("nazva")))] = z
+                    rec[(f.stem, str(z.get("title")))] = z
         except yaml.YAMLError:
             continue
     return rec
@@ -162,7 +162,7 @@ def zvesty(katalog: Path) -> int:
     # звіряємо за назвою, бо саме вона стоїть у наряді.
     vidpovidi: dict[str, dict] = {}
     for z in zap:
-        klyuch = str(z.get("nazva", "")).strip()
+        klyuch = str(z.get("title", "")).strip()
         if klyuch:
             vidpovidi[klyuch] = z
 
@@ -213,7 +213,7 @@ def zvesty(katalog: Path) -> int:
             r.append(f"- джерело: {str(z.get('dzherelo', '?')).strip()}")
             r.append(f"- каже: {str(z.get('komentar', '')).strip()}\n")
             r.append("```")
-            r.append(str(z.get("cytata", "")).strip()[:600])
+            r.append(str(z.get("quote", "")).strip()[:600])
             r.append("```\n")
     else:
         r.append("\n## Спростувань немає\n")
@@ -269,7 +269,7 @@ def main() -> int:
         import vyvantazh
         katalog = Path(sys.argv[sys.argv.index("--krim") + 1])
         zap, _, _ = vyvantazh.chytaty(katalog)
-        vidpovidzheni = {str(z.get("nazva", "")).strip() for z in zap}
+        vidpovidzheni = {str(z.get("title", "")).strip() for z in zap}
         bidy = [n for n in bidy
                 if str(n.get("nazva", "")).strip() not in vidpovidzheni]
 

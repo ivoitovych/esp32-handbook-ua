@@ -67,7 +67,7 @@ def znayty(zapysy: list[dict], teksty: list[str]) -> list[dict]:
     """Записи, чия ширина тримається на одній альтернативі."""
     out = []
     for z in zapysy:
-        v = z.get("zbih") or z.get("match")
+        v = z.get("match") or z.get("match")
         # Запис, що переїхав на хеш, взірцем більше не чіпляє нічого.
         if not v or z.get("sha"):
             continue

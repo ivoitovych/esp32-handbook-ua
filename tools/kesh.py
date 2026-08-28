@@ -235,7 +235,7 @@ def vidtvornist() -> int:
             if str(r.get("status") or r.get("klas")) not in (
                     "A", "B", "verbatim", "derived"):
                 continue
-            d = " ".join(str(r.get("source") or r.get("dzherelo") or "").split())
+            d = " ".join(str(r.get("source") or r.get("source") or "").split())
             fajly = [x.split("-", 1)[1] if re.match(r"^[0-9a-f]{8}-", x) else x
                      for x in re.findall(r"dzherela-kesh/([\w.-]+)", d)]
             u = re.match(r"(https?://[^\s,;)]+)", d)
