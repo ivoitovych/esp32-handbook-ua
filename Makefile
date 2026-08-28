@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake docs dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 modality calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
+.PHONY: help setup all intake docs run-gate dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 modality calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
         check-attribution preview clean
 
 PY := python3
@@ -114,6 +114,14 @@ docs:
 	@$(PY) tools/docs.py
 	@$(PY) tools/doc_kind.py --suvoro
 
+# Ворота прогонів помічників (М2). Тут лише самоперевірка: справжній
+# прогін потребує теки з відповідями. Заведено після того, як злиття
+# перейменувало `citaty` на `layer3`, імпорт усередині функції не
+# спрацював при сухому читанні, і тул простояв зламаним годину —
+# бо жодна ціль його не кликала.
+run-gate:
+	@$(PY) tools/intake_f.py --self-check
+
 # Ворота прийому (М2): чи придатний запис доказу до того, як стане
 # частиною реєстру. Компіляція взірця, теча, клас без цитати, книга як
 # власне джерело.
@@ -217,7 +225,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: self-checks docs intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage check-attribution
+check: self-checks docs intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage run-gate check-attribution
 
 arithmetic:
 	@python3 tools/arithmetic.py

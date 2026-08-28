@@ -1,0 +1,47 @@
+- unit: T-03-001
+  verdict: advice
+  why: Це твердження про те, що розділ книги щось пояснює. Це судження автора про вміст розділу, а не факт про технічні характеристики ESP32
+
+- unit: T-B-096
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  comment: Шукав твердження про I²C та спільну землю у документації, але не знайшов дослівного рядка
+
+- unit: T-08-020
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  comment: Інформація про модулі WROOM і WROVER має бути на сайті Espressif, але шукав у документації ESP-IDF
+
+- unit: T-63-002
+  verdict: advice
+  why: Твердження про "найпоширеніше" використання ESP32 є судженням автора, спостереженням, а не об'єктивним технічним фактом про світ
+
+- unit: T-E-046
+  verdict: unreachable
+  source: https://raw.githubusercontent.com/
+  needed: AT24Cxx datasheet
+  comment: Даташит мікросхеми AT24Cxx від Microchip/Atmel не лежить на GitHub
+
+- unit: T-57-022
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  comment: Рекомендація про використання S3 для нових проєктів потребує контексту та джерела, яке не знайшов
+
+- unit: T-18-079
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/file-systems.rst
+  comment: Інформація про LittleFS як окремий компонент ESP-IDF потребує перевірки у документації
+
+- unit: T-K14-028
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/index.rst
+  comment: Інформація про дисплеї для Arduino потребує контексту та джерела для перевірки
+
+- unit: T-59-014
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/index.rst
+  comment: Інформація про BME280 та кількість модулів потребує контексту та спеціалізованого джерела
+
+- unit: T-UA--023
+  verdict: advice
+  why: Твердження про те, що діапазон частот LoRa-модуля має відповідати нормам є рекомендацією про дотримання нормативних вимог, а не технічним фактом про саму технологію

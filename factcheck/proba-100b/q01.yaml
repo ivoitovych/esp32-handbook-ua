@@ -1,0 +1,53 @@
+- unit: T-32-065
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  comment: Шукав інформацію про запис у NVS та зупинення виконання коду, але точна цитата не знайдена в документації partition-tables
+
+- unit: T-26-117
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  quote: |
+    A core dump contains snapshots of all tasks in the system at the moment of failure
+  comment: Документація підтверджує що coredump записує стани завдань системи
+
+- unit: T-15-016
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/index.rst
+  comment: Інформація про MCPWM, PCNT, TWAI модулі не знайдена в переліку документів
+
+- unit: T-21-080
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  comment: Шукав інформацію про зберігання файлів прошивки та .elf для backtrace, але документація не містить таких деталей
+
+- unit: T-42-063
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_now.h
+  quote: |
+    Sending data fails with ESP_ERR_ESPNOW_CHAN if current Wi-Fi channel doesn't match that of peer
+  comment: Документація підтверджує необхідність совпадіння каналів ESP-NOW та Wi-Fi
+
+- unit: T-B-076
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/index.rst
+  comment: Інформація про перезавантаження при Wi-Fi не знайдена в документації
+
+- unit: T-G-008
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc.h
+  comment: Інформація про strapping pins не знайдена у файлі
+
+- unit: T-59-052
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/log/include/esp_log.h
+  comment: Файл esp_log.h існує, але точна цитата "#include "esp_log.h"" не знайдена в документах
+
+- unit: T-62-136
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/index.rst
+  comment: Константа STAN_AVARIYA не знайдена в документації
+
+- unit: T-K09-017
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_hw_support/include/esp_chip_info.h
+  comment: Інформація про конкретні піни 33-37 для модулів Octal PSRAM не знайдена

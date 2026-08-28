@@ -1,0 +1,47 @@
+- unit: T-25-008
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+
+- unit: T-03-064
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp-risc-v.rst
+  quote: the latter can be programmed in C using standard GNU tools
+  comment: підтверджує можливість програмування ULP на C у RISC-V варіанта
+
+- unit: T-A-081
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
+
+- unit: T-11-049
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
+  quote: idf.py build
+  comment: команда іdf.py build для компіляції проекту
+
+- unit: T-09-052
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32s3/index.rst
+
+- unit: T-23-076
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+
+- unit: T-Z-045
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32c3/index.rst
+
+- unit: T-20-065
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/README.md
+  quote: hello_world
+  comment: приклад hello_world для демонстрації базової прошивки
+
+- unit: T-04-001
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+  quote: A Universal Asynchronous Receiver/Transmitter (UART) is a hardware feature that handles communication
+  comment: визначення UART як апаратної функції для передачі даних
+
+- unit: T-A-098
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst

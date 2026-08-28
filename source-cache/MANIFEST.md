@@ -384,6 +384,12 @@ tools/cache.py --check    звірити хеші наявних файлів
 | `49a0967f-esp_now.h` | `6163bdf241788ba2883d57bf8da981364bd5c183cd3edab28e3d4d285eb03044` | 15823 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_now.h> |
 | `5ec0765a-8857` | `cc7408d556214b932fe423dd22f66f8713c7bb709d8c4912f17b973512f4de78` | 265075 | 2026-08-28 | <https://github.com/espressif/esp-idf/issues/8857> |
 | `36051003-esp_psram_impl_octal.c` | `bc3c1012ffe8bb6c5d60bf81ab6f6e1cc252a8f103ea575ea2951407146f25fc` | 18679 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_psram/esp32s3/esp_psram_impl_octal.c> |
+| `d84b8399-soc.h` | `33a8c0e0fd35521f5c78a08c5120b08ddc28ae88c7c43195bfb61ff433e4b1e5` | 10725 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc.h> |
+| `9317abcc-dac.rst` | `839d56a86fd78cdafd42d3ccb0d727eebb88460de167d932994b116a813a890b` | 13008 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/dac.rst> |
+| `b6848f35-esp32dev.json` | `af059ec23523785cd984205bd6f4e3deb0975fd2067faf8539b1d709ad9bf85b` | 723 | 2026-08-28 | <https://raw.githubusercontent.com/platformio/platform-espressif32/develop/boards/esp32dev.json> |
+| `e42d0fb2-ledc_basic_example_main.c` | `f3c425841748781aeff0b37877303e6c6a4be5a5bc699118db0f78b4d870b9ff` | 3114 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/ledc/ledc_basic/main/ledc_basic_example_main.c> |
+| `8733da45-pins_arduino.h` | `fe230e638996db32a1e4ea8a3ea43a7ed1b3197070898b8b5a0adbbf8eeb2c5d` | 2053 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/esp32s3/pins_arduino.h> |
+| `29b7b944-README.md` | `28c995b314202c66ac1730cc32afc01e073a4132f48acecf8d457a5dbd41baac` | 2799 | 2026-08-28 | <https://raw.githubusercontent.com/adafruit/Adafruit_BMP280_Library/master/README.md> |
 
 Файлів: **355**, разом **139.8 МБ** (межа 1.0 ГБ).
 Файлів: **357**, разом **140.7 МБ** (межа 1.0 ГБ).

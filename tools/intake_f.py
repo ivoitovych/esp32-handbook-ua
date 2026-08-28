@@ -4,7 +4,7 @@
 ## Чим це відрізняється від `intake_wave3.py`
 
 Той чекає поля `fayl` з іменем у кеші: наряд хвилі 3 називав документ,
-і помічник лише підтверджував цитату. Наряд `naryad_f` документа не
+і помічник лише підтверджував цитату. Наряд `work_orders_f` документа не
 називає — помічник **шукає його сам** і повертає URL. Отже й ворота
 інші: документ треба спершу дістати за тим URL, і аж потім шукати в
 ньому цитату.
@@ -32,6 +32,15 @@
 примірник розійшовся б із першим.
 
     tools/intake_f.py <тека прогону>
+    tools/intake_f.py --self-check      import-and-run smoke test
+
+`--self-check` exists because this tool sat broken for an hour: a merge
+renamed `citaty` to `layer3`, the import at the top of `dokument()` was
+never reached during a dry read, and nothing failed until a real run.
+The tool had no `make` target, so nothing ran it.
+
+> A tool outside the check suite is a tool whose breakage is discovered
+> by the next person who needs it, at the moment they need it.
 """
 from __future__ import annotations
 
@@ -129,20 +138,54 @@ def dodaty_v_manifest(imya: str, sha: str, rozmir: int, url: str) -> None:
 
 def dokument(url: str, kachaty: bool) -> str | None:
     """Текст документа за URL. Качає, якщо його ще немає в кеші."""
-    import citaty
+    import layer3
     import intake_wave3
     cil = KESH / imya_dlya(url)
     if not cil.exists():
-        if not kachaty or not citaty.zavantazhyty(url, cil):
+        if not kachaty or not layer3.zavantazhyty(url, cil):
             return None
         syri = cil.read_bytes()
         dodaty_v_manifest(cil.name, hashlib.sha256(syri).hexdigest(),
                           len(syri), url)
-    t = citaty.tekst_dzherela(cil)
+    t = layer3.tekst_dzherela(cil)
     return intake_wave3.normal(t) if t else None
 
 
+def self_check() -> int:
+    """Прогін на порожньому входу: імпорти, шляхи, кеш."""
+    import tempfile
+    import json as _json
+    bidy = []
+    try:
+        import layer3, intake_wave3  # noqa: F401
+    except Exception as e:
+        bidy.append("import: %s" % str(e)[:70])
+    if not KESH.exists():
+        bidy.append("кеш джерел не там: %s" % KESH)
+    if not (KESH / "MANIFEST.md").exists():
+        bidy.append("маніфесту немає в %s" % KESH)
+    try:
+        with tempfile.TemporaryDirectory() as d:
+            t = pathlib.Path(d)
+            (t / "vybirka.json").write_text(
+                _json.dumps({"vzyato": [], "queue": "F"}), encoding="utf-8")
+            import subprocess
+            r = subprocess.run([sys.executable, __file__, str(t)],
+                               capture_output=True, text=True, timeout=120)
+            if "вибірка 0" not in r.stdout:
+                bidy.append("порожній прогін не пройшов: %s"
+                            % (r.stderr or r.stdout)[-90:])
+    except Exception as e:
+        bidy.append("порожній прогін: %s" % str(e)[:70])
+    for b in bidy:
+        print("   ✗ " + b)
+    print("intake_f self-check: %d проблем" % len(bidy))
+    return 1 if bidy else 0
+
+
 def main() -> int:
+    if "--self-check" in sys.argv:
+        return self_check()
     import intake_wave3
 
     p = argparse.ArgumentParser()
@@ -152,6 +195,8 @@ def main() -> int:
                    help="дописати підсумок прогону у factcheck/RUNS.md")
     p.add_argument("--model", default="haiku-4.5")
     p.add_argument("--note", default="")
+    p.add_argument("--compare", type=pathlib.Path, default=None,
+                   help="попарне порівняння з іншим прогоном тих самих одиниць")
     a = p.parse_args()
 
     vyb = json.loads((a.teka / "vybirka.json").read_text(encoding="utf-8"))
@@ -232,9 +277,63 @@ def main() -> int:
     if bez:
         print("\nбез відповіді: %s" % ", ".join(bez))
 
+    if a.compare:
+        porivnyaty(a.compare, a.teka, vidpovidi)
     if a.ledger:
         zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy)
     return 1 if (bidy or bytyy or bez) else 0
+
+
+def chytaty(teka: pathlib.Path) -> dict[str, dict]:
+    out: dict[str, dict] = {}
+    for f in sorted(teka.glob("q*.yaml")):
+        try:
+            z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
+        except Exception:
+            continue
+        for r in z:
+            if isinstance(r, dict):
+                r = na_anhliysku(r)
+                out[str(r.get("unit") or r.get("id") or "?").strip()] = r
+    return out
+
+
+def porivnyaty(bula: pathlib.Path, stala: pathlib.Path,
+               teper: dict[str, dict]) -> None:
+    """Та сама одиниця під двома нарядами.
+
+    ## Навіщо попарно, а не за частками
+
+    Частки двох прогонів на РІЗНИХ вибірках різняться завжди, і
+    приписати різницю нарядові не можна: змінилися дві речі. Тут
+    вибірка та сама, тож видно не лише зсув чисел, а й **які саме
+    одиниці змінили вердикт і в який бік** — а це вже привід відкрити
+    їх і подивитися.
+
+    Одне застереження, і воно суттєве: **помічник недетермінований.**
+    Той самий наряд на тих самих одиницях дав би теж не те саме. Тому
+    різниця тут — це різниця наряду ПЛЮС шум, і без третього прогону
+    під першою версією їх не розділити. Кажу це тут, щоб таблиця не
+    читалася як доказ.
+    """
+    ranishe = chytaty(bula)
+    spilni = sorted(set(ranishe) & set(teper))
+    if not spilni:
+        print("\nпорівняти нема з чим: спільних одиниць 0")
+        return
+    perekhody: dict[tuple, int] = {}
+    for i in spilni:
+        a = str(ranishe[i].get("verdict") or "?")
+        b = str(teper[i].get("verdict") or "?")
+        perekhody[(a, b)] = perekhody.get((a, b), 0) + 1
+    tryvko = sum(n for (a, b), n in perekhody.items() if a == b)
+    print("\n=== попарно з `%s`: %d спільних одиниць ===" % (bula.name, len(spilni)))
+    print("   вердикт не змінився: %d (%.0f %%)" % (tryvko, 100 * tryvko / len(spilni)))
+    zmin = {k: v for k, v in perekhody.items() if k[0] != k[1]}
+    if zmin:
+        print("   переходи:")
+        for (a, b), n in sorted(zmin.items(), key=lambda x: -x[1]):
+            print("      %-14s → %-14s %d" % (a, b, n))
 
 
 LEDGER_SHAPKA = """# Runs of the helper pool
@@ -282,7 +381,7 @@ def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
     samo = sum(1 for _, rid, _ in bidy if "САМОПОСИЛАННЯ" in rid)
     ryadok = ("| %s | `%s` | %s | %s | %d | %s | %d | %d | %d | %d | %d | %d |"
               % (a.teka.name,
-                 vyb.get("order_version", "?"),
+                 vyb.get("task_version", "?"),
                  vyb.get("nasinnya", "?"),
                  vyb.get("queue", "?"),
                  len(vidpovidi),

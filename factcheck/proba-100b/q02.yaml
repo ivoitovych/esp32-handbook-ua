@@ -1,0 +1,43 @@
+- unit: T-16-079
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: 'An additional circuitry is implemented in order to avoid this problem - if both RTS and DTR are asserted together, this does not reset the chip. The schematic shows this specific circuit with two transistors and its truth table.'
+  comment: підтверджує конструкцію авторесету з двома транзисторами, керованими DTR і RTS
+
+- unit: T-02-011
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32/index.rst
+
+- unit: T-H-003
+  verdict: not_found
+  source: https://raw.githubusercontent.com/esp32-handbook-ua/master/README.md
+
+- unit: T-K08-037
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/troubleshooting.rst
+
+- unit: T-45-039
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/gpio/generic_gpio/main/gpio_example_main.c
+
+- unit: T-21-065
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/system/base_mac_address/main/base_mac_address_example.c
+
+- unit: T-34-008
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/gpio.rst
+
+- unit: T-33-037
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/ledc/ledc_basic/main/ledc_basic_example_main.c
+  quote: '.speed_mode = LEDC_LOW_SPEED_MODE,'
+  comment: дослівна цитата зі стандартного прикладу ESP-IDF
+
+- unit: T-58-020
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+
+- unit: T-08-031
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/blink/main/blink_example_main_v5.c

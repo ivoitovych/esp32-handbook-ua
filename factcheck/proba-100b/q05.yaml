@@ -1,0 +1,45 @@
+- unit: T-A-107
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  quote: |
+    I2C master bus requires the configuration that specified by i2c_master_bus_config_t. sda_io_num sets the GPIO number for the serial data bus (SDA). scl_io_num sets the GPIO number for the serial clock bus (SCL).
+  comment: I2C pins are specified via configuration, not set by default hardware
+
+- unit: T-12-024
+  verdict: advice
+  why: 'Compares firmware sizes qualitatively as "more than needed" - author opinion on engineering trade-offs, not factual measurement'
+
+- unit: T-A-087
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_adc/adc_common.c
+
+- unit: T-06-054
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
+
+- unit: T-01-082
+  verdict: advice
+  why: 'Architectural design decision ("correct answer is often both") - describes best practice for system integration, not factual claim'
+
+- unit: T-K01-011
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32s3/user-guide-devkitc-1.rst
+
+- unit: T-62-104
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/uart/uart_echo/main/uart_echo_example_main.c
+
+- unit: T-44-035
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+
+- unit: T-25-047
+  verdict: disputes
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
+  quote: |
+    There are six verbosity levels
+  neighbours: unavailable
+
+- unit: T-25-039
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-monitor.rst

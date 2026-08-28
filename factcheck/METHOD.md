@@ -102,9 +102,25 @@ by number.
     K  context             — a whole code block; not a claim, and not counted
 
 Strength for picking the best evidence, in the order printed above:
-`A < B < N < D < C < S < L < E < G < F`. The list is deliberately printed in
-strength order rather than alphabetically, because the order is the part
-that gets used.
+`A < B < N < D < C < S < L < E < G < F`. The list is deliberately
+printed in strength order rather than alphabetically, because the order
+is the part that gets used.
+
+### `N` is the only class layer 3 can *refute*
+
+Every other class is checked by asking whether a string **is** in a
+document. `N` asks whether it is **absent**, and absence is what the
+claim rests on: `SOC_BT_SUPPORTED` does not appear in
+`esp32s2/soc_caps.h`, and that silence proves the S2 has no Bluetooth.
+
+This inverts the gate. For `A` a missing string means the evidence
+fails; for `N` a *found* string means the evidence is **refuted** — the
+only class where layer 3 can return a verdict against the record rather
+than merely decline it.
+
+It needs a `control`: a document of the same kind where the string **is**
+present. Without one, "absent" and "I searched the wrong file" look
+identical, and the second is far more common.
 
 ### `S` and `L` exist because two kinds of real work had nowhere to go
 
@@ -137,10 +153,17 @@ document that could still settle the question), stronger than `E`
 > vocabulary that is missing a state does not produce blank fields; it
 > produces wrong ones.
 
-The same gap is still open in one place, found by a helper rather than
-by us: there is no verdict for **proof by absence** — "I opened the
-source and the thing is demonstrably not there", which is how a
-negative claim about a chip's features is actually established.
+That gap was open in one more place until 2026-08-28, and a **helper**
+found it, not us: there was no verdict for proof by absence. A helper
+opened `esp32s2/soc_caps.h`, saw that `SOC_BT_SUPPORTED` was not there,
+and wrote `(no SOC_BT_SUPPORTED in ...)` in the quote field — honest
+work, correct conclusion, and no legal way to record it. The gate
+rejected it as "not a quote", which it was not.
+
+That is class `N` above, and the sequence is worth keeping: the
+vocabulary's hole was visible from the outside before it was visible
+from the inside. **A worker who cannot express what they did is
+reporting a defect in the vocabulary, not making a mistake.**
 
 **`E` does not say "no source exists".** It says the *rule fired*: this
 text holds no number, identifier or part name to check against. That

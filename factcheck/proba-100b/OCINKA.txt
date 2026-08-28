@@ -1,0 +1,35 @@
+вибірка 100 · відповідей 100 · без відповіді 0 · зайвих 0 · дублів 0
+
+вердикти:
+   not_found           64  (64.0 %)
+   confirmed           19  (19.0 %)
+   advice              14  (14.0 %)
+   unreachable          2  ( 2.0 %)
+   disputes             1  ( 1.0 %)
+
+третій шар — цитати, що заявлені дослівними:
+   цитата дослівна              13
+   ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     6
+   документ не дістався         1
+
+порушень: 9
+   ✗ T-01-083    БРАКУЄ ПОЛІВ                 source
+   ✗ T-02-087    ДОКУМЕНТ НЕ ДІСТАВСЯ         https://raw.githubusercontent.com/espressif/es
+   ✗ T-16-079    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     An additional circuitry is implemented in orde
+   ✗ T-33-037    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     .speed_mode = LEDC_LOW_SPEED_MODE,
+   ✗ T-42-063    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     Sending data fails with ESP_ERR_ESPNOW_CHAN if
+   ✗ T-59-036    ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     ESP32-S3 pin definitions
+   ✗ T-A-107     ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     I2C master bus requires the configuration that
+   ✗ T-E-011     ЦИТАТИ В ДОКУМЕНТІ НЕМАЄ     Arduino library for BMP280 sensors
+   ✗ T-H-003     САМОПОСИЛАННЯ НА ДОВІДНИК    https://raw.githubusercontent.com/esp32-handbo
+
+=== попарно з `proba-100`: 100 спільних одиниць ===
+   вердикт не змінився: 66 (66 %)
+   переходи:
+      not_found      → confirmed      10
+      not_found      → advice         9
+      confirmed      → not_found      8
+      advice         → not_found      4
+      confirmed      → unreachable    1
+      confirmed      → disputes       1
+      advice         → confirmed      1

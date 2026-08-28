@@ -1,0 +1,46 @@
+- unit: T-41-009
+  verdict: advice
+  why: 'Це заголовок таблиці порівняння, структурний елемент формату, а не твердження про факти світу'
+
+- unit: T-32-047
+  verdict: advice
+  why: 'Це рекомендація про якість коду: твердження про те, як слід писати завдання з годуванням watchdog. Дає суб''єктивну оцінку подібності до вимикання watchdog, не факт про світ'
+
+- unit: T-26-064
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/task_wdt/task_wdt.c
+  quote: |
+    Tasks currently running:
+  comment: 'Джерело підтверджує, що task_wdt повідомлює про завдання, що виконуються в момент спрацювання, дозволяючи визначити те, що заблокувало IDLE'
+
+- unit: T-E-084
+  verdict: advice
+  why: 'Це судження про те, що означає абревіатура SSD16xx (до якої електроніки вона відноситься). Не факт про властивості мікросхеми, а інтерпретація назви'
+
+- unit: T-10-022
+  verdict: advice
+  why: 'Це оцінне судження про якість: "найкраще співвідношення" — субективна оцінка автора, а не об''єктивний факт про світ'
+
+- unit: T-F-011
+  verdict: advice
+  why: 'Це рекомендація про те, що варто мати офлайн. Це судження автора про практику розробки, а не факт про систему'
+
+- unit: T-25-030
+  verdict: confirmed
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+  quote: |
+    The default console baud rate on ESP32-C2 is 115200 when a 40 MHz XTAL is used, or 74880 when a 26 MHz XTAL is used.
+  comment: 'Джерело підтверджує, що 74880 — це вбудована швидкість для іншого типу кристала (26 МГц), а не "інша швидкість" того ж ESP32'
+
+- unit: T-54-004
+  verdict: advice
+  why: 'Це заголовок таблиці з назвами колонок, структурний елемент, а не твердження про факти'
+
+- unit: T-43-007
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  comment: 'Досяжний документ не містить інформації про дальність передачі Wi-Fi або ESP-NOW'
+
+- unit: T-B-135
+  verdict: advice
+  why: 'Це діагностична рекомендація про типову причину помилок CAN. Судження про частотність проблеми, а не факт про те, як функціонує протокол'
