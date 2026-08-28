@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -120,6 +120,19 @@ release-check:
 	@echo "── рецензійні перевірки (строго)"
 	@$(PY) tools/review.py --strict >/dev/null && echo "review: 0 знахідок"
 	@echo "── реєстр фактчекінгу"
+# Чи реєстр іще про **цю** книгу.
+#
+# Реєстр генерується з книги, тож правка книги його не ламає — вона його
+# **відсуває**, тихо: доказ лишається прив'язаним до старого
+# формулювання, а `src:рядок` починає показувати мимо. Чотири дні
+# `stale` мав це ловити й не ловив (він перевіряв, чи існує файл), і
+# шість правок друкованого накладу пройшли повз лічильник.
+#
+# Тут це звіт, а не зупинка: розходження нормальне рівно доти, доки
+# наступний `sketch` його не прибрав. Зупиняти випуск має `vorota` —
+# але побачити розходження треба **до** того, як хтось візьме з реєстру
+# номер рядка й піде за ним у книгу.
+	@$(PY) tools/factcheck.py stale
 	@$(PY) tools/factcheck.py vorota
 # Третій шар у випускних воротах — **звичайний режим, не `--suvoro`**.
 #
@@ -143,10 +156,18 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
+
+# Чи реєстр іще про **цю** книгу — див. докстрінг `stale`.
+# Звіт, не зупинка: розходження нормальне доти, доки
+# наступний `sketch` його не прибрав. Але побачити його
+# треба **до** того, як хтось візьме з реєстру номер рядка
+# й піде за ним у книгу.
+stale:
+	@python3 tools/factcheck.py stale
 
 check-attribution:
 	@sh -c '. ./.githooks/identity.conf; \
