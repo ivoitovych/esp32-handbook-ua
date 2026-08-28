@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check \
+.PHONY: help setup all intake dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
         check-attribution preview clean
 
 PY := python3
@@ -240,6 +240,23 @@ schema:
 self-checks:
 	@$(PY) tools/schema.py --samoperevirka
 	@$(PY) tools/leak.py --samoperevirka
+	@$(PY) tools/task_spec.py --samoperevirka
+
+# Кожна точка входу технології, а не лише ті, що у воротах.
+#
+# `make check` кличе 18 цілей; точок входу 54, у 42 інструментах, і 22
+# інструменти поза воротами. Саме там вижили всі дев'ять зламів
+# переведення імен полів 2026-08-28, і саме там їх знайшов цей гарнес.
+#
+# Це не ворота: прогін довгий і потрібен навколо змін, що мають
+# **зберігати поведінку** — перейменувань, переїздів, рефакторингів.
+#
+#   tools/entry_points.py --capture /tmp/do
+#   …зміна…
+#   tools/entry_points.py --capture /tmp/pislya
+#   tools/entry_points.py --diff /tmp/do /tmp/pislya
+entry-points:
+	@$(PY) tools/entry_points.py --missing
 
 check-attribution:
 	@sh -c '. ./.githooks/identity.conf; \

@@ -96,43 +96,31 @@ def odynyci(klas: str) -> list[dict]:
     return out
 
 
-ZAHOLOVOK = """# Наряд: випадкова вибірка класу `{klas}`
+ZAHOLOVOK_RAMKA = """# Наряд: випадкова вибірка класу `{klas}`
 
 **Генерується** `tools/sample.py`. Насіння **{nasinnya}**, з популяції
 **{vsyoho}** одиниць відібрано **{skilky}**.
-
-## Що саме міряємо
-
-Не «чи можна знайти джерело, якщо старатися» — це міряв штурм, і його
-вибірка була відібрана рукою під відповідь.
-
-Тут питання інше: **яка частка класу `E` справді не має зовнішнього
-референта.** Клас присвоюється механічно, за браком цифри чи
-ідентифікатора в тексті. Твердження «підтягувальний резистор потрібен
-завжди» цифри не має — і потрапляє в `E`, хоча це перевірюване
-твердження про світ, і воно може бути хибним.
-
-Вибірка випадкова саме для цього: відсоток із неї можна переносити на
-всі {vsyoho} одиниць, а відсоток зі штурму — не можна.
-
-## Три дозволені відповіді, і третя не гірша за першу
-
-| Вердикт | Коли |
-|---|---|
-| `znayshov` | зовнішнє джерело є: адреса + **дослівна** цитата |
-| `ideya` | джерела не дістав, але можу назвати документ, де воно було б |
-| `spravdi-e` | зовнішнього референта справді немає: це позиція автора |
-
-`spravdi-e` — **повноцінна відповідь і повноцінний результат.** Ми
-міряємо частку, а не збираємо здобич: підтвердити, що клас поставлено
-правильно, тут рівно так само цінно, як спростувати. Вигадане джерело
-псує міру сильніше, ніж чесне «немає».
-
-Цитату **не переказувати й не набирати з пам'яті**: усе, що в полі
-`cytata`, звіряється підрядком у самому документі, і переказ туди не
-проходить.
-
 """
+
+# Спільні правила беруться з `factcheck/TASK-SPEC.md`, а не
+# переписуються тут. До появи спеки їх було сім копій, і
+# збігалося в усіх сімох рівно одне правило з восьми.
+ZAHOLOVOK_BLOKY = ['ORIENTATION', 'VERBATIM', 'HONEST-MISS', 'NETWORK', 'STUB', 'VERDICTS-VERDICT-TEST', 'NO-SELF-REFERENCE', 'FORMAT']
+
+
+def zaholovok(**kw) -> str:
+    """Наряд: рамка цієї партії плюс спільні блоки завдання.
+
+    Підстановка **заміною**, а не `.format`: у рамці стоять
+    справжні фігурні дужки ESP-IDF (`{IDF_TARGET_...}`), і
+    `format` на них падає з KeyError.
+    """
+    import task_spec
+    ramka = ZAHOLOVOK_RAMKA
+    for k, v in kw.items():
+        ramka = ramka.replace("{" + k + "}", str(v))
+    return task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka)
+
 
 
 # Клас `F` — «ще не звірено», і питання до нього інше, ніж до `E`.
@@ -493,9 +481,18 @@ def main() -> int:
     if "--na-paket" in sys.argv:
         na_paket = int(sys.argv[sys.argv.index("--na-paket") + 1])
 
-    shapka = ZAHOLOVOK_F if klas == "F" else ZAHOLOVOK
-    r = [shapka.format(klas=klas, nasinnya=nasinnya,
-                       vsyoho=len(vsi), skilky=skilky).rstrip("\n"), ""]
+    # Клас `F` має свою рамку (там питають інше), спільні блоки ті самі.
+    if klas == "F":
+        import task_spec
+        ramka = ZAHOLOVOK_F
+        for k, v in dict(klas=klas, nasinnya=nasinnya,
+                         vsyoho=len(vsi), skilky=skilky).items():
+            ramka = ramka.replace("{" + k + "}", str(v))
+        shapka = task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka)
+    else:
+        shapka = zaholovok(klas=klas, nasinnya=nasinnya,
+                           vsyoho=len(vsi), skilky=skilky)
+    r = [shapka.rstrip("\n"), ""]
     for i, z in enumerate(vybir):
         if i % na_paket == 0:
             r.append(f"\n## Пакет {i // na_paket + 1}\n")
