@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema samoperevirky vidtvornist cache-vs-book layer1 coverage check release release-check \
+.PHONY: help setup all intake docs dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema samoperevirky vidtvornist cache-vs-book layer1 coverage check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -104,6 +104,15 @@ vidtvornist:
 cache-vs-book:
 	@$(PY) tools/cache_vs_book.py --tykho
 
+# Узгодженість керівних документів (М2). Не проза — лише факти, що
+# мають одну правильну відповідь: словник класів проти коду, названі
+# інструменти, посилання на роди хиб, вердикти наряду проти воріт.
+#
+# Заведено після того, як словник класів розійшовся в ТРЬОХ документах
+# і це знайшлося читанням. Читання не масштабується й не працює в CI.
+docs:
+	@$(PY) tools/docs.py
+
 # Ворота прийому (М2): чи придатний запис доказу до того, як стане
 # частиною реєстру. Компіляція взірця, теча, клас без цитати, книга як
 # власне джерело.
@@ -207,7 +216,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: samoperevirky intake linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage check-attribution
+check: samoperevirky intake linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage docs check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
