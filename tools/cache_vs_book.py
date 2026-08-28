@@ -71,7 +71,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-KESH = ROOT / "dzherela-kesh"
+KESH = ROOT / "source-cache"
 KNYHA = ("manual", "dodatky", "kartky", "inserts")
 
 # Адреса самого довідника. Довідник не є джерелом для себе — те саме

@@ -4,7 +4,7 @@
 
 - id: T-30-052
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/56497005-external-ram.rst
+  fayl: source-cache/56497005-external-ram.rst
   cytata: |
     This allows any application to use the external RAM without having to rewrite the code to use ``heap_caps_malloc(..., MALLOC_CAP_SPIRAM)``.
   de: рядок 104
@@ -12,7 +12,7 @@
 
 - id: T-02-145
   verdykt: sperechayetsya
-  fayl: dzherela-kesh/56497005-external-ram.rst
+  fayl: source-cache/56497005-external-ram.rst
   cytata: |
     {IDF_TARGET_PSRAM_VADDR_SIZE:default="Value not updated", esp32="4 MB", esp32s2="10.5 MB", esp32s3="32 MB", esp32p4="64 MB"}
   de: рядок 12
@@ -20,7 +20,7 @@
 
 - id: T-A-067
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/56497005-external-ram.rst
+  fayl: source-cache/56497005-external-ram.rst
   cytata: |
     PSRAM access speed may be faster than flash access, so the overall application performance may be better. For example, if the PSRAM is an Octal mode (8-line PSRAM) and is configured to 80 MHz, then it is faster than a Quad flash (4-line flash) which is configured to 80 MHz.
   de: рядок 183, розділ Benefits of XiP from PSRAM
@@ -44,7 +44,7 @@
 
 - id: T-A-065
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/56497005-external-ram.rst
+  fayl: source-cache/56497005-external-ram.rst
   cytata: |
     The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
   de: рядок 14
@@ -52,7 +52,7 @@
 
 - id: T-G-159
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/56497005-external-ram.rst
+  fayl: source-cache/56497005-external-ram.rst
   cytata: |
     external PSRAM (Psuedostatic RAM) memory
   de: рядок 14
@@ -60,7 +60,7 @@
 
 - id: T-30-050
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/56497005-external-ram.rst
+  fayl: source-cache/56497005-external-ram.rst
   cytata: |
     The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
   de: рядок 14
@@ -76,7 +76,7 @@
 
 - id: T-H-014
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/56497005-external-ram.rst
+  fayl: source-cache/56497005-external-ram.rst
   cytata: |
     For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
   de: рядок 41
@@ -84,7 +84,7 @@
 
 - id: T-02-097
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/56497005-external-ram.rst
+  fayl: source-cache/56497005-external-ram.rst
   cytata: |
     For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
   de: рядок 41

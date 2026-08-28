@@ -29,7 +29,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/a4dbe955-bootloader.rst
+- **Джерело:** source-cache/a4dbe955-bootloader.rst
 - **Дослівно з джерела:**
   > Select the application partition to boot, based on the partition table and ota_data (if any);
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -355,7 +355,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > The library uses all the partitions with data type and nvs subtype.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -394,7 +394,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > The library uses all the partitions with data type and nvs subtype.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -969,7 +969,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1157,7 +1157,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1224,7 +1224,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1675,7 +1675,7 @@ NVS (Non-Volatile Storage) — сховище пар «ключ — значен
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1775,7 +1775,7 @@ NVS стійкий до зникнення живлення: запис влаш
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > The library does try to recover from conditions when flash memory is in an inconsistent state. In particular, one should be able to power off the device at any point and time and then power it back on. This should not result in loss of data, except for the new key-value pair if it was being written at the moment of powering off.
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -2089,7 +2089,7 @@ ESP_ERROR_CHECK(err);
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > The partition can be used to store data that is not expected to change, such as calibration data or factory settings.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3568,7 +3568,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

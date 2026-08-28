@@ -487,7 +487,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ncr18650b.pdf
+- **Джерело:** source-cache/ncr18650b.pdf
 - **Дослівно з джерела:**
   > Temperature Charge*: 0 to +45°C
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.

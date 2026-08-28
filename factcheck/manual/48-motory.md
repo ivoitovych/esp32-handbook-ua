@@ -1678,7 +1678,7 @@ DRV8833 або TB6612.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/l298n.pdf
+- **Джерело:** source-cache/l298n.pdf
 - **Дослівно з джерела:**
   > LOW SATURATION VOLTAGE
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

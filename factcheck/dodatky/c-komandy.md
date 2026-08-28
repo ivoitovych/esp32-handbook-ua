@@ -198,7 +198,7 @@ esptool version
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
+- **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -2339,7 +2339,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > idf.py monitor
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2515,7 +2515,7 @@ idf.py monitor              # з розшифровкою backtrace на льо�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > idf.py monitor
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3665,7 +3665,7 @@ esptool --port PORT --baud 460800 write-flash -z \
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst, dzherela-kesh/a4dbe955-bootloader.rst)
+- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst, source-cache/a4dbe955-bootloader.rst)
 - **Дослівно з джерела:**
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
 - **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
@@ -4242,7 +4242,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: dzherela-kesh/8af5fd4e-boot-mode-selection.rst, dzherela-kesh/a4dbe955-bootloader.rst)
+- **Джерело:** ESP-IDF Programming Guide, api-guides/bootloader.rst і api-guides/boot-mode-selection.rst, рядок 5 — підстановка IDF_TARGET_BOOTLOADER_OFFSET (кеш: source-cache/8af5fd4e-boot-mode-selection.rst, source-cache/a4dbe955-bootloader.rst)
 - **Дослівно з джерела:**
   > {IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="0x1000", esp32p4="0x2000", esp32c5="0x2000", esp32s31="0x2000"}
 - **Спосіб і дата:** grep по кешованих .rst ESP-IDF, 2026-08-27
@@ -4401,7 +4401,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -4468,7 +4468,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/4aac28c3-partition-tables.rst
+- **Джерело:** source-cache/4aac28c3-partition-tables.rst
 - **Дослівно з джерела:**
   > python gen_esp32part.py input_partitions.csv binary_partitions.bin
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

@@ -179,13 +179,13 @@
     ТРЕТЄ: взірець чіпляв 24 одиниці через голе слово Touch — усе, де воно трапилося. Звужено
     до двох одиниць, які твердження справді містять.'
   method: 'Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2
-    «14 touch sensing GPIOs» (dzherela-kesh/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive
+    «14 touch sensing GPIOs» (source-cache/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive
     touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово
     touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не
     verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох
     документів разом.'
   sposib: 'Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2
-    «14 touch sensing GPIOs» (dzherela-kesh/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive
+    «14 touch sensing GPIOs» (source-cache/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive
     touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово
     touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не
     verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох

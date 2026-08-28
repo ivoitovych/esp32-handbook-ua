@@ -63,7 +63,7 @@ DS18B20, і саме тому розділ короткий.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function on the same 1-Wire bus. Thus, it is simple to use one microprocessor to control many DS18B20s distributed over a large area.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -442,7 +442,7 @@ Maxim/Dallas, ревізія 042208).
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV: 042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: dzherela-kesh/ds18b20.pdf)
+- **Джерело:** Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV: 042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: source-cache/ds18b20.pdf)
 - **Дослівно з джерела:**
   > Thermometer -10°C to +85°C ±0.5
   > tERR °C 3
@@ -1218,7 +1218,7 @@ Maxim/Dallas, ревізія 042208).
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Converts Temperature to 12-Bit Digital Word in 750ms (Max)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

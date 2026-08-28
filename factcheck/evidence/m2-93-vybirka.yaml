@@ -151,10 +151,10 @@
   klas: C
   dzherelo: ESP32-C3 Datasheet — розмір SRAM у специфікаціях
   cytata: null
-  sposib: Пошук у кеші dzherela-kesh/, datasheet ESP32-C3 не знайдений
+  sposib: Пошук у кеші source-cache/, datasheet ESP32-C3 не знайдений
   notatka: 'Твердження містить цифру 400 КБ, яка є розміром SRAM ESP32-C3 за
 
-    його datasheetом. Джерело названо, але в кеші dzherela-kesh/
+    його datasheetом. Джерело названо, але в кеші source-cache/
 
     відсутній ESP32-C3 datasheet. На основі наявних даних можна
 
@@ -168,10 +168,10 @@
   status: named-unreachable
   source: ESP32-C3 Datasheet — розмір SRAM у специфікаціях
   quote: null
-  method: Пошук у кеші dzherela-kesh/, datasheet ESP32-C3 не знайдений
+  method: Пошук у кеші source-cache/, datasheet ESP32-C3 не знайдений
   note: 'Твердження містить цифру 400 КБ, яка є розміром SRAM ESP32-C3 за
 
-    його datasheetом. Джерело названо, але в кеші dzherela-kesh/
+    його datasheetом. Джерело названо, але в кеші source-cache/
 
     відсутній ESP32-C3 datasheet. На основі наявних даних можна
 
@@ -272,7 +272,7 @@
   klas: A
   dzherelo: 'Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer,
     REV: 042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш:
-    dzherela-kesh/ds18b20.pdf)'
+    source-cache/ds18b20.pdf)'
   cytata: 'Thermometer -10°C to +85°C ±0.5
 
     tERR °C 3
@@ -295,7 +295,7 @@
   match: Паспортна\s+похибка\s+DS18B20
   status: verbatim
   source: 'Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV:
-    042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: dzherela-kesh/ds18b20.pdf)'
+    042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: source-cache/ds18b20.pdf)'
   quote: 'Thermometer -10°C to +85°C ±0.5
 
     tERR °C 3
@@ -372,7 +372,7 @@
   - 208df048
   - 324eeb2a
   - c62854ef
-  looked_at: 'dzherela-kesh/ 293 файли — шукано за «regulator», «LDO», «module», «3.3 V»;
+  looked_at: 'source-cache/ 293 файли — шукано за «regulator», «LDO», «module», «3.3 V»;
     esp32_datasheet_en.pdf і esp32-wroom-32e…datasheet_en.pdf відкрито. Первинного документа
     немає й бути не може: твердження про ТИПОВІ модулі взагалі, а не про названу деталь, тож
     жоден даташит його не адресує.'

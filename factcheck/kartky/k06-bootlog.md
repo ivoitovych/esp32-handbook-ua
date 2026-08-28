@@ -1021,7 +1021,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/569e266f-fatal-errors.rst
+- **Джерело:** source-cache/569e266f-fatal-errors.rst
 - **Дослівно з джерела:**
   > rst:0x10 ({IDF_TARGET_RTCWDT_RTC_RESET})
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.

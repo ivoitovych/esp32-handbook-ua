@@ -2003,7 +2003,7 @@ PCB-антена. Симптом: зв'язок є впритул і немає 
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > The library uses all the partitions with data type and nvs subtype.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

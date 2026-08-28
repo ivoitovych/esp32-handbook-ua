@@ -87,7 +87,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: source-cache/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause permanent damage to the
   > device.
@@ -498,7 +498,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: source-cache/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause permanent damage to the
   > device.

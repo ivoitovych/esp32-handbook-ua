@@ -295,7 +295,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/f48eaf67-dac.rst
+- **Джерело:** source-cache/f48eaf67-dac.rst
 - **Дослівно з джерела:**
   > {IDF_TARGET_DAC_CH_1: default = "Not Updated!", esp32 = "GPIO25", esp32s2 = "GPIO17"}
   > {IDF_TARGET_DAC_CH_2: default = "Not Updated!", esp32 = "GPIO26", esp32s2 = "GPIO18"}

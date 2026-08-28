@@ -1001,7 +1001,7 @@ CP2102 — 11, 25, 29, 79, 81, 83, 114, 366, 391
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/cp2102.pdf
+- **Джерело:** source-cache/cp2102.pdf
 - **Дослівно з джерела:**
   > CP2102
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -4858,7 +4858,7 @@ PCF8574 — 57, 76, 267, 365, 386
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/pcf8574.pdf
+- **Джерело:** source-cache/pcf8574.pdf
 - **Дослівно з джерела:**
   > PCF8574
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

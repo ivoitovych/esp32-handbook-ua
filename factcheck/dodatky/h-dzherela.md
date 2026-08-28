@@ -304,7 +304,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > For more information on ESP32-D0WD-V3 and ESP32-D0WDR2-V3 chip, please refer to ESP32 Series Datasheet.
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -333,7 +333,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > For specific details about connecting the SoC or module pins to an external PSRAM chip, consult the SoC or module datasheet.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -668,7 +668,7 @@ MAX485).
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving significantly longer
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

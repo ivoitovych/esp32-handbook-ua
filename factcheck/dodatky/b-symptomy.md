@@ -6441,7 +6441,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Джерело:** source-cache/5827f9c3-twai.rst
 - **Дослівно з джерела:**
   > It implements a fault isolation mechanism using transmit and receive error counters (TEC and REC).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -6826,7 +6826,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/66dc1dae-adc_oneshot.rst
+- **Джерело:** source-cache/66dc1dae-adc_oneshot.rst
 - **Дослівно з джерела:**
   > ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has provided protection between the Wi-Fi driver and ADC oneshot mode driver.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -10384,7 +10384,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > The SX1276/77/78/79 incorporates the LoRaTM spread spectrum modem which is capable of achieving significantly longer
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

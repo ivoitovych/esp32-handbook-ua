@@ -185,7 +185,7 @@ def samoperevirka() -> int:
         # долю `C`, який теж мав називати документ і не називав.
         ("looked-not-found повний",
          {"title": "т", "status": "looked-not-found", "match": "x",
-          "looked_at": "dzherela-kesh/xxx.pdf", "note": "чому шукали"}, 0),
+          "looked_at": "source-cache/xxx.pdf", "note": "чому шукали"}, 0),
         ("looked-not-found без looked_at",
          {"title": "т", "status": "looked-not-found", "match": "x",
           "note": "чому шукали"}, 1),

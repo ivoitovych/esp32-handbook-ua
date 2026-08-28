@@ -254,7 +254,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/8e2fcbf9-bme280.c
+- **Джерело:** source-cache/8e2fcbf9-bme280.c
 - **Дослівно з джерела:**
   > /* Array to store the pressure, temperature and humidity data read from
   >  * the sensor
@@ -416,7 +416,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/bmp280.pdf
+- **Джерело:** source-cache/bmp280.pdf
 - **Дослівно з джерела:**
   > The BMP280 is an absolute barometric pressure sensor especially designed for mobile applications.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1380,7 +1380,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ina219.pdf
+- **Джерело:** source-cache/ina219.pdf
 - **Дослівно з джерела:**
   > Table 1. INA219 Address Pins and Slave Addresses
   >                             A1              A0                 SLAVE ADDRESS
@@ -2115,7 +2115,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features» (кеш: dzherela-kesh/mcp23017.pdf)
+- **Джерело:** Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features» (кеш: source-cache/mcp23017.pdf)
 - **Дослівно з джерела:**
   > MCP23017/MCP23S17
   > 16-Bit I/O Expander with Serial Interface
@@ -2509,7 +2509,7 @@ DS3231 і MPU6050 мають однакову адресу `0x68`. Разом н
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/mpu6050.pdf
+- **Джерело:** source-cache/mpu6050.pdf
 - **Дослівно з джерела:**
   > The default value of the register is 0x68.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2687,7 +2687,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: dzherela-kesh/st7789.pdf)
+- **Джерело:** Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: source-cache/st7789.pdf)
 - **Дослівно з джерела:**
   > ST7789V
   > 240RGB x 320 dot 262K Color with Frame Memory
@@ -2838,7 +2838,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка (кеш: dzherela-kesh/ili9341.pdf)
+- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка (кеш: source-cache/ili9341.pdf)
 - **Дослівно з джерела:**
   > ILI9341
   > a-Si TFT LCD Single Chip Driver
@@ -3080,7 +3080,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > LoRaTM Modem
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3128,7 +3128,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > LoRaTM Modem
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3176,7 +3176,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > LoRaTM Modem
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3494,7 +3494,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features» (кеш: dzherela-kesh/mcp2515.pdf)
+- **Джерело:** Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features» (кеш: source-cache/mcp2515.pdf)
 - **Дослівно з джерела:**
   > MCP2515
   > Stand-Alone CAN Controller with SPI Interface
@@ -5068,7 +5068,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > 12-bit Celsius temperature measurements
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -5817,7 +5817,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: dzherela-kesh/hc-sr04.pdf)
+- **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: source-cache/hc-sr04.pdf)
 - **Дослівно з джерела:**
   > Wire connecting direct as following:
   >    5V Supply

@@ -4,7 +4,7 @@
 
 - id: T-19-097
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/1c119dba-ota.rst
+  fayl: source-cache/1c119dba-ota.rst
   cytata: |
     The following code serves detect the initial boot for an application after the OTA update. Upon the first boot, the application checks its state and performs diagnostics. If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback to confirm the operability of the application.
   de: сторінка ~47, розділ App Rollback
@@ -36,7 +36,7 @@
 
 - id: T-19-098
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/1c119dba-ota.rst
+  fayl: source-cache/1c119dba-ota.rst
   cytata: |
     The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
   de: сторінка ~15, розділ OTA Process Overview
@@ -56,7 +56,7 @@
 
 - id: T-19-062
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/1c119dba-ota.rst
+  fayl: source-cache/1c119dba-ota.rst
   cytata: |
     The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
   de: сторінка ~9, розділ OTA Process Overview
@@ -72,7 +72,7 @@
 
 - id: T-19-001
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/1c119dba-ota.rst
+  fayl: source-cache/1c119dba-ota.rst
   cytata: |
     The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
   de: сторінка ~9, розділ OTA Process Overview
@@ -80,7 +80,7 @@
 
 - id: T-19-029
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/1c119dba-ota.rst
+  fayl: source-cache/1c119dba-ota.rst
   cytata: |
     The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
   de: сторінка ~15, розділ OTA Process Overview
@@ -96,7 +96,7 @@
 
 - id: T-50-067
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/1c119dba-ota.rst
+  fayl: source-cache/1c119dba-ota.rst
   cytata: |
     The verification of signed OTA updates can be performed even without enabling hardware secure boot.
   de: сторінка ~227, розділ Secure OTA Updates Without Secure Boot
@@ -104,7 +104,7 @@
 
 - id: T-18-105
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/1c119dba-ota.rst
+  fayl: source-cache/1c119dba-ota.rst
   cytata: |
     The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
   de: сторінка ~15, розділ OTA Process Overview
@@ -120,7 +120,7 @@
 
 - id: T-19-024
   verdykt: pidtverdzheno
-  fayl: dzherela-kesh/1c119dba-ota.rst
+  fayl: source-cache/1c119dba-ota.rst
   cytata: |
     at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
   de: сторінка ~15, розділ OTA Process Overview

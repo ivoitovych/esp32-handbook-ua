@@ -51,7 +51,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-KESH = ROOT / "dzherela-kesh"
+KESH = ROOT / "source-cache"
 VLASNYY = ROOT / "docs" / "slovnyk-proyektu.txt"
 GRUPY = ("manual", "kartky", "dodatky", "inserts")
 
@@ -87,7 +87,7 @@ def slovnyk():
     aff, dic = KESH / "uk_UA.aff", KESH / "uk_UA.dic"
     if not (aff.exists() and dic.exists()):
         sys.exit(
-            "немає словника uk_UA в dzherela-kesh/.\n"
+            "немає словника uk_UA в source-cache/.\n"
             "  tools/cache.py https://raw.githubusercontent.com/LibreOffice/"
             "dictionaries/master/uk_UA/uk_UA.aff\n"
             "  tools/cache.py https://raw.githubusercontent.com/LibreOffice/"

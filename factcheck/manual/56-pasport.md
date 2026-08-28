@@ -477,7 +477,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length is currently 15 characters. Values can have one of the following types:
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -635,7 +635,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Available in 8-Pin SO (150 mils), 8-Pin µSOP, and 3-Pin TO-92 Packages
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

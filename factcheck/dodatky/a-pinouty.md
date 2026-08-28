@@ -3182,7 +3182,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3262,7 +3262,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > PSRAM access speed may be faster than flash access, so the overall application performance may be better. For example, if the PSRAM is an Octal mode (8-line PSRAM) and is configured to 80 MHz, then it is faster than a Quad flash (4-line flash) which is configured to 80 MHz.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

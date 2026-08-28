@@ -1341,7 +1341,7 @@ BLE не передає потік. Він публікує **структуру
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-c3_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > • SRAM: 400 KB (16 KB for cache)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

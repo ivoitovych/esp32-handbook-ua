@@ -2,7 +2,7 @@
   zbih: Радіо на борту · Raspberry Pi → так
   klas: A
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
-    2.2 «Interfaces» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    2.2 «Interfaces» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: "2.2    Interfaces\n      • 802.11 b/g/n/ac Wireless LAN\n      • Bluetooth 5.0 with BLE\n"
   sposib: PDF з кешу `rpi4-datasheet.pdf`, завантажено `vzyaty.sh` з datasheets.raspberrypi.com, pdftotext
     -layout, 2026-08-26
@@ -12,7 +12,7 @@
   match: Радіо на борту · Raspberry Pi → так
   status: verbatim
   source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
-    2.2 «Interfaces» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    2.2 «Interfaces» (кеш: source-cache/rpi4-datasheet.pdf)'
   quote: "2.2    Interfaces\n      • 802.11 b/g/n/ac Wireless LAN\n      • Bluetooth 5.0 with BLE\n"
   method: PDF з кешу `rpi4-datasheet.pdf`, завантажено `vzyaty.sh` з datasheets.raspberrypi.com, pdftotext
     -layout, 2026-08-26
@@ -24,7 +24,7 @@
   zbih: Частота · Raspberry Pi → понад 1 ГГц
   klas: A
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
-    2.1 «Hardware» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    2.1 «Hardware» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: "2.1    Hardware\n      • Quad core 64-bit ARM-Cortex A72 running at 1.5GHz\n"
   sposib: PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
   notatka: '1.5 ГГц > 1 ГГц — з запасом, і це найповільніша з підтримуваних книгою плат: Pi 5 (product
@@ -34,7 +34,7 @@
   match: Частота · Raspberry Pi → понад 1 ГГц
   status: verbatim
   source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
-    2.1 «Hardware» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    2.1 «Hardware» (кеш: source-cache/rpi4-datasheet.pdf)'
   quote: "2.1    Hardware\n      • Quad core 64-bit ARM-Cortex A72 running at 1.5GHz\n"
   method: PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
   note: '1.5 ГГц > 1 ГГц — з запасом, і це найповільніша з підтримуваних книгою плат: Pi 5 (product brief)
@@ -44,7 +44,7 @@
   zbih: RAM · Raspberry Pi → гігабайти
   klas: A
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
-    1 «Introduction» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    1 «Introduction» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: 'The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
 
     '
@@ -55,7 +55,7 @@
   match: RAM · Raspberry Pi → гігабайти
   status: verbatim
   source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
-    1 «Introduction» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    1 «Introduction» (кеш: source-cache/rpi4-datasheet.pdf)'
   quote: 'The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
 
     '
@@ -68,7 +68,7 @@
   zbih: ОС · Raspberry Pi → Linux
   klas: A
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
-    2.3 «Software» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    2.3 «Software» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: "2.3    Software\n      • ARMv8 Instruction Set\n      • Mature Linux software stack\n     \
     \ • Actively developed and maintained\n          – Recent Linux kernel support\n          – Many drivers\
     \ upstreamed\n          – Stable and well supported userland\n"
@@ -79,7 +79,7 @@
   match: ОС · Raspberry Pi → Linux
   status: verbatim
   source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
-    2.3 «Software» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    2.3 «Software» (кеш: source-cache/rpi4-datasheet.pdf)'
   quote: "2.3    Software\n      • ARMv8 Instruction Set\n      • Mature Linux software stack\n      •\
     \ Actively developed and maintained\n          – Recent Linux kernel support\n          – Many drivers\
     \ upstreamed\n          – Stable and well supported userland\n"
@@ -118,7 +118,7 @@
   zbih: Сон · Raspberry Pi → не передбачено
   klas: B
   dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»;
-    Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: source-cache/rpi4-datasheet.pdf)'
   cytata: '4.1     Power Requirements
 
     The Pi4B requires a good quality USB-C power supply capable of delivering 5V at 3A. If attached
@@ -138,7 +138,7 @@
   match: Сон · Raspberry Pi → не передбачено
   status: derived
   source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»;
-    Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: dzherela-kesh/rpi4-datasheet.pdf)'
+    Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: source-cache/rpi4-datasheet.pdf)'
   quote: '4.1     Power Requirements
 
     The Pi4B requires a good quality USB-C power supply capable of delivering 5V at 3A. If attached

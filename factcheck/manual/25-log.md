@@ -1100,7 +1100,7 @@ picocom -b 115200 /dev/ttyUSB0 | tee log-2026-08-26.txt
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > Stop/resume log output saved to file
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1129,7 +1129,7 @@ saved to file»; монітор створює файл у каталозі пр
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > * Ctrl + L
   > - Stop/resume log output saved to file
@@ -1160,7 +1160,7 @@ saved to file»; монітор створює файл у каталозі пр
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > Stop/resume log output saved to file
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -3226,7 +3226,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > Create a file in the project directory and the output is written to that file
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.

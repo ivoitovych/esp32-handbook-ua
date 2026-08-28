@@ -265,7 +265,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/bmp280.pdf
+- **Джерело:** source-cache/bmp280.pdf
 - **Дослівно з джерела:**
   > The BMP280 is an absolute barometric pressure sensor especially designed for mobile applications.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -315,7 +315,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function on the same 1-Wire bus.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -462,7 +462,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/8e2fcbf9-bme280.c
+- **Джерело:** source-cache/8e2fcbf9-bme280.c
 - **Дослівно з джерела:**
   > static uint32_t compensate_pressure(const struct bme280_uncomp_data *uncomp_data,
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

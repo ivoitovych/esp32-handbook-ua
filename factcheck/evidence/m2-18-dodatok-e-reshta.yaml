@@ -141,7 +141,7 @@
 - nazva: ST7789 — однокристальний драйвер TFT
   zbih: ST7789 · Що дає → TFT-дисплей
   klas: A
-  dzherelo: 'Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: dzherela-kesh/st7789.pdf)'
+  dzherelo: 'Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: source-cache/st7789.pdf)'
   cytata: 'ST7789V
 
     240RGB x 320 dot 262K Color with Frame Memory
@@ -156,7 +156,7 @@
   title: ST7789 — однокристальний драйвер TFT
   match: ST7789 · Що дає → TFT-дисплей
   status: verbatim
-  source: 'Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: dzherela-kesh/st7789.pdf)'
+  source: 'Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: source-cache/st7789.pdf)'
   quote: 'ST7789V
 
     240RGB x 320 dot 262K Color with Frame Memory
@@ -172,7 +172,7 @@
   zbih: ILI9341 · Що дає → TFT-дисплей
   klas: A
   dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка
-    (кеш: dzherela-kesh/ili9341.pdf)'
+    (кеш: source-cache/ili9341.pdf)'
   cytata: 'ILI9341
 
     a-Si TFT LCD Single Chip Driver
@@ -188,7 +188,7 @@
   match: ILI9341 · Що дає → TFT-дисплей
   status: verbatim
   source: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка
-    (кеш: dzherela-kesh/ili9341.pdf)'
+    (кеш: source-cache/ili9341.pdf)'
   quote: 'ILI9341
 
     a-Si TFT LCD Single Chip Driver
@@ -284,7 +284,7 @@
   zbih: MCP2515 · Режим → 0
   klas: A
   dzherelo: 'Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features»
-    (кеш: dzherela-kesh/mcp2515.pdf)'
+    (кеш: source-cache/mcp2515.pdf)'
   cytata: "MCP2515\nStand-Alone CAN Controller with SPI Interface\nFeatures\n• High-Speed SPI Interface\
     \ (10 MHz):\n  - SPI modes 0,0 and 1,1\n"
   sposib: PDF Microchip, кеш `mcp2515.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
@@ -295,7 +295,7 @@
   match: MCP2515 · Режим → 0
   status: verbatim
   source: 'Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features»
-    (кеш: dzherela-kesh/mcp2515.pdf)'
+    (кеш: source-cache/mcp2515.pdf)'
   quote: "MCP2515\nStand-Alone CAN Controller with SPI Interface\nFeatures\n• High-Speed SPI Interface\
     \ (10 MHz):\n  - SPI modes 0,0 and 1,1\n"
   method: PDF Microchip, кеш `mcp2515.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
@@ -511,7 +511,7 @@
 - nazva: HC-SR04 — тригер і ECHO, 5 В TTL
   zbih: HC-SR04 · Як → тригер \+ вимір `ECHO` \(⛔ 5 В!\)
   klas: A
-  dzherelo: 'Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: dzherela-kesh/hc-sr04.pdf)'
+  dzherelo: 'Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: source-cache/hc-sr04.pdf)'
   cytata: "Wire connecting direct as following:\n   5V Supply\n   Trigger Pulse Input\n   Echo Pulse Output\n\
     \   0V Ground\n\nElectric Parameter\nWorking Voltage                DC 5 V\nTrigger Input Signal \
     \          10uS TTL pulse\nEcho Output Signal             Input TTL lever signal and the range in\
@@ -526,7 +526,7 @@
   title: HC-SR04 — тригер і ECHO, 5 В TTL
   match: HC-SR04 · Як → тригер \+ вимір `ECHO` \(⛔ 5 В!\)
   status: verbatim
-  source: 'Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: dzherela-kesh/hc-sr04.pdf)'
+  source: 'Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: source-cache/hc-sr04.pdf)'
   quote: "Wire connecting direct as following:\n   5V Supply\n   Trigger Pulse Input\n   Echo Pulse Output\n\
     \   0V Ground\n\nElectric Parameter\nWorking Voltage                DC 5 V\nTrigger Input Signal \
     \          10uS TTL pulse\nEcho Output Signal             Input TTL lever signal and the range in\

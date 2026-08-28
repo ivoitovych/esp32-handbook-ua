@@ -709,7 +709,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Kester (ITW), Alloy Temperature Chart — рядки `Sn63Pb37` і сімейство `LEAD-FREE` (кеш: dzherela-kesh/kester-alloys.pdf)
+- **Джерело:** Kester (ITW), Alloy Temperature Chart — рядки `Sn63Pb37` і сімейство `LEAD-FREE` (кеш: source-cache/kester-alloys.pdf)
 - **Дослівно з джерела:**
   > Sn63Pb37             183
   > Sn96.5Ag3Cu0.5       217-220

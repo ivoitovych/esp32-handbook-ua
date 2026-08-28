@@ -2013,7 +2013,7 @@ static void task_rx_can(void *arg) {
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Джерело:** source-cache/5827f9c3-twai.rst
 - **Дослівно з джерела:**
   > - :cpp:member:`twai_onchip_node_config_t::flags::enable_listen_only`: Configures the node in listen-only mode. In this mode, the node only receives and does not transmit any dominant bits, including ACK and error frames.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2539,7 +2539,7 @@ static struct {
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/5827f9c3-twai.rst
+- **Джерело:** source-cache/5827f9c3-twai.rst
 - **Дослівно з джерела:**
   > The TWAI controller hardware can filter messages based on their ID to reduce software and hardware overhead, thereby improving node efficiency.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

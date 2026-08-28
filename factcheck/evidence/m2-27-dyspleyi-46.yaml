@@ -2,7 +2,7 @@
   zbih: TFT ST7789 · Інтерфейс → SPI
   klas: A
   dzherelo: 'Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver,
-    Version 1.3, розділ 2 «Features» (кеш: dzherela-kesh/st7789.pdf)'
+    Version 1.3, розділ 2 «Features» (кеш: source-cache/st7789.pdf)'
   cytata: '2 FEATURES
 
     ...
@@ -26,7 +26,7 @@
   match: TFT ST7789 · Інтерфейс → SPI
   status: verbatim
   source: 'Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver,
-    Version 1.3, розділ 2 «Features» (кеш: dzherela-kesh/st7789.pdf)'
+    Version 1.3, розділ 2 «Features» (кеш: source-cache/st7789.pdf)'
   quote: '2 FEATURES
 
     ...
@@ -96,7 +96,7 @@
   zbih: TFT ILI9341 · Інтерфейс → SPI
   klas: A
   dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
-    Specification V1.11, розділ 1 «Introduction» (кеш: dzherela-kesh/ili9341.pdf)'
+    Specification V1.11, розділ 1 «Introduction» (кеш: source-cache/ili9341.pdf)'
   cytata: 'ILI9341 supports parallel 8-/9-/16-/18-bit data bus MCU interface,
 
     6-/16-/18-bit data bus RGB interface and 3-/4-line serial peripheral
@@ -111,7 +111,7 @@
   match: TFT ILI9341 · Інтерфейс → SPI
   status: verbatim
   source: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
-    Specification V1.11, розділ 1 «Introduction» (кеш: dzherela-kesh/ili9341.pdf)'
+    Specification V1.11, розділ 1 «Introduction» (кеш: source-cache/ili9341.pdf)'
   quote: 'ILI9341 supports parallel 8-/9-/16-/18-bit data bus MCU interface,
 
     6-/16-/18-bit data bus RGB interface and 3-/4-line serial peripheral

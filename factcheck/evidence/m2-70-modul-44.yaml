@@ -1,7 +1,7 @@
 - nazva: HC-SR04 видає 5 В на виводі ECHO
   zbih: HC-SR04.*видає.*5 В на виводі
   klas: B
-  dzherelo: 'HC-SR04 Datasheet, таблиця параметрів (кеш: dzherela-kesh/hc-sr04.pdf)'
+  dzherelo: 'HC-SR04 Datasheet, таблиця параметрів (кеш: source-cache/hc-sr04.pdf)'
   cytata: 'Electric Parameter
 
     Working Voltage                               DC 5 V
@@ -15,7 +15,7 @@
   title: HC-SR04 видає 5 В на виводі ECHO
   match: HC-SR04.*видає.*5 В на виводі
   status: derived
-  source: 'HC-SR04 Datasheet, таблиця параметрів (кеш: dzherela-kesh/hc-sr04.pdf)'
+  source: 'HC-SR04 Datasheet, таблиця параметрів (кеш: source-cache/hc-sr04.pdf)'
   quote: 'Electric Parameter
 
     Working Voltage                               DC 5 V

@@ -2282,7 +2282,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > ESP32-WROOM-32E: On-board PCB antenna
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2333,7 +2333,7 @@ ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > MHF I connector from I-PEX
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2719,7 +2719,7 @@ ESP32 не бачить 5 ГГц — найчастіша причина «ме�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet — розділ 1 «Features», Wi-Fi (кеш: dzherela-kesh/21953a2f-esp32_datasheet_en.pdf)
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet — розділ 1 «Features», Wi-Fi (кеш: source-cache/21953a2f-esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC low-power 40 nm
   > • 802.11n (2.4 GHz), up to 150 Mbps

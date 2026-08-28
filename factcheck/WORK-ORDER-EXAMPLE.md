@@ -49,7 +49,7 @@
 
 Далі читай його звідти:
 
-    pdftotext -layout dzherela-kesh/sn65hvd230.pdf - | grep -n -i 'supply voltage'
+    pdftotext -layout source-cache/sn65hvd230.pdf - | grep -n -i 'supply voltage'
 
 І цитуй **із завантаженого файлу**. Перевірка та сама: рядок має
 стояти в файлі. Тому качати безпечно — воно нічого не обходить, воно
@@ -93,7 +93,7 @@
         ±0.5°C Accuracy from -10°C to +85°C
       de: сторінка 1, Features
 
-`fayl` — ім'я файлу в `dzherela-kesh/` (той, що був, або той, що ти
+`fayl` — ім'я файлу в `source-cache/` (той, що був, або той, що ти
 щойно завантажив). `cytata` — рядок звідти, слово в слово.
 
 ## sperechayetsya — те, заради чого все це

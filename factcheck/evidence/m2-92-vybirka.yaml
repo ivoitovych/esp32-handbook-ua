@@ -52,7 +52,7 @@
   klas: C
   dzherelo: Espressif Systems, ESP32-C5 Series Datasheet
   cytata: ''
-  sposib: Датащит названо і окреслено, але недоступний у кеші (ls dzherela-kesh/ — немає C5),
+  sposib: Датащит названо і окреслено, але недоступний у кеші (ls source-cache/ — немає C5),
     HTTP 301 на espressif.com
   notatka: ESP32-C5 — реальна нова версія лінійки, інформація логічна, але офіційного датащиту
     не знайдено. Клас C.
@@ -61,7 +61,7 @@
   status: named-unreachable
   source: Espressif Systems, ESP32-C5 Series Datasheet
   quote: ''
-  method: Датащит названо і окреслено, але недоступний у кеші (ls dzherela-kesh/ — немає C5),
+  method: Датащит названо і окреслено, але недоступний у кеші (ls source-cache/ — немає C5),
     HTTP 301 на espressif.com
   note: ESP32-C5 — реальна нова версія лінійки, інформація логічна, але офіційного датащиту
     не знайдено. Клас C.
@@ -71,7 +71,7 @@
   zbih: ESP32 не бачить 5 ГГц — найчастіша причина «мережі немає в списку».
   klas: A
   dzherelo: 'Espressif Systems, ESP32 Series Datasheet — розділ 1 «Features», Wi-Fi (кеш:
-    dzherela-kesh/21953a2f-esp32_datasheet_en.pdf)'
+    source-cache/21953a2f-esp32_datasheet_en.pdf)'
   cytata: 'ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC
     low-power 40 nm
 
@@ -87,7 +87,7 @@
   title: 'T-39-093: ESP32 не бачить 5 ГГц мережі'
   match: ESP32 не бачить 5 ГГц — найчастіша причина «мережі немає в списку».
   status: verbatim
-  source: 'Espressif Systems, ESP32 Series Datasheet — розділ 1 «Features», Wi-Fi (кеш: dzherela-kesh/21953a2f-esp32_datasheet_en.pdf)'
+  source: 'Espressif Systems, ESP32 Series Datasheet — розділ 1 «Features», Wi-Fi (кеш: source-cache/21953a2f-esp32_datasheet_en.pdf)'
   quote: 'ESP32 is a single 2.4 GHz Wi-Fi-and-Bluetooth combo chip designed with the TSMC
     low-power 40 nm
 
@@ -135,7 +135,7 @@
   zbih: \[\[classic\]\]\s+`GPIO6`,\s+`GPIO7`,\s+`GPIO8`,\s+`GPIO9`,\s+`GPIO10`,\s+`GPIO11`\s+з'єднані\s+з\s+мікросхемою\s+флешу\s+всередині\s+моду
   klas: A
   dzherelo: 'Espressif Systems, ESP32-WROOM-32E / ESP32-WROOM-32UE Datasheet v1.7, розділ
-    2 «Pin Definitions», виноска 2 до таблиці Pin Description (кеш: dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)'
+    2 «Pin Definitions», виноска 2 до таблиці Pin Description (кеш: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)'
   cytata: 'Pins GPIO6 to GPIO11 on the ESP32-D0WD-V3/ESP32-D0WDR2-V3 chip are connected to
     the SPI flash integrated on the module and are not led out.
 
@@ -151,7 +151,7 @@
   match: \[\[classic\]\]\s+`GPIO6`,\s+`GPIO7`,\s+`GPIO8`,\s+`GPIO9`,\s+`GPIO10`,\s+`GPIO11`\s+з'єднані\s+з\s+мікросхемою\s+флешу\s+всередині\s+моду
   status: verbatim
   source: 'Espressif Systems, ESP32-WROOM-32E / ESP32-WROOM-32UE Datasheet v1.7, розділ 2
-    «Pin Definitions», виноска 2 до таблиці Pin Description (кеш: dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)'
+    «Pin Definitions», виноска 2 до таблиці Pin Description (кеш: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)'
   quote: 'Pins GPIO6 to GPIO11 on the ESP32-D0WD-V3/ESP32-D0WDR2-V3 chip are connected to
     the SPI flash integrated on the module and are not led out.
 
@@ -234,7 +234,7 @@
 - nazva: 'T-08-048: ESP32-C3 SuperMini обмежене 400 КБ пам''яті'
   zbih: Для простого вузла — оптимально; для чогось більшого впирається в 400 КБ.
   klas: A
-  dzherelo: Espressif Systems, ESP32-C3 Series Datasheet (dzherela-kesh/esp32c3_datasheet_en.pdf),
+  dzherelo: Espressif Systems, ESP32-C3 Series Datasheet (source-cache/esp32c3_datasheet_en.pdf),
     розділ Memory Overview або Pin Definitions
   cytata: 400 КБ SRAM
   sposib: Витяг характеристик пам'яті ESP32-C3 з офіційного датащиту; перевірено в кеші
@@ -243,7 +243,7 @@
   title: 'T-08-048: ESP32-C3 SuperMini обмежене 400 КБ пам''яті'
   match: Для простого вузла — оптимально; для чогось більшого впирається в 400 КБ.
   status: verbatim
-  source: Espressif Systems, ESP32-C3 Series Datasheet (dzherela-kesh/esp32c3_datasheet_en.pdf),
+  source: Espressif Systems, ESP32-C3 Series Datasheet (source-cache/esp32c3_datasheet_en.pdf),
     розділ Memory Overview або Pin Definitions
   quote: 400 КБ SRAM
   method: Витяг характеристик пам'яті ESP32-C3 з офіційного датащиту; перевірено в кеші
@@ -274,7 +274,7 @@
 - nazva: 'T-30-056: Розподіл пам''яті: 16 КБ і більше — PSRAM'
   zbih: \|\s+16\s+КБ\s+і\s+більше\s+\|\s+PSRAM\s+\|
   klas: A
-  dzherelo: Espressif Systems, ESP32 Series Datasheet (dzherela-kesh/21953a2f-esp32_datasheet_en.pdf),
+  dzherelo: Espressif Systems, ESP32 Series Datasheet (source-cache/21953a2f-esp32_datasheet_en.pdf),
     розділ Memory Configuration або Memory Overview
   cytata: 16 КБ і більше → PSRAM
   sposib: Таблиця розподілу адресного простору пам'яті ESP32 з датащиту; витяг з офіційної
@@ -284,7 +284,7 @@
   title: 'T-30-056: Розподіл пам''яті: 16 КБ і більше — PSRAM'
   match: \|\s+16\s+КБ\s+і\s+більше\s+\|\s+PSRAM\s+\|
   status: verbatim
-  source: Espressif Systems, ESP32 Series Datasheet (dzherela-kesh/21953a2f-esp32_datasheet_en.pdf),
+  source: Espressif Systems, ESP32 Series Datasheet (source-cache/21953a2f-esp32_datasheet_en.pdf),
     розділ Memory Configuration або Memory Overview
   quote: 16 КБ і більше → PSRAM
   method: Таблиця розподілу адресного простору пам'яті ESP32 з датащиту; витяг з офіційної

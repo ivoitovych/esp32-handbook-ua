@@ -1,7 +1,7 @@
 - nazva: HC-SR04 живиться від 5 В
   zbih: живиться від 5 В і видає.*5 В на виводі `ECHO`
   klas: A
-  dzherelo: 'HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter» (кеш: dzherela-kesh/hc-sr04.pdf)'
+  dzherelo: 'HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter» (кеш: source-cache/hc-sr04.pdf)'
   cytata: 'Working Voltage
 
     DC 5 V
@@ -21,14 +21,14 @@
     Input TTL lever signal and the range in proportion
 
     '
-  sposib: PDF HC-SR04 iz dzherela-kesh, pdftotext -layout, 2026-08-26
+  sposib: PDF HC-SR04 iz source-cache, pdftotext -layout, 2026-08-26
   notatka: HC-SR04 — это измеритель расстояния с ультразвуком. Живится от 5V, имеет вывод Vcc 5V и Echo
     Output. Выход Echo есть TTL сигнал, что означает что при питании 5V выход находится на 5V логических
     уровнях. Это подтверждается тем что модуль питается от 5V и использует TTL логику.
   title: HC-SR04 живиться від 5 В
   match: живиться від 5 В і видає.*5 В на виводі `ECHO`
   status: verbatim
-  source: 'HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter» (кеш: dzherela-kesh/hc-sr04.pdf)'
+  source: 'HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter» (кеш: source-cache/hc-sr04.pdf)'
   quote: 'Working Voltage
 
     DC 5 V
@@ -48,7 +48,7 @@
     Input TTL lever signal and the range in proportion
 
     '
-  method: PDF HC-SR04 iz dzherela-kesh, pdftotext -layout, 2026-08-26
+  method: PDF HC-SR04 iz source-cache, pdftotext -layout, 2026-08-26
   note: HC-SR04 — это измеритель расстояния с ультразвуком. Живится от 5V, имеет вывод Vcc 5V и Echo Output.
     Выход Echo есть TTL сигнал, что означает что при питании 5V выход находится на 5V логических уровнях.
     Это подтверждается тем что модуль питается от 5V и использует TTL логику.

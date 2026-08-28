@@ -47,7 +47,7 @@
 - nazva: Безсвинцевий потребує на 30-40 °C більше
   zbih: Безсвинцевий — на 30–40 градусів більше\.
   klas: B
-  dzherelo: 'Kester (ITW), Alloy Temperature Chart — рядки `Sn63Pb37` і сімейство `LEAD-FREE` (кеш: dzherela-kesh/kester-alloys.pdf)'
+  dzherelo: 'Kester (ITW), Alloy Temperature Chart — рядки `Sn63Pb37` і сімейство `LEAD-FREE` (кеш: source-cache/kester-alloys.pdf)'
   cytata: 'Sn63Pb37             183
 
     Sn96.5Ag3Cu0.5       217-220
@@ -69,7 +69,7 @@
   title: Безсвинцевий потребує на 30-40 °C більше
   match: Безсвинцевий — на 30–40 градусів більше\.
   status: derived
-  source: 'Kester (ITW), Alloy Temperature Chart — рядки `Sn63Pb37` і сімейство `LEAD-FREE` (кеш: dzherela-kesh/kester-alloys.pdf)'
+  source: 'Kester (ITW), Alloy Temperature Chart — рядки `Sn63Pb37` і сімейство `LEAD-FREE` (кеш: source-cache/kester-alloys.pdf)'
   quote: 'Sn63Pb37             183
 
     Sn96.5Ag3Cu0.5       217-220

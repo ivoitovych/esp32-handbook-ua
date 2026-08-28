@@ -28,7 +28,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -124,7 +124,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -700,7 +700,7 @@ ota_0 + ota_1» дає незмінний аварійний образ, з як
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -847,7 +847,7 @@ OTA оновлює лише образ застосунку — таблиця �
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1845,7 +1845,7 @@ brownout саме посеред оновлення. Схема з двох сл
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2472,7 +2472,7 @@ brownout саме посеред оновлення. Схема з двох сл
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/a4dbe955-bootloader.rst
+- **Джерело:** source-cache/a4dbe955-bootloader.rst
 - **Дослівно з джерела:**
   > The OTA (over the air) update process can flash new apps in the field but cannot flash a new bootloader.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2745,7 +2745,7 @@ Rollback — окремий механізм, і він працює лише т
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The following code serves detect the initial boot for an application after the OTA update. Upon the first boot, the application checks its state and performs diagnostics. If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback to confirm the operability of the application.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2773,7 +2773,7 @@ OTA не оновлює таблицю розділів. Розбивку зак
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/1c119dba-ota.rst
+- **Джерело:** source-cache/1c119dba-ota.rst
 - **Дослівно з джерела:**
   > The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

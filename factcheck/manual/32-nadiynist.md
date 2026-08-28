@@ -1647,7 +1647,7 @@ Watchdog і OTA-відкат — одна система: непідтвердж
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > The library does try to recover from conditions when flash memory is in an inconsistent state. In particular, one should be able to power off the device at any point and time and then power it back on. This should not result in loss of data, except for the new key-value pair if it was being written at the moment of powering off.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2420,7 +2420,7 @@ PCNT рахує імпульси. Периферія не залежить ві�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-c3_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > • SRAM: 400 KB (16 KB for cache)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

@@ -116,7 +116,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/8e2fcbf9-bme280.c
+- **Джерело:** source-cache/8e2fcbf9-bme280.c
 - **Дослівно з джерела:**
   > /*! @file bme280.c
   >  * @brief Sensor driver for BME280 sensor
@@ -634,10 +634,10 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** General principle from IC datasheets: supply voltage and logic levels are independent parameters. Examples: INA219, MCP23017, BMP280, BME280 (all in dzherela-kesh)
+- **Джерело:** General principle from IC datasheets: supply voltage and logic levels are independent parameters. Examples: INA219, MCP23017, BMP280, BME280 (all in source-cache)
 - **Дослівно з джерела:**
   > Типовий приклад: INA219 живиться від 3.3 В (VCC = 3.3 V), але виводи для комунікації (SDA/SCL) є open-drain і можуть працювати з будь-якою напругою до VCC за наявності зовнішніх резисторів підтягування. Модуль на 5 В: живлення 5 В, але багато виводів сприймають лише до 3.3 В.
-- **Спосіб і дата:** перегляд файлів bmp280.pdf, ina219.pdf, mcp23017.pdf з dzherela-kesh, 2026-08-27
+- **Спосіб і дата:** перегляд файлів bmp280.pdf, ina219.pdf, mcp23017.pdf з source-cache, 2026-08-27
 - **Нотатка:** Це базова логіка електроніки: напруга живлення (VCC) і логічні рівні (Vih/Vil) — незалежні параметри. Напруга живлення визначає лише, з яким напруженням мікросхема живиться, а не які рівні вона розпізнає на входах. Moduli на 3.3 В можуть мати 5-вольтові входи, і навпаки. Твердження розділу 44 — це попередження від загальної помилки: не судити про логічні рівні за напругою живлення.
 - **Прохід:** m2-90-vybirka
 
@@ -717,7 +717,7 @@ datasheet, а не за розташуванням написів (розділ 
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter» (кеш: dzherela-kesh/hc-sr04.pdf)
+- **Джерело:** HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter» (кеш: source-cache/hc-sr04.pdf)
 - **Дослівно з джерела:**
   > Working Voltage
   > DC 5 V
@@ -728,7 +728,7 @@ datasheet, а не за розташуванням написів (розділ 
   > …
   > Echo Output Signal
   > Input TTL lever signal and the range in proportion
-- **Спосіб і дата:** PDF HC-SR04 iz dzherela-kesh, pdftotext -layout, 2026-08-26
+- **Спосіб і дата:** PDF HC-SR04 iz source-cache, pdftotext -layout, 2026-08-26
 - **Нотатка:** HC-SR04 — это измеритель расстояния с ультразвуком. Живится от 5V, имеет вывод Vcc 5V и Echo Output. Выход Echo есть TTL сигнал, что означает что при питании 5V выход находится на 5V логических уровнях. Это подтверждается тем что модуль питается от 5V и использует TTL логику.
 - **Прохід:** m2-46-modul-44
 
@@ -1610,7 +1610,7 @@ datasheet, а не за розташуванням написів (розділ 
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/8e2fcbf9-bme280.c
+- **Джерело:** source-cache/8e2fcbf9-bme280.c
 - **Дослівно з джерела:**
   > This internal API reads the calibration data from the sensor, parse
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
