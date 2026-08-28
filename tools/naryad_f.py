@@ -255,6 +255,78 @@ def versiya_naryadu(rich: bool = False) -> str:
     return hashlib.sha256(tilo.encode("utf-8")).hexdigest()[:8]
 
 
+def za_perelikom(a, vybirka) -> int:
+    """Ті самі одиниці, що в попередньому прогоні.
+
+    ## Навіщо це окремо від `--vypadkovo`
+
+    Щоб виміряти зміну **наряду**, змінювати треба наряд і **тільки**
+    його. Новий випадковий жереб змінює водночас дві речі — версію
+    наряду й самі одиниці, — і різниця між прогонами стає нічийною.
+
+    Тут вибірка береться з попереднього прогону дослівно. Порівняння
+    виходить **попарним**: та сама одиниця під двома нарядами, тож
+    видно не лише зсув часток, а й те, які саме одиниці змінили
+    вердикт і в який бік.
+
+    Сукупність при цьому вже інша (черга живе), і насіння тут не
+    вживається взагалі — саме тому, що воно її не відтворює.
+    """
+    import json
+
+    poperednye = json.loads(a.z_pereliku.read_text(encoding="utf-8"))
+    treba = list(poperednye["vzyato"])
+    reyestr = {}
+    for kl in ("A", "B", "C", "D", "E", "F", "G", "L", "S"):
+        try:
+            for u in vybirka.odynyci(kl):
+                reyestr[u["id"]] = dict(u, klas=kl)
+        except Exception:
+            continue
+    vzyato = [reyestr[i] for i in treba if i in reyestr]
+    znykly = [i for i in treba if i not in reyestr]
+    zminyly = [i for i in treba
+               if i in reyestr and reyestr[i]["klas"] != poperednye.get("queue")]
+
+    (a.kudy / "vybirka.json").write_text(json.dumps(
+        {"order_version": versiya_naryadu(a.rich),
+         "paired_with": str(a.z_pereliku.parent.name),
+         "prev_order_version": poperednye.get("order_version"),
+         "queue": poperednye.get("queue"), "sample_size": len(vzyato),
+         "rich_cards": bool(a.rich),
+         "units_gone": znykly, "units_left_queue": zminyly,
+         "vzyato": [u["id"] for u in vzyato]},
+        ensure_ascii=False, indent=1), encoding="utf-8")
+
+    kont = konteksty() if a.rich else {}
+    n = 0
+    for i in range(0, len(vzyato), a.na_naryad):
+        ch = vzyato[i:i + a.na_naryad]
+        n += 1
+        kand = ("**Документа-кандидата немає.** Ці одиниці взято "
+                "**випадково** з усієї черги, а не за темою, тож жодного "
+                "документа наперед не названо. Шукай сам — і якщо не "
+                "знайшов, `not_found` із адресою того, що відкривав, "
+                "це повноцінна відповідь.")
+        r = [SHAPKA.format(n=n, tema="випадкова вибірка (повтор попарно)",
+                           k=len(ch), kandydat=kand),
+             ("\n" + MISCE_V_POTOCI + "\n" if a.rich else ""),
+             f"\n<!-- order_version:{versiya_naryadu(a.rich)} "
+             f"paired:{a.z_pereliku.parent.name} -->\n"]
+        for u in ch:
+            r.append(f"\n**`{u['id']}`**\n")
+            r.append(f"> {u['tekst']}\n")
+            if a.rich and kont.get(u["id"]):
+                r.append("\nОточення в книзі — щоб було видно, про що "
+                         "саме йдеться:\n\n```\n" + kont[u["id"]] + "\n```\n")
+        (a.kudy / f"f-{n:02d}.md").write_text("\n".join(r) + "\n",
+                                              encoding="utf-8")
+    print(f"нарядів {n}, одиниць {len(vzyato)} (попарно з "
+          f"{a.z_pereliku.parent.name}); зникли {len(znykly)}, "
+          f"вийшли з черги {len(zminyly)} → {a.kudy}")
+    return 0
+
+
 def vypadkova(a, vybirka) -> int:
     """Випадкова вибірка з усієї черги `F`, з насінням і переліком."""
     import json
@@ -330,12 +402,18 @@ def main() -> int:
                    help="взяти N одиниць випадково з усієї черги F")
     p.add_argument("--nasinnya", type=int, default=0,
                    help="насіння; обов'язкове разом із --vypadkovo")
+    p.add_argument("--z-pereliku", type=Path, default=None,
+                   help="взяти ті самі одиниці, що в названому vybirka.json "
+                        "— для попарного порівняння версій наряду")
     p.add_argument("--rich-cards", action="store_true", dest="rich",
                    help="картка несе контекст із книги й своє місце в потоці")
     a = p.parse_args()
     if a.vypadkovo and not a.nasinnya:
         p.error("--vypadkovo без --nasinnya: дослід буде невідтворний")
     a.kudy.mkdir(parents=True, exist_ok=True)
+
+    if a.z_pereliku:
+        return za_perelikom(a, vybirka)
 
     if a.vypadkovo:
         return vypadkova(a, vybirka)

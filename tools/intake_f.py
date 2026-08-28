@@ -134,6 +134,8 @@ def main() -> int:
                    help="дописати підсумок прогону у factcheck/RUNS.md")
     p.add_argument("--model", default="haiku-4.5")
     p.add_argument("--note", default="")
+    p.add_argument("--compare", type=pathlib.Path, default=None,
+                   help="попарне порівняння з іншим прогоном тих самих одиниць")
     a = p.parse_args()
 
     vyb = json.loads((a.teka / "vybirka.json").read_text(encoding="utf-8"))
@@ -214,9 +216,63 @@ def main() -> int:
     if bez:
         print("\nбез відповіді: %s" % ", ".join(bez))
 
+    if a.compare:
+        porivnyaty(a.compare, a.teka, vidpovidi)
     if a.ledger:
         zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy)
     return 1 if (bidy or bytyy or bez) else 0
+
+
+def chytaty(teka: pathlib.Path) -> dict[str, dict]:
+    out: dict[str, dict] = {}
+    for f in sorted(teka.glob("q*.yaml")):
+        try:
+            z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
+        except Exception:
+            continue
+        for r in z:
+            if isinstance(r, dict):
+                r = na_anhliysku(r)
+                out[str(r.get("unit") or r.get("id") or "?").strip()] = r
+    return out
+
+
+def porivnyaty(bula: pathlib.Path, stala: pathlib.Path,
+               teper: dict[str, dict]) -> None:
+    """Та сама одиниця під двома нарядами.
+
+    ## Навіщо попарно, а не за частками
+
+    Частки двох прогонів на РІЗНИХ вибірках різняться завжди, і
+    приписати різницю нарядові не можна: змінилися дві речі. Тут
+    вибірка та сама, тож видно не лише зсув чисел, а й **які саме
+    одиниці змінили вердикт і в який бік** — а це вже привід відкрити
+    їх і подивитися.
+
+    Одне застереження, і воно суттєве: **помічник недетермінований.**
+    Той самий наряд на тих самих одиницях дав би теж не те саме. Тому
+    різниця тут — це різниця наряду ПЛЮС шум, і без третього прогону
+    під першою версією їх не розділити. Кажу це тут, щоб таблиця не
+    читалася як доказ.
+    """
+    ranishe = chytaty(bula)
+    spilni = sorted(set(ranishe) & set(teper))
+    if not spilni:
+        print("\nпорівняти нема з чим: спільних одиниць 0")
+        return
+    perekhody: dict[tuple, int] = {}
+    for i in spilni:
+        a = str(ranishe[i].get("verdict") or "?")
+        b = str(teper[i].get("verdict") or "?")
+        perekhody[(a, b)] = perekhody.get((a, b), 0) + 1
+    tryvko = sum(n for (a, b), n in perekhody.items() if a == b)
+    print("\n=== попарно з `%s`: %d спільних одиниць ===" % (bula.name, len(spilni)))
+    print("   вердикт не змінився: %d (%.0f %%)" % (tryvko, 100 * tryvko / len(spilni)))
+    zmin = {k: v for k, v in perekhody.items() if k[0] != k[1]}
+    if zmin:
+        print("   переходи:")
+        for (a, b), n in sorted(zmin.items(), key=lambda x: -x[1]):
+            print("      %-14s → %-14s %d" % (a, b, n))
 
 
 LEDGER_SHAPKA = """# Runs of the helper pool
