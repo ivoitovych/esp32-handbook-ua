@@ -30,6 +30,14 @@ Thumbs.db
 source-cache/*
 !source-cache/MANIFEST.md
 dzherela-cache/
+# The pre-rename cache directory. The rename replaced the ignore rule by
+# search-and-replace and hit the wrong string — the real directory was
+# `dzherela-kesh`, not `dzherela-cache` — so 236 third-party documents
+# lost their protection and were swept into a commit by `git add -A`.
+# Caught by the pre-push hook, never pushed. Both spellings stay listed:
+# an ignore rule for a directory that no longer exists costs nothing, and
+# the one that was dropped cost a copyright exposure.
+dzherela-kesh/
 *.[Zz][Ii][Pp]
 
 # Байткод Python. Збирається з .py за секунди, але прив'язаний до версії
