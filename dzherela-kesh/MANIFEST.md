@@ -20,10 +20,13 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `05eea3d2-spi_pins.h` | `c0e51fcd72a4ec38ebef9cc8593283e04f44434c57ec1bef200141c596b8edf4` | 717 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/spi_pins.h> |
 | `08bbeb37-index.rst` | `f6b5488ee3bd2a381a9348779ee6621e3fa449de948f0d0b5d9b980bd54eff41` | 20219 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst> |
 | `0a-esp8266ex_datasheet_en.pdf` | `3a038e2fd3040ad06d95d41b16afc8292090339e9f8e728ce46a83db439cecf1` | 1244466 | 2026-08-27 | <https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf> |
+| `0b167a67-UM10204.pdf` | `dc91f00f65584e06ef36e26c93bf9d91a95fb3c8a1830a9223e53caf678b36af` | 750958 | 2026-08-28 | <https://www.nxp.com/docs/en/user-guide/UM10204.pdf> |
 | `0d47365c-spi_master.rst` | `7f3b404fba7070f04ac1ff8d1964c2c7fbaabd1c2a6411798d0b15607e878704` | 46453 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/spi_master.rst> |
 | `0e75f062-soc_caps.h` | `66b9da3debe8edfcbe5b76b16296415d0479df91db5721a8198e4afe214800df` | 24083 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/soc_caps.h> |
+| `0e93202b-loader.py` | `b414c11d181e1e7737aacb4ec86ea3c492d2913abfd26a7c3058f3d051917eff` | 65152 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esptool/v4.8.1/esptool/loader.py> |
 | `12f39d44-README.md` | `f7b3d2c6c85e4ff876781d11d8eaf2e4b3b3fb492f7fabd58911bae336c7fb9e` | 7921 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md> |
 | `160f54b3-soc_caps.h` | `a0b2db46ae751125201c5beaa9f0fed06f65a44deb4ac14fca570be2563c7af6` | 32517 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/soc_caps.h> |
+| `16a13e45-Alloy_20Temperature_20Chart.pdf` | `f669da72ca15636d188e5a9f9bdc1bd346a55b758a2896924dcabe8db981c9ed` | 136757 | 2026-08-28 | <https://www.kester.com/Portals/0/Documents/Knowledge%20Base/Alloy%20Temperature%20Chart.pdf> |
 | `16aaf4ed-io_mux_reg.h` | `5f0d9a2a0243f6e492065c46bdc41159a19e4d1b2a0a3577c77e1134de56c79c` | 11125 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/register/soc/io_mux_reg.h> |
 | `19d515b8-burn-efuse-cmd.rst` | `78b7462a60dbaea2700ad0b1ddaef7a8bdbe43248b1bd4e34af15bede9f9ed4c` | 5808 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esptool/master/docs/en/espefuse/burn-efuse-cmd.rst> |
 | `1c03adb5-windows-setup-update-legacy.rst` | `b132a0dc8535ebcc3ba9e08e61a9ca8d9d9dc09bb27f95b11abbca8e1d6050f3` | 1875 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/windows-setup-update-legacy.rst> |
@@ -34,6 +37,7 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `1e1e44c3-README.md` | `92a07e6e69c4cb678b63770eaab18b0d3d54ca07162e4449dd7251df14420f3d` | 20652 | 2026-08-28 | <https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md> |
 | `1f129a7b-Kconfig.projbuild` | `0f0d15a7eb1ff55c99bb77481fdd4ece802676092b0cb1f274e62a6783396d13` | 9191 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/Kconfig.projbuild> |
 | `20-bekap.md` | `eb97efa99cc66e56c5bb1387c5a94367fb410d7c7212ee282f681eca54968a0e` | 12411 | 2026-08-27 | <https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/20-bekap.md> |
+| `20a9a363-rtc.h` | `9d65eb20879503a5d3ecc855861fb4d36d824c0c7938f0f768d3585d4da4361a` | 9085 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.2/components/esp_rom/include/esp32/rom/rtc.h> |
 | `21-seriyna.md` | `a0797835bda1ee558455e6ab0bbca9aedae9c480c00afe948befd0b5057e214d` | 12483 | 2026-08-27 | <https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/21-seriyna.md> |
 | `21953a2f-esp32_datasheet_en.pdf` | `a7917e6b47528c9dcab06837a49d452e582751335797db879f1cf2d17cd29adf` | 989523 | 2026-08-28 | <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf> |
 | `22-zberezhennya-stanu.md` | `4944762be4187edaeddbf2befd902ae6c1b41dd1d92c41cd85f72eb201c8c94d` | 9624 | 2026-08-27 | <https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/22-zberezhennya-stanu.md> |
@@ -45,6 +49,7 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `29c3915f-dac_channel.h` | `be419853c03c4a41c875b89440db25bb958b6519b29bd6698f7836789c26d0e3` | 301 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/dac_channel.h> |
 | `2c2a9ac3-esp_camera.c` | `0bc8fb0cc5e313f394df19fe3f7827bc2d4a209b6e8e9ee5b8fea4aa1b5e5e8d` | 15785 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp32-camera/master/driver/esp_camera.c> |
 | `2d77306d-esp_err.h` | `dcea6a47531d34026f988052a143fd3a9a9af4b176dbc86931dc3c519275afad` | 6648 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_common/include/esp_err.h> |
+| `2fc2210c-BuildOpt.h` | `acfd654c8c84c5b0963be4badf6628bbcbff05eea27cc46977bf6b7785346de7` | 29734 | 2026-08-28 | <https://raw.githubusercontent.com/jgromes/RadioLib/master/src/BuildOpt.h> |
 | `3149eb19-Kconfig.spiram.common` | `0ea5bf089440c8cf32e2702fdfc690af1866f94f859339188dd6b450a3ce9812` | 10106 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_psram/Kconfig.spiram.common> |
 | `31a9c838-esp_now.h` | `e62b442c983508bfffd849ed4807adb121b8e465256d46bc45fd143ca9458fff` | 16585 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_wifi/include/esp_now.h> |
 | `32f3b211-index.rst` | `6eef7569eed2a3d0f9a76eb5573638cec4f6e7c305b26d730f357d8196e0b5bf` | 10686 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst> |
@@ -96,6 +101,7 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `6ca4869a-README.md` | `926b8898988aa3098d8c5b88faf2cdf386104a3ed98e2299b957174eb45c3530` | 6570 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/README.md> |
 | `7050ead2-README.md` | `ff4e00581deaa1c52e82d864d961e19e4507bb9845a1e7b69402887cb312b59a` | 8488 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/ESP8266_RTOS_SDK/master/README.md> |
 | `709bb93a-partitions_singleapp.csv` | `e829387dc93b09b655e5ba558bb317a798ab7378834facad2621602126d7b510` | 268 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/partitions_singleapp.csv> |
+| `710f412b-bootloader.rst` | `fa10719e3ce94193a4d2cb265aaa9ce957077982ae04844f164b86963bc4322f` | 20757 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst> |
 | `71ff84df-configure-builtin-jtag.rst` | `da009a3efa54e7d4eb9c77b45102ed966bc8b10a7497e3b1cc6e2e048a42a51d` | 2339 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/jtag-debugging/configure-builtin-jtag.rst> |
 | `776c3ac3-esp32c3.inc` | `c29bdf64f80d3cb4e78805ed54f561642d4044782819d969ee2661ef14d599e3` | 2779 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/peripherals/gpio/esp32c3.inc> |
 | `77d6f436-SUPPORT_POLICY.md` | `92c2bddc00d371eb3b25a29203b31728d321e0884fe3c16f3a6843bfbc4b1a8c` | 3714 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/SUPPORT_POLICY.md> |
@@ -145,15 +151,18 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `bc8cb0e0-adc_channel.h` | `faf3bcd5d1c67ccef399570de0cc33d0b4a659b5be7ad4e26309c2ade0cca68e` | 1393 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/adc_channel.h> |
 | `bcbe4267-soc_caps.h` | `4a4bc2445cba6462d7815d04bfe2971989d20c0e612ee6390576b213c8cdcbcf` | 21682 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h> |
 | `bdb9ac1e-index.rst` | `7f816c85fff1e5088466f2d096bdf1030ba5ad4d47bd63272c6bdefde3bcbb90` | 3955 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst> |
+| `bf736954-addressmap.h` | `cb20d3a0d31dbce8af4f36a75c3a26071240f952aaa22b447b2627023a3423fb` | 2528 | 2026-08-28 | <https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h> |
 | `bme280.c` | `7de1e7d3082b85e90db1daa34573ba77553a7caf44e06e216de5216b7ed4fa12` | 51082 | 2026-08-27 | <https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c> |
 | `bme280.pdf` | `a2ccdb449fec94380742fe8eec851a11d9bd4142252d332b34682b4deecd7d89` | 1663806 | 2026-08-26 | <https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf> |
 | `bmp280.pdf` | `473ff27d9df698b4757e36b36209f83b9f637b592c999d5fabe2a9453a488da6` | 1162932 | 2026-08-26 | <https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp280-ds001.pdf> |
 | `bootloader.rst` | `fa10719e3ce94193a4d2cb265aaa9ce957077982ae04844f164b86963bc4322f` | 20757 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/bootloader.rst> |
 | `c02027a1-nvs_flash.rst` | `b796a8f4e898e9c0a2216d95951dec2f85531a51a0236f8f155c054e35d65880` | 25634 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/storage/nvs_flash.rst> |
 | `c1dac4f3-adc_channel.h` | `49ff0a392448cb91d01e6b30560c82828eaf3ead0e80fc4797caecc1353cd9d9` | 1400 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/adc_channel.h> |
+| `c35a363b-soc_caps.h` | `75737caec065cf66e156cc448b0efb4e5a154dbb3fe41b3cbc79b5ebb476879f` | 27572 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c6/include/soc/soc_caps.h> |
 | `c422916b-twai_types_deprecated.h` | `e5b2a36a0829fde4ec9c1a27c0de8aea2edab014550a87d428416e569b5042be` | 10054 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/hal/include/hal/twai_types_deprecated.h> |
 | `c44defff-README.md` | `3e26c4e3b04150a9fee8bf697213c3198658defee10be3eabf7ae79a436a071c` | 1701 | 2026-08-28 | <https://raw.githubusercontent.com/olikraus/u8g2/master/README.md> |
 | `c8b1c1ab-i2c_master.h` | `4fbecba854d042cede1a58112b2001e3e5a640f05073d1c5f6c97a0774c6c7cd` | 19110 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/include/driver/i2c_master.h> |
+| `c9760bee-ble_att.h` | `bef359157c2b8fa3a812b46fdd00454c31b525dd9923a280139523e934c728dd` | 11370 | 2026-08-28 | <https://raw.githubusercontent.com/apache/mynewt-nimble/master/nimble/host/include/host/ble_att.h> |
 | `cba6afa2-coexist.rst` | `5f88ae5255023a82a8875541b06f6f820a35091e04ae6db839a296fb95eeacf5` | 19574 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/coexist.rst> |
 | `cdc-acm.c` | `0c9bca8f51278dcb87a952889cbd23f459cf0ea8d2a3d84cd2b8a2d08a941029` | 61131 | 2026-08-26 | <https://raw.githubusercontent.com/torvalds/linux/master/drivers/usb/class/cdc-acm.c> |
 | `ch340.pdf` | `04c805e8242885fd1cf21f05dbfd9d16b9fa38f0439ce0d3c6d7f74ebe4cf4af` | 147893 | 2026-08-26 | <https://cdn.sparkfun.com/datasheets/Dev/Arduino/Other/CH340DS1.PDF> |
@@ -297,5 +306,5 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `vtc6.pdf` | `ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08` | 275509 | 2026-08-26 | <https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx> |
 | `wdts.rst` | `aab5499bba67e15e1327504328a9aa74ab88c82cb90f9c27d500d5b5d773c6af` | 16181 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst> |
 
-Файлів: **283**, разом **128.1 МБ** (межа 1.0 ГБ).
+Файлів: **290**, разом **129.2 МБ** (межа 1.0 ГБ).
 
