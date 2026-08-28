@@ -1,38 +1,22 @@
 - id: T-36-088
-  verdykt: pidtverdzheno
-  fayl: manual/36-spi.md
-  cytata: |
-    **`max_transfer_sz`** у конфігурації шини має вміщати найбільшу передачу.
-  de: розділ "Ще три грабіжі" після абзацу про DMA
+  verdykt: ne_znayshov
+  dyvyvsya: 0d47365c-spi_master.rst, grep -i "max_transfer", 0 результатів
 
 - id: T-25-015
-  verdykt: pidtverdzheno
-  fayl: manual/25-log.md
-  cytata: |
-    `screen` · Вихід → `Ctrl+A`, потім `K`
-  de: таблиця "Монітори портів", рядок screen
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "screen", 0 результатів
 
 - id: T-K04-020
-  verdykt: pidtverdzheno
-  fayl: kartky/k04-boot.md
-  cytata: |
-    [[classic]] На платах ESP32-CAM кнопки `BOOT` немає взагалі: `GPIO0`
-    з'єднується з `GND` перемичкою на самій платі.
-  de: блок uvaha після опису запуску з перемичкою
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ESP32-CAM", 0 результатів
 
 - id: T-44-044
-  verdykt: pidtverdzheno
-  fayl: manual/44-neznayomyy-modul.md
-  cytata: |
-    **Для I²C** — адреса з datasheet, і одразу сканер (розділ 35): він
-    покаже реальну адресу, зніме питання про 7 чи 8 біт і підтвердить, що
-    модуль узагалі живий.
-  de: розділ "Крок 4. Адреса або протокол", перший абзац
+  verdykt: ne_znayshov
+  dyvyvsya: i2c-um10204.pdf, grep -i "I2C address configuration", 0 результатів
 
 - id: T-17-154
   verdykt: pidtverdzheno
-  fayl: manual/17-esptool.md
+  fayl: 0e93202b-loader.py
   cytata: |
-    У v4 ті самі рядки коротші — `Failed to start stub.` Шукати варто за
-    словом `stub`, а не за повним реченням.
-  de: розділ про warning про stub, другий абзац
+    Failed to start stub. Unexpected response
+  de: функція обробки помилок esptool

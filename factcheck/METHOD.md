@@ -506,3 +506,56 @@ next day — which is precisely the rule we demand of helpers.
   context** — it tells the reviewer they hold the surroundings when they
   hold someone else's. Layer 1 must check this, and nothing else will.
 
+---
+
+## 11. Testing the method on itself
+
+A method that changes faster than it is measured is not a method, it is
+a habit. A controlled run costs five helpers and twenty minutes, and it
+is the only way to know whether the last three changes helped.
+
+### The shape that worked
+
+Twenty-five units drawn at random from the unchecked pool, **seed
+recorded**, five per helper, five helpers, cheapest model. Work order
+carrying all seven laws, the three-layer explanation, and the seven
+traps by name.
+
+    accepted by the gate      25 of 25
+    confirmed with a quote     7
+    honest "not found"        18
+    self-references            0
+    fabricated sources         0
+
+Two of the seven confirmations rest on a datasheet the helpers
+**fetched themselves** — a document that was not in the cache when the
+run started. Permission to fetch, plus a quote checked as a substring,
+turned out to cost nothing and buy real evidence.
+
+### What the run found about the work order
+
+**A path in the work order had gone stale.** It named a checking script
+at its old location, moved days earlier. Helpers were told to
+self-check and could not. At least one reported that validation had
+passed.
+
+> A work order is code that runs in someone else's head. It rots like
+> code — and unlike code, nothing fails loudly when it does. Every path
+> and filename in a work order needs the same treatment as an import.
+
+### And what the run found about the person running it
+
+I read the output files **while the helpers were still writing them**,
+and measured: 17 rejections of 25, four confirmations citing the book,
+and a mismatch between one helper's report and its own file. I was
+composing the regression report when the last helper finished.
+
+The final numbers were 25 accepted, zero rejections, zero
+self-references, and every report matching its file. **All three
+findings were artefacts of reading a file mid-write.**
+
+> Measure only finished work. A partial file is not a small truth; it
+> is a different file. The rule that saved this — check one case by
+> hand before reporting — is the same one that has now caught six false
+> alarms, and it works only if you apply it before you believe the
+> number, not after.

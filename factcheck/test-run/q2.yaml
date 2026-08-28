@@ -1,0 +1,22 @@
+- id: T-44-078
+  verdykt: pidtverdzheno
+  fayl: esp32_datasheet_en.pdf
+  cytata: |
+    high-level input voltage 0.75 × vdd
+  de: Table 5-3 DC Characteristics shows GPIO input voltage requirements (0.75-1.0 VDD max), confirming 3.3V design and rejecting 5V
+
+- id: T-19-027
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, searched for firmware size specifications, not found in technical specs
+
+- id: T-20-064
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, searched for bootloader and cpu_start diagnostic information, not found
+
+- id: T-23-023
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, module naming convention (N8, N16R8 suffix) documentation not found
+
+- id: T-26-100
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, Core dump menuconfig setup guide not found in datasheet

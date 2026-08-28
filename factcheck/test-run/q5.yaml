@@ -1,0 +1,30 @@
+- id: T-58-020
+  verdykt: pidtverdzheno
+  fayl: 20a9a363-rtc.h
+  cytata: |
+    RESET_REASON rtc_get_reset_reason(int cpu_no);
+  de: функція для отримання причини скидання CPU, рядок 161
+
+- id: T-38-019
+  verdykt: pidtverdzheno
+  fayl: 8ee48ffb-sn65hvd230.pdf
+  cytata: |
+    Operates with a single 3.3 V Supply
+  de: Features, перший пункт опису
+
+- id: T-08-043
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i 'N8\|N16R8\|DevKitC', 0 влучань
+  de: Варіанти за пам'яттю (N8, N16R8) для DevKitC-1
+
+- id: T-48-050
+  verdykt: ne_znayshov
+  dyvyvsya: esp32-s3_datasheet_en.pdf, grep -i 'servo\|pulse\|timing', 0 влучань
+  de: Точні межи мс для імпульсних сигналів серво
+
+- id: T-COM-047
+  verdykt: pidtverdzheno
+  fayl: 8ee48ffb-sn65hvd230.pdf
+  cytata: |
+    Operates with a single 3.3 V Supply
+  de: Features, підтверджує правильність 3.3 В для SN65HVD230

@@ -1,25 +1,25 @@
 - id: T-53-079
   verdykt: ne_znayshov
-  dyvyvsya: esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf, grep -i 'measurement\|development\|board\|LED\|20mA', розділи з описом плати, повну інформацію про розробку на модулі не знайдено; 2368fbe2-power_management.rst, grep -i 'measurement\|development board', інформація про тестування на розробних платах відсутня
+  dyvyvsya: esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf, grep -i 'measurement\|development board\|LED\|20mA', поточні характеристики розробної плати; 2368fbe2-power_management.rst, grep -i 'measurement\|board', інформація про вимірювання на розробних платах не знайдена
 
 - id: T-08-020
   verdykt: pidtverdzheno
   fayl: esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf
-  quote: |
+  cytata: |
     Pins GPIO6 to GPIO11 on the ESP32-D0WD-V3/ESP32-D0WDR2-V3 chip are connected to the SPI flash integrated on the module and are not led out.
-  de: сторінка 12, примітка 2 до таблиці пінів
+  de: сторінка 12, таблиця 2-2 (примітка 2)
 
 - id: T-B-231
   verdykt: pidtverdzheno
-  fayl: 1001fdc6-freertos.rst
-  quote: |
-    All FreeRTOS ports in ESP-IDF map FreeRTOS memory allocation or free calls (e.g., pvPortMalloc() and pvPortFree()) to ESP-IDF heap API (i.e., heap_caps_malloc and heap_caps_free).
-  de: розділ "FreeRTOS Heap" - механізм виділення пам'яті з врахуванням фрагментації
+  fayl: 66e0626d-memory-types.rst
+  cytata: |
+    Due to some memory fragmentation issues caused by ROM, it is also not possible to use all available DRAM for static allocations - however the remaining DRAM is still available as heap at runtime.
+  de: розділ DRAM, обговорення того, як фрагментація впливає на виділення пам'яті
 
 - id: T-61-012
   verdykt: ne_znayshov
-  dyvyvsya: 8504f18b-esp_now.rst, grep -i '10\|ms\|delay\|transmission', інформація про час передачі 10 мс не знайдена; 31a9c838-esp_now.h, grep -i 'transmission\|delay\|time', специфічна інформація про 10 мс не знайдена
+  dyvyvsya: 8504f18b-esp_now.rst, grep -n 'transmission\|delay\|10.*ms', інформація про час передачі 10 мс не знайдена; 31a9c838-esp_now.h, grep -n 'wait_time\|transmission', конкретна інформація про час 10 мс відсутня
 
 - id: T-11-018
   verdykt: ne_znayshov
-  dyvyvsya: 08bbeb37-index.rst, grep -i 'branch\|version\|master', специфічна інформація про вказання гілки замість master не знайдена в цьому файлі
+  dyvyvsya: 08bbeb37-index.rst, grep -n 'branch\|version\|master\|concrete', рекомендації про вказання конкретної версії замість master не знайдені в цьому файлі

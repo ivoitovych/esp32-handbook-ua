@@ -1,0 +1,19 @@
+- id: T-09-078
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'monitor|screen' 0 влучань; це системна проблема, не специфіка ESP32
+
+- id: T-17-123
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'sudo|permissions' 0 влучань; це Linux рекомендація, не факт про ESP32
+
+- id: T-62-145
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i 'stop command' 0 влучань; твердження є архітектурною рекомендацією для проєкту
+
+- id: T-23-020
+  verdykt: ne_znayshov
+  dyvyvsya: 0a-esp8266ex_datasheet_en.pdf, grep -i 'different architecture|toolchain', 0 влучань
+
+- id: T-29-019
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -n 'BOOT|EN|GPIO0', розділ 3 Boot Configurations; посилання на картку К4 (внутрішня частина книги)
