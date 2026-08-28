@@ -1,0 +1,22 @@
+- id: T-36-088
+  verdykt: ne_znayshov
+  dyvyvsya: 0d47365c-spi_master.rst, grep -i "max_transfer", 0 результатів
+
+- id: T-25-015
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "screen", 0 результатів
+
+- id: T-K04-020
+  verdykt: ne_znayshov
+  dyvyvsya: esp32_datasheet_en.pdf, grep -i "ESP32-CAM", 0 результатів
+
+- id: T-44-044
+  verdykt: ne_znayshov
+  dyvyvsya: i2c-um10204.pdf, grep -i "I2C address configuration", 0 результатів
+
+- id: T-17-154
+  verdykt: pidtverdzheno
+  fayl: 0e93202b-loader.py
+  cytata: |
+    Failed to start stub. Unexpected response
+  de: функція обробки помилок esptool

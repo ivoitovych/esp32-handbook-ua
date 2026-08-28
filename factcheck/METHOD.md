@@ -132,6 +132,74 @@ When a check was finally written it found 6 genuine mismatches — and
 all six were that day's corrections, which is the best confirmation a
 check can give itself.
 
+
+---
+
+## 3-bis. Coverage: the layer that asks what is missing
+
+Three layers check what is **in** the registry. None of them asks what
+is **not**.
+
+The registry is generated from the book, so "does every unit have a
+card" is true by construction and worth nothing. The question that
+matters runs the other way:
+
+> **Does every line of the book become a unit?**
+
+Text the splitter never saw has no card, no class and no evidence — and
+does not appear in any count. It is not `unverified`; it is invisible. A
+book can report 100 % of its units checked while a chapter of it was
+never split at all.
+
+### Two kinds of accounting, and only together do they mean "in place"
+
+A line is accounted for if one of two things is known about it:
+
+* **a card** — the line carries a claim, and the claim is in the
+  registry;
+* **a structural ground** — the line is part of the book's construction,
+  and the script **verifies** that, rather than assuming it.
+
+The second was first proposed as cards with a status like "not subject
+to checking". That was rejected, and the reason is worth keeping.
+
+A card whose entire content is "this is a heading" carries nothing a
+script cannot derive from the line itself. Ninety-one such records add
+nothing to the registry but weight — and they introduce an **asserting
+verdict**, which on this project once collected a dumping ground
+(85–87 % of one such class turned out to be ordinary author's
+judgements).
+
+> **A structural ground is stronger than a card precisely because it is
+> re-checked on every run.** A card is written once and can go stale in
+> silence; a rule cannot. A heading that stops being a heading is
+> invisible to its card and visible to the script the same day.
+
+### The rule this generalises to
+
+> When a fact about the text can be **derived from the text**, it does
+> not need a record in the registry. A record is for a **judgement**
+> that cannot be derived.
+
+The registry then stays what it should be — a store of judgements and
+evidence — instead of a transcript of everything the book contains.
+
+**And the boundary, so the rule does not travel further than it should:**
+table cells and code lines keep their cards. A cell *carries a claim*
+("BME280 · Address → 0x76"); a heading does not. The line runs not
+along the shape of the row but along whether there is anything to prove.
+
+### Structure is verified, not assumed
+
+A heading counts only if the line matches a heading pattern, the anchors
+referenced elsewhere exist, the number in the title equals the number in
+the filename, and every "chapter NN" reference resolves.
+
+Measured on this book: 639 chapter references, 0 broken; 13 anchor
+links, 0 broken; 0 number mismatches. **The structural check finds
+nothing today** — it is a regression guard, and saying so is part of
+reporting it honestly.
+
 ---
 
 ## 4. Laws of writing a work order
@@ -350,6 +418,28 @@ other direction, flagged seven fabricated document names of which
   One number called "unreachable" hides that difference, and the
   remainder then looks like a debt when part of it is nobody's.
 
+- **A wrong machine-readable pointer is worse than prose.** Prose
+  honestly says "a human will work it out"; a pointer promises
+  verifiability and lies. Resolving 201 prose sources by name similarity
+  produced 172 pointers, of which **73 named the wrong document** —
+  a driver instead of a datasheet, one battery instead of another.
+  All 137 that did not verify were reverted.
+- **Resolve a source only by checking that the quote is actually
+  there**, never by "the name looks similar". The same rule as for
+  document names, approached from the other end.
+- **A URL can be recovered by verification even when it cannot be
+  derived.** Cache filenames carry eight hex characters of the URL's
+  hash, which is one-way — but candidate URLs can be generated and
+  hashed until one matches. Twenty-five of thirty-two were recovered
+  this way with certainty, where guessing by name had failed.
+- **The manifest can register the book as a source.** Seven book files
+  were removed from the cache and four came back with the next
+  download, because eight manifest rows pointed at the book's own raw
+  URLs. Removing the effect while leaving the cause is postponement,
+  not repair — and it was only noticed because the download ran again
+  the next day.
+
+
 ---
 
 ## 8. Working in pairs
@@ -407,3 +497,65 @@ next day — which is precisely the rule we demand of helpers.
 - **A pattern read from someone else's format must live in one place
   with whoever writes that format.** A copy of a pattern is a promise
   not to change the format that nobody made.
+- **A check that normalises presentation must not eat content.** A rule
+  joining hyphenated line breaks (`-\s*\n\s*` → nothing) also deleted
+  **em-dashes at end of line**, and 127 cards appeared to have a context
+  that did not contain their own claim. Join only a true word break:
+  a hyphen flush between letters.
+- **A context that does not contain its own claim is worse than no
+  context** — it tells the reviewer they hold the surroundings when they
+  hold someone else's. Layer 1 must check this, and nothing else will.
+
+---
+
+## 11. Testing the method on itself
+
+A method that changes faster than it is measured is not a method, it is
+a habit. A controlled run costs five helpers and twenty minutes, and it
+is the only way to know whether the last three changes helped.
+
+### The shape that worked
+
+Twenty-five units drawn at random from the unchecked pool, **seed
+recorded**, five per helper, five helpers, cheapest model. Work order
+carrying all seven laws, the three-layer explanation, and the seven
+traps by name.
+
+    accepted by the gate      25 of 25
+    confirmed with a quote     7
+    honest "not found"        18
+    self-references            0
+    fabricated sources         0
+
+Two of the seven confirmations rest on a datasheet the helpers
+**fetched themselves** — a document that was not in the cache when the
+run started. Permission to fetch, plus a quote checked as a substring,
+turned out to cost nothing and buy real evidence.
+
+### What the run found about the work order
+
+**A path in the work order had gone stale.** It named a checking script
+at its old location, moved days earlier. Helpers were told to
+self-check and could not. At least one reported that validation had
+passed.
+
+> A work order is code that runs in someone else's head. It rots like
+> code — and unlike code, nothing fails loudly when it does. Every path
+> and filename in a work order needs the same treatment as an import.
+
+### And what the run found about the person running it
+
+I read the output files **while the helpers were still writing them**,
+and measured: 17 rejections of 25, four confirmations citing the book,
+and a mismatch between one helper's report and its own file. I was
+composing the regression report when the last helper finished.
+
+The final numbers were 25 accepted, zero rejections, zero
+self-references, and every report matching its file. **All three
+findings were artefacts of reading a file mid-write.**
+
+> Measure only finished work. A partial file is not a small truth; it
+> is a different file. The rule that saved this — check one case by
+> hand before reporting — is the same one that has now caught six false
+> alarms, and it works only if you apply it before you believe the
+> number, not after.
