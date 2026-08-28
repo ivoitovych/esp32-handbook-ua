@@ -21,15 +21,15 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Twelve of the twenty-four kinds below are one family. The check runs, it
+Thirteen of the twenty-five kinds below are one family. The check runs, it
 returns a number, and the number means nothing — because it was never
 measuring the thing its name claims.
 
 > **Zero looks the same whether all is well or the counter is counting
 > nothing.** And it is read as the first, every time.
 
-Three of the twelve were added the same day and sharpen the family, each
-by weakening an assumption the earlier ones still made:
+Four of the thirteen were added the same day and sharpen the family,
+each by weakening an assumption the earlier ones still made:
 
 - kind 22 — the number need not be **zero**. An unchanged number is a
   better disguise than a zero, because a zero at least invites the
@@ -38,6 +38,9 @@ by weakening an assumption the earlier ones still made:
   expression can keep the exact shape of a fallback and not be one.
 - kind 24 — the check need not be **passing**. It can be red, correct,
   and uncalled, which is the same thing as green.
+- kind 25 — the number need not be **wrong at all**. A correct count of
+  a bucket holding two different worlds is a false statement that no
+  counter can contradict.
 
 The rule that follows from the family governs every contribution here:
 
@@ -406,6 +409,21 @@ not just the fields a status demands (demonstrated on a fabricated
 state). Divergence between copies is checked by comparing all pairs;
 the contraction step removes the second copy for good.
 
+**A second substrate, same shape.** The source cache's manifest — the
+only part of the cache that is in git — records one row per file:
+name, sha256, URL. A change to the filename rule **appended** a row
+instead of replacing one, so **78 URLs are recorded twice**, under the
+old name and the new. 357 rows for 276 URLs.
+
+The rows are sorted by filename, so the hash-prefixed name sorts first
+— and in any given container that is precisely the name the file is
+*not* under. Reading "the first row for this URL" would have been
+worse than not reading the manifest at all.
+
+> The right question is not *which name is recorded* but *which name
+> the file is under here*. An index with two entries answers the first
+> question confidently and the second one wrongly.
+
 ## 20. One unit carrying two claims
 
 **Symptom.** A unit states two things. Evidence settles one. The unit's
@@ -559,6 +577,39 @@ nothing listens is no different either.**
 `make intake` exists as a target but is deliberately **not** in `check`
 while its 21 findings are worked through; that is a stated exception
 with a date, not an omission.
+
+## 25. Two states of the world under one word
+
+**Symptom.** A report has one bucket for two situations that call for
+opposite actions. Because the count is right, nothing looks wrong.
+
+**Case.** Layer 3 reported **162 records** as *source not in cache*.
+That phrase covered two entirely different worlds:
+
+- the source is genuinely unreachable — an organisation-level `403`,
+  nothing to be done from this container, correctly a work order;
+- the file is sitting right there, under the previous generation of the
+  filename rule, and the tool derived the new name and did not find it.
+
+**108 of the 162 were the second.** Their evidence was unverifiable for
+as long as the two shared a word, and the queue built from that bucket
+sent people to fetch documents that were already on disk.
+
+Reading the name from the manifest instead of deriving it moved 108
+records out of the bucket in one change: verified 407 → 538, not in
+cache 162 → 54.
+
+> A bucket is a claim about the world. Two worlds in one bucket is a
+> false claim that no counter can contradict, because the counter is
+> right.
+
+**Held by.** `citaty.py` already separates *file present but
+unreadable*, *stub served instead of a document*, and *file absent* —
+each its own state, for exactly this reason. The filename case is now
+closed at the source: the manifest is authoritative for the name, so
+absence means absence. What remains unheld is the general principle;
+nothing detects a newly-merged pair of states except reading the
+report and asking what each number is a count of.
 
 ---
 
