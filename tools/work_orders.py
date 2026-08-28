@@ -62,7 +62,7 @@ import factcheck  # noqa: E402  — після sys.path
 CIL = ROOT / "factcheck" / "BRIEF-QUOTES.md"
 NA_PAKET = 5
 
-ZAHOLOVOK = """# Наряд: {skilky} цитат, яких немає в джерелі
+ZAHOLOVOK_RAMKA = """# Наряд: {skilky} цитат, яких немає в джерелі
 
 **Генерується** `tools/work_orders.py`. Питання **не** про цитату.
 
@@ -77,40 +77,27 @@ ZAHOLOVOK = """# Наряд: {skilky} цитат, яких немає в дже�
 Цитата може бути причесана, а факт — правильний. Може бути й навпаки:
 причесування іноді ховає те, що джерело каже щось інше. Книга йде в
 друк, тож нас цікавить саме другий випадок.
-
-По кожному запису:
-
-1. завантаж джерело (`curl` на `raw.githubusercontent.com`);
-2. знайди місце, про яке йдеться;
-3. відповідай **одним із трьох**:
-
-| Вердикт | Коли |
-|---|---|
-| `pidtverdzheno` | джерело каже те саме; наведи **дослівний** рядок звідти |
-| `sperechayetsya` | джерело каже **інакше** — це знахідка, опиши точно |
-| `ne_vyrishyv` | джерело недосяжне або місця не знайшов |
-
-`sperechayetsya` — те, заради чого це робиться. Не бійся його ставити:
-книгу ще можна виправити. Але став його, лише коли **бачиш** інший
-текст, а не коли пам'ятаєш інакше.
-
-Цитату копіюй дослівно: вона перевіряється підрядком.
-
-**YAML:** якщо значення містить `: ` або починається з лапки — бери все
-значення в одинарні лапки.
-
-Формат:
-
-```yaml
-- zapys: pass-26-strapping
-  nazva: Рівні strapping і недійсна комбінація — усі сімейства
-  verdykt: pidtverdzheno
-  dzherelo: https://raw.githubusercontent.com/...
-  cytata: |
-    дослівний рядок із джерела
-  komentar: одне речення
-```
 """
+
+# Спільні правила беруться з `factcheck/TASK-SPEC.md`, а не
+# переписуються тут. До появи спеки їх було сім копій, і
+# збігалося в усіх сімох рівно одне правило з восьми.
+ZAHOLOVOK_BLOKY = ['ORIENTATION', 'VERBATIM', 'HONEST-MISS', 'NETWORK', 'STUB', 'VERDICTS-VERDICT-TEST', 'NO-SELF-REFERENCE', 'FORMAT']
+
+
+def zaholovok(**kw) -> str:
+    """Наряд: рамка цієї партії плюс спільні блоки завдання.
+
+    Підстановка **заміною**, а не `.format`: у рамці стоять
+    справжні фігурні дужки ESP-IDF (`{IDF_TARGET_...}`), і
+    `format` на них падає з KeyError.
+    """
+    import task_spec
+    ramka = ZAHOLOVOK_RAMKA
+    for k, v in kw.items():
+        ramka = ramka.replace("{" + k + "}", str(v))
+    return task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka)
+
 
 
 def zapysy() -> dict[tuple[str, str], dict]:
@@ -287,7 +274,7 @@ def main() -> int:
     # `.replace`, а не `.format`: у тексті наряду стоять справжні
     # фігурні дужки ESP-IDF (`{IDF_TARGET_...}`), і `format` на них
     # падає з KeyError.
-    r = [ZAHOLOVOK.replace("{skilky}", str(len(bidy))).rstrip("\n")]
+    r = [zaholovok(skilky=len(bidy)).rstrip("\n")]
     for i, n in enumerate(bidy):
         if i % NA_PAKET == 0:
             r.append(f"\n## Пакет {i // NA_PAKET + 1}\n")
