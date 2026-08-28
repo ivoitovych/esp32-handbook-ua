@@ -74,13 +74,56 @@ by number.
 
     A  primary verbatim    — source obtained, line quoted
     B  primary derived     — source obtained, conclusion unambiguous
-    C  named-unreachable   — source named, text not held
     D  arithmetic          — checked by calculation
+    C  named-unreachable   — source named, text not held
+    S  internal            — checked against ANOTHER PLACE IN THIS BOOK
+    L  looked-not-found    — a document was opened; the source was not in it
     E  no external signal  — the text carries nothing checkable
-    F  unverified          — nobody has reached it yet
     G  refuted             — the source says otherwise
+    F  unverified          — nobody has reached it yet
 
-Strength for picking the best evidence: `A < B < D < C < E < G < F`.
+    K  context             — a whole code block; not a claim, and not counted
+
+Strength for picking the best evidence, in the order printed above:
+`A < B < D < C < S < L < E < G < F`. The list is deliberately printed in
+strength order rather than alphabetically, because the order is the part
+that gets used.
+
+### `S` and `L` exist because two kinds of real work had nowhere to go
+
+Both were added late, and both for the same reason: a maintainer had
+done work, and the vocabulary forced them to record it as something it
+was not.
+
+**`S` — the book checked against itself.** Prose against the book's own
+code, a summary against its own table. It says nothing about the world:
+the book can be wrong in both places at once. But it says something
+checkable about the book, and it is checkable *mechanically*, by layer 3
+run against the book instead of a document.
+
+The two wrong answers, and why each is wrong:
+
+* `E` loses the information that **a check was made and it agreed**;
+* `A` is wrong more expensively — it enters the "verified against a
+  source" figure, which is the number the reader sees first.
+
+So `S` is counted and reported **on its own line**, never inside
+`A + B + D`.
+
+**`L` — a document was opened and the source was not in it.** A report
+of work, not a verdict about the world: weaker than `C` (which names a
+document that could still settle the question), stronger than `E`
+(which asserts). It requires naming what was opened.
+
+> The general rule both of them come from: **when honest work has no
+> legal way to be recorded, it gets recorded as something false.** A
+> vocabulary that is missing a state does not produce blank fields; it
+> produces wrong ones.
+
+The same gap is still open in one place, found by a helper rather than
+by us: there is no verdict for **proof by absence** — "I opened the
+source and the thing is demonstrably not there", which is how a
+negative claim about a chip's features is actually established.
 
 **`E` does not say "no source exists".** It says the *rule fired*: this
 text holds no number, identifier or part name to check against. That
