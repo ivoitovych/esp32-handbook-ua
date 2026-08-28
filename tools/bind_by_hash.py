@@ -75,9 +75,9 @@ DOKAZY = ROOT / "factcheck" / "dokazy"
 def zibraty() -> tuple[list[dict], dict[str, list[str]]]:
     """Records with a stable key, and what each currently binds."""
     import factcheck
-    import vybirka
+    import sample
 
-    odyn = [u for k in factcheck.USI_KLASY for u in vybirka.odynyci(k)]
+    odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
     zapysy: list[dict] = []
     for f in sorted(DOKAZY.glob("*.yaml")):
         try:

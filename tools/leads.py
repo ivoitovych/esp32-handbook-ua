@@ -118,12 +118,12 @@ PIDPYSY_V = {
 
 def zvesty(katalogy: list[str]) -> int:
     """Звести відпрацьовані сліди, пропустивши `znayshov` через шар 3."""
-    import vyvantazh
+    import helper_dumps
     import yaml
 
     zap = []
     for k in katalogy:
-        chastyna, _, _ = vyvantazh.chytaty(Path(k))
+        chastyna, _, _ = helper_dumps.chytaty(Path(k))
         zap += chastyna
 
     kand = [{"title": str(z.get("odynycya", "?")),
@@ -140,8 +140,8 @@ def zvesty(katalogy: list[str]) -> int:
     stany: dict[str, str] = {}
     if kand:
         try:
-            import citaty
-            naslidky, _ = citaty.perevirka(True, [KANDYDATY])
+            import layer3
+            naslidky, _ = layer3.perevirka(True, [KANDYDATY])
             stany = {str(n.get("nazva")): str(n.get("stan"))
                      for n in naslidky}
         except ImportError:
@@ -213,7 +213,7 @@ def main() -> int:
     if "--zvit" in sys.argv:
         i = sys.argv.index("--zvit")
         return zvesty(sys.argv[i + 1:])
-    import vyvantazh
+    import helper_dumps
 
     # Кілька каталогів: сліди дає і штурм, і міра, і кожна наступна
     # хвиля. Збирати їх поодинці означає щоразу губити попередні.
@@ -221,7 +221,7 @@ def main() -> int:
     for katalog in sys.argv[1:]:
         if katalog.startswith("-"):
             continue
-        chastyna, _, _ = vyvantazh.chytaty(Path(katalog))
+        chastyna, _, _ = helper_dumps.chytaty(Path(katalog))
         zap += chastyna
     ideyi = [z for z in zap if str(z.get("verdykt")) == "ideya"]
     prydatni = [z for z in ideyi

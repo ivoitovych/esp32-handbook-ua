@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Суцільний прохід: наряди на **всю** решту, згруповані за темою.
 
-## Навіщо окремо від `vybirka.py`
+## Навіщо окремо від `sample.py`
 
 `vybirka` бере випадкову вибірку — щоб **міряти**. Тут завдання інше:
 пройти все, що лишилося, по одному разу, щоб жодна одиниця не лишилася
@@ -278,8 +278,8 @@ SHAPKA = """# Наряд {nomer}: суцільний прохід — {skilky} �
 
 
 def main() -> int:
-    import podil
-    import vybirka
+    import split_queue
+    import sample
 
     if len(sys.argv) < 2:
         print(__doc__)
@@ -287,9 +287,9 @@ def main() -> int:
     kudy = Path(sys.argv[1])
     kudy.mkdir(parents=True, exist_ok=True)
 
-    e1, _e2, _s1, _s2 = podil.podil_e()
+    e1, _e2, _s1, _s2 = split_queue.podil_e()
     moyi = set(e1)
-    vsi = vybirka.odynyci("E") + vybirka.odynyci("F")
+    vsi = sample.odynyci("E") + sample.odynyci("F")
 
     # Групуємо за розділом книги — саме це робить пакет дешевим.
     za_rozdilom: dict[str, list[dict]] = collections.defaultdict(list)

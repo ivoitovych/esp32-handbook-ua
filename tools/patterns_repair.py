@@ -58,7 +58,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 import yaml  # noqa: E402
 import factcheck  # noqa: E402
-import vybirka  # noqa: E402
+import sample  # noqa: E402
 
 LEKSEMA = re.compile(r"[0-9A-Za-zА-Яа-яЇїІіЄєҐґ_.\-]{3,}")
 POROG = 0.34      # мінімальна частка спільних лексем
@@ -90,7 +90,7 @@ def main(argv: list[str]) -> int:
     # коментар при `USI_KLASY`: копія переліку — така сама обіцянка
     # не міняти його, як копія взірця.
     for klas in factcheck.USI_KLASY:
-        for o in vybirka.odynyci(klas):
+        for o in sample.odynyci(klas):
             odynyci.append((o["tekst"], leksemy(o["tekst"])))
 
     teksty = [t for t, _ in odynyci]

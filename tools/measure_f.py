@@ -52,7 +52,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 import yaml  # noqa: E402
 
-import vyvantazh  # noqa: E402
+import helper_dumps  # noqa: E402
 
 ZVIT = ROOT / "factcheck" / "MEASURE-UNCHECKED.md"
 
@@ -165,8 +165,8 @@ def promizhok(k: int, n: int) -> tuple[float, float]:
 
 
 def populyaciya() -> int:
-    import vybirka
-    return len(vybirka.odynyci("F"))
+    import sample
+    return len(sample.odynyci("F"))
 
 
 def main() -> int:
@@ -174,7 +174,7 @@ def main() -> int:
         print(__doc__)
         return 2
 
-    zap, polagodzheni, zlamani = vyvantazh.chytaty(Path(sys.argv[1]))
+    zap, polagodzheni, zlamani = helper_dumps.chytaty(Path(sys.argv[1]))
     n = len(zap)
     if not n:
         print("mira_f: вивантажень не знайдено")
@@ -223,8 +223,8 @@ def main() -> int:
     stany: dict[str, str] = {}
     if kand:
         try:
-            import citaty
-            naslidky, _ = citaty.perevirka(True, [KANDYDATY])
+            import layer3
+            naslidky, _ = layer3.perevirka(True, [KANDYDATY])
             stany = {str(x.get("nazva")): str(x.get("stan"))
                      for x in naslidky}
         except ImportError:

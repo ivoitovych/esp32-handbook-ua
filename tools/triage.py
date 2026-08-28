@@ -17,7 +17,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
 import yaml  # noqa: E402
-import vybirka  # noqa: E402
+import sample  # noqa: E402
 
 spec = importlib.util.spec_from_file_location("nm", ROOT / "tools" / "naryad-m2.py")
 nm = importlib.util.module_from_spec(spec)
@@ -45,7 +45,7 @@ def main(argv: list[str]) -> int:
     fayly = nm.kesh_fayly()
     bez = []
     for klas in ("C", "F", "E"):
-        for o in vybirka.odynyci(klas):
+        for o in sample.odynyci(klas):
             if o["id"] in vzhe:
                 continue
             if not nm.pidibraty(o["tekst"], fayly):

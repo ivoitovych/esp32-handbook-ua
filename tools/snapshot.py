@@ -81,9 +81,9 @@ def zibraty(za: str = "sha") -> dict[str, list[str]]:
     «Чому якір — вміст, а не номер».
     """
     import factcheck
-    import vybirka
+    import sample
 
-    odyn = [u for k in factcheck.USI_KLASY for u in vybirka.odynyci(k)]
+    odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
 
     # Ключ запису мусить пережити перевпорядкування файлу, тож у ньому
     # стоїть порядковий номер: назви в межах файлу повторюються, і без

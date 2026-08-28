@@ -16,8 +16,8 @@
 переважно редакційне, але механічно відрізнити його від фактичного не
 вдається, тож вони чекають на суцільні проходи, а не на поділ.
 
-    tools/podil.py            зведення
-    tools/podil.py --naryad   згенерувати factcheck/SPLIT.md
+    tools/split_queue.py            зведення
+    tools/split_queue.py --naryad   згенерувати factcheck/SPLIT.md
 """
 from __future__ import annotations
 
@@ -132,10 +132,10 @@ def podil_za_fajlamy(klasy: tuple[str, ...]) -> tuple[list[str], list[str], int,
 
         C+F  1935 одиниць у 91 файлі → 968 / 967, перетин 0
     """
-    import vybirka
+    import sample
     za: dict[str, int] = collections.Counter()
     for k in klasy:
-        for u in vybirka.odynyci(k):
+        for u in sample.odynyci(k):
             za[u["src"].split("/")[-1].split(":")[0]] += 1
     m1: list[str] = []
     m2: list[str] = []
@@ -161,9 +161,9 @@ def podil_e() -> tuple[list[str], list[str], int, int]:
     і розкидала той самий файл по обидва боки, тобто робила рівно те,
     від чого мала берегти. Перетин тепер перевіряється явно.
     """
-    import vybirka
+    import sample
     za: dict[str, int] = collections.Counter(
-        u["src"].split("/")[-1].split(":")[0] for u in vybirka.odynyci("E"))
+        u["src"].split("/")[-1].split(":")[0] for u in sample.odynyci("E"))
     m1: list[str] = []
     m2: list[str] = []
     s1 = s2 = 0
@@ -185,8 +185,8 @@ def remonty() -> list[tuple[str, str, int, str]]:
     відсотки брешуть — а реєстр, який брешe про себе, гірший за менший
     чесний.
     """
-    import citaty
-    naslidky, _ = citaty.perevirka(False)
+    import layer3
+    naslidky, _ = layer3.perevirka(False)
     lich = collections.Counter(str(n.get("stan")) for n in naslidky)
     return [
         ("обидва", "цитата не збігається", lich.get("ne_znaydeno", 0),
@@ -233,7 +233,7 @@ def naryad() -> int:
     m2 = sum(len(v) for k, v in rozklad.items() if k.startswith("M2"))
     r = [
         "# Поділ незвіреного між супровідниками\n",
-        "**Генерується** `tools/podil.py --naryad`. Правити вручну нема "
+        "**Генерується** `tools/split_queue.py --naryad`. Правити вручну нема "
         "сенсу.\n",
         "Поділ за одним питанням: **у якому джерелі лежить відповідь**. "
         "ESP-IDF, esptool і заголовки `soc/` дістаються з контейнера М1; "

@@ -169,7 +169,7 @@ SHAPKA = """# Наряд {n}: {tema} — {k} одиниць
 
 
 def main() -> int:
-    import vybirka
+    import sample
 
     p = argparse.ArgumentParser()
     p.add_argument("kudy", type=Path)
@@ -178,7 +178,7 @@ def main() -> int:
     a.kudy.mkdir(parents=True, exist_ok=True)
 
     za: dict[str, list[dict]] = collections.defaultdict(list)
-    for u in vybirka.odynyci("F"):
+    for u in sample.odynyci("F"):
         if not RE_DOSYAZHNE.search(u["tekst"]):
             continue
         pref = u["src"].split("/")[-1][:2]

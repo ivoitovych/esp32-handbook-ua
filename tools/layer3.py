@@ -40,11 +40,11 @@
 
 Він каже рівно одне: **цей текст справді стоїть за цією адресою.**
 
-    tools/citaty.py            перевірити все, що є в кеші
-    tools/citaty.py --kachaty  спершу докачати те, чого бракує
-    tools/citaty.py --zvit     згенерувати factcheck/QUOTES.md
-    tools/citaty.py --suvoro   недосяжне джерело теж помилка
-    tools/citaty.py <файл.yaml>  перевірити вивантаження помічника
+    tools/layer3.py            перевірити все, що є в кеші
+    tools/layer3.py --kachaty  спершу докачати те, чого бракує
+    tools/layer3.py --zvit     згенерувати factcheck/QUOTES.md
+    tools/layer3.py --suvoro   недосяжне джерело теж помилка
+    tools/layer3.py <файл.yaml>  перевірити вивантаження помічника
 
 Останнє — головне для роботи з пулом. Помічник кладе зібране у
 власний файл, цей скрипт його звіряє, і лише те, що пройшло, розглядає
@@ -897,7 +897,7 @@ def perevirka(kachaty: bool,
 
 ZAHOLOVOK_ZVITU = """# Третій шар: цитати проти джерел
 
-**Генерується** `tools/citaty.py --zvit`. Правити вручну нема сенсу.
+**Генерується** `tools/layer3.py --zvit`. Правити вручну нема сенсу.
 
 Перевірено механічно: чи справді уривок, наведений у доказі, стоїть за
 названою адресою. Це **не** оцінка того, чи доказ доречний — це окреме
@@ -956,7 +956,7 @@ def main() -> int:
     naslidky, pidsumok = perevirka(kachaty="--kachaty" in a, fayly=fayly)
     if "--zvit" in a and fayly is None:
         zvit(naslidky, pidsumok)
-        print(f"citaty: звіт у {ZVIT.relative_to(ROOT)}")
+        print(f"layer3: звіт у {ZVIT.relative_to(ROOT)}")
 
     for n in naslidky:
         if n["stan"] == "ne_znaydeno":
@@ -966,7 +966,7 @@ def main() -> int:
         elif n["stan"] == "pomylka":
             print(f"   ✗ {n['nazva']}  ({n['fayl']}) — {n['detali']}")
 
-    print(f"citaty: записів {sum(pidsumok.values())}; "
+    print(f"layer3: записів {sum(pidsumok.values())}; "
           f"звірено {pidsumok['ok']}; "
           f"не знайдено {pidsumok['ne_znaydeno']}; "
           f"не в кеші {pidsumok['nedosyazhne']}; "

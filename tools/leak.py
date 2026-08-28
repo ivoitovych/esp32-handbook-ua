@@ -154,9 +154,9 @@ def main() -> int:
         return samoperevirka()
 
     import factcheck
-    import vybirka
+    import sample
 
-    odyn = [u for k in factcheck.USI_KLASY for u in vybirka.odynyci(k)]
+    odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
     teksty = [u["tekst"] for u in odyn]
     zapysy = factcheck.zavantazhyty_dokazy()
     techi = znayty(zapysy, teksty)

@@ -262,7 +262,7 @@ of 85** when it was restored. What worked was not the prohibition — it
 was **explaining why the gate exists**, so the assistant could see its
 own constraints as reasonable rather than arbitrary.
 
-**Held by.** `citaty.py` fails on a fabricated source; the work-order
+**Held by.** `layer3.py` fails on a fabricated source; the work-order
 template keeps the gates section.
 
 ## 14. A heading mistaken for coverage
@@ -289,7 +289,7 @@ nothing does.
 **Case.** Six records were class `named-unreachable` with no source
 named, which `schema.py` flags (class `C` exists precisely to name the
 unreachable document). They were closed by changing the class to
-`unchecked` — which trips the older, stricter gate in `citaty.py`: an
+`unchecked` — which trips the older, stricter gate in `layer3.py`: an
 evidence record of class `F` asserts nothing at all, so it is not
 evidence.
 
@@ -474,7 +474,7 @@ Nothing looks wrong, because nothing moved. What moved is what the
 number is a count **of**.
 
 **Case.** Proposed by the other maintainer with a reproducible example.
-`citaty.py` decided whether a record was checkable with
+`layer3.py` decided whether a record was checkable with
 `maye_klas = "klas" in z` — a test for the presence of an **old field
 name**. Under the contraction dress rehearsal:
 
@@ -603,7 +603,7 @@ cache 162 → 54.
 > false claim that no counter can contradict, because the counter is
 > right.
 
-**Held by.** `citaty.py` already separates *file present but
+**Held by.** `layer3.py` already separates *file present but
 unreadable*, *stub served instead of a document*, and *file absent* —
 each its own state, for exactly this reason. The filename case is now
 closed at the source: the manifest is authoritative for the name, so

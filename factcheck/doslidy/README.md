@@ -28,7 +28,7 @@
 
     shuf --random-source=<(yes SEED) -n 100
 
-або, як у `tools/vybirka.py`, добір у Python із `random.seed(N)` і
+або, як у `tools/sample.py`, добір у Python із `random.seed(N)` і
 записаним `N`. Насіння **не з годинника** — інакше воно так само не
 повторюється.
 

@@ -114,7 +114,7 @@ def obydva(z: dict) -> dict:
 
 def main() -> int:
     import factcheck
-    import vybirka
+    import sample
 
     p = argparse.ArgumentParser()
     p.add_argument("vyzhyly", type=Path)
@@ -127,7 +127,7 @@ def main() -> int:
 
     reyestr: dict[str, dict] = {}
     for klas in factcheck.USI_KLASY:
-        for u in vybirka.odynyci(klas):
+        for u in sample.odynyci(klas):
             u["klas"] = klas
             reyestr[u["id"]] = u
     vsi_teksty = [u["tekst"] for u in reyestr.values()]
