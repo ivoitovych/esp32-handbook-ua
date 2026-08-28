@@ -191,8 +191,39 @@ SHAPKA = """# Наряд {n}: {tema} — {k} одиниць
 """
 
 
-def versiya_naryadu() -> str:
-    """Відбиток шаблону наряду — восьми знаків хешу тексту `SHAPKA`.
+RE_KONTEKST = re.compile(
+    r"<!-- fc id:(?P<id>\S+) sha:\S+ src:\S+ klas:\S+ -->\n"
+    r"### [^\n]*\n\n\*\*[^*\n]+\*\*\n\n(?P<tverd>(?:> [^\n]*\n)+)"
+    r"(?:.*?\*\*Контекст\*\*\n\n(?P<og>`{3,})\n(?P<kontekst>.*?)\n(?P=og)\n)?",
+    re.S)
+
+MISCE_V_POTOCI = """*Місце цієї картки в роботі, щоб було видно, навіщо вона.* Книгу
+розрізано на твердження; кожне має свій стан. Це — одне з тих, до яких
+ще ніхто не дійшов. Твоя відповідь стане його станом, і після тебе її
+перевірять машинно: цитату шукатимуть **підрядком** у документі, який
+ти назвав. Тому переказ гине, а чесне «не знайшов» лишається назавжди
+й економить роботу наступному."""
+
+
+def konteksty() -> dict[str, str]:
+    """`id` одиниці → її оточення в книзі, з уже зрендерених карток.
+
+    Береться з карток, а не з книги, навмисно: там контекст уже
+    обмежено й перевірено шаром 1. Другий видобувач розійшовся б із
+    першим, і картка обіцяла б оточення, якого ніхто не звіряв.
+    """
+    out: dict[str, str] = {}
+    for grupa in ("manual", "dodatky", "kartky", "inserts"):
+        for f in sorted((ROOT / "factcheck" / grupa).glob("*.md")):
+            for m in RE_KONTEKST.finditer(f.read_text(encoding="utf-8")):
+                k = (m.group("kontekst") or "").strip()
+                if k:
+                    out[m.group("id")] = k
+    return out
+
+
+def versiya_naryadu(rich: bool = False) -> str:
+    """Відбиток УСЬОГО, що бачить помічник, — вісім знаків хешу.
 
     ## Навіщо
 
@@ -208,8 +239,20 @@ def versiya_naryadu() -> str:
 
     > Змінюючи наряд, ми змінюємо технологію. Зміна технології без
     > версії — це не експеримент, а зміна погоди.
+
+    ## Що входить у відбиток, і чому не лише шапка
+
+    Перша редакція хешувала саму `SHAPKA`. Це давало **однакову версію**
+    нарядові з оточенням у картці й без нього — тобто двом різним
+    технологіям. Книга прогонів показувала б їх як одну, і різницю між
+    ними записала б у шум.
+
+    > Версія мусить покривати все, що помічник **бачить**, а не те, що
+    > нам зручно хешувати. Відбиток, вужчий за свій предмет, гірший за
+    > відсутній: він виглядає як контроль.
     """
-    return hashlib.sha256(SHAPKA.encode("utf-8")).hexdigest()[:8]
+    tilo = SHAPKA + (MISCE_V_POTOCI + "\n+kontekst" if rich else "")
+    return hashlib.sha256(tilo.encode("utf-8")).hexdigest()[:8]
 
 
 def vypadkova(a, vybirka) -> int:
@@ -241,12 +284,13 @@ def vypadkova(a, vybirka) -> int:
     naselennya = hashlib.sha256(
         "\n".join(u["id"] for u in usi).encode()).hexdigest()[:12]
     (a.kudy / "vybirka.json").write_text(json.dumps(
-        {"order_version": versiya_naryadu(),
+        {"order_version": versiya_naryadu(a.rich),
          "nasinnya": a.nasinnya, "population_sha": naselennya,
          "z_cherhy": len(usi), "queue": "F", "sample_size": len(vzyato),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
+    kont = konteksty() if a.rich else {}
     n = 0
     for i in range(0, len(vzyato), a.na_naryad):
         ch = vzyato[i:i + a.na_naryad]
@@ -258,11 +302,17 @@ def vypadkova(a, vybirka) -> int:
                 "це повноцінна відповідь.")
         r = [SHAPKA.format(n=n, tema=f"випадкова вибірка (насіння {a.nasinnya})",
                            k=len(ch), kandydat=kand),
-             f"\n<!-- order_version:{versiya_naryadu()} "
+             ("\n" + MISCE_V_POTOCI + "\n" if a.rich else ""),
+             f"\n<!-- order_version:{versiya_naryadu(a.rich)} "
              f"seed:{a.nasinnya} -->\n"]
         for u in ch:
             r.append(f"\n**`{u['id']}`**\n")
             r.append(f"> {u['tekst']}\n")
+            if a.rich:
+                k = kont.get(u["id"])
+                if k:
+                    r.append("\nОточення в книзі — щоб було видно, про що "
+                             "саме йдеться:\n\n```\n" + k + "\n```\n")
         (a.kudy / f"f-{n:02d}.md").write_text("\n".join(r) + "\n",
                                               encoding="utf-8")
     print(f"нарядів {n}, одиниць {len(vzyato)} з {len(usi)} у черзі F; "
@@ -280,6 +330,8 @@ def main() -> int:
                    help="взяти N одиниць випадково з усієї черги F")
     p.add_argument("--nasinnya", type=int, default=0,
                    help="насіння; обов'язкове разом із --vypadkovo")
+    p.add_argument("--rich-cards", action="store_true", dest="rich",
+                   help="картка несе контекст із книги й своє місце в потоці")
     a = p.parse_args()
     if a.vypadkovo and not a.nasinnya:
         p.error("--vypadkovo без --nasinnya: дослід буде невідтворний")
