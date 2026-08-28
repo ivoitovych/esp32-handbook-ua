@@ -1,137 +1,104 @@
-# М2, крок 12 — SSD1306: контролер, а не модуль.
-#
-# Джерело в кеші: `ssd1306.pdf` — Solomon Systech, SSD1306 Advance
-# Information, 128 x 64 Dot Matrix OLED/PLED Segment/Common Driver with
-# Controller, Rev 1.1 (Apr 2008). Реєстр — `factcheck/DZHERELA-m2.md`.
-#
-# SH1106 — інша мікросхема (Sino Wealth), її datasheet у кеші НЕМАЄ і не
-# знайдений цією сесією; твердження про зсув на 2 пікселі й адресу
-# SH1106 лишаються поза цим доказом. Той зсув уже закритий у реєстрі
-# класом A через непряме, але первинне джерело — вихідний код U8g2
-# (T-46-008…011, T-E-030…032), де SSD1306 і SH1106 прописані як два
-# різні описи дисплея з різним default_x_offset. Широкий доказ класу C
-# «Дисплеї — зсув SH1106 і адреси I²C-модулів» (pass-03-nedostupni)
-# лишається чинним для решти клітинок, які цей datasheet не підтверджує
-# напряму (розмір у дюймах — атрибут скла-модуля, а не кристала, той
-# самий випадок, що й діагональ ILI9341 у m2-08).
-#
-# Тут закриваються лише дві клітинки рядка SSD1306 у розділі 46, які
-# datasheet підтверджує дослівно: інтерфейс і монохромність.
-
-
-
-
-
 - nazva: SSD1306 — інтерфейс I²C або SPI, обидва пін-вибіркові
   zbih: OLED SSD1306 · Інтерфейс → I²C або SPI
   klas: A
-  dzherelo: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділи 1 «General
-    Description» і 2 «Features»
-  cytata: "1     GENERAL DESCRIPTION\n     SSD1306 is a single-chip CMOS OLED/PLED driver\
-    \ with controller for organic / polymer light emitting\n     diode dot-matrix graphic\
-    \ display system. It consists of 128 segments and 64commons. This IC is\n     designed\
-    \ for Common Cathode type OLED panel.\n\n     The SSD1306 embeds with contrast control,\
-    \ display RAM and oscillator, which reduces the number of\n     external components and\
-    \ power consumption. It has 256-step brightness control. Data/Commands are\n     sent\
-    \ from general MCU through the hardware selectable 6800/8000 series compatible Parallel\
-    \ Interface,\n     I2C interface or Serial Peripheral Interface.\n\n2     FEATURES\n \
-    \       •   Pin selectable MCU Interfaces:\n                o 8-bit 6800/8080-series parallel\
-    \ interface\n                o 3 /4 wire Serial Peripheral Interface\n               \
-    \ o I2C Interface\n"
-  sposib: PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext
-    -layout, 2026-08-26
-  notatka: 'Обидва інтерфейси підтверджені дослівно й напряму з кристала — книга точна. Побічне,
-    вартого уваги: обидва режими «пін-вибіркові» (перемикаються рівнем на пінах BS1/BS2 при
-    монтажі), тобто це не властивість, яку можна змінити в рантаймі — читач бере модуль уже
-    розпаяний під один режим. І інтерфейси нерівноцінні за кількістю ліній: I²C — це справді
-    два дроти (SDA, SCL) плюс живлення, а SPI-режим (розділ 8.1.5 датащита) додає щонайменше
-    CS#, D/C#, RES#, тобто щонайменше п''ять ліній замість двох — рядок таблиці цю різницю
-    не показує.
+  dzherelo: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділи 1 «General Description»
+    і 2 «Features»
+  cytata: "1     GENERAL DESCRIPTION\n     SSD1306 is a single-chip CMOS OLED/PLED driver with controller\
+    \ for organic / polymer light emitting\n     diode dot-matrix graphic display system. It consists\
+    \ of 128 segments and 64commons. This IC is\n     designed for Common Cathode type OLED panel.\n\n\
+    \     The SSD1306 embeds with contrast control, display RAM and oscillator, which reduces the number\
+    \ of\n     external components and power consumption. It has 256-step brightness control. Data/Commands\
+    \ are\n     sent from general MCU through the hardware selectable 6800/8000 series compatible Parallel\
+    \ Interface,\n     I2C interface or Serial Peripheral Interface.\n\n2     FEATURES\n        •   Pin\
+    \ selectable MCU Interfaces:\n                o 8-bit 6800/8080-series parallel interface\n      \
+    \          o 3 /4 wire Serial Peripheral Interface\n                o I2C Interface\n"
+  sposib: PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  notatka: 'Обидва інтерфейси підтверджені дослівно й напряму з кристала — книга точна. Побічне, вартого
+    уваги: обидва режими «пін-вибіркові» (перемикаються рівнем на пінах BS1/BS2 при монтажі), тобто це
+    не властивість, яку можна змінити в рантаймі — читач бере модуль уже розпаяний під один режим. І інтерфейси
+    нерівноцінні за кількістю ліній: I²C — це справді два дроти (SDA, SCL) плюс живлення, а SPI-режим
+    (розділ 8.1.5 датащита) додає щонайменше CS#, D/C#, RES#, тобто щонайменше п''ять ліній замість двох
+    — рядок таблиці цю різницю не показує.
 
-    Окремо, для звірки з уже закритим у реєстрі рядком додатка E: сам датащит (розділ 8.1.5
-    «MCU I2C Interface») дає адресу прямим текстом — байт `0 1 1 1 1 0 SA0 R/W#`, де «Either
-    “0111100” or “0111101”, can be selected as the slave address of SSD1306», тобто `0x3C`/`0x3D`
-    вибираються станом піна SA0 (в I²C-режимі це D/C#), а не залежать від роздільності панелі.
-    Це підтверджує вже наявний доказ T-E-030 ще твердіше, ніж коментар у джерелі U8g2, на
-    який той спирався, — але юніт уже клас A, тож нового запису тут не заводжу.'
+    Окремо, для звірки з уже закритим у реєстрі рядком додатка E: сам датащит (розділ 8.1.5 «MCU I2C Interface»)
+    дає адресу прямим текстом — байт `0 1 1 1 1 0 SA0 R/W#`, де «Either “0111100” or “0111101”, can be
+    selected as the slave address of SSD1306», тобто `0x3C`/`0x3D` вибираються станом піна SA0 (в I²C-режимі
+    це D/C#), а не залежать від роздільності панелі. Це підтверджує вже наявний доказ T-E-030 ще твердіше,
+    ніж коментар у джерелі U8g2, на який той спирався, — але юніт уже клас A, тож нового запису тут не
+    заводжу.'
   title: SSD1306 — інтерфейс I²C або SPI, обидва пін-вибіркові
   match: OLED SSD1306 · Інтерфейс → I²C або SPI
   status: verbatim
-  source: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділи 1 «General
-    Description» і 2 «Features»
-  quote: "1     GENERAL DESCRIPTION\n     SSD1306 is a single-chip CMOS OLED/PLED driver with\
-    \ controller for organic / polymer light emitting\n     diode dot-matrix graphic display\
-    \ system. It consists of 128 segments and 64commons. This IC is\n     designed for Common\
-    \ Cathode type OLED panel.\n\n     The SSD1306 embeds with contrast control, display RAM\
-    \ and oscillator, which reduces the number of\n     external components and power consumption.\
-    \ It has 256-step brightness control. Data/Commands are\n     sent from general MCU through\
-    \ the hardware selectable 6800/8000 series compatible Parallel Interface,\n     I2C interface\
-    \ or Serial Peripheral Interface.\n\n2     FEATURES\n        •   Pin selectable MCU Interfaces:\n\
-    \                o 8-bit 6800/8080-series parallel interface\n                o 3 /4 wire\
-    \ Serial Peripheral Interface\n                o I2C Interface\n"
-  method: PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext
-    -layout, 2026-08-26
-  note: 'Обидва інтерфейси підтверджені дослівно й напряму з кристала — книга точна. Побічне,
-    вартого уваги: обидва режими «пін-вибіркові» (перемикаються рівнем на пінах BS1/BS2 при
-    монтажі), тобто це не властивість, яку можна змінити в рантаймі — читач бере модуль уже
-    розпаяний під один режим. І інтерфейси нерівноцінні за кількістю ліній: I²C — це справді
-    два дроти (SDA, SCL) плюс живлення, а SPI-режим (розділ 8.1.5 датащита) додає щонайменше
-    CS#, D/C#, RES#, тобто щонайменше п''ять ліній замість двох — рядок таблиці цю різницю
-    не показує.
+  source: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділи 1 «General Description»
+    і 2 «Features»
+  quote: "1     GENERAL DESCRIPTION\n     SSD1306 is a single-chip CMOS OLED/PLED driver with controller\
+    \ for organic / polymer light emitting\n     diode dot-matrix graphic display system. It consists\
+    \ of 128 segments and 64commons. This IC is\n     designed for Common Cathode type OLED panel.\n\n\
+    \     The SSD1306 embeds with contrast control, display RAM and oscillator, which reduces the number\
+    \ of\n     external components and power consumption. It has 256-step brightness control. Data/Commands\
+    \ are\n     sent from general MCU through the hardware selectable 6800/8000 series compatible Parallel\
+    \ Interface,\n     I2C interface or Serial Peripheral Interface.\n\n2     FEATURES\n        •   Pin\
+    \ selectable MCU Interfaces:\n                o 8-bit 6800/8080-series parallel interface\n      \
+    \          o 3 /4 wire Serial Peripheral Interface\n                o I2C Interface\n"
+  method: PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  note: 'Обидва інтерфейси підтверджені дослівно й напряму з кристала — книга точна. Побічне, вартого
+    уваги: обидва режими «пін-вибіркові» (перемикаються рівнем на пінах BS1/BS2 при монтажі), тобто це
+    не властивість, яку можна змінити в рантаймі — читач бере модуль уже розпаяний під один режим. І інтерфейси
+    нерівноцінні за кількістю ліній: I²C — це справді два дроти (SDA, SCL) плюс живлення, а SPI-режим
+    (розділ 8.1.5 датащита) додає щонайменше CS#, D/C#, RES#, тобто щонайменше п''ять ліній замість двох
+    — рядок таблиці цю різницю не показує.
 
-    Окремо, для звірки з уже закритим у реєстрі рядком додатка E: сам датащит (розділ 8.1.5
-    «MCU I2C Interface») дає адресу прямим текстом — байт `0 1 1 1 1 0 SA0 R/W#`, де «Either
-    “0111100” or “0111101”, can be selected as the slave address of SSD1306», тобто `0x3C`/`0x3D`
-    вибираються станом піна SA0 (в I²C-режимі це D/C#), а не залежать від роздільності панелі.
-    Це підтверджує вже наявний доказ T-E-030 ще твердіше, ніж коментар у джерелі U8g2, на
-    який той спирався, — але юніт уже клас A, тож нового запису тут не заводжу.'
+    Окремо, для звірки з уже закритим у реєстрі рядком додатка E: сам датащит (розділ 8.1.5 «MCU I2C Interface»)
+    дає адресу прямим текстом — байт `0 1 1 1 1 0 SA0 R/W#`, де «Either “0111100” or “0111101”, can be
+    selected as the slave address of SSD1306», тобто `0x3C`/`0x3D` вибираються станом піна SA0 (в I²C-режимі
+    це D/C#), а не залежать від роздільності панелі. Це підтверджує вже наявний доказ T-E-030 ще твердіше,
+    ніж коментар у джерелі U8g2, на який той спирався, — але юніт уже клас A, тож нового запису тут не
+    заводжу.'
 - nazva: SSD1306 — монохромний дисплей
   zbih: OLED SSD1306 · Кольори → моно
   klas: A
-  dzherelo: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділ 8.7 «Graphic
-    Display Data RAM (GDDRAM)»
+  dzherelo: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділ 8.7 «Graphic Display
+    Data RAM (GDDRAM)»
   cytata: '8.7    Graphic Display Data RAM (GDDRAM)
 
-    The GDDRAM is a bit mapped static RAM holding the bit pattern to be displayed. The size
-    of the RAM is
+    The GDDRAM is a bit mapped static RAM holding the bit pattern to be displayed. The size of the RAM
+    is
 
-    128 x 64 bits and the RAM is divided into eight pages, from PAGE0 to PAGE7, which are
-    used for
+    128 x 64 bits and the RAM is divided into eight pages, from PAGE0 to PAGE7, which are used for
 
     monochrome 128x64 dot matrix display, as shown in Figure 8-13.
 
     '
-  sposib: PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext
-    -layout, 2026-08-26
-  notatka: '«Монохромний» підтверджено дослівно словом «monochrome» в описі самого кадрового
-    буфера, а не лише випливає з назви OLED-панелі. Побічне: розмір GDDRAM — рівно 128×64
-    біт, один біт на піксель, що й відповідає роздільності 128×64, яку книга в розділі 46
-    і додатку E не називає числом (хоча вона корисніша за розмір у дюймах — саме вона визначає,
-    що кадровий буфер SSD1306 займає лише 1 КБ проти 150 КБ в кольорового TFT такого ж класу,
-    розділ 46 книги про це не згадує). У самій книзі числової роздільності немає, тож окремої
-    одиниці для неї в реєстрі не існує.'
+  sposib: PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  notatka: '«Монохромний» підтверджено дослівно словом «monochrome» в описі самого кадрового буфера, а
+    не лише випливає з назви OLED-панелі. Побічне: розмір GDDRAM — рівно 128×64 біт, один біт на піксель,
+    що й відповідає роздільності 128×64, яку книга в розділі 46 і додатку E не називає числом (хоча вона
+    корисніша за розмір у дюймах — саме вона визначає, що кадровий буфер SSD1306 займає лише 1 КБ проти
+    150 КБ в кольорового TFT такого ж класу, розділ 46 книги про це не згадує). У самій книзі числової
+    роздільності немає, тож окремої одиниці для неї в реєстрі не існує.'
   title: SSD1306 — монохромний дисплей
   match: OLED SSD1306 · Кольори → моно
   status: verbatim
-  source: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділ 8.7 «Graphic
-    Display Data RAM (GDDRAM)»
+  source: Solomon Systech, SSD1306 Advance Information (Rev 1.1, Apr 2008), розділ 8.7 «Graphic Display
+    Data RAM (GDDRAM)»
   quote: '8.7    Graphic Display Data RAM (GDDRAM)
 
-    The GDDRAM is a bit mapped static RAM holding the bit pattern to be displayed. The size
-    of the RAM is
+    The GDDRAM is a bit mapped static RAM holding the bit pattern to be displayed. The size of the RAM
+    is
 
-    128 x 64 bits and the RAM is divided into eight pages, from PAGE0 to PAGE7, which are
-    used for
+    128 x 64 bits and the RAM is divided into eight pages, from PAGE0 to PAGE7, which are used for
 
     monochrome 128x64 dot matrix display, as shown in Figure 8-13.
 
     '
-  method: PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext
-    -layout, 2026-08-26
-  note: '«Монохромний» підтверджено дослівно словом «monochrome» в описі самого кадрового
-    буфера, а не лише випливає з назви OLED-панелі. Побічне: розмір GDDRAM — рівно 128×64
-    біт, один біт на піксель, що й відповідає роздільності 128×64, яку книга в розділі 46
-    і додатку E не називає числом (хоча вона корисніша за розмір у дюймах — саме вона визначає,
-    що кадровий буфер SSD1306 займає лише 1 КБ проти 150 КБ в кольорового TFT такого ж класу,
-    розділ 46 книги про це не згадує). У самій книзі числової роздільності немає, тож окремої
-    одиниці для неї в реєстрі не існує.'
+  method: PDF Solomon Systech, кеш `ssd1306.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26
+  note: '«Монохромний» підтверджено дослівно словом «monochrome» в описі самого кадрового буфера, а не
+    лише випливає з назви OLED-панелі. Побічне: розмір GDDRAM — рівно 128×64 біт, один біт на піксель,
+    що й відповідає роздільності 128×64, яку книга в розділі 46 і додатку E не називає числом (хоча вона
+    корисніша за розмір у дюймах — саме вона визначає, що кадровий буфер SSD1306 займає лише 1 КБ проти
+    150 КБ в кольорового TFT такого ж класу, розділ 46 книги про це не згадує). У самій книзі числової
+    роздільності немає, тож окремої одиниці для неї в реєстрі не існує.'

@@ -1,50 +1,8 @@
-# М2, крок 4 — розширювачі портів і контролери TFT.
-#
-# Джерела в кеші: `pcf8574.pdf` (TI), `mcp23017.pdf` (Microchip),
-# `ili9341.pdf` (ILI Technology). Реєстр — `factcheck/DZHERELA-m2.md`.
-#
-# Окремо про межу цього кроку: контролер і **модуль** — різні предмети.
-# Datasheet контролера доводить розрядність, інтерфейс і роздільність,
-# але не діагональ у дюймах: діагональ належить склу, а не кремнію.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: PCF8574 — вісім ліній, розширювач по I²C
-  zbih: PCF8574 · Що дає → розширювач портів|[Рр]озширювач портів по I²C\*\* — PCF8574 \(8
-    пінів\)
+  zbih: PCF8574 · Що дає → розширювач портів|[Рр]озширювач портів по I²C\*\* — PCF8574 \(8 пінів\)
   klas: A
-  dzherelo: Texas Instruments, PCF8574 Remote 8-Bit I/O Expander for I2C Bus (SCPS068), розділи
-    «Features» і «Description»
+  dzherelo: Texas Instruments, PCF8574 Remote 8-Bit I/O Expander for I2C Bus (SCPS068), розділи «Features»
+    і «Description»
   cytata: 'PCF8574 Remote 8-Bit I/O Expander for I2C Bus
 
 
@@ -57,17 +15,15 @@
     • Open-drain interrupt output
 
     '
-  sposib: PDF TI, кеш `pcf8574.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
-    2026-08-26
-  notatka: 'Розрядність у самій назві документа: вісім ліній, і саме по I²C. Побічне, вартого
-    розділу 07: вихід переривання **з відкритим стоком**, тобто на нього теж потрібне підтягування
-    — а книга про це не згадує, хоч радить PCF8574 як вихід із браку пінів.'
+  sposib: PDF TI, кеш `pcf8574.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: 'Розрядність у самій назві документа: вісім ліній, і саме по I²C. Побічне, вартого розділу
+    07: вихід переривання **з відкритим стоком**, тобто на нього теж потрібне підтягування — а книга про
+    це не згадує, хоч радить PCF8574 як вихід із браку пінів.'
   title: PCF8574 — вісім ліній, розширювач по I²C
-  match: PCF8574 · Що дає → розширювач портів|[Рр]озширювач портів по I²C\*\* — PCF8574 \(8
-    пінів\)
+  match: PCF8574 · Що дає → розширювач портів|[Рр]озширювач портів по I²C\*\* — PCF8574 \(8 пінів\)
   status: verbatim
-  source: Texas Instruments, PCF8574 Remote 8-Bit I/O Expander for I2C Bus (SCPS068), розділи
-    «Features» і «Description»
+  source: Texas Instruments, PCF8574 Remote 8-Bit I/O Expander for I2C Bus (SCPS068), розділи «Features»
+    і «Description»
   quote: 'PCF8574 Remote 8-Bit I/O Expander for I2C Bus
 
 
@@ -80,42 +36,39 @@
     • Open-drain interrupt output
 
     '
-  method: PDF TI, кеш `pcf8574.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
-    2026-08-26
-  note: 'Розрядність у самій назві документа: вісім ліній, і саме по I²C. Побічне, вартого
-    розділу 07: вихід переривання **з відкритим стоком**, тобто на нього теж потрібне підтягування
-    — а книга про це не згадує, хоч радить PCF8574 як вихід із браку пінів.'
+  method: PDF TI, кеш `pcf8574.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: 'Розрядність у самій назві документа: вісім ліній, і саме по I²C. Побічне, вартого розділу 07:
+    вихід переривання **з відкритим стоком**, тобто на нього теж потрібне підтягування — а книга про це
+    не згадує, хоч радить PCF8574 як вихід із браку пінів.'
 - nazva: MCP23017 — шістнадцять ліній
   zbih: MCP23017 · Що дає → розширювач, 16 пінів
   klas: A
-  dzherelo: Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ
-    «Features»
-  cytata: "MCP23017/MCP23S17\n16-Bit I/O Expander with Serial Interface\n\nFeatures\n• 16-Bit\
-    \ Remote Bidirectional I/O Port:\n  - I/O pins default to input\n"
+  dzherelo: 'Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features»
+    (кеш: dzherela-kesh/mcp23017.pdf)'
+  cytata: "MCP23017/MCP23S17\n16-Bit I/O Expander with Serial Interface\n\nFeatures\n• 16-Bit Remote Bidirectional\
+    \ I/O Port:\n  - I/O pins default to input\n"
   sposib: PDF Microchip, кеш `mcp23017.pdf`, pdftotext -layout, 2026-08-26
-  notatka: 'Шістнадцять ліній підтверджено. Варте уваги при читанні додатка E: `MCP23017`
-    і `MCP23S17` — той самий кристал із різними шинами, I²C і SPI відповідно. Книга називає
-    лише перший, і для розділу 07 це правильно, але в переліку замінників різниця в одній
-    літері означає іншу шину.'
+  notatka: 'Шістнадцять ліній підтверджено. Варте уваги при читанні додатка E: `MCP23017` і `MCP23S17`
+    — той самий кристал із різними шинами, I²C і SPI відповідно. Книга називає лише перший, і для розділу
+    07 це правильно, але в переліку замінників різниця в одній літері означає іншу шину.'
   title: MCP23017 — шістнадцять ліній
   match: MCP23017 · Що дає → розширювач, 16 пінів
   status: verbatim
-  source: Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ
-    «Features»
-  quote: "MCP23017/MCP23S17\n16-Bit I/O Expander with Serial Interface\n\nFeatures\n• 16-Bit\
-    \ Remote Bidirectional I/O Port:\n  - I/O pins default to input\n"
+  source: 'Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features»
+    (кеш: dzherela-kesh/mcp23017.pdf)'
+  quote: "MCP23017/MCP23S17\n16-Bit I/O Expander with Serial Interface\n\nFeatures\n• 16-Bit Remote Bidirectional\
+    \ I/O Port:\n  - I/O pins default to input\n"
   method: PDF Microchip, кеш `mcp23017.pdf`, pdftotext -layout, 2026-08-26
-  note: 'Шістнадцять ліній підтверджено. Варте уваги при читанні додатка E: `MCP23017` і `MCP23S17`
-    — той самий кристал із різними шинами, I²C і SPI відповідно. Книга називає лише перший,
-    і для розділу 07 це правильно, але в переліку замінників різниця в одній літері означає
-    іншу шину.'
+  note: 'Шістнадцять ліній підтверджено. Варте уваги при читанні додатка E: `MCP23017` і `MCP23S17` —
+    той самий кристал із різними шинами, I²C і SPI відповідно. Книга називає лише перший, і для розділу
+    07 це правильно, але в переліку замінників різниця в одній літері означає іншу шину.'
   sha:
   - 55153a86
 - nazva: ILI9341 — 240×320, інтерфейс SPI
   zbih: TFT ILI9341 · Інтерфейс → SPI
   klas: A
-  dzherelo: ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution
-    and 262K color, Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface»
+  dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
+    Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: dzherela-kesh/ili9341.pdf)'
   cytata: 'ILI9341
 
     a-Si TFT LCD Single Chip Driver
@@ -129,19 +82,18 @@
 
     '
   sposib: PDF ILI Technology, кеш `ili9341.pdf`, pdftotext -layout, 2026-08-26
-  notatka: 'Послідовний інтерфейс у контролері справді є, у двох різновидах — трипровідний
-    і чотирипровідний. Модулі, які трапляються читачеві, майже завжди чотирипровідні (з окремою
-    лінією `D/C`), і саме їх книга має на увазі.
+  notatka: 'Послідовний інтерфейс у контролері справді є, у двох різновидах — трипровідний і чотирипровідний.
+    Модулі, які трапляються читачеві, майже завжди чотирипровідні (з окремою лінією `D/C`), і саме їх
+    книга має на увазі.
 
-    Роздільність 240×320 підтверджено з титулу. У книзі її немає — а вона корисніша за діагональ,
-    бо саме вона визначає обсяг кадрового буфера: 240×320×2 байти це 150 КБ, що більше за
-    вільну DRAM classic. Тому бібліотеки малюють смугами, і читач, який спробує тримати кадр
-    цілком, упреться в пам''ять.'
+    Роздільність 240×320 підтверджено з титулу. У книзі її немає — а вона корисніша за діагональ, бо саме
+    вона визначає обсяг кадрового буфера: 240×320×2 байти це 150 КБ, що більше за вільну DRAM classic.
+    Тому бібліотеки малюють смугами, і читач, який спробує тримати кадр цілком, упреться в пам''ять.'
   title: ILI9341 — 240×320, інтерфейс SPI
   match: TFT ILI9341 · Інтерфейс → SPI
   status: verbatim
-  source: ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and
-    262K color, Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface»
+  source: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
+    Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: dzherela-kesh/ili9341.pdf)'
   quote: 'ILI9341
 
     a-Si TFT LCD Single Chip Driver
@@ -155,11 +107,10 @@
 
     '
   method: PDF ILI Technology, кеш `ili9341.pdf`, pdftotext -layout, 2026-08-26
-  note: 'Послідовний інтерфейс у контролері справді є, у двох різновидах — трипровідний і
-    чотирипровідний. Модулі, які трапляються читачеві, майже завжди чотирипровідні (з окремою
-    лінією `D/C`), і саме їх книга має на увазі.
+  note: 'Послідовний інтерфейс у контролері справді є, у двох різновидах — трипровідний і чотирипровідний.
+    Модулі, які трапляються читачеві, майже завжди чотирипровідні (з окремою лінією `D/C`), і саме їх
+    книга має на увазі.
 
-    Роздільність 240×320 підтверджено з титулу. У книзі її немає — а вона корисніша за діагональ,
-    бо саме вона визначає обсяг кадрового буфера: 240×320×2 байти це 150 КБ, що більше за
-    вільну DRAM classic. Тому бібліотеки малюють смугами, і читач, який спробує тримати кадр
-    цілком, упреться в пам''ять.'
+    Роздільність 240×320 підтверджено з титулу. У книзі її немає — а вона корисніша за діагональ, бо саме
+    вона визначає обсяг кадрового буфера: 240×320×2 байти це 150 КБ, що більше за вільну DRAM classic.
+    Тому бібліотеки малюють смугами, і читач, який спробує тримати кадр цілком, упреться в пам''ять.'

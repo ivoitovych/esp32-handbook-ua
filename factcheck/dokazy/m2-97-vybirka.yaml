@@ -48,8 +48,8 @@
   look_for: S3, PSRAM, додаткові піни, октальна пам'ять
   sha:
   - 5638f14b
-  source: 'ESP32-S3 Series Datasheet, розділ Pin Definitions — піни, зайняті Octal PSRAM (кеш: dzherela-kesh/esp32-s3_datasheet_en.pdf)'
-  dzherelo: 'ESP32-S3 Series Datasheet, розділ Pin Definitions — піни, зайняті Octal PSRAM (кеш: dzherela-kesh/esp32-s3_datasheet_en.pdf)'
+  source: ESP32-S3 Series Datasheet, розділ Pin Definitions — піни, зайняті Octal PSRAM
+  dzherelo: ESP32-S3 Series Datasheet, розділ Pin Definitions — піни, зайняті Octal PSRAM
 - nazva: GPIO25 — індекс посилань
   zbih: GPIO25 — 75, 206–207, 310, 349–350
   klas: E

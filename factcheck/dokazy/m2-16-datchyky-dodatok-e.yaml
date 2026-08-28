@@ -1,124 +1,77 @@
-# М2, крок 16 — рядки датчиків у додатку E (dodatky/e-interfeysy.md).
-#
-# Найщільніший файл книги: реєстр ділить кожен рядок таблиці I²C на
-# окремі комірки виду «Пристрій · Колонка → Значення». Адреси в цих
-# рядках уже закриті класом A в pass-16-interfeysy («Адреси I²C у
-# додатку E — усі тринадцять рядків») — тут їх не чіпаю. Мета цього
-# кроку — колонка «Що дає» (призначення мікросхеми) там, де вона ще не
-# звірена, плюс дві клітинки «Бібліотека», які варто чесно позначити
-# класом E замість тримати в стані «не звірено».
-#
-# Джерела в кеші: `sht3x.pdf`, `sht4x.pdf` (Sensirion), `mpu6050.pdf`
-# (TDK InvenSense, register map RM-MPU-6000A). `bme280.pdf` і
-# `bmp280.pdf` (Bosch) також завантажено — потрібні не для нової
-# клітинки, а для звірки вже наявного класу C (див. нотатку нижче: там
-# знайдено проблему самого запису, а не книги). `bh1750.pdf` довантажено
-# для повноти кешу, але «Що дає»/«Бібліотека» для BH1750 уже закриті
-# класом D в реєстрі — нового запису тут не заводжу. VL53L0X пропущено:
-# st.com не береться curl-ом із цієї мережі. ADS1115 і PCA9685 у книзі
-# не згадуються — таблиця в додатку E не містить жодного з двох рядків;
-# перевіряти нічого.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: SHT3x / SHT4x — точна вологість, ±1–1.5 %RH
   zbih: SHT3x / SHT4x · Що дає → точна вологість
   klas: A
-  dzherelo: Sensirion, Datasheet SHT3x-DIS (Humidity and Temperature Sensor) і Datasheet SHT4x
-    (4th Gen. Relative Humidity and Temperature Sensor), розділи «Key features»/«Highlights»
-    на титульній сторінці кожного
-  cytata: "(SHT3x-DIS)\nDatasheet SHT3x-DIS\nHumidity and Temperature Sensor\n▪ Typical accuracy\
-    \ of ±1.5 %RH and ±0.1 °C for\n  SHT35\n\n(SHT4x)\nDatasheet – SHT4x\n4th Gen. Relative\
-    \ Humidity and Temperature Sensor\nHighlights\n• Accuracies ΔRH = ±1.0 %RH, ΔT = ±0.1\
-    \ °C\n"
-  sposib: PDF Sensirion, кеш `sht3x.pdf` і `sht4x.pdf`, реєстр `factcheck/DZHERELA-m2.md`,
-    pdftotext -layout, 2026-08-26. У витягу з `sht3x.pdf` символ «±» pdftotext віддає як приватний
-    гліф шрифту (байти `ef 82 b1`, невидимі в терміналі) — відновлено як «±» після звірки
-    з рештою документа, де той самий символ у слові «ΔT»/градусах передається коректно.
-  notatka: '«Точна вологість» підтверджено дослівно числами точності — це не маркетингове
-    прикметникове слово, а конкретний допуск: ±1.5 %RH у топовій лінійці SHT3x (SHT35) і ±1.0
-    %RH у SHT4x. Для контексту (не змінює висновок, книга цього рядка не деталізує): SHT4x
-    у таблиці «Device Overview» власного datasheet показує третю можливу I²C-адресу `0x46`
-    на додачу до `0x44`/`0x45`, які вже підтверджені класом A в pass-16-interfeysy — рядок
-    книги називає лише дві з трьох, але це найпоширеніший варіант (SHT40-xD1B), тож не помилка,
-    а неповнота, вартого уваги наступного проходу з адресами.'
+  dzherelo: Sensirion, Datasheet SHT3x-DIS (Humidity and Temperature Sensor) і Datasheet SHT4x (4th Gen.
+    Relative Humidity and Temperature Sensor), розділи «Key features»/«Highlights» на титульній сторінці
+    кожного
+  cytata: "(SHT3x-DIS)\nDatasheet SHT3x-DIS\nHumidity and Temperature Sensor\n▪ Typical accuracy of ±1.5\
+    \ %RH and ±0.1 °C for\n  SHT35\n\n(SHT4x)\nDatasheet – SHT4x\n4th Gen. Relative Humidity and Temperature\
+    \ Sensor\nHighlights\n• Accuracies ΔRH = ±1.0 %RH, ΔT = ±0.1 °C\n"
+  sposib: PDF Sensirion, кеш `sht3x.pdf` і `sht4x.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26. У витягу з `sht3x.pdf` символ «±» pdftotext віддає як приватний гліф шрифту (байти `ef
+    82 b1`, невидимі в терміналі) — відновлено як «±» після звірки з рештою документа, де той самий символ
+    у слові «ΔT»/градусах передається коректно.
+  notatka: '«Точна вологість» підтверджено дослівно числами точності — це не маркетингове прикметникове
+    слово, а конкретний допуск: ±1.5 %RH у топовій лінійці SHT3x (SHT35) і ±1.0 %RH у SHT4x. Для контексту
+    (не змінює висновок, книга цього рядка не деталізує): SHT4x у таблиці «Device Overview» власного datasheet
+    показує третю можливу I²C-адресу `0x46` на додачу до `0x44`/`0x45`, які вже підтверджені класом A
+    в pass-16-interfeysy — рядок книги називає лише дві з трьох, але це найпоширеніший варіант (SHT40-xD1B),
+    тож не помилка, а неповнота, вартого уваги наступного проходу з адресами.'
   title: SHT3x / SHT4x — точна вологість, ±1–1.5 %RH
   match: SHT3x / SHT4x · Що дає → точна вологість
   status: verbatim
-  source: Sensirion, Datasheet SHT3x-DIS (Humidity and Temperature Sensor) і Datasheet SHT4x
-    (4th Gen. Relative Humidity and Temperature Sensor), розділи «Key features»/«Highlights»
-    на титульній сторінці кожного
-  quote: "(SHT3x-DIS)\nDatasheet SHT3x-DIS\nHumidity and Temperature Sensor\n▪ Typical accuracy\
-    \ of ±1.5 %RH and ±0.1 °C for\n  SHT35\n\n(SHT4x)\nDatasheet – SHT4x\n4th Gen. Relative\
-    \ Humidity and Temperature Sensor\nHighlights\n• Accuracies ΔRH = ±1.0 %RH, ΔT = ±0.1\
-    \ °C\n"
-  method: PDF Sensirion, кеш `sht3x.pdf` і `sht4x.pdf`, реєстр `factcheck/DZHERELA-m2.md`,
-    pdftotext -layout, 2026-08-26. У витягу з `sht3x.pdf` символ «±» pdftotext віддає як приватний
-    гліф шрифту (байти `ef 82 b1`, невидимі в терміналі) — відновлено як «±» після звірки
-    з рештою документа, де той самий символ у слові «ΔT»/градусах передається коректно.
-  note: '«Точна вологість» підтверджено дослівно числами точності — це не маркетингове прикметникове
-    слово, а конкретний допуск: ±1.5 %RH у топовій лінійці SHT3x (SHT35) і ±1.0 %RH у SHT4x.
-    Для контексту (не змінює висновок, книга цього рядка не деталізує): SHT4x у таблиці «Device
-    Overview» власного datasheet показує третю можливу I²C-адресу `0x46` на додачу до `0x44`/`0x45`,
-    які вже підтверджені класом A в pass-16-interfeysy — рядок книги називає лише дві з трьох,
-    але це найпоширеніший варіант (SHT40-xD1B), тож не помилка, а неповнота, вартого уваги
-    наступного проходу з адресами.'
+  source: Sensirion, Datasheet SHT3x-DIS (Humidity and Temperature Sensor) і Datasheet SHT4x (4th Gen.
+    Relative Humidity and Temperature Sensor), розділи «Key features»/«Highlights» на титульній сторінці
+    кожного
+  quote: "(SHT3x-DIS)\nDatasheet SHT3x-DIS\nHumidity and Temperature Sensor\n▪ Typical accuracy of ±1.5\
+    \ %RH and ±0.1 °C for\n  SHT35\n\n(SHT4x)\nDatasheet – SHT4x\n4th Gen. Relative Humidity and Temperature\
+    \ Sensor\nHighlights\n• Accuracies ΔRH = ±1.0 %RH, ΔT = ±0.1 °C\n"
+  method: PDF Sensirion, кеш `sht3x.pdf` і `sht4x.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
+    2026-08-26. У витягу з `sht3x.pdf` символ «±» pdftotext віддає як приватний гліф шрифту (байти `ef
+    82 b1`, невидимі в терміналі) — відновлено як «±» після звірки з рештою документа, де той самий символ
+    у слові «ΔT»/градусах передається коректно.
+  note: '«Точна вологість» підтверджено дослівно числами точності — це не маркетингове прикметникове слово,
+    а конкретний допуск: ±1.5 %RH у топовій лінійці SHT3x (SHT35) і ±1.0 %RH у SHT4x. Для контексту (не
+    змінює висновок, книга цього рядка не деталізує): SHT4x у таблиці «Device Overview» власного datasheet
+    показує третю можливу I²C-адресу `0x46` на додачу до `0x44`/`0x45`, які вже підтверджені класом A
+    в pass-16-interfeysy — рядок книги називає лише дві з трьох, але це найпоширеніший варіант (SHT40-xD1B),
+    тож не помилка, а неповнота, вартого уваги наступного проходу з адресами.'
   sha:
   - 11669d9f
 - nazva: MPU6050 — акселерометр і гіроскоп на одному кристалі
   zbih: MPU6050 · Що дає → акселерометр, гіроскоп
   klas: A
-  dzherelo: TDK InvenSense, MPU-6000/MPU-6050 Register Map and Descriptions, Revision 4.0
-    (RM-MPU-6000A-00), розділ 2 «Purpose and Scope»
+  dzherelo: TDK InvenSense, MPU-6000/MPU-6050 Register Map and Descriptions, Revision 4.0 (RM-MPU-6000A-00),
+    розділ 2 «Purpose and Scope»
   cytata: '2   Purpose and Scope
 
-    This document provides preliminary information regarding the register map and descriptions
-    for the Motion
+    This document provides preliminary information regarding the register map and descriptions for the
+    Motion
 
     Processing Units™ MPU-6000™ and MPU-6050™, collectively called the MPU-60X0™ or MPU™.
 
-    The MPU devices provide the world''s first integrated 6-axis motion processor solution
-    that eliminates the
+    The MPU devices provide the world''s first integrated 6-axis motion processor solution that eliminates
+    the
 
-    package-level gyroscope and accelerometer cross-axis misalignment associated with discrete
-    solutions. The
+    package-level gyroscope and accelerometer cross-axis misalignment associated with discrete solutions.
+    The
 
-    devices combine a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die
-    together with an
+    devices combine a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die together with
+    an
 
-    onboard Digital Motion Processor™ (DMP™) capable of processing complex 9-axis sensor fusion
-    algorithms
+    onboard Digital Motion Processor™ (DMP™) capable of processing complex 9-axis sensor fusion algorithms
 
     using the field-proven and proprietary MotionFusion™ engine.
 
     '
-  sposib: PDF TDK InvenSense (мзеркало cdn.sparkfun.com, оригінальний домен invensense.tdk.com
-    віддає 404 на всі перевірені шляхи документа), кеш `mpu6050.pdf`, реєстр `factcheck/DZHERELA-m2.md`,
-    pdftotext -layout, 2026-08-26
-  notatka: '«Акселерометр, гіроскоп» — точний опис: документ прямо називає MPU-6050 6-осьовим
-    (3-осьовий гіроскоп + 3-осьовий акселерометр на одному кристалі). Побічне, вартого уваги:
-    той самий абзац пояснює, чим MPU-6050 відрізняється від MPU-6000 — MPU-6050 має лише I²C,
-    а MPU-6000 додає ще й SPI. Це узгоджено з тим, що книга ставить MPU6050 лише в I²C-таблицю
-    додатка E, а не в SPI-таблицю поруч — рядка книга не помиляється, хоча цієї деталі й не
-    проговорює.'
+  sposib: PDF TDK InvenSense (мзеркало cdn.sparkfun.com, оригінальний домен invensense.tdk.com віддає
+    404 на всі перевірені шляхи документа), кеш `mpu6050.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext
+    -layout, 2026-08-26
+  notatka: '«Акселерометр, гіроскоп» — точний опис: документ прямо називає MPU-6050 6-осьовим (3-осьовий
+    гіроскоп + 3-осьовий акселерометр на одному кристалі). Побічне, вартого уваги: той самий абзац пояснює,
+    чим MPU-6050 відрізняється від MPU-6000 — MPU-6050 має лише I²C, а MPU-6000 додає ще й SPI. Це узгоджено
+    з тим, що книга ставить MPU6050 лише в I²C-таблицю додатка E, а не в SPI-таблицю поруч — рядка книга
+    не помиляється, хоча цієї деталі й не проговорює.'
   title: MPU6050 — акселерометр і гіроскоп на одному кристалі
   match: MPU6050 · Що дає → акселерометр, гіроскоп
   status: verbatim
@@ -126,35 +79,33 @@
     розділ 2 «Purpose and Scope»
   quote: '2   Purpose and Scope
 
-    This document provides preliminary information regarding the register map and descriptions
-    for the Motion
+    This document provides preliminary information regarding the register map and descriptions for the
+    Motion
 
     Processing Units™ MPU-6000™ and MPU-6050™, collectively called the MPU-60X0™ or MPU™.
 
-    The MPU devices provide the world''s first integrated 6-axis motion processor solution
-    that eliminates the
+    The MPU devices provide the world''s first integrated 6-axis motion processor solution that eliminates
+    the
 
-    package-level gyroscope and accelerometer cross-axis misalignment associated with discrete
-    solutions. The
+    package-level gyroscope and accelerometer cross-axis misalignment associated with discrete solutions.
+    The
 
-    devices combine a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die
-    together with an
+    devices combine a 3-axis gyroscope and a 3-axis accelerometer on the same silicon die together with
+    an
 
-    onboard Digital Motion Processor™ (DMP™) capable of processing complex 9-axis sensor fusion
-    algorithms
+    onboard Digital Motion Processor™ (DMP™) capable of processing complex 9-axis sensor fusion algorithms
 
     using the field-proven and proprietary MotionFusion™ engine.
 
     '
-  method: PDF TDK InvenSense (мзеркало cdn.sparkfun.com, оригінальний домен invensense.tdk.com
-    віддає 404 на всі перевірені шляхи документа), кеш `mpu6050.pdf`, реєстр `factcheck/DZHERELA-m2.md`,
-    pdftotext -layout, 2026-08-26
-  note: '«Акселерометр, гіроскоп» — точний опис: документ прямо називає MPU-6050 6-осьовим
-    (3-осьовий гіроскоп + 3-осьовий акселерометр на одному кристалі). Побічне, вартого уваги:
-    той самий абзац пояснює, чим MPU-6050 відрізняється від MPU-6000 — MPU-6050 має лише I²C,
-    а MPU-6000 додає ще й SPI. Це узгоджено з тим, що книга ставить MPU6050 лише в I²C-таблицю
-    додатка E, а не в SPI-таблицю поруч — рядка книга не помиляється, хоча цієї деталі й не
-    проговорює.'
+  method: PDF TDK InvenSense (мзеркало cdn.sparkfun.com, оригінальний домен invensense.tdk.com віддає
+    404 на всі перевірені шляхи документа), кеш `mpu6050.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext
+    -layout, 2026-08-26
+  note: '«Акселерометр, гіроскоп» — точний опис: документ прямо називає MPU-6050 6-осьовим (3-осьовий
+    гіроскоп + 3-осьовий акселерометр на одному кристалі). Побічне, вартого уваги: той самий абзац пояснює,
+    чим MPU-6050 відрізняється від MPU-6000 — MPU-6050 має лише I²C, а MPU-6000 додає ще й SPI. Це узгоджено
+    з тим, що книга ставить MPU6050 лише в I²C-таблицю додатка E, а не в SPI-таблицю поруч — рядка книга
+    не помиляється, хоча цієї деталі й не проговорює.'
   sha:
   - d5040300
 - nazva: SHT3x / SHT4x — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
@@ -162,23 +113,23 @@
   klas: E
   dzherelo: —
   cytata: —
-  sposib: Немає зовнішнього джерела для перевірки — назва «Sensirion» тут це вказівка «шукай
-    офіційну бібліотеку виробника», а не характеристика самої мікросхеми. Datasheet SHT3x/SHT4x
-    про існування чи назву бібліотеки для Arduino/ESP-IDF не пише і писати не повинен.
-  notatka: 'Той самий випадок, що й «Бібліотека IDE» для інших рядків додатка E і «Ціна плати
-    Arduino Uno» в m2-10: клас C (недосяжне джерело) тут невірний, бо джерело не недосяжне
-    — воно просто не про це. Клас E, редакційна вказівка, а не факт із datasheet.'
+  sposib: Немає зовнішнього джерела для перевірки — назва «Sensirion» тут це вказівка «шукай офіційну
+    бібліотеку виробника», а не характеристика самої мікросхеми. Datasheet SHT3x/SHT4x про існування чи
+    назву бібліотеки для Arduino/ESP-IDF не пише і писати не повинен.
+  notatka: 'Той самий випадок, що й «Бібліотека IDE» для інших рядків додатка E і «Ціна плати Arduino
+    Uno» в m2-10: клас C (недосяжне джерело) тут невірний, бо джерело не недосяжне — воно просто не про
+    це. Клас E, редакційна вказівка, а не факт із datasheet.'
   title: SHT3x / SHT4x — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   match: SHT3x / SHT4x · Бібліотека → Sensirion
   status: no-external-signal
   source: —
   quote: —
-  method: Немає зовнішнього джерела для перевірки — назва «Sensirion» тут це вказівка «шукай
-    офіційну бібліотеку виробника», а не характеристика самої мікросхеми. Datasheet SHT3x/SHT4x
-    про існування чи назву бібліотеки для Arduino/ESP-IDF не пише і писати не повинен.
-  note: 'Той самий випадок, що й «Бібліотека IDE» для інших рядків додатка E і «Ціна плати
-    Arduino Uno» в m2-10: клас C (недосяжне джерело) тут невірний, бо джерело не недосяжне
-    — воно просто не про це. Клас E, редакційна вказівка, а не факт із datasheet.'
+  method: Немає зовнішнього джерела для перевірки — назва «Sensirion» тут це вказівка «шукай офіційну
+    бібліотеку виробника», а не характеристика самої мікросхеми. Datasheet SHT3x/SHT4x про існування чи
+    назву бібліотеки для Arduino/ESP-IDF не пише і писати не повинен.
+  note: 'Той самий випадок, що й «Бібліотека IDE» для інших рядків додатка E і «Ціна плати Arduino Uno»
+    в m2-10: клас C (недосяжне джерело) тут невірний, бо джерело не недосяжне — воно просто не про це.
+    Клас E, редакційна вказівка, а не факт із datasheet.'
   sha:
   - 57cc4434
 - nazva: MPU6050 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
@@ -186,16 +137,16 @@
   klas: E
   dzherelo: —
   cytata: —
-  sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки Arduino не є характеристикою
-    кристала. Register map MPU-6050 про сторонні програмні бібліотеки не згадує.
+  sposib: Немає зовнішнього джерела для перевірки — назва бібліотеки Arduino не є характеристикою кристала.
+    Register map MPU-6050 про сторонні програмні бібліотеки не згадує.
   notatka: Той самий випадок, що й попередній запис для SHT3x/SHT4x. Клас E.
   title: MPU6050 — колонка «Бібліотека» це стан репозиторію, не факт про мікросхему
   match: MPU6050 · Бібліотека → MPU6050
   status: no-external-signal
   source: —
   quote: —
-  method: Немає зовнішнього джерела для перевірки — назва бібліотеки Arduino не є характеристикою
-    кристала. Register map MPU-6050 про сторонні програмні бібліотеки не згадує.
+  method: Немає зовнішнього джерела для перевірки — назва бібліотеки Arduino не є характеристикою кристала.
+    Register map MPU-6050 про сторонні програмні бібліотеки не згадує.
   note: Той самий випадок, що й попередній запис для SHT3x/SHT4x. Клас E.
   sha:
   - 6181e702

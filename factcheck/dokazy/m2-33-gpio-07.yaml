@@ -1,112 +1,8 @@
-# М2, крок 4 — розширювачі, зсувні регістри та мультиплексори в розділі GPIO.
-#
-# Джерела в кеші: `74hc595.pdf` (TI), `74hc165.pdf` (TI), `cd4051.pdf` (TI).
-# Для PCF8574 і MCP23017 див. `m2-08-dyspleyi-rozshyryuvachi.yaml`.
-# Реєстр — `factcheck/DZHERELA-m2.md`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: 74HC595 — зсувний регістр, вихід
   zbih: \*\*Зсувний регістр\*\* 74HC595 на виходи
   klas: A
-  dzherelo: Texas Instruments, SNx4HC595 8-Bit Shift Registers With 3-State Output Registers
-    (SCLS041J), розділи «Features» і «Description»
+  dzherelo: Texas Instruments, SNx4HC595 8-Bit Shift Registers With 3-State Output Registers (SCLS041J),
+    розділи «Features» і «Description»
   cytata: 'SN54HC595, SN74HC595
 
     SNx4HC595 8-Bit Shift Registers With 3-State Output Registers
@@ -132,16 +28,15 @@
     the shift and storage register.
 
     '
-  sposib: PDF TI, кеш `74hc595.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
-    2026-08-26
-  notatka: 8 розрядів підтверджено в названі і на першій сторінці документа. Видихід на паралельні
-    лінії (parallel output) та можливість каскадування (serial outputs for cascading) — ключові
-    характеристики для задачі розширення портів на виходи.
+  sposib: PDF TI, кеш `74hc595.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: 8 розрядів підтверджено в названі і на першій сторінці документа. Видихід на паралельні лінії
+    (parallel output) та можливість каскадування (serial outputs for cascading) — ключові характеристики
+    для задачі розширення портів на виходи.
   title: 74HC595 — зсувний регістр, вихід
   match: \*\*Зсувний регістр\*\* 74HC595 на виходи
   status: verbatim
-  source: Texas Instruments, SNx4HC595 8-Bit Shift Registers With 3-State Output Registers
-    (SCLS041J), розділи «Features» і «Description»
+  source: Texas Instruments, SNx4HC595 8-Bit Shift Registers With 3-State Output Registers (SCLS041J),
+    розділи «Features» і «Description»
   quote: 'SN54HC595, SN74HC595
 
     SNx4HC595 8-Bit Shift Registers With 3-State Output Registers
@@ -167,16 +62,15 @@
     the shift and storage register.
 
     '
-  method: PDF TI, кеш `74hc595.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
-    2026-08-26
-  note: 8 розрядів підтверджено в названі і на першій сторінці документа. Видихід на паралельні
-    лінії (parallel output) та можливість каскадування (serial outputs for cascading) — ключові
-    характеристики для задачі розширення портів на виходи.
+  method: PDF TI, кеш `74hc595.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: 8 розрядів підтверджено в названі і на першій сторінці документа. Видихід на паралельні лінії
+    (parallel output) та можливість каскадування (serial outputs for cascading) — ключові характеристики
+    для задачі розширення портів на виходи.
 - nazva: 74HC165 — зсувний регістр, вхід
   zbih: 74HC165 на входи
   klas: A
-  dzherelo: Texas Instruments, SNx4HC165 8-Bit Parallel-Load Shift Registers (SCLS116H), розділи
-    «Features» і «Description»
+  dzherelo: Texas Instruments, SNx4HC165 8-Bit Parallel-Load Shift Registers (SCLS116H), розділи «Features»
+    і «Description»
   cytata: 'SN54HC165, SN74HC165
 
     SNx4HC165 8-Bit Parallel-Load Shift Registers
@@ -206,16 +100,15 @@
     (SH/LD) input.
 
     '
-  sposib: PDF TI, кеш `74hc165.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
-    2026-08-26
-  notatka: 8 розрядів паралельного входу підтверджено. Вісім окремих ліній входу (eight individual
-    direct data (A−H) inputs), що дозволяє читати сигнали на вхід через послідовний інтерфейс
-    SPI. Можливість каскадування досягається послідовним виходом (serial QH output).
+  sposib: PDF TI, кеш `74hc165.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: 8 розрядів паралельного входу підтверджено. Вісім окремих ліній входу (eight individual direct
+    data (A−H) inputs), що дозволяє читати сигнали на вхід через послідовний інтерфейс SPI. Можливість
+    каскадування досягається послідовним виходом (serial QH output).
   title: 74HC165 — зсувний регістр, вхід
   match: 74HC165 на входи
   status: verbatim
-  source: Texas Instruments, SNx4HC165 8-Bit Parallel-Load Shift Registers (SCLS116H), розділи
-    «Features» і «Description»
+  source: Texas Instruments, SNx4HC165 8-Bit Parallel-Load Shift Registers (SCLS116H), розділи «Features»
+    і «Description»
   quote: 'SN54HC165, SN74HC165
 
     SNx4HC165 8-Bit Parallel-Load Shift Registers
@@ -245,16 +138,15 @@
     (SH/LD) input.
 
     '
-  method: PDF TI, кеш `74hc165.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
-    2026-08-26
-  note: 8 розрядів паралельного входу підтверджено. Вісім окремих ліній входу (eight individual
-    direct data (A−H) inputs), що дозволяє читати сигнали на вхід через послідовний інтерфейс
-    SPI. Можливість каскадування досягається послідовним виходом (serial QH output).
+  method: PDF TI, кеш `74hc165.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: 8 розрядів паралельного входу підтверджено. Вісім окремих ліній входу (eight individual direct
+    data (A−H) inputs), що дозволяє читати сигнали на вхід через послідовний інтерфейс SPI. Можливість
+    каскадування досягається послідовним виходом (serial QH output).
 - nazva: CD4051 — аналоговий мультиплексор, восьми каналів
   zbih: \*\*Аналоговий мультиплексор\*\* CD4051 — вісім аналогових входів
   klas: A
-  dzherelo: Texas Instruments, CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer
-    With Logic-Level Conversion (SCHS047O), розділи «Features» і «Description»
+  dzherelo: Texas Instruments, CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer With
+    Logic-Level Conversion (SCHS047O), розділи «Features» і «Description»
   cytata: 'CD4051B, CD4052B, CD4053B
 
     CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer
@@ -280,17 +172,16 @@
     impedance and very low OFF leakage current.
 
     '
-  sposib: PDF TI, кеш `cd4051.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
-    2026-08-26
-  notatka: 'Вісім каналів підтверджено: CD4051 названо 8-Channel у Features та описано 8 можливостей
-    комутації (Ch 0 – Ch 7). Аналоговий сигнал (analog multiplexer), а не цифровий, що критично
-    для прикладу з ADC у розділі 07. Використання для мультиплексування аналогових входів
-    на один ADC-пін прямо зазначено в Applications.'
+  sposib: PDF TI, кеш `cd4051.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  notatka: 'Вісім каналів підтверджено: CD4051 названо 8-Channel у Features та описано 8 можливостей комутації
+    (Ch 0 – Ch 7). Аналоговий сигнал (analog multiplexer), а не цифровий, що критично для прикладу з ADC
+    у розділі 07. Використання для мультиплексування аналогових входів на один ADC-пін прямо зазначено
+    в Applications.'
   title: CD4051 — аналоговий мультиплексор, восьми каналів
   match: \*\*Аналоговий мультиплексор\*\* CD4051 — вісім аналогових входів
   status: verbatim
-  source: Texas Instruments, CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer
-    With Logic-Level Conversion (SCHS047O), розділи «Features» і «Description»
+  source: Texas Instruments, CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer With Logic-Level
+    Conversion (SCHS047O), розділи «Features» і «Description»
   quote: 'CD4051B, CD4052B, CD4053B
 
     CD405xB CMOS Single 8-Channel Analog Multiplexer or Demultiplexer
@@ -316,19 +207,18 @@
     impedance and very low OFF leakage current.
 
     '
-  method: PDF TI, кеш `cd4051.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout,
-    2026-08-26
-  note: 'Вісім каналів підтверджено: CD4051 названо 8-Channel у Features та описано 8 можливостей
-    комутації (Ch 0 – Ch 7). Аналоговий сигнал (analog multiplexer), а не цифровий, що критично
-    для прикладу з ADC у розділі 07. Використання для мультиплексування аналогових входів
-    на один ADC-пін прямо зазначено в Applications.'
+  method: PDF TI, кеш `cd4051.pdf`, реєстр `factcheck/DZHERELA-m2.md`, pdftotext -layout, 2026-08-26
+  note: 'Вісім каналів підтверджено: CD4051 названо 8-Channel у Features та описано 8 можливостей комутації
+    (Ch 0 – Ch 7). Аналоговий сигнал (analog multiplexer), а не цифровий, що критично для прикладу з ADC
+    у розділі 07. Використання для мультиплексування аналогових входів на один ADC-пін прямо зазначено
+    в Applications.'
   sha:
   - 28de41c4
 - nazva: 'T-A-123: посилання на розділ 07'
   zbih: розширювач по I²C \(PCF8574, MCP23017\), зсувний регістр \(74HC595/165\)
   klas: E
-  dzherelo: Додаток A, рядок 150 — це список альтернатив із крос-посиланням на розділ 07,
-    а не окремий факт про мікросхему.
+  dzherelo: Додаток A, рядок 150 — це список альтернатив із крос-посиланням на розділ 07, а не окремий
+    факт про мікросхему.
   cytata: 'Коли не вистачає: розширювач по I²C (PCF8574, MCP23017), зсувний
 
     регістр (74HC595/165), аналоговий мультиплексор (CD4051), чип із
@@ -337,14 +227,14 @@
 
     '
   sposib: Прямий текст файлу `dodatky/a-pinouty.md`, рядок 150
-  notatka: Це не факт про мікросхему, а перенаправлення читача до розділу 07, де детально
-    розібрані всі ці варіанти. Окремі твердження про розширювачі (T-07-115), регістри (T-07-117)
-    та мультиплексор (T-07-118) мають власні доказами.
+  notatka: Це не факт про мікросхему, а перенаправлення читача до розділу 07, де детально розібрані всі
+    ці варіанти. Окремі твердження про розширювачі (T-07-115), регістри (T-07-117) та мультиплексор (T-07-118)
+    мають власні доказами.
   title: 'T-A-123: посилання на розділ 07'
   match: розширювач по I²C \(PCF8574, MCP23017\), зсувний регістр \(74HC595/165\)
   status: no-external-signal
-  source: Додаток A, рядок 150 — це список альтернатив із крос-посиланням на розділ 07, а
-    не окремий факт про мікросхему.
+  source: Додаток A, рядок 150 — це список альтернатив із крос-посиланням на розділ 07, а не окремий факт
+    про мікросхему.
   quote: 'Коли не вистачає: розширювач по I²C (PCF8574, MCP23017), зсувний
 
     регістр (74HC595/165), аналоговий мультиплексор (CD4051), чип із
@@ -353,6 +243,6 @@
 
     '
   method: Прямий текст файлу `dodatky/a-pinouty.md`, рядок 150
-  note: Це не факт про мікросхему, а перенаправлення читача до розділу 07, де детально розібрані
-    всі ці варіанти. Окремі твердження про розширювачі (T-07-115), регістри (T-07-117) та
-    мультиплексор (T-07-118) мають власні доказами.
+  note: Це не факт про мікросхему, а перенаправлення читача до розділу 07, де детально розібрані всі ці
+    варіанти. Окремі твердження про розширювачі (T-07-115), регістри (T-07-117) та мультиплексор (T-07-118)
+    мають власні доказами.

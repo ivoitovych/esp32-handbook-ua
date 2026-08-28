@@ -1,45 +1,8 @@
-# М2, джерело — дисплеї розділ 46, одиниця T-46-024.
-#
-# Єдина одиниця P2, що потребує файлів P2. Інші компоненти (SSD1306,
-# ST7789, BH1750, SHT3x, MPU6050, INA219, DS18B20) уже закриті у попередніх
-# пакетах (m2-04, m2-12, m2-16, m2-27, m2-28).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: ILI9341 — RGB565 формат пікселя, не ціль контролера
   zbih: ILI9341 уміє 262 тис\. кольорів.*COLMOD \(3Ah\)
   klas: A
-  dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution
-    and 262K color, Specification V1.11, розділ 8.2.33 «COLMOD: Pixel Format Set (3Ah)»'
+  dzherelo: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
+    Specification V1.11, розділ 8.2.33 «COLMOD: Pixel Format Set (3Ah)»'
   cytata: '8.2.33. COLMOD: Pixel Format Set (3Ah)
 
 
@@ -67,16 +30,16 @@
 
     '
   sposib: PDF ILI Technology через cdn-shop.adafruit.com; pdftotext -layout, 2026-08-26
-  notatka: Розділ 46 розрізняє RGB565 як один із доступних форматів пікселів — це не ціль
-    (стеля) контролера, а один із режимів, який можна обрати командою COLMOD (3Ah). ILI9341
-    підтримує 16-бітний формат RGB565 з дозвіл 65536 кольорів, але паралельно уміє 18-бітний
-    формат з 262K кольорів. На практиці, бібліотеки TFT_eSPI і LovyanGFX типово використовують
-    RGB565 (удвічі менше байтів на піксель — удвічі швидший кадр).
+  notatka: Розділ 46 розрізняє RGB565 як один із доступних форматів пікселів — це не ціль (стеля) контролера,
+    а один із режимів, який можна обрати командою COLMOD (3Ah). ILI9341 підтримує 16-бітний формат RGB565
+    з дозвіл 65536 кольорів, але паралельно уміє 18-бітний формат з 262K кольорів. На практиці, бібліотеки
+    TFT_eSPI і LovyanGFX типово використовують RGB565 (удвічі менше байтів на піксель — удвічі швидший
+    кадр).
   title: ILI9341 — RGB565 формат пікселя, не ціль контролера
   match: ILI9341 уміє 262 тис\. кольорів.*COLMOD \(3Ah\)
   status: verbatim
-  source: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution
-    and 262K color, Specification V1.11, розділ 8.2.33 «COLMOD: Pixel Format Set (3Ah)»'
+  source: 'ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color,
+    Specification V1.11, розділ 8.2.33 «COLMOD: Pixel Format Set (3Ah)»'
   quote: '8.2.33. COLMOD: Pixel Format Set (3Ah)
 
 
@@ -104,10 +67,10 @@
 
     '
   method: PDF ILI Technology через cdn-shop.adafruit.com; pdftotext -layout, 2026-08-26
-  note: Розділ 46 розрізняє RGB565 як один із доступних форматів пікселів — це не ціль (стеля)
-    контролера, а один із режимів, який можна обрати командою COLMOD (3Ah). ILI9341 підтримує
-    16-бітний формат RGB565 з дозвіл 65536 кольорів, але паралельно уміє 18-бітний формат
-    з 262K кольорів. На практиці, бібліотеки TFT_eSPI і LovyanGFX типово використовують RGB565
-    (удвічі менше байтів на піксель — удвічі швидший кадр).
+  note: Розділ 46 розрізняє RGB565 як один із доступних форматів пікселів — це не ціль (стеля) контролера,
+    а один із режимів, який можна обрати командою COLMOD (3Ah). ILI9341 підтримує 16-бітний формат RGB565
+    з дозвіл 65536 кольорів, але паралельно уміє 18-бітний формат з 262K кольорів. На практиці, бібліотеки
+    TFT_eSPI і LovyanGFX типово використовують RGB565 (удвічі менше байтів на піксель — удвічі швидший
+    кадр).
   sha:
   - 0bafbde2

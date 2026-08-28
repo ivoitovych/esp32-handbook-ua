@@ -1,32 +1,25 @@
-# М2, крок 3.1 — Пакет 1: живлення й ключі.
-#
-# Одиниці класу F з числами/ідентифікаторами із джерел.
-
-
 - nazva: Deep sleep споживає 10 мкА; з ULP — близько 150 мкА
   zbih: ~10 мкА.*150 мкА
   klas: A
-  dzherelo: ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с.
-    30
-  cytata: "Table 4-2. Power Consumption by Power Modes\nPower mode          Description  \
-    \                    Power Consumption\nDeep-sleep          The ULP coprocessor is powered\
-    \ up.        150 µA\n                    ULP sensor-monitored pattern      100 µA @1%\
-    \ duty\n                    RTC timer + RTC memory            10 µA\n"
+  dzherelo: 'ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с. 30 (кеш: dzherela-kesh/esp32_datasheet_en.pdf)'
+  cytata: "Table 4-2. Power Consumption by Power Modes\nPower mode          Description              \
+    \        Power Consumption\nDeep-sleep          The ULP coprocessor is powered up.        150 µA\n\
+    \                    ULP sensor-monitored pattern      100 µA @1% duty\n                    RTC timer\
+    \ + RTC memory            10 µA\n"
   sposib: PDF Espressif, кеш `esp32-datasheet.pdf`, pdftotext -layout, 2026-08-26
-  notatka: 'Таблиця 4-2 дає три режими Deep sleep: з ULP 150 µA, датчик 100 µA, тільки RTC
-    10 µA. Книга наводить саме ці числа (за ~10 мкА вважаємо 10 µA, а за "близько 150" — 150
-    µA). Це дослівна цитата з джерела.'
+  notatka: 'Таблиця 4-2 дає три режими Deep sleep: з ULP 150 µA, датчик 100 µA, тільки RTC 10 µA. Книга
+    наводить саме ці числа (за ~10 мкА вважаємо 10 µA, а за "близько 150" — 150 µA). Це дослівна цитата
+    з джерела.'
   title: Deep sleep споживає 10 мкА; з ULP — близько 150 мкА
   match: ~10 мкА.*150 мкА
   status: verbatim
-  source: ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с. 30
-  quote: "Table 4-2. Power Consumption by Power Modes\nPower mode          Description   \
-    \                   Power Consumption\nDeep-sleep          The ULP coprocessor is powered\
-    \ up.        150 µA\n                    ULP sensor-monitored pattern      100 µA @1%\
-    \ duty\n                    RTC timer + RTC memory            10 µA\n"
+  source: 'ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с. 30 (кеш: dzherela-kesh/esp32_datasheet_en.pdf)'
+  quote: "Table 4-2. Power Consumption by Power Modes\nPower mode          Description               \
+    \       Power Consumption\nDeep-sleep          The ULP coprocessor is powered up.        150 µA\n\
+    \                    ULP sensor-monitored pattern      100 µA @1% duty\n                    RTC timer\
+    \ + RTC memory            10 µA\n"
   method: PDF Espressif, кеш `esp32-datasheet.pdf`, pdftotext -layout, 2026-08-26
-  note: 'Таблиця 4-2 дає три режими Deep sleep: з ULP 150 µA, датчик 100 µA, тільки RTC 10
-    µA. Книга наводить саме ці числа (за ~10 мкА вважаємо 10 µA, а за "близько 150" — 150
-    µA). Це дослівна цитата з джерела.'
+  note: 'Таблиця 4-2 дає три режими Deep sleep: з ULP 150 µA, датчик 100 µA, тільки RTC 10 µA. Книга наводить
+    саме ці числа (за ~10 мкА вважаємо 10 µA, а за "близько 150" — 150 µA). Це дослівна цитата з джерела.'
   sha:
   - 53345c34
