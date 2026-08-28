@@ -50,7 +50,7 @@ STARI = {"nazva", "zbih", "klas", "dzherelo", "cytata", "sposib",
          "notatka", "shukaty", "rozrakhunok"}
 VIDOMI = OBOVYAZKOVI | STARI | {
     "sha", "source", "quote", "method", "note", "look_for", "calculation",
-    "looked_at", "perevireno-okom", "_prokhid"}
+    "looked_at", "absent", "control", "perevireno-okom", "_prokhid"}
 
 # Що клас зобов'язаний мати. Ключ — і літера, і слово: переїзд не
 # скінчено, і перевірка мусить розуміти обидва записи.
@@ -66,6 +66,15 @@ POTREBUYE = {
     # він каже лише «ми подивилися», що вже є `E`. Поле те саме,
     # `source`, бо це і є джерело: просто внутрішнє.
     "S": ("source",), "self-consistent": ("source",),
+    # `N` — доведення відсутністю. `absent` несе **рядок, якого в
+    # документі немає**, і саме він робить твердження перевірним:
+    # шар 3 має впасти, якщо рядок там усе-таки знайдеться.
+    #
+    # `control` не обов'язкове, але без нього доказ слабкий, і це
+    # сказано в SCHEMA.md: мовчання документа доводить лише там, де
+    # сусідній документ того самого роду говорить. `SOC_BT_SUPPORTED`
+    # немає в `esp32s2/soc_caps.h` — і є в усіх десяти інших.
+    "N": ("source", "absent"), "absent-from-source": ("source", "absent"),
 }
 
 # Словник станів. Досі не перевірявся **зовсім**: `POTREBUYE.get(klas)`
@@ -198,6 +207,15 @@ def samoperevirka() -> int:
         ("self-consistent без джерела",
          {"title": "т", "status": "self-consistent", "match": "x",
           "quote": "рядок книги"}, 1),
+        # Доведення відсутністю: без `absent` воно не перевірне
+        # взагалі — нема чого не шукати.
+        ("absent-from-source повний",
+         {"title": "т", "status": "absent-from-source", "match": "x",
+          "source": "esp32s2/soc_caps.h", "absent": "SOC_BT_SUPPORTED",
+          "control": "esp32s3/soc_caps.h"}, 0),
+        ("absent-from-source без absent",
+         {"title": "т", "status": "absent-from-source", "match": "x",
+          "source": "esp32s2/soc_caps.h"}, 1),
     ]
     pomylok = 0
     for imya, r, ochik in vypadky:

@@ -801,7 +801,19 @@ def perevirka(kachaty: bool,
             urly = dzherela_zapysu(z)
             # Клас `S` адресує книгу, а не мережу, тож відсутність URL
             # у нього — норма, а не «нема чого звіряти».
-            if not frahmenty or (not urly and klas != "S"):
+            #
+            # Клас `N` не має цитати **за означенням**: він доводить
+            # відсутністю, і те, чого немає, стоїть у полі `absent`.
+            # Вимагати від нього уривків означало б відкидати його як
+            # «нема чого звіряти» — тобто мовчки скасувати клас.
+            if klas == "N":
+                if not urly:
+                    pidsumok["nichoho"] += 1
+                    naslidky.append(dict(
+                        fayl=f.stem, nazva=nazva, stan="nichoho",
+                        detali="клас N без URL джерела"))
+                    continue
+            elif not frahmenty or (not urly and klas != "S"):
                 pidsumok["nichoho"] += 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="nichoho",
@@ -875,6 +887,54 @@ def perevirka(kachaty: bool,
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="nedosyazhne",
                     detali=f"{len(nedosyazhni)} джерел не в кеші"))
+                continue
+
+            # **Доведення відсутністю — єдиний клас, який шар 3 може
+            # спростувати, а не лише не підтвердити.**
+            #
+            # Для решти класів шар 3 питає «чи стоїть цей рядок у
+            # документі», і відповідь «ні» означає розбіжність цитати —
+            # часто хибну тривогу (переніс рядка, таблиця в PDF). Тут
+            # питання обернене й відповідь однозначна: якщо рядок, чия
+            # ВІДСУТНІСТЬ і є доказом, у документі знайдено, то доказ
+            # не розбіжний — він хибний.
+            if klas == "N":
+                shukane = str(z.get("absent") or "").strip()
+                if not shukane:
+                    pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
+                    naslidky.append(dict(
+                        fayl=f.stem, nazva=nazva, stan="pomylka",
+                        detali="клас N без поля `absent` — нема чого не "
+                               "шукати"))
+                    continue
+                znaydeno = [u for u, tx in zip(urly, teksty) if shukane in tx]
+                if znaydeno:
+                    pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
+                    naslidky.append(dict(
+                        fayl=f.stem, nazva=nazva, stan="pomylka",
+                        detali=f"клас N СПРОСТОВАНО: «{shukane[:40]}» "
+                               f"СТОЇТЬ у названому документі"))
+                    continue
+                # Контроль: документ того самого роду, де рядок Є. Без
+                # нього мовчання може означати просто інший формат
+                # файлу, а не відсутність властивості.
+                kontrol = str(z.get("control") or "").strip()
+                if kontrol:
+                    kt = [tx for u, tx in zip(urly, teksty) if u != kontrol]
+                    ku = [u for u in urly if u == kontrol]
+                    if ku and not any(shukane in tx for u, tx in
+                                      zip(urly, teksty) if u == kontrol):
+                        pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
+                        naslidky.append(dict(
+                            fayl=f.stem, nazva=nazva, stan="pomylka",
+                            detali=f"клас N: у контрольному документі "
+                                   f"«{shukane[:30]}» теж немає — "
+                                   f"мовчання нічого не доводить"))
+                        continue
+                pidsumok["ok"] += 1
+                naslidky.append(dict(
+                    fayl=f.stem, nazva=nazva, stan="ok",
+                    detali=f"відсутність «{shukane[:40]}» підтверджено"))
                 continue
 
             vsjogo_ryadkiv = sum(len(g) for g in frahmenty)
