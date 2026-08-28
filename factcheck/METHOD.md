@@ -427,6 +427,27 @@ Minimum set:
 9. **no alternative is a leak** — none catches more than all the others
    together.
 
+**One word can name fields in more than one schema, and a rename by
+search-and-replace will corrupt the others.** This project carries
+three:
+
+    evidence records   title, match, status, source, quote, method, note
+    triage records     rid, look_for, chomu, id, text
+    helper output      id, verdict, source, quote, file, looked_at
+
+`look_for` lives in two of them, `quote` in two, and the class letter is
+both a record field and a property of a registry unit. A migration
+inventory built by grep cannot see the boundary: converting one tool's
+`look_for` moved it to the wrong schema, its selector then matched
+**zero** candidates, and it reported no problem at all — because
+finding nothing is what a filter that matches nothing does.
+
+> Before renaming a field, ask which **schema** the reader belongs to,
+> not which word it uses. And convert the **writers**, not only the
+> readers: after the old names are dropped, the first tool that writes a
+> record puts them back, one landing at a time, and the migration decays
+> silently for weeks.
+
 **Normalise markup, not content.** Strip quotation marks and typographic
 apostrophes from the comparison entirely: the document has
 `Timer Task ("Tmr Svc")` and the helper writes `Timer Task (Tmr Svc)` —
@@ -501,6 +522,19 @@ other direction, flagged seven fabricated document names of which
   hash, which is one-way — but candidate URLs can be generated and
   hashed until one matches. Twenty-five of thirty-two were recovered
   this way with certainty, where guessing by name had failed.
+- **A name derived from an absent URL is worse than no name.** A pass
+  that renames cache files to the canonical `<hash>-<basename>` form
+  read the manifest's URL column, and one row held an em-dash — the
+  placeholder for *no URL at all*. It produced `bda05058-_`: a
+  canonical-looking name derived from nothing. **The name is derived
+  from the URL, so where there is no URL there is no name**, and the
+  row must be left alone.
+- **Rows with no URL are unreproducible by definition, and they hide.**
+  Five files in this cache have no URL. They are real documents, they
+  hash correctly, and no check called them out — because every check
+  asked "does the file match its hash", and they do. A manifest whose
+  purpose is reproducibility should count its own rows that cannot
+  reproduce.
 - **The manifest can register the book as a source.** Seven book files
   were removed from the cache and four came back with the next
   download, because eight manifest rows pointed at the book's own raw
@@ -544,6 +578,43 @@ Do not mix the two in one work order.
 **And record the seed, not only the result.** `sort -R` without a fixed
 random source cannot be repeated by anyone, including its author the
 next day — which is precisely the rule we demand of helpers.
+
+**But the seed alone does not reproduce a sample.** It reproduces the
+*draw*; the draw runs over a population, and the population moves every
+time anybody lands a piece of evidence. Measured: the same seed over the
+`F` queue gave one hundred units in the morning and a **different**
+hundred seven hours later, because the queue had gone from 1740 to 1749.
+The morning's re-run agreed, and that agreement was true for that minute
+only.
+
+So a measurement run records three things, each closing a different
+hole:
+
+    seed             to repeat the draw
+    population hash  to see that the population is no longer the same
+    the drawn ids    to have the units themselves when the draw
+                     cannot be repeated
+
+The list of ids is the only one that survives a moving queue. It is
+weaker than a seed — it does not prove the draw was honest — and
+stronger — the result can be recomputed a month later.
+
+### Version the work order, or the comparison is memory
+
+The work order **is** the part of the technology that acts on the
+helper. Ours changed nine times and every change was measured — but the
+result could not be attributed to the change, because nothing in a run
+recorded which order produced it.
+
+> Changing the work order changes the technology. Changing a technology
+> without a version is not an experiment; it is weather.
+
+Every generated order now carries `order_version` — a hash of its own
+template — and so does the run's sample file. A ledger joins them, one
+row per run, appended and never edited. Two rows with the same version
+are one technology measured twice, and a difference between them is
+noise. Two rows with different versions are two technologies, and the
+diff between the versions is the cause.
 
 ---
 
@@ -622,6 +693,17 @@ composing the regression report when the last helper finished.
 The final numbers were 25 accepted, zero rejections, zero
 self-references, and every report matching its file. **All three
 findings were artefacts of reading a file mid-write.**
+
+**And it happened a third time, with the guard in place.** A status
+listing showed a helper as `completed` while its file was still growing
+— 2343 bytes when read, 3465 when the completion notification finally
+arrived. The measurement taken in between reported 13 confirmations; the
+real number was 18.
+
+> The only reliable sign that a helper has finished is **its completion
+> notification**. A status line in a listing is not that sign, and it is
+> more dangerous than an obviously running job, because it invites the
+> measurement.
 
 > Measure only finished work. A partial file is not a small truth; it
 > is a different file. The rule that saved this — check one case by
