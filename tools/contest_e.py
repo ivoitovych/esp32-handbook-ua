@@ -42,8 +42,8 @@
 разом із ним. Тому зламані файли **називаються поіменно й
 пропускаються**, а не валять прогін.
 
-    tools/shturm.py <каталог>            зібрати factcheck/SWEEP-NO-SIGNAL.md
-    tools/shturm.py <каталог> --korotko  лише числа
+    tools/contest_e.py <каталог>            зібрати factcheck/SWEEP-NO-SIGNAL.md
+    tools/contest_e.py <каталог> --korotko  лише числа
 """
 from __future__ import annotations
 
@@ -74,8 +74,8 @@ KANDYDATY = ROOT / "factcheck" / "shturm-kandydaty.yaml"
 # не лише метадані комітів). Вписаний сюди, він валив би кожен push.
 # Тому — аргумент або змінна середовища.
 #
-#     tools/shturm.py <каталог>
-#     SHTURM_VYVANTAZHENNYA=<каталог> tools/shturm.py
+#     tools/contest_e.py <каталог>
+#     SHTURM_VYVANTAZHENNYA=<каталог> tools/contest_e.py
 
 PIDPYSY = {
     "znayshov": "Джерело знайдено",
@@ -143,7 +143,7 @@ def tretiy_shar() -> dict[str, str]:
 
 ZAHOLOVOK = """# Штурм класу `E`
 
-**Генерується** `tools/shturm.py`. Правити вручну нема сенсу.
+**Генерується** `tools/contest_e.py`. Правити вручну нема сенсу.
 
 Клас `E` присвоюється механічно — за браком у тексті цифри,
 ідентифікатора, назви, одиниці виміру, — а читається як «джерела не
@@ -191,7 +191,7 @@ def main() -> int:
     c = collections.Counter(str(z.get("verdykt", "?")) for z in zap)
 
     if "--korotko" in sys.argv:
-        print(f"shturm: записів {len(zap)}, зламаних файлів {len(bidy)}; "
+        print(f"contest_e: записів {len(zap)}, зламаних файлів {len(bidy)}; "
               + ", ".join(f"{k} {v}" for k, v in sorted(c.items())))
         return 0
 
@@ -206,7 +206,7 @@ def main() -> int:
              "zvidky": z.get("_fayl", "?")}
             for z in zap if str(z.get("verdykt")) == "znayshov"]
     KANDYDATY.write_text(
-        "# Згенеровано `tools/shturm.py`. Не реєстр: кандидати на\n"
+        "# Згенеровано `tools/contest_e.py`. Не реєстр: кандидати на\n"
         "# перевірку третім шаром. `tools/citaty.py "
         f"{KANDYDATY.relative_to(ROOT)}`\n"
         + yaml.safe_dump(kand, allow_unicode=True, sort_keys=False),
@@ -265,7 +265,7 @@ def main() -> int:
         r.append("")
 
     CIL.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"shturm: записів {len(zap)}, зламаних {len(bidy)} "
+    print(f"contest_e: записів {len(zap)}, зламаних {len(bidy)} "
           f"→ {CIL.relative_to(ROOT)}; кандидатів {len(kand)}, "
           f"вистояло третій шар {vystoyalo}")
     return 0

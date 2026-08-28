@@ -167,7 +167,7 @@
     \ & ~(BIT34|BIT35|BIT36|BIT37|BIT38|BIT39))\nesp32s3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK\
     \ (SOC_GPIO_VALID_GPIO_MASK)\nesp32c3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK SOC_GPIO_VALID_GPIO_MASK\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Проєкт 62 не мав переліку складових узагалі, тож `tools/piny.py` його піни не
+  notatka: 'Проєкт 62 не мав переліку складових узагалі, тож `tools/pins.py` його піни не
     перевіряв: файл нічого собі не приписував. Додано перелік і таблицю пінів на три сімейства
     — і разом із ними названо причину вибору.
 
@@ -190,7 +190,7 @@
     \ ~(BIT34|BIT35|BIT36|BIT37|BIT38|BIT39))\nesp32s3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK (SOC_GPIO_VALID_GPIO_MASK)\n\
     esp32c3: SOC_GPIO_VALID_OUTPUT_GPIO_MASK SOC_GPIO_VALID_GPIO_MASK\n"
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Проєкт 62 не мав переліку складових узагалі, тож `tools/piny.py` його піни не перевіряв:
+  note: 'Проєкт 62 не мав переліку складових узагалі, тож `tools/pins.py` його піни не перевіряв:
     файл нічого собі не приписував. Додано перелік і таблицю пінів на три сімейства — і разом
     із ними названо причину вибору.
 

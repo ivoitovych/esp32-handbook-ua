@@ -148,7 +148,7 @@ def main(argv: list[str]) -> int:
             # `match` лишалася теча. Дані я звірив 2026-08-28, але
             # звірити наслідок і лишити причину — це відкласти, а не
             # полагодити. Прибрати цей рядок можна лише разом із
-            # прогоном `imena.py --stysnuty`.
+            # прогоном `field_names.py --stysnuty`.
             r["zbih"] = r["match"] = novyy
             if len(urnyven) > 1:
                 print("      (альтернація на %d одиниць)" % len(urnyven))

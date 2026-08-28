@@ -35,9 +35,9 @@
       з них лишилися б узагалі без доказу        873
       з них подані як `A`/`B` (звірено з джерелом) 237
 
-    tools/techa.py            перелік
-    tools/techa.py --naslidky що тримається на течах (повільніше)
-    tools/techa.py --samoperevirka  показ на навмисно зіпсованому вході
+    tools/leak.py            перелік
+    tools/leak.py --naslidky що тримається на течах (повільніше)
+    tools/leak.py --samoperevirka  показ на навмисно зіпсованому вході
 """
 from __future__ import annotations
 

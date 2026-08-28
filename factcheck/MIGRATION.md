@@ -53,7 +53,7 @@
 
 ## Чим доводиться, що робота не втрачається
 
-`tools/znimok.py` знімає, до яких **одиниць** чіпляється кожен доказ.
+`tools/snapshot.py` знімає, до яких **одиниць** чіпляється кожен доказ.
 Доказ прив'язаний не до тексту, а до одиниці; текст — лише спосіб її
 назвати.
 
@@ -61,7 +61,7 @@
 
 Після кожного етапу:
 
-    tools/znimok.py factcheck/znimky/pryvyazky-do-pereyizdu.json --zvirty
+    tools/snapshot.py factcheck/znimky/pryvyazky-do-pereyizdu.json --zvirty
 
 Якщо рядок «втратили одиниці» не нуль — етап відкочується. Це не
 формальність: сьогодні одна посадка вже мовчки переписала файли
@@ -75,7 +75,7 @@
 
 ## Етап 1 — англійські імена полів · ✅ зроблено
 
-`tools/imena.py --rozshyryty`
+`tools/field_names.py --rozshyryty`
 
 **Розширення, а не заміна.** Над тими самими файлами працює другий
 супровідник; одномоментна заміна зламала б його інструменти тієї ж
@@ -99,14 +99,14 @@
     B → derived               E → no-external-signal K → code-context
     C → named-unreachable     F → unchecked
 
-**Доведено:** `imena.py --zvirty` — 1337 записів, без англійських імен
+**Доведено:** `field_names.py --zvirty` — 1337 записів, без англійських імен
 нуль. `znimok --zvirty` — втрачених одиниць нуль. `make check` — 46 з 46.
 
 ---
 
 ## Етап 2 — жаргон геть із записів · ✅ зроблено
 
-`tools/bez_slenhu.py --pysaty`
+`tools/deslang.py --pysaty`
 
 Поле `method` тепер каже, **як і коли** джерело отримано, і більше
 нічого. Двадцять два різні формулювання, з них шість покривали 570
@@ -115,7 +115,7 @@
     переписано 582, лишилося без правила 22
 
 **Двадцять два лишилися навмисно.** Там названий інструмент **і є**
-методом: «`python3 tools/arytmetyka.py`, 2026-08-26» для перевірки
+методом: «`python3 tools/arithmetic.py`, 2026-08-26» для перевірки
 обчисленням. Це чесний запис способу, а не прикраса; скрипт їх
 доповідає, а не переписує мовчки.
 
@@ -311,9 +311,9 @@ The slang is not only inside the documents. It **is** the documents:
     SPLIT.md        PROKHID-POVNYY.md   TRACES.md      SPROSTOVANE.md
     dokazy/  rozbir/  prokhid/  doslidy/  znimky/  hvylya2/
 
-And so are the tools: `naryad_f.py`, `prochid_zvid.py`,
-`prochid_posadka.py`, `posadka_c.py`, `znimok.py`, `mira_f.py`,
-`shturm.py`, `vybirka.py`.
+And so are the tools: `work_orders_f.py`, `sweep_digest.py`,
+`sweep_land.py`, `land_c.py`, `snapshot.py`, `measure_f.py`,
+`contest_e.py`, `vybirka.py`.
 
 A repository whose file names need a glossary cannot be handed to
 anyone. Renaming is therefore not cosmetics — it is the same defect as
@@ -364,17 +364,17 @@ that correspondence for a Ukrainian book.
 
 | Now | Becomes |
 |---|---|
-| `naryad_f.py` | `brief_unchecked.py` |
-| `prochid_zvid.py` | `verify_quotes.py` |
-| `prochid_posadka.py` | `import_evidence.py` |
-| `posadka_c.py` | `import_unreachable.py` |
-| `znimok.py` | `snapshot.py` |
-| `imena.py` | `rename_fields.py` |
-| `bez_slenhu.py` | `strip_jargon.py` |
-| `mira_f.py` | `measure.py` |
-| `shturm.py` · `vybirka.py` | `sweep.py` · `sample.py` |
-| `modalnist.py` | `modality.py` |
-| `citaty.py` · `sprostovane.py` | `quotes.py` · `refuted.py` |
+| `work_orders_f.py` | `brief_unchecked.py` |
+| `sweep_digest.py` | `verify_quotes.py` |
+| `sweep_land.py` | `import_evidence.py` |
+| `land_c.py` | `import_unreachable.py` |
+| `snapshot.py` | `snapshot.py` |
+| `field_names.py` | `rename_fields.py` |
+| `deslang.py` | `strip_jargon.py` |
+| `measure_f.py` | `measure.py` |
+| `contest_e.py` · `vybirka.py` | `sweep.py` · `sample.py` |
+| `modality.py` | `modality.py` |
+| `citaty.py` · `refuted.py` | `quotes.py` · `refuted.py` |
 
 ### Order, and why this order
 
@@ -389,7 +389,7 @@ the next:
    `Makefile` names them. Done last, one at a time, `make check` after
    each.
 
-After every batch: `tools/znimok.py … --zvirty`. Zero lost claims or
+After every batch: `tools/snapshot.py … --zvirty`. Zero lost claims or
 the batch is reverted.
 
 ### What batch 1 actually did, and what it got wrong
@@ -440,7 +440,7 @@ Ukrainian. They are, and here is the exact size of what is left.
 |---|---|
 | records carrying **both** names | 1337 of 1337 |
 | records carrying only Ukrainian | 0 |
-| `skhema.py` accepts both | yes |
+| `schema.py` accepts both | yes |
 
 So the English names are fully in place. What remains is dropping the
 Ukrainian ones — and that is blocked by a measured fact:

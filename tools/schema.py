@@ -28,8 +28,8 @@
 одиниці — рендер, і містить **лише** рядок таблиці; номера рядка у
 видимій частині немає.
 
-    tools/skhema.py                перевірити
-    tools/skhema.py --samoperevirka показ на зіпсованому вході
+    tools/schema.py                перевірити
+    tools/schema.py --samoperevirka показ на зіпсованому вході
 """
 from __future__ import annotations
 
@@ -223,7 +223,7 @@ def main() -> int:
     bz = perevir_zapysy(zap)
     bk = perevir_kartky()
 
-    print(f"skhema: записів {len(zap)}, порушень схеми {len(bz)}; "
+    print(f"schema: записів {len(zap)}, порушень схеми {len(bz)}; "
           f"порушень контракту картки {len(bk)}")
     for b in bz[:15]:
         print(f"   ✗ {b}")

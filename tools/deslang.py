@@ -7,7 +7,7 @@ A record's `method` field is meant to say **how and when** the source
 was obtained. Instead it carried our internal workflow vocabulary:
 
     "Суцільний прохід 2026-08-27. Документ отримано в сесії, витяг
-     звірено з ним підрядком машинно (`tools/prochid_zvid.py`)…"
+     звірено з ним підрядком машинно (`tools/sweep_digest.py`)…"
 
 `суцільний прохід`, `посадка`, `хвиля`, `наряд` are two maintainers'
 private words. They mean nothing to anyone else, and they were written
@@ -18,7 +18,7 @@ afternoon, in the same hours I was writing rules about clarity.
 
 ## Why the tool name also goes
 
-`(tools/prochid_zvid.py)` is an implementation detail of *this*
+`(tools/sweep_digest.py)` is an implementation detail of *this*
 repository. A record that names it cannot travel to another book — and
 travelling to another book is the whole point of the migration.
 
@@ -33,8 +33,8 @@ rewrite is keyed by phrase rather than done by hand.
 Anything not matched is **left alone and reported** — a silent
 best-effort rewrite of prose nobody re-read would be its own defect.
 
-    tools/bez_slenhu.py --pysaty   rewrite
-    tools/bez_slenhu.py            dry run: what is left
+    tools/deslang.py --pysaty   rewrite
+    tools/deslang.py            dry run: what is left
 """
 from __future__ import annotations
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Докачування джерел для незвірених одиниць. Наряд — factcheck/DOKACHATY-m2.md.
 #
-# Кожен рядок іде через tools/kesh.py, який кладе файл у dzherela-kesh/,
+# Кожен рядок іде через tools/cache.py, який кладе файл у dzherela-kesh/,
 # рахує sha256 і пише рядок у маніфест. Хибна адреса тут не отруює кеш
-# мовчки: kesh.py перевіряє, що завантажене справді відкривається, і
+# мовчки: cache.py перевіряє, що завантажене справді відкривається, і
 # невдача видно в підсумку.
 set -u
 cd "$(dirname "$0")/.."
@@ -11,7 +11,7 @@ cd "$(dirname "$0")/.."
 VZYATY=0; NE_VYYSHLO=0
 vzyaty() {
     local url="$1" chomu="$2"
-    if python3 tools/kesh.py "$url" >/dev/null 2>&1; then
+    if python3 tools/cache.py "$url" >/dev/null 2>&1; then
         echo "   ✓ $chomu"
         VZYATY=$((VZYATY+1))
     else

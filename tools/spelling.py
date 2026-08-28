@@ -12,9 +12,9 @@
 Вона знімає з людини одну річ — механічну описку — і робить це на 50 000
 слововживань за секунди.
 
-    tools/pravopys.py            перелік невідомих слів за частотою
-    tools/pravopys.py --файли    де саме кожне трапляється
-    tools/pravopys.py --suvoro   ненульовий вихід, якщо є невідомі
+    tools/spelling.py            перелік невідомих слів за частотою
+    tools/spelling.py --файли    де саме кожне трапляється
+    tools/spelling.py --suvoro   ненульовий вихід, якщо є невідомі
 
 ## Що не перевіряється
 
@@ -29,8 +29,8 @@
 `docs/DESIGN.md`). Він завантажується в кеш і записується в маніфест із
 `sha256`; сюди йде лише вказівка, звідки брати.
 
-    tools/kesh.py https://raw.githubusercontent.com/LibreOffice/dictionaries/master/uk_UA/uk_UA.aff
-    tools/kesh.py https://raw.githubusercontent.com/LibreOffice/dictionaries/master/uk_UA/uk_UA.dic
+    tools/cache.py https://raw.githubusercontent.com/LibreOffice/dictionaries/master/uk_UA/uk_UA.aff
+    tools/cache.py https://raw.githubusercontent.com/LibreOffice/dictionaries/master/uk_UA/uk_UA.dic
 
 ## Власний словник проєкту
 
@@ -88,9 +88,9 @@ def slovnyk():
     if not (aff.exists() and dic.exists()):
         sys.exit(
             "немає словника uk_UA в dzherela-kesh/.\n"
-            "  tools/kesh.py https://raw.githubusercontent.com/LibreOffice/"
+            "  tools/cache.py https://raw.githubusercontent.com/LibreOffice/"
             "dictionaries/master/uk_UA/uk_UA.aff\n"
-            "  tools/kesh.py https://raw.githubusercontent.com/LibreOffice/"
+            "  tools/cache.py https://raw.githubusercontent.com/LibreOffice/"
             "dictionaries/master/uk_UA/uk_UA.dic")
     return Dictionary.from_files(str(KESH / "uk_UA"))
 

@@ -40,7 +40,7 @@
 - nazva: Шістнадцяткові обсяги флешу в командах read-flash
   zbih: 0x400000|0x800000|0x1000000
   klas: D
-  dzherelo: tools/arytmetyka.py — перерахунок при кожній перевірці
+  dzherelo: tools/arithmetic.py — перерахунок при кожній перевірці
   sposib: make arytmetyka, 2026-08-26
   notatka: 'Книга друкує ці три числа в розділі 17, додатку C і на картці К2 як явну заміну
     для `ALL`. Зовнішнього джерела тут не потрібно — це перерахунок, і він тепер постійний:
@@ -52,7 +52,7 @@
   title: Шістнадцяткові обсяги флешу в командах read-flash
   match: 0x400000|0x800000|0x1000000
   status: arithmetic
-  source: tools/arytmetyka.py — перерахунок при кожній перевірці
+  source: tools/arithmetic.py — перерахунок при кожній перевірці
   method: make arytmetyka, 2026-08-26
   note: 'Книга друкує ці три числа в розділі 17, додатку C і на картці К2 як явну заміну для
     `ALL`. Зовнішнього джерела тут не потрібно — це перерахунок, і він тепер постійний: змінене
@@ -81,7 +81,7 @@
     0x6000|write-flash 0x9000|nvs-\d+\.bin 0x6000|generate [^\n]*0x6000|read-flash 0x8000
     0x1000
   klas: D
-  dzherelo: tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv
+  dzherelo: tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv
     (прохід 7)
   sposib: make arytmetyka, 2026-08-26
   notatka: 'Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах
@@ -100,7 +100,7 @@
     0x6000|write-flash 0x9000|nvs-\d+\.bin 0x6000|generate [^\n]*0x6000|read-flash 0x8000
     0x1000
   status: arithmetic
-  source: tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv
+  source: tools/arithmetic.py; розкладка з components/partition_table/partitions_singleapp.csv
     (прохід 7)
   method: make arytmetyka, 2026-08-26
   note: 'Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах

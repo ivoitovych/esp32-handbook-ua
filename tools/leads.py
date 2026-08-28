@@ -27,7 +27,7 @@
 Тому наряд бере лише ті сліди, у яких названо репозиторій, досяжний
 звідси. Решта лишається в звіті як борг із чесною причиною.
 
-    tools/leady.py <каталог> [<каталог>…]   зібрати factcheck/BRIEF-LEADS.md
+    tools/leads.py <каталог> [<каталог>…]   зібрати factcheck/BRIEF-LEADS.md
 """
 from __future__ import annotations
 
@@ -56,7 +56,7 @@ NEDOSYAZHNE = re.compile(
 
 ZAHOLOVOK = """# Наряд: сліди класу `E`, які можна відпрацювати звідси
 
-**Генерується** `tools/leady.py`. Це **не** перевірка присуду — присуд
+**Генерується** `tools/leads.py`. Це **не** перевірка присуду — присуд
 уже випробуваний. Це відпрацювання того, що штурм і міра лишили як
 `ideya`: «джерела не дістав, але знаю, де воно».
 
@@ -155,7 +155,7 @@ def zvesty(katalogy: list[str]) -> int:
 
     r = [f"""# Відпрацьовані сліди класу `E`
 
-**Генерується** `tools/leady.py --zvit`. Наряд —
+**Генерується** `tools/leads.py --zvit`. Наряд —
 `factcheck/BRIEF-LEADS.md`.
 
 Слід (`ideya`) — це здогад попереднього помічника про те, де шукати.
@@ -201,7 +201,7 @@ def zvesty(katalogy: list[str]) -> int:
         r.append("")
 
     ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"leady: відповідей {len(zap)}, заявлено {len(kand)}, "
+    print(f"leads: відповідей {len(zap)}, заявлено {len(kand)}, "
           f"витримали шар 3 {len(vystoyalo)} → {ZVIT.relative_to(ROOT)}")
     return 0
 
@@ -240,7 +240,7 @@ def main() -> int:
         r.append(f"- де шукати (здогад, не перевірений): "
                  f"{str(z.get('propozyciya', '')).strip()}\n")
     CIL.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"leady: слідів {len(ideyi)}, придатних {len(prydatni)}, "
+    print(f"leads: слідів {len(ideyi)}, придатних {len(prydatni)}, "
           f"пакетів {(len(prydatni) + NA_PAKET - 1) // NA_PAKET} "
           f"→ {CIL.relative_to(ROOT)}")
     return 0

@@ -27,8 +27,8 @@
 допомагає, а заважає. Такі слова шукають не через покажчик, а через
 зміст.
 
-    tools/pokazhchyk.py            згенерувати dodatky/z-pokazhchyk.md
-    tools/pokazhchyk.py --pokazaty показати, що знайдено, без запису
+    tools/book_index.py            згенерувати dodatky/z-pokazhchyk.md
+    tools/book_index.py --pokazaty показати, що знайдено, без запису
 """
 from __future__ import annotations
 
@@ -109,7 +109,7 @@ def storinky_knyhy() -> list[tuple[int, str]]:
     import pymupdf
 
     if not KNYHA.exists():
-        print(f"pokazhchyk: немає {KNYHA.relative_to(ROOT)} — спершу `make dovidnyk`")
+        print(f"book_index: немає {KNYHA.relative_to(ROOT)} — спершу `make dovidnyk`")
         return []
     out = []
     with pymupdf.open(KNYHA) as d:
@@ -199,7 +199,7 @@ def main() -> int:
         ryadky.append("")
     ryadky.append(":::")
     CIL.write_text("\n".join(ryadky) + "\n", encoding="utf-8")
-    print(f"pokazhchyk: термінів {len(korysni)}, "
+    print(f"book_index: термінів {len(korysni)}, "
           f"відкинуто заширокі {vidkynuto}, "
           f"→ {CIL.relative_to(ROOT)}")
     return 0

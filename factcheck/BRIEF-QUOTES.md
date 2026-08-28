@@ -1,6 +1,6 @@
-# Наряд: 95 цитат, яких немає в джерелі
+# Наряд: 72 цитат, яких немає в джерелі
 
-**Генерується** `tools/naryad.py`. Питання **не** про цитату.
+**Генерується** `tools/work_orders.py`. Питання **не** про цитату.
 
 Третій шар уже сказав, що цитати за адресою немає. Причина відома і
 здебільшого та сама: супровідник **причепурив** цитату — скоротив
@@ -49,28 +49,10 @@
 
 ## Пакет 1
 
-**`cherga-a-11-idf`** · T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.**
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/versions.rst
-- у книзі шукати за взірцем: `\*\*Версія\s+ESP\-IDF\s+фіксується\s+на`
-- третій шар: 1 з 1 рядків
-
 **`klas-f-02-chipy`** · T-02-105: Але зроблене без збереження `sdkconfig.defaults` доведеться налаштовувати заново.
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
 - у книзі шукати за взірцем: `Але\s+зроблене\s+без\s+збереження`
-- третій шар: 1 з 1 рядків
-
-**`klas-f-11-idf`** · T-11-025: Спокуса прописати `export.sh` у `.bashrc` є в усіх,
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/linux-macos-setup-legacy.rst
-- у книзі шукати за взірцем: `Спокуса\s+прописати\s+`export\.sh`\s+у`
-- третій шар: 1 з 1 рядків
-
-**`klas-f-12-arduino`** · T-12-049: Тоді доступні `setup`/`loop` і бібліотеки Arduino — і
-
-- джерело: https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/esp-idf_component.rst
-- у книзі шукати за взірцем: `Тоді\s+доступні\s+`setup`/`loop`\s+і`
 - третій шар: 1 з 1 рядків
 
 **`m2-62-bootlog-k06`** · T-K06-045: На 115200 нічого, на 74880 осмислений текст — це ESP8266
@@ -78,9 +60,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
 - у книзі шукати за взірцем: `74880.*осмислений текст.*ESP8266`
 - третій шар: 1 з 1 рядків
-
-
-## Пакет 2
 
 **`m2-82-boot-flesh`** · Етап 1 — ROM bootloader зашитий у кремній
 
@@ -100,6 +79,9 @@
 - у книзі шукати за взірцем: `Останнє\s+тягне\s+за\s+собою\s+перерахунок\s+явних\s+зсувів\s+у\s+CSV:\s+жоден\s+розділ\s+не\s+може\s+починатися\s+раніше\s+ніж\s+нова\s+адреса|\[\[classic\]\]\s+Адреса\s+`0x1000`\s+тут\s+—\s+знову\s+`
 - третій шар: 1 з 1 рядків
 
+
+## Пакет 2
+
 **`m2-82-boot-flesh`** · GPIO0 як ключовий strapping-пін для вибору режиму завантаження
 
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
@@ -111,9 +93,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - у книзі шукати за взірцем: ``ota_0`.*`ota_1``
 - третій шар: 2 з 2 рядків
-
-
-## Пакет 3
 
 **`m2-83-esptool`** · esptool версія v4 та v5 у ESP-IDF
 
@@ -133,6 +112,9 @@
 - у книзі шукати за взірцем: `0x0.*незалежно`
 - третій шар: 1 з 1 рядків
 
+
+## Пакет 3
+
 **`m2-83-esptool`** · Таблиця розділів за замовчуванням на адресі 0x8000
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
@@ -144,9 +126,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - у книзі шукати за взірцем: `MAC-адреса.*унікальна.*eFuse`
 - третій шар: 1 з 1 рядків
-
-
-## Пакет 4
 
 **`m2-83-esptool`** · Команда esptool flash-id додає інформацію про флеш
 
@@ -166,6 +145,9 @@
 - у книзі шукати за взірцем: `2.*МБ|4.*МБ`
 - третій шар: 1 з 1 рядків
 
+
+## Пакет 4
+
 **`m2-84-freertos`** · Пріоритет задачі від 0 до configMAX_PRIORITIES мінус 1
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
@@ -177,9 +159,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - у книзі шукати за взірцем: `Core.*0.*Core.*1|APP_CPU|PRO_CPU`
 - третій шар: 3 з 3 рядків
-
-
-## Пакет 5
 
 **`m2-84-freertos`** · Функції FromISR єдині дозволені в обробнику переривання
 
@@ -199,6 +178,9 @@
 - у книзі шукати за взірцем: `реле.*GPIO|зависанні`
 - третій шар: 1 з 1 рядків
 
+
+## Пакет 5
+
 **`m2-93-vybirka`** · Код 0x10 означає RTCWDT_RTC_RESET (RTC watchdog скинув усе)
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/fatal-errors.rst — ESP-IDF, розділ «RTC Watchdog Timeout» (рядок 306)
@@ -210,9 +192,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/freertos/Kconfig
 - у книзі шукати за взірцем: `configCHECK_FOR_STACK_OVERFLOW|canary|3\.5 КБ|3584`
 - третій шар: 3 з 8 рядків
-
-
-## Пакет 6
 
 **`pass-02-povedinka`** · На C3 ADC2 непридатний через апаратну ваду, а не через Wi-Fi
 
@@ -232,6 +211,9 @@
 - у книзі шукати за взірцем: `--chip esp32 merge-bin|`--chip` тут \*\*обов.язковий\*\*|Specify the --chip argument`
 - третій шар: 2 з 7 рядків
 
+
+## Пакет 6
+
 **`pass-09-komandy`** · Стиснення при передачі ввімкнене за замовчуванням
 
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py та .../docs/en/esptool/basic-commands.rst
@@ -243,9 +225,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/spi_flash/esp_flash_spi_init.c
 - у книзі шукати за взірцем: `Detected size|smaller than the size in the binary image header|Probe failed|Using the size in the binary image header|Реальний флеш \*\*менший\*\*`
 - третій шар: 3 з 3 рядків
-
-
-## Пакет 7
 
 **`pass-10-povidomlennya`** · Помилки купи розрізняють бік переповнення
 
@@ -265,6 +244,9 @@
 - у книзі шукати за взірцем: `Serial flasher config|Partition Table`|Component config` → `ESP System Settings|Component config` → `Core dump|Component config` → `ESP PSRAM|Три перші пункти меню`
 - третій шар: 9 з 13 рядків
 
+
+## Пакет 7
+
 **`pass-12-piny`** · GPIO15 низький глушить boot-лог ROM
 
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
@@ -276,9 +258,6 @@
 - джерело: https://raw.githubusercontent.com/adafruit/Adafruit-ST7735-Library/master/Adafruit_ST7789.h та .../Adafruit_ST7789.cpp, https://raw.githubusercontent.com/jgromes/RadioLib/master/src/BuildOpt.h
 - у книзі шукати за взірцем: `по \*\*першому\*\* фронту|по \*\*другому\*\*|котрому за ліком|режими 0 і 3 читають по\s*одному й тому самому фронту|режими 1 і 2|починати треба з пари 0 і 3|0 або 3`
 - третій шар: 1 з 3 рядків
-
-
-## Пакет 8
 
 **`pass-17-simeystva-proektiv`** · pioarduino, а не офіційна платформа PlatformIO
 
@@ -294,9 +273,12 @@
 
 **`pass-20-jtag-obvyazka`** · Кольорова обв'язка прикладів — classic і тільки classic
 
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/soc_caps.h (маски дійсних пінів) + `tools/piny.py`
+- джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/soc_caps.h (маски дійсних пінів) + `tools/pins.py`
 - у книзі шукати за взірцем: `GPIO\d+\s+→ (?:синій|зелений|жовтий|білий|червоний|чорний)|→ датчик DS18B20, лінія DATA|→ дисплей SSD1306`
 - третій шар: 1 з 1 рядків
+
+
+## Пакет 8
 
 **`pass-24-zsuvy-i-matrycya`** · Зсув бутлоадера по сімействах — числа праві, причина хибна
 
@@ -309,9 +291,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst, .../docs/en/api-guides/bootloader.rst, .../components/partition_table/Kconfig.projbuild
 - у книзі шукати за взірцем: `не більше 95 записів|максимум \*\*95 записів\*\*|`0xC00`|too large for partition table offset|Простір бутлоадера — це проміжок`
 - третій шар: 8 з 18 рядків
-
-
-## Пакет 9
 
 **`pass-24-zsuvy-i-matrycya`** · Піновий план проєкту 60 — обидва сімейства
 
@@ -331,6 +310,9 @@
 - у книзі шукати за взірцем: ``0x0[1248]`=`GPIO|`0x[12]0`=`GPIO|\| `0x0[1248]` \| `GPIO|\| `0x[12]0` \| `GPIO|Найцінніший біт — `0x20`|На решті сімейств маска коротша|обрано непідтримуваний режим|DOWNLOAD_BOOT\(UART0|DOWNLOAD\(USB`
 - третій шар: 3 з 21 рядків
 
+
+## Пакет 9
+
 **`pass-28-komandy-suciljno`** · Іменування й версії esptool — version, esptool.py, дефіси проти підкреслень
 
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst та .../docs/en/migration-guide.rst; перелік команд у esptool/__init__.py
@@ -342,9 +324,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst та .../advanced-commands.rst
 - у книзі шукати за взірцем: ``flash-id` називає обсяг|`flash-id` показує 2 МБ`
 - третій шар: 4 з 4 рядків
-
-
-## Пакет 10
 
 **`pass-28-komandy-suciljno`** · erase-flash стирає весь чип, включно з NVS і калібруванням
 
@@ -364,6 +343,9 @@
 - у книзі шукати за взірцем: ``Failed to connect`|`Invalid head of packet`|`Device or resource busy`|`Permission denied`|шукати варто за початком рядка`
 - третій шар: 3 з 3 рядків
 
+
+## Пакет 10
+
 **`pass-29-log-i-reshta-komand`** · Паніка, backtrace і watchdog — назви рядків у логу
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_system/panic.c, .../components/esp_system/task_wdt/task_wdt.c, .../docs/en/api-guides/fatal-errors.rst
@@ -375,9 +357,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst, .../advanced-topics/boot-mode-selection.rst (Automatic Bootloader)
 - у книзі шукати за взірцем: `вантажить у RAM невелику допоміжну програму|визначив чип сам і побачив розбіжність|смикає ці лінії в потрібній послідовності|застосунок, який сам щось пише в UART`
 - третій шар: 5 з 5 рядків
-
-
-## Пакет 11
 
 **`pass-29-log-i-reshta-komand`** · merge-bin — прапорці флешу і призначення формату
 
@@ -397,6 +376,9 @@
 - у книзі шукати за взірцем: ``GPIO0` · Що задає|`GPIO0` · Наслідок помилки|`GPIO12` · Наслідок помилки|`GPIO2` · Що задає|`GPIO2` · Наслідок помилки|`GPIO15` · Наслідок помилки|`GPIO5` · Що задає|`GPIO12` · Що задає|`GPIO15` · Що`
 - третій шар: 4 з 10 рядків
 
+
+## Пакет 11
+
 **`pass-30-piny-suciljno`** · Піни флешу, тільки-вхідні й ADC1 при Wi-Fi
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/spi_pins.h, .../components/soc/esp32/include/soc/adc_channel.h, .../components/soc/esp32/include/soc/soc_caps.h, .../docs/en/api-reference/peripherals/gpio.rst
@@ -408,9 +390,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst (Select Bootloader Mode, Automatic Bootloader)
 - у книзі шукати за взірцем: `Вирішує `GPIO0`:|`GPIO0` вільний \(підтягнутий вгору\)|Кнопка `BOOT` \(іноді `IO0`, `FLASH`\)|стан `GPIO0` читається один раз|схема, що смикає `GPIO0` і `EN`|перемичкою або пінцетом замкнути `GPIO0`|К`
 - третій шар: 4 з 7 рядків
-
-
-## Пакет 12
 
 **`pass-30-piny-suciljno`** · I²C і strapping на C3 — підтяжки збігаються з потрібними рівнями
 
@@ -430,6 +409,9 @@
 - у книзі шукати за взірцем: ``ESP_ERROR_CHECK` — це `assert`|викликає паніку й перезавантажує чип|`ESP_ERROR_CHECK` навколо|`ESP_ERROR_CHECK` доречний там|Замінити `ESP_ERROR_CHECK` на явну обробку|повертає `esp_err_t` — код поми`
 - третій шар: 2 з 15 рядків
 
+
+## Пакет 12
+
 **`pass-31-adresy-i-api`** · ESP_LOGD не коштує нічого при рівні збирання Info
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h та .../docs/en/api-reference/system/log.html.rst
@@ -441,9 +423,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/app_update/include/esp_ota_ops.h, .../components/esp_common/include/esp_err.h, .../docs/en/api-reference/storage/{wear-levelling,fatfs}.rst
 - у книзі шукати за взірцем: ``ESP_ERR_OTA_VALIDATE_FAILED`|`ESP_ERR_OTA_PARTITION_CONFLICT`|`ESP_ERR_INVALID_ARG` при налаштуванні|`wear_levelling`|`esp_vfs_fat``
 - третій шар: 2 з 6 рядків
-
-
-## Пакет 13
 
 **`pass-32-pul-shmatky-1-3`** · DAC, ADC-затухання й обв'язка входу — розділ 33
 
@@ -463,6 +442,9 @@
 - у книзі шукати за взірцем: ``Default log verbosity` \| рівень, з яким прошивка стартує|`esp_err_to_name` перетворює число на читабельне|в лозі буде `0x105`|розшифровує backtrace\*\* у назви функцій`
 - третій шар: 4 з 10 рядків
 
+
+## Пакет 13
+
 **`pass-32-pul-shmatky-1-3`** · Типова розбивка флешу — зсуви, розміри й суфікси
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/partition-tables.rst та .../components/bootloader_support/src/bootloader_utility.c
@@ -474,9 +456,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-reference/system/mem_alloc.rst, .../docs/en/api-guides/external-ram.rst, .../components/esp_common/include/esp_attr.h, .../components/freertos/Kconfig.freertos
 - у книзі шукати за взірцем: `буфер на 64 КБ опиниться в PSRAM \*\*без\*\* жодного `MALLOC_CAP_SPIRAM`|`DRAM_ATTR`|Вимикати цю перевірку \(`No checking`\)`
 - третій шар: 5 з 11 рядків
-
-
-## Пакет 14
 
 **`pass-33-pul-shmatky-4-5`** · Strapping classic і C3 — таблиця розділу 07 проти gpio/*.inc
 
@@ -496,6 +475,9 @@
 - у книзі шукати за взірцем: `схема, що смикає `GPIO0` і `EN` сигналами `DTR`/`RTS`|плата без такої схеми взагалі|живлення просідає під час скидання`
 - третій шар: 2 з 9 рядків
 
+
+## Пакет 14
+
 **`pass-35-vlasna-pomylka-boot`** · Коди RESET_REASON — уся таблиця причин скидання
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_rom/esp32/include/esp32/rom/rtc.h
@@ -507,9 +489,6 @@
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c3/include/soc/boot_mode.h
 - у книзі шукати за взірцем: `Далі значення не розшифровуються, і це свідоме рішення|ETS_IS_FLASH_BOOT|дивіться на рядок у дужках`
 - третій шар: 1 з 7 рядків
-
-
-## Пакет 15
 
 **`pass-36-chip-id`** · chip-id на сімействі ESP32 повертає попередження, а не Chip ID
 
@@ -523,17 +502,14 @@
 - у книзі шукати за взірцем: `i2c_new_master_bus\(1049\): invalid SDA/SCL pin number|називає причину в консолі|[Мм]овчазним воно\s*\n?стає лише тоді`
 - третій шар: 2 з 7 рядків
 
-**`pass-38-pul-shmatky-9-11`** · ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/log/include/esp_log.h
-- у книзі шукати за взірцем: `ESP_DRAM_LOGE|переривання вимкнені або всередині ISR|DRAM_STR\("mij_teg"\)`
-- третій шар: 2 з 5 рядків
-
 **`pass-38-pul-shmatky-9-11`** · На RISC-V рядка Backtrace немає — його будує монітор
 
 - джерело: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/docs/en/api-guides/fatal-errors.rst
 - у книзі шукати за взірцем: `рядка `Backtrace:` у дампі немає\s*\n?взагалі|CONFIG_ESP_SYSTEM_USE_EH_FRAME|розмір\s*\n?образу росте на 20–100`
 - третій шар: 2 з 12 рядків
+
+
+## Пакет 15
 
 **`pass-45-sdkconfig-defaults`** · sdkconfig.defaults рекомендовано тримати в системі контролю версій
 
@@ -541,135 +517,9 @@
 - у книзі шукати за взірцем: `Саме він\s+має лежати в git`
 - третій шар: 1 з 1 рядків
 
-
-## Пакет 16
-
-**`prochid-11-idf`** · T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.**
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/versions.rst
-- у книзі шукати за взірцем: `\*\*Версія\s+ESP\-IDF\s+фіксується\s+на`
-- третій шар: 1 з 1 рядків
-
 **`prochid-17-esptool`** · T-17-118: Друга половина рядка залежить від версії.
 
 - джерело: https://raw.githubusercontent.com/espressif/esptool/master/esptool/__init__.py
 - у книзі шукати за взірцем: `Друга\s+половина\s+рядка\s+залежить`
-- третій шар: 1 з 1 рядків
-
-**`prochid-18-rozdily-fleshu`** · T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом:
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-- у книзі шукати за взірцем: `У\s+проєкті\s+ESP\-IDF\s+розбивка`
-- третій шар: 1 з 1 рядків
-
-**`prochid-18-rozdily-fleshu`** · T-18-080: У складі ESP-IDF · SPIFFS → так
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-- у книзі шукати за взірцем: `У\s+складі\s+ESP\-IDF\s+·\s+SPIFFS`
-- третій шар: 1 з 1 рядків
-
-**`prochid-18-rozdily-fleshu`** · T-18-088: Після цього розділ у меню з'являється, а тип
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-- у книзі шукати за взірцем: `Після\s+цього\s+розділ\s+у`
-- третій шар: 1 з 1 рядків
-
-
-## Пакет 17
-
-**`prochid-18-rozdily-fleshu`** · T-18-103: **Взяти готову розбивку з більшим розділом застосунку** для
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-- у книзі шукати за взірцем: `\*\*Взяти\s+готову\s+розбивку\s+з`
-- третій шар: 1 з 1 рядків
-
-**`prochid-18-rozdily-fleshu`** · T-18-107: Практично це означає: **розбивку треба обирати з запасом
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-- у книзі шукати за взірцем: `Практично\s+це\s+означає:\s+\*\*розбивку`
-- третій шар: 1 з 1 рядків
-
-**`prochid-18-rozdily-fleshu`** · T-18-108: Змінити її потім можна лише з фізичним доступом
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-- у книзі шукати за взірцем: `Змінити\s+її\s+потім\s+можна`
-- третій шар: 1 з 1 рядків
-
-**`prochid-18-rozdily-fleshu`** · T-18-028: **`phy_init`** зберігає калібрувальні дані радіо.
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
-- у книзі шукати за взірцем: `\*\*`phy_init`\*\*\s+зберігає\s+калібрувальні\s+дані`
-- третій шар: 1 з 1 рядків
-
-**`prochid-23-triazh`** · T-23-100: Напис на модулі звіряється з шапкою `esptool`.
-
-- джерело: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
-- у книзі шукати за взірцем: `Напис\s+на\s+модулі\s+звіряється`
-- третій шар: 1 з 1 рядків
-
-
-## Пакет 18
-
-**`prochid-27-jtag`** · T-27-002: Відлагоджувач показує все: поточне значення будь-якої змінної, вміст
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
-- у книзі шукати за взірцем: `Відлагоджувач\s+показує\s+все:\s+поточне`
-- третій шар: 1 з 1 рядків
-
-**`prochid-31-freertos`** · T-31-031: Прив'язати задачу до ядра явно:
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-- у книзі шукати за взірцем: `Прив'язати\s+задачу\s+до\s+ядра`
-- третій шар: 1 з 1 рядків
-
-**`prochid-31-freertos`** · T-31-034: Коли це має сенс: щось із жорсткими таймінгами
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-- у книзі шукати за взірцем: `Коли\s+це\s+має\s+сенс:`
-- третій шар: 1 з 1 рядків
-
-**`prochid-31-freertos`** · T-31-035: Щось важке й тривале — теж на ядро
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-- у книзі шукати за взірцем: `Щось\s+важке\s+й\s+тривале`
-- третій шар: 1 з 1 рядків
-
-**`prochid-33-peryferiya-kod`** · T-33-091: Пам'ятайте: вхід не толерантний до перевищення — понад
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
-- у книзі шукати за взірцем: `Пам'ятайте:\s+вхід\s+не\s+толерантний`
-- третій шар: 1 з 1 рядків
-
-
-## Пакет 19
-
-**`prochid-34-uart`** · T-34-045: Багато модулів мають термінатор на платі, іноді припаяний
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
-- у книзі шукати за взірцем: `Багато\s+модулів\s+мають\s+термінатор\s+на\s+платі,\s+іноді`
-- третій шар: 1 з 1 рядків
-
-**`prochid-35-i2c`** · T-35-035: Сканер перебирає всі адреси й друкує ті, що
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
-- у книзі шукати за взірцем: `Сканер\s+перебирає\s+всі\s+адреси`
-- третій шар: 1 з 1 рядків
-
-**`prochid-35-i2c`** · T-35-087: **Аналізатор** — `ACK` чи `NACK` (розділ 28).
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
-- у книзі шукати за взірцем: `\*\*Аналізатор\*\*\s+—\s+`ACK`\s+чи`
-- третій шар: 1 з 1 рядків
-
-**`prochid-g-glosariy`** · T-G-116: | коефіцієнт заповнення | duty cycle |
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-- у книзі шукати за взірцем: `\|\s+коефіцієнт\s+заповнення\s+\|`
-- третій шар: 1 з 1 рядків
-
-**`prochid-z-pokazhchyk`** · T-Z-143: i2c_new_master_bus — 215, 326, 332
-
-- джерело: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
-- у книзі шукати за взірцем: `i2c_new_master_bus\s+—\s+215,\s+326,`
 - третій шар: 1 з 1 рядків
 

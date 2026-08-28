@@ -37,7 +37,7 @@
 документі) і **особисту звірку супровідника** (чи вона про це). Жодне
 не потрапляє у звіт як знахідка, доки не пройшло обидва.
 
-    tools/mira_f.py <каталог-вивантажень>
+    tools/measure_f.py <каталог-вивантажень>
 """
 from __future__ import annotations
 
@@ -58,7 +58,7 @@ ZVIT = ROOT / "factcheck" / "MEASURE-UNCHECKED.md"
 
 ZVIT_PORROZHNIY = """# Міра класу `F` — хвиля відхилена
 
-**Генерується** `tools/mira_f.py`.
+**Генерується** `tools/measure_f.py`.
 
 Усі **{vsjogo}** записів цієї хвилі посилалися на **саму книгу**.
 Жодного зовнішнього свідчення не здобуто, тож міряти нема чого.
@@ -196,7 +196,7 @@ def main() -> int:
     if not zap:
         ZVIT.write_text(ZVIT_PORROZHNIY.format(
             vsjogo=len(samoposylannya)), encoding="utf-8")
-        print(f"mira_f: ⚠ ХВИЛЯ НЕДІЙСНА — усі {len(samoposylannya)} "
+        print(f"measure_f: ⚠ ХВИЛЯ НЕДІЙСНА — усі {len(samoposylannya)} "
               f"записів посилаються на саму книгу → "
               f"{ZVIT.relative_to(ROOT)}")
         return 1
@@ -247,7 +247,7 @@ def main() -> int:
 > книгу, шлях замість адреси або нічого. Вони не рахуються ніяк —
 > зовнішнього свідчення в них немає за побудовою.
 
-**Генерується** `tools/mira_f.py`. Наряд —
+**Генерується** `tools/measure_f.py`. Наряд —
 `factcheck/BRIEF-SAMPLE.md`, там же насіння добору.
 
 Клас `F` — «ще не звірено»: до цих рядків ніхто не дійшов. Питання не
@@ -345,7 +345,7 @@ def main() -> int:
                  + ", ".join(f"`{b}`" for b in zlamani) + ".\n")
 
     ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"mira_f: відповідей {n}, спростувань заявлено {len(sperech)}, "
+    print(f"measure_f: відповідей {n}, спростувань заявлено {len(sperech)}, "
           f"витримали шар 3 {len(sperech_ok)} → {ZVIT.relative_to(ROOT)}")
     return 0
 

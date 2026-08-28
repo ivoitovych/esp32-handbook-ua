@@ -17,8 +17,8 @@
   · «додаток X» — чи існує файл dodatky/x-*.md
   · самопосилання: розділ, що відсилає сам на себе
 
-    tools/posylannya.py        перевірити
-    tools/posylannya.py -v     ще й показати всі згадки за адресатом
+    tools/cross_refs.py        перевірити
+    tools/cross_refs.py -v     ще й показати всі згадки за адресатом
 """
 
 import re
@@ -84,7 +84,7 @@ def main() -> int:
 
     for z in zhahy:
         print(f"   • {z}")
-    print(f"posylannya: згадок {sum(len(v) for v in de.values())}, "
+    print(f"cross_refs: згадок {sum(len(v) for v in de.values())}, "
           f"адресатів {len(de)}, помилок {len(zhahy)}")
     return 1 if zhahy else 0
 
