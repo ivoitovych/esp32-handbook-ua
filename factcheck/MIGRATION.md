@@ -329,9 +329,9 @@ the card that needed the book to be understood.
 | `PEREYIZD.md` | `MIGRATION.md` | done |
 | `PEREVIRYTY.md` | `TO-VERIFY.md` | done |
 | `POMICHNYKY.md` | `WORKERS.md` | |
-| `METODYKA.md` | `METHOD.md` | |
+| `METODYKA.md` | `METHOD.md` | done — М2, вміст перекладено |
 | `SPROSTOVANE.md` | `REFUTED.md` | |
-| `UROKY-M2.md` | `LESSONS.md` | M2's file — theirs to rename |
+| `UROKY-M2.md` | `LESSONS-M2.md` | M2's file — theirs to rename |
 | `SCHEMA.md` | `SCHEMA.md` | already plain |
 
 **Generated reports:**
