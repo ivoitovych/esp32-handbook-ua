@@ -76,14 +76,26 @@ by number.
     B  primary derived     — source obtained, conclusion unambiguous
     C  named-unreachable   — source named, text not held
     D  arithmetic          — checked by calculation
-    E  no source exists    — author's judgement; no external referent
+    E  no external signal  — the text carries nothing checkable
     F  unverified          — nobody has reached it yet
     G  refuted             — the source says otherwise
 
 Strength for picking the best evidence: `A < B < D < C < E < G < F`.
 
-**`C` outranks `E`, and this is the load-bearing detail.** `E` says "no
-source exists" and **hides the unit from the queue forever**. `C` says
+**`E` does not say "no source exists".** It says the *rule fired*: this
+text holds no number, identifier or part name to check against. That
+distinction is the single most expensive one in this document, and this
+file itself got it wrong for a week — the line above used to read "no
+source exists", which is a claim about the world that nobody measured.
+
+> Write the **state of a claim**, never a verdict about the world. The
+> book's own description of `E` had to be corrected once for exactly
+> this. A document that carries the technology to another project must
+> not carry the error the project already paid to remove.
+
+**`C` outranks `E`, and this is the load-bearing detail.** `E` ends the
+unit's life in the queue: read as a verdict, it **hides the unit
+forever**. `C` says
 "a source exists, I do not hold it" and **keeps the unit in play**.
 Confusion in the direction of `E` always reduces work — which is
 exactly why it passes so easily.
