@@ -22,6 +22,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Усі виклики API книги існують у заголовках
   zbih: esp_wifi_|esp_now_|nvs_flash_|i2c_master_|spi_bus_|spi_device_|uart_(read|write|param|set_pin|driver|wait)|twai_|ledc_(timer|channel)_config|adc_oneshot_|adc_cali_|esp_timer_|esp_task_wdt_|httpd_|mdns_|led_strip_|heap_caps_|esp_ota_|esp_https_ota|esp_sleep_|esp_reset_reason|esp_err_to_name|esp_restart|esp_log_level_set|esp_mqtt_client_|esp_sntp_
   klas: A
@@ -116,6 +128,9 @@
     числа, і давав у таблиці відкритий рядок «18+». Тепер названо стелю (24) і рядок закрито
     як «18–24». Різниця практична: «18+» читається як «і вище скільки завгодно», і задача
     з пріоритетом 30 мовчки не створиться.'
+  sha:
+  - 7f7e9d58
+  - a794bed6
 - nazva: Типова розбивка флешу та вирівнювання розділів
   zbih: nvs.*0x9000.*0x6000|phy_init.*0xF000|factory.*0x10000|вирівняні на `0x10000`|вирівнюються
     на `0x1000`

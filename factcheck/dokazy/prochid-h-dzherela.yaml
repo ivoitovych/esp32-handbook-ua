@@ -11,6 +11,8 @@
 
 
 
+
+
 - nazva: 'T-H-017: **`github.com/espressif/esp-idf`** — сам фреймворк.'
   zbih: \*\*`github\.com/espressif/esp\-idf`\*\*\s+—\s+сам\s+фреймворк\.
   klas: A
@@ -33,3 +35,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Confirmed - the readme identifies the project location as github.com/espressif/esp-idf
+  sha:
+  - 68023ab6

@@ -68,6 +68,46 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-30-073: Функція, яка може спрацювати в цей момент —'
   zbih: Функція,\s+яка\s+може\s+спрацювати
   klas: A
@@ -90,6 +130,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує наявність IRAM
+  sha:
+  - a8346dff
 - nazva: 'T-30-023: Розмір стека задається при створенні задачі — числом,'
   zbih: Розмір\s+стека\s+задається\s+при
   klas: A
@@ -112,6 +154,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що кожна задача має власний стек
+  sha:
+  - c6d7d762
 - nazva: 'T-30-026: Переповнення стека на мікроконтролері не дає ні винятку,'
   zbih: Переповнення\s+стека\s+на\s+мікроконтролері
   klas: A
@@ -134,6 +178,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що кожна задача має власний стек
+  sha:
+  - f7a5daed
 - nazva: 'T-30-027: Задача просто пише за межі свого стека —'
   zbih: Задача\s+просто\s+пише\s+за
   klas: A
@@ -156,6 +202,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що кожна задача має власний стек
+  sha:
+  - 86458de5
 - nazva: 'T-30-030: Що з''їдає стек несподівано багато:'
   zbih: Що\s+з'їдає\s+стек\s+несподівано
   klas: A
@@ -178,6 +226,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що кожна задача має власний стек
+  sha:
+  - 62f76bc8
 - nazva: 'T-30-076: IRAM небагато, і кожна така функція займає її'
   zbih: IRAM\s+небагато,\s+і\s+кожна\s+така
   klas: A
@@ -202,6 +252,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує обмеженість IRAM
+  sha:
+  - 274d7cce
 - nazva: 'T-30-085: **32-бітне читання й запис вирівняного слова атомарні** апаратно.'
   zbih: \*\*32\-бітне\s+читання\s+й\s+запис
   klas: A
@@ -226,6 +278,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що 32-бітне читання й запис атомарні
+  sha:
+  - 5bcfe49a
 - nazva: 'T-30-087: Складніші структури — ні.'
   zbih: Складніші\s+структури\s+—\s+ні\.
   klas: A
@@ -250,6 +304,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що складніші структури не атомарні
+  sha:
+  - 42e5df0c
 - nazva: 'T-30-004: `app_main` викликається як звичайна задача FreeRTOS.'
   zbih: '`app_main`\s+викликається\s+як\s+звичайна'
   klas: A
@@ -272,6 +328,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: app_main викликається як звичайна задача FreeRTOS
+  sha:
+  - 4f3e0c86
 - nazva: 'T-30-006: **`app_main` може завершитися.** І це нормально: система продовжує'
   zbih: \*\*`app_main`\s+може\s+завершитися\.\*\*\s+І
   klas: A
@@ -296,6 +354,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що app_main може завершитися й це нормально
+  sha:
+  - b667f384
 - nazva: 'T-30-007: Задача `app_main` просто зникає, звільняючи свій стек.'
   zbih: Задача\s+`app_main`\s+просто\s+зникає,
   klas: A
@@ -318,6 +378,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: задача app_main зникає й звільняє свій стек
+  sha:
+  - 8c045e3f
 - nazva: 'T-30-016: **Статична.** Глобальні змінні й `static`.'
   zbih: \*\*Статична\.\*\*\s+Глобальні\s+змінні\s+й
   klas: A
@@ -342,6 +404,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує глобальні змінні й static як статична пам'ять
+  sha:
+  - 0f0ef2c2
 - nazva: 'T-30-021: **Купа.** `malloc` і `new`.'
   zbih: \*\*Купа\.\*\*\s+`malloc`\s+і\s+`new`\.
   klas: A
@@ -366,6 +430,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що купа використовує malloc й new
+  sha:
+  - e8ac56e3
 - nazva: 'T-30-032: **Великі буфери — не на стек.** `static` або'
   zbih: \*\*Великі\s+буфери\s+—\s+не
   klas: A
@@ -392,6 +458,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: великі буфери - не на стек
+  sha:
+  - f46728c8
 - nazva: 'T-30-041: Купа на ESP32 не однорідна (розділ 03), і'
   zbih: Купа\s+на\s+ESP32\s+не
   klas: A
@@ -416,6 +484,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: купа на ESP32 не однорідна, malloc може повернути NULL
+  sha:
+  - bcdbf291
 - nazva: 'T-30-047: **Не та область.** Буфер для DMA має бути'
   zbih: \*\*Не\s+та\s+область\.\*\*\s+Буфер
   klas: A
@@ -440,6 +510,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: буфер для DMA має бути доступним контролеру, звичайний malloc не придатний
+  sha:
+  - af79aca0
 - nazva: 'T-30-067: Коли вільно 40 КБ, а найбільший блок —'
   zbih: Коли\s+вільно\s+40\s+КБ,
   klas: A
@@ -462,6 +534,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: фрагментація - коли вільно 40 КБ, а найбільший блок 2 КБ
+  sha:
+  - d52f1ea5
 - nazva: 'T-30-086: Тому проста передача одного значення (прапорець, ціле число)'
   zbih: Тому\s+проста\s+передача\s+одного
   klas: A
@@ -486,6 +560,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: проста передача одного значення через volatile працює
+  sha:
+  - 38e10f93
 - nazva: 'T-30-101: Результат `malloc` перевіряти завжди.'
   zbih: Результат\s+`malloc`\s+перевіряти\s+завжди\.
   klas: A
@@ -510,6 +586,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: результат malloc треба перевіряти завжди
+  sha:
+  - 21874c85
 - nazva: 'T-30-102: `volatile` не робить операцію атомарною.'
   zbih: '`volatile`\s+не\s+робить\s+операцію'
   klas: A
@@ -534,3 +612,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: volatile не робить операцію атомарною
+  sha:
+  - b09b18e3

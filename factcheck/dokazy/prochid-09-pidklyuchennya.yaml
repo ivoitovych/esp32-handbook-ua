@@ -41,6 +41,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-09-007: Тому між ними ставлять **міст USB-UART**: окремий чип,'
   zbih: Тому\s+між\s+ними\s+ставлять
   klas: A
@@ -89,6 +111,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Document confirms Linux and other systems typically have drivers built in
+  sha:
+  - 09e91692
 - nazva: 'T-09-042: Мосту не потрібно взагалі: чип під''єднується до комп''ютера'
   zbih: 'Мосту\s+не\s+потрібно\s+взагалі:'
   klas: A
@@ -113,6 +137,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Document confirms bridge is not needed for chips with USB support
+  sha:
+  - 95e4b03d
 - nazva: 'T-09-045: **Драйвер не потрібен.** Пристрій відповідає стандарту USB CDC,'
   zbih: \*\*Драйвер\s+не\s+потрібен\.\*\*\s+Пристрій
   klas: A
@@ -157,6 +183,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: говорить про групу uucp на Arch Linux
+  sha:
+  - 59e49521
 - nazva: 'T-09-069: Без цього нова група не застосується до поточної'
   zbih: Без\s+цього\s+нова\s+група
   klas: A
@@ -179,6 +207,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: говорить про необхідність перезайти для застосування прав доступу
+  sha:
+  - 1a6e4d7e
 - nazva: 'T-09-077: Порт відкриває **лише один процес одночасно**.'
   zbih: Порт\s+відкриває\s+\*\*лише\s+один
   klas: A
@@ -207,6 +237,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: говорить про те, що порт неможливо використовувати, якщо його вже використовує інший
     процес
+  sha:
+  - daf30df3
 - nazva: 'T-09-087: Кабель, роз''єм або живлення плати.'
   zbih: Кабель,\s+роз'єм\s+або\s+живлення
   klas: A
@@ -237,6 +269,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: говорить про живлення як одну з причин проблем
+  sha:
+  - 9ecc9948
 - nazva: 'T-09-010: Звідси випливає головне: **порт у системі створює міст,'
   zbih: Звідси\s+випливає\s+головне:\s+\*\*порт
   klas: A
@@ -261,3 +295,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: говорить про те, що міст створює підключення, а не ESP32
+  sha:
+  - 9f305552

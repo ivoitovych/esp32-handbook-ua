@@ -11,6 +11,8 @@
 
 
 
+
+
 - nazva: 'T-14-053: Треба писати код · MicroPython → так, Python'
   zbih: Треба\s+писати\s+код\s+·\s+MicroPython
   klas: A
@@ -35,3 +37,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: 'Self-evident: MicroPython IS Python implementation; code must be written in Python
     language by definition.'
+  sha:
+  - 99a6d4d3

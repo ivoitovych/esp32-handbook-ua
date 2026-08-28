@@ -123,6 +123,12 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--only", default=None,
                    help="підрядок імені файлу доказів")
+    p.add_argument("--safe", action="store_true",
+                   help="усі записи, чия родина не більша за --do")
+    p.add_argument("--do", type=int, default=3,
+                   help="найбільша родина, яку беремо (типово 3)")
+    p.add_argument("--limit", type=int, default=0,
+                   help="узяти не більше N родин — щоб дивитися партіями")
     p.add_argument("--write", action="store_true")
     p.add_argument("--components", action="store_true")
     a = p.parse_args()
@@ -138,13 +144,30 @@ def main() -> int:
             print(f"  компонент по {n:>3} записів: {skilky}")
         return 0
 
-    if not a.only:
-        print("вкажіть --only або --components")
+    if a.safe:
+        # Родини беремо цілими й у сталому порядку: партія має бути
+        # відтворюваною, інакше «перевірено на партії 1» нічого не
+        # означає для того, хто повторить прогін.
+        rodyny = sorted(
+            {p for p in predst.values() if rozmir[p] <= a.do},
+            key=lambda p: sorted(k for k in predst if predst[k] == p)[0])
+        # Уже переїхалі — пропускаємо, щоб партії йшли вперед.
+        gotovi = {z["_klyuch"] for z in zapysy if z.get("sha")}
+        rodyny = [p for p in rodyny
+                  if not {k for k in predst if predst[k] == p} <= gotovi]
+        if a.limit:
+            rodyny = rodyny[:a.limit]
+        vybrani = {k for k in predst if predst[k] in set(rodyny)}
+        print(f"родин узято {len(rodyny)}, записів {len(vybrani)} "
+              f"(вже переїхало {len(gotovi)})")
+    elif a.only:
+        vybrani = {z["_klyuch"] for z in zapysy if a.only in z["_fayl"]}
+    else:
+        print("вкажіть --only, --safe або --components")
         return 1
 
-    vybrani = {z["_klyuch"] for z in zapysy if a.only in z["_fayl"]}
     if not vybrani:
-        print(f"нічого не збіглося з `{a.only}`")
+        print("нічого не вибрано")
         return 1
 
     # Ось та сама відмова, заради якої існує цей інструмент.

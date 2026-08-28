@@ -47,6 +47,32 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-34-044: На коротких лініях працює і без них; на'
   zbih: На\s+коротких\s+лініях\s+працює
   klas: A
@@ -69,6 +95,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''документація обговорює резистори в RS485 ланцюгу'''
+  sha:
+  - f3a2d1cf
 - nazva: 'T-34-045: Багато модулів мають термінатор на платі, іноді припаяний'
   zbih: Багато\s+модулів\s+мають\s+термінатор\s+на\s+платі,\s+іноді
   klas: A
@@ -93,6 +121,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''багато модулів мають термінатор на платі'''
+  sha:
+  - 1a6731a6
 - nazva: 'T-34-048: Якщо обмін не йде — поміняти місцями.'
   zbih: Якщо\s+обмін\s+не\s+йде
   klas: A
@@ -115,6 +145,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''якщо обмін не йде - поміняти місцями'''
+  sha:
+  - '41309921'
 - nazva: 'T-34-049: Це безпечно і розв''язує половину випадків.'
   zbih: Це\s+безпечно\s+і\s+розв'язує
   klas: A
@@ -137,6 +169,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''це безпечно і розв''язує половину випадків'''
+  sha:
+  - e2d3420d
 - nazva: 'T-34-001: UART — найстаріший і найнадійніший спосіб з''єднати два'
   zbih: UART\s+—\s+найстаріший\s+і
   klas: A
@@ -187,6 +221,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''простий обмін двома дротами'''
+  sha:
+  - 096e0026
 - nazva: 'T-34-004: [[classic]] ESP32 classic має три контролери UART, S3'
   zbih: \[\[classic\]\]\s+ESP32\s+classic\s+має
   klas: A
@@ -235,6 +271,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: розмір буфера має значення, дані можуть бути втрачені при переповненні
+  sha:
+  - 1523e3e9
 - nazva: 'T-34-030: Звичайний UART працює на десятки сантиметрів.'
   zbih: Звичайний\s+UART\s+працює\s+на
   klas: A
@@ -289,6 +327,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: тут описано, як контролюється напрямок і можна обрізати посилку
+  sha:
+  - 41dd0a6c
 - nazva: 'T-34-055: ESP-IDF має штатний компонент `esp-modbus` для обох ролей:'
   zbih: ESP\-IDF\s+має\s+штатний\s+компонент
   klas: A
@@ -335,6 +375,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ описує FIFO overflow як проблему
+  sha:
+  - e1533340
 - nazva: 'T-34-036: Напрямком керує окремий пін `DE`/`RE`:'
   zbih: Напрямком\s+керує\s+окремий\s+пін
   klas: A
@@ -359,3 +401,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ описує керування напрямком через DE/RE пін
+  sha:
+  - 9fe91835

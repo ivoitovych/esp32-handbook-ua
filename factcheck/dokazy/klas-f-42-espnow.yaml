@@ -29,6 +29,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-42-001: ESP-NOW — власний протокол Espressif для прямого обміну'
   zbih: ESP\-NOW\s+—\s+власний\s+протокол
   klas: A
@@ -55,6 +69,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документ каже "defined by Espressif", а не "власний протокол". Крім того, документ
     не згадує ESP8266.
+  sha:
+  - e12353a5
 - nazva: 'T-42-006: ESP-NOW не робить нічого з цього.'
   zbih: ESP\-NOW\s+не\s+робить\s+нічого
   klas: A
@@ -85,6 +101,8 @@
   note: ESP-NOW не потребує підключення до точки доступу, на відміну від звичайного Wi-Fi.
     Слово "connectionless" підтверджує, що ESP-NOW не робить нічого з того, що потрібно для
     звичайного Wi-Fi.
+  sha:
+  - 9eee4e7d
 - nazva: 'T-42-015: Кожен пристрій має унікальну MAC від заводу (розділ'
   zbih: Кожен\s+пристрій\s+має\s+унікальну
   klas: A
@@ -115,6 +133,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документ підтверджує, що MAC адреси використовуються як адреси в ESP-NOW (поля destination
     address та source address).
+  sha:
+  - de2e8697
 - nazva: 'T-42-027: Обробник прийому виконується в контексті **задачі** Wi-Fi, а'
   zbih: Обробник\s+прийому\s+виконується\s+в
   klas: A
@@ -139,6 +159,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документ явно говорить, що обробник прийому виконується в контексті задачі Wi-Fi,
     а не в перериванні.
+  sha:
+  - 3b9efbae
 - nazva: 'T-42-045: ESP-NOW підтримує шифрування з ключами PMK і LMK.'
   zbih: ESP\-NOW\s+підтримує\s+шифрування\s+з
   klas: A
@@ -165,6 +187,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документ підтверджує, що ESP-NOW підтримує шифрування з використанням ключів PMK і
     LMK.
+  sha:
+  - 3ccbedcd
 - nazva: 'T-42-048: Без шифрування ESP-NOW — це відкритий радіоефір.'
   zbih: Без\s+шифрування\s+ESP\-NOW\s+—
   klas: A
@@ -191,6 +215,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документ говорить, що без встановленого LMK рамка не шифруватиметься, що означає передачу
     в відкритому вигляді.
+  sha:
+  - 5e201060
 - nazva: 'T-42-060: Усі вузли на фіксованому каналі, Wi-Fi не використовується.'
   zbih: Усі\s+вузли\s+на\s+фіксованому
   klas: A
@@ -215,3 +241,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Tverdzennya kazhе, shcho Wi-Fi ne vykorystovuietsia, ale dokumentsiia pokazuie, shcho
     mozhna vykorystovuvaty Stantsiju i SoftAP interfejsy
+  sha:
+  - 1dda21f6

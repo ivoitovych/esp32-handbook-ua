@@ -17,6 +17,12 @@
 
 
 
+
+
+
+
+
+
 - nazva: 'T-K03-018: Windows: `Диспетчер пристроїв` → жовтий знак оклику означає'
   zbih: Windows:\s+`Диспетчер\s+пристроїв`\s+→
   klas: A
@@ -43,6 +49,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: довідник підтверджує, що жовтий знак у диспетчері означає драйвер
+  sha:
+  - 254dbbd9
 - nazva: 'T-K03-020: Порт `/dev/ttyUSB0` є, але програма пише «Permission denied»'
   zbih: Порт\s+`/dev/ttyUSB0`\s+є,\s+але
   klas: A
@@ -65,6 +73,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ пояснює проблему Permission denied та як її вирішити
+  sha:
+  - c5be6367
 - nazva: 'T-K03-027: Порт зайнятий іншою програмою: відкритий монітор, Arduino IDE,'
   zbih: 'Порт\s+зайнятий\s+іншою\s+програмою:'
   klas: A
@@ -93,3 +103,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ пояснює, що порт може бути зайнятий іншою програмою, якщо монітор залишається
     відкритим
+  sha:
+  - dacd95cb

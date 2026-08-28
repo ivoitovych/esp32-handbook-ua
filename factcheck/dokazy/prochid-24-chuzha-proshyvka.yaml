@@ -23,6 +23,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-24-012: Таблиця відповідає на кілька питань одразу.'
   zbih: Таблиця\s+відповідає\s+на\s+кілька
   klas: A
@@ -49,6 +59,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: таблиця розділів надає адресу, розмір, тип кожного розділу, що дозволяє відповісти
     на кілька питань одразу
+  sha:
+  - 1e071f0d
 - nazva: 'T-24-035: Витягти розділ (адреса і розмір — з таблиці'
   zbih: Витягти\s+розділ\s+\(адреса\s+і
   klas: A
@@ -73,6 +85,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: адресу та розмір розділу можна отримати з таблиці розділів
+  sha:
+  - a83a6314
 - nazva: 'T-24-057: Цього достатньо, щоб написати власну прошивку, яка робить'
   zbih: Цього\s+достатньо,\s+щоб\s+написати
   klas: A
@@ -97,6 +111,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: інформації достатньо для написання власної прошивки, яка буде супроводжуваною
+  sha:
+  - a4f46dd1
 - nazva: 'T-24-068: Якщо ввімкнено — дамп зашифрований ключем, що не'
   zbih: Якщо\s+ввімкнено\s+—\s+дамп
   klas: A
@@ -125,6 +141,8 @@
   note: 'ключ не покидає чип, а зміст не можна зрозуміти. Про залиття назад: в документації
     сказано про можливість рефлешення якщо є ключ, але суть про неможливість зрозуміння вмісту
     підтримується'
+  sha:
+  - 60caff3a
 - nazva: 'T-24-015: **Чи є файлова система.** Розділ типу `spiffs`, `littlefs`'
   zbih: \*\*Чи\s+є\s+файлова\s+система\.\*\*
   klas: A
@@ -149,3 +167,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація підтверджує, що spiffs та інші файлові системи на ESP32 зберігають файли
     (веб-інтерфейс, конфігурація тощо)
+  sha:
+  - b66c9dc5

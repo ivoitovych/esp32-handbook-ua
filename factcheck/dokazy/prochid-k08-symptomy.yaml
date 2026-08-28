@@ -44,6 +44,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-K08-021: 6 · Що робити → перший дамп після'
   zbih: 6\s+·\s+Що\s+робити
   klas: A
@@ -66,6 +90,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: перший дамп після живлення розпочинає backtrace
+  sha:
+  - 9f98b9cf
 - nazva: 'T-K08-026: 8 · Найчастіша причина → немає підтягування або'
   zbih: 8\s+·\s+Найчастіша\s+причина
   klas: A
@@ -90,6 +116,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація підтверджує необхідність підтягування та спільної землі для I2C
+  sha:
+  - dceae9d7
 - nazva: 'T-K08-008: 2 · Найчастіша причина → плата не в'
   zbih: 2\s+·\s+Найчастіша\s+причина\s+→\s+плата
   klas: A
@@ -116,6 +144,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація підтверджує, що плата, яка не в download mode, є частою причиною проблем
+  sha:
+  - 8b27f14c
 - nazva: 'T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не'
   zbih: 3\s+·\s+Найчастіша\s+причина\s+→\s+адреса
   klas: A
@@ -140,6 +170,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: адреса бутлоадера залежить від типу чипа, як і зазначено в довіднику
+  sha:
+  - 4812427e
 - nazva: 'T-K08-019: 6 · Симптом → Boot loop'
   zbih: 6\s+·\s+Симптом\s+→
   klas: A
@@ -164,6 +196,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: boot loop може бути результатом паніки в застосунку, як описано в документації
+  sha:
+  - f7f26129
 - nazva: 'T-K08-020: 6 · Найчастіша причина → паніка в застосунку'
   zbih: 6\s+·\s+Найчастіша\s+причина
   klas: A
@@ -186,6 +220,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: паніка в застосунку дійсно є частою причиною boot loop
+  sha:
+  - f3d170d8
 - nazva: 'T-K08-035: 11 · Найчастіша причина → вони зайняті флешем'
   zbih: 11\s+·\s+Найчастіша\s+причина
   klas: A
@@ -230,3 +266,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO 6-11 визначені як піни MSPI (Master SPI) для флеш-пам'яті, що підтверджує, що
     вони зайняті флешем
+  sha:
+  - f2b297be

@@ -29,6 +29,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-17-051: Файл, менший за очікуваний, — це обірваний дамп,'
   zbih: Файл,\s+менший\s+за\s+очікуваний,\s+—\s+це
   klas: A
@@ -51,6 +65,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Файл менший за очікуваний означає обриваний дамп, а не стиснення
+  sha:
+  - 1b2d4902
 - nazva: 'T-17-064: Воно **вже ввімкнене** за замовчуванням, тож у звичайній'
   zbih: Воно\s+\*\*вже\s+ввімкнене\*\*\s+за
   klas: A
@@ -73,6 +89,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Стиснення ввімкнене за замовчуванням, прапорець у звичайній команді нічого не змінює
+  sha:
+  - 85b9b718
 - nazva: 'T-17-066: Користь від стиснення там подвійна: менше байтів пройшло'
   zbih: Користь\s+від\s+стиснення\s+там
   klas: A
@@ -95,6 +113,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Стиснення зменшує обсяг даних через кабель і зменшує ймовірність корупції
+  sha:
+  - dafa4e9c
 - nazva: 'T-17-071: Швидкість тут не той параметр, на якому варто'
   zbih: Швидкість\s+тут\s+не\s+той
   klas: A
@@ -119,6 +139,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Швидкість передачі є функцією чипа і кабелю, а не критичним параметром для економії
     часу
+  sha:
+  - d5bda61e
 - nazva: 'T-17-074: Адреси залежать від сімейства чипа — таблиця в'
   zbih: Адреси\s+залежать\s+від\s+сімейства
   klas: A
@@ -141,6 +163,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Адреси залежать від сімейства чипа - ESP32 має 0x1000, інші чипи 0x0
+  sha:
+  - c7be6edf
 - nazva: 'T-17-118: Друга половина рядка залежить від версії.'
   zbih: Друга\s+половина\s+рядка\s+залежить
   klas: A
@@ -163,6 +187,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''Версія рядка залежить від версії esptool'''
+  sha:
+  - 7eae188f
 - nazva: 'T-17-149: There was no response.`**'
   zbih: There\s+was\s+no\s+response\.`\*\*
   klas: A
@@ -185,3 +211,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Помилка синхронізації - немає відповіді від чипа
+  sha:
+  - 2d2315ba

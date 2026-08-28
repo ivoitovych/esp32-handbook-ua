@@ -13,6 +13,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: CP2102 — Silicon Labs, драйвер cp210x у ядрі Linux
   zbih: '`CP2102`, `CP2102N` · (Виробник|Міст) → Silicon Labs|`CP2102`, `CP2102N` · Linux
     → у ядрі'
@@ -35,6 +53,10 @@
   method: raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
   note: 'Обидві половини рядка книги підтверджено з одного місця: вендор `0x10C4` — Silicon
     Labs, і драйвер `cp210x` входить у дерево ядра, тобто «у ядрі» точне.'
+  sha:
+  - 388dab13
+  - 5a7df3f2
+  - c2bec9c8
 - nazva: CH340 і CH341 — WCH, драйвер ch341 у ядрі Linux
   zbih: '`CH340`, `CH340G`, `CH341` · (Виробник → WCH|Linux → у ядрі)|`CH340`, `CH341` · Міст
     → WCH'
@@ -97,6 +119,9 @@
   method: raw.githubusercontent.com/torvalds/linux/master, 2026-08-26
   note: '`0x0403:0x6001` — ідентифікатор, під яким визначається FT232RL; драйвер `ftdi_sio`
     у дереві ядра.'
+  sha:
+  - 0d78e84c
+  - 871e63ad
 - nazva: CH9102 у ядрі є, але через cdc_acm, а не ch341
   zbih: '`CH9102`, `CH9102F` · ((Виробник|Міст) → WCH|Linux → у ядрі)'
   klas: A
@@ -135,3 +160,7 @@
     а не `/dev/ttyUSB*`. Розділ 09 навчає, що `ttyACM` означає native USB (S3, C3). Читач
     із classic-платою на CH9102 побачить `ttyACM0` і зробить хибний висновок про сам чип.
     Винесено окремою знахідкою.'
+  sha:
+  - 09842382
+  - 78a66c0c
+  - f99c9567

@@ -10,6 +10,32 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Пріоритет задачі від 0 до configMAX_PRIORITIES мінус 1
   zbih: 0.*configMAX_PRIORITIES|пріоритет.*0
   klas: A
@@ -64,6 +90,8 @@
   method: curl esp-idf freertos_idf.rst, grep -A2 "Core 0", 2026-08-26
   note: 'Текст T-31-030 говорить про розподіл: Core 0 займає радіо, Core 1 — app_main. Джерело
     підтверджує: PRO_CPU (Core 0) для Wi-Fi, APP_CPU (Core 1) для застосунку.'
+  sha:
+  - 8ed6fe72
 - nazva: Функції FromISR єдині дозволені в обробнику переривання
   zbih: FromISR|обробнику переривання
   klas: A
@@ -104,6 +132,9 @@
   method: curl esp-idf freertos_idf.rst, grep -i "event\|bit", 2026-08-26
   note: Текст T-31-061 та T-31-062 показують WIFI_OK як BIT0 та TIME_OK як BIT1. Джерело підтверджує
     використання event groups для синхронізації.
+  sha:
+  - 52eaa3fa
+  - efe06e13
 - nazva: Сторож (Watchdog) автоматично перезавантажує систему при зависанні
   zbih: сторож|watchdog|зависання
   klas: A
@@ -176,3 +207,7 @@
   method: curl esp-idf wdts.rst, grep -i "watchdog", 2026-08-26
   note: Розділ 32 згадує про різні типи сторожів. Джерело підтверджує наявність IWDT та TWDT
     у ESP-IDF.
+  sha:
+  - 4b2c1726
+  - 8bb6d694
+  - fb634479

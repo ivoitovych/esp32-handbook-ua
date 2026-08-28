@@ -28,6 +28,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Дерево menuconfig — корінь і Component config
   zbih: Serial flasher config|Partition Table`|Component config` → `ESP System Settings|Component
     config` → `Core dump|Component config` → `ESP PSRAM|Три перші пункти меню
@@ -104,6 +120,9 @@
 
     Сам пункт `Default log verbosity` існує дослівно, і типове значення справді `Info` — це
     книга стверджувала правильно.'
+  sha:
+  - 033562ec
+  - 82ad763f
 - nazva: Maximum log verbosity — стеля компіляції окремо від типового рівня
   zbih: Maximum log verbosity|Same as default|мовчки не робить\s*нічого|до чого можна підняти
     в runtime|dynamic log level changes
@@ -270,3 +289,6 @@
     Шлях до `configCHECK_FOR_STACK_OVERFLOW` у розділі 30 теж перевірено цим проходом і теж
     без розбіжностей — але доказ на нього вже стояв із проходу 6, тож реєстр залишає сильніший
     наявний. Витяг наведено тут як другу, незалежну звірку того самого місця.'
+  sha:
+  - c9bf4f76
+  - eb3080a3

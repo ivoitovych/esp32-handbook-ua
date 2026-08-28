@@ -14,6 +14,10 @@
 
 
 
+
+
+
+
 - nazva: 'T-12-005: насправді відбувається таке: ESP-IDF стартує звичайним чином, створює'
   zbih: насправді\s+відбувається\s+таке:\s+ESP\-IDF
   klas: A
@@ -60,6 +64,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує можливість використання Arduino як компонента ESP-IDF для переведення
     прототипу до виробництва
+  sha:
+  - c954bdec
 - nazva: 'T-12-064: Прототип на Arduino доводиться до виробу підключенням Arduino'
   zbih: Прототип\s+на\s+Arduino\s+доводиться\s+до\s+виробу\s+підключенням\s+Arduino\s+компонентом\s+ESP\-IDF,\s+а
   klas: A
@@ -84,3 +90,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що прототип на Arduino можна привести до виробництва підключенням його
     як компонента ESP-IDF без переписування
+  sha:
+  - 65d1b9a1

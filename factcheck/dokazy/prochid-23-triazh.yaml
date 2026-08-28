@@ -23,6 +23,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-23-048: Помітно менше — просадка, і далі спершу розділ'
   zbih: Помітно\s+менше\s+—\s+просадка,
   klas: A
@@ -45,6 +55,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: просадка напруги вказує на проблему живлення, а не прошивки
+  sha:
+  - 096c7af0
 - nazva: 'T-23-035: Подавати живлення на плату з видимим дефектом означає'
   zbih: Подавати\s+живлення\s+на\s+плату
   klas: A
@@ -67,6 +79,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: подання живлення на бракований пристрій може додати другу несправність
+  sha:
+  - 69e21065
 - nazva: 'T-23-039: Дзвенить — шукати замикання, не вмикати.'
   zbih: Дзвенить\s+—\s+шукати\s+замикання,
   klas: A
@@ -89,6 +103,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: при прозвонці дроту на живлення не подавати
+  sha:
+  - e4be64c2
 - nazva: 'T-23-075: Ніякого струму, ніякого ризику.'
   zbih: Ніякого\s+струму,\s+ніякого\s+ризику\.
   klas: A
@@ -137,3 +153,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: esptool автоматично виявляє тип мікросхеми при підключенні, що дозволяє перевірити
     інформацію про модуль
+  sha:
+  - 5454e13b

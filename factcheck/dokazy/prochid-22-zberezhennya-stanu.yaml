@@ -11,6 +11,8 @@
 
 
 
+
+
 - nazva: 'T-22-057: Лог зберігається у файл, а не читається з'
   zbih: Лог\s+зберігається\s+у\s+файл,
   klas: A
@@ -33,3 +35,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація рекомендує монітор для серійного виводу, а не екран
+  sha:
+  - 9ef15fdb

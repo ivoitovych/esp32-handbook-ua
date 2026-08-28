@@ -27,6 +27,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Робочий діапазон SF у LoRa — 7…12, а SF6 окремий режим
   zbih: робочий діапазон \*\*7…12\*\*|Апаратно існує ще й SF6
   klas: A
@@ -129,6 +143,8 @@
 
     Джерело підтверджує й рамку розділу: керованих параметрів справді три, і воно називає
     ті самі — «spreading factor, modulation bandwidth and error coding rate».'
+  sha:
+  - 5abc82aa
 - nazva: RFM69 не є LoRa-модулем
   zbih: \*\*RFM69 — це не LoRa\.\*\*
   klas: A

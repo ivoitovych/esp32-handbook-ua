@@ -146,6 +146,282 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-Z-010: паспорт виробу — 224, 310–311, 313, 398'
   zbih: паспорт\s+виробу\s+—\s+224,
   klas: A
@@ -168,6 +444,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: концепція паспорту виробу підтримується довідковою документацією ESP-IDF
+  sha:
+  - 812f63df
 - nazva: 'T-Z-011: серво — 32, 54, 203–204, 207, 274–277, 369,'
   zbih: серво\s+—\s+32,\s+54,
   klas: A
@@ -192,6 +470,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: серво мотори керуються сигналами PWM через LEDC периферію
+  sha:
+  - 5a4d677e
 - nazva: 'T-Z-012: серійна прошивка — 4, 143, 145, 398'
   zbih: серійна\s+прошивка\s+—\s+4,
   klas: A
@@ -216,6 +496,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: серійна прошивка підтримується утилітою для масового виробництва
+  sha:
+  - '70332958'
 - nazva: 'T-Z-013: таблиця розділів — 15, 18, 129, 133, 135,'
   zbih: таблиця\s+розділів\s+—\s+15,
   klas: A
@@ -244,6 +526,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: таблиця розділів — центральна концепція управління флеш-памяттю в ESP32
+  sha:
+  - cb078ee5
 - nazva: 'T-Z-038: DMA — 50, 52, 55–56, 188, 220, 222,'
   zbih: DMA\s+—\s+50,\s+52,
   klas: A
@@ -318,6 +602,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: код помилки для невалідного аргументу у API функціях
+  sha:
+  - a90a87b0
 - nazva: 'T-Z-062: esp_err_t — 131, 136, 164, 197–198, 327, 329–331,'
   zbih: esp_err_t\s+—\s+131,\s+136,
   klas: A
@@ -340,6 +626,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: базовий тип для кодів помилок в ESP-IDF
+  sha:
+  - cc15acbb
 - nazva: 'T-Z-108: FreeRTOS — 4–5, 40–41, 46, 94, 100, 103,'
   zbih: FreeRTOS\s+—\s+4–5,\s+40–41,
   klas: A
@@ -386,6 +674,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO12 — одна з виводів загального призначення, документована в GPIO API
+  sha:
+  - 20becf37
 - nazva: 'T-Z-110: GPIO15 — 14, 17–18, 28, 71, 142, 173,'
   zbih: GPIO15\s+—\s+14,\s+17–18,
   klas: A
@@ -408,6 +698,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO15 — одна з виводів з підтримкою RTC функцій
+  sha:
+  - e487200c
 - nazva: 'T-Z-111: GPIO17 — 67, 73–75, 206, 335'
   zbih: GPIO17\s+—\s+67,\s+73–75,
   klas: A
@@ -430,6 +722,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO17 — вивід загального призначення
+  sha:
+  - 7872cc46
 - nazva: 'T-Z-112: GPIO18 — 75, 172, 206, 335'
   zbih: GPIO18\s+—\s+75,\s+172,
   klas: A
@@ -452,6 +746,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO18 — вивід загального призначення
+  sha:
+  - 73fb60a8
 - nazva: 'T-Z-113: GPIO2 — 13–14, 17, 28, 71–72, 142, 335–337,'
   zbih: GPIO2\s+—\s+13–14,\s+17,
   klas: A
@@ -474,6 +770,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO2 — вивід загального призначення
+  sha:
+  - 6c971eec
 - nazva: 'T-Z-114: GPIO21 — 149, 310, 326, 335'
   zbih: GPIO21\s+—\s+149,\s+310,
   klas: A
@@ -496,6 +794,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO21 — вивід загального призначення
+  sha:
+  - c240fc86
 - nazva: 'T-Z-115: GPIO22 — 149, 310, 326, 335'
   zbih: GPIO22\s+—\s+149,\s+310,
   klas: A
@@ -518,6 +818,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO22 — вивід загального призначення
+  sha:
+  - 10ba97d4
 - nazva: 'T-Z-116: GPIO25 — 75, 206–207, 310, 349–350'
   zbih: GPIO25\s+—\s+75,\s+206–207,
   klas: A
@@ -540,6 +842,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO25 — вивід загального призначення
+  sha:
+  - 1006d6c7
 - nazva: 'T-Z-117: GPIO26 — 74–75, 206–207, 349–350'
   zbih: GPIO26\s+—\s+74–75,\s+206–207,
   klas: A
@@ -562,6 +866,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO26 — вивід загального призначення
+  sha:
+  - 20f964a5
 - nazva: 'T-Z-118: GPIO3 — 14, 72, 75, 335, 337'
   zbih: GPIO3\s+—\s+14,\s+72,
   klas: A
@@ -584,6 +890,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO3 — вивід загального призначення
+  sha:
+  - 8068db5c
 - nazva: 'T-Z-119: GPIO32 — 53, 74–75, 182, 389'
   zbih: GPIO32\s+—\s+53,\s+74–75,
   klas: A
@@ -606,6 +914,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO32 — вивід з підтримкою RTC функцій
+  sha:
+  - 6efa65ed
 - nazva: 'T-Z-120: GPIO34 — 53, 62, 74, 77, 182, 335,'
   zbih: GPIO34\s+—\s+53,\s+62,
   klas: A
@@ -628,6 +938,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO34 — вивід з підтримкою RTC функцій
+  sha:
+  - d116c20a
 - nazva: 'T-Z-121: GPIO4 — 9, 17, 149, 310, 335, 349,'
   zbih: GPIO4\s+—\s+9,\s+17,
   klas: A
@@ -650,6 +962,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO4 — вивід загального призначення
+  sha:
+  - 0d0b51e5
 - nazva: 'T-Z-123: GPIO6 — 21, 27, 53, 73, 76, 154,'
   zbih: GPIO6\s+—\s+21,\s+27,
   klas: A
@@ -672,6 +986,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO6 — вивід загального призначення
+  sha:
+  - 171e5a79
 - nazva: 'T-Z-124: GPIO8 — 13–14, 24, 72–73, 118, 205, 326,'
   zbih: GPIO8\s+—\s+13–14,\s+24,
   klas: A
@@ -694,6 +1010,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO8 — вивід загального призначення
+  sha:
+  - 2333b1a1
 - nazva: 'T-Z-125: GPIO9 — 13–14, 17, 24, 72–73, 82, 118,'
   zbih: GPIO9\s+—\s+13–14,\s+17,
   klas: A
@@ -716,6 +1034,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: GPIO9 — вивід загального призначення
+  sha:
+  - 48f2d3bf
 - nazva: 'T-Z-128: gpio_isr_handler — 50, 189'
   zbih: gpio_isr_handler\s+—\s+50,\s+189
   klas: A
@@ -738,6 +1058,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: функція обробник переривання GPIO
+  sha:
+  - fbe5b415
 - nazva: 'T-Z-135: i2c_device_config_t — 215, 327'
   zbih: i2c_device_config_t\s+—\s+215,\s+327
   klas: A
@@ -760,6 +1082,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: структура конфігурації для I2C пристрою
+  sha:
+  - adfdf8c3
 - nazva: 'T-Z-143: i2c_new_master_bus — 215, 326, 332'
   zbih: i2c_new_master_bus\s+—\s+215,\s+326,
   klas: A
@@ -782,6 +1106,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: функція для створення нової шини I2C у режимі майстра
+  sha:
+  - af3031db
 - nazva: 'T-Z-149: MALLOC_CAP_DMA — 188, 220, 222, 281, 368'
   zbih: MALLOC_CAP_DMA\s+—\s+188,\s+220,
   klas: A
@@ -850,6 +1176,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: команда для об'єднання кількох бінарних файлів у один образ
+  sha:
+  - 14c876a2
 - nazva: 'T-Z-024: bootloader — 5, 15, 18, 26, 98, 117–120,'
   zbih: bootloader\s+—\s+5,\s+15,
   klas: A
@@ -872,6 +1200,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: bootloader is well-documented ESP-IDF component with dedicated section in API guides
+  sha:
+  - 5c752088
 - nazva: 'T-Z-044: ESP-NOW — 69, 231, 233, 236, 240, 246–249,'
   zbih: ESP\-NOW\s+—\s+69,\s+231,
   klas: A
@@ -896,6 +1226,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP-NOW is documented WiFi communication protocol in ESP-IDF
+  sha:
+  - f13cfdc1
 - nazva: 'T-Z-046: ESP32-C3-MINI-1 — 7, 79, 152, 401'
   zbih: ESP32\-C3\-MINI\-1\s+—\s+7,\s+79,
   klas: A
@@ -920,6 +1252,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32-C3-MINI-1 is official Espressif module variant referenced in development board
     documentation
+  sha:
+  - ce874446
 - nazva: 'T-Z-047: ESP32-CAM — 14, 80, 82, 279–281'
   zbih: ESP32\-CAM\s+—\s+14,\s+80,
   klas: A
@@ -942,6 +1276,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32-CAM is official Espressif development board with integrated camera
+  sha:
+  - 774b42d4
 - nazva: 'T-Z-048: ESP32-S2 — 45–46, 118, 242'
   zbih: ESP32\-S2\s+—\s+45–46,\s+118,
   klas: A
@@ -964,6 +1300,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32-S2 is supported chip in Arduino-ESP32 project
+  sha:
+  - 20d22001
 - nazva: 'T-Z-049: ESP32-S3 — 7, 23, 39, 44, 118, 127,'
   zbih: ESP32\-S3\s+—\s+7,\s+23,
   klas: A
@@ -986,6 +1324,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32-S3 is supported chip in Arduino-ESP32 project
+  sha:
+  - b1d5d4f1
 - nazva: 'T-Z-051: ESP32-WROOM-32 — 7, 39, 79, 123, 152, 401'
   zbih: ESP32\-WROOM\-32\s+—\s+7,\s+39,
   klas: A
@@ -1008,6 +1348,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32-WROOM-32 is official Espressif module variant
+  sha:
+  - 1ca78200
 - nazva: 'T-Z-052: ESP32-WROOM-32D — 79, 152'
   zbih: ESP32\-WROOM\-32D\s+—\s+79,\s+152
   klas: A
@@ -1031,6 +1373,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32-WROOM-32D is official Espressif module variant referenced in development documentation
+  sha:
+  - 3f483cad
 - nazva: 'T-Z-053: ESP32-WROVER — 7, 79, 152'
   zbih: ESP32\-WROVER\s+—\s+7,\s+79,
   klas: A
@@ -1053,6 +1397,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32-WROVER is official Espressif module variant with PSRAM
+  sha:
+  - f8140c8b
 - nazva: 'T-Z-054: ESP8266 — 7, 18, 21, 80, 123, 152,'
   zbih: ESP8266\s+—\s+7,\s+18,
   klas: A
@@ -1075,6 +1421,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP8266 is documented predecessor SoC with dedicated RTOS SDK
+  sha:
+  - 91e58176
 - nazva: 'T-Z-144: I²S — 40, 53–56, 280–281, 388, 399'
   zbih: I²S\s+—\s+40,\s+53–56,
   klas: A
@@ -1099,6 +1447,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: I²S is well-documented audio interface in ESP-IDF peripheral documentation
+  sha:
+  - e5bd1000
 - nazva: 'T-Z-153: MCP23017 — 57, 76, 365, 386'
   zbih: MCP23017\s+—\s+57,\s+76,
   klas: A
@@ -1121,6 +1471,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: MCP23017 is documented I2C GPIO expander supported by Adafruit CircuitPython library
+  sha:
+  - 92916fb0
 - nazva: 'T-Z-156: Modbus — 156, 209, 211, 356, 358, 360'
   zbih: Modbus\s+—\s+156,\s+209,
   klas: A
@@ -1145,6 +1497,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Modbus is documented through official ESP-Modbus component
+  sha:
+  - 725e27ef
 - nazva: 'T-Z-173: SR04 — 27, 34, 61, 258, 262, 264,'
   zbih: SR04\s+—\s+27,\s+34,
   klas: A
@@ -1167,6 +1521,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: SR04 (HC-SR04) ultrasonic sensor is documented by Adafruit CircuitPython library
+  sha:
+  - 875ef220
 - nazva: 'T-Z-194: WS2812 — 54–55, 200, 204, 207, 388'
   zbih: WS2812\s+—\s+54–55,\s+200,
   klas: A
@@ -1189,3 +1545,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: WS2812 (NeoPixel) addressable LED is documented by Adafruit CircuitPython library
+  sha:
+  - 4929da13

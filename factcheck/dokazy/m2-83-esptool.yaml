@@ -11,6 +11,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: esptool версія v4 та v5 у ESP-IDF
   zbih: v4.*v5|esptool.*version
   klas: A
@@ -112,6 +130,8 @@
   method: curl esp-idf freertos_idf.rst, grep eFuse, 2026-08-26
   note: Текст T-21-055 говорить про унікальність MAC-адреси від заводу в eFuse. Джерело підтверджує
     наявність eFuse як сховища унікальних даних.
+  sha:
+  - 82ff65b0
 - nazva: Команда esptool flash-id додає інформацію про флеш
   zbih: flash-id.*шапка
   klas: B
@@ -132,6 +152,8 @@
   method: curl esptool boot-mode-selection.rst, grep flash, 2026-08-26
   note: Текст T-17-034 описує flash-id як команду. Джерело підтверджує наявність flash операцій
     в esptool.
+  sha:
+  - 2afe9b5f
 - nazva: Максимальна швидкість baudu для більшості мостів 460800
   zbih: '460800'
   klas: B

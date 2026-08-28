@@ -6,6 +6,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Етап 1 — ROM bootloader зашитий у кремній
   zbih: Етап 1.*ROM bootloader.*кремній
   klas: A
@@ -26,6 +42,8 @@
   method: curl esptool boot-mode-selection.rst, 2026-08-26
   note: 'Текст одиниці T-16-004 констатує ROM bootloader у read-only memory у кремнії. Джерело
     підтверджує: The ROM bootloader is in read-only memory.'
+  sha:
+  - 37a50017
 - nazva: Етап 2 — другий бутлоадер bootloader.bin у флеші
   zbih: Етап 2.*другий бутлоадер.*bootloader
   klas: B
@@ -46,6 +64,8 @@
   method: curl esptool boot-mode-selection.rst, 2026-08-26
   note: 'Послідовність: ROM (етап 1), потім другий бутлоадер з флешу (етап 2). Джерело підтверджує
     послідовність етапів.'
+  sha:
+  - 371e3feb
 - nazva: Адреса bootloader.bin для ESP32 чипів — 0x1000
   zbih: Останнє\s+тягне\s+за\s+собою\s+перерахунок\s+явних\s+зсувів\s+у\s+CSV:\s+жоден\s+розділ\s+не\s+може\s+починатися\s+раніше\s+ніж\s+нова\s+адреса|\[\[classic\]\]\s+Адреса\s+`0x1000`\s+тут\s+—\s+знову\s+classic,\s+і\s+тепер\s+вона\s+узгоджена\s+з\s+`\-\-chip\s+esp32`\s+у\s+тому\s+ж\s+рядку;\s+для\s+і|У\s+ручному\s+варіанті\s+адреса\s+бутлоадера\s+набирається\s+з\s+голови,\s+і\s+саме\s+там\s+роблять\s+помилку:\s+`0x1000`\s+на\s+S3\s+дає\s+обра|⚠\s+У\s+команді\s+вище\s+стоїть\s+`0x1000`\s+—\s+адреса\s+\*\*classic\s+і\s+S2\*\*
   klas: A

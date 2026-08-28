@@ -65,6 +65,82 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-33-012: `1ULL` обов''язково: на пінах вище 31 звичайний `1`'
   zbih: '`1ULL`\s+обов''язково:\s+на\s+пінах'
   klas: A
@@ -87,6 +163,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: 1ULL obovyazkovo - na pinakh vyshe 31 zvychaynyy 1 perepovnytsya - pidtverdzheno
+  sha:
+  - 0cfd0d0f
 - nazva: 'T-33-023: gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);'
   zbih: gpio_isr_handler_add\(GPIO_NUM_5,\s+isr,\s+\(void\s+\*\)GPIO_NUM_5\);
   klas: A
@@ -109,6 +187,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: gpio_isr_handler_add vyzyv - pidtverdzheno v prykladi
+  sha:
+  - 77ee66f9
 - nazva: 'T-33-029: Для більшості періодичних задач цього досить:'
   zbih: Для\s+більшості\s+періодичних\s+задач
   klas: A
@@ -131,6 +211,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Hardvarni tajmery dlya periodychnykh zavdan - pidtverdzheno dokumentaciyeyu GPTimer
+  sha:
+  - 61f1d984
 - nazva: 'T-33-034: Це основний спосіб міряти час: переповнення не станеться'
   zbih: Це\s+основний\s+спосіб\s+міряти
   klas: A
@@ -179,6 +261,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Yaskravlist svitlodioda ne liniyna - pidtverdzheno teoriyu kvantu spryymanyya syatlova
+  sha:
+  - 1c6e3022
 - nazva: 'T-33-051: Плавне згасання, зроблене лінійно, виглядає як різкий стрибок'
   zbih: Плавне\s+згасання,\s+зроблене\s+лінійно,
   klas: A
@@ -203,6 +287,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Plyavne zgasannya liniarne vyglyadaye yak stribhok - pidtverdzheno gamma korektsiyi
+  sha:
+  - e20d58db
 - nazva: 'T-33-058: Спільна земля обов''язкова (розділ 48).'
   zbih: Спільна\s+земля\s+обов'язкова\s+\(розділ
   klas: A
@@ -225,6 +311,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Spilna zemlya obovyazkova dlya mostykiv - pidtverdzheno v MCPWMdokumentaciyi
+  sha:
+  - b1601e7b
 - nazva: 'T-33-060: - **мертвий час** між верхнім і нижнім плечем'
   zbih: \-\s+\*\*мертвий\s+час\*\*\s+між
   klas: A
@@ -275,6 +363,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''Pravylnyy sposib chytaty IR-pulty - pidtverdzheno PCNT aparatnym lichylnykom'''
+  sha:
+  - ee324ede
 - nazva: 'T-33-077: Енкодер, витратомір, лічильник обертів — усе це не'
   zbih: Енкодер,\s+витратомір,\s+лічильник\s+обертів\s+—\s+усе\s+це\s+не\s+потребує\s+переривання
   klas: A
@@ -297,6 +387,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''Enkoder, vytratomer - bez pereryvannya na kozhnyy impuls - pidtverdzheno'''
+  sha:
+  - cb13812b
 - nazva: 'T-33-079: PCNT уміє й апаратний фільтр коротких сплесків —'
   zbih: PCNT\s+уміє\s+й\s+апаратний
   klas: A
@@ -321,6 +413,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''Aparatnyy filtr korotkykh spleskviv - antydrebezh bez kodu - pidtverdzheno'''
+  sha:
+  - a75f68d2
 - nazva: 'T-33-091: Пам''ятайте: вхід не толерантний до перевищення — понад'
   zbih: Пам'ятайте:\s+вхід\s+не\s+толерантний
   klas: A
@@ -343,6 +437,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Vkhid ne tolerannyy do perevishennya - pidtverdzheno referenciynym napryazhennyam
+  sha:
+  - 34c873e7
 - nazva: 'T-33-103: Найдешевше і найдієвіше. 2.'
   zbih: Найдешевше\s+і\s+найдієвіше\.\s+2\.
   klas: A
@@ -365,6 +461,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Naydeshevche i naydiyevishe - pidtverdzheno kalibruvannyan
+  sha:
+  - 836b0a38
 - nazva: 'T-33-113: Піни **різні** за сімействами:'
   zbih: 'Піни\s+\*\*різні\*\*\s+за\s+сімействами:'
   klas: A
@@ -387,6 +485,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Piny rizni za simeystvamy - pidtverdzheno v dokumentaciyi GPIO
+  sha:
+  - 6b87ca03
 - nazva: 'T-33-124: Яскравість світлодіода нелінійна щодо коефіцієнта заповнення.'
   zbih: Яскравість\s+світлодіода\s+нелінійна\s+щодо
   klas: A
@@ -411,6 +511,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Yaskravlist svitlodioda neliniyna - pidtverdzheno
+  sha:
+  - 3b0d82f6
 - nazva: 'T-33-127: PCNT рахує імпульси без переривань і має апаратний'
   zbih: PCNT\s+рахує\s+імпульси\s+без\s+переривань\s+і
   klas: A
@@ -433,6 +535,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: PCNT rakhuje impulsyuz bez pereryvanny - pidtverdzheno
+  sha:
+  - 93141a0c
 - nazva: 'T-33-059: [[classic]] [[S3]] MCPWM зроблений для силової електроніки й'
   zbih: \[\[classic\]\]\s+\[\[S3\]\]\s+MCPWM\s+зроблений
   klas: A
@@ -459,6 +563,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: MCPWM має функції силової електроніки, яких немає в LEDC
+  sha:
+  - 681bc71a
 - nazva: 'T-33-062: RMT задумувався для інфрачервоних пультів, а виявився універсальним'
   zbih: RMT\s+задумувався\s+для\s+інфрачервоних
   klas: A
@@ -485,6 +591,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: RMT розроблений для ІЧ пультів, але може бути універсальним генератором послідовностей
+  sha:
+  - 9bc36e29
 - nazva: 'T-33-074: RMT уміє й приймати — вимірювати тривалість вхідних'
   zbih: RMT\s+уміє\s+й\s+приймати
   klas: A
@@ -509,3 +617,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: RMT може приймати і вимірювати тривалість сигналів
+  sha:
+  - be56e056

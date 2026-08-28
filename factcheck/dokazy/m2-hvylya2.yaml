@@ -61,6 +61,86 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-H-013: **Datasheet модуля** (`ESP32-WROOM-32`, `ESP32-S3-WROOM-1`, '
   zbih: \*\*Datasheet\s+модуля\*\*\s+\(`ESP32\-WROOM\-32`,\s+`ESP32\-S3\-WROOM\-1`,\s+`ESP32\-C3\-MINI\-1`\)\s+—\s+окремий\s+документ\s+від\s+datashee
   klas: A
@@ -85,6 +165,8 @@
     it by substring match.
   note: Це datasheet модуля, яке посилається на окремий ESP32 Series Datasheet для інформації
     про чип.
+  sha:
+  - 9191c24f
 - nazva: 'T-23-011: `ESP32-WROOM-32` · Що це значить практично → двоядерний Xten'
   zbih: '`ESP32\-WROOM\-32`\s+·\s+Що\s+це\s+значить\s+практично\s+→\s+двоядерний\s+Xtensa,\s+без\s+PSRAM'
   klas: A
@@ -117,6 +199,8 @@
     собі відсутності PSRAM не гарантує, і рядок «пізніші ревізії, той самий код» неточний.
     Клас A, бо цитата засвідчує факт про модуль; не G, бо твердження книги нею не спростоване.
     Прогалину винесено М1 листом 0230Z — розділ 23 його.'
+  sha:
+  - 6c77a290
 - nazva: 'T-36-055: SPI витримує десятки мегагерц, але не завжди'
   zbih: SPI\s+витримує\s+десятки\s+мегагерц,\s+але\s+не\s+завжди
   klas: A
@@ -163,6 +247,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: Документ підтверджує OTA як механізм у ESP-IDF.
+  sha:
+  - 6abb33e2
 - nazva: 'T-15-014: Виріб на роки, OTA, серійність · Чому → відтворюваність і ді'
   zbih: Виріб\s+на\s+роки,\s+OTA,\s+серійність\s+·\s+Чому\s+→\s+відтворюваність\s+і\s+діагностика
   klas: A
@@ -183,6 +269,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: Документ підтверджує наявність діагностики та перевірки відтворюваності при OTA.
+  sha:
+  - a6a8ecd6
 - nazva: 'T-58-062: | OTA | оновлення і відкат проходять |'
   zbih: \|\s+OTA\s+\|\s+оновлення\s+і\s+відкат\s+проходять\s+\|
   klas: A
@@ -207,6 +295,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: Документ описує процес оновлення та його успішного завершення.
+  sha:
+  - da6e14e5
 - nazva: 'T-COM-025: MPU6050 · Чому → сам зводить дані, менше роботи'
   zbih: MPU6050\s+·\s+Чому\s+→\s+сам\s+зводить\s+дані,\s+менше\s+роботи
   klas: A
@@ -231,6 +321,8 @@
     it by substring match.
   note: Документ підтверджує, що MPU6050 має вбудований I2C master для збирання даних від
     зовнішніх сенсорів.
+  sha:
+  - 367ed7ac
 - nazva: 'T-24-038: Формат NVS — сторінковий, з простором імен, ключем і типізов'
   zbih: Формат\s+NVS\s+—\s+сторінковий,\s+з\s+простором\s+імен,\s+ключем\s+і\s+типізованим\s+значенням
   klas: A
@@ -253,6 +345,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: Також у документі про namespaces та page structure.
+  sha:
+  - 8780dde8
 - nazva: 'T-18-052: NVS стійкий до зникнення живлення: запис влаштований так, що'
   zbih: NVS\s+стійкий\s+до\s+зникнення\s+живлення:\s+запис\s+влаштований\s+так,\s+що\s+обірвана\s+операція\s+не\s+псує\s+вже\s+записане
   klas: A
@@ -279,6 +373,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: Підтверджує стійкість до зникнення живлення.
+  sha:
+  - 77e191f6
 - nazva: 'T-53-017: Паспорти більшості елементів нормують заряджання від 0 до +4'
   zbih: Паспорти\s+більшості\s+елементів\s+нормують\s+заряджання\s+від\s+0\s+до\s+\+45\s+°C\s+—\s+саме\s+так\s+у\s+Panasonic\s+NCR18650B\s+і\s+LG\s+MJ1
   klas: A
@@ -319,6 +415,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: Datasheet підтверджує миттєвий старт RP2040.
+  sha:
+  - 763ce585
 - nazva: 'T-25-037: Документація ESP-IDF описує це так: `Ctrl + L` — «Stop/resum'
   zbih: Документація\s+ESP\-IDF\s+описує\s+це\s+так:\s+`Ctrl\s+\+\s+L`\s+—\s+«Stop/resume\s+log\s+output\s+saved\s+to\s+file»;\s+монітор\s+створює\s+файл
   klas: A
@@ -349,6 +447,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: 'Місце в документі: таблиця клавіш, рядки 50-52'
+  sha:
+  - 43ab6004
 - nazva: 'T-25-105: Лог пишеться у файл (`Ctrl+L` в `idf.py monitor`, для решти '
   zbih: Лог\s+пишеться\s+у\s+файл\s+\(`Ctrl\+L`\s+в\s+`idf\.py\s+monitor`,\s+для\s+решти\s+моніторів\s+`tee`\),\s+а\s+не\s+читається\s+з\s+екрана
   klas: A
@@ -369,6 +469,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: 'Місце в документі: '
+  sha:
+  - 45552ee9
 - nazva: 'T-K10-019: idf.py -p /dev/ttyUSB0 monitor # монітор з розшифровкою back'
   zbih: idf\.py\s+\-p\s+/dev/ttyUSB0\s+monitor\s+\#\s+монітор\s+з\s+розшифровкою\s+backtrace
   klas: A
@@ -393,6 +495,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: 'Місце в документі: розділ Automatic Address Decoding'
+  sha:
+  - e95261df
 - nazva: 'T-K06-024: `0x10` · Назва → RTCWDT_RTC_RESET'
   zbih: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
   klas: A
@@ -413,6 +517,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: 'Місце в документі: розділ RTC Watchdog Timeout, рядок 306'
+  sha:
+  - 9338f26b
 - nazva: 'T-D-047: `0x10` · Назва → RTCWDT_RTC_RESET'
   zbih: '`0x10`\s+·\s+Назва\s+→\s+RTCWDT_RTC_RESET'
   klas: A
@@ -433,6 +539,8 @@
   method: Source document retrieved 2026-08-26 from the local cache; quote verified against
     it by substring match.
   note: 'Місце в документі: розділ RTC Watchdog Timeout'
+  sha:
+  - 9338f26b
 - nazva: 'T-E-107: DS18B20 · Що дає → температура, кілька на лінії'
   zbih: DS18B20\s+·\s+Що\s+дає\s+→\s+температура,\s+кілька\s+на\s+лінії
   klas: A
@@ -509,6 +617,8 @@
     it by substring match.
   note: Документ підтверджує, що налагодження працює без додаткового обладнання, лише USB
     кабель.
+  sha:
+  - a0a9fc6a
 - nazva: 'T-20-030: esptool --port /dev/ttyUSB0 flash-id'
   zbih: esptool\s+\-\-port\s+/dev/ttyUSB0\s+flash\-id
   klas: A

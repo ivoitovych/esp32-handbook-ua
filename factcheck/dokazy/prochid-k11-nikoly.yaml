@@ -11,6 +11,8 @@
 
 
 
+
+
 - nazva: 'T-K11-008: **Не вмикати Flash Encryption і Secure Boot «щоб'
   zbih: \*\*Не\s+вмикати\s+Flash\s+Encryption
   klas: A
@@ -39,3 +41,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: write-protect в release-режиме означает невозможность изменения этих параметров после
     активации
+  sha:
+  - 410af712

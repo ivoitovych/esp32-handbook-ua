@@ -23,3 +23,5 @@
     — ніде публічно). Клас `C` означає «джерело назване, цитати немає», а **не** «перевірено».
   note: цитати немає; що саме шукати — у полі `shukaty`
   look_for: ESP32 dual-core processor specifications
+  sha:
+  - 0cb91d4a

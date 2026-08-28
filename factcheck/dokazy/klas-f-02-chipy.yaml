@@ -44,6 +44,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-02-042: Wi-Fi · ESP32 → так'
   zbih: Wi\-Fi\s+·\s+ESP32\s+→
   klas: A
@@ -66,6 +90,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32 has WiFi support defined in SoC capabilities
+  sha:
+  - d887dabc
 - nazva: 'T-02-043: Wi-Fi · S2 → так'
   zbih: Wi\-Fi\s+·\s+S2\s+→
   klas: A
@@ -88,6 +114,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S2 has WiFi support defined in SoC capabilities
+  sha:
+  - 8de930a4
 - nazva: 'T-02-044: Wi-Fi · S3 → так'
   zbih: Wi\-Fi\s+·\s+S3\s+→
   klas: A
@@ -110,6 +138,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S3 has WiFi support defined in SoC capabilities
+  sha:
+  - a5ffbdc2
 - nazva: 'T-02-047: Wi-Fi · H2 → **ні**'
   zbih: Wi\-Fi\s+·\s+H2\s+→
   klas: A
@@ -134,6 +164,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: H2 SoC capabilities file shows only BLE support, no WIFI_SUPPORTED macro
+  sha:
+  - ef59b447
 - nazva: 'T-02-054: BLE · ESP32 → так'
   zbih: BLE\s+·\s+ESP32\s+→
   klas: A
@@ -158,6 +190,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP32 has BLE support defined in SoC capabilities
+  sha:
+  - 44c68cc9
 - nazva: 'T-02-055: BLE · S2 → **ні**'
   zbih: BLE\s+·\s+S2\s+→
   klas: A
@@ -180,6 +214,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: S2 SoC capabilities file shows only WiFi support, no BLE_SUPPORTED macro
+  sha:
+  - 8758336a
 - nazva: 'T-02-057: BLE · C3 → так'
   zbih: BLE\s+·\s+C3\s+→
   klas: A
@@ -204,6 +240,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: C3 has BLE support defined in SoC capabilities
+  sha:
+  - fedb80c4
 - nazva: 'T-02-096: **Переноситься майже завжди:** код на ESP-IDF, написаний через'
   zbih: \*\*Переноситься\s+майже\s+завжди:\*\*\s+код
   klas: A
@@ -229,6 +267,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: FreeRTOS is a common base across all ESP chips, supporting portable application code
+  sha:
+  - c17dc940
 - nazva: 'T-02-099: Перенесення проєкту на інший чип в ESP-IDF починається'
   zbih: Перенесення\s+проєкту\s+на\s+інший
   klas: A
@@ -255,6 +295,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Потвердив comando set-target для перемикання чипа проєкту
+  sha:
+  - ce0f3606
 - nazva: 'T-02-103: Усі налаштування, зроблені через `menuconfig`, повертаються до типових.'
   zbih: Усі\s+налаштування,\s+зроблені\s+через
   klas: A
@@ -281,6 +323,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Коли set-target перестворює sdkconfig з нуля, усі налаштування menuconfig повертаються
     до типових
+  sha:
+  - 37dcf890
 - nazva: 'T-02-105: Але зроблене без збереження `sdkconfig.defaults` доведеться налаштовувати
     заново.'
   zbih: Але\s+зроблене\s+без\s+збереження
@@ -313,3 +357,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Потвердив що sdkconfig.defaults зберігає налаштування при перестворенні конфігурації
+  sha:
+  - ac382040

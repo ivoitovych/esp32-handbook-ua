@@ -20,6 +20,14 @@
 
 
 
+
+
+
+
+
+
+
+
 - nazva: 'T-12-009: **`loop` — звичайна задача FreeRTOS.** Вона має свій'
   zbih: \*\*`loop`\s+—\s+звичайна\s+задача
   klas: A
@@ -46,6 +54,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: loop is created as a FreeRTOS task using xTaskCreateUniversal at startup, confirming
     it is a regular FreeRTOS task with its own stack and priority
+  sha:
+  - d918d43c
 - nazva: 'T-12-033: Arduino core версії 3.x — велике оновлення: він'
   zbih: Arduino\s+core\s+версії\s+3\.x
   klas: A
@@ -68,6 +78,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документ явно підтверджує, що Arduino core версії 3.0 переїхав на ESP-IDF 5.1
+  sha:
+  - 0d983155
 - nazva: 'T-12-048: **Arduino як компонент ESP-IDF.** Найцікавіший варіант: проєкт будується'
   zbih: \*\*Arduino\s+як\s+компонент\s+ESP\-IDF\.\*\*
   klas: A
@@ -92,6 +104,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документ явно описує використання Arduino як компоненту ESP-IDF проєкту
+  sha:
+  - 09499ed7
 - nazva: 'T-12-049: Тоді доступні `setup`/`loop` і бібліотеки Arduino — і'
   zbih: Тоді\s+доступні\s+`setup`/`loop`\s+і
   klas: A
@@ -118,6 +132,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документ підтверджує, що при використанні Arduino як компоненту ESP-IDF доступні setup/loop
     та menuconfig з усіма можливостями ESP-IDF включаючи діагностику
+  sha:
+  - 56dfc133
 - nazva: 'T-12-061: `delay` тут не блокує систему, а `loop` —'
   zbih: '`delay`\s+тут\s+не\s+блокує'
   klas: A
@@ -140,3 +156,5 @@
   note: Функція delay() використовує vTaskDelay(), яка призводить передачу керування планувальнику
     FreeRTOS, а не блокує систему. Крім того, у main.cpp loop виконується в завданні FreeRTOS
     під назвою "loopTask".
+  sha:
+  - 640a93d9

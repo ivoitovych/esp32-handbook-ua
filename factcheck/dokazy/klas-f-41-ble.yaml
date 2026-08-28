@@ -38,6 +38,26 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-41-007: Проєкт на SPP, що переїжджає на S3, доведеться'
   zbih: Проєкт\s+на\s+SPP,\s+що
   klas: A
@@ -64,6 +84,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: SPP is Classic Bluetooth only; S3 supports only BLE, so projects moving to S3 must
     be rewritten
+  sha:
+  - 9a9b3be0
 - nazva: 'T-41-011: Де є · BLE → уся лінійка, крім'
   zbih: Де\s+є\s+·\s+BLE
   klas: A
@@ -95,6 +117,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: BLE support table shows ESP32, S3, C2, C3, C5, C6, C61, H2, H4 - notably S2 is absent
+  sha:
+  - ca7eb120
 - nazva: 'T-41-015: Швидкість · BLE → десятки кбіт/с'
   zbih: Швидкість\s+·\s+BLE\s+→
   klas: A
@@ -123,6 +147,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: BLE has lower data transfer rate than Classic (though specific "tens of kbits/s" not
     stated)
+  sha:
+  - ed26a2f5
 - nazva: 'T-41-019: Спарювання · BLE → не обов''язкове'
   zbih: Спарювання\s+·\s+BLE\s+→
   klas: A
@@ -149,6 +175,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: BLE connection logs show encrypted=0, authenticated=0, bonded=0, proving pairing/bonding
     not obligatory
+  sha:
+  - cff9038c
 - nazva: 'T-41-038: Тоді пристрій самоописовий — будь-який універсальний BLE-застосунок покаже'
   zbih: Тоді\s+пристрій\s+самоописовий\s+—
   klas: A
@@ -183,6 +211,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує, що стандартні GATT послуги дозволяють універсальним додаткам розпізнавати
     та виводити осмислені значення без кастомного клієнта
+  sha:
+  - 32a9ba20
 - nazva: 'T-41-040: В ESP-IDF два стеки BLE, і вибір між'
   zbih: В\s+ESP\-IDF\s+два\s+стеки
   klas: A
@@ -205,6 +235,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Прямо підтверджує наявність двох стеків BLE в ESP-IDF
+  sha:
+  - f1921f7b
 - nazva: 'T-41-041: **Bluedroid** — повний стек, підтримує і Classic, і'
   zbih: \*\*Bluedroid\*\*\s+—\s+повний\s+стек,
   klas: A
@@ -229,6 +261,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує повний стек Bluedroid, що підтримує Classic і BLE
+  sha:
+  - be3db6f9
 - nazva: 'T-41-043: **NimBLE** — тільки BLE, компактніший, займає в рази'
   zbih: \*\*NimBLE\*\*\s+—\s+тільки\s+BLE,
   klas: A
@@ -251,6 +285,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує NimBLE як BLE-тільки компактніший стек з меншим RAM і флешем
+  sha:
+  - 3aa1db4f
 - nazva: 'T-41-049: **Wi-Fi і Bluetooth одночасно** працюють, але ділять одне'
   zbih: \*\*Wi\-Fi\s+і\s+Bluetooth\s+одночасно\*\*
   klas: A
@@ -277,6 +313,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує, що Wi-Fi і Bluetooth ділять одне радіо і конкурують за час
+  sha:
+  - 642e02fc
 - nazva: 'T-41-054: BLE спроєктований для батарейок, і його головний параметр'
   zbih: BLE\s+спроєктований\s+для\s+батарейок,
   klas: A
@@ -305,6 +343,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Підтверджує, що BLE спроєктований для низької енергоефективності; інтервал реклами
     важливий для оптимізації
+  sha:
+  - 881b2151
 - nazva: 'T-41-078: Для BLE-проєкту брати NimBLE: різниця в пам''яті вирішальна'
   zbih: 'Для\s+BLE\-проєкту\s+брати\s+NimBLE:'
   klas: A
@@ -331,3 +371,5 @@
   note: Документація стверджує, що NimBLE вимагає менше пам'яті в принципі, але не зазначає,
     що ця різниця "вирішальна" саме для C3. Більш того, в таблиці підтримки чипів показано,
     що обидва стеки (Bluedroid і NimBLE) підтримуються на C3.
+  sha:
+  - 92698aea

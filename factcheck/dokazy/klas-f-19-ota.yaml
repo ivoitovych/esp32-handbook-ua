@@ -29,6 +29,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-19-007: `otadata` · Тип → data'
   zbih: '`otadata`\s+·\s+Тип\s+→'
   klas: A
@@ -51,6 +79,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: otadata is explicitly described as type data with subtype ota
+  sha:
+  - ff82e6cf
 - nazva: 'T-19-009: `ota_0` · Тип → app'
   zbih: '`ota_0`\s+·\s+Тип\s+→'
   klas: A
@@ -73,6 +103,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ota_0 partition is explicitly defined with type app
+  sha:
+  - d66c4921
 - nazva: 'T-19-011: `ota_1` · Тип → app'
   zbih: '`ota_1`\s+·\s+Тип\s+→'
   klas: A
@@ -95,6 +127,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ota_1 partition is explicitly defined with type app
+  sha:
+  - 94e079d1
 - nazva: 'T-19-013: Пристрій виконується зі слоту `ota_0`.'
   zbih: Пристрій\s+виконується\s+зі\s+слоту
   klas: A
@@ -119,6 +153,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Device boots from ota_0 by default when no factory app is present
+  sha:
+  - 8f05dca6
 - nazva: 'T-19-014: Приходить оновлення — воно записується в `ota_1`, при'
   zbih: Приходить\s+оновлення\s+—\s+воно
   klas: A
@@ -145,6 +181,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Update is written to non-selected slot while running firmware continues to work
+  sha:
+  - 9f4e8a7e
 - nazva: 'T-19-016: Наступне оновлення піде у слот `ota_0`.'
   zbih: Наступне\s+оновлення\s+піде\s+у
   klas: A
@@ -169,6 +207,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Updates alternate between slots; next update uses previously unused slot
+  sha:
+  - a7a0e9f4
 - nazva: 'T-19-059: Компонент сам знаходить неактивний слот, пише в нього'
   zbih: Компонент\s+сам\s+знаходить\s+неактивний
   klas: A
@@ -197,3 +237,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Confirms component finds inactive (not selected for booting) slot, writes image via
     streaming API esp_ota_write, verifies at esp_ota_end, and updates otadata
+  sha:
+  - 967bf5da

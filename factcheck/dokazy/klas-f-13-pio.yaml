@@ -11,6 +11,8 @@
 
 
 
+
+
 - nazva: 'T-13-070: | Виріб, OTA, серійність, довгий супровід | ESP-IDF'
   zbih: \|\s+Виріб,\s+OTA,\s+серійність,
   klas: A
@@ -35,3 +37,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Таблиці розділів ESP-IDF підтримують OTA, що потрібне для серійного виробництва та
     довгострокового супроводу
+  sha:
+  - 911cb2bf

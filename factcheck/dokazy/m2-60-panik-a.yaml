@@ -17,6 +17,44 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: '0x1: Що сталося → подано живлення або EN'
   zbih: '`0x1`.*Що сталося.*подано живлення'
   klas: A
@@ -39,6 +77,9 @@
   note: Коментар enum'у переводиться як «скидання від подачі напруги на Vbat». EN (enable)
     — пін вмикання чипа, без якого скидання неможливе. Книга інтерпретує це як «подано живлення
     або EN», що відповідає суті Vbat reset.
+  sha:
+  - '61891822'
+  - d090e5b8
 - nazva: '0x1: Що робити → норма'
   zbih: '`0x1`.*Що робити.*норма'
   klas: B
@@ -59,6 +100,8 @@
   method: curl raw.githubusercontent, 2026-08-26
   note: Скидання при вмиканні (POWERON_RESET) — нормальний сценарій. Не помилка, не проблема.
     Книга правильно називає це нормою.
+  sha:
+  - 7431c283
 - nazva: '0x3: Назва → SW_RESET'
   zbih: '`0x3`.*Назва.*SW_RESET'
   klas: A
@@ -77,6 +120,8 @@
     '
   method: curl raw.githubusercontent, 2026-08-26
   note: 'Пряма відповідність: 0x3 = SW_RESET. Неме розходження між книгою й enum''ом.'
+  sha:
+  - 1baef394
 - nazva: '0x3: Що робити → норма, якщо ваша'
   zbih: '`0x3`.*Що робити.*норма, якщо'
   klas: B
@@ -99,6 +144,8 @@
   note: Програмне скидання — нормально, якщо ви його викликали (esp_restart()). Якщо ви його
     не викликали, то причина невідома. Книга коректно застерігає слід «якщо ваша» (тобто якщо
     код був), що надає логічне припущення.
+  sha:
+  - 03a89bab
 - nazva: '0x4: Назва → OWDT_RESET'
   zbih: '`0x4`.*Назва.*OWDT_RESET'
   klas: A
@@ -119,6 +166,8 @@
   method: curl raw.githubusercontent, 2026-08-26
   note: 'Пряма відповідність: 0x4 = OWDT_RESET. Коментар вказує на legacy (застарілість) watchdog''а,
     що добре корелює з наступним рядком про застарілість.'
+  sha:
+  - 7add9e17
 - nazva: '0x4: Що сталося → застарілий watchdog'
   zbih: '`0x4`.*Що сталося.*застарілий'
   klas: A
@@ -159,6 +208,8 @@
   method: curl raw.githubusercontent, 2026-08-26
   note: Застарілий компонент використовується рідко в новому коді. Випливає однозначно з позначки
     Legacy в enum'і.
+  sha:
+  - b04df11d
 - nazva: '0x5: Назва → DEEPSLEEP_RESET'
   zbih: '`0x5`.*Назва.*DEEPSLEEP_RESET'
   klas: A
@@ -177,6 +228,8 @@
     '
   method: curl raw.githubusercontent, 2026-08-26
   note: 'Пряма відповідність: 0x5 = DEEPSLEEP_RESET. Коментар згадує Deep Sleep.'
+  sha:
+  - 60cc5d87
 - nazva: '0x5: Що сталося → прокинувся з deep sleep'
   zbih: '`0x5`.*Що сталося.*прокинувся'
   klas: A
@@ -197,6 +250,9 @@
   method: curl raw.githubusercontent, 2026-08-26
   note: Коментар DEEPSLEEP_RESET говорить про Deep Sleep. Прокинення (wake-up) — це сенс скидання
     при виході з deep sleep режиму.
+  sha:
+  - 91ecb724
+  - d01aac01
 - nazva: '0x5: Що робити → норма'
   zbih: '`0x5`.*Що робити.*норма'
   klas: B
@@ -215,6 +271,8 @@
     '
   method: curl raw.githubusercontent, 2026-08-26
   note: Скидання при прокинуванні з deep sleep — нормальна операція, не помилка.
+  sha:
+  - 0f8056b3
 - nazva: '0x6: Назва → SDIO_RESET'
   zbih: '`0x6`.*Назва.*SDIO_RESET'
   klas: A
@@ -233,6 +291,8 @@
     '
   method: curl raw.githubusercontent, 2026-08-26
   note: 'Пряма відповідність: 0x6 = SDIO_RESET.'
+  sha:
+  - 6624efb1
 - nazva: '0x6: Що сталося → скидання модулем SLC'
   zbih: '`0x6`.*Що сталося.*SLC'
   klas: A
@@ -253,6 +313,8 @@
   method: curl raw.githubusercontent, 2026-08-26
   note: Коментар enum'у прямо говорить «Reset by SLC module». Книга переводить як «скидання
     модулем SLC», що дослівно.
+  sha:
+  - 8a61920f
 - nazva: '0x6: Що робити → рідко'
   zbih: '`0x6`.*Що робити.*рідко'
   klas: B
@@ -273,6 +335,8 @@
   method: curl raw.githubusercontent, 2026-08-26
   note: SDIO (SD Input/Output) — периферійне обладнання. Скидання ним рідкісне в типовому
     застосуванні.
+  sha:
+  - 31ae5bdb
 - nazva: '0x7: Що сталося → watchdog таймера 0'
   zbih: '`0x7`.*Що сталося.*таймера 0'
   klas: A
@@ -311,6 +375,8 @@
     '
   method: curl raw.githubusercontent, 2026-08-26
   note: 'Пряма відповідність: 0x8 = TG1WDT_SYS_RESET. TG1 = Timer Group 1.'
+  sha:
+  - a4c80ac9
 - nazva: '0x8: Що сталося → watchdog таймера 1'
   zbih: '`0x8`.*Що сталося.*таймера 1'
   klas: A
@@ -349,6 +415,8 @@
     '
   method: curl raw.githubusercontent, 2026-08-26
   note: 'Пряма відповідність: 0x9 = RTCWDT_SYS_RESET. RTC = Real Time Clock.'
+  sha:
+  - 61c76aaf
 - nazva: '0x9: Що сталося → RTC watchdog'
   zbih: '`0x9`.*Що сталося.*RTC'
   klas: A
@@ -387,3 +455,5 @@
   method: curl raw.githubusercontent, 2026-08-26
   note: 'Пряма відповідність: 0xa (10 в hex) = INTRUSION_RESET. У коментарі є typo (Instrusion
     замість Intrusion), але назва enum''у чітка.'
+  sha:
+  - 3c9dd369

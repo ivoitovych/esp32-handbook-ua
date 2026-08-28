@@ -12,6 +12,9 @@
   quote: After reset, the second line printed by the {IDF_TARGET_NAME} ROM (at 115200bps)
   method: curl raw.githubusercontent, 2026-08-26
   note: Основна бод-рейт для ROM bootloader ESP32.
+  sha:
+  - 3b9e12c2
+  - f87188a6
 - nazva: 'T-K06-005: rst: — причина останнього скидання чипа'
   zbih: '`rst:` — .*причина'
   klas: A
@@ -72,6 +75,8 @@
     bit unusual: ``74880 baud``'
   method: curl raw.githubusercontent, 2026-08-26
   note: ESP8266 ROM на 74880 бод — істотна відмінність від ESP32.
+  sha:
+  - b44c3a39
 - nazva: 'T-K06-045: На 115200 нічого, на 74880 осмислений текст — це ESP8266'
   zbih: 74880.*осмислений текст.*ESP8266
   klas: A

@@ -11,6 +11,8 @@
 
 
 
+
+
 - nazva: 'T-04-061: **MCPWM** [[classic]] [[S3]] зроблений спеціально для силової електроніки:'
   zbih: \*\*MCPWM\*\*\s+\[\[classic\]\]\s+\[\[S3\]\]\s+зроблений
   klas: A
@@ -35,3 +37,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документація явно описує MCPWM для силової електроніки, включаючи мертвий час та апаратне
     аварійне вимкнення
+  sha:
+  - 2f22bb75

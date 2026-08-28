@@ -56,6 +56,38 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом:'
   zbih: У\s+проєкті\s+ESP\-IDF\s+розбивка
   klas: A
@@ -80,6 +112,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що розбивка задається текстовим CSV файлом
+  sha:
+  - efe25d4b
 - nazva: 'T-18-080: У складі ESP-IDF · SPIFFS → так'
   zbih: У\s+складі\s+ESP\-IDF\s+·\s+SPIFFS
   klas: A
@@ -148,6 +182,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує наявність готових розбивок різних розмірів
+  sha:
+  - d95fc6fa
 - nazva: 'T-18-106: Якщо нова прошивка розрахована на іншу розбивку, вона'
   zbih: Якщо\s+нова\s+прошивка\s+розрахована
   klas: A
@@ -172,6 +208,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує ризик перезапису даних при зміні розбивки
+  sha:
+  - 18b9a9fd
 - nazva: 'T-18-107: Практично це означає: **розбивку треба обирати з запасом'
   zbih: Практично\s+це\s+означає:\s+\*\*розбивку
   klas: A
@@ -198,6 +236,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує важливість раннього вибору розбивки
+  sha:
+  - 9eebc20f
 - nazva: 'T-18-108: Змінити її потім можна лише з фізичним доступом'
   zbih: Змінити\s+її\s+потім\s+можна
   klas: A
@@ -222,6 +262,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: показує, що зміна розбивки потребує перепрошивки
+  sha:
+  - e6335668
 - nazva: 'T-18-109: Другий наслідок того самого: якщо ви змінили розбивку,'
   zbih: 'Другий\s+наслідок\s+того\s+самого:'
   klas: A
@@ -270,6 +312,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що розбивка - це те, що більшість не змінює, поки застосунок не переріс
+  sha:
+  - ea68963b
 - nazva: 'T-18-009: Типова розбивка для пристрою без OTA виглядає так:'
   zbih: Типова\s+розбивка\s+для\s+пристрою
   klas: A
@@ -296,6 +340,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: наведено типову розбивку без OTA
+  sha:
+  - cc195a29
 - nazva: 'T-18-010: | Назва | Тип | Підтип | Зсув'
   zbih: \|\s+Назва\s+\|\s+Тип\s+\|\s+Підтип
   klas: A
@@ -318,6 +364,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує формат таблиці розділів з колонками Назва, Тип, Підтип, Зсув, Розмір
+  sha:
+  - f337b884
 - nazva: 'T-18-015: `phy_init` · Тип → data'
   zbih: '`phy_init`\s+·\s+Тип\s+→'
   klas: A
@@ -340,6 +388,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: phy_init має тип data у таблиці розділів
+  sha:
+  - 5f9bc8f0
 - nazva: 'T-18-016: `phy_init` · Підтип → phy'
   zbih: '`phy_init`\s+·\s+Підтип\s+→'
   klas: A
@@ -362,6 +412,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: phy_init має підтип phy у таблиці розділів
+  sha:
+  - 789c88b9
 - nazva: 'T-18-019: `factory` · Тип → app'
   zbih: '`factory`\s+·\s+Тип\s+→'
   klas: A
@@ -384,6 +436,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: factory має тип app у таблиці розділів
+  sha:
+  - 94bcae2e
 - nazva: 'T-18-020: `factory` · Підтип → factory'
   zbih: '`factory`\s+·\s+Підтип\s+→'
   klas: A
@@ -406,6 +460,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: factory має підтип factory у таблиці розділів
+  sha:
+  - 98e8369f
 - nazva: 'T-18-028: **`phy_init`** зберігає калібрувальні дані радіо.'
   zbih: \*\*`phy_init`\*\*\s+зберігає\s+калібрувальні\s+дані
   klas: A
@@ -430,3 +486,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що phy_init зберігає калібрувальні дані радіо
+  sha:
+  - ded12860

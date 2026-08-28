@@ -25,6 +25,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: merge-bin вимагає --chip; без нього команда падає
   zbih: --chip esp32 merge-bin|`--chip` тут \*\*обов.язковий\*\*|Specify the --chip argument
   klas: A
@@ -149,6 +163,10 @@
     Те саме стосується `--before default-reset --after hard-reset`: книга подавала їх як «керування
     скиданням», а це значення за замовчуванням. Таблицю прапорців замінено на ту, де перелічені
     значення, що справді щось міняють.'
+  sha:
+  - 4fb5cfd6
+  - 544b21a9
+  - fd864248
 - nazva: --after watchdog-reset для чипів із native USB
   zbih: watchdog-reset|перелічується заново|USB-Serial/JTAG
   klas: A

@@ -32,6 +32,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-05-089: У цифровій схемі це локальний запас енергії на'
   zbih: У\s+цифровій\s+схемі\s+це
   klas: A
@@ -56,6 +72,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation shows voltage variations occur and need to be accounted for in design
+  sha:
+  - a4b3f884
 - nazva: 'T-05-017: Світлодіод не можна вмикати без резистора: він не'
   zbih: Світлодіод\s+не\s+можна\s+вмикати
   klas: A
@@ -183,6 +201,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation indicates GPIO configurations require explicit setup and cannot rely
     on defaults
+  sha:
+  - 1ef21188
 - nazva: 'T-05-077: Звичайний вихід активно тримає лінію в обох станах.'
   zbih: Звичайний\s+вихід\s+активно\s+тримає
   klas: A
@@ -242,3 +262,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: documentation shows GPIO can be configured in different output modes including open-drain
+  sha:
+  - 15ecaa84

@@ -23,6 +23,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-14-005: Ви прошиваєте його один раз, далі працюєте з'
   zbih: Ви\s+прошиваєте\s+його\s+один
   klas: A
@@ -45,6 +55,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: MicroPython provides interactive console (REPL) for immediate code execution
+  sha:
+  - 46d93393
 - nazva: 'T-14-015: Частина периферії доступна частково.'
   zbih: Частина\s+периферії\s+доступна\s+частково\.
   klas: A
@@ -69,6 +81,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: MicroPython supports specific peripherals but not all hardware features are available
+  sha:
+  - 6efff622
 - nazva: 'T-14-071: **Розвідка заліза** — MicroPython у консолі: чи відповідає'
   zbih: \*\*Розвідка\s+заліза\*\*\s+—\s+MicroPython
   klas: A
@@ -101,3 +115,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: MicroPython REPL з auto-completion дозволяє дослідити доступні модулі; з машинними
     модулями можна проверити і2ц адреси та параметри датчиків
+  sha:
+  - cdbeaffd

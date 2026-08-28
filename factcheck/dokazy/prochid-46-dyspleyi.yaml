@@ -26,6 +26,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-46-043: Це незручно і ламається при оновленні бібліотеки; варто'
   zbih: Це\s+незручно\s+і\s+ламається
   klas: A
@@ -50,6 +62,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що конфігурація ламається при оновленні бібліотеки
+  sha:
+  - 1164678b
 - nazva: 'T-46-046: LVGL дає красиві інтерфейси і коштує ресурсів.'
   zbih: LVGL\s+дає\s+красиві\s+інтерфейси
   klas: A
@@ -72,6 +86,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що LVGL дає інтерфейси та потребує ресурсів
+  sha:
+  - d8cdd72c
 - nazva: 'T-46-038: **U8g2** — монохромні дисплеї.'
   zbih: \*\*U8g2\*\*\s+—\s+монохромні\s+дисплеї\.
   klas: A
@@ -94,6 +110,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що U8g2 працює з монохромними дисплеями
+  sha:
+  - 6ef626d7
 - nazva: 'T-46-042: Особливість, що дивує: конфігурація (модель дисплея, піни) задається'
   zbih: Особливість,\s+що\s+дивує:\s+конфігурація
   klas: A
@@ -118,6 +136,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що конфігурація задається всередині бібліотеки, а не в проєкті
+  sha:
+  - 63930b45
 - nazva: 'T-46-055: **Кодування.** Рядки в коді — UTF-8; бібліотека має'
   zbih: \*\*Кодування\.\*\*\s+Рядки\s+в\s+коді
   klas: A
@@ -140,6 +160,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: TFT_eSPI підтримує UTF-8 кодування для рядків
+  sha:
+  - 16e5d3ba
 - nazva: 'T-46-068: Правильний спосіб читання — **PCNT** (розділ 33): апаратний'
   zbih: Правильний\s+спосіб\s+читання\s+—
   klas: A
@@ -164,3 +186,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: PCNT модуль має вбудований фільтр для видалення шумів (дребезгу)
+  sha:
+  - 3c6213d4

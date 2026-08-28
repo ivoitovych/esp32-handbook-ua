@@ -38,6 +38,60 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: Формат паніки Guru Meditation і назви винятків
   zbih: 'Guru Meditation Error: Core|LoadProhibited|StoreProhibited|InstrFetchProhibited|IllegalInstruction|LoadStoreAlignment|IntegerDivideByZero|Exception
     was unhandled|Cache disabled but cached memory region accessed'
@@ -228,6 +282,12 @@
 
     Друге — типова доля клонів, що продаються як 16 МБ. Книга подавала обидва випадки одним
     рядком і одним наслідком; тепер вони розділені.'
+  sha:
+  - 45fbc80e
+  - 4adb2806
+  - 6a177d47
+  - c946c98e
+  - f25a0f20
 - nazva: Помилки купи розрізняють бік переповнення
   zbih: CORRUPT HEAP|Bad tail|Bad head|канарки|stack overflow in task X has been detected
   klas: A

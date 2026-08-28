@@ -14,6 +14,10 @@
 
 
 
+
+
+
+
 - nazva: 'T-08-004: Це те, що ставлять на власну плату у'
   zbih: Це\s+те,\s+що\s+ставлять
   klas: A
@@ -36,6 +40,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Розробницькі плати будуються на основі модулів з власною схемою живлення і розв'язки
+  sha:
+  - f328a5d0
 - nazva: 'T-08-024: **Міст USB-UART.** Створює порт у системі.'
   zbih: \*\*Міст\s+USB\-UART\.\*\*\s+Створює\s+порт
   klas: A

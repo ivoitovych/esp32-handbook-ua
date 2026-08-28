@@ -71,6 +71,48 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-31-020: Планувальник завжди виконує **найпріоритетнішу готову** задачу.'
   zbih: Планувальник\s+завжди\s+виконує\s+\*\*найпріоритетнішу
   klas: A
@@ -93,6 +135,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: планувальник завжди виконує найпріоритетнішу готову задачу
+  sha:
+  - 685aa109
 - nazva: 'T-31-002: Це не бібліотека, яку треба підключати, — це'
   zbih: Це\s+не\s+бібліотека,\s+яку
   klas: A
@@ -119,6 +163,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: це не бібліотека, яку треба підключати - це середовище виконання
+  sha:
+  - 6ced381a
 - nazva: 'T-31-027: Це не помилка планувальника, а його правило.'
   zbih: Це\s+не\s+помилка\s+планувальника,
   klas: A
@@ -141,6 +187,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: правило планувальника -固定пріоритетний час планування
+  sha:
+  - f4d5df38
 - nazva: 'T-31-029: Високий пріоритет означає «швидко відреагувати й заснути», а'
   zbih: Високий\s+пріоритет\s+означає\s+«швидко\s+відреагувати\s+й\s+заснути»,
   klas: A
@@ -167,6 +215,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: висока пріоритет означає швидку реакцію, коли задача готова, але вимагає передання
     керування
+  sha:
+  - b6b1a89f
 - nazva: 'T-31-059: Зручно для «дочекатися, поки є і Wi-Fi, і'
   zbih: Зручно\s+для\s+«дочекатися,\s+поки
   klas: A
@@ -189,6 +239,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: група подій зручна для очікування комбінацій умов, як Wi-Fi та SNTP разом
+  sha:
+  - 599ea25d
 - nazva: 'T-31-031: Прив''язати задачу до ядра явно:'
   zbih: Прив'язати\s+задачу\s+до\s+ядра
   klas: A
@@ -211,6 +263,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: прив'язування задачі до ядра явно підтримується API
+  sha:
+  - 8ff92472
 - nazva: 'T-31-034: Коли це має сенс: щось із жорсткими таймінгами'
   zbih: 'Коли\s+це\s+має\s+сенс:'
   klas: A
@@ -238,6 +292,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Core 1 рекомендується для завдань, що не залежать від радіо і потребують точних таймінгів
+  sha:
+  - b67ba81b
 - nazva: 'T-31-035: Щось важке й тривале — теж на ядро'
   zbih: Щось\s+важке\s+й\s+тривале
   klas: A
@@ -266,6 +322,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Core 1 для важких та тривалих завдань щоб не заважати протокольній обробці на Core
     0
+  sha:
+  - 7b9b18a5
 - nazva: 'T-31-036: Двоядерність робить помилки синхронізації **реальними, а не теоретичними**.'
   zbih: Двоядерність\s+робить\s+помилки\s+синхронізації
   klas: A
@@ -292,6 +350,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: двоядерність робить помилки синхронізації реальними через справжній паралелізм
+  sha:
+  - 6c48d623
 - nazva: 'T-31-055: **Двійковий семафор** — сигнал «сталося».'
   zbih: \*\*Двійковий\s+семафор\*\*\s+—\s+сигнал
   klas: A
@@ -314,6 +374,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: бінарний семафор - структура синхронізації, яка сигналить про подію
+  sha:
+  - c73b142f
 - nazva: 'T-31-057: **Лічильний семафор** — облік обмеженого ресурсу.'
   zbih: \*\*Лічильний\s+семафор\*\*\s+—\s+облік
   klas: A
@@ -336,6 +398,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: лічильний семафор - облік обмеженого ресурсу
+  sha:
+  - eec8ea19
 - nazva: 'T-31-058: **Група подій** — набір прапорців, на комбінацію яких'
   zbih: \*\*Група\s+подій\*\*\s+—\s+набір
   klas: A
@@ -358,6 +422,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: група подій - набір прапорців, на комбінацію яких можна чекати
+  sha:
+  - 1b8c1efa
 - nazva: 'T-31-063: **ISR має бути коротким.** Прочитати, покласти в чергу,'
   zbih: \*\*ISR\s+має\s+бути\s+коротким\.\*\*
   klas: A
@@ -384,6 +450,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ISR повинен бути коротким - читати, покласти в чергу, вийти
+  sha:
+  - c27bfc67
 - nazva: 'T-31-070: Це інструмент для відлагодження, а не для роботи.'
   zbih: Це\s+інструмент\s+для\s+відлагодження,
   klas: A
@@ -438,6 +506,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: коли ISR поводиться незрозуміло, а покласти в чергу нема чого, логування - єдиний
     спосіб
+  sha:
+  - f84ae609
 - nazva: 'T-31-079: Механічний контакт при натисканні дає десятки перемикань за'
   zbih: Механічний\s+контакт\s+при\s+натисканні
   klas: A
@@ -460,6 +530,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: механічний контакт при натисканні дає десятки перемикань, але затримка в ISR неправильна
+  sha:
+  - 77b3e0ed
 - nazva: 'T-31-085: Усі програмні таймери виконуються в **одній** службовій задачі.'
   zbih: Усі\s+програмні\s+таймери\s+виконуються
   klas: A
@@ -482,6 +554,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: усі програмні таймери виконуються в одній службовій задачі
+  sha:
+  - 2bdfbaae
 - nazva: 'T-31-090: **Спільна змінна без захисту.** На двох ядрах ламається'
   zbih: \*\*Спільна\s+змінна\s+без\s+захисту\.\*\*
   klas: A
@@ -506,6 +580,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: спільна змінна без захисту на двох ядрах ламається одразу
+  sha:
+  - 71179c5d
 - nazva: 'T-31-095: Високий пріоритет означає «швидко відреагувати й заснути».'
   zbih: Високий\s+пріоритет\s+означає\s+«швидко\s+відреагувати\s+й\s+заснути»\.
   klas: A
@@ -530,6 +606,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: висока пріоритет означає швидко відреагувати й заснути, а не постійно працювати
+  sha:
+  - caf51e23
 - nazva: 'T-31-098: Ніякого логування й пам''яті.'
   zbih: Ніякого\s+логування\s+й\s+пам'яті\.
   klas: A
@@ -556,6 +634,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ніякого логування в ISR і пам'яті
+  sha:
+  - 72e699d5
 - nazva: 'T-31-006: ESP_LOGI(TAG, "температура %.1f", t);'
   zbih: ESP_LOGI\(TAG,\s+"температура\s+%\.1f",\s+t\);
   klas: A
@@ -580,3 +660,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP_LOGI макрос для логування з форматуванням
+  sha:
+  - a70c9ecb

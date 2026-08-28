@@ -26,6 +26,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-K09-004: | **6, 7, 8, 9, 10, 11** |'
   zbih: \|\s+\*\*6,\s+7,\s+8,
   klas: A
@@ -68,3 +80,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: піни 6-11 визначені як MSPI для флеш-пам'яті і не повинні використовуватися
+  sha:
+  - e2a47803

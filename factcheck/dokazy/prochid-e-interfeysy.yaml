@@ -11,6 +11,8 @@
 
 
 
+
+
 - nazva: 'T-E-125: WS2812 / SK6812 · Як → **RMT**, не'
   zbih: WS2812\s+/\s+SK6812\s+·\s+Як
   klas: A
@@ -34,3 +36,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP-IDF документація підтверджує, що WS2812 керується через RMT, не програмно
+  sha:
+  - 5a46b695

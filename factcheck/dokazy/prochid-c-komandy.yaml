@@ -14,6 +14,10 @@
 
 
 
+
+
+
+
 - nazva: 'T-C-075: `-i` обов''язковий: без нього inline-кадри зникають.'
   zbih: '`\-i`\s+обов''язковий:\s+без\s+нього'
   klas: A
@@ -38,6 +42,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: флаг -i входить до складу -pfiaC; документ показує розшифровані inline-кадри з цим
     флагом
+  sha:
+  - 2a969ef0
 - nazva: 'T-C-092: `/dev/ttyUSB*` — зовнішній міст.'
   zbih: '`/dev/ttyUSB\*`\s+—\s+зовнішній\s+міст\.'
   klas: A
@@ -60,3 +66,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ підтверджує, що /dev/ttyUSB* є портом зовнішнього USB-to-UART моста
+  sha:
+  - b97a16ef

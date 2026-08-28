@@ -11,6 +11,8 @@
 
 
 
+
+
 - nazva: 'T-25-051: Один тег на файл або на логічний модуль;'
   zbih: Один\s+тег\s+на\s+файл
   klas: A
@@ -34,3 +36,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Document confirms TAG logging convention; quote found in ESP-IDF documentation examples
+  sha:
+  - 1764abef

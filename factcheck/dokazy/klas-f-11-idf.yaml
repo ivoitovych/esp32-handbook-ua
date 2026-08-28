@@ -20,6 +20,14 @@
 
 
 
+
+
+
+
+
+
+
+
 - nazva: 'T-11-001: ESP-IDF (Espressif IoT Development Framework) — офіційний фреймворк'
   zbih: ESP\-IDF\s+\(Espressif\s+IoT\s+Development
   klas: A
@@ -44,6 +52,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що ESP-IDF — офіційний фреймворк Espressif
+  sha:
+  - c439acee
 - nazva: 'T-11-013: **Windows.** Офіційний інсталятор ESP-IDF Tools Installer ставить усе'
   zbih: \*\*Windows\.\*\*\s+Офіційний\s+інсталятор\s+ESP\-IDF
   klas: A
@@ -68,6 +78,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує існування ESP-IDF Tools Installer для Windows
+  sha:
+  - 1c7d2f6d
 - nazva: 'T-11-025: Спокуса прописати `export.sh` у `.bashrc` є в усіх,'
   zbih: Спокуса\s+прописати\s+`export\.sh`\s+у
   klas: A
@@ -94,6 +106,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підтверджує, що додавання export.sh до профілю shell не рекомендується, що погіршує
     роботу
+  sha:
+  - bace5aec
 - nazva: 'T-11-112: `set-target` стирає `sdkconfig`; у git кладеться `sdkconfig.defaults`.'
   zbih: '`set\-target`\s+стирає\s+`sdkconfig`;\s+у'
   klas: A
@@ -120,3 +134,5 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Confirms that set-target clears sdkconfig. Documentation also recommends placing CONFIG_IDF_TARGET
     in sdkconfig.defaults for reproducibility.
+  sha:
+  - c323842e

@@ -24,6 +24,14 @@
 
 
 
+
+
+
+
+
+
+
+
 - nazva: DAC на S2 — GPIO17 і GPIO18; розділ 07 виправлено
   zbih: на classic це `GPIO25` і `GPIO26`, на S2|`GPIO25` у S2 не просто не має DAC|піни в
     них \*\*різні\*\*
@@ -74,6 +82,8 @@
 
     Взірець має `dozvil` на абзац, що якраз розводить два сімейства (згадка `GPIO17`, «не
     існу», «різні»), — інакше він лаявся б на правильний текст розділів 07 і 33.'
+  sha:
+  - e9ad2932
 - nazva: espefuse summary і menuconfig — досяжність доказу проходів 9 і 11
   zbih: espefuse [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig
   klas: A

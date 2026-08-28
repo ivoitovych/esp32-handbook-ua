@@ -50,6 +50,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - nazva: 'T-39-035: Її ще немає: під''єднання займає від сотень мілісекунд'
   zbih: Її\s+ще\s+немає:\s+під'єднання
   klas: A
@@ -74,6 +102,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: приклад показує, що IP адреса приходить приблизно 2 секунди після запуску, що підтверджує
     затримку перед отриманням IP
+  sha:
+  - 01c85b3e
 - nazva: 'T-39-037: Саме наявність IP, а не факт під''єднання, означає,'
   zbih: Саме\s+наявність\s+IP,\s+а
   klas: A
@@ -98,6 +128,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: приклад ясно показує, що отримання IP адреси розглядається як окремий момент і мітка
     успіху
+  sha:
+  - e3f3983a
 - nazva: 'T-39-018: **Канали 12 і 13** доступні не за всіх'
   zbih: \*\*Канали\s+12\s+і\s+13\*\*
   klas: A
@@ -122,6 +154,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ згадує WPA3 та інші режими безпеки; хоча канали 12 і 13 конкретно не названі,
     це загальна тема регіональних обмежень у WiFi стандарті
+  sha:
+  - 60caafaf
 - nazva: 'T-39-021: Роутер, переведений у режим «тільки WPA3», відрізає такі'
   zbih: Роутер,\s+переведений\s+у\s+режим
   klas: A
@@ -146,6 +180,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ згадує WPA3; можливість роутера обмежувати доступ старим пристроям у режимі
     тільки WPA3 випливає з описаних режимів безпеки
+  sha:
+  - 06c29e2f
 - nazva: 'T-39-044: Пристрій гріється, з''їдає батарею і не робить нічого'
   zbih: Пристрій\s+гріється,\s+з'їдає\s+батарею
   klas: A
@@ -170,6 +206,8 @@
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: офіційний приклад перепід'єднується без паузи, що відповідає описаній проблемі пристрою
     гріється і з'їдає батарею
+  sha:
+  - 60427d96
 - nazva: 'T-39-033: Робота йде **через події**: під''єднання асинхронне, і код'
   zbih: 'Робота\s+йде\s+\*\*через\s+події\*\*:'
   klas: A
@@ -194,6 +232,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: приклад показує обробку WIFI_EVENT_STA_DISCONNECTED як асинхронної події
+  sha:
+  - f7804431
 - nazva: 'T-39-047: ESP_LOGW(TAG, "зв''язок втрачено, спроба через %d мс", pauza);'
   zbih: ESP_LOGW\(TAG,\s+"зв'язок\s+втрачено,\s+спроба
   klas: A
@@ -216,6 +256,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація показує функцію esp_wifi_connect() яка викликається на логування паузи
+  sha:
+  - 9e58a073
 - nazva: 'T-39-054: Правильно — зберігати в NVS (розділ 18), а'
   zbih: Правильно\s+—\s+зберігати\s+в
   klas: A
@@ -238,6 +280,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: NVS (Non-Volatile Storage) доступна для зберігання креденшелів як рекомендовано
+  sha:
+  - e9c6e50a
 - nazva: 'T-39-064: ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary);'
   zbih: ESP_LOGI\(TAG,\s+"RSSI\s+%d\s+дБм,
   klas: A
@@ -260,6 +304,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: функція для отримання RSSI підтверджує наявність інформації про силу сигналу
+  sha:
+  - da883091
 - nazva: 'T-39-087: **Modem sleep** — радіо вимикається між маячками, з''єднання'
   zbih: \*\*Modem\s+sleep\*\*\s+—\s+радіо
   klas: A
@@ -284,6 +330,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Modem sleep радіо вимикається між маячками, як описано в handbook
+  sha:
+  - ecc7ebf3
 - nazva: 'T-39-088: Вмикається за замовчуванням і майже безкоштовне.'
   zbih: Вмикається\s+за\s+замовчуванням\s+і
   klas: A
@@ -306,6 +354,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Modem sleep вмикається за замовчуванням як описано в handbook
+  sha:
+  - b1ab339c
 - nazva: 'T-39-001: Wi-Fi — головна причина, чому беруть ESP32 (розділ'
   zbih: Wi\-Fi\s+—\s+головна\s+причина,
   klas: A
@@ -330,6 +380,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Wi-Fi є головною функцією ESP32 як показано в наявності цілої бібліотеки на ESP-IDF
+  sha:
+  - ee5b21e0
 - nazva: 'T-39-019: Якщо роутер працює на 13-му, ESP32 із неправильно'
   zbih: Якщо\s+роутер\s+працює\s+на
   klas: A
@@ -360,6 +412,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документація підтверджує що країна впливає на дозволені канали
+  sha:
+  - ad2fdefa
 - nazva: 'T-39-066: | від −50 дБм | відмінно |'
   zbih: \|\s+від\s+−50\s+дБм
   klas: A
@@ -378,6 +432,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: документ показує RSSI −50 як типове значення для доброго сигналу
+  sha:
+  - 597c4317
 - nazva: 'T-39-091: **Не під''єднуватися взагалі.** Для датчика на батарейці ESP-NOW'
   zbih: \*\*Не\s+під'єднуватися\s+взагалі\.\*\*\s+Для
   klas: A
@@ -400,6 +456,8 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP-NOW підтримується як альтернатива для безпроводового передавання без з'єднання
+  sha:
+  - 5df62d53
 - nazva: 'T-39-098: RSSI логувати завжди: на межі OTA не проходить,'
   zbih: RSSI\s+логувати\s+завжди:\s+на
   klas: A
@@ -418,3 +476,5 @@
     match. Status `verbatim` means the document was obtained and the quote is exact — it does
     **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: приклад показує використання RSSI значень, що необхідні для моніторингу сигналу
+  sha:
+  - faaf9a0e
