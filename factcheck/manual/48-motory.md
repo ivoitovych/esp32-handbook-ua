@@ -79,7 +79,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-004 sha:34b23ce0 src:manual/48-motory.md:10 klas:F -->
+<!-- fc id:T-48-004 sha:34b23ce0 src:manual/48-motory.md:11 klas:F -->
 ### T-48-004 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -161,7 +161,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-007 sha:97f48046 src:manual/48-motory.md:18 klas:E -->
+<!-- fc id:T-48-007 sha:97f48046 src:manual/48-motory.md:19 klas:E -->
 ### T-48-007 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -272,7 +272,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-012 sha:fa6f8347 src:manual/48-motory.md:32 klas:E -->
+<!-- fc id:T-48-012 sha:fa6f8347 src:manual/48-motory.md:33 klas:E -->
 ### T-48-012 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -362,7 +362,7 @@ ESP32 перезавантажується по brownout (розділ 06).
 
 ---
 
-<!-- fc id:T-48-016 sha:47c3638d src:manual/48-motory.md:41 klas:D -->
+<!-- fc id:T-48-016 sha:47c3638d src:manual/48-motory.md:43 klas:D -->
 ### T-48-016 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -474,7 +474,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-020 sha:2aabaecc src:manual/48-motory.md:49 klas:F -->
+<!-- fc id:T-48-020 sha:2aabaecc src:manual/48-motory.md:50 klas:F -->
 ### T-48-020 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -523,7 +523,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-022 sha:3ca5ce03 src:manual/48-motory.md:54 klas:F -->
+<!-- fc id:T-48-022 sha:3ca5ce03 src:manual/48-motory.md:55 klas:F -->
 ### T-48-022 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -548,7 +548,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-023 sha:1d7daf10 src:manual/48-motory.md:54 klas:E -->
+<!-- fc id:T-48-023 sha:1d7daf10 src:manual/48-motory.md:57 klas:E -->
 ### T-48-023 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -599,7 +599,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-025 sha:5ee800ed src:manual/48-motory.md:61 klas:E -->
+<!-- fc id:T-48-025 sha:5ee800ed src:manual/48-motory.md:62 klas:E -->
 ### T-48-025 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -692,7 +692,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-029 sha:29f0db43 src:manual/48-motory.md:72 klas:F -->
+<!-- fc id:T-48-029 sha:29f0db43 src:manual/48-motory.md:73 klas:F -->
 ### T-48-029 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -796,7 +796,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-033 sha:85f8c244 src:manual/48-motory.md:81 klas:E -->
+<!-- fc id:T-48-033 sha:85f8c244 src:manual/48-motory.md:82 klas:E -->
 ### T-48-033 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -886,7 +886,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-037 sha:965ecaef src:manual/48-motory.md:92 klas:E -->
+<!-- fc id:T-48-037 sha:965ecaef src:manual/48-motory.md:93 klas:E -->
 ### T-48-037 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -932,7 +932,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-039 sha:248f1f7c src:manual/48-motory.md:95 klas:E -->
+<!-- fc id:T-48-039 sha:248f1f7c src:manual/48-motory.md:96 klas:E -->
 ### T-48-039 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -956,7 +956,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-040 sha:6c18de87 src:manual/48-motory.md:95 klas:E -->
+<!-- fc id:T-48-040 sha:6c18de87 src:manual/48-motory.md:97 klas:E -->
 ### T-48-040 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1004,7 +1004,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-042 sha:6ea258ba src:manual/48-motory.md:100 klas:F -->
+<!-- fc id:T-48-042 sha:6ea258ba src:manual/48-motory.md:101 klas:F -->
 ### T-48-042 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1028,7 +1028,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-043 sha:f33a5c84 src:manual/48-motory.md:100 klas:A -->
+<!-- fc id:T-48-043 sha:f33a5c84 src:manual/48-motory.md:102 klas:A -->
 ### T-48-043 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1112,7 +1112,7 @@ L298N згадується тут тому, що ви його зустріне�
 
 ---
 
-<!-- fc id:T-48-046 sha:466a0ad6 src:manual/48-motory.md:113 klas:E -->
+<!-- fc id:T-48-046 sha:466a0ad6 src:manual/48-motory.md:114 klas:E -->
 ### T-48-046 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1166,7 +1166,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-048 sha:f8205a42 src:manual/48-motory.md:118 klas:E -->
+<!-- fc id:T-48-048 sha:f8205a42 src:manual/48-motory.md:119 klas:E -->
 ### T-48-048 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1238,7 +1238,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-051 sha:674c7127 src:manual/48-motory.md:125 klas:E -->
+<!-- fc id:T-48-051 sha:674c7127 src:manual/48-motory.md:126 klas:E -->
 ### T-48-051 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1373,7 +1373,7 @@ GPIO, **земля спільна**. Три дроти серво — це жи�
 
 ---
 
-<!-- fc id:T-48-057 sha:358042bc src:manual/48-motory.md:138 klas:F -->
+<!-- fc id:T-48-057 sha:358042bc src:manual/48-motory.md:139 klas:F -->
 ### T-48-057 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1535,7 +1535,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-064 sha:90a4b095 src:manual/48-motory.md:157 klas:E -->
+<!-- fc id:T-48-064 sha:90a4b095 src:manual/48-motory.md:158 klas:E -->
 ### T-48-064 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**
@@ -1581,7 +1581,7 @@ BLDC-двигун із гвинтом — це небезпечний механ
 
 ---
 
-<!-- fc id:T-48-066 sha:118944b6 src:manual/48-motory.md:163 klas:F -->
+<!-- fc id:T-48-066 sha:118944b6 src:manual/48-motory.md:164 klas:F -->
 ### T-48-066 · proza · `manual/48-motory.md`
 
 **Твердження, коротко**

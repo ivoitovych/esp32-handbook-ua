@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-16-002 sha:11f1c487 src:manual/16-boot.md:3 klas:A -->
+<!-- fc id:T-16-002 sha:11f1c487 src:manual/16-boot.md:4 klas:A -->
 ### T-16-002 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -117,7 +117,7 @@
 
 ---
 
-<!-- fc id:T-16-005 sha:df2dec6a src:manual/16-boot.md:14 klas:C -->
+<!-- fc id:T-16-005 sha:df2dec6a src:manual/16-boot.md:15 klas:C -->
 ### T-16-005 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-16-006 sha:e47891e7 src:manual/16-boot.md:14 klas:E -->
+<!-- fc id:T-16-006 sha:e47891e7 src:manual/16-boot.md:15 klas:E -->
 ### T-16-006 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -220,7 +220,7 @@
 
 ---
 
-<!-- fc id:T-16-009 sha:73a47ca1 src:manual/16-boot.md:21 klas:E -->
+<!-- fc id:T-16-009 sha:73a47ca1 src:manual/16-boot.md:22 klas:E -->
 ### T-16-009 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -320,7 +320,7 @@ Strapping-пін — це звичайний GPIO, стан якого чита�
 
 ---
 
-<!-- fc id:T-16-013 sha:2e09aa20 src:manual/16-boot.md:35 klas:E -->
+<!-- fc id:T-16-013 sha:2e09aa20 src:manual/16-boot.md:37 klas:E -->
 ### T-16-013 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -530,7 +530,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-021 sha:728e14e7 src:manual/16-boot.md:53 klas:C -->
+<!-- fc id:T-16-021 sha:728e14e7 src:manual/16-boot.md:54 klas:C -->
 ### T-16-021 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -561,7 +561,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-022 sha:1a088eeb src:manual/16-boot.md:53 klas:F -->
+<!-- fc id:T-16-022 sha:1a088eeb src:manual/16-boot.md:56 klas:F -->
 ### T-16-022 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -661,7 +661,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-025 sha:4de10478 src:manual/16-boot.md:59 klas:E -->
+<!-- fc id:T-16-025 sha:4de10478 src:manual/16-boot.md:60 klas:E -->
 ### T-16-025 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -945,7 +945,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-032 sha:b1de2763 src:manual/16-boot.md:74 klas:A -->
+<!-- fc id:T-16-032 sha:b1de2763 src:manual/16-boot.md:75 klas:A -->
 ### T-16-032 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1014,7 +1014,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-033 sha:f4c2a592 src:manual/16-boot.md:74 klas:F -->
+<!-- fc id:T-16-033 sha:f4c2a592 src:manual/16-boot.md:77 klas:F -->
 ### T-16-033 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1042,7 +1042,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-034 sha:04eedad6 src:manual/16-boot.md:74 klas:A -->
+<!-- fc id:T-16-034 sha:04eedad6 src:manual/16-boot.md:78 klas:A -->
 ### T-16-034 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1076,7 +1076,7 @@ strapping-піні**. Світлодіод із резистором на `GPIO0
 
 ---
 
-<!-- fc id:T-16-035 sha:93217872 src:manual/16-boot.md:74 klas:A -->
+<!-- fc id:T-16-035 sha:93217872 src:manual/16-boot.md:79 klas:A -->
 ### T-16-035 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1185,7 +1185,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-037 sha:f5be32d6 src:manual/16-boot.md:84 klas:A -->
+<!-- fc id:T-16-037 sha:f5be32d6 src:manual/16-boot.md:85 klas:A -->
 ### T-16-037 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1325,7 +1325,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-041 sha:34472fe4 src:manual/16-boot.md:95 klas:A -->
+<!-- fc id:T-16-041 sha:34472fe4 src:manual/16-boot.md:96 klas:A -->
 ### T-16-041 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1372,7 +1372,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-042 sha:a123154f src:manual/16-boot.md:95 klas:A -->
+<!-- fc id:T-16-042 sha:a123154f src:manual/16-boot.md:97 klas:A -->
 ### T-16-042 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1424,7 +1424,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-043 sha:b57ee9e2 src:manual/16-boot.md:95 klas:E -->
+<!-- fc id:T-16-043 sha:b57ee9e2 src:manual/16-boot.md:98 klas:E -->
 ### T-16-043 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1484,7 +1484,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-045 sha:22d5057d src:manual/16-boot.md:102 klas:D -->
+<!-- fc id:T-16-045 sha:22d5057d src:manual/16-boot.md:103 klas:D -->
 ### T-16-045 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1506,13 +1506,13 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
-- **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
+- **Розрахунок:**
+  таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  nvs               0x9000 + 0x6000          = 0xF000
+  phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  0x10000 / 1024                             = 64 КБ
+  
+  сектор 0x1000 / 1024 = 4 КБ
 - **Спосіб і дата:** make arytmetyka, 2026-08-26
 - **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
 Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
@@ -1521,7 +1521,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-046 sha:c95b1a3f src:manual/16-boot.md:102 klas:E -->
+<!-- fc id:T-16-046 sha:c95b1a3f src:manual/16-boot.md:105 klas:E -->
 ### T-16-046 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1594,7 +1594,7 @@ ESP-IDF не налаштовується взагалі: це `CONFIG_BOOTLOADE
 
 ---
 
-<!-- fc id:T-16-048 sha:bbad0666 src:manual/16-boot.md:107 klas:E -->
+<!-- fc id:T-16-048 sha:bbad0666 src:manual/16-boot.md:109 klas:E -->
 ### T-16-048 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1801,7 +1801,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-053 sha:66180914 src:manual/16-boot.md:122 klas:A -->
+<!-- fc id:T-16-053 sha:66180914 src:manual/16-boot.md:124 klas:A -->
 ### T-16-053 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1886,7 +1886,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-056 sha:36fdba60 src:manual/16-boot.md:129 klas:A -->
+<!-- fc id:T-16-056 sha:36fdba60 src:manual/16-boot.md:131 klas:A -->
 ### T-16-056 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -1937,7 +1937,7 @@ offset`.
 
 ---
 
-<!-- fc id:T-16-058 sha:4a5d1bee src:manual/16-boot.md:135 klas:F -->
+<!-- fc id:T-16-058 sha:4a5d1bee src:manual/16-boot.md:136 klas:F -->
 ### T-16-058 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2108,7 +2108,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-063 sha:9687babe src:manual/16-boot.md:155 klas:E -->
+<!-- fc id:T-16-063 sha:9687babe src:manual/16-boot.md:156 klas:E -->
 ### T-16-063 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2133,7 +2133,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-064 sha:50f40ab5 src:manual/16-boot.md:155 klas:E -->
+<!-- fc id:T-16-064 sha:50f40ab5 src:manual/16-boot.md:157 klas:E -->
 ### T-16-064 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2158,7 +2158,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-16-065 sha:b91c3393 src:manual/16-boot.md:155 klas:E -->
+<!-- fc id:T-16-065 sha:b91c3393 src:manual/16-boot.md:158 klas:E -->
 ### T-16-065 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2366,7 +2366,7 @@ E (xxx) boot: Factory app partition is not bootable
 
 ---
 
-<!-- fc id:T-16-072 sha:120fecd6 src:manual/16-boot.md:177 klas:E -->
+<!-- fc id:T-16-072 sha:120fecd6 src:manual/16-boot.md:178 klas:E -->
 ### T-16-072 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2539,7 +2539,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-078 sha:e41e916a src:manual/16-boot.md:190 klas:E -->
+<!-- fc id:T-16-078 sha:e41e916a src:manual/16-boot.md:192 klas:E -->
 ### T-16-078 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2586,7 +2586,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-080 sha:68faec6e src:manual/16-boot.md:196 klas:A -->
+<!-- fc id:T-16-080 sha:68faec6e src:manual/16-boot.md:198 klas:A -->
 ### T-16-080 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2715,7 +2715,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-084 sha:68f8f3aa src:manual/16-boot.md:210 klas:E -->
+<!-- fc id:T-16-084 sha:68f8f3aa src:manual/16-boot.md:211 klas:E -->
 ### T-16-084 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2824,7 +2824,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-088 sha:6b942f91 src:manual/16-boot.md:222 klas:F -->
+<!-- fc id:T-16-088 sha:6b942f91 src:manual/16-boot.md:223 klas:F -->
 ### T-16-088 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**
@@ -2851,7 +2851,7 @@ E (xxx) boot: Failed to verify partition table
 
 ---
 
-<!-- fc id:T-16-089 sha:7c8641d9 src:manual/16-boot.md:222 klas:E -->
+<!-- fc id:T-16-089 sha:7c8641d9 src:manual/16-boot.md:225 klas:E -->
 ### T-16-089 · proza · `manual/16-boot.md`
 
 **Твердження, коротко**

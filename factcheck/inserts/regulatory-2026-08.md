@@ -259,7 +259,7 @@
 
 ---
 
-<!-- fc id:T-REG-012 sha:32835962 src:inserts/regulatory-2026-08.md:28 klas:D -->
+<!-- fc id:T-REG-012 sha:32835962 src:inserts/regulatory-2026-08.md:29 klas:D -->
 ### T-REG-012 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -582,7 +582,7 @@
 
 ---
 
-<!-- fc id:T-REG-022 sha:28636c99 src:inserts/regulatory-2026-08.md:48 klas:E -->
+<!-- fc id:T-REG-022 sha:28636c99 src:inserts/regulatory-2026-08.md:49 klas:E -->
 ### T-REG-022 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -651,7 +651,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-025 sha:d6a8bb17 src:inserts/regulatory-2026-08.md:57 klas:E -->
+<!-- fc id:T-REG-025 sha:d6a8bb17 src:inserts/regulatory-2026-08.md:58 klas:E -->
 ### T-REG-025 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ ESP-IDF має налаштування регіону, що обмежує до
 
 ---
 
-<!-- fc id:T-REG-032 sha:738aa5d2 src:inserts/regulatory-2026-08.md:90 klas:E -->
+<!-- fc id:T-REG-032 sha:738aa5d2 src:inserts/regulatory-2026-08.md:91 klas:E -->
 ### T-REG-032 · proza · `inserts/regulatory-2026-08.md`
 
 **Твердження, коротко**

@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-F-004 sha:c85a7ca9 src:dodatky/f-oflayn.md:6 klas:E -->
+<!-- fc id:T-F-004 sha:c85a7ca9 src:dodatky/f-oflayn.md:7 klas:E -->
 ### T-F-004 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -123,7 +123,7 @@
 
 ---
 
-<!-- fc id:T-F-006 sha:0c2f9a61 src:dodatky/f-oflayn.md:11 klas:E -->
+<!-- fc id:T-F-006 sha:0c2f9a61 src:dodatky/f-oflayn.md:12 klas:E -->
 ### T-F-006 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -185,7 +185,7 @@
 
 ---
 
-<!-- fc id:T-F-008 sha:4cb89b29 src:dodatky/f-oflayn.md:21 klas:F -->
+<!-- fc id:T-F-008 sha:4cb89b29 src:dodatky/f-oflayn.md:22 klas:F -->
 ### T-F-008 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -238,7 +238,7 @@
 
 ---
 
-<!-- fc id:T-F-010 sha:8a5c571c src:dodatky/f-oflayn.md:31 klas:E -->
+<!-- fc id:T-F-010 sha:8a5c571c src:dodatky/f-oflayn.md:32 klas:E -->
 ### T-F-010 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -564,7 +564,7 @@
 
 ---
 
-<!-- fc id:T-F-023 sha:7351017b src:dodatky/f-oflayn.md:99 klas:A -->
+<!-- fc id:T-F-023 sha:7351017b src:dodatky/f-oflayn.md:100 klas:A -->
 ### T-F-023 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -612,7 +612,7 @@
 
 ---
 
-<!-- fc id:T-F-024 sha:de0d6323 src:dodatky/f-oflayn.md:99 klas:E -->
+<!-- fc id:T-F-024 sha:de0d6323 src:dodatky/f-oflayn.md:102 klas:E -->
 ### T-F-024 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -638,7 +638,7 @@
 
 ---
 
-<!-- fc id:T-F-025 sha:c5e8dc8a src:dodatky/f-oflayn.md:99 klas:E -->
+<!-- fc id:T-F-025 sha:c5e8dc8a src:dodatky/f-oflayn.md:103 klas:E -->
 ### T-F-025 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**
@@ -664,7 +664,7 @@
 
 ---
 
-<!-- fc id:T-F-026 sha:6cb1e4d3 src:dodatky/f-oflayn.md:99 klas:E -->
+<!-- fc id:T-F-026 sha:6cb1e4d3 src:dodatky/f-oflayn.md:104 klas:E -->
 ### T-F-026 · proza · `dodatky/f-oflayn.md`
 
 **Твердження, коротко**

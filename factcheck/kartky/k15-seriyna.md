@@ -1170,7 +1170,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-035 sha:8ae34cb3 src:kartky/k15-seriyna.md:51 klas:E -->
+<!-- fc id:T-K15-035 sha:8ae34cb3 src:kartky/k15-seriyna.md:52 klas:E -->
 ### T-K15-035 · proza · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -1307,13 +1307,13 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
-- **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
+- **Розрахунок:**
+  таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  nvs               0x9000 + 0x6000          = 0xF000
+  phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  0x10000 / 1024                             = 64 КБ
+  
+  сектор 0x1000 / 1024 = 4 КБ
 - **Спосіб і дата:** make arytmetyka, 2026-08-26
 - **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
 Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
@@ -1432,7 +1432,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-K15-044 sha:db835ae1 src:kartky/k15-seriyna.md:76 klas:E -->
+<!-- fc id:T-K15-044 sha:db835ae1 src:kartky/k15-seriyna.md:77 klas:E -->
 ### T-K15-044 · proza · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -1526,7 +1526,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-K15-047 sha:a5422053 src:kartky/k15-seriyna.md:88 klas:E -->
+<!-- fc id:T-K15-047 sha:a5422053 src:kartky/k15-seriyna.md:91 klas:E -->
 ### T-K15-047 · proza · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**

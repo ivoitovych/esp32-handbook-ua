@@ -68,7 +68,7 @@ Bluetooth на ESP32 — тема, де найлегше витратити ча
 
 ---
 
-<!-- fc id:T-41-003 sha:06fa7a1a src:manual/41-ble.md:9 klas:A -->
+<!-- fc id:T-41-003 sha:06fa7a1a src:manual/41-ble.md:10 klas:A -->
 ### T-41-003 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -203,7 +203,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-008 sha:37b75670 src:manual/41-ble.md:20 klas:E -->
+<!-- fc id:T-41-008 sha:37b75670 src:manual/41-ble.md:21 klas:E -->
 ### T-41-008 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -972,7 +972,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-030 sha:1cb8e270 src:manual/41-ble.md:50 klas:E -->
+<!-- fc id:T-41-030 sha:1cb8e270 src:manual/41-ble.md:51 klas:E -->
 ### T-41-030 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1108,7 +1108,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-036 sha:5619b766 src:manual/41-ble.md:61 klas:F -->
+<!-- fc id:T-41-036 sha:5619b766 src:manual/41-ble.md:62 klas:F -->
 ### T-41-036 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1158,7 +1158,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-038 sha:32a9ba20 src:manual/41-ble.md:65 klas:A -->
+<!-- fc id:T-41-038 sha:32a9ba20 src:manual/41-ble.md:66 klas:A -->
 ### T-41-038 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1190,7 +1190,7 @@ BLE не передає потік. Він публікує **структуру
 
 ---
 
-<!-- fc id:T-41-039 sha:d9e54fe1 src:manual/41-ble.md:65 klas:E -->
+<!-- fc id:T-41-039 sha:d9e54fe1 src:manual/41-ble.md:68 klas:E -->
 ### T-41-039 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1490,7 +1490,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-050 sha:7942e32b src:manual/41-ble.md:100 klas:E -->
+<!-- fc id:T-41-050 sha:7942e32b src:manual/41-ble.md:101 klas:E -->
 ### T-41-050 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1514,7 +1514,7 @@ Bluetooth — найважчий компонент після Wi-Fi. Проши
 
 ---
 
-<!-- fc id:T-41-051 sha:340f962d src:manual/41-ble.md:100 klas:E -->
+<!-- fc id:T-41-051 sha:340f962d src:manual/41-ble.md:101 klas:E -->
 ### T-41-051 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1651,7 +1651,7 @@ BLE спроєктований для батарейок, і його голов
 
 ---
 
-<!-- fc id:T-41-056 sha:186463f4 src:manual/41-ble.md:117 klas:D -->
+<!-- fc id:T-41-056 sha:186463f4 src:manual/41-ble.md:118 klas:D -->
 ### T-41-056 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1895,7 +1895,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-066 sha:46321b22 src:manual/41-ble.md:142 klas:E -->
+<!-- fc id:T-41-066 sha:46321b22 src:manual/41-ble.md:143 klas:E -->
 ### T-41-066 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -1987,7 +1987,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-070 sha:bd8802ff src:manual/41-ble.md:154 klas:E -->
+<!-- fc id:T-41-070 sha:bd8802ff src:manual/41-ble.md:156 klas:E -->
 ### T-41-070 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2049,7 +2049,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-072 sha:f484e4a2 src:manual/41-ble.md:161 klas:A -->
+<!-- fc id:T-41-072 sha:f484e4a2 src:manual/41-ble.md:163 klas:A -->
 ### T-41-072 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -2155,7 +2155,7 @@ BLE без спарювання доступний **будь-кому пору�
 
 ---
 
-<!-- fc id:T-41-076 sha:24c52040 src:manual/41-ble.md:169 klas:E -->
+<!-- fc id:T-41-076 sha:24c52040 src:manual/41-ble.md:171 klas:E -->
 ### T-41-076 · proza · `manual/41-ble.md`
 
 **Твердження, коротко**

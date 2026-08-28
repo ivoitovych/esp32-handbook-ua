@@ -144,7 +144,7 @@ def main() -> int:
     import factcheck
     import vybirka
 
-    odyn = [u for k in "ABCDEFGK" for u in vybirka.odynyci(k)]
+    odyn = [u for k in factcheck.USI_KLASY for u in vybirka.odynyci(k)]
     teksty = [u["tekst"] for u in odyn]
     zapysy = factcheck.zavantazhyty_dokazy()
     techi = znayty(zapysy, teksty)

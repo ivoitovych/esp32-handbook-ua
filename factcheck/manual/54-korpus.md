@@ -527,7 +527,7 @@
 
 ---
 
-<!-- fc id:T-54-018 sha:9cc78cce src:manual/54-korpus.md:34 klas:E -->
+<!-- fc id:T-54-018 sha:9cc78cce src:manual/54-korpus.md:35 klas:E -->
 ### T-54-018 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -621,7 +621,7 @@
 
 ---
 
-<!-- fc id:T-54-022 sha:2ee794d1 src:manual/54-korpus.md:43 klas:E -->
+<!-- fc id:T-54-022 sha:2ee794d1 src:manual/54-korpus.md:44 klas:E -->
 ### T-54-022 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -689,7 +689,7 @@
 
 ---
 
-<!-- fc id:T-54-025 sha:e0e905bb src:manual/54-korpus.md:52 klas:E -->
+<!-- fc id:T-54-025 sha:e0e905bb src:manual/54-korpus.md:53 klas:E -->
 ### T-54-025 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -856,7 +856,7 @@
 
 ---
 
-<!-- fc id:T-54-032 sha:515fca62 src:manual/54-korpus.md:72 klas:E -->
+<!-- fc id:T-54-032 sha:515fca62 src:manual/54-korpus.md:73 klas:E -->
 ### T-54-032 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -946,7 +946,7 @@
 
 ---
 
-<!-- fc id:T-54-036 sha:b4490502 src:manual/54-korpus.md:80 klas:E -->
+<!-- fc id:T-54-036 sha:b4490502 src:manual/54-korpus.md:81 klas:E -->
 ### T-54-036 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -969,7 +969,7 @@
 
 ---
 
-<!-- fc id:T-54-037 sha:fb2371cf src:manual/54-korpus.md:80 klas:E -->
+<!-- fc id:T-54-037 sha:fb2371cf src:manual/54-korpus.md:82 klas:E -->
 ### T-54-037 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1081,7 +1081,7 @@
 
 ---
 
-<!-- fc id:T-54-042 sha:16382fe6 src:manual/54-korpus.md:93 klas:E -->
+<!-- fc id:T-54-042 sha:16382fe6 src:manual/54-korpus.md:94 klas:E -->
 ### T-54-042 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1193,7 +1193,7 @@
 
 ---
 
-<!-- fc id:T-54-047 sha:faf4b437 src:manual/54-korpus.md:102 klas:E -->
+<!-- fc id:T-54-047 sha:faf4b437 src:manual/54-korpus.md:103 klas:E -->
 ### T-54-047 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1217,7 +1217,7 @@
 
 ---
 
-<!-- fc id:T-54-048 sha:4d52c369 src:manual/54-korpus.md:102 klas:E -->
+<!-- fc id:T-54-048 sha:4d52c369 src:manual/54-korpus.md:103 klas:E -->
 ### T-54-048 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1372,7 +1372,7 @@
 
 ---
 
-<!-- fc id:T-54-055 sha:b925b401 src:manual/54-korpus.md:117 klas:E -->
+<!-- fc id:T-54-055 sha:b925b401 src:manual/54-korpus.md:118 klas:E -->
 ### T-54-055 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1518,7 +1518,7 @@
 
 ---
 
-<!-- fc id:T-54-061 sha:d8a8ecdb src:manual/54-korpus.md:128 klas:F -->
+<!-- fc id:T-54-061 sha:d8a8ecdb src:manual/54-korpus.md:129 klas:F -->
 ### T-54-061 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1584,7 +1584,7 @@
 
 ---
 
-<!-- fc id:T-54-063 sha:a1ec7429 src:manual/54-korpus.md:132 klas:E -->
+<!-- fc id:T-54-063 sha:a1ec7429 src:manual/54-korpus.md:133 klas:E -->
 ### T-54-063 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1652,7 +1652,7 @@
 
 ---
 
-<!-- fc id:T-54-065 sha:27a316d1 src:manual/54-korpus.md:136 klas:E -->
+<!-- fc id:T-54-065 sha:27a316d1 src:manual/54-korpus.md:137 klas:E -->
 ### T-54-065 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1677,7 +1677,7 @@
 
 ---
 
-<!-- fc id:T-54-066 sha:fcc027c9 src:manual/54-korpus.md:136 klas:E -->
+<!-- fc id:T-54-066 sha:fcc027c9 src:manual/54-korpus.md:139 klas:E -->
 ### T-54-066 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1702,7 +1702,7 @@
 
 ---
 
-<!-- fc id:T-54-067 sha:5c9c5c08 src:manual/54-korpus.md:144 klas:C -->
+<!-- fc id:T-54-067 sha:5c9c5c08 src:manual/54-korpus.md:144 klas:F -->
 ### T-54-067 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1720,10 +1720,10 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Клас:** 🔴 F — не звірено
 - **Спосіб і дата:** Пошук у технічній документації батарей або наукових джерелах
 - **Що шукати в джерелі:** Літієва батарея, температура, зарядка, ємність, мороз
-- **Нотатка:** Твердження про властивості літієвих батарей при низьких температурах. Це добре відоме твердження, але джерелом має бути технічна документація виробника батареї. Не знайшов первинного джерела.
+- **Нотатка:** Твердження про властивості літієвих батарей при низьких температурах. Це добре відоме твердження, але джерелом має бути технічна документація виробника батареї. Не знайшов первинного джерела. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
 - **Прохід:** m2-97-vybirka
 
 ---
@@ -1818,7 +1818,7 @@
 
 ---
 
-<!-- fc id:T-54-072 sha:896386b0 src:manual/54-korpus.md:157 klas:F -->
+<!-- fc id:T-54-072 sha:896386b0 src:manual/54-korpus.md:158 klas:F -->
 ### T-54-072 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -1953,7 +1953,7 @@
 
 ---
 
-<!-- fc id:T-54-078 sha:4eda0d7f src:manual/54-korpus.md:175 klas:E -->
+<!-- fc id:T-54-078 sha:4eda0d7f src:manual/54-korpus.md:176 klas:E -->
 ### T-54-078 · proza · `manual/54-korpus.md`
 
 **Твердження, коротко**

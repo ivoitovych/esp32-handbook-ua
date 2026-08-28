@@ -899,7 +899,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-017 sha:e501e2ce src:kartky/k07-panika.md:24 klas:A -->
+<!-- fc id:T-K07-017 sha:e501e2ce src:kartky/k07-panika.md:25 klas:A -->
 ### T-K07-017 · proza · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -937,7 +937,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-018 sha:28db66bc src:kartky/k07-panika.md:24 klas:A -->
+<!-- fc id:T-K07-018 sha:28db66bc src:kartky/k07-panika.md:26 klas:A -->
 ### T-K07-018 · proza · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -1023,7 +1023,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-020 sha:9ad1110b src:kartky/k07-panika.md:28 klas:A -->
+<!-- fc id:T-K07-020 sha:9ad1110b src:kartky/k07-panika.md:30 klas:A -->
 ### T-K07-020 · proza · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -1110,7 +1110,7 @@ Backtrace — це ланцюжок адрес. Сам по собі він не
 
 ---
 
-<!-- fc id:T-K07-023 sha:e0cf8dca src:kartky/k07-panika.md:34 klas:A -->
+<!-- fc id:T-K07-023 sha:e0cf8dca src:kartky/k07-panika.md:35 klas:A -->
 ### T-K07-023 · proza · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -1315,7 +1315,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
 
 ---
 
-<!-- fc id:T-K07-030 sha:4837dd6e src:kartky/k07-panika.md:52 klas:F -->
+<!-- fc id:T-K07-030 sha:4837dd6e src:kartky/k07-panika.md:53 klas:F -->
 ### T-K07-030 · proza · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -1369,7 +1369,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
 
 ---
 
-<!-- fc id:T-K07-032 sha:9b8eb9e1 src:kartky/k07-panika.md:57 klas:F -->
+<!-- fc id:T-K07-032 sha:9b8eb9e1 src:kartky/k07-panika.md:58 klas:F -->
 ### T-K07-032 · proza · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -1394,7 +1394,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
 
 ---
 
-<!-- fc id:T-K07-033 sha:0c9a59fb src:kartky/k07-panika.md:57 klas:E -->
+<!-- fc id:T-K07-033 sha:0c9a59fb src:kartky/k07-panika.md:59 klas:E -->
 ### T-K07-033 · proza · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -1471,7 +1471,7 @@ xtensa-esp32-elf-addr2line -pfiaC -e build/app.elf 0x400d1234 0x400d5678
 
 ---
 
-<!-- fc id:T-K07-036 sha:95c093b4 src:kartky/k07-panika.md:64 klas:E -->
+<!-- fc id:T-K07-036 sha:95c093b4 src:kartky/k07-panika.md:65 klas:E -->
 ### T-K07-036 · proza · `kartky/k07-panika.md`
 
 **Твердження, коротко**

@@ -32,7 +32,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-002 sha:f95e0db9 src:manual/01-platforma.md:3 klas:F -->
+<!-- fc id:T-01-002 sha:f95e0db9 src:manual/01-platforma.md:4 klas:F -->
 ### T-01-002 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -81,7 +81,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-004 sha:3541dc08 src:manual/01-platforma.md:8 klas:E -->
+<!-- fc id:T-01-004 sha:3541dc08 src:manual/01-platforma.md:10 klas:E -->
 ### T-01-004 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -171,7 +171,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-008 sha:a63a8253 src:manual/01-platforma.md:18 klas:E -->
+<!-- fc id:T-01-008 sha:a63a8253 src:manual/01-platforma.md:19 klas:E -->
 ### T-01-008 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -223,7 +223,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-010 sha:4631ab42 src:manual/01-platforma.md:21 klas:E -->
+<!-- fc id:T-01-010 sha:4631ab42 src:manual/01-platforma.md:23 klas:E -->
 ### T-01-010 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -275,7 +275,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-012 sha:31937fd0 src:manual/01-platforma.md:26 klas:E -->
+<!-- fc id:T-01-012 sha:31937fd0 src:manual/01-platforma.md:27 klas:E -->
 ### T-01-012 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -322,7 +322,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-014 sha:ecf38ef0 src:manual/01-platforma.md:30 klas:E -->
+<!-- fc id:T-01-014 sha:ecf38ef0 src:manual/01-platforma.md:31 klas:E -->
 ### T-01-014 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -370,7 +370,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-016 sha:7fc3d457 src:manual/01-platforma.md:35 klas:E -->
+<!-- fc id:T-01-016 sha:7fc3d457 src:manual/01-platforma.md:36 klas:E -->
 ### T-01-016 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -479,7 +479,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-020 sha:8cedc349 src:manual/01-platforma.md:45 klas:F -->
+<!-- fc id:T-01-020 sha:8cedc349 src:manual/01-platforma.md:46 klas:F -->
 ### T-01-020 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -548,7 +548,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-023 sha:6cfc8dbb src:manual/01-platforma.md:53 klas:F -->
+<!-- fc id:T-01-023 sha:6cfc8dbb src:manual/01-platforma.md:54 klas:F -->
 ### T-01-023 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -682,7 +682,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-029 sha:f55cd7ac src:manual/01-platforma.md:67 klas:F -->
+<!-- fc id:T-01-029 sha:f55cd7ac src:manual/01-platforma.md:68 klas:F -->
 ### T-01-029 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -757,7 +757,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-032 sha:d20c551b src:manual/01-platforma.md:75 klas:F -->
+<!-- fc id:T-01-032 sha:d20c551b src:manual/01-platforma.md:76 klas:F -->
 ### T-01-032 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -803,7 +803,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-034 sha:67359e14 src:manual/01-platforma.md:79 klas:E -->
+<!-- fc id:T-01-034 sha:67359e14 src:manual/01-platforma.md:80 klas:E -->
 ### T-01-034 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -849,7 +849,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-036 sha:d370fa24 src:manual/01-platforma.md:83 klas:E -->
+<!-- fc id:T-01-036 sha:d370fa24 src:manual/01-platforma.md:84 klas:E -->
 ### T-01-036 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -974,7 +974,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features» — «Peripheral Features» і «Special Microcontroller Features»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features» — «Peripheral Features» і «Special Microcontroller Features» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > The ATmega48A/PA/88A/PA/168A/PA/328/P provides the following features: 4K/8Kbytes of In-System
   > Programmable Flash with Read-While-Write capabilities, 256/512/512/1Kbytes EEPROM, 512/1K/1K/2Kbytes
@@ -1102,7 +1102,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.2 «Interfaces»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.2 «Interfaces» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.2    Interfaces
   >       • 802.11 b/g/n/ac Wireless LAN
@@ -1202,7 +1202,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > Table 20-7.         Examples of UBRRn Settings for Commonly Used Oscillator Frequencies (Continued)
   >                           fosc = 16.0000MHz                      fosc = 18.4320MHz                      fosc = 20.0000MHz
@@ -1357,7 +1357,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.1 «Hardware»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.1 «Hardware» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.1    Hardware
   >       • Quad core 64-bit ARM-Cortex A72 running at 1.5GHz
@@ -1438,7 +1438,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features» → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features» → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > High Endurance Non-volatile Memory Segments
   >             ̶               4/8/16/32KBytes of In-System Self-Programmable Flash program memory
@@ -1568,7 +1568,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 1 «Introduction»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 1 «Introduction» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
 - **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
@@ -1636,7 +1636,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ «Features» → «Special Microcontroller Features»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ «Features» → «Special Microcontroller Features» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > The ATmega48A/PA/88A/PA/168A/PA/328/P is a low power, CMOS 8-bit microcontrollers based on the
   > AVR® enhanced RISC architecture.
@@ -1766,7 +1766,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.3 «Software»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.3 «Software» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.3    Software
   >       • ARMv8 Instruction Set
@@ -1852,7 +1852,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up Times for the Full Swing Crystal Oscillator Clock Selection»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up Times for the Full Swing Crystal Oscillator Clock Selection» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > Table 9-6.        Start-up Times for the Full Swing Crystal Oscillator Clock Selection
   >                                    Start-up Time from          Additional Delay
@@ -2193,7 +2193,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»; Raspberry Pi 5 Product Brief, розділ «Specification»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»; Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 4.1     Power Requirements
   > The Pi4B requires a good quality USB-C power supply capable of delivering 5V at 3A. If attached
@@ -2275,7 +2275,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt Response Time»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt Response Time» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > 7.7.1   Interrupt Response Time
   >         The interrupt execution response for all the enabled AVR interrupts is four clock cycles minimum. After four
@@ -2640,7 +2640,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-079 sha:736bafa5 src:manual/01-platforma.md:102 klas:F -->
+<!-- fc id:T-01-079 sha:736bafa5 src:manual/01-platforma.md:103 klas:F -->
 ### T-01-079 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2688,7 +2688,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-081 sha:26b18569 src:manual/01-platforma.md:106 klas:F -->
+<!-- fc id:T-01-081 sha:26b18569 src:manual/01-platforma.md:107 klas:F -->
 ### T-01-081 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2713,7 +2713,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-082 sha:3e250117 src:manual/01-platforma.md:106 klas:F -->
+<!-- fc id:T-01-082 sha:3e250117 src:manual/01-platforma.md:108 klas:F -->
 ### T-01-082 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2761,7 +2761,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-084 sha:773f5e13 src:manual/01-platforma.md:112 klas:E -->
+<!-- fc id:T-01-084 sha:773f5e13 src:manual/01-platforma.md:114 klas:E -->
 ### T-01-084 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2840,7 +2840,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-087 sha:da0dc970 src:manual/01-platforma.md:116 klas:F -->
+<!-- fc id:T-01-087 sha:da0dc970 src:manual/01-platforma.md:118 klas:F -->
 ### T-01-087 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2897,7 +2897,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-089 sha:cad52219 src:manual/01-platforma.md:122 klas:E -->
+<!-- fc id:T-01-089 sha:cad52219 src:manual/01-platforma.md:123 klas:E -->
 ### T-01-089 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2924,7 +2924,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-090 sha:6819661e src:manual/01-platforma.md:122 klas:E -->
+<!-- fc id:T-01-090 sha:6819661e src:manual/01-platforma.md:125 klas:E -->
 ### T-01-090 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2997,7 +2997,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-093 sha:665a22e0 src:manual/01-platforma.md:134 klas:F -->
+<!-- fc id:T-01-093 sha:665a22e0 src:manual/01-platforma.md:135 klas:F -->
 ### T-01-093 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -3115,7 +3115,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-098 sha:477a044d src:manual/01-platforma.md:151 klas:E -->
+<!-- fc id:T-01-098 sha:477a044d src:manual/01-platforma.md:152 klas:E -->
 ### T-01-098 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -3206,7 +3206,7 @@ STM32 керує процесом, ESP32 стоїть збоку і забезп
 
 ---
 
-<!-- fc id:T-01-102 sha:125b5c05 src:manual/01-platforma.md:159 klas:E -->
+<!-- fc id:T-01-102 sha:125b5c05 src:manual/01-platforma.md:160 klas:E -->
 ### T-01-102 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -3322,7 +3322,7 @@ TRM, встановлений тулчейн і закешовані біблі�
 
 ---
 
-<!-- fc id:T-01-107 sha:c958b0a3 src:manual/01-platforma.md:171 klas:E -->
+<!-- fc id:T-01-107 sha:c958b0a3 src:manual/01-platforma.md:172 klas:E -->
 ### T-01-107 · proza · `manual/01-platforma.md`
 
 **Твердження, коротко**

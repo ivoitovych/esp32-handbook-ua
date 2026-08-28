@@ -2858,7 +2858,7 @@
 
 ---
 
-<!-- fc id:T-D-061 sha:3e300ed0 src:dodatky/d-panik.md:47 klas:A -->
+<!-- fc id:T-D-061 sha:3e300ed0 src:dodatky/d-panik.md:48 klas:A -->
 ### T-D-061 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2896,7 +2896,7 @@
 
 ---
 
-<!-- fc id:T-D-062 sha:f2710f9f src:dodatky/d-panik.md:47 klas:E -->
+<!-- fc id:T-D-062 sha:f2710f9f src:dodatky/d-panik.md:51 klas:E -->
 ### T-D-062 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3589,7 +3589,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-080 sha:7e109f92 src:dodatky/d-panik.md:84 klas:E -->
+<!-- fc id:T-D-080 sha:7e109f92 src:dodatky/d-panik.md:85 klas:E -->
 ### T-D-080 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3686,7 +3686,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-083 sha:75285290 src:dodatky/d-panik.md:88 klas:E -->
+<!-- fc id:T-D-083 sha:75285290 src:dodatky/d-panik.md:90 klas:E -->
 ### T-D-083 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4062,7 +4062,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-093 sha:05cd2fbd src:dodatky/d-panik.md:107 klas:E -->
+<!-- fc id:T-D-093 sha:05cd2fbd src:dodatky/d-panik.md:108 klas:E -->
 ### T-D-093 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4110,7 +4110,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-095 sha:54121873 src:dodatky/d-panik.md:112 klas:A -->
+<!-- fc id:T-D-095 sha:54121873 src:dodatky/d-panik.md:113 klas:A -->
 ### T-D-095 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4380,7 +4380,7 @@ technical reference manual, а не в тому, що доступне звід�
 
 ---
 
-<!-- fc id:T-D-103 sha:478f40ad src:dodatky/d-panik.md:130 klas:A -->
+<!-- fc id:T-D-103 sha:478f40ad src:dodatky/d-panik.md:131 klas:A -->
 ### T-D-103 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5528,7 +5528,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-130 sha:898ac6ac src:dodatky/d-panik.md:182 klas:B -->
+<!-- fc id:T-D-130 sha:898ac6ac src:dodatky/d-panik.md:183 klas:B -->
 ### T-D-130 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6821,7 +6821,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-155 sha:4c0a3cc5 src:dodatky/d-panik.md:212 klas:A -->
+<!-- fc id:T-D-155 sha:4c0a3cc5 src:dodatky/d-panik.md:213 klas:A -->
 ### T-D-155 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7067,7 +7067,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-D-162 sha:15a9044c src:dodatky/d-panik.md:231 klas:A -->
+<!-- fc id:T-D-162 sha:15a9044c src:dodatky/d-panik.md:232 klas:A -->
 ### T-D-162 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7633,7 +7633,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-177 sha:68e01a8c src:dodatky/d-panik.md:263 klas:C -->
+<!-- fc id:T-D-177 sha:68e01a8c src:dodatky/d-panik.md:264 klas:C -->
 ### T-D-177 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7693,7 +7693,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-179 sha:290e2e50 src:dodatky/d-panik.md:266 klas:E -->
+<!-- fc id:T-D-179 sha:290e2e50 src:dodatky/d-panik.md:267 klas:E -->
 ### T-D-179 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7851,7 +7851,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-184 sha:61db3e19 src:dodatky/d-panik.md:279 klas:A -->
+<!-- fc id:T-D-184 sha:61db3e19 src:dodatky/d-panik.md:281 klas:A -->
 ### T-D-184 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7883,7 +7883,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-185 sha:8d7da41f src:dodatky/d-panik.md:279 klas:A -->
+<!-- fc id:T-D-185 sha:8d7da41f src:dodatky/d-panik.md:282 klas:A -->
 ### T-D-185 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7923,7 +7923,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-186 sha:223bf487 src:dodatky/d-panik.md:279 klas:E -->
+<!-- fc id:T-D-186 sha:223bf487 src:dodatky/d-panik.md:283 klas:E -->
 ### T-D-186 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -7949,7 +7949,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-187 sha:6a7c80ec src:dodatky/d-panik.md:279 klas:A -->
+<!-- fc id:T-D-187 sha:6a7c80ec src:dodatky/d-panik.md:284 klas:A -->
 ### T-D-187 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -8011,7 +8011,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-189 sha:91a1f9a6 src:dodatky/d-panik.md:287 klas:E -->
+<!-- fc id:T-D-189 sha:91a1f9a6 src:dodatky/d-panik.md:288 klas:E -->
 ### T-D-189 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -8082,7 +8082,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-192 sha:c50282dd src:dodatky/d-panik.md:296 klas:E -->
+<!-- fc id:T-D-192 sha:c50282dd src:dodatky/d-panik.md:297 klas:E -->
 ### T-D-192 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -8130,7 +8130,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-D-194 sha:d8b5c935 src:dodatky/d-panik.md:299 klas:E -->
+<!-- fc id:T-D-194 sha:d8b5c935 src:dodatky/d-panik.md:300 klas:E -->
 ### T-D-194 · proza · `dodatky/d-panik.md`
 
 **Твердження, коротко**

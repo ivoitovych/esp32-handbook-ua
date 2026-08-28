@@ -32,7 +32,7 @@
 
 ---
 
-<!-- fc id:T-28-002 sha:0e346129 src:manual/28-analizator.md:3 klas:E -->
+<!-- fc id:T-28-002 sha:0e346129 src:manual/28-analizator.md:4 klas:E -->
 ### T-28-002 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -413,7 +413,7 @@
 
 ---
 
-<!-- fc id:T-28-014 sha:8980c106 src:manual/28-analizator.md:23 klas:A -->
+<!-- fc id:T-28-014 sha:8980c106 src:manual/28-analizator.md:24 klas:A -->
 ### T-28-014 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -449,7 +449,7 @@
 
 ---
 
-<!-- fc id:T-28-015 sha:8bd6e720 src:manual/28-analizator.md:23 klas:B -->
+<!-- fc id:T-28-015 sha:8bd6e720 src:manual/28-analizator.md:25 klas:B -->
 ### T-28-015 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -539,7 +539,7 @@
 
 ---
 
-<!-- fc id:T-28-018 sha:86218d2b src:manual/28-analizator.md:27 klas:E -->
+<!-- fc id:T-28-018 sha:86218d2b src:manual/28-analizator.md:28 klas:E -->
 ### T-28-018 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -603,7 +603,7 @@
 
 ---
 
-<!-- fc id:T-28-020 sha:f0c8ae5e src:manual/28-analizator.md:31 klas:E -->
+<!-- fc id:T-28-020 sha:f0c8ae5e src:manual/28-analizator.md:32 klas:E -->
 ### T-28-020 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -648,7 +648,7 @@
 
 ---
 
-<!-- fc id:T-28-022 sha:55af010e src:manual/28-analizator.md:35 klas:E -->
+<!-- fc id:T-28-022 sha:55af010e src:manual/28-analizator.md:36 klas:E -->
 ### T-28-022 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -750,7 +750,7 @@
 
 ---
 
-<!-- fc id:T-28-025 sha:9837b888 src:manual/28-analizator.md:39 klas:E -->
+<!-- fc id:T-28-025 sha:9837b888 src:manual/28-analizator.md:41 klas:E -->
 ### T-28-025 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -776,7 +776,7 @@
 
 ---
 
-<!-- fc id:T-28-026 sha:030eadbf src:manual/28-analizator.md:39 klas:E -->
+<!-- fc id:T-28-026 sha:030eadbf src:manual/28-analizator.md:42 klas:E -->
 ### T-28-026 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -833,7 +833,7 @@
 
 ---
 
-<!-- fc id:T-28-028 sha:25604ae2 src:manual/28-analizator.md:47 klas:E -->
+<!-- fc id:T-28-028 sha:25604ae2 src:manual/28-analizator.md:48 klas:E -->
 ### T-28-028 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -878,7 +878,7 @@
 
 ---
 
-<!-- fc id:T-28-030 sha:556ede47 src:manual/28-analizator.md:51 klas:E -->
+<!-- fc id:T-28-030 sha:556ede47 src:manual/28-analizator.md:52 klas:E -->
 ### T-28-030 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -923,7 +923,7 @@
 
 ---
 
-<!-- fc id:T-28-032 sha:0eded61d src:manual/28-analizator.md:54 klas:E -->
+<!-- fc id:T-28-032 sha:0eded61d src:manual/28-analizator.md:55 klas:E -->
 ### T-28-032 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1308,7 +1308,7 @@
 
 ---
 
-<!-- fc id:T-28-044 sha:8422558d src:manual/28-analizator.md:74 klas:E -->
+<!-- fc id:T-28-044 sha:8422558d src:manual/28-analizator.md:75 klas:E -->
 ### T-28-044 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1469,7 +1469,7 @@
 
 ---
 
-<!-- fc id:T-28-049 sha:0d68b935 src:manual/28-analizator.md:89 klas:E -->
+<!-- fc id:T-28-049 sha:0d68b935 src:manual/28-analizator.md:90 klas:E -->
 ### T-28-049 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1495,7 +1495,7 @@
 
 ---
 
-<!-- fc id:T-28-050 sha:84501636 src:manual/28-analizator.md:89 klas:D -->
+<!-- fc id:T-28-050 sha:84501636 src:manual/28-analizator.md:91 klas:D -->
 ### T-28-050 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1536,7 +1536,7 @@
 
 ---
 
-<!-- fc id:T-28-051 sha:d1bb8a79 src:manual/28-analizator.md:89 klas:D -->
+<!-- fc id:T-28-051 sha:d1bb8a79 src:manual/28-analizator.md:91 klas:D -->
 ### T-28-051 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1721,7 +1721,7 @@
 
 ---
 
-<!-- fc id:T-28-057 sha:2f170fd1 src:manual/28-analizator.md:111 klas:E -->
+<!-- fc id:T-28-057 sha:2f170fd1 src:manual/28-analizator.md:112 klas:E -->
 ### T-28-057 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1746,7 +1746,7 @@
 
 ---
 
-<!-- fc id:T-28-058 sha:1edfadda src:manual/28-analizator.md:111 klas:E -->
+<!-- fc id:T-28-058 sha:1edfadda src:manual/28-analizator.md:113 klas:E -->
 ### T-28-058 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1852,7 +1852,7 @@
 
 ---
 
-<!-- fc id:T-28-062 sha:2f3a797f src:manual/28-analizator.md:124 klas:E -->
+<!-- fc id:T-28-062 sha:2f3a797f src:manual/28-analizator.md:125 klas:E -->
 ### T-28-062 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1878,7 +1878,7 @@
 
 ---
 
-<!-- fc id:T-28-063 sha:d2c93417 src:manual/28-analizator.md:124 klas:A -->
+<!-- fc id:T-28-063 sha:d2c93417 src:manual/28-analizator.md:126 klas:A -->
 ### T-28-063 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1914,7 +1914,7 @@
 
 ---
 
-<!-- fc id:T-28-064 sha:c096c539 src:manual/28-analizator.md:124 klas:E -->
+<!-- fc id:T-28-064 sha:c096c539 src:manual/28-analizator.md:127 klas:E -->
 ### T-28-064 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1940,7 +1940,7 @@
 
 ---
 
-<!-- fc id:T-28-065 sha:f268de07 src:manual/28-analizator.md:124 klas:F -->
+<!-- fc id:T-28-065 sha:f268de07 src:manual/28-analizator.md:128 klas:F -->
 ### T-28-065 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -1966,7 +1966,7 @@
 
 ---
 
-<!-- fc id:T-28-066 sha:92935c28 src:manual/28-analizator.md:124 klas:E -->
+<!-- fc id:T-28-066 sha:92935c28 src:manual/28-analizator.md:129 klas:E -->
 ### T-28-066 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -2120,7 +2120,7 @@ ESP32:
 
 ---
 
-<!-- fc id:T-28-072 sha:0d498c62 src:manual/28-analizator.md:139 klas:E -->
+<!-- fc id:T-28-072 sha:0d498c62 src:manual/28-analizator.md:140 klas:E -->
 ### T-28-072 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -2165,7 +2165,7 @@ UART і слухати. Дає точний вміст обміну, хоч і �
 
 ---
 
-<!-- fc id:T-28-074 sha:fa76bea4 src:manual/28-analizator.md:143 klas:E -->
+<!-- fc id:T-28-074 sha:fa76bea4 src:manual/28-analizator.md:144 klas:E -->
 ### T-28-074 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -2232,7 +2232,7 @@ UART і слухати. Дає точний вміст обміну, хоч і �
 
 ---
 
-<!-- fc id:T-28-077 sha:5837ce0a src:manual/28-analizator.md:149 klas:E -->
+<!-- fc id:T-28-077 sha:5837ce0a src:manual/28-analizator.md:150 klas:E -->
 ### T-28-077 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -2277,7 +2277,7 @@ UART і слухати. Дає точний вміст обміну, хоч і �
 
 ---
 
-<!-- fc id:T-28-079 sha:1890a47c src:manual/28-analizator.md:155 klas:E -->
+<!-- fc id:T-28-079 sha:1890a47c src:manual/28-analizator.md:156 klas:E -->
 ### T-28-079 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -2340,7 +2340,7 @@ UART і слухати. Дає точний вміст обміну, хоч і �
 
 ---
 
-<!-- fc id:T-28-081 sha:fb070e04 src:manual/28-analizator.md:158 klas:E -->
+<!-- fc id:T-28-081 sha:fb070e04 src:manual/28-analizator.md:160 klas:E -->
 ### T-28-081 · proza · `manual/28-analizator.md`
 
 **Твердження, коротко**

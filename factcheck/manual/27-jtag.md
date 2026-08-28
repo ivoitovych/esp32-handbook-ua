@@ -191,7 +191,7 @@
 
 ---
 
-<!-- fc id:T-27-008 sha:8eb55e39 src:manual/27-jtag.md:16 klas:E -->
+<!-- fc id:T-27-008 sha:8eb55e39 src:manual/27-jtag.md:18 klas:E -->
 ### T-27-008 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -616,7 +616,7 @@ idf.py openocd gdb
 
 ---
 
-<!-- fc id:T-27-020 sha:829374ea src:manual/27-jtag.md:41 klas:A -->
+<!-- fc id:T-27-020 sha:829374ea src:manual/27-jtag.md:42 klas:A -->
 ### T-27-020 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1106,7 +1106,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-036 sha:20c682b0 src:manual/27-jtag.md:85 klas:A -->
+<!-- fc id:T-27-036 sha:20c682b0 src:manual/27-jtag.md:86 klas:A -->
 ### T-27-036 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1158,7 +1158,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-037 sha:5d16dbe1 src:manual/27-jtag.md:85 klas:A -->
+<!-- fc id:T-27-037 sha:5d16dbe1 src:manual/27-jtag.md:87 klas:A -->
 ### T-27-037 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1192,7 +1192,7 @@ ESP-Prog від Espressif або будь-яка плата на FT2232H.
 
 ---
 
-<!-- fc id:T-27-038 sha:aeafecac src:manual/27-jtag.md:85 klas:F -->
+<!-- fc id:T-27-038 sha:aeafecac src:manual/27-jtag.md:88 klas:F -->
 ### T-27-038 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1296,7 +1296,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-042 sha:cc45d10e src:manual/27-jtag.md:95 klas:F -->
+<!-- fc id:T-27-042 sha:cc45d10e src:manual/27-jtag.md:96 klas:F -->
 ### T-27-042 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1320,7 +1320,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-043 sha:c5e8b6c5 src:manual/27-jtag.md:95 klas:F -->
+<!-- fc id:T-27-043 sha:c5e8b6c5 src:manual/27-jtag.md:97 klas:F -->
 ### T-27-043 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1441,7 +1441,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-048 sha:ce63f8f0 src:manual/27-jtag.md:113 klas:F -->
+<!-- fc id:T-27-048 sha:ce63f8f0 src:manual/27-jtag.md:114 klas:F -->
 ### T-27-048 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1488,7 +1488,7 @@ strapping. Лог і coredump (розділ 26) покривають перев�
 
 ---
 
-<!-- fc id:T-27-050 sha:4bf0d4be src:manual/27-jtag.md:117 klas:F -->
+<!-- fc id:T-27-050 sha:4bf0d4be src:manual/27-jtag.md:118 klas:F -->
 ### T-27-050 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1556,7 +1556,7 @@ without optimization (-O0)`**. Пункт `Debug (-Og)` у цьому ж пер�
 
 ---
 
-<!-- fc id:T-27-052 sha:de2420a5 src:manual/27-jtag.md:122 klas:A -->
+<!-- fc id:T-27-052 sha:de2420a5 src:manual/27-jtag.md:124 klas:A -->
 ### T-27-052 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1600,7 +1600,7 @@ without optimization (-O0)`**. Пункт `Debug (-Og)` у цьому ж пер�
 
 ---
 
-<!-- fc id:T-27-053 sha:08975b7d src:manual/27-jtag.md:122 klas:A -->
+<!-- fc id:T-27-053 sha:08975b7d src:manual/27-jtag.md:126 klas:A -->
 ### T-27-053 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1644,7 +1644,7 @@ without optimization (-O0)`**. Пункт `Debug (-Og)` у цьому ж пер�
 
 ---
 
-<!-- fc id:T-27-054 sha:9fccaf52 src:manual/27-jtag.md:122 klas:A -->
+<!-- fc id:T-27-054 sha:9fccaf52 src:manual/27-jtag.md:128 klas:A -->
 ### T-27-054 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1712,7 +1712,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-056 sha:f37cad84 src:manual/27-jtag.md:130 klas:E -->
+<!-- fc id:T-27-056 sha:f37cad84 src:manual/27-jtag.md:132 klas:E -->
 ### T-27-056 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1790,7 +1790,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-059 sha:0839b677 src:manual/27-jtag.md:139 klas:F -->
+<!-- fc id:T-27-059 sha:0839b677 src:manual/27-jtag.md:140 klas:F -->
 ### T-27-059 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1823,7 +1823,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-060 sha:10d8bc08 src:manual/27-jtag.md:139 klas:F -->
+<!-- fc id:T-27-060 sha:10d8bc08 src:manual/27-jtag.md:140 klas:F -->
 ### T-27-060 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1856,7 +1856,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-061 sha:ad5509dd src:manual/27-jtag.md:139 klas:E -->
+<!-- fc id:T-27-061 sha:ad5509dd src:manual/27-jtag.md:144 klas:E -->
 ### T-27-061 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1898,7 +1898,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-062 sha:a1a77bd9 src:manual/27-jtag.md:139 klas:F -->
+<!-- fc id:T-27-062 sha:a1a77bd9 src:manual/27-jtag.md:146 klas:F -->
 ### T-27-062 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1931,7 +1931,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-063 sha:1ff00cfb src:manual/27-jtag.md:139 klas:A -->
+<!-- fc id:T-27-063 sha:1ff00cfb src:manual/27-jtag.md:147 klas:A -->
 ### T-27-063 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -1990,7 +1990,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-064 sha:9f987218 src:manual/27-jtag.md:139 klas:A -->
+<!-- fc id:T-27-064 sha:9f987218 src:manual/27-jtag.md:149 klas:A -->
 ### T-27-064 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2045,7 +2045,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-065 sha:bf544428 src:manual/27-jtag.md:139 klas:A -->
+<!-- fc id:T-27-065 sha:bf544428 src:manual/27-jtag.md:149 klas:A -->
 ### T-27-065 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2170,7 +2170,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-069 sha:d5495804 src:manual/27-jtag.md:158 klas:F -->
+<!-- fc id:T-27-069 sha:d5495804 src:manual/27-jtag.md:159 klas:F -->
 ### T-27-069 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ USB у Windows, права на пристрій у Linux (правила udev),
 
 ---
 
-<!-- fc id:T-27-070 sha:2e8286d8 src:manual/27-jtag.md:158 klas:E -->
+<!-- fc id:T-27-070 sha:2e8286d8 src:manual/27-jtag.md:160 klas:E -->
 ### T-27-070 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**
@@ -2238,7 +2238,7 @@ JTAG потрібен там, де всі чотири нічого не дал�
 
 ---
 
-<!-- fc id:T-27-072 sha:eb17bd67 src:manual/27-jtag.md:162 klas:E -->
+<!-- fc id:T-27-072 sha:eb17bd67 src:manual/27-jtag.md:163 klas:E -->
 ### T-27-072 · proza · `manual/27-jtag.md`
 
 **Твердження, коротко**

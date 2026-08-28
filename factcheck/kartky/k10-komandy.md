@@ -78,7 +78,7 @@
 
 ---
 
-<!-- fc id:T-K10-003 sha:6ac69acd src:kartky/k10-komandy.md:3 klas:A -->
+<!-- fc id:T-K10-003 sha:6ac69acd src:kartky/k10-komandy.md:4 klas:A -->
 ### T-K10-003 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1427,7 +1427,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:58 klas:F -->
+<!-- fc id:T-K10-039 sha:2130100e src:kartky/k10-komandy.md:59 klas:F -->
 ### T-K10-039 · proza · `kartky/k10-komandy.md`
 
 **Твердження, коротко**

@@ -97,7 +97,7 @@ download mode або можливість перепрошивки. Не зап�
 
 ---
 
-<!-- fc id:T-K11-004 sha:0a6903d1 src:kartky/k11-nikoly.md:7 klas:F -->
+<!-- fc id:T-K11-004 sha:0a6903d1 src:kartky/k11-nikoly.md:8 klas:F -->
 ### T-K11-004 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -122,7 +122,7 @@ download mode або можливість перепрошивки. Не зап�
 
 ---
 
-<!-- fc id:T-K11-005 sha:cbb6779a src:kartky/k11-nikoly.md:7 klas:A -->
+<!-- fc id:T-K11-005 sha:cbb6779a src:kartky/k11-nikoly.md:9 klas:A -->
 ### T-K11-005 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -288,7 +288,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-009 sha:27686b7b src:kartky/k11-nikoly.md:18 klas:E -->
+<!-- fc id:T-K11-009 sha:27686b7b src:kartky/k11-nikoly.md:20 klas:E -->
 ### T-K11-009 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -315,7 +315,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-010 sha:4dcbf84d src:kartky/k11-nikoly.md:18 klas:E -->
+<!-- fc id:T-K11-010 sha:4dcbf84d src:kartky/k11-nikoly.md:21 klas:E -->
 ### T-K11-010 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -385,7 +385,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-012 sha:34e89cce src:kartky/k11-nikoly.md:26 klas:E -->
+<!-- fc id:T-K11-012 sha:34e89cce src:kartky/k11-nikoly.md:28 klas:E -->
 ### T-K11-012 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -469,7 +469,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-015 sha:a8ece2fd src:kartky/k11-nikoly.md:33 klas:A -->
+<!-- fc id:T-K11-015 sha:a8ece2fd src:kartky/k11-nikoly.md:34 klas:A -->
 ### T-K11-015 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -501,7 +501,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-016 sha:94045e56 src:kartky/k11-nikoly.md:33 klas:E -->
+<!-- fc id:T-K11-016 sha:94045e56 src:kartky/k11-nikoly.md:35 klas:E -->
 ### T-K11-016 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -601,7 +601,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-019 sha:44b30bed src:kartky/k11-nikoly.md:42 klas:E -->
+<!-- fc id:T-K11-019 sha:44b30bed src:kartky/k11-nikoly.md:43 klas:E -->
 ### T-K11-019 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -627,7 +627,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-020 sha:925d49ec src:kartky/k11-nikoly.md:42 klas:E -->
+<!-- fc id:T-K11-020 sha:925d49ec src:kartky/k11-nikoly.md:44 klas:E -->
 ### T-K11-020 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -676,7 +676,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-022 sha:8399e47f src:kartky/k11-nikoly.md:50 klas:E -->
+<!-- fc id:T-K11-022 sha:8399e47f src:kartky/k11-nikoly.md:52 klas:E -->
 ### T-K11-022 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -740,7 +740,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-024 sha:e3a0462c src:kartky/k11-nikoly.md:54 klas:E -->
+<!-- fc id:T-K11-024 sha:e3a0462c src:kartky/k11-nikoly.md:55 klas:E -->
 ### T-K11-024 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**
@@ -794,7 +794,7 @@ release-режимі це односторонні двері: чип перес
 
 ---
 
-<!-- fc id:T-K11-026 sha:15310ad7 src:kartky/k11-nikoly.md:58 klas:A -->
+<!-- fc id:T-K11-026 sha:15310ad7 src:kartky/k11-nikoly.md:59 klas:A -->
 ### T-K11-026 · proza · `kartky/k11-nikoly.md`
 
 **Твердження, коротко**

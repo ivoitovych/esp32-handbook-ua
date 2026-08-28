@@ -687,7 +687,7 @@ typedef struct {
 
 ---
 
-<!-- fc id:T-63-023 sha:2597f20d src:manual/63-proj-mist.md:52 klas:A -->
+<!-- fc id:T-63-023 sha:2597f20d src:manual/63-proj-mist.md:53 klas:A -->
 ### T-63-023 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1181,7 +1181,7 @@ static void nadislaty_serial(const blok_t *b) {
 
 ---
 
-<!-- fc id:T-63-036 sha:24664874 src:manual/63-proj-mist.md:106 klas:E -->
+<!-- fc id:T-63-036 sha:24664874 src:manual/63-proj-mist.md:107 klas:E -->
 ### T-63-036 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1650,7 +1650,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-052 sha:be351eec src:manual/63-proj-mist.md:151 klas:F -->
+<!-- fc id:T-63-052 sha:be351eec src:manual/63-proj-mist.md:153 klas:F -->
 ### T-63-052 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1695,7 +1695,7 @@ static void task_tcp(void *arg) {
 
 ---
 
-<!-- fc id:T-63-054 sha:1985092e src:manual/63-proj-mist.md:157 klas:F -->
+<!-- fc id:T-63-054 sha:1985092e src:manual/63-proj-mist.md:158 klas:F -->
 ### T-63-054 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1800,7 +1800,7 @@ typedef struct {
 
 ---
 
-<!-- fc id:T-63-057 sha:a87c2640 src:manual/63-proj-mist.md:171 klas:E -->
+<!-- fc id:T-63-057 sha:a87c2640 src:manual/63-proj-mist.md:172 klas:E -->
 ### T-63-057 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -1997,7 +1997,7 @@ static void task_rx_can(void *arg) {
 
 ---
 
-<!-- fc id:T-63-063 sha:631e3a04 src:manual/63-proj-mist.md:204 klas:E -->
+<!-- fc id:T-63-063 sha:631e3a04 src:manual/63-proj-mist.md:205 klas:E -->
 ### T-63-063 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2148,7 +2148,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-069 sha:af328f59 src:manual/63-proj-mist.md:227 klas:E -->
+<!-- fc id:T-63-069 sha:af328f59 src:manual/63-proj-mist.md:228 klas:E -->
 ### T-63-069 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2172,7 +2172,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-070 sha:8a0f6cc7 src:manual/63-proj-mist.md:227 klas:E -->
+<!-- fc id:T-63-070 sha:8a0f6cc7 src:manual/63-proj-mist.md:229 klas:E -->
 ### T-63-070 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2280,7 +2280,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-074 sha:ffa0be4a src:manual/63-proj-mist.md:237 klas:E -->
+<!-- fc id:T-63-074 sha:ffa0be4a src:manual/63-proj-mist.md:239 klas:E -->
 ### T-63-074 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2311,7 +2311,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-075 sha:cb1d1c36 src:manual/63-proj-mist.md:237 klas:E -->
+<!-- fc id:T-63-075 sha:cb1d1c36 src:manual/63-proj-mist.md:240 klas:E -->
 ### T-63-075 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2342,7 +2342,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-076 sha:ba43020f src:manual/63-proj-mist.md:237 klas:E -->
+<!-- fc id:T-63-076 sha:ba43020f src:manual/63-proj-mist.md:242 klas:E -->
 ### T-63-076 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2373,7 +2373,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-077 sha:eb7a0411 src:manual/63-proj-mist.md:237 klas:E -->
+<!-- fc id:T-63-077 sha:eb7a0411 src:manual/63-proj-mist.md:244 klas:E -->
 ### T-63-077 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2404,7 +2404,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-078 sha:9dc32c61 src:manual/63-proj-mist.md:237 klas:E -->
+<!-- fc id:T-63-078 sha:9dc32c61 src:manual/63-proj-mist.md:245 klas:E -->
 ### T-63-078 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -2435,7 +2435,7 @@ static struct {
 
 ---
 
-<!-- fc id:T-63-079 sha:9afcee63 src:manual/63-proj-mist.md:237 klas:E -->
+<!-- fc id:T-63-079 sha:9afcee63 src:manual/63-proj-mist.md:246 klas:E -->
 ### T-63-079 · proza · `manual/63-proj-mist.md`
 
 **Твердження, коротко**

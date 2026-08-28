@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-30-002 sha:4be46a6c src:manual/30-struktura.md:3 klas:E -->
+<!-- fc id:T-30-002 sha:4be46a6c src:manual/30-struktura.md:5 klas:E -->
 ### T-30-002 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -157,7 +157,7 @@
 
 ---
 
-<!-- fc id:T-30-007 sha:8c045e3f src:manual/30-struktura.md:19 klas:A -->
+<!-- fc id:T-30-007 sha:8c045e3f src:manual/30-struktura.md:20 klas:A -->
 ### T-30-007 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -247,7 +247,7 @@
 
 ---
 
-<!-- fc id:T-30-010 sha:86755f61 src:manual/30-struktura.md:26 klas:E -->
+<!-- fc id:T-30-010 sha:86755f61 src:manual/30-struktura.md:27 klas:E -->
 ### T-30-010 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -537,7 +537,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-020 sha:1f3c5167 src:manual/30-struktura.md:49 klas:E -->
+<!-- fc id:T-30-020 sha:1f3c5167 src:manual/30-struktura.md:50 klas:E -->
 ### T-30-020 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -742,7 +742,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-027 sha:86458de5 src:manual/30-struktura.md:66 klas:A -->
+<!-- fc id:T-30-027 sha:86458de5 src:manual/30-struktura.md:67 klas:A -->
 ### T-30-027 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -773,7 +773,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-30-028 sha:1ad7bb31 src:manual/30-struktura.md:66 klas:A -->
+<!-- fc id:T-30-028 sha:1ad7bb31 src:manual/30-struktura.md:68 klas:A -->
 ### T-30-028 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1102,7 +1102,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-039 sha:b404ec41 src:manual/30-struktura.md:104 klas:E -->
+<!-- fc id:T-30-039 sha:b404ec41 src:manual/30-struktura.md:105 klas:E -->
 ### T-30-039 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1127,7 +1127,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-040 sha:a545ec1b src:manual/30-struktura.md:104 klas:A -->
+<!-- fc id:T-30-040 sha:a545ec1b src:manual/30-struktura.md:106 klas:A -->
 ### T-30-040 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1230,7 +1230,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-043 sha:498cc7fb src:manual/30-struktura.md:115 klas:E -->
+<!-- fc id:T-30-043 sha:498cc7fb src:manual/30-struktura.md:116 klas:E -->
 ### T-30-043 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1301,7 +1301,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-046 sha:4bb61c41 src:manual/30-struktura.md:123 klas:E -->
+<!-- fc id:T-30-046 sha:4bb61c41 src:manual/30-struktura.md:124 klas:E -->
 ### T-30-046 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1355,7 +1355,7 @@ ESP_LOGI(TAG, "найменший запас стека: %u байт", zapas);
 
 ---
 
-<!-- fc id:T-30-048 sha:d09dab4a src:manual/30-struktura.md:129 klas:E -->
+<!-- fc id:T-30-048 sha:d09dab4a src:manual/30-struktura.md:130 klas:E -->
 ### T-30-048 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1539,7 +1539,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-053 sha:ec81bc57 src:manual/30-struktura.md:144 klas:E -->
+<!-- fc id:T-30-053 sha:ec81bc57 src:manual/30-struktura.md:145 klas:E -->
 ### T-30-053 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1754,7 +1754,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-058 sha:ffbb3b29 src:manual/30-struktura.md:153 klas:F -->
+<!-- fc id:T-30-058 sha:ffbb3b29 src:manual/30-struktura.md:154 klas:F -->
 ### T-30-058 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -1829,7 +1829,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 
 ---
 
-<!-- fc id:T-30-060 sha:0ede65d0 src:manual/30-struktura.md:158 klas:A -->
+<!-- fc id:T-30-060 sha:0ede65d0 src:manual/30-struktura.md:160 klas:A -->
 ### T-30-060 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2466,7 +2466,7 @@ IRAM небагато, і кожна така функція займає її �
 
 ---
 
-<!-- fc id:T-30-079 sha:53abed90 src:manual/30-struktura.md:213 klas:E -->
+<!-- fc id:T-30-079 sha:53abed90 src:manual/30-struktura.md:214 klas:E -->
 ### T-30-079 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -2668,7 +2668,7 @@ lichylnyk++;   // читання + додавання + запис — три д
 
 ---
 
-<!-- fc id:T-30-087 sha:42e5df0c src:manual/30-struktura.md:231 klas:A -->
+<!-- fc id:T-30-087 sha:42e5df0c src:manual/30-struktura.md:233 klas:A -->
 ### T-30-087 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**
@@ -3024,7 +3024,7 @@ ESP_LOGI(TAG, "мінімум за весь час: %u", esp_get_minimum_free_he
 
 ---
 
-<!-- fc id:T-30-098 sha:d8584f81 src:manual/30-struktura.md:261 klas:E -->
+<!-- fc id:T-30-098 sha:d8584f81 src:manual/30-struktura.md:262 klas:E -->
 ### T-30-098 · proza · `manual/30-struktura.md`
 
 **Твердження, коротко**

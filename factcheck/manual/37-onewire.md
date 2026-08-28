@@ -43,7 +43,7 @@ DS18B20, і саме тому розділ короткий.
 
 ---
 
-<!-- fc id:T-37-002 sha:a8c0f47a src:manual/37-onewire.md:3 klas:A -->
+<!-- fc id:T-37-002 sha:a8c0f47a src:manual/37-onewire.md:4 klas:A -->
 ### T-37-002 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -301,7 +301,7 @@ DS18B20, і саме тому розділ короткий.
 
 ---
 
-<!-- fc id:T-37-011 sha:31406861 src:manual/37-onewire.md:28 klas:E -->
+<!-- fc id:T-37-011 sha:31406861 src:manual/37-onewire.md:29 klas:E -->
 ### T-37-011 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -399,7 +399,7 @@ DS18B20, і саме тому розділ короткий.
 
 ---
 
-<!-- fc id:T-37-015 sha:0cc33066 src:manual/37-onewire.md:37 klas:E -->
+<!-- fc id:T-37-015 sha:0cc33066 src:manual/37-onewire.md:38 klas:E -->
 ### T-37-015 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -481,7 +481,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-018 sha:d6c76770 src:manual/37-onewire.md:45 klas:E -->
+<!-- fc id:T-37-018 sha:d6c76770 src:manual/37-onewire.md:47 klas:E -->
 ### T-37-018 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -543,7 +543,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-020 sha:11687939 src:manual/37-onewire.md:49 klas:F -->
+<!-- fc id:T-37-020 sha:11687939 src:manual/37-onewire.md:50 klas:F -->
 ### T-37-020 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -627,7 +627,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-023 sha:4f905628 src:manual/37-onewire.md:57 klas:E -->
+<!-- fc id:T-37-023 sha:4f905628 src:manual/37-onewire.md:59 klas:E -->
 ### T-37-023 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -669,7 +669,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-024 sha:b134f688 src:manual/37-onewire.md:57 klas:E -->
+<!-- fc id:T-37-024 sha:b134f688 src:manual/37-onewire.md:62 klas:E -->
 ### T-37-024 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -800,7 +800,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-028 sha:905f60b4 src:manual/37-onewire.md:76 klas:E -->
+<!-- fc id:T-37-028 sha:905f60b4 src:manual/37-onewire.md:77 klas:E -->
 ### T-37-028 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -847,7 +847,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-030 sha:dbda2c65 src:manual/37-onewire.md:80 klas:E -->
+<!-- fc id:T-37-030 sha:dbda2c65 src:manual/37-onewire.md:81 klas:E -->
 ### T-37-030 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -964,7 +964,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-034 sha:bff3bd48 src:manual/37-onewire.md:92 klas:E -->
+<!-- fc id:T-37-034 sha:bff3bd48 src:manual/37-onewire.md:93 klas:E -->
 ### T-37-034 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1010,7 +1010,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-036 sha:9514a597 src:manual/37-onewire.md:95 klas:E -->
+<!-- fc id:T-37-036 sha:9514a597 src:manual/37-onewire.md:96 klas:E -->
 ### T-37-036 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1056,7 +1056,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-038 sha:b617c9ae src:manual/37-onewire.md:100 klas:E -->
+<!-- fc id:T-37-038 sha:b617c9ae src:manual/37-onewire.md:101 klas:E -->
 ### T-37-038 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1101,7 +1101,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-040 sha:de084a78 src:manual/37-onewire.md:103 klas:A -->
+<!-- fc id:T-37-040 sha:de084a78 src:manual/37-onewire.md:104 klas:A -->
 ### T-37-040 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1153,7 +1153,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-042 sha:57dd0434 src:manual/37-onewire.md:109 klas:F -->
+<!-- fc id:T-37-042 sha:57dd0434 src:manual/37-onewire.md:110 klas:F -->
 ### T-37-042 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1198,7 +1198,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-044 sha:dcb81a59 src:manual/37-onewire.md:112 klas:A -->
+<!-- fc id:T-37-044 sha:dcb81a59 src:manual/37-onewire.md:113 klas:A -->
 ### T-37-044 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1295,7 +1295,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-047 sha:97e43a9e src:manual/37-onewire.md:121 klas:C -->
+<!-- fc id:T-37-047 sha:97e43a9e src:manual/37-onewire.md:122 klas:C -->
 ### T-37-047 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1383,7 +1383,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-050 sha:1fed688f src:manual/37-onewire.md:130 klas:E -->
+<!-- fc id:T-37-050 sha:1fed688f src:manual/37-onewire.md:132 klas:E -->
 ### T-37-050 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1409,7 +1409,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-051 sha:b7cb5442 src:manual/37-onewire.md:130 klas:E -->
+<!-- fc id:T-37-051 sha:b7cb5442 src:manual/37-onewire.md:132 klas:E -->
 ### T-37-051 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1435,7 +1435,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-052 sha:f647ccb2 src:manual/37-onewire.md:130 klas:F -->
+<!-- fc id:T-37-052 sha:f647ccb2 src:manual/37-onewire.md:134 klas:F -->
 ### T-37-052 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1461,7 +1461,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-053 sha:9cdb9b5a src:manual/37-onewire.md:130 klas:E -->
+<!-- fc id:T-37-053 sha:9cdb9b5a src:manual/37-onewire.md:135 klas:E -->
 ### T-37-053 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**
@@ -1524,7 +1524,7 @@ Maxim/Dallas, ревізія 042208).
 
 ---
 
-<!-- fc id:T-37-055 sha:3181dab4 src:manual/37-onewire.md:139 klas:E -->
+<!-- fc id:T-37-055 sha:3181dab4 src:manual/37-onewire.md:141 klas:E -->
 ### T-37-055 · proza · `manual/37-onewire.md`
 
 **Твердження, коротко**

@@ -43,16 +43,28 @@ KLASY = {
     "C": "вторинне — джерело не дістається звідси; URL записано, цитати немає",
     "D": "обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне",
     "E": "сигналу для звірки в тексті немає — присвоєно механічно, не перевірено",
+    "L": "дивилися й не знайшли — робота зроблена, джерела не видно",
     "F": "не звірено",
     "G": "спростовано або потребує правки",
     "K": "контекст — блок коду цілком; твердження в його рядках",
 }
 ZNAK = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "🔴",
-        "G": "⚠", "K": "▫"}
+        "G": "⚠", "K": "▫", "L": "🔎"}
+
+# Один перелік на всіх. Додавання класу `L` показало, навіщо: `status`
+# перебирав рядок "ABCDEFG", і новий клас просто не з'явився у звіті —
+# ані як помилка, ані як нуль. Ще шість тулів тримали свою копію того
+# самого рядка.
+#
+# > Це рід 3 у `DEFECTS.md` збоку, з якого його не чекали: не перевірка
+# > мовчить, а **перелік**, за яким вона ходить. Копія переліку — така
+# > сама обіцянка не міняти його, як копія взірця.
+USI_KLASY = "".join(KLASY)                      # A B C D E L F G K
+KLASY_ODYNYC = "".join(k for k in KLASY if k != "K")   # без блоків коду
 
 RE_ZAPYS = re.compile(
     r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
-    r"\s+src:(?P<src>[^\s]+)\s+klas:(?P<klas>[A-GK])\s*-->"
+    r"\s+src:(?P<src>[^\s]+)\s+klas:(?P<klas>[A-GKL])\s*-->"
 )
 
 
@@ -247,24 +259,60 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
     odynyci: list[tuple[str, str, int]] = []
     ryadky = text.split("\n")
     i, n = 0, len(ryadky)
-    buf: list[str] = []
+    # Кожен рядок несе свій номер: інакше всі речення абзацу дістають
+    # номер його **початку**, і картка обіцяє точність, якої не має.
+    #
+    # Спіймано звіркою з `shar1.py` М2: п'ять карток списку в `k01`
+    # стояли з одним номером 38, тоді як пункти лежать на 38–42. Мій
+    # `stale` цього не бачив і побачити не міг — він звіряє генератор
+    # сам із собою, а не з книгою.
+    #
+    # > Дві перевірки того самого шару розійшлися, і обидві мали рацію:
+    # > одна питала «чи реєстр із цієї книги», друга — «чи номер веде
+    # > туди, куди обіцяє». Друге питання ми не ставили ніколи.
+    buf: list[tuple[int, str]] = []
     buf_vid = 0
 
     def zlyty_prozu():
         nonlocal buf, buf_vid
         if not buf:
             return
-        blok = " ".join(x.strip() for x in buf if x.strip())
+        # Зшиваємо блок і запам'ятовуємо, з якого символу починається
+        # кожен рядок — щоб потім віддати реченню номер його власного
+        # рядка, а не рядка абзацу.
+        chastky, mezhi, poz = [], [], 0
+        for nomer, x in buf:
+            s = x.strip()
+            if not s:
+                continue
+            mezhi.append((poz, nomer))
+            chastky.append(s)
+            poz += len(s) + 1
+        blok = " ".join(chastky)
         buf = []
         if not blok:
             return
+
+        def ryadok_dlya(zmishchennya: int) -> int:
+            ostannij = buf_vid
+            for p, nomer in mezhi:
+                if p > zmishchennya:
+                    break
+                ostannij = nomer
+            return ostannij
+
         # Речення. Крапка в «0x1000.» або «v5.5» не завершує речення, тому
         # ділимо лише там, де за розділовим знаком іде велика літера або тире.
+        shukach = 0
         chastyny = re.split(r"(?<=[.!?])\s+(?=[«»А-ЯЇІЄҐA-Z\[`*—-])", blok)
         for c in chastyny:
+            zm = blok.find(c, shukach)
+            if zm < 0:
+                zm = shukach
+            shukach = zm + len(c)
             c = c.strip()
             if len(c) >= 25:
-                odynyci.append(("proza", c, buf_vid))
+                odynyci.append(("proza", c, ryadok_dlya(zm)))
 
     while i < n:
         r = ryadky[i]
@@ -296,7 +344,7 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
             continue
         if not buf:
             buf_vid = i + 1
-        buf.append(r)
+        buf.append((i + 1, r))
         i += 1
     zlyty_prozu()
     return odynyci
@@ -344,7 +392,7 @@ def zavantazhyty_dokazy() -> list[dict]:
 
 
 # Сила класу доказу. Менше — сильніше.
-SYLA = {"A": 0, "B": 1, "D": 2, "C": 3, "E": 4, "G": 5, "F": 6}
+SYLA = {"A": 0, "B": 1, "D": 2, "C": 3, "L": 4, "E": 5, "G": 6, "F": 7}
 
 
 def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
@@ -873,7 +921,7 @@ def status() -> int:
     print(f"\nодиниць твердження: {vsjogo}"
           f"  (+ {kontekst} блоків коду як контекст)\n")
     zvireno = sum(c[k] for k in "ABD")
-    for k in "ABCDEFG":
+    for k in KLASY_ODYNYC:
         n = c.get(k, 0)
         if not n:
             continue

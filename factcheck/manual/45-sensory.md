@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-45-002 sha:985b01b7 src:manual/45-sensory.md:3 klas:E -->
+<!-- fc id:T-45-002 sha:985b01b7 src:manual/45-sensory.md:4 klas:E -->
 ### T-45-002 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -124,7 +124,7 @@
 
 ---
 
-<!-- fc id:T-45-006 sha:f2b3a50e src:manual/45-sensory.md:15 klas:A -->
+<!-- fc id:T-45-006 sha:f2b3a50e src:manual/45-sensory.md:17 klas:A -->
 ### T-45-006 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -180,7 +180,7 @@
 
 ---
 
-<!-- fc id:T-45-008 sha:580cfcb3 src:manual/45-sensory.md:20 klas:E -->
+<!-- fc id:T-45-008 sha:580cfcb3 src:manual/45-sensory.md:21 klas:E -->
 ### T-45-008 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -324,7 +324,7 @@
 
 ---
 
-<!-- fc id:T-45-014 sha:2b579321 src:manual/45-sensory.md:31 klas:E -->
+<!-- fc id:T-45-014 sha:2b579321 src:manual/45-sensory.md:32 klas:E -->
 ### T-45-014 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -371,7 +371,7 @@
 
 ---
 
-<!-- fc id:T-45-016 sha:38cd9e74 src:manual/45-sensory.md:36 klas:F -->
+<!-- fc id:T-45-016 sha:38cd9e74 src:manual/45-sensory.md:37 klas:F -->
 ### T-45-016 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -419,7 +419,7 @@
 
 ---
 
-<!-- fc id:T-45-018 sha:0492acf0 src:manual/45-sensory.md:40 klas:E -->
+<!-- fc id:T-45-018 sha:0492acf0 src:manual/45-sensory.md:41 klas:E -->
 ### T-45-018 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -603,7 +603,7 @@
 
 ---
 
-<!-- fc id:T-45-024 sha:9db68d88 src:manual/45-sensory.md:53 klas:E -->
+<!-- fc id:T-45-024 sha:9db68d88 src:manual/45-sensory.md:54 klas:E -->
 ### T-45-024 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -830,7 +830,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-032 sha:2a17512d src:manual/45-sensory.md:75 klas:E -->
+<!-- fc id:T-45-032 sha:2a17512d src:manual/45-sensory.md:77 klas:E -->
 ### T-45-032 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -886,7 +886,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-034 sha:59ffce0b src:manual/45-sensory.md:80 klas:E -->
+<!-- fc id:T-45-034 sha:59ffce0b src:manual/45-sensory.md:82 klas:E -->
 ### T-45-034 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -996,7 +996,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-038 sha:b08e4e7b src:manual/45-sensory.md:88 klas:E -->
+<!-- fc id:T-45-038 sha:b08e4e7b src:manual/45-sensory.md:89 klas:E -->
 ### T-45-038 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1148,7 +1148,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-044 sha:8856f975 src:manual/45-sensory.md:99 klas:E -->
+<!-- fc id:T-45-044 sha:8856f975 src:manual/45-sensory.md:100 klas:E -->
 ### T-45-044 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1192,7 +1192,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-046 sha:a05495f4 src:manual/45-sensory.md:102 klas:E -->
+<!-- fc id:T-45-046 sha:a05495f4 src:manual/45-sensory.md:103 klas:E -->
 ### T-45-046 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1238,7 +1238,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-048 sha:d582c0f3 src:manual/45-sensory.md:106 klas:E -->
+<!-- fc id:T-45-048 sha:d582c0f3 src:manual/45-sensory.md:107 klas:E -->
 ### T-45-048 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1333,7 +1333,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-052 sha:7cfc8b8b src:manual/45-sensory.md:117 klas:A -->
+<!-- fc id:T-45-052 sha:7cfc8b8b src:manual/45-sensory.md:118 klas:A -->
 ### T-45-052 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1387,7 +1387,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-054 sha:84afa568 src:manual/45-sensory.md:121 klas:E -->
+<!-- fc id:T-45-054 sha:84afa568 src:manual/45-sensory.md:122 klas:E -->
 ### T-45-054 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1447,7 +1447,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-056 sha:d1a6cace src:manual/45-sensory.md:128 klas:E -->
+<!-- fc id:T-45-056 sha:d1a6cace src:manual/45-sensory.md:129 klas:E -->
 ### T-45-056 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1523,7 +1523,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-059 sha:b3106cdf src:manual/45-sensory.md:132 klas:E -->
+<!-- fc id:T-45-059 sha:b3106cdf src:manual/45-sensory.md:134 klas:E -->
 ### T-45-059 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1581,7 +1581,7 @@ PCNT або RMT (розділ 33), а не цикл із опитуванням.
 
 ---
 
-<!-- fc id:T-45-061 sha:76e959f7 src:manual/45-sensory.md:136 klas:E -->
+<!-- fc id:T-45-061 sha:76e959f7 src:manual/45-sensory.md:137 klas:E -->
 ### T-45-061 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1725,7 +1725,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-067 sha:43f74f18 src:manual/45-sensory.md:155 klas:E -->
+<!-- fc id:T-45-067 sha:43f74f18 src:manual/45-sensory.md:156 klas:E -->
 ### T-45-067 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1817,7 +1817,7 @@ $GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,...
 
 ---
 
-<!-- fc id:T-45-071 sha:0145e3dd src:manual/45-sensory.md:166 klas:E -->
+<!-- fc id:T-45-071 sha:0145e3dd src:manual/45-sensory.md:167 klas:E -->
 ### T-45-071 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**
@@ -1987,7 +1987,7 @@ DS18B20 — це код помилки (розділ 37).
 
 ---
 
-<!-- fc id:T-45-078 sha:2bd4ee43 src:manual/45-sensory.md:187 klas:E -->
+<!-- fc id:T-45-078 sha:2bd4ee43 src:manual/45-sensory.md:188 klas:E -->
 ### T-45-078 · proza · `manual/45-sensory.md`
 
 **Твердження, коротко**

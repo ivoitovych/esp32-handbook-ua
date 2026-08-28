@@ -32,7 +32,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-002 sha:f593172f src:manual/13-pio.md:3 klas:A -->
+<!-- fc id:T-13-002 sha:f593172f src:manual/13-pio.md:5 klas:A -->
 ### T-13-002 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -114,7 +114,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-005 sha:098cf69e src:manual/13-pio.md:13 klas:A -->
+<!-- fc id:T-13-005 sha:098cf69e src:manual/13-pio.md:14 klas:A -->
 ### T-13-005 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -316,7 +316,7 @@ PlatformIO — розширення для VS Code, що керує вбудов
 
 ---
 
-<!-- fc id:T-13-013 sha:5c49975c src:manual/13-pio.md:31 klas:E -->
+<!-- fc id:T-13-013 sha:5c49975c src:manual/13-pio.md:32 klas:E -->
 ### T-13-013 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -404,7 +404,7 @@ git і повністю описує, чим збирається проєкт. 
 
 ---
 
-<!-- fc id:T-13-016 sha:6e6ff0ea src:manual/13-pio.md:39 klas:E -->
+<!-- fc id:T-13-016 sha:6e6ff0ea src:manual/13-pio.md:40 klas:E -->
 ### T-13-016 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -729,7 +729,7 @@ lib_deps =
 
 ---
 
-<!-- fc id:T-13-026 sha:a8551e95 src:manual/13-pio.md:77 klas:A -->
+<!-- fc id:T-13-026 sha:a8551e95 src:manual/13-pio.md:78 klas:A -->
 ### T-13-026 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1020,7 +1020,7 @@ platform = https://github.com/pioarduino/platform-espressif32/releases/download/
 
 ---
 
-<!-- fc id:T-13-037 sha:7934e141 src:manual/13-pio.md:109 klas:E -->
+<!-- fc id:T-13-037 sha:7934e141 src:manual/13-pio.md:110 klas:E -->
 ### T-13-037 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1250,7 +1250,7 @@ lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2
 
 ---
 
-<!-- fc id:T-13-046 sha:90d170e3 src:manual/13-pio.md:140 klas:F -->
+<!-- fc id:T-13-046 sha:90d170e3 src:manual/13-pio.md:142 klas:F -->
 ### T-13-046 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1298,7 +1298,7 @@ lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2
 
 ---
 
-<!-- fc id:T-13-048 sha:6c4a7027 src:manual/13-pio.md:145 klas:A -->
+<!-- fc id:T-13-048 sha:6c4a7027 src:manual/13-pio.md:147 klas:A -->
 ### T-13-048 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1351,7 +1351,7 @@ lib_deps = adafruit/Adafruit BME280 Library @ 2.2.2
 
 ---
 
-<!-- fc id:T-13-050 sha:326f3278 src:manual/13-pio.md:150 klas:F -->
+<!-- fc id:T-13-050 sha:326f3278 src:manual/13-pio.md:152 klas:F -->
 ### T-13-050 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1510,7 +1510,7 @@ stable.
 
 ---
 
-<!-- fc id:T-13-056 sha:36a4b4be src:manual/13-pio.md:170 klas:F -->
+<!-- fc id:T-13-056 sha:36a4b4be src:manual/13-pio.md:171 klas:F -->
 ### T-13-056 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1668,7 +1668,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-063 sha:24b7726c src:manual/13-pio.md:193 klas:F -->
+<!-- fc id:T-13-063 sha:24b7726c src:manual/13-pio.md:194 klas:F -->
 ### T-13-063 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1691,7 +1691,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-064 sha:71f8b903 src:manual/13-pio.md:193 klas:E -->
+<!-- fc id:T-13-064 sha:71f8b903 src:manual/13-pio.md:195 klas:E -->
 ### T-13-064 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**
@@ -1933,7 +1933,7 @@ PlatformIO виграє там, де головне — Arduino і бібліо�
 
 ---
 
-<!-- fc id:T-13-073 sha:03240a6a src:manual/13-pio.md:212 klas:E -->
+<!-- fc id:T-13-073 sha:03240a6a src:manual/13-pio.md:213 klas:E -->
 ### T-13-073 · proza · `manual/13-pio.md`
 
 **Твердження, коротко**

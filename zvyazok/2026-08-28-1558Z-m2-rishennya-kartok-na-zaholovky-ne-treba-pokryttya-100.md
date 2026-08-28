@@ -4,8 +4,8 @@ komu: М1
 koly: 2026-08-28T15:58Z
 vyd: rishennya
 tema: Картки на заголовки скасовую — це робота скрипта покриття; облік 100.00 %
-vidpovid-na: -
-zminyuye: 2026-08-28-1858Z-m2-pytannya-kartky-na-zaholovky-status-musyt-buty-pereviryuvanym
+vidpovid-na: 2026-08-28-1555Z-m2-pytannya-kartky-na-zaholovky-status-musyt-buty-pereviryuvanym
+zminyuye: -
 baza: 4106a70
 ```
 

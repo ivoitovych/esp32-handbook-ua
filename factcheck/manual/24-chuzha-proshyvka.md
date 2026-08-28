@@ -144,7 +144,7 @@
 
 ---
 
-<!-- fc id:T-24-007 sha:3314683c src:manual/24-chuzha-proshyvka.md:10 klas:E -->
+<!-- fc id:T-24-007 sha:3314683c src:manual/24-chuzha-proshyvka.md:11 klas:E -->
 ### T-24-007 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -244,13 +244,13 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
-- **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
+- **Розрахунок:**
+  таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  nvs               0x9000 + 0x6000          = 0xF000
+  phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  0x10000 / 1024                             = 64 КБ
+  
+  сектор 0x1000 / 1024 = 4 КБ
 - **Спосіб і дата:** make arytmetyka, 2026-08-26
 - **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
 Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
@@ -346,7 +346,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-24-014 sha:a0df9f73 src:manual/24-chuzha-proshyvka.md:26 klas:F -->
+<!-- fc id:T-24-014 sha:a0df9f73 src:manual/24-chuzha-proshyvka.md:27 klas:F -->
 ### T-24-014 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -616,7 +616,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-024 sha:1c8bfbed src:manual/24-chuzha-proshyvka.md:48 klas:E -->
+<!-- fc id:T-24-024 sha:1c8bfbed src:manual/24-chuzha-proshyvka.md:49 klas:E -->
 ### T-24-024 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -678,7 +678,7 @@ strings -n 6 dump.bin | grep -iE "v[0-9]+\.[0-9]+|20[0-9]{2}-"
 
 ---
 
-<!-- fc id:T-24-026 sha:5fcc9dbe src:manual/24-chuzha-proshyvka.md:52 klas:E -->
+<!-- fc id:T-24-026 sha:5fcc9dbe src:manual/24-chuzha-proshyvka.md:53 klas:E -->
 ### T-24-026 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -768,7 +768,7 @@ required` — прямо називають, що пристрій робить 
 
 ---
 
-<!-- fc id:T-24-030 sha:08d57e94 src:manual/24-chuzha-proshyvka.md:63 klas:E -->
+<!-- fc id:T-24-030 sha:08d57e94 src:manual/24-chuzha-proshyvka.md:64 klas:E -->
 ### T-24-030 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ required` — прямо називають, що пристрій робить 
 
 ---
 
-<!-- fc id:T-24-032 sha:51ac664e src:manual/24-chuzha-proshyvka.md:66 klas:E -->
+<!-- fc id:T-24-032 sha:51ac664e src:manual/24-chuzha-proshyvka.md:67 klas:E -->
 ### T-24-032 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -943,13 +943,13 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
-- **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
+- **Розрахунок:**
+  таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  nvs               0x9000 + 0x6000          = 0xF000
+  phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  0x10000 / 1024                             = 64 КБ
+  
+  сектор 0x1000 / 1024 = 4 КБ
 - **Спосіб і дата:** make arytmetyka, 2026-08-26
 - **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
 Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
@@ -979,13 +979,13 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
 - **Джерело:** tools/arytmetyka.py; розкладка з components/partition_table/partitions_singleapp.csv (прохід 7)
-- **Дослівно з джерела:**
-  > таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
-  > nvs               0x9000 + 0x6000          = 0xF000
-  > phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
-  > 0x10000 / 1024                             = 64 КБ
-  > 
-  > сектор 0x1000 / 1024 = 4 КБ
+- **Розрахунок:**
+  таблиця розділів  0x8000 + 0x1000 (сектор) = 0x9000  → перший розділ
+  nvs               0x9000 + 0x6000          = 0xF000
+  phy_init          0xF000 + 0x1000          = 0x10000 → застосунок
+  0x10000 / 1024                             = 64 КБ
+  
+  сектор 0x1000 / 1024 = 4 КБ
 - **Спосіб і дата:** make arytmetyka, 2026-08-26
 - **Нотатка:** Замикає ланцюжок, який книга досі подавала трьома окремими твердженнями в розділах 16, 18 і 19: чому таблиця розділів займає цілий сектор, чому наступний розділ не може починатися раніше ніж `0x9000`, і звідки береться «близько 64 КБ службових».
 Тепер це один перерахунок із п'яти кроків, і кожен крок видимий. Розмір розділів узято з `partitions_singleapp.csv` ESP-IDF (прохід 7), тобто арифметика спирається на звірені числа, а не на самі себе.
@@ -1024,7 +1024,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-039 sha:a597c836 src:manual/24-chuzha-proshyvka.md:84 klas:F -->
+<!-- fc id:T-24-039 sha:a597c836 src:manual/24-chuzha-proshyvka.md:85 klas:F -->
 ### T-24-039 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1048,7 +1048,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-040 sha:68f95422 src:manual/24-chuzha-proshyvka.md:84 klas:F -->
+<!-- fc id:T-24-040 sha:68f95422 src:manual/24-chuzha-proshyvka.md:86 klas:F -->
 ### T-24-040 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1253,7 +1253,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-049 sha:61bbee4a src:manual/24-chuzha-proshyvka.md:113 klas:E -->
+<!-- fc id:T-24-049 sha:61bbee4a src:manual/24-chuzha-proshyvka.md:115 klas:E -->
 ### T-24-049 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1419,7 +1419,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-056 sha:e018c622 src:manual/24-chuzha-proshyvka.md:140 klas:E -->
+<!-- fc id:T-24-056 sha:e018c622 src:manual/24-chuzha-proshyvka.md:141 klas:E -->
 ### T-24-056 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1446,7 +1446,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-057 sha:a4f46dd1 src:manual/24-chuzha-proshyvka.md:140 klas:A -->
+<!-- fc id:T-24-057 sha:a4f46dd1 src:manual/24-chuzha-proshyvka.md:143 klas:A -->
 ### T-24-057 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1659,7 +1659,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-066 sha:7a6148ae src:manual/24-chuzha-proshyvka.md:172 klas:E -->
+<!-- fc id:T-24-066 sha:7a6148ae src:manual/24-chuzha-proshyvka.md:173 klas:E -->
 ### T-24-066 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1728,7 +1728,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-068 sha:60caff3a src:manual/24-chuzha-proshyvka.md:175 klas:A -->
+<!-- fc id:T-24-068 sha:60caff3a src:manual/24-chuzha-proshyvka.md:176 klas:A -->
 ### T-24-068 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1807,7 +1807,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-071 sha:a888acf1 src:manual/24-chuzha-proshyvka.md:181 klas:E -->
+<!-- fc id:T-24-071 sha:a888acf1 src:manual/24-chuzha-proshyvka.md:183 klas:E -->
 ### T-24-071 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**
@@ -1831,7 +1831,7 @@ esptool --port /dev/ttyUSB0 read-flash 0x9000 0x6000 nvs.bin
 
 ---
 
-<!-- fc id:T-24-072 sha:e5ffb553 src:manual/24-chuzha-proshyvka.md:181 klas:F -->
+<!-- fc id:T-24-072 sha:e5ffb553 src:manual/24-chuzha-proshyvka.md:183 klas:F -->
 ### T-24-072 · proza · `manual/24-chuzha-proshyvka.md`
 
 **Твердження, коротко**

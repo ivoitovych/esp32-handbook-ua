@@ -452,7 +452,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-016 sha:afe4ddd9 src:manual/31-freertos.md:53 klas:E -->
+<!-- fc id:T-31-016 sha:afe4ddd9 src:manual/31-freertos.md:54 klas:E -->
 ### T-31-016 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -560,7 +560,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:63 klas:A -->
+<!-- fc id:T-31-020 sha:685aa109 src:manual/31-freertos.md:65 klas:A -->
 ### T-31-020 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -759,7 +759,7 @@ while (1) {
 
 ---
 
-<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:78 klas:A -->
+<!-- fc id:T-31-027 sha:f4d5df38 src:manual/31-freertos.md:79 klas:A -->
 ### T-31-027 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -995,7 +995,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:101 klas:A -->
+<!-- fc id:T-31-035 sha:7b9b18a5 src:manual/31-freertos.md:102 klas:A -->
 ### T-31-035 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1054,7 +1054,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-037 sha:5c5bd338 src:manual/31-freertos.md:105 klas:E -->
+<!-- fc id:T-31-037 sha:5c5bd338 src:manual/31-freertos.md:106 klas:E -->
 ### T-31-037 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1079,7 +1079,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ---
 
-<!-- fc id:T-31-038 sha:7f269ba1 src:manual/31-freertos.md:105 klas:E -->
+<!-- fc id:T-31-038 sha:7f269ba1 src:manual/31-freertos.md:107 klas:E -->
 ### T-31-038 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1930,7 +1930,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-067 sha:440211f9 src:manual/31-freertos.md:199 klas:A -->
+<!-- fc id:T-31-067 sha:440211f9 src:manual/31-freertos.md:201 klas:A -->
 ### T-31-067 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -1996,7 +1996,7 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
 
 ---
 
-<!-- fc id:T-31-069 sha:6027e481 src:manual/31-freertos.md:205 klas:A -->
+<!-- fc id:T-31-069 sha:6027e481 src:manual/31-freertos.md:206 klas:A -->
 ### T-31-069 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2240,7 +2240,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-076 sha:1b28ad63 src:manual/31-freertos.md:224 klas:A -->
+<!-- fc id:T-31-076 sha:1b28ad63 src:manual/31-freertos.md:225 klas:A -->
 ### T-31-076 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2269,7 +2269,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-077 sha:11cc8e46 src:manual/31-freertos.md:224 klas:A -->
+<!-- fc id:T-31-077 sha:11cc8e46 src:manual/31-freertos.md:226 klas:A -->
 ### T-31-077 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2325,7 +2325,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-079 sha:77b3e0ed src:manual/31-freertos.md:230 klas:A -->
+<!-- fc id:T-31-079 sha:77b3e0ed src:manual/31-freertos.md:231 klas:A -->
 ### T-31-079 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**
@@ -2394,7 +2394,7 @@ static void IRAM_ATTR gpio_isr(void *arg) {
 
 ---
 
-<!-- fc id:T-31-081 sha:cb41e800 src:manual/31-freertos.md:234 klas:F -->
+<!-- fc id:T-31-081 sha:cb41e800 src:manual/31-freertos.md:235 klas:F -->
 ### T-31-081 · proza · `manual/31-freertos.md`
 
 **Твердження, коротко**

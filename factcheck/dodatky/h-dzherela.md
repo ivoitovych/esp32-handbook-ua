@@ -78,7 +78,7 @@
 
 ---
 
-<!-- fc id:T-H-004 sha:3adcb79c src:dodatky/h-dzherela.md:11 klas:E -->
+<!-- fc id:T-H-004 sha:3adcb79c src:dodatky/h-dzherela.md:12 klas:E -->
 ### T-H-004 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -124,7 +124,7 @@
 
 ---
 
-<!-- fc id:T-H-006 sha:452ce777 src:dodatky/h-dzherela.md:18 klas:F -->
+<!-- fc id:T-H-006 sha:452ce777 src:dodatky/h-dzherela.md:19 klas:F -->
 ### T-H-006 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -192,7 +192,7 @@
 
 ---
 
-<!-- fc id:T-H-009 sha:97520e07 src:dodatky/h-dzherela.md:25 klas:E -->
+<!-- fc id:T-H-009 sha:97520e07 src:dodatky/h-dzherela.md:26 klas:E -->
 ### T-H-009 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-H-010 sha:d0568dd7 src:dodatky/h-dzherela.md:25 klas:F -->
+<!-- fc id:T-H-010 sha:d0568dd7 src:dodatky/h-dzherela.md:27 klas:F -->
 ### T-H-010 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -261,7 +261,7 @@
 
 ---
 
-<!-- fc id:T-H-012 sha:706ec1e9 src:dodatky/h-dzherela.md:29 klas:E -->
+<!-- fc id:T-H-012 sha:706ec1e9 src:dodatky/h-dzherela.md:30 klas:E -->
 ### T-H-012 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -313,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-H-014 sha:9c449739 src:dodatky/h-dzherela.md:33 klas:A -->
+<!-- fc id:T-H-014 sha:9c449739 src:dodatky/h-dzherela.md:34 klas:A -->
 ### T-H-014 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -365,7 +365,7 @@
 
 ---
 
-<!-- fc id:T-H-016 sha:40149fc6 src:dodatky/h-dzherela.md:37 klas:E -->
+<!-- fc id:T-H-016 sha:40149fc6 src:dodatky/h-dzherela.md:38 klas:E -->
 ### T-H-016 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -463,7 +463,7 @@
 
 ---
 
-<!-- fc id:T-H-020 sha:235314d1 src:dodatky/h-dzherela.md:46 klas:F -->
+<!-- fc id:T-H-020 sha:235314d1 src:dodatky/h-dzherela.md:47 klas:F -->
 ### T-H-020 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -725,7 +725,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-030 sha:7acccaa1 src:dodatky/h-dzherela.md:79 klas:E -->
+<!-- fc id:T-H-030 sha:7acccaa1 src:dodatky/h-dzherela.md:81 klas:E -->
 ### T-H-030 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -752,7 +752,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-031 sha:6c5b99f7 src:dodatky/h-dzherela.md:79 klas:E -->
+<!-- fc id:T-H-031 sha:6c5b99f7 src:dodatky/h-dzherela.md:82 klas:E -->
 ### T-H-031 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -779,7 +779,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-032 sha:d3e3bb5b src:dodatky/h-dzherela.md:79 klas:E -->
+<!-- fc id:T-H-032 sha:d3e3bb5b src:dodatky/h-dzherela.md:83 klas:E -->
 ### T-H-032 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -806,7 +806,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-033 sha:73ea27e7 src:dodatky/h-dzherela.md:79 klas:E -->
+<!-- fc id:T-H-033 sha:73ea27e7 src:dodatky/h-dzherela.md:84 klas:E -->
 ### T-H-033 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -833,7 +833,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-034 sha:f29f5462 src:dodatky/h-dzherela.md:79 klas:E -->
+<!-- fc id:T-H-034 sha:f29f5462 src:dodatky/h-dzherela.md:85 klas:E -->
 ### T-H-034 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -908,7 +908,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-037 sha:b24df478 src:dodatky/h-dzherela.md:88 klas:E -->
+<!-- fc id:T-H-037 sha:b24df478 src:dodatky/h-dzherela.md:89 klas:E -->
 ### T-H-037 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -999,7 +999,7 @@ MAX485).
 
 ---
 
-<!-- fc id:T-H-041 sha:38f042ae src:dodatky/h-dzherela.md:100 klas:E -->
+<!-- fc id:T-H-041 sha:38f042ae src:dodatky/h-dzherela.md:101 klas:E -->
 ### T-H-041 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**
@@ -1066,7 +1066,7 @@ Espressif Systems і виробників компонентів. Вони на�
 
 ---
 
-<!-- fc id:T-H-044 sha:c95feec0 src:dodatky/h-dzherela.md:108 klas:E -->
+<!-- fc id:T-H-044 sha:c95feec0 src:dodatky/h-dzherela.md:109 klas:E -->
 ### T-H-044 · proza · `dodatky/h-dzherela.md`
 
 **Твердження, коротко**

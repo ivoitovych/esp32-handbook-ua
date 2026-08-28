@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-58-004 sha:eb495ce7 src:manual/58-dovedennya.md:8 klas:E -->
+<!-- fc id:T-58-004 sha:eb495ce7 src:manual/58-dovedennya.md:9 klas:E -->
 ### T-58-004 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -118,7 +118,7 @@
 
 ---
 
-<!-- fc id:T-58-006 sha:73f5f650 src:manual/58-dovedennya.md:11 klas:E -->
+<!-- fc id:T-58-006 sha:73f5f650 src:manual/58-dovedennya.md:12 klas:E -->
 ### T-58-006 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -229,7 +229,7 @@
 
 ---
 
-<!-- fc id:T-58-011 sha:170be86c src:manual/58-dovedennya.md:25 klas:E -->
+<!-- fc id:T-58-011 sha:170be86c src:manual/58-dovedennya.md:26 klas:E -->
 ### T-58-011 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-58-016 sha:71b7da0f src:manual/58-dovedennya.md:35 klas:E -->
+<!-- fc id:T-58-016 sha:71b7da0f src:manual/58-dovedennya.md:36 klas:E -->
 ### T-58-016 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -699,7 +699,7 @@
 
 ---
 
-<!-- fc id:T-58-031 sha:a63fb429 src:manual/58-dovedennya.md:70 klas:E -->
+<!-- fc id:T-58-031 sha:a63fb429 src:manual/58-dovedennya.md:71 klas:E -->
 ### T-58-031 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -745,7 +745,7 @@
 
 ---
 
-<!-- fc id:T-58-033 sha:4efddeef src:manual/58-dovedennya.md:74 klas:E -->
+<!-- fc id:T-58-033 sha:4efddeef src:manual/58-dovedennya.md:75 klas:E -->
 ### T-58-033 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -768,7 +768,7 @@
 
 ---
 
-<!-- fc id:T-58-034 sha:ce3a7012 src:manual/58-dovedennya.md:74 klas:E -->
+<!-- fc id:T-58-034 sha:ce3a7012 src:manual/58-dovedennya.md:76 klas:E -->
 ### T-58-034 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -902,7 +902,7 @@
 
 ---
 
-<!-- fc id:T-58-040 sha:2dd219cc src:manual/58-dovedennya.md:87 klas:E -->
+<!-- fc id:T-58-040 sha:2dd219cc src:manual/58-dovedennya.md:88 klas:E -->
 ### T-58-040 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -1071,7 +1071,7 @@
 
 ---
 
-<!-- fc id:T-58-046 sha:316da4c4 src:manual/58-dovedennya.md:99 klas:E -->
+<!-- fc id:T-58-046 sha:316da4c4 src:manual/58-dovedennya.md:100 klas:E -->
 ### T-58-046 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -1746,7 +1746,7 @@
 
 ---
 
-<!-- fc id:T-58-072 sha:64202006 src:manual/58-dovedennya.md:162 klas:E -->
+<!-- fc id:T-58-072 sha:64202006 src:manual/58-dovedennya.md:163 klas:E -->
 ### T-58-072 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**
@@ -1791,7 +1791,7 @@
 
 ---
 
-<!-- fc id:T-58-074 sha:bd1c3e6c src:manual/58-dovedennya.md:165 klas:E -->
+<!-- fc id:T-58-074 sha:bd1c3e6c src:manual/58-dovedennya.md:166 klas:E -->
 ### T-58-074 · proza · `manual/58-dovedennya.md`
 
 **Твердження, коротко**

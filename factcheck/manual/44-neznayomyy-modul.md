@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-44-002 sha:d9bca4d6 src:manual/44-neznayomyy-modul.md:3 klas:E -->
+<!-- fc id:T-44-002 sha:d9bca4d6 src:manual/44-neznayomyy-modul.md:4 klas:E -->
 ### T-44-002 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-44-005 sha:a94ad383 src:manual/44-neznayomyy-modul.md:11 klas:A -->
+<!-- fc id:T-44-005 sha:a94ad383 src:manual/44-neznayomyy-modul.md:12 klas:A -->
 ### T-44-005 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -194,7 +194,7 @@
 
 ---
 
-<!-- fc id:T-44-009 sha:3cd959de src:manual/44-neznayomyy-modul.md:17 klas:E -->
+<!-- fc id:T-44-009 sha:3cd959de src:manual/44-neznayomyy-modul.md:18 klas:E -->
 ### T-44-009 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -303,7 +303,7 @@
 
 ---
 
-<!-- fc id:T-44-013 sha:b49e05ea src:manual/44-neznayomyy-modul.md:25 klas:C -->
+<!-- fc id:T-44-013 sha:b49e05ea src:manual/44-neznayomyy-modul.md:26 klas:F -->
 ### T-44-013 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -322,10 +322,10 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Клас:** 🔴 F — не звірено
 - **Спосіб і дата:** Пошук у datasheet модуля
 - **Що шукати в джерелі:** Модуль живлення, стабілізатор 5 В, мікросхема 3.3 В
-- **Нотатка:** Твердження про різницю напруги на модулі (5 В) та мікросхемі (3.3 В). Джерелом мав би бути datasheet конкретного модуля. Не знайшов джерела.
+- **Нотатка:** Твердження про різницю напруги на модулі (5 В) та мікросхемі (3.3 В). Джерелом мав би бути datasheet конкретного модуля. Не знайшов джерела. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
 - **Прохід:** m2-97-vybirka
 
 ---
@@ -357,7 +357,7 @@
 
 ---
 
-<!-- fc id:T-44-015 sha:208df048 src:manual/44-neznayomyy-modul.md:32 klas:C -->
+<!-- fc id:T-44-015 sha:208df048 src:manual/44-neznayomyy-modul.md:32 klas:E -->
 ### T-44-015 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -386,20 +386,17 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
-- **Спосіб і дата:** Загальна рекомендація практики електроніки для модулів
-- **Нотатка:** Твердження описує стандартну практику роботи з модулями без вбудованого
-стабілізатора напруги. Якщо на модулі немає стабілізатора, це означає,
-що вона працює від тієї напруги, яка подається на VCC, і логічні
-рівні відповідають цій напрузі. При напруженню 3.3 В логічні рівні
-становитимуть 3.3 В. Це загальновідома рекомендація, але перводжерело
-(специфічний datasheet якоїсь мікросхеми, що встановлюється на модулі)
-не названо. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
-- **Прохід:** m2-93-vybirka
+- **Клас:** ⚪ E — сигналу для звірки в тексті немає — присвоєно механічно, не перевірено
+- **Джерело:** —
+- **Дослівно з джерела:**
+  > —
+- **Спосіб і дата:** Немає зовнішнього джерела для перевірки — див. нотатку.
+- **Нотатка:** Рядки таблиці «Що на платі модуля → Живлення → Сигнали» (К14, рядки 19–23) — це авторська схема категоризації **сторонніх** модулів за трьома типовими конструкціями, а не вимірювана характеристика конкретної деталі. Жоден виробник не публікує «datasheet на категорію модулів». Той самий клас E застосовано до решти рядків цієї таблиці (`T-K14-009`, `T-K14-010`, `T-K14-012`, `T-K14-013`) — записи нижче, щоб кожен рядок мав власний взірець.
+- **Прохід:** m2-20-rivni-i-klyuchi
 
 ---
 
-<!-- fc id:T-44-016 sha:c62854ef src:manual/44-neznayomyy-modul.md:32 klas:C -->
+<!-- fc id:T-44-016 sha:c62854ef src:manual/44-neznayomyy-modul.md:32 klas:F -->
 ### T-44-016 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -428,7 +425,7 @@
 
 **Доказ**
 
-- **Клас:** 🟡 C — вторинне — джерело не дістається звідси; URL записано, цитати немає
+- **Клас:** 🔴 F — не звірено
 - **Спосіб і дата:** Загальна рекомендація практики електроніки для модулів
 - **Нотатка:** Твердження описує стандартну практику роботи з модулями без вбудованого
 стабілізатора напруги. Якщо на модулі немає стабілізатора, це означає,
@@ -436,7 +433,7 @@
 рівні відповідають цій напрузі. При напруженню 3.3 В логічні рівні
 становитимуть 3.3 В. Це загальновідома рекомендація, але перводжерело
 (специфічний datasheet якоїсь мікросхеми, що встановлюється на модулі)
-не названо. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+не названо. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого. | 2026-08-28, §5 аудиту: клас named-unreachable (C) вимагає НАЗВАНОГО документа — у цьому записі його не було, стояла лише тема в look_for. За власним законом: не можеш назвати документ — це не C, а unverified. Тему збережено в look_for як підказку, куди дивитися, але це не наряд.
 - **Прохід:** m2-93-vybirka
 
 ---
@@ -640,7 +637,7 @@
 
 ---
 
-<!-- fc id:T-44-023 sha:5d4ba683 src:manual/44-neznayomyy-modul.md:42 klas:A -->
+<!-- fc id:T-44-023 sha:5d4ba683 src:manual/44-neznayomyy-modul.md:43 klas:A -->
 ### T-44-023 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -714,7 +711,7 @@ datasheet, а не за розташуванням написів (розділ 
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter»
+- **Джерело:** HC-SR04 Ultrasonic Ranging Module — datasheet, розділ «Electric Parameter» (кеш: dzherela-kesh/hc-sr04.pdf)
 - **Дослівно з джерела:**
   > Working Voltage
   > DC 5 V
@@ -731,7 +728,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-026 sha:72fb7080 src:manual/44-neznayomyy-modul.md:50 klas:B -->
+<!-- fc id:T-44-026 sha:72fb7080 src:manual/44-neznayomyy-modul.md:51 klas:B -->
 ### T-44-026 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -761,7 +758,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-027 sha:c7af57b1 src:manual/44-neznayomyy-modul.md:50 klas:E -->
+<!-- fc id:T-44-027 sha:c7af57b1 src:manual/44-neznayomyy-modul.md:51 klas:E -->
 ### T-44-027 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1326,7 +1323,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-043 sha:eb95e6a4 src:manual/44-neznayomyy-modul.md:67 klas:E -->
+<!-- fc id:T-44-043 sha:eb95e6a4 src:manual/44-neznayomyy-modul.md:68 klas:E -->
 ### T-44-043 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1518,7 +1515,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-051 sha:5ccad1ee src:manual/44-neznayomyy-modul.md:89 klas:E -->
+<!-- fc id:T-44-051 sha:5ccad1ee src:manual/44-neznayomyy-modul.md:90 klas:E -->
 ### T-44-051 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1616,7 +1613,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-055 sha:d11ee129 src:manual/44-neznayomyy-modul.md:97 klas:F -->
+<!-- fc id:T-44-055 sha:d11ee129 src:manual/44-neznayomyy-modul.md:99 klas:F -->
 ### T-44-055 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1844,7 +1841,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-065 sha:a736b732 src:manual/44-neznayomyy-modul.md:127 klas:E -->
+<!-- fc id:T-44-065 sha:a736b732 src:manual/44-neznayomyy-modul.md:129 klas:E -->
 ### T-44-065 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1913,7 +1910,7 @@ AVR і руйнівно тут (розділ 37).
 
 ---
 
-<!-- fc id:T-44-068 sha:a890f9af src:manual/44-neznayomyy-modul.md:135 klas:E -->
+<!-- fc id:T-44-068 sha:a890f9af src:manual/44-neznayomyy-modul.md:136 klas:E -->
 ### T-44-068 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2133,7 +2130,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-075 sha:e0f582c1 src:manual/44-neznayomyy-modul.md:151 klas:E -->
+<!-- fc id:T-44-075 sha:e0f582c1 src:manual/44-neznayomyy-modul.md:153 klas:E -->
 ### T-44-075 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2185,7 +2182,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-077 sha:9ce6f2e8 src:manual/44-neznayomyy-modul.md:158 klas:E -->
+<!-- fc id:T-44-077 sha:9ce6f2e8 src:manual/44-neznayomyy-modul.md:159 klas:E -->
 ### T-44-077 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2213,7 +2210,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-078 sha:e3134097 src:manual/44-neznayomyy-modul.md:158 klas:F -->
+<!-- fc id:T-44-078 sha:e3134097 src:manual/44-neznayomyy-modul.md:160 klas:F -->
 ### T-44-078 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2241,7 +2238,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-079 sha:c37d7794 src:manual/44-neznayomyy-modul.md:158 klas:F -->
+<!-- fc id:T-44-079 sha:c37d7794 src:manual/44-neznayomyy-modul.md:161 klas:F -->
 ### T-44-079 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2269,7 +2266,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-080 sha:24c0f55b src:manual/44-neznayomyy-modul.md:158 klas:F -->
+<!-- fc id:T-44-080 sha:24c0f55b src:manual/44-neznayomyy-modul.md:162 klas:F -->
 ### T-44-080 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2297,7 +2294,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-081 sha:246ff7c6 src:manual/44-neznayomyy-modul.md:158 klas:E -->
+<!-- fc id:T-44-081 sha:246ff7c6 src:manual/44-neznayomyy-modul.md:164 klas:E -->
 ### T-44-081 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -2325,7 +2322,7 @@ i2c_master_transmit_receive(dev, &reg, 1, buf, 3, pdMS_TO_TICKS(100));
 
 ---
 
-<!-- fc id:T-44-082 sha:6baed1bb src:manual/44-neznayomyy-modul.md:158 klas:E -->
+<!-- fc id:T-44-082 sha:6baed1bb src:manual/44-neznayomyy-modul.md:165 klas:E -->
 ### T-44-082 · proza · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**

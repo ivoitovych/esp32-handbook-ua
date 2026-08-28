@@ -50,7 +50,7 @@
 
 ---
 
-<!-- fc id:T-47-002 sha:cb3f2e6f src:manual/47-klyuchi.md:3 klas:E -->
+<!-- fc id:T-47-002 sha:cb3f2e6f src:manual/47-klyuchi.md:6 klas:E -->
 ### T-47-002 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -76,7 +76,7 @@
 
 ---
 
-<!-- fc id:T-47-003 sha:97cbd0cb src:manual/47-klyuchi.md:3 klas:E -->
+<!-- fc id:T-47-003 sha:97cbd0cb src:manual/47-klyuchi.md:7 klas:E -->
 ### T-47-003 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -172,7 +172,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH`
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH` (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > VDD3P3_CPU
   > High-level source current                                          —    40                    —     mA
@@ -215,7 +215,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH`
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH` (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > VDD3P3_CPU
   > High-level source current                                          —    40                    —     mA
@@ -676,7 +676,7 @@
 
 ---
 
-<!-- fc id:T-47-020 sha:0bdfee8a src:manual/47-klyuchi.md:30 klas:E -->
+<!-- fc id:T-47-020 sha:0bdfee8a src:manual/47-klyuchi.md:31 klas:E -->
 ### T-47-020 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1349,7 +1349,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-037 sha:7636d202 src:manual/47-klyuchi.md:56 klas:F -->
+<!-- fc id:T-47-037 sha:7636d202 src:manual/47-klyuchi.md:57 klas:F -->
 ### T-47-037 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1449,7 +1449,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-040 sha:9e49d8ce src:manual/47-klyuchi.md:64 klas:B -->
+<!-- fc id:T-47-040 sha:9e49d8ce src:manual/47-klyuchi.md:65 klas:B -->
 ### T-47-040 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1573,7 +1573,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-044 sha:7ed23363 src:manual/47-klyuchi.md:72 klas:E -->
+<!-- fc id:T-47-044 sha:7ed23363 src:manual/47-klyuchi.md:74 klas:E -->
 ### T-47-044 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1689,7 +1689,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-049 sha:ebb5508e src:manual/47-klyuchi.md:84 klas:B -->
+<!-- fc id:T-47-049 sha:ebb5508e src:manual/47-klyuchi.md:86 klas:B -->
 ### T-47-049 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1775,7 +1775,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-052 sha:bf6f4377 src:manual/47-klyuchi.md:94 klas:E -->
+<!-- fc id:T-47-052 sha:bf6f4377 src:manual/47-klyuchi.md:95 klas:E -->
 ### T-47-052 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -1821,7 +1821,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-054 sha:4b2fd267 src:manual/47-klyuchi.md:98 klas:E -->
+<!-- fc id:T-47-054 sha:4b2fd267 src:manual/47-klyuchi.md:100 klas:E -->
 ### T-47-054 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2105,7 +2105,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-066 sha:1b1c231b src:manual/47-klyuchi.md:124 klas:E -->
+<!-- fc id:T-47-066 sha:1b1c231b src:manual/47-klyuchi.md:125 klas:E -->
 ### T-47-066 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2155,7 +2155,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-068 sha:eb3a11a0 src:manual/47-klyuchi.md:130 klas:E -->
+<!-- fc id:T-47-068 sha:eb3a11a0 src:manual/47-klyuchi.md:132 klas:E -->
 ### T-47-068 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2204,7 +2204,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-070 sha:58592710 src:manual/47-klyuchi.md:136 klas:E -->
+<!-- fc id:T-47-070 sha:58592710 src:manual/47-klyuchi.md:137 klas:E -->
 ### T-47-070 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2259,7 +2259,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-072 sha:b88f4d23 src:manual/47-klyuchi.md:141 klas:E -->
+<!-- fc id:T-47-072 sha:b88f4d23 src:manual/47-klyuchi.md:142 klas:E -->
 ### T-47-072 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2307,7 +2307,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-074 sha:d55c3d3b src:manual/47-klyuchi.md:145 klas:E -->
+<!-- fc id:T-47-074 sha:d55c3d3b src:manual/47-klyuchi.md:147 klas:E -->
 ### T-47-074 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2354,7 +2354,7 @@ GPIO ─[100 Ом]┤ │ MOSFET, N-канальний, логічного рі�
 
 ---
 
-<!-- fc id:T-47-076 sha:e26cded7 src:manual/47-klyuchi.md:152 klas:E -->
+<!-- fc id:T-47-076 sha:e26cded7 src:manual/47-klyuchi.md:153 klas:E -->
 ### T-47-076 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2520,7 +2520,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-083 sha:0a0ab5d7 src:manual/47-klyuchi.md:173 klas:E -->
+<!-- fc id:T-47-083 sha:0a0ab5d7 src:manual/47-klyuchi.md:174 klas:E -->
 ### T-47-083 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2561,7 +2561,7 @@ datasheet.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause permanent damage to the
   > device.
@@ -2639,7 +2639,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-087 sha:c53f65ad src:manual/47-klyuchi.md:179 klas:B -->
+<!-- fc id:T-47-087 sha:c53f65ad src:manual/47-klyuchi.md:180 klas:B -->
 ### T-47-087 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2698,7 +2698,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-089 sha:76655c31 src:manual/47-klyuchi.md:184 klas:F -->
+<!-- fc id:T-47-089 sha:76655c31 src:manual/47-klyuchi.md:185 klas:F -->
 ### T-47-089 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2721,7 +2721,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-090 sha:90de30f1 src:manual/47-klyuchi.md:184 klas:E -->
+<!-- fc id:T-47-090 sha:90de30f1 src:manual/47-klyuchi.md:185 klas:E -->
 ### T-47-090 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2795,7 +2795,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-093 sha:fd896587 src:manual/47-klyuchi.md:192 klas:E -->
+<!-- fc id:T-47-093 sha:fd896587 src:manual/47-klyuchi.md:193 klas:E -->
 ### T-47-093 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2908,7 +2908,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-097 sha:9bdf03ad src:manual/47-klyuchi.md:206 klas:E -->
+<!-- fc id:T-47-097 sha:9bdf03ad src:manual/47-klyuchi.md:207 klas:E -->
 ### T-47-097 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -2955,7 +2955,7 @@ datasheet.
 
 ---
 
-<!-- fc id:T-47-099 sha:a28cf2d3 src:manual/47-klyuchi.md:210 klas:E -->
+<!-- fc id:T-47-099 sha:a28cf2d3 src:manual/47-klyuchi.md:211 klas:E -->
 ### T-47-099 · proza · `manual/47-klyuchi.md`
 
 **Твердження, коротко**

@@ -38,7 +38,7 @@ Espressif. Це нормативне ядро довідника (Р3): **усі
 
 ---
 
-<!-- fc id:T-11-002 sha:a6a27a96 src:manual/11-idf.md:3 klas:E -->
+<!-- fc id:T-11-002 sha:a6a27a96 src:manual/11-idf.md:4 klas:E -->
 ### T-11-002 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -62,7 +62,7 @@ Espressif. Це нормативне ядро довідника (Р3): **усі
 
 ---
 
-<!-- fc id:T-11-003 sha:2d573128 src:manual/11-idf.md:3 klas:E -->
+<!-- fc id:T-11-003 sha:2d573128 src:manual/11-idf.md:5 klas:E -->
 ### T-11-003 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -312,7 +312,7 @@ TCP/IP, TLS, файлові системи, система збирання.
 
 ---
 
-<!-- fc id:T-11-014 sha:232edefc src:manual/11-idf.md:29 klas:E -->
+<!-- fc id:T-11-014 sha:232edefc src:manual/11-idf.md:30 klas:E -->
 ### T-11-014 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -587,7 +587,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 
 ---
 
-<!-- fc id:T-11-024 sha:0228ed12 src:manual/11-idf.md:57 klas:F -->
+<!-- fc id:T-11-024 sha:0228ed12 src:manual/11-idf.md:58 klas:F -->
 ### T-11-024 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -726,7 +726,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-029 sha:22686ee3 src:manual/11-idf.md:76 klas:E -->
+<!-- fc id:T-11-029 sha:22686ee3 src:manual/11-idf.md:77 klas:E -->
 ### T-11-029 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -783,7 +783,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-031 sha:533b9d1b src:manual/11-idf.md:82 klas:A -->
+<!-- fc id:T-11-031 sha:533b9d1b src:manual/11-idf.md:83 klas:A -->
 ### T-11-031 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1044,7 +1044,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-039 sha:a90e26a1 src:manual/11-idf.md:94 klas:E -->
+<!-- fc id:T-11-039 sha:a90e26a1 src:manual/11-idf.md:95 klas:E -->
 ### T-11-039 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1166,7 +1166,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 
 ---
 
-<!-- fc id:T-11-044 sha:81a03404 src:manual/11-idf.md:109 klas:F -->
+<!-- fc id:T-11-044 sha:81a03404 src:manual/11-idf.md:110 klas:F -->
 ### T-11-044 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -1887,7 +1887,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-11-062 sha:8a5fcf22 src:manual/11-idf.md:144 klas:A -->
+<!-- fc id:T-11-062 sha:8a5fcf22 src:manual/11-idf.md:145 klas:A -->
 ### T-11-062 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2009,7 +2009,7 @@ my-project/
 
 ---
 
-<!-- fc id:T-11-066 sha:f1cf37ab src:manual/11-idf.md:169 klas:B -->
+<!-- fc id:T-11-066 sha:f1cf37ab src:manual/11-idf.md:170 klas:B -->
 ### T-11-066 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2674,7 +2674,7 @@ idf_component_register(
 
 ---
 
-<!-- fc id:T-11-082 sha:a1afae4e src:manual/11-idf.md:202 klas:E -->
+<!-- fc id:T-11-082 sha:a1afae4e src:manual/11-idf.md:204 klas:E -->
 ### T-11-082 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2879,7 +2879,7 @@ idf.py add-dependency "espressif/led_strip^3.0.3"
 
 ---
 
-<!-- fc id:T-11-089 sha:ee2d2f1b src:manual/11-idf.md:219 klas:E -->
+<!-- fc id:T-11-089 sha:ee2d2f1b src:manual/11-idf.md:220 klas:E -->
 ### T-11-089 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -2926,7 +2926,7 @@ idf.py add-dependency "espressif/led_strip^3.0.3"
 
 ---
 
-<!-- fc id:T-11-091 sha:30483f3f src:manual/11-idf.md:222 klas:A -->
+<!-- fc id:T-11-091 sha:30483f3f src:manual/11-idf.md:224 klas:A -->
 ### T-11-091 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3037,7 +3037,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-095 sha:7f37de94 src:manual/11-idf.md:236 klas:E -->
+<!-- fc id:T-11-095 sha:7f37de94 src:manual/11-idf.md:237 klas:E -->
 ### T-11-095 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3141,7 +3141,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:251 klas:F -->
+<!-- fc id:T-11-099 sha:009c5309 src:manual/11-idf.md:252 klas:F -->
 ### T-11-099 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3168,7 +3168,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-100 sha:04ac6509 src:manual/11-idf.md:251 klas:F -->
+<!-- fc id:T-11-100 sha:04ac6509 src:manual/11-idf.md:254 klas:F -->
 ### T-11-100 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3217,7 +3217,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-102 sha:b2bd2d4d src:manual/11-idf.md:260 klas:E -->
+<!-- fc id:T-11-102 sha:b2bd2d4d src:manual/11-idf.md:261 klas:E -->
 ### T-11-102 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**
@@ -3335,7 +3335,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 
 ---
 
-<!-- fc id:T-11-107 sha:c803dfc0 src:manual/11-idf.md:272 klas:E -->
+<!-- fc id:T-11-107 sha:c803dfc0 src:manual/11-idf.md:273 klas:E -->
 ### T-11-107 · proza · `manual/11-idf.md`
 
 **Твердження, коротко**

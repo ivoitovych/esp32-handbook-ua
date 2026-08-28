@@ -68,7 +68,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-003 sha:9e409f4f src:manual/34-uart.md:3 klas:F -->
+<!-- fc id:T-34-003 sha:9e409f4f src:manual/34-uart.md:4 klas:F -->
 ### T-34-003 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -143,7 +143,7 @@ UART — найстаріший і найнадійніший спосіб з'є
 
 ---
 
-<!-- fc id:T-34-006 sha:466d08cb src:manual/34-uart.md:13 klas:E -->
+<!-- fc id:T-34-006 sha:466d08cb src:manual/34-uart.md:14 klas:E -->
 ### T-34-006 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1036,7 +1036,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-032 sha:a2f28f6d src:manual/34-uart.md:72 klas:E -->
+<!-- fc id:T-34-032 sha:a2f28f6d src:manual/34-uart.md:74 klas:E -->
 ### T-34-032 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1134,7 +1134,7 @@ if (n > 0) obrobyty(buf, n);
 
 ---
 
-<!-- fc id:T-34-036 sha:9fe91835 src:manual/34-uart.md:80 klas:A -->
+<!-- fc id:T-34-036 sha:9fe91835 src:manual/34-uart.md:81 klas:A -->
 ### T-34-036 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1333,7 +1333,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-041 sha:41dd0a6c src:manual/34-uart.md:91 klas:A -->
+<!-- fc id:T-34-041 sha:41dd0a6c src:manual/34-uart.md:92 klas:A -->
 ### T-34-041 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1440,7 +1440,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-044 sha:f3a2d1cf src:manual/34-uart.md:100 klas:A -->
+<!-- fc id:T-34-044 sha:f3a2d1cf src:manual/34-uart.md:101 klas:A -->
 ### T-34-044 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1498,7 +1498,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-046 sha:2bfcc462 src:manual/34-uart.md:104 klas:E -->
+<!-- fc id:T-34-046 sha:2bfcc462 src:manual/34-uart.md:105 klas:E -->
 ### T-34-046 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1555,7 +1555,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-048 sha:41309921 src:manual/34-uart.md:108 klas:A -->
+<!-- fc id:T-34-048 sha:41309921 src:manual/34-uart.md:109 klas:A -->
 ### T-34-048 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1584,7 +1584,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-049 sha:e2d3420d src:manual/34-uart.md:108 klas:A -->
+<!-- fc id:T-34-049 sha:e2d3420d src:manual/34-uart.md:109 klas:A -->
 ### T-34-049 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1680,7 +1680,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-052 sha:c29b5808 src:manual/34-uart.md:117 klas:E -->
+<!-- fc id:T-34-052 sha:c29b5808 src:manual/34-uart.md:118 klas:E -->
 ### T-34-052 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1703,7 +1703,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 
 ---
 
-<!-- fc id:T-34-053 sha:9a286814 src:manual/34-uart.md:117 klas:E -->
+<!-- fc id:T-34-053 sha:9a286814 src:manual/34-uart.md:119 klas:E -->
 ### T-34-053 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1825,7 +1825,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-058 sha:b66992f9 src:manual/34-uart.md:132 klas:E -->
+<!-- fc id:T-34-058 sha:b66992f9 src:manual/34-uart.md:133 klas:E -->
 ### T-34-058 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1931,7 +1931,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-062 sha:5ac8c874 src:manual/34-uart.md:145 klas:E -->
+<!-- fc id:T-34-062 sha:5ac8c874 src:manual/34-uart.md:147 klas:E -->
 ### T-34-062 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -1977,7 +1977,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-064 sha:edbb6d64 src:manual/34-uart.md:149 klas:E -->
+<!-- fc id:T-34-064 sha:edbb6d64 src:manual/34-uart.md:150 klas:E -->
 ### T-34-064 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**
@@ -2022,7 +2022,7 @@ SCADA чи ПЛК без жодної домовленості про форма
 
 ---
 
-<!-- fc id:T-34-066 sha:b5b55989 src:manual/34-uart.md:153 klas:E -->
+<!-- fc id:T-34-066 sha:b5b55989 src:manual/34-uart.md:154 klas:E -->
 ### T-34-066 · proza · `manual/34-uart.md`
 
 **Твердження, коротко**

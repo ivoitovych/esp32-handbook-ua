@@ -54,7 +54,7 @@
 
 ---
 
-<!-- fc id:T-K13-003 sha:f7802856 src:kartky/k13-zhyvlennya.md:3 klas:E -->
+<!-- fc id:T-K13-003 sha:f7802856 src:kartky/k13-zhyvlennya.md:4 klas:E -->
 ### T-K13-003 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -466,7 +466,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (мін. 3.0 В для чипів із флешем), плюс допуск LDO-стабілізатора (~±0.1–0.2 В).
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (мін. 3.0 В для чипів із флешем), плюс допуск LDO-стабілізатора (~±0.1–0.2 В)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
   > Parameter: VDDA, VDD3P3_RTC, VDD3P3, VDD_SDIO (3.3 V mode)
@@ -736,7 +736,7 @@
 
 ---
 
-<!-- fc id:T-K13-023 sha:4eb6e021 src:kartky/k13-zhyvlennya.md:32 klas:E -->
+<!-- fc id:T-K13-023 sha:4eb6e021 src:kartky/k13-zhyvlennya.md:34 klas:E -->
 ### T-K13-023 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -766,7 +766,7 @@
 
 ---
 
-<!-- fc id:T-K13-024 sha:52672d62 src:kartky/k13-zhyvlennya.md:32 klas:E -->
+<!-- fc id:T-K13-024 sha:52672d62 src:kartky/k13-zhyvlennya.md:34 klas:E -->
 ### T-K13-024 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -796,7 +796,7 @@
 
 ---
 
-<!-- fc id:T-K13-025 sha:fff8a7b6 src:kartky/k13-zhyvlennya.md:32 klas:E -->
+<!-- fc id:T-K13-025 sha:fff8a7b6 src:kartky/k13-zhyvlennya.md:35 klas:E -->
 ### T-K13-025 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -832,7 +832,7 @@
 
 ---
 
-<!-- fc id:T-K13-026 sha:8824a145 src:kartky/k13-zhyvlennya.md:32 klas:E -->
+<!-- fc id:T-K13-026 sha:8824a145 src:kartky/k13-zhyvlennya.md:36 klas:E -->
 ### T-K13-026 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -862,7 +862,7 @@
 
 ---
 
-<!-- fc id:T-K13-027 sha:6b27e797 src:kartky/k13-zhyvlennya.md:32 klas:E -->
+<!-- fc id:T-K13-027 sha:6b27e797 src:kartky/k13-zhyvlennya.md:37 klas:E -->
 ### T-K13-027 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -906,7 +906,7 @@
 
 ---
 
-<!-- fc id:T-K13-028 sha:0aafbadb src:kartky/k13-zhyvlennya.md:32 klas:B -->
+<!-- fc id:T-K13-028 sha:0aafbadb src:kartky/k13-zhyvlennya.md:38 klas:B -->
 ### T-K13-028 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -933,7 +933,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (IVDD мін. 0.5 А), Table 5-4 «Current Consumption Depending on RF Modes» (передача 240 мА максимум під 50% duty cycle).
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (IVDD мін. 0.5 А), Table 5-4 «Current Consumption Depending on RF Modes» (передача 240 мА максимум під 50% duty cycle)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
   > Parameter: IVDD (Current delivered by external power supply)
@@ -950,7 +950,7 @@
 
 ---
 
-<!-- fc id:T-K13-029 sha:66f6e6e3 src:kartky/k13-zhyvlennya.md:32 klas:E -->
+<!-- fc id:T-K13-029 sha:66f6e6e3 src:kartky/k13-zhyvlennya.md:39 klas:E -->
 ### T-K13-029 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -993,7 +993,7 @@
 
 ---
 
-<!-- fc id:T-K13-030 sha:8cec71a5 src:kartky/k13-zhyvlennya.md:32 klas:E -->
+<!-- fc id:T-K13-030 sha:8cec71a5 src:kartky/k13-zhyvlennya.md:41 klas:E -->
 ### T-K13-030 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1043,7 +1043,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 (IVDD 0.5 А рекомендована) і Table 5-4 «Current Consumption Depending on RF Modes» (пік 240 мА).
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 (IVDD 0.5 А рекомендована) і Table 5-4 «Current Consumption Depending on RF Modes» (пік 240 мА)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
   > IVDD (Current delivered by external power supply)    Min: 0.5 A
@@ -1061,7 +1061,7 @@
 
 ---
 
-<!-- fc id:T-K13-032 sha:1b060403 src:kartky/k13-zhyvlennya.md:45 klas:E -->
+<!-- fc id:T-K13-032 sha:1b060403 src:kartky/k13-zhyvlennya.md:46 klas:E -->
 ### T-K13-032 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -1129,7 +1129,7 @@
 
 ---
 
-<!-- fc id:T-K13-035 sha:0f20ca15 src:kartky/k13-zhyvlennya.md:52 klas:F -->
+<!-- fc id:T-K13-035 sha:0f20ca15 src:kartky/k13-zhyvlennya.md:53 klas:F -->
 ### T-K13-035 · proza · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**

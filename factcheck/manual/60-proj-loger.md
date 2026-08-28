@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-60-002 sha:533db87a src:manual/60-proj-loger.md:3 klas:E -->
+<!-- fc id:T-60-002 sha:533db87a src:manual/60-proj-loger.md:4 klas:E -->
 ### T-60-002 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1886,7 +1886,7 @@ microSD це не коштує нічого — межа матриці 40 МГ�
 
 ---
 
-<!-- fc id:T-60-045 sha:b8cb5c30 src:manual/60-proj-loger.md:54 klas:B -->
+<!-- fc id:T-60-045 sha:b8cb5c30 src:manual/60-proj-loger.md:55 klas:B -->
 ### T-60-045 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1917,7 +1917,7 @@ microSD це не коштує нічого — межа матриці 40 МГ�
 
 ---
 
-<!-- fc id:T-60-046 sha:57e3b369 src:manual/60-proj-loger.md:54 klas:D -->
+<!-- fc id:T-60-046 sha:57e3b369 src:manual/60-proj-loger.md:56 klas:D -->
 ### T-60-046 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1992,7 +1992,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 ---
 
-<!-- fc id:T-60-048 sha:3cdb2281 src:manual/60-proj-loger.md:59 klas:A -->
+<!-- fc id:T-60-048 sha:3cdb2281 src:manual/60-proj-loger.md:60 klas:A -->
 ### T-60-048 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -2025,7 +2025,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 ---
 
-<!-- fc id:T-60-049 sha:42420ff3 src:manual/60-proj-loger.md:59 klas:A -->
+<!-- fc id:T-60-049 sha:42420ff3 src:manual/60-proj-loger.md:63 klas:A -->
 ### T-60-049 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -2191,7 +2191,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 ---
 
-<!-- fc id:T-60-053 sha:a08a1ced src:manual/60-proj-loger.md:76 klas:A -->
+<!-- fc id:T-60-053 sha:a08a1ced src:manual/60-proj-loger.md:78 klas:A -->
 ### T-60-053 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -2240,7 +2240,7 @@ classic — теж strapping-пін**, як і `GPIO2` на C3. Позначки
 
 ---
 
-<!-- fc id:T-60-054 sha:f1e6447c src:manual/60-proj-loger.md:76 klas:E -->
+<!-- fc id:T-60-054 sha:f1e6447c src:manual/60-proj-loger.md:80 klas:E -->
 ### T-60-054 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -2443,7 +2443,7 @@ strapping-пін `GPIO2` — це припустимо лише тому, що �
 
 ---
 
-<!-- fc id:T-60-061 sha:728d95b8 src:manual/60-proj-loger.md:91 klas:E -->
+<!-- fc id:T-60-061 sha:728d95b8 src:manual/60-proj-loger.md:92 klas:E -->
 ### T-60-061 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -2753,7 +2753,7 @@ strapping-пін `GPIO2` — це припустимо лише тому, що �
 
 ---
 
-<!-- fc id:T-60-071 sha:a503da18 src:manual/60-proj-loger.md:116 klas:E -->
+<!-- fc id:T-60-071 sha:a503da18 src:manual/60-proj-loger.md:118 klas:E -->
 ### T-60-071 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -3032,7 +3032,7 @@ strapping-пін `GPIO2` — це припустимо лише тому, що �
 
 ---
 
-<!-- fc id:T-60-079 sha:04d77d98 src:manual/60-proj-loger.md:166 klas:F -->
+<!-- fc id:T-60-079 sha:04d77d98 src:manual/60-proj-loger.md:167 klas:F -->
 ### T-60-079 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -3058,7 +3058,7 @@ strapping-пін `GPIO2` — це припустимо лише тому, що �
 
 ---
 
-<!-- fc id:T-60-080 sha:c59f8ae8 src:manual/60-proj-loger.md:166 klas:B -->
+<!-- fc id:T-60-080 sha:c59f8ae8 src:manual/60-proj-loger.md:169 klas:B -->
 ### T-60-080 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -3140,7 +3140,7 @@ Deep sleep — це перезавантаження: RAM втрачається
 
 ---
 
-<!-- fc id:T-60-083 sha:077ad9d7 src:manual/60-proj-loger.md:177 klas:A -->
+<!-- fc id:T-60-083 sha:077ad9d7 src:manual/60-proj-loger.md:178 klas:A -->
 ### T-60-083 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -3791,7 +3791,7 @@ sleep стирає RAM. Зникнення живлення — тим біль�
 
 ---
 
-<!-- fc id:T-60-103 sha:b0cfdae4 src:manual/60-proj-loger.md:277 klas:E -->
+<!-- fc id:T-60-103 sha:b0cfdae4 src:manual/60-proj-loger.md:278 klas:E -->
 ### T-60-103 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -5049,7 +5049,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-139 sha:6d2dba14 src:manual/60-proj-loger.md:345 klas:D -->
+<!-- fc id:T-60-139 sha:6d2dba14 src:manual/60-proj-loger.md:347 klas:D -->
 ### T-60-139 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -5099,7 +5099,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-140 sha:195b951b src:manual/60-proj-loger.md:345 klas:E -->
+<!-- fc id:T-60-140 sha:195b951b src:manual/60-proj-loger.md:348 klas:E -->
 ### T-60-140 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -5131,7 +5131,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-141 sha:126b1d9d src:manual/60-proj-loger.md:345 klas:E -->
+<!-- fc id:T-60-141 sha:126b1d9d src:manual/60-proj-loger.md:349 klas:E -->
 ### T-60-141 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -5163,7 +5163,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-142 sha:3b7a50dc src:manual/60-proj-loger.md:345 klas:E -->
+<!-- fc id:T-60-142 sha:3b7a50dc src:manual/60-proj-loger.md:350 klas:E -->
 ### T-60-142 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -5195,7 +5195,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-143 sha:58500cd8 src:manual/60-proj-loger.md:345 klas:B -->
+<!-- fc id:T-60-143 sha:58500cd8 src:manual/60-proj-loger.md:351 klas:B -->
 ### T-60-143 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -5239,7 +5239,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-144 sha:7f1d478f src:manual/60-proj-loger.md:345 klas:E -->
+<!-- fc id:T-60-144 sha:7f1d478f src:manual/60-proj-loger.md:353 klas:E -->
 ### T-60-144 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -5271,7 +5271,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-145 sha:47cb735d src:manual/60-proj-loger.md:345 klas:E -->
+<!-- fc id:T-60-145 sha:47cb735d src:manual/60-proj-loger.md:354 klas:E -->
 ### T-60-145 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -5303,7 +5303,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-146 sha:7fa10fa1 src:manual/60-proj-loger.md:345 klas:E -->
+<!-- fc id:T-60-146 sha:7fa10fa1 src:manual/60-proj-loger.md:355 klas:E -->
 ### T-60-146 · proza · `manual/60-proj-loger.md`
 
 **Твердження, коротко**

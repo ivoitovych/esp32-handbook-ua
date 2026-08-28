@@ -144,7 +144,7 @@
 
 ---
 
-<!-- fc id:T-UA--007 sha:14c55fa6 src:inserts/ua-market-2026-08.md:20 klas:E -->
+<!-- fc id:T-UA--007 sha:14c55fa6 src:inserts/ua-market-2026-08.md:21 klas:E -->
 ### T-UA--007 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-UA--009 sha:a7a7cd04 src:inserts/ua-market-2026-08.md:23 klas:E -->
+<!-- fc id:T-UA--009 sha:a7a7cd04 src:inserts/ua-market-2026-08.md:24 klas:E -->
 ### T-UA--009 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -300,7 +300,7 @@
 
 ---
 
-<!-- fc id:T-UA--014 sha:14b70cb0 src:inserts/ua-market-2026-08.md:35 klas:E -->
+<!-- fc id:T-UA--014 sha:14b70cb0 src:inserts/ua-market-2026-08.md:36 klas:E -->
 ### T-UA--014 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**
@@ -924,7 +924,7 @@ esptool --port /dev/ttyUSB0 flash-id    # звірити обсяг
 
 ---
 
-<!-- fc id:T-UA--036 sha:de674e32 src:inserts/ua-market-2026-08.md:80 klas:E -->
+<!-- fc id:T-UA--036 sha:de674e32 src:inserts/ua-market-2026-08.md:81 klas:E -->
 ### T-UA--036 · proza · `inserts/ua-market-2026-08.md`
 
 **Твердження, коротко**

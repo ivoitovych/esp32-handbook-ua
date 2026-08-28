@@ -50,7 +50,7 @@
 
 ---
 
-<!-- fc id:T-00-002 sha:ca6e373b src:manual/00-pro-dovidnyk.md:3 klas:E -->
+<!-- fc id:T-00-002 sha:ca6e373b src:manual/00-pro-dovidnyk.md:4 klas:E -->
 ### T-00-002 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -97,7 +97,7 @@
 
 ---
 
-<!-- fc id:T-00-004 sha:f1353432 src:manual/00-pro-dovidnyk.md:8 klas:E -->
+<!-- fc id:T-00-004 sha:f1353432 src:manual/00-pro-dovidnyk.md:9 klas:E -->
 ### T-00-004 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -194,7 +194,7 @@
 
 ---
 
-<!-- fc id:T-00-008 sha:3bcff441 src:manual/00-pro-dovidnyk.md:19 klas:E -->
+<!-- fc id:T-00-008 sha:3bcff441 src:manual/00-pro-dovidnyk.md:21 klas:E -->
 ### T-00-008 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -294,7 +294,7 @@
 
 ---
 
-<!-- fc id:T-00-012 sha:58e19103 src:manual/00-pro-dovidnyk.md:33 klas:E -->
+<!-- fc id:T-00-012 sha:58e19103 src:manual/00-pro-dovidnyk.md:34 klas:E -->
 ### T-00-012 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -319,7 +319,7 @@
 
 ---
 
-<!-- fc id:T-00-013 sha:b285a661 src:manual/00-pro-dovidnyk.md:33 klas:E -->
+<!-- fc id:T-00-013 sha:b285a661 src:manual/00-pro-dovidnyk.md:36 klas:E -->
 ### T-00-013 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -395,7 +395,7 @@
 
 ---
 
-<!-- fc id:T-00-016 sha:eeacb949 src:manual/00-pro-dovidnyk.md:42 klas:E -->
+<!-- fc id:T-00-016 sha:eeacb949 src:manual/00-pro-dovidnyk.md:43 klas:E -->
 ### T-00-016 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -419,7 +419,7 @@
 
 ---
 
-<!-- fc id:T-00-017 sha:22f636ff src:manual/00-pro-dovidnyk.md:42 klas:E -->
+<!-- fc id:T-00-017 sha:22f636ff src:manual/00-pro-dovidnyk.md:43 klas:E -->
 ### T-00-017 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -702,7 +702,7 @@
 
 ---
 
-<!-- fc id:T-00-027 sha:e8afeed9 src:manual/00-pro-dovidnyk.md:58 klas:E -->
+<!-- fc id:T-00-027 sha:e8afeed9 src:manual/00-pro-dovidnyk.md:60 klas:E -->
 ### T-00-027 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -730,7 +730,7 @@
 
 ---
 
-<!-- fc id:T-00-028 sha:1343f9de src:manual/00-pro-dovidnyk.md:58 klas:E -->
+<!-- fc id:T-00-028 sha:1343f9de src:manual/00-pro-dovidnyk.md:61 klas:E -->
 ### T-00-028 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -758,7 +758,7 @@
 
 ---
 
-<!-- fc id:T-00-029 sha:39e1b725 src:manual/00-pro-dovidnyk.md:58 klas:E -->
+<!-- fc id:T-00-029 sha:39e1b725 src:manual/00-pro-dovidnyk.md:62 klas:E -->
 ### T-00-029 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -786,7 +786,7 @@
 
 ---
 
-<!-- fc id:T-00-030 sha:bbf9f534 src:manual/00-pro-dovidnyk.md:58 klas:E -->
+<!-- fc id:T-00-030 sha:bbf9f534 src:manual/00-pro-dovidnyk.md:64 klas:E -->
 ### T-00-030 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -839,7 +839,7 @@
 
 ---
 
-<!-- fc id:T-00-032 sha:dcc29fe8 src:manual/00-pro-dovidnyk.md:67 klas:E -->
+<!-- fc id:T-00-032 sha:dcc29fe8 src:manual/00-pro-dovidnyk.md:70 klas:E -->
 ### T-00-032 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -890,7 +890,7 @@
 
 ---
 
-<!-- fc id:T-00-034 sha:d986cc28 src:manual/00-pro-dovidnyk.md:73 klas:E -->
+<!-- fc id:T-00-034 sha:d986cc28 src:manual/00-pro-dovidnyk.md:74 klas:E -->
 ### T-00-034 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -916,7 +916,7 @@
 
 ---
 
-<!-- fc id:T-00-035 sha:b3be506a src:manual/00-pro-dovidnyk.md:73 klas:E -->
+<!-- fc id:T-00-035 sha:b3be506a src:manual/00-pro-dovidnyk.md:76 klas:E -->
 ### T-00-035 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -942,7 +942,7 @@
 
 ---
 
-<!-- fc id:T-00-036 sha:ba51cd2b src:manual/00-pro-dovidnyk.md:73 klas:E -->
+<!-- fc id:T-00-036 sha:ba51cd2b src:manual/00-pro-dovidnyk.md:77 klas:E -->
 ### T-00-036 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -990,7 +990,7 @@
 
 ---
 
-<!-- fc id:T-00-038 sha:1f86e528 src:manual/00-pro-dovidnyk.md:82 klas:E -->
+<!-- fc id:T-00-038 sha:1f86e528 src:manual/00-pro-dovidnyk.md:83 klas:E -->
 ### T-00-038 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1038,7 +1038,7 @@
 
 ---
 
-<!-- fc id:T-00-040 sha:c7b4d776 src:manual/00-pro-dovidnyk.md:85 klas:E -->
+<!-- fc id:T-00-040 sha:c7b4d776 src:manual/00-pro-dovidnyk.md:88 klas:E -->
 ### T-00-040 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1087,7 +1087,7 @@
 
 ---
 
-<!-- fc id:T-00-042 sha:64fba6d2 src:manual/00-pro-dovidnyk.md:92 klas:E -->
+<!-- fc id:T-00-042 sha:64fba6d2 src:manual/00-pro-dovidnyk.md:93 klas:E -->
 ### T-00-042 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1208,7 +1208,7 @@
 
 ---
 
-<!-- fc id:T-00-047 sha:5c14ecfe src:manual/00-pro-dovidnyk.md:102 klas:E -->
+<!-- fc id:T-00-047 sha:5c14ecfe src:manual/00-pro-dovidnyk.md:105 klas:E -->
 ### T-00-047 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1235,7 +1235,7 @@
 
 ---
 
-<!-- fc id:T-00-048 sha:777010bd src:manual/00-pro-dovidnyk.md:102 klas:E -->
+<!-- fc id:T-00-048 sha:777010bd src:manual/00-pro-dovidnyk.md:107 klas:E -->
 ### T-00-048 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1310,7 +1310,7 @@
 
 ---
 
-<!-- fc id:T-00-051 sha:127301cd src:manual/00-pro-dovidnyk.md:110 klas:E -->
+<!-- fc id:T-00-051 sha:127301cd src:manual/00-pro-dovidnyk.md:112 klas:E -->
 ### T-00-051 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1386,7 +1386,7 @@
 
 ---
 
-<!-- fc id:T-00-054 sha:ab486569 src:manual/00-pro-dovidnyk.md:115 klas:E -->
+<!-- fc id:T-00-054 sha:ab486569 src:manual/00-pro-dovidnyk.md:116 klas:E -->
 ### T-00-054 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1412,7 +1412,7 @@
 
 ---
 
-<!-- fc id:T-00-055 sha:c4961875 src:manual/00-pro-dovidnyk.md:115 klas:E -->
+<!-- fc id:T-00-055 sha:c4961875 src:manual/00-pro-dovidnyk.md:117 klas:E -->
 ### T-00-055 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1461,7 +1461,7 @@
 
 ---
 
-<!-- fc id:T-00-057 sha:b45169e6 src:manual/00-pro-dovidnyk.md:122 klas:E -->
+<!-- fc id:T-00-057 sha:b45169e6 src:manual/00-pro-dovidnyk.md:123 klas:E -->
 ### T-00-057 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1531,7 +1531,7 @@
 
 ---
 
-<!-- fc id:T-00-060 sha:fda2eb5d src:manual/00-pro-dovidnyk.md:131 klas:E -->
+<!-- fc id:T-00-060 sha:fda2eb5d src:manual/00-pro-dovidnyk.md:132 klas:E -->
 ### T-00-060 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1556,7 +1556,7 @@
 
 ---
 
-<!-- fc id:T-00-061 sha:3525f07f src:manual/00-pro-dovidnyk.md:131 klas:E -->
+<!-- fc id:T-00-061 sha:3525f07f src:manual/00-pro-dovidnyk.md:134 klas:E -->
 ### T-00-061 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1628,7 +1628,7 @@ Espressif на момент читання.** Довідник каже, *що* 
 
 ---
 
-<!-- fc id:T-00-064 sha:55725df7 src:manual/00-pro-dovidnyk.md:144 klas:E -->
+<!-- fc id:T-00-064 sha:55725df7 src:manual/00-pro-dovidnyk.md:145 klas:E -->
 ### T-00-064 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1651,7 +1651,7 @@ Espressif на момент читання.** Довідник каже, *що* 
 
 ---
 
-<!-- fc id:T-00-065 sha:c5d4a28a src:manual/00-pro-dovidnyk.md:144 klas:E -->
+<!-- fc id:T-00-065 sha:c5d4a28a src:manual/00-pro-dovidnyk.md:145 klas:E -->
 ### T-00-065 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1703,7 +1703,7 @@ Espressif на момент читання.** Довідник каже, *що* 
 
 ---
 
-<!-- fc id:T-00-067 sha:fff0d660 src:manual/00-pro-dovidnyk.md:148 klas:E -->
+<!-- fc id:T-00-067 sha:fff0d660 src:manual/00-pro-dovidnyk.md:149 klas:E -->
 ### T-00-067 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1750,7 +1750,7 @@ ESP32 як допоміжного (companion) контролера — вузл�
 
 ---
 
-<!-- fc id:T-00-069 sha:d2e3c244 src:manual/00-pro-dovidnyk.md:154 klas:F -->
+<!-- fc id:T-00-069 sha:d2e3c244 src:manual/00-pro-dovidnyk.md:155 klas:F -->
 ### T-00-069 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -1999,7 +1999,7 @@ ESP32 як допоміжного (companion) контролера — вузл�
 
 ---
 
-<!-- fc id:T-00-079 sha:8ff3fc7c src:manual/00-pro-dovidnyk.md:185 klas:F -->
+<!-- fc id:T-00-079 sha:8ff3fc7c src:manual/00-pro-dovidnyk.md:187 klas:F -->
 ### T-00-079 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2023,7 +2023,7 @@ ESP32 як допоміжного (companion) контролера — вузл�
 
 ---
 
-<!-- fc id:T-00-080 sha:cacc6d3d src:manual/00-pro-dovidnyk.md:185 klas:E -->
+<!-- fc id:T-00-080 sha:cacc6d3d src:manual/00-pro-dovidnyk.md:188 klas:E -->
 ### T-00-080 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2135,7 +2135,7 @@ ESP32 як допоміжного (companion) контролера — вузл�
 
 ---
 
-<!-- fc id:T-00-085 sha:2cce9b69 src:manual/00-pro-dovidnyk.md:198 klas:F -->
+<!-- fc id:T-00-085 sha:2cce9b69 src:manual/00-pro-dovidnyk.md:200 klas:F -->
 ### T-00-085 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2306,7 +2306,7 @@ ESP-IDF (розділ 11) → структура застосунку (розд�
 
 ---
 
-<!-- fc id:T-00-092 sha:8a71991a src:manual/00-pro-dovidnyk.md:221 klas:E -->
+<!-- fc id:T-00-092 sha:8a71991a src:manual/00-pro-dovidnyk.md:223 klas:E -->
 ### T-00-092 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2353,7 +2353,7 @@ watchdog, backtrace, strapping, bootloader. Шукати їх у пошуку в
 
 ---
 
-<!-- fc id:T-00-094 sha:2eaeb63c src:manual/00-pro-dovidnyk.md:226 klas:E -->
+<!-- fc id:T-00-094 sha:2eaeb63c src:manual/00-pro-dovidnyk.md:227 klas:E -->
 ### T-00-094 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2422,7 +2422,7 @@ watchdog, backtrace, strapping, bootloader. Шукати їх у пошуку в
 
 ---
 
-<!-- fc id:T-00-097 sha:b32b965c src:manual/00-pro-dovidnyk.md:235 klas:F -->
+<!-- fc id:T-00-097 sha:b32b965c src:manual/00-pro-dovidnyk.md:236 klas:F -->
 ### T-00-097 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2446,7 +2446,7 @@ watchdog, backtrace, strapping, bootloader. Шукати їх у пошуку в
 
 ---
 
-<!-- fc id:T-00-098 sha:9cb2e638 src:manual/00-pro-dovidnyk.md:235 klas:E -->
+<!-- fc id:T-00-098 sha:9cb2e638 src:manual/00-pro-dovidnyk.md:238 klas:E -->
 ### T-00-098 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2540,7 +2540,7 @@ Espressif на момент читання.
 
 ---
 
-<!-- fc id:T-00-102 sha:dfcedfb2 src:manual/00-pro-dovidnyk.md:246 klas:E -->
+<!-- fc id:T-00-102 sha:dfcedfb2 src:manual/00-pro-dovidnyk.md:247 klas:E -->
 ### T-00-102 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2564,7 +2564,7 @@ Espressif на момент читання.
 
 ---
 
-<!-- fc id:T-00-103 sha:4671eee4 src:manual/00-pro-dovidnyk.md:246 klas:E -->
+<!-- fc id:T-00-103 sha:4671eee4 src:manual/00-pro-dovidnyk.md:248 klas:E -->
 ### T-00-103 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**
@@ -2616,7 +2616,7 @@ Espressif на момент читання.
 
 ---
 
-<!-- fc id:T-00-105 sha:629dbdc0 src:manual/00-pro-dovidnyk.md:253 klas:E -->
+<!-- fc id:T-00-105 sha:629dbdc0 src:manual/00-pro-dovidnyk.md:254 klas:E -->
 ### T-00-105 · proza · `manual/00-pro-dovidnyk.md`
 
 **Твердження, коротко**

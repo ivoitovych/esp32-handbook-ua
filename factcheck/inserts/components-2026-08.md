@@ -3170,7 +3170,7 @@ Datasheet дає ±0.5 °C **на один датчик** у діапазоні 
 
 ---
 
-<!-- fc id:T-COM-086 sha:1252c8b1 src:inserts/components-2026-08.md:95 klas:A -->
+<!-- fc id:T-COM-086 sha:1252c8b1 src:inserts/components-2026-08.md:96 klas:A -->
 ### T-COM-086 · proza · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -3207,7 +3207,7 @@ Datasheet дає ±0.5 °C **на один датчик** у діапазоні 
 
 ---
 
-<!-- fc id:T-COM-087 sha:6aad9090 src:inserts/components-2026-08.md:95 klas:F -->
+<!-- fc id:T-COM-087 sha:6aad9090 src:inserts/components-2026-08.md:98 klas:F -->
 ### T-COM-087 · proza · `inserts/components-2026-08.md`
 
 **Твердження, коротко**

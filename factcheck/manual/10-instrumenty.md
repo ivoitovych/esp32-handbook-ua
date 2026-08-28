@@ -122,7 +122,7 @@
 
 ---
 
-<!-- fc id:T-10-006 sha:12833870 src:manual/10-instrumenty.md:12 klas:E -->
+<!-- fc id:T-10-006 sha:12833870 src:manual/10-instrumenty.md:14 klas:E -->
 ### T-10-006 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -183,7 +183,7 @@
 
 ---
 
-<!-- fc id:T-10-008 sha:b3a4817e src:manual/10-instrumenty.md:17 klas:E -->
+<!-- fc id:T-10-008 sha:b3a4817e src:manual/10-instrumenty.md:18 klas:E -->
 ### T-10-008 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -209,7 +209,7 @@
 
 ---
 
-<!-- fc id:T-10-009 sha:e3157577 src:manual/10-instrumenty.md:17 klas:E -->
+<!-- fc id:T-10-009 sha:e3157577 src:manual/10-instrumenty.md:20 klas:E -->
 ### T-10-009 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -375,7 +375,7 @@
 
 ---
 
-<!-- fc id:T-10-015 sha:349dff6e src:manual/10-instrumenty.md:31 klas:E -->
+<!-- fc id:T-10-015 sha:349dff6e src:manual/10-instrumenty.md:33 klas:E -->
 ### T-10-015 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -422,7 +422,7 @@
 
 ---
 
-<!-- fc id:T-10-017 sha:4f6956a1 src:manual/10-instrumenty.md:36 klas:E -->
+<!-- fc id:T-10-017 sha:4f6956a1 src:manual/10-instrumenty.md:37 klas:E -->
 ### T-10-017 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -467,7 +467,7 @@
 
 ---
 
-<!-- fc id:T-10-019 sha:5f3675d9 src:manual/10-instrumenty.md:40 klas:E -->
+<!-- fc id:T-10-019 sha:5f3675d9 src:manual/10-instrumenty.md:41 klas:E -->
 ### T-10-019 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -512,7 +512,7 @@
 
 ---
 
-<!-- fc id:T-10-021 sha:4ffdb89c src:manual/10-instrumenty.md:43 klas:E -->
+<!-- fc id:T-10-021 sha:4ffdb89c src:manual/10-instrumenty.md:44 klas:E -->
 ### T-10-021 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -559,7 +559,7 @@
 
 ---
 
-<!-- fc id:T-10-023 sha:0fcdde0e src:manual/10-instrumenty.md:49 klas:E -->
+<!-- fc id:T-10-023 sha:0fcdde0e src:manual/10-instrumenty.md:50 klas:E -->
 ### T-10-023 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -640,7 +640,7 @@
 
 ---
 
-<!-- fc id:T-10-026 sha:2892e8fe src:manual/10-instrumenty.md:57 klas:E -->
+<!-- fc id:T-10-026 sha:2892e8fe src:manual/10-instrumenty.md:58 klas:E -->
 ### T-10-026 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -714,7 +714,7 @@
 
 ---
 
-<!-- fc id:T-10-029 sha:e03c1d55 src:manual/10-instrumenty.md:65 klas:E -->
+<!-- fc id:T-10-029 sha:e03c1d55 src:manual/10-instrumenty.md:66 klas:E -->
 ### T-10-029 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -738,7 +738,7 @@
 
 ---
 
-<!-- fc id:T-10-030 sha:75d0d748 src:manual/10-instrumenty.md:65 klas:E -->
+<!-- fc id:T-10-030 sha:75d0d748 src:manual/10-instrumenty.md:67 klas:E -->
 ### T-10-030 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -784,7 +784,7 @@
 
 ---
 
-<!-- fc id:T-10-032 sha:741abf65 src:manual/10-instrumenty.md:70 klas:E -->
+<!-- fc id:T-10-032 sha:741abf65 src:manual/10-instrumenty.md:71 klas:E -->
 ### T-10-032 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -829,7 +829,7 @@
 
 ---
 
-<!-- fc id:T-10-034 sha:7f0e0e88 src:manual/10-instrumenty.md:73 klas:E -->
+<!-- fc id:T-10-034 sha:7f0e0e88 src:manual/10-instrumenty.md:74 klas:E -->
 ### T-10-034 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -875,7 +875,7 @@
 
 ---
 
-<!-- fc id:T-10-036 sha:b861d8f2 src:manual/10-instrumenty.md:77 klas:F -->
+<!-- fc id:T-10-036 sha:b861d8f2 src:manual/10-instrumenty.md:78 klas:F -->
 ### T-10-036 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -921,7 +921,7 @@
 
 ---
 
-<!-- fc id:T-10-038 sha:ef7cea43 src:manual/10-instrumenty.md:81 klas:E -->
+<!-- fc id:T-10-038 sha:ef7cea43 src:manual/10-instrumenty.md:82 klas:E -->
 ### T-10-038 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -1042,7 +1042,7 @@
 
 ---
 
-<!-- fc id:T-10-042 sha:982d97a2 src:manual/10-instrumenty.md:92 klas:E -->
+<!-- fc id:T-10-042 sha:982d97a2 src:manual/10-instrumenty.md:94 klas:E -->
 ### T-10-042 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -1130,7 +1130,7 @@
 
 ---
 
-<!-- fc id:T-10-046 sha:48638861 src:manual/10-instrumenty.md:105 klas:E -->
+<!-- fc id:T-10-046 sha:48638861 src:manual/10-instrumenty.md:106 klas:E -->
 ### T-10-046 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -1307,7 +1307,7 @@
 
 ---
 
-<!-- fc id:T-10-054 sha:ce8cf9c5 src:manual/10-instrumenty.md:125 klas:E -->
+<!-- fc id:T-10-054 sha:ce8cf9c5 src:manual/10-instrumenty.md:126 klas:E -->
 ### T-10-054 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -1434,7 +1434,7 @@
 
 ---
 
-<!-- fc id:T-10-059 sha:987738fa src:manual/10-instrumenty.md:139 klas:E -->
+<!-- fc id:T-10-059 sha:987738fa src:manual/10-instrumenty.md:141 klas:E -->
 ### T-10-059 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -1485,7 +1485,7 @@
 
 ---
 
-<!-- fc id:T-10-061 sha:4a0a5c73 src:manual/10-instrumenty.md:145 klas:E -->
+<!-- fc id:T-10-061 sha:4a0a5c73 src:manual/10-instrumenty.md:146 klas:E -->
 ### T-10-061 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**
@@ -1512,7 +1512,7 @@
 
 ---
 
-<!-- fc id:T-10-062 sha:b4eb27ba src:manual/10-instrumenty.md:145 klas:E -->
+<!-- fc id:T-10-062 sha:b4eb27ba src:manual/10-instrumenty.md:147 klas:E -->
 ### T-10-062 · proza · `manual/10-instrumenty.md`
 
 **Твердження, коротко**

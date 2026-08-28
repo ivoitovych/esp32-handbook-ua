@@ -63,7 +63,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-003 sha:6c91cd94 src:manual/38-can.md:7 klas:E -->
+<!-- fc id:T-38-003 sha:6c91cd94 src:manual/38-can.md:8 klas:E -->
 ### T-38-003 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -151,7 +151,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-007 sha:c4f0624c src:manual/38-can.md:17 klas:E -->
+<!-- fc id:T-38-007 sha:c4f0624c src:manual/38-can.md:18 klas:E -->
 ### T-38-007 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -198,7 +198,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-009 sha:e1ac39ed src:manual/38-can.md:21 klas:E -->
+<!-- fc id:T-38-009 sha:e1ac39ed src:manual/38-can.md:23 klas:E -->
 ### T-38-009 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -269,7 +269,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-012 sha:b18418da src:manual/38-can.md:30 klas:C -->
+<!-- fc id:T-38-012 sha:b18418da src:manual/38-can.md:31 klas:C -->
 ### T-38-012 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -297,7 +297,7 @@ Interface). Назва інша через ліцензування торгов
 
 ---
 
-<!-- fc id:T-38-013 sha:4ce022e0 src:manual/38-can.md:30 klas:E -->
+<!-- fc id:T-38-013 sha:4ce022e0 src:manual/38-can.md:32 klas:E -->
 ### T-38-013 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -486,7 +486,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 ---
 
-<!-- fc id:T-38-020 sha:217fedf7 src:manual/38-can.md:45 klas:C -->
+<!-- fc id:T-38-020 sha:217fedf7 src:manual/38-can.md:46 klas:C -->
 ### T-38-020 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -538,7 +538,7 @@ ESP32 має контролер, але **не має трансивера**. П
 
 ---
 
-<!-- fc id:T-38-022 sha:3874c899 src:manual/38-can.md:49 klas:A -->
+<!-- fc id:T-38-022 sha:3874c899 src:manual/38-can.md:50 klas:A -->
 ### T-38-022 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -656,7 +656,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-026 sha:45eb71c9 src:manual/38-can.md:57 klas:E -->
+<!-- fc id:T-38-026 sha:45eb71c9 src:manual/38-can.md:58 klas:E -->
 ### T-38-026 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -703,7 +703,7 @@ MCP2551) можуть спалити пін ESP32 своїм виходом 5В.
 
 ---
 
-<!-- fc id:T-38-028 sha:ba8aaf00 src:manual/38-can.md:61 klas:D -->
+<!-- fc id:T-38-028 sha:ba8aaf00 src:manual/38-can.md:62 klas:D -->
 ### T-38-028 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1325,7 +1325,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-047 sha:cefd9a65 src:manual/38-can.md:110 klas:E -->
+<!-- fc id:T-38-047 sha:cefd9a65 src:manual/38-can.md:111 klas:E -->
 ### T-38-047 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1439,7 +1439,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-051 sha:3e99d0dc src:manual/38-can.md:119 klas:F -->
+<!-- fc id:T-38-051 sha:3e99d0dc src:manual/38-can.md:120 klas:F -->
 ### T-38-051 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1516,7 +1516,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-054 sha:3677d9d8 src:manual/38-can.md:129 klas:E -->
+<!-- fc id:T-38-054 sha:3677d9d8 src:manual/38-can.md:130 klas:E -->
 ### T-38-054 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1626,7 +1626,7 @@ if (twai_receive(&in, pdMS_TO_TICKS(1000)) == ESP_OK) {
 
 ---
 
-<!-- fc id:T-38-058 sha:c4f27b74 src:manual/38-can.md:136 klas:E -->
+<!-- fc id:T-38-058 sha:c4f27b74 src:manual/38-can.md:137 klas:E -->
 ### T-38-058 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1815,7 +1815,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-064 sha:d44ec172 src:manual/38-can.md:154 klas:A -->
+<!-- fc id:T-38-064 sha:d44ec172 src:manual/38-can.md:155 klas:A -->
 ### T-38-064 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1878,7 +1878,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-066 sha:09a82db5 src:manual/38-can.md:159 klas:F -->
+<!-- fc id:T-38-066 sha:09a82db5 src:manual/38-can.md:160 klas:F -->
 ### T-38-066 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -1976,7 +1976,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-069 sha:9347e196 src:manual/38-can.md:167 klas:E -->
+<!-- fc id:T-38-069 sha:9347e196 src:manual/38-can.md:168 klas:E -->
 ### T-38-069 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2096,7 +2096,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-074 sha:49f5cf71 src:manual/38-can.md:178 klas:F -->
+<!-- fc id:T-38-074 sha:49f5cf71 src:manual/38-can.md:181 klas:F -->
 ### T-38-074 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2123,7 +2123,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-075 sha:b6945f61 src:manual/38-can.md:178 klas:E -->
+<!-- fc id:T-38-075 sha:b6945f61 src:manual/38-can.md:183 klas:E -->
 ### T-38-075 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2150,7 +2150,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-076 sha:42ee92a9 src:manual/38-can.md:178 klas:E -->
+<!-- fc id:T-38-076 sha:42ee92a9 src:manual/38-can.md:184 klas:E -->
 ### T-38-076 · proza · `manual/38-can.md`
 
 **Твердження, коротко**
@@ -2247,7 +2247,7 @@ ESP_LOGI(TAG, "стан %d, помилок TX %lu, RX %lu",
 
 ---
 
-<!-- fc id:T-38-080 sha:73568b75 src:manual/38-can.md:190 klas:E -->
+<!-- fc id:T-38-080 sha:73568b75 src:manual/38-can.md:191 klas:E -->
 ### T-38-080 · proza · `manual/38-can.md`
 
 **Твердження, коротко**

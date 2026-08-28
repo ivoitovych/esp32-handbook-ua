@@ -77,6 +77,7 @@ def vzirets_dlya(tekst: str, vsi: list[str]) -> str | None:
 
 
 def main() -> int:
+    import factcheck
     import vybirka
 
     p = argparse.ArgumentParser()
@@ -84,7 +85,7 @@ def main() -> int:
     a = p.parse_args()
 
     reyestr: dict[str, dict] = {}
-    for klas in "ABCDEFGK":
+    for klas in factcheck.USI_KLASY:
         for u in vybirka.odynyci(klas):
             u["klas"] = klas
             reyestr[u["id"]] = u

@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-52-002 sha:1e54107d src:manual/52-montazh.md:3 klas:E -->
+<!-- fc id:T-52-002 sha:1e54107d src:manual/52-montazh.md:4 klas:E -->
 ### T-52-002 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -254,7 +254,7 @@
 
 ---
 
-<!-- fc id:T-52-011 sha:10786ee6 src:manual/52-montazh.md:27 klas:E -->
+<!-- fc id:T-52-011 sha:10786ee6 src:manual/52-montazh.md:28 klas:E -->
 ### T-52-011 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -302,7 +302,7 @@
 
 ---
 
-<!-- fc id:T-52-013 sha:35d3d697 src:manual/52-montazh.md:31 klas:E -->
+<!-- fc id:T-52-013 sha:35d3d697 src:manual/52-montazh.md:32 klas:E -->
 ### T-52-013 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -372,7 +372,7 @@
 
 ---
 
-<!-- fc id:T-52-016 sha:9cdd86a8 src:manual/52-montazh.md:36 klas:E -->
+<!-- fc id:T-52-016 sha:9cdd86a8 src:manual/52-montazh.md:37 klas:E -->
 ### T-52-016 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -418,7 +418,7 @@
 
 ---
 
-<!-- fc id:T-52-018 sha:d18fd616 src:manual/52-montazh.md:42 klas:E -->
+<!-- fc id:T-52-018 sha:d18fd616 src:manual/52-montazh.md:43 klas:E -->
 ### T-52-018 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -485,7 +485,7 @@
 
 ---
 
-<!-- fc id:T-52-021 sha:10ae697e src:manual/52-montazh.md:51 klas:E -->
+<!-- fc id:T-52-021 sha:10ae697e src:manual/52-montazh.md:52 klas:E -->
 ### T-52-021 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -662,7 +662,7 @@
 
 ---
 
-<!-- fc id:T-52-029 sha:12f8b3e7 src:manual/52-montazh.md:71 klas:E -->
+<!-- fc id:T-52-029 sha:12f8b3e7 src:manual/52-montazh.md:72 klas:E -->
 ### T-52-029 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -773,7 +773,7 @@
 
 ---
 
-<!-- fc id:T-52-034 sha:d76da8a0 src:manual/52-montazh.md:85 klas:E -->
+<!-- fc id:T-52-034 sha:d76da8a0 src:manual/52-montazh.md:86 klas:E -->
 ### T-52-034 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -1092,7 +1092,7 @@
 
 ---
 
-<!-- fc id:T-52-048 sha:472a2c1a src:manual/52-montazh.md:119 klas:E -->
+<!-- fc id:T-52-048 sha:472a2c1a src:manual/52-montazh.md:120 klas:E -->
 ### T-52-048 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -1225,7 +1225,7 @@
 
 ---
 
-<!-- fc id:T-52-053 sha:aede1115 src:manual/52-montazh.md:130 klas:E -->
+<!-- fc id:T-52-053 sha:aede1115 src:manual/52-montazh.md:131 klas:E -->
 ### T-52-053 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -1285,7 +1285,7 @@
 
 ---
 
-<!-- fc id:T-52-055 sha:81f28527 src:manual/52-montazh.md:134 klas:E -->
+<!-- fc id:T-52-055 sha:81f28527 src:manual/52-montazh.md:135 klas:E -->
 ### T-52-055 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -1334,7 +1334,7 @@
 
 ---
 
-<!-- fc id:T-52-057 sha:7f90a202 src:manual/52-montazh.md:140 klas:E -->
+<!-- fc id:T-52-057 sha:7f90a202 src:manual/52-montazh.md:141 klas:E -->
 ### T-52-057 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**
@@ -1358,7 +1358,7 @@
 
 ---
 
-<!-- fc id:T-52-058 sha:05560c94 src:manual/52-montazh.md:140 klas:E -->
+<!-- fc id:T-52-058 sha:05560c94 src:manual/52-montazh.md:142 klas:E -->
 ### T-52-058 · proza · `manual/52-montazh.md`
 
 **Твердження, коротко**

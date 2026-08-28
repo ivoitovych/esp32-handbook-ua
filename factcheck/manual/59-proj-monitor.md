@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-59-002 sha:622435fa src:manual/59-proj-monitor.md:3 klas:E -->
+<!-- fc id:T-59-002 sha:622435fa src:manual/59-proj-monitor.md:4 klas:E -->
 ### T-59-002 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -901,7 +901,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-029 sha:11824181 src:manual/59-proj-monitor.md:52 klas:A -->
+<!-- fc id:T-59-029 sha:11824181 src:manual/59-proj-monitor.md:53 klas:A -->
 ### T-59-029 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -2521,7 +2521,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 ---
 
-<!-- fc id:T-59-076 sha:49eb3151 src:manual/59-proj-monitor.md:201 klas:E -->
+<!-- fc id:T-59-076 sha:49eb3151 src:manual/59-proj-monitor.md:203 klas:E -->
 ### T-59-076 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -2586,7 +2586,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 ---
 
-<!-- fc id:T-59-078 sha:4f81f74f src:manual/59-proj-monitor.md:207 klas:B -->
+<!-- fc id:T-59-078 sha:4f81f74f src:manual/59-proj-monitor.md:208 klas:B -->
 ### T-59-078 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -2627,7 +2627,7 @@ esp_err_t bme_init(i2c_master_bus_handle_t bus) {
 
 ---
 
-<!-- fc id:T-59-079 sha:537a2c04 src:manual/59-proj-monitor.md:207 klas:A -->
+<!-- fc id:T-59-079 sha:537a2c04 src:manual/59-proj-monitor.md:210 klas:A -->
 ### T-59-079 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -3376,7 +3376,7 @@ static void task_vymir(void *arg) {
 
 ---
 
-<!-- fc id:T-59-098 sha:2ab58c0c src:manual/59-proj-monitor.md:316 klas:E -->
+<!-- fc id:T-59-098 sha:2ab58c0c src:manual/59-proj-monitor.md:317 klas:E -->
 ### T-59-098 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -3707,7 +3707,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 ---
 
-<!-- fc id:T-59-107 sha:d11cc6fe src:manual/59-proj-monitor.md:350 klas:F -->
+<!-- fc id:T-59-107 sha:d11cc6fe src:manual/59-proj-monitor.md:351 klas:F -->
 ### T-59-107 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -3733,7 +3733,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 ---
 
-<!-- fc id:T-59-108 sha:02b440af src:manual/59-proj-monitor.md:350 klas:F -->
+<!-- fc id:T-59-108 sha:02b440af src:manual/59-proj-monitor.md:352 klas:F -->
 ### T-59-108 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -3783,7 +3783,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 ---
 
-<!-- fc id:T-59-110 sha:046ce956 src:manual/59-proj-monitor.md:356 klas:E -->
+<!-- fc id:T-59-110 sha:046ce956 src:manual/59-proj-monitor.md:357 klas:E -->
 ### T-59-110 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -3831,7 +3831,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 ---
 
-<!-- fc id:T-59-112 sha:daa45c95 src:manual/59-proj-monitor.md:362 klas:E -->
+<!-- fc id:T-59-112 sha:daa45c95 src:manual/59-proj-monitor.md:363 klas:E -->
 ### T-59-112 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -3879,7 +3879,7 @@ static void dodaty(float t, float h, float p, bool ok) {
 
 ---
 
-<!-- fc id:T-59-114 sha:99584848 src:manual/59-proj-monitor.md:366 klas:E -->
+<!-- fc id:T-59-114 sha:99584848 src:manual/59-proj-monitor.md:367 klas:E -->
 ### T-59-114 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -4584,7 +4584,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-59-133 sha:2351e0dd src:manual/59-proj-monitor.md:415 klas:E -->
+<!-- fc id:T-59-133 sha:2351e0dd src:manual/59-proj-monitor.md:416 klas:E -->
 ### T-59-133 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -4869,7 +4869,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-59-141 sha:98a85158 src:manual/59-proj-monitor.md:431 klas:E -->
+<!-- fc id:T-59-141 sha:98a85158 src:manual/59-proj-monitor.md:433 klas:E -->
 ### T-59-141 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -4899,7 +4899,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-59-142 sha:98b2d431 src:manual/59-proj-monitor.md:431 klas:F -->
+<!-- fc id:T-59-142 sha:98b2d431 src:manual/59-proj-monitor.md:434 klas:F -->
 ### T-59-142 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -4929,7 +4929,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-59-143 sha:3ec3a7c7 src:manual/59-proj-monitor.md:431 klas:E -->
+<!-- fc id:T-59-143 sha:3ec3a7c7 src:manual/59-proj-monitor.md:435 klas:E -->
 ### T-59-143 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -4959,7 +4959,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-59-144 sha:f2cb8e81 src:manual/59-proj-monitor.md:431 klas:E -->
+<!-- fc id:T-59-144 sha:f2cb8e81 src:manual/59-proj-monitor.md:437 klas:E -->
 ### T-59-144 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -4989,7 +4989,7 @@ idf.py -p /dev/ttyUSB0 flash monitor
 
 ---
 
-<!-- fc id:T-59-145 sha:cab8cb32 src:manual/59-proj-monitor.md:431 klas:E -->
+<!-- fc id:T-59-145 sha:cab8cb32 src:manual/59-proj-monitor.md:439 klas:E -->
 ### T-59-145 · proza · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**

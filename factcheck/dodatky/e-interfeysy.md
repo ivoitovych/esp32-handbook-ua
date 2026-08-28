@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-E-002 sha:bea5d3af src:dodatky/e-interfeysy.md:3 klas:E -->
+<!-- fc id:T-E-002 sha:bea5d3af src:dodatky/e-interfeysy.md:4 klas:E -->
 ### T-E-002 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-E-004 sha:eb769fde src:dodatky/e-interfeysy.md:8 klas:E -->
+<!-- fc id:T-E-004 sha:eb769fde src:dodatky/e-interfeysy.md:9 klas:E -->
 ### T-E-004 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -2115,7 +2115,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features»
+- **Джерело:** Microchip, MCP23017/MCP23S17 — 16-Bit I/O Expander with Serial Interface, розділ «Features» (кеш: dzherela-kesh/mcp23017.pdf)
 - **Дослівно з джерела:**
   > MCP23017/MCP23S17
   > 16-Bit I/O Expander with Serial Interface
@@ -2687,7 +2687,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка
+- **Джерело:** Sitronix, ST7789V Datasheet, Version 1.3 (2014/03), титульна сторінка (кеш: dzherela-kesh/st7789.pdf)
 - **Дослівно з джерела:**
   > ST7789V
   > 240RGB x 320 dot 262K Color with Frame Memory
@@ -2838,7 +2838,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка
+- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, Specification V1.11, титульна сторінка (кеш: dzherela-kesh/ili9341.pdf)
 - **Дослівно з джерела:**
   > ILI9341
   > a-Si TFT LCD Single Chip Driver
@@ -3494,7 +3494,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features»
+- **Джерело:** Microchip, MCP2515 Stand-Alone CAN Controller with SPI Interface (DS20001801J), розділ «Features» (кеш: dzherela-kesh/mcp2515.pdf)
 - **Дослівно з джерела:**
   > MCP2515
   > Stand-Alone CAN Controller with SPI Interface
@@ -4327,7 +4327,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-088 sha:2ec41b36 src:dodatky/e-interfeysy.md:55 klas:F -->
+<!-- fc id:T-E-088 sha:2ec41b36 src:dodatky/e-interfeysy.md:57 klas:F -->
 ### T-E-088 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -5817,7 +5817,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet)
+- **Джерело:** Elecfreaks, Ultrasonic Ranging Module HC-SR04 (product datasheet) (кеш: dzherela-kesh/hc-sr04.pdf)
 - **Дослівно з джерела:**
   > Wire connecting direct as following:
   >    5V Supply
