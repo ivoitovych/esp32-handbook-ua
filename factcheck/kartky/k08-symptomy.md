@@ -2357,7 +2357,7 @@
 
 ---
 
-<!-- fc id:T-K08-050 sha:a79d297d src:kartky/k08-symptomy.md:26 klas:E -->
+<!-- fc id:T-K08-050 sha:a79d297d src:kartky/k08-symptomy.md:27 klas:E -->
 ### T-K08-050 · proza · `kartky/k08-symptomy.md`
 
 **Твердження, коротко**

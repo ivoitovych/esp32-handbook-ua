@@ -71,7 +71,7 @@
 
 ---
 
-<!-- fc id:T-K02-003 sha:51fe5eb0 src:kartky/k02-stan.md:3 klas:E -->
+<!-- fc id:T-K02-003 sha:51fe5eb0 src:kartky/k02-stan.md:5 klas:E -->
 ### T-K02-003 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -117,7 +117,7 @@
 
 ---
 
-<!-- fc id:T-K02-005 sha:14ded059 src:kartky/k02-stan.md:9 klas:E -->
+<!-- fc id:T-K02-005 sha:14ded059 src:kartky/k02-stan.md:10 klas:E -->
 ### T-K02-005 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -140,7 +140,7 @@
 
 ---
 
-<!-- fc id:T-K02-006 sha:37acf5b5 src:kartky/k02-stan.md:9 klas:E -->
+<!-- fc id:T-K02-006 sha:37acf5b5 src:kartky/k02-stan.md:11 klas:E -->
 ### T-K02-006 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -231,7 +231,7 @@
 
 ---
 
-<!-- fc id:T-K02-010 sha:4aa28ce1 src:kartky/k02-stan.md:18 klas:E -->
+<!-- fc id:T-K02-010 sha:4aa28ce1 src:kartky/k02-stan.md:19 klas:E -->
 ### T-K02-010 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -287,7 +287,7 @@
 
 ---
 
-<!-- fc id:T-K02-012 sha:98e1e8ff src:kartky/k02-stan.md:24 klas:E -->
+<!-- fc id:T-K02-012 sha:98e1e8ff src:kartky/k02-stan.md:25 klas:E -->
 ### T-K02-012 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -342,7 +342,7 @@
 
 ---
 
-<!-- fc id:T-K02-014 sha:c30c0717 src:kartky/k02-stan.md:27 klas:E -->
+<!-- fc id:T-K02-014 sha:c30c0717 src:kartky/k02-stan.md:28 klas:E -->
 ### T-K02-014 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -578,7 +578,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-022 sha:de849d8b src:kartky/k02-stan.md:42 klas:E -->
+<!-- fc id:T-K02-022 sha:de849d8b src:kartky/k02-stan.md:43 klas:E -->
 ### T-K02-022 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -644,7 +644,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-025 sha:79fb5b6b src:kartky/k02-stan.md:47 klas:E -->
+<!-- fc id:T-K02-025 sha:79fb5b6b src:kartky/k02-stan.md:48 klas:E -->
 ### T-K02-025 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**
@@ -690,7 +690,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-K02-027 sha:d3533a61 src:kartky/k02-stan.md:51 klas:E -->
+<!-- fc id:T-K02-027 sha:d3533a61 src:kartky/k02-stan.md:52 klas:E -->
 ### T-K02-027 · proza · `kartky/k02-stan.md`
 
 **Твердження, коротко**

@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-08-002 sha:efa50595 src:manual/08-platy.md:3 klas:E -->
+<!-- fc id:T-08-002 sha:efa50595 src:manual/08-platy.md:4 klas:E -->
 ### T-08-002 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -76,7 +76,7 @@
 
 ---
 
-<!-- fc id:T-08-004 sha:f328a5d0 src:manual/08-platy.md:9 klas:A -->
+<!-- fc id:T-08-004 sha:f328a5d0 src:manual/08-platy.md:10 klas:A -->
 ### T-08-004 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -527,7 +527,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 ---
 
-<!-- fc id:T-08-017 sha:92c1af43 src:manual/08-platy.md:20 klas:A -->
+<!-- fc id:T-08-017 sha:92c1af43 src:manual/08-platy.md:21 klas:A -->
 ### T-08-017 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -608,7 +608,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 ---
 
-<!-- fc id:T-08-020 sha:5cbed016 src:manual/08-platy.md:25 klas:F -->
+<!-- fc id:T-08-020 sha:5cbed016 src:manual/08-platy.md:26 klas:F -->
 ### T-08-020 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -765,7 +765,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 ---
 
-<!-- fc id:T-08-026 sha:237c057b src:manual/08-platy.md:38 klas:F -->
+<!-- fc id:T-08-026 sha:237c057b src:manual/08-platy.md:39 klas:F -->
 ### T-08-026 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -839,7 +839,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 ---
 
-<!-- fc id:T-08-029 sha:7b4e6a6d src:manual/08-platy.md:42 klas:E -->
+<!-- fc id:T-08-029 sha:7b4e6a6d src:manual/08-platy.md:43 klas:E -->
 ### T-08-029 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -992,7 +992,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 ---
 
-<!-- fc id:T-08-035 sha:c31406c2 src:manual/08-platy.md:54 klas:E -->
+<!-- fc id:T-08-035 sha:c31406c2 src:manual/08-platy.md:56 klas:E -->
 ### T-08-035 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1091,7 +1091,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 ---
 
-<!-- fc id:T-08-039 sha:0e6bafcb src:manual/08-platy.md:61 klas:E -->
+<!-- fc id:T-08-039 sha:0e6bafcb src:manual/08-platy.md:62 klas:E -->
 ### T-08-039 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1139,7 +1139,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 
 ---
 
-<!-- fc id:T-08-041 sha:fd54bf45 src:manual/08-platy.md:65 klas:E -->
+<!-- fc id:T-08-041 sha:fd54bf45 src:manual/08-platy.md:66 klas:E -->
 ### T-08-041 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1230,7 +1230,7 @@ USB-UART. Вони дають різні порти і роблять різне
 
 ---
 
-<!-- fc id:T-08-045 sha:a1157c95 src:manual/08-platy.md:73 klas:E -->
+<!-- fc id:T-08-045 sha:a1157c95 src:manual/08-platy.md:74 klas:E -->
 ### T-08-045 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1253,7 +1253,7 @@ USB-UART. Вони дають різні порти і роблять різне
 
 ---
 
-<!-- fc id:T-08-046 sha:20ca55c7 src:manual/08-platy.md:73 klas:F -->
+<!-- fc id:T-08-046 sha:20ca55c7 src:manual/08-platy.md:74 klas:F -->
 ### T-08-046 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1299,7 +1299,7 @@ USB-UART. Вони дають різні порти і роблять різне
 
 ---
 
-<!-- fc id:T-08-048 sha:729e1f1d src:manual/08-platy.md:77 klas:A -->
+<!-- fc id:T-08-048 sha:729e1f1d src:manual/08-platy.md:78 klas:A -->
 ### T-08-048 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1405,7 +1405,7 @@ USB-UART-перехідник, а `GPIO0` замикається на землю
 
 ---
 
-<!-- fc id:T-08-052 sha:c0710a6e src:manual/08-platy.md:84 klas:E -->
+<!-- fc id:T-08-052 sha:c0710a6e src:manual/08-platy.md:88 klas:E -->
 ### T-08-052 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1453,7 +1453,7 @@ LoRa. Зручні як готовий пристрій; ціна — власн
 
 ---
 
-<!-- fc id:T-08-054 sha:889e2be1 src:manual/08-platy.md:90 klas:E -->
+<!-- fc id:T-08-054 sha:889e2be1 src:manual/08-platy.md:91 klas:E -->
 ### T-08-054 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1593,7 +1593,7 @@ LoRa. Зручні як готовий пристрій; ціна — власн
 
 ---
 
-<!-- fc id:T-08-059 sha:5c02c121 src:manual/08-platy.md:102 klas:B -->
+<!-- fc id:T-08-059 sha:5c02c121 src:manual/08-platy.md:103 klas:B -->
 ### T-08-059 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1898,7 +1898,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-08-071 sha:c3face93 src:manual/08-platy.md:124 klas:E -->
+<!-- fc id:T-08-071 sha:c3face93 src:manual/08-platy.md:125 klas:E -->
 ### T-08-071 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -1992,7 +1992,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-08-075 sha:bed8a29e src:manual/08-platy.md:138 klas:E -->
+<!-- fc id:T-08-075 sha:bed8a29e src:manual/08-platy.md:139 klas:E -->
 ### T-08-075 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -2150,7 +2150,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-08-082 sha:5b5b554c src:manual/08-platy.md:157 klas:E -->
+<!-- fc id:T-08-082 sha:5b5b554c src:manual/08-platy.md:158 klas:E -->
 ### T-08-082 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -2196,7 +2196,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-08-084 sha:70baac58 src:manual/08-platy.md:162 klas:E -->
+<!-- fc id:T-08-084 sha:70baac58 src:manual/08-platy.md:163 klas:E -->
 ### T-08-084 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -2252,7 +2252,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-08-086 sha:d6a3e056 src:manual/08-platy.md:166 klas:E -->
+<!-- fc id:T-08-086 sha:d6a3e056 src:manual/08-platy.md:168 klas:E -->
 ### T-08-086 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -2280,7 +2280,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-08-087 sha:0902248e src:manual/08-platy.md:166 klas:E -->
+<!-- fc id:T-08-087 sha:0902248e src:manual/08-platy.md:170 klas:E -->
 ### T-08-087 · proza · `manual/08-platy.md`
 
 **Твердження, коротко**

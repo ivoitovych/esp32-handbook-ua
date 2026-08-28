@@ -31,7 +31,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-002 sha:91a7e667 src:manual/36-spi.md:3 klas:E -->
+<!-- fc id:T-36-002 sha:91a7e667 src:manual/36-spi.md:4 klas:E -->
 ### T-36-002 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -464,7 +464,7 @@ SPI — швидка шина для того, де I²C замало: дисп�
 
 ---
 
-<!-- fc id:T-36-013 sha:36fd447c src:manual/36-spi.md:16 klas:E -->
+<!-- fc id:T-36-013 sha:36fd447c src:manual/36-spi.md:17 klas:E -->
 ### T-36-013 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1506,7 +1506,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-043 sha:59c865c4 src:manual/36-spi.md:46 klas:E -->
+<!-- fc id:T-36-043 sha:59c865c4 src:manual/36-spi.md:47 klas:E -->
 ### T-36-043 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1574,7 +1574,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-045 sha:96a3bf21 src:manual/36-spi.md:51 klas:E -->
+<!-- fc id:T-36-045 sha:96a3bf21 src:manual/36-spi.md:52 klas:E -->
 ### T-36-045 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -1599,7 +1599,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-36-046 sha:2f08dd98 src:manual/36-spi.md:51 klas:B -->
+<!-- fc id:T-36-046 sha:2f08dd98 src:manual/36-spi.md:53 klas:B -->
 ### T-36-046 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2039,7 +2039,7 @@ microSD, дисплеїв і датчиків, тобто для майже вс
 
 ---
 
-<!-- fc id:T-36-060 sha:d78527db src:manual/36-spi.md:84 klas:E -->
+<!-- fc id:T-36-060 sha:d78527db src:manual/36-spi.md:85 klas:E -->
 ### T-36-060 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2112,7 +2112,7 @@ microSD, дисплеїв і датчиків, тобто для майже вс
 
 ---
 
-<!-- fc id:T-36-062 sha:b7fc2e0f src:manual/36-spi.md:89 klas:A -->
+<!-- fc id:T-36-062 sha:b7fc2e0f src:manual/36-spi.md:90 klas:A -->
 ### T-36-062 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -2213,7 +2213,7 @@ Dupont-дротами розраховувати більш ніж на кіль
 
 ---
 
-<!-- fc id:T-36-066 sha:93acada7 src:manual/36-spi.md:97 klas:E -->
+<!-- fc id:T-36-066 sha:93acada7 src:manual/36-spi.md:98 klas:E -->
 ### T-36-066 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3019,7 +3019,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-089 sha:19a5eb78 src:manual/36-spi.md:148 klas:E -->
+<!-- fc id:T-36-089 sha:19a5eb78 src:manual/36-spi.md:149 klas:E -->
 ### T-36-089 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3120,7 +3120,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-093 sha:54e778ad src:manual/36-spi.md:157 klas:E -->
+<!-- fc id:T-36-093 sha:54e778ad src:manual/36-spi.md:158 klas:E -->
 ### T-36-093 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3178,7 +3178,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-095 sha:713918ed src:manual/36-spi.md:161 klas:E -->
+<!-- fc id:T-36-095 sha:713918ed src:manual/36-spi.md:162 klas:E -->
 ### T-36-095 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3798,7 +3798,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-115 sha:c4c8a3dc src:manual/36-spi.md:189 klas:E -->
+<!-- fc id:T-36-115 sha:c4c8a3dc src:manual/36-spi.md:190 klas:E -->
 ### T-36-115 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3847,7 +3847,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-117 sha:5ff6ea36 src:manual/36-spi.md:195 klas:E -->
+<!-- fc id:T-36-117 sha:5ff6ea36 src:manual/36-spi.md:196 klas:E -->
 ### T-36-117 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3885,7 +3885,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-118 sha:58094afa src:manual/36-spi.md:195 klas:E -->
+<!-- fc id:T-36-118 sha:58094afa src:manual/36-spi.md:197 klas:E -->
 ### T-36-118 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3923,7 +3923,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-119 sha:35b028da src:manual/36-spi.md:195 klas:E -->
+<!-- fc id:T-36-119 sha:35b028da src:manual/36-spi.md:198 klas:E -->
 ### T-36-119 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3949,7 +3949,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-120 sha:409f6bd4 src:manual/36-spi.md:195 klas:F -->
+<!-- fc id:T-36-120 sha:409f6bd4 src:manual/36-spi.md:199 klas:F -->
 ### T-36-120 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**
@@ -3975,7 +3975,7 @@ uint8_t *buf = heap_caps_malloc(4096, MALLOC_CAP_DMA);
 
 ---
 
-<!-- fc id:T-36-121 sha:7b6c367c src:manual/36-spi.md:195 klas:E -->
+<!-- fc id:T-36-121 sha:7b6c367c src:manual/36-spi.md:200 klas:E -->
 ### T-36-121 · proza · `manual/36-spi.md`
 
 **Твердження, коротко**

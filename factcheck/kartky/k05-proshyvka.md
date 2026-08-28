@@ -632,7 +632,7 @@ S3 на `0x1000`, тобто не туди. Спершу визначити чи
 
 ---
 
-<!-- fc id:T-K05-017 sha:14934f37 src:kartky/k05-proshyvka.md:16 klas:A -->
+<!-- fc id:T-K05-017 sha:14934f37 src:kartky/k05-proshyvka.md:17 klas:A -->
 ### T-K05-017 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -678,7 +678,7 @@ S3 на `0x1000`, тобто не туди. Спершу визначити чи
 
 ---
 
-<!-- fc id:T-K05-018 sha:4188b893 src:kartky/k05-proshyvka.md:16 klas:E -->
+<!-- fc id:T-K05-018 sha:4188b893 src:kartky/k05-proshyvka.md:18 klas:E -->
 ### T-K05-018 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -841,7 +841,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-023 sha:4b49ff3c src:kartky/k05-proshyvka.md:31 klas:A -->
+<!-- fc id:T-K05-023 sha:4b49ff3c src:kartky/k05-proshyvka.md:32 klas:A -->
 ### T-K05-023 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -925,7 +925,7 @@ esptool --port /dev/ttyUSB0 --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-K05-026 sha:ca260535 src:kartky/k05-proshyvka.md:35 klas:F -->
+<!-- fc id:T-K05-026 sha:ca260535 src:kartky/k05-proshyvka.md:37 klas:F -->
 ### T-K05-026 · proza · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**

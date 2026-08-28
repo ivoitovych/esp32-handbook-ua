@@ -8549,7 +8549,7 @@
 
 ---
 
-<!-- fc id:T-G-173 sha:7cda502b src:dodatky/g-glosariy.md:213 klas:A -->
+<!-- fc id:T-G-173 sha:7cda502b src:dodatky/g-glosariy.md:214 klas:A -->
 ### T-G-173 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**
@@ -8607,7 +8607,7 @@
 
 ---
 
-<!-- fc id:T-G-175 sha:57e2644a src:dodatky/g-glosariy.md:216 klas:E -->
+<!-- fc id:T-G-175 sha:57e2644a src:dodatky/g-glosariy.md:220 klas:E -->
 ### T-G-175 · proza · `dodatky/g-glosariy.md`
 
 **Твердження, коротко**

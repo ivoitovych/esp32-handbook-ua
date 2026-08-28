@@ -166,7 +166,7 @@
 
 ---
 
-<!-- fc id:T-50-008 sha:1e100fbe src:manual/50-bezpeka.md:15 klas:F -->
+<!-- fc id:T-50-008 sha:1e100fbe src:manual/50-bezpeka.md:16 klas:F -->
 ### T-50-008 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -277,7 +277,7 @@
 
 ---
 
-<!-- fc id:T-50-013 sha:fd98d081 src:manual/50-bezpeka.md:25 klas:E -->
+<!-- fc id:T-50-013 sha:fd98d081 src:manual/50-bezpeka.md:26 klas:E -->
 ### T-50-013 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -460,7 +460,7 @@
 
 ---
 
-<!-- fc id:T-50-021 sha:5b80ddcb src:manual/50-bezpeka.md:53 klas:E -->
+<!-- fc id:T-50-021 sha:5b80ddcb src:manual/50-bezpeka.md:55 klas:E -->
 ### T-50-021 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -550,7 +550,7 @@ ESP-IDF підтримує шифрування NVS: ключі зберігаю
 
 ---
 
-<!-- fc id:T-50-025 sha:30f447f1 src:manual/50-bezpeka.md:63 klas:F -->
+<!-- fc id:T-50-025 sha:30f447f1 src:manual/50-bezpeka.md:64 klas:F -->
 ### T-50-025 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -600,7 +600,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-027 sha:5548418d src:manual/50-bezpeka.md:66 klas:F -->
+<!-- fc id:T-50-027 sha:5548418d src:manual/50-bezpeka.md:67 klas:F -->
 ### T-50-027 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -666,7 +666,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-030 sha:da66469b src:manual/50-bezpeka.md:73 klas:E -->
+<!-- fc id:T-50-030 sha:da66469b src:manual/50-bezpeka.md:75 klas:E -->
 ### T-50-030 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -712,7 +712,7 @@ Encryption. Без неї ключ шифрування NVS лежить у то
 
 ---
 
-<!-- fc id:T-50-032 sha:eccf64a9 src:manual/50-bezpeka.md:77 klas:E -->
+<!-- fc id:T-50-032 sha:eccf64a9 src:manual/50-bezpeka.md:78 klas:E -->
 ### T-50-032 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -887,7 +887,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-039 sha:5f9b9f7d src:manual/50-bezpeka.md:92 klas:E -->
+<!-- fc id:T-50-039 sha:5f9b9f7d src:manual/50-bezpeka.md:93 klas:E -->
 ### T-50-039 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1000,7 +1000,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-044 sha:e254f1bb src:manual/50-bezpeka.md:105 klas:E -->
+<!-- fc id:T-50-044 sha:e254f1bb src:manual/50-bezpeka.md:106 klas:E -->
 ### T-50-044 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1211,7 +1211,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-053 sha:7ede4627 src:manual/50-bezpeka.md:131 klas:E -->
+<!-- fc id:T-50-053 sha:7ede4627 src:manual/50-bezpeka.md:132 klas:E -->
 ### T-50-053 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**
@@ -1324,7 +1324,7 @@ OTA — це канал, яким у пристрій потрапляє код.
 
 ---
 
-<!-- fc id:T-50-058 sha:289c8da5 src:manual/50-bezpeka.md:148 klas:E -->
+<!-- fc id:T-50-058 sha:289c8da5 src:manual/50-bezpeka.md:150 klas:E -->
 ### T-50-058 · proza · `manual/50-bezpeka.md`
 
 **Твердження, коротко**

@@ -21,7 +21,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Eight of the seventeen kinds below are one family. The check runs, it
+Eight of the eighteen kinds below are one family. The check runs, it
 returns zero, and the zero means nothing — because it was never
 measuring the thing its name claims.
 
@@ -335,6 +335,29 @@ back.
 by checking that the quote is actually there, never by name
 similarity.** Same law as naming the document, approached from the
 other end.
+
+## 18. Removing the effect and leaving the cause
+
+**Symptom.** A defect is cleaned out of the place it was noticed, while
+the record that recreates it stays. The next routine run restores it.
+
+**Case.** Kind 16's seven book files were deleted from the cache and the
+matter considered closed. **The next download brought four of them
+back** — because eight manifest rows still named the book as a source,
+and the manifest is what downloads are driven from. Found only because
+the same person happened to download again the next day.
+
+Both maintainers then wrote the manifest check independently, within an
+hour, and each missed what the other saw: one keyed on the repository's
+name (catches an address outside `raw.githubusercontent`), the other on
+the path `…/manual/…` (catches a fork under a different owner). Neither
+alone covers both.
+
+> Removing the effect and leaving the cause is not a fix, it is a
+> postponement — and the postponement is invisible, because the place
+> you looked is genuinely clean.
+
+**Held by.** `tools/kesh-bez-knyhy.py`, both conditions, in `make check`.
 
 ---
 

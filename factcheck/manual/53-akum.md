@@ -87,7 +87,7 @@
 
 ---
 
-<!-- fc id:T-53-004 sha:522b1796 src:manual/53-akum.md:11 klas:A -->
+<!-- fc id:T-53-004 sha:522b1796 src:manual/53-akum.md:12 klas:A -->
 ### T-53-004 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -179,7 +179,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 ---
 
-<!-- fc id:T-53-007 sha:e46f3d6e src:manual/53-akum.md:18 klas:C -->
+<!-- fc id:T-53-007 sha:e46f3d6e src:manual/53-akum.md:20 klas:C -->
 ### T-53-007 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -207,7 +207,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 ---
 
-<!-- fc id:T-53-008 sha:9fb8f6cb src:manual/53-akum.md:18 klas:E -->
+<!-- fc id:T-53-008 sha:9fb8f6cb src:manual/53-akum.md:20 klas:E -->
 ### T-53-008 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 ---
 
-<!-- fc id:T-53-010 sha:f5c064b9 src:manual/53-akum.md:23 klas:A -->
+<!-- fc id:T-53-010 sha:f5c064b9 src:manual/53-akum.md:24 klas:A -->
 ### T-53-010 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -298,7 +298,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 ---
 
-<!-- fc id:T-53-011 sha:454bc737 src:manual/53-akum.md:23 klas:A -->
+<!-- fc id:T-53-011 sha:454bc737 src:manual/53-akum.md:26 klas:A -->
 ### T-53-011 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -400,7 +400,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 ---
 
-<!-- fc id:T-53-015 sha:79b3a8f3 src:manual/53-akum.md:37 klas:E -->
+<!-- fc id:T-53-015 sha:79b3a8f3 src:manual/53-akum.md:38 klas:E -->
 ### T-53-015 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -464,7 +464,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 ---
 
-<!-- fc id:T-53-017 sha:86b9bf87 src:manual/53-akum.md:41 klas:A -->
+<!-- fc id:T-53-017 sha:86b9bf87 src:manual/53-akum.md:42 klas:A -->
 ### T-53-017 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -496,7 +496,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 ---
 
-<!-- fc id:T-53-018 sha:dd6fcc93 src:manual/53-akum.md:41 klas:A -->
+<!-- fc id:T-53-018 sha:dd6fcc93 src:manual/53-akum.md:44 klas:A -->
 ### T-53-018 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -598,7 +598,7 @@ Samsung INR18650-25R і -30Q, LG INR18650-MJ1 і HG2, Murata VTC6.
 
 ---
 
-<!-- fc id:T-53-022 sha:f101420b src:manual/53-akum.md:54 klas:E -->
+<!-- fc id:T-53-022 sha:f101420b src:manual/53-akum.md:55 klas:E -->
 ### T-53-022 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1025,7 +1025,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-038 sha:8387da56 src:manual/53-akum.md:101 klas:F -->
+<!-- fc id:T-53-038 sha:8387da56 src:manual/53-akum.md:102 klas:F -->
 ### T-53-038 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1101,7 +1101,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-041 sha:7aeb4568 src:manual/53-akum.md:109 klas:D -->
+<!-- fc id:T-53-041 sha:7aeb4568 src:manual/53-akum.md:110 klas:D -->
 ### T-53-041 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1232,7 +1232,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-046 sha:b3d80b33 src:manual/53-akum.md:121 klas:E -->
+<!-- fc id:T-53-046 sha:b3d80b33 src:manual/53-akum.md:122 klas:E -->
 ### T-53-046 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1547,7 +1547,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-059 sha:5c21a0ca src:manual/53-akum.md:154 klas:E -->
+<!-- fc id:T-53-059 sha:5c21a0ca src:manual/53-akum.md:155 klas:E -->
 ### T-53-059 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1613,7 +1613,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-062 sha:ecaf97b6 src:manual/53-akum.md:162 klas:E -->
+<!-- fc id:T-53-062 sha:ecaf97b6 src:manual/53-akum.md:163 klas:E -->
 ### T-53-062 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1751,7 +1751,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-067 sha:1d8fdaf1 src:manual/53-akum.md:173 klas:E -->
+<!-- fc id:T-53-067 sha:1d8fdaf1 src:manual/53-akum.md:174 klas:E -->
 ### T-53-067 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1828,7 +1828,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-070 sha:0027b5b8 src:manual/53-akum.md:186 klas:E -->
+<!-- fc id:T-53-070 sha:0027b5b8 src:manual/53-akum.md:187 klas:E -->
 ### T-53-070 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1895,7 +1895,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-072 sha:1beb0891 src:manual/53-akum.md:191 klas:E -->
+<!-- fc id:T-53-072 sha:1beb0891 src:manual/53-akum.md:193 klas:E -->
 ### T-53-072 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1921,7 +1921,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-073 sha:bfcd7699 src:manual/53-akum.md:191 klas:E -->
+<!-- fc id:T-53-073 sha:bfcd7699 src:manual/53-akum.md:194 klas:E -->
 ### T-53-073 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**
@@ -1970,7 +1970,7 @@ TP4056 продається у **двох варіантах**: із захис�
 
 ---
 
-<!-- fc id:T-53-075 sha:c2a53018 src:manual/53-akum.md:198 klas:C -->
+<!-- fc id:T-53-075 sha:c2a53018 src:manual/53-akum.md:199 klas:C -->
 ### T-53-075 · proza · `manual/53-akum.md`
 
 **Твердження, коротко**

@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-K03-004 sha:896f61c4 src:kartky/k03-pidkl.md:11 klas:E -->
+<!-- fc id:T-K03-004 sha:896f61c4 src:kartky/k03-pidkl.md:12 klas:E -->
 ### T-K03-004 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -142,7 +142,7 @@
 
 ---
 
-<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:16 klas:F -->
+<!-- fc id:T-K03-007 sha:bb3527b6 src:kartky/k03-pidkl.md:17 klas:F -->
 ### T-K03-007 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -573,7 +573,7 @@ Windows: `Диспетчер пристроїв` → жовтий знак ок�
 
 ---
 
-<!-- fc id:T-K03-019 sha:9014d1b4 src:kartky/k03-pidkl.md:31 klas:F -->
+<!-- fc id:T-K03-019 sha:9014d1b4 src:kartky/k03-pidkl.md:32 klas:F -->
 ### T-K03-019 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -794,7 +794,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:55 klas:E -->
+<!-- fc id:T-K03-028 sha:6908eac2 src:kartky/k03-pidkl.md:56 klas:E -->
 ### T-K03-028 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ sudo usermod -aG dialout $USER
 
 ---
 
-<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:55 klas:E -->
+<!-- fc id:T-K03-029 sha:dc22a6aa src:kartky/k03-pidkl.md:56 klas:E -->
 ### T-K03-029 · proza · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**

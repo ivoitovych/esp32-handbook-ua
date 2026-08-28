@@ -108,7 +108,7 @@
 
 ---
 
-<!-- fc id:T-C-004 sha:6ac69acd src:dodatky/c-komandy.md:5 klas:A -->
+<!-- fc id:T-C-004 sha:6ac69acd src:dodatky/c-komandy.md:6 klas:A -->
 ### T-C-004 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -864,7 +864,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-026 sha:2ca78c71 src:dodatky/c-komandy.md:56 klas:A -->
+<!-- fc id:T-C-026 sha:2ca78c71 src:dodatky/c-komandy.md:57 klas:A -->
 ### T-C-026 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -905,7 +905,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-027 sha:1bd7ba52 src:dodatky/c-komandy.md:56 klas:E -->
+<!-- fc id:T-C-027 sha:1bd7ba52 src:dodatky/c-komandy.md:58 klas:E -->
 ### T-C-027 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1314,7 +1314,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-038 sha:3fe48028 src:dodatky/c-komandy.md:74 klas:F -->
+<!-- fc id:T-C-038 sha:3fe48028 src:dodatky/c-komandy.md:75 klas:F -->
 ### T-C-038 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -1361,7 +1361,7 @@ argument`. Значення має збігатися з чипом, під як
 
 ---
 
-<!-- fc id:T-C-040 sha:e708ae5d src:dodatky/c-komandy.md:79 klas:E -->
+<!-- fc id:T-C-040 sha:e708ae5d src:dodatky/c-komandy.md:80 klas:E -->
 ### T-C-040 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2092,7 +2092,7 @@ idf.py merge-bin -o vyrib.bin           # один образ; адреси — 
 
 ---
 
-<!-- fc id:T-C-058 sha:850fe94c src:dodatky/c-komandy.md:117 klas:A -->
+<!-- fc id:T-C-058 sha:850fe94c src:dodatky/c-komandy.md:119 klas:A -->
 ### T-C-058 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4348,7 +4348,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-118 sha:aa2e7ddd src:dodatky/c-komandy.md:204 klas:A -->
+<!-- fc id:T-C-118 sha:aa2e7ddd src:dodatky/c-komandy.md:205 klas:A -->
 ### T-C-118 · proza · `dodatky/c-komandy.md`
 
 **Твердження, коротко**

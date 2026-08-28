@@ -77,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-22-004 sha:57c4d58c src:manual/22-zberezhennya-stanu.md:7 klas:E -->
+<!-- fc id:T-22-004 sha:57c4d58c src:manual/22-zberezhennya-stanu.md:8 klas:E -->
 ### T-22-004 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -235,7 +235,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-011 sha:9f9b6a3e src:manual/22-zberezhennya-stanu.md:29 klas:E -->
+<!-- fc id:T-22-011 sha:9f9b6a3e src:manual/22-zberezhennya-stanu.md:30 klas:E -->
 ### T-22-011 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -371,7 +371,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-017 sha:e765822c src:manual/22-zberezhennya-stanu.md:46 klas:E -->
+<!-- fc id:T-22-017 sha:e765822c src:manual/22-zberezhennya-stanu.md:47 klas:E -->
 ### T-22-017 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -396,7 +396,7 @@ RTC.
 
 ---
 
-<!-- fc id:T-22-018 sha:2af0fb76 src:manual/22-zberezhennya-stanu.md:46 klas:E -->
+<!-- fc id:T-22-018 sha:2af0fb76 src:manual/22-zberezhennya-stanu.md:47 klas:E -->
 ### T-22-018 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -754,7 +754,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-030 sha:1b6544f5 src:manual/22-zberezhennya-stanu.md:67 klas:E -->
+<!-- fc id:T-22-030 sha:1b6544f5 src:manual/22-zberezhennya-stanu.md:68 klas:E -->
 ### T-22-030 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -799,7 +799,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-032 sha:603e3101 src:manual/22-zberezhennya-stanu.md:70 klas:F -->
+<!-- fc id:T-22-032 sha:603e3101 src:manual/22-zberezhennya-stanu.md:71 klas:F -->
 ### T-22-032 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -898,7 +898,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-036 sha:6b9dba49 src:manual/22-zberezhennya-stanu.md:81 klas:E -->
+<!-- fc id:T-22-036 sha:6b9dba49 src:manual/22-zberezhennya-stanu.md:82 klas:E -->
 ### T-22-036 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1032,7 +1032,7 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 
 ---
 
-<!-- fc id:T-22-041 sha:8ce63075 src:manual/22-zberezhennya-stanu.md:90 klas:E -->
+<!-- fc id:T-22-041 sha:8ce63075 src:manual/22-zberezhennya-stanu.md:91 klas:E -->
 ### T-22-041 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1224,7 +1224,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-048 sha:2403c92b src:manual/22-zberezhennya-stanu.md:105 klas:F -->
+<!-- fc id:T-22-048 sha:2403c92b src:manual/22-zberezhennya-stanu.md:106 klas:F -->
 ### T-22-048 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1271,7 +1271,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-050 sha:ecd3eefc src:manual/22-zberezhennya-stanu.md:110 klas:E -->
+<!-- fc id:T-22-050 sha:ecd3eefc src:manual/22-zberezhennya-stanu.md:111 klas:E -->
 ### T-22-050 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1318,7 +1318,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-052 sha:e474fa90 src:manual/22-zberezhennya-stanu.md:114 klas:E -->
+<!-- fc id:T-22-052 sha:e474fa90 src:manual/22-zberezhennya-stanu.md:115 klas:E -->
 ### T-22-052 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1421,7 +1421,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-056 sha:3022a741 src:manual/22-zberezhennya-stanu.md:125 klas:E -->
+<!-- fc id:T-22-056 sha:3022a741 src:manual/22-zberezhennya-stanu.md:126 klas:E -->
 ### T-22-056 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**
@@ -1641,7 +1641,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 
 ---
 
-<!-- fc id:T-22-065 sha:20e09f60 src:manual/22-zberezhennya-stanu.md:152 klas:E -->
+<!-- fc id:T-22-065 sha:20e09f60 src:manual/22-zberezhennya-stanu.md:153 klas:E -->
 ### T-22-065 · proza · `manual/22-zberezhennya-stanu.md`
 
 **Твердження, коротко**

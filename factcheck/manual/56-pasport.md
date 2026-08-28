@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-56-002 sha:4fcec0d2 src:manual/56-pasport.md:3 klas:E -->
+<!-- fc id:T-56-002 sha:4fcec0d2 src:manual/56-pasport.md:4 klas:E -->
 ### T-56-002 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -160,7 +160,7 @@
 
 ---
 
-<!-- fc id:T-56-008 sha:abd09351 src:manual/56-pasport.md:16 klas:E -->
+<!-- fc id:T-56-008 sha:abd09351 src:manual/56-pasport.md:17 klas:E -->
 ### T-56-008 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -761,7 +761,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-029 sha:8b46edd7 src:manual/56-pasport.md:65 klas:E -->
+<!-- fc id:T-56-029 sha:8b46edd7 src:manual/56-pasport.md:66 klas:E -->
 ### T-56-029 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -809,7 +809,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 nasos-v1.4.bin
 
 ---
 
-<!-- fc id:T-56-031 sha:bfcb9e85 src:manual/56-pasport.md:69 klas:E -->
+<!-- fc id:T-56-031 sha:bfcb9e85 src:manual/56-pasport.md:70 klas:E -->
 ### T-56-031 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -950,7 +950,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-037 sha:8dcafc65 src:manual/56-pasport.md:87 klas:E -->
+<!-- fc id:T-56-037 sha:8dcafc65 src:manual/56-pasport.md:88 klas:E -->
 ### T-56-037 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1001,7 +1001,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-039 sha:77250e0c src:manual/56-pasport.md:92 klas:F -->
+<!-- fc id:T-56-039 sha:77250e0c src:manual/56-pasport.md:94 klas:F -->
 ### T-56-039 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1149,7 +1149,7 @@ ESP_LOGI(TAG, "Насос-контролер v1.4, зібрано %s %s", __DATE
 
 ---
 
-<!-- fc id:T-56-045 sha:26887cac src:manual/56-pasport.md:114 klas:F -->
+<!-- fc id:T-56-045 sha:26887cac src:manual/56-pasport.md:115 klas:F -->
 ### T-56-045 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1286,7 +1286,7 @@ v1.2  2026-06-02  Скидання налаштувань довгим нати�
 
 ---
 
-<!-- fc id:T-56-050 sha:a2770129 src:manual/56-pasport.md:133 klas:E -->
+<!-- fc id:T-56-050 sha:a2770129 src:manual/56-pasport.md:134 klas:E -->
 ### T-56-050 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1492,7 +1492,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-059 sha:dc16e2b3 src:manual/56-pasport.md:167 klas:E -->
+<!-- fc id:T-56-059 sha:dc16e2b3 src:manual/56-pasport.md:168 klas:E -->
 ### T-56-059 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1539,7 +1539,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-061 sha:29a82b3c src:manual/56-pasport.md:171 klas:E -->
+<!-- fc id:T-56-061 sha:29a82b3c src:manual/56-pasport.md:172 klas:E -->
 ### T-56-061 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1634,7 +1634,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-065 sha:cd24f915 src:manual/56-pasport.md:187 klas:E -->
+<!-- fc id:T-56-065 sha:cd24f915 src:manual/56-pasport.md:188 klas:E -->
 ### T-56-065 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**
@@ -1658,7 +1658,7 @@ ESP32 і не має знати.
 
 ---
 
-<!-- fc id:T-56-066 sha:c7a13eb2 src:manual/56-pasport.md:187 klas:E -->
+<!-- fc id:T-56-066 sha:c7a13eb2 src:manual/56-pasport.md:189 klas:E -->
 ### T-56-066 · proza · `manual/56-pasport.md`
 
 **Твердження, коротко**

@@ -1170,7 +1170,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-035 sha:8ae34cb3 src:kartky/k15-seriyna.md:51 klas:E -->
+<!-- fc id:T-K15-035 sha:8ae34cb3 src:kartky/k15-seriyna.md:52 klas:E -->
 ### T-K15-035 · proza · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -1432,7 +1432,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-K15-044 sha:db835ae1 src:kartky/k15-seriyna.md:76 klas:E -->
+<!-- fc id:T-K15-044 sha:db835ae1 src:kartky/k15-seriyna.md:77 klas:E -->
 ### T-K15-044 · proza · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -1526,7 +1526,7 @@ esptool --port PORT write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-K15-047 sha:a5422053 src:kartky/k15-seriyna.md:88 klas:E -->
+<!-- fc id:T-K15-047 sha:a5422053 src:kartky/k15-seriyna.md:91 klas:E -->
 ### T-K15-047 · proza · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**

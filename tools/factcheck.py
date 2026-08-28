@@ -259,24 +259,60 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
     odynyci: list[tuple[str, str, int]] = []
     ryadky = text.split("\n")
     i, n = 0, len(ryadky)
-    buf: list[str] = []
+    # Кожен рядок несе свій номер: інакше всі речення абзацу дістають
+    # номер його **початку**, і картка обіцяє точність, якої не має.
+    #
+    # Спіймано звіркою з `shar1.py` М2: п'ять карток списку в `k01`
+    # стояли з одним номером 38, тоді як пункти лежать на 38–42. Мій
+    # `stale` цього не бачив і побачити не міг — він звіряє генератор
+    # сам із собою, а не з книгою.
+    #
+    # > Дві перевірки того самого шару розійшлися, і обидві мали рацію:
+    # > одна питала «чи реєстр із цієї книги», друга — «чи номер веде
+    # > туди, куди обіцяє». Друге питання ми не ставили ніколи.
+    buf: list[tuple[int, str]] = []
     buf_vid = 0
 
     def zlyty_prozu():
         nonlocal buf, buf_vid
         if not buf:
             return
-        blok = " ".join(x.strip() for x in buf if x.strip())
+        # Зшиваємо блок і запам'ятовуємо, з якого символу починається
+        # кожен рядок — щоб потім віддати реченню номер його власного
+        # рядка, а не рядка абзацу.
+        chastky, mezhi, poz = [], [], 0
+        for nomer, x in buf:
+            s = x.strip()
+            if not s:
+                continue
+            mezhi.append((poz, nomer))
+            chastky.append(s)
+            poz += len(s) + 1
+        blok = " ".join(chastky)
         buf = []
         if not blok:
             return
+
+        def ryadok_dlya(zmishchennya: int) -> int:
+            ostannij = buf_vid
+            for p, nomer in mezhi:
+                if p > zmishchennya:
+                    break
+                ostannij = nomer
+            return ostannij
+
         # Речення. Крапка в «0x1000.» або «v5.5» не завершує речення, тому
         # ділимо лише там, де за розділовим знаком іде велика літера або тире.
+        shukach = 0
         chastyny = re.split(r"(?<=[.!?])\s+(?=[«»А-ЯЇІЄҐA-Z\[`*—-])", blok)
         for c in chastyny:
+            zm = blok.find(c, shukach)
+            if zm < 0:
+                zm = shukach
+            shukach = zm + len(c)
             c = c.strip()
             if len(c) >= 25:
-                odynyci.append(("proza", c, buf_vid))
+                odynyci.append(("proza", c, ryadok_dlya(zm)))
 
     while i < n:
         r = ryadky[i]
@@ -308,7 +344,7 @@ def rozbyty(text: str) -> list[tuple[str, str, int]]:
             continue
         if not buf:
             buf_vid = i + 1
-        buf.append(r)
+        buf.append((i + 1, r))
         i += 1
     zlyty_prozu()
     return odynyci

@@ -568,7 +568,7 @@
 
 ---
 
-<!-- fc id:T-K01-019 sha:26e56daa src:kartky/k01-triazh.md:24 klas:A -->
+<!-- fc id:T-K01-019 sha:26e56daa src:kartky/k01-triazh.md:25 klas:A -->
 ### T-K01-019 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -623,7 +623,7 @@
 
 ---
 
-<!-- fc id:T-K01-021 sha:5e734fa8 src:kartky/k01-triazh.md:29 klas:E -->
+<!-- fc id:T-K01-021 sha:5e734fa8 src:kartky/k01-triazh.md:30 klas:E -->
 ### T-K01-021 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -729,7 +729,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-025 sha:77cc1bbf src:kartky/k01-triazh.md:38 klas:E -->
+<!-- fc id:T-K01-025 sha:77cc1bbf src:kartky/k01-triazh.md:39 klas:E -->
 ### T-K01-025 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -754,7 +754,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-026 sha:442e5b70 src:kartky/k01-triazh.md:38 klas:F -->
+<!-- fc id:T-K01-026 sha:442e5b70 src:kartky/k01-triazh.md:39 klas:F -->
 ### T-K01-026 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -779,7 +779,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-027 sha:68f8ba27 src:kartky/k01-triazh.md:38 klas:E -->
+<!-- fc id:T-K01-027 sha:68f8ba27 src:kartky/k01-triazh.md:41 klas:E -->
 ### T-K01-027 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -804,7 +804,7 @@ USB-кабель має бути **data**, а не тільки для заря�
 
 ---
 
-<!-- fc id:T-K01-028 sha:36d5b847 src:kartky/k01-triazh.md:38 klas:E -->
+<!-- fc id:T-K01-028 sha:36d5b847 src:kartky/k01-triazh.md:42 klas:E -->
 ### T-K01-028 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -913,7 +913,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-032 sha:e687b58d src:kartky/k01-triazh.md:50 klas:A -->
+<!-- fc id:T-K01-032 sha:e687b58d src:kartky/k01-triazh.md:52 klas:A -->
 ### T-K01-032 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -1019,7 +1019,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-K01-036 sha:0ed28b48 src:kartky/k01-triazh.md:62 klas:E -->
+<!-- fc id:T-K01-036 sha:0ed28b48 src:kartky/k01-triazh.md:63 klas:E -->
 ### T-K01-036 · proza · `kartky/k01-triazh.md`
 
 **Твердження, коротко**

@@ -36,7 +36,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 ---
 
-<!-- fc id:T-42-002 sha:dd3855b4 src:manual/42-espnow.md:3 klas:E -->
+<!-- fc id:T-42-002 sha:dd3855b4 src:manual/42-espnow.md:4 klas:E -->
 ### T-42-002 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -104,7 +104,7 @@ ESP-NOW — власний протокол Espressif для прямого об
 
 ---
 
-<!-- fc id:T-42-005 sha:63289213 src:manual/42-espnow.md:11 klas:E -->
+<!-- fc id:T-42-005 sha:63289213 src:manual/42-espnow.md:12 klas:E -->
 ### T-42-005 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -221,7 +221,7 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ---
 
-<!-- fc id:T-42-010 sha:88f5799c src:manual/42-espnow.md:22 klas:E -->
+<!-- fc id:T-42-010 sha:88f5799c src:manual/42-espnow.md:23 klas:E -->
 ### T-42-010 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -811,7 +811,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-029 sha:6871d700 src:manual/42-espnow.md:65 klas:B -->
+<!-- fc id:T-42-029 sha:6871d700 src:manual/42-espnow.md:66 klas:B -->
 ### T-42-029 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -869,7 +869,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-031 sha:057d29d7 src:manual/42-espnow.md:68 klas:A -->
+<!-- fc id:T-42-031 sha:057d29d7 src:manual/42-espnow.md:69 klas:A -->
 ### T-42-031 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -899,7 +899,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-032 sha:adbb1161 src:manual/42-espnow.md:68 klas:A -->
+<!-- fc id:T-42-032 sha:adbb1161 src:manual/42-espnow.md:70 klas:A -->
 ### T-42-032 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -969,7 +969,7 @@ esp_now_register_recv_cb(on_recv);
 
 ---
 
-<!-- fc id:T-42-034 sha:9df638c8 src:manual/42-espnow.md:73 klas:E -->
+<!-- fc id:T-42-034 sha:9df638c8 src:manual/42-espnow.md:74 klas:E -->
 ### T-42-034 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1130,7 +1130,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 ---
 
-<!-- fc id:T-42-040 sha:01364990 src:manual/42-espnow.md:91 klas:E -->
+<!-- fc id:T-42-040 sha:01364990 src:manual/42-espnow.md:94 klas:E -->
 ### T-42-040 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1201,7 +1201,7 @@ broadcast-обміном із власним шифруванням у полі 
 
 ---
 
-<!-- fc id:T-42-043 sha:7d22d1f8 src:manual/42-espnow.md:103 klas:E -->
+<!-- fc id:T-42-043 sha:7d22d1f8 src:manual/42-espnow.md:104 klas:E -->
 ### T-42-043 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1441,7 +1441,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-052 sha:1cbf3006 src:manual/42-espnow.md:124 klas:E -->
+<!-- fc id:T-42-052 sha:1cbf3006 src:manual/42-espnow.md:125 klas:E -->
 ### T-42-052 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1488,7 +1488,7 @@ memcpy(peer.lmk, "lmk1234567890123", 16);
 
 ---
 
-<!-- fc id:T-42-054 sha:b135d061 src:manual/42-espnow.md:128 klas:F -->
+<!-- fc id:T-42-054 sha:b135d061 src:manual/42-espnow.md:129 klas:F -->
 ### T-42-054 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1652,7 +1652,7 @@ ESP-NOW працював, партнери мусять бути **на тому
 
 ---
 
-<!-- fc id:T-42-061 sha:6135207f src:manual/42-espnow.md:144 klas:E -->
+<!-- fc id:T-42-061 sha:6135207f src:manual/42-espnow.md:145 klas:E -->
 ### T-42-061 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1698,7 +1698,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-063 sha:7ff46ce5 src:manual/42-espnow.md:147 klas:F -->
+<!-- fc id:T-42-063 sha:7ff46ce5 src:manual/42-espnow.md:148 klas:F -->
 ### T-42-063 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1744,7 +1744,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-065 sha:e7ae9737 src:manual/42-espnow.md:152 klas:E -->
+<!-- fc id:T-42-065 sha:e7ae9737 src:manual/42-espnow.md:153 klas:E -->
 ### T-42-065 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1791,7 +1791,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-067 sha:570fdf0b src:manual/42-espnow.md:156 klas:E -->
+<!-- fc id:T-42-067 sha:570fdf0b src:manual/42-espnow.md:157 klas:E -->
 ### T-42-067 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**
@@ -1897,7 +1897,7 @@ ESP-NOW рівним каналу точки доступу — і, якщо р�
 
 ---
 
-<!-- fc id:T-42-071 sha:92ea83dd src:manual/42-espnow.md:169 klas:B -->
+<!-- fc id:T-42-071 sha:92ea83dd src:manual/42-espnow.md:170 klas:B -->
 ### T-42-071 · proza · `manual/42-espnow.md`
 
 **Твердження, коротко**

@@ -49,7 +49,7 @@
 
 ---
 
-<!-- fc id:T-26-002 sha:600dd00b src:manual/26-zboyi.md:3 klas:E -->
+<!-- fc id:T-26-002 sha:600dd00b src:manual/26-zboyi.md:4 klas:E -->
 ### T-26-002 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -327,7 +327,7 @@ Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled
 
 ---
 
-<!-- fc id:T-26-012 sha:2c5c44dc src:manual/26-zboyi.md:31 klas:E -->
+<!-- fc id:T-26-012 sha:2c5c44dc src:manual/26-zboyi.md:33 klas:E -->
 ### T-26-012 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1224,7 +1224,7 @@ Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled
 
 ---
 
-<!-- fc id:T-26-028 sha:202f36a9 src:manual/26-zboyi.md:48 klas:F -->
+<!-- fc id:T-26-028 sha:202f36a9 src:manual/26-zboyi.md:49 klas:F -->
 ### T-26-028 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1272,7 +1272,7 @@ Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled
 
 ---
 
-<!-- fc id:T-26-030 sha:57bdf5fd src:manual/26-zboyi.md:53 klas:F -->
+<!-- fc id:T-26-030 sha:57bdf5fd src:manual/26-zboyi.md:54 klas:F -->
 ### T-26-030 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1321,7 +1321,7 @@ Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled
 
 ---
 
-<!-- fc id:T-26-032 sha:03382f5a src:manual/26-zboyi.md:58 klas:E -->
+<!-- fc id:T-26-032 sha:03382f5a src:manual/26-zboyi.md:59 klas:E -->
 ### T-26-032 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1590,7 +1590,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-041 sha:21946ec5 src:manual/26-zboyi.md:82 klas:E -->
+<!-- fc id:T-26-041 sha:21946ec5 src:manual/26-zboyi.md:84 klas:E -->
 ### T-26-041 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1644,7 +1644,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-043 sha:bb511d58 src:manual/26-zboyi.md:88 klas:E -->
+<!-- fc id:T-26-043 sha:bb511d58 src:manual/26-zboyi.md:90 klas:E -->
 ### T-26-043 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1750,7 +1750,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-046 sha:e10ba098 src:manual/26-zboyi.md:92 klas:A -->
+<!-- fc id:T-26-046 sha:e10ba098 src:manual/26-zboyi.md:95 klas:A -->
 ### T-26-046 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1860,7 +1860,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-049 sha:4980da78 src:manual/26-zboyi.md:103 klas:E -->
+<!-- fc id:T-26-049 sha:4980da78 src:manual/26-zboyi.md:104 klas:E -->
 ### T-26-049 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1963,7 +1963,7 @@ RISC-V — `riscv32-esp-elf-addr2line`.
 
 ---
 
-<!-- fc id:T-26-053 sha:fce80b0b src:manual/26-zboyi.md:111 klas:D -->
+<!-- fc id:T-26-053 sha:fce80b0b src:manual/26-zboyi.md:112 klas:D -->
 ### T-26-053 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2290,7 +2290,7 @@ E (5234) task_wdt: CPU 0: my_task
 
 ---
 
-<!-- fc id:T-26-064 sha:3e706fc4 src:manual/26-zboyi.md:140 klas:F -->
+<!-- fc id:T-26-064 sha:3e706fc4 src:manual/26-zboyi.md:141 klas:F -->
 ### T-26-064 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2552,7 +2552,7 @@ running` прямо каже, хто винен.
 
 ---
 
-<!-- fc id:T-26-073 sha:7b2b476d src:manual/26-zboyi.md:162 klas:A -->
+<!-- fc id:T-26-073 sha:7b2b476d src:manual/26-zboyi.md:163 klas:A -->
 ### T-26-073 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2780,7 +2780,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-080 sha:73fe2b19 src:manual/26-zboyi.md:185 klas:E -->
+<!-- fc id:T-26-080 sha:73fe2b19 src:manual/26-zboyi.md:186 klas:E -->
 ### T-26-080 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2847,7 +2847,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-083 sha:8fb46bd6 src:manual/26-zboyi.md:190 klas:E -->
+<!-- fc id:T-26-083 sha:8fb46bd6 src:manual/26-zboyi.md:191 klas:E -->
 ### T-26-083 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -2871,7 +2871,7 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 
 ---
 
-<!-- fc id:T-26-084 sha:f91c02a9 src:manual/26-zboyi.md:190 klas:E -->
+<!-- fc id:T-26-084 sha:f91c02a9 src:manual/26-zboyi.md:192 klas:E -->
 ### T-26-084 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3351,7 +3351,7 @@ ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
 
 ---
 
-<!-- fc id:T-26-103 sha:01cd2bea src:manual/26-zboyi.md:228 klas:E -->
+<!-- fc id:T-26-103 sha:01cd2bea src:manual/26-zboyi.md:229 klas:E -->
 ### T-26-103 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3561,7 +3561,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-109 sha:154e3023 src:manual/26-zboyi.md:241 klas:E -->
+<!-- fc id:T-26-109 sha:154e3023 src:manual/26-zboyi.md:242 klas:E -->
 ### T-26-109 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3610,7 +3610,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-111 sha:2622940b src:manual/26-zboyi.md:246 klas:F -->
+<!-- fc id:T-26-111 sha:2622940b src:manual/26-zboyi.md:247 klas:F -->
 ### T-26-111 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3636,7 +3636,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-112 sha:f5ed97d2 src:manual/26-zboyi.md:246 klas:F -->
+<!-- fc id:T-26-112 sha:f5ed97d2 src:manual/26-zboyi.md:248 klas:F -->
 ### T-26-112 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3701,7 +3701,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-114 sha:0e195791 src:manual/26-zboyi.md:254 klas:A -->
+<!-- fc id:T-26-114 sha:0e195791 src:manual/26-zboyi.md:256 klas:A -->
 ### T-26-114 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3736,7 +3736,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-115 sha:a9a4f529 src:manual/26-zboyi.md:254 klas:F -->
+<!-- fc id:T-26-115 sha:a9a4f529 src:manual/26-zboyi.md:258 klas:F -->
 ### T-26-115 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3765,7 +3765,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-116 sha:9f6b0ad0 src:manual/26-zboyi.md:254 klas:E -->
+<!-- fc id:T-26-116 sha:9f6b0ad0 src:manual/26-zboyi.md:259 klas:E -->
 ### T-26-116 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3794,7 +3794,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-117 sha:54fce724 src:manual/26-zboyi.md:254 klas:F -->
+<!-- fc id:T-26-117 sha:54fce724 src:manual/26-zboyi.md:261 klas:F -->
 ### T-26-117 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -3867,7 +3867,7 @@ idf.py coredump-debug
 
 ---
 
-<!-- fc id:T-26-120 sha:719ceef5 src:manual/26-zboyi.md:269 klas:E -->
+<!-- fc id:T-26-120 sha:719ceef5 src:manual/26-zboyi.md:270 klas:E -->
 ### T-26-120 · proza · `manual/26-zboyi.md`
 
 **Твердження, коротко**

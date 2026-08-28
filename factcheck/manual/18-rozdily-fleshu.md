@@ -38,7 +38,7 @@
 
 ---
 
-<!-- fc id:T-18-002 sha:87d0e3e7 src:manual/18-rozdily-fleshu.md:3 klas:A -->
+<!-- fc id:T-18-002 sha:87d0e3e7 src:manual/18-rozdily-fleshu.md:5 klas:A -->
 ### T-18-002 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-18-004 sha:9c606f2f src:manual/18-rozdily-fleshu.md:8 klas:E -->
+<!-- fc id:T-18-004 sha:9c606f2f src:manual/18-rozdily-fleshu.md:10 klas:E -->
 ### T-18-004 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-18-006 sha:4bb6abfa src:manual/18-rozdily-fleshu.md:15 klas:E -->
+<!-- fc id:T-18-006 sha:4bb6abfa src:manual/18-rozdily-fleshu.md:16 klas:E -->
 ### T-18-006 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -229,7 +229,7 @@
 
 ---
 
-<!-- fc id:T-18-008 sha:f3faaf6a src:manual/18-rozdily-fleshu.md:19 klas:D -->
+<!-- fc id:T-18-008 sha:f3faaf6a src:manual/18-rozdily-fleshu.md:20 klas:D -->
 ### T-18-008 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -903,7 +903,7 @@
 
 ---
 
-<!-- fc id:T-18-025 sha:6ad702cc src:manual/18-rozdily-fleshu.md:33 klas:A -->
+<!-- fc id:T-18-025 sha:6ad702cc src:manual/18-rozdily-fleshu.md:34 klas:A -->
 ### T-18-025 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -978,7 +978,7 @@
 
 ---
 
-<!-- fc id:T-18-027 sha:20700e13 src:manual/18-rozdily-fleshu.md:37 klas:A -->
+<!-- fc id:T-18-027 sha:20700e13 src:manual/18-rozdily-fleshu.md:38 klas:A -->
 ### T-18-027 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1089,7 +1089,7 @@
 
 ---
 
-<!-- fc id:T-18-031 sha:f936f28f src:manual/18-rozdily-fleshu.md:46 klas:E -->
+<!-- fc id:T-18-031 sha:f936f28f src:manual/18-rozdily-fleshu.md:47 klas:E -->
 ### T-18-031 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1267,7 +1267,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-037 sha:170e004e src:manual/18-rozdily-fleshu.md:57 klas:E -->
+<!-- fc id:T-18-037 sha:170e004e src:manual/18-rozdily-fleshu.md:58 klas:E -->
 ### T-18-037 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1472,7 +1472,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-043 sha:2cfd4562 src:manual/18-rozdily-fleshu.md:79 klas:A -->
+<!-- fc id:T-18-043 sha:2cfd4562 src:manual/18-rozdily-fleshu.md:80 klas:A -->
 ### T-18-043 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1516,7 +1516,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-044 sha:14b13bf4 src:manual/18-rozdily-fleshu.md:79 klas:E -->
+<!-- fc id:T-18-044 sha:14b13bf4 src:manual/18-rozdily-fleshu.md:81 klas:E -->
 ### T-18-044 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1588,7 +1588,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-046 sha:16a9ef2e src:manual/18-rozdily-fleshu.md:85 klas:F -->
+<!-- fc id:T-18-046 sha:16a9ef2e src:manual/18-rozdily-fleshu.md:86 klas:F -->
 ### T-18-046 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1612,7 +1612,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 
 ---
 
-<!-- fc id:T-18-047 sha:d288675c src:manual/18-rozdily-fleshu.md:85 klas:E -->
+<!-- fc id:T-18-047 sha:d288675c src:manual/18-rozdily-fleshu.md:87 klas:E -->
 ### T-18-047 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1678,7 +1678,7 @@ NVS (Non-Volatile Storage) — сховище пар «ключ — значен
 
 ---
 
-<!-- fc id:T-18-049 sha:52530cd3 src:manual/18-rozdily-fleshu.md:92 klas:E -->
+<!-- fc id:T-18-049 sha:52530cd3 src:manual/18-rozdily-fleshu.md:93 klas:E -->
 ### T-18-049 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1725,7 +1725,7 @@ NVS (Non-Volatile Storage) — сховище пар «ключ — значен
 
 ---
 
-<!-- fc id:T-18-051 sha:d7ea3d3a src:manual/18-rozdily-fleshu.md:97 klas:F -->
+<!-- fc id:T-18-051 sha:d7ea3d3a src:manual/18-rozdily-fleshu.md:98 klas:F -->
 ### T-18-051 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -1778,7 +1778,7 @@ NVS стійкий до зникнення живлення: запис влаш
 
 ---
 
-<!-- fc id:T-18-053 sha:9eef63be src:manual/18-rozdily-fleshu.md:101 klas:A -->
+<!-- fc id:T-18-053 sha:9eef63be src:manual/18-rozdily-fleshu.md:102 klas:A -->
 ### T-18-053 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2059,7 +2059,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-061 sha:92317196 src:manual/18-rozdily-fleshu.md:120 klas:A -->
+<!-- fc id:T-18-061 sha:92317196 src:manual/18-rozdily-fleshu.md:122 klas:A -->
 ### T-18-061 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2875,7 +2875,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-083 sha:c6ab43f6 src:manual/18-rozdily-fleshu.md:141 klas:E -->
+<!-- fc id:T-18-083 sha:c6ab43f6 src:manual/18-rozdily-fleshu.md:143 klas:E -->
 ### T-18-083 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2923,7 +2923,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-085 sha:784039ff src:manual/18-rozdily-fleshu.md:147 klas:F -->
+<!-- fc id:T-18-085 sha:784039ff src:manual/18-rozdily-fleshu.md:148 klas:F -->
 ### T-18-085 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3069,7 +3069,7 @@ idf.py add-dependency "joltwallet/littlefs^1.22.3"
 
 ---
 
-<!-- fc id:T-18-089 sha:bb45cfb1 src:manual/18-rozdily-fleshu.md:155 klas:E -->
+<!-- fc id:T-18-089 sha:bb45cfb1 src:manual/18-rozdily-fleshu.md:156 klas:E -->
 ### T-18-089 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3120,7 +3120,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-091 sha:2dd189cd src:manual/18-rozdily-fleshu.md:160 klas:A -->
+<!-- fc id:T-18-091 sha:2dd189cd src:manual/18-rozdily-fleshu.md:161 klas:A -->
 ### T-18-091 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3165,7 +3165,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-092 sha:3408b516 src:manual/18-rozdily-fleshu.md:160 klas:E -->
+<!-- fc id:T-18-092 sha:3408b516 src:manual/18-rozdily-fleshu.md:164 klas:E -->
 ### T-18-092 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3192,7 +3192,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-093 sha:fdd40a10 src:manual/18-rozdily-fleshu.md:160 klas:E -->
+<!-- fc id:T-18-093 sha:fdd40a10 src:manual/18-rozdily-fleshu.md:165 klas:E -->
 ### T-18-093 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3252,7 +3252,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-095 sha:0e9d20cb src:manual/18-rozdily-fleshu.md:169 klas:E -->
+<!-- fc id:T-18-095 sha:0e9d20cb src:manual/18-rozdily-fleshu.md:171 klas:E -->
 ### T-18-095 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3279,7 +3279,7 @@ microSD) читатиме звичайний комп'ютер. На вбудо�
 
 ---
 
-<!-- fc id:T-18-096 sha:b760318d src:manual/18-rozdily-fleshu.md:169 klas:E -->
+<!-- fc id:T-18-096 sha:b760318d src:manual/18-rozdily-fleshu.md:172 klas:E -->
 ### T-18-096 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3422,7 +3422,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-102 sha:473a8f0b src:manual/18-rozdily-fleshu.md:187 klas:A -->
+<!-- fc id:T-18-102 sha:473a8f0b src:manual/18-rozdily-fleshu.md:189 klas:A -->
 ### T-18-102 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3470,7 +3470,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-103 sha:d95fc6fa src:manual/18-rozdily-fleshu.md:187 klas:A -->
+<!-- fc id:T-18-103 sha:d95fc6fa src:manual/18-rozdily-fleshu.md:190 klas:A -->
 ### T-18-103 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3502,7 +3502,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-104 sha:6364cfd3 src:manual/18-rozdily-fleshu.md:187 klas:E -->
+<!-- fc id:T-18-104 sha:6364cfd3 src:manual/18-rozdily-fleshu.md:192 klas:E -->
 ### T-18-104 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3571,7 +3571,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-106 sha:18b9a9fd src:manual/18-rozdily-fleshu.md:195 klas:A -->
+<!-- fc id:T-18-106 sha:18b9a9fd src:manual/18-rozdily-fleshu.md:197 klas:A -->
 ### T-18-106 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3633,7 +3633,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-108 sha:e6335668 src:manual/18-rozdily-fleshu.md:200 klas:A -->
+<!-- fc id:T-18-108 sha:e6335668 src:manual/18-rozdily-fleshu.md:201 klas:A -->
 ### T-18-108 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3694,7 +3694,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-110 sha:9b05e136 src:manual/18-rozdily-fleshu.md:206 klas:A -->
+<!-- fc id:T-18-110 sha:9b05e136 src:manual/18-rozdily-fleshu.md:208 klas:A -->
 ### T-18-110 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3816,7 +3816,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-113 sha:32ebab82 src:manual/18-rozdily-fleshu.md:215 klas:F -->
+<!-- fc id:T-18-113 sha:32ebab82 src:manual/18-rozdily-fleshu.md:216 klas:F -->
 ### T-18-113 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3846,7 +3846,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-114 sha:52f12d51 src:manual/18-rozdily-fleshu.md:215 klas:D -->
+<!-- fc id:T-18-114 sha:52f12d51 src:manual/18-rozdily-fleshu.md:217 klas:D -->
 ### T-18-114 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3902,7 +3902,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-115 sha:5b4060f0 src:manual/18-rozdily-fleshu.md:215 klas:E -->
+<!-- fc id:T-18-115 sha:5b4060f0 src:manual/18-rozdily-fleshu.md:219 klas:E -->
 ### T-18-115 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3928,7 +3928,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-116 sha:b8548325 src:manual/18-rozdily-fleshu.md:215 klas:E -->
+<!-- fc id:T-18-116 sha:b8548325 src:manual/18-rozdily-fleshu.md:220 klas:E -->
 ### T-18-116 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -3988,7 +3988,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-118 sha:255c3b69 src:manual/18-rozdily-fleshu.md:223 klas:B -->
+<!-- fc id:T-18-118 sha:255c3b69 src:manual/18-rozdily-fleshu.md:224 klas:B -->
 ### T-18-118 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4022,7 +4022,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-119 sha:e612ab0d src:manual/18-rozdily-fleshu.md:223 klas:E -->
+<!-- fc id:T-18-119 sha:e612ab0d src:manual/18-rozdily-fleshu.md:225 klas:E -->
 ### T-18-119 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4053,7 +4053,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 
 ---
 
-<!-- fc id:T-18-120 sha:a369ddd0 src:manual/18-rozdily-fleshu.md:223 klas:E -->
+<!-- fc id:T-18-120 sha:a369ddd0 src:manual/18-rozdily-fleshu.md:227 klas:E -->
 ### T-18-120 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -4148,7 +4148,7 @@ NVS переживає оновлення прошивки, і саме тому
 
 ---
 
-<!-- fc id:T-18-123 sha:c0b50278 src:manual/18-rozdily-fleshu.md:236 klas:A -->
+<!-- fc id:T-18-123 sha:c0b50278 src:manual/18-rozdily-fleshu.md:237 klas:A -->
 ### T-18-123 · proza · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**

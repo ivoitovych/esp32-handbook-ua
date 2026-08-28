@@ -1138,7 +1138,7 @@ strapping-пінах: `0x01`=`GPIO5`, `0x02`=`GPIO15`, `0x04`=`GPIO4`,
 
 ---
 
-<!-- fc id:T-K06-028 sha:cf09f67f src:kartky/k06-bootlog.md:32 klas:A -->
+<!-- fc id:T-K06-028 sha:cf09f67f src:kartky/k06-bootlog.md:34 klas:A -->
 ### T-K06-028 · proza · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -1234,7 +1234,7 @@ strapping-пінах: `0x01`=`GPIO5`, `0x02`=`GPIO15`, `0x04`=`GPIO4`,
 
 ---
 
-<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:39 klas:F -->
+<!-- fc id:T-K06-031 sha:5bdf9b38 src:kartky/k06-bootlog.md:40 klas:F -->
 ### T-K06-031 · proza · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -1328,7 +1328,7 @@ I (56) boot: ## Label      Usage      Type ST Offset   Length
 
 ---
 
-<!-- fc id:T-K06-034 sha:e6a1f09c src:kartky/k06-bootlog.md:53 klas:E -->
+<!-- fc id:T-K06-034 sha:e6a1f09c src:kartky/k06-bootlog.md:55 klas:E -->
 ### T-K06-034 · proza · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -1605,7 +1605,7 @@ I (56) boot: ## Label      Usage      Type ST Offset   Length
 
 ---
 
-<!-- fc id:T-K06-044 sha:ae375117 src:kartky/k06-bootlog.md:72 klas:E -->
+<!-- fc id:T-K06-044 sha:ae375117 src:kartky/k06-bootlog.md:73 klas:E -->
 ### T-K06-044 · proza · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**

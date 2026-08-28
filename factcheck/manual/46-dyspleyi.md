@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-46-002 sha:0b69e977 src:manual/46-dyspleyi.md:3 klas:E -->
+<!-- fc id:T-46-002 sha:0b69e977 src:manual/46-dyspleyi.md:4 klas:E -->
 ### T-46-002 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -948,7 +948,7 @@
 
 ---
 
-<!-- fc id:T-46-025 sha:8d644688 src:manual/46-dyspleyi.md:17 klas:F -->
+<!-- fc id:T-46-025 sha:8d644688 src:manual/46-dyspleyi.md:19 klas:F -->
 ### T-46-025 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -974,7 +974,7 @@
 
 ---
 
-<!-- fc id:T-46-026 sha:a2146471 src:manual/46-dyspleyi.md:17 klas:E -->
+<!-- fc id:T-46-026 sha:a2146471 src:manual/46-dyspleyi.md:21 klas:E -->
 ### T-46-026 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1125,7 +1125,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 ---
 
-<!-- fc id:T-46-031 sha:ecb09442 src:manual/46-dyspleyi.md:32 klas:E -->
+<!-- fc id:T-46-031 sha:ecb09442 src:manual/46-dyspleyi.md:33 klas:E -->
 ### T-46-031 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1172,7 +1172,7 @@ SH1106 продається під виглядом SSD1306 і майже сум
 
 ---
 
-<!-- fc id:T-46-033 sha:db78ce45 src:manual/46-dyspleyi.md:36 klas:E -->
+<!-- fc id:T-46-033 sha:db78ce45 src:manual/46-dyspleyi.md:38 klas:E -->
 ### T-46-033 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1244,7 +1244,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-036 sha:fd124a1f src:manual/46-dyspleyi.md:47 klas:F -->
+<!-- fc id:T-46-036 sha:fd124a1f src:manual/46-dyspleyi.md:48 klas:F -->
 ### T-46-036 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1342,7 +1342,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-040 sha:17bcb9f3 src:manual/46-dyspleyi.md:58 klas:F -->
+<!-- fc id:T-46-040 sha:17bcb9f3 src:manual/46-dyspleyi.md:59 klas:F -->
 ### T-46-040 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1420,7 +1420,7 @@ PWM — не оптимізація, а необхідність (розділ 0
 
 ---
 
-<!-- fc id:T-46-043 sha:1164678b src:manual/46-dyspleyi.md:61 klas:A -->
+<!-- fc id:T-46-043 sha:1164678b src:manual/46-dyspleyi.md:63 klas:A -->
 ### T-46-043 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1751,7 +1751,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-056 sha:2f2ae56c src:manual/46-dyspleyi.md:100 klas:E -->
+<!-- fc id:T-46-056 sha:2f2ae56c src:manual/46-dyspleyi.md:101 klas:E -->
 ### T-46-056 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -1819,7 +1819,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-059 sha:789b457c src:manual/46-dyspleyi.md:109 klas:A -->
+<!-- fc id:T-46-059 sha:789b457c src:manual/46-dyspleyi.md:110 klas:A -->
 ### T-46-059 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2064,7 +2064,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 
 ---
 
-<!-- fc id:T-46-069 sha:6c925664 src:manual/46-dyspleyi.md:129 klas:E -->
+<!-- fc id:T-46-069 sha:6c925664 src:manual/46-dyspleyi.md:130 klas:E -->
 ### T-46-069 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2210,7 +2210,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-075 sha:a789af84 src:manual/46-dyspleyi.md:146 klas:E -->
+<!-- fc id:T-46-075 sha:a789af84 src:manual/46-dyspleyi.md:147 klas:E -->
 ### T-46-075 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2320,7 +2320,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-079 sha:e1503fc3 src:manual/46-dyspleyi.md:156 klas:E -->
+<!-- fc id:T-46-079 sha:e1503fc3 src:manual/46-dyspleyi.md:157 klas:E -->
 ### T-46-079 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -2365,7 +2365,7 @@ ADC, або сенсорні кнопки на вбудованому Touch [[cl
 
 ---
 
-<!-- fc id:T-46-081 sha:4cde5d29 src:manual/46-dyspleyi.md:160 klas:E -->
+<!-- fc id:T-46-081 sha:4cde5d29 src:manual/46-dyspleyi.md:161 klas:E -->
 ### T-46-081 · proza · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**

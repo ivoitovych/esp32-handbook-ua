@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-04-002 sha:0212d88c src:manual/04-peryferiya.md:3 klas:E -->
+<!-- fc id:T-04-002 sha:0212d88c src:manual/04-peryferiya.md:5 klas:E -->
 ### T-04-002 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -145,7 +145,7 @@
 
 ---
 
-<!-- fc id:T-04-007 sha:2c810af4 src:manual/04-peryferiya.md:15 klas:E -->
+<!-- fc id:T-04-007 sha:2c810af4 src:manual/04-peryferiya.md:16 klas:E -->
 ### T-04-007 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -245,7 +245,7 @@
 
 ---
 
-<!-- fc id:T-04-011 sha:550c9b41 src:manual/04-peryferiya.md:31 klas:D -->
+<!-- fc id:T-04-011 sha:550c9b41 src:manual/04-peryferiya.md:32 klas:D -->
 ### T-04-011 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -289,7 +289,7 @@
 
 ---
 
-<!-- fc id:T-04-012 sha:a3ccd8fd src:manual/04-peryferiya.md:31 klas:F -->
+<!-- fc id:T-04-012 sha:a3ccd8fd src:manual/04-peryferiya.md:34 klas:F -->
 ### T-04-012 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -318,7 +318,7 @@
 
 ---
 
-<!-- fc id:T-04-013 sha:bae35914 src:manual/04-peryferiya.md:31 klas:A -->
+<!-- fc id:T-04-013 sha:bae35914 src:manual/04-peryferiya.md:34 klas:A -->
 ### T-04-013 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-04-014 sha:35609a6a src:manual/04-peryferiya.md:31 klas:A -->
+<!-- fc id:T-04-014 sha:35609a6a src:manual/04-peryferiya.md:37 klas:A -->
 ### T-04-014 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -416,7 +416,7 @@
 
 ---
 
-<!-- fc id:T-04-015 sha:3ac2c4cf src:manual/04-peryferiya.md:31 klas:A -->
+<!-- fc id:T-04-015 sha:3ac2c4cf src:manual/04-peryferiya.md:38 klas:A -->
 ### T-04-015 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -503,7 +503,7 @@
 
 ---
 
-<!-- fc id:T-04-017 sha:cf430c5b src:manual/04-peryferiya.md:42 klas:E -->
+<!-- fc id:T-04-017 sha:cf430c5b src:manual/04-peryferiya.md:43 klas:E -->
 ### T-04-017 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1919,7 +1919,7 @@
 
 ---
 
-<!-- fc id:T-04-057 sha:8716ec5b src:manual/04-peryferiya.md:87 klas:C -->
+<!-- fc id:T-04-057 sha:8716ec5b src:manual/04-peryferiya.md:89 klas:C -->
 ### T-04-057 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1950,7 +1950,7 @@
 
 ---
 
-<!-- fc id:T-04-058 sha:73930e26 src:manual/04-peryferiya.md:87 klas:E -->
+<!-- fc id:T-04-058 sha:73930e26 src:manual/04-peryferiya.md:92 klas:E -->
 ### T-04-058 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2053,7 +2053,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-062 sha:0bbc6793 src:manual/04-peryferiya.md:98 klas:F -->
+<!-- fc id:T-04-062 sha:0bbc6793 src:manual/04-peryferiya.md:100 klas:F -->
 ### T-04-062 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -2101,7 +2101,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-064 sha:70bda4e1 src:manual/04-peryferiya.md:104 klas:E -->
+<!-- fc id:T-04-064 sha:70bda4e1 src:manual/04-peryferiya.md:105 klas:E -->
 ### T-04-064 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4452,7 +4452,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-124 sha:167a6ba8 src:manual/04-peryferiya.md:128 klas:E -->
+<!-- fc id:T-04-124 sha:167a6ba8 src:manual/04-peryferiya.md:129 klas:E -->
 ### T-04-124 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4500,7 +4500,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-126 sha:4bde7510 src:manual/04-peryferiya.md:132 klas:D -->
+<!-- fc id:T-04-126 sha:4bde7510 src:manual/04-peryferiya.md:133 klas:D -->
 ### T-04-126 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4541,7 +4541,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-127 sha:994e417a src:manual/04-peryferiya.md:132 klas:F -->
+<!-- fc id:T-04-127 sha:994e417a src:manual/04-peryferiya.md:135 klas:F -->
 ### T-04-127 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4609,7 +4609,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-129 sha:5b78f5fe src:manual/04-peryferiya.md:138 klas:E -->
+<!-- fc id:T-04-129 sha:5b78f5fe src:manual/04-peryferiya.md:141 klas:E -->
 ### T-04-129 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4714,7 +4714,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-133 sha:c93861a4 src:manual/04-peryferiya.md:150 klas:F -->
+<!-- fc id:T-04-133 sha:c93861a4 src:manual/04-peryferiya.md:151 klas:F -->
 ### T-04-133 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4914,7 +4914,7 @@ I²C — два, SPI — чотири плюс по одному на кожен
 
 ---
 
-<!-- fc id:T-04-141 sha:bf0c9940 src:manual/04-peryferiya.md:169 klas:E -->
+<!-- fc id:T-04-141 sha:bf0c9940 src:manual/04-peryferiya.md:170 klas:E -->
 ### T-04-141 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**

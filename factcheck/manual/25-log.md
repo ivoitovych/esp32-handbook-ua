@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-25-002 sha:6bf63e85 src:manual/25-log.md:3 klas:F -->
+<!-- fc id:T-25-002 sha:6bf63e85 src:manual/25-log.md:4 klas:F -->
 ### T-25-002 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -753,7 +753,7 @@
 
 ---
 
-<!-- fc id:T-25-022 sha:a1b5eff7 src:manual/25-log.md:31 klas:E -->
+<!-- fc id:T-25-022 sha:a1b5eff7 src:manual/25-log.md:32 klas:E -->
 ### T-25-022 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -844,7 +844,7 @@
 
 ---
 
-<!-- fc id:T-25-026 sha:dcd4e6b3 src:manual/25-log.md:38 klas:E -->
+<!-- fc id:T-25-026 sha:dcd4e6b3 src:manual/25-log.md:40 klas:E -->
 ### T-25-026 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -913,7 +913,7 @@
 
 ---
 
-<!-- fc id:T-25-029 sha:ea75641a src:manual/25-log.md:46 klas:F -->
+<!-- fc id:T-25-029 sha:ea75641a src:manual/25-log.md:47 klas:F -->
 ### T-25-029 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -961,7 +961,7 @@ ESP32, лог читається саме на 74880 — це не «інша ш
 
 ---
 
-<!-- fc id:T-25-031 sha:3ff45934 src:manual/25-log.md:50 klas:E -->
+<!-- fc id:T-25-031 sha:3ff45934 src:manual/25-log.md:52 klas:E -->
 ### T-25-031 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1235,7 +1235,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-041 sha:9533fa78 src:manual/25-log.md:81 klas:E -->
+<!-- fc id:T-25-041 sha:9533fa78 src:manual/25-log.md:82 klas:E -->
 ### T-25-041 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1367,7 +1367,7 @@ saved to file»; монітор створює файл у каталозі пр
 
 ---
 
-<!-- fc id:T-25-046 sha:9d87144e src:manual/25-log.md:93 klas:E -->
+<!-- fc id:T-25-046 sha:9d87144e src:manual/25-log.md:94 klas:E -->
 ### T-25-046 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1487,7 +1487,7 @@ static const char *TAG = "PUMP";
 
 ---
 
-<!-- fc id:T-25-051 sha:1764abef src:manual/25-log.md:111 klas:A -->
+<!-- fc id:T-25-051 sha:1764abef src:manual/25-log.md:112 klas:A -->
 ### T-25-051 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1580,7 +1580,7 @@ static const char *TAG = "PUMP";
 
 ---
 
-<!-- fc id:T-25-054 sha:1820eb38 src:manual/25-log.md:115 klas:E -->
+<!-- fc id:T-25-054 sha:1820eb38 src:manual/25-log.md:117 klas:E -->
 ### T-25-054 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -1934,7 +1934,7 @@ esp_log_level_set("wifi", ESP_LOG_WARN);
 
 ---
 
-<!-- fc id:T-25-064 sha:e4bc7e54 src:manual/25-log.md:138 klas:E -->
+<!-- fc id:T-25-064 sha:e4bc7e54 src:manual/25-log.md:139 klas:E -->
 ### T-25-064 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2034,7 +2034,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-067 sha:00a93e51 src:manual/25-log.md:146 klas:E -->
+<!-- fc id:T-25-067 sha:00a93e51 src:manual/25-log.md:147 klas:E -->
 ### T-25-067 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2220,7 +2220,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-072 sha:03730232 src:manual/25-log.md:155 klas:A -->
+<!-- fc id:T-25-072 sha:03730232 src:manual/25-log.md:157 klas:A -->
 ### T-25-072 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2419,7 +2419,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-077 sha:0b0a4a6e src:manual/25-log.md:172 klas:F -->
+<!-- fc id:T-25-077 sha:0b0a4a6e src:manual/25-log.md:173 klas:F -->
 ### T-25-077 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2465,7 +2465,7 @@ verbosity`**. Він задає стелю того, що **компілюєть
 
 ---
 
-<!-- fc id:T-25-079 sha:13e1711b src:manual/25-log.md:176 klas:A -->
+<!-- fc id:T-25-079 sha:13e1711b src:manual/25-log.md:177 klas:A -->
 ### T-25-079 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2746,7 +2746,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-086 sha:cb8955b8 src:manual/25-log.md:193 klas:E -->
+<!-- fc id:T-25-086 sha:cb8955b8 src:manual/25-log.md:194 klas:E -->
 ### T-25-086 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2822,7 +2822,7 @@ if (err != ESP_OK) {
 
 ---
 
-<!-- fc id:T-25-089 sha:f06e8d96 src:manual/25-log.md:199 klas:E -->
+<!-- fc id:T-25-089 sha:f06e8d96 src:manual/25-log.md:201 klas:E -->
 ### T-25-089 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2893,7 +2893,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-092 sha:af8c64bb src:manual/25-log.md:209 klas:E -->
+<!-- fc id:T-25-092 sha:af8c64bb src:manual/25-log.md:211 klas:E -->
 ### T-25-092 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -2917,7 +2917,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-093 sha:adabfc36 src:manual/25-log.md:209 klas:F -->
+<!-- fc id:T-25-093 sha:adabfc36 src:manual/25-log.md:212 klas:F -->
 ### T-25-093 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3055,7 +3055,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-099 sha:7c031f71 src:manual/25-log.md:222 klas:E -->
+<!-- fc id:T-25-099 sha:7c031f71 src:manual/25-log.md:223 klas:E -->
 ### T-25-099 · proza · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -3159,7 +3159,7 @@ UART зникає, щойно пристрій поїхав у поле. Вар�
 
 ---
 
-<!-- fc id:T-25-103 sha:c6e2b5ba src:manual/25-log.md:235 klas:E -->
+<!-- fc id:T-25-103 sha:c6e2b5ba src:manual/25-log.md:237 klas:E -->
 ### T-25-103 · proza · `manual/25-log.md`
 
 **Твердження, коротко**

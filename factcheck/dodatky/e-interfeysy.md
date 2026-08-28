@@ -30,7 +30,7 @@
 
 ---
 
-<!-- fc id:T-E-002 sha:bea5d3af src:dodatky/e-interfeysy.md:3 klas:E -->
+<!-- fc id:T-E-002 sha:bea5d3af src:dodatky/e-interfeysy.md:4 klas:E -->
 ### T-E-002 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -74,7 +74,7 @@
 
 ---
 
-<!-- fc id:T-E-004 sha:eb769fde src:dodatky/e-interfeysy.md:8 klas:E -->
+<!-- fc id:T-E-004 sha:eb769fde src:dodatky/e-interfeysy.md:9 klas:E -->
 ### T-E-004 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**
@@ -4327,7 +4327,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 
 ---
 
-<!-- fc id:T-E-088 sha:2ec41b36 src:dodatky/e-interfeysy.md:55 klas:F -->
+<!-- fc id:T-E-088 sha:2ec41b36 src:dodatky/e-interfeysy.md:57 klas:F -->
 ### T-E-088 · proza · `dodatky/e-interfeysy.md`
 
 **Твердження, коротко**

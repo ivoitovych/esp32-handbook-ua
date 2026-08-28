@@ -306,7 +306,7 @@
 
 ---
 
-<!-- fc id:T-57-014 sha:40f95206 src:manual/57-vid-zadachi.md:36 klas:E -->
+<!-- fc id:T-57-014 sha:40f95206 src:manual/57-vid-zadachi.md:37 klas:E -->
 ### T-57-014 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -611,7 +611,7 @@
 
 ---
 
-<!-- fc id:T-57-024 sha:14244677 src:manual/57-vid-zadachi.md:56 klas:E -->
+<!-- fc id:T-57-024 sha:14244677 src:manual/57-vid-zadachi.md:57 klas:E -->
 ### T-57-024 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -769,7 +769,7 @@
 
 ---
 
-<!-- fc id:T-57-031 sha:1cf87a85 src:manual/57-vid-zadachi.md:80 klas:F -->
+<!-- fc id:T-57-031 sha:1cf87a85 src:manual/57-vid-zadachi.md:81 klas:F -->
 ### T-57-031 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**
@@ -1049,7 +1049,7 @@
 
 ---
 
-<!-- fc id:T-57-042 sha:80f3e2cf src:manual/57-vid-zadachi.md:107 klas:E -->
+<!-- fc id:T-57-042 sha:80f3e2cf src:manual/57-vid-zadachi.md:108 klas:E -->
 ### T-57-042 · proza · `manual/57-vid-zadachi.md`
 
 **Твердження, коротко**

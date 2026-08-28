@@ -125,7 +125,7 @@
 
 ---
 
-<!-- fc id:T-02-005 sha:968e85a8 src:manual/02-chipy.md:13 klas:E -->
+<!-- fc id:T-02-005 sha:968e85a8 src:manual/02-chipy.md:14 klas:E -->
 ### T-02-005 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -235,7 +235,7 @@
 
 ---
 
-<!-- fc id:T-02-010 sha:f88fe444 src:manual/02-chipy.md:25 klas:E -->
+<!-- fc id:T-02-010 sha:f88fe444 src:manual/02-chipy.md:26 klas:E -->
 ### T-02-010 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3046,7 +3046,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-073 sha:967fdcb8 src:manual/02-chipy.md:43 klas:F -->
+<!-- fc id:T-02-073 sha:967fdcb8 src:manual/02-chipy.md:45 klas:F -->
 ### T-02-073 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3147,7 +3147,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-076 sha:57958c24 src:manual/02-chipy.md:52 klas:A -->
+<!-- fc id:T-02-076 sha:57958c24 src:manual/02-chipy.md:53 klas:A -->
 ### T-02-076 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3186,7 +3186,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-077 sha:b137b862 src:manual/02-chipy.md:52 klas:F -->
+<!-- fc id:T-02-077 sha:b137b862 src:manual/02-chipy.md:54 klas:F -->
 ### T-02-077 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3233,7 +3233,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-079 sha:75f9ac62 src:manual/02-chipy.md:57 klas:A -->
+<!-- fc id:T-02-079 sha:75f9ac62 src:manual/02-chipy.md:58 klas:A -->
 ### T-02-079 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3389,7 +3389,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-083 sha:8f45264a src:manual/02-chipy.md:72 klas:E -->
+<!-- fc id:T-02-083 sha:8f45264a src:manual/02-chipy.md:73 klas:E -->
 ### T-02-083 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3438,7 +3438,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-085 sha:33136a2d src:manual/02-chipy.md:75 klas:F -->
+<!-- fc id:T-02-085 sha:33136a2d src:manual/02-chipy.md:78 klas:F -->
 ### T-02-085 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3582,7 +3582,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-090 sha:12ac393d src:manual/02-chipy.md:93 klas:E -->
+<!-- fc id:T-02-090 sha:12ac393d src:manual/02-chipy.md:94 klas:E -->
 ### T-02-090 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3635,7 +3635,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-092 sha:20383220 src:manual/02-chipy.md:97 klas:F -->
+<!-- fc id:T-02-092 sha:20383220 src:manual/02-chipy.md:98 klas:F -->
 ### T-02-092 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3704,7 +3704,7 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 ---
 
-<!-- fc id:T-02-095 sha:e76453d8 src:manual/02-chipy.md:107 klas:E -->
+<!-- fc id:T-02-095 sha:e76453d8 src:manual/02-chipy.md:108 klas:E -->
 ### T-02-095 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4033,7 +4033,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-106 sha:0db3ab6f src:manual/02-chipy.md:143 klas:E -->
+<!-- fc id:T-02-106 sha:0db3ab6f src:manual/02-chipy.md:144 klas:E -->
 ### T-02-106 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4059,7 +4059,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-107 sha:ac382040 src:manual/02-chipy.md:143 klas:A -->
+<!-- fc id:T-02-107 sha:ac382040 src:manual/02-chipy.md:145 klas:A -->
 ### T-02-107 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4122,7 +4122,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-109 sha:b3e35e83 src:manual/02-chipy.md:151 klas:E -->
+<!-- fc id:T-02-109 sha:b3e35e83 src:manual/02-chipy.md:152 klas:E -->
 ### T-02-109 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4172,7 +4172,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-111 sha:cac1eaa9 src:manual/02-chipy.md:154 klas:F -->
+<!-- fc id:T-02-111 sha:cac1eaa9 src:manual/02-chipy.md:155 klas:F -->
 ### T-02-111 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4275,7 +4275,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-115 sha:028b5c51 src:manual/02-chipy.md:162 klas:E -->
+<!-- fc id:T-02-115 sha:028b5c51 src:manual/02-chipy.md:163 klas:E -->
 ### T-02-115 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4323,7 +4323,7 @@ idf.py set-target esp32s3
 
 ---
 
-<!-- fc id:T-02-117 sha:af7651a0 src:manual/02-chipy.md:167 klas:E -->
+<!-- fc id:T-02-117 sha:af7651a0 src:manual/02-chipy.md:169 klas:E -->
 ### T-02-117 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4371,7 +4371,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-119 sha:85436893 src:manual/02-chipy.md:172 klas:E -->
+<!-- fc id:T-02-119 sha:85436893 src:manual/02-chipy.md:173 klas:E -->
 ### T-02-119 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5303,7 +5303,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-142 sha:dff56dfe src:manual/02-chipy.md:193 klas:F -->
+<!-- fc id:T-02-142 sha:dff56dfe src:manual/02-chipy.md:195 klas:F -->
 ### T-02-142 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5349,7 +5349,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-144 sha:6ea7599d src:manual/02-chipy.md:197 klas:E -->
+<!-- fc id:T-02-144 sha:6ea7599d src:manual/02-chipy.md:198 klas:E -->
 ### T-02-144 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**

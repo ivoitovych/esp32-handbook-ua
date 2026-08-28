@@ -52,7 +52,7 @@
 
 ---
 
-<!-- fc id:T-Z-003 sha:af219210 src:dodatky/z-pokazhchyk.md:5 klas:E -->
+<!-- fc id:T-Z-003 sha:af219210 src:dodatky/z-pokazhchyk.md:7 klas:E -->
 ### T-Z-003 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**

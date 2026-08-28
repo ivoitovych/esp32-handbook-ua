@@ -536,7 +536,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.4.bin
 
 ---
 
-<!-- fc id:T-21-018 sha:f1d48cb7 src:manual/21-seriyna.md:48 klas:E -->
+<!-- fc id:T-21-018 sha:f1d48cb7 src:manual/21-seriyna.md:49 klas:E -->
 ### T-21-018 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -602,7 +602,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.4.bin
 
 ---
 
-<!-- fc id:T-21-020 sha:27deca81 src:manual/21-seriyna.md:51 klas:E -->
+<!-- fc id:T-21-020 sha:27deca81 src:manual/21-seriyna.md:52 klas:E -->
 ### T-21-020 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -627,7 +627,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.4.bin
 
 ---
 
-<!-- fc id:T-21-021 sha:a6125283 src:manual/21-seriyna.md:51 klas:F -->
+<!-- fc id:T-21-021 sha:a6125283 src:manual/21-seriyna.md:53 klas:F -->
 ### T-21-021 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -674,7 +674,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 vyrib-v1.4.bin
 
 ---
 
-<!-- fc id:T-21-023 sha:01a36707 src:manual/21-seriyna.md:59 klas:E -->
+<!-- fc id:T-21-023 sha:01a36707 src:manual/21-seriyna.md:60 klas:E -->
 ### T-21-023 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -912,7 +912,7 @@ echo "OK: $PORT"
 
 ---
 
-<!-- fc id:T-21-030 sha:42368b26 src:manual/21-seriyna.md:74 klas:A -->
+<!-- fc id:T-21-030 sha:42368b26 src:manual/21-seriyna.md:75 klas:A -->
 ### T-21-030 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -958,7 +958,7 @@ echo "OK: $PORT"
 
 ---
 
-<!-- fc id:T-21-031 sha:16350670 src:manual/21-seriyna.md:74 klas:E -->
+<!-- fc id:T-21-031 sha:16350670 src:manual/21-seriyna.md:76 klas:E -->
 ### T-21-031 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1072,7 +1072,7 @@ echo "OK: $PORT"
 
 ---
 
-<!-- fc id:T-21-035 sha:1d35be73 src:manual/21-seriyna.md:84 klas:E -->
+<!-- fc id:T-21-035 sha:1d35be73 src:manual/21-seriyna.md:85 klas:E -->
 ### T-21-035 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1096,7 +1096,7 @@ echo "OK: $PORT"
 
 ---
 
-<!-- fc id:T-21-036 sha:a414fea1 src:manual/21-seriyna.md:84 klas:E -->
+<!-- fc id:T-21-036 sha:a414fea1 src:manual/21-seriyna.md:86 klas:E -->
 ### T-21-036 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1219,7 +1219,7 @@ echo "OK: $PORT"
 
 ---
 
-<!-- fc id:T-21-040 sha:432b092c src:manual/21-seriyna.md:93 klas:E -->
+<!-- fc id:T-21-040 sha:432b092c src:manual/21-seriyna.md:95 klas:E -->
 ### T-21-040 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1269,7 +1269,7 @@ echo "OK: $PORT"
 
 ---
 
-<!-- fc id:T-21-042 sha:6c7e3e50 src:manual/21-seriyna.md:101 klas:E -->
+<!-- fc id:T-21-042 sha:6c7e3e50 src:manual/21-seriyna.md:103 klas:E -->
 ### T-21-042 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1614,7 +1614,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-21-054 sha:168c664c src:manual/21-seriyna.md:123 klas:E -->
+<!-- fc id:T-21-054 sha:168c664c src:manual/21-seriyna.md:125 klas:E -->
 ### T-21-054 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1696,7 +1696,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-057 sha:5aed5cc9 src:manual/21-seriyna.md:129 klas:E -->
+<!-- fc id:T-21-057 sha:5aed5cc9 src:manual/21-seriyna.md:131 klas:E -->
 ### T-21-057 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2414,7 +2414,7 @@ MAC, чи був цей екземпляр у браку.
 
 ---
 
-<!-- fc id:T-21-082 sha:6b4d2e33 src:manual/21-seriyna.md:166 klas:E -->
+<!-- fc id:T-21-082 sha:6b4d2e33 src:manual/21-seriyna.md:167 klas:E -->
 ### T-21-082 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2441,7 +2441,7 @@ MAC, чи був цей екземпляр у браку.
 
 ---
 
-<!-- fc id:T-21-083 sha:775f6652 src:manual/21-seriyna.md:166 klas:F -->
+<!-- fc id:T-21-083 sha:775f6652 src:manual/21-seriyna.md:169 klas:F -->
 ### T-21-083 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2490,7 +2490,7 @@ MAC, чи був цей екземпляр у браку.
 
 ---
 
-<!-- fc id:T-21-085 sha:c5052027 src:manual/21-seriyna.md:175 klas:E -->
+<!-- fc id:T-21-085 sha:c5052027 src:manual/21-seriyna.md:176 klas:E -->
 ### T-21-085 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2536,7 +2536,7 @@ MAC, чи був цей екземпляр у браку.
 
 ---
 
-<!-- fc id:T-21-087 sha:03a8a283 src:manual/21-seriyna.md:178 klas:E -->
+<!-- fc id:T-21-087 sha:03a8a283 src:manual/21-seriyna.md:179 klas:E -->
 ### T-21-087 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2560,7 +2560,7 @@ MAC, чи був цей екземпляр у браку.
 
 ---
 
-<!-- fc id:T-21-088 sha:73cabe58 src:manual/21-seriyna.md:178 klas:E -->
+<!-- fc id:T-21-088 sha:73cabe58 src:manual/21-seriyna.md:180 klas:E -->
 ### T-21-088 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2628,7 +2628,7 @@ MAC, чи був цей екземпляр у браку.
 
 ---
 
-<!-- fc id:T-21-091 sha:eecd5522 src:manual/21-seriyna.md:186 klas:E -->
+<!-- fc id:T-21-091 sha:eecd5522 src:manual/21-seriyna.md:187 klas:E -->
 ### T-21-091 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2674,7 +2674,7 @@ MAC, чи був цей екземпляр у браку.
 
 ---
 
-<!-- fc id:T-21-093 sha:69e2ed79 src:manual/21-seriyna.md:191 klas:E -->
+<!-- fc id:T-21-093 sha:69e2ed79 src:manual/21-seriyna.md:192 klas:E -->
 ### T-21-093 · proza · `manual/21-seriyna.md`
 
 **Твердження, коротко**

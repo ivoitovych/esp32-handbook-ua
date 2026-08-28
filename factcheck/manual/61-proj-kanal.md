@@ -31,7 +31,7 @@
 
 ---
 
-<!-- fc id:T-61-002 sha:a5d4a7de src:manual/61-proj-kanal.md:3 klas:F -->
+<!-- fc id:T-61-002 sha:a5d4a7de src:manual/61-proj-kanal.md:4 klas:F -->
 ### T-61-002 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -98,7 +98,7 @@
 
 ---
 
-<!-- fc id:T-61-005 sha:9a401a97 src:manual/61-proj-kanal.md:12 klas:E -->
+<!-- fc id:T-61-005 sha:9a401a97 src:manual/61-proj-kanal.md:13 klas:E -->
 ### T-61-005 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -712,7 +712,7 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ---
 
-<!-- fc id:T-61-028 sha:bc260bbb src:manual/61-proj-kanal.md:66 klas:E -->
+<!-- fc id:T-61-028 sha:bc260bbb src:manual/61-proj-kanal.md:67 klas:E -->
 ### T-61-028 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -1341,7 +1341,7 @@ void app_main(void) {
 
 ---
 
-<!-- fc id:T-61-047 sha:3a1e9ece src:manual/61-proj-kanal.md:136 klas:E -->
+<!-- fc id:T-61-047 sha:3a1e9ece src:manual/61-proj-kanal.md:138 klas:E -->
 ### T-61-047 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2303,7 +2303,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-077 sha:54e08390 src:manual/61-proj-kanal.md:263 klas:E -->
+<!-- fc id:T-61-077 sha:54e08390 src:manual/61-proj-kanal.md:264 klas:E -->
 ### T-61-077 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2355,7 +2355,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-079 sha:dd7135d0 src:manual/61-proj-kanal.md:270 klas:F -->
+<!-- fc id:T-61-079 sha:dd7135d0 src:manual/61-proj-kanal.md:271 klas:F -->
 ### T-61-079 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2383,7 +2383,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-080 sha:76b1afa6 src:manual/61-proj-kanal.md:270 klas:E -->
+<!-- fc id:T-61-080 sha:76b1afa6 src:manual/61-proj-kanal.md:272 klas:E -->
 ### T-61-080 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2411,7 +2411,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-081 sha:198c83a8 src:manual/61-proj-kanal.md:270 klas:E -->
+<!-- fc id:T-61-081 sha:198c83a8 src:manual/61-proj-kanal.md:273 klas:E -->
 ### T-61-081 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2439,7 +2439,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-082 sha:746d62bc src:manual/61-proj-kanal.md:270 klas:E -->
+<!-- fc id:T-61-082 sha:746d62bc src:manual/61-proj-kanal.md:274 klas:E -->
 ### T-61-082 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -2467,7 +2467,7 @@ static void task_kontrol(void *arg) {
 
 ---
 
-<!-- fc id:T-61-083 sha:db90849f src:manual/61-proj-kanal.md:270 klas:E -->
+<!-- fc id:T-61-083 sha:db90849f src:manual/61-proj-kanal.md:276 klas:E -->
 ### T-61-083 · proza · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
