@@ -459,54 +459,113 @@ Batch 1 also broke four readers and none of them raised a word: see
 The owner asked why script and field names are still transliterated
 Ukrainian. They are, and here is the exact size of what is left.
 
-### Fields: the expand phase is complete, the contract phase has not started
+### Fields: the expand phase is complete — measured again after the renames
+
+| | 2026-08-28 morning | after the renames |
+|---|---|---|
+| records carrying **both** names | 1337 of 1337 | 1360 of 1360 |
+| records carrying only Ukrainian | 0 | 0 |
+| `schema.py` accepts both | yes | yes |
+| tools reading a Ukrainian field name directly | 25 | **0** |
+
+The last row is the day's work. Every reader now goes through
+`factcheck.pole()` or `factcheck.klas_zapysu()`, and getting there cost
+nine silent breakages, catalogued as kind 23. The details of what
+remains are in the last section of this stage.
+
+### Tools: done — 51 of 53, the two left are the other maintainer's
+
+    renamed        29, in two batches: leaves first, then the four
+                   import hubs (`sample` is imported by 14 tools,
+                   `layer3` by 9)
+    left           naryad-m2.py, perevirka-tsytat-m2.py
+
+The name says **what the tool does**, not how the Ukrainian word
+sounds. Two are deliberately not literal translations:
 
 | | |
 |---|---|
-| records carrying **both** names | 1337 of 1337 |
-| records carrying only Ukrainian | 0 |
-| `schema.py` accepts both | yes |
+| `citaty → layer3` | it *is* the third layer, and `layer1` and `layer1_units` already stand beside it. `quotes` would have named the noun, not the job |
+| `polya → struct_fields` | it checks the field names of **ESP-IDF structs quoted in the book**, not the fields of evidence records. `fields` would have merged two different things — kind 23 |
+| `shturm → contest_e` | "storm" says nothing in English; the tool collects what helpers found **against** an `E` verdict |
 
-So the English names are fully in place. What remains is dropping the
-Ukrainian ones — and that is blocked by a measured fact:
+`Makefile` targets went with them: `citaty → layer3`, `kesh → cache`,
+`skhema → schema`, `samoperevirky → self-checks`. The book targets
+(`dovidnyk`, `kartky`, `proekty`) stay — those name printed products,
+not steps of the technology.
 
-    tools reading Ukrainian field names directly   25
-      of them the other maintainer's               4
-    tools using the shared loader                   3
-    tools parsing YAML themselves                  26
+### Directories: done — 12 of 12, except `zvyazok/`
 
-A normalising loader would free only three. The other twenty-five each
-need their field access converted. **That is the whole of the contract
-phase: mechanical, countable, and not uncertain.**
-
-It cannot be done unilaterally: dropping the old names breaks the other
-maintainer's four tools the moment it lands. It is the one step of this
-migration that both must take on the same day.
-
-### Tools: 43 of 52 still transliterated
-
-    English already   build, preview, review, linkcheck, budgets,
-                      bind_by_hash, claims, kod-stubs, pdf-smoke
-    to rename         43
-
-Each rename is an import and a `Makefile` line. The plan's own rule
-stands: last, one at a time, `make check` after each.
-
-### Directories: 11 of 17
-
-    dokazy → evidence      rozbir → triage        prokhid → pass
-    doslidy → experiments  znimky → snapshots     detali → details
-    klasC → class-c        hvylya2, hvylya3 → waves/…
-    prokhid-vidkydka → pass-rejected             slidy-m2 → theirs
+    factcheck/dokazy → evidence       rozbir → triage
+    prokhid → pass                    prokhid-vidkydka → pass-rejected
+    doslidy → experiments             znimky → snapshots
+    detali → details                  klasC → class-c
+    hvylya2, hvylya3 → wave2, wave3   slidy-m2 → leads-theirs
+    dzherela-kesh → source-cache
 
 `manual`, `dodatky`, `kartky`, `inserts` keep their names: they mirror
-the book's own layout.
+the book's own layout, and the book is Ukrainian.
 
-### Why this is the honest order
+`zvyazok/` keeps its name for a different reason. It holds 158
+immutable letters that reference each other **and the directory
+itself**, 417 times. Renaming it means either rewriting what the
+protocol forbids rewriting, or leaving 417 dead references. That is a
+decision for two maintainers, and it is out for one.
 
-Fields before tools before directories, because a field name is read by
-code that a rename would also touch — doing them in the other order
-means touching the same twenty-five files twice.
+### How the renames were verified, and what that caught
+
+Not by `make check`. This morning's field migration survived precisely
+in the commands no target invokes, so the harness for this one captures
+the output of **every entry point** — 51 of them — before and after.
+
+    batch 1 (25 leaf tools)      49 of 51 identical
+    batch 2 (4 import hubs)      51 of 51
+    directories (11)             51 of 51
+    source-cache                 51 of 51
+
+The two differences in batch 1 were both real findings:
+
+- **Each tool printed its own name as a literal.** A renamed file went
+  on reporting itself under the old name — kind 19, two records of one
+  fact. Fixed in 16 tools.
+- A fixed-width line truncated differently because the new name is
+  longer. Not a defect.
+
+Three rules had to be corrected mid-migration, and each was found by
+the harness rather than by review:
+
+1. **Word boundaries are not path boundaries.** `prokhid → pass` turned
+   a local variable into a Python keyword; two files stopped compiling.
+   Nothing would have reported this — they would simply have vanished
+   from the list of entry points, and a list says nothing about what is
+   not in it.
+2. **Quotes are not paths.** The rule then allowed "a whole quoted
+   word", which renamed `n["detali"]` — a key of the *helper report*
+   schema, which is not migrating — and `layer3 --zvit` died with
+   `KeyError`. In code, a path is built with a slash (`ROOT /
+   "dokazy"`, 15 cases of 15); prose can keep the backtick rule.
+3. **The tool rewrites the tree it lives in.** The first directory run
+   rewrote `renames.py`'s own mapping table into an identity
+   (`evidence → evidence`). It is now in the untouchable list.
+
+### Fields: still the one step that needs both maintainers
+
+This has not moved, and it is now the only transliteration left in the
+technology:
+
+    old field names still in records   9251 across 1360 records
+    tools reading them                 0 — every reader goes through
+                                       `pole()` or `klas_zapysu()`
+
+The contraction dress rehearsal passes on this side: strip all 9251,
+run twelve tools plus the card generator, output byte-identical, 1360
+cards unchanged. The other maintainer stated their condition — "ready
+once your nine direct accesses and `layer3:562` are closed" — and both
+are closed and reported.
+
+So it is not blocked on work any more. It is blocked on a day when both
+are at the keyboard, because the moment the old names go, any tool of
+theirs still reading one breaks silently.
 
 > The migration is not stalled for want of a decision. It is at the one
 > point where both maintainers must move together, and that is worth
