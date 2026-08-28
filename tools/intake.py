@@ -179,7 +179,7 @@ def perevirka(shlyakh):
 def main(argv):
     global teksty
     teksty = teksty_odynyc()
-    shlyakhy = argv[1:] or sorted(glob.glob('factcheck/dokazy/*.yaml'))
+    shlyakhy = argv[1:] or sorted(glob.glob('factcheck/evidence/*.yaml'))
     vsyoho = 0
     blok = 0
     for s in shlyakhy:

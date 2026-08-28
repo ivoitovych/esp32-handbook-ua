@@ -231,7 +231,7 @@ def vidtvornist() -> int:
                for n in z}
     k: collections.Counter = collections.Counter()
     prykl: dict[str, str] = {}
-    teka = ROOT / "factcheck" / "dokazy"
+    teka = ROOT / "factcheck" / "evidence"
     for f in sorted(teka.glob("*.yaml")):
         try:
             zap = yaml.safe_load(f.read_text(encoding="utf-8")) or []

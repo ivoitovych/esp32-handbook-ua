@@ -89,7 +89,7 @@ def zibraty(za: str = "sha") -> dict[str, list[str]]:
     # стоїть порядковий номер: назви в межах файлу повторюються, і без
     # номера два докази злилися б в один.
     zapysy: list[dict] = []
-    for f in sorted((ROOT / "factcheck" / "dokazy").glob("*.yaml")):
+    for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:
             z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception:

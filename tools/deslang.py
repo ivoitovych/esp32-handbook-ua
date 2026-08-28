@@ -90,7 +90,7 @@ def main() -> int:
     p.add_argument("--pysaty", action="store_true")
     a = p.parse_args()
 
-    teka = ROOT / "factcheck" / "dokazy"
+    teka = ROOT / "factcheck" / "evidence"
     zmineno = lyshylos = 0
     reshta: dict[str, int] = {}
     for f in sorted(teka.glob("*.yaml")):
