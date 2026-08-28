@@ -152,6 +152,111 @@ def vypadkova(a) -> int:
     vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
         {"order_version": versiya_naryadu(getattr(a, "rich", False)),
+         # `queue` пише і цей прогін теж: попарний режим порівнює з ним
+         # клас кожної одиниці, і без нього він рахував **усі** одиниці
+         # такими, що вийшли з черги — 10 із 10 у першій же пробі.
+         "queue": "F", "rich_cards": bool(getattr(a, "rich", False)),
+         "nasinnya": a.nasinnya, "z_cherhy": len(usi),
+         "vzyato": [u["id"] for u in vzyato]},
+        ensure_ascii=False, indent=1), encoding="utf-8")
+
+
+def za_perelikom(a, sample) -> int:
+    """Ті самі одиниці, що в попередньому прогоні.
+
+    ## Навіщо це окремо від `--vypadkovo`
+
+    Щоб виміряти зміну **наряду**, змінювати треба наряд і **тільки**
+    його. Новий випадковий жереб змінює водночас дві речі — версію
+    наряду й самі одиниці, — і різниця між прогонами стає нічийною.
+
+    Тут вибірка береться з попереднього прогону дослівно. Порівняння
+    виходить **попарним**: та сама одиниця під двома нарядами, тож
+    видно не лише зсув часток, а й те, які саме одиниці змінили
+    вердикт і в який бік.
+
+    Сукупність при цьому вже інша (черга живе), і насіння тут не
+    вживається взагалі — саме тому, що воно її не відтворює.
+    """
+    import json
+
+    poperednye = json.loads(a.z_pereliku.read_text(encoding="utf-8"))
+    treba = list(poperednye["vzyato"])
+    reyestr = {}
+    import factcheck
+    # Не власний рядок літер: без `N` і `K` попарний прогін
+    # мовчки губив би одиниці тих класів. Третій випадок
+    # копії переліку класів за добу.
+    for kl in factcheck.USI_KLASY:
+        try:
+            for u in sample.odynyci(kl):
+                reyestr[u["id"]] = dict(u, klas=kl)
+        except Exception:
+            continue
+    vzyato = [reyestr[i] for i in treba if i in reyestr]
+    znykly = [i for i in treba if i not in reyestr]
+    # Якщо попередній прогін не назвав черги, «вийшли з черги»
+    # порахувати НЕМОЖЛИВО — і рахувати не треба. Порожній список
+    # чесніший за число, що дорівнює розміру вибірки.
+    cherha = poperednye.get("queue")
+    zminyly = ([i for i in treba
+                if i in reyestr and reyestr[i]["klas"] != cherha]
+               if cherha else [])
+
+    (a.kudy / "vybirka.json").write_text(json.dumps(
+        {"order_version": versiya_naryadu(a.rich),
+         "paired_with": str(a.z_pereliku.parent.name),
+         "prev_order_version": poperednye.get("order_version"),
+         "queue": poperednye.get("queue"), "sample_size": len(vzyato),
+         "rich_cards": bool(a.rich),
+         "units_gone": znykly, "units_left_queue": zminyly,
+         "vzyato": [u["id"] for u in vzyato]},
+        ensure_ascii=False, indent=1), encoding="utf-8")
+
+    kont = konteksty() if a.rich else {}
+    n = 0
+    for i in range(0, len(vzyato), a.na_naryad):
+        ch = vzyato[i:i + a.na_naryad]
+        n += 1
+        kand = ("**Документа-кандидата немає.** Ці одиниці взято "
+                "**випадково** з усієї черги, а не за темою, тож жодного "
+                "документа наперед не названо. Шукай сам — і якщо не "
+                "знайшов, `not_found` із адресою того, що відкривав, "
+                "це повноцінна відповідь.")
+        r = [shapka(n=n, tema="випадкова вибірка (повтор попарно)",
+                    k=len(ch), kandydat=kand),
+             f"\n<!-- order_version:{versiya_naryadu(a.rich)} "
+             f"paired:{a.z_pereliku.parent.name} -->\n"]
+        for u in ch:
+            r.append(f"\n**`{u['id']}`**\n")
+            r.append(f"> {u['tekst']}\n")
+            if a.rich and kont.get(u["id"]):
+                r.append("\nОточення в книзі — щоб було видно, про що "
+                         "саме йдеться:\n\n```\n" + kont[u["id"]] + "\n```\n")
+        (a.kudy / f"f-{n:02d}.md").write_text("\n".join(r) + "\n",
+                                              encoding="utf-8")
+    print(f"нарядів {n}, одиниць {len(vzyato)} (попарно з "
+          f"{a.z_pereliku.parent.name}); зникли {len(znykly)}, "
+          f"вийшли з черги {len(zminyly)} → {a.kudy}")
+    return 0
+
+
+
+def vypadkova(a) -> int:
+    """Випадкова вибірка з усієї черги `F`, з насінням і переліком."""
+    import json
+    import random
+
+    import sample
+
+    usi = sorted(sample.odynyci("F"), key=lambda u: u["id"])
+    vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
+    (a.kudy / "vybirka.json").write_text(json.dumps(
+        {"order_version": versiya_naryadu(getattr(a, "rich", False)),
+         # `queue` пише і цей прогін теж: попарний режим порівнює з ним
+         # клас кожної одиниці, і без нього він рахував **усі** одиниці
+         # такими, що вийшли з черги — 10 із 10 у першій же пробі.
+         "queue": "F", "rich_cards": bool(getattr(a, "rich", False)),
          "nasinnya": a.nasinnya, "z_cherhy": len(usi),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
@@ -198,6 +303,9 @@ def main() -> int:
     p.add_argument("--na-naryad", type=int, default=10)
     p.add_argument("--vypadkovo", type=int, default=0,
                    help="взяти N одиниць випадково з усієї черги F")
+    p.add_argument("--z-pereliku", type=Path, default=None,
+                   help="take the same units as a previous run's "
+                        "vybirka.json — paired comparison of task versions")
     p.add_argument("--rich-cards", action="store_true", dest="rich",
                    help="кожна картка несе своє оточення в книзі й абзац "
                         "про своє місце в потоці (М2)")
@@ -207,6 +315,10 @@ def main() -> int:
     if a.vypadkovo and not a.nasinnya:
         p.error("--vypadkovo без --nasinnya: дослід буде невідтворний")
     a.kudy.mkdir(parents=True, exist_ok=True)
+
+    if a.z_pereliku:
+        import sample
+        return za_perelikom(a, sample)
 
     if a.vypadkovo:
         return vypadkova(a)
