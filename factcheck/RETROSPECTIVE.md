@@ -4,7 +4,7 @@ A plan-versus-actual account of the fact-checking technology, written
 so that the next book does not have to rediscover any of it.
 
 Figures are from the registry at the time of writing: **8331 claims,
-1337 evidence records, 92 book files, 38 tools.**
+1337 evidence records, 92 book files, 39 tools.**
 
 ---
 
@@ -32,15 +32,20 @@ something; this is not.
 
 | State | Claims | |
 |---|---:|---|
-| `A` verbatim — source retrieved and quoted | 2086 | 25.7 % |
-| `B` derived — source retrieved, claim follows | 425 | 5.2 % |
-| `D` arithmetic — settled by calculation | 157 | 1.9 % |
-| `C` named-unreachable — source named, not reachable here | 173 | 2.1 % |
-| `E` no external signal — editorial, nothing to check against | 3884 | 47.9 % |
-| `F` unchecked | 1385 | 17.1 % |
+| `A` verbatim — source retrieved and quoted | 2070 | 25.5 % |
+| `B` derived — source retrieved, claim follows | 219 | 2.7 % |
+| `D` arithmetic — settled by calculation | 140 | 1.7 % |
+| `C` named-unreachable — source named, not reachable here | 185 | 2.3 % |
+| `E` no external signal — editorial, nothing to check against | 3746 | 46.2 % |
+| `F` unchecked | 1750 | 21.6 % |
 | `K` code context | 221 | — |
 
-**Verified against a source or a calculation: 2668, or 32.9 %.**
+**Verified against a source or a calculation: 2429, or 30.0 %.**
+
+This figure fell from 32.9 % when the pattern leaks of §8 were closed:
+239 claims stopped being "verified" and went back to unchecked, which
+is what they always were. A coverage number that only ever rises is a
+number nobody is checking.
 
 The honest sentence the book can print is *not* "everything is
 verified". It is: **every claim was looked at at least once, and the
@@ -87,19 +92,38 @@ direct quote from the source, plus context — so that it is
 self-sufficient. A line reference is not a quote; it sends the reader
 somewhere else.
 
-**Have.** Each card now carries three blocks:
+**Have.** Context stands on **8331 of 8331** cards. The card finds its
+line by **content**, falling back to the line number only if content
+fails — because the line number drifts (see §7).
 
-    Claim, briefly   the one-line render (BME280 · Address → 0x76)
-    Verbatim         the raw markdown line from the book
-    Context          surrounding lines, table header, section heading
+The first version of this shipped broken, and the audit caught it. The
+card emitted a "verbatim from the book" block whenever the raw line
+differed from the claim text — and for prose that is true merely
+because the book wraps lines mid-sentence. Result: thousands of cards
+showing a **fragment**:
 
-Context stands on **6845 of 6845** cards. The card finds its line by
-**content**, falling back to the line number only if content fails —
-because the line number drifts (see §7).
+    T-63-002  …льна роль ESP32 у чужій системі (розділ 57), і
 
-The source side is present wherever evidence exists, which is the same
-32.9 % as above. The card is self-sufficient; the evidence behind it is
-as complete as the evidence is.
+The condition asked about string inequality when it should have asked
+about the **kind** of unit:
+
+| Kind | What "claim, briefly" is | Extra verbatim block |
+|---|---|---|
+| prose, code line, schema link | the book's own text | not needed |
+| table cell, table row | a render (`BME280 · Address → 0x76`) | the raw row |
+
+Now: 1385 verbatim blocks, **all of them table rows**; 34 cards say
+plainly that the locator missed rather than showing a wrong line; and
+the registry file states the rule once at the top instead of the card
+repeating it 8331 times.
+
+> Same defect family as three previous ones, recorded under three
+> different names: **the reader is judging half a thought.** This time
+> the half was cut by the tool built to prevent exactly that.
+
+The source side is present wherever evidence exists — the same 30 % as
+above. The card is self-sufficient; the evidence behind it is as
+complete as the evidence is.
 
 ### 5. Portable to another book, in English — **roughly half done**
 
@@ -216,7 +240,14 @@ survives reading. The sixth does the work.
     records that leak this way                        22
     claims taking their state from a leak            956
       would have no evidence at all without it       873
-      currently presented as verified (`A`/`B`)      237
+      presented as verified (`A`/`B`)                237
+
+Closed by the second maintainer the same day — 15 of their patterns
+narrowed:
+
+    records that leak                        22 → 5
+    claims resting on a leak                956 → 81
+    of those presented as verified          237 → 54
 
 This is **not** the wide-pattern problem caught three times before —
 there the record was visibly broad. Measuring total width does not find
