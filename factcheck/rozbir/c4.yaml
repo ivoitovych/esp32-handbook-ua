@@ -27,10 +27,10 @@
 - id: T-25-056
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF Logging — runtime log level control
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Logging — runtime
+    log level control». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
 - id: T-25-012
   rid: ne-tverdzhennya
 - id: T-25-103
@@ -39,10 +39,10 @@
 - id: T-26-051
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF Build System — symbol address changes
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Build System
+    — symbol address changes». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про
+    відсутність джерела, а відмова видавати тему за документ.'
 - id: T-26-088
   rid: ne-tverdzhennya
 - id: T-26-119
@@ -73,10 +73,10 @@
 - id: T-30-043
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF Memory Management — heap fragmentation
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Memory Management
+    — heap fragmentation». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
 - id: T-30-078
   rid: ne-rozibrav
 - id: T-30-102
@@ -87,10 +87,10 @@
 - id: T-31-064
   rid: ne-rozibrav
   bulo-shukaty: FreeRTOS Reference — ISR restrictions
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «FreeRTOS Reference
+    — ISR restrictions». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
 - id: T-31-098
   rid: ne-tverdzhennya
 - id: T-31-031

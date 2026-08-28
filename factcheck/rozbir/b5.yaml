@@ -54,10 +54,10 @@
 - id: T-K10-030
   rid: ne-rozibrav
   bulo-shukaty: minicom user manual, serial terminal parameters
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «minicom user manual,
+    serial terminal parameters». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
+    про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-K12-021
   rid: pozyciya
   chomu: оцінка важливості кабелю в діагностиці
@@ -94,10 +94,10 @@
 - id: T-06-066
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF Power Management documentation
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF Power Management
+    documentation». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
 - id: T-06-127
   rid: pozyciya
   chomu: оцінка того, що читання коду при живленні марно
@@ -130,10 +130,10 @@
 - id: T-13-059
   rid: ne-rozibrav
   bulo-shukaty: PlatformIO or ESP-IDF dependency management documentation
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «PlatformIO or ESP-IDF
+    dependency management documentation». Одиниця лишається в черзі як `ne-rozibrav` — це
+    не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-14-036
   rid: ne-tverdzhennya
 - id: T-14-076
@@ -156,17 +156,17 @@
 - id: T-19-077
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF OTA Update documentation, deployment constraints
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF OTA Update
+    documentation, deployment constraints». Одиниця лишається в черзі як `ne-rozibrav` — це
+    не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-19-047
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF OTA Update documentation
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF OTA Update
+    documentation». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд про відсутність
+    джерела, а відмова видавати тему за документ.'
 - id: T-20-003
   rid: ne-rozibrav
 - id: T-21-071
