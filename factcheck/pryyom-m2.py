@@ -13,6 +13,8 @@
   3. клас A або B має непорожню cytata;
   4. взірець `zbih` компілюється — і цілком, і кожною альтернативою;
   4а. взірець не збігається з чужим текстом (див. KONTROLNI);
+  4б. жодна альтернатива не є ТЕЧЕЮ — не чіпляє більше, ніж усі інші
+      разом, і при цьому багато;
   5. клас E не стоїть на твердженні з числом, адресою чи GPIO
      — це не помилка, а привід переглянути: покажчик і власне
      вимірювання автора законно лишаються E.
@@ -40,6 +42,21 @@ VNUTRISHNYA = re.compile(r'^\s*ВНУТРІШНЯ ЗВІРКА')
 #
 # Це третя й найгірша форма пастки з рискою. Перші дві помітні:
 # взірець або падає, або нічого не чіпає. Ця виглядає як успіх.
+# **Теча взірця.** Знахідка М1 від 06:30Z 2026-08-28, і третя форма
+# пастки з диз'юнкцією — після холостої й після всеосяжної.
+#
+# Взірець — це АБО альтернатив. Якщо одна з них чіпляє більше, ніж усі
+# інші разом, і чіпляє багато, вона взірець не звужує, а ПІДМІНЯЄ.
+#
+# Найгірший приклад мій: доказ про непідтягнутий GPIO мав серед
+# альтернатив саме слово `стан`, і воно чіпляло 242 одиниці — тобто
+# доказ ставив свій клас майже на кожне твердження книги зі словом
+# «стан». Взірець компілювався, не був холостим і з контрольними
+# рядками не збігався, тож усі попередні ворота його пропускали.
+#
+# Течей у моїх взірцях було 15, у М1 — 2.
+TECHA_MIN = 25   # менше — не варте тривоги, слово може бути рідкісним
+
 KONTROLNI = ('ESP32 має два ядра',
              'Зовсім інший текст про каву',
              '12345')
@@ -51,6 +68,18 @@ SYGNAL = re.compile(r'\d+\s*(?:МГц|кГц|Гц|мА|А|В|мВ|КБ|МБ|ГБ
 # Клас E на ньому правильний: зовнішнього джерела для покажчика книги
 # не існує за природою. GPIO\d+ у назві такого запису — не сигнал.
 POKAZHCHYK = re.compile(r'покажчик|індекс|z-pokazhchyk|у індексі|T-Z-\d+', re.I)
+
+
+def teksty_odynyc():
+    """Тексти одиниць реєстру — потрібні лише для перевірки на течу."""
+    try:
+        import vybirka
+        return [o['tekst'] for k in 'ABCDEFG' for o in vybirka.odynyci(k)]
+    except Exception:
+        return None
+
+
+teksty = None
 
 
 def perevirka(shlyakh):
@@ -92,6 +121,16 @@ def perevirka(shlyakh):
                 rx = re.compile(vzir)
                 if all(rx.search(k) for k in KONTROLNI):
                     bidy.append(('ВЗІРЕЦЬ ЗБІГАЄТЬСЯ З УСІМ', nazva, ''))
+                elif teksty is not None:
+                    alt = factcheck.rozbyty_alternatyvy(vzir)
+                    if len(alt) > 1:
+                        o = sorted(((sum(1 for t in teksty
+                                         if re.search(a, t)), a)
+                                    for a in alt), reverse=True)
+                        if (o[0][0] >= TECHA_MIN
+                                and o[0][0] > sum(x for x, _ in o[1:])):
+                            bidy.append(('ТЕЧА: «%s» чіпляє %d'
+                                         % (o[0][1][:20], o[0][0]), nazva, ''))
         if klas in ('A', 'B') and not cytata:
             bidy.append(('КЛАС %s БЕЗ ЦИТАТИ' % klas, nazva, ''))
         if klas == 'E' and SYGNAL.search(nazva) and not POKAZHCHYK.search(nazva):
@@ -100,6 +139,8 @@ def perevirka(shlyakh):
 
 
 def main(argv):
+    global teksty
+    teksty = teksty_odynyc()
     shlyakhy = argv[1:] or sorted(glob.glob('factcheck/dokazy/*.yaml'))
     vsyoho = 0
     blok = 0
