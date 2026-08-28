@@ -47,7 +47,31 @@ VYDY = {"zavdannya", "pryynyato", "zvit",
 POTREBUYUT_VIDPOVIDI = {"zavdannya", "pytannya", "znakhidka"}
 # Хто веде це дерево. Потрібно, щоб відрізнити власний борг від
 # очікування на відповідь іншого супровідника.
-YA = "М1"
+#
+# БУЛО зашито `YA = "М1"`. Інструмент спільний і лежить в обох деревах,
+# тож у другому він рахував усе навпаки — і мовчки: «наш борг 0» у
+# дереві М2 означало «борг М1 нульовий», а власний борг М2 (вісім
+# листів) стояв поруч під написом «чекаємо відповіді».
+#
+# Знайдено 2026-08-28: М2 весь день читав «наш борг 0» і доповідав це
+# як свій стан. Форма правильна, підмет чужий.
+#
+# Тепер визначається з гілки, а не вгадується. І, головне, вивід більше
+# не каже «наш» і «ми»: він називає обидві сторони поіменно, тож
+# прочитати навпаки не вийде навіть тоді, коли визначення схибить.
+def _khto_vede() -> str:
+    import subprocess
+    try:
+        h = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"],
+                           cwd=ROOT, capture_output=True, text=True,
+                           timeout=5).stdout.strip()
+    except Exception:
+        return "М1"
+    return "М2" if h.endswith("-m2") else "М1"
+
+
+YA = _khto_vede()
+INSHYY = "М1" if YA == "М2" else "М2"
 OBOVYAZKOVI = ("vid", "komu", "koly", "vyd", "tema", "baza")
 AVTOR = {"m1": "М1", "m2": "М2"}
 
@@ -193,17 +217,18 @@ def perevirka(suvoro: bool) -> int:
 
     if nash_borh:
         znak = "✗" if suvoro else "·"
-        print(f"\n{znak} чекають нашої відповіді: {len(nash_borh)}")
+        print(f"\n{znak} чекають відповіді {YA} (борг {YA}): {len(nash_borh)}")
         for p in sorted(nash_borh, key=lambda p: p["koly"]):
             print(f"    {p['koly']}  {p['vid']} → {p['vyd']}: {p['tema']}")
             print(f"        {p['fayl']}")
     if chekayemo:
-        print(f"\n· надіслано, чекаємо відповіді: {len(chekayemo)}")
+        print(f"\n· надіслано {YA}, чекаємо відповіді {INSHYY} "
+              f"(борг {INSHYY}): {len(chekayemo)}")
         for p in sorted(chekayemo, key=lambda p: p["koly"]):
             print(f"    {p['koly']}  → {p['vyd']}: {p['tema']}")
 
     print(f"\nzvyazok: повідомлень {len(povid)}, порушень форми {len(bidy)}, "
-          f"наш борг {len(nash_borh)}, чекаємо {len(chekayemo)}")
+          f"борг {YA} {len(nash_borh)}, борг {INSHYY} {len(chekayemo)}")
     if bidy:
         return 1
     return 1 if (suvoro and nash_borh) else 0
