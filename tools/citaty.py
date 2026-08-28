@@ -547,7 +547,7 @@ def perevirka(kachaty: bool,
         for z in zapysy:
             if not isinstance(z, dict):
                 continue
-            nazva = str(z.get("title", "?"))
+            nazva = factcheck.nazva_zapysu(z)
             # **Відсутність класу — не те саме, що клас `F`.**
             #
             # У реєстрі клас є завжди. У вивантаженні помічника його

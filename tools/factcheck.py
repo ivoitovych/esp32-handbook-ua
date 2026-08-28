@@ -1148,7 +1148,13 @@ def blocked() -> int:
         sh = (re.search(r"\*\*Що шукати в джерелі:\*\*\s*(.+)", z["tilo"]) or [None, ""])[1]
         m = RE_TVERDZHENNYA.search(z["tilo"])
         txt = " ".join(m.group(1).replace("> ", "").split()) if m else ""
-        g = grupy.setdefault(u, {"shukaty": set(), "tverdzhennya": []})
+        # Це **не** запис доказу, а місцевий словник групування. Слово
+        # те саме, схема інша — і саме тому переведення імен полів його
+        # зачепило: заміна за рядком перейменувала три **читання**
+        # (`g["look_for"]`), а один літерал, що ключ і створює, лишила
+        # старим. `blocked` падав із `KeyError` від fbfa0c2 і до цієї
+        # правки, бо його немає ні в `make check`, ні в жодній базі.
+        g = grupy.setdefault(u, {"look_for": set(), "tverdzhennya": []})
         if sh:
             g["look_for"].add(sh.strip())
         g["tverdzhennya"].append((z["id"], z["src"], txt))

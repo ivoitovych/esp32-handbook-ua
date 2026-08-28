@@ -209,9 +209,9 @@ def main() -> int:
     c = collections.Counter(str(z.get("verdykt", "?")) for z in zap)
 
     # Третій шар — на все, що має цитату, а не лише на спростування.
-    kand = [{"nazva": str(z.get("odynycya", "?")),
-             "dzherelo": str(z.get("source", "")).strip(),
-             "cytata": str(z.get("quote", "")),
+    kand = [{"title": str(z.get("odynycya", "?")),
+             "source": str(z.get("source", "")).strip(),
+             "quote": str(z.get("quote", "")),
              "verdykt": str(z.get("verdykt", "")),
              "zvidky": z.get("_fayl", "?")}
             for z in zap if str(z.get("quote", "")).strip()]
@@ -225,7 +225,7 @@ def main() -> int:
         try:
             import citaty
             naslidky, _ = citaty.perevirka(True, [KANDYDATY])
-            stany = {str(x.get("title")): str(x.get("stan"))
+            stany = {str(x.get("nazva")): str(x.get("stan"))
                      for x in naslidky}
         except ImportError:
             pass

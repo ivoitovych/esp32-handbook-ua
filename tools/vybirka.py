@@ -249,9 +249,9 @@ KANDYDATY = ROOT / "factcheck" / "vybirka-kandydaty.yaml"
 
 def tretiy_shar_vybirky(zap: list[dict]) -> tuple[int, int]:
     """Скільки заявлених `znayshov` справді стоять за названою адресою."""
-    kand = [{"nazva": str(z.get("odynycya", "?")),
-             "dzherelo": str(z.get("source", "")).strip(),
-             "cytata": str(z.get("quote", "")),
+    kand = [{"title": str(z.get("odynycya", "?")),
+             "source": str(z.get("source", "")).strip(),
+             "quote": str(z.get("quote", "")),
              "zvidky": z.get("_fayl", "?")}
             for z in zap if str(z.get("verdykt")) == "znayshov"]
     if not kand:

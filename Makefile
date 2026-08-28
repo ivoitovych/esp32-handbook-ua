@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage check release release-check \
+.PHONY: help setup all intake dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema samoperevirky vidtvornist cache-vs-book layer1 coverage check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -198,7 +198,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage check-attribution
+check: samoperevirky linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
@@ -216,6 +216,21 @@ stale:
 # на переведення в `looked-not-found`, і після нього це стане ворітьми.
 skhema:
 	@python3 tools/skhema.py
+
+# Самоперевірки: показ кожної перевірки на **навмисно зіпсованому**
+# вході. Правило проєкту каже, що перевірка без такого показу не
+# відрізняється від відсутньої, — і саме тому самоперевірки треба
+# кликати, а не мати.
+#
+# Досі їх не кликав НІХТО: обидві жили в скриптах під прапорцем, і
+# `make check` запускав `techa` без нього. Того дня, коли переведення
+# імен полів зламало запасний вираз у `techa.znayty`, самоперевірка це
+# **побачила** — показала «очікували течу, дістали чисто» — і сказала
+# це в порожню кімнату. Червона перевірка, якої ніхто не кличе,
+# рівно так само зелена.
+samoperevirky:
+	@$(PY) tools/skhema.py --samoperevirka
+	@$(PY) tools/techa.py --samoperevirka
 
 check-attribution:
 	@sh -c '. ./.githooks/identity.conf; \

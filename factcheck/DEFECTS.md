@@ -21,19 +21,36 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Nine of the twenty-one kinds below are one family. The check runs, it
-returns zero, and the zero means nothing — because it was never
+Twelve of the twenty-four kinds below are one family. The check runs, it
+returns a number, and the number means nothing — because it was never
 measuring the thing its name claims.
 
 > **Zero looks the same whether all is well or the counter is counting
 > nothing.** And it is read as the first, every time.
 
-The rule that follows from it governs every contribution here:
+Three of the twelve were added the same day and sharpen the family, each
+by weakening an assumption the earlier ones still made:
+
+- kind 22 — the number need not be **zero**. An unchanged number is a
+  better disguise than a zero, because a zero at least invites the
+  question.
+- kind 23 — the broken check need not be **wrong-looking**. An
+  expression can keep the exact shape of a fallback and not be one.
+- kind 24 — the check need not be **passing**. It can be red, correct,
+  and uncalled, which is the same thing as green.
+
+The rule that follows from the family governs every contribution here:
 
 > **Every new check must be demonstrated working on a deliberately
 > broken input**, and that demonstration is part of the contribution. A
 > check that has never fired is indistinguishable from a check that
 > does not exist.
+
+And its corollary, bought with kind 24:
+
+> **A check that fires where nothing listens is indistinguishable from
+> both.** The demonstration must be wired into a target, not left
+> behind a flag.
 
 ---
 
@@ -431,6 +448,117 @@ us had asked: *does the context contain its own claim?*
 > thought was showing half of one.
 
 **Held by.** `layer1.py` — and the boundary scan is now fence-aware.
+
+## 22. The same number, meaning something else
+
+**Symptom.** A check keeps returning the value it returned yesterday.
+Nothing looks wrong, because nothing moved. What moved is what the
+number is a count **of**.
+
+**Case.** Proposed by the other maintainer with a reproducible example.
+`citaty.py` decided whether a record was checkable with
+`maye_klas = "klas" in z` — a test for the presence of an **old field
+name**. Under the contraction dress rehearsal:
+
+    before   verified 508 · not found 104 · nothing to check 672
+    after    verified 508 · not found 104 · nothing to check 695
+
+> The headline did not move by one. "Verified 508" before, "verified
+> 508" after — while twenty-three records migrated from *is checked* to
+> *there is nothing to check*.
+
+This is kind 3 with the volume turned down. Kind 3 says a check returns
+zero and the zero means nothing; this says a check returns **the same
+number**, and the sameness is the disguise. A reviewer who looked at the
+headline would have been right about exactly what they looked at.
+
+**Why no pattern finds it.** `"klas" in z` reads no value and raises
+nothing. It is correct code for as long as the field exists — and every
+baseline run is made on data where the field still exists.
+
+**Held by.** Nothing automatic, and probably nothing can be. It is held
+by a **procedure**: run the contraction clean on a copy, diff every
+tool's output, revert. Adopted as mandatory step 1-bis before the
+migration's contraction. Everything below was found by that procedure
+and by nothing else.
+
+## 23. A replacement that renamed both sides of the fallback
+
+**Symptom.** A migration replaces an old name with a new one across a
+file. Somewhere the old name appears as the **fallback** of the new one.
+Both halves are replaced. The expression still parses, still runs, still
+looks like a fallback — and no longer is one.
+
+**Case.** Converting tools to English field names produced:
+
+    v = z.get("match") or z.get("match")
+
+The intent was `z.get("match") or z.get("zbih")`. A record carrying only
+the Ukrainian name was silently skipped. `techa.py`'s own self-check
+**caught this** — it reported *expected a leak, got clean* — and said so
+into an empty room, because `make check` ran `techa` without
+`--samoperevirka`. Neither self-check in the project was called by
+anything: see kind 24.
+
+The same replacement, in the same commit, also produced three other
+shapes worth naming separately because each needs a different question:
+
+- **A reader renamed away from its writer.** `factcheck.py blocked`
+  created a local dict `{"shukaty": set()}` and then read
+  `g["look_for"]` three times. The three reads were replaced, the one
+  literal that creates the key was not. `blocked` raised `KeyError`
+  from that commit until it was run again — and it is in no baseline
+  and in no `make check` target, so nothing ran it.
+- **A writer renamed away from its reader.** Four tools wrote candidate
+  files with `nazva`/`dzherelo`/`cytata` and then keyed results by
+  `k["title"]`.
+- **A schema renamed that was never migrating.** The findings returned
+  by `citaty.perevirka` use `nazva` and always will; three tools were
+  converted to read `n.get("title")` from them, which is `None` for
+  every finding. Measured: every candidate came back named `?`, so the
+  third-layer state map for all four tools collapsed into one bucket.
+
+**Count.** Fourteen reads, then nine more sites of these four shapes.
+The first pass of the conversion had searched for `z.get("nazva")` with
+double quotes; the code also contained `z.get('nazva')`.
+
+> A replacement that searches for a string finds exactly the spelling
+> of that string. The rest stays — and looks converted.
+
+**Held by.** Kind 22's procedure, plus a rule this cost us: **during a
+name migration, run every entry point, not the ones in `make check`.**
+`blocked`, `cherga`, `vzirets` and four helper tools are in no gate, and
+that is where all of this survived.
+
+## 24. A check that is red and is not called
+
+**Symptom.** A check exists, works, and disagrees with reality — and no
+target, gate or habit invokes it. Its redness is indistinguishable from
+green.
+
+**Case.** Two, within a day of each other.
+
+The other maintainer's `intake.py` had **21 blocking findings** and no
+Makefile target: `make check` was green because the check with the
+findings simply was not called. Then `techa.py --samoperevirka` sat red
+for the length of kind 23 above, saying *expected a leak, got clean* to
+nobody. Both self-checks in the project — `skhema` and `techa` — were
+behind flags that nothing ran.
+
+> This is worse than a missing check, and it costs more than kind 3. A
+> missing check is an admitted gap. A check nobody calls is an
+> **asserted** guarantee, and the assertion is in the contributor's
+> head, where no diff can reach it.
+
+**Held by.** `make samoperevirky`, now part of `make check`: every
+self-check runs on its deliberately broken input on every gate run. The
+project rule *a check that has never fired is no different from a check
+that does not exist* now has its corollary — **a check that fires where
+nothing listens is no different either.**
+
+`make intake` exists as a target but is deliberately **not** in `check`
+while its 21 findings are worked through; that is a stated exception
+with a date, not an omission.
 
 ---
 
