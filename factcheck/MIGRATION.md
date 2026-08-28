@@ -61,7 +61,7 @@
 
 Після кожного етапу:
 
-    tools/snapshot.py factcheck/znimky/pryvyazky-do-pereyizdu.json --zvirty
+    tools/snapshot.py factcheck/snapshots/pryvyazky-do-pereyizdu.json --zvirty
 
 Якщо рядок «втратили одиниці» не нуль — етап відкочується. Це не
 формальність: сьогодні одна посадка вже мовчки переписала файли
@@ -309,7 +309,7 @@ The slang is not only inside the documents. It **is** the documents:
 
     POMICHNYKY.md   BRIEF-SAMPLE.md   SWEEP-NO-SIGNAL.md   MEASURE-NO-SIGNAL.md
     SPLIT.md        PROKHID-POVNYY.md   TRACES.md      SPROSTOVANE.md
-    dokazy/  rozbir/  prokhid/  doslidy/  znimky/  hvylya2/
+    evidence/  triage/  pass/  experiments/  snapshots/  wave2/
 
 And so are the tools: `work_orders_f.py`, `sweep_digest.py`,
 `sweep_land.py`, `land_c.py`, `snapshot.py`, `measure_f.py`,
@@ -349,12 +349,12 @@ the card that needed the book to be understood.
 
 | Now | Becomes |
 |---|---|
-| `dokazy/` | `evidence/` |
-| `rozbir/` | `triage/` |
-| `prokhid/` · `prokhid-vidkydka/` | `pass/` · `pass-rejected/` |
-| `doslidy/` | `experiments/` |
-| `znimky/` | `snapshots/` |
-| `detali/` · `klasC/` | `details/` · `class-c/` |
+| `evidence/` | `evidence/` |
+| `triage/` | `triage/` |
+| `pass/` · `pass-rejected/` | `pass/` · `pass-rejected/` |
+| `experiments/` | `experiments/` |
+| `snapshots/` | `snapshots/` |
+| `details/` · `class-c/` | `details/` · `class-c/` |
 
 `manual/`, `dodatky/`, `kartky/`, `inserts/` **keep their names**: they
 mirror the book's own directory layout, and renaming them would break
@@ -417,7 +417,7 @@ reproducible from tools" and said to delete them. Two were not:
   document is the evidence for that measurement.
 
 The three archived ones carry at least one rule each that I could not
-find recorded anywhere else — `hvylya2`'s "a claim whose document is
+find recorded anywhere else — `wave2`'s "a claim whose document is
 not in the cache never enters the order" among them. Archived rather
 than deleted until each rule is confirmed present in `WORKERS.md`.
 

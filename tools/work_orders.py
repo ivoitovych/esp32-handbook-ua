@@ -115,7 +115,7 @@ ZAHOLOVOK = """# Наряд: {skilky} цитат, яких немає в дже�
 
 def zapysy() -> dict[tuple[str, str], dict]:
     rec: dict[tuple[str, str], dict] = {}
-    for f in sorted((ROOT / "factcheck" / "dokazy").glob("*.yaml")):
+    for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:
             for z in (yaml.safe_load(f.read_text(encoding="utf-8")) or []):
                 if isinstance(z, dict):

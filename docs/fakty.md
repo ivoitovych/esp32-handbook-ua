@@ -377,7 +377,7 @@ datasheet 20 мА справді є — але це `IOH` домену `VDD_SDIO
 величина з тим самим числом.
 
 Джерело: ESP32 Series Datasheet v5.3, Table 5-1 і Table 5-3 з приміткою
-2 — звірено М2 (`factcheck/dokazy/m2-01-esp32-datasheet.yaml`);
+2 — звірено М2 (`factcheck/evidence/m2-01-esp32-datasheet.yaml`);
 `components/hal/include/hal/gpio_types.h` ESP-IDF `release/v5.5` —
 звірено М1. Звірено 2026-08-26.
 

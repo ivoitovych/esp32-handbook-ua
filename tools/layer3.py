@@ -64,7 +64,7 @@ import yaml
 import factcheck
 
 ROOT = Path(__file__).resolve().parent.parent
-DOKAZY = ROOT / "factcheck" / "dokazy"
+DOKAZY = ROOT / "factcheck" / "evidence"
 KESH = ROOT / "dzherela-kesh"
 ZVIT = ROOT / "factcheck" / "QUOTES.md"
 
@@ -647,7 +647,7 @@ def perevirka(kachaty: bool,
 
     `fayly` дозволяє перевірити щось, чого в реєстрі ще немає, — а саме
     вивантаження помічника. Так перевірка стається **до** того, як чуже
-    слово потрапляє в `factcheck/dokazy/`, а не після.
+    слово потрапляє в `factcheck/evidence/`, а не після.
     """
     naslidky: list[dict] = []
     pidsumok = {"ok": 0, "ne_znaydeno": 0, "nedosyazhne": 0, "nichoho": 0,

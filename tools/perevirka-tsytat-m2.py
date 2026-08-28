@@ -24,7 +24,7 @@ import re, sys, hashlib, pathlib, subprocess
 
 KORIN = pathlib.Path(__file__).resolve().parent.parent
 KESH = pathlib.Path.home() / "dzherela-cache"
-DOKAZY = KORIN / "factcheck" / "dokazy"
+DOKAZY = KORIN / "factcheck" / "evidence"
 
 
 def normalizuvaty(t: str) -> str:

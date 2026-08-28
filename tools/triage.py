@@ -34,7 +34,7 @@ def main(argv: list[str]) -> int:
     # Без цього другий захід переробляв би те саме, і «повний прохід»
     # ніколи б не закінчився.
     vzhe = set()
-    for f in Path(ROOT / "factcheck" / "rozbir").glob("*.yaml"):
+    for f in Path(ROOT / "factcheck" / "triage").glob("*.yaml"):
         try:
             for z in (yaml.safe_load(f.read_text(encoding="utf-8")) or []):
                 if isinstance(z, dict) and z.get("id"):

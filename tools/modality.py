@@ -119,7 +119,7 @@ def main() -> int:
 
     odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
     znayd = []
-    for f in sorted((ROOT / "factcheck" / "dokazy").glob("*.yaml")):
+    for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:
             z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
         except Exception:

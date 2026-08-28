@@ -14,7 +14,7 @@
 
 ## Звідки береться матеріал
 
-З розбору М2 (`factcheck/rozbir/`), рід `dzherelo-ye` — там, де поле
+З розбору М2 (`factcheck/triage/`), рід `dzherelo-ye` — там, де поле
 `shukaty` називає **конкретну деталь або стандарт із номером**, а не
 тему. Різниця вимірна: з 111 таких одиниць 43 називають `PMS5003`,
 `IEC 60908`, `ETSI EN303645`, `FAT Specification`; решта 68 кажуть
@@ -116,7 +116,7 @@ def main() -> int:
             reyestr[u["id"]] = u
     vsi = [u["tekst"] for u in reyestr.values()]
 
-    rozbir = pathlib.Path("factcheck/rozbir")
+    rozbir = pathlib.Path("factcheck/triage")
     kandydaty = []
     for f in sorted(rozbir.glob("*.yaml")):
         for r in yaml.safe_load(f.read_text(encoding="utf-8")) or []:
@@ -171,7 +171,7 @@ def main() -> int:
         print("\n(суха проба; `--pysaty` щоб записати)")
         return 0
 
-    kudy = ROOT / "factcheck" / "dokazy"
+    kudy = ROOT / "factcheck" / "evidence"
     for fayl, zapys in sorted(posadka.items()):
         shapka = (
             f"# Черга з названим, але недосяжним джерелом — {fayl}.\n"
