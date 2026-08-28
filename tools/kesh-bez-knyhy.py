@@ -25,6 +25,19 @@
 ворота її не бачили, і побачити не могли: за побудовою вони питають
 «чи джерело у кеші», а не «чи джерело не є книгою».
 
+## І окремо — маніфест
+
+Перевіряти самі файли мало. **Джерелом книги може бути записаний сам
+маніфест**: рядок із адресою
+`raw.githubusercontent.com/<власник>/<книга>/main/manual/…` реєструє
+книгу як зовнішнє джерело офіційно. Тоді кожне перезавантаження
+відновлює файл, і прибирання з кешу не тримається.
+
+Знайдено 2026-08-28: вісім таких рядків. Спершу я вилучив сім файлів
+із кешу й вважав ваду закритою; наступне ж качання повернуло чотири,
+бо адреси лишалися в маніфесті. **Прибирати наслідок, лишаючи
+причину, — це не виправлення, а відкладення.**
+
 ## Чому за вмістом, а не за іменем
 
 Ім'я можна змінити. Перевірка порівнює **sha256 вмісту**, тож копія
@@ -65,6 +78,10 @@ KNYHA = ("manual", "dodatky", "kartky", "inserts")
 # правило, що вже стоїть у наряді помічникові.
 VLASNE = re.compile(r"esp32-handbook|ivoitovych|voytovych", re.I)
 
+# Шлях книги в будь-якому репозиторії: форк під іншим власником має ті
+# самі каталоги.
+ZA_SHLYAKHOM = re.compile(r"/(?:%s)/" % "|".join(KNYHA))
+
 
 def main(argv: list[str]) -> int:
     tykho = "--tykho" in argv
@@ -76,6 +93,17 @@ def main(argv: list[str]) -> int:
         for p in katalog.glob("*.md"):
             vidbytky[hashlib.sha256(p.read_bytes()).hexdigest()] = str(
                 p.relative_to(ROOT))
+
+    # Маніфест: адреса на власну книгу реєструє її як джерело.
+    manifest = KESH / "MANIFEST.md"
+    ryadky_man = []
+    if manifest.exists():
+        tekst = manifest.read_text(encoding="utf-8")
+        for ln in tekst.split("\n"):
+            if re.search(r"raw\.githubusercontent\.com/[^/]+/[^/]+/"
+                         r"\S*/(manual|dodatky|kartky|inserts)/", ln):
+                m = re.search(r"\| `([^`]+)` \|", ln)
+                ryadky_man.append(m.group(1) if m else ln[:60])
 
     znaydeno = []
     n = 0
@@ -89,22 +117,37 @@ def main(argv: list[str]) -> int:
                 znaydeno.append((p.name, vidbytky[h]))
 
     # Маніфест — єдине, що з кешу потрапляє в git. Самопосилання в
-    # ньому переживає видалення файлу й мандрує далі.
+    # ньому переживає видалення файлу й **відновлює його** при
+    # наступному качанні: причина живе тут, наслідок у каталозі.
+    #
+    # Дві ознаки, бо обидва супровідники написали цю перевірку
+    # незалежно й кожен пропустив те, що бачив другий:
+    #
+    #   за шляхом  — `…/manual/…` у будь-якому репозиторії; ловить форк
+    #                під чужим іменем власника;
+    #   за іменем  — власне ім'я репозиторію; ловить адресу поза
+    #                `raw.githubusercontent`, скажімо на реліз чи `docs/`.
+    #
+    # Жодна поодинці не покриває обидва випадки.
     v_manifesti = []
     manifest = KESH / "MANIFEST.md"
     if manifest.exists():
-        for m in re.finditer(r"^\|\s*`([^`]+)`.*?<([^>]+)>", 
-                             manifest.read_text(encoding="utf-8"), re.M):
-            if VLASNE.search(m.group(2)):
-                v_manifesti.append((m.group(1), m.group(2)))
+        for ln in manifest.read_text(encoding="utf-8").split("\n"):
+            if not ln.startswith("| `"):
+                continue
+            m = re.search(r"<([^>]+)>", ln)
+            url = m.group(1) if m else ""
+            if ZA_SHLYAKHOM.search(url) or VLASNE.search(url):
+                imya = re.search(r"\| `([^`]+)` \|", ln)
+                v_manifesti.append((imya.group(1) if imya else ln[:60], url))
 
     for imya, dzherelo in znaydeno:
         print("   ✗ файл книги в кеші джерел: %s = %s" % (imya, dzherelo))
     for imya, url in v_manifesti:
-        print("   ✗ маніфест називає книгу джерелом: %s → %s" % (imya, url))
+        print("   ✗ маніфест реєструє книгу як джерело: %s → %s" % (imya, url))
     if not tykho or znaydeno or v_manifesti:
         print("kesh-bez-knyhy: файлів у кеші %d; файлів книги серед них %d; "
-              "самопосилань у маніфесті %d"
+              "рядків маніфесту на книгу %d"
               % (n, len(znaydeno), len(v_manifesti)))
     return 1 if (znaydeno or v_manifesti) else 0
 
