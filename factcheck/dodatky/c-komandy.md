@@ -3330,7 +3330,7 @@ sudo usermod -aG dialout $USER   # права; далі ПЕРЕЗАЙТИ в с
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
 - **Дослівно з джерела:**
-  > For Linux users, if the port name is /dev/ttyUSB0
+  > For Linux users, if the port name is ``/dev/ttyUSB0``
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документ підтверджує, що /dev/ttyUSB* є портом зовнішнього USB-to-UART моста
 - **Прохід:** prochid-c-komandy

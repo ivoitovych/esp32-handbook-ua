@@ -1,118 +1,3 @@
-# Суцільний прохід — 31-freertos.
-#
-# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
-# те, що пережило третій шар: цитата знайшлася в названому
-# документі дослівно. Заявок без такої перевірки тут немає.
-#
-# Взірці виведено механічно — найкоротший префікс, відмітний
-# у всьому реєстрі. Це компроміс між двома законами:
-# широкий взірець бреше, довгий ламається.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: 'T-31-020: Планувальник завжди виконує **найпріоритетнішу готову** задачу.'
   zbih: Планувальник\s+завжди\s+виконує\s+\*\*найпріоритетнішу
   klas: A
@@ -120,9 +5,7 @@
   cytata: 'The scheduler executes the highest priority ready-state task.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: планувальник завжди виконує найпріоритетнішу готову задачу
   title: 'T-31-020: Планувальник завжди виконує **найпріоритетнішу готову** задачу.'
   match: Планувальник\s+завжди\s+виконує\s+\*\*найпріоритетнішу
@@ -131,9 +14,7 @@
   quote: 'The scheduler executes the highest priority ready-state task.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: планувальник завжди виконує найпріоритетнішу готову задачу
   sha:
   - 685aa109
@@ -141,27 +22,19 @@
   zbih: Це\s+не\s+бібліотека,\s+яку
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
-  cytata: 'FreeRTOS is an open source RTOS (real-time operating system) kernel that is integrated
-    into ESP-IDF as a component. Thus, all ESP-IDF applications and many ESP-IDF components
-    are written based on FreeRTOS.
+  cytata: 'FreeRTOS is an open source RTOS (real-time operating system) kernel that is integrated into ESP-IDF as a component. Thus, all ESP-IDF applications and many ESP-IDF components are written based on FreeRTOS.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: це не бібліотека, яку треба підключати - це середовище виконання
   title: 'T-31-002: Це не бібліотека, яку треба підключати, — це'
   match: Це\s+не\s+бібліотека,\s+яку
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
-  quote: 'FreeRTOS is an open source RTOS (real-time operating system) kernel that is integrated
-    into ESP-IDF as a component. Thus, all ESP-IDF applications and many ESP-IDF components
-    are written based on FreeRTOS.
+  quote: 'FreeRTOS is an open source RTOS (real-time operating system) kernel that is integrated into ESP-IDF as a component. Thus, all ESP-IDF applications and many ESP-IDF components are written based on FreeRTOS.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: це не бібліотека, яку треба підключати - це середовище виконання
   sha:
   - 6ced381a
@@ -172,9 +45,7 @@
   cytata: 'Fixed Priority
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: правило планувальника -固定пріоритетний час планування
   title: 'T-31-027: Це не помилка планувальника, а його правило.'
   match: Це\s+не\s+помилка\s+планувальника,
@@ -183,9 +54,7 @@
   quote: 'Fixed Priority
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: правило планувальника -固定пріоритетний час планування
   sha:
   - f4d5df38
@@ -193,28 +62,20 @@
   zbih: Високий\s+пріоритет\s+означає\s+«швидко\s+відреагувати\s+й\s+заснути»,
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: 'Each task is given a constant priority upon creation. The scheduler executes the
-    highest priority ready-state task.
+  cytata: 'Each task is given a constant priority upon creation. The scheduler executes the highest priority ready-state task.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: висока пріоритет означає швидку реакцію, коли задача готова, але вимагає передання
-    керування
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: висока пріоритет означає швидку реакцію, коли задача готова, але вимагає передання керування
   title: 'T-31-029: Високий пріоритет означає «швидко відреагувати й заснути», а'
   match: Високий\s+пріоритет\s+означає\s+«швидко\s+відреагувати\s+й\s+заснути»,
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  quote: 'Each task is given a constant priority upon creation. The scheduler executes the
-    highest priority ready-state task.
+  quote: 'Each task is given a constant priority upon creation. The scheduler executes the highest priority ready-state task.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  note: висока пріоритет означає швидку реакцію, коли задача готова, але вимагає передання
-    керування
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: висока пріоритет означає швидку реакцію, коли задача готова, але вимагає передання керування
   sha:
   - b6b1a89f
 - nazva: 'T-31-059: Зручно для «дочекатися, поки є і Wi-Fi, і'
@@ -224,9 +85,7 @@
   cytata: 'Event Group API
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: група подій зручна для очікування комбінацій умов, як Wi-Fi та SNTP разом
   title: 'T-31-059: Зручно для «дочекатися, поки є і Wi-Fi, і'
   match: Зручно\s+для\s+«дочекатися,\s+поки
@@ -235,9 +94,7 @@
   quote: 'Event Group API
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: група подій зручна для очікування комбінацій умов, як Wi-Fi та SNTP разом
   sha:
   - 599ea25d
@@ -245,23 +102,19 @@
   zbih: Прив'язати\s+задачу\s+до\s+ядра
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: 'xTaskCreatePinnedToCore creates a task with a particular core affinity
+  cytata: 'xTaskCreatePinnedToCore` creates a task with a particular core affinity
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: прив'язування задачі до ядра явно підтримується API
   title: 'T-31-031: Прив''язати задачу до ядра явно:'
   match: Прив'язати\s+задачу\s+до\s+ядра
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  quote: 'xTaskCreatePinnedToCore creates a task with a particular core affinity
+  quote: 'xTaskCreatePinnedToCore` creates a task with a particular core affinity
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: прив'язування задачі до ядра явно підтримується API
   sha:
   - 8ff92472
@@ -269,28 +122,19 @@
   zbih: 'Коли\s+це\s+має\s+сенс:'
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: 'Typically, the tasks responsible for handling protocol related processing such
-    as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name PRO_CPU), where as the tasks
-    handling the remainder of the application are pinned to Core 1
+  cytata: 'Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: Core 1 рекомендується для завдань, що не залежать від радіо і потребують точних
-    таймінгів
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Core 1 рекомендується для завдань, що не залежать від радіо і потребують точних таймінгів
   title: 'T-31-034: Коли це має сенс: щось із жорсткими таймінгами'
   match: 'Коли\s+це\s+має\s+сенс:'
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  quote: 'Typically, the tasks responsible for handling protocol related processing such as
-    Wi-Fi or Bluetooth are pinned to Core 0 (thus the name PRO_CPU), where as the tasks handling
-    the remainder of the application are pinned to Core 1
+  quote: 'Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Core 1 рекомендується для завдань, що не залежать від радіо і потребують точних таймінгів
   sha:
   - b67ba81b
@@ -298,57 +142,39 @@
   zbih: Щось\s+важке\s+й\s+тривале
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: 'Typically, the tasks responsible for handling protocol related processing such
-    as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name PRO_CPU), where as the tasks
-    handling the remainder of the application are pinned to Core 1
+  cytata: 'Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: Core 1 для важких та тривалих завдань щоб не заважати протокольній обробці на Core
-    0
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Core 1 для важких та тривалих завдань щоб не заважати протокольній обробці на Core 0
   title: 'T-31-035: Щось важке й тривале — теж на ядро'
   match: Щось\s+важке\s+й\s+тривале
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  quote: 'Typically, the tasks responsible for handling protocol related processing such as
-    Wi-Fi or Bluetooth are pinned to Core 0 (thus the name PRO_CPU), where as the tasks handling
-    the remainder of the application are pinned to Core 1
+  quote: 'Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  note: Core 1 для важких та тривалих завдань щоб не заважати протокольній обробці на Core
-    0
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Core 1 для важких та тривалих завдань щоб не заважати протокольній обробці на Core 0
   sha:
   - 7b9b18a5
 - nazva: 'T-31-036: Двоядерність робить помилки синхронізації **реальними, а не теоретичними**.'
   zbih: Двоядерність\s+робить\s+помилки\s+синхронізації
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: 'Although an SMP system allows threads to switch cores, there are scenarios where
-    a thread must/should only run on a particular core. Therefore, threads in an SMP system
-    also have a core affinity
+  cytata: 'Although an SMP system allows threads to switch cores, there are scenarios where a thread must/should only run on a particular core. Therefore, threads in an SMP system also have a core affinity
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: двоядерність робить помилки синхронізації реальними через справжній паралелізм
   title: 'T-31-036: Двоядерність робить помилки синхронізації **реальними, а не теоретичними**.'
   match: Двоядерність\s+робить\s+помилки\s+синхронізації
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  quote: 'Although an SMP system allows threads to switch cores, there are scenarios where
-    a thread must/should only run on a particular core. Therefore, threads in an SMP system
-    also have a core affinity
+  quote: 'Although an SMP system allows threads to switch cores, there are scenarios where a thread must/should only run on a particular core. Therefore, threads in an SMP system also have a core affinity
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: двоядерність робить помилки синхронізації реальними через справжній паралелізм
   sha:
   - 6c48d623
@@ -359,9 +185,7 @@
   cytata: 'Semaphore API
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: бінарний семафор - структура синхронізації, яка сигналить про подію
   title: 'T-31-055: **Двійковий семафор** — сигнал «сталося».'
   match: \*\*Двійковий\s+семафор\*\*\s+—\s+сигнал
@@ -370,9 +194,7 @@
   quote: 'Semaphore API
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: бінарний семафор - структура синхронізації, яка сигналить про подію
   sha:
   - c73b142f
@@ -383,9 +205,7 @@
   cytata: 'Semaphore API
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: лічильний семафор - облік обмеженого ресурсу
   title: 'T-31-057: **Лічильний семафор** — облік обмеженого ресурсу.'
   match: \*\*Лічильний\s+семафор\*\*\s+—\s+облік
@@ -394,9 +214,7 @@
   quote: 'Semaphore API
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: лічильний семафор - облік обмеженого ресурсу
   sha:
   - eec8ea19
@@ -407,9 +225,7 @@
   cytata: 'Event Group API
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: група подій - набір прапорців, на комбінацію яких можна чекати
   title: 'T-31-058: **Група подій** — набір прапорців, на комбінацію яких'
   match: \*\*Група\s+подій\*\*\s+—\s+набір
@@ -418,9 +234,7 @@
   quote: 'Event Group API
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: група подій - набір прапорців, на комбінацію яких можна чекати
   sha:
   - 1b8c1efa
@@ -428,27 +242,19 @@
   zbih: \*\*ISR\s+має\s+бути\s+коротким\.\*\*
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  cytata: 'Designed for use in constrained environments during early startup, before the heap
-    allocator or syscalls are initialized. These macros are commonly used in critical startup
-    code or in critical sections where interrupts are disabled.
+  cytata: 'Designed for use in constrained environments during early startup, before the heap allocator or syscalls are initialized. These macros are commonly used in critical startup code or in critical sections where interrupts are disabled.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ISR повинен бути коротким - читати, покласти в чергу, вийти
   title: 'T-31-063: **ISR має бути коротким.** Прочитати, покласти в чергу,'
   match: \*\*ISR\s+має\s+бути\s+коротким\.\*\*
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  quote: 'Designed for use in constrained environments during early startup, before the heap
-    allocator or syscalls are initialized. These macros are commonly used in critical startup
-    code or in critical sections where interrupts are disabled.
+  quote: 'Designed for use in constrained environments during early startup, before the heap allocator or syscalls are initialized. These macros are commonly used in critical startup code or in critical sections where interrupts are disabled.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ISR повинен бути коротким - читати, покласти в чергу, вийти
   sha:
   - c27bfc67
@@ -456,56 +262,38 @@
   zbih: Це\s+інструмент\s+для\s+відлагодження,
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  cytata: 'These macros should be used sparingly, as they can impact performance. They are
-    suitable for critical sections or interrupt routines where other logging macros may not
-    work reliably.
+  cytata: 'These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: логування в ISR - інструмент для відлагодження, а не для роботи
   title: 'T-31-070: Це інструмент для відлагодження, а не для роботи.'
   match: Це\s+інструмент\s+для\s+відлагодження,
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  quote: 'These macros should be used sparingly, as they can impact performance. They are
-    suitable for critical sections or interrupt routines where other logging macros may not
-    work reliably.
+  quote: 'These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: логування в ISR - інструмент для відлагодження, а не для роботи
 - nazva: 'T-31-071: Але коли ISR поводиться незрозуміло, а покласти в'
   zbih: Але\s+коли\s+ISR\s+поводиться
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  cytata: 'These macros should be used sparingly, as they can impact performance. They are
-    suitable for critical sections or interrupt routines where other logging macros may not
-    work reliably.
+  cytata: 'These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: коли ISR поводиться незрозуміло, а покласти в чергу нема чого, логування - єдиний
-    спосіб
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: коли ISR поводиться незрозуміло, а покласти в чергу нема чого, логування - єдиний спосіб
   title: 'T-31-071: Але коли ISR поводиться незрозуміло, а покласти в'
   match: Але\s+коли\s+ISR\s+поводиться
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  quote: 'These macros should be used sparingly, as they can impact performance. They are
-    suitable for critical sections or interrupt routines where other logging macros may not
-    work reliably.
+  quote: 'These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  note: коли ISR поводиться незрозуміло, а покласти в чергу нема чого, логування - єдиний
-    спосіб
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: коли ISR поводиться незрозуміло, а покласти в чергу нема чого, логування - єдиний спосіб
   sha:
   - f84ae609
 - nazva: 'T-31-079: Механічний контакт при натисканні дає десятки перемикань за'
@@ -515,9 +303,7 @@
   cytata: 'Critical sections should be kept as short as possible
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: механічний контакт при натисканні дає десятки перемикань, але затримка в ISR неправильна
   title: 'T-31-079: Механічний контакт при натисканні дає десятки перемикань за'
   match: Механічний\s+контакт\s+при\s+натисканні
@@ -526,9 +312,7 @@
   quote: 'Critical sections should be kept as short as possible
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: механічний контакт при натисканні дає десятки перемикань, але затримка в ISR неправильна
   sha:
   - 77b3e0ed
@@ -536,23 +320,19 @@
   zbih: Усі\s+програмні\s+таймери\s+виконуються
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
-  cytata: 'FreeRTOS Timer Task (Tmr Svc)
+  cytata: 'FreeRTOS Timer Task (``Tmr Svc``)
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: усі програмні таймери виконуються в одній службовій задачі
   title: 'T-31-085: Усі програмні таймери виконуються в **одній** службовій задачі.'
   match: Усі\s+програмні\s+таймери\s+виконуються
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
-  quote: 'FreeRTOS Timer Task (Tmr Svc)
+  quote: 'FreeRTOS Timer Task (``Tmr Svc``)
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: усі програмні таймери виконуються в одній службовій задачі
   sha:
   - 2bdfbaae
@@ -560,25 +340,19 @@
   zbih: \*\*Спільна\s+змінна\s+без\s+захисту\.\*\*
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap
-    instruction provided by the ISA
+  cytata: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction provided by the ISA
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: спільна змінна без захисту на двох ядрах ламається одразу
   title: 'T-31-090: **Спільна змінна без захисту.** На двох ядрах ламається'
   match: \*\*Спільна\s+змінна\s+без\s+захисту\.\*\*
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  quote: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap
-    instruction provided by the ISA
+  quote: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction provided by the ISA
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: спільна змінна без захисту на двох ядрах ламається одразу
   sha:
   - 71179c5d
@@ -586,25 +360,19 @@
   zbih: Високий\s+пріоритет\s+означає\s+«швидко\s+відреагувати\s+й\s+заснути»\.
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: 'Each task is given a constant priority upon creation. The scheduler executes the
-    highest priority ready-state task.
+  cytata: 'Each task is given a constant priority upon creation. The scheduler executes the highest priority ready-state task.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: висока пріоритет означає швидко відреагувати й заснути, а не постійно працювати
   title: 'T-31-095: Високий пріоритет означає «швидко відреагувати й заснути».'
   match: Високий\s+пріоритет\s+означає\s+«швидко\s+відреагувати\s+й\s+заснути»\.
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  quote: 'Each task is given a constant priority upon creation. The scheduler executes the
-    highest priority ready-state task.
+  quote: 'Each task is given a constant priority upon creation. The scheduler executes the highest priority ready-state task.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: висока пріоритет означає швидко відреагувати й заснути, а не постійно працювати
   sha:
   - caf51e23
@@ -612,27 +380,19 @@
   zbih: Ніякого\s+логування\s+й\s+пам'яті\.
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  cytata: 'These macros should be used sparingly, as they can impact performance. They are
-    suitable for critical sections or interrupt routines where other logging macros may not
-    work reliably.
+  cytata: 'These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ніякого логування в ISR і пам'яті
   title: 'T-31-098: Ніякого логування й пам''яті.'
   match: Ніякого\s+логування\s+й\s+пам'яті\.
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  quote: 'These macros should be used sparingly, as they can impact performance. They are
-    suitable for critical sections or interrupt routines where other logging macros may not
-    work reliably.
+  quote: 'These macros should be used sparingly, as they can impact performance. They are suitable for critical sections or interrupt routines where other logging macros may not work reliably.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ніякого логування в ISR і пам'яті
   sha:
   - 72e699d5
@@ -640,25 +400,19 @@
   zbih: ESP_LOGI\(TAG,\s+"температура\s+%\.1f",\s+t\);
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  cytata: 'ESP_LOGI(TAG, "Baud rate error %.1f%%. Requested: %d baud, actual: %d baud", error
-    * 100, baud_req, baud_real);
+  cytata: 'ESP_LOGI(TAG, "Baud rate error %.1f%%. Requested: %d baud, actual: %d baud", error * 100, baud_req, baud_real);
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ESP_LOGI макрос для логування з форматуванням
   title: 'T-31-006: ESP_LOGI(TAG, "температура %.1f", t);'
   match: ESP_LOGI\(TAG,\s+"температура\s+%\.1f",\s+t\);
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/log.rst
-  quote: 'ESP_LOGI(TAG, "Baud rate error %.1f%%. Requested: %d baud, actual: %d baud", error
-    * 100, baud_req, baud_real);
+  quote: 'ESP_LOGI(TAG, "Baud rate error %.1f%%. Requested: %d baud, actual: %d baud", error * 100, baud_req, baud_real);
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP_LOGI макрос для логування з форматуванням
   sha:
   - a70c9ecb

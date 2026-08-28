@@ -633,7 +633,7 @@ cd esp-idf-$IDF && ./install.sh esp32,esp32s3,esp32c3
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/linux-macos-setup-legacy.rst
 - **Дослівно з джерела:**
-  > Technically, you can add export.sh to your shell's profile directly; however, it is not recommended. Doing so activates IDF virtual environment in every terminal session
+  > Technically, you can add ``export.sh`` to your shell's profile directly; however, it is not recommended. Doing so activates IDF virtual environment in every terminal session
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що додавання export.sh до профілю shell не рекомендується, що погіршує роботу
 - **Прохід:** klas-f-11-idf
@@ -1133,7 +1133,7 @@ alias idf5='. ~/esp/esp-idf-v5.5/export.sh'
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/versions.rst
 - **Дослівно з джерела:**
-  > use the current stable version
+  > use the `current stable version`_
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документація рекомендує вибір конкретної стабільної версії для проектів
 - **Прохід:** cherga-a-11-idf
@@ -3478,7 +3478,7 @@ Arduino core лишається правильним інструментом д
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
-  > idf.py set-target will clear the build directory and re-generate the sdkconfig file from scratch. The old sdkconfig file will be saved as sdkconfig.old.
+  > idf.py set-target`` will clear the build directory and re-generate the ``sdkconfig`` file from scratch. The old ``sdkconfig`` file will be saved as ``sdkconfig.old``.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Confirms that set-target clears sdkconfig. Documentation also recommends placing CONFIG_IDF_TARGET in sdkconfig.defaults for reproducibility.
 - **Прохід:** klas-f-11-idf

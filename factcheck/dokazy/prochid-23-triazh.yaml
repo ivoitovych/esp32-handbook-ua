@@ -1,38 +1,3 @@
-# Суцільний прохід — 23-triazh.
-#
-# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
-# те, що пережило третій шар: цитата знайшлася в названому
-# документі дослівно. Заявок без такої перевірки тут немає.
-#
-# Взірці виведено механічно — найкоротший префікс, відмітний
-# у всьому реєстрі. Це компроміс між двома законами:
-# широкий взірець бреше, довгий ламається.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: 'T-23-048: Помітно менше — просадка, і далі спершу розділ'
   zbih: Помітно\s+менше\s+—\s+просадка,
   klas: A
@@ -40,9 +5,7 @@
   cytata: 'power
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: просадка напруги вказує на проблему живлення, а не прошивки
   title: 'T-23-048: Помітно менше — просадка, і далі спершу розділ'
   match: Помітно\s+менше\s+—\s+просадка,
@@ -51,9 +14,7 @@
   quote: 'power
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: просадка напруги вказує на проблему живлення, а не прошивки
   sha:
   - 096c7af0
@@ -64,9 +25,7 @@
   cytata: 'power
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: подання живлення на бракований пристрій може додати другу несправність
   title: 'T-23-035: Подавати живлення на плату з видимим дефектом означає'
   match: Подавати\s+живлення\s+на\s+плату
@@ -75,9 +34,7 @@
   quote: 'power
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: подання живлення на бракований пристрій може додати другу несправність
   sha:
   - 69e21065
@@ -88,9 +45,7 @@
   cytata: 'power
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: при прозвонці дроту на живлення не подавати
   title: 'T-23-039: Дзвенить — шукати замикання, не вмикати.'
   match: Дзвенить\s+—\s+шукати\s+замикання,
@@ -99,9 +54,7 @@
   quote: 'power
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: при прозвонці дроту на живлення не подавати
   sha:
   - e4be64c2
@@ -112,9 +65,7 @@
   cytata: 'internal pull-up/pull-down resistors
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Внутрішні підтягування не потребують зовнішнього струму при тестуванні.
   title: 'T-23-075: Ніякого струму, ніякого ризику.'
   match: Ніякого\s+струму,\s+ніякого\s+ризику\.
@@ -123,35 +74,25 @@
   quote: 'internal pull-up/pull-down resistors
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Внутрішні підтягування не потребують зовнішнього струму при тестуванні.
 - nazva: 'T-23-100: Напис на модулі звіряється з шапкою `esptool`.'
   zbih: Напис\s+на\s+модулі\s+звіряється
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
-  cytata: 'If no -c option or ESPTOOL_CHIP value is specified, esptool automatically detects
-    the chip type when connecting.
+  cytata: 'If no ``-c`` option or ``ESPTOOL_CHIP`` value is specified, ``esptool`` automatically detects the chip type when connecting.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: esptool автоматично виявляє тип мікросхеми при підключенні, що дозволяє перевірити
-    інформацію про модуль
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: esptool автоматично виявляє тип мікросхеми при підключенні, що дозволяє перевірити інформацію про модуль
   title: 'T-23-100: Напис на модулі звіряється з шапкою `esptool`.'
   match: Напис\s+на\s+модулі\s+звіряється
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
-  quote: 'If no -c option or ESPTOOL_CHIP value is specified, esptool automatically detects
-    the chip type when connecting.
+  quote: 'If no ``-c`` option or ``ESPTOOL_CHIP`` value is specified, ``esptool`` automatically detects the chip type when connecting.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  note: esptool автоматично виявляє тип мікросхеми при підключенні, що дозволяє перевірити
-    інформацію про модуль
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: esptool автоматично виявляє тип мікросхеми при підключенні, що дозволяє перевірити інформацію про модуль
   sha:
   - 5454e13b

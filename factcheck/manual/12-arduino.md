@@ -1234,7 +1234,7 @@ URL. Годиться для навчання і швидких перевіро
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/arduino-esp32/master/docs/en/esp-idf_component.rst
 - **Дослівно з джерела:**
-  > For usage of setup() and loop() functions - Turn on Autostart Arduino setup and loop on boot
+  > For usage of ``setup()`` and ``loop()`` functions - Turn on ``Autostart Arduino setup and loop on boot``
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Документ підтверджує, що при використанні Arduino як компоненту ESP-IDF доступні setup/loop та menuconfig з усіма можливостями ESP-IDF включаючи діагностику
 - **Прохід:** klas-f-12-arduino

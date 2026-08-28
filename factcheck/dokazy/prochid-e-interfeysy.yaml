@@ -1,40 +1,20 @@
-# Суцільний прохід — e-interfeysy.
-#
-# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
-# те, що пережило третій шар: цитата знайшлася в названому
-# документі дослівно. Заявок без такої перевірки тут немає.
-#
-# Взірці виведено механічно — найкоротший префікс, відмітний
-# у всьому реєстрі. Це компроміс між двома законами:
-# широкий взірець бреше, довгий ламається.
-
-
-
-
-
-
 - nazva: 'T-E-125: WS2812 / SK6812 · Як → **RMT**, не'
   zbih: WS2812\s+/\s+SK6812\s+·\s+Як
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
-  cytata: 'rmt/led_strip demonstrates how to use the RMT peripheral to drive a WS2812 LED
-    strip
+  cytata: 'rmt/led_strip` demonstrates how to use the RMT peripheral to drive a WS2812 LED strip
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ESP-IDF документація підтверджує, що WS2812 керується через RMT, не програмно
   title: 'T-E-125: WS2812 / SK6812 · Як → **RMT**, не'
   match: WS2812\s+/\s+SK6812\s+·\s+Як
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
-  quote: 'rmt/led_strip demonstrates how to use the RMT peripheral to drive a WS2812 LED strip
+  quote: 'rmt/led_strip` demonstrates how to use the RMT peripheral to drive a WS2812 LED strip
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ESP-IDF документація підтверджує, що WS2812 керується через RMT, не програмно
   sha:
   - 5a46b695

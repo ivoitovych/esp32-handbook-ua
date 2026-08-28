@@ -1491,7 +1491,7 @@ gpio_set_level(PIN_DE, 0);                    // приймання
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
 - **Дослівно з джерела:**
-  > This circuit does not allow for collision detection. It suppresses the null bytes that the hardware receives when the bit UART_RS485_CONF_REG.UART_RS485TX_RX_EN is set.
+  > This circuit does not allow for collision detection. It suppresses the null bytes that the hardware receives when the bit ``UART_RS485_CONF_REG.UART_RS485TX_RX_EN`` is set.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** 'багато модулів мають термінатор на платі'
 - **Прохід:** prochid-34-uart

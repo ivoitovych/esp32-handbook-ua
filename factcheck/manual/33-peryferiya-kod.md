@@ -1218,7 +1218,7 @@ esp_timer_start_periodic(t, 1000000);   // раз на секунду
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
 - **Дослівно з джерела:**
-  > The maximum count value depends on the bit width of the hardware timer (usually no less than 54 bits)
+  > The maximum count value depends on the bit width of the hardware timer (usually no less than ``54 bits``)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Osnovnyi sposib miryaty chas - hardvarni tajmery z dovhoyu dozhyvayuchy bez perepolnenyya
 - **Прохід:** prochid-33-peryferiya-kod
@@ -3090,7 +3090,7 @@ ADC міряє лише невелику частину діапазону; з �
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
 - **Дослівно з джерела:**
-  > By design, Vref is set to 1100 mV
+  > By design, ``Vref`` is set to 1100 mV
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Vkhid ne tolerannyy do perevishennya - pidtverdzheno referenciynym napryazhennyam
 - **Прохід:** prochid-33-peryferiya-kod

@@ -897,7 +897,7 @@ while (1) {
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
-  > xTaskCreatePinnedToCore creates a task with a particular core affinity
+  > xTaskCreatePinnedToCore` creates a task with a particular core affinity
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** прив'язування задачі до ядра явно підтримується API
 - **Прохід:** prochid-31-freertos
@@ -996,7 +996,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
-  > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name PRO_CPU), where as the tasks handling the remainder of the application are pinned to Core 1
+  > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Core 1 рекомендується для завдань, що не залежать від радіо і потребують точних таймінгів
 - **Прохід:** prochid-31-freertos
@@ -1024,7 +1024,7 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
-  > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name PRO_CPU), where as the tasks handling the remainder of the application are pinned to Core 1
+  > Typically, the tasks responsible for handling protocol related processing such as Wi-Fi or Bluetooth are pinned to Core 0 (thus the name ``PRO_CPU``), where as the tasks handling the remainder of the application are pinned to Core 1
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Core 1 для важких та тривалих завдань щоб не заважати протокольній обробці на Core 0
 - **Прохід:** prochid-31-freertos
@@ -1946,9 +1946,9 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
   > /**
   >  * @brief Macros to output logs when the cache is disabled.
   >  * Unlike normal logging macros, it's possible to use this macro when
-  >  * interrupts are disabled or inside an ISR.
+  >   interrupts are disabled or inside an ISR.
   >  * Placing log strings in DRAM reduces available DRAM, so only use
-  >  * when absolutely essential.
+  >   when absolutely essential.
   >  *
   >  * Usage: `ESP_DRAM_LOGE(DRAM_STR("my_tag"), "format", ...)
   >  */
@@ -1989,9 +1989,9 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
   > /**
   >  * @brief Macros to output logs when the cache is disabled.
   >  * Unlike normal logging macros, it's possible to use this macro when
-  >  * interrupts are disabled or inside an ISR.
+  >   interrupts are disabled or inside an ISR.
   >  * Placing log strings in DRAM reduces available DRAM, so only use
-  >  * when absolutely essential.
+  >   when absolutely essential.
   >  *
   >  * Usage: `ESP_DRAM_LOGE(DRAM_STR("my_tag"), "format", ...)
   >  */
@@ -2052,9 +2052,9 @@ EventGroupHandle_t podiyi = xEventGroupCreate();
   > /**
   >  * @brief Macros to output logs when the cache is disabled.
   >  * Unlike normal logging macros, it's possible to use this macro when
-  >  * interrupts are disabled or inside an ISR.
+  >   interrupts are disabled or inside an ISR.
   >  * Placing log strings in DRAM reduces available DRAM, so only use
-  >  * when absolutely essential.
+  >   when absolutely essential.
   >  *
   >  * Usage: `ESP_DRAM_LOGE(DRAM_STR("my_tag"), "format", ...)
   >  */
@@ -2555,7 +2555,7 @@ xTimerStart(t, 0);
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos.rst
 - **Дослівно з джерела:**
-  > FreeRTOS Timer Task (Tmr Svc)
+  > FreeRTOS Timer Task (``Tmr Svc``)
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** усі програмні таймери виконуються в одній службовій задачі
 - **Прохід:** prochid-31-freertos
