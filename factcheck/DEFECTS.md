@@ -21,7 +21,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Eight of the eighteen kinds below are one family. The check runs, it
+Nine of the nineteen kinds below are one family. The check runs, it
 returns zero, and the zero means nothing — because it was never
 measuring the thing its name claims.
 
@@ -358,6 +358,36 @@ alone covers both.
 > you looked is genuinely clean.
 
 **Held by.** `tools/kesh-bez-knyhy.py`, both conditions, in `make check`.
+
+## 19. Two copies of the same datum, one of them repaired
+
+**Symptom.** A field exists twice during a migration — old name and new
+name side by side. A fix is applied to one copy. The other keeps the
+defect, silently, until the day it becomes the one that is read.
+
+**Case.** Measured across all **9202 field pairs** while converting
+tools to the English names: **29 had diverged.** Fifteen were `zbih` /
+`match` in the other maintainer's leak repairs — they had narrowed the
+Ukrainian field, and the English one still carried the **old wide
+pattern**. The generator reads the Ukrainian field, so the repair was in
+effect; contracting to English names would have reverted fifteen leaks
+without a word.
+
+A second divergence hid in the class itself: six records read
+`klas: F` with `status: unverified` — a word that **does not exist in
+the schema** (`unchecked` does). The schema checker asked "does this
+class have its required fields" and looked the class up in a table;
+an unknown class returned an empty requirement list and the record
+passed as flawless.
+
+> Two copies of a datum are not double safety. They are double surface.
+> The one that is read is right by accident, and the accident changes
+> the day the other becomes authoritative.
+
+**Held by.** `skhema.py` now validates the status vocabulary itself,
+not just the fields a status demands (demonstrated on a fabricated
+state). Divergence between copies is checked by comparing all pairs;
+the contraction step removes the second copy for good.
 
 ---
 

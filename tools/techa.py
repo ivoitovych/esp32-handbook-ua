@@ -170,9 +170,9 @@ def main() -> int:
         kand_a = factcheck.vsi_kandydaty(zapysy, u["sha"], u["tekst"])
         kand_b = factcheck.vsi_kandydaty(bez, u["sha"], u["tekst"])
         ka = (min(kand_a, key=lambda x: factcheck.SYLA.get(
-            x.get("klas", "F"), 9)).get("klas", "F") if kand_a else None)
+            factcheck.klas_zapysu(x), 9)) if kand_a else None)
         kb = (min(kand_b, key=lambda x: factcheck.SYLA.get(
-            x.get("klas", "F"), 9)).get("klas", "F") if kand_b else None)
+            factcheck.klas_zapysu(x), 9)) if kand_b else None)
         if ka != kb:
             zmina[(ka, kb)] += 1
 

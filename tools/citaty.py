@@ -61,6 +61,8 @@ from pathlib import Path
 
 import yaml
 
+import factcheck
+
 ROOT = Path(__file__).resolve().parent.parent
 DOKAZY = ROOT / "factcheck" / "dokazy"
 KESH = ROOT / "dzherela-kesh"
@@ -558,7 +560,7 @@ def perevirka(kachaty: bool,
             # записи» — не перевіривши жодної цитати. Тобто ворота, що
             # мали ловити брак, приховали роботу.
             maye_klas = "klas" in z
-            klas = str(z.get("klas") or "").strip().upper()
+            klas = factcheck.klas_zapysu(z, "").strip().upper()
 
             # Клас `F` — це «не звірено», типовий стан **відсутності**
             # доказу. Запис доказу з класом `F` не означає нічого й

@@ -391,6 +391,42 @@ def zavantazhyty_dokazy() -> list[dict]:
     return out
 
 
+# Слово стану → літера. Переїзд дав записам обидва позначення, і саме
+# **значення**, а не лише ім'я поля, робить `klas` останнім у стисненні:
+# `SYLA`, `KLASY` і всі порівняння з "A"/"B" ключовані літерою, тож
+# проста заміна ключа мовчки почала б порівнювати слова з літерами.
+SLOVO_V_LITERU = {
+    "verbatim": "A", "derived": "B", "named-unreachable": "C",
+    "arithmetic": "D", "no-external-signal": "E", "unchecked": "F",
+    "refuted": "G", "code-context": "K", "looked-not-found": "L",
+}
+
+
+def klas_zapysu(z: dict, typovo: str = "F") -> str:
+    """Літера класу запису доказу — з англійського поля, зі старим як запас.
+
+    Один доступ на всіх. Доти кожен інструмент читав `z["klas"]` сам, і
+    стиснення імен зламало б їх усі одночасно; тепер зламається (або не
+    зламається) одне місце.
+
+    Порядок навмисний: спершу `status`, бо він і є цільове поле. Але
+    2026-08-28 знайшлося, що дві копії одного поля **розійшлися** в 29
+    записах — тож поки триває переїзд, розбіжність тут не вигадка, і
+    старе поле лишається запасним, а не головним.
+    """
+    s = str(z.get("status") or "").strip()
+    if len(s) == 1:
+        return s
+    if s in SLOVO_V_LITERU:
+        return SLOVO_V_LITERU[s]
+    # Слово, якого в словнику немає, — не привід забути про старе поле.
+    # Знайдено на шести записах зі `status: unverified` (правильне слово
+    # `unchecked`): перша редакція віддавала тут типове значення, і
+    # ворота на них замовкали. Невідоме слово — привід узяти запасне
+    # поле, а не вигадати відповідь.
+    return str(z.get("klas") or typovo)
+
+
 # Сила класу доказу. Менше — сильніше.
 SYLA = {"A": 0, "B": 1, "D": 2, "C": 3, "L": 4, "E": 5, "G": 6, "F": 7}
 
@@ -406,7 +442,7 @@ def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
     """
     kandydaty = vsi_kandydaty(zapysy, h, txt)
     if kandydaty:
-        return min(kandydaty, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
+        return min(kandydaty, key=lambda z: SYLA.get(klas_zapysu(z), 9))
     return None
 
 
@@ -558,7 +594,7 @@ SHABLON_DOKAZU = """**Доказ**
 def formatuvaty_dokaz(z: dict | None) -> str:
     if not z:
         return SHABLON_DOKAZU
-    klas = z.get("klas", "F")
+    klas = klas_zapysu(z)
     ch = [f"**Доказ**\n", f"- **Клас:** {ZNAK.get(klas,'')} {klas} — {KLASY.get(klas,'')}"]
     if z.get("source"):
         ch.append(f"- **Джерело:** {z['dzherelo']}")
@@ -752,7 +788,7 @@ def sketch() -> int:
                 kandydaty = vsi_kandydaty(dokazy, h, txt)
                 for k_z in kandydaty:
                     zachepleni.add(klyuch(k_z))
-                z = (min(kandydaty, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
+                z = (min(kandydaty, key=lambda z: SYLA.get(klas_zapysu(z), 9))
                      if kandydaty else None)
                 if z:
                     vzhyti.add(h)
@@ -765,7 +801,7 @@ def sketch() -> int:
                 if vyd == "kod":
                     klas = "K"
                 elif z:
-                    klas = z.get("klas", "F")
+                    klas = klas_zapysu(z)
                 elif vyd in ("proza", "komirka", "tablycya") \
                         and not RE_SYGNAL_STROGYY.search(txt):
                     # Одиниця без жодного сигналу, що вказував би на

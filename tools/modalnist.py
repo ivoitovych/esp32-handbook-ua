@@ -125,7 +125,7 @@ def main() -> int:
         except Exception:
             continue
         for r in z:
-            if not isinstance(r, dict) or str(r.get("klas")) not in ("A", "B"):
+            if not isinstance(r, dict) or factcheck.klas_zapysu(r) not in ("A", "B"):
                 continue
             cyt = str(r.get("quote") or "")
             m = RE_DOZVIL.search(cyt)

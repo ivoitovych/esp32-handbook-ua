@@ -195,6 +195,14 @@ def rozmir() -> int:
     return 0
 
 
+def _fc():
+    """`factcheck` завантажується ліниво: `kesh.py` живе й без нього."""
+    import sys
+    sys.path.insert(0, str(ROOT / "tools"))
+    import factcheck
+    return factcheck
+
+
 def vidtvornist() -> int:
     """Чи може **третя сторона** перевірити доказ.
 
@@ -232,8 +240,7 @@ def vidtvornist() -> int:
         for r in zap:
             if not isinstance(r, dict):
                 continue
-            if str(r.get("status") or r.get("klas")) not in (
-                    "A", "B", "verbatim", "derived"):
+            if _fc().klas_zapysu(r) not in ("A", "B"):
                 continue
             d = " ".join(str(r.get("source") or r.get("source") or "").split())
             fajly = [x.split("-", 1)[1] if re.match(r"^[0-9a-f]{8}-", x) else x
