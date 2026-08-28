@@ -531,6 +531,23 @@
 ## Формат пакета
 
 ```c
+#define PROTO_VERSIYA  1
+#define TYP_VYMIR      1
+#define TYP_PIDTVERDZH 2
+
+typedef struct __attribute__((packed)) {
+    uint8_t  versiya;      // версія протоколу — перше поле завжди
+    uint8_t  typ;          // тип повідомлення
+    uint8_t  vuzol;        // номер вузла
+    uint8_t  rezerv;
+    uint32_t nomer;        // лічильник пакетів: виявляє пропуски
+    int32_t  temp_x100;    // ціле замість float — менше й переносніше
+    uint16_t hum_x10;
+    uint16_t napruga_mv;
+} paket_t;
+
+_Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байтів");
+```
 ````
 
 **Доказ**
@@ -822,6 +839,55 @@ _Static_assert(sizeof(paket_t) <= 250, "ESP-NOW: максимум 250 байті
 
 ```c
 static const uint8_t MAC_PRYIMACHA[6] = { 0x24, 0x6F, 0x28, 0x11, 0x22, 0x33 };
+
+RTC_DATA_ATTR static uint32_t nomer = 0;
+RTC_DATA_ATTR static paket_t  bufer[10];
+RTC_DATA_ATTR static uint8_t  u_buferi = 0;
+
+static volatile bool dostavleno = false;
+
+static void on_sent(const esp_now_send_info_t *info,
+                    esp_now_send_status_t status) {
+    dostavleno = (status == ESP_NOW_SEND_SUCCESS);
+}
+
+static bool nadislaty(const paket_t *p) {
+    dostavleno = false;
+    if (esp_now_send(MAC_PRYIMACHA, (const uint8_t *)p, sizeof(*p)) != ESP_OK)
+        return false;
+
+    // чекати підтвердження рівня кадру — це не гарантія доставки,
+    // але воно відрізняє «сусід почув» від «нікого немає»
+    for (int i = 0; i < 50 && !dostavleno; i++)
+        vTaskDelay(pdMS_TO_TICKS(2));
+    return dostavleno;
+}
+
+void app_main(void) {
+    radio_init();                     // Wi-Fi у режимі STA, канал фіксований
+    espnow_init_with_key();
+
+    paket_t p = {
+        .versiya = PROTO_VERSIYA,
+        .typ = TYP_VYMIR,
+        .vuzol = NOMER_VUZLA,
+        .nomer = ++nomer,
+    };
+    zmiryaty(&p);
+
+    if (!nadislaty(&p)) {
+        if (u_buferi < 10) bufer[u_buferi++] = p;
+        ESP_LOGW(TAG, "не доставлено, у буфері %u", u_buferi);
+    } else {
+        // дійшло — спробувати віддати накопичене
+        while (u_buferi > 0 && nadislaty(&bufer[u_buferi - 1]))
+            u_buferi--;
+    }
+
+    esp_sleep_enable_timer_wakeup(60ULL * 1000000);
+    esp_deep_sleep_start();
+}
+```
 ````
 
 **Доказ**
@@ -1397,6 +1463,18 @@ void app_main(void) {
 static void espnow_init_with_key(void) {
     ESP_ERROR_CHECK(esp_now_init());
     ESP_ERROR_CHECK(esp_now_register_send_cb(on_sent));
+
+    uint8_t pmk[16], lmk[16];
+    nvs_read_key("pmk", pmk);         // з NVS, не з коду
+    nvs_read_key("lmk", lmk);
+    ESP_ERROR_CHECK(esp_now_set_pmk(pmk));
+
+    esp_now_peer_info_t peer = { .channel = KANAL, .encrypt = true };
+    memcpy(peer.peer_addr, MAC_PRYIMACHA, 6);
+    memcpy(peer.lmk, lmk, 16);
+    ESP_ERROR_CHECK(esp_now_add_peer(&peer));
+}
+```
 ````
 
 **Доказ**
@@ -1813,6 +1891,45 @@ typedef struct {
     uint32_t vtracheno;
     bool     zhyvyy;
 } stan_vuzla_t;
+
+static stan_vuzla_t vuzly[MAX_VUZLIV];
+static QueueHandle_t cherga;
+
+static void on_recv(const esp_now_recv_info_t *info,
+                    const uint8_t *data, int len) {
+    // виконується в контексті задачі Wi-Fi: скопіювати й вийти (розділ 42)
+    if (len != sizeof(paket_t)) return;
+    paket_t p;
+    memcpy(&p, data, sizeof(p));
+    xQueueSend(cherga, &p, 0);      // не FromISR: це задача, а не переривання
+}
+
+static void task_obrobka(void *arg) {
+    paket_t p;
+    while (xQueueReceive(cherga, &p, portMAX_DELAY) == pdTRUE) {
+        if (p.versiya != PROTO_VERSIYA) {
+            ESP_LOGW(TAG, "чужа версія протоколу: %u", p.versiya);
+            continue;
+        }
+        if (p.vuzol >= MAX_VUZLIV) continue;
+
+        stan_vuzla_t *v = &vuzly[p.vuzol];
+        if (v->ostanniy_nomer && p.nomer > v->ostanniy_nomer + 1)
+            v->vtracheno += p.nomer - v->ostanniy_nomer - 1;
+
+        v->ostanniy_nomer = p.nomer;
+        v->ostanniy_chas = esp_timer_get_time();
+        v->zhyvyy = true;
+
+        ESP_LOGI(TAG, "вузол %u: %.2f °C, %.1f %%, %.2f В "
+                      "(пакет %lu, втрачено %lu)",
+                 p.vuzol, p.temp_x100 / 100.0f, p.hum_x10 / 10.0f,
+                 p.napruga_mv / 1000.0f, p.nomer, v->vtracheno);
+
+        vidaty_dali(&p);              // MQTT, веб, дисплей
+    }
+}
+```
 ````
 
 **Доказ**

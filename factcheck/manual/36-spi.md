@@ -2281,6 +2281,20 @@ spi_bus_config_t bus = {
     .max_transfer_sz = 4096,
 };
 spi_bus_initialize(SPI2_HOST, &bus, SPI_DMA_CH_AUTO);
+
+spi_device_interface_config_t dev = {
+    .clock_speed_hz = 1 * 1000 * 1000,
+    .mode = 0,
+    .spics_io_num = GPIO_NUM_5,
+    .queue_size = 7,
+};
+spi_device_handle_t handle;
+spi_bus_add_device(SPI2_HOST, &dev, &handle);
+
+uint8_t tx[2] = { 0x8F, 0x00 }, rx[2] = { 0 };
+spi_transaction_t t = { .length = 16, .tx_buffer = tx, .rx_buffer = rx };
+spi_device_transmit(handle, &t);
+```
 ````
 
 **Доказ**

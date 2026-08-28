@@ -122,7 +122,7 @@ def bez_dzherela(z: dict) -> bool:
     назва файлу книги. У першій хвилі класу `F` таких було **104 з
     224** — майже половина, і всі зі станом `pidtverdzheno`.
     """
-    d = str(z.get("dzherelo", "")).strip()
+    d = str(z.get("source", "")).strip()
     return not d or not d.startswith("http")
 
 
@@ -150,7 +150,7 @@ def ne_dyvyvsya(z: dict) -> bool:
     Без цього запис не є ані знахідкою, ані свідченням її відсутності.
     """
     return (str(z.get("verdykt")) == "ne_znayshov"
-            and not str(z.get("dzherelo", "")).strip())
+            and not str(z.get("source", "")).strip())
 
 
 def promizhok(k: int, n: int) -> tuple[float, float]:
@@ -191,7 +191,7 @@ def main() -> int:
     zap = [z for z in zap if z not in neroblene]
     samoposylannya = [z for z in zap
                       if bez_dzherela(z)
-                      or RE_SAMA_KNYHA.search(str(z.get("dzherelo", "")))]
+                      or RE_SAMA_KNYHA.search(str(z.get("source", "")))]
     zap = [z for z in zap if z not in samoposylannya]
     if not zap:
         ZVIT.write_text(ZVIT_PORROZHNIY.format(
@@ -210,11 +210,11 @@ def main() -> int:
 
     # Третій шар — на все, що має цитату, а не лише на спростування.
     kand = [{"nazva": str(z.get("odynycya", "?")),
-             "dzherelo": str(z.get("dzherelo", "")).strip(),
-             "cytata": str(z.get("cytata", "")),
+             "dzherelo": str(z.get("source", "")).strip(),
+             "cytata": str(z.get("quote", "")),
              "verdykt": str(z.get("verdykt", "")),
              "zvidky": z.get("_fayl", "?")}
-            for z in zap if str(z.get("cytata", "")).strip()]
+            for z in zap if str(z.get("quote", "")).strip()]
     KANDYDATY.write_text(
         "# Кандидати з міри класу `F`. **Не реєстр.**\n"
         + yaml.safe_dump(kand, allow_unicode=True, sort_keys=False),
@@ -225,7 +225,7 @@ def main() -> int:
         try:
             import citaty
             naslidky, _ = citaty.perevirka(True, [KANDYDATY])
-            stany = {str(x.get("nazva")): str(x.get("stan"))
+            stany = {str(x.get("title")): str(x.get("stan"))
                      for x in naslidky}
         except ImportError:
             pass
@@ -285,7 +285,7 @@ def main() -> int:
         r.append("| Одиниця | Джерело | Що каже |")
         r.append("|---|---|---|")
         for z in sperech_ok:
-            dz = str(z.get("dzherelo", "")).strip()
+            dz = str(z.get("source", "")).strip()
             r.append(f"| `{z.get('odynycya', '?')}` "
                      f"| [`{dz.rsplit('/', 1)[-1]}`]({dz}) "
                      f"| {str(z.get('komentar', '')).strip()[:120]} |")
@@ -322,7 +322,7 @@ def main() -> int:
         shar3: dict[str, list[int]] = collections.defaultdict(
             lambda: [0, 0])
         for z in zap:
-            if not str(z.get("cytata", "")).strip():
+            if not str(z.get("quote", "")).strip():
                 continue
             h = str(z.get("_fayl", "?")).split("-")[0]
             shar3[h][1] += 1

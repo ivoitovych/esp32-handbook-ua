@@ -529,6 +529,9 @@
    UART/RS-485/CAN                          мережа
         │                                      │
    [task_rx_serial] ──> cherga_do_merezhi ──> [task_tx_net]
+
+   [task_tx_serial] <── cherga_do_serial  <── [task_rx_net]
+```
 ````
 
 **Доказ**
@@ -654,6 +657,10 @@ typedef struct {
     uint16_t dovzhyna;
     uint8_t  dani[512];
 } blok_t;
+
+static QueueHandle_t do_merezhi;   // від послідовного боку в мережу
+static QueueHandle_t do_serial;    // з мережі в послідовний бік
+```
 ````
 
 **Доказ**
@@ -991,6 +998,16 @@ static void task_rx_serial(void *arg) {
 
 ```c
 static void nadislaty_serial(const blok_t *b) {
+#if REZHYM_RS485
+    gpio_set_level(PIN_DE, 1);
+#endif
+    uart_write_bytes(UART_PORT, b->dani, b->dovzhyna);
+#if REZHYM_RS485
+    uart_wait_tx_done(UART_PORT, portMAX_DELAY);   // ОБОВ'ЯЗКОВО
+    gpio_set_level(PIN_DE, 0);
+#endif
+}
+```
 ````
 
 **Доказ**
@@ -1254,6 +1271,23 @@ static void task_tcp(void *arg) {
     };
     bind(listen_sock, (struct sockaddr *)&addr, sizeof(addr));
     listen(listen_sock, 1);
+
+    while (1) {
+        struct sockaddr_in klient;
+        socklen_t len = sizeof(klient);
+        int sock = accept(listen_sock, (struct sockaddr *)&klient, &len);
+        if (sock < 0) continue;
+
+        ESP_LOGI(TAG, "клієнт під'єднався");
+        // очистити чергу: клієнт не має отримати те, що накопичилося
+        xQueueReset(do_merezhi);
+
+        obsluhovuvaty(sock);          // до розриву з'єднання
+        close(sock);
+        ESP_LOGI(TAG, "клієнт від'єднався");
+    }
+}
+```
 ````
 
 **Доказ**
@@ -1857,6 +1891,20 @@ static void task_rx_can(void *arg) {
     twai_message_t msg;
     while (1) {
         if (twai_receive(&msg, pdMS_TO_TICKS(100)) != ESP_OK) continue;
+
+        blok_t b;
+        b.dovzhyna = snprintf((char *)b.dani, sizeof(b.dani),
+                              "%03lx:%d:", msg.identifier,
+                              msg.data_length_code);
+        for (int i = 0; i < msg.data_length_code; i++)
+            b.dovzhyna += snprintf((char *)b.dani + b.dovzhyna,
+                                   sizeof(b.dani) - b.dovzhyna,
+                                   "%02x", msg.data[i]);
+        b.dani[b.dovzhyna++] = '\n';
+        xQueueSend(do_merezhi, &b, 0);
+    }
+}
+```
 ````
 
 **Доказ**

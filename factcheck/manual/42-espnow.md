@@ -385,6 +385,16 @@ ESP-NOW не робить нічого з цього. Пакет іде **одр
 
 ```c
 esp_now_init();
+
+esp_now_peer_info_t peer = {
+    .channel = 1,
+    .encrypt = false,
+};
+memcpy(peer.peer_addr, mac_pryimacha, 6);
+esp_now_add_peer(&peer);
+
+esp_now_send(mac_pryimacha, (uint8_t *)&dani, sizeof(dani));
+```
 ````
 
 **Доказ**

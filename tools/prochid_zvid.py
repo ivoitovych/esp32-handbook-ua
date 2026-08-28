@@ -119,7 +119,7 @@ def main() -> int:
 
     prydatni, samo, bez_dok = [], 0, 0
     for z in zapysy:
-        dz = str(z.get("dzherelo", "")).strip()
+        dz = str(z.get("source", "")).strip()
         if RE_SAMA_KNYHA.search(dz):
             samo += 1
         elif not dz.startswith("http"):
@@ -145,11 +145,11 @@ def main() -> int:
     for i, z in enumerate(zayavy, 1):
         if i % 25 == 0:
             print(f"  … {i}/{len(zayavy)}", flush=True)
-        cyt = str(z.get("cytata") or "").strip()
+        cyt = str(z.get("quote") or "").strip()
         if not cyt:
             bez_cytaty.append(z)
             continue
-        url = str(z["dzherelo"]).strip()
+        url = str(z["source"]).strip()
         if url not in dokumenty:
             dokumenty[url] = zavantazh(url, kesh)
         tekst = dokumenty[url]

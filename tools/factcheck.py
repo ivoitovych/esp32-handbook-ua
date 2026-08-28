@@ -391,6 +391,42 @@ def zavantazhyty_dokazy() -> list[dict]:
     return out
 
 
+# Слово стану → літера. Переїзд дав записам обидва позначення, і саме
+# **значення**, а не лише ім'я поля, робить `klas` останнім у стисненні:
+# `SYLA`, `KLASY` і всі порівняння з "A"/"B" ключовані літерою, тож
+# проста заміна ключа мовчки почала б порівнювати слова з літерами.
+SLOVO_V_LITERU = {
+    "verbatim": "A", "derived": "B", "named-unreachable": "C",
+    "arithmetic": "D", "no-external-signal": "E", "unchecked": "F",
+    "refuted": "G", "code-context": "K", "looked-not-found": "L",
+}
+
+
+def klas_zapysu(z: dict, typovo: str = "F") -> str:
+    """Літера класу запису доказу — з англійського поля, зі старим як запас.
+
+    Один доступ на всіх. Доти кожен інструмент читав `z["klas"]` сам, і
+    стиснення імен зламало б їх усі одночасно; тепер зламається (або не
+    зламається) одне місце.
+
+    Порядок навмисний: спершу `status`, бо він і є цільове поле. Але
+    2026-08-28 знайшлося, що дві копії одного поля **розійшлися** в 29
+    записах — тож поки триває переїзд, розбіжність тут не вигадка, і
+    старе поле лишається запасним, а не головним.
+    """
+    s = str(z.get("status") or "").strip()
+    if len(s) == 1:
+        return s
+    if s in SLOVO_V_LITERU:
+        return SLOVO_V_LITERU[s]
+    # Слово, якого в словнику немає, — не привід забути про старе поле.
+    # Знайдено на шести записах зі `status: unverified` (правильне слово
+    # `unchecked`): перша редакція віддавала тут типове значення, і
+    # ворота на них замовкали. Невідоме слово — привід узяти запасне
+    # поле, а не вигадати відповідь.
+    return str(z.get("klas") or typovo)
+
+
 # Сила класу доказу. Менше — сильніше.
 SYLA = {"A": 0, "B": 1, "D": 2, "C": 3, "L": 4, "E": 5, "G": 6, "F": 7}
 
@@ -406,7 +442,7 @@ def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
     """
     kandydaty = vsi_kandydaty(zapysy, h, txt)
     if kandydaty:
-        return min(kandydaty, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
+        return min(kandydaty, key=lambda z: SYLA.get(klas_zapysu(z), 9))
     return None
 
 
@@ -418,7 +454,7 @@ def klyuch(z: dict) -> tuple[str, str]:
     запис зникав і з «нічого не зачепив», і з «перекрито сильнішим» — а
     перший із цих переліків існує саме для того, щоб ловити хибний взірець.
     """
-    return (str(z.get("_prokhid", "?")), str(z.get("nazva", "?")))
+    return (str(z.get("_prokhid", "?")), str(z.get("title", "?")))
 
 
 def rozbyty_alternatyvy(vzirets: str) -> list[str]:
@@ -533,7 +569,7 @@ def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
     if tochni:
         return tochni
     return [z for z in zapysy
-            if z.get("zbih") and _vzirets(z["zbih"]).search(txt)]
+            if z.get("match") and _vzirets(z["match"]).search(txt)]
 
 
 # Взірців 1337, а внутрішній кеш `re` тримає 512: без власного кешу
@@ -558,21 +594,21 @@ SHABLON_DOKAZU = """**Доказ**
 def formatuvaty_dokaz(z: dict | None) -> str:
     if not z:
         return SHABLON_DOKAZU
-    klas = z.get("klas", "F")
+    klas = klas_zapysu(z)
     ch = [f"**Доказ**\n", f"- **Клас:** {ZNAK.get(klas,'')} {klas} — {KLASY.get(klas,'')}"]
-    if z.get("dzherelo"):
+    if z.get("source"):
         ch.append(f"- **Джерело:** {z['dzherelo']}")
-    if z.get("cytata"):
-        tilo = "\n".join("  > " + x for x in str(z["cytata"]).rstrip().split("\n"))
+    if z.get("quote"):
+        tilo = "\n".join("  > " + x for x in str(z["quote"]).rstrip().split("\n"))
         ch.append(f"- **Дослівно з джерела:**\n{tilo}")
-    if z.get("rozrakhunok"):
-        tilo = "\n".join("  " + x for x in str(z["rozrakhunok"]).rstrip().split("\n"))
+    if z.get("calculation"):
+        tilo = "\n".join("  " + x for x in str(z["calculation"]).rstrip().split("\n"))
         ch.append(f"- **Розрахунок:**\n{tilo}")
-    if z.get("sposib"):
+    if z.get("method"):
         ch.append(f"- **Спосіб і дата:** {z['sposib']}")
-    if z.get("shukaty"):
+    if z.get("look_for"):
         ch.append(f"- **Що шукати в джерелі:** {z['shukaty']}")
-    if z.get("notatka"):
+    if z.get("note"):
         ch.append(f"- **Нотатка:** {z['notatka']}")
     ch.append(f"- **Прохід:** {z.get('_prokhid','—')}")
     return "\n".join(ch) + "\n"
@@ -669,9 +705,26 @@ def dослівно_і_контекст(ryadky: list[str], ln: int,
         if not pop and poch < i and not ryadky[poch].startswith("|"):
             break
         poch -= 1
+    # Межі вперед. **Порожній рядок усередині блоку коду — це вміст, а
+    # не кінець абзацу.** Перша редакція цього не знала й обривала
+    # контекст на першому ж порожньому рядку в коді: дамп паніки
+    # показувався одним рядком із восьми, а картка при цьому твердила,
+    # що дає оточення.
+    #
+    # Знайшов `layer1.py` М2 питанням, якого ми не ставили ніколи: **чи
+    # містить контекст своє твердження.** 58 карток — усі роду `kod`.
+    #
+    # > Рід 5 у самій протиотруті: блок, зроблений показувати думку
+    # > цілком, показував половину.
+    v_kodi = ryadky[i].lstrip().startswith("```")
     kin = i
     while kin + 1 < len(ryadky):
         nast = ryadky[kin + 1].rstrip()
+        if v_kodi:
+            kin += 1
+            if nast.lstrip().startswith("```"):
+                break
+            continue
         if not nast or nast.startswith("#"):
             break
         kin += 1
@@ -752,7 +805,7 @@ def sketch() -> int:
                 kandydaty = vsi_kandydaty(dokazy, h, txt)
                 for k_z in kandydaty:
                     zachepleni.add(klyuch(k_z))
-                z = (min(kandydaty, key=lambda z: SYLA.get(z.get("klas", "F"), 9))
+                z = (min(kandydaty, key=lambda z: SYLA.get(klas_zapysu(z), 9))
                      if kandydaty else None)
                 if z:
                     vzhyti.add(h)
@@ -765,7 +818,7 @@ def sketch() -> int:
                 if vyd == "kod":
                     klas = "K"
                 elif z:
-                    klas = z.get("klas", "F")
+                    klas = klas_zapysu(z)
                 elif vyd in ("proza", "komirka", "tablycya") \
                         and not RE_SYGNAL_STROGYY.search(txt):
                     # Одиниця без жодного сигналу, що вказував би на
@@ -861,7 +914,7 @@ def sketch() -> int:
     mertvi: list[tuple[dict, str, str]] = []
     shyroki: list[tuple[dict, str, int]] = []
     for z in dokazy:
-        vz = z.get("zbih")
+        vz = z.get("match")
         if not vz:
             continue
         chastyny = rozbyty_alternatyvy(vz)
@@ -1055,7 +1108,7 @@ def blocked() -> int:
         txt = " ".join(m.group(1).replace("> ", "").split()) if m else ""
         g = grupy.setdefault(u, {"shukaty": set(), "tverdzhennya": []})
         if sh:
-            g["shukaty"].add(sh.strip())
+            g["look_for"].add(sh.strip())
         g["tverdzhennya"].append((z["id"], z["src"], txt))
 
     if not grupy:
@@ -1083,9 +1136,9 @@ def blocked() -> int:
     for u, g in sorted(grupy.items(), key=lambda kv: -len(kv[1]["tverdzhennya"])):
         ryadky.append(f"## {u}\n")
         ryadky.append(f"Залежить тверджень: **{len(g['tverdzhennya'])}**\n")
-        if g["shukaty"]:
+        if g["look_for"]:
             ryadky.append("**Що шукати:**\n")
-            for s in sorted(g["shukaty"]):
+            for s in sorted(g["look_for"]):
                 ryadky.append(f"- {s}")
             ryadky.append("")
         ryadky.append("| Твердження | Де в книзі | Дослівно |")
@@ -1228,7 +1281,7 @@ def vorota() -> int:
 
     holosti = []
     for z in dokazy:
-        vz = str(z.get("zbih", ""))
+        vz = str(z.get("match", ""))
         if not vz:
             continue
         try:

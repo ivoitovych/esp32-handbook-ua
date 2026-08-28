@@ -140,6 +140,14 @@ static void sensor_task(void *arg) {
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
+
+xTaskCreate(sensor_task,   // функція
+            "sensor",      // ім'я для логу і діагностики
+            4096,          // стек у байтах
+            NULL,          // параметр
+            5,             // пріоритет
+            NULL);         // сюди можна отримати дескриптор
+```
 ````
 
 **Доказ**
@@ -1224,6 +1232,17 @@ xTaskCreatePinnedToCore(motor_task, "motor", 4096, NULL, 10, NULL, 1);
 
 ```c
 QueueHandle_t cherga = xQueueCreate(10, sizeof(vymiryuvannya_t));
+
+// відправник
+vymiryuvannya_t v = { .temperatura = 23.5, .chas = esp_timer_get_time() };
+xQueueSend(cherga, &v, pdMS_TO_TICKS(100));
+
+// отримувач
+vymiryuvannya_t v;
+if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
+    obrobyty(&v);
+}
+```
 ````
 
 **Доказ**
@@ -1460,6 +1479,12 @@ if (xQueueReceive(cherga, &v, portMAX_DELAY) == pdTRUE) {
 
 ```c
 SemaphoreHandle_t mutex = xSemaphoreCreateMutex();
+
+if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
+    // тільки одна задача тут одночасно
+    xSemaphoreGive(mutex);
+}
+```
 ````
 
 **Доказ**
@@ -1724,6 +1749,12 @@ if (xSemaphoreTake(mutex, pdMS_TO_TICKS(1000)) == pdTRUE) {
 
 ```c
 EventGroupHandle_t podiyi = xEventGroupCreate();
+#define WIFI_OK  BIT0
+#define TIME_OK  BIT1
+
+xEventGroupWaitBits(podiyi, WIFI_OK | TIME_OK,
+                    pdFALSE, pdTRUE, portMAX_DELAY);
+```
 ````
 
 **Доказ**

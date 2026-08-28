@@ -4168,6 +4168,9 @@ download mode.
 ### Саме число — це стани strapping-пінів
 
 ```c
+#define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || IS_0100(BOOT_MODE_GET()))
+#define ETS_IS_JOINT_DOWNLOAD_BOOT()  IS_00XX(BOOT_MODE_GET())
+```
 ````
 
 **Доказ**

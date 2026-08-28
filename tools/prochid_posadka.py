@@ -87,6 +87,31 @@ def vzirets_dlya(tekst: str, vsi: list[str]) -> str | None:
     return None
 
 
+# Писач мусить писати **обидва** імені, доки триває переїзд.
+#
+# Перелік «хто читає старі імена» рахував читачів — і саме тому крок 1
+# виглядав завершеним. Але стиснення тримається не тим, що старі імена
+# прибрано, а тим, що їх **нема кому написати**: після `--stysnuty`
+# перша ж посадка повернула б їх назад, по одному наряду за раз, і
+# `znimok --zvirty` був би зелений того дня й червоний за тиждень.
+#
+# Знайшов це М2. Рядок нижче прибирається **разом** із прогоном
+# `--stysnuty`, не раніше й не пізніше.
+def obydva(z: dict) -> dict:
+    """Запис доказу з англійськими іменами поруч зі старими."""
+    MAPA = {"nazva": "title", "zbih": "match", "klas": "status",
+            "dzherelo": "source", "cytata": "quote", "sposib": "method",
+            "notatka": "note", "shukaty": "look_for",
+            "rozrakhunok": "calculation"}
+    SLOVO = {"A": "verbatim", "B": "derived", "C": "named-unreachable",
+             "D": "arithmetic", "E": "no-external-signal", "F": "unchecked",
+             "G": "refuted", "K": "code-context", "L": "looked-not-found"}
+    for st, nov in MAPA.items():
+        if st in z and nov not in z:
+            z[nov] = SLOVO.get(str(z[st]), z[st]) if st == "klas" else z[st]
+    return z
+
+
 def main() -> int:
     import factcheck
     import vybirka
@@ -130,12 +155,12 @@ def main() -> int:
             shyrokyy += 1
             continue
         fayl = u["src"].split("/")[-1].split(":")[0].removesuffix(".md")
-        posadka[fayl].append({
+        posadka[fayl].append(obydva({
             "nazva": f"{oid}: {' '.join(u['tekst'].split()[:8])}",
             "zbih": vz,
             "klas": "A",
-            "dzherelo": str(z["dzherelo"]).strip(),
-            "cytata": str(z["cytata"]).strip() + "\n",
+            "dzherelo": str(z["source"]).strip(),
+            "cytata": str(z["quote"]).strip() + "\n",
             "sposib": (
                 "Суцільний прохід 2026-08-27. Документ отримано в сесії, "
                 "витяг звірено з ним підрядком машинно "
@@ -144,7 +169,7 @@ def main() -> int:
                 "«супровідник прочитав і згоден»: змістовий шар "
                 "лишається окремою роботою."),
             "notatka": str(z.get("komentar", "")).strip() or "—",
-        })
+        }))
 
     vsoho = sum(len(v) for v in posadka.values())
     print(f"придатних до посадки {vsoho} | вже мають A/B {vzhe_A} | "

@@ -64,6 +64,20 @@ POTREBUYE = {
     "L": ("looked_at",), "looked-not-found": ("looked_at",),
 }
 
+# Словник станів. Досі не перевірявся **зовсім**: `POTREBUYE.get(klas)`
+# на невідомому слові тихо віддавав порожнє, і запис проходив як
+# бездоганний.
+#
+# Знайдено на шести записах зі `status: unverified` — слова, якого в
+# схемі немає (правильне `unchecked`). Ворота мовчали, бо вони питали
+# «чи є поля, потрібні цьому класу», а не «чи існує такий клас».
+#
+# > Перевірка вимог до значення, яка не перевіряє саме значення, —
+# > це рід 3: працює, вертає нуль, і нуль нічого не означає.
+STANY = set(POTREBUYE) | {
+    "E", "no-external-signal", "F", "unchecked", "G", "refuted",
+    "K", "code-context"}
+
 RE_KARTKA = re.compile(
     r"<!-- fc id:(?P<id>\S+) sha:\S+ src:(?P<src>\S+) klas:\S+ -->\n"
     r"### (?P<zah>[^\n]*)\n")
@@ -104,6 +118,8 @@ def perevir_zapysy(zap) -> list[str]:
         if nevidomi:
             bidy.append(f"{de}: невідомі поля {', '.join(sorted(nevidomi))}")
         klas = str(r.get("status") or r.get("klas") or "")
+        if klas and klas not in STANY:
+            bidy.append(f"{de}: невідомий стан `{klas}` — див. SCHEMA.md")
         for pole in POTREBUYE.get(klas, ()):
             # Переїзд: значення може стояти під старим іменем.
             stare = {"source": "dzherelo", "quote": "cytata",

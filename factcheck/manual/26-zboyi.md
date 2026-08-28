@@ -141,6 +141,15 @@
 
 ```
 Guru Meditation Error: Core 0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core 0 register dump:
+PC      : 0x400d2f1a  PS      : 0x00060730  A0      : 0x800d3045  A1      : 0x3ffb1f20
+A2      : 0x00000000  A3      : 0x3ffb2010  A4      : 0x00000064  A5      : 0x00000001
+...
+EXCVADDR: 0x00000008  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff
+
+Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
+```
 ````
 
 **Доказ**
@@ -3018,6 +3027,9 @@ Guru Meditation Error: Core 0 panic'ed (Interrupt wdt timeout on CPU0)
 ## Причини скидання
 
 ```c
+#include "esp_system.h"
+ESP_LOGI(TAG, "причина скидання: %d", esp_reset_reason());
+```
 ````
 
 **Доказ**

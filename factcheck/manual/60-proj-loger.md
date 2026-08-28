@@ -2546,6 +2546,13 @@ strapping-пін `GPIO2` — це припустимо лише тому, що �
                             └──[MOSFET]──[100к]──┬── ADC     classic 34 / C3 3
                                           [100к]─┘
                                             GND
+
+I²C   SDA/SCL:  BME280 + DS3231, спільні підтяжки 4.7 кОм
+                                            classic 21/22   C3 4/5
+1-Wire:         DS18B20 + підтяжка 4.7 кОм  classic 4       C3 1
+SPI  SCK/MOSI/MISO + CS: microSD            classic 18/23/19 + 5
+                                            C3      6/7/10   + 0
+```
 ````
 
 **Доказ**
@@ -2964,6 +2971,28 @@ strapping-пін `GPIO2` — це припустимо лише тому, що �
 
 ```c
 // Піни й канал ADC за платою (таблиця вище).
+#if CONFIG_IDF_TARGET_ESP32C3
+#  define PIN_SDA        GPIO_NUM_4
+#  define PIN_SCL        GPIO_NUM_5
+#  define PIN_1WIRE      GPIO_NUM_1
+#  define PIN_SCK        GPIO_NUM_6
+#  define PIN_MOSI       GPIO_NUM_7
+#  define PIN_MISO       GPIO_NUM_10
+#  define PIN_CS_SD      GPIO_NUM_0
+#  define PIN_DILNYK_EN  GPIO_NUM_2      // ⚠ strapping: лише вихід
+#  define ADC_CHANNEL    ADC_CHANNEL_3   // GPIO3
+#else                                    // ESP32 classic
+#  define PIN_SDA        GPIO_NUM_21
+#  define PIN_SCL        GPIO_NUM_22
+#  define PIN_1WIRE      GPIO_NUM_4
+#  define PIN_SCK        GPIO_NUM_18
+#  define PIN_MOSI       GPIO_NUM_23
+#  define PIN_MISO       GPIO_NUM_19
+#  define PIN_CS_SD      GPIO_NUM_5
+#  define PIN_DILNYK_EN  GPIO_NUM_13
+#  define ADC_CHANNEL    ADC_CHANNEL_6   // GPIO34 = ADC1_6
+#endif
+```
 ````
 
 **Доказ**
@@ -3304,6 +3333,28 @@ void app_main(void) {
     nomer_cyklu++;
     ESP_LOGI(TAG, "цикл %lu, причина пробудження: %d",
              nomer_cyklu, esp_sleep_get_wakeup_cause());
+
+    float napruga = zmiryaty_akumulyator();      // з ключем, див. нижче
+    if (napruga < 3.2f) {
+        ESP_LOGE(TAG, "акумулятор %.2f В — засинаємо назавжди", napruga);
+        esp_deep_sleep_start();                  // без таймера: не прокинеться
+    }
+
+    zapys_t z = { .chas = rtc_chas(), .napruga = napruga };
+    z.ok_bme = (bme_measure(&z.temp, &z.hum, &z.pres) == ESP_OK);
+    z.ok_ds  = (ds18b20_read(&z.temp_zovni) == ESP_OK);
+
+    if (!zapysaty_na_kartku(&z)) {
+        pomylok_karty++;
+        if (u_buferi < BUFER_ROZMIR) bufer[u_buferi++] = z;
+        ESP_LOGW(TAG, "картка недоступна, у буфері %u", u_buferi);
+    } else if (u_buferi > 0) {
+        skynuty_bufer();                         // дописати накопичене
+    }
+
+    zasnuty(15 * 60);
+}
+```
 ````
 
 **Доказ**
@@ -3506,6 +3557,20 @@ void app_main(void) {
 static float zmiryaty_akumulyator(void) {
     gpio_set_level(PIN_DILNYK_EN, 1);
     vTaskDelay(pdMS_TO_TICKS(10));           // дати зарядитися ємності
+
+    int sum = 0;
+    for (int i = 0; i < 32; i++) {           // усереднення (розділ 33)
+        int raw;
+        adc_oneshot_read(adc, ADC_CHANNEL, &raw);
+        sum += raw;
+    }
+    gpio_set_level(PIN_DILNYK_EN, 0);        // вимкнути одразу
+
+    int mv;
+    adc_cali_raw_to_voltage(cali, sum / 32, &mv);
+    return mv * 2.0f / 1000.0f;              // дільник 1:2
+}
+```
 ````
 
 **Доказ**
@@ -3670,6 +3735,21 @@ static float zmiryaty_akumulyator(void) {
 ```c
 static bool zapysaty_na_kartku(const zapys_t *z) {
     if (sd_mount() != ESP_OK) return false;
+
+    FILE *f = fopen(MOUNT "/dani.csv", "a");
+    if (!f) { sd_unmount(); return false; }
+
+    fprintf(f, "%lld,%.2f,%.1f,%.1f,%.2f,%.2f,%d,%d\n",
+            z->chas, z->temp, z->hum, z->pres,
+            z->temp_zovni, z->napruga, z->ok_bme, z->ok_ds);
+
+    fflush(f);
+    fsync(fileno(f));      // змусити записати на носій, а не в буфер
+    fclose(f);
+    sd_unmount();          // розмонтувати одразу
+    return true;
+}
+```
 ````
 
 **Доказ**
@@ -3888,6 +3968,12 @@ static void zasnuty(uint32_t sekund) {
     sd_unmount();
     gpio_set_level(PIN_DILNYK_EN, 0);
     gpio_set_level(PIN_ZHYVLENNYA_PERYFERIYI, 0);   // ключ живлення датчиків
+
+    esp_sleep_enable_timer_wakeup((uint64_t)sekund * 1000000ULL);
+    ESP_LOGI(TAG, "засинаємо на %lu с", sekund);
+    esp_deep_sleep_start();
+}
+```
 ````
 
 **Доказ**
@@ -4218,6 +4304,8 @@ static void zasnuty(uint32_t sekund) {
 **Доказ**
 
 - **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
+- **Розрахунок:**
+  сума етапів пробудження з таблиці розрахунку проєкту логера = 300 мс
 - **Спосіб і дата:** Розрахунок, наведений у 60-proj-loger.md
 - **Нотатка:** Число 300 мс вказане у таблиці енергетичного розрахунку
 проєкту логера. Це розрахункова оцінка часу пробудження й
