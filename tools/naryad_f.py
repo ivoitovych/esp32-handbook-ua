@@ -24,7 +24,24 @@
 2. **ворота існують, і сказано, що саме вони відкидають**;
 3. `dzherelo` на кожен вердикт, включно з негативним.
 
+## Випадкова вибірка проти тематичної
+
+Тематичний добір бере лише те, для чого документ-кандидат відомий
+наперед, — тобто міряє технологію на найлегших випадках черги. Для
+досліду це підмінює питання: замість «як працює технологія на черзі
+`F`» виходить «як вона працює там, де ми вже знаємо відповідь».
+
+`--vypadkovo N` бере N одиниць з **усієї** черги `F`, включно з тими,
+де кандидата немає. Частка «не знайшов» від цього зросте — і це не
+хиба досліду, а його результат: вона й є мірою того, скільки в черзі
+взагалі робочого.
+
+**Насіння обов'язкове.** Три мої досліди виявилися невідтворними,
+бо `sort -R` не записував насіння. Тут воно і в параметрі, і в
+шапці кожного наряду, і перелік узятих `id` лягає поруч файлом.
+
     tools/naryad_f.py <куди> [--na-naryad 10]
+    tools/naryad_f.py <куди> --vypadkovo 100 --nasinnya 20260828
 """
 from __future__ import annotations
 
@@ -168,14 +185,56 @@ SHAPKA = """# Наряд {n}: {tema} — {k} одиниць
 """
 
 
+def vypadkova(a, vybirka) -> int:
+    """Випадкова вибірка з усієї черги `F`, з насінням і переліком."""
+    import json
+    import random
+
+    usi = sorted(vybirka.odynyci("F"), key=lambda u: u["id"])
+    vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
+    (a.kudy / "vybirka.json").write_text(json.dumps(
+        {"nasinnya": a.nasinnya, "z_cherhy": len(usi),
+         "vzyato": [u["id"] for u in vzyato]},
+        ensure_ascii=False, indent=1), encoding="utf-8")
+
+    n = 0
+    for i in range(0, len(vzyato), a.na_naryad):
+        ch = vzyato[i:i + a.na_naryad]
+        n += 1
+        kand = ("**Документа-кандидата немає.** Ці одиниці взято "
+                "**випадково** з усієї черги, а не за темою, тож жодного "
+                "документа наперед не названо. Шукай сам — і якщо не "
+                "знайшов, `ne_znayshov` із адресою того, що відкривав, "
+                "це повноцінна відповідь.")
+        r = [SHAPKA.format(n=n, tema=f"випадкова вибірка (насіння {a.nasinnya})",
+                           k=len(ch), kandydat=kand)]
+        for u in ch:
+            r.append(f"\n**`{u['id']}`**\n")
+            r.append(f"> {u['tekst']}\n")
+        (a.kudy / f"f-{n:02d}.md").write_text("\n".join(r) + "\n",
+                                              encoding="utf-8")
+    print(f"нарядів {n}, одиниць {len(vzyato)} з {len(usi)} у черзі F; "
+          f"насіння {a.nasinnya} → {a.kudy}")
+    return 0
+
+
 def main() -> int:
     import vybirka
 
     p = argparse.ArgumentParser()
     p.add_argument("kudy", type=Path)
     p.add_argument("--na-naryad", type=int, default=10)
+    p.add_argument("--vypadkovo", type=int, default=0,
+                   help="взяти N одиниць випадково з усієї черги F")
+    p.add_argument("--nasinnya", type=int, default=0,
+                   help="насіння; обов'язкове разом із --vypadkovo")
     a = p.parse_args()
+    if a.vypadkovo and not a.nasinnya:
+        p.error("--vypadkovo без --nasinnya: дослід буде невідтворний")
     a.kudy.mkdir(parents=True, exist_ok=True)
+
+    if a.vypadkovo:
+        return vypadkova(a, vybirka)
 
     za: dict[str, list[dict]] = collections.defaultdict(list)
     for u in vybirka.odynyci("F"):
