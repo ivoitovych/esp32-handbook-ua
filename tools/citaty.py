@@ -407,7 +407,7 @@ RE_LEKSEMA = re.compile(r"[\w.°±×/+-]{2,}")
 def u_tablyci(ryadok: str, tekst: str) -> bool:
     """Чи є рядок **читанням таблиці**, розкиданої по документу.
 
-    Узято з `factcheck/perevirka-tsytat-m2.py`, функція `znayty_ryadok`
+    Узято з `tools/perevirka-tsytat-m2.py`, функція `znayty_ryadok`
     (М2, знахідка 19:40Z). Проста перевірка підрядком дала їм **27
     хибних тривог із 45**, і жодна не була провиною цитати.
 

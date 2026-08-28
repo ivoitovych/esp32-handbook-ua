@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Розкласти всі одиниці БЕЗ документа на черги для розбору.
 
-Наряд — `factcheck/NARYAD-m2-rozbir.md`. Перевірка — `pryyom-rozbir-m2.py`.
+Наряд — `factcheck/archive/NARYAD-m2-rozbir.md`. Перевірка — `pryyom-rozbir-m2.py`.
 
-    factcheck/rozbir-m2.py <агентів> <одиниць-на-агента> [каталог]
+    tools/rozbir-m2.py <агентів> <одиниць-на-агента> [каталог]
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import yaml  # noqa: E402
 import vybirka  # noqa: E402
 
-spec = importlib.util.spec_from_file_location("nm", ROOT / "factcheck" / "naryad-m2.py")
+spec = importlib.util.spec_from_file_location("nm", ROOT / "tools" / "naryad-m2.py")
 nm = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(nm)
 

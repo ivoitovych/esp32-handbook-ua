@@ -43,8 +43,8 @@ MAX6675 однаково стосується обох рядків таблиц
 не до тієї одиниці гірша за холостий взірець — холостий видно, а
 хибну прив'язку ні.
 
-    factcheck/vzirci-remont-m2.py            показати, що зробить
-    factcheck/vzirci-remont-m2.py --pysaty   записати
+    tools/vzirci-remont-m2.py            показати, що зробить
+    tools/vzirci-remont-m2.py --pysaty   записати
 """
 from __future__ import annotations
 

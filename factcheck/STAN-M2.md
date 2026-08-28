@@ -31,9 +31,9 @@ D 162, E 4125, F 1568. Звірено (A+B+D) — 2236 із 8083.
 
 Це два заходи по 20 помічників (по 1320 за захід). Наряд і перевірка на місці:
 
-    factcheck/rozbir-m2.py 20 66 /tmp/hrN     скласти черги
+    tools/rozbir-m2.py 20 66 /tmp/hrN     скласти черги
     factcheck/NARYAD-m2-rozbir.md              що читає помічник
-    factcheck/pryyom-rozbir-m2.py              ворота
+    tools/pryyom-rozbir-m2.py              ворота
 
 `rozbir-m2.py` пропускає вже розібране, тож повторний запуск не
 переробляє те саме.

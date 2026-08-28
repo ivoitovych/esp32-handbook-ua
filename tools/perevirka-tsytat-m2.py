@@ -17,8 +17,8 @@
 твердженням. Джерело може містити число «40 мА» і не підпирати
 твердження «40 мА — абсолютна межа». Це шар 2, і скрипт тут безсилий.
 
-    factcheck/perevirka-tsytat-m2.py            перевірити все
-    factcheck/perevirka-tsytat-m2.py -v         показати кожен рядок
+    tools/perevirka-tsytat-m2.py            перевірити все
+    tools/perevirka-tsytat-m2.py -v         показати кожен рядок
 """
 import re, sys, hashlib, pathlib, subprocess
 

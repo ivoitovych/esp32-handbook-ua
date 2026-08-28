@@ -28,7 +28,7 @@ NCR18650B зве себе «NCR18650B» лише на титулі, а Kester в
 зветься за виробником). Читати його має людина, і один раз на
 документ.
 
-    factcheck/kesh-zvirka-m2.py [шлях-до-кешу]
+    tools/kesh-zvirka-m2.py [шлях-до-кешу]
 """
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema vidtvornist check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -91,6 +91,13 @@ podil:
 kesh:
 	@$(PY) tools/kesh.py --check
 
+# Чи може доказ перевірити **третя сторона**. `--check` питає лише
+# про мій кеш; кеш у git не входить (копірайт), тож єдиний місток
+# назовні — рядок маніфесту. Доказ поза маніфестом відтворний тільки
+# в тому контейнері, де його писали.
+vidtvornist:
+	@$(PY) tools/kesh.py --vidtvornist
+
 # Правопис: перелік невідомих слів. Звіт, не ворота — судити про
 # українську має людина, інструмент лише скорочує їй роботу.
 pravopys:
@@ -156,7 +163,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
