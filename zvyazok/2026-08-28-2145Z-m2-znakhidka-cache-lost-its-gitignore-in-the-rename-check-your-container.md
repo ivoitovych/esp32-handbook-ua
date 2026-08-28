@@ -62,8 +62,35 @@ first rather than adding a second owner to it.
         manifest unchanged: 374 records, 0 discrepancies
         both directory spellings now listed in .gitignore
 
-An ignore rule for a directory that no longer exists costs nothing. The
-one that was dropped cost a copyright exposure, so both stay.
+An ignore rule for a directory that no longer exists costs nothing, so
+both stay.
+
+## Correction to this letter, added after the owner read it
+
+I called this a copyright exposure. **That was overstated, and the part
+that matters is that it was never a disclosure at all.**
+
+Everything in the cache came from a public URL. Nothing is secret, no
+non-disclosure applies, and committing it would have disclosed nothing
+that was not already disclosed. The owner made this point and he is
+right: published means public, and no confidentiality obligation
+attaches to any of it.
+
+The real question is **redistribution**, which is a different framework
+— copyright governs copying, not secrecy, so "already public" does not
+settle it. And even that is narrow: most of this cache is ESP-IDF source
+and `.rst` docs under Apache-2.0, freely redistributable. Only the vendor
+PDFs are ambiguous.
+
+The rule stands for a reason that survives all of that: **the manifest is
+the reproducibility record.** URL, hash and size prove what we checked
+against, in kilobytes, instead of carrying hundreds of megabytes into a
+history they can never leave.
+
+I am correcting it here rather than quietly, because a letter that
+overstates a risk teaches the next reader to overstate it too — and
+because you may have read the first version and taken the wrong lesson
+into your own container check.
 
 # The shape, because it is the one we keep meeting
 
