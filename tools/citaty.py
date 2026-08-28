@@ -375,7 +375,7 @@ def plaskyy(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def uryvky(cytata: str) -> list[list[str]]:
+def uryvky(cytata: str, vlasna_mova: bool = False) -> list[list[str]]:
     """Придатні до перевірки групи рядків цитати.
 
     Відкидаємо: наші примітки (кирилиця), місця з вирізаним текстом
@@ -384,13 +384,30 @@ def uryvky(cytata: str) -> list[list[str]]:
 
     Повертаємо **групи рядків**, а не злитий текст, бо перевіряти
     доводиться двома способами (див. `znayty`).
+
+    ## `vlasna_mova` — і чому без нього клас `S` був би порожній
+
+    Правило «кирилиця — це наша примітка, а не цитата» правильне рівно
+    доти, доки джерело англійське. Для класу `S` джерелом є **книга**,
+    і тоді кожен справжній уривок кирилицею.
+
+    Виміряно на 21 записі внутрішньої звірки: без цього прапорця
+    придатних уривків не мали **15 із 21**, і шар 3 сказав би про них
+    «нема чого звіряти» — тобто клас, заведений щоб зафіксувати
+    зроблену звірку, звітував би, що звіряти нічого.
+
+    > Фільтр, слушний для одного корпусу, застосований до іншого,
+    > викидає все — і мовчить тим самим словом, яким каже «чисто».
+
+    Решта відсіву лишається чинною: багатокрапка й тут означає
+    вирізаний текст, а короткий рядок і тут збіжиться з чим завгодно.
     """
     grupy: list[list[str]] = [[]]
     for ryadok in cytata.splitlines():
         r = ryadok.strip()
         pryydatnyy = (
             r
-            and not RE_KYRYLYCYA.search(r)
+            and (vlasna_mova or not RE_KYRYLYCYA.search(r))
             and not RE_PROPUSK.search(r)
             and not RE_POZNACHKA.match(r)
             and len(r) >= MIN_DOVZHYNA
@@ -490,6 +507,32 @@ def korin_dlya(povnyy: str, skorocheno: str) -> str | None:
         return None
     i = povnyy.find(f"/{persh}/")
     return povnyy[:i + 1] if i > 0 else None
+
+
+RE_SHLYAKH_KNYHY = re.compile(
+    r"\b(?:manual|kartky|dodatky|inserts)/[\w.\-]+\.md\b")
+
+
+def knyzhkovi_dzherela(z: dict) -> list[Path]:
+    """Файли **книги**, названі в джерелі запису класу `S`.
+
+    `S` — внутрішня звірка: твердження доводиться не зовнішнім
+    документом, а іншим місцем цієї ж книги. Такий доказ нічого не
+    каже про світ, зате каже щось перевірне про книгу — що вона
+    сходиться сама з собою.
+
+    Тому він **мусить** проходити третій шар, як і всі інші, просто
+    корпусом йому є книга, а не кеш джерел. Інакше `S` був би ярликом,
+    що стверджує звірку, якої ніхто не робить, — рід 24 у `DEFECTS.md`,
+    записаний того самого дня, що й цей клас.
+    """
+    syryy = str(z.get("source") or z.get("dzherelo") or "")
+    out: list[Path] = []
+    for s in RE_SHLYAKH_KNYHY.findall(syryy):
+        p = ROOT / s
+        if p.exists() and p not in out:
+            out.append(p)
+    return out
 
 
 def dzherela_zapysu(z: dict) -> list[str]:
@@ -677,9 +720,13 @@ def perevirka(kachaty: bool,
                 frahmenty = [[str(k).strip()] for k in tablychna
                              if str(k).strip()]
             else:
-                frahmenty = uryvky(str(z.get("quote") or ""))
+                frahmenty = uryvky(
+                    str(factcheck.pole(z, "quote", "cytata") or ""),
+                    vlasna_mova=(klas == "S"))
             urly = dzherela_zapysu(z)
-            if not frahmenty or not urly:
+            # Клас `S` адресує книгу, а не мережу, тож відсутність URL
+            # у нього — норма, а не «нема чого звіряти».
+            if not frahmenty or (not urly and klas != "S"):
                 pidsumok["nichoho"] += 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="nichoho",
@@ -692,6 +739,20 @@ def perevirka(kachaty: bool,
             zaglushky: list[str] = []
             nechytni: list[str] = []
             tablychni = False
+
+            # Внутрішня звірка: корпус — названі файли книги.
+            if klas == "S":
+                shlyakhy = knyzhkovi_dzherela(z)
+                if not shlyakhy:
+                    pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
+                    naslidky.append(dict(
+                        fayl=f.stem, nazva=nazva, stan="pomylka",
+                        detali="клас S, а в джерелі немає шляху до файлу "
+                               "книги — звіряти нема з чим"))
+                    continue
+                teksty = [plaskyy(p.read_text(encoding="utf-8"))
+                          for p in shlyakhy]
+
             for u in urly:
                 if u not in kesh_tekstu:
                     cil = KESH / imya_dlya(u)

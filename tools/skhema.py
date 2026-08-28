@@ -62,6 +62,10 @@ POTREBUYE = {
     # `looked_at` обов'язкове навмисно. Без нього стан повторив би долю
     # `C`, який теж мав називати документ — і в шести записах не називав.
     "L": ("looked_at",), "looked-not-found": ("looked_at",),
+    # `S` мусить назвати **місце в книзі**, з яким звіряли, — інакше
+    # він каже лише «ми подивилися», що вже є `E`. Поле те саме,
+    # `source`, бо це і є джерело: просто внутрішнє.
+    "S": ("source",), "self-consistent": ("source",),
 }
 
 # Словник станів. Досі не перевірявся **зовсім**: `POTREBUYE.get(klas)`
@@ -185,6 +189,15 @@ def samoperevirka() -> int:
         ("looked-not-found без looked_at",
          {"title": "т", "status": "looked-not-found", "match": "x",
           "note": "чому шукали"}, 1),
+        # `S` мусить назвати місце в книзі — інакше він каже лише «ми
+        # подивилися», тобто рівно те, що вже означає `E`.
+        ("self-consistent повний",
+         {"title": "т", "status": "self-consistent", "match": "x",
+          "source": "ВНУТРІШНЯ ЗВІРКА: manual/60-proj-loger.md, рядок 199",
+          "quote": "рядок книги"}, 0),
+        ("self-consistent без джерела",
+         {"title": "т", "status": "self-consistent", "match": "x",
+          "quote": "рядок книги"}, 1),
     ]
     pomylok = 0
     for imya, r, ochik in vypadky:

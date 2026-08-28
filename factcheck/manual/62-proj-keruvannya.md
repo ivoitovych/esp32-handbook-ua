@@ -1772,7 +1772,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Клас:** 🔁 S — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 96
 - **Дослівно з джерела:**
   > +12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
@@ -1782,7 +1782,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 ---
 
-<!-- fc id:T-62-051 sha:5f426d1b src:manual/62-proj-keruvannya.md:96 klas:A -->
+<!-- fc id:T-62-051 sha:5f426d1b src:manual/62-proj-keruvannya.md:96 klas:S -->
 ### T-62-051 · schema-zvyazok · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -1801,7 +1801,7 @@ boot loop (розділ 20) це означає блимання насосом 
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Клас:** 🔁 S — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 96
 - **Дослівно з джерела:**
   > +12 В ── [насос] ── [реле: контакти NO] ── [аварійний вимикач] ── GND
@@ -2917,16 +2917,26 @@ static void perejty(stan_t novyy, const char *prychyna) {
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 182
+- **Джерело:** заголовки ESP-IDF release/v5.5 (esp_wifi.h, esp_now.h, esp_system.h, esp_sleep.h, esp_timer.h, esp_log.h, driver/gpio.h, driver/i2c_master.h, driver/spi_master.h, driver/spi_common.h, driver/uart.h, driver/ledc.h, driver/twai.h, esp_adc/adc_oneshot.h, esp_adc/adc_cali_scheme.h, nvs_flash.h, esp_ota_ops.h, esp_https_ota.h, esp_http_server.h, esp_task_wdt.h, esp_heap_caps.h) плюс espressif/esp-mqtt, espressif/esp-protocols (mdns) і espressif/idf-extra-components (led_strip)
 - **Дослівно з джерела:**
-  > ESP_LOGI(TAG, "%s -> %s: %s", nazva(stan), nazva(novyy), prychyna);
-- **Спосіб і дата:** дослівна цитата з коду
-- **Нотатка:** Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.
-- **Прохід:** m2-67-proj-62
+  > Витягнуто 672 унікальні публічні символи з перелічених заголовків і
+  > зіставлено зі 104 унікальними викликами, що вживає книга.
+  > 
+  > Неспівставленими лишилися рівно п'ять, і всі п'ять — очікувані:
+  >   espnow_init_with_key   — власна допоміжна функція прикладу (розділ 61)
+  >   nvs_read_key           — те саме
+  >   gpio_isr               — ім'я обробника в прикладі (розділ 31)
+  >   gpio_isr_handler       — те саме (розділи 03, 30)
+  >   idf_component_register — функція CMake, а не C-API (розділ 11)
+  > 
+  > Розбіжностей у справжніх викликах ESP-IDF: 0.
+- **Спосіб і дата:** curl raw.githubusercontent для 30 заголовків; зіставлення `tools/claims.py api` проти витягнутих символів, 2026-08-26
+- **Нотатка:** Суцільна перевірка, а не вибіркова: узято **всі** виклики книги, а не ті, що здалися сумнівними. Нуль розбіжностей означає, що жодна функція не вигадана, не перейменована й не застаріла — включно з новим драйвером I²C (`i2c_master_*`), новим ADC (`adc_oneshot_*`) і компонентами з реєстру.
+- **Прохід:** pass-07-api-rozbyvka
 
 ---
 
-<!-- fc id:T-62-087 sha:fb4554b3 src:manual/62-proj-keruvannya.md:182 klas:A -->
+<!-- fc id:T-62-087 sha:fb4554b3 src:manual/62-proj-keruvannya.md:182 klas:S -->
 ### T-62-087 · kod-ryadok · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -2951,7 +2961,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Клас:** 🔁 S — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 182
 - **Дослівно з джерела:**
   > ESP_LOGI(TAG, "%s -> %s: %s", nazva(stan), nazva(novyy), prychyna);
@@ -2961,7 +2971,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 ---
 
-<!-- fc id:T-62-088 sha:ea4d167e src:manual/62-proj-keruvannya.md:185 klas:A -->
+<!-- fc id:T-62-088 sha:ea4d167e src:manual/62-proj-keruvannya.md:185 klas:S -->
 ### T-62-088 · kod-ryadok · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -2986,7 +2996,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Клас:** 🔁 S — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 185
 - **Дослівно з джерела:**
   > nasos_keruvaty(novyy == STAN_ROBOTA);
@@ -2996,7 +3006,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 ---
 
-<!-- fc id:T-62-089 sha:e5aaf78d src:manual/62-proj-keruvannya.md:186 klas:A -->
+<!-- fc id:T-62-089 sha:e5aaf78d src:manual/62-proj-keruvannya.md:186 klas:S -->
 ### T-62-089 · kod-ryadok · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -3021,7 +3031,7 @@ static void perejty(stan_t novyy, const char *prychyna) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Клас:** 🔁 S — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 186
 - **Дослівно з джерела:**
   > onovyty_indykaciyu();
@@ -3131,16 +3141,17 @@ static void task_keruvannya(void *arg) {
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 192
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
 - **Дослівно з джерела:**
-  > #define MAX_ROBOTY_S     600      // 10 хвилин безперервно
-- **Спосіб і дата:** дослівна цитата з коду
-- **Нотатка:** Шар 3 цього не перевіряє: джерело — сама книга. Потрібен окремий інструмент внутрішньої несуперечності.
-- **Прохід:** m2-67-proj-62
+  > Task priorities range from 0 (lowest) to configMAX_PRIORITIES - 1 (highest).
+  > Vanilla FreeRTOS provides the following functions to create a task.
+- **Спосіб і дата:** curl esp-idf freertos_idf.rst, grep priority, 2026-08-26
+- **Нотатка:** Текст T-31-018 говорить про пріоритети від 0 до configMAX_PRIORITIES - 1. Джерело підтверджує цей діапазон.
+- **Прохід:** m2-84-freertos
 
 ---
 
-<!-- fc id:T-62-092 sha:49e09508 src:manual/62-proj-keruvannya.md:196 klas:A -->
+<!-- fc id:T-62-092 sha:49e09508 src:manual/62-proj-keruvannya.md:196 klas:S -->
 ### T-62-092 · kod-ryadok · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -3158,7 +3169,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Клас:** 🔁 S — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 192
 - **Дослівно з джерела:**
   > #define MAX_ROBOTY_S     600      // 10 хвилин безперервно
@@ -3168,7 +3179,7 @@ static void task_keruvannya(void *arg) {
 
 ---
 
-<!-- fc id:T-62-093 sha:f5124e8d src:manual/62-proj-keruvannya.md:197 klas:A -->
+<!-- fc id:T-62-093 sha:f5124e8d src:manual/62-proj-keruvannya.md:197 klas:S -->
 ### T-62-093 · kod-ryadok · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -3183,7 +3194,7 @@ static void task_keruvannya(void *arg) {
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
+- **Клас:** 🔁 S — внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає
 - **Джерело:** ВНУТРІШНЯ ЗВІРКА (книга проти себе): manual/62-proj-keruvannya.md, рядок 193
 - **Дослівно з джерела:**
   > #define PAUZA_PISLYA_S   300      // 5 хвилин відпочинку
