@@ -559,7 +559,16 @@ def perevirka(kachaty: bool,
             # просто немає, і валила **всю** хвилю помічника як «хибні
             # записи» — не перевіривши жодної цитати. Тобто ворота, що
             # мали ловити брак, приховали роботу.
-            maye_klas = "klas" in z
+            # Було `"klas" in z` — перевірка наявності **старого**
+            # імені. Після стиснення воно хибне завжди, і умови нижче
+            # («A без цитати», «доказ класу F») не спрацьовують більше
+            # ніколи. Прогін М2 показав це так: «звірено 508» до і
+            # «звірено 508» після, а 23 записи тим часом переїхали з
+            # «перевіряється» в «нема чого звіряти».
+            #
+            # > Перевірка вертає те саме число, і те саме число нічого
+            # > не означає.
+            maye_klas = bool(z.get("status") or z.get("klas"))
             klas = factcheck.klas_zapysu(z, "").strip().upper()
 
             # Клас `F` — це «не звірено», типовий стан **відсутності**
@@ -598,10 +607,10 @@ def perevirka(kachaty: bool,
             # стоїть міркування. Див. RE_SCHOS_SCHO_MOZHE_BUTY_DOKUMENTOM.
             if maye_klas and klas in ("A", "B") and not dzherelo_rozvyazne(z):
                 pidsumok["vygadane"] = pidsumok.get("vygadane", 0) + 1
+                dzh = str(factcheck.pole(z, "source", "dzherelo") or "")[:60]
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="vygadane",
-                    detali=f"клас {klas}, а джерело — не документ: "
-                           f"«{str(z.get('dzherelo') or '')[:60]}»"))
+                    detali=f"клас {klas}, а джерело — не документ: «{dzh}»"))
                 continue
 
             # **Надмірний `E` — дзеркало вигаданого джерела.** Знахідка

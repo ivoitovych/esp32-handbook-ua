@@ -154,7 +154,7 @@ def main() -> int:
         z = d["zapys"]
         print(f"  {d['shyryna']:>4} (решта {d['reshta']:>3})  "
               f"{str(z.get('_prokhid','?')):<26} "
-              f"{str(z.get('nazva',''))[:46]}")
+              f"{factcheck.nazva_zapysu(z)[:46]}")
         print(f"          теча: {d['alt']!r}")
 
     if not a.naslidky:

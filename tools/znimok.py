@@ -97,7 +97,8 @@ def zibraty(za: str = "sha") -> dict[str, list[str]]:
         for i, r in enumerate(z):
             if not isinstance(r, dict):
                 continue
-            r["_znimok_klyuch"] = f"{f.name}::{i}::{str(r.get('nazva'))[:60]}"
+            nz = factcheck.nazva_zapysu(r)[:60]
+            r["_znimok_klyuch"] = f"{f.name}::{i}::{nz}"
             zapysy.append(r)
 
     zv: dict[str, list[str]] = {k["_znimok_klyuch"]: [] for k in zapysy}
