@@ -115,9 +115,9 @@ RE_DOZVIL = re.compile(
 
 def main() -> int:
     import factcheck
-    import vybirka
+    import sample
 
-    odyn = [u for k in factcheck.USI_KLASY for u in vybirka.odynyci(k)]
+    odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
     znayd = []
     for f in sorted((ROOT / "factcheck" / "dokazy").glob("*.yaml")):
         try:

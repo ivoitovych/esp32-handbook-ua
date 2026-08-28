@@ -313,7 +313,7 @@ The slang is not only inside the documents. It **is** the documents:
 
 And so are the tools: `work_orders_f.py`, `sweep_digest.py`,
 `sweep_land.py`, `land_c.py`, `snapshot.py`, `measure_f.py`,
-`contest_e.py`, `vybirka.py`.
+`contest_e.py`, `sample.py`.
 
 A repository whose file names need a glossary cannot be handed to
 anyone. Renaming is therefore not cosmetics — it is the same defect as
@@ -372,9 +372,9 @@ that correspondence for a Ukrainian book.
 | `field_names.py` | `rename_fields.py` |
 | `deslang.py` | `strip_jargon.py` |
 | `measure_f.py` | `measure.py` |
-| `contest_e.py` · `vybirka.py` | `sweep.py` · `sample.py` |
+| `contest_e.py` · `sample.py` | `sweep.py` · `sample.py` |
 | `modality.py` | `modality.py` |
-| `citaty.py` · `refuted.py` | `quotes.py` · `refuted.py` |
+| `layer3.py` · `refuted.py` | `quotes.py` · `refuted.py` |
 
 ### Order, and why this order
 

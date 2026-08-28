@@ -39,7 +39,7 @@ KESH = ROOT / "dzherela-kesh"
 sys.path.insert(0, str(ROOT / "tools"))
 
 import yaml
-import citaty  # витягання тексту беремо в М1, а не пишемо втретє
+import layer3  # витягання тексту беремо в М1, а не пишемо втретє
 
 _kesh_tekst: dict[str, str] = {}
 
@@ -78,12 +78,12 @@ def tekst_fayla(imya: str) -> str | None:
     p = KESH / imya
     if not p.exists():
         return None
-    # `citaty.tekst_dzherela` віддає PDF у двох виглядах одразу:
+    # `layer3.tekst_dzherela` віддає PDF у двох виглядах одразу:
     # порядок читання плюс рядки таблиць, відновлені за координатами
     # слів. Мій колишній `pdftotext -layout` на двоколонковій сторінці
     # вставляв текст сусідньої колонки посеред речення — і чесна
     # цитата падала. Три записи цієї хвилі впали саме так.
-    t = citaty.tekst_dzherela(p)
+    t = layer3.tekst_dzherela(p)
     if t is None:
         return None
     _kesh_tekst[imya] = normal(t)

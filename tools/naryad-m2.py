@@ -39,7 +39,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-import vybirka  # noqa: E402  — добір і читання реєстру беремо в М1
+import sample  # noqa: E402  — добір і читання реєстру беремо в М1
 
 KESH = ROOT / "dzherela-kesh"
 
@@ -206,7 +206,7 @@ def main() -> int:
     fayly = kesh_fayly()
     vsi = []
     for klas in ("C", "F"):
-        for o in vybirka.odynyci(klas):
+        for o in sample.odynyci(klas):
             o["klas"] = klas
             vsi.append(o)
 

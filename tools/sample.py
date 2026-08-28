@@ -37,9 +37,9 @@
 брехнею: похибка вибіркового середнього нічого не каже про вибірку,
 відібрану за досліджуваною ознакою.
 
-    tools/vybirka.py E 150          наряд на 150 одиниць класу E
-    tools/vybirka.py E 150 --nasinnya 7   інше насіння, явно назване
-    tools/vybirka.py --zvit <каталог>     звести вивантаження в міру
+    tools/sample.py E 150          наряд на 150 одиниць класу E
+    tools/sample.py E 150 --nasinnya 7   інше насіння, явно назване
+    tools/sample.py --zvit <каталог>     звести вивантаження в міру
 """
 from __future__ import annotations
 
@@ -54,7 +54,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import yaml
 
-import vyvantazh
+import helper_dumps
 
 ROOT = Path(__file__).resolve().parent.parent
 GRUPY = ("manual", "kartky", "dodatky", "inserts")
@@ -98,7 +98,7 @@ def odynyci(klas: str) -> list[dict]:
 
 ZAHOLOVOK = """# Наряд: випадкова вибірка класу `{klas}`
 
-**Генерується** `tools/vybirka.py`. Насіння **{nasinnya}**, з популяції
+**Генерується** `tools/sample.py`. Насіння **{nasinnya}**, з популяції
 **{vsyoho}** одиниць відібрано **{skilky}**.
 
 ## Що саме міряємо
@@ -143,7 +143,7 @@ ZAHOLOVOK = """# Наряд: випадкова вибірка класу `{klas
 # `sperechayetsya`. Саме він знаходить помилки в книзі.
 ZAHOLOVOK_F = """# Наряд: випадкова вибірка класу `{klas}` — ще не звірене
 
-**Генерується** `tools/vybirka.py`. Насіння **{nasinnya}**, з популяції
+**Генерується** `tools/sample.py`. Насіння **{nasinnya}**, з популяції
 **{vsyoho}** одиниць відібрано **{skilky}**.
 
 ## Що це за одиниці
@@ -262,10 +262,10 @@ def tretiy_shar_vybirky(zap: list[dict]) -> tuple[int, int]:
         + yaml.safe_dump(kand, allow_unicode=True, sort_keys=False),
         encoding="utf-8")
     try:
-        import citaty
+        import layer3
     except ImportError:
         return 0, len(kand)
-    naslidky, _ = citaty.perevirka(True, [KANDYDATY])
+    naslidky, _ = layer3.perevirka(True, [KANDYDATY])
     return (sum(1 for x in naslidky if x.get("stan") == "ok"), len(kand))
 
 
@@ -276,15 +276,15 @@ def zvesty(katalog: Path) -> int:
     # впали, давали найвищу частку «має референта». Тобто мовчазна
     # втрата зсувала саме те число, яке міряють, і зсувала вниз.
     #
-    # Звідси `tools/vyvantazh.py`: механічне лагодження того, що
+    # Звідси `tools/helper_dumps.py`: механічне лагодження того, що
     # написано, і поіменний перелік полагодженого.
-    zap, polagodzheni, bidy = vyvantazh.chytaty(katalog)
+    zap, polagodzheni, bidy = helper_dumps.chytaty(katalog)
     for z in zap:
         z["_hto"] = str(z.get("_fayl", "?")).split("-")[0]
 
     n = len(zap)
     if not n:
-        print("vybirka: вивантажень не знайдено")
+        print("sample: вивантажень не знайдено")
         return 1
 
     # Четвертий стан, якого в наряді не було окремим вердиктом: одиниця,
@@ -358,7 +358,7 @@ def zvesty(katalog: Path) -> int:
 
     r = [f"""# Міра класу `E`
 
-**Генерується** `tools/vybirka.py --zvit`. Наряд —
+**Генерується** `tools/sample.py --zvit`. Наряд —
 `factcheck/BRIEF-SAMPLE.md`, там же насіння добору.
 
 Питання: **яка частка класу `E` має зовнішній референт**, тобто
@@ -439,7 +439,7 @@ def zvesty(katalog: Path) -> int:
                  + ", ".join(f"`{b}`" for b in polagodzheni) + ".\n")
         r.append("Причина в брифінгу супровідника, не в помічниках: "
                  "формат вимагав писати двокрапку всередині значення. "
-                 "Див. `tools/vyvantazh.py`.\n")
+                 "Див. `tools/helper_dumps.py`.\n")
     if bidy:
         r.append("\nНе розібралися й пропущені: "
                  + ", ".join(f"`{b}`" for b in bidy) + ".\n")
@@ -455,7 +455,7 @@ def zvesty(katalog: Path) -> int:
         r.append(f"| `{z.get('odynycya','?')}` | {v} | {shcho[:140]} |")
 
     ZVIT.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"vybirka: вибірка {n}, має референта {maye_referenta} "
+    print(f"sample: вибірка {n}, має референта {maye_referenta} "
           f"({maye_referenta / n:.0%}, 95% {nyz:.0%}–{verh:.0%}) "
           f"→ {ZVIT.relative_to(ROOT)}")
     return 0
@@ -465,7 +465,7 @@ def main() -> int:
     if "--zvit" in sys.argv:
         i = sys.argv.index("--zvit")
         if i + 1 >= len(sys.argv):
-            print("vybirka: --zvit потребує каталогу вивантажень")
+            print("sample: --zvit потребує каталогу вивантажень")
             return 2
         return zvesty(Path(sys.argv[i + 1]))
     if len(sys.argv) < 3:
@@ -479,7 +479,7 @@ def main() -> int:
 
     vsi = odynyci(klas)
     if not vsi:
-        print(f"vybirka: одиниць класу {klas} не знайдено")
+        print(f"sample: одиниць класу {klas} не знайдено")
         return 1
     skilky = min(skilky, len(vsi))
     vybir = random.Random(nasinnya).sample(vsi, skilky)
@@ -502,7 +502,7 @@ def main() -> int:
         r.append(f"**`{z['id']}`** · `{z['src']}`\n")
         r.append(f"> {z['tekst']}\n")
     CIL.write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"vybirka: клас {klas}, популяція {len(vsi)}, вибірка {skilky}, "
+    print(f"sample: клас {klas}, популяція {len(vsi)}, вибірка {skilky}, "
           f"насіння {nasinnya} → {CIL.relative_to(ROOT)}")
     return 0
 

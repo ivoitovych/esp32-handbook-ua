@@ -156,9 +156,9 @@ def z_naryadu() -> list[str]:
 
 
 def zvesty(katalog: Path) -> int:
-    import vyvantazh
+    import helper_dumps
 
-    zap, polagodzheni, zlamani = vyvantazh.chytaty(katalog)
+    zap, polagodzheni, zlamani = helper_dumps.chytaty(katalog)
 
     # Ключ — назва запису доказу. Помічники пишуть `zapys` і `nazva`;
     # звіряємо за назвою, бо саме вона стоїть у наряді.
@@ -261,16 +261,16 @@ def zvesty(katalog: Path) -> int:
 
 
 def main() -> int:
-    import citaty
+    import layer3
 
-    naslidky, _ = citaty.perevirka(False)
+    naslidky, _ = layer3.perevirka(False)
     bidy = [n for n in naslidky if n.get("stan") == "ne_znaydeno"]
 
     vidpovidzheni: set[str] = set()
     if "--krim" in sys.argv:
-        import vyvantazh
+        import helper_dumps
         katalog = Path(sys.argv[sys.argv.index("--krim") + 1])
-        zap, _, _ = vyvantazh.chytaty(katalog)
+        zap, _, _ = helper_dumps.chytaty(katalog)
         vidpovidzheni = {str(z.get("title", "")).strip() for z in zap}
         bidy = [n for n in bidy
                 if str(n.get("nazva", "")).strip() not in vidpovidzheni]

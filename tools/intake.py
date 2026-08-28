@@ -97,8 +97,8 @@ POKAZHCHYK = re.compile(r'покажчик|індекс|z-pokazhchyk|у інде
 def teksty_odynyc():
     """Тексти одиниць реєстру — потрібні лише для перевірки на течу."""
     try:
-        import vybirka
-        return [o['tekst'] for k in 'ABCDEFG' for o in vybirka.odynyci(k)]
+        import sample
+        return [o['tekst'] for k in 'ABCDEFG' for o in sample.odynyci(k)]
     except Exception:
         return None
 

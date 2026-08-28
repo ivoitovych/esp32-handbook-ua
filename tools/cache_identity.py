@@ -38,7 +38,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
-import citaty  # noqa: E402
+import layer3  # noqa: E402
 
 
 def varianty(imya: str) -> set[str]:
@@ -54,7 +54,7 @@ def main(argv: list[str]) -> int:
     vsyoho = 0
     for p in sorted(kesh.glob("*.pdf")):
         vsyoho += 1
-        t = (citaty.tekst_dzherela(p) or "").lower()
+        t = (layer3.tekst_dzherela(p) or "").lower()
         if not t:
             pidozr.append((p.name, "не читається"))
             continue
