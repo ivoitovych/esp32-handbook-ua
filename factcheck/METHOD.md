@@ -72,6 +72,20 @@ by number.
 
 ## 2. Evidence classes
 
+> **Authority: `SCHEMA.md`, section "Класи доказу".** If this list and
+> that one disagree, that one is right and this one is stale.
+>
+> Two copies exist on purpose and only until one thing changes: this
+> file is the English one that travels to another book, and `SCHEMA.md`
+> is still in Ukrainian. When `SCHEMA.md` is translated, **this section
+> becomes a pointer and the copy goes away.**
+>
+> Saying which copy wins is not bureaucracy. Three copies of this
+> vocabulary existed on 2026-08-28 and all three had drifted apart; the
+> two newest classes were missing from both non-authoritative ones. A
+> copy with no declared owner is repaired wherever it is read, which is
+> never everywhere.
+
     A  primary verbatim    — source obtained, line quoted
     B  primary derived     — source obtained, conclusion unambiguous
     D  arithmetic          — checked by calculation
