@@ -77,7 +77,7 @@ def zibraty() -> tuple[list[dict], dict[str, list[str]]]:
     import factcheck
     import vybirka
 
-    odyn = [u for k in "ABCDEFGK" for u in vybirka.odynyci(k)]
+    odyn = [u for k in factcheck.USI_KLASY for u in vybirka.odynyci(k)]
     zapysy: list[dict] = []
     for f in sorted(DOKAZY.glob("*.yaml")):
         try:

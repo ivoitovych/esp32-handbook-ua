@@ -172,7 +172,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH`
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH` (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > VDD3P3_CPU
   > High-level source current                                          —    40                    —     mA
@@ -215,7 +215,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH`
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-3 «DC Characteristics (3.3 V, 25 °C)», параметр `IOH` (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > VDD3P3_CPU
   > High-level source current                                          —    40                    —     mA
@@ -2561,7 +2561,7 @@ datasheet.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet v5.3, Table 5-1 «Absolute Maximum Ratings», с. 51 (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Stresses above those listed in Table 5-1 Absolute Maximum Ratings may cause permanent damage to the
   > device.

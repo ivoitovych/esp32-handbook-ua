@@ -960,7 +960,7 @@ FSK, і воно теж корисне, але для інших задач і �
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділи 3.3 «FSK Modulation» та «Key Product Features»
+- **Джерело:** RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділи 3.3 «FSK Modulation» та «Key Product Features» (кеш: dzherela-kesh/rfm69hcw.pdf)
 - **Дослівно з джерела:**
   > 3.3.3. FSK Modulation
   > FSK modulation is performed inside the PLL bandwidth, by changing the

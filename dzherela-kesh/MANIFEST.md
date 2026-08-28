@@ -33,12 +33,8 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `1dd53172-soc_caps.h` | `1d31454517c713269ec916430ef82aad863a91115fc43b5692c91b7a4c2479ed` | 34532 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32c6/include/soc/soc_caps.h> |
 | `1e1e44c3-README.md` | `92a07e6e69c4cb678b63770eaab18b0d3d54ca07162e4449dd7251df14420f3d` | 20652 | 2026-08-28 | <https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md> |
 | `1f129a7b-Kconfig.projbuild` | `0f0d15a7eb1ff55c99bb77481fdd4ece802676092b0cb1f274e62a6783396d13` | 9191 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/partition_table/Kconfig.projbuild> |
-| `20-bekap.md` | `eb97efa99cc66e56c5bb1387c5a94367fb410d7c7212ee282f681eca54968a0e` | 12411 | 2026-08-27 | <https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/20-bekap.md> |
-| `21-seriyna.md` | `a0797835bda1ee558455e6ab0bbca9aedae9c480c00afe948befd0b5057e214d` | 12483 | 2026-08-27 | <https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/21-seriyna.md> |
 | `21953a2f-esp32_datasheet_en.pdf` | `a7917e6b47528c9dcab06837a49d452e582751335797db879f1cf2d17cd29adf` | 989523 | 2026-08-28 | <https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf> |
-| `22-zberezhennya-stanu.md` | `4944762be4187edaeddbf2befd902ae6c1b41dd1d92c41cd85f72eb201c8c94d` | 9624 | 2026-08-27 | <https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/22-zberezhennya-stanu.md> |
 | `2217d639-basic-commands.rst` | `0af8a5628c9316c48aba1bf96458e80fa46bce8745d73e45b54eca9704762b72` | 27817 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst> |
-| `23-triazh.md` | `ce0a35ad537a910076218abf4bc32d27e155c22e4ae0cfed7b546d5ba7d70de1` | 12120 | 2026-08-27 | <https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/main/manual/23-triazh.md> |
 | `256af465-i2c_master.c` | `96113c1156050af98d6bd5faf6b3f7b9c88d8c74c8ef46643d7827591ade98e7` | 69443 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/esp_driver_i2c/i2c_master.c> |
 | `2573a2bf-index.rst` | `2d85ddc9a6c38282afe73f8552b2565918d3729201dc2588d7852f68b5e49343` | 12667 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/index.rst> |
 | `291d920e-export.sh` | `025b60ba6b80761e3a7049a4095a363f17f33f8902cc2695ad810cc73800caaa` | 1958 | 2026-08-28 | <https://raw.githubusercontent.com/espressif/esp-idf/master/export.sh> |
@@ -297,5 +293,5 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `vtc6.pdf` | `ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08` | 275509 | 2026-08-26 | <https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx> |
 | `wdts.rst` | `aab5499bba67e15e1327504328a9aa74ab88c82cb90f9c27d500d5b5d773c6af` | 16181 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst> |
 
-Файлів: **283**, разом **128.1 МБ** (межа 1.0 ГБ).
+Файлів: **277**, разом **128.1 МБ** (межа 1.0 ГБ).
 

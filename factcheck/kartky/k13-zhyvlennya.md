@@ -466,7 +466,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (мін. 3.0 В для чипів із флешем), плюс допуск LDO-стабілізатора (~±0.1–0.2 В).
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (мін. 3.0 В для чипів із флешем), плюс допуск LDO-стабілізатора (~±0.1–0.2 В)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
   > Parameter: VDDA, VDD3P3_RTC, VDD3P3, VDD_SDIO (3.3 V mode)
@@ -933,7 +933,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (IVDD мін. 0.5 А), Table 5-4 «Current Consumption Depending on RF Modes» (передача 240 мА максимум під 50% duty cycle).
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 «Recommended Power Supply Characteristics» (IVDD мін. 0.5 А), Table 5-4 «Current Consumption Depending on RF Modes» (передача 240 мА максимум під 50% duty cycle)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
   > Parameter: IVDD (Current delivered by external power supply)
@@ -1043,7 +1043,7 @@
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 (IVDD 0.5 А рекомендована) і Table 5-4 «Current Consumption Depending on RF Modes» (пік 240 мА).
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 5-2 (IVDD 0.5 А рекомендована) і Table 5-4 «Current Consumption Depending on RF Modes» (пік 240 мА)
 - **Дослівно з джерела:**
   > Table 5-2. Recommended Power Supply Characteristics
   > IVDD (Current delivered by external power supply)    Min: 0.5 A

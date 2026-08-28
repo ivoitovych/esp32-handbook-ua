@@ -50,7 +50,7 @@ STARI = {"nazva", "zbih", "klas", "dzherelo", "cytata", "sposib",
          "notatka", "shukaty", "rozrakhunok"}
 VIDOMI = OBOVYAZKOVI | STARI | {
     "sha", "source", "quote", "method", "note", "look_for", "calculation",
-    "perevireno-okom", "_prokhid"}
+    "looked_at", "perevireno-okom", "_prokhid"}
 
 # Що клас зобов'язаний мати. Ключ — і літера, і слово: переїзд не
 # скінчено, і перевірка мусить розуміти обидва записи.
@@ -59,6 +59,9 @@ POTREBUYE = {
     "B": ("source",), "derived": ("source",),
     "C": ("source",), "named-unreachable": ("source",),
     "D": ("calculation",), "arithmetic": ("calculation",),
+    # `looked_at` обов'язкове навмисно. Без нього стан повторив би долю
+    # `C`, який теж мав називати документ — і в шести записах не називав.
+    "L": ("looked_at",), "looked-not-found": ("looked_at",),
 }
 
 RE_KARTKA = re.compile(
@@ -158,6 +161,14 @@ def samoperevirka() -> int:
         ("старе ім'я замість нового", {"title": "т", "status": "verbatim",
                                        "match": "x", "dzherelo": "u",
                                        "cytata": "q"}, 0),
+        # Новий стан: `looked_at` обов'язкове — інакше він повторить
+        # долю `C`, який теж мав називати документ і не називав.
+        ("looked-not-found повний",
+         {"title": "т", "status": "looked-not-found", "match": "x",
+          "looked_at": "dzherela-kesh/xxx.pdf", "note": "чому шукали"}, 0),
+        ("looked-not-found без looked_at",
+         {"title": "т", "status": "looked-not-found", "match": "x",
+          "note": "чому шукали"}, 1),
     ]
     pomylok = 0
     for imya, r, ochik in vypadky:

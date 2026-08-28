@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema vidtvornist check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema vidtvornist bez-knyhy check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -98,6 +98,12 @@ kesh:
 vidtvornist:
 	@$(PY) tools/kesh.py --vidtvornist
 
+# Чи не потрапив файл книги в кеш джерел. Ворота, не звіт:
+# доказ, що доводить книгу книгою, проходить усі три шари, і
+# жодна інша перевірка його не бачить.
+bez-knyhy:
+	@$(PY) tools/kesh-bez-knyhy.py --tykho
+
 # Правопис: перелік невідомих слів. Звіт, не ворота — судити про
 # українську має людина, інструмент лише скорочує їй роботу.
 pravopys:
@@ -163,7 +169,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist bez-knyhy check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
@@ -176,10 +182,9 @@ arytmetyka:
 stale:
 	@python3 tools/factcheck.py stale
 
-# Схема запису доказу й контракт картки. Звіт, не ворота: чотирнадцять
-# порушень зараз чужі за походженням, і зупиняти на них випуск —
-# означало б зупиняти чужою роботою. Стане воротами, коли черга
-# спорожніє.
+# Схема запису доказу й контракт картки. Порушень зараз нуль — тож
+# лишилося зробити її воротами; поки звіт, бо шість записів М2 чекають
+# на переведення в `looked-not-found`, і після нього це стане ворітьми.
 skhema:
 	@python3 tools/skhema.py
 

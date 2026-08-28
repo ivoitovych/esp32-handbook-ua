@@ -499,7 +499,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с. 30
+- **Джерело:** ESP32 Series Datasheet v5.3, Table 4-2 «Power Consumption by Power Modes», с. 30 (кеш: dzherela-kesh/esp32_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Table 4-2. Power Consumption by Power Modes
   > Power mode          Description                      Power Consumption

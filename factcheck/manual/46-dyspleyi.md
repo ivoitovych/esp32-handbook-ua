@@ -511,7 +511,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver, Version 1.3, розділ 2 «Features»
+- **Джерело:** Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver, Version 1.3, розділ 2 «Features» (кеш: dzherela-kesh/st7789.pdf)
 - **Дослівно з джерела:**
   > 2 FEATURES
   > ...
@@ -674,7 +674,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color, Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface»
+- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color, Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: dzherela-kesh/ili9341.pdf)
 - **Дослівно з джерела:**
   > ILI9341
   > a-Si TFT LCD Single Chip Driver

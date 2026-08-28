@@ -21,7 +21,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Seven of the fifteen kinds below are one family. The check runs, it
+Eight of the seventeen kinds below are one family. The check runs, it
 returns zero, and the zero means nothing — because it was never
 measuring the thing its name claims.
 
@@ -289,6 +289,52 @@ while asserting nothing.
 **Held by.** Nothing yet — the missing state is an open schema
 question. The symptom is caught only because two gates disagree, which
 is luck, not design.
+
+## 16. The book smuggled into the source cache
+
+**Symptom.** A file of the book itself sits in the cache of external
+sources. Evidence then proves the book with the book — and **passes all
+three layers at once**: the source is a cache file (gate satisfied), the
+quote is verbatim in it (layer 3 satisfied), the pattern binds a claim
+(layer 1 satisfied).
+
+**Case.** Seven book files, byte for byte, placed by the wave of 27
+August — the first in which assistants were allowed to fetch sources
+themselves. One "downloaded" a chapter of the book. Records relying on
+them: **zero**; the mine never went off.
+
+Found by M2. The first check compared file contents in the cache
+directory — and after the files were deleted it reported clean while
+**four manifest rows still named the book as a source**. The manifest is
+the only part of the cache that reaches git and third parties; the files
+never travel at all.
+
+> Kind 3 in its own right: the counter was measuring the artefact that
+> does not travel, and staying silent about the one that does.
+
+**Held by.** `tools/kesh-bez-knyhy.py` — by sha256 of contents (a copy
+under another name is still found) **and** by the manifest's URLs.
+
+## 17. A machine pointer that is worse than prose
+
+**Symptom.** A source named only in prose is upgraded to a filename or
+URL by **name similarity**. The record now looks machine-checkable and
+points at the wrong document.
+
+**Case.** Aliases resolved 172 of 201 prose sources. Line-by-line
+verification: 41 matched fully, 61 partly, **73 by no line at all** —
+SSD1306 pointed at a driver instead of the datasheet; "18650 capacity"
+at `ncr18650b` while the quote came from `samsung25r`; MAX6675 at the
+datasheet while the quote came from an Adafruit library. 137 were rolled
+back.
+
+> A false machine pointer is worse than prose. Prose says honestly "a
+> human will work it out"; a pointer promises verifiability and lies.
+
+**Held by.** The rule M2 drew from it: **a source may be resolved only
+by checking that the quote is actually there, never by name
+similarity.** Same law as naming the document, approached from the
+other end.
 
 ---
 

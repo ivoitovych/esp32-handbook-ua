@@ -974,7 +974,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features» — «Peripheral Features» і «Special Microcontroller Features»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), вступ і розділ «Features» — «Peripheral Features» і «Special Microcontroller Features» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > The ATmega48A/PA/88A/PA/168A/PA/328/P provides the following features: 4K/8Kbytes of In-System
   > Programmable Flash with Read-While-Write capabilities, 256/512/512/1Kbytes EEPROM, 512/1K/1K/2Kbytes
@@ -1102,7 +1102,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.2 «Interfaces»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.2 «Interfaces» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.2    Interfaces
   >       • 802.11 b/g/n/ac Wireless LAN
@@ -1202,7 +1202,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 20-7 «Examples of UBRRn Settings for Commonly Used Oscillator Frequencies» і розділ 29.3 «Speed Grades» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > Table 20-7.         Examples of UBRRn Settings for Commonly Used Oscillator Frequencies (Continued)
   >                           fosc = 16.0000MHz                      fosc = 18.4320MHz                      fosc = 20.0000MHz
@@ -1357,7 +1357,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.1 «Hardware»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.1 «Hardware» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.1    Hardware
   >       • Quad core 64-bit ARM-Cortex A72 running at 1.5GHz
@@ -1438,7 +1438,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features» → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ «Features» → «High Endurance Non-volatile Memory Segments» і розділ 8.3 «SRAM Data Memory» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > High Endurance Non-volatile Memory Segments
   >             ̶               4/8/16/32KBytes of In-System Self-Programmable Flash program memory
@@ -1568,7 +1568,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 1 «Introduction»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 1 «Introduction» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
 - **Спосіб і дата:** PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
@@ -1636,7 +1636,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ «Features» → «Special Microcontroller Features»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), «Introduction» і розділ «Features» → «Special Microcontroller Features» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > The ATmega48A/PA/88A/PA/168A/PA/328/P is a low power, CMOS 8-bit microcontrollers based on the
   > AVR® enhanced RISC architecture.
@@ -1766,7 +1766,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.3 «Software»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ 2.3 «Software» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 2.3    Software
   >       • ARMv8 Instruction Set
@@ -1852,7 +1852,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up Times for the Full Swing Crystal Oscillator Clock Selection»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), Table 9-6 «Start-up Times for the Full Swing Crystal Oscillator Clock Selection» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > Table 9-6.        Start-up Times for the Full Swing Crystal Oscillator Clock Selection
   >                                    Start-up Time from          Additional Delay
@@ -2193,7 +2193,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»; Raspberry Pi 5 Product Brief, розділ «Specification»
+- **Джерело:** Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»; Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: dzherela-kesh/rpi4-datasheet.pdf)
 - **Дослівно з джерела:**
   > 4.1     Power Requirements
   > The Pi4B requires a good quality USB-C power supply capable of delivering 5V at 3A. If attached
@@ -2275,7 +2275,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt Response Time»
+- **Джерело:** Microchip, ATmega48A/PA/88A/PA/168A/PA/328/P Data Sheet (DS40002061B), розділ 7.7.1 «Interrupt Response Time» (кеш: dzherela-kesh/atmega328p.pdf)
 - **Дослівно з джерела:**
   > 7.7.1   Interrupt Response Time
   >         The interrupt execution response for all the enabled AVR interrupts is four clock cycles minimum. After four
