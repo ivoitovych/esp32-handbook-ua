@@ -27,7 +27,7 @@
 Тому наряд бере лише ті сліди, у яких названо репозиторій, досяжний
 звідси. Решта лишається в звіті як борг із чесною причиною.
 
-    tools/leady.py <каталог> [<каталог>…]   зібрати factcheck/NARYAD-leady.md
+    tools/leady.py <каталог> [<каталог>…]   зібрати factcheck/BRIEF-LEADS.md
 """
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
-CIL = ROOT / "factcheck" / "NARYAD-leady.md"
+CIL = ROOT / "factcheck" / "BRIEF-LEADS.md"
 NA_PAKET = 6
 
 # Що досяжне з цієї мережі. Перелік навмисно з назв репозиторіїв, а не
@@ -106,7 +106,7 @@ ZAHOLOVOK = """# Наряд: сліди класу `E`, які можна від
 """
 
 
-ZVIT = ROOT / "factcheck" / "SLIDY.md"
+ZVIT = ROOT / "factcheck" / "TRACES.md"
 KANDYDATY = ROOT / "factcheck" / "leady-kandydaty.yaml"
 
 PIDPYSY_V = {
@@ -156,7 +156,7 @@ def zvesty(katalogy: list[str]) -> int:
     r = [f"""# Відпрацьовані сліди класу `E`
 
 **Генерується** `tools/leady.py --zvit`. Наряд —
-`factcheck/NARYAD-leady.md`.
+`factcheck/BRIEF-LEADS.md`.
 
 Слід (`ideya`) — це здогад попереднього помічника про те, де шукати.
 Тут — що з нього вийшло, коли по ньому справді пішли.

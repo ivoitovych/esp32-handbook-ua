@@ -21,7 +21,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Seven of the fourteen kinds below are one family. The check runs, it
+Seven of the fifteen kinds below are one family. The check runs, it
 returns zero, and the zero means nothing — because it was never
 measuring the thing its name claims.
 
@@ -259,6 +259,37 @@ The same shape fooled both maintainers twice in one week.
 **Held by.** `SCHEMA.md` states it beside the card format; `status`
 reports coverage separately.
 
+## 15. Closing a violation by changing the class
+
+**Symptom.** A record breaks a rule, and the fix moves it to a class
+where that rule does not apply — instead of supplying what the rule
+asked for. The first check goes quiet; a different one goes red, or
+nothing does.
+
+**Case.** Six records were class `named-unreachable` with no source
+named, which `skhema.py` flags (class `C` exists precisely to name the
+unreachable document). They were closed by changing the class to
+`unchecked` — which trips the older, stricter gate in `citaty.py`: an
+evidence record of class `F` asserts nothing at all, so it is not
+evidence.
+
+Both rules are right. The class was the wrong place to fix it.
+
+**What the case actually exposed.** Reading the notes, none of the six
+names a retrievable document — they say *"the source would have to be
+an Espressif document"*, *"the source ought to be the module's
+datasheet"*. That is not a named source, so `C` was never right either.
+And `F` is not right, because the record then claims to be evidence
+while asserting nothing.
+
+> The schema has **no state for "a maintainer looked and found no
+> source."** That is a real fact, worth keeping, and there is nowhere
+> to put it. Both wrong classes were attempts to store it somewhere.
+
+**Held by.** Nothing yet — the missing state is an open schema
+question. The symptom is caught only because two gates disagree, which
+is luck, not design.
+
 ---
 
 ## What has no automatic check
@@ -270,5 +301,7 @@ Stated plainly, because a catalogue that hides its gaps is kind 3.
   field. Found by reading, twice.
 - **Kind 12** — nothing can tell whether a file was opened before it
   was classified.
+- **Kind 15** — caught only because two gates happened to disagree.
+  The missing state it exposed is still missing.
 - **Layer 2 entirely** — whether a quote actually *supports* a claim is
   human work and always will be.

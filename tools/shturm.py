@@ -42,7 +42,7 @@
 разом із ним. Тому зламані файли **називаються поіменно й
 пропускаються**, а не валять прогін.
 
-    tools/shturm.py <каталог>            зібрати factcheck/SHTURM-E.md
+    tools/shturm.py <каталог>            зібрати factcheck/SWEEP-NO-SIGNAL.md
     tools/shturm.py <каталог> --korotko  лише числа
 """
 from __future__ import annotations
@@ -55,7 +55,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-CIL = ROOT / "factcheck" / "SHTURM-E.md"
+CIL = ROOT / "factcheck" / "SWEEP-NO-SIGNAL.md"
 
 # Кандидати на перевірку третім шаром. Не реєстр і не докази: сюди
 # лягають самі лише `znayshov`, переведені у форму запису доказу, щоб
