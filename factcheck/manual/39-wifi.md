@@ -1725,7 +1725,7 @@ provisioning:
 
 ---
 
-<!-- fc id:T-39-058 sha:c32014fa src:manual/39-wifi.md:150 klas:A -->
+<!-- fc id:T-39-058 sha:c32014fa src:manual/39-wifi.md:150 klas:E -->
 ### T-39-058 · proza · `manual/39-wifi.md`
 
 **Твердження, коротко**
@@ -1744,15 +1744,7 @@ provisioning:
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 

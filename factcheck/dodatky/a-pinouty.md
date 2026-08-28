@@ -132,7 +132,7 @@
 
 ---
 
-<!-- fc id:T-A-005 sha:388a34df src:dodatky/a-pinouty.md:15 klas:A -->
+<!-- fc id:T-A-005 sha:388a34df src:dodatky/a-pinouty.md:15 klas:F -->
 ### T-A-005 · tablycya-shapka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -171,15 +171,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -297,7 +289,7 @@
 
 ---
 
-<!-- fc id:T-A-008 sha:092e56b9 src:dodatky/a-pinouty.md:16 klas:A -->
+<!-- fc id:T-A-008 sha:092e56b9 src:dodatky/a-pinouty.md:16 klas:E -->
 ### T-A-008 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -342,15 +334,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -617,7 +601,7 @@
 
 ---
 
-<!-- fc id:T-A-014 sha:9b9041b5 src:dodatky/a-pinouty.md:18 klas:A -->
+<!-- fc id:T-A-014 sha:9b9041b5 src:dodatky/a-pinouty.md:18 klas:E -->
 ### T-A-014 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -662,15 +646,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -882,7 +858,7 @@
 
 ---
 
-<!-- fc id:T-A-019 sha:05bb8e87 src:dodatky/a-pinouty.md:20 klas:A -->
+<!-- fc id:T-A-019 sha:05bb8e87 src:dodatky/a-pinouty.md:20 klas:E -->
 ### T-A-019 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -927,15 +903,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -1312,7 +1280,7 @@
 
 ---
 
-<!-- fc id:T-A-027 sha:3ec06bb0 src:dodatky/a-pinouty.md:23 klas:A -->
+<!-- fc id:T-A-027 sha:3ec06bb0 src:dodatky/a-pinouty.md:23 klas:E -->
 ### T-A-027 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1357,15 +1325,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -1516,7 +1476,7 @@
 
 ---
 
-<!-- fc id:T-A-031 sha:fdd88742 src:dodatky/a-pinouty.md:24 klas:A -->
+<!-- fc id:T-A-031 sha:fdd88742 src:dodatky/a-pinouty.md:24 klas:E -->
 ### T-A-031 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1561,15 +1521,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -1720,7 +1672,7 @@
 
 ---
 
-<!-- fc id:T-A-035 sha:590ac959 src:dodatky/a-pinouty.md:25 klas:A -->
+<!-- fc id:T-A-035 sha:590ac959 src:dodatky/a-pinouty.md:25 klas:E -->
 ### T-A-035 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1765,15 +1717,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -1932,7 +1876,7 @@
 
 ---
 
-<!-- fc id:T-A-039 sha:edc7c97b src:dodatky/a-pinouty.md:26 klas:A -->
+<!-- fc id:T-A-039 sha:edc7c97b src:dodatky/a-pinouty.md:26 klas:E -->
 ### T-A-039 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -1977,15 +1921,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -2543,7 +2479,7 @@
 
 ---
 
-<!-- fc id:T-A-050 sha:60266760 src:dodatky/a-pinouty.md:33 klas:A -->
+<!-- fc id:T-A-050 sha:60266760 src:dodatky/a-pinouty.md:33 klas:E -->
 ### T-A-050 · komirka · `dodatky/a-pinouty.md`
 
 **Твердження, коротко**
@@ -2588,15 +2524,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -2711,14 +2639,22 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s3,esp32c3}/include/soc/adc_channel.h та .../esp32/include/soc/touch_sensor_channel.h
 - **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+  > (esp32/adc_channel.h)
+  > ADC1: CH0→36 CH1→37 CH2→38 CH3→39 CH4→32 CH5→33 CH6→34 CH7→35
+  > ADC2: CH0→4 CH1→0 CH2→2 CH3→15 CH4→13 CH5→12 CH6→14 CH7→27 CH8→25 CH9→26
+  > 
+  > (esp32/touch_sensor_channel.h)
+  > T0→4 T1→0 T2→2 T3→15 T4→13 T5→12 T6→14 T7→27 T8→33 T9→32
+  > 
+  > (esp32s3) ADC1: 1…10   ADC2: 11…20
+  > (esp32c3) ADC1: 0…4    ADC2: 5
+- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
+- **Нотатка:** Нуль розбіжностей у найдрібнішому місці книги. Звірено **кожну** комірку таблиці classic: усі десять номерів каналів ADC2, усі вісім ADC1, усі десять сенсорів touch.
+Окремо звернімо увагу на рядок `32, 33 | ADC1_4/5 | T9/T8`: тут порядок навмисно різний, бо `GPIO32` — це `T9`, а `GPIO33` — `T8`. Легко було б поставити «T8/T9» і помилитися; у книзі стоїть правильно.
+Списки «ADC1 працює завжди: 32–39» і «ADC2 не працює при Wi-Fi: 0, 2, 4, 12–15, 25–27» збігаються з заголовком повністю.
+- **Прохід:** pass-12-piny
 
 ---
 

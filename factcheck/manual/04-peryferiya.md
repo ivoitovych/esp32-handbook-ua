@@ -1763,7 +1763,7 @@
 
 ---
 
-<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:77 klas:A -->
+<!-- fc id:T-04-052 sha:ae400fb3 src:manual/04-peryferiya.md:77 klas:E -->
 ### T-04-052 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1792,19 +1792,11 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:77 klas:A -->
+<!-- fc id:T-04-053 sha:401ee8a6 src:manual/04-peryferiya.md:77 klas:E -->
 ### T-04-053 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -1833,15 +1825,7 @@
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -3901,7 +3885,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:121 klas:A -->
+<!-- fc id:T-04-110 sha:1cef09c9 src:manual/04-peryferiya.md:121 klas:E -->
 ### T-04-110 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3930,19 +3914,11 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-04-111 sha:ca68ac49 src:manual/04-peryferiya.md:121 klas:A -->
+<!-- fc id:T-04-111 sha:ca68ac49 src:manual/04-peryferiya.md:121 klas:F -->
 ### T-04-111 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -3971,19 +3947,11 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-04-112 sha:affdc5f0 src:manual/04-peryferiya.md:121 klas:A -->
+<!-- fc id:T-04-112 sha:affdc5f0 src:manual/04-peryferiya.md:121 klas:F -->
 ### T-04-112 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4012,19 +3980,11 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-04-113 sha:45a998a0 src:manual/04-peryferiya.md:121 klas:A -->
+<!-- fc id:T-04-113 sha:45a998a0 src:manual/04-peryferiya.md:121 klas:F -->
 ### T-04-113 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4053,19 +4013,11 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-04-114 sha:fe58cacf src:manual/04-peryferiya.md:121 klas:A -->
+<!-- fc id:T-04-114 sha:fe58cacf src:manual/04-peryferiya.md:121 klas:F -->
 ### T-04-114 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4094,19 +4046,11 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
-<!-- fc id:T-04-115 sha:86b8a81d src:manual/04-peryferiya.md:121 klas:A -->
+<!-- fc id:T-04-115 sha:86b8a81d src:manual/04-peryferiya.md:121 klas:F -->
 ### T-04-115 · komirka · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4135,15 +4079,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -4500,7 +4436,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-126 sha:4bde7510 src:manual/04-peryferiya.md:133 klas:D -->
+<!-- fc id:T-04-126 sha:4bde7510 src:manual/04-peryferiya.md:133 klas:E -->
 ### T-04-126 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4521,23 +4457,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Клас:** 🔵 D — обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне
-- **Джерело:** Розрахунок на основі Table 5-3 DC Characteristics. При 10 світлодіодах по 10 мА = 100 мА > 40 мА максимум домену
-- **Дослівно з джерела:**
-  > 10 світлодіодів × 10 мА = 100 мА
-  > 
-  > Сумарно це далеко від 1200 мА (менше 1/10), але:
-  > - Якщо всі 10 на одному домені (VDD3P3_CPU): 100 мА > 40 мА максимум
-  > - Домен просядає, вихід стає нестійким
-  > 
-  > Table 5-3: IOH ... VDD3P3_CPU ... 40 mA (Typ), але зменшується до
-  > 29 мА при підвищенні кількості активних пінів
-- **Розрахунок:**
-  P = U × I (базова формула)
-  Струм 10 мА на світлодіод × 10 = 100 мА
-  100 мА > 40 мА (максимум домену) = перевищення
-- **Спосіб і дата:** Розрахунок на основі ESP32 Datasheet Table 5-3, 2026-08-26
-- **Прохід:** m2-65-elektronika-05
+- **Клас:** F — не звірено
 
 ---
 
@@ -4653,14 +4573,14 @@ PWM теж можна, але саме ці функції рятують сил
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32s3/include/soc/soc_caps.h
 - **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+  > #define SOC_TOUCH_SENSOR_NUM                        (15) /*!< 15 Touch channels */
+  > #define SOC_TOUCH_MIN_CHAN_ID                       (1U)  /*!< Touch minimum channel number, (0 is internal denoise channel) */
+  > #define SOC_TOUCH_MAX_CHAN_ID                       (14) /*!< Touch maximum channel number */
+- **Спосіб і дата:** curl raw.githubusercontent (esp32s2 і esp32s3), 2026-08-26
+- **Нотатка:** Канали 1…14 — саме чотирнадцять. Число 14 у книзі було правильним із попередньої сесії, але без причини; тепер причина процитована дослівно. Для classic ті самі константи дають 0…9, тобто десять.
+- **Прохід:** pass-01-tverde-yadro
 
 ---
 
@@ -4736,7 +4656,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 ---
 
-<!-- fc id:T-04-134 sha:0885291c src:manual/04-peryferiya.md:153 klas:A -->
+<!-- fc id:T-04-134 sha:0885291c src:manual/04-peryferiya.md:153 klas:F -->
 ### T-04-134 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -4755,15 +4675,7 @@ PWM теж можна, але саме ці функції рятують сил
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
-- **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
-- **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
-- **Прохід:** m2-63-gpio-07
+- **Клас:** F — не звірено
 
 ---
 
@@ -5159,7 +5071,7 @@ DAC — тільки classic і S2. Touch — тільки classic, S2, S3.
 
 ---
 
-<!-- fc id:T-04-151 sha:aea8bc68 src:manual/04-peryferiya.md:202 klas:A -->
+<!-- fc id:T-04-151 sha:aea8bc68 src:manual/04-peryferiya.md:202 klas:B -->
 ### T-04-151 · proza · `manual/04-peryferiya.md`
 
 **Твердження, коротко**
@@ -5176,14 +5088,16 @@ DAC — тільки classic і S2. Touch — тільки classic, S2, S3.
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
-  > ESP32: 10 touch sensor GPIOs
-  > ESP32-S2: 13 touch sensor GPIOs
-  > ESP32-S3: 14 touch sensor GPIOs
-  > Not available on C3, C6
+  > 10 touch sensors
+- **Спосіб і дата:** Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2 «14 touch sensing GPIOs» (dzherela-kesh/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох документів разом.
 - **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
+2026-08-28. Було двоє негараздів, обидва мовчазні.
+ПЕРШЕ: клас стояв verbatim, а джерелом була проза без URL («ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section»). Шар 3 такий запис перевірити не міг.
+ДРУГЕ, гірше: цитата казала «ESP32-S2: 13 touch sensor GPIOs». Даташит каже **14**, і книга каже 14. Тобто клас A тримався на числі, якого в жодному документі немає.
+ТРЕТЄ: взірець чіпляв 24 одиниці через голе слово Touch — усе, де воно трапилося. Звужено до двох одиниць, які твердження справді містять.
 - **Прохід:** m2-63-gpio-07
 
 ---
