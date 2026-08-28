@@ -87,6 +87,44 @@ SHAPKA_RAMKA = """# Наряд {n}: {tema} — {k} одиниць
 SHAPKA_BLOKY = ['ORIENTATION', 'VERBATIM', 'HONEST-MISS', 'NETWORK', 'STUB', 'NO-SELF-REFERENCE', 'VERDICTS-EXTERNAL', 'ABSENCE', 'FORMAT']
 
 
+RE_KONTEKST = re.compile(
+    r"<!-- fc id:(?P<id>\S+) sha:\S+ src:\S+ klas:\S+ -->\n"
+    r"### [^\n]*\n\n\*\*[^*\n]+\*\*\n\n(?P<tverd>(?:> [^\n]*\n)+)"
+    r"(?:.*?\*\*Контекст\*\*\n\n(?P<og>`{3,})\n(?P<kontekst>.*?)\n(?P=og)\n)?",
+    re.S)
+
+def konteksty() -> dict[str, str]:
+    """`id` одиниці → її оточення в книзі, з уже зрендерених карток.
+
+    Береться з карток, а не з книги, навмисно: там контекст уже
+    обмежено й перевірено шаром 1. Другий видобувач розійшовся б із
+    першим, і картка обіцяла б оточення, якого ніхто не звіряв.
+    """
+    out: dict[str, str] = {}
+    for grupa in ("manual", "dodatky", "kartky", "inserts"):
+        for f in sorted((ROOT / "factcheck" / grupa).glob("*.md")):
+            for m in RE_KONTEKST.finditer(f.read_text(encoding="utf-8")):
+                k = (m.group("kontekst") or "").strip()
+                if k:
+                    out[m.group("id")] = k
+    return out
+
+
+def versiya_naryadu(rich: bool = False) -> str:
+    """Відбиток усього, що бачить виконавець — вісім знаків.
+
+    Механізм один зі спекою завдання, а не другий поруч: `rich`
+    додає блок `CARD-PLACE` і оточення картки, тобто **міняє те, що
+    виконавець бачить**, і мусить міняти версію. Наряд з оточенням і без
+    нього — це дві різні технології, і книга прогонів має розрізняти їх,
+    а не записувати різницю в шум (знахідка М2).
+    """
+    import task_spec
+    bloky = SHAPKA_BLOKY + (["CARD-PLACE"] if rich else [])
+    return task_spec.versiya(bloky, shablon=SHAPKA_RAMKA
+                             + ("\n+kontekst" if rich else ""))
+
+
 def shapka(**kw) -> str:
     """Наряд: рамка цієї партії плюс спільні блоки завдання.
 
@@ -103,15 +141,18 @@ def shapka(**kw) -> str:
 
 
 
-def vypadkova(a, vybirka) -> int:
+def vypadkova(a) -> int:
     """Випадкова вибірка з усієї черги `F`, з насінням і переліком."""
     import json
     import random
 
-    usi = sorted(vybirka.odynyci("F"), key=lambda u: u["id"])
+    import sample
+
+    usi = sorted(sample.odynyci("F"), key=lambda u: u["id"])
     vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
     (a.kudy / "vybirka.json").write_text(json.dumps(
-        {"nasinnya": a.nasinnya, "z_cherhy": len(usi),
+        {"order_version": versiya_naryadu(getattr(a, "rich", False)),
+         "nasinnya": a.nasinnya, "z_cherhy": len(usi),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -124,11 +165,24 @@ def vypadkova(a, vybirka) -> int:
                 "документа наперед не названо. Шукай сам — і якщо не "
                 "знайшов, `ne_znayshov` із адресою того, що відкривав, "
                 "це повноцінна відповідь.")
+        rich = getattr(a, "rich", False)
         r = [shapka(n=n, tema=f"випадкова вибірка (насіння {a.nasinnya})",
-                    k=len(ch), kandydat=kand)]
+                    k=len(ch), kandydat=kand),
+             f"\n<!-- order_version:{versiya_naryadu(rich)} "
+             f"rich:{int(rich)} -->\n"]
+        kont = konteksty() if rich else {}
         for u in ch:
             r.append(f"\n**`{u['id']}`**\n")
             r.append(f"> {u['tekst']}\n")
+            if rich:
+                # Оточення — з уже зрендерених карток, а не з книги
+                # вдруге: там воно обмежене й перевірене шаром 1.
+                k = kont.get(u["id"])
+                if k:
+                    r.append("\nОточення в книзі:\n")
+                    r.append("```\n" + k + "\n```\n")
+                import task_spec
+                r.append("\n" + task_spec.bloky()["CARD-PLACE"] + "\n")
         (a.kudy / f"f-{n:02d}.md").write_text("\n".join(r) + "\n",
                                               encoding="utf-8")
     print(f"нарядів {n}, одиниць {len(vzyato)} з {len(usi)} у черзі F; "
@@ -144,6 +198,9 @@ def main() -> int:
     p.add_argument("--na-naryad", type=int, default=10)
     p.add_argument("--vypadkovo", type=int, default=0,
                    help="взяти N одиниць випадково з усієї черги F")
+    p.add_argument("--rich-cards", action="store_true", dest="rich",
+                   help="кожна картка несе своє оточення в книзі й абзац "
+                        "про своє місце в потоці (М2)")
     p.add_argument("--nasinnya", type=int, default=0,
                    help="насіння; обов'язкове разом із --vypadkovo")
     a = p.parse_args()
@@ -152,7 +209,7 @@ def main() -> int:
     a.kudy.mkdir(parents=True, exist_ok=True)
 
     if a.vypadkovo:
-        return vypadkova(a, vybirka)
+        return vypadkova(a)
 
     za: dict[str, list[dict]] = collections.defaultdict(list)
     for u in sample.odynyci("F"):

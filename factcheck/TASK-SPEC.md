@@ -134,6 +134,15 @@ speaks.
 It is **not** `not_found`. `not_found` says you could not establish the
 claim; this says you established it, and the document's silence is how.
 
+## [CARD-PLACE] Printed on each card, so the reason is visible where the work is
+
+*Where this card sits in the job.* The book has been cut into claims;
+each one carries a state. This is one of the claims nobody has reached
+yet. Your answer becomes its state — and after you it is checked by
+machine: the quote is searched for **as a substring** in the document
+you named. That is why a retelling dies, and why an honest "did not
+find it" survives and saves the next person the same search.
+
 ## [FORMAT] How to answer
 
 ```yaml

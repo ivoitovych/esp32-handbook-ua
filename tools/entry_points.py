@@ -81,6 +81,21 @@ TOCHKY: list[list[str]] = [
     ["sweep_digest.py"], ["sweep.py"], ["leads.py"], ["measure_f.py"],
     ["contest_e.py"], ["sample.py"], ["helper_dumps.py"],
     ["deslang.py"], ["book_index.py"], ["bind_by_hash.py"],
+    # Інструменти, що ВИМАГАЮТЬ аргументів. Без них гарнес доходив лише
+    # до повідомлення про вжиток — і саме там пройшов `NameError` у
+    # `work_orders_f --vypadkovo`, бо модуль `sample` імпортувався в
+    # `main()`, а вживався в іншій функції.
+    #
+    # > Точка входу, покрита лише своїм повідомленням про вжиток,
+    # > покрита рівно настільки, наскільки її не запускали.
+    #
+    # `{TMP}` заміняється на тимчасовий каталог; ці точки нічого не
+    # пишуть у дерево.
+    ["work_orders_f.py", "{TMP}/wof", "--vypadkovo", "6",
+     "--nasinnya", "20260828"],
+    ["work_orders_f.py", "{TMP}/wofr", "--vypadkovo", "6",
+     "--nasinnya", "20260828", "--rich-cards"],
+    ["sample.py", "F", "6", "--nasinnya", "20260828"],
 ]
 
 # Цілі `make check` — щоб `--missing` могла сказати, чого вони не бачать.
@@ -104,10 +119,13 @@ def brudni() -> set[str]:
 
 
 def znyaty(kudy: pathlib.Path) -> int:
+    import tempfile
     kudy.mkdir(parents=True, exist_ok=True)
+    tmp = tempfile.mkdtemp(prefix="entry-points-")
     do = brudni()
     for t in TOCHKY:
-        r = subprocess.run([sys.executable, f"tools/{t[0]}", *t[1:]],
+        argv = [x.replace("{TMP}", tmp) for x in t[1:]]
+        r = subprocess.run([sys.executable, f"tools/{t[0]}", *argv],
                            cwd=ROOT, capture_output=True, text=True,
                            timeout=1800)
         (kudy / f"{imya(t)}.out").write_text(r.stdout, encoding="utf-8")
