@@ -3717,7 +3717,7 @@ USB — із заголовками можливостей ESP-IDF (`soc_caps.h`
 
 ---
 
-<!-- fc id:T-02-093 sha:258d0fa2 src:manual/02-chipy.md:104 klas:F -->
+<!-- fc id:T-02-093 sha:258d0fa2 src:manual/02-chipy.md:104 klas:B -->
 ### T-02-093 · proza · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3735,7 +3735,14 @@ ESP32, S2 і S3 побудовані на ядрах Xtensa; C3, C6, H2 і ре�
 
 **Доказ**
 
-- **Клас:** F — не звірено
+- **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
+- **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+- **Дослівно з джерела:**
+  > Xtensa
+- **Спосіб і дата:** Даташит узято з кешу 2026-08-28 і цитату звірено з ним підрядком (шар 3, `citaty.tekst_dzherela`).
+- **Нотатка:** 2026-08-28. Одиниця з передачі М1 (227 на даташитах). Було: клас F.
+ШІСТЬ чипів у твердженні. Xtensa: ESP32, S2 «(Xtensa® 32-bit LX7)», S3 «Xtensa® 32-bit LX7 dual-core». RISC-V: C3, C6 «RISC-V single-core microprocessor», H2 «RISC-V 32-bit single-core microprocessor». МЕЖА: «і решта нової лінійки» — узагальнення на чипи, паспортів яких тут немає; воно не звірене, і це сказано.
+- **Прохід:** m2-99-peryferiya-yadra
 
 ---
 
