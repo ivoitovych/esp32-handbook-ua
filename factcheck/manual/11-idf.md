@@ -2,7 +2,7 @@
 
 Одиниць твердження: **114**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -3104,7 +3104,7 @@ ESP-IDF: бібліотеки на конкретний датчик там мо
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/51b28bff-idf-monitor.rst
+- **Джерело:** source-cache/51b28bff-idf-monitor.rst
 - **Дослівно з джерела:**
   > Whenever the chip outputs a hexadecimal address that points to executable code, IDF monitor looks up the location in the source code
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

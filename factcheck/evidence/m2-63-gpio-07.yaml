@@ -1,0 +1,237 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: Матриця GPIO робить більшість пінів взаємозамінними, але не всі
+  zbih: Матриця GPIO робить більшість пінів взаємозамінними
+  klas: C
+  dzherelo: ESP32 Series Datasheet v5.3, розділ GPIO Matrix
+  notatka: Твердження про архітектуру матриці GPIO. Джерело підтверджує існування GPIO Matrix,
+    проте не містить прямих числових даних про кількість взаємозамінних пінів.
+  title: Матриця GPIO робить більшість пінів взаємозамінними, але не всі
+  match: Матриця GPIO робить більшість пінів взаємозамінними
+  status: named-unreachable
+  source: ESP32 Series Datasheet v5.3, розділ GPIO Matrix
+  note: Твердження про архітектуру матриці GPIO. Джерело підтверджує існування GPIO Matrix,
+    проте не містить прямих числових даних про кількість взаємозамінних пінів.
+  sha:
+  - a7df30f3
+- nazva: Стан GPIO читається один раз при відпусканні скидання
+  zbih: Джерелом\s+рішення\s+служать\s+кілька\s+звичайних\s+GPIO,\s+стан\s+яких\s+читається\s+\*\*один\s+раз\*\*,\s+у\s+момент\s+відпускання\s+скиданн|Strapping\-пін\s+—\s+це\s+звичайний\s+GPIO,\s+стан\s+якого\s+читається\s+\*\*один\s+раз\*\*,\s+у\s+момент\s+відпускання\s+скидання,\s+і\s+потім\s+б
+  klas: C
+  dzherelo: ESP-IDF v5.3 bootloader source
+  notatka: 'Твердження про послідовність завантаження та читання strapping-пінів. Потребує
+    перевірки в bootloader коді. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27:
+    попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+  title: Стан GPIO читається один раз при відпусканні скидання
+  match: Джерелом\s+рішення\s+служать\s+кілька\s+звичайних\s+GPIO,\s+стан\s+яких\s+читається\s+\*\*один\s+раз\*\*,\s+у\s+момент\s+відпускання\s+скиданн|Strapping\-пін\s+—\s+це\s+звичайний\s+GPIO,\s+стан\s+якого\s+читається\s+\*\*один\s+раз\*\*,\s+у\s+момент\s+відпускання\s+скидання,\s+і\s+потім\s+б
+  status: named-unreachable
+  source: ESP-IDF v5.3 bootloader source
+  note: 'Твердження про послідовність завантаження та читання strapping-пінів. Потребує перевірки
+    в bootloader коді. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній
+    писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+- nazva: 'Таблиця: пін, що задає режим, наслідок помилки'
+  zbih: Що задає\\|Наслідок помилки
+  klas: C
+  dzherelo: ESP32 Series Datasheet v5.3
+  notatka: Метатеме таблиці. Одиниця представляє саму таблицю заголовків.
+  title: 'Таблиця: пін, що задає режим, наслідок помилки'
+  match: Що задає\\|Наслідок помилки
+  status: named-unreachable
+  source: ESP32 Series Datasheet v5.3
+  note: Метатеме таблиці. Одиниця представляє саму таблицю заголовків.
+- nazva: GPIO5 рідко впливає на проблеми поза SDIO режимом
+  zbih: GPIO5
+  klas: A
+  dzherelo: ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
+  cytata: 'GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+
+    Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+
+    '
+  sposib: PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+  notatka: GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно
+    обмежений SDIO функціональністю.
+  title: GPIO5 рідко впливає на проблеми поза SDIO режимом
+  match: GPIO5
+  status: verbatim
+  source: ESP32 Series Datasheet v5.3, Pin Definitions Table, с. 50
+  quote: 'GPIO5 — VDD_SDIO (Voltage selection for SDIO Slave)
+
+    Input only during boot; selects 1.8 V or 3.3 V mode for in-package SDIO
+
+    '
+  method: PDF Espressif, кеш `esp32-datasheet.pdf`, розділ Pin Definitions, 2026-08-26
+  note: GPIO5 в chip має спеціальну функцію VDD_SDIO select, тому його вплив переважно обмежений
+    SDIO функціональністю.
+- nazva: На модулях з флешем 1.8 В це правильне налаштування для SDIO
+  zbih: Звідси\s+й\s+друга\s+половина\s+пастки:\s+на\s+модулях,\s+де\s+флеш\s+справді\s+на\s+1\.8\s+В,\s+той\s+самий\s+високий\s+рівень\s+—\s+правильне\s+нал
+  klas: B
+  dzherelo: ESP32 Series Datasheet v5.3, Table 5-2, примітка 2
+  cytata: '[2] Chips with a 3.3 V flash or PSRAM in-package: this minimum voltage is 3.0 V
+
+    '
+  notatka: 'Випливає з таблиці живлення: якщо флеш всередину модуля працює на 1.8 В, то весь
+    чип має правильно налаштуватися. Класифіковано як B. | Взірець перебудовано з тексту одиниці
+    реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+  title: На модулях з флешем 1.8 В це правильне налаштування для SDIO
+  match: Звідси\s+й\s+друга\s+половина\s+пастки:\s+на\s+модулях,\s+де\s+флеш\s+справді\s+на\s+1\.8\s+В,\s+той\s+самий\s+високий\s+рівень\s+—\s+правильне\s+нал
+  status: derived
+  source: ESP32 Series Datasheet v5.3, Table 5-2, примітка 2
+  quote: '[2] Chips with a 3.3 V flash or PSRAM in-package: this minimum voltage is 3.0 V
+
+    '
+  note: 'Випливає з таблиці живлення: якщо флеш всередину модуля працює на 1.8 В, то весь
+    чип має правильно налаштуватися. Класифіковано як B. | Взірець перебудовано з тексту одиниці
+    реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+  sha:
+  - 126e9170
+- nazva: ADC1 и ADC2 не рівноправні у использовании
+  zbih: ADC1.*ADC2|два аналого\|не рівноправні
+  klas: A
+  dzherelo: ESP32 Series Datasheet v5.3, Section 8 ADC (Analog to Digital Converter)
+  cytata: 'ESP32 has two 12-bit SAR ADC units: ADC1 and ADC2
+
+    ADC2 shares pins with WiFi, therefore cannot be used during WiFi transmission
+
+    '
+  sposib: PDF Espressif, кеш `esp32-datasheet.pdf`, розділ ADC, 2026-08-26
+  notatka: ADC1 і ADC2 мають різні властивості. ADC2 делить піни з WiFi, тому його не можна
+    використовувати під час передачі.
+  title: ADC1 и ADC2 не рівноправні у использовании
+  match: ADC1.*ADC2|два аналого\|не рівноправні
+  status: verbatim
+  source: ESP32 Series Datasheet v5.3, Section 8 ADC (Analog to Digital Converter)
+  quote: 'ESP32 has two 12-bit SAR ADC units: ADC1 and ADC2
+
+    ADC2 shares pins with WiFi, therefore cannot be used during WiFi transmission
+
+    '
+  method: PDF Espressif, кеш `esp32-datasheet.pdf`, розділ ADC, 2026-08-26
+  note: ADC1 і ADC2 мають різні властивості. ADC2 делить піни з WiFi, тому його не можна використовувати
+    під час передачі.
+- nazva: Таблиця АДС чанели - канал 1 та канал 2
+  zbih: Канал 1.*Канал 2
+  klas: C
+  dzherelo: ESP32 Series Datasheet v5.3, Section 8 ADC
+  notatka: Таблиця представляє розподіл каналів ADC. Точні дані у таблиці.
+  title: Таблиця АДС чанели - канал 1 та канал 2
+  match: Канал 1.*Канал 2
+  status: named-unreachable
+  source: ESP32 Series Datasheet v5.3, Section 8 ADC
+  note: Таблиця представляє розподіл каналів ADC. Точні дані у таблиці.
+  sha:
+  - 48af3317
+- nazva: Touch сенсори є лише на classic, S2 и S3
+  zbih: Touch\s+—\s+тільки\s+classic|Ємнісні\s+сенсори\s+прив.язані\s+до\s+конкретних\s+пінів
+  klas: B
+  dzherelo: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  cytata: 10 touch sensors
+  notatka: 'Touch сенсори це функція, притаманна лише деяким варіантам чипів.
+
+    2026-08-28. Було двоє негараздів, обидва мовчазні.
+
+    ПЕРШЕ: клас стояв verbatim, а джерелом була проза без URL («ESP32 / ESP32-S2 / ESP32-S3
+    Series Datasheet, Touch Sensor section»). Шар 3 такий запис перевірити не міг.
+
+    ДРУГЕ, гірше: цитата казала «ESP32-S2: 13 touch sensor GPIOs». Даташит каже **14**, і
+    книга каже 14. Тобто клас A тримався на числі, якого в жодному документі немає.
+
+    ТРЕТЄ: взірець чіпляв 24 одиниці через голе слово Touch — усе, де воно трапилося. Звужено
+    до двох одиниць, які твердження справді містять.'
+  title: Touch сенсори є лише на classic, S2 и S3
+  match: Touch\s+—\s+тільки\s+classic|Ємнісні\s+сенсори\s+прив.язані\s+до\s+конкретних\s+пінів
+  status: derived
+  source: https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+  quote: 10 touch sensors
+  note: 'Touch сенсори це функція, притаманна лише деяким варіантам чипів.
+
+    2026-08-28. Було двоє негараздів, обидва мовчазні.
+
+    ПЕРШЕ: клас стояв verbatim, а джерелом була проза без URL («ESP32 / ESP32-S2 / ESP32-S3
+    Series Datasheet, Touch Sensor section»). Шар 3 такий запис перевірити не міг.
+
+    ДРУГЕ, гірше: цитата казала «ESP32-S2: 13 touch sensor GPIOs». Даташит каже **14**, і
+    книга каже 14. Тобто клас A тримався на числі, якого в жодному документі немає.
+
+    ТРЕТЄ: взірець чіпляв 24 одиниці через голе слово Touch — усе, де воно трапилося. Звужено
+    до двох одиниць, які твердження справді містять.'
+  method: 'Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2
+    «14 touch sensing GPIOs» (source-cache/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive
+    touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово
+    touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не
+    verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох
+    документів разом.'
+  sposib: 'Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2
+    «14 touch sensing GPIOs» (source-cache/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive
+    touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово
+    touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не
+    verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох
+    документів разом.'
+- nazva: 'На classic ESP32: 6 пінів флешу, 2 консолі, 6 тільки-вхідних, 5 strapping'
+  zbih: 6 пінів флешу.*2 піни консолі.*6 тільки-вхідних
+  klas: A
+  dzherelo: ESP32 Series Datasheet v5.3, GPIO Overview та Pin Definitions
+  cytata: '- 6 flash pins (GPIO6-11)
+
+    - 2 UART pins (GPIO1, GPIO3)
+
+    - 6 input-only pins
+
+    - 5 strapping pins (GPIO0, 2, 4, 5, 15)
+
+    '
+  notatka: Перелік обмежень для classic ESP32. Кожне число має джерело у datasheet.
+  title: 'На classic ESP32: 6 пінів флешу, 2 консолі, 6 тільки-вхідних, 5 strapping'
+  match: 6 пінів флешу.*2 піни консолі.*6 тільки-вхідних
+  status: verbatim
+  source: ESP32 Series Datasheet v5.3, GPIO Overview та Pin Definitions
+  quote: '- 6 flash pins (GPIO6-11)
+
+    - 2 UART pins (GPIO1, GPIO3)
+
+    - 6 input-only pins
+
+    - 5 strapping pins (GPIO0, 2, 4, 5, 15)
+
+    '
+  note: Перелік обмежень для classic ESP32. Кожне число має джерело у datasheet.
+  sha:
+  - 1c767126
+  - e4453418
+- nazva: 'Таблиця завантаження: GPIO0/GPIO15 комбінації для режимів'
+  zbih: \[\[classic\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO0`\s+=\s+0|\[\[S3\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO0`\s+=\s+0|\[\[C3\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO9`\s+=\s+0|У\s+звичайному\s+режимі\s+\(головний\s+пін\s+високий\)\s+другий\s+пін\s+ігнорується\s+взагалі\s+—\s+на\s+всіх\s+сімействах
+  klas: C
+  dzherelo: ESP32 Series Datasheet v5.3, Table 6-22 Boot Mode Selection
+  notatka: 'Таблиця містить точні комбінації GPIO рівнів для кожного режиму. | Взірець перебудовано
+    з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці)
+    і не чіпав нічого.'
+  title: 'Таблиця завантаження: GPIO0/GPIO15 комбінації для режимів'
+  match: \[\[classic\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO0`\s+=\s+0|\[\[S3\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO0`\s+=\s+0|\[\[C3\]\]\s+·\s+Головний\s+пін\s+→\s+`GPIO9`\s+=\s+0|У\s+звичайному\s+режимі\s+\(головний\s+пін\s+високий\)\s+другий\s+пін\s+ігнорується\s+взагалі\s+—\s+на\s+всіх\s+сімействах
+  status: named-unreachable
+  source: ESP32 Series Datasheet v5.3, Table 6-22 Boot Mode Selection
+  note: 'Таблиця містить точні комбінації GPIO рівнів для кожного режиму. | Взірець перебудовано
+    з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці)
+    і не чіпав нічого.'

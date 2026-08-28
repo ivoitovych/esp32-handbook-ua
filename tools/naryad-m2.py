@@ -11,7 +11,7 @@
 
 1. **Підтвердження мусить бути підрядком названого файлу.** Не «книга
    каже те саме» — а рядок, який механічно знайдеться в
-   `dzherela-kesh/ds18b20.pdf`. Переписати текст книги назад більше не
+   `source-cache/ds18b20.pdf`. Переписати текст книги назад більше не
    спрацює: тексту книги в тому файлі немає.
 2. **Файл названо в наряді.** Помічник не шукає документ — він його
    відкриває. Дешева модель безпечна саме тут (`POMICHNYKY.md`); там,
@@ -39,9 +39,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-import vybirka  # noqa: E402  — добір і читання реєстру беремо в М1
+import sample  # noqa: E402  — добір і читання реєстру беремо в М1
 
-KESH = ROOT / "dzherela-kesh"
+KESH = ROOT / "source-cache"
 
 # Ключ → взірець імені файлу в кеші. Ключ шукається в тексті одиниці
 # без урахування регістру; що конкретніший ключ, то раніше він стоїть.
@@ -201,12 +201,17 @@ def poshuk_riven(tekst: str, fayly: list[str], spec: bool) -> list[str]:
 def main() -> int:
     skilky = int(sys.argv[1]) if len(sys.argv) > 1 else 60
     nasinnya = int(sys.argv[2]) if len(sys.argv) > 2 else 20260827
-    imya = sys.argv[3] if len(sys.argv) > 3 else "hvylya2"
+    # Каталог хвилі: `factcheck/wave2` перейменовано на
+    # `factcheck/wave2`. Правило заміни цього рядка **не** зачепило, і
+    # правильно: у коді воно вимагає скісної, бо в лапках стоять і
+    # ключі словників, і мітки. Тут ім'я каталогу справді голе, тож
+    # правку зроблено рукою.
+    imya = sys.argv[3] if len(sys.argv) > 3 else "wave2"
 
     fayly = kesh_fayly()
     vsi = []
     for klas in ("C", "F"):
-        for o in vybirka.odynyci(klas):
+        for o in sample.odynyci(klas):
             o["klas"] = klas
             vsi.append(o)
 

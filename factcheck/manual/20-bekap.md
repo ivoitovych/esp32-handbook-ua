@@ -2,7 +2,7 @@
 
 Одиниць твердження: **95**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -118,7 +118,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Джерело:** source-cache/19d515b8-burn-efuse-cmd.rst
 - **Дослівно з джерела:**
   > This is an irreversible operation!
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -377,7 +377,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Джерело:** source-cache/19d515b8-burn-efuse-cmd.rst
 - **Дослівно з джерела:**
   > eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will have no effect.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -784,7 +784,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
+- **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -814,7 +814,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
+- **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -997,7 +997,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/a4dbe955-bootloader.rst
+- **Джерело:** source-cache/a4dbe955-bootloader.rst
 - **Дослівно з джерела:**
   > 0x0 at start of flash + IDF_TARGET_MAX_BOOTLOADER_SIZE + 0x1000 signature sector
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -1145,7 +1145,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x0 dump-2026-08-26.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Джерело:** source-cache/19d515b8-burn-efuse-cmd.rst
 - **Дослівно з джерела:**
   > Longer eFuses (MAC addresses, keys) can be set with this command, but it's better to use a specific command (``burn-custom-mac``, ``burn-key``) for a specific field.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -2491,7 +2491,7 @@ esptool --port /dev/ttyUSB0 erase-region 0x9000 0x6000
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/19d515b8-burn-efuse-cmd.rst
+- **Джерело:** source-cache/19d515b8-burn-efuse-cmd.rst
 - **Дослівно з джерела:**
   > This is an irreversible operation!
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

@@ -2,7 +2,7 @@
 
 Одиниць твердження: **137**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -393,7 +393,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > MTDI = 1, VDD_SDIO pin is powered from internal 1.8 V LDO.
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -1088,13 +1088,13 @@ classic це може означати просто резистор або св
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** ESP32 Series Datasheet v5.3 (dzherela-kesh/21953a2f-esp32_datasheet_en.pdf) — інформація про VDDSDIO та flash voltage requirements; Практичний досвід конфігурації ESP32
+- **Джерело:** ESP32 Series Datasheet v5.3 (source-cache/21953a2f-esp32_datasheet_en.pdf) — інформація про VDDSDIO та flash voltage requirements; Практичний досвід конфігурації ESP32
 - **Дослівно з джерела:**
   > Інформація про 1.8V flash та конфігурацію взята з практичної
   > документації про GPIO0 та режими завантаження. ESP32 WROOM-32
   > модулі зазвичай використовують 3.3V flash, але неправильна
   > конфігурація VDDSDIO може привести до 1.8V режиму.
-- **Спосіб і дата:** Аналіз dzherela-kesh/esp32_datasheet_en.pdf та практичної документації
+- **Спосіб і дата:** Аналіз source-cache/esp32_datasheet_en.pdf та практичної документації
 - **Нотатка:** Твердження логічно випливає з технічних характеристик ESP32 і поведінки при неправильній конфігурації напругою VDDSDIO. Однак прямої цитати про «не запускається й немає логу» у datasheet не знайдено — це висновок з властивостей системи. Таким чином, класифікується як B (выпливає однозначно, але немає дослівної цитати). | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
 - **Прохід:** m2-91-vybirka
 
@@ -2283,7 +2283,7 @@ classic це може означати просто резистор або св
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP32-WROOM-32E / ESP32-WROOM-32UE Datasheet v1.7, розділ 2 «Pin Definitions», виноска 2 до таблиці Pin Description (кеш: dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)
+- **Джерело:** Espressif Systems, ESP32-WROOM-32E / ESP32-WROOM-32UE Datasheet v1.7, розділ 2 «Pin Definitions», виноска 2 до таблиці Pin Description (кеш: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)
 - **Дослівно з джерела:**
   > Pins GPIO6 to GPIO11 on the ESP32-D0WD-V3/ESP32-D0WDR2-V3 chip are connected to the SPI flash integrated on the module and are not led out.
 - **Спосіб і дата:** pdftotext -layout по кешованому PDF, рядки 656–658, 2026-08-27
@@ -2920,18 +2920,18 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
   > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
   > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
   > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > tools/pins.py: кожен номер GPIO у книзі звіряється з масками тих
   > сімейств, які текст поруч називає; область дії береться з `#if
   > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
   > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Спосіб і дата:** python3 tools/pins.py (у складі `make check`), 2026-08-26
 - **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
 Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
 - **Прохід:** pass-30-piny-suciljno
@@ -3021,18 +3021,18 @@ PSRAM (`N16R8` і подібні) — додатково `GPIO33`–`GPIO37`.
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
   > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
   > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
   > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > tools/pins.py: кожен номер GPIO у книзі звіряється з масками тих
   > сімейств, які текст поруч називає; область дії береться з `#if
   > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
   > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Спосіб і дата:** python3 tools/pins.py (у складі `make check`), 2026-08-26
 - **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
 Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
 - **Прохід:** pass-30-piny-suciljno
@@ -3774,7 +3774,7 @@ classic, S2 і S3.
 - **Джерело:** https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 10 touch sensors
-- **Спосіб і дата:** Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2 «14 touch sensing GPIOs» (dzherela-kesh/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох документів разом.
+- **Спосіб і дата:** Чотири даташити з кешу, 2026-08-28. Позитивний бік: ESP32 «10 touch sensors»; ESP32-S2 «14 touch sensing GPIOs» (source-cache/esp32-s2_datasheet_en.pdf); ESP32-S3 «14 capacitive touch sensing IOs» (esp32-s3_datasheet_en.pdf). Заперечний бік: у даташиті ESP32-C3 слово touch не трапляється **жодного разу** (esp32-c3_datasheet_en.pdf). Клас derived, а не verbatim: жоден окремий рядок не каже «лише classic, S2, S3» — це випливає з чотирьох документів разом.
 - **Нотатка:** Touch сенсори це функція, притаманна лише деяким варіантам чипів.
 2026-08-28. Було двоє негараздів, обидва мовчазні.
 ПЕРШЕ: клас стояв verbatim, а джерелом була проза без URL («ESP32 / ESP32-S2 / ESP32-S3 Series Datasheet, Touch Sensor section»). Шар 3 такий запис перевірити не міг.
@@ -4554,18 +4554,18 @@ datasheet чипа.
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/piny.py`
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h (`SOC_GPIO_VALID_GPIO_MASK`, `SOC_GPIO_PIN_COUNT`) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32:   SOC_GPIO_PIN_COUNT 40, маска без 24, 28…31
   > esp32s2: SOC_GPIO_PIN_COUNT 47, маска без 22…25
   > esp32s3: SOC_GPIO_PIN_COUNT 49, маска без 22…25
   > esp32c3: SOC_GPIO_PIN_COUNT 22   esp32c6: 31   esp32h2: 28
   > 
-  > tools/piny.py: кожен номер GPIO у книзі звіряється з масками тих
+  > tools/pins.py: кожен номер GPIO у книзі звіряється з масками тих
   > сімейств, які текст поруч називає; область дії береться з `#if
   > CONFIG_IDF_TARGET_*`, з мітки `[[S3]]`, із заголовка колонки або з
   > BOM проєкту.
-- **Спосіб і дата:** python3 tools/piny.py (у складі `make check`), 2026-08-26
+- **Спосіб і дата:** python3 tools/pins.py (у складі `make check`), 2026-08-26
 - **Нотатка:** Клас `B`, а не `A`, і межа тут проведена свідомо: маски — першоджерело, отримане дослівно, але **твердження книги** з них лише випливає. Доказ каже «такий пін у цьому сімействі існує» і не каже нічого про те, що книга про цей пін стверджує.
 Що робить цей запис вартим існування: він **постійний**. Перевірка входить у `make check`, тож нове число, вписане в книгу завтра, звіряється негайно, а не чекає наступного проходу. Прохід 17 показав, чого коштує зворотне: дві помилки рівня «не збереться» прожили в проєктах 59 і 60 саме тому, що піни ніхто не звіряв механічно.
 - **Прохід:** pass-30-piny-suciljno
@@ -4592,7 +4592,7 @@ datasheet чипа.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > MTDI = 1, VDD_SDIO pin is powered from internal 1.8 V LDO.
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

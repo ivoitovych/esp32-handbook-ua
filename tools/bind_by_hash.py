@@ -69,15 +69,15 @@ import yaml
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 
-DOKAZY = ROOT / "factcheck" / "dokazy"
+DOKAZY = ROOT / "factcheck" / "evidence"
 
 
 def zibraty() -> tuple[list[dict], dict[str, list[str]]]:
     """Records with a stable key, and what each currently binds."""
     import factcheck
-    import vybirka
+    import sample
 
-    odyn = [u for k in factcheck.USI_KLASY for u in vybirka.odynyci(k)]
+    odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
     zapysy: list[dict] = []
     for f in sorted(DOKAZY.glob("*.yaml")):
         try:
@@ -220,7 +220,7 @@ def main() -> int:
                      encoding="utf-8")
         print(f"  записано {imya}: {len(zap)} записів")
 
-    print("\nтепер: tools/znimok.py <знімок> --zvirty — має бути нуль змін")
+    print("\nтепер: tools/snapshot.py <знімок> --zvirty — має бути нуль змін")
     return 0
 
 

@@ -58,7 +58,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 import yaml  # noqa: E402
 import factcheck  # noqa: E402
-import vybirka  # noqa: E402
+import sample  # noqa: E402
 
 LEKSEMA = re.compile(r"[0-9A-Za-zА-Яа-яЇїІіЄєҐґ_.\-]{3,}")
 POROG = 0.34      # мінімальна частка спільних лексем
@@ -90,7 +90,7 @@ def main(argv: list[str]) -> int:
     # коментар при `USI_KLASY`: копія переліку — така сама обіцянка
     # не міняти його, як копія взірця.
     for klas in factcheck.USI_KLASY:
-        for o in vybirka.odynyci(klas):
+        for o in sample.odynyci(klas):
             odynyci.append((o["tekst"], leksemy(o["tekst"])))
 
     teksty = [t for t, _ in odynyci]
@@ -107,7 +107,7 @@ def main(argv: list[str]) -> int:
             zhyvi.add((str(z.get("_prokhid")), str(z.get("title"))))
 
     polagodzheno = nezmineno = 0
-    for shlyakh in sorted(glob.glob(str(ROOT / "factcheck" / "dokazy" / "m2-*.yaml"))):
+    for shlyakh in sorted(glob.glob(str(ROOT / "factcheck" / "evidence" / "m2-*.yaml"))):
         recs = yaml.safe_load(Path(shlyakh).read_text(encoding="utf-8")) or []
         prokhid = Path(shlyakh).stem
         tor = False
@@ -148,7 +148,7 @@ def main(argv: list[str]) -> int:
             # `match` лишалася теча. Дані я звірив 2026-08-28, але
             # звірити наслідок і лишити причину — це відкласти, а не
             # полагодити. Прибрати цей рядок можна лише разом із
-            # прогоном `imena.py --stysnuty`.
+            # прогоном `field_names.py --stysnuty`.
             r["zbih"] = r["match"] = novyy
             if len(urnyven) > 1:
                 print("      (альтернація на %d одиниць)" % len(urnyven))

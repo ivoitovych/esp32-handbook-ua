@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake docs dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema samoperevirky vidtvornist cache-vs-book layer1 coverage check release release-check \
+.PHONY: help setup all intake docs dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
         check-attribution preview clean
 
 PY := python3
@@ -46,21 +46,21 @@ dovidnyk kartky proekty:
 linkcheck:
 	@$(PY) tools/linkcheck.py
 
-posylannya:
-	@$(PY) tools/posylannya.py
+cross-refs:
+	@$(PY) tools/cross_refs.py
 
-piny:
-	@$(PY) tools/piny.py
+pins:
+	@$(PY) tools/pins.py
 
-sprostovane:
-	@$(PY) tools/sprostovane.py
+refuted:
+	@$(PY) tools/refuted.py
 
-polya:
-	@$(PY) tools/polya.py
+struct-fields:
+	@$(PY) tools/struct_fields.py
 
 # Листування супровідників: форма, зв'язність, перелік відкритого.
-zvyazok:
-	@$(PY) tools/zvyazok.py
+correspondence:
+	@$(PY) tools/correspondence.py
 
 # Третій шар фактчекінгу: чи стоїть цитата за названою адресою.
 #
@@ -68,35 +68,35 @@ zvyazok:
 # тривогою (переніс рядка, таблиця в PDF), тому вона лишається звітом:
 # 51 запис у черзі. А вигадане джерело, заглушка в кеші й доказ класу
 # `F` не можуть бути нічим, крім помилки, — і на них скрипт падає.
-citaty:
-	@$(PY) tools/citaty.py --zvit
+layer3:
+	@$(PY) tools/layer3.py --zvit
 
 # Модальність: припис у книзі проти дозволу в джерелі. Звіт, не
 # ворота — припис може бути обґрунтованим, і судить це людина.
 # Знайшов цей рід не інструмент, а помічник; інструмент дописано
 # після, і його перша редакція давала 88 % хибних спрацювань.
-modalnist:
-	@$(PY) tools/modalnist.py
+modality:
+	@$(PY) tools/modality.py
 
 # Кальки з російської. Ворота, а не звіт: перелік короткий і містить
 # лише однозначні заміни, тож знахідка тут — завжди помилка.
-kalky:
-	@$(PY) tools/kalky.py
+calques:
+	@$(PY) tools/calques.py
 
 # Поділ незвіреного між супровідниками за досяжністю джерела.
-podil:
-	@$(PY) tools/podil.py
+split-queue:
+	@$(PY) tools/split_queue.py
 
 # Кеш зовнішніх джерел: звірити sha256 наявних файлів із маніфестом.
-kesh:
-	@$(PY) tools/kesh.py --check
+cache:
+	@$(PY) tools/cache.py --check
 
 # Чи може доказ перевірити **третя сторона**. `--check` питає лише
 # про мій кеш; кеш у git не входить (копірайт), тож єдиний місток
 # назовні — рядок маніфесту. Доказ поза маніфестом відтворний тільки
 # в тому контейнері, де його писали.
-vidtvornist:
-	@$(PY) tools/kesh.py --vidtvornist
+reproducible:
+	@$(PY) tools/cache.py --vidtvornist
 
 # Чи не потрапив файл книги в кеш джерел. Ворота, не звіт:
 # доказ, що доводить книгу книгою, проходить усі три шари, і
@@ -153,8 +153,8 @@ coverage:
 
 # Правопис: перелік невідомих слів. Звіт, не ворота — судити про
 # українську має людина, інструмент лише скорочує їй роботу.
-pravopys:
-	@$(PY) tools/pravopys.py
+spelling:
+	@$(PY) tools/spelling.py
 
 # Зібрати й покласти у release/ те, що бачить читач на GitHub.
 release:
@@ -169,14 +169,14 @@ release:
 release-check:
 	@echo "── маніфест, посилання, піни, арифметика"
 	@$(PY) tools/linkcheck.py
-	@$(PY) tools/posylannya.py
-	@$(PY) tools/piny.py
-	@$(PY) tools/sprostovane.py
-	@$(PY) tools/polya.py
-	@$(PY) tools/arytmetyka.py >/dev/null && echo "arytmetyka: збіглося"
+	@$(PY) tools/cross_refs.py
+	@$(PY) tools/pins.py
+	@$(PY) tools/refuted.py
+	@$(PY) tools/struct_fields.py
+	@$(PY) tools/arithmetic.py >/dev/null && echo "arytmetyka: збіглося"
 	@echo "── листування (строго: відкрите питання зупиняє випуск)"
-	@$(PY) tools/zvyazok.py --suvoro
-	@$(PY) tools/kesh.py --check
+	@$(PY) tools/correspondence.py --suvoro
+	@$(PY) tools/cache.py --check
 	@echo "── рецензійні перевірки (строго)"
 	@$(PY) tools/review.py --strict >/dev/null && echo "review: 0 знахідок"
 	@echo "── реєстр фактчекінгу"
@@ -205,7 +205,7 @@ release-check:
 # check` червонів через чужі записи, а друк ішов. Зовнішня рецензія
 # назвала це правильно — **проєкт, чия головна сила в перевірності
 # доказів, не має випускатися з відомо зламаним інваріантом.**
-	@$(PY) tools/citaty.py
+	@$(PY) tools/layer3.py
 	@echo "── повне збирання без пропусків"
 	@$(PY) tools/build.py --strict
 	@echo "── авторство"
@@ -216,10 +216,10 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: samoperevirky intake linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage docs check-attribution
+check: self-checks intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage docs check-attribution
 
-arytmetyka:
-	@python3 tools/arytmetyka.py
+arithmetic:
+	@python3 tools/arithmetic.py
 
 # Чи реєстр іще про **цю** книгу — див. докстрінг `stale`.
 # Звіт, не зупинка: розходження нормальне доти, доки
@@ -232,8 +232,8 @@ stale:
 # Схема запису доказу й контракт картки. Порушень зараз нуль — тож
 # лишилося зробити її воротами; поки звіт, бо шість записів М2 чекають
 # на переведення в `looked-not-found`, і після нього це стане ворітьми.
-skhema:
-	@python3 tools/skhema.py
+schema:
+	@python3 tools/schema.py
 
 # Самоперевірки: показ кожної перевірки на **навмисно зіпсованому**
 # вході. Правило проєкту каже, що перевірка без такого показу не
@@ -246,9 +246,26 @@ skhema:
 # **побачила** — показала «очікували течу, дістали чисто» — і сказала
 # це в порожню кімнату. Червона перевірка, якої ніхто не кличе,
 # рівно так само зелена.
-samoperevirky:
-	@$(PY) tools/skhema.py --samoperevirka
-	@$(PY) tools/techa.py --samoperevirka
+self-checks:
+	@$(PY) tools/schema.py --samoperevirka
+	@$(PY) tools/leak.py --samoperevirka
+	@$(PY) tools/task_spec.py --samoperevirka
+
+# Кожна точка входу технології, а не лише ті, що у воротах.
+#
+# `make check` кличе 18 цілей; точок входу 54, у 42 інструментах, і 22
+# інструменти поза воротами. Саме там вижили всі дев'ять зламів
+# переведення імен полів 2026-08-28, і саме там їх знайшов цей гарнес.
+#
+# Це не ворота: прогін довгий і потрібен навколо змін, що мають
+# **зберігати поведінку** — перейменувань, переїздів, рефакторингів.
+#
+#   tools/entry_points.py --capture /tmp/do
+#   …зміна…
+#   tools/entry_points.py --capture /tmp/pislya
+#   tools/entry_points.py --diff /tmp/do /tmp/pislya
+entry-points:
+	@$(PY) tools/entry_points.py --missing
 
 check-attribution:
 	@sh -c '. ./.githooks/identity.conf; \

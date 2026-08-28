@@ -2,7 +2,7 @@
 
 Одиниць твердження: **102**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -1440,7 +1440,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > The external memory is incorporated in the memory map and, with certain restrictions, is usable in the same way as internal data RAM.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1530,7 +1530,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/56497005-external-ram.rst
+- **Джерело:** source-cache/56497005-external-ram.rst
 - **Дослівно з джерела:**
   > This allows any application to use the external RAM without having to rewrite the code to use ``heap_caps_malloc(..., MALLOC_CAP_SPIRAM)``.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1682,7 +1682,7 @@ uint8_t *big     = heap_caps_malloc(65536, MALLOC_CAP_SPIRAM);
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP32 Series Datasheet (dzherela-kesh/21953a2f-esp32_datasheet_en.pdf), розділ Memory Configuration або Memory Overview
+- **Джерело:** Espressif Systems, ESP32 Series Datasheet (source-cache/21953a2f-esp32_datasheet_en.pdf), розділ Memory Configuration або Memory Overview
 - **Дослівно з джерела:**
   > 16 КБ і більше → PSRAM
 - **Спосіб і дата:** Таблиця розподілу адресного простору пам'яті ESP32 з датащиту; витяг з офіційної документації

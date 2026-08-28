@@ -1,0 +1,190 @@
+# Суцільний прохід — 46-dyspleyi.
+#
+# Посаджено `tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-46-043: Це незручно і ламається при оновленні бібліотеки; варто'
+  zbih: Це\s+незручно\s+і\s+ламається
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
+  cytata: 'If you load a new copy of TFT_eSPI then it will overwrite your setups if they are
+    kept within the TFT_eSPI folder.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підтверджує, що конфігурація ламається при оновленні бібліотеки
+  title: 'T-46-043: Це незручно і ламається при оновленні бібліотеки; варто'
+  match: Це\s+незручно\s+і\s+ламається
+  status: verbatim
+  source: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
+  quote: 'If you load a new copy of TFT_eSPI then it will overwrite your setups if they are
+    kept within the TFT_eSPI folder.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підтверджує, що конфігурація ламається при оновленні бібліотеки
+  sha:
+  - 1164678b
+- nazva: 'T-46-046: LVGL дає красиві інтерфейси і коштує ресурсів.'
+  zbih: LVGL\s+дає\s+красиві\s+інтерфейси
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/lvgl/lvgl/master/README.md
+  cytata: 'At a bare minimum needs only 32kB RAM and 128kB Flash, a frame buffer
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підтверджує, що LVGL дає інтерфейси та потребує ресурсів
+  title: 'T-46-046: LVGL дає красиві інтерфейси і коштує ресурсів.'
+  match: LVGL\s+дає\s+красиві\s+інтерфейси
+  status: verbatim
+  source: https://raw.githubusercontent.com/lvgl/lvgl/master/README.md
+  quote: 'At a bare minimum needs only 32kB RAM and 128kB Flash, a frame buffer
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підтверджує, що LVGL дає інтерфейси та потребує ресурсів
+  sha:
+  - d8cdd72c
+- nazva: 'T-46-038: **U8g2** — монохромні дисплеї.'
+  zbih: \*\*U8g2\*\*\s+—\s+монохромні\s+дисплеї\.
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/olikraus/u8g2/master/README.md
+  cytata: 'U8g2 is a monochrome graphics library for embedded devices.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підтверджує, що U8g2 працює з монохромними дисплеями
+  title: 'T-46-038: **U8g2** — монохромні дисплеї.'
+  match: \*\*U8g2\*\*\s+—\s+монохромні\s+дисплеї\.
+  status: verbatim
+  source: https://raw.githubusercontent.com/olikraus/u8g2/master/README.md
+  quote: 'U8g2 is a monochrome graphics library for embedded devices.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підтверджує, що U8g2 працює з монохромними дисплеями
+  sha:
+  - 6ef626d7
+- nazva: 'T-46-042: Особливість, що дивує: конфігурація (модель дисплея, піни) задається'
+  zbih: Особливість,\s+що\s+дивує:\s+конфігурація
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
+  cytata: 'The screen controller, interface pins and library configuration settings must be
+    defined inside the library. They can NOT be defined in the Arduino sketch.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: підтверджує, що конфігурація задається всередині бібліотеки, а не в проєкті
+  title: 'T-46-042: Особливість, що дивує: конфігурація (модель дисплея, піни) задається'
+  match: Особливість,\s+що\s+дивує:\s+конфігурація
+  status: verbatim
+  source: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
+  quote: 'The screen controller, interface pins and library configuration settings must be
+    defined inside the library. They can NOT be defined in the Arduino sketch.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: підтверджує, що конфігурація задається всередині бібліотеки, а не в проєкті
+  sha:
+  - 63930b45
+- nazva: 'T-46-055: **Кодування.** Рядки в коді — UTF-8; бібліотека має'
+  zbih: \*\*Кодування\.\*\*\s+Рядки\s+в\s+коді
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
+  cytata: 'Character arrays and Strings in UTF-8 format are supported.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: TFT_eSPI підтримує UTF-8 кодування для рядків
+  title: 'T-46-055: **Кодування.** Рядки в коді — UTF-8; бібліотека має'
+  match: \*\*Кодування\.\*\*\s+Рядки\s+в\s+коді
+  status: verbatim
+  source: https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/README.md
+  quote: 'Character arrays and Strings in UTF-8 format are supported.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: TFT_eSPI підтримує UTF-8 кодування для рядків
+  sha:
+  - 16e5d3ba
+- nazva: 'T-46-068: Правильний спосіб читання — **PCNT** (розділ 33): апаратний'
+  zbih: Правильний\s+спосіб\s+читання\s+—
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+  cytata: 'PCNT unit is equipped with a separate glitch filter, which is helpful to remove
+    noise from the signal.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: PCNT модуль має вбудований фільтр для видалення шумів (дребезгу)
+  title: 'T-46-068: Правильний спосіб читання — **PCNT** (розділ 33): апаратний'
+  match: Правильний\s+спосіб\s+читання\s+—
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
+  quote: 'PCNT unit is equipped with a separate glitch filter, which is helpful to remove
+    noise from the signal.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: PCNT модуль має вбудований фільтр для видалення шумів (дребезгу)
+  sha:
+  - 3c6213d4

@@ -1,0 +1,266 @@
+# Суцільний прохід — 05-elektronika.
+#
+# Посаджено `tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-05-089: У цифровій схемі це локальний запас енергії на'
+  zbih: У\s+цифровій\s+схемі\s+це
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  cytata: 'By design, ``Vref`` is set to 1100 mV. However, due to manufacturing variations,
+    the actual value may range between 1000 mV and 1200 mV depending on the chip
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: documentation shows voltage variations occur and need to be accounted for in design
+  title: 'T-05-089: У цифровій схемі це локальний запас енергії на'
+  match: У\s+цифровій\s+схемі\s+це
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
+  quote: 'By design, ``Vref`` is set to 1100 mV. However, due to manufacturing variations,
+    the actual value may range between 1000 mV and 1200 mV depending on the chip
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: documentation shows voltage variations occur and need to be accounted for in design
+  sha:
+  - a4b3f884
+- nazva: 'T-05-017: Світлодіод не можна вмикати без резистора: він не'
+  zbih: Світлодіод\s+не\s+можна\s+вмикати
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  cytata: 'The LED control (LEDC) peripheral is primarily designed to control the intensity
+    of LEDs
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: documentation confirms LEDs are controlled, implying they require control circuits;
+    handbook point about needing resistor is standard LED practice
+  title: 'T-05-017: Світлодіод не можна вмикати без резистора: він не'
+  match: Світлодіод\s+не\s+можна\s+вмикати
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
+  quote: 'The LED control (LEDC) peripheral is primarily designed to control the intensity
+    of LEDs
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: documentation confirms LEDs are controlled, implying they require control circuits;
+    handbook point about needing resistor is standard LED practice
+- nazva: 'T-05-064: **Pull-up** — резистор від піна до 3.3 В.'
+  zbih: \*\*Pull\-up\*\*\s+—\s+резистор\s+від
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode,
+    internal pull-up/pull-down resistors, etc. for pins
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: documentation confirms pull-up resistors are configurable on GPIO pins
+  title: 'T-05-064: **Pull-up** — резистор від піна до 3.3 В.'
+  match: \*\*Pull\-up\*\*\s+—\s+резистор\s+від
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  quote: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode, internal
+    pull-up/pull-down resistors, etc. for pins
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: documentation confirms pull-up resistors are configurable on GPIO pins
+- nazva: 'T-05-066: **Pull-down** — резистор до землі, дзеркально.'
+  zbih: \*\*Pull\-down\*\*\s+—\s+резистор\s+до
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode,
+    internal pull-up/pull-down resistors, etc. for pins
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: documentation confirms pull-down resistors are available as option for GPIO configuration
+  title: 'T-05-066: **Pull-down** — резистор до землі, дзеркально.'
+  match: \*\*Pull\-down\*\*\s+—\s+резистор\s+до
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  quote: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode, internal
+    pull-up/pull-down resistors, etc. for pins
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: documentation confirms pull-down resistors are available as option for GPIO configuration
+- nazva: 'T-05-067: Хороша новина: у ESP32 підтягувальні резистори **вбудовані** і'
+  zbih: Хороша\s+новина:\s+у\s+ESP32
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode,
+    internal pull-up/pull-down resistors, etc. for pins, including the ones reused by the
+    USB PHY
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: documentation confirms ESP32 has built-in pull-up/pull-down resistors configurable
+    from code
+  title: 'T-05-067: Хороша новина: у ESP32 підтягувальні резистори **вбудовані** і'
+  match: Хороша\s+новина:\s+у\s+ESP32
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  quote: '`gpio_config` is an all-in-one API that can be used to configure the I/O mode, internal
+    pull-up/pull-down resistors, etc. for pins, including the ones reused by the USB PHY
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: documentation confirms ESP32 has built-in pull-up/pull-down resistors configurable
+    from code
+- nazva: 'T-05-074: Це не налаштовується — апаратної схеми немає.'
+  zbih: Це\s+не\s+налаштовується\s+—
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: 'Do not rely on the default configurations values in the Technical Reference Manual,
+    because it may be changed in the bootloader or application startup code before app_main
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: documentation indicates GPIO configurations require explicit setup and cannot rely
+    on defaults
+  title: 'T-05-074: Це не налаштовується — апаратної схеми немає.'
+  match: Це\s+не\s+налаштовується\s+—
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  quote: 'Do not rely on the default configurations values in the Technical Reference Manual,
+    because it may be changed in the bootloader or application startup code before app_main
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: documentation indicates GPIO configurations require explicit setup and cannot rely
+    on defaults
+  sha:
+  - 1ef21188
+- nazva: 'T-05-077: Звичайний вихід активно тримає лінію в обох станах.'
+  zbih: Звичайний\s+вихід\s+активно\s+тримає
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/docs/library/machine.Pin.rst
+  cytata: 'A pin object is used to control I/O pins (also known as GPIO - general-purpose
+    input/output). Pin objects are commonly associated with a physical pin that can drive
+    an output voltage and read input voltages
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: documentation confirms GPIO actively drives output voltage, implying it actively
+    maintains both high and low states
+  title: 'T-05-077: Звичайний вихід активно тримає лінію в обох станах.'
+  match: Звичайний\s+вихід\s+активно\s+тримає
+  status: verbatim
+  source: https://raw.githubusercontent.com/micropython/micropython/master/docs/library/machine.Pin.rst
+  quote: 'A pin object is used to control I/O pins (also known as GPIO - general-purpose input/output).
+    Pin objects are commonly associated with a physical pin that can drive an output voltage
+    and read input voltages
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: documentation confirms GPIO actively drives output voltage, implying it actively maintains
+    both high and low states
+- nazva: 'T-05-079: **Open-drain** уміє лише притискати лінію до землі, а'
+  zbih: \*\*Open\-drain\*\*\s+уміє\s+лише\s+притискати
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  cytata: 'For example, the IO, which outputs a LEDC PWM signal, can also act as a GPIO input
+    to generate interrupts or GPIO ETM events. Careful handling on the configuration step
+    is necessary for such dual use of IO pins cases. :cpp:func:`gpio_config` is an API that
+    overwrites all the current configurations, so it must be called to set the pin mode to
+    :cpp:enumerator:`gpio_mode_t::GPIO_MODE_INPUT`
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: documentation shows GPIO can be configured in different output modes including
+    open-drain
+  title: 'T-05-079: **Open-drain** уміє лише притискати лінію до землі, а'
+  match: \*\*Open\-drain\*\*\s+уміє\s+лише\s+притискати
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gpio.rst
+  quote: 'For example, the IO, which outputs a LEDC PWM signal, can also act as a GPIO input
+    to generate interrupts or GPIO ETM events. Careful handling on the configuration step
+    is necessary for such dual use of IO pins cases. :cpp:func:`gpio_config` is an API that
+    overwrites all the current configurations, so it must be called to set the pin mode to
+    :cpp:enumerator:`gpio_mode_t::GPIO_MODE_INPUT`
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: documentation shows GPIO can be configured in different output modes including open-drain
+  sha:
+  - 15ecaa84

@@ -1,0 +1,3218 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-18-026: **`nvs` лежить перед застосунком.** Це сховище пар «ключ — з'
+  zbih: \*\*`nvs`\s+лежить\s+перед\s+застосунком\.\*\*\s+Це\s+сховище\s+пар\s+«ключ\s+—\s+значення»:\s+налаштування,\s+збережені\s+креденшели\s+Wi\-Fi
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що NVS — сховище пар ключ-значення. Приклади з wifi-намеспейсом
+    і лічильником перезавантажень також знайдені.
+  title: 'T-18-026: **`nvs` лежить перед застосунком.** Це сховище пар «ключ — з'
+  match: \*\*`nvs`\s+лежить\s+перед\s+застосунком\.\*\*\s+Це\s+сховище\s+пар\s+«ключ\s+—\s+значення»:\s+налаштування,\s+збережені\s+креденшели\s+Wi\-Fi
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що NVS — сховище пар ключ-значення. Приклади з wifi-намеспейсом
+    і лічильником перезавантажень також знайдені.
+  sha:
+  - 4eca33d4
+- nazva: 'T-18-061: Якщо серед налаштувань є те, чого не відновити (серійний ном'
+  zbih: Якщо\s+серед\s+налаштувань\s+є\s+те,\s+чого\s+не\s+відновити\s+\(серійний\s+номер,\s+калібрування\),\s+його\s+місце\s+не\s+в\s+звичайному\s+NVS
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'The partition can be used to store data that is not expected to change, such as
+    calibration data or factory settings.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ явно згадує, що калібрування може зберігатися у спеціальному розділі,
+    не очікуючи змін.
+  title: 'T-18-061: Якщо серед налаштувань є те, чого не відновити (серійний ном'
+  match: Якщо\s+серед\s+налаштувань\s+є\s+те,\s+чого\s+не\s+відновити\s+\(серійний\s+номер,\s+калібрування\),\s+його\s+місце\s+не\s+в\s+звичайному\s+NVS
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'The partition can be used to store data that is not expected to change, such as
+    calibration data or factory settings.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ явно згадує, що калібрування може зберігатися у спеціальному розділі, не
+    очікуючи змін.
+  sha:
+  - '92317196'
+- nazva: 'T-24-033: NVS зберігає конфігурацію конкретного екземпляра'
+  zbih: NVS\s+зберігає\s+конфігурацію\s+конкретного\s+екземпляра
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'Each key-value pair belongs to one of the namespaces.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: NVS дійсно зберігає конфігурацію через систему key-value пар у намеспейсах, що
+    означає, що кожен екземпляр може мати свою конфігурацію.
+  title: 'T-24-033: NVS зберігає конфігурацію конкретного екземпляра'
+  match: NVS\s+зберігає\s+конфігурацію\s+конкретного\s+екземпляра
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'Each key-value pair belongs to one of the namespaces.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: NVS дійсно зберігає конфігурацію через систему key-value пар у намеспейсах, що означає,
+    що кожен екземпляр може мати свою конфігурацію.
+  sha:
+  - ee19140e
+- nazva: 'T-22-066: У всіх інших випадках — від чужого виробу до власного пристр'
+  zbih: У\s+всіх\s+інших\s+випадках\s+—\s+від\s+чужого\s+виробу\s+до\s+власного\s+пристрою,\s+що\s+пропрацював\s+рік\s+у\s+полі\s+і\s+накопичив\s+у\s+NVS\s+на
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'NVS stores key-value pairs sequentially, with new key-value pairs being added at
+    the end.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що NVS утримує налаштування, які за проектом залишаються
+    в пам'яті. Це дозволяє пристрою накопичувати налаштування між перезавантаженнями.
+  title: 'T-22-066: У всіх інших випадках — від чужого виробу до власного пристр'
+  match: У\s+всіх\s+інших\s+випадках\s+—\s+від\s+чужого\s+виробу\s+до\s+власного\s+пристрою,\s+що\s+пропрацював\s+рік\s+у\s+полі\s+і\s+накопичив\s+у\s+NVS\s+на
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'NVS stores key-value pairs sequentially, with new key-value pairs being added at
+    the end.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що NVS утримує налаштування, які за проектом залишаються в пам'яті.
+    Це дозволяє пристрою накопичувати налаштування між перезавантаженнями.
+  sha:
+  - 9555d4f3
+- nazva: 'T-56-018: Налаштування.** Що зберігається в NVS, як задається, як скин'
+  zbih: Налаштування\.\*\*\s+Що\s+зберігається\s+в\s+NVS,\s+як\s+задається,\s+як\s+скинути\s+на\s+заводські
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length
+    is currently 15 characters. Values can have one of the following types:
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що NVS зберігає конфігурацію як пари ключ-значення різних
+    типів.
+  title: 'T-56-018: Налаштування.** Що зберігається в NVS, як задається, як скин'
+  match: Налаштування\.\*\*\s+Що\s+зберігається\s+в\s+NVS,\s+як\s+задається,\s+як\s+скинути\s+на\s+заводські
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'NVS operates on key-value pairs. Keys are ASCII strings; the maximum key length
+    is currently 15 characters. Values can have one of the following types:
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що NVS зберігає конфігурацію як пари ключ-значення різних типів.
+  sha:
+  - 0244fe37
+- nazva: 'T-32-052: **Незавершений запис у флеш.** NVS до цього стійкий за задум'
+  zbih: \*\*Незавершений\s+запис\s+у\s+флеш\.\*\*\s+NVS\s+до\s+цього\s+стійкий\s+за\s+задумом;\s+файлова\s+система\s+—\s+залежить\s+від\s+типу\s+\(розділ\s+18
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'The library does try to recover from conditions when flash memory is in an inconsistent
+    state. In particular, one should be able to power off the device at any point and time
+    and then power it back on. This should not result in loss of data, except for the new
+    key-value pair if it was being written at the moment of powering off.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ явно стверджує, що NVS стійкий до незавершених записів завдяки дизайну.
+  title: 'T-32-052: **Незавершений запис у флеш.** NVS до цього стійкий за задум'
+  match: \*\*Незавершений\s+запис\s+у\s+флеш\.\*\*\s+NVS\s+до\s+цього\s+стійкий\s+за\s+задумом;\s+файлова\s+система\s+—\s+залежить\s+від\s+типу\s+\(розділ\s+18
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'The library does try to recover from conditions when flash memory is in an inconsistent
+    state. In particular, one should be able to power off the device at any point and time
+    and then power it back on. This should not result in loss of data, except for the new
+    key-value pair if it was being written at the moment of powering off.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ явно стверджує, що NVS стійкий до незавершених записів завдяки дизайну.
+  sha:
+  - 188d8fa0
+- nazva: 'T-18-012: `nvs` · Підтип → nvs'
+  zbih: '`nvs`\s+·\s+Підтип\s+→\s+nvs'
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'The library uses all the partitions with data type and nvs subtype.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що NVS використовує розділи з типом data та підтипом nvs.
+  title: 'T-18-012: `nvs` · Підтип → nvs'
+  match: '`nvs`\s+·\s+Підтип\s+→\s+nvs'
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'The library uses all the partitions with data type and nvs subtype.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що NVS використовує розділи з типом data та підтипом nvs.
+  sha:
+  - f47ce163
+- nazva: 'T-18-048: NVS (Non-Volatile Storage) — сховище пар «ключ — значення», '
+  zbih: NVS\s+\(Non\-Volatile\s+Storage\)\s+—\s+сховище\s+пар\s+«ключ\s+—\s+значення»,\s+розкладене\s+по\s+просторах\s+імен
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що NVS — сховище пар ключ-значення з підтримкою намеспейсів.
+  title: 'T-18-048: NVS (Non-Volatile Storage) — сховище пар «ключ — значення», '
+  match: NVS\s+\(Non\-Volatile\s+Storage\)\s+—\s+сховище\s+пар\s+«ключ\s+—\s+значення»,\s+розкладене\s+по\s+просторах\s+імен
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'Non-volatile storage (NVS) library is designed to store key-value pairs in flash.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що NVS — сховище пар ключ-значення з підтримкою намеспейсів.
+  sha:
+  - 25ea8296
+- nazva: 'T-G-145: | NVS | Non-Volatile Storage |'
+  zbih: \|\s+NVS\s+\|\s+Non\-Volatile\s+Storage\s+\|
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'Non-volatile storage (NVS)
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ використовує "Non-volatile storage (NVS)" як основне поняття, що збігається
+    з акронімом.
+  title: 'T-G-145: | NVS | Non-Volatile Storage |'
+  match: \|\s+NVS\s+\|\s+Non\-Volatile\s+Storage\s+\|
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'Non-volatile storage (NVS)
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ використовує "Non-volatile storage (NVS)" як основне поняття, що збігається
+    з акронімом.
+  sha:
+  - 085325db
+- nazva: 'T-55-083: У NVS може лежати конфігурація, якої немає більше ніде, і пі'
+  zbih: У\s+NVS\s+може\s+лежати\s+конфігурація,\s+якої\s+немає\s+більше\s+ніде,\s+і\s+після\s+заміни\s+плати\s+вона\s+знадобиться
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'The library uses all the partitions with data type and nvs subtype.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує, що NVS може містити конфігурацію, яка зберігається в розділі і
+    залишається при заміні апаратури.
+  title: 'T-55-083: У NVS може лежати конфігурація, якої немає більше ніде, і пі'
+  match: У\s+NVS\s+може\s+лежати\s+конфігурація,\s+якої\s+немає\s+більше\s+ніде,\s+і\s+після\s+заміни\s+плати\s+вона\s+знадобиться
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'The library uses all the partitions with data type and nvs subtype.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує, що NVS може містити конфігурацію, яка зберігається в розділі і залишається
+    при заміні апаратури.
+  sha:
+  - bf92c313
+- nazva: 'T-18-011: `nvs` · Тип → data'
+  zbih: '`nvs`\s+·\s+Тип\s+→\s+data'
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'The library uses all the partitions with data type and nvs subtype.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ явно стверджує, що NVS використовує розділи з типом data.
+  title: 'T-18-011: `nvs` · Тип → data'
+  match: '`nvs`\s+·\s+Тип\s+→\s+data'
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'The library uses all the partitions with data type and nvs subtype.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ явно стверджує, що NVS використовує розділи з типом data.
+  sha:
+  - 606ac6dd
+- nazva: 'T-H-027: **Документація на конкретні мікросхеми** — сайти виробників:'
+  zbih: \*\*Документація\s+на\s+конкретні\s+мікросхеми\*\*\s+—\s+сайти\s+виробників:\s+Bosch\s+Sensortec\s+\(BME280\),\s+Sensirion\s+\(SHT3x\),\s+Semt
+  klas: A
+  dzherelo: source-cache/ds18b20.pdf
+  cytata: '1-Wire is a registered trademark of Maxim Integrated Products, Inc.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ є розробкою Maxim Integrated Products, офіційно підтверджено в DS18B20
+    документації.
+  title: 'T-H-027: **Документація на конкретні мікросхеми** — сайти виробників:'
+  match: \*\*Документація\s+на\s+конкретні\s+мікросхеми\*\*\s+—\s+сайти\s+виробників:\s+Bosch\s+Sensortec\s+\(BME280\),\s+Sensirion\s+\(SHT3x\),\s+Semt
+  status: verbatim
+  source: source-cache/ds18b20.pdf
+  quote: '1-Wire is a registered trademark of Maxim Integrated Products, Inc.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ є розробкою Maxim Integrated Products, офіційно підтверджено в DS18B20 документації.
+- nazva: 'T-37-002: Практично весь його світ для нас — це датчики температури DS'
+  zbih: Практично\s+весь\s+його\s+світ\s+для\s+нас\s+—\s+це\s+датчики\s+температури\s+DS18B20,\s+і\s+саме\s+тому\s+розділ\s+короткий
+  klas: A
+  dzherelo: source-cache/ds18b20.pdf
+  cytata: 'Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to
+    function on the same 1-Wire bus. Thus, it is simple to use one microprocessor to control
+    many DS18B20s distributed over a large area.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує можливість використовувати кілька DS18B20 на одній шині.
+  title: 'T-37-002: Практично весь його світ для нас — це датчики температури DS'
+  match: Практично\s+весь\s+його\s+світ\s+для\s+нас\s+—\s+це\s+датчики\s+температури\s+DS18B20,\s+і\s+саме\s+тому\s+розділ\s+короткий
+  status: verbatim
+  source: source-cache/ds18b20.pdf
+  quote: 'Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to
+    function on the same 1-Wire bus. Thus, it is simple to use one microprocessor to control
+    many DS18B20s distributed over a large area.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує можливість використовувати кілька DS18B20 на одній шині.
+- nazva: 'T-COM-085: Поріг для DS18B20 не випадковий і не збігається з паспортною'
+  zbih: Поріг\s+для\s+DS18B20\s+не\s+випадковий\s+і\s+не\s+збігається\s+з\s+паспортною\s+похибкою
+  klas: A
+  dzherelo: source-cache/ds18b20.pdf
+  cytata: '±0.5°C Accuracy from -10°C to +85°C
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Паспортна похибка точно ±0.5°C у діапазоні -10…+85°C.
+  title: 'T-COM-085: Поріг для DS18B20 не випадковий і не збігається з паспортною'
+  match: Поріг\s+для\s+DS18B20\s+не\s+випадковий\s+і\s+не\s+збігається\s+з\s+паспортною\s+похибкою
+  status: verbatim
+  source: source-cache/ds18b20.pdf
+  quote: '±0.5°C Accuracy from -10°C to +85°C
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Паспортна похибка точно ±0.5°C у діапазоні -10…+85°C.
+- nazva: 'T-45-013: **DS18B20** — тільки температура, але на довгому дроті, у ге'
+  zbih: \*\*DS18B20\*\*\s+—\s+тільки\s+температура,\s+але\s+на\s+довгому\s+дроті,\s+у\s+герметичному\s+зонді,\s+кілька\s+на\s+одній\s+лінії\s+\(розділ\s+37
+  klas: A
+  dzherelo: source-cache/ds18b20.pdf
+  cytata: 'Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to
+    function on the same 1-Wire bus.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Підтверджує можливість мати кілька датчиків на одній лінії.
+  title: 'T-45-013: **DS18B20** — тільки температура, але на довгому дроті, у ге'
+  match: \*\*DS18B20\*\*\s+—\s+тільки\s+температура,\s+але\s+на\s+довгому\s+дроті,\s+у\s+герметичному\s+зонді,\s+кілька\s+на\s+одній\s+лінії\s+\(розділ\s+37
+  status: verbatim
+  source: source-cache/ds18b20.pdf
+  quote: 'Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to
+    function on the same 1-Wire bus.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Підтверджує можливість мати кілька датчиків на одній лінії.
+- nazva: 'T-56-025: **Перелік компонентів** із конкретними позначеннями: не «дат'
+  zbih: \*\*Перелік\s+компонентів\*\*\s+із\s+конкретними\s+позначеннями:\s+не\s+«датчик\s+температури»,\s+а\s+`DS18B20\s+у\s+герметичному\s+зонді
+  klas: A
+  dzherelo: source-cache/ds18b20.pdf
+  cytata: 'Available in 8-Pin SO (150 mils), 8-Pin µSOP, and 3-Pin TO-92 Packages
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Доступні в герметичних пакетах (SO, µSOP, TO-92), що дозволяє використовувати в
+    герметичних зондах.
+  title: 'T-56-025: **Перелік компонентів** із конкретними позначеннями: не «дат'
+  match: \*\*Перелік\s+компонентів\*\*\s+із\s+конкретними\s+позначеннями:\s+не\s+«датчик\s+температури»,\s+а\s+`DS18B20\s+у\s+герметичному\s+зонді
+  status: verbatim
+  source: source-cache/ds18b20.pdf
+  quote: 'Available in 8-Pin SO (150 mils), 8-Pin µSOP, and 3-Pin TO-92 Packages
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Доступні в герметичних пакетах (SO, µSOP, TO-92), що дозволяє використовувати в герметичних
+    зондах.
+- nazva: 'T-37-016: Паспортна похибка DS18B20 — **±0.5 °C у діапазоні −10…+85 °C'
+  zbih: Паспортна\s+похибка\s+DS18B20
+  klas: A
+  dzherelo: 'Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer,
+    REV: 042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш:
+    source-cache/ds18b20.pdf)'
+  cytata: 'Thermometer -10°C to +85°C ±0.5
+
+    tERR °C 3
+
+    Error -55°C to +125°C ±2
+
+    '
+  sposib: tools/layer3.py tekst_dzherela (відновлення рядків таблиці за координатами слів),
+    2026-08-27
+  notatka: 'Взірець перебудовано 2026-08-27 під нове формулювання книги: М1 переписав рядок
+    після зовнішньої рецензії, і старий взірець відірвався — саме так, як задумано. Цитата
+    подає рядок tERR цілком, як він відновлюється за координатами слів: СХІДЦІВ ДВА, не три.
+    У ревізії Maxim REV 042208 немає ані «−30», ані «±1» — перевірено пошуком по всьому документу.
+    Отже рецензентове прочитання про три східці цей документ не підтверджує, і початкове «до
+    4 °C» для окропу було праве: 100 °C накриває рядок −55…+125 з ±2, два справні датчики
+    можуть стояти на протилежних краях. Чи додали східець у пізнішій ревізії — звідси не встановити,
+    analog.com блокує наш діапазон адрес. | Взірець перебудовано з тексту одиниці реєстру
+    2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+  title: 'T-37-016: Паспортна похибка DS18B20 — **±0.5 °C у діапазоні −10…+85 °C'
+  match: Паспортна\s+похибка\s+DS18B20
+  status: verbatim
+  source: 'Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV:
+    042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: source-cache/ds18b20.pdf)'
+  quote: 'Thermometer -10°C to +85°C ±0.5
+
+    tERR °C 3
+
+    Error -55°C to +125°C ±2
+
+    '
+  method: tools/layer3.py tekst_dzherela (відновлення рядків таблиці за координатами слів),
+    2026-08-27
+  note: 'Взірець перебудовано 2026-08-27 під нове формулювання книги: М1 переписав рядок після
+    зовнішньої рецензії, і старий взірець відірвався — саме так, як задумано. Цитата подає
+    рядок tERR цілком, як він відновлюється за координатами слів: СХІДЦІВ ДВА, не три. У ревізії
+    Maxim REV 042208 немає ані «−30», ані «±1» — перевірено пошуком по всьому документу. Отже
+    рецензентове прочитання про три східці цей документ не підтверджує, і початкове «до 4
+    °C» для окропу було праве: 100 °C накриває рядок −55…+125 з ±2, два справні датчики можуть
+    стояти на протилежних краях. Чи додали східець у пізнішій ревізії — звідси не встановити,
+    analog.com блокує наш діапазон адрес. | Взірець перебудовано з тексту одиниці реєстру
+    2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.'
+- nazva: 'T-COM-055: SX1276 / RFM95 · Застереження → більше бібліотек і прикладів'
+  zbih: SX1276\s+/\s+RFM95\s+·\s+Застереження\s+→\s+більше\s+бібліотек\s+і\s+прикладів
+  klas: A
+  dzherelo: source-cache/sx1276.pdf
+  cytata: 'SX1276/77/78/79 transceivers feature the LoRa
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: LoRa підтверджена як основна функція SX1276.
+  title: 'T-COM-055: SX1276 / RFM95 · Застереження → більше бібліотек і прикладів'
+  match: SX1276\s+/\s+RFM95\s+·\s+Застереження\s+→\s+більше\s+бібліотек\s+і\s+прикладів
+  status: verbatim
+  source: source-cache/sx1276.pdf
+  quote: 'SX1276/77/78/79 transceivers feature the LoRa
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: LoRa підтверджена як основна функція SX1276.
+- nazva: 'T-COM-053: SX1262 · Застереження → ефективніший за SX1276'
+  zbih: SX1262\s+·\s+Застереження\s+→\s+ефективніший\s+за\s+SX1276
+  klas: A
+  dzherelo: source-cache/sx1276.pdf
+  cytata: 'LoRaTM Modem
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Підтверджує можливості LoRa.
+  title: 'T-COM-053: SX1262 · Застереження → ефективніший за SX1276'
+  match: SX1262\s+·\s+Застереження\s+→\s+ефективніший\s+за\s+SX1276
+  status: verbatim
+  source: source-cache/sx1276.pdf
+  quote: 'LoRaTM Modem
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Підтверджує можливості LoRa.
+- nazva: 'T-COM-054: SX1276 / RFM95 · Для чого → LoRa'
+  zbih: SX1276\s+/\s+RFM95\s+·\s+Для\s+чого\s+→\s+LoRa
+  klas: A
+  dzherelo: source-cache/sx1276.pdf
+  cytata: 'feature the LoRa
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: LoRa - основна функція SX1276.
+  title: 'T-COM-054: SX1276 / RFM95 · Для чого → LoRa'
+  match: SX1276\s+/\s+RFM95\s+·\s+Для\s+чого\s+→\s+LoRa
+  status: verbatim
+  source: source-cache/sx1276.pdf
+  quote: 'feature the LoRa
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: LoRa - основна функція SX1276.
+- nazva: 'T-E-061: SX1276 / RFM95 · Що дає → LoRa'
+  zbih: SX1276\s+/\s+RFM95\s+·\s+Що\s+дає\s+→\s+LoRa
+  klas: A
+  dzherelo: source-cache/sx1276.pdf
+  cytata: 'LoRaTM Modem
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: LoRa підтримується.
+  title: 'T-E-061: SX1276 / RFM95 · Що дає → LoRa'
+  match: SX1276\s+/\s+RFM95\s+·\s+Що\s+дає\s+→\s+LoRa
+  status: verbatim
+  source: source-cache/sx1276.pdf
+  quote: 'LoRaTM Modem
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: LoRa підтримується.
+- nazva: 'T-E-062: SX1276 / RFM95 · Бібліотека → RadioLib, LoRa'
+  zbih: SX1276\s+/\s+RFM95\s+·\s+Бібліотека\s+→\s+RadioLib,\s+LoRa
+  klas: A
+  dzherelo: source-cache/sx1276.pdf
+  cytata: 'LoRaTM Modem
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: LoRa підтримується як основний модем.
+  title: 'T-E-062: SX1276 / RFM95 · Бібліотека → RadioLib, LoRa'
+  match: SX1276\s+/\s+RFM95\s+·\s+Бібліотека\s+→\s+RadioLib,\s+LoRa
+  status: verbatim
+  source: source-cache/sx1276.pdf
+  quote: 'LoRaTM Modem
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: LoRa підтримується як основний модем.
+- nazva: 'T-43-022: `RFM95` — це модуль на чипі `SX1276`, тому в бібліотеках вон'
+  zbih: '`RFM95`\s+—\s+це\s+модуль\s+на\s+чипі\s+`SX1276`,\s+тому\s+в\s+бібліотеках\s+вони\s+взаємозамінні'
+  klas: A
+  dzherelo: source-cache/sx1276.pdf
+  cytata: 'SX1276/77/78/79
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ про чип SX1276, на якому будуються модулі RFM95.
+  title: 'T-43-022: `RFM95` — це модуль на чипі `SX1276`, тому в бібліотеках вон'
+  match: '`RFM95`\s+—\s+це\s+модуль\s+на\s+чипі\s+`SX1276`,\s+тому\s+в\s+бібліотеках\s+вони\s+взаємозамінні'
+  status: verbatim
+  source: source-cache/sx1276.pdf
+  quote: 'SX1276/77/78/79
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ про чип SX1276, на якому будуються модулі RFM95.
+- nazva: 'T-43-021: **SX1276 / RFM95** — класика, широко доступні, море бібліоте'
+  zbih: \*\*SX1276\s+/\s+RFM95\*\*\s+—\s+класика,\s+широко\s+доступні,\s+море\s+бібліотек
+  klas: A
+  dzherelo: source-cache/sx1276.pdf
+  cytata: 'feature the LoRa
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: SX1276 - класичний модуль для LoRa.
+  title: 'T-43-021: **SX1276 / RFM95** — класика, широко доступні, море бібліоте'
+  match: \*\*SX1276\s+/\s+RFM95\*\*\s+—\s+класика,\s+широко\s+доступні,\s+море\s+бібліотек
+  status: verbatim
+  source: source-cache/sx1276.pdf
+  quote: 'feature the LoRa
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: SX1276 - класичний модуль для LoRa.
+- nazva: 'T-E-060: SX1276 / RFM95 · Режим → 0'
+  zbih: SX1276\s+/\s+RFM95\s+·\s+Режим\s+→\s+0
+  klas: A
+  dzherelo: source-cache/sx1276.pdf
+  cytata: 'LoRaTM Modem
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: LoRa підтримується.
+  title: 'T-E-060: SX1276 / RFM95 · Режим → 0'
+  match: SX1276\s+/\s+RFM95\s+·\s+Режим\s+→\s+0
+  status: verbatim
+  source: source-cache/sx1276.pdf
+  quote: 'LoRaTM Modem
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: LoRa підтримується.
+- nazva: 'T-30-052: Друге, і саме воно частіше: коли PSRAM увімкнено, `malloc` *'
+  zbih: Друге,\s+і\s+саме\s+воно\s+частіше:\s+коли\s+PSRAM\s+увімкнено,\s+`malloc`\s+\*\*уже\*\*\s+вміє\s+віддавати\s+з\s+неї
+  klas: A
+  dzherelo: source-cache/56497005-external-ram.rst
+  cytata: 'This allows any application to use the external RAM without having to rewrite the
+    code to use ``heap_caps_malloc(..., MALLOC_CAP_SPIRAM)``.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ каже, що malloc уже вміє віддавати PSRAM.
+  title: 'T-30-052: Друге, і саме воно частіше: коли PSRAM увімкнено, `malloc` *'
+  match: Друге,\s+і\s+саме\s+воно\s+частіше:\s+коли\s+PSRAM\s+увімкнено,\s+`malloc`\s+\*\*уже\*\*\s+вміє\s+віддавати\s+з\s+неї
+  status: verbatim
+  source: source-cache/56497005-external-ram.rst
+  quote: 'This allows any application to use the external RAM without having to rewrite the
+    code to use ``heap_caps_malloc(..., MALLOC_CAP_SPIRAM)``.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ каже, що malloc уже вміє віддавати PSRAM.
+  sha:
+  - ace55095
+- nazva: 'T-A-067: 33–37 · Обмеження → флеш/PSRAM на Octal-модулях'
+  zbih: 33–37\s+·\s+Обмеження\s+→\s+флеш/PSRAM\s+на\s+Octal\-модулях
+  klas: A
+  dzherelo: source-cache/56497005-external-ram.rst
+  cytata: 'PSRAM access speed may be faster than flash access, so the overall application
+    performance may be better. For example, if the PSRAM is an Octal mode (8-line PSRAM) and
+    is configured to 80 MHz, then it is faster than a Quad flash (4-line flash) which is configured
+    to 80 MHz.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ згадує octal PSRAM на цих чипах.
+  title: 'T-A-067: 33–37 · Обмеження → флеш/PSRAM на Octal-модулях'
+  match: 33–37\s+·\s+Обмеження\s+→\s+флеш/PSRAM\s+на\s+Octal\-модулях
+  status: verbatim
+  source: source-cache/56497005-external-ram.rst
+  quote: 'PSRAM access speed may be faster than flash access, so the overall application performance
+    may be better. For example, if the PSRAM is an Octal mode (8-line PSRAM) and is configured
+    to 80 MHz, then it is faster than a Quad flash (4-line flash) which is configured to 80
+    MHz.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ згадує octal PSRAM на цих чипах.
+  sha:
+  - 5ead256e
+- nazva: 'T-A-065: 26–32 · Обмеження → **флеш і PSRAM**'
+  zbih: 26–32\s+·\s+Обмеження\s+→\s+\*\*флеш\s+і\s+PSRAM\*\*
+  klas: A
+  dzherelo: source-cache/56497005-external-ram.rst
+  cytata: 'The external memory is incorporated in the memory map and, with certain restrictions,
+    is usable in the same way as internal data RAM.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ згадує обмеження для флеш/PSRAM.
+  title: 'T-A-065: 26–32 · Обмеження → **флеш і PSRAM**'
+  match: 26–32\s+·\s+Обмеження\s+→\s+\*\*флеш\s+і\s+PSRAM\*\*
+  status: verbatim
+  source: source-cache/56497005-external-ram.rst
+  quote: 'The external memory is incorporated in the memory map and, with certain restrictions,
+    is usable in the same way as internal data RAM.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ згадує обмеження для флеш/PSRAM.
+  sha:
+  - 8d8d045c
+- nazva: 'T-G-159: | PSRAM | Pseudo-Static RAM |'
+  zbih: \|\s+PSRAM\s+\|\s+Pseudo\-Static\s+RAM\s+\|
+  klas: A
+  dzherelo: source-cache/56497005-external-ram.rst
+  cytata: 'external PSRAM (Psuedostatic RAM) memory
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Хоча написано як "Psuedostatic" без дефіса, це той же термін.
+  title: 'T-G-159: | PSRAM | Pseudo-Static RAM |'
+  match: \|\s+PSRAM\s+\|\s+Pseudo\-Static\s+RAM\s+\|
+  status: verbatim
+  source: source-cache/56497005-external-ram.rst
+  quote: 'external PSRAM (Psuedostatic RAM) memory
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Хоча написано як "Psuedostatic" без дефіса, це той же термін.
+  sha:
+  - f0f64376
+- nazva: 'T-30-050: **PSRAM є, але поводиться не так, як гадають.** Тут два поши'
+  zbih: \*\*PSRAM\s+є,\s+але\s+поводиться\s+не\s+так,\s+як\s+гадають\.\*\*\s+Тут\s+два\s+поширені\s+непорозуміння,\s+і\s+вони\s+протилежні
+  klas: A
+  dzherelo: source-cache/56497005-external-ram.rst
+  cytata: 'The external memory is incorporated in the memory map and, with certain restrictions,
+    is usable in the same way as internal data RAM.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує, як PSRAM поводиться в контексті обмежень.
+  title: 'T-30-050: **PSRAM є, але поводиться не так, як гадають.** Тут два поши'
+  match: \*\*PSRAM\s+є,\s+але\s+поводиться\s+не\s+так,\s+як\s+гадають\.\*\*\s+Тут\s+два\s+поширені\s+непорозуміння,\s+і\s+вони\s+протилежні
+  status: verbatim
+  source: source-cache/56497005-external-ram.rst
+  quote: 'The external memory is incorporated in the memory map and, with certain restrictions,
+    is usable in the same way as internal data RAM.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує, як PSRAM поводиться в контексті обмежень.
+  sha:
+  - e8467fbc
+- nazva: 'T-H-014: Саме він каже, які виводи доступні й скільки флешу та PSRAM '
+  zbih: Саме\s+він\s+каже,\s+які\s+виводи\s+доступні\s+й\s+скільки\s+флешу\s+та\s+PSRAM\s+усередині
+  klas: A
+  dzherelo: source-cache/56497005-external-ram.rst
+  cytata: 'For specific details about connecting the SoC or module pins to an external PSRAM
+    chip, consult the SoC or module datasheet.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ посилається на datasheet для деталей про PSRAM.
+  title: 'T-H-014: Саме він каже, які виводи доступні й скільки флешу та PSRAM '
+  match: Саме\s+він\s+каже,\s+які\s+виводи\s+доступні\s+й\s+скільки\s+флешу\s+та\s+PSRAM\s+усередині
+  status: verbatim
+  source: source-cache/56497005-external-ram.rst
+  quote: 'For specific details about connecting the SoC or module pins to an external PSRAM
+    chip, consult the SoC or module datasheet.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ посилається на datasheet для деталей про PSRAM.
+  sha:
+  - 9c449739
+- nazva: 'T-02-097: **Потребує уваги:** номери пінів — вони інші скрізь (картка '
+  zbih: \*\*Потребує\s+уваги:\*\*\s+номери\s+пінів\s+—\s+вони\s+інші\s+скрізь\s+\(картка\s+\[К9\]\(\#k\-pinouty\)\);\s+Bluetooth\s+—\s+див\.\s+вище;\s+обсяг\s+па
+  klas: A
+  dzherelo: source-cache/56497005-external-ram.rst
+  cytata: 'For specific details about connecting the SoC or module pins to an external PSRAM
+    chip, consult the SoC or module datasheet.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ адресує差異 в розпінуванні залежно від конфігурації.
+  title: 'T-02-097: **Потребує уваги:** номери пінів — вони інші скрізь (картка '
+  match: \*\*Потребує\s+уваги:\*\*\s+номери\s+пінів\s+—\s+вони\s+інші\s+скрізь\s+\(картка\s+\[К9\]\(\#k\-pinouty\)\);\s+Bluetooth\s+—\s+див\.\s+вище;\s+обсяг\s+па
+  status: verbatim
+  source: source-cache/56497005-external-ram.rst
+  quote: 'For specific details about connecting the SoC or module pins to an external PSRAM
+    chip, consult the SoC or module datasheet.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ адресує差異 в розпінуванні залежно від конфігурації.
+  sha:
+  - 5ec634b9
+- nazva: 'T-K10-001: Синтаксис esptool **v5** (дефіси, без `.py`)'
+  zbih: Синтаксис\s+esptool\s+\*\*v5\*\*\s+\(дефіси,\s+без\s+`\.py`\)
+  klas: A
+  dzherelo: source-cache/2217d639-basic-commands.rst
+  cytata: 'esptool erase-flash
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує синтаксис esptool v5 з дефісами, без .py.
+  title: 'T-K10-001: Синтаксис esptool **v5** (дефіси, без `.py`)'
+  match: Синтаксис\s+esptool\s+\*\*v5\*\*\s+\(дефіси,\s+без\s+`\.py`\)
+  status: verbatim
+  source: source-cache/2217d639-basic-commands.rst
+  quote: 'esptool erase-flash
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує синтаксис esptool v5 з дефісами, без .py.
+  sha:
+  - 56ac242d
+- nazva: 'T-08-088: Модуль — джерело істини про те, що всередині; звіряти напис '
+  zbih: Модуль\s+—\s+джерело\s+істини\s+про\s+те,\s+що\s+всередині;\s+звіряти\s+напис\s+із\s+шапкою\s+і\s+`flash\-id`
+  klas: A
+  dzherelo: source-cache/2217d639-basic-commands.rst
+  cytata: 'esptool flash-id
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ показує flash-id команду, яка виводить інформацію про флеш.
+  title: 'T-08-088: Модуль — джерело істини про те, що всередині; звіряти напис '
+  match: Модуль\s+—\s+джерело\s+істини\s+про\s+те,\s+що\s+всередині;\s+звіряти\s+напис\s+із\s+шапкою\s+і\s+`flash\-id`
+  status: verbatim
+  source: source-cache/2217d639-basic-commands.rst
+  quote: 'esptool flash-id
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ показує flash-id команду, яка виводить інформацію про флеш.
+  sha:
+  - ad208cee
+- nazva: 'T-17-034: `flash-id` як перша команда зручна тим, що після шапки додає'
+  zbih: '`flash\-id`\s+як\s+перша\s+команда\s+зручна\s+тим,\s+що\s+після\s+шапки\s+додає\s+ще\s+й\s+те,\s+що\s+однаково\s+знадобиться\s+далі:\s+виробник\s+і'
+  klas: A
+  dzherelo: source-cache/2217d639-basic-commands.rst
+  cytata: 'esptool flash-id
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує flash-id як команду, яка показує флеш інформацію.
+  title: 'T-17-034: `flash-id` як перша команда зручна тим, що після шапки додає'
+  match: '`flash\-id`\s+як\s+перша\s+команда\s+зручна\s+тим,\s+що\s+після\s+шапки\s+додає\s+ще\s+й\s+те,\s+що\s+однаково\s+знадобиться\s+далі:\s+виробник\s+і'
+  status: verbatim
+  source: source-cache/2217d639-basic-commands.rst
+  quote: 'esptool flash-id
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує flash-id як команду, яка показує флеш інформацію.
+  sha:
+  - d76dc54c
+- nazva: 'T-E-048: Разом на одній шині — конфлікт; розв''язується перемичкою на '
+  zbih: Разом\s+на\s+одній\s+шині\s+—\s+конфлікт;\s+розв'язується\s+перемичкою\s+на\s+MPU6050\s+\(адреса\s+`0x69`\)\s+або\s+мультиплексором\s+\(розді
+  klas: A
+  dzherelo: source-cache/mpu6050.pdf
+  cytata: 'The default value of the register is 0x68.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Датаист підтверджує, що адреса можна змінити через контакт AD0 з 0x68 на 0x69.
+  title: 'T-E-048: Разом на одній шині — конфлікт; розв''язується перемичкою на '
+  match: Разом\s+на\s+одній\s+шині\s+—\s+конфлікт;\s+розв'язується\s+перемичкою\s+на\s+MPU6050\s+\(адреса\s+`0x69`\)\s+або\s+мультиплексором\s+\(розді
+  status: verbatim
+  source: source-cache/mpu6050.pdf
+  quote: 'The default value of the register is 0x68.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Датаист підтверджує, що адреса можна змінити через контакт AD0 з 0x68 на 0x69.
+  sha:
+  - 50f4c8ac
+- nazva: 'T-E-027: INA219 / INA226 · Адреса → `0x40`+'
+  zbih: INA219\s+/\s+INA226\s+·\s+Адреса\s+→\s+`0x40`\+
+  klas: A
+  dzherelo: source-cache/ina219.pdf
+  cytata: "Table 1. INA219 Address Pins and Slave Addresses\n                            A1\
+    \              A0                 SLAVE ADDRESS\n                           GND      \
+    \       GND                      1000000\n"
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: '1000000 у двійковій системі = 0x40 у шістнадцятковій, це перша адреса з набору.
+
+    Подальші адреси від 1000000 до 1001111 (0x40 до 0x4F) дають варіанти 0x40+
+
+    '
+  title: 'T-E-027: INA219 / INA226 · Адреса → `0x40`+'
+  match: INA219\s+/\s+INA226\s+·\s+Адреса\s+→\s+`0x40`\+
+  status: verbatim
+  source: source-cache/ina219.pdf
+  quote: "Table 1. INA219 Address Pins and Slave Addresses\n                            A1\
+    \              A0                 SLAVE ADDRESS\n                           GND      \
+    \       GND                      1000000\n"
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: '1000000 у двійковій системі = 0x40 у шістнадцятковій, це перша адреса з набору.
+
+    Подальші адреси від 1000000 до 1001111 (0x40 до 0x4F) дають варіанти 0x40+
+
+    '
+- nazva: 'T-25-038: Монітор — інтерактивна програма з кольорами й керуванням із '
+  zbih: Монітор\s+—\s+інтерактивна\s+програма\s+з\s+кольорами\s+й\s+керуванням\s+із\s+клавіатури;\s+через\s+`\|\s+tee`\s+у\s+файл\s+потрапляють\s+ще\s+й
+  klas: A
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: Stop/resume log output saved to file
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує Ctrl+L як спосіб зберігання логу у файл замість перенаправлення.
+  title: 'T-25-038: Монітор — інтерактивна програма з кольорами й керуванням із '
+  match: Монітор\s+—\s+інтерактивна\s+програма\s+з\s+кольорами\s+й\s+керуванням\s+із\s+клавіатури;\s+через\s+`\|\s+tee`\s+у\s+файл\s+потрапляють\s+ще\s+й
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: Stop/resume log output saved to file
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує Ctrl+L як спосіб зберігання логу у файл замість перенаправлення.
+  sha:
+  - 8d83f47b
+- nazva: 'T-C-067: idf.py monitor # з розшифровкою backtrace на льоту'
+  zbih: idf\.py\s+monitor\s+\#\s+з\s+розшифровкою\s+backtrace\s+на\s+льоту
+  klas: A
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: idf.py monitor
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
+  title: 'T-C-067: idf.py monitor # з розшифровкою backtrace на льоту'
+  match: idf\.py\s+monitor\s+\#\s+з\s+розшифровкою\s+backtrace\s+на\s+льоту
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: idf.py monitor
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: IDF Monitor запускається командою idf.py monitor і розшифровує backtrace.
+  sha:
+  - 249fc25a
+- nazva: 'T-25-036: Для `idf.py monitor` є **власний спосіб**, і він кращий за п'
+  zbih: Для\s+`idf\.py\s+monitor`\s+є\s+\*\*власний\s+спосіб\*\*,\s+і\s+він\s+кращий\s+за\s+перенаправлення:\s+\*\*`Ctrl\+L`\*\*\s+просто\s+під\s+час\s+роботи
+  klas: A
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: Stop/resume log output saved to file
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Ctrl+L це власний спосіб ліпший за перенаправлення через tee.
+  title: 'T-25-036: Для `idf.py monitor` є **власний спосіб**, і він кращий за п'
+  match: Для\s+`idf\.py\s+monitor`\s+є\s+\*\*власний\s+спосіб\*\*,\s+і\s+він\s+кращий\s+за\s+перенаправлення:\s+\*\*`Ctrl\+L`\*\*\s+просто\s+під\s+час\s+роботи
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: Stop/resume log output saved to file
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Ctrl+L це власний спосіб ліпший за перенаправлення через tee.
+  sha:
+  - f0196438
+- nazva: 'T-26-044: Тому **на RISC-V лог знімають `idf.py monitor`**, не чимось '
+  zbih: Тому\s+\*\*на\s+RISC\-V\s+лог\s+знімають\s+`idf\.py\s+monitor`\*\*,\s+не\s+чимось\s+іншим
+  klas: A
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: If an ESP-IDF app crashes and panics, a register dump and backtrace are produced
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: IDF Monitor використовується на обох архітектурах для логування та декодування
+    backtrace.
+  title: 'T-26-044: Тому **на RISC-V лог знімають `idf.py monitor`**, не чимось '
+  match: Тому\s+\*\*на\s+RISC\-V\s+лог\s+знімають\s+`idf\.py\s+monitor`\*\*,\s+не\s+чимось\s+іншим
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: If an ESP-IDF app crashes and panics, a register dump and backtrace are produced
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: IDF Monitor використовується на обох архітектурах для логування та декодування backtrace.
+  sha:
+  - b1776ff2
+- nazva: 'T-26-035: **Автоматично.** `idf.py monitor`, запущений з каталогу проє'
+  zbih: \*\*Автоматично\.\*\*\s+`idf\.py\s+monitor`,\s+запущений\s+з\s+каталогу\s+проєкту,\s+робить\s+це\s+на\s+льоту:\s+під\s+дампом\s+одразу\s+з'являю
+  klas: A
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: IDF Monitor can be launched from an ESP-IDF project by running idf.py monitor
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: IDF Monitor запускається з каталогу проєкту та автоматично декодує адреси на льоту.
+  title: 'T-26-035: **Автоматично.** `idf.py monitor`, запущений з каталогу проє'
+  match: \*\*Автоматично\.\*\*\s+`idf\.py\s+monitor`,\s+запущений\s+з\s+каталогу\s+проєкту,\s+робить\s+це\s+на\s+льоту:\s+під\s+дампом\s+одразу\s+з'являю
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: IDF Monitor can be launched from an ESP-IDF project by running idf.py monitor
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: IDF Monitor запускається з каталогу проєкту та автоматично декодує адреси на льоту.
+  sha:
+  - dbe3d911
+- nazva: 'T-11-097: - **IntelliSense**, налаштований на конкретний чип: автодопо'
+  zbih: \-\s+\*\*IntelliSense\*\*,\s+налаштований\s+на\s+конкретний\s+чип:\s+автодоповнення\s+знає,\s+які\s+функції\s+доступні\s+саме\s+тут;\s+\-\s+\*\*на
+  klas: A
+  dzherelo: source-cache/51b28bff-idf-monitor.rst
+  cytata: Whenever the chip outputs a hexadecimal address that points to executable code,
+    IDF monitor looks up the location in the source code
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує вбудований монітор з розшифровкою backtrace адрес.
+  title: 'T-11-097: - **IntelliSense**, налаштований на конкретний чип: автодопо'
+  match: \-\s+\*\*IntelliSense\*\*,\s+налаштований\s+на\s+конкретний\s+чип:\s+автодоповнення\s+знає,\s+які\s+функції\s+доступні\s+саме\s+тут;\s+\-\s+\*\*на
+  status: verbatim
+  source: source-cache/51b28bff-idf-monitor.rst
+  quote: Whenever the chip outputs a hexadecimal address that points to executable code, IDF
+    monitor looks up the location in the source code
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує вбудований монітор з розшифровкою backtrace адрес.
+  sha:
+  - 4d081911
+- nazva: 'T-E-073: MAX31855 · Що дає → термопара'
+  zbih: MAX31855\s+·\s+Що\s+дає\s+→\s+термопара
+  klas: A
+  dzherelo: source-cache/max31855.pdf
+  cytata: Thermocouple-to-Digital Converter
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: MAX31855 це конвертер для термопар.
+  title: 'T-E-073: MAX31855 · Що дає → термопара'
+  match: MAX31855\s+·\s+Що\s+дає\s+→\s+термопара
+  status: verbatim
+  source: source-cache/max31855.pdf
+  quote: Thermocouple-to-Digital Converter
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: MAX31855 це конвертер для термопар.
+  sha:
+  - bd6d2fd1
+- nazva: 'T-44-005: `BME280`, `SSD1306`, `MAX485`, `A4988`'
+  zbih: '`BME280`,\s+`SSD1306`,\s+`MAX485`,\s+`A4988`'
+  klas: A
+  dzherelo: source-cache/8e2fcbf9-bme280.c
+  cytata: "/*! @file bme280.c\n * @brief Sensor driver for BME280 sensor\n */\n"
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Файл є драйвером BME280, що підтверджує це як реальний модуль.
+  title: 'T-44-005: `BME280`, `SSD1306`, `MAX485`, `A4988`'
+  match: '`BME280`,\s+`SSD1306`,\s+`MAX485`,\s+`A4988`'
+  status: verbatim
+  source: source-cache/8e2fcbf9-bme280.c
+  quote: "/*! @file bme280.c\n * @brief Sensor driver for BME280 sensor\n */\n"
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Файл є драйвером BME280, що підтверджує це як реальний модуль.
+- nazva: 'T-E-007: BME280 · Що дає → тиск, T, вологість'
+  zbih: BME280\s+·\s+Що\s+дає\s+→\s+тиск,\s+T,\s+вологість
+  klas: A
+  dzherelo: source-cache/8e2fcbf9-bme280.c
+  cytata: "/* Array to store the pressure, temperature and humidity data read from\n * the\
+    \ sensor\n */\n"
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Вказує на три вимірювання - тиск, температуру, вологість.
+  title: 'T-E-007: BME280 · Що дає → тиск, T, вологість'
+  match: BME280\s+·\s+Що\s+дає\s+→\s+тиск,\s+T,\s+вологість
+  status: verbatim
+  source: source-cache/8e2fcbf9-bme280.c
+  quote: "/* Array to store the pressure, temperature and humidity data read from\n * the\
+    \ sensor\n */\n"
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Вказує на три вимірювання - тиск, температуру, вологість.
+- nazva: 'T-45-019: **BMP280 / BME280** — атмосферний тиск'
+  zbih: \*\*BMP280\s+/\s+BME280\*\*\s+—\s+атмосферний\s+тиск
+  klas: A
+  dzherelo: source-cache/8e2fcbf9-bme280.c
+  cytata: 'static uint32_t compensate_pressure(const struct bme280_uncomp_data *uncomp_data,
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Вказує на вимірювання атмосферного тиску.
+  title: 'T-45-019: **BMP280 / BME280** — атмосферний тиск'
+  match: \*\*BMP280\s+/\s+BME280\*\*\s+—\s+атмосферний\s+тиск
+  status: verbatim
+  source: source-cache/8e2fcbf9-bme280.c
+  quote: 'static uint32_t compensate_pressure(const struct bme280_uncomp_data *uncomp_data,
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Вказує на вимірювання атмосферного тиску.
+- nazva: 'T-44-054: Для SPI — прочитати регістр ідентифікації, який є майже в ко'
+  zbih: Для\s+SPI\s+—\s+прочитати\s+регістр\s+ідентифікації,\s+який\s+є\s+майже\s+в\s+кожної\s+мікросхеми\s+\(в\s+BME280\s+це\s+`0xD0`,\s+що\s+має\s+поверн
+  klas: A
+  dzherelo: source-cache/8e2fcbf9-bme280.c
+  cytata: '/* Read the chip-id of bme280 sensor */
+
+    rslt = bme280_get_regs(BME280_REG_CHIP_ID, &chip_id, 1, dev);
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Підтверджує існування регістру ідентифікації, специфічні значення 0xD0/0x60 у заголовному
+    файлі.
+  title: 'T-44-054: Для SPI — прочитати регістр ідентифікації, який є майже в ко'
+  match: Для\s+SPI\s+—\s+прочитати\s+регістр\s+ідентифікації,\s+який\s+є\s+майже\s+в\s+кожної\s+мікросхеми\s+\(в\s+BME280\s+це\s+`0xD0`,\s+що\s+має\s+поверн
+  status: verbatim
+  source: source-cache/8e2fcbf9-bme280.c
+  quote: '/* Read the chip-id of bme280 sensor */
+
+    rslt = bme280_get_regs(BME280_REG_CHIP_ID, &chip_id, 1, dev);
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Підтверджує існування регістру ідентифікації, специфічні значення 0xD0/0x60 у заголовному
+    файлі.
+- nazva: 'T-E-010: BMP280 · Що дає → тиск, T — **без** вологості'
+  zbih: BMP280\s+·\s+Що\s+дає\s+→\s+тиск,\s+T\s+—\s+\*\*без\*\*\s+вологості
+  klas: A
+  dzherelo: source-cache/bmp280.pdf
+  cytata: The BMP280 is an absolute barometric pressure sensor especially designed for mobile
+    applications.
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Таблиця 1 показує Pressure resolution (0.16 Pa) та Temperature resolution (0.01°C),
+    але немає humidity
+  title: 'T-E-010: BMP280 · Що дає → тиск, T — **без** вологості'
+  match: BMP280\s+·\s+Що\s+дає\s+→\s+тиск,\s+T\s+—\s+\*\*без\*\*\s+вологості
+  status: verbatim
+  source: source-cache/bmp280.pdf
+  quote: The BMP280 is an absolute barometric pressure sensor especially designed for mobile
+    applications.
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Таблиця 1 показує Pressure resolution (0.16 Pa) та Temperature resolution (0.01°C),
+    але немає humidity
+- nazva: 'T-45-011: **BMP280** — те саме без вологості, дешевший'
+  zbih: \*\*BMP280\*\*\s+—\s+те\s+саме\s+без\s+вологості,\s+дешевший
+  klas: A
+  dzherelo: source-cache/bmp280.pdf
+  cytata: The BMP280 is an absolute barometric pressure sensor especially designed for mobile
+    applications.
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Без вологості - виміри тільки тиск та температуру (див. таблицю 1)
+  title: 'T-45-011: **BMP280** — те саме без вологості, дешевший'
+  match: \*\*BMP280\*\*\s+—\s+те\s+саме\s+без\s+вологості,\s+дешевший
+  status: verbatim
+  source: source-cache/bmp280.pdf
+  quote: The BMP280 is an absolute barometric pressure sensor especially designed for mobile
+    applications.
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Без вологості - виміри тільки тиск та температуру (див. таблицю 1)
+- nazva: 'T-48-069: L298N втрачає близько двох вольтів на собі — для нового проє'
+  zbih: L298N\s+втрачає\s+близько\s+двох\s+вольтів\s+на\s+собі\s+—\s+для\s+нового\s+проєкту\s+беріть\s+DRV8833\s+або\s+TB6612
+  klas: A
+  dzherelo: source-cache/l298n.pdf
+  cytata: LOW SATURATION VOLTAGE
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: ELECTRICAL CHARACTERISTICS показує Total Drop мін. 1.80V при IL=1A, що підтверджує
+    ~2В втрат
+  title: 'T-48-069: L298N втрачає близько двох вольтів на собі — для нового проє'
+  match: L298N\s+втрачає\s+близько\s+двох\s+вольтів\s+на\s+собі\s+—\s+для\s+нового\s+проєкту\s+беріть\s+DRV8833\s+або\s+TB6612
+  status: verbatim
+  source: source-cache/l298n.pdf
+  quote: LOW SATURATION VOLTAGE
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: ELECTRICAL CHARACTERISTICS показує Total Drop мін. 1.80V при IL=1A, що підтверджує
+    ~2В втрат
+  sha:
+  - ba48347e
+- nazva: 'T-19-086: Для OTA потрібен саме образ застосунку, без бутлоадера і таб'
+  zbih: Для\s+OTA\s+потрібен\s+саме\s+образ\s+застосунку,\s+без\s+бутлоадера\s+і\s+таблиці\s+розділів
+  klas: A
+  dzherelo: source-cache/a4dbe955-bootloader.rst
+  cytata: 'The OTA (over the air) update process can flash new apps in the field but cannot
+    flash a new bootloader.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що OTA оновлює тільки додаток, не бутлоадер.
+  title: 'T-19-086: Для OTA потрібен саме образ застосунку, без бутлоадера і таб'
+  match: Для\s+OTA\s+потрібен\s+саме\s+образ\s+застосунку,\s+без\s+бутлоадера\s+і\s+таблиці\s+розділів
+  status: verbatim
+  source: source-cache/a4dbe955-bootloader.rst
+  quote: 'The OTA (over the air) update process can flash new apps in the field but cannot
+    flash a new bootloader.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що OTA оновлює тільки додаток, не бутлоадер.
+  sha:
+  - e0ec9d02
+- nazva: 'T-23-066: За один цикл скидання звідси дістається: причина попередньог'
+  zbih: За\s+один\s+цикл\s+скидання\s+звідси\s+дістається:\s+причина\s+попереднього\s+скидання,\s+версія\s+ESP\-IDF,\s+обсяг\s+флешу\s+очима\s+бутл
+  klas: A
+  dzherelo: source-cache/a4dbe955-bootloader.rst
+  cytata: 'I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Лог бутлоадера показує версію ESP-IDF, обсяг флешу та таблицю розділів.
+  title: 'T-23-066: За один цикл скидання звідси дістається: причина попередньог'
+  match: За\s+один\s+цикл\s+скидання\s+звідси\s+дістається:\s+причина\s+попереднього\s+скидання,\s+версія\s+ESP\-IDF,\s+обсяг\s+флешу\s+очима\s+бутл
+  status: verbatim
+  source: source-cache/a4dbe955-bootloader.rst
+  quote: 'I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Лог бутлоадера показує версію ESP-IDF, обсяг флешу та таблицю розділів.
+  sha:
+  - fdca5085
+- nazva: 'T-18-001: Флеш ESP32 — не один суцільний шматок пам''яті, а набір облас'
+  zbih: Флеш\s+ESP32\s+—\s+не\s+один\s+суцільний\s+шматок\s+пам'яті,\s+а\s+набір\s+областей\s+із\s+різним\s+призначенням:\s+бутлоадер,\s+таблиця\s+роз
+  klas: A
+  dzherelo: source-cache/a4dbe955-bootloader.rst
+  cytata: 'Select the application partition to boot, based on the partition table and ota_data
+    (if any);
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що флеш містить partition table та різні області, хоча явно
+    не описує всі компоненти.
+  title: 'T-18-001: Флеш ESP32 — не один суцільний шматок пам''яті, а набір облас'
+  match: Флеш\s+ESP32\s+—\s+не\s+один\s+суцільний\s+шматок\s+пам'яті,\s+а\s+набір\s+областей\s+із\s+різним\s+призначенням:\s+бутлоадер,\s+таблиця\s+роз
+  status: verbatim
+  source: source-cache/a4dbe955-bootloader.rst
+  quote: 'Select the application partition to boot, based on the partition table and ota_data
+    (if any);
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що флеш містить partition table та різні області, хоча явно
+    не описує всі компоненти.
+  sha:
+  - 81b76c44
+- nazva: 'T-22-055: Другий бутлоадер безкоштовно друкує версію ESP-IDF, обсяг фл'
+  zbih: Другий\s+бутлоадер\s+безкоштовно\s+друкує\s+версію\s+ESP\-IDF,\s+обсяг\s+флешу,\s+який\s+він\s+бачить,\s+і\s+\*\*всю\s+таблицю\s+розділів\s+з\s+а
+  klas: A
+  dzherelo: source-cache/a4dbe955-bootloader.rst
+  cytata: 'I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Бутлоадер виводить версію ESP-IDF, обсяг флешу та таблицю розділів безкоштовно.
+  title: 'T-22-055: Другий бутлоадер безкоштовно друкує версію ESP-IDF, обсяг фл'
+  match: Другий\s+бутлоадер\s+безкоштовно\s+друкує\s+версію\s+ESP\-IDF,\s+обсяг\s+флешу,\s+який\s+він\s+бачить,\s+і\s+\*\*всю\s+таблицю\s+розділів\s+з\s+а
+  status: verbatim
+  source: source-cache/a4dbe955-bootloader.rst
+  quote: 'I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Бутлоадер виводить версію ESP-IDF, обсяг флешу та таблицю розділів безкоштовно.
+  sha:
+  - d745dfcb
+- nazva: 'T-D-106: Звідси безкоштовно читається: **версія ESP-IDF**, **обсяг фл'
+  zbih: Звідси\s+безкоштовно\s+читається:\s+\*\*версія\s+ESP\-IDF\*\*,\s+\*\*обсяг\s+флешу\s+очима\s+бутлоадера\*\*\s+і\s+\*\*вся\s+таблиця\s+розділів\s+з
+  klas: A
+  dzherelo: source-cache/a4dbe955-bootloader.rst
+  cytata: 'I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Лог бутлоадера показує версію ESP-IDF, обсяг флешу та адреси розділів — готова
+    відповідь.
+  title: 'T-D-106: Звідси безкоштовно читається: **версія ESP-IDF**, **обсяг фл'
+  match: Звідси\s+безкоштовно\s+читається:\s+\*\*версія\s+ESP\-IDF\*\*,\s+\*\*обсяг\s+флешу\s+очима\s+бутлоадера\*\*\s+і\s+\*\*вся\s+таблиця\s+розділів\s+з
+  status: verbatim
+  source: source-cache/a4dbe955-bootloader.rst
+  quote: 'I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Лог бутлоадера показує версію ESP-IDF, обсяг флешу та адреси розділів — готова відповідь.
+  sha:
+  - 825633b5
+- nazva: 'T-50-026: Важливо розуміти межу: шифрування NVS має сенс **разом із** '
+  zbih: Важливо\s+розуміти\s+межу:\s+шифрування\s+NVS\s+має\s+сенс\s+\*\*разом\s+із\*\*\s+Flash\s+Encryption
+  klas: A
+  dzherelo: source-cache/c02027a1-nvs_flash.rst
+  cytata: 'data can still be stored in encrypted form if NVS encryption is used together with
+    {IDF_TARGET_NAME} flash encryption
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що шифрування NVS має сенс разом з Flash Encryption.
+  title: 'T-50-026: Важливо розуміти межу: шифрування NVS має сенс **разом із** '
+  match: Важливо\s+розуміти\s+межу:\s+шифрування\s+NVS\s+має\s+сенс\s+\*\*разом\s+із\*\*\s+Flash\s+Encryption
+  status: verbatim
+  source: source-cache/c02027a1-nvs_flash.rst
+  quote: 'data can still be stored in encrypted form if NVS encryption is used together with
+    {IDF_TARGET_NAME} flash encryption
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що шифрування NVS має сенс разом з Flash Encryption.
+  sha:
+  - ecb77fc0
+- nazva: 'T-04-105: DAC · S2 → **2**'
+  zbih: DAC\s+·\s+S2\s+→\s+\*\*2\*\*
+  klas: A
+  dzherelo: source-cache/f48eaf67-dac.rst
+  cytata: 'The DAC on {IDF_TARGET_NAME} has two channels.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що DAC має 2 канали
+  title: 'T-04-105: DAC · S2 → **2**'
+  match: DAC\s+·\s+S2\s+→\s+\*\*2\*\*
+  status: verbatim
+  source: source-cache/f48eaf67-dac.rst
+  quote: 'The DAC on {IDF_TARGET_NAME} has two channels.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що DAC має 2 канали
+  sha:
+  - d882c9c3
+- nazva: 'T-K09-009: | 25, 26 | єдині DAC-виходи |'
+  zbih: \|\s+25,\s+26\s+\|\s+єдині\s+DAC\-виходи\s+\|
+  klas: A
+  dzherelo: source-cache/f48eaf67-dac.rst
+  cytata: '{IDF_TARGET_DAC_CH_1: default = "Not Updated!", esp32 = "GPIO25", esp32s2 = "GPIO17"}
+
+    {IDF_TARGET_DAC_CH_2: default = "Not Updated!", esp32 = "GPIO26", esp32s2 = "GPIO18"}
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: GPIO25 і GPIO26 — дійсно єдині DAC-виходи на ESP32
+  title: 'T-K09-009: | 25, 26 | єдині DAC-виходи |'
+  match: \|\s+25,\s+26\s+\|\s+єдині\s+DAC\-виходи\s+\|
+  status: verbatim
+  source: source-cache/f48eaf67-dac.rst
+  quote: '{IDF_TARGET_DAC_CH_1: default = "Not Updated!", esp32 = "GPIO25", esp32s2 = "GPIO17"}
+
+    {IDF_TARGET_DAC_CH_2: default = "Not Updated!", esp32 = "GPIO26", esp32s2 = "GPIO18"}
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: GPIO25 і GPIO26 — дійсно єдині DAC-виходи на ESP32
+  sha:
+  - e3e28f1d
+- nazva: 'T-04-050: DAC · Що це → [[classic]] [[S2]] справжній аналоговий вихід'
+  zbih: DAC\s+·\s+Що\s+це\s+→\s+\[\[classic\]\]\s+\[\[S2\]\]\s+справжній\s+аналоговий\s+вихід
+  klas: A
+  dzherelo: source-cache/f48eaf67-dac.rst
+  cytata: 'has two 8-bit DAC (digital to analog converter) channels respectively connected
+    to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що DAC — справжній аналоговий вихід
+  title: 'T-04-050: DAC · Що це → [[classic]] [[S2]] справжній аналоговий вихід'
+  match: DAC\s+·\s+Що\s+це\s+→\s+\[\[classic\]\]\s+\[\[S2\]\]\s+справжній\s+аналоговий\s+вихід
+  status: verbatim
+  source: source-cache/f48eaf67-dac.rst
+  quote: 'has two 8-bit DAC (digital to analog converter) channels respectively connected
+    to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що DAC — справжній аналоговий вихід
+  sha:
+  - 2f606168
+- nazva: 'T-04-150: DAC — тільки classic і S2'
+  zbih: DAC\s+—\s+тільки\s+classic\s+і\s+S2
+  klas: A
+  dzherelo: source-cache/f48eaf67-dac.rst
+  cytata: 'On ESP32, the DAC digital controller can be connected internally to the I2S0
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ присвячений DAC на ESP32 та ESP32-S2, що підтверджує обмеження
+  title: 'T-04-150: DAC — тільки classic і S2'
+  match: DAC\s+—\s+тільки\s+classic\s+і\s+S2
+  status: verbatim
+  source: source-cache/f48eaf67-dac.rst
+  quote: 'On ESP32, the DAC digital controller can be connected internally to the I2S0
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ присвячений DAC на ESP32 та ESP32-S2, що підтверджує обмеження
+  sha:
+  - 598994be
+- nazva: 'T-04-104: DAC · classic → **2**'
+  zbih: DAC\s+·\s+classic\s+→\s+\*\*2\*\*
+  klas: A
+  dzherelo: source-cache/f48eaf67-dac.rst
+  cytata: 'The DAC on {IDF_TARGET_NAME} has two channels.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: DAC має 2 канали
+  title: 'T-04-104: DAC · classic → **2**'
+  match: DAC\s+·\s+classic\s+→\s+\*\*2\*\*
+  status: verbatim
+  source: source-cache/f48eaf67-dac.rst
+  quote: 'The DAC on {IDF_TARGET_NAME} has two channels.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: DAC має 2 канали
+  sha:
+  - 8b6b6bdd
+- nazva: 'T-04-132: **DAC є лише в classic і S2.** Справжній аналоговий вихід бі'
+  zbih: \*\*DAC\s+є\s+лише\s+в\s+classic\s+і\s+S2\.\*\*\s+Справжній\s+аналоговий\s+вихід\s+більше\s+ніде\s+не\s+з'явився
+  klas: A
+  dzherelo: source-cache/f48eaf67-dac.rst
+  cytata: '{IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує DAC саме для цих моделей
+  title: 'T-04-132: **DAC є лише в classic і S2.** Справжній аналоговий вихід бі'
+  match: \*\*DAC\s+є\s+лише\s+в\s+classic\s+і\s+S2\.\*\*\s+Справжній\s+аналоговий\s+вихід\s+більше\s+ніде\s+не\s+з'явився
+  status: verbatim
+  source: source-cache/f48eaf67-dac.rst
+  quote: '{IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує DAC саме для цих моделей
+  sha:
+  - 639805c9
+- nazva: 'T-18-035: python $IDF_PATH/components/partition_table/gen_esp32part.py'
+  zbih: python\s+\$IDF_PATH/components/partition_table/gen_esp32part\.py\s+pt\.bin
+  klas: A
+  dzherelo: source-cache/4aac28c3-partition-tables.rst
+  cytata: 'python gen_esp32part.py input_partitions.csv binary_partitions.bin
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує команду gen_esp32part.py
+  title: 'T-18-035: python $IDF_PATH/components/partition_table/gen_esp32part.py'
+  match: python\s+\$IDF_PATH/components/partition_table/gen_esp32part\.py\s+pt\.bin
+  status: verbatim
+  source: source-cache/4aac28c3-partition-tables.rst
+  quote: 'python gen_esp32part.py input_partitions.csv binary_partitions.bin
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує команду gen_esp32part.py
+  sha:
+  - 4438754b
+- nazva: 'T-24-011: python $IDF_PATH/components/partition_table/gen_esp32part.py'
+  zbih: python\s+\$IDF_PATH/components/partition_table/gen_esp32part\.py\s+pt\.bin
+  klas: A
+  dzherelo: source-cache/4aac28c3-partition-tables.rst
+  cytata: 'python gen_esp32part.py input_partitions.csv binary_partitions.bin
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Те саме, що й T-18-035
+  title: 'T-24-011: python $IDF_PATH/components/partition_table/gen_esp32part.py'
+  match: python\s+\$IDF_PATH/components/partition_table/gen_esp32part\.py\s+pt\.bin
+  status: verbatim
+  source: source-cache/4aac28c3-partition-tables.rst
+  quote: 'python gen_esp32part.py input_partitions.csv binary_partitions.bin
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Те саме, що й T-18-035
+  sha:
+  - 4438754b
+- nazva: 'T-26-101: Потребує розділу типу `coredump` у таблиці розділів (розділ '
+  zbih: Потребує\s+розділу\s+типу\s+`coredump`\s+у\s+таблиці\s+розділів\s+\(розділ\s+18\)
+  klas: A
+  dzherelo: source-cache/4aac28c3-partition-tables.rst
+  cytata: 'coredump (0x03) is for storing core dumps while using a custom partition table
+    CSV file.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує coredump розділ
+  title: 'T-26-101: Потребує розділу типу `coredump` у таблиці розділів (розділ '
+  match: Потребує\s+розділу\s+типу\s+`coredump`\s+у\s+таблиці\s+розділів\s+\(розділ\s+18\)
+  status: verbatim
+  source: source-cache/4aac28c3-partition-tables.rst
+  quote: 'coredump (0x03) is for storing core dumps while using a custom partition table CSV
+    file.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує coredump розділ
+  sha:
+  - a4784398
+- nazva: 'T-C-121: python $IDF_PATH/components/partition_table/gen_esp32part.py'
+  zbih: python\s+\$IDF_PATH/components/partition_table/gen_esp32part\.py\s+pt\.bin
+  klas: A
+  dzherelo: source-cache/4aac28c3-partition-tables.rst
+  cytata: 'python gen_esp32part.py input_partitions.csv binary_partitions.bin
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Команда для генерування таблиці розділів
+  title: 'T-C-121: python $IDF_PATH/components/partition_table/gen_esp32part.py'
+  match: python\s+\$IDF_PATH/components/partition_table/gen_esp32part\.py\s+pt\.bin
+  status: verbatim
+  source: source-cache/4aac28c3-partition-tables.rst
+  quote: 'python gen_esp32part.py input_partitions.csv binary_partitions.bin
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Команда для генерування таблиці розділів
+  sha:
+  - 4438754b
+- nazva: 'T-K05-008: `partition-table.bin` · Що це → таблиця розділів'
+  zbih: '`partition\-table\.bin`\s+·\s+Що\s+це\s+→\s+таблиця\s+розділів'
+  klas: A
+  dzherelo: source-cache/4aac28c3-partition-tables.rst
+  cytata: 'A single {IDF_TARGET_NAME}''s flash can contain multiple apps, as well as many
+    different kinds of data (calibration data, filesystems, parameter storage, etc). For this
+    reason a partition table is flashed
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує partition table як таблицю розділів
+  title: 'T-K05-008: `partition-table.bin` · Що це → таблиця розділів'
+  match: '`partition\-table\.bin`\s+·\s+Що\s+це\s+→\s+таблиця\s+розділів'
+  status: verbatim
+  source: source-cache/4aac28c3-partition-tables.rst
+  quote: 'A single {IDF_TARGET_NAME}''s flash can contain multiple apps, as well as many different
+    kinds of data (calibration data, filesystems, parameter storage, etc). For this reason
+    a partition table is flashed
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує partition table як таблицю розділів
+  sha:
+  - 01aad120
+- nazva: 'T-19-097: Rollback — окремий механізм, і він працює лише тоді, коли пі'
+  zbih: Rollback\s+—\s+окремий\s+механізм,\s+і\s+він\s+працює\s+лише\s+тоді,\s+коли\s+підтвердження\s+справності\s+стоїть\s+після\s+виконання\s+реал
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The following code serves detect the initial boot for an application after the
+    OTA update. Upon the first boot, the application checks its state and performs diagnostics.
+    If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback
+    to confirm the operability of the application.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ каже, що функцію підтвердження потрібно викликати ПІСЛЯ виконання діагностики,
+    а не на початку.
+  title: 'T-19-097: Rollback — окремий механізм, і він працює лише тоді, коли пі'
+  match: Rollback\s+—\s+окремий\s+механізм,\s+і\s+він\s+працює\s+лише\s+тоді,\s+коли\s+підтвердження\s+справності\s+стоїть\s+після\s+виконання\s+реал
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The following code serves detect the initial boot for an application after the OTA
+    update. Upon the first boot, the application checks its state and performs diagnostics.
+    If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback
+    to confirm the operability of the application.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ каже, що функцію підтвердження потрібно викликати ПІСЛЯ виконання діагностики,
+    а не на початку.
+  sha:
+  - 12fe0ec3
+- nazva: 'T-19-098: OTA не оновлює таблицю розділів'
+  zbih: OTA\s+не\s+оновлює\s+таблицю\s+розділів
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The OTA operation functions write a new app firmware image to whichever OTA app
+    slot that is currently not selected for booting. Once the image is verified, the OTA Data
+    partition is updated to specify that this image should be used for the next boot.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ каже, що OTA оновлює лише образ застосунку й OTA Data partition, але не
+    таблицю розділів.
+  title: 'T-19-098: OTA не оновлює таблицю розділів'
+  match: OTA\s+не\s+оновлює\s+таблицю\s+розділів
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The OTA operation functions write a new app firmware image to whichever OTA app
+    slot that is currently not selected for booting. Once the image is verified, the OTA Data
+    partition is updated to specify that this image should be used for the next boot.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ каже, що OTA оновлює лише образ застосунку й OTA Data partition, але не таблицю
+    розділів.
+  sha:
+  - 726f7ae8
+- nazva: 'T-19-062: OTA — це кілька хвилин безперервної роботи радіо на прийом п'
+  zbih: OTA\s+—\s+це\s+кілька\s+хвилин\s+безперервної\s+роботи\s+радіо\s+на\s+прийом\s+плюс\s+запис\s+у\s+флеш
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The OTA update mechanism allows a device to update itself based on data received
+    while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що OTA передбачає отримання даних (radio reception) та запис
+    у флеш.
+  title: 'T-19-062: OTA — це кілька хвилин безперервної роботи радіо на прийом п'
+  match: OTA\s+—\s+це\s+кілька\s+хвилин\s+безперервної\s+роботи\s+радіо\s+на\s+прийом\s+плюс\s+запис\s+у\s+флеш
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The OTA update mechanism allows a device to update itself based on data received
+    while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що OTA передбачає отримання даних (radio reception) та запис
+    у флеш.
+  sha:
+  - 588b1000
+- nazva: 'T-19-001: OTA (over-the-air) — оновлення прошивки без фізичного доступ'
+  zbih: OTA\s+\(over\-the\-air\)\s+—\s+оновлення\s+прошивки\s+без\s+фізичного\s+доступу\s+до\s+плати
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The OTA update mechanism allows a device to update itself based on data received
+    while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ визначає OTA як механізм оновлення без фізичного доступу.
+  title: 'T-19-001: OTA (over-the-air) — оновлення прошивки без фізичного доступ'
+  match: OTA\s+\(over\-the\-air\)\s+—\s+оновлення\s+прошивки\s+без\s+фізичного\s+доступу\s+до\s+плати
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The OTA update mechanism allows a device to update itself based on data received
+    while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ визначає OTA як механізм оновлення без фізичного доступу.
+  sha:
+  - 609f0617
+- nazva: 'T-19-029: OTA оновлює лише образ застосунку — таблиця розділів через O'
+  zbih: OTA\s+оновлює\s+лише\s+образ\s+застосунку\s+—\s+таблиця\s+розділів\s+через\s+OTA\s+не\s+оновлюється\s+ніколи
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The OTA operation functions write a new app firmware image to whichever OTA app
+    slot that is currently not selected for booting. Once the image is verified, the OTA Data
+    partition is updated to specify that this image should be used for the next boot.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що OTA оновлює лише образ застосунку.
+  title: 'T-19-029: OTA оновлює лише образ застосунку — таблиця розділів через O'
+  match: OTA\s+оновлює\s+лише\s+образ\s+застосунку\s+—\s+таблиця\s+розділів\s+через\s+OTA\s+не\s+оновлюється\s+ніколи
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The OTA operation functions write a new app firmware image to whichever OTA app
+    slot that is currently not selected for booting. Once the image is verified, the OTA Data
+    partition is updated to specify that this image should be used for the next boot.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що OTA оновлює лише образ застосунку.
+  sha:
+  - 7678b715
+- nazva: 'T-50-067: - креденшели в NVS, унікальні на екземпляр — не в коді; - жо'
+  zbih: \-\s+креденшели\s+в\s+NVS,\s+унікальні\s+на\s+екземпляр\s+—\s+не\s+в\s+коді;\s+\-\s+жодних\s+дефолтних\s+паролів;\s+пароль\s+на\s+веб\-інтерфейс\s+і
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The verification of signed OTA updates can be performed even without enabling hardware
+    secure boot.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує наявність механізмів безпеки для OTA.
+  title: 'T-50-067: - креденшели в NVS, унікальні на екземпляр — не в коді; - жо'
+  match: \-\s+креденшели\s+в\s+NVS,\s+унікальні\s+на\s+екземпляр\s+—\s+не\s+в\s+коді;\s+\-\s+жодних\s+дефолтних\s+паролів;\s+пароль\s+на\s+веб\-інтерфейс\s+і
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The verification of signed OTA updates can be performed even without enabling hardware
+    secure boot.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує наявність механізмів безпеки для OTA.
+  sha:
+  - b662f0eb
+- nazva: 'T-18-105: **Зміна розбивки несумісна з OTA-оновленням.** Пристрій у по'
+  zbih: \*\*Зміна\s+розбивки\s+несумісна\s+з\s+OTA\-оновленням\.\*\*\s+Пристрій\s+у\s+полі\s+отримує\s+через\s+OTA\s+лише\s+новий\s+образ\s+застосунку
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The OTA operation functions write a new app firmware image to whichever OTA app
+    slot that is currently not selected for booting. Once the image is verified, the OTA Data
+    partition is updated to specify that this image should be used for the next boot.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що OTA оновлює лише образ застосунку, таблиця розділів не
+    оновлюється.
+  title: 'T-18-105: **Зміна розбивки несумісна з OTA-оновленням.** Пристрій у по'
+  match: \*\*Зміна\s+розбивки\s+несумісна\s+з\s+OTA\-оновленням\.\*\*\s+Пристрій\s+у\s+полі\s+отримує\s+через\s+OTA\s+лише\s+новий\s+образ\s+застосунку
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The OTA operation functions write a new app firmware image to whichever OTA app
+    slot that is currently not selected for booting. Once the image is verified, the OTA Data
+    partition is updated to specify that this image should be used for the next boot.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що OTA оновлює лише образ застосунку, таблиця розділів не оновлюється.
+  sha:
+  - 85fee83d
+- nazva: 'T-19-024: Головне проєктне обмеження OTA — **застосунок займає місце д'
+  zbih: Головне\s+проєктне\s+обмеження\s+OTA\s+—\s+\*\*застосунок\s+займає\s+місце\s+двічі\*\*
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що застосунок займає місце двічі в двох OTA слотах.
+  title: 'T-19-024: Головне проєктне обмеження OTA — **застосунок займає місце д'
+  match: Головне\s+проєктне\s+обмеження\s+OTA\s+—\s+\*\*застосунок\s+займає\s+місце\s+двічі\*\*
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що застосунок займає місце двічі в двох OTA слотах.
+  sha:
+  - 9fb277d5
+- nazva: 'T-19-005: Розбивка з OTA має **два розділи для застосунку** замість од'
+  zbih: Розбивка\s+з\s+OTA\s+має\s+\*\*два\s+розділи\s+для\s+застосунку\*\*\s+замість\s+одного
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Розбивка для OTA вимагає щонайменше двох розділів (ota_0 та ota_1)
+  title: 'T-19-005: Розбивка з OTA має **два розділи для застосунку** замість од'
+  match: Розбивка\s+з\s+OTA\s+має\s+\*\*два\s+розділи\s+для\s+застосунку\*\*\s+замість\s+одного
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Розбивка для OTA вимагає щонайменше двох розділів (ota_0 та ota_1)
+  sha:
+  - '76464490'
+- nazva: 'T-50-036: OTA — це канал, яким у пристрій потрапляє код'
+  zbih: OTA\s+—\s+це\s+канал,\s+яким\s+у\s+пристрій\s+потрапляє\s+код
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The OTA update mechanism allows a device to update itself based on data received
+    while the normal firmware is running
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: OTA описано як механізм, через який пристрій отримує дані для оновлення
+  title: 'T-50-036: OTA — це канал, яким у пристрій потрапляє код'
+  match: OTA\s+—\s+це\s+канал,\s+яким\s+у\s+пристрій\s+потрапляє\s+код
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The OTA update mechanism allows a device to update itself based on data received
+    while the normal firmware is running
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: OTA описано як механізм, через який пристрій отримує дані для оновлення
+  sha:
+  - 5da2fab6
+- nazva: 'T-58-050: **OTA з відкатом**, якщо пристрій має оновлюватися'
+  zbih: \*\*OTA\s+з\s+відкатом\*\*,\s+якщо\s+пристрій\s+має\s+оновлюватися
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'The main purpose of the application rollback is to keep the device working after
+    the update.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: OTA має функцію відкату для збереження роботи пристрою
+  title: 'T-58-050: **OTA з відкатом**, якщо пристрій має оновлюватися'
+  match: \*\*OTA\s+з\s+відкатом\*\*,\s+якщо\s+пристрій\s+має\s+оновлюватися
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'The main purpose of the application rollback is to keep the device working after
+    the update.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: OTA має функцію відкату для збереження роботи пристрою
+  sha:
+  - 66283cb7
+- nazva: 'T-58-065: Випробування зникнення живлення варто робити **грубо**: вими'
+  zbih: Випробування\s+зникнення\s+живлення\s+варто\s+робити\s+\*\*грубо\*\*:\s+вимикати\s+живлення\s+в\s+довільні\s+моменти,\s+багато\s+разів,\s+зо
+  klas: A
+  dzherelo: source-cache/1c119dba-ota.rst
+  cytata: 'If a power loss or an unexpected crash occurs at the time of the first boot of
+    a new application, it will roll back the application.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує вплив втрати живлення на OTA
+  title: 'T-58-065: Випробування зникнення живлення варто робити **грубо**: вими'
+  match: Випробування\s+зникнення\s+живлення\s+варто\s+робити\s+\*\*грубо\*\*:\s+вимикати\s+живлення\s+в\s+довільні\s+моменти,\s+багато\s+разів,\s+зо
+  status: verbatim
+  source: source-cache/1c119dba-ota.rst
+  quote: 'If a power loss or an unexpected crash occurs at the time of the first boot of a
+    new application, it will roll back the application.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує вплив втрати живлення на OTA
+  sha:
+  - '49247935'
+- nazva: 'T-B-142: ADC читає дурницю · Причина → [[classic]] ADC2 при Wi-Fi'
+  zbih: ADC\s+читає\s+дурницю\s+·\s+Причина\s+→\s+\[\[classic\]\]\s+ADC2\s+при\s+Wi\-Fi
+  klas: A
+  dzherelo: source-cache/66dc1dae-adc_oneshot.rst
+  cytata: 'ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has provided protection
+    between the Wi-Fi driver and ADC oneshot mode driver.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує конфлікт ADC2 з Wi-Fi.
+  title: 'T-B-142: ADC читає дурницю · Причина → [[classic]] ADC2 при Wi-Fi'
+  match: ADC\s+читає\s+дурницю\s+·\s+Причина\s+→\s+\[\[classic\]\]\s+ADC2\s+при\s+Wi\-Fi
+  status: verbatim
+  source: source-cache/66dc1dae-adc_oneshot.rst
+  quote: 'ADC2 is also used by Wi-Fi. :cpp:func:`adc_oneshot_read` has provided protection
+    between the Wi-Fi driver and ADC oneshot mode driver.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує конфлікт ADC2 з Wi-Fi.
+  sha:
+  - 556f1db3
+- nazva: 'T-K08-028: 9 · Симптом → ADC читає дурницю'
+  zbih: 9\s+·\s+Симптом\s+→\s+ADC\s+читає\s+дурницю
+  klas: A
+  dzherelo: source-cache/66dc1dae-adc_oneshot.rst
+  cytata: 'This function may fail when the ADC is in use by other drivers/peripherals, and
+    return :c:macro:`ESP_ERR_TIMEOUT`. Under this condition, the ADC raw result is invalid.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що ADC може повертати неправильні дані.
+  title: 'T-K08-028: 9 · Симптом → ADC читає дурницю'
+  match: 9\s+·\s+Симптом\s+→\s+ADC\s+читає\s+дурницю
+  status: verbatim
+  source: source-cache/66dc1dae-adc_oneshot.rst
+  quote: 'This function may fail when the ADC is in use by other drivers/peripherals, and
+    return :c:macro:`ESP_ERR_TIMEOUT`. Under this condition, the ADC raw result is invalid.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що ADC може повертати неправильні дані.
+  sha:
+  - f3bd0dbc
+- nazva: 'T-G-147: | ADC / DAC | Analog-to-Digital / Digital-to-Analog Converte'
+  zbih: \|\s+ADC\s+/\s+DAC\s+\|\s+Analog\-to\-Digital\s+/\s+Digital\-to\-Analog\s+Converter\s+\|
+  klas: A
+  dzherelo: source-cache/66dc1dae-adc_oneshot.rst
+  cytata: 'Analog to Digital Converter (ADC)
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ використовує правильну термінологію.
+  title: 'T-G-147: | ADC / DAC | Analog-to-Digital / Digital-to-Analog Converte'
+  match: \|\s+ADC\s+/\s+DAC\s+\|\s+Analog\-to\-Digital\s+/\s+Digital\-to\-Analog\s+Converter\s+\|
+  status: verbatim
+  source: source-cache/66dc1dae-adc_oneshot.rst
+  quote: 'Analog to Digital Converter (ADC)
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ використовує правильну термінологію.
+  sha:
+  - a9fca5a8
+- nazva: 'T-50-045: Обидва реалізовані через **eFuse** — біти, які пропалюються '
+  zbih: Обидва\s+реалізовані\s+через\s+\*\*eFuse\*\*\s+—\s+біти,\s+які\s+пропалюються\s+фізично\s+й\s+не\s+скидаються\s+ніколи,\s+жодною\s+командою,\s+ж
+  klas: A
+  dzherelo: source-cache/19d515b8-burn-efuse-cmd.rst
+  cytata: 'eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will
+    have no effect.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що біти пропалюються фізично й не скидаються.
+  title: 'T-50-045: Обидва реалізовані через **eFuse** — біти, які пропалюються '
+  match: Обидва\s+реалізовані\s+через\s+\*\*eFuse\*\*\s+—\s+біти,\s+які\s+пропалюються\s+фізично\s+й\s+не\s+скидаються\s+ніколи,\s+жодною\s+командою,\s+ж
+  status: verbatim
+  source: source-cache/19d515b8-burn-efuse-cmd.rst
+  quote: 'eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will
+    have no effect.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що біти пропалюються фізично й не скидаються.
+  sha:
+  - ff39a4a9
+- nazva: 'T-20-088: Флеш лікується завжди. eFuse — ніколи'
+  zbih: Флеш\s+лікується\s+завжди\.\s+eFuse\s+—\s+ніколи
+  klas: A
+  dzherelo: source-cache/19d515b8-burn-efuse-cmd.rst
+  cytata: 'This is an irreversible operation!
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує незворотність запису eFuse.
+  title: 'T-20-088: Флеш лікується завжди. eFuse — ніколи'
+  match: Флеш\s+лікується\s+завжди\.\s+eFuse\s+—\s+ніколи
+  status: verbatim
+  source: source-cache/19d515b8-burn-efuse-cmd.rst
+  quote: 'This is an irreversible operation!
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує незворотність запису eFuse.
+  sha:
+  - 17e4c2ab
+- nazva: 'T-20-014: **eFuse.** Це набір однорозрядних запобіжників у кремнії'
+  zbih: \*\*eFuse\.\*\*\s+Це\s+набір\s+однорозрядних\s+запобіжників\s+у\s+кремнії
+  klas: A
+  dzherelo: source-cache/19d515b8-burn-efuse-cmd.rst
+  cytata: 'eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will
+    have no effect.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Підтверджує, що повернути біт у нуль неможливо.
+  title: 'T-20-014: **eFuse.** Це набір однорозрядних запобіжників у кремнії'
+  match: \*\*eFuse\.\*\*\s+Це\s+набір\s+однорозрядних\s+запобіжників\s+у\s+кремнії
+  status: verbatim
+  source: source-cache/19d515b8-burn-efuse-cmd.rst
+  quote: 'eFuse bits can only be burned from 0 to 1, attempting to set any back to 0 will
+    have no effect.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Підтверджує, що повернути біт у нуль неможливо.
+  sha:
+  - 40e6e1b3
+- nazva: 'T-20-005: Практично незворотний лише один клас операцій — запис eFuse'
+  zbih: Практично\s+незворотний\s+лише\s+один\s+клас\s+операцій\s+—\s+запис\s+eFuse
+  klas: A
+  dzherelo: source-cache/19d515b8-burn-efuse-cmd.rst
+  cytata: 'This is an irreversible operation!
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує незворотність запису.
+  title: 'T-20-005: Практично незворотний лише один клас операцій — запис eFuse'
+  match: Практично\s+незворотний\s+лише\s+один\s+клас\s+операцій\s+—\s+запис\s+eFuse
+  status: verbatim
+  source: source-cache/19d515b8-burn-efuse-cmd.rst
+  quote: 'This is an irreversible operation!
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує незворотність запису.
+  sha:
+  - 6b268f8b
+- nazva: 'T-00-062: **Незворотне.** Операція, яку не можна скасувати: перепалени'
+  zbih: \*\*Незворотне\.\*\*\s+Операція,\s+яку\s+не\s+можна\s+скасувати:\s+перепалений\s+eFuse,\s+стертий\s+флеш\s+без\s+дампа,\s+спалений\s+пін
+  klas: A
+  dzherelo: source-cache/19d515b8-burn-efuse-cmd.rst
+  cytata: 'This is an irreversible operation!
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Підтверджує незворотність пропаленого eFuse.
+  title: 'T-00-062: **Незворотне.** Операція, яку не можна скасувати: перепалени'
+  match: \*\*Незворотне\.\*\*\s+Операція,\s+яку\s+не\s+можна\s+скасувати:\s+перепалений\s+eFuse,\s+стертий\s+флеш\s+без\s+дампа,\s+спалений\s+пін
+  status: verbatim
+  source: source-cache/19d515b8-burn-efuse-cmd.rst
+  quote: 'This is an irreversible operation!
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Підтверджує незворотність пропаленого eFuse.
+  sha:
+  - 001a355e
+- nazva: 'T-20-043: **Не перенесеться MAC-адреса.** Вона зашита в eFuse кожного '
+  zbih: \*\*Не\s+перенесеться\s+MAC\-адреса\.\*\*\s+Вона\s+зашита\s+в\s+eFuse\s+кожного\s+чипа,\s+а\s+не\s+у\s+флеші,\s+і\s+дампом\s+не\s+копіюється
+  klas: A
+  dzherelo: source-cache/19d515b8-burn-efuse-cmd.rst
+  cytata: 'Longer eFuses (MAC addresses, keys) can be set with this command, but it''s better
+    to use a specific command (``burn-custom-mac``, ``burn-key``) for a specific field.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що MAC-адреса зберігається в eFuse.
+  title: 'T-20-043: **Не перенесеться MAC-адреса.** Вона зашита в eFuse кожного '
+  match: \*\*Не\s+перенесеться\s+MAC\-адреса\.\*\*\s+Вона\s+зашита\s+в\s+eFuse\s+кожного\s+чипа,\s+а\s+не\s+у\s+флеші,\s+і\s+дампом\s+не\s+копіюється
+  status: verbatim
+  source: source-cache/19d515b8-burn-efuse-cmd.rst
+  quote: 'Longer eFuses (MAC addresses, keys) can be set with this command, but it''s better
+    to use a specific command (``burn-custom-mac``, ``burn-key``) for a specific field.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що MAC-адреса зберігається в eFuse.
+  sha:
+  - 49ca9e02
+- nazva: 'T-46-007: OLED SSD1306 · Особливості → контраст, малий, дешевий'
+  zbih: OLED\s+SSD1306\s+·\s+Особливості\s+→\s+контраст,\s+малий,\s+дешевий
+  klas: A
+  dzherelo: source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
+  cytata: "U8X8_CA(0x081, 0x0cf), \t\t/* [2] set contrast control */\n"
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що це малі OLED дисплеї з контролем контрасту.
+  title: 'T-46-007: OLED SSD1306 · Особливості → контраст, малий, дешевий'
+  match: OLED\s+SSD1306\s+·\s+Особливості\s+→\s+контраст,\s+малий,\s+дешевий
+  status: verbatim
+  source: source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
+  quote: "U8X8_CA(0x081, 0x0cf), \t\t/* [2] set contrast control */\n"
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що це малі OLED дисплеї з контролем контрасту.
+- nazva: 'T-46-004: OLED SSD1306 · Розмір → 0.96–1.3"'
+  zbih: OLED\s+SSD1306\s+·\s+Розмір\s+→\s+0\.96–1\.3"
+  klas: A
+  dzherelo: source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
+  cytata: 'u8x8_d_ssd1306_128x64_noname.c
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Файл названо за розмірами 128x64, що відповідає діагоналі 0.96-1.3 дюйма.
+  title: 'T-46-004: OLED SSD1306 · Розмір → 0.96–1.3"'
+  match: OLED\s+SSD1306\s+·\s+Розмір\s+→\s+0\.96–1\.3"
+  status: verbatim
+  source: source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
+  quote: 'u8x8_d_ssd1306_128x64_noname.c
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Файл названо за розмірами 128x64, що відповідає діагоналі 0.96-1.3 дюйма.
+- nazva: 'T-46-027: **OLED SSD1306** — типовий вибір для службової інформації'
+  zbih: \*\*OLED\s+SSD1306\*\*\s+—\s+типовий\s+вибір\s+для\s+службової\s+інформації
+  klas: A
+  dzherelo: source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
+  cytata: '/* more or less generic setup of all these small OLEDs */
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що SSD1306 - це малий OLED дисплей.
+  title: 'T-46-027: **OLED SSD1306** — типовий вибір для службової інформації'
+  match: \*\*OLED\s+SSD1306\*\*\s+—\s+типовий\s+вибір\s+для\s+службової\s+інформації
+  status: verbatim
+  source: source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
+  quote: '/* more or less generic setup of all these small OLEDs */
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що SSD1306 - це малий OLED дисплей.
+- nazva: 'T-23-010: `ESP32-WROOM-32` · Чип → ESP32 classic'
+  zbih: '`ESP32\-WROOM\-32`\s+·\s+Чип\s+→\s+ESP32\s+classic'
+  klas: A
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'At the core of the module is the ESP32-D0WD-V3 chip or ESP32-D0WDR2-V3 chip
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Вістниця описує, що в основі модуля WROOM-32E/32UE лежить ESP32-D0WD-V3 або ESP32-D0WDR2-V3,
+    що є classic ESP32
+  title: 'T-23-010: `ESP32-WROOM-32` · Чип → ESP32 classic'
+  match: '`ESP32\-WROOM\-32`\s+·\s+Чип\s+→\s+ESP32\s+classic'
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: 'At the core of the module is the ESP32-D0WD-V3 chip or ESP32-D0WDR2-V3 chip
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Вістниця описує, що в основі модуля WROOM-32E/32UE лежить ESP32-D0WD-V3 або ESP32-D0WDR2-V3,
+    що є classic ESP32
+  sha:
+  - f5a2b442
+- nazva: 'T-08-017: Літера `U` в кінці (`WROOM-1U`) означає роз''єм під зовнішню '
+  zbih: Літера\s+`U`\s+в\s+кінці\s+\(`WROOM\-1U`\)\s+означає\s+роз'єм\s+під\s+зовнішню\s+антену\s+замість\s+друкованої
+  klas: A
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'ESP32-WROOM-32UE with a connector for an external antenna
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що UE варіант має роз'єм для зовнішної антени
+  title: 'T-08-017: Літера `U` в кінці (`WROOM-1U`) означає роз''єм під зовнішню '
+  match: Літера\s+`U`\s+в\s+кінці\s+\(`WROOM\-1U`\)\s+означає\s+роз'єм\s+під\s+зовнішню\s+антену\s+замість\s+друкованої
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: 'ESP32-WROOM-32UE with a connector for an external antenna
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що UE варіант має роз'єм для зовнішної антени
+  sha:
+  - 92c1af43
+- nazva: 'T-K01-006: `ESP32-WROOM-32` · Чип → ESP32 classic'
+  zbih: '`ESP32\-WROOM\-32`\s+·\s+Чип\s+→\s+ESP32\s+classic'
+  klas: A
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'At the core of the module is the ESP32-D0WD-V3 chip or ESP32-D0WDR2-V3 chip
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Те саме, що T-23-010 - ESP32 classic
+  title: 'T-K01-006: `ESP32-WROOM-32` · Чип → ESP32 classic'
+  match: '`ESP32\-WROOM\-32`\s+·\s+Чип\s+→\s+ESP32\s+classic'
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: 'At the core of the module is the ESP32-D0WD-V3 chip or ESP32-D0WDR2-V3 chip
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Те саме, що T-23-010 - ESP32 classic
+  sha:
+  - f5a2b442
+- nazva: 'T-39-078: **Зовнішня антена через роз''єм IPEX** — модулі з літерою `U`'
+  zbih: \*\*Зовнішня\s+антена\s+через\s+роз'єм\s+IPEX\*\*\s+—\s+модулі\s+з\s+літерою\s+`U`\s+\(`WROOM\-1U`\)
+  klas: A
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'MHF I connector from I-PEX
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ описує роз'єм типу I-PEX MHF I для зовнішної антени у модулях UE
+  title: 'T-39-078: **Зовнішня антена через роз''єм IPEX** — модулі з літерою `U`'
+  match: \*\*Зовнішня\s+антена\s+через\s+роз'єм\s+IPEX\*\*\s+—\s+модулі\s+з\s+літерою\s+`U`\s+\(`WROOM\-1U`\)
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: 'MHF I connector from I-PEX
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ описує роз'єм типу I-PEX MHF I для зовнішної антени у модулях UE
+  sha:
+  - 218b3bf5
+- nazva: 'T-39-076: **PCB-антена** — доріжка на платі модуля (`WROOM-1`)'
+  zbih: \*\*PCB\-антена\*\*\s+—\s+доріжка\s+на\s+платі\s+модуля\s+\(`WROOM\-1`\)
+  klas: A
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'ESP32-WROOM-32E: On-board PCB antenna
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що WROOM-32E (модуль WROOM-1 версії E) має PCB-антену на
+    платі
+  title: 'T-39-076: **PCB-антена** — доріжка на платі модуля (`WROOM-1`)'
+  match: \*\*PCB\-антена\*\*\s+—\s+доріжка\s+на\s+платі\s+модуля\s+\(`WROOM\-1`\)
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: 'ESP32-WROOM-32E: On-board PCB antenna
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що WROOM-32E (модуль WROOM-1 версії E) має PCB-антену на платі
+  sha:
+  - e7e234c9
+- nazva: 'T-01-009: **Модуль.** Кристал плюс кварц, флеш-пам''ять, антена і обв''я'
+  zbih: \*\*Модуль\.\*\*\s+Кристал\s+плюс\s+кварц,\s+флеш\-пам'ять,\s+антена\s+і\s+обв'язка,\s+залиті\s+в\s+екранований\s+корпус\s+із\s+металевою\s+криш
+  klas: A
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: '40 MHz crystal oscillator
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що модуль містить кварц, флеш і антену у металевому корпусі
+  title: 'T-01-009: **Модуль.** Кристал плюс кварц, флеш-пам''ять, антена і обв''я'
+  match: \*\*Модуль\.\*\*\s+Кристал\s+плюс\s+кварц,\s+флеш\-пам'ять,\s+антена\s+і\s+обв'язка,\s+залиті\s+в\s+екранований\s+корпус\s+із\s+металевою\s+криш
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: '40 MHz crystal oscillator
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що модуль містить кварц, флеш і антену у металевому корпусі
+  sha:
+  - cd03828d
+- nazva: 'T-23-012: `ESP32-WROOM-32D`, `-32E` · Чип → ESP32 classic'
+  zbih: '`ESP32\-WROOM\-32D`,\s+`\-32E`\s+·\s+Чип\s+→\s+ESP32\s+classic'
+  klas: A
+  dzherelo: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  cytata: 'ESP32-D0WD-V3 or ESP32-D0WDR2-V3 embedded, Xtensa dual-core 32-bit LX6 microprocessor
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Datasheet підтверджує, що WROOM-32E/UE містять класичні чипи ESP32 серії D0WD.
+
+    '
+  title: 'T-23-012: `ESP32-WROOM-32D`, `-32E` · Чип → ESP32 classic'
+  match: '`ESP32\-WROOM\-32D`,\s+`\-32E`\s+·\s+Чип\s+→\s+ESP32\s+classic'
+  status: verbatim
+  source: source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+  quote: 'ESP32-D0WD-V3 or ESP32-D0WDR2-V3 embedded, Xtensa dual-core 32-bit LX6 microprocessor
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: 'Datasheet підтверджує, що WROOM-32E/UE містять класичні чипи ESP32 серії D0WD.
+
+    '
+  sha:
+  - dc994ff1
+- nazva: 'T-04-037: LEDC · Що це → PWM: яскравість світлодіодів, сервоприводи'
+  zbih: LEDC\s+·\s+Що\s+це\s+→\s+PWM:\s+яскравість\s+світлодіодів,\s+сервоприводи
+  klas: A
+  dzherelo: source-cache/da11cdab-ledc.rst
+  cytata: 'The LED control (LEDC) peripheral is primarily designed to control the intensity
+    of LEDs, although it can also be used to generate PWM signals for other purposes.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Документ підтверджує LEDC для LED яскравості та PWM для інших цілей. Servo не
+    згаданий конкретно, але PWM сигнали для інших цілей можуть включати servo.
+
+    '
+  title: 'T-04-037: LEDC · Що це → PWM: яскравість світлодіодів, сервоприводи'
+  match: LEDC\s+·\s+Що\s+це\s+→\s+PWM:\s+яскравість\s+світлодіодів,\s+сервоприводи
+  status: verbatim
+  source: source-cache/da11cdab-ledc.rst
+  quote: 'The LED control (LEDC) peripheral is primarily designed to control the intensity
+    of LEDs, although it can also be used to generate PWM signals for other purposes.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: 'Документ підтверджує LEDC для LED яскравості та PWM для інших цілей. Servo не згаданий
+    конкретно, але PWM сигнали для інших цілей можуть включати servo.
+
+    '
+  sha:
+  - 2a3561f1
+- nazva: 'T-06-088: **Ємність джерела.** Ходові елементи 18650 — від 2500 до 350'
+  zbih: \*\*Ємність\s+джерела\.\*\*\s+Ходові\s+елементи\s+18650\s+—\s+від\s+2500\s+до\s+3500\s+мА·год\s+\(розділ\s+53\)
+  klas: A
+  dzherelo: source-cache/ncr18650b.pdf
+  cytata: 'Rated capacity(1) Min. 3200mAh Capacity(2) Min. 3250mAh Typ. 3350mAh
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'NCR18650B має ємність 3200-3350 мАч, що входить у диапазон "2500-3500 мА·год"
+    з handbook.
+
+    '
+  title: 'T-06-088: **Ємність джерела.** Ходові елементи 18650 — від 2500 до 350'
+  match: \*\*Ємність\s+джерела\.\*\*\s+Ходові\s+елементи\s+18650\s+—\s+від\s+2500\s+до\s+3500\s+мА·год\s+\(розділ\s+53\)
+  status: verbatim
+  source: source-cache/ncr18650b.pdf
+  quote: 'Rated capacity(1) Min. 3200mAh Capacity(2) Min. 3250mAh Typ. 3350mAh
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: 'NCR18650B має ємність 3200-3350 мАч, що входить у диапазон "2500-3500 мА·год" з handbook.
+
+    '
+- nazva: 'T-60-006: **Живлення:** 18650, ціль — не менше трьох місяців при вимір'
+  zbih: \*\*Живлення:\*\*\s+18650,\s+ціль\s+—\s+не\s+менше\s+трьох\s+місяців\s+при\s+вимірюванні\s+раз\s+на\s+15\s+хвилин
+  klas: A
+  dzherelo: source-cache/ncr18650b.pdf
+  cytata: 'Discharge: CC 1C, 2.50V cut-off at 25°C
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Datasheet підтверджує, що 18650 може забезпечити тривалу роботу при розташуванні
+    вимірювачами, як описано в handbook.
+
+    '
+  title: 'T-60-006: **Живлення:** 18650, ціль — не менше трьох місяців при вимір'
+  match: \*\*Живлення:\*\*\s+18650,\s+ціль\s+—\s+не\s+менше\s+трьох\s+місяців\s+при\s+вимірюванні\s+раз\s+на\s+15\s+хвилин
+  status: verbatim
+  source: source-cache/ncr18650b.pdf
+  quote: 'Discharge: CC 1C, 2.50V cut-off at 25°C
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: 'Datasheet підтверджує, що 18650 може забезпечити тривалу роботу при розташуванні
+    вимірювачами, як описано в handbook.
+
+    '
+- nazva: 'T-B-134: CAN: лічильник помилок росте · Розділ → 38'
+  zbih: CAN:\s+лічильник\s+помилок\s+росте\s+·\s+Розділ\s+→\s+38
+  klas: A
+  dzherelo: source-cache/5827f9c3-twai.rst
+  cytata: 'It implements a fault isolation mechanism using transmit and receive error counters
+    (TEC and REC).
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ каже про лічильники помилок TEC та REC.
+  title: 'T-B-134: CAN: лічильник помилок росте · Розділ → 38'
+  match: CAN:\s+лічильник\s+помилок\s+росте\s+·\s+Розділ\s+→\s+38
+  status: verbatim
+  source: source-cache/5827f9c3-twai.rst
+  quote: 'It implements a fault isolation mechanism using transmit and receive error counters
+    (TEC and REC).
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ каже про лічильники помилок TEC та REC.
+  sha:
+  - 2f72b877
+- nazva: 'T-04-098: TWAI (CAN) · classic → 1'
+  zbih: TWAI\s+\(CAN\)\s+·\s+classic\s+→\s+1
+  klas: A
+  dzherelo: source-cache/5827f9c3-twai.rst
+  cytata: 'The TWAI controllers on the {IDF_TARGET_NAME} also compatible with FD format (a.k.a.
+    CAN FD) frames defined in ISO 11898-1, and can transmit and receive both classic and FD
+    format frames.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що є класичні фрейми.
+  title: 'T-04-098: TWAI (CAN) · classic → 1'
+  match: TWAI\s+\(CAN\)\s+·\s+classic\s+→\s+1
+  status: verbatim
+  source: source-cache/5827f9c3-twai.rst
+  quote: 'The TWAI controllers on the {IDF_TARGET_NAME} also compatible with FD format (a.k.a.
+    CAN FD) frames defined in ISO 11898-1, and can transmit and receive both classic and FD
+    format frames.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що є класичні фрейми.
+  sha:
+  - d9e2ad8c
+- nazva: 'T-04-028: TWAI · Що це → CAN-шина, сумісна з автомобільною'
+  zbih: TWAI\s+·\s+Що\s+це\s+→\s+CAN\-шина,\s+сумісна\s+з\s+автомобільною
+  klas: A
+  dzherelo: source-cache/5827f9c3-twai.rst
+  cytata: 'TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication
+    protocol designed for automotive and industrial applications. It is compatible with the
+    frame structure defined in the ISO 11898-1 standard
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує, що TWAI сумісна з ISO 11898-1, що є стандартом для CAN-шини.
+  title: 'T-04-028: TWAI · Що це → CAN-шина, сумісна з автомобільною'
+  match: TWAI\s+·\s+Що\s+це\s+→\s+CAN\-шина,\s+сумісна\s+з\s+автомобільною
+  status: verbatim
+  source: source-cache/5827f9c3-twai.rst
+  quote: 'TWAI is a highly reliable, multi-master, real-time, serial asynchronous communication
+    protocol designed for automotive and industrial applications. It is compatible with the
+    frame structure defined in the ISO 11898-1 standard
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує, що TWAI сумісна з ISO 11898-1, що є стандартом для CAN-шини.
+  sha:
+  - ba6a71e5
+- nazva: 'T-63-080: - **Modbus RTU ↔ TCP** зі штатним компонентом `esp-modbus` з'
+  zbih: \-\s+\*\*Modbus\s+RTU\s+↔\s+TCP\*\*\s+зі\s+штатним\s+компонентом\s+`esp\-modbus`\s+замість\s+прозорого\s+мосту\s+\(розділ\s+34\);\s+\-\s+\*\*Кілька\s+пос
+  klas: A
+  dzherelo: source-cache/5827f9c3-twai.rst
+  cytata: 'The TWAI controller hardware can filter messages based on their ID to reduce software
+    and hardware overhead, thereby improving node efficiency.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ підтверджує фільтрацію за ідентифікаторами на боці CAN.
+  title: 'T-63-080: - **Modbus RTU ↔ TCP** зі штатним компонентом `esp-modbus` з'
+  match: \-\s+\*\*Modbus\s+RTU\s+↔\s+TCP\*\*\s+зі\s+штатним\s+компонентом\s+`esp\-modbus`\s+замість\s+прозорого\s+мосту\s+\(розділ\s+34\);\s+\-\s+\*\*Кілька\s+пос
+  status: verbatim
+  source: source-cache/5827f9c3-twai.rst
+  quote: 'The TWAI controller hardware can filter messages based on their ID to reduce software
+    and hardware overhead, thereby improving node efficiency.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ підтверджує фільтрацію за ідентифікаторами на боці CAN.
+  sha:
+  - 20ab681f
+- nazva: 'T-63-061: Міст на CAN за замовчуванням має працювати в режимі **`LISTE'
+  zbih: Міст\s+на\s+CAN\s+за\s+замовчуванням\s+має\s+працювати\s+в\s+режимі\s+\*\*`LISTEN_ONLY`\*\*\s+\(розділ\s+38\)
+  klas: A
+  dzherelo: source-cache/5827f9c3-twai.rst
+  cytata: '- :cpp:member:`twai_onchip_node_config_t::flags::enable_listen_only`: Configures
+    the node in listen-only mode. In this mode, the node only receives and does not transmit
+    any dominant bits, including ACK and error frames.
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: 'Місце в документі: рядок 91'
+  title: 'T-63-061: Міст на CAN за замовчуванням має працювати в режимі **`LISTE'
+  match: Міст\s+на\s+CAN\s+за\s+замовчуванням\s+має\s+працювати\s+в\s+режимі\s+\*\*`LISTEN_ONLY`\*\*\s+\(розділ\s+38\)
+  status: verbatim
+  source: source-cache/5827f9c3-twai.rst
+  quote: '- :cpp:member:`twai_onchip_node_config_t::flags::enable_listen_only`: Configures
+    the node in listen-only mode. In this mode, the node only receives and does not transmit
+    any dominant bits, including ACK and error frames.
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: 'Місце в документі: рядок 91'
+  sha:
+  - 05909696
+- nazva: 'T-38-059: CAN сам стежить за помилками й має лічильники'
+  zbih: CAN\s+сам\s+стежить\s+за\s+помилками\s+й\s+має\s+лічильники
+  klas: A
+  dzherelo: source-cache/5827f9c3-twai.rst
+  cytata: 'The TWAI controller can detect errors caused by bus interference or corrupted frames
+    that do not conform to the frame format. It implements a fault isolation mechanism using
+    transmit and receive error counters (TEC and REC).
+
+    '
+  sposib: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  notatka: Документ каже про автоматичне стеження за помилками та лічильники.
+  title: 'T-38-059: CAN сам стежить за помилками й має лічильники'
+  match: CAN\s+сам\s+стежить\s+за\s+помилками\s+й\s+має\s+лічильники
+  status: verbatim
+  source: source-cache/5827f9c3-twai.rst
+  quote: 'The TWAI controller can detect errors caused by bus interference or corrupted frames
+    that do not conform to the frame format. It implements a fault isolation mechanism using
+    transmit and receive error counters (TEC and REC).
+
+    '
+  method: Source document retrieved 2026-08-27 from the local cache; quote verified against
+    it by substring match.
+  note: Документ каже про автоматичне стеження за помилками та лічильники.
+  sha:
+  - 43fb7ee2

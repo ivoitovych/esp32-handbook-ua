@@ -4,7 +4,7 @@ A plan-versus-actual account of the fact-checking technology, written
 so that the next book does not have to rediscover any of it.
 
 **Figures below are dated `2026-08-28 19:43 UTC`** and come from
-`tools/factcheck.py status` and `tools/skhema.py`: **8110 claims (plus
+`tools/factcheck.py status` and `tools/schema.py`: **8110 claims (plus
 221 code blocks carried as context), 1360 evidence records, 92 book
 files, 53 tools.**
 
@@ -297,10 +297,10 @@ than quoted as it stands.
 | Where | Promised | Did |
 |---|---|---|
 | `vorota` | two checks | one |
-| `prochid.py` | a candidate per packet | none, silently |
+| `sweep.py` | a candidate per packet | none, silently |
 | `stale` | compare the book's text | check the file exists |
 | card regex | four readers share the format | each kept a private copy |
-| `zvyazok.py` name pattern | a bad filename is a violation | the letter vanished from the ledger |
+| `correspondence.py` name pattern | a bad filename is a violation | the letter vanished from the ledger |
 
 The last one cost the most: **two of the second maintainer's letters
 were invisible to the correspondence protocol** — Cyrillic in the

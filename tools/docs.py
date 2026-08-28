@@ -144,7 +144,7 @@ def perevirka() -> list[str]:
         bidy.append(f"ворота не імпортуються: {str(e)[:60]}")
         znani = set()
     if znani:
-        for shabl in (ROOT / "tools" / "naryad_f.py",):
+        for shabl in (ROOT / "tools" / "work_orders_f.py",):
             t = shabl.read_text(encoding="utf-8")
             vsi = set(re.findall(r"^\| `([a-z_]+)` \|", t, re.M))
             chuzhi = vsi - znani

@@ -2,7 +2,7 @@
 
 Одиниць твердження: **112**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -1258,7 +1258,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-s3_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-s3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > – USB Serial/JTAG controller
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -1393,7 +1393,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/71ff84df-configure-builtin-jtag.rst
+- **Джерело:** source-cache/71ff84df-configure-builtin-jtag.rst
 - **Дослівно з джерела:**
   > can be debugged without any additional chip. Only a USB cable connected to the D+/D- pins is necessary.
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.

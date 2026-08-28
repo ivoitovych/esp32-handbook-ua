@@ -1,0 +1,127 @@
+- id: T-57-039
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'emergency|emergency blocking|аварійне', 0 влучань
+
+- id: T-19-097
+  verdykt: pidtverdzheno
+  fayl: source-cache/1c119dba-ota.rst
+  cytata: |
+    The following code serves detect the initial boot for an application after the OTA update. Upon the first boot, the application checks its state and performs diagnostics. If the diagnostics are successful, the application should call esp_ota_mark_app_valid_cancel_rollback to confirm the operability of the application.
+  de: сторінка ~47, розділ App Rollback
+  notatka: Документ каже, що функцію підтвердження потрібно викликати ПІСЛЯ виконання діагностики, а не на початку.
+
+- id: T-19-092
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'coverage|edge|сигнал|слабкий', 0 влучань
+
+- id: T-14-022
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'example|device|complete|out of the box|з коробки', 0 влучань
+
+- id: T-19-036
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'won\'t reach|не дійде|next|наступне', 0 влучань
+
+- id: T-B-197
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'coverage|edge|reach', 0 влучань
+
+- id: T-B-198
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'rssi|−80', 0 влучань
+
+- id: T-18-009
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'typical|layout|без OTA', 0 влучань
+
+- id: T-19-098
+  verdykt: pidtverdzheno
+  fayl: source-cache/1c119dba-ota.rst
+  cytata: |
+    The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+  de: сторінка ~15, розділ OTA Process Overview
+  notatka: Документ каже, що OTA оновлює лише образ застосунку й OTA Data partition, але не таблицю розділів.
+
+- id: T-29-024
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'app.bin|merge|merge-bin', 0 влучань
+
+- id: T-15-013
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'toolchain|ESP-IDF|years|серійність', 0 влучань
+
+- id: T-57-057
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'layout|partition|even if', 0 влучань
+
+- id: T-19-062
+  verdykt: pidtverdzheno
+  fayl: source-cache/1c119dba-ota.rst
+  cytata: |
+    The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+  de: сторінка ~9, розділ OTA Process Overview
+  notatka: Документ підтверджує, що OTA передбачає отримання даних (radio reception) та запис у флеш.
+
+- id: T-G-146
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'glossary|Over-The-Air|definition', 0 влучань
+
+- id: T-57-069
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'layout|contacts|unique keys|ключи', 0 влучань
+
+- id: T-19-001
+  verdykt: pidtverdzheno
+  fayl: source-cache/1c119dba-ota.rst
+  cytata: |
+    The OTA update mechanism allows a device to update itself based on data received while the normal firmware is running (for example, over Wi-Fi, Bluetooth or Ethernet).
+  de: сторінка ~9, розділ OTA Process Overview
+  notatka: Документ визначає OTA як механізм оновлення без фізичного доступу.
+
+- id: T-19-029
+  verdykt: pidtverdzheno
+  fayl: source-cache/1c119dba-ota.rst
+  cytata: |
+    The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+  de: сторінка ~15, розділ OTA Process Overview
+  notatka: Документ підтверджує, що OTA оновлює лише образ застосунку.
+
+- id: T-15-008
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'sensor|example|typical|з коробки', 0 влучань
+
+- id: T-50-035
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'certificate|cert|trust|довірених', 0 влучань
+
+- id: T-50-067
+  verdykt: pidtverdzheno
+  fayl: source-cache/1c119dba-ota.rst
+  cytata: |
+    The verification of signed OTA updates can be performed even without enabling hardware secure boot.
+  de: сторінка ~227, розділ Secure OTA Updates Without Secure Boot
+  notatka: Документ підтверджує наявність механізмів безпеки для OTA.
+
+- id: T-18-105
+  verdykt: pidtverdzheno
+  fayl: source-cache/1c119dba-ota.rst
+  cytata: |
+    The OTA operation functions write a new app firmware image to whichever OTA app slot that is currently not selected for booting. Once the image is verified, the OTA Data partition is updated to specify that this image should be used for the next boot.
+  de: сторінка ~15, розділ OTA Process Overview
+  notatka: Документ підтверджує, що OTA оновлює лише образ застосунку, таблиця розділів не оновлюється.
+
+- id: T-50-037
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'unsecured|unprotected|anyone|upload', 0 влучань
+
+- id: T-39-072
+  verdykt: ne_znayshov
+  dyvyvsya: 1c119dba-ota.rst, grep -i 'rssi|−82|coverage|edge', 0 влучань
+
+- id: T-19-024
+  verdykt: pidtverdzheno
+  fayl: source-cache/1c119dba-ota.rst
+  cytata: |
+    at least two OTA app slot partitions (i.e., ``ota_0`` and ``ota_1``)
+  de: сторінка ~15, розділ OTA Process Overview
+  notatka: Документ підтверджує, що застосунок займає місце двічі в двох OTA слотах.

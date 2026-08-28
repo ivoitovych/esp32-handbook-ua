@@ -1,0 +1,39 @@
+# Суцільний прохід — h-dzherela.
+#
+# Посаджено `tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+- nazva: 'T-H-017: **`github.com/espressif/esp-idf`** — сам фреймворк.'
+  zbih: \*\*`github\.com/espressif/esp\-idf`\*\*\s+—\s+сам\s+фреймворк\.
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/README.md
+  cytata: 'github.com/espressif/esp-idf
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Confirmed - the readme identifies the project location as github.com/espressif/esp-idf
+  title: 'T-H-017: **`github.com/espressif/esp-idf`** — сам фреймворк.'
+  match: \*\*`github\.com/espressif/esp\-idf`\*\*\s+—\s+сам\s+фреймворк\.
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/README.md
+  quote: 'github.com/espressif/esp-idf
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Confirmed - the readme identifies the project location as github.com/espressif/esp-idf
+  sha:
+  - 68023ab6

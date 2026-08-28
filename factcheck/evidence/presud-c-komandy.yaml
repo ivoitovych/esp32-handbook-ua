@@ -1,0 +1,38 @@
+# Посадка presud — c-komandy.
+#
+# Посаджено `tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+- nazva: 'T-C-013: esptool --port PORT read-flash 0x8000 0x1000 pt.bin #'
+  zbih: esptool\s+\-\-port\s+PORT\s+read\-flash\s+0x8000
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  cytata: 'a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`)
+    0x8000 in the flash
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: esptool read-flash 0x8000 0x1000 — стандартний метод читання таблиці розділів з
+    ESP-IDF
+  title: 'T-C-013: esptool --port PORT read-flash 0x8000 0x1000 pt.bin #'
+  match: esptool\s+\-\-port\s+PORT\s+read\-flash\s+0x8000
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
+  quote: 'a partition table is flashed to (:menuitem:`default offset <CONFIG_PARTITION_TABLE_OFFSET>`)
+    0x8000 in the flash
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: esptool read-flash 0x8000 0x1000 — стандартний метод читання таблиці розділів з ESP-IDF

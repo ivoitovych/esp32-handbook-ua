@@ -1,0 +1,195 @@
+# Прохід 39 — перші відпрацьовані сліди класу `E`.
+#
+# Сліди (`ideya`) — це здогади помічників про те, де шукати. Раніше вони
+# лежали у звітах і нікуди не вели. `tools/leads.py` зібрав 154, відібрав
+# 56 досяжних, і п'ять помічників пішли по них.
+#
+# Заявлено 10 `znayshov`, третій шар витримали 8. Тобто **дослівність**
+# доведено машиною для восьми.
+#
+# Далі — шар 2, і його роблю я, бо машина його зробити не може. Питання
+# М2, точніше за моє власне формулювання: **джерело підпирає це
+# твердження — чи лише містить це число?**
+#
+# З восьми дослівних:
+#   3 підпирають повністю     → A
+#   4 підпирають половину     → B, з названою неперевіреною половиною
+#   1 не підпирає взагалі     → відхилено, див. кінець файлу
+#
+# Тобто третій шар пропустив запис, який доводить не те. Це не його
+# вада: він порівнює рядки, а не смисли, і саме тому шар 2 не можна
+# віддати ані скриптові, ані помічникові.
+
+# ── Підпирають повністю ────────────────────────────────────────────────
+
+
+
+# ── Підпирають половину ────────────────────────────────────────────────
+#
+# Клас `B`, а не `A`, і в кожному записі названо, **яка саме половина
+# лишилася без джерела**. Мовчазне `A` тут було б тим самим дефектом, що
+# `pass-28`: назва в переліку доводить існування речі й нічого більше.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: Піни 34–39 classic не мають вбудованого підтягування
+  zbih: Піни 34–39 \*\*не мають вбудованого підтягування\*\*|Піни 34–39\s+вбудованого підтягування
+    не мають
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_gpio/include/driver/gpio.h
+  cytata: '* @note ESP32: Only pins that support both input & output have integrated pull-up
+    and pull-down resistors. Input-only GPIOs 34-39 do not.
+
+    '
+  sposib: Слід указував саме на заголовок драйвера GPIO; помічник його дістав, третій шар
+    звірив дослівно.
+  notatka: 'Найчистіший випадок за прохід: книга каже те саме, що заголовок, тими самими межами
+    пінів. Одне джерело закриває дві одиниці в різних розділах (`T-05-073`, `T-05-130`) —
+    вони кажуть одне різними словами.'
+  title: Піни 34–39 classic не мають вбудованого підтягування
+  match: Піни 34–39 \*\*не мають вбудованого підтягування\*\*|Піни 34–39\s+вбудованого підтягування
+    не мають
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_gpio/include/driver/gpio.h
+  quote: '* @note ESP32: Only pins that support both input & output have integrated pull-up
+    and pull-down resistors. Input-only GPIOs 34-39 do not.
+
+    '
+  method: Слід указував саме на заголовок драйвера GPIO; помічник його дістав, третій шар
+    звірив дослівно.
+  note: 'Найчистіший випадок за прохід: книга каже те саме, що заголовок, тими самими межами
+    пінів. Одне джерело закриває дві одиниці в різних розділах (`T-05-073`, `T-05-130`) —
+    вони кажуть одне різними словами.'
+  sha:
+  - f5fb3f84
+  - fe59eb63
+- nazva: ESP-NOW — прийом через зареєстрований обробник
+  zbih: Прийом — через зареєстрований обробник
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'Call :cpp:func:`esp_now_register_recv_cb()` to register receiving callback function.
+
+    '
+  sposib: Документ отримано в цій сесії, витяг дослівний.
+  title: ESP-NOW — прийом через зареєстрований обробник
+  match: Прийом — через зареєстрований обробник
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  quote: 'Call :cpp:func:`esp_now_register_recv_cb()` to register receiving callback function.
+
+    '
+  method: Документ отримано в цій сесії, витяг дослівний.
+  sha:
+  - aaeb4359
+- nazva: Вбудований USB — окремого моста немає
+  zbih: немає окремого чипа · Драйвер → драйвер не потрібен
+  klas: B
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/usb-serial-jtag-console.rst
+  cytata: 'thus does not require an external USB-UART bridge chip
+
+    '
+  sposib: Документ отримано в цій сесії, витяг дослівний.
+  notatka: Джерело підпирає **першу** половину комірки — окремого моста немає. Друга половина,
+    «драйвер не потрібен», стосується операційної системи, а не чипа, і цим документом не
+    доводиться. Лишається незвіреною свідомо.
+  title: Вбудований USB — окремого моста немає
+  match: немає окремого чипа · Драйвер → драйвер не потрібен
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/usb-serial-jtag-console.rst
+  quote: 'thus does not require an external USB-UART bridge chip
+
+    '
+  method: Документ отримано в цій сесії, витяг дослівний.
+  note: Джерело підпирає **першу** половину комірки — окремого моста немає. Друга половина,
+    «драйвер не потрібен», стосується операційної системи, а не чипа, і цим документом не
+    доводиться. Лишається незвіреною свідомо.
+  sha:
+  - 848e213b
+- nazva: ESP-NOW — важка робота в обробнику шкодить
+  zbih: Важка робота там блокує радіостек
+  klas: B
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  cytata: 'do not do lengthy operations in the callback function. Instead, post the necessary
+    data to a queue and handle it from a lower priority task.
+
+    '
+  sposib: Документ отримано в цій сесії, витяг дослівний.
+  notatka: Порада збігається дослівно, **пояснення — ні**. Джерело каже «не роби довгого в
+    обробнику»; книга каже, **чому** — «блокує радіостек». Механізм правдоподібний і, найімовірніше,
+    правильний, але в цьому документі його немає. Клас `B` покриває пораду, не причину.
+  title: ESP-NOW — важка робота в обробнику шкодить
+  match: Важка робота там блокує радіостек
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/network/esp_now.rst
+  quote: 'do not do lengthy operations in the callback function. Instead, post the necessary
+    data to a queue and handle it from a lower priority task.
+
+    '
+  method: Документ отримано в цій сесії, витяг дослівний.
+  note: Порада збігається дослівно, **пояснення — ні**. Джерело каже «не роби довгого в обробнику»;
+    книга каже, **чому** — «блокує радіостек». Механізм правдоподібний і, найімовірніше, правильний,
+    але в цьому документі його немає. Клас `B` покриває пораду, не причину.
+  sha:
+  - 6871d700
+- nazva: OTA — сертифікат сервера вбудовано в образ
+  zbih: Сертифікат кладеться в образ як вбудований ресурс
+  klas: B
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/system/ota/simple_ota_example/main/simple_ota_example.c
+  cytata: 'extern const uint8_t server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
+
+    '
+  sposib: Приклад отримано в цій сесії, рядок дослівний.
+  notatka: 'Рядок доводить саме вбудовування: символ `_binary_..._start` створює складальник,
+    коли файл кладуть в образ як ресурс. **Другої половини твердження — «пристрій відмовляється
+    оновлюватися, якщо сервер не той» — цей рядок не доводить.** Перевірка сертифіката відбувається
+    в `esp_https_ota`, і на неї потрібен окремий доказ.'
+  title: OTA — сертифікат сервера вбудовано в образ
+  match: Сертифікат кладеться в образ як вбудований ресурс
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/system/ota/simple_ota_example/main/simple_ota_example.c
+  quote: 'extern const uint8_t server_cert_pem_start[] asm("_binary_ca_cert_pem_start");
+
+    '
+  method: Приклад отримано в цій сесії, рядок дослівний.
+  note: 'Рядок доводить саме вбудовування: символ `_binary_..._start` створює складальник,
+    коли файл кладуть в образ як ресурс. **Другої половини твердження — «пристрій відмовляється
+    оновлюватися, якщо сервер не той» — цей рядок не доводить.** Перевірка сертифіката відбувається
+    в `esp_https_ota`, і на неї потрібен окремий доказ.'
+  sha:
+  - bc76db57
+- nazva: Тільки-вхідні піни — ні драйвера, ні підтягування
+  zbih: вихідного драйвера — керувати з них нічим не можна
+  klas: B
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_gpio/include/driver/gpio.h
+  cytata: '* @note ESP32: Only pins that support both input & output have integrated pull-up
+    and pull-down resistors. Input-only GPIOs 34-39 do not.
+
+    '
+  sposib: Той самий заголовок, що й вище.
+  notatka: Підтягування доведено дослівно. Відсутність **вихідного драйвера** випливає з «input-only»,
+    але прямо не сказана — звідси `B`, а не `A`.
+  title: Тільки-вхідні піни — ні драйвера, ні підтягування
+  match: вихідного драйвера — керувати з них нічим не можна
+  status: derived
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_driver_gpio/include/driver/gpio.h
+  quote: '* @note ESP32: Only pins that support both input & output have integrated pull-up
+    and pull-down resistors. Input-only GPIOs 34-39 do not.
+
+    '
+  method: Той самий заголовок, що й вище.
+  note: Підтягування доведено дослівно. Відсутність **вихідного драйвера** випливає з «input-only»,
+    але прямо не сказана — звідси `B`, а не `A`.

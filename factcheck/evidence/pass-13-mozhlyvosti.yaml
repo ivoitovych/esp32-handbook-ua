@@ -1,0 +1,307 @@
+# Прохід 13 — зведені таблиці можливостей чипів.
+#
+# Дві найчастіше цитовані таблиці книги: розділ 02 (ядра, пам'ять, радіо)
+# і розділ 04 (кількість блоків периферії). Саме за ними обирають чип, і
+# саме їх переписують у чужі статті.
+#
+# Джерело — `soc_caps.h`, тобто те, за чим збирається сам фреймворк:
+# якщо прапорця там немає, драйвер не збереться, хоч би що казав
+# datasheet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: Зведена таблиця розділу 02 — ядра, радіо, PSRAM, USB
+  zbih: Ядер \||BT Classic|802\.15\.4|SOC_BT_CLASSIC|Wi-Fi 6|Bluetooth Classic є лише в ESP32
+    classic|ESP32-S2 не має Bluetooth|PSRAM підтримують лише classic
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+  cytata: "esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1\nesp32s2:\
+    \ CPU_CORES_NUM 1   WIFI 1  (BT/BLE відсутні)          SPIRAM 1  USB_OTG 1\nesp32s3: CPU_CORES_NUM\
+    \ 2   WIFI 1  BT 1  BLE 1  (без BT_CLASSIC) SPIRAM 1\n                             USB_OTG\
+    \ 1  USB_SERIAL_JTAG 1\nesp32c3: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  (без SPIRAM) \
+    \ USB_SERIAL_JTAG 1\nesp32c6: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG\
+    \ 1\n         #define SOC_WIFI_HE_SUPPORT (1)  /*!< Support Wi-Fi 6 */\nesp32h2: CPU_CORES_NUM\
+    \ 1   (без WIFI)  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG 1\n"
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: 'Нуль розбіжностей у всіх шістдесяти комірках. Звірено кожен рядок: ядра, PSRAM,
+    Wi-Fi, BT Classic, BLE, 802.15.4, USB — по шести сімействах.
+
+    Окремо приємно закрився рядок «Wi-Fi 6» для C6: у заголовку стоїть `SOC_WIFI_HE_SUPPORT
+    (1) /*!< Support Wi-Fi 6 */`, і цього прапорця немає в жодного іншого сімейства книги.
+    Тобто твердження не з маркетингового опису, а з умови збирання.
+
+    Три блоки уваги розділу 02 теж підтверджені механічно: `SOC_BT_CLASSIC_SUPPORTED` є лише
+    в classic; у S2 немає ні `SOC_BT_SUPPORTED`, ні `SOC_BLE_SUPPORTED`; `SOC_SPIRAM_SUPPORTED`
+    є рівно в classic, S2 і S3.'
+  title: Зведена таблиця розділу 02 — ядра, радіо, PSRAM, USB
+  match: Ядер \||BT Classic|802\.15\.4|SOC_BT_CLASSIC|Wi-Fi 6|Bluetooth Classic є лише в ESP32
+    classic|ESP32-S2 не має Bluetooth|PSRAM підтримують лише classic
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+  quote: "esp32:   CPU_CORES_NUM 2   WIFI 1  BT 1  BLE 1  BT_CLASSIC 1  SPIRAM 1\nesp32s2:\
+    \ CPU_CORES_NUM 1   WIFI 1  (BT/BLE відсутні)          SPIRAM 1  USB_OTG 1\nesp32s3: CPU_CORES_NUM\
+    \ 2   WIFI 1  BT 1  BLE 1  (без BT_CLASSIC) SPIRAM 1\n                             USB_OTG\
+    \ 1  USB_SERIAL_JTAG 1\nesp32c3: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  (без SPIRAM) \
+    \ USB_SERIAL_JTAG 1\nesp32c6: CPU_CORES_NUM 1   WIFI 1  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG\
+    \ 1\n         #define SOC_WIFI_HE_SUPPORT (1)  /*!< Support Wi-Fi 6 */\nesp32h2: CPU_CORES_NUM\
+    \ 1   (без WIFI)  BT 1  BLE 1  IEEE802154 1  USB_SERIAL_JTAG 1\n"
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Нуль розбіжностей у всіх шістдесяти комірках. Звірено кожен рядок: ядра, PSRAM, Wi-Fi,
+    BT Classic, BLE, 802.15.4, USB — по шести сімействах.
+
+    Окремо приємно закрився рядок «Wi-Fi 6» для C6: у заголовку стоїть `SOC_WIFI_HE_SUPPORT
+    (1) /*!< Support Wi-Fi 6 */`, і цього прапорця немає в жодного іншого сімейства книги.
+    Тобто твердження не з маркетингового опису, а з умови збирання.
+
+    Три блоки уваги розділу 02 теж підтверджені механічно: `SOC_BT_CLASSIC_SUPPORTED` є лише
+    в classic; у S2 немає ні `SOC_BT_SUPPORTED`, ні `SOC_BLE_SUPPORTED`; `SOC_SPIRAM_SUPPORTED`
+    є рівно в classic, S2 і S3.'
+  sha:
+  - 0688b955
+  - 06fa7a1a
+  - '32086172'
+  - 37ca91b8
+  - 43079d53
+  - 4f695ef2
+  - 5180d438
+  - 59bd179d
+  - 60a5ea72
+  - 679fdc0a
+  - 6bd38e28
+  - 6d067d98
+  - 830f1e52
+  - '86264540'
+  - '87624831'
+  - '89227826'
+  - 9bdedf92
+  - aff9b495
+  - b13a20d6
+  - cb4f2ef8
+  - d0be2aa4
+  - d6c8ccf7
+  - e9312cfd
+  - fca9e612
+- nazva: Обсяг SRAM у таблиці — datasheet, а не адресні вікна
+  zbih: Обсяг SRAM у таблиці — це фізична пам.ять чипа|328 КБ|вікно даних — близько 480|обчислені
+    з меж адресних вікон|вікно DRAM|вікна даних і інструкцій збігаються
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc.h
+  cytata: 'esp32:   DRAM 0x3FFAE000…0x40000000 (328 КБ)  IRAM 0x40080000…0x400AA000 (168 КБ)
+
+    esp32s2: DRAM 0x3FFB0000…0x40000000 (320 КБ)  IRAM 0x40020000…0x40070000 (320 КБ)
+
+    esp32s3: DRAM 0x3FC88000…0x3FD00000 (480 КБ)  IRAM 0x40370000…0x403E0000 (448 КБ)
+
+    esp32c3: DRAM 0x3FC80000…0x3FCE0000 (384 КБ)  IRAM 0x4037C000…0x403E0000 (400 КБ)
+
+    esp32c6: DRAM = IRAM = 0x40800000…0x40880000 (512 КБ)
+
+    esp32h2: DRAM = IRAM = 0x40800000…0x40850000 (320 КБ)
+
+    '
+  sposib: curl raw.githubusercontent + перерахунок tools/arithmetic.py, 2026-08-26
+  notatka: 'Виправлення, і воно стосується не факту, а **способу перевірки**, про який книга
+    сама заявляла. `docs/fakty.md` стверджував, що обсяги SRAM обчислені з меж адресних вікон
+    і збігаються із заявленими для п''яти сімейств із шести. Перерахунок цього не підтвердив.
+
+    Рівний збіг є лише там, де вікна даних і інструкцій збігаються між собою (C6, H2) або
+    де вікно DRAM і є вся пам''ять (S2). На C3 із заявленим збігається вікно **IRAM**, а не
+    DRAM. Для classic і S3 не збігається жодне вікно.
+
+    Виправлено чесно: обсяги SRAM — величини з datasheet, а вікна — це інше число. Заявлений
+    обсяг лишається в наряді як клас `C`.
+
+    Але з помилки вийшло доповнення, і корисне. Вікна відповідають на практично важливіше
+    питання: скільки пам''яті чип узагалі здатен адресувати як дані. На classic це 328 КБ
+    із 520, на S3 — 480 із 512. Тобто число з таблиці годиться для порівняння чипів і не годиться
+    для планування буфера. Додано в розділ 02 блоком уваги.
+
+    Шість перерахунків вікон додано в `tools/arithmetic.py` (36 замість 30), щоб число не
+    роз''їхалося мовчки.'
+  title: Обсяг SRAM у таблиці — datasheet, а не адресні вікна
+  match: Обсяг SRAM у таблиці — це фізична пам.ять чипа|328 КБ|вікно даних — близько 480|обчислені
+    з меж адресних вікон|вікно DRAM|вікна даних і інструкцій збігаються
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc.h
+  quote: 'esp32:   DRAM 0x3FFAE000…0x40000000 (328 КБ)  IRAM 0x40080000…0x400AA000 (168 КБ)
+
+    esp32s2: DRAM 0x3FFB0000…0x40000000 (320 КБ)  IRAM 0x40020000…0x40070000 (320 КБ)
+
+    esp32s3: DRAM 0x3FC88000…0x3FD00000 (480 КБ)  IRAM 0x40370000…0x403E0000 (448 КБ)
+
+    esp32c3: DRAM 0x3FC80000…0x3FCE0000 (384 КБ)  IRAM 0x4037C000…0x403E0000 (400 КБ)
+
+    esp32c6: DRAM = IRAM = 0x40800000…0x40880000 (512 КБ)
+
+    esp32h2: DRAM = IRAM = 0x40800000…0x40850000 (320 КБ)
+
+    '
+  method: curl raw.githubusercontent + перерахунок tools/arithmetic.py, 2026-08-26
+  note: 'Виправлення, і воно стосується не факту, а **способу перевірки**, про який книга
+    сама заявляла. `docs/fakty.md` стверджував, що обсяги SRAM обчислені з меж адресних вікон
+    і збігаються із заявленими для п''яти сімейств із шести. Перерахунок цього не підтвердив.
+
+    Рівний збіг є лише там, де вікна даних і інструкцій збігаються між собою (C6, H2) або
+    де вікно DRAM і є вся пам''ять (S2). На C3 із заявленим збігається вікно **IRAM**, а не
+    DRAM. Для classic і S3 не збігається жодне вікно.
+
+    Виправлено чесно: обсяги SRAM — величини з datasheet, а вікна — це інше число. Заявлений
+    обсяг лишається в наряді як клас `C`.
+
+    Але з помилки вийшло доповнення, і корисне. Вікна відповідають на практично важливіше
+    питання: скільки пам''яті чип узагалі здатен адресувати як дані. На classic це 328 КБ
+    із 520, на S3 — 480 із 512. Тобто число з таблиці годиться для порівняння чипів і не годиться
+    для планування буфера. Додано в розділ 02 блоком уваги.
+
+    Шість перерахунків вікон додано в `tools/arithmetic.py` (36 замість 30), щоб число не
+    роз''їхалося мовчки.'
+  sha:
+  - 57958c24
+  - 670655ab
+  - 930693d7
+  - e1612c34
+- nazva: Кількість блоків периферії за сімействами
+  zbih: SPI, усього|SPI, вільних|TWAI \(CAN\) \|| I²S \| 2|SOC_UART_HP_NUM|Рядок «SPI, вільних»
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+  cytata: 'прапорець                32   s2   s3   c3   c6   h2
+
+    SOC_UART_NUM             3    2    3    2    3    2
+
+    SOC_UART_HP_NUM          3    2    3    2    2    2
+
+    SOC_UART_LP_NUM          —    —    —    —    1    —
+
+    SOC_HP_I2C_NUM           2    2    2    1    1    2
+
+    SOC_LP_I2C_NUM           —    —    —    —    1    —
+
+    SOC_SPI_PERIPH_NUM       3    3    3    2    2    2
+
+    SOC_I2S_NUM              2    1    2    1    1    1
+
+    SOC_TWAI_CONTROLLER_NUM  1    1    1    1    2    1
+
+    SOC_DAC_CHAN_NUM         2    2    —    —    —    —
+
+    SOC_TOUCH_SENSOR_NUM    10   15   15    —    —    —
+
+    '
+  sposib: curl raw.githubusercontent, 2026-08-26
+  notatka: 'Одне виправлення на всю таблицю. Книга давала C6 три UART нарівні з classic і
+    S3, тоді як для I²C того самого C6 акуратно писала «1 + 1 LP». Насправді третій UART теж
+    низькоспоживчий: `SOC_UART_HP_NUM` = 2, `SOC_UART_LP_NUM` = 1.
+
+    Виправлено на «2 + 1 LP», а пояснення про LP-домен переписано так, щоб охоплювало обидва
+    блоки. Заразом названо саму пастку: у C6 `SOC_UART_NUM` і `SOC_I2C_NUM` рахують LP-екземпляри
+    разом зі звичайними, і брати треба пару `HP`/`LP`.
+
+    Решта таблиці збіглася: SPI (3/3/3/2/2/2 і «вільних» на один менше через контролер флешу),
+    I²S, TWAI з двома контролерами на C6, DAC лише в classic і S2.
+
+    Рядок Touch підтверджує вже наявне пояснення книги: у заголовку стоїть 15 для S2 і S3,
+    а книга друкує 14 і прямо пише, що нульовий канал зайнятий придушенням шуму. Розбіжності
+    немає — є свідома різниця між «рахує апаратура» і «придатне до використання».'
+  title: Кількість блоків периферії за сімействами
+  match: SPI, усього|SPI, вільних|TWAI \(CAN\) \|| I²S \| 2|SOC_UART_HP_NUM|Рядок «SPI, вільних»
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32h2}/include/soc/soc_caps.h
+  quote: 'прапорець                32   s2   s3   c3   c6   h2
+
+    SOC_UART_NUM             3    2    3    2    3    2
+
+    SOC_UART_HP_NUM          3    2    3    2    2    2
+
+    SOC_UART_LP_NUM          —    —    —    —    1    —
+
+    SOC_HP_I2C_NUM           2    2    2    1    1    2
+
+    SOC_LP_I2C_NUM           —    —    —    —    1    —
+
+    SOC_SPI_PERIPH_NUM       3    3    3    2    2    2
+
+    SOC_I2S_NUM              2    1    2    1    1    1
+
+    SOC_TWAI_CONTROLLER_NUM  1    1    1    1    2    1
+
+    SOC_DAC_CHAN_NUM         2    2    —    —    —    —
+
+    SOC_TOUCH_SENSOR_NUM    10   15   15    —    —    —
+
+    '
+  method: curl raw.githubusercontent, 2026-08-26
+  note: 'Одне виправлення на всю таблицю. Книга давала C6 три UART нарівні з classic і S3,
+    тоді як для I²C того самого C6 акуратно писала «1 + 1 LP». Насправді третій UART теж низькоспоживчий:
+    `SOC_UART_HP_NUM` = 2, `SOC_UART_LP_NUM` = 1.
+
+    Виправлено на «2 + 1 LP», а пояснення про LP-домен переписано так, щоб охоплювало обидва
+    блоки. Заразом названо саму пастку: у C6 `SOC_UART_NUM` і `SOC_I2C_NUM` рахують LP-екземпляри
+    разом зі звичайними, і брати треба пару `HP`/`LP`.
+
+    Решта таблиці збіглася: SPI (3/3/3/2/2/2 і «вільних» на один менше через контролер флешу),
+    I²S, TWAI з двома контролерами на C6, DAC лише в classic і S2.
+
+    Рядок Touch підтверджує вже наявне пояснення книги: у заголовку стоїть 15 для S2 і S3,
+    а книга друкує 14 і прямо пише, що нульовий канал зайнятий придушенням шуму. Розбіжності
+    немає — є свідома різниця між «рахує апаратура» і «придатне до використання».'

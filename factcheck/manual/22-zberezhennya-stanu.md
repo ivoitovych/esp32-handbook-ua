@@ -2,7 +2,7 @@
 
 Одиниць твердження: **71**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -554,18 +554,18 @@ GPIO0   → білий   → кнопка на землю (⚠ strapping!)
 **Доказ**
 
 - **Клас:** 🟢 B — первинне похідне — першоджерело отримано, твердження випливає однозначно
-- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/soc_caps.h (маски дійсних пінів) + `tools/piny.py`
+- **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/esp32/include/soc/soc_caps.h (маски дійсних пінів) + `tools/pins.py`
 - **Дослівно з джерела:**
   > esp32: SOC_GPIO_PIN_COUNT 40
   >        SOC_GPIO_VALID_GPIO_MASK (0xFFFFFFFFFFULL & ~(BIT24|BIT28…BIT31))
   > 
   > Усі піни прикладів (0, 4, 21, 22) дійсні для classic;
   > GPIO22 недійсний для S3 і C3, GPIO21 — граничний для C3.
-- **Спосіб і дата:** python3 tools/piny.py, 2026-08-26
-- **Нотатка:** Схеми в розділах 22 і 56 — приклади «як підписати дроти перед втручанням», а не BOM проєкту. Сімейства вони не оголошують, тож `tools/piny.py` їх не перевіряв.
+- **Спосіб і дата:** python3 tools/pins.py, 2026-08-26
+- **Нотатка:** Схеми в розділах 22 і 56 — приклади «як підписати дроти перед втручанням», а не BOM проєкту. Сімейства вони не оголошують, тож `tools/pins.py` їх не перевіряв.
 Перевірено вручну: всі чотири піни дійсні для classic, і жоден із розділів не обіцяє іншого сімейства. Розбіжності немає.
 Але записано окремо, бо випадок межовий: якби хтось додав до цих розділів рядок «або S3», `GPIO22` став би помилкою мовчки. Це та сама пастка, що зі проєктами 59 і 60 — просто тут її ще немає.
-Практичний висновок для процесу: перевірка `piny.py` спирається на те, що файл сам себе оголошує. Розділ без такого оголошення з-під неї випадає — і це прийнятно лише доти, доки в ньому немає обіцянки про сімейство.
+Практичний висновок для процесу: перевірка `pins.py` спирається на те, що файл сам себе оголошує. Розділ без такого оголошення з-під неї випадає — і це прийнятно лише доти, доки в ньому немає обіцянки про сімейство.
 - **Прохід:** pass-20-jtag-obvyazka
 
 ---
@@ -1121,7 +1121,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
+- **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -1151,7 +1151,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
+- **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -1412,7 +1412,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/a4dbe955-bootloader.rst
+- **Джерело:** source-cache/a4dbe955-bootloader.rst
 - **Дослівно з джерела:**
   > I (46) boot: ESP-IDF v6.0-dev-172-g12c5d730097-dirty 2nd stage bootloader
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1683,7 +1683,7 @@ esptool --port /dev/ttyUSB0 read-flash 0 ALL dump-2026-08-26.bin
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/c02027a1-nvs_flash.rst
+- **Джерело:** source-cache/c02027a1-nvs_flash.rst
 - **Дослівно з джерела:**
   > NVS stores key-value pairs sequentially, with new key-value pairs being added at the end.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

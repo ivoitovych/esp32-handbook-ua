@@ -1,0 +1,276 @@
+- nazva: Raspberry Pi 4 — Wi-Fi і Bluetooth на борту
+  zbih: Радіо на борту · Raspberry Pi → так
+  klas: A
+  dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
+    2.2 «Interfaces» (кеш: source-cache/rpi4-datasheet.pdf)'
+  cytata: "2.2    Interfaces\n      • 802.11 b/g/n/ac Wireless LAN\n      • Bluetooth 5.0 with BLE\n"
+  sposib: PDF з кешу `rpi4-datasheet.pdf`, завантажено `vzyaty.sh` з datasheets.raspberrypi.com, pdftotext
+    -layout, 2026-08-26
+  notatka: 'Той самий факт для Pi 5 (product brief, розділ «Specification»): «Dual-band 802.11ac Wi-Fi®»
+    і «Bluetooth 5.0 / Bluetooth Low Energy (BLE)» — покоління різні, висновок «так» той самий для обох.'
+  title: Raspberry Pi 4 — Wi-Fi і Bluetooth на борту
+  match: Радіо на борту · Raspberry Pi → так
+  status: verbatim
+  source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
+    2.2 «Interfaces» (кеш: source-cache/rpi4-datasheet.pdf)'
+  quote: "2.2    Interfaces\n      • 802.11 b/g/n/ac Wireless LAN\n      • Bluetooth 5.0 with BLE\n"
+  method: PDF з кешу `rpi4-datasheet.pdf`, завантажено `vzyaty.sh` з datasheets.raspberrypi.com, pdftotext
+    -layout, 2026-08-26
+  note: 'Той самий факт для Pi 5 (product brief, розділ «Specification»): «Dual-band 802.11ac Wi-Fi®»
+    і «Bluetooth 5.0 / Bluetooth Low Energy (BLE)» — покоління різні, висновок «так» той самий для обох.'
+  sha:
+  - 441d4329
+- nazva: Raspberry Pi 4 — ядро на 1.5 ГГц, більше за 1 ГГц
+  zbih: Частота · Raspberry Pi → понад 1 ГГц
+  klas: A
+  dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
+    2.1 «Hardware» (кеш: source-cache/rpi4-datasheet.pdf)'
+  cytata: "2.1    Hardware\n      • Quad core 64-bit ARM-Cortex A72 running at 1.5GHz\n"
+  sposib: PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+  notatka: '1.5 ГГц > 1 ГГц — з запасом, і це найповільніша з підтримуваних книгою плат: Pi 5 (product
+    brief) іде ще вище — «64-bit quad-core Arm Cortex-A76 processor running at 2.4GHz». Обидва підтверджують
+    «понад 1 ГГц», Pi 5 із більшим запасом.'
+  title: Raspberry Pi 4 — ядро на 1.5 ГГц, більше за 1 ГГц
+  match: Частота · Raspberry Pi → понад 1 ГГц
+  status: verbatim
+  source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
+    2.1 «Hardware» (кеш: source-cache/rpi4-datasheet.pdf)'
+  quote: "2.1    Hardware\n      • Quad core 64-bit ARM-Cortex A72 running at 1.5GHz\n"
+  method: PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+  note: '1.5 ГГц > 1 ГГц — з запасом, і це найповільніша з підтримуваних книгою плат: Pi 5 (product brief)
+    іде ще вище — «64-bit quad-core Arm Cortex-A76 processor running at 2.4GHz». Обидва підтверджують
+    «понад 1 ГГц», Pi 5 із більшим запасом.'
+- nazva: Raspberry Pi 4 — гігабайти LPDDR4 SDRAM
+  zbih: RAM · Raspberry Pi → гігабайти
+  klas: A
+  dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
+    1 «Introduction» (кеш: source-cache/rpi4-datasheet.pdf)'
+  cytata: 'The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
+
+    '
+  sposib: PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+  notatka: Pi 5 (product brief) іде далі — «LPDDR4X-4267 SDRAM (options for 1GB, 2GB, 4GB, 8GB and 16GB)»
+    — теж гігабайти, більший максимум.
+  title: Raspberry Pi 4 — гігабайти LPDDR4 SDRAM
+  match: RAM · Raspberry Pi → гігабайти
+  status: verbatim
+  source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
+    1 «Introduction» (кеш: source-cache/rpi4-datasheet.pdf)'
+  quote: 'The Pi4B is available with 1, 2, 4, or 8 gigabytes of LPDDR4 SDRAM.
+
+    '
+  method: PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+  note: Pi 5 (product brief) іде далі — «LPDDR4X-4267 SDRAM (options for 1GB, 2GB, 4GB, 8GB and 16GB)»
+    — теж гігабайти, більший максимум.
+  sha:
+  - 8ca74b4d
+- nazva: Raspberry Pi 4 — Linux, «Mature Linux software stack»
+  zbih: ОС · Raspberry Pi → Linux
+  klas: A
+  dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
+    2.3 «Software» (кеш: source-cache/rpi4-datasheet.pdf)'
+  cytata: "2.3    Software\n      • ARMv8 Instruction Set\n      • Mature Linux software stack\n     \
+    \ • Actively developed and maintained\n          – Recent Linux kernel support\n          – Many drivers\
+    \ upstreamed\n          – Stable and well supported userland\n"
+  sposib: PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+  notatka: Датащит прямо називає ОС — Linux, і саме «зрілий» стек, а не RTOS чи bare-metal. Найпряміший
+    запис у всій цій групі.
+  title: Raspberry Pi 4 — Linux, «Mature Linux software stack»
+  match: ОС · Raspberry Pi → Linux
+  status: verbatim
+  source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, Release 1.1 (March 2024), розділ
+    2.3 «Software» (кеш: source-cache/rpi4-datasheet.pdf)'
+  quote: "2.3    Software\n      • ARMv8 Instruction Set\n      • Mature Linux software stack\n      •\
+    \ Actively developed and maintained\n          – Recent Linux kernel support\n          – Many drivers\
+    \ upstreamed\n          – Stable and well supported userland\n"
+  method: PDF з кешу `rpi4-datasheet.pdf`, pdftotext -layout, 2026-08-26
+  note: Датащит прямо називає ОС — Linux, і саме «зрілий» стек, а не RTOS чи bare-metal. Найпряміший запис
+    у всій цій групі.
+  sha:
+  - 4c88e4a1
+- nazva: Raspberry Pi — час завантаження поза межами обох документів
+  zbih: Старт · Raspberry Pi → десятки секунд
+  klas: E
+  dzherelo: —
+  cytata: —
+  sposib: 'PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено
+    пошуком слова «boot» в обох витягнутих текстах: збігів немає.'
+  notatka: 'Ні datasheet Pi 4, ні product brief Pi 5 жодного разу не згадують час завантаження — і це
+    очікувано: старт до робочого стану залежить від дистрибутива Raspberry Pi OS, швидкості SD-карти й
+    того, які служби він піднімає, а не від самої плати. Це не «недоступне джерело» (клас C) — канонічного
+    документа з такою цифрою від Raspberry Pi Ltd просто не існує, це спостережуваний факт про клас пристроїв.
+    Тому клас E, як і «Ціна плати» для AVR у попередньому кроці.'
+  title: Raspberry Pi — час завантаження поза межами обох документів
+  match: Старт · Raspberry Pi → десятки секунд
+  status: no-external-signal
+  source: —
+  quote: —
+  method: 'PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено
+    пошуком слова «boot» в обох витягнутих текстах: збігів немає.'
+  note: 'Ні datasheet Pi 4, ні product brief Pi 5 жодного разу не згадують час завантаження — і це очікувано:
+    старт до робочого стану залежить від дистрибутива Raspberry Pi OS, швидкості SD-карти й того, які
+    служби він піднімає, а не від самої плати. Це не «недоступне джерело» (клас C) — канонічного документа
+    з такою цифрою від Raspberry Pi Ltd просто не існує, це спостережуваний факт про клас пристроїв. Тому
+    клас E, як і «Ціна плати» для AVR у попередньому кроці.'
+  sha:
+  - 4b7ada41
+- nazva: Raspberry Pi — жодної згадки режиму сну там, де про живлення говорять детально
+  zbih: Сон · Raspberry Pi → не передбачено
+  klas: B
+  dzherelo: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»;
+    Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: source-cache/rpi4-datasheet.pdf)'
+  cytata: '4.1     Power Requirements
+
+    The Pi4B requires a good quality USB-C power supply capable of delivering 5V at 3A. If attached
+
+    downstream USB devices consume less than 500mA, a 5V, 2.5A supply may be used.
+
+    '
+  sposib: 'PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено
+    пошуком слів «sleep», «suspend», «standby», «hibernate», «shutdown», «low-power» в обох витягнутих
+    текстах: збігів немає в жодному з двох документів.'
+  notatka: На відміну від AVR і RP2040, чиї datasheet присвячують окремі розділи й таблиці режимам сну
+    з мікроамперними цифрами, обидва документи Raspberry Pi говорять про живлення тільки в термінах вимог
+    до блока живлення (розділ 4.1 у Pi 4) і не мають жодного розділу про режим сну чи низькоспоживчий
+    стан. Відсутність у документах, які інакше детально покривають живлення, — не пряма цитата, тому клас
+    B, а не A, той самий патерн, що й «Радіо → ні» для AVR у попередньому кроці.
+  title: Raspberry Pi — жодної згадки режиму сну там, де про живлення говорять детально
+  match: Сон · Raspberry Pi → не передбачено
+  status: derived
+  source: 'Raspberry Pi (Trading) Ltd, Raspberry Pi 4 Model B Datasheet, розділ 4.1 «Power Requirements»;
+    Raspberry Pi 5 Product Brief, розділ «Specification» (кеш: source-cache/rpi4-datasheet.pdf)'
+  quote: '4.1     Power Requirements
+
+    The Pi4B requires a good quality USB-C power supply capable of delivering 5V at 3A. If attached
+
+    downstream USB devices consume less than 500mA, a 5V, 2.5A supply may be used.
+
+    '
+  method: 'PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено
+    пошуком слів «sleep», «suspend», «standby», «hibernate», «shutdown», «low-power» в обох витягнутих
+    текстах: збігів немає в жодному з двох документів.'
+  note: На відміну від AVR і RP2040, чиї datasheet присвячують окремі розділи й таблиці режимам сну з
+    мікроамперними цифрами, обидва документи Raspberry Pi говорять про живлення тільки в термінах вимог
+    до блока живлення (розділ 4.1 у Pi 4) і не мають жодного розділу про режим сну чи низькоспоживчий
+    стан. Відсутність у документах, які інакше детально покривають живлення, — не пряма цитата, тому клас
+    B, а не A, той самий патерн, що й «Радіо → ні» для AVR у попередньому кроці.
+  sha:
+  - 3d704f3b
+- nazva: Raspberry Pi — «реальний час» поза тим, що документи оцінюють
+  zbih: Реальний час · Raspberry Pi → погано
+  klas: E
+  dzherelo: —
+  cytata: —
+  sposib: 'PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено
+    пошуком «real-time», «realtime», «deterministic», «RTOS», «scheduler»: збігів немає (крім «Real-time
+    clock (RTC)» у Pi 5 — див. нотатку).'
+  notatka: 'Єдина згадка «real-time» в обох документах — «Real-time clock (RTC), powered from external
+    battery» у специфікації Pi 5. Це годинник реального часу (мікросхема, що рахує дату й час, а не процесорний
+    час), а не властивість детермінованості виконання — не плутати одне з одним, це пастка термінології,
+    а не доказ. Жодних даних про латентність переривань, планувальник чи детермінізм ні один із документів
+    не наводить: Raspberry Pi Ltd просто не публікує такого для одноплатного комп''ютера із загальним
+    Linux, на відміну від Microchip і Raspberry Pi для RP2040, які прямо документують час реакції на переривання.
+    Оцінка «погано» — порівняльне редакційне судження автора книги про клас пристрою (загальна ОС проти
+    голого заліза), не цифра з джерела. Клас E.'
+  title: Raspberry Pi — «реальний час» поза тим, що документи оцінюють
+  match: Реальний час · Raspberry Pi → погано
+  status: no-external-signal
+  source: —
+  quote: —
+  method: 'PDF з кешу `rpi4-datasheet.pdf` і `rpi5-datasheet.pdf`, pdftotext -layout, 2026-08-26 — перевірено
+    пошуком «real-time», «realtime», «deterministic», «RTOS», «scheduler»: збігів немає (крім «Real-time
+    clock (RTC)» у Pi 5 — див. нотатку).'
+  note: 'Єдина згадка «real-time» в обох документах — «Real-time clock (RTC), powered from external battery»
+    у специфікації Pi 5. Це годинник реального часу (мікросхема, що рахує дату й час, а не процесорний
+    час), а не властивість детермінованості виконання — не плутати одне з одним, це пастка термінології,
+    а не доказ. Жодних даних про латентність переривань, планувальник чи детермінізм ні один із документів
+    не наводить: Raspberry Pi Ltd просто не публікує такого для одноплатного комп''ютера із загальним
+    Linux, на відміну від Microchip і Raspberry Pi для RP2040, які прямо документують час реакції на переривання.
+    Оцінка «погано» — порівняльне редакційне судження автора книги про клас пристрою (загальна ОС проти
+    голого заліза), не цифра з джерела. Клас E.'
+  sha:
+  - 3f88d5a2
+- nazva: Raspberry Pi 5 — офіційний прайс-лист, висока ціна проти мікроконтролерних плат
+  zbih: Ціна плати · Raspberry Pi → висока
+  klas: A
+  dzherelo: Raspberry Pi Ltd, Raspberry Pi 5 Product Brief (Published April 2026), розділ «Specification»
+    → «List price»
+  cytata: "List price:\n            1GB  $45\n            2GB  $65\n            4GB  $110\n          \
+    \  8GB  $175\n            16GB $305\n"
+  sposib: PDF з кешу `rpi5-datasheet.pdf`, завантажено `vzyaty.sh` з datasheets.raspberrypi.com, pdftotext
+    -layout, 2026-08-26
+  notatka: На відміну від кристалів (RP2040, ATmega328P), де ціни в datasheet немає в принципі, офіційний
+    product brief готової плати Pi 5 таки публікує прайс-лист — і це рідкісний випадок класу A саме для
+    «ціни». $45–305 за саму плату — це на порядок вище за Arduino Uno (~$25) чи Pi Pico на RP2040 (~$4–5)
+    з тієї ж таблиці, що й підтверджує «висока» відносно решти рядка. Модель Pi 4 в її власному datasheet
+    (Release 1.1) ціни не наводить — прайс-лист є тільки в новішому форматі документа Pi 5, тому саме
+    він і використаний як джерело.
+  title: Raspberry Pi 5 — офіційний прайс-лист, висока ціна проти мікроконтролерних плат
+  match: Ціна плати · Raspberry Pi → висока
+  status: verbatim
+  source: Raspberry Pi Ltd, Raspberry Pi 5 Product Brief (Published April 2026), розділ «Specification»
+    → «List price»
+  quote: "List price:\n            1GB  $45\n            2GB  $65\n            4GB  $110\n           \
+    \ 8GB  $175\n            16GB $305\n"
+  method: PDF з кешу `rpi5-datasheet.pdf`, завантажено `vzyaty.sh` з datasheets.raspberrypi.com, pdftotext
+    -layout, 2026-08-26
+  note: На відміну від кристалів (RP2040, ATmega328P), де ціни в datasheet немає в принципі, офіційний
+    product brief готової плати Pi 5 таки публікує прайс-лист — і це рідкісний випадок класу A саме для
+    «ціни». $45–305 за саму плату — це на порядок вище за Arduino Uno (~$25) чи Pi Pico на RP2040 (~$4–5)
+    з тієї ж таблиці, що й підтверджує «висока» відносно решти рядка. Модель Pi 4 в її власному datasheet
+    (Release 1.1) ціни не наводить — прайс-лист є тільки в новішому форматі документа Pi 5, тому саме
+    він і використаний як джерело.
+  sha:
+  - 7959a945
+- nazva: «Проти Raspberry Pi» — редакційна рамка, не технічне твердження
+  zbih: \*\*Проти Raspberry Pi\.\*\* Це різні класи\.
+  klas: E
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки — див. нотатку.
+  notatka: 'Речення відкриває підрозділ порівняння й саме по собі не несе перевірного технічного факту
+    (жодного числа, жодної конкретної характеристики) — це редакційна теза, після якої йдуть уже конкретні
+    порівняння (файлова система, час завантаження, споживання), розбиті на окремі одиниці. «Різні класи
+    пристроїв» — категоріальне судження автора, а не щось, що підтверджує чи спростовує datasheet. Клас
+    E, як «Ціна плати» для AVR у попередньому кроці.
+
+
+    НЕ ТВЕРДЖЕННЯ: структура тексту (заголовок, рамка, перелік). Клас `E` правильний, але міряє дрібність
+    витягача, а не книгу.'
+  title: «Проти Raspberry Pi» — редакційна рамка, не технічне твердження
+  match: \*\*Проти Raspberry Pi\.\*\* Це різні класи\.
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки — див. нотатку.
+  note: 'Речення відкриває підрозділ порівняння й саме по собі не несе перевірного технічного факту (жодного
+    числа, жодної конкретної характеристики) — це редакційна теза, після якої йдуть уже конкретні порівняння
+    (файлова система, час завантаження, споживання), розбиті на окремі одиниці. «Різні класи пристроїв»
+    — категоріальне судження автора, а не щось, що підтверджує чи спростовує datasheet. Клас E, як «Ціна
+    плати» для AVR у попередньому кроці.
+
+
+    НЕ ТВЕРДЖЕННЯ: структура тексту (заголовок, рамка, перелік). Клас `E` правильний, але міряє дрібність
+    витягача, а не книгу.'
+  sha:
+  - 4b3d1dce
+- nazva: «Найчастіша помилка вибору» — редакційна порада, не факт
+  zbih: Найчастіша помилка вибору — узяти Raspberry Pi туди, де потрібен мікроконтролер\.
+  klas: E
+  dzherelo: —
+  cytata: —
+  sposib: Немає зовнішнього джерела для перевірки — див. нотатку.
+  notatka: 'Твердження про те, яка помилка найчастіша серед читачів, — не факт про залізо чи ПЗ, який
+    можна звірити з datasheet: жоден виробник не публікує статистику помилок вибору платформи. Це практична
+    порада автора з досвіду читання питань і форумів, редакційна за визначенням SCHEMA.md. Клас E.'
+  title: «Найчастіша помилка вибору» — редакційна порада, не факт
+  match: Найчастіша помилка вибору — узяти Raspberry Pi туди, де потрібен мікроконтролер\.
+  status: no-external-signal
+  source: —
+  quote: —
+  method: Немає зовнішнього джерела для перевірки — див. нотатку.
+  note: 'Твердження про те, яка помилка найчастіша серед читачів, — не факт про залізо чи ПЗ, який можна
+    звірити з datasheet: жоден виробник не публікує статистику помилок вибору платформи. Це практична
+    порада автора з досвіду читання питань і форумів, редакційна за визначенням SCHEMA.md. Клас E.'
+  sha:
+  - 3ab19ea0

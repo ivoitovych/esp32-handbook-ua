@@ -1,0 +1,129 @@
+# Хвиля 3, питання 20
+# Документ: source-cache/f48eaf67-dac.rst
+
+- id: T-04-051
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/f48eaf67-dac.rst, grep -i 'розділ 33|раздел 33|section 33', 0 влучань
+
+- id: T-07-101
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/f48eaf67-dac.rst, grep -i 'більше ніде|больше нигде', 0 влучань
+
+- id: T-04-105
+  verdykt: pidtverdzheno
+  fayl: source-cache/f48eaf67-dac.rst
+  cytata: |
+    The DAC on {IDF_TARGET_NAME} has two channels.
+  de: Розділ Functional Overview, підрозділ Resources Management
+  notatka: Документ підтверджує, що DAC має 2 канали
+
+- id: T-K09-009
+  verdykt: pidtverdzheno
+  fayl: source-cache/f48eaf67-dac.rst
+  cytata: |
+    {IDF_TARGET_DAC_CH_1: default = "Not Updated!", esp32 = "GPIO25", esp32s2 = "GPIO17"}
+    {IDF_TARGET_DAC_CH_2: default = "Not Updated!", esp32 = "GPIO26", esp32s2 = "GPIO18"}
+  de: На початку документу, визначення макросів
+  notatka: GPIO25 і GPIO26 — дійсно єдині DAC-виходи на ESP32
+
+- id: T-04-106
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/f48eaf67-dac.rst, grep -i 'esp32.*s3|s3|C3', 0 влучань
+
+- id: T-04-050
+  verdykt: pidtverdzheno
+  fayl: source-cache/f48eaf67-dac.rst
+  cytata: |
+    has two 8-bit DAC (digital to analog converter) channels respectively connected to {IDF_TARGET_DAC_CH_1} (Channel 1) and {IDF_TARGET_DAC_CH_2} (Channel 2).
+  de: Розділ Overview, перший абзац
+  notatka: Документ підтверджує, що DAC — справжній аналоговий вихід
+
+- id: T-04-108
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/f48eaf67-dac.rst, grep -i 'C6|esp32-C6', 0 влучань
+
+- id: T-04-150
+  verdykt: pidtverdzheno
+  fayl: source-cache/f48eaf67-dac.rst
+  cytata: |
+    On ESP32, the DAC digital controller can be connected internally to the I2S0
+  de: Розділ Functional Overview, підрозділ "on ESP32"
+  notatka: Документ присвячений DAC на ESP32 та ESP32-S2, що підтверджує обмеження
+
+- id: T-04-104
+  verdykt: pidtverdzheno
+  fayl: source-cache/f48eaf67-dac.rst
+  cytata: |
+    The DAC on {IDF_TARGET_NAME} has two channels.
+  de: Розділ Functional Overview, підрозділ Resources Management
+  notatka: DAC має 2 канали
+
+- id: T-04-132
+  verdykt: pidtverdzheno
+  fayl: source-cache/f48eaf67-dac.rst
+  cytata: |
+    {IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels
+  de: Розділ Overview
+  notatka: Документ описує DAC саме для цих моделей
+
+- id: T-33-119
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/f48eaf67-dac.rst, grep -i 'розділ 04|section 04', 0 влучань
+
+- id: T-04-107
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/f48eaf67-dac.rst, grep -i 'C3|ESP32-C3', 0 влучань
+
+- id: T-04-109
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/f48eaf67-dac.rst, grep -i 'H2|ESP32-H2', 0 влучань
+
+# Документ: source-cache/4aac28c3-partition-tables.rst
+
+- id: T-Z-032
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/4aac28c3-partition-tables.rst, grep -n '119', 0 влучань
+
+- id: T-18-035
+  verdykt: pidtverdzheno
+  fayl: source-cache/4aac28c3-partition-tables.rst
+  cytata: |
+    python gen_esp32part.py input_partitions.csv binary_partitions.bin
+  de: Розділ "Generating Binary Partition Table"
+  notatka: Документ описує команду gen_esp32part.py
+
+- id: T-24-011
+  verdykt: pidtverdzheno
+  fayl: source-cache/4aac28c3-partition-tables.rst
+  cytata: |
+    python gen_esp32part.py input_partitions.csv binary_partitions.bin
+  de: Розділ "Generating Binary Partition Table"
+  notatka: Те саме, що й T-18-035
+
+- id: T-26-101
+  verdykt: pidtverdzheno
+  fayl: source-cache/4aac28c3-partition-tables.rst
+  cytata: |
+    coredump (0x03) is for storing core dumps while using a custom partition table CSV file.
+  de: Розділ "SubType", підрозділ про типи даних
+  notatka: Документ описує coredump розділ
+
+- id: T-C-121
+  verdykt: pidtverdzheno
+  fayl: source-cache/4aac28c3-partition-tables.rst
+  cytata: |
+    python gen_esp32part.py input_partitions.csv binary_partitions.bin
+  de: Розділ "Generating Binary Partition Table"
+  notatka: Команда для генерування таблиці розділів
+
+- id: T-Z-060
+  verdykt: ne_znayshov
+  dyvyvsya: source-cache/4aac28c3-partition-tables.rst, grep -i 'ESP_ERR_OTA_PARTITION_CONFLICT|137', 0 влучань
+
+- id: T-K05-008
+  verdykt: pidtverdzheno
+  fayl: source-cache/4aac28c3-partition-tables.rst
+  cytata: |
+    A single {IDF_TARGET_NAME}'s flash can contain multiple apps, as well as many different kinds of data (calibration data, filesystems, parameter storage, etc). For this reason a partition table is flashed
+  de: Розділ "Overview", перший абзац
+  notatka: Документ описує partition table як таблицю розділів

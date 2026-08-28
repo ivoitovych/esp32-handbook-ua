@@ -21,7 +21,7 @@
 
 Саме ця перевірка робить наряд чесним, а не заборони в його тексті.
 Переписати текст книги назад у `cytata` тепер не спрацює: у
-`dzherela-kesh/ds18b20.pdf` тексту книги немає. Підтвердити можна
+`source-cache/ds18b20.pdf` тексту книги немає. Підтвердити можна
 лише те, що справді відкрив.
 
 Звірка нежорстка рівно в тому, у чому винен видобувач тексту з PDF:
@@ -35,11 +35,11 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-KESH = ROOT / "dzherela-kesh"
+KESH = ROOT / "source-cache"
 sys.path.insert(0, str(ROOT / "tools"))
 
 import yaml
-import citaty  # витягання тексту беремо в М1, а не пишемо втретє
+import layer3  # витягання тексту беремо в М1, а не пишемо втретє
 
 _kesh_tekst: dict[str, str] = {}
 
@@ -69,7 +69,7 @@ def normal(s: str) -> str:
 
 
 def tekst_fayla(imya: str) -> str | None:
-    # Помічник пише то `ds18b20.pdf`, то `dzherela-kesh/ds18b20.pdf` —
+    # Помічник пише то `ds18b20.pdf`, то `source-cache/ds18b20.pdf` —
     # у наряді ім'я стоїть із текою. Обидва варіанти правильні по суті,
     # і відхиляти за це означало б рахувати чесну роботу за брехню.
     imya = imya.strip().split("/")[-1]
@@ -78,12 +78,12 @@ def tekst_fayla(imya: str) -> str | None:
     p = KESH / imya
     if not p.exists():
         return None
-    # `citaty.tekst_dzherela` віддає PDF у двох виглядах одразу:
+    # `layer3.tekst_dzherela` віддає PDF у двох виглядах одразу:
     # порядок читання плюс рядки таблиць, відновлені за координатами
     # слів. Мій колишній `pdftotext -layout` на двоколонковій сторінці
     # вставляв текст сусідньої колонки посеред речення — і чесна
     # цитата падала. Три записи цієї хвилі впали саме так.
-    t = citaty.tekst_dzherela(p)
+    t = layer3.tekst_dzherela(p)
     if t is None:
         return None
     _kesh_tekst[imya] = normal(t)

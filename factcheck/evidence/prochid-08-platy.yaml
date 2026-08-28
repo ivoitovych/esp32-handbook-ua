@@ -1,0 +1,69 @@
+# Суцільний прохід — 08-platy.
+#
+# Посаджено `tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-08-004: Це те, що ставлять на власну плату у'
+  zbih: Це\s+те,\s+що\s+ставлять
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  cytata: 'Development Boards
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Розробницькі плати будуються на основі модулів з власною схемою живлення і розв'язки
+  title: 'T-08-004: Це те, що ставлять на власну плату у'
+  match: Це\s+те,\s+що\s+ставлять
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst
+  quote: 'Development Boards
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Розробницькі плати будуються на основі модулів з власною схемою живлення і розв'язки
+  sha:
+  - f328a5d0
+- nazva: 'T-08-024: **Міст USB-UART.** Створює порт у системі.'
+  zbih: \*\*Міст\s+USB\-UART\.\*\*\s+Створює\s+порт
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: '``esptool`` resets {IDF_TARGET_NAME} automatically by asserting ``DTR`` and ``RTS``
+    control lines of the USB to serial converter chip, i.e., FTDI, CP210x, or CH340x.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Міст USB-UART використовує мікросхеми, які керуються комп'ютером через DTR/RTS
+    лінії
+  title: 'T-08-024: **Міст USB-UART.** Створює порт у системі.'
+  match: \*\*Міст\s+USB\-UART\.\*\*\s+Створює\s+порт
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  quote: '``esptool`` resets {IDF_TARGET_NAME} automatically by asserting ``DTR`` and ``RTS``
+    control lines of the USB to serial converter chip, i.e., FTDI, CP210x, or CH340x.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Міст USB-UART використовує мікросхеми, які керуються комп'ютером через DTR/RTS лінії

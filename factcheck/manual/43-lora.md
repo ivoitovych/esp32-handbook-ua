@@ -2,7 +2,7 @@
 
 Одиниць твердження: **100**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -611,7 +611,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > feature the LoRa
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -639,7 +639,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/sx1276.pdf
+- **Джерело:** source-cache/sx1276.pdf
 - **Дослівно з джерела:**
   > SX1276/77/78/79
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -960,7 +960,7 @@ FSK, і воно теж корисне, але для інших задач і �
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділи 3.3 «FSK Modulation» та «Key Product Features» (кеш: dzherela-kesh/rfm69hcw.pdf)
+- **Джерело:** RFM69HCW ISM Transceiver Module v1.1 (HopeRF), розділи 3.3 «FSK Modulation» та «Key Product Features» (кеш: source-cache/rfm69hcw.pdf)
 - **Дослівно з джерела:**
   > 3.3.3. FSK Modulation
   > FSK modulation is performed inside the PLL bandwidth, by changing the

@@ -2,7 +2,7 @@
 
 Одиниць твердження: **88**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -113,7 +113,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/661478ed-u8x8_d_ssd1306_128x64_noname.c
+- **Джерело:** source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > u8x8_d_ssd1306_128x64_noname.c
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -251,7 +251,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/661478ed-u8x8_d_ssd1306_128x64_noname.c
+- **Джерело:** source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > U8X8_CA(0x081, 0x0cf), 		/* [2] set contrast control */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -435,7 +435,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/661478ed-u8x8_d_ssd1306_128x64_noname.c
+- **Джерело:** source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > should be removed for SH1106
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -511,7 +511,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver, Version 1.3, розділ 2 «Features» (кеш: dzherela-kesh/st7789.pdf)
+- **Джерело:** Sitronix, ST7789V 240RGB x 320 dot 262K Color with Frame Memory Single-Chip TFT Controller/Driver, Version 1.3, розділ 2 «Features» (кеш: source-cache/st7789.pdf)
 - **Дослівно з джерела:**
   > 2 FEATURES
   > ...
@@ -674,7 +674,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color, Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: dzherela-kesh/ili9341.pdf)
+- **Джерело:** ILI Technology, ILI9341 a-Si TFT LCD Single Chip Driver, 240RGBx320 Resolution and 262K color, Specification V1.11 — титул і розділ 7.6.2 «4-line Serial Interface» (кеш: source-cache/ili9341.pdf)
 - **Дослівно з джерела:**
   > ILI9341
   > a-Si TFT LCD Single Chip Driver
@@ -1019,7 +1019,7 @@
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/661478ed-u8x8_d_ssd1306_128x64_noname.c
+- **Джерело:** source-cache/661478ed-u8x8_d_ssd1306_128x64_noname.c
 - **Дослівно з джерела:**
   > /* more or less generic setup of all these small OLEDs */
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -1548,7 +1548,7 @@ Wi-Fi, тобто повний буфер туди просто не поміщ�
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-c3_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-c3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > 400 KB of on-chip SRAM: for data and instructions
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

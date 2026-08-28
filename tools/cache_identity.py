@@ -3,10 +3,10 @@
 
 ## Навіщо
 
-`tools/kesh.py` перевіряє, що завантажене — справжній PDF, і цього
+`tools/cache.py` перевіряє, що завантажене — справжній PDF, і цього
 досить проти заглушки чи сторінки помилки. Але не проти цього:
 
-    dzherela-kesh/bh1750.pdf
+    source-cache/bh1750.pdf
       ← https://www.pololu.com/file/0J1112/BH1750FVI.pdf
       = схема A-Star 32U4 (піни PE6/INT6/AIN0 — це ATmega32U4)
 
@@ -38,7 +38,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
-import citaty  # noqa: E402
+import layer3  # noqa: E402
 
 
 def varianty(imya: str) -> set[str]:
@@ -49,12 +49,12 @@ def varianty(imya: str) -> set[str]:
 
 
 def main(argv: list[str]) -> int:
-    kesh = Path(argv[1]) if len(argv) > 1 else ROOT / "dzherela-kesh"
+    kesh = Path(argv[1]) if len(argv) > 1 else ROOT / "source-cache"
     pidozr = []
     vsyoho = 0
     for p in sorted(kesh.glob("*.pdf")):
         vsyoho += 1
-        t = (citaty.tekst_dzherela(p) or "").lower()
+        t = (layer3.tekst_dzherela(p) or "").lower()
         if not t:
             pidozr.append((p.name, "не читається"))
             continue

@@ -2,7 +2,7 @@
 
 Одиниць твердження: **93**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -547,7 +547,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
+- **Джерело:** source-cache/d86fddec-esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
 - **Дослівно з джерела:**
   > ESP32-WROOM-32UE with a connector for an external antenna
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -892,7 +892,7 @@ PSRAM. Літера `U` в кінці (`WROOM-1U`) означає роз'єм п
   > - Скидує напругу живлення чіпу
   > - Повинна бути натисната перед натиском BOOT для входу в режим прошивання
 - **Спосіб і дата:** Практичне знання стандартної конфігурації ESP32 модулів та плат
-- **Нотатка:** Це прямий опис функції кнопок, який відповідає стандартним ESP32 платам (ESP32-DevKit, WROOM-32). Твердження є точним і логічно випливає з архітектури режиму завантаження ESP32. Присвоюю клас A, оскільки це основна, добре задокументована функціональність, хоч прямої цитати в dzherela-kesh не знайдено (але це стандартне визначення). | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
+- **Нотатка:** Це прямий опис функції кнопок, який відповідає стандартним ESP32 платам (ESP32-DevKit, WROOM-32). Твердження є точним і логічно випливає з архітектури режиму завантаження ESP32. Присвоюю клас A, оскільки це основна, добре задокументована функціональність, хоч прямої цитати в source-cache не знайдено (але це стандартне визначення). | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
 - **Прохід:** m2-91-vybirka
 
 ---
@@ -1319,7 +1319,7 @@ USB-UART. Вони дають різні порти і роблять різне
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Espressif Systems, ESP32-C3 Series Datasheet (dzherela-kesh/esp32c3_datasheet_en.pdf), розділ Memory Overview або Pin Definitions
+- **Джерело:** Espressif Systems, ESP32-C3 Series Datasheet (source-cache/esp32c3_datasheet_en.pdf), розділ Memory Overview або Pin Definitions
 - **Дослівно з джерела:**
   > 400 КБ SRAM
 - **Спосіб і дата:** Витяг характеристик пам'яті ESP32-C3 з офіційного датащиту; перевірено в кеші
@@ -1739,7 +1739,7 @@ esptool --port /dev/ttyUSB0 flash-id
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
+- **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -1769,7 +1769,7 @@ esptool --port /dev/ttyUSB0 flash-id
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
+- **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -1799,7 +1799,7 @@ esptool --port /dev/ttyUSB0 flash-id
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/9d5cf303-basic-options.rst
+- **Джерело:** source-cache/9d5cf303-basic-options.rst
 - **Дослівно з джерела:**
   > The serial port is selected using the ``-p`` option, like ``-p /dev/ttyUSB0`` (Linux and macOS) or ``-p COM1`` (Windows).
 - **Спосіб і дата:** Source document retrieved 2026-08-26 from the local cache; quote verified against it by substring match.
@@ -2243,7 +2243,7 @@ esptool --port /dev/ttyUSB0 flash-id
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/esp32-s3_datasheet_en.pdf
+- **Джерело:** source-cache/esp32-s3_datasheet_en.pdf
 - **Дослівно з джерела:**
   > GPIO0 and GPIO46 control the boot mode after the reset is released.
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.
@@ -2327,7 +2327,7 @@ esptool --port /dev/ttyUSB0 flash-id
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/2217d639-basic-commands.rst
+- **Джерело:** source-cache/2217d639-basic-commands.rst
 - **Дослівно з джерела:**
   > esptool flash-id
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.

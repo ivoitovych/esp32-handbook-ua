@@ -1,0 +1,37 @@
+# Посадка presud — 35-i2c.
+#
+# Посаджено `tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+- nazva: 'T-35-028: Стандартні швидкості — 100 кГц і 400 кГц.'
+  zbih: Стандартні\s+швидкості\s+—\s+100
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  cytata: '{IDF_TARGET_NAME} supports both I2C Standard-mode (Sm) and Fast-mode (Fm) which
+    can go up to 100 kHz and 400 kHz respectively.
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Стандартні швидкості I2C підтверджені документацією ESP-IDF
+  title: 'T-35-028: Стандартні швидкості — 100 кГц і 400 кГц.'
+  match: Стандартні\s+швидкості\s+—\s+100
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
+  quote: '{IDF_TARGET_NAME} supports both I2C Standard-mode (Sm) and Fast-mode (Fm) which
+    can go up to 100 kHz and 400 kHz respectively.
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Стандартні швидкості I2C підтверджені документацією ESP-IDF

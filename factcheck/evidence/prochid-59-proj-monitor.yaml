@@ -1,0 +1,90 @@
+# Суцільний прохід — 59-proj-monitor.
+#
+# Посаджено `tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: 'T-59-079: Різниця виникає лише тоді, коли в старшому байті'
+  zbih: Різниця\s+виникає\s+лише\s+тоді,
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
+  cytata: 'dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
+
+    dig_h4_lsb = (int16_t)(reg_data[4] & 0x0F);
+
+    calib_data->dig_h4 = dig_h4_msb | dig_h4_lsb;
+
+    dig_h5_msb = (int16_t)(int8_t)reg_data[5] * 16;
+
+    dig_h5_lsb = (int16_t)(reg_data[4] >> 4);
+
+    calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Коефіцієнти H4 і H5 вимагають знакового розширення через (int8_t), що включає 7-й
+    біт (біт знаку). На екземплярах з цим бітом, встановленим у reg_data[3] або reg_data[5],
+    коефіцієнти мають правильне від'ємне значення, інакше вологість неправильна при правильних
+    температурі й тиску.
+  title: 'T-59-079: Різниця виникає лише тоді, коли в старшому байті'
+  match: Різниця\s+виникає\s+лише\s+тоді,
+  status: verbatim
+  source: https://raw.githubusercontent.com/boschsensortec/BME280_SensorAPI/master/bme280.c
+  quote: 'dig_h4_msb = (int16_t)(int8_t)reg_data[3] * 16;
+
+    dig_h4_lsb = (int16_t)(reg_data[4] & 0x0F);
+
+    calib_data->dig_h4 = dig_h4_msb | dig_h4_lsb;
+
+    dig_h5_msb = (int16_t)(int8_t)reg_data[5] * 16;
+
+    dig_h5_lsb = (int16_t)(reg_data[4] >> 4);
+
+    calib_data->dig_h5 = dig_h5_msb | dig_h5_lsb;
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Коефіцієнти H4 і H5 вимагають знакового розширення через (int8_t), що включає 7-й
+    біт (біт знаку). На екземплярах з цим бітом, встановленим у reg_data[3] або reg_data[5],
+    коефіцієнти мають правильне від'ємне значення, інакше вологість неправильна при правильних
+    температурі й тиску.
+  sha:
+  - 537a2c04

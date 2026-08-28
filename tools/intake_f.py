@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ворота для нарядів `naryad_f.py` — де джерело названо URL, а не файлом.
+"""Ворота для нарядів `work_orders_f.py` — де джерело названо URL, а не файлом.
 
 ## Чим це відрізняється від `intake_wave3.py`
 
@@ -46,7 +46,7 @@ import sys
 import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-KESH = ROOT / "dzherela-kesh"
+KESH = ROOT / "source-cache"
 sys.path.insert(0, str(ROOT / "tools"))
 
 KNYHA = re.compile(
@@ -320,7 +320,7 @@ def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
     samo = sum(1 for _, rid, _ in bidy if "САМОПОСИЛАННЯ" in rid)
     ryadok = ("| %s | `%s` | %s | %s | %d | %s | %d | %d | %d | %d | %d | %d |"
               % (a.teka.name,
-                 vyb.get("order_version", "?"),
+                 vyb.get("task_version", "?"),
                  vyb.get("nasinnya", "?"),
                  vyb.get("queue", "?"),
                  len(vidpovidi),

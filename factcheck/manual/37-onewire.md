@@ -2,7 +2,7 @@
 
 Одиниць твердження: **62**. Клас доказу й формат запису — `factcheck/SCHEMA.md`.
 
-Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/dokazy/`. Правити вручну нема сенсу.
+Цей файл **генерується**: текст книги береться з джерела, докази — з `factcheck/evidence/`. Правити вручну нема сенсу.
 
 **Що в блоці «Твердження, коротко».** Для прози, рядка коду й зв'язки схеми — **дослівний текст книги**. Для комірки таблиці — рендер (`BME280 · Адреса → 0x76`), якого в книзі немає; дослівний рядок такої одиниці стоїть окремим блоком нижче.
 
@@ -63,7 +63,7 @@ DS18B20, і саме тому розділ короткий.
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Each DS18B20 has a unique 64-bit serial code, which allows multiple DS18B20s to function on the same 1-Wire bus. Thus, it is simple to use one microprocessor to control many DS18B20s distributed over a large area.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 from the local cache; quote verified against it by substring match.
@@ -442,12 +442,12 @@ Maxim/Dallas, ревізія 042208).
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV: 042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: dzherela-kesh/ds18b20.pdf)
+- **Джерело:** Maxim Integrated, DS18B20 Programmable Resolution 1-Wire Digital Thermometer, REV: 042208 — розділ DC ELECTRICAL CHARACTERISTICS, рядок Thermometer Error tERR (кеш: source-cache/ds18b20.pdf)
 - **Дослівно з джерела:**
   > Thermometer -10°C to +85°C ±0.5
   > tERR °C 3
   > Error -55°C to +125°C ±2
-- **Спосіб і дата:** tools/citaty.py tekst_dzherela (відновлення рядків таблиці за координатами слів), 2026-08-27
+- **Спосіб і дата:** tools/layer3.py tekst_dzherela (відновлення рядків таблиці за координатами слів), 2026-08-27
 - **Нотатка:** Взірець перебудовано 2026-08-27 під нове формулювання книги: М1 переписав рядок після зовнішньої рецензії, і старий взірець відірвався — саме так, як задумано. Цитата подає рядок tERR цілком, як він відновлюється за координатами слів: СХІДЦІВ ДВА, не три. У ревізії Maxim REV 042208 немає ані «−30», ані «±1» — перевірено пошуком по всьому документу. Отже рецензентове прочитання про три східці цей документ не підтверджує, і початкове «до 4 °C» для окропу було праве: 100 °C накриває рядок −55…+125 з ±2, два справні датчики можуть стояти на протилежних краях. Чи додали східець у пізнішій ревізії — звідси не встановити, analog.com блокує наш діапазон адрес. | Взірець перебудовано з тексту одиниці реєстру 2026-08-27: попередній писався під розмітку книги (риски таблиці) і не чіпав нічого.
 - **Прохід:** m2-93-vybirka
 
@@ -1218,7 +1218,7 @@ Maxim/Dallas, ревізія 042208).
 **Доказ**
 
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** dzherela-kesh/ds18b20.pdf
+- **Джерело:** source-cache/ds18b20.pdf
 - **Дослівно з джерела:**
   > Converts Temperature to 12-Bit Digital Word in 750ms (Max)
 - **Спосіб і дата:** Source document retrieved 2026-08-27; quote verified against it by substring match.

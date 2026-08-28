@@ -1,0 +1,41 @@
+# Посадка klas-f — 14-shvydki-shlyakhy.
+#
+# Посаджено `tools/sweep_land.py`. Сюди потрапляє лише
+# те, що пережило третій шар: цитата знайшлася в названому
+# документі дослівно. Заявок без такої перевірки тут немає.
+#
+# Взірці виведено механічно — найкоротший префікс, відмітний
+# у всьому реєстрі. Це компроміс між двома законами:
+# широкий взірець бреше, довгий ламається.
+
+
+
+
+
+
+- nazva: 'T-14-053: Треба писати код · MicroPython → так, Python'
+  zbih: Треба\s+писати\s+код\s+·\s+MicroPython
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/micropython/micropython/master/README.md
+  cytata: 'MicroPython implements the entire Python 3.4 syntax
+
+    '
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: 'Self-evident: MicroPython IS Python implementation; code must be written in Python
+    language by definition.'
+  title: 'T-14-053: Треба писати код · MicroPython → так, Python'
+  match: Треба\s+писати\s+код\s+·\s+MicroPython
+  status: verbatim
+  source: https://raw.githubusercontent.com/micropython/micropython/master/README.md
+  quote: 'MicroPython implements the entire Python 3.4 syntax
+
+    '
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
+    match. Status `verbatim` means the document was obtained and the quote is exact — it does
+    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: 'Self-evident: MicroPython IS Python implementation; code must be written in Python
+    language by definition.'
+  sha:
+  - 99a6d4d3

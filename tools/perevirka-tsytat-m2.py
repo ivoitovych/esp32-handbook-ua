@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Шар 3 — ЗАСТАРІЛИЙ. Уживайте tools/citaty.py від М1: він потужніший
+"""Шар 3 — ЗАСТАРІЛИЙ. Уживайте tools/layer3.py від М1: він потужніший
 і перевіряє вихід помічника ДО того, як той потрапляє в реєстр.
 
 Цей файл лишається лише через функцію znayty_ryadok (табличне
-зіставлення), якої в citaty.py немає. Решта — дублювання.
+зіставлення), якої в layer3.py немає. Решта — дублювання.
 
 Чи справді цитата є в джерелі.
 
@@ -24,7 +24,7 @@ import re, sys, hashlib, pathlib, subprocess
 
 KORIN = pathlib.Path(__file__).resolve().parent.parent
 KESH = pathlib.Path.home() / "dzherela-cache"
-DOKAZY = KORIN / "factcheck" / "dokazy"
+DOKAZY = KORIN / "factcheck" / "evidence"
 
 
 def normalizuvaty(t: str) -> str:

@@ -27,8 +27,8 @@ Thumbs.db
 
 # Кеш зовнішніх джерел. Головний захист — тримати кеш **поза деревом**
 # репозиторію; це тут друга лінія, а не єдина.
-dzherela-kesh/*
-!dzherela-kesh/MANIFEST.md
+source-cache/*
+!source-cache/MANIFEST.md
 dzherela-cache/
 *.[Zz][Ii][Pp]
 

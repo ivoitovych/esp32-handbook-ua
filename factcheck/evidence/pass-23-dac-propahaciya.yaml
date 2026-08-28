@@ -1,0 +1,120 @@
+# Прохід 23 — пропагація виправлення про DAC і добір команд із черги.
+#
+# Прохід почався як звичайна робота за чергою й одразу наштовхнувся на
+# **власну незавершену правку**: виправлення про DAC на S2, зроблене в
+# проході 17, лишилося в розділі 33 і не дійшло до розділу 07.
+#
+# Це той самий дефект, який зовнішня рецензія назвала системним і під
+# який зроблено `tools/refuted.py`. Інструмент не спрацював з
+# однієї причини: у проході 17 я виправив книгу, але **не завів запис у
+# реєстрі спростованого**. Тобто механізм є, а скористатися ним забули.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- nazva: DAC на S2 — GPIO17 і GPIO18; розділ 07 виправлено
+  zbih: на classic це `GPIO25` і `GPIO26`, на S2|`GPIO25` у S2 не просто не має DAC|піни в
+    них \*\*різні\*\*
+  klas: A
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2}/include/soc/dac_channel.h
+    та .../esp32s2/include/soc/soc_caps.h
+  cytata: "(esp32/dac_channel.h)\n#define DAC_CHAN0_GPIO_NUM      25\n#define DAC_CHAN1_GPIO_NUM\
+    \      26\n\n(esp32s2/dac_channel.h)\n#define DAC_CHAN0_GPIO_NUM      17\n#define DAC_CHAN1_GPIO_NUM\
+    \      18\n\n(esp32s2/soc_caps.h)\n#define SOC_GPIO_VALID_GPIO_MASK\n    (0x7FFFFFFFFFFFULL\
+    \ & ~(0ULL | BIT22 | BIT23 | BIT24 | BIT25))\n"
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
+  notatka: 'Друге місце тієї самої помилки. Розділ 07 писав «DAC є лише в classic і S2, на
+    `GPIO25` і `GPIO26`» — вірно для classic, хибно для S2 двічі: там DAC на `GPIO17`/`GPIO18`,
+    а `GPIO25` не існує взагалі.
+
+    Виправлено, і додано другу половину, якої не було ніде: плутанина тут коштує не «не той
+    пін», а неробочий код і `ESP_ERR_INVALID_ARG`.
+
+    Головне ж — запис у `factcheck/SPROSTOVANE.md` зі взірцем. Тепер третє повернення цього
+    формулювання завалить `make check`. Випробувано: дописування «на `GPIO25` і `GPIO26`»
+    у розділ 04 знаходиться одразу.
+
+    Взірець має `dozvil` на абзац, що якраз розводить два сімейства (згадка `GPIO17`, «не
+    існу», «різні»), — інакше він лаявся б на правильний текст розділів 07 і 33.'
+  title: DAC на S2 — GPIO17 і GPIO18; розділ 07 виправлено
+  match: на classic це `GPIO25` і `GPIO26`, на S2|`GPIO25` у S2 не просто не має DAC|піни
+    в них \*\*різні\*\*
+  status: verbatim
+  source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/soc/{esp32,esp32s2}/include/soc/dac_channel.h
+    та .../esp32s2/include/soc/soc_caps.h
+  quote: "(esp32/dac_channel.h)\n#define DAC_CHAN0_GPIO_NUM      25\n#define DAC_CHAN1_GPIO_NUM\
+    \      26\n\n(esp32s2/dac_channel.h)\n#define DAC_CHAN0_GPIO_NUM      17\n#define DAC_CHAN1_GPIO_NUM\
+    \      18\n\n(esp32s2/soc_caps.h)\n#define SOC_GPIO_VALID_GPIO_MASK\n    (0x7FFFFFFFFFFFULL\
+    \ & ~(0ULL | BIT22 | BIT23 | BIT24 | BIT25))\n"
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
+  note: 'Друге місце тієї самої помилки. Розділ 07 писав «DAC є лише в classic і S2, на `GPIO25`
+    і `GPIO26`» — вірно для classic, хибно для S2 двічі: там DAC на `GPIO17`/`GPIO18`, а `GPIO25`
+    не існує взагалі.
+
+    Виправлено, і додано другу половину, якої не було ніде: плутанина тут коштує не «не той
+    пін», а неробочий код і `ESP_ERR_INVALID_ARG`.
+
+    Головне ж — запис у `factcheck/SPROSTOVANE.md` зі взірцем. Тепер третє повернення цього
+    формулювання завалить `make check`. Випробувано: дописування «на `GPIO25` і `GPIO26`»
+    у розділ 04 знаходиться одразу.
+
+    Взірець має `dozvil` на абзац, що якраз розводить два сімейства (згадка `GPIO17`, «не
+    існу», «різні»), — інакше він лаявся б на правильний текст розділів 07 і 33.'
+  sha:
+  - e9ad2932
+- nazva: espefuse summary і menuconfig — досяжність доказу проходів 9 і 11
+  zbih: espefuse [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig
+  klas: A
+  dzherelo: tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py ESP-IDF release/v5.5;
+    espressif/esptool — перелік команд у __init__.py
+  cytata: "idf.py ACTIONS: … menuconfig … efuse-summary … set-target size\n  size-components\
+    \ openocd gdb coredump-info coredump-debug …\nespefuse: підкоманда summary (лише читання)\n"
+  sposib: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
+  notatka: 'Не нова звірка, а розширення досяжності наявної. `espefuse summary` і `idf.py
+    menuconfig` перевірені ще в проході 9, але взірець написаний під блоки коду й не діставав
+    до згадок у прозі — «`espefuse summary` (лише читання, нічого не пропалює)» у розділах
+    20, 24 і 27.
+
+    Приріст 41 одиниця без жодного нового джерела. Спот-перевірка нових збігів пройдена: усі
+    три вибірково перевірені (`T-02-100`, `T-E-144`, `T-F-023`) справді містять команди, а
+    не випадкові слова.'
+  title: espefuse summary і menuconfig — досяжність доказу проходів 9 і 11
+  match: espefuse [^\n]{0,30}summary|`espefuse summary`|idf\.py menuconfig
+  status: verbatim
+  source: tools/idf_py_actions/{core_ext,serial_ext,debug_ext}.py ESP-IDF release/v5.5; espressif/esptool
+    — перелік команд у __init__.py
+  quote: "idf.py ACTIONS: … menuconfig … efuse-summary … set-target size\n  size-components\
+    \ openocd gdb coredump-info coredump-debug …\nespefuse: підкоманда summary (лише читання)\n"
+  method: Retrieved with `curl` from raw.githubusercontent.com, 2026-08-26; quote verified
+    by substring match.
+  note: 'Не нова звірка, а розширення досяжності наявної. `espefuse summary` і `idf.py menuconfig`
+    перевірені ще в проході 9, але взірець написаний під блоки коду й не діставав до згадок
+    у прозі — «`espefuse summary` (лише читання, нічого не пропалює)» у розділах 20, 24 і
+    27.
+
+    Приріст 41 одиниця без жодного нового джерела. Спот-перевірка нових збігів пройдена: усі
+    три вибірково перевірені (`T-02-100`, `T-E-144`, `T-F-023`) справді містять команди, а
+    не випадкові слова.'
