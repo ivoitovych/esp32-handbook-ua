@@ -497,10 +497,30 @@ other direction, flagged seven fabricated document names of which
 ## 7. Sources and the cache
 
 - The cache of files stays **out of version control**; the **manifest**
-  goes in: URL, sha256, size, date. Vendor datasheets are someone
-  else's copyrighted material. A project whose thesis is "every claim
-  has an honestly named source" cannot afford a copyright violation in
-  its own working directory.
+  goes in: URL, sha256, size, date.
+
+  Two reasons, and they are worth keeping apart because the first is
+  often stated badly.
+
+  **Not confidentiality.** Everything in the cache was fetched from a
+  public URL. Nothing there is secret, no non-disclosure applies, and
+  putting it in a repository would disclose nothing that was not already
+  disclosed. Any account of this that talks about a leak is wrong.
+
+  **Redistribution, and only for part of it.** Copyright governs copying,
+  not secrecy, so "already public" does not settle it — a published book
+  is maximally public and maximally copyrighted. Most of this cache is
+  ESP-IDF source and `.rst` documentation under Apache-2.0, which is
+  redistributable with attribution and entirely fine. The narrow part is
+  vendor PDFs, where the licence is usually unstated and republishing
+  them from our repository is a different act from fetching them to
+  read. "Ambiguous" is the honest word there, not "violation".
+
+  **And an engineering reason that stands on its own.** The manifest —
+  URL, hash, size — *is* the reproducibility record. It proves what was
+  checked against, in kilobytes, without carrying hundreds of megabytes
+  of binaries into a history from which they can never be removed. This
+  reason survives whatever one concludes about the first two.
 - **The cache and the matcher are one thing living in two places.**
   Downloading a document is half the work; the other half is telling
   the matcher it exists. Thirteen fresh datasheets sat unused because

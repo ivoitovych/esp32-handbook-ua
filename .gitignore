@@ -34,8 +34,15 @@ source-cache/*
 # `dzherela-kesh`, not `dzherela-cache` — so 236 third-party documents
 # lost their protection and were swept into a commit by `git add -A`.
 # Caught by the pre-push hook, never pushed. Both spellings stay listed:
-# an ignore rule for a directory that no longer exists costs nothing, and
-# the one that was dropped cost a copyright exposure.
+# an ignore rule for a directory that no longer exists costs nothing.
+#
+# On what the risk actually was: nothing secret was involved. Every file
+# came from a public URL, and no confidentiality obligation applies to
+# any of it. The question is redistribution, which is a separate thing
+# from disclosure — and even then it is narrow, since most of the cache
+# is Apache-2.0 material that may be redistributed freely. The vendor
+# PDFs are the ambiguous part. The rule stands mainly because the
+# manifest already carries the reproducibility record in kilobytes.
 dzherela-kesh/
 *.[Zz][Ii][Pp]
 
