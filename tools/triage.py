@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Розкласти всі одиниці БЕЗ документа на черги для розбору.
 
-Наряд — `factcheck/archive/NARYAD-m2-rozbir.md`. Перевірка — `pryyom-rozbir-m2.py`.
+Наряд — `factcheck/archive/NARYAD-m2-rozbir.md`. Перевірка — `intake_triage.py`.
 
-    tools/rozbir-m2.py <агентів> <одиниць-на-агента> [каталог]
+    tools/triage.py <агентів> <одиниць-на-агента> [каталог]
 """
 from __future__ import annotations
 

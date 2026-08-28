@@ -61,7 +61,7 @@
 
 Тому перевіряються обидва боки: вміст файлів **і** адреси в маніфесті.
 
-    tools/kesh-bez-knyhy.py [--tykho]
+    tools/cache_vs_book.py [--tykho]
 """
 from __future__ import annotations
 
@@ -146,7 +146,7 @@ def main(argv: list[str]) -> int:
     for imya, url in v_manifesti:
         print("   ✗ маніфест реєструє книгу як джерело: %s → %s" % (imya, url))
     if not tykho or znaydeno or v_manifesti:
-        print("kesh-bez-knyhy: файлів у кеші %d; файлів книги серед них %d; "
+        print("cache_vs_book: файлів у кеші %d; файлів книги серед них %d; "
               "рядків маніфесту на книгу %d"
               % (n, len(znaydeno), len(v_manifesti)))
     return 1 if (znaydeno or v_manifesti) else 0

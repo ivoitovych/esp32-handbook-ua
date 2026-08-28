@@ -43,8 +43,8 @@ MAX6675 однаково стосується обох рядків таблиц
 не до тієї одиниці гірша за холостий взірець — холостий видно, а
 хибну прив'язку ні.
 
-    tools/vzirci-remont-m2.py            показати, що зробить
-    tools/vzirci-remont-m2.py --pysaty   записати
+    tools/patterns_repair.py            показати, що зробить
+    tools/patterns_repair.py --pysaty   записати
 """
 from __future__ import annotations
 
@@ -92,7 +92,7 @@ def main(argv: list[str]) -> int:
     teksty = [t for t, _ in odynyci]
     zhyvi = set()
     for z in factcheck.zavantazhyty_dokazy():
-        v = str(z.get("zbih") or "")
+        v = str(z.get("match") or "")
         if not v:
             continue
         try:
@@ -100,7 +100,7 @@ def main(argv: list[str]) -> int:
         except re.error:
             continue
         if any(rx.search(t) for t in teksty):
-            zhyvi.add((str(z.get("_prokhid")), str(z.get("nazva"))))
+            zhyvi.add((str(z.get("_prokhid")), str(z.get("title"))))
 
     polagodzheno = nezmineno = 0
     for shlyakh in sorted(glob.glob(str(ROOT / "factcheck" / "dokazy" / "m2-*.yaml"))):
@@ -108,13 +108,13 @@ def main(argv: list[str]) -> int:
         prokhid = Path(shlyakh).stem
         tor = False
         for r in recs:
-            if not isinstance(r, dict) or not r.get("zbih"):
+            if not isinstance(r, dict) or not r.get("match"):
                 continue
-            if (prokhid, str(r.get("nazva"))) in zhyvi:
+            if (prokhid, str(r.get("title"))) in zhyvi:
                 continue
-            klyuch = slova_vzirtsya(str(r.get("zbih", "")))
+            klyuch = slova_vzirtsya(str(r.get("match", "")))
             if len(klyuch) < 3:
-                klyuch |= leksemy(str(r.get("nazva", "")))
+                klyuch |= leksemy(str(r.get("title", "")))
             if not klyuch:
                 continue
             ocinky = sorted(
@@ -123,7 +123,7 @@ def main(argv: list[str]) -> int:
             o1 = ocinky[0][0]
             if o1 < POROG:
                 nezmineno += 1
-                print("   ? %-26s %s" % (prokhid[:26], str(r.get("nazva"))[:48]))
+                print("   ? %-26s %s" % (prokhid[:26], str(r.get("title"))[:48]))
                 continue
             # Урівень із першим — усе, що не гірше за 95 % його оцінки.
             urnyven = [t for o, t in ocinky if o >= o1 * 0.95][:4]
@@ -137,16 +137,25 @@ def main(argv: list[str]) -> int:
             if all(rx.search(k) for k in KONTROLNI):
                 nezmineno += 1
                 continue
-            r["zbih"] = novyy
+            # Писати ОБИДВА імені, поки переїзд не скінчено.
+            #
+            # Саме тут народилися 15 розходжень `zbih`/`match`: цей
+            # інструмент звужував `zbih` і не чіпав `match`, а в
+            # `match` лишалася теча. Дані я звірив 2026-08-28, але
+            # звірити наслідок і лишити причину — це відкласти, а не
+            # полагодити. Прибрати цей рядок можна лише разом із
+            # прогоном `imena.py --stysnuty`.
+            r["zbih"] = r["match"] = novyy
             if len(urnyven) > 1:
                 print("      (альтернація на %d одиниць)" % len(urnyven))
-            r["notatka"] = (str(r.get("notatka", "") or "").strip() +
-                            " | Взірець перебудовано з тексту одиниці реєстру "
-                            "2026-08-27: попередній писався під розмітку книги "
-                            "(риски таблиці) і не чіпав нічого.").strip(" |")
+            r["notatka"] = r["note"] = (
+                str(r.get("note", "") or "").strip() +
+                " | Взірець перебудовано з тексту одиниці реєстру "
+                "2026-08-27: попередній писався під розмітку книги "
+                "(риски таблиці) і не чіпав нічого.").strip(" |")
             polagodzheno += 1
             tor = True
-            print("   ✓ %-26s %s" % (prokhid[:26], str(r.get("nazva"))[:48]))
+            print("   ✓ %-26s %s" % (prokhid[:26], str(r.get("title"))[:48]))
         if tor and pysaty:
             Path(shlyakh).write_text(
                 yaml.dump(recs, allow_unicode=True, sort_keys=False,

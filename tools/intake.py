@@ -92,12 +92,12 @@ def perevirka(shlyakh):
         if not isinstance(z, dict):
             bidy.append(('НЕ ЗАПИС', str(z)[:60], ''))
             continue
-        nazva = str(z.get('nazva', ''))[:58]
-        klas = z.get('klas', '?')
-        dzherelo = str(z.get('dzherelo', ''))
-        cytata = str(z.get('cytata', '')).strip()
+        nazva = str(z.get('title', ''))[:58]
+        klas = z.get('status', '?')
+        dzherelo = str(z.get('source', ''))
+        cytata = str(z.get('quote', '')).strip()
 
-        if KNYHA.search(dzherelo) and klas != 'E':
+        if KNYHA.search(dzherelo) and klas != 'no-external-signal':
             if VNUTRISHNYA.match(dzherelo):
                 bidy.append(('ВНУТРІШНЯ ЗВІРКА ПІД КЛАСОМ ' + klas, nazva, ''))
             else:
@@ -109,7 +109,7 @@ def perevirka(shlyakh):
         # нульовій позиції — «nothing to repeat»), і через них жодна з
         # двох хвиль не з'явилася в підрахунку класів, хоч усі докази
         # були на місці. Тому умова блокуюча.
-        vzir = str(z.get('zbih', ''))
+        vzir = str(z.get('match', ''))
         if vzir:
             try:
                 re.compile(vzir)
@@ -131,9 +131,9 @@ def perevirka(shlyakh):
                                 and o[0][0] > sum(x for x, _ in o[1:])):
                             bidy.append(('ТЕЧА: «%s» чіпляє %d'
                                          % (o[0][1][:20], o[0][0]), nazva, ''))
-        if klas in ('A', 'B') and not cytata:
+        if klas in ('verbatim', 'derived') and not cytata:
             bidy.append(('КЛАС %s БЕЗ ЦИТАТИ' % klas, nazva, ''))
-        if klas == 'E' and SYGNAL.search(nazva) and not POKAZHCHYK.search(nazva):
+        if klas == 'no-external-signal' and SYGNAL.search(nazva) and not POKAZHCHYK.search(nazva):
             bidy.append(('?  E на твердженні з числом', nazva, ''))
     return bidy
 

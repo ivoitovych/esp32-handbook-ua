@@ -88,7 +88,7 @@ answers, and both are human or model work:
 Режим `--rody` розкладає непокриті рядки за родом саме для цього: щоб
 кожній прогалині можна було дати статус, який машина вміє звірити.
 
-    tools/pokryttya.py [--fayl <шлях>] [--dilyanky] [--rody]
+    tools/coverage.py [--fayl <шлях>] [--dilyanky] [--rody]
 """
 from __future__ import annotations
 
@@ -257,7 +257,7 @@ def main(argv: list[str]) -> int:
     print("\n   УСЕ НА МІСЦІ: %.2f %% (%d із %d)"
           % (povno, pokryto + strukturni, vsyoho))
 
-    print("\npokryttya: змістовних рядків книги %d; накрито картками %d (%.1f %%); "
+    print("\ncoverage: змістовних рядків книги %d; накрито картками %d (%.1f %%); "
           "без картки %d"
           % (vsyoho, pokryto, 100 * pokryto / max(1, vsyoho), vsyoho - pokryto))
     return 0

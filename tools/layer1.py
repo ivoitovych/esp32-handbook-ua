@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Layer 1: does the card faithfully represent the book?
 
+About CARDS — what a reviewer actually sees. Compare `layer1_units.py`,
+which asks a different question: does a registry unit come from the
+book? Presentation and provenance break apart, and this file found 58
+broken contexts the other one cannot see in principle.
+
 The registry is generated from the book, so equality holds by
 construction — until something between the two drifts. This script is
 the check that says so out loud, in seconds, without a human and
@@ -46,17 +51,30 @@ kind — the only one that matters — would drown in the second. The first
 run of this check reported 1317 problems; 1311 were stale line numbers
 and 6 were real.
 
-    tools/shar1.py [--vsi] [--tykho]
+    tools/layer1.py [--vsi] [--tykho] [--detali]
+
+`--detali` друкує кожну зламану картку з її родом і файлом — щоб
+половину, яка належить генератору, можна було забрати без вгадування.
 """
 from __future__ import annotations
 
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 GRUPY = ("manual", "dodatky", "kartky", "inserts")
 
+# Огорожа блоку — ЗМІННОЇ ДОВЖИНИ. Генератор бере довшу за будь-який
+# ряд лапок усередині вмісту, бо контекст картки на рядок коду сам є
+# блоком коду. Взірець, що чекав рівно трьох лапок, не розбирав 684
+# картки — і показував по них нуль замість правди.
+#
+# Знайшов М1: «нуль був тому, що ці картки взагалі не розбиралися».
+# Це третій випадок того самого роду в моїх же інструментах: лічильник
+# показує нуль, бо нічого не рахує.
+#
 # Між «Твердження» і «Контекст» може стояти ще блок «Дослівно з
 # книги» — він є в комірок, і саме він, а не рендер `X · Y → Z`, є
 # цитатою книги. Перший взірець його не передбачав і рахував 2069
@@ -106,6 +124,8 @@ def chastyny_komirky(t: str) -> list[str]:
 def main(argv: list[str]) -> int:
     vsi = "--vsi" in argv
     tykho = "--tykho" in argv
+    detali = "--detali" in argv
+    kontekst_povno: list[tuple] = []
 
     knyha: dict[str, list[str]] = {}
     cile: dict[str, str] = {}
@@ -181,17 +201,28 @@ def main(argv: list[str]) -> int:
                 kn = normal(kont)
                 if vyd != "komirka" and tverd and tverd not in kn:
                     kontekst_bez_tverdzhennya.append((ident, tverd[:56]))
+                    kontekst_povno.append((ident, tverd, vyd, src))
 
     granyca = None if vsi else 20
     for ident, rid, det in nemaye[:granyca]:
         print("   ✗ %-12s %-32s %s" % (ident, rid, det))
     if not vsi and len(nemaye) > 20:
         print("   ... ще %d" % (len(nemaye) - 20))
-    for ident, t in kontekst_bez_tverdzhennya[:granyca]:
-        print("   ✗ %-12s %-32s %s" % (ident, "КОНТЕКСТ НЕ МІСТИТЬ ТВЕРДЖЕННЯ", t))
+    if detali:
+        print("\nкартки, чий контекст не містить власного твердження:")
+        for ident, t, vyd, src in kontekst_povno:
+            print("   %-12s %-14s %-30s %s" % (ident, vyd, src, t[:44]))
+        rody_zlam = defaultdict(int)
+        for _, _, vyd, _ in kontekst_povno:
+            rody_zlam[vyd] += 1
+        print("\n   за родом одиниці: %s" % dict(rody_zlam))
+    else:
+        for ident, t in kontekst_bez_tverdzhennya[:granyca]:
+            print("   ✗ %-12s %-32s %s"
+                  % (ident, "КОНТЕКСТ НЕ МІСТИТЬ ТВЕРДЖЕННЯ", t))
 
     if not tykho or nemaye or kontekst_bez_tverdzhennya:
-        print("\nshar1: карток %d (прози %d, комірок %d)" % (n, proza, komirka))
+        print("\nlayer1: карток %d (прози %d, комірок %d)" % (n, proza, komirka))
         print("   тексту немає в книзі          %4d   ← справжня розбіжність"
               % len(nemaye))
         print("   контекст не містить твердження %4d   ← картка зламана як картка"

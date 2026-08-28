@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema vidtvornist bez-knyhy shar1 pokryttya check release release-check \
+.PHONY: help setup all dovidnyk kartky proekty linkcheck posylannya piny sprostovane polya zvyazok podil kesh citaty kalky pravopys budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage check release release-check \
         check-attribution preview clean
 
 PY := python3
@@ -101,22 +101,22 @@ vidtvornist:
 # Чи не потрапив файл книги в кеш джерел. Ворота, не звіт:
 # доказ, що доводить книгу книгою, проходить усі три шари, і
 # жодна інша перевірка його не бачить.
-bez-knyhy:
-	@$(PY) tools/kesh-bez-knyhy.py --tykho
+cache-vs-book:
+	@$(PY) tools/cache_vs_book.py --tykho
 
 # Шар 1 як скрипт (М2): чи стоїть твердження картки в книзі, чи стоїть
 # там контекст і — головне — **чи містить контекст своє твердження**.
 # Останнього ми не перевіряли ніколи: контекст, що не містить свого
 # твердження, гірший за відсутній, бо обіцяє оточення, а дає чуже.
-shar1:
-	@$(PY) tools/shar1.py
+layer1:
+	@$(PY) tools/layer1.py
 
 # Покриття (М2): чи кожен змістовний рядок книги став одиницею. Питання
 # зворотне до очевидного — «чи має одиниця картку» правда за побудовою.
 # Текст, якого розбирач не бачив, не має ні картки, ні класу й не
 # потрапляє в жоден підрахунок: він не незвірений, він невидимий.
-pokryttya:
-	@$(PY) tools/pokryttya.py
+coverage:
+	@$(PY) tools/coverage.py
 
 # Правопис: перелік невідомих слів. Звіт, не ворота — судити про
 # українську має людина, інструмент лише скорочує їй роботу.
@@ -183,7 +183,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist bez-knyhy shar1 pokryttya check-attribution
+check: linkcheck posylannya piny sprostovane polya zvyazok kesh citaty modalnist kalky budgets arytmetyka stale skhema vidtvornist cache-vs-book layer1 coverage check-attribution
 
 arytmetyka:
 	@python3 tools/arytmetyka.py
