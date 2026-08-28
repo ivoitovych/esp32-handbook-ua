@@ -312,7 +312,7 @@ never travel at all.
 > Kind 3 in its own right: the counter was measuring the artefact that
 > does not travel, and staying silent about the one that does.
 
-**Held by.** `tools/kesh-bez-knyhy.py` — by sha256 of contents (a copy
+**Held by.** `tools/cache_vs_book.py` — by sha256 of contents (a copy
 under another name is still found) **and** by the manifest's URLs.
 
 ## 17. A machine pointer that is worse than prose
@@ -357,7 +357,7 @@ alone covers both.
 > postponement — and the postponement is invisible, because the place
 > you looked is genuinely clean.
 
-**Held by.** `tools/kesh-bez-knyhy.py`, both conditions, in `make check`.
+**Held by.** `tools/cache_vs_book.py`, both conditions, in `make check`.
 
 ---
 
