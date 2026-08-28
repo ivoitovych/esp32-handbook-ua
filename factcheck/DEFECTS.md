@@ -23,7 +23,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Thirteen of the twenty-five kinds below are one family. The check runs, it
+Thirteen of the twenty-six kinds below are one family. The check runs, it
 returns a number, and the number means nothing — because it was never
 measuring the thing its name claims.
 
@@ -612,6 +612,37 @@ closed at the source: the manifest is authoritative for the name, so
 absence means absence. What remains unheld is the general principle;
 nothing detects a newly-merged pair of states except reading the
 report and asking what each number is a count of.
+
+## 26. A rename rewrote the rule whose subject was the old name
+
+**Symptom.** A rename updates every reference to the old name — including
+a rule whose entire job was to be *about* the old name. The reference was
+correct before and is correct after; the rule is destroyed by being
+updated.
+
+**Case.** `dzherela-kesh/` became `source-cache/`. `.gitignore` held two
+entries: `dzherela-kesh/*` (the live rule) and `dzherela-kesh/` (a
+belt-and-braces rule for the same path). The rename rewrote both — the
+second into `dzherela-cache/`, a directory that has never existed.
+
+In the container that did the rename, nothing sat at the old path, so
+nothing happened. In the **other maintainer's** container the old
+directory was still there with its downloaded documents, and the merge
+handed them a tree where **236 third-party documents** were no longer
+ignored. They were staged before anyone noticed.
+
+> An ignore rule for a path is not a reference to that path. It is a
+> statement about anyone who still has one. Renaming it removes the
+> protection exactly where it was still needed — and never where the
+> rename was done, so the author cannot see it.
+
+The same shape applies to any rule keyed on an old name: a redirect, a
+deprecation warning, a migration guard, a compatibility shim.
+
+**Held by.** Nothing automatic yet. The candidate check is cheap and
+worth writing: no `.gitignore` entry may name a path that does not exist
+and never has — a rule about nothing is either a typo or a rule that was
+rewritten out of its job.
 
 ---
 

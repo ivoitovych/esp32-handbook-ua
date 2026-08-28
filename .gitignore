@@ -29,7 +29,6 @@ Thumbs.db
 # репозиторію; це тут друга лінія, а не єдина.
 source-cache/*
 !source-cache/MANIFEST.md
-dzherela-cache/
 # The pre-rename cache directory. The rename replaced the ignore rule by
 # search-and-replace and hit the wrong string — the real directory was
 # `dzherela-kesh`, not `dzherela-cache` — so 236 third-party documents
