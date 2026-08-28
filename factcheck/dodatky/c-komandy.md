@@ -2823,7 +2823,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-077 sha:af9c4cd0 src:dodatky/c-komandy.md:159 klas:A -->
+<!-- fc id:T-C-077 sha:af9c4cd0 src:dodatky/c-komandy.md:160 klas:A -->
 ### T-C-077 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2876,7 +2876,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-078 sha:1b645088 src:dodatky/c-komandy.md:159 klas:A -->
+<!-- fc id:T-C-078 sha:1b645088 src:dodatky/c-komandy.md:160 klas:A -->
 ### T-C-078 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2929,7 +2929,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-079 sha:e7670044 src:dodatky/c-komandy.md:160 klas:F -->
+<!-- fc id:T-C-079 sha:e7670044 src:dodatky/c-komandy.md:161 klas:F -->
 ### T-C-079 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2962,7 +2962,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-080 sha:3e00cb93 src:dodatky/c-komandy.md:160 klas:F -->
+<!-- fc id:T-C-080 sha:3e00cb93 src:dodatky/c-komandy.md:161 klas:F -->
 ### T-C-080 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -2995,7 +2995,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-081 sha:b668a28a src:dodatky/c-komandy.md:161 klas:F -->
+<!-- fc id:T-C-081 sha:b668a28a src:dodatky/c-komandy.md:162 klas:F -->
 ### T-C-081 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3028,7 +3028,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-082 sha:00c75e9e src:dodatky/c-komandy.md:162 klas:F -->
+<!-- fc id:T-C-082 sha:00c75e9e src:dodatky/c-komandy.md:163 klas:F -->
 ### T-C-082 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3061,7 +3061,7 @@ riscv32-esp-elf-addr2line    -pfiaC -e build/app.elf 0x42001234
 
 ---
 
-<!-- fc id:T-C-083 sha:a33fb442 src:dodatky/c-komandy.md:162 klas:F -->
+<!-- fc id:T-C-083 sha:a33fb442 src:dodatky/c-komandy.md:163 klas:F -->
 ### T-C-083 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3589,7 +3589,7 @@ pio pkg update
 
 ---
 
-<!-- fc id:T-C-102 sha:03becf94 src:dodatky/c-komandy.md:197 klas:A -->
+<!-- fc id:T-C-102 sha:03becf94 src:dodatky/c-komandy.md:198 klas:A -->
 ### T-C-102 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3634,7 +3634,7 @@ esptool --port PORT --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-C-103 sha:1fe1e089 src:dodatky/c-komandy.md:197 klas:A -->
+<!-- fc id:T-C-103 sha:1fe1e089 src:dodatky/c-komandy.md:198 klas:A -->
 ### T-C-103 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3674,7 +3674,7 @@ esptool --port PORT --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-C-104 sha:ddb10a79 src:dodatky/c-komandy.md:197 klas:A -->
+<!-- fc id:T-C-104 sha:ddb10a79 src:dodatky/c-komandy.md:198 klas:A -->
 ### T-C-104 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3728,7 +3728,7 @@ esptool --port PORT --baud 460800 write-flash -z \
 
 ---
 
-<!-- fc id:T-C-105 sha:a6442276 src:dodatky/c-komandy.md:198 klas:A -->
+<!-- fc id:T-C-105 sha:a6442276 src:dodatky/c-komandy.md:199 klas:A -->
 ### T-C-105 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3765,7 +3765,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-106 sha:21c0d046 src:dodatky/c-komandy.md:198 klas:A -->
+<!-- fc id:T-C-106 sha:21c0d046 src:dodatky/c-komandy.md:199 klas:A -->
 ### T-C-106 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3802,7 +3802,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-107 sha:59461729 src:dodatky/c-komandy.md:198 klas:A -->
+<!-- fc id:T-C-107 sha:59461729 src:dodatky/c-komandy.md:199 klas:A -->
 ### T-C-107 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3839,7 +3839,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-108 sha:55b5b58b src:dodatky/c-komandy.md:199 klas:A -->
+<!-- fc id:T-C-108 sha:55b5b58b src:dodatky/c-komandy.md:200 klas:A -->
 ### T-C-108 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3893,7 +3893,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-109 sha:55a122c0 src:dodatky/c-komandy.md:199 klas:A -->
+<!-- fc id:T-C-109 sha:55a122c0 src:dodatky/c-komandy.md:200 klas:A -->
 ### T-C-109 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -3947,7 +3947,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-110 sha:eb3f0062 src:dodatky/c-komandy.md:199 klas:A -->
+<!-- fc id:T-C-110 sha:eb3f0062 src:dodatky/c-komandy.md:200 klas:A -->
 ### T-C-110 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4001,7 +4001,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-111 sha:96022a5e src:dodatky/c-komandy.md:200 klas:A -->
+<!-- fc id:T-C-111 sha:96022a5e src:dodatky/c-komandy.md:201 klas:A -->
 ### T-C-111 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4055,7 +4055,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-112 sha:906f56bc src:dodatky/c-komandy.md:200 klas:A -->
+<!-- fc id:T-C-112 sha:906f56bc src:dodatky/c-komandy.md:201 klas:A -->
 ### T-C-112 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4109,7 +4109,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-113 sha:5efc2dcb src:dodatky/c-komandy.md:200 klas:A -->
+<!-- fc id:T-C-113 sha:5efc2dcb src:dodatky/c-komandy.md:201 klas:A -->
 ### T-C-113 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4163,7 +4163,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-114 sha:ceaada41 src:dodatky/c-komandy.md:201 klas:A -->
+<!-- fc id:T-C-114 sha:ceaada41 src:dodatky/c-komandy.md:202 klas:A -->
 ### T-C-114 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4211,7 +4211,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-115 sha:9feefdcc src:dodatky/c-komandy.md:201 klas:A -->
+<!-- fc id:T-C-115 sha:9feefdcc src:dodatky/c-komandy.md:202 klas:A -->
 ### T-C-115 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**
@@ -4251,7 +4251,7 @@ esptool --port PORT read-flash 0x8000 0x1000 pt.bin     # таблиця роз�
 
 ---
 
-<!-- fc id:T-C-116 sha:c94bfb00 src:dodatky/c-komandy.md:201 klas:A -->
+<!-- fc id:T-C-116 sha:c94bfb00 src:dodatky/c-komandy.md:202 klas:A -->
 ### T-C-116 · komirka · `dodatky/c-komandy.md`
 
 **Твердження, коротко**

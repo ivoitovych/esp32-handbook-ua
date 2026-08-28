@@ -256,7 +256,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-010 sha:55309baf src:manual/41-ble.md:27 klas:E -->
+<!-- fc id:T-41-010 sha:55309baf src:manual/41-ble.md:28 klas:E -->
 ### T-41-010 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -292,7 +292,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-011 sha:ca7eb120 src:manual/41-ble.md:27 klas:A -->
+<!-- fc id:T-41-011 sha:ca7eb120 src:manual/41-ble.md:28 klas:A -->
 ### T-41-011 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-012 sha:dadfcd93 src:manual/41-ble.md:28 klas:E -->
+<!-- fc id:T-41-012 sha:dadfcd93 src:manual/41-ble.md:29 klas:E -->
 ### T-41-012 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -433,7 +433,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-013 sha:01ce171b src:manual/41-ble.md:28 klas:F -->
+<!-- fc id:T-41-013 sha:01ce171b src:manual/41-ble.md:29 klas:F -->
 ### T-41-013 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -469,7 +469,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-014 sha:48639305 src:manual/41-ble.md:29 klas:E -->
+<!-- fc id:T-41-014 sha:48639305 src:manual/41-ble.md:30 klas:E -->
 ### T-41-014 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -505,7 +505,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-015 sha:ed26a2f5 src:manual/41-ble.md:29 klas:A -->
+<!-- fc id:T-41-015 sha:ed26a2f5 src:manual/41-ble.md:30 klas:A -->
 ### T-41-015 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -547,7 +547,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-016 sha:3acb9138 src:manual/41-ble.md:30 klas:E -->
+<!-- fc id:T-41-016 sha:3acb9138 src:manual/41-ble.md:31 klas:E -->
 ### T-41-016 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -583,7 +583,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-017 sha:cf950a32 src:manual/41-ble.md:30 klas:F -->
+<!-- fc id:T-41-017 sha:cf950a32 src:manual/41-ble.md:31 klas:F -->
 ### T-41-017 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -619,7 +619,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-018 sha:087229f4 src:manual/41-ble.md:31 klas:E -->
+<!-- fc id:T-41-018 sha:087229f4 src:manual/41-ble.md:32 klas:E -->
 ### T-41-018 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -655,7 +655,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-019 sha:cff9038c src:manual/41-ble.md:31 klas:A -->
+<!-- fc id:T-41-019 sha:cff9038c src:manual/41-ble.md:32 klas:A -->
 ### T-41-019 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -697,7 +697,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-020 sha:fe2aada0 src:manual/41-ble.md:32 klas:E -->
+<!-- fc id:T-41-020 sha:fe2aada0 src:manual/41-ble.md:33 klas:E -->
 ### T-41-020 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -733,7 +733,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-021 sha:1df8009c src:manual/41-ble.md:32 klas:F -->
+<!-- fc id:T-41-021 sha:1df8009c src:manual/41-ble.md:33 klas:F -->
 ### T-41-021 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -769,7 +769,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-022 sha:5a5441a8 src:manual/41-ble.md:33 klas:E -->
+<!-- fc id:T-41-022 sha:5a5441a8 src:manual/41-ble.md:34 klas:E -->
 ### T-41-022 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**
@@ -805,7 +805,7 @@ Bluetooth, на якому тримається безліч старих про
 
 ---
 
-<!-- fc id:T-41-023 sha:8a345583 src:manual/41-ble.md:33 klas:F -->
+<!-- fc id:T-41-023 sha:8a345583 src:manual/41-ble.md:34 klas:F -->
 ### T-41-023 · komirka · `manual/41-ble.md`
 
 **Твердження, коротко**

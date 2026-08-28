@@ -134,7 +134,7 @@
 
 ---
 
-<!-- fc id:T-08-006 sha:91c51fc8 src:manual/08-platy.md:13 klas:F -->
+<!-- fc id:T-08-006 sha:91c51fc8 src:manual/08-platy.md:14 klas:F -->
 ### T-08-006 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -170,7 +170,7 @@
 
 ---
 
-<!-- fc id:T-08-007 sha:4f61a5bf src:manual/08-platy.md:13 klas:F -->
+<!-- fc id:T-08-007 sha:4f61a5bf src:manual/08-platy.md:14 klas:F -->
 ### T-08-007 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -206,7 +206,7 @@
 
 ---
 
-<!-- fc id:T-08-008 sha:dc0a615b src:manual/08-platy.md:14 klas:F -->
+<!-- fc id:T-08-008 sha:dc0a615b src:manual/08-platy.md:15 klas:F -->
 ### T-08-008 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -242,7 +242,7 @@
 
 ---
 
-<!-- fc id:T-08-009 sha:8fb65fea src:manual/08-platy.md:14 klas:B -->
+<!-- fc id:T-08-009 sha:8fb65fea src:manual/08-platy.md:15 klas:B -->
 ### T-08-009 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -284,7 +284,7 @@
 
 ---
 
-<!-- fc id:T-08-010 sha:0a52297b src:manual/08-platy.md:15 klas:F -->
+<!-- fc id:T-08-010 sha:0a52297b src:manual/08-platy.md:16 klas:F -->
 ### T-08-010 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -320,7 +320,7 @@
 
 ---
 
-<!-- fc id:T-08-011 sha:d3b52fd5 src:manual/08-platy.md:15 klas:F -->
+<!-- fc id:T-08-011 sha:d3b52fd5 src:manual/08-platy.md:16 klas:F -->
 ### T-08-011 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -356,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-08-012 sha:6ceca8fd src:manual/08-platy.md:16 klas:F -->
+<!-- fc id:T-08-012 sha:6ceca8fd src:manual/08-platy.md:17 klas:F -->
 ### T-08-012 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -392,7 +392,7 @@
 
 ---
 
-<!-- fc id:T-08-013 sha:5775a514 src:manual/08-platy.md:16 klas:F -->
+<!-- fc id:T-08-013 sha:5775a514 src:manual/08-platy.md:17 klas:F -->
 ### T-08-013 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -428,7 +428,7 @@
 
 ---
 
-<!-- fc id:T-08-014 sha:480401f4 src:manual/08-platy.md:17 klas:F -->
+<!-- fc id:T-08-014 sha:480401f4 src:manual/08-platy.md:18 klas:F -->
 ### T-08-014 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**
@@ -464,7 +464,7 @@
 
 ---
 
-<!-- fc id:T-08-015 sha:641ab8c1 src:manual/08-platy.md:17 klas:F -->
+<!-- fc id:T-08-015 sha:641ab8c1 src:manual/08-platy.md:18 klas:F -->
 ### T-08-015 · komirka · `manual/08-platy.md`
 
 **Твердження, коротко**

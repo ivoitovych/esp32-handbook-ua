@@ -130,7 +130,7 @@
 
 ---
 
-<!-- fc id:T-B-006 sha:c73ff187 src:dodatky/b-symptomy.md:19 klas:S -->
+<!-- fc id:T-B-006 sha:c73ff187 src:dodatky/b-symptomy.md:20 klas:S -->
 ### T-B-006 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -193,7 +193,7 @@
 
 ---
 
-<!-- fc id:T-B-007 sha:4681cae7 src:dodatky/b-symptomy.md:19 klas:S -->
+<!-- fc id:T-B-007 sha:4681cae7 src:dodatky/b-symptomy.md:20 klas:S -->
 ### T-B-007 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -256,7 +256,7 @@
 
 ---
 
-<!-- fc id:T-B-008 sha:1bbbbfcd src:dodatky/b-symptomy.md:19 klas:S -->
+<!-- fc id:T-B-008 sha:1bbbbfcd src:dodatky/b-symptomy.md:20 klas:S -->
 ### T-B-008 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -319,7 +319,7 @@
 
 ---
 
-<!-- fc id:T-B-009 sha:8ace063d src:dodatky/b-symptomy.md:20 klas:S -->
+<!-- fc id:T-B-009 sha:8ace063d src:dodatky/b-symptomy.md:21 klas:S -->
 ### T-B-009 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -382,7 +382,7 @@
 
 ---
 
-<!-- fc id:T-B-010 sha:b074e1ee src:dodatky/b-symptomy.md:20 klas:A -->
+<!-- fc id:T-B-010 sha:b074e1ee src:dodatky/b-symptomy.md:21 klas:A -->
 ### T-B-010 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -430,7 +430,7 @@
 
 ---
 
-<!-- fc id:T-B-011 sha:bf3faad7 src:dodatky/b-symptomy.md:20 klas:S -->
+<!-- fc id:T-B-011 sha:bf3faad7 src:dodatky/b-symptomy.md:21 klas:S -->
 ### T-B-011 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -493,7 +493,7 @@
 
 ---
 
-<!-- fc id:T-B-012 sha:1479b50d src:dodatky/b-symptomy.md:21 klas:S -->
+<!-- fc id:T-B-012 sha:1479b50d src:dodatky/b-symptomy.md:22 klas:S -->
 ### T-B-012 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -556,7 +556,7 @@
 
 ---
 
-<!-- fc id:T-B-013 sha:28ac3abe src:dodatky/b-symptomy.md:21 klas:S -->
+<!-- fc id:T-B-013 sha:28ac3abe src:dodatky/b-symptomy.md:22 klas:S -->
 ### T-B-013 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -619,7 +619,7 @@
 
 ---
 
-<!-- fc id:T-B-014 sha:d9c4e5d6 src:dodatky/b-symptomy.md:21 klas:S -->
+<!-- fc id:T-B-014 sha:d9c4e5d6 src:dodatky/b-symptomy.md:22 klas:S -->
 ### T-B-014 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -682,7 +682,7 @@
 
 ---
 
-<!-- fc id:T-B-015 sha:df070e08 src:dodatky/b-symptomy.md:22 klas:A -->
+<!-- fc id:T-B-015 sha:df070e08 src:dodatky/b-symptomy.md:23 klas:A -->
 ### T-B-015 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -740,7 +740,7 @@
 
 ---
 
-<!-- fc id:T-B-016 sha:640a6b84 src:dodatky/b-symptomy.md:22 klas:A -->
+<!-- fc id:T-B-016 sha:640a6b84 src:dodatky/b-symptomy.md:23 klas:A -->
 ### T-B-016 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -798,7 +798,7 @@
 
 ---
 
-<!-- fc id:T-B-017 sha:4d4031cd src:dodatky/b-symptomy.md:22 klas:A -->
+<!-- fc id:T-B-017 sha:4d4031cd src:dodatky/b-symptomy.md:23 klas:A -->
 ### T-B-017 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -856,7 +856,7 @@
 
 ---
 
-<!-- fc id:T-B-018 sha:41ee20e3 src:dodatky/b-symptomy.md:23 klas:A -->
+<!-- fc id:T-B-018 sha:41ee20e3 src:dodatky/b-symptomy.md:24 klas:A -->
 ### T-B-018 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -914,7 +914,7 @@
 
 ---
 
-<!-- fc id:T-B-019 sha:4d83c909 src:dodatky/b-symptomy.md:23 klas:A -->
+<!-- fc id:T-B-019 sha:4d83c909 src:dodatky/b-symptomy.md:24 klas:A -->
 ### T-B-019 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -972,7 +972,7 @@
 
 ---
 
-<!-- fc id:T-B-020 sha:21296bed src:dodatky/b-symptomy.md:23 klas:A -->
+<!-- fc id:T-B-020 sha:21296bed src:dodatky/b-symptomy.md:24 klas:A -->
 ### T-B-020 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1030,7 +1030,7 @@
 
 ---
 
-<!-- fc id:T-B-021 sha:950686c2 src:dodatky/b-symptomy.md:24 klas:A -->
+<!-- fc id:T-B-021 sha:950686c2 src:dodatky/b-symptomy.md:25 klas:A -->
 ### T-B-021 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1088,7 +1088,7 @@
 
 ---
 
-<!-- fc id:T-B-022 sha:f2c78481 src:dodatky/b-symptomy.md:24 klas:A -->
+<!-- fc id:T-B-022 sha:f2c78481 src:dodatky/b-symptomy.md:25 klas:A -->
 ### T-B-022 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1146,7 +1146,7 @@
 
 ---
 
-<!-- fc id:T-B-023 sha:004c9f40 src:dodatky/b-symptomy.md:24 klas:A -->
+<!-- fc id:T-B-023 sha:004c9f40 src:dodatky/b-symptomy.md:25 klas:A -->
 ### T-B-023 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1204,7 +1204,7 @@
 
 ---
 
-<!-- fc id:T-B-024 sha:a97754cc src:dodatky/b-symptomy.md:25 klas:A -->
+<!-- fc id:T-B-024 sha:a97754cc src:dodatky/b-symptomy.md:26 klas:A -->
 ### T-B-024 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1262,7 +1262,7 @@
 
 ---
 
-<!-- fc id:T-B-025 sha:00a459db src:dodatky/b-symptomy.md:25 klas:A -->
+<!-- fc id:T-B-025 sha:00a459db src:dodatky/b-symptomy.md:26 klas:A -->
 ### T-B-025 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1320,7 +1320,7 @@
 
 ---
 
-<!-- fc id:T-B-026 sha:270f3bea src:dodatky/b-symptomy.md:25 klas:A -->
+<!-- fc id:T-B-026 sha:270f3bea src:dodatky/b-symptomy.md:26 klas:A -->
 ### T-B-026 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1378,7 +1378,7 @@
 
 ---
 
-<!-- fc id:T-B-027 sha:f876739b src:dodatky/b-symptomy.md:26 klas:A -->
+<!-- fc id:T-B-027 sha:f876739b src:dodatky/b-symptomy.md:27 klas:A -->
 ### T-B-027 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1436,7 +1436,7 @@
 
 ---
 
-<!-- fc id:T-B-028 sha:cac50c5b src:dodatky/b-symptomy.md:26 klas:A -->
+<!-- fc id:T-B-028 sha:cac50c5b src:dodatky/b-symptomy.md:27 klas:A -->
 ### T-B-028 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1494,7 +1494,7 @@
 
 ---
 
-<!-- fc id:T-B-029 sha:2f75783b src:dodatky/b-symptomy.md:26 klas:A -->
+<!-- fc id:T-B-029 sha:2f75783b src:dodatky/b-symptomy.md:27 klas:A -->
 ### T-B-029 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1552,7 +1552,7 @@
 
 ---
 
-<!-- fc id:T-B-030 sha:997a6b63 src:dodatky/b-symptomy.md:27 klas:A -->
+<!-- fc id:T-B-030 sha:997a6b63 src:dodatky/b-symptomy.md:28 klas:A -->
 ### T-B-030 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1601,7 +1601,7 @@
 
 ---
 
-<!-- fc id:T-B-031 sha:33ae1bd4 src:dodatky/b-symptomy.md:27 klas:A -->
+<!-- fc id:T-B-031 sha:33ae1bd4 src:dodatky/b-symptomy.md:28 klas:A -->
 ### T-B-031 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1667,7 +1667,7 @@
 
 ---
 
-<!-- fc id:T-B-032 sha:9303c290 src:dodatky/b-symptomy.md:27 klas:A -->
+<!-- fc id:T-B-032 sha:9303c290 src:dodatky/b-symptomy.md:28 klas:A -->
 ### T-B-032 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1733,7 +1733,7 @@
 
 ---
 
-<!-- fc id:T-B-033 sha:ea00ff27 src:dodatky/b-symptomy.md:28 klas:A -->
+<!-- fc id:T-B-033 sha:ea00ff27 src:dodatky/b-symptomy.md:29 klas:A -->
 ### T-B-033 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1791,7 +1791,7 @@
 
 ---
 
-<!-- fc id:T-B-034 sha:79f50ca7 src:dodatky/b-symptomy.md:28 klas:A -->
+<!-- fc id:T-B-034 sha:79f50ca7 src:dodatky/b-symptomy.md:29 klas:A -->
 ### T-B-034 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1849,7 +1849,7 @@
 
 ---
 
-<!-- fc id:T-B-035 sha:d5a5991c src:dodatky/b-symptomy.md:28 klas:A -->
+<!-- fc id:T-B-035 sha:d5a5991c src:dodatky/b-symptomy.md:29 klas:A -->
 ### T-B-035 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1907,7 +1907,7 @@
 
 ---
 
-<!-- fc id:T-B-036 sha:cf08f94d src:dodatky/b-symptomy.md:29 klas:A -->
+<!-- fc id:T-B-036 sha:cf08f94d src:dodatky/b-symptomy.md:30 klas:A -->
 ### T-B-036 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -1973,7 +1973,7 @@
 
 ---
 
-<!-- fc id:T-B-037 sha:e59b86ec src:dodatky/b-symptomy.md:29 klas:A -->
+<!-- fc id:T-B-037 sha:e59b86ec src:dodatky/b-symptomy.md:30 klas:A -->
 ### T-B-037 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2039,7 +2039,7 @@
 
 ---
 
-<!-- fc id:T-B-038 sha:81a82c66 src:dodatky/b-symptomy.md:29 klas:A -->
+<!-- fc id:T-B-038 sha:81a82c66 src:dodatky/b-symptomy.md:30 klas:A -->
 ### T-B-038 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2105,7 +2105,7 @@
 
 ---
 
-<!-- fc id:T-B-039 sha:a7028303 src:dodatky/b-symptomy.md:30 klas:F -->
+<!-- fc id:T-B-039 sha:a7028303 src:dodatky/b-symptomy.md:31 klas:F -->
 ### T-B-039 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2146,7 +2146,7 @@
 
 ---
 
-<!-- fc id:T-B-040 sha:21e13c37 src:dodatky/b-symptomy.md:30 klas:F -->
+<!-- fc id:T-B-040 sha:21e13c37 src:dodatky/b-symptomy.md:31 klas:F -->
 ### T-B-040 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2187,7 +2187,7 @@
 
 ---
 
-<!-- fc id:T-B-041 sha:d67ce886 src:dodatky/b-symptomy.md:30 klas:F -->
+<!-- fc id:T-B-041 sha:d67ce886 src:dodatky/b-symptomy.md:31 klas:F -->
 ### T-B-041 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2263,7 +2263,7 @@
 
 ---
 
-<!-- fc id:T-B-043 sha:d7c330de src:dodatky/b-symptomy.md:36 klas:E -->
+<!-- fc id:T-B-043 sha:d7c330de src:dodatky/b-symptomy.md:37 klas:E -->
 ### T-B-043 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2301,7 +2301,7 @@
 
 ---
 
-<!-- fc id:T-B-044 sha:a4b78d54 src:dodatky/b-symptomy.md:36 klas:A -->
+<!-- fc id:T-B-044 sha:a4b78d54 src:dodatky/b-symptomy.md:37 klas:A -->
 ### T-B-044 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2345,7 +2345,7 @@
 
 ---
 
-<!-- fc id:T-B-045 sha:895a3335 src:dodatky/b-symptomy.md:36 klas:E -->
+<!-- fc id:T-B-045 sha:895a3335 src:dodatky/b-symptomy.md:37 klas:E -->
 ### T-B-045 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2383,7 +2383,7 @@
 
 ---
 
-<!-- fc id:T-B-046 sha:47271d6c src:dodatky/b-symptomy.md:37 klas:F -->
+<!-- fc id:T-B-046 sha:47271d6c src:dodatky/b-symptomy.md:38 klas:F -->
 ### T-B-046 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2421,7 +2421,7 @@
 
 ---
 
-<!-- fc id:T-B-047 sha:cbe3b2f8 src:dodatky/b-symptomy.md:37 klas:F -->
+<!-- fc id:T-B-047 sha:cbe3b2f8 src:dodatky/b-symptomy.md:38 klas:F -->
 ### T-B-047 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2459,7 +2459,7 @@
 
 ---
 
-<!-- fc id:T-B-048 sha:d2308cd8 src:dodatky/b-symptomy.md:37 klas:F -->
+<!-- fc id:T-B-048 sha:d2308cd8 src:dodatky/b-symptomy.md:38 klas:F -->
 ### T-B-048 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2497,7 +2497,7 @@
 
 ---
 
-<!-- fc id:T-B-049 sha:efbec25c src:dodatky/b-symptomy.md:38 klas:A -->
+<!-- fc id:T-B-049 sha:efbec25c src:dodatky/b-symptomy.md:39 klas:A -->
 ### T-B-049 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2548,7 +2548,7 @@
 
 ---
 
-<!-- fc id:T-B-050 sha:6ce91a07 src:dodatky/b-symptomy.md:38 klas:A -->
+<!-- fc id:T-B-050 sha:6ce91a07 src:dodatky/b-symptomy.md:39 klas:A -->
 ### T-B-050 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2599,7 +2599,7 @@
 
 ---
 
-<!-- fc id:T-B-051 sha:6a21db9c src:dodatky/b-symptomy.md:38 klas:A -->
+<!-- fc id:T-B-051 sha:6a21db9c src:dodatky/b-symptomy.md:39 klas:A -->
 ### T-B-051 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2650,7 +2650,7 @@
 
 ---
 
-<!-- fc id:T-B-052 sha:7b0e4404 src:dodatky/b-symptomy.md:39 klas:S -->
+<!-- fc id:T-B-052 sha:7b0e4404 src:dodatky/b-symptomy.md:40 klas:S -->
 ### T-B-052 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2710,7 +2710,7 @@
 
 ---
 
-<!-- fc id:T-B-053 sha:636f69c5 src:dodatky/b-symptomy.md:39 klas:S -->
+<!-- fc id:T-B-053 sha:636f69c5 src:dodatky/b-symptomy.md:40 klas:S -->
 ### T-B-053 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2770,7 +2770,7 @@
 
 ---
 
-<!-- fc id:T-B-054 sha:8fccc1e7 src:dodatky/b-symptomy.md:39 klas:S -->
+<!-- fc id:T-B-054 sha:8fccc1e7 src:dodatky/b-symptomy.md:40 klas:S -->
 ### T-B-054 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2830,7 +2830,7 @@
 
 ---
 
-<!-- fc id:T-B-055 sha:78a90252 src:dodatky/b-symptomy.md:40 klas:S -->
+<!-- fc id:T-B-055 sha:78a90252 src:dodatky/b-symptomy.md:41 klas:S -->
 ### T-B-055 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2890,7 +2890,7 @@
 
 ---
 
-<!-- fc id:T-B-056 sha:c97da9c8 src:dodatky/b-symptomy.md:40 klas:S -->
+<!-- fc id:T-B-056 sha:c97da9c8 src:dodatky/b-symptomy.md:41 klas:S -->
 ### T-B-056 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -2950,7 +2950,7 @@
 
 ---
 
-<!-- fc id:T-B-057 sha:a2f3ba72 src:dodatky/b-symptomy.md:40 klas:S -->
+<!-- fc id:T-B-057 sha:a2f3ba72 src:dodatky/b-symptomy.md:41 klas:S -->
 ### T-B-057 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3010,7 +3010,7 @@
 
 ---
 
-<!-- fc id:T-B-058 sha:debc906e src:dodatky/b-symptomy.md:41 klas:F -->
+<!-- fc id:T-B-058 sha:debc906e src:dodatky/b-symptomy.md:42 klas:F -->
 ### T-B-058 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3048,7 +3048,7 @@
 
 ---
 
-<!-- fc id:T-B-059 sha:c212a182 src:dodatky/b-symptomy.md:41 klas:E -->
+<!-- fc id:T-B-059 sha:c212a182 src:dodatky/b-symptomy.md:42 klas:E -->
 ### T-B-059 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3086,7 +3086,7 @@
 
 ---
 
-<!-- fc id:T-B-060 sha:d8990451 src:dodatky/b-symptomy.md:41 klas:E -->
+<!-- fc id:T-B-060 sha:d8990451 src:dodatky/b-symptomy.md:42 klas:E -->
 ### T-B-060 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3124,7 +3124,7 @@
 
 ---
 
-<!-- fc id:T-B-061 sha:533acea2 src:dodatky/b-symptomy.md:42 klas:E -->
+<!-- fc id:T-B-061 sha:533acea2 src:dodatky/b-symptomy.md:43 klas:E -->
 ### T-B-061 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3162,7 +3162,7 @@
 
 ---
 
-<!-- fc id:T-B-062 sha:0729da19 src:dodatky/b-symptomy.md:42 klas:E -->
+<!-- fc id:T-B-062 sha:0729da19 src:dodatky/b-symptomy.md:43 klas:E -->
 ### T-B-062 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3200,7 +3200,7 @@
 
 ---
 
-<!-- fc id:T-B-063 sha:7ee6b4ec src:dodatky/b-symptomy.md:42 klas:E -->
+<!-- fc id:T-B-063 sha:7ee6b4ec src:dodatky/b-symptomy.md:43 klas:E -->
 ### T-B-063 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3238,7 +3238,7 @@
 
 ---
 
-<!-- fc id:T-B-064 sha:aa64f6e7 src:dodatky/b-symptomy.md:43 klas:F -->
+<!-- fc id:T-B-064 sha:aa64f6e7 src:dodatky/b-symptomy.md:44 klas:F -->
 ### T-B-064 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3276,7 +3276,7 @@
 
 ---
 
-<!-- fc id:T-B-065 sha:728bc926 src:dodatky/b-symptomy.md:43 klas:E -->
+<!-- fc id:T-B-065 sha:728bc926 src:dodatky/b-symptomy.md:44 klas:E -->
 ### T-B-065 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3314,7 +3314,7 @@
 
 ---
 
-<!-- fc id:T-B-066 sha:a8cbcc9e src:dodatky/b-symptomy.md:43 klas:E -->
+<!-- fc id:T-B-066 sha:a8cbcc9e src:dodatky/b-symptomy.md:44 klas:E -->
 ### T-B-066 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3352,7 +3352,7 @@
 
 ---
 
-<!-- fc id:T-B-067 sha:b41d5996 src:dodatky/b-symptomy.md:44 klas:E -->
+<!-- fc id:T-B-067 sha:b41d5996 src:dodatky/b-symptomy.md:45 klas:E -->
 ### T-B-067 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3390,7 +3390,7 @@
 
 ---
 
-<!-- fc id:T-B-068 sha:65bb1cb8 src:dodatky/b-symptomy.md:44 klas:E -->
+<!-- fc id:T-B-068 sha:65bb1cb8 src:dodatky/b-symptomy.md:45 klas:E -->
 ### T-B-068 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3428,7 +3428,7 @@
 
 ---
 
-<!-- fc id:T-B-069 sha:bc0ceaeb src:dodatky/b-symptomy.md:44 klas:E -->
+<!-- fc id:T-B-069 sha:bc0ceaeb src:dodatky/b-symptomy.md:45 klas:E -->
 ### T-B-069 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3501,7 +3501,7 @@
 
 ---
 
-<!-- fc id:T-B-071 sha:f20f6420 src:dodatky/b-symptomy.md:50 klas:A -->
+<!-- fc id:T-B-071 sha:f20f6420 src:dodatky/b-symptomy.md:51 klas:A -->
 ### T-B-071 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3543,7 +3543,7 @@
 
 ---
 
-<!-- fc id:T-B-072 sha:120f74dd src:dodatky/b-symptomy.md:50 klas:E -->
+<!-- fc id:T-B-072 sha:120f74dd src:dodatky/b-symptomy.md:51 klas:E -->
 ### T-B-072 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3591,7 +3591,7 @@
 
 ---
 
-<!-- fc id:T-B-073 sha:029caf71 src:dodatky/b-symptomy.md:50 klas:F -->
+<!-- fc id:T-B-073 sha:029caf71 src:dodatky/b-symptomy.md:51 klas:F -->
 ### T-B-073 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3627,7 +3627,7 @@
 
 ---
 
-<!-- fc id:T-B-074 sha:3e808c86 src:dodatky/b-symptomy.md:51 klas:F -->
+<!-- fc id:T-B-074 sha:3e808c86 src:dodatky/b-symptomy.md:52 klas:F -->
 ### T-B-074 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3663,7 +3663,7 @@
 
 ---
 
-<!-- fc id:T-B-075 sha:bc48f448 src:dodatky/b-symptomy.md:51 klas:E -->
+<!-- fc id:T-B-075 sha:bc48f448 src:dodatky/b-symptomy.md:52 klas:E -->
 ### T-B-075 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3712,7 +3712,7 @@
 
 ---
 
-<!-- fc id:T-B-076 sha:ded18b6d src:dodatky/b-symptomy.md:51 klas:F -->
+<!-- fc id:T-B-076 sha:ded18b6d src:dodatky/b-symptomy.md:52 klas:F -->
 ### T-B-076 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3748,7 +3748,7 @@
 
 ---
 
-<!-- fc id:T-B-077 sha:3da42b98 src:dodatky/b-symptomy.md:52 klas:E -->
+<!-- fc id:T-B-077 sha:3da42b98 src:dodatky/b-symptomy.md:53 klas:E -->
 ### T-B-077 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3784,7 +3784,7 @@
 
 ---
 
-<!-- fc id:T-B-078 sha:a4c8b43e src:dodatky/b-symptomy.md:52 klas:E -->
+<!-- fc id:T-B-078 sha:a4c8b43e src:dodatky/b-symptomy.md:53 klas:E -->
 ### T-B-078 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3820,7 +3820,7 @@
 
 ---
 
-<!-- fc id:T-B-079 sha:b3b3593b src:dodatky/b-symptomy.md:52 klas:E -->
+<!-- fc id:T-B-079 sha:b3b3593b src:dodatky/b-symptomy.md:53 klas:E -->
 ### T-B-079 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3856,7 +3856,7 @@
 
 ---
 
-<!-- fc id:T-B-080 sha:0ca6156d src:dodatky/b-symptomy.md:53 klas:F -->
+<!-- fc id:T-B-080 sha:0ca6156d src:dodatky/b-symptomy.md:54 klas:F -->
 ### T-B-080 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3892,7 +3892,7 @@
 
 ---
 
-<!-- fc id:T-B-081 sha:ffe63102 src:dodatky/b-symptomy.md:53 klas:F -->
+<!-- fc id:T-B-081 sha:ffe63102 src:dodatky/b-symptomy.md:54 klas:F -->
 ### T-B-081 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3928,7 +3928,7 @@
 
 ---
 
-<!-- fc id:T-B-082 sha:cb3a0097 src:dodatky/b-symptomy.md:53 klas:F -->
+<!-- fc id:T-B-082 sha:cb3a0097 src:dodatky/b-symptomy.md:54 klas:F -->
 ### T-B-082 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -3964,7 +3964,7 @@
 
 ---
 
-<!-- fc id:T-B-083 sha:0963bdc4 src:dodatky/b-symptomy.md:54 klas:E -->
+<!-- fc id:T-B-083 sha:0963bdc4 src:dodatky/b-symptomy.md:55 klas:E -->
 ### T-B-083 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4000,7 +4000,7 @@
 
 ---
 
-<!-- fc id:T-B-084 sha:e7d83ae9 src:dodatky/b-symptomy.md:54 klas:E -->
+<!-- fc id:T-B-084 sha:e7d83ae9 src:dodatky/b-symptomy.md:55 klas:E -->
 ### T-B-084 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4047,7 +4047,7 @@
 
 ---
 
-<!-- fc id:T-B-085 sha:4d555332 src:dodatky/b-symptomy.md:54 klas:E -->
+<!-- fc id:T-B-085 sha:4d555332 src:dodatky/b-symptomy.md:55 klas:E -->
 ### T-B-085 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4083,7 +4083,7 @@
 
 ---
 
-<!-- fc id:T-B-086 sha:10565047 src:dodatky/b-symptomy.md:55 klas:C -->
+<!-- fc id:T-B-086 sha:10565047 src:dodatky/b-symptomy.md:56 klas:C -->
 ### T-B-086 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4123,7 +4123,7 @@
 
 ---
 
-<!-- fc id:T-B-087 sha:96d04963 src:dodatky/b-symptomy.md:55 klas:C -->
+<!-- fc id:T-B-087 sha:96d04963 src:dodatky/b-symptomy.md:56 klas:C -->
 ### T-B-087 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4163,7 +4163,7 @@
 
 ---
 
-<!-- fc id:T-B-088 sha:12d4a879 src:dodatky/b-symptomy.md:55 klas:C -->
+<!-- fc id:T-B-088 sha:12d4a879 src:dodatky/b-symptomy.md:56 klas:C -->
 ### T-B-088 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4203,7 +4203,7 @@
 
 ---
 
-<!-- fc id:T-B-089 sha:5f9bba1f src:dodatky/b-symptomy.md:56 klas:E -->
+<!-- fc id:T-B-089 sha:5f9bba1f src:dodatky/b-symptomy.md:57 klas:E -->
 ### T-B-089 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4239,7 +4239,7 @@
 
 ---
 
-<!-- fc id:T-B-090 sha:f66a44b6 src:dodatky/b-symptomy.md:56 klas:E -->
+<!-- fc id:T-B-090 sha:f66a44b6 src:dodatky/b-symptomy.md:57 klas:E -->
 ### T-B-090 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4275,7 +4275,7 @@
 
 ---
 
-<!-- fc id:T-B-091 sha:b8a0c318 src:dodatky/b-symptomy.md:56 klas:E -->
+<!-- fc id:T-B-091 sha:b8a0c318 src:dodatky/b-symptomy.md:57 klas:E -->
 ### T-B-091 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4346,7 +4346,7 @@
 
 ---
 
-<!-- fc id:T-B-093 sha:26d701cf src:dodatky/b-symptomy.md:62 klas:F -->
+<!-- fc id:T-B-093 sha:26d701cf src:dodatky/b-symptomy.md:63 klas:F -->
 ### T-B-093 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4391,7 +4391,7 @@
 
 ---
 
-<!-- fc id:T-B-094 sha:cb23a282 src:dodatky/b-symptomy.md:62 klas:E -->
+<!-- fc id:T-B-094 sha:cb23a282 src:dodatky/b-symptomy.md:63 klas:E -->
 ### T-B-094 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4447,7 +4447,7 @@
 
 ---
 
-<!-- fc id:T-B-095 sha:077e3943 src:dodatky/b-symptomy.md:62 klas:F -->
+<!-- fc id:T-B-095 sha:077e3943 src:dodatky/b-symptomy.md:63 klas:F -->
 ### T-B-095 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4492,7 +4492,7 @@
 
 ---
 
-<!-- fc id:T-B-096 sha:40eeeaf1 src:dodatky/b-symptomy.md:63 klas:F -->
+<!-- fc id:T-B-096 sha:40eeeaf1 src:dodatky/b-symptomy.md:64 klas:F -->
 ### T-B-096 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4537,7 +4537,7 @@
 
 ---
 
-<!-- fc id:T-B-097 sha:aa27eb03 src:dodatky/b-symptomy.md:63 klas:F -->
+<!-- fc id:T-B-097 sha:aa27eb03 src:dodatky/b-symptomy.md:64 klas:F -->
 ### T-B-097 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4582,7 +4582,7 @@
 
 ---
 
-<!-- fc id:T-B-098 sha:077e3943 src:dodatky/b-symptomy.md:63 klas:F -->
+<!-- fc id:T-B-098 sha:077e3943 src:dodatky/b-symptomy.md:64 klas:F -->
 ### T-B-098 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4627,7 +4627,7 @@
 
 ---
 
-<!-- fc id:T-B-099 sha:21f32a19 src:dodatky/b-symptomy.md:64 klas:F -->
+<!-- fc id:T-B-099 sha:21f32a19 src:dodatky/b-symptomy.md:65 klas:F -->
 ### T-B-099 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4672,7 +4672,7 @@
 
 ---
 
-<!-- fc id:T-B-100 sha:7f3770fe src:dodatky/b-symptomy.md:64 klas:F -->
+<!-- fc id:T-B-100 sha:7f3770fe src:dodatky/b-symptomy.md:65 klas:F -->
 ### T-B-100 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4717,7 +4717,7 @@
 
 ---
 
-<!-- fc id:T-B-101 sha:077e3943 src:dodatky/b-symptomy.md:64 klas:F -->
+<!-- fc id:T-B-101 sha:077e3943 src:dodatky/b-symptomy.md:65 klas:F -->
 ### T-B-101 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4762,7 +4762,7 @@
 
 ---
 
-<!-- fc id:T-B-102 sha:fcce0126 src:dodatky/b-symptomy.md:65 klas:F -->
+<!-- fc id:T-B-102 sha:fcce0126 src:dodatky/b-symptomy.md:66 klas:F -->
 ### T-B-102 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4807,7 +4807,7 @@
 
 ---
 
-<!-- fc id:T-B-103 sha:f9a93533 src:dodatky/b-symptomy.md:65 klas:E -->
+<!-- fc id:T-B-103 sha:f9a93533 src:dodatky/b-symptomy.md:66 klas:E -->
 ### T-B-103 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4865,7 +4865,7 @@
 
 ---
 
-<!-- fc id:T-B-104 sha:4b8a0f52 src:dodatky/b-symptomy.md:65 klas:F -->
+<!-- fc id:T-B-104 sha:4b8a0f52 src:dodatky/b-symptomy.md:66 klas:F -->
 ### T-B-104 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4910,7 +4910,7 @@
 
 ---
 
-<!-- fc id:T-B-105 sha:d8a4219a src:dodatky/b-symptomy.md:66 klas:B -->
+<!-- fc id:T-B-105 sha:d8a4219a src:dodatky/b-symptomy.md:67 klas:B -->
 ### T-B-105 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -4967,7 +4967,7 @@
 
 ---
 
-<!-- fc id:T-B-106 sha:07489a2a src:dodatky/b-symptomy.md:66 klas:F -->
+<!-- fc id:T-B-106 sha:07489a2a src:dodatky/b-symptomy.md:67 klas:F -->
 ### T-B-106 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5012,7 +5012,7 @@
 
 ---
 
-<!-- fc id:T-B-107 sha:59fbaeca src:dodatky/b-symptomy.md:66 klas:F -->
+<!-- fc id:T-B-107 sha:59fbaeca src:dodatky/b-symptomy.md:67 klas:F -->
 ### T-B-107 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5057,7 +5057,7 @@
 
 ---
 
-<!-- fc id:T-B-108 sha:78d360bb src:dodatky/b-symptomy.md:67 klas:F -->
+<!-- fc id:T-B-108 sha:78d360bb src:dodatky/b-symptomy.md:68 klas:F -->
 ### T-B-108 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5102,7 +5102,7 @@
 
 ---
 
-<!-- fc id:T-B-109 sha:7781c2e4 src:dodatky/b-symptomy.md:67 klas:F -->
+<!-- fc id:T-B-109 sha:7781c2e4 src:dodatky/b-symptomy.md:68 klas:F -->
 ### T-B-109 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5147,7 +5147,7 @@
 
 ---
 
-<!-- fc id:T-B-110 sha:a1b52ef4 src:dodatky/b-symptomy.md:67 klas:F -->
+<!-- fc id:T-B-110 sha:a1b52ef4 src:dodatky/b-symptomy.md:68 klas:F -->
 ### T-B-110 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5192,7 +5192,7 @@
 
 ---
 
-<!-- fc id:T-B-111 sha:1d39d249 src:dodatky/b-symptomy.md:68 klas:F -->
+<!-- fc id:T-B-111 sha:1d39d249 src:dodatky/b-symptomy.md:69 klas:F -->
 ### T-B-111 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5237,7 +5237,7 @@
 
 ---
 
-<!-- fc id:T-B-112 sha:b64cfad9 src:dodatky/b-symptomy.md:68 klas:E -->
+<!-- fc id:T-B-112 sha:b64cfad9 src:dodatky/b-symptomy.md:69 klas:E -->
 ### T-B-112 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5294,7 +5294,7 @@
 
 ---
 
-<!-- fc id:T-B-113 sha:23a14f4b src:dodatky/b-symptomy.md:68 klas:F -->
+<!-- fc id:T-B-113 sha:23a14f4b src:dodatky/b-symptomy.md:69 klas:F -->
 ### T-B-113 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5339,7 +5339,7 @@
 
 ---
 
-<!-- fc id:T-B-114 sha:fef84253 src:dodatky/b-symptomy.md:69 klas:E -->
+<!-- fc id:T-B-114 sha:fef84253 src:dodatky/b-symptomy.md:70 klas:E -->
 ### T-B-114 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5396,7 +5396,7 @@
 
 ---
 
-<!-- fc id:T-B-115 sha:501ce3a6 src:dodatky/b-symptomy.md:69 klas:F -->
+<!-- fc id:T-B-115 sha:501ce3a6 src:dodatky/b-symptomy.md:70 klas:F -->
 ### T-B-115 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5441,7 +5441,7 @@
 
 ---
 
-<!-- fc id:T-B-116 sha:bfe38995 src:dodatky/b-symptomy.md:69 klas:F -->
+<!-- fc id:T-B-116 sha:bfe38995 src:dodatky/b-symptomy.md:70 klas:F -->
 ### T-B-116 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5486,7 +5486,7 @@
 
 ---
 
-<!-- fc id:T-B-117 sha:3e402858 src:dodatky/b-symptomy.md:70 klas:F -->
+<!-- fc id:T-B-117 sha:3e402858 src:dodatky/b-symptomy.md:71 klas:F -->
 ### T-B-117 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5531,7 +5531,7 @@
 
 ---
 
-<!-- fc id:T-B-118 sha:24d6421b src:dodatky/b-symptomy.md:70 klas:A -->
+<!-- fc id:T-B-118 sha:24d6421b src:dodatky/b-symptomy.md:71 klas:A -->
 ### T-B-118 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5592,7 +5592,7 @@
 
 ---
 
-<!-- fc id:T-B-119 sha:f8075fb7 src:dodatky/b-symptomy.md:70 klas:F -->
+<!-- fc id:T-B-119 sha:f8075fb7 src:dodatky/b-symptomy.md:71 klas:F -->
 ### T-B-119 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5637,7 +5637,7 @@
 
 ---
 
-<!-- fc id:T-B-120 sha:b38d79e1 src:dodatky/b-symptomy.md:71 klas:F -->
+<!-- fc id:T-B-120 sha:b38d79e1 src:dodatky/b-symptomy.md:72 klas:F -->
 ### T-B-120 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5682,7 +5682,7 @@
 
 ---
 
-<!-- fc id:T-B-121 sha:3f497c9d src:dodatky/b-symptomy.md:71 klas:F -->
+<!-- fc id:T-B-121 sha:3f497c9d src:dodatky/b-symptomy.md:72 klas:F -->
 ### T-B-121 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5727,7 +5727,7 @@
 
 ---
 
-<!-- fc id:T-B-122 sha:1cf1a138 src:dodatky/b-symptomy.md:71 klas:F -->
+<!-- fc id:T-B-122 sha:1cf1a138 src:dodatky/b-symptomy.md:72 klas:F -->
 ### T-B-122 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5772,7 +5772,7 @@
 
 ---
 
-<!-- fc id:T-B-123 sha:0703012b src:dodatky/b-symptomy.md:72 klas:F -->
+<!-- fc id:T-B-123 sha:0703012b src:dodatky/b-symptomy.md:73 klas:F -->
 ### T-B-123 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5817,7 +5817,7 @@
 
 ---
 
-<!-- fc id:T-B-124 sha:39da77cd src:dodatky/b-symptomy.md:72 klas:F -->
+<!-- fc id:T-B-124 sha:39da77cd src:dodatky/b-symptomy.md:73 klas:F -->
 ### T-B-124 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5862,7 +5862,7 @@
 
 ---
 
-<!-- fc id:T-B-125 sha:c1462df2 src:dodatky/b-symptomy.md:72 klas:F -->
+<!-- fc id:T-B-125 sha:c1462df2 src:dodatky/b-symptomy.md:73 klas:F -->
 ### T-B-125 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5907,7 +5907,7 @@
 
 ---
 
-<!-- fc id:T-B-126 sha:e7697029 src:dodatky/b-symptomy.md:73 klas:A -->
+<!-- fc id:T-B-126 sha:e7697029 src:dodatky/b-symptomy.md:74 klas:A -->
 ### T-B-126 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -5974,7 +5974,7 @@
 
 ---
 
-<!-- fc id:T-B-127 sha:b7f5a9a0 src:dodatky/b-symptomy.md:73 klas:A -->
+<!-- fc id:T-B-127 sha:b7f5a9a0 src:dodatky/b-symptomy.md:74 klas:A -->
 ### T-B-127 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6041,7 +6041,7 @@
 
 ---
 
-<!-- fc id:T-B-128 sha:4b1c3403 src:dodatky/b-symptomy.md:73 klas:A -->
+<!-- fc id:T-B-128 sha:4b1c3403 src:dodatky/b-symptomy.md:74 klas:A -->
 ### T-B-128 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6108,7 +6108,7 @@
 
 ---
 
-<!-- fc id:T-B-129 sha:0fb1cdd6 src:dodatky/b-symptomy.md:74 klas:A -->
+<!-- fc id:T-B-129 sha:0fb1cdd6 src:dodatky/b-symptomy.md:75 klas:A -->
 ### T-B-129 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6175,7 +6175,7 @@
 
 ---
 
-<!-- fc id:T-B-130 sha:84c06d6d src:dodatky/b-symptomy.md:74 klas:A -->
+<!-- fc id:T-B-130 sha:84c06d6d src:dodatky/b-symptomy.md:75 klas:A -->
 ### T-B-130 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6242,7 +6242,7 @@
 
 ---
 
-<!-- fc id:T-B-131 sha:40d5f951 src:dodatky/b-symptomy.md:74 klas:A -->
+<!-- fc id:T-B-131 sha:40d5f951 src:dodatky/b-symptomy.md:75 klas:A -->
 ### T-B-131 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6309,7 +6309,7 @@
 
 ---
 
-<!-- fc id:T-B-132 sha:4ac391fd src:dodatky/b-symptomy.md:75 klas:F -->
+<!-- fc id:T-B-132 sha:4ac391fd src:dodatky/b-symptomy.md:76 klas:F -->
 ### T-B-132 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6354,7 +6354,7 @@
 
 ---
 
-<!-- fc id:T-B-133 sha:f4eaae04 src:dodatky/b-symptomy.md:75 klas:F -->
+<!-- fc id:T-B-133 sha:f4eaae04 src:dodatky/b-symptomy.md:76 klas:F -->
 ### T-B-133 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6399,7 +6399,7 @@
 
 ---
 
-<!-- fc id:T-B-134 sha:2f72b877 src:dodatky/b-symptomy.md:75 klas:A -->
+<!-- fc id:T-B-134 sha:2f72b877 src:dodatky/b-symptomy.md:76 klas:A -->
 ### T-B-134 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6450,7 +6450,7 @@
 
 ---
 
-<!-- fc id:T-B-135 sha:d285a217 src:dodatky/b-symptomy.md:76 klas:F -->
+<!-- fc id:T-B-135 sha:d285a217 src:dodatky/b-symptomy.md:77 klas:F -->
 ### T-B-135 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6495,7 +6495,7 @@
 
 ---
 
-<!-- fc id:T-B-136 sha:db57d297 src:dodatky/b-symptomy.md:76 klas:F -->
+<!-- fc id:T-B-136 sha:db57d297 src:dodatky/b-symptomy.md:77 klas:F -->
 ### T-B-136 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6540,7 +6540,7 @@
 
 ---
 
-<!-- fc id:T-B-137 sha:1334b1b5 src:dodatky/b-symptomy.md:76 klas:F -->
+<!-- fc id:T-B-137 sha:1334b1b5 src:dodatky/b-symptomy.md:77 klas:F -->
 ### T-B-137 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6585,7 +6585,7 @@
 
 ---
 
-<!-- fc id:T-B-138 sha:4a524de8 src:dodatky/b-symptomy.md:77 klas:A -->
+<!-- fc id:T-B-138 sha:4a524de8 src:dodatky/b-symptomy.md:78 klas:A -->
 ### T-B-138 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6640,7 +6640,7 @@
 
 ---
 
-<!-- fc id:T-B-139 sha:99eaf204 src:dodatky/b-symptomy.md:77 klas:A -->
+<!-- fc id:T-B-139 sha:99eaf204 src:dodatky/b-symptomy.md:78 klas:A -->
 ### T-B-139 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6695,7 +6695,7 @@
 
 ---
 
-<!-- fc id:T-B-140 sha:861d1432 src:dodatky/b-symptomy.md:77 klas:A -->
+<!-- fc id:T-B-140 sha:861d1432 src:dodatky/b-symptomy.md:78 klas:A -->
 ### T-B-140 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6785,7 +6785,7 @@
 
 ---
 
-<!-- fc id:T-B-142 sha:556f1db3 src:dodatky/b-symptomy.md:83 klas:A -->
+<!-- fc id:T-B-142 sha:556f1db3 src:dodatky/b-symptomy.md:84 klas:A -->
 ### T-B-142 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6835,7 +6835,7 @@
 
 ---
 
-<!-- fc id:T-B-143 sha:cf5c1d93 src:dodatky/b-symptomy.md:83 klas:F -->
+<!-- fc id:T-B-143 sha:cf5c1d93 src:dodatky/b-symptomy.md:84 klas:F -->
 ### T-B-143 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6879,7 +6879,7 @@
 
 ---
 
-<!-- fc id:T-B-144 sha:92bb30b0 src:dodatky/b-symptomy.md:83 klas:F -->
+<!-- fc id:T-B-144 sha:92bb30b0 src:dodatky/b-symptomy.md:84 klas:F -->
 ### T-B-144 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6923,7 +6923,7 @@
 
 ---
 
-<!-- fc id:T-B-145 sha:c32ba837 src:dodatky/b-symptomy.md:84 klas:F -->
+<!-- fc id:T-B-145 sha:c32ba837 src:dodatky/b-symptomy.md:85 klas:F -->
 ### T-B-145 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -6967,7 +6967,7 @@
 
 ---
 
-<!-- fc id:T-B-146 sha:20558b51 src:dodatky/b-symptomy.md:84 klas:A -->
+<!-- fc id:T-B-146 sha:20558b51 src:dodatky/b-symptomy.md:85 klas:A -->
 ### T-B-146 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7027,7 +7027,7 @@
 
 ---
 
-<!-- fc id:T-B-147 sha:93816ae9 src:dodatky/b-symptomy.md:84 klas:F -->
+<!-- fc id:T-B-147 sha:93816ae9 src:dodatky/b-symptomy.md:85 klas:F -->
 ### T-B-147 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7071,7 +7071,7 @@
 
 ---
 
-<!-- fc id:T-B-148 sha:731640c6 src:dodatky/b-symptomy.md:85 klas:F -->
+<!-- fc id:T-B-148 sha:731640c6 src:dodatky/b-symptomy.md:86 klas:F -->
 ### T-B-148 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7115,7 +7115,7 @@
 
 ---
 
-<!-- fc id:T-B-149 sha:ce27a167 src:dodatky/b-symptomy.md:85 klas:F -->
+<!-- fc id:T-B-149 sha:ce27a167 src:dodatky/b-symptomy.md:86 klas:F -->
 ### T-B-149 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7159,7 +7159,7 @@
 
 ---
 
-<!-- fc id:T-B-150 sha:c0938288 src:dodatky/b-symptomy.md:85 klas:F -->
+<!-- fc id:T-B-150 sha:c0938288 src:dodatky/b-symptomy.md:86 klas:F -->
 ### T-B-150 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7203,7 +7203,7 @@
 
 ---
 
-<!-- fc id:T-B-151 sha:32b98c46 src:dodatky/b-symptomy.md:86 klas:F -->
+<!-- fc id:T-B-151 sha:32b98c46 src:dodatky/b-symptomy.md:87 klas:F -->
 ### T-B-151 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7247,7 +7247,7 @@
 
 ---
 
-<!-- fc id:T-B-152 sha:29fc68a1 src:dodatky/b-symptomy.md:86 klas:F -->
+<!-- fc id:T-B-152 sha:29fc68a1 src:dodatky/b-symptomy.md:87 klas:F -->
 ### T-B-152 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7291,7 +7291,7 @@
 
 ---
 
-<!-- fc id:T-B-153 sha:d3183725 src:dodatky/b-symptomy.md:86 klas:F -->
+<!-- fc id:T-B-153 sha:d3183725 src:dodatky/b-symptomy.md:87 klas:F -->
 ### T-B-153 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7335,7 +7335,7 @@
 
 ---
 
-<!-- fc id:T-B-154 sha:f3db0ec1 src:dodatky/b-symptomy.md:87 klas:A -->
+<!-- fc id:T-B-154 sha:f3db0ec1 src:dodatky/b-symptomy.md:88 klas:A -->
 ### T-B-154 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7399,7 +7399,7 @@
 
 ---
 
-<!-- fc id:T-B-155 sha:04299502 src:dodatky/b-symptomy.md:87 klas:A -->
+<!-- fc id:T-B-155 sha:04299502 src:dodatky/b-symptomy.md:88 klas:A -->
 ### T-B-155 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7463,7 +7463,7 @@
 
 ---
 
-<!-- fc id:T-B-156 sha:d4620841 src:dodatky/b-symptomy.md:87 klas:A -->
+<!-- fc id:T-B-156 sha:d4620841 src:dodatky/b-symptomy.md:88 klas:A -->
 ### T-B-156 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7527,7 +7527,7 @@
 
 ---
 
-<!-- fc id:T-B-157 sha:971f6ca7 src:dodatky/b-symptomy.md:88 klas:A -->
+<!-- fc id:T-B-157 sha:971f6ca7 src:dodatky/b-symptomy.md:89 klas:A -->
 ### T-B-157 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7591,7 +7591,7 @@
 
 ---
 
-<!-- fc id:T-B-158 sha:61500638 src:dodatky/b-symptomy.md:88 klas:A -->
+<!-- fc id:T-B-158 sha:61500638 src:dodatky/b-symptomy.md:89 klas:A -->
 ### T-B-158 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7655,7 +7655,7 @@
 
 ---
 
-<!-- fc id:T-B-159 sha:c492b81b src:dodatky/b-symptomy.md:88 klas:A -->
+<!-- fc id:T-B-159 sha:c492b81b src:dodatky/b-symptomy.md:89 klas:A -->
 ### T-B-159 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7719,7 +7719,7 @@
 
 ---
 
-<!-- fc id:T-B-160 sha:60900874 src:dodatky/b-symptomy.md:89 klas:E -->
+<!-- fc id:T-B-160 sha:60900874 src:dodatky/b-symptomy.md:90 klas:E -->
 ### T-B-160 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7763,7 +7763,7 @@
 
 ---
 
-<!-- fc id:T-B-161 sha:1d957fca src:dodatky/b-symptomy.md:89 klas:E -->
+<!-- fc id:T-B-161 sha:1d957fca src:dodatky/b-symptomy.md:90 klas:E -->
 ### T-B-161 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7817,7 +7817,7 @@
 
 ---
 
-<!-- fc id:T-B-162 sha:b03c98f2 src:dodatky/b-symptomy.md:89 klas:E -->
+<!-- fc id:T-B-162 sha:b03c98f2 src:dodatky/b-symptomy.md:90 klas:E -->
 ### T-B-162 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7861,7 +7861,7 @@
 
 ---
 
-<!-- fc id:T-B-163 sha:6930c5e7 src:dodatky/b-symptomy.md:90 klas:C -->
+<!-- fc id:T-B-163 sha:6930c5e7 src:dodatky/b-symptomy.md:91 klas:C -->
 ### T-B-163 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7916,7 +7916,7 @@
 
 ---
 
-<!-- fc id:T-B-164 sha:fb2de766 src:dodatky/b-symptomy.md:90 klas:C -->
+<!-- fc id:T-B-164 sha:fb2de766 src:dodatky/b-symptomy.md:91 klas:C -->
 ### T-B-164 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -7972,7 +7972,7 @@
 
 ---
 
-<!-- fc id:T-B-165 sha:c436aab7 src:dodatky/b-symptomy.md:90 klas:E -->
+<!-- fc id:T-B-165 sha:c436aab7 src:dodatky/b-symptomy.md:91 klas:E -->
 ### T-B-165 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8016,7 +8016,7 @@
 
 ---
 
-<!-- fc id:T-B-166 sha:9e5a021d src:dodatky/b-symptomy.md:91 klas:E -->
+<!-- fc id:T-B-166 sha:9e5a021d src:dodatky/b-symptomy.md:92 klas:E -->
 ### T-B-166 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8060,7 +8060,7 @@
 
 ---
 
-<!-- fc id:T-B-167 sha:c55732e1 src:dodatky/b-symptomy.md:91 klas:E -->
+<!-- fc id:T-B-167 sha:c55732e1 src:dodatky/b-symptomy.md:92 klas:E -->
 ### T-B-167 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8104,7 +8104,7 @@
 
 ---
 
-<!-- fc id:T-B-168 sha:04d6097b src:dodatky/b-symptomy.md:91 klas:E -->
+<!-- fc id:T-B-168 sha:04d6097b src:dodatky/b-symptomy.md:92 klas:E -->
 ### T-B-168 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8148,7 +8148,7 @@
 
 ---
 
-<!-- fc id:T-B-169 sha:ad2804fa src:dodatky/b-symptomy.md:92 klas:E -->
+<!-- fc id:T-B-169 sha:ad2804fa src:dodatky/b-symptomy.md:93 klas:E -->
 ### T-B-169 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8192,7 +8192,7 @@
 
 ---
 
-<!-- fc id:T-B-170 sha:35d7d17e src:dodatky/b-symptomy.md:92 klas:E -->
+<!-- fc id:T-B-170 sha:35d7d17e src:dodatky/b-symptomy.md:93 klas:E -->
 ### T-B-170 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8236,7 +8236,7 @@
 
 ---
 
-<!-- fc id:T-B-171 sha:9ed2bd2c src:dodatky/b-symptomy.md:92 klas:E -->
+<!-- fc id:T-B-171 sha:9ed2bd2c src:dodatky/b-symptomy.md:93 klas:E -->
 ### T-B-171 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8280,7 +8280,7 @@
 
 ---
 
-<!-- fc id:T-B-172 sha:9711c4e4 src:dodatky/b-symptomy.md:93 klas:A -->
+<!-- fc id:T-B-172 sha:9711c4e4 src:dodatky/b-symptomy.md:94 klas:A -->
 ### T-B-172 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8338,7 +8338,7 @@
 
 ---
 
-<!-- fc id:T-B-173 sha:522f4b8b src:dodatky/b-symptomy.md:93 klas:E -->
+<!-- fc id:T-B-173 sha:522f4b8b src:dodatky/b-symptomy.md:94 klas:E -->
 ### T-B-173 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8382,7 +8382,7 @@
 
 ---
 
-<!-- fc id:T-B-174 sha:77a543d6 src:dodatky/b-symptomy.md:93 klas:E -->
+<!-- fc id:T-B-174 sha:77a543d6 src:dodatky/b-symptomy.md:94 klas:E -->
 ### T-B-174 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8426,7 +8426,7 @@
 
 ---
 
-<!-- fc id:T-B-175 sha:ce426656 src:dodatky/b-symptomy.md:94 klas:E -->
+<!-- fc id:T-B-175 sha:ce426656 src:dodatky/b-symptomy.md:95 klas:E -->
 ### T-B-175 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8470,7 +8470,7 @@
 
 ---
 
-<!-- fc id:T-B-176 sha:5c1a88db src:dodatky/b-symptomy.md:94 klas:E -->
+<!-- fc id:T-B-176 sha:5c1a88db src:dodatky/b-symptomy.md:95 klas:E -->
 ### T-B-176 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8514,7 +8514,7 @@
 
 ---
 
-<!-- fc id:T-B-177 sha:ebfecd76 src:dodatky/b-symptomy.md:94 klas:E -->
+<!-- fc id:T-B-177 sha:ebfecd76 src:dodatky/b-symptomy.md:95 klas:E -->
 ### T-B-177 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8558,7 +8558,7 @@
 
 ---
 
-<!-- fc id:T-B-178 sha:752f79c0 src:dodatky/b-symptomy.md:95 klas:A -->
+<!-- fc id:T-B-178 sha:752f79c0 src:dodatky/b-symptomy.md:96 klas:A -->
 ### T-B-178 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8610,7 +8610,7 @@
 
 ---
 
-<!-- fc id:T-B-179 sha:b9e08822 src:dodatky/b-symptomy.md:95 klas:E -->
+<!-- fc id:T-B-179 sha:b9e08822 src:dodatky/b-symptomy.md:96 klas:E -->
 ### T-B-179 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8654,7 +8654,7 @@
 
 ---
 
-<!-- fc id:T-B-180 sha:0c75375e src:dodatky/b-symptomy.md:95 klas:E -->
+<!-- fc id:T-B-180 sha:0c75375e src:dodatky/b-symptomy.md:96 klas:E -->
 ### T-B-180 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8698,7 +8698,7 @@
 
 ---
 
-<!-- fc id:T-B-181 sha:fe46043f src:dodatky/b-symptomy.md:96 klas:E -->
+<!-- fc id:T-B-181 sha:fe46043f src:dodatky/b-symptomy.md:97 klas:E -->
 ### T-B-181 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8742,7 +8742,7 @@
 
 ---
 
-<!-- fc id:T-B-182 sha:fb5ef80c src:dodatky/b-symptomy.md:96 klas:E -->
+<!-- fc id:T-B-182 sha:fb5ef80c src:dodatky/b-symptomy.md:97 klas:E -->
 ### T-B-182 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8786,7 +8786,7 @@
 
 ---
 
-<!-- fc id:T-B-183 sha:da576685 src:dodatky/b-symptomy.md:96 klas:E -->
+<!-- fc id:T-B-183 sha:da576685 src:dodatky/b-symptomy.md:97 klas:E -->
 ### T-B-183 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8830,7 +8830,7 @@
 
 ---
 
-<!-- fc id:T-B-184 sha:cdbf2b21 src:dodatky/b-symptomy.md:97 klas:A -->
+<!-- fc id:T-B-184 sha:cdbf2b21 src:dodatky/b-symptomy.md:98 klas:A -->
 ### T-B-184 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8880,7 +8880,7 @@
 
 ---
 
-<!-- fc id:T-B-185 sha:20942e97 src:dodatky/b-symptomy.md:97 klas:A -->
+<!-- fc id:T-B-185 sha:20942e97 src:dodatky/b-symptomy.md:98 klas:A -->
 ### T-B-185 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -8930,7 +8930,7 @@
 
 ---
 
-<!-- fc id:T-B-186 sha:1e765843 src:dodatky/b-symptomy.md:97 klas:A -->
+<!-- fc id:T-B-186 sha:1e765843 src:dodatky/b-symptomy.md:98 klas:A -->
 ### T-B-186 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9015,7 +9015,7 @@
 
 ---
 
-<!-- fc id:T-B-188 sha:b3c47737 src:dodatky/b-symptomy.md:103 klas:E -->
+<!-- fc id:T-B-188 sha:b3c47737 src:dodatky/b-symptomy.md:104 klas:E -->
 ### T-B-188 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9056,7 +9056,7 @@
 
 ---
 
-<!-- fc id:T-B-189 sha:3ee6716b src:dodatky/b-symptomy.md:103 klas:F -->
+<!-- fc id:T-B-189 sha:3ee6716b src:dodatky/b-symptomy.md:104 klas:F -->
 ### T-B-189 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9097,7 +9097,7 @@
 
 ---
 
-<!-- fc id:T-B-190 sha:56140876 src:dodatky/b-symptomy.md:103 klas:E -->
+<!-- fc id:T-B-190 sha:56140876 src:dodatky/b-symptomy.md:104 klas:E -->
 ### T-B-190 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9138,7 +9138,7 @@
 
 ---
 
-<!-- fc id:T-B-191 sha:2c7a819f src:dodatky/b-symptomy.md:104 klas:F -->
+<!-- fc id:T-B-191 sha:2c7a819f src:dodatky/b-symptomy.md:105 klas:F -->
 ### T-B-191 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9179,7 +9179,7 @@
 
 ---
 
-<!-- fc id:T-B-192 sha:ffa97f65 src:dodatky/b-symptomy.md:104 klas:E -->
+<!-- fc id:T-B-192 sha:ffa97f65 src:dodatky/b-symptomy.md:105 klas:E -->
 ### T-B-192 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9220,7 +9220,7 @@
 
 ---
 
-<!-- fc id:T-B-193 sha:6f861a1d src:dodatky/b-symptomy.md:104 klas:E -->
+<!-- fc id:T-B-193 sha:6f861a1d src:dodatky/b-symptomy.md:105 klas:E -->
 ### T-B-193 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9261,7 +9261,7 @@
 
 ---
 
-<!-- fc id:T-B-194 sha:1890e8b0 src:dodatky/b-symptomy.md:105 klas:E -->
+<!-- fc id:T-B-194 sha:1890e8b0 src:dodatky/b-symptomy.md:106 klas:E -->
 ### T-B-194 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9302,7 +9302,7 @@
 
 ---
 
-<!-- fc id:T-B-195 sha:6ff78fce src:dodatky/b-symptomy.md:105 klas:E -->
+<!-- fc id:T-B-195 sha:6ff78fce src:dodatky/b-symptomy.md:106 klas:E -->
 ### T-B-195 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9343,7 +9343,7 @@
 
 ---
 
-<!-- fc id:T-B-196 sha:153e04ac src:dodatky/b-symptomy.md:105 klas:E -->
+<!-- fc id:T-B-196 sha:153e04ac src:dodatky/b-symptomy.md:106 klas:E -->
 ### T-B-196 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9384,7 +9384,7 @@
 
 ---
 
-<!-- fc id:T-B-197 sha:125d73f0 src:dodatky/b-symptomy.md:106 klas:F -->
+<!-- fc id:T-B-197 sha:125d73f0 src:dodatky/b-symptomy.md:107 klas:F -->
 ### T-B-197 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9425,7 +9425,7 @@
 
 ---
 
-<!-- fc id:T-B-198 sha:7e376d4c src:dodatky/b-symptomy.md:106 klas:F -->
+<!-- fc id:T-B-198 sha:7e376d4c src:dodatky/b-symptomy.md:107 klas:F -->
 ### T-B-198 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9466,7 +9466,7 @@
 
 ---
 
-<!-- fc id:T-B-199 sha:39a01c38 src:dodatky/b-symptomy.md:106 klas:F -->
+<!-- fc id:T-B-199 sha:39a01c38 src:dodatky/b-symptomy.md:107 klas:F -->
 ### T-B-199 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9507,7 +9507,7 @@
 
 ---
 
-<!-- fc id:T-B-200 sha:ee2e0a0d src:dodatky/b-symptomy.md:107 klas:A -->
+<!-- fc id:T-B-200 sha:ee2e0a0d src:dodatky/b-symptomy.md:108 klas:A -->
 ### T-B-200 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9583,7 +9583,7 @@
 
 ---
 
-<!-- fc id:T-B-201 sha:1f885b10 src:dodatky/b-symptomy.md:107 klas:E -->
+<!-- fc id:T-B-201 sha:1f885b10 src:dodatky/b-symptomy.md:108 klas:E -->
 ### T-B-201 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9624,7 +9624,7 @@
 
 ---
 
-<!-- fc id:T-B-202 sha:0e6d6dc2 src:dodatky/b-symptomy.md:107 klas:E -->
+<!-- fc id:T-B-202 sha:0e6d6dc2 src:dodatky/b-symptomy.md:108 klas:E -->
 ### T-B-202 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9665,7 +9665,7 @@
 
 ---
 
-<!-- fc id:T-B-203 sha:bf20564d src:dodatky/b-symptomy.md:108 klas:E -->
+<!-- fc id:T-B-203 sha:bf20564d src:dodatky/b-symptomy.md:109 klas:E -->
 ### T-B-203 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9706,7 +9706,7 @@
 
 ---
 
-<!-- fc id:T-B-204 sha:844e5b3c src:dodatky/b-symptomy.md:108 klas:E -->
+<!-- fc id:T-B-204 sha:844e5b3c src:dodatky/b-symptomy.md:109 klas:E -->
 ### T-B-204 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9747,7 +9747,7 @@
 
 ---
 
-<!-- fc id:T-B-205 sha:e56a94c5 src:dodatky/b-symptomy.md:108 klas:E -->
+<!-- fc id:T-B-205 sha:e56a94c5 src:dodatky/b-symptomy.md:109 klas:E -->
 ### T-B-205 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9788,7 +9788,7 @@
 
 ---
 
-<!-- fc id:T-B-206 sha:62d52d5f src:dodatky/b-symptomy.md:109 klas:F -->
+<!-- fc id:T-B-206 sha:62d52d5f src:dodatky/b-symptomy.md:110 klas:F -->
 ### T-B-206 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9829,7 +9829,7 @@
 
 ---
 
-<!-- fc id:T-B-207 sha:f5a18158 src:dodatky/b-symptomy.md:109 klas:F -->
+<!-- fc id:T-B-207 sha:f5a18158 src:dodatky/b-symptomy.md:110 klas:F -->
 ### T-B-207 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9870,7 +9870,7 @@
 
 ---
 
-<!-- fc id:T-B-208 sha:3ea91924 src:dodatky/b-symptomy.md:109 klas:F -->
+<!-- fc id:T-B-208 sha:3ea91924 src:dodatky/b-symptomy.md:110 klas:F -->
 ### T-B-208 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9911,7 +9911,7 @@
 
 ---
 
-<!-- fc id:T-B-209 sha:bcba5e79 src:dodatky/b-symptomy.md:110 klas:F -->
+<!-- fc id:T-B-209 sha:bcba5e79 src:dodatky/b-symptomy.md:111 klas:F -->
 ### T-B-209 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9952,7 +9952,7 @@
 
 ---
 
-<!-- fc id:T-B-210 sha:49025361 src:dodatky/b-symptomy.md:110 klas:F -->
+<!-- fc id:T-B-210 sha:49025361 src:dodatky/b-symptomy.md:111 klas:F -->
 ### T-B-210 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -9993,7 +9993,7 @@
 
 ---
 
-<!-- fc id:T-B-211 sha:6a99030f src:dodatky/b-symptomy.md:110 klas:F -->
+<!-- fc id:T-B-211 sha:6a99030f src:dodatky/b-symptomy.md:111 klas:F -->
 ### T-B-211 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10034,7 +10034,7 @@
 
 ---
 
-<!-- fc id:T-B-212 sha:1e8a7978 src:dodatky/b-symptomy.md:111 klas:F -->
+<!-- fc id:T-B-212 sha:1e8a7978 src:dodatky/b-symptomy.md:112 klas:F -->
 ### T-B-212 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10075,7 +10075,7 @@
 
 ---
 
-<!-- fc id:T-B-213 sha:37ed6eba src:dodatky/b-symptomy.md:111 klas:F -->
+<!-- fc id:T-B-213 sha:37ed6eba src:dodatky/b-symptomy.md:112 klas:F -->
 ### T-B-213 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10116,7 +10116,7 @@
 
 ---
 
-<!-- fc id:T-B-214 sha:cd07deb3 src:dodatky/b-symptomy.md:111 klas:F -->
+<!-- fc id:T-B-214 sha:cd07deb3 src:dodatky/b-symptomy.md:112 klas:F -->
 ### T-B-214 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10157,7 +10157,7 @@
 
 ---
 
-<!-- fc id:T-B-215 sha:8ac015f9 src:dodatky/b-symptomy.md:112 klas:S -->
+<!-- fc id:T-B-215 sha:8ac015f9 src:dodatky/b-symptomy.md:113 klas:S -->
 ### T-B-215 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10220,7 +10220,7 @@
 
 ---
 
-<!-- fc id:T-B-216 sha:98e7ec7d src:dodatky/b-symptomy.md:112 klas:S -->
+<!-- fc id:T-B-216 sha:98e7ec7d src:dodatky/b-symptomy.md:113 klas:S -->
 ### T-B-216 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10283,7 +10283,7 @@
 
 ---
 
-<!-- fc id:T-B-217 sha:ad3c5a79 src:dodatky/b-symptomy.md:112 klas:S -->
+<!-- fc id:T-B-217 sha:ad3c5a79 src:dodatky/b-symptomy.md:113 klas:S -->
 ### T-B-217 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10346,7 +10346,7 @@
 
 ---
 
-<!-- fc id:T-B-218 sha:e667e32e src:dodatky/b-symptomy.md:113 klas:A -->
+<!-- fc id:T-B-218 sha:e667e32e src:dodatky/b-symptomy.md:114 klas:A -->
 ### T-B-218 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10393,7 +10393,7 @@
 
 ---
 
-<!-- fc id:T-B-219 sha:a488d47d src:dodatky/b-symptomy.md:113 klas:F -->
+<!-- fc id:T-B-219 sha:a488d47d src:dodatky/b-symptomy.md:114 klas:F -->
 ### T-B-219 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10434,7 +10434,7 @@
 
 ---
 
-<!-- fc id:T-B-220 sha:10843ab0 src:dodatky/b-symptomy.md:113 klas:F -->
+<!-- fc id:T-B-220 sha:10843ab0 src:dodatky/b-symptomy.md:114 klas:F -->
 ### T-B-220 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10475,7 +10475,7 @@
 
 ---
 
-<!-- fc id:T-B-221 sha:384e9fbc src:dodatky/b-symptomy.md:114 klas:F -->
+<!-- fc id:T-B-221 sha:384e9fbc src:dodatky/b-symptomy.md:115 klas:F -->
 ### T-B-221 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10516,7 +10516,7 @@
 
 ---
 
-<!-- fc id:T-B-222 sha:06dc0149 src:dodatky/b-symptomy.md:114 klas:F -->
+<!-- fc id:T-B-222 sha:06dc0149 src:dodatky/b-symptomy.md:115 klas:F -->
 ### T-B-222 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10557,7 +10557,7 @@
 
 ---
 
-<!-- fc id:T-B-223 sha:e89cf009 src:dodatky/b-symptomy.md:114 klas:F -->
+<!-- fc id:T-B-223 sha:e89cf009 src:dodatky/b-symptomy.md:115 klas:F -->
 ### T-B-223 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10633,7 +10633,7 @@
 
 ---
 
-<!-- fc id:T-B-225 sha:56b88433 src:dodatky/b-symptomy.md:120 klas:E -->
+<!-- fc id:T-B-225 sha:56b88433 src:dodatky/b-symptomy.md:121 klas:E -->
 ### T-B-225 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10670,7 +10670,7 @@
 
 ---
 
-<!-- fc id:T-B-226 sha:e3d6d102 src:dodatky/b-symptomy.md:120 klas:E -->
+<!-- fc id:T-B-226 sha:e3d6d102 src:dodatky/b-symptomy.md:121 klas:E -->
 ### T-B-226 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10707,7 +10707,7 @@
 
 ---
 
-<!-- fc id:T-B-227 sha:d8a49a7b src:dodatky/b-symptomy.md:120 klas:E -->
+<!-- fc id:T-B-227 sha:d8a49a7b src:dodatky/b-symptomy.md:121 klas:E -->
 ### T-B-227 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10744,7 +10744,7 @@
 
 ---
 
-<!-- fc id:T-B-228 sha:962ab34d src:dodatky/b-symptomy.md:121 klas:E -->
+<!-- fc id:T-B-228 sha:962ab34d src:dodatky/b-symptomy.md:122 klas:E -->
 ### T-B-228 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10781,7 +10781,7 @@
 
 ---
 
-<!-- fc id:T-B-229 sha:4aa7bc42 src:dodatky/b-symptomy.md:121 klas:E -->
+<!-- fc id:T-B-229 sha:4aa7bc42 src:dodatky/b-symptomy.md:122 klas:E -->
 ### T-B-229 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10818,7 +10818,7 @@
 
 ---
 
-<!-- fc id:T-B-230 sha:345141ce src:dodatky/b-symptomy.md:121 klas:E -->
+<!-- fc id:T-B-230 sha:345141ce src:dodatky/b-symptomy.md:122 klas:E -->
 ### T-B-230 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10855,7 +10855,7 @@
 
 ---
 
-<!-- fc id:T-B-231 sha:4bb18d8f src:dodatky/b-symptomy.md:122 klas:F -->
+<!-- fc id:T-B-231 sha:4bb18d8f src:dodatky/b-symptomy.md:123 klas:F -->
 ### T-B-231 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10892,7 +10892,7 @@
 
 ---
 
-<!-- fc id:T-B-232 sha:df6cd31c src:dodatky/b-symptomy.md:122 klas:F -->
+<!-- fc id:T-B-232 sha:df6cd31c src:dodatky/b-symptomy.md:123 klas:F -->
 ### T-B-232 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10929,7 +10929,7 @@
 
 ---
 
-<!-- fc id:T-B-233 sha:161267f9 src:dodatky/b-symptomy.md:122 klas:F -->
+<!-- fc id:T-B-233 sha:161267f9 src:dodatky/b-symptomy.md:123 klas:F -->
 ### T-B-233 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -10966,7 +10966,7 @@
 
 ---
 
-<!-- fc id:T-B-234 sha:4264d262 src:dodatky/b-symptomy.md:123 klas:A -->
+<!-- fc id:T-B-234 sha:4264d262 src:dodatky/b-symptomy.md:124 klas:A -->
 ### T-B-234 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11033,7 +11033,7 @@
 
 ---
 
-<!-- fc id:T-B-235 sha:962e23f9 src:dodatky/b-symptomy.md:123 klas:A -->
+<!-- fc id:T-B-235 sha:962e23f9 src:dodatky/b-symptomy.md:124 klas:A -->
 ### T-B-235 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11100,7 +11100,7 @@
 
 ---
 
-<!-- fc id:T-B-236 sha:65aff682 src:dodatky/b-symptomy.md:123 klas:A -->
+<!-- fc id:T-B-236 sha:65aff682 src:dodatky/b-symptomy.md:124 klas:A -->
 ### T-B-236 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11167,7 +11167,7 @@
 
 ---
 
-<!-- fc id:T-B-237 sha:6d0abcdc src:dodatky/b-symptomy.md:124 klas:E -->
+<!-- fc id:T-B-237 sha:6d0abcdc src:dodatky/b-symptomy.md:125 klas:E -->
 ### T-B-237 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11204,7 +11204,7 @@
 
 ---
 
-<!-- fc id:T-B-238 sha:200b2107 src:dodatky/b-symptomy.md:124 klas:A -->
+<!-- fc id:T-B-238 sha:200b2107 src:dodatky/b-symptomy.md:125 klas:A -->
 ### T-B-238 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11251,7 +11251,7 @@
 
 ---
 
-<!-- fc id:T-B-239 sha:13104249 src:dodatky/b-symptomy.md:124 klas:E -->
+<!-- fc id:T-B-239 sha:13104249 src:dodatky/b-symptomy.md:125 klas:E -->
 ### T-B-239 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11288,7 +11288,7 @@
 
 ---
 
-<!-- fc id:T-B-240 sha:b9f68376 src:dodatky/b-symptomy.md:125 klas:E -->
+<!-- fc id:T-B-240 sha:b9f68376 src:dodatky/b-symptomy.md:126 klas:E -->
 ### T-B-240 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11325,7 +11325,7 @@
 
 ---
 
-<!-- fc id:T-B-241 sha:fc0e937d src:dodatky/b-symptomy.md:125 klas:E -->
+<!-- fc id:T-B-241 sha:fc0e937d src:dodatky/b-symptomy.md:126 klas:E -->
 ### T-B-241 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11362,7 +11362,7 @@
 
 ---
 
-<!-- fc id:T-B-242 sha:54b06376 src:dodatky/b-symptomy.md:125 klas:E -->
+<!-- fc id:T-B-242 sha:54b06376 src:dodatky/b-symptomy.md:126 klas:E -->
 ### T-B-242 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11399,7 +11399,7 @@
 
 ---
 
-<!-- fc id:T-B-243 sha:735bca0f src:dodatky/b-symptomy.md:126 klas:E -->
+<!-- fc id:T-B-243 sha:735bca0f src:dodatky/b-symptomy.md:127 klas:E -->
 ### T-B-243 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11436,7 +11436,7 @@
 
 ---
 
-<!-- fc id:T-B-244 sha:2cc14ea6 src:dodatky/b-symptomy.md:126 klas:E -->
+<!-- fc id:T-B-244 sha:2cc14ea6 src:dodatky/b-symptomy.md:127 klas:E -->
 ### T-B-244 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11473,7 +11473,7 @@
 
 ---
 
-<!-- fc id:T-B-245 sha:0e15746b src:dodatky/b-symptomy.md:126 klas:E -->
+<!-- fc id:T-B-245 sha:0e15746b src:dodatky/b-symptomy.md:127 klas:E -->
 ### T-B-245 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11510,7 +11510,7 @@
 
 ---
 
-<!-- fc id:T-B-246 sha:5464bc24 src:dodatky/b-symptomy.md:127 klas:E -->
+<!-- fc id:T-B-246 sha:5464bc24 src:dodatky/b-symptomy.md:128 klas:E -->
 ### T-B-246 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11547,7 +11547,7 @@
 
 ---
 
-<!-- fc id:T-B-247 sha:051322d4 src:dodatky/b-symptomy.md:127 klas:E -->
+<!-- fc id:T-B-247 sha:051322d4 src:dodatky/b-symptomy.md:128 klas:E -->
 ### T-B-247 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11584,7 +11584,7 @@
 
 ---
 
-<!-- fc id:T-B-248 sha:9416c78b src:dodatky/b-symptomy.md:127 klas:E -->
+<!-- fc id:T-B-248 sha:9416c78b src:dodatky/b-symptomy.md:128 klas:E -->
 ### T-B-248 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11656,7 +11656,7 @@
 
 ---
 
-<!-- fc id:T-B-250 sha:668b2f3a src:dodatky/b-symptomy.md:133 klas:E -->
+<!-- fc id:T-B-250 sha:668b2f3a src:dodatky/b-symptomy.md:134 klas:E -->
 ### T-B-250 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11690,7 +11690,7 @@
 
 ---
 
-<!-- fc id:T-B-251 sha:484b056e src:dodatky/b-symptomy.md:133 klas:E -->
+<!-- fc id:T-B-251 sha:484b056e src:dodatky/b-symptomy.md:134 klas:E -->
 ### T-B-251 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11724,7 +11724,7 @@
 
 ---
 
-<!-- fc id:T-B-252 sha:1dbefcae src:dodatky/b-symptomy.md:133 klas:E -->
+<!-- fc id:T-B-252 sha:1dbefcae src:dodatky/b-symptomy.md:134 klas:E -->
 ### T-B-252 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11758,7 +11758,7 @@
 
 ---
 
-<!-- fc id:T-B-253 sha:d5dba67b src:dodatky/b-symptomy.md:134 klas:E -->
+<!-- fc id:T-B-253 sha:d5dba67b src:dodatky/b-symptomy.md:135 klas:E -->
 ### T-B-253 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11792,7 +11792,7 @@
 
 ---
 
-<!-- fc id:T-B-254 sha:ee489cf0 src:dodatky/b-symptomy.md:134 klas:E -->
+<!-- fc id:T-B-254 sha:ee489cf0 src:dodatky/b-symptomy.md:135 klas:E -->
 ### T-B-254 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11826,7 +11826,7 @@
 
 ---
 
-<!-- fc id:T-B-255 sha:b987e276 src:dodatky/b-symptomy.md:134 klas:E -->
+<!-- fc id:T-B-255 sha:b987e276 src:dodatky/b-symptomy.md:135 klas:E -->
 ### T-B-255 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11860,7 +11860,7 @@
 
 ---
 
-<!-- fc id:T-B-256 sha:806f210b src:dodatky/b-symptomy.md:135 klas:E -->
+<!-- fc id:T-B-256 sha:806f210b src:dodatky/b-symptomy.md:136 klas:E -->
 ### T-B-256 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11894,7 +11894,7 @@
 
 ---
 
-<!-- fc id:T-B-257 sha:76b833a9 src:dodatky/b-symptomy.md:135 klas:E -->
+<!-- fc id:T-B-257 sha:76b833a9 src:dodatky/b-symptomy.md:136 klas:E -->
 ### T-B-257 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11928,7 +11928,7 @@
 
 ---
 
-<!-- fc id:T-B-258 sha:53c80222 src:dodatky/b-symptomy.md:135 klas:E -->
+<!-- fc id:T-B-258 sha:53c80222 src:dodatky/b-symptomy.md:136 klas:E -->
 ### T-B-258 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11962,7 +11962,7 @@
 
 ---
 
-<!-- fc id:T-B-259 sha:6889ccbc src:dodatky/b-symptomy.md:136 klas:E -->
+<!-- fc id:T-B-259 sha:6889ccbc src:dodatky/b-symptomy.md:137 klas:E -->
 ### T-B-259 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -11996,7 +11996,7 @@
 
 ---
 
-<!-- fc id:T-B-260 sha:a99802d5 src:dodatky/b-symptomy.md:136 klas:E -->
+<!-- fc id:T-B-260 sha:a99802d5 src:dodatky/b-symptomy.md:137 klas:E -->
 ### T-B-260 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -12030,7 +12030,7 @@
 
 ---
 
-<!-- fc id:T-B-261 sha:4b549068 src:dodatky/b-symptomy.md:136 klas:E -->
+<!-- fc id:T-B-261 sha:4b549068 src:dodatky/b-symptomy.md:137 klas:E -->
 ### T-B-261 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -12064,7 +12064,7 @@
 
 ---
 
-<!-- fc id:T-B-262 sha:1116848e src:dodatky/b-symptomy.md:137 klas:S -->
+<!-- fc id:T-B-262 sha:1116848e src:dodatky/b-symptomy.md:138 klas:S -->
 ### T-B-262 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -12120,7 +12120,7 @@
 
 ---
 
-<!-- fc id:T-B-263 sha:0b4670aa src:dodatky/b-symptomy.md:137 klas:S -->
+<!-- fc id:T-B-263 sha:0b4670aa src:dodatky/b-symptomy.md:138 klas:S -->
 ### T-B-263 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**
@@ -12176,7 +12176,7 @@
 
 ---
 
-<!-- fc id:T-B-264 sha:8b297e2e src:dodatky/b-symptomy.md:137 klas:S -->
+<!-- fc id:T-B-264 sha:8b297e2e src:dodatky/b-symptomy.md:138 klas:S -->
 ### T-B-264 · komirka · `dodatky/b-symptomy.md`
 
 **Твердження, коротко**

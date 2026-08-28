@@ -146,7 +146,7 @@
 
 ---
 
-<!-- fc id:T-63-006 sha:ad923067 src:manual/63-proj-mist.md:18 klas:F -->
+<!-- fc id:T-63-006 sha:ad923067 src:manual/63-proj-mist.md:19 klas:F -->
 ### T-63-006 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -180,7 +180,7 @@
 
 ---
 
-<!-- fc id:T-63-007 sha:a82ae55f src:manual/63-proj-mist.md:18 klas:E -->
+<!-- fc id:T-63-007 sha:a82ae55f src:manual/63-proj-mist.md:19 klas:E -->
 ### T-63-007 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-63-008 sha:5e51e79b src:manual/63-proj-mist.md:19 klas:A -->
+<!-- fc id:T-63-008 sha:5e51e79b src:manual/63-proj-mist.md:20 klas:A -->
 ### T-63-008 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -270,7 +270,7 @@
 
 ---
 
-<!-- fc id:T-63-009 sha:ffcf0fd3 src:manual/63-proj-mist.md:19 klas:F -->
+<!-- fc id:T-63-009 sha:ffcf0fd3 src:manual/63-proj-mist.md:20 klas:F -->
 ### T-63-009 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-63-010 sha:d770730c src:manual/63-proj-mist.md:20 klas:F -->
+<!-- fc id:T-63-010 sha:d770730c src:manual/63-proj-mist.md:21 klas:F -->
 ### T-63-010 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -338,7 +338,7 @@
 
 ---
 
-<!-- fc id:T-63-011 sha:8eb44ead src:manual/63-proj-mist.md:20 klas:F -->
+<!-- fc id:T-63-011 sha:8eb44ead src:manual/63-proj-mist.md:21 klas:F -->
 ### T-63-011 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -372,7 +372,7 @@
 
 ---
 
-<!-- fc id:T-63-012 sha:b5bf5fd8 src:manual/63-proj-mist.md:21 klas:F -->
+<!-- fc id:T-63-012 sha:b5bf5fd8 src:manual/63-proj-mist.md:22 klas:F -->
 ### T-63-012 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**
@@ -406,7 +406,7 @@
 
 ---
 
-<!-- fc id:T-63-013 sha:2c46ea77 src:manual/63-proj-mist.md:21 klas:F -->
+<!-- fc id:T-63-013 sha:2c46ea77 src:manual/63-proj-mist.md:22 klas:F -->
 ### T-63-013 · komirka · `manual/63-proj-mist.md`
 
 **Твердження, коротко**

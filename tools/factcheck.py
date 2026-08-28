@@ -219,7 +219,26 @@ def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
     Таблиці на дві колонки лишаються цілими: там рядок і є твердженням
     («симптом → причина»), і різати його безглуздо.
     """
-    korysni = [r for r in ryadky if not re.match(r"^\|[\s:|-]+\|$", r.strip())]
+    # Пари **(справжній номер рядка, рядок)**, а не самі рядки.
+    #
+    # Тут була вада, невидима всім нашим перевіркам. `korysni` відкидає
+    # роздільник `|---|---|`, а далі `enumerate(korysni[1:], 1)` давав
+    # індекс у **відфільтрованому** переліку, який додавався до `vid` —
+    # зміщення в **невідфільтрованому**. Кожна комірка після роздільника
+    # з'їжджала на стільки рядків, скільки їх відкинули вище.
+    #
+    # Наслідок гірший за зсув адреси: `dослівно_і_контекст` бере рядок
+    # книги **за цим номером**, тож у блоці «Дослівно з книги» стояв
+    # сусідній рядок — а часто сам роздільник.
+    #
+    # Виміряно прямим питанням «чи стоїть у книзі за записаним номером
+    # той рядок, що показано в картці»: **1360 комірок із 1383** —
+    # ні. Ані `layer1`, ані `stale` цього не бачили: перший звіряє з
+    # **вікном** навколо номера, другий — за хешем тексту. Обидва
+    # відповідали на своє питання правильно.
+    pary = [(i, r) for i, r in enumerate(ryadky)
+            if not re.match(r"^\|[\s:|-]+\|$", r.strip())]
+    korysni = [r for _i, r in pary]
     if not korysni:
         return []
 
@@ -232,8 +251,8 @@ def rozbyty_tablycyu(ryadky: list[str], vid: int) -> list[tuple[str, str, int]]:
                 if not re.match(r"^\|[\s:|-]+\|$", r.strip())]
 
     out: list[tuple[str, str, int]] = []
-    out.append(("tablycya-shapka", korysni[0].strip(), vid))
-    for i, r in enumerate(korysni[1:], 1):
+    out.append(("tablycya-shapka", korysni[0].strip(), vid + pary[0][0]))
+    for i, r in pary[1:]:
         k = komirky(r)
         pidmet = k[0] if k else ""
         for j, v in enumerate(k[1:], 1):

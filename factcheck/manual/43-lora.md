@@ -148,7 +148,7 @@
 
 ---
 
-<!-- fc id:T-43-007 sha:79881a2b src:manual/43-lora.md:17 klas:F -->
+<!-- fc id:T-43-007 sha:79881a2b src:manual/43-lora.md:18 klas:F -->
 ### T-43-007 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -183,7 +183,7 @@
 
 ---
 
-<!-- fc id:T-43-008 sha:cdbc94ab src:manual/43-lora.md:17 klas:F -->
+<!-- fc id:T-43-008 sha:cdbc94ab src:manual/43-lora.md:18 klas:F -->
 ### T-43-008 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -218,7 +218,7 @@
 
 ---
 
-<!-- fc id:T-43-009 sha:0d181f66 src:manual/43-lora.md:18 klas:F -->
+<!-- fc id:T-43-009 sha:0d181f66 src:manual/43-lora.md:19 klas:F -->
 ### T-43-009 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-43-010 sha:b0cab716 src:manual/43-lora.md:18 klas:F -->
+<!-- fc id:T-43-010 sha:b0cab716 src:manual/43-lora.md:19 klas:F -->
 ### T-43-010 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -288,7 +288,7 @@
 
 ---
 
-<!-- fc id:T-43-011 sha:d9edab88 src:manual/43-lora.md:19 klas:F -->
+<!-- fc id:T-43-011 sha:d9edab88 src:manual/43-lora.md:20 klas:F -->
 ### T-43-011 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -323,7 +323,7 @@
 
 ---
 
-<!-- fc id:T-43-012 sha:ca6aa54f src:manual/43-lora.md:19 klas:F -->
+<!-- fc id:T-43-012 sha:ca6aa54f src:manual/43-lora.md:20 klas:F -->
 ### T-43-012 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -358,7 +358,7 @@
 
 ---
 
-<!-- fc id:T-43-013 sha:94197bc0 src:manual/43-lora.md:20 klas:F -->
+<!-- fc id:T-43-013 sha:94197bc0 src:manual/43-lora.md:21 klas:F -->
 ### T-43-013 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -393,7 +393,7 @@
 
 ---
 
-<!-- fc id:T-43-014 sha:f4920ccc src:manual/43-lora.md:20 klas:F -->
+<!-- fc id:T-43-014 sha:f4920ccc src:manual/43-lora.md:21 klas:F -->
 ### T-43-014 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -428,7 +428,7 @@
 
 ---
 
-<!-- fc id:T-43-015 sha:0c97b0ed src:manual/43-lora.md:21 klas:F -->
+<!-- fc id:T-43-015 sha:0c97b0ed src:manual/43-lora.md:22 klas:F -->
 ### T-43-015 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**
@@ -463,7 +463,7 @@
 
 ---
 
-<!-- fc id:T-43-016 sha:dc995929 src:manual/43-lora.md:21 klas:F -->
+<!-- fc id:T-43-016 sha:dc995929 src:manual/43-lora.md:22 klas:F -->
 ### T-43-016 · komirka · `manual/43-lora.md`
 
 **Твердження, коротко**

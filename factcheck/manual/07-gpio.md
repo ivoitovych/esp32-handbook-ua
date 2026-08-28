@@ -247,7 +247,7 @@
 
 ---
 
-<!-- fc id:T-07-010 sha:1f80fd22 src:manual/07-gpio.md:21 klas:A -->
+<!-- fc id:T-07-010 sha:1f80fd22 src:manual/07-gpio.md:22 klas:A -->
 ### T-07-010 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -304,7 +304,7 @@
 
 ---
 
-<!-- fc id:T-07-011 sha:40fa9dc7 src:manual/07-gpio.md:21 klas:A -->
+<!-- fc id:T-07-011 sha:40fa9dc7 src:manual/07-gpio.md:22 klas:A -->
 ### T-07-011 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -361,7 +361,7 @@
 
 ---
 
-<!-- fc id:T-07-012 sha:ce485f20 src:manual/07-gpio.md:22 klas:A -->
+<!-- fc id:T-07-012 sha:ce485f20 src:manual/07-gpio.md:23 klas:A -->
 ### T-07-012 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -402,7 +402,7 @@
 
 ---
 
-<!-- fc id:T-07-013 sha:e1c33c77 src:manual/07-gpio.md:22 klas:A -->
+<!-- fc id:T-07-013 sha:e1c33c77 src:manual/07-gpio.md:23 klas:A -->
 ### T-07-013 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -459,7 +459,7 @@
 
 ---
 
-<!-- fc id:T-07-014 sha:4c5651fc src:manual/07-gpio.md:23 klas:A -->
+<!-- fc id:T-07-014 sha:4c5651fc src:manual/07-gpio.md:24 klas:A -->
 ### T-07-014 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-07-015 sha:526ab509 src:manual/07-gpio.md:23 klas:A -->
+<!-- fc id:T-07-015 sha:526ab509 src:manual/07-gpio.md:24 klas:A -->
 ### T-07-015 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -573,7 +573,7 @@
 
 ---
 
-<!-- fc id:T-07-016 sha:fa0a392e src:manual/07-gpio.md:24 klas:A -->
+<!-- fc id:T-07-016 sha:fa0a392e src:manual/07-gpio.md:25 klas:A -->
 ### T-07-016 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -619,7 +619,7 @@
 
 ---
 
-<!-- fc id:T-07-017 sha:ba3c0447 src:manual/07-gpio.md:24 klas:A -->
+<!-- fc id:T-07-017 sha:ba3c0447 src:manual/07-gpio.md:25 klas:A -->
 ### T-07-017 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -676,7 +676,7 @@
 
 ---
 
-<!-- fc id:T-07-018 sha:a47a5658 src:manual/07-gpio.md:25 klas:A -->
+<!-- fc id:T-07-018 sha:a47a5658 src:manual/07-gpio.md:26 klas:A -->
 ### T-07-018 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -718,7 +718,7 @@
 
 ---
 
-<!-- fc id:T-07-019 sha:1c9c861b src:manual/07-gpio.md:25 klas:A -->
+<!-- fc id:T-07-019 sha:1c9c861b src:manual/07-gpio.md:26 klas:A -->
 ### T-07-019 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1617,7 +1617,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-046 sha:a23fd859 src:manual/07-gpio.md:85 klas:A -->
+<!-- fc id:T-07-046 sha:a23fd859 src:manual/07-gpio.md:86 klas:A -->
 ### T-07-046 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1666,7 +1666,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-047 sha:3e79ba6b src:manual/07-gpio.md:85 klas:A -->
+<!-- fc id:T-07-047 sha:3e79ba6b src:manual/07-gpio.md:86 klas:A -->
 ### T-07-047 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1722,7 +1722,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-048 sha:4e3150be src:manual/07-gpio.md:86 klas:A -->
+<!-- fc id:T-07-048 sha:4e3150be src:manual/07-gpio.md:87 klas:A -->
 ### T-07-048 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1771,7 +1771,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-049 sha:2d751064 src:manual/07-gpio.md:86 klas:A -->
+<!-- fc id:T-07-049 sha:2d751064 src:manual/07-gpio.md:87 klas:A -->
 ### T-07-049 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1818,7 +1818,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-050 sha:197dffaa src:manual/07-gpio.md:87 klas:A -->
+<!-- fc id:T-07-050 sha:197dffaa src:manual/07-gpio.md:88 klas:A -->
 ### T-07-050 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -1867,7 +1867,7 @@ classic це може означати просто резистор або св
 
 ---
 
-<!-- fc id:T-07-051 sha:2e5908b5 src:manual/07-gpio.md:87 klas:A -->
+<!-- fc id:T-07-051 sha:2e5908b5 src:manual/07-gpio.md:88 klas:A -->
 ### T-07-051 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3447,7 +3447,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-097 sha:2d6128fe src:manual/07-gpio.md:206 klas:A -->
+<!-- fc id:T-07-097 sha:2d6128fe src:manual/07-gpio.md:207 klas:A -->
 ### T-07-097 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3506,7 +3506,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-098 sha:7d1d509e src:manual/07-gpio.md:206 klas:A -->
+<!-- fc id:T-07-098 sha:7d1d509e src:manual/07-gpio.md:207 klas:A -->
 ### T-07-098 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3565,7 +3565,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-099 sha:7afccfc4 src:manual/07-gpio.md:207 klas:A -->
+<!-- fc id:T-07-099 sha:7afccfc4 src:manual/07-gpio.md:208 klas:A -->
 ### T-07-099 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**
@@ -3624,7 +3624,7 @@ Wi-Fi і при зайнятому ADC2 повертає **помилку**, а 
 
 ---
 
-<!-- fc id:T-07-100 sha:69208de8 src:manual/07-gpio.md:207 klas:A -->
+<!-- fc id:T-07-100 sha:69208de8 src:manual/07-gpio.md:208 klas:A -->
 ### T-07-100 · komirka · `manual/07-gpio.md`
 
 **Твердження, коротко**

@@ -426,7 +426,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-015 sha:3f7f05f2 src:manual/26-zboyi.md:40 klas:A -->
+<!-- fc id:T-26-015 sha:3f7f05f2 src:manual/26-zboyi.md:41 klas:A -->
 ### T-26-015 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -491,7 +491,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-016 sha:e1369196 src:manual/26-zboyi.md:40 klas:A -->
+<!-- fc id:T-26-016 sha:e1369196 src:manual/26-zboyi.md:41 klas:A -->
 ### T-26-016 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -556,7 +556,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-017 sha:8bc4f39c src:manual/26-zboyi.md:41 klas:A -->
+<!-- fc id:T-26-017 sha:8bc4f39c src:manual/26-zboyi.md:42 klas:A -->
 ### T-26-017 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -621,7 +621,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-018 sha:28cc86f2 src:manual/26-zboyi.md:41 klas:A -->
+<!-- fc id:T-26-018 sha:28cc86f2 src:manual/26-zboyi.md:42 klas:A -->
 ### T-26-018 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -686,7 +686,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-019 sha:65e5b66a src:manual/26-zboyi.md:42 klas:A -->
+<!-- fc id:T-26-019 sha:65e5b66a src:manual/26-zboyi.md:43 klas:A -->
 ### T-26-019 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -751,7 +751,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-020 sha:89d4b0ed src:manual/26-zboyi.md:42 klas:A -->
+<!-- fc id:T-26-020 sha:89d4b0ed src:manual/26-zboyi.md:43 klas:A -->
 ### T-26-020 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -816,7 +816,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-021 sha:0e5b84a2 src:manual/26-zboyi.md:43 klas:A -->
+<!-- fc id:T-26-021 sha:0e5b84a2 src:manual/26-zboyi.md:44 klas:A -->
 ### T-26-021 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -881,7 +881,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-022 sha:ba217f40 src:manual/26-zboyi.md:43 klas:A -->
+<!-- fc id:T-26-022 sha:ba217f40 src:manual/26-zboyi.md:44 klas:A -->
 ### T-26-022 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -946,7 +946,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-023 sha:c4d149ff src:manual/26-zboyi.md:44 klas:A -->
+<!-- fc id:T-26-023 sha:c4d149ff src:manual/26-zboyi.md:45 klas:A -->
 ### T-26-023 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1011,7 +1011,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-024 sha:c6b36da3 src:manual/26-zboyi.md:44 klas:A -->
+<!-- fc id:T-26-024 sha:c6b36da3 src:manual/26-zboyi.md:45 klas:A -->
 ### T-26-024 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1076,7 +1076,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-025 sha:d96111a7 src:manual/26-zboyi.md:45 klas:A -->
+<!-- fc id:T-26-025 sha:d96111a7 src:manual/26-zboyi.md:46 klas:A -->
 ### T-26-025 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**
@@ -1141,7 +1141,7 @@ Backtrace: 0x400d2f1a:0x3ffb1f20 0x400d3042:0x3ffb1f40 0x400d5a1c:0x3ffb1f70
 
 ---
 
-<!-- fc id:T-26-026 sha:439a9b98 src:manual/26-zboyi.md:45 klas:A -->
+<!-- fc id:T-26-026 sha:439a9b98 src:manual/26-zboyi.md:46 klas:A -->
 ### T-26-026 · komirka · `manual/26-zboyi.md`
 
 **Твердження, коротко**

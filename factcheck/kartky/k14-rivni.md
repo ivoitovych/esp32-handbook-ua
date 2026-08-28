@@ -210,7 +210,7 @@
 
 ---
 
-<!-- fc id:T-K14-008 sha:208df048 src:kartky/k14-rivni.md:20 klas:L -->
+<!-- fc id:T-K14-008 sha:208df048 src:kartky/k14-rivni.md:21 klas:L -->
 ### T-K14-008 · komirka · `kartky/k14-rivni.md`
 
 **Твердження, коротко**
@@ -254,7 +254,7 @@
 
 ---
 
-<!-- fc id:T-K14-009 sha:324eeb2a src:kartky/k14-rivni.md:20 klas:L -->
+<!-- fc id:T-K14-009 sha:324eeb2a src:kartky/k14-rivni.md:21 klas:L -->
 ### T-K14-009 · komirka · `kartky/k14-rivni.md`
 
 **Твердження, коротко**
@@ -298,7 +298,7 @@
 
 ---
 
-<!-- fc id:T-K14-010 sha:2932f428 src:kartky/k14-rivni.md:21 klas:E -->
+<!-- fc id:T-K14-010 sha:2932f428 src:kartky/k14-rivni.md:22 klas:E -->
 ### T-K14-010 · komirka · `kartky/k14-rivni.md`
 
 **Твердження, коротко**
@@ -338,7 +338,7 @@
 
 ---
 
-<!-- fc id:T-K14-011 sha:75750156 src:kartky/k14-rivni.md:21 klas:E -->
+<!-- fc id:T-K14-011 sha:75750156 src:kartky/k14-rivni.md:22 klas:E -->
 ### T-K14-011 · komirka · `kartky/k14-rivni.md`
 
 **Твердження, коротко**
@@ -372,7 +372,7 @@
 
 ---
 
-<!-- fc id:T-K14-012 sha:ac22ebf2 src:kartky/k14-rivni.md:22 klas:E -->
+<!-- fc id:T-K14-012 sha:ac22ebf2 src:kartky/k14-rivni.md:23 klas:E -->
 ### T-K14-012 · komirka · `kartky/k14-rivni.md`
 
 **Твердження, коротко**
@@ -412,7 +412,7 @@
 
 ---
 
-<!-- fc id:T-K14-013 sha:3a97ea92 src:kartky/k14-rivni.md:22 klas:E -->
+<!-- fc id:T-K14-013 sha:3a97ea92 src:kartky/k14-rivni.md:23 klas:E -->
 ### T-K14-013 · komirka · `kartky/k14-rivni.md`
 
 **Твердження, коротко**

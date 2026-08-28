@@ -137,7 +137,7 @@
 
 ---
 
-<!-- fc id:T-D-005 sha:508894ad src:dodatky/d-panik.md:11 klas:A -->
+<!-- fc id:T-D-005 sha:508894ad src:dodatky/d-panik.md:12 klas:A -->
 ### T-D-005 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-D-006 sha:d090e5b8 src:dodatky/d-panik.md:11 klas:A -->
+<!-- fc id:T-D-006 sha:d090e5b8 src:dodatky/d-panik.md:12 klas:A -->
 ### T-D-006 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -239,7 +239,7 @@
 
 ---
 
-<!-- fc id:T-D-007 sha:7431c283 src:dodatky/d-panik.md:11 klas:B -->
+<!-- fc id:T-D-007 sha:7431c283 src:dodatky/d-panik.md:12 klas:B -->
 ### T-D-007 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -290,7 +290,7 @@
 
 ---
 
-<!-- fc id:T-D-008 sha:1baef394 src:dodatky/d-panik.md:12 klas:A -->
+<!-- fc id:T-D-008 sha:1baef394 src:dodatky/d-panik.md:13 klas:A -->
 ### T-D-008 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -341,7 +341,7 @@
 
 ---
 
-<!-- fc id:T-D-009 sha:16e24570 src:dodatky/d-panik.md:12 klas:A -->
+<!-- fc id:T-D-009 sha:16e24570 src:dodatky/d-panik.md:13 klas:A -->
 ### T-D-009 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -402,7 +402,7 @@
 
 ---
 
-<!-- fc id:T-D-010 sha:03a89bab src:dodatky/d-panik.md:12 klas:B -->
+<!-- fc id:T-D-010 sha:03a89bab src:dodatky/d-panik.md:13 klas:B -->
 ### T-D-010 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -453,7 +453,7 @@
 
 ---
 
-<!-- fc id:T-D-011 sha:7add9e17 src:dodatky/d-panik.md:13 klas:A -->
+<!-- fc id:T-D-011 sha:7add9e17 src:dodatky/d-panik.md:14 klas:A -->
 ### T-D-011 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -504,7 +504,7 @@
 
 ---
 
-<!-- fc id:T-D-012 sha:3ae2fadd src:dodatky/d-panik.md:13 klas:A -->
+<!-- fc id:T-D-012 sha:3ae2fadd src:dodatky/d-panik.md:14 klas:A -->
 ### T-D-012 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -555,7 +555,7 @@
 
 ---
 
-<!-- fc id:T-D-013 sha:b04df11d src:dodatky/d-panik.md:13 klas:B -->
+<!-- fc id:T-D-013 sha:b04df11d src:dodatky/d-panik.md:14 klas:B -->
 ### T-D-013 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -606,7 +606,7 @@
 
 ---
 
-<!-- fc id:T-D-014 sha:60cc5d87 src:dodatky/d-panik.md:14 klas:A -->
+<!-- fc id:T-D-014 sha:60cc5d87 src:dodatky/d-panik.md:15 klas:A -->
 ### T-D-014 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -657,7 +657,7 @@
 
 ---
 
-<!-- fc id:T-D-015 sha:d01aac01 src:dodatky/d-panik.md:14 klas:A -->
+<!-- fc id:T-D-015 sha:d01aac01 src:dodatky/d-panik.md:15 klas:A -->
 ### T-D-015 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -708,7 +708,7 @@
 
 ---
 
-<!-- fc id:T-D-016 sha:0f8056b3 src:dodatky/d-panik.md:14 klas:B -->
+<!-- fc id:T-D-016 sha:0f8056b3 src:dodatky/d-panik.md:15 klas:B -->
 ### T-D-016 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -759,7 +759,7 @@
 
 ---
 
-<!-- fc id:T-D-017 sha:6624efb1 src:dodatky/d-panik.md:15 klas:A -->
+<!-- fc id:T-D-017 sha:6624efb1 src:dodatky/d-panik.md:16 klas:A -->
 ### T-D-017 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -810,7 +810,7 @@
 
 ---
 
-<!-- fc id:T-D-018 sha:8a61920f src:dodatky/d-panik.md:15 klas:A -->
+<!-- fc id:T-D-018 sha:8a61920f src:dodatky/d-panik.md:16 klas:A -->
 ### T-D-018 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -861,7 +861,7 @@
 
 ---
 
-<!-- fc id:T-D-019 sha:31ae5bdb src:dodatky/d-panik.md:15 klas:B -->
+<!-- fc id:T-D-019 sha:31ae5bdb src:dodatky/d-panik.md:16 klas:B -->
 ### T-D-019 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -912,7 +912,7 @@
 
 ---
 
-<!-- fc id:T-D-020 sha:b13c24c5 src:dodatky/d-panik.md:16 klas:A -->
+<!-- fc id:T-D-020 sha:b13c24c5 src:dodatky/d-panik.md:17 klas:A -->
 ### T-D-020 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -980,7 +980,7 @@
 
 ---
 
-<!-- fc id:T-D-021 sha:3f69134f src:dodatky/d-panik.md:16 klas:A -->
+<!-- fc id:T-D-021 sha:3f69134f src:dodatky/d-panik.md:17 klas:A -->
 ### T-D-021 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1031,7 +1031,7 @@
 
 ---
 
-<!-- fc id:T-D-022 sha:64d8d101 src:dodatky/d-panik.md:16 klas:F -->
+<!-- fc id:T-D-022 sha:64d8d101 src:dodatky/d-panik.md:17 klas:F -->
 ### T-D-022 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1076,7 +1076,7 @@
 
 ---
 
-<!-- fc id:T-D-023 sha:a4c80ac9 src:dodatky/d-panik.md:17 klas:A -->
+<!-- fc id:T-D-023 sha:a4c80ac9 src:dodatky/d-panik.md:18 klas:A -->
 ### T-D-023 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1127,7 +1127,7 @@
 
 ---
 
-<!-- fc id:T-D-024 sha:3253c52a src:dodatky/d-panik.md:17 klas:A -->
+<!-- fc id:T-D-024 sha:3253c52a src:dodatky/d-panik.md:18 klas:A -->
 ### T-D-024 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1178,7 +1178,7 @@
 
 ---
 
-<!-- fc id:T-D-025 sha:67e1a886 src:dodatky/d-panik.md:17 klas:F -->
+<!-- fc id:T-D-025 sha:67e1a886 src:dodatky/d-panik.md:18 klas:F -->
 ### T-D-025 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1223,7 +1223,7 @@
 
 ---
 
-<!-- fc id:T-D-026 sha:61c76aaf src:dodatky/d-panik.md:18 klas:A -->
+<!-- fc id:T-D-026 sha:61c76aaf src:dodatky/d-panik.md:19 klas:A -->
 ### T-D-026 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1274,7 +1274,7 @@
 
 ---
 
-<!-- fc id:T-D-027 sha:9b884225 src:dodatky/d-panik.md:18 klas:A -->
+<!-- fc id:T-D-027 sha:9b884225 src:dodatky/d-panik.md:19 klas:A -->
 ### T-D-027 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1325,7 +1325,7 @@
 
 ---
 
-<!-- fc id:T-D-028 sha:abc8094d src:dodatky/d-panik.md:18 klas:F -->
+<!-- fc id:T-D-028 sha:abc8094d src:dodatky/d-panik.md:19 klas:F -->
 ### T-D-028 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1370,7 +1370,7 @@
 
 ---
 
-<!-- fc id:T-D-029 sha:3c9dd369 src:dodatky/d-panik.md:19 klas:A -->
+<!-- fc id:T-D-029 sha:3c9dd369 src:dodatky/d-panik.md:20 klas:A -->
 ### T-D-029 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1421,7 +1421,7 @@
 
 ---
 
-<!-- fc id:T-D-030 sha:47e8e5d3 src:dodatky/d-panik.md:19 klas:A -->
+<!-- fc id:T-D-030 sha:47e8e5d3 src:dodatky/d-panik.md:20 klas:A -->
 ### T-D-030 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1472,7 +1472,7 @@
 
 ---
 
-<!-- fc id:T-D-031 sha:9064117d src:dodatky/d-panik.md:19 klas:A -->
+<!-- fc id:T-D-031 sha:9064117d src:dodatky/d-panik.md:20 klas:A -->
 ### T-D-031 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1523,7 +1523,7 @@
 
 ---
 
-<!-- fc id:T-D-032 sha:b1aea164 src:dodatky/d-panik.md:20 klas:F -->
+<!-- fc id:T-D-032 sha:b1aea164 src:dodatky/d-panik.md:21 klas:F -->
 ### T-D-032 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1568,7 +1568,7 @@
 
 ---
 
-<!-- fc id:T-D-033 sha:ffe03c46 src:dodatky/d-panik.md:20 klas:F -->
+<!-- fc id:T-D-033 sha:ffe03c46 src:dodatky/d-panik.md:21 klas:F -->
 ### T-D-033 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1613,7 +1613,7 @@
 
 ---
 
-<!-- fc id:T-D-034 sha:4184159d src:dodatky/d-panik.md:20 klas:F -->
+<!-- fc id:T-D-034 sha:4184159d src:dodatky/d-panik.md:21 klas:F -->
 ### T-D-034 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1658,7 +1658,7 @@
 
 ---
 
-<!-- fc id:T-D-035 sha:9b73d7e0 src:dodatky/d-panik.md:21 klas:A -->
+<!-- fc id:T-D-035 sha:9b73d7e0 src:dodatky/d-panik.md:22 klas:A -->
 ### T-D-035 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1726,7 +1726,7 @@
 
 ---
 
-<!-- fc id:T-D-036 sha:382d166f src:dodatky/d-panik.md:21 klas:C -->
+<!-- fc id:T-D-036 sha:382d166f src:dodatky/d-panik.md:22 klas:C -->
 ### T-D-036 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1775,7 +1775,7 @@
 
 ---
 
-<!-- fc id:T-D-037 sha:63b241b6 src:dodatky/d-panik.md:21 klas:F -->
+<!-- fc id:T-D-037 sha:63b241b6 src:dodatky/d-panik.md:22 klas:F -->
 ### T-D-037 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1820,7 +1820,7 @@
 
 ---
 
-<!-- fc id:T-D-038 sha:b265b468 src:dodatky/d-panik.md:22 klas:B -->
+<!-- fc id:T-D-038 sha:b265b468 src:dodatky/d-panik.md:23 klas:B -->
 ### T-D-038 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1871,7 +1871,7 @@
 
 ---
 
-<!-- fc id:T-D-039 sha:e72beb66 src:dodatky/d-panik.md:22 klas:F -->
+<!-- fc id:T-D-039 sha:e72beb66 src:dodatky/d-panik.md:23 klas:F -->
 ### T-D-039 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1916,7 +1916,7 @@
 
 ---
 
-<!-- fc id:T-D-040 sha:cc29d27d src:dodatky/d-panik.md:22 klas:A -->
+<!-- fc id:T-D-040 sha:cc29d27d src:dodatky/d-panik.md:23 klas:A -->
 ### T-D-040 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -1967,7 +1967,7 @@
 
 ---
 
-<!-- fc id:T-D-041 sha:5964cff8 src:dodatky/d-panik.md:23 klas:A -->
+<!-- fc id:T-D-041 sha:5964cff8 src:dodatky/d-panik.md:24 klas:A -->
 ### T-D-041 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2018,7 +2018,7 @@
 
 ---
 
-<!-- fc id:T-D-042 sha:111c70cc src:dodatky/d-panik.md:23 klas:A -->
+<!-- fc id:T-D-042 sha:111c70cc src:dodatky/d-panik.md:24 klas:A -->
 ### T-D-042 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2069,7 +2069,7 @@
 
 ---
 
-<!-- fc id:T-D-043 sha:47b3fdc0 src:dodatky/d-panik.md:23 klas:F -->
+<!-- fc id:T-D-043 sha:47b3fdc0 src:dodatky/d-panik.md:24 klas:F -->
 ### T-D-043 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2114,7 +2114,7 @@
 
 ---
 
-<!-- fc id:T-D-044 sha:4f167746 src:dodatky/d-panik.md:24 klas:A -->
+<!-- fc id:T-D-044 sha:4f167746 src:dodatky/d-panik.md:25 klas:A -->
 ### T-D-044 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2182,7 +2182,7 @@
 
 ---
 
-<!-- fc id:T-D-045 sha:00c236fb src:dodatky/d-panik.md:24 klas:A -->
+<!-- fc id:T-D-045 sha:00c236fb src:dodatky/d-panik.md:25 klas:A -->
 ### T-D-045 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2233,7 +2233,7 @@
 
 ---
 
-<!-- fc id:T-D-046 sha:3323a02f src:dodatky/d-panik.md:24 klas:F -->
+<!-- fc id:T-D-046 sha:3323a02f src:dodatky/d-panik.md:25 klas:F -->
 ### T-D-046 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2278,7 +2278,7 @@
 
 ---
 
-<!-- fc id:T-D-047 sha:9338f26b src:dodatky/d-panik.md:25 klas:A -->
+<!-- fc id:T-D-047 sha:9338f26b src:dodatky/d-panik.md:26 klas:A -->
 ### T-D-047 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2329,7 +2329,7 @@
 
 ---
 
-<!-- fc id:T-D-048 sha:6938bd06 src:dodatky/d-panik.md:25 klas:A -->
+<!-- fc id:T-D-048 sha:6938bd06 src:dodatky/d-panik.md:26 klas:A -->
 ### T-D-048 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -2388,7 +2388,7 @@
 
 ---
 
-<!-- fc id:T-D-049 sha:1e2b3315 src:dodatky/d-panik.md:25 klas:F -->
+<!-- fc id:T-D-049 sha:1e2b3315 src:dodatky/d-panik.md:26 klas:F -->
 ### T-D-049 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3794,7 +3794,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-086 sha:d8657519 src:dodatky/d-panik.md:98 klas:A -->
+<!-- fc id:T-D-086 sha:d8657519 src:dodatky/d-panik.md:99 klas:A -->
 ### T-D-086 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3839,7 +3839,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-087 sha:90b801d8 src:dodatky/d-panik.md:98 klas:A -->
+<!-- fc id:T-D-087 sha:90b801d8 src:dodatky/d-panik.md:99 klas:A -->
 ### T-D-087 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3885,7 +3885,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-088 sha:4c9431b7 src:dodatky/d-panik.md:99 klas:A -->
+<!-- fc id:T-D-088 sha:4c9431b7 src:dodatky/d-panik.md:100 klas:A -->
 ### T-D-088 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -3930,7 +3930,7 @@ download mode.
 
 ---
 
-<!-- fc id:T-D-089 sha:2e453577 src:dodatky/d-panik.md:99 klas:B -->
+<!-- fc id:T-D-089 sha:2e453577 src:dodatky/d-panik.md:100 klas:B -->
 ### T-D-089 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4644,7 +4644,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-111 sha:a63a39c2 src:dodatky/d-panik.md:166 klas:A -->
+<!-- fc id:T-D-111 sha:a63a39c2 src:dodatky/d-panik.md:167 klas:A -->
 ### T-D-111 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4695,7 +4695,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-112 sha:ad4c17ec src:dodatky/d-panik.md:166 klas:A -->
+<!-- fc id:T-D-112 sha:ad4c17ec src:dodatky/d-panik.md:167 klas:A -->
 ### T-D-112 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4746,7 +4746,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-113 sha:0164e3bb src:dodatky/d-panik.md:167 klas:A -->
+<!-- fc id:T-D-113 sha:0164e3bb src:dodatky/d-panik.md:168 klas:A -->
 ### T-D-113 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4797,7 +4797,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-114 sha:2d07f5b7 src:dodatky/d-panik.md:167 klas:A -->
+<!-- fc id:T-D-114 sha:2d07f5b7 src:dodatky/d-panik.md:168 klas:A -->
 ### T-D-114 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4848,7 +4848,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-115 sha:2bc6cd2b src:dodatky/d-panik.md:168 klas:A -->
+<!-- fc id:T-D-115 sha:2bc6cd2b src:dodatky/d-panik.md:169 klas:A -->
 ### T-D-115 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4899,7 +4899,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-116 sha:b805a263 src:dodatky/d-panik.md:168 klas:A -->
+<!-- fc id:T-D-116 sha:b805a263 src:dodatky/d-panik.md:169 klas:A -->
 ### T-D-116 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -4950,7 +4950,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-117 sha:47044db6 src:dodatky/d-panik.md:169 klas:A -->
+<!-- fc id:T-D-117 sha:47044db6 src:dodatky/d-panik.md:170 klas:A -->
 ### T-D-117 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5001,7 +5001,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-118 sha:6a21db9c src:dodatky/d-panik.md:169 klas:A -->
+<!-- fc id:T-D-118 sha:6a21db9c src:dodatky/d-panik.md:170 klas:A -->
 ### T-D-118 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5052,7 +5052,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-119 sha:168149c9 src:dodatky/d-panik.md:170 klas:A -->
+<!-- fc id:T-D-119 sha:168149c9 src:dodatky/d-panik.md:171 klas:A -->
 ### T-D-119 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5103,7 +5103,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-120 sha:e514eca1 src:dodatky/d-panik.md:170 klas:A -->
+<!-- fc id:T-D-120 sha:e514eca1 src:dodatky/d-panik.md:171 klas:A -->
 ### T-D-120 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5154,7 +5154,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-121 sha:2f309750 src:dodatky/d-panik.md:171 klas:A -->
+<!-- fc id:T-D-121 sha:2f309750 src:dodatky/d-panik.md:172 klas:A -->
 ### T-D-121 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5205,7 +5205,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-122 sha:e82565ff src:dodatky/d-panik.md:171 klas:A -->
+<!-- fc id:T-D-122 sha:e82565ff src:dodatky/d-panik.md:172 klas:A -->
 ### T-D-122 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5256,7 +5256,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-123 sha:c946c98e src:dodatky/d-panik.md:172 klas:A -->
+<!-- fc id:T-D-123 sha:c946c98e src:dodatky/d-panik.md:173 klas:A -->
 ### T-D-123 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5305,7 +5305,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-124 sha:4adb2806 src:dodatky/d-panik.md:172 klas:A -->
+<!-- fc id:T-D-124 sha:4adb2806 src:dodatky/d-panik.md:173 klas:A -->
 ### T-D-124 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5354,7 +5354,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-125 sha:45fbc80e src:dodatky/d-panik.md:173 klas:A -->
+<!-- fc id:T-D-125 sha:45fbc80e src:dodatky/d-panik.md:174 klas:A -->
 ### T-D-125 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5403,7 +5403,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-126 sha:f25a0f20 src:dodatky/d-panik.md:173 klas:A -->
+<!-- fc id:T-D-126 sha:f25a0f20 src:dodatky/d-panik.md:174 klas:A -->
 ### T-D-126 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5592,7 +5592,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-132 sha:3f7f05f2 src:dodatky/d-panik.md:190 klas:A -->
+<!-- fc id:T-D-132 sha:3f7f05f2 src:dodatky/d-panik.md:191 klas:A -->
 ### T-D-132 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5659,7 +5659,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-133 sha:e1369196 src:dodatky/d-panik.md:190 klas:A -->
+<!-- fc id:T-D-133 sha:e1369196 src:dodatky/d-panik.md:191 klas:A -->
 ### T-D-133 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5726,7 +5726,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-134 sha:8bc4f39c src:dodatky/d-panik.md:191 klas:A -->
+<!-- fc id:T-D-134 sha:8bc4f39c src:dodatky/d-panik.md:192 klas:A -->
 ### T-D-134 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5793,7 +5793,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-135 sha:28cc86f2 src:dodatky/d-panik.md:191 klas:A -->
+<!-- fc id:T-D-135 sha:28cc86f2 src:dodatky/d-panik.md:192 klas:A -->
 ### T-D-135 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5860,7 +5860,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-136 sha:65e5b66a src:dodatky/d-panik.md:192 klas:A -->
+<!-- fc id:T-D-136 sha:65e5b66a src:dodatky/d-panik.md:193 klas:A -->
 ### T-D-136 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5927,7 +5927,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-137 sha:89d4b0ed src:dodatky/d-panik.md:192 klas:A -->
+<!-- fc id:T-D-137 sha:89d4b0ed src:dodatky/d-panik.md:193 klas:A -->
 ### T-D-137 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -5994,7 +5994,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-138 sha:0e5b84a2 src:dodatky/d-panik.md:193 klas:A -->
+<!-- fc id:T-D-138 sha:0e5b84a2 src:dodatky/d-panik.md:194 klas:A -->
 ### T-D-138 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6061,7 +6061,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-139 sha:b8918b59 src:dodatky/d-panik.md:193 klas:A -->
+<!-- fc id:T-D-139 sha:b8918b59 src:dodatky/d-panik.md:194 klas:A -->
 ### T-D-139 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6128,7 +6128,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-140 sha:c4d149ff src:dodatky/d-panik.md:194 klas:A -->
+<!-- fc id:T-D-140 sha:c4d149ff src:dodatky/d-panik.md:195 klas:A -->
 ### T-D-140 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6195,7 +6195,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-141 sha:46508737 src:dodatky/d-panik.md:194 klas:A -->
+<!-- fc id:T-D-141 sha:46508737 src:dodatky/d-panik.md:195 klas:A -->
 ### T-D-141 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6262,7 +6262,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-142 sha:d96111a7 src:dodatky/d-panik.md:195 klas:A -->
+<!-- fc id:T-D-142 sha:d96111a7 src:dodatky/d-panik.md:196 klas:A -->
 ### T-D-142 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6329,7 +6329,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-143 sha:439a9b98 src:dodatky/d-panik.md:195 klas:A -->
+<!-- fc id:T-D-143 sha:439a9b98 src:dodatky/d-panik.md:196 klas:A -->
 ### T-D-143 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6396,7 +6396,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-144 sha:7c359228 src:dodatky/d-panik.md:196 klas:A -->
+<!-- fc id:T-D-144 sha:7c359228 src:dodatky/d-panik.md:197 klas:A -->
 ### T-D-144 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6450,7 +6450,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-145 sha:4c606b3e src:dodatky/d-panik.md:196 klas:A -->
+<!-- fc id:T-D-145 sha:4c606b3e src:dodatky/d-panik.md:197 klas:A -->
 ### T-D-145 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6504,7 +6504,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-146 sha:8712f714 src:dodatky/d-panik.md:197 klas:A -->
+<!-- fc id:T-D-146 sha:8712f714 src:dodatky/d-panik.md:198 klas:A -->
 ### T-D-146 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**
@@ -6571,7 +6571,7 @@ I (xxx) cpu_start: Pro cpu up.
 
 ---
 
-<!-- fc id:T-D-147 sha:4e40193e src:dodatky/d-panik.md:197 klas:A -->
+<!-- fc id:T-D-147 sha:4e40193e src:dodatky/d-panik.md:198 klas:A -->
 ### T-D-147 · komirka · `dodatky/d-panik.md`
 
 **Твердження, коротко**

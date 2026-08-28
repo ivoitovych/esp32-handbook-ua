@@ -105,7 +105,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-004 sha:43e6233d src:kartky/k07-panika.md:16 klas:A -->
+<!-- fc id:T-K07-004 sha:43e6233d src:kartky/k07-panika.md:17 klas:A -->
 ### T-K07-004 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -170,7 +170,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-005 sha:c9684ba0 src:kartky/k07-panika.md:16 klas:A -->
+<!-- fc id:T-K07-005 sha:c9684ba0 src:kartky/k07-panika.md:17 klas:A -->
 ### T-K07-005 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -235,7 +235,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-006 sha:17665be2 src:kartky/k07-panika.md:17 klas:A -->
+<!-- fc id:T-K07-006 sha:17665be2 src:kartky/k07-panika.md:18 klas:A -->
 ### T-K07-006 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -300,7 +300,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-007 sha:79b748d0 src:kartky/k07-panika.md:17 klas:A -->
+<!-- fc id:T-K07-007 sha:79b748d0 src:kartky/k07-panika.md:18 klas:A -->
 ### T-K07-007 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -365,7 +365,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-008 sha:81fd026c src:kartky/k07-panika.md:18 klas:A -->
+<!-- fc id:T-K07-008 sha:81fd026c src:kartky/k07-panika.md:19 klas:A -->
 ### T-K07-008 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -430,7 +430,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-009 sha:a365c033 src:kartky/k07-panika.md:18 klas:A -->
+<!-- fc id:T-K07-009 sha:a365c033 src:kartky/k07-panika.md:19 klas:A -->
 ### T-K07-009 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -495,7 +495,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-010 sha:a2d38223 src:kartky/k07-panika.md:19 klas:A -->
+<!-- fc id:T-K07-010 sha:a2d38223 src:kartky/k07-panika.md:20 klas:A -->
 ### T-K07-010 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -560,7 +560,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-011 sha:5208283b src:kartky/k07-panika.md:19 klas:A -->
+<!-- fc id:T-K07-011 sha:5208283b src:kartky/k07-panika.md:20 klas:A -->
 ### T-K07-011 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -625,7 +625,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-012 sha:3df94a10 src:kartky/k07-panika.md:20 klas:A -->
+<!-- fc id:T-K07-012 sha:3df94a10 src:kartky/k07-panika.md:21 klas:A -->
 ### T-K07-012 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -690,7 +690,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-013 sha:1d31178b src:kartky/k07-panika.md:20 klas:A -->
+<!-- fc id:T-K07-013 sha:1d31178b src:kartky/k07-panika.md:21 klas:A -->
 ### T-K07-013 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -755,7 +755,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-014 sha:23917c21 src:kartky/k07-panika.md:21 klas:A -->
+<!-- fc id:T-K07-014 sha:23917c21 src:kartky/k07-panika.md:22 klas:A -->
 ### T-K07-014 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**
@@ -807,7 +807,7 @@ Backtrace: 0x400d1234:0x3ffb1f30 0x400d5678:0x3ffb1f50
 
 ---
 
-<!-- fc id:T-K07-015 sha:58d7dba4 src:kartky/k07-panika.md:21 klas:A -->
+<!-- fc id:T-K07-015 sha:58d7dba4 src:kartky/k07-panika.md:22 klas:A -->
 ### T-K07-015 · komirka · `kartky/k07-panika.md`
 
 **Твердження, коротко**

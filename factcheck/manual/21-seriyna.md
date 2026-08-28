@@ -1825,7 +1825,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-065 sha:e706eb63 src:manual/21-seriyna.md:152 klas:F -->
+<!-- fc id:T-21-065 sha:e706eb63 src:manual/21-seriyna.md:153 klas:F -->
 ### T-21-065 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1858,7 +1858,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-066 sha:a8bb95c8 src:manual/21-seriyna.md:152 klas:F -->
+<!-- fc id:T-21-066 sha:a8bb95c8 src:manual/21-seriyna.md:153 klas:F -->
 ### T-21-066 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1891,7 +1891,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-067 sha:e4e73586 src:manual/21-seriyna.md:152 klas:E -->
+<!-- fc id:T-21-067 sha:e4e73586 src:manual/21-seriyna.md:153 klas:E -->
 ### T-21-067 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1924,7 +1924,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-068 sha:29d3900f src:manual/21-seriyna.md:152 klas:E -->
+<!-- fc id:T-21-068 sha:29d3900f src:manual/21-seriyna.md:153 klas:E -->
 ### T-21-068 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1957,7 +1957,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-069 sha:75799caf src:manual/21-seriyna.md:153 klas:F -->
+<!-- fc id:T-21-069 sha:75799caf src:manual/21-seriyna.md:154 klas:F -->
 ### T-21-069 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -1990,7 +1990,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-070 sha:abb9bd4b src:manual/21-seriyna.md:153 klas:F -->
+<!-- fc id:T-21-070 sha:abb9bd4b src:manual/21-seriyna.md:154 klas:F -->
 ### T-21-070 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2023,7 +2023,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-071 sha:e2d0d5e3 src:manual/21-seriyna.md:153 klas:E -->
+<!-- fc id:T-21-071 sha:e2d0d5e3 src:manual/21-seriyna.md:154 klas:E -->
 ### T-21-071 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2056,7 +2056,7 @@ MAC-адреса кожного чипа унікальна від заводу 
 
 ---
 
-<!-- fc id:T-21-072 sha:f7d5d679 src:manual/21-seriyna.md:153 klas:E -->
+<!-- fc id:T-21-072 sha:f7d5d679 src:manual/21-seriyna.md:154 klas:E -->
 ### T-21-072 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2082,7 +2082,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-21-073 sha:c5831a43 src:manual/21-seriyna.md:153 klas:E -->
+<!-- fc id:T-21-073 sha:c5831a43 src:manual/21-seriyna.md:154 klas:E -->
 ### T-21-073 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2115,7 +2115,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-21-074 sha:79ce9a1f src:manual/21-seriyna.md:154 klas:F -->
+<!-- fc id:T-21-074 sha:79ce9a1f src:manual/21-seriyna.md:155 klas:F -->
 ### T-21-074 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2148,7 +2148,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-21-075 sha:9f488b42 src:manual/21-seriyna.md:154 klas:F -->
+<!-- fc id:T-21-075 sha:9f488b42 src:manual/21-seriyna.md:155 klas:F -->
 ### T-21-075 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2181,7 +2181,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-21-076 sha:a6590e77 src:manual/21-seriyna.md:154 klas:E -->
+<!-- fc id:T-21-076 sha:a6590e77 src:manual/21-seriyna.md:155 klas:E -->
 ### T-21-076 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2214,7 +2214,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-21-077 sha:37c1710c src:manual/21-seriyna.md:154 klas:E -->
+<!-- fc id:T-21-077 sha:37c1710c src:manual/21-seriyna.md:155 klas:E -->
 ### T-21-077 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**
@@ -2247,7 +2247,7 @@ esptool --port /dev/ttyUSB0 write-flash 0x9000 nvs-0042.bin
 
 ---
 
-<!-- fc id:T-21-078 sha:4688c6c2 src:manual/21-seriyna.md:154 klas:E -->
+<!-- fc id:T-21-078 sha:4688c6c2 src:manual/21-seriyna.md:155 klas:E -->
 ### T-21-078 · komirka · `manual/21-seriyna.md`
 
 **Твердження, коротко**

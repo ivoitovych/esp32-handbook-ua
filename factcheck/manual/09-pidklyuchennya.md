@@ -331,7 +331,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-014 sha:388dab13 src:manual/09-pidklyuchennya.md:29 klas:A -->
+<!-- fc id:T-09-014 sha:388dab13 src:manual/09-pidklyuchennya.md:30 klas:A -->
 ### T-09-014 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -370,7 +370,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-015 sha:c2d47e2e src:manual/09-pidklyuchennya.md:29 klas:A -->
+<!-- fc id:T-09-015 sha:c2d47e2e src:manual/09-pidklyuchennya.md:30 klas:A -->
 ### T-09-015 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -418,7 +418,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-016 sha:c2bec9c8 src:manual/09-pidklyuchennya.md:29 klas:A -->
+<!-- fc id:T-09-016 sha:c2bec9c8 src:manual/09-pidklyuchennya.md:30 klas:A -->
 ### T-09-016 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -457,7 +457,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-017 sha:72a038d1 src:manual/09-pidklyuchennya.md:30 klas:A -->
+<!-- fc id:T-09-017 sha:72a038d1 src:manual/09-pidklyuchennya.md:31 klas:A -->
 ### T-09-017 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -500,7 +500,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-018 sha:ee486859 src:manual/09-pidklyuchennya.md:30 klas:A -->
+<!-- fc id:T-09-018 sha:ee486859 src:manual/09-pidklyuchennya.md:31 klas:A -->
 ### T-09-018 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -540,7 +540,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-019 sha:a1e6a5ca src:manual/09-pidklyuchennya.md:30 klas:A -->
+<!-- fc id:T-09-019 sha:a1e6a5ca src:manual/09-pidklyuchennya.md:31 klas:A -->
 ### T-09-019 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -583,7 +583,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-020 sha:f99c9567 src:manual/09-pidklyuchennya.md:31 klas:A -->
+<!-- fc id:T-09-020 sha:f99c9567 src:manual/09-pidklyuchennya.md:32 klas:A -->
 ### T-09-020 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -629,7 +629,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-021 sha:8e99078d src:manual/09-pidklyuchennya.md:31 klas:C -->
+<!-- fc id:T-09-021 sha:8e99078d src:manual/09-pidklyuchennya.md:32 klas:C -->
 ### T-09-021 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -666,7 +666,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-022 sha:09842382 src:manual/09-pidklyuchennya.md:31 klas:A -->
+<!-- fc id:T-09-022 sha:09842382 src:manual/09-pidklyuchennya.md:32 klas:A -->
 ### T-09-022 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -712,7 +712,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-023 sha:0d78e84c src:manual/09-pidklyuchennya.md:32 klas:A -->
+<!-- fc id:T-09-023 sha:0d78e84c src:manual/09-pidklyuchennya.md:33 klas:A -->
 ### T-09-023 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -752,7 +752,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-024 sha:8efca634 src:manual/09-pidklyuchennya.md:32 klas:C -->
+<!-- fc id:T-09-024 sha:8efca634 src:manual/09-pidklyuchennya.md:33 klas:C -->
 ### T-09-024 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**
@@ -789,7 +789,7 @@ ESP32 розмовляє з комп'ютером по UART — послідов
 
 ---
 
-<!-- fc id:T-09-025 sha:871e63ad src:manual/09-pidklyuchennya.md:32 klas:A -->
+<!-- fc id:T-09-025 sha:871e63ad src:manual/09-pidklyuchennya.md:33 klas:A -->
 ### T-09-025 · komirka · `manual/09-pidklyuchennya.md`
 
 **Твердження, коротко**

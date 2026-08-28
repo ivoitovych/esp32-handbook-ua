@@ -221,7 +221,7 @@
 
 ---
 
-<!-- fc id:T-23-010 sha:f5a2b442 src:manual/23-triazh.md:21 klas:A -->
+<!-- fc id:T-23-010 sha:f5a2b442 src:manual/23-triazh.md:22 klas:A -->
 ### T-23-010 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -264,7 +264,7 @@
 
 ---
 
-<!-- fc id:T-23-011 sha:6c77a290 src:manual/23-triazh.md:21 klas:A -->
+<!-- fc id:T-23-011 sha:6c77a290 src:manual/23-triazh.md:22 klas:A -->
 ### T-23-011 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -307,7 +307,7 @@
 
 ---
 
-<!-- fc id:T-23-012 sha:dc994ff1 src:manual/23-triazh.md:22 klas:A -->
+<!-- fc id:T-23-012 sha:dc994ff1 src:manual/23-triazh.md:23 klas:A -->
 ### T-23-012 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -351,7 +351,7 @@
 
 ---
 
-<!-- fc id:T-23-013 sha:0df0deb7 src:manual/23-triazh.md:22 klas:B -->
+<!-- fc id:T-23-013 sha:0df0deb7 src:manual/23-triazh.md:23 klas:B -->
 ### T-23-013 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -394,7 +394,7 @@
 
 ---
 
-<!-- fc id:T-23-014 sha:30502f8c src:manual/23-triazh.md:23 klas:F -->
+<!-- fc id:T-23-014 sha:30502f8c src:manual/23-triazh.md:24 klas:F -->
 ### T-23-014 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -431,7 +431,7 @@
 
 ---
 
-<!-- fc id:T-23-015 sha:98240349 src:manual/23-triazh.md:23 klas:F -->
+<!-- fc id:T-23-015 sha:98240349 src:manual/23-triazh.md:24 klas:F -->
 ### T-23-015 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -468,7 +468,7 @@
 
 ---
 
-<!-- fc id:T-23-016 sha:92bef9b9 src:manual/23-triazh.md:24 klas:F -->
+<!-- fc id:T-23-016 sha:92bef9b9 src:manual/23-triazh.md:25 klas:F -->
 ### T-23-016 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -505,7 +505,7 @@
 
 ---
 
-<!-- fc id:T-23-017 sha:7c7ee0a3 src:manual/23-triazh.md:24 klas:F -->
+<!-- fc id:T-23-017 sha:7c7ee0a3 src:manual/23-triazh.md:25 klas:F -->
 ### T-23-017 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -542,7 +542,7 @@
 
 ---
 
-<!-- fc id:T-23-018 sha:db5fc68e src:manual/23-triazh.md:25 klas:F -->
+<!-- fc id:T-23-018 sha:db5fc68e src:manual/23-triazh.md:26 klas:F -->
 ### T-23-018 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -579,7 +579,7 @@
 
 ---
 
-<!-- fc id:T-23-019 sha:39ebd761 src:manual/23-triazh.md:25 klas:F -->
+<!-- fc id:T-23-019 sha:39ebd761 src:manual/23-triazh.md:26 klas:F -->
 ### T-23-019 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -616,7 +616,7 @@
 
 ---
 
-<!-- fc id:T-23-020 sha:80f179b8 src:manual/23-triazh.md:26 klas:F -->
+<!-- fc id:T-23-020 sha:80f179b8 src:manual/23-triazh.md:27 klas:F -->
 ### T-23-020 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -653,7 +653,7 @@
 
 ---
 
-<!-- fc id:T-23-021 sha:06afa9dc src:manual/23-triazh.md:26 klas:F -->
+<!-- fc id:T-23-021 sha:06afa9dc src:manual/23-triazh.md:27 klas:F -->
 ### T-23-021 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2186,7 +2186,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-077 sha:e949c09e src:manual/23-triazh.md:157 klas:E -->
+<!-- fc id:T-23-077 sha:e949c09e src:manual/23-triazh.md:158 klas:E -->
 ### T-23-077 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2224,7 +2224,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-078 sha:6ae1bc07 src:manual/23-triazh.md:157 klas:E -->
+<!-- fc id:T-23-078 sha:6ae1bc07 src:manual/23-triazh.md:158 klas:E -->
 ### T-23-078 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2262,7 +2262,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-079 sha:2641f94f src:manual/23-triazh.md:158 klas:E -->
+<!-- fc id:T-23-079 sha:2641f94f src:manual/23-triazh.md:159 klas:E -->
 ### T-23-079 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2300,7 +2300,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-080 sha:3831e6a7 src:manual/23-triazh.md:158 klas:E -->
+<!-- fc id:T-23-080 sha:3831e6a7 src:manual/23-triazh.md:159 klas:E -->
 ### T-23-080 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2338,7 +2338,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-081 sha:84245083 src:manual/23-triazh.md:159 klas:E -->
+<!-- fc id:T-23-081 sha:84245083 src:manual/23-triazh.md:160 klas:E -->
 ### T-23-081 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2376,7 +2376,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-082 sha:91a76143 src:manual/23-triazh.md:159 klas:E -->
+<!-- fc id:T-23-082 sha:91a76143 src:manual/23-triazh.md:160 klas:E -->
 ### T-23-082 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2414,7 +2414,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-083 sha:4e6f1515 src:manual/23-triazh.md:160 klas:F -->
+<!-- fc id:T-23-083 sha:4e6f1515 src:manual/23-triazh.md:161 klas:F -->
 ### T-23-083 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2452,7 +2452,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-084 sha:5b42e84c src:manual/23-triazh.md:160 klas:F -->
+<!-- fc id:T-23-084 sha:5b42e84c src:manual/23-triazh.md:161 klas:F -->
 ### T-23-084 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2490,7 +2490,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-085 sha:7e5e8bc8 src:manual/23-triazh.md:161 klas:B -->
+<!-- fc id:T-23-085 sha:7e5e8bc8 src:manual/23-triazh.md:162 klas:B -->
 ### T-23-085 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2542,7 +2542,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-086 sha:c95de38f src:manual/23-triazh.md:161 klas:B -->
+<!-- fc id:T-23-086 sha:c95de38f src:manual/23-triazh.md:162 klas:B -->
 ### T-23-086 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2594,7 +2594,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-087 sha:f93dfb64 src:manual/23-triazh.md:162 klas:B -->
+<!-- fc id:T-23-087 sha:f93dfb64 src:manual/23-triazh.md:163 klas:B -->
 ### T-23-087 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2646,7 +2646,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-088 sha:2c0adf58 src:manual/23-triazh.md:162 klas:B -->
+<!-- fc id:T-23-088 sha:2c0adf58 src:manual/23-triazh.md:163 klas:B -->
 ### T-23-088 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2698,7 +2698,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-089 sha:313a187d src:manual/23-triazh.md:163 klas:E -->
+<!-- fc id:T-23-089 sha:313a187d src:manual/23-triazh.md:164 klas:E -->
 ### T-23-089 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2736,7 +2736,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-090 sha:3594c70a src:manual/23-triazh.md:163 klas:E -->
+<!-- fc id:T-23-090 sha:3594c70a src:manual/23-triazh.md:164 klas:E -->
 ### T-23-090 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2774,7 +2774,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-091 sha:4a629d22 src:manual/23-triazh.md:164 klas:F -->
+<!-- fc id:T-23-091 sha:4a629d22 src:manual/23-triazh.md:165 klas:F -->
 ### T-23-091 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**
@@ -2812,7 +2812,7 @@ esptool --port /dev/ttyUSB0 flash-id
 
 ---
 
-<!-- fc id:T-23-092 sha:ce352f8c src:manual/23-triazh.md:164 klas:F -->
+<!-- fc id:T-23-092 sha:ce352f8c src:manual/23-triazh.md:165 klas:F -->
 ### T-23-092 · komirka · `manual/23-triazh.md`
 
 **Твердження, коротко**

@@ -274,7 +274,7 @@
 
 ---
 
-<!-- fc id:T-02-012 sha:0168572d src:manual/02-chipy.md:31 klas:F -->
+<!-- fc id:T-02-012 sha:0168572d src:manual/02-chipy.md:32 klas:F -->
 ### T-02-012 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -313,7 +313,7 @@
 
 ---
 
-<!-- fc id:T-02-013 sha:e91dccbe src:manual/02-chipy.md:31 klas:A -->
+<!-- fc id:T-02-013 sha:e91dccbe src:manual/02-chipy.md:32 klas:A -->
 ### T-02-013 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -358,7 +358,7 @@
 
 ---
 
-<!-- fc id:T-02-014 sha:36ed0120 src:manual/02-chipy.md:31 klas:F -->
+<!-- fc id:T-02-014 sha:36ed0120 src:manual/02-chipy.md:32 klas:F -->
 ### T-02-014 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@
 
 ---
 
-<!-- fc id:T-02-015 sha:009980b4 src:manual/02-chipy.md:31 klas:F -->
+<!-- fc id:T-02-015 sha:009980b4 src:manual/02-chipy.md:32 klas:F -->
 ### T-02-015 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -436,7 +436,7 @@
 
 ---
 
-<!-- fc id:T-02-016 sha:655eca53 src:manual/02-chipy.md:31 klas:A -->
+<!-- fc id:T-02-016 sha:655eca53 src:manual/02-chipy.md:32 klas:A -->
 ### T-02-016 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -481,7 +481,7 @@
 
 ---
 
-<!-- fc id:T-02-017 sha:626a6ffe src:manual/02-chipy.md:31 klas:A -->
+<!-- fc id:T-02-017 sha:626a6ffe src:manual/02-chipy.md:32 klas:A -->
 ### T-02-017 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-02-018 sha:0cb91d4a src:manual/02-chipy.md:32 klas:C -->
+<!-- fc id:T-02-018 sha:0cb91d4a src:manual/02-chipy.md:33 klas:C -->
 ### T-02-018 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -570,7 +570,7 @@
 
 ---
 
-<!-- fc id:T-02-019 sha:1e14bfc6 src:manual/02-chipy.md:32 klas:F -->
+<!-- fc id:T-02-019 sha:1e14bfc6 src:manual/02-chipy.md:33 klas:F -->
 ### T-02-019 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -609,7 +609,7 @@
 
 ---
 
-<!-- fc id:T-02-020 sha:6aac4631 src:manual/02-chipy.md:32 klas:A -->
+<!-- fc id:T-02-020 sha:6aac4631 src:manual/02-chipy.md:33 klas:A -->
 ### T-02-020 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -654,7 +654,7 @@
 
 ---
 
-<!-- fc id:T-02-021 sha:de0b6f6b src:manual/02-chipy.md:32 klas:A -->
+<!-- fc id:T-02-021 sha:de0b6f6b src:manual/02-chipy.md:33 klas:A -->
 ### T-02-021 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -702,7 +702,7 @@
 
 ---
 
-<!-- fc id:T-02-022 sha:0d0afd19 src:manual/02-chipy.md:32 klas:F -->
+<!-- fc id:T-02-022 sha:0d0afd19 src:manual/02-chipy.md:33 klas:F -->
 ### T-02-022 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -741,7 +741,7 @@
 
 ---
 
-<!-- fc id:T-02-023 sha:af57da03 src:manual/02-chipy.md:32 klas:A -->
+<!-- fc id:T-02-023 sha:af57da03 src:manual/02-chipy.md:33 klas:A -->
 ### T-02-023 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -789,7 +789,7 @@
 
 ---
 
-<!-- fc id:T-02-024 sha:0f17620f src:manual/02-chipy.md:33 klas:A -->
+<!-- fc id:T-02-024 sha:0f17620f src:manual/02-chipy.md:34 klas:A -->
 ### T-02-024 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -834,7 +834,7 @@
 
 ---
 
-<!-- fc id:T-02-025 sha:7e7d979b src:manual/02-chipy.md:33 klas:F -->
+<!-- fc id:T-02-025 sha:7e7d979b src:manual/02-chipy.md:34 klas:F -->
 ### T-02-025 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -873,7 +873,7 @@
 
 ---
 
-<!-- fc id:T-02-026 sha:966fb621 src:manual/02-chipy.md:33 klas:F -->
+<!-- fc id:T-02-026 sha:966fb621 src:manual/02-chipy.md:34 klas:F -->
 ### T-02-026 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -912,7 +912,7 @@
 
 ---
 
-<!-- fc id:T-02-027 sha:52b2301b src:manual/02-chipy.md:33 klas:A -->
+<!-- fc id:T-02-027 sha:52b2301b src:manual/02-chipy.md:34 klas:A -->
 ### T-02-027 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -957,7 +957,7 @@
 
 ---
 
-<!-- fc id:T-02-028 sha:b3f7155b src:manual/02-chipy.md:33 klas:F -->
+<!-- fc id:T-02-028 sha:b3f7155b src:manual/02-chipy.md:34 klas:F -->
 ### T-02-028 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -996,7 +996,7 @@
 
 ---
 
-<!-- fc id:T-02-029 sha:f4539c1a src:manual/02-chipy.md:33 klas:A -->
+<!-- fc id:T-02-029 sha:f4539c1a src:manual/02-chipy.md:34 klas:A -->
 ### T-02-029 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1041,7 +1041,7 @@
 
 ---
 
-<!-- fc id:T-02-030 sha:3424af9b src:manual/02-chipy.md:34 klas:A -->
+<!-- fc id:T-02-030 sha:3424af9b src:manual/02-chipy.md:35 klas:A -->
 ### T-02-030 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1086,7 +1086,7 @@
 
 ---
 
-<!-- fc id:T-02-031 sha:653d5866 src:manual/02-chipy.md:34 klas:A -->
+<!-- fc id:T-02-031 sha:653d5866 src:manual/02-chipy.md:35 klas:A -->
 ### T-02-031 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1131,7 +1131,7 @@
 
 ---
 
-<!-- fc id:T-02-032 sha:13e5bc61 src:manual/02-chipy.md:34 klas:A -->
+<!-- fc id:T-02-032 sha:13e5bc61 src:manual/02-chipy.md:35 klas:A -->
 ### T-02-032 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1176,7 +1176,7 @@
 
 ---
 
-<!-- fc id:T-02-033 sha:0127c37c src:manual/02-chipy.md:34 klas:A -->
+<!-- fc id:T-02-033 sha:0127c37c src:manual/02-chipy.md:35 klas:A -->
 ### T-02-033 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1222,7 +1222,7 @@
 
 ---
 
-<!-- fc id:T-02-034 sha:7798c639 src:manual/02-chipy.md:34 klas:A -->
+<!-- fc id:T-02-034 sha:7798c639 src:manual/02-chipy.md:35 klas:A -->
 ### T-02-034 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1268,7 +1268,7 @@
 
 ---
 
-<!-- fc id:T-02-035 sha:8798e39c src:manual/02-chipy.md:34 klas:F -->
+<!-- fc id:T-02-035 sha:8798e39c src:manual/02-chipy.md:35 klas:F -->
 ### T-02-035 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1307,7 +1307,7 @@
 
 ---
 
-<!-- fc id:T-02-036 sha:bd5f8f54 src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-036 sha:bd5f8f54 src:manual/02-chipy.md:36 klas:A -->
 ### T-02-036 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1358,7 +1358,7 @@
 
 ---
 
-<!-- fc id:T-02-037 sha:62d6b631 src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-037 sha:62d6b631 src:manual/02-chipy.md:36 klas:A -->
 ### T-02-037 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1409,7 +1409,7 @@
 
 ---
 
-<!-- fc id:T-02-038 sha:1b466931 src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-038 sha:1b466931 src:manual/02-chipy.md:36 klas:A -->
 ### T-02-038 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1460,7 +1460,7 @@
 
 ---
 
-<!-- fc id:T-02-039 sha:2ace6257 src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-039 sha:2ace6257 src:manual/02-chipy.md:36 klas:A -->
 ### T-02-039 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1511,7 +1511,7 @@
 
 ---
 
-<!-- fc id:T-02-040 sha:328f15ff src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-040 sha:328f15ff src:manual/02-chipy.md:36 klas:A -->
 ### T-02-040 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1562,7 +1562,7 @@
 
 ---
 
-<!-- fc id:T-02-041 sha:0da97b7e src:manual/02-chipy.md:35 klas:A -->
+<!-- fc id:T-02-041 sha:0da97b7e src:manual/02-chipy.md:36 klas:A -->
 ### T-02-041 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1613,7 +1613,7 @@
 
 ---
 
-<!-- fc id:T-02-042 sha:d887dabc src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-042 sha:d887dabc src:manual/02-chipy.md:37 klas:A -->
 ### T-02-042 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1658,7 +1658,7 @@
 
 ---
 
-<!-- fc id:T-02-043 sha:8de930a4 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-043 sha:8de930a4 src:manual/02-chipy.md:37 klas:A -->
 ### T-02-043 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1703,7 +1703,7 @@
 
 ---
 
-<!-- fc id:T-02-044 sha:a5ffbdc2 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-044 sha:a5ffbdc2 src:manual/02-chipy.md:37 klas:A -->
 ### T-02-044 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1748,7 +1748,7 @@
 
 ---
 
-<!-- fc id:T-02-045 sha:715a8f46 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-045 sha:715a8f46 src:manual/02-chipy.md:37 klas:A -->
 ### T-02-045 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1796,7 +1796,7 @@
 
 ---
 
-<!-- fc id:T-02-046 sha:86264540 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-046 sha:86264540 src:manual/02-chipy.md:37 klas:A -->
 ### T-02-046 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1850,7 +1850,7 @@
 
 ---
 
-<!-- fc id:T-02-047 sha:ef59b447 src:manual/02-chipy.md:36 klas:A -->
+<!-- fc id:T-02-047 sha:ef59b447 src:manual/02-chipy.md:37 klas:A -->
 ### T-02-047 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1895,7 +1895,7 @@
 
 ---
 
-<!-- fc id:T-02-048 sha:9bdedf92 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-048 sha:9bdedf92 src:manual/02-chipy.md:38 klas:A -->
 ### T-02-048 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -1949,7 +1949,7 @@
 
 ---
 
-<!-- fc id:T-02-049 sha:37ca91b8 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-049 sha:37ca91b8 src:manual/02-chipy.md:38 klas:A -->
 ### T-02-049 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2003,7 +2003,7 @@
 
 ---
 
-<!-- fc id:T-02-050 sha:679fdc0a src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-050 sha:679fdc0a src:manual/02-chipy.md:38 klas:A -->
 ### T-02-050 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2057,7 +2057,7 @@
 
 ---
 
-<!-- fc id:T-02-051 sha:830f1e52 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-051 sha:830f1e52 src:manual/02-chipy.md:38 klas:A -->
 ### T-02-051 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2111,7 +2111,7 @@
 
 ---
 
-<!-- fc id:T-02-052 sha:0688b955 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-052 sha:0688b955 src:manual/02-chipy.md:38 klas:A -->
 ### T-02-052 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2165,7 +2165,7 @@
 
 ---
 
-<!-- fc id:T-02-053 sha:5180d438 src:manual/02-chipy.md:37 klas:A -->
+<!-- fc id:T-02-053 sha:5180d438 src:manual/02-chipy.md:38 klas:A -->
 ### T-02-053 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2219,7 +2219,7 @@
 
 ---
 
-<!-- fc id:T-02-054 sha:44c68cc9 src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-054 sha:44c68cc9 src:manual/02-chipy.md:39 klas:A -->
 ### T-02-054 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2264,7 +2264,7 @@
 
 ---
 
-<!-- fc id:T-02-055 sha:8758336a src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-055 sha:8758336a src:manual/02-chipy.md:39 klas:A -->
 ### T-02-055 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2309,7 +2309,7 @@
 
 ---
 
-<!-- fc id:T-02-056 sha:a7109dbe src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-056 sha:a7109dbe src:manual/02-chipy.md:39 klas:A -->
 ### T-02-056 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2357,7 +2357,7 @@
 
 ---
 
-<!-- fc id:T-02-057 sha:fedb80c4 src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-057 sha:fedb80c4 src:manual/02-chipy.md:39 klas:A -->
 ### T-02-057 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2402,7 +2402,7 @@
 
 ---
 
-<!-- fc id:T-02-058 sha:72e63fbb src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-058 sha:72e63fbb src:manual/02-chipy.md:39 klas:A -->
 ### T-02-058 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2450,7 +2450,7 @@
 
 ---
 
-<!-- fc id:T-02-059 sha:f2652967 src:manual/02-chipy.md:38 klas:A -->
+<!-- fc id:T-02-059 sha:f2652967 src:manual/02-chipy.md:39 klas:A -->
 ### T-02-059 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2498,7 +2498,7 @@
 
 ---
 
-<!-- fc id:T-02-060 sha:6d067d98 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-060 sha:6d067d98 src:manual/02-chipy.md:40 klas:A -->
 ### T-02-060 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2552,7 +2552,7 @@
 
 ---
 
-<!-- fc id:T-02-061 sha:d6c8ccf7 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-061 sha:d6c8ccf7 src:manual/02-chipy.md:40 klas:A -->
 ### T-02-061 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2606,7 +2606,7 @@
 
 ---
 
-<!-- fc id:T-02-062 sha:60a5ea72 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-062 sha:60a5ea72 src:manual/02-chipy.md:40 klas:A -->
 ### T-02-062 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2660,7 +2660,7 @@
 
 ---
 
-<!-- fc id:T-02-063 sha:6bd38e28 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-063 sha:6bd38e28 src:manual/02-chipy.md:40 klas:A -->
 ### T-02-063 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2714,7 +2714,7 @@
 
 ---
 
-<!-- fc id:T-02-064 sha:43079d53 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-064 sha:43079d53 src:manual/02-chipy.md:40 klas:A -->
 ### T-02-064 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2768,7 +2768,7 @@
 
 ---
 
-<!-- fc id:T-02-065 sha:aff9b495 src:manual/02-chipy.md:39 klas:A -->
+<!-- fc id:T-02-065 sha:aff9b495 src:manual/02-chipy.md:40 klas:A -->
 ### T-02-065 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2822,7 +2822,7 @@
 
 ---
 
-<!-- fc id:T-02-066 sha:b3fa1d90 src:manual/02-chipy.md:40 klas:F -->
+<!-- fc id:T-02-066 sha:b3fa1d90 src:manual/02-chipy.md:41 klas:F -->
 ### T-02-066 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2861,7 +2861,7 @@
 
 ---
 
-<!-- fc id:T-02-067 sha:5c099b4e src:manual/02-chipy.md:40 klas:A -->
+<!-- fc id:T-02-067 sha:5c099b4e src:manual/02-chipy.md:41 klas:A -->
 ### T-02-067 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2909,7 +2909,7 @@
 
 ---
 
-<!-- fc id:T-02-068 sha:7d1819e5 src:manual/02-chipy.md:40 klas:F -->
+<!-- fc id:T-02-068 sha:7d1819e5 src:manual/02-chipy.md:41 klas:F -->
 ### T-02-068 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2948,7 +2948,7 @@
 
 ---
 
-<!-- fc id:T-02-069 sha:85dd3bbe src:manual/02-chipy.md:40 klas:F -->
+<!-- fc id:T-02-069 sha:85dd3bbe src:manual/02-chipy.md:41 klas:F -->
 ### T-02-069 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -2987,7 +2987,7 @@
 
 ---
 
-<!-- fc id:T-02-070 sha:e3d31b30 src:manual/02-chipy.md:40 klas:F -->
+<!-- fc id:T-02-070 sha:e3d31b30 src:manual/02-chipy.md:41 klas:F -->
 ### T-02-070 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -3026,7 +3026,7 @@
 
 ---
 
-<!-- fc id:T-02-071 sha:74ca1990 src:manual/02-chipy.md:40 klas:F -->
+<!-- fc id:T-02-071 sha:74ca1990 src:manual/02-chipy.md:41 klas:F -->
 ### T-02-071 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4492,7 +4492,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-121 sha:aafacce0 src:manual/02-chipy.md:179 klas:E -->
+<!-- fc id:T-02-121 sha:aafacce0 src:manual/02-chipy.md:180 klas:E -->
 ### T-02-121 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4531,7 +4531,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-122 sha:31913840 src:manual/02-chipy.md:179 klas:E -->
+<!-- fc id:T-02-122 sha:31913840 src:manual/02-chipy.md:180 klas:E -->
 ### T-02-122 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4570,7 +4570,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-123 sha:b7228131 src:manual/02-chipy.md:180 klas:F -->
+<!-- fc id:T-02-123 sha:b7228131 src:manual/02-chipy.md:181 klas:F -->
 ### T-02-123 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4609,7 +4609,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-124 sha:a38da246 src:manual/02-chipy.md:180 klas:F -->
+<!-- fc id:T-02-124 sha:a38da246 src:manual/02-chipy.md:181 klas:F -->
 ### T-02-124 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4648,7 +4648,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-125 sha:451c14a8 src:manual/02-chipy.md:181 klas:F -->
+<!-- fc id:T-02-125 sha:451c14a8 src:manual/02-chipy.md:182 klas:F -->
 ### T-02-125 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4687,7 +4687,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-126 sha:d4198bbd src:manual/02-chipy.md:181 klas:A -->
+<!-- fc id:T-02-126 sha:d4198bbd src:manual/02-chipy.md:182 klas:A -->
 ### T-02-126 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4732,7 +4732,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-127 sha:ae41dea8 src:manual/02-chipy.md:182 klas:E -->
+<!-- fc id:T-02-127 sha:ae41dea8 src:manual/02-chipy.md:183 klas:E -->
 ### T-02-127 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4771,7 +4771,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-128 sha:4020ac33 src:manual/02-chipy.md:182 klas:E -->
+<!-- fc id:T-02-128 sha:4020ac33 src:manual/02-chipy.md:183 klas:E -->
 ### T-02-128 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4810,7 +4810,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-129 sha:78ce8952 src:manual/02-chipy.md:183 klas:B -->
+<!-- fc id:T-02-129 sha:78ce8952 src:manual/02-chipy.md:184 klas:B -->
 ### T-02-129 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4857,7 +4857,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-130 sha:c8184cfc src:manual/02-chipy.md:183 klas:B -->
+<!-- fc id:T-02-130 sha:c8184cfc src:manual/02-chipy.md:184 klas:B -->
 ### T-02-130 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4904,7 +4904,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-131 sha:7091ac6f src:manual/02-chipy.md:184 klas:F -->
+<!-- fc id:T-02-131 sha:7091ac6f src:manual/02-chipy.md:185 klas:F -->
 ### T-02-131 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4943,7 +4943,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-132 sha:79873967 src:manual/02-chipy.md:184 klas:F -->
+<!-- fc id:T-02-132 sha:79873967 src:manual/02-chipy.md:185 klas:F -->
 ### T-02-132 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -4982,7 +4982,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-133 sha:bda12f8d src:manual/02-chipy.md:185 klas:B -->
+<!-- fc id:T-02-133 sha:bda12f8d src:manual/02-chipy.md:186 klas:B -->
 ### T-02-133 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5028,7 +5028,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-134 sha:fca9e612 src:manual/02-chipy.md:185 klas:A -->
+<!-- fc id:T-02-134 sha:fca9e612 src:manual/02-chipy.md:186 klas:A -->
 ### T-02-134 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5082,7 +5082,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-135 sha:32086172 src:manual/02-chipy.md:186 klas:A -->
+<!-- fc id:T-02-135 sha:32086172 src:manual/02-chipy.md:187 klas:A -->
 ### T-02-135 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5136,7 +5136,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-136 sha:59bd179d src:manual/02-chipy.md:186 klas:A -->
+<!-- fc id:T-02-136 sha:59bd179d src:manual/02-chipy.md:187 klas:A -->
 ### T-02-136 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5190,7 +5190,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-137 sha:7e859643 src:manual/02-chipy.md:187 klas:A -->
+<!-- fc id:T-02-137 sha:7e859643 src:manual/02-chipy.md:188 klas:A -->
 ### T-02-137 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5235,7 +5235,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-138 sha:7f0446d0 src:manual/02-chipy.md:187 klas:E -->
+<!-- fc id:T-02-138 sha:7f0446d0 src:manual/02-chipy.md:188 klas:E -->
 ### T-02-138 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5274,7 +5274,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-139 sha:aaa0d26b src:manual/02-chipy.md:188 klas:B -->
+<!-- fc id:T-02-139 sha:aaa0d26b src:manual/02-chipy.md:189 klas:B -->
 ### T-02-139 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**
@@ -5320,7 +5320,7 @@ S3. Актуальна наявність — у датованому вклад
 
 ---
 
-<!-- fc id:T-02-140 sha:202ec3ac src:manual/02-chipy.md:188 klas:F -->
+<!-- fc id:T-02-140 sha:202ec3ac src:manual/02-chipy.md:189 klas:F -->
 ### T-02-140 · komirka · `manual/02-chipy.md`
 
 **Твердження, коротко**

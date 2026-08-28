@@ -260,7 +260,7 @@
 
 ---
 
-<!-- fc id:T-60-010 sha:86983c72 src:manual/60-proj-loger.md:28 klas:S -->
+<!-- fc id:T-60-010 sha:86983c72 src:manual/60-proj-loger.md:29 klas:S -->
 ### T-60-010 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-60-011 sha:cc0e8296 src:manual/60-proj-loger.md:28 klas:F -->
+<!-- fc id:T-60-011 sha:cc0e8296 src:manual/60-proj-loger.md:29 klas:F -->
 ### T-60-011 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -344,7 +344,7 @@
 
 ---
 
-<!-- fc id:T-60-012 sha:ae098f83 src:manual/60-proj-loger.md:29 klas:F -->
+<!-- fc id:T-60-012 sha:ae098f83 src:manual/60-proj-loger.md:30 klas:F -->
 ### T-60-012 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-60-013 sha:9800167e src:manual/60-proj-loger.md:29 klas:F -->
+<!-- fc id:T-60-013 sha:9800167e src:manual/60-proj-loger.md:30 klas:F -->
 ### T-60-013 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -390,7 +390,7 @@
 
 ---
 
-<!-- fc id:T-60-014 sha:42ba36b1 src:manual/60-proj-loger.md:30 klas:F -->
+<!-- fc id:T-60-014 sha:42ba36b1 src:manual/60-proj-loger.md:31 klas:F -->
 ### T-60-014 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -429,7 +429,7 @@
 
 ---
 
-<!-- fc id:T-60-015 sha:aa59c919 src:manual/60-proj-loger.md:30 klas:A -->
+<!-- fc id:T-60-015 sha:aa59c919 src:manual/60-proj-loger.md:31 klas:A -->
 ### T-60-015 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -479,7 +479,7 @@
 
 ---
 
-<!-- fc id:T-60-016 sha:376fd675 src:manual/60-proj-loger.md:31 klas:E -->
+<!-- fc id:T-60-016 sha:376fd675 src:manual/60-proj-loger.md:32 klas:E -->
 ### T-60-016 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -524,7 +524,7 @@
 
 ---
 
-<!-- fc id:T-60-017 sha:90f9a897 src:manual/60-proj-loger.md:31 klas:C -->
+<!-- fc id:T-60-017 sha:90f9a897 src:manual/60-proj-loger.md:32 klas:C -->
 ### T-60-017 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -568,7 +568,7 @@
 
 ---
 
-<!-- fc id:T-60-018 sha:c08c37e1 src:manual/60-proj-loger.md:32 klas:E -->
+<!-- fc id:T-60-018 sha:c08c37e1 src:manual/60-proj-loger.md:33 klas:E -->
 ### T-60-018 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-60-019 sha:b5b70cc2 src:manual/60-proj-loger.md:32 klas:F -->
+<!-- fc id:T-60-019 sha:b5b70cc2 src:manual/60-proj-loger.md:33 klas:F -->
 ### T-60-019 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -646,7 +646,7 @@
 
 ---
 
-<!-- fc id:T-60-020 sha:69538962 src:manual/60-proj-loger.md:33 klas:C -->
+<!-- fc id:T-60-020 sha:69538962 src:manual/60-proj-loger.md:34 klas:C -->
 ### T-60-020 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -689,7 +689,7 @@
 
 ---
 
-<!-- fc id:T-60-021 sha:d7115003 src:manual/60-proj-loger.md:33 klas:C -->
+<!-- fc id:T-60-021 sha:d7115003 src:manual/60-proj-loger.md:34 klas:C -->
 ### T-60-021 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -732,7 +732,7 @@
 
 ---
 
-<!-- fc id:T-60-022 sha:a5e98667 src:manual/60-proj-loger.md:34 klas:C -->
+<!-- fc id:T-60-022 sha:a5e98667 src:manual/60-proj-loger.md:35 klas:C -->
 ### T-60-022 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -775,7 +775,7 @@
 
 ---
 
-<!-- fc id:T-60-023 sha:b13324f3 src:manual/60-proj-loger.md:34 klas:C -->
+<!-- fc id:T-60-023 sha:b13324f3 src:manual/60-proj-loger.md:35 klas:C -->
 ### T-60-023 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -818,7 +818,7 @@
 
 ---
 
-<!-- fc id:T-60-024 sha:8315296f src:manual/60-proj-loger.md:35 klas:E -->
+<!-- fc id:T-60-024 sha:8315296f src:manual/60-proj-loger.md:36 klas:E -->
 ### T-60-024 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -863,7 +863,7 @@
 
 ---
 
-<!-- fc id:T-60-025 sha:b07cbc0d src:manual/60-proj-loger.md:35 klas:E -->
+<!-- fc id:T-60-025 sha:b07cbc0d src:manual/60-proj-loger.md:36 klas:E -->
 ### T-60-025 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -908,7 +908,7 @@
 
 ---
 
-<!-- fc id:T-60-026 sha:7326d03c src:manual/60-proj-loger.md:36 klas:E -->
+<!-- fc id:T-60-026 sha:7326d03c src:manual/60-proj-loger.md:37 klas:E -->
 ### T-60-026 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -953,7 +953,7 @@
 
 ---
 
-<!-- fc id:T-60-027 sha:6b151619 src:manual/60-proj-loger.md:36 klas:A -->
+<!-- fc id:T-60-027 sha:6b151619 src:manual/60-proj-loger.md:37 klas:A -->
 ### T-60-027 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1003,7 +1003,7 @@
 
 ---
 
-<!-- fc id:T-60-028 sha:060e5700 src:manual/60-proj-loger.md:37 klas:B -->
+<!-- fc id:T-60-028 sha:060e5700 src:manual/60-proj-loger.md:38 klas:B -->
 ### T-60-028 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1054,7 +1054,7 @@
 
 ---
 
-<!-- fc id:T-60-029 sha:186c921d src:manual/60-proj-loger.md:37 klas:B -->
+<!-- fc id:T-60-029 sha:186c921d src:manual/60-proj-loger.md:38 klas:B -->
 ### T-60-029 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1164,7 +1164,7 @@
 
 ---
 
-<!-- fc id:T-60-032 sha:3daa915e src:manual/60-proj-loger.md:46 klas:A -->
+<!-- fc id:T-60-032 sha:3daa915e src:manual/60-proj-loger.md:47 klas:A -->
 ### T-60-032 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1228,7 +1228,7 @@
 
 ---
 
-<!-- fc id:T-60-033 sha:f0e5e49f src:manual/60-proj-loger.md:46 klas:A -->
+<!-- fc id:T-60-033 sha:f0e5e49f src:manual/60-proj-loger.md:47 klas:A -->
 ### T-60-033 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1292,7 +1292,7 @@
 
 ---
 
-<!-- fc id:T-60-034 sha:428aeadd src:manual/60-proj-loger.md:47 klas:A -->
+<!-- fc id:T-60-034 sha:428aeadd src:manual/60-proj-loger.md:48 klas:A -->
 ### T-60-034 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1356,7 +1356,7 @@
 
 ---
 
-<!-- fc id:T-60-035 sha:fcf60801 src:manual/60-proj-loger.md:47 klas:A -->
+<!-- fc id:T-60-035 sha:fcf60801 src:manual/60-proj-loger.md:48 klas:A -->
 ### T-60-035 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1420,7 +1420,7 @@
 
 ---
 
-<!-- fc id:T-60-036 sha:08cc13e4 src:manual/60-proj-loger.md:48 klas:F -->
+<!-- fc id:T-60-036 sha:08cc13e4 src:manual/60-proj-loger.md:49 klas:F -->
 ### T-60-036 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1457,7 +1457,7 @@
 
 ---
 
-<!-- fc id:T-60-037 sha:48e76c55 src:manual/60-proj-loger.md:48 klas:A -->
+<!-- fc id:T-60-037 sha:48e76c55 src:manual/60-proj-loger.md:49 klas:A -->
 ### T-60-037 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1501,7 +1501,7 @@
 
 ---
 
-<!-- fc id:T-60-038 sha:5ab1fd1f src:manual/60-proj-loger.md:49 klas:B -->
+<!-- fc id:T-60-038 sha:5ab1fd1f src:manual/60-proj-loger.md:50 klas:B -->
 ### T-60-038 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1550,7 +1550,7 @@
 
 ---
 
-<!-- fc id:T-60-039 sha:6d7a7c0c src:manual/60-proj-loger.md:49 klas:B -->
+<!-- fc id:T-60-039 sha:6d7a7c0c src:manual/60-proj-loger.md:50 klas:B -->
 ### T-60-039 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1599,7 +1599,7 @@
 
 ---
 
-<!-- fc id:T-60-040 sha:cd06b540 src:manual/60-proj-loger.md:50 klas:A -->
+<!-- fc id:T-60-040 sha:cd06b540 src:manual/60-proj-loger.md:51 klas:A -->
 ### T-60-040 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1663,7 +1663,7 @@
 
 ---
 
-<!-- fc id:T-60-041 sha:556efc25 src:manual/60-proj-loger.md:50 klas:A -->
+<!-- fc id:T-60-041 sha:556efc25 src:manual/60-proj-loger.md:51 klas:A -->
 ### T-60-041 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1727,7 +1727,7 @@
 
 ---
 
-<!-- fc id:T-60-042 sha:1c06c4e9 src:manual/60-proj-loger.md:51 klas:A -->
+<!-- fc id:T-60-042 sha:1c06c4e9 src:manual/60-proj-loger.md:52 klas:A -->
 ### T-60-042 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -1771,7 +1771,7 @@
 
 ---
 
-<!-- fc id:T-60-043 sha:dcea22ca src:manual/60-proj-loger.md:51 klas:A -->
+<!-- fc id:T-60-043 sha:dcea22ca src:manual/60-proj-loger.md:52 klas:A -->
 ### T-60-043 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4282,7 +4282,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-117 sha:a6f4ae9a src:manual/60-proj-loger.md:314 klas:D -->
+<!-- fc id:T-60-117 sha:a6f4ae9a src:manual/60-proj-loger.md:315 klas:D -->
 ### T-60-117 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4326,7 +4326,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-118 sha:17288f9c src:manual/60-proj-loger.md:314 klas:C -->
+<!-- fc id:T-60-118 sha:17288f9c src:manual/60-proj-loger.md:315 klas:C -->
 ### T-60-118 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4365,7 +4365,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-119 sha:2d0a41b2 src:manual/60-proj-loger.md:314 klas:D -->
+<!-- fc id:T-60-119 sha:2d0a41b2 src:manual/60-proj-loger.md:315 klas:D -->
 ### T-60-119 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4409,7 +4409,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-120 sha:b201f1de src:manual/60-proj-loger.md:315 klas:A -->
+<!-- fc id:T-60-120 sha:b201f1de src:manual/60-proj-loger.md:316 klas:A -->
 ### T-60-120 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4451,7 +4451,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-121 sha:68da1621 src:manual/60-proj-loger.md:315 klas:A -->
+<!-- fc id:T-60-121 sha:68da1621 src:manual/60-proj-loger.md:316 klas:A -->
 ### T-60-121 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4493,7 +4493,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-122 sha:7bf88644 src:manual/60-proj-loger.md:315 klas:A -->
+<!-- fc id:T-60-122 sha:7bf88644 src:manual/60-proj-loger.md:316 klas:A -->
 ### T-60-122 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4535,7 +4535,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-123 sha:772fb917 src:manual/60-proj-loger.md:316 klas:E -->
+<!-- fc id:T-60-123 sha:772fb917 src:manual/60-proj-loger.md:317 klas:E -->
 ### T-60-123 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4574,7 +4574,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-124 sha:ef81a4da src:manual/60-proj-loger.md:316 klas:E -->
+<!-- fc id:T-60-124 sha:ef81a4da src:manual/60-proj-loger.md:317 klas:E -->
 ### T-60-124 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4615,7 +4615,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-125 sha:386c98cf src:manual/60-proj-loger.md:316 klas:D -->
+<!-- fc id:T-60-125 sha:386c98cf src:manual/60-proj-loger.md:317 klas:D -->
 ### T-60-125 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4659,7 +4659,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-126 sha:9084f4d4 src:manual/60-proj-loger.md:317 klas:E -->
+<!-- fc id:T-60-126 sha:9084f4d4 src:manual/60-proj-loger.md:318 klas:E -->
 ### T-60-126 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4694,7 +4694,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-127 sha:d5314759 src:manual/60-proj-loger.md:317 klas:E -->
+<!-- fc id:T-60-127 sha:d5314759 src:manual/60-proj-loger.md:318 klas:E -->
 ### T-60-127 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4735,7 +4735,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-128 sha:4b86eaef src:manual/60-proj-loger.md:317 klas:D -->
+<!-- fc id:T-60-128 sha:4b86eaef src:manual/60-proj-loger.md:318 klas:D -->
 ### T-60-128 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4779,7 +4779,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-129 sha:7ebdd2fb src:manual/60-proj-loger.md:318 klas:E -->
+<!-- fc id:T-60-129 sha:7ebdd2fb src:manual/60-proj-loger.md:319 klas:E -->
 ### T-60-129 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**
@@ -4814,7 +4814,7 @@ static void zasnuty(uint32_t sekund) {
 
 ---
 
-<!-- fc id:T-60-130 sha:fa15cd97 src:manual/60-proj-loger.md:318 klas:D -->
+<!-- fc id:T-60-130 sha:fa15cd97 src:manual/60-proj-loger.md:319 klas:D -->
 ### T-60-130 · komirka · `manual/60-proj-loger.md`
 
 **Твердження, коротко**

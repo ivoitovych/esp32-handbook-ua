@@ -131,7 +131,7 @@
 
 ---
 
-<!-- fc id:T-25-006 sha:6c94cb41 src:manual/25-log.md:17 klas:F -->
+<!-- fc id:T-25-006 sha:6c94cb41 src:manual/25-log.md:18 klas:F -->
 ### T-25-006 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -169,7 +169,7 @@
 
 ---
 
-<!-- fc id:T-25-007 sha:af9c4cd0 src:manual/25-log.md:17 klas:A -->
+<!-- fc id:T-25-007 sha:af9c4cd0 src:manual/25-log.md:18 klas:A -->
 ### T-25-007 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -227,7 +227,7 @@
 
 ---
 
-<!-- fc id:T-25-008 sha:e36dfaee src:manual/25-log.md:18 klas:F -->
+<!-- fc id:T-25-008 sha:e36dfaee src:manual/25-log.md:19 klas:F -->
 ### T-25-008 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -265,7 +265,7 @@
 
 ---
 
-<!-- fc id:T-25-009 sha:18893f2e src:manual/25-log.md:18 klas:F -->
+<!-- fc id:T-25-009 sha:18893f2e src:manual/25-log.md:19 klas:F -->
 ### T-25-009 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -303,7 +303,7 @@
 
 ---
 
-<!-- fc id:T-25-010 sha:a3720873 src:manual/25-log.md:19 klas:F -->
+<!-- fc id:T-25-010 sha:a3720873 src:manual/25-log.md:20 klas:F -->
 ### T-25-010 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -341,7 +341,7 @@
 
 ---
 
-<!-- fc id:T-25-011 sha:ec0ea2df src:manual/25-log.md:19 klas:F -->
+<!-- fc id:T-25-011 sha:ec0ea2df src:manual/25-log.md:20 klas:F -->
 ### T-25-011 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -379,7 +379,7 @@
 
 ---
 
-<!-- fc id:T-25-012 sha:0a2076e9 src:manual/25-log.md:20 klas:F -->
+<!-- fc id:T-25-012 sha:0a2076e9 src:manual/25-log.md:21 klas:F -->
 ### T-25-012 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -417,7 +417,7 @@
 
 ---
 
-<!-- fc id:T-25-013 sha:03618666 src:manual/25-log.md:20 klas:F -->
+<!-- fc id:T-25-013 sha:03618666 src:manual/25-log.md:21 klas:F -->
 ### T-25-013 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -455,7 +455,7 @@
 
 ---
 
-<!-- fc id:T-25-014 sha:04b43971 src:manual/25-log.md:21 klas:F -->
+<!-- fc id:T-25-014 sha:04b43971 src:manual/25-log.md:22 klas:F -->
 ### T-25-014 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -493,7 +493,7 @@
 
 ---
 
-<!-- fc id:T-25-015 sha:1ea128ab src:manual/25-log.md:21 klas:F -->
+<!-- fc id:T-25-015 sha:1ea128ab src:manual/25-log.md:22 klas:F -->
 ### T-25-015 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -531,7 +531,7 @@
 
 ---
 
-<!-- fc id:T-25-016 sha:c2918b9c src:manual/25-log.md:22 klas:F -->
+<!-- fc id:T-25-016 sha:c2918b9c src:manual/25-log.md:23 klas:F -->
 ### T-25-016 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -569,7 +569,7 @@
 
 ---
 
-<!-- fc id:T-25-017 sha:019e46aa src:manual/25-log.md:22 klas:F -->
+<!-- fc id:T-25-017 sha:019e46aa src:manual/25-log.md:23 klas:F -->
 ### T-25-017 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-25-018 sha:61c4e333 src:manual/25-log.md:23 klas:E -->
+<!-- fc id:T-25-018 sha:61c4e333 src:manual/25-log.md:24 klas:E -->
 ### T-25-018 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**
@@ -645,7 +645,7 @@
 
 ---
 
-<!-- fc id:T-25-019 sha:9a237f54 src:manual/25-log.md:23 klas:E -->
+<!-- fc id:T-25-019 sha:9a237f54 src:manual/25-log.md:24 klas:E -->
 ### T-25-019 · komirka · `manual/25-log.md`
 
 **Твердження, коротко**

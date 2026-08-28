@@ -1805,7 +1805,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-063 sha:9628ec9a src:manual/40-merezha.md:142 klas:E -->
+<!-- fc id:T-40-063 sha:9628ec9a src:manual/40-merezha.md:143 klas:E -->
 ### T-40-063 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1838,7 +1838,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-064 sha:7d437bc9 src:manual/40-merezha.md:142 klas:E -->
+<!-- fc id:T-40-064 sha:7d437bc9 src:manual/40-merezha.md:143 klas:E -->
 ### T-40-064 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1871,7 +1871,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-065 sha:717e2285 src:manual/40-merezha.md:143 klas:E -->
+<!-- fc id:T-40-065 sha:717e2285 src:manual/40-merezha.md:144 klas:E -->
 ### T-40-065 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1904,7 +1904,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-066 sha:83a52bfd src:manual/40-merezha.md:143 klas:E -->
+<!-- fc id:T-40-066 sha:83a52bfd src:manual/40-merezha.md:144 klas:E -->
 ### T-40-066 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1937,7 +1937,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-067 sha:6221cb30 src:manual/40-merezha.md:144 klas:E -->
+<!-- fc id:T-40-067 sha:6221cb30 src:manual/40-merezha.md:145 klas:E -->
 ### T-40-067 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**
@@ -1970,7 +1970,7 @@ esp_mqtt_client_publish(client, "teplytsia/temperatura", "23.5", 0, 1, 0);
 
 ---
 
-<!-- fc id:T-40-068 sha:8500e7ee src:manual/40-merezha.md:144 klas:E -->
+<!-- fc id:T-40-068 sha:8500e7ee src:manual/40-merezha.md:145 klas:E -->
 ### T-40-068 · komirka · `manual/40-merezha.md`
 
 **Твердження, коротко**

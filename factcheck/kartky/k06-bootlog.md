@@ -202,7 +202,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-008 sha:508894ad src:kartky/k06-bootlog.md:16 klas:A -->
+<!-- fc id:T-K06-008 sha:508894ad src:kartky/k06-bootlog.md:17 klas:A -->
 ### T-K06-008 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -233,7 +233,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-009 sha:61891822 src:kartky/k06-bootlog.md:16 klas:A -->
+<!-- fc id:T-K06-009 sha:61891822 src:kartky/k06-bootlog.md:17 klas:A -->
 ### T-K06-009 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -279,7 +279,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-010 sha:1baef394 src:kartky/k06-bootlog.md:17 klas:A -->
+<!-- fc id:T-K06-010 sha:1baef394 src:kartky/k06-bootlog.md:18 klas:A -->
 ### T-K06-010 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -325,7 +325,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-011 sha:35861e2c src:kartky/k06-bootlog.md:17 klas:A -->
+<!-- fc id:T-K06-011 sha:35861e2c src:kartky/k06-bootlog.md:18 klas:A -->
 ### T-K06-011 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -381,7 +381,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-012 sha:60cc5d87 src:kartky/k06-bootlog.md:18 klas:A -->
+<!-- fc id:T-K06-012 sha:60cc5d87 src:kartky/k06-bootlog.md:19 klas:A -->
 ### T-K06-012 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -427,7 +427,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-013 sha:91ecb724 src:kartky/k06-bootlog.md:18 klas:A -->
+<!-- fc id:T-K06-013 sha:91ecb724 src:kartky/k06-bootlog.md:19 klas:A -->
 ### T-K06-013 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -473,7 +473,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-014 sha:b13c24c5 src:kartky/k06-bootlog.md:19 klas:A -->
+<!-- fc id:T-K06-014 sha:b13c24c5 src:kartky/k06-bootlog.md:20 klas:A -->
 ### T-K06-014 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -536,7 +536,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-015 sha:f52ff7ed src:kartky/k06-bootlog.md:19 klas:A -->
+<!-- fc id:T-K06-015 sha:f52ff7ed src:kartky/k06-bootlog.md:20 klas:A -->
 ### T-K06-015 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -582,7 +582,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-016 sha:a4c80ac9 src:kartky/k06-bootlog.md:20 klas:A -->
+<!-- fc id:T-K06-016 sha:a4c80ac9 src:kartky/k06-bootlog.md:21 klas:A -->
 ### T-K06-016 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -628,7 +628,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-017 sha:ec4961ee src:kartky/k06-bootlog.md:20 klas:A -->
+<!-- fc id:T-K06-017 sha:ec4961ee src:kartky/k06-bootlog.md:21 klas:A -->
 ### T-K06-017 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -674,7 +674,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-018 sha:61c76aaf src:kartky/k06-bootlog.md:21 klas:A -->
+<!-- fc id:T-K06-018 sha:61c76aaf src:kartky/k06-bootlog.md:22 klas:A -->
 ### T-K06-018 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -720,7 +720,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-019 sha:df7de7e7 src:kartky/k06-bootlog.md:21 klas:A -->
+<!-- fc id:T-K06-019 sha:df7de7e7 src:kartky/k06-bootlog.md:22 klas:A -->
 ### T-K06-019 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -766,7 +766,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-020 sha:9b73d7e0 src:kartky/k06-bootlog.md:22 klas:A -->
+<!-- fc id:T-K06-020 sha:9b73d7e0 src:kartky/k06-bootlog.md:23 klas:A -->
 ### T-K06-020 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -829,7 +829,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-021 sha:21e68d08 src:kartky/k06-bootlog.md:22 klas:B -->
+<!-- fc id:T-K06-021 sha:21e68d08 src:kartky/k06-bootlog.md:23 klas:B -->
 ### T-K06-021 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -875,7 +875,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-022 sha:4f167746 src:kartky/k06-bootlog.md:23 klas:A -->
+<!-- fc id:T-K06-022 sha:4f167746 src:kartky/k06-bootlog.md:24 klas:A -->
 ### T-K06-022 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -938,7 +938,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-023 sha:00c236fb src:kartky/k06-bootlog.md:23 klas:A -->
+<!-- fc id:T-K06-023 sha:00c236fb src:kartky/k06-bootlog.md:24 klas:A -->
 ### T-K06-023 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -984,7 +984,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-024 sha:9338f26b src:kartky/k06-bootlog.md:24 klas:A -->
+<!-- fc id:T-K06-024 sha:9338f26b src:kartky/k06-bootlog.md:25 klas:A -->
 ### T-K06-024 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**
@@ -1030,7 +1030,7 @@ rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 
 ---
 
-<!-- fc id:T-K06-025 sha:00c16d81 src:kartky/k06-bootlog.md:24 klas:A -->
+<!-- fc id:T-K06-025 sha:00c16d81 src:kartky/k06-bootlog.md:25 klas:A -->
 ### T-K06-025 · komirka · `kartky/k06-bootlog.md`
 
 **Твердження, коротко**

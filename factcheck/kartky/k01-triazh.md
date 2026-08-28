@@ -124,7 +124,7 @@
 
 ---
 
-<!-- fc id:T-K01-006 sha:f5a2b442 src:kartky/k01-triazh.md:11 klas:A -->
+<!-- fc id:T-K01-006 sha:f5a2b442 src:kartky/k01-triazh.md:12 klas:A -->
 ### T-K01-006 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -165,7 +165,7 @@
 
 ---
 
-<!-- fc id:T-K01-007 sha:8e47008e src:kartky/k01-triazh.md:11 klas:F -->
+<!-- fc id:T-K01-007 sha:8e47008e src:kartky/k01-triazh.md:12 klas:F -->
 ### T-K01-007 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -200,7 +200,7 @@
 
 ---
 
-<!-- fc id:T-K01-008 sha:3138f20b src:kartky/k01-triazh.md:12 klas:F -->
+<!-- fc id:T-K01-008 sha:3138f20b src:kartky/k01-triazh.md:13 klas:F -->
 ### T-K01-008 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -235,7 +235,7 @@
 
 ---
 
-<!-- fc id:T-K01-009 sha:da93faf6 src:kartky/k01-triazh.md:12 klas:F -->
+<!-- fc id:T-K01-009 sha:da93faf6 src:kartky/k01-triazh.md:13 klas:F -->
 ### T-K01-009 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -270,7 +270,7 @@
 
 ---
 
-<!-- fc id:T-K01-010 sha:92bef9b9 src:kartky/k01-triazh.md:13 klas:F -->
+<!-- fc id:T-K01-010 sha:92bef9b9 src:kartky/k01-triazh.md:14 klas:F -->
 ### T-K01-010 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -305,7 +305,7 @@
 
 ---
 
-<!-- fc id:T-K01-011 sha:36d7f03f src:kartky/k01-triazh.md:13 klas:F -->
+<!-- fc id:T-K01-011 sha:36d7f03f src:kartky/k01-triazh.md:14 klas:F -->
 ### T-K01-011 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -340,7 +340,7 @@
 
 ---
 
-<!-- fc id:T-K01-012 sha:db5fc68e src:kartky/k01-triazh.md:14 klas:F -->
+<!-- fc id:T-K01-012 sha:db5fc68e src:kartky/k01-triazh.md:15 klas:F -->
 ### T-K01-012 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -375,7 +375,7 @@
 
 ---
 
-<!-- fc id:T-K01-013 sha:d9ec92f0 src:kartky/k01-triazh.md:14 klas:F -->
+<!-- fc id:T-K01-013 sha:d9ec92f0 src:kartky/k01-triazh.md:15 klas:F -->
 ### T-K01-013 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -410,7 +410,7 @@
 
 ---
 
-<!-- fc id:T-K01-014 sha:9e2dcef5 src:kartky/k01-triazh.md:15 klas:F -->
+<!-- fc id:T-K01-014 sha:9e2dcef5 src:kartky/k01-triazh.md:16 klas:F -->
 ### T-K01-014 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**
@@ -445,7 +445,7 @@
 
 ---
 
-<!-- fc id:T-K01-015 sha:cfcde96c src:kartky/k01-triazh.md:15 klas:F -->
+<!-- fc id:T-K01-015 sha:cfcde96c src:kartky/k01-triazh.md:16 klas:F -->
 ### T-K01-015 · komirka · `kartky/k01-triazh.md`
 
 **Твердження, коротко**

@@ -160,7 +160,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-007 sha:ff82e6cf src:manual/19-ota.md:16 klas:A -->
+<!-- fc id:T-19-007 sha:ff82e6cf src:manual/19-ota.md:17 klas:A -->
 ### T-19-007 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -199,7 +199,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-008 sha:c7c9e545 src:manual/19-ota.md:16 klas:F -->
+<!-- fc id:T-19-008 sha:c7c9e545 src:manual/19-ota.md:17 klas:F -->
 ### T-19-008 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -232,7 +232,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-009 sha:d66c4921 src:manual/19-ota.md:17 klas:A -->
+<!-- fc id:T-19-009 sha:d66c4921 src:manual/19-ota.md:18 klas:A -->
 ### T-19-009 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -271,7 +271,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-010 sha:5ee59b5f src:manual/19-ota.md:17 klas:F -->
+<!-- fc id:T-19-010 sha:5ee59b5f src:manual/19-ota.md:18 klas:F -->
 ### T-19-010 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -304,7 +304,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-011 sha:94e079d1 src:manual/19-ota.md:18 klas:A -->
+<!-- fc id:T-19-011 sha:94e079d1 src:manual/19-ota.md:19 klas:A -->
 ### T-19-011 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**
@@ -343,7 +343,7 @@ OTA (over-the-air) — оновлення прошивки без фізично
 
 ---
 
-<!-- fc id:T-19-012 sha:6c8c58b7 src:manual/19-ota.md:18 klas:F -->
+<!-- fc id:T-19-012 sha:6c8c58b7 src:manual/19-ota.md:19 klas:F -->
 ### T-19-012 · komirka · `manual/19-ota.md`
 
 **Твердження, коротко**

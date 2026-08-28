@@ -82,7 +82,7 @@
 
 ---
 
-<!-- fc id:T-46-004 sha:862700ce src:manual/46-dyspleyi.md:10 klas:A -->
+<!-- fc id:T-46-004 sha:862700ce src:manual/46-dyspleyi.md:11 klas:A -->
 ### T-46-004 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -122,7 +122,7 @@
 
 ---
 
-<!-- fc id:T-46-005 sha:b834ae0e src:manual/46-dyspleyi.md:10 klas:A -->
+<!-- fc id:T-46-005 sha:b834ae0e src:manual/46-dyspleyi.md:11 klas:A -->
 ### T-46-005 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-46-006 sha:30fa5a62 src:manual/46-dyspleyi.md:10 klas:A -->
+<!-- fc id:T-46-006 sha:30fa5a62 src:manual/46-dyspleyi.md:11 klas:A -->
 ### T-46-006 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -220,7 +220,7 @@
 
 ---
 
-<!-- fc id:T-46-007 sha:7683ff23 src:manual/46-dyspleyi.md:10 klas:A -->
+<!-- fc id:T-46-007 sha:7683ff23 src:manual/46-dyspleyi.md:11 klas:A -->
 ### T-46-007 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -260,7 +260,7 @@
 
 ---
 
-<!-- fc id:T-46-008 sha:8d1c9e51 src:manual/46-dyspleyi.md:11 klas:A -->
+<!-- fc id:T-46-008 sha:8d1c9e51 src:manual/46-dyspleyi.md:12 klas:A -->
 ### T-46-008 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -308,7 +308,7 @@
 
 ---
 
-<!-- fc id:T-46-009 sha:6ed23144 src:manual/46-dyspleyi.md:11 klas:A -->
+<!-- fc id:T-46-009 sha:6ed23144 src:manual/46-dyspleyi.md:12 klas:A -->
 ### T-46-009 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -356,7 +356,7 @@
 
 ---
 
-<!-- fc id:T-46-010 sha:e4e2f0fd src:manual/46-dyspleyi.md:11 klas:A -->
+<!-- fc id:T-46-010 sha:e4e2f0fd src:manual/46-dyspleyi.md:12 klas:A -->
 ### T-46-010 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -404,7 +404,7 @@
 
 ---
 
-<!-- fc id:T-46-011 sha:7273b8f9 src:manual/46-dyspleyi.md:11 klas:A -->
+<!-- fc id:T-46-011 sha:7273b8f9 src:manual/46-dyspleyi.md:12 klas:A -->
 ### T-46-011 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -444,7 +444,7 @@
 
 ---
 
-<!-- fc id:T-46-012 sha:80458441 src:manual/46-dyspleyi.md:12 klas:E -->
+<!-- fc id:T-46-012 sha:80458441 src:manual/46-dyspleyi.md:13 klas:E -->
 ### T-46-012 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -480,7 +480,7 @@
 
 ---
 
-<!-- fc id:T-46-013 sha:fc224a18 src:manual/46-dyspleyi.md:12 klas:A -->
+<!-- fc id:T-46-013 sha:fc224a18 src:manual/46-dyspleyi.md:13 klas:A -->
 ### T-46-013 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -526,7 +526,7 @@
 
 ---
 
-<!-- fc id:T-46-014 sha:2683ce99 src:manual/46-dyspleyi.md:12 klas:A -->
+<!-- fc id:T-46-014 sha:2683ce99 src:manual/46-dyspleyi.md:13 klas:A -->
 ### T-46-014 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -571,7 +571,7 @@
 
 ---
 
-<!-- fc id:T-46-015 sha:f338098f src:manual/46-dyspleyi.md:12 klas:E -->
+<!-- fc id:T-46-015 sha:f338098f src:manual/46-dyspleyi.md:13 klas:E -->
 ### T-46-015 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -607,7 +607,7 @@
 
 ---
 
-<!-- fc id:T-46-016 sha:c7c7dc37 src:manual/46-dyspleyi.md:13 klas:E -->
+<!-- fc id:T-46-016 sha:c7c7dc37 src:manual/46-dyspleyi.md:14 klas:E -->
 ### T-46-016 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -643,7 +643,7 @@
 
 ---
 
-<!-- fc id:T-46-017 sha:a31fa981 src:manual/46-dyspleyi.md:13 klas:A -->
+<!-- fc id:T-46-017 sha:a31fa981 src:manual/46-dyspleyi.md:14 klas:A -->
 ### T-46-017 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -689,7 +689,7 @@
 
 ---
 
-<!-- fc id:T-46-018 sha:2eb01406 src:manual/46-dyspleyi.md:13 klas:A -->
+<!-- fc id:T-46-018 sha:2eb01406 src:manual/46-dyspleyi.md:14 klas:A -->
 ### T-46-018 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -731,7 +731,7 @@
 
 ---
 
-<!-- fc id:T-46-019 sha:8c1e541e src:manual/46-dyspleyi.md:13 klas:E -->
+<!-- fc id:T-46-019 sha:8c1e541e src:manual/46-dyspleyi.md:14 klas:E -->
 ### T-46-019 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -767,7 +767,7 @@
 
 ---
 
-<!-- fc id:T-46-020 sha:2fd93771 src:manual/46-dyspleyi.md:14 klas:E -->
+<!-- fc id:T-46-020 sha:2fd93771 src:manual/46-dyspleyi.md:15 klas:E -->
 ### T-46-020 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -801,7 +801,7 @@
 
 ---
 
-<!-- fc id:T-46-021 sha:6c4d6211 src:manual/46-dyspleyi.md:14 klas:F -->
+<!-- fc id:T-46-021 sha:6c4d6211 src:manual/46-dyspleyi.md:15 klas:F -->
 ### T-46-021 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -835,7 +835,7 @@
 
 ---
 
-<!-- fc id:T-46-022 sha:f0cf6de6 src:manual/46-dyspleyi.md:14 klas:E -->
+<!-- fc id:T-46-022 sha:f0cf6de6 src:manual/46-dyspleyi.md:15 klas:E -->
 ### T-46-022 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**
@@ -869,7 +869,7 @@
 
 ---
 
-<!-- fc id:T-46-023 sha:336725e3 src:manual/46-dyspleyi.md:14 klas:E -->
+<!-- fc id:T-46-023 sha:336725e3 src:manual/46-dyspleyi.md:15 klas:E -->
 ### T-46-023 · komirka · `manual/46-dyspleyi.md`
 
 **Твердження, коротко**

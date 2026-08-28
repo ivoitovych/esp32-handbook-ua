@@ -113,7 +113,7 @@
 
 ---
 
-<!-- fc id:T-28-005 sha:5ce4cc89 src:manual/28-analizator.md:13 klas:E -->
+<!-- fc id:T-28-005 sha:5ce4cc89 src:manual/28-analizator.md:14 klas:E -->
 ### T-28-005 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -156,7 +156,7 @@
 
 ---
 
-<!-- fc id:T-28-006 sha:9e5538f1 src:manual/28-analizator.md:13 klas:E -->
+<!-- fc id:T-28-006 sha:9e5538f1 src:manual/28-analizator.md:14 klas:E -->
 ### T-28-006 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -188,7 +188,7 @@
 
 ---
 
-<!-- fc id:T-28-007 sha:c1c01718 src:manual/28-analizator.md:14 klas:E -->
+<!-- fc id:T-28-007 sha:c1c01718 src:manual/28-analizator.md:15 klas:E -->
 ### T-28-007 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -220,7 +220,7 @@
 
 ---
 
-<!-- fc id:T-28-008 sha:6c056a88 src:manual/28-analizator.md:14 klas:D -->
+<!-- fc id:T-28-008 sha:6c056a88 src:manual/28-analizator.md:15 klas:D -->
 ### T-28-008 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -270,7 +270,7 @@
 
 ---
 
-<!-- fc id:T-28-009 sha:6d1158a2 src:manual/28-analizator.md:15 klas:E -->
+<!-- fc id:T-28-009 sha:6d1158a2 src:manual/28-analizator.md:16 klas:E -->
 ### T-28-009 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**
@@ -314,7 +314,7 @@
 
 ---
 
-<!-- fc id:T-28-010 sha:c240ee19 src:manual/28-analizator.md:15 klas:E -->
+<!-- fc id:T-28-010 sha:c240ee19 src:manual/28-analizator.md:16 klas:E -->
 ### T-28-010 · komirka · `manual/28-analizator.md`
 
 **Твердження, коротко**

@@ -149,7 +149,7 @@
 
 ---
 
-<!-- fc id:T-COM-007 sha:62f1b6ee src:inserts/components-2026-08.md:16 klas:F -->
+<!-- fc id:T-COM-007 sha:62f1b6ee src:inserts/components-2026-08.md:17 klas:F -->
 ### T-COM-007 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -183,7 +183,7 @@
 
 ---
 
-<!-- fc id:T-COM-008 sha:e3929f5e src:inserts/components-2026-08.md:16 klas:F -->
+<!-- fc id:T-COM-008 sha:e3929f5e src:inserts/components-2026-08.md:17 klas:F -->
 ### T-COM-008 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -217,7 +217,7 @@
 
 ---
 
-<!-- fc id:T-COM-009 sha:87955aca src:inserts/components-2026-08.md:17 klas:F -->
+<!-- fc id:T-COM-009 sha:87955aca src:inserts/components-2026-08.md:18 klas:F -->
 ### T-COM-009 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -251,7 +251,7 @@
 
 ---
 
-<!-- fc id:T-COM-010 sha:e623e717 src:inserts/components-2026-08.md:17 klas:F -->
+<!-- fc id:T-COM-010 sha:e623e717 src:inserts/components-2026-08.md:18 klas:F -->
 ### T-COM-010 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -285,7 +285,7 @@
 
 ---
 
-<!-- fc id:T-COM-011 sha:325f03c0 src:inserts/components-2026-08.md:18 klas:E -->
+<!-- fc id:T-COM-011 sha:325f03c0 src:inserts/components-2026-08.md:19 klas:E -->
 ### T-COM-011 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -319,7 +319,7 @@
 
 ---
 
-<!-- fc id:T-COM-012 sha:a9dfed82 src:inserts/components-2026-08.md:18 klas:E -->
+<!-- fc id:T-COM-012 sha:a9dfed82 src:inserts/components-2026-08.md:19 klas:E -->
 ### T-COM-012 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -353,7 +353,7 @@
 
 ---
 
-<!-- fc id:T-COM-013 sha:86b6962e src:inserts/components-2026-08.md:19 klas:F -->
+<!-- fc id:T-COM-013 sha:86b6962e src:inserts/components-2026-08.md:20 klas:F -->
 ### T-COM-013 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -387,7 +387,7 @@
 
 ---
 
-<!-- fc id:T-COM-014 sha:0aa192e8 src:inserts/components-2026-08.md:19 klas:A -->
+<!-- fc id:T-COM-014 sha:0aa192e8 src:inserts/components-2026-08.md:20 klas:A -->
 ### T-COM-014 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -433,7 +433,7 @@
 
 ---
 
-<!-- fc id:T-COM-015 sha:49eb66a1 src:inserts/components-2026-08.md:20 klas:F -->
+<!-- fc id:T-COM-015 sha:49eb66a1 src:inserts/components-2026-08.md:21 klas:F -->
 ### T-COM-015 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -467,7 +467,7 @@
 
 ---
 
-<!-- fc id:T-COM-016 sha:3074b1e8 src:inserts/components-2026-08.md:20 klas:E -->
+<!-- fc id:T-COM-016 sha:3074b1e8 src:inserts/components-2026-08.md:21 klas:E -->
 ### T-COM-016 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -536,7 +536,7 @@
 
 ---
 
-<!-- fc id:T-COM-018 sha:b2b5e5d7 src:inserts/components-2026-08.md:26 klas:F -->
+<!-- fc id:T-COM-018 sha:b2b5e5d7 src:inserts/components-2026-08.md:27 klas:F -->
 ### T-COM-018 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -571,7 +571,7 @@
 
 ---
 
-<!-- fc id:T-COM-019 sha:a277c905 src:inserts/components-2026-08.md:26 klas:B -->
+<!-- fc id:T-COM-019 sha:a277c905 src:inserts/components-2026-08.md:27 klas:B -->
 ### T-COM-019 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -625,7 +625,7 @@
 
 ---
 
-<!-- fc id:T-COM-020 sha:143fcf82 src:inserts/components-2026-08.md:27 klas:D -->
+<!-- fc id:T-COM-020 sha:143fcf82 src:inserts/components-2026-08.md:28 klas:D -->
 ### T-COM-020 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -690,7 +690,7 @@
 
 ---
 
-<!-- fc id:T-COM-021 sha:5b431873 src:inserts/components-2026-08.md:27 klas:E -->
+<!-- fc id:T-COM-021 sha:5b431873 src:inserts/components-2026-08.md:28 klas:E -->
 ### T-COM-021 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -738,7 +738,7 @@
 
 ---
 
-<!-- fc id:T-COM-022 sha:923e96e8 src:inserts/components-2026-08.md:28 klas:B -->
+<!-- fc id:T-COM-022 sha:923e96e8 src:inserts/components-2026-08.md:29 klas:B -->
 ### T-COM-022 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -782,7 +782,7 @@
 
 ---
 
-<!-- fc id:T-COM-023 sha:2286219e src:inserts/components-2026-08.md:28 klas:A -->
+<!-- fc id:T-COM-023 sha:2286219e src:inserts/components-2026-08.md:29 klas:A -->
 ### T-COM-023 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -824,7 +824,7 @@
 
 ---
 
-<!-- fc id:T-COM-024 sha:039a3fda src:inserts/components-2026-08.md:29 klas:F -->
+<!-- fc id:T-COM-024 sha:039a3fda src:inserts/components-2026-08.md:30 klas:F -->
 ### T-COM-024 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -859,7 +859,7 @@
 
 ---
 
-<!-- fc id:T-COM-025 sha:367ed7ac src:inserts/components-2026-08.md:29 klas:A -->
+<!-- fc id:T-COM-025 sha:367ed7ac src:inserts/components-2026-08.md:30 klas:A -->
 ### T-COM-025 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -900,7 +900,7 @@
 
 ---
 
-<!-- fc id:T-COM-026 sha:7e935ba7 src:inserts/components-2026-08.md:30 klas:E -->
+<!-- fc id:T-COM-026 sha:7e935ba7 src:inserts/components-2026-08.md:31 klas:E -->
 ### T-COM-026 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -935,7 +935,7 @@
 
 ---
 
-<!-- fc id:T-COM-027 sha:21af3596 src:inserts/components-2026-08.md:30 klas:E -->
+<!-- fc id:T-COM-027 sha:21af3596 src:inserts/components-2026-08.md:31 klas:E -->
 ### T-COM-027 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -970,7 +970,7 @@
 
 ---
 
-<!-- fc id:T-COM-028 sha:37cc4d8c src:inserts/components-2026-08.md:31 klas:A -->
+<!-- fc id:T-COM-028 sha:37cc4d8c src:inserts/components-2026-08.md:32 klas:A -->
 ### T-COM-028 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1012,7 +1012,7 @@
 
 ---
 
-<!-- fc id:T-COM-029 sha:95d32862 src:inserts/components-2026-08.md:31 klas:A -->
+<!-- fc id:T-COM-029 sha:95d32862 src:inserts/components-2026-08.md:32 klas:A -->
 ### T-COM-029 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1113,7 +1113,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-032 sha:063196fc src:inserts/components-2026-08.md:41 klas:F -->
+<!-- fc id:T-COM-032 sha:063196fc src:inserts/components-2026-08.md:42 klas:F -->
 ### T-COM-032 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1149,7 +1149,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-033 sha:f1ca3000 src:inserts/components-2026-08.md:41 klas:F -->
+<!-- fc id:T-COM-033 sha:f1ca3000 src:inserts/components-2026-08.md:42 klas:F -->
 ### T-COM-033 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1185,7 +1185,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-034 sha:55ed4d88 src:inserts/components-2026-08.md:42 klas:A -->
+<!-- fc id:T-COM-034 sha:55ed4d88 src:inserts/components-2026-08.md:43 klas:A -->
 ### T-COM-034 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1229,7 +1229,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-035 sha:48d57c4e src:inserts/components-2026-08.md:43 klas:E -->
+<!-- fc id:T-COM-035 sha:48d57c4e src:inserts/components-2026-08.md:44 klas:E -->
 ### T-COM-035 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1265,7 +1265,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-036 sha:4ce143ff src:inserts/components-2026-08.md:43 klas:C -->
+<!-- fc id:T-COM-036 sha:4ce143ff src:inserts/components-2026-08.md:44 klas:C -->
 ### T-COM-036 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1306,7 +1306,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-037 sha:944ede34 src:inserts/components-2026-08.md:44 klas:F -->
+<!-- fc id:T-COM-037 sha:944ede34 src:inserts/components-2026-08.md:45 klas:F -->
 ### T-COM-037 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1342,7 +1342,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-038 sha:7fb8610e src:inserts/components-2026-08.md:44 klas:F -->
+<!-- fc id:T-COM-038 sha:7fb8610e src:inserts/components-2026-08.md:45 klas:F -->
 ### T-COM-038 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1378,7 +1378,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-039 sha:f7ec6df8 src:inserts/components-2026-08.md:45 klas:B -->
+<!-- fc id:T-COM-039 sha:f7ec6df8 src:inserts/components-2026-08.md:46 klas:B -->
 ### T-COM-039 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1426,7 +1426,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-040 sha:54c257d2 src:inserts/components-2026-08.md:45 klas:B -->
+<!-- fc id:T-COM-040 sha:54c257d2 src:inserts/components-2026-08.md:46 klas:B -->
 ### T-COM-040 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1474,7 +1474,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-041 sha:21fa22fe src:inserts/components-2026-08.md:46 klas:E -->
+<!-- fc id:T-COM-041 sha:21fa22fe src:inserts/components-2026-08.md:47 klas:E -->
 ### T-COM-041 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1510,7 +1510,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-042 sha:cf3734bb src:inserts/components-2026-08.md:46 klas:E -->
+<!-- fc id:T-COM-042 sha:cf3734bb src:inserts/components-2026-08.md:47 klas:E -->
 ### T-COM-042 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1548,7 +1548,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-043 sha:5a7daf97 src:inserts/components-2026-08.md:47 klas:E -->
+<!-- fc id:T-COM-043 sha:5a7daf97 src:inserts/components-2026-08.md:48 klas:E -->
 ### T-COM-043 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1584,7 +1584,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-044 sha:46e0360c src:inserts/components-2026-08.md:47 klas:E -->
+<!-- fc id:T-COM-044 sha:46e0360c src:inserts/components-2026-08.md:48 klas:E -->
 ### T-COM-044 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1649,7 +1649,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-046 sha:638d632c src:inserts/components-2026-08.md:53 klas:C -->
+<!-- fc id:T-COM-046 sha:638d632c src:inserts/components-2026-08.md:54 klas:C -->
 ### T-COM-046 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1688,7 +1688,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-047 sha:7a78c033 src:inserts/components-2026-08.md:53 klas:C -->
+<!-- fc id:T-COM-047 sha:7a78c033 src:inserts/components-2026-08.md:54 klas:C -->
 ### T-COM-047 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1727,7 +1727,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-048 sha:f1ce4a77 src:inserts/components-2026-08.md:54 klas:C -->
+<!-- fc id:T-COM-048 sha:f1ce4a77 src:inserts/components-2026-08.md:55 klas:C -->
 ### T-COM-048 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1766,7 +1766,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-049 sha:61722fb9 src:inserts/components-2026-08.md:54 klas:C -->
+<!-- fc id:T-COM-049 sha:61722fb9 src:inserts/components-2026-08.md:55 klas:C -->
 ### T-COM-049 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1805,7 +1805,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-050 sha:c723dc1b src:inserts/components-2026-08.md:55 klas:A -->
+<!-- fc id:T-COM-050 sha:c723dc1b src:inserts/components-2026-08.md:56 klas:A -->
 ### T-COM-050 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1862,7 +1862,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-051 sha:b1d46fe3 src:inserts/components-2026-08.md:55 klas:C -->
+<!-- fc id:T-COM-051 sha:b1d46fe3 src:inserts/components-2026-08.md:56 klas:C -->
 ### T-COM-051 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1901,7 +1901,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-052 sha:63a09dca src:inserts/components-2026-08.md:56 klas:C -->
+<!-- fc id:T-COM-052 sha:63a09dca src:inserts/components-2026-08.md:57 klas:C -->
 ### T-COM-052 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1940,7 +1940,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-053 sha:560b7d6b src:inserts/components-2026-08.md:56 klas:A -->
+<!-- fc id:T-COM-053 sha:560b7d6b src:inserts/components-2026-08.md:57 klas:A -->
 ### T-COM-053 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -1981,7 +1981,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-054 sha:b1f005dc src:inserts/components-2026-08.md:57 klas:A -->
+<!-- fc id:T-COM-054 sha:b1f005dc src:inserts/components-2026-08.md:58 klas:A -->
 ### T-COM-054 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2022,7 +2022,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-055 sha:a1ff07d2 src:inserts/components-2026-08.md:57 klas:A -->
+<!-- fc id:T-COM-055 sha:a1ff07d2 src:inserts/components-2026-08.md:58 klas:A -->
 ### T-COM-055 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2063,7 +2063,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-056 sha:6e24ff79 src:inserts/components-2026-08.md:58 klas:E -->
+<!-- fc id:T-COM-056 sha:6e24ff79 src:inserts/components-2026-08.md:59 klas:E -->
 ### T-COM-056 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2102,7 +2102,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-057 sha:885925b7 src:inserts/components-2026-08.md:58 klas:B -->
+<!-- fc id:T-COM-057 sha:885925b7 src:inserts/components-2026-08.md:59 klas:B -->
 ### T-COM-057 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2178,7 +2178,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-059 sha:3ef3c083 src:inserts/components-2026-08.md:64 klas:C -->
+<!-- fc id:T-COM-059 sha:3ef3c083 src:inserts/components-2026-08.md:65 klas:C -->
 ### T-COM-059 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2216,7 +2216,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-060 sha:61735796 src:inserts/components-2026-08.md:64 klas:C -->
+<!-- fc id:T-COM-060 sha:61735796 src:inserts/components-2026-08.md:65 klas:C -->
 ### T-COM-060 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2254,7 +2254,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-061 sha:844269dc src:inserts/components-2026-08.md:65 klas:E -->
+<!-- fc id:T-COM-061 sha:844269dc src:inserts/components-2026-08.md:66 klas:E -->
 ### T-COM-061 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2290,7 +2290,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-062 sha:bfe7b4be src:inserts/components-2026-08.md:65 klas:B -->
+<!-- fc id:T-COM-062 sha:bfe7b4be src:inserts/components-2026-08.md:66 klas:B -->
 ### T-COM-062 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2331,7 +2331,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-063 sha:5ce3f690 src:inserts/components-2026-08.md:66 klas:F -->
+<!-- fc id:T-COM-063 sha:5ce3f690 src:inserts/components-2026-08.md:67 klas:F -->
 ### T-COM-063 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2365,7 +2365,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-064 sha:cd87924b src:inserts/components-2026-08.md:66 klas:E -->
+<!-- fc id:T-COM-064 sha:cd87924b src:inserts/components-2026-08.md:67 klas:E -->
 ### T-COM-064 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2399,7 +2399,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-065 sha:3dd0acbf src:inserts/components-2026-08.md:67 klas:C -->
+<!-- fc id:T-COM-065 sha:3dd0acbf src:inserts/components-2026-08.md:68 klas:C -->
 ### T-COM-065 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2437,7 +2437,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-066 sha:0fc81150 src:inserts/components-2026-08.md:67 klas:C -->
+<!-- fc id:T-COM-066 sha:0fc81150 src:inserts/components-2026-08.md:68 klas:C -->
 ### T-COM-066 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2475,7 +2475,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-067 sha:6362ca8d src:inserts/components-2026-08.md:68 klas:C -->
+<!-- fc id:T-COM-067 sha:6362ca8d src:inserts/components-2026-08.md:69 klas:C -->
 ### T-COM-067 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**
@@ -2513,7 +2513,7 @@ PIR HC-SR501 (простий рух).
 
 ---
 
-<!-- fc id:T-COM-068 sha:4d8b626e src:inserts/components-2026-08.md:68 klas:E -->
+<!-- fc id:T-COM-068 sha:4d8b626e src:inserts/components-2026-08.md:69 klas:E -->
 ### T-COM-068 · komirka · `inserts/components-2026-08.md`
 
 **Твердження, коротко**

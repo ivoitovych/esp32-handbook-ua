@@ -903,7 +903,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-038 sha:33554940 src:manual/01-platforma.md:90 klas:F -->
+<!-- fc id:T-01-038 sha:33554940 src:manual/01-platforma.md:91 klas:F -->
 ### T-01-038 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -940,7 +940,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-039 sha:6ddf4773 src:manual/01-platforma.md:90 klas:B -->
+<!-- fc id:T-01-039 sha:6ddf4773 src:manual/01-platforma.md:91 klas:B -->
 ### T-01-039 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -988,7 +988,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-040 sha:4ebc55ec src:manual/01-platforma.md:90 klas:F -->
+<!-- fc id:T-01-040 sha:4ebc55ec src:manual/01-platforma.md:91 klas:F -->
 ### T-01-040 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1025,7 +1025,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-041 sha:1881d193 src:manual/01-platforma.md:90 klas:A -->
+<!-- fc id:T-01-041 sha:1881d193 src:manual/01-platforma.md:91 klas:A -->
 ### T-01-041 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1068,7 +1068,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-042 sha:441d4329 src:manual/01-platforma.md:90 klas:A -->
+<!-- fc id:T-01-042 sha:441d4329 src:manual/01-platforma.md:91 klas:A -->
 ### T-01-042 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1113,7 +1113,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-043 sha:1847b01b src:manual/01-platforma.md:91 klas:D -->
+<!-- fc id:T-01-043 sha:1847b01b src:manual/01-platforma.md:92 klas:D -->
 ### T-01-043 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1168,7 +1168,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-044 sha:dc034963 src:manual/01-platforma.md:91 klas:A -->
+<!-- fc id:T-01-044 sha:dc034963 src:manual/01-platforma.md:92 klas:A -->
 ### T-01-044 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1215,7 +1215,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-045 sha:40c8ea93 src:manual/01-platforma.md:91 klas:B -->
+<!-- fc id:T-01-045 sha:40c8ea93 src:manual/01-platforma.md:92 klas:B -->
 ### T-01-045 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1268,7 +1268,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-046 sha:0970fe3e src:manual/01-platforma.md:91 klas:D -->
+<!-- fc id:T-01-046 sha:0970fe3e src:manual/01-platforma.md:92 klas:D -->
 ### T-01-046 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1323,7 +1323,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-047 sha:69fa3921 src:manual/01-platforma.md:91 klas:A -->
+<!-- fc id:T-01-047 sha:69fa3921 src:manual/01-platforma.md:92 klas:A -->
 ### T-01-047 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1367,7 +1367,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-048 sha:336edf2e src:manual/01-platforma.md:92 klas:F -->
+<!-- fc id:T-01-048 sha:336edf2e src:manual/01-platforma.md:93 klas:F -->
 ### T-01-048 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1404,7 +1404,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-049 sha:1f2ed711 src:manual/01-platforma.md:92 klas:A -->
+<!-- fc id:T-01-049 sha:1f2ed711 src:manual/01-platforma.md:93 klas:A -->
 ### T-01-049 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1450,7 +1450,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-050 sha:8ea80e06 src:manual/01-platforma.md:92 klas:F -->
+<!-- fc id:T-01-050 sha:8ea80e06 src:manual/01-platforma.md:93 klas:F -->
 ### T-01-050 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1487,7 +1487,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-051 sha:33a0cc98 src:manual/01-platforma.md:92 klas:B -->
+<!-- fc id:T-01-051 sha:33a0cc98 src:manual/01-platforma.md:93 klas:B -->
 ### T-01-051 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1534,7 +1534,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-052 sha:8ca74b4d src:manual/01-platforma.md:92 klas:A -->
+<!-- fc id:T-01-052 sha:8ca74b4d src:manual/01-platforma.md:93 klas:A -->
 ### T-01-052 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1577,7 +1577,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-053 sha:fe16464a src:manual/01-platforma.md:93 klas:F -->
+<!-- fc id:T-01-053 sha:fe16464a src:manual/01-platforma.md:94 klas:F -->
 ### T-01-053 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1602,7 +1602,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-054 sha:473cce38 src:manual/01-platforma.md:93 klas:B -->
+<!-- fc id:T-01-054 sha:473cce38 src:manual/01-platforma.md:94 klas:B -->
 ### T-01-054 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1652,7 +1652,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-055 sha:d7ff5a9d src:manual/01-platforma.md:93 klas:F -->
+<!-- fc id:T-01-055 sha:d7ff5a9d src:manual/01-platforma.md:94 klas:F -->
 ### T-01-055 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1689,7 +1689,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-056 sha:cbef6e16 src:manual/01-platforma.md:93 klas:A -->
+<!-- fc id:T-01-056 sha:cbef6e16 src:manual/01-platforma.md:94 klas:A -->
 ### T-01-056 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1732,7 +1732,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-057 sha:4c88e4a1 src:manual/01-platforma.md:93 klas:A -->
+<!-- fc id:T-01-057 sha:4c88e4a1 src:manual/01-platforma.md:94 klas:A -->
 ### T-01-057 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1781,7 +1781,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-058 sha:453e5c32 src:manual/01-platforma.md:94 klas:F -->
+<!-- fc id:T-01-058 sha:453e5c32 src:manual/01-platforma.md:95 klas:F -->
 ### T-01-058 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1818,7 +1818,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-059 sha:3c8a5c9e src:manual/01-platforma.md:94 klas:B -->
+<!-- fc id:T-01-059 sha:3c8a5c9e src:manual/01-platforma.md:95 klas:B -->
 ### T-01-059 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1870,7 +1870,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-060 sha:152a62b0 src:manual/01-platforma.md:94 klas:F -->
+<!-- fc id:T-01-060 sha:152a62b0 src:manual/01-platforma.md:95 klas:F -->
 ### T-01-060 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1907,7 +1907,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-061 sha:763ce585 src:manual/01-platforma.md:94 klas:A -->
+<!-- fc id:T-01-061 sha:763ce585 src:manual/01-platforma.md:95 klas:A -->
 ### T-01-061 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1950,7 +1950,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-062 sha:4b7ada41 src:manual/01-platforma.md:94 klas:E -->
+<!-- fc id:T-01-062 sha:4b7ada41 src:manual/01-platforma.md:95 klas:E -->
 ### T-01-062 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -1993,7 +1993,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-063 sha:3dcf7786 src:manual/01-platforma.md:95 klas:F -->
+<!-- fc id:T-01-063 sha:3dcf7786 src:manual/01-platforma.md:96 klas:F -->
 ### T-01-063 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2030,7 +2030,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-064 sha:3adfd1fa src:manual/01-platforma.md:95 klas:A -->
+<!-- fc id:T-01-064 sha:3adfd1fa src:manual/01-platforma.md:96 klas:A -->
 ### T-01-064 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2079,7 +2079,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-065 sha:98fae680 src:manual/01-platforma.md:95 klas:F -->
+<!-- fc id:T-01-065 sha:98fae680 src:manual/01-platforma.md:96 klas:F -->
 ### T-01-065 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2116,7 +2116,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-066 sha:033f0589 src:manual/01-platforma.md:95 klas:A -->
+<!-- fc id:T-01-066 sha:033f0589 src:manual/01-platforma.md:96 klas:A -->
 ### T-01-066 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2159,7 +2159,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-067 sha:3d704f3b src:manual/01-platforma.md:95 klas:B -->
+<!-- fc id:T-01-067 sha:3d704f3b src:manual/01-platforma.md:96 klas:B -->
 ### T-01-067 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2204,7 +2204,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-068 sha:b0816505 src:manual/01-platforma.md:96 klas:F -->
+<!-- fc id:T-01-068 sha:b0816505 src:manual/01-platforma.md:97 klas:F -->
 ### T-01-068 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2241,7 +2241,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-069 sha:ef545e2e src:manual/01-platforma.md:96 klas:B -->
+<!-- fc id:T-01-069 sha:ef545e2e src:manual/01-platforma.md:97 klas:B -->
 ### T-01-069 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2286,7 +2286,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-070 sha:353d9bb6 src:manual/01-platforma.md:96 klas:F -->
+<!-- fc id:T-01-070 sha:353d9bb6 src:manual/01-platforma.md:97 klas:F -->
 ### T-01-070 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2323,7 +2323,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-071 sha:902211e6 src:manual/01-platforma.md:96 klas:A -->
+<!-- fc id:T-01-071 sha:902211e6 src:manual/01-platforma.md:97 klas:A -->
 ### T-01-071 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2366,7 +2366,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-072 sha:3f88d5a2 src:manual/01-platforma.md:96 klas:E -->
+<!-- fc id:T-01-072 sha:3f88d5a2 src:manual/01-platforma.md:97 klas:E -->
 ### T-01-072 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2409,7 +2409,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-073 sha:09588519 src:manual/01-platforma.md:97 klas:F -->
+<!-- fc id:T-01-073 sha:09588519 src:manual/01-platforma.md:98 klas:F -->
 ### T-01-073 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2446,7 +2446,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-074 sha:2a48b436 src:manual/01-platforma.md:97 klas:E -->
+<!-- fc id:T-01-074 sha:2a48b436 src:manual/01-platforma.md:98 klas:E -->
 ### T-01-074 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2489,7 +2489,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-075 sha:6f6e3a4d src:manual/01-platforma.md:97 klas:F -->
+<!-- fc id:T-01-075 sha:6f6e3a4d src:manual/01-platforma.md:98 klas:F -->
 ### T-01-075 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2526,7 +2526,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-076 sha:00065c12 src:manual/01-platforma.md:97 klas:A -->
+<!-- fc id:T-01-076 sha:00065c12 src:manual/01-platforma.md:98 klas:A -->
 ### T-01-076 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**
@@ -2569,7 +2569,7 @@ ESP32 — сімейство мікроконтролерів із вбудов�
 
 ---
 
-<!-- fc id:T-01-077 sha:7959a945 src:manual/01-platforma.md:97 klas:A -->
+<!-- fc id:T-01-077 sha:7959a945 src:manual/01-platforma.md:98 klas:A -->
 ### T-01-077 · komirka · `manual/01-platforma.md`
 
 **Твердження, коротко**

@@ -129,7 +129,7 @@
 
 ---
 
-<!-- fc id:T-47-005 sha:e87fd605 src:manual/47-klyuchi.md:13 klas:B -->
+<!-- fc id:T-47-005 sha:e87fd605 src:manual/47-klyuchi.md:14 klas:B -->
 ### T-47-005 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -172,7 +172,7 @@
 
 ---
 
-<!-- fc id:T-47-006 sha:fbed193d src:manual/47-klyuchi.md:13 klas:B -->
+<!-- fc id:T-47-006 sha:fbed193d src:manual/47-klyuchi.md:14 klas:B -->
 ### T-47-006 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-47-007 sha:69a8e0f0 src:manual/47-klyuchi.md:14 klas:B -->
+<!-- fc id:T-47-007 sha:69a8e0f0 src:manual/47-klyuchi.md:15 klas:B -->
 ### T-47-007 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -261,7 +261,7 @@
 
 ---
 
-<!-- fc id:T-47-008 sha:7d8f9d5c src:manual/47-klyuchi.md:14 klas:E -->
+<!-- fc id:T-47-008 sha:7d8f9d5c src:manual/47-klyuchi.md:15 klas:E -->
 ### T-47-008 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -295,7 +295,7 @@
 
 ---
 
-<!-- fc id:T-47-009 sha:1ecf0c22 src:manual/47-klyuchi.md:15 klas:E -->
+<!-- fc id:T-47-009 sha:1ecf0c22 src:manual/47-klyuchi.md:16 klas:E -->
 ### T-47-009 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-47-010 sha:f9e16d4a src:manual/47-klyuchi.md:15 klas:E -->
+<!-- fc id:T-47-010 sha:f9e16d4a src:manual/47-klyuchi.md:16 klas:E -->
 ### T-47-010 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -363,7 +363,7 @@
 
 ---
 
-<!-- fc id:T-47-011 sha:80bf27f5 src:manual/47-klyuchi.md:16 klas:E -->
+<!-- fc id:T-47-011 sha:80bf27f5 src:manual/47-klyuchi.md:17 klas:E -->
 ### T-47-011 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -397,7 +397,7 @@
 
 ---
 
-<!-- fc id:T-47-012 sha:39a2c8d5 src:manual/47-klyuchi.md:16 klas:E -->
+<!-- fc id:T-47-012 sha:39a2c8d5 src:manual/47-klyuchi.md:17 klas:E -->
 ### T-47-012 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -431,7 +431,7 @@
 
 ---
 
-<!-- fc id:T-47-013 sha:347ba144 src:manual/47-klyuchi.md:17 klas:B -->
+<!-- fc id:T-47-013 sha:347ba144 src:manual/47-klyuchi.md:18 klas:B -->
 ### T-47-013 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**
@@ -477,7 +477,7 @@
 
 ---
 
-<!-- fc id:T-47-014 sha:3aeb6a4c src:manual/47-klyuchi.md:17 klas:E -->
+<!-- fc id:T-47-014 sha:3aeb6a4c src:manual/47-klyuchi.md:18 klas:E -->
 ### T-47-014 · komirka · `manual/47-klyuchi.md`
 
 **Твердження, коротко**

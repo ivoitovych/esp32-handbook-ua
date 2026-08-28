@@ -214,7 +214,7 @@
 
 ---
 
-<!-- fc id:T-K03-010 sha:5a7df3f2 src:kartky/k03-pidkl.md:25 klas:A -->
+<!-- fc id:T-K03-010 sha:5a7df3f2 src:kartky/k03-pidkl.md:26 klas:A -->
 ### T-K03-010 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -254,7 +254,7 @@
 
 ---
 
-<!-- fc id:T-K03-011 sha:ffd5aad8 src:kartky/k03-pidkl.md:25 klas:A -->
+<!-- fc id:T-K03-011 sha:ffd5aad8 src:kartky/k03-pidkl.md:26 klas:A -->
 ### T-K03-011 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -295,7 +295,7 @@
 
 ---
 
-<!-- fc id:T-K03-012 sha:f9af5909 src:kartky/k03-pidkl.md:26 klas:A -->
+<!-- fc id:T-K03-012 sha:f9af5909 src:kartky/k03-pidkl.md:27 klas:A -->
 ### T-K03-012 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -339,7 +339,7 @@
 
 ---
 
-<!-- fc id:T-K03-013 sha:11309fcc src:kartky/k03-pidkl.md:26 klas:A -->
+<!-- fc id:T-K03-013 sha:11309fcc src:kartky/k03-pidkl.md:27 klas:A -->
 ### T-K03-013 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -380,7 +380,7 @@
 
 ---
 
-<!-- fc id:T-K03-014 sha:78a66c0c src:kartky/k03-pidkl.md:27 klas:A -->
+<!-- fc id:T-K03-014 sha:78a66c0c src:kartky/k03-pidkl.md:28 klas:A -->
 ### T-K03-014 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -427,7 +427,7 @@
 
 ---
 
-<!-- fc id:T-K03-015 sha:14b8c42e src:kartky/k03-pidkl.md:27 klas:C -->
+<!-- fc id:T-K03-015 sha:14b8c42e src:kartky/k03-pidkl.md:28 klas:C -->
 ### T-K03-015 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -465,7 +465,7 @@
 
 ---
 
-<!-- fc id:T-K03-016 sha:fd830d21 src:kartky/k03-pidkl.md:28 klas:C -->
+<!-- fc id:T-K03-016 sha:fd830d21 src:kartky/k03-pidkl.md:29 klas:C -->
 ### T-K03-016 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**
@@ -504,7 +504,7 @@
 
 ---
 
-<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:28 klas:B -->
+<!-- fc id:T-K03-017 sha:848e213b src:kartky/k03-pidkl.md:29 klas:B -->
 ### T-K03-017 · komirka · `kartky/k03-pidkl.md`
 
 **Твердження, коротко**

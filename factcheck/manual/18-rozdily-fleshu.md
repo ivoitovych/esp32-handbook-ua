@@ -325,7 +325,7 @@
 
 ---
 
-<!-- fc id:T-18-011 sha:606ac6dd src:manual/18-rozdily-fleshu.md:26 klas:A -->
+<!-- fc id:T-18-011 sha:606ac6dd src:manual/18-rozdily-fleshu.md:27 klas:A -->
 ### T-18-011 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -364,7 +364,7 @@
 
 ---
 
-<!-- fc id:T-18-012 sha:f47ce163 src:manual/18-rozdily-fleshu.md:26 klas:A -->
+<!-- fc id:T-18-012 sha:f47ce163 src:manual/18-rozdily-fleshu.md:27 klas:A -->
 ### T-18-012 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -403,7 +403,7 @@
 
 ---
 
-<!-- fc id:T-18-013 sha:15620348 src:manual/18-rozdily-fleshu.md:26 klas:A -->
+<!-- fc id:T-18-013 sha:15620348 src:manual/18-rozdily-fleshu.md:27 klas:A -->
 ### T-18-013 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -443,7 +443,7 @@
 
 ---
 
-<!-- fc id:T-18-014 sha:8f0dd715 src:manual/18-rozdily-fleshu.md:26 klas:A -->
+<!-- fc id:T-18-014 sha:8f0dd715 src:manual/18-rozdily-fleshu.md:27 klas:A -->
 ### T-18-014 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -499,7 +499,7 @@
 
 ---
 
-<!-- fc id:T-18-015 sha:5f9bc8f0 src:manual/18-rozdily-fleshu.md:27 klas:A -->
+<!-- fc id:T-18-015 sha:5f9bc8f0 src:manual/18-rozdily-fleshu.md:28 klas:A -->
 ### T-18-015 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -538,7 +538,7 @@
 
 ---
 
-<!-- fc id:T-18-016 sha:789c88b9 src:manual/18-rozdily-fleshu.md:27 klas:A -->
+<!-- fc id:T-18-016 sha:789c88b9 src:manual/18-rozdily-fleshu.md:28 klas:A -->
 ### T-18-016 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -577,7 +577,7 @@
 
 ---
 
-<!-- fc id:T-18-017 sha:fc7a2431 src:manual/18-rozdily-fleshu.md:27 klas:A -->
+<!-- fc id:T-18-017 sha:fc7a2431 src:manual/18-rozdily-fleshu.md:28 klas:A -->
 ### T-18-017 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -628,7 +628,7 @@
 
 ---
 
-<!-- fc id:T-18-018 sha:d76b708c src:manual/18-rozdily-fleshu.md:27 klas:A -->
+<!-- fc id:T-18-018 sha:d76b708c src:manual/18-rozdily-fleshu.md:28 klas:A -->
 ### T-18-018 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -684,7 +684,7 @@
 
 ---
 
-<!-- fc id:T-18-019 sha:94bcae2e src:manual/18-rozdily-fleshu.md:28 klas:A -->
+<!-- fc id:T-18-019 sha:94bcae2e src:manual/18-rozdily-fleshu.md:29 klas:A -->
 ### T-18-019 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -723,7 +723,7 @@
 
 ---
 
-<!-- fc id:T-18-020 sha:98e8369f src:manual/18-rozdily-fleshu.md:28 klas:A -->
+<!-- fc id:T-18-020 sha:98e8369f src:manual/18-rozdily-fleshu.md:29 klas:A -->
 ### T-18-020 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -762,7 +762,7 @@
 
 ---
 
-<!-- fc id:T-18-021 sha:9df43b5f src:manual/18-rozdily-fleshu.md:28 klas:A -->
+<!-- fc id:T-18-021 sha:9df43b5f src:manual/18-rozdily-fleshu.md:29 klas:A -->
 ### T-18-021 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -802,7 +802,7 @@
 
 ---
 
-<!-- fc id:T-18-022 sha:59fff70d src:manual/18-rozdily-fleshu.md:28 klas:A -->
+<!-- fc id:T-18-022 sha:59fff70d src:manual/18-rozdily-fleshu.md:29 klas:A -->
 ### T-18-022 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2156,7 +2156,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-064 sha:e168a5c0 src:manual/18-rozdily-fleshu.md:133 klas:E -->
+<!-- fc id:T-18-064 sha:e168a5c0 src:manual/18-rozdily-fleshu.md:134 klas:E -->
 ### T-18-064 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2193,7 +2193,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-065 sha:34872fc8 src:manual/18-rozdily-fleshu.md:133 klas:F -->
+<!-- fc id:T-18-065 sha:34872fc8 src:manual/18-rozdily-fleshu.md:134 klas:F -->
 ### T-18-065 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2230,7 +2230,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-066 sha:136b11ff src:manual/18-rozdily-fleshu.md:133 klas:E -->
+<!-- fc id:T-18-066 sha:136b11ff src:manual/18-rozdily-fleshu.md:134 klas:E -->
 ### T-18-066 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2267,7 +2267,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-067 sha:e9f3c2f3 src:manual/18-rozdily-fleshu.md:134 klas:E -->
+<!-- fc id:T-18-067 sha:e9f3c2f3 src:manual/18-rozdily-fleshu.md:135 klas:E -->
 ### T-18-067 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2304,7 +2304,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-068 sha:bd591c14 src:manual/18-rozdily-fleshu.md:134 klas:F -->
+<!-- fc id:T-18-068 sha:bd591c14 src:manual/18-rozdily-fleshu.md:135 klas:F -->
 ### T-18-068 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2341,7 +2341,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-069 sha:27ed2cb4 src:manual/18-rozdily-fleshu.md:134 klas:E -->
+<!-- fc id:T-18-069 sha:27ed2cb4 src:manual/18-rozdily-fleshu.md:135 klas:E -->
 ### T-18-069 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2378,7 +2378,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-070 sha:7c5fc24e src:manual/18-rozdily-fleshu.md:135 klas:E -->
+<!-- fc id:T-18-070 sha:7c5fc24e src:manual/18-rozdily-fleshu.md:136 klas:E -->
 ### T-18-070 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2415,7 +2415,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-071 sha:8b7abf4b src:manual/18-rozdily-fleshu.md:135 klas:F -->
+<!-- fc id:T-18-071 sha:8b7abf4b src:manual/18-rozdily-fleshu.md:136 klas:F -->
 ### T-18-071 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2452,7 +2452,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-072 sha:6a505c3a src:manual/18-rozdily-fleshu.md:135 klas:A -->
+<!-- fc id:T-18-072 sha:6a505c3a src:manual/18-rozdily-fleshu.md:136 klas:A -->
 ### T-18-072 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2507,7 +2507,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-073 sha:7a364c66 src:manual/18-rozdily-fleshu.md:136 klas:E -->
+<!-- fc id:T-18-073 sha:7a364c66 src:manual/18-rozdily-fleshu.md:137 klas:E -->
 ### T-18-073 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2544,7 +2544,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-074 sha:34b80b5e src:manual/18-rozdily-fleshu.md:136 klas:A -->
+<!-- fc id:T-18-074 sha:34b80b5e src:manual/18-rozdily-fleshu.md:137 klas:A -->
 ### T-18-074 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2587,7 +2587,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-075 sha:3764ddb1 src:manual/18-rozdily-fleshu.md:136 klas:C -->
+<!-- fc id:T-18-075 sha:3764ddb1 src:manual/18-rozdily-fleshu.md:137 klas:C -->
 ### T-18-075 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2629,7 +2629,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-076 sha:c0ee355e src:manual/18-rozdily-fleshu.md:137 klas:E -->
+<!-- fc id:T-18-076 sha:c0ee355e src:manual/18-rozdily-fleshu.md:138 klas:E -->
 ### T-18-076 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2666,7 +2666,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-077 sha:2d821c96 src:manual/18-rozdily-fleshu.md:137 klas:F -->
+<!-- fc id:T-18-077 sha:2d821c96 src:manual/18-rozdily-fleshu.md:138 klas:F -->
 ### T-18-077 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2703,7 +2703,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-078 sha:97b8e259 src:manual/18-rozdily-fleshu.md:137 klas:E -->
+<!-- fc id:T-18-078 sha:97b8e259 src:manual/18-rozdily-fleshu.md:138 klas:E -->
 ### T-18-078 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2740,7 +2740,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-079 sha:ad08a567 src:manual/18-rozdily-fleshu.md:138 klas:F -->
+<!-- fc id:T-18-079 sha:ad08a567 src:manual/18-rozdily-fleshu.md:139 klas:F -->
 ### T-18-079 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2777,7 +2777,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-080 sha:0c51c182 src:manual/18-rozdily-fleshu.md:138 klas:A -->
+<!-- fc id:T-18-080 sha:0c51c182 src:manual/18-rozdily-fleshu.md:139 klas:A -->
 ### T-18-080 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**
@@ -2820,7 +2820,7 @@ ESP_ERROR_CHECK(err);
 
 ---
 
-<!-- fc id:T-18-081 sha:d37a8a60 src:manual/18-rozdily-fleshu.md:138 klas:F -->
+<!-- fc id:T-18-081 sha:d37a8a60 src:manual/18-rozdily-fleshu.md:139 klas:F -->
 ### T-18-081 · komirka · `manual/18-rozdily-fleshu.md`
 
 **Твердження, коротко**

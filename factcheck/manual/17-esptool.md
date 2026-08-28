@@ -381,7 +381,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-013 sha:e59d8c4e src:manual/17-esptool.md:30 klas:A -->
+<!-- fc id:T-17-013 sha:e59d8c4e src:manual/17-esptool.md:31 klas:A -->
 ### T-17-013 · komirka · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -434,7 +434,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-014 sha:15c8ed07 src:manual/17-esptool.md:30 klas:A -->
+<!-- fc id:T-17-014 sha:15c8ed07 src:manual/17-esptool.md:31 klas:A -->
 ### T-17-014 · komirka · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -477,7 +477,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-015 sha:f36c79a8 src:manual/17-esptool.md:31 klas:A -->
+<!-- fc id:T-17-015 sha:f36c79a8 src:manual/17-esptool.md:32 klas:A -->
 ### T-17-015 · komirka · `manual/17-esptool.md`
 
 **Твердження, коротко**
@@ -530,7 +530,7 @@ esptool version
 
 ---
 
-<!-- fc id:T-17-016 sha:4fe690f3 src:manual/17-esptool.md:31 klas:A -->
+<!-- fc id:T-17-016 sha:4fe690f3 src:manual/17-esptool.md:32 klas:A -->
 ### T-17-016 · komirka · `manual/17-esptool.md`
 
 **Твердження, коротко**

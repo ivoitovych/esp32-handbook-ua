@@ -77,7 +77,7 @@
 
 ---
 
-<!-- fc id:T-K05-004 sha:bb0f770d src:kartky/k05-proshyvka.md:10 klas:F -->
+<!-- fc id:T-K05-004 sha:bb0f770d src:kartky/k05-proshyvka.md:11 klas:F -->
 ### T-K05-004 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -110,7 +110,7 @@
 
 ---
 
-<!-- fc id:T-K05-005 sha:e3c8ae66 src:kartky/k05-proshyvka.md:10 klas:A -->
+<!-- fc id:T-K05-005 sha:e3c8ae66 src:kartky/k05-proshyvka.md:11 klas:A -->
 ### T-K05-005 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -163,7 +163,7 @@
 
 ---
 
-<!-- fc id:T-K05-006 sha:cad2ff61 src:kartky/k05-proshyvka.md:10 klas:A -->
+<!-- fc id:T-K05-006 sha:cad2ff61 src:kartky/k05-proshyvka.md:11 klas:A -->
 ### T-K05-006 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -205,7 +205,7 @@
 
 ---
 
-<!-- fc id:T-K05-007 sha:13356a21 src:kartky/k05-proshyvka.md:10 klas:A -->
+<!-- fc id:T-K05-007 sha:13356a21 src:kartky/k05-proshyvka.md:11 klas:A -->
 ### T-K05-007 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -258,7 +258,7 @@
 
 ---
 
-<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:11 klas:A -->
+<!-- fc id:T-K05-008 sha:01aad120 src:kartky/k05-proshyvka.md:12 klas:A -->
 ### T-K05-008 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -297,7 +297,7 @@
 
 ---
 
-<!-- fc id:T-K05-009 sha:d4684bb6 src:kartky/k05-proshyvka.md:11 klas:A -->
+<!-- fc id:T-K05-009 sha:d4684bb6 src:kartky/k05-proshyvka.md:12 klas:A -->
 ### T-K05-009 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -336,7 +336,7 @@
 
 ---
 
-<!-- fc id:T-K05-010 sha:723732a3 src:kartky/k05-proshyvka.md:11 klas:A -->
+<!-- fc id:T-K05-010 sha:723732a3 src:kartky/k05-proshyvka.md:12 klas:A -->
 ### T-K05-010 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -375,7 +375,7 @@
 
 ---
 
-<!-- fc id:T-K05-011 sha:1ec0b452 src:kartky/k05-proshyvka.md:11 klas:A -->
+<!-- fc id:T-K05-011 sha:1ec0b452 src:kartky/k05-proshyvka.md:12 klas:A -->
 ### T-K05-011 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -414,7 +414,7 @@
 
 ---
 
-<!-- fc id:T-K05-012 sha:83295d52 src:kartky/k05-proshyvka.md:12 klas:F -->
+<!-- fc id:T-K05-012 sha:83295d52 src:kartky/k05-proshyvka.md:13 klas:F -->
 ### T-K05-012 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -447,7 +447,7 @@
 
 ---
 
-<!-- fc id:T-K05-013 sha:fb9cf9cd src:kartky/k05-proshyvka.md:12 klas:A -->
+<!-- fc id:T-K05-013 sha:fb9cf9cd src:kartky/k05-proshyvka.md:13 klas:A -->
 ### T-K05-013 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -500,7 +500,7 @@
 
 ---
 
-<!-- fc id:T-K05-014 sha:630093e6 src:kartky/k05-proshyvka.md:12 klas:A -->
+<!-- fc id:T-K05-014 sha:630093e6 src:kartky/k05-proshyvka.md:13 klas:A -->
 ### T-K05-014 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**
@@ -553,7 +553,7 @@
 
 ---
 
-<!-- fc id:T-K05-015 sha:c2ba364d src:kartky/k05-proshyvka.md:12 klas:A -->
+<!-- fc id:T-K05-015 sha:c2ba364d src:kartky/k05-proshyvka.md:13 klas:A -->
 ### T-K05-015 · komirka · `kartky/k05-proshyvka.md`
 
 **Твердження, коротко**

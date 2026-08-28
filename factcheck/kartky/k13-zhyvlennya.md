@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-K13-007 sha:7038f03f src:kartky/k13-zhyvlennya.md:21 klas:F -->
+<!-- fc id:T-K13-007 sha:7038f03f src:kartky/k13-zhyvlennya.md:22 klas:F -->
 ### T-K13-007 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -211,7 +211,7 @@
 
 ---
 
-<!-- fc id:T-K13-008 sha:f284f799 src:kartky/k13-zhyvlennya.md:21 klas:E -->
+<!-- fc id:T-K13-008 sha:f284f799 src:kartky/k13-zhyvlennya.md:22 klas:E -->
 ### T-K13-008 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -245,7 +245,7 @@
 
 ---
 
-<!-- fc id:T-K13-009 sha:46ec6e5b src:kartky/k13-zhyvlennya.md:21 klas:E -->
+<!-- fc id:T-K13-009 sha:46ec6e5b src:kartky/k13-zhyvlennya.md:22 klas:E -->
 ### T-K13-009 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -279,7 +279,7 @@
 
 ---
 
-<!-- fc id:T-K13-010 sha:65f37454 src:kartky/k13-zhyvlennya.md:22 klas:E -->
+<!-- fc id:T-K13-010 sha:65f37454 src:kartky/k13-zhyvlennya.md:23 klas:E -->
 ### T-K13-010 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -324,7 +324,7 @@
 
 ---
 
-<!-- fc id:T-K13-011 sha:9058fc44 src:kartky/k13-zhyvlennya.md:22 klas:C -->
+<!-- fc id:T-K13-011 sha:9058fc44 src:kartky/k13-zhyvlennya.md:23 klas:C -->
 ### T-K13-011 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-K13-012 sha:dd53d506 src:kartky/k13-zhyvlennya.md:22 klas:E -->
+<!-- fc id:T-K13-012 sha:dd53d506 src:kartky/k13-zhyvlennya.md:23 klas:E -->
 ### T-K13-012 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -401,7 +401,7 @@
 
 ---
 
-<!-- fc id:T-K13-013 sha:32afae3b src:kartky/k13-zhyvlennya.md:23 klas:F -->
+<!-- fc id:T-K13-013 sha:32afae3b src:kartky/k13-zhyvlennya.md:24 klas:F -->
 ### T-K13-013 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -435,7 +435,7 @@
 
 ---
 
-<!-- fc id:T-K13-014 sha:7476d17b src:kartky/k13-zhyvlennya.md:23 klas:B -->
+<!-- fc id:T-K13-014 sha:7476d17b src:kartky/k13-zhyvlennya.md:24 klas:B -->
 ### T-K13-014 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -483,7 +483,7 @@
 
 ---
 
-<!-- fc id:T-K13-015 sha:0e199821 src:kartky/k13-zhyvlennya.md:23 klas:E -->
+<!-- fc id:T-K13-015 sha:0e199821 src:kartky/k13-zhyvlennya.md:24 klas:E -->
 ### T-K13-015 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -517,7 +517,7 @@
 
 ---
 
-<!-- fc id:T-K13-016 sha:62a2e90e src:kartky/k13-zhyvlennya.md:24 klas:F -->
+<!-- fc id:T-K13-016 sha:62a2e90e src:kartky/k13-zhyvlennya.md:25 klas:F -->
 ### T-K13-016 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -551,7 +551,7 @@
 
 ---
 
-<!-- fc id:T-K13-017 sha:3a8775e7 src:kartky/k13-zhyvlennya.md:24 klas:A -->
+<!-- fc id:T-K13-017 sha:3a8775e7 src:kartky/k13-zhyvlennya.md:25 klas:A -->
 ### T-K13-017 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**
@@ -598,7 +598,7 @@
 
 ---
 
-<!-- fc id:T-K13-018 sha:a9bcbe70 src:kartky/k13-zhyvlennya.md:24 klas:E -->
+<!-- fc id:T-K13-018 sha:a9bcbe70 src:kartky/k13-zhyvlennya.md:25 klas:E -->
 ### T-K13-018 · komirka · `kartky/k13-zhyvlennya.md`
 
 **Твердження, коротко**

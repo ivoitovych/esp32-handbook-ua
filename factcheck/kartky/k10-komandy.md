@@ -1479,7 +1479,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-041 sha:03becf94 src:kartky/k10-komandy.md:64 klas:A -->
+<!-- fc id:T-K10-041 sha:03becf94 src:kartky/k10-komandy.md:65 klas:A -->
 ### T-K10-041 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1532,7 +1532,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-042 sha:1fe1e089 src:kartky/k10-komandy.md:64 klas:A -->
+<!-- fc id:T-K10-042 sha:1fe1e089 src:kartky/k10-komandy.md:65 klas:A -->
 ### T-K10-042 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1571,7 +1571,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-043 sha:ddb10a79 src:kartky/k10-komandy.md:64 klas:A -->
+<!-- fc id:T-K10-043 sha:ddb10a79 src:kartky/k10-komandy.md:65 klas:A -->
 ### T-K10-043 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1624,7 +1624,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-044 sha:4e987ef9 src:kartky/k10-komandy.md:65 klas:A -->
+<!-- fc id:T-K10-044 sha:4e987ef9 src:kartky/k10-komandy.md:66 klas:A -->
 ### T-K10-044 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1663,7 +1663,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-045 sha:8c7b7a5f src:kartky/k10-komandy.md:65 klas:A -->
+<!-- fc id:T-K10-045 sha:8c7b7a5f src:kartky/k10-komandy.md:66 klas:A -->
 ### T-K10-045 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1702,7 +1702,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-046 sha:cb052eb6 src:kartky/k10-komandy.md:65 klas:A -->
+<!-- fc id:T-K10-046 sha:cb052eb6 src:kartky/k10-komandy.md:66 klas:A -->
 ### T-K10-046 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1741,7 +1741,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-047 sha:55b5b58b src:kartky/k10-komandy.md:66 klas:A -->
+<!-- fc id:T-K10-047 sha:55b5b58b src:kartky/k10-komandy.md:67 klas:A -->
 ### T-K10-047 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1794,7 +1794,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-048 sha:55a122c0 src:kartky/k10-komandy.md:66 klas:A -->
+<!-- fc id:T-K10-048 sha:55a122c0 src:kartky/k10-komandy.md:67 klas:A -->
 ### T-K10-048 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1847,7 +1847,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-049 sha:eb3f0062 src:kartky/k10-komandy.md:66 klas:A -->
+<!-- fc id:T-K10-049 sha:eb3f0062 src:kartky/k10-komandy.md:67 klas:A -->
 ### T-K10-049 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1900,7 +1900,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-050 sha:ceaada41 src:kartky/k10-komandy.md:67 klas:A -->
+<!-- fc id:T-K10-050 sha:ceaada41 src:kartky/k10-komandy.md:68 klas:A -->
 ### T-K10-050 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1947,7 +1947,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-051 sha:9feefdcc src:kartky/k10-komandy.md:67 klas:A -->
+<!-- fc id:T-K10-051 sha:9feefdcc src:kartky/k10-komandy.md:68 klas:A -->
 ### T-K10-051 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**
@@ -1986,7 +1986,7 @@ lsof /dev/ttyUSB0                # хто тримає порт
 
 ---
 
-<!-- fc id:T-K10-052 sha:c94bfb00 src:kartky/k10-komandy.md:67 klas:A -->
+<!-- fc id:T-K10-052 sha:c94bfb00 src:kartky/k10-komandy.md:68 klas:A -->
 ### T-K10-052 · komirka · `kartky/k10-komandy.md`
 
 **Твердження, коротко**

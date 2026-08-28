@@ -225,7 +225,7 @@
 
 ---
 
-<!-- fc id:T-62-010 sha:bfbf6ddc src:manual/62-proj-keruvannya.md:31 klas:F -->
+<!-- fc id:T-62-010 sha:bfbf6ddc src:manual/62-proj-keruvannya.md:32 klas:F -->
 ### T-62-010 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -260,7 +260,7 @@
 
 ---
 
-<!-- fc id:T-62-011 sha:aed2a2e0 src:manual/62-proj-keruvannya.md:31 klas:F -->
+<!-- fc id:T-62-011 sha:aed2a2e0 src:manual/62-proj-keruvannya.md:32 klas:F -->
 ### T-62-011 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -295,7 +295,7 @@
 
 ---
 
-<!-- fc id:T-62-012 sha:c5901edb src:manual/62-proj-keruvannya.md:32 klas:E -->
+<!-- fc id:T-62-012 sha:c5901edb src:manual/62-proj-keruvannya.md:33 klas:E -->
 ### T-62-012 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -330,7 +330,7 @@
 
 ---
 
-<!-- fc id:T-62-013 sha:58e01a67 src:manual/62-proj-keruvannya.md:32 klas:E -->
+<!-- fc id:T-62-013 sha:58e01a67 src:manual/62-proj-keruvannya.md:33 klas:E -->
 ### T-62-013 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -371,7 +371,7 @@
 
 ---
 
-<!-- fc id:T-62-014 sha:20d19b70 src:manual/62-proj-keruvannya.md:33 klas:E -->
+<!-- fc id:T-62-014 sha:20d19b70 src:manual/62-proj-keruvannya.md:34 klas:E -->
 ### T-62-014 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -406,7 +406,7 @@
 
 ---
 
-<!-- fc id:T-62-015 sha:e78fb121 src:manual/62-proj-keruvannya.md:33 klas:E -->
+<!-- fc id:T-62-015 sha:e78fb121 src:manual/62-proj-keruvannya.md:34 klas:E -->
 ### T-62-015 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -441,7 +441,7 @@
 
 ---
 
-<!-- fc id:T-62-016 sha:1fc642d2 src:manual/62-proj-keruvannya.md:34 klas:E -->
+<!-- fc id:T-62-016 sha:1fc642d2 src:manual/62-proj-keruvannya.md:35 klas:E -->
 ### T-62-016 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -476,7 +476,7 @@
 
 ---
 
-<!-- fc id:T-62-017 sha:5b40a09d src:manual/62-proj-keruvannya.md:34 klas:A -->
+<!-- fc id:T-62-017 sha:5b40a09d src:manual/62-proj-keruvannya.md:35 klas:A -->
 ### T-62-017 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -520,7 +520,7 @@
 
 ---
 
-<!-- fc id:T-62-018 sha:444b90c1 src:manual/62-proj-keruvannya.md:35 klas:E -->
+<!-- fc id:T-62-018 sha:444b90c1 src:manual/62-proj-keruvannya.md:36 klas:E -->
 ### T-62-018 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -555,7 +555,7 @@
 
 ---
 
-<!-- fc id:T-62-019 sha:8fc03a5a src:manual/62-proj-keruvannya.md:36 klas:E -->
+<!-- fc id:T-62-019 sha:8fc03a5a src:manual/62-proj-keruvannya.md:37 klas:E -->
 ### T-62-019 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -632,7 +632,7 @@
 
 ---
 
-<!-- fc id:T-62-021 sha:06e85c5c src:manual/62-proj-keruvannya.md:40 klas:A -->
+<!-- fc id:T-62-021 sha:06e85c5c src:manual/62-proj-keruvannya.md:41 klas:A -->
 ### T-62-021 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -689,7 +689,7 @@
 
 ---
 
-<!-- fc id:T-62-022 sha:6dbfe366 src:manual/62-proj-keruvannya.md:40 klas:A -->
+<!-- fc id:T-62-022 sha:6dbfe366 src:manual/62-proj-keruvannya.md:41 klas:A -->
 ### T-62-022 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -746,7 +746,7 @@
 
 ---
 
-<!-- fc id:T-62-023 sha:680cd1bf src:manual/62-proj-keruvannya.md:40 klas:A -->
+<!-- fc id:T-62-023 sha:680cd1bf src:manual/62-proj-keruvannya.md:41 klas:A -->
 ### T-62-023 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -803,7 +803,7 @@
 
 ---
 
-<!-- fc id:T-62-024 sha:6f6a96e9 src:manual/62-proj-keruvannya.md:41 klas:B -->
+<!-- fc id:T-62-024 sha:6f6a96e9 src:manual/62-proj-keruvannya.md:42 klas:B -->
 ### T-62-024 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -860,7 +860,7 @@
 
 ---
 
-<!-- fc id:T-62-025 sha:66b266bb src:manual/62-proj-keruvannya.md:41 klas:A -->
+<!-- fc id:T-62-025 sha:66b266bb src:manual/62-proj-keruvannya.md:42 klas:A -->
 ### T-62-025 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -909,7 +909,7 @@
 
 ---
 
-<!-- fc id:T-62-026 sha:62ff4d05 src:manual/62-proj-keruvannya.md:41 klas:A -->
+<!-- fc id:T-62-026 sha:62ff4d05 src:manual/62-proj-keruvannya.md:42 klas:A -->
 ### T-62-026 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -958,7 +958,7 @@
 
 ---
 
-<!-- fc id:T-62-027 sha:a64ce347 src:manual/62-proj-keruvannya.md:42 klas:A -->
+<!-- fc id:T-62-027 sha:a64ce347 src:manual/62-proj-keruvannya.md:43 klas:A -->
 ### T-62-027 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -1015,7 +1015,7 @@
 
 ---
 
-<!-- fc id:T-62-028 sha:9d7cdd08 src:manual/62-proj-keruvannya.md:42 klas:A -->
+<!-- fc id:T-62-028 sha:9d7cdd08 src:manual/62-proj-keruvannya.md:43 klas:A -->
 ### T-62-028 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -1072,7 +1072,7 @@
 
 ---
 
-<!-- fc id:T-62-029 sha:37f7d5f3 src:manual/62-proj-keruvannya.md:42 klas:A -->
+<!-- fc id:T-62-029 sha:37f7d5f3 src:manual/62-proj-keruvannya.md:43 klas:A -->
 ### T-62-029 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -1129,7 +1129,7 @@
 
 ---
 
-<!-- fc id:T-62-030 sha:a48ef5a8 src:manual/62-proj-keruvannya.md:43 klas:A -->
+<!-- fc id:T-62-030 sha:a48ef5a8 src:manual/62-proj-keruvannya.md:44 klas:A -->
 ### T-62-030 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -1186,7 +1186,7 @@
 
 ---
 
-<!-- fc id:T-62-031 sha:45b78b5c src:manual/62-proj-keruvannya.md:43 klas:A -->
+<!-- fc id:T-62-031 sha:45b78b5c src:manual/62-proj-keruvannya.md:44 klas:A -->
 ### T-62-031 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -1243,7 +1243,7 @@
 
 ---
 
-<!-- fc id:T-62-032 sha:66aeee19 src:manual/62-proj-keruvannya.md:43 klas:A -->
+<!-- fc id:T-62-032 sha:66aeee19 src:manual/62-proj-keruvannya.md:44 klas:A -->
 ### T-62-032 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -2521,7 +2521,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 ---
 
-<!-- fc id:T-62-076 sha:d08185e1 src:manual/62-proj-keruvannya.md:145 klas:A -->
+<!-- fc id:T-62-076 sha:d08185e1 src:manual/62-proj-keruvannya.md:146 klas:A -->
 ### T-62-076 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -2565,7 +2565,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 ---
 
-<!-- fc id:T-62-077 sha:4efee294 src:manual/62-proj-keruvannya.md:145 klas:E -->
+<!-- fc id:T-62-077 sha:4efee294 src:manual/62-proj-keruvannya.md:146 klas:E -->
 ### T-62-077 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -2599,7 +2599,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 ---
 
-<!-- fc id:T-62-078 sha:867a666c src:manual/62-proj-keruvannya.md:146 klas:A -->
+<!-- fc id:T-62-078 sha:867a666c src:manual/62-proj-keruvannya.md:147 klas:A -->
 ### T-62-078 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**
@@ -2643,7 +2643,7 @@ GPIO27 ── кнопка «пуск» ── GND
 
 ---
 
-<!-- fc id:T-62-079 sha:3061b493 src:manual/62-proj-keruvannya.md:146 klas:E -->
+<!-- fc id:T-62-079 sha:3061b493 src:manual/62-proj-keruvannya.md:147 klas:E -->
 ### T-62-079 · komirka · `manual/62-proj-keruvannya.md`
 
 **Твердження, коротко**

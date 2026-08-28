@@ -179,7 +179,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-006 sha:4fb5c876 src:kartky/k15-seriyna.md:26 klas:E -->
+<!-- fc id:T-K15-006 sha:4fb5c876 src:kartky/k15-seriyna.md:27 klas:E -->
 ### T-K15-006 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -216,7 +216,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-007 sha:996855d9 src:kartky/k15-seriyna.md:26 klas:F -->
+<!-- fc id:T-K15-007 sha:996855d9 src:kartky/k15-seriyna.md:27 klas:F -->
 ### T-K15-007 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -253,7 +253,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-008 sha:b6338e2f src:kartky/k15-seriyna.md:27 klas:E -->
+<!-- fc id:T-K15-008 sha:b6338e2f src:kartky/k15-seriyna.md:28 klas:E -->
 ### T-K15-008 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -290,7 +290,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-009 sha:8c04de3d src:kartky/k15-seriyna.md:27 klas:A -->
+<!-- fc id:T-K15-009 sha:8c04de3d src:kartky/k15-seriyna.md:28 klas:A -->
 ### T-K15-009 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -349,7 +349,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-010 sha:f91fb570 src:kartky/k15-seriyna.md:28 klas:E -->
+<!-- fc id:T-K15-010 sha:f91fb570 src:kartky/k15-seriyna.md:29 klas:E -->
 ### T-K15-010 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -386,7 +386,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-011 sha:faca8f2d src:kartky/k15-seriyna.md:28 klas:F -->
+<!-- fc id:T-K15-011 sha:faca8f2d src:kartky/k15-seriyna.md:29 klas:F -->
 ### T-K15-011 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -423,7 +423,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-012 sha:d7deee82 src:kartky/k15-seriyna.md:29 klas:E -->
+<!-- fc id:T-K15-012 sha:d7deee82 src:kartky/k15-seriyna.md:30 klas:E -->
 ### T-K15-012 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -460,7 +460,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-013 sha:27735e3c src:kartky/k15-seriyna.md:29 klas:E -->
+<!-- fc id:T-K15-013 sha:27735e3c src:kartky/k15-seriyna.md:30 klas:E -->
 ### T-K15-013 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -497,7 +497,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-014 sha:fa0d7841 src:kartky/k15-seriyna.md:30 klas:E -->
+<!-- fc id:T-K15-014 sha:fa0d7841 src:kartky/k15-seriyna.md:31 klas:E -->
 ### T-K15-014 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -534,7 +534,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-015 sha:c289cc01 src:kartky/k15-seriyna.md:30 klas:E -->
+<!-- fc id:T-K15-015 sha:c289cc01 src:kartky/k15-seriyna.md:31 klas:E -->
 ### T-K15-015 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -571,7 +571,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-016 sha:935c8ea3 src:kartky/k15-seriyna.md:31 klas:E -->
+<!-- fc id:T-K15-016 sha:935c8ea3 src:kartky/k15-seriyna.md:32 klas:E -->
 ### T-K15-016 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -608,7 +608,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-017 sha:1455628b src:kartky/k15-seriyna.md:31 klas:E -->
+<!-- fc id:T-K15-017 sha:1455628b src:kartky/k15-seriyna.md:32 klas:E -->
 ### T-K15-017 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -645,7 +645,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-018 sha:324b565a src:kartky/k15-seriyna.md:32 klas:E -->
+<!-- fc id:T-K15-018 sha:324b565a src:kartky/k15-seriyna.md:33 klas:E -->
 ### T-K15-018 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -682,7 +682,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-019 sha:4253d18a src:kartky/k15-seriyna.md:32 klas:E -->
+<!-- fc id:T-K15-019 sha:4253d18a src:kartky/k15-seriyna.md:33 klas:E -->
 ### T-K15-019 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -719,7 +719,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-020 sha:b24d7bca src:kartky/k15-seriyna.md:33 klas:E -->
+<!-- fc id:T-K15-020 sha:b24d7bca src:kartky/k15-seriyna.md:34 klas:E -->
 ### T-K15-020 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -825,7 +825,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-024 sha:e706eb63 src:kartky/k15-seriyna.md:42 klas:F -->
+<!-- fc id:T-K15-024 sha:e706eb63 src:kartky/k15-seriyna.md:43 klas:F -->
 ### T-K15-024 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -856,7 +856,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-025 sha:a8bb95c8 src:kartky/k15-seriyna.md:42 klas:F -->
+<!-- fc id:T-K15-025 sha:a8bb95c8 src:kartky/k15-seriyna.md:43 klas:F -->
 ### T-K15-025 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -887,7 +887,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-026 sha:e4e73586 src:kartky/k15-seriyna.md:42 klas:E -->
+<!-- fc id:T-K15-026 sha:e4e73586 src:kartky/k15-seriyna.md:43 klas:E -->
 ### T-K15-026 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -918,7 +918,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-027 sha:29d3900f src:kartky/k15-seriyna.md:42 klas:E -->
+<!-- fc id:T-K15-027 sha:29d3900f src:kartky/k15-seriyna.md:43 klas:E -->
 ### T-K15-027 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -949,7 +949,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-028 sha:79ce9a1f src:kartky/k15-seriyna.md:43 klas:F -->
+<!-- fc id:T-K15-028 sha:79ce9a1f src:kartky/k15-seriyna.md:44 klas:F -->
 ### T-K15-028 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -980,7 +980,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-029 sha:9f488b42 src:kartky/k15-seriyna.md:43 klas:F -->
+<!-- fc id:T-K15-029 sha:9f488b42 src:kartky/k15-seriyna.md:44 klas:F -->
 ### T-K15-029 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -1011,7 +1011,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-030 sha:a6590e77 src:kartky/k15-seriyna.md:43 klas:E -->
+<!-- fc id:T-K15-030 sha:a6590e77 src:kartky/k15-seriyna.md:44 klas:E -->
 ### T-K15-030 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -1042,7 +1042,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-031 sha:37c1710c src:kartky/k15-seriyna.md:43 klas:E -->
+<!-- fc id:T-K15-031 sha:37c1710c src:kartky/k15-seriyna.md:44 klas:E -->
 ### T-K15-031 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**
@@ -1073,7 +1073,7 @@ idf.py merge-bin -o vyrib-v1.4.bin      # адреси — з конфігура
 
 ---
 
-<!-- fc id:T-K15-032 sha:0554d11b src:kartky/k15-seriyna.md:43 klas:E -->
+<!-- fc id:T-K15-032 sha:0554d11b src:kartky/k15-seriyna.md:44 klas:E -->
 ### T-K15-032 · komirka · `kartky/k15-seriyna.md`
 
 **Твердження, коротко**

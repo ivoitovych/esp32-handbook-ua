@@ -234,7 +234,7 @@
 
 ---
 
-<!-- fc id:T-61-011 sha:01a9ed98 src:manual/61-proj-kanal.md:29 klas:F -->
+<!-- fc id:T-61-011 sha:01a9ed98 src:manual/61-proj-kanal.md:30 klas:F -->
 ### T-61-011 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -267,7 +267,7 @@
 
 ---
 
-<!-- fc id:T-61-012 sha:573156b8 src:manual/61-proj-kanal.md:29 klas:F -->
+<!-- fc id:T-61-012 sha:573156b8 src:manual/61-proj-kanal.md:30 klas:F -->
 ### T-61-012 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -300,7 +300,7 @@
 
 ---
 
-<!-- fc id:T-61-013 sha:76ab707d src:manual/61-proj-kanal.md:30 klas:C -->
+<!-- fc id:T-61-013 sha:76ab707d src:manual/61-proj-kanal.md:31 klas:C -->
 ### T-61-013 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -337,7 +337,7 @@
 
 ---
 
-<!-- fc id:T-61-014 sha:706d3437 src:manual/61-proj-kanal.md:30 klas:F -->
+<!-- fc id:T-61-014 sha:706d3437 src:manual/61-proj-kanal.md:31 klas:F -->
 ### T-61-014 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -370,7 +370,7 @@
 
 ---
 
-<!-- fc id:T-61-015 sha:24bfd5bc src:manual/61-proj-kanal.md:31 klas:F -->
+<!-- fc id:T-61-015 sha:24bfd5bc src:manual/61-proj-kanal.md:32 klas:F -->
 ### T-61-015 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**
@@ -403,7 +403,7 @@
 
 ---
 
-<!-- fc id:T-61-016 sha:dba9d4ef src:manual/61-proj-kanal.md:31 klas:F -->
+<!-- fc id:T-61-016 sha:dba9d4ef src:manual/61-proj-kanal.md:32 klas:F -->
 ### T-61-016 · komirka · `manual/61-proj-kanal.md`
 
 **Твердження, коротко**

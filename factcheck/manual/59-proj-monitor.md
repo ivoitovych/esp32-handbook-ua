@@ -280,7 +280,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-012 sha:bf7fec58 src:manual/59-proj-monitor.md:32 klas:S -->
+<!-- fc id:T-59-012 sha:bf7fec58 src:manual/59-proj-monitor.md:33 klas:S -->
 ### T-59-012 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -320,7 +320,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-013 sha:f93103c7 src:manual/59-proj-monitor.md:32 klas:F -->
+<!-- fc id:T-59-013 sha:f93103c7 src:manual/59-proj-monitor.md:33 klas:F -->
 ### T-59-013 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -354,7 +354,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-014 sha:82dde248 src:manual/59-proj-monitor.md:33 klas:F -->
+<!-- fc id:T-59-014 sha:82dde248 src:manual/59-proj-monitor.md:34 klas:F -->
 ### T-59-014 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -388,7 +388,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-015 sha:33217139 src:manual/59-proj-monitor.md:33 klas:A -->
+<!-- fc id:T-59-015 sha:33217139 src:manual/59-proj-monitor.md:34 klas:A -->
 ### T-59-015 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -432,7 +432,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-016 sha:17139ead src:manual/59-proj-monitor.md:34 klas:E -->
+<!-- fc id:T-59-016 sha:17139ead src:manual/59-proj-monitor.md:35 klas:E -->
 ### T-59-016 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -479,7 +479,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-017 sha:e28e0795 src:manual/59-proj-monitor.md:34 klas:E -->
+<!-- fc id:T-59-017 sha:e28e0795 src:manual/59-proj-monitor.md:35 klas:E -->
 ### T-59-017 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -526,7 +526,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-018 sha:b849725c src:manual/59-proj-monitor.md:35 klas:E -->
+<!-- fc id:T-59-018 sha:b849725c src:manual/59-proj-monitor.md:36 klas:E -->
 ### T-59-018 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -560,7 +560,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-019 sha:a8265b17 src:manual/59-proj-monitor.md:36 klas:E -->
+<!-- fc id:T-59-019 sha:a8265b17 src:manual/59-proj-monitor.md:37 klas:E -->
 ### T-59-019 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -692,7 +692,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-024 sha:0459c3fe src:manual/59-proj-monitor.md:47 klas:A -->
+<!-- fc id:T-59-024 sha:0459c3fe src:manual/59-proj-monitor.md:48 klas:A -->
 ### T-59-024 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -733,7 +733,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-025 sha:634585b7 src:manual/59-proj-monitor.md:47 klas:A -->
+<!-- fc id:T-59-025 sha:634585b7 src:manual/59-proj-monitor.md:48 klas:A -->
 ### T-59-025 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -774,7 +774,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-026 sha:31ee2c1e src:manual/59-proj-monitor.md:48 klas:A -->
+<!-- fc id:T-59-026 sha:31ee2c1e src:manual/59-proj-monitor.md:49 klas:A -->
 ### T-59-026 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**
@@ -815,7 +815,7 @@ mDNS, зберігання стану й обробка помилок.
 
 ---
 
-<!-- fc id:T-59-027 sha:9a5bea62 src:manual/59-proj-monitor.md:48 klas:A -->
+<!-- fc id:T-59-027 sha:9a5bea62 src:manual/59-proj-monitor.md:49 klas:A -->
 ### T-59-027 · komirka · `manual/59-proj-monitor.md`
 
 **Твердження, коротко**

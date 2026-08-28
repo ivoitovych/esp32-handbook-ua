@@ -128,8 +128,15 @@ def znyaty(kudy: pathlib.Path) -> int:
         r = subprocess.run([sys.executable, f"tools/{t[0]}", *argv],
                            cwd=ROOT, capture_output=True, text=True,
                            timeout=1800)
-        (kudy / f"{imya(t)}.out").write_text(r.stdout, encoding="utf-8")
-        (kudy / f"{imya(t)}.err").write_text(r.stderr, encoding="utf-8")
+        # Ім'я тимчасового каталогу міняється щопрогону, тож два знімки
+        # тих точок, що його друкують, НІКОЛИ не збігалися б — і
+        # порівняння вічно показувало б різницю там, де її немає.
+        # Знімок, який завжди відрізняється від себе, не знімок.
+        def bez_tmp(s: str) -> str:
+            return s.replace(tmp, "{TMP}")
+
+        (kudy / f"{imya(t)}.out").write_text(bez_tmp(r.stdout), encoding="utf-8")
+        (kudy / f"{imya(t)}.err").write_text(bez_tmp(r.stderr), encoding="utf-8")
         znak = "✓" if r.returncode == 0 else f"rc={r.returncode}"
         if "Traceback" in r.stderr:
             znak = "ПАДІННЯ"

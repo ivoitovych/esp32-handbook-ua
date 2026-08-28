@@ -1296,7 +1296,7 @@
 
 ---
 
-<!-- fc id:T-51-053 sha:379892e3 src:manual/51-payannya.md:115 klas:E -->
+<!-- fc id:T-51-053 sha:379892e3 src:manual/51-payannya.md:116 klas:E -->
 ### T-51-053 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1331,7 +1331,7 @@
 
 ---
 
-<!-- fc id:T-51-054 sha:99c40d6d src:manual/51-payannya.md:115 klas:E -->
+<!-- fc id:T-51-054 sha:99c40d6d src:manual/51-payannya.md:116 klas:E -->
 ### T-51-054 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1366,7 +1366,7 @@
 
 ---
 
-<!-- fc id:T-51-055 sha:db1c3d01 src:manual/51-payannya.md:116 klas:E -->
+<!-- fc id:T-51-055 sha:db1c3d01 src:manual/51-payannya.md:117 klas:E -->
 ### T-51-055 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1401,7 +1401,7 @@
 
 ---
 
-<!-- fc id:T-51-056 sha:670a4984 src:manual/51-payannya.md:116 klas:E -->
+<!-- fc id:T-51-056 sha:670a4984 src:manual/51-payannya.md:117 klas:E -->
 ### T-51-056 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1436,7 +1436,7 @@
 
 ---
 
-<!-- fc id:T-51-057 sha:1ec2a927 src:manual/51-payannya.md:117 klas:E -->
+<!-- fc id:T-51-057 sha:1ec2a927 src:manual/51-payannya.md:118 klas:E -->
 ### T-51-057 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1471,7 +1471,7 @@
 
 ---
 
-<!-- fc id:T-51-058 sha:6876a292 src:manual/51-payannya.md:117 klas:E -->
+<!-- fc id:T-51-058 sha:6876a292 src:manual/51-payannya.md:118 klas:E -->
 ### T-51-058 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1506,7 +1506,7 @@
 
 ---
 
-<!-- fc id:T-51-059 sha:2b9ef61a src:manual/51-payannya.md:118 klas:E -->
+<!-- fc id:T-51-059 sha:2b9ef61a src:manual/51-payannya.md:119 klas:E -->
 ### T-51-059 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1541,7 +1541,7 @@
 
 ---
 
-<!-- fc id:T-51-060 sha:bf538913 src:manual/51-payannya.md:118 klas:E -->
+<!-- fc id:T-51-060 sha:bf538913 src:manual/51-payannya.md:119 klas:E -->
 ### T-51-060 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1576,7 +1576,7 @@
 
 ---
 
-<!-- fc id:T-51-061 sha:d572f94f src:manual/51-payannya.md:119 klas:E -->
+<!-- fc id:T-51-061 sha:d572f94f src:manual/51-payannya.md:120 klas:E -->
 ### T-51-061 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1611,7 +1611,7 @@
 
 ---
 
-<!-- fc id:T-51-062 sha:01d58b5f src:manual/51-payannya.md:119 klas:E -->
+<!-- fc id:T-51-062 sha:01d58b5f src:manual/51-payannya.md:120 klas:E -->
 ### T-51-062 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1646,7 +1646,7 @@
 
 ---
 
-<!-- fc id:T-51-063 sha:753048dd src:manual/51-payannya.md:120 klas:E -->
+<!-- fc id:T-51-063 sha:753048dd src:manual/51-payannya.md:121 klas:E -->
 ### T-51-063 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**
@@ -1681,7 +1681,7 @@
 
 ---
 
-<!-- fc id:T-51-064 sha:da7d229b src:manual/51-payannya.md:120 klas:E -->
+<!-- fc id:T-51-064 sha:da7d229b src:manual/51-payannya.md:121 klas:E -->
 ### T-51-064 · komirka · `manual/51-payannya.md`
 
 **Твердження, коротко**

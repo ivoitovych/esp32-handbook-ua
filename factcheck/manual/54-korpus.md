@@ -101,7 +101,7 @@
 
 ---
 
-<!-- fc id:T-54-005 sha:6fbe4ff1 src:manual/54-korpus.md:14 klas:C -->
+<!-- fc id:T-54-005 sha:6fbe4ff1 src:manual/54-korpus.md:15 klas:C -->
 ### T-54-005 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -139,7 +139,7 @@
 
 ---
 
-<!-- fc id:T-54-006 sha:a53e716f src:manual/54-korpus.md:14 klas:C -->
+<!-- fc id:T-54-006 sha:a53e716f src:manual/54-korpus.md:15 klas:C -->
 ### T-54-006 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -177,7 +177,7 @@
 
 ---
 
-<!-- fc id:T-54-007 sha:4acd3948 src:manual/54-korpus.md:15 klas:C -->
+<!-- fc id:T-54-007 sha:4acd3948 src:manual/54-korpus.md:16 klas:C -->
 ### T-54-007 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -215,7 +215,7 @@
 
 ---
 
-<!-- fc id:T-54-008 sha:173dfdc3 src:manual/54-korpus.md:15 klas:C -->
+<!-- fc id:T-54-008 sha:173dfdc3 src:manual/54-korpus.md:16 klas:C -->
 ### T-54-008 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -253,7 +253,7 @@
 
 ---
 
-<!-- fc id:T-54-009 sha:6f22aac0 src:manual/54-korpus.md:16 klas:C -->
+<!-- fc id:T-54-009 sha:6f22aac0 src:manual/54-korpus.md:17 klas:C -->
 ### T-54-009 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -291,7 +291,7 @@
 
 ---
 
-<!-- fc id:T-54-010 sha:4795c3f7 src:manual/54-korpus.md:16 klas:C -->
+<!-- fc id:T-54-010 sha:4795c3f7 src:manual/54-korpus.md:17 klas:C -->
 ### T-54-010 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -329,7 +329,7 @@
 
 ---
 
-<!-- fc id:T-54-011 sha:ff7027ee src:manual/54-korpus.md:17 klas:C -->
+<!-- fc id:T-54-011 sha:ff7027ee src:manual/54-korpus.md:18 klas:C -->
 ### T-54-011 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**
@@ -367,7 +367,7 @@
 
 ---
 
-<!-- fc id:T-54-012 sha:8bb2a54a src:manual/54-korpus.md:17 klas:C -->
+<!-- fc id:T-54-012 sha:8bb2a54a src:manual/54-korpus.md:18 klas:C -->
 ### T-54-012 · komirka · `manual/54-korpus.md`
 
 **Твердження, коротко**

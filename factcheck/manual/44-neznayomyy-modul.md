@@ -358,7 +358,7 @@
 
 ---
 
-<!-- fc id:T-44-015 sha:208df048 src:manual/44-neznayomyy-modul.md:32 klas:L -->
+<!-- fc id:T-44-015 sha:208df048 src:manual/44-neznayomyy-modul.md:33 klas:L -->
 ### T-44-015 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -401,7 +401,7 @@
 
 ---
 
-<!-- fc id:T-44-016 sha:c62854ef src:manual/44-neznayomyy-modul.md:32 klas:L -->
+<!-- fc id:T-44-016 sha:c62854ef src:manual/44-neznayomyy-modul.md:33 klas:L -->
 ### T-44-016 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -444,7 +444,7 @@
 
 ---
 
-<!-- fc id:T-44-017 sha:2932f428 src:manual/44-neznayomyy-modul.md:33 klas:E -->
+<!-- fc id:T-44-017 sha:2932f428 src:manual/44-neznayomyy-modul.md:34 klas:E -->
 ### T-44-017 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -483,7 +483,7 @@
 
 ---
 
-<!-- fc id:T-44-018 sha:5deda58a src:manual/44-neznayomyy-modul.md:33 klas:E -->
+<!-- fc id:T-44-018 sha:5deda58a src:manual/44-neznayomyy-modul.md:34 klas:E -->
 ### T-44-018 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -516,7 +516,7 @@
 
 ---
 
-<!-- fc id:T-44-019 sha:58d6693f src:manual/44-neznayomyy-modul.md:34 klas:F -->
+<!-- fc id:T-44-019 sha:58d6693f src:manual/44-neznayomyy-modul.md:35 klas:F -->
 ### T-44-019 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -549,7 +549,7 @@
 
 ---
 
-<!-- fc id:T-44-020 sha:8356f1b2 src:manual/44-neznayomyy-modul.md:34 klas:F -->
+<!-- fc id:T-44-020 sha:8356f1b2 src:manual/44-neznayomyy-modul.md:35 klas:F -->
 ### T-44-020 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -838,7 +838,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-030 sha:06897e8b src:manual/44-neznayomyy-modul.md:59 klas:F -->
+<!-- fc id:T-44-030 sha:06897e8b src:manual/44-neznayomyy-modul.md:60 klas:F -->
 ### T-44-030 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -874,7 +874,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-031 sha:81def94d src:manual/44-neznayomyy-modul.md:59 klas:F -->
+<!-- fc id:T-44-031 sha:81def94d src:manual/44-neznayomyy-modul.md:60 klas:F -->
 ### T-44-031 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -910,7 +910,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-032 sha:d24088e4 src:manual/44-neznayomyy-modul.md:60 klas:E -->
+<!-- fc id:T-44-032 sha:d24088e4 src:manual/44-neznayomyy-modul.md:61 klas:E -->
 ### T-44-032 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -958,7 +958,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-033 sha:b97cef49 src:manual/44-neznayomyy-modul.md:60 klas:E -->
+<!-- fc id:T-44-033 sha:b97cef49 src:manual/44-neznayomyy-modul.md:61 klas:E -->
 ### T-44-033 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1006,7 +1006,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-034 sha:9c3b193e src:manual/44-neznayomyy-modul.md:61 klas:F -->
+<!-- fc id:T-44-034 sha:9c3b193e src:manual/44-neznayomyy-modul.md:62 klas:F -->
 ### T-44-034 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1042,7 +1042,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-035 sha:62ebcb00 src:manual/44-neznayomyy-modul.md:61 klas:F -->
+<!-- fc id:T-44-035 sha:62ebcb00 src:manual/44-neznayomyy-modul.md:62 klas:F -->
 ### T-44-035 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1078,7 +1078,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-036 sha:24219a3b src:manual/44-neznayomyy-modul.md:62 klas:B -->
+<!-- fc id:T-44-036 sha:24219a3b src:manual/44-neznayomyy-modul.md:63 klas:B -->
 ### T-44-036 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1126,7 +1126,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-037 sha:a54e6223 src:manual/44-neznayomyy-modul.md:62 klas:F -->
+<!-- fc id:T-44-037 sha:a54e6223 src:manual/44-neznayomyy-modul.md:63 klas:F -->
 ### T-44-037 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1162,7 +1162,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-038 sha:e81dfa2a src:manual/44-neznayomyy-modul.md:63 klas:F -->
+<!-- fc id:T-44-038 sha:e81dfa2a src:manual/44-neznayomyy-modul.md:64 klas:F -->
 ### T-44-038 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1198,7 +1198,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-039 sha:20fdc7eb src:manual/44-neznayomyy-modul.md:63 klas:F -->
+<!-- fc id:T-44-039 sha:20fdc7eb src:manual/44-neznayomyy-modul.md:64 klas:F -->
 ### T-44-039 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1234,7 +1234,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-040 sha:3363d5b0 src:manual/44-neznayomyy-modul.md:64 klas:F -->
+<!-- fc id:T-44-040 sha:3363d5b0 src:manual/44-neznayomyy-modul.md:65 klas:F -->
 ### T-44-040 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**
@@ -1270,7 +1270,7 @@ datasheet, а не за розташуванням написів (розділ 
 
 ---
 
-<!-- fc id:T-44-041 sha:442a22c8 src:manual/44-neznayomyy-modul.md:64 klas:F -->
+<!-- fc id:T-44-041 sha:442a22c8 src:manual/44-neznayomyy-modul.md:65 klas:F -->
 ### T-44-041 · komirka · `manual/44-neznayomyy-modul.md`
 
 **Твердження, коротко**

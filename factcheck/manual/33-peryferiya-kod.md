@@ -3780,7 +3780,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-115 sha:2d6128fe src:manual/33-peryferiya-kod.md:268 klas:A -->
+<!-- fc id:T-33-115 sha:2d6128fe src:manual/33-peryferiya-kod.md:269 klas:A -->
 ### T-33-115 · komirka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3839,7 +3839,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-116 sha:7d1d509e src:manual/33-peryferiya-kod.md:268 klas:A -->
+<!-- fc id:T-33-116 sha:7d1d509e src:manual/33-peryferiya-kod.md:269 klas:A -->
 ### T-33-116 · komirka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3898,7 +3898,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-117 sha:7afccfc4 src:manual/33-peryferiya-kod.md:269 klas:A -->
+<!-- fc id:T-33-117 sha:7afccfc4 src:manual/33-peryferiya-kod.md:270 klas:A -->
 ### T-33-117 · komirka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
@@ -3957,7 +3957,7 @@ adc_cali_raw_to_voltage(cali, raw, &mv);
 
 ---
 
-<!-- fc id:T-33-118 sha:69208de8 src:manual/33-peryferiya-kod.md:269 klas:A -->
+<!-- fc id:T-33-118 sha:69208de8 src:manual/33-peryferiya-kod.md:270 klas:A -->
 ### T-33-118 · komirka · `manual/33-peryferiya-kod.md`
 
 **Твердження, коротко**
