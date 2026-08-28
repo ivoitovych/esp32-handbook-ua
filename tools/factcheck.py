@@ -460,7 +460,20 @@ def vsi_kandydaty(zapysy: list[dict], h: str, txt: str) -> list[dict]:
     if tochni:
         return tochni
     return [z for z in zapysy
-            if z.get("zbih") and re.search(z["zbih"], txt, re.S)]
+            if z.get("zbih") and _vzirets(z["zbih"]).search(txt)]
+
+
+# Взірців 1337, а внутрішній кеш `re` тримає 512: без власного кешу
+# кожен виклик перекомпільовував ті самі взірці, і повний обхід
+# «одиниці × докази» тривав хвилини замість секунд.
+_KESH_VZIRCIV: dict[str, "re.Pattern[str]"] = {}
+
+
+def _vzirets(v: str) -> "re.Pattern[str]":
+    rx = _KESH_VZIRCIV.get(v)
+    if rx is None:
+        rx = _KESH_VZIRCIV[v] = re.compile(v, re.S)
+    return rx
 
 
 SHABLON_DOKAZU = """**Доказ**

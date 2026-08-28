@@ -80,10 +80,15 @@ def zibraty(za: str = "sha") -> dict[str, list[str]]:
     Якір — `sha`, а не `id`. Про різницю — у docstring модуля, розділ
     «Чому якір — вміст, а не номер».
     """
+    import factcheck
     import vybirka
 
     odyn = [u for k in "ABCDEFGK" for u in vybirka.odynyci(k)]
-    zv: dict[str, list[str]] = {}
+
+    # Ключ запису мусить пережити перевпорядкування файлу, тож у ньому
+    # стоїть порядковий номер: назви в межах файлу повторюються, і без
+    # номера два докази злилися б в один.
+    zapysy: list[dict] = []
     for f in sorted((ROOT / "factcheck" / "dokazy").glob("*.yaml")):
         try:
             z = yaml.safe_load(f.read_text(encoding="utf-8")) or []
@@ -92,16 +97,23 @@ def zibraty(za: str = "sha") -> dict[str, list[str]]:
         for i, r in enumerate(z):
             if not isinstance(r, dict):
                 continue
-            vz = str(r.get("zbih", ""))
-            try:
-                rx = re.compile(vz)
-            except re.error:
-                continue
-            # Ключ містить порядковий номер: назви в межах файлу можуть
-            # повторюватися, і без номера два докази злилися б в один.
-            klyuch = f"{f.name}::{i}::{str(r.get('nazva'))[:60]}"
-            zv[klyuch] = sorted(u[za] for u in odyn if rx.search(u["tekst"]))
-    return zv
+            r["_znimok_klyuch"] = f"{f.name}::{i}::{str(r.get('nazva'))[:60]}"
+            zapysy.append(r)
+
+    zv: dict[str, list[str]] = {k["_znimok_klyuch"]: [] for k in zapysy}
+    # Питаємо **тим самим** добирачем, що й генератор реєстру, і питаємо
+    # його з боку одиниці, а не запису.
+    #
+    # Різниця не косметична. `vsi_kandydaty` має старшинство: якщо хоч
+    # один запис накриває одиницю точним `sha`, взірці інших записів на
+    # неї вже не діють. Знімок, що рахував би взірці окремо, показував би
+    # прив'язку, якої насправді немає, — і мовчав би саме тоді, коли
+    # прив'язки переїжджають зі взірця на хеш, тобто рівно тоді, коли
+    # він потрібен.
+    for u in odyn:
+        for z in factcheck.vsi_kandydaty(zapysy, u["sha"], u["tekst"]):
+            zv[z["_znimok_klyuch"]].append(u[za])
+    return {k: sorted(v) for k, v in zv.items()}
 
 
 def main() -> int:
