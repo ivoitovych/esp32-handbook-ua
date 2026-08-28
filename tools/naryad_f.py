@@ -46,6 +46,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import collections
 import re
 import sys
@@ -185,6 +186,27 @@ SHAPKA = """# Наряд {n}: {tema} — {k} одиниць
 """
 
 
+def versiya_naryadu() -> str:
+    """Відбиток шаблону наряду — восьми знаків хешу тексту `SHAPKA`.
+
+    ## Навіщо
+
+    Наряд — це і є та частина технології, яка діє на помічника. Ми
+    міняли його дев'ять разів і щоразу міряли наслідок, але **приписати
+    наслідок конкретній зміні не могли**: у прогоні не лишалося сліду
+    про те, який саме наряд його породив. Порівняння хвиль трималося на
+    пам'яті супровідника.
+
+    Відбиток кладеться в кожен наряд і в `vybirka.json` прогону. Тоді
+    таблиця «версія наряду → роди хиб» будується сама, і питання «чи
+    допомогла остання зміна» стає вимірним, а не згадуваним.
+
+    > Змінюючи наряд, ми змінюємо технологію. Зміна технології без
+    > версії — це не експеримент, а зміна погоди.
+    """
+    return hashlib.sha256(SHAPKA.encode("utf-8")).hexdigest()[:8]
+
+
 def vypadkova(a, vybirka) -> int:
     """Випадкова вибірка з усієї черги `F`, з насінням і переліком."""
     import json
@@ -192,8 +214,31 @@ def vypadkova(a, vybirka) -> int:
 
     usi = sorted(vybirka.odynyci("F"), key=lambda u: u["id"])
     vzyato = random.Random(a.nasinnya).sample(usi, min(a.vypadkovo, len(usi)))
+
+    # НАСІННЯ САМЕ ПО СОБІ ВИБІРКИ НЕ ВІДТВОРЮЄ.
+    #
+    # `sample` тягне з сукупності, і сукупність — черга `F` — міняється
+    # щоразу, коли хтось садить доказ. Те саме насіння на іншій черзі
+    # дає інші одиниці.
+    #
+    # Виміряно 2026-08-28: прогін із насінням 20260828 повторено того
+    # самого дня через сім годин і дав ІНШУ сотню. Уранці повтор давав
+    # ту саму — і це була правда рівно тієї хвилини.
+    #
+    # Тому записуються три речі, і кожна закриває свою дірку:
+    #   nasinnya          щоб повторити ЖЕРЕБ
+    #   population_sha    щоб побачити, що сукупність уже не та
+    #   vzyato            щоб мати самі одиниці, коли жереб не повторити
+    #
+    # Перелік `id` — єдине, що переживає зміну черги. Він слабший за
+    # насіння (не доводить, що жереб був чесний) і сильніший за нього
+    # (результат перераховний через місяць).
+    naselennya = hashlib.sha256(
+        "\n".join(u["id"] for u in usi).encode()).hexdigest()[:12]
     (a.kudy / "vybirka.json").write_text(json.dumps(
-        {"nasinnya": a.nasinnya, "z_cherhy": len(usi),
+        {"order_version": versiya_naryadu(),
+         "nasinnya": a.nasinnya, "population_sha": naselennya,
+         "z_cherhy": len(usi), "queue": "F", "sample_size": len(vzyato),
          "vzyato": [u["id"] for u in vzyato]},
         ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -207,7 +252,9 @@ def vypadkova(a, vybirka) -> int:
                 "знайшов, `ne_znayshov` із адресою того, що відкривав, "
                 "це повноцінна відповідь.")
         r = [SHAPKA.format(n=n, tema=f"випадкова вибірка (насіння {a.nasinnya})",
-                           k=len(ch), kandydat=kand)]
+                           k=len(ch), kandydat=kand),
+             f"\n<!-- order_version:{versiya_naryadu()} "
+             f"seed:{a.nasinnya} -->\n"]
         for u in ch:
             r.append(f"\n**`{u['id']}`**\n")
             r.append(f"> {u['tekst']}\n")

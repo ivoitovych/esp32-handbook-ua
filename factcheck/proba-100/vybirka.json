@@ -102,5 +102,11 @@
   "T-20-065",
   "T-04-001",
   "T-A-098"
- ]
+ ],
+ "order_version": "67e8c9a8",
+ "queue": "F",
+ "sample_size": 100,
+ "population_sha": "(не записано: прогін передував правилу)",
+ "population_now": "b10496a25c55",
+ "z_cherhy_now": 1749
 }
