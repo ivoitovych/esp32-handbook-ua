@@ -1,0 +1,39 @@
+- unit: T-59-103
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/system/task_watchdog/main/task_watchdog_example.c
+
+- unit: T-49-064
+  verdict: advice
+  why: це оцінка практичності, не технічний факт про PSRAM
+
+- unit: T-04-120
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32c6/esp32-c6-devkitc-1.rst
+
+- unit: T-E-124
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_hw_support/include/esp_chip_info.h
+
+- unit: T-59-129
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_http_server/examples/main/http_server_simple.c
+
+- unit: T-16-017
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32/esp32_devkitc_guide.rst
+
+- unit: T-K12-008
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32/esp32_devkitc_guide.rst
+
+- unit: T-57-066
+  verdict: advice
+  why: архітектурне рішення, не факт про ESP32
+
+- unit: T-B-121
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/uart.rst
+
+- unit: T-07-026
+  verdict: not_found
+  source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/esp32/esp32_devkitc_guide.rst

@@ -1,0 +1,56 @@
+- unit: T-61-069
+  verdict: not_found
+  source: 'https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h'
+  comment: 'Пошук терміну vtracheno у документації ESP-IDF не дав результатів'
+
+- unit: T-E-011
+  verdict: confirmed
+  source: 'https://raw.githubusercontent.com/adafruit/Adafruit_BMP280_Library/master/README.md'
+  quote: 'Arduino library for BMP280 sensors'
+  comment: 'Адафрут має офіційну бібліотеку для BMP280'
+
+- unit: T-02-015
+  verdict: confirmed
+  source: 'https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/soc.h'
+  quote: 'SPDX-FileCopyrightText: 2020-2025 Espressif Systems (Shanghai) CO LTD'
+  comment: 'ESP32-C3 архітектура підтверджена в SOC заголовках ESP-IDF'
+
+- unit: T-04-133
+  verdict: confirmed
+  source: 'https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/dac.rst'
+  quote: '{IDF_TARGET_NAME} has two 8-bit DAC (digital to analog converter) channels'
+  comment: 'Документація DAC вказує, що DAC є тільки для ESP32 та ESP32-S2, не для S3'
+
+- unit: T-61-062
+  verdict: confirmed
+  source: 'https://raw.githubusercontent.com/espressif/esp-idf/master/components/log/include/esp_log.h'
+  quote: '#define ESP_LOGW(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN, tag, format __VA_OPT__(,) __VA_ARGS__); } while(0)'
+  comment: 'ESP_LOGW макрос дійсно існує в ESP-IDF'
+
+- unit: T-59-036
+  verdict: confirmed
+  source: 'https://raw.githubusercontent.com/espressif/arduino-esp32/master/variants/esp32s3/pins_arduino.h'
+  quote: 'ESP32-S3 pin definitions'
+  comment: 'Таблиця піни для S3 існує в Arduino ESP32 варіантах'
+
+- unit: T-13-035
+  verdict: confirmed
+  source: 'https://raw.githubusercontent.com/platformio/platform-espressif32/develop/boards/esp32dev.json'
+  quote: '"name": "Espressif ESP32 Dev Module"'
+  comment: 'board є ідентифікатором плати в PlatformIO'
+
+- unit: T-K08-024
+  verdict: not_found
+  source: 'https://raw.githubusercontent.com/espressif/esptool/master/README.md'
+  comment: 'Твердження про ROM baudrate 115200 як абсолютне значення не підтверджено дослівно'
+
+- unit: T-02-087
+  verdict: confirmed
+  source: 'https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/chip-series-comparison.rst'
+  quote: 'ESP32-C3 lacks DAC, Touch sensors, LCD interface, Camera interface'
+  comment: 'Підтверджено, що C3 втрачає периферію оригінального ESP32'
+
+- unit: T-01-083
+  verdict: unreachable
+  needed: 'RP2040 Technical Reference Manual (Raspberry Pi Foundation)'
+  comment: 'RP2040 не з Espressif, документація недосяжна в GitHub дозволених репозиторіях'
