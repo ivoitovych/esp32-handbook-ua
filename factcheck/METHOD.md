@@ -1,5 +1,7 @@
 # Fact-checking a book with a pool of cheap helpers
 
+> **canonical** — the decision lives here; there are to be no copies
+
 This document is **not about ESP32**. It is about the method, written so
 that it can be lifted onto another book, another subject, another
 language.

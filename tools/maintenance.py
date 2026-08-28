@@ -74,7 +74,7 @@ def mira_instrumenty() -> list[str]:
         "layer1_units", "intake", "intake_f", "intake_triage", "intake_wave2",
         "intake_wave3", "patterns_repair", "cache_vs_book", "cache_identity",
         "triage", "factcheck", "renames", "task_spec", "entry_points",
-        "maintenance", "docs", "runs"}
+        "maintenance", "docs", "runs", "doc_kind"}
     return sorted(p.stem for p in (ROOT / "tools").glob("*.py")
                   if p.stem not in vidomi)
 
@@ -129,15 +129,17 @@ def mira_vorota() -> dict[str, int | str]:
 
 
 def mira_dokumenty() -> tuple[int, int, list[str]]:
-    """Документи `factcheck/`: скільки, скільки без позначки роду."""
+    """Документи `factcheck/`: скільки, скільки без правильної позначки.
+
+    Питає `doc_kind`, а не міряє сама. Перша редакція мала **власний**
+    взірець позначки — і за годину розійшлася з тим, що ставить
+    `doc_kind`: показувала 22 без позначки, коли їх було нуль. Рід 19 у
+    двох інструментах, написаних того самого вечора одним автором.
+    """
+    import doc_kind
     usi = sorted((ROOT / "factcheck").glob("*.md"))
-    bez = []
-    for p in usi:
-        holova = "\n".join(p.read_text(encoding="utf-8").split("\n")[:6])
-        if not re.search(r"\*\*Генерується\*\*|\*\*Породжено\*\*|"
-                         r"^> \*\*(канонічний|історичний)", holova, re.M | re.I):
-            bez.append(p.name)
-    return len(usi), len(bez), bez
+    bidy = doc_kind.perevirka()
+    return len(usi), len(bidy), bidy
 
 
 def mira_tochky() -> tuple[int, int]:

@@ -1,5 +1,7 @@
 # Lessons of maintainer M2: what cost most, and what the code does not show
 
+> **historical** — a record of a finished wave; not edited, numbers frozen
+
 This is the record of one maintainer's own failures on this project.
 The general method lives in `METHOD.md`; the catalogue of defect kinds
 lives in `DEFECTS.md`. This file exists because the two of those state

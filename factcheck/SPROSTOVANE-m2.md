@@ -1,5 +1,7 @@
 # Спростовані формулювання — М2
 
+> **historical** — a record of a finished wave; not edited, numbers frozen
+
 Реєстр М2, окремим файлом. `tools/refuted.py` читає всі
 `factcheck/SPROSTOVANE*.md`, тож обидва реєстри діють разом і при злитті
 не б'ються.

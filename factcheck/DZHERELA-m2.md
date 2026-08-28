@@ -1,5 +1,7 @@
 # Кеш першоджерел — М2
 
+> **historical** — a record of a finished wave; not edited, numbers frozen
+
 **Формат колонок — той самий, що в `source-cache/MANIFEST.md`** (`tools/cache.py`),
 щоб рядки можна було злити механічно.
 

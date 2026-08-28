@@ -112,6 +112,7 @@ cache-vs-book:
 # і це знайшлося читанням. Читання не масштабується й не працює в CI.
 docs:
 	@$(PY) tools/docs.py
+	@$(PY) tools/doc_kind.py --suvoro
 
 # Ворота прийому (М2): чи придатний запис доказу до того, як стане
 # частиною реєстру. Компіляція взірця, теча, клас без цитати, книга як
@@ -251,6 +252,7 @@ self-checks:
 	@$(PY) tools/leak.py --samoperevirka
 	@$(PY) tools/task_spec.py --samoperevirka
 	@$(PY) tools/maintenance.py --samoperevirka
+	@$(PY) tools/doc_kind.py --samoperevirka
 
 # Кожна точка входу технології, а не лише ті, що у воротах.
 #

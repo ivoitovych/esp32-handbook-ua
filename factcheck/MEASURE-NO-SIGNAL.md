@@ -1,5 +1,7 @@
 # Міра класу `E`
 
+> **generated** — written by `tools/sample.py`; editing it by hand is wasted work
+
 **Генерується** `tools/sample.py --zvit`. Наряд —
 `factcheck/BRIEF-SAMPLE.md`, там же насіння добору.
 

@@ -1,5 +1,7 @@
 # The worker task — one definition, versioned
 
+> **canonical** — the decision lives here; there are to be no copies
+
 Every work order handed to a helper is composed from the blocks below.
 No generator writes its own copy of these rules.
 

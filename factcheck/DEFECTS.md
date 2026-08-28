@@ -1,5 +1,7 @@
 # Catalogue of defect kinds
 
+> **canonical** — the decision lives here; there are to be no copies
+
 Every kind of defect this project has found in **its own checking**, in
 one place, so that finding it again is not the same work as finding it
 the first time.
