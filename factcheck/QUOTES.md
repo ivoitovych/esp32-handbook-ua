@@ -16,9 +16,9 @@
 | `у кеші заглушка` | сервер віддав HTML із кодом 200 замість PDF |
 | `звірено очима` | витягання тексту руйнує структуру; звірив супровідник, причина названа |
 
-Записів доказів: **1360**. Звірено дослівно: **538**. Не знайдено: **72**. Джерело не в кеші: **70**. Нема чого звіряти: **657**.
+Записів доказів: **1360**. Звірено дослівно: **98**. Не знайдено: **22**. Джерело не в кеші: **560**. Нема чого звіряти: **657**.
 
-Станом на 2026-08-28 20:45 UTC.
+Станом на 2026-08-28 21:13 UTC.
 
 
 ## клас E на твердженні з числом — перевірити — 23
@@ -49,7 +49,7 @@
 | T-60-123: Запис на картку займає 400 мс | `m2-94-vybirka` | клас E, а в назві число з одиницею |
 | Модулі на 8 і 16 МБ флешу коштують істотно дорожче за різницю у ціні | `m2-95-vybirka` | клас E, а в назві число з одиницею |
 
-## **не знайдено** — 72
+## **не знайдено** — 22
 
 | Доказ | Файл | Деталі |
 |---|---|---|
@@ -59,77 +59,85 @@
 | Етап 2 — другий бутлоадер bootloader.bin у флеші | `m2-82-boot-flesh` | 1 з 1 рядків: «After reset, the second line printed by the ESP32 ROM is a reset & boo…» |
 | Адреса bootloader.bin для ESP32 чипів — 0x1000 | `m2-82-boot-flesh` | 1 з 1 рядків: «{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="…» |
 | GPIO0 як ключовий strapping-пін для вибору режиму завантаження | `m2-82-boot-flesh` | 1 з 1 рядків: «0x10  - GPIO0…» |
-| Розділи ota_0 та ota_1 у таблиці розділів для OTA | `m2-82-boot-flesh` | 2 з 2 рядків: «ota_0,    app,  ota_0,   0x20000,  1M,…»; «ota_1,    app,  ota_1,   0x120000, 1M,…» |
 | esptool версія v4 та v5 у ESP-IDF | `m2-83-esptool` | 2 з 2 рядків: «{IDF_TARGET_NAME} ROM (at 115200bps) is a reset & boot mode message.…»; «ESP-IDF version compatibility documented.…» |
 | Адреса bootloader.bin для ESP32 — 0x1000 | `m2-83-esptool` | 1 з 1 рядків: «{IDF_TARGET_BOOTLOADER_OFFSET:default="0x0", esp32="0x1000", esp32s2="…» |
 | Адреса merge-bin завжди на 0x0 незалежно від конфігурації | `m2-83-esptool` | 1 з 1 рядків: «Bootloader at {IDF_TARGET_BOOTLOADER_OFFSET} configurable by chip type…» |
-| Таблиця розділів за замовчуванням на адресі 0x8000 | `m2-83-esptool` | 1 з 1 рядків: «partition table is flashed to (default offset) 0x8000 in the flash.…» |
-| MAC-адреса унікальна від заводу і лежить в eFuse | `m2-83-esptool` | 1 з 1 рядків: «unique identifier stored in eFuse…» |
 | Команда esptool flash-id додає інформацію про флеш | `m2-83-esptool` | 1 з 1 рядків: «esptool provides commands for flash operations…» |
 | Максимальна швидкість baudu для більшості мостів 460800 | `m2-83-esptool` | 1 з 1 рядків: «serial connection parameters for flash operations…» |
-| Розміри флешу 2 МБ або 4 МБ для ESP32 модулів | `m2-83-esptool` | 1 з 1 рядків: «flash capacity and partition allocation…» |
-| Пріоритет задачі від 0 до configMAX_PRIORITIES мінус 1 | `m2-84-freertos` | 2 з 2 рядків: «Task priorities range from 0 (lowest) to configMAX_PRIORITIES - 1 (hig…»; «Vanilla FreeRTOS provides the following functions to create a task.…» |
-| Core 0 (PRO_CPU) переважно займає радіостек, Core 1 (APP_CPU) — застосунок | `m2-84-freertos` | 3 з 3 рядків: «Within ESP-IDF, Core 0 and Core 1 are sometimes referred to as PRO_CPU…»; «Typically, tasks responsible for protocol processing such as Wi-Fi are…»; «while the remainder of the application are pinned to Core 1.…» |
-| Функції FromISR єдині дозволені в обробнику переривання | `m2-84-freertos` | 1 з 1 рядків: «FromISR functions are ISR-safe variants of FreeRTOS APIs.…» |
-| Бітові прапори WIFI_OK та TIME_OK в event group | `m2-84-freertos` | 1 з 1 рядків: «Event group bits are used for task synchronization.…» |
-| Реле на GPIO при зависанні переходить в безпечний стан | `m2-84-freertos` | 1 з 1 рядків: «System recovery and restart mechanism through watchdog monitoring.…» |
-| Код 0x10 означає RTCWDT_RTC_RESET (RTC watchdog скинув усе) | `m2-93-vybirka` | 2 з 5 рядків: «rst:0x10 (RTCWDT_RTC_RESET)…»; «unstable power source. It is enabled by default. If the execution…» |
-| Перевірка переповнення стека і розмір стека app_main | `pass-01-tverde-yadro` | 3 з 8 рядків: «config ESP_MAIN_TASK_STACK_SIZE…»; «int "Main task stack size"…»; «default 3584…» |
-| На C3 ADC2 непридатний через апаратну ваду, а не через Wi-Fi | `pass-02-povedinka` | 1 з 3 рядків: «The results are not stable. This issue can be found in `ESP32-C3 Serie…» |
 | Strapping-піни за сімействами | `pass-08-strapping` | 2 з 6 рядків: «esp32h21="GPIO14", esp32h4="GPIO14"}…»; «esp32h4="GPIO13"}…» |
-| merge-bin вимагає --chip; без нього команда падає | `pass-09-komandy` | 2 з 7 рядків: «* Binary image generation commands, such as elf2image or merge-bin,…»; «require the chip type to be specified.…» |
-| Стиснення при передачі ввімкнене за замовчуванням | `pass-09-komandy` | 2 з 10 рядків: «By default, the serial transfer data is compressed for better performa…»; «The ``-u/--no-compress`` option disables this behaviour.…» |
-| Розбіжність обсягу флешу — два різні рядки й різні наслідки | `pass-10-povidomlennya` | 3 з 3 рядків: «ESP_EARLY_LOGE(TAG, "Detected size(%dk) smaller than the size in the b…»; «"header(%dk). Probe failed.", default_chip.size/1024, legacy_chip->chi…»; «ESP_EARLY_LOGW(TAG, "Detected size(%dk) larger than the size in the bi…» |
-| Помилки купи розрізняють бік переповнення | `pass-10-povidomlennya` | 2 з 2 рядків: «#define ERR_STR1 "***ERROR*** A stack overflow in task "…»; «#define ERR_STR2 " has been detected."…» |
-| Тексти помилок esptool змінилися між версіями | `pass-10-povidomlennya` | 6 з 8 рядків: «msg = ("Serial data stream stopped: Possible serial noise or corruptio…»; «if successful_slip else "No serial data received.")…»; «raise FatalError(f"This chip is {chip_type}, not {self.CHIP_NAME}. Wro…» |
-| Дерево menuconfig — корінь і Component config | `pass-11-menuconfig` | 9 з 13 рядків: «esptool_py:        menu "Serial flasher config"…»; «partition_table:   menu "Partition Table"…»; «bootloader:        menu "Bootloader config"…» |
 | GPIO15 низький глушить boot-лог ROM | `pass-12-piny` | 2 з 3 рядків: «|            | bootloader. Has an internal pull-up, so unconnected = H…»; «|            | normal output.…» |
-| Режими SPI — CPHA задає номер фронту, не напрямок | `pass-16-interfeysy` | 1 з 3 рядків: «@param  mode   SPI data mode; one of SPI_MODE0, SPI_MODE1, SPI_MODE2…» |
-| pioarduino, а не офіційна платформа PlatformIO | `pass-17-simeystva-proektiv` | 1 з 5 рядків: «"version": "55.03.311"…» |
-| Підтягування I²C — діапазон, а не одне число | `pass-18-schemy` | 2 з 5 рядків: «The recommended value for pull-up resistors usually ranges from 1 kΩ t…»; «should be (but not less than 1 kΩ). Indeed, large resistors will decli…» |
-| Кольорова обв'язка прикладів — classic і тільки classic | `pass-20-jtag-obvyazka` | 1 з 1 рядків: «esp32: SOC_GPIO_PIN_COUNT 40…» |
-| Зсув бутлоадера по сімействах — числа праві, причина хибна | `pass-24-zsuvy-i-matrycya` | 14 з 21 рядків: «#   (flash encryption) purpose…»; «.. only:: esp32…»; «sector of flash is used to store secure boot IV and digest of the…» |
-| Таблиця розділів — 0xC00 і 95 записів; 0x7000 належить бутлоадерові | `pass-24-zsuvy-i-matrycya` | 8 з 18 рядків: «located at (default offset) + 0x1000.…»; «config PARTITION_TABLE_OFFSET…»; «hex "Offset of partition table"…» |
-| Піновий план проєкту 60 — обидва сімейства | `pass-24-zsuvy-i-matrycya` | 8 з 17 рядків: «(esp32/adc_channel.h)          (esp32c3/adc_channel.h)…»; «#define ADC1_GPIO34_CHANNEL 6  #define ADC1_GPIO3_CHANNEL      3…»; «#define ADC1_CHANNEL_6_GPIO_NUM 34  #define ADC1_CHANNEL_3_GPIO_NUM 3…» |
 | Рівні strapping і недійсна комбінація — усі сімейства | `pass-26-strapping` | 6 з 12 рядків: «{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",…»; «{STRAP_BOOT_2_GPIO} must also be either left unconnected/floating,…»; «{STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the…» |
 | Маска GPIO_STRAP — усі шість бітів classic і два біти решти | `pass-26-strapping` | 3 з 21 рядків: «represented in the GPIO_STRAP register.…»; «most cases, one of these modes is selected if {STRAP_BOOT_2_GPIO}…»; «has been pulled high when {STRAP_BOOT_GPIO} is low).…» |
-| Іменування й версії esptool — version, esptool.py, дефіси проти підкреслень | `pass-28-komandy-suciljno` | 4 з 4 рядків: «The `esptool.py` name is kept as an alias; the recommended entry point…»; «is `esptool`. Command names use dashes: `write-flash`, `read-flash`,…»; «`erase-flash`, `merge-bin`. The underscore forms are deprecated and…» |
-| flash-id як засіб упізнати перемаркований модуль | `pass-28-komandy-suciljno` | 4 з 4 рядків: «chip-id     Read Chip ID…»; «flash-id    Read SPI flash manufacturer and device ID…»; «The flash-id command outputs the manufacturer and device ID of the…» |
-| erase-flash стирає весь чип, включно з NVS і калібруванням | `pass-28-komandy-suciljno` | 1 з 6 рядків: «esptool erase-region 0x20000 0x4000…» |
-| merge-bin дає один образ на адресу 0x0 незалежно від сімейства | `pass-28-komandy-suciljno` | 4 з 5 рядків: «The merge-bin command will merge multiple binary files (of any kind)…»; «between the input files are padded with 0xFF bytes (or 0x00 in…»; «--format hex).…» |
-| Рядки помилок з'єднання — Failed to connect і сусіди | `pass-29-log-i-reshta-komand` | 3 з 3 рядків: «A fatal error occurred: Failed to connect to {chip}: {reason}…»; «The most common reason for "Failed to connect" is that the chip is not…»; «to the same UART.…» |
 | Паніка, backtrace і watchdog — назви рядків у логу | `pass-29-log-i-reshta-komand` | 2 з 3 рядків: «Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception wa…»; «Interrupt wdt timeout on CPU0…» |
-| esptool і stub, автоскидання, розбіжність чипа | `pass-29-log-i-reshta-komand` | 5 з 5 рядків: «esptool has a two-stage flashing process: a small "stub" program is…»; «uploaded to RAM and run, which then performs the requested operation…»; «much faster than the ROM bootloader. ``--no-stub`` disables this.…» |
-| merge-bin — прапорці флешу і призначення формату | `pass-29-log-i-reshta-komand` | 4 з 9 рядків: «between the input files are padded with 0xFF bytes.…»; «Options such as ``--flash-mode``, ``--flash-size`` and ``--flash-freq`…»; «are used to set the corresponding values in the image header, exactly…» |
-| Роль esptool і послідовність дій із незнайомою платою | `pass-29-log-i-reshta-komand` | 2 з 2 рядків: «esptool is a Python-based, open-source, platform-independent utility t…»; «communicate with the ROM bootloader in Espressif chips.…» |
 | Функції strapping-пінів classic — таблиця розділу 07 поштучно | `pass-30-piny-suciljno` | 4 з 10 рядків: «GPIO2 must also be either left unconnected/floating, or driven Low,…»; «bootloader. |…»; «0x01 - GPIO5   0x02 - MTDO (GPIO15)   0x04 - GPIO4…» |
-| Піни флешу, тільки-вхідні й ADC1 при Wi-Fi | `pass-30-piny-suciljno` | 5 з 5 рядків: «MSPI_IOMUX_PIN_NUM_CLK   6      MSPI_IOMUX_PIN_NUM_MISO  7…»; «MSPI_IOMUX_PIN_NUM_MOSI  8      MSPI_IOMUX_PIN_NUM_HD    9…»; «MSPI_IOMUX_PIN_NUM_WP   10      MSPI_IOMUX_PIN_NUM_CS0  11…» |
 | Вхід у download mode вручну — порядок і його причина | `pass-30-piny-suciljno` | 4 з 7 рядків: «The {chip} will enter the serial bootloader when {STRAP_BOOT_GPIO} is…»; «{STRAP_BOOT_GPIO} has an internal pullup resistor, so if it is left…»; «development boards) that pulls {STRAP_BOOT_GPIO} low when pressed.…» |
 | I²C і strapping на C3 — підтяжки збігаються з потрібними рівнями | `pass-30-piny-suciljno` | 4 з 6 рядків: «{STRAP_BOOT_2_GPIO} must also be driven High, in order to enter the…»; «{STRAP_BOOT_2_GPIO} = 0 and {STRAP_BOOT_GPIO} = 0 is invalid and will…»; «ADC1_GPIO0_CHANNEL 0   ADC1_GPIO1_CHANNEL 1   ADC1_GPIO2_CHANNEL 2…» |
-| Таблиці адрес прошивки — три рядки на три сімейства | `pass-31-adresy-i-api` | 3 з 9 рядків: «* At a 0x10000 (64 KB) offset in the flash is the app labelled…»; «"factory". The bootloader runs this app by default.…»; «nvs,      data, nvs,     0x9000,  0x6000,…» |
-| ESP_ERROR_CHECK — це assert, а не обробка помилок | `pass-31-adresy-i-api` | 2 з 15 рядків: «#define ESP_OK          0    /*!< esp_err_t value indicating success *…»; «* message but isn't terminating the program.…» |
-| ESP_LOGD не коштує нічого при рівні збирання Info | `pass-31-adresy-i-api` | 6 з 6 рядків: «* @brief Compile-time log level.…»; «* removed by the preprocessor and take no space in the binary and no…»; «* time at runtime.…» |
-| Коди помилок OTA і NVS, які книга називає поіменно | `pass-31-adresy-i-api` | 2 з 6 рядків: «partition, and is used together with the FAT filesystem via…»; «esp_vfs_fat_spiflash_mount_rw_wl.…» |
-| DAC, ADC-затухання й обв'язка входу — розділ 33 | `pass-32-pul-shmatky-1-3` | 8 з 11 рядків: «Under ADC_ATTEN_DB_0, the attenuation of ADC is set to 0 dB, and input…»; «voltage higher than 950 mV is not supported. Under ADC_ATTEN_DB_12,…»; «the attenuation of ADC is set to 11 dB, and input voltage higher than…» |
-| LISTEN_ONLY і NO_ACK — режими TWAI дослівно | `pass-32-pul-shmatky-1-3` | 2 з 7 рядків: «The {IDF_TARGET_NAME} does not integrate an internal TWAI transceiver.…»; «Therefore, an external transceiver is required to connect to a TWAI…» |
-| Рівні логу, esp_err_to_name і монітор — розділ 25 | `pass-32-pul-shmatky-1-3` | 4 з 10 рядків: «*        with specific address you gave.…»; «Whenever the chip outputs a hexadecimal address that points to…»; «executable code, IDF monitor looks up the location in the source code…» |
-| Типова розбивка флешу — зсуви, розміри й суфікси | `pass-32-pul-shmatky-1-3` | 3 з 11 рядків: «ESP_LOGI(TAG, "Partition Table:");…»; «ESP_LOGI(TAG, "## Label            Usage          Type ST Offset   Len…»; «ESP_LOGI(TAG, "End of partition table");…» |
-| Буфер у PSRAM без MALLOC_CAP_SPIRAM — і що це коштує | `pass-32-pul-shmatky-1-3` | 5 з 11 рядків: «// Forces data into DRAM instead of flash…»; «#define DRAM_ATTR _SECTION_ATTR_IMPL(".dram1", __COUNTER__)…»; «config FREERTOS_CHECK_STACKOVERFLOW_NONE…» |
-| Strapping classic і C3 — таблиця розділу 07 проти gpio/*.inc | `pass-33-pul-shmatky-4-5` | 1 з 3 рядків: «{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",…» |
-| erase-flash, flash-id і коли стирання справді потрібне | `pass-34-pul-shmatok-6` | 1 з 12 рядків: «Old command and option names are **deprecated**.…» |
-| Автоскидання не працює — перелік причин, крім однієї | `pass-34-pul-shmatok-6` | 2 з 9 рядків: «esptool is not able to reset your hardware automatically in the…»; «Check the chip is receiving 3.3V from a stable power source.…» |
-| Коди RESET_REASON — уся таблиця причин скидання | `pass-35-vlasna-pomylka-boot` | 1 з 19 рядків: «SDIO_RESET             =  6,    /**<6, Reset by SLC module*/…» |
-| ROM класифікує boot: значення цілком, а не пін за піном | `pass-35-vlasna-pomylka-boot` | 1 з 7 рядків: «#define ETS_IS_FLASH_BOOT()  (IS_1XXX(BOOT_MODE_GET()) || \…» |
-| chip-id на сімействі ESP32 повертає попередження, а не Chip ID | `pass-36-chip-id` | 10 з 17 рядків: «log.warn(f"{esp.CHIP_NAME} has no chip ID. "…»; «"Reading MAC address instead.")…»; «def chip_id(self):…» |
-| Драйвер I²C називає причину в консолі, а не мовчить | `pass-38-pul-shmatky-9-11` | 2 з 7 рядків: «config COMPILER_OPTIMIZATION_CHECKS_SILENT…»; «bool "Disable messages in ESP_RETURN_ON_* and ESP_EXIT_ON_* macros"…» |
-| На RISC-V рядка Backtrace немає — його будує монітор | `pass-38-pul-shmatky-9-11` | 2 з 12 рядків: «Moreover, IDF Monitor is also capable of generating and printing a…»; «IDF Monitor. Thus, in order to generate and print a backtrace while…» |
+| Strapping classic і C3 — таблиця розділу 07 проти gpio/*.inc | `pass-33-pul-shmatky-4-5` | 2 з 3 рядків: «Strapping pin: GPIO2, GPIO8 and GPIO9 are strapping pins.…»; «{IDF_TARGET_STRAP_BOOT_GPIO:default="GPIO9", esp32="GPIO0",…» |
+| Автоскидання не працює — перелік причин, крім однієї | `pass-34-pul-shmatok-6` | 4 з 9 рядків: «esptool is not able to reset your hardware automatically in the…»; «If you have connected other devices to GPIO pins, try removing them…»; «and see if esptool starts working.…» |
 | sdkconfig.defaults рекомендовано тримати в системі контролю версій | `pass-45-sdkconfig-defaults` | 1 з 1 рядків: «It is recommended to commit sdkconfig.defaults for providing baseline …» |
-| T-17-118: Друга половина рядка залежить від версії. | `prochid-17-esptool` | 1 з 1 рядків: «'esptool v{__version__}'…» |
 
-## джерело не в кеші — 70
+## джерело не в кеші — 560
 
 | Доказ | Файл | Деталі |
 |---|---|---|
+| T-04-061: **MCPWM** [[classic]] [[S3]] зроблений спеціально для силової електроніки: | `cherga-a-04-peryferiya` | 1 джерел не в кеші |
+| T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.** | `cherga-a-11-idf` | 1 джерел не в кеші |
+| T-11-023: Ця команда додає інструменти в `PATH` і ставить | `cherga-a-11-idf` | 1 джерел не в кеші |
+| T-16-056: Якщо є лише `factory` — беруть його. | `cherga-a-16-boot` | 1 джерел не в кеші |
+| T-17-061: Аргументи йдуть парами: адреса, файл. | `cherga-a-17-esptool` | 1 джерел не в кеші |
+| T-17-063: `-z` вмикає стиснення при передачі. | `cherga-a-17-esptool` | 1 джерел не в кеші |
+| T-18-074: Швидкість при заповненні · SPIFFS → різко падає | `cherga-a-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-19-023: Схема з двох слотів без `factory` — робоча | `cherga-a-19-ota` | 1 джерел не в кеші |
+| T-19-013: Пристрій виконується зі слоту `ota_0`. | `cherga-a-19-ota` | 1 джерел не в кеші |
+| T-19-014: Приходить оновлення — воно записується в `ota_1`, при | `cherga-a-19-ota` | 1 джерел не в кеші |
+| T-25-051: Один тег на файл або на логічний модуль; | `cherga-a-25-log` | 1 джерел не в кеші |
+| T-H-017: **`github.com/espressif/esp-idf`** — сам фреймворк. | `cherga-a-h-dzherela` | 1 джерел не в кеші |
+| T-02-042: Wi-Fi · ESP32 → так | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-043: Wi-Fi · S2 → так | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-044: Wi-Fi · S3 → так | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-047: Wi-Fi · H2 → **ні** | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-054: BLE · ESP32 → так | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-055: BLE · S2 → **ні** | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-057: BLE · C3 → так | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-096: **Переноситься майже завжди:** код на ESP-IDF, написаний через | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-099: Перенесення проєкту на інший чип в ESP-IDF починається | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-02-103: Усі налаштування, зроблені через `menuconfig`, повертаються до типових. | `klas-f-02-chipy` | 1 джерел не в кеші |
+| T-11-001: ESP-IDF (Espressif IoT Development Framework) — офіційний фреймворк | `klas-f-11-idf` | 1 джерел не в кеші |
+| T-11-013: **Windows.** Офіційний інсталятор ESP-IDF Tools Installer ставить усе | `klas-f-11-idf` | 1 джерел не в кеші |
+| T-11-025: Спокуса прописати `export.sh` у `.bashrc` є в усіх, | `klas-f-11-idf` | 1 джерел не в кеші |
+| T-11-112: `set-target` стирає `sdkconfig`; у git кладеться `sdkconfig.defaults`. | `klas-f-11-idf` | 1 джерел не в кеші |
+| T-12-009: **`loop` — звичайна задача FreeRTOS.** Вона має свій | `klas-f-12-arduino` | 1 джерел не в кеші |
+| T-12-033: Arduino core версії 3.x — велике оновлення: він | `klas-f-12-arduino` | 1 джерел не в кеші |
+| T-12-048: **Arduino як компонент ESP-IDF.** Найцікавіший варіант: проєкт будується | `klas-f-12-arduino` | 1 джерел не в кеші |
+| T-12-049: Тоді доступні `setup`/`loop` і бібліотеки Arduino — і | `klas-f-12-arduino` | 1 джерел не в кеші |
+| T-12-061: `delay` тут не блокує систему, а `loop` — | `klas-f-12-arduino` | 1 джерел не в кеші |
+| T-13-070: | Виріб, OTA, серійність, довгий супровід | ESP-IDF | `klas-f-13-pio` | 1 джерел не в кеші |
+| T-14-053: Треба писати код · MicroPython → так, Python | `klas-f-14-shvydki-shlyakhy` | 1 джерел не в кеші |
+| T-19-007: `otadata` · Тип → data | `klas-f-19-ota` | 1 джерел не в кеші |
+| T-19-009: `ota_0` · Тип → app | `klas-f-19-ota` | 1 джерел не в кеші |
+| T-19-011: `ota_1` · Тип → app | `klas-f-19-ota` | 1 джерел не в кеші |
+| T-19-013: Пристрій виконується зі слоту `ota_0`. | `klas-f-19-ota` | 1 джерел не в кеші |
+| T-19-014: Приходить оновлення — воно записується в `ota_1`, при | `klas-f-19-ota` | 1 джерел не в кеші |
+| T-19-016: Наступне оновлення піде у слот `ota_0`. | `klas-f-19-ota` | 1 джерел не в кеші |
+| T-19-059: Компонент сам знаходить неактивний слот, пише в нього | `klas-f-19-ota` | 1 джерел не в кеші |
+| T-41-007: Проєкт на SPP, що переїжджає на S3, доведеться | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-011: Де є · BLE → уся лінійка, крім | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-015: Швидкість · BLE → десятки кбіт/с | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-019: Спарювання · BLE → не обов'язкове | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-038: Тоді пристрій самоописовий — будь-який універсальний BLE-застосунок покаже | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-040: В ESP-IDF два стеки BLE, і вибір між | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-041: **Bluedroid** — повний стек, підтримує і Classic, і | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-043: **NimBLE** — тільки BLE, компактніший, займає в рази | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-049: **Wi-Fi і Bluetooth одночасно** працюють, але ділять одне | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-054: BLE спроєктований для батарейок, і його головний параметр | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-41-078: Для BLE-проєкту брати NimBLE: різниця в пам'яті вирішальна | `klas-f-41-ble` | 1 джерел не в кеші |
+| T-42-001: ESP-NOW — власний протокол Espressif для прямого обміну | `klas-f-42-espnow` | 1 джерел не в кеші |
+| T-42-006: ESP-NOW не робить нічого з цього. | `klas-f-42-espnow` | 1 джерел не в кеші |
+| T-42-015: Кожен пристрій має унікальну MAC від заводу (розділ | `klas-f-42-espnow` | 1 джерел не в кеші |
+| T-42-027: Обробник прийому виконується в контексті **задачі** Wi-Fi, а | `klas-f-42-espnow` | 1 джерел не в кеші |
+| T-42-045: ESP-NOW підтримує шифрування з ключами PMK і LMK. | `klas-f-42-espnow` | 1 джерел не в кеші |
+| T-42-048: Без шифрування ESP-NOW — це відкритий радіоефір. | `klas-f-42-espnow` | 1 джерел не в кеші |
+| T-42-060: Усі вузли на фіксованому каналі, Wi-Fi не використовується. | `klas-f-42-espnow` | 1 джерел не в кеші |
 | Розпіновка JTAG classic — datasheet як друге джерело до io_mux_reg.h | `m2-01-esp32-datasheet-iomux` | 1 джерел не в кеші |
 | Споживання ESP32 за режимами — порядки збігаються з Table 4-2 | `m2-02-esp32-datasheet` | 1 джерел не в кеші |
 | Пін віддає більше, ніж приймає — IOH 40 мА проти IOL 28 мА | `m2-02-esp32-datasheet` | 1 джерел не в кеші |
@@ -141,10 +149,53 @@
 | Перегрів звичайного MOSFET від 3.3 В — не звірено цим набором джерел | `m2-20-rivni-i-klyuchi` | 1 джерел не в кеші |
 | «IVDD, current delivered by external power supply, Min 0.5 A» — дослівна цитата datasheet | `m2-21-zhyvlennya-06` | 1 джерел не в кеші |
 | HC-SR04 — дільник напруги 10кОм + 20кОм | `m2-28-sensory-45` | 1 джерел не в кеші |
+| 0x1: Що сталося → подано живлення або EN | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x1: Що робити → норма | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x3: Назва → SW_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x3: Що робити → норма, якщо ваша | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x4: Назва → OWDT_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x4: Що сталося → застарілий watchdog | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x4: Що робити → рідко | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x5: Назва → DEEPSLEEP_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x5: Що сталося → прокинувся з deep sleep | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x5: Що робити → норма | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x6: Назва → SDIO_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x6: Що сталося → скидання модулем SLC | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x6: Що робити → рідко | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x7: Що сталося → watchdog таймера 0 | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x8: Назва → TG1WDT_SYS_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x8: Що сталося → watchdog таймера 1 | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x9: Назва → RTCWDT_SYS_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0x9: Що сталося → RTC watchdog | `m2-60-panik-a` | 1 джерел не в кеші |
+| 0xa: Назва → INTRUSION_RESET | `m2-60-panik-a` | 1 джерел не в кеші |
+| T-D-153: EXCVADDR — найшвидша підказка | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-159: IDLE0 та Task Watchdog Timeout | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-172: assert failed як порушення інваріанта | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-183: rst: у першому рядку RTC Watchdog Timeout | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-184: Причина паніки і EXCVADDR | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-185: Backtrace через .elf за допомогою IDF Monitor | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-187: Coredump та логування переходів станів при невідтворюванні | `m2-61-panik-b` | 1 джерел не в кеші |
+| T-D-188: Backtrace без .elf нерозшифровний | `m2-61-panik-b` | 1 джерел не в кеші |
 | Touch сенсори є лише на classic, S2 и S3 | `m2-63-gpio-07` | 1 джерел не в кеші |
+| Таблиця розділів з адресами nvs 0x9000 та factory 0x10000 | `m2-82-boot-flesh` | 1 джерел не в кеші |
+| Розділи ota_0 та ota_1 у таблиці розділів для OTA | `m2-82-boot-flesh` | 1 джерел не в кеші |
+| Таблиця розділів за замовчуванням на адресі 0x8000 | `m2-83-esptool` | 1 джерел не в кеші |
+| MAC-адреса унікальна від заводу і лежить в eFuse | `m2-83-esptool` | 1 джерел не в кеші |
+| Розміри флешу 2 МБ або 4 МБ для ESP32 модулів | `m2-83-esptool` | 1 джерел не в кеші |
+| Пріоритет задачі від 0 до configMAX_PRIORITIES мінус 1 | `m2-84-freertos` | 1 джерел не в кеші |
+| Core 0 (PRO_CPU) переважно займає радіостек, Core 1 (APP_CPU) — застосунок | `m2-84-freertos` | 1 джерел не в кеші |
+| Функції FromISR єдині дозволені в обробнику переривання | `m2-84-freertos` | 1 джерел не в кеші |
+| Бітові прапори WIFI_OK та TIME_OK в event group | `m2-84-freertos` | 1 джерел не в кеші |
+| Сторож (Watchdog) автоматично перезавантажує систему при зависанні | `m2-84-freertos` | 1 джерел не в кеші |
+| Реле на GPIO при зависанні переходить в безпечний стан | `m2-84-freertos` | 1 джерел не в кеші |
+| Task Watchdog Timer та Interrupt Watchdog Timer у ESP-IDF | `m2-84-freertos` | 1 джерел не в кеші |
 | I2C: на спокої обидві лінії мають бути HIGH (3.3 В). Якщо немає — поломаний резистор підтягування. | `m2-90-vybirka` | 1 джерел не в кеші |
 | Адреса bootloader.bin для S3, C3, C6, H2 — 0x0 | `m2-90-vybirka` | 1 джерел не в кеші |
 | Код скидання 0xa — INTRUSION_RESET (детектор втручання), рідко трапляється | `m2-90-vybirka` | 1 джерел не в кеші |
+| Код 0x10 означає RTCWDT_RTC_RESET (RTC watchdog скинув усе) | `m2-93-vybirka` | 1 джерел не в кеші |
+| T-D-040: 0xd = RTCWDT_CPU_RESET, що робити → розділ 32 | `m2-94-vybirka` | 1 джерел не в кеші |
+| T-D-043: 0xe = EXT_CPU_RESET, норма | `m2-94-vybirka` | 1 джерел не в кеші |
+| T-D-041: 0xe = EXT_CPU_RESET (Назва) | `m2-94-vybirka` | 1 джерел не в кеші |
 | Код скидання 0xd названий RTCWDT_CPU_RESET | `m2-95-vybirka` | 1 джерел не в кеші |
 | Код скидання 0x10 названий RTCWDT_RTC_RESET | `m2-95-vybirka` | 1 джерел не в кеші |
 | Код скидання 0xc означає скидання ядра з коду | `m2-95-vybirka` | 1 джерел не в кеші |
@@ -170,127 +221,431 @@
 | T-02-146: S2 без Bluetooth узагалі. | `m2-98-chipy-dashyty` | 1 джерел не в кеші |
 | T-04-092: I²S · classic → 2 | `m2-99-peryferiya-yadra` | 1 джерел не в кеші |
 | T-04-070: UART · S3 → 3 | `m2-99-peryferiya-yadra` | 1 джерел не в кеші |
+| Адреса другого бутлоадера задається ROM і має три значення | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| Таблиця розділів лежить на 0x8000, застосунок на 0x10000 | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| Коди причин скидання (RESET_REASON) | `pass-01-tverde-yadro` | 1 джерел не в кеші |
 | Кількість блоків периферії за сімействами | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| C6 має два I²C, другий низькоспоживчий | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| Придатних каналів Touch на S2 і S3 — чотирнадцять, а не п'ятнадцять | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| Термін підтримки ESP-IDF — 30 місяців, із них 12 Service | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| Межі ESP-NOW і сигнатури зворотних викликів | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| Перевірка переповнення стека і розмір стека app_main | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| Рівні оптимізації в menuconfig | `pass-01-tverde-yadro` | 1 джерел не в кеші |
 | Апаратні піни IOMUX для UART0 і SPI | `pass-01-tverde-yadro` | 1 джерел не в кеші |
 | Типові піни I²C і бортового світлодіода в Arduino | `pass-01-tverde-yadro` | 1 джерел не в кеші |
+| ADC2 конфліктує з Wi-Fi на classic, S2 і S3 — не лише на classic | `pass-02-povedinka` | 1 джерел не в кеші |
+| На C3 ADC2 непридатний через апаратну ваду, а не через Wi-Fi | `pass-02-povedinka` | 1 джерел не в кеші |
+| Матриця GPIO обмежує SPI до 40 МГц проти 80 МГц на IOMUX | `pass-02-povedinka` | 1 джерел не в кеші |
+| TWAI сумісний з ISO 11898-1 і потребує зовнішнього трансивера | `pass-02-povedinka` | 1 джерел не в кеші |
+| CAN FD не підтримується жодним із сімейств книги | `pass-02-povedinka` | 1 джерел не в кеші |
+| ESP32 у ролі веденого I²C не вміє розтягувати SCL | `pass-02-povedinka` | 1 джерел не в кеші |
+| Механізм відкату OTA і його стани | `pass-02-povedinka` | 1 джерел не в кеші |
+| Вміст RTC-пам'яті переживає deep sleep | `pass-02-povedinka` | 1 джерел не в кеші |
+| Частота і розрядність LEDC пов'язані обернено | `pass-02-povedinka` | 1 джерел не в кеші |
+| BME280 — карта регістрів і довжини блоків калібрування | `pass-04-obkhidni` | 1 джерел не в кеші |
+| BME280 — старший байт dig_H4 і dig_H5 знаковий | `pass-04-obkhidni` | 1 джерел не в кеші |
+| DS18B20 — −127 °C як код помилки і межа 750 мс | `pass-04-obkhidni` | 1 джерел не в кеші |
+| Типовий ATT MTU дорівнює 23 байтам в обох стеках | `pass-04-obkhidni` | 2 джерел не в кеші |
+| SH1106 зсунуто на два пікселі відносно SSD1306 | `pass-04-obkhidni` | 1 джерел не в кеші |
+| LoRa — апаратний діапазон SF починається з шістки | `pass-04-obkhidni` | 1 джерел не в кеші |
+| RP2040 — обсяг SRAM 264 КБ | `pass-04-obkhidni` | 1 джерел не в кеші |
+| Синтаксис esptool v5 — дефіси замість підкреслень, без .py | `pass-06-komandy-strapping` | 1 джерел не в кеші |
+| read-flash з ALL визначає обсяг флешу сам | `pass-06-komandy-strapping` | 1 джерел не в кеші |
+| MTDI (GPIO12) задає напругу VDDSDIO для мікросхеми флешу | `pass-06-komandy-strapping` | 1 джерел не в кеші |
 | Виклики FreeRTOS і атрибути розміщення | `pass-07-api-rozbyvka` | 1 джерел не в кеші |
+| Стеля пріоритетів FreeRTOS в ESP-IDF — 25 | `pass-07-api-rozbyvka` | 1 джерел не в кеші |
+| Типова розбивка флешу та вирівнювання розділів | `pass-07-api-rozbyvka` | 2 джерел не в кеші |
+| Сила драйвера GPIO налаштовується, типова — середня | `pass-07-api-rozbyvka` | 1 джерел не в кеші |
+| gpio_dump_io_configuration показує реальну конфігурацію піна | `pass-07-api-rozbyvka` | 1 джерел не в кеші |
+| merge-bin вимагає --chip; без нього команда падає | `pass-09-komandy` | 1 джерел не в кеші |
+| idf.py merge-bin бере адреси з конфігурації проєкту | `pass-09-komandy` | 1 джерел не в кеші |
+| Стиснення при передачі ввімкнене за замовчуванням | `pass-09-komandy` | 1 джерел не в кеші |
+| --after watchdog-reset для чипів із native USB | `pass-09-komandy` | 1 джерел не в кеші |
 | Решта команд esptool і idf.py, що вживає книга, існує дослівно | `pass-09-komandy` | 1 джерел не в кеші |
+| Формат паніки Guru Meditation і назви винятків | `pass-10-povidomlennya` | 2 джерел не в кеші |
 | Повідомлення бутлоадера про образ і розділи | `pass-10-povidomlennya` | 1 джерел не в кеші |
+| Розбіжність обсягу флешу — два різні рядки й різні наслідки | `pass-10-povidomlennya` | 1 джерел не в кеші |
+| Помилки купи розрізняють бік переповнення | `pass-10-povidomlennya` | 1 джерел не в кеші |
+| Тексти помилок esptool змінилися між версіями | `pass-10-povidomlennya` | 2 джерел не в кеші |
+| Camera probe failed — повний вигляд рядка | `pass-10-povidomlennya` | 1 джерел не в кеші |
+| Дерево menuconfig — корінь і Component config | `pass-11-menuconfig` | 1 джерел не в кеші |
+| Меню логування зветься Log, а не Log output | `pass-11-menuconfig` | 2 джерел не в кеші |
+| Maximum log verbosity — стеля компіляції окремо від типового рівня | `pass-11-menuconfig` | 2 джерел не в кеші |
+| Відкат вмикається в підменю Application Rollback | `pass-11-menuconfig` | 1 джерел не в кеші |
+| Рівні оптимізації компілятора | `pass-11-menuconfig` | 1 джерел не в кеші |
+| Хост Bluetooth і перевірка переповнення стека | `pass-11-menuconfig` | 2 джерел не в кеші |
 | Канали ADC і touch за GPIO — усі три сімейства | `pass-12-piny` | 1 джерел не в кеші |
 | Піни IOMUX для UART0 і SPI | `pass-12-piny` | 1 джерел не в кеші |
+| Номери ліній USB-Serial-JTAG | `pass-12-piny` | 1 джерел не в кеші |
 | Зведена таблиця розділу 02 — ядра, радіо, PSRAM, USB | `pass-13-mozhlyvosti` | 1 джерел не в кеші |
 | Кількість блоків периферії за сімействами | `pass-13-mozhlyvosti` | 1 джерел не в кеші |
+| Політика підтримки ESP-IDF — 30 місяців, без окремого LTS | `pass-15-versiyi` | 1 джерел не в кеші |
 | Компонент led_strip версії 3.0.3 і межа ^ у менеджері | `pass-15-versiyi` | 1 джерел не в кеші |
+| Режими SPI — CPHA задає номер фронту, не напрямок | `pass-16-interfeysy` | 2 джерел не в кеші |
 | GPIO22 не існує в S3, а GPIO22/23/34 — у C3 | `pass-17-simeystva-proektiv` | 1 джерел не в кеші |
 | DAC на S2 — GPIO17 і GPIO18, а не 25/26 | `pass-17-simeystva-proektiv` | 1 джерел не в кеші |
+| pioarduino, а не офіційна платформа PlatformIO | `pass-17-simeystva-proektiv` | 1 джерел не в кеші |
+| BME280 — адреси, ідентифікатор чипа, регістр | `pass-18-schemy` | 1 джерел не в кеші |
+| DS18B20 повертає −127 при відсутності зв'язку | `pass-18-schemy` | 1 джерел не в кеші |
+| Підтягування I²C — діапазон, а не одне число | `pass-18-schemy` | 1 джерел не в кеші |
 | Проєкт 62 свідомо на classic через тільки-вхідний GPIO34 | `pass-18-schemy` | 1 джерел не в кеші |
+| Кольорова обв'язка прикладів — classic і тільки classic | `pass-20-jtag-obvyazka` | 1 джерел не в кеші |
 | Поля конфігураційних структур збігаються із заголовками ESP-IDF | `pass-21-polya-struktur` | 1 джерел не в кеші |
 | DAC на S2 — GPIO17 і GPIO18; розділ 07 виправлено | `pass-23-dac-propahaciya` | 1 джерел не в кеші |
+| Зсув бутлоадера по сімействах — числа праві, причина хибна | `pass-24-zsuvy-i-matrycya` | 2 джерел не в кеші |
+| Таблиця розділів — 0xC00 і 95 записів; 0x7000 належить бутлоадерові | `pass-24-zsuvy-i-matrycya` | 2 джерел не в кеші |
+| JTAG-піни classic — усі чотири з таблиці IOMUX | `pass-24-zsuvy-i-matrycya` | 1 джерел не в кеші |
+| Піновий план проєкту 60 — обидва сімейства | `pass-24-zsuvy-i-matrycya` | 4 джерел не в кеші |
+| Матриця GPIO і SPI — 40 проти 80 МГц, і коли різниці немає | `pass-24-zsuvy-i-matrycya` | 1 джерел не в кеші |
+| MSPI на S3 — GPIO26–32 під флеш, GPIO33–37 під восьмилінійний режим | `pass-25-psram` | 2 джерел не в кеші |
+| PSRAM вимкнена типово, а винесення в неї — навпаки, ввімкнене | `pass-25-psram` | 3 джерел не в кеші |
+| Octal PSRAM треба зазначити — типово стоїть Quad | `pass-25-psram` | 1 джерел не в кеші |
+| Іменування й версії esptool — version, esptool.py, дефіси проти підкреслень | `pass-28-komandy-suciljno` | 2 джерел не в кеші |
+| flash-id як засіб упізнати перемаркований модуль | `pass-28-komandy-suciljno` | 1 джерел не в кеші |
+| idf.py monitor — вихід Ctrl+], скидання через Ctrl+T | `pass-28-komandy-suciljno` | 1 джерел не в кеші |
+| espefuse палить в один бік; остання перепона — слово BURN | `pass-28-komandy-suciljno` | 1 джерел не в кеші |
+| erase-flash стирає весь чип, включно з NVS і калібруванням | `pass-28-komandy-suciljno` | 1 джерел не в кеші |
+| merge-bin дає один образ на адресу 0x0 незалежно від сімейства | `pass-28-komandy-suciljno` | 1 джерел не в кеші |
+| Рядки помилок з'єднання — Failed to connect і сусіди | `pass-29-log-i-reshta-komand` | 1 джерел не в кеші |
 | Мілісекунди в дужках у рядку логу | `pass-29-log-i-reshta-komand` | 1 джерел не в кеші |
+| esptool і stub, автоскидання, розбіжність чипа | `pass-29-log-i-reshta-komand` | 1 джерел не в кеші |
+| merge-bin — прапорці флешу і призначення формату | `pass-29-log-i-reshta-komand` | 1 джерел не в кеші |
+| Роль esptool і послідовність дій із незнайомою платою | `pass-29-log-i-reshta-komand` | 2 джерел не в кеші |
 | Номери GPIO книги дійсні для сімейств, яким приписані | `pass-30-piny-suciljno` | 1 джерел не в кеші |
+| Піни флешу, тільки-вхідні й ADC1 при Wi-Fi | `pass-30-piny-suciljno` | 3 джерел не в кеші |
+| Таблиці адрес прошивки — три рядки на три сімейства | `pass-31-adresy-i-api` | 2 джерел не в кеші |
+| ESP_ERROR_CHECK — це assert, а не обробка помилок | `pass-31-adresy-i-api` | 1 джерел не в кеші |
+| esp_timer — мікросекундна роздільність, обробники в одній задачі | `pass-31-adresy-i-api` | 1 джерел не в кеші |
+| ESP_LOGD не коштує нічого при рівні збирання Info | `pass-31-adresy-i-api` | 1 джерел не в кеші |
+| Коди помилок OTA і NVS, які книга називає поіменно | `pass-31-adresy-i-api` | 2 джерел не в кеші |
+| JTAG на classic — чотири піни, два з них strapping | `pass-32-pul-shmatky-1-3` | 3 джерел не в кеші |
+| USB-JTAG і вбудований відлагоджувач — піни по сімействах | `pass-32-pul-shmatky-1-3` | 2 джерел не в кеші |
+| DAC, ADC-затухання й обв'язка входу — розділ 33 | `pass-32-pul-shmatky-1-3` | 2 джерел не в кеші |
+| LISTEN_ONLY і NO_ACK — режими TWAI дослівно | `pass-32-pul-shmatky-1-3` | 1 джерел не в кеші |
+| Рівні логу, esp_err_to_name і монітор — розділ 25 | `pass-32-pul-shmatky-1-3` | 3 джерел не в кеші |
+| Типова розбивка флешу — зсуви, розміри й суфікси | `pass-32-pul-shmatky-1-3` | 1 джерел не в кеші |
+| Зміна розбивки, erase-flash і незворотність | `pass-32-pul-shmatky-1-3` | 2 джерел не в кеші |
+| Буфер у PSRAM без MALLOC_CAP_SPIRAM — і що це коштує | `pass-32-pul-shmatky-1-3` | 2 джерел не в кеші |
 | Тільки-вхідні, консоль і USB-JTAG у довіднику пінів | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
+| На модулях із PSRAM зайняті ще GPIO16 і GPIO17 | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
+| ADC2 при Wi-Fi — драйвер розводить, а не віддає сміття | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
 | Піновий план проєкту 62 — три сімейства, кожен пін вільний | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
+| GPIO5 на classic — теж strapping, і книга це тепер каже | `pass-33-pul-shmatky-4-5` | 1 джерел не в кеші |
+| Асиметрія двох зсувів і те, що esptool не перевіряє адресу | `pass-34-pul-shmatok-6` | 3 джерел не в кеші |
+| erase-flash, flash-id і коли стирання справді потрібне | `pass-34-pul-shmatok-6` | 3 джерел не в кеші |
+| Коди RESET_REASON — уся таблиця причин скидання | `pass-35-vlasna-pomylka-boot` | 1 джерел не в кеші |
+| ROM класифікує boot: значення цілком, а не пін за піном | `pass-35-vlasna-pomylka-boot` | 1 джерел не в кеші |
+| Порядок читання backtrace — знахідку відхилено | `pass-35-vlasna-pomylka-boot` | 1 джерел не в кеші |
+| chip-id на сімействі ESP32 повертає попередження, а не Chip ID | `pass-36-chip-id` | 3 джерел не в кеші |
+| Сімейство, ревізію, кристал і MAC друкує преамбула з'єднання | `pass-36-chip-id` | 1 джерел не в кеші |
+| Межі --baud — 230400 у більшості, 460800 лише в деяких | `pass-38-baud-mezhi` | 1 джерел не в кеші |
+| З'єднання завжди на 115200 — --baud стосується лише передавання | `pass-38-baud-mezhi` | 1 джерел не в кеші |
+| GPIO11 на C3 — це майданчик VDD_SPI, живлення флешу | `pass-38-pul-shmatky-9-11` | 3 джерел не в кеші |
+| Драйвер I²C називає причину в консолі, а не мовчить | `pass-38-pul-shmatky-9-11` | 2 джерел не в кеші |
+| ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR | `pass-38-pul-shmatky-9-11` | 1 джерел не в кеші |
+| На RISC-V рядка Backtrace немає — його будує монітор | `pass-38-pul-shmatky-9-11` | 1 джерел не в кеші |
+| GPIO16 і GPIO17 на classic живляться з домену VDD_SDIO | `pass-39-pul-haiku` | 1 джерел не в кеші |
+| GPIO5 на classic — CS апаратного VSPI | `pass-39-pul-haiku` | 1 джерел не в кеші |
+| Сила драйвера GPIO — типова середня, і файл лежить не там | `pass-39-pul-haiku` | 1 джерел не в кеші |
+| Піни 34–39 classic не мають вбудованого підтягування | `pass-39-slidy` | 1 джерел не в кеші |
+| ESP-NOW — прийом через зареєстрований обробник | `pass-39-slidy` | 1 джерел не в кеші |
+| Вбудований USB — окремого моста немає | `pass-39-slidy` | 1 джерел не в кеші |
+| ESP-NOW — важка робота в обробнику шкодить | `pass-39-slidy` | 1 джерел не в кеші |
+| OTA — сертифікат сервера вбудовано в образ | `pass-39-slidy` | 1 джерел не в кеші |
+| Тільки-вхідні піни — ні драйвера, ні підтягування | `pass-39-slidy` | 1 джерел не в кеші |
+| Можливості сімейств за soc_caps.h — ядра, Wi-Fi, BLE, USB | `pass-40-mira-f` | 5 джерел не в кеші |
+| Вбудований ADC нелінійний | `pass-40-mira-f` | 1 джерел не в кеші |
+| main — теж компонент ESP-IDF | `pass-40-mira-f` | 1 джерел не в кеші |
+| Оновлення файлу не фіксується до sync або close | `pass-41-littlefs-vtrata-zhyvlennya` | 1 джерел не в кеші |
+| Розділ factory в схемі OTA не обов'язковий | `pass-43-ota-bez-factory` | 1 джерел не в кеші |
+| Таблиця розділів лежить за зсувом 0x8000 | `pass-44-presud-e-buv-hybnyy` | 1 джерел не в кеші |
+| SPI через матрицю обмежений 40 МГц замість 80 на рідних пінах | `pass-44-presud-e-buv-hybnyy` | 1 джерел не в кеші |
+| T-18-024: **Застосунок починається з `0x10000`** — це не випадкове | `presud-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-36-062: Проміжного стану немає, і «майже рідний» набір пінів | `presud-36-spi` | 1 джерел не в кеші |
+| T-C-013: esptool --port PORT read-flash 0x8000 0x1000 pt.bin # | `presud-c-komandy` | 1 джерел не в кеші |
+| T-04-061: **MCPWM** [[classic]] [[S3]] зроблений спеціально для силової електроніки: | `prochid-04-peryferiya` | 1 джерел не в кеші |
+| T-05-089: У цифровій схемі це локальний запас енергії на | `prochid-05-elektronika` | 1 джерел не в кеші |
+| T-05-017: Світлодіод не можна вмикати без резистора: він не | `prochid-05-elektronika` | 1 джерел не в кеші |
+| T-05-064: **Pull-up** — резистор від піна до 3.3 В. | `prochid-05-elektronika` | 1 джерел не в кеші |
+| T-05-066: **Pull-down** — резистор до землі, дзеркально. | `prochid-05-elektronika` | 1 джерел не в кеші |
+| T-05-067: Хороша новина: у ESP32 підтягувальні резистори **вбудовані** і | `prochid-05-elektronika` | 1 джерел не в кеші |
+| T-05-074: Це не налаштовується — апаратної схеми немає. | `prochid-05-elektronika` | 1 джерел не в кеші |
+| T-05-077: Звичайний вихід активно тримає лінію в обох станах. | `prochid-05-elektronika` | 1 джерел не в кеші |
+| T-05-079: **Open-drain** уміє лише притискати лінію до землі, а | `prochid-05-elektronika` | 1 джерел не в кеші |
+| T-07-055: **Практичне правило:** strapping-піни можна використовувати, але як **виходи**, | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-005: При скиданні ROM-бутлоадер має вирішити, звідки завантажуватися. | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-006: Джерелом рішення служать кілька звичайних GPIO, стан яких | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-065: Спроба їх використати підвішує чип або псує вміст | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-067: Ніколи, за жодних умов, у жодному проєкті. | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-069: Різниця між шісткою й цією парою — у | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-072: Практично це означає, що правило «шість пінів» безпечне | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-083: Друге важливіше, бо менш очевидне. | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-085: Виглядає як несправний пін або несправна кнопка. | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-086: Налаштуванням у коді це не змінюється: апаратної схеми | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-093: Людина шукає помилку в коді вимірювання, а справа | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-107: Використати їх під щось інше можна, але тоді | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-108: Правило: чіпати UART0 тільки тоді, коли пінів справді | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-136: Strapping-піни краще використовувати як виходи й лишати вільними | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-045: | | Головний пін | Другий пін для | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-053: На classic і S3 такої комбінації немає — | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-064: Вони **виведені на гребінку** більшості плат, підписані як | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-066: Правило категоричне: [[classic]] шість пінів 6–11 не існують. | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-071: На голому `WROOM-32` вони вільні. | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-078: [[S3]] Це найпоширеніша причина «купив S3 із 16 | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-080: Перед проєктуванням плати на S3 варто точно знати, | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-087: У пізніших сімействах (S3, C3) тільки-вхідних пінів немає | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-101: Більше ніде в лінійці DAC немає (розділи 04 | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-104: Для всіх трьох матриця GPIO не діє: це | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-07-121: **Чип із більшою кількістю пінів** — S3 має | `prochid-07-gpio` | 1 джерел не в кеші |
+| T-08-004: Це те, що ставлять на власну плату у | `prochid-08-platy` | 1 джерел не в кеші |
+| T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.** | `prochid-11-idf` | 1 джерел не в кеші |
+| T-11-023: Ця команда додає інструменти в `PATH` і ставить | `prochid-11-idf` | 1 джерел не в кеші |
+| T-12-005: насправді відбувається таке: ESP-IDF стартує звичайним чином, створює | `prochid-12-arduino` | 1 джерел не в кеші |
+| T-12-059: | Прототип уже є, треба довести до виробу | `prochid-12-arduino` | 1 джерел не в кеші |
+| T-12-064: Прототип на Arduino доводиться до виробу підключенням Arduino | `prochid-12-arduino` | 1 джерел не в кеші |
+| T-13-024: Запис `espressif32 @ 6.5.0` збереться — і дасть | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-025: `pioarduino` розповсюджується не через реєстр PlatformIO, а архівом | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-006: Форк називається **pioarduino** і супроводжується спільнотою. | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-014: **Версії фіксуються в проєкті.** Це головне. | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-020: Весь проєкт описується одним файлом: | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-002: Для ESP32 воно дає те, чого не дає | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-004: Підтримка ESP32 у PlatformIO забезпечується платформою `platform-espressif32`. | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-005: Офіційна платформа від PlatformIO **відстала** від Arduino core: | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-007: Він підтримує актуальні версії Arduino core і нові | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-015: `platformio.ini` лежить у git і повністю описує, чим | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-029: **`platform`.** Тут — джерело платформи, а не лише | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-032: Для `pioarduino` пінування — це заміна мітки `stable` | `prochid-13-pio` | 1 джерел не в кеші |
+| T-13-048: Для S3 це не косметика — офіційна платформа | `prochid-13-pio` | 1 джерел не в кеші |
 | T-14-005: Ви прошиваєте його один раз, далі працюєте з | `prochid-14-shvydki-shlyakhy` | 1 джерел не в кеші |
 | T-14-015: Частина периферії доступна частково. | `prochid-14-shvydki-shlyakhy` | 1 джерел не в кеші |
+| T-14-071: **Розвідка заліза** — MicroPython у консолі: чи відповідає | `prochid-14-shvydki-shlyakhy` | 1 джерел не в кеші |
+| T-16-056: Якщо є лише `factory` — беруть його. | `prochid-16-boot` | 1 джерел не в кеші |
+| T-17-051: Файл, менший за очікуваний, — це обірваний дамп, | `prochid-17-esptool` | 1 джерел не в кеші |
+| T-17-064: Воно **вже ввімкнене** за замовчуванням, тож у звичайній | `prochid-17-esptool` | 1 джерел не в кеші |
+| T-17-066: Користь від стиснення там подвійна: менше байтів пройшло | `prochid-17-esptool` | 1 джерел не в кеші |
+| T-17-071: Швидкість тут не той параметр, на якому варто | `prochid-17-esptool` | 1 джерел не в кеші |
+| T-17-074: Адреси залежать від сімейства чипа — таблиця в | `prochid-17-esptool` | 1 джерел не в кеші |
+| T-17-118: Друга половина рядка залежить від версії. | `prochid-17-esptool` | 1 джерел не в кеші |
+| T-17-149: There was no response.`** | `prochid-17-esptool` | 1 джерел не в кеші |
+| T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом: | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-080: У складі ESP-IDF · SPIFFS → так | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-088: Після цього розділ у меню з'являється, а тип | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-103: **Взяти готову розбивку з більшим розділом застосунку** для | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-106: Якщо нова прошивка розрахована на іншу розбивку, вона | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-107: Практично це означає: **розбивку треба обирати з запасом | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-108: Змінити її потім можна лише з фізичним доступом | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-109: Другий наслідок того самого: якщо ви змінили розбивку, | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-003: Це та частина системи, яку більшість не чіпає | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-009: Типова розбивка для пристрою без OTA виглядає так: | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-010: | Назва | Тип | Підтип | Зсув | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-015: `phy_init` · Тип → data | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-016: `phy_init` · Підтип → phy | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-019: `factory` · Тип → app | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-020: `factory` · Підтип → factory | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-18-028: **`phy_init`** зберігає калібрувальні дані радіо. | `prochid-18-rozdily-fleshu` | 1 джерел не в кеші |
+| T-19-023: Схема з двох слотів без `factory` — робоча | `prochid-19-ota` | 1 джерел не в кеші |
+| T-19-013: Пристрій виконується зі слоту `ota_0`. | `prochid-19-ota` | 1 джерел не в кеші |
+| T-19-014: Приходить оновлення — воно записується в `ota_1`, при | `prochid-19-ota` | 1 джерел не в кеші |
+| T-22-057: Лог зберігається у файл, а не читається з | `prochid-22-zberezhennya-stanu` | 1 джерел не в кеші |
+| T-23-075: Ніякого струму, ніякого ризику. | `prochid-23-triazh` | 1 джерел не в кеші |
+| T-23-100: Напис на модулі звіряється з шапкою `esptool`. | `prochid-23-triazh` | 1 джерел не в кеші |
+| T-24-012: Таблиця відповідає на кілька питань одразу. | `prochid-24-chuzha-proshyvka` | 1 джерел не в кеші |
+| T-24-035: Витягти розділ (адреса і розмір — з таблиці | `prochid-24-chuzha-proshyvka` | 1 джерел не в кеші |
+| T-24-057: Цього достатньо, щоб написати власну прошивку, яка робить | `prochid-24-chuzha-proshyvka` | 1 джерел не в кеші |
+| T-24-068: Якщо ввімкнено — дамп зашифрований ключем, що не | `prochid-24-chuzha-proshyvka` | 1 джерел не в кеші |
+| T-24-015: **Чи є файлова система.** Розділ типу `spiffs`, `littlefs` | `prochid-24-chuzha-proshyvka` | 1 джерел не в кеші |
+| T-25-051: Один тег на файл або на логічний модуль; | `prochid-25-log` | 1 джерел не в кеші |
+| T-27-002: Відлагоджувач показує все: поточне значення будь-якої змінної, вміст | `prochid-27-jtag` | 1 джерел не в кеші |
+| T-27-044: Коли справді варте: складна помилка з пошкодженням пам'яті, | `prochid-27-jtag` | 1 джерел не в кеші |
+| T-27-020: Якщо в проєкті ці піни переналаштовані під щось | `prochid-27-jtag` | 1 джерел не в кеші |
+| T-30-073: Функція, яка може спрацювати в цей момент — | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-023: Розмір стека задається при створенні задачі — числом, | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-026: Переповнення стека на мікроконтролері не дає ні винятку, | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-027: Задача просто пише за межі свого стека — | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-030: Що з'їдає стек несподівано багато: | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-076: IRAM небагато, і кожна така функція займає її | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-085: **32-бітне читання й запис вирівняного слова атомарні** апаратно. | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-087: Складніші структури — ні. | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-004: `app_main` викликається як звичайна задача FreeRTOS. | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-006: **`app_main` може завершитися.** І це нормально: система продовжує | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-007: Задача `app_main` просто зникає, звільняючи свій стек. | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-016: **Статична.** Глобальні змінні й `static`. | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-021: **Купа.** `malloc` і `new`. | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-032: **Великі буфери — не на стек.** `static` або | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-041: Купа на ESP32 не однорідна (розділ 03), і | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-047: **Не та область.** Буфер для DMA має бути | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-067: Коли вільно 40 КБ, а найбільший блок — | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-086: Тому проста передача одного значення (прапорець, ціле число) | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-101: Результат `malloc` перевіряти завжди. | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-30-102: `volatile` не робить операцію атомарною. | `prochid-30-struktura` | 1 джерел не в кеші |
+| T-31-020: Планувальник завжди виконує **найпріоритетнішу готову** задачу. | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-002: Це не бібліотека, яку треба підключати, — це | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-027: Це не помилка планувальника, а його правило. | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-029: Високий пріоритет означає «швидко відреагувати й заснути», а | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-059: Зручно для «дочекатися, поки є і Wi-Fi, і | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-031: Прив'язати задачу до ядра явно: | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-034: Коли це має сенс: щось із жорсткими таймінгами | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-035: Щось важке й тривале — теж на ядро | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-036: Двоядерність робить помилки синхронізації **реальними, а не теоретичними**. | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-055: **Двійковий семафор** — сигнал «сталося». | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-057: **Лічильний семафор** — облік обмеженого ресурсу. | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-058: **Група подій** — набір прапорців, на комбінацію яких | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-079: Механічний контакт при натисканні дає десятки перемикань за | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-085: Усі програмні таймери виконуються в **одній** службовій задачі. | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-090: **Спільна змінна без захисту.** На двох ядрах ламається | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-31-095: Високий пріоритет означає «швидко відреагувати й заснути». | `prochid-31-freertos` | 1 джерел не в кеші |
+| T-33-012: `1ULL` обов'язково: на пінах вище 31 звичайний `1` | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-023: gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5); | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-029: Для більшості періодичних задач цього досить: | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-034: Це основний спосіб міряти час: переповнення не станеться | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-049: Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення. | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-051: Плавне згасання, зроблене лінійно, виглядає як різкий стрибок | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-058: Спільна земля обов'язкова (розділ 48). | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-060: - **мертвий час** між верхнім і нижнім плечем | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-075: Це правильний спосіб читати ІЧ-пульти й датчики з | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-077: Енкодер, витратомір, лічильник обертів — усе це не | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-079: PCNT уміє й апаратний фільтр коротких сплесків — | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-091: Пам'ятайте: вхід не толерантний до перевищення — понад | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-103: Найдешевше і найдієвіше. 2. | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-113: Піни **різні** за сімействами: | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-124: Яскравість світлодіода нелінійна щодо коефіцієнта заповнення. | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-127: PCNT рахує імпульси без переривань і має апаратний | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-059: [[classic]] [[S3]] MCPWM зроблений для силової електроніки й | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-062: RMT задумувався для інфрачервоних пультів, а виявився універсальним | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-33-074: RMT уміє й приймати — вимірювати тривалість вхідних | `prochid-33-peryferiya-kod` | 1 джерел не в кеші |
+| T-34-055: ESP-IDF має штатний компонент `esp-modbus` для обох ролей: | `prochid-34-uart` | 1 джерел не в кеші |
+| T-39-035: Її ще немає: під'єднання займає від сотень мілісекунд | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-037: Саме наявність IP, а не факт під'єднання, означає, | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-018: **Канали 12 і 13** доступні не за всіх | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-021: Роутер, переведений у режим «тільки WPA3», відрізає такі | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-044: Пристрій гріється, з'їдає батарею і не робить нічого | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-033: Робота йде **через події**: під'єднання асинхронне, і код | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-047: ESP_LOGW(TAG, "зв'язок втрачено, спроба через %d мс", pauza); | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-054: Правильно — зберігати в NVS (розділ 18), а | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-064: ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary); | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-087: **Modem sleep** — радіо вимикається між маячками, з'єднання | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-088: Вмикається за замовчуванням і майже безкоштовне. | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-001: Wi-Fi — головна причина, чому беруть ESP32 (розділ | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-019: Якщо роутер працює на 13-му, ESP32 із неправильно | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-066: | від −50 дБм | відмінно | | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-091: **Не під'єднуватися взагалі.** Для датчика на батарейці ESP-NOW | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-39-098: RSSI логувати завжди: на межі OTA не проходить, | `prochid-39-wifi` | 1 джерел не в кеші |
+| T-46-043: Це незручно і ламається при оновленні бібліотеки; варто | `prochid-46-dyspleyi` | 1 джерел не в кеші |
+| T-46-046: LVGL дає красиві інтерфейси і коштує ресурсів. | `prochid-46-dyspleyi` | 1 джерел не в кеші |
+| T-46-038: **U8g2** — монохромні дисплеї. | `prochid-46-dyspleyi` | 1 джерел не в кеші |
+| T-46-042: Особливість, що дивує: конфігурація (модель дисплея, піни) задається | `prochid-46-dyspleyi` | 1 джерел не в кеші |
+| T-46-055: **Кодування.** Рядки в коді — UTF-8; бібліотека має | `prochid-46-dyspleyi` | 1 джерел не в кеші |
+| T-46-068: Правильний спосіб читання — **PCNT** (розділ 33): апаратний | `prochid-46-dyspleyi` | 1 джерел не в кеші |
+| T-59-079: Різниця виникає лише тоді, коли в старшому байті | `prochid-59-proj-monitor` | 1 джерел не в кеші |
+| T-A-010: 1 · Обмеження → UART0 TX | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-011: 1 · Примітка → консоль | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-016: 3 · Обмеження → UART0 RX | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-017: 3 · Примітка → консоль | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-099: UART0 TX / RX · [[classic]] → 1 | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-009: 0 · Примітка → `BOOT`; низький = download | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-045: 25 · Обмеження → **DAC1** | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-046: 25 · ADC → ADC2_8 | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-047: 26 · Обмеження → **DAC2** | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-049: 27 · ADC → ADC2_7 | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-A-088: 5 · Обмеження → ADC2 | `prochid-a-pinouty` | 1 джерел не в кеші |
+| T-E-125: WS2812 / SK6812 · Як → **RMT**, не | `prochid-e-interfeysy` | 1 джерел не в кеші |
+| T-G-036: | стабілізатор | voltage regulator | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-085: | відтворюване збирання | reproducible build | | `prochid-g-glosariy` | 1 джерел не в кеші |
 | T-G-054: | прошивка | firmware | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-055: | образ | image, binary | | `prochid-g-glosariy` | 1 джерел не в кеші |
 | T-G-056: | збирання | build | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-063: | семафор | semaphore | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-064: | м'ютекс | mutex | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-065: | група подій | event group | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-066: | переривання | interrupt | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-068: | критична секція | critical section | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-074: | атомарна операція | atomic operation | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-076: | взаємне блокування | deadlock | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-077: | зворотний виклик | callback | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-088: | точка доступу | access point | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-089: | станція, клієнт | station | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-090: | канал | channel | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-091: | рівень сигналу | RSSI, signal strength | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-094: | дальність | range | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-095: | маячок | beacon | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-098: | топік | topic | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-099: | підписка | subscription | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-100: | публікація | publish | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-101: | сертифікат | certificate | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-102: | центр сертифікації | certificate authority, CA | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-103: | рукостискання | handshake | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-104: | широкомовна розсилка | broadcast | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-108: | напруга | voltage | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-109: | струм | current | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-111: | потужність | power | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-116: | коефіцієнт заповнення | duty cycle | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-117: | роздільність | resolution | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-118: | точність | accuracy | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-119: | калібрування | calibration | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-120: | усереднення | averaging | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-121: | шум | noise | | `prochid-g-glosariy` | 1 джерел не в кеші |
 | T-G-141: | IDF | IoT Development Framework | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-142: | RTOS | Real-Time Operating System | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-163: | WDT | Watchdog Timer | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-146: | OTA | Over-The-Air (оновлення) | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-153: | I²S | Inter-IC Sound | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-155: | JTAG | Joint Test Action Group (інтерфейс | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-G-162: | ULP | Ultra-Low-Power (співпроцесор) | | `prochid-g-glosariy` | 1 джерел не в кеші |
+| T-H-017: **`github.com/espressif/esp-idf`** — сам фреймворк. | `prochid-h-dzherela` | 1 джерел не в кеші |
+| T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не | `prochid-k08-symptomy` | 1 джерел не в кеші |
+| T-K08-035: 11 · Найчастіша причина → вони зайняті флешем | `prochid-k08-symptomy` | 1 джерел не в кеші |
+| T-K09-004: | **6, 7, 8, 9, 10, 11** | | `prochid-k09-pinouty` | 1 джерел не в кеші |
+| T-K11-008: **Не вмикати Flash Encryption і Secure Boot «щоб | `prochid-k11-nikoly` | 1 джерел не в кеші |
+| T-Z-010: паспорт виробу — 224, 310–311, 313, 398 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-011: серво — 32, 54, 203–204, 207, 274–277, 369, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-012: серійна прошивка — 4, 143, 145, 398 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-013: таблиця розділів — 15, 18, 129, 133, 135, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-038: DMA — 50, 52, 55–56, 188, 220, 222, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-055: esp_deep_sleep_start — 68, 100, 338, 340, 344 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-056: ESP_ERR_INVALID_ARG — 207, 326 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-062: esp_err_t — 131, 136, 164, 197–198, 327, 329–331, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-108: FreeRTOS — 4–5, 40–41, 46, 94, 100, 103, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-109: GPIO12 — 14, 17, 28, 71–72, 74, 77, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-110: GPIO15 — 14, 17–18, 28, 71, 142, 173, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-111: GPIO17 — 67, 73–75, 206, 335 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-112: GPIO18 — 75, 172, 206, 335 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-113: GPIO2 — 13–14, 17, 28, 71–72, 142, 335–337, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-114: GPIO21 — 149, 310, 326, 335 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-115: GPIO22 — 149, 310, 326, 335 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-116: GPIO25 — 75, 206–207, 310, 349–350 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-117: GPIO26 — 74–75, 206–207, 349–350 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-118: GPIO3 — 14, 72, 75, 335, 337 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-119: GPIO32 — 53, 74–75, 182, 389 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-120: GPIO34 — 53, 62, 74, 77, 182, 335, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-121: GPIO4 — 9, 17, 149, 310, 335, 349, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-123: GPIO6 — 21, 27, 53, 73, 76, 154, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-124: GPIO8 — 13–14, 24, 72–73, 118, 205, 326, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-125: GPIO9 — 13–14, 17, 24, 72–73, 82, 118, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-128: gpio_isr_handler — 50, 189 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-149: MALLOC_CAP_DMA — 188, 220, 222, 281, 368 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-151: MALLOC_CAP_SPIRAM — 153, 188–189 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-154: merge-bin — 15, 25–26, 35, 125–126, 128, 137, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-024: bootloader — 5, 15, 18, 26, 98, 117–120, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-044: ESP-NOW — 69, 231, 233, 236, 240, 246–249, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
 | T-Z-046: ESP32-C3-MINI-1 — 7, 79, 152, 401 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
 | T-Z-047: ESP32-CAM — 14, 80, 82, 279–281 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-048: ESP32-S2 — 45–46, 118, 242 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-049: ESP32-S3 — 7, 23, 39, 44, 118, 127, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
 | T-Z-051: ESP32-WROOM-32 — 7, 39, 79, 123, 152, 401 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
 | T-Z-052: ESP32-WROOM-32D — 79, 152 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
 | T-Z-053: ESP32-WROVER — 7, 79, 152 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-054: ESP8266 — 7, 18, 21, 80, 123, 152, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-144: I²S — 40, 53–56, 280–281, 388, 399 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-153: MCP23017 — 57, 76, 365, 386 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-156: Modbus — 156, 209, 211, 356, 358, 360 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-173: SR04 — 27, 34, 61, 258, 262, 264, | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
+| T-Z-194: WS2812 — 54–55, 200, 204, 207, 388 | `prochid-z-pokazhchyk` | 1 джерел не в кеші |
 
-## звірено — 538
+## звірено — 98
 
 | Доказ | Файл | Деталі |
 |---|---|---|
-| T-04-061: **MCPWM** [[classic]] [[S3]] зроблений спеціально для силової електроніки: | `cherga-a-04-peryferiya` | 1 рядків |
-| T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.** | `cherga-a-11-idf` | 1 рядків |
-| T-11-023: Ця команда додає інструменти в `PATH` і ставить | `cherga-a-11-idf` | 3 рядків |
-| T-16-056: Якщо є лише `factory` — беруть його. | `cherga-a-16-boot` | 1 рядків |
-| T-17-061: Аргументи йдуть парами: адреса, файл. | `cherga-a-17-esptool` | 1 рядків |
-| T-17-063: `-z` вмикає стиснення при передачі. | `cherga-a-17-esptool` | 1 рядків |
-| T-18-074: Швидкість при заповненні · SPIFFS → різко падає | `cherga-a-18-rozdily-fleshu` | 1 рядків |
-| T-19-023: Схема з двох слотів без `factory` — робоча | `cherga-a-19-ota` | 1 рядків |
-| T-19-013: Пристрій виконується зі слоту `ota_0`. | `cherga-a-19-ota` | 1 рядків |
-| T-19-014: Приходить оновлення — воно записується в `ota_1`, при | `cherga-a-19-ota` | 1 рядків |
-| T-25-051: Один тег на файл або на логічний модуль; | `cherga-a-25-log` | 1 рядків |
-| T-H-017: **`github.com/espressif/esp-idf`** — сам фреймворк. | `cherga-a-h-dzherela` | 1 рядків |
-| T-02-042: Wi-Fi · ESP32 → так | `klas-f-02-chipy` | 1 рядків |
-| T-02-043: Wi-Fi · S2 → так | `klas-f-02-chipy` | 1 рядків |
-| T-02-044: Wi-Fi · S3 → так | `klas-f-02-chipy` | 1 рядків |
-| T-02-047: Wi-Fi · H2 → **ні** | `klas-f-02-chipy` | 1 рядків |
-| T-02-054: BLE · ESP32 → так | `klas-f-02-chipy` | 1 рядків |
-| T-02-055: BLE · S2 → **ні** | `klas-f-02-chipy` | 1 рядків |
-| T-02-057: BLE · C3 → так | `klas-f-02-chipy` | 1 рядків |
-| T-02-096: **Переноситься майже завжди:** код на ESP-IDF, написаний через | `klas-f-02-chipy` | 1 рядків |
-| T-02-099: Перенесення проєкту на інший чип в ESP-IDF починається | `klas-f-02-chipy` | 2 рядків |
-| T-02-103: Усі налаштування, зроблені через `menuconfig`, повертаються до типових. | `klas-f-02-chipy` | 1 рядків |
-| T-11-001: ESP-IDF (Espressif IoT Development Framework) — офіційний фреймворк | `klas-f-11-idf` | 1 рядків |
-| T-11-013: **Windows.** Офіційний інсталятор ESP-IDF Tools Installer ставить усе | `klas-f-11-idf` | 1 рядків |
-| T-11-025: Спокуса прописати `export.sh` у `.bashrc` є в усіх, | `klas-f-11-idf` | 1 рядків |
-| T-11-112: `set-target` стирає `sdkconfig`; у git кладеться `sdkconfig.defaults`. | `klas-f-11-idf` | 1 рядків |
-| T-12-009: **`loop` — звичайна задача FreeRTOS.** Вона має свій | `klas-f-12-arduino` | 1 рядків |
-| T-12-033: Arduino core версії 3.x — велике оновлення: він | `klas-f-12-arduino` | 1 рядків |
-| T-12-048: **Arduino як компонент ESP-IDF.** Найцікавіший варіант: проєкт будується | `klas-f-12-arduino` | 1 рядків |
-| T-12-049: Тоді доступні `setup`/`loop` і бібліотеки Arduino — і | `klas-f-12-arduino` | 1 рядків |
-| T-12-061: `delay` тут не блокує систему, а `loop` — | `klas-f-12-arduino` | 2 рядків |
-| T-13-070: | Виріб, OTA, серійність, довгий супровід | ESP-IDF | `klas-f-13-pio` | 1 рядків |
-| T-14-053: Треба писати код · MicroPython → так, Python | `klas-f-14-shvydki-shlyakhy` | 1 рядків |
-| T-19-007: `otadata` · Тип → data | `klas-f-19-ota` | 1 рядків |
-| T-19-009: `ota_0` · Тип → app | `klas-f-19-ota` | 1 рядків |
-| T-19-011: `ota_1` · Тип → app | `klas-f-19-ota` | 1 рядків |
-| T-19-013: Пристрій виконується зі слоту `ota_0`. | `klas-f-19-ota` | 1 рядків |
-| T-19-014: Приходить оновлення — воно записується в `ota_1`, при | `klas-f-19-ota` | 1 рядків |
-| T-19-016: Наступне оновлення піде у слот `ota_0`. | `klas-f-19-ota` | 1 рядків |
-| T-19-059: Компонент сам знаходить неактивний слот, пише в нього | `klas-f-19-ota` | 1 рядків |
-| T-41-007: Проєкт на SPP, що переїжджає на S3, доведеться | `klas-f-41-ble` | 1 рядків |
-| T-41-011: Де є · BLE → уся лінійка, крім | `klas-f-41-ble` | 7 рядків |
-| T-41-015: Швидкість · BLE → десятки кбіт/с | `klas-f-41-ble` | 1 рядків |
-| T-41-019: Спарювання · BLE → не обов'язкове | `klas-f-41-ble` | 1 рядків |
-| T-41-038: Тоді пристрій самоописовий — будь-який універсальний BLE-застосунок покаже | `klas-f-41-ble` | 1 рядків |
-| T-41-040: В ESP-IDF два стеки BLE, і вибір між | `klas-f-41-ble` | 1 рядків |
-| T-41-041: **Bluedroid** — повний стек, підтримує і Classic, і | `klas-f-41-ble` | 1 рядків |
-| T-41-043: **NimBLE** — тільки BLE, компактніший, займає в рази | `klas-f-41-ble` | 1 рядків |
-| T-41-049: **Wi-Fi і Bluetooth одночасно** працюють, але ділять одне | `klas-f-41-ble` | 1 рядків |
-| T-41-054: BLE спроєктований для батарейок, і його головний параметр | `klas-f-41-ble` | 1 рядків |
-| T-41-078: Для BLE-проєкту брати NimBLE: різниця в пам'яті вирішальна | `klas-f-41-ble` | 1 рядків |
-| T-42-001: ESP-NOW — власний протокол Espressif для прямого обміну | `klas-f-42-espnow` | 1 рядків |
-| T-42-006: ESP-NOW не робить нічого з цього. | `klas-f-42-espnow` | 1 рядків |
-| T-42-015: Кожен пристрій має унікальну MAC від заводу (розділ | `klas-f-42-espnow` | 1 рядків |
-| T-42-027: Обробник прийому виконується в контексті **задачі** Wi-Fi, а | `klas-f-42-espnow` | 1 рядків |
-| T-42-045: ESP-NOW підтримує шифрування з ключами PMK і LMK. | `klas-f-42-espnow` | 1 рядків |
-| T-42-048: Без шифрування ESP-NOW — це відкритий радіоефір. | `klas-f-42-espnow` | 1 рядків |
-| T-42-060: Усі вузли на фіксованому каналі, Wi-Fi не використовується. | `klas-f-42-espnow` | 1 рядків |
 | Тест на 3.1 В — узгоджено з порогом коду й нижньою межею buck-boost | `m2-23-proekty-60-62` | 4 рядків |
-| 0x1: Що сталося → подано живлення або EN | `m2-60-panik-a` | 1 рядків |
-| 0x1: Що робити → норма | `m2-60-panik-a` | 1 рядків |
-| 0x3: Назва → SW_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x3: Що робити → норма, якщо ваша | `m2-60-panik-a` | 1 рядків |
-| 0x4: Назва → OWDT_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x4: Що сталося → застарілий watchdog | `m2-60-panik-a` | 1 рядків |
-| 0x4: Що робити → рідко | `m2-60-panik-a` | 1 рядків |
-| 0x5: Назва → DEEPSLEEP_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x5: Що сталося → прокинувся з deep sleep | `m2-60-panik-a` | 1 рядків |
-| 0x5: Що робити → норма | `m2-60-panik-a` | 1 рядків |
-| 0x6: Назва → SDIO_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x6: Що сталося → скидання модулем SLC | `m2-60-panik-a` | 1 рядків |
-| 0x6: Що робити → рідко | `m2-60-panik-a` | 1 рядків |
-| 0x7: Що сталося → watchdog таймера 0 | `m2-60-panik-a` | 1 рядків |
-| 0x8: Назва → TG1WDT_SYS_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x8: Що сталося → watchdog таймера 1 | `m2-60-panik-a` | 1 рядків |
-| 0x9: Назва → RTCWDT_SYS_RESET | `m2-60-panik-a` | 1 рядків |
-| 0x9: Що сталося → RTC watchdog | `m2-60-panik-a` | 1 рядків |
-| 0xa: Назва → INTRUSION_RESET | `m2-60-panik-a` | 1 рядків |
-| T-D-153: EXCVADDR — найшвидша підказка | `m2-61-panik-b` | 1 рядків |
-| T-D-159: IDLE0 та Task Watchdog Timeout | `m2-61-panik-b` | 1 рядків |
-| T-D-172: assert failed як порушення інваріанта | `m2-61-panik-b` | 3 рядків |
-| T-D-183: rst: у першому рядку RTC Watchdog Timeout | `m2-61-panik-b` | 3 рядків |
-| T-D-184: Причина паніки і EXCVADDR | `m2-61-panik-b` | 1 рядків |
-| T-D-185: Backtrace через .elf за допомогою IDF Monitor | `m2-61-panik-b` | 5 рядків |
-| T-D-187: Coredump та логування переходів станів при невідтворюванні | `m2-61-panik-b` | 1 рядків |
-| T-D-188: Backtrace без .elf нерозшифровний | `m2-61-panik-b` | 1 рядків |
 | T-K06-001: Монітор на 115200 бод для читання boot-логу | `m2-62-bootlog-k06` | 1 рядків |
 | T-K06-005: rst: — причина останнього скидання чипа | `m2-62-bootlog-k06` | 1 рядків |
 | T-K06-009: 0x1 (POWERON_RESET) — подано живлення або натиснуто EN | `m2-62-bootlog-k06` | 1 рядків |
@@ -316,141 +671,17 @@
 | GPIO22 на S3 не існує; запит повертає ESP_ERR_INVALID_ARG без ESP_ERROR_CHECK | `m2-69-proj-59` | 10 рядків |
 | Include драйвера I²C master | `m2-69-proj-59` | 1 рядків |
 | Константа для історії: 720 записів (12 годин при вимірюванні раз на хвилину) | `m2-69-proj-59` | 1 рядків |
-| Таблиця розділів з адресами nvs 0x9000 та factory 0x10000 | `m2-82-boot-flesh` | 2 рядків |
-| Сторож (Watchdog) автоматично перезавантажує систему при зависанні | `m2-84-freertos` | 2 рядків |
-| Task Watchdog Timer та Interrupt Watchdog Timer у ESP-IDF | `m2-84-freertos` | 3 рядків |
-| T-D-040: 0xd = RTCWDT_CPU_RESET, що робити → розділ 32 | `m2-94-vybirka` | 1 рядків |
-| T-D-043: 0xe = EXT_CPU_RESET, норма | `m2-94-vybirka` | 1 рядків |
-| T-D-041: 0xe = EXT_CPU_RESET (Назва) | `m2-94-vybirka` | 1 рядків |
-| Адреса другого бутлоадера задається ROM і має три значення | `pass-01-tverde-yadro` | 7 рядків |
-| Таблиця розділів лежить на 0x8000, застосунок на 0x10000 | `pass-01-tverde-yadro` | 3 рядків |
-| Коди причин скидання (RESET_REASON) | `pass-01-tverde-yadro` | 18 рядків |
-| C6 має два I²C, другий низькоспоживчий | `pass-01-tverde-yadro` | 3 рядків |
-| Придатних каналів Touch на S2 і S3 — чотирнадцять, а не п'ятнадцять | `pass-01-tverde-yadro` | 3 рядків |
-| Термін підтримки ESP-IDF — 30 місяців, із них 12 Service | `pass-01-tverde-yadro` | 5 рядків |
-| Межі ESP-NOW і сигнатури зворотних викликів | `pass-01-tverde-yadro` | 7 рядків |
-| Рівні оптимізації в menuconfig | `pass-01-tverde-yadro` | 11 рядків |
-| ADC2 конфліктує з Wi-Fi на classic, S2 і S3 — не лише на classic | `pass-02-povedinka` | 2 рядків |
-| Матриця GPIO обмежує SPI до 40 МГц проти 80 МГц на IOMUX | `pass-02-povedinka` | 5 рядків |
-| TWAI сумісний з ISO 11898-1 і потребує зовнішнього трансивера | `pass-02-povedinka` | 4 рядків |
-| CAN FD не підтримується жодним із сімейств книги | `pass-02-povedinka` | 2 рядків |
-| ESP32 у ролі веденого I²C не вміє розтягувати SCL | `pass-02-povedinka` | 4 рядків |
-| Механізм відкату OTA і його стани | `pass-02-povedinka` | 6 рядків |
-| Вміст RTC-пам'яті переживає deep sleep | `pass-02-povedinka` | 3 рядків |
-| Частота і розрядність LEDC пов'язані обернено | `pass-02-povedinka` | 5 рядків |
-| BME280 — карта регістрів і довжини блоків калібрування | `pass-04-obkhidni` | 11 рядків |
-| BME280 — старший байт dig_H4 і dig_H5 знаковий | `pass-04-obkhidni` | 9 рядків |
-| DS18B20 — −127 °C як код помилки і межа 750 мс | `pass-04-obkhidni` | 4 рядків |
-| Типовий ATT MTU дорівнює 23 байтам в обох стеках | `pass-04-obkhidni` | 6 рядків |
-| SH1106 зсунуто на два пікселі відносно SSD1306 | `pass-04-obkhidni` | 6 рядків |
-| LoRa — апаратний діапазон SF починається з шістки | `pass-04-obkhidni` | 6 рядків |
-| RP2040 — обсяг SRAM 264 КБ | `pass-04-obkhidni` | 4 рядків |
-| Синтаксис esptool v5 — дефіси замість підкреслень, без .py | `pass-06-komandy-strapping` | 11 рядків |
-| read-flash з ALL визначає обсяг флешу сам | `pass-06-komandy-strapping` | 8 рядків |
-| MTDI (GPIO12) задає напругу VDDSDIO для мікросхеми флешу | `pass-06-komandy-strapping` | 10 рядків |
-| Стеля пріоритетів FreeRTOS в ESP-IDF — 25 | `pass-07-api-rozbyvka` | 1 рядків |
-| Типова розбивка флешу та вирівнювання розділів | `pass-07-api-rozbyvka` | 9 рядків |
-| Сила драйвера GPIO налаштовується, типова — середня | `pass-07-api-rozbyvka` | 3 рядків |
-| gpio_dump_io_configuration показує реальну конфігурацію піна | `pass-07-api-rozbyvka` | 9 рядків |
 | boot: у логу — бітова маска станів strapping-пінів | `pass-08-strapping` | 9 рядків |
 | GPIO12 високий дає VDDSDIO 1.8 В і brownout тривольтового флешу | `pass-08-strapping` | 2 рядків |
-| idf.py merge-bin бере адреси з конфігурації проєкту | `pass-09-komandy` | 6 рядків |
-| --after watchdog-reset для чипів із native USB | `pass-09-komandy` | 7 рядків |
-| Формат паніки Guru Meditation і назви винятків | `pass-10-povidomlennya` | 14 рядків |
 | Дамп Task WDT — два різні переліки | `pass-10-povidomlennya` | 4 рядків |
-| Camera probe failed — повний вигляд рядка | `pass-10-povidomlennya` | 1 рядків |
-| Меню логування зветься Log, а не Log output | `pass-11-menuconfig` | 5 рядків |
-| Maximum log verbosity — стеля компіляції окремо від типового рівня | `pass-11-menuconfig` | 17 рядків |
-| Відкат вмикається в підменю Application Rollback | `pass-11-menuconfig` | 4 рядків |
-| Рівні оптимізації компілятора | `pass-11-menuconfig` | 12 рядків |
-| Хост Bluetooth і перевірка переповнення стека | `pass-11-menuconfig` | 12 рядків |
-| Номери ліній USB-Serial-JTAG | `pass-12-piny` | 4 рядків |
 | Другий strapping-пін на classic і S3 працює навпаки до C3 | `pass-12-piny` | 4 рядків |
 | Таблиця симптомів веде в тематично правильні розділи | `pass-14-marshruty` | 2 рядків |
-| Політика підтримки ESP-IDF — 30 місяців, без окремого LTS | `pass-15-versiyi` | 7 рядків |
-| BME280 — адреси, ідентифікатор чипа, регістр | `pass-18-schemy` | 4 рядків |
-| DS18B20 повертає −127 при відсутності зв'язку | `pass-18-schemy` | 1 рядків |
-| JTAG-піни classic — усі чотири з таблиці IOMUX | `pass-24-zsuvy-i-matrycya` | 9 рядків |
-| Матриця GPIO і SPI — 40 проти 80 МГц, і коли різниці немає | `pass-24-zsuvy-i-matrycya` | 11 рядків |
-| MSPI на S3 — GPIO26–32 під флеш, GPIO33–37 під восьмилінійний режим | `pass-25-psram` | 14 рядків |
-| PSRAM вимкнена типово, а винесення в неї — навпаки, ввімкнене | `pass-25-psram` | 23 рядків |
-| Octal PSRAM треба зазначити — типово стоїть Quad | `pass-25-psram` | 7 рядків |
 | Внутрішнє підтягування strapping — 45 кОм, кнопці треба 10 кОм | `pass-26-strapping` | 5 рядків |
 | GPIO12 має внутрішнє підтягування вниз — безпечний за замовчуванням | `pass-26-strapping` | 5 рядків |
-| idf.py monitor — вихід Ctrl+], скидання через Ctrl+T | `pass-28-komandy-suciljno` | 12 рядків |
-| espefuse палить в один бік; остання перепона — слово BURN | `pass-28-komandy-suciljno` | 12 рядків |
-| esp_timer — мікросекундна роздільність, обробники в одній задачі | `pass-31-adresy-i-api` | 7 рядків |
-| JTAG на classic — чотири піни, два з них strapping | `pass-32-pul-shmatky-1-3` | 13 рядків |
-| USB-JTAG і вбудований відлагоджувач — піни по сімействах | `pass-32-pul-shmatky-1-3` | 3 рядків |
-| Зміна розбивки, erase-flash і незворотність | `pass-32-pul-shmatky-1-3` | 6 рядків |
-| На модулях із PSRAM зайняті ще GPIO16 і GPIO17 | `pass-33-pul-shmatky-4-5` | 3 рядків |
-| ADC2 при Wi-Fi — драйвер розводить, а не віддає сміття | `pass-33-pul-shmatky-4-5` | 5 рядків |
-| GPIO5 на classic — теж strapping, і книга це тепер каже | `pass-33-pul-shmatky-4-5` | 3 рядків |
-| Асиметрія двох зсувів і те, що esptool не перевіряє адресу | `pass-34-pul-shmatok-6` | 13 рядків |
-| Порядок читання backtrace — знахідку відхилено | `pass-35-vlasna-pomylka-boot` | 2 рядків |
-| Сімейство, ревізію, кристал і MAC друкує преамбула з'єднання | `pass-36-chip-id` | 8 рядків |
-| Межі --baud — 230400 у більшості, 460800 лише в деяких | `pass-38-baud-mezhi` | 1 рядків |
-| З'єднання завжди на 115200 — --baud стосується лише передавання | `pass-38-baud-mezhi` | 1 рядків |
-| GPIO11 на C3 — це майданчик VDD_SPI, живлення флешу | `pass-38-pul-shmatky-9-11` | 7 рядків |
-| ESP_DRAM_LOGx — єдиний виняток із заборони логувати в ISR | `pass-38-pul-shmatky-9-11` | 5 рядків |
 | Рядки режиму завантаження — перелік із документації esptool | `pass-39-pul-haiku` | 3 рядків |
 | Пін входу в бутлоадер за сімействами — підстановки esptool | `pass-39-pul-haiku` | 3 рядків |
 | Внутрішнє підтягування 45 кОм на піні входу в бутлоадер | `pass-39-pul-haiku` | 2 рядків |
-| GPIO16 і GPIO17 на classic живляться з домену VDD_SDIO | `pass-39-pul-haiku` | 3 рядків |
-| GPIO5 на classic — CS апаратного VSPI | `pass-39-pul-haiku` | 1 рядків |
-| Сила драйвера GPIO — типова середня, і файл лежить не там | `pass-39-pul-haiku` | 5 рядків |
-| Піни 34–39 classic не мають вбудованого підтягування | `pass-39-slidy` | 1 рядків |
-| ESP-NOW — прийом через зареєстрований обробник | `pass-39-slidy` | 1 рядків |
-| Вбудований USB — окремого моста немає | `pass-39-slidy` | 1 рядків |
-| ESP-NOW — важка робота в обробнику шкодить | `pass-39-slidy` | 1 рядків |
-| OTA — сертифікат сервера вбудовано в образ | `pass-39-slidy` | 1 рядків |
-| Тільки-вхідні піни — ні драйвера, ні підтягування | `pass-39-slidy` | 1 рядків |
-| Можливості сімейств за soc_caps.h — ядра, Wi-Fi, BLE, USB | `pass-40-mira-f` | 4 рядків |
-| Вбудований ADC нелінійний | `pass-40-mira-f` | 1 рядків |
-| main — теж компонент ESP-IDF | `pass-40-mira-f` | 1 рядків |
-| Оновлення файлу не фіксується до sync або close | `pass-41-littlefs-vtrata-zhyvlennya` | 1 рядків |
-| Розділ factory в схемі OTA не обов'язковий | `pass-43-ota-bez-factory` | 1 рядків |
-| Таблиця розділів лежить за зсувом 0x8000 | `pass-44-presud-e-buv-hybnyy` | 1 рядків |
-| SPI через матрицю обмежений 40 МГц замість 80 на рідних пінах | `pass-44-presud-e-buv-hybnyy` | 1 рядків |
-| T-18-024: **Застосунок починається з `0x10000`** — це не випадкове | `presud-18-rozdily-fleshu` | 1 рядків |
 | T-35-028: Стандартні швидкості — 100 кГц і 400 кГц. | `presud-35-i2c` | 1 рядків |
-| T-36-062: Проміжного стану немає, і «майже рідний» набір пінів | `presud-36-spi` | 1 рядків |
-| T-C-013: esptool --port PORT read-flash 0x8000 0x1000 pt.bin # | `presud-c-komandy` | 1 рядків |
-| T-04-061: **MCPWM** [[classic]] [[S3]] зроблений спеціально для силової електроніки: | `prochid-04-peryferiya` | 1 рядків |
-| T-05-089: У цифровій схемі це локальний запас енергії на | `prochid-05-elektronika` | 1 рядків |
-| T-05-017: Світлодіод не можна вмикати без резистора: він не | `prochid-05-elektronika` | 1 рядків |
-| T-05-064: **Pull-up** — резистор від піна до 3.3 В. | `prochid-05-elektronika` | 1 рядків |
-| T-05-066: **Pull-down** — резистор до землі, дзеркально. | `prochid-05-elektronika` | 1 рядків |
-| T-05-067: Хороша новина: у ESP32 підтягувальні резистори **вбудовані** і | `prochid-05-elektronika` | 1 рядків |
-| T-05-074: Це не налаштовується — апаратної схеми немає. | `prochid-05-elektronika` | 1 рядків |
-| T-05-077: Звичайний вихід активно тримає лінію в обох станах. | `prochid-05-elektronika` | 1 рядків |
-| T-05-079: **Open-drain** уміє лише притискати лінію до землі, а | `prochid-05-elektronika` | 1 рядків |
-| T-07-055: **Практичне правило:** strapping-піни можна використовувати, але як **виходи**, | `prochid-07-gpio` | 1 рядків |
-| T-07-005: При скиданні ROM-бутлоадер має вирішити, звідки завантажуватися. | `prochid-07-gpio` | 1 рядків |
-| T-07-006: Джерелом рішення служать кілька звичайних GPIO, стан яких | `prochid-07-gpio` | 1 рядків |
-| T-07-065: Спроба їх використати підвішує чип або псує вміст | `prochid-07-gpio` | 1 рядків |
-| T-07-067: Ніколи, за жодних умов, у жодному проєкті. | `prochid-07-gpio` | 1 рядків |
-| T-07-069: Різниця між шісткою й цією парою — у | `prochid-07-gpio` | 1 рядків |
-| T-07-072: Практично це означає, що правило «шість пінів» безпечне | `prochid-07-gpio` | 1 рядків |
-| T-07-083: Друге важливіше, бо менш очевидне. | `prochid-07-gpio` | 1 рядків |
-| T-07-085: Виглядає як несправний пін або несправна кнопка. | `prochid-07-gpio` | 1 рядків |
-| T-07-086: Налаштуванням у коді це не змінюється: апаратної схеми | `prochid-07-gpio` | 1 рядків |
-| T-07-093: Людина шукає помилку в коді вимірювання, а справа | `prochid-07-gpio` | 1 рядків |
-| T-07-107: Використати їх під щось інше можна, але тоді | `prochid-07-gpio` | 1 рядків |
-| T-07-108: Правило: чіпати UART0 тільки тоді, коли пінів справді | `prochid-07-gpio` | 1 рядків |
-| T-07-136: Strapping-піни краще використовувати як виходи й лишати вільними | `prochid-07-gpio` | 1 рядків |
-| T-07-045: | | Головний пін | Другий пін для | `prochid-07-gpio` | 1 рядків |
-| T-07-053: На classic і S3 такої комбінації немає — | `prochid-07-gpio` | 1 рядків |
-| T-07-064: Вони **виведені на гребінку** більшості плат, підписані як | `prochid-07-gpio` | 1 рядків |
-| T-07-066: Правило категоричне: [[classic]] шість пінів 6–11 не існують. | `prochid-07-gpio` | 1 рядків |
-| T-07-071: На голому `WROOM-32` вони вільні. | `prochid-07-gpio` | 1 рядків |
-| T-07-078: [[S3]] Це найпоширеніша причина «купив S3 із 16 | `prochid-07-gpio` | 1 рядків |
-| T-07-080: Перед проєктуванням плати на S3 варто точно знати, | `prochid-07-gpio` | 1 рядків |
-| T-07-087: У пізніших сімействах (S3, C3) тільки-вхідних пінів немає | `prochid-07-gpio` | 1 рядків |
-| T-07-101: Більше ніде в лінійці DAC немає (розділи 04 | `prochid-07-gpio` | 1 рядків |
-| T-07-104: Для всіх трьох матриця GPIO не діє: це | `prochid-07-gpio` | 1 рядків |
-| T-07-121: **Чип із більшою кількістю пінів** — S3 має | `prochid-07-gpio` | 1 рядків |
-| T-08-004: Це те, що ставлять на власну плату у | `prochid-08-platy` | 1 рядків |
 | T-08-024: **Міст USB-UART.** Створює порт у системі. | `prochid-08-platy` | 1 рядків |
 | T-09-007: Тому між ними ставлять **міст USB-UART**: окремий чип, | `prochid-09-pidklyuchennya` | 1 рядків |
 | T-09-037: **Linux у більшості випадків не потребує нічого.** Драйвери | `prochid-09-pidklyuchennya` | 1 рядків |
@@ -461,123 +692,11 @@
 | T-09-077: Порт відкриває **лише один процес одночасно**. | `prochid-09-pidklyuchennya` | 1 рядків |
 | T-09-087: Кабель, роз'єм або живлення плати. | `prochid-09-pidklyuchennya` | 3 рядків |
 | T-09-010: Звідси випливає головне: **порт у системі створює міст, | `prochid-09-pidklyuchennya` | 1 рядків |
-| T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.** | `prochid-11-idf` | 1 рядків |
-| T-11-023: Ця команда додає інструменти в `PATH` і ставить | `prochid-11-idf` | 3 рядків |
-| T-12-005: насправді відбувається таке: ESP-IDF стартує звичайним чином, створює | `prochid-12-arduino` | 3 рядків |
-| T-12-059: | Прототип уже є, треба довести до виробу | `prochid-12-arduino` | 1 рядків |
-| T-12-064: Прототип на Arduino доводиться до виробу підключенням Arduino | `prochid-12-arduino` | 1 рядків |
-| T-13-024: Запис `espressif32 @ 6.5.0` збереться — і дасть | `prochid-13-pio` | 1 рядків |
-| T-13-025: `pioarduino` розповсюджується не через реєстр PlatformIO, а архівом | `prochid-13-pio` | 1 рядків |
-| T-13-006: Форк називається **pioarduino** і супроводжується спільнотою. | `prochid-13-pio` | 1 рядків |
-| T-13-014: **Версії фіксуються в проєкті.** Це головне. | `prochid-13-pio` | 4 рядків |
-| T-13-020: Весь проєкт описується одним файлом: | `prochid-13-pio` | 4 рядків |
-| T-13-002: Для ESP32 воно дає те, чого не дає | `prochid-13-pio` | 1 рядків |
-| T-13-004: Підтримка ESP32 у PlatformIO забезпечується платформою `platform-espressif32`. | `prochid-13-pio` | 1 рядків |
-| T-13-005: Офіційна платформа від PlatformIO **відстала** від Arduino core: | `prochid-13-pio` | 1 рядків |
-| T-13-007: Він підтримує актуальні версії Arduino core і нові | `prochid-13-pio` | 1 рядків |
-| T-13-015: `platformio.ini` лежить у git і повністю описує, чим | `prochid-13-pio` | 3 рядків |
-| T-13-029: **`platform`.** Тут — джерело платформи, а не лише | `prochid-13-pio` | 1 рядків |
-| T-13-032: Для `pioarduino` пінування — це заміна мітки `stable` | `prochid-13-pio` | 1 рядків |
-| T-13-048: Для S3 це не косметика — офіційна платформа | `prochid-13-pio` | 1 рядків |
-| T-14-071: **Розвідка заліза** — MicroPython у консолі: чи відповідає | `prochid-14-shvydki-shlyakhy` | 3 рядків |
-| T-16-056: Якщо є лише `factory` — беруть його. | `prochid-16-boot` | 1 рядків |
-| T-17-051: Файл, менший за очікуваний, — це обірваний дамп, | `prochid-17-esptool` | 1 рядків |
-| T-17-064: Воно **вже ввімкнене** за замовчуванням, тож у звичайній | `prochid-17-esptool` | 1 рядків |
-| T-17-066: Користь від стиснення там подвійна: менше байтів пройшло | `prochid-17-esptool` | 1 рядків |
-| T-17-071: Швидкість тут не той параметр, на якому варто | `prochid-17-esptool` | 1 рядків |
-| T-17-074: Адреси залежать від сімейства чипа — таблиця в | `prochid-17-esptool` | 1 рядків |
-| T-17-149: There was no response.`** | `prochid-17-esptool` | 1 рядків |
-| T-18-038: У проєкті ESP-IDF розбивка задається текстовим файлом: | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-080: У складі ESP-IDF · SPIFFS → так | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-088: Після цього розділ у меню з'являється, а тип | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-103: **Взяти готову розбивку з більшим розділом застосунку** для | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-106: Якщо нова прошивка розрахована на іншу розбивку, вона | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-107: Практично це означає: **розбивку треба обирати з запасом | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-108: Змінити її потім можна лише з фізичним доступом | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-109: Другий наслідок того самого: якщо ви змінили розбивку, | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-003: Це та частина системи, яку більшість не чіпає | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-009: Типова розбивка для пристрою без OTA виглядає так: | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-010: | Назва | Тип | Підтип | Зсув | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-015: `phy_init` · Тип → data | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-016: `phy_init` · Підтип → phy | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-019: `factory` · Тип → app | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-020: `factory` · Підтип → factory | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-18-028: **`phy_init`** зберігає калібрувальні дані радіо. | `prochid-18-rozdily-fleshu` | 1 рядків |
-| T-19-023: Схема з двох слотів без `factory` — робоча | `prochid-19-ota` | 1 рядків |
-| T-19-013: Пристрій виконується зі слоту `ota_0`. | `prochid-19-ota` | 1 рядків |
-| T-19-014: Приходить оновлення — воно записується в `ota_1`, при | `prochid-19-ota` | 1 рядків |
-| T-22-057: Лог зберігається у файл, а не читається з | `prochid-22-zberezhennya-stanu` | 1 рядків |
-| T-23-075: Ніякого струму, ніякого ризику. | `prochid-23-triazh` | 1 рядків |
-| T-23-100: Напис на модулі звіряється з шапкою `esptool`. | `prochid-23-triazh` | 1 рядків |
-| T-24-012: Таблиця відповідає на кілька питань одразу. | `prochid-24-chuzha-proshyvka` | 1 рядків |
-| T-24-035: Витягти розділ (адреса і розмір — з таблиці | `prochid-24-chuzha-proshyvka` | 1 рядків |
-| T-24-057: Цього достатньо, щоб написати власну прошивку, яка робить | `prochid-24-chuzha-proshyvka` | 1 рядків |
-| T-24-068: Якщо ввімкнено — дамп зашифрований ключем, що не | `prochid-24-chuzha-proshyvka` | 1 рядків |
-| T-24-015: **Чи є файлова система.** Розділ типу `spiffs`, `littlefs` | `prochid-24-chuzha-proshyvka` | 1 рядків |
-| T-25-051: Один тег на файл або на логічний модуль; | `prochid-25-log` | 1 рядків |
-| T-27-002: Відлагоджувач показує все: поточне значення будь-якої змінної, вміст | `prochid-27-jtag` | 1 рядків |
-| T-27-044: Коли справді варте: складна помилка з пошкодженням пам'яті, | `prochid-27-jtag` | 1 рядків |
-| T-27-020: Якщо в проєкті ці піни переналаштовані під щось | `prochid-27-jtag` | 1 рядків |
-| T-30-073: Функція, яка може спрацювати в цей момент — | `prochid-30-struktura` | 1 рядків |
-| T-30-023: Розмір стека задається при створенні задачі — числом, | `prochid-30-struktura` | 1 рядків |
-| T-30-026: Переповнення стека на мікроконтролері не дає ні винятку, | `prochid-30-struktura` | 1 рядків |
-| T-30-027: Задача просто пише за межі свого стека — | `prochid-30-struktura` | 1 рядків |
-| T-30-030: Що з'їдає стек несподівано багато: | `prochid-30-struktura` | 1 рядків |
-| T-30-076: IRAM небагато, і кожна така функція займає її | `prochid-30-struktura` | 1 рядків |
-| T-30-085: **32-бітне читання й запис вирівняного слова атомарні** апаратно. | `prochid-30-struktura` | 1 рядків |
-| T-30-087: Складніші структури — ні. | `prochid-30-struktura` | 1 рядків |
-| T-30-004: `app_main` викликається як звичайна задача FreeRTOS. | `prochid-30-struktura` | 1 рядків |
-| T-30-006: **`app_main` може завершитися.** І це нормально: система продовжує | `prochid-30-struktura` | 1 рядків |
-| T-30-007: Задача `app_main` просто зникає, звільняючи свій стек. | `prochid-30-struktura` | 1 рядків |
-| T-30-016: **Статична.** Глобальні змінні й `static`. | `prochid-30-struktura` | 1 рядків |
-| T-30-021: **Купа.** `malloc` і `new`. | `prochid-30-struktura` | 1 рядків |
-| T-30-032: **Великі буфери — не на стек.** `static` або | `prochid-30-struktura` | 1 рядків |
-| T-30-041: Купа на ESP32 не однорідна (розділ 03), і | `prochid-30-struktura` | 1 рядків |
-| T-30-047: **Не та область.** Буфер для DMA має бути | `prochid-30-struktura` | 1 рядків |
-| T-30-067: Коли вільно 40 КБ, а найбільший блок — | `prochid-30-struktura` | 1 рядків |
-| T-30-086: Тому проста передача одного значення (прапорець, ціле число) | `prochid-30-struktura` | 1 рядків |
-| T-30-101: Результат `malloc` перевіряти завжди. | `prochid-30-struktura` | 1 рядків |
-| T-30-102: `volatile` не робить операцію атомарною. | `prochid-30-struktura` | 1 рядків |
-| T-31-020: Планувальник завжди виконує **найпріоритетнішу готову** задачу. | `prochid-31-freertos` | 1 рядків |
-| T-31-002: Це не бібліотека, яку треба підключати, — це | `prochid-31-freertos` | 1 рядків |
-| T-31-027: Це не помилка планувальника, а його правило. | `prochid-31-freertos` | 1 рядків |
-| T-31-029: Високий пріоритет означає «швидко відреагувати й заснути», а | `prochid-31-freertos` | 1 рядків |
-| T-31-059: Зручно для «дочекатися, поки є і Wi-Fi, і | `prochid-31-freertos` | 1 рядків |
-| T-31-031: Прив'язати задачу до ядра явно: | `prochid-31-freertos` | 1 рядків |
-| T-31-034: Коли це має сенс: щось із жорсткими таймінгами | `prochid-31-freertos` | 1 рядків |
-| T-31-035: Щось важке й тривале — теж на ядро | `prochid-31-freertos` | 1 рядків |
-| T-31-036: Двоядерність робить помилки синхронізації **реальними, а не теоретичними**. | `prochid-31-freertos` | 1 рядків |
-| T-31-055: **Двійковий семафор** — сигнал «сталося». | `prochid-31-freertos` | 1 рядків |
-| T-31-057: **Лічильний семафор** — облік обмеженого ресурсу. | `prochid-31-freertos` | 1 рядків |
-| T-31-058: **Група подій** — набір прапорців, на комбінацію яких | `prochid-31-freertos` | 1 рядків |
 | T-31-063: **ISR має бути коротким.** Прочитати, покласти в чергу, | `prochid-31-freertos` | 1 рядків |
 | T-31-070: Це інструмент для відлагодження, а не для роботи. | `prochid-31-freertos` | 1 рядків |
 | T-31-071: Але коли ISR поводиться незрозуміло, а покласти в | `prochid-31-freertos` | 1 рядків |
-| T-31-079: Механічний контакт при натисканні дає десятки перемикань за | `prochid-31-freertos` | 1 рядків |
-| T-31-085: Усі програмні таймери виконуються в **одній** службовій задачі. | `prochid-31-freertos` | 1 рядків |
-| T-31-090: **Спільна змінна без захисту.** На двох ядрах ламається | `prochid-31-freertos` | 1 рядків |
-| T-31-095: Високий пріоритет означає «швидко відреагувати й заснути». | `prochid-31-freertos` | 1 рядків |
 | T-31-098: Ніякого логування й пам'яті. | `prochid-31-freertos` | 1 рядків |
 | T-31-006: ESP_LOGI(TAG, "температура %.1f", t); | `prochid-31-freertos` | 1 рядків |
-| T-33-012: `1ULL` обов'язково: на пінах вище 31 звичайний `1` | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-023: gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5); | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-029: Для більшості періодичних задач цього досить: | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-034: Це основний спосіб міряти час: переповнення не станеться | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-049: Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення. | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-051: Плавне згасання, зроблене лінійно, виглядає як різкий стрибок | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-058: Спільна земля обов'язкова (розділ 48). | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-060: - **мертвий час** між верхнім і нижнім плечем | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-075: Це правильний спосіб читати ІЧ-пульти й датчики з | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-077: Енкодер, витратомір, лічильник обертів — усе це не | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-079: PCNT уміє й апаратний фільтр коротких сплесків — | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-091: Пам'ятайте: вхід не толерантний до перевищення — понад | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-103: Найдешевше і найдієвіше. 2. | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-113: Піни **різні** за сімействами: | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-124: Яскравість світлодіода нелінійна щодо коефіцієнта заповнення. | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-127: PCNT рахує імпульси без переривань і має апаратний | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-059: [[classic]] [[S3]] MCPWM зроблений для силової електроніки й | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-062: RMT задумувався для інфрачервоних пультів, а виявився універсальним | `prochid-33-peryferiya-kod` | 1 рядків |
-| T-33-074: RMT уміє й приймати — вимірювати тривалість вхідних | `prochid-33-peryferiya-kod` | 1 рядків |
 | T-34-044: На коротких лініях працює і без них; на | `prochid-34-uart` | 1 рядків |
 | T-34-045: Багато модулів мають термінатор на платі, іноді припаяний | `prochid-34-uart` | 1 рядків |
 | T-34-048: Якщо обмін не йде — поміняти місцями. | `prochid-34-uart` | 1 рядків |
@@ -588,7 +707,6 @@
 | T-34-020: **Розмір буфера драйвера має значення.** Дані приходять, поки | `prochid-34-uart` | 1 рядків |
 | T-34-030: Звичайний UART працює на десятки сантиметрів. | `prochid-34-uart` | 1 рядків |
 | T-34-041: Перемкнути напрямок відразу після нього означає обрізати власну | `prochid-34-uart` | 1 рядків |
-| T-34-055: ESP-IDF має штатний компонент `esp-modbus` для обох ролей: | `prochid-34-uart` | 1 рядків |
 | T-34-070: Буфер драйвера робити з запасом: переповнення губить дані | `prochid-34-uart` | 1 рядків |
 | T-34-036: Напрямком керує окремий пін `DE`/`RE`: | `prochid-34-uart` | 1 рядків |
 | T-35-038: Це замінює логічний аналізатор для питання «чи є | `prochid-35-i2c` | 1 рядків |
@@ -605,84 +723,9 @@
 | T-35-075: Усе вище — про ESP32 у ролі **ведучого**, | `prochid-35-i2c` | 1 рядків |
 | T-35-079: Якщо роль веденого потрібна, а встигати не гарантовано | `prochid-35-i2c` | 1 рядків |
 | T-35-087: **Аналізатор** — `ACK` чи `NACK` (розділ 28). | `prochid-35-i2c` | 1 рядків |
-| T-39-035: Її ще немає: під'єднання займає від сотень мілісекунд | `prochid-39-wifi` | 1 рядків |
-| T-39-037: Саме наявність IP, а не факт під'єднання, означає, | `prochid-39-wifi` | 1 рядків |
-| T-39-018: **Канали 12 і 13** доступні не за всіх | `prochid-39-wifi` | 1 рядків |
-| T-39-021: Роутер, переведений у режим «тільки WPA3», відрізає такі | `prochid-39-wifi` | 1 рядків |
-| T-39-044: Пристрій гріється, з'їдає батарею і не робить нічого | `prochid-39-wifi` | 5 рядків |
-| T-39-033: Робота йде **через події**: під'єднання асинхронне, і код | `prochid-39-wifi` | 1 рядків |
-| T-39-047: ESP_LOGW(TAG, "зв'язок втрачено, спроба через %d мс", pauza); | `prochid-39-wifi` | 1 рядків |
-| T-39-054: Правильно — зберігати в NVS (розділ 18), а | `prochid-39-wifi` | 1 рядків |
-| T-39-064: ESP_LOGI(TAG, "RSSI %d дБм, канал %d", ap.rssi, ap.primary); | `prochid-39-wifi` | 1 рядків |
-| T-39-087: **Modem sleep** — радіо вимикається між маячками, з'єднання | `prochid-39-wifi` | 1 рядків |
-| T-39-088: Вмикається за замовчуванням і майже безкоштовне. | `prochid-39-wifi` | 1 рядків |
-| T-39-001: Wi-Fi — головна причина, чому беруть ESP32 (розділ | `prochid-39-wifi` | 1 рядків |
-| T-39-019: Якщо роутер працює на 13-му, ESP32 із неправильно | `prochid-39-wifi` | 2 рядків |
-| T-39-066: | від −50 дБм | відмінно | | `prochid-39-wifi` | 1 рядків |
-| T-39-091: **Не під'єднуватися взагалі.** Для датчика на батарейці ESP-NOW | `prochid-39-wifi` | 1 рядків |
-| T-39-098: RSSI логувати завжди: на межі OTA не проходить, | `prochid-39-wifi` | 1 рядків |
-| T-46-043: Це незручно і ламається при оновленні бібліотеки; варто | `prochid-46-dyspleyi` | 1 рядків |
-| T-46-046: LVGL дає красиві інтерфейси і коштує ресурсів. | `prochid-46-dyspleyi` | 1 рядків |
-| T-46-038: **U8g2** — монохромні дисплеї. | `prochid-46-dyspleyi` | 1 рядків |
-| T-46-042: Особливість, що дивує: конфігурація (модель дисплея, піни) задається | `prochid-46-dyspleyi` | 1 рядків |
-| T-46-055: **Кодування.** Рядки в коді — UTF-8; бібліотека має | `prochid-46-dyspleyi` | 1 рядків |
-| T-46-068: Правильний спосіб читання — **PCNT** (розділ 33): апаратний | `prochid-46-dyspleyi` | 1 рядків |
-| T-59-079: Різниця виникає лише тоді, коли в старшому байті | `prochid-59-proj-monitor` | 6 рядків |
-| T-A-010: 1 · Обмеження → UART0 TX | `prochid-a-pinouty` | 1 рядків |
-| T-A-011: 1 · Примітка → консоль | `prochid-a-pinouty` | 1 рядків |
-| T-A-016: 3 · Обмеження → UART0 RX | `prochid-a-pinouty` | 1 рядків |
-| T-A-017: 3 · Примітка → консоль | `prochid-a-pinouty` | 1 рядків |
-| T-A-099: UART0 TX / RX · [[classic]] → 1 | `prochid-a-pinouty` | 2 рядків |
-| T-A-009: 0 · Примітка → `BOOT`; низький = download | `prochid-a-pinouty` | 1 рядків |
-| T-A-045: 25 · Обмеження → **DAC1** | `prochid-a-pinouty` | 1 рядків |
-| T-A-046: 25 · ADC → ADC2_8 | `prochid-a-pinouty` | 1 рядків |
-| T-A-047: 26 · Обмеження → **DAC2** | `prochid-a-pinouty` | 1 рядків |
-| T-A-049: 27 · ADC → ADC2_7 | `prochid-a-pinouty` | 1 рядків |
-| T-A-088: 5 · Обмеження → ADC2 | `prochid-a-pinouty` | 1 рядків |
 | T-C-075: `-i` обов'язковий: без нього inline-кадри зникають. | `prochid-c-komandy` | 1 рядків |
 | T-C-092: `/dev/ttyUSB*` — зовнішній міст. | `prochid-c-komandy` | 1 рядків |
-| T-E-125: WS2812 / SK6812 · Як → **RMT**, не | `prochid-e-interfeysy` | 1 рядків |
-| T-G-036: | стабілізатор | voltage regulator | | `prochid-g-glosariy` | 1 рядків |
-| T-G-085: | відтворюване збирання | reproducible build | | `prochid-g-glosariy` | 1 рядків |
-| T-G-055: | образ | image, binary | | `prochid-g-glosariy` | 1 рядків |
-| T-G-063: | семафор | semaphore | | `prochid-g-glosariy` | 1 рядків |
-| T-G-064: | м'ютекс | mutex | | `prochid-g-glosariy` | 1 рядків |
-| T-G-065: | група подій | event group | | `prochid-g-glosariy` | 1 рядків |
-| T-G-066: | переривання | interrupt | | `prochid-g-glosariy` | 1 рядків |
-| T-G-068: | критична секція | critical section | | `prochid-g-glosariy` | 1 рядків |
-| T-G-074: | атомарна операція | atomic operation | | `prochid-g-glosariy` | 1 рядків |
-| T-G-076: | взаємне блокування | deadlock | | `prochid-g-glosariy` | 1 рядків |
-| T-G-077: | зворотний виклик | callback | | `prochid-g-glosariy` | 1 рядків |
-| T-G-088: | точка доступу | access point | | `prochid-g-glosariy` | 1 рядків |
-| T-G-089: | станція, клієнт | station | | `prochid-g-glosariy` | 1 рядків |
-| T-G-090: | канал | channel | | `prochid-g-glosariy` | 1 рядків |
-| T-G-091: | рівень сигналу | RSSI, signal strength | | `prochid-g-glosariy` | 1 рядків |
-| T-G-094: | дальність | range | | `prochid-g-glosariy` | 1 рядків |
-| T-G-095: | маячок | beacon | | `prochid-g-glosariy` | 1 рядків |
-| T-G-098: | топік | topic | | `prochid-g-glosariy` | 1 рядків |
-| T-G-099: | підписка | subscription | | `prochid-g-glosariy` | 1 рядків |
-| T-G-100: | публікація | publish | | `prochid-g-glosariy` | 1 рядків |
-| T-G-101: | сертифікат | certificate | | `prochid-g-glosariy` | 1 рядків |
-| T-G-102: | центр сертифікації | certificate authority, CA | | `prochid-g-glosariy` | 1 рядків |
-| T-G-103: | рукостискання | handshake | | `prochid-g-glosariy` | 1 рядків |
-| T-G-104: | широкомовна розсилка | broadcast | | `prochid-g-glosariy` | 1 рядків |
-| T-G-108: | напруга | voltage | | `prochid-g-glosariy` | 1 рядків |
-| T-G-109: | струм | current | | `prochid-g-glosariy` | 1 рядків |
-| T-G-111: | потужність | power | | `prochid-g-glosariy` | 1 рядків |
-| T-G-116: | коефіцієнт заповнення | duty cycle | | `prochid-g-glosariy` | 1 рядків |
-| T-G-117: | роздільність | resolution | | `prochid-g-glosariy` | 1 рядків |
-| T-G-118: | точність | accuracy | | `prochid-g-glosariy` | 1 рядків |
-| T-G-119: | калібрування | calibration | | `prochid-g-glosariy` | 1 рядків |
-| T-G-120: | усереднення | averaging | | `prochid-g-glosariy` | 1 рядків |
-| T-G-121: | шум | noise | | `prochid-g-glosariy` | 1 рядків |
-| T-G-142: | RTOS | Real-Time Operating System | | `prochid-g-glosariy` | 1 рядків |
 | T-G-150: | UART | Universal Asynchronous Receiver/Transmitter | | `prochid-g-glosariy` | 1 рядків |
-| T-G-163: | WDT | Watchdog Timer | | `prochid-g-glosariy` | 1 рядків |
-| T-G-146: | OTA | Over-The-Air (оновлення) | | `prochid-g-glosariy` | 1 рядків |
-| T-G-153: | I²S | Inter-IC Sound | | `prochid-g-glosariy` | 1 рядків |
-| T-G-155: | JTAG | Joint Test Action Group (інтерфейс | `prochid-g-glosariy` | 1 рядків |
-| T-G-162: | ULP | Ultra-Low-Power (співпроцесор) | | `prochid-g-glosariy` | 1 рядків |
-| T-H-017: **`github.com/espressif/esp-idf`** — сам фреймворк. | `prochid-h-dzherela` | 1 рядків |
 | T-K03-018: Windows: `Диспетчер пристроїв` → жовтий знак оклику означає | `prochid-k03-pidkl` | 1 рядків |
 | T-K03-020: Порт `/dev/ttyUSB0` є, але програма пише «Permission denied» | `prochid-k03-pidkl` | 1 рядків |
 | T-K03-027: Порт зайнятий іншою програмою: відкритий монітор, Arduino IDE, | `prochid-k03-pidkl` | 1 рядків |
@@ -697,52 +740,9 @@
 | T-K08-021: 6 · Що робити → перший дамп після | `prochid-k08-symptomy` | 1 рядків |
 | T-K08-026: 8 · Найчастіша причина → немає підтягування або | `prochid-k08-symptomy` | 1 рядків |
 | T-K08-008: 2 · Найчастіша причина → плата не в | `prochid-k08-symptomy` | 1 рядків |
-| T-K08-011: 3 · Найчастіша причина → адреса бутлоадера не | `prochid-k08-symptomy` | 1 рядків |
 | T-K08-019: 6 · Симптом → Boot loop | `prochid-k08-symptomy` | 1 рядків |
 | T-K08-020: 6 · Найчастіша причина → паніка в застосунку | `prochid-k08-symptomy` | 1 рядків |
-| T-K08-035: 11 · Найчастіша причина → вони зайняті флешем | `prochid-k08-symptomy` | 6 рядків |
-| T-K09-004: | **6, 7, 8, 9, 10, 11** | | `prochid-k09-pinouty` | 6 рядків |
-| T-K11-008: **Не вмикати Flash Encryption і Secure Boot «щоб | `prochid-k11-nikoly` | 1 рядків |
-| T-Z-010: паспорт виробу — 224, 310–311, 313, 398 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-011: серво — 32, 54, 203–204, 207, 274–277, 369, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-012: серійна прошивка — 4, 143, 145, 398 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-013: таблиця розділів — 15, 18, 129, 133, 135, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-038: DMA — 50, 52, 55–56, 188, 220, 222, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-055: esp_deep_sleep_start — 68, 100, 338, 340, 344 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-056: ESP_ERR_INVALID_ARG — 207, 326 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-062: esp_err_t — 131, 136, 164, 197–198, 327, 329–331, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-108: FreeRTOS — 4–5, 40–41, 46, 94, 100, 103, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-109: GPIO12 — 14, 17, 28, 71–72, 74, 77, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-110: GPIO15 — 14, 17–18, 28, 71, 142, 173, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-111: GPIO17 — 67, 73–75, 206, 335 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-112: GPIO18 — 75, 172, 206, 335 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-113: GPIO2 — 13–14, 17, 28, 71–72, 142, 335–337, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-114: GPIO21 — 149, 310, 326, 335 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-115: GPIO22 — 149, 310, 326, 335 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-116: GPIO25 — 75, 206–207, 310, 349–350 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-117: GPIO26 — 74–75, 206–207, 349–350 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-118: GPIO3 — 14, 72, 75, 335, 337 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-119: GPIO32 — 53, 74–75, 182, 389 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-120: GPIO34 — 53, 62, 74, 77, 182, 335, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-121: GPIO4 — 9, 17, 149, 310, 335, 349, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-123: GPIO6 — 21, 27, 53, 73, 76, 154, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-124: GPIO8 — 13–14, 24, 72–73, 118, 205, 326, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-125: GPIO9 — 13–14, 17, 24, 72–73, 82, 118, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-128: gpio_isr_handler — 50, 189 | `prochid-z-pokazhchyk` | 1 рядків |
 | T-Z-143: i2c_new_master_bus — 215, 326, 332 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-149: MALLOC_CAP_DMA — 188, 220, 222, 281, 368 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-151: MALLOC_CAP_SPIRAM — 153, 188–189 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-154: merge-bin — 15, 25–26, 35, 125–126, 128, 137, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-024: bootloader — 5, 15, 18, 26, 98, 117–120, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-044: ESP-NOW — 69, 231, 233, 236, 240, 246–249, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-048: ESP32-S2 — 45–46, 118, 242 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-049: ESP32-S3 — 7, 23, 39, 44, 118, 127, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-054: ESP8266 — 7, 18, 21, 80, 123, 152, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-144: I²S — 40, 53–56, 280–281, 388, 399 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-153: MCP23017 — 57, 76, 365, 386 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-156: Modbus — 156, 209, 211, 356, 358, 360 | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-173: SR04 — 27, 34, 61, 258, 262, 264, | `prochid-z-pokazhchyk` | 1 рядків |
-| T-Z-194: WS2812 — 54–55, 200, 204, 207, 388 | `prochid-z-pokazhchyk` | 1 рядків |
 
 ## нема чого звіряти — 657
 
