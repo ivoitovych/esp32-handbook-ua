@@ -250,6 +250,7 @@ self-checks:
 	@$(PY) tools/schema.py --samoperevirka
 	@$(PY) tools/leak.py --samoperevirka
 	@$(PY) tools/task_spec.py --samoperevirka
+	@$(PY) tools/maintenance.py --samoperevirka
 
 # Кожна точка входу технології, а не лише ті, що у воротах.
 #
