@@ -32,6 +32,15 @@
 примірник розійшовся б із першим.
 
     tools/intake_f.py <тека прогону>
+    tools/intake_f.py --self-check      import-and-run smoke test
+
+`--self-check` exists because this tool sat broken for an hour: a merge
+renamed `citaty` to `layer3`, the import at the top of `dokument()` was
+never reached during a dry read, and nothing failed until a real run.
+The tool had no `make` target, so nothing ran it.
+
+> A tool outside the check suite is a tool whose breakage is discovered
+> by the next person who needs it, at the moment they need it.
 """
 from __future__ import annotations
 
@@ -111,20 +120,54 @@ def dodaty_v_manifest(imya: str, sha: str, rozmir: int, url: str) -> None:
 
 def dokument(url: str, kachaty: bool) -> str | None:
     """Текст документа за URL. Качає, якщо його ще немає в кеші."""
-    import citaty
+    import layer3
     import intake_wave3
     cil = KESH / imya_dlya(url)
     if not cil.exists():
-        if not kachaty or not citaty.zavantazhyty(url, cil):
+        if not kachaty or not layer3.zavantazhyty(url, cil):
             return None
         syri = cil.read_bytes()
         dodaty_v_manifest(cil.name, hashlib.sha256(syri).hexdigest(),
                           len(syri), url)
-    t = citaty.tekst_dzherela(cil)
+    t = layer3.tekst_dzherela(cil)
     return intake_wave3.normal(t) if t else None
 
 
+def self_check() -> int:
+    """Прогін на порожньому входу: імпорти, шляхи, кеш."""
+    import tempfile
+    import json as _json
+    bidy = []
+    try:
+        import layer3, intake_wave3  # noqa: F401
+    except Exception as e:
+        bidy.append("import: %s" % str(e)[:70])
+    if not KESH.exists():
+        bidy.append("кеш джерел не там: %s" % KESH)
+    if not (KESH / "MANIFEST.md").exists():
+        bidy.append("маніфесту немає в %s" % KESH)
+    try:
+        with tempfile.TemporaryDirectory() as d:
+            t = pathlib.Path(d)
+            (t / "vybirka.json").write_text(
+                _json.dumps({"vzyato": [], "queue": "F"}), encoding="utf-8")
+            import subprocess
+            r = subprocess.run([sys.executable, __file__, str(t)],
+                               capture_output=True, text=True, timeout=120)
+            if "вибірка 0" not in r.stdout:
+                bidy.append("порожній прогін не пройшов: %s"
+                            % (r.stderr or r.stdout)[-90:])
+    except Exception as e:
+        bidy.append("порожній прогін: %s" % str(e)[:70])
+    for b in bidy:
+        print("   ✗ " + b)
+    print("intake_f self-check: %d проблем" % len(bidy))
+    return 1 if bidy else 0
+
+
 def main() -> int:
+    if "--self-check" in sys.argv:
+        return self_check()
     import intake_wave3
 
     p = argparse.ArgumentParser()
