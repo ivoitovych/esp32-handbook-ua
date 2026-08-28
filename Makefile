@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help setup all intake dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
+.PHONY: help setup all intake docs dovidnyk kartky proekty linkcheck cross-refs pins refuted struct-fields correspondence split-queue cache layer3 modality calques spelling budgets arithmetic stale schema self-checks reproducible cache-vs-book layer1 coverage check release release-check entry-points \
         check-attribution preview clean
 
 PY := python3
@@ -104,6 +104,15 @@ reproducible:
 cache-vs-book:
 	@$(PY) tools/cache_vs_book.py --tykho
 
+# Узгодженість керівних документів (М2). Не проза — лише факти, що
+# мають одну правильну відповідь: словник класів проти коду, названі
+# інструменти, посилання на роди хиб, вердикти наряду проти воріт.
+#
+# Заведено після того, як словник класів розійшовся в ТРЬОХ документах
+# і це знайшлося читанням. Читання не масштабується й не працює в CI.
+docs:
+	@$(PY) tools/docs.py
+
 # Ворота прийому (М2): чи придатний запис доказу до того, як стане
 # частиною реєстру. Компіляція взірця, теча, клас без цитати, книга як
 # власне джерело.
@@ -207,7 +216,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: self-checks intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage check-attribution
+check: self-checks docs intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage check-attribution
 
 arithmetic:
 	@python3 tools/arithmetic.py

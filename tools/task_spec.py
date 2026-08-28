@@ -53,18 +53,39 @@ def bloky(tekst: str | None = None) -> dict[str, str]:
     return {m.group(1): m.group(2).strip("\n") for m in RE_BLOK.finditer(t)}
 
 
-def versiya(imena: list[str] | None = None, tekst: str | None = None) -> str:
-    """Version of exactly the blocks used — see the module docstring."""
+def versiya(imena: list[str] | None = None, tekst: str | None = None,
+            shablon: str = "") -> str:
+    """Version of everything the helper SEES, not of what is easy to hash.
+
+    Knowledge from M2, 2026-08-28: their version hashed the header
+    template alone, so an order with the surrounding book text and one
+    without it got the **same** number — two different technologies
+    under one label, and the difference between them recorded as noise.
+
+    The same hole was here, mirrored. This hashed the blocks alone, so
+    two orders built from identical blocks but different frames — a
+    sweep and a leads batch — were indistinguishable by version.
+
+    > A fingerprint narrower than its subject is worse than none. It
+    > looks like control.
+
+    So the frame **template** goes into the hash as well. The template,
+    not the substituted text: counts and seeds change every run and
+    would make every order its own version, which is the same failure
+    from the other side.
+    """
     b = bloky(tekst)
     klyuchi = list(b) if imena is None else list(imena)
     h = hashlib.sha256()
+    h.update(shablon.encode())
     for k in klyuchi:
         h.update(k.encode())
         h.update(b.get(k, "").encode())
     return h.hexdigest()[:8]
 
 
-def sklasty(imena: list[str], zaholovok: str = "", vstup: str = "") -> str:
+def sklasty(imena: list[str], zaholovok: str = "", vstup: str = "",
+            shablon: str = "") -> str:
     """Compose a work-order header from named blocks.
 
     An unknown block name is an error, not an omission: a generator that
@@ -82,7 +103,7 @@ def sklasty(imena: list[str], zaholovok: str = "", vstup: str = "") -> str:
         ch.append(vstup.strip("\n"))
     for i in imena:
         ch.append(b[i])
-    ch.append(f"---\n\n*Task spec `{versiya(imena)}` · blocks: "
+    ch.append(f"---\n\n*Task spec `{versiya(imena, shablon=shablon)}` · blocks: "
               f"{', '.join(imena)}. Quote this version when reporting "
               f"results from this wave.*")
     return "\n\n".join(ch) + "\n"
@@ -126,6 +147,19 @@ def samoperevirka() -> int:
           versiya(["ORIENTATION", "VERBATIM"], zipsovanyy) == v1)
     probа("правка свого блока рухає версію наряду",
           versiya(["STUB"], zipsovanyy) != versiya(["STUB"]))
+
+    # Діра, яку знайшов М2 на своєму боці й яка була тут дзеркально:
+    # відбиток мусить покривати ВСЕ, що виконавець бачить, а не лише
+    # те, що зручно хешувати. Два наряди з тих самих блоків, але з
+    # різними рамками, мали однакову версію.
+    probа("різна рамка — різна версія",
+          versiya(["VERBATIM"], shablon="# Наряд А")
+          != versiya(["VERBATIM"], shablon="# Наряд Б"))
+    # І зворотне: підстановка чисел у рамку версії НЕ рухає, інакше
+    # кожен прогін був би власною версією — та сама вада з іншого боку.
+    probа("та сама рамка — та сама версія",
+          versiya(["VERBATIM"], shablon="# Наряд {n}")
+          == versiya(["VERBATIM"], shablon="# Наряд {n}"))
 
     print("самоперевірка: усе як очікувано" if not pomylok
           else f"самоперевірка: РОЗБІЖНОСТЕЙ {pomylok}")

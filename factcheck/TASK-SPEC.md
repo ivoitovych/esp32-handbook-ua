@@ -74,7 +74,7 @@ a table, nor two sentences joined across an ellipsis.
 
 **Knowing the answer is not grounds for writing a quote.** If the fact is
 familiar but you cannot see the line in the document, that is
-`not-found`.
+`not_found`.
 
 ## [NETWORK] What is reachable from here
 
@@ -102,10 +102,10 @@ there is a class for it, and it is not a failure.
 
 | Verdict | When |
 |---|---|
-| `found` | address plus a **verbatim** quote from the document |
-| `not-found` | the document exists, the passage is not in it — say what you read |
+| `confirmed` | address plus a **verbatim** quote from the document |
+| `not_found` | the document exists, the passage is not in it — say what you read |
 | `unreachable` | the document does not come down from here (403, 404, stub) |
-| `lead` | you did not get the document, but can name where it would be |
+| `advice` | you did not get the document, but can name where it would be |
 | `disputes` | the source **contradicts** the handbook — the most valuable answer there is |
 
 ## [VERDICTS-VERDICT-TEST] The verdicts for testing an existing verdict
@@ -117,25 +117,28 @@ that class is right.
 |---|---|
 | `confirmed` | the existing class is correct |
 | `disputes` | the source contradicts the handbook |
-| `truly-none` | there really is no external referent: this is the author's position |
-| `undecided` | you cannot tell, and here is why |
+| `truly_none` | there really is no external referent: this is the author's position |
+| `not_found` | you could not tell — say what you read |
 
 ## [ABSENCE] Proving something by what a document does not say
 
 Sometimes the proof is a silence: `SOC_BT_SUPPORTED` does not appear in
 `esp32s2/soc_caps.h`, and that is what shows the S2 has no Bluetooth.
 
-This is a real answer with its own verdict, `absent-from-source`. It
+This is a real answer with its own verdict, `absent_from_source`. It
 needs the document, the exact string that is **missing**, and — where one
 exists — a `control`: a document of the same kind where that string **is**
 present. Silence proves something only where a comparable document
 speaks.
 
+It is **not** `not_found`. `not_found` says you could not establish the
+claim; this says you established it, and the document's silence is how.
+
 ## [FORMAT] How to answer
 
 ```yaml
 - unit: T-42-023
-  verdict: found
+  verdict: confirmed
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/...
   quote: |
     the verbatim line from the document
@@ -145,3 +148,7 @@ speaks.
 One entry per unit. Do not reorder or renumber the units. If you have
 nothing for a unit, still write an entry with the honest verdict — a
 missing entry is indistinguishable from work not done.
+
+**YAML:** if a value contains `: ` or starts with a quote mark, wrap the
+whole value in single quotes. Otherwise the file will not parse and the
+whole batch is lost, not just that entry.

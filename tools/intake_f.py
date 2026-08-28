@@ -56,13 +56,58 @@ KNYHA = re.compile(
 # Що вимагає кожен вердикт. Джерело — таблиця в самому наряді; якщо
 # вона розійдеться з цим словником, розійдуться наряд і ворота, і
 # помічник буде покараний за те, чого йому не казали.
+# Англійські імена — чинні; транслітеровані приймаються, поки живі
+# наряди попередніх версій. Розширити → переїхати → звузити, той самий
+# порядок, що й для полів запису доказу.
 POTREBUYE = {
-    "pidtverdzheno": ("dzherelo", "cytata"),
-    "sperechayetsya": ("dzherelo", "cytata", "susidnye"),
-    "ne_znayshov": ("dzherelo",),
-    "nedosyazhne": ("dzherelo", "potribno"),
-    "porada": ("chomu",),
+    "confirmed": ("source", "quote"),
+    "disputes": ("source", "quote", "neighbours"),
+    "not_found": ("source",),
+    "unreachable": ("source", "needed"),
+    "advice": ("why",),
+    # Додано М1 разом зі спекою завдання. Обидва — не зручність, а
+    # **розрізнення, яке інакше зникає**:
+    #
+    #   truly_none          зовнішнього референта справді немає; це
+    #                       позиція автора. Не те саме, що `advice`
+    #                       («не дістав, але знаю де») і не те саме, що
+    #                       `not_found` («не зміг встановити»)
+    #   absent_from_source  документ отримано, і його МОВЧАННЯ і є
+    #                       доказ (клас `N`). Протилежність
+    #                       `not_found`: там не встановили, тут
+    #                       встановили саме відсутністю
+    #
+    # Звести їх до наявних означало б попросити помічника відповісти
+    # словом, яке каже не те, що він зробив, — і втратити різницю в
+    # обліку назавжди.
+    "truly_none": ("why",),
+    "absent_from_source": ("source", "absent"),
 }
+STARI_VERDYKTY = {
+    "pidtverdzheno": "confirmed", "sperechayetsya": "disputes",
+    "ne_znayshov": "not_found", "nedosyazhne": "unreachable",
+    "porada": "advice",
+    "spravdi-e": "truly_none", "spravdi_e": "truly_none",
+}
+STARI_POLYA = {
+    "odynycya": "unit", "verdykt": "verdict", "dzherelo": "source",
+    "cytata": "quote", "komentar": "comment", "potribno": "needed",
+    "chomu": "why", "susidnye": "neighbours",
+}
+
+
+def na_anhliysku(r: dict) -> dict:
+    """Запис у чинних іменах, звідки б він не прийшов.
+
+    Ворота не мають права карати помічника за те, якою мовою був наряд,
+    що йому дали. Переклад тут — не поблажливість, а межа: після нього
+    решта проходу знає рівно один словник.
+    """
+    out = {STARI_POLYA.get(k, k): v for k, v in r.items()}
+    v = str(out.get("verdict") or "").strip()
+    if v in STARI_VERDYKTY:
+        out["verdict"] = STARI_VERDYKTY[v]
+    return out
 
 
 def imya_dlya(url: str) -> str:
@@ -103,6 +148,10 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("teka", type=pathlib.Path)
     p.add_argument("--bez-merezhi", action="store_true")
+    p.add_argument("--ledger", action="store_true",
+                   help="дописати підсумок прогону у factcheck/RUNS.md")
+    p.add_argument("--model", default="haiku-4.5")
+    p.add_argument("--note", default="")
     a = p.parse_args()
 
     vyb = json.loads((a.teka / "vybirka.json").read_text(encoding="utf-8"))
@@ -122,7 +171,8 @@ def main() -> int:
         for r in z:
             if not isinstance(r, dict):
                 continue
-            ident = str(r.get("odynycya") or r.get("id") or "?").strip()
+            r = na_anhliysku(r)
+            ident = str(r.get("unit") or r.get("id") or "?").strip()
             if ident in vidpovidi:
                 dubli.append(ident)
             vidpovidi[ident] = dict(r, _fayl=f.name)
@@ -134,7 +184,7 @@ def main() -> int:
     bidy: list[tuple[str, str, str]] = []
     dosl = collections.Counter()
     for ident, r in sorted(vidpovidi.items()):
-        v = str(r.get("verdykt") or "").strip()
+        v = str(r.get("verdict") or "").strip()
         rody[v or "(немає вердикту)"] += 1
         if v not in POTREBUYE:
             bidy.append((ident, "ВЕРДИКТ ПОЗА НАРЯДОМ", v[:40]))
@@ -142,15 +192,15 @@ def main() -> int:
         brak = [k for k in POTREBUYE[v] if not str(r.get(k) or "").strip()]
         if brak:
             bidy.append((ident, "БРАКУЄ ПОЛІВ", ",".join(brak)))
-        dzh = str(r.get("dzherelo") or "")
+        dzh = str(r.get("source") or "")
         if dzh and KNYHA.search(dzh):
             bidy.append((ident, "САМОПОСИЛАННЯ НА ДОВІДНИК", dzh[:46]))
         elif dzh and not dzh.startswith("http"):
             bidy.append((ident, "ДЖЕРЕЛО НЕ Є АДРЕСОЮ", dzh[:46]))
 
-        if v not in ("pidtverdzheno", "sperechayetsya"):
+        if v not in ("confirmed", "disputes"):
             continue
-        cyt = str(r.get("cytata") or "").strip()
+        cyt = str(r.get("quote") or "").strip()
         if not cyt or not dzh.startswith("http"):
             continue
         t = dokument(dzh, not a.bez_merezhi)
@@ -181,7 +231,72 @@ def main() -> int:
         print("   ✗ %-11s %-28s %s" % (ident, rid, dod))
     if bez:
         print("\nбез відповіді: %s" % ", ".join(bez))
+
+    if a.ledger:
+        zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy)
     return 1 if (bidy or bytyy or bez) else 0
+
+
+LEDGER_SHAPKA = """# Runs of the helper pool
+
+**Generated by `tools/intake_f.py --ledger`.** One row per run, appended,
+never edited.
+
+## Why this file exists
+
+The work order **is** the part of the technology that acts on the
+helper. It changed nine times, and each change was measured — but the
+result could not be attributed to the change, because nothing in a run
+recorded which order produced it. Comparing waves rested on a
+maintainer's memory.
+
+Every generated order now carries `order_version` — eight characters of
+the hash of its own template — and so does the run's sample file. This
+table joins the two.
+
+> Changing the work order changes the technology. Changing a technology
+> without a version is not an experiment; it is weather.
+
+**How to read it.** Two rows with the same `order_version` are the same
+technology measured twice: a difference between them is noise, queue, or
+model. Two rows with different versions are two technologies: a
+difference between them is a **result**, and the diff between the two
+versions is its cause.
+
+**What a row cannot tell you.** Sample size here is small, the queues
+are not equivalent (`F` yields several times what an `E`-verdict audit
+does), and a run is not repeated. A row is evidence, not proof.
+
+| date | order | seed | queue | n | model | confirmed | survived L3 | not found | advice | self-ref | violations |
+|---|---|---:|---|---:|---|---:|---:|---:|---:|---:|---:|
+"""
+
+
+def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
+    """Дописати рядок прогону. Дописати, не переписати: попередні
+    прогони — це вимір, а не чернетка."""
+    f = ROOT / "factcheck" / "RUNS.md"
+    if not f.exists():
+        f.write_text(LEDGER_SHAPKA, encoding="utf-8")
+    t = f.read_text(encoding="utf-8")
+    samo = sum(1 for _, rid, _ in bidy if "САМОПОСИЛАННЯ" in rid)
+    ryadok = ("| %s | `%s` | %s | %s | %d | %s | %d | %d | %d | %d | %d | %d |"
+              % (a.teka.name,
+                 vyb.get("order_version", "?"),
+                 vyb.get("nasinnya", "?"),
+                 vyb.get("queue", "?"),
+                 len(vidpovidi),
+                 a.model,
+                 rody.get("confirmed", 0),
+                 dosl.get("цитата дослівна", 0),
+                 rody.get("not_found", 0),
+                 rody.get("advice", 0),
+                 samo,
+                 len(bidy)))
+    if a.note:
+        ryadok += "\n\n> `%s`: %s\n" % (a.teka.name, a.note)
+    f.write_text(t.rstrip("\n") + "\n" + ryadok + "\n", encoding="utf-8")
+    print("\nдописано в factcheck/RUNS.md")
 
 
 if __name__ == "__main__":

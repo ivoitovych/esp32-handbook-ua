@@ -98,7 +98,8 @@ def shapka(**kw) -> str:
     ramka = SHAPKA_RAMKA
     for k, v in kw.items():
         ramka = ramka.replace("{" + k + "}", str(v))
-    return task_spec.sklasty(SHAPKA_BLOKY, zaholovok=ramka)
+    return task_spec.sklasty(SHAPKA_BLOKY, zaholovok=ramka,
+                             shablon=SHAPKA_RAMKA)
 
 
 

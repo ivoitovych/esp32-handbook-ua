@@ -119,7 +119,8 @@ def zaholovok(**kw) -> str:
     ramka = ZAHOLOVOK_RAMKA
     for k, v in kw.items():
         ramka = ramka.replace("{" + k + "}", str(v))
-    return task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka)
+    return task_spec.sklasty(ZAHOLOVOK_BLOKY, zaholovok=ramka,
+                             shablon=ZAHOLOVOK_RAMKA)
 
 
 
