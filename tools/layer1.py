@@ -51,6 +51,20 @@ kind — the only one that matters — would drown in the second. The first
 run of this check reported 1317 problems; 1311 were stale line numbers
 and 6 were real.
 
+**The second bucket held two worlds of its own, and its label named the
+wrong cause.** The window around the recorded line was a constant eight
+lines, so any unit longer than eight lines could not fit in it and was
+counted as a moved line — while its line number was exactly right.
+Measured on the 60 prose cards in that bucket: **52 were this**, and
+regenerating the cards could never have cleared them. `T-11-064` is a
+sixteen-line project-tree block recorded at line 154, and the book has
+it at line 154.
+
+The window is now sized to the unit (`vikno_dlya`): 111 → 51. This is
+kind 25 in the catalogue — a correct count of a bucket that holds two
+different situations — found in this file within an hour of the kind
+being written down.
+
     tools/layer1.py [--vsi] [--tykho] [--detali]
 
 `--detali` друкує кожну зламану картку з її родом і файлом — щоб
@@ -97,7 +111,39 @@ RE_KARTKA = re.compile(
     r"(?:\n\*\*Контекст\*\*\n\n(?P<og2>`{3,})\n(?P<kontekst>.*?)\n(?P=og2)\n)?",
     re.S)
 
-VIKNO = 8   # рядків книги навколо записаного номера
+VIKNO = 8      # мінімум рядків книги навколо записаного номера
+VIKNO_MEZHA = 240   # стеля, щоб вікно не виродилося у весь файл
+
+
+def vikno_dlya(ryadky: list[str], ln: int, tverd: str) -> str:
+    """Вікно книги, **розміряне під одиницю**, а не під сталу.
+
+    Стале вікно на вісім рядків мовчки перетворювало довгу одиницю на
+    «зсув номера». Виміряно на 60 прозових картках: **52** з них мали
+    номер рядка **точно правильний**, а твердження просто не вміщалося
+    у вісім рядків — `T-11-064` це блок дерева проєкту на шістнадцять
+    рядків, записаний під рядком 154, і книга має його рівно там.
+
+    Тобто третє відро звіту («текст на місці, номер зсунувся ← рендер
+    застарів») складалося з двох різних дійсностей: восьми справжніх
+    зсувів на 1–2 рядки й п'ятдесяти двох одиниць, довших за вікно.
+    Підпис відра називав причину, і для 52 з 60 вона була хибна:
+    перегенерація карток не могла зарадити нічому, бо зсуву не було.
+
+    > Рід 25 у `DEFECTS.md`, знайдений у власному вимірі за годину
+    > після того, як його записали.
+
+    Вікно тепер росте, доки не вмістить твердження за довжиною, з
+    невеликим запасом і зі стелею.
+    """
+    i = max(0, ln - 1 - 1)
+    treba = len(tverd)
+    kin = min(len(ryadky), i + VIKNO)
+    while kin < len(ryadky) and kin - i < VIKNO_MEZHA:
+        if len(normal(" ".join(ryadky[i:kin]))) >= treba + 40:
+            break
+        kin += 1
+    return normal(" ".join(ryadky[i:kin]))
 
 
 def normal(s: str) -> str:
@@ -157,7 +203,11 @@ def main(argv: list[str]) -> int:
                 tverd = normal("\n".join(
                     x[2:] for x in m["tverd"].strip().split("\n")))
                 i = ln - 1
-                vikno = normal(" ".join(ryadky[max(0, i - 1):i + VIKNO]))
+                # Вікно розміряне під **довшу** з двох речей: самого
+                # твердження і дослівного блоку комірки.
+                vikno = vikno_dlya(
+                    ryadky, ln,
+                    max(tverd, normal(m["doslivno"] or ""), key=len))
 
                 if vyd == "komirka":
                     komirka += 1
