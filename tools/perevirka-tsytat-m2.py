@@ -85,7 +85,7 @@ def rozvyazne(z: dict) -> bool:
     так. «Властивості логіки CMOS», «фундаментальне правило електроніки» —
     ні: це міркування в полі джерела, тобто клас A без джерела.
     """
-    d = str(z.get("dzherelo", ""))
+    d = str(z.get("source", ""))
     if re.search(r"https?://|\.pdf|\.h\b|\.c\b|\.rst\b|components/|datasheet|Datasheet|IEC \d|UM\d|SCLS|Table \d", d):
         return True
     return False
@@ -106,7 +106,7 @@ def tekst_dokumenta(shlyah: pathlib.Path) -> str:
 
 def znayty_dokument(z: dict) -> pathlib.Path | None:
     """Документ шукається за іменем файлу з поля `sposib`, потім за назвою."""
-    sposib = str(z.get("sposib", ""))
+    sposib = str(z.get("method", ""))
     for m in re.finditer(r"`([\w.\-]+)`", sposib):
         p = KESH / m.group(1)
         if p.exists():
@@ -125,12 +125,12 @@ def main() -> int:
 
     for f in sorted(DOKAZY.glob("*.yaml")):
         for z in (yaml.safe_load(f.read_text(encoding="utf-8")) or []):
-            if str(z.get("klas", "")).upper() != "A":
+            if str(z.get("status", "")) != "verbatim":
                 continue
             vsogo += 1
-            cyt = z.get("cytata")
+            cyt = z.get("quote")
             if not cyt:
-                bidy.append(f"{f.name}: «{z.get('nazva','?')[:44]}» — клас A без цитати")
+                bidy.append(f"{f.name}: «{z.get('title','?')[:44]}» — клас verbatim без цитати")
                 continue
             dok = znayty_dokument(z)
             if dok is None:
@@ -144,11 +144,11 @@ def main() -> int:
                 bez_dok += 1
                 if rozvyazne(z):
                     if detal:
-                        print(f"  ?  {z['nazva'][:52]} — джерело назване, файла нема")
+                        print(f"  ?  {z['title'][:52]} — джерело назване, файла нема")
                 else:
                     ne_rozvyazne += 1
-                    print(f"  ✗✗ {z['nazva'][:56]}")
-                    print(f"       джерело не є документом: {str(z.get('dzherelo',''))[:74]}")
+                    print(f"  ✗✗ {z['title'][:56]}")
+                    print(f"       джерело не є документом: {str(z.get('source',''))[:74]}")
                 continue
             tekst = tekst_dokumenta(dok)
             if not tekst:
@@ -163,10 +163,10 @@ def main() -> int:
             if not promakh:
                 zbih += 1
                 if detal:
-                    print(f"  ok {z['nazva'][:52]}  ({dok.name})")
+                    print(f"  ok {z['title'][:52]}  ({dok.name})")
             else:
                 ne_znayshly += 1
-                print(f"  ✗  {z['nazva'][:56]}")
+                print(f"  ✗  {z['title'][:56]}")
                 print(f"       документ: {dok.name}")
                 for r in promakh[:2]:
                     print(f"       не знайдено: {r[:88]}")
