@@ -257,6 +257,36 @@
 
 ---
 
+## What migrates to English, and what does not
+
+Stated here because it is exactly the kind of boundary that drifts once
+a migration gets momentum, and because getting it wrong is expensive in
+one direction and merely untidy in the other.
+
+    MIGRATES — the technology, because it is meant to be lifted onto
+    another book in another language
+      tools, their names and their field names
+      the governing documents in `factcheck/`
+      the worker task (`TASK-SPEC.md`) and every work order built from it
+      the maintainers' correspondence, from 2026-08-28 onward
+      directory names under the technology
+
+    STAYS UKRAINIAN — the book, because it IS the product
+      the whole book body: `manual/`, `dodatky/`, `kartky/`, `inserts/`
+      the book's own `README.md` at the repository root
+      book-facing documents: `ERRATA.md`, `PRINT-1.md`, the print plan
+
+A work order will therefore always contain Ukrainian text: the claim it
+quotes is the book speaking, not the technology. That is not a leftover
+to be cleaned up later — translating a claim before checking it would
+mean checking a translation.
+
+> The line runs along **who the text is for**. Text for the reader of
+> this book stays in the reader's language. Text for the next book's
+> maintainer goes to English.
+
+---
+
 ## Inventory: what is actually in `factcheck/`
 
 Taken before any rewriting, so the size of the job is known rather than
