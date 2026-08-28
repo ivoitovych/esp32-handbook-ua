@@ -372,6 +372,8 @@ tools/kesh.py --check    звірити хеші наявних файлів
 | `ulp.rst` | `af73bb6f8071e0ab2fc6eb923f87719df033a58765f6eeda17018d3be06b4180` | 2155 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp.rst> |
 | `vtc6.pdf` | `ff42082f0d94c311bfd9a8b24211c5d522aeee161adb7473731e9fe94fcc9f08` | 275509 | 2026-08-26 | <https://www.murata.com/-/media/webrenewal/products/batteries/cylindrical/datasheet/us18650vtc6-product-datasheet.ashx> |
 | `wdts.rst` | `aab5499bba67e15e1327504328a9aa74ab88c82cb90f9c27d500d5b5d773c6af` | 16181 | 2026-08-27 | <https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst> |
+| `d4da9d47-esp32-c6_datasheet_en.pdf` | `372a5b42b2900c83ef4309149c8835e9ae2d1be19244995bf2fb83af4dc5edf1` | 975625 | 2026-08-28 | <https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf> |
+| `7f786a8e-esp32-h2_datasheet_en.pdf` | `2cb42839833eac06356fb197492b4ba42b85149dc0f3633467fab1c7b26eb243` | 784135 | 2026-08-28 | <https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf> |
 
 Файлів: **355**, разом **139.8 МБ** (межа 1.0 ГБ).
 Файлів: **357**, разом **140.7 МБ** (межа 1.0 ГБ).
