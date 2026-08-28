@@ -56,13 +56,40 @@ KNYHA = re.compile(
 # Що вимагає кожен вердикт. Джерело — таблиця в самому наряді; якщо
 # вона розійдеться з цим словником, розійдуться наряд і ворота, і
 # помічник буде покараний за те, чого йому не казали.
+# Англійські імена — чинні; транслітеровані приймаються, поки живі
+# наряди попередніх версій. Розширити → переїхати → звузити, той самий
+# порядок, що й для полів запису доказу.
 POTREBUYE = {
-    "pidtverdzheno": ("dzherelo", "cytata"),
-    "sperechayetsya": ("dzherelo", "cytata", "susidnye"),
-    "ne_znayshov": ("dzherelo",),
-    "nedosyazhne": ("dzherelo", "potribno"),
-    "porada": ("chomu",),
+    "confirmed": ("source", "quote"),
+    "disputes": ("source", "quote", "neighbours"),
+    "not_found": ("source",),
+    "unreachable": ("source", "needed"),
+    "advice": ("why",),
 }
+STARI_VERDYKTY = {
+    "pidtverdzheno": "confirmed", "sperechayetsya": "disputes",
+    "ne_znayshov": "not_found", "nedosyazhne": "unreachable",
+    "porada": "advice",
+}
+STARI_POLYA = {
+    "odynycya": "unit", "verdykt": "verdict", "dzherelo": "source",
+    "cytata": "quote", "komentar": "comment", "potribno": "needed",
+    "chomu": "why", "susidnye": "neighbours",
+}
+
+
+def na_anhliysku(r: dict) -> dict:
+    """Запис у чинних іменах, звідки б він не прийшов.
+
+    Ворота не мають права карати помічника за те, якою мовою був наряд,
+    що йому дали. Переклад тут — не поблажливість, а межа: після нього
+    решта проходу знає рівно один словник.
+    """
+    out = {STARI_POLYA.get(k, k): v for k, v in r.items()}
+    v = str(out.get("verdict") or "").strip()
+    if v in STARI_VERDYKTY:
+        out["verdict"] = STARI_VERDYKTY[v]
+    return out
 
 
 def imya_dlya(url: str) -> str:
@@ -126,7 +153,8 @@ def main() -> int:
         for r in z:
             if not isinstance(r, dict):
                 continue
-            ident = str(r.get("odynycya") or r.get("id") or "?").strip()
+            r = na_anhliysku(r)
+            ident = str(r.get("unit") or r.get("id") or "?").strip()
             if ident in vidpovidi:
                 dubli.append(ident)
             vidpovidi[ident] = dict(r, _fayl=f.name)
@@ -138,7 +166,7 @@ def main() -> int:
     bidy: list[tuple[str, str, str]] = []
     dosl = collections.Counter()
     for ident, r in sorted(vidpovidi.items()):
-        v = str(r.get("verdykt") or "").strip()
+        v = str(r.get("verdict") or "").strip()
         rody[v or "(немає вердикту)"] += 1
         if v not in POTREBUYE:
             bidy.append((ident, "ВЕРДИКТ ПОЗА НАРЯДОМ", v[:40]))
@@ -146,15 +174,15 @@ def main() -> int:
         brak = [k for k in POTREBUYE[v] if not str(r.get(k) or "").strip()]
         if brak:
             bidy.append((ident, "БРАКУЄ ПОЛІВ", ",".join(brak)))
-        dzh = str(r.get("dzherelo") or "")
+        dzh = str(r.get("source") or "")
         if dzh and KNYHA.search(dzh):
             bidy.append((ident, "САМОПОСИЛАННЯ НА ДОВІДНИК", dzh[:46]))
         elif dzh and not dzh.startswith("http"):
             bidy.append((ident, "ДЖЕРЕЛО НЕ Є АДРЕСОЮ", dzh[:46]))
 
-        if v not in ("pidtverdzheno", "sperechayetsya"):
+        if v not in ("confirmed", "disputes"):
             continue
-        cyt = str(r.get("cytata") or "").strip()
+        cyt = str(r.get("quote") or "").strip()
         if not cyt or not dzh.startswith("http"):
             continue
         t = dokument(dzh, not a.bez_merezhi)
@@ -241,10 +269,10 @@ def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
                  vyb.get("queue", "?"),
                  len(vidpovidi),
                  a.model,
-                 rody.get("pidtverdzheno", 0),
+                 rody.get("confirmed", 0),
                  dosl.get("цитата дослівна", 0),
-                 rody.get("ne_znayshov", 0),
-                 rody.get("porada", 0),
+                 rody.get("not_found", 0),
+                 rody.get("advice", 0),
                  samo,
                  len(bidy)))
     if a.note:
