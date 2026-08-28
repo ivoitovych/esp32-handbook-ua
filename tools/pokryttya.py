@@ -41,7 +41,21 @@ answers, and both are human or model work:
 * it is not a claim → say so in a card, so the next audit does not ask
   again.
 
-    tools/pokryttya.py [--fayl <шлях>] [--dilyanky]
+## Що робити з прогалиною — і чому статус мусить бути перевірюваним
+
+Прогалину закривають картками. Але статус «не підлягає звірці» — це
+**стверджувальний вердикт**, а такі в нас уже одного разу зібрали
+звалище: у роді `ne-rozibrav` 85–87 % виявилися звичайними судженнями,
+які помічник міг класифікувати без зусиль.
+
+Тому статус має бути таким, що його **підтверджує скрипт**. «Це не
+твердження» взагалі — неперевірюване й зогниє. «Цей рядок є
+заголовком» — перевіряється одним взірцем.
+
+Режим `--rody` розкладає непокриті рядки за родом саме для цього: щоб
+кожній прогалині можна було дати статус, який машина вміє звірити.
+
+    tools/pokryttya.py [--fayl <шлях>] [--dilyanky] [--rody]
 """
 from __future__ import annotations
 
@@ -74,6 +88,8 @@ def main(argv: list[str]) -> int:
     if "--fayl" in argv:
         lyshe = argv[argv.index("--fayl") + 1]
     dilyanky = "--dilyanky" in argv
+    rody_rezhym = "--rody" in argv
+    rody = defaultdict(list)
 
     pokryti = zibraty_kartky()
     vsyoho = pokryto = 0
@@ -99,6 +115,20 @@ def main(argv: list[str]) -> int:
                 kinec = tochky[k + 1] if k + 1 < len(tochky) else len(ryadky) + 1
                 nakryti.update(range(poch, kinec))
             ne = [i for i in zmistovni if i not in nakryti]
+            if rody_rezhym:
+                for i in ne:
+                    r = ryadky[i - 1]
+                    if re.match(r"^#{1,6}\s", r):
+                        k = "заголовок"
+                    elif re.match(r"^\s*[|>]", r):
+                        k = "таблиця або цитата"
+                    elif re.match(r"^\s{4,}\S", r):
+                        k = "відступ або код"
+                    elif re.match(r"^\s*\*\*[^*]+\*\*\s*$", r):
+                        k = "жирний рядок"
+                    else:
+                        k = "інше"
+                    rody[k].append((vidn, i, r[:56]))
             vsyoho += len(zmistovni)
             pokryto += len(zmistovni) - len(ne)
             za_faylom.append((vidn, len(zmistovni), len(ne), ne))
@@ -121,6 +151,14 @@ def main(argv: list[str]) -> int:
             for a, b in grupy[:12]:
                 print("      рядки %d–%d" % (a, b) if a != b else
                       "      рядок %d" % a)
+
+    if rody_rezhym:
+        print("\nнепокрите за родом:")
+        for k in sorted(rody, key=lambda x: -len(rody[x])):
+            print("   %-22s %4d" % (k, len(rody[k])))
+            if k == "інше":
+                for f, i, t in rody[k][:10]:
+                    print("        %s:%d  %s" % (f, i, t))
 
     print("\npokryttya: змістовних рядків книги %d; накрито картками %d (%.1f %%); "
           "без картки %d"
