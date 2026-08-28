@@ -17,7 +17,7 @@
 вдається, тож вони чекають на суцільні проходи, а не на поділ.
 
     tools/podil.py            зведення
-    tools/podil.py --naryad   згенерувати factcheck/PODIL.md
+    tools/podil.py --naryad   згенерувати factcheck/SPLIT.md
 """
 from __future__ import annotations
 
@@ -120,6 +120,35 @@ def klasy() -> dict[str, int]:
             for m in vz.finditer(f.read_text(encoding="utf-8")):
                 lich[m.group(1)] += 1
     return dict(lich)
+
+
+def podil_za_fajlamy(klasy: tuple[str, ...]) -> tuple[list[str], list[str], int, int]:
+    """Поділ названих класів за файлами — жадібно, у бік меншої суми.
+
+    Той самий механізм, що вже перевірений на класі `E`; `podil_e` тепер
+    його окремий випадок. М2 назвав поділ решти «не очевидним» — але
+    очевидність тут не потрібна, потрібен `assert`: перетин файлів нуль,
+    і його видно.
+
+        C+F  1935 одиниць у 91 файлі → 968 / 967, перетин 0
+    """
+    import vybirka
+    za: dict[str, int] = collections.Counter()
+    for k in klasy:
+        for u in vybirka.odynyci(k):
+            za[u["src"].split("/")[-1].split(":")[0]] += 1
+    m1: list[str] = []
+    m2: list[str] = []
+    s1 = s2 = 0
+    for f, n in sorted(za.items(), key=lambda kv: (-kv[1], kv[0])):
+        if s1 <= s2:
+            m1.append(f)
+            s1 += n
+        else:
+            m2.append(f)
+            s2 += n
+    assert not (set(m1) & set(m2)), "файл потрапив обом"
+    return sorted(m1), sorted(m2), s1, s2
 
 
 def podil_e() -> tuple[list[str], list[str], int, int]:
@@ -284,8 +313,8 @@ def naryad() -> int:
                 t = " ".join(x[2:] for x in u["txt"].strip().split("\n"))
                 t = t.replace("|", "\\|")[:150]
                 r.append(f"| `{u['id']}` | {u['ln']} | {t} |")
-    (FC / "PODIL.md").write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"factcheck/PODIL.md: М1 {m1}, М2 {m2}, поза поділом "
+    (FC / "SPLIT.md").write_text("\n".join(r) + "\n", encoding="utf-8")
+    print(f"factcheck/SPLIT.md: М1 {m1}, М2 {m2}, поза поділом "
           f"{len(rozklad['—'])}")
     return 0
 

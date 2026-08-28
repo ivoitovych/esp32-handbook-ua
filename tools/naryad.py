@@ -43,7 +43,7 @@
 запис, на який ніхто не відповів, друкує окремим розділом. Нестача —
 теж результат, і найнебезпечніший: вона виглядає як згода.
 
-    tools/naryad.py                    зібрати factcheck/NARYAD-cytaty.md
+    tools/naryad.py                    зібрати factcheck/BRIEF-QUOTES.md
     tools/naryad.py --krim <каталог>   лише ті, на які ще не відповіли
     tools/naryad.py --zvit <каталог>   звести відповіді помічників
 """
@@ -57,7 +57,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
-CIL = ROOT / "factcheck" / "NARYAD-cytaty.md"
+CIL = ROOT / "factcheck" / "BRIEF-QUOTES.md"
 NA_PAKET = 5
 
 ZAHOLOVOK = """# Наряд: {skilky} цитат, яких немає в джерелі
@@ -123,7 +123,7 @@ def zapysy() -> dict[tuple[str, str], dict]:
     return rec
 
 
-ZVIT = ROOT / "factcheck" / "KNYHA-PROTY-DZHEREL.md"
+ZVIT = ROOT / "factcheck" / "BOOK-VS-SOURCES.md"
 
 PIDPYSY = {
     "pidtverdzheno": "Книга підтверджена",
@@ -181,7 +181,7 @@ def zvesty(katalog: Path) -> int:
     r = [f"""# Книга проти джерел: {len(ochikuvano)} розбіжних цитат
 
 **Генерується** `tools/naryad.py --zvit`. Наряд —
-`factcheck/NARYAD-cytaty.md`.
+`factcheck/BRIEF-QUOTES.md`.
 
 Третій шар сказав, що цих цитат немає за названою адресою. Питання тут
 інше: **чи правильне те, що написано в книзі.**

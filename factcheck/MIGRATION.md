@@ -307,8 +307,8 @@ something.**
 
 The slang is not only inside the documents. It **is** the documents:
 
-    POMICHNYKY.md   NARYAD-vybirka.md   SHTURM-E.md   MIRA-E.md
-    PODIL.md        PROKHID-POVNYY.md   SLIDY.md      SPROSTOVANE.md
+    POMICHNYKY.md   BRIEF-SAMPLE.md   SWEEP-NO-SIGNAL.md   MEASURE-NO-SIGNAL.md
+    SPLIT.md        PROKHID-POVNYY.md   TRACES.md      SPROSTOVANE.md
     dokazy/  rozbir/  prokhid/  doslidy/  znimky/  hvylya2/
 
 And so are the tools: `naryad_f.py`, `prochid_zvid.py`,
@@ -338,12 +338,12 @@ the card that needed the book to be understood.
 
 | Now | Becomes |
 |---|---|
-| `CYTATY.md` | `QUOTES.md` |
-| `SHTURM-E.md` | `SWEEP-NO-SIGNAL.md` |
-| `MIRA-E.md` · `MIRA-F.md` | `MEASURE-NO-SIGNAL.md` · `MEASURE-UNCHECKED.md` |
-| `PODIL.md` | `SPLIT.md` |
-| `SLIDY.md` | `TRACES.md` |
-| `KNYHA-PROTY-DZHEREL.md` | `BOOK-VS-SOURCES.md` |
+| `QUOTES.md` | `QUOTES.md` |
+| `SWEEP-NO-SIGNAL.md` | `SWEEP-NO-SIGNAL.md` |
+| `MEASURE-NO-SIGNAL.md` · `MEASURE-UNCHECKED.md` | `MEASURE-NO-SIGNAL.md` · `MEASURE-UNCHECKED.md` |
+| `SPLIT.md` | `SPLIT.md` |
+| `TRACES.md` | `TRACES.md` |
+| `BOOK-VS-SOURCES.md` | `BOOK-VS-SOURCES.md` |
 
 **Directories:**
 

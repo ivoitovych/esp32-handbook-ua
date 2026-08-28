@@ -42,7 +42,7 @@
 
     tools/citaty.py            перевірити все, що є в кеші
     tools/citaty.py --kachaty  спершу докачати те, чого бракує
-    tools/citaty.py --zvit     згенерувати factcheck/CYTATY.md
+    tools/citaty.py --zvit     згенерувати factcheck/QUOTES.md
     tools/citaty.py --suvoro   недосяжне джерело теж помилка
     tools/citaty.py <файл.yaml>  перевірити вивантаження помічника
 
@@ -64,7 +64,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 DOKAZY = ROOT / "factcheck" / "dokazy"
 KESH = ROOT / "dzherela-kesh"
-ZVIT = ROOT / "factcheck" / "CYTATY.md"
+ZVIT = ROOT / "factcheck" / "QUOTES.md"
 
 MIN_DOVZHYNA = 12
 
