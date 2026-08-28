@@ -126,9 +126,9 @@ def zvesty(katalogy: list[str]) -> int:
         chastyna, _, _ = vyvantazh.chytaty(Path(k))
         zap += chastyna
 
-    kand = [{"nazva": str(z.get("odynycya", "?")),
-             "dzherelo": str(z.get("source", "")).strip(),
-             "cytata": str(z.get("quote", "")),
+    kand = [{"title": str(z.get("odynycya", "?")),
+             "source": str(z.get("source", "")).strip(),
+             "quote": str(z.get("quote", "")),
              "zvidky": z.get("_fayl", "?")}
             for z in zap if str(z.get("verdykt")) == "znayshov"]
     KANDYDATY.write_text(
@@ -142,7 +142,7 @@ def zvesty(katalogy: list[str]) -> int:
         try:
             import citaty
             naslidky, _ = citaty.perevirka(True, [KANDYDATY])
-            stany = {str(n.get("title")): str(n.get("stan"))
+            stany = {str(n.get("nazva")): str(n.get("stan"))
                      for n in naslidky}
         except ImportError:
             pass

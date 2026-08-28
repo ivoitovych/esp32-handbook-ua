@@ -1,46 +1,20 @@
-# Суцільний прохід — 11-idf.
-#
-# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
-# те, що пережило третій шар: цитата знайшлася в названому
-# документі дослівно. Заявок без такої перевірки тут немає.
-#
-# Взірці виведено механічно — найкоротший префікс, відмітний
-# у всьому реєстрі. Це компроміс між двома законами:
-# широкий взірець бреше, довгий ламається.
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: 'T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.**'
   zbih: \*\*Версія\s+ESP\-IDF\s+фіксується\s+на
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/versions.rst
-  cytata: 'use the current stable version
+  cytata: 'use the `current stable version`_
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Документація рекомендує вибір конкретної стабільної версії для проектів
   title: 'T-11-042: **Версія ESP-IDF фіксується на початку проєкту й записується.**'
   match: \*\*Версія\s+ESP\-IDF\s+фіксується\s+на
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/versions.rst
-  quote: 'use the current stable version
+  quote: 'use the `current stable version`_
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Документація рекомендує вибір конкретної стабільної версії для проектів
 - nazva: 'T-11-023: Ця команда додає інструменти в `PATH` і ставить'
   zbih: Ця\s+команда\s+додає\s+інструменти
@@ -53,9 +27,7 @@
     eval "${idf_exports}"
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: export.sh додає інструменти в PATH та ставить змінні середовища через activate.py
   title: 'T-11-023: Ця команда додає інструменти в `PATH` і ставить'
   match: Ця\s+команда\s+додає\s+інструменти
@@ -68,7 +40,5 @@
     eval "${idf_exports}"
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: export.sh додає інструменти в PATH та ставить змінні середовища через activate.py

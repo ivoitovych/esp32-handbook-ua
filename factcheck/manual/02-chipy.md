@@ -4091,7 +4091,7 @@ idf.py set-target esp32s3
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/tools/idf-py.rst
 - **Дослівно з джерела:**
-  > idf.py set-target will clear the build directory and re-generate the sdkconfig file from scratch.
+  > idf.py set-target`` will clear the build directory and re-generate the ``sdkconfig`` file from scratch.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** Коли set-target перестворює sdkconfig з нуля, усі налаштування menuconfig повертаються до типових
 - **Прохід:** klas-f-02-chipy

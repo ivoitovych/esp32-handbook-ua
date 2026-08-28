@@ -1,238 +1,3 @@
-# Суцільний прохід — g-glosariy.
-#
-# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
-# те, що пережило третій шар: цитата знайшлася в названому
-# документі дослівно. Заявок без такої перевірки тут немає.
-#
-# Взірці виведено механічно — найкоротший префікс, відмітний
-# у всьому реєстрі. Це компроміс між двома законами:
-# широкий взірець бреше, довгий ламається.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: 'T-G-036: | стабілізатор | voltage regulator |'
   zbih: \|\s+стабілізатор\s+\|\s+voltage
   klas: A
@@ -240,9 +5,7 @@
   cytata: 'Low Dropout Voltage Regulator (LDO)
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: voltage regulator — standard English electronics term, confirmed in ESP-IDF documentation
   title: 'T-G-036: | стабілізатор | voltage regulator |'
   match: \|\s+стабілізатор\s+\|\s+voltage
@@ -251,9 +14,7 @@
   quote: 'Low Dropout Voltage Regulator (LDO)
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: voltage regulator — standard English electronics term, confirmed in ESP-IDF documentation
   sha:
   - 146faf22
@@ -261,25 +22,19 @@
   zbih: \|\s+відтворюване\s+збирання\s+\|
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/reproducible-builds.rst
-  cytata: 'When reproducible builds are enabled, the application built with ESP-IDF does not
-    depend on the build environment
+  cytata: 'When reproducible builds are enabled, the application built with ESP-IDF does not depend on the build environment
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: reproducible build — confirmed in ESP-IDF API guides
   title: 'T-G-085: | відтворюване збирання | reproducible build |'
   match: \|\s+відтворюване\s+збирання\s+\|
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/reproducible-builds.rst
-  quote: 'When reproducible builds are enabled, the application built with ESP-IDF does not
-    depend on the build environment
+  quote: 'When reproducible builds are enabled, the application built with ESP-IDF does not depend on the build environment
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: reproducible build — confirmed in ESP-IDF API guides
   sha:
   - 1711b8b0
@@ -290,9 +45,7 @@
   cytata: 'building and flashing firmware onto an {IDF_TARGET_NAME} board
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: firmware — confirmed in ESP-IDF getting started documentation
   title: 'T-G-054: | прошивка | firmware |'
   match: \|\s+прошивка\s+\|\s+firmware
@@ -301,9 +54,7 @@
   quote: 'building and flashing firmware onto an {IDF_TARGET_NAME} board
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: firmware — confirmed in ESP-IDF getting started documentation
   sha:
   - 20ddcdd5
@@ -314,9 +65,7 @@
   cytata: 'Prepare binary executable images ready for flashing
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: image, binary — confirmed in esptool documentation describing firmware images
   title: 'T-G-055: | образ | image, binary |'
   match: \|\s+образ\s+\|\s+image,
@@ -325,9 +74,7 @@
   quote: 'Prepare binary executable images ready for flashing
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: image, binary — confirmed in esptool documentation describing firmware images
   sha:
   - f55addda
@@ -338,9 +85,7 @@
   cytata: 'Build Your First Project
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: build — confirmed in ESP-IDF documentation section on building projects
   title: 'T-G-056: | збирання | build |'
   match: \|\s+збирання\s+\|\s+build
@@ -349,9 +94,7 @@
   quote: 'Build Your First Project
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: build — confirmed in ESP-IDF documentation section on building projects
   sha:
   - 6fc38c15
@@ -362,9 +105,7 @@
   cytata: 'Priority
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: priority — confirmed in FreeRTOS task priority documentation
   title: 'T-G-061: | пріоритет | priority |'
   match: \|\s+пріоритет\s+\|\s+priority
@@ -373,9 +114,7 @@
   quote: 'Priority
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: priority — confirmed in FreeRTOS task priority documentation
   sha:
   - bb807264
@@ -386,9 +125,7 @@
   cytata: 'Queue API
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: queue — confirmed in FreeRTOS queue API documentation; xQueueCreateWithCaps function
   title: 'T-G-062: | черга | queue |'
   match: \|\s+черга\s+\|\s+queue
@@ -397,9 +134,7 @@
   quote: 'Queue API
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: queue — confirmed in FreeRTOS queue API documentation; xQueueCreateWithCaps function
   sha:
   - 80b8bb3a
@@ -410,9 +145,7 @@
   cytata: 'Semaphore API
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: semaphore — confirmed as dedicated section in FreeRTOS API documentation
   title: 'T-G-063: | семафор | semaphore |'
   match: \|\s+семафор\s+\|\s+semaphore
@@ -421,9 +154,7 @@
   quote: 'Semaphore API
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: semaphore — confirmed as dedicated section in FreeRTOS API documentation
   sha:
   - 274527f7
@@ -434,9 +165,7 @@
   cytata: 'mutexes or spinlocks if they require mutual exclusion
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: mutex — confirmed in FreeRTOS documentation discussing mutual exclusion
   title: 'T-G-064: | м''ютекс | mutex |'
   match: \|\s+м'ютекс\s+\|\s+mutex
@@ -445,9 +174,7 @@
   quote: 'mutexes or spinlocks if they require mutual exclusion
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: mutex — confirmed in FreeRTOS documentation discussing mutual exclusion
   sha:
   - 2e8ce884
@@ -458,9 +185,7 @@
   cytata: 'Event Group API
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: event group — confirmed as dedicated section in FreeRTOS API documentation
   title: 'T-G-065: | група подій | event group |'
   match: \|\s+група\s+подій\s+\|
@@ -469,9 +194,7 @@
   quote: 'Event Group API
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: event group — confirmed as dedicated section in FreeRTOS API documentation
   sha:
   - 23345d26
@@ -482,9 +205,7 @@
   cytata: 'Time slicing is governed by a tick interrupt
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: interrupt — confirmed in FreeRTOS scheduler and interrupt handling documentation
   title: 'T-G-066: | переривання | interrupt |'
   match: \|\s+переривання\s+\|\s+interrupt
@@ -493,9 +214,7 @@
   quote: 'Time slicing is governed by a tick interrupt
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: interrupt — confirmed in FreeRTOS scheduler and interrupt handling documentation
   sha:
   - e7bdf88a
@@ -506,9 +225,7 @@
   cytata: 'Critical Sections
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: critical section — confirmed as dedicated section in FreeRTOS documentation
   title: 'T-G-068: | критична секція | critical section |'
   match: \|\s+критична\s+секція\s+\|
@@ -517,9 +234,7 @@
   quote: 'Critical Sections
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: critical section — confirmed as dedicated section in FreeRTOS documentation
   sha:
   - b381190a
@@ -527,25 +242,19 @@
   zbih: \|\s+атомарна\s+операція\s+\|
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  cytata: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap
-    instruction
+  cytata: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: atomic operation — confirmed in FreeRTOS critical section and spinlock documentation
   title: 'T-G-074: | атомарна операція | atomic operation |'
   match: \|\s+атомарна\s+операція\s+\|
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/freertos_idf.rst
-  quote: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap
-    instruction
+  quote: 'True atomic access to the same memory address is achieved via an atomic compare-and-swap instruction
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: atomic operation — confirmed in FreeRTOS critical section and spinlock documentation
   sha:
   - 22c3b24f
@@ -556,9 +265,7 @@
   cytata: 'avoid deadlocking when entering critical sections recursively
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: deadlock — confirmed in FreeRTOS critical section documentation
   title: 'T-G-076: | взаємне блокування | deadlock |'
   match: \|\s+взаємне\s+блокування\s+\|
@@ -567,9 +274,7 @@
   quote: 'avoid deadlocking when entering critical sections recursively
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: deadlock — confirmed in FreeRTOS critical section documentation
   sha:
   - 154baa32
@@ -580,9 +285,7 @@
   cytata: 'TLSP Deletion callbacks are run automatically when a task is deleted
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: callback — confirmed in FreeRTOS supplemental features documentation
   title: 'T-G-077: | зворотний виклик | callback |'
   match: \|\s+зворотний\s+виклик\s+\|
@@ -591,9 +294,7 @@
   quote: 'TLSP Deletion callbacks are run automatically when a task is deleted
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: callback — confirmed in FreeRTOS supplemental features documentation
   sha:
   - a6609781
@@ -601,25 +302,19 @@
   zbih: \|\s+точка\s+доступу\s+\|
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
-  cytata: 'This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver
-    of ESP for connecting to an Access Point.
+  cytata: 'This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver of ESP for connecting to an Access Point.
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: точка доступу - це Access Point, підтверджено в документації ESP-IDF
   title: 'T-G-088: | точка доступу | access point |'
   match: \|\s+точка\s+доступу\s+\|
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md
-  quote: 'This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver
-    of ESP for connecting to an Access Point.
+  quote: 'This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver of ESP for connecting to an Access Point.
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: точка доступу - це Access Point, підтверджено в документації ESP-IDF
   sha:
   - 8ac2c754
@@ -630,9 +325,7 @@
   cytata: 'This example shows how to use the Wi-Fi Station functionality
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: станція - це Station, підтверджено в документації ESP-IDF
   title: 'T-G-089: | станція, клієнт | station |'
   match: \|\s+станція,\s+клієнт\s+\|
@@ -641,9 +334,7 @@
   quote: 'This example shows how to use the Wi-Fi Station functionality
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: станція - це Station, підтверджено в документації ESP-IDF
 - nazva: 'T-G-090: | канал | channel |'
   zbih: \|\s+канал\s+\|\s+channel
@@ -652,9 +343,7 @@
   cytata: 'connected with #!/bin/test, aid = 1, channel 6, BW20, bssid = ac:9e:17:7e:31:40
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: канал - це channel, підтверджено в логах ESP-IDF
   title: 'T-G-090: | канал | channel |'
   match: \|\s+канал\s+\|\s+channel
@@ -663,9 +352,7 @@
   quote: 'connected with #!/bin/test, aid = 1, channel 6, BW20, bssid = ac:9e:17:7e:31:40
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: канал - це channel, підтверджено в логах ESP-IDF
   sha:
   - 8f3df2fa
@@ -676,9 +363,7 @@
   cytata: 'security type: 3, phy: bgn, rssi: -68
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: рівень сигналу - це rssi (signal strength), підтверджено в логах ESP-IDF
   title: 'T-G-091: | рівень сигналу | RSSI, signal strength |'
   match: \|\s+рівень\s+сигналу\s+\|
@@ -687,9 +372,7 @@
   quote: 'security type: 3, phy: bgn, rssi: -68
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: рівень сигналу - це rssi (signal strength), підтверджено в логах ESP-IDF
   sha:
   - 565d48c2
@@ -700,9 +383,7 @@
   cytata: 'Estimated Distance - 5.07 meters
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: дальність - це distance, підтверджено в документації ESP-IDF FTM
   title: 'T-G-094: | дальність | range |'
   match: \|\s+дальність\s+\|\s+range
@@ -711,9 +392,7 @@
   quote: 'Estimated Distance - 5.07 meters
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: дальність - це distance, підтверджено в документації ESP-IDF FTM
   sha:
   - b892bd1e
@@ -721,25 +400,19 @@
   zbih: \|\s+маячок\s+\|\s+beacon
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
-  cytata: 'If the station does not receive a beacon frame from the connected SoftAP during
-    the inactive time
+  cytata: 'If the station does not receive a beacon frame from the connected SoftAP during the inactive time
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: маячок - це beacon frame, підтверджено в ESP-IDF WiFi header
   title: 'T-G-095: | маячок | beacon |'
   match: \|\s+маячок\s+\|\s+beacon
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_wifi.h
-  quote: 'If the station does not receive a beacon frame from the connected SoftAP during
-    the inactive time
+  quote: 'If the station does not receive a beacon frame from the connected SoftAP during the inactive time
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: маячок - це beacon frame, підтверджено в ESP-IDF WiFi header
   sha:
   - 5fedc62c
@@ -750,9 +423,7 @@
   cytata: 'TOPIC=/topic/qos0
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: топік - це topic, підтверджено в логах ESP-IDF MQTT
   title: 'T-G-098: | топік | topic |'
   match: \|\s+топік\s+\|\s+topic
@@ -761,9 +432,7 @@
   quote: 'TOPIC=/topic/qos0
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: топік - це topic, підтверджено в логах ESP-IDF MQTT
   sha:
   - 6dfcdfba
@@ -774,9 +443,7 @@
   cytata: 'sent subscribe successful
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: підписка - це subscribe, підтверджено в документації ESP-IDF MQTT
   title: 'T-G-099: | підписка | subscription |'
   match: \|\s+підписка\s+\|\s+subscription
@@ -785,9 +452,7 @@
   quote: 'sent subscribe successful
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: підписка - це subscribe, підтверджено в документації ESP-IDF MQTT
   sha:
   - 3dac51ed
@@ -798,9 +463,7 @@
   cytata: 'sent publish successful, msg_id=41464
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: публікація - це publish, підтверджено в логах ESP-IDF MQTT
   title: 'T-G-100: | публікація | publish |'
   match: \|\s+публікація\s+\|\s+publish
@@ -809,9 +472,7 @@
   quote: 'sent publish successful, msg_id=41464
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: публікація - це publish, підтверджено в логах ESP-IDF MQTT
   sha:
   - f5029421
@@ -822,9 +483,7 @@
   cytata: 'TLS connection with server verification using the certificate bundle
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: сертифікат - це certificate, підтверджено в документації ESP-IDF MQTT
   title: 'T-G-101: | сертифікат | certificate |'
   match: \|\s+сертифікат\s+\|\s+certificate
@@ -833,9 +492,7 @@
   quote: 'TLS connection with server verification using the certificate bundle
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: сертифікат - це certificate, підтверджено в документації ESP-IDF MQTT
   sha:
   - 0383b98e
@@ -846,9 +503,7 @@
   cytata: 'Certificate Authorities (CAs) from the bundle
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: центр сертифікації - це certificate authority, підтверджено в документації ESP-IDF
   title: 'T-G-102: | центр сертифікації | certificate authority, CA |'
   match: \|\s+центр\s+сертифікації\s+\|
@@ -857,9 +512,7 @@
   quote: 'Certificate Authorities (CAs) from the bundle
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: центр сертифікації - це certificate authority, підтверджено в документації ESP-IDF
   sha:
   - 1b7c5a94
@@ -870,9 +523,7 @@
   cytata: 'during the TLS handshake
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: рукостискання - це handshake, підтверджено в документації ESP-IDF
   title: 'T-G-103: | рукостискання | handshake |'
   match: \|\s+рукостискання\s+\|\s+handshake
@@ -881,9 +532,7 @@
   quote: 'during the TLS handshake
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: рукостискання - це handshake, підтверджено в документації ESP-IDF
   sha:
   - db3539cb
@@ -894,9 +543,7 @@
   cytata: 'req->allow_broadcast
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: широкомовна розсилка - це broadcast, підтверджено в ESP-IDF WiFi header
   title: 'T-G-104: | широкомовна розсилка | broadcast |'
   match: \|\s+широкомовна\s+розсилка\s+\|
@@ -905,9 +552,7 @@
   quote: 'req->allow_broadcast
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: широкомовна розсилка - це broadcast, підтверджено в ESP-IDF WiFi header
   sha:
   - b535fc91
@@ -918,9 +563,7 @@
   cytata: 'measuring analog signals from multiple input channels
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: напруга - це voltage, підтверджено в документації ESP-IDF ADC
   title: 'T-G-108: | напруга | voltage |'
   match: \|\s+напруга\s+\|\s+voltage
@@ -929,9 +572,7 @@
   quote: 'measuring analog signals from multiple input channels
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: напруга - це voltage, підтверджено в документації ESP-IDF ADC
 - nazva: 'T-G-109: | струм | current |'
   zbih: \|\s+струм\s+\|\s+current
@@ -940,9 +581,7 @@
   cytata: 'higher current consumption
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: струм - це current, підтверджено в документації ESP-IDF
   title: 'T-G-109: | струм | current |'
   match: \|\s+струм\s+\|\s+current
@@ -951,33 +590,25 @@
   quote: 'higher current consumption
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: струм - це current, підтверджено в документації ESP-IDF
 - nazva: 'T-G-111: | потужність | power |'
   zbih: \|\s+потужність\s+\|\s+power
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
-  cytata: 'put the chip into Light-sleep mode to run an application at smallest possible power
-    consumption
+  cytata: 'put the chip into Light-sleep mode to run an application at smallest possible power consumption
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: потужність - це power, підтверджено в документації ESP-IDF
   title: 'T-G-111: | потужність | power |'
   match: \|\s+потужність\s+\|\s+power
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/power_management.rst
-  quote: 'put the chip into Light-sleep mode to run an application at smallest possible power
-    consumption
+  quote: 'put the chip into Light-sleep mode to run an application at smallest possible power consumption
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: потужність - це power, підтверджено в документації ESP-IDF
   sha:
   - 737f4aed
@@ -985,23 +616,19 @@
   zbih: \|\s+коефіцієнт\s+заповнення\s+\|
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-  cytata: 'The range of the duty cycle values passed to functions depends on selected duty_resolution
+  cytata: 'The range of the duty cycle values passed to functions depends on selected ``duty_resolution``
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: коефіцієнт заповнення - це duty cycle, підтверджено в документації ESP-IDF LEDC
   title: 'T-G-116: | коефіцієнт заповнення | duty cycle |'
   match: \|\s+коефіцієнт\s+заповнення\s+\|
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-  quote: 'The range of the duty cycle values passed to functions depends on selected duty_resolution
+  quote: 'The range of the duty cycle values passed to functions depends on selected ``duty_resolution``
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: коефіцієнт заповнення - це duty cycle, підтверджено в документації ESP-IDF LEDC
   sha:
   - 705e4498
@@ -1012,9 +639,7 @@
   cytata: 'resolution of the ADC result
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: роздільність - це resolution, підтверджено в документації ESP-IDF ADC
   title: 'T-G-117: | роздільність | resolution |'
   match: \|\s+роздільність\s+\|\s+resolution
@@ -1023,9 +648,7 @@
   quote: 'resolution of the ADC result
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: роздільність - це resolution, підтверджено в документації ESP-IDF ADC
   sha:
   - d39addb6
@@ -1036,9 +659,7 @@
   cytata: 'get more accurate output results
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: точність - це accuracy, підтверджено в документації ESP-IDF ADC калібрування
   title: 'T-G-118: | точність | accuracy |'
   match: \|\s+точність\s+\|\s+accuracy
@@ -1047,9 +668,7 @@
   quote: 'get more accurate output results
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: точність - це accuracy, підтверджено в документації ESP-IDF ADC калібрування
   sha:
   - 585a554e
@@ -1060,9 +679,7 @@
   cytata: 'ADC calibration driver to minimize the effect of different reference voltages
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: калібрування - це calibration, підтверджено в документації ESP-IDF
   title: 'T-G-119: | калібрування | calibration |'
   match: \|\s+калібрування\s+\|\s+calibration
@@ -1071,9 +688,7 @@
   quote: 'ADC calibration driver to minimize the effect of different reference voltages
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: калібрування - це calibration, підтверджено в документації ESP-IDF
   sha:
   - a2434656
@@ -1084,9 +699,7 @@
   cytata: 'multisampling may also be used to further mitigate the effects of noise
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: усереднення - це averaging/multisampling, підтверджено в документації ESP-IDF
   title: 'T-G-120: | усереднення | averaging |'
   match: \|\s+усереднення\s+\|\s+averaging
@@ -1095,9 +708,7 @@
   quote: 'multisampling may also be used to further mitigate the effects of noise
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: усереднення - це averaging/multisampling, підтверджено в документації ESP-IDF
   sha:
   - ca2d006a
@@ -1108,9 +719,7 @@
   cytata: 'Minimize Noise
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: шум - це noise, підтверджено в документації ESP-IDF ADC
   title: 'T-G-121: | шум | noise |'
   match: \|\s+шум\s+\|\s+noise
@@ -1119,9 +728,7 @@
   quote: 'Minimize Noise
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: шум - це noise, підтверджено в документації ESP-IDF ADC
   sha:
   - 24facb96
@@ -1132,11 +739,8 @@
   cytata: 'Espressif IoT Development Framework
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: IDF = Espressif IoT Development Framework підтверджено офіційною документацією
-    ESP-IDF
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: IDF = Espressif IoT Development Framework підтверджено офіційною документацією ESP-IDF
   title: 'T-G-141: | IDF | IoT Development Framework |'
   match: \|\s+IDF\s+\|\s+IoT
   status: verbatim
@@ -1144,9 +748,7 @@
   quote: 'Espressif IoT Development Framework
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: IDF = Espressif IoT Development Framework підтверджено офіційною документацією ESP-IDF
   sha:
   - '76955507'
@@ -1157,11 +759,8 @@
   cytata: 'FreeRTOS is an open source RTOS (real-time operating system)
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: RTOS = real-time operating system підтверджено у офіційній документації FreeRTOS
-    ESP-IDF
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: RTOS = real-time operating system підтверджено у офіційній документації FreeRTOS ESP-IDF
   title: 'T-G-142: | RTOS | Real-Time Operating System |'
   match: \|\s+RTOS\s+\|\s+Real\-Time
   status: verbatim
@@ -1169,9 +768,7 @@
   quote: 'FreeRTOS is an open source RTOS (real-time operating system)
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: RTOS = real-time operating system підтверджено у офіційній документації FreeRTOS ESP-IDF
   sha:
   - cb6ba9e9
@@ -1182,11 +779,8 @@
   cytata: 'Universal Asynchronous Receiver/Transmitter (UART)
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації
-    ESP-IDF
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації ESP-IDF
   title: 'T-G-150: | UART | Universal Asynchronous Receiver/Transmitter |'
   match: \|\s+UART\s+\|\s+Universal
   status: verbatim
@@ -1194,34 +788,25 @@
   quote: 'Universal Asynchronous Receiver/Transmitter (UART)
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  note: UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації
-    ESP-IDF
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: UART = Universal Asynchronous Receiver/Transmitter підтверджено у офіційній документації ESP-IDF
 - nazva: 'T-G-163: | WDT | Watchdog Timer |'
   zbih: \|\s+WDT\s+\|\s+Watchdog
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
-  cytata: 'The purpose of a watchdog timer is to monitor the system''s operation and automatically
-    recover from software or hardware faults by restarting the system
+  cytata: 'The purpose of a watchdog timer is to monitor the system''s operation and automatically recover from software or hardware faults by restarting the system
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: WDT як Watchdog Timer підтверджено у офіційній документації ESP-IDF
   title: 'T-G-163: | WDT | Watchdog Timer |'
   match: \|\s+WDT\s+\|\s+Watchdog
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/wdts.rst
-  quote: 'The purpose of a watchdog timer is to monitor the system''s operation and automatically
-    recover from software or hardware faults by restarting the system
+  quote: 'The purpose of a watchdog timer is to monitor the system''s operation and automatically recover from software or hardware faults by restarting the system
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: WDT як Watchdog Timer підтверджено у офіційній документації ESP-IDF
   sha:
   - 9860ee2c
@@ -1232,9 +817,7 @@
   cytata: 'Over The Air Updates (OTA)
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: OTA = Over-The-Air підтверджено у заголовку офіційної документації ESP-IDF
   title: 'T-G-146: | OTA | Over-The-Air (оновлення) |'
   match: \|\s+OTA\s+\|\s+Over\-The\-Air
@@ -1243,9 +826,7 @@
   quote: 'Over The Air Updates (OTA)
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: OTA = Over-The-Air підтверджено у заголовку офіційної документації ESP-IDF
   sha:
   - d1f5a6a0
@@ -1256,9 +837,7 @@
   cytata: 'Inter-IC Sound (I2S)
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: I²S = Inter-IC Sound підтверджено у заголовку офіційної документації ESP-IDF
   title: 'T-G-153: | I²S | Inter-IC Sound |'
   match: \|\s+I²S\s+\|\s+Inter\-IC
@@ -1267,9 +846,7 @@
   quote: 'Inter-IC Sound (I2S)
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: I²S = Inter-IC Sound підтверджено у заголовку офіційної документації ESP-IDF
   sha:
   - fd0801cd
@@ -1280,9 +857,7 @@
   cytata: 'JTAG (Joint Test Action Group) interface
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: JTAG = Joint Test Action Group підтверджено у документації налагодження ESP-IDF
   title: 'T-G-155: | JTAG | Joint Test Action Group (інтерфейс'
   match: \|\s+JTAG\s+\|\s+Joint
@@ -1291,9 +866,7 @@
   quote: 'JTAG (Joint Test Action Group) interface
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: JTAG = Joint Test Action Group підтверджено у документації налагодження ESP-IDF
   sha:
   - 92ee8915
@@ -1304,9 +877,7 @@
   cytata: 'Ultra Low Power (ULP) coprocessor
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: ULP = Ultra-Low-Power підтверджено у документації ESP-IDF
   title: 'T-G-162: | ULP | Ultra-Low-Power (співпроцесор) |'
   match: \|\s+ULP\s+\|\s+Ultra\-Low\-Power
@@ -1315,9 +886,7 @@
   quote: 'Ultra Low Power (ULP) coprocessor
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: ULP = Ultra-Low-Power підтверджено у документації ESP-IDF
   sha:
   - f9c75c29

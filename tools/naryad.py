@@ -57,6 +57,8 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
+
+import factcheck  # noqa: E402  — після sys.path
 CIL = ROOT / "factcheck" / "BRIEF-QUOTES.md"
 NA_PAKET = 5
 
@@ -117,7 +119,7 @@ def zapysy() -> dict[tuple[str, str], dict]:
         try:
             for z in (yaml.safe_load(f.read_text(encoding="utf-8")) or []):
                 if isinstance(z, dict):
-                    rec[(f.stem, str(z.get("title")))] = z
+                    rec[(f.stem, factcheck.nazva_zapysu(z))] = z
         except yaml.YAMLError:
             continue
     return rec
@@ -290,9 +292,14 @@ def main() -> int:
         if i % NA_PAKET == 0:
             r.append(f"\n## Пакет {i // NA_PAKET + 1}\n")
         z = rec.get((n["fayl"], n["nazva"]), {})
+        # `n` — звіт помічника (своя схема, не переїжджає), `z` — запис
+        # доказу (переїжджає). Однакові слова, різні структури: тому
+        # `n['nazva']` лишається, а `z` читається через `factcheck.pole`.
+        dzh = str(factcheck.pole(z, "source", "dzherelo", "?")).strip()
+        vz = str(factcheck.pole(z, "match", "zbih", "?"))[:200]
         r.append(f"**`{n['fayl']}`** · {n['nazva']}\n")
-        r.append(f"- джерело: {str(z.get('dzherelo', '?')).strip()}")
-        r.append(f"- у книзі шукати за взірцем: `{str(z.get('zbih', '?'))[:200]}`")
+        r.append(f"- джерело: {dzh}")
+        r.append(f"- у книзі шукати за взірцем: `{vz}`")
         r.append(f"- третій шар: {str(n.get('detali', ''))[:150]}\n")
 
     CIL.write_text("\n".join(r) + "\n", encoding="utf-8")

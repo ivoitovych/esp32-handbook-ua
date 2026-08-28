@@ -138,7 +138,7 @@ def tretiy_shar() -> dict[str, str]:
     except ImportError:
         return {}
     naslidky, _ = citaty.perevirka(True, [KANDYDATY])
-    return {str(n.get("title")): str(n.get("stan")) for n in naslidky}
+    return {str(n.get("nazva")): str(n.get("stan")) for n in naslidky}
 
 
 ZAHOLOVOK = """# Штурм класу `E`
@@ -199,9 +199,9 @@ def main() -> int:
     # супровідник, і саме на цьому тримається правило «чуже слово не
     # потрапляє в реєстр неперевіреним». `citaty.py` вміє читати запис
     # без класу — це стан вивантаження помічника, а не брак.
-    kand = [{"nazva": str(z.get("odynycya", "?")),
-             "dzherelo": str(z.get("source", "")).strip(),
-             "cytata": str(z.get("quote", "")),
+    kand = [{"title": str(z.get("odynycya", "?")),
+             "source": str(z.get("source", "")).strip(),
+             "quote": str(z.get("quote", "")),
              "syla": str(z.get("syla", "?")),
              "zvidky": z.get("_fayl", "?")}
             for z in zap if str(z.get("verdykt")) == "znayshov"]

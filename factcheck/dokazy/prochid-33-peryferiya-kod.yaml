@@ -1,146 +1,3 @@
-# Суцільний прохід — 33-peryferiya-kod.
-#
-# Посаджено `tools/prochid_posadka.py`. Сюди потрапляє лише
-# те, що пережило третій шар: цитата знайшлася в названому
-# документі дослівно. Заявок без такої перевірки тут немає.
-#
-# Взірці виведено механічно — найкоротший префікс, відмітний
-# у всьому реєстрі. Це компроміс між двома законами:
-# широкий взірець бреше, довгий ламається.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - nazva: 'T-33-012: `1ULL` обов''язково: на пінах вище 31 звичайний `1`'
   zbih: '`1ULL`\s+обов''язково:\s+на\s+пінах'
   klas: A
@@ -148,9 +5,7 @@
   cytata: '(1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1)
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: 1ULL obovyazkovo - na pinakh vyshe 31 zvychaynyy 1 perepovnytsya - pidtverdzheno
   title: 'T-33-012: `1ULL` обов''язково: на пінах вище 31 звичайний `1`'
   match: '`1ULL`\s+обов''язково:\s+на\s+пінах'
@@ -159,9 +14,7 @@
   quote: '(1ULL<<GPIO_OUTPUT_IO_0) | (1ULL<<GPIO_OUTPUT_IO_1)
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: 1ULL obovyazkovo - na pinakh vyshe 31 zvychaynyy 1 perepovnytsya - pidtverdzheno
   sha:
   - 0cfd0d0f
@@ -172,9 +25,7 @@
   cytata: 'gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: gpio_isr_handler_add vyzyv - pidtverdzheno v prykladi
   title: 'T-33-023: gpio_isr_handler_add(GPIO_NUM_5, isr, (void *)GPIO_NUM_5);'
   match: gpio_isr_handler_add\(GPIO_NUM_5,\s+isr,\s+\(void\s+\*\)GPIO_NUM_5\);
@@ -183,9 +34,7 @@
   quote: 'gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: gpio_isr_handler_add vyzyv - pidtverdzheno v prykladi
   sha:
   - 77ee66f9
@@ -196,9 +45,7 @@
   cytata: 'Generating periodic alarms to complete periodic tasks
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Hardvarni tajmery dlya periodychnykh zavdan - pidtverdzheno dokumentaciyeyu GPTimer
   title: 'T-33-029: Для більшості періодичних задач цього досить:'
   match: Для\s+більшості\s+періодичних\s+задач
@@ -207,9 +54,7 @@
   quote: 'Generating periodic alarms to complete periodic tasks
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Hardvarni tajmery dlya periodychnykh zavdan - pidtverdzheno dokumentaciyeyu GPTimer
   sha:
   - 61f1d984
@@ -217,49 +62,37 @@
   zbih: Це\s+основний\s+спосіб\s+міряти
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
-  cytata: 'The maximum count value depends on the bit width of the hardware timer (usually
-    no less than 54 bits)
+  cytata: 'The maximum count value depends on the bit width of the hardware timer (usually no less than ``54 bits``)
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Osnovnyi sposib miryaty chas - hardvarni tajmery z dovhoyu dozhyvayuchy bez perepolnenyya
   title: 'T-33-034: Це основний спосіб міряти час: переповнення не станеться'
   match: Це\s+основний\s+спосіб\s+міряти
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/gptimer.rst
-  quote: 'The maximum count value depends on the bit width of the hardware timer (usually
-    no less than 54 bits)
+  quote: 'The maximum count value depends on the bit width of the hardware timer (usually no less than ``54 bits``)
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Osnovnyi sposib miryaty chas - hardvarni tajmery z dovhoyu dozhyvayuchy bez perepolnenyya
 - nazva: 'T-33-049: Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення.'
   zbih: Яскравість\s+світлодіода\s+\*\*не\s+лінійна\*\*
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-  cytata: 'The luminance perceived by human eyes does not have a linear relationship with
-    the PWM duty cycle
+  cytata: 'The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Yaskravlist svitlodioda ne liniyna - pidtverdzheno teoriyu kvantu spryymanyya syatlova
   title: 'T-33-049: Яскравість світлодіода **не лінійна** щодо коефіцієнта заповнення.'
   match: Яскравість\s+світлодіода\s+\*\*не\s+лінійна\*\*
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-  quote: 'The luminance perceived by human eyes does not have a linear relationship with the
-    PWM duty cycle
+  quote: 'The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Yaskravlist svitlodioda ne liniyna - pidtverdzheno teoriyu kvantu spryymanyya syatlova
   sha:
   - 1c6e3022
@@ -267,25 +100,19 @@
   zbih: Плавне\s+згасання,\s+зроблене\s+лінійно,
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-  cytata: 'In order to make human feel the LED is dimming or lighting linearly, the change
-    in duty cycle should be non-linear
+  cytata: 'In order to make human feel the LED is dimming or lighting linearly, the change in duty cycle should be non-linear
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Plyavne zgasannya liniarne vyglyadaye yak stribhok - pidtverdzheno gamma korektsiyi
   title: 'T-33-051: Плавне згасання, зроблене лінійно, виглядає як різкий стрибок'
   match: Плавне\s+згасання,\s+зроблене\s+лінійно,
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-  quote: 'In order to make human feel the LED is dimming or lighting linearly, the change
-    in duty cycle should be non-linear
+  quote: 'In order to make human feel the LED is dimming or lighting linearly, the change in duty cycle should be non-linear
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Plyavne zgasannya liniarne vyglyadaye yak stribhok - pidtverdzheno gamma korektsiyi
   sha:
   - e20d58db
@@ -296,9 +123,7 @@
   cytata: 'motor bridges need complementary outputs and dead time
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Spilna zemlya obovyazkova dlya mostykiv - pidtverdzheno v MCPWMdokumentaciyi
   title: 'T-33-058: Спільна земля обов''язкова (розділ 48).'
   match: Спільна\s+земля\s+обов'язкова\s+\(розділ
@@ -307,9 +132,7 @@
   quote: 'motor bridges need complementary outputs and dead time
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Spilna zemlya obovyazkova dlya mostykiv - pidtverdzheno v MCPWMdokumentaciyi
   sha:
   - b1601e7b
@@ -317,51 +140,37 @@
   zbih: \-\s+\*\*мертвий\s+час\*\*\s+між
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/mcpwm_gen.rst
-  cytata: 'Dead time delays an output edge, leaving a short interval in which both switches
-    in a half bridge are off
+  cytata: 'Dead time delays an output edge, leaving a short interval in which both switches in a half bridge are off
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  notatka: Mertvyy chas zapobihaye naskriznomy strumevi - pidtverdzheno dokumentaciyeyu dead
-    time
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  notatka: Mertvyy chas zapobihaye naskriznomy strumevi - pidtverdzheno dokumentaciyeyu dead time
   title: 'T-33-060: - **мертвий час** між верхнім і нижнім плечем'
   match: \-\s+\*\*мертвий\s+час\*\*\s+між
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/mcpwm_gen.rst
-  quote: 'Dead time delays an output edge, leaving a short interval in which both switches
-    in a half bridge are off
+  quote: 'Dead time delays an output edge, leaving a short interval in which both switches in a half bridge are off
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
-  note: Mertvyy chas zapobihaye naskriznomy strumevi - pidtverdzheno dokumentaciyeyu dead
-    time
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  note: Mertvyy chas zapobihaye naskriznomy strumevi - pidtverdzheno dokumentaciyeyu dead time
 - nazva: 'T-33-075: Це правильний спосіб читати ІЧ-пульти й датчики з'
   zbih: Це\s+правильний\s+спосіб\s+читати
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
-  cytata: 'PCNT (Pulse Counter) module is designed to count the number of rising and/or falling
-    edges of input signals
+  cytata: 'PCNT (Pulse Counter) module is designed to count the number of rising and/or falling edges of input signals
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''Pravylnyy sposib chytaty IR-pulty - pidtverdzheno PCNT aparatnym lichylnykom'''
   title: 'T-33-075: Це правильний спосіб читати ІЧ-пульти й датчики з'
   match: Це\s+правильний\s+спосіб\s+читати
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
-  quote: 'PCNT (Pulse Counter) module is designed to count the number of rising and/or falling
-    edges of input signals
+  quote: 'PCNT (Pulse Counter) module is designed to count the number of rising and/or falling edges of input signals
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''Pravylnyy sposib chytaty IR-pulty - pidtverdzheno PCNT aparatnym lichylnykom'''
   sha:
   - ee324ede
@@ -372,9 +181,7 @@
   cytata: 'Decode quadrature signals into speed and direction
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''Enkoder, vytratomer - bez pereryvannya na kozhnyy impuls - pidtverdzheno'''
   title: 'T-33-077: Енкодер, витратомір, лічильник обертів — усе це не'
   match: Енкодер,\s+витратомір,\s+лічильник\s+обертів\s+—\s+усе\s+це\s+не\s+потребує\s+переривання
@@ -383,9 +190,7 @@
   quote: 'Decode quadrature signals into speed and direction
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''Enkoder, vytratomer - bez pereryvannya na kozhnyy impuls - pidtverdzheno'''
   sha:
   - cb13812b
@@ -393,25 +198,19 @@
   zbih: PCNT\s+уміє\s+й\s+апаратний
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
-  cytata: 'PCNT unit is equipped with a separate glitch filter, which is helpful to remove
-    noise from the signal
+  cytata: 'PCNT unit is equipped with a separate glitch filter, which is helpful to remove noise from the signal
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: '''Aparatnyy filtr korotkykh spleskviv - antydrebezh bez kodu - pidtverdzheno'''
   title: 'T-33-079: PCNT уміє й апаратний фільтр коротких сплесків —'
   match: PCNT\s+уміє\s+й\s+апаратний
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/pcnt.rst
-  quote: 'PCNT unit is equipped with a separate glitch filter, which is helpful to remove
-    noise from the signal
+  quote: 'PCNT unit is equipped with a separate glitch filter, which is helpful to remove noise from the signal
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: '''Aparatnyy filtr korotkykh spleskviv - antydrebezh bez kodu - pidtverdzheno'''
   sha:
   - a75f68d2
@@ -419,23 +218,19 @@
   zbih: Пам'ятайте:\s+вхід\s+не\s+толерантний
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
-  cytata: 'By design, Vref is set to 1100 mV
+  cytata: 'By design, ``Vref`` is set to 1100 mV
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Vkhid ne tolerannyy do perevishennya - pidtverdzheno referenciynym napryazhennyam
   title: 'T-33-091: Пам''ятайте: вхід не толерантний до перевищення — понад'
   match: Пам'ятайте:\s+вхід\s+не\s+толерантний
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/adc/index.rst
-  quote: 'By design, Vref is set to 1100 mV
+  quote: 'By design, ``Vref`` is set to 1100 mV
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Vkhid ne tolerannyy do perevishennya - pidtverdzheno referenciynym napryazhennyam
   sha:
   - 34c873e7
@@ -446,9 +241,7 @@
   cytata: 'ADC calibration
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Naydeshevche i naydiyevishe - pidtverdzheno kalibruvannyan
   title: 'T-33-103: Найдешевше і найдієвіше. 2.'
   match: Найдешевше\s+і\s+найдієвіше\.\s+2\.
@@ -457,9 +250,7 @@
   quote: 'ADC calibration
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Naydeshevche i naydiyevishe - pidtverdzheno kalibruvannyan
   sha:
   - 836b0a38
@@ -470,9 +261,7 @@
   cytata: 'Do not rely on the default configurations values
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Piny rizni za simeystvamy - pidtverdzheno v dokumentaciyi GPIO
   title: 'T-33-113: Піни **різні** за сімействами:'
   match: 'Піни\s+\*\*різні\*\*\s+за\s+сімействами:'
@@ -481,9 +270,7 @@
   quote: 'Do not rely on the default configurations values
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Piny rizni za simeystvamy - pidtverdzheno v dokumentaciyi GPIO
   sha:
   - 6b87ca03
@@ -491,25 +278,19 @@
   zbih: Яскравість\s+світлодіода\s+нелінійна\s+щодо
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-  cytata: 'The luminance perceived by human eyes does not have a linear relationship with
-    the PWM duty cycle
+  cytata: 'The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: Yaskravlist svitlodioda neliniyna - pidtverdzheno
   title: 'T-33-124: Яскравість світлодіода нелінійна щодо коефіцієнта заповнення.'
   match: Яскравість\s+світлодіода\s+нелінійна\s+щодо
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/ledc.rst
-  quote: 'The luminance perceived by human eyes does not have a linear relationship with the
-    PWM duty cycle
+  quote: 'The luminance perceived by human eyes does not have a linear relationship with the PWM duty cycle
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: Yaskravlist svitlodioda neliniyna - pidtverdzheno
   sha:
   - 3b0d82f6
@@ -520,9 +301,7 @@
   cytata: 'PCNT unit is equipped with a separate glitch filter
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: PCNT rakhuje impulsyuz bez pereryvanny - pidtverdzheno
   title: 'T-33-127: PCNT рахує імпульси без переривань і має апаратний'
   match: PCNT\s+рахує\s+імпульси\s+без\s+переривань\s+і
@@ -531,9 +310,7 @@
   quote: 'PCNT unit is equipped with a separate glitch filter
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: PCNT rakhuje impulsyuz bez pereryvanny - pidtverdzheno
   sha:
   - 93141a0c
@@ -541,27 +318,19 @@
   zbih: \[\[classic\]\]\s+\[\[S3\]\]\s+MCPWM\s+зроблений
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
-  cytata: 'MCPWM turns a counter into accurately timed output edges. It is a good fit when
-    an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead
-    time, inverters need synchronized phases
+  cytata: 'MCPWM turns a counter into accurately timed output edges. It is a good fit when an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead time, inverters need synchronized phases
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: MCPWM має функції силової електроніки, яких немає в LEDC
   title: 'T-33-059: [[classic]] [[S3]] MCPWM зроблений для силової електроніки й'
   match: \[\[classic\]\]\s+\[\[S3\]\]\s+MCPWM\s+зроблений
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm/index.rst
-  quote: 'MCPWM turns a counter into accurately timed output edges. It is a good fit when
-    an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead
-    time, inverters need synchronized phases
+  quote: 'MCPWM turns a counter into accurately timed output edges. It is a good fit when an LEDC-style PWM is no longer enough: motor bridges need complementary outputs and dead time, inverters need synchronized phases
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: MCPWM має функції силової електроніки, яких немає в LEDC
   sha:
   - 681bc71a
@@ -569,27 +338,19 @@
   zbih: RMT\s+задумувався\s+для\s+інфрачервоних
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
-  cytata: 'The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared
-    transceiver. However, due to the flexibility of its data format, RMT can be extended to
-    a versatile and general-purpose transceiver
+  cytata: 'The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared transceiver. However, due to the flexibility of its data format, RMT can be extended to a versatile and general-purpose transceiver
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: RMT розроблений для ІЧ пультів, але може бути універсальним генератором послідовностей
   title: 'T-33-062: RMT задумувався для інфрачервоних пультів, а виявився універсальним'
   match: RMT\s+задумувався\s+для\s+інфрачервоних
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
-  quote: 'The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared
-    transceiver. However, due to the flexibility of its data format, RMT can be extended to
-    a versatile and general-purpose transceiver
+  quote: 'The RMT (Remote Control Transceiver) peripheral was designed to act as an infrared transceiver. However, due to the flexibility of its data format, RMT can be extended to a versatile and general-purpose transceiver
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: RMT розроблений для ІЧ пультів, але може бути універсальним генератором послідовностей
   sha:
   - 9bc36e29
@@ -597,25 +358,19 @@
   zbih: RMT\s+уміє\s+й\s+приймати
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
-  cytata: 'The RMT receiver can sample incoming signals into RMT data format, and store the
-    data in memory
+  cytata: 'The RMT receiver can sample incoming signals into RMT data format, and store the data in memory
 
     '
-  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  sposib: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   notatka: RMT може приймати і вимірювати тривалість сигналів
   title: 'T-33-074: RMT уміє й приймати — вимірювати тривалість вхідних'
   match: RMT\s+уміє\s+й\s+приймати
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
-  quote: 'The RMT receiver can sample incoming signals into RMT data format, and store the
-    data in memory
+  quote: 'The RMT receiver can sample incoming signals into RMT data format, and store the data in memory
 
     '
-  method: Source document retrieved 2026-08-27 and the quote verified against it by substring
-    match. Status `verbatim` means the document was obtained and the quote is exact — it does
-    **not** mean a maintainer read the passage and agreed. That judgement is separate work.
+  method: Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
   note: RMT може приймати і вимірювати тривалість сигналів
   sha:
   - be56e056

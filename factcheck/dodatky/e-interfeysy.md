@@ -5653,7 +5653,7 @@ RadioLib для SX1276 і SX1262 підтверджує режим 0 дослі�
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/rmt.rst
 - **Дослівно з джерела:**
-  > rmt/led_strip demonstrates how to use the RMT peripheral to drive a WS2812 LED strip
+  > rmt/led_strip` demonstrates how to use the RMT peripheral to drive a WS2812 LED strip
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** ESP-IDF документація підтверджує, що WS2812 керується через RMT, не програмно
 - **Прохід:** prochid-e-interfeysy

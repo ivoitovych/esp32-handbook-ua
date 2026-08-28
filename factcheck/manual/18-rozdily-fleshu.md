@@ -1037,7 +1037,7 @@
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > phy (1) is for storing PHY initialisation data. This allows PHY to be configured per-device, instead of in firmware.
+  > phy`` (1) is for storing PHY initialisation data. This allows PHY to be configured per-device, instead of in firmware.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що phy_init зберігає калібрувальні дані радіо
 - **Прохід:** prochid-18-rozdily-fleshu
@@ -1309,7 +1309,7 @@ python $IDF_PATH/components/partition_table/gen_esp32part.py pt.bin
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > If you configure the partition table CSV name in the project configuration (idf.py menuconfig) and then build the project
+  > If you configure the partition table CSV name in the project configuration (``idf.py menuconfig``) and then build the project
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що розбивка задається текстовим CSV файлом
 - **Прохід:** prochid-18-rozdily-fleshu
@@ -2813,7 +2813,7 @@ ESP_ERROR_CHECK(err);
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > spiffs (0x82) is for :doc:`/api-reference/storage/spiffs`
+  > spiffs`` (0x82) is for :doc:`/api-reference/storage/spiffs`
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** SPIFFS є частиною ESP-IDF, наведено посилання на внутрішню документацію
 - **Прохід:** prochid-18-rozdily-fleshu
@@ -3068,7 +3068,7 @@ idf.py add-dependency "joltwallet/littlefs^1.22.3"
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > littlefs (0x83) is for LittleFS filesystem
+  > littlefs`` (0x83) is for `LittleFS filesystem
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує, що littlefs є дійсним типом розділу в CSV
 - **Прохід:** prochid-18-rozdily-fleshu
@@ -3501,7 +3501,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > The simplest way to use the partition table is to open the project configuration menu (idf.py menuconfig) and choose one of the simple predefined partition tables
+  > The simplest way to use the partition table is to open the project configuration menu (``idf.py menuconfig``) and choose one of the simple predefined partition tables
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує наявність готових розбивок різних розмірів
 - **Прохід:** prochid-18-rozdily-fleshu
@@ -3632,7 +3632,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > Note that updating the partition table does not erase data that may have been stored according to the old partition table. You can use idf.py erase-flash (or esptool erase-flash) to erase the entire flash contents.
+  > Note that updating the partition table does not erase data that may have been stored according to the old partition table. You can use ``idf.py erase-flash`` (or ``esptool erase-flash``) to erase the entire flash contents.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** підтверджує важливість раннього вибору розбивки
 - **Прохід:** prochid-18-rozdily-fleshu
@@ -3663,7 +3663,7 @@ Error: app partition is too small for binary app.bin size 0x123456
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/partition-tables.rst
 - **Дослівно з джерела:**
-  > If Secure Boot V1 is enabled, then the partition of type app needs to have size aligned to 0x10000 (64 KB) boundary.
+  > If Secure Boot V1 is enabled, then the partition of type ``app`` needs to have size aligned to 0x10000 (64 KB) boundary.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** показує, що зміна розбивки потребує перепрошивки
 - **Прохід:** prochid-18-rozdily-fleshu

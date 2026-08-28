@@ -4305,7 +4305,7 @@ i2c_new_master_bus — 215, 326, 332
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/i2c.rst
 - **Дослівно з джерела:**
-  > i2c_new_master_bus can be called to allocate and initialize an I2C master bus
+  > i2c_new_master_bus` can be called to allocate and initialize an I2C master bus
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** функція для створення нової шини I2C у режимі майстра
 - **Прохід:** prochid-z-pokazhchyk
@@ -5850,7 +5850,7 @@ vTaskDelay — 19, 100, 169, 191, 198–200, 276, 330, 339, 343, 346, 352, 371
 
 ---
 
-<!-- fc id:T-Z-191 sha:66b81d51 src:dodatky/z-pokazhchyk.md:820 klas:A -->
+<!-- fc id:T-Z-191 sha:66b81d51 src:dodatky/z-pokazhchyk.md:820 klas:E -->
 ### T-Z-191 · proza · `dodatky/z-pokazhchyk.md`
 
 **Твердження, коротко**
@@ -5867,27 +5867,7 @@ write-flash — 15–16, 25, 35–36, 93, 122, 124–127, 140, 143–145, 310, 3
 
 **Доказ**
 
-- **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
-- **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
-- **Дослівно з джерела:**
-  > The preferred way to invoke esptool command-line tools has changed. Instead of running
-  > the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
-  > - ``esptool.py`` → ``esptool``
-  > - ``espefuse.py`` → ``espefuse``
-  > …
-  > All the commands and options have been renamed to use ``-`` instead of ``_`` as a separator
-  > (e.g., ``write_flash`` -> ``write-flash``).
-  > 
-  > Old command and option names are **deprecated**, meaning they will work for now with a
-  > warning, but will be removed in the next major release.
-  > 
-  > This change affects most of the commands and the following options: ``--flash_size``,
-  > ``--flash_mode``, ``--flash_freq``, ``--use_segments``.
-  > …
-  > 1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
-- **Спосіб і дата:** curl raw.githubusercontent, 2026-08-26
-- **Нотатка:** Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім'я на v5 **працює** з попередженням про застарілість, а нове ім'я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.
-- **Прохід:** pass-06-komandy-strapping
+- **Клас:** F — не звірено
 
 ---
 

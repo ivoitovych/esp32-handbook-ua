@@ -1,31 +1,10 @@
-# Прохід 6 — командний рядок esptool і механізм strapping.
-#
-# Дві найбільші групи, що лишалися незакритими після п'яти проходів.
-# Обидві виявилися досяжними: esptool має відкриті репозиторій і
-# документацію, а механізм MTDI описаний у Kconfig самого бутлоадера.
-#
-# Прохід дав дві знахідки: одне перебільшення й одне спрощення, обидва в
-# місцях, де читач діє за текстом.
-
-
-
-
-
-
-
-
-
-
-
 - nazva: Синтаксис esptool v5 — дефіси замість підкреслень, без .py
-  zbih: esptool v5|write_flash|write-flash|синтаксис\w* v5|--flash_size|`esptool\.py`
+  zbih: esptool v5|write_flash|v5 → `write-flash`|`write-flash` на v4|синтаксис\w* v5|--flash_size|`esptool\.py`
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
-  cytata: 'The preferred way to invoke esptool command-line tools has changed. Instead of
-    running
+  cytata: 'The preferred way to invoke esptool command-line tools has changed. Instead of running
 
-    the scripts with `.py` suffix, you should now use the console scripts without the `.py`
-    suffix.
+    the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
 
     - ``esptool.py`` → ``esptool``
 
@@ -49,26 +28,18 @@
 
     …
 
-    1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your
-    scripts.
+    1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
 
     '
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють,
-    і навпаки» — симетрично. Насправді напрямки різні: старе ім''я на v5 **працює** з попередженням
-    про застарілість, а нове ім''я на v4 не працює зовсім. Різниця практична: читач, який
-    скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на
-    наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування
-    торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before`
-    і `--after`, які книга вже вживає в новій формі в додатку C.'
+  notatka: 'Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім''я на v5 **працює** з попередженням про застарілість, а нове ім''я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.'
   title: Синтаксис esptool v5 — дефіси замість підкреслень, без .py
-  match: esptool v5|write_flash|write-flash|синтаксис\w* v5|--flash_size|`esptool\.py`
+  match: esptool v5|write_flash|v5 → `write-flash`|`write-flash` на v4|синтаксис\w* v5|--flash_size|`esptool\.py`
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/migration-guide.rst
   quote: 'The preferred way to invoke esptool command-line tools has changed. Instead of running
 
-    the scripts with `.py` suffix, you should now use the console scripts without the `.py`
-    suffix.
+    the scripts with `.py` suffix, you should now use the console scripts without the `.py` suffix.
 
     - ``esptool.py`` → ``esptool``
 
@@ -92,89 +63,40 @@
 
     …
 
-    1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your
-    scripts.
+    1. Replace all underscores in the ``--before`` and ``--after`` options with ``-`` in your scripts.
 
     '
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють,
-    і навпаки» — симетрично. Насправді напрямки різні: старе ім''я на v5 **працює** з попередженням
-    про застарілість, а нове ім''я на v4 не працює зовсім. Різниця практична: читач, який
-    скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на
-    наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування
-    торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before`
-    і `--after`, які книга вже вживає в новій формі в додатку C.'
+  note: 'Знахідка проходу. Книга стверджувала, що команди v4 «дослівно на v5 не працюють, і навпаки» — симетрично. Насправді напрямки різні: старе ім''я на v5 **працює** з попередженням про застарілість, а нове ім''я на v4 не працює зовсім. Різниця практична: читач, який скопіював `write_flash` і побачив результат, вирішить, що все гаразд, — і зламається на наступному major-релізі. Виправлено в розділі 17, заразом додано те, чого бракувало: перейменування торкнулося й опцій (`--flash_size`, `--flash_mode`, `--flash_freq`) та значень `--before` і `--after`, які книга вже вживає в новій формі в додатку C.'
 - nazva: read-flash з ALL визначає обсяг флешу сам
   zbih: read-flash 0 ALL|`ALL` читає рівно стільки
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
-  cytata: "The read-flash command allows reading back the contents of flash. The arguments\
-    \ to the\ncommand are an address, a size, and a file path to output to. For example, to\
-    \ read a full\n2MB of attached flash:\n\n    esptool -p PORT -b 460800 read-flash 0 0x200000\
-    \ flash_contents.bin\n\nSize can be specified in bytes, or with suffixes like ``k`` and\
-    \ ``M``. So ``0x200000`` in\nexample can be replaced with ``2M``.\n\nIt is also possible\
-    \ to autodetect flash size by using ``ALL`` as size.\n\n    esptool -p PORT -b 460800\
-    \ read-flash 0 ALL flash_contents.bin\n"
+  cytata: "The read-flash command allows reading back the contents of flash. The arguments to the\ncommand are an address, a size, and a file path to output to. For example, to read a full\n2MB of attached flash:\n\n    esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin\n\nSize can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in\nexample can be replaced with ``2M``.\n\nIt is also possible to autodetect flash size by using ``ALL`` as size.\n\n    esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний
-    варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно
-    те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`,
-    тобто `4M` замість `0x400000`.'
+  notatka: 'Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.'
   title: read-flash з ALL визначає обсяг флешу сам
   match: read-flash 0 ALL|`ALL` читає рівно стільки
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-commands.rst
-  quote: "The read-flash command allows reading back the contents of flash. The arguments\
-    \ to the\ncommand are an address, a size, and a file path to output to. For example, to\
-    \ read a full\n2MB of attached flash:\n\n    esptool -p PORT -b 460800 read-flash 0 0x200000\
-    \ flash_contents.bin\n\nSize can be specified in bytes, or with suffixes like ``k`` and\
-    \ ``M``. So ``0x200000`` in\nexample can be replaced with ``2M``.\n\nIt is also possible\
-    \ to autodetect flash size by using ``ALL`` as size.\n\n    esptool -p PORT -b 460800\
-    \ read-flash 0 ALL flash_contents.bin\n"
+  quote: "The read-flash command allows reading back the contents of flash. The arguments to the\ncommand are an address, a size, and a file path to output to. For example, to read a full\n2MB of attached flash:\n\n    esptool -p PORT -b 460800 read-flash 0 0x200000 flash_contents.bin\n\nSize can be specified in bytes, or with suffixes like ``k`` and ``M``. So ``0x200000`` in\nexample can be replaced with ``2M``.\n\nIt is also possible to autodetect flash size by using ``ALL`` as size.\n\n    esptool -p PORT -b 460800 read-flash 0 ALL flash_contents.bin\n"
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний
-    варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно
-    те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`,
-    тобто `4M` замість `0x400000`.'
+  note: 'Підтверджує і саму команду знімання дампа (картка К2, розділи 17, 20, 22), і запасний варіант із явним обсягом, який книга радить, коли `ALL` не підтримується. Заразом видно те, чого книга не згадує й що варте наступного проходу: розмір приймає суфікси `k` і `M`, тобто `4M` замість `0x400000`.'
 - nazva: MTDI (GPIO12) задає напругу VDDSDIO для мікросхеми флешу
   zbih: MTDI|VDDSDIO|найзліший пін|напругу внутрішнього стабілізатора
   klas: A
   dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
-  cytata: "choice BOOTLOADER_VDDSDIO_BOOST\n    bool \"VDDSDIO LDO voltage\"\n    default\
-    \ BOOTLOADER_VDDSDIO_BOOST_1_9V\n    depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED\n \
-    \   help\n        If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse\n\
-    \        or MTDI bootstrapping pin), bootloader will change LDO settings to\n        output\
-    \ 1.9V instead. This helps prevent flash chip from browning out\n        during flash\
-    \ programming operations.\n\n        This option has no effect if VDDSDIO is set to 3.3V,\
-    \ or if the internal\n        VDDSDIO regulator is disabled via eFuse.\n"
+  cytata: "choice BOOTLOADER_VDDSDIO_BOOST\n    bool \"VDDSDIO LDO voltage\"\n    default BOOTLOADER_VDDSDIO_BOOST_1_9V\n    depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED\n    help\n        If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse\n        or MTDI bootstrapping pin), bootloader will change LDO settings to\n        output 1.9V instead. This helps prevent flash chip from browning out\n        during flash programming operations.\n\n        This option has no effect if VDDSDIO is set to 3.3V, or if the internal\n        VDDSDIO regulator is disabled via eFuse.\n"
   sposib: curl raw.githubusercontent, 2026-08-26
-  notatka: 'Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу,
-    яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і
-    сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький
-    — 3.3 В.
+  notatka: 'Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
 
-    З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому,
-    що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається.
-    На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює»
-    тут не доводить нічого. Додано в розділ 07.'
+    З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.'
   title: MTDI (GPIO12) задає напругу VDDSDIO для мікросхеми флешу
   match: MTDI|VDDSDIO|найзліший пін|напругу внутрішнього стабілізатора
   status: verbatim
   source: https://raw.githubusercontent.com/espressif/esp-idf/release/v5.5/components/bootloader/Kconfig.projbuild
-  quote: "choice BOOTLOADER_VDDSDIO_BOOST\n    bool \"VDDSDIO LDO voltage\"\n    default BOOTLOADER_VDDSDIO_BOOST_1_9V\n\
-    \    depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED\n    help\n        If this option is\
-    \ enabled, and VDDSDIO LDO is set to 1.8V (using eFuse\n        or MTDI bootstrapping\
-    \ pin), bootloader will change LDO settings to\n        output 1.9V instead. This helps\
-    \ prevent flash chip from browning out\n        during flash programming operations.\n\
-    \n        This option has no effect if VDDSDIO is set to 3.3V, or if the internal\n  \
-    \      VDDSDIO regulator is disabled via eFuse.\n"
+  quote: "choice BOOTLOADER_VDDSDIO_BOOST\n    bool \"VDDSDIO LDO voltage\"\n    default BOOTLOADER_VDDSDIO_BOOST_1_9V\n    depends on SOC_CONFIGURABLE_VDDSDIO_SUPPORTED\n    help\n        If this option is enabled, and VDDSDIO LDO is set to 1.8V (using eFuse\n        or MTDI bootstrapping pin), bootloader will change LDO settings to\n        output 1.9V instead. This helps prevent flash chip from browning out\n        during flash programming operations.\n\n        This option has no effect if VDDSDIO is set to 3.3V, or if the internal\n        VDDSDIO regulator is disabled via eFuse.\n"
   method: curl raw.githubusercontent, 2026-08-26
-  note: 'Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку
-    стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам
-    стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький
-    — 3.3 В.
+  note: 'Знахідка проходу — уточнення механізму. Книга писала, що GPIO12 «задає напругу, яку стабілізатор подає на мікросхему флешу», і на цьому зупинялася. Kconfig називає і сам стабілізатор (`VDDSDIO`), і обидва значення: високий рівень MTDI дає **1.8 В**, низький — 3.3 В.
 
-    З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому,
-    що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається.
-    На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює»
-    тут не доводить нічого. Додано в розділ 07.'
+    З цього випливає те, чого в книзі не було і що змінює діагностику: плата мовчить не тому, що «пін злий», а тому, що на більшості модулів флеш тривольтовий і від 1.8 В не запускається. На модулі з 1.8-вольтовим флешем той самий рівень — правильний. Тобто «у сусіда працює» тут не доводить нічого. Додано в розділ 07.'

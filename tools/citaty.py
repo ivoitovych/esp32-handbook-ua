@@ -132,15 +132,90 @@ def rozgornuty(url: str) -> list[str]:
     return out
 
 
-def imya_dlya(url: str) -> str:
-    """Ім'я файлу в кеші, унікальне за URL.
+_IMENA_Z_MANIFESTU: dict[str, str] | None = None
 
-    Базове ім'я збігається надто часто — у дереві ESP-IDF десятки файлів
-    `esp32.inc` і сотні `*.h`. Тому до нього додається короткий хеш
-    повного URL: ім'я лишається читним, а зіткнення зникають.
+
+def _z_manifestu() -> dict[str, str]:
+    """URL → ім'я файлу, як його **записав маніфест**.
+
+    Маніфест — єдине, що входить у git (самі файли ні: копірайт). Він
+    записує ім'я кожного файлу разом із URL, тобто відповідь на це
+    питання вже існує.
     """
+    global _IMENA_Z_MANIFESTU
+    if _IMENA_Z_MANIFESTU is not None:
+        return _IMENA_Z_MANIFESTU
+    _IMENA_Z_MANIFESTU = {}
+    m = KESH / "MANIFEST.md"
+    if not m.exists():
+        return _IMENA_Z_MANIFESTU
+
+    usi: dict[str, list[str]] = {}
+    for r in re.finditer(
+            r"^\| `([^`]+)` \| `[0-9a-f]{64}` \| \d+ \| [\d-]+ \| "
+            r"<([^>]+)> \|$", m.read_text(encoding="utf-8"), re.M):
+        usi.setdefault(r.group(2), []).append(r.group(1))
+
+    # **Один URL часто має в маніфесті два рядки** — старе покоління
+    # імені й нове, бо перейменування дописувало рядок, а не міняло
+    # його. Виміряно: 357 рядків на 276 URL, тобто 78 URL мають по два
+    # імені, і в контейнері існує рівно одне з них — те, під яким файл
+    # качали тут.
+    #
+    # Тому «перший рядок» — хибне правило: рядки впорядковані за
+    # іменем, а не за дійсністю, і перший часто вказує на файл, якого в
+    # цьому контейнері немає. Питання, на яке треба відповісти, не «яке
+    # ім'я записане», а «під яким іменем файл лежить **тут**».
+    for url, imena in usi.items():
+        ye = [i for i in imena if (KESH / i).exists()]
+        if ye:
+            _IMENA_Z_MANIFESTU[url] = ye[0]
+        else:
+            # Файлу немає ні під яким іменем — беремо виведене, якщо
+            # воно серед записаних, інакше перше. Різниці для звірки
+            # немає (обидва не відкриються), але звіт назве те ім'я,
+            # яке дало б сьогоднішнє правило.
+            vyved = vyvesty_imya(url)
+            _IMENA_Z_MANIFESTU[url] = (vyved if vyved in imena
+                                       else sorted(imena)[0])
+    return _IMENA_Z_MANIFESTU
+
+
+def vyvesty_imya(url: str) -> str:
+    """Ім'я з URL — правило поточного покоління."""
     baza = re.sub(r"[^\w.-]", "_", url.rsplit("/", 1)[-1] or "bez-imeni")
     return f"{hashlib.sha256(url.encode()).hexdigest()[:8]}-{baza}"[:96]
+
+
+def imya_dlya(url: str) -> str:
+    """Ім'я файлу в кеші: спершу **маніфест**, і лише потім виведення.
+
+    Базове ім'я збігається надто часто — у дереві ESP-IDF десятки файлів
+    `esp32.inc` і сотні `*.h`. Тому виведене ім'я несе короткий хеш
+    повного URL: ім'я лишається читним, а зіткнення зникають.
+
+    ## Чому виведення тут друге, а не єдине
+
+    Правило іменування вже мінялося раз, і 54 файли лишилися під старим
+    поколінням. Шар 3 їх не відкривав: він виводив нове ім'я, файл під
+    ним не існував, і доказ ставав «джерело не в кеші» — мовчки, у
+    вигляді, не відрізнюваному від справжньої недосяжності. М2
+    перейшли на це чотири рази за годину, перейменовуючи файли руками
+    зі звіркою sha256.
+
+    Перейменування закриває сьогоднішній біль і лишає рід. Рід ось
+    який: **ім'я виводиться з URL, хоча маніфест його вже записав** —
+    два джерела істини для одного факту, рівно те, що ми впіймали в
+    подвійних іменах полів. Тому маніфест головний, а виведення —
+    запасне, для URL, якого в маніфесті ще немає.
+
+    > Виводити те, що вже записано, — значить обіцяти, що правило
+    > виведення ніколи не зміниться. Воно вже змінилося.
+    """
+    z_manifestu = _z_manifestu().get(url)
+    if z_manifestu:
+        return z_manifestu
+    return vyvesty_imya(url)
 
 
 def zavantazhyty(url: str, cil: Path) -> bool:
@@ -375,7 +450,7 @@ def plaskyy(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def uryvky(cytata: str) -> list[list[str]]:
+def uryvky(cytata: str, vlasna_mova: bool = False) -> list[list[str]]:
     """Придатні до перевірки групи рядків цитати.
 
     Відкидаємо: наші примітки (кирилиця), місця з вирізаним текстом
@@ -384,13 +459,30 @@ def uryvky(cytata: str) -> list[list[str]]:
 
     Повертаємо **групи рядків**, а не злитий текст, бо перевіряти
     доводиться двома способами (див. `znayty`).
+
+    ## `vlasna_mova` — і чому без нього клас `S` був би порожній
+
+    Правило «кирилиця — це наша примітка, а не цитата» правильне рівно
+    доти, доки джерело англійське. Для класу `S` джерелом є **книга**,
+    і тоді кожен справжній уривок кирилицею.
+
+    Виміряно на 21 записі внутрішньої звірки: без цього прапорця
+    придатних уривків не мали **15 із 21**, і шар 3 сказав би про них
+    «нема чого звіряти» — тобто клас, заведений щоб зафіксувати
+    зроблену звірку, звітував би, що звіряти нічого.
+
+    > Фільтр, слушний для одного корпусу, застосований до іншого,
+    > викидає все — і мовчить тим самим словом, яким каже «чисто».
+
+    Решта відсіву лишається чинною: багатокрапка й тут означає
+    вирізаний текст, а короткий рядок і тут збіжиться з чим завгодно.
     """
     grupy: list[list[str]] = [[]]
     for ryadok in cytata.splitlines():
         r = ryadok.strip()
         pryydatnyy = (
             r
-            and not RE_KYRYLYCYA.search(r)
+            and (vlasna_mova or not RE_KYRYLYCYA.search(r))
             and not RE_PROPUSK.search(r)
             and not RE_POZNACHKA.match(r)
             and len(r) >= MIN_DOVZHYNA
@@ -492,6 +584,32 @@ def korin_dlya(povnyy: str, skorocheno: str) -> str | None:
     return povnyy[:i + 1] if i > 0 else None
 
 
+RE_SHLYAKH_KNYHY = re.compile(
+    r"\b(?:manual|kartky|dodatky|inserts)/[\w.\-]+\.md\b")
+
+
+def knyzhkovi_dzherela(z: dict) -> list[Path]:
+    """Файли **книги**, названі в джерелі запису класу `S`.
+
+    `S` — внутрішня звірка: твердження доводиться не зовнішнім
+    документом, а іншим місцем цієї ж книги. Такий доказ нічого не
+    каже про світ, зате каже щось перевірне про книгу — що вона
+    сходиться сама з собою.
+
+    Тому він **мусить** проходити третій шар, як і всі інші, просто
+    корпусом йому є книга, а не кеш джерел. Інакше `S` був би ярликом,
+    що стверджує звірку, якої ніхто не робить, — рід 24 у `DEFECTS.md`,
+    записаний того самого дня, що й цей клас.
+    """
+    syryy = str(z.get("source") or z.get("dzherelo") or "")
+    out: list[Path] = []
+    for s in RE_SHLYAKH_KNYHY.findall(syryy):
+        p = ROOT / s
+        if p.exists() and p not in out:
+            out.append(p)
+    return out
+
+
 def dzherela_zapysu(z: dict) -> list[str]:
     """Усі адреси запису, з розгорнутими скороченнями.
 
@@ -547,7 +665,7 @@ def perevirka(kachaty: bool,
         for z in zapysy:
             if not isinstance(z, dict):
                 continue
-            nazva = str(z.get("title", "?"))
+            nazva = factcheck.nazva_zapysu(z)
             # **Відсутність класу — не те саме, що клас `F`.**
             #
             # У реєстрі клас є завжди. У вивантаженні помічника його
@@ -559,7 +677,16 @@ def perevirka(kachaty: bool,
             # просто немає, і валила **всю** хвилю помічника як «хибні
             # записи» — не перевіривши жодної цитати. Тобто ворота, що
             # мали ловити брак, приховали роботу.
-            maye_klas = "klas" in z
+            # Було `"klas" in z` — перевірка наявності **старого**
+            # імені. Після стиснення воно хибне завжди, і умови нижче
+            # («A без цитати», «доказ класу F») не спрацьовують більше
+            # ніколи. Прогін М2 показав це так: «звірено 508» до і
+            # «звірено 508» після, а 23 записи тим часом переїхали з
+            # «перевіряється» в «нема чого звіряти».
+            #
+            # > Перевірка вертає те саме число, і те саме число нічого
+            # > не означає.
+            maye_klas = bool(z.get("status") or z.get("klas"))
             klas = factcheck.klas_zapysu(z, "").strip().upper()
 
             # Клас `F` — це «не звірено», типовий стан **відсутності**
@@ -598,10 +725,10 @@ def perevirka(kachaty: bool,
             # стоїть міркування. Див. RE_SCHOS_SCHO_MOZHE_BUTY_DOKUMENTOM.
             if maye_klas and klas in ("A", "B") and not dzherelo_rozvyazne(z):
                 pidsumok["vygadane"] = pidsumok.get("vygadane", 0) + 1
+                dzh = str(factcheck.pole(z, "source", "dzherelo") or "")[:60]
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="vygadane",
-                    detali=f"клас {klas}, а джерело — не документ: "
-                           f"«{str(z.get('dzherelo') or '')[:60]}»"))
+                    detali=f"клас {klas}, а джерело — не документ: «{dzh}»"))
                 continue
 
             # **Надмірний `E` — дзеркало вигаданого джерела.** Знахідка
@@ -668,9 +795,13 @@ def perevirka(kachaty: bool,
                 frahmenty = [[str(k).strip()] for k in tablychna
                              if str(k).strip()]
             else:
-                frahmenty = uryvky(str(z.get("quote") or ""))
+                frahmenty = uryvky(
+                    str(factcheck.pole(z, "quote", "cytata") or ""),
+                    vlasna_mova=(klas == "S"))
             urly = dzherela_zapysu(z)
-            if not frahmenty or not urly:
+            # Клас `S` адресує книгу, а не мережу, тож відсутність URL
+            # у нього — норма, а не «нема чого звіряти».
+            if not frahmenty or (not urly and klas != "S"):
                 pidsumok["nichoho"] += 1
                 naslidky.append(dict(
                     fayl=f.stem, nazva=nazva, stan="nichoho",
@@ -683,6 +814,20 @@ def perevirka(kachaty: bool,
             zaglushky: list[str] = []
             nechytni: list[str] = []
             tablychni = False
+
+            # Внутрішня звірка: корпус — названі файли книги.
+            if klas == "S":
+                shlyakhy = knyzhkovi_dzherela(z)
+                if not shlyakhy:
+                    pidsumok["pomylka"] = pidsumok.get("pomylka", 0) + 1
+                    naslidky.append(dict(
+                        fayl=f.stem, nazva=nazva, stan="pomylka",
+                        detali="клас S, а в джерелі немає шляху до файлу "
+                               "книги — звіряти нема з чим"))
+                    continue
+                teksty = [plaskyy(p.read_text(encoding="utf-8"))
+                          for p in shlyakhy]
+
             for u in urly:
                 if u not in kesh_tekstu:
                     cil = KESH / imya_dlya(u)

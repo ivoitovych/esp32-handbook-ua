@@ -3034,7 +3034,7 @@ esptool --port /dev/ttyUSB0 flash-id
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esptool/master/docs/en/esptool/basic-options.rst
 - **Дослівно з джерела:**
-  > If no -c option or ESPTOOL_CHIP value is specified, esptool automatically detects the chip type when connecting.
+  > If no ``-c`` option or ``ESPTOOL_CHIP`` value is specified, ``esptool`` automatically detects the chip type when connecting.
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** esptool автоматично виявляє тип мікросхеми при підключенні, що дозволяє перевірити інформацію про модуль
 - **Прохід:** prochid-23-triazh

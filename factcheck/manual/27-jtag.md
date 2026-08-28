@@ -55,7 +55,7 @@
 - **Клас:** ✅ A — первинне дослівне — витяг із першоджерела отримано й процитовано
 - **Джерело:** https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/jtag-debugging/index.rst
 - **Дослівно з джерела:**
-  > figuring out a bug that is caused by two threads, running even simultaneously on two different CPU cores, can take a long time when all you have are printf() statements. A better (and in many cases quicker) way to debug such problems is by using a debugger
+  > figuring out a bug that is caused by two threads, running even simultaneously on two different CPU cores, can take a long time when all you have are ``printf()`` statements. A better (and in many cases quicker) way to debug such problems is by using a debugger
 - **Спосіб і дата:** Source document retrieved 2026-08-27 and the quote verified against it by substring match. Status `verbatim` means the document was obtained and the quote is exact — it does **not** mean a maintainer read the passage and agreed. That judgement is separate work.
 - **Нотатка:** документація підтверджує що відлагоджувач дає більше інформації ніж логи
 - **Прохід:** prochid-27-jtag

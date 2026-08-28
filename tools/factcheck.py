@@ -44,12 +44,13 @@ KLASY = {
     "D": "обчислення — перевіряється арифметикою, зовнішнє джерело не потрібне",
     "E": "сигналу для звірки в тексті немає — присвоєно механічно, не перевірено",
     "L": "дивилися й не знайшли — робота зроблена, джерела не видно",
+    "S": "внутрішня звірка — книга сходиться сама з собою; зовнішнього підтвердження немає",
     "F": "не звірено",
     "G": "спростовано або потребує правки",
     "K": "контекст — блок коду цілком; твердження в його рядках",
 }
 ZNAK = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "🔴",
-        "G": "⚠", "K": "▫", "L": "🔎"}
+        "G": "⚠", "K": "▫", "L": "🔎", "S": "🔁"}
 
 # Один перелік на всіх. Додавання класу `L` показало, навіщо: `status`
 # перебирав рядок "ABCDEFG", і новий клас просто не з'явився у звіті —
@@ -64,7 +65,7 @@ KLASY_ODYNYC = "".join(k for k in KLASY if k != "K")   # без блоків к�
 
 RE_ZAPYS = re.compile(
     r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
-    r"\s+src:(?P<src>[^\s]+)\s+klas:(?P<klas>[A-GKL])\s*-->"
+    r"\s+src:(?P<src>[^\s]+)\s+klas:(?P<klas>[A-GKLS])\s*-->"
 )
 
 
@@ -399,6 +400,7 @@ SLOVO_V_LITERU = {
     "verbatim": "A", "derived": "B", "named-unreachable": "C",
     "arithmetic": "D", "no-external-signal": "E", "unchecked": "F",
     "refuted": "G", "code-context": "K", "looked-not-found": "L",
+    "self-consistent": "S",
 }
 
 
@@ -428,7 +430,8 @@ def klas_zapysu(z: dict, typovo: str = "F") -> str:
 
 
 # Сила класу доказу. Менше — сильніше.
-SYLA = {"A": 0, "B": 1, "D": 2, "C": 3, "L": 4, "E": 5, "G": 6, "F": 7}
+SYLA = {"A": 0, "B": 1, "D": 2, "C": 3, "S": 4, "L": 5, "E": 6,
+        "G": 7, "F": 8}
 
 
 def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
@@ -591,25 +594,67 @@ SHABLON_DOKAZU = """**Доказ**
 """
 
 
+def pole(z: dict, nove: str, stare: str, typovo=None):
+    """Поле запису доказу: англійське ім'я, старе як запас.
+
+    Генеральна репетиція стиснення (М2, 2026-08-28) показала, що
+    `formatuvaty_dokaz` брав поля **прямим доступом** `z['dzherelo']` —
+    і після прибирання старих імен `sketch` падав із `KeyError`, тобто
+    того ж дня ми лишалися без карток обоє.
+
+    > Один доступ рятує лише тих, хто ним ходить. `klas_zapysu()` був
+    > правильний і не допоміг чотирьом місцям, які повз нього.
+
+    Друга репетиція знайшла ще сім таких місць — і всі сім вціліли з
+    однієї причини: **вони писані одинарними лапками.** Переведення
+    шукало `z.get("nazva")`, а в коді стояло `z.get('nazva')`, і
+    заміна їх не бачила.
+
+    > Переведення, що шукає рядок, знаходить рівно той запис рядка,
+    > який шукає. Решта лишається — і виглядає переведеною.
+    """
+    v = z.get(nove)
+    return v if v not in (None, "") else z.get(stare, typovo)
+
+
+def nazva_zapysu(z: dict) -> str:
+    """Назва запису доказу — один доступ, як `klas_zapysu`.
+
+    Вісім місць показу брали `nazva_zapysu(z)` напряму. Після
+    стиснення всі вісім показували б `?` — не падіння, а мовчазна
+    втрата: звіт лишався б цілим і став би нечитним.
+    """
+    return str(pole(z, "title", "nazva", "?"))
+
+
 def formatuvaty_dokaz(z: dict | None) -> str:
     if not z:
         return SHABLON_DOKAZU
     klas = klas_zapysu(z)
     ch = [f"**Доказ**\n", f"- **Клас:** {ZNAK.get(klas,'')} {klas} — {KLASY.get(klas,'')}"]
-    if z.get("source"):
-        ch.append(f"- **Джерело:** {z['dzherelo']}")
-    if z.get("quote"):
-        tilo = "\n".join("  > " + x for x in str(z["quote"]).rstrip().split("\n"))
+    # Умова теж через `pole`, а не `z.get(нове)`. Інакше запис, у якому
+    # значення стоїть **лише** під старим іменем, мовчки лишався б без
+    # рядка: доступ полагоджено, а сторож — ні.
+    dzh = pole(z, "source", "dzherelo")
+    if dzh:
+        ch.append(f"- **Джерело:** {dzh}")
+    cyt = pole(z, "quote", "cytata")
+    if cyt:
+        tilo = "\n".join("  > " + x for x in str(cyt).rstrip().split("\n"))
         ch.append(f"- **Дослівно з джерела:**\n{tilo}")
-    if z.get("calculation"):
-        tilo = "\n".join("  " + x for x in str(z["calculation"]).rstrip().split("\n"))
+    rozr = pole(z, "calculation", "rozrakhunok")
+    if rozr:
+        tilo = "\n".join("  " + x for x in str(rozr).rstrip().split("\n"))
         ch.append(f"- **Розрахунок:**\n{tilo}")
-    if z.get("method"):
-        ch.append(f"- **Спосіб і дата:** {z['sposib']}")
-    if z.get("look_for"):
-        ch.append(f"- **Що шукати в джерелі:** {z['shukaty']}")
-    if z.get("note"):
-        ch.append(f"- **Нотатка:** {z['notatka']}")
+    sp = pole(z, "method", "sposib")
+    if sp:
+        ch.append(f"- **Спосіб і дата:** {sp}")
+    shuk = pole(z, "look_for", "shukaty")
+    if shuk:
+        ch.append(f"- **Що шукати в джерелі:** {shuk}")
+    nt = pole(z, "note", "notatka")
+    if nt:
+        ch.append(f"- **Нотатка:** {nt}")
     ch.append(f"- **Прохід:** {z.get('_prokhid','—')}")
     return "\n".join(ch) + "\n"
 
@@ -894,12 +939,12 @@ def sketch() -> int:
     if holosti:
         print(f"\n⚠ доказів, що нічого не зачепили: {len(holosti)}")
         for z in holosti:
-            print(f"    {z.get('nazva','?')}  ({z.get('_prokhid')})")
+            print(f"    {nazva_zapysu(z)}  ({z.get('_prokhid')})")
     if perekryti:
         print(f"\nперекрито сильнішим доказом: {len(perekryti)}")
         for z in perekryti:
-            print(f"    {z.get('nazva','?')}  "
-                  f"({z.get('_prokhid')}, клас {z.get('klas','?')})")
+            print(f"    {nazva_zapysu(z)}  "
+                  f"({z.get('_prokhid')}, клас {klas_zapysu(z, '?')})")
 
     # Аудит окремих альтернатив. Дві вади, невидимі вище:
     #
@@ -935,14 +980,14 @@ def sketch() -> int:
     if mertvi:
         print(f"\n⚠ альтернатив без жодного збігу: {len(mertvi)}")
         for z, ch, ch_prychyna in mertvi:
-            print(f"    {z.get('nazva','?')}  ({z.get('_prokhid')})"
+            print(f"    {nazva_zapysu(z)}  ({z.get('_prokhid')})"
                   f"\n        ↳ {ch}"
                   f"\n          ({ch_prychyna})")
     if shyroki and "-v" in sys.argv:
         print(f"\nальтернатив від {SHYROKA_ALTERNATYVA} збігів: "
               f"{len(shyroki)}")
         for z, ch, n in sorted(shyroki, key=lambda x: -x[2]):
-            print(f"  {n:>3}×  {z.get('nazva','?')}  ({z.get('_prokhid')})"
+            print(f"  {n:>3}×  {nazva_zapysu(z)}  ({z.get('_prokhid')})"
                   f"\n        ↳ {ch}")
     return 0
 
@@ -981,6 +1026,16 @@ def status() -> int:
         print(f"  {ZNAK[k]} {k}  {n:>5}  {n*100/vsjogo:5.1f}%   {KLASY[k]}")
     print(f"\n  звірено з джерелом або обчисленням (A+B+D): "
           f"{zvireno} ({zvireno*100/vsjogo:.1f}%)")
+    # `S` навмисно **поза** цим числом і навмисно окремим рядком.
+    #
+    # Поза — бо він не каже нічого про світ: книга, що сходиться сама з
+    # собою, може дружно помилятися в обох місцях. Окремо — бо `E` теж
+    # нічого не каже про світ, але `E` означає «звірки не було», а `S`
+    # означає «звірка була, механічна, відтворна, і вона зійшлася».
+    # Злити їх — значить викинути єдине, що тут виміряно.
+    if c.get("S"):
+        print(f"  внутрішня звірка, зовнішнього підтвердження немає (S): "
+              f"{c['S']}")
     print(f"  закрито як рішення (E): {c.get('E',0)}")
     print(f"  лишається (C+F+G): {c.get('C',0)+c.get('F',0)+c.get('G',0)}")
     # за файлами: де найбільше незакритого
@@ -1106,7 +1161,13 @@ def blocked() -> int:
         sh = (re.search(r"\*\*Що шукати в джерелі:\*\*\s*(.+)", z["tilo"]) or [None, ""])[1]
         m = RE_TVERDZHENNYA.search(z["tilo"])
         txt = " ".join(m.group(1).replace("> ", "").split()) if m else ""
-        g = grupy.setdefault(u, {"shukaty": set(), "tverdzhennya": []})
+        # Це **не** запис доказу, а місцевий словник групування. Слово
+        # те саме, схема інша — і саме тому переведення імен полів його
+        # зачепило: заміна за рядком перейменувала три **читання**
+        # (`g["look_for"]`), а один літерал, що ключ і створює, лишила
+        # старим. `blocked` падав із `KeyError` від fbfa0c2 і до цієї
+        # правки, бо його немає ні в `make check`, ні в жодній базі.
+        g = grupy.setdefault(u, {"look_for": set(), "tverdzhennya": []})
         if sh:
             g["look_for"].add(sh.strip())
         g["tverdzhennya"].append((z["id"], z["src"], txt))
@@ -1259,9 +1320,9 @@ def vorota() -> int:
     Правило натомість таке: `F` видимий і рахований, а `C` має наряд.
     """
     dokazy = zavantazhyty_dokazy()
-    g = [z for z in dokazy if str(z.get("klas", "")).upper() == "G"]
+    g = [z for z in dokazy if klas_zapysu(z).upper() == "G"]
     for z in g:
-        print(f"   ✗ спростоване твердження: {z.get('nazva','?')} "
+        print(f"   ✗ спростоване твердження: {nazva_zapysu(z)} "
               f"({z.get('_prokhid')})")
 
     # Друга обіцянка docstring, якої тут **не було**: доказ, що не
@@ -1287,13 +1348,13 @@ def vorota() -> int:
         try:
             rx = re.compile(vz)
         except re.error as e:
-            print(f"   ✗ взірець не компілюється: {z.get('nazva','?')} "
+            print(f"   ✗ взірець не компілюється: {nazva_zapysu(z)} "
                   f"({z.get('_prokhid')}) — {e}")
             holosti.append(z)
             continue
         if not any(rx.search(t) for t in teksty):
             holosti.append(z)
-            print(f"   ✗ доказ нічого не зачепив: {z.get('nazva','?')} "
+            print(f"   ✗ доказ нічого не зачепив: {nazva_zapysu(z)} "
                   f"({z.get('_prokhid')})")
 
     print(f"factcheck-vorota: спростованих (G) {len(g)}, "
