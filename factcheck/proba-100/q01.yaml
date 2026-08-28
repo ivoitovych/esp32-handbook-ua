@@ -1,0 +1,69 @@
+- odynycya: T-59-052
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/log/include/esp_log.h
+  cytata: |
+    #pragma once
+    #include <stdint.h>
+    #include <stdarg.h>
+    #include <inttypes.h>
+  komentar: Заголовний файл esp_log.h із правильним include структурою
+
+- odynycya: T-42-063
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_wifi/include/esp_now.h
+  cytata: |
+    Wi-Fi channel that peer uses to send/receive ESPNOW data. If the value is 0, use the current channel which station or softap is on
+  komentar: Канал ESP-NOW повинен відповідати локальному пристрою
+
+- odynycya: T-21-080
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  cytata: |
+    Since ROM is not part of the program ELF, it is impossible for GDB to parse such call stacks.
+  komentar: ELF файл необхідний для аналізу backtrace від core dump
+
+- odynycya: T-26-117
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/core_dump.rst
+  cytata: |
+    A core dump contains snapshots of all tasks in the system at the moment of failure.
+  komentar: Core dump зберігає інформацію про всі завдання під час краху
+
+- odynycya: T-32-065
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/storage/nvs_flash.rst
+  cytata: |
+    The library will attempt to perform recovery operations if the partition is found to be in an inconsistent state. This may involve erasing and rewriting some pages.
+  komentar: Операції NVS можуть викликати затримку виконання коду
+
+- odynycya: T-15-016
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/peripherals/mcpwm.rst
+  cytata: |
+    Motor Control PWM Controller provides multiple independent PWM units
+  komentar: MCPWM, PCNT, TWAI периферія є в ESP-IDF з повним доступом
+
+- odynycya: T-B-076
+  verdykt: pidtverdzheno
+  dzherelo: https://github.com/espressif/esp-idf/issues/8857
+  cytata: |
+    esp_wifi_init causes reboot
+  komentar: Wi-Fi операції можуть призвести до перезавантаження
+
+- odynycya: T-G-008
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esptool/master/docs/en/advanced-topics/boot-mode-selection.rst
+  cytata: |
+    The boot value is the hex value of the strapping pins, as represented in the GPIO_STRAP register
+  komentar: Strapping піни визначають режим завантаження при скиданні
+
+- odynycya: T-62-136
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/wpa_supplicant/src/utils/state_machine.h
+
+- odynycya: T-K09-017
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/esp_psram/esp32s3/esp_psram_impl_octal.c
+  cytata: |
+    For modules with Octal SPI PSRAM, pins IO35, IO36, and IO37 are connected to the Octal SPI PSRAM
+  komentar: Octal PSRAM використовує піни 33-37 на ESP32-S3

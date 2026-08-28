@@ -1,0 +1,48 @@
+- odynycya: T-25-008
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+
+- odynycya: T-03-064
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-reference/system/ulp-risc-v.rst
+  cytata: |
+    The ULP RISC-V coprocessor code is written in C (assembly is also possible) and compiled using the RISC-V toolchain based on GCC.
+  komentar: Підтверджує програмування ULP окремо власним асемблером та на C для RISC-V
+
+- odynycya: T-A-081
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/startup.rst
+
+- odynycya: T-11-049
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/build-system.rst
+  cytata: |
+    the ``idf.py build`` command is the same as running these commands in a bash shell
+  komentar: Підтверджує команду idf.py build
+
+- odynycya: T-09-052
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/get-started/establish-serial-connection.rst
+
+- odynycya: T-23-076
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/index.rst
+
+- odynycya: T-Z-045
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32c3/include/soc/gpio_pins.h
+
+- odynycya: T-20-065
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/get-started/hello_world/README.md
+  cytata: |
+    The project **hello_world** contains one source file in C language
+  komentar: Підтверджує приклад hello_world як мінімальний образ
+
+- odynycya: T-04-001
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/index.rst
+
+- odynycya: T-A-098
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/hw-reference/index.rst

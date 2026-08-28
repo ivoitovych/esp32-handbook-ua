@@ -72,18 +72,87 @@ by number.
 
 ## 2. Evidence classes
 
+> **Authority: `SCHEMA.md`, section "Класи доказу".** If this list and
+> that one disagree, that one is right and this one is stale.
+>
+> Two copies exist on purpose and only until one thing changes: this
+> file is the English one that travels to another book, and `SCHEMA.md`
+> is still in Ukrainian. When `SCHEMA.md` is translated, **this section
+> becomes a pointer and the copy goes away.**
+>
+> Saying which copy wins is not bureaucracy. Three copies of this
+> vocabulary existed on 2026-08-28 and all three had drifted apart; the
+> two newest classes were missing from both non-authoritative ones. A
+> copy with no declared owner is repaired wherever it is read, which is
+> never everywhere.
+
     A  primary verbatim    — source obtained, line quoted
     B  primary derived     — source obtained, conclusion unambiguous
-    C  named-unreachable   — source named, text not held
     D  arithmetic          — checked by calculation
-    E  no source exists    — author's judgement; no external referent
-    F  unverified          — nobody has reached it yet
+    C  named-unreachable   — source named, text not held
+    S  internal            — checked against ANOTHER PLACE IN THIS BOOK
+    L  looked-not-found    — a document was opened; the source was not in it
+    E  no external signal  — the text carries nothing checkable
     G  refuted             — the source says otherwise
+    F  unverified          — nobody has reached it yet
 
-Strength for picking the best evidence: `A < B < D < C < E < G < F`.
+    K  context             — a whole code block; not a claim, and not counted
 
-**`C` outranks `E`, and this is the load-bearing detail.** `E` says "no
-source exists" and **hides the unit from the queue forever**. `C` says
+Strength for picking the best evidence, in the order printed above:
+`A < B < D < C < S < L < E < G < F`. The list is deliberately printed in
+strength order rather than alphabetically, because the order is the part
+that gets used.
+
+### `S` and `L` exist because two kinds of real work had nowhere to go
+
+Both were added late, and both for the same reason: a maintainer had
+done work, and the vocabulary forced them to record it as something it
+was not.
+
+**`S` — the book checked against itself.** Prose against the book's own
+code, a summary against its own table. It says nothing about the world:
+the book can be wrong in both places at once. But it says something
+checkable about the book, and it is checkable *mechanically*, by layer 3
+run against the book instead of a document.
+
+The two wrong answers, and why each is wrong:
+
+* `E` loses the information that **a check was made and it agreed**;
+* `A` is wrong more expensively — it enters the "verified against a
+  source" figure, which is the number the reader sees first.
+
+So `S` is counted and reported **on its own line**, never inside
+`A + B + D`.
+
+**`L` — a document was opened and the source was not in it.** A report
+of work, not a verdict about the world: weaker than `C` (which names a
+document that could still settle the question), stronger than `E`
+(which asserts). It requires naming what was opened.
+
+> The general rule both of them come from: **when honest work has no
+> legal way to be recorded, it gets recorded as something false.** A
+> vocabulary that is missing a state does not produce blank fields; it
+> produces wrong ones.
+
+The same gap is still open in one place, found by a helper rather than
+by us: there is no verdict for **proof by absence** — "I opened the
+source and the thing is demonstrably not there", which is how a
+negative claim about a chip's features is actually established.
+
+**`E` does not say "no source exists".** It says the *rule fired*: this
+text holds no number, identifier or part name to check against. That
+distinction is the single most expensive one in this document, and this
+file itself got it wrong for a week — the line above used to read "no
+source exists", which is a claim about the world that nobody measured.
+
+> Write the **state of a claim**, never a verdict about the world. The
+> book's own description of `E` had to be corrected once for exactly
+> this. A document that carries the technology to another project must
+> not carry the error the project already paid to remove.
+
+**`C` outranks `E`, and this is the load-bearing detail.** `E` ends the
+unit's life in the queue: read as a verdict, it **hides the unit
+forever**. `C` says
 "a source exists, I do not hold it" and **keeps the unit in play**.
 Confusion in the direction of `E` always reduces work — which is
 exactly why it passes so easily.

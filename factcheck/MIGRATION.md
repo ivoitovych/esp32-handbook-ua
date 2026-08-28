@@ -262,17 +262,42 @@
 Taken before any rewriting, so the size of the job is known rather than
 guessed.
 
-| Kind | Files | Size | What happens to it |
-|---|---:|---:|---|
-| **generated** | 10 | 365 KB | translate the *generator*, the file rebuilds itself |
-| **technology** | 8 | 190 KB | rewrite in English, one at a time |
-| **data registry** | 2 | 25 KB | stays data; only its prose header is rewritten |
-| **spent work orders** | 6 | 61 KB | delete — finished and reproducible |
-| **session state** | 13 | 95 KB | extract the durable lessons, then archive |
+**Re-measured 2026-08-28 by opening every file, not by reading its
+name.** The previous table was built from filenames, and it is the
+worked example of defect kind 12 in its own directory: it sentenced six
+files to deletion as "spent work orders", and two of those were a
+generated report and the specimen whose gates section is the evidence
+for the self-citation law. That plan was cancelled; the table outlived
+the cancellation.
 
-Every generated file opens with «Генерується `tools/…`. Правити вручну
-нема сенсу», so **365 KB never needs hand-translation.** The real work
-is eight documents.
+| Kind | Files | Size | How it was recognised | What happens to it |
+|---|---:|---:|---|---|
+| **governing** | 10 | 255 KB | on the list, by content | translate; this is the whole job |
+| **generated** | 10 | 317 KB | the file **names its own generator** | translate the generator; the file rebuilds |
+| **work order** | 1 | 61 KB | opens with `# Наряд` | stays with this book |
+| **this book's data** | 8 | 74 KB | none of the above | stays; only prose headers matter |
+
+**317 KB never needs hand-translation** — every generated file opens by
+naming the tool that writes it. **The real work is the ten governing
+documents**, and of those four are already in English.
+
+### How the classification was done, and the one false positive it gave
+
+A first pass searched the whole header for the word «генерується» and
+put `ARCHITECTURE.md` — a governing document — among the generated
+ones. The word was there, in a sentence about the **registry** being
+generated from the book.
+
+Narrowing the test to the actual convention (a line that **names the
+generator**: ``Генерується `tools/…` ``) removed it.
+
+> A classifier that matches a word matches every sentence containing
+> that word. The convention it should test is not "does this word
+> appear" but "does the file declare the thing".
+
+That is kind 12 again, in the tool built to repair kind 12 — and it is
+recorded here because catching it took one check and believing it would
+have cost a document.
 
 **Nothing is deleted until its durable content has moved.** The lessons
 in these files were bought with waves that cost real money; a

@@ -1,0 +1,39 @@
+- odynycya: T-41-009
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/ble/overview.rst'
+
+- odynycya: T-32-047
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/docs/en/api-guides/task-watchdog.rst'
+
+- odynycya: T-26-064
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/components/freertos/Kconfig'
+
+- odynycya: T-E-084
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/jgromes/RadioLib/master/README.md'
+
+- odynycya: T-10-022
+  verdykt: porada
+  chomu: 'Це судження про найкраще співвідношення користі до ціни, а не факт про пристрій'
+
+- odynycya: T-F-011
+  verdykt: porada
+  chomu: 'Це рекомендація списку офлайн-ресурсів для розробки, судження автора, не факт про технологію'
+
+- odynycya: T-25-030
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esptool/master/esptool/loader.py'
+
+- odynycya: T-54-004
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/torvalds/linux/master/Documentation/ABI/testing/sysfs-class-power'
+
+- odynycya: T-43-007
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/examples/wifi/getting_started/station/README.md'
+
+- odynycya: T-B-135
+  verdykt: ne_znayshov
+  dzherelo: 'https://raw.githubusercontent.com/espressif/esp-idf/master/examples/peripherals/can/can_network.rst'

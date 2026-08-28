@@ -1,0 +1,39 @@
+- odynycya: T-03-001
+  verdykt: porada
+  chomu: це опис призначення розділу, судження про те, який він має бути, а не факт про властивості ESP32
+
+- odynycya: T-B-096
+  verdykt: porada
+  chomu: це рекомендація про одну з можливих причин проблеми I²C, описана в посібнику як знання, яке варто перевірити, але не як фаховий висновок
+
+- odynycya: T-08-020
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/arduino-esp32/master/README.md
+
+- odynycya: T-63-002
+  verdykt: porada
+  chomu: твердження про "найпоширенішу реальну роль" — це судження автора про практику, а не факт про технологію, який можна перевірити
+
+- odynycya: T-E-046
+  verdykt: nedosyazhne
+  potribno: даташит мікросхеми AT24Cxx не лежить на GitHub
+
+- odynycya: T-57-022
+  verdykt: porada
+  chomu: це рекомендація про вибір чипу для нового проєкту — судження автора про кращий вибір в типовому випадку, а не факт про світ
+
+- odynycya: T-18-079
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/littlefs/README.md
+
+- odynycya: T-K14-028
+  verdykt: porada
+  chomu: це рекомендація про що перевіряти в дисплеї — судження про практику, а не факт про світ
+
+- odynycya: T-59-014
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/examples/common_components/bme280_component/README.md
+
+- odynycya: T-UA--023
+  verdykt: porada
+  chomu: це рекомендація про що перевіряти при покупці LoRa-модуля — судження про практику, а не факт про технологію

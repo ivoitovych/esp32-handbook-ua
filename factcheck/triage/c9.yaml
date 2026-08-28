@@ -64,10 +64,10 @@
 - id: T-30-084
   rid: ne-rozibrav
   bulo-shukaty: FreeRTOS Reference Manual, Synchronization — atomic operations and primitives
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «FreeRTOS Reference
+    Manual, Synchronization — atomic operations and primitives». Одиниця лишається в черзі
+    як `ne-rozibrav` — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-30-017
   rid: ne-tverdzhennya
 - id: T-31-038
@@ -111,10 +111,10 @@
 - id: T-36-091
   rid: ne-rozibrav
   bulo-shukaty: ESP-IDF API Reference, SPI Module — available SPI host constants
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF API Reference,
+    SPI Module — available SPI host constants». Одиниця лишається в черзі як `ne-rozibrav`
+    — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-36-122
   rid: ne-tverdzhennya
 - id: T-36-034
@@ -144,10 +144,10 @@
 - id: T-39-036
   rid: ne-rozibrav
   bulo-shukaty: FreeRTOS Reference Manual, Event Groups — event group synchronization
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «FreeRTOS Reference
+    Manual, Event Groups — event group synchronization». Одиниця лишається в черзі як `ne-rozibrav`
+    — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
 - id: T-40-063
   rid: ne-tverdzhennya
 - id: T-40-082

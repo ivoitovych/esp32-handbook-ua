@@ -1,0 +1,47 @@
+- odynycya: T-61-069
+  verdykt: porada
+  chomu: Лічильник `vtracheno` мораў у коді для визначення втрачених пакетів, але визначення його як «безкоштовної оцінки якості» — це судження автора про те, як інтерпретувати його використання, а не факт про апаратуру.
+
+- odynycya: T-E-011
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/master/dodatky/e-interfeysy.md
+
+- odynycya: T-02-015
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/master/manual/02-chipy.md
+
+- odynycya: T-04-133
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32/include/soc/soc_caps.h
+  cytata: '#define SOC_DAC_SUPPORTED           1'
+  komentar: ESP32 (classic) має DAC. Перевірка S2 також показує SOC_DAC_SUPPORTED = 1, а C3 не має цього визначення взагалі, що підтверджує твердження про DAC тільки на classic і S2.
+
+- odynycya: T-61-062
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/master/manual/61-proj-kanal.md
+
+- odynycya: T-59-036
+  verdykt: porada
+  chomu: Це вказівник автора для читача використовувати піни з таблиці, а не твердження про світ, яке можна перевірити у зовнішньому джерелі.
+
+- odynycya: T-13-035
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/platformio/platformio-core/master/platformio/platform/board.py
+  cytata: 'self._id = os.path.basename(manifest_path)[:-5]'
+  komentar: PlatformIO використовує ідентифікатори плат (board IDs) з бази даних.
+
+- odynycya: T-K08-024
+  verdykt: ne_znayshov
+  dzherelo: https://raw.githubusercontent.com/ivoitovych/esp32-handbook-ua/master/kartky/k08-symptomy.md
+
+- odynycya: T-02-087
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/espressif/esp-idf/master/components/soc/esp32s2/include/soc/soc_caps.h
+  cytata: '(no SOC_BT_SUPPORTED in esp32s2/include/soc/soc_caps.h)'
+  komentar: ESP32-S2 не має Bluetooth на відміну від classic ESP32. Звірка показує, що у файлі soc_caps.h для S2 відсутнє визначення SOC_BT_SUPPORTED на відміну від classic.
+
+- odynycya: T-01-083
+  verdykt: pidtverdzheno
+  dzherelo: https://raw.githubusercontent.com/raspberrypi/pico-sdk/master/src/rp2_common/hardware_pio/include/hardware/pio.h
+  cytata: '#define _HARDWARE_PIO_H'
+  komentar: RP2040 має апаратну підтримку PIO (Programmable Input/Output), що підтверджується наявністю hardware/pio.h у pico-sdk.

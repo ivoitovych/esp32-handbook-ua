@@ -97,10 +97,10 @@
   rid: ne-tverdzhennya
 - id: T-05-084
   rid: ne-rozibrav
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «Electronics Fundamentals
+    textbook common ground signal voltage reference». Одиниця лишається в черзі як `ne-rozibrav`
+    — це не присуд про відсутність джерела, а відмова видавати тему за документ.'
   bulo-shukaty: Electronics Fundamentals textbook common ground signal voltage reference
 - id: T-05-132
   rid: pozyciya
@@ -135,10 +135,10 @@
   rid: ne-tverdzhennya
 - id: T-11-112
   rid: ne-rozibrav
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF build system
+    set-target sdkconfig поведінка». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
+    про відсутність джерела, а відмова видавати тему за документ.'
   bulo-shukaty: ESP-IDF build system set-target sdkconfig поведінка
 - id: T-12-046
   rid: pozyciya
@@ -154,10 +154,10 @@
   rid: ne-tverdzhennya
 - id: T-14-014
   rid: ne-rozibrav
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «MicroPython Reference
+    Manual garbage collection behavior». Одиниця лишається в черзі як `ne-rozibrav` — це не
+    присуд про відсутність джерела, а відмова видавати тему за документ.'
   bulo-shukaty: MicroPython Reference Manual garbage collection behavior
 - id: T-15-071
   rid: pozyciya
@@ -172,10 +172,10 @@
   rid: ne-tverdzhennya
 - id: T-18-079
   rid: ne-rozibrav
-  chomu: 'Було dzherelo-ye, але поле shukaty називає ТЕМУ, а не документ: «Electronics Manual», «Oscilloscope
-    Reference Manual» — таких документів немає. За власним законом: не можеш назвати документ — це ne-rozibrav.
-    Повертаю в чергу, а не лишаю в наряді на докачування, бо замовити за такою назвою нічого не можна.
-    Знайшов М1 у своїй половині (61 зі 111 у його вибірці); мій тест по всіх 507 дав 166.'
+  chomu: 'Було `dzherelo-ye`. Прохід 2026-08-27 знімає цей рід там, де поле `shukaty` називає
+    тему, а не документ, який можна замовити чи відкрити. Тут стояло: «ESP-IDF components
+    LittleFS вбудований окремий». Одиниця лишається в черзі як `ne-rozibrav` — це не присуд
+    про відсутність джерела, а відмова видавати тему за документ.'
   bulo-shukaty: ESP-IDF components LittleFS вбудований окремий
 - id: T-18-032
   rid: ne-tverdzhennya
