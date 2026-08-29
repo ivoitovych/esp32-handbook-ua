@@ -11,7 +11,7 @@ measured remainder of a migration, so that progress is a number rather
 than an impression. A false positive here is harmless: it sits in the
 list and never fires again.
 
-**Remaining: 228.**
+**Remaining: 226.**
 
 - `--agents`
 - `--bez-merezhi`
@@ -165,7 +165,6 @@ list and never fires again.
 - `perevirka_posylan`
 - `pidibraty`
 - `pidmineno_zaglushkoyu`
-- `pidtverdzheni`
 - `planuvaty`
 - `plaskyy`
 - `polagodyty`
@@ -211,7 +210,6 @@ list and never fires again.
 - `transliterovane`
 - `tretiy_shar`
 - `tretiy_shar_vybirky`
-- `usi`
 - `versiya`
 - `versiya_naryadu`
 - `versiyi`

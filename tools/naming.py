@@ -61,7 +61,7 @@ electrical electronics evidence experiment experiments flash history
 insert inserts iomux level levels module modules motor motors panic
 peripheral peripherals pinout pinouts power project projects pullup
 pullups pycache queue queues reproducible restructure sensor sensors
-semtech snapshot snapshots solder switch switches symptom symptoms unchecked
+cyrillic semtech share snapshot snapshots solder switch switches symptom symptoms unchecked
 unreachable wiring""".split())
 
 RE_SYGNAL = re.compile(

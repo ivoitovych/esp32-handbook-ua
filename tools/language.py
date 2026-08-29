@@ -74,13 +74,13 @@ FOUNDATION = ["METHOD.md", "SCHEMA.md", "DEFECTS.md",
 
 # Заморожене: описує стан на свою дату. Рід 26 — перейменування (чи тут
 # переклад) переписує запис, чиїм предметом був стан до нього.
-ZAMOROZHENE = {"history", "archive", "runs", "snapshots", "triage"}
+FROZEN_DIRS = {"history", "archive", "runs", "snapshots", "triage"}
 
 # Дзеркала книги: імена й текст ідуть від книги, книга українська.
 KNYHA = {"manual", "dodatky", "kartky", "inserts", "book"}
 
 
-def chastka_kyrylytsi(t: str) -> float:
+def cyrillic_share(t: str) -> float:
     c = len(re.findall(r"[а-яїієґА-ЯЇІЄҐ]", t))
     l = len(re.findall(r"[a-zA-Z]", t))
     return 100.0 * c / max(1, c + l)
@@ -101,7 +101,7 @@ def zona(p: Path) -> str:
         return ""
     if "__pycache__" in parts:
         return ""
-    if ZAMOROZHENE & parts:
+    if FROZEN_DIRS & parts:
         return "frozen"
     if KNYHA & parts:
         return "ukrainian"
@@ -113,19 +113,19 @@ def zona(p: Path) -> str:
     return "english"
 
 
-def vymiryaty() -> list[tuple[float, str, int]]:
+def measure() -> list[tuple[float, str, int]]:
     out = []
     for p in sorted(ROOT.rglob("*")):
         if not p.is_file() or zona(p) != "english":
             continue
         t = p.read_text(encoding="utf-8", errors="replace")
-        out.append((chastka_kyrylytsi(t), str(p.relative_to(ROOT)),
+        out.append((cyrillic_share(t), str(p.relative_to(ROOT)),
                     len(t.splitlines())))
     return out
 
 
-def porushnyky() -> dict[str, float]:
-    return {n: c for c, n, _ in vymiryaty() if c > PORIH}
+def offenders() -> dict[str, float]:
+    return {n: c for c, n, _ in measure() if c > PORIH}
 
 
 def baza() -> set[str]:
@@ -144,7 +144,7 @@ def baza() -> set[str]:
 
 
 def zapysaty(p: dict[str, float]) -> None:
-    vs = vymiryaty()
+    vs = measure()
     hotovi = [x for x in vs if x[0] <= PORIH]
     r = ["# Files in the English zone that are still Ukrainian",
          "",
@@ -191,13 +191,13 @@ def proba() -> int:
         print(f"   {'✓' if umova else '✗'} {nazva}: {umova}")
         ok &= umova
 
-    probа("український текст видно", chastka_kyrylytsi("склад") > 90)
-    probа("англійський текст чистий", chastka_kyrylytsi("status") < 1)
+    probа("український текст видно", cyrillic_share("склад") > 90)
+    probа("англійський текст чистий", cyrillic_share("status") < 1)
     # Не вигаданий рядок, а справжній документ: METHOD.md цитує книгу
     # дослівно й лишається англійським. Вигаданий взірець із цитатою в
     # кожному реченні довів би лише те, що я його так склав.
     probа("англійський документ із дослівними цитатами книги проходить",
-          chastka_kyrylytsi(
+          cyrillic_share(
               (ROOT / "factcheck" / "METHOD.md").read_text(encoding="utf-8"))
           < PORIH)
     probа("тула — англійська зона", zona(ROOT / "tools" / "docs.py") == "english")
@@ -232,7 +232,7 @@ def proba() -> int:
         for imya, tekst in (("UKR.md", "# Проба\n\nУкраїнський документ.\n"),
                             ("ENG.md", "# Probe\n\nEnglish, must stay quiet.\n")):
             (korin / imya).write_text(tekst, encoding="utf-8")
-        zlovleno = porushnyky()
+        zlovleno = offenders()
     ROOT = spravzhniy
     probа("новий український документ у фундаменті ловиться",
           "factcheck/UKR.md" in zlovleno)
@@ -246,10 +246,10 @@ def main() -> int:
     if "--proba" in sys.argv:
         return proba()
     if "--list" in sys.argv:
-        for c, n, ln in sorted(vymiryaty(), reverse=True):
+        for c, n, ln in sorted(measure(), reverse=True):
             print(f"  {c:5.1f} %  {n:<44}{ln:>6} lines")
         return 0
-    p = porushnyky()
+    p = offenders()
     if "--write" in sys.argv:
         zapysaty(p)
         print(f"language: recorded {len(p)} files -> {BASELINE.name}")

@@ -234,7 +234,7 @@ release-check:
 budgets:
 	@$(PY) tools/budgets.py --pages
 
-check: self-checks docs intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage run-gate check-attribution
+check: self-checks docs naming intake linkcheck cross-refs pins refuted struct-fields correspondence cache layer3 modality calques budgets arithmetic stale schema reproducible cache-vs-book layer1 coverage run-gate check-attribution
 
 arithmetic:
 	@python3 tools/arithmetic.py

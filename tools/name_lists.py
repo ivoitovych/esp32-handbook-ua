@@ -71,10 +71,25 @@ TEKY = ("", "factcheck", "tools", "zvyazok", "manual", "dodatky")
 
 
 def isnuye(imya: str) -> bool:
+    """Чи існує файл із таким іменем — у теці або **під нею**.
+
+    Плаский пошук по коренях був правильний рівно доти, доки теки були
+    пласкі. Після перебудови `factcheck/` вісім історичних реєстрів
+    переїхали в `archive/history/`, і перевірка оголосила неіснуючими
+    дев'ять файлів, які лежали за два кроки нижче.
+
+    Це вже втретє за два дні той самий промах в іншому файлі:
+    `doc_kind.dokumenty`, `docs.index_complete`, тепер тут. Спільне в
+    них — **шлях, зібраний із припущення про глибину**. Тека може
+    поглибшати; ім'я від цього не змінюється.
+    """
     if "*" in imya or "?" in imya:          # глоб — не ім'я одного файлу
         return True
     for t in TEKY:
-        if (ROOT / t / imya).exists():
+        koren = ROOT / t
+        if (koren / imya).exists():
+            return True
+        if koren.is_dir() and any(koren.rglob(imya)):
             return True
     return False
 
