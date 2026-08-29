@@ -137,7 +137,12 @@ def mira_dokumenty() -> tuple[int, int, list[str]]:
     двох інструментах, написаних того самого вечора одним автором.
     """
     import doc_kind
-    usi = sorted((ROOT / "factcheck").glob("*.md"))
+    # Список теж у `doc_kind`, не свій. Докстрінг вище обіцяв саме це, а
+    # рядок під ним робив власний плаский `glob("*.md")` — і після
+    # перебудови 2026-08-29 порахував шість документів із тридцяти
+    # одного, тоді як `doc_kind.perevirka()` дивилася на всі. Половинне
+    # делегування гірше за жодне: воно виглядає як делегування.
+    usi = doc_kind.dokumenty()
     bidy = doc_kind.perevirka()
     return len(usi), len(bidy), bidy
 

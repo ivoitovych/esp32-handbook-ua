@@ -27,7 +27,7 @@
 Тому наряд бере лише ті сліди, у яких названо репозиторій, досяжний
 звідси. Решта лишається в звіті як борг із чесною причиною.
 
-    tools/leads.py <каталог> [<каталог>…]   зібрати factcheck/BRIEF-LEADS.md
+    tools/leads.py <каталог> [<каталог>…]   зібрати factcheck/reports/BRIEF-LEADS.md
 """
 from __future__ import annotations
 
@@ -89,7 +89,7 @@ def zaholovok(**kw) -> str:
 
 
 ZVIT = ROOT / "factcheck" / "TRACES.md"
-KANDYDATY = ROOT / "factcheck" / "leady-kandydaty.yaml"
+KANDYDATY = ROOT / "factcheck" / "queues/leads-candidates.yaml"
 
 PIDPYSY_V = {
     "znayshov": "Джерело знайдено",
@@ -138,7 +138,7 @@ def zvesty(katalogy: list[str]) -> int:
     r = [f"""# Відпрацьовані сліди класу `E`
 
 **Генерується** `tools/leads.py --zvit`. Наряд —
-`factcheck/BRIEF-LEADS.md`.
+`factcheck/reports/BRIEF-LEADS.md`.
 
 Слід (`ideya`) — це здогад попереднього помічника про те, де шукати.
 Тут — що з нього вийшло, коли по ньому справді пішли.

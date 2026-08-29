@@ -63,7 +63,7 @@
 
 Після кожного етапу:
 
-    tools/snapshot.py factcheck/snapshots/pryvyazky-do-pereyizdu.json --zvirty
+    tools/snapshot.py factcheck/snapshots/bindings-before-migration.json --zvirty
 
 Якщо рядок «втратили одиниці» не нуль — етап відкочується. Це не
 формальність: сьогодні одна посадка вже мовчки переписала файли
@@ -526,7 +526,7 @@ remains are in the last section of this stage.
     renamed        29, in two batches: leaves first, then the four
                    import hubs (`sample` is imported by 14 tools,
                    `layer3` by 9)
-    left           naryad-m2.py, perevirka-tsytat-m2.py
+    left           order_m2.py, layer3_m2_legacy.py
 
 The name says **what the tool does**, not how the Ukrainian word
 sounds. Two are deliberately not literal translations:

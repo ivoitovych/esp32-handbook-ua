@@ -23,7 +23,7 @@
 Тобто наряд не забороняє брехати. Він робить брехню дорожчою за
 роботу, а не дешевшою.
 
-    tools/naryad-m2.py <скільки> <насіння> [<ім'я-хвилі>]
+    tools/order_m2.py <скільки> <насіння> [<ім'я-хвилі>]
 
 Ім'я хвилі стає ім'ям файлу. Без нього наряд писався в те саме місце,
 і хвиля 3 затерла наряд хвилі 2 — а наряд це запис про те, ЯК здобуто
@@ -201,8 +201,8 @@ def poshuk_riven(tekst: str, fayly: list[str], spec: bool) -> list[str]:
 def main() -> int:
     skilky = int(sys.argv[1]) if len(sys.argv) > 1 else 60
     nasinnya = int(sys.argv[2]) if len(sys.argv) > 2 else 20260827
-    # Каталог хвилі: `factcheck/wave2` перейменовано на
-    # `factcheck/wave2`. Правило заміни цього рядка **не** зачепило, і
+    # Каталог хвилі: `factcheck/runs/wave2` перейменовано на
+    # `factcheck/runs/wave2`. Правило заміни цього рядка **не** зачепило, і
     # правильно: у коді воно вимагає скісної, бо в лапках стоять і
     # ключі словників, і мітки. Тут ім'я каталогу справді голе, тож
     # правку зроблено рукою.
@@ -235,7 +235,7 @@ def main() -> int:
     print(f"  без файлу (в наряд НЕ йдуть): {bez_faylu}")
     print(f"  відібрано: {len(vybrani)}, насіння {nasinnya}")
 
-    out = ROOT / "factcheck" / ("naryad-m2-%s.yaml" % imya)
+    out = ROOT / "factcheck" / "runs" / ("m2-order-%s.yaml" % imya)
     import yaml
     out.write_text(yaml.dump(vybrani, allow_unicode=True, sort_keys=False,
                              default_flow_style=False, width=100),

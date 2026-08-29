@@ -741,7 +741,7 @@ anywhere — and that is not mechanically visible.
 **Symptom.** A comparison is loosened to forgive a difference that does
 not change meaning, and it rejects records that passed before.
 
-**Case.** Wave w1 (`factcheck/WAVE-W1.md`) showed that most rejected
+**Case.** Wave w1 (`factcheck/history/WAVE-W1.md`) showed that most rejected
 quotes were correct passages with RST markup removed. The obvious
 remedy — strip inline markup from both sides before comparing — was
 measured against the whole registry first:

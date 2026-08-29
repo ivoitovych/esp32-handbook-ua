@@ -243,7 +243,7 @@ RE_NE_TVERDZHENNYA = re.compile(
     re.I)
 
 
-KANDYDATY = ROOT / "factcheck" / "vybirka-kandydaty.yaml"
+KANDYDATY = ROOT / "factcheck" / "queues/sample-candidates.yaml"
 
 
 def tretiy_shar_vybirky(zap: list[dict]) -> tuple[int, int]:
@@ -358,11 +358,11 @@ def zvesty(katalog: Path) -> int:
     r = [f"""# Міра класу `E`
 
 **Генерується** `tools/sample.py --zvit`. Наряд —
-`factcheck/BRIEF-SAMPLE.md`, там же насіння добору.
+`factcheck/reports/BRIEF-SAMPLE.md`, там же насіння добору.
 
 Питання: **яка частка класу `E` має зовнішній референт**, тобто
 поставлена надто щедро. Вибірка **випадкова**, тому відсоток звідси
-можна переносити на весь клас — на відміну від `factcheck/SWEEP-NO-SIGNAL.md`,
+можна переносити на весь клас — на відміну від `factcheck/reports/SWEEP-NO-SIGNAL.md`,
 де вибірку відібрано рукою під відповідь.
 
 ## Результат

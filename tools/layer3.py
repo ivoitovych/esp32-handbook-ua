@@ -42,7 +42,7 @@
 
     tools/layer3.py            перевірити все, що є в кеші
     tools/layer3.py --kachaty  спершу докачати те, чого бракує
-    tools/layer3.py --zvit     згенерувати factcheck/QUOTES.md
+    tools/layer3.py --zvit     згенерувати factcheck/reports/QUOTES.md
     tools/layer3.py --suvoro   недосяжне джерело теж помилка
     tools/layer3.py <файл.yaml>  перевірити вивантаження помічника
 
@@ -501,7 +501,7 @@ RE_LEKSEMA = re.compile(r"[\w.°±×/+-]{2,}")
 def u_tablyci(ryadok: str, tekst: str) -> bool:
     """Чи є рядок **читанням таблиці**, розкиданої по документу.
 
-    Узято з `tools/perevirka-tsytat-m2.py`, функція `znayty_ryadok`
+    Узято з `tools/layer3_m2_legacy.py`, функція `znayty_ryadok`
     (М2, знахідка 19:40Z). Проста перевірка підрядком дала їм **27
     хибних тривог із 45**, і жодна не була провиною цитати.
 

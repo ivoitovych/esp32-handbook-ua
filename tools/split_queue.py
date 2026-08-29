@@ -17,7 +17,7 @@
 вдається, тож вони чекають на суцільні проходи, а не на поділ.
 
     tools/split_queue.py            зведення
-    tools/split_queue.py --naryad   згенерувати factcheck/SPLIT.md
+    tools/split_queue.py --naryad   згенерувати factcheck/reports/SPLIT.md
 """
 from __future__ import annotations
 
@@ -314,7 +314,7 @@ def naryad() -> int:
                 t = t.replace("|", "\\|")[:150]
                 r.append(f"| `{u['id']}` | {u['ln']} | {t} |")
     (FC / "SPLIT.md").write_text("\n".join(r) + "\n", encoding="utf-8")
-    print(f"factcheck/SPLIT.md: М1 {m1}, М2 {m2}, поза поділом "
+    print(f"factcheck/reports/SPLIT.md: М1 {m1}, М2 {m2}, поза поділом "
           f"{len(rozklad['—'])}")
     return 0
 

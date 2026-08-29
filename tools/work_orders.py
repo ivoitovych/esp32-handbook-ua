@@ -43,7 +43,7 @@
 запис, на який ніхто не відповів, друкує окремим розділом. Нестача —
 теж результат, і найнебезпечніший: вона виглядає як згода.
 
-    tools/work_orders.py                    зібрати factcheck/BRIEF-QUOTES.md
+    tools/work_orders.py                    зібрати factcheck/reports/BRIEF-QUOTES.md
     tools/work_orders.py --krim <каталог>   лише ті, на які ще не відповіли
     tools/work_orders.py --zvit <каталог>   звести відповіді помічників
 """
@@ -171,7 +171,7 @@ def zvesty(katalog: Path) -> int:
     r = [f"""# Книга проти джерел: {len(ochikuvano)} розбіжних цитат
 
 **Генерується** `tools/work_orders.py --zvit`. Наряд —
-`factcheck/BRIEF-QUOTES.md`.
+`factcheck/reports/BRIEF-QUOTES.md`.
 
 Третій шар сказав, що цих цитат немає за названою адресою. Питання тут
 інше: **чи правильне те, що написано в книзі.**

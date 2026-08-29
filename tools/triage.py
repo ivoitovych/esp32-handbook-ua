@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import yaml  # noqa: E402
 import sample  # noqa: E402
 
-spec = importlib.util.spec_from_file_location("nm", ROOT / "tools" / "naryad-m2.py")
+spec = importlib.util.spec_from_file_location("nm", ROOT / "tools" / "order_m2.py")
 nm = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(nm)
 

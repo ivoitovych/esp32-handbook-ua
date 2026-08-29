@@ -76,10 +76,16 @@ VLASNYK = {
 # перейменовує ніщо — перейменувати минуле не можна.
 HISTORICAL_CACHES = ("dzherela-kesh",)
 
-KERIVNI = ["METHOD.md", "DEFECTS.md", "LESSONS-M2.md", "RETROSPECTIVE.md",
-           "SCHEMA.md", "HELPERS.md", "README.md",
-           "MIGRATION.md", "TASK-SPEC.md",
-           "REFUTED.md", "SOURCES.md", "WAVE-W1.md"]
+# Керівні документи — ті, що описують ТЕХНОЛОГІЮ, і вони лежать у
+# корені `factcheck/`. Усе інше після перебудови 2026-08-29 має свою
+# теку за родом: `reports/`, `history/`, `book/`, `runs/`.
+#
+# Перелік лишається явним, а не `glob`, навмисно: він є ТВЕРДЖЕННЯМ про
+# те, що технологія складається саме з цих документів. Файл, який хтось
+# додасть у корінь, має або потрапити сюди свідомо, або лежати в теці за
+# родом — і `name_lists.py` стежить, щоб ім'я тут не стало іменем нічого.
+KERIVNI = ["METHOD.md", "SCHEMA.md", "DEFECTS.md", "TASK-SPEC.md",
+           "HELPERS.md", "README.md"]
 
 # Той самий прохід sed, що позначив був `TASK-SPEC.md` історичним у
 # `doc_kind.ISTORYCHNI`, лишив по собі **другий** слід — тут. Обидва
@@ -282,12 +288,16 @@ def index_complete() -> list[str]:
     # мовчала, бо ім'я в тексті було.
     m = re.search(r"```\n(factcheck/.*?)```", rd, re.S)
     if m:
-        imena = re.findall(r"^\s{4}([A-Za-z0-9._-]+\.md)", m.group(1), re.M)
+        # Ім'я в покажчику може стояти в рядку з кількома іменами через
+        # `·`, і документ може лежати в теці за родом, а не в корені.
+        # Плаский `(FC / n).exists()` після перебудови 2026-08-29 оголосив
+        # неіснуючими вісім документів, які просто переїхали.
+        imena = re.findall(r"([A-Za-z0-9._-]+\.md)", m.group(1))
         for n in sorted(set(imena)):
             if imena.count(n) > 1:
                 bidy.append(f"README.md: покажчик називає {n} "
                             f"{imena.count(n)} рази — рід не може бути двома")
-            if not (FC / n).exists():
+            if not any(FC.rglob(n)):
                 bidy.append(f"README.md: покажчик називає {n}, "
                             f"а документа немає")
     return bidy

@@ -17,7 +17,7 @@ not a migration, it is whack-a-mole, and the score only looks like progress.
 ## What this does, and what it deliberately does not
 
 It does **not** decide what is transliterated: that judgement is baked into
-a recorded baseline, `factcheck/TRANSLITERATION.md`. The check compares
+a recorded baseline, `factcheck/reports/TRANSLITERATION.md`. The check compares
 today's identifiers against that list and fails on anything **new**.
 
 So the surface can only shrink. A false positive in the detector costs

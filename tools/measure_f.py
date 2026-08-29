@@ -89,7 +89,7 @@ ZVIT_PORROZHNIY = """# Міра класу `F` — хвиля відхилена
 роботу. Тепер це **ворота** — адреса, що вказує на довідник,
 відхиляється механічно.
 """
-KANDYDATY = ROOT / "factcheck" / "mira-f-kandydaty.yaml"
+KANDYDATY = ROOT / "factcheck" / "queues/measure-f-candidates.yaml"
 
 PIDPYSY = {
     "pidtverdzheno": "Книга підтверджена",
@@ -248,7 +248,7 @@ def main() -> int:
 > зовнішнього свідчення в них немає за побудовою.
 
 **Генерується** `tools/measure_f.py`. Наряд —
-`factcheck/BRIEF-SAMPLE.md`, там же насіння добору.
+`factcheck/reports/BRIEF-SAMPLE.md`, там же насіння добору.
 
 Клас `F` — «ще не звірено»: до цих рядків ніхто не дійшов. Питання не
 про присуд, а пряме: **чи правильне те, що написано в книзі**.

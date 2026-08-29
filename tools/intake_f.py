@@ -192,7 +192,7 @@ def main() -> int:
     p.add_argument("teka", type=pathlib.Path)
     p.add_argument("--bez-merezhi", action="store_true")
     p.add_argument("--ledger", action="store_true",
-                   help="дописати підсумок прогону у factcheck/RUNS.md")
+                   help="дописати підсумок прогону у factcheck/reports/RUNS.md")
     p.add_argument("--model", default="haiku-4.5")
     p.add_argument("--note", default="")
     p.add_argument("--compare", type=pathlib.Path, default=None,
@@ -395,7 +395,7 @@ def zapysaty_ledger(a, vyb, vidpovidi, rody, dosl, bidy) -> None:
     if a.note:
         ryadok += "\n\n> `%s`: %s\n" % (a.teka.name, a.note)
     f.write_text(t.rstrip("\n") + "\n" + ryadok + "\n", encoding="utf-8")
-    print("\nдописано в factcheck/RUNS.md")
+    print("\nдописано в factcheck/reports/RUNS.md")
 
 
 if __name__ == "__main__":

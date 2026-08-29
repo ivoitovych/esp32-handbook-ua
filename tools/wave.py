@@ -73,7 +73,7 @@ discard exactly that, so the work would be lost.
 
 
 def _nm2():
-    spec = importlib.util.spec_from_file_location("nm2", ROOT / "tools" / "naryad-m2.py")
+    spec = importlib.util.spec_from_file_location("nm2", ROOT / "tools" / "order_m2.py")
     m = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(m)
     return m

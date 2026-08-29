@@ -42,7 +42,7 @@
 разом із ним. Тому зламані файли **називаються поіменно й
 пропускаються**, а не валять прогін.
 
-    tools/contest_e.py <каталог>            зібрати factcheck/SWEEP-NO-SIGNAL.md
+    tools/contest_e.py <каталог>            зібрати factcheck/reports/SWEEP-NO-SIGNAL.md
     tools/contest_e.py <каталог> --korotko  лише числа
 """
 from __future__ import annotations
@@ -61,7 +61,7 @@ CIL = ROOT / "factcheck" / "SWEEP-NO-SIGNAL.md"
 # лягають самі лише `znayshov`, переведені у форму запису доказу, щоб
 # `tools/layer3.py` міг їх звірити **до** того, як їх побачить
 # супровідник.
-KANDYDATY = ROOT / "factcheck" / "shturm-kandydaty.yaml"
+KANDYDATY = ROOT / "factcheck" / "queues/contest-e-candidates.yaml"
 
 # Каталог вивантажень помічників задається ззовні й **навмисно не
 # записаний тут**. Дві причини, і друга важливіша.

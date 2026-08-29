@@ -105,6 +105,24 @@ def hto_pyshe() -> dict[str, set[str]]:
     return out
 
 
+# Документи лежать у підтеках за родом (`reports/`, `history/`, `book/`),
+# а не всі в корені. Плаский `glob("*.md")` після перебудови 2026-08-29
+# бачив шість файлів із тридцяти одного — і звітував «порушень 0» про
+# двадцять п'ять документів, яких не відкривав. Рід 3: перевірка є,
+# нуль є, і нуль про більшість предмета мовчить.
+#
+# Картки книги сюди не входять: вони породжуються `factcheck.py sketch`
+# і не є документами супровідника.
+# Не документи супровідника: картки (породжує `sketch`), наряди й
+# відповіді прогонів (`runs/`), і заморожений `archive/`.
+NE_DOKUMENTY = {"manual", "dodatky", "kartky", "inserts", "runs", "archive"}
+
+
+def dokumenty() -> list:
+    return [p for p in FC.rglob("*.md")
+            if not (NE_DOKUMENTY & set(p.relative_to(FC).parts))]
+
+
 def rid_dokumenta(p: pathlib.Path, pyshe: dict[str, set[str]]) -> str:
     if p.name in pyshe:
         return "generated"
@@ -137,7 +155,7 @@ def poznaka(p: pathlib.Path) -> tuple[str, str] | None:
 def perevirka() -> list[str]:
     pyshe = hto_pyshe()
     bidy: list[str] = []
-    for p in sorted(FC.glob("*.md")):
+    for p in sorted(dokumenty()):
         ye = poznaka(p)
         maye = rid_dokumenta(p, pyshe)
         if not ye:
@@ -168,7 +186,7 @@ def perevirka() -> list[str]:
 def rozstavyty() -> int:
     pyshe = hto_pyshe()
     n = 0
-    for p in sorted(FC.glob("*.md")):
+    for p in sorted(dokumenty()):
         if poznaka(p):
             continue
         rid = rid_dokumenta(p, pyshe)
@@ -222,7 +240,7 @@ def main() -> int:
     if o.label:
         return rozstavyty()
     b = perevirka()
-    print(f"doc_kind: документів {len(list(FC.glob('*.md')))}, "
+    print(f"doc_kind: документів {len(dokumenty())}, "
           f"порушень {len(b)}")
     for x in b[:20]:
         print(f"   ✗ {x}")
