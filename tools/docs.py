@@ -77,7 +77,7 @@ VLASNYK = {
 HISTORICAL_CACHES = ("dzherela-kesh",)
 
 KERIVNI = ["METHOD.md", "DEFECTS.md", "LESSONS-M2.md", "RETROSPECTIVE.md",
-           "SCHEMA.md", "ARCHITECTURE.md", "HELPERS.md", "README.md",
+           "SCHEMA.md", "HELPERS.md", "README.md",
            "MIGRATION.md", "TASK-SPEC.md",
            "REFUTED.md", "SOURCES.md", "WAVE-W1.md"]
 
@@ -114,11 +114,11 @@ def governing_list_sound() -> list[str]:
 # Рядок, що перелічує класи. ФОРМАТІВ ТРИ, і це не примха:
 #
 #     | **A** | ✅ | …        SCHEMA.md
-#     | `A`   | …            ARCHITECTURE.md (до 2026-08-28)
+#     | `A`   | …            METHOD.md (до 2026-08-28)
 #         A  primary …       METHOD.md
 #
 # Перша редакція знала лише перший. Прогін на дереві до правок зловив
-# METHOD.md і НЕ зловив ARCHITECTURE.md — саме той документ, з якого
+# METHOD.md і НЕ зловив METHOD.md — саме той документ, з якого
 # все й почалося. Перевірка з однією формою бачить одну форму, і
 # мовчить про решту так само впевнено.
 # Тільки таблиця під заголовком про стани, а не будь-яка таблиця в
