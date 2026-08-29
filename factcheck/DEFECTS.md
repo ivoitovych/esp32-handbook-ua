@@ -23,7 +23,7 @@ explicit note that nothing does.
 
 ## The family that dominates: a check that measures nothing
 
-Thirteen of the twenty-seven kinds below are one family. The check runs, it
+Thirteen of the twenty-nine kinds below are one family. The check runs, it
 returns a number, and the number means nothing — because it was never
 measuring the thing its name claims.
 
@@ -580,6 +580,26 @@ nothing listens is no different either.**
 while its 21 findings are worked through; that is a stated exception
 with a date, not an omission.
 
+**The shape recurs one level up, in the shell, and it recurred twice.**
+Both times the check was called, printed its findings, exited non-zero —
+and the commit went out anyway, because the command line joined the
+gate to the commit with `;` instead of `&&`:
+
+    make check ; git commit ; git push        conflict markers shipped
+    correspondence.py ; git commit ; push     a malformed letter shipped
+
+Nothing was missing and nothing was unwired. The gate ran, the output
+was on screen, and the separator discarded the verdict. Two days apart,
+same hand.
+
+> A gate's exit code is only a gate if something branches on it. `;`
+> turns a check into a printout, and a printout scrolls.
+
+**Held by.** Nothing automatic here either — a shell line is not
+reviewable by CI. The habit that does hold: **never put a commit in the
+same command as its gate.** Run the gate, read the number, then commit
+as a separate act.
+
 ## 25. Two states of the world under one word
 
 **Symptom.** A report has one bucket for two situations that call for
@@ -699,6 +719,74 @@ that rewrites a *construct* is not.
 is to measure a proposed loosening against the existing corpus before
 writing it. That discipline caught kind 26's candidate check and this
 one, on consecutive days.
+
+---
+
+## 28. Several checks around one number, none of them asking about it
+
+**Symptom.** A value is guarded by two or three checks, all green, and
+the value is wrong — because each check asks a question *adjacent* to
+the one that matters.
+
+**Case.** Cards for table cells carry a line number and a verbatim block
+quoting the book at that line. An off-by-N in the cell locator meant the
+block quoted a **neighbouring** row, very often the `|---|---|`
+separator itself. **1360 cards of 1383** showed the worker the wrong
+line.
+
+Three checks stood around that number, and all three passed:
+
+    layer 1   compares the verbatim block to a WINDOW around the number
+              — a block off by one row is inside the window
+    stale     compares registry to book BY TEXT HASH
+              — the number does not enter the comparison
+    schema    requires the block to be a table row
+              — a separator is a table row
+
+> Three checks around one number, and none of them asked *"is **this**
+> at **this** number"*. Coverage counted three; the answer was zero.
+
+The question turned out to be one line of code. It was asked only
+because an unrelated measurement came back surprising — not because
+anything looked wrong.
+
+**And the honest number went up.** Layer 1's "line shifted" count rose
+from 51 to 67 once the blocks were correct, because a wrong block used
+to land inside the window and keep the check quiet. Cross-checked: of 40
+mismatches, 33 were what layer 1 now reports and **0** were false
+alarms. See kind 22 for the general form — the same number meaning
+something else.
+
+**Held by.** A direct check: the verbatim block must equal the book line
+at the number the card names. Nothing weaker substitutes for it, and
+nothing weaker did.
+
+---
+
+## 29. A report claiming a change the tree does not contain
+
+**Symptom.** A letter, status line or commit message states that
+something was fixed. It was not. Everything downstream is now reasoning
+from a false premise, and the author is the last person who will check.
+
+**Case.** Two letters, an hour apart, both said kind 26's entry had been
+corrected. The correction had been written in the letter and never in
+`DEFECTS.md`. It was found a day later, by reading the file for an
+unrelated reason.
+
+This is the same defect the whole technology exists to catch in helpers
+— an assertion with no artefact behind it — committed by the maintainer,
+where nobody was checking. A helper's claim goes through layer 3. A
+maintainer's claim about their own tree goes through nothing.
+
+> The gate we point at the helper is not pointed at us, and we make the
+> same class of mistake.
+
+**Held by.** Nothing automatic, and the general case cannot be: no
+checker reads a letter's prose against a diff. What is cheap and does
+hold: **make the change first, then describe it** — a report written
+from `git show` cannot claim what is not there. Where a letter must
+promise future work, say "taking this next", never "done".
 
 ---
 
