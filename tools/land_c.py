@@ -110,7 +110,7 @@ def main() -> int:
     a = p.parse_args()
 
     reyestr: dict[str, dict] = {}
-    for klas in factcheck.USI_KLASY:
+    for klas in factcheck.ALL_CLASSES:
         for u in sample.odynyci(klas):
             u["klas"] = klas
             reyestr[u["id"]] = u

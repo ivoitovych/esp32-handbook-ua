@@ -187,7 +187,7 @@ def za_perelikom(a, sample) -> int:
     # Не власний рядок літер: без `N` і `K` попарний прогін
     # мовчки губив би одиниці тих класів. Третій випадок
     # копії переліку класів за добу.
-    for kl in factcheck.USI_KLASY:
+    for kl in factcheck.ALL_CLASSES:
         try:
             for u in sample.odynyci(kl):
                 reyestr[u["id"]] = dict(u, klas=kl)

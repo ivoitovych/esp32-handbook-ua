@@ -55,9 +55,9 @@ FC = ROOT / "factcheck"
 # `field_names.py`. Обрано `unchecked`: воно означає «ніхто не дивився»,
 # тоді як `unverified` читається як «перевірили й не підтвердилось».
 #
-# Порядок ключів = спадання сили; `SYLA` виводиться з нього, а не
+# Порядок ключів = спадання сили; `STRENGTH_BY_LETTER` виводиться з нього, а не
 # тримається окремим словником, який може розійтися.
-STANY = {
+STATUSES = {
     "verbatim": "первинне дослівне — витяг із першоджерела отримано й процитовано",
     "derived": "первинне похідне — першоджерело отримано, твердження випливає однозначно",
     "absent-from-source": "доведення відсутністю — документ отримано, і названого в ньому немає; мовчання документа і є доказ",
@@ -74,20 +74,20 @@ STANY = {
 # Літери лишаються рівно на час переїзду: щоб читати вже написані картки
 # й записи. Нічого нового ними не позначається. Прибираються разом із
 # полем `klas` у записах — не раніше й не окремо.
-LITERA_STANU = {
+LETTER_TO_STATUS = {
     "A": "verbatim", "B": "derived", "N": "absent-from-source",
     "D": "arithmetic", "C": "named-unreachable", "S": "self-consistent",
     "L": "looked-not-found", "E": "no-external-signal", "G": "refuted",
     "F": "unchecked", "K": "code-context",
 }
-STAN_LITERA = {v: k for k, v in LITERA_STANU.items()}
+STATUS_TO_LETTER = {v: k for k, v in LETTER_TO_STATUS.items()}
 
-KLASY = {k: STANY[v] for k, v in LITERA_STANU.items()}
-ZNAK = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "🔴",
+CLASS_TEXT = {k: STATUSES[v] for k, v in LETTER_TO_STATUS.items()}
+SIGN = {"A": "✅", "B": "🟢", "C": "🟡", "D": "🔵", "E": "⚪", "F": "🔴",
         "G": "⚠", "K": "▫", "L": "🔎", "S": "🔁", "N": "🚫"}
 
-USI_KLASY = "".join(KLASY)                      # A B C D E L F G K
-KLASY_ODYNYC = "".join(k for k in KLASY if k != "K")   # без блоків коду
+ALL_CLASSES = "".join(CLASS_TEXT)                      # A B C D E L F G K
+CLASSES_OF_UNITS = "".join(k for k in CLASS_TEXT if k != "K")   # без блоків коду
 
 RE_ZAPYS = re.compile(
     r"<!--\s*fc\s+id:(?P<id>[\w.-]+)\s+sha:(?P<sha>[0-9a-f]{8})"
@@ -439,7 +439,7 @@ def zavantazhyty_dokazy() -> list[dict]:
 
 # Слово стану → літера. Переїзд дав записам обидва позначення, і саме
 # **значення**, а не лише ім'я поля, робить `klas` останнім у стисненні:
-# `SYLA`, `KLASY` і всі порівняння з "A"/"B" ключовані літерою, тож
+# `STRENGTH_BY_LETTER`, `CLASS_TEXT` і всі порівняння з "A"/"B" ключовані літерою, тож
 # проста заміна ключа мовчки почала б порівнювати слова з літерами.
 SLOVO_V_LITERU = {
     "verbatim": "A", "derived": "B", "named-unreachable": "C",
@@ -449,24 +449,24 @@ SLOVO_V_LITERU = {
 }
 
 
-def stan_zapysu(z: dict, typovo: str = "unchecked") -> str:
+def status_of(z: dict, typovo: str = "unchecked") -> str:
     """Стан запису **словом** — один доступ на всіх.
 
-    Це цільова форма. `klas_zapysu` нижче лишається на час переїзду й
+    Це цільова форма. `class_letter_of` нижче лишається на час переїзду й
     працює через цю: доки в записах є поле `klas`, обидва мають давати
     одне й те саме, і краще нехай це буде тим самим кодом, ніж двома
     копіями одного правила.
     """
     s = str(z.get("status") or "").strip()
-    if s in STANY:
+    if s in STATUSES:
         return s
     l = str(z.get("klas") or "").strip().upper()
-    if l in LITERA_STANU:
-        return LITERA_STANU[l]
+    if l in LETTER_TO_STATUS:
+        return LETTER_TO_STATUS[l]
     return typovo
 
 
-def klas_zapysu(z: dict, typovo: str = "F") -> str:
+def class_letter_of(z: dict, typovo: str = "F") -> str:
     """Літера класу запису доказу — з англійського поля, зі старим як запас.
 
     Один доступ на всіх. Доти кожен інструмент читав `z["klas"]` сам, і
@@ -497,13 +497,13 @@ def klas_zapysu(z: dict, typovo: str = "F") -> str:
 # мовчання, а не з рядка. Слабше за `B` на волосину, бо мовчання
 # доводить лише там, де сусідній документ того самого роду
 # говорить (див. поле `control`).
-# Виводиться зі `STANY`, а не тримається окремим словником: два записи
-# одного порядку розходяться, і саме так `KLASY` уже стверджував
+# Виводиться зі `STATUSES`, а не тримається окремим словником: два записи
+# одного порядку розходяться, і саме так `CLASS_TEXT` уже стверджував
 # «порядок = спадання сили», не будучи в цьому порядку.
-SYLA = {STAN_LITERA[w]: i
-        for i, w in enumerate(x for x in STANY if x != "code-context")}
-SYLA_STANU = {w: i
-              for i, w in enumerate(x for x in STANY if x != "code-context")}
+STRENGTH_BY_LETTER = {STATUS_TO_LETTER[w]: i
+        for i, w in enumerate(x for x in STATUSES if x != "code-context")}
+STRENGTH = {w: i
+              for i, w in enumerate(x for x in STATUSES if x != "code-context")}
 
 
 def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
@@ -517,7 +517,7 @@ def pidibraty(zapysy: list[dict], h: str, txt: str) -> dict | None:
     """
     kandydaty = vsi_kandydaty(zapysy, h, txt)
     if kandydaty:
-        return min(kandydaty, key=lambda z: SYLA.get(klas_zapysu(z), 9))
+        return min(kandydaty, key=lambda z: STRENGTH_BY_LETTER.get(class_letter_of(z), 9))
     return None
 
 
@@ -674,7 +674,7 @@ def pole(z: dict, nove: str, stare: str, typovo=None):
     і після прибирання старих імен `sketch` падав із `KeyError`, тобто
     того ж дня ми лишалися без карток обоє.
 
-    > Один доступ рятує лише тих, хто ним ходить. `klas_zapysu()` був
+    > Один доступ рятує лише тих, хто ним ходить. `class_letter_of()` був
     > правильний і не допоміг чотирьом місцям, які повз нього.
 
     Друга репетиція знайшла ще сім таких місць — і всі сім вціліли з
@@ -690,7 +690,7 @@ def pole(z: dict, nove: str, stare: str, typovo=None):
 
 
 def nazva_zapysu(z: dict) -> str:
-    """Назва запису доказу — один доступ, як `klas_zapysu`.
+    """Назва запису доказу — один доступ, як `class_letter_of`.
 
     Вісім місць показу брали `nazva_zapysu(z)` напряму. Після
     стиснення всі вісім показували б `?` — не падіння, а мовчазна
@@ -702,8 +702,8 @@ def nazva_zapysu(z: dict) -> str:
 def formatuvaty_dokaz(z: dict | None) -> str:
     if not z:
         return SHABLON_DOKAZU
-    klas = klas_zapysu(z)
-    ch = [f"**Доказ**\n", f"- **Клас:** {ZNAK.get(klas,'')} {klas} — {KLASY.get(klas,'')}"]
+    klas = class_letter_of(z)
+    ch = [f"**Доказ**\n", f"- **Клас:** {SIGN.get(klas,'')} {klas} — {CLASS_TEXT.get(klas,'')}"]
     # Умова теж через `pole`, а не `z.get(нове)`. Інакше запис, у якому
     # значення стоїть **лише** під старим іменем, мовчки лишався б без
     # рядка: доступ полагоджено, а сторож — ні.
@@ -922,7 +922,7 @@ def sketch() -> int:
                 kandydaty = vsi_kandydaty(dokazy, h, txt)
                 for k_z in kandydaty:
                     zachepleni.add(klyuch(k_z))
-                z = (min(kandydaty, key=lambda z: SYLA.get(klas_zapysu(z), 9))
+                z = (min(kandydaty, key=lambda z: STRENGTH_BY_LETTER.get(class_letter_of(z), 9))
                      if kandydaty else None)
                 if z:
                     vzhyti.add(h)
@@ -935,7 +935,7 @@ def sketch() -> int:
                 if vyd == "kod":
                     klas = "K"
                 elif z:
-                    klas = klas_zapysu(z)
+                    klas = class_letter_of(z)
                 elif vyd in ("proza", "komirka", "tablycya") \
                         and not RE_SYGNAL_STROGYY.search(txt):
                     # Одиниця без жодного сигналу, що вказував би на
@@ -1016,7 +1016,7 @@ def sketch() -> int:
         print(f"\nперекрито сильнішим доказом: {len(perekryti)}")
         for z in perekryti:
             print(f"    {nazva_zapysu(z)}  "
-                  f"({z.get('_prokhid')}, клас {klas_zapysu(z, '?')})")
+                  f"({z.get('_prokhid')}, клас {class_letter_of(z, '?')})")
 
     # Аудит окремих альтернатив. Дві вади, невидимі вище:
     #
@@ -1091,11 +1091,11 @@ def status() -> int:
     print(f"\nодиниць твердження: {vsjogo}"
           f"  (+ {kontekst} блоків коду як контекст)\n")
     zvireno = sum(c[k] for k in "ABD")
-    for k in KLASY_ODYNYC:
+    for k in CLASSES_OF_UNITS:
         n = c.get(k, 0)
         if not n:
             continue
-        print(f"  {ZNAK[k]} {k}  {n:>5}  {n*100/vsjogo:5.1f}%   {KLASY[k]}")
+        print(f"  {SIGN[k]} {k}  {n:>5}  {n*100/vsjogo:5.1f}%   {CLASS_TEXT[k]}")
     print(f"\n  звірено з джерелом або обчисленням (A+B+D): "
           f"{zvireno} ({zvireno*100/vsjogo:.1f}%)")
     # `S` навмисно **поза** цим числом і навмисно окремим рядком.
@@ -1363,7 +1363,7 @@ def shukaty() -> int:
             continue
         txt = " ".join(m.group(1).replace("> ", "").split())
         if goloka in txt.lower():
-            print(f"  {z['sha']}  {ZNAK[z['klas']]}{z['klas']}  {z['id']:<12} "
+            print(f"  {z['sha']}  {SIGN[z['klas']]}{z['klas']}  {z['id']:<12} "
                   f"{z['src']}\n      {txt[:150]}")
             n += 1
             if n >= 30:
@@ -1394,7 +1394,7 @@ def vorota() -> int:
     Правило натомість таке: `F` видимий і рахований, а `C` має наряд.
     """
     dokazy = zavantazhyty_dokazy()
-    g = [z for z in dokazy if klas_zapysu(z).upper() == "G"]
+    g = [z for z in dokazy if class_letter_of(z).upper() == "G"]
     for z in g:
         print(f"   ✗ спростоване твердження: {nazva_zapysu(z)} "
               f"({z.get('_prokhid')})")

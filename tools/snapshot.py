@@ -83,7 +83,7 @@ def zibraty(za: str = "sha") -> dict[str, list[str]]:
     import factcheck
     import sample
 
-    odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
+    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
 
     # Ключ запису мусить пережити перевпорядкування файлу, тож у ньому
     # стоїть порядковий номер: назви в межах файлу повторюються, і без

@@ -117,7 +117,7 @@ def main() -> int:
     import factcheck
     import sample
 
-    odyn = [u for k in factcheck.USI_KLASY for u in sample.odynyci(k)]
+    odyn = [u for k in factcheck.ALL_CLASSES for u in sample.odynyci(k)]
     znayd = []
     for f in sorted((ROOT / "factcheck" / "evidence").glob("*.yaml")):
         try:
@@ -125,7 +125,7 @@ def main() -> int:
         except Exception:
             continue
         for r in z:
-            if not isinstance(r, dict) or factcheck.klas_zapysu(r) not in ("A", "B"):
+            if not isinstance(r, dict) or factcheck.class_letter_of(r) not in ("A", "B"):
                 continue
             cyt = str(r.get("quote") or "")
             m = RE_DOZVIL.search(cyt)

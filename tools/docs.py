@@ -93,7 +93,7 @@ RE_RID = re.compile(r"(?:рід|kind)\s+(\d{1,2})\b", re.I)
 
 def klasy_kodu() -> set[str]:
     import factcheck
-    return set(factcheck.KLASY)
+    return set(factcheck.CLASS_TEXT)
 
 
 def perevirka() -> list[str]:

@@ -65,7 +65,7 @@ MAPA = {
 }
 
 # Стан перевірки: літера нічого не каже тому, хто бачить її вперше.
-STANY = {
+STATUSES = {
     "A": "verbatim",
     "B": "derived",
     "C": "named-unreachable",
@@ -79,8 +79,8 @@ STANY = {
 
 def znachennya(pole: str, v):
     """`status` окремо: літера лишається, поруч стає слово."""
-    if pole == "status" and isinstance(v, str) and v in STANY:
-        return STANY[v]
+    if pole == "status" and isinstance(v, str) and v in STATUSES:
+        return STATUSES[v]
     return v
 
 
